@@ -22,6 +22,8 @@ private _partIndex = ALL_BODY_PARTS find toLower _bodyPart;
 private _IVarray = _patient getVariable [QGVAR(IV), [0,0,0,0,0,0]];
 private _IVactual = _IVarray select _partIndex;
 private _countEACA = [_patient, "EACA"] call ACEFUNC(medical_status,getMedicationCount);
+private _countEACAIV51 = [_patient, "syringe_kat_eaca_5ml_1"] call ACEFUNC(medical_status,getMedicationCount);
+private _countEACAIV53 = [_patient, "syringe_kat_eaca_5ml_3"] call ACEFUNC(medical_status,getMedicationCount);
 private _allowStack = missionNamespace getVariable [QGVAR(allowStackScript_EACA), true];
 private _keepRunning = missionNamespace getVariable [QGVAR(keepScriptRunning_EACA), false];
 private _cycleTime = missionNamespace getVariable [QGVAR(bandageCycleTime_EACA), 5];
@@ -29,27 +31,27 @@ private _cycleTime = missionNamespace getVariable [QGVAR(bandageCycleTime_EACA),
 if (_IVactual > 1) then {
     private _randomNumber = random 100;
 
-    if (_IVactual != 4) exitWith {
+    if (_IVactual != 8) exitWith {
         if (_randomNumber < GVAR(blockChance)) then {
             [{
                 params ["_patient", "_IVarray", "_partIndex"];
 
-                if (_IVactual > 1 && _IVactual != 4) exitWith {};
-                _IVarray set [_partIndex, 3];
+                if (_IVactual > 1 && _IVactual != 8) exitWith {};
+                _IVarray set [_partIndex, 7];
                 _patient setVariable [QGVAR(IV), _IVarray, true];
             },
             [_patient, _IVarray, _partIndex], (random 300)] call CBA_fnc_waitAndExecute;
         };
     };
 
-    _IVarray set [_partIndex, 2];
+    _IVarray set [_partIndex, 6];
     _patient setVariable [QGVAR(IV), _IVarray, true];
 };
 
 if (!(GVAR(coagulation)) || GVAR(coagulation_allow_EACA_script)) then {
 
-    if (_IVactual != 3) then {
-        if (_countEACA > 1 && !(_allowStack)) exitWith {};
+    if (_IVactual != 5) then {
+        if ((_countEACA > 1 || _countEACAIV51 > 1 || _countEACAIV53 > 1)&& !(_allowStack)) exitWith {};
 
         [{
             params ["_args", "_idPFH"];

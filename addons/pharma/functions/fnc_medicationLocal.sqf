@@ -42,7 +42,6 @@ if !(ACEGVAR(medical_treatment,advancedMedication)) exitWith {
             if !(_sedated) then {
                 [QACEGVAR(medical,WakeUp), _patient] call CBA_fnc_localEvent;
             };
-
         };
         case "EpinephrineIV": {
             private _sedated = _patient getVariable [QEGVAR(surgery,sedated), false];
@@ -61,7 +60,7 @@ TRACE_1("Running treatmentMedicationLocal with Advanced configuration for",_pati
 private _partIndex = ALL_BODY_PARTS find toLower _bodyPart;
 
 // Handle IV blockage
-if (((_patient getVariable [QGVAR(IV), [0,0,0,0,0,0]]) select _partIndex) isEqualTo 3) exitWith {
+if (((_patient getVariable [QGVAR(IV), [0,0,0,0,0,0]]) select _partIndex) isEqualTo 7) exitWith {
     private _occludedMedications = _patient getVariable [QACEGVAR(medical,occludedMedications), []];
     _occludedMedications pushBack [_partIndex, _classname];
     _patient setVariable [QACEGVAR(medical,occludedMedications), _occludedMedications, true];
@@ -114,10 +113,35 @@ TRACE_3("adjustments",_heartRateChange,_painReduce,_viscosityChange);
 // Check for medication compatiblity
 [_patient, _className, _maxDose, _maxDoseDeviation, _incompatibleMedication] call ACEFUNC(medical_treatment,onMedicationUsage);
 
-if (_className in ["Lorazepam","EACA","TXA","Atropine","Amiodarone","Flumazenil"]) then {
-    [format ["kat_pharma_%1Local", toLower _className], [_patient, _bodyPart], _patient] call CBA_fnc_targetEvent;
-};
+if ([QGVAR(AMS_Enabled)] call CBA_settings_fnc_get) then {
 
-if (_className in ["Fentanyl","Morphine","Nalbuphine"]) then {
+    private _medicationParts = (_className splitString "_");
+
+    if (count _medicationParts > 3) then {
+        _medicationName = _medicationParts select 1;
+    
+        if (_medicationName in ["lorazepam","EACA","TXA","amiodarone","flumazenil"]) then {
+        [format ["kat_pharma_%1Local", toLower _medicationName], [_patient, _bodyPart], _patient] call CBA_fnc_targetEvent;
+        };
+
+        if (_medicationName in ["ketamine","atropine","adenosine"]) then {
+        [format ["kat_pharma_%1Local", toLower _medicationName], [_patient, _bodyPart, _classname], _patient] call CBA_fnc_targetEvent;
+        };
+
+        if (_medicationName in ["fentanyl","morphine","nalbuphine"]) then {
+        [format ["kat_pharma_%1Local", toLower _medicationName], [_patient, _bodyPart, _opioidRelief], _patient] call CBA_fnc_targetEvent;
+        };
+
+        } else {
+        diag_log format ["Unexpected _className format: %1", _className];
+        };
+} else {
+        
+    if (_className in ["Lorazepam","Ketamine","EACA","TXA","Atropine","Amiodarone","Flumazenil"]) then {
+        [format ["kat_pharma_%1Local", toLower _className], [_patient, _bodyPart], _patient] call CBA_fnc_targetEvent;
+    };
+
+    if (_className in ["Fentanyl","Morphine","Nalbuphine"]) then {
     [format ["kat_pharma_%1Local", toLower _className], [_patient, _bodyPart, _opioidRelief], _patient] call CBA_fnc_targetEvent;
+    };
 };

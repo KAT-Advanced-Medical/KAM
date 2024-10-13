@@ -23,7 +23,7 @@ private _partIndex = ALL_BODY_PARTS find toLower _bodyPart;
 private _IVarray = _patient getVariable [QGVAR(IV), [0,0,0,0,0,0]];
 private _IVactual = _IVarray select _partIndex;
 
-_IVarray set [_partIndex, 4];
+_IVarray set [_partIndex, 8];
 _patient setVariable [QGVAR(IV), _IVarray, true];
 
 private _occludedMedications = _patient getVariable [QACEGVAR(medical,occludedMedications), []];

@@ -22,14 +22,40 @@ params ["_medic", "_patient", "_bodyPart"];
 private _part = ALL_BODY_PARTS find toLower _bodyPart;
 private _activeFracture = GET_FRACTURES(_patient);
 private _fractureArray = _patient getVariable [QGVAR(fractures), [0,0,0,0,0,0]];
-private _lidocaineCount = [_patient, "Lidocaine", false] call ACEFUNC(medical_status,getMedicationCount);
-private _morphineCount = [_patient, "Morphine", false] call ACEFUNC(medical_status,getMedicationCount);
-private _nalbuphineCount = [_patient, "Nalbuphine", false] call ACEFUNC(medical_status,getMedicationCount);
-private _fentanylCount = [_patient, "Fentanyl", false] call ACEFUNC(medical_status,getMedicationCount);
-private _ketamineCount = [_patient, "Ketamine", false] call ACEFUNC(medical_status,getMedicationCount);
-if (_lidocaineCount <=  0.6 && _morphineCount <=  0.8 && _nalbuphineCount <=  0.8 && _fentanylCount <=  0.8 && _ketamineCount <=  0.8) then {
-    private _pain = random [0.7, 0.8, 0.9];
-    [_patient, _pain] call ACEFUNC(medical_status,adjustPainLevel);
+private _medStack = _patient call ACEFUNC(medical_treatment,getAllMedication);
+private _medsToCheck = ["fentanyl", "ketamine", "nalbuphine", "morphine", "morphineIV"];
+private _fentanylEffectiveness = 0;
+private _ketamineEffectiveness = 0;
+private _nalbuphineEffectiveness = 0;
+private _morphineEffectiveness = 0;
+private _morphineIVEffectiveness = 0;
+{
+    private _medName = toLower (_x select 0);
+    private _effectiveness = _x select 2;
+    if ("fentanyl" in _medName) then {
+        _fentanylEffectiveness = _fentanylEffectiveness max _effectiveness;
+    };
+    if ("ketamine" in _medName) then {
+        _ketamineEffectiveness = _ketamineEffectiveness max _effectiveness;
+    };
+    if ("nalbuphine" in _medName) then {
+        _nalbuphineEffectiveness = _nalbuphineEffectiveness max _effectiveness;
+    };
+    if ("morphine" in _medName) then {
+        _nalbuphineEffectiveness = _nalbuphineEffectiveness max _effectiveness;
+    };
+    if ("morphineIV" in _medName) then {
+        _nalbuphineEffectiveness = _nalbuphineEffectiveness max _effectiveness;
+    };
+} forEach _medStack;
+if (
+    _fentanylEffectiveness <= 0.8 &&
+    _ketamineEffectiveness <= 0.8 &&
+    _nalbuphineEffectiveness <= 0.8 &&
+    _morphineEffectiveness <= 0.8 &&
+    _morphineIVEffectiveness <= 0.8
+) then {
+    [_patient, [0.6, 0.7, 0.8] select (floor random 3)] call ACEFUNC(medical_status,adjustPainLevel);
 };
 
 playSound3D [QPATHTOF_SOUND(sounds\reduction.wav), _patient, false, getPosASL _patient, 8, 1, 15];

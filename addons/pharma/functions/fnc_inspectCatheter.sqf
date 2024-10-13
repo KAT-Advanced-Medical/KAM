@@ -23,7 +23,7 @@ private _partIndex = ALL_BODY_PARTS find toLower _bodyPart;
 private _IVarray = _patient getVariable [QGVAR(IV), [0,0,0,0,0,0]];
 private _IVactual = _IVarray select _partIndex;
 
-if (_IVactual == 3) exitWith {
+if (_IVactual == 7) exitWith {
     private _output = LLSTRING(IVblock_closed);
     [_output, 1.5, _medic] call ACEFUNC(common,displayTextStructured);
 };

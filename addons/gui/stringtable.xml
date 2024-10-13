@@ -231,5 +231,35 @@
             <Spanish>Restaurar</Spanish>
             <Japanese>リセット</Japanese>
         </Key>
+        <Key ID="STR_KAT_GUI_SyringeTitle">
+            <English>Syringe Preparation</English>
+        </Key>
+        <Key ID="STR_KAT_GUI_SyringeTitleList">
+            <English>Syringe Type</English>
+        </Key>
+        <Key ID="STR_KAT_GUI_MedicationTitleList">
+            <English>Medication Type</English>
+        </Key>
+        <Key ID="STR_KAT_GUI_DoseTitle">
+            <English>Dose Size</English>
+        </Key>
+        <Key ID="STR_KAT_GUI_DoseLow">
+            <English>Low</English>
+        </Key>
+        <Key ID="STR_KAT_GUI_DoseMedium">
+            <English>Medium</English>
+        </Key>
+        <Key ID="STR_KAT_GUI_DoseHigh">
+            <English>High</English>
+        </Key>
+        <Key ID="STR_KAT_GUI_PrepSyringe">
+            <English>Prepare Syringe</English>
+        </Key>
+        <Key ID="STR_KAT_GUI_CloseMenu">
+            <English>Close</English>
+        </Key>
+        <Key ID="STR_KAT_GUI_OpenSyringeMenu">
+            <English>Syringe Prep</English>
+        </Key>
     </Package>
 </Project>

@@ -140,7 +140,18 @@
 #define IDC_TEST_HCO3          71205
 #define IDC_TEST_PH          71206
 #define IDC_TEST_RESET          71207
+#define IDC_TEST_SHOWBUTTON          71208
 
-#define IDC_TEST_SHOWBUTTON 71208
-
-#define IDC_ABG_BACKGROUND           71299
+#define IDC_ABG_BACKGROUND           71299         
+#define IDC_SYRINGE_TITLE           71300
+#define IDC_SYRINGE_BACKGROUND           71301
+#define IDC_SYRINGE_TYPE_TITLE           71302
+#define IDC_SYRINGE_TYPE_LIST           71303
+#define IDC_MEDICATION_TYPE_TITLE           71304
+#define IDC_MEDICATION_TYPE_LIST           71305
+#define IDC_MEDICATION_DOSE_TITLE           71306
+#define IDC_MEDICATION_DOSE_COMBO           71307
+#define IDC_MEDICATION_PREP_SYRINGE           71308
+#define IDC_SYRINGE_CLOSE           71309
+#define IDC_SYRINGE_OPEN           71310
+#define IDC_SYRINGE_GROUP          71311

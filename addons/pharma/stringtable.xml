@@ -2,7 +2,7 @@
 <Project name="KAT">
     <Package name="Pharma">
         <Key ID="STR_KAT_Pharma_medLvl_ApplyIV">
-            <English>Allow applying IV</English>
+            <English>Allow applying 16g IV</English>
             <Polish>Poziom wyszkolenia medycznego dla IV</Polish>
             <Chinesesimp>允许使用IV</Chinesesimp>
             <Italian>Permetti utilizzo IV</Italian>
@@ -18,7 +18,7 @@
             <Dutch>IV plaatsing niveau</Dutch>
         </Key>
         <Key ID="STR_KAT_Pharma_medLvl_ApplyIV_Desc">
-            <English>Changes what medical level is required to set IVs</English>
+            <English>Changes what medical level is required to set 16 gauge IVs</English>
             <German>Benötigter medizinischer Grad, welcher für das Legen von IVs erforderlich ist</German>
             <Polish>Poziom wyszkolenia medycznego potrzebnego do założenia kaniul IV</Polish>
             <French>Niveau nécessaire pour poser une IV</French>
@@ -34,6 +34,18 @@
             <Portuguese>Muda qual nível médico é necessário para aplicar IVs</Portuguese>
             <Finnish>Muuttaa, mitä lääketieteen koulutustasoa tarvitaan IV:n lisäämiseen</Finnish>
             <Dutch>Bepaald welk medisch niveau benodigd is om IV's aan te kunnen leggen</Dutch>
+        </Key>
+        <Key ID="STR_KAT_Pharma_medLvl_Apply14IV">
+            <English>Allow applying 14g IV</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_medLvl_Apply14IV_Desc">
+            <English>Changes what medical level is required to set 14 gauge IVs</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_medLvl_Apply20IV">
+            <English>Allow applying 20g IV</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_medLvl_Apply20IV_Desc">
+            <English>Changes what medical level is required to set 20 gauge IVs</English>
         </Key>
         <Key ID="STR_KAT_Pharma_medLvl_ApplyIO">
             <English>Allow applying IO</English>
@@ -445,7 +457,7 @@
             <Dutch>Injecteer Lidocaïne</Dutch>
         </Key>
         <Key ID="STR_KAT_Pharma_Atropine_DescShort">
-            <English>Used to treat chemical exposure</English>
+            <English>Used to treat chemical exposure and bradycardia</English>
             <German>Zur Behandlung von Bradykardie</German>
             <Polish>Używany do zwalczania bradykardii</Polish>
             <French>Utiliser pour traiter une bradycardie</French>
@@ -479,6 +491,24 @@
             <Portuguese>Autoinjetor de Atropina</Portuguese>
             <Finnish>Atropiini</Finnish>
             <Dutch>Atropine autoinjector</Dutch>
+        </Key>
+        <Key ID="STR_KAT_Pharma_AtropineIV_Display">
+            <English>IV Atropine</English>
+            <German>Atropin</German>
+            <Polish>Atropina</Polish>
+            <French>Atropine</French>
+            <Chinese>阿托品</Chinese>
+            <Chinesesimp>阿托品</Chinesesimp>
+            <Italian>Atropina</Italian>
+            <Spanish>Atropina</Spanish>
+            <Korean>아트로핀</Korean>
+            <Turkish>Atropin</Turkish>
+            <Czech>Atropin</Czech>
+            <Japanese>アトロピン</Japanese>
+            <Russian>Атропин</Russian>
+            <Portuguese>Atropina</Portuguese>
+            <Finnish>Atropiini</Finnish>
+            <Dutch>Atropine</Dutch>
         </Key>
         <Key ID="STR_KAT_Pharma_Take_Atropine">
             <English>Inject Atropine</English>
@@ -918,6 +948,40 @@
             <Portuguese>16g IV</Portuguese>
             <Finnish>16g IV</Finnish>
             <Dutch>16g IV</Dutch>
+        </Key>
+        <Key ID="STR_KAT_Pharma_IV_14_Display">
+            <English>14g IV</English>
+            <German>14g IV</German>
+            <Polish>14g IV</Polish>
+            <Spanish>14g IV</Spanish>
+            <Chinese>14g IV</Chinese>
+            <Chinesesimp>14g IV</Chinesesimp>
+            <Czech>14g IV</Czech>
+            <Korean>14g IV</Korean>
+            <French>14g IV</French>
+            <Turkish>14g IV</Turkish>
+            <Italian>14g IV</Italian>
+            <Japanese>14g IV</Japanese>
+            <Russian>14r IV</Russian>
+            <Portuguese>14g IV</Portuguese>
+            <Finnish>14g IV</Finnish>
+        </Key>
+        <Key ID="STR_KAT_Pharma_IV_20_Display">
+            <English>20g IV</English>
+            <German>20g IV</German>
+            <Polish>20g IV</Polish>
+            <Spanish>20g IV</Spanish>
+            <Chinese>20g IV</Chinese>
+            <Chinesesimp>20g IV</Chinesesimp>
+            <Czech>20g IV</Czech>
+            <Korean>20g IV</Korean>
+            <French>20g IV</French>
+            <Turkish>20g IV</Turkish>
+            <Italian>20g IV</Italian>
+            <Japanese>20g IV</Japanese>
+            <Russian>20r IV</Russian>
+            <Portuguese>20g IV</Portuguese>
+            <Finnish>20g IV</Finnish>
         </Key>
         <Key ID="STR_KAT_Pharma_IV_DescShort">
             <English>Intravenous Needle</English>
@@ -1840,6 +1904,12 @@
             <Russian>Время обработки для TXA</Russian>
             <Dutch>Behandeltijd van TXA</Dutch>
         </Key>
+        <Key ID="STR_KAT_Pharma_medLvl_TXAIM">
+            <English>Medical level required for IM TXA</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_treatmentTime_TXAIM">
+            <English>Treatment time for IM TXA</English>
+        </Key>
         <Key ID="STR_KAT_Pharma_medLvl_Norepinephrine">
             <English>Medical level required for Norepinephrine</English>
             <Polish>Poziom wyszkolenia medycznego dla Noradrenaliny</Polish>
@@ -2000,6 +2070,12 @@
             <Russian>Время обработки Лидокаином</Russian>
             <Dutch>Behandeltijd van Lidocaïne</Dutch>
         </Key>
+        <Key ID="STR_KAT_Pharma_medLvl_LidocaineIM">
+            <English>Medical level required for IM Lidocaine</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_treatmentTime_LidocaineIM">
+            <English>Treatment time for IM Lidocaine</English>
+        </Key>
         <Key ID="STR_KAT_Pharma_medLvl_Atropine">
             <English>Medical level required for Atropine</English>
             <Polish>Poziom wyszkolenia medycznego dla Atropiny</Polish>
@@ -2031,6 +2107,12 @@
             <Finnish>Atropiinin hoitoaika</Finnish>
             <Russian>Время обратки Атропином</Russian>
             <Dutch>Behandeltijd van Atropine</Dutch>
+        </Key>
+        <Key ID="STR_KAT_Pharma_medLvl_AtropineIV">
+            <English>Medical level required for IV Atropine</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_treatmentTime_AtropineIV">
+            <English>Treatment time for IV Atropine</English>
         </Key>
         <Key ID="STR_KAT_Pharma_medLvl_EACA">
             <English>Medical level required for EACA</English>
@@ -2192,6 +2274,12 @@
             <Russian>Время обработки Кетамином</Russian>
             <Dutch>Behandeltijd van Ketamine</Dutch>
         </Key>
+        <Key ID="STR_KAT_Pharma_medLvl_KetamineIM">
+            <English>Medical level required for IM Ketamine</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_treatmentTime_KetamineIM">
+            <English>Treatment time for IM Ketamine</English>
+        </Key>
         <Key ID="STR_KAT_Pharma_medLvl_Fentanyl">
             <English>Medical level required for Fentanyl</English>
             <Polish>Poziom wyszkolenia medycznego dla Fentanylu</Polish>
@@ -2224,6 +2312,12 @@
             <Russian>Время обработки Фентанилом</Russian>
             <Dutch>Behandeltijd van Fentanyl</Dutch>
         </Key>
+        <Key ID="STR_KAT_Pharma_medLvl_FentanylIM">
+            <English>Medical level required for IM Fentanyl</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_treatmentTime_FentanylIM">
+            <English>Treatment time for IM Fentanyl</English>
+        </Key>
         <Key ID="STR_KAT_Pharma_medLvl_Nalbuphine">
             <English>Medical level required for Nalbuphine</English>
             <Polish>Poziom wyszkolenia medycznego dla Nalbuphinu</Polish>
@@ -2255,6 +2349,12 @@
             <Finnish>Nalbufiinin hoitoaika</Finnish>
             <Russian>Время обработки Налбуфином</Russian>
             <Dutch>Behandeltijd van Nalbufine</Dutch>
+        </Key>
+        <Key ID="STR_KAT_Pharma_medLvl_NalbuphineIM">
+            <English>Medical level required for IM Nalbuphine</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_treatmentTime_NalbuphineIM">
+            <English>Treatment time for IM Nalbuphine</English>
         </Key>
         <Key ID="STR_KAT_Pharma_SETTING_medLvl_Penthrox">
             <English>Medical level required for Penthrox Inhaler</English>
@@ -3847,6 +3947,624 @@
             <Spanish>Administrar Epinefrina</Spanish>
             <Dutch>Injecteer IV Adrenaline</Dutch>
             <French>Administrer l'épinéphrine</French>
+        </Key>
+        <Key ID="STR_KAT_Pharma_Syringe_5_Display">
+            <English>5ml Syringe</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_Syringe_5_DescShort">
+            <English>For IV medications</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_Syringe_10_Display">
+            <English>10ml Syringe</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_Syringe_10_DescShort">
+            <English>For IM medications</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_Syringe_txa_10_1_Display">
+            <English>10ml Syringe/1g TXA</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_Syringe_txa_10_1_DescShort">
+            <English>10ml Syringe loaded with 1 gram of TXA</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_Syringe_txa_10_3_Display">
+            <English>10ml Syringe/2g TXA</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_Syringe_txa_10_3_DescShort">
+            <English>10ml Syringe loaded with 2 grams of TXA</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_Syringe_lidocaine_10_1_Display">
+            <English>10ml Syringe/40mg Lidocaine</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_Syringe_lidocaine_10_1_DescShort">
+            <English>10ml Syringe loaded with 40mg of Lidocaine</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_Syringe_ketamine_10_1_Display">
+            <English>10ml Syringe/25mg Ketamine</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_Syringe_ketamine_10_1_DescShort">
+            <English>10ml Syringe loaded with 25mg of Ketamine</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_Syringe_ketamine_10_3_Display">
+            <English>10ml Syringe/80mg Ketamine</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_Syringe_ketamine_10_3_DescShort">
+            <English>10ml Syringe loaded with 80mg of Ketamine</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_Syringe_fentanyl_10_1_Display">
+            <English>10ml Syringe/40mcg Fentanyl</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_Syringe_fentanyl_10_1_DescShort">
+            <English>10ml Syringe loaded with 40mcg of Fentanyl</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_Syringe_fentanyl_10_3_Display">
+            <English>10ml Syringe/80mcg Fentanyl</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_Syringe_fentanyl_10_3_DescShort">
+            <English>10ml Syringe loaded with 80mcg of Fentanyl</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_Syringe_nalbuphine_10_1_Display">
+            <English>10ml Syringe/10mg Nalbuphine</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_Syringe_nalbuphine_10_1_DescShort">
+            <English>10ml Syringe loaded with 10mg of Nalbuphine</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_Syringe_nalbuphine_10_3_Display">
+            <English>10ml Syringe/20mg Nalbuphine</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_Syringe_nalbuphine_10_3_DescShort">
+            <English>10ml Syringe loaded with 20mg of Nalbuphine</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_Syringe_norepinephrine_5_1_Display">
+            <English>5ml Syringe/150mcg Norepinephrine</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_Syringe_norepinephrine_5_1_DescShort">
+            <English>5ml Syringe loaded with 150mcg of Norepinephrine</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_Syringe_norepinephrine_5_3_Display">
+            <English>5ml Syringe/240mcg Norepinephrine</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_Syringe_norepinephrine_5_3_DescShort">
+            <English>5ml Syringe loaded with 240mcg of Norepinephrine</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_Syringe_phenylephrine_5_1_Display">
+            <English>5ml Syringe/100mcg Phenylephrine</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_Syringe_phenylephrine_5_1_DescShort">
+            <English>5ml Syringe loaded with 100mcg of Phenylephrine</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_Syringe_phenylephrine_5_3_Display">
+            <English>5ml Syringe/200mcg Phenylephrine</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_Syringe_phenylephrine_5_3_DescShort">
+            <English>5ml Syringe loaded with 200mcg of Phenylephrine</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_Syringe_nitroglycerin_5_1_Display">
+            <English>5ml Syringe/50mcg Nitroglycerin</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_Syringe_nitroglycerin_5_1_DescShort">
+            <English>5ml Syringe loaded with 50mcg of Nitroglycerin</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_Syringe_nitroglycerin_5_3_Display">
+            <English>5ml Syringe/100mcg Nitroglycerin</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_Syringe_nitroglycerin_5_3_DescShort">
+            <English>5ml Syringe loaded with 100mcg of Nitroglycerin</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_Syringe_amiodarone_5_1_Display">
+            <English>5ml Syringe/150mg Amiodarone</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_Syringe_amiodarone_5_1_DescShort">
+            <English>5ml Syringe loaded with 150mg of Amiodarone</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_Syringe_amiodarone_5_3_Display">
+            <English>5ml Syringe/300mg Amiodarone</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_Syringe_amiodarone_5_3_DescShort">
+            <English>5ml Syringe loaded with 300mg of Amiodarone</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_Syringe_lidocaine_5_1_Display">
+            <English>5ml Syringe/40mg Lidocaine</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_Syringe_lidocaine_5_1_DescShort">
+            <English>5ml Syringe loaded with 40mg of Lidocaine</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_Syringe_lidocaine_5_3_Display">
+            <English>5ml Syringe/80mg Lidocaine</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_Syringe_lidocaine_5_3_DescShort">
+            <English>5ml Syringe loaded with 80mg of Lidocaine</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_Syringe_atropineIV_5_1_Display">
+            <English>5ml Syringe/0.6mg Atropine</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_Syringe_atropineIV_5_1_DescShort">
+            <English>5ml Syringe loaded with 0.6mg of Atropine</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_Syringe_atropineIV_5_3_Display">
+            <English>5ml Syringe/2mg Atropine</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_Syringe_atropineIV_5_3_DescShort">
+            <English>5ml Syringe loaded with 2mg of Atropine</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_Syringe_ketamine_5_1_Display">
+            <English>5ml Syringe/25mg Ketamine</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_Syringe_ketamine_5_1_DescShort">
+            <English>5ml Syringe loaded with 25mg of Ketamine</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_Syringe_ketamine_5_3_Display">
+            <English>5ml Syringe/80mg Ketamine</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_Syringe_ketamine_5_3_DescShort">
+            <English>5ml Syringe loaded with 80mg of Ketamine</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_Syringe_fentanyl_5_1_Display">
+            <English>5ml Syringe/40mcg Fentanyl</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_Syringe_fentanyl_5_1_DescShort">
+            <English>5ml Syringe loaded with 40mcg of Fentanyl</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_Syringe_fentanyl_5_3_Display">
+            <English>5ml Syringe/80mcg Fentanyl</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_Syringe_fentanyl_5_3_DescShort">
+            <English>5ml Syringe loaded with 80mcg of Fentanyl</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_Syringe_nalbuphine_5_1_Display">
+            <English>5ml Syringe/10mg Nalbuphine</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_Syringe_nalbuphine_5_1_DescShort">
+            <English>5ml Syringe loaded with 10mg of Nalbuphine</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_Syringe_nalbuphine_5_3_Display">
+            <English>5ml Syringe/20mg Nalbuphine</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_Syringe_nalbuphine_5_3_DescShort">
+            <English>5ml Syringe loaded with 20mg of Nalbuphine</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_Syringe_lorazepam_5_1_Display">
+            <English>5ml Syringe/2.4mg Lorazepam</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_Syringe_lorazepam_5_1_DescShort">
+            <English>5ml Syringe loaded with 2.4mg of Lorazepam</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_Syringe_lorazepam_5_3_Display">
+            <English>5ml Syringe/4mg Lorazepam</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_Syringe_lorazepam_5_3_DescShort">
+            <English>5ml Syringe loaded with 4mg of Lorazepam</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_Syringe_flumazenil_5_1_Display">
+            <English>5ml Syringe/0.1mg Flumazenil</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_Syringe_flumazenil_5_1_DescShort">
+            <English>5ml Syringe loaded with 0.1mg of Flumazenil</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_Syringe_flumazenil_5_3_Display">
+            <English>5ml Syringe/0.2mg Flumazenil</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_Syringe_flumazenil_5_3_DescShort">
+            <English>5ml Syringe loaded with 0.2mg of Flumazenil</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_Syringe_etomidate_5_1_Display">
+            <English>5ml Syringe/0.2mg Etomidate</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_Syringe_etomidate_5_1_DescShort">
+            <English>5ml Syringe loaded with 0.2mg of Etomidate</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_Syringe_etomidate_5_3_Display">
+            <English>5ml Syringe/0.3mg Etomidate</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_Syringe_etomidate_5_3_DescShort">
+            <English>5ml Syringe loaded with 0.3mg of Etomidate</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_Syringe_epinephrineIV_5_1_Display">
+            <English>5ml Syringe/10mcg Epinephrine</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_Syringe_epinephrineIV_5_1_DescShort">
+            <English>5ml Syringe loaded with 10mcg of Epinephrine</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_Syringe_epinephrineIV_5_3_Display">
+            <English>5ml Syringe/1mg Epinephrine</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_Syringe_epinephrineIV_5_3_DescShort">
+            <English>5ml Syringe loaded with 1mg of Epinephrine</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_Syringe_txa_5_1_Display">
+            <English>5ml Syringe/1g TXA</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_Syringe_txa_5_3_DescShort">
+            <English>5ml Syringe loaded with 1 gram of TXA</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_Syringe_txa_5_3_Display">
+            <English>5ml Syringe/2g TXA</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_Syringe_txa_5_1_DescShort">
+            <English>5ml Syringe loaded with 2 grams of TXA</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_Syringe_eaca_5_1_Display">
+            <English>5ml Syringe/7.5g EACA</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_Syringe_eaca_5_1_DescShort">
+            <English>5ml Syringe loaded with 7.5 grams of EACA</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_Syringe_eaca_5_3_Display">
+            <English>5ml Syringe/15g EACA</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_Syringe_eaca_5_3_DescShort">
+            <English>5ml Syringe loaded with 15 grams of EACA</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_Syringe_morphineIV_5_1_Display">
+            <English>5ml Syringe/10mg Morphine</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_Syringe_morphineIV_5_1_DescShort">
+            <English>5ml Syringe loaded with 10mg of Morphine</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_Syringe_morphineIV_5_3_Display">
+            <English>5ml Syringe/20mg Morphine</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_Syringe_morphineIV_5_3_DescShort">
+            <English>5ml Syringe loaded with 20mg of Morphine</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_Syringe_adenosineIV_5_1_Display">
+            <English>5ml Syringe/6mg Adenosine</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_Syringe_adenosineIV_5_1_DescShort">
+            <English>5ml Syringe loaded with 6 mg of Adenosine</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_Syringe_adenosineIV_5_3_Display">
+            <English>5ml Syringe/12mg Adenosine</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_Syringe_adenosineIV_5_3_DescShort">
+            <English>5ml Syringe loaded with 12mg of Adenosine</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_push_TXA_IV_1">
+            <English>Push 1g TXA IV</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_push_TXA_IV_3">
+            <English>Push 2g TXA IV</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_push_EACA_IV_1">
+            <English>Push 7.5g EACA IV</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_push_EACA_IV_3">
+            <English>Push 15g EACA IV</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_pushing_TXA_IV_1">
+            <English>Pushing 1g TXA IV</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_pushing_TXA_IV_3">
+            <English>Pushing 2g TXA IV</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_pushing_EACA_IV_1">
+            <English>Pushing 7.5g EACA IV</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_pushing_EACA_IV_3">
+            <English>Pushing 15g EACA IV</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_pushing_morphineIV_IV_1">
+            <English>Pushing 10mg Morphine IV</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_pushing_morphineIV_IV_3">
+            <English>Pushing 20mg Morphine IV</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_push_norepinephrine_IV_1">
+            <English>Push 150mg Norepinephrine IV</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_push_norepinephrine_IV_3">
+            <English>Push 240mg Norepinephrine IV</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_push_phenylephrine_IV_1">
+            <English>Push 100mcg Phenylephrine IV</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_push_phenylephrine_IV_3">
+            <English>Push 200mcg Phenylephrine IV</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_push_nitroglycerin_IV_1">
+            <English>Push 50mcg Nitroglycerin IV</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_push_nitroglycerin_IV_3">
+            <English>Push 100mcg Nitroglycerin IV</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_push_amiodarone_IV_1">
+            <English>Push 150mg Amiodarone IV</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_push_amiodarone_IV_3">
+            <English>Push 300mg Amiodarone IV</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_push_lidocaine_IV_1">
+            <English>Push 40mg Lidocaine IV</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_push_lidocaine_IV_3">
+            <English>Push 80mg Lidocaine IV</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_push_atropineIV_IV_1">
+            <English>Push 0.6mg Atropine IV</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_push_atropineIV_IV_3">
+            <English>Push 2mg Atropine IV</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_push_ketamine_IV_1">
+            <English>Push 25mg Ketamine IV</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_push_ketamine_IV_3">
+            <English>Push 80mg Ketamine IV</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_push_fentanyl_IV_1">
+            <English>Push 40mcg Fentanyl IV</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_push_fentanyl_IV_3">
+            <English>Push 80mcg Fentanyl IV</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_push_nalbuphine_IV_1">
+            <English>Push 10mg Nalbuphine IV</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_push_nalbuphine_IV_3">
+            <English>Push 20mg Nalbuphine IV</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_push_lorazepam_IV_1">
+            <English>Push 2.4mg Lorazepam IV</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_push_lorazepam_IV_3">
+            <English>Push 4mg Lorazepam IV</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_push_flumazenil_IV_1">
+            <English>Push 0.1mg Flumazenil IV</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_push_flumazenil_IV_3">
+            <English>Push 0.2mg Flumazenil IV</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_push_etomidate_IV_1">
+            <English>Push 0.2mg Etomidate IV</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_push_etomidate_IV_3">
+            <English>Push 0.3mg Etomidate IV</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_push_epinephrineIV_IV_1">
+            <English>Push 10mcg Epinephrine IV</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_push_epinephrineIV_IV_3">
+            <English>Push 1mg Epinephrine IV</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_push_morphineIV_IV_1">
+            <English>Push 10mg Morphine IV</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_push_morphineIV_IV_3">
+            <English>Push 20mg Morphine IV</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_push_adenosineIV_IV_1">
+            <English>Push 6mg Adenosine IV</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_push_adenosineIV_IV_3">
+            <English>Push 12mg Adenosine IV</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_pushing_norepinephrine_IV_1">
+            <English>Pushing 150mg Norepinephrine IV</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_pushing_norepinephrine_IV_3">
+            <English>Pushing 240mg Norepinephrine IV</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_pushing_phenylephrine_IV_1">
+            <English>Pushing 100mcg Phenylephrine IV</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_pushing_phenylephrine_IV_3">
+            <English>Pushing 200mcg Phenylephrine IV</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_pushing_nitroglycerin_IV_1">
+            <English>Pushing 50mcg Nitroglycerin IV</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_pushing_nitroglycerin_IV_3">
+            <English>Pushing 100mcg Nitroglycerin IV</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_pushing_amiodarone_IV_1">
+            <English>Pushing 150mg Amiodarone IV</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_pushing_amiodarone_IV_3">
+            <English>Pushing 300mg Amiodarone IV</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_pushing_lidocaine_IV_1">
+            <English>Pushing 40mg Lidocaine IV</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_pushing_lidocaine_IV_3">
+            <English>Pushing 80mg Lidocaine IV</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_pushing_atropineIV_IV_1">
+            <English>Pushing 0.6mg Atropine IV</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_pushing_atropineIV_IV_3">
+            <English>Pushing 2mg Atropine IV</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_pushing_ketamine_IV_1">
+            <English>Pushing 25mg Ketamine IV</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_pushing_ketamine_IV_3">
+            <English>Pushing 80mg Ketamine IV</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_pushing_fentanyl_IV_1">
+            <English>Pushing 40mcg Fentanyl IV</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_pushing_fentanyl_IV_3">
+            <English>Pushing 80mcg Fentanyl IV</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_pushing_nalbuphine_IV_1">
+            <English>Pushing 10mg Nalbuphine IV</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_pushing_nalbuphine_IV_3">
+            <English>Pushing 20mg Nalbuphine IV</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_pushing_lorazepam_IV_1">
+            <English>Pushing 2.4mg Lorazepam IV</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_pushing_lorazepam_IV_3">
+            <English>Pushing 4mg Lorazepam IV</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_pushing_flumazenil_IV_1">
+            <English>Pushing 0.1mg Flumazenil IV</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_pushing_flumazenil_IV_3">
+            <English>Pushing 0.2mg Flumazenil IV</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_pushing_etomidate_IV_1">
+            <English>Pushing 0.2mg Etomidate IV</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_pushing_etomidate_IV_3">
+            <English>Pushing 0.3mg Etomidate IV</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_pushing_epinephrineIV_IV_1">
+            <English>Pushing 10mcg Epinephrine IV</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_pushing_epinephrineIV_IV_3">
+            <English>Pushing 1mg Epinephrine IV</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_pushing_adenosineIV_IV_1">
+            <English>Pushing 6mg Adenosine IV</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_pushing_adenosineIV_IV_3">
+            <English>Pushing 12mg Adenosine IV</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_inject_TXA_IM_1">
+            <English>Inject 1g TXA IM</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_inject_TXA_IM_3">
+            <English>Inject 2g TXA IM</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_inject_lidocaine_IM_1">
+            <English>Inject 40mg Lidocaine IM</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_inject_ketamine_IM_1">
+            <English>Inject 25mg Ketamine IM</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_inject_ketamine_IM_3">
+            <English>Inject 80mg Ketamine IM</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_inject_fentanyl_IM_1">
+            <English>Inject 40mcg Fentanyl IM</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_inject_fentanyl_IM_3">
+            <English>Inject 80mcg Fentanyl IM</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_inject_nalbuphine_IM_1">
+            <English>Inject 10mg Nalbuphine IM</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_inject_nalbuphine_IM_3">
+            <English>Inject 20mg Nalbuphine IM</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_inject_morphineIV_IM_1">
+            <English>Inject 10mg Morphine IM</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_inject_morphineIV_IM_3">
+            <English>Inject 20mg Morphine IM</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_injecting_TXA_IM_1">
+            <English>Injecting 1g TXA IM</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_injecting_TXA_IM_3">
+            <English>Injecting 2g TXA IM</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_injecting_morphineIV_IM_1">
+            <English>Injecting 10mg Morphine IM</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_injecting_morphineIV_IM_3">
+            <English>Injecting 20mg Morphine IM</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_injecting_lidocaine_IM_1">
+            <English>Injecting 40mg Lidocaine IM</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_injecting_ketamine_IM_1">
+            <English>Injecting 25mg Ketamine IM</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_injecting_ketamine_IM_3">
+            <English>Injecting 80mg Ketamine IM</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_injecting_fentanyl_IM_1">
+            <English>Injecting 40mcg Fentanyl IM</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_injecting_fentanyl_IM_3">
+            <English>Injecting 80mcg Fentanyl IM</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_injecting_nalbuphine_IM_1">
+            <English>Injecting 10mg Nalbuphine IM</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_injecting_nalbuphine_IM_3">
+            <English>Injecting 20mg Nalbuphine IM</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_Syringe_morphineIV_10_1_Display">
+            <English>10ml Syringe/10mg Morphine</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_Syringe_morphineIV_10_1_DescShort">
+            <English>10ml Syringe loaded with 10mg of Morphine</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_Syringe_morphineIV_10_3_Display">
+            <English>10ml Syringe/20mg Morphine</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_Syringe_morphineIV_10_3_DescShort">
+            <English>10ml Syringe loaded with 20mg of Morphine</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_Apply_IV_14">
+            <English>Establish 14g IV</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_Apply_IV_20">
+            <English>Establish 20g IV</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_medLvl_PrepSyringe">
+            <English>Syringe Prep level</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_medLvl_PrepSyringe_Desc">
+            <English>Medical level required to prep syringes</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_prepTime_PrepSyringe">
+            <English>Syringe Prep Time</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_prepTime_PrepSyringe_Desc">
+            <English>Time required to prep syringes</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_advancedMedicationSystem">
+            <English>Enable Advanced Medication System</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_advancedMedicationSystem_Desc">
+            <English>Enables Advanced Medication System and disables Basic System</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_SubCategory_Morphine">
+            <English>KAT Morphine Settings</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_MorphineIV_DescShort">
+            <English>IV Morphine</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_MorphineIV_displayName">
+            <English>IV Morphine</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_medLvl_MorphineIV">
+            <English>Medical level required for IV Morphine</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_treatmentTime_MorphineIV">
+            <English>Treatment time for IV Morphine</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_medLvl_MorphineIM">
+            <English>Medical level required for IM Morphine</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_treatmentTime_MorphineIM">
+            <English>Treatment time for IM Morphine</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_Take_MorphineIV">
+            <English>Push IV Morphine</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_SubCategory_AdenosineIV">
+            <English>IV Adenosine</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_medLvl_AdenosineIV">
+            <English>Medical level required for IV Adenosine</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_treatmentTime_AdenosineIV">
+            <English>Treatment time for IV Adenosine</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_AdenosineIV_DescShort">
+            <English>IV Adenosine</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_AdenosineIV_displayName">
+            <English>IV Adenosine</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_Take_AdenosineIV">
+            <English>Push IV Adenosine</English>
         </Key>
     </Package>
 </Project>

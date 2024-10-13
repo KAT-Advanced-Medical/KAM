@@ -1,6 +1,6 @@
 #include "..\script_component.hpp"
 /*
- * Author: Mazinski.H, Edited by MiszczuZPolski
+ * Author: Mazinski.H, Edited by MiszczuZPolski and Cplhardcore
  * Applies Bradycardia randomly
  *
  * Arguments:
@@ -14,7 +14,6 @@
  *
  * Public: No
  */
-
 params ["_patient"];
 
 private _random = random 3;

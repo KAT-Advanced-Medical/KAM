@@ -36,7 +36,7 @@ params ["_unit","_dead"];
     {
         _x params ["_medication"];
 
-        if (_medication in ["Epinephrine", "EpinephrineIV", "Phenylephrine", "Nitroglycerin", "Lidocaine", "Norepinephrine"]) exitWith {
+        if (_medication in ["Epinephrine", "EpinephrineIV", "Phenylephrine", "Nitroglycerin", "Lidocaine", "Norepinephrine", "syringe_kat_norepinephrine_5ml_1", "syringe_kat_norepinephrine_5ml_2", "syringe_kat_phenylephrine_5ml_1", "syringe_kat_phenylephrine_5ml_2", "syringe_kat_nitroglycerin_5ml_1", "syringe_kat_nitroglycerin_5ml_2", "syringe_kat_epinephrineIV_5ml_1", "syringe_kat_epinephrineIV_5ml_2", "syringe_kat_lidocaine_5ml_1", "syringe_kat_lidocaine_5ml_2","syringe_kat_lidocaine_10ml_1"]) exitWith {
             _action = true;
         };
     } forEach (_medicationArray);

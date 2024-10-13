@@ -51,9 +51,10 @@ if (!isNil {_unit getVariable [QACEGVAR(medical,ivBags),[]]}) then {
 
         private _tourniquets = GET_TOURNIQUETS(_unit);
 
-        if ((_tourniquets select _bodyPart isEqualTo 0) && (_IVarray select _bodyPart isNotEqualTo 3)) then {
+        if ((_tourniquets select _bodyPart isEqualTo 0) && (_IVarray select _bodyPart isNotEqualTo 7)) then {
             private _IVflow = _unit getVariable [QGVAR(IVflow), [0,0,0,0,0,0]];
-            private _bagChange = (_flowCalculation * (_IVflow select _bodyPart)) min _bagVolumeRemaining; // absolute value of the change in miliLiters
+            private _IVrate = _unit getVariable [QGVAR(IVrate), [0,0,0,0,0,0]];
+            private _bagChange = (_flowCalculation * (_IVflow select _bodyPart) * (_IVrate select _bodyPart)) min _bagVolumeRemaining; // absolute value of the change in miliLiters
             _bagVolumeRemaining = _bagVolumeRemaining - _bagChange;
 
             if (_hypothermia) then {

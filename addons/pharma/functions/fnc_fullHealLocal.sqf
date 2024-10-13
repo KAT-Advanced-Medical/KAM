@@ -38,6 +38,7 @@ if (GVAR(RequireInsIV) && GVAR(IVflowControl)) then {
 };
 
 _patient setVariable [QGVAR(IVpfh), [0,0,0,0,0,0], true];
+_patient setVariable [QGVAR(IVrate), [0,0,0,0,0,0], true];
 _patient setVariable [QGVAR(active), false, true];
 _patient setVariable [QGVAR(IVPharma_PFH), nil, true];
 
