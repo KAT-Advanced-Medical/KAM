@@ -16,8 +16,3 @@
  */
 
 params ["_patient", "_bodyPart", "_opioidRelief"];
-
-private _opioidFactor = _patient getVariable [QGVAR(opioidFactor), 1];
-if (_opioidFactor == 1) then {
-    _patient setVariable [QGVAR(opioidFactor), _opioidRelief, true];
-};

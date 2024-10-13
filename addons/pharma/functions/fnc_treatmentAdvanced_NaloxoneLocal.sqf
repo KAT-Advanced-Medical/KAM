@@ -18,13 +18,18 @@
 params ["_patient"];
 
 private _medicationArray = _patient getVariable [QACEGVAR(medical,medications), []];
-
+private _opioidRemoved = false;
 {
     _x params ["_medication"];
-
-    if (_medication isEqualTo "Morphine" || _medication isEqualTo "Fentanyl" || _medication isEqualTo "Nalbuphine") exitWith {
+    if (_medication isEqualTo "Morphine" || _medication isEqualTo "Fentanyl" || _medication isEqualTo "Nalbuphine") then {
         _medicationArray deleteAt (_medicationArray find _x);
+        _opioidRemoved = true;
     };
-} forEach (_medicationArray);
-
+} forEach _medicationArray;
 _patient setVariable [QACEGVAR(medical,medications), _medicationArray, true];
+if (_opioidRemoved) then {
+    private _opioidFactor = _patient getVariable [QGVAR(opioidFactor), 1];
+    if (_opioidFactor != 1) then {
+    _patient setVariable [QGVAR(opioidFactor), 1, true];
+    };
+};
