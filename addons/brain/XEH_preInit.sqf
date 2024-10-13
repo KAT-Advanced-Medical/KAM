@@ -28,6 +28,16 @@ PREP_RECOMPILE_END;
     true
 ] call CBA_Settings_fnc_init;
 
+//Multiplier for ICP reduction if saline is being transfused
+[
+	QGVAR(ICPreductionMult),
+    "SLIDER",
+    [LLSTRING(SETTING_ICPreductionMult)],
+    [CBA_SETTINGS_CAT, ELSTRING(GUI,SubCategory_Basic)],
+    [1, 3, 1.3, 1],
+    true
+] call CBA_Settings_fnc_init;
+
 // Minimum CMR to sustain consciousness. Not achieving will prevent awakening
 [
 	QGVAR(stableCMR),

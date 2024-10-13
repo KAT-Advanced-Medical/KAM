@@ -67,11 +67,13 @@ if (!GVAR(enable) || _unit getVariable [QGVAR(activityPFH),false]) exitWith {
 	//Reduce ICP if no longer swelling
 	if (_unit getVariable [QGVAR(concussionPFH),0] isEqualTo 0) then {
 		
-		private _newICP = _ICP - GVAR(ICPreduction);
+		private _hasSaline = [_unit] call FUNC(findSaline);
+		private _hasMaxBlood = (GET_SIMPLE_BLOOD_VOLUME(_unit) >= 6); // Workaround for not being able to overfill with fluids (no saline ivs can be started if no blood loss)
+		
+		private _icpReduction = [GVAR(ICPreduction),GVAR(ICPreduction)*GVAR(ICPreductionMult)] select _hasSaline; // Multiply ICP reduction if saline present
+		private _newICP = _ICP - _icpReduction;
 		
 		// Set "floors" for ICP, preventing ICP from returning to normal levels without saline
-		private _hasSaline = [_unit] call FUNC(findSaline);
-		private _hasMaxBlood = (GET_SIMPLE_BLOOD_VOLUME(_unit) >= 6); // We cannot put more than 6L of fluid into a patient, so saline cannot transfuse above this
 		if (!(_hasSaline || _hasMaxblood) ) then {
 			switch (true) do {
 				case (ICP >= 45): {
