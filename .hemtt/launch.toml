@@ -10,5 +10,4 @@ parameters = [
     "-showScriptErrors",
     "-debug",
     "-filePatching",
-    "-mod=@ace"
 ]
