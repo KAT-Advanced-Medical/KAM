@@ -89,7 +89,7 @@ private _hrTargetAdjustment = 0;
 private _painSupressAdjustment = 0;
 private _peripheralResistanceAdjustment = 0;
 private _alphaFactorAdjustment = 0;
-private _opioidAdjustment = 0;
+private _opioidAdjustment = 1;
 private _opioidEffectAdjustment = 0;
 private _adjustments = _unit getVariable [VAR_MEDICATIONS,[]];
 
@@ -107,7 +107,7 @@ if !(_adjustments isEqualTo []) then {
             if (_painAdjust != 0) then { _painSupressAdjustment = _painSupressAdjustment + _painAdjust * _effectRatio; };
             if (_flowAdjust != 0) then { _peripheralResistanceAdjustment = _peripheralResistanceAdjustment + _flowAdjust * _effectRatio; };
             if (_alphaFactor != 0) then { _alphaFactorAdjustment = _alphaFactorAdjustment + _alphaFactor * _effectRatio; };
-            if (_opioidRelief != 0) then {_opioidAdjustment = _opioidAdjustment + _opioidRelief * _effectRatio; };
+            if (_opioidRelief != 0) then {_opioidAdjustment = (_opioidAdjustment + _opioidRelief * _effectRatio) max 1; };
             if (_opioidEffect != 0) then {_opioidEffectAdjustment = _opioidEffectAdjustment + _opioidEffect * _effectRatio; };
         };
     } forEach _adjustments;
