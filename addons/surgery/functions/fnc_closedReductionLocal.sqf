@@ -32,7 +32,7 @@ if (_lidocaineCount <=  0.6 && _morphineCount <=  0.8 && _nalbuphineCount <=  0.
     [_patient, _pain] call ACEFUNC(medical_status,adjustPainLevel);
 };
 
-playsound3D [QPATHTOF_SOUND(sounds\reduction.wav), _patient, false, getPosASL _patient, 8, 1, 15];
+playSound3D [QPATHTOF_SOUND(sounds\reduction.wav), _patient, false, getPosASL _patient, 8, 1, 15];
 
 if (random 100 < GVAR(closedReductionFailChance)) exitWith {
     private _output = LLSTRING(fracture_fail);

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project name="KAT">
+    <Package name="Vitals">
+        <Key ID="STR_KAT_Vitals_SIMPLEMED_ENABLE">
+            <English>Activate AI Simple Medical</English>
+            <Dutch>Activeer AI/KI versimpeld medisch</Dutch>
+            <Spanish>Activar Médico Simple para IA</Spanish>
+            <Japanese>AI用単純化医療を有効化</Japanese>
+        </Key>
+    </Package>
+</Project>

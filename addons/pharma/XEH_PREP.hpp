@@ -1,4 +1,3 @@
-PREP(alphaAction);
 PREP(applyIV);
 PREP(checkIV);
 PREP(clotWound);
@@ -34,7 +33,6 @@ PREP(treatmentAdvanced_FentanylLocal);
 PREP(treatmentAdvanced_FlumazenilLocal);
 PREP(treatmentAdvanced_Flush);
 PREP(treatmentAdvanced_FlushLocal);
-PREP(treatmentAdvanced_KetamineLocal);
 PREP(treatmentAdvanced_LorazepamLocal);
 PREP(treatmentAdvanced_MorphineLocal);
 PREP(treatmentAdvanced_NalbuphineLocal);

@@ -33,19 +33,15 @@ if IN_CRDC_ARRST(_unit) then {
 } else {
     private _hrChange = 0;
     private _targetHR = 0;
-    private _bloodVolume = GET_BLOOD_VOLUME(_unit);
+    private _bloodVolume = GET_BLOOD_VOLUME_LITERS(_unit);
     if (_bloodVolume > BLOOD_VOLUME_CLASS_4_HEMORRHAGE) then {
         GET_BLOOD_PRESSURE(_unit) params ["_bloodPressureL", "_bloodPressureH"];
         private _meanBP = (2/3) * _bloodPressureH + (1/3) * _bloodPressureL;
         private _painLevel = GET_PAIN_PERCEIVED(_unit);
 
-        private _targetBP = 107;
-        if (_bloodVolume < BLOOD_VOLUME_CLASS_2_HEMORRHAGE) then {
-            _targetBP = _targetBP * (_bloodVolume / DEFAULT_BLOOD_VOLUME);
-        };
-
         _targetHR = DEFAULT_HEART_RATE;
         if (_bloodVolume < BLOOD_VOLUME_CLASS_3_HEMORRHAGE) then {
+            private _targetBP = 107 * (_bloodVolume / DEFAULT_BLOOD_VOLUME);
             _targetHR = _heartRate * (_targetBP / (45 max _meanBP));
         };
         if (_painLevel > 0.2) then {

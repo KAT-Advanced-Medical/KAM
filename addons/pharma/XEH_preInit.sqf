@@ -37,6 +37,15 @@ PREP_RECOMPILE_END;
 ] call CBA_Settings_fnc_init;
 
 [
+    QGVAR(IVflowControl),
+    "CHECKBOX",
+    [LLSTRING(SETTING_IV_FLOW_CONTROL),LLSTRING(SETTING_IV_FLOW_CONTROL_DESC)],
+    [CBA_SETTINGS_CAT, ELSTRING(GUI,SubCategory_Basic)],
+    [false],
+    true
+] call CBA_Settings_fnc_init;
+
+[
     QGVAR(IVdropEnable),
     "CHECKBOX",
     [LLSTRING(IV_DROP_ENABLE)],
@@ -287,24 +296,6 @@ PREP_RECOMPILE_END;
     [LLSTRING(SETTING_Weapon_Sway_Pervitin), LLSTRING(SETTING_Weapon_Sway_Pervitin_DESC)],
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_Pervitin)],
     [true],
-    true
-] call CBA_Settings_fnc_init;
-
-[
-    QGVAR(chromatic_aberration_checkbox_pervitin),
-    "CHECKBOX",
-    [LLSTRING(SETTING_Chromatic_Aberration_Checkbox_Pervitin), LLSTRING(SETTING_Chromatic_Aberration_Checkbox_Pervitin_DESC)],
-    [CBA_SETTINGS_CAT, LSTRING(SubCategory_Pervitin)],
-    [true],
-    true
-] call CBA_Settings_fnc_init;
-
-[
-    QGVAR(chromatic_aberration_slider_pervitin),
-    "SLIDER",
-    [LLSTRING(SETTING_Chromatic_Aberration_Slider_Pervitin), LLSTRING(SETTING_Chromatic_Aberration_Slider_Pervitin_DESC)],
-    [CBA_SETTINGS_CAT, LSTRING(SubCategory_Pervitin)],
-    [0.1, 10, 1, 1],
     true
 ] call CBA_Settings_fnc_init;
 
@@ -572,24 +563,6 @@ PREP_RECOMPILE_END;
     true
 ] call CBA_Settings_fnc_init;
 
-[
-    QGVAR(chromatic_aberration_checkbox_ketamine),
-    "CHECKBOX",
-    [LLSTRING(SETTING_Chromatic_Aberration_Checkbox_Ketamine), LLSTRING(SETTING_Chromatic_Aberration_Checkbox_Ketamine_DESC)],
-    [CBA_SETTINGS_CAT, LSTRING(SubCategory_Ketamine)],
-    [true],
-    true
-] call CBA_Settings_fnc_init;
-
-[
-    QGVAR(chromatic_aberration_slider_ketamine),
-    "SLIDER",
-    [LLSTRING(SETTING_Chromatic_Aberration_Slider_Ketamine), LLSTRING(SETTING_Chromatic_Aberration_Slider_Ketamine_DESC)],
-    [CBA_SETTINGS_CAT, LSTRING(SubCategory_Ketamine)],
-    [0.1, 10, 0.8, 1],
-    true
-] call CBA_Settings_fnc_init;
-
 //Fentanyl Settings Category
 [
     QGVAR(medLvl_Fentanyl),
@@ -606,24 +579,6 @@ PREP_RECOMPILE_END;
     [LLSTRING(treatmentTime_Fentanyl)],
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_Fentanyl)],
     [0.1, 10, 7, 1],
-    true
-] call CBA_Settings_fnc_init;
-
-[
-    QGVAR(chromatic_aberration_checkbox_fentanyl),
-    "CHECKBOX",
-    [LLSTRING(SETTING_Chromatic_Aberration_Checkbox_Fentanyl), LLSTRING(SETTING_Chromatic_Aberration_Checkbox_Fentanyl_DESC)],
-    [CBA_SETTINGS_CAT, LSTRING(SubCategory_Fentanyl)],
-    [true],
-    true
-] call CBA_Settings_fnc_init;
-
-[
-    QGVAR(chromatic_aberration_slider_fentanyl),
-    "SLIDER",
-    [LLSTRING(SETTING_Chromatic_Aberration_Slider_Fentanyl), LLSTRING(SETTING_Chromatic_Aberration_Slider_Fentanyl_DESC)],
-    [CBA_SETTINGS_CAT, LSTRING(SubCategory_Fentanyl)],
-    [0.1, 10, 1, 1],
     true
 ] call CBA_Settings_fnc_init;
 
@@ -885,7 +840,7 @@ PREP_RECOMPILE_END;
     "LIST",
     LLSTRING(SETTING_CheckCoag_Location),
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_Coag_Sense)],
-    [[0, 1, 2], ["STR_ACE_Medical_Treatment_Anyone", "STR_ACE_Medical_Treatment_Medics", "STR_ACE_Medical_Treatment_Doctors"], 0],
+    [[0,1,2,3],["STR_ACE_Common_Anywhere", "STR_ACE_Common_Vehicle", "STR_ACE_Medical_Treatment_MedicalFacilities", "STR_ACE_Medical_Treatment_VehiclesAndFacilities"],0],
     true
 ] call CBA_Settings_fnc_init;
 

@@ -6,7 +6,6 @@
 [QGVAR(hemopneumothoraxLocal), LINKFUNC(treatmentAdvanced_hemopneumothoraxLocal)] call CBA_fnc_addEventHandler;
 [QGVAR(tensionpneumothoraxLocal), LINKFUNC(treatmentAdvanced_tensionpneumothoraxLocal)] call CBA_fnc_addEventHandler;
 [QGVAR(cyanosisLocal), LINKFUNC(treatmentAdvanced_CyanosisLocal)] call CBA_fnc_addEventHandler;
-[QGVAR(lowSpO2pp), LINKFUNC(lowSpO2pp)] call CBA_fnc_addEventHandler;
 [QGVAR(nasalCannulaLocal), LINKFUNC(treatmentAdvanced_nasalCannulaLocal)] call CBA_fnc_addEventHandler;
 [QGVAR(removeNasalCannulaLocal), LINKFUNC(treatmentAdvanced_removeNasalCannulaLocal)] call CBA_fnc_addEventHandler;
 

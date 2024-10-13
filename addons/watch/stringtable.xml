@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project name="KAT">
+    <Package name="Watch">
+        <Key ID="STR_KAT_Watch_SETTING_TemperatureForm">
+            <English>Select temperature form</English>
+            <Dutch>Selecteer temperatuur vorm</Dutch>
+            <Spanish>Seleccionar temperatura de</Spanish>
+            <Japanese>温度単位を選択</Japanese>
+        </Key>
+        <Key ID="STR_KAT_Watch_SETTING_TemperatureForm_Desc">
+            <English>Selects which temperature unit is used for the KATMIN watch display</English>
+            <Dutch>Selecteert welke temperatuur eenheid gebruikt wordt voor de KATMIN horloge</Dutch>
+            <Spanish>Seleccionar qué unidad de temperatura es usada para la pantalla del reloj KATMIN</Spanish>
+            <Japanese>Katmin ウォッチで表示される温度の単位を選択します</Japanese>
+        </Key>
+        <Key ID="STR_KAT_Watch_SETTING_TemperatureForm_Celcius">
+            <English>Celcius</English>
+            <Dutch>Celcius</Dutch>
+            <Spanish>Celsius</Spanish>
+            <Japanese>摂氏 (C)</Japanese>
+        </Key>
+        <Key ID="STR_KAT_Watch_SETTING_TemperatureForm_Fahrenheit">
+            <English>Fahrenheit</English>
+            <Dutch>Fahrenheit</Dutch>
+            <Spanish>Fahrenheit</Spanish>
+            <Japanese>華氏 (F)</Japanese>
+        </Key>
+        <Key ID="STR_KAT_Watch_SETTING_PressureForm">
+            <English>Select pressure form</English>
+            <Dutch>Selecteer drukvorm</Dutch>
+            <Spanish>Seleccionar presión de</Spanish>
+            <Japanese>圧力単位を選択</Japanese>
+        </Key>
+        <Key ID="STR_KAT_Watch_SETTING_PressureForm_Desc">
+            <English>Selects which pressure unit is used for the KATMIN watch display</English>
+            <Dutch>Selecteerd welke drukeenheden gebruikt worden voor de KATMIN horloge</Dutch>
+            <Spanish>Selecciona qué unidad de presión es usada para la pantalla del reloj KATMIN</Spanish>
+            <Japanese>Katmin ウォッチで表示される圧力の単位を選択します</Japanese>
+        </Key>
+        <Key ID="STR_KAT_Watch_SETTING_PressureForm_mmHg">
+            <English>mmHg</English>
+            <Dutch>mmHg</Dutch>
+            <Spanish>mmHg</Spanish>
+            <Japanese>mmHg</Japanese>
+        </Key>
+        <Key ID="STR_KAT_Watch_SETTING_PressureForm_hPa">
+            <English>hPa</English>
+            <Dutch>hPa</Dutch>
+            <Spanish>hPa</Spanish>
+            <Japanese>hPa</Japanese>
+        </Key>
+        <Key ID="STR_KAT_Watch_SETTING_AltitudeForm">
+            <English>Select altitude form</English>
+            <Dutch>Selecteer hoogte vorm</Dutch>
+            <Spanish>Seleccionar altitud de</Spanish>
+            <Japanese>高度単位を選択</Japanese>
+        </Key>
+        <Key ID="STR_KAT_Watch_SETTING_AltitudeForm_Desc">
+            <English>Selects which altitude unit is used for the KATMIN watch display</English>
+            <Dutch>Selecteerd welk hoogte eenheid gebruikt wordt voor de KATMIN horloge</Dutch>
+            <Spanish>Selecciona qué unidad de altitud es usada para la pantalla del reloj KATMIN</Spanish>
+            <Japanese>Katmin ウォッチで表示される高度の単位を選択します</Japanese>
+        </Key>
+        <Key ID="STR_KAT_Watch_SETTING_AltitudeForm_meters">
+            <English>Meters</English>
+            <Dutch>Meters</Dutch>
+            <Spanish>Metros</Spanish>
+            <Japanese>メートル</Japanese>
+        </Key>
+        <Key ID="STR_KAT_Watch_SETTING_AltitudeForm_feet">
+            <English>Feet</English>
+            <Dutch>Voet</Dutch>
+            <Spanish>Pies</Spanish>
+            <Japanese>フィート</Japanese>
+        </Key>
+        <Key ID="STR_KAT_Watch_KatminDescription">
+            <English>Watch with Vital Monitoring Capabilities</English>
+            <Dutch>Horloge met ingebouwde vitale waarden monitor</Dutch>
+            <Spanish>Reloj con Capacidad de Monitorización de Constantes Vitales</Spanish>
+            <Japanese>バイタル監視機能を持った腕時計</Japanese>
+        </Key>
+        <Key ID="STR_KAT_Watch_KatminDisplayName">
+            <English>Katmin K500</English>
+            <Dutch>Katmin k500</Dutch>
+            <Spanish>Katmin K500</Spanish>
+            <Japanese>Katmin K500</Japanese>
+        </Key>
+    </Package>
+</Project>

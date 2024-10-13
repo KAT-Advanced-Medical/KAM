@@ -23,7 +23,7 @@ if (typeName _str == "ARRAY") exitWith {
     _str
 };
 
-private _clipstring = _str splitstring _spliter;
+private _clipstring = _str splitString _spliter;
 private _array = [];
 
 if (_returnNumber) exitWith

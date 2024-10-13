@@ -86,9 +86,9 @@ private _fnc_getTargetItemCount = {
 private _requiredItems = [];
 
 switch (_type) do {
-    case 0: {_requiredItems = missionNameSpace getVariable [QGVAR(IFAKContents), []];}; // IFAK
-    case 1: {_requiredItems = missionNameSpace getVariable [QGVAR(AFAKContents), []];}; // AFAK
-    default {_requiredItems = missionNameSpace getVariable [QGVAR(MFAKContents), []];}; // MFAK
+    case 0: {_requiredItems = missionNamespace getVariable [QGVAR(IFAKContents), []];}; // IFAK
+    case 1: {_requiredItems = missionNamespace getVariable [QGVAR(AFAKContents), []];}; // AFAK
+    default {_requiredItems = missionNamespace getVariable [QGVAR(MFAKContents), []];}; // MFAK
 };
 
 {

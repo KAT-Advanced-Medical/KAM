@@ -16,14 +16,14 @@
  */
 
 // IFAK
-missionNameSpace setVariable [QGVAR(IFAKContents),
+missionNamespace setVariable [QGVAR(IFAKContents),
 [(missionNamespace getVariable [QGVAR(IFAKFirstSlotItem), []]),
 (missionNamespace getVariable [QGVAR(IFAKSecondSlotItem), []]),
 (missionNamespace getVariable [QGVAR(IFAKThirdSlotItem), []]),
 (missionNamespace getVariable [QGVAR(IFAKFourthSlotItem), []])]];
 
 // AFAK
-missionNameSpace setVariable [QGVAR(AFAKContents),
+missionNamespace setVariable [QGVAR(AFAKContents),
 [(missionNamespace getVariable [QGVAR(AFAKFirstSlotItem), []]),
 (missionNamespace getVariable [QGVAR(AFAKSecondSlotItem), []]),
 (missionNamespace getVariable [QGVAR(AFAKThirdSlotItem), []]),
@@ -32,7 +32,7 @@ missionNameSpace setVariable [QGVAR(AFAKContents),
 (missionNamespace getVariable [QGVAR(AFAKSixthSlotItem), []])]];
 
 // MFAK
-missionNameSpace setVariable [QGVAR(MFAKContents),
+missionNamespace setVariable [QGVAR(MFAKContents),
 [(missionNamespace getVariable [QGVAR(MFAKFirstSlotItem), []]),
 (missionNamespace getVariable [QGVAR(MFAKSecondSlotItem), []]),
 (missionNamespace getVariable [QGVAR(MFAKThirdSlotItem), []]),
@@ -43,7 +43,7 @@ missionNameSpace setVariable [QGVAR(MFAKContents),
 (missionNamespace getVariable [QGVAR(MFAKEighthSlotItem), []])]];
 
 // Get Slot Names (didn't wanna create a new file for this)
-missionNameSpace setVariable [QGVAR(FAKSlotNames),
+missionNamespace setVariable [QGVAR(FAKSlotNames),
 [(LLSTRING(FAK_Slot_1_Hint)),
 (LLSTRING(FAK_Slot_2_Hint)),
 (LLSTRING(FAK_Slot_3_Hint)),

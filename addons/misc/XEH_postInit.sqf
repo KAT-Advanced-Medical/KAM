@@ -24,14 +24,12 @@
     [QGVAR(addIV_2), LLSTRING(Action_add_IV_Display_250), "", {[_target, _player, 250] call FUNC(addIVbag)}, {[_player, "ACE_salineIV_250"] call FUNC(conditionIVstand)}] call ACEFUNC(interact_menu,createAction)
 ] call ACEFUNC(interact_menu,addActionToClass);
 
-["Attachable_Helistretcher", ["CONTAINER","CLOTHES"], [LLSTRING(helistretcher_attach)], [], "", [{true},{params ["_unit", "_container", "_item", "_slot", "_params"];_unit == vehicle _unit}], {
-    params ["_unit", "_container", "_item", "_slot", "_params"];
-    [_unit,_item] call kat_misc_fnc_heliStretcherAttach;
-},true] call CBA_fnc_addItemContextMenuOption;
-
 if (GVAR(incompatibilityWarning)) then {
     call FUNC(incompatibilityWarning);
 };
+
+[QACEGVAR(medical_treatment,tourniquetLocal), LINKFUNC(setTourniquetTime)] call CBA_fnc_addEventHandler;
+[QACEGVAR(medical_treatment,tourniquetRemove), LINKFUNC(removeTourniquetTime)] call CBA_fnc_addEventHandler;
 
 ["kat_Armband_Red_Cross_Item", "kat_Armband_Red_Cross_Goggles"] call ACEFUNC(common,registerItemReplacement);
 ["kat_Armband_Medic_Item", "kat_Armband_Medic_Goggles"] call ACEFUNC(common,registerItemReplacement);
