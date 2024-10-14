@@ -118,6 +118,15 @@ PREP_RECOMPILE_END;
     true
 ] call CBA_Settings_fnc_init;
 
+[
+    QGVAR(paco2Active),
+    "CHECKBOX",
+    [LLSTRING(PACO2_ENABLE), LLSTRING(PACO2_ENABLE_DESC)],
+    [CBA_SETTINGS_CAT, ELSTRING(GUI,SubCategory_Basic)],
+    [false],
+    true
+] call CBA_Settings_fnc_init;
+
 //Settable list for using Pulseoximeter per medical class
 [
     QGVAR(medLvl_Pulseoximeter),
