@@ -162,11 +162,11 @@ switch (true) do {
         TRACE_3("Class IV Hemorrhage",_unit,_hemorrhage,_bloodVolume);
         [QACEGVAR(medical,FatalVitals), _unit] call CBA_fnc_localEvent;
     };
-    case (_heartRate < 20 || (_heartRate > 220)): {
+    case (_heartRate < 20 || _heartRate > 220): {
         TRACE_2("heartRate Fatal",_unit,_heartRate);
         [QACEGVAR(medical,FatalVitals), _unit] call CBA_fnc_localEvent;
     };
-    case (_bloodPressureL < 20 || (_bloodPressureL > 180)): {
+    case (_bloodPressureL < 20 || _bloodPressureL > 180): {
         TRACE_2("bloodPressure L above or below limits",_unit,_bloodPressureL);
         [QACEGVAR(medical,CriticalVitals), _unit] call CBA_fnc_localEvent;
     };
