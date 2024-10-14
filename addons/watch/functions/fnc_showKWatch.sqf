@@ -48,7 +48,7 @@ private _altitude = _display displayCtrl 22007;
         _pfhID call CBA_fnc_removePerFrameHandler;
     };
 
-    _compass ctrlSetAngle [(getDirVisual _unit), 0.5, 0.5, true];
+    _compass ctrlSetAngle [(linearConversion[0,360,(getDirVisual _unit),360,0]), 0.5, 0.5, true];
     _compass ctrlCommit 0.1;
 }, 0.05, [
     _unit,
