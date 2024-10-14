@@ -45,3 +45,10 @@ GVAR(lowSpO2) = [
     21370,
     [1, 1, 0, [0, 0, 0, 0], [0, 0, 0, 1], [0.33, 0.33, 0.33, 0], [0.55, 0.5, 0, 0, 0, 0, 4]]
 ] call _fnc_createEffect;
+
+// - Low CMR (brain addon) ---------------------------------------------
+GVAR(minorLossCMR) = [
+    "DynamicBlur",
+    213702,
+    [0]
+] call _fnc_createEffect;

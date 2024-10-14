@@ -73,7 +73,7 @@ PREP_RECOMPILE_END;
 	QGVAR(ICPbradycardiaThreshold),
     "SLIDER",
     [LLSTRING(SETTING_ICPbradycardiaThreshold)],
-    [CBA_SETTINGS_CAT, LSTRING(SubCategory_Basic)],
+    [CBA_SETTINGS_CAT, ELSTRING(GUI,SubCategory_Basic)],
     [20, 70, 50, 1],
     true
 ] call CBA_Settings_fnc_init;
@@ -83,7 +83,7 @@ PREP_RECOMPILE_END;
 	QGVAR(ICPbradycardiaChance),
     "SLIDER",
     [LLSTRING(SETTING_ICPbradycardiaChance)],
-    [CBA_SETTINGS_CAT, LSTRING(SubCategory_Basic)],
+    [CBA_SETTINGS_CAT, ELSTRING(GUI,SubCategory_Basic)],
     [0, 100, 15, 1],
     true
 ] call CBA_Settings_fnc_init;

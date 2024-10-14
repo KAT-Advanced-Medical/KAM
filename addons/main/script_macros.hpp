@@ -298,6 +298,22 @@
 #define OXYGEN_PERCENTAGE_ARREST 80
 #define OXYGEN_PERCENTAGE_FATAL 75
 
+// Brain
+#define VAR_CMR                 QEGVAR(brain,CMR) // Cerebral Metabolic Rate (%)
+#define VAR_CBF                 QEGVAR(brain,CBF) // Cerebral Blood Flow
+#define VAR_CVR                 QEGVAR(brain,CVR) // Cerebral Vascular Resistance
+#define VAR_ICP                 QEGVAR(brain,ICP) // Intracranial Pressure
+#define VAR_CPR                 QEGVAR(brain,CPR) // Cerebral Perfusion Rate
+#define VAR_RO2                 QEGVAR(brain,rO2) // Brain O2 saturation
+
+
+#define GET_CMR(unit)                  (unit getVariable [VAR_CMR, 100])
+#define GET_CBF(unit)                  (unit getVariable [VAR_CBF, 800])
+#define GET_CVR(unit)                  (unit getVariable [VAR_CVR, 0.1])
+#define GET_ICP(unit)                  (unit getVariable [VAR_ICP, 15])
+#define GET_CPR(unit)                  (unit getVariable [VAR_CPR, 100])
+#define GET_RO2(unit)                  (unit getVariable [VAR_RO2, 80])
+
 // Breathing
 #define VAR_SURFACE_AREA                400
 #define GET_KAT_SURFACE_AREA(unit)      (VAR_SURFACE_AREA - (((unit getVariable [QEGVAR(breathing,pneumothorax), 0]) * 75)))

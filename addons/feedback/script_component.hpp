@@ -21,3 +21,6 @@
 
 #define FX_SPO2_FADE_IN   0.7
 #define FX_SPO2_FADE_OUT  1.6
+
+#define FX_MINOR_CMR_FADE_IN  0.5
+#define FX_MINOR_CMR_FADE_OUT  1.8
