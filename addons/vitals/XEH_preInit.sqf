@@ -17,4 +17,13 @@ PREP_RECOMPILE_END;
     true
 ] call CBA_Settings_fnc_init;
 
+[
+    QGVAR(enableFluidShift),
+    "CHECKBOX",
+    LLSTRING(FLUID_SHIFT),
+    [CBA_SETTINGS_CAT, ELSTRING(GUI,SubCategory_Basic)],
+    [true],
+    true
+] call CBA_Settings_fnc_init;
+
 ADDON = true;

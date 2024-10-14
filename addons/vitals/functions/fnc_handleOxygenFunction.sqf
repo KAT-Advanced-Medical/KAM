@@ -49,12 +49,12 @@ if (IN_CRDC_ARRST(_unit)) then {
     private _tidalVolume = GET_KAT_SURFACE_AREA(_unit);
 
     // Respiratory Rate is supressed by Opioids 
-    _respiratoryRate = [((_demandVentilation / _tidalVolume) - (_opioidDepression * 10)) min MAXIMUM_RR, 20] select (_unit getVariable [QEGVAR(breathing,BVMInUse), false]);
+    _respiratoryRate = [((_demandVentilation / _tidalVolume) - (_opioidDepression * 10)) min MAXIMUM_RR, 25] select (_unit getVariable [QEGVAR(breathing,BVMInUse), false]);
     _actualVentilation = _tidalVolume * _respiratoryRate;
 };
 
 // The greater the imbalance between CO2 explusion and O2 intake, the higher PaCO2 gets
-private _paco2 = if ((_demandVentilation / _actualVentilation) == 1) then { _previousCyclePaco2 + (PACO2_MAX_CHANGE min (-PACO2_MAX_CHANGE max ((DEFAULT_PACO2 + ((_anerobicPressure max 1) - 1) * 150) - _previousCyclePaco2))) } else { [ _previousCyclePaco2 - (PACO2_MAX_CHANGE * _deltaT), _previousCyclePaco2 + (PACO2_MAX_CHANGE * _deltaT)] select ((_demandVentilation / _actualVentilation) > 0) };                                    
+private _paco2 = if ((_demandVentilation / _actualVentilation) == 1) then { _previousCyclePaco2 + (PACO2_MAX_CHANGE min (-PACO2_MAX_CHANGE max ((DEFAULT_PACO2 + ((_anerobicPressure max 1) - 1) * 150) - _previousCyclePaco2))) } else { [ _previousCyclePaco2 - (PACO2_MAX_CHANGE * _deltaT), _previousCyclePaco2 + (PACO2_MAX_CHANGE * _deltaT)] select ((_demandVentilation / _actualVentilation) > 0) };         
 // Generated ETCO2 quadratic. Ensures ETCO2 moves with Respiratory Rate and is constantly below PaCO2 
 private _etco2 = [((_paco2 - 3) - ((-0.0416667 * (_respiratoryRate^2)) + (3.09167 * (_respiratoryRate)) - DEFAULT_ETCO2) max 10), 0] select (IN_CRDC_ARRST(_unit));
 
@@ -71,7 +71,9 @@ if (EGVAR(pharma,kidneyAction)) then {
 
 // Fractional Oxygen when breathing normal air is 0.21, 1 when breathing 100% Oxygen, and 0 when no air is being brought into the lungs
 private _fio2 = switch (true) do {
-    case ((_unit getVariable [QEGVAR(airway,occluded), false]) || (_unit getVariable [QEGVAR(airway,obstruction), false])): { 0 };
+    case ((_unit getVariable [QEGVAR(airway,occluded), false]) || (_unit getVariable [QEGVAR(airway,obstruction), false])): { 
+        [0, DEFAULT_FIO2] select ((_unit getVariable [QEGVAR(airway,recovery), false]) || (_unit getVariable [QEGVAR(airway,overstretch), false])) 
+    };
     case ((_unit getVariable [QEGVAR(chemical,airPoisoning), false]) || (_unit getVariable [QEGVAR(breathing,tensionpneumothorax), false]) || (_unit getVariable [QEGVAR(breathing,hemopneumothorax), false])): { 0 };
     case (_unit getVariable [QEGVAR(breathing,oxygenTankConnected), false]): { 1 };
     default { DEFAULT_FIO2 };

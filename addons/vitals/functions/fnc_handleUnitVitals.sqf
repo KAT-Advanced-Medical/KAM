@@ -17,7 +17,7 @@
 
 params ["_unit"];
 
-if (!(isPlayer _unit) && (_unit getVariable [QEGVAR(circulation,simpleMedical), false])) exitWith { [_unit] call FUNC(handleSimpleVitals) };
+if (!(isPlayer _unit) && (_unit getVariable [QEGVAR(vitals,simpleMedical), false])) exitWith { [_unit] call FUNC(handleSimpleVitals) };
 
 private _lastTimeUpdated = _unit getVariable [QACEGVAR(medical_vitals,lastTimeUpdated), 0];
 private _deltaT = (CBA_missionTime - _lastTimeUpdated) min 10;
@@ -144,29 +144,29 @@ _unit setVariable [VAR_BLOOD_PRESS, _bloodPressure, _syncValues];
 _bloodPressure params ["_bloodPressureL", "_bloodPressureH"];
 
 // Statements are ordered by most lethal first.
-// Add SpO2 reactions to switch statement ---------------------------------------------------------------------
- switch (true) do {
-    case (_spo2 < EGVAR(breathing,SpO2_dieValue) && EGVAR(breathing,SpO2_dieActive)): {
+switch (true) do {
+    case ((_spo2 < EGVAR(breathing,SpO2_dieValue)) && EGVAR(breathing,SpO2_dieActive)): {
         TRACE_3("O2 Fatal",_unit,EGVAR(breathing,SpO2_dieValue),_spo2);
         [QACEGVAR(medical,FatalInjury), _unit] call CBA_fnc_localEvent;
+        [QACEGVAR(medical,Death), _unit] call CBA_fnc_localEvent; // We have to call the Death state because if FatalInjuries is disabled, the patient won't actually die and just go into arrest
     };
     case (_bloodVolume < BLOOD_VOLUME_FATAL): {
         TRACE_3("BloodVolume Fatal",_unit,BLOOD_VOLUME_FATAL,_bloodVolume);
         [QACEGVAR(medical,Bleedout), _unit] call CBA_fnc_localEvent;
     };
     case (IN_CRDC_ARRST(_unit)): {}; // if in cardiac arrest just break now to avoid throwing unneeded events
-    case (_spo2 < EGVAR(breathing,SpO2_cardiacValue) && EGVAR(breathing,SpO2_cardiacActive)): {
+    case ((_spo2 < EGVAR(breathing,SpO2_cardiacValue)) && EGVAR(breathing,SpO2_cardiacActive)): {
         [QACEGVAR(medical,FatalVitals), _unit] call CBA_fnc_localEvent;
     };
     case (_hemorrhage == 4): {
         TRACE_3("Class IV Hemorrhage",_unit,_hemorrhage,_bloodVolume);
         [QACEGVAR(medical,FatalVitals), _unit] call CBA_fnc_localEvent;
     };
-    case (_heartRate < 20 || {_heartRate > 220}): {
+    case (_heartRate < 20 || (_heartRate > 220)): {
         TRACE_2("heartRate Fatal",_unit,_heartRate);
         [QACEGVAR(medical,FatalVitals), _unit] call CBA_fnc_localEvent;
     };
-    case (_bloodPressureL < 20 || {_bloodPressureL > 180}): {
+    case (_bloodPressureL < 20 || (_bloodPressureL > 180)): {
         TRACE_2("bloodPressure L above or below limits",_unit,_bloodPressureL);
         [QACEGVAR(medical,CriticalVitals), _unit] call CBA_fnc_localEvent;
     };
