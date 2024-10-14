@@ -68,6 +68,26 @@ PREP_RECOMPILE_END;
     true
 ] call CBA_Settings_fnc_init;
 
+// Minimum ICP required for bradycardia to occur as a result
+[
+	QGVAR(ICPbradycardiaThreshold),
+    "SLIDER",
+    [LLSTRING(SETTING_ICPbradycardiaThreshold)],
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_Basic)],
+    [20, 70, 50, 1],
+    true
+] call CBA_Settings_fnc_init;
+
+//Chance of bradycardia occuring
+[
+	QGVAR(ICPbradycardiaChance),
+    "SLIDER",
+    [LLSTRING(SETTING_ICPbradycardiaChance)],
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_Basic)],
+    [0, 100, 15, 1],
+    true
+] call CBA_Settings_fnc_init;
+
 //Chance of a concussion occuring
 [
 	QGVAR(concussionChance),
@@ -98,24 +118,13 @@ PREP_RECOMPILE_END;
     true
 ] call CBA_Settings_fnc_init;
 
-// Minimum ICP required for bradycardia to occur as a result
+//How much reversible damage will decrease by every tick
 [
-	QGVAR(ICPbradycardiaThreshold),
+	QGVAR(reversibleDamageLoss),
     "SLIDER",
-    [LLSTRING(SETTING_ICPbradycardiaThreshold)],
-    [CBA_SETTINGS_CAT, LSTRING(SubCategory_Concussions)],
-    [20, 70, 50, 1],
-    true
-] call CBA_Settings_fnc_init;
-
-
-//Chance of bradycardia occuring
-[
-	QGVAR(ICPbradycardiaChance),
-    "SLIDER",
-    [LLSTRING(SETTING_ICPbradycardiaChance)],
-    [CBA_SETTINGS_CAT, LSTRING(SubCategory_Concussions)],
-    [0, 100, 15, 1],
+    [LLSTRING(SETTING_reversibleDamageLoss)],
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_BrainDeath)],
+    [0, 2, 0.4, 1],
     true
 ] call CBA_Settings_fnc_init;
 

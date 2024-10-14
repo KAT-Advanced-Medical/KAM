@@ -64,15 +64,14 @@ if (!GVAR(enable) || _unit getVariable [QGVAR(activityPFH),false]) exitWith {
 	_unit setVariable [QGVAR(CMR),_CMR,true];
 
 	private _ICP = _unit getVariable [QGVAR(ICP),15];
-	//Reduce ICP if no longer swelling
+	
 	if (_unit getVariable [QGVAR(concussionPFH),0] isEqualTo 0) then {
 		
+		//Reduce ICP if no longer swelling
 		private _hasSaline = [_unit] call FUNC(findSaline);
 		private _hasMaxBlood = (GET_SIMPLE_BLOOD_VOLUME(_unit) >= 6); // Workaround for not being able to overfill with fluids (no saline ivs can be started if no blood loss)
-		
 		private _icpReduction = [GVAR(ICPreduction),GVAR(ICPreduction)*GVAR(ICPreductionMult)] select _hasSaline; // Multiply ICP reduction if saline present
 		private _newICP = _ICP - _icpReduction;
-		
 		// Set "floors" for ICP, preventing ICP from returning to normal levels without saline
 		if (!(_hasSaline || _hasMaxblood) ) then {
 			switch (true) do {
@@ -89,6 +88,9 @@ if (!GVAR(enable) || _unit getVariable [QGVAR(activityPFH),false]) exitWith {
 		};
 		_newICP = 15 max _newICP;
 		_unit setVariable [QGVAR(ICP),_newICP,true];
+
+		//Reduce reversible tissue damage
+		_unit setVariable [QGVAR(reversibleDamage),_reversibleDamage-GVAR(reversibleDamageLoss),true];
 	};
 
 	//Chance to cause bradycardia if ICP is too high

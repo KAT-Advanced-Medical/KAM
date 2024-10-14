@@ -23,5 +23,4 @@
 
  _unit setVariable [VAR_SEIZURE, _active, true];
 
- //TODO play seizure animation
  [_unit, _active] call EFUNC(medical_engine,setUnconsciousAnim); //temporary, switch to seizure anim later

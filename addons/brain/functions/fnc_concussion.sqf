@@ -40,14 +40,14 @@ if (floor (random 100) <= _concussionChance) then {
 		// Add instantaneous effects from concussions
 		if (_damage > GVAR(necrosisImpactDamage)) then { // Cause instant necrosis if threshold is surpassed
 			private _necrosis = _unit getVariable [QGVAR(necrosis),0];
-			private _newNecrosis = linearConversion [0, 1,_damage,0,4,true]; //Increase tissue necrosis by 1% max on impact
+			private _newNecrosis = linearConversion [0, 1,_damage,0,7,true]; //Increase tissue necrosis by 7% max on impact
 			if (_newNecrosis > _necrosis) then { // Prevent reverting existing necrosis levels
 				_unit setVariable [QGVAR(necrosis),_newNecrosis,true]; 
 			};
 		};
 		if (_damage > GVAR(tissueImpactDamage)) then { // Cause reversible tissue damage if threshold is surpassed
 			private _reversibleDamage = _unit getVariable [QGVAR(reversibleDamage),0];
-			_reversibleDamage = _reversibleDamage + (linearConversion [0,1,_damage,0,15,true]); //Increase reversible damage by max 5% on impact
+			_reversibleDamage = _reversibleDamage + (linearConversion [0,1,_damage,0,25,true]); //Increase reversible damage by max 25% on impact
 			_unit setVariable [QGVAR(reversibleDamage),_reversibleDamage,true];
 		};
 
