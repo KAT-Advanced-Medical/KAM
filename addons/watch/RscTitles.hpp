@@ -208,4 +208,214 @@ class RscTitles
             };
         };
     };
+    class KAT_Cavmin
+    {
+        idd = 20935;
+        enableSimulation = 1;
+        movingEnable = 0;
+        fadeIn=0;
+        fadeOut=1;
+        duration = 10e10;
+        onLoad = "uiNamespace setVariable ['KAT_Cavmin', _this select 0];";
+        class controls
+        {
+            class CavminImage: RscPicture
+            {
+                idc = 20800;
+                text = "\x\kat\addons\watch\UI\watch_cavmin.paa";
+                x = QUOTE(SAFEZONE_X_RIGHTEDGE - FRAME_W(25) - FRAME_W(15));
+                y = QUOTE(SAFEZONE_Y_LOWEDGE - FRAME_H(18.5));
+                w = QUOTE(FRAME_W(25));
+                h = QUOTE(FRAME_H(25));
+            };
+            class CavminCompass: CavminImage
+            {
+                idc = 20802;
+                text = "\x\kat\addons\watch\UI\watch_cavmin_compass.paa";
+            };
+            class CavminOverlay: CavminImage
+            {
+                idc = 20803;
+                text = "\x\kat\addons\watch\UI\watch_cavmin_face.paa";
+            };
+            class CavminTime: RscText
+            {
+                idc = 20804;
+                style = ST_CENTER;
+                shadow = 0;
+                font = "EtelkaMonospacePro";
+                text = "12:00"; //--- ToDo: Localize;
+                x = QUOTE(SAFEZONE_X_RIGHTEDGE - FRAME_W(25) - FRAME_W(6.2));
+                y = QUOTE(SAFEZONE_Y_LOWEDGE - FRAME_H(5.7));
+                w = QUOTE(FRAME_W(7.5));
+                h = QUOTE(FRAME_H(4));
+                colorBackground[] = {0,0,0,0};
+                colorText[] = {1,1,1,1};
+                sizeEx = QUOTE(FRAME_H(3));
+            };
+            class CavminHR: RscText
+            {
+                idc = 20805;
+                style = ST_CENTER;
+                valign = "middle";
+                shadow = 0;
+                font = "EtelkaMonospaceProBold";
+                text = "80"; //--- ToDo: Localize;
+                x = QUOTE(SAFEZONE_X_RIGHTEDGE - FRAME_W(25) - FRAME_W(7.2));
+                y = QUOTE(SAFEZONE_Y_LOWEDGE - FRAME_H(9.1));
+                w = QUOTE(FRAME_W(2.5));
+                h = QUOTE(FRAME_H(1.5));
+                colorBackground[] = {0,0,0,0};
+                colorText[] = {1,1,1,1};
+                sizeEx = QUOTE(FRAME_H(2));
+            };
+            class CavminAltitude: RscText
+            {
+                idc = 20806;
+                style = ST_CENTER;
+                valign = "middle";
+                shadow = 0;
+                font = "EtelkaMonospaceProBold";
+                text = "1000";
+                x = QUOTE(SAFEZONE_X_RIGHTEDGE - FRAME_W(25) - FRAME_W(0.3));
+                y = QUOTE(SAFEZONE_Y_LOWEDGE - FRAME_H(9.1));
+                w = QUOTE(FRAME_W(2.5));
+                h = QUOTE(FRAME_H(1.5));
+                colorBackground[] = {0,0,0,0};
+                colorText[] = {1,1,1,1};
+                sizeEx = QUOTE(FRAME_H(2));
+            };
+            class CavminBearing: RscText
+            {
+                idc = 20807;
+                style = ST_CENTER;
+                valign = "middle";
+                shadow = 0;
+                font = "EtelkaMonospaceProBold";
+                text = "1000";
+                x = QUOTE(SAFEZONE_X_RIGHTEDGE - FRAME_W(25) - FRAME_W(6.2));
+                y = QUOTE(SAFEZONE_Y_LOWEDGE - FRAME_H(8.8));
+                w = QUOTE(FRAME_W(7.5));
+                h = QUOTE(FRAME_H(4));
+                colorBackground[] = {0,0,0,0};
+                colorText[] = {1,1,1,1};
+                sizeEx = QUOTE(FRAME_H(2.5));
+            };
+        };
+    };
+    class KAT_sts
+    {
+        idd = 21935;
+        enableSimulation = 1;
+        movingEnable = 0;
+        fadeIn=0;
+        fadeOut=1;
+        duration = 10e10;
+        onLoad = "uiNamespace setVariable ['KAT_STS', _this select 0];";
+        class controls
+        {
+            class STSImage: RscPicture
+            {
+                idc = 21800;
+                text = "\x\kat\addons\watch\UI\watch_sts.paa";
+                x = QUOTE(SAFEZONE_X_RIGHTEDGE - FRAME_W(25) - FRAME_W(15));
+                y = QUOTE(SAFEZONE_Y_LOWEDGE - FRAME_H(18.5));
+                w = QUOTE(FRAME_W(25));
+                h = QUOTE(FRAME_H(25));
+            };
+            class StsBigAlt: STSImage
+            {
+                idc = 21802;
+                text = "\x\kat\addons\watch\UI\watch_sts_bigAlt.paa";
+                x = QUOTE(SAFEZONE_X_RIGHTEDGE - FRAME_W(25) - FRAME_W(15));
+                y = QUOTE(SAFEZONE_Y_LOWEDGE - FRAME_H(20.65));
+                w = QUOTE(FRAME_W(25));
+                h = QUOTE(FRAME_H(25));
+            };
+            class StsSmallAlt: StsBigAlt
+            {
+                idc = 21803;
+                text = "\x\kat\addons\watch\UI\watch_sts_smallAlt.paa";
+            };
+            class STSTime: RscText
+            {
+                idc = 21804;
+                style = ST_CENTER;
+                shadow = 0;
+                font = "PuristaSemibold";
+                text = "12:00"; //--- ToDo: Localize;
+                x = QUOTE(SAFEZONE_X_RIGHTEDGE - FRAME_W(25) - FRAME_W(6.2));
+                y = QUOTE(SAFEZONE_Y_LOWEDGE - FRAME_H(3.6));
+                w = QUOTE(FRAME_W(7.5));
+                h = QUOTE(FRAME_H(4));
+                colorBackground[] = {0,0,0,0};
+                colorText[] = {1,1,1,0.9};
+                sizeEx = QUOTE(FRAME_H(2.5));
+            };
+            class STSHR: RscText
+            {
+                idc = 21805;
+                style = ST_CENTER;
+                valign = "middle";
+                shadow = 0;
+                font = "PuristaMedium";
+                text = "80"; //--- ToDo: Localize;
+                x = QUOTE(SAFEZONE_X_RIGHTEDGE - FRAME_W(25) - FRAME_W(8.2));
+                y = QUOTE(SAFEZONE_Y_LOWEDGE - FRAME_H(6));
+                w = QUOTE(FRAME_W(2.5));
+                h = QUOTE(FRAME_H(1.5));
+                colorBackground[] = {0,0,0,0};
+                colorText[] = {1,1,1,0.9};
+                sizeEx = QUOTE(FRAME_H(2));
+            };
+            class STSO2: RscText
+            {
+                idc = 21806;
+                style = ST_CENTER;
+                valign = "middle";
+                shadow = 0;
+                font = "PuristaMedium";
+                text = "1000";
+                x = QUOTE(SAFEZONE_X_RIGHTEDGE - FRAME_W(25) - FRAME_W(-0.6));
+                y = QUOTE(SAFEZONE_Y_LOWEDGE - FRAME_H(6));
+                w = QUOTE(FRAME_W(2.5));
+                h = QUOTE(FRAME_H(1.5));
+                colorBackground[] = {0,0,0,0};
+                colorText[] = {1,1,1,0.9};
+                sizeEx = QUOTE(FRAME_H(2));
+            };
+            class STSAltitude: RscText
+            {
+                idc = 21807;
+                style = ST_CENTER;
+                valign = "middle";
+                shadow = 0;
+                font = "PuristaSemibold";
+                text = "1000";
+                x = QUOTE(SAFEZONE_X_RIGHTEDGE - FRAME_W(25) - FRAME_W(6.3));
+                y = QUOTE(SAFEZONE_Y_LOWEDGE - FRAME_H(13.4));
+                w = QUOTE(FRAME_W(7.5));
+                h = QUOTE(FRAME_H(4));
+                colorBackground[] = {0,0,0,0};
+                colorText[] = {1,1,1,0.9};
+                sizeEx = QUOTE(FRAME_H(2.2));
+            };
+            class STSDescent: RscText
+            {
+                idc = 21808;
+                style = ST_CENTER;
+                valign = "middle";
+                shadow = 0;
+                font = "PuristaSemibold";
+                text = "0";
+                x = QUOTE(SAFEZONE_X_RIGHTEDGE - FRAME_W(25) - FRAME_W(1));
+                y = QUOTE(SAFEZONE_Y_LOWEDGE - FRAME_H(11.1));
+                w = QUOTE(FRAME_W(2.5));
+                h = QUOTE(FRAME_H(1.7));
+                colorBackground[] = {0,0,0,0};
+                colorText[] = {1,1,1,0.9};
+                sizeEx = QUOTE(FRAME_H(1));
+            };
+        };
+    };
 };
