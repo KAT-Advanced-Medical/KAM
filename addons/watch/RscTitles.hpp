@@ -11,9 +11,24 @@
 #define ST_CENTER 2
 #define ST_RIGHT 1
 
+#define pixelW  (1 / (getResolution select 2))
+#define pixelH  (1 / (getResolution select 3))
+#define pixelScale  0.50
+
+// pixel grids macros
+#define UI_GRID_W (pixelW * pixelGridBase)
+#define UI_GRID_H (pixelH * pixelGridBase)
+
+#define SAFEZONE_X_RIGHTEDGE ((safeZoneX - 1) * -1)
+#define SAFEZONE_Y_LOWEDGE ((safeZoneY - 1) * -1)
+
+#define FRAME_W(N) ((UI_GRID_W * (N)) * (1.7777 / (getResolution select 4)))
+#define FRAME_H(N) ((UI_GRID_H * (N)))
+
 class RscText;
 class RscPicture;
 class RscButton;
+class RscPictureKeepAspect;
 class RscTitles
 {
     class KAT_Katmin
@@ -31,10 +46,10 @@ class RscTitles
             {
                 idc = 19800;
                 text = "\x\kat\addons\watch\UI\watch_katmin.paa";
-                x = "0.0328437 * safezoneW + safezoneX";
-                y = "0.652 * safezoneH + safezoneY";
-                w = "0.225 * safezoneW";
-                h = "0.4 * safezoneH";
+                x = QUOTE(SAFEZONE_X_RIGHTEDGE - FRAME_W(25) - FRAME_W(15));
+                y = QUOTE(SAFEZONE_Y_LOWEDGE - FRAME_H(18.5));
+                w = QUOTE(FRAME_W(25));
+                h = QUOTE(FRAME_H(25));
             };
             class KatminIcon: KatminImage
             {
@@ -71,13 +86,13 @@ class RscTitles
                 shadow = 0;
                 font = "PuristaBold";
                 text = "12:00"; //--- ToDo: Localize;
-                x = "0.104 * safezoneW + safezoneX";
-                y = "0.8328 * safezoneH + safezoneY";
-                w = "0.061875 * safezoneW";
-                h = "0.033 * safezoneH";
+                x = QUOTE(SAFEZONE_X_RIGHTEDGE - FRAME_W(25) - FRAME_W(7.5));
+                y = QUOTE(SAFEZONE_Y_LOWEDGE - FRAME_H(8.1));
+                w = QUOTE(FRAME_W(7.5));
+                h = QUOTE(FRAME_H(4));
                 colorBackground[] = {0,0,0,0};
                 colorText[] = {1,1,1,1};
-                sizeEx = QUOTE(KAT_POS_H(2));
+                sizeEx = QUOTE(FRAME_H(3.1));
             };
             class KatminMonth: RscText
             {
@@ -87,13 +102,13 @@ class RscTitles
                 shadow = 0;
                 font = "PuristaBold";
                 text = "JAN"; //--- ToDo: Localize;
-                x = "0.157316 * safezoneW + safezoneX";
-                y = "0.8394 * safezoneH + safezoneY";
-                w = "0.0257812 * safezoneW";
-                h = "0.013 * safezoneH";
+                x = QUOTE(SAFEZONE_X_RIGHTEDGE - FRAME_W(25) - FRAME_W(0.8));
+                y = QUOTE(SAFEZONE_Y_LOWEDGE - FRAME_H(7.3));
+                w = QUOTE(FRAME_W(2.5));
+                h = QUOTE(FRAME_H(1.5));
                 colorBackground[] = {0,0,0,0};
                 colorText[] = {1,1,1,1};
-                sizeEx = QUOTE(KAT_POS_H(0.8));
+                sizeEx = QUOTE(FRAME_H(1.3));
             };
             class KatminDay: RscText
             {
@@ -103,13 +118,13 @@ class RscTitles
                 shadow = 0;
                 font = "PuristaBold";
                 text = "01"; //--- ToDo: Localize;
-                x = "0.157316 * safezoneW + safezoneX";
-                y = "0.8525 * safezoneH + safezoneY";
-                w = "0.0257812 * safezoneW";
-                h = "0.013 * safezoneH";
+                x = QUOTE(SAFEZONE_X_RIGHTEDGE - FRAME_W(25) - FRAME_W(2));
+                y = QUOTE(SAFEZONE_Y_LOWEDGE - FRAME_H(6.3));
+                w = QUOTE(FRAME_W(2.5));
+                h = QUOTE(FRAME_H(1.5));
                 colorBackground[] = {0,0,0,0};
                 colorText[] = {1,1,1,1};
-                sizeEx = QUOTE(KAT_POS_H(0.8));
+                sizeEx = QUOTE(FRAME_H(1.3));
             };
             class KatminBaro: RscText
             {
@@ -119,13 +134,13 @@ class RscTitles
                 shadow = 0;
                 font = "PuristaBold";
                 text = "760"; //--- ToDo: Localize;
-                x = "0.158625 * safezoneW + safezoneX";
-                y = "0.80844 * safezoneH + safezoneY";
-                w = "0.020625 * safezoneW";
-                h = "0.022 * safezoneH";
+                x = QUOTE(SAFEZONE_X_RIGHTEDGE - FRAME_W(25) - FRAME_W(1.2));
+                y = QUOTE(SAFEZONE_Y_LOWEDGE - FRAME_H(8.8));
+                w = QUOTE(FRAME_W(2.5));
+                h = QUOTE(FRAME_H(1.5));
                 colorBackground[] = {0,0,0,0};
                 colorText[] = {1,1,1,1};
-                sizeEx = QUOTE(KAT_POS_H(0.95));
+                sizeEx = QUOTE(FRAME_H(1.4));
             };
             class KatminHR: RscText
             {
@@ -135,13 +150,13 @@ class RscTitles
                 shadow = 0;
                 font = "PuristaBold";
                 text = "80"; //--- ToDo: Localize;
-                x = "0.149375 * safezoneW + safezoneX";
-                y = "0.8732 * safezoneH + safezoneY";
-                w = "0.020625 * safezoneW";
-                h = "0.022 * safezoneH";
+                x = QUOTE(SAFEZONE_X_RIGHTEDGE - FRAME_W(25) - FRAME_W(2.2));
+                y = QUOTE(SAFEZONE_Y_LOWEDGE - FRAME_H(4.7));
+                w = QUOTE(FRAME_W(2.5));
+                h = QUOTE(FRAME_H(1.5));
                 colorBackground[] = {0,0,0,0};
                 colorText[] = {1,1,1,1};
-                sizeEx = QUOTE(KAT_POS_H(1.2));
+                sizeEx = QUOTE(FRAME_H(1.8));
             };
             class KatminO2: RscText
             {
@@ -151,13 +166,13 @@ class RscTitles
                 shadow = 0;
                 font = "PuristaBold";
                 text = "97"; //--- ToDo: Localize;
-                x = "0.118469 * safezoneW + safezoneX";
-                y = "0.8732 * safezoneH + safezoneY";
-                w = "0.020625 * safezoneW";
-                h = "0.022 * safezoneH";
+                x = QUOTE(SAFEZONE_X_RIGHTEDGE - FRAME_W(25) - FRAME_W(5.5));
+                y = QUOTE(SAFEZONE_Y_LOWEDGE - FRAME_H(4.7));
+                w = QUOTE(FRAME_W(2.5));
+                h = QUOTE(FRAME_H(1.5));
                 colorBackground[] = {0,0,0,0};
                 colorText[] = {1,1,1,1};
-                sizeEx = QUOTE(KAT_POS_H(1.2));
+                sizeEx = QUOTE(FRAME_H(1.8));
             };
             class KatminTemp: RscText
             {
@@ -167,13 +182,13 @@ class RscTitles
                 shadow = 0;
                 font = "PuristaBold";
                 text = "76F"; //--- ToDo: Localize;
-                x = "0.134937 * safezoneW + safezoneX";
-                y = "0.8094 * safezoneH + safezoneY";
-                w = "0.020625 * safezoneW";
-                h = "0.022 * safezoneH";
+                x = QUOTE(SAFEZONE_X_RIGHTEDGE - FRAME_W(25) - FRAME_W(3.7));
+                y = QUOTE(SAFEZONE_Y_LOWEDGE - FRAME_H(8.8));
+                w = QUOTE(FRAME_W(2.5));
+                h = QUOTE(FRAME_H(1.5));
                 colorBackground[] = {0,0,0,0};
                 colorText[] = {1,1,1,1};
-                sizeEx = QUOTE(KAT_POS_H(1));
+                sizeEx = QUOTE(FRAME_H(1.4));
             };
             class KatminAltitude: RscText
             {
@@ -183,11 +198,13 @@ class RscTitles
                 shadow = 0;
                 font = "PuristaBold";
                 text = "1000";
-                x = "0.111219 * safezoneW + safezoneX";
-                y = "0.80844 * safezoneH + safezoneY";
-                w = "0.020625 * safezoneW";
-                h = "0.022 * safezoneH";
-                sizeEx = QUOTE(KAT_POS_H(0.95));
+                x = QUOTE(SAFEZONE_X_RIGHTEDGE - FRAME_W(25) - FRAME_W(6.4));
+                y = QUOTE(SAFEZONE_Y_LOWEDGE - FRAME_H(8.8));
+                w = QUOTE(FRAME_W(2.5));
+                h = QUOTE(FRAME_H(1.5));
+                colorBackground[] = {0,0,0,0};
+                colorText[] = {1,1,1,1};
+                sizeEx = QUOTE(FRAME_H(1.4));
             };
         };
     };

@@ -72,7 +72,7 @@ if !(_adjustments isEqualTo []) then {
 private _heartRate = [_unit, _hrTargetAdjustment, _deltaT, _syncValues] call ACEFUNC(medical_vitals,updateHeartRate); //Rename
 [_unit, _painSupressAdjustment, _deltaT, _syncValues] call ACEFUNC(medical_vitals,updatePainSuppress); //Leave alone
 
-private _bloodPressure = [120,80];
+private _bloodPressure = [80,120];
 _unit setVariable [VAR_BLOOD_PRESS, _bloodPressure, _syncValues];
 
 // Statements are ordered by most lethal first.
