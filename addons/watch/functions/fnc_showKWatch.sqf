@@ -85,9 +85,9 @@ private _altitude = _display displayCtrl 22007;
     private _altitudeValue = (getPosASL _unit) select 2;
 
     if (GVAR(altitudeUnit) == 1) then {
-        _altitude ctrlSetText ([(_altitudeValue * 3.281), 1, 0] call CBA_fnc_formatNumber)
+        _altitude ctrlSetText ([(_altitudeValue * 3.281), 1, 0] call CBA_fnc_formatNumber);
     } else {
-        _altitude ctrlSetText ([_altitudeValue, 1, 0] call CBA_fnc_formatNumber)
+        _altitude ctrlSetText ([_altitudeValue, 1, 0] call CBA_fnc_formatNumber);
     };
 
     if (GVAR(pressureUnit) == 1) then {

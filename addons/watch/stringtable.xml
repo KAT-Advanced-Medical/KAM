@@ -91,5 +91,17 @@
         <Key ID="STR_KAT_Watch_CavminDisplayName">
             <English>Katmin Cavalry Limted</English>
         </Key>
+        <Key ID="STR_KAT_Watch_STSDescription">
+            <English>Watch with Vital Monitoring Capabilities. So Others May Live.</English>
+        </Key>
+        <Key ID="STR_KAT_Watch_STSDisplayName">
+            <English>Katmin Jump Standard</English>
+        </Key>
+        <Key ID="STR_KAT_Watch_descentFT">
+            <English>%1ft/s</English>
+        </Key>
+        <Key ID="STR_KAT_Watch_descentM">
+            <English>%1m/s</English>
+        </Key>
     </Package>
 </Project>

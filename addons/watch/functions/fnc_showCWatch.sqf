@@ -79,9 +79,9 @@ private _bearing = _display displayCtrl 20807;
     private _altitudeValue = (getPosASL _unit) select 2;
 
     if (GVAR(altitudeUnit) == 1) then {
-        _altitude ctrlSetText ([(_altitudeValue * 3.281), 1, 0] call CBA_fnc_formatNumber)
+        _altitude ctrlSetText ([(_altitudeValue * 3.281), 1, 0] call CBA_fnc_formatNumber);
     } else {
-        _altitude ctrlSetText ([_altitudeValue, 1, 0] call CBA_fnc_formatNumber)
+        _altitude ctrlSetText ([_altitudeValue, 1, 0] call CBA_fnc_formatNumber);
     };
 
     _hr ctrlSetText ([GET_HEART_RATE(_unit), 1, 0] call CBA_fnc_formatNumber);

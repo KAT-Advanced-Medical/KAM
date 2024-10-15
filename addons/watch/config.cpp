@@ -7,7 +7,8 @@ class CfgPatches {
         units[] = { };
         weapons[] = {
             "KAT_Katmin",
-            "KAT_Cavmin"
+            "KAT_Cavmin",
+            "KAT_STS"
         };
         magazines[] = { };
         requiredAddons[] = {
