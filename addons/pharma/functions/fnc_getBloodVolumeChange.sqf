@@ -115,7 +115,7 @@ if (_enableFluidShift) then {
     private _shiftValue = 0;
     private _defaultShift = false;
 
-    _SRBCChange = [0.5, 0] select ((_SRBC > 0) && (_ECB < DEFAULT_ECB));
+    _SRBCChange = [0, 0.5] select ((_SRBC > 0) && (_ECB < DEFAULT_ECB));
     _ECB = _ECB + (_SRBCChange * _deltaT);
     _SRBC = _SRBC - (_SRBCChange * _deltaT);
 
