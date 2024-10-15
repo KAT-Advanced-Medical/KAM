@@ -19,6 +19,7 @@ params [["_manualUpdate", false]];
 if (ACEGVAR(common,OldIsCamera) || {!alive ACE_player}) exitWith {
     [false]    call FUNC(effectOpioid);
     [false]    call FUNC(effectLowSpO2);
+    [false]    call FUNC(effectLossCMR);
 };
 
 BEGIN_COUNTER(handleEffects);
@@ -27,6 +28,7 @@ BEGIN_COUNTER(handleEffects);
 private _opioid          = GET_PP(ACE_player);
 private _spO2             = GET_SPO2(ACE_player);
 private _unconscious      = IS_UNCONSCIOUS(ACE_player);
+private _cmr             = GET_CMR(ACE_player);
 
 // - Visual effects -----------------------------------------------------------
 
@@ -37,5 +39,6 @@ private _unconscious      = IS_UNCONSCIOUS(ACE_player);
     linearConversion [GVAR(effectLowSpO2), EGVAR(breathing,SpO2_dieValue), _spO2, 0, 1, true]
 ] call FUNC(effectLowSpO2);
 
+[!_unconscious, _cmr] call FUNC(effectLossCMR);
 
 END_COUNTER(handleEffects);

@@ -38,4 +38,7 @@ if (_heartRate < 40) exitWith { false };
 private _o2 = GET_SPO2(_unit);
 if (_o2 < EGVAR(breathing,Stable_spo2)) exitWith { false };
 
+private _CMR = _unit getVariable [QEGVAR(brain,CMR),100];
+if (_CMR < EGVAR(brain,stableCMR)) exitWith { false };
+
 true

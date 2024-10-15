@@ -35,7 +35,7 @@ _unit setVariable ["kat_pukeActive_PFH", true];
 
     if (GVAR(occlusion_cooldownPeriod) > 0 && {(_unit getVariable [QGVAR(clearedTime), 0] > 0) && ((_unit getVariable [QGVAR(clearedTime), 0]) + GVAR(occlusion_cooldownPeriod)) > CBA_missionTime}) exitWith {};
 
-    if (random(100) <= GVAR(probability_occluded)) then {
+    if ((random(100) <= GVAR(probability_occluded)) || (_unit getVariable [QEGVAR(brain,ICP),15] > 25)) then {
         if !(_unit getVariable [QGVAR(occluded), false]) then {
             _unit setVariable [QGVAR(occluded), true, true];
             if (GVAR(checkbox_puking_sound)) then {
