@@ -9,7 +9,7 @@ PREP_RECOMPILE_END;
 #define CBA_SETTINGS_CAT "KAT - ADV Medical: Vitals"
 
 [
-    QGVAR(simpleMedical),
+    QGVAR(simpleMedicalEnable),
     "CHECKBOX",
     LLSTRING(SIMPLEMED_ENABLE),
     [CBA_SETTINGS_CAT, ELSTRING(GUI,SubCategory_Basic)],
