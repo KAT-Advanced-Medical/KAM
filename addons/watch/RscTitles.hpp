@@ -13,7 +13,7 @@
 
 #define pixelW  (1 / (getResolution select 2))
 #define pixelH  (1 / (getResolution select 3))
-#define pixelScale	0.50
+#define pixelScale  0.50
 
 // pixel grids macros
 #define UI_GRID_W (pixelW * pixelGridBase)
