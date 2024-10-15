@@ -97,7 +97,7 @@ class RscTitles
             class KatminMonth: RscText
             {
                 idc = 22001;
-                style = ST_RIGHT;
+                style = ST_CENTER;
                 valign = "middle";
                 shadow = 0;
                 font = "PuristaBold";
@@ -113,12 +113,12 @@ class RscTitles
             class KatminDay: RscText
             {
                 idc = 22002;
-                style = ST_RIGHT;
+                style = ST_CENTER;
                 valign = "middle";
                 shadow = 0;
                 font = "PuristaBold";
                 text = "01"; //--- ToDo: Localize;
-                x = QUOTE(SAFEZONE_X_RIGHTEDGE - FRAME_W(25) - FRAME_W(2));
+                x = QUOTE(SAFEZONE_X_RIGHTEDGE - FRAME_W(25) - FRAME_W(1));
                 y = QUOTE(SAFEZONE_Y_LOWEDGE - FRAME_H(6.3));
                 w = QUOTE(FRAME_W(2.5));
                 h = QUOTE(FRAME_H(1.5));
