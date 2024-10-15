@@ -7,7 +7,7 @@
             <Spanish>Activar Médico Simple para IA</Spanish>
             <Japanese>AI用単純化医療を有効化</Japanese>
         </Key>
-        <Key ID="STR_kat_vitals_SIMPLEMED_ENABLE_DESC">
+        <Key ID="STR_KAT_Vitals_SIMPLEMED_ENABLE_DESC">
             <English>Apply simplified vital calculations to the AI unit. Which can be useful for saving FPS.</English>
             <Japanese>単純化されたバイタル計算をAIユニットに適用します。 これは負荷の軽減に役立つ可能性があります。</Japanese>
         </Key>
