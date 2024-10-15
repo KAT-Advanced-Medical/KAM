@@ -138,6 +138,12 @@
             <Russian>Инфузионный множитель</Russian>
             <Dutch>Perfusie vermenigvuldiger</Dutch>
         </Key>
+        <Key ID="STR_KAT_Breathing_SETTING_PACO2_ENABLE">
+            <English>Enable PaCO2</English>
+        </Key>
+        <Key ID="STR_KAT_Breathing_SETTING_PACO2_ENABLE_DESC">
+            <English>Enables PaCO2 movement and effects on ph and breathing rate</English>
+        </Key>
         <Key ID="STR_KAT_Breathing_SETTING_pneumothorax">
             <English>Probability for a pneumothorax</English>
             <German>Wahrscheinlichkeit für einen Pneumothorax</German>
