@@ -150,7 +150,7 @@ _bloodPressure params ["_bloodPressureL", "_bloodPressureH"];
 switch (true) do {
     case ((_spo2 < EGVAR(breathing,SpO2_dieValue)) && EGVAR(breathing,SpO2_dieActive)): {
         TRACE_3("O2 Fatal",_unit,EGVAR(breathing,SpO2_dieValue),_spo2);
-        [QACEGVAR(common,setDead), _unit, "Fatal Blood Oxygen"] call CBA_fnc_localEvent;
+        [_unit, "Fatal_Blood_Oxygen"] call ACEFUNC(medical_status,setDead);
     };
     case (_bloodVolume < BLOOD_VOLUME_FATAL): {
         TRACE_3("BloodVolume Fatal",_unit,BLOOD_VOLUME_FATAL,_bloodVolume);
