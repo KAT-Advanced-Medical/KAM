@@ -97,7 +97,7 @@ class RscTitles
             class KatminMonth: RscText
             {
                 idc = 22001;
-                style = ST_CENTER;
+                style = ST_LEFT;
                 valign = "middle";
                 shadow = 0;
                 font = "PuristaBold";
@@ -113,12 +113,12 @@ class RscTitles
             class KatminDay: RscText
             {
                 idc = 22002;
-                style = ST_CENTER;
+                style = ST_LEFT;
                 valign = "middle";
                 shadow = 0;
                 font = "PuristaBold";
                 text = "01"; //--- ToDo: Localize;
-                x = QUOTE(SAFEZONE_X_RIGHTEDGE - FRAME_W(25) - FRAME_W(1));
+                x = QUOTE(SAFEZONE_X_RIGHTEDGE - FRAME_W(25) - FRAME_W(0.8));
                 y = QUOTE(SAFEZONE_Y_LOWEDGE - FRAME_H(6.3));
                 w = QUOTE(FRAME_W(2.5));
                 h = QUOTE(FRAME_H(1.5));
@@ -342,14 +342,14 @@ class RscTitles
                 idc = 21804;
                 style = ST_CENTER;
                 shadow = 0;
-                font = "PuristaSemibold";
+                font = "PuristaMedium";
                 text = "12:00"; //--- ToDo: Localize;
-                x = QUOTE(SAFEZONE_X_RIGHTEDGE - FRAME_W(25) - FRAME_W(6.2));
+                x = QUOTE(SAFEZONE_X_RIGHTEDGE - FRAME_W(25) - FRAME_W(6.4));
                 y = QUOTE(SAFEZONE_Y_LOWEDGE - FRAME_H(3.6));
                 w = QUOTE(FRAME_W(7.5));
                 h = QUOTE(FRAME_H(4));
                 colorBackground[] = {0,0,0,0};
-                colorText[] = {1,1,1,0.9};
+                colorText[] = {0.7,0.7,0.7,1};
                 sizeEx = QUOTE(FRAME_H(2.5));
             };
             class STSHR: RscText
@@ -365,7 +365,7 @@ class RscTitles
                 w = QUOTE(FRAME_W(2.5));
                 h = QUOTE(FRAME_H(1.5));
                 colorBackground[] = {0,0,0,0};
-                colorText[] = {1,1,1,0.9};
+                colorText[] = {0.7,0.7,0.7,1};
                 sizeEx = QUOTE(FRAME_H(2));
             };
             class STSO2: RscText
@@ -381,7 +381,7 @@ class RscTitles
                 w = QUOTE(FRAME_W(2.5));
                 h = QUOTE(FRAME_H(1.5));
                 colorBackground[] = {0,0,0,0};
-                colorText[] = {1,1,1,0.9};
+                colorText[] = {0.7,0.7,0.7,1};
                 sizeEx = QUOTE(FRAME_H(2));
             };
             class STSAltitude: RscText
@@ -390,14 +390,14 @@ class RscTitles
                 style = ST_CENTER;
                 valign = "middle";
                 shadow = 0;
-                font = "PuristaSemibold";
+                font = "PuristaMedium";
                 text = "1000";
                 x = QUOTE(SAFEZONE_X_RIGHTEDGE - FRAME_W(25) - FRAME_W(6.3));
                 y = QUOTE(SAFEZONE_Y_LOWEDGE - FRAME_H(13.4));
                 w = QUOTE(FRAME_W(7.5));
                 h = QUOTE(FRAME_H(4));
                 colorBackground[] = {0,0,0,0};
-                colorText[] = {1,1,1,0.9};
+                colorText[] = {0.7,0.7,0.7,1};
                 sizeEx = QUOTE(FRAME_H(2.2));
             };
             class STSDescent: RscText
@@ -413,7 +413,7 @@ class RscTitles
                 w = QUOTE(FRAME_W(2.5));
                 h = QUOTE(FRAME_H(1.7));
                 colorBackground[] = {0,0,0,0};
-                colorText[] = {1,1,1,0.9};
+                colorText[] = {0.7,0.7,0.7,1};
                 sizeEx = QUOTE(FRAME_H(1));
             };
         };
