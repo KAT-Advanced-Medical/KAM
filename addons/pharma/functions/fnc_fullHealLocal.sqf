@@ -46,6 +46,8 @@ _patient setVariable [QGVAR(IVmenuActive), false, true];
 _patient setVariable [QGVAR(externalPh), 0, true];
 _patient setVariable [QGVAR(pH), 0, true];
 
+_patient setVariable [QGVAR(opioidFactor), 0, true];
+
 _patient setVariable [QGVAR(kidneyFail), false, true];
 _patient setVariable [QGVAR(kidneyArrest), false, true];
 _patient setVariable [QGVAR(kidneyPressure), false, true];
