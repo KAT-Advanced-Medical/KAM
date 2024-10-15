@@ -8,3 +8,4 @@ PREP(handleOxygenFunction);
 PREP(hasStableVitals);
 PREP(init);
 PREP(updateOpioidEffect);
+PREP(updateOpioidRelief);

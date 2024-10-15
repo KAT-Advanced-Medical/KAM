@@ -49,12 +49,21 @@ if (IN_CRDC_ARRST(_unit)) then {
     private _tidalVolume = GET_KAT_SURFACE_AREA(_unit);
 
     // Respiratory Rate is supressed by Opioids 
-    _respiratoryRate = [((_demandVentilation / _tidalVolume) - (_opioidDepression * 10)) min MAXIMUM_RR, 25] select (_unit getVariable [QEGVAR(breathing,BVMInUse), false]);
+    _respiratoryRate = [((_demandVentilation / _tidalVolume) - (_opioidDepression * 5)) min MAXIMUM_RR, 20] select (_unit getVariable [QEGVAR(breathing,BVMInUse), false]);
+
+    // If respiratory rate is low due to PaCO2, it starts increasing faster to compensate
+    if (_previousCyclePaco2 > 50) then { _respiratoryRate = (_respiratoryRate + ((_previousCyclePaco2 - 50) * 0.2)) min MAXIMUM_RR};
+
     _actualVentilation = _tidalVolume * _respiratoryRate;
 };
 
-// The greater the imbalance between CO2 explusion and O2 intake, the higher PaCO2 gets
-private _paco2 = if ((_demandVentilation / _actualVentilation) == 1) then { _previousCyclePaco2 + (PACO2_MAX_CHANGE min (-PACO2_MAX_CHANGE max ((DEFAULT_PACO2 + ((_anerobicPressure max 1) - 1) * 150) - _previousCyclePaco2))) } else { [ _previousCyclePaco2 - (PACO2_MAX_CHANGE * _deltaT), _previousCyclePaco2 + (PACO2_MAX_CHANGE * _deltaT)] select ((_demandVentilation / _actualVentilation) > 0) };         
+private _paco2 = 40;
+
+if (EGVAR(breathing,paco2Active)) then {
+    // The greater the imbalance between CO2 explusion and O2 intake, the higher PaCO2 gets
+    _paco2 = if ((_demandVentilation / _actualVentilation) == 1) then { _previousCyclePaco2 + (PACO2_MAX_CHANGE min (-PACO2_MAX_CHANGE max ((DEFAULT_PACO2 + ((_anerobicPressure max 1) - 1) * 150) - _previousCyclePaco2))) } else { [ _previousCyclePaco2 - (PACO2_MAX_CHANGE * _deltaT), _previousCyclePaco2 + (PACO2_MAX_CHANGE * _deltaT)] select ((_demandVentilation / _actualVentilation) > 1) };                                    
+};
+
 // Generated ETCO2 quadratic. Ensures ETCO2 moves with Respiratory Rate and is constantly below PaCO2 
 private _etco2 = [((_paco2 - 3) - ((-0.0416667 * (_respiratoryRate^2)) + (3.09167 * (_respiratoryRate)) - DEFAULT_ETCO2) max 10), 0] select (IN_CRDC_ARRST(_unit));
 
@@ -91,7 +100,7 @@ _pao2 = if (_previousCyclePao2 != _pao2) then { ([ _previousCyclePao2 - (PAO2_MA
 // Oxy-Hemo Dissociation Curve, driven by PaO2 with shaping done by pH 
 private _o2Sat = ((_pao2 max 1)^2.7 / ((25 - (((_pH / DEFAULT_PH) - 1) * 150))^2.7 + _pao2^2.7)) min 0.999;
 
-_unit setVariable [VAR_BREATHING_RATE, _respiratoryRate, _syncValues];
+_unit setVariable [VAR_BREATHING_RATE, (_respiratoryRate max 0), _syncValues];
 _unit setVariable [VAR_BLOOD_GAS, [_paco2, _pao2, _o2Sat, 24, _pH, _etco2], _syncValues];
 
 _o2Sat * 100
