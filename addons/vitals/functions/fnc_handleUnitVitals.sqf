@@ -17,7 +17,7 @@
 
 params ["_unit"];
 
-if (!(isPlayer _unit) && (_unit getVariable [QGVAR(simpleMedical), false])) exitWith { [_unit] call FUNC(handleSimpleVitals) };
+if ((!(isPlayer _unit)) && (_unit getVariable [QGVAR(simpleMedical),false])) exitWith { [_unit] call FUNC(handleSimpleVitals); };
 
 private _lastTimeUpdated = _unit getVariable [QACEGVAR(medical_vitals,lastTimeUpdated), 0];
 private _deltaT = (CBA_missionTime - _lastTimeUpdated) min 10;
