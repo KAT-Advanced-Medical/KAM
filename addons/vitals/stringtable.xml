@@ -7,10 +7,11 @@
             <Spanish>Activar Médico Simple para IA</Spanish>
             <Japanese>AI用単純化医療を有効化</Japanese>
         </Key>
-    </Package>
-    <Package name="Vitals">
         <Key ID="STR_KAT_Vitals_FLUID_SHIFT">
             <English>Enable Patient Fluid Shift</English>
+        </Key>
+        <Key ID="STR_KAT_Vitals_SPO2_DEATH">
+            <English>Fatal Oxygenation</English>
         </Key>
     </Package>
 </Project>
