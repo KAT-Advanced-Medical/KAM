@@ -10,8 +10,5 @@
         <Key ID="STR_KAT_Vitals_FLUID_SHIFT">
             <English>Enable Patient Fluid Shift</English>
         </Key>
-        <Key ID="STR_KAT_Vitals_SPO2_DEATH">
-            <English>Fatal Oxygenation</English>
-        </Key>
     </Package>
 </Project>
