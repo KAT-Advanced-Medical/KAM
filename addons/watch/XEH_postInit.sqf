@@ -14,3 +14,16 @@ if (!hasInterface) exitWith {};
 
     true
 }, { false }, [24, [false, false, false]], false] call CBA_fnc_addKeybind;
+
+["KAT Cav Watch", QGVAR(showCavmin), "Show Cavmin", {
+    // Conditions: canInteract
+    if (!([ACE_player, objNull, ["isNotEscorting", "isNotInside"]] call ACEFUNC(common,canInteractWith)) || {!('KAT_Cavmin' in assignedItems ACE_player)}) exitWith { false };
+
+    if !(GETMVAR(GVAR(CavminActive),false)) then {
+        [ACE_player] call FUNC(showCWatch);
+    } else {
+        call FUNC(hideCWatch);
+    };
+
+    true
+}, { false }, [24, [false, false, false]], false] call CBA_fnc_addKeybind;

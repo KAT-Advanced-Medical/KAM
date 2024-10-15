@@ -85,5 +85,11 @@
             <Spanish>Katmin K500</Spanish>
             <Japanese>Katmin K500</Japanese>
         </Key>
+        <Key ID="STR_KAT_Watch_CavminDescription">
+            <English>Watch with Vital Monitoring Capabilities. Garry Owen!</English>
+        </Key>
+        <Key ID="STR_KAT_Watch_CavminDisplayName">
+            <English>Katmin Cavalry Limted</English>
+        </Key>
     </Package>
 </Project>
