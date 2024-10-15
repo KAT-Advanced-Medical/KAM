@@ -150,8 +150,7 @@ _bloodPressure params ["_bloodPressureL", "_bloodPressureH"];
 switch (true) do {
     case ((_spo2 < EGVAR(breathing,SpO2_dieValue)) && EGVAR(breathing,SpO2_dieActive)): {
         TRACE_3("O2 Fatal",_unit,EGVAR(breathing,SpO2_dieValue),_spo2);
-        [QACEGVAR(medical,FatalInjury), _unit] call CBA_fnc_localEvent;
-        [QACEGVAR(medical,Death), _unit] call CBA_fnc_localEvent; // We have to call the Death state because if FatalInjuries is disabled, the patient won't actually die and just go into arrest
+        [QACEGVAR(common,setDead), _unit, "SpO2"] call CBA_fnc_localEvent;
     };
     case (_bloodVolume < BLOOD_VOLUME_FATAL): {
         TRACE_3("BloodVolume Fatal",_unit,BLOOD_VOLUME_FATAL,_bloodVolume);
