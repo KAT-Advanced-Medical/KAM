@@ -99,7 +99,7 @@ private _altitudeUnit = GVAR(altitudeUnit);
 
     private _height = ((getPosASL _unit) select 2);
     private _descentRate = if (_timeDiff > 0) then {
-        floor((_height - _oldHeight) / _timeDiff)
+        abs(floor((_height - _oldHeight) / _timeDiff))
     } else {
         0
     };
