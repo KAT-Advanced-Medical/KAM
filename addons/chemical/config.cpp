@@ -15,7 +15,8 @@ class CfgPatches {
             "kat_gasmaskFilter",
             "KAT_M7A3",
             "KAT_CAS_M43_Bomb",
-            "KAT_CAS_R_80mm_GAS_POD"
+            "KAT_CAS_R_80mm_GAS_POD",
+            "KAT_ChemicalDetector"
         };
         ammo[] = {
             "KAT_Gas_TripWireMine_Ammo",
@@ -59,6 +60,7 @@ class CfgPatches {
 #include "CfgWeapons.hpp"
 #include "CfgVehicles.hpp"
 #include "CfgSounds.hpp"
+#include "RscTitles.hpp"
 #include "ui\RscAttributes.hpp"
 #include "ACE_Medical_Treatment_Actions.hpp"
 #include "CfgGlasses.hpp"
