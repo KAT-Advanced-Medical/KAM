@@ -25,10 +25,6 @@
 #define FRAME_W(N) ((UI_GRID_W * (N)) * (1.7777 / (getResolution select 4)))
 #define FRAME_H(N) ((UI_GRID_H * (N)))
 
-class RscText;
-class RscPicture;
-class RscButton;
-class RscPictureKeepAspect;
 class RscTitles
 {
     class KAT_ChemicalDetector
