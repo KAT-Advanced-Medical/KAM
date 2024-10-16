@@ -60,7 +60,7 @@ class CfgPatches {
 #include "CfgWeapons.hpp"
 #include "CfgVehicles.hpp"
 #include "CfgSounds.hpp"
-#include "RscTitles.hpp"
 #include "ui\RscAttributes.hpp"
+#include "RscTitles.hpp"
 #include "ACE_Medical_Treatment_Actions.hpp"
 #include "CfgGlasses.hpp"

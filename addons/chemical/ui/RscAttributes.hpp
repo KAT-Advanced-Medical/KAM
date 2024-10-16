@@ -12,8 +12,6 @@ class RscPicture;
 class ctrlToolbox;
 class RscButton;
 
-
-
 class RscDisplayAttributes {
     class Controls {
         class Background;
