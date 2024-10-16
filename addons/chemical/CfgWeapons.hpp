@@ -28,6 +28,15 @@ class CfgWeapons {
         };
     };
 
+    class ItemWatch;
+    class KAT_ChemicalDetector: ItemWatch {
+        ACE_hideItemType = "Watch";
+        author = "Mazinski";        
+        descriptionShort = CSTRING(ChemicalDetectorDescription);
+        displayName = CSTRING(ChemicalDetectorDisplayName);
+        picture = QPATHTOF(UI\kat_chemicalDet_icon.paa);
+    };
+
     class CannonCore;
     class mortar_82mm: CannonCore {
         magazines[] += {

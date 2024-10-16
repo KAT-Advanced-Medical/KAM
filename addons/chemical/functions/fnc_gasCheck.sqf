@@ -27,6 +27,7 @@ _radius_min = if (_radius_min isEqualTo 0) then {_radius_max / 2} else {_radius_
 _logic setVariable [QGVAR(gas_active), true, true];
 _logic setVariable [QGVAR(gas_playerArr), [], true];
 _logic setVariable [QGVAR(gas_position), _position, true];
+_logic setVariable [QGVAR(gas_radius), _radius_max, true];
 
 // Function to check players within the gas zone
 private _checkPlayers = {
