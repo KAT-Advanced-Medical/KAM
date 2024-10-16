@@ -17,4 +17,4 @@
 
 params ["_patient"];
 
-if (!(isPlayer _unit) && GVAR(simpleMedical)) then { _patient setVariable [QGVAR(simpleMedical), true, true] };
+[_patient] call FUNC(fullHealLocal);

@@ -48,7 +48,7 @@ private _altitude = _display displayCtrl 22007;
         _pfhID call CBA_fnc_removePerFrameHandler;
     };
 
-    _compass ctrlSetAngle [(getDirVisual _unit), 0.5, 0.5, true];
+    _compass ctrlSetAngle [(linearConversion[0,360,(getDirVisual _unit),360,0]), 0.5, 0.5, true];
     _compass ctrlCommit 0.1;
 }, 0.05, [
     _unit,
@@ -85,9 +85,9 @@ private _altitude = _display displayCtrl 22007;
     private _altitudeValue = (getPosASL _unit) select 2;
 
     if (GVAR(altitudeUnit) == 1) then {
-        _altitude ctrlSetText ([(_altitudeValue * 3.281), 1, 0] call CBA_fnc_formatNumber)
+        _altitude ctrlSetText ([(_altitudeValue * 3.281), 1, 0] call CBA_fnc_formatNumber);
     } else {
-        _altitude ctrlSetText ([_altitudeValue, 1, 0] call CBA_fnc_formatNumber)
+        _altitude ctrlSetText ([_altitudeValue, 1, 0] call CBA_fnc_formatNumber);
     };
 
     if (GVAR(pressureUnit) == 1) then {

@@ -11,5 +11,9 @@
             <English>Apply simplified vital calculations to the AI unit. Which can be useful for saving FPS.</English>
             <Japanese>単純化されたバイタル計算をAIユニットに適用します。 これは負荷の軽減に役立つ可能性があります。</Japanese>
         </Key>
+        <Key ID="STR_KAT_Vitals_FLUID_SHIFT">
+            <English>Enable Patient Fluid Shift</English>
+            <Japanese>患者の体液移動を有効化</Japanese>
+        </Key>
     </Package>
 </Project>
