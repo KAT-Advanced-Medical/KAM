@@ -669,6 +669,10 @@
             <Portuguese>Autoinjetor de Fenilefrina</Portuguese>
             <Dutch>Fenylefrine autoinjector</Dutch>
         </Key>
+        <Key ID="STR_KAT_Pharma_PhenylAuto_DescShort">
+            <English>Used to raise blood pressure</English>
+            <Japanese>血圧を上げるために使用される</Japanese>
+        </Key>
         <Key ID="STR_KAT_Pharma_Take_Phenyl_Auto">
             <English>Inject Phenylephrine</English>
             <German>Phenylephrin verabreichen</German>

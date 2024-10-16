@@ -140,9 +140,11 @@
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_PACO2_ENABLE">
             <English>Enable PaCO2</English>
+            <Japanese>PaCO2を有効化</Japanese>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_PACO2_ENABLE_DESC">
             <English>Enables PaCO2 movement and effects on ph and breathing rate</English>
+            <Japanese>phや呼吸速度へ影響を与えるPaCO2(動脈血二酸化炭素分圧)の変動を有効にします</Japanese>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_pneumothorax">
             <English>Probability for a pneumothorax</English>
