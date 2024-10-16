@@ -11,7 +11,7 @@
             <English>Selects which temperature unit is used for the KATMIN watch display</English>
             <Dutch>Selecteert welke temperatuur eenheid gebruikt wordt voor de KATMIN horloge</Dutch>
             <Spanish>Seleccionar qué unidad de temperatura es usada para la pantalla del reloj KATMIN</Spanish>
-            <Japanese>Katmin ウォッチで表示される温度の単位を選択します</Japanese>
+            <Japanese>Katmin腕時計で表示される温度の単位を選択します</Japanese>
         </Key>
         <Key ID="STR_KAT_Watch_SETTING_TemperatureForm_Celcius">
             <English>Celcius</English>
@@ -35,7 +35,7 @@
             <English>Selects which pressure unit is used for the KATMIN watch display</English>
             <Dutch>Selecteerd welke drukeenheden gebruikt worden voor de KATMIN horloge</Dutch>
             <Spanish>Selecciona qué unidad de presión es usada para la pantalla del reloj KATMIN</Spanish>
-            <Japanese>Katmin ウォッチで表示される圧力の単位を選択します</Japanese>
+            <Japanese>Katmin腕時計で表示される圧力の単位を選択します</Japanese>
         </Key>
         <Key ID="STR_KAT_Watch_SETTING_PressureForm_mmHg">
             <English>mmHg</English>
@@ -59,7 +59,7 @@
             <English>Selects which altitude unit is used for the KATMIN watch display</English>
             <Dutch>Selecteerd welk hoogte eenheid gebruikt wordt voor de KATMIN horloge</Dutch>
             <Spanish>Selecciona qué unidad de altitud es usada para la pantalla del reloj KATMIN</Spanish>
-            <Japanese>Katmin ウォッチで表示される高度の単位を選択します</Japanese>
+            <Japanese>Katmin腕時計で表示される高度の単位を選択します</Japanese>
         </Key>
         <Key ID="STR_KAT_Watch_SETTING_AltitudeForm_meters">
             <English>Meters</English>
@@ -77,7 +77,7 @@
             <English>Watch with Vital Monitoring Capabilities</English>
             <Dutch>Horloge met ingebouwde vitale waarden monitor</Dutch>
             <Spanish>Reloj con Capacidad de Monitorización de Constantes Vitales</Spanish>
-            <Japanese>バイタル監視機能を持った腕時計</Japanese>
+            <Japanese>カーミン K500。 バイタル監視機能を持った腕時計</Japanese>
         </Key>
         <Key ID="STR_KAT_Watch_KatminDisplayName">
             <English>Katmin K500</English>
@@ -87,21 +87,27 @@
         </Key>
         <Key ID="STR_KAT_Watch_CavminDescription">
             <English>Watch with Vital Monitoring Capabilities. Garry Owen!</English>
+            <Japanese>カーミン キャバルリー・リミテッド。 バイタル監視機能を持った腕時計。 ギャリー・オーウェン!(Garry Owen!)</Japanese>
         </Key>
         <Key ID="STR_KAT_Watch_CavminDisplayName">
-            <English>Katmin Cavalry Limted</English>
+            <English>Katmin Cavalry Limited</English>
+            <Japanese>Katmin Cavalry Limited</Japanese>
         </Key>
         <Key ID="STR_KAT_Watch_STSDescription">
             <English>Watch with Vital Monitoring Capabilities. So Others May Live.</English>
+            <Japanese>カーミン ジャンプ・スタンダード。 バイタル監視機能を持った腕時計。 他人の命の為に。(So Others May Live)</Japanese>
         </Key>
         <Key ID="STR_KAT_Watch_STSDisplayName">
             <English>Katmin Jump Standard</English>
+            <Japanese>Katmin Jump Standard</Japanese>
         </Key>
         <Key ID="STR_KAT_Watch_descentFT">
             <English>%1ft/s</English>
+            <Japanese>%1ft/s</Japanese>
         </Key>
         <Key ID="STR_KAT_Watch_descentM">
             <English>%1m/s</English>
+            <Japanese>%1m/s</Japanese>
         </Key>
     </Package>
 </Project>
