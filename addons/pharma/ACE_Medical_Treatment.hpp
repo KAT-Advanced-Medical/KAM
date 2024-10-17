@@ -833,14 +833,12 @@ class ACE_ADDON(Medical_Treatment) {
             incompatibleMedication[] = {};
             onOverDose = "";
             opioidRelief = 1.3;
-            opioidEffect = 0.17;
         };
         class syringe_nitroglycerin {
             maxDose = 9;
             maxDoseDeviation = 3;
             incompatibleMedication[] = {};
             onOverDose = "";
-            opioidEffect = 0.17;
         };
         class syringe_atropineIV {
             maxDose = 9;
@@ -860,14 +858,12 @@ class ACE_ADDON(Medical_Treatment) {
             incompatibleMedication[] = {};
             onOverDose = "";
             opioidRelief = 1.5;
-            opioidEffect = 0.17;
         };
         class syringe_flumazenil {
             maxDose = 6;
             maxDoseDeviation = 3;
             incompatibleMedication[] = {};
             onOverDose = "";
-            opioidEffect = 0.17;
         };
         class syringe_lorazepam {
             maxDose = 6;
