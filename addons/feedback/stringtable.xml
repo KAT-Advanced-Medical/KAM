@@ -35,7 +35,7 @@
         </Key>
         <Key ID="STR_KAT_Feedback_SETTING_OpioidEffect_DESC">
             <English>Enables opioid effect on ketamine, fentanyl and pervitin</English>
-            <Japanese>ケタミン、フェンタニル、ペルビチンなどでオピオイド効果を有効化します</Japanese>
+            <Japanese>ケタミン、フェンタニル、ペルビチンなどでオピオイドの効果を有効にします</Japanese>
         </Key>
     </Package>
 </Project>

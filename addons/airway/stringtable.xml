@@ -191,6 +191,7 @@
             <Norwegian>%1 sjekket luftveiene: %2, %3</Norwegian>
             <Finnish>%1 tarkistettu hengitystiet, %2, %3</Finnish>
             <Russian>%1 проверенные дыхательные пути: %2, %3</Russian>
+            <Chinesesimp>%1 检查呼吸道: %2, %3</Chinesesimp>
             <Dutch>%1 Heeft de luchtwegen gecheckt: %2, %3</Dutch>
         </Key>
         <Key ID="STR_KAT_Airway_airway_log">
@@ -319,6 +320,7 @@
             <Norwegian>Obstruksjon er midlertidig redusert</Norwegian>
             <Finnish>Tukos on väliaikaisesti lievennetty</Finnish>
             <Russian>Препятствие временно устранено</Russian>
+            <Chinesesimp>阻塞暂时减轻</Chinesesimp>
             <Dutch>Blokkade is tijdelijk verzacht</Dutch>
         </Key>
         <Key ID="STR_KAT_Airway_AirwayStatus_noObstruction">
@@ -330,6 +332,7 @@
             <Finnish>Ilmatiet eivät ole tukossa</Finnish>
             <Russian>Дыхательные пути не закупорены языком.</Russian>
             <German>Die Atemwege sind nicht blockiert.</German>
+            <Chinesesimp>气道未被阻塞</Chinesesimp>
             <Portuguese>Vias aéreas não obstruídas</Portuguese>
             <Dutch>Luchtweg is niet geblokkeerd</Dutch>
         </Key>
@@ -342,6 +345,7 @@
             <Finnish>Ilmatiet eivät ole likaisia</Finnish>
             <Russian>Дыхательные пути не закупорены рвотой.</Russian>
             <German>Die Atemwege sind nicht verstopft.</German>
+            <Chinesesimp>气道未闭塞</Chinesesimp>
             <Portuguese>Vias aéreas não ocluídas</Portuguese>
             <Dutch>Luchtweg is niet verstopt</Dutch>
         </Key>
@@ -354,6 +358,7 @@
             <Finnish>Hengitystiet ovat tukossa, hengityshoitoa tarvitaan</Finnish>
             <German>Atemwege sind blockiert, die Atemwege müssen freigelegt werden</German>
             <Russian>Дыхательные пути закупорены языком, требуется лечение дыхательных путей</Russian>
+            <Chinesesimp>气道阻塞，需要气道管理</Chinesesimp>
             <Portuguese>Vias aéreas obstruídas, gerenciamento de vias aéreas necessário</Portuguese>
             <Dutch>Luchtweg is geblokkeerd, luchtwegmanagement is vereist</Dutch>
         </Key>
@@ -366,6 +371,7 @@
             <Finnish>Hengitystiet ovat likaiset, tarvitaan lääkärin imu</Finnish>
             <Russian>Дыхательные пути закупорены рвотой, требуется медицинское отсасывание</Russian>
             <German>Die Atemwege sind verstopft. Medizinische Absaugung benötigt.</German>
+            <Chinesesimp>气道堵塞，需要吸痰</Chinesesimp>
             <Portuguese>Vias aéreas ocluídas, sucção médica necessária</Portuguese>
             <Dutch>Luchtweg is verstopt, medische suctie is vereist</Dutch>
         </Key>
@@ -454,6 +460,7 @@
             <Finnish>Potilaan pää on jo yli ojentunut</Finnish>
             <German>Kopf des Patienten ist bereits überstreckt</German>
             <Russian>Голова пациента уже наклонена.</Russian>
+            <Chinesesimp>病人的头部已经过度伸展</Chinesesimp>
             <Portuguese>A cabeça do paciente já está hiperestendida</Portuguese>
             <Dutch>Patiënts hoofd is al overstrekt</Dutch>
         </Key>
@@ -504,6 +511,7 @@
             <Finnish>Pään ylivenyttely onnistui</Finnish>
             <German>Kopf erfolgreich überstreckt</German>
             <Russian>Гиперэкстензия головы завершена</Russian>
+            <Chinesesimp>头部拉伸成功</Chinesesimp>
             <Portuguese>Cabeça hiperestendida com sucesso</Portuguese>
             <Dutch>Hoofd succesvol overstrekt</Dutch>
         </Key>
@@ -579,6 +587,7 @@
             <Spanish>Giro de cabeza cancelado</Spanish>
             <Finnish>pään kääntäminen peruttu</Finnish>
             <Russian>Поворот головы отменен</Russian>
+            <Chinesesimp>异物清除停止了</Chinesesimp>
             <Dutch>Hoofddraaiing gestopt</Dutch>
         </Key>
         <Key ID="STR_KAT_Airway_headTurning_start">
@@ -590,6 +599,7 @@
             <Finnish>pään kääntyminen alkoi</Finnish>
             <Russian>Начался поворот головы</Russian>
             <German>Kopfdrehung begonnen</German>
+            <Chinesesimp>开始清除异物</Chinesesimp>
             <Portuguese>Rotação de cabeça iniciada</Portuguese>
             <Dutch>Hoofddraaiing gestart</Dutch>
         </Key>
@@ -604,6 +614,7 @@
             <Spanish>Parar giro de cabeza</Spanish>
             <Finnish>Lopeta potilaan pään kääntäminen</Finnish>
             <Russian>Перестаньте поворачивать голову</Russian>
+            <Chinesesimp>停止清除异物</Chinesesimp>
             <Dutch>Stop de hoofddraaiing</Dutch>
         </Key>
         <Key ID="STR_KAT_Airway_Accuvac_NA">
@@ -786,6 +797,7 @@
             <Finnish>Ilmateiden imu</Finnish>
             <Russian>Всасывание из дыхательных путей</Russian>
             <German>Absaugung der Atemwege</German>
+            <Chinesesimp>呼吸道抽吸</Chinesesimp>
             <French>Aspiration des voies respiratoires</French>
             <Portuguese>Sucção de vias aéreas</Portuguese>
             <Dutch>Luchtweg suctie</Dutch>

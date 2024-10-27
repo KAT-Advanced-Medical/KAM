@@ -20,7 +20,7 @@
 params ["_enable", "_intensity"];
 
 if ((!_enable) || {_intensity == 0}) exitWith {
-    if (GVAR(lowSpO2) != -1) then { GVAR(lowSpO2) ppEffectEnable true; };
+    if (GVAR(lowSpO2) != -1) then { GVAR(lowSpO2) ppEffectEnable false; };
 };
 if (GVAR(lowSpO2) != -1) then { GVAR(lowSpO2) ppEffectEnable true; };
 

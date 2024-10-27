@@ -25,8 +25,8 @@ class ACE_ADDON(Medical_Treatment) {
         // Max amount of pain the medication can remove
         maxRelief = 0;
         // Reduction of damage from wounds
-        opioidRelief = 1;
-
+        opioidRelief = 0;
+        // How strong should opioid visuals be
         opioidEffect = 0;
 
         class Epinephrine {
@@ -195,7 +195,7 @@ class ACE_ADDON(Medical_Treatment) {
             incompatibleMedication[] = {};
             viscosityChange = -10;
             onOverDose = "";
-            opioidRelief = 1.5;
+            opioidRelief = 0.2;
             opioidEffect = 0.18;
         };
         class Ketamine {
@@ -224,7 +224,7 @@ class ACE_ADDON(Medical_Treatment) {
             incompatibleMedication[] = {};
             viscosityChange = -5;
             onOverDose = "";
-            opioidRelief = 1.2;
+            opioidRelief = 0.1;
         };
         class CWMP {
             painReduce = 0.2;
