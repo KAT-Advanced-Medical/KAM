@@ -15,6 +15,7 @@
             <Portuguese>Configurações básicas</Portuguese>
             <Finnish>Perus asetukset</Finnish>
             <Russian>Основные настройки</Russian>
+            <Chinese>基础设置</Chinese>
             <Dutch>Basisinstellingen</Dutch>
         </Key>
         <Key ID="STR_KAT_GUI_SETTING_ColoredLogs">
@@ -55,6 +56,7 @@
         </Key>
         <Key ID="STR_KAT_GUI_Status_NoIv">
             <English>No pushed fluids</English>
+            <Chinesesimp>无法进行输液</Chinesesimp>
             <Korean>주입된 액체 없음</Korean>
             <Japanese>点滴中の輸液なし</Japanese>
             <German>Keine verabreichten Flüssigkeiten</German>
@@ -67,6 +69,7 @@
         </Key>
         <Key ID="STR_KAT_GUI_SETTING_overlayBodyPart">
             <English>Overlay Selected Body Part</English>
+            <Chinesesimp>突出显示选定的身体部位</Chinesesimp>
             <Korean>선택한 신체 부위 오버레이</Korean>
             <Japanese>選択した身体部位のオーバーレイ表示</Japanese>
             <German>Ausgewähltes Körperteil überlagern</German>
@@ -79,6 +82,7 @@
         </Key>
         <Key ID="STR_KAT_GUI_SETTING_showPatientSideLabels">
             <English>Label Patient Sides</English>
+            <Chinesesimp>查看患者标签</Chinesesimp>
             <Korean>환자 측면에 라벨 붙이기</Korean>
             <Japanese>患者の向きのラベル表示</Japanese>
             <German>Beschriftung der Patientenseiten</German>
