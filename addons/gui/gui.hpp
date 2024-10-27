@@ -668,8 +668,11 @@ class ACE_Medical_Menu {
             y = QUOTE(POS_Y(0));
             w = QUOTE(POS_W(4.4));
             h = QUOTE(POS_H(1));
-            colorBackgroundDisabled[] = GUI_BCG_COLOR;
-            colorBackground[] = GUI_BCG_COLOR;
+            show = 0;
+            colorBackground[] = {0, 0, 0, 0};
+            colorBackgroundActive[] = {1, 1, 1, 0.4};
+            colorBackgroundDisabled[] = {0, 0, 0, 0};
+            colorBorder[] = {0,0,0,0};
             onButtonClick = QUOTE([] call FUNC(openSyringeMenu));
             class Attributes {
                 align = "Right";

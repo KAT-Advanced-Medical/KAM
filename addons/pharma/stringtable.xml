@@ -4151,16 +4151,16 @@
             <English>5ml Syringe loaded with 0.2mg of Flumazenil</English>
         </Key>
         <Key ID="STR_KAT_Pharma_Syringe_etomidate_5_1_Display">
-            <English>5ml Syringe/0.2mg Etomidate</English>
+            <English>5ml Syringe/20mg Etomidate</English>
         </Key>
         <Key ID="STR_KAT_Pharma_Syringe_etomidate_5_1_DescShort">
-            <English>5ml Syringe loaded with 0.2mg of Etomidate</English>
+            <English>5ml Syringe loaded with 20mg of Etomidate</English>
         </Key>
         <Key ID="STR_KAT_Pharma_Syringe_etomidate_5_3_Display">
-            <English>5ml Syringe/0.3mg Etomidate</English>
+            <English>5ml Syringe/30mg Etomidate</English>
         </Key>
         <Key ID="STR_KAT_Pharma_Syringe_etomidate_5_3_DescShort">
-            <English>5ml Syringe loaded with 0.3mg of Etomidate</English>
+            <English>5ml Syringe loaded with 30mg of Etomidate</English>
         </Key>
         <Key ID="STR_KAT_Pharma_Syringe_epinephrineIV_5_1_Display">
             <English>5ml Syringe/10mcg Epinephrine</English>
