@@ -47,9 +47,9 @@
         [QGVAR(isInGasArea), [_x, _intensity], _x] call CBA_fnc_targetEvent;
 
         // Don't poison if already poisoned
-        if (_x getVariable [QGVAR(poisoned), false]) then {
-            continue;
-        };
+        // if (_x getVariable [QGVAR(poisoned), false]) then {
+        //     continue;
+        // };
 
         [QGVAR(poison), [_x, _gasLevel], _x] call CBA_fnc_targetEvent;
 
