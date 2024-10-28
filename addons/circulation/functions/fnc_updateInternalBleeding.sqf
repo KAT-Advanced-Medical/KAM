@@ -19,7 +19,7 @@
 params ["_unit", ["_heal", false]];
 
 private _cardiacOutput = [_unit] call ACEFUNC(medical_status,getCardiacOutput);
-private _alphaAction = _unit getVariable [QEGVAR(pharma,alphaAction), 1];
+private _alphaAction = GET_VASOCONSTRICTION(_unit);
 private _internalBleeding = 0;
 
 if !(_heal) then {

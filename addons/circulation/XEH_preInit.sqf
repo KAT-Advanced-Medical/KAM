@@ -7,11 +7,13 @@ PREP_RECOMPILE_START;
 PREP_RECOMPILE_END;
 
 if (isServer) then {
-    GVAR(bloodSampleMap) = createHashMap;
-    GVAR(sampleCounter) = 0;
-
-    GVAR(resultSampleMap) = createHashMap;
-    GVAR(resultCounter) = 0;
+    private _sampleMap = createHashMap;
+    missionNamespace setVariable [QGVAR(bloodSampleMap), _sampleMap];
+    missionNamespace setVariable [QGVAR(sampleCounter), 0];
+    
+    private _resultSampleMap = createHashMap;
+    missionNamespace setVariable [QGVAR(resultSampleMap), _resultSampleMap];
+    missionNamespace setVariable [QGVAR(resultCounter), 0];
 };
 
 #define CBA_SETTINGS_CAT "KAT - ADV Medical: Circulation"

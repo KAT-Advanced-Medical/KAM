@@ -17,4 +17,8 @@
 
 params ["_patient"];
 
-if (!(isPlayer _unit) && GVAR(simpleMedical)) then { _patient setVariable [QGVAR(simpleMedical), true, true] };
+_patient setVariable [QGVAR(simpleMedical), false, true];
+
+if (GVAR(enableSimpleMedical)) then {
+    _patient setVariable [QGVAR(simpleMedical), true, true];
+};

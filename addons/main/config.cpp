@@ -29,3 +29,5 @@ class CfgMods {
         description = "Issue Tracker: https://github.com/Tomcat-SG/KAM/issues";
     };
 };
+
+#include "CfgSettings.hpp"

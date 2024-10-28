@@ -1,5 +1,7 @@
 PREP(dumpBloodGas);
 PREP(handleIVAdjust);
+PREP(handleIVShow);
+PREP(handleABGShow);
 PREP(logListAppended);
 PREP(menuPFH);
 PREP(onMenuClose);
