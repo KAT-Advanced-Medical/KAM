@@ -1,5 +1,3 @@
-#include "..\defines.hpp"
-
 class RscPicture;
 class RscLine;
 class RscText;

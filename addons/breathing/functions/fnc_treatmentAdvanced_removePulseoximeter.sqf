@@ -24,5 +24,6 @@ _medic setVariable [QGVAR(PulseOximeter_Volume), _patient getVariable QGVAR(Puls
 private _attachedPulseOximeter = _patient getVariable [QGVAR(PulseOximeter_Attached), [0,0]];
 _attachedPulseOximeter set [(ALL_BODY_PARTS find toLower _bodyPart)-2,0];
 _patient setVariable [QGVAR(PulseOximeter_Attached), _attachedPulseOximeter, true];
+_patient setVariable [QGVAR(pulseOxAttached), false, true];
 
 [_medic, "kat_Pulseoximeter", 1] call ACEFUNC(common,addToInventory);

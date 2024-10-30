@@ -29,6 +29,7 @@ _patient setVariable [QGVAR(PulseOximeter_VolumePatient), _medic getVariable QGV
 private _attachedPulseOximeter = _patient getVariable [QGVAR(PulseOximeter_Attached), [0,0]];
 _attachedPulseOximeter set [(ALL_BODY_PARTS find toLower _bodyPart)-2,1];
 _patient setVariable [QGVAR(PulseOximeter_Attached), _attachedPulseOximeter, true];
+_patient setVariable [QGVAR(pulseOxAttached), true, true];
 
 [{
     params ["_args", "_idPFH"];
