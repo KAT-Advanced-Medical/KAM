@@ -182,7 +182,7 @@ class CfgWeapons {
     class kat_atropineIV: ACE_ItemCore {
         scope = 2;
         displayName = CSTRING(AtropineIV_Display);
-        picture = QPATHTOF(ui\icon_EpinephrineIV.paa);
+        picture = QPATHTOF(ui\icon_AtropineIV.paa);
         model = "\A3\Structures_F_EPA\Items\Medical\Painkillers_F.p3d";
         descriptionShort = CSTRING(AtropineIV_DescShort);
         ACE_isMedicalItem = 1;
@@ -270,7 +270,7 @@ class CfgWeapons {
     class kat_morphineIV: ACE_ItemCore {
         scope = 2;
         displayName = CSTRING(MorphineIV_displayName);
-        picture = QPATHTOF(ui\icon_EpinephrineIV.paa);
+        picture = QPATHTOF(ui\icon_MorphineIV.paa);
         model = "\A3\Structures_F_EPA\Items\Medical\Painkillers_F.p3d";
         descriptionShort = CSTRING(MorphineIV_DescShort);
         ACE_isMedicalItem = 1;
@@ -281,7 +281,7 @@ class CfgWeapons {
     class kat_adenosineIV: ACE_ItemCore {
         scope = 2;
         displayName = CSTRING(AdenosineIV_displayName);
-        picture = QPATHTOF(ui\icon_EpinephrineIV.paa);
+        picture = QPATHTOF(ui\icon_AdenosineIV.paa);
         model = "\A3\Structures_F_EPA\Items\Medical\Painkillers_F.p3d";
         descriptionShort = CSTRING(AdenosineIV_DescShort);
         ACE_isMedicalItem = 1;

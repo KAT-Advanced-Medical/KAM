@@ -493,22 +493,7 @@
             <Dutch>Atropine autoinjector</Dutch>
         </Key>
         <Key ID="STR_KAT_Pharma_AtropineIV_Display">
-            <English>IV Atropine</English>
-            <German>Atropin</German>
-            <Polish>Atropina</Polish>
-            <French>Atropine</French>
-            <Chinese>阿托品</Chinese>
-            <Chinesesimp>阿托品</Chinesesimp>
-            <Italian>Atropina</Italian>
-            <Spanish>Atropina</Spanish>
-            <Korean>아트로핀</Korean>
-            <Turkish>Atropin</Turkish>
-            <Czech>Atropin</Czech>
-            <Japanese>アトロピン</Japanese>
-            <Russian>Атропин</Russian>
-            <Portuguese>Atropina</Portuguese>
-            <Finnish>Atropiini</Finnish>
-            <Dutch>Atropine</Dutch>
+            <English>Atropine IV</English>
         </Key>
         <Key ID="STR_KAT_Pharma_Take_Atropine">
             <English>Inject Atropine</English>
@@ -527,6 +512,9 @@
             <Portuguese>Injetar Atropina</Portuguese>
             <Finnish>Työnnä atropiinia</Finnish>
             <Dutch>Injecteer Atropine</Dutch>
+        </Key>
+        <Key ID="STR_KAT_Pharma_Take_AtropineIV">
+            <English>Inject Atropine IV</English>
         </Key>
         <Key ID="STR_KAT_Pharma_TXA_DescShort">
             <English>Encourages clot formation</English>
@@ -2113,10 +2101,10 @@
             <Dutch>Behandeltijd van Atropine</Dutch>
         </Key>
         <Key ID="STR_KAT_Pharma_medLvl_AtropineIV">
-            <English>Medical level required for IV Atropine</English>
+            <English>Medical level required for Atropine IV</English>
         </Key>
         <Key ID="STR_KAT_Pharma_treatmentTime_AtropineIV">
-            <English>Treatment time for IV Atropine</English>
+            <English>Treatment time for Atropine IV</English>
         </Key>
         <Key ID="STR_KAT_Pharma_medLvl_EACA">
             <English>Medical level required for EACA</English>
@@ -3939,7 +3927,7 @@
             <French>Epinéphrine IV</French>
         </Key>
         <Key ID="STR_KAT_Pharma_EpinephrineIV_displayName">
-            <English>IV Epinephrine</English>
+            <English>Epinephrine IV</English>
             <Japanese>アドレナリン静脈注射 (IV)</Japanese>
             <Spanish>Epinefrina IV</Spanish>
             <Dutch>IV Adrenaline</Dutch>
@@ -4532,16 +4520,16 @@
             <English>KAT Morphine Settings</English>
         </Key>
         <Key ID="STR_KAT_Pharma_MorphineIV_DescShort">
-            <English>IV Morphine</English>
+            <English>Morphine IV</English>
         </Key>
         <Key ID="STR_KAT_Pharma_MorphineIV_displayName">
-            <English>IV Morphine</English>
+            <English>Morphine IV</English>
         </Key>
         <Key ID="STR_KAT_Pharma_medLvl_MorphineIV">
-            <English>Medical level required for IV Morphine</English>
+            <English>Medical level required for Morphine IV</English>
         </Key>
         <Key ID="STR_KAT_Pharma_treatmentTime_MorphineIV">
-            <English>Treatment time for IV Morphine</English>
+            <English>Treatment time for Morphine IV</English>
         </Key>
         <Key ID="STR_KAT_Pharma_medLvl_MorphineIM">
             <English>Medical level required for IM Morphine</English>
@@ -4550,25 +4538,25 @@
             <English>Treatment time for IM Morphine</English>
         </Key>
         <Key ID="STR_KAT_Pharma_Take_MorphineIV">
-            <English>Push IV Morphine</English>
+            <English>Push Morphine IV</English>
         </Key>
         <Key ID="STR_KAT_Pharma_SubCategory_AdenosineIV">
-            <English>IV Adenosine</English>
+            <English>Adenosine IV</English>
         </Key>
         <Key ID="STR_KAT_Pharma_medLvl_AdenosineIV">
-            <English>Medical level required for IV Adenosine</English>
+            <English>Medical level required for Adenosine IV</English>
         </Key>
         <Key ID="STR_KAT_Pharma_treatmentTime_AdenosineIV">
-            <English>Treatment time for IV Adenosine</English>
+            <English>Treatment time for Adenosine IV</English>
         </Key>
         <Key ID="STR_KAT_Pharma_AdenosineIV_DescShort">
-            <English>IV Adenosine</English>
+            <English>Adenosine IV</English>
         </Key>
         <Key ID="STR_KAT_Pharma_AdenosineIV_displayName">
-            <English>IV Adenosine</English>
+            <English>Adenosine IV</English>
         </Key>
         <Key ID="STR_KAT_Pharma_Take_AdenosineIV">
-            <English>Push IV Adenosine</English>
+            <English>Push Adenosine IV</English>
         </Key>
     </Package>
 </Project>
