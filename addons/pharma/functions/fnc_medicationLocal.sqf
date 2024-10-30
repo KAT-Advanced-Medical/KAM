@@ -106,7 +106,6 @@ if (_maxRelief > 0) then {
     };
 };
 if ([QGVAR(AMS_Enabled)] call CBA_settings_fnc_get) then {
-
     private _medicationParts = (_className splitString "_");
 
     if (count _medicationParts > 3) then {

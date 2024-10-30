@@ -6,17 +6,15 @@
  *
  * Arguments:
  * 0: Player <OBJECT>
- * 1: Player <NUMBER>
- * 2: Params <ARRAY>
- *  0: Class name of medication <STRING>
- *  1: Syringe type <STRING>
- *  2: Dose type <STRING>
+ * 1: Class name of medication <STRING>
+ * 2: Syringe type <STRING>
+ * 3: Dose type <STRING>
  *
  * Return Value:
  * None
  *
  * Example:
- * [player, ["TXA", "5ml", "1"]] call kat_pharma_fnc_prepareSyringe;
+ * [player, "TXA", "5ml", "1"] call kat_pharma_fnc_prepareSyringe;
  *
  * Public: No
  */

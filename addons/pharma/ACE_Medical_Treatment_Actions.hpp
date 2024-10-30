@@ -252,7 +252,7 @@ class ACE_Medical_Treatment_Actions {
         sounds[] = {};
     };
     class AtropineIV: EACA {
-        displayName = CSTRING(Take_Atropine);
+        displayName = CSTRING(Take_AtropineIV);
         allowedSelections[] = {"Body", "LeftArm", "RightArm", "LeftLeg", "RightLeg"};
         allowSelfTreatment = 1;
         medicRequired = QGVAR(medLvl_AtropineIV);
