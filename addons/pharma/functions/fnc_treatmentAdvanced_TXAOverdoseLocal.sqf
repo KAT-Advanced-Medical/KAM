@@ -49,7 +49,7 @@ params ["_patient"];
                 private _surfaceArea = (_patient getVariable [QEGVAR(breathing,lungSurfaceArea), 400]) - 10;
                 _patient setVariable [QEGVAR(breathing,lungSurfaceArea), _surfaceArea];
                 private _coagulationFactor = (_patient getVariable [QGVAR(coagulationFactor), 30]);
-                private _factorstoremove = 1
+                private _factorstoremove = 1;
                 _patient setVariable [QGVAR(coagulationFactor), (_coagulationFactor - _factorstoremove), true];
         }, 15, [_patient]] call CBA_fnc_addPerFrameHandler;
 }, _patient, 15] call CBA_fnc_waitAndExecute;

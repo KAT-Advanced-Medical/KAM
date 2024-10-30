@@ -29,8 +29,8 @@ params ["_patient"];
                     [_idPFH] call CBA_fnc_removePerFrameHandler;
                 };
                 private _hr = _patient getVariable [VAR_HEART_RATE, 80];
-				private _hrAdd = (_hr + 1);
-				_patient setVariable [VAR_HEART_RATE, _hrAdd, true];
+                private _hrAdd = (_hr + 1);
+                _patient setVariable [VAR_HEART_RATE, _hrAdd, true];
         }, 10, [_patient]] call CBA_fnc_addPerFrameHandler;
 }, _patient, 10] call CBA_fnc_waitAndExecute;
 [{
@@ -46,8 +46,8 @@ params ["_patient"];
                     [_idPFH] call CBA_fnc_removePerFrameHandler;
                 };
                 private _hr = _patient getVariable [VAR_HEART_RATE, 80];
-				private _hrAdd = (_hr - 2);
-				_patient setVariable [VAR_HEART_RATE, _hrAdd, true];
+                private _hrAdd = (_hr - 2);
+                _patient setVariable [VAR_HEART_RATE, _hrAdd, true];
         }, 10, [_patient]] call CBA_fnc_addPerFrameHandler;
 }, _patient, 150] call CBA_fnc_waitAndExecute;
 
