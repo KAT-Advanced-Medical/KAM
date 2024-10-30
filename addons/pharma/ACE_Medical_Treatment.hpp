@@ -92,6 +92,18 @@ class ACE_ADDON(Medical_Treatment) {
             incompatibleMedication[] = {};
             viscosityChange = 0;
         };
+        class Alteplase {
+            painReduce = 0;
+            hrIncreaseLow[] = {-4, -10};
+            hrIncreaseNormal[] = {-5, -15};
+            hrIncreaseHigh[] = {-5, -20};
+            timeInSystem = 180;
+            timeTillMaxEffect = 30;
+            maxDose = 1;
+            maxDoseDeviation = 0;
+            incompatibleMedication[] = {};
+            viscosityChange = 0;
+        };
         class AdenosineIV {
             painReduce = 0;
             hrIncreaseLow[] = {-7, -10};
