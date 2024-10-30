@@ -69,13 +69,12 @@ switch (_usedItem) do {
         _IVrate set [_partIndex, 0.4];
         _patient setVariable [QGVAR(IV), _IVarray, true];
         _patient setVariable [QGVAR(IVrate), _IVrate, true];
-        private _medStack = _patient call ACEFUNC(medical_treatment,getAllMedication);
-        private _medsToCheck = ["fentanyl", "ketamine", "nalbuphine", "morphine", "morphineIV"];
+        private _medStack = _patient call ACEFUNC(medical_treatment,getAllMedicationCount);
+        private _medsToCheck = ["fentanyl", "ketamine", "nalbuphine", "morphine"];
         private _fentanylEffectiveness = 0;
         private _ketamineEffectiveness = 0;
         private _nalbuphineEffectiveness = 0;
         private _morphineEffectiveness = 0;
-        private _morphineIVEffectiveness = 0;
         {
             private _medName = toLower (_x select 0);
             private _effectiveness = _x select 2;
@@ -89,18 +88,14 @@ switch (_usedItem) do {
                 _nalbuphineEffectiveness = _nalbuphineEffectiveness max _effectiveness;
             };
             if ("morphine" in _medName) then {
-                _nalbuphineEffectiveness = _nalbuphineEffectiveness max _effectiveness;
-            };
-            if ("morphineIV" in _medName) then {
-                _nalbuphineEffectiveness = _nalbuphineEffectiveness max _effectiveness;
+                _morphineEffectiveness = _morphineEffectiveness max _effectiveness;
             };
         } forEach _medStack;
         if (
             _fentanylEffectiveness <= 0.8 &&
             _ketamineEffectiveness <= 0.8 &&
             _nalbuphineEffectiveness <= 0.8 &&
-            _morphineEffectiveness <= 0.8 &&
-            _morphineIVEffectiveness <= 0.8
+            _morphineEffectiveness <= 0.8
         ) then {
             [_patient, [0.6, 0.7, 0.8] select (floor random 3)] call ACEFUNC(medical_status,adjustPainLevel);
         };

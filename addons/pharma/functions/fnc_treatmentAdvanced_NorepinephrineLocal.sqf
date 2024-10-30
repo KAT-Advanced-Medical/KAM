@@ -14,16 +14,14 @@
  *
  * Public: No
  */
-params ["_patient", "_classname"];
+params ["_patient"];
 
 private _medicationArray = _patient getVariable [QACEGVAR(medical,medications), []];
-
 {
     _x params ["_medication"];
-
-    if (_medication isEqualTo "BRADYCARDIA") exitWith {
+    if (_medication isEqualTo "BRADYCARDIA") then {
         _medicationArray deleteAt (_medicationArray find _x);
     };
-} forEach (_medicationArray);
+} forEach _medicationArray;
 
 _patient setVariable [QACEGVAR(medical,medications), _medicationArray, true];

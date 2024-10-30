@@ -15,10 +15,4 @@
  * Public: No
  */
 params ["_patient"];
-
-private _random = random 3;
-if (_random <= 1) then {
-    private _hrValue = [-40, -30, -50];
-    private _hrAdjust = selectRandom _hrValue;
-    [_patient, "BRADYCARDIA", 120, 1200, _hrAdjust, "", "", "", "", ""] call EFUNC(vitals,addMedicationAdjustment);
-};
+[_patient, AmiodaroneOverdose, 30, 600, "", "", "", 0.2, "", ""] call EFUNC(vitals,addMedicationAdjustment);

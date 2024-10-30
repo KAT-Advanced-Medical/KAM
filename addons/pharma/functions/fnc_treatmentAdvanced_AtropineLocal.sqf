@@ -10,14 +10,14 @@
  * None
  *
  * Example:
- * [player, syringe_kat_atropine_5ml_2] call kat_pharma_fnc_treatmentAdvanced_AtropineLocal;
+ * [player, syringe_atropine_5ml_2] call kat_pharma_fnc_treatmentAdvanced_AtropineLocal;
  *
  * Public: No
  */
 
 params ["_patient", "_bodyPart", "_classname"];
 
-if (_classname isEqualTo "syringe_kat_atropine_5ml_3") exitWith {};
+if (_classname isEqualTo "syringe_atropine_5ml_3") exitWith {};
 
 private _medicationArray = _patient getVariable [QACEGVAR(medical,medications), []];
 

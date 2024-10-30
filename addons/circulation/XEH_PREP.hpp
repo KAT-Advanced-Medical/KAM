@@ -45,6 +45,7 @@ PREP(placeAED);
 PREP(removeLog);
 PREP(showBloodGas);
 PREP(treatmentAdvanced_IV);
+PREP(updateWoundBloodLoss);
 PREP(updateBloodPressureChange);
 PREP(updateHeartRate);
 PREP(updateInternalBleeding);

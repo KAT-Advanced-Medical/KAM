@@ -57,16 +57,15 @@ class ACE_ADDON(Medical_Treatment) {
         };
         class Morphine {
             painReduce = 0.6;
-            hrIncreaseLow[] = {-10, -20};
-            hrIncreaseNormal[] = {-10, -30};
-            hrIncreaseHigh[] = {-10, -35};
-            timeInSystem = 450;
+            hrIncreaseLow[] = {-5, -15};
+            hrIncreaseNormal[] = {-10, -20};
+            hrIncreaseHigh[] = {-10, -25};
+            timeInSystem = 300;
             timeTillMaxEffect = 60;
             maxDose = 2;
             maxDoseDeviation = 2;
             incompatibleMedication[] = {};
             viscosityChange = -0;
-            opioidRelief = 1.1;
         };
         class MorphineIV {
             painReduce = 0.8;
@@ -76,7 +75,7 @@ class ACE_ADDON(Medical_Treatment) {
             timeInSystem = 900;
             timeTillMaxEffect = 30;
             maxDose = 2;
-            maxDoseDeviation = 2;
+            maxDoseDeviation = 1;
             incompatibleMedication[] = {};
             viscosityChange = -15;
             opioidRelief = 1.3;
@@ -84,9 +83,9 @@ class ACE_ADDON(Medical_Treatment) {
         class Adenosine {
             painReduce = 0;
             hrIncreaseLow[] = {-4, -10};
-            hrIncreaseNormal[] = {-5, -20};
-            hrIncreaseHigh[] = {-5, -25};
-            timeInSystem = 60;
+            hrIncreaseNormal[] = {-5, -15};
+            hrIncreaseHigh[] = {-5, -20};
+            timeInSystem = 180;
             timeTillMaxEffect = 30;
             maxDose = 2;
             maxDoseDeviation = 2;
@@ -98,9 +97,9 @@ class ACE_ADDON(Medical_Treatment) {
             hrIncreaseLow[] = {-7, -10};
             hrIncreaseNormal[] = {-15, -30};
             hrIncreaseHigh[] = {-15, -35};
-            timeInSystem = 180;
+            timeInSystem = 360;
             timeTillMaxEffect = 15;
-            maxDose = 3;
+            maxDose = 2;
             maxDoseDeviation = 2;
             incompatibleMedication[] = {};
             viscosityChange = 0;
@@ -238,7 +237,7 @@ class ACE_ADDON(Medical_Treatment) {
             incompatibleMedication[] = {};
             viscosityChange = -5;
             onOverDose = "";
-            maxRelief = 0.5;
+            maxRelief = 0.4;
         };
         class Atropine {
             painReduce = 0;
@@ -529,6 +528,7 @@ class ACE_ADDON(Medical_Treatment) {
             timeTillMaxEffect = 20;
             viscosityChange = -10;
             opioidRelief = 1.5;
+            opioidEffect = 0.25;
         };
         class syringe_ketamine_5ml_1 {
             painReduce = 0.5;
@@ -538,6 +538,7 @@ class ACE_ADDON(Medical_Treatment) {
             timeInSystem = 600;
             timeTillMaxEffect = 15;
             viscosityChange = 10;
+            opioidEffect = 0.18;
         };
         class syringe_ketamine_5ml_3 {
             painReduce = 0.8;
@@ -548,7 +549,7 @@ class ACE_ADDON(Medical_Treatment) {
             timeTillMaxEffect = 15;
             viscosityChange = 10;
             onOverDose = "";
-            opioidEffect = 0.11;
+            opioidEffect = 0.21;
         };
         class syringe_nalbuphine_5ml_1 {
             painReduce = 0.5;
@@ -723,8 +724,8 @@ class ACE_ADDON(Medical_Treatment) {
             timeTillMaxEffect = 60;
             viscosityChange = -10;
             onOverDose = "";
-            opioidRelief = 1.5;
-            opioidEffect = 0.17;
+            opioidRelief = 1.1;
+            opioidEffect = 0.15;
         };
         class syringe_fentanyl_10ml_3 {
             painReduce = 0.8;
@@ -745,6 +746,7 @@ class ACE_ADDON(Medical_Treatment) {
             timeInSystem = 300;
             timeTillMaxEffect = 30;
             viscosityChange = 10;
+            opioidEffect = 0.12;
         };
         class syringe_ketamine_10ml_3 {
             painReduce = 0.8;
@@ -754,6 +756,7 @@ class ACE_ADDON(Medical_Treatment) {
             timeInSystem = 450;
             timeTillMaxEffect = 30;
             viscosityChange = 10;
+            opioidEffect = 0.15;
         };
         class syringe_nalbuphine_10ml_1 {
             painReduce = 0.5;
@@ -804,14 +807,14 @@ class ACE_ADDON(Medical_Treatment) {
             opioidRelief = 1.3;
         };
         class syringe_txa {
-            maxDose = 9;
-            maxDoseDeviation = 3;
+            maxDose = 6;
+            maxDoseDeviation = 2;
             incompatibleMedication[] = {};
             onOverDose = "";
         };
         class syringe_eaca {
             maxDose = 6;
-            maxDoseDeviation = 3;
+            maxDoseDeviation = 2;
             incompatibleMedication[] = {};
             onOverDose = "";
         };

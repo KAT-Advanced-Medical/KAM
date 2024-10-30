@@ -1,7 +1,7 @@
 #include "..\script_component.hpp"
 /*
- * Author: Mazinski.H, Edited by MiszczuZPolski and Cplhardcore
- * Applies Bradycardia randomly
+ * Author:Cplhardcore
+ * Does the AV block effect of adenosine
  *
  * Arguments:
  * 0: Patient <OBJECT>
@@ -14,6 +14,7 @@
  *
  * Public: No
  */
+params ["_patient", "_classname"];
 if (_classname isEqualTo "ACE_adenosine") exitWith {};
 private _cardiacRhythm = _patient getVariable [QEGVAR(circulation,cardiacArrestType), 0];
 _patient setVariable [QEGVAR(circulation,cardiacArrestType), 1];

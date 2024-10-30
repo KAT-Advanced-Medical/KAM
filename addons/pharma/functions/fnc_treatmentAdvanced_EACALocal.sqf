@@ -21,9 +21,16 @@ params ["_patient", "_bodyPart"];
 private _partIndex = ALL_BODY_PARTS find toLower _bodyPart;
 private _IVarray = _patient getVariable [QGVAR(IV), [0,0,0,0,0,0]];
 private _IVactual = _IVarray select _partIndex;
-private _countEACA = [_patient, "EACA"] call ACEFUNC(medical_status,getMedicationCount);
-private _countEACAIV51 = [_patient, "syringe_kat_eaca_5ml_1"] call ACEFUNC(medical_status,getMedicationCount);
-private _countEACAIV53 = [_patient, "syringe_kat_eaca_5ml_3"] call ACEFUNC(medical_status,getMedicationCount);
+private _medStack = [_patient, false] call ACEFUNC(medical_treatment,getAllMedicationCount);
+private _medsToCheck = ["EACA"];
+private _eacaEffectiveness = 0;
+{
+    private _medName = toLower (_x select 0);
+    private _effectiveness = _x select 2;
+    if ("EACA" in _medName) then {
+        _eacaEffectiveness = _eacaEffectiveness max _effectiveness;
+    };
+} forEach _medStack;
 private _allowStack = missionNamespace getVariable [QGVAR(allowStackScript_EACA), true];
 private _keepRunning = missionNamespace getVariable [QGVAR(keepScriptRunning_EACA), false];
 private _cycleTime = missionNamespace getVariable [QGVAR(bandageCycleTime_EACA), 5];
@@ -50,8 +57,8 @@ if (_IVactual > 1) then {
 
 if (!(GVAR(coagulation)) || GVAR(coagulation_allow_EACA_script)) then {
 
-    if (_IVactual != 5) then {
-        if ((_countEACA > 1 || _countEACAIV51 > 1 || _countEACAIV53 > 1)&& !(_allowStack)) exitWith {};
+    if (_IVactual != 7) then {
+        if (_eacaEffectiveness > 0.3)&& !(_allowStack) exitWith {};
 
         [{
             params ["_args", "_idPFH"];
