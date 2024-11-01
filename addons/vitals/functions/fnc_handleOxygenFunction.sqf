@@ -92,7 +92,7 @@ private _fio2 = switch (true) do {
 private _pALVo2 = ((_fio2 * (_baroPressure - 47)) - (_paco2 / _anerobicPressure)) max 1;
 
 // PaO2 cannot be higher than PALVO2 and comes from ventilation shortage multipled by RBC volume
-private _pao2 = (DEFAULT_PAO2 - ((DEFAULT_ECB / ((GET_BODY_FLUID(_unit) select 0) max 100)) * ((_demandVentilation - _actualVentilation) / 120))) min _pALVo2;
+private _pao2 = (DEFAULT_PAO2 - ((DEFAULT_ECB / ((GET_BODY_FLUID(_unit) select 0) max 500)) * ((_demandVentilation - _actualVentilation) / 120))) min _pALVo2;
 
 // PaO2 moves in controlled steps to prevent hard movements when Ventilation Demand spikes
 _pao2 = if (_previousCyclePao2 != _pao2) then { ([ (_previousCyclePao2 - ((PAO2_MAX_CHANGE * EGVAR(breathing,SpO2_MultiplyNegative)) * _deltaT)) , (_previousCyclePao2 + ((PAO2_MAX_CHANGE * EGVAR(breathing,SpO2_MultiplyPositive)) * _deltaT))] select ((_previousCyclePao2 - _pao2) < 0)) } else { _pao2 };
