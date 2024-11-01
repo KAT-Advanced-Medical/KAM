@@ -25,7 +25,6 @@ _patient setVariable [QGVAR(tensionpneumothorax), false, true];
 _patient setVariable [QGVAR(activeChestSeal), false, true];
 _patient setVariable [QGVAR(deepPenetratingInjury), false, true];
 _patient setVariable [QGVAR(etco2Monitor), [], true];
-_patient setVariable [QGVAR(etco2Level), 40, true];
 _patient setVariable [QGVAR(breathRate), 15, true];
 _patient setVariable [QGVAR(nasalCannula), false, true];
 

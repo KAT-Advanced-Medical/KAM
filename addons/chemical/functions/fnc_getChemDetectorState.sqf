@@ -18,4 +18,4 @@ params ["_unit", "_isOnOff"];
 
 private _currentState = _unit getVariable [QGVAR(chemDetectorState), false];
 
-[false, true] select ("ChemicalDetector_01_watch_F" in (assigneditems _unit) && _currentState == _isOnOff);
+[false, true] select ("ChemicalDetector_01_watch_F" in (assignedItems _unit) && _currentState == _isOnOff);

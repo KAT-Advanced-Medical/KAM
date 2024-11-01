@@ -17,4 +17,5 @@
 */
 
 params ["_posX", "_posY", "_posZ"];
-[[_posX, _posY, _posZ], 240, 15, 0] call FUNC(createZone);
+
+[QGVAR(createZoneGlobal), [[_posX, _posY, _posZ], 240, 15, 0]] call CBA_fnc_globalEventJIP;

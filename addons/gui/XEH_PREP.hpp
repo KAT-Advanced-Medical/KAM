@@ -1,6 +1,13 @@
+PREP(dumpBloodGas);
+PREP(handleIVAdjust);
+PREP(handleIVShow);
+PREP(handleABGShow);
 PREP(logListAppended);
+PREP(menuPFH);
 PREP(onMenuClose);
 PREP(onMenuOpen);
 PREP(updateCategories);
 PREP(updateInjuryList);
 PREP(updateBodyImage);
+PREP(updateIVStatus);
+PREP(updateABGStatus);

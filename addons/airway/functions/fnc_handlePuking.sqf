@@ -39,7 +39,7 @@ _unit setVariable ["kat_pukeActive_PFH", true];
         if !(_unit getVariable [QGVAR(occluded), false]) then {
             _unit setVariable [QGVAR(occluded), true, true];
             if (GVAR(checkbox_puking_sound)) then {
-                playsound3D [selectRandom [QPATHTOF_SOUND(sounds\puking1.wav),QPATHTOF_SOUND(sounds\puking2.wav),QPATHTOF_SOUND(sounds\puking3.wav)], _unit, false, getPosASL _unit, 8, 1, 15];
+                playSound3D [selectRandom [QPATHTOF_SOUND(sounds\puking1.wav),QPATHTOF_SOUND(sounds\puking2.wav),QPATHTOF_SOUND(sounds\puking3.wav)], _unit, false, getPosASL _unit, 8, 1, 15];
             };
         };
     };

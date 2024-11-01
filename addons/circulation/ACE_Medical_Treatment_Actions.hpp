@@ -38,7 +38,7 @@ class ACE_Medical_Treatment_Actions {
         allowedSelections[] = {"LeftArm", "RightArm", "LeftLeg", "RightLeg"};
         allowSelfTreatment = QGVAR(enable_selfBloodDraw);
         category = "advanced";
-        medicRequired = 0;
+        medicRequired = 1;
         consumeItem = 1;
         callbackSuccess = QUOTE([ARR_3(_medic,_patient,500)] call FUNC(drawBlood));
         condition = QUOTE([ARR_3(_medic,_patient,500)] call FUNC(canDraw) && (!(EGVAR(pharma,RequireInsIVBloodDraw)) || EFUNC(pharma,removeIV)));
@@ -54,7 +54,7 @@ class ACE_Medical_Treatment_Actions {
         allowedSelections[] = {"LeftArm", "RightArm", "LeftLeg", "RightLeg"};
         allowSelfTreatment = QGVAR(enable_selfBloodDraw);
         category = "advanced";
-        medicRequired = 0;
+        medicRequired = 1;
         consumeItem = 1;
         callbackSuccess = QUOTE([ARR_3(_medic,_patient,250)] call FUNC(drawBlood));
         condition = QUOTE([ARR_3(_medic,_patient,250)] call FUNC(canDraw) && (!(EGVAR(pharma,RequireInsIVBloodDraw)) || EFUNC(pharma,removeIV)));
@@ -62,6 +62,14 @@ class ACE_Medical_Treatment_Actions {
         animationPatient = "";
         animationPatientUnconscious = "AinjPpneMstpSnonWrflDnon_rolltoback";
         animationPatientUnconsciousExcludeOn[] = {"ainjppnemstpsnonwrfldnon", "kat_recoveryposition"};
+    };
+    class DrawArterial: KAT_DrawBlood250 {
+        displayName = CSTRING(DrawArterial_Action_Use);
+        displayNameProgress = CSTRING(DrawBlood_Action_Progress);
+        treatmentTime = 10;
+        callbackSuccess = QFUNC(drawArterial);
+        condition = "true";
+        items[] = {"kat_IV_16"};
     };
 
     #include "Blood_Medical.hpp"

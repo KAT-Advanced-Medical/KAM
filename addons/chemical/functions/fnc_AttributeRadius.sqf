@@ -17,14 +17,14 @@
 params ["_control"];
 
 private _display = ctrlParent _control;
-private _logic = missionNamespace getVariable["BIS_fnc_initCuratorAttributes_target",objNull];
+private _logic = missionNamespace getVariable ["BIS_fnc_initCuratorAttributes_target",objNull];
 _control ctrlRemoveAllEventHandlers "SetFocus";
 
 private _sealCheckBox = _display displayCtrl 1613;
 private _sealText = _display displayCtrl 1614;
 private _placeText = _display displayCtrl 1616;
 // Specific onLoad stuff
-if!(isNull attachedTo _logic) then {
+if !(isNull attachedTo _logic) then {
     _sealCheckBox ctrlShow true;
     _sealText ctrlShow true;
 
@@ -76,14 +76,14 @@ private _fnc_onKeyUp = {
 };
 
 private _fnc_onCheckChange = {
-    params["_sealCheckBox"];
+    params ["_sealCheckBox"];
     _display = ctrlParent _sealCheckBox;
     private _canBeSealed = cbChecked(_display displayCtrl 1613);
     _display setVariable [QGVAR(ui_sealable),_canBeSealed];
 };
 
 private _fnc_onLBSelChange = {
-    params["_gasTypeCombo"];
+    params ["_gasTypeCombo"];
     _display = ctrlParent _gasTypeCombo;
     private _gastype = lbCurSel _gasTypeCombo;
     _display setVariable [QGVAR(ui_gastype),_gastype];

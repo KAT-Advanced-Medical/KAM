@@ -24,6 +24,8 @@
 params ["_medic", "_patient", "_source", "_defibClassname", ["_extraArgs",[]], ["_noLog", false]];
 _extraArgs params [["_placedAED",objNull]];
 
+if (_patient getVariable [QGVAR(DefibrillatorPads_Connected), false]) exitWith {};
+
 private _provider = objNull;
 private _soundSource = _medic;
 
@@ -137,7 +139,7 @@ if !(_noLog) then {
         [{ // Prompt to analyze after placing pads (AED)
             params ["_soundSource"];
 
-            playsound3D [QPATHTOF_SOUND(sounds\pushanalyze.wav), _soundSource, false, getPosASL _soundSource, 6, 1, 15];
+            playSound3D [QPATHTOF_SOUND(sounds\pushanalyze.wav), _soundSource, false, getPosASL _soundSource, 6, 1, 15];
         }, [_soundSource], 1] call CBA_fnc_waitAndExecute;
     };
 

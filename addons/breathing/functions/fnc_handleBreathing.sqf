@@ -33,10 +33,6 @@ if (!local _unit) then {
         [_idPFH] call CBA_fnc_removePerFrameHandler;
     };
 
-    if (!(_unit getVariable [QGVAR(lowSpO2ppActive), false]) && hasInterface && ACE_Player == _unit) then {
-        [QGVAR(lowSpO2pp), [_unit], _unit] call CBA_fnc_targetEvent;
-    };
-
     private _airway = true;
     private _breathing = true;
 

@@ -23,8 +23,7 @@ params ["_medic", "_patient", "_volume"];
 private _modStr = "ACE_";
 private _bloodtypeStr = "";
 private _bagVolumeStr = format ["_%1",_volume];
-private _volumeChange = _volume/1000;
-private _bloodVolume = (_patient getVariable [QACEGVAR(medical,bloodVolume), 6.0]);
+
 if (GVAR(bloodGroups)) then {
     _modStr = "kat_";
     _bloodtype = [_patient] call FUNC(bloodType);
@@ -32,4 +31,5 @@ if (GVAR(bloodGroups)) then {
 };
 private _itemStr = format ["%1bloodIV%2%3",_modStr,_bloodtypeStr,_bagVolumeStr];
 [_medic, _itemStr] call ACEFUNC(common,addToInventory);
-_patient setVariable [QACEGVAR(medical,bloodVolume), _bloodVolume - _volumeChange,true];
+
+REDUCE_TOTAL_BLOOD_VOLUME(_patient,_volume);

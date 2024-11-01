@@ -1,6 +1,6 @@
 class ACE_Medical_Treatment_Actions {
     class Diagnose;
-    class putonGasMask: Diagnose {
+    class PutOnGasMask: Diagnose {
         displayName = CSTRING(giveGasMask_action);
         displayNameProgress = CSTRING(giveGasMask_progress);
         allowedSelections[] = {"Head"};

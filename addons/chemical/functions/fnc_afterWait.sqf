@@ -14,7 +14,7 @@
 * NONE
 *
 * Example:
-* [player, logic, "Toxic", 50] call kat_chemical_fnc_afterWait;
+* [player, logic, 0, 50] call kat_chemical_fnc_afterWait;
 *
 * Public: No
 */
@@ -22,54 +22,52 @@
 params ["_unit", "_logic", "_gastype", "_radius_max"];
 
 if (!isDamageAllowed _unit) exitWith {
-    [_unit] call FUNC(clearChemicalInjuriesLocal);
+    [_unit] call FUNC(fullHealLocal);
 };
 
 if ((goggles _unit) in (missionNamespace getVariable [QGVAR(availGasmaskList), []])) then {
     private _isinGas = true;
     [
         {
-            params["_args", "_pfhHandler"];
+            params ["_args", "_pfhHandler"];
             _args params["_unit", "_logic", "_gastype", "_radius_max", "_isinGas"];
 
-            if !(_isinGas) exitwith {
+            if !(_isinGas) exitWith {
                 [_pfhHandler] call CBA_fnc_removePerFrameHandler;
             };
 
-            private _timeleft = _unit getVariable[QGVAR(gasmask_durability), 10];
-            _pos = _logic getVariable [QGVAR(gas_pos), [0, 0, 0]];
-            if (_unit distance _pos > _radius_max || !(_logic getVariable[QGVAR(gas_active), false]) || isNull _logic) exitwith {
-                _unit setVariable[QGVAR(enteredPoison), false, true];
+            private _timeleft = _unit getVariable [QGVAR(gasmask_durability), 10];
+            _pos = _logic getVariable [QGVAR(gas_position), [0, 0, 0]];
+            if (_unit distance _pos > _radius_max || !(_logic getVariable[QGVAR(gas_active), false]) || isNull _logic) exitWith {
+                _unit setVariable [QGVAR(enteredPoison), false, true];
                 _isinGas = false;
             };
 
             if !((goggles _unit) in (missionNamespace getVariable [QGVAR(availGasmaskList), []]) && _timeleft > 0) then {
                 _unit setVariable [QGVAR(poisonType), _gastype, true];
                 switch (_gastype) do {
-                    case "Toxic": {
-                        _unit setVariable [QGVAR(airPoisoning), true, true];
-                    };
-                    case "CS": {
+                    case 1: {
                         _unit setVariable [QGVAR(CS), true, true];
                         [_unit, _logic, _radius_max] call FUNC(handleCSGas);
                     };
+                    case 0: {
+                        _unit setVariable [QGVAR(airPoisoning), true, true];
+                    };
                 };
-                [_unit] call EFUNC(breathing,handleBreathing);
                 _isinGas = false;
             };
 
             if (_timeleft <= 0 && _unit getVariable [QGVAR(enteredPoison), false]) then {
                 _unit setVariable [QGVAR(poisonType), _gastype, true];
                 switch (_gastype) do {
-                    case "Toxic": {
-                        _unit setVariable [QGVAR(airPoisoning), true, true];
-                    };
-                    case "CS": {
+                    case 1: {
                         _unit setVariable [QGVAR(CS), true, true];
                         [_unit, _logic, _radius_max] call FUNC(handleCSGas);
                     };
+                    case 0: {
+                        _unit setVariable [QGVAR(airPoisoning), true, true];
+                    };
                 };
-                [_unit] call EFUNC(breathing,handleBreathing);
                 _isinGas = false;
             };
 
@@ -85,14 +83,13 @@ if ((goggles _unit) in (missionNamespace getVariable [QGVAR(availGasmaskList), [
     if (_unit getVariable [QGVAR(enteredPoison), false]) then {
         _unit setVariable [QGVAR(poisonType), _gastype, true];
         switch (_gastype) do {
-            case "Toxic": {
-                _unit setVariable [QGVAR(airPoisoning), true, true];
-            };
-            case "CS": {
+            case 1: {
                 _unit setVariable [QGVAR(CS), true, true];
                 [_unit, _logic, _radius_max] call FUNC(handleCSGas);
             };
+            case 0: {
+                _unit setVariable [QGVAR(airPoisoning), true, true];
+            };
         };
-        [_unit] call EFUNC(breathing,handleBreathing);
     };
 };

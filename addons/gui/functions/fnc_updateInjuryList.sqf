@@ -27,13 +27,13 @@ if (IS_BLEEDING(_target)) then {
     switch (ACEGVAR(medical_gui,showBleeding)) do {
         case 1: {
         //  Just show whether the unit is bleeding at all
-            _entries pushBack [localize ACELSTRING(medical_gui,STATUS_BLEEDING), [1, 0, 0, 1]];
+            _entries pushBack [localize ACELSTRING(medical_gui,Status_Bleeding), [1, 0, 0, 1]];
         };
         case 2: {
             // Give a qualitative description of the rate of bleeding
             private _cardiacOutput = [_target] call ACEFUNC(medical_status,getCardiacOutput);
             private _bleedRate = GET_BLOOD_LOSS(_target);
-            private _bleedRateKO = BLOOD_LOSS_KNOCK_OUT_THRESHOLD_DEFAULT * (_cardiacOutput max 0.05);
+            private _bleedRateKO = BLOOD_LOSS_KNOCK_OUT_THRESHOLD * (_cardiacOutput max 0.05);
             // Use nonzero minimum cardiac output to prevent all bleeding showing as massive during cardiac arrest
             switch (true) do {
                 case (_bleedRate < _bleedRateKO * BLEED_RATE_SLOW): {
@@ -52,7 +52,7 @@ if (IS_BLEEDING(_target)) then {
         };
     };
 } else {
-    _entries pushBack [localize ACELSTRING(medical_gui,NOBLEEDING), _nonissueColor];
+    _entries pushBack [localize ACELSTRING(medical_gui,Status_Nobleeding), _nonissueColor];
 };
 
 if (ACEGVAR(medical_gui,showBloodlossEntry)) then {
@@ -199,7 +199,13 @@ if (ACEGVAR(medical_gui,showDamageEntry)) then {
 
 // Indicate if a tourniquet is applied
 if (HAS_TOURNIQUET_ACTUAL(_target,_selectionN)) then {
-    _entries pushBack [localize ACELSTRING(medical_gui,Status_Tourniquet_Applied), [0.77, 0.51, 0.08, 1]];
+    _entries pushBack [format ["%1 [%2]", localize ACELSTRING(medical_gui,Status_Tourniquet_Applied), _target getVariable [QEGVAR(circulation,tourniquetTime), [0,0,0,0,0,0]] select _selectionN], [0.77, 0.51, 0.08, 1]];
+};
+
+private _warmerPlaced = _target getVariable [QEGVAR(hypothermia,fluidWarmer), [0,0,0,0,0,0]];
+
+if (_warmerPlaced select _selectionN == 1) then {
+    _entries pushBack [LELSTRING(hypothermia,LineWarmer), [1, 0.75, 0.18, 1]];
 };
 
 // Indicate current body part fracture status

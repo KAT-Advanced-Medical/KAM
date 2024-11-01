@@ -17,12 +17,26 @@
  * Public: No
  */
 
-params ["_medic", "_patient", "_bodyPart"];
+params ["_medic", "_patient", "_bodyPart", "_exit"];
 
 private _part = ALL_BODY_PARTS find toLower _bodyPart;
 private _activeFracture = GET_FRACTURES(_patient);
 private _fractureArray = _patient getVariable [QGVAR(fractures), [0,0,0,0,0,0]];
 private _liveFracture = _fractureArray select _part;
+
+if (_exit) exitWith {
+    if (_liveFracture < 2.5) then {
+        _liveFracture = 2;
+    } else {
+        _liveFracture = 3;
+    };
+
+    _fractureArray set [_part, _liveFracture];
+    _patient setVariable [QGVAR(fractures), _fractureArray, true];
+
+    [_patient, true] call ACEFUNC(dragging,setCarryable);
+    [_patient, true] call ACEFUNC(dragging,setDraggable);
+};
 
 if ((_liveFracture == 2.5) || (_liveFracture == 3.5)) exitWith {
     _liveFracture = 0;

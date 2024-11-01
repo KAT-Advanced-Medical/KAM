@@ -56,7 +56,6 @@ class CfgPatches {
 #include "CfgAmmo.hpp"
 #include "CfgCloudlets.hpp"
 #include "CfgMagazines.hpp"
-#include "CfgUIGrids.hpp"
 #include "CfgWeapons.hpp"
 #include "CfgVehicles.hpp"
 #include "CfgSounds.hpp"

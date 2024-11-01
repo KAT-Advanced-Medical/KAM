@@ -18,10 +18,10 @@
 */
 params ["_str", ["_cfg", "", [""]]];
 
-private _clipstring = _str splitstring ", ""[]()'";
+private _clipstring = _str splitString ", ""[]()'";
 private _array = [];
 {
-    if (isClass(configFile >> _cfg >> _x) || _cfg isEqualto "") then {
+    if (isClass(configFile >> _cfg >> _x) || _cfg isEqualTo "") then {
         _array pushBackUnique _x
     };
     nil

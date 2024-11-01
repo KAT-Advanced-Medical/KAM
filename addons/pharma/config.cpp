@@ -31,7 +31,8 @@ class CfgPatches {
             "kat_nalbuphine",
             "kat_flumazenil",
             "kat_lorazepam",
-            "kat_etomidate"
+            "kat_etomidate",
+            "kat_epinephrineIV"
         };
         magazines[] = { };
         requiredAddons[] = {

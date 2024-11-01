@@ -25,7 +25,7 @@ params ["_unit"];
     private _ui = GETUVAR(RscWeaponChemicalDetector,displayNull);
     private _obj = _ui displayCtrl 101;
 
-    if ("ChemicalDetector_01_watch_F" in (assigneditems _unit)) then
+    if ("ChemicalDetector_01_watch_F" in (assignedItems _unit)) then
     {
         private _percent = _unit getVariable [QGVAR(gasPercentage),0];
         private _thread = parseNumber (_percent toFixed 1);
@@ -48,7 +48,7 @@ params ["_unit"];
     params["_args", "_pfhHandler"];
     _args params ["_unit"];
 
-    if (_unit getVariable [QGVAR(chemDetectorState), false] && _unit getVariable [QGVAR(gasPercentage), 0] >= 0.1 && "ChemicalDetector_01_watch_F" in (assigneditems _unit)) then {
+    if (_unit getVariable [QGVAR(chemDetectorState), false] && _unit getVariable [QGVAR(gasPercentage), 0] >= 0.1 && "ChemicalDetector_01_watch_F" in (assignedItems _unit)) then {
         playSound3D [QPATHTOF(audio\chemDetector.ogg), _unit, false, getPosASL _unit, 4, 1, 10];
     };
 

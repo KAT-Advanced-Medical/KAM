@@ -1,11 +1,7 @@
 name = "KAM"
 prefix = "kat"
-author = "Katalam, Tomcat, Kygan, YetheSamartaka, Battlekeeper, MJSTIC, Digii / Julian and MiszczuZPolski"
+author = "Katalam, Tomcat, Kygan, YetheSamartaka, Battlekeeper, MJSTIC, Digii / Julian, MiszczuZPolski and Blue"
 mainprefix = "x"
-
-#modname = "{{prefix}}_mods"
-#key_name = "{{prefix}}_{{version}}"
-#authority = "{{prefix}}_{{version}}"
 
 [files]
 include = [
@@ -19,35 +15,3 @@ include = [
 
 [version]
 git_hash = 0
-
-#[properties]
-#version = "{{git \"id 8\"}}"
-
-[lint.sqf]
-enabled = true # Default: true
-exclude = [
-    "a3/3DEN/UI/macroexecs.inc",
-    "a3/ui_f/hpp/defineResincl.inc",
-    "a3/ui_f/hpp/defineDIKCodes.inc",
-    "a3/ui_f/hpp/defineCommonGrids.inc",
-    "a3/ui_f/hpp/defineCommonColors.inc",
-]
-
-
-
-[asc]
-enabled = true
-exclude = [
-    "/initsettings.sqf",
-    "/initkeybinds.sqf",
-    "/xeh_prep.sqf"
-]
-
-[hemtt.config]
-preset = "Hemtt"
-
-[hemtt.launch]
-workshop = [
-    "450814997", # CBA_A3's Workshop ID
-    "463939057", # ACE3's Workshop ID
-]

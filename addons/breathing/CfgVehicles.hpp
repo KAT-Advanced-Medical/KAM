@@ -4,7 +4,7 @@ class CfgVehicles {
     class kat_PulseoximeterItem: Item_Base_F {
         scope = 2;
         scopeCurator = 2;
-        displayName= CSTRING(Pulseoximeter_Desc_Short);
+        displayName= CSTRING(Pulseoximeter);
         author = "Katalam";
         vehicleClass = "Items";
         class TransportItems {

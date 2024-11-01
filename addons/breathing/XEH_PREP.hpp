@@ -1,8 +1,6 @@
 PREP(canUseBVM);
 PREP(checkBreathing);
 PREP(checkPulseOximeter);
-PREP(getETCo2);
-PREP(getRespiratoryRate);
 PREP(fullHealLocal);
 PREP(gui_updateBodyImage);
 PREP(gui_updateInjuryListPart);
@@ -17,7 +15,6 @@ PREP(inflictAdvancedPneumothorax);
 PREP(init);
 PREP(inspectChest);
 PREP(listenLungs);
-PREP(lowSpO2pp);
 PREP(refillOxygenTank);
 PREP(treatmentAdvanced_chestSeal);
 PREP(treatmentAdvanced_chestSealLocal);

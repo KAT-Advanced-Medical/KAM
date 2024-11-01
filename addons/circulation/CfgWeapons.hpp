@@ -1,3 +1,19 @@
+#define KAT_bloodSample_ITEM(SAMPLEBASE,SAMPLEID) \
+    class SAMPLEBASE##_##SAMPLEID: SAMPLEBASE { \
+        scope = 1; \
+        scopeArsenal = 0; \
+        scopeCurator = 0; \
+        nameID = SAMPLEID; \
+    }
+
+#define KAT_bloodResult_ITEM(RESULTBASE,RESULTID) \
+    class RESULTBASE##_##RESULTID: RESULTBASE { \
+        scope = 1; \
+        scopeArsenal = 0; \
+        scopeCurator = 0; \
+        testID = RESULTID; \
+    }
+
 class CfgWeapons {
     class ACE_ItemCore;
     class CBA_MiscItem_ItemInfo;
@@ -139,4 +155,64 @@ class CfgWeapons {
             mass = 0.1;
         };
     };
+    class KAT_bloodSample: ACE_ItemCore {
+        author = "Mazinski";
+        scope = 0;
+        displayName = CSTRING(sampleItemName);
+        model = "\A3\Structures_F_EPA\Items\Medical\Defibrillator_F.p3d";
+        picture = QPATHTOF(ui\bloodIV_empty_ca.paa);
+        class ItemInfo: CBA_MiscItem_ItemInfo {
+            mass = 0;
+        };
+    };
+    class KAT_bloodResult: ACE_ItemCore {
+        author = "Mazinski";
+        scope = 0;
+        displayName = CSTRING(resultItemName);
+        model = "\A3\Structures_F_EPA\Items\Medical\Defibrillator_F.p3d";
+        picture = QPATHTOF(ui\bloodIV_empty_ca.paa);
+        class ItemInfo: CBA_MiscItem_ItemInfo {
+            mass = 0;
+        };
+    };
+    KAT_bloodSample_ITEM(KAT_bloodSample,1);
+    KAT_bloodSample_ITEM(KAT_bloodSample,2);
+    KAT_bloodSample_ITEM(KAT_bloodSample,3);
+    KAT_bloodSample_ITEM(KAT_bloodSample,4);
+    KAT_bloodSample_ITEM(KAT_bloodSample,5);
+    KAT_bloodSample_ITEM(KAT_bloodSample,6);
+    KAT_bloodSample_ITEM(KAT_bloodSample,7);
+    KAT_bloodSample_ITEM(KAT_bloodSample,8);
+    KAT_bloodSample_ITEM(KAT_bloodSample,9);
+    KAT_bloodSample_ITEM(KAT_bloodSample,10);
+    KAT_bloodSample_ITEM(KAT_bloodSample,11);
+    KAT_bloodSample_ITEM(KAT_bloodSample,12);
+    KAT_bloodSample_ITEM(KAT_bloodSample,13);
+    KAT_bloodSample_ITEM(KAT_bloodSample,14);
+    KAT_bloodSample_ITEM(KAT_bloodSample,15);
+    KAT_bloodSample_ITEM(KAT_bloodSample,16);
+    KAT_bloodSample_ITEM(KAT_bloodSample,17);
+    KAT_bloodSample_ITEM(KAT_bloodSample,18);
+    KAT_bloodSample_ITEM(KAT_bloodSample,19);
+    KAT_bloodSample_ITEM(KAT_bloodSample,20);
+    KAT_bloodResult_ITEM(KAT_bloodResult,1);
+    KAT_bloodResult_ITEM(KAT_bloodResult,2);
+    KAT_bloodResult_ITEM(KAT_bloodResult,3);
+    KAT_bloodResult_ITEM(KAT_bloodResult,4);
+    KAT_bloodResult_ITEM(KAT_bloodResult,5);
+    KAT_bloodResult_ITEM(KAT_bloodResult,6);
+    KAT_bloodResult_ITEM(KAT_bloodResult,7);
+    KAT_bloodResult_ITEM(KAT_bloodResult,8);
+    KAT_bloodResult_ITEM(KAT_bloodResult,9);
+    KAT_bloodResult_ITEM(KAT_bloodResult,10);
+    KAT_bloodResult_ITEM(KAT_bloodResult,11);
+    KAT_bloodResult_ITEM(KAT_bloodResult,12);
+    KAT_bloodResult_ITEM(KAT_bloodResult,13);
+    KAT_bloodResult_ITEM(KAT_bloodResult,14);
+    KAT_bloodResult_ITEM(KAT_bloodResult,15);
+    KAT_bloodResult_ITEM(KAT_bloodResult,16);
+    KAT_bloodResult_ITEM(KAT_bloodResult,17);
+    KAT_bloodResult_ITEM(KAT_bloodResult,18);
+    KAT_bloodResult_ITEM(KAT_bloodResult,19);
+    KAT_bloodResult_ITEM(KAT_bloodResult,20);
 };

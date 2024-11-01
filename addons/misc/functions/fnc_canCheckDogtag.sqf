@@ -20,6 +20,7 @@ params ["", "_target"];
 
 if (isNull _target) exitWith {false};
 
-// check if disabled for faction
-if ([ACEGVAR(dogtags,disabledFactions) getVariable faction _target] param [0, false]) exitWith {false};
-true
+// Check if disabled for faction
+if ((faction _target) in ACEGVAR(dogtags,disabledFactions)) exitWith {false};
+
+!(_target call ACEFUNC(common,isAwake))

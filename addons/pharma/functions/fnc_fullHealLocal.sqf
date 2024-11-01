@@ -28,15 +28,31 @@ TRACE_1("fullHealLocal",_patient);
 
 GVAR(cardiacArrestBleedRate) = ACEGVAR(medical,const_minCardiacOutput) * EGVAR(circulation,cardiacArrestBleedRate);
 _patient setVariable [QGVAR(alphaAction), 1, true];
+
 _patient setVariable [QGVAR(IV), [0,0,0,0,0,0], true];
+
+if (GVAR(RequireInsIV) && GVAR(IVflowControl)) then {
+    _patient setVariable [QGVAR(IVflow), [0,0,0,0,0,0], true];
+} else {
+    _patient setVariable [QGVAR(IVflow), [1,1,1,1,1,1], true];
+};
+
 _patient setVariable [QGVAR(IVpfh), [0,0,0,0,0,0], true];
 _patient setVariable [QGVAR(active), false, true];
 _patient setVariable [QGVAR(IVPharma_PFH), nil, true];
-_patient setVariable [QGVAR(pH), 1500, true];
+
+_patient setVariable [QGVAR(IVmenuActive), false, true];
+
+_patient setVariable [QGVAR(externalPh), 0, true];
+_patient setVariable [QGVAR(pH), 0, true];
+
+_patient setVariable [QGVAR(opioidFactor), 0, true];
+
 _patient setVariable [QGVAR(kidneyFail), false, true];
 _patient setVariable [QGVAR(kidneyArrest), false, true];
 _patient setVariable [QGVAR(kidneyPressure), false, true];
-_patient setVariable [QGVAR(coagulationFactor), 10, true];
+
+_patient setVariable [QGVAR(coagulationFactor), missionNamespace getVariable [QGVAR(coagulation_factor_count), 30], true];
 
 /// Clear Stamina & weapon sway
 if (ACEGVAR(advanced_fatigue,enabled)) then {
@@ -54,29 +70,6 @@ if (ACEGVAR(advanced_fatigue,enabled)) then {
 /// Clear chroma effect & camera shake
 if (hasInterface) then {
     resetCamShake;
-    ["ChromAberration", 200, [ 0, 0, true ]] spawn {
-        params["_name", "_priority", "_effect", "_handle"];
-        while {
-            _handle = ppEffectCreate[_name, _priority];
-            _handle < 0
-        } do {
-            _priority = _priority + 1;
-        };
-        _handle ppEffectEnable true;
-        _handle ppEffectAdjust _effect;
-        _handle ppEffectCommit 0;
-        [
-            {
-                params["_handle"];
-                ppEffectCommitted _handle
-            },
-            {
-                params["_handle"];
-                _handle ppEffectEnable false;
-                ppEffectDestroy _handle;
-            },
-        [_handle]] call CBA_fnc_waitUntilAndExecute;
-    };
 };
 
 // Reenable ace fatige animationspeed override

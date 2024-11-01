@@ -45,7 +45,7 @@ class ACE_Medical_Treatment_Actions {
         items[] = {"kat_plate"};
         consumeItem = 1;
         condition = QUOTE([ARR_4(_medic,_patient,_bodyPart,3.5)] call FUNC(openReductionCheck));
-        callbackSuccess = QFUNC(openReduction);
+        callbackSuccess = QUOTE([ARR_4(_medic,_patient,_bodyPart,false)] call FUNC(openReduction));
     };
     class Expose: BasicBandage {
         displayName = CSTRING(Retractor_Use);
@@ -101,6 +101,20 @@ class ACE_Medical_Treatment_Actions {
         condition = QUOTE([ARR_4(_medic,_patient,_bodyPart,2.3)] call FUNC(openReductionCheck));
         callbackSuccess = QUOTE([ARR_4(_medic,_patient,_bodyPart,2.3)] call FUNC(openReductionProgress));
     };
+    class ResetSurgery: CheckFracture {
+        displayName = CSTRING(Reset_Surgery);
+        displayNameProgress = CSTRING(perform);
+        category = "surgery";
+        treatmentLocations = QGVAR(surgicalLocation);
+        allowedSelections[] = {"LeftArm", "RightArm", "LeftLeg", "RightLeg"};
+        allowSelfTreatment = 0;
+        medicRequired = QGVAR(surgicalAction_MedLevel);
+        treatmentTime = QGVAR(openTime);
+        items[] = {"ACE_surgicalKit"};
+        consumeItem = 1;
+        condition = QUOTE(([ARR_4(_medic,_patient,_bodyPart,2)] call FUNC(openReductionCheck)) && (GVAR(enable_fracture)));
+        callbackSuccess = QUOTE([ARR_4(_medic,_patient,_bodyPart,true)] call FUNC(openReduction));
+    };
     class NPWT: BasicBandage {
         displayName = CSTRING(Vacuum_Use);
         displayNameProgress = CSTRING(Vacuum_Action);
@@ -121,11 +135,11 @@ class ACE_Medical_Treatment_Actions {
         displayName = CSTRING(Ultra_Use);
         displayNameProgress = CSTRING(Ultra_Action);
         category = "surgery";
-        treatmentLocations = QGVAR(surgicalLocation);
+        treatmentLocations = QGVAR(ultrasoundLocation);
         allowedSelections[] = {"Body"};
         allowSelfTreatment = 0;
-        medicRequired = QGVAR(surgicalAction_MedLevel);
-        treatmentTime = QGVAR(intermediateTime);
+        medicRequired = QGVAR(ultrasoundAction_MedLevel);
+        treatmentTime = QGVAR(ultrasoundTime);
         items[] = {"kat_ultrasound"};
         condition = "";
         consumeItem = 0;
@@ -135,11 +149,11 @@ class ACE_Medical_Treatment_Actions {
         displayName = CSTRING(Reboa_Use);
         displayNameProgress = CSTRING(Reboa_Action);
         category = "surgery";
-        treatmentLocations = QGVAR(surgicalLocation);
+        treatmentLocations = QGVAR(reboaLocation);
         allowedSelections[] = {"LeftLeg", "RightLeg"};
         allowSelfTreatment = 0;
-        medicRequired = QGVAR(surgicalAction_MedLevel);
-        treatmentTime = QGVAR(intermediateTime);
+        medicRequired = QGVAR(reboa_MedLevel);
+        treatmentTime = QGVAR(reboaTime);
         items[] = {"kat_reboa"};
         condition = QUOTE((_patient getVariable [ARR_2(QQGVAR(imaging),false)]) && (!(_patient getVariable [ARR_2(QQGVAR(reboa),false)])));
         consumeItem = 1;
@@ -149,11 +163,11 @@ class ACE_Medical_Treatment_Actions {
         displayName = CSTRING(Reboa_Deep_Use);
         displayNameProgress = CSTRING(Reboa_Deep_Action);
         category = "surgery";
-        treatmentLocations = QGVAR(surgicalLocation);
+        treatmentLocations = QGVAR(reboaLocation);
         allowedSelections[] = {"LeftLeg", "RightLeg"};
         allowSelfTreatment = 0;
-        medicRequired = QGVAR(surgicalAction_MedLevel);
-        treatmentTime = QGVAR(intermediateTime);
+        medicRequired = QGVAR(reboa_MedLevel);
+        treatmentTime = QGVAR(reboaTime);
         items[] = {"kat_ultrasound"};
         condition = QUOTE(_patient getVariable [ARR_2(QQGVAR(reboa),false)]);
         consumeItem = 0;
@@ -163,11 +177,11 @@ class ACE_Medical_Treatment_Actions {
         displayName = CSTRING(Reboa_Remove_Use);
         displayNameProgress = CSTRING(Reboa_Remove_Action);
         category = "surgery";
-        treatmentLocations = QGVAR(reboaTime);
+        treatmentLocations = QGVAR(reboaLocation);
         allowedSelections[] = {"LeftLeg", "RightLeg"};
         allowSelfTreatment = 0;
-        medicRequired = QGVAR(surgicalAction_MedLevel);
-        treatmentTime = QGVAR(intermediateTime);
+        medicRequired = QGVAR(reboa_MedLevel);
+        treatmentTime = QGVAR(reboaTime);
         items[] = {"kat_ultrasound"};
         condition = QUOTE(_patient getVariable [ARR_2(QQGVAR(reboa),false)]);
         consumeItem = 0;
@@ -177,11 +191,11 @@ class ACE_Medical_Treatment_Actions {
         displayName = CSTRING(Pericardial_Tap_Use);
         displayNameProgress = CSTRING(Pericardial_Tap_Action);
         category = "surgery";
-        treatmentLocations = QGVAR(surgicalLocation);
+        treatmentLocations = QGVAR(pericardialtapLocation);
         allowedSelections[] = {"Body"};
         allowSelfTreatment = 0;
-        medicRequired = QGVAR(surgicalAction_MedLevel);
-        treatmentTime = QGVAR(intermediateTime);
+        medicRequired = QGVAR(pericardialtapAction_MedLevel);
+        treatmentTime = QGVAR(pericardialtapTime);
         items[] = {"kat_ultrasound"};
         condition = QUOTE(_patient getVariable [ARR_2(QQGVAR(imaging),false)]);
         consumeItem = 0;
