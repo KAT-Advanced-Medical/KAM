@@ -95,7 +95,7 @@ private _pALVo2 = ((_fio2 * (_baroPressure - 47)) - (_paco2 / _anerobicPressure)
 private _pao2 = (DEFAULT_PAO2 - ((DEFAULT_ECB / ((GET_BODY_FLUID(_unit) select 0) max 100)) * ((_demandVentilation - _actualVentilation) / 120))) min _pALVo2;
 
 // PaO2 moves in controlled steps to prevent hard movements when Ventilation Demand spikes
-_pao2 = if (_previousCyclePao2 != _pao2) then { ([ _previousCyclePao2 - (PAO2_MAX_CHANGE * _deltaT) , _previousCyclePao2 + (PAO2_MAX_CHANGE * _deltaT)] select ((_previousCyclePao2 - _pao2) < 0)) } else { _pao2 };
+_pao2 = if (_previousCyclePao2 != _pao2) then { ([ (_previousCyclePao2 - ((PAO2_MAX_CHANGE * EGVAR(breathing,SpO2_MultiplyNegative)) * _deltaT)) , (_previousCyclePao2 + ((PAO2_MAX_CHANGE * EGVAR(breathing,SpO2_MultiplyPositive)) * _deltaT))] select ((_previousCyclePao2 - _pao2) < 0)) } else { _pao2 };
 
 // Oxy-Hemo Dissociation Curve, driven by PaO2 with shaping done by pH 
 private _o2Sat = ((_pao2 max 1)^2.7 / ((25 - (((_pH / DEFAULT_PH) - 1) * 150))^2.7 + _pao2^2.7)) min 0.999;
