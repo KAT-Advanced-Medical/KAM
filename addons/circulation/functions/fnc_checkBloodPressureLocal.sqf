@@ -33,7 +33,7 @@ _bloodPressure params ["_bloodPressureLow", "_bloodPressureHigh"];
 if (_bloodPressureLow > 40) then {
     if (_medic call ACEFUNC(medical_treatment,isMedic)) then {
         _bloodPressureOutput = LSTRING(Check_Bloodpressure_Output_Palp);
-        _logOutput = format [localize "STR_KAT_Circulation_Bloodpressure_Output_Palp", round ((_bloodPressureLow / 10) * 10) + (if (random 1 > 0.5) then {10} else {-10})];
+        _logOutput = format [localize "STR_KAT_Circulation_Bloodpressure_Output_Palp", (round (_bloodPressureLow / 10) * 10) + (if (random 1 > 0.5) then {10} else {-10})];
     } else {
         if (_bloodPressureHigh > 20) then {
             _bloodPressureOutput = ACELSTRING(medical_treatment,Check_Bloodpressure_Output_2);
