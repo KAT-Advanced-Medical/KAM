@@ -41,7 +41,7 @@ private _previousCyclePao2 = (_bloodGas select 1);
 if (IN_CRDC_ARRST(_unit)) then { 
     // When in arrest, there should be no effecive breaths but still a minimum O2 demand. Zero O2 demand would mean a dead patient. Actual ventilation is 1 to prevent issues in the gas tension functions
     _demandVentilation = MINIMUM_VENTILATION;
-    _respiratoryRate = 0;
+    _respiratoryRate = [0, 20] select (_unit getVariable [QEGVAR(breathing,BVMInUse), false]);
     _actualVentilation = 1;
 } else {
     // Ventilatory Demand comes from Heart Rate with increase demand from PaCO2 levels 
@@ -83,6 +83,7 @@ private _fio2 = switch (true) do {
     case ((_unit getVariable [QEGVAR(airway,occluded), false]) || (_unit getVariable [QEGVAR(airway,obstruction), false])): { 
         [0, DEFAULT_FIO2] select ((_unit getVariable [QEGVAR(airway,recovery), false]) || (_unit getVariable [QEGVAR(airway,overstretch), false])) 
     };
+    case ((_respiratoryRate == 0) && (EGVAR(breathing,SpO2_perfusion))): { 0 };
     case ((_unit getVariable [QEGVAR(chemical,airPoisoning), false]) || (_unit getVariable [QEGVAR(breathing,tensionpneumothorax), false]) || (_unit getVariable [QEGVAR(breathing,hemopneumothorax), false])): { 0 };
     case (_unit getVariable [QEGVAR(breathing,oxygenTankConnected), false]): { 1 };
     default { DEFAULT_FIO2 };
@@ -94,8 +95,9 @@ private _pALVo2 = ((_fio2 * (_baroPressure - 47)) - (_paco2 / _anerobicPressure)
 // PaO2 cannot be higher than PALVO2 and comes from ventilation shortage multipled by RBC volume
 private _pao2 = (DEFAULT_PAO2 - ((DEFAULT_ECB / ((GET_BODY_FLUID(_unit) select 0) max 500)) * ((_demandVentilation - _actualVentilation) / 120))) min _pALVo2;
 
+private _arrestPerfusion = [1, (1 * EGVAR(breathing,SpO2_PerfusionMultiplier))] select ((IN_CRDC_ARRST(_unit)) && (EGVAR(breathing,SpO2_perfusion)));
 // PaO2 moves in controlled steps to prevent hard movements when Ventilation Demand spikes
-_pao2 = if (_previousCyclePao2 != _pao2) then { ([ (_previousCyclePao2 - ((PAO2_MAX_CHANGE * EGVAR(breathing,SpO2_MultiplyNegative)) * _deltaT)) , (_previousCyclePao2 + ((PAO2_MAX_CHANGE * EGVAR(breathing,SpO2_MultiplyPositive)) * _deltaT))] select ((_previousCyclePao2 - _pao2) < 0)) } else { _pao2 };
+_pao2 = if (_previousCyclePao2 != _pao2) then { ([ (_previousCyclePao2 - ((PAO2_MAX_CHANGE * EGVAR(breathing,SpO2_MultiplyNegative) * _arrestPerfusion) * _deltaT)) , (_previousCyclePao2 + ((PAO2_MAX_CHANGE * EGVAR(breathing,SpO2_MultiplyPositive)) * _deltaT))] select ((_previousCyclePao2 - _pao2) < 0)) } else { _pao2 };
 
 // Oxy-Hemo Dissociation Curve, driven by PaO2 with shaping done by pH 
 private _o2Sat = ((_pao2 max 1)^2.7 / ((25 - (((_pH / DEFAULT_PH) - 1) * 150))^2.7 + _pao2^2.7)) min 0.999;
