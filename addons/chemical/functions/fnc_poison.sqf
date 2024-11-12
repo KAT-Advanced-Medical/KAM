@@ -39,7 +39,7 @@ if ((goggles _unit in (missionNamespace getVariable [QGVAR(availGasmaskList), []
 
 switch (_gasLevel) do {
     case 0: {
-        _unit setVariable [QGVAR(CSGas), true, true];
+        _unit setVariable [QGVAR(CSGas), 30, true];
     };
     case 1: {
         _unit setVariable [QGVAR(airPoisoning), true, true];

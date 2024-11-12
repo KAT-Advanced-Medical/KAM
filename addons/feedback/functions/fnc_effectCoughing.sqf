@@ -39,6 +39,7 @@ _delayedAdjust = [_intensity * 0.15, _intensity * 0.15, true];
 
 GVAR(airPoisoning) ppEffectAdjust _initialAdjust;
 GVAR(airPoisoning) ppEffectCommit FX_COUGH_FADE_IN;
+
 [{
     params ["_adjust"];
     GVAR(airPoisoning) ppEffectAdjust _adjust;

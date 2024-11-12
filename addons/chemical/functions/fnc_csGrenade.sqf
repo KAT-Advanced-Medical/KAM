@@ -39,23 +39,12 @@ params ["_projectile", "_timeToLive", "_center"];
 
 private _position = position _projectile;
 
-// --- AI
-private _nearLocalEnemies = [];
-
+// Alert nearby hostile AI
 {
-    {
-        if (local _x && {[_center, side _x] call BIS_fnc_sideIsEnemy}) then { // WE WANT THE OBJECTS SIDE HERE!
-            _nearLocalEnemies pushBackUnique _x;
-        };
-    } forEach crew _x;
-} forEach (_position nearObjects ALERT_NEAR_ENEMY_RANGE);
-
-{
-    if (behaviour _x in ["SAFE", "AWARE"]) then {
+    if (local _x && {[_center, side group _x] call BIS_fnc_sideIsEnemy} && {behaviour _x in ["SAFE", "AWARE"]}) then { // WE WANT THE OBJECT'S SIDE HERE!
         _x setBehaviour "COMBAT";
     };
-} forEach _nearLocalEnemies;
-
+} forEach ([_position, ALERT_NEAR_ENEMY_RANGE, ALERT_NEAR_ENEMY_RANGE, 0, false] nearEntities [["CAManBase"], false, true, true]);
 
 private _particleSource = "#particlesource" createVehicleLocal _position;
 

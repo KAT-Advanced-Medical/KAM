@@ -46,11 +46,6 @@
 
         _x setVariable [QGVAR(areaIntensity), _intensity, true];
 
-        // Don't poison if already poisoned
-        // if (_x getVariable [QGVAR(poisoned), false]) then {
-        //     continue;
-        // };
-
         [QGVAR(poison), [_x, _gasLevel], _x] call CBA_fnc_targetEvent;
 
     } forEach nearestObjects [_gasLogic, ["CAManBase"], _radius];

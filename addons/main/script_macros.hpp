@@ -341,5 +341,5 @@
 #define VAR_PP QEGVAR(feedback,ppEffect)
 #define GET_PP(unit) (unit getVariable [VAR_PP, 0])
 
-#define IS_POISONED(unit) (unit getVariable [QEGVAR(chemical,airPoisoning), false])
-#define IN_TEARGAS(unit) (unit getVariable [QEGVAR(chemical,CSGas), false])
+#define IS_AIRPOISONED(unit) (unit getVariable [QEGVAR(chemical,airPoisoning), false])
+#define IN_TEARGAS(unit) (unit getVariable [QEGVAR(chemical,CSGas), 0])

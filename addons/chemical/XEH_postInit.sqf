@@ -92,7 +92,7 @@ GVAR(gasSources) = createHashMap;
     };
 
     if (_isSealable) then {
-        private _jidID = [QGVAR(addSealAction), [_source, _gasLogic, _key]] call CBA_fnc_globalEventJIP;
+        private _jipID = [QGVAR(addSealAction), [_source, _gasLogic, _key]] call CBA_fnc_globalEventJIP;
         [_jipID, _source] call CBA_fnc_removeGlobalEventJIP;
         _source setVariable [QGVAR(sealable), true, true];
     };

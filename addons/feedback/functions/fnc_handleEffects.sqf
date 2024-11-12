@@ -27,7 +27,7 @@ BEGIN_COUNTER(handleEffects);
 private _opioid          = GET_PP(ACE_player);
 private _spO2             = GET_KAT_SPO2(ACE_player);
 private _unconscious      = IS_UNCONSCIOUS(ACE_player);
-private _poisoned = IS_POISONED(ACE_player);
+private _poisoned = IS_AIRPOISONED(ACE_player);
 private _tear = IN_TEARGAS(ACE_player);
 
 // - Visual effects -----------------------------------------------------------

@@ -19,6 +19,5 @@ params ["_patient"];
 TRACE_1("fullHealLocal kat chemical",_patient);
 
 _patient setVariable [QGVAR(gasmask_durability), 10, true];
-if (_patient getVariable [QGVAR(painEffect),0] != 0) then {
-    KAT_PAIN_EFFECT ppEffectEnable false;
-};
+_patient setVariable [QGVAR(CSGas), 0, true];
+_patient setVariable [QGVAR(airPoisoning), false, true];
