@@ -40,6 +40,9 @@ if ((goggles _unit in (missionNamespace getVariable [QGVAR(availGasmaskList), []
 switch (_gasLevel) do {
     case 0: {
         _unit setVariable [QGVAR(CSGas), 30, true];
+        if (random 1 <= GVAR(tearGasDropChance)) then {
+            [QACEGVAR(hitreactions,dropWeapon), _unit, _unit] call CBA_fnc_targetEvent;
+        };
     };
     case 1: {
         _unit setVariable [QGVAR(airPoisoning), true, true];
