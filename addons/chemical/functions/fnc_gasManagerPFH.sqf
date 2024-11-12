@@ -44,7 +44,7 @@
         // Calculate the intensity as a normalized value (1 at center, 0 at the edge)
         private _intensity = 1 - (_distance / _radius);
 
-        [QGVAR(isInGasArea), [_x, _intensity], _x] call CBA_fnc_targetEvent;
+        _x setVariable [QGVAR(areaIntensity), _intensity, true];
 
         // Don't poison if already poisoned
         // if (_x getVariable [QGVAR(poisoned), false]) then {

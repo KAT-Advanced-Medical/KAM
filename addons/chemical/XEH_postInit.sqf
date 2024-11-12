@@ -5,7 +5,6 @@
 [QGVAR(poison), LINKFUNC(poison)] call CBA_fnc_addEventHandler;
 [QGVAR(handleGasMaskDur), LINKFUNC(handleGasMaskDur)] call CBA_fnc_addEventHandler;
 [QGVAR(addSealAction), LINKFUNC(createSealAction)] call CBA_fnc_addEventHandler;
-[QGVAR(isInGasArea), LINKFUNC(gasDetector)] call CBA_fnc_addEventHandler;
 
 // ACE Events
 [QACEGVAR(medical_gui,updateInjuryListGeneral), LINKFUNC(gui_updateInjuryListGeneral)] call CBA_fnc_addEventHandler;

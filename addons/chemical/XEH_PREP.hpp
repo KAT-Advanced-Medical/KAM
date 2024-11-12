@@ -11,7 +11,6 @@ PREP(createSealAction);
 PREP(csGrenade);
 PREP(displayGasMaskDur);
 PREP(fullHealLocal);
-PREP(gasDetector);
 PREP(gasManagerPFH);
 PREP(gasmodule);
 PREP(GasTripEffect);
