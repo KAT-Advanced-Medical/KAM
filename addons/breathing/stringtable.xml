@@ -2650,5 +2650,11 @@
             <Spanish>%1 retiró la cánula nasal</Spanish>
             <Dutch>%1 verwijderde nasale canule</Dutch>
         </Key>
+        <Key ID="STR_KAT_Breathing_SETTING_enableCheckBreathing">
+            <English>Enable Check Breathing</English>
+        </Key>
+        <Key ID="STR_KAT_Breathing_SETTING_enableCheckBreathing_DESC">
+            <English>Whether or not Check Breathing medical action is enabled</English>
+        </Key>
     </Package>
 </Project>

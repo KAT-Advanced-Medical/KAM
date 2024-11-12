@@ -35,7 +35,7 @@ if (_bloodPressureL < 50 || {_bloodPressureH < 60}) exitWith { false };
 private _heartRate = GET_HEART_RATE(_unit);
 if (_heartRate < 40) exitWith { false };
 
-private _o2 = GET_SPO2(_unit);
+private _o2 = GET_KAT_SPO2(_unit);
 if (_o2 < EGVAR(breathing,Stable_spo2)) exitWith { false };
 
 true

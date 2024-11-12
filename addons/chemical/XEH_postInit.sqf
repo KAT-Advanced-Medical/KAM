@@ -29,6 +29,19 @@ private _items = missionNamespace getVariable [QGVAR(availGasmask), "'G_AirPurif
 private _array = [_items, "CfgGlasses"] call FUNC(getList);
 missionNamespace setVariable [QGVAR(availGasmaskList), _array, true];
 
+["KAT_ChemicalDetector", QGVAR(showChemDetector), "Show Chemical Detector", {
+    // Conditions: canInteract
+    if (!([ACE_player, objNull, ["isNotEscorting", "isNotInside"]] call ACEFUNC(common,canInteractWith)) || {!('KAT_ChemicalDetector' in assignedItems ACE_player)}) exitWith { false };
+
+    if !(GETMVAR(GVAR(ChemDetectorActive),false)) then {
+        [ACE_player] call FUNC(showChemDetector);
+    } else {
+        call FUNC(hideChemDetector);
+    };
+
+    true
+}, { false }, [24, [false, false, false]], false] call CBA_fnc_addKeybind;
+
 if (!isServer) exitWith {};
 
 GVAR(gasSources) = createHashMap;
@@ -103,5 +116,4 @@ GVAR(gasSources) = createHashMap;
 }] call CBA_fnc_addEventHandler;
 
 [LINKFUNC(gasManagerPFH), GAS_MANAGER_PFH_DELAY, []] call CBA_fnc_addPerFrameHandler;
-
 

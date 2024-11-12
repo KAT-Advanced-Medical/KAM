@@ -103,7 +103,7 @@ private _altitude = _display displayCtrl 22007;
     };
 
     _hr ctrlSetText ([GET_HEART_RATE(_unit), 1, 0] call CBA_fnc_formatNumber);
-    _o2 ctrlSetText ([GET_SPO2(_unit), 1, 0] call CBA_fnc_formatNumber);
+    _o2 ctrlSetText ([GET_KAT_SPO2(_unit), 1, 0] call CBA_fnc_formatNumber);
 
     switch (true) do {
         case(rain != 0): { _rain ctrlShow true; _overcast ctrlShow false; _sun ctrlShow false; };

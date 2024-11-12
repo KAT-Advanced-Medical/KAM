@@ -18,6 +18,16 @@ PREP_RECOMPILE_END;
     true
 ] call CBA_Settings_fnc_init;
 
+//Enable Check Breathing medical action
+[
+    QGVAR(enableCheckBreathing),
+    "CHECKBOX",
+    [LLSTRING(SETTING_enableCheckBreathing),LLSTRING(SETTING_enableCheckBreathing_DESC)],
+    [CBA_SETTINGS_CAT, ELSTRING(GUI,SubCategory_Basic)],
+    [true],
+    true
+] call CBA_Settings_fnc_init;
+
 // Lethal SpO2 value
 [
     QGVAR(SpO2_dieValue),

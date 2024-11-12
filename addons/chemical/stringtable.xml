@@ -181,6 +181,12 @@
             <Russian>Герметик, который используется для герметизации предметов, например, при утечке токсичного вещества</Russian>
             <Dutch>Afdichtmiddel dat gebruikt wordt om een object te dichten wanneer er bijvoorbeeld een giftige stof lekt</Dutch>
         </Key>
+        <Key ID="STR_KAT_Chemical_ChemicalDetectorDisplayName">
+            <English>JCAD Chemical Detector</English>
+        </Key>
+        <Key ID="STR_KAT_Chemical_ChemicalDetectorDescription">
+            <English>Used to detect KAT toxic chemicals</English>
+        </Key>
         <Key ID="STR_KAT_Chemical_giveGasMask_action">
             <English>Put on gas mask</English>
             <Spanish>Poner mascara de gas</Spanish>
