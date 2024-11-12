@@ -11,10 +11,42 @@
  * None
  *
  * Example:
- * [player, "LeftLeg", 1] call kat_pharma_fnc_treatmentAdvanced_FentanylLocal;
+ * [player] call kat_pharma_fnc_treatmentAdvanced_FentanylOverdoseLocal;
  *
  * Public: No
  */
-
-
 params ["_patient"];
+private _bpAdjust = -30 + floor random ((-15 - -30) + 1);
+[_patient, _bpAdjust, _bpAdjust, "fentanylOverdose"] call kat_circulation_fnc_updateBloodPressureChange;
+private _hrAdjust = -50 + floor random ((-30 - -50) + 1);
+[_patient, "fentanylOverdose", 120, 1200, _hrAdjust, "", "", "", "", ""] call EFUNC(vitals,addMedicationAdjustment);
+[{
+    params ["_patient"];
+    private _fentanylOverdoseTarget = 0;
+        [{
+            params ["_patient", "_idPFH"];
+            if (!(alive _patient)) exitWith {
+                [_idPFH] call CBA_fnc_removePerFrameHandler;
+            };
+                _fentanylOverdoseTarget = _fentanylOverdoseTarget + 1;
+                if (_fentanylOverdoseTarget > 6) exitWith {
+                    [{
+                        params ["_args", "_idPFH"];
+                        _args params ["_patient"];
+                        private _ht = _patient getVariable [QEGVAR(circulation,ht), []];
+                        if ((_ht findIf {_x isEqualTo "opioidOD"}) == -1) then {
+                            _ht pushBack "opioidOD";
+                            if (_patient getVariable [QEGVAR(circulation,cardiacArrestType), 0] == 0) then {
+                                [QACEGVAR(medical,FatalVitals), _patient] call CBA_fnc_localEvent;
+                            };
+                            _patient setVariable [QEGVAR(circulation,ht), _ht, true];
+                            };
+                    }, [_patient], 10] call CBA_fnc_waitAndExecute;
+                    [_idPFH] call CBA_fnc_removePerFrameHandler;
+                };
+				private _medications = _patient getVariable [QACEGVAR(medical,medications), []];
+    			if (_medications findIf {_x isEqualTo "naloxone"} != -1) exitWith {};
+                private _depression = _unit getVariable [QEGVAR(pharma,opioidFactor)] + 0.1;
+                _patient setVariable [QEGVAR(pharma,opioidFactor), _depression];
+        }, 10, [_patient]] call CBA_fnc_addPerFrameHandler;
+}, _patient, 10] call CBA_fnc_waitAndExecute;

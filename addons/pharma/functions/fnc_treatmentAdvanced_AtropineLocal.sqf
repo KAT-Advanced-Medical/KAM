@@ -16,17 +16,3 @@
  */
 
 params ["_patient", "_bodyPart", "_classname"];
-
-if (_classname isEqualTo "syringe_atropine_5ml_3") exitWith {};
-
-private _medicationArray = _patient getVariable [QACEGVAR(medical,medications), []];
-
-{
-    _x params ["_medication"];
-
-    if (_medication isEqualTo "BRADYCARDIA") exitWith {
-        _medicationArray deleteAt (_medicationArray find _x);
-    };
-} forEach (_medicationArray);
-
-_patient setVariable [QACEGVAR(medical,medications), _medicationArray, true];

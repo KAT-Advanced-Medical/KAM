@@ -15,18 +15,8 @@
  * Public: No
  */
 params ["_patient"];
-private _medicationArray = _patient getVariable [QACEGVAR(medical,medications), []];
-{
-    _x params ["_medication"];
-    private _lowerMed = toLower _medication;
-    if (
-        (_lowerMed find "txa" != -1) ||
-        (_lowerMed find "eaca" != -1)
-    ) then {
-        _medicationArray deleteAt (_medicationArray find _x);
-    };
-} forEach _medicationArray;
-
+private _hrAdjust = 10 + floor random ((25 - 10) + 1);
+[_patient, AlteplaseOverdose, 30, 600, _hrAdjust, "", "", 0.2, "", ""] call EFUNC(vitals,addMedicationAdjustment);
 _patient setVariable [QACEGVAR(medical,medications), _medicationArray, true];
 [{
     params ["_patient"];
@@ -39,10 +29,11 @@ _patient setVariable [QACEGVAR(medical,medications), _medicationArray, true];
                 _AlteplaseTarget = _AlteplaseTarget + 1;
                 if (_AlteplaseTarget > 24) exitWith {
                 [_idPFH] call CBA_fnc_removePerFrameHandler;};
-                private _surfaceArea = (_patient getVariable [QEGVAR(breathing,lungSurfaceArea), 400]) + 5;
-                _patient setVariable [QEGVAR(breathing,lungSurfaceArea), _surfaceArea];
+                private _bloodlevels = GET_BODY_FLUID(_patient);
+                _bloodlevels set [0, (_bloodlevels select 0) - 50];
+                _patient setVariable [QEGVAR(circulation,bodyFluid), _bloodlevels, true];
                 private _coagulationFactor = (_patient getVariable [QGVAR(coagulationFactor), 30]);
-                private _factorstoremove = 1;
+                private _factorstoremove = 2;
                 _patient setVariable [QGVAR(coagulationFactor), (_coagulationFactor - _factorstoremove), true];
-        }, 10, [_patient]] call CBA_fnc_addPerFrameHandler;
+        }, 15, [_patient]] call CBA_fnc_addPerFrameHandler;
 }, _patient, 15] call CBA_fnc_waitAndExecute;

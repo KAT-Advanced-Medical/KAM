@@ -27,4 +27,13 @@ PREP_RECOMPILE_END;
     true
 ] call CBA_Settings_fnc_init;
 
+[
+    QGVAR(effectOverdose),
+    "CHECKBOX",
+    [LLSTRING(SETTING_overdoseEffect_display), LLSTRING(SETTING_overdoseEffect_DESC)],
+    CBA_SETTINGS_CAT,
+    [false],
+    true
+] call CBA_Settings_fnc_init;
+
 ADDON = true;
