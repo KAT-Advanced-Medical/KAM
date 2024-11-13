@@ -19,7 +19,7 @@ params ["_patient"];
 
 _patient setVariable [QEGVAR(surgery,sedated), false, true];
 private _medications = _patient getVariable [QACEGVAR(medical,medications), []];
-if (_medications findIf {_x isEqualTo "Lorazepam"} != ) exitWith {[{
+if (_medications findIf {_x isEqualTo "Lorazepam"} != -1) exitWith {[{
     params ["_patient"];
     private _FlumanzenilTarget = 0;
         [{
