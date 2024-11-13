@@ -1,7 +1,7 @@
 #include "..\script_component.hpp"
 /*
- * Author: Mazinski.H
- * Locates and Removes Bradycardia Effect.
+ * Author: Cplhardcore
+ * 
  *
  * Arguments:
  * 0: Patient <OBJECT>

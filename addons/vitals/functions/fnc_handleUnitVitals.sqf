@@ -91,6 +91,7 @@ private _peripheralResistanceAdjustment = 0;
 private _alphaFactorAdjustment = 0;
 private _opioidAdjustment = 0;
 private _opioidEffectAdjustment = 0;
+private _opioidDepressionAdjustment = 0;
 private _adjustments = _unit getVariable [VAR_MEDICATIONS,[]];
 
 if !(_adjustments isEqualTo []) then {
@@ -109,6 +110,7 @@ if !(_adjustments isEqualTo []) then {
             if (_alphaFactor != 0) then { _alphaFactorAdjustment = _alphaFactorAdjustment + _alphaFactor * _effectRatio; };
             if (_opioidRelief != 0) then {_opioidAdjustment = _opioidAdjustment + _opioidRelief * _effectRatio; };
             if (_opioidEffect != 0) then {_opioidEffectAdjustment = _opioidEffectAdjustment + _opioidEffect * _effectRatio; };
+            if (_opioidDepression != 0) then {_opioidDepressionAdjustment = _opioidAdjustment + _opioidDepression * _effectRatio; };
         };
     } forEach _adjustments;
 
@@ -122,6 +124,7 @@ if !(_adjustments isEqualTo []) then {
 [_unit, _peripheralResistanceAdjustment, _deltaT, _syncValues] call ACEFUNC(medical_vitals,updatePeripheralResistance);
 [_unit, _opioidAdjustment, _deltaT, _syncValues] call FUNC(updateOpioidRelief);
 [_unit, _opioidEffectAdjustment, _deltaT, _syncValues] call FUNC(updateOpioidEffect);
+[_unit, _opioid_opioidDepressionAdjustment, _deltaT, _syncValues] call FUNC(updateOpioidDepression);
 
 private _heartRate = [_unit, _hrTargetAdjustment, 0, _bloodVolume, _deltaT, _syncValues] call FUNC(handleCardiacFunction);
 
@@ -129,7 +132,7 @@ private _spo2 = 97;
 if (EGVAR(breathing,enable)) then {
     // Additional variables for Respiration functions
     private _bloodGas = GET_BLOOD_GAS(_unit);
-    private _opioidDepression = GET_OPIOID_FACTOR(_unit);
+    private _opioidDepression = GET_OPIOID_DEPRESSION(_unit);
     private _anerobicPressure = (DEFAULT_ANEROBIC_EXCHANGE * (6 / (_bloodVolume max 6))) min 1.2;
 
     _spo2 = [_unit, _heartRate, _anerobicPressure, _bloodGas, _temperature, _baroPressure, _opioidDepression, _deltaT, _syncValues] call FUNC(handleOxygenFunction);

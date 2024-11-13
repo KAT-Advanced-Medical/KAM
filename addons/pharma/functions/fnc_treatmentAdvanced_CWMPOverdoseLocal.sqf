@@ -31,12 +31,9 @@ if GVAR(kidneyAction) then
                 [_idPFH] call CBA_fnc_removePerFrameHandler;};
                 private _ph = _patient getVariable [QGVAR(externalPh), _ph, true] + 100;
                 _patient setVariable [QGVAR(externalPh), _ph, true];
-                private _coagulationFactor = (_patient getVariable [QGVAR(coagulationFactor), 30]);
-                private _factorstoremove = 1;
-                _patient setVariable [QGVAR(coagulationFactor), (_coagulationFactor - _factorstoremove), true];
                 }, 10, [_patient]] call CBA_fnc_addPerFrameHandler;
     }, _patient, 15] call CBA_fnc_waitAndExecute;
-}
+};
 [{
     params ["_patient"];
     private _bpTarget = 0;
@@ -49,5 +46,8 @@ if GVAR(kidneyAction) then
                 if (_bpTarget > 12) exitWith {
                 [_idPFH] call CBA_fnc_removePerFrameHandler;};
                 [_patient, -2, -2, "CWMPOverdose"] call kat_circulation_fnc_updateBloodPressureChange;
+                private _coagulationFactor = (_patient getVariable [QGVAR(coagulationFactor), 30]);
+                private _factorstoremove = 1;
+                _patient setVariable [QGVAR(coagulationFactor), (_coagulationFactor - _factorstoremove), true];
         }, 15, [_patient]] call CBA_fnc_addPerFrameHandler;
 }, _patient, 15] call CBA_fnc_waitAndExecute;

@@ -92,6 +92,7 @@ private _alphaFactor            = GET_NUMBER(_medicationConfig >> "alphaFactor",
 private _maxRelief              = GET_NUMBER(_medicationConfig >> "maxRelief",getNumber (_defaultConfig >> "maxRelief"));
 private _opioidRelief           = GET_NUMBER(_medicationConfig >> "opioidRelief",getNumber (_defaultConfig >> "opioidRelief"));
 private _opioidEffect             = GET_NUMBER(_medicationConfig >> "opioidEffect",getNumber (_defaultConfig >> "opioidEffect"));
+private _opioidDepression           = GET_NUMBER(_medicationConfig >> "opioidRelief",getNumber (_defaultConfig >> "opioidRelief"));
 
 private _heartRate = GET_HEART_RATE(_patient);
 private _hrIncrease = [_hrIncreaseLow, _hrIncreaseNormal, _hrIncreaseHigh] select (floor ((0 max _heartRate min 110) / 55));
@@ -113,14 +114,14 @@ if ([QGVAR(AMS_Enabled)] call CBA_settings_fnc_get) then {
     };
     // Adjust the medication effects and add the medication to the list
     TRACE_3("adjustments",_heartRateChange,_painReduce,_viscosityChange);
-    [_patient, _medicationName, _timeTillMaxEffect, _timeInSystem, _heartRateChange, _painReduce, _viscosityChange, _alphaFactor, _opioidRelief, _opioidEffect] call EFUNC(vitals,addMedicationAdjustment);
+    [_patient, _medicationName, _timeTillMaxEffect, _timeInSystem, _heartRateChange, _painReduce, _viscosityChange, _alphaFactor, _opioidRelief, _opioidEffect, _opioidDepression] call EFUNC(vitals,addMedicationAdjustment);
 
     // Check for medication compatiblity
     [_patient, _medicationName, _maxDose, _maxDoseDeviation, _incompatibleMedication] call ACEFUNC(medical_treatment,onMedicationUsage);
 } else {       
     // Adjust the medication effects and add the medication to the list
     TRACE_3("adjustments",_heartRateChange,_painReduce,_viscosityChange);
-    [_patient, _className, _timeTillMaxEffect, _timeInSystem, _heartRateChange, _painReduce, _viscosityChange, _alphaFactor, _opioidRelief, _opioidEffect] call EFUNC(vitals,addMedicationAdjustment);
+    [_patient, _className, _timeTillMaxEffect, _timeInSystem, _heartRateChange, _painReduce, _viscosityChange, _alphaFactor, _opioidRelief, _opioidEffect, _opioidDepression] call EFUNC(vitals,addMedicationAdjustment);
 
     // Check for medication compatiblity
     [_patient, _className, _maxDose, _maxDoseDeviation, _incompatibleMedication] call ACEFUNC(medical_treatment,onMedicationUsage);
