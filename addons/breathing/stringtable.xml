@@ -2652,9 +2652,11 @@
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_enableCheckBreathing">
             <English>Enable Check Breathing</English>
+            <Japanese>呼吸を確認を有効化</Japanese>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_enableCheckBreathing_DESC">
             <English>Whether or not Check Breathing medical action is enabled</English>
+            <Japanese>呼吸を確認のアクションを可能にするかどうかを設定します</Japanese>
         </Key>
     </Package>
 </Project>

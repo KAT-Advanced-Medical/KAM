@@ -183,9 +183,11 @@
         </Key>
         <Key ID="STR_KAT_Chemical_ChemicalDetectorDisplayName">
             <English>JCAD Chemical Detector</English>
+            <Japanese>JCAD 化学剤検知器</Japanese>
         </Key>
         <Key ID="STR_KAT_Chemical_ChemicalDetectorDescription">
             <English>Used to detect KAT toxic chemicals</English>
+            <Japanese>KAT毒性化学物質の検出に使用</Japanese>
         </Key>
         <Key ID="STR_KAT_Chemical_giveGasMask_action">
             <English>Put on gas mask</English>
@@ -253,7 +255,7 @@
             <German>Chemischen Detektor stumm schalten.</German>
             <French>Désactiver le son du détecteur de produits chimiques</French>
             <Korean>화학물 탐지기 음소거</Korean>
-            <Japanese>化学検知器をミュート</Japanese>
+            <Japanese>化学剤検知器をミュート</Japanese>
             <Italian>Silenzia il rilevatore chimico</Italian>
             <Portuguese>Silenciar detector químico</Portuguese>
             <Polish>Wycisz Detektor chemiczny</Polish>
@@ -267,7 +269,7 @@
             <Spanish>Desilenciar Detector Quimico</Spanish>
             <German>Chemischen Detektor laut schalten.</German>
             <French>Activer le son du détecteur de produits chimiques</French>
-            <Japanese>化学検知器のミュート解除</Japanese>
+            <Japanese>化学剤検知器のミュート解除</Japanese>
             <Korean>화학물 탐지기 음소거 해제</Korean>
             <Italian>Smuta il rilevatore chimico</Italian>
             <Portuguese>Ativar som de detector químico</Portuguese>
