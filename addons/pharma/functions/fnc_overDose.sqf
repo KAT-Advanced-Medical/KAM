@@ -17,7 +17,7 @@
  */
 
 params ["_unit", "_classname"];
-if ([QGVAR(AMS_Enabled)] call CBA_settings_fnc_get) then {
+if (QGVAR(AMS_Enabled)) then {
     private _medicationParts = (_className splitString "_");
 
     if (count _medicationParts > 3) then {

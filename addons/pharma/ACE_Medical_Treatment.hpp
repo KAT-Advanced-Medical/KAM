@@ -11,6 +11,8 @@ class ACE_ADDON(Medical_Treatment) {
         timeInSystem = 120;
         // How long until the maximum effect is reached
         timeTillMaxEffect = 30;
+
+        dose = 1;
         // How many of this type of medication can be in the system before the patient overdoses?
         maxDose = 4;
         // The number of doses over maxDose where there is a chance to overdose.
@@ -36,6 +38,7 @@ class ACE_ADDON(Medical_Treatment) {
             hrIncreaseHigh[] = {10, 40};
             timeInSystem = 120;
             timeTillMaxEffect = 10;
+            dose = 1;
             maxDose = 6;
             maxDoseDeviation = 4;
             incompatibleMedication[] = {};
@@ -49,6 +52,7 @@ class ACE_ADDON(Medical_Treatment) {
             hrIncreaseHigh[] = {15, 40};
             timeInSystem = 120;
             timeTillMaxEffect = 10;
+            dose = 1;
             maxDose = 4;
             maxDoseDeviation = 2;
             incompatibleMedication[] = {};
@@ -62,6 +66,7 @@ class ACE_ADDON(Medical_Treatment) {
             hrIncreaseHigh[] = {-10, -25};
             timeInSystem = 300;
             timeTillMaxEffect = 60;
+            dose = 1;
             maxDose = 2;
             maxDoseDeviation = 2;
             incompatibleMedication[] = {};
@@ -74,6 +79,7 @@ class ACE_ADDON(Medical_Treatment) {
             hrIncreaseHigh[] = {-10, -35};
             timeInSystem = 900;
             timeTillMaxEffect = 30;
+            dose = 1;
             maxDose = 2;
             maxDoseDeviation = 1;
             incompatibleMedication[] = {};
@@ -87,6 +93,7 @@ class ACE_ADDON(Medical_Treatment) {
             hrIncreaseHigh[] = {-5, -20};
             timeInSystem = 180;
             timeTillMaxEffect = 30;
+            dose = 1;
             maxDose = 2;
             maxDoseDeviation = 2;
             incompatibleMedication[] = {};
@@ -99,6 +106,7 @@ class ACE_ADDON(Medical_Treatment) {
             hrIncreaseHigh[] = {-15, -35};
             timeInSystem = 360;
             timeTillMaxEffect = 15;
+            dose = 1;
             maxDose = 2;
             maxDoseDeviation = 2;
             incompatibleMedication[] = {};
@@ -111,6 +119,7 @@ class ACE_ADDON(Medical_Treatment) {
             hrIncreaseHigh[] = {15, 20};
             timeInSystem = 30;
             timeTillMaxEffect = 2;
+            dose = 1;
             maxDose = 10;
             incompatibleMedication[] = {};
             viscosityChange = 0;
@@ -123,6 +132,7 @@ class ACE_ADDON(Medical_Treatment) {
             hrIncreaseHigh[] = {0, 0};
             timeInSystem = 240;
             timeTillMaxEffect = 30;
+            dose = 1;
             maxDose = 3;
             incompatibleMedication[] = {};
             viscosityChange = 0;
@@ -135,6 +145,7 @@ class ACE_ADDON(Medical_Treatment) {
             hrIncreaseHigh[] = {5, 10};
             timeInSystem = 360;
             timeTillMaxEffect = 15;
+            dose = 1;
             maxDose = 12;
             incompatibleMedication[] = {};
             viscosityChange = 25;
@@ -148,6 +159,7 @@ class ACE_ADDON(Medical_Treatment) {
             hrIncreaseHigh[] = {-10, -15};
             timeInSystem = 360;
             timeTillMaxEffect = 15;
+            dose = 1;
             maxDose = 6;
             maxDoseDeviation = 4;
             incompatibleMedication[] = {};
@@ -162,6 +174,7 @@ class ACE_ADDON(Medical_Treatment) {
             hrIncreaseHigh[] = {-10, -15};
             timeInSystem = 360;
             timeTillMaxEffect = 15;
+            dose = 1;
             maxDose = 6;
             maxDoseDeviation = 4;
             incompatibleMedication[] = {};
@@ -175,6 +188,7 @@ class ACE_ADDON(Medical_Treatment) {
             hrIncreaseHigh[] = {10, 15};
             timeInSystem = 360;
             timeTillMaxEffect = 15;
+            dose = 1;
             maxDose = 6;
             maxDoseDeviation = 4;
             incompatibleMedication[] = {};
@@ -189,6 +203,7 @@ class ACE_ADDON(Medical_Treatment) {
             hrIncreaseHigh[] = {-20, -10};
             timeInSystem = 900;
             timeTillMaxEffect = 20;
+            dose = 1;
             maxDose = 1;
             maxDoseDeviation = 1;
             incompatibleMedication[] = {};
@@ -204,6 +219,7 @@ class ACE_ADDON(Medical_Treatment) {
             hrIncreaseHigh[] = {10, 15};
             timeInSystem = 900;
             timeTillMaxEffect = 15;
+            dose = 1;
             maxDose = 2;
             maxDoseDeviation = 2;
             incompatibleMedication[] = {};
@@ -218,6 +234,7 @@ class ACE_ADDON(Medical_Treatment) {
             hrIncreaseHigh[] = {-15, -5};
             timeInSystem = 900;
             timeTillMaxEffect = 30;
+            dose = 1;
             maxDose = 2;
             maxDoseDeviation = 2;
             incompatibleMedication[] = {};
@@ -232,6 +249,7 @@ class ACE_ADDON(Medical_Treatment) {
             hrIncreaseHigh[] = {5, 10};
             timeInSystem = 360;
             timeTillMaxEffect = 45;
+            dose = 1;
             maxDose = 6;
             maxDoseDeviation = 4;
             incompatibleMedication[] = {};
@@ -246,6 +264,7 @@ class ACE_ADDON(Medical_Treatment) {
             hrIncreaseHigh[] = {5, 15};
             timeInSystem = 120;
             timeTillMaxEffect = 30;
+            dose = 1;
             maxDose = 4;
             incompatibleMedication[]= {};
             viscosityChange = 0;
@@ -258,6 +277,7 @@ class ACE_ADDON(Medical_Treatment) {
             hrIncreaseHigh[] = {0, 0, 0};
             timeInSystem = 120;
             timeTillMaxEffect = 30;
+            dose = 1;
             maxDose = 4;
             incompatibleMedication[]= {};
             viscosityChange = 0;
@@ -270,6 +290,7 @@ class ACE_ADDON(Medical_Treatment) {
             hrIncreaseHigh[] = {0, 0, 0};
             timeInSystem = 120;
             timeTillMaxEffect = 30;
+            dose = 1;
             maxDose = 2;
             maxDoseDeviation = 4;
             incompatibleMedication[]= {};
@@ -283,6 +304,7 @@ class ACE_ADDON(Medical_Treatment) {
             hrIncreaseHigh[] = {0, 0};
             timeInSystem = 600;
             timeTillMaxEffect = 60;
+            dose = 1;
             maxDose = 10;
             incompatibleMedication[] = {};
             viscosityChange = 0;
@@ -295,6 +317,7 @@ class ACE_ADDON(Medical_Treatment) {
             hrIncreaseHigh[] = {-20, -30};
             timeInSystem = 45;
             timeTillMaxEffect = 5;
+            dose = 1;
             maxDose = 10;
             incompatibleMedication[] = {};
             viscosityChange = 0;
@@ -307,6 +330,7 @@ class ACE_ADDON(Medical_Treatment) {
             hrIncreaseHigh[] = {0, 0};
             timeInSystem = 60;
             timeTillMaxEffect = 5;
+            dose = 1;
             maxDose = 3;
             incompatibleMedication[] = {};
             viscosityChange = 0;
@@ -319,6 +343,7 @@ class ACE_ADDON(Medical_Treatment) {
             hrIncreaseHigh[] = {0, 0};
             timeInSystem = 60;
             timeTillMaxEffect = 5;
+            dose = 1;
             maxDose = 3;
             incompatibleMedication[] = {};
             viscosityChange = -15;
@@ -331,6 +356,7 @@ class ACE_ADDON(Medical_Treatment) {
             hrIncreaseHigh[] = {15, 25};
             timeInSystem = 600;
             timeTillMaxEffect = 5;
+            dose = 1;
             maxDose = 2;
             maxDoseDeviation = 1;
             incompatibleMedication[] = {};
@@ -345,6 +371,7 @@ class ACE_ADDON(Medical_Treatment) {
             hrIncreaseHigh[] = {5, 15};
             timeInSystem = 1800;
             timeTillMaxEffect = 5;
+            dose = 1;
             maxDose = 4;
             maxDoseDeviation = 4;
             incompatibleMedication[] = {};
@@ -358,6 +385,7 @@ class ACE_ADDON(Medical_Treatment) {
             hrIncreaseHigh[] = {0, 0};
             timeInSystem = 300;
             timeTillMaxEffect = 5;
+            dose = 1;
             maxDose = 0;
             incompatibleMedication[] = {};
             viscosityChange = 0;
@@ -370,6 +398,7 @@ class ACE_ADDON(Medical_Treatment) {
             hrIncreaseHigh[] = {-5, -15};
             timeInSystem = 300;
             timeTillMaxEffect = 20;
+            dose = 1;
             maxDose = 4;
             incompatibleMedication[] = {};
             viscosityChange = 5;
@@ -383,6 +412,7 @@ class ACE_ADDON(Medical_Treatment) {
             hrIncreaseHigh[] = {0, 0};
             timeInSystem = 120;
             timeTillMaxEffect = 5;
+            dose = 1;
             viscosityChange = 0;
         };
         class syringe_txa_5ml_3 {
@@ -392,6 +422,7 @@ class ACE_ADDON(Medical_Treatment) {
             hrIncreaseHigh[] = {0, 0};
             timeInSystem = 240;
             timeTillMaxEffect = 5;
+            dose = 3;
             viscosityChange = 0;
         };
         class syringe_txa_10ml_1 {
@@ -401,6 +432,7 @@ class ACE_ADDON(Medical_Treatment) {
             hrIncreaseHigh[] = {0, 0};
             timeInSystem = 120;
             timeTillMaxEffect = 20;
+            dose = 1;
             viscosityChange = 0;
         };
         class syringe_txa_10ml_3 {
@@ -410,6 +442,7 @@ class ACE_ADDON(Medical_Treatment) {
             hrIncreaseHigh[] = {0, 0};
             timeInSystem = 180;
             timeTillMaxEffect = 20;
+            dose = 3;
             viscosityChange = 0;
         };
         class syringe_eaca_5ml_1 {
@@ -419,6 +452,7 @@ class ACE_ADDON(Medical_Treatment) {
             hrIncreaseHigh[] = {0, 0};
             timeInSystem = 100;
             timeTillMaxEffect = 35;
+            dose = 1;
             viscosityChange = 0;
         };
         class syringe_eaca_5ml_3 {
@@ -428,6 +462,7 @@ class ACE_ADDON(Medical_Treatment) {
             hrIncreaseHigh[] = {0, 0};
             timeInSystem = 300;
             timeTillMaxEffect = 35;
+            dose = 3;
             viscosityChange = 0;
         };
         class syringe_epinephrineIV_5ml_1 {
@@ -437,6 +472,7 @@ class ACE_ADDON(Medical_Treatment) {
             hrIncreaseHigh[] = {15, 40};
             timeInSystem = 120;
             timeTillMaxEffect = 10;
+            dose = 1;
             alphaFactor = -0.2;
         };
         class syringe_epinephrineIV_5ml_3 {
@@ -446,6 +482,7 @@ class ACE_ADDON(Medical_Treatment) {
             hrIncreaseHigh[] = {20, 40};
             timeInSystem = 180;
             timeTillMaxEffect = 10;
+            dose = 3;
             alphaFactor = -0.4;
         };
         class syringe_norepinephrine_5ml_1 {
@@ -456,6 +493,7 @@ class ACE_ADDON(Medical_Treatment) {
             timeInSystem = 360;
             timeTillMaxEffect = 15;
             viscosityChange = 15;
+            dose = 1;
             alphaFactor = -0.2;
         };
         class syringe_norepinephrine_5ml_3 {
@@ -465,6 +503,7 @@ class ACE_ADDON(Medical_Treatment) {
             hrIncreaseHigh[] = {10, 15};
             timeInSystem = 360;
             timeTillMaxEffect = 15;
+            dose = 3;
             viscosityChange = 25;
             alphaFactor = -0.4;
         };
@@ -476,6 +515,7 @@ class ACE_ADDON(Medical_Treatment) {
             timeInSystem = 180;
             timeTillMaxEffect = 15;
             viscosityChange = 35;
+            dose = 1;
             alphaFactor = -0.4;
         };
         class syringe_phenylephrine_5ml_3 {
@@ -486,6 +526,7 @@ class ACE_ADDON(Medical_Treatment) {
             timeInSystem = 300;
             timeTillMaxEffect = 15;
             viscosityChange = 50;
+            dose = 3;
             alphaFactor = -0.7;
         };
         class syringe_nitroglycerin_5ml_1 {
@@ -496,6 +537,7 @@ class ACE_ADDON(Medical_Treatment) {
             timeInSystem = 360;
             timeTillMaxEffect = 15;
             viscosityChange = -25;
+            dose = 1;
             alphaFactor = 0.3;
         };
         class syringe_nitroglycerin_5ml_3 {
@@ -505,6 +547,7 @@ class ACE_ADDON(Medical_Treatment) {
             hrIncreaseHigh[] = {10, 20};
             timeInSystem = 360;
             timeTillMaxEffect = 15;
+            dose = 3;
             viscosityChange = -35;
             alphaFactor = 0.5;
         };
@@ -515,6 +558,7 @@ class ACE_ADDON(Medical_Treatment) {
             hrIncreaseHigh[] = {-10, -20};
             timeInSystem = 900;
             timeTillMaxEffect = 20;
+            dose = 1;
             viscosityChange = -10;
             opioidRelief = 1.2;
             opioidEffect = 0.17;
@@ -526,6 +570,7 @@ class ACE_ADDON(Medical_Treatment) {
             hrIncreaseHigh[] = {-10, -20};
             timeInSystem = 900;
             timeTillMaxEffect = 20;
+            dose = 3;
             viscosityChange = -10;
             opioidRelief = 1.5;
             opioidEffect = 0.25;
@@ -537,6 +582,7 @@ class ACE_ADDON(Medical_Treatment) {
             hrIncreaseHigh[] = {10, 15};
             timeInSystem = 600;
             timeTillMaxEffect = 15;
+            dose = 1;
             viscosityChange = 10;
             opioidEffect = 0.18;
         };
@@ -547,6 +593,7 @@ class ACE_ADDON(Medical_Treatment) {
             hrIncreaseHigh[] = {10, 15};
             timeInSystem = 900;
             timeTillMaxEffect = 15;
+            dose = 3;
             viscosityChange = 10;
             onOverDose = "";
             opioidEffect = 0.21;
@@ -558,6 +605,7 @@ class ACE_ADDON(Medical_Treatment) {
             hrIncreaseHigh[] = {-15, -5};
             timeInSystem = 600;
             timeTillMaxEffect = 30;
+            dose = 1;
             viscosityChange = -5;
             opioidRelief = 1.1;
         };
@@ -568,6 +616,7 @@ class ACE_ADDON(Medical_Treatment) {
             hrIncreaseHigh[] = {-5, -15};
             timeInSystem = 900;
             timeTillMaxEffect = 30;
+            dose = 3;
             viscosityChange = -5;
             opioidRelief = 1.2;
         };
@@ -578,6 +627,7 @@ class ACE_ADDON(Medical_Treatment) {
             hrIncreaseHigh[] = {5, 10};
             timeInSystem = 120;
             timeTillMaxEffect = 30;
+            dose = 1;
             viscosityChange = 0;
         };
         class syringe_atropineIV_5ml_3 {
@@ -587,6 +637,7 @@ class ACE_ADDON(Medical_Treatment) {
             hrIncreaseHigh[] = {5, 15};
             timeInSystem = 120;
             timeTillMaxEffect = 30;
+            dose = 3;
             viscosityChange = 0;
         };
         class syringe_amiodarone_5ml_1 {
@@ -596,6 +647,7 @@ class ACE_ADDON(Medical_Treatment) {
             hrIncreaseHigh[] = {0, 0};
             timeInSystem = 120;
             timeTillMaxEffect = 30;
+            dose = 1;
             viscosityChange = 0;
         };
         class syringe_amiodarone_5ml_3 {
@@ -605,6 +657,7 @@ class ACE_ADDON(Medical_Treatment) {
             hrIncreaseHigh[] = {0, 0, 0};
             timeInSystem = 120;
             timeTillMaxEffect = 30;
+            dose = 3;
             viscosityChange = 0;
         };
         class syringe_lidocaine_5ml_1 {
@@ -614,6 +667,7 @@ class ACE_ADDON(Medical_Treatment) {
             hrIncreaseHigh[] = {0, 0};
             timeInSystem = 120;
             timeTillMaxEffect = 30;
+            dose = 1;
         };
         class syringe_lidocaine_5ml_3 {
             painReduce = 0;
@@ -622,6 +676,7 @@ class ACE_ADDON(Medical_Treatment) {
             hrIncreaseHigh[] = {0, 0};
             timeInSystem = 120;
             timeTillMaxEffect = 30;
+            dose = 3;
         };
         class syringe_etomidate_5ml_1 {
             painReduce = 0.2;
@@ -630,6 +685,7 @@ class ACE_ADDON(Medical_Treatment) {
             hrIncreaseHigh[] = {-10, -20};
             timeInSystem = 60;
             timeTillMaxEffect = 5;
+            dose = 1;
             viscosityChange = 0;
         };
         class syringe_etomidate_5ml_3 {
@@ -639,6 +695,7 @@ class ACE_ADDON(Medical_Treatment) {
             hrIncreaseHigh[] = {-20, -30};
             timeInSystem = 30;
             timeTillMaxEffect = 5;
+            dose = 3;
             viscosityChange = 0;
         };
         class syringe_flumazenil_5ml_1 {
@@ -648,6 +705,7 @@ class ACE_ADDON(Medical_Treatment) {
             hrIncreaseHigh[] = {0, 0};
             timeInSystem = 60;
             timeTillMaxEffect = 5;
+            dose = 1;
             viscosityChange = 0;
         };
         class syringe_flumazenil_5ml_3 {
@@ -657,6 +715,7 @@ class ACE_ADDON(Medical_Treatment) {
             hrIncreaseHigh[] = {0, 0};
             timeInSystem = 60;
             timeTillMaxEffect = 5;
+            dose = 3;
             viscosityChange = 0;
         };
         class syringe_lorazepam_5ml_1 {
@@ -666,6 +725,7 @@ class ACE_ADDON(Medical_Treatment) {
             hrIncreaseHigh[] = {0, 0};
             timeInSystem = 60;
             timeTillMaxEffect = 5;
+            dose = 1;
             viscosityChange = -10;
         };
         class syringe_lorazepam_5ml_3 {
@@ -675,6 +735,7 @@ class ACE_ADDON(Medical_Treatment) {
             hrIncreaseHigh[] = {0, 0};
             timeInSystem = 60;
             timeTillMaxEffect = 5;
+            dose = 3;
             viscosityChange = -15;
         };
         class syringe_morphineIV_5ml_1 {
@@ -684,6 +745,7 @@ class ACE_ADDON(Medical_Treatment) {
             hrIncreaseHigh[] = {-10, -35};
             timeInSystem = 600;
             timeTillMaxEffect = 30;
+            dose = 1;
             viscosityChange = -15;
             opioidRelief = 1.2;
         };
@@ -694,6 +756,7 @@ class ACE_ADDON(Medical_Treatment) {
             hrIncreaseHigh[] = {-10, -45};
             timeInSystem = 600;
             timeTillMaxEffect = 30;
+            dose = 3;
             viscosityChange = -20;
             opioidRelief = 1.3;
         };
@@ -704,6 +767,7 @@ class ACE_ADDON(Medical_Treatment) {
             hrIncreaseHigh[] = {-15, -35};
             timeInSystem = 180;
             timeTillMaxEffect = 15;
+            dose = 1;
             viscosityChange = 0;
         };
         class syringe_adenosineIV_5ml_3 {
@@ -713,6 +777,7 @@ class ACE_ADDON(Medical_Treatment) {
             hrIncreaseHigh[] = {-15, -40};
             timeInSystem = 180;
             timeTillMaxEffect = 15;
+            dose = 3;
             viscosityChange = 0;
         };
         class syringe_alteplase_5ml_3 {
@@ -722,7 +787,8 @@ class ACE_ADDON(Medical_Treatment) {
             hrIncreaseHigh[] = {-5, -20};
             timeInSystem = 180;
             timeTillMaxEffect = 30;
-            maxDose = 1;
+            dose = 3;
+            maxDose = 3;
             maxDoseDeviation = 0;
             incompatibleMedication[] = {};
             viscosityChange = 0;
@@ -734,6 +800,7 @@ class ACE_ADDON(Medical_Treatment) {
             hrIncreaseHigh[] = {-10, -20};
             timeInSystem = 300;
             timeTillMaxEffect = 60;
+            dose = 1;
             viscosityChange = -10;
             onOverDose = "";
             opioidRelief = 1.1;
@@ -746,6 +813,7 @@ class ACE_ADDON(Medical_Treatment) {
             hrIncreaseHigh[] = {-20, -30};
             timeInSystem = 600;
             timeTillMaxEffect = 60;
+            dose = 3;
             viscosityChange = -10;
             opioidRelief = 1.3;
             opioidEffect = 0.17;
@@ -757,6 +825,7 @@ class ACE_ADDON(Medical_Treatment) {
             hrIncreaseHigh[] = {10, 15};
             timeInSystem = 300;
             timeTillMaxEffect = 30;
+            dose = 1;
             viscosityChange = 10;
             opioidEffect = 0.12;
         };
@@ -767,6 +836,7 @@ class ACE_ADDON(Medical_Treatment) {
             hrIncreaseHigh[] = {10, 25};
             timeInSystem = 450;
             timeTillMaxEffect = 30;
+            dose = 3;
             viscosityChange = 10;
             opioidEffect = 0.15;
         };
@@ -777,6 +847,7 @@ class ACE_ADDON(Medical_Treatment) {
             hrIncreaseHigh[] = {-10, -15};
             timeInSystem = 300;
             timeTillMaxEffect = 45;
+            dose = 1;
             viscosityChange = -5;
             opioidRelief = 1.1;
         };
@@ -787,6 +858,7 @@ class ACE_ADDON(Medical_Treatment) {
             hrIncreaseHigh[] = {-10, -20};
             timeInSystem = 300;
             timeTillMaxEffect = 45;
+            dose = 3;
             viscosityChange = -5;
             opioidRelief = 1.2;
         };
@@ -797,6 +869,7 @@ class ACE_ADDON(Medical_Treatment) {
             hrIncreaseHigh[] = {0, 0, 0};
             timeInSystem = 120;
             timeTillMaxEffect = 30;
+            dose = 1;
         };
         class syringe_morphineIV_10ml_1 {
             painReduce = 0.6;
@@ -805,6 +878,7 @@ class ACE_ADDON(Medical_Treatment) {
             hrIncreaseHigh[] = {-10, -35};
             timeInSystem = 600;
             timeTillMaxEffect = 30;
+            dose = 1;
             viscosityChange = -15;
             opioidRelief = 1.1;
         };
@@ -815,6 +889,7 @@ class ACE_ADDON(Medical_Treatment) {
             hrIncreaseHigh[] = {-10, -45};
             timeInSystem = 600;
             timeTillMaxEffect = 30;
+            dose = 3;
             viscosityChange = -15;
             opioidRelief = 1.3;
         };
@@ -847,17 +922,16 @@ class ACE_ADDON(Medical_Treatment) {
             maxDoseDeviation = 3;
             incompatibleMedication[] = {};
             onOverDose = "";
-            opioidRelief = 1.3;
         };
         class syringe_nitroglycerin {
-            maxDose = 9;
+            maxDose = 6;
             maxDoseDeviation = 3;
             incompatibleMedication[] = {};
             onOverDose = "";
         };
         class syringe_atropineIV {
             maxDose = 9;
-            maxDoseDeviation = 6;
+            maxDoseDeviation = 3;
             incompatibleMedication[] = {};
             onOverDose = "";
         };
@@ -872,40 +946,39 @@ class ACE_ADDON(Medical_Treatment) {
             maxDoseDeviation = 3;
             incompatibleMedication[] = {};
             onOverDose = "";
-            opioidRelief = 1.5;
         };
         class syringe_flumazenil {
-            maxDose = 6;
-            maxDoseDeviation = 3;
+            maxDose = 4;
+            maxDoseDeviation = 2;
             incompatibleMedication[] = {};
             onOverDose = "";
         };
         class syringe_lorazepam {
-            maxDose = 6;
-            maxDoseDeviation = 3;
+            maxDose = 4;
+            maxDoseDeviation = 2;
             incompatibleMedication[] = {};
             onOverDose = "";
         };
         class syringe_lidocaine {
-            maxDose = 12;
-            maxDoseDeviation = 6;
+            maxDose = 6;
+            maxDoseDeviation = 3;
             incompatibleMedication[] = {};
             onOverDose = "";
         };
         class syringe_fentanyl {
             maxDose = 3;
-            maxDoseDeviation = 3;
+            maxDoseDeviation = 1;
             incompatibleMedication[] = {};
             onOverDose = "";
         };
         class syringe_ketamine {
-            maxDose = 6;
-            maxDoseDeviation = 3;
+            maxDose = 4;
+            maxDoseDeviation = 2;
             incompatibleMedication[] = {};
             onOverDose = "";
         };
         class syringe_nalbuphine {
-            maxDose = 6;
+            maxDose = 4;
             maxDoseDeviation = 2;
             incompatibleMedication[] = {};
             onOverDose = "";
@@ -919,6 +992,12 @@ class ACE_ADDON(Medical_Treatment) {
         class syringe_adenosineIV {
             maxDose = 6;
             maxDoseDeviation = 3;
+            incompatibleMedication[] = {};
+            onOverDose = "";
+        };
+        class syringe_alteplase {
+            maxDose = 3;
+            maxDoseDeviation = 0;
             incompatibleMedication[] = {};
             onOverDose = "";
         };
