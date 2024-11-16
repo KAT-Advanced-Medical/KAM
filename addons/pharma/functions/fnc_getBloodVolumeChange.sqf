@@ -26,8 +26,8 @@ private _enableFluidShift = EGVAR(vitals,enableFluidShift);
 private _fluidVolume = GET_BODY_FLUID(_unit);
 _fluidVolume params ["_ECB","_ECP","_SRBC","_ISP","_fullVolume"];
 
-_ECP = _ECP + (_lossVolumeChange * LITERS_TO_ML) / 2;
-_ECB = _ECB + (_lossVolumeChange * LITERS_TO_ML) / 2;
+_ECP = (_ECP + (_lossVolumeChange * LITERS_TO_ML) / 2) max 100;
+_ECB = (_ECB + (_lossVolumeChange * LITERS_TO_ML) / 2) max 100;
 
 if (!isNil {_unit getVariable [QACEGVAR(medical,ivBags),[]]}) then {
     private _bloodBags = _unit getVariable [QACEGVAR(medical,ivBags), []];

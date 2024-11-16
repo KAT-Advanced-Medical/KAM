@@ -27,7 +27,7 @@ class ACE_Medical_Treatment_Actions {
         allowSelfTreatment = 0;
         medicRequired = 0;
         treatmentTime = 2;
-        condition = "true";
+        condition = QUOTE(GVAR(enableCheckBreathing));
         callbackSuccess = QFUNC(checkBreathing);
         animationPatient = "";
         animationPatientUnconscious = "AinjPpneMstpSnonWrflDnon_rolltoback";

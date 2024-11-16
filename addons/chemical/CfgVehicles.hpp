@@ -190,7 +190,6 @@ class CfgVehicles {
         };
     };
 
-
     class Box_NATO_AmmoOrd_F;
     class ACE_Box_82mm_Mo_HE: Box_NATO_AmmoOrd_F {
         class TransportMagazines;
