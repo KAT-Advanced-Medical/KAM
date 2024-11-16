@@ -1059,4 +1059,22 @@ PREP_RECOMPILE_END;
     true
 ] call CBA_Settings_fnc_init;
 
+[
+    QGVAR(medLvl_Alteplase),
+    "LIST",
+    [LLSTRING(medLvl_Alteplase)],
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_Alteplase)],
+    [[0, 1, 2], [ACELSTRING(medical_treatment,Anyone), ACELSTRING(medical_treatment,Medics), ACELSTRING(medical_treatment,Doctors)], 0],
+    true
+] call CBA_Settings_fnc_init;
+
+[
+    QGVAR(treatmentTime_Alteplase),
+    "SLIDER",
+    [LLSTRING(treatmentTime_Alteplase)],
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_Alteplase)],
+    [0.1, 10, 7, 1],
+    true
+] call CBA_Settings_fnc_init;
+
 ADDON = true;

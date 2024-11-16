@@ -596,6 +596,17 @@ class ACE_Medical_Treatment_Actions {
         callbackSuccess = QFUNC(medication);
         sounds[] = {};
     };
+    class syringe_alteplase_5ml_3: syringe_EACA_5ml_1 {
+        displayName = CSTRING(push_alteplase_IV_3);
+        displayNameProgress = CSTRING(pushing_alteplase_IV_3);
+        allowedSelections[] = {"Body", "LeftArm", "RightArm", "LeftLeg", "RightLeg"};
+        allowSelfTreatment = 1;
+        medicRequired = QGVAR(medLvl_alteplase);
+        treatmentTime = QGVAR(treatmentTime_alteplase);
+        items[] = {"kat_syringe_alteplase_5ml_3"};
+        callbackSuccess = QFUNC(medication);
+        sounds[] = {};
+    };
     class syringe_lidocaine_5ml_1: syringe_EACA_5ml_1 {
         displayName = CSTRING(push_lidocaine_IV_1);
         displayNameProgress = CSTRING(pushing_lidocaine_IV_1);

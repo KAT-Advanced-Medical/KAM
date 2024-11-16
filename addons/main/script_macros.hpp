@@ -189,6 +189,7 @@
 #undef GET_BLOOD_VOLUME             
 
 #define GET_OPIOID_FACTOR(unit)           (unit getVariable [QEGVAR(pharma,opioidFactor), 0])
+#define GET_OPIOID_DEPRESSION(unit)           (unit getVariable [QEGVAR(pharma,opioidDepression), 0])
 #define GET_PAIN_PERCEIVED(unit)    (0 max ((GET_PAIN(unit) - GET_PAIN_SUPPRESS(unit)) min 1))
 
 #undef GET_DAMAGE_THRESHOLD

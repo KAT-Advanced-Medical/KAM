@@ -20,6 +20,8 @@ PREP(salineCheck);
 PREP(tourniquetRemove);
 PREP(treatmentAdvanced_AdenosineLocal);
 PREP(treatmentAdvanced_AdenosineOverdoseLocal);
+PREP(treatmentAdvanced_AlteplaseLocal);
+PREP(treatmentAdvanced_AlteplaseOverdoseLocal);
 PREP(treatmentAdvanced_AmiodaroneLocal);
 PREP(treatmentAdvanced_AmiodaroneOverdoseLocal);
 PREP(treatmentAdvanced_AtropineLocal);

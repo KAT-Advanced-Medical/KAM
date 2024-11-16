@@ -17,8 +17,7 @@
  */
 
 params ["_patient"];
-private _hrValue = [40, 30, 50];
-private _hrAdjust = selectRandom _hrValue;
+private _hrAdjust = 30 + floor random ((60 - 30) + 1);
 [_patient, "TACHYCARDIA", 30, 1200, _hrAdjust, "", "", "", "", ""] call EFUNC(vitals,addMedicationAdjustment);
 if (random 10 < 1) then {
     private _randomValue = [3, 4];

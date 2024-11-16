@@ -384,6 +384,12 @@
             <Finnish>Amiodaroni</Finnish>
             <Dutch>Amiodaron</Dutch>
         </Key>
+        <Key ID="STR_KAT_Pharma_Alteplase_DescShort">
+            <English>Used to reverse TXA and EACA overdose</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_Alteplase_Display">
+            <English>Alteplase</English>
+        </Key>
         <Key ID="STR_KAT_Pharma_Take_Amiodarone">
             <English>Push Amiodarone</English>
             <German>Amiodaron verabreichen</German>
@@ -2030,6 +2036,12 @@
             <Russian>Время обработки Амиодароном</Russian>
             <Dutch>Behandeltijd van Amiodaron</Dutch>
         </Key>
+        <Key ID="STR_KAT_Pharma_medLvl_Alteplase">
+            <English>Medical level required for Alteplase</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_treatmentTime_Alteplase">
+            <English>Treatment time for Alteplase</English>
+        </Key>
         <Key ID="STR_KAT_Pharma_medLvl_Lidocaine">
             <English>Medical level required for Lidocaine</English>
             <Polish>Poziom wyszkolenia medycznego dla Lidokainy</Polish>
@@ -2577,6 +2589,9 @@
             <Finnish>Amiodaronin asetukset</Finnish>
             <Russian>Настройки Амиодарона</Russian>
             <Dutch>Amiodaron instellingen</Dutch>
+        </Key>
+        <Key ID="STR_KAT_Pharma_SubCategory_Alteplase">
+            <English>Alteplase Settings</English>
         </Key>
         <Key ID="STR_KAT_Pharma_SubCategory_Lidocaine">
             <English>Lidocaine Settings</English>
@@ -4054,6 +4069,12 @@
         <Key ID="STR_KAT_Pharma_Syringe_amiodarone_5_3_DescShort">
             <English>5ml Syringe loaded with 300mg of Amiodarone</English>
         </Key>
+        <Key ID="STR_KAT_Pharma_Syringe_alteplase_5_3_Display">
+            <English>5ml Syringe/50mg Alteplase</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_Syringe_alteplase_5_3_DescShort">
+            <English>5ml Syringe loaded with 50mg of Alteplase</English>
+        </Key>
         <Key ID="STR_KAT_Pharma_Syringe_lidocaine_5_1_Display">
             <English>5ml Syringe/40mg Lidocaine</English>
         </Key>
@@ -4264,6 +4285,9 @@
         <Key ID="STR_KAT_Pharma_push_amiodarone_IV_3">
             <English>Push 300mg Amiodarone IV</English>
         </Key>
+        <Key ID="STR_KAT_Pharma_push_alteplase_IV_3">
+            <English>Push 50mg Alteplase IV</English>
+        </Key>
         <Key ID="STR_KAT_Pharma_push_lidocaine_IV_1">
             <English>Push 40mg Lidocaine IV</English>
         </Key>
@@ -4353,6 +4377,9 @@
         </Key>
         <Key ID="STR_KAT_Pharma_pushing_amiodarone_IV_3">
             <English>Pushing 300mg Amiodarone IV</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_pushing_alteplase_IV_3">
+            <English>Pushing 50mg Alteplase IV</English>
         </Key>
         <Key ID="STR_KAT_Pharma_pushing_lidocaine_IV_1">
             <English>Pushing 40mg Lidocaine IV</English>

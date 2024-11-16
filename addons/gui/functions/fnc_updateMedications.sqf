@@ -36,7 +36,8 @@ disableSerialization;
     "kat_TXA",
     "kat_morphineIV",
     "kat_adenosineIV",
-    "kat_atropineIV"
+    "kat_atropineIV",
+    "kat_alteplase"
 ];
 
 private _medicationsFound = {

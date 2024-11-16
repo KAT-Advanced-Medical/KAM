@@ -16,3 +16,37 @@
  * Public: No
  */
 params ["_patient"];
+private _randomNumber = floor (random 3) + 1;
+switch (_randomNumber) do {
+    case 1: {
+        private _bpAdjust = 20 + floor random ((35 - 20) + 1);
+        [_patient, _bpAdjust, _bpAdjust, "PervitinOverdose"] call kat_circulation_fnc_updateBloodPressureChange;
+        private _hrAdjust = 30 + floor random ((50 - 30) + 1);
+        [_patient, "TACHYCARDIA", 120, 1200, _hrAdjust, "", "", "", "", ""] call EFUNC(vitals,addMedicationAdjustment);
+    };
+    case 2: {
+        private _bpAdjust = 20 + floor random ((35 - 20) + 1);
+        [_patient, _bpAdjust, _bpAdjust, "PervitinOverdose"] call kat_circulation_fnc_updateBloodPressureChange;
+        private _hrAdjust = 30 + floor random ((50 - 30) + 1);
+        [_patient, "TACHYCARDIA", 120, 1200, _hrAdjust, "", "", "", "", ""] call EFUNC(vitals,addMedicationAdjustment);
+        private _randomValue = [3, 4];
+        private _randomRhythm = selectRandom _randomValue;
+        _patient setVariable [QEGVAR(circulation,cardiacArrestType), _randomRhythm];
+    };
+    case 3: {
+        private _bpAdjust = 20 + floor random ((35 - 20) + 1);
+        [_patient, _bpAdjust, _bpAdjust, "PervitinOverdose"] call kat_circulation_fnc_updateBloodPressureChange;
+        private _hrAdjust = 30 + floor random ((50 - 30) + 1);
+        [_patient, "TACHYCARDIA", 120, 1200, _hrAdjust, "", "", "", "", ""] call EFUNC(vitals,addMedicationAdjustment);
+        private _randomValue = [3, 4];
+        private _randomRhythm = selectRandom _randomValue;
+        _patient setVariable [QEGVAR(circulation,cardiacArrestType), _randomRhythm];
+    };
+    case 4: {
+        private _bpAdjust = 20 + floor random ((35 - 20) + 1);
+        [_patient, _bpAdjust, _bpAdjust, "PervitinOverdose"] call kat_circulation_fnc_updateBloodPressureChange;
+        private _hrAdjust = 30 + floor random ((50 - 30) + 1);
+        [_patient, "TACHYCARDIA", 120, 1200, _hrAdjust, "", "", "", "", ""] call EFUNC(vitals,addMedicationAdjustment);
+        _patient setVariable [QEGVAR(circulation,cardiacArrestType), 0];
+    };
+};

@@ -15,8 +15,8 @@
  *
  * Public: No
  */
- params ["_patient"];
- [_patient, EACAOverdose, 1, 900, "", "", -90, -0.3, "", ""] call EFUNC(vitals,addMedicationAdjustment);
+params ["_patient"];
+[_patient, EACAOverdose, 1, 900, "", "", -90, -0.3, "", ""] call EFUNC(vitals,addMedicationAdjustment);
 [{
     params ["_patient"];
     private _EACAOverdoseTarget = 0;
@@ -34,11 +34,9 @@
                         private _ht = _patient getVariable [QEGVAR(circulation,ht), []];
                         if ((_ht findIf {_x isEqualTo "eacaOD"}) == -1) then {
                             _ht pushBack "eacaOD";
-
                             if (_patient getVariable [QEGVAR(circulation,cardiacArrestType), 0] == 0) then {
                                 [QACEGVAR(medical,FatalVitals), _patient] call CBA_fnc_localEvent;
                             };
-
                             _patient setVariable [QEGVAR(circulation,ht), _ht, true];
                             };
                     }, [_patient], 15] call CBA_fnc_waitAndExecute;
@@ -50,6 +48,6 @@
                 private _coagulationFactor = (_patient getVariable [QGVAR(coagulationFactor), 30]);
                 private _factorstoremove = 1;
                 _patient setVariable [QGVAR(coagulationFactor), (_coagulationFactor - _factorstoremove), true];
-                if ((random 1000) < 1) then {_patient setDamage 1;};
+                if ((random 10000) < 1) then {_patient setDamage 1;};
         }, 15, [_patient]] call CBA_fnc_addPerFrameHandler;
 }, _patient, 15] call CBA_fnc_waitAndExecute;
