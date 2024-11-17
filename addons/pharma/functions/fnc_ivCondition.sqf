@@ -24,7 +24,7 @@ private _removeIV = [_medic, _patient, _bodyPart] call FUNC(removeIV);
 private _ivType = [_patient, _bodyPart] call FUNC(checkIVType); 
 private _return = false;
 
-if (_removeIV == true && _ivType != 3) then {
+if (_removeIV && _ivType != 3) then {
     _return = true;
 } else {
     _return = false;
