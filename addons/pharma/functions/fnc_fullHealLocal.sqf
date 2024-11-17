@@ -53,6 +53,7 @@ _patient setVariable [QGVAR(opioidDepressionFactor), 0, true];
 _patient setVariable [QGVAR(kidneyFail), false, true];
 _patient setVariable [QGVAR(kidneyArrest), false, true];
 _patient setVariable [QGVAR(kidneyPressure), false, true];
+_patient setVariable [QGVAR(respiratoryRate), 1, true];
 
 _patient setVariable [QGVAR(coagulationFactor), missionNamespace getVariable [QGVAR(coagulation_factor_count), 30], true];
 
