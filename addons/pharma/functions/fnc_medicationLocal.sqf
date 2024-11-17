@@ -179,12 +179,10 @@ private _TXAmedications = ["syringe_TXA_5ml_1", "syringe_TXA_10ml_1"];
         };
         if (count _administered == 1) then {
             _patient setVariable ["meds_window_active", false, true];
-            [_patient] call {
-                _patient setVariable ["meds_window_active", true, true];
-            } call CBA_fnc_waitAndExecute [180];
-            [_patient] call {
-                _patient setVariable ["meds_window_active", false, true];
-            } call CBA_fnc_waitAndExecute [300];
+            [_patient setVariable ["meds_window_active", true, true]
+            [_patient], 180] call CBA_fnc_waitAndExecute;
+            [_patient setVariable ["meds_window_active", false, true]
+            [_patient], 300] call CBA_fnc_waitAndExecute;
         };
         if ((count _administered == count _TXAmedications) && (_patient getVariable ["meds_window_active", false]) && {!_effectTriggered}) then {
             _effectTriggered = true;
