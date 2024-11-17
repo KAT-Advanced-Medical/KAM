@@ -97,7 +97,7 @@ private _adjustments = _unit getVariable [VAR_MEDICATIONS,[]];
 if !(_adjustments isEqualTo []) then {
     private _deleted = false;
     {
-        _x params ["_medication", "_timeAdded", "_timeTillMaxEffect", "_maxTimeInSystem", "_hrAdjust", "_painAdjust", "_flowAdjust", "_alphaFactor", "_opioidRelief", "_opioidEffect"];
+        _x params ["_medication", "_timeAdded", "_timeTillMaxEffect", "_maxTimeInSystem", "_hrAdjust", "_painAdjust", "_flowAdjust", "_alphaFactor", "_opioidRelief", "_opioidEffect", "_opioidDepression" "_respiratoryRate"];
         private _timeInSystem = CBA_missionTime - _timeAdded;
         if (_timeInSystem >= _maxTimeInSystem) then {
             _deleted = true;
@@ -111,6 +111,7 @@ if !(_adjustments isEqualTo []) then {
             if (_opioidRelief != 0) then {_opioidAdjustment = _opioidAdjustment + _opioidRelief * _effectRatio; };
             if (_opioidEffect != 0) then {_opioidEffectAdjustment = _opioidEffectAdjustment + _opioidEffect * _effectRatio; };
             if (_opioidDepression != 0) then {_opioidDepressionAdjustment = _opioidAdjustment + _opioidDepression * _effectRatio; };
+            if (_respiratoryRate != 0) then {_respiratoryRateAdjustment = _respiratoryRateAdjustment + _respiratoryRate * _effectRatio; };
         };
     } forEach _adjustments;
 
@@ -124,7 +125,8 @@ if !(_adjustments isEqualTo []) then {
 [_unit, _peripheralResistanceAdjustment, _deltaT, _syncValues] call ACEFUNC(medical_vitals,updatePeripheralResistance);
 [_unit, _opioidAdjustment, _deltaT, _syncValues] call FUNC(updateOpioidRelief);
 [_unit, _opioidEffectAdjustment, _deltaT, _syncValues] call FUNC(updateOpioidEffect);
-[_unit, _opioid_opioidDepressionAdjustment, _deltaT, _syncValues] call FUNC(updateOpioidDepression);
+[_unit, _opioidDepressionAdjustment, _deltaT, _syncValues] call FUNC(updateOpioidDepression);
+[_unit, _respiratoryRateAdjustment, _deltaT, _syncValues] call FUNC(updateRespiratoryRate);
 
 private _heartRate = [_unit, _hrTargetAdjustment, 0, _bloodVolume, _deltaT, _syncValues] call FUNC(handleCardiacFunction);
 
