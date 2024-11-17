@@ -33,7 +33,7 @@ params ["_unit", "_actualHeartRate", "_anerobicPressure", "_bloodGas", "_tempera
 #define DEFAULT_FIO2 0.21
 
 private _respiratoryRate = 0;
-private _respiratoryRateMult = _unit getvariable [QEGVAR(breathing,respiratoryRateMultiplier), 1];
+private _respiratoryRateMult = _unit getVariable [QEGVAR(breathing,respiratoryRateMultiplier), 1];
 private _demandVentilation = 0;
 private _actualVentilation = 0;
 private _previousCyclePaco2 = (_bloodGas select 0);

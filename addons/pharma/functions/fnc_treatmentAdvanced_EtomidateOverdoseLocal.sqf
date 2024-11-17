@@ -128,12 +128,12 @@ switch (_randomNumber) do {
                 };
                 private _depression = _unit getVariable [QEGVAR(pharma,opioidDepressionFactor)] + 0.08;
                 _patient setVariable [QEGVAR(pharma,opioidDepressionFactor), _depression];
-                private _rr = _patient getvariable [QEGVAR(breathing,respiratoryRateMultiplier), 1] - 0.06;
-                _patient setvariable [QEGVAR(breathing,respiratoryRateMultiplier), _rr];
+                private _rr = _patient getVariable [QEGVAR(breathing,respiratoryRateMultiplier), 1] - 0.06;
+                _patient setVariable [QEGVAR(breathing,respiratoryRateMultiplier), _rr];
                 }, 30, [_patient]] call CBA_fnc_addPerFrameHandler;
         }, _patient, 30] call CBA_fnc_waitAndExecute;
     };
-    case 3: {
+    case 4: {
         private _bpAdjust = -20 + floor random ((-5 - -20) + 1);
         [_patient, _bpAdjust, _bpAdjust, "EtomidateOverdose"] call kat_circulation_fnc_updateBloodPressureChange;
         private _hrAdjust = -40 + floor random ((-20 - -40) + 1);
@@ -168,8 +168,8 @@ switch (_randomNumber) do {
                 };
                 private _depression = _unit getVariable [QEGVAR(pharma,opioidDepressionFactor)] + 0.08;
                 _patient setVariable [QEGVAR(pharma,opioidDepressionFactor), _depression];
-                private _rr = _patient getvariable [QEGVAR(breathing,respiratoryRateMultiplier), 1] - 0.06;
-                _patient setvariable [QEGVAR(breathing,respiratoryRateMultiplier), _rr];
+                private _rr = _patient getVariable [QEGVAR(breathing,respiratoryRateMultiplier), 1] - 0.06;
+                _patient setVariable [QEGVAR(breathing,respiratoryRateMultiplier), _rr];
                 }, 30, [_patient]] call CBA_fnc_addPerFrameHandler;
         }, _patient, 30] call CBA_fnc_waitAndExecute;
     };

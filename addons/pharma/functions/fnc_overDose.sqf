@@ -19,7 +19,7 @@
 params ["_unit", "_className", "_dose", "_limit",  "_incompatibleMedication"];
 if (QGVAR(AMS_Enabled)) then {
         [format ["kat_pharma_%1OverdoseLocal", toLower _className], [_patient], _patient] call CBA_fnc_targetEvent;
-        };
+    }
 else {
 private _defaultConfig = configFile >> QUOTE(ACE_ADDON(Medical_Treatment)) >> "Medication";
 private _medicationConfig = (configFile >> "ace_medical_treatment" >> _classname);

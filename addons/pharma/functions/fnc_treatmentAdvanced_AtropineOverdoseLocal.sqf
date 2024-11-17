@@ -45,8 +45,8 @@ params ["_patient"];
                 };
                 private _depression = _unit getVariable [QEGVAR(pharma,opioidDepressionFactor)] + 0.05;
                 _patient setVariable [QEGVAR(pharma,opioidDepressionFactor), _depression];
-                private _rr = _patient getvariable [QEGVAR(breathing,respiratoryRateMultiplier), 1] - 0.07;
-                _patient setvariable [QEGVAR(breathing,respiratoryRateMultiplier), _rr];
+                private _rr = _patient getVariable [QEGVAR(breathing,respiratoryRateMultiplier), 1] - 0.07;
+                _patient setVariable [QEGVAR(breathing,respiratoryRateMultiplier), _rr];
         }, 15, [_patient]] call CBA_fnc_addPerFrameHandler;
 }, _patient, 15] call CBA_fnc_waitAndExecute;
 [{
@@ -64,6 +64,6 @@ params ["_patient"];
                 private _depression = _unit getVariable [QEGVAR(pharma,opioidDepressionFactor)] - 0.05;
                 _patient setVariable [QEGVAR(pharma,opioidDepressionFactor), _depression];
                 private _rr = _patient getvariable [QEGVAR(breathing,respiratoryRateMultiplier), 1] + 0.07;
-                _patient setvariable [QEGVAR(breathing,respiratoryRateMultiplier), _rr];
+                _patient setVariable [QEGVAR(breathing,respiratoryRateMultiplier), _rr];
         }, 10, [_patient]] call CBA_fnc_addPerFrameHandler;
 }, _patient, 300] call CBA_fnc_waitAndExecute;
