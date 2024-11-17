@@ -78,19 +78,27 @@ if (HAS_TOURNIQUET_APPLIED_ON(_patient,_partIndex)) exitWith {
 private _defaultConfig = configFile >> QUOTE(ACE_ADDON(Medical_Treatment)) >> "Medication";
 private _medicationConfig = _defaultConfig >> _classname;
 
-private _painReduce             = GET_NUMBER(_medicationConfig >> "painReduce",getNumber (_defaultConfig >> "painReduce"));
-private _timeInSystem           = GET_NUMBER(_medicationConfig >> "timeInSystem",getNumber (_defaultConfig >> "timeInSystem"));
-private _timeTillMaxEffect      = GET_NUMBER(_medicationConfig >> "timeTillMaxEffect",getNumber (_defaultConfig >> "timeTillMaxEffect"));
-private _viscosityChange        = GET_NUMBER(_medicationConfig >> "viscosityChange",getNumber (_defaultConfig >> "viscosityChange"));
-private _hrIncreaseLow          = GET_ARRAY(_medicationConfig >> "hrIncreaseLow",getArray (_defaultConfig >> "hrIncreaseLow"));
-private _hrIncreaseNormal       = GET_ARRAY(_medicationConfig >> "hrIncreaseNormal",getArray (_defaultConfig >> "hrIncreaseNormal"));
-private _hrIncreaseHigh         = GET_ARRAY(_medicationConfig >> "hrIncreaseHigh",getArray (_defaultConfig >> "hrIncreaseHigh"));
+private _bloodloss = (GET_BODY_FLUID(unit) select 4);
+private _maxbloodloss = 1;
+private _minbloodloss = 6000;
+private _minDrugMult = 1;
+private _maxDrugMult = 2;
+
+private _drugMult = _minDrugMult + ((_bloodloss - _maxbloodloss) / (_minbloodloss - _maxbloodloss)) * (_maxDrugMult - _minDrugMult);
+
+private _painReduce             = GET_NUMBER(_medicationConfig >> "painReduce",getNumber (_defaultConfig >> "painReduce")) / _drugMult;
+private _timeInSystem           = GET_NUMBER(_medicationConfig >> "timeInSystem",getNumber (_defaultConfig >> "timeInSystem")) * _drugMult;
+private _timeTillMaxEffect      = GET_NUMBER(_medicationConfig >> "timeTillMaxEffect",getNumber (_defaultConfig >> "timeTillMaxEffect")) * _drugMult;
+private _viscosityChange        = GET_NUMBER(_medicationConfig >> "viscosityChange",getNumber (_defaultConfig >> "viscosityChange")) * _drugMult;
+private _alphaFactor            = GET_NUMBER(_medicationConfig >> "alphaFactor",getNumber (_defaultConfig >> "alphaFactor")) * _drugMult;
+private _opioidRelief           = GET_NUMBER(_medicationConfig >> "opioidRelief",getNumber (_defaultConfig >> "opioidRelief")) * _drugMult;
+private _opioidEffect           = GET_NUMBER(_medicationConfig >> "opioidEffect",getNumber (_defaultConfig >> "opioidEffect")) * _drugMult;
+private _opioidDepression       = GET_NUMBER(_medicationConfig >> "opioidDepression",getNumber (_defaultConfig >> "opioidDepression")) * _drugMult;
+private _hrIncreaseLow          = GET_ARRAY(_medicationConfig >> "hrIncreaseLow",getArray (_defaultConfig >> "hrIncreaseLow")) apply { _x * _drugMult };
+private _hrIncreaseNormal       = GET_ARRAY(_medicationConfig >> "hrIncreaseNormal",getArray (_defaultConfig >> "hrIncreaseNormal")) apply { _x * _drugMult };
+private _hrIncreaseHigh         = GET_ARRAY(_medicationConfig >> "hrIncreaseHigh",getArray (_defaultConfig >> "hrIncreaseHigh")) apply { _x * _drugMult };
 private _incompatibleMedication = GET_ARRAY(_medicationConfig >> "incompatibleMedication",getArray (_defaultConfig >> "incompatibleMedication"));
-private _alphaFactor            = GET_NUMBER(_medicationConfig >> "alphaFactor",getNumber (_defaultConfig >> "alphaFactor"));
 private _maxRelief              = GET_NUMBER(_medicationConfig >> "maxRelief",getNumber (_defaultConfig >> "maxRelief"));
-private _opioidRelief           = GET_NUMBER(_medicationConfig >> "opioidRelief",getNumber (_defaultConfig >> "opioidRelief"));
-private _opioidEffect             = GET_NUMBER(_medicationConfig >> "opioidEffect",getNumber (_defaultConfig >> "opioidEffect"));
-private _opioidDepression           = GET_NUMBER(_medicationConfig >> "opioidRelief",getNumber (_defaultConfig >> "opioidRelief"));
 private _dose                   = GET_NUMBER(_medicationConfig >> "dose",getNumber (_defaultConfig >> "dose"));
 
 private _heartRate = GET_HEART_RATE(_patient);
@@ -156,5 +164,35 @@ if (QGVAR(AMS_Enabled)) then {
 
     if (_className in ["Fentanyl","Morphine","Nalbuphine"]) then {
     [format ["kat_pharma_%1Local", toLower _className], [_patient, _bodyPart, _opioidRelief], _patient] call CBA_fnc_targetEvent;
+    };
+};
+if (QGVAR(AMSEnabled)) then {
+private _TXAmedications = ["syringe_TXA_5ml_1", "syringe_TXA_10ml_1"];
+    if (_classname in _TXAmedications) then {
+        private _medication = _classname;
+        private _administered = _patient getVariable ["meds_administered", []];
+        private _effectTriggered = _patient getVariable ["effect_triggered", false];
+        private _windowActive = _patient getVariable ["meds_window_active", false];
+        if (!(_medication in _administered)) then {
+            _administered pushBack _medication;
+            _patient setVariable ["meds_administered", _administered, true];
+        };
+        if (count _administered == 1) then {
+            _patient setVariable ["meds_window_active", false, true];
+            [_patient] call {
+                _patient setVariable ["meds_window_active", true, true];
+            } call CBA_fnc_waitAndExecute [180];
+            [_patient] call {
+                _patient setVariable ["meds_window_active", false, true];
+            } call CBA_fnc_waitAndExecute [300];
+        };
+        if ((count _administered == count _TXAmedications) && (_patient getVariable ["meds_window_active", false]) && {!_effectTriggered}) then {
+            _effectTriggered = true;
+            [_patient, "EACA", 15, 360, "", "", "", "",  "", "", "", ""] call EFUNC(vitals,addMedicationAdjustment);
+            [_patient, "Body"] call FUNC(treatmentAdvanced_EACALocal);
+            _patient setVariable ["effect_triggered", false, true];
+            _patient setVariable ["meds_administered", [], true];
+            _patient setVariable ["meds_window_active", false, true];
+        };
     };
 };
