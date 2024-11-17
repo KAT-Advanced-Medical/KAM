@@ -97,7 +97,7 @@ private _adjustments = _unit getVariable [VAR_MEDICATIONS,[]];
 if !(_adjustments isEqualTo []) then {
     private _deleted = false;
     {
-        _x params ["_medication", "_timeAdded", "_timeTillMaxEffect", "_maxTimeInSystem", "_hrAdjust", "_painAdjust", "_flowAdjust", "_alphaFactor", "_opioidRelief", "_opioidEffect", "_opioidDepression" "_respiratoryRate"];
+        _x params ["_medication", "_timeAdded", "_timeTillMaxEffect", "_maxTimeInSystem", "_hrAdjust", "_painAdjust", "_flowAdjust", "_alphaFactor", "_opioidRelief", "_opioidEffect", "_opioidDepression", "_respiratoryRate"];
         private _timeInSystem = CBA_missionTime - _timeAdded;
         if (_timeInSystem >= _maxTimeInSystem) then {
             _deleted = true;
