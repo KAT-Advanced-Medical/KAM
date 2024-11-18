@@ -40,7 +40,7 @@ _patient setVariable [QGVAR(PulseOximeter_Attached), _attachedPulseOximeter, tru
     };
 
     private _HR = GET_HEART_RATE(_patient);
-    private _SpO2 = GET_SPO2(_patient);
+    private _SpO2 = GET_KAT_SPO2(_patient);
 
     if (([_patient,_bodyPart] call ACEFUNC(medical_treatment,hasTourniquetAppliedTo))) then {
         _HR = 0;
@@ -58,7 +58,7 @@ _patient setVariable [QGVAR(PulseOximeter_Attached), _attachedPulseOximeter, tru
         [_idPFH] call CBA_fnc_removePerFrameHandler;
     };
 
-    private _SpO2 = GET_SPO2(_patient);
+    private _SpO2 = GET_KAT_SPO2(_patient);
 
     if (([_patient,_bodyPart] call ACEFUNC(medical_treatment,hasTourniquetAppliedTo))) then {
         _SpO2 = 0;

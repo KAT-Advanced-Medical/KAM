@@ -25,7 +25,7 @@ BEGIN_COUNTER(handleEffects);
 
 // - Current state info -------------------------------------------------------
 private _opioid          = GET_PP(ACE_player);
-private _spO2             = GET_SPO2(ACE_player);
+private _spO2             = GET_KAT_SPO2(ACE_player);
 private _unconscious      = IS_UNCONSCIOUS(ACE_player);
 
 // - Visual effects -----------------------------------------------------------
