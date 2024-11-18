@@ -1,7 +1,7 @@
 #include "..\script_component.hpp"
 /*
- * Author: Mazinski
- * Applies the opioid factor from Morphine
+ * Author: Cplhardcore
+ * Handles the overdose effect of Morphine
  *
  * Arguments:
  * 0: Patient <OBJECT>
@@ -10,7 +10,7 @@
  * None
  *
  * Example:
- * [player, "Leftleg", 1] call kat_pharma_fnc_treatmentAdvanced_MorphineLocal;
+ * [player] call kat_pharma_fnc_treatmentAdvanced_MorphineOverdoseLocal;
  *
  * Public: No
  */

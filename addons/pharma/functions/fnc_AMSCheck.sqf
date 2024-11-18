@@ -1,10 +1,10 @@
 #include "..\script_component.hpp"
 /*
  * Author: Cplhardcore
- * 
+ * Checks for if AMS is enabled and an IV sutible for medications is placed/if an IV is required
  *
  * Arguments:
- *
+ * 0: None
  *
  * Example:
  * [] call kat_pharma_fnc_AMScheck;

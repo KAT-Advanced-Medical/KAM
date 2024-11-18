@@ -1,7 +1,7 @@
 #include "..\script_component.hpp"
 /*
  * Author: Cplhardcore
- * causes TXA overdose effect
+ * Handles the overdose effect of TXA
  *
  * Arguments:
  * 0: Medic <OBJECT>

@@ -1,15 +1,16 @@
 #include "..\script_component.hpp"
 /*
- * Author: Blue
- * Begins Penthrox Inhaler use
+ * Author: Cplhardcore
+ * Handles the overdose effect of Phenylephrine
  *
  * Arguments:
  * 0: Patient <OBJECT>
+
  * Return Value:
  * None
  *
  * Example:
- * [player, cursorObject, "RightArm", classname, objNull, "kat_Penthrox"] call kat_pharma_fnc_treatmentAdvanced_Penthrox;
+ * [player] call kat_pharma_fnc_treatmentAdvanced_PhenylephrineOverdoseLocal;
  *
  * Public: No
  */

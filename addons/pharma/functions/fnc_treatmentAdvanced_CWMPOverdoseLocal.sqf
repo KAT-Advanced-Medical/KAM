@@ -1,6 +1,6 @@
 #include "..\script_component.hpp"
 /*
- * Author: MiszczuZPolski
+ * Author: Cplhardcore
  * Begins CWMP Treatment
  *
  * Arguments:

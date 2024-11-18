@@ -1,7 +1,7 @@
 #include "..\script_component.hpp"
 /*
  * Author: Mazinski.H
- * Locates and Removes Bradycardia Effect.
+ * 
  *
  * Arguments:
  * 0: Patient <OBJECT>
@@ -15,4 +15,4 @@
  * Public: No
  */
 
-params ["_patient", "_bodyPart", "_classname"];
+params ["_patient", "_classname"];

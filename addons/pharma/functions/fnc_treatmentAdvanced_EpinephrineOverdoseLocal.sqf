@@ -11,7 +11,7 @@
  * None
  *
  * Example:
- * [_patient, "LeftArm"] call kat_pharma_fnc_treatmentAdvanced_EACALocal;
+ * [_patient] call kat_pharma_fnc_treatmentAdvanced_EpinephrineOverdoseLocal;
  *
  * Public: No
  */

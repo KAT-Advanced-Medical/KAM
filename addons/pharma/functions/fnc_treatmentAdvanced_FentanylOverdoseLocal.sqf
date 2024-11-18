@@ -1,8 +1,7 @@
 #include "..\script_component.hpp"
 /*
- * Author: Miss Heda
- * Modified: Mazinski
- * Triggers the fentanyl visual effect and applies the opioid factor from Fentanyl.
+ * Author: Cplhardcore
+ * Handles the overdose effect of Fentanyl
  *
  * Arguments:
  * 0: Patient <OBJECT>

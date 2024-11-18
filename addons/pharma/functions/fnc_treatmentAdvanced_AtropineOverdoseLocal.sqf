@@ -10,7 +10,7 @@
  * None
  *
  * Example:
- * [player, syringe_atropine_5ml_2] call kat_pharma_fnc_treatmentAdvanced_AtropineLocal;
+ * [player, syringe_atropine_5ml_2] call kat_pharma_fnc_treatmentAdvanced_AtropineOverdoseLocal;
  *
  * Public: No
  */

@@ -1,7 +1,7 @@
 #include "..\script_component.hpp"
 /*
- * Author: Mazinski.H, Edited by MiszczuZPolski and Cplhardcore
- * Applies Bradycardia randomly
+ * Author: Cplhardcore
+ * Handles the overdose effect of Alteplase
  *
  * Arguments:
  * 0: Patient <OBJECT>
@@ -10,7 +10,7 @@
  * None
  *
  * Example:
- * [cursorTarget] call kat_pharma_fnc_treatmentAdvanced_AmiodaroneLocal;
+ * [cursorTarget] call kat_pharma_fnc_treatmentAdvanced_AlteplaseLocal;
  *
  * Public: No
  */

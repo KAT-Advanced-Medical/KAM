@@ -1,7 +1,7 @@
 #include "..\script_component.hpp"
 /*
  * Author:Cplhardcore
- * Does the AV block effect of adenosine
+ * Handles the overdose effect of Adenosine
  *
  * Arguments:
  * 0: Patient <OBJECT>
@@ -10,7 +10,7 @@
  * None
  *
  * Example:
- * [cursorTarget, "ACE_adenosine"] call kat_pharma_fnc_treatmentAdvanced_AmiodaroneLocal;
+ * [cursorTarget] call kat_pharma_fnc_treatmentAdvanced_AdenosineOverdoseLocal;
  *
  * Public: No
  */

@@ -1,7 +1,7 @@
 #include "..\script_component.hpp"
 /*
- * Author: MiszczuZPolski
- * Begins Lorazepam sedating process
+ * Author: Cplhardcore
+ * Handles the overdose effect of Lidocaine
  *
  * Arguments:
  * 0: Patient <OBJECT>
@@ -10,7 +10,7 @@
  * None
  *
  * Example:
- * [player] call kat_pharma_fnc_treatmentAdvanced_LorazepamLocal;
+ * [player] call kat_pharma_fnc_treatmentAdvanced_LidocaineOverdoseLocal;
  *
  * Public: No
  */

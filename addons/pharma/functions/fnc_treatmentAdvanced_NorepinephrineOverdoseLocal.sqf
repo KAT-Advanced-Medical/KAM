@@ -10,7 +10,7 @@
  * None
  *
  * Example:
- * [player] call kat_pharma_fnc_treatmentAdvanced_NorepinephrineLocal;
+ * [player] call kat_pharma_fnc_treatmentAdvanced_NorepinephrineOverdoseLocal;
  *
  * Public: No
  */

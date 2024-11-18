@@ -1,7 +1,7 @@
 #include "..\script_component.hpp"
 /*
- * Author: Miss Heda,
- * Contributers: YonV, MiszczuZPolski
+ * Author: Cplhardcore
+ * Handles the overdose effect of Pervatin
  *
  *
  * Arguments:
@@ -11,7 +11,7 @@
  * None
  *
  * Example:
- * [player] call kat_pharma_fnc_treatmentAdvanced_PervitinLocal;
+ * [player] call kat_pharma_fnc_treatmentAdvanced_PervitinOverdoseLocal;
  *
  * Public: No
  */

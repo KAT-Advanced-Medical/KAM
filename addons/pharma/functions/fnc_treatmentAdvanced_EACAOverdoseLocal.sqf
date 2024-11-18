@@ -1,11 +1,11 @@
 #include "..\script_component.hpp"
 /*
- * Author: 2LT.Mazinski
- * Local function for EACA treatment
+ * Author: Cplhardcore
+ * Handles the overdose effect of EACA
  *
  * Arguments:
  * 0: Patient <OBJECT>
- * 1: Body Part <STRING>
+ * 
  *
  * Return Value:
  * None

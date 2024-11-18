@@ -10,7 +10,7 @@
  * None
  *
  * Example:
- * [cursorTarget, "ACE_adenosine"] call kat_pharma_fnc_treatmentAdvanced_AmiodaroneLocal;
+ * [cursorTarget, "ACE_adenosine"] call kat_pharma_fnc_treatmentAdvanced_AdenosineLocal;
  *
  * Public: No
  */

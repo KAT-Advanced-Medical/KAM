@@ -1,7 +1,7 @@
 #include "..\script_component.hpp"
 /*
- * Author: Mazinski.H
- * Locates and Removes one opioid after the administration of Naloxone.
+ * Author: Cplhardcore
+ * Handles the overdose effect of Naloxone.
  *
  * Arguments:
  * 0: Patient <OBJECT>
@@ -10,7 +10,7 @@
  * None
  *
  * Example:
- * [player] call kat_pharma_fnc_treatmentAdvanced_NaloxoneLocal;
+ * [player] call kat_pharma_fnc_treatmentAdvanced_NaloxoneOverdoseLocal;
  *
  * Public: No
  */

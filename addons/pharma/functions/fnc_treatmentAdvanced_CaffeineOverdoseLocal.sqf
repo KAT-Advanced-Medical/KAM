@@ -1,6 +1,6 @@
 #include "..\script_component.hpp"
 /*
- * Author: Miss Heda
+ * Author: Cplhardcore
  *
  * Arguments:
  * 0: Patient <OBJECT>
@@ -9,7 +9,7 @@
  * None
  *
  * Example:
- * [player] call kat_pharma_fnc_treatmentAdvanced_CaffeineLocal;
+ * [player] call kat_pharma_fnc_treatmentAdvanced_CaffeineOverdoseLocal;
  *
  * Public: No
  */

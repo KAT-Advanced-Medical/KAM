@@ -1,7 +1,7 @@
 #include "..\script_component.hpp"
 /*
- * Author: Blue
- * Begins Penthrox Inhaler use
+ * Author: Cplhardcore
+ * Handles the overdose effect of Penthrox
  *
  * Arguments:
  * 0: Medic <OBJECT>
@@ -15,7 +15,7 @@
  * None
  *
  * Example:
- * [player, cursorObject, "RightArm", classname, objNull, "kat_Penthrox"] call kat_pharma_fnc_treatmentAdvanced_Penthrox;
+ * [player] call kat_pharma_fnc_treatmentAdvanced_PenthroxOverdoseLocal;
  *
  * Public: No
  */
