@@ -28,9 +28,15 @@ private _breathing = LLSTRING(breathing_isNormal);
 private _breathing_log = localize ACELSTRING(medical_treatment,Check_Pulse_Normal);
 private _breath = "";
 
-if (_patient getVariable [QGVAR(pneumothorax), 0] > 0) then {
+private _respiratoryDepth = _patient getVariable [QEGVAR(vitals,respiratoryDepth), 10];
+if ((10 > _respiratoryDepth) && (_respiratoryDepth >= 7)) then {
     _breathing = LLSTRING(breathing_isShallow);
     _breathing_log = LLSTRING(breathing_shallow);
+};
+
+if (_respiratoryDepth < 7)  then {
+    _breathing = LLSTRING(breathing_isVeryShallow);
+    _breathing_log = LLSTRING(breathing_Veryshallow);
 };
 
 if (_ph < 7.2) then {
