@@ -73,7 +73,7 @@ if (EGVAR(breathing,paco2Active)) then {
 };
 
 // Generated ETCO2 quadratic. Ensures ETCO2 moves with Respiratory Rate and is constantly below PaCO2 
-private _etco2 = [((_paco2 - 3) - ((-0.0416667 * (_respiratoryRate^2)) + (3.09167 * (_respiratoryRate)) - DEFAULT_ETCO2) max 10), 0] select (IN_CRDC_ARRST(_unit));
+private _etco2 = [((((_paco2 - 3) - ((-0.0416667 * (_respiratoryRate^2)) + (3.09167 * (_respiratoryRate))) *(_respiratoryDepression / 10)) - DEFAULT_ETCO2) max 10), 0] select (IN_CRDC_ARRST(_unit));
 
 private _externalPh = 0;
 private _pH = 7.4;
