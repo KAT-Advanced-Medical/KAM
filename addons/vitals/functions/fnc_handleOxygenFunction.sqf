@@ -53,7 +53,7 @@ if (IN_CRDC_ARRST(_unit)) then {
     private _tidalVolume = GET_KAT_SURFACE_AREA(_unit);
 
     // Respiratory Depth is supressed by Opioids and pneumothorax
-    private _respiratoryDepth = (DEFAULT_RESPIRATORY_DEPTH  - ((_unit getVariable [QEGVAR(breathing,pneumothorax), 0]) * 0.75));
+    private _respiratoryDepth = (DEFAULT_RESPIRATORY_DEPTH  - ((_unit getVariable [QEGVAR(breathing,pneumothorax), 0]) / 2));
     _respiratoryDepression = [((_respiratoryDepth - (_opioidDepression * 5)) max MINIMUM_DEPTH), 10] select (_unit getVariable [QEGVAR(breathing,BVMInUse), false]);
     
     // Respiratory Rate Calculation
