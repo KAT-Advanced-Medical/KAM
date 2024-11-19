@@ -31,7 +31,6 @@ params ["_unit", "_actualHeartRate", "_anerobicPressure", "_bloodGas", "_tempera
 #define PACO2_MAX_CHANGE 0.05
 #define PAO2_MAX_CHANGE 0.1
 #define DEFAULT_FIO2 0.21
-#define MAXIMUM_DEPTH 2
 #define MINIMUM_DEPTH 0.2
 
 private _respiratoryRate = 0;
@@ -45,7 +44,7 @@ if (IN_CRDC_ARRST(_unit)) then {
     // When in arrest, there should be no effecive breaths but still a minimum O2 demand. Zero O2 demand would mean a dead patient. Actual ventilation is 1 to prevent issues in the gas tension functions
     _demandVentilation = MINIMUM_VENTILATION;
     _respiratoryRate = 0;
-    _respiratoryDepression = 0;
+    _respiratoryDepression = 1;
     _actualVentilation = 1;
 } else {
     // Ventilatory Demand comes from Heart Rate with increase demand from PaCO2 levels 
