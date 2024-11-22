@@ -83,12 +83,18 @@ private _maxbloodloss = 1;
 private _minbloodloss = 6000;
 private _minDrugMult = 1;
 private _maxDrugMult = 2;
-
 private _drugMult = _minDrugMult + ((_bloodloss - _maxbloodloss) / (_minbloodloss - _maxbloodloss)) * (_maxDrugMult - _minDrugMult);
+
+private _maxHR = 160;
+private _minHR = 1;
+private _minHRMult = 0.1;
+private _maxHRMult = 1.6;
+private _hrMult = _minHRMult + ((_heartRate - _maxHR) / (_minHR - _maxHR)) * (_maxHRMult - _minHRMult);
+
 
 private _painReduce             = GET_NUMBER(_medicationConfig >> "painReduce",getNumber (_defaultConfig >> "painReduce")) / _drugMult;
 private _timeInSystem           = GET_NUMBER(_medicationConfig >> "timeInSystem",getNumber (_defaultConfig >> "timeInSystem")) * _drugMult;
-private _timeTillMaxEffect      = GET_NUMBER(_medicationConfig >> "timeTillMaxEffect",getNumber (_defaultConfig >> "timeTillMaxEffect")) * _drugMult;
+private _timeTillMaxEffect      = GET_NUMBER(_medicationConfig >> "timeTillMaxEffect",getNumber (_defaultConfig >> "timeTillMaxEffect")) * _hrMult;
 private _viscosityChange        = GET_NUMBER(_medicationConfig >> "viscosityChange",getNumber (_defaultConfig >> "viscosityChange")) * _drugMult;
 private _alphaFactor            = GET_NUMBER(_medicationConfig >> "alphaFactor",getNumber (_defaultConfig >> "alphaFactor")) * _drugMult;
 private _opioidRelief           = GET_NUMBER(_medicationConfig >> "opioidRelief",getNumber (_defaultConfig >> "opioidRelief")) * _drugMult;
