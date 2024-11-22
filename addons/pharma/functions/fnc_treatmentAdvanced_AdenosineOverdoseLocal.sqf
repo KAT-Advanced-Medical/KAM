@@ -54,7 +54,7 @@ if (_medIndex > -1) then {
     private _medCount = _medStack select (_medIndex + 1);
     _hasMed = (_medCount > 0);
 };
-[{_hasmed, {},
+[_hasmed, {},{
     params ["_patient"];
     private _AdenosineTarget = 0;
         [{
