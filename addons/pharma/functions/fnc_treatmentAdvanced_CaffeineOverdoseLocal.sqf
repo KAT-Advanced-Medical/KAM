@@ -31,7 +31,14 @@ params ["_patient"];
                 _patient setVariable [VAR_HEART_RATE, _hrAdd, true];
         }, 10, [_patient]] call CBA_fnc_addPerFrameHandler;
 }, _patient, 10] call CBA_fnc_waitAndExecute;
-[{
+private _medStack = [_patient, false] call ACEFUNC(medical_treatment,getAllMedicationCount);
+private _medIndex = _medStack find "Caffeine";
+private _hasMed = false;
+if (_medIndex > -1) then {
+    private _medCount = _medStack select (_medIndex + 1);
+    _hasMed = (_medCount > 0);
+};
+[{_hasmed, {},
     params ["_patient"];
     private _CaffineOverdoseTarget = 0;
         [{
@@ -47,4 +54,4 @@ params ["_patient"];
                 private _hrAdd = (_hr - 3);
                 _patient setVariable [VAR_HEART_RATE, _hrAdd, true];
         }, 10, [_patient]] call CBA_fnc_addPerFrameHandler;
-}, _patient, 150] call CBA_fnc_waitAndExecute;
+}, _patient, 150] call CBA_fnc_waitUntilAndExecute;

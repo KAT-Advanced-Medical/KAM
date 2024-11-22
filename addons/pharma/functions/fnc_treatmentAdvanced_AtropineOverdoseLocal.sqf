@@ -17,21 +17,21 @@
 params ["_patient"];
 [{
     params ["_patient"];
-    private _adenosineOverdoseTarget = 0;
+    private _atropineOverdoseTarget = 0;
         [{
             params ["_patient", "_idPFH"];
             if (!(alive _patient)) exitWith {
                 [_idPFH] call CBA_fnc_removePerFrameHandler;
             };
-                _adenosineOverdoseTarget = _adenosineOverdoseTarget + 1;
-                if (_adenosineOverdoseTarget > 12) exitWith {
+                _atropineOverdoseTarget = _atropineOverdoseTarget + 1;
+                if (_atropineOverdoseTarget > 12) exitWith {
                     if (random(100) < 15) then {
                     [{
                         params ["_args", "_idPFH"];
                         _args params ["_patient"];
                         private _ht = _patient getVariable [QEGVAR(circulation,ht), []];
-                        if ((_ht findIf {_x isEqualTo "adenosineOD"}) == -1) then {
-                            _ht pushBack "adenosineOD";
+                        if ((_ht findIf {_x isEqualTo "atropineOD"}) == -1) then {
+                            _ht pushBack "atropineOD";
 
                             if (_patient getVariable [QEGVAR(circulation,cardiacArrestType), 0] == 0) then {
                                 [QACEGVAR(medical,FatalVitals), _patient] call CBA_fnc_localEvent;
@@ -49,16 +49,23 @@ params ["_patient"];
                 _patient setVariable [QEGVAR(breathing,respiratoryRateMultiplier), _rr];
         }, 15, [_patient]] call CBA_fnc_addPerFrameHandler;
 }, _patient, 15] call CBA_fnc_waitAndExecute;
-[{
+private _medStack = [_patient, false] call ACEFUNC(medical_treatment,getAllMedicationCount);
+private _medIndex = _medStack find "Atropine";
+private _hasMed = false;
+if (_medIndex > -1) then {
+    private _medCount = _medStack select (_medIndex + 1);
+    _hasMed = (_medCount > 0);
+};
+[{_hasmed, {},
     params ["_patient"];
-    private _AdenosineTarget = 0;
+    private _atropineTarget = 0;
         [{
             params ["_patient", "_idPFH"];
             if (!(alive _patient)) exitWith {
                 [_idPFH] call CBA_fnc_removePerFrameHandler;
             };
-                _AdenosineTarget = _AdenosineTarget + 1;
-                if (_AdenosineTarget > 18) exitWith {
+                _atropineTarget = _atropineTarget + 1;
+                if (_atropineTarget > 18) exitWith {
                     [_idPFH] call CBA_fnc_removePerFrameHandler;
                 };
                 private _depression = _unit getVariable [QEGVAR(pharma,opioidDepressionFactor)] - 0.05;
@@ -66,4 +73,4 @@ params ["_patient"];
                 private _rr = _patient getVariable [QEGVAR(breathing,respiratoryRateMultiplier), 1] + 0.07;
                 _patient setVariable [QEGVAR(breathing,respiratoryRateMultiplier), _rr];
         }, 10, [_patient]] call CBA_fnc_addPerFrameHandler;
-}, _patient, 300] call CBA_fnc_waitAndExecute;
+}, _patient, 0] call CBA_fnc_waitUntilAndExecute;

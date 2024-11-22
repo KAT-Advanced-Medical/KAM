@@ -34,7 +34,14 @@ if GVAR(kidneyAction) then
                 }, 10, [_patient]] call CBA_fnc_addPerFrameHandler;
     }, _patient, 15] call CBA_fnc_waitAndExecute;
 };
-[{
+private _medStack = [_patient, false] call ACEFUNC(medical_treatment,getAllMedicationCount);
+private _medIndex = _medStack find "CWMP";
+private _hasMed = false;
+if (_medIndex > -1) then {
+    private _medCount = _medStack select (_medIndex + 1);
+    _hasMed = (_medCount > 0);
+};
+[{_hasmed, {},
     params ["_patient"];
     private _bpTarget = 0;
         [{
@@ -50,4 +57,4 @@ if GVAR(kidneyAction) then
                 private _factorstoremove = 1;
                 _patient setVariable [QGVAR(coagulationFactor), (_coagulationFactor - _factorstoremove), true];
         }, 15, [_patient]] call CBA_fnc_addPerFrameHandler;
-}, _patient, 15] call CBA_fnc_waitAndExecute;
+}, _patient, 15] call CBA_fnc_waitUntilAndExecute;

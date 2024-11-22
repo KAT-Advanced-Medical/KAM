@@ -47,7 +47,14 @@ params ["_patient"];
                 _patient setVariable [QEGVAR(breathing,lungSurfaceArea), _surfaceArea];
         }, 15, [_patient]] call CBA_fnc_addPerFrameHandler;
 }, _patient, 15] call CBA_fnc_waitAndExecute;
-[{
+private _medStack = [_patient, false] call ACEFUNC(medical_treatment,getAllMedicationCount);
+private _medIndex = _medStack find "Adenosine";
+private _hasMed = false;
+if (_medIndex > -1) then {
+    private _medCount = _medStack select (_medIndex + 1);
+    _hasMed = (_medCount > 0);
+};
+[{_hasmed, {},
     params ["_patient"];
     private _AdenosineTarget = 0;
         [{
@@ -62,4 +69,4 @@ params ["_patient"];
                 private _surfaceArea = (_patient getVariable [QEGVAR(breathing,lungSurfaceArea), 400]) + 10;
                 _patient setVariable [QEGVAR(breathing,lungSurfaceArea), _surfaceArea];
         }, 10, [_patient]] call CBA_fnc_addPerFrameHandler;
-}, _patient, 300] call CBA_fnc_waitAndExecute;
+}, _patient, 120] call CBA_fnc_waitUntilAndExecute;
