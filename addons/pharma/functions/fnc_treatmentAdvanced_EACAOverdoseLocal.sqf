@@ -43,8 +43,12 @@ params ["_patient"];
                     };
                     [_idPFH] call CBA_fnc_removePerFrameHandler;
                 };
-                private _surfaceArea = (_patient getVariable [QEGVAR(breathing,lungSurfaceArea), 400]) - 10;
-                _patient setVariable [QEGVAR(breathing,lungSurfaceArea), _surfaceArea];
+                private _surface = (_patient getVariable [QEGVAR(breathing,lungSurfaceArea), 400]);
+                if (_surface < 150) then {
+                    } else {
+                        private _surfaceArea = _surface - 10;
+                        _patient setVariable [QEGVAR(breathing,lungSurfaceArea), _surfaceArea];
+                    };
                 private _coagulationFactor = (_patient getVariable [QGVAR(coagulationFactor), 30]);
                 private _factorstoremove = 1;
                 _patient setVariable [QGVAR(coagulationFactor), (_coagulationFactor - _factorstoremove), true];
