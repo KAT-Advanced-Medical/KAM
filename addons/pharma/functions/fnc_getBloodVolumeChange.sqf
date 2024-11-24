@@ -83,7 +83,9 @@ if (!isNil {_unit getVariable [QACEGVAR(medical,ivBags),[]]}) then {
                         _ECB = _ECB + _bagChange; 
                         _lossVolumeChange = _lossVolumeChange + (_bagChange / ML_TO_LITERS); 
                         };
-                    };
+                    } else {
+                        _ECP = _ECP + _bagChange; _lossVolumeChange = _lossVolumeChange + (_bagChange / ML_TO_LITERS);
+                    }
             };
         };
 
