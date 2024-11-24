@@ -24,10 +24,11 @@ private _internalBleeding = GET_INTERNAL_BLEEDING(_unit);
 private _lossVolumeChange = (-_deltaT * ((_bloodLoss + _internalBleeding * (GET_HEART_RATE(_unit) / DEFAULT_HEART_RATE)) / GET_VASOCONSTRICTION(_unit)));
 private _enableFluidShift = EGVAR(vitals,enableFluidShift);
 private _fluidVolume = GET_BODY_FLUID(_unit);
-_fluidVolume params ["_ECB","_ECP","_SRBC","_ISP","_fullVolume"];
+_fluidVolume params ["_ECB","_ECP","_SRBC","_ISP","_fullVolume","_ECS"];
 
 _ECP = (_ECP + (_lossVolumeChange * LITERS_TO_ML) / 2) max 100;
 _ECB = (_ECB + (_lossVolumeChange * LITERS_TO_ML) / 2) max 100;
+_ECS = (_ECS + (_lossVolumeChange * LITERS_TO_ML) / 2) max 100;
 
 if (!isNil {_unit getVariable [QACEGVAR(medical,ivBags),[]]}) then {
     private _bloodBags = _unit getVariable [QACEGVAR(medical,ivBags), []];
@@ -63,20 +64,26 @@ if (!isNil {_unit getVariable [QACEGVAR(medical,ivBags),[]]}) then {
                 };
             };
 
-            // Plasma adds to ECP. Saline splits between the ECP and ISP. Blood adds to ECB
+            // Plasma adds to ECP. Saline splits between the ECS and ISP. Blood adds to ECB
             switch (true) do {
                 case(_type == "Plasma"): { _ECP = _ECP + _bagChange; _lossVolumeChange = _lossVolumeChange + (_bagChange / ML_TO_LITERS); };
-                case(_type == "Saline"): { 
+                case(_type in ["Saline", "RingersLactate"]): { 
                     if (_enableFluidShift) then {
-                        _ECP = _ECP + _bagChange / 2; 
+                        _ECS = _ECS + _bagChange / 2; 
                         _ISP = _ISP + _bagChange / 2; 
                         _lossVolumeChange = _lossVolumeChange + (_bagChange / 2000);
                     } else {
-                        _ECP = _ECP + _bagChange; 
-                        _lossVolumeChange = _lossVolumeChange + (_bagChange / ML_TO_LITERS);
+                        { _ECS = _ECS + _bagChange; _lossVolumeChange = _lossVolumeChange + (_bagChange / ML_TO_LITERS); };
                     };
                 };
                 case(_type == "Blood"): { _ECB = _ECB + _bagChange; _lossVolumeChange = _lossVolumeChange + (_bagChange / ML_TO_LITERS); };
+                case(_type == "PackedRBC"): {
+                    private _plasma = (_fluidVolume select 1);
+                    if _plasma <= 2000 then {
+                        _ECB = _ECB + _bagChange; 
+                        _lossVolumeChange = _lossVolumeChange + (_bagChange / ML_TO_LITERS); 
+                        };
+                    };
             };
         };
 
@@ -121,7 +128,7 @@ if (_enableFluidShift) then {
     _SRBC = _SRBC - (_SRBCChange * _deltaT);
 
     switch (true) do {
-        case (((_ECB + _ECP) > (_ISP * 0.6)) && ((_ECB + _ECP) > 4500)): {
+        case (((_ECB + _ECP) > (_ISP * 0.6)) && ((_ECB + _ECP + _ECS) > 4500)): {
             // Negative shifts only happen above 4500ml of blood volume, to prevent patients from falling back into arrest/unconsciousness
             _shiftValue = (1 min ((_ECP + _ECB) - (_ISP * 0.6))) * _deltaT;
 
@@ -147,6 +154,6 @@ if (_enableFluidShift) then {
     };
 };
 
-_unit setVariable [QEGVAR(circulation,bodyFluid), [_ECB, _ECP, _SRBC, _ISP, (_ECP + _ECB)], _syncValues];
+_unit setVariable [QEGVAR(circulation,bodyFluid), [_ECB, _ECP, _SRBC, _ISP, (_ECP + _ECB + _ECS), _ECS], _syncValues];
 
 ((_lossVolumeChange + GET_BLOOD_VOLUME_LITERS(_unit)) max 0.01)

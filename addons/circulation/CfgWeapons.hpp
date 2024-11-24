@@ -18,6 +18,9 @@ class CfgWeapons {
     class ACE_ItemCore;
     class CBA_MiscItem_ItemInfo;
     class ACE_bloodIV;
+    class ACE_salineIV;
+    class ACE_salineIV_500;
+    class ACE_salineIV_250;
 
     class kat_bloodIV_O: ACE_bloodIV {
         displayName = CSTRING(BloodIV_O);
@@ -95,6 +98,61 @@ class CfgWeapons {
     };
     class kat_bloodIV_AB_N_250: kat_bloodIV_O_250 {
         displayName = CSTRING(BloodIV_AB_250_N);
+    };
+    class kat_RingersLactateIV: ACE_salineIV {
+        scope = 2;
+        author = "Cplhardcore";
+        displayName = CSTRING(Ringers_Lactate_IV);
+        descriptionShort = CSTRING(Ringers_Lactate_IV_Desc_Short);
+        descriptionUse = CSTRING(Ringers_Lactate_IV_Desc_Use);
+        ACE_isMedicalItem = 1;
+        class ItemInfo: CBA_MiscItem_ItemInfo {
+            mass = 10;
+        };
+    };
+    class kat_RingersLactateIV_500: ACE_salineIV_500 {
+        scope = 2;
+        author = "Cplhardcore";
+        displayName = CSTRING(Ringers_Lactate_IV_500);
+        descriptionShort = CSTRING(Ringers_Lactate_IV_Desc_Short);
+        descriptionUse = CSTRING(Ringers_Lactate_IV_Desc_Use);
+        ACE_isMedicalItem = 1;
+        class ItemInfo: CBA_MiscItem_ItemInfo {
+            mass = 5;
+        };
+    };
+    class kat_RingersLactateIV_250: ACE_salineIV_250 {
+        scope = 2;
+        author = "Cplhardcore";
+        displayName = CSTRING(Ringers_Lactate_IV_250);
+        descriptionShort = CSTRING(Ringers_Lactate_IV_Desc_Short);
+        descriptionUse = CSTRING(Ringers_Lactate_IV_Desc_Use);
+        ACE_isMedicalItem = 1;
+        class ItemInfo: CBA_MiscItem_ItemInfo {
+            mass = 2.5;
+        };
+    };
+    class kat_PackedRBCIV_500: ACE_bloodIV_500 {
+        scope = 2;
+        author = "Cplhardcore";
+        displayName = CSTRING(Packed_RBC_IV_500);
+        descriptionShort = CSTRING(Packed_RBC_IV_Desc_Short);
+        descriptionUse = CSTRING(Packed_RBC_IV_Desc_Use);
+        ACE_isMedicalItem = 1;
+        class ItemInfo: CBA_MiscItem_ItemInfo {
+            mass = 5;
+        };
+    };
+    class kat_PackedRBCIV_250: ACE_bloodIV_250 {
+        scope = 2;
+        author = "Cplhardcore";
+        displayName = CSTRING(Packed_RBC_IV_250);
+        descriptionShort = CSTRING(Packed_RBC_IV_Desc_Short);
+        descriptionUse = CSTRING(Packed_RBC_IV_Desc_Use);
+        ACE_isMedicalItem = 1;
+        class ItemInfo: CBA_MiscItem_ItemInfo {
+            mass = 2.5;
+        };
     };
     class KAT_Empty_bloodIV_500: ACE_bloodIV
     {

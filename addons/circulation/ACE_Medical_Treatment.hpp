@@ -3,6 +3,9 @@ class ACE_Medical_Treatment {
         class BloodIV;
         class BloodIV_500;
         class BloodIV_250;
+        class SalineIV;
+        class SalineIV_500;
+        class SalineIV_250;
 
         class BloodIV_O: BloodIV {
             volume = 1000;
@@ -125,6 +128,21 @@ class ACE_Medical_Treatment {
             volume = 250;
             bloodType = "AB_N";
             compatibility[] = {"AB","AB_N"};
+        };
+        class RingersLactateIV: SalineIV {
+            volume = 1000;
+        };
+        class RingersLactateIV_500: SalineIV_500 {
+            volume = 500;
+        };
+        class RingersLactateIV_250: SalineIV_250 {
+            volume = 250;
+        };
+        class PackedRBC_500: BloodIV_500 {
+            volume = 500;
+        };
+        class PackedRBC_250: BloodIV_250 {
+            volume = 250;
         };
     };
 };
