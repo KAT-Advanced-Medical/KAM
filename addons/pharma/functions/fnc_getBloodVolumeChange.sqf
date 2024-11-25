@@ -43,7 +43,7 @@ if (!isNil {_unit getVariable [QACEGVAR(medical,ivBags),[]]}) then {
     private _incomingVolumeChange = [0,0,0,0,0,0];
     private _fluidWarmer = _unit getVariable [QEGVAR(hypothermia,fluidWarmer), [0,0,0,0,0,0]];
     private _fluidHeat = 0;
-    private _totalBagChange = 0;
+    private _incomingFlowAmount = [0,0,0,0,0,0];
     
     _bloodBags = _bloodBags apply {
         _x params ["_bagVolumeRemaining", "_type", "_bodyPart"];
@@ -55,8 +55,8 @@ if (!isNil {_unit getVariable [QACEGVAR(medical,ivBags),[]]}) then {
             private _IVrate = _unit getVariable [QGVAR(IVrate), [0,0,0,0,0,0]];
             private _bagChange = (_flowCalculation * (_IVflow select _bodyPart) * (_IVrate select _bodyPart)) min _bagVolumeRemaining; // absolute value of the change in miliLiters
             _bagVolumeRemaining = _bagVolumeRemaining - _bagChange;
-            _totalBagChange = _totalBagChange + _bagChange;
-
+            _incomingFlowAmount set [_bodyPart, ((_incomingFlowAmount select _bodyPart) + _bagChange)];
+            if ((_incomingFlowAmount select _bodyPart) > 8) then {hint str "oops, you blew your vein dumbass"};
             if (_hypothermia) then {
                 // If fluid warmers are on the line, fluids are "warmed" and added to the warmer. If there is no fluid warmer on the line, the fluids stayed cooled
                 if (_fluidWarmer select _bodyPart == 1) then {
@@ -92,6 +92,7 @@ if (!isNil {_unit getVariable [QACEGVAR(medical,ivBags),[]]}) then {
                     } else {
                         _ECP = _ECP + _bagChange; _lossVolumeChange = _lossVolumeChange + (_bagChange / ML_TO_LITERS);
                     }
+                    
             };
         };
 
@@ -101,21 +102,21 @@ if (!isNil {_unit getVariable [QACEGVAR(medical,ivBags),[]]}) then {
             [_bagVolumeRemaining, _type, _bodyPart]
         };
     };
-
     _bloodBags = _bloodBags - [[]]; // remove empty bags
-
-    if (_bloodBags isEqualTo []) then {
-    _totalBagChange = 0;
-    };
-
-    systemChat str format ["Total fluids administered this cycle: %1 mL", _totalBagChange];
+    
+    private _totalFlowAmount = 0;
+    {
+        _totalFlowAmount = _totalFlowAmount + _x;
+    } forEach _incomingFlowAmount;
+    private _flowDifference = _totalFlowAmount - 10;
+    if ((_totalFlowAmount * _vasoconstriction) >= 10) then {[_unit, _flowDifference] call FUNC(handleIVComplications)};
 
     if (_bloodBags isEqualTo []) then {
         _unit setVariable [QACEGVAR(medical,ivBags), nil, true]; // no bags left - clear variable (always globaly sync this)    
     } else {
         _unit setVariable [QACEGVAR(medical,ivBags), _bloodBags, _syncValues];
     };
-
+    systemchat str _incomingFlowAmount;
     // Incoming fluids impacting internal temperature
     if (_hypothermia) then {
         { _fluidHeat = _fluidHeat + _x; } forEach _incomingVolumeChange;
@@ -142,7 +143,7 @@ if (_enableFluidShift) then {
     _SRBC = _SRBC - (_SRBCChange * _deltaT);
 
     switch (true) do {
-        case (((_ECB + _ECP) > (_ISP * 0.6)) && ((_ECB + _ECP + _ECS) > 4500)): {
+        case (((_ECB + _ECP) > (_ISP * 0.6)) && ((_ECB + _ECP) > 4500)): {
             // Negative shifts only happen above 4500ml of blood volume, to prevent patients from falling back into arrest/unconsciousness
             _shiftValue = (1 min ((_ECP + _ECB) - (_ISP * 0.6))) * _deltaT;
 
@@ -168,6 +169,6 @@ if (_enableFluidShift) then {
     };
 };
 
-_unit setVariable [QEGVAR(circulation,bodyFluid), [_ECB, _ECP, _SRBC, _ISP, (_ECP + _ECB + _ECS), _ECS], _syncValues];
+_unit setVariable [QEGVAR(circulation,bodyFluid), [_ECB, _ECP, _SRBC, _ISP, (_ECP + _ECB)], _syncValues];
 
 ((_lossVolumeChange + GET_BLOOD_VOLUME_LITERS(_unit)) max 0.01)
