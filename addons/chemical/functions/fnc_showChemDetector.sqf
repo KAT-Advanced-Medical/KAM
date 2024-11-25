@@ -58,7 +58,8 @@ private _exposure = _display displayCtrl 18805;
 
     if (_intensity > 0.1) then {
         private _lastSoundTime = _unit getVariable QGVAR(lastSoundTime);
-_unit setVariable [QGVAR(areaIntensity), 0, true];
+        _unit setVariable [QGVAR(areaIntensity), 0, true];
+
         if (isNil "_lastSoundTime") then {
             TRACE_1("undefined lastSoundTime: setting to current time",_lastSoundTime);
             _unit setVariable [QGVAR(lastSoundTime), CBA_missionTime];
