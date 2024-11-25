@@ -126,29 +126,29 @@ class PackedRBCIV_500: BloodIV {
     displayName = CSTRING(Actions_Packed_RBC_500);
     items[] = {"kat_PackedRBCIV_500"};
     displayNameProgress = CSTRING(Transfusing_Packed_RBC);
-    callbackSuccess = "[_medic, _patient, _bodyPart, _className, _itemUser, _usedItem] call ace_medical_treatment_fnc_ivBag; [_patient, -400, 16, _className] call kat_pharma_fnc_fluid;";
+    callbackSuccess = "[_medic, _patient, _bodyPart, _className, _itemUser, _usedItem] call ace_medical_treatment_fnc_ivBag; [_patient, -400, 12, _className] call kat_pharma_fnc_fluid;";
 };
 class PackedRBC_250: BloodIV {
     displayName = CSTRING(Actions_Packed_RBC_250);
     items[] = {"kat_PackedRBCIV_250"};
     displayNameProgress = CSTRING(Transfusing_Packed_RBC);
-    callbackSuccess = "[_medic, _patient, _bodyPart, _className, _itemUser, _usedItem] call ace_medical_treatment_fnc_ivBag; [_patient, -200, 8, _className] call kat_pharma_fnc_fluid;";
+    callbackSuccess = "[_medic, _patient, _bodyPart, _className, _itemUser, _usedItem] call ace_medical_treatment_fnc_ivBag; [_patient, -200, 6, _className] call kat_pharma_fnc_fluid;";
 };
 class RingersLactateIV: SalineIV {
     displayName = CSTRING(Actions_Ringers_Lactate);
     items[] = {"kat_RingersLactateIV"};
     displayNameProgress = CSTRING(Transfusing_Ringers_Lactate);
-    callbackSuccess = "[_medic, _patient, _bodyPart, _className, _itemUser, _usedItem] call ace_medical_treatment_fnc_ivBag; [_patient, 0, 0, _className] call kat_pharma_fnc_fluid;";
+    callbackSuccess = "[_medic, _patient, _bodyPart, _className, _itemUser, _usedItem] call ace_medical_treatment_fnc_ivBag; [_patient, -200, 0, _className] call kat_pharma_fnc_fluid;";
 };
 class RingersLactateIV_500: SalineIV {
     displayName = CSTRING(Actions_Ringers_Lactate_500);
     items[] = {"kat_RingersLactateIV_500"};
     displayNameProgress = CSTRING(Transfusing_Ringers_Lactate);
-    callbackSuccess = "[_medic, _patient, _bodyPart, _className, _itemUser, _usedItem] call ace_medical_treatment_fnc_ivBag; [_patient, 0, 0, _className] call kat_pharma_fnc_fluid;";
+    callbackSuccess = "[_medic, _patient, _bodyPart, _className, _itemUser, _usedItem] call ace_medical_treatment_fnc_ivBag; [_patient, -100, 0, _className] call kat_pharma_fnc_fluid;";
 };
 class RingersLactateIV_250: SalineIV {
     displayName = CSTRING(Actions_Ringers_Lactate_250);
     items[] = {"kat_RingersLactateIV_250"};
     displayNameProgress = CSTRING(Transfusing_Ringers_Lactate);
-    callbackSuccess = "[_medic, _patient, _bodyPart, _className, _itemUser, _usedItem] call ace_medical_treatment_fnc_ivBag; [_patient, 0, 0, _className] call kat_pharma_fnc_fluid;";
+    callbackSuccess = "[_medic, _patient, _bodyPart, _className, _itemUser, _usedItem] call ace_medical_treatment_fnc_ivBag; [_patient, -50, 0, _className] call kat_pharma_fnc_fluid;";
 };
