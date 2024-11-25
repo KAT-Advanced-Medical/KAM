@@ -24,17 +24,17 @@ private _internalBleeding = GET_INTERNAL_BLEEDING(_unit);
 private _lossVolumeChange = (-_deltaT * ((_bloodLoss + _internalBleeding * (GET_HEART_RATE(_unit) / DEFAULT_HEART_RATE)) / GET_VASOCONSTRICTION(_unit)));
 private _enableFluidShift = EGVAR(vitals,enableFluidShift);
 private _fluidVolume = GET_BODY_FLUID(_unit);
-_fluidVolume params ["_ECB","_ECP","_SRBC","_ISP","_fullVolume","_ECS"];
+_fluidVolume params ["_ECB","_ECP","_SRBC","_ISP","_fullVolume"];
 
 _ECP = (_ECP + (_lossVolumeChange * LITERS_TO_ML) / 2) max 100;
 _ECB = (_ECB + (_lossVolumeChange * LITERS_TO_ML) / 2) max 100;
-_ECS = (_ECS + (_lossVolumeChange * LITERS_TO_ML) / 2) max 100;
 
 if (!isNil {_unit getVariable [QACEGVAR(medical,ivBags),[]]}) then {
     private _bloodBags = _unit getVariable [QACEGVAR(medical,ivBags), []];
     private _IVarray = _unit getVariable [QGVAR(IV), [0,0,0,0,0,0]];
     private _flowCalculation = (ACEGVAR(medical,ivFlowRate) * _deltaT * 4.16);
     private _hypothermia = EGVAR(hypothermia,hypothermiaActive);
+    private _vasoconstriction = GET_VASOCONSTRICTION(_unit);
 
     if (GET_HEART_RATE(_unit) < 20) then {
         _flowCalculation = _flowCalculation / 1.5;
@@ -43,7 +43,8 @@ if (!isNil {_unit getVariable [QACEGVAR(medical,ivBags),[]]}) then {
     private _incomingVolumeChange = [0,0,0,0,0,0];
     private _fluidWarmer = _unit getVariable [QEGVAR(hypothermia,fluidWarmer), [0,0,0,0,0,0]];
     private _fluidHeat = 0;
-
+    private _totalBagChange = 0;
+    
     _bloodBags = _bloodBags apply {
         _x params ["_bagVolumeRemaining", "_type", "_bodyPart"];
 
@@ -54,6 +55,7 @@ if (!isNil {_unit getVariable [QACEGVAR(medical,ivBags),[]]}) then {
             private _IVrate = _unit getVariable [QGVAR(IVrate), [0,0,0,0,0,0]];
             private _bagChange = (_flowCalculation * (_IVflow select _bodyPart) * (_IVrate select _bodyPart)) min _bagVolumeRemaining; // absolute value of the change in miliLiters
             _bagVolumeRemaining = _bagVolumeRemaining - _bagChange;
+            _totalBagChange = _totalBagChange + _bagChange;
 
             if (_hypothermia) then {
                 // If fluid warmers are on the line, fluids are "warmed" and added to the warmer. If there is no fluid warmer on the line, the fluids stayed cooled
@@ -64,19 +66,23 @@ if (!isNil {_unit getVariable [QACEGVAR(medical,ivBags),[]]}) then {
                 };
             };
 
-            // Plasma adds to ECP. Saline splits between the ECS and ISP. Blood adds to ECB
+            // Plasma adds to ECP. Saline splits between the ECP and ISP. Blood splits between the ECP and ECB
             switch (true) do {
                 case(_type == "Plasma"): { _ECP = _ECP + _bagChange; _lossVolumeChange = _lossVolumeChange + (_bagChange / ML_TO_LITERS); };
                 case(_type in ["Saline", "RingersLactate"]): { 
                     if (_enableFluidShift) then {
-                        _ECS = _ECS + _bagChange / 2; 
+                        _ECP = _ECP + _bagChange / 2; 
                         _ISP = _ISP + _bagChange / 2; 
                         _lossVolumeChange = _lossVolumeChange + (_bagChange / 2000);
                     } else {
-                        { _ECS = _ECS + _bagChange; _lossVolumeChange = _lossVolumeChange + (_bagChange / ML_TO_LITERS); };
+                        { _ECP = _ECP + _bagChange; _lossVolumeChange = _lossVolumeChange + (_bagChange / ML_TO_LITERS); };
                     };
                 };
-                case(_type == "Blood"): { _ECB = _ECB + _bagChange; _lossVolumeChange = _lossVolumeChange + (_bagChange / ML_TO_LITERS); };
+                case(_type == "Blood"): { 
+                    _ECB = _ECB + _bagChange / 2; 
+                    _ECP = _ECP + _bagChange / 2; 
+                    _lossVolumeChange = _lossVolumeChange + (_bagChange / ML_TO_LITERS); 
+                    };
                 case(_type == "PackedRBC"): {
                     private _plasma = (_fluidVolume select 1);
                     if _plasma <= 2000 then {
@@ -99,7 +105,13 @@ if (!isNil {_unit getVariable [QACEGVAR(medical,ivBags),[]]}) then {
     _bloodBags = _bloodBags - [[]]; // remove empty bags
 
     if (_bloodBags isEqualTo []) then {
-        _unit setVariable [QACEGVAR(medical,ivBags), nil, true]; // no bags left - clear variable (always globaly sync this)
+    _totalBagChange = 0;
+    };
+
+    systemChat str format ["Total fluids administered this cycle: %1 mL", _totalBagChange];
+
+    if (_bloodBags isEqualTo []) then {
+        _unit setVariable [QACEGVAR(medical,ivBags), nil, true]; // no bags left - clear variable (always globaly sync this)    
     } else {
         _unit setVariable [QACEGVAR(medical,ivBags), _bloodBags, _syncValues];
     };
