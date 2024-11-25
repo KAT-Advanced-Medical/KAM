@@ -9,6 +9,8 @@ PREP(getBloodVolumeChange);
 PREP(gui_updateBodyImage);
 PREP(gui_updateInjuryListPart);
 PREP(handleRespawn);
+PREP(handleIVComplications);
+PREP(handleLimbIVComplications);
 PREP(init);
 PREP(inspectCatheter);
 PREP(medication);
