@@ -1076,5 +1076,23 @@ PREP_RECOMPILE_END;
     [0.1, 10, 7, 1],
     true
 ] call CBA_Settings_fnc_init;
+    
+[
+    QGVAR(CheckVein_MedLevel),
+    "LIST",
+    LLSTRING(SETTING_CheckVein_MedLevel),
+    [CBA_SETTINGS_CAT, ELSTRING(GUI,SubCategory_Basic)],
+    [[0, 1, 2], ["STR_ACE_Medical_Treatment_Anyone", "STR_ACE_Medical_Treatment_Medics", "STR_ACE_Medical_Treatment_Doctors"], 0],
+    true
+] call CBA_Settings_fnc_init;
+
+[
+    QGVAR(CheckVein_TreatmentTime),
+    "TIME",
+    LLSTRING(SETTING_CheckVein_treatmentTime),
+    [CBA_SETTINGS_CAT, ELSTRING(GUI,SubCategory_Basic)],
+    [1, 30, 4],
+    true
+] call CBA_Settings_fnc_init;
 
 ADDON = true;
