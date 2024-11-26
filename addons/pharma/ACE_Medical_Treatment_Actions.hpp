@@ -413,4 +413,20 @@ class ACE_Medical_Treatment_Actions {
         callbackSuccess = QFUNC(treatmentAdvanced_CheckCoag);
         litter[] = {};
     };
+    class CheckVein: CheckPulse {
+        displayName = CSTRING(CheckVein_DisplayName);
+        displayNameProgress = CSTRING(CheckVein_DisplayNameProgress);
+        allowedSelections[] = {"LeftArm", "RightArm", "Left Leg", "Right leg"};
+        treatmentLocations = 0;
+        medicRequired = QGVAR(CheckVein_MedLevel);
+        treatmentTime = QGVAR(CheckVein_TreatmentTime);
+        category = "examine";
+        consumeItem = 0;
+        condition = "";
+        callbackProgress = "";
+        callbackStart = "";
+        callbackFailure = "";
+        callbackSuccess = QFUNC(treatmentAdvanced_CheckVein);
+        litter[] = {};
+    };
 };

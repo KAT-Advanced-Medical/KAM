@@ -28,6 +28,7 @@ PREP(treatmentAdvanced_Carbonate);
 PREP(treatmentAdvanced_CWMP);
 PREP(treatmentAdvanced_CarbonateLocal);
 PREP(treatmentAdvanced_CheckCoag);
+PREP(treatmentAdvanced_CheckVein);
 PREP(treatmentAdvanced_Dialysis);
 PREP(treatmentAdvanced_DialysisLocal);
 PREP(treatmentAdvanced_EACALocal);

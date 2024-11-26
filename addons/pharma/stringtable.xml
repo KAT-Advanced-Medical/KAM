@@ -3852,5 +3852,23 @@
             <Dutch>Injecteer IV Adrenaline</Dutch>
             <French>Administrer l'épinéphrine</French>
         </Key>
+        <Key ID="STR_KAT_Pharma_CheckVein_DisplayName">
+            <English>Check Veins</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_CheckVein_DisplayNameProgress">
+            <English>Checking Veins</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_SETTING_CheckVein_MedLevel">
+            <English>Medical level required to Check Veins</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_SETTING_CheckVein_treatmentTime">
+            <English>Treatment time to Check Veins</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_CheckVein_VeinBlown">
+            <English>The Veins are Blown</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_CheckVein_VeinFine">
+            <English>The Veins are Normal</English>
+        </Key>
     </Package>
 </Project>

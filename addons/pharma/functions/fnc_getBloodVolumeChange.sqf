@@ -52,10 +52,17 @@ if (!isNil {_unit getVariable [QACEGVAR(medical,ivBags),[]]}) then {
 
         if ((_tourniquets select _bodyPart isEqualTo 0) && (_IVarray select _bodyPart isNotEqualTo 3)) then {
             private _IVflow = _unit getVariable [QGVAR(IVflow), [0,0,0,0,0,0]];
-            private _bagChange = (_flowCalculation * (_IVflow select _bodyPart)) min _bagVolumeRemaining; // absolute value of the change in miliLiters
+            private _viscosity = 1
+            switch (true) do {
+                case(_type in ["Plasma", "Blood"]): {_viscosity = 1};
+                case(_type in ["Saline", "RingersLactate"]): {_viscosity = 1.3};
+                case(_type == "PackedRBC"): {_viscosity = 0.8};  
+            };
+            private _bagChange = (_flowCalculation * (_IVflow select _bodyPart) * _viscosity) min _bagVolumeRemaining; // absolute value of the change in miliLiters
             _bagVolumeRemaining = _bagVolumeRemaining - _bagChange;
             _incomingFlowAmount set [_bodyPart, ((_incomingFlowAmount select _bodyPart) + _bagChange)];
-            if ((_incomingFlowAmount select _bodyPart) > 8) then {hint str "oops, you blew your vein dumbass"};
+            private _incomingFlowDifference = _incomingFlowAmount - 10;
+            if ((_incomingFlowAmount select _bodyPart) > (10 * _vasoconstriction)) then {[_unit, _bodyPart , _incomingFlowDifference] call FUNC(handleLimbIVComplications)};
             if (_hypothermia) then {
                 // If fluid warmers are on the line, fluids are "warmed" and added to the warmer. If there is no fluid warmer on the line, the fluids stayed cooled
                 if (_fluidWarmer select _bodyPart == 1) then {
@@ -90,8 +97,7 @@ if (!isNil {_unit getVariable [QACEGVAR(medical,ivBags),[]]}) then {
                         };
                     } else {
                         _ECP = _ECP + _bagChange; _lossVolumeChange = _lossVolumeChange + (_bagChange / ML_TO_LITERS);
-                    }
-                    
+                    }   
             };
         };
 
@@ -108,14 +114,13 @@ if (!isNil {_unit getVariable [QACEGVAR(medical,ivBags),[]]}) then {
         _totalFlowAmount = _totalFlowAmount + _x;
     } forEach _incomingFlowAmount;
     private _flowDifference = _totalFlowAmount - 10;
-    if ((_totalFlowAmount * _vasoconstriction) >= 10) then {[_unit, _flowDifference] call FUNC(handleIVComplications)};
+    if ((_totalFlowAmount) >= (10 * _vasoconstriction)) then {[_unit, _flowDifference] call FUNC(handleIVComplications)};
 
     if (_bloodBags isEqualTo []) then {
         _unit setVariable [QACEGVAR(medical,ivBags), nil, true]; // no bags left - clear variable (always globaly sync this)    
     } else {
         _unit setVariable [QACEGVAR(medical,ivBags), _bloodBags, _syncValues];
     };
-    systemchat str _incomingFlowAmount;
     // Incoming fluids impacting internal temperature
     if (_hypothermia) then {
         { _fluidHeat = _fluidHeat + _x; } forEach _incomingVolumeChange;

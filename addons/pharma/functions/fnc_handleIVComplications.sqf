@@ -16,4 +16,4 @@
  * Public: No
  */
  params ["_unit", "_flowDifference"];
- if (_flowDifference > 1) then (hint str "oops, you blew a vein");
+
