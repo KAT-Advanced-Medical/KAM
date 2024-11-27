@@ -22,11 +22,11 @@ params ["_medic", "_patient", "_bodypart"];
  private _partIndex = ALL_BODY_PARTS find toLower _bodyPart;
  private _IVarray = _patient getVariable [QGVAR(IV), [0,0,0,0,0,0]];
  private _IVactual = _IVarray select _partIndex;
+
  if (_IVactual == 9) then {
-        hint str LLSTRING(CheckVein_VeinBlown);
-        [{hint "";}, [], 10] call CBA_fnc_waitAndExecute;
-        }
-    else {
-        hint str LLSTRING(CheckVein_VeinFine);
-        [{hint "";}, [], 10] call CBA_fnc_waitAndExecute;
-        };
+    hint str LLSTRING(CheckVein_VeinBlown);
+    [{hint "";}, [], 10] call CBA_fnc_waitAndExecute;
+} else {
+    hint str LLSTRING(CheckVein_VeinFine);
+    [{hint "";}, [], 10] call CBA_fnc_waitAndExecute;
+};
