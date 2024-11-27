@@ -44,7 +44,10 @@
                 _IVarray set [_partIndex, 9];
                 _unit setVariable [QGVAR(IV), _IVarray, true];
                 [objNull, _unit, _bodypart] call EFUNC(pharma,removeIV);
-                [{_IVarray set [_partIndex, 0]; _unit setVariable [QGVAR(IV), _IVarray, true];}, [_unit], 180]call CBA_fnc_waitAndExecute;
+
+                [{
+                    _IVarray set [_partIndex, 0]; _unit setVariable [QGVAR(IV), _IVarray, true];
+                }, [_unit], 180] call CBA_fnc_waitAndExecute;
             };
         };
         case ((_incomingFlowDifference < 7) && (_incomingFlowDifference <= 4)): {
@@ -57,8 +60,10 @@
                 _IVarray set [_partIndex, 9];
                 _unit setVariable [QGVAR(IV), _IVarray, true];
                 [objNull, _unit, _bodypart] call EFUNC(pharma,removeIV);
-                [{_IVarray set [_partIndex, 0]; _unit setVariable [QGVAR(IV), _IVarray, true];}, [_unit], 180]call CBA_fnc_waitAndExecute;
 
+                [{
+                    _IVarray set [_partIndex, 0]; _unit setVariable [QGVAR(IV), _IVarray, true];
+                }, [_unit], 180] call CBA_fnc_waitAndExecute;
             };
         };
         case (_incomingFlowDifference >= 7): {
@@ -67,9 +72,11 @@
 
             _IVarray set [_partIndex, 9];
             _unit setVariable [QGVAR(IV), _IVarray, true];
-
             [objNull, _unit, _bodypart] call EFUNC(pharma,removeIV);
-            [{_IVarray set [_partIndex, 0]; _unit setVariable [QGVAR(IV), _IVarray, true];}, [_unit], 180]call CBA_fnc_waitAndExecute;
+
+            [{
+                _IVarray set [_partIndex, 0]; _unit setVariable [QGVAR(IV), _IVarray, true];
+            }, [_unit], 180] call CBA_fnc_waitAndExecute;
         };
     };
 };
