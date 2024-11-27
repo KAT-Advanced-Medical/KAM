@@ -54,10 +54,14 @@ if (!isNil {_unit getVariable [QACEGVAR(medical,ivBags),[]]}) then {
             private _IVflow = _unit getVariable [QGVAR(IVflow), [0,0,0,0,0,0]];
             private _viscosity = getNumber (configFile >> "ACE_Medical_Treatment" >> "IV" >> _className >> "viscosity");
             private _bagChange = (_flowCalculation * (_IVflow select _bodyPart) * _viscosity) min _bagVolumeRemaining; // absolute value of the change in miliLiters
+
             _bagVolumeRemaining = _bagVolumeRemaining - _bagChange;
             _incomingFlowAmount set [_bodyPart, ((_incomingFlowAmount select _bodyPart) + _bagChange)];
+
             private _incomingFlowDifference = _incomingFlowAmount - 10;
+
             if ((_incomingFlowAmount select _bodyPart) > (10 * _vasoconstriction)) then {[_unit, _bodyPart , _incomingFlowDifference] call FUNC(handleLimbIVComplications)};
+
             if (_hypothermia) then {
                 // If fluid warmers are on the line, fluids are "warmed" and added to the warmer. If there is no fluid warmer on the line, the fluids stayed cooled
                 if (_fluidWarmer select _bodyPart == 1) then {
@@ -92,16 +96,16 @@ if (!isNil {_unit getVariable [QACEGVAR(medical,ivBags),[]]}) then {
                     _ECB = _ECB + _bagChange / 2; 
                     _ECP = _ECP + _bagChange / 2; 
                     _lossVolumeChange = _lossVolumeChange + (_bagChange / ML_TO_LITERS); 
-                    };
+                };
                 case(_type == "PackedRBC"): {
                     private _plasma = (_fluidVolume select 1);
                     if _plasma <= 2000 then {
                         _ECB = _ECB + _bagChange; 
                         _lossVolumeChange = _lossVolumeChange + (_bagChange / ML_TO_LITERS); 
-                        };
                     } else {
                         _ECP = _ECP + _bagChange; _lossVolumeChange = _lossVolumeChange + (_bagChange / ML_TO_LITERS);
-                    }   
+                    };
+                };
             };
         };
 
