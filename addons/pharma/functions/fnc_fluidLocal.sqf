@@ -25,9 +25,9 @@ private _fluidVolume = GET_BODY_FLUID(_unit);
 _patient setVariable [QGVAR(externalPh), ((_current + _ph) max 0), true];
 _fluidVolume params ["_ECB","_ECP","_SRBC","_ISP","_fullVolume","_ECS"];
 
-if (_classname in ["PackedRBCIV_500", "PackedRBCIV_250"])
-    then {
-        private _plasma = (_fluidVolume select 1);
+if (_classname in ["PackedRBCIV_500", "PackedRBCIV_250"]) then {
+    private _plasma = (_fluidVolume select 1);
+
         if _plasma <= 2000 then {
             private _coagFactorMax = missionNamespace getVariable [QGVAR(coagulation_factor_limit), 60];
             private _factor = _patient getVariable [QGVAR(coagulationFactor), 30];
