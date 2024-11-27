@@ -54,12 +54,7 @@ if (!isNil {_unit getVariable [QACEGVAR(medical,ivBags),[]]}) then {
             private _IVflow = _unit getVariable [QGVAR(IVflow), [0,0,0,0,0,0]];
             private _IVrate = _unit getVariable [QGVAR(IVrate), [0,0,0,0,0,0]];
             private _bagChange = (_flowCalculation * (_IVflow select _bodyPart) * (_IVrate select _bodyPart)) min _bagVolumeRemaining; // absolute value of the change in miliLiters
-            private _viscosity = 1
-            switch (true) do {
-                case(_type in ["Plasma", "Blood"]): {_viscosity = 1};
-                case(_type in ["Saline", "RingersLactate"]): {_viscosity = 1.3};
-                case(_type == "PackedRBC"): {_viscosity = 0.8};  
-            };
+            private _viscosity = getNumber (configFile >> "ACE_Medical_Treatment" >> "IV" >> _className >> "viscosity");
             private _bagChange = (_flowCalculation * (_IVflow select _bodyPart) * _viscosity) min _bagVolumeRemaining; // absolute value of the change in miliLiters
             _bagVolumeRemaining = _bagVolumeRemaining - _bagChange;
             _incomingFlowAmount set [_bodyPart, ((_incomingFlowAmount select _bodyPart) + _bagChange)];
@@ -74,13 +69,22 @@ if (!isNil {_unit getVariable [QACEGVAR(medical,ivBags),[]]}) then {
                 };
             };
 
-            // Plasma adds to ECP. Saline splits between the ECP and ISP. Blood splits between the ECP and ECB
+            // Plasma adds to ECP. Saline splits between the ECP and ISP. Blood splits between the ECP and ECB, Ringers Lactate splits 75/25 to ECP and ISP, RBCs adds to ECB
             switch (true) do {
                 case(_type == "Plasma"): { _ECP = _ECP + _bagChange; _lossVolumeChange = _lossVolumeChange + (_bagChange / ML_TO_LITERS); };
-                case(_type in ["Saline", "RingersLactate"]): { 
+                case(_type == "Saline"): { 
                     if (_enableFluidShift) then {
                         _ECP = _ECP + _bagChange / 2; 
                         _ISP = _ISP + _bagChange / 2; 
+                        _lossVolumeChange = _lossVolumeChange + (_bagChange / 2000);
+                    } else {
+                        { _ECP = _ECP + _bagChange; _lossVolumeChange = _lossVolumeChange + (_bagChange / ML_TO_LITERS); };
+                    };
+                };
+                case(_type == "Ringers Lactate"): { // TODO: talk to mike about fluid producs in trauma
+                    if (_enableFluidShift) then {
+                        _ECP = _ECP + _bagChange * 0.75; 
+                        _ISP = _ISP + _bagChange * 0.25; 
                         _lossVolumeChange = _lossVolumeChange + (_bagChange / 2000);
                     } else {
                         { _ECP = _ECP + _bagChange; _lossVolumeChange = _lossVolumeChange + (_bagChange / ML_TO_LITERS); };
