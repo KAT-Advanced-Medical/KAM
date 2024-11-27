@@ -121,14 +121,16 @@ if (!isNil {_unit getVariable [QACEGVAR(medical,ivBags),[]]}) then {
     {
         _totalFlowAmount = _totalFlowAmount + _x;
     } forEach _incomingFlowAmount;
+
     private _flowDifference = _totalFlowAmount - 10;
-    if ((_totalFlowAmount) >= (10 * _vasoconstriction)) then {[_unit, _flowDifference] call FUNC(handleIVComplications)};
+    if ((_totalFlowAmount) >= (10 * _vasoconstriction)) then { [_unit, _flowDifference] call FUNC(handleIVComplications); };
 
     if (_bloodBags isEqualTo []) then {
         _unit setVariable [QACEGVAR(medical,ivBags), nil, true]; // no bags left - clear variable (always globaly sync this)    
     } else {
         _unit setVariable [QACEGVAR(medical,ivBags), _bloodBags, _syncValues];
     };
+
     // Incoming fluids impacting internal temperature
     if (_hypothermia) then {
         { _fluidHeat = _fluidHeat + _x; } forEach _incomingVolumeChange;
