@@ -37,23 +37,23 @@
                 [_unit, 0.3] call ACEFUNC(medical_status,adjustPainLevel);
                 [objNull, _unit, _bodypart] call EFUNC(pharma,removeIV);
             };
-            if (random(100) < 1) then {
+            if (random(100) < 4) then {
                 _IVarray set [_partIndex, 9];
                 _unit setVariable [QGVAR(IV), _IVarray, true];
                 [objNull, _unit, _bodypart] call EFUNC(pharma,removeIV);
-                [{_IVarray set [_partIndex, 0]; _unit setVariable [QGVAR(IV), _IVarray, true];}, 180, [_unit]]call CBA_fnc_addPerFrameHandler;
+                [{_IVarray set [_partIndex, 0]; _unit setVariable [QGVAR(IV), _IVarray, true];}, [_unit], 180]call CBA_fnc_waitAndExecute;
             };
         };
         case ((_incomingFlowDifference < 7) && (_incomingFlowDifference <= 4)): {
-            if (random(100) < 50) then {
+            if (random(100) < 60) then {
                 [_unit, 0.3] call ACEFUNC(medical_status,adjustPainLevel);
                 [objNull, _unit, _bodypart] call EFUNC(pharma,removeIV);
             };
-            if (random(100) < 25) then {
+            if (random(100) < 30) then {
                 _IVarray set [_partIndex, 9];
                 _unit setVariable [QGVAR(IV), _IVarray, true];
                 [objNull, _unit, _bodypart] call EFUNC(pharma,removeIV);
-                [{_IVarray set [_partIndex, 0]; _unit setVariable [QGVAR(IV), _IVarray, true];}, 180, [_unit]]call CBA_fnc_addPerFrameHandler;
+                [{_IVarray set [_partIndex, 0]; _unit setVariable [QGVAR(IV), _IVarray, true];}, [_unit], 180]call CBA_fnc_waitAndExecute;
 
             };
         };
@@ -63,7 +63,7 @@
             _IVarray set [_partIndex, 9];
             _unit setVariable [QGVAR(IV), _IVarray, true];
             [objNull, _unit, _bodypart] call EFUNC(pharma,removeIV);
-            [{_IVarray set [_partIndex, 0]; _unit setVariable [QGVAR(IV), _IVarray, true];}, 180, [_unit]]call CBA_fnc_addPerFrameHandler;
+            [{_IVarray set [_partIndex, 0]; _unit setVariable [QGVAR(IV), _IVarray, true];}, [_unit], 180]call CBA_fnc_waitAndExecute;
         };
     };
 };
