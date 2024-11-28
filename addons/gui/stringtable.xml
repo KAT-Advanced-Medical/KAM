@@ -261,5 +261,17 @@
         <Key ID="STR_KAT_GUI_OpenSyringeMenu">
             <English>Syringe Prep</English>
         </Key>
+        <Key ID="STR_KAT_GUI_Make_All_Selections">
+            <English>Please make a selection in All Categories</English>
+        </Key>
+        <Key ID="STR_KAT_GUI_No_Syringe_Available">
+            <English>That is not a valid Syringe Combo</English>
+        </Key>
+        <Key ID="STR_KAT_GUI_Preparing_Syringe">
+            <English>Preparing %1</English>
+        </Key>
+        <Key ID="STR_KAT_GUI_Prepared_Syringe">
+            <English>Prepared %1</English>
+        </Key>
     </Package>
 </Project>

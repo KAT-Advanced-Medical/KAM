@@ -111,7 +111,7 @@ if (ACEGVAR(medical_gui,target) == ACE_player) then {
     _ctrl ctrlSetTooltip ACELLSTRING(medical_gui,ToggleToSelf);
 };
 private _syringeMenuStatus = player getVariable ["SyringeMenu", false];
-if (_syringeMenuStatus == true) then {
+if (_syringeMenuStatus) then {
     [] call FUNC(openSyringeMenu);
 } else {
     [] call FUNC(closeSyringeMenu);

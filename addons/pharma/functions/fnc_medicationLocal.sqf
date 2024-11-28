@@ -120,7 +120,7 @@ if (_maxRelief > 0) then {
         _painReduce = _painReduce / 4;
     };
 };
-if (QGVAR(AMS_Enabled)) then {
+if (GVAR(AMS_Enabled)) then {
     private _medicationParts = (_className splitString "_");
 
     if (count _medicationParts > 3) then {
@@ -141,7 +141,7 @@ if (QGVAR(AMS_Enabled)) then {
     [_patient, _className, _incompatibleMedication] call ACEFUNC(medical_treatment,onMedicationUsage);
 };
 
-if (QGVAR(AMS_Enabled)) then {
+if (GVAR(AMS_Enabled)) then {
 
     private _medicationParts = (_className splitString "_");
 

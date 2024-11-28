@@ -4294,10 +4294,10 @@
         <Key ID="STR_KAT_Pharma_push_lidocaine_IV_3">
             <English>Push 80mg Lidocaine IV</English>
         </Key>
-        <Key ID="STR_KAT_Pharma_push_atropineIV_IV_1">
+        <Key ID="STR_KAT_Pharma_push_atropine_IV_1">
             <English>Push 0.6mg Atropine IV</English>
         </Key>
-        <Key ID="STR_KAT_Pharma_push_atropineIV_IV_3">
+        <Key ID="STR_KAT_Pharma_push_atropine_IV_3">
             <English>Push 2mg Atropine IV</English>
         </Key>
         <Key ID="STR_KAT_Pharma_push_ketamine_IV_1">

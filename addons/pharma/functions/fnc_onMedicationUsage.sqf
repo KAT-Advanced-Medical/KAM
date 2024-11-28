@@ -20,7 +20,7 @@
 params ["_target", "_className", "_incompatibleMedication"];
 TRACE_3("onMedicationUsage",_target,_className,_incompatibleMedication);
 
-if (QGVAR(AMS_Enabled)) then {
+if (GVAR(AMS_Enabled)) then {
     private _medicationParts = (_className splitString "_");
 
     if (count _medicationParts > 3) then {
