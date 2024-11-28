@@ -305,4 +305,13 @@ class ACE_Medical_Treatment_Actions {
         condition = QUOTE((missionNamespace getVariable [ARR_2(QQGVAR(enable),true)]) && ((_patient getVariable [ARR_2(QQGVAR(etco2Monitor),[])] findIf {_x == 'NasalCannula'}) > -1));
         callbackSuccess = QFUNC(treatmentAdvanced_removeNasalCannula);
     };
+    class RemoveOxyMask : NasalCannula {
+        displayName = CSTRING(Remove_OxyMask);
+        displayNameProgress = ECSTRING(airway,action_removing);
+        medicRequired = 0;
+        treatmentTime = 5;
+        items[] = {};
+        condition = QUOTE(_patient call EFUNC(breathing,checkMask));
+        callbackSuccess = QFUNC(removeOxygenMask);
+    };
 };

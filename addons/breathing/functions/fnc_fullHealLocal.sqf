@@ -28,6 +28,9 @@ _patient setVariable [QGVAR(etco2Monitor), [], true];
 _patient setVariable [QGVAR(breathRate), 15, true];
 _patient setVariable [QGVAR(nasalCannula), false, true];
 
+_patient setVariable [QGVAR(oxygenMaskActive), false, true];
+_patient setVariable [QGVAR(oxygenMaskStatus), [0,0], true];
+
 if (ACEGVAR(advanced_fatigue,enabled)) then {
     ["kat_LSDF"] call ACEFUNC(advanced_fatigue,removeDutyFactor);
 };

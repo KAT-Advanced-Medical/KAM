@@ -21,3 +21,7 @@
 [QACEGVAR(medical_gui,updateBodyImage), LINKFUNC(gui_updateBodyImage)] call CBA_fnc_addEventHandler;
 [QACEGVAR(medical_treatment,fullHealLocalMod), LINKFUNC(fullHealLocal)] call CBA_fnc_addEventHandler;
 [QACEGVAR(medical,woundReceived),LINKFUNC(handlePulmoHit)] call CBA_fnc_addEventHandler;
+
+private _items = missionNamespace getVariable [QGVAR(availOxyMask), "'G_AirPurifyingRespirator_01_F'"];
+private _array = [_items, "CfgGlasses"] call FUNC(getList);
+missionNamespace setVariable [QGVAR(availOxyMaskList), _array, true];
