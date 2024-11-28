@@ -21,7 +21,7 @@ params ["_patient"];
 private _maskStatus = _patient getVariable [QGVAR(oxygenMaskStatus), [0,0]];
 
 if (_maskStatus isEqualTo [0,0]) exitWith {
-	[LSTRING(VehicleOxygen_Affirm), 1.5, _patient] call ACEFUNC(common,displayTextStructured);
+    [LSTRING(VehicleOxygen_Affirm), 1.5, _patient] call ACEFUNC(common,displayTextStructured);
 };
 
 [format ["%1 %2", (_maskStatus select 0), LLSTRING(PersonalOxygen_Remaining)], 1.5, _patient] call ACEFUNC(common,displayTextStructured);

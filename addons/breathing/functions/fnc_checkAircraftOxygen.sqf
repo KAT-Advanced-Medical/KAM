@@ -19,14 +19,14 @@
 params ["_vehicle", "_patient"];
 
 if (isNull objectParent _patient) exitWith {
-	false
+    false
 };
 
 private _fullCrew = fullCrew _vehicle;
 private _playerPosition = (_fullCrew select {(_x select 0) == _patient}) select 1;
 
 if (_playerPosition isEqualTo "cargo") exitWith {
-	false
+    false
 };
 
 true
