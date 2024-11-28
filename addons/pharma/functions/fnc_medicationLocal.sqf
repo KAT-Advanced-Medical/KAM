@@ -126,18 +126,14 @@ if (GVAR(AMS_Enabled)) then {
     if (count _medicationParts > 3) then {
         _medicationName = (_medicationParts select 0) + "_" + (_medicationParts select 1);
     };
-    // Adjust the medication effects and add the medication to the list
     TRACE_3("adjustments",_heartRateChange,_painReduce,_viscosityChange);
     [_patient, _medicationName, _timeTillMaxEffect, _timeInSystem, _heartRateChange, _painReduce, _viscosityChange, _dose, _alphaFactor, _opioidRelief, _opioidEffect, _opioidDepression, _respiratoryRate] call EFUNC(vitals,addMedicationAdjustment);
 
-    // Check for medication compatiblity
     [_patient, _medicationName, _incompatibleMedication] call ACEFUNC(medical_treatment,onMedicationUsage);
 } else {       
-    // Adjust the medication effects and add the medication to the list
     TRACE_3("adjustments",_heartRateChange,_painReduce,_viscosityChange);
     [_patient, _className, _timeTillMaxEffect, _timeInSystem, _heartRateChange, _painReduce, _viscosityChange, _dose, _alphaFactor, _opioidRelief, _opioidEffect, _opioidDepression, _respiratoryRate] call EFUNC(vitals,addMedicationAdjustment);
-
-    // Check for medication compatiblity
+    
     [_patient, _className, _incompatibleMedication] call ACEFUNC(medical_treatment,onMedicationUsage);
 };
 
