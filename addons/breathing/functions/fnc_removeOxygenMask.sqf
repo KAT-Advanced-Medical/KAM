@@ -16,7 +16,7 @@
  * Public: No
  */
 
-params ["_patient"];
+params ["_medic", "_patient"];
 
 private _maskStatus = _patient getVariable [QGVAR(oxygenMaskStatus), [0,0]];
 

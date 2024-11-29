@@ -22,10 +22,9 @@ if (isNull objectParent _patient) exitWith {
     false
 };
 
-private _fullCrew = fullCrew _vehicle;
-private _playerPosition = (_fullCrew select {(_x select 0) == _patient}) select 1;
+private _playerPosition = assignedVehicleRole _patient;
 
-if (_playerPosition isEqualTo "cargo") exitWith {
+if ((_playerPosition select 0) isEqualTo "cargo") exitWith {
     false
 };
 

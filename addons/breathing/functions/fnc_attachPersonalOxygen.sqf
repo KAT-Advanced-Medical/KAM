@@ -46,11 +46,23 @@ _patient setVariable [QGVAR(oxygenMaskStatus), [(_largestTankValue + 1), 1], tru
     _this params ["_args", "_pfhID"];
     _args params ["_patient"];
 
-    if !(_patient setVariable [QGVAR(oxygenMaskActive), true]) exitWith {
+    if !((_patient call EFUNC(airway,checkMask))) exitWith {
+        _pfhID call CBA_fnc_removePerFrameHandler;
+    };
+    
+}, 5, [
+    _patient
+]] call CBA_fnc_addPerFrameHandler;
+
+[{
+    _this params ["_args", "_pfhID"];
+    _args params ["_patient"];
+
+    if !(alive _patient) exitWith {
         _pfhID call CBA_fnc_removePerFrameHandler;
     };
 
-    if !(alive _patient) exitWith {
+    if !(_patient setVariable [QGVAR(oxygenMaskActive), true]) exitWith {
         _pfhID call CBA_fnc_removePerFrameHandler;
     };
 
