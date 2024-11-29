@@ -27,7 +27,6 @@ _patient setVariable [QGVAR(deepPenetratingInjury), false, true];
 _patient setVariable [QGVAR(etco2Monitor), [], true];
 _patient setVariable [QGVAR(breathRate), 15, true];
 _patient setVariable [QGVAR(nasalCannula), false, true];
-_patient setVariable [QGVAR(pulseOxAttached), false, true];
 
 if (ACEGVAR(advanced_fatigue,enabled)) then {
     ["kat_LSDF"] call ACEFUNC(advanced_fatigue,removeDutyFactor);
