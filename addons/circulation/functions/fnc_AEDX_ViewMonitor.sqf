@@ -277,7 +277,7 @@ GVAR(PulseRateReady) = true;
     if (HAS_TOURNIQUET_APPLIED_ON(GVAR(AEDX_MonitorTarget),_partIndex)) then {
         _bp = [0,0];
     } else {
-        _spO2 = GET_SPO2(GVAR(AEDX_MonitorTarget));
+        _spO2 = GET_KAT_SPO2(GVAR(AEDX_MonitorTarget));
         _pr = GVAR(AEDX_MonitorTarget) getVariable [QACEGVAR(medical,heartRate), 0];
     };
 

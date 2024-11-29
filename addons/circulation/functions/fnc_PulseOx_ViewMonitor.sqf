@@ -29,6 +29,6 @@ private _dlg = uiNamespace getVariable ["kat_pulseox", displayNull];
         [_idPFH] call CBA_fnc_removePerFrameHandler;
     };
 
-    (_dlg displayCtrl 22802) ctrlSetText (format["%1", (GET_SPO2(_target)) toFixed 1]);
+    (_dlg displayCtrl 22802) ctrlSetText (format["%1", (GET_KAT_SPO2(_target)) toFixed 1]);
     (_dlg displayCtrl 22803) ctrlSetText (format["%1", round(GET_HEART_RATE(_target))]);
 }, 1, [_dlg, _target]] call CBA_fnc_addPerFrameHandler;

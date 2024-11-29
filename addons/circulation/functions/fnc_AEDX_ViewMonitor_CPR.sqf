@@ -243,7 +243,7 @@ private _dlg = uiNamespace getVariable ["KAT_Circulation_AEDX_Monitor_Display", 
     if (HAS_TOURNIQUET_APPLIED_ON(GVAR(AEDX_MonitorTarget_Title),_partIndex)) then {
         _bp = [0,0];
     } else {
-        _spO2 = GET_SPO2(GVAR(AEDX_MonitorTarget_Title));
+        _spO2 = GET_KAT_SPO2(GVAR(AEDX_MonitorTarget_Title));
         _pr = GVAR(AEDX_MonitorTarget_Title) getVariable [QACEGVAR(medical,heartRate), 0];
     };
 
