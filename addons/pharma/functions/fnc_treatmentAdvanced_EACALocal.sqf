@@ -38,26 +38,26 @@ private _cycleTime = missionNamespace getVariable [QGVAR(bandageCycleTime_EACA),
 if (_IVactual > 1) then {
     private _randomNumber = random 100;
 
-    if (_IVactual != 8) exitWith {
+    if (_IVactual != 14) exitWith {
         if (_randomNumber < GVAR(blockChance)) then {
             [{
                 params ["_patient", "_IVarray", "_partIndex"];
 
-                if (_IVactual > 1 && _IVactual != 8) exitWith {};
-                _IVarray set [_partIndex, 7];
+                if (_IVactual > 1 && ([10,11,12] find _IVactual == -1)) exitWith {};
+                _IVarray set [_partIndex, _IVactual + 5];
                 _patient setVariable [QGVAR(IV), _IVarray, true];
             },
             [_patient, _IVarray, _partIndex], (random 300)] call CBA_fnc_waitAndExecute;
         };
     };
 
-    _IVarray set [_partIndex, 6];
+    _IVarray set [_partIndex, _IVactual];
     _patient setVariable [QGVAR(IV), _IVarray, true];
 };
 
 if (!(GVAR(coagulation)) || GVAR(coagulation_allow_EACA_script)) then {
 
-    if (_IVactual != 7) then {
+    if ([7,8,9] find _IVactual == -1) then {
         if (_eacaEffectiveness > 0.3)&& !(_allowStack) exitWith {};
 
         [{

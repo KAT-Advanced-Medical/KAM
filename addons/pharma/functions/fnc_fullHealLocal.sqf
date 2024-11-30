@@ -21,9 +21,15 @@ TRACE_1("fullHealLocal",_patient);
 /*
 * 0 = No IV
 * 1 = IO
-* 2 = IV
-* 3 = IV w/ Block
-* 4 = IV w/ Flush
+* 2 = 16g IV
+* 3 = 14g IV
+* 4 = 20g IV
+* 7 = 16g IV w/ Block
+* 8 = 14g IV w/ Block
+* 9 = 20g IV w/ Block
+* 10 = 16g IV w/ Flush
+* 11 = 14g IV w/ Flush
+* 12 = 20g IV w/ Flush
 */
 
 GVAR(cardiacArrestBleedRate) = ACEGVAR(medical,const_minCardiacOutput) * EGVAR(circulation,cardiacArrestBleedRate);
