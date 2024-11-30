@@ -1990,6 +1990,12 @@
             <Russian>Устанавливает группы крови, которые будут присвоены игрокам на основе их Steam ID \nГруппы крови разделены запятой (","), список должен содержать в общей сложности 10 групп крови</Russian>
             <Dutch>Bepaald de bloedgroepen die aan spelers worden gegeven op basis van hun SteamID. \nBloedgroepen zijn gescheiden met een comma(","). De lijst moet 10 verschillende bloedgroepen bevatten</Dutch>
         </Key>
+        <Key ID="STR_KAT_Circulation_SETTING_abg_enable">
+            <English>Enable ABG Testing</English>
+        </Key>
+        <Key ID="STR_KAT_Circulation_SETTING_abg_enable_DESC">
+            <English>Enables ABG Testing and ACE Menu Visibility</English>
+        </Key>
         <Key ID="STR_KAT_Circulation_bloodtype_log">
             <English>%1 checked dogtags blood group: %2</English>
             <German>%1 hat die Blutgruppe der Erkennungsmarke überprüft: %2</German>
