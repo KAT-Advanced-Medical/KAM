@@ -67,6 +67,7 @@ class ACE_Medical_Treatment_Actions {
         displayName = CSTRING(DrawArterial_Action_Use);
         displayNameProgress = CSTRING(DrawBlood_Action_Progress);
         treatmentTime = 10;
+        condition = QUOTE([ARR_3(_medic,_patient,500)] call FUNC(canDraw) && (!(EGVAR(pharma,RequireInsIVBloodDraw)) || EFUNC(pharma,removeIV)) && GVAR(abgEnable));
         callbackSuccess = QFUNC(drawArterial);
         condition = "true";
         items[] = {"kat_IV_16"};
