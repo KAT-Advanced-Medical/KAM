@@ -183,10 +183,12 @@
         </Key>
         <Key ID="STR_KAT_Chemical_ChemicalDetectorDisplayName">
             <English>JCAD Chemical Detector</English>
+            <Italian>Rilevatore chimico JCAD</Italian>
             <Japanese>JCAD 化学剤検知器</Japanese>
         </Key>
         <Key ID="STR_KAT_Chemical_ChemicalDetectorDescription">
             <English>Used to detect KAT toxic chemicals</English>
+            <Italian>Utilizzato per rilevare sostanze chimiche tossiche KAT</Italian>
             <Japanese>KAT毒性化学物質の検出に使用</Japanese>
         </Key>
         <Key ID="STR_KAT_Chemical_giveGasMask_action">

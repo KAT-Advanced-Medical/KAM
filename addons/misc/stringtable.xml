@@ -10,6 +10,7 @@
             <French>Equipement KAT</French>
             <Portuguese>Equipamento KAT</Portuguese>
             <Dutch>KAT apparatuur</Dutch>
+            <Italian>Equipaggiamento KAT</Italian>
         </Key>
         <Key ID="STR_KAT_Misc_SETTING_ENABLE">
             <English>ACE-Misc activated?</English>
@@ -864,6 +865,7 @@
             <Russian>(IFAK) Индивидуальная аптечка первой помощи</Russian>
             <Portuguese>(KPSI) Kit de Primeiros Socorros Individual</Portuguese>
             <Dutch>(IFAK) Individuele Eerste hulpkit</Dutch>
+            <Italian>(IFAK) Kit di Pronto Soccorso Individuale</Italian>
         </Key>
         <Key ID="STR_KAT_Misc_SubCategory_MFAK">
             <English>(MFAK) Multiple First Aid Kit</English>
@@ -875,6 +877,7 @@
             <Russian>(MFAK) Многофункциональная аптечка первой помощи</Russian>
             <Portuguese>(KPSM) Kit de Primeiros Socorros Múltiplo</Portuguese>
             <Dutch>(MFAK) Meervoudige Eerste hulpkit</Dutch>
+            <Italian>(MFAK) Kit di Pronto Soccorso Multiplo</Italian>
         </Key>
         <Key ID="STR_KAT_Misc_SubCategory_AFAK">
             <English>(AFAK) Advanced First Aid Kit</English>
@@ -886,6 +889,7 @@
             <Russian>(AFAK) Усовершенствованная аптечка первой помощи</Russian>
             <Portuguese>(KPSA) Kit de Primeiros Socorros Avançado</Portuguese>
             <Dutch>(AFAK) Geadvanceerde Eerste hulpkit</Dutch>
+            <Italian>(AFAK) Kit di Pronto Soccorso Avanzato</Italian>
         </Key>
         <Key ID="STR_KAT_Misc_SETTING_FAK_Container">
             <English>Items unload Container</English>
@@ -896,6 +900,7 @@
             <Finnish>Säiliö tavaroiden purkamiseen</Finnish>
             <Russian>Предметы выгружаются с контейнера</Russian>
             <Dutch>Items ontlaad container</Dutch>
+            <Italian>Contenitore per scaricare gli articoli</Italian>
         </Key>
         <Key ID="STR_KAT_Misc_SETTING_FAK_Container_DESC">
             <English>Defines where the items from the First Aid Kit are added into. If there is no space left they will be dropped on the ground. \n Default: Items are added where space is left. </English>
@@ -906,6 +911,7 @@
             <Finnish>Määrittää, mihin ensiapulaukun tuotteet lisätään. jos tilaa ei ole jäljellä, ne pudotetaan maahan. \n Oletus: kohteet lisätään sinne, missä on vielä tilaa.</Finnish>
             <Russian>Определяет, куда складываются предметы из аптечки первой помощи. Если не останется свободного места, они будут брошены на землю. \n По умолчанию: Предметы добавляются туда, где осталось свободное место.</Russian>
             <Dutch>Bepaald waar de items van een Eerste hulpkit worden geplaatst. Als er geen plek is, worden ze op de grond geplaatst. \n Standaard: Items worden geplaatst waar plek is.</Dutch>
+            <Italian>Definisce dove gli articoli del Kit di Pronto Soccorso vengono aggiunti. Se non c'è spazio disponibile, verranno lasciati a terra. \n Predefinito: Gli articoli vengono aggiunti dove c'è spazio.</Italian>
         </Key>
         <Key ID="STR_KAT_Misc_SETTING_Container_Default">
             <English>Default</English>
@@ -916,6 +922,7 @@
             <Finnish>Oletus</Finnish>
             <Russian>По умолчанию</Russian>
             <Dutch>Standaard</Dutch>
+            <Italian>Predefinito</Italian>
         </Key>
         <Key ID="STR_KAT_Misc_SETTING_Container_Uniform">
             <English>Uniform</English>
@@ -926,6 +933,7 @@
             <Finnish>Univormu</Finnish>
             <Russian>Униформа</Russian>
             <Dutch>Uniform</Dutch>
+            <Italian>Uniforme</Italian>
         </Key>
         <Key ID="STR_KAT_Misc_SETTING_Container_Vest">
             <English>Vest</English>
@@ -936,6 +944,7 @@
             <Finnish>Liivi</Finnish>
             <Russian>Жилет</Russian>
             <Dutch>Vest</Dutch>
+            <Italian>Gibernaggio</Italian>
         </Key>
         <Key ID="STR_KAT_Misc_SETTING_Container_Backpack">
             <English>Backpack</English>
@@ -946,6 +955,7 @@
             <Finnish>Reppu</Finnish>
             <Russian>Рюкзак</Russian>
             <Dutch>Rugzak</Dutch>
+            <Italian>Zaino</Italian>
         </Key>
         <Key ID="STR_KAT_Misc_SETTING_ItemSlot_DESC">
             <English>The items &amp; quantity that is given to the player.\n If you want to add/change items remove existing entry &amp; insert item name-tag &amp; quantity you want. \n Example: [['ACE_packingBandage', 10], ['ACE_quikclot', 15]]  TO  [['ACE_packingBandage', 10], ['ACE_quikclot', 15], ['ACE_Banana', 10]]</English>
@@ -956,6 +966,7 @@
             <Finnish>Pelaajalle annetut tuotteet ja määrä. \n Jos haluat lisätä/muuttaa kohteita, poista olemassa oleva merkintä ja lisää haluamasi nimikkeen nimilappu ja nimikemäärä. \n Esimerkki: [[`ACE_packingBandage`, 10].</Finnish>
             <Russian>Предметы и количество, которые выдаются игроку.\n Если вы хотите добавить / изменить предметы, удалите существующую запись и вставьте название предмета-тег и количество, которое вы хотите. \n Пример: [['ACE_packingBandage', 10], ['ACE_quikclot', 15]]  В [['ACE_packingBandage', 10], ['ACE_quikclot', 15], ['ACE_Banana', 10]]</Russian>
             <Dutch>De items en de hoeveelheid dat gegeven wordt aan de speler. \n Als je items wilt toevoegen of veranderen, verwijder dan de bestaande entree en voeg item naam en de hoeveelheid die je wilt in. \n Voorbeeld: [['ACE_packingBandage', 10], ['ACE_quikclot', 15]]  NAAR  [['ACE_packingBandage', 10], ['ACE_quikclot', 15], ['ACE_Banana', 10]]</Dutch>
+            <Italian>Gli articoli e la quantità che vengono dati al giocatore. \n Se desideri aggiungere/cambiare articoli, rimuovi la voce esistente e inserisci il nome dell'articolo con il tag e la quantità che desideri. \n Esempio: [['ACE_packingBandage', 10], ['ACE_quikclot', 15]] A [['ACE_packingBandage', 10], ['ACE_quikclot', 15], ['ACE_Banana', 10]]</Italian>
         </Key>
         <Key ID="STR_KAT_Misc_SETTING_FirstSlot_Item">
             <English>Trauma Section Items &amp; Quantity</English>
@@ -965,6 +976,7 @@
             <Russian>Предметы и количество травматологического раздела</Russian>
             <French>Objets et quantité de la section de traumatologie</French>
             <Dutch>Trauma sectie items &amp; hoeveelheden</Dutch>
+            <Italian>Articoli e quantità della sezione trauma</Italian>
         </Key>
         <Key ID="STR_KAT_Misc_SETTING_SecondSlot_Item">
             <English>Bandage Section Items &amp; Quantity</English>
@@ -974,6 +986,7 @@
             <Russian>Предметы и количество в разделе бинтов</Russian>
             <French>Objets et quantité de la section de bandages</French>
             <Dutch>Verbandssectie items &amp; hoeveelheden</Dutch>
+            <Italian>Articoli e quantità della sezione bende</Italian>
         </Key>
         <Key ID="STR_KAT_Misc_SETTING_ThirdSlot_Item">
             <English>Pain Management Section Items &amp; Quantity</English>
@@ -983,6 +996,7 @@
             <Russian>Предметы и количество раздела обезболивающих</Russian>
             <French>Objets et quantité de la section de régulation de la douleur</French>
             <Dutch>Pijnbestrijdingssectie items &amp; hoeveelheden</Dutch>
+            <Italian>Articoli e quantità della sezione gestione del dolore</Italian>
         </Key>
         <Key ID="STR_KAT_Misc_SETTING_FourthSlot_Item">
             <English>Breathing Section Items &amp; Quantity</English>
@@ -992,6 +1006,7 @@
             <Russian>Предметы и количество раздела дыхательной системы</Russian>
             <French>Objets et quantité de la section d'articles respiratoires</French>
             <Dutch>Ademhalingssectie items &amp; hoeveelheden</Dutch>
+            <Italian>Articoli e quantità della sezione respirazione</Italian>
         </Key>
         <Key ID="STR_KAT_Misc_SETTING_FifthSlot_Item">
             <English>Airway Section Items &amp; Quantity</English>
@@ -1001,6 +1016,7 @@
             <Russian>Предметы и количество раздела дыхательных путей</Russian>
             <French>Objets et quantité de la section des voies aériennes</French>
             <Dutch>Luchtweg sectie items &amp; hoeveelheden</Dutch>
+            <Italian>Articoli e quantità della sezione vie aeree</Italian>
         </Key>
         <Key ID="STR_KAT_Misc_SETTING_SixthSlot_Item">
             <English>Pharmaceutical Section Items &amp; Quantity</English>
@@ -1010,6 +1026,7 @@
             <Russian>Предметы и количество раздела фармацевтики</Russian>
             <French>Objets et quantités de la section pharmaceutique</French>
             <Dutch>Pharmaceutische sectie items &amp; hoeveelheden</Dutch>
+            <Italian>Articoli e quantità della sezione farmaceutica</Italian>
         </Key>
         <Key ID="STR_KAT_Misc_SETTING_SeventhSlot_Item">
             <English>Fluid Section Items &amp; Quantity</English>
@@ -1019,6 +1036,7 @@
             <Russian>Предметы и количество раздела жидкостей</Russian>
             <French>Objets et quantités de la section des fluides</French>
             <Dutch>Vloeistofsectie items &amp; hoeveelheden</Dutch>
+            <Italian>Articoli e quantità della sezione fluidi</Italian>
         </Key>
         <Key ID="STR_KAT_Misc_SETTING_EighthSlot_Item">
             <English>Miscellaneous Section Items &amp; Quantity</English>
@@ -1028,6 +1046,7 @@
             <Russian>Предметы и количества прочего раздела</Russian>
             <French>Objets et quantités de la section autres</French>
             <Dutch>Overige sectie items &amp; hoeveelheden</Dutch>
+            <Italian>Articoli e quantità della sezione miscellanea</Italian>
         </Key>
         <Key ID="STR_KAT_Misc_IFAK_Display">
             <English>Individual First Aid Kit</English>
@@ -1039,6 +1058,7 @@
             <Russian>Индивидуальная аптечка первой помощи</Russian>
             <Portuguese>Kit de Primeiros Socorros Individual</Portuguese>
             <Dutch>Individuele Eerste hulpskit</Dutch>
+            <Italian>Kit di Primo Soccorso Individuale (IFAK)</Italian>
         </Key>
         <Key ID="STR_KAT_Misc_IFAK_DESC">
             <English>The IFAK can be unpacked to provide useful medical items</English>
@@ -1050,6 +1070,7 @@
             <Russian>IFAK можно распаковать, чтобы получить полезные медицинские принадлежности</Russian>
             <Portuguese>O KPSI pode ser desembalado para prover itens médicos úteis</Portuguese>
             <Dutch>De IFAK kan uitgepakt worden om nuttige producten te verschaffen</Dutch>
+            <Italian>Il IFAK può essere disimballato per fornire articoli medici utili</Italian>
         </Key>
         <Key ID="STR_KAT_Misc_MFAK_Display">
             <English>Multiple First Aid Kit</English>
@@ -1061,6 +1082,7 @@
             <Russian>Многофункциональная аптечка первой помощи</Russian>
             <Portuguese>Kit de Primeiros Socorros Múltiplo</Portuguese>
             <Dutch>Meervoudige Eerste hulpskit</Dutch>
+            <Italian>Kit di Primo Soccorso Multiplo (MFAK)</Italian>
         </Key>
         <Key ID="STR_KAT_Misc_MFAK_DESC">
             <English>The MFAK can be unpacked to provide useful medical items</English>
@@ -1072,6 +1094,7 @@
             <Russian>MFAK можно распаковать, чтобы получить полезные медицинские принадлежности</Russian>
             <Portuguese>O KPSM pode ser desembalado para prover itens médicos úteis</Portuguese>
             <Dutch>De MFAK kan uitgepakt worden om nuttige producten te verschaffen</Dutch>
+            <Italian>Il MFAK può essere disimballato per fornire articoli medici utili</Italian>
         </Key>
         <Key ID="STR_KAT_Misc_AFAK_Display">
             <English>Advanced First Aid Kit</English>
@@ -1083,6 +1106,7 @@
             <Russian>Усовершенствованная аптечка первой помощи</Russian>
             <Portuguese>Kit de Primeiros Socorros Avançado</Portuguese>
             <Dutch>Geadvanceerde Eerste hulpskit</Dutch>
+            <Italian>Kit di Primo Soccorso Avanzato (AFAK)</Italian>
         </Key>
         <Key ID="STR_KAT_Misc_AFAK_DESC">
             <English>The AFAK can be unpacked to provide useful medical items</English>
@@ -1094,6 +1118,7 @@
             <Russian>AFAK можно распаковать, чтобы получить полезные медицинские принадлежности</Russian>
             <Portuguese>O KPSA pode ser desembalado para prover itens médicos úteis</Portuguese>
             <Dutch>de AFAK kan uitgepakt worden om nuttige producten te verschaffen</Dutch>
+            <Italian>Il AFAK può essere disimballato per fornire articoli medici utili</Italian>
         </Key>
         <Key ID="STR_KAT_Misc_IFAK_Unpack">
             <English>IFAK</English>
@@ -1105,6 +1130,7 @@
             <Russian>IFAK</Russian>
             <Portuguese>KPSI</Portuguese>
             <Dutch>IFAK</Dutch>
+            <Italian>IFAK</Italian>
         </Key>
         <Key ID="STR_KAT_Misc_MFAK_Unpack">
             <English>MFAK</English>
@@ -1116,6 +1142,7 @@
             <Russian>MFAK</Russian>
             <Portuguese>KPSM</Portuguese>
             <Dutch>MFAK</Dutch>
+            <Italian>MFAK</Italian>
         </Key>
         <Key ID="STR_KAT_Misc_AFAK_Unpack">
             <English>AFAK</English>
@@ -1127,6 +1154,7 @@
             <Russian>AFAK</Russian>
             <Portuguese>KPSA</Portuguese>
             <Dutch>AFAK</Dutch>
+            <Italian>AFAK</Italian>
         </Key>
         <Key ID="STR_KAT_Misc_FAK_DisplayItems">
             <English>View Packing List</English>
@@ -1138,6 +1166,7 @@
             <French>Voir la liste de remplissage</French>
             <Portuguese>Ver lista</Portuguese>
             <Dutch>Zie paklijst</Dutch>
+            <Italian>Visualizza la lista di imballaggio</Italian>
         </Key>
         <Key ID="STR_KAT_Misc_FAK_Slot_1_Hint">
             <English>Trauma Section:</English>
@@ -1149,6 +1178,7 @@
             <French>Section de traumatologie :</French>
             <Portuguese>Seção de trauma:</Portuguese>
             <Dutch>Trauma sectie:</Dutch>
+            <Italian>Sezione Trauma:</Italian>
         </Key>
         <Key ID="STR_KAT_Misc_FAK_Slot_2_Hint">
             <English>Bandage Section:</English>
@@ -1160,6 +1190,7 @@
             <French>Section de bandages :</French>
             <Portuguese>Seção de bandagens:</Portuguese>
             <Dutch>Verbandssectie:</Dutch>
+            <Italian>Sezione Bende:</Italian>
         </Key>
         <Key ID="STR_KAT_Misc_FAK_Slot_3_Hint">
             <English>Pain Management Section:</English>
@@ -1171,6 +1202,7 @@
             <French>Section de régulation de la douleur :</French>
             <Portuguese>Seção de gerenciamento de dor:</Portuguese>
             <Dutch>Pijnbestrijdingssectie:</Dutch>
+            <Italian>Sezione Gestione del Dolore:</Italian>
         </Key>
         <Key ID="STR_KAT_Misc_FAK_Slot_4_Hint">
             <English>Breathing Section:</English>
@@ -1182,6 +1214,7 @@
             <French>Section d'articles respiratoires :</French>
             <Portuguese>Seção de respiração:</Portuguese>
             <Dutch>Ademhalingssectie:</Dutch>
+            <Italian>Sezione Respirazione:</Italian>
         </Key>
         <Key ID="STR_KAT_Misc_FAK_Slot_5_Hint">
             <English>Airway Section:</English>
@@ -1193,6 +1226,7 @@
             <French>Section des voies aériennes :</French>
             <Portuguese>Seção de vias aéreas:</Portuguese>
             <Dutch>Luchtweg sectie:</Dutch>
+            <Italian>Sezione Vie Aeree:</Italian>
         </Key>
         <Key ID="STR_KAT_Misc_FAK_Slot_6_Hint">
             <English>Pharmaceutical Section:</English>
@@ -1204,6 +1238,7 @@
             <French>Section pharmaceutique :</French>
             <Portuguese>Seção farmacêutica:</Portuguese>
             <Dutch>Pharmaceutische sectie:</Dutch>
+            <Italian>Sezione Farmaceutica:</Italian>
         </Key>
         <Key ID="STR_KAT_Misc_FAK_Slot_7_Hint">
             <English>Fluid Section:</English>
@@ -1215,6 +1250,7 @@
             <French>Section des fluides :</French>
             <Portuguese>Seção de flúidos:</Portuguese>
             <Dutch>Vloeistofsectie:</Dutch>
+            <Italian>Sezione Fluidi:</Italian>
         </Key>
         <Key ID="STR_KAT_Misc_FAK_Slot_8_Hint">
             <English>Miscellaneous Section:</English>
@@ -1226,6 +1262,7 @@
             <French>Sections autres :</French>
             <Portuguese>Seção miscelânea:</Portuguese>
             <Dutch>Overige sectie:</Dutch>
+            <Italian>Sezione Miscellanea:</Italian>
         </Key>
         <Key ID="STR_KAT_Misc_FAK_Slot_1">
             <English>Unpack Trauma Section</English>
@@ -1237,6 +1274,7 @@
             <French>Déballer la section de traumatologie</French>
             <Portuguese>Descompactar seção de trauma</Portuguese>
             <Dutch>Pak trauma sectie uit</Dutch>
+            <Italian>Sblocca la Sezione Trauma</Italian>
         </Key>
         <Key ID="STR_KAT_Misc_FAK_Slot_2">
             <English>Unpack Bandage Section</English>
@@ -1248,6 +1286,7 @@
             <French>Déballer la section de bandages</French>
             <Portuguese>Descompactar seção de bandagem</Portuguese>
             <Dutch>Pak verbandssectie uit</Dutch>
+            <Italian>Sblocca la Sezione Bende</Italian>
         </Key>
         <Key ID="STR_KAT_Misc_FAK_Slot_3">
             <English>Unpack Pain Management Section</English>
@@ -1259,6 +1298,7 @@
             <French>Déballer la section de régulation de la douleur</French>
             <Portuguese>Descompactar seção de gerenciamento de dor</Portuguese>
             <Dutch>Pak pijnbestrijdingssectie uit</Dutch>
+            <Italian>Sblocca la Sezione Gestione del Dolore</Italian>
         </Key>
         <Key ID="STR_KAT_Misc_FAK_Slot_4">
             <English>Unpack Breathing Section</English>
@@ -1270,6 +1310,7 @@
             <French>Déballer la section d'articles respiratoires</French>
             <Portuguese>Descompactar seção de respiração</Portuguese>
             <Dutch>Pak ademhalingssectie uit</Dutch>
+            <Italian>Sblocca la Sezione Respirazione</Italian>
         </Key>
         <Key ID="STR_KAT_Misc_FAK_Slot_5">
             <English>Unpack Airway Section</English>
@@ -1281,6 +1322,7 @@
             <French>Déballer la section des voies aériennes</French>
             <Portuguese>Descompactar seção de vias aéreas</Portuguese>
             <Dutch>Pak luchtweg sectie uit</Dutch>
+            <Italian>Sblocca la Sezione Vie Aeree</Italian>
         </Key>
         <Key ID="STR_KAT_Misc_FAK_Slot_6">
             <English>Unpack Pharmaceutical Section</English>
@@ -1292,6 +1334,7 @@
             <French>Déballer la section pharmaceutique</French>
             <Portuguese>Descompactar seção farmacêutica</Portuguese>
             <Dutch>Pak pharmaceutische sectie uit</Dutch>
+            <Italian>Sblocca la Sezione Farmaceutica</Italian>
         </Key>
         <Key ID="STR_KAT_Misc_FAK_Slot_7">
             <English>Unpack Fluid Section</English>
@@ -1303,6 +1346,7 @@
             <French>Déballer la section des fluides</French>
             <Portuguese>Descompactar seção de fluidos</Portuguese>
             <Dutch>Pak vloeistoffen sectie uit</Dutch>
+            <Italian>Sblocca la Sezione Fluidi</Italian>
         </Key>
         <Key ID="STR_KAT_Misc_FAK_Slot_8">
             <English>Unpack Miscellaneous Section</English>
@@ -1314,6 +1358,7 @@
             <French>Déballer la section autres</French>
             <Portuguese>Descompactar seção miscelânea</Portuguese>
             <Dutch>Pak overige sectie uit</Dutch>
+            <Italian>Sblocca la Sezione Miscellanea</Italian>
         </Key>
         <Key ID="STR_KAT_Misc_FAK_Slot_1_Repack">
             <English>Repack Trauma Section</English>
@@ -1325,6 +1370,7 @@
             <French>Remballer la section de traumatologie</French>
             <Portuguese>Compactar seção de trauma</Portuguese>
             <Dutch>Herpak trauma sectie</Dutch>
+            <Italian>Rimballa la Sezione Trauma</Italian>
         </Key>
         <Key ID="STR_KAT_Misc_FAK_Slot_2_Repack">
             <English>Repack Bandage Section</English>
@@ -1336,6 +1382,7 @@
             <French>Remballer la section de bandages</French>
             <Portuguese>Compactar seção de bandagem</Portuguese>
             <Dutch>Herpak verbandssectie</Dutch>
+            <Italian>Rimballa la Sezione Bende</Italian>
         </Key>
         <Key ID="STR_KAT_Misc_FAK_Slot_3_Repack">
             <English>Repack Pain Management Section</English>
@@ -1347,6 +1394,7 @@
             <French>Remballer la section de régulation de la douleur</French>
             <Portuguese>Compactar seção de gerenciamento de dor</Portuguese>
             <Dutch>Herpack pijnbestrijdingssectie</Dutch>
+            <Italian>Rimballa la Sezione Gestione del Dolore</Italian>
         </Key>
         <Key ID="STR_KAT_Misc_FAK_Slot_4_Repack">
             <English>Repack Breathing Section</English>
@@ -1358,6 +1406,7 @@
             <French>Remballer la section d'articles respiratoires</French>
             <Portuguese>Compactar seção de respiração</Portuguese>
             <Dutch>Herpack ademhalingssectie</Dutch>
+            <Italian>Rimballa la Sezione Respirazione</Italian>
         </Key>
         <Key ID="STR_KAT_Misc_FAK_Slot_5_Repack">
             <English>Repack Airway Section</English>
@@ -1369,6 +1418,7 @@
             <French>Remballer la section des voies aériennes</French>
             <Portuguese>Compactar seção de vias aéreas</Portuguese>
             <Dutch>Herpack luchtweg sectie</Dutch>
+            <Italian>Rimballa la Sezione Vie Aeree</Italian>
         </Key>
         <Key ID="STR_KAT_Misc_FAK_Slot_6_Repack">
             <English>Repack Pharmaceutical Section</English>
@@ -1380,6 +1430,7 @@
             <French>Remballer la section pharmaceutique</French>
             <Portuguese>Compactar seção farmacêutica</Portuguese>
             <Dutch>Herpak pharmaceutische sectie</Dutch>
+            <Italian>Rimballa la Sezione Farmaceutica</Italian>
         </Key>
         <Key ID="STR_KAT_Misc_FAK_Slot_7_Repack">
             <English>Repack Fluid Section</English>
@@ -1391,6 +1442,7 @@
             <French>Remballer la section des fluides</French>
             <Portuguese>Compactar seção de fluidos</Portuguese>
             <Dutch>Herpak vloeistoffen sectie</Dutch>
+            <Italian>Rimballa la Sezione Fluidi</Italian>
         </Key>
         <Key ID="STR_KAT_Misc_FAK_Slot_8_Repack">
             <English>Repack Miscellaneous Section</English>
@@ -1402,6 +1454,7 @@
             <French>Remballer la section autres</French>
             <Portuguese>Compactar seção miscelânea</Portuguese>
             <Dutch>Herpak overige sectie</Dutch>
+            <Italian>Rimballa la Sezione Miscellanea</Italian>
         </Key>
         <Key ID="STR_KAT_Misc_SETTING_FAK_ItemColor">
             <English>Hint Item Color</English>
@@ -1412,6 +1465,7 @@
             <Russian>Подсказка по цвету элемента</Russian>
             <French>Couleur d'indice de l'objet</French>
             <Dutch>kleur van itemhint</Dutch>
+            <Italian>Colore dell'Articolo Suggerito</Italian>
         </Key>
         <Key ID="STR_KAT_Misc_SETTING_FAK_ItemColor_DESC">
             <English>The item color of the text that is displayed via a hint</English>
@@ -1422,6 +1476,7 @@
             <Russian>Цвет элемента текста, отображаемого с помощью подсказки</Russian>
             <French>La couleur de l'objet du texte affiché via un indice</French>
             <Dutch>De kleur van de tekstitem die weergeven wordt via een hint</Dutch>
+            <Italian>Il colore dell'articolo del testo che viene mostrato tramite un suggerimento</Italian>
         </Key>
         <Key ID="STR_KAT_Misc_SETTING_FAK_SlotColor">
             <English>Hint Section Color</English>
@@ -1431,6 +1486,7 @@
             <Russian>Цвет раздела подсказок</Russian>
             <French>Couleur d'indice de la section</French>
             <Dutch>Hint sectie kleur</Dutch>
+            <Italian>Colore della Sezione Suggerita</Italian>
         </Key>
         <Key ID="STR_KAT_Misc_SETTING_FAK_SlotColor_DESC">
             <English>The Section color of the text that is displayed via a hint</English>
@@ -1440,6 +1496,7 @@
             <Russian>Цвет раздела текста, отображаемого с помощью подсказки</Russian>
             <French>La couleur de la section du texte affiché via un indice</French>
             <Dutch>De kleur van de sectie die weergeven wordt met een hint</Dutch>
+            <Italian>Il colore della sezione del testo che viene mostrato tramite un suggerimento</Italian>
         </Key>
         <Key ID="STR_KAT_Misc_SETTING_FAK_RemoveWhenEmpty">
             <English>Remove when empty</English>
@@ -1450,6 +1507,7 @@
             <Finnish>Poista tyhjänä</Finnish>
             <Russian>Удалить, когда опустеет</Russian>
             <Dutch>Verwijder wanneer leeg</Dutch>
+            <Italian>Rimuovi quando vuoto</Italian>
         </Key>
         <Key ID="STR_KAT_Misc_CarryPatient">
             <English>Carry Patient</English>
@@ -1462,6 +1520,7 @@
             <Finnish>Kanna potilasta</Finnish>
             <Russian>Нести пациента</Russian>
             <Dutch>Draag patiënt</Dutch>
+            <Italian>Trasporta il paziente</Italian>
         </Key>
         <Key ID="STR_KAT_Misc_CancelCarrying">
             <English>Cancel Carrying</English>
@@ -1474,6 +1533,7 @@
             <Finnish>Peruuta potilaan kuljettaminen</Finnish>
             <Russian>Прекратить нести</Russian>
             <Dutch>Dragen annuleren</Dutch>
+            <Italian>Annulla il Trasporto</Italian>
         </Key>
         <Key ID="STR_KAT_Misc_StoppedCarrying%1">
             <English>Stopped carrying %1</English>
@@ -1486,6 +1546,7 @@
             <Finnish>Lakkasi kantamisen %1</Finnish>
             <Russian>Прекратил нести %1</Russian>
             <Dutch>Gestopt met het dragen van %1</Dutch>
+            <Italian>Trasporto interrotto di %1</Italian>
         </Key>
         <Key ID="STR_KAT_Misc_Use_SurgicalKitFullBody">
             <English>Use Surgical Kit (Full Body)</English>
@@ -1496,6 +1557,7 @@
             <French>Utiliser la trousse chirurgicale (Corps complet)</French>
             <Portuguese>Utilizar kit cirúrgico (corpo inteiro)</Portuguese>
             <Dutch>Gebruik chirurgische kit (volledig lichaam)</Dutch>
+            <Italian>Usa il Kit Chirurgico (Corpo Intero)</Italian>
         </Key>
         <Key ID="STR_KAT_Misc_SETTING_EnableStitchFullBody">
             <English>Enable Full Body Stitching</English>
@@ -1504,6 +1566,7 @@
             <Japanese>全身縫合を有効化</Japanese>
             <French>Activer la suture complète du corps</French>
             <Dutch>Schakel hechten van het volledige lichaam in</Dutch>
+            <Italian>Abilita la Cucitura del Corpo Intero</Italian>
         </Key>
         <Key ID="STR_KAT_Misc_SETTING_EnableStitchFullBody_DESC">
             <English>Adds a full-body stitching option alongside the individual body part stitching, using ACE's established settings and values for consistency</English>
@@ -1512,6 +1575,7 @@
             <Japanese>身体部位毎に縫合するアクションに加え、ACEの設定値と同様の動きを保ったままの、全身を一括で縫合するオプションを追加します。</Japanese>
             <French>Ajoute une option de suture complète du corps à côté de la suture de chaque partie du corps, en utilisant les paramètres et les valeurs établis par ACE pour plus de cohérence</French>
             <Dutch>Voegt een hechtingsactie toe voor het gehele lichaam, naast de standaard individuele hechtingsopties, die de waarden en instellingen van ACE gebruikt voor consistentie</Dutch>
+            <Italian>Aggiunge un'opzione di cucitura del corpo intero insieme alla cucitura dei singoli arti, utilizzando le impostazioni e i valori stabiliti di ACE per coerenza</Italian>
         </Key>
     </Package>
 </Project>

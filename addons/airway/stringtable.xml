@@ -117,6 +117,7 @@
             <Finnish>Okkluusiojäähdytyssykli</Finnish>
             <Russian>Период восстановления окклюзии</Russian>
             <Dutch>Verstoppings afkoelingsperiode</Dutch>
+            <Italian>Periodo di Recupero dell'Occlusione</Italian>
         </Key>
         <Key ID="STR_KAT_Airway_SETTING_puking_sound">
             <English>Activate the puking sound?</English>
@@ -335,6 +336,7 @@
             <Chinesesimp>气道未被阻塞</Chinesesimp>
             <Portuguese>Vias aéreas não obstruídas</Portuguese>
             <Dutch>Luchtweg is niet geblokkeerd</Dutch>
+            <Italian>Le vie aeree non sono ostruite</Italian>
         </Key>
         <Key ID="STR_KAT_Airway_AirwayStatus_noOcclusion">
             <English>Airway is not occluded</English>
@@ -348,6 +350,7 @@
             <Chinesesimp>气道未闭塞</Chinesesimp>
             <Portuguese>Vias aéreas não ocluídas</Portuguese>
             <Dutch>Luchtweg is niet verstopt</Dutch>
+            <Italian>Le vie aeree non sono occluse</Italian>
         </Key>
         <Key ID="STR_KAT_Airway_AirwayStatus_Obstruction">
             <English>Airway is obstructed, airway management needed</English>
@@ -361,6 +364,7 @@
             <Chinesesimp>气道阻塞，需要气道管理</Chinesesimp>
             <Portuguese>Vias aéreas obstruídas, gerenciamento de vias aéreas necessário</Portuguese>
             <Dutch>Luchtweg is geblokkeerd, luchtwegmanagement is vereist</Dutch>
+            <Italian>Le vie aeree sono ostruite, è necessario un intervento sulle vie aeree</Italian>
         </Key>
         <Key ID="STR_KAT_Airway_AirwayStatus_Occlusion">
             <English>Airway is occluded, medical suction needed</English>
@@ -374,6 +378,7 @@
             <Chinesesimp>气道堵塞，需要吸痰</Chinesesimp>
             <Portuguese>Vias aéreas ocluídas, sucção médica necessária</Portuguese>
             <Dutch>Luchtweg is verstopt, medische suctie is vereist</Dutch>
+            <Italian>Le vie aeree sono occluse, è necessaria l'aspirazione medica</Italian>
         </Key>
         <Key ID="STR_KAT_Airway_AirwayStatus_Clear">
             <English>Airway is clear</English>
@@ -463,6 +468,7 @@
             <Chinesesimp>病人的头部已经过度伸展</Chinesesimp>
             <Portuguese>A cabeça do paciente já está hiperestendida</Portuguese>
             <Dutch>Patiënts hoofd is al overstrekt</Dutch>
+            <Italian>La testa del paziente è già iperestesa</Italian>
         </Key>
         <Key ID="STR_KAT_Airway_Hyperextend_progress">
             <English>Hyperextending head</English>
@@ -514,6 +520,7 @@
             <Chinesesimp>头部拉伸成功</Chinesesimp>
             <Portuguese>Cabeça hiperestendida com sucesso</Portuguese>
             <Dutch>Hoofd succesvol overstrekt</Dutch>
+            <Italian>Testa iperestesa con successo</Italian>
         </Key>
         <Key ID="STR_KAT_Airway_Hyperextend_Log">
             <English>%1 hyperextended %2s head</English>
@@ -524,6 +531,7 @@
             <French>%1 a placé la tête de %2 en hyperextension</French>
             <Portuguese>%1 hiperestendeu a cabeça de %2</Portuguese>
             <Dutch>%1 overstrekte %2s hoofd</Dutch>
+            <Italian>%1 ha posto la testa di %2 in iperestensione</Italian>
         </Key>
         <Key ID="STR_KAT_Airway_headTurning_info">
             <English>Head turn performed, airways are still not clear</English>
@@ -575,6 +583,7 @@
             <Finnish>Aloita potilaan pään kääntäminen</Finnish>
             <Russian>Начать поворачивать голову</Russian>
             <Dutch>Begin hoofddraaiing</Dutch>
+            <Italian>Iniziata la rotazione della testa</Italian>
         </Key>
         <Key ID="STR_KAT_Airway_headTurning_cancelled">
             <English>Head turning cancelled</English>
@@ -589,6 +598,7 @@
             <Russian>Поворот головы отменен</Russian>
             <Chinesesimp>异物清除停止了</Chinesesimp>
             <Dutch>Hoofddraaiing gestopt</Dutch>
+            <Italian>Rotazione della testa annullata</Italian>
         </Key>
         <Key ID="STR_KAT_Airway_headTurning_start">
             <English>Head Turning Started</English>
@@ -602,6 +612,7 @@
             <Chinesesimp>开始清除异物</Chinesesimp>
             <Portuguese>Rotação de cabeça iniciada</Portuguese>
             <Dutch>Hoofddraaiing gestart</Dutch>
+            <Italian>Rotazione della testa avviata</Italian>
         </Key>
         <Key ID="STR_KAT_Airway_headTurning_stop">
             <English>Stop head turning</English>
@@ -616,6 +627,7 @@
             <Russian>Перестаньте поворачивать голову</Russian>
             <Chinesesimp>停止清除异物</Chinesesimp>
             <Dutch>Stop de hoofddraaiing</Dutch>
+            <Italian>Fermare la rotazione della testa</Italian>
         </Key>
         <Key ID="STR_KAT_Airway_Accuvac_NA">
             <English>Medical suction not needed</English>
@@ -646,6 +658,7 @@
             <French>Aspiration médicale effectuée. Occlusion retirée</French>
             <Portuguese>Sucção médica completa. Oclusão removida.</Portuguese>
             <Dutch>Medische suctie voltooid, Verstopping verwijderd</Dutch>
+            <Italian>Aspirazione medica completata, occlusione rimossa</Italian>
         </Key>
         <Key ID="STR_KAT_Airway_action_checking">
             <English>Checking Airway</English>
@@ -770,6 +783,7 @@
             <French>ACCUVAC</French>
             <Portuguese>ACCUVAC</Portuguese>
             <Dutch>ACCUVAC</Dutch>
+            <Italian>ACCUVAC</Italian>
         </Key>
         <Key ID="STR_KAT_Airway_Accuvac_Desc_Short">
             <English>ACCUVAC is a medical suction device for airway suction with battery drive for mobile use in emergency medicine.</English>
@@ -801,6 +815,7 @@
             <French>Aspiration des voies respiratoires</French>
             <Portuguese>Sucção de vias aéreas</Portuguese>
             <Dutch>Luchtweg suctie</Dutch>
+            <Italian>Aspirazione delle vie aeree</Italian>
         </Key>
         <Key ID="STR_KAT_Airway_Suction_Display">
             <English>Manual Suction Pump</English>
@@ -812,6 +827,7 @@
             <French>Pompe d'aspiration manuelle</French>
             <Portuguese>Bomba de Sucção Manual</Portuguese>
             <Dutch>Handmatige suctiepomp</Dutch>
+            <Italian>Pompa di aspirazione manuale</Italian>
         </Key>
         <Key ID="STR_KAT_Airway_Suction_Log">
             <English>%1 did a medical suction using a %2</English>
@@ -822,6 +838,7 @@
             <French>%1 a effectué une aspiration médicale en utilisant un(e) %2</French>
             <Portuguese>%1 executou uma sucção médica usando %2</Portuguese>
             <Dutch>%1 voerde een medische suctie uit met een %2</Dutch>
+            <Italian>%1 ha eseguito un'aspirazione medica utilizzando un/a %2</Italian>
         </Key>
         <Key ID="STR_KAT_Airway_Suction_Desc_Short">
             <English>Manual Suction Pump is a medical suction device for airway suction manually. This is an alternative to electrical devices.</English>
@@ -833,6 +850,7 @@
             <French>La pompe d’aspiration manuelle est un dispositif d’aspiration médical pour l’aspiration manuelle des voies respiratoires. C’est une alternative aux appareils électriques.</French>
             <Portuguese>A Bomba de Sucção Manual é um dispositivo médico que possibilita a sucção manual das vias aéras, sendo uma alternativa aos dispositivos elétricos.</Portuguese>
             <Dutch>De handmatige suctiepomp is een apparaat om handmatig de luchtwegen af te zuigen. Dit is een alternatief voor electrische apparaten</Dutch>
+            <Italian>La pompa di aspirazione manuale è un dispositivo medico per l'aspirazione delle vie aeree manualmente. Questa è un'alternativa ai dispositivi elettrici.</Italian>
         </Key>
         <Key ID="STR_KAT_Airway_SuctionTreatment_displayName">
             <English>Airway Suction (Manual)</English>
@@ -844,6 +862,7 @@
             <French>Aspiration des voies respiratoires (Manuel)</French>
             <Portuguese>Sucção de vias aéreas (manual)</Portuguese>
             <Dutch>Handmatige luchtweg suctie</Dutch>
+            <Italian>Aspirazione delle vie aeree (manuale)</Italian>
         </Key>
         <Key ID="STR_KAT_Airway_Suction_Reuse">
             <English>Reusable Manual Suction Pump</English>
@@ -855,6 +874,7 @@
             <French>Pompre d'aspiration manuelle réutilisable</French>
             <Portuguese>Bomba de Sucção Manual Reutilizável</Portuguese>
             <Dutch>Herbruikbare handmatige suctiepomp</Dutch>
+            <Italian>Pompa di aspirazione manuale riutilizzabile</Italian>
         </Key>
         <Key ID="STR_KAT_Airway_Suction_Reuse_DESC">
             <English>Regain the Manual Suction Pump after use</English>
@@ -866,6 +886,7 @@
             <French>Récupère la pompe d'asipiration manuelle après utilisation</French>
             <Portuguese>Recupere a Bomba de Sucção Manual após o uso</Portuguese>
             <Dutch>Krijg de handmatige suctiepomp terug na gebruik</Dutch>
+            <Italian>Recuperare la pompa di aspirazione manuale dopo l'uso</Italian>
         </Key>
         <Key ID="STR_KAT_Airway_Vomit_Display">
             <English>Vomit (Small)</English>
@@ -1048,6 +1069,7 @@
             <French>Autoriser la pompe d'aspiration manuelle</French>
             <Portuguese>Permitir Bomba de Sucção Manual</Portuguese>
             <Dutch>Sta handmatige suctiepomp toe</Dutch>
+            <Italian>Permettere l'uso della pompa di aspirazione manuale</Italian>
         </Key>
         <Key ID="STR_KAT_Airway_ALLOW_SUCTION_DESC">
             <English>Training level required to use an Manual Suction Pump</English>
@@ -1059,6 +1081,7 @@
             <French>Niveau d'entrainement requis pour utiliser une pompe d'aspiration manuelle</French>
             <Portuguese>Nível de formação necessário para utilizar uma Bomba de Sucção Manual</Portuguese>
             <Dutch>Trainingsniveau benodigd om een handmatige suctiepomp te gebruiken</Dutch>
+            <Italian>Livello di formazione richiesto per utilizzare una pompa di aspirazione manuale</Italian>
         </Key>
         <Key ID="STR_KAT_Airway_TIME_CHECKAIRWAY">
             <English>Time to check Airway</English>
@@ -1148,6 +1171,7 @@
             <Finnish>pään käännösväli</Finnish>
             <Russian>Интервал поворота головы</Russian>
             <Dutch>Hoofddraaiing interval</Dutch>
+            <Italian>Intervallo di rotazione della testa</Italian>
         </Key>
         <Key ID="STR_KAT_Airway_SETTING_HeadTurning_Interval_DESC">
             <English>Time between head turning attempts</English>
@@ -1161,6 +1185,7 @@
             <Finnish>pään käännösyritysten välinen aika</Finnish>
             <Russian>Время между попытками поворота головы</Russian>
             <Dutch>Tijd tussen hoofddraaiing pogingen</Dutch>
+            <Italian>Tempo tra i tentativi di rotazione della testa</Italian>
         </Key>
         <Key ID="STR_KAT_Airway_Activity_HeadTurning">
             <English>%1 finished head turning (x%2)</English>
@@ -1174,6 +1199,7 @@
             <Finnish>%1 lopetti pään kääntämisen (x%2)</Finnish>
             <Russian>%1 закончил поворот головы (x%2)</Russian>
             <Dutch>%1 heeft het hoofd gedraaid (x%2)</Dutch>
+            <Italian>%1 ha completato la rotazione della testa (x%2)</Italian>
         </Key>
         <Key ID="STR_KAT_Airway_TIME_ACCUVAC">
             <English>Time for ACCUVAC</English>
@@ -1223,6 +1249,7 @@
             <French>Durée d'aspiration avec la pompe d'aspiration manuelle</French>
             <Portuguese>Tempo de uso da Bomba de Sucção Manual</Portuguese>
             <Dutch>Behandelstijd van een handmatige suctiepomp</Dutch>
+            <Italian>Tempo per la pompa di aspirazione manuale</Italian>
         </Key>
         <Key ID="STR_KAT_Airway_TIME_SUCTION_DESC">
             <English>How long it will take to use Manual Suction Pump</English>
@@ -1234,6 +1261,7 @@
             <French>Temps nécessaire pour utiliser la pompe d'aspiration manuelle</French>
             <Portuguese>Quanto tempo leva o uso da Bomba de Sucção Manual</Portuguese>
             <Dutch>Hoe lang het gaat duren om een handmatige suctiepomp te gebruiken</Dutch>
+            <Italian>Quanto tempo ci vorrà per utilizzare la pompa di aspirazione manuale</Italian>
         </Key>
         <Key ID="STR_KAT_Airway_TIME_LARYNXTUBUS">
             <English>Time for Larynxtubus</English>
@@ -1430,6 +1458,7 @@
             <Spanish>%1 cancelada posición lateral de seguridad</Spanish>
             <Portuguese>%1 cancelou a posição de recuperação</Portuguese>
             <Dutch>%1 stopte de stabiele zijligging</Dutch>
+            <Italian>%1 ha annullato la posizione laterale di sicurezza</Italian>
         </Key>
         <Key ID="STR_KAT_Airway_SETTING_RecoveryPosition_Time">
             <English>Time for recovery position</English>
@@ -1532,6 +1561,7 @@
             <German>Benötigte Zeit, um eine stabile Seitenlage rückganging zu machen.</German>
             <Portuguese>Quanto tempo leva para cancelar manualmente a posição de recuperação</Portuguese>
             <Dutch>Hoe lang het gaat duren om de stabiele zijligging te stoppen</Dutch>
+            <Italian>Quanto tempo ci vorrà per annullare manualmente la posizione laterale di sicurezza</Italian>
         </Key>
         <Key ID="STR_KAT_Airway_SETTING_RecoveryPosition_TimeToDrain">
             <English>Recovery Position time to drain occlusion</English>
@@ -1544,6 +1574,7 @@
             <German>Stabile Seitenlage: Benötigte Zeit zum Entgegenwirken einer Verstopfung</German>
             <Portuguese>Tempo para remover a oclusão durante a posição de recuperação</Portuguese>
             <Dutch>Stabiele zijligging: Benodigde tijd om zich te ontdoen van een verstopping</Dutch>
+            <Italian>Tempo in posizione laterale di sicurezza per drenare l'occlusione</Italian>
         </Key>
         <Key ID="STR_KAT_Airway_SETTING_RecoveryPosition_TimeToDrain_DESC">
             <English>Maximum time required for patient in recovery position to be drained of occlusion.</English>
@@ -1556,6 +1587,7 @@
             <German>Beschreibt die maximal benötigte Dauer, bei welcher eine Stabile Seitenlage zur zur Freilegung der verstopften Atemwege führt.</German>
             <Portuguese>O tempo máximo necessário para o paciente em posição de recuperação ter sua oclusão removida.</Portuguese>
             <Dutch>Maximale tijd die nodig is om een patiënt in de stabiele zijligging te ontdoen van een verstopping.</Dutch>
+            <Italian>Tempo massimo richiesto per drenare l'occlusione nel paziente in posizione laterale di sicurezza</Italian>
         </Key>
         <Key ID="STR_KAT_Airway_SubCategory_RecoveryPositionHyperextend">
             <English>Recovery Position + Head Hyperextend Settings</English>
@@ -1568,6 +1600,7 @@
             <German>Einstellungen für Stabile Seitenlage und Kopfüberstreckung</German>
             <Portuguese>Configurações de posição de recuperação + hiperestensão</Portuguese>
             <Dutch>Stabiele zijliggings- en hoofd overstrekkings opties</Dutch>
+            <Italian>Impostazioni della posizione laterale di sicurezza + iperestensione della testa</Italian>
         </Key>
         <Key ID="STR_KAT_Airway_SubCategory_Suction">
             <English>Suction devices Settings</English>
@@ -1579,6 +1612,7 @@
             <French>Paramètres des appareils d'aspiration</French>
             <Portuguese>Configurações de dispositivos de sucção</Portuguese>
             <Dutch>Suctie apparaten instellingen</Dutch>
+            <Italian>Impostazioni dei dispositivi di aspirazione</Italian>
         </Key>
         <Key ID="STR_KAT_Airway_SubCategory_Items">
             <English>Airway items Settings</English>
