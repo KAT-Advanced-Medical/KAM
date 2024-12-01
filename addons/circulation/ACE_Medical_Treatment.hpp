@@ -4,6 +4,18 @@ class ACE_Medical_Treatment {
         ratio[] = {};
         type = "Blood";
         viscosity = 0.9;
+        painReduce = 0;
+        hrIncreaseLow[] = {0, 0};
+        hrIncreaseNormal[] = {0, 0};
+        hrIncreaseHigh[] = {0, 0};
+        timeInSystem = 120;
+        timeTillMaxEffect = 30;
+        onOverDose = "";
+        viscosityChange = 0;
+        alphaFactor = 0;
+        maxRelief = 0;
+        opioidRelief = 0;
+        opioidEffect = 0;
         class BloodIV {
             volume = 1000;
             ratio[] = {"Plasma", 1};
@@ -216,6 +228,30 @@ class ACE_Medical_Treatment {
             volume = 250;
             viscosity = 0.7;
             type = "PackedRBC";
+        };
+        class MorphineInfusion_IV: SalineIV_500 {
+            volume = 500;
+            viscosity = 1.3;
+            type = "MorphineInfusion";
+        };
+        class EpinephrineInfusion_IV: SalineIV_500 {
+            volume = 500;
+            viscosity = 1.3;
+            type = "EpinephrineInfusion";
+        };
+        class EtomidateInfusion_IV: SalineIV_500 {
+            painReduce = 0.2;
+            hrIncreaseLow[] = {-3, -7};
+            hrIncreaseNormal[] = {-6, -13};
+            hrIncreaseHigh[] = {-10, -20};
+            timeInSystem = 7;
+            timeTillMaxEffect = 1;
+            dose = 0.1
+            incompatibleMedication[] = {};
+            viscosityChange = 0;
+            volume = 500;
+            viscosity = 1.3;
+            type = "EtomidateInfusion";
         };
     };
 };
