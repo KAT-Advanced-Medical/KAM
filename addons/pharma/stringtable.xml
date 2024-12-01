@@ -1252,7 +1252,7 @@
             <French>Stimulation activé?</French>
             <Turkish>Yeniden yönlendirme etkin mi?</Turkish>
             <Italian>Stimolazione abilitata?</Italian>
-            <Japanese>患者を刺激するアクションを有効化しますか?</Japanese>
+            <Japanese>"患者を刺激する"アクションを有効化</Japanese>
             <Russian>Переориентация включена?</Russian>
             <Portuguese>Reorientação habilitada?</Portuguese>
             <Finnish>Uudelleensuuntaus käytössä?</Finnish>
@@ -1270,7 +1270,7 @@
             <French>Activer stimulation</French>
             <Turkish>Yeniden yönlendirmeyi etkinleştirir</Turkish>
             <Italian>Stimolazione abilitata</Italian>
-            <Japanese>安定化している患者を刺激(平手打ち)することで、目覚めさせる機能を有効化します</Japanese>
+            <Japanese>安定化している患者を刺激(平手打ち)することで、目覚めさせる機能とアクションを有効化します</Japanese>
             <Russian>Включает переориентация</Russian>
             <Portuguese>Habilita a reorientação</Portuguese>
             <Finnish>Mahdollistaa suunnanmuutoksen</Finnish>
@@ -3757,7 +3757,7 @@
         </Key>
         <Key ID="STR_KAT_Pharma_CheckCoag_DisplayNameProgress">
             <English>Taking Blood Sample, </English>
-            <Japanese>血液サンプルを取っています、</Japanese>
+            <Japanese>血液サンプルを取得、</Japanese>
             <Spanish>Tomar muestra de sangre, </Spanish>
             <Portuguese>Coletando amostra sanguínea, </Portuguese>
             <Dutch>Bloedstaal wordt genomen</Dutch>
@@ -3856,7 +3856,7 @@
         </Key>
         <Key ID="STR_KAT_Pharma_SETTING_allowStackScript_EACA_DESC">
             <English>If enabled EACA will be stackable and double its efficiency</English>
-            <Japanese>有効にすると、EACAの重複が可能になり、効率が2倍になります。</Japanese>
+            <Japanese>有効にすると、EACAの重複と効率の倍化が可能になります。</Japanese>
             <Spanish>Si el EACA esta permitido, se podrá acumular y duplicará su eficiencia</Spanish>
             <Portuguese>Se habilitado, o efeito do EACA será somável e sua eficiência será dobrada</Portuguese>
             <Dutch>Staat het stapelen van EACA toe wanneer ingeschakeld, wat leidt tot een verdubbeling van de effectiviteit</Dutch>

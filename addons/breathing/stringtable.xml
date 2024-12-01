@@ -36,7 +36,7 @@
             <Turkish>Ölümcül SpO2 değeri</Turkish>
             <Italian>Valore letale di SpO2</Italian>
             <Russian>Смертельное значение SpO2</Russian>
-            <Japanese>SpO2の致命値</Japanese>
+            <Japanese>致死に至るSpO2値</Japanese>
             <Portuguese>Valor letal de SpO2</Portuguese>
             <Finnish>Tappava SpO2-arvo</Finnish>
             <Dutch>Dodelijke SpO2 waarde</Dutch>
@@ -54,7 +54,7 @@
             <Turkish>Ölümcül SpO2 değerini etkinleştir</Turkish>
             <Italian>Attivare il valore letale di SpO2</Italian>
             <Russian>Активировать летальное значение SpO2</Russian>
-            <Japanese>SpO2の致命値を有効化</Japanese>
+            <Japanese>SpO2値による致死を有効化</Japanese>
             <Portuguese>Ativar o valor letal de SpO2</Portuguese>
             <Finnish>Aktivoi tappava SpO2-arvo</Finnish>
             <Dutch>Activeer dodelijke SpO2 waarde</Dutch>
@@ -63,7 +63,7 @@
             <English>Cardiac arrest SpO2 value</English>
             <Russian>Значение SpO2 при остановке сердца</Russian>
             <Spanish>Valor de SpO2 de parada cardíaca</Spanish>
-            <Japanese>SpO2の心停止値</Japanese>
+            <Japanese>心停止に至るSpO2値</Japanese>
             <French>Valeur d'arrêt cardiaque de la SpO2</French>
             <Portuguese>Valor de SpO2 para parada cardíaca</Portuguese>
             <Dutch>Hartstilstand SpO2 waarde</Dutch>
@@ -73,7 +73,7 @@
             <English>Activate cardiac arrest SpO2 value</English>
             <Russian>Активируйте значение SpO2 при остановке сердца</Russian>
             <Spanish>Activar parada cardíaca por valor de SpO2</Spanish>
-            <Japanese>SpO2の心停止値を有効化</Japanese>
+            <Japanese>SpO2値による心停止を有効化</Japanese>
             <French>Activer la valeur d'arrêt cardique de la SpO2</French>
             <Portuguese>Ativar parada cardíaca por valor de SpO2</Portuguese>
             <Dutch>Activeer hartstilstand SpO2 waarde</Dutch>
@@ -2726,7 +2726,7 @@
         <Key ID="STR_KAT_Breathing_SETTING_enableCheckBreathing">
             <English>Enable Check Breathing</English>
             <Italian>Abilitare il controllo della respirazione</Italian>
-            <Japanese>呼吸を確認を有効化</Japanese>
+            <Japanese>"呼吸を確認"を有効化</Japanese>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_enableCheckBreathing_DESC">
             <English>Whether or not Check Breathing medical action is enabled</English>
