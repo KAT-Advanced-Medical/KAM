@@ -43,7 +43,7 @@ _patient setVariable [QGVAR(fractures), _fractureArray, true];
 
     private _fractureArray = _patient getVariable [QGVAR(fractures), [0,0,0,0,0,0]];
     private _liveFracture = _fractureArray select _part;
-    private _count = [_patient, "Etomidate"] call ACEFUNC(medical_status,getMedicationCount);
+    private _count = [_patient, "Etomidate", true] call ACEFUNC(medical_status,getMedicationCount);
 
     private _alive = alive _patient;
 
@@ -51,14 +51,14 @@ _patient setVariable [QGVAR(fractures), _fractureArray, true];
         [_idPFH] call CBA_fnc_removePerFrameHandler;
     };
 
-    if (((GVAR(Surgery_ConsciousnessRequirement) in [0,1]) && (!(IS_UNCONSCIOUS(_patient)) || _count == 0)) || (GVAR(Surgery_ConsciousnessRequirement) == 3 && _count == 0)) exitWith {
+    if (((GVAR(Surgery_ConsciousnessRequirement) in [0,1]) && (!(IS_UNCONSCIOUS(_patient)) || _count >= 0.2)) || (GVAR(Surgery_ConsciousnessRequirement) == 3 && _count == 0)) exitWith {
         [_patient, "Pain", 10, 40, 200, 0, 40] call ACEFUNC(medical_status,addMedicationAdjustment);
         [_patient, true] call ACEFUNC(medical,setUnconscious);
     };
 
-    if (GVAR(Surgery_ConsciousnessRequirement) == 2 && _count == 0) then {
+    if (GVAR(Surgery_ConsciousnessRequirement) == 2 && _count >= 0.2) then {
         [_patient, 0.4] call ACEFUNC(medical_status,adjustPainLevel);
         [_patient, "Pain", 10, 40, 30, 0, 40] call ACEFUNC(medical_status,addMedicationAdjustment);
     };
 
-}, GVAR(etomidateTime), [_patient, _part]] call CBA_fnc_addPerFrameHandler;
+}, 5, [_patient, _part]] call CBA_fnc_addPerFrameHandler;

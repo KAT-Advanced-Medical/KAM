@@ -257,7 +257,7 @@ class ACE_ADDON(Medical_Treatment) {
             hrIncreaseLow[] = {-5, -10};
             hrIncreaseNormal[] = {-15, -20};
             hrIncreaseHigh[] = {-20, -30};
-            timeInSystem = 45;
+            timeInSystem = 60;
             timeTillMaxEffect = 5;
             maxDose = 10;
             incompatibleMedication[] = {};
