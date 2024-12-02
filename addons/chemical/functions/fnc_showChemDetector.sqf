@@ -50,17 +50,27 @@ private _exposure = _display displayCtrl 18805;
     private _hour = floor dayTime;
     private _minute = floor ((dayTime - _hour) * 60);
 
-    _time ctrlSetText (format ["%1:%2", [_hour, 2] call CBA_fnc_formatNumber, [_minute, 2] call CBA_fnc_formatNumber]); 
+    _time ctrlSetText (format ["%1:%2", [_hour, 2] call CBA_fnc_formatNumber, [_minute, 2] call CBA_fnc_formatNumber]);
 
-    private _gas = nearestObjects [_unit, ["kat_module_zeus_gas"], 2000];
+    private _intensity = _unit getVariable [QGVAR(areaIntensity), 0];
 
-    if ((count _gas) > 0) then {
-        private _distance = _unit distance (_gas select 0);
-        private _radius = (_gas select 0) getVariable [QGVAR(gas_radius), 0];
+    _exposure ctrlSetText (_intensity toFixed 2);
 
-        _exposure ctrlSetText ((linearConversion[0, _radius, _distance, 1, 0, true]) toFixed 2);
+    if (_intensity > 0) then {
+        private _lastSoundTime = _unit getVariable QGVAR(lastSoundTime);
+        _unit setVariable [QGVAR(areaIntensity), 0, true];
+
+        if (isNil "_lastSoundTime") then {
+            TRACE_1("undefined lastSoundTime: setting to current time",_lastSoundTime);
+            _unit setVariable [QGVAR(lastSoundTime), CBA_missionTime];
+        };
+
+        if (CBA_missionTime - _lastSoundTime > 6) exitWith {
+            playSound3D [QPATHTOF(audio\chemDetector.ogg), _unit, false, getPosASL _unit, 4, 1, 10];
+            _unit setVariable [QGVAR(lastSoundTime), CBA_missionTime];
+        };
     } else {
-        _exposure ctrlSetText str (0); 
+        _unit setVariable [QGVAR(areaIntensity), 0, true];
     };
 
 }, 1, [

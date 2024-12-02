@@ -22,7 +22,6 @@ PREP_RECOMPILE_END;
     true
 ] call CBA_Settings_fnc_init;
 
-
 [
     QGVAR(gasmask_durability),
     "TIME",
@@ -32,24 +31,27 @@ PREP_RECOMPILE_END;
     true
 ] call CBA_Settings_fnc_init;
 
+// Sets sound volume of gas mask breathing
 [
-    QGVAR(infectionTime),
-    "TIME",
-    [LLSTRING(SETTING_infection_time),LLSTRING(SETTING_infection_time_disc)],
+    QGVAR(gasMaskSoundVolume),
+    "SLIDER",
+    [LLSTRING(SETTING_stethoscopeSoundVolume), LLSTRING(SETTING_stethoscopeSoundVolume_DESC)],
     CBA_SETTINGS_CHEM,
-    [1, 600, 60],
-    true
+    [0, 2, 1, 1],
+    2,
+    {
+        player setVariable [QGVAR(gasMaskSoundVolume), _this, true];
+    },
+    false
 ] call CBA_Settings_fnc_init;
 
+// Chance of weapon drop by tear gas
 [
-    QGVAR(affectAI),
-    "CHECKBOX",
-    [LLSTRING(SETTING_affectAI),LLSTRING(SETTING_affectAI_disc)],
+    QGVAR(tearGasDropChance),
+    "SLIDER",
+    [LLSTRING(SETTING_dropWeaponChance), LLSTRING(SETTING_dropWeaponChance_DESC)],
     CBA_SETTINGS_CHEM,
-    false,
-    true,
-    {},
+    [0, 1, 0, 2, true],
     true
 ] call CBA_Settings_fnc_init;
-
 ADDON = true;

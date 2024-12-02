@@ -186,7 +186,7 @@
 #undef GET_SM_STATE
 #define GET_SM_STATE(_unit)         ([_unit, ACEGVAR(medical,STATE_MACHINE)] call CBA_statemachine_fnc_getCurrentState)
 
-#undef GET_BLOOD_VOLUME             
+#undef GET_BLOOD_VOLUME
 
 #define GET_OPIOID_FACTOR(unit)           (unit getVariable [QEGVAR(pharma,opioidFactor), 0])
 #define GET_PAIN_PERCEIVED(unit)    (0 max ((GET_PAIN(unit) - GET_PAIN_SUPPRESS(unit)) min 1))
@@ -340,3 +340,6 @@
 //Feedback
 #define VAR_PP QEGVAR(feedback,ppEffect)
 #define GET_PP(unit) (unit getVariable [VAR_PP, 0])
+
+#define IS_AIRPOISONED(unit) (unit getVariable [QEGVAR(chemical,airPoisoning), false])
+#define IN_TEARGAS(unit) (unit getVariable [QEGVAR(chemical,CSGas), 0])
