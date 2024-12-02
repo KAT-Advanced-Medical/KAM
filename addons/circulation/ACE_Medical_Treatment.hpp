@@ -230,11 +230,29 @@ class ACE_Medical_Treatment {
             type = "PackedRBC";
         };
         class MorphineInfusion_IV: SalineIV_500 {
+            painReduce = 0.8;
+            hrIncreaseLow[] = {-2, -7};
+            hrIncreaseNormal[] = {-3, -10};
+            hrIncreaseHigh[] = {-5, -16};
+            timeInSystem = 15;
+            timeTillMaxEffect = 3;
+            dose = 0.3;
+            viscosityChange = -15;
+            opioidRelief = 1.3;
             volume = 500;
             viscosity = 1.3;
             type = "MorphineInfusion";
         };
         class EpinephrineInfusion_IV: SalineIV_500 {
+            painReduce = 0;
+            hrIncreaseLow[] = {3, 14};
+            hrIncreaseNormal[] = {5, 20};
+            hrIncreaseHigh[] = {7, 25};
+            timeInSystem = 10;
+            timeTillMaxEffect = 3;
+            dose = 0.1;
+            alphaFactor = -0.2;
+            onOverDose = "";
             volume = 500;
             viscosity = 1.3;
             type = "EpinephrineInfusion";
@@ -247,7 +265,6 @@ class ACE_Medical_Treatment {
             timeInSystem = 7;
             timeTillMaxEffect = 1;
             dose = 0.1;
-            incompatibleMedication[] = {};
             viscosityChange = 0;
             volume = 500;
             viscosity = 1.3;
