@@ -36,10 +36,10 @@ GVAR(CPRCancel_MouseID) = [0xF0, [false, false, false], {
 
 GVAR(CPRDevice_Iterate) = [0xF1, [false, false, false], {
     private _deviceCode = GVAR(CPRTarget) getVariable [QGVAR(deviceCode), 0];
-    _deviceCode = [(_deviceCode + 1), 1] select (_deviceCode == 3);
-    private _deviceArray = [true,(GVAR(CPRTarget) getVariable [QEGVAR(breathing,pulseoximeter), false]),((GVAR(CPRTarget) getVariable [QGVAR(AED_X_VitalsMonitor_Connected), false]) || (GVAR(CPRTarget) getVariable [QGVAR(DefibrillatorPads_Connected), false])),(GVAR(CPRTarget) getVariable [QGVAR(watchAvailable), false])];
+    _deviceCode = [(_deviceCode + 1), 1] select (_deviceCode == 2);
+    private _deviceArray = [true,(GVAR(CPRTarget) getVariable [QEGVAR(breathing,pulseoximeter), false]),((GVAR(CPRTarget) getVariable [QGVAR(AED_X_VitalsMonitor_Connected), false]) || (GVAR(CPRTarget) getVariable [QGVAR(DefibrillatorPads_Connected), false]))];
         while { !(_deviceArray select _deviceCode) } do {
-            _deviceCode = [0, (_deviceCode + 1)] select (_deviceCode < 3);
+            _deviceCode = [0, (_deviceCode + 1)] select (_deviceCode < 2);
         };
     GVAR(CPRTarget) setVariable [QGVAR(deviceCode), _deviceCode, true];
     true
@@ -77,10 +77,6 @@ if (_notInVehicle) then {
     };
     
     switch (true) do {
-        case (_deviceCode == 3): {
-            GVAR(CPRDisplayActive) = false;
-            "CPR_MONITOR" cutText ["", "PLAIN",0,true];
-        };
         case (_deviceCode == 2): {
             if ((_patient getVariable [QGVAR(AED_X_VitalsMonitor_Connected), false]) || (_patient getVariable [QGVAR(DefibrillatorPads_Connected), false])) then {
                 if !(GVAR(CPRDisplayActive)) then {
