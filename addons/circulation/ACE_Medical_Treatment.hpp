@@ -246,7 +246,7 @@ class ACE_Medical_Treatment {
             hrIncreaseHigh[] = {-10, -20};
             timeInSystem = 7;
             timeTillMaxEffect = 1;
-            dose = 0.1
+            dose = 0.1;
             incompatibleMedication[] = {};
             viscosityChange = 0;
             volume = 500;
