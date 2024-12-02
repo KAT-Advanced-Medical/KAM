@@ -16,7 +16,7 @@ PREP(init);
 PREP(inspectChest);
 PREP(listenLungs);
 PREP(refillOxygenTank);
-PREP(detatchPersonalOxygen);
+PREP(detachPersonalOxygen);
 PREP(attachPersonalOxygen);
 PREP(attachVehicleOxygen);
 PREP(checkPersonalOxygen);

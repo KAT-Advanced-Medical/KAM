@@ -137,7 +137,7 @@ class CfgVehicles {
                 class Detatch_PersonalOxygen: Attach_PersonalOxygen {
                     displayName = CSTRING(RemovePersonalOxygenTank);
                     condition = QUOTE(_player getVariable [ARR_2(QQGVAR(oxygenMaskActive),false)]);
-                    statement = QUOTE(_player call FUNC(detatchPersonalOxygen));
+                    statement = QUOTE(_player call FUNC(detachPersonalOxygen));
                 };
                 class Check_PersonalOxygen: Attach_PersonalOxygen {
                     displayName = CSTRING(CheckPersonalOxygenTank);
