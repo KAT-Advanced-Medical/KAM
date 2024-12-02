@@ -49,16 +49,6 @@ class GVAR(kat_RscAtributeRadius): RscControlsGroupNoScrollbars {
             w = QUOTE(W_PART(15.9));
             h = QUOTE(H_PART(1));
         };
-        class Title2: Title1 {
-            idc = 16108;
-            text = CSTRING(UI_min_range);
-            toolTip = CSTRING(GasModule_min_radius_dcs);
-            y = QUOTE(H_PART(1.1));
-        };
-        class radius_min: radius_max {
-            idc = 1612;
-            y = QUOTE(H_PART(1.1));
-        };
         class Title3: Title1 {
             idc = 1614;
             text = CSTRING(UI_sealable);

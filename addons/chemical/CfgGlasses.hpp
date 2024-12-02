@@ -1,4 +1,4 @@
-class cfgGlasses
+class CfgGlasses
 {
     class G_RegulatorMask_F;
     class kat_mask_M50: G_RegulatorMask_F
@@ -11,7 +11,7 @@ class cfgGlasses
         mass = 4;
 
     };
-    
+
     class kat_mask_M04: kat_mask_M50
     {
         author = "Assaultboy";

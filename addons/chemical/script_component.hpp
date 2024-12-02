@@ -25,3 +25,4 @@
 #define X_PART(num) (W_PART(num) + (safeZoneX + (safeZoneW - SIZEX) / 2))
 #define Y_PART(num) (H_PART(num) + (safeZoneY + (safeZoneH - SIZEY) / 2))
 
+#define GAS_MANAGER_PFH_DELAY 0.25
