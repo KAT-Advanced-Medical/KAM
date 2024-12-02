@@ -56,7 +56,7 @@ private _exposure = _display displayCtrl 18805;
 
     _exposure ctrlSetText (_intensity toFixed 2);
 
-    if (_intensity > 0.1) then {
+    if (_intensity > 0) then {
         private _lastSoundTime = _unit getVariable QGVAR(lastSoundTime);
         _unit setVariable [QGVAR(areaIntensity), 0, true];
 
