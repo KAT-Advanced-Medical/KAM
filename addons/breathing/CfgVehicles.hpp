@@ -176,7 +176,7 @@ class CfgVehicles {
         class ACE_SelfActions {
             class KAT_AttachOxygenVehicle {
                 displayName = CSTRING(AttachOxygenVehicle);
-                condition = QUOTE(([ARR_2(_target,_player)] call FUNC(checkAircraftOxygen)) && (_player call EFUNC(airway,checkMask)));
+                condition = QUOTE(((_player call FUNC(checkAircraftOxygen)) && (_player call EFUNC(airway,checkMask)));
                 statement = QUOTE(_player call FUNC(attachVehicleOxygen));
                 insertChildren = "";
                 exceptions[] = {};
@@ -189,7 +189,7 @@ class CfgVehicles {
         class ACE_SelfActions {
             class KAT_AttachOxygenVehicle {
                 displayName = CSTRING(AttachOxygenVehicle);
-                condition = QUOTE((call FUNC(checkAircraftOxygen)) && (_player call EFUNC(airway,checkMask)));
+                condition = QUOTE(((_player call FUNC(checkAircraftOxygen)) && (_player call EFUNC(airway,checkMask)));
                 statement = QUOTE(_player call FUNC(attachVehicleOxygen));
                 insertChildren = "";
                 exceptions[] = {};

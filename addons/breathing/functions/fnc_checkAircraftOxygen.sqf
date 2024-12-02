@@ -16,7 +16,7 @@
  * Public: No
  */
 
-params ["_vehicle", "_patient"];
+params ["_patient"];
 
 if (isNull objectParent _patient) exitWith {
     false
