@@ -47,6 +47,7 @@ _patient setVariable [QGVAR(oxygenMaskStatus), [(_largestTankValue + 1), 1], tru
     _args params ["_patient"];
 
     if !((_patient call EFUNC(airway,checkMask))) exitWith {
+        _patient call kat_breathing_fnc_detatchPersonalOxygen;
         _pfhID call CBA_fnc_removePerFrameHandler;
     };
     
