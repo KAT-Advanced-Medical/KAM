@@ -1,7 +1,7 @@
 #include "..\script_component.hpp"
 /*
  * Author: Mazinski
- * Detaches personal oxygen from player
+ * Detaches personal oxygen mask from player
  * Main function
  *
  * Arguments:
@@ -11,7 +11,7 @@
  * None
  *
  * Example:
- * call kat_breathing_fnc_detatchPersonalOxygen;
+ * [player] call kat_breathing_fnc_detatchPersonalOxygen;
  *
  * Public: No
  */

@@ -11,7 +11,7 @@
  * None
  *
  * Example:
- * call kat_breathing_fnc_attachPersonalOxygen;
+ * [player] call kat_breathing_fnc_attachPersonalOxygen;
  *
  * Public: No
  */
