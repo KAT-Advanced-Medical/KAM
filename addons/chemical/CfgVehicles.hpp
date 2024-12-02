@@ -20,7 +20,7 @@ class CfgVehicles {
                     icon = QPATHTOF(ui\gasmaskfilter_ca.paa);
                 };
                 class KAT_PutOnGasMask {
-                    displayName = "Put on Gas Mask";
+                    displayName = CSTRING(PutOnGasMask);
                     condition = QUOTE([_player] call FUNC(canPutOnGasMask));
                     exceptions[] = {"isNotSwimming", "isNotInside", "isNotSitting"};
                     statement = QUOTE([_player] call FUNC(putOnGasMask));
@@ -28,7 +28,7 @@ class CfgVehicles {
                     icon = QPATHTOF(ui\Gasmask_icon.paa);
                 };
                 class KAT_TakeOffGasMask {
-                    displayName = "Take off Gas Mask";
+                    displayName = CSTRING(TakeOffGasMask);
                     condition = QUOTE([_player] call FUNC(canTakeOffGasMask));
                     exceptions[] = {"isNotSwimming", "isNotInside", "isNotSitting"};
                     statement = QUOTE([_player] call FUNC(takeOffGasMask));

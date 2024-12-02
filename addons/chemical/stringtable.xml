@@ -780,5 +780,11 @@
         <Key ID="STR_KAT_Chemical_OnlyObject">
             <English>Must be placed on object</English>
         </Key>
+        <Key ID="STR_KAT_Chemical_PutOnGasMask">
+            <English>Put on gas mask</English>
+        </Key>
+        <Key ID="STR_KAT_Chemical_TakeOffGasMask">
+            <English>Take off gas mask</English>
+        </Key>
     </Package>
 </Project>
