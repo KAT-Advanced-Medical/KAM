@@ -141,7 +141,7 @@ if (!isNil {_unit getVariable [QACEGVAR(medical,ivBags),[]]}) then {
             private _medicationName = (_baseName splitString "Infusion") select 0;
             TRACE_3("adjustments",_heartRateChange,_painReduce,_viscosityChange);
             [_patient, _medicationName, _timeTillMaxEffect, _timeInSystem, _heartRateChange, _painReduce, _viscosityChange, _dose, _alphaFactor, _opioidRelief, _opioidEffect, _opioidDepression, _respiratoryRate] call EFUNC(vitals,addMedicationAdjustment);
-            [_patient, _medicationName, _incompatibleMedication] call ACEFUNC(medical_treatment,onMedicationUsage);
+            [_patient, _medicationName] call ACEFUNC(medical_treatment,onMedicationUsage);
             private _bagChange = (_flowCalculation * (_IVflow select _bodyPart) * _viscosity) min _bagVolumeRemaining; // absolute value of the change in miliLiters
             _bagVolumeRemaining = _bagVolumeRemaining - _bagChange;
             _incomingFlowAmount set [_bodyPart, ((_incomingFlowAmount select _bodyPart) + _bagChange)];
