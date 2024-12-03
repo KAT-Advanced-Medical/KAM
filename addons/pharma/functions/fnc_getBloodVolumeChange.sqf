@@ -127,6 +127,7 @@ if (!isNil {_unit getVariable [QACEGVAR(medical,ivBags),[]]}) then {
             private _opioidRelief           = GET_NUMBER(_ivConfig >> "opioidRelief",getNumber (_defaultConfig >> "opioidRelief") * _IVflow);
             private _opioidEffect           = GET_NUMBER(_ivConfig >> "opioidEffect",getNumber (_defaultConfig >> "opioidEffect") * _IVflow);
             private _viscosity              = GET_NUMBER(_ivConfig >> "viscosity",getNumber (_defaultConfig >> "viscosity"));
+            private _dose                   = GET_NUMBER(_medicationConfig >> "dose",getNumber (_defaultConfig >> "dose"));
             private _heartRate = GET_HEART_RATE(_patient);
             private _hrIncrease = [_hrIncreaseLow, _hrIncreaseNormal, _hrIncreaseHigh] select (floor ((0 max _heartRate min 110) / 55));
             _hrIncrease params ["_minIncrease", "_maxIncrease"];
