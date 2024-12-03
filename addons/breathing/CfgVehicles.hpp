@@ -134,7 +134,7 @@ class CfgVehicles {
                     exceptions[] = {"isNotSwimming", "isNotOnLadder"};
                     icon = QPATHTOF(ui\oxygenTank_ui.paa);
                 };
-                class Detatch_PersonalOxygen: Attach_PersonalOxygen {
+                class Detach_PersonalOxygen: Attach_PersonalOxygen {
                     displayName = CSTRING(RemovePersonalOxygenTank);
                     condition = QUOTE(_player getVariable [ARR_2(QQGVAR(oxygenMaskActive),false)]);
                     statement = QUOTE(_player call FUNC(detachPersonalOxygen));
