@@ -27,7 +27,7 @@ class CfgWeapons {
     class kat_IV_20: ACE_ItemCore {
         scope = 2;
         displayName = CSTRING(IV_20_Display);
-        picture = QPATHTOF(ui\icon_IV_16.paa);
+        picture = QPATHTOF(ui\icon_IV_20.paa);
         model = QPATHTOF(models\iv\kat_iv.p3d);
         descriptionShort = CSTRING(IV_DescShort);
         ACE_isMedicalItem = 1;
