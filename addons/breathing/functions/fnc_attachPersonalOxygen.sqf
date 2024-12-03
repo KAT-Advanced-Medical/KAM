@@ -47,7 +47,7 @@ _patient setVariable [QGVAR(oxygenMaskStatus), [(_largestTankValue + 1), 1], tru
     _args params ["_patient"];
 
     if !((_patient call EFUNC(airway,checkMask))) exitWith {
-        _patient call kat_breathing_fnc_detatchPersonalOxygen;
+        _patient call FUNC(detatchPersonalOxygen);
         _pfhID call CBA_fnc_removePerFrameHandler;
     };
     
@@ -70,7 +70,7 @@ _patient setVariable [QGVAR(oxygenMaskStatus), [(_largestTankValue + 1), 1], tru
     private _maskStatus = _patient getVariable [QGVAR(oxygenMaskStatus), [0,0]];
 
     if ((_maskStatus select 0) == 0) exitWith {
-        ["Oxygen tank empty", 1.5, _patient] call ACEFUNC(common,displayTextStructured);
+        [LLSTRING(PersonalOxygen_Empty), 1.5, _patient] call ACEFUNC(common,displayTextStructured);
         _pfhID call CBA_fnc_removePerFrameHandler;
     };
 

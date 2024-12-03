@@ -2755,6 +2755,9 @@
         <Key ID="STR_KAT_Breathing_PersonalOxygen_Remaining">
             <English>Minutes Remaining</English>
         </Key>
+        <Key ID="STR_KAT_Breathing_PersonalOxygen_Empty">
+            <English>Oxygen Tank Empty</English>
+        </Key>
         <Key ID="STR_KAT_Breathing_AttachOxygenVehicle">
             <English>Connect to Aircraft Oxygen</English>
         </Key>
