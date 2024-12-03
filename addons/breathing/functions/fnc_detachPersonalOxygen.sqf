@@ -11,7 +11,7 @@
  * None
  *
  * Example:
- * [player] call kat_breathing_fnc_detatchPersonalOxygen;
+ * [player] call kat_breathing_fnc_detachPersonalOxygen;
  *
  * Public: No
  */
