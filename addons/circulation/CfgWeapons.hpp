@@ -132,6 +132,17 @@ class CfgWeapons {
             mass = 2.5;
         };
     };
+    class kat_MorphineInfusion_IV: ACE_salineIV_250 {
+        scope = 2;
+        author = "Cplhardcore";
+        displayName = CSTRING(Ringers_Lactate_IV_250);
+        descriptionShort = CSTRING(Ringers_Lactate_IV_Desc_Short);
+        descriptionUse = CSTRING(Ringers_Lactate_IV_Desc_Use);
+        ACE_isMedicalItem = 1;
+        class ItemInfo: CBA_MiscItem_ItemInfo {
+            mass = 2.5;
+        };
+    };
     class kat_PackedRBCIV_500: ACE_bloodIV_500 {
         scope = 2;
         author = "Cplhardcore";

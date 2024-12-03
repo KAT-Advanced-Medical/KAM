@@ -53,9 +53,8 @@ if (!isNil {_unit getVariable [QACEGVAR(medical,ivBags),[]]}) then {
         if ((_tourniquets select _bodyPart isEqualTo 0) && (_IVarray select _bodyPart isNotEqualTo 3)  && (!(_type in ["EtomidateInfusion", "EpinephrineInfusion", "MorphineInfusion"]))) then {
             private _IVflow = _unit getVariable [QGVAR(IVflow), [0,0,0,0,0,0]];
             private _IVrate = _unit getVariable [QGVAR(IVrate), [0,0,0,0,0,0]];
-            private _bagChange = (_flowCalculation * (_IVflow select _bodyPart) * (_IVrate select _bodyPart)) min _bagVolumeRemaining; // absolute value of the change in miliLiters
             private _viscosity = getNumber (configFile >> "ACE_Medical_Treatment" >> "IV" >> _className >> "viscosity");
-            private _bagChange = (_flowCalculation * (_IVflow select _bodyPart) * _viscosity) min _bagVolumeRemaining; // absolute value of the change in miliLiters
+            private _bagChange = (_flowCalculation * (_IVflow select _bodyPart) * (_IVrate select _bodyPart) * _viscosity) min _bagVolumeRemaining;  // absolute value of the change in miliLiters
 
             _bagVolumeRemaining = _bagVolumeRemaining - _bagChange;
             _incomingFlowAmount set [_bodyPart, ((_incomingFlowAmount select _bodyPart) + _bagChange)];
