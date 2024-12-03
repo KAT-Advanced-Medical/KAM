@@ -169,7 +169,7 @@ if (GVAR(AMS_Enabled)) then {
     [format ["kat_pharma_%1Local", toLower _className], [_patient, _bodyPart, _opioidRelief], _patient] call CBA_fnc_targetEvent;
     };
 };
-if (QGVAR(AMSEnabled)) then {
+if (GVAR(AMSEnabled)) then {
 private _TXAmedications = ["syringe_TXA_5ml_1", "syringe_TXA_10ml_1"];
     if (_classname in _TXAmedications) then {
         private _medication = _classname;
