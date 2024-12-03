@@ -6,108 +6,128 @@
             <Dutch>Selecteer temperatuur vorm</Dutch>
             <Spanish>Seleccionar temperatura de</Spanish>
             <Japanese>温度単位を選択</Japanese>
+            <Italian>Seleziona formato temperatura</Italian>
         </Key>
         <Key ID="STR_KAT_Watch_SETTING_TemperatureForm_Desc">
             <English>Selects which temperature unit is used for the KATMIN watch display</English>
             <Dutch>Selecteert welke temperatuur eenheid gebruikt wordt voor de KATMIN horloge</Dutch>
             <Spanish>Seleccionar qué unidad de temperatura es usada para la pantalla del reloj KATMIN</Spanish>
             <Japanese>Katmin腕時計で表示される温度の単位を選択します</Japanese>
+            <Italian>Seleziona quale unità di temperatura viene utilizzata per il display del KATMIN</Italian>
         </Key>
         <Key ID="STR_KAT_Watch_SETTING_TemperatureForm_Celcius">
             <English>Celcius</English>
             <Dutch>Celcius</Dutch>
             <Spanish>Celsius</Spanish>
             <Japanese>摂氏 (C)</Japanese>
+            <Italian>Celcius</Italian>
         </Key>
         <Key ID="STR_KAT_Watch_SETTING_TemperatureForm_Fahrenheit">
             <English>Fahrenheit</English>
             <Dutch>Fahrenheit</Dutch>
             <Spanish>Fahrenheit</Spanish>
             <Japanese>華氏 (F)</Japanese>
+            <Italian>Fahrenheit</Italian>
         </Key>
         <Key ID="STR_KAT_Watch_SETTING_PressureForm">
             <English>Select pressure form</English>
             <Dutch>Selecteer drukvorm</Dutch>
             <Spanish>Seleccionar presión de</Spanish>
             <Japanese>圧力単位を選択</Japanese>
+            <Italian>Seleziona formato pressione</Italian>
         </Key>
         <Key ID="STR_KAT_Watch_SETTING_PressureForm_Desc">
             <English>Selects which pressure unit is used for the KATMIN watch display</English>
             <Dutch>Selecteerd welke drukeenheden gebruikt worden voor de KATMIN horloge</Dutch>
             <Spanish>Selecciona qué unidad de presión es usada para la pantalla del reloj KATMIN</Spanish>
             <Japanese>Katmin腕時計で表示される圧力の単位を選択します</Japanese>
+            <Italian>Seleziona quale unità di pressione viene utilizzata per il display del KATMIN</Italian>
         </Key>
         <Key ID="STR_KAT_Watch_SETTING_PressureForm_mmHg">
             <English>mmHg</English>
             <Dutch>mmHg</Dutch>
             <Spanish>mmHg</Spanish>
             <Japanese>mmHg</Japanese>
+            <Italian>mmHg</Italian>
         </Key>
         <Key ID="STR_KAT_Watch_SETTING_PressureForm_hPa">
             <English>hPa</English>
             <Dutch>hPa</Dutch>
             <Spanish>hPa</Spanish>
             <Japanese>hPa</Japanese>
+            <Italian>hPa</Italian>
         </Key>
         <Key ID="STR_KAT_Watch_SETTING_AltitudeForm">
             <English>Select altitude form</English>
             <Dutch>Selecteer hoogte vorm</Dutch>
             <Spanish>Seleccionar altitud de</Spanish>
             <Japanese>高度単位を選択</Japanese>
+            <Italian>Seleziona formato altitudine</Italian>
         </Key>
         <Key ID="STR_KAT_Watch_SETTING_AltitudeForm_Desc">
             <English>Selects which altitude unit is used for the KATMIN watch display</English>
             <Dutch>Selecteerd welk hoogte eenheid gebruikt wordt voor de KATMIN horloge</Dutch>
             <Spanish>Selecciona qué unidad de altitud es usada para la pantalla del reloj KATMIN</Spanish>
             <Japanese>Katmin腕時計で表示される高度の単位を選択します</Japanese>
+            <Italian>Seleziona quale unità di altitudine viene utilizzata per il display del KATMIN</Italian>
         </Key>
         <Key ID="STR_KAT_Watch_SETTING_AltitudeForm_meters">
             <English>Meters</English>
             <Dutch>Meters</Dutch>
             <Spanish>Metros</Spanish>
             <Japanese>メートル</Japanese>
+            <Italian>Metri</Italian>
         </Key>
         <Key ID="STR_KAT_Watch_SETTING_AltitudeForm_feet">
             <English>Feet</English>
             <Dutch>Voet</Dutch>
             <Spanish>Pies</Spanish>
             <Japanese>フィート</Japanese>
+            <Italian>Piedi</Italian>
         </Key>
         <Key ID="STR_KAT_Watch_KatminDescription">
             <English>Watch with Vital Monitoring Capabilities</English>
             <Dutch>Horloge met ingebouwde vitale waarden monitor</Dutch>
             <Spanish>Reloj con Capacidad de Monitorización de Constantes Vitales</Spanish>
             <Japanese>カーミン K500。 バイタル監視機能を持った腕時計</Japanese>
+            <Italian>Orologio con capacità di monitoraggio vitale</Italian>
         </Key>
         <Key ID="STR_KAT_Watch_KatminDisplayName">
             <English>Katmin K500</English>
             <Dutch>Katmin k500</Dutch>
             <Spanish>Katmin K500</Spanish>
             <Japanese>Katmin K500</Japanese>
+            <Italian>Katmin K500</Italian>
         </Key>
         <Key ID="STR_KAT_Watch_CavminDescription">
             <English>Watch with Vital Monitoring Capabilities. Garry Owen!</English>
             <Japanese>カーミン キャバルリー・リミテッド。 バイタル監視機能を持った腕時計。 ギャリー・オーウェン!(Garry Owen!)</Japanese>
+            <Italian>Orologio con capacità di monitoraggio vitale. Garry Owen!</Italian>
         </Key>
         <Key ID="STR_KAT_Watch_CavminDisplayName">
             <English>Katmin Cavalry Limited</English>
             <Japanese>Katmin Cavalry Limited</Japanese>
+            <Italian>Katmin Cavalry Limited</Italian>
         </Key>
         <Key ID="STR_KAT_Watch_STSDescription">
             <English>Watch with Vital Monitoring Capabilities. So Others May Live.</English>
             <Japanese>カーミン ジャンプ・スタンダード。 バイタル監視機能を持った腕時計。 他人の命の為に。(So Others May Live)</Japanese>
+            <Italian>Orologio con capacità di monitoraggio vitale. Perché altri possano vivere.</Italian>
         </Key>
         <Key ID="STR_KAT_Watch_STSDisplayName">
             <English>Katmin Jump Standard</English>
             <Japanese>Katmin Jump Standard</Japanese>
+            <Italian>Katmin Jump Standard</Italian>
         </Key>
         <Key ID="STR_KAT_Watch_descentFT">
             <English>%1ft/s</English>
             <Japanese>%1ft/s</Japanese>
+            <Italian>%1ft/s</Italian>
         </Key>
         <Key ID="STR_KAT_Watch_descentM">
             <English>%1m/s</English>
             <Japanese>%1m/s</Japanese>
+            <Italian>%1m/s</Italian>
         </Key>
     </Package>
 </Project>

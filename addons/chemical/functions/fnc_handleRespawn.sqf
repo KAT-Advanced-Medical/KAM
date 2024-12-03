@@ -11,7 +11,7 @@
  * None
  *
  * Example:
- * [alive, body] call kat_misc_fnc_handleRespawn;
+ * [alive, body] call kat_chemical_fnc_handleRespawn;
  *
  * Public: No
  */
@@ -29,3 +29,5 @@ params ["_unit"];
 private _ui = uiNamespace getVariable "RscWeaponChemicalDetector";
 private _obj = _ui displayCtrl 101;
 _obj ctrlAnimateModel ["Threat_Level_Source", 0, true];
+
+_unit setVariable [QGVAR(lastSoundTime), CBA_missionTime, true];

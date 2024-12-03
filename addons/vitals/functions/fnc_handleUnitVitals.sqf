@@ -127,6 +127,7 @@ if !(_adjustments isEqualTo []) then {
 [_unit, _opioidEffectAdjustment, _deltaT, _syncValues] call FUNC(updateOpioidEffect);
 [_unit, _opioidDepressionAdjustment, _deltaT, _syncValues] call FUNC(updateOpioidDepression);
 [_unit, _respiratoryRateAdjustment, _deltaT, _syncValues] call FUNC(updateRespiratoryRate);
+[_unit, POISON_DECREASE, _deltaT, _syncValues] call FUNC(handlePoisoning);
 
 private _heartRate = [_unit, _hrTargetAdjustment, 0, _bloodVolume, _deltaT, _syncValues] call FUNC(handleCardiacFunction);
 
