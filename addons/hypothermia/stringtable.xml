@@ -142,35 +142,35 @@
             <English>Patient feels frigid</English>
             <Dutch>Patiënt voelt ijskoud aan</Dutch>
             <Spanish>El paciente se siente frígido</Spanish>
-            <Japanese>患者は凍ったように冷たく感じます</Japanese>
+            <Japanese>患者は凍ったように冷たい</Japanese>
             <Italian>Il paziente sente gelato</Italian>
         </Key>
         <Key ID="STR_KAT_Hypothermia_temperature_cold">
             <English>Patient feels remarkably cold</English>
             <Dutch>Patiënt voel opmerkelijk koud aan</Dutch>
             <Spanish>El paciente se siente realmente frío</Spanish>
-            <Japanese>患者は著しく冷たく感じます</Japanese>
+            <Japanese>患者は著しく冷たい</Japanese>
             <Italian>Il paziente sente notevolmente freddo</Italian>
         </Key>
         <Key ID="STR_KAT_Hypothermia_temperature_cool">
             <English>Patient feels moderately cold</English>
             <Dutch>Patiënt voelt redelijk koud aan</Dutch>
             <Spanish>El paciente se siente moderadamente frío</Spanish>
-            <Japanese>患者は少し冷たく感じます</Japanese>
+            <Japanese>患者は少し冷たい</Japanese>
             <Italian>Il paziente sente moderatamente freddo</Italian>
         </Key>
         <Key ID="STR_KAT_Hypothermia_temperature_mild">
             <English>Patient feels mildly cool</English>
             <Dutch>Patiënt voelt een klein beetje koud aan</Dutch>
             <Spanish>El paciente se siente algo frío</Spanish>
-            <Japanese>患者は少しひんやりと感じます</Japanese>
+            <Japanese>患者は少しひんやりしている</Japanese>
             <Italian>Il paziente sente lievemente fresco</Italian>
         </Key>
         <Key ID="STR_KAT_Hypothermia_temperature_warm">
             <English>Patient feels warm</English>
             <Dutch>Patiënt voelt warm aan</Dutch>
             <Spanish>El paciente se siente cálido</Spanish>
-            <Japanese>患者は暖かく感じます</Japanese>
+            <Japanese>患者は暖かい</Japanese>
             <Italian>Il paziente sente caldo</Italian>
         </Key>
         <Key ID="STR_KAT_Hypothermia_Check_Temperature">
