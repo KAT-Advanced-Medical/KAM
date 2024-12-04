@@ -67,8 +67,8 @@ class ACE_Medical_Treatment_Actions {
         displayName = CSTRING(DrawArterial_Action_Use);
         displayNameProgress = CSTRING(DrawBlood_Action_Progress);
         treatmentTime = 10;
+        condition = QUOTE(GVAR(abgEnable));
         callbackSuccess = QFUNC(drawArterial);
-        condition = "true";
         items[] = {"kat_IV_16"};
     };
 

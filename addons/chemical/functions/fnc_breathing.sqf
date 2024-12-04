@@ -2,47 +2,53 @@
 /*
 * Author: DiGii
 *
+* Handles the breathing sound for gasMasks
+*
 * Arguments:
 * 0: Unit <OBJECT>
+* 1: Glasses Class <STRING>
 *
 * Return Value:
 * NONE
 *
 * Example:
-* [player] call kat_chemical_fnc_breathing;
+* [player, "kat_mask_M50"] call kat_chemical_fnc_breathing;
 *
 * Public: No
 *
-* Handles the breathing sound for gasMasks
 */
-params ["_unit"];
+params ["_unit", "_glassesClass"];
 
+if !(_glassesClass in (missionNamespace getVariable [QGVAR(availGasmaskList), []])) exitWith {};
+
+GVAR(soundPlaying) = false;
 [
     {
-        params ["_unit"];
-        (goggles _unit) in (missionNamespace getVariable [QGVAR(availGasmaskList), []])
-    },
-    {
-        params ["_unit"];
-        [
-            {
-                params["_args", "_handler"];
-                _args params ["_unit"];
-                if (!(goggles _unit in (missionNamespace getVariable [QGVAR(availGasmaskList), []])) || !(alive _unit) || _unit getVariable [QACEGVAR(medical,heartrate), 80] <= 0) then {
-                    [_handler] call CBA_fnc_removePerFrameHandler;
-                    [_unit] call FUNC(breathing);
+        params["_args", "_handler"];
+        _args params ["_unit", "_volume"];
+        if (!(goggles _unit in (missionNamespace getVariable [QGVAR(availGasmaskList), []])) || !(alive _unit) || (_unit getVariable [QACEGVAR(medical,inCardiacArrest), false])) then {
+            [_handler] call CBA_fnc_removePerFrameHandler;
+        } else {
+            if (!GVAR(soundPlaying)) then {
+                if ((GET_PAIN_PERCEIVED(_unit) >= 0.4) || (_unit getVariable [QACEGVAR(medical,heartrate), 80] >= 105)) then {
+                    playSoundUI [QPATHTOF(audio\heavyBreath.ogg), GVAR(gasMaskSoundVolume), 1];
+                    GVAR(soundPlaying) = true;
                 } else {
-                    if (GET_PAIN_PERCEIVED(_unit) >= 0.4) || (_unit getVariable[QACEGVAR(medical,heartrate), 80] >= 105) then {
-                        _unit say3D QGVAR(mask_breath_heavy);
+                    if (round random 1 >= 0.5) then {
+                        playSoundUI [QPATHTOF(audio\breath1.ogg), GVAR(gasMaskSoundVolume), 1];
+                        GVAR(soundPlaying) = true;
                     } else {
-                        private _random = selectRandom[QGVAR(mask_breath_1), QGVAR(mask_breath_2)];
-                        _unit say3D _random;
+                        playSoundUI [QPATHTOF(audio\breath2.ogg), GVAR(gasMaskSoundVolume), 1];
+                        GVAR(soundPlaying) = true;
                     };
                 };
-            },
-            5,
-            [_unit]
-        ] call CBA_fnc_addPerFrameHandler;
+                [{
+                    GVAR(soundPlaying) = false;
+                }, [], 4] call CBA_fnc_waitAndExecute;
+            };
+        };
     },
+    0,
     [_unit]
-] call CBA_fnc_waitUntilAndExecute;
+] call CBA_fnc_addPerFrameHandler;
+

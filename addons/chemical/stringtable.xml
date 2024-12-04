@@ -309,21 +309,6 @@
             <Russian>Радиус вокруг модуля, заполненного газом.</Russian>
             <Dutch>Radius om de module dat gevuld is met gas.</Dutch>
         </Key>
-        <Key ID="STR_KAT_Chemical_GasModule_min_radius_dcs">
-            <English>The Minimal Range describes the area around the module where the gas is most lethal</English>
-            <Spanish>El rango minimo describe el area alrededor del modulo en el cual el gas sera mas letal</Spanish>
-            <German>Die minimale Reichweite beschreibt den Bereich im Umkreis des Moduls, in dem das Gas am tödlichsten wirkt.</German>
-            <French>Le rayon minimal décrit la zone autour du module ou le gaz est le plus létal</French>
-            <Japanese>最小範囲は、ガスが最も致死的であるモジュールの周辺を表します。</Japanese>
-            <Korean>최소 범위는 가스가 가장 치명적으로 작동하는 모듈 주변 영역을 나타냅니다.</Korean>
-            <Italian>Il raggio minimo descrive l'area attorno al modulo dove il gas è più letale</Italian>
-            <Portuguese>O Alcance Mínimo descreve a área ao redor do módulo onde o gás é mais letal</Portuguese>
-            <Polish>Minimalny zasięg określa obszar wokół modułu, gdzie gaz jest bardziej śmiertelny</Polish>
-            <Czech>Minimální vzdálenost vyjadřuje oblast kolem modulu kde je plyn nejvíce smrtící</Czech>
-            <Finnish>Minimialue kuvaa moduulia ympäröivän alueen, jossa kaasu on tappavin</Finnish>
-            <Russian>Минимальный радиус, описывающий область вокруг модели, в которой газ является наиболее смертоносным</Russian>
-            <Dutch>Het minimale bereik beschrijft het gebied om de module waar het gas het dodelijkst is</Dutch>
-        </Key>
         <Key ID="STR_KAT_Chemical_GasModule_max_radius_dcs">
             <English>The Maximum Range is a range around the Minimal Range where the gas is less lethal and you have a longer chance of survival.(distance from module to outer ring)</English>
             <Spanish>El rango maximo es el rango alrededor del rango minimo en el cual el gas es menos letal y tienes mas posibilidades de sobrevivir (distancia desde el modulo al anillo exterior)</Spanish>
@@ -413,21 +398,6 @@
             <Finnish>Tuki vuoto</Finnish>
             <Russian>Герметизация утечки</Russian>
             <Dutch>Dicht lek</Dutch>
-        </Key>
-        <Key ID="STR_KAT_Chemical_GasModule_Needbigger">
-            <English>Minimal Range need to be less than Maximum Range!</English>
-            <Spanish>¡El rango minimo tiene que ser menor al rango maximo!</Spanish>
-            <German>Minimale Reichweite muss kleiner als maximale Reichweite sein!</German>
-            <French>Le rayon minimal a besoin d'être plus petit que le rayon maximal !</French>
-            <Japanese>最小範囲は最大範囲よりも小さくする必要があります!</Japanese>
-            <Korean>최소 범위는 반드시 최대 범위보다 작아야 합니다!</Korean>
-            <Italian>Il raggio minimo deve essere minore del raggio massimo!</Italian>
-            <Portuguese>O Alcance Mínimo precisa ser menor que o Alcance Máximo!</Portuguese>
-            <Polish>Minimalny zasięg musi być mniejszy niż maksymalny zasięg</Polish>
-            <Czech>Minimální vzdálenost musí být menší než Maximální vzdálenost!</Czech>
-            <Finnish>Vähimmäisalueen on oltava pienempi kuin enimmäisetäisyys</Finnish>
-            <Russian>Минимальный радиус должен быть меньше максимального радиуса !</Russian>
-            <Dutch>Het minimale bereik moet kleiner zijn dan het maximale bereik!</Dutch>
         </Key>
         <Key ID="STR_KAT_Chemical_Intoxication">
             <English>Intoxication</English>
@@ -743,21 +713,6 @@
             <Russian>Максимальная дальность действия.</Russian>
             <Dutch>Maximaal bereik.</Dutch>
         </Key>
-        <Key ID="STR_KAT_Chemical_UI_min_range">
-            <English>Minimal Range.</English>
-            <Spanish>Rango minimo</Spanish>
-            <German>Minimale Reichweite.</German>
-            <French>Portée minimale</French>
-            <Japanese>最小範囲</Japanese>
-            <Korean>최소 범위.</Korean>
-            <Italian>Raggio minimo.</Italian>
-            <Portuguese>Alcance Mínimo</Portuguese>
-            <Polish>Minimalny zasięg</Polish>
-            <Czech>Minimální vzdálenost.</Czech>
-            <Finnish>Vähimmäisalue</Finnish>
-            <Russian>Минимальный радиус действия.</Russian>
-            <Dutch>Minimaal bereik.</Dutch>
-        </Key>
         <Key ID="STR_KAT_Chemical_UI_sealable">
             <English>Is sealable?</English>
             <Spanish>¿Es sellable?</Spanish>
@@ -817,6 +772,21 @@
             <Finnish>Kaasutyyppi</Finnish>
             <Russian>Тип газа:</Russian>
             <Dutch>Gas type:</Dutch>
+        </Key>
+        <Key ID="STR_KAT_Chemical_SETTING_gasMaskSoundVolume">
+            <English>Gas Mask Sound Volume</English>
+        </Key>
+        <Key ID="STR_KAT_Chemical_SETTING_gasMaskSoundVolume_DESC">
+            <English>Determines how loud the breathing sounds are when using the gas mask</English>
+        </Key>
+        <Key ID="STR_KAT_Chemical_OnlyObject">
+            <English>Must be placed on object</English>
+        </Key>
+        <Key ID="STR_KAT_Chemical_PutOnGasMask">
+            <English>Put on gas mask</English>
+        </Key>
+        <Key ID="STR_KAT_Chemical_TakeOffGasMask">
+            <English>Take off gas mask</English>
         </Key>
     </Package>
 </Project>
