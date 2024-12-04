@@ -122,6 +122,7 @@ if !(_adjustments isEqualTo []) then {
 [_unit, _peripheralResistanceAdjustment, _deltaT, _syncValues] call ACEFUNC(medical_vitals,updatePeripheralResistance);
 [_unit, _opioidAdjustment, _deltaT, _syncValues] call FUNC(updateOpioidRelief);
 [_unit, _opioidEffectAdjustment, _deltaT, _syncValues] call FUNC(updateOpioidEffect);
+[_unit, POISON_DECREASE, _deltaT, _syncValues] call FUNC(handlePoisoning);
 
 private _heartRate = [_unit, _hrTargetAdjustment, 0, _bloodVolume, _deltaT, _syncValues] call FUNC(handleCardiacFunction);
 

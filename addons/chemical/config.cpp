@@ -20,7 +20,7 @@ class CfgPatches {
         };
         ammo[] = {
             "KAT_Gas_TripWireMine_Ammo",
-            "KAT_GASTripEffect",
+            "KAT_TripWireGasEffect",
             "KAT_GASTrip_SmokeEffect",
             "KAT_CAS_M43_Ammo",
             "KAT_CAS_M43_Ammo_sub",

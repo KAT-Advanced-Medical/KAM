@@ -37,4 +37,22 @@ class CfgMagazines {
         ACE_isMedicalItem = 1;
         ACE_asItem = 1;
     };
+    class kat_personal_oxygen: CA_Magazine {
+        scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
+        author = "Mazinski";
+        displayName = CSTRING(PersonalOxygen_Display);
+        descriptionShort = CSTRING(PersonalOxygen_Desc_Short);
+        picture = QPATHTOF(ui\oxygenTank.paa);
+        
+        ammo = "";
+        count = 60;
+        initSpeed = 0;
+        tracersEvery = 0;
+        lastRoundsTracer = 0;
+        mass = 3;
+        ACE_isMedicalItem = 1;
+        ACE_asItem = 1;
+    };
 };

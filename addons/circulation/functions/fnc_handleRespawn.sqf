@@ -39,4 +39,6 @@ _unit setVariable [QGVAR(bloodtype), [_unit, _dead, true] call FUNC(generateBloo
 _unit setVariable [QGVAR(internalBleeding), 0, true];
 _unit setVariable [QGVAR(StoredBloodPressure), [0,0], true];
 
+_unit setVariable [QGVAR(deviceCode), 0, true];
+
 [_unit] call FUNC(fullHealLocal);

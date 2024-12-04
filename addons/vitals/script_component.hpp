@@ -15,3 +15,5 @@
 #endif
 
 #include "\x\kat\addons\main\script_macros.hpp"
+
+#define POISON_DECREASE 1
