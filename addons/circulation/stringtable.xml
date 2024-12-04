@@ -2581,6 +2581,9 @@
             <Dutch>Stop CPR</Dutch>
             <Italian>Interrompere la RCP</Italian>
         </Key>
+        <Key ID="STR_KAT_Circulation_ChangeCPRDevice">
+            <English>Change Monitoring Device</English>
+        </Key>
         <Key ID="STR_KAT_Circulation_StartCPR">
             <English>CPR Started</English>
             <Japanese>CPRを開始した</Japanese>

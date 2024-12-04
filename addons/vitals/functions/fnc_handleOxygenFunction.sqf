@@ -86,6 +86,7 @@ private _fio2 = switch (true) do {
     };
     case ((_respiratoryRate == 0) && (EGVAR(breathing,SpO2_perfusion))): { 0 };
     case ((_unit getVariable [QEGVAR(chemical,airPoisoning), false]) || (_unit getVariable [QEGVAR(breathing,tensionpneumothorax), false]) || (_unit getVariable [QEGVAR(breathing,hemopneumothorax), false])): { 0 };
+    case (_unit getVariable [QEGVAR(breathing,oxygenMaskActive), false]): { 0.95 };
     case (_unit getVariable [QEGVAR(breathing,oxygenTankConnected), false]): { 1 };
     default { DEFAULT_FIO2 };
 };

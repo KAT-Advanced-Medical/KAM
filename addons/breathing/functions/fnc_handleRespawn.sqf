@@ -36,3 +36,6 @@ _unit setVariable ["kat_PulseoxiInUse_PFH", nil, true];
 _unit setVariable ["kat_O2Breathing_PFH", nil, true];
 
 _unit setVariable [QGVAR(usingStethoscope), nil];
+
+_unit setVariable [QGVAR(oxygenMaskActive), false, true];
+_unit setVariable [QGVAR(oxygenMaskStatus), [0,0], true];

@@ -280,7 +280,7 @@ class ACE_Medical_Treatment_Actions {
         medicRequired = QGVAR(medLvl_NasalCannula);
         treatmentTime = QGVAR(NasalCannula_time);
         items[] = {"kat_nasal"};
-        condition = QUOTE((missionNamespace getVariable [ARR_2(QQGVAR(enable),true)]) && !((_patient getVariable [ARR_2(QQGVAR(etco2Monitor),[])] findIf {_x == 'NasalCannula'}) > -1));
+        condition = QUOTE((missionNamespace getVariable [ARR_2(QQGVAR(enable),true)]) && !((_patient getVariable [ARR_2(QQGVAR(etco2Monitor),[])] findIf {_x == 'NasalCannula'}) > -1) && !([_patient] call EFUNC(airway,checkMask)));
         callbackSuccess = QFUNC(treatmentAdvanced_nasalCannula);
         callbackFailure = "";
         callbackProgress = "";
@@ -304,5 +304,14 @@ class ACE_Medical_Treatment_Actions {
         items[] = {};
         condition = QUOTE((missionNamespace getVariable [ARR_2(QQGVAR(enable),true)]) && ((_patient getVariable [ARR_2(QQGVAR(etco2Monitor),[])] findIf {_x == 'NasalCannula'}) > -1));
         callbackSuccess = QFUNC(treatmentAdvanced_removeNasalCannula);
+    };
+    class RemoveOxyMask : NasalCannula {
+        displayName = CSTRING(Remove_OxyMask);
+        displayNameProgress = ECSTRING(airway,action_removing);
+        medicRequired = 0;
+        treatmentTime = 5;
+        items[] = {};
+        condition = QUOTE(_patient call EFUNC(airway,checkMask));
+        callbackSuccess = QFUNC(removeOxygenMask);
     };
 };

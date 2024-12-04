@@ -2018,6 +2018,12 @@
             <Russian>Портативный кислородный баллон, содержащий 300 литров кислорода. Подключите к BVM для дальнейшего облегчения дыхания пациентов в критическом состоянии.</Russian>
             <Dutch>Draagbare zuurstoftank, bevat 300L van zuurstof. Helpt met het beademen van kritieke patiënten wanneer verbonden aan een BVM</Dutch>
         </Key>
+        <Key ID="STR_KAT_Breathing_PersonalOxygen_Display">
+            <English>Personal Oxygen Tank</English>
+        </Key>
+        <Key ID="STR_KAT_Breathing_PersonalOxygen_Desc_Short">
+            <English>Personal oxygen tank for high altitude operations</English>
+        </Key>
         <Key ID="STR_KAT_Breathing_PortableOxygenTank_150_Empty_Display">
             <English>Empty Portable Oxygen Tank (150L)</English>
             <Spanish>Bombona de oxigeno portátil vacío (150L)</Spanish>
@@ -2730,6 +2736,42 @@
         <Key ID="STR_KAT_Breathing_SETTING_enableCheckBreathing_DESC">
             <English>Whether or not Check Breathing medical action is enabled</English>
             <Italian>Se l'azione medica di controllo della respirazione è abilitata o meno</Italian>
+        </Key>
+        <Key ID="STR_KAT_Breathing_SETTING_AVAIL_OXYMASK">
+            <English>Available Oxygen Masks</English>
+        </Key>
+        <Key ID="STR_KAT_Breathing_SETTING_AVAIL_OXYMASK_DISC">
+            <English>Sets which goggles can act as oxygen masks</English>
+        </Key>
+        <Key ID="STR_KAT_Breathing_AttachPersonalOxygenTank">
+            <English>Connect Personal Oxygen</English>
+        </Key>
+        <Key ID="STR_KAT_Breathing_RemovePersonalOxygenTank">
+            <English>Disconnect Personal Oxygen</English>
+        </Key>
+        <Key ID="STR_KAT_Breathing_CheckPersonalOxygenTank">
+            <English>Check Personal Oxygen Status</English>
+        </Key>
+        <Key ID="STR_KAT_Breathing_PersonalOxygen_Remaining">
+            <English>Minutes Remaining</English>
+        </Key>
+        <Key ID="STR_KAT_Breathing_PersonalOxygen_Empty">
+            <English>Oxygen Tank Empty</English>
+        </Key>
+        <Key ID="STR_KAT_Breathing_AttachOxygenVehicle">
+            <English>Connect to Aircraft Oxygen</English>
+        </Key>
+        <Key ID="STR_KAT_Breathing_VehicleOxygen_Affirm">
+            <English>Attached to Aircraft Oxygen</English>
+        </Key>
+        <Key ID="STR_KAT_Breathing_PersonalOxygen_Affirm">
+            <English>Oxygen already connected</English>
+        </Key>
+        <Key ID="STR_KAT_Breathing_PersonalOxygen_Disconnect">
+            <English>Oxygen tank disconnected</English>
+        </Key>
+        <Key ID="STR_KAT_Breathing_Remove_OxyMask">
+            <English>Remove Oxygen Mask</English>
         </Key>
     </Package>
 </Project>
