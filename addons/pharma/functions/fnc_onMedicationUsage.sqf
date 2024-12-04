@@ -12,7 +12,7 @@
  * None
  *
  * Example:
- * [player, "morphine", [["x", 1]]] call ace_medical_treatment_fnc_onMedicationUsage
+ * [player, "morphine", [["x", 1]]] call kat_pharma_fnc_onMedicationUsage
  *
  * Public: No
  */
@@ -31,7 +31,7 @@ if (GVAR(AMS_Enabled)) then {
 
         if (_maxDose > 0) then {
             private _maxDoseDeviation = GET_NUMBER(_medicationConfig >> "maxDoseDeviation",getNumber (_defaultConfig >> "maxDoseDeviation"));
-            private _currentDose = [_target, _medicationName] call EFUNC(medical_status,getMedicationCount) select 0;
+            private _currentDose = [_target, _medicationName] call ACEFUNC(medical_status,getMedicationCount) select 0;
             // Because both {floor random 0} and {floor random 1} return 0
             if (_maxDoseDeviation > 0) then {
                 _maxDoseDeviation = _maxDoseDeviation + 1;
@@ -44,7 +44,7 @@ if (GVAR(AMS_Enabled)) then {
             };
             {
             _x params ["_xMed", "_xLimit"];
-            private _inSystem = ([_target, _xMed] call EFUNC(medical_status,getMedicationCount)) select 0;
+            private _inSystem = ([_target, _xMed] call ACEFUNC(medical_status,getMedicationCount)) select 0;
             if (_inSystem > _xLimit) then {
                 [_target, _medicationName, _inSystem, _xLimit, _xMed] call FUNC(overDose);
                 };
@@ -59,7 +59,7 @@ if (GVAR(AMS_Enabled)) then {
 
     if (_maxDose > 0) then {
         private _maxDoseDeviation = GET_NUMBER(_medicationConfig >> "maxDoseDeviation",getNumber (_defaultConfig >> "maxDoseDeviation"));
-        private _currentDose = [_target, _className] call EFUNC(medical_status,getMedicationCount) select 0;
+        private _currentDose = [_target, _className] call ACEFUNC(medical_status,getMedicationCount) select 0;
         // Because both {floor random 0} and {floor random 1} return 0
         if (_maxDoseDeviation > 0) then {
             _maxDoseDeviation = _maxDoseDeviation + 1;
@@ -75,7 +75,7 @@ if (GVAR(AMS_Enabled)) then {
 // Check incompatible medication (format [med,limit])
     {
         _x params ["_xMed", "_xLimit"];
-        private _inSystem = ([_target, _xMed] call EFUNC(medical_status,getMedicationCount)) select 0;
+        private _inSystem = ([_target, _xMed] call ACEFUNC(medical_status,getMedicationCount)) select 0;
         if (_inSystem > _xLimit) then {
             [_target, _classname, _inSystem, _xLimit, _xMed] call FUNC(overDose);
         };
