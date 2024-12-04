@@ -101,7 +101,7 @@ private _BPMult = _minBPMult + ((_bloodPressure - _maxBP) / (_minBP - _maxBP)) *
 
 private _alphaAction = GET_VASOCONSTRICTION(_patient);
 
-Private _drugMult = ((_BPMult * _hrMult * _bloodMult * _alphaAction) min 2.5);
+Private _drugMult = (((_BPMult * _hrMult * _bloodMult * _alphaAction) min 2.5) max 0.2);
 
 private _painReduce             = GET_NUMBER(_medicationConfig >> "painReduce",getNumber (_defaultConfig >> "painReduce"));
 private _timeInSystem           = GET_NUMBER(_medicationConfig >> "timeInSystem",getNumber (_defaultConfig >> "timeInSystem"));
