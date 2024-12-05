@@ -27,7 +27,7 @@ if !([_patient, _bodyPart] call ACEFUNC(medical_treatment,hasTourniquetAppliedTo
             GET_HEART_RATE(_patient)
         };
         case (alive (_patient getVariable [QACEGVAR(medical,CPR_provider), objNull])): {
-            random [25, 30, 35] // fake heart rate because patient is dead and off state machine
+            random [100, 110, 120] // fake heart rate because patient is dead and off state machine
         };
         default { 0 };
     };
@@ -39,7 +39,7 @@ private _logOutput = ACELSTRING(medical_treatment,Check_Pulse_None);
 if (_heartRate > 1) then {
     if (_medic call ACEFUNC(medical_treatment,isMedic)) then {
         _heartRateOutput = LSTRING(Check_Pulse_Output);
-        _logOutput = format [localize "STR_KAT_Circulation_Pulse_Output", round ((_heartRateOutput / 5) * 5)];
+        _logOutput = format [LSTRING(Circulation,Pulse_Output), (round(_heartRateOutput / 5) * 5)];
     } else {
         _heartRateOutput = ACELSTRING(medical_treatment,Check_Pulse_Output_2);
         _logOutput = ACELSTRING(medical_treatment,Check_Pulse_Weak);
