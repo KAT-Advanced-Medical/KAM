@@ -45,13 +45,23 @@ PREP_RECOMPILE_END;
     false
 ] call CBA_Settings_fnc_init;
 
-// Chance of weapon drop by tear gas
+// Infection time
 [
     QGVAR(tearGasDropChance),
     "SLIDER",
     [LLSTRING(SETTING_dropWeaponChance), LLSTRING(SETTING_dropWeaponChance_DESC)],
     CBA_SETTINGS_CHEM,
     [0, 1, 0, 2, true],
+    true
+] call CBA_Settings_fnc_init;
+
+// Chance of weapon drop by tear gas
+[
+    QGVAR(infectionTime),
+    "SLIDER",
+    [LLSTRING(SETTING_infectionTime), LLSTRING(SETTING_infectionTime_DESC)],
+    CBA_SETTINGS_CHEM,
+    [0, 3600, 60, 0, true],
     true
 ] call CBA_Settings_fnc_init;
 ADDON = true;

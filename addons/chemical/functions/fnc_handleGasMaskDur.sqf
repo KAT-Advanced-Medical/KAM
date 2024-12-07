@@ -27,8 +27,8 @@ private _currentHealth = _unit getVariable [QGVAR(gasmask_durability), 10]; // D
 // Scale the current health (0-10) to the actual time left based on maxTime
 private _timeLeft = (_currentHealth / 10) * _maxTime; // Convert 0-10 health scale to time left
 
-// Reduce the time left by 1 seconds (each tick reduces by 1 seconds)
-_timeLeft = _timeLeft - 1;
+// Reduce the time left by 0.25 seconds (each tick reduces by 0.25 seconds)
+_timeLeft = _timeLeft - 0.25;
 
 // Prevent negative durability
 _timeLeft = _timeLeft max 0;
