@@ -47,9 +47,6 @@ if !(isNull attachedTo _logic) then {
         };
         default {};
     };
-
-} else {
-    [LLSTRING(OnlyObject)] call _fnc_errorAndClose;
 };
 
 private _fnc_onUnload = {
@@ -78,8 +75,15 @@ private _fnc_onConfirm = {
     private _gasLevel = _display getVariable [QGVAR(ui_gastype), 0];
     private _radius = _display getVariable [QGVAR(ui_radius), 20];
     private _isSealable = _display getVariable [QGVAR(ui_sealable), false];
+    private _center = objNull;
 
-    [QGVAR(addGasSource), [attachedTo _logic, _radius, _gasLevel, _logic, {
+    if (isNull attachedTo _logic) then {
+        _center = _logic;
+    } else {
+        _center = attachedTo _logic;
+    };
+
+    [QGVAR(addGasSource), [_center, _radius, _gasLevel, _logic, {
         params ["_endTime", "_logic"];
 
         // If logic no longer exists, exit

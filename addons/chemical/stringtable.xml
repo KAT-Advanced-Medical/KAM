@@ -783,10 +783,6 @@
             <English>Determines how loud the breathing sounds are when using the gas mask</English>
             <Japanese>ガスマスク使用時の呼吸音の大きさを設定します</Japanese>
         </Key>
-        <Key ID="STR_KAT_Chemical_OnlyObject">
-            <English>Must be placed on object</English>
-            <Japanese>オブジェクトに配置する必要があります</Japanese>
-        </Key>
         <Key ID="STR_KAT_Chemical_PutOnGasMask">
             <English>Put on gas mask</English>
             <Japanese>ガスマスクを装着</Japanese>
