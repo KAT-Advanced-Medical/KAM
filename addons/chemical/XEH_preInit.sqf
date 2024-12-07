@@ -35,7 +35,7 @@ PREP_RECOMPILE_END;
 [
     QGVAR(gasMaskSoundVolume),
     "SLIDER",
-    [LLSTRING(SETTING_stethoscopeSoundVolume), LLSTRING(SETTING_stethoscopeSoundVolume_DESC)],
+    [LLSTRING(SETTING_gasMaskSoundVolume), LLSTRING(SETTING_gasMaskSoundVolume_DESC)],
     CBA_SETTINGS_CHEM,
     [0, 2, 1, 1],
     2,
