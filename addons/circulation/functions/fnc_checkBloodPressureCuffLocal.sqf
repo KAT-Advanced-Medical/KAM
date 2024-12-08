@@ -32,9 +32,9 @@ private _logOutput = ACELSTRING(medical_treatment,Check_Bloodpressure_NoBloodpre
 _bloodPressure params ["_bloodPressureLow", "_bloodPressureHigh"];
 
 if (_bloodPressureHigh > 20) then {
-        _bloodPressureOutput = ACELSTRING(medical_treatment,Check_Bloodpressure_Output_1);
-        _logOutput = format ["%1/%2", round _bloodPressureHigh, round _bloodPressureLow];
-    };
+    _bloodPressureOutput = ACELSTRING(medical_treatment,Check_Bloodpressure_Output_1);
+    _logOutput = format ["%1/%2", round _bloodPressureHigh, round _bloodPressureLow];
+};
 
 [_patient, "quick_view", ACELSTRING(medical_treatment,Check_Bloodpressure_Log), [_medic call ACEFUNC(common,getName), _logOutput]] call ACEFUNC(medical_treatment,addToLog);
 
