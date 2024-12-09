@@ -128,7 +128,7 @@ class CfgVehicles {
                 };
                 class Attach_PersonalOxygen {
                     displayName = CSTRING(AttachPersonalOxygenTank);
-                    condition = QUOTE(([ARR_2(_player,'kat_personal_oxygen')] call ACEFUNC(common,hasMagazine)) && (_player call EFUNC(airway,checkMask)));
+                    condition = QUOTE(([ARR_2(_player,'kat_personal_oxygen')] call ACEFUNC(common,hasMagazine)) && (_player call FUNC(checkOxygenMask)));
                     statement = QUOTE(_player call FUNC(attachPersonalOxygen));
                     showDisabled = 0;
                     exceptions[] = {"isNotSwimming", "isNotOnLadder"};
@@ -176,7 +176,7 @@ class CfgVehicles {
         class ACE_SelfActions {
             class KAT_AttachOxygenVehicle {
                 displayName = CSTRING(AttachOxygenVehicle);
-                condition = QUOTE((_player call FUNC(checkAircraftOxygen)) && (_player call EFUNC(airway,checkMask)));
+                condition = QUOTE((_player call FUNC(checkAircraftOxygen)) && (_player call FUNC(checkOxygenMask)));
                 statement = QUOTE(_player call FUNC(attachVehicleOxygen));
                 insertChildren = "";
                 exceptions[] = {};
@@ -189,7 +189,7 @@ class CfgVehicles {
         class ACE_SelfActions {
             class KAT_AttachOxygenVehicle {
                 displayName = CSTRING(AttachOxygenVehicle);
-                condition = QUOTE((_player call FUNC(checkAircraftOxygen)) && (_player call EFUNC(airway,checkMask)));
+                condition = QUOTE((_player call FUNC(checkAircraftOxygen)) && (_player call FUNC(checkOxygenMask)));
                 statement = QUOTE(_player call FUNC(attachVehicleOxygen));
                 insertChildren = "";
                 exceptions[] = {};
