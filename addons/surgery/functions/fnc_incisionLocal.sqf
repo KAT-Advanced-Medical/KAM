@@ -49,20 +49,21 @@ _patient setVariable [QGVAR(fractures), _fractureArray, true];
 
     if ((!_alive) || (_liveFracture == 0)) exitWith {
         [_idPFH] call CBA_fnc_removePerFrameHandler;
-        _patient setVariable ["kat_Etomidate_Pain", false]
+        _patient setVariable [QGVAR(etomidate_Pain), false]
     };
 
     if (((GVAR(Surgery_ConsciousnessRequirement) in [0,1]) && (!(IS_UNCONSCIOUS(_patient)) || _count >= 0.2)) || (GVAR(Surgery_ConsciousnessRequirement) == 3 && _count == 0)) exitWith {
-        if !(_patient getVariable ["kat_Etomidate_Pain", false]) then {
+        if !(_patient getVariable [QGVAR(etomidate_Pain), false]) then {
             [_patient, "Pain", 2, 10, 120, 0.6, 40] call ACEFUNC(medical_status,addMedicationAdjustment);
-            _patient setVariable ["kat_Etomidate_Pain", true]};
+            _patient setVariable [QGVAR(etomidate_Pain), true]};
         [_patient, true] call ACEFUNC(medical,setUnconscious);
     };
 
     if (GVAR(Surgery_ConsciousnessRequirement) == 2 && _count >= 0.2) then {
-        if !(_patient getVariable ["kat_Etomidate_Pain", false]) then {
+        if !(_patient getVariable [QGVAR(etomidate_Pain), false]) then {
             [_patient, "Pain", 2, 10, 120, 0.6, 40] call ACEFUNC(medical_status,addMedicationAdjustment);
-            _patient setVariable ["kat_Etomidate_Pain", true]
+            _patient setVariable [QGVAR(etomidate_Pain), true]
         };
     };
 }, 5, [_patient, _part]] call CBA_fnc_addPerFrameHandler;
+
