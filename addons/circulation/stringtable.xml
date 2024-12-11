@@ -25,6 +25,7 @@
             <Spanish>¿Activar Médico Simple para IA?</Spanish>
             <Japanese>AI用単純化医療を有効化</Japanese>
             <Italian>AI Simple Medical attivato?</Italian>
+            <French>Médecine simplifiée pour l'IA ?</French>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_AdvRhythm_Enable">
             <English>Advanced Rhythms activated?</English>
@@ -1734,6 +1735,7 @@
             <Spanish>%1 Muestra de sangre</Spanish>
             <Japanese>%1 血液サンプル</Japanese>
             <Italian>%1 Campione di sangue</Italian>
+            <French>%1 échantillon de sang</French>
         </Key>
         <Key ID="STR_KAT_Circulation_Arterial_Test_Action">
             <English>Run ABG Test</English>
@@ -1741,6 +1743,7 @@
             <Spanish>Realizar prueba ABG</Spanish>
             <Japanese>ABGテストを行う</Japanese>
             <Italian>Eseguire test ABG</Italian>
+            <French>Exécuter le test ABG</French>
         </Key>
         <Key ID="STR_KAT_Circulation_Arterial_Test">
             <English>ABG Test</English>
@@ -1748,6 +1751,7 @@
             <Spanish>Prueba ABG</Spanish>
             <Japanese>ABGテスト</Japanese>
             <Italian>Test ABG</Italian>
+            <French>Test ABG</French>
         </Key>
         <Key ID="STR_KAT_Circulation_Apply_Arterial_Test">
             <English>Apply %1 Test</English>
@@ -1755,6 +1759,7 @@
             <Spanish>Realizar prueba %1</Spanish>
             <Japanese>%1 テストを実施</Japanese>
             <Italian>Applicare il %1 Test</Italian>
+            <French>Appliquer le test %1</French>
         </Key>
         <Key ID="STR_KAT_Circulation_crosspanel">
             <English>Blood groups cheat sheet</English>
@@ -1992,10 +1997,12 @@
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_abg_enable">
             <English>Enable ABG Testing</English>
+            <French>Activer le test ABG</French>
             <Japanese>ABGテストを有効化</Japanese>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_abg_enable_DESC">
             <English>Enables ABG Testing and ACE Menu Visibility</English>
+            <French>Permet le test ABG et la visibilité du menu ACE</French>
             <Japanese>ABGテストを有効化しACEメニューに表示します</Japanese>
         </Key>
         <Key ID="STR_KAT_Circulation_bloodtype_log">
@@ -2709,6 +2716,7 @@
             <Spanish>Extraer muestra arterial</Spanish>
             <Japanese>動脈サンプルを採る</Japanese>
             <Italian>Prelevare campione arterioso</Italian>
+            <French>Prélèvement d'un échantillon artériel</French>
         </Key>
         <Key ID="STR_KAT_Circulation_sampleItemName">
             <English>Blood Sample</English>
@@ -2716,6 +2724,7 @@
             <Spanish>Muestra de sangre</Spanish>
             <Japanese>血液サンプル</Japanese>
             <Italian>Campione di sangue</Italian>
+            <French>Echantillon de sang</French>
         </Key>
         <Key ID="STR_KAT_Circulation_resultItemName">
             <English>ABG Result</English>
@@ -2723,6 +2732,7 @@
             <Spanish>Resultado ABG</Spanish>
             <Japanese>ABG結果</Japanese>
             <Italian>Risultato del test ABG</Italian>
+            <French>Résultat de l'ABG</French>
         </Key>
         <Key ID="STR_KAT_Circulation_DrawBlood_Action_Progress">
             <English>Drawing Blood</English>

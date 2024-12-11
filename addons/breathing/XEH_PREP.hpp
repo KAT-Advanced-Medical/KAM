@@ -3,6 +3,7 @@ PREP(attachVehicleOxygen);
 PREP(canUseBVM);
 PREP(checkAircraftOxygen);
 PREP(checkBreathing);
+PREP(checkOxygenMask);
 PREP(checkPersonalOxygen);
 PREP(checkPulseOximeter);
 PREP(detachPersonalOxygen);

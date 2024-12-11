@@ -207,24 +207,6 @@
             <Dutch>Verander cardiale staat</Dutch>
             <Italian>Cambia stato cardiaco</Italian>
         </Key>
-        <Key ID="STR_KAT_Zeus_checkmedical_Module_displayname">
-            <English>Open unit medical menu</English>
-            <German>Medic Menü der Einheit öffnen</German>
-            <Czech>Otevřít zdravotnickou nabídku jednotky</Czech>
-            <French>Ouvrir menu médical</French>
-            <Polish>Otwórz menu medyczne</Polish>
-            <Spanish>Abrir el menú médico de la unidad</Spanish>
-            <Chinese>打开单位医疗菜单</Chinese>
-            <Korean>유닛 의료 메뉴 열기</Korean>
-            <Turkish>Ünite tıbbi menüsünü aç</Turkish>
-            <Japanese>医療メニューを開く</Japanese>
-            <Russian>Медицинское меню открытого блока</Russian>
-            <Italian>Apri il menu medico</Italian>
-            <Chinesesimp>打开单位医疗菜单</Chinesesimp>
-            <Portuguese>Abra o menu médico da unidade</Portuguese>
-            <Finnish>Avaa laitteen lääketieteellinen valikko</Finnish>
-            <Dutch>Open eenheids medisch menu</Dutch>
-        </Key>
         <Key ID="STR_KAT_Zeus_CardiacState_Module_State">
             <English>State:</English>
             <German>Wert:</German>

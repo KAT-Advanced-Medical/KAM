@@ -146,11 +146,13 @@
             <English>Enable PaCO2</English>
             <Japanese>PaCO2を有効化</Japanese>
             <Italian>Abilitare PaCO2</Italian>
+            <French>Activation de la PaCO2</French>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_PACO2_ENABLE_DESC">
             <English>Enables PaCO2 movement and effects on ph and breathing rate</English>
             <Japanese>phや呼吸速度へ影響を与えるPaCO2(動脈血二酸化炭素分圧)の変動を有効にします</Japanese>
             <Italian>Abilita il movimento di PaCO2 e gli effetti su pH e frequenza respiratoria</Italian>
+            <French>Permet le déplacement de la PaCO2 et les effets sur le pH et la fréquence respiratoire</French>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_pneumothorax">
             <English>Probability for a pneumothorax</English>
@@ -2733,12 +2735,14 @@
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_enableCheckBreathing">
             <English>Enable Check Breathing</English>
+            <French>Activer le contrôle de la respiration</French>
             <Italian>Abilitare il controllo della respirazione</Italian>
             <Japanese>"呼吸を確認"を有効化</Japanese>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_enableCheckBreathing_DESC">
             <English>Whether or not Check Breathing medical action is enabled</English>
             <Italian>Se l'azione medica di controllo della respirazione è abilitata o meno</Italian>
+            <French>Si "Contrôle de la respiration" est activée ou non</French>
             <Japanese>呼吸を確認のアクションを可能にするかどうかを設定します</Japanese>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_AVAIL_OXYMASK">

@@ -98,6 +98,7 @@
             <Spanish>Desplegar Camilla</Spanish>
             <Japanese>担架を展開する</Japanese>
             <Italian>Dispiegare la barella</Italian>
+            <French>Déployer le brancard</French>
         </Key>
         <Key ID="STR_KAT_Stretcher_RetractHeliStretcher">
             <English>Retract Stretcher</English>
@@ -106,6 +107,7 @@
             <Spanish>Recoger Camilla</Spanish>
             <Japanese>担架を収容する</Japanese>
             <Italian>Ritirare la barella</Italian>
+            <French>Rétracter le brancard</French>
         </Key>
         <Key ID="STR_KAT_Stretcher_DetachHeliStretcher">
             <English>Detach Stretcher</English>
@@ -114,6 +116,7 @@
             <Spanish>Desanclar Camilla</Spanish>
             <Japanese>担架を取り外す</Japanese>
             <Italian>Staccare la barella</Italian>
+            <French>Détacher le brancard</French>
         </Key>
         <Key ID="STR_KAT_Stretcher_Helistretcher_Display">
             <English>Attachable Helistretcher</English>
@@ -194,6 +197,7 @@
             <Spanish>Empaquetar en bolsa</Spanish>
             <Japanese>ランチャーとして畳む</Japanese>
             <Italian>Mettere nella borsa</Italian>
+            <French>Emballer dans un sac</French>
         </Key>
         <Key ID="STR_KAT_Stretcher_PackIntoBackpack">
             <English>Pack into backpack</English>
@@ -202,6 +206,7 @@
             <Spanish>Empaquetar en mochila</Spanish>
             <Japanese>バックパックとして畳む</Japanese>
             <Italian>Mettere nello zaino</Italian>
+            <French>Emballer dans un sac à dos</French>
         </Key>
         <Key ID="STR_KAT_Stretcher_UnpackStretcher">
             <English>Deploy Stretcher</English>
@@ -210,6 +215,7 @@
             <Spanish>Desplegar Camilla</Spanish>
             <Japanese>担架を展開する</Japanese>
             <Italian>Dispiegare la barella</Italian>
+            <French>Déployer le brancard</French>
         </Key>
         <Key ID="STR_KAT_Stretcher_PlaceStretcher_progressBar">
             <English>Placing Stretcher...</English>
@@ -218,6 +224,7 @@
             <Spanish>Colocando Camilla...</Spanish>
             <Japanese>担架を設置しています・・・</Japanese>
             <Italian>Posizionamento della barella...</Italian>
+            <French>Mise en place du brancard...</French>
         </Key>
         <Key ID="STR_KAT_Stretcher_PickupStretcher_progressBar">
             <English>Packing Stretcher...</English>
@@ -226,6 +233,7 @@
             <Spanish>Empaquetando Camilla...</Spanish>
             <Japanese>担架を折り畳んでいます・・・</Japanese>
             <Italian>Imballaggio della barella...</Italian>
+            <French>Le brancard est emballé</French>
         </Key>
         <Key ID="STR_KAT_Stretcher_KAT_HeliStretcher">
             <English>KAT Helistretcher</English>
@@ -233,6 +241,7 @@
             <Spanish>KAT Camilla de Helicóptero</Spanish>
             <Japanese>KAT ヘリコプター用担架</Japanese>
             <Italian>KAT Barella per elicotteri</Italian>
+            <French>Brancard d'hélicoptère KAT</French>
         </Key>
     </Package>
 </Project>
