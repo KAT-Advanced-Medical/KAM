@@ -37,7 +37,8 @@ disableSerialization;
     "kat_morphineIV",
     "kat_adenosineIV",
     "kat_atropineIV",
-    "kat_alteplase"
+    "kat_alteplase",
+    "ACE_salineIV_250"
 ];
 
 private _medicationsFound = {

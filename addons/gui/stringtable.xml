@@ -291,7 +291,7 @@
             <English>Please make a selection in All Categories</English>
         </Key>
         <Key ID="STR_KAT_GUI_No_Syringe_Available">
-            <English>That is not a valid Syringe Combo</English>
+            <English>That is not a valid Syringe Combo %1 %2 %3</English>
         </Key>
         <Key ID="STR_KAT_GUI_Preparing_Syringe">
             <English>Preparing %1</English>

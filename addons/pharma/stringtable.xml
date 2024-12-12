@@ -149,22 +149,13 @@
             <Dutch>Bepaald of IV/IO naalden herbruikbaar zijn</Dutch>
         </Key>
         <Key ID="STR_KAT_Pharma_treatmentTime_ApplyIV">
-            <English>Time to establish IVs</English>
-            <German>Zeit zum Anlegen von IVs</German>
-            <Polish>Czas zakładania IV</Polish>
-            <French>Temps pour poser une IV</French>
-            <Chinese>建立静脉注射的时间</Chinese>
-            <Chinesesimp>建立 IV 注射的时间</Chinesesimp>
-            <Italian>Tempo per inserire IV</Italian>
-            <Spanish>Tiempo para establecer las IV</Spanish>
-            <Korean>IV를 꽂는 시간 변경</Korean>
-            <Turkish>IV'ler oluşturma zamanı</Turkish>
-            <Czech>Čas k zavedení IV</Czech>
-            <Japanese>IV刺入の所要時間</Japanese>
-            <Russian>Время установки IV</Russian>
-            <Portuguese>Tempo de estabelecimento de IV</Portuguese>
-            <Finnish>IV lisäämiseen tarvittava aika</Finnish>
-            <Dutch>Aanbrengtijd voor IV's</Dutch>
+            <English>Time to establish a 16g IV</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_treatmentTime_Apply14IV">
+            <English>Time to establish a 14g IV</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_treatmentTime_Apply20IV">
+            <English>Time to establish a 20g IV</English>
         </Key>
         <Key ID="STR_KAT_Pharma_treatmentTime_ApplyIO">
             <English>Time to establish IOs</English>
@@ -4679,6 +4670,21 @@
         </Key>
         <Key ID="STR_KAT_Pharma_Take_AdenosineIV">
             <English>Push Adenosine IV</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_Syringe_SalineFlush_Display">
+            <English>5ml Saline Flush</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_Syringe_SalineFlush_DescShort">
+            <English>Uses to flush and clear IVs and IOs</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_medLvl_SalineFlush">
+            <English>Saline Flush Med Level</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_medLvl_SalineFlush_Desc">
+            <English>Changes what medical level is required to do a Saline Flush</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_treatmentTime_SalineFlush">
+            <English>Time to preform a Saline Flush</English>
         </Key>
     </Package>
 </Project>
