@@ -24,12 +24,12 @@ private _currentCS = _unit getVariable [QEGVAR(chemical,CSGas), 0];
 
 _unit setVariable [QEGVAR(chemical,CSGas), (_currentCS - (_poisonAdjustment * _deltaT)) max 0, _syncValue];
 
-if (_unit getVariable [QEGVAR(chemical,airPoisoning), false]) then {
+if !(_unit getVariable [QEGVAR(chemical,airPoisoning), false]) then {
     private _currentInfection = _unit getVariable [QEGVAR(chemical,infectionTime), missionNamespace getVariable [QEGVAR(chemical,infectionTime), 60]];
     private _updateTime = _currentInfection + (1 * _deltaT);
     _updateTime = _updateTime min (missionNamespace getVariable [QEGVAR(chemical,infectionTime), 60]);
 
     _unit setVariable [QEGVAR(chemical,infectionTime), _updateTime, true];
 } else {
-    _unit setVariable [QEGVAR(chemical,infectionTime), 0, true];
+    _unit setVariable [QEGVAR(chemical,infectionTime), 60, true];
 };
