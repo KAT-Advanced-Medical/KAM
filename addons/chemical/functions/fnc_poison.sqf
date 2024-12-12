@@ -15,7 +15,7 @@
  * Public: No
  */
 
-params ["_unit", "_gasLevel"];
+params ["_unit", "_gasLevel", "_infectedObject"];
 
 // Check if unit is remote (objNull is remote)
 if (!local _unit) exitWith {
@@ -43,6 +43,14 @@ if (_gasLevel == 0) exitWith {
         [QACEGVAR(hitreactions,dropWeapon), _unit, _unit] call CBA_fnc_targetEvent;
     };
 };
+
+private _currentInfectionArray = _unit getVariable [QGVAR(infectionArray), []];
+
+if ((_currentInfectionArray findIf { _x isEqualTo _infectedObject}) == -1) then {
+    _currentInfectionArray append [_infectedObject];
+};
+
+_unit setVariable [QGVAR(infectionArray), _currentInfectionArray, true];
 
 //Get max infection time
 private _infectionTime = missionNamespace getVariable [QGVAR(infectionTime), 60];
