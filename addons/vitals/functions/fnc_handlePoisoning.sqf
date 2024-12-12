@@ -31,5 +31,5 @@ if !(_unit getVariable [QEGVAR(chemical,airPoisoning), false]) then {
 
     _unit setVariable [QEGVAR(chemical,infectionTime), _updateTime, true];
 } else {
-    _unit setVariable [QEGVAR(chemical,infectionTime), 60, true];
+    _unit setVariable [QEGVAR(chemical,infectionTime), 0, true];
 };
