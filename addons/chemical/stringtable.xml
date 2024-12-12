@@ -184,10 +184,14 @@
         <Key ID="STR_KAT_Chemical_ChemicalDetectorDisplayName">
             <English>JCAD Chemical Detector</English>
             <Italian>Rilevatore chimico JCAD</Italian>
+            <French>Détecteur de produits chimiques JCAD</French>
+            <Japanese>JCAD 化学剤検知器</Japanese>
         </Key>
         <Key ID="STR_KAT_Chemical_ChemicalDetectorDescription">
             <English>Used to detect KAT toxic chemicals</English>
             <Italian>Utilizzato per rilevare sostanze chimiche tossiche KAT</Italian>
+            <French>Utilisé pour détecter les produits chimiques toxiques KAT</French>
+            <Japanese>KAT毒性化学物質の検出に使用</Japanese>
         </Key>
         <Key ID="STR_KAT_Chemical_giveGasMask_action">
             <English>Put on gas mask</English>
@@ -255,7 +259,7 @@
             <German>Chemischen Detektor stumm schalten.</German>
             <French>Désactiver le son du détecteur de produits chimiques</French>
             <Korean>화학물 탐지기 음소거</Korean>
-            <Japanese>化学検知器をミュート</Japanese>
+            <Japanese>化学剤検知器をミュート</Japanese>
             <Italian>Silenzia il rilevatore chimico</Italian>
             <Portuguese>Silenciar detector químico</Portuguese>
             <Polish>Wycisz Detektor chemiczny</Polish>
@@ -269,7 +273,7 @@
             <Spanish>Desilenciar Detector Quimico</Spanish>
             <German>Chemischen Detektor laut schalten.</German>
             <French>Activer le son du détecteur de produits chimiques</French>
-            <Japanese>化学検知器のミュート解除</Japanese>
+            <Japanese>化学剤検知器のミュート解除</Japanese>
             <Korean>화학물 탐지기 음소거 해제</Korean>
             <Italian>Smuta il rilevatore chimico</Italian>
             <Portuguese>Ativar som de detector químico</Portuguese>
@@ -775,18 +779,28 @@
         </Key>
         <Key ID="STR_KAT_Chemical_SETTING_gasMaskSoundVolume">
             <English>Gas Mask Sound Volume</English>
+            <Japanese>ガスマスクの音量</Japanese>
+            <French>Volume sonore du masque à gaz</French>
         </Key>
         <Key ID="STR_KAT_Chemical_SETTING_gasMaskSoundVolume_DESC">
             <English>Determines how loud the breathing sounds are when using the gas mask</English>
+            <Japanese>ガスマスク使用時の呼吸音の大きさを設定します</Japanese>
+            <French>Détermine l'intensité des bruits respiratoires lors de l'utilisation du masque à gaz.</French>
         </Key>
         <Key ID="STR_KAT_Chemical_OnlyObject">
             <English>Must be placed on object</English>
+            <Japanese>オブジェクトに配置する必要があります</Japanese>
+            <French>Doit être placé sur un objet</French>
         </Key>
         <Key ID="STR_KAT_Chemical_PutOnGasMask">
             <English>Put on gas mask</English>
+            <Japanese>ガスマスクを装着</Japanese>
+            <French>Mettre le masque à gaz</French>          
         </Key>
         <Key ID="STR_KAT_Chemical_TakeOffGasMask">
             <English>Take off gas mask</English>
+            <Japanese>ガスマスクを外す</Japanese>
+            <French>Enlever le masque à gaz</French>
         </Key>
     </Package>
 </Project>

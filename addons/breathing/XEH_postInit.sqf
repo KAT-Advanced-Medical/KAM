@@ -23,5 +23,6 @@
 [QACEGVAR(medical,woundReceived),LINKFUNC(handlePulmoHit)] call CBA_fnc_addEventHandler;
 
 private _items = missionNamespace getVariable [QGVAR(availOxyMask), "'G_AirPurifyingRespirator_01_F'"];
-private _array = [_items, "CfgGlasses"] call FUNC(getList);
+private _array = [_items, "CfgGlasses"] call EFUNC(chemical,getList);
+
 missionNamespace setVariable [QGVAR(availOxyMaskList), _array, true];

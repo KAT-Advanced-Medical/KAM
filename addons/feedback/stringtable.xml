@@ -33,11 +33,13 @@
             <English>Enable opioid effect</English>
             <Japanese>オピオイド効果を有効化</Japanese>
             <Italian>Abilita l'effetto degli oppioidi</Italian>
+            <French>Activer l'effet opioïde</French>
         </Key>
         <Key ID="STR_KAT_Feedback_SETTING_OpioidEffect_DESC">
             <English>Enables opioid effect on ketamine, fentanyl and pervitin</English>
             <Japanese>ケタミン、フェンタニル、ペルビチンなどでオピオイドの効果を有効にします</Japanese>
             <Italian>Abilita l'effetto degli oppioidi su ketamina, fentanil e pervitina</Italian>
+            <French>Permet un effet opioïde sur la kétamine, le fentanyl et la pervitine</French>
         </Key>
     </Package>
 </Project>
