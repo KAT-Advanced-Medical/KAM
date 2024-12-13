@@ -24,6 +24,7 @@
             <Dutch>Schakel hypothermie in</Dutch>
             <Spanish>Habilitar hipotermia</Spanish>
             <Japanese>低体温症を有効化</Japanese>
+            <German>Erlaube Hypothermie</German>
             <Italian>Abilita l'ipotermia</Italian>
             <French>Permettre l'hypothermie</French>
         </Key>
@@ -32,6 +33,7 @@
             <Dutch>Handwarmer impact</Dutch>
             <Spanish>Impacto de Calentador de Manos</Spanish>
             <Japanese>ハンドウォーマーの影響</Japanese>
+            <German>Wirkung des Handwärmer</German>
             <Italian>Impatto dei riscaldatori per le mani</Italian>
             <French>Impact du chauffe-mains</French>
         </Key>
@@ -40,6 +42,7 @@
             <Dutch>Vermenigvuldiger voor de impact die handwarmers hebben op de stijging van temperatuur</Dutch>
             <Spanish>Multiplicador del impacto del calentador de manos en la ganancia de calor</Spanish>
             <Japanese>ハンドウォーマーが熱獲得に与える影響の乗数</Japanese>
+            <German>Multiplikator für den Einfluss von Handwärmern</German>
             <Italian>Moltiplicatore per l'impatto dei riscaldatori per le mani sull'aumento del calore</Italian>
             <French>Multiplicateur pour l'impact des chauffe-mains sur le gain de chaleur</French>
         </Key>
@@ -48,6 +51,7 @@
             <Dutch>Vloeistofverwarmer impact</Dutch>
             <Spanish>Impacto del Calentador de Fluidos</Spanish>
             <Japanese>輸液ウォーマーの影響</Japanese>
+            <German>Wirkung des Flüssigkeitswärmers</German>
             <Italian>Impatto del riscaldatore per liquidi</Italian>
             <French>Impact du réchauffeur de fluide</French>
         </Key>
@@ -56,6 +60,7 @@
             <Dutch>Vermenigvuldiger voor de impact die vloeistofverwarmers hebben op de stijging van temperatuur</Dutch>
             <Spanish>Multiplicador del impacto del calentador de fluidos en la ganancia de calor</Spanish>
             <Japanese>輸液ウォーマーが熱獲得に与える影響の乗数</Japanese>
+            <German>Multiplikator für den Einfluss des Flüssigkeitserwärmers</German>
             <Italian>Moltiplicatore per l'impatto del riscaldatore per liquidi sull'aumento del calore</Italian>
             <French>Multiplicateur pour l'impact du réchauffement des fluides sur le gain de chaleur</French>
         </Key>
@@ -64,6 +69,7 @@
             <Dutch>Warme uniformen</Dutch>
             <Spanish>Uniformes Calientes</Spanish>
             <Japanese>暖かいユニフォーム</Japanese>
+            <German>Warme Uniformen</German>
             <Italian>Uniformi riscaldate</Italian>
             <French>Uniformes chauds</French>
         </Key>
@@ -72,6 +78,7 @@
             <Dutch>Lijst van kleding die temperatuurdalingen verminderen</Dutch>
             <Spanish>Listado de ropa marcada como reductora de la pérdida de calor</Spanish>
             <Japanese>熱損失を減らすことが出来るとマークされた衣類のリスト</Japanese>
+            <German>Liste der markierten Kleidungsstücke, die den Wärmeverlust reduzieren</German>
             <Italian>Elenco degli indumenti segnati che riducono la perdita di calore</Italian>
             <French>Liste des vêtements qui réduisent les chutes de température</French>
         </Key>
@@ -80,6 +87,7 @@
             <Dutch>Check handwarmers</Dutch>
             <Spanish>Comprobar Calentadores de Manos</Spanish>
             <Japanese>ハンドウォーマーを確認する</Japanese>
+            <German>Überprüfen Sie die Handwärmer</German>
             <Italian>Controlla i riscaldatori per le mani</Italian>
             <French>Vérifier les chauffe-mains</French>
         </Key>
@@ -88,6 +96,7 @@
             <Dutch>Handwarmers</Dutch>
             <Spanish>Calentador de Manos</Spanish>
             <Japanese>ハンドウォーマー</Japanese>
+            <German>Handwärmer</German>
             <Italian>Riscaldatore per le mani</Italian>
             <French>Chauffe-mains</French>
         </Key>
@@ -96,6 +105,7 @@
             <Dutch>Kleine handwarmers die warmte bieden in koude klimaten</Dutch>
             <Spanish>Pequeños calentadores de manos para dar calor en climas fríos</Spanish>
             <Japanese>寒冷地でも体を温めることが出来る小さなハンドウォーマー (懐炉)</Japanese>
+            <German>Kleine Handwärmer sorgen für Wärme in kälteren Klimazonen</German>
             <Italian>Piccoli riscaldatori per le mani per fornire calore in climi freddi</Italian>
             <French>Petits chauffe-mains pour réchauffer les mains dans les climats plus froids</French>
         </Key>
@@ -104,6 +114,7 @@
             <Dutch>Gebruik handwarmer</Dutch>
             <Spanish>Usar Calentador de Manos</Spanish>
             <Japanese>ハンドウォーマーを使用する</Japanese>
+            <German>Verwenden Sie einen Handwärmer</German>
             <Italian>Usa il riscaldatore per le mani</Italian>
             <French>Utiliser des chauffe-mains</French>
         </Key>
@@ -112,6 +123,7 @@
             <Dutch>Dit is waar je handwarmers hebt en hoelang je denkt dat ze nog werken in minuten: %1, %2, %3, %4, %5</Dutch>
             <Spanish>Aquí es donde tienes calentadores de manos y cuanto piensas que les queda de duración en minutos: %1, %2, %3, %4, %5</Spanish>
             <Japanese>あなたが使用中の ハンドウォーマーの 位置と残り持続時間は 次の通りです (分単位): %1, %2, %3, %4, %5</Japanese>
+            <German>Hier finden Sie Handwärmer und die geschätzte Zeitdauer in Minuten: %1, %2, %3, %4, %5</German>
             <Italian>Ecco dove hai i riscaldatori per le mani e quanto tempo pensi che rimangano in minuti: %1, %2, %3, %4, %5</Italian>
             <French>La position et la durée restante du chauffe-mains que vous utilisez sont les suivantes (en minutes) : %1, %2, %3, %4, %5</French>
         </Key>
@@ -120,6 +132,7 @@
             <Dutch>Deze patient heeft handwarmers op deze locaties en dit is hoelang ze ongeveer nog werken: %1, %2, %3, %4, %5</Dutch>
             <Spanish>Este paciente tiene calentadores de manos y probablemente le duren muchos mas minutos en esos sitios: %1, %2, %3, %4, %5</Spanish>
             <Japanese>この患者が使用中の ハンドウォーマーの 位置と残り持続時間は 次の通りです (分単位): %1, %2, %3, %4, %5</Japanese>
+            <German>Dieser Patient hat Handwärmer und sie werden wahrscheinlich noch so viele Minuten an diesen Orten aushalten: %1, %2, %3, %4, %5</German>
             <Italian>Questo paziente ha riscaldatori per le mani e probabilmente dureranno ancora questi minuti in queste posizioni: %1, %2, %3, %4, %5</Italian>
             <French>La position et la durée restante du chauffe-main utilisé par ce patient sont les suivantes (en minutes) : %1, %2, %3, %4, %5</French>
         </Key>
@@ -128,6 +141,7 @@
             <Dutch>IV-lijn verwarmers</Dutch>
             <Spanish>Calentador de Línea de Fluidos</Spanish>
             <Japanese>輸液ラインウォーマー</Japanese>
+            <German>Flüssigkeitsleitungswärmer</German>
             <Italian>Riscaldatore per linea endovenosa</Italian>
             <French>Chauffe-ligne fluide</French>
         </Key>
@@ -136,6 +150,7 @@
             <Dutch>Verwarmt IV-vloeistoffen. Moet geplaatst worden op een al aangelegde lijn.</Dutch>
             <Spanish>Provee calor a los fluidos IV. Deben ser colocados en una línea ya existentes</Spanish>
             <Japanese>IVの輸液を温めます。既存のライン上に配置する必要があります</Japanese>
+            <German>Erwärmt IV-Flüssigkeiten. Muss auf einer bereits vorhandenen Zeile platziert werden</German>
             <Italian>Fornisce riscaldamento ai liquidi IV. Deve essere posizionato su una linea già esistente</Italian>
             <French>Permet de chauffer les fluides IV. Doit être placé sur une ligne déjà existante</French>
         </Key>
@@ -144,6 +159,7 @@
             <Dutch>Maak vloeistofverwarmer vast</Dutch>
             <Spanish>Poner Calentador de Fluidos</Spanish>
             <Japanese>輸液ウォーマーを取り付ける</Japanese>
+            <German>Flüssigkeitswärmer anbringen</German>
             <Italian>Attacca il riscaldatore per liquidi</Italian>
             <French>Attacher le réchauffeur de fluide</French>
         </Key>
@@ -152,6 +168,7 @@
             <Dutch>Maak vloeistofverwarmer los</Dutch>
             <Spanish>Quitar Calentador de Fluidos</Spanish>
             <Japanese>輸液ウォーマーを取り外す</Japanese>
+            <German>Flüssigkeitswärmer entfernen</German>
             <Italian>Rimuovi il riscaldatore per liquidi</Italian>
             <French>Enlever le réchauffeur de fluide</French>
         </Key>
@@ -159,6 +176,7 @@
             <English>Patient feels frigid</English>
             <Dutch>Patiënt voelt ijskoud aan</Dutch>
             <Spanish>El paciente se siente frígido</Spanish>
+            <German>Der Patient fühlt sich sehr kalt an</German>
             <Japanese>患者は凍ったように冷たい</Japanese>
             <Italian>Il paziente sente gelato</Italian>
             <French>Le patient se sent frigorifié</French>
@@ -167,6 +185,7 @@
             <English>Patient feels remarkably cold</English>
             <Dutch>Patiënt voel opmerkelijk koud aan</Dutch>
             <Spanish>El paciente se siente realmente frío</Spanish>
+            <German>Der Patient fühlt sich kalt an</German>
             <Japanese>患者は著しく冷たい</Japanese>
             <Italian>Il paziente sente notevolmente freddo</Italian>
             <French>Le patient a une sensation de froid intense</French>
@@ -175,6 +194,7 @@
             <English>Patient feels moderately cold</English>
             <Dutch>Patiënt voelt redelijk koud aan</Dutch>
             <Spanish>El paciente se siente moderadamente frío</Spanish>
+            <German>Der Patient fühlt sich mäßig kalt an</German>
             <Japanese>患者は少し冷たい</Japanese>
             <Italian>Il paziente sente moderatamente freddo</Italian>
             <French>Le patient a modérément froid</French>
@@ -183,6 +203,7 @@
             <English>Patient feels mildly cool</English>
             <Dutch>Patiënt voelt een klein beetje koud aan</Dutch>
             <Spanish>El paciente se siente algo frío</Spanish>
+            <German>Der Patient fühlt sich leicht kühl an</German>
             <Japanese>患者は少しひんやりしている</Japanese>
             <Italian>Il paziente sente lievemente fresco</Italian>
             <French>Le patient ressent une légère fraîcheur</French>
@@ -191,6 +212,7 @@
             <English>Patient feels warm</English>
             <Dutch>Patiënt voelt warm aan</Dutch>
             <Spanish>El paciente se siente cálido</Spanish>
+            <German>Der Patient fühlt sich warm an</German>
             <Japanese>患者は暖かい</Japanese>
             <Italian>Il paziente sente caldo</Italian>
             <French>Le patient ressent de la chaleur</French>
@@ -200,6 +222,7 @@
             <Dutch>Check temperatuur</Dutch>
             <Spanish>Comprobar Temperatura</Spanish>
             <Japanese>体温を確認</Japanese>
+            <German>Temperatur prüfen</German>
             <Italian>Controlla la temperatura</Italian>
             <French>Vérifier la température</French>
         </Key>
@@ -208,6 +231,7 @@
             <Dutch>Temperatuur wordt gecheckt</Dutch>
             <Spanish>ComprobandoTemperatura</Spanish>
             <Japanese>体温をチェックしています</Japanese>
+            <German>prüfe Temperatur</German>
             <Italian>Controllo della temperatura in corso</Italian>
             <French>La température est vérifiée</French>
         </Key>
@@ -216,6 +240,7 @@
             <Dutch>Check handwarmers</Dutch>
             <Spanish>Comprobar Calentadores de Mano</Spanish>
             <Japanese>ハンドウォーマーをチェックします</Japanese>
+            <German>Überprüfe Handwärmer</German>
             <Italian>Controlla i riscaldatori per le mani</Italian>
             <French>Vérifier les chauffe-mains.</French>
         </Key>
@@ -224,6 +249,7 @@
             <Dutch>Wordt uitgevoerd</Dutch>
             <Spanish>Realizando</Spanish>
             <Japanese>適用中</Japanese>
+            <German>Aufführen</German>
             <Italian>Esecuzione in corso</Italian>
             <French>En cours de mise en place</French>
         </Key>
@@ -232,6 +258,7 @@
             <Dutch>Lijnwarmer actief</Dutch>
             <Spanish>Calentador de Línea Activo</Spanish>
             <Japanese>ラインウォーマーを利用中</Japanese>
+            <German>Leitungswärmer aktiv</German>
             <Italian>Riscaldatore per linea attivo</Italian>
             <French>Chauffe-lignes en service.</French>
         </Key>
@@ -240,6 +267,7 @@
             <Dutch>Momenteel zijn er geen handwarmers actief</Dutch>
             <Spanish>No hay calentadores de mano activos actualmente</Spanish>
             <Japanese>現在ハンドウォーマーは使っていません</Japanese>
+            <German>Zurzeit sind keine Handwärmer aktiv</German>
             <Italian>Nessun riscaldatore per le mani è attivo in questo momento</Italian>
             <French>Les chauffe-mains ne sont pas utilisés actuellement.</French>
         </Key>
@@ -248,6 +276,7 @@
             <Dutch>Torso: %1</Dutch>
             <Spanish>Cuerpo: %1</Spanish>
             <Japanese>胴体: %1</Japanese>
+            <German>Brust: %1</German>
             <Italian>Corpo: %1</Italian>
             <French>Corps : %1</French>
         </Key>
@@ -256,6 +285,7 @@
             <Dutch>Torso: Geen</Dutch>
             <Spanish>Cuerpo: Ninguno</Spanish>
             <Japanese>胴体: なし</Japanese>
+            <German>Brust: Nichts</German>
             <Italian>Corpo: Nessuno</Italian>
             <French>Corps : Aucun</French>
         </Key>
@@ -264,6 +294,7 @@
             <Dutch>Linkerarm: %1</Dutch>
             <Spanish>Brazo Izquierdo: %1</Spanish>
             <Japanese>左腕: %1</Japanese>
+            <German>Linker Arm: %1</German>
             <Italian>Braccio Sinistro: %1</Italian>
             <French>Bras gauche : %1</French>
         </Key>
@@ -272,6 +303,7 @@
             <Dutch>Linkerarm: Geen</Dutch>
             <Spanish>Brazo Izquierdo: Ninguno</Spanish>
             <Japanese>左腕: なし</Japanese>
+            <German>Linker Arm: Nichts</German>
             <Italian>Braccio Sinistro: Nessuno</Italian>
             <French>Bras gauche : aucun</French>
         </Key>
@@ -280,6 +312,7 @@
             <Dutch>Rechterarm: %1</Dutch>
             <Spanish>Brazo Derecho: %1</Spanish>
             <Japanese>右腕: %1</Japanese>
+            <German>Rechter Arm: %1</German>
             <Italian>Braccio Destro: %1</Italian>
             <French>Bras droit : %1</French>
         </Key>
@@ -288,6 +321,7 @@
             <Dutch>Rechterarm: Geen</Dutch>
             <Spanish>Brazo Derecho: Ninguno</Spanish>
             <Japanese>右腕: なし</Japanese>
+            <German>Rechter Arm: Nichts</German>
             <Italian>Braccio Destro: Nessuno</Italian>
             <French>Bras droit : aucun</French>
         </Key>
@@ -296,6 +330,7 @@
             <Dutch>Linkerbeen: %1</Dutch>
             <Spanish>Pierna Izquierda: %1</Spanish>
             <Japanese>左脚: %1</Japanese>
+            <German>Linkes Bein: %1</German>
             <Italian>Gamba Sinistra: %1</Italian>
             <French>Jambe gauche : %1</French>
         </Key>
@@ -304,6 +339,7 @@
             <Dutch>Linkerbeen: Geen</Dutch>
             <Spanish>Pierna Izquierda: Ninguno</Spanish>
             <Japanese>左脚: なし</Japanese>
+            <German>Linkes Bein: Nichts</German>
             <Italian>Gamba Sinistra: Nessuna</Italian>
             <French>Jambe gauche : aucune</French>
         </Key>
@@ -312,6 +348,7 @@
             <Dutch>Rechterbeen: %1</Dutch>
             <Spanish>Pierna Derecha: %1</Spanish>
             <Japanese>右脚: %1</Japanese>
+            <German>Rechtes Bein: %1</German>
             <Italian>Gamba Destra: %1</Italian>
             <French>Jambe droite : %1</French>
         </Key>
@@ -320,6 +357,7 @@
             <Dutch>Rechterbeen: Geen</Dutch>
             <Spanish>Pierna Derecha: Ninguno</Spanish>
             <Japanese>右脚: なし</Japanese>
+            <German>Rechtes Bein: Nichts</German>
             <Italian>Gamba Destra: Nessuna</Italian>
             <French>Jambe droite : non</French>
         </Key>

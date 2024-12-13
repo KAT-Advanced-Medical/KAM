@@ -186,12 +186,14 @@
             <Italian>Rilevatore chimico JCAD</Italian>
             <French>Détecteur de produits chimiques JCAD</French>
             <Japanese>JCAD 化学剤検知器</Japanese>
+            <German>JCAD Chemiedetektor</German>
         </Key>
         <Key ID="STR_KAT_Chemical_ChemicalDetectorDescription">
             <English>Used to detect KAT toxic chemicals</English>
             <Italian>Utilizzato per rilevare sostanze chimiche tossiche KAT</Italian>
             <French>Utilisé pour détecter les produits chimiques toxiques KAT</French>
             <Japanese>KAT毒性化学物質の検出に使用</Japanese>
+            <German>Wird zum Nachweis toxischer KAT-Chemikalien verwendet</German>
         </Key>
         <Key ID="STR_KAT_Chemical_giveGasMask_action">
             <English>Put on gas mask</English>
@@ -781,27 +783,33 @@
             <English>Gas Mask Sound Volume</English>
             <Japanese>ガスマスクの音量</Japanese>
             <French>Volume sonore du masque à gaz</French>
+            <German>Lautstärke der Gasmaske</German>
         </Key>
         <Key ID="STR_KAT_Chemical_SETTING_gasMaskSoundVolume_DESC">
             <English>Determines how loud the breathing sounds are when using the gas mask</English>
             <Japanese>ガスマスク使用時の呼吸音の大きさを設定します</Japanese>
             <French>Détermine l'intensité des bruits respiratoires lors de l'utilisation du masque à gaz.</French>
+            <German>Bestimmt, wie laut die Atemgeräusche beim Tragen der Gasmaske sind</German>
         </Key>
         <Key ID="STR_KAT_Chemical_PutOnGasMask">
             <English>Put on gas mask</English>
             <Japanese>ガスマスクを装着</Japanese>
-            <French>Mettre le masque à gaz</French>          
+            <French>Mettre le masque à gaz</French>
+            <German>Gasmaske aufsetzen</German>
         </Key>
         <Key ID="STR_KAT_Chemical_TakeOffGasMask">
             <English>Take off gas mask</English>
             <Japanese>ガスマスクを外す</Japanese>
             <French>Enlever le masque à gaz</French>
+            <German>Gasmaske abnehmen</German>
         </Key>
         <Key ID="STR_KAT_Chemical_SETTING_dropWeaponChance">
             <English>Drop Weapon Chance</English>
+            <German>Wahrscheinlichkeit, eine Waffe fallen zu lassen</German>
         </Key>
         <Key ID="STR_KAT_Chemical_SETTING_dropWeaponChance_DESC">
             <English>Determines chance for dropping weapon while in tear gas</English>
+            <German>Bestimmt die Wahrscheinlichkeit, dass die Waffe fallen gelassen wird, während man unter Tränengas steht</German>
         </Key>
     </Package>
 </Project>
