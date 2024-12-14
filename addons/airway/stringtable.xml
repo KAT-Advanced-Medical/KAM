@@ -402,6 +402,9 @@
             <Finnish>Tuuliputki on selkeä</Finnish>
             <Dutch>Luchtweg is vrij</Dutch>
         </Key>
+        <Key ID="STR_KAT_Airway_AirwayStatus_Poison">
+            <English>Airway is heavily blistered</English>
+        </Key>
         <Key ID="STR_KAT_Airway_AirwayStatus_NotClearForItem">
             <English>Item could not be used, airways are not clear</English>
             <German>Gegenstand konnte nicht verwendet werden, Atemwege sind nicht frei</German>

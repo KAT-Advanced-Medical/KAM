@@ -55,7 +55,7 @@ if (!(_patient getVariable [QGVAR(occluded), false]) && !(_patient getVariable [
     _hintWidth = 10;
 };
 
-if (_patient getVariable [QEGVAR(chemical,airPoisoning), false]) then {
+if (_patient getVariable [QEGVAR(chemical,airPoisoning), false]) exitWith {
     _message = LLSTRING(AirwayStatus_Poison);
 
     [_message, _hintSize, _medic, _hintWidth] call ACEFUNC(common,displayTextStructured);
