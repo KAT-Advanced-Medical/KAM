@@ -39,35 +39,35 @@ _unit setVariable [QGVAR(oxygenMaskStatus), [0,0], true];
         [_idPFH] call CBA_fnc_removePerFrameHandler;
     };
 
-	private _spo2 = GET_KAT_SPO2(_unit);
+    private _spo2 = GET_KAT_SPO2(_unit);
 
-	if(GVAR(staminaLossAtLowSPO2)) then {
-		if (!(_unit getVariable ["ACE_isUnconscious",false]) && {_spo2 <= GVAR(lowSPO2Level)}) then {
-			if (ACEGVAR(advanced_fatigue,enabled)) then {
-				["kat_LSDF", 1.5] call ACEFUNC(advanced_fatigue,addDutyFactor);
-			} else {
-				_unit setStamina(getStamina _unit - 3);
-			};
-		} else {
-			["kat_LSDF"] call ACEFUNC(advanced_fatigue,removeDutyFactor);
-		};
-	};
+    if(GVAR(staminaLossAtLowSPO2)) then {
+        if (!(_unit getVariable ["ACE_isUnconscious",false]) && {_spo2 <= GVAR(lowSPO2Level)}) then {
+            if (ACEGVAR(advanced_fatigue,enabled)) then {
+                ["kat_LSDF", 1.5] call ACEFUNC(advanced_fatigue,addDutyFactor);
+            } else {
+                _unit setStamina(getStamina _unit - 3);
+            };
+        } else {
+            ["kat_LSDF"] call ACEFUNC(advanced_fatigue,removeDutyFactor);
+        };
+    };
 
-	if ((_unit getVariable [QGVAR(pneumothorax), 0] > 0) || _unit getVariable [QGVAR(hemopneumothorax), false] || _unit getVariable [QGVAR(tensionpneumothorax), false] || _unit getVariable [QEGVAR(chemical,airPoisoning), false]) then {
-		if (!(_unit getVariable [QACEGVAR(medical,inCardiacArrest), false]) && !(_unit getVariable [QGVAR(PneumoBreathCooldownOn), false])) then {
-			_unit setVariable [QGVAR(PneumoBreathCooldownOn), true, true];
+    if ((_unit getVariable [QGVAR(pneumothorax), 0] > 0) || _unit getVariable [QGVAR(hemopneumothorax), false] || _unit getVariable [QGVAR(tensionpneumothorax), false] || _unit getVariable [QEGVAR(chemical,airPoisoning), false]) then {
+        if (!(_unit getVariable [QACEGVAR(medical,inCardiacArrest), false]) && !(_unit getVariable [QGVAR(PneumoBreathCooldownOn), false])) then {
+            _unit setVariable [QGVAR(PneumoBreathCooldownOn), true, true];
 
-			private _soundTargets = allPlayers inAreaArray [ASLToAGL getPosASL _unit, 15, 15, 0, false, 15];
+            private _soundTargets = allPlayers inAreaArray [ASLToAGL getPosASL _unit, 15, 15, 0, false, 15];
 
-			if !(_soundTargets isEqualTo []) then {
-				[QGVAR(playCough), [_unit], _soundTargets] call CBA_fnc_targetEvent;
-			};
+            if !(_soundTargets isEqualTo []) then {
+                [QGVAR(playCough), [_unit], _soundTargets] call CBA_fnc_targetEvent;
+            };
 
-			[{
-				params["_unit"];
-				_unit setVariable [QGVAR(PneumoBreathCooldownOn), false, true];
-			},
-			[_unit], 20] call CBA_fnc_waitAndExecute;
-		};
-	};
+            [{
+                params["_unit"];
+                _unit setVariable [QGVAR(PneumoBreathCooldownOn), false, true];
+            },
+            [_unit], 20] call CBA_fnc_waitAndExecute;
+        };
+    };
 }, 10, [_unit]] call CBA_fnc_addPerFrameHandler;
