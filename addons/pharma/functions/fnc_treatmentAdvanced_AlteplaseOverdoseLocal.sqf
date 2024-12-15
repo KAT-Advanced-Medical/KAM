@@ -10,7 +10,7 @@
  * None
  *
  * Example:
- * [cursorTarget] call kat_pharma_fnc_treatmentAdvanced_AlteplaseLocal;
+ * [cursorTarget] call kat_pharma_fnc_treatmentAdvanced_AlteplaseOverdoseLocal;
  *
  * Public: No
  */
