@@ -4671,6 +4671,30 @@
         <Key ID="STR_KAT_Pharma_Take_AdenosineIV">
             <English>Push Adenosine IV</English>
         </Key>
+        <Key ID="STR_KAT_Pharma_CheckVein_DisplayName">
+            <English>Check Veins</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_CheckVein_DisplayNameProgress">
+            <English>Checking Veins</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_SETTING_CheckVein_MedLevel">
+            <English>Medical level required to Check Veins</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_SETTING_CheckVein_treatmentTime">
+            <English>Treatment time to Check Veins</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_CheckVein_VeinBlown">
+            <English>The Veins are Blown</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_CheckVein_VeinFine">
+            <English>The Veins are Normal</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_prepTime_PrepInfusion">
+            <English>Infusion Prep Time</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_prepTime_PrepInfusion_Desc">
+            <English>Time required to prep Infusions</English>
+        </Key>
         <Key ID="STR_KAT_Pharma_Syringe_SalineFlush_Display">
             <English>5ml Saline Flush</English>
         </Key>

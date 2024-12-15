@@ -99,6 +99,15 @@ PREP_RECOMPILE_END;
     true
 ] call CBA_Settings_fnc_init;
 
+[
+    QGVAR(prepTime_PrepInfusion),
+    "SLIDER",
+    [LLSTRING(prepTime_PrepInfusion), LLSTRING(prepTime_PrepInfusion_Desc)],
+    [CBA_SETTINGS_CAT, ELSTRING(GUI,SubCategory_Basic)],
+    [1, 15, 6, 0],
+    true
+] call CBA_Settings_fnc_init;
+
 //IV Settings Category
 [
     QGVAR(medLvl_ApplyIV),
@@ -1110,6 +1119,24 @@ PREP_RECOMPILE_END;
     [LLSTRING(treatmentTime_Alteplase)],
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_Alteplase)],
     [0.1, 10, 7, 1],
+    true
+] call CBA_Settings_fnc_init;
+    
+[
+    QGVAR(CheckVein_MedLevel),
+    "LIST",
+    LLSTRING(SETTING_CheckVein_MedLevel),
+    [CBA_SETTINGS_CAT, ELSTRING(GUI,SubCategory_Basic)],
+    [[0, 1, 2], ["STR_ACE_Medical_Treatment_Anyone", "STR_ACE_Medical_Treatment_Medics", "STR_ACE_Medical_Treatment_Doctors"], 0],
+    true
+] call CBA_Settings_fnc_init;
+
+[
+    QGVAR(CheckVein_TreatmentTime),
+    "TIME",
+    LLSTRING(SETTING_CheckVein_treatmentTime),
+    [CBA_SETTINGS_CAT, ELSTRING(GUI,SubCategory_Basic)],
+    [1, 30, 4],
     true
 ] call CBA_Settings_fnc_init;
 

@@ -30,18 +30,36 @@ if (_syringeSelected < 0 || _medicationSelected < 0 || _doseSelected < 0) exitWi
 private _syringeType = _syringeBox lbData _syringeSelected;
 private _medicationType = _medicationBox lbData _medicationSelected;
 private _doseType = _doseCombo lbValue _doseSelected;
-private _syringeClassName = format ["kat_syringe_%1_%2_%3", _medicationType, _syringeType, _doseType];
-private _syringeDisplayName = getText (configFile >> "CfgWeapons" >> _syringeClassName >> "displayName");
-private _hasSyringe = isClass (configFile >> "CfgWeapons" >> _syringeClassName);
-if (!_hasSyringe) exitWith {
-    hint format [LLSTRING(No_Syringe_Available), _medicationType, _syringeType, _doseType];
-    [{hint ""}, [], 5] call CBA_fnc_waitAndExecute;
-};
-[EGVAR(pharma,prepTime_PrepSyringe), 
-    [_medicationType, _syringeType, _doseType],
-    {
-        params["_args"];
-        _args params ["_medicationType", "_syringeType", "_doseType"];
-        [_player, _medicationType, _syringeType, _doseType] call kat_pharma_fnc_prepareSyringe;
-        }, 
-        {}, format [LLSTRING(Preparing_Syringe), _syringeDisplayName] ] call ACEFUNC(common,progressBar);
+if (_doseType != 4) then {
+    private _syringeClassName = format ["kat_syringe_%1_%2_%3", _medicationType, _syringeType, _doseType];
+    private _syringeDisplayName = getText (configFile >> "CfgWeapons" >> _syringeClassName >> "displayName");
+    private _hasSyringe = isClass (configFile >> "CfgWeapons" >> _syringeClassName);
+    if (!_hasSyringe) exitWith {
+        hint format [LLSTRING(No_Syringe_Available), _medicationType, _syringeType, _doseType];
+        [{hint ""}, [], 5] call CBA_fnc_waitAndExecute;
+    };
+    [EGVAR(pharma,prepTime_PrepSyringe), 
+        [_medicationType, _syringeType, _doseType],
+        {
+            params["_args"];
+            _args params ["_medicationType", "_syringeType", "_doseType"];
+            [_player, _medicationType, _syringeType, _doseType] call kat_pharma_fnc_prepareSyringe;
+            }, 
+            {}, format [LLSTRING(Preparing_Syringe), _syringeDisplayName] ] call ACEFUNC(common,progressBar);
+} else {
+    private _syringeClassName = format ["kat_%1Infusion", _medicationType];
+    private _syringeDisplayName = getText (configFile >> "CfgWeapons" >> _syringeClassName >> "displayName");
+    private _hasSyringe = isClass (configFile >> "CfgWeapons" >> _syringeClassName);
+    if (!_hasSyringe) exitWith {
+        hint format [LLSTRING(No_Syringe_Available), _medicationType, _syringeType, _doseType];
+        [{hint ""}, [], 5] call CBA_fnc_waitAndExecute;
+    };
+    [EGVAR(pharma,prepTime_PrepInfusion), 
+        [_medicationType, _syringeType, _doseType],
+        {
+            params["_args"];
+            _args params ["_medicationType", "_syringeType", "_doseType"];
+            [_player, _medicationType, _syringeType, _doseType] call kat_pharma_fnc_prepareInfusion;
+            }, 
+            {}, format [LLSTRING(Preparing_Syringe), _syringeDisplayName] ] call ACEFUNC(common,progressBar);
+}

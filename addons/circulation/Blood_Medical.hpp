@@ -1,4 +1,5 @@
 class BloodIV;
+class SalineIV;
 class BloodIV_O: BloodIV {
     displayName = CSTRING(Action_BloodIV_O);
     items[] = {"kat_bloodIV_O"};
@@ -120,4 +121,52 @@ class BloodIV_AB_N_250: BloodIV_250 {
     displayName = CSTRING(Action_250_BloodIV_AB_N);
     items[] = {"kat_bloodIV_AB_N_250"};
     callbackSuccess = "[_medic, _patient, _bodyPart, _className, _usedItem] call kat_circulation_fnc_handleTreatment; ['kat_fluid', [_patient, -200, 4]] call CBA_fnc_localEvent;";
+};
+class PackedRBCIV_500: BloodIV {
+    displayName = CSTRING(Actions_Packed_RBC_500);
+    items[] = {"kat_PackedRBCIV_500"};
+    displayNameProgress = CSTRING(Transfusing_Packed_RBC);
+    callbackSuccess = "[_medic, _patient, _bodyPart, _className, _itemUser, _usedItem] call ace_medical_treatment_fnc_ivBag; [_patient, -400, 12, _className] call kat_pharma_fnc_fluid;";
+};
+class PackedRBC_250: BloodIV {
+    displayName = CSTRING(Actions_Packed_RBC_250);
+    items[] = {"kat_PackedRBCIV_250"};
+    displayNameProgress = CSTRING(Transfusing_Packed_RBC);
+    callbackSuccess = "[_medic, _patient, _bodyPart, _className, _itemUser, _usedItem] call ace_medical_treatment_fnc_ivBag; [_patient, -200, 6, _className] call kat_pharma_fnc_fluid;";
+};
+class RingersLactateIV: SalineIV {
+    displayName = CSTRING(Actions_Ringers_Lactate);
+    items[] = {"kat_RingersLactateIV"};
+    displayNameProgress = CSTRING(Transfusing_Ringers_Lactate);
+    callbackSuccess = "[_medic, _patient, _bodyPart, _className, _itemUser, _usedItem] call ace_medical_treatment_fnc_ivBag; [_patient, -200, 0, _className] call kat_pharma_fnc_fluid;";
+};
+class RingersLactateIV_500: SalineIV {
+    displayName = CSTRING(Actions_Ringers_Lactate_500);
+    items[] = {"kat_RingersLactateIV_500"};
+    displayNameProgress = CSTRING(Transfusing_Ringers_Lactate);
+    callbackSuccess = "[_medic, _patient, _bodyPart, _className, _itemUser, _usedItem] call ace_medical_treatment_fnc_ivBag; [_patient, -100, 0, _className] call kat_pharma_fnc_fluid;";
+};
+class RingersLactateIV_250: SalineIV {
+    displayName = CSTRING(Actions_Ringers_Lactate_250);
+    items[] = {"kat_RingersLactateIV_250"};
+    displayNameProgress = CSTRING(Transfusing_Ringers_Lactate);
+    callbackSuccess = "[_medic, _patient, _bodyPart, _className, _itemUser, _usedItem] call ace_medical_treatment_fnc_ivBag; [_patient, -50, 0, _className] call kat_pharma_fnc_fluid;";
+};
+class MorphineIVInfusion: SalineIV {
+    displayName = CSTRING(Actions_MorphineIVInfusion);
+    items[] = {"kat_MorphineIVInfusion"};
+    displayNameProgress = CSTRING(Transfusing_Morphine_Infusion);
+    callbackSuccess = "[_medic, _patient, _bodyPart, _className, _itemUser, _usedItem] call ace_medical_treatment_fnc_ivBag; [_patient, 150, 0, _className] call kat_pharma_fnc_fluid;";
+};
+class EpinephrineIVInfusion: SalineIV {
+    displayName = CSTRING(Actions_EpinephrineInfusion);
+    items[] = {"kat_EpinephrineIVInfusion"};
+    displayNameProgress = CSTRING(Transfusing_Epinephrine_Infusion);
+    callbackSuccess = "[_medic, _patient, _bodyPart, _className, _itemUser, _usedItem] call ace_medical_treatment_fnc_ivBag; [_patient, 150, 0, _className] call kat_pharma_fnc_fluid;";
+};
+class EtomidateIVInfusion: SalineIV {
+    displayName = CSTRING(Actions_EtomidateInfusion);
+    items[] = {"kat_EtomidateInfusion"};
+    displayNameProgress = CSTRING(Transfusing_Etomidate_Infusion);
+    callbackSuccess = "[_medic, _patient, _bodyPart, _className, _itemUser, _usedItem] call ace_medical_treatment_fnc_ivBag; [_patient, 150, 0, _className] call kat_pharma_fnc_fluid;";
 };

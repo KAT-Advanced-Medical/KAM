@@ -3301,5 +3301,110 @@
             <Dutch>Tamponade progressie kans</Dutch>
             <Italian>Probabilità di progressione della tamponade</Italian>
         </Key>
+        <Key ID="STR_KAT_Circulation_Actions_Packed_RBC_250">
+            <English>Give Packed RBC IV (250ml)</English>
+        </Key>
+        <Key ID="STR_KAT_Circulation_Actions_Packed_RBC_500">
+            <English>Give Packed RBC IV (500ml)</English>
+        </Key>
+        <Key ID="STR_KAT_Circulation_Actions_Ringers_Lactate">
+            <English>Give Ringers Lactate IV (1000ml)</English>
+        </Key>
+        <Key ID="STR_KAT_Circulation_Actions_Ringers_Lactate_250">
+            <English>Give Ringers Lactate IV (250ml)</English>
+        </Key>
+        <Key ID="STR_KAT_Circulation_Actions_Ringers_Lactate_500">
+            <English>Give Ringers Lactate IV (500ml)</English>
+        </Key>
+        <Key ID="STR_KAT_Circulation_receivingPacked_RBCIvVolume">
+            <English>Receiving Packed RBC IV [%1ml]</English>
+        </Key>
+        <Key ID="STR_KAT_Circulation_receivingRingers_LactateIvVolume">
+            <English>Receiving Ringers Lactate IV [%1ml]</English>
+        </Key>
+        <Key ID="STR_KAT_Circulation_Transfusing_Packed_RBC">
+            <English>Transfusing Packed RBC...</English>
+        </Key>
+        <Key ID="STR_KAT_Circulation_Transfusing_Ringers_Lactate">
+            <English>Transfusing Ringers Lactate...</English>
+        </Key>
+        <Key ID="STR_KAT_Circulation_Transfuse_Packed_RBC">
+            <English>Transfuse Packed RBC</English>
+        </Key>
+        <Key ID="STR_KAT_Circulation_Transfuse_Ringers_Lactate">
+            <English>Transfuse Ringers Lactate</English>
+        </Key>
+        <Key ID="STR_KAT_Circulation_Ringers_Lactate_IV">
+            <English>Ringers Lactate IV (1000ml)</English>
+        </Key>
+        <Key ID="STR_KAT_Circulation_Ringers_Lactate_IV_250">
+            <English>Ringers Lactate IV (250ml)</English>
+        </Key>
+        <Key ID="STR_KAT_Circulation_Ringers_Lactate_IV_500">
+            <English>Ringers Lactate IV (500ml)</English>
+        </Key>
+        <Key ID="STR_KAT_Circulation_Ringers_Lactate_IV_Desc_Short">
+            <English>Ringers Lactate IV, for restoring a patients fluids</English>
+        </Key>
+        <Key ID="STR_KAT_Circulation_Ringers_Lactate_IV_Desc_Use">
+            <English>A medical volume-replenishing agent introduced into the blood system through an IV infusion.</English>
+        </Key>
+        <Key ID="STR_KAT_Circulation_Packed_RBC_IV_250">
+            <English>Packed RBC IV (250ml)</English>
+        </Key>
+        <Key ID="STR_KAT_Circulation_Packed_RBC_IV_500">
+            <English>Packed RBC IV (500ml)</English>
+        </Key>
+        <Key ID="STR_KAT_Circulation_Packed_RBC_IV_Desc_Short">
+            <English>Packed Red Blood Cells, for restoring a patients blood in conjunction with plasma</English>
+        </Key>
+        <Key ID="STR_KAT_Circulation_Packed_RBC_IV_Desc_Use">
+            <English>O Negative infusion blood used in strict and rare events to replenish blood supply usually conducted in the transport phase of medical care.</English>
+        </Key>
+        <Key ID="STR_KAT_Circulation_Morphine_Infusion">
+            <English>Morphine Infusion IV (250ml)</English>
+        </Key>
+        <Key ID="STR_KAT_Circulation_Morphine_Infusion_Desc_Short">
+            <English>Morphine Infusion IV, for management of pain</English>
+        </Key>
+        <Key ID="STR_KAT_Circulation_Morphine_Infusion_Desc_Use">
+            <English>A Infusion of Morphine and Saline introduced into the blood system through an IV.</English>
+        </Key>
+        <Key ID="STR_KAT_Circulation_Epinephrine_Infusion">
+            <English>Epinephrine Infusion IV (250ml)</English>
+        </Key>
+        <Key ID="STR_KAT_Circulation_Epinephrine_Infusion_Desc_Short">
+            <English>Epinephrine Infusion IV, for management of blood pressure</English>
+        </Key>
+        <Key ID="STR_KAT_Circulation_Epinephrine_Infusion_Desc_Use">
+            <English>A Infusion of Epinephrine and Saline introduced into the blood system through an IV.</English>
+        </Key>
+        <Key ID="STR_KAT_Circulation_Etomidate_Infusion">
+            <English>Etomidate Infusion IV (250ml)</English>
+        </Key>
+        <Key ID="STR_KAT_Circulation_Etomidate_Infusion_Desc_Short">
+            <English>Etomidate Infusion IV, for management of pain and sedation during surgery</English>
+        </Key>
+        <Key ID="STR_KAT_Circulation_Etomidate_Infusion_Desc_Use">
+            <English>A Infusion of Etomidate and Saline introduced into the blood system through an IV.</English>
+        </Key>
+        <Key ID="STR_KAT_Circulation_Actions_MorphineIVInfusion">
+            <English>Transfuse Morphine Infusion</English>
+        </Key>
+        <Key ID="STR_KAT_Circulation_Transfusing_Morphine_Infusion">
+            <English>Transfusing Morphine Infusion...</English>
+        </Key>
+        <Key ID="STR_KAT_Circulation_Actions_EpinephrineInfusion">
+            <English>Transfuse Epinephrine Infusion</English>
+        </Key>
+        <Key ID="STR_KAT_Circulation_Transfusing_Epinephrine_Infusion">
+            <English>Transfusing Epinephrine Infusion...</English>
+        </Key>
+        <Key ID="STR_KAT_Circulation_Actions_EtomidateInfusion">
+            <English>Transfuse Etomidate Infusion</English>
+        </Key>
+        <Key ID="STR_KAT_Circulation_Transfusing_Etomidate_Infusion">
+            <English>Transfusing Etomidate Infusion...</English>
+        </Key>
     </Package>
 </Project>

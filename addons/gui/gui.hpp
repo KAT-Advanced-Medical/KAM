@@ -797,6 +797,12 @@ class ACE_Medical_Menu {
                 {
                     text = CSTRING(DoseHigh);
                     value = 3;
+                    
+                };
+                class Infusion
+                {
+                    text = CSTRING(Infusion);
+                    value = 4;
                     };
                 };
             };
