@@ -35,7 +35,7 @@ PREP_RECOMPILE_END;
 [
     QGVAR(gasMaskSoundVolume),
     "SLIDER",
-    [LLSTRING(SETTING_stethoscopeSoundVolume), LLSTRING(SETTING_stethoscopeSoundVolume_DESC)],
+    [LLSTRING(SETTING_gasMaskSoundVolume), LLSTRING(SETTING_gasMaskSoundVolume_DESC)],
     CBA_SETTINGS_CHEM,
     [0, 2, 1, 1],
     2,
@@ -52,6 +52,16 @@ PREP_RECOMPILE_END;
     [LLSTRING(SETTING_dropWeaponChance), LLSTRING(SETTING_dropWeaponChance_DESC)],
     CBA_SETTINGS_CHEM,
     [0, 1, 0, 2, true],
+    true
+] call CBA_Settings_fnc_init;
+
+// Infection time
+[
+    QGVAR(infectionTime),
+    "TIME",
+    [LLSTRING(SETTING_infectionTime), LLSTRING(SETTING_infectionTime_DESC)],
+    CBA_SETTINGS_CHEM,
+    [0, 3600, 60],
     true
 ] call CBA_Settings_fnc_init;
 ADDON = true;

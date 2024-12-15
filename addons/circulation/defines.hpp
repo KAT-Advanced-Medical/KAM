@@ -9,7 +9,7 @@
 #define KAT_pxToScreen_W(X) (X / 2048 * KAT_GUI_GRID_W)
 #define KAT_pxToScreen_H(X) (X / 2048 * KAT_GUI_GRID_H)
 
-#define KAT_GRID_H ((((safezoneW / safezoneH) min 1.2) / 1.2) / 22)
+#define KAT_GRID_H ((((safeZoneW / safeZoneH) min 1.2) / 1.2) / 22)
 
 #define IDC_AEDX_MONITOR            70000
 #define IDC_EKG_SLIDER              70010

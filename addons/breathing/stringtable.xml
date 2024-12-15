@@ -36,7 +36,7 @@
             <Turkish>Ölümcül SpO2 değeri</Turkish>
             <Italian>Valore letale di SpO2</Italian>
             <Russian>Смертельное значение SpO2</Russian>
-            <Japanese>SpO2の致命値</Japanese>
+            <Japanese>致死に至るSpO2値</Japanese>
             <Portuguese>Valor letal de SpO2</Portuguese>
             <Finnish>Tappava SpO2-arvo</Finnish>
             <Dutch>Dodelijke SpO2 waarde</Dutch>
@@ -54,7 +54,7 @@
             <Turkish>Ölümcül SpO2 değerini etkinleştir</Turkish>
             <Italian>Attivare il valore letale di SpO2</Italian>
             <Russian>Активировать летальное значение SpO2</Russian>
-            <Japanese>SpO2の致命値を有効化</Japanese>
+            <Japanese>SpO2値による致死を有効化</Japanese>
             <Portuguese>Ativar o valor letal de SpO2</Portuguese>
             <Finnish>Aktivoi tappava SpO2-arvo</Finnish>
             <Dutch>Activeer dodelijke SpO2 waarde</Dutch>
@@ -63,7 +63,7 @@
             <English>Cardiac arrest SpO2 value</English>
             <Russian>Значение SpO2 при остановке сердца</Russian>
             <Spanish>Valor de SpO2 de parada cardíaca</Spanish>
-            <Japanese>SpO2の心停止値</Japanese>
+            <Japanese>心停止に至るSpO2値</Japanese>
             <French>Valeur d'arrêt cardiaque de la SpO2</French>
             <Portuguese>Valor de SpO2 para parada cardíaca</Portuguese>
             <Dutch>Hartstilstand SpO2 waarde</Dutch>
@@ -73,7 +73,7 @@
             <English>Activate cardiac arrest SpO2 value</English>
             <Russian>Активируйте значение SpO2 при остановке сердца</Russian>
             <Spanish>Activar parada cardíaca por valor de SpO2</Spanish>
-            <Japanese>SpO2の心停止値を有効化</Japanese>
+            <Japanese>SpO2値による心停止を有効化</Japanese>
             <French>Activer la valeur d'arrêt cardique de la SpO2</French>
             <Portuguese>Ativar parada cardíaca por valor de SpO2</Portuguese>
             <Dutch>Activeer hartstilstand SpO2 waarde</Dutch>
@@ -146,11 +146,13 @@
             <English>Enable PaCO2</English>
             <Japanese>PaCO2を有効化</Japanese>
             <Italian>Abilitare PaCO2</Italian>
+            <French>Activation de la PaCO2</French>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_PACO2_ENABLE_DESC">
             <English>Enables PaCO2 movement and effects on ph and breathing rate</English>
             <Japanese>phや呼吸速度へ影響を与えるPaCO2(動脈血二酸化炭素分圧)の変動を有効にします</Japanese>
             <Italian>Abilita il movimento di PaCO2 e gli effetti su pH e frequenza respiratoria</Italian>
+            <French>Permet le déplacement de la PaCO2 et les effets sur le pH et la fréquence respiratoire</French>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_pneumothorax">
             <English>Probability for a pneumothorax</English>
@@ -2020,9 +2022,11 @@
         </Key>
         <Key ID="STR_KAT_Breathing_PersonalOxygen_Display">
             <English>Personal Oxygen Tank</English>
+            <Japanese>個人用酸素ボンベ</Japanese>
         </Key>
         <Key ID="STR_KAT_Breathing_PersonalOxygen_Desc_Short">
             <English>Personal oxygen tank for high altitude operations</English>
+            <Japanese>高高度作戦に用いる個人用酸素ボンベ</Japanese>
         </Key>
         <Key ID="STR_KAT_Breathing_PortableOxygenTank_150_Empty_Display">
             <English>Empty Portable Oxygen Tank (150L)</English>
@@ -2731,47 +2735,63 @@
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_enableCheckBreathing">
             <English>Enable Check Breathing</English>
+            <French>Activer le contrôle de la respiration</French>
             <Italian>Abilitare il controllo della respirazione</Italian>
+            <Japanese>"呼吸を確認"を有効化</Japanese>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_enableCheckBreathing_DESC">
             <English>Whether or not Check Breathing medical action is enabled</English>
             <Italian>Se l'azione medica di controllo della respirazione è abilitata o meno</Italian>
+            <French>Si "Contrôle de la respiration" est activée ou non</French>
+            <Japanese>呼吸を確認のアクションを可能にするかどうかを設定します</Japanese>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_AVAIL_OXYMASK">
             <English>Available Oxygen Masks</English>
+            <Japanese>使用可能な酸素マスク</Japanese>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_AVAIL_OXYMASK_DISC">
             <English>Sets which goggles can act as oxygen masks</English>
+            <Japanese>酸素マスクとして動作させたいゴーグルを指定します</Japanese>
         </Key>
         <Key ID="STR_KAT_Breathing_AttachPersonalOxygenTank">
             <English>Connect Personal Oxygen</English>
+            <Japanese>個人用酸素供給機に接続</Japanese>
         </Key>
         <Key ID="STR_KAT_Breathing_RemovePersonalOxygenTank">
             <English>Disconnect Personal Oxygen</English>
+            <Japanese>個人用酸素供給機を切断</Japanese>
         </Key>
         <Key ID="STR_KAT_Breathing_CheckPersonalOxygenTank">
             <English>Check Personal Oxygen Status</English>
+            <Japanese>個人用酸素供給機の状態を確認</Japanese>
         </Key>
         <Key ID="STR_KAT_Breathing_PersonalOxygen_Remaining">
             <English>Minutes Remaining</English>
+            <Japanese>分残っています</Japanese>
         </Key>
         <Key ID="STR_KAT_Breathing_PersonalOxygen_Empty">
             <English>Oxygen Tank Empty</English>
+            <Japanese>酸素ボンベは空です</Japanese>
         </Key>
         <Key ID="STR_KAT_Breathing_AttachOxygenVehicle">
             <English>Connect to Aircraft Oxygen</English>
+            <Japanese>航空機酸素供給機に接続</Japanese>
         </Key>
         <Key ID="STR_KAT_Breathing_VehicleOxygen_Affirm">
             <English>Attached to Aircraft Oxygen</English>
+            <Japanese>航空機酸素供給機に接続済</Japanese>
         </Key>
         <Key ID="STR_KAT_Breathing_PersonalOxygen_Affirm">
             <English>Oxygen already connected</English>
+            <Japanese>既に酸素供給機に接続済です</Japanese>
         </Key>
         <Key ID="STR_KAT_Breathing_PersonalOxygen_Disconnect">
             <English>Oxygen tank disconnected</English>
+            <Japanese>酸素供給機から切断しました</Japanese>
         </Key>
         <Key ID="STR_KAT_Breathing_Remove_OxyMask">
             <English>Remove Oxygen Mask</English>
+            <Japanese>酸素マスクを取り外す</Japanese>
         </Key>
     </Package>
 </Project>

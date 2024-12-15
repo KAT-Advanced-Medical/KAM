@@ -529,6 +529,7 @@
             <Spanish>Cerrar Incisión</Spanish>
             <Japanese>切開口を閉じる</Japanese>
             <Italian>Chiudere incisione</Italian>
+            <French>Fermer l'incision</French>
         </Key>
         <Key ID="STR_KAT_Surgery_Plate_Display">
             <English>Bone Plate</English>

@@ -27,7 +27,7 @@ PREP_RECOMPILE_END;
     "'G_AirPurifyingRespirator_01_F'",
     1,
     {
-        private _array = [_this, "CfgGlasses"] call FUNC(getList);
+        private _array = [_this, "CfgGlasses"] call EFUNC(chemical,getList);
         missionNamespace setVariable [QGVAR(availOxyMaskList), _array, true];
     },
     true
