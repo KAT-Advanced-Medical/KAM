@@ -134,12 +134,12 @@ if (_maxRelief > 0) then {
 };
 if (GVAR(AMS_Enabled)) then {
     private _medicationParts = (_className splitString "_");
-    TRACE_1("ClassName being processed:", _className);
-    TRACE_1("SplitString result for _className:", _medicationParts);
+    TRACE_1("ClassName being processed:",_className);
+    TRACE_1("SplitString result for _className:",_medicationParts);
     if (count _medicationParts > 3) then {
         private _medicationName = _medicationParts select 1;
-        TRACE_6("adjustments1",_patient, _medicationName, _timeTillMaxEffect, _timeInSystem, _heartRateChange, _painReduce);
-        TRACE_7("adjustments2",_viscosityChange, _dose, _alphaFactor, _opioidRelief, _opioidEffect, _opioidDepression, _respiratoryRate);
+        TRACE_6("adjustments1",_patient,_medicationName,_timeTillMaxEffect,_timeInSystem,_heartRateChange,_painReduce);
+        TRACE_7("adjustments2",_viscosityChange,_dose _alphaFactor,_opioidRelief,_opioidEffect,_opioidDepression,_respiratoryRate);
         [_patient, _medicationName, _timeTillMaxEffect, _timeInSystem, _heartRateChange, _painReduce, _viscosityChange, _dose, _alphaFactor, _opioidRelief, _opioidEffect, _opioidDepression, _respiratoryRate] call EFUNC(vitals,addMedicationAdjustment);
         [_patient, _medicationName, _incompatibleMedication] call FUNC(onMedicationUsage);
     } else {
@@ -148,8 +148,8 @@ if (GVAR(AMS_Enabled)) then {
     }
     
 } else {       
-    TRACE_6("adjustments1",_patient, _medicationName, _timeTillMaxEffect, _timeInSystem, _heartRateChange, _painReduce);
-    TRACE_7("adjustments2",_viscosityChange, _dose, _alphaFactor, _opioidRelief, _opioidEffect, _opioidDepression, _respiratoryRate);
+    TRACE_6("adjustments1",_patient,_medicationName,_timeTillMaxEffect,_timeInSystem,_heartRateChange,_painReduce);
+    TRACE_7("adjustments2",_viscosityChange,_dose _alphaFactor,_opioidRelief,_opioidEffect,_opioidDepression,_respiratoryRate);
     [_patient, _className, _timeTillMaxEffect, _timeInSystem, _heartRateChange, _painReduce, _viscosityChange, _dose, _alphaFactor, _opioidRelief, _opioidEffect, _opioidDepression, _respiratoryRate] call EFUNC(vitals,addMedicationAdjustment);
     [_patient, _className, _incompatibleMedication] call FUNC(onMedicationUsage);
 };
