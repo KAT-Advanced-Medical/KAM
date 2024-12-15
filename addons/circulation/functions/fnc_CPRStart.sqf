@@ -22,6 +22,9 @@ _patient setVariable [QACEGVAR(medical,CPR_provider), _medic, true];
 _medic setVariable [QGVAR(isPerformingCPR), true, true];
 
 GVAR(CPRTarget) = _patient;
+GVAR(CPRProvider) = _medic;
+GVAR(CPRDisplayActive) = false;
+GVAR(PulseOxDisplay) = false;
 
 GVAR(CPRCancel_EscapeID) = [0x01, [false, false, false], {
     GVAR(CPRTarget) setVariable [QACEGVAR(medical,CPR_provider), objNull, true];
@@ -29,6 +32,17 @@ GVAR(CPRCancel_EscapeID) = [0x01, [false, false, false], {
 
 GVAR(CPRCancel_MouseID) = [0xF0, [false, false, false], {
     GVAR(CPRTarget) setVariable [QACEGVAR(medical,CPR_provider), objNull, true];
+}, "keydown", "", false, 0] call CBA_fnc_addKeyHandler;
+
+GVAR(CPRDevice_Iterate) = [0xF1, [false, false, false], {
+    private _deviceCode = GVAR(CPRTarget) getVariable [QGVAR(deviceCode), 0];
+    _deviceCode = [(_deviceCode + 1), 1] select (_deviceCode == 2);
+    private _deviceArray = [true,(GVAR(CPRTarget) getVariable [QEGVAR(breathing,pulseoximeter), false]),((GVAR(CPRTarget) getVariable [QGVAR(AED_X_VitalsMonitor_Connected), false]) || (GVAR(CPRTarget) getVariable [QGVAR(DefibrillatorPads_Connected), false]))];
+        while { !(_deviceArray select _deviceCode) } do {
+            _deviceCode = [0, (_deviceCode + 1)] select (_deviceCode < 2);
+        };
+    GVAR(CPRTarget) setVariable [QGVAR(deviceCode), _deviceCode, true];
+    true
 }, "keydown", "", false, 0] call CBA_fnc_addKeyHandler;
 
 private _CPRStartTime = CBA_missionTime + 2.5;
@@ -48,9 +62,55 @@ if (_notInVehicle) then {
 };
 
 [{
+    params ["_args", "_idPFH"];
+    _args params ["_medic", "_patient"];
+
+    private _deviceCode = _patient getVariable [QGVAR(deviceCode), 0];
+
+    if ((_patient getVariable [QACEGVAR(medical,CPR_provider), objNull]) isEqualTo objNull) exitWith {
+        [_idPFH] call CBA_fnc_removePerFrameHandler;
+        GVAR(CPRDisplayActive) = false;
+        GVAR(PulseOxDisplay) = false;
+
+        "CPR_MONITOR" cutText ["", "PLAIN",0,true];
+        _patient setVariable [QGVAR(deviceCode), 0, true];
+    };
+    
+    switch (true) do {
+        case (_deviceCode == 2): {
+            if ((_patient getVariable [QGVAR(AED_X_VitalsMonitor_Connected), false]) || (_patient getVariable [QGVAR(DefibrillatorPads_Connected), false])) then {
+                if !(GVAR(CPRDisplayActive)) then {
+                    "CPR_MONITOR" cutText ["", "PLAIN",0,true];
+                    "CPR_MONITOR" cutRsc ["CPR_AED_X", "PLAIN", 0, true];
+                    GVAR(CPRDisplayActive) = true;
+                    [_medic, GVAR(CPRTarget)] call FUNC(AEDX_ViewMonitor_CPR);
+                };
+            } else {
+                "CPR_MONITOR" cutText ["", "PLAIN",0,true];
+                GVAR(CPRDisplayActive) = false;
+            };
+        };
+        case (_deviceCode == 1): { 
+            if ((_patient getVariable [QEGVAR(breathing,pulseoximeter), false])) then {
+                if !(GVAR(PulseOxDisplay)) then {
+                    "CPR_MONITOR" cutText ["", "PLAIN",0,true];
+                    "CPR_MONITOR" cutRsc ["CPR_PulseOx", "PLAIN", 0, true]; 
+                    GVAR(PulseOxDisplay) = true;
+                    [_medic, GVAR(CPRTarget)] call FUNC(PulseOx_ViewMonitor);
+                };
+            } else {
+                "CPR_MONITOR" cutText ["", "PLAIN",0,true];
+                GVAR(PulseOxDisplay) = false;
+            };
+        };
+        case (_deviceCode == 0): { "CPR_MONITOR" cutText ["", "PLAIN"]; GVAR(PulseOxDisplay) = false; GVAR(CPRDisplayActive) = false;};
+    };
+}, 2, [_medic, _patient]] call CBA_fnc_addPerFrameHandler;
+
+[{
     params ["_medic", "_patient", "_notInVehicle", "_CPRStartTime"];
     
-    [LLSTRING(StopCPR), "", ""] call ACEFUNC(interaction,showMouseHint);
+    [LLSTRING(StopCPR), LLSTRING(ChangeCPRDevice), ""] call ACEFUNC(interaction,showMouseHint);
     [LLSTRING(StartCPR), 1.5, _medic] call ACEFUNC(common,displayTextStructured);
 
     [{
@@ -74,6 +134,7 @@ if (_notInVehicle) then {
             [] call ACEFUNC(interaction,hideMouseHint);
             [GVAR(CPRCancel_EscapeID), "keydown"] call CBA_fnc_removeKeyHandler;
             [GVAR(CPRCancel_MouseID), "keydown"] call CBA_fnc_removeKeyHandler;
+            [GVAR(CPRDevice_Iterate), "keydown"] call CBA_fnc_removeKeyHandler;
 
             if (_notInVehicle) then {
                 [_medic, "AinvPknlMstpSnonWnonDnon_medicEnd", 2] call ACEFUNC(common,doAnimation);

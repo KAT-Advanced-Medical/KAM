@@ -65,6 +65,7 @@
             <French>Détérioration du pneumothorax :</French>
             <Portuguese>Deterioração do pneumotórax</Portuguese>
             <Dutch>Verslechterende pneumothorax: </Dutch>
+            <Italian>Il pneumotorace peggiora:</Italian>
         </Key>
         <Key ID="STR_KAT_Zeus_ModuleManageAirway_Hemopneumothorax">
             <English>Hemopneumothorax: </English>
@@ -204,6 +205,7 @@
             <Finnish>Muuta sydämen tilaa</Finnish>
             <Russian>Изменить состояние сердца</Russian>
             <Dutch>Verander cardiale staat</Dutch>
+            <Italian>Cambia stato cardiaco</Italian>
         </Key>
         <Key ID="STR_KAT_Zeus_checkmedical_Module_displayname">
             <English>Open unit medical menu</English>
@@ -253,6 +255,7 @@
             <Finnish>Ventrikulaarinen takykardia: </Finnish>
             <Russian>Желудочковая тахикардия</Russian>
             <Dutch>Ventriculaire tachycardie</Dutch>
+            <Italian>Tachicardia ventricolare</Italian>
         </Key>
         <Key ID="STR_KAT_Zeus_CardiacState_Module_VF">
             <English>Ventricular Fibrillation</English>
@@ -266,6 +269,7 @@
             <Finnish>Kammiovärinä:</Finnish>
             <Russian>Фибрилляция желудочков</Russian>
             <Dutch>Ventriculaire fibrillatie</Dutch>
+            <Italian>Fibrillazione ventricolare</Italian>
         </Key>
         <Key ID="STR_KAT_Zeus_CardiacState_Module_PEA">
             <English>Pulseless Electrical Activity</English>
@@ -279,6 +283,7 @@
             <Finnish>Pulssiton sähköinen toiminta:</Finnish>
             <Russian>Безимпульсная электрическая активность</Russian>
             <Dutch>Polsloze electrische activiteit (PEA)</Dutch>
+            <Italian>Attività elettrica senza polso</Italian>
         </Key>
         <Key ID="STR_KAT_Zeus_CardiacState_Module_Asystole">
             <English>Asystole</English>
@@ -310,6 +315,7 @@
             <Finnish>Yksikön on oltava AI</Finnish>
             <Russian>Юнит должен быть ИИ</Russian>
             <Dutch>Eenheid moet een KI / AI zijn</Dutch>
+            <Italian>L'unità deve essere un'IA</Italian>
         </Key>
         <Key ID="STR_KAT_Zeus_sliderFormat13was23">
             <English>%1%3 (was %2%3)</English>
@@ -341,6 +347,7 @@
             <Finnish>Valitse välitön AI-kuolema</Finnish>
             <Russian>Переключить мгновенную смерть ИИ</Russian>
             <Dutch>Schakel onmiddelijke KI / AI dood om</Dutch>
+            <Italian>Attiva/disattiva la morte istantanea dell'IA</Italian>
         </Key>
         <Key ID="STR_KAT_Zeus_toggleAIDeath_Module_Toggled">
             <English>Instant AI Death %1 for unit</English>
@@ -354,6 +361,7 @@
             <Finnish>Välitön AI-kuolema %1 yksikölle</Finnish>
             <Russian>Мгновенная смерть ИИ %1 для юнита</Russian>
             <Dutch>Onmiddelijke dood voor KI / AI %1 voor eenheid</Dutch>
+            <Italian>Morte istantanea dell'IA %1 per l'unità</Italian>
         </Key>
     </Package>
 </Project>

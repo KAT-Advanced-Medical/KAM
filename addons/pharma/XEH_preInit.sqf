@@ -146,11 +146,47 @@ PREP_RECOMPILE_END;
 ] call CBA_Settings_fnc_init;
 
 [
+    QGVAR(treatmentTime_Apply14IV),
+    "SLIDER",
+    [LLSTRING(treatmentTime_Apply14IV)],
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_ApplyIV)],
+    [0.1, 10, 7, 1],
+    true
+] call CBA_Settings_fnc_init;
+
+[
+    QGVAR(treatmentTime_Apply20IV),
+    "SLIDER",
+    [LLSTRING(treatmentTime_Apply20IV)],
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_ApplyIV)],
+    [0.1, 10, 7, 1],
+    true
+] call CBA_Settings_fnc_init;
+
+[
     QGVAR(ivCheckLimbDamage),
     "CHECKBOX",
     [LLSTRING(SETTING_ivCheckLimbDamage), LLSTRING(SETTING_ivCheckLimbDamage_DESC)],
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_ApplyIV)],
     [false],
+    true
+] call CBA_Settings_fnc_init;
+
+[
+    QGVAR(medLvl_SalineFlush),
+    "LIST",
+    [LLSTRING(medLvl_SalineFlush), LLSTRING(medLvl_SalineFlush_Desc)],
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_ApplyIV)],
+    [[0, 1, 2], [ACELSTRING(medical_treatment,Anyone), ACELSTRING(medical_treatment,Medics), ACELSTRING(medical_treatment,Doctors)], 0],
+    true
+] call CBA_Settings_fnc_init;
+
+[
+    QGVAR(treatmentTime_SalineFlush),
+    "SLIDER",
+    [LLSTRING(treatmentTime_SalineFlush)],
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_ApplyIV)],
+    [0.1, 10, 7, 1],
     true
 ] call CBA_Settings_fnc_init;
 

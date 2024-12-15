@@ -4,13 +4,4 @@ workshop = [
     "463939057", # ACE3's Workshop ID
     "2369477168", # Advanced Developer Tools's Workshop ID
     "1779063631", # ZEN
-    "1645973522",
-    "1652506957",
-]
-parameters = [
-    "-skipIntro",
-    "-noSplash",
-    "-showScriptErrors",
-    "-debug",
-    "-filePatching",
 ]

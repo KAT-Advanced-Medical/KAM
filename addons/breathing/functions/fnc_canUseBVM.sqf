@@ -17,4 +17,4 @@
 
 params ["_patient"];
 
-!(_patient call ACEFUNC(common,isAwake)) && !(_patient getVariable [QGVAR(BVMInUse), false] && {["",_patient] call ACEFUNC(medical_treatment,canCPR)});
+!(_patient call ACEFUNC(common,isAwake)) && !(_patient getVariable [QGVAR(BVMInUse), false] && {["",_patient] call ACEFUNC(medical_treatment,canCPR)} && !(_patient getVariable [QGVAR(oxygenMaskActive), false]));

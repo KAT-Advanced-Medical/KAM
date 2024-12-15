@@ -817,4 +817,15 @@ class CfgWeapons {
             mass = 1;
         };
     };
+    class kat_syringe_salineIV_5ml_3: ACE_ItemCore {
+        scope = 1;
+        displayName = CSTRING(Syringe_SalineFlush_Display);
+        picture = QPATHTOF(ui\syringe_item.paa);
+        model = "\A3\Structures_F_EPA\Items\Medical\Painkillers_F.p3d";
+        descriptionShort = CSTRING(Syringe_SalineFlush_DescShort);
+        ACE_isMedicalItem = 1;
+        class ItemInfo: CBA_MiscItem_ItemInfo {
+            mass = 1;
+        };
+    };
 };

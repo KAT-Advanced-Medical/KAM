@@ -78,12 +78,13 @@ if (HAS_TOURNIQUET_APPLIED_ON(_patient,_partIndex)) exitWith {
 private _defaultConfig = configFile >> QUOTE(ACE_ADDON(Medical_Treatment)) >> "Medication";
 private _medicationConfig = _defaultConfig >> _classname;
 
-private _bloodloss = (GET_BODY_FLUID(unit) select 4);
-private _maxbloodloss = 1;
-private _minbloodloss = 6000;
-private _minDrugMult = 1;
+// Get and calculate medication modifiers
+private _bloodloss = (GET_BODY_FLUID(_patient) select 4);
+private _maxBloodloss = 1;
+private _minBloodloss = 6000;
+private _minBloodMult = 1;
 private _maxDrugMult = 2;
-private _drugMult = _minDrugMult + ((_bloodloss - _maxbloodloss) / (_minbloodloss - _maxbloodloss)) * (_maxDrugMult - _minDrugMult);
+private _bloodMult = _minBloodMult + ((_bloodloss - _maxBloodloss) / (_minBloodloss - _maxBloodloss)) * (_maxBloodMult - _minBloodMult);
 
 private _maxHR = 160;
 private _minHR = 1;
@@ -91,22 +92,33 @@ private _minHRMult = 0.1;
 private _maxHRMult = 1.6;
 private _hrMult = _minHRMult + ((_heartRate - _maxHR) / (_minHR - _maxHR)) * (_maxHRMult - _minHRMult);
 
+private _bloodPressure = (GET_BLOOD_PRESSURE(_patient) select 1);
+private _maxBP= 160;
+private _minBP = 40;
+private _minBPMult = 0.5;
+private _maxBPMult = 1.6;
+private _BPMult = _minBPMult + ((_bloodPressure - _maxBP) / (_minBP - _maxBP)) * (_maxBPMult - _minBPMult);
 
-private _painReduce             = GET_NUMBER(_medicationConfig >> "painReduce",getNumber (_defaultConfig >> "painReduce")) / _drugMult;
-private _timeInSystem           = GET_NUMBER(_medicationConfig >> "timeInSystem",getNumber (_defaultConfig >> "timeInSystem")) * _drugMult;
-private _timeTillMaxEffect      = GET_NUMBER(_medicationConfig >> "timeTillMaxEffect",getNumber (_defaultConfig >> "timeTillMaxEffect")) * _hrMult;
-private _viscosityChange        = GET_NUMBER(_medicationConfig >> "viscosityChange",getNumber (_defaultConfig >> "viscosityChange")) * _drugMult;
-private _alphaFactor            = GET_NUMBER(_medicationConfig >> "alphaFactor",getNumber (_defaultConfig >> "alphaFactor")) * _drugMult;
-private _opioidRelief           = GET_NUMBER(_medicationConfig >> "opioidRelief",getNumber (_defaultConfig >> "opioidRelief")) * _drugMult;
-private _opioidEffect           = GET_NUMBER(_medicationConfig >> "opioidEffect",getNumber (_defaultConfig >> "opioidEffect")) * _drugMult;
-private _respiratoryRate        = GET_NUMBER(_medicationConfig >> "respiratoryRate",getNumber (_defaultConfig >> "respiratoryRate")) * _drugMult;
-private _opioidDepression       = GET_NUMBER(_medicationConfig >> "opioidDepression",getNumber (_defaultConfig >> "opioidDepression")) * _drugMult;
-private _hrIncreaseLow          = GET_ARRAY(_medicationConfig >> "hrIncreaseLow",getArray (_defaultConfig >> "hrIncreaseLow")) apply { _x * _drugMult };
-private _hrIncreaseNormal       = GET_ARRAY(_medicationConfig >> "hrIncreaseNormal",getArray (_defaultConfig >> "hrIncreaseNormal")) apply { _x * _drugMult };
-private _hrIncreaseHigh         = GET_ARRAY(_medicationConfig >> "hrIncreaseHigh",getArray (_defaultConfig >> "hrIncreaseHigh")) apply { _x * _drugMult };
+private _alphaAction = GET_VASOCONSTRICTION(_patient);
+
+Private _drugMult = (((_BPMult * _hrMult * _bloodMult * _alphaAction) min 2.5) max 0.2);
+
+private _painReduce             = GET_NUMBER(_medicationConfig >> "painReduce",getNumber (_defaultConfig >> "painReduce"));
+private _timeInSystem           = GET_NUMBER(_medicationConfig >> "timeInSystem",getNumber (_defaultConfig >> "timeInSystem"));
+private _timeTillMaxEffect      = GET_NUMBER(_medicationConfig >> "timeTillMaxEffect",getNumber (_defaultConfig >> "timeTillMaxEffect"));
+private _viscosityChange        = GET_NUMBER(_medicationConfig >> "viscosityChange",getNumber (_defaultConfig >> "viscosityChange"));
+private _alphaFactor            = GET_NUMBER(_medicationConfig >> "alphaFactor",getNumber (_defaultConfig >> "alphaFactor"));
+private _opioidRelief           = GET_NUMBER(_medicationConfig >> "opioidRelief",getNumber (_defaultConfig >> "opioidRelief"));
+private _opioidEffect           = GET_NUMBER(_medicationConfig >> "opioidEffect",getNumber (_defaultConfig >> "opioidEffect"));
+private _respiratoryRate        = GET_NUMBER(_medicationConfig >> "respiratoryRate",getNumber (_defaultConfig >> "respiratoryRate"));
+private _opioidDepression       = GET_NUMBER(_medicationConfig >> "opioidDepression",getNumber (_defaultConfig >> "opioidDepression"));
+private _hrIncreaseLow          = GET_ARRAY(_medicationConfig >> "hrIncreaseLow",getArray (_defaultConfig >> "hrIncreaseLow"));
+private _hrIncreaseNormal       = GET_ARRAY(_medicationConfig >> "hrIncreaseNormal",getArray (_defaultConfig >> "hrIncreaseNormal"));
+private _hrIncreaseHigh         = GET_ARRAY(_medicationConfig >> "hrIncreaseHigh",getArray (_defaultConfig >> "hrIncreaseHigh"));
 private _incompatibleMedication = GET_ARRAY(_medicationConfig >> "incompatibleMedication",getArray (_defaultConfig >> "incompatibleMedication"));
 private _maxRelief              = GET_NUMBER(_medicationConfig >> "maxRelief",getNumber (_defaultConfig >> "maxRelief"));
 private _dose                   = GET_NUMBER(_medicationConfig >> "dose",getNumber (_defaultConfig >> "dose"));
+
 
 private _heartRate = GET_HEART_RATE(_patient);
 private _hrIncrease = [_hrIncreaseLow, _hrIncreaseNormal, _hrIncreaseHigh] select (floor ((0 max _heartRate min 110) / 55));
@@ -122,19 +134,24 @@ if (_maxRelief > 0) then {
 };
 if (GVAR(AMS_Enabled)) then {
     private _medicationParts = (_className splitString "_");
-
+    TRACE_1("ClassName being processed:", _className);
+    TRACE_1("SplitString result for _className:", _medicationParts);
     if (count _medicationParts > 3) then {
-        _medicationName = (_medicationParts select 0) + "_" + (_medicationParts select 1);
-    };
-    TRACE_3("adjustments",_heartRateChange,_painReduce,_viscosityChange);
-    [_patient, _medicationName, _timeTillMaxEffect, _timeInSystem, _heartRateChange, _painReduce, _viscosityChange, _dose, _alphaFactor, _opioidRelief, _opioidEffect, _opioidDepression, _respiratoryRate] call EFUNC(vitals,addMedicationAdjustment);
-
-    [_patient, _medicationName, _incompatibleMedication] call ACEFUNC(medical_treatment,onMedicationUsage);
-} else {       
-    TRACE_3("adjustments",_heartRateChange,_painReduce,_viscosityChange);
-    [_patient, _className, _timeTillMaxEffect, _timeInSystem, _heartRateChange, _painReduce, _viscosityChange, _dose, _alphaFactor, _opioidRelief, _opioidEffect, _opioidDepression, _respiratoryRate] call EFUNC(vitals,addMedicationAdjustment);
+        private _medicationName = _medicationParts select 1;
+        TRACE_6("adjustments1",_patient, _medicationName, _timeTillMaxEffect, _timeInSystem, _heartRateChange, _painReduce);
+        TRACE_7("adjustments2",_viscosityChange, _dose, _alphaFactor, _opioidRelief, _opioidEffect, _opioidDepression, _respiratoryRate);
+        [_patient, _medicationName, _timeTillMaxEffect, _timeInSystem, _heartRateChange, _painReduce, _viscosityChange, _dose, _alphaFactor, _opioidRelief, _opioidEffect, _opioidDepression, _respiratoryRate] call EFUNC(vitals,addMedicationAdjustment);
+        [_patient, _medicationName, _incompatibleMedication] call FUNC(onMedicationUsage);
+    } else {
+        [_patient, _className, _timeTillMaxEffect, _timeInSystem, _heartRateChange, _painReduce, _viscosityChange, _dose, _alphaFactor, _opioidRelief, _opioidEffect, _opioidDepression, _respiratoryRate] call EFUNC(vitals,addMedicationAdjustment);
+        [_patient, _className, _incompatibleMedication] call FUNC(onMedicationUsage);
+    }
     
-    [_patient, _className, _incompatibleMedication] call ACEFUNC(medical_treatment,onMedicationUsage);
+} else {       
+    TRACE_6("adjustments1",_patient, _medicationName, _timeTillMaxEffect, _timeInSystem, _heartRateChange, _painReduce);
+    TRACE_7("adjustments2",_viscosityChange, _dose, _alphaFactor, _opioidRelief, _opioidEffect, _opioidDepression, _respiratoryRate);
+    [_patient, _className, _timeTillMaxEffect, _timeInSystem, _heartRateChange, _painReduce, _viscosityChange, _dose, _alphaFactor, _opioidRelief, _opioidEffect, _opioidDepression, _respiratoryRate] call EFUNC(vitals,addMedicationAdjustment);
+    [_patient, _className, _incompatibleMedication] call FUNC(onMedicationUsage);
 };
 
 if (GVAR(AMS_Enabled)) then {
