@@ -45,12 +45,12 @@
                     };
                     [_idPFH] call CBA_fnc_removePerFrameHandler;
                 };
-				if (_IVComplicationTarget > 6) then {
-					_patient setVariable [QEGVAR(breathing,TRALI), true, true];
-					};
-				if (_flowDifference < 1) exitWith {
-					[_idPFH] call CBA_fnc_removePerFrameHandler;
-					};
+                if (_IVComplicationTarget > 6) then {
+                    _patient setVariable [QEGVAR(breathing,TRALI), true, true];
+                    };
+                if (_flowDifference < 1) exitWith {
+                    [_idPFH] call CBA_fnc_removePerFrameHandler;
+                    };
                 private _surface = (_patient getVariable [QEGVAR(breathing,lungSurfaceArea), 400]);
                 if (_surface < 100) then {
                     } else {
