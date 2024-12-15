@@ -26,12 +26,4 @@ class CfgFunctions {
             };
         };
     };
-    class overwrite_medical {
-        tag = "ace_medical";
-        class ace_medical {
-            class updateWoundBloodLoss {
-                file = QPATHTOF(functions\fnc_updateWoundBloodLoss.sqf);
-            };
-        };
-    };
 };

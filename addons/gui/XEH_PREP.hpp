@@ -11,8 +11,3 @@ PREP(updateInjuryList);
 PREP(updateBodyImage);
 PREP(updateIVStatus);
 PREP(updateABGStatus);
-PREP(updateSyringes);
-PREP(updateMedications);
-PREP(prepSyringe);
-PREP(openSyringeMenu);
-PREP(closeSyringeMenu);

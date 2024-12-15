@@ -22,7 +22,7 @@ params ["_medic", "_patient", "_bodyPart"];
 private _partIndex = ALL_BODY_PARTS find toLower _bodyPart;
 private _IVarray = _patient getVariable [QGVAR(IV), [0,0,0,0,0,0]];
 private _IVactual = _IVarray select _partIndex;
-if ([7,8,9] find _IVactual == -1) exitWith {false};
+if (_IVactual != 3) exitWith {false};
 
 private _fluidCheck = _patient getVariable [QACEGVAR(medical,ivBags), []];
 private _check = false;
