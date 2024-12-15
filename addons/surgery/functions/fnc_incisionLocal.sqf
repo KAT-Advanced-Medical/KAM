@@ -43,22 +43,27 @@ _patient setVariable [QGVAR(fractures), _fractureArray, true];
 
     private _fractureArray = _patient getVariable [QGVAR(fractures), [0,0,0,0,0,0]];
     private _liveFracture = _fractureArray select _part;
-    private _count = [_patient, "Etomidate"] call ACEFUNC(medical_status,getMedicationCount);
+    private _count = [_patient, "Etomidate", true] call ACEFUNC(medical_status,getMedicationCount);
 
     private _alive = alive _patient;
 
     if ((!_alive) || (_liveFracture == 0)) exitWith {
         [_idPFH] call CBA_fnc_removePerFrameHandler;
+        _patient setVariable [QGVAR(etomidate_Pain), false]
     };
 
-    if (((GVAR(Surgery_ConsciousnessRequirement) in [0,1]) && (!(IS_UNCONSCIOUS(_patient)) || _count == 0)) || (GVAR(Surgery_ConsciousnessRequirement) == 3 && _count == 0)) exitWith {
-        [_patient, "Pain", 10, 40, 200, 0, 40] call ACEFUNC(medical_status,addMedicationAdjustment);
+    if (((GVAR(Surgery_ConsciousnessRequirement) in [0,1]) && (!(IS_UNCONSCIOUS(_patient)) || _count >= 0.2)) || (GVAR(Surgery_ConsciousnessRequirement) == 3 && _count == 0)) exitWith {
+        if !(_patient getVariable [QGVAR(etomidate_Pain), false]) then {
+            [_patient, "Pain", 2, 10, 120, 0.6, 40] call ACEFUNC(medical_status,addMedicationAdjustment);
+            _patient setVariable [QGVAR(etomidate_Pain), true]};
         [_patient, true] call ACEFUNC(medical,setUnconscious);
     };
 
-    if (GVAR(Surgery_ConsciousnessRequirement) == 2 && _count == 0) then {
-        [_patient, 0.4] call ACEFUNC(medical_status,adjustPainLevel);
-        [_patient, "Pain", 10, 40, 30, 0, 40] call ACEFUNC(medical_status,addMedicationAdjustment);
+    if (GVAR(Surgery_ConsciousnessRequirement) == 2 && _count >= 0.2) then {
+        if !(_patient getVariable [QGVAR(etomidate_Pain), false]) then {
+            [_patient, "Pain", 2, 10, 120, 0.6, 40] call ACEFUNC(medical_status,addMedicationAdjustment);
+            _patient setVariable [QGVAR(etomidate_Pain), true]
+        };
     };
+}, 5, [_patient, _part]] call CBA_fnc_addPerFrameHandler;
 
-}, GVAR(etomidateTime), [_patient, _part]] call CBA_fnc_addPerFrameHandler;

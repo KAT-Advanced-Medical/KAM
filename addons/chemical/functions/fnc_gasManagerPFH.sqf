@@ -20,6 +20,8 @@
     _y params ["_gasLogic", "_radius", "_gasLevel", "_condition", "_conditionArgs", "_isSealable"];
     TRACE_2("gasManagerPFH loop",_x,_y);
 
+    private _infectedObject = _y;
+
     // Remove when condition is no longer valid
     if !(_conditionArgs call _condition) then {
         TRACE_2("condition no longer valid, deleting",_x,_y);
@@ -34,7 +36,6 @@
 
     // Poison units (alive or dead) close to the gas source
     {
-
         // Get the distance of the unit from the center of the sphere (_gasLogic)
         private _distance = _x distance _gasLogic;
 
@@ -46,7 +47,7 @@
 
         _x setVariable [QGVAR(areaIntensity), _intensity, true];
 
-        [QGVAR(poison), [_x, _gasLevel], _x] call CBA_fnc_targetEvent;
+        [QGVAR(poison), [_x, _gasLevel, _infectedObject], _x] call CBA_fnc_targetEvent;
 
     } forEach nearestObjects [_gasLogic, ["CAManBase"], _radius];
 } forEach GVAR(gasSources);

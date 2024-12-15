@@ -61,7 +61,7 @@
             <Russian>Определяет, как долго вы можете находиться в газе с противогазом без заражения.</Russian>
             <Dutch>Bepaald hoelang je in gas kan staan zonder dat je geïnfecteerd raakt.</Dutch>
         </Key>
-        <Key ID="STR_KAT_Chemical_SETTING_infection_time">
+        <Key ID="STR_KAT_Chemical_SETTING_infectionTime">
             <English>Time until infection</English>
             <Spanish>Tiempo hasta la infeccion</Spanish>
             <German>Zeit bis zur Infektion</German>
@@ -76,7 +76,7 @@
             <Russian>Время до заражения</Russian>
             <Dutch>Tijd tot infectie</Dutch>
         </Key>
-        <Key ID="STR_KAT_Chemical_SETTING_infection_time_disc">
+        <Key ID="STR_KAT_Chemical_SETTING_infectionTime_DESC">
             <English>Time you can stand in the gas before you get infected or need a gas mask.</English>
             <Spanish>Tiempo que puedes resistir en el gas hasta que resultes infectado o requieras una mascara de gas</Spanish>
             <German>Die Zeit, in der man im Gas stehen kann, bevor man infiziert wird bzw. eine Gasmaske benötigt.</German>
@@ -787,11 +787,6 @@
             <Japanese>ガスマスク使用時の呼吸音の大きさを設定します</Japanese>
             <French>Détermine l'intensité des bruits respiratoires lors de l'utilisation du masque à gaz.</French>
         </Key>
-        <Key ID="STR_KAT_Chemical_OnlyObject">
-            <English>Must be placed on object</English>
-            <Japanese>オブジェクトに配置する必要があります</Japanese>
-            <French>Doit être placé sur un objet</French>
-        </Key>
         <Key ID="STR_KAT_Chemical_PutOnGasMask">
             <English>Put on gas mask</English>
             <Japanese>ガスマスクを装着</Japanese>
@@ -801,6 +796,12 @@
             <English>Take off gas mask</English>
             <Japanese>ガスマスクを外す</Japanese>
             <French>Enlever le masque à gaz</French>
+        </Key>
+        <Key ID="STR_KAT_Chemical_SETTING_dropWeaponChance">
+            <English>Drop Weapon Chance</English>
+        </Key>
+        <Key ID="STR_KAT_Chemical_SETTING_dropWeaponChance_DESC">
+            <English>Determines chance for dropping weapon while in tear gas</English>
         </Key>
     </Package>
 </Project>

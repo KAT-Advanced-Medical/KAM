@@ -22,6 +22,8 @@ private _radius = _logic getVariable ["Radius", 20];
 private _gasLevel = _logic getVariable ["GAS_type", 0];
 private _isSealable = _logic getVariable ["IsSealable", false];
 
+if (count _units == 0) then {_units pushBack _logic;};
+
 if (!_activated) exitWith {};
 if (isServer) then {
 
