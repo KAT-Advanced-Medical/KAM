@@ -18,6 +18,7 @@
 [QGVAR(ketamineLocal), LINKFUNC(treatmentAdvanced_KetamineLocal)] call CBA_fnc_addEventHandler;
 [QGVAR(fentanylLocal), LINKFUNC(treatmentAdvanced_FentanylLocal)] call CBA_fnc_addEventHandler;
 [QGVAR(caffeineLocal), LINKFUNC(treatmentAdvanced_CaffeineLocal)] call CBA_fnc_addEventHandler;
+[QGVAR(lidocaineLocal), LINKFUNC(treatmentAdvanced_LidocaineLocal)] call CBA_fnc_addEventHandler;
 
 ["kat_fluid", LINKFUNC(fluid)] call CBA_fnc_addEventHandler;
 

@@ -24,9 +24,11 @@ private _placed = _target getVariable [QGVAR(IV), [0,0,0,0,0,0]];
 private _IVactual = _placed select _selectionN;
 
 if (_IVactual > 0) then {
-    if (_IVactual == 1) then {
-        _entries pushBack [LLSTRING(IO_45_Display), [0.3, 0.6, 0.3, 1]];
-    } else {
-        _entries pushBack [LLSTRING(IV_16_Display), [0.3, 0.6, 0.3, 1]];
-    };
+    switch (_IVactual) do {
+        case 1: { _entries pushBack [LLSTRING(IO_45_Display), [0.3, 0.6, 0.3, 1]]};
+        case 2: { _entries pushBack [LLSTRING(IV_16_Display), [0.3, 0.6, 0.3, 1]]};
+        case 3: { _entries pushBack [LLSTRING(IV_14_Display), [0.3, 0.6, 0.3, 1]]};
+        case 4: { _entries pushBack [LLSTRING(IV_20_Display), [0.3, 0.6, 0.3, 1]]};
+        default {};
+        };
 };

@@ -15,6 +15,7 @@
  * Public: No
  */
 
-params ["_patient"];
+params ["_patient", "_classname"];
+if (_classname isEqualTo "syringe_atropine_5ml_1") exitWith {};
 
 _patient setVariable [QGVAR(airPoisoning), false, true];

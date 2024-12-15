@@ -9,5 +9,7 @@ PREP(handleOxygenFunction);
 PREP(handlePoisoning);
 PREP(hasStableVitals);
 PREP(init);
+PREP(updateOpioidDepression);
 PREP(updateOpioidEffect);
 PREP(updateOpioidRelief);
+PREP(updateRespiratoryRate);

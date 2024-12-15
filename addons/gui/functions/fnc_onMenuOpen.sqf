@@ -98,6 +98,11 @@ if (EGVAR(pharma,RequireInsIV) && EGVAR(pharma,IVflowControl)) then {
     (_display displayCtrl IDC_IV_FLOW_SHOWBUTTON) ctrlShow true;
 };
 
+
+if (EGVAR(pharma,AMS_Enabled)) then {
+    (_display displayCtrl IDC_SYRINGE_OPEN) ctrlShow true;
+};
+
 if (EGVAR(circulation,abgEnable)) then {
     (_display displayCtrl IDC_TEST_SHOWBUTTON) ctrlShow true;
 };
@@ -110,4 +115,10 @@ if (ACEGVAR(medical_gui,target) == ACE_player) then {
 } else {
     _ctrl ctrlSetText QACEPATHTOF(medical_gui,data\categories\toggle_to_self.paa);
     _ctrl ctrlSetTooltip ACELLSTRING(medical_gui,ToggleToSelf);
+};
+private _syringeMenuStatus = player getVariable ["SyringeMenu", false];
+if (_syringeMenuStatus) then {
+    [] call FUNC(openSyringeMenu);
+} else {
+    [] call FUNC(closeSyringeMenu);
 };

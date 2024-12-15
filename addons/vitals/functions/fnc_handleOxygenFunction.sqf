@@ -33,6 +33,7 @@ params ["_unit", "_actualHeartRate", "_anerobicPressure", "_bloodGas", "_tempera
 #define DEFAULT_FIO2 0.21
 
 private _respiratoryRate = 0;
+private _respiratoryRateMult = _unit getVariable [QEGVAR(pharma,respiratoryRate), 1];
 private _demandVentilation = 0;
 private _actualVentilation = 0;
 private _previousCyclePaco2 = (_bloodGas select 0);
@@ -49,7 +50,7 @@ if (IN_CRDC_ARRST(_unit)) then {
     private _tidalVolume = GET_KAT_SURFACE_AREA(_unit);
 
     // Respiratory Rate is supressed by Opioids 
-    _respiratoryRate = [((_demandVentilation / _tidalVolume) - (_opioidDepression * 5)) min MAXIMUM_RR, 20] select (_unit getVariable [QEGVAR(breathing,BVMInUse), false]);
+    _respiratoryRate = [(((_demandVentilation / _tidalVolume) - (_opioidDepression * 5)))  min MAXIMUM_RR, 20] select (_unit getVariable [QEGVAR(breathing,BVMInUse), false]);
 
     // If respiratory rate is low due to PaCO2, it starts increasing faster to compensate
     if (_previousCyclePaco2 > 50) then { _respiratoryRate = (_respiratoryRate + ((_previousCyclePaco2 - 50) * 0.2)) min MAXIMUM_RR};

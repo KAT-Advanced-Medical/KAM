@@ -17,6 +17,12 @@ class CfgFunctions {
             class tourniquetRemove {
                 file = QPATHTOF(functions\fnc_tourniquetRemove.sqf);
             };
+            class overDose {
+                file = QPATHTOF(functions\fnc_overDose.sqf);
+            };
+            class onMedicationUsage {
+                file = QPATHTOF(functions\fnc_onMedicationUsage.sqf);
+            };
         };
     };
 };
