@@ -50,7 +50,7 @@ if (!isNil {_unit getVariable [QACEGVAR(medical,ivBags),[]]}) then {
 
         private _tourniquets = GET_TOURNIQUETS(_unit);
 
-        if ((_tourniquets select _bodyPart isEqualTo 0) && (_IVarray select _bodyPart isNotEqualTo 3)  && (!(_type in ["EtomidateInfusion", "EpinephrineInfusion", "MorphineInfusion"]))) then {
+        if ((_tourniquets select _bodyPart isEqualTo 0) && (_IVarray select _bodyPart isNotEqualTo 3)  && (!(_type in ["EtomidateInfusion", "EpinephrineIVInfusion", "MorphineIVInfusion"]))) then {
             private _IVflow = _unit getVariable [QGVAR(IVflow), [0,0,0,0,0,0]];
             private _IVrate = _unit getVariable [QGVAR(IVrate), [0,0,0,0,0,0]];
             private _viscosity = getNumber (configFile >> "ACE_Medical_Treatment" >> "IV" >> _className >> "viscosity");
@@ -59,7 +59,7 @@ if (!isNil {_unit getVariable [QACEGVAR(medical,ivBags),[]]}) then {
             _bagVolumeRemaining = _bagVolumeRemaining - _bagChange;
             _incomingFlowAmount set [_bodyPart, ((_incomingFlowAmount select _bodyPart) + _bagChange)];
 
-            private _incomingFlowDifference = _incomingFlowAmount - 10;
+            private _incomingFlowDifference = (_incomingFlowAmount - 10) max 0.01;
 
             if ((_incomingFlowAmount select _bodyPart) > (10 * _vasoconstriction)) then {[_unit, _bodyPart , _incomingFlowDifference] call FUNC(handleLimbIVComplications)};
 

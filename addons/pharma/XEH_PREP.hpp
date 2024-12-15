@@ -77,6 +77,7 @@ PREP(treatmentAdvanced_ReorientationLocal);
 PREP(treatmentAdvanced_TXALocal);
 PREP(treatmentAdvanced_TXAOverdoseLocal);
 PREP(vehicleCheckDialysis);
+PREP(prepareInfusion);
 PREP(prepareSyringe);
 PREP(checkIVType);
 PREP(ivCondition);

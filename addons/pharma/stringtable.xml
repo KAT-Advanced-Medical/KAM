@@ -4603,5 +4603,11 @@
         <Key ID="STR_KAT_Pharma_CheckVein_VeinFine">
             <English>The Veins are Normal</English>
         </Key>
+        <Key ID="STR_KAT_Pharma_prepTime_PrepInfusion">
+            <English>Infusion Prep Time</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_prepTime_PrepInfusion_Desc">
+            <English>Time required to prep Infusions</English>
+        </Key>
     </Package>
 </Project>
