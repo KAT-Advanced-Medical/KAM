@@ -18,7 +18,7 @@
 params ["_unit"];
 
 if ("KAT_ChemicalDetector" in assignedItems _unit) exitWith {
-	true
+    true
 };
 
 false
