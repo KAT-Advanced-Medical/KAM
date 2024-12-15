@@ -193,6 +193,9 @@
             <French>Utilisé pour détecter les produits chimiques toxiques KAT</French>
             <Japanese>KAT毒性化学物質の検出に使用</Japanese>
         </Key>
+        <Key ID="STR_KAT_Chemical_ChemicalDetector_Off">
+            <English>OFF</English>
+        </Key>
         <Key ID="STR_KAT_Chemical_giveGasMask_action">
             <English>Put on gas mask</English>
             <Spanish>Poner mascara de gas</Spanish>
@@ -796,6 +799,18 @@
             <English>Take off gas mask</English>
             <Japanese>ガスマスクを外す</Japanese>
             <French>Enlever le masque à gaz</French>
+        </Key>
+        <Key ID="STR_KAT_Chemical_ChemicalDetector_Menu">
+            <English>JCAD</English>
+        </Key>
+        <Key ID="STR_KAT_Chemical_EnableDetector">
+            <English>Turn On Detector</English>
+        </Key>
+        <Key ID="STR_KAT_Chemical_EnableDetectorSound">
+            <English>Enable Warning Tone</English>
+        </Key>
+        <Key ID="STR_KAT_Chemical_DisableDetectorSound">
+            <English>Disable Warning Tone</English>
         </Key>
         <Key ID="STR_KAT_Chemical_SETTING_dropWeaponChance">
             <English>Drop Weapon Chance</English>

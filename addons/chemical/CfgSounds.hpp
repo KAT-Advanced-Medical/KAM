@@ -58,5 +58,59 @@ class CfgSounds {
         };
         titles[] = {};
     };
-
+    class GVAR(chemSlowChime) {
+        name = QGVAR(chemSlowChime);
+        sound[] =
+        {
+            QPATHTOF(audio\slowChime.ogg),
+            2,
+            1.0,
+            5
+        };
+        titles[] = {};
+    };
+    class GVAR(chemNormalChime) {
+        name = QGVAR(chemNormalChime);
+        sound[] =
+        {
+            QPATHTOF(audio\normalChime.ogg),
+            2,
+            1.0,
+            5
+        };
+        titles[] = {};
+    };
+    class GVAR(chemFastChime) {
+        name = QGVAR(chemFastChime);
+        sound[] =
+        {
+            QPATHTOF(audio\fastChime.ogg),
+            2,
+            1.0,
+            5
+        };
+        titles[] = {};
+    };
+    class GVAR(chemRapidChime) {
+        name = QGVAR(chemRapidChime);
+        sound[] =
+        {
+            QPATHTOF(audio\rapidChime.ogg),
+            2,
+            1.0,
+            5
+        };
+        titles[] = {};
+    };
+    class GVAR(chemTone) {
+        name = QGVAR(chemTone);
+        sound[] =
+        {
+            QPATHTOF(audio\tone.ogg),
+            2,
+            1.0,
+            5
+        };
+        titles[] = {};
+    };
 };
