@@ -43,7 +43,7 @@ if (_doseType != 4) then {
         {
             params["_args"];
             _args params ["_medicationType", "_syringeType", "_doseType"];
-            [_player, _medicationType, _syringeType, _doseType] call kat_pharma_fnc_prepareSyringe;
+            [_player, _medicationType, _syringeType, _doseType] call EFUNC(pharma,prepareSyringe);
             }, 
             {}, format [LLSTRING(Preparing_Syringe), _syringeDisplayName] ] call ACEFUNC(common,progressBar);
 } else {
@@ -59,7 +59,7 @@ if (_doseType != 4) then {
         {
             params["_args"];
             _args params ["_medicationType", "_syringeType", "_doseType"];
-            [_player, _medicationType, _syringeType, _doseType] call kat_pharma_fnc_prepareInfusion;
+            [_player, _medicationType, _syringeType, _doseType] call EFUNC(pharma,prepareInfusion);
             }, 
             {}, format [LLSTRING(Preparing_Syringe), _syringeDisplayName] ] call ACEFUNC(common,progressBar);
 }

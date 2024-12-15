@@ -19,7 +19,7 @@ private _randomNumber = floor (random 3) + 1;
 switch (_randomNumber) do {
     case 1: {
         private _bpAdjust = -20 + floor random ((-5 - -20) + 1);
-        [_patient, _bpAdjust, _bpAdjust, "EtomidateOverdose"] call kat_circulation_fnc_updateBloodPressureChange;
+        [_patient, _bpAdjust, _bpAdjust, "EtomidateOverdose"] call EFUNC(circulation,updateBloodPressureChange);
         private _hrAdjust = -40 + floor random ((-20 - -40) + 1);
         [_patient, "BRADYCARDIA", 120, 1200, _hrAdjust, "", "", "", "", ""] call EFUNC(vitals,addMedicationAdjustment);
         [{
@@ -57,7 +57,7 @@ switch (_randomNumber) do {
     };
     case 2: {
         private _bpAdjust = -20 + floor random ((-5 - -20) + 1);
-        [_patient, _bpAdjust, _bpAdjust, "EtomidateOverdose"] call kat_circulation_fnc_updateBloodPressureChange;
+        [_patient, _bpAdjust, _bpAdjust, "EtomidateOverdose"] call EFUNC(circulation,updateBloodPressureChange);
         private _hrAdjust = 20 + floor random ((40 - 20) + 1);
         [_patient, "TACHYCARDIA", 120, 1200, _hrAdjust, "", "", "", "", ""] call EFUNC(vitals,addMedicationAdjustment);
         [{
@@ -95,7 +95,7 @@ switch (_randomNumber) do {
     };
     case 3: {
         private _bpAdjust = -20 + floor random ((-5 - -20) + 1);
-        [_patient, _bpAdjust, _bpAdjust, "EtomidateOverdose"] call kat_circulation_fnc_updateBloodPressureChange;
+        [_patient, _bpAdjust, _bpAdjust, "EtomidateOverdose"] call EFUNC(circulation,updateBloodPressureChange);
         private _hrAdjust = 20 + floor random ((40 - 20) + 1);
         [_patient, "TACHYCARDIA", 120, 1200, _hrAdjust, "", "", "", "", ""] call EFUNC(vitals,addMedicationAdjustment);
         [{
@@ -135,7 +135,7 @@ switch (_randomNumber) do {
     };
     case 4: {
         private _bpAdjust = -20 + floor random ((-5 - -20) + 1);
-        [_patient, _bpAdjust, _bpAdjust, "EtomidateOverdose"] call kat_circulation_fnc_updateBloodPressureChange;
+        [_patient, _bpAdjust, _bpAdjust, "EtomidateOverdose"] call EFUNC(circulation,updateBloodPressureChange);
         private _hrAdjust = -40 + floor random ((-20 - -40) + 1);
         [_patient, "BRADYCARDIA", 120, 1200, _hrAdjust, "", "", "", "", ""] call EFUNC(vitals,addMedicationAdjustment);
         [{

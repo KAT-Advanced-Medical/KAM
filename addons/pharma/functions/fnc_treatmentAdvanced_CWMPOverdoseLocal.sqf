@@ -52,7 +52,7 @@ if (_medIndex > -1) then {
                 _bpTarget = _bpTarget + 1;
                 if (_bpTarget > 12) exitWith {
                 [_idPFH] call CBA_fnc_removePerFrameHandler;};
-                [_patient, -2, -2, "CWMPOverdose"] call kat_circulation_fnc_updateBloodPressureChange;
+                [_patient, -2, -2, "CWMPOverdose"] call EFUNC(circulation,updateBloodPressureChange);
                 private _coagulationFactor = (_patient getVariable [QGVAR(coagulationFactor), 30]);
                 private _factorstoremove = 1;
                 _patient setVariable [QGVAR(coagulationFactor), (_coagulationFactor - _factorstoremove), true];
