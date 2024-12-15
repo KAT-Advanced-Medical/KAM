@@ -50,18 +50,18 @@ if (!isNil {_unit getVariable [QACEGVAR(medical,ivBags),[]]}) then {
 
         private _tourniquets = GET_TOURNIQUETS(_unit);
 
-        if ((_tourniquets select _bodyPart isEqualTo 0) && (_IVarray select _bodyPart isNotEqualTo 3)  && (!(_type in ["EtomidateInfusion", "EpinephrineIVInfusion", "MorphineIVInfusion"]))) then {
+        if ((_tourniquets select _bodyPart isEqualTo 0) && ([7,8,9] find (_IVarray select _bodyPart) == -1)  && (!(_type in ["EtomidateInfusion", "EpinephrineIVInfusion", "MorphineIVInfusion"]))) then {
             private _IVflow = _unit getVariable [QGVAR(IVflow), [0,0,0,0,0,0]];
             private _IVrate = _unit getVariable [QGVAR(IVrate), [0,0,0,0,0,0]];
             private _viscosity = getNumber (configFile >> "ACE_Medical_Treatment" >> "IV" >> _className >> "viscosity");
+
             private _bagChange = (_flowCalculation * (_IVflow select _bodyPart) * (_IVrate select _bodyPart) * _viscosity) min _bagVolumeRemaining;  // absolute value of the change in miliLiters
 
             _bagVolumeRemaining = _bagVolumeRemaining - _bagChange;
             _incomingFlowAmount set [_bodyPart, ((_incomingFlowAmount select _bodyPart) + _bagChange)];
+            private _incomingFlowDifference = _incomingFlowAmount - (10 * _vasoconstriction);
 
-            private _incomingFlowDifference = (_incomingFlowAmount - 10) max 0.01;
-
-            if ((_incomingFlowAmount select _bodyPart) > (10 * _vasoconstriction)) then {[_unit, _bodyPart , _incomingFlowDifference] call FUNC(handleLimbIVComplications)};
+            if (((_incomingFlowAmount select _bodyPart) / (_IVrate select _bodyPart)) > (10 * _vasoconstriction)) then {[_unit, _bodyPart , _incomingFlowDifference] call FUNC(handleLimbIVComplications)};
 
             if (_hypothermia) then {
                 // If fluid warmers are on the line, fluids are "warmed" and added to the warmer. If there is no fluid warmer on the line, the fluids stayed cooled
@@ -110,7 +110,6 @@ if (!isNil {_unit getVariable [QACEGVAR(medical,ivBags),[]]}) then {
             };
         } else {
             private _className = format ["%1_IV", _type];
-            private _IVflow = _unit getVariable [QGVAR(IVflow), [0,0,0,0,0,0]];
             private _defaultConfig = configFile >> QUOTE(ACE_ADDON(Medical_Treatment)) >> "IV";
             private _ivConfig = _defaultConfig >> _className;
             private _painReduce             = GET_NUMBER(_ivConfig >> "painReduce",getNumber (_defaultConfig >> "painReduce") * _IVflow);
@@ -142,23 +141,30 @@ if (!isNil {_unit getVariable [QACEGVAR(medical,ivBags),[]]}) then {
             private _baseName = (_medicationParts select 0); 
             private _medicationName = (_baseName splitString "Infusion") select 0;
             TRACE_3("adjustments",_heartRateChange,_painReduce,_viscosityChange);
+
             [_patient, _medicationName, _timeTillMaxEffect, _timeInSystem, _heartRateChange, _painReduce, _viscosityChange, _dose, _alphaFactor, _opioidRelief, _opioidEffect, _opioidDepression, _respiratoryRate] call EFUNC(vitals,addMedicationAdjustment);
             [_patient, _medicationName] call ACEFUNC(medical_treatment,onMedicationUsage);
-            private _bagChange = (_flowCalculation * (_IVflow select _bodyPart) * _viscosity) min _bagVolumeRemaining; // absolute value of the change in miliLiters
+
+            private _IVflow = _unit getVariable [QGVAR(IVflow), [0,0,0,0,0,0]];
+            private _IVrate = _unit getVariable [QGVAR(IVrate), [0,0,0,0,0,0]];
+
+            private _bagChange = (_flowCalculation * (_IVflow select _bodyPart) * (_IVrate select _bodyPart) * _viscosity) min _bagVolumeRemaining;  // absolute value of the change in miliLiters
+
             _bagVolumeRemaining = _bagVolumeRemaining - _bagChange;
             _incomingFlowAmount set [_bodyPart, ((_incomingFlowAmount select _bodyPart) + _bagChange)];
+            private _incomingFlowDifference = _incomingFlowAmount - (10 * _vasoconstriction);
 
-            private _incomingFlowDifference = _incomingFlowAmount - 10;
-
-            if ((_incomingFlowAmount select _bodyPart) > (10 * _vasoconstriction)) then {[_unit, _bodyPart , _incomingFlowDifference] call FUNC(handleLimbIVComplications)};
+            if (((_incomingFlowAmount select _bodyPart) / (_IVrate select _bodyPart)) > (10 * _vasoconstriction)) then {[_unit, _bodyPart , _incomingFlowDifference] call FUNC(handleLimbIVComplications)};
 
             if (_hypothermia) then {
+                // If fluid warmers are on the line, fluids are "warmed" and added to the warmer. If there is no fluid warmer on the line, the fluids stayed cooled
                 if (_fluidWarmer select _bodyPart == 1) then {
                     _incomingVolumeChange set [_bodyPart, ((_incomingVolumeChange select _bodyPart) + _bagChange)];
                 } else {
                     _incomingVolumeChange set [_bodyPart, ((_incomingVolumeChange select _bodyPart) - _bagChange)];
                 };
             };
+            
             if (_enableFluidShift) then {
                 _ECP = _ECP + _bagChange / 2; 
                 _ISP = _ISP + _bagChange / 2; 
@@ -182,8 +188,8 @@ if (!isNil {_unit getVariable [QACEGVAR(medical,ivBags),[]]}) then {
         _totalFlowAmount = _totalFlowAmount + _x;
     } forEach _incomingFlowAmount;
 
-    private _flowDifference = _totalFlowAmount - 10;
-    if ((_totalFlowAmount) >= (10 * _vasoconstriction)) then { [_unit, _flowDifference] call FUNC(handleIVComplications); };
+    private _flowDifference = _totalFlowAmount - (20 * _vasoconstriction);
+    if ((_totalFlowAmount) >= (20 * _vasoconstriction)) then {[_unit, _flowDifference] call FUNC(handleIVComplications);};
 
     if (_bloodBags isEqualTo []) then {
         _unit setVariable [QACEGVAR(medical,ivBags), nil, true]; // no bags left - clear variable (always globaly sync this)    
