@@ -69,5 +69,9 @@ if (_currentInfection != _newTime) then {
 
 // Exit if infection reaches 0
 if (_newTime <= 0) then {
+    if !(_unit getVariable [QGVAR(airPoisoning), false]) then {
+        [QEGVAR(breathing,playCough), [_unit], _unit] call CBA_fnc_targetEvent;
+    };
+
     _unit setVariable [QGVAR(airPoisoning), true, true];
 };
