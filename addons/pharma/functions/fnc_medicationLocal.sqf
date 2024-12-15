@@ -149,7 +149,7 @@ if (GVAR(AMS_Enabled)) then {
     
 } else {       
     TRACE_6("adjustments1",_patient,_medicationName,_timeTillMaxEffect,_timeInSystem,_heartRateChange,_painReduce);
-    TRACE_7("adjustments2",_viscosityChange,_dose _alphaFactor,_opioidRelief,_opioidEffect,_opioidDepression,_respiratoryRate);
+    TRACE_7("adjustments2",_viscosityChange,_dose,_alphaFactor,_opioidRelief,_opioidEffect,_opioidDepression,_respiratoryRate);
     [_patient, _className, _timeTillMaxEffect, _timeInSystem, _heartRateChange, _painReduce, _viscosityChange, _dose, _alphaFactor, _opioidRelief, _opioidEffect, _opioidDepression, _respiratoryRate] call EFUNC(vitals,addMedicationAdjustment);
     [_patient, _className, _incompatibleMedication] call FUNC(onMedicationUsage);
 };
