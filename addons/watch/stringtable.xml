@@ -119,6 +119,12 @@
             <Japanese>Katmin Jump Standard</Japanese>
             <Italian>Katmin Jump Standard</Italian>
         </Key>
+        <Key ID="STR_KAT_Watch_RangerDescription">
+            <English>Watch with Vital Monitoring Capabilities. Sua Sponte.</English>
+        </Key>
+        <Key ID="STR_KAT_Watch_RangerDisplayName">
+            <English>Katmin K12 Model R</English>
+        </Key>
         <Key ID="STR_KAT_Watch_descentFT">
             <English>%1ft/s</English>
             <Japanese>%1ft/s</Japanese>
