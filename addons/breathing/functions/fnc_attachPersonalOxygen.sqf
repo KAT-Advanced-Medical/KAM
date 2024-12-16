@@ -42,6 +42,8 @@ _patient removeMagazines "kat_personal_oxygen";
 
 _patient setVariable [QGVAR(oxygenMaskStatus), [(_largestTankValue + 1), 1], true];
 
+[QGVAR(playRespiratorTone), [_patient], _patient] call CBA_fnc_targetEvent;
+
 [{
     _this params ["_args", "_pfhID"];
     _args params ["_patient"];
