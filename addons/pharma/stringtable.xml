@@ -459,7 +459,7 @@
             <Finnish>Paina lidokaiinia</Finnish>
             <Dutch>Injecteer Lidocaïne</Dutch>
         </Key>
-        <Key ID="STR_KAT_Pharma_Atropine_DescShort">
+        <Key ID="STR_KAT_Pharma_AtropineIV_DescShort">
             <English>Used to treat chemical exposure and bradycardia</English>
             <German>Zur Behandlung von Bradykardie</German>
             <Polish>Używany do zwalczania bradykardii</Polish>
@@ -4383,10 +4383,10 @@
         <Key ID="STR_KAT_Pharma_push_lidocaine_IV_3">
             <English>Push 80mg Lidocaine IV</English>
         </Key>
-        <Key ID="STR_KAT_Pharma_push_atropine_IV_1">
+        <Key ID="STR_KAT_Pharma_push_atropineIV_IV_1">
             <English>Push 0.6mg Atropine IV</English>
         </Key>
-        <Key ID="STR_KAT_Pharma_push_atropine_IV_3">
+        <Key ID="STR_KAT_Pharma_push_atropineIV_IV_3">
             <English>Push 2mg Atropine IV</English>
         </Key>
         <Key ID="STR_KAT_Pharma_push_ketamine_IV_1">
@@ -4712,6 +4712,39 @@
         </Key>
         <Key ID="STR_KAT_Pharma_treatmentTime_SalineFlush">
             <English>Time to preform a Saline Flush</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_Actions_Packed_RBC_250">
+            <English>Give Packed RBC IV (250ml)</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_Actions_Packed_RBC_500">
+            <English>Give Packed RBC IV (500ml)</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_Actions_Ringers_Lactate">
+            <English>Give Ringers Lactate IV (1000ml)</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_Actions_Ringers_Lactate_250">
+            <English>Give Ringers Lactate IV (250ml)</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_Actions_Ringers_Lactate_500">
+            <English>Give Ringers Lactate IV (500ml)</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_receivingPacked_RBCIvVolume">
+            <English>Receiving Packed RBC IV [%1ml]</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_receivingRingers_LactateIvVolume">
+            <English>Receiving Ringers Lactate IV [%1ml]</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_Transfusing_Packed_RBC">
+            <English>Transfusing Packed RBC...</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_Transfusing_Ringers_Lactate">
+            <English>Transfusing Ringers Lactate...</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_Transfuse_Packed_RBC">
+            <English>Transfuse Packed RBC</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_Transfuse_Ringers_Lactate">
+            <English>Transfuse Ringers Lactate</English>
         </Key>
     </Package>
 </Project>

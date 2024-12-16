@@ -37,6 +37,36 @@ class ACE_Medical_Treatment_Actions {
     class PlasmaIV_250: PlasmaIV {
         callbackSuccess = "[_medic, _patient, _bodyPart, _className, _itemUser, _usedItem] call ace_medical_treatment_fnc_ivBag; [_patient, -100, 5, _className] call kat_pharma_fnc_fluid;";
     };
+    class PackedRBCIV_500: BloodIV {
+        displayName = CSTRING(Actions_Packed_RBC_500);
+        items[] = {"kat_PackedRBCIV_500"};
+        displayNameProgress = CSTRING(Transfusing_Packed_RBC);
+        callbackSuccess = "[_medic, _patient, _bodyPart, _className, _itemUser, _usedItem] call ace_medical_treatment_fnc_ivBag; [_patient, -400, 16, _className] call kat_pharma_fnc_fluid;";
+    };
+    class PackedRBC_250: BloodIV {
+        displayName = CSTRING(Actions_Packed_RBC_250);
+        items[] = {"kat_PackedRBCIV_250"};
+        displayNameProgress = CSTRING(Transfusing_Packed_RBC);
+        callbackSuccess = "[_medic, _patient, _bodyPart, _className, _itemUser, _usedItem] call ace_medical_treatment_fnc_ivBag; [_patient, -200, 8, _className] call kat_pharma_fnc_fluid;";
+    };
+    class RingersLactateIV: SalineIV {
+        displayName = CSTRING(Actions_Ringers_Lactate);
+        items[] = {"kat_RingersLactateIV"};
+        displayNameProgress = CSTRING(Transfusing_Ringers_Lactate);
+        callbackSuccess = "[_medic, _patient, _bodyPart, _className, _itemUser, _usedItem] call ace_medical_treatment_fnc_ivBag; [_patient, -200, 0, _className] call kat_pharma_fnc_fluid;";
+    };
+    class RingersLactateIV_500: SalineIV {
+        displayName = CSTRING(Actions_Ringers_Lactate_500);
+        items[] = {"kat_RingersLactateIV_500"};
+        displayNameProgress = CSTRING(Transfusing_Ringers_Lactate);
+        callbackSuccess = "[_medic, _patient, _bodyPart, _className, _itemUser, _usedItem] call ace_medical_treatment_fnc_ivBag; [_patient, -100, 0, _className] call kat_pharma_fnc_fluid;";
+    };
+    class RingersLactateIV_250: SalineIV {
+        displayName = CSTRING(Actions_Ringers_Lactate_250);
+        items[] = {"kat_RingersLactateIV_250"};
+        displayNameProgress = CSTRING(Transfusing_Ringers_Lactate);
+        callbackSuccess = "[_medic, _patient, _bodyPart, _className, _itemUser, _usedItem] call ace_medical_treatment_fnc_ivBag; [_patient, -50, 0, _className] call kat_pharma_fnc_fluid;";
+    };
     class Epinephrine: Morphine {
         callbackSuccess = QFUNC(medication);
     };
@@ -637,24 +667,6 @@ class ACE_Medical_Treatment_Actions {
         callbackSuccess = QFUNC(medication);
         sounds[] = {};
     };
-    class syringe_atropine_5ml_1: syringe_EACA_5ml_1 {
-        displayName = CSTRING(push_atropine_IV_1);
-        displayNameProgress = CSTRING(pushing_atropine_IV_1);
-        allowedSelections[] = {"Body", "LeftArm", "RightArm", "LeftLeg", "RightLeg"};
-        allowSelfTreatment = 1;
-        medicRequired = QGVAR(medLvl_atropine);
-        treatmentTime = QGVAR(treatmentTime_atropine);
-        items[] = {"kat_syringe_atropine_5ml_1"};
-        callbackSuccess = QFUNC(medication);
-        sounds[] = {};
-    };
-    class syringe_atropine_5ml_3: syringe_atropine_5ml_1 {
-        displayName = CSTRING(push_atropine_IV_3);
-        displayNameProgress = CSTRING(pushing_atropine_IV_3);
-        items[] = {"kat_syringe_atropine_5ml_3"};
-        callbackSuccess = QFUNC(medication);
-        sounds[] = {};
-    };
     class syringe_ketamine_5ml_1: syringe_EACA_5ml_1 {
         displayName = CSTRING(push_ketamine_IV_1);
         displayNameProgress = CSTRING(pushing_ketamine_IV_1);
@@ -925,20 +937,20 @@ class ACE_Medical_Treatment_Actions {
         callbackSuccess = QFUNC(medication);
         sounds[] = {};
     };
-    class CheckVein: CheckPulse {
-        displayName = CSTRING(CheckVein_DisplayName);
-        displayNameProgress = CSTRING(CheckVein_DisplayNameProgress);
-        allowedSelections[] = {"LeftArm", "RightArm", "Left Leg", "Right leg"};
-        treatmentLocations = 0;
-        medicRequired = QGVAR(CheckVein_MedLevel);
-        treatmentTime = QGVAR(CheckVein_TreatmentTime);
-        category = "examine";
-        consumeItem = 0;
-        condition = "";
-        callbackProgress = "";
-        callbackStart = "";
-        callbackFailure = "";
-        callbackSuccess = QFUNC(treatmentAdvanced_CheckVein);
-        litter[] = {};
-    };
+    //class CheckVein: CheckPulse {
+    //    displayName = CSTRING(CheckVein_DisplayName);
+    //    displayNameProgress = CSTRING(CheckVein_DisplayNameProgress);
+    //    allowedSelections[] = {"LeftArm", "RightArm", "Left Leg", "Right leg"};
+    //    treatmentLocations = 0;
+    //    medicRequired = QGVAR(CheckVein_MedLevel);
+    //    treatmentTime = QGVAR(CheckVein_TreatmentTime);
+    //    category = "examine";
+    //    consumeItem = 0;
+    //    condition = "";
+    //    callbackProgress = "";
+    //    callbackStart = "";
+    //    callbackFailure = "";
+    //    callbackSuccess = QFUNC(treatmentAdvanced_CheckVein);
+    //    litter[] = {};
+    //};
 };
