@@ -48,8 +48,6 @@ private _showNextTick = missionNamespace getVariable [QGVAR(showCoughNextTick), 
 GVAR(showCoughNextTick) = !_showNextTick;
 if (_showNextTick) exitWith {};
 
-addCamShake [3, 4, 0];
-
 private _initialAdjust = [];
 private _delayedAdjust = [];
 
