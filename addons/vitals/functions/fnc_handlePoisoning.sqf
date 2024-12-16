@@ -34,7 +34,7 @@ private _distance = 0;
     _distance = _unit distance _gasLogic;
 
     if (_distance < _radius) then {
-    _inZone = true;
+        _inZone = true;
     };
 } forEach GVAR(gasSources);
 
