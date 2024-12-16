@@ -12,6 +12,9 @@
             <Portuguese>Permitir máscaras de gás</Portuguese>
             <Polish>Dozwolone maski gazowe</Polish>
             <Czech>Povolené plynové masky</Czech>
+            <Finnish>Hyväksytyt kaasunaamarit</Finnish>
+            <Russian>Разрешенные противогазы</Russian>
+            <Dutch>Geaccepteerde gasmaskers</Dutch>
         </Key>
         <Key ID="STR_KAT_Chemical_SETTING_AVAIL_GASMASK_DISC">
             <English>Enter here the classname of the masks that should work with the system.</English>
@@ -24,6 +27,9 @@
             <Portuguese>Digite aqui o classname das máscaras que devem funcionar com o sistema.</Portuguese>
             <Polish>Wpisz classname maski, która ma działać z systemem</Polish>
             <Czech>Zde vložte "classname" plynových masek, které mají spolupracovat s tímto systémem.</Czech>
+            <Finnish>Anna niiden maskien luokan nimet, joiden pitäisi toimia järjestelmän kanssa</Finnish>
+            <Russian>Введите здесь имя класса масок, которые должны работать с системой.</Russian>
+            <Dutch>Voer hier de classnames toe van gasmaskers die zouden moeten werken met het systeem.</Dutch>
         </Key>
         <Key ID="STR_KAT_Chemical_SETTING_GASMASK_DURABILITY">
             <English>Gas masks durability</English>
@@ -36,6 +42,9 @@
             <Portuguese>Durabilidade das máscaras de gás</Portuguese>
             <Polish>Wytrzymałość maski gazowej</Polish>
             <Czech>Odolnost Plynových masek</Czech>
+            <Finnish>Kaasunaamarien kestävyys</Finnish>
+            <Russian>Время действия противогазов</Russian>
+            <Dutch>Levensduur van gasmaskers</Dutch>
         </Key>
         <Key ID="STR_KAT_Chemical_SETTING_GASMASK_DURABILITY_DISC">
             <English>Determines how long you can stand in the gas with a gas mask without getting infected.</English>
@@ -48,8 +57,11 @@
             <Portuguese>Determina quanto tempo você pode ficar no gás com uma máscara de gás sem ser infectado.</Portuguese>
             <Polish>Ustala jak długo możesz stać w gazie z maską bez zagrożenia infekcją</Polish>
             <Czech>Určuje jak dlouho můžete stát v plynu s plynovou maskou bez následků.</Czech>
+            <Finnish>Määrittää, kuinka kauan voit seistä kaasussa kaasunaamarin kanssa vaikuttamatta siihen</Finnish>
+            <Russian>Определяет, как долго вы можете находиться в газе с противогазом без заражения.</Russian>
+            <Dutch>Bepaald hoelang je in gas kan staan zonder dat je geïnfecteerd raakt.</Dutch>
         </Key>
-        <Key ID="STR_KAT_Chemical_SETTING_infection_time">
+        <Key ID="STR_KAT_Chemical_SETTING_infectionTime">
             <English>Time until infection</English>
             <Spanish>Tiempo hasta la infeccion</Spanish>
             <German>Zeit bis zur Infektion</German>
@@ -60,8 +72,11 @@
             <Portuguese>Tempo até a infecção</Portuguese>
             <Polish>Czas do infekcji</Polish>
             <Czech>Čas do infekce</Czech>
+            <Finnish>Aikaa tartunnan saamiseen</Finnish>
+            <Russian>Время до заражения</Russian>
+            <Dutch>Tijd tot infectie</Dutch>
         </Key>
-        <Key ID="STR_KAT_Chemical_SETTING_infection_time_disc">
+        <Key ID="STR_KAT_Chemical_SETTING_infectionTime_DESC">
             <English>Time you can stand in the gas before you get infected or need a gas mask.</English>
             <Spanish>Tiempo que puedes resistir en el gas hasta que resultes infectado o requieras una mascara de gas</Spanish>
             <German>Die Zeit, in der man im Gas stehen kann, bevor man infiziert wird bzw. eine Gasmaske benötigt.</German>
@@ -72,6 +87,9 @@
             <Portuguese>Tempo que você pode ficar no gás antes de ser infectado ou precisar de uma máscara de gás.</Portuguese>
             <Polish>Ustala jak długo możesz stać w gazie zanim zostaniesz zainfekowany lub będziesz potrzebował maski gazowej.</Polish>
             <Czech>Čas po který můžete stát v plynu bez infikování se či potřeby plynové masky</Czech>
+            <Finnish>Aika, jonka voit seistä kaasussa, ennen kuin sinulla on vaikutusta tai tarvitset kaasunaamaria</Finnish>
+            <Russian>Время, когда вы сможете постоять в газе, прежде чем заразитесь или вам понадобится противогаз.</Russian>
+            <Dutch>Tijd dat je in gas kan staan voordat je geïnfecteerd raakt of een gasmasker nodig hebt</Dutch>
         </Key>
         <Key ID="STR_KAT_Chemical_SETTING_affectAI">
             <English>Gas Affects AI</English>
@@ -84,6 +102,9 @@
             <Portuguese>O gás afeta a IA</Portuguese>
             <Polish>Gaz wpływa na AI</Polish>
             <Czech>Plyn ovlivňuje AI</Czech>
+            <Finnish>Kaasu vaikuttaa tekoälyyn</Finnish>
+            <Russian>Газ влияет на ИИ.</Russian>
+            <Dutch>Gas beïnvloed KI/AI</Dutch>
         </Key>
         <Key ID="STR_KAT_Chemical_SETTING_affectAI_disc">
             <English>Determines if AI is affected by gas (If you are running this on a local server this can cause perfomance problems)</English>
@@ -96,6 +117,9 @@
             <Portuguese>Determina se a IA é afetada pelo gás (se você estiver executando isso em um servidor local, isso pode causar problemas de desempenho)</Portuguese>
             <Polish>Ustala czy AI może być zainfekowane (Może powodować problemy z wydajnością)</Polish>
             <Czech>Určuje, zda je AI ovlivněno plynem (může způsobovat problémy s výkonem pokud bude spuštěno na lokálním serveru)</Czech>
+            <Finnish>Määrittää, vaikuttaako kaasu tekoälyyn (jos käytät peliä paikallisella palvelimella, tämä voi aiheuttaa suorituskykyongelmia)</Finnish>
+            <Russian>Определяет, влияет ли GAS на искусственный интеллект (если вы запускаете его на локальном сервере, это может вызвать проблемы с производительностью).</Russian>
+            <Dutch>Bepaald of KI/AI beïnvloed wordt door gas (als je dit doet op een lokale server kan dit leiden tot prestatieproblemen)</Dutch>
         </Key>
         <Key ID="STR_KAT_Chemical_GasFilterItem">
             <English>Gas mask filter</English>
@@ -108,6 +132,9 @@
             <Portuguese>Filtro de máscara de gás</Portuguese>
             <Polish>Filtr do maski gazowej</Polish>
             <Czech>Filtr Plynových masek</Czech>
+            <Finnish>Kaasunaamariin suodatin</Finnish>
+            <Russian>Фильтр противогаза</Russian>
+            <Dutch>Gasmasker filter</Dutch>
         </Key>
         <Key ID="STR_KAT_Chemical_GasFilterItem_desc">
             <English>Replacement filter for gas mask</English>
@@ -120,6 +147,9 @@
             <Portuguese>Filtro substituto para máscara de gás</Portuguese>
             <Polish>Filtr zastępczy do maski gazowej</Polish>
             <Czech>Náhradní filtr pro Plynové masky</Czech>
+            <Finnish>Vaihtosuodatin kaasunaamariin</Finnish>
+            <Russian>Сменный фильтр для противогаза</Russian>
+            <Dutch>Vervangend filter voor gasmaskers</Dutch>
         </Key>
         <Key ID="STR_KAT_Chemical_sealantItem">
             <English>Sealant tube</English>
@@ -132,6 +162,9 @@
             <Portuguese>Tubo de vedação</Portuguese>
             <Polish>Uszczelniacz</Polish>
             <Czech>Těsnící hmota</Czech>
+            <Finnish>Tiivisteputki</Finnish>
+            <Russian>Трубка для герметика</Russian>
+            <Dutch>Afdichtmiddel buis</Dutch>
         </Key>
         <Key ID="STR_KAT_Chemical_sealantItem_desc">
             <English>Sealant which is used to seal objects when e.g. a toxic substance leaks out</English>
@@ -144,6 +177,21 @@
             <Portuguese>Selante que é usado para selar objetos quando, por exemplo, há vazamento de substância tóxica</Portuguese>
             <Polish>Uszczelniacz używany do uszczelniania przedmiotów, na przykład w przypadku wycieków toksycznych gazów</Polish>
             <Czech>Hmota používaná k utěsnění objektů např. při úniku toxických substancí</Czech>
+            <Finnish>Tiiviste, jota käytetään esineiden tiivistämiseen, kun myrkyllistä ainetta vuotaa ulos</Finnish>
+            <Russian>Герметик, который используется для герметизации предметов, например, при утечке токсичного вещества</Russian>
+            <Dutch>Afdichtmiddel dat gebruikt wordt om een object te dichten wanneer er bijvoorbeeld een giftige stof lekt</Dutch>
+        </Key>
+        <Key ID="STR_KAT_Chemical_ChemicalDetectorDisplayName">
+            <English>JCAD Chemical Detector</English>
+            <Italian>Rilevatore chimico JCAD</Italian>
+            <French>Détecteur de produits chimiques JCAD</French>
+            <Japanese>JCAD 化学剤検知器</Japanese>
+        </Key>
+        <Key ID="STR_KAT_Chemical_ChemicalDetectorDescription">
+            <English>Used to detect KAT toxic chemicals</English>
+            <Italian>Utilizzato per rilevare sostanze chimiche tossiche KAT</Italian>
+            <French>Utilisé pour détecter les produits chimiques toxiques KAT</French>
+            <Japanese>KAT毒性化学物質の検出に使用</Japanese>
         </Key>
         <Key ID="STR_KAT_Chemical_giveGasMask_action">
             <English>Put on gas mask</English>
@@ -156,6 +204,9 @@
             <Portuguese>Colocar máscara de gás</Portuguese>
             <Polish>Załóż maskę gazową</Polish>
             <Czech>Nasadit Plynovou masku</Czech>
+            <Finnish>Laita kaasunaamari päälle</Finnish>
+            <Russian>Надеть противогаз</Russian>
+            <Dutch>Doe gasmasker op</Dutch>
         </Key>
         <Key ID="STR_KAT_Chemical_giveGasMask_progress">
             <English>Put on gas mask...</English>
@@ -168,6 +219,9 @@
             <Portuguese>Colocando máscara de gás...</Portuguese>
             <Polish>Zakładanie maski...</Polish>
             <Czech>Nasazování Plynové masky</Czech>
+            <Finnish>Kaasunaamari on laitettu päähän</Finnish>
+            <Russian>Надевается противогаз...</Russian>
+            <Dutch>Gasmasker wordt opgezet...</Dutch>
         </Key>
         <Key ID="STR_KAT_Chemical_CheckGasMaskDurability">
             <English>Check gas mask durability</English>
@@ -180,6 +234,9 @@
             <Portuguese>Checar a durabilidade da máscara de gás</Portuguese>
             <Polish>Sprawdź wytrzymałość maski gazowej</Polish>
             <Czech>Zkontrolovat odolnost Plynové masky</Czech>
+            <Finnish>Tarkista kaasunaamarin kestävyys</Finnish>
+            <Russian>Проверьте время действия противогаза</Russian>
+            <Dutch>Check levensduur Gasmasker</Dutch>
         </Key>
         <Key ID="STR_KAT_Chemical_ChangeGasMaskFilter">
             <English>Replace gas mask filter</English>
@@ -192,6 +249,9 @@
             <Portuguese>Substituir o filtro da máscara de gás</Portuguese>
             <Polish>Wymień filtr</Polish>
             <Czech>Vyměnit filtr Plynové masky</Czech>
+            <Finnish>Vaihda kaasunaamarin suodatin</Finnish>
+            <Russian>Заменить фильтр противогаза</Russian>
+            <Dutch>Vervang het filter van de gasmasker</Dutch>
         </Key>
         <Key ID="STR_KAT_Chemical_ChemDetector_Mute">
             <English>Mute Chemical Detector.</English>
@@ -199,23 +259,29 @@
             <German>Chemischen Detektor stumm schalten.</German>
             <French>Désactiver le son du détecteur de produits chimiques</French>
             <Korean>화학물 탐지기 음소거</Korean>
-            <Japanese>化学検知器をミュート</Japanese>
+            <Japanese>化学剤検知器をミュート</Japanese>
             <Italian>Silenzia il rilevatore chimico</Italian>
             <Portuguese>Silenciar detector químico</Portuguese>
             <Polish>Wycisz Detektor chemiczny</Polish>
             <Czech>Ztlumit Chemický Detektor</Czech>
+            <Finnish>Mykistä kemikaalien ilmaisin</Finnish>
+            <Russian>Заглушить химический детектор.</Russian>
+            <Dutch>Demp chemicaliën detector.</Dutch>
         </Key>
         <Key ID="STR_KAT_Chemical_ChemDetector_Unmute">
             <English>Unmute Chemical Detector.</English>
             <Spanish>Desilenciar Detector Quimico</Spanish>
             <German>Chemischen Detektor laut schalten.</German>
             <French>Activer le son du détecteur de produits chimiques</French>
-            <Japanese>化学検知器のミュート解除</Japanese>
+            <Japanese>化学剤検知器のミュート解除</Japanese>
             <Korean>화학물 탐지기 음소거 해제</Korean>
             <Italian>Smuta il rilevatore chimico</Italian>
             <Portuguese>Ativar som de detector químico</Portuguese>
             <Polish>Odcisz Detektor chemiczny</Polish>
             <Czech>Zapnout zvuk Chemického Detektoru</Czech>
+            <Finnish>Poista mykistys kemikaalien tunnistimesta.</Finnish>
+            <Russian>Включите химический детектор.</Russian>
+            <Dutch>Ontdemp chemicaliën detector.</Dutch>
         </Key>
         <Key ID="STR_KAT_Chemical_GasModule_Displayname">
             <English>Create contaminated area / object</English>
@@ -228,6 +294,9 @@
             <Portuguese>Criar área/objeto contaminado</Portuguese>
             <Polish>Stwórz skażony obszar/obiekt</Polish>
             <Czech>Vytvořit kontaminovanou oblast / objekt</Czech>
+            <Finnish>Saastuta alue/esine</Finnish>
+            <Russian>Создать загрязненную область/объект</Russian>
+            <Dutch>Creëer gecontamineerd gebied / object</Dutch>
         </Key>
         <Key ID="STR_KAT_Chemical_GasModule_description">
             <English>Radius around the module which is filled with gas.</English>
@@ -240,18 +309,9 @@
             <Portuguese>Raio ao redor do módulo que está cheio de gás.</Portuguese>
             <Polish>Zasięg wokół modułu, który jest skażony</Polish>
             <Czech>Poloměr kolem modulu která bude zamořen plynem</Czech>
-        </Key>
-        <Key ID="STR_KAT_Chemical_GasModule_min_radius_dcs">
-            <English>The Minimal Range describes the area around the module where the gas is most lethal</English>
-            <Spanish>El rango minimo describe el area alrededor del modulo en el cual el gas sera mas letal</Spanish>
-            <German>Die minimale Reichweite beschreibt den Bereich im Umkreis des Moduls, in dem das Gas am tödlichsten wirkt.</German>
-            <French>Le rayon minimal décrit la zone autour du module ou le gaz est le plus létal</French>
-            <Japanese>最小範囲は、ガスが最も致死的であるモジュールの周辺を表します。</Japanese>
-            <Korean>최소 범위는 가스가 가장 치명적으로 작동하는 모듈 주변 영역을 나타냅니다.</Korean>
-            <Italian>Il raggio minimo descrive l'area attorno al modulo dove il gas è più letale</Italian>
-            <Portuguese>O Alcance Mínimo descreve a área ao redor do módulo onde o gás é mais letal</Portuguese>
-            <Polish>Minimalny zasięg określa obszar wokół modułu, gdzie gaz jest bardziej śmiertelny</Polish>
-            <Czech>Minimální vzdálenost vyjadřuje oblast kolem modulu kde je plyn nejvíce smrtící</Czech>
+            <Finnish>Kaasulla täytetyn alueen ympärillä oleva säde</Finnish>
+            <Russian>Радиус вокруг модуля, заполненного газом.</Russian>
+            <Dutch>Radius om de module dat gevuld is met gas.</Dutch>
         </Key>
         <Key ID="STR_KAT_Chemical_GasModule_max_radius_dcs">
             <English>The Maximum Range is a range around the Minimal Range where the gas is less lethal and you have a longer chance of survival.(distance from module to outer ring)</English>
@@ -264,6 +324,9 @@
             <Portuguese>O Alcance Máximo é um alcance ao redor do Alcance Mínimo onde o gás é menos letal e você tem uma chance maior de sobrevivência (distância do módulo ao anel externo)</Portuguese>
             <Polish>Maksymalny zasięg określa obszar wokół modułu, gdzie gaz jest mniej zabójczy i masz większe szanse na przeżycie (odległość od modułu do zewnętrznego pierścienia)</Polish>
             <Czech>Maximální vzdálenost je vzdálenost kolem Minimální vzdálenosti kde je plyn méně smrtící a máte větší šanci na přežití (vzdálenost od modulu k vnějšímu kruhu).</Czech>
+            <Finnish>Maksimietäisyys on vähimmäisalue, jossa kaasu on vähemmän tappava ja sinulla on pidempi mahdollisuus selviytyä. (etäisyys moduulista ulkorenkaaseen)</Finnish>
+            <Russian>Максимальный радиус-это радиус вокруг минимального радиуса, при котором газ менее смертоносен и у вас больше шансов на выживание. (Расстояние от модуля до внешнего круга)</Russian>
+            <Dutch>Het maximaal bereik is het bereik om het minimale bereik waar het gas minder dodelijk is, en je een langere overlevings hebt. (afstand van module tot buitenste ring)</Dutch>
         </Key>
         <Key ID="STR_KAT_Chemical_GasModule_createContaminatedObject">
             <English>You are about to create a contaminated Object.</English>
@@ -276,6 +339,9 @@
             <Portuguese>Você está prestes a criar um objeto contaminado.</Portuguese>
             <Polish>Zaraz stworzysz skażony obiekt</Polish>
             <Czech>Chystáte se vytvořit kontaminovaný objekt</Czech>
+            <Finnish>Olet saastuttamassa esineen.</Finnish>
+            <Russian>Вы собираетесь создать зараженный объект.</Russian>
+            <Dutch>Je staat op het punt een gecontamineerd object te creëeren.</Dutch>
         </Key>
         <Key ID="STR_KAT_Chemical_GasModule_createContaminatedZone">
             <English>You are about to create a contaminated Zone.</English>
@@ -288,6 +354,9 @@
             <Portuguese>Você está prestes a criar uma zona contaminada.</Portuguese>
             <Polish>Zaraz stworzysz skażony obszar</Polish>
             <Czech>Chystáte se vytvořit kontaminovou oblast</Czech>
+            <Finnish>Olet saastuttamassa alueen.</Finnish>
+            <Russian>Вы собираетесь создать загрязненную зону.</Russian>
+            <Dutch>Je staat op het punt om een gecontamineerd gebied te creëeren.</Dutch>
         </Key>
         <Key ID="STR_KAT_Chemical_GasModule_placeModuleOnObject">
             <English>To create a contaminated object place the module on a empty object.</English>
@@ -300,6 +369,9 @@
             <Portuguese>Para criar um objeto contaminado, coloque o módulo em um objeto vazio.</Portuguese>
             <Polish>Aby stworzyć skażony obiekt, umieść moduł na pustym obiekcie.</Polish>
             <Czech>Pro vytvoření kontaminovaného objektu položte modul na prázdný objekt.</Czech>
+            <Finnish>Luodaksesi saastuneen objektin aseta moduuli tyhjälle objektille.</Finnish>
+            <Russian>Чтобы создать зараженный объект, поместите модуль на пустой объект.</Russian>
+            <Dutch>Om een gecontamineerd object te creëeren, moet je de module op een leeg object plaatsen.</Dutch>
         </Key>
         <Key ID="STR_KAT_Chemical_sealLeak">
             <English>Seal leak</English>
@@ -312,6 +384,9 @@
             <Portuguese>Vazamento de gás</Portuguese>
             <Polish>Uszczelnij wyciek</Polish>
             <Czech>Utěsnit netěsnost</Czech>
+            <Finnish>Tiivisteen vuoto</Finnish>
+            <Russian>Герметизация утечки</Russian>
+            <Dutch>Dicht lek</Dutch>
         </Key>
         <Key ID="STR_KAT_Chemical_GasModule_SealLeak">
             <English>Seal leak</English>
@@ -324,18 +399,9 @@
             <Portuguese>Vazamento de gás</Portuguese>
             <Polish>Uszczelnij wyciek</Polish>
             <Czech>Utěsnit netěsnost</Czech>
-        </Key>
-        <Key ID="STR_KAT_Chemical_GasModule_Needbigger">
-            <English>Minimal Range need to be less than Maximum Range!</English>
-            <Spanish>¡El rango minimo tiene que ser menor al rango maximo!</Spanish>
-            <German>Minimale Reichweite muss kleiner als maximale Reichweite sein!</German>
-            <French>Le rayon minimal a besoin d'être plus petit que le rayon maximal !</French>
-            <Japanese>最小範囲は最大範囲よりも小さくする必要があります!</Japanese>
-            <Korean>최소 범위는 반드시 최대 범위보다 작아야 합니다!</Korean>
-            <Italian>Il raggio minimo deve essere minore del raggio massimo!</Italian>
-            <Portuguese>O Alcance Mínimo precisa ser menor que o Alcance Máximo!</Portuguese>
-            <Polish>Minimalny zasięg musi być mniejszy niż maksymalny zasięg</Polish>
-            <Czech>Minimální vzdálenost musí být menší než Maximální vzdálenost!</Czech>
+            <Finnish>Tuki vuoto</Finnish>
+            <Russian>Герметизация утечки</Russian>
+            <Dutch>Dicht lek</Dutch>
         </Key>
         <Key ID="STR_KAT_Chemical_Intoxication">
             <English>Intoxication</English>
@@ -348,6 +414,9 @@
             <Portuguese>Intoxicação</Portuguese>
             <Polish>Zatrucie</Polish>
             <Czech>Intoxikace</Czech>
+            <Finnish>Päihtymys</Finnish>
+            <Russian>Интоксикация</Russian>
+            <Dutch>Intoxicatie</Dutch>
         </Key>
         <Key ID="STR_KAT_Chemical_GasBox_Displayname">
             <English>[ACE] 82mm Gas Rounds Box</English>
@@ -359,6 +428,9 @@
             <Italian>[ACE] Box colpi a gas 82mm</Italian>
             <Portuguese>[ACE] Caixa de cartuchos de gás tóxico de 82 mm</Portuguese>
             <Polish>[ACE] Skrzynka amunicji gazowej 82mm</Polish>
+            <Finnish>[ACE] 82mm kaasulaastin kuorilaatikko</Finnish>
+            <Russian>[ACE] Коробка с 82-мм газовыми патронами</Russian>
+            <Dutch>[ACE] 82mm Gasgranatenkist</Dutch>
         </Key>
         <Key ID="STR_KAT_Chemical_M7A3_DcsShort">
             <English>The M7A3 CS gas grenade is a non-lethal tear gas grenade that causes severe burning of the mucous membranes and eyes on contact.</English>
@@ -371,6 +443,9 @@
             <Portuguese>A granada de gás M7A3 CS é uma granada de gás lacrimogêneo não letal que causa queimaduras graves nas membranas mucosas e nos olhos ao entrar em contato.</Portuguese>
             <Polish>Granat gazowy M7A3 CS to nieśmiercionośny granat z gazem łzawiącym, który przy kontakcie powoduje silne pieczenie błon śluzowych i oczu.</Polish>
             <Czech>M7A3 CS je plynový granát s nesmrtícím slzným plynem, který způsobuje závažná popálení sliznic a očí při kontaktu s nimi.</Czech>
+            <Finnish>M7A3 CS -kaasukranaatti on ei-tappava kyynelkaasukranaatti, joka koskettaa limakalvoja ja silmiä vakavasti.</Finnish>
+            <Russian>Газовая граната M7A3 CS - это несмертельная граната со слезоточивым газом, которая при попадании вызывает сильное жжение слизистых оболочек и глаз.</Russian>
+            <Dutch>The M7A3 CS gasgranaat is een niet-dodelijke traangasgranaat dat op contact een ernstig brandend gevoel in het slijmvlies en de ogen creëerd.</Dutch>
         </Key>
         <Key ID="STR_KAT_Chemical_TriWire_Gas_Name">
             <English>Tripwire Gas</English>
@@ -383,6 +458,9 @@
             <Portuguese>Gás Tripwire</Portuguese>
             <Polish>Pułapka gazowa na linkę</Polish>
             <Czech>Nástražný drát s plynovým granátem</Czech>
+            <Finnish>Kaasun ja kranaatin laukaisulanka</Finnish>
+            <Russian>Газовая растяжка</Russian>
+            <Dutch>Gas struikeldraad</Dutch>
         </Key>
         <Key ID="STR_KAT_Chemical_TriWire_Gas_Desc">
             <English>Type: Tripwire gas - Sprays a poisonous gas when triggered.&lt;br /&gt;Rounds: 1&lt;br /&gt;Used on: Ground</English>
@@ -395,6 +473,9 @@
             <Portuguese>Tipo: Tripwire gas - Espalha um gás venenoso quando acionado.&lt;br /&gt;Projéteis: 1&lt;br /&gt;Usado em: Solo</Portuguese>
             <Polish>Po aktywowaniu rozpyla trujący gaz. &lt;br/&gt; Ilość: 1&lt;br/&gt;Używać na ziemi</Polish>
             <Czech>Typ: Nástražný drát s plynovým granátem - Při aktivaci vypustí do ovzduší jedovatý plyn.&lt;br/&gt;Ran: 1&lt;br/&gt;Použití: Země</Czech>
+            <Finnish>Tyyppi: kaasu-käsikranaatin laukaisulanka - suihkuttaa myrkyllistä kaasua laukaisussa &lt;br/&gt;Laukut: 1 &lt;br/&gt;Käytetty: maassa</Finnish>
+            <Russian>Тип: Газовая растяжка - распыляет отравляющий газ при активации.&lt;br/&gt;Боеприпасов: 1 &lt;br/&gt;используется на: земле</Russian>
+            <Dutch>Type: Gas struikeldraad - Sproeit een giftig gas wanneer geactiveerd.&lt;br/&gt;Ladingen: 1&lt;br/&gt;Gebruik op: De grond</Dutch>
         </Key>
         <Key ID="STR_KAT_Chemical_ToxicGas_MFDNAME">
             <English>Toxic gas</English>
@@ -407,6 +488,9 @@
             <Portuguese>Gás tóxico</Portuguese>
             <Polish>Toksyczny gaz</Polish>
             <Czech>Toxický plyn</Czech>
+            <Finnish>Myrkyllinen kaasu</Finnish>
+            <Russian>Токсичный газ</Russian>
+            <Dutch>Gifgas</Dutch>
         </Key>
         <Key ID="STR_KAT_Chemical_ToxicGas_DisplayName">
             <English>82mm Toxic Gas Round</English>
@@ -419,6 +503,9 @@
             <Portuguese>Cartucho de gás tóxico de 82mm</Portuguese>
             <Polish>Pocisk gazu toksycznego kal.82mm</Polish>
             <Czech>82mm Granát s Toxickým Plynem</Czech>
+            <Finnish>82 mm myrkyllinen kaasulaastikuori</Finnish>
+            <Russian>Снаряд с токсичным газом диаметром 82 мм</Russian>
+            <Dutch>82mm Gifgasgranaat</Dutch>
         </Key>
         <Key ID="STR_KAT_Chemical_CSGas_MFDNAME">
             <English>CS-Gas</English>
@@ -431,6 +518,9 @@
             <Portuguese>Gás CS</Portuguese>
             <Polish>Gaz łzawiący</Polish>
             <Czech>CS-Plyn</Czech>
+            <Finnish>CS-kaasu</Finnish>
+            <Russian>CS-газ</Russian>
+            <Dutch>CS-Gas</Dutch>
         </Key>
         <Key ID="STR_KAT_Chemical_CSGas_DisplayName">
             <English>82mm CS-Gas Round</English>
@@ -443,6 +533,9 @@
             <Portuguese>Cartucho de gás CS de 82mm</Portuguese>
             <Polish>Pocisk gazu łzawiącego kal.82mm</Polish>
             <Czech>82mm Granát s CS-Plynem</Czech>
+            <Finnish>82mm CS-kaasulaastikuori</Finnish>
+            <Russian>82-мм CS-Газовый патрон</Russian>
+            <Dutch>82mm CS-Gasgranaat</Dutch>
         </Key>
         <Key ID="STR_KAT_Chemical_M7A3_CSGrenade_DisplayName">
             <English>M7A3 Riot CS gas grenade</English>
@@ -455,6 +548,9 @@
             <Portuguese>Granada de gás CS M7A3</Portuguese>
             <Polish>M7A3 Granat gazowy</Polish>
             <Czech>Granát M7A3 s CS-Plynem</Czech>
+            <Finnish>M7A3 CS kaasukranaatti</Finnish>
+            <Russian>Газовая граната M7A3 Riot CS</Russian>
+            <Dutch>M7A3 CS Traangasgranaat</Dutch>
         </Key>
         <Key ID="STR_KAT_Chemical_M7A3_CSGrenade_ShortName">
             <English>M7A3</English>
@@ -467,6 +563,9 @@
             <Portuguese>M7A3</Portuguese>
             <Polish>M7A3</Polish>
             <Czech>M7A3</Czech>
+            <Finnish>M7A3</Finnish>
+            <Russian>M7A3</Russian>
+            <Dutch>M7A3</Dutch>
         </Key>
         <Key ID="STR_KAT_Chemical_M43_DisplayName_1x">
             <English>M43 BZ LGB</English>
@@ -479,6 +578,9 @@
             <Portuguese>M43 BZ LGB</Portuguese>
             <Polish>M43 BZ LGB</Polish>
             <Czech>M43 BZ LGB</Czech>
+            <Finnish>M43 BZ LGB</Finnish>
+            <Russian>M43 BZ LGB</Russian>
+            <Dutch>M43 BZ LGB</Dutch>
         </Key>
         <Key ID="STR_KAT_Chemical_M43_ShortName_1x">
             <English>M43 BZ LGB</English>
@@ -491,6 +593,9 @@
             <Portuguese>M43 BZ LGB</Portuguese>
             <Polish>M43 BZ LGB</Polish>
             <Czech>M43 BZ LGB</Czech>
+            <Finnish>M43 BZ LGB</Finnish>
+            <Russian>M43 BZ LGB</Russian>
+            <Dutch>M43 BZ LGB</Dutch>
         </Key>
         <Key ID="STR_KAT_Chemical_M43_desc">
             <English>Laser Guided Cluster Bomb with a chemical gas payload.</English>
@@ -503,6 +608,9 @@
             <Portuguese>Bomba de fragmentação guiada por laser com uma carga útil de gás químico.</Portuguese>
             <Polish>Laser Guided Cluster Bomb z ładunkiem chemicznym</Polish>
             <Czech>Laserem naváděná kazetová munice s obsahem chemického plynu</Czech>
+            <Finnish>Laserohjattu rypälepommi kemiallisen kaasun hyötykuormalla</Finnish>
+            <Russian>Кассетная бомба с лазерным наведением и боевой нагрузкой из химического газа.</Russian>
+            <Dutch>Laser gestuurde clusterbom met een chemisch gas als lading.</Dutch>
         </Key>
         <Key ID="STR_KAT_Chemical_M43_DisplayName_2x">
             <English>2x M43 BZ LGB</English>
@@ -515,6 +623,9 @@
             <Portuguese>2x M43 BZ LGB</Portuguese>
             <Polish>2x M43 BZ LGB</Polish>
             <Czech>2x M43 BZ LGB</Czech>
+            <Finnish>2x M43 BZ LGB</Finnish>
+            <Russian>2x M43 BZ LGB</Russian>
+            <Dutch>2x M43 BZ LGB</Dutch>
         </Key>
         <Key ID="STR_KAT_Chemical_M43_ShortName_2x">
             <English>2x M43 BZ LGB</English>
@@ -527,6 +638,9 @@
             <Portuguese>2x M43 BZ LGB</Portuguese>
             <Polish>2x M43 BZ LGB</Polish>
             <Czech>2x M43 BZ LGB</Czech>
+            <Finnish>2x M43 BZ LGB</Finnish>
+            <Russian>2x M43 BZ LGB</Russian>
+            <Dutch>2x M43 BZ LGB</Dutch>
         </Key>
         <Key ID="STR_KAT_Chemical_HydraGas_desc">
             <English>Unguided rockets with Toxic-gas warhead.</English>
@@ -539,6 +653,9 @@
             <Portuguese>Foguetes não guiados com ogiva de gás tóxico.</Portuguese>
             <Polish>Rakiety niekierowane z głowicą zawierającą toksyczny gaz</Polish>
             <Czech>Neřízené rakety s bojovou hlavicí s toxickým plynem</Czech>
+            <Finnish>Ohjaamattomat raketit, joissa on myrkyllinen kaasukärje</Finnish>
+            <Russian>Неуправляемые ракеты с боеголовкой из токсичного газа.</Russian>
+            <Dutch>Ongestuurde rakketen met een gifgas kop.</Dutch>
         </Key>
         <Key ID="STR_KAT_Chemical_HydraGas_DisplayName">
             <English>Hydra GAS 19x</English>
@@ -551,6 +668,9 @@
             <Portuguese>Hydra GAS 19x</Portuguese>
             <Polish>Hydra GAS 19x</Polish>
             <Czech>Hydra GAS 19x</Czech>
+            <Finnish>Hydra KAASU 19x</Finnish>
+            <Russian>Hydra GAS 19x</Russian>
+            <Dutch>Hydra GAS 19x</Dutch>
         </Key>
         <Key ID="STR_KAT_Chemical_HydraGas_ShortName">
             <English>70mm GAS</English>
@@ -563,6 +683,9 @@
             <Portuguese>70mm GAS</Portuguese>
             <Polish>70mm GAS</Polish>
             <Czech>70mm GAS</Czech>
+            <Finnish>70mm KAASU</Finnish>
+            <Russian>70mm GAS</Russian>
+            <Dutch>70mm GAS</Dutch>
         </Key>
         <Key ID="STR_KAT_Chemical_LvL1_Gas">
             <English>Toxic gas (Level 1)</English>
@@ -575,6 +698,9 @@
             <Portuguese>Gás tóxico (Nível 1)</Portuguese>
             <Polish>Toksyczny gaz ( Poziom 1)</Polish>
             <Czech>Toxický plyn (Úroveň 1)</Czech>
+            <Finnish>Myrkyllinen kaasu (taso 1)</Finnish>
+            <Russian>Токсичный газ (уровень 1)</Russian>
+            <Dutch>Gifgas (Level 1)</Dutch>
         </Key>
         <Key ID="STR_KAT_Chemical_UI_max_range">
             <English>Maximum Range.</English>
@@ -587,18 +713,9 @@
             <Portuguese>Alcance Máximo</Portuguese>
             <Polish>Maksymalny zasięg</Polish>
             <Czech>Maximální vzdálenost.</Czech>
-        </Key>
-        <Key ID="STR_KAT_Chemical_UI_min_range">
-            <English>Minimal Range.</English>
-            <Spanish>Rango minimo</Spanish>
-            <German>Minimale Reichweite.</German>
-            <French>Portée minimale</French>
-            <Japanese>最小範囲</Japanese>
-            <Korean>최소 범위.</Korean>
-            <Italian>Raggio minimo.</Italian>
-            <Portuguese>Alcance Mínimo</Portuguese>
-            <Polish>Minimalny zasięg</Polish>
-            <Czech>Minimální vzdálenost.</Czech>
+            <Finnish>Suurin kantama</Finnish>
+            <Russian>Максимальная дальность действия.</Russian>
+            <Dutch>Maximaal bereik.</Dutch>
         </Key>
         <Key ID="STR_KAT_Chemical_UI_sealable">
             <English>Is sealable?</English>
@@ -611,6 +728,9 @@
             <Portuguese>É vedável?</Portuguese>
             <Polish>Można uszczelnić?</Polish>
             <Czech>Lze utěsnit?</Czech>
+            <Finnish>Onko se suljettavissa?</Finnish>
+            <Russian>Поддается герметизации?</Russian>
+            <Dutch>Is dichtbaar?</Dutch>
         </Key>
         <Key ID="STR_KAT_Chemical_UI_sealable_tooltip">
             <English>ONLY WORKS IF LOGIC IS SYNCED WITH AN OBJECT!</English>
@@ -623,6 +743,9 @@
             <Portuguese>SÓ FUNCIONA SE A LÓGICA ESTIVER SINCRONIZADA COM UM OBJETO!</Portuguese>
             <Polish>DZIAŁA TYLKO GDY LOGIKA JEST ZSYNCHRONIZOWANA Z OBIEKTEM!</Polish>
             <Czech>FUNGUJE POUZE POKUD JE LOGIKA SPOJENA S OBJEKTEM!</Czech>
+            <Finnish>TOIMII VAIN JOS LOGIIKKA SYNKRONOIDAAN OBJEKTIN KANSSA!</Finnish>
+            <Russian>РАБОТАЕТ ТОЛЬКО В ТОМ СЛУЧАЕ, ЕСЛИ МОДУЛЬ СИНХРОНИЗИРОВАН С ОБЪЕКТОМ!</Russian>
+            <Dutch>WERKT ALLEEN ALS LOGICA GESYNCHRONISEERD IS MET EEN OBJECT!</Dutch>
         </Key>
         <Key ID="STR_KAT_Chemical_UI_selectGas">
             <English>Select Gas:</English>
@@ -635,6 +758,9 @@
             <Portuguese>Seleção de Gás:</Portuguese>
             <Polish>Wybierz Gaz:</Polish>
             <Czech>Vybrat plyn:</Czech>
+            <Finnish>Valitse Kaasu</Finnish>
+            <Russian>Выберите газ:</Russian>
+            <Dutch>Selecteer gas:</Dutch>
         </Key>
         <Key ID="STR_KAT_Chemical_UI_gasType">
             <English>Gas Type:</English>
@@ -647,6 +773,35 @@
             <Portuguese>Tipo de Gás:</Portuguese>
             <Polish>Rodzaj Gazu:</Polish>
             <Czech>Typ plynu:</Czech>
+            <Finnish>Kaasutyyppi</Finnish>
+            <Russian>Тип газа:</Russian>
+            <Dutch>Gas type:</Dutch>
+        </Key>
+        <Key ID="STR_KAT_Chemical_SETTING_gasMaskSoundVolume">
+            <English>Gas Mask Sound Volume</English>
+            <Japanese>ガスマスクの音量</Japanese>
+            <French>Volume sonore du masque à gaz</French>
+        </Key>
+        <Key ID="STR_KAT_Chemical_SETTING_gasMaskSoundVolume_DESC">
+            <English>Determines how loud the breathing sounds are when using the gas mask</English>
+            <Japanese>ガスマスク使用時の呼吸音の大きさを設定します</Japanese>
+            <French>Détermine l'intensité des bruits respiratoires lors de l'utilisation du masque à gaz.</French>
+        </Key>
+        <Key ID="STR_KAT_Chemical_PutOnGasMask">
+            <English>Put on gas mask</English>
+            <Japanese>ガスマスクを装着</Japanese>
+            <French>Mettre le masque à gaz</French>          
+        </Key>
+        <Key ID="STR_KAT_Chemical_TakeOffGasMask">
+            <English>Take off gas mask</English>
+            <Japanese>ガスマスクを外す</Japanese>
+            <French>Enlever le masque à gaz</French>
+        </Key>
+        <Key ID="STR_KAT_Chemical_SETTING_dropWeaponChance">
+            <English>Drop Weapon Chance</English>
+        </Key>
+        <Key ID="STR_KAT_Chemical_SETTING_dropWeaponChance_DESC">
+            <English>Determines chance for dropping weapon while in tear gas</English>
         </Key>
     </Package>
 </Project>
