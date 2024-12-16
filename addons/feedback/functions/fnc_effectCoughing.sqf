@@ -6,17 +6,18 @@
  * Arguments:
  * 0: Enable <BOOL>
  * 1: Intensity <NUMBER>
+ * 2: Unit <OBJECT>
  *
  * Return Value:
  * None
  *
  * Example:
- * [true, 0.5] call kat_feedback_fnc_effectCoughing;
+ * [true, 0.5, player] call kat_feedback_fnc_effectCoughing;
  *
  * Public: No
  */
 
-params ["_enable", "_poisoned"];
+params ["_enable", "_poisoned", "_unit"];
 if (!_enable || !_poisoned) exitWith {
     if (GVAR(airPoisoning) != -1) then { GVAR(airPoisoning) ppEffectEnable false; };
 };
