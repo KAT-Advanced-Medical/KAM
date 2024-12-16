@@ -34,7 +34,7 @@ params ["_unit"];
 
     private _spo2 = GET_KAT_SPO2(_unit);
 
-    if(GVAR(staminaLossAtLowSPO2)) then {
+    if (GVAR(staminaLossAtLowSPO2)) then {
         if (!(_unit getVariable ["ACE_isUnconscious",false]) && {_spo2 <= GVAR(lowSPO2Level)}) then {
             if (ACEGVAR(advanced_fatigue,enabled)) then {
                 ["kat_LSDF", 1.5] call ACEFUNC(advanced_fatigue,addDutyFactor);
