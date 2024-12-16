@@ -12,6 +12,7 @@ PREP(gui_updateBodyImage);
 PREP(gui_updateInjuryListPart);
 PREP(gui_updateInjuryListWounds);
 PREP(handleBreathing);
+PREP(handleBreathingConditions);
 PREP(handlePneumothoraxDeterioration);
 PREP(handlePulmoHit);
 PREP(handleRespawn);
