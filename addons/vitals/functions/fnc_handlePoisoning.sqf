@@ -25,12 +25,13 @@
  _unit setVariable [QEGVAR(chemical,CSGas), (_currentCS - (_poisonAdjustment * _deltaT)) max 0, _syncValue];
  
  private _inZone = false;
+ private _distance = 0;
  
  {
      _y params ["_gasLogic", "_radius", "_gasLevel", "_condition", "_conditionArgs", "_isSealable"];
      TRACE_2("gasVitalsPFH loop",_x,_y);
  
-     private distance = _unit distance _gasLogic;
+     _distance = _unit distance _gasLogic;
  
      if (_distance < _radius) then {
         _inZone = true;
