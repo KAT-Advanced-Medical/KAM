@@ -21,4 +21,11 @@ class CfgWeapons {
         displayName = CSTRING(STSDisplayName);
         picture = QPATHTOF(UI\watch_sts.paa);
     };
+    class KAT_Ranger: ItemWatch {
+        ACE_hideItemType = "Watch";
+        author = "Mazinski";        
+        descriptionShort = "Ranger Watch";
+        displayName = "Ranger Watch";
+        picture = QPATHTOF(UI\RangerWatchFace.paa);
+    };
 };
