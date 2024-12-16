@@ -460,7 +460,7 @@ class RscTitles
                 valign = "middle";
                 shadow = 0;
                 font = "EtelkaMonospacePro";
-                text = "00"; //--- ToDo: Localize;
+                text = ""; //--- ToDo: Localize;
                 x = QUOTE(SAFEZONE_X_RIGHTEDGE - FRAME_W(24.6));
                 y = QUOTE(SAFEZONE_Y_LOWEDGE - FRAME_H(7.5));
                 w = QUOTE(FRAME_W(3));
