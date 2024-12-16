@@ -4,7 +4,7 @@
  * Monitors breathing conditions.
  *
  * Arguments:
- * 0: Unit That Was Hit <OBJECT>
+ * 0: Unit <OBJECT>
  *
  * Return Value:
  * None
