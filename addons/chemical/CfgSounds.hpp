@@ -1,9 +1,42 @@
 class CfgSounds {
+    class GVAR(cough_0) {
+        name = QGVAR(cough_0);
+        sound[] =
+        {
+            QPATHTOF(audio\cough_0.ogg),
+            2,
+            1,
+            10
+        };
+        titles[] = {};
+    };
     class GVAR(cough_1) {
         name = QGVAR(cough_1);
         sound[] =
         {
             QPATHTOF(audio\cough_1.ogg),
+            2,
+            1,
+            10
+        };
+        titles[] = {};
+    };
+    class GVAR(cough_2) {
+        name = QGVAR(cough_2);
+        sound[] =
+        {
+            QPATHTOF(audio\cough_2.ogg),
+            2,
+            1,
+            10
+        };
+        titles[] = {};
+    };
+    class GVAR(cough_3) {
+        name = QGVAR(cough_3);
+        sound[] =
+        {
+            QPATHTOF(audio\cough_3.ogg),
             2,
             1,
             10
