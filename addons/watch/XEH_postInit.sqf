@@ -10,7 +10,7 @@ if (!hasInterface) exitWith {};
     _unit say3D [_tone, 5];
 }] call CBA_fnc_addEventHandler;
 
-["KAT Watch", QGVAR(showKatmin), "Show KAT Watch", {
+["KAT Watch", QGVAR(showKatmin), CSTRING(ShowKATWatch_Setting), {
     // Conditions: canInteract
     if (!([ACE_player, objNull, ["isNotEscorting", "isNotInside"]] call ACEFUNC(common,canInteractWith))) exitWith { false };
 
@@ -58,7 +58,7 @@ if (!hasInterface) exitWith {};
     _return
 }, { false }, [24, [false, false, false]], false] call CBA_fnc_addKeybind;
 
-["KAT Watch", QGVAR(increaseTimer), "Add to R Model Watch Timer", {
+["KAT Watch", QGVAR(increaseTimer), CSTRING(AddTimer_Setting), {
     if (!([ACE_player, objNull, ["isNotEscorting", "isNotInside"]] call ACEFUNC(common,canInteractWith)) || {!('KAT_Ranger' in assignedItems ACE_player)}) exitWith { false };
 
     if !(GETMVAR(GVAR(RangerActive),false)) exitWith { false };
@@ -70,9 +70,9 @@ if (!hasInterface) exitWith {};
     };
 
     true
-}, { false }, [25, [false, false, true]], false] call CBA_fnc_addKeybind;
+}, { false }, [38, [false, false, true]], false] call CBA_fnc_addKeybind;
 
-["KAT Watch", QGVAR(decreaseTimer), "Subtract from R Model Watch Timer", {
+["KAT Watch", QGVAR(decreaseTimer), CSTRING(SubtractTimer_Setting), {
     if (!([ACE_player, objNull, ["isNotEscorting", "isNotInside"]] call ACEFUNC(common,canInteractWith)) || {!('KAT_Ranger' in assignedItems ACE_player)}) exitWith { false };
 
     if !(GETMVAR(GVAR(RangerActive),false)) exitWith { false };
@@ -84,9 +84,9 @@ if (!hasInterface) exitWith {};
     };
 
     true
-}, { false }, [38, [false, false, true]], false] call CBA_fnc_addKeybind;
+}, { false }, [36, [false, false, true]], false] call CBA_fnc_addKeybind;
 
-["KAT Watch", QGVAR(startTimer), "Start and Stop R Model Watch Timer", {
+["KAT Watch", QGVAR(startTimer), CSTRING(StartStopTimer_Setting), {
     if (!([ACE_player, objNull, ["isNotEscorting", "isNotInside"]] call ACEFUNC(common,canInteractWith)) || {!('KAT_Ranger' in assignedItems ACE_player)}) exitWith { false };
 
     private _timerLength = ACE_player getVariable [QGVAR(rangerTimer), 0];
