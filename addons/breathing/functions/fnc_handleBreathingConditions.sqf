@@ -1,7 +1,7 @@
 #include "..\script_component.hpp"
 /*
- * Author: Katalam
- * Called when a unit is damaged.
+ * Author: Mazinski
+ * Monitors breathing conditions.
  *
  * Arguments:
  * 0: Unit That Was Hit <OBJECT>
@@ -15,7 +15,7 @@
  * None
  *
  * Example:
- * [cursorTarget, [1, "Body"], objNull, "BulletBase"] call kat_breathing_fnc_handlePulmoHit;
+ * [player] call kat_breathing_fnc_handleBreathingConcidtions;
  *
  * Public: No
  */
