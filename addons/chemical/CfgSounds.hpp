@@ -58,6 +58,17 @@ class CfgSounds {
         };
         titles[] = {};
     };
+    class GVAR(chemBaseChime) {
+        name = QGVAR(chemBaseChime);
+        sound[] =
+        {
+            QPATHTOF(audio\baseChime.ogg),
+            2,
+            1.0,
+            5
+        };
+        titles[] = {};
+    };
     class GVAR(chemSlowChime) {
         name = QGVAR(chemSlowChime);
         sound[] =

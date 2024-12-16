@@ -59,10 +59,6 @@ private _exposure = _display displayCtrl 18805;
         _exposure ctrlSetText (_intensity toFixed 2);
 
         _unit setVariable [QGVAR(areaIntensity), _intensity, true];
-
-        if (_intensity < 0.1) then {
-            _unit setVariable [QGVAR(areaIntensity), 0, true];
-        };
     } else {
         _time ctrlSetText (LLSTRING(ChemicalDetector_Off));
         _exposure ctrlSetText ("-.--");
