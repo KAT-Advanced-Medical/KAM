@@ -195,6 +195,9 @@
             <Chinesesimp>%1 检查呼吸道: %2, %3</Chinesesimp>
             <Dutch>%1 Heeft de luchtwegen gecheckt: %2, %3</Dutch>
         </Key>
+        <Key ID="STR_KAT_Airway_checkAirway_poisonLog">
+            <English>%1 checked airways: Heavily Blistered</English>
+        </Key>
         <Key ID="STR_KAT_Airway_airway_log">
             <English>%1 inserted a %2</English>
             <German>%1 intubierte mit %2</German>
@@ -398,6 +401,9 @@
             <Norwegian>Luftveiene er frie</Norwegian>
             <Finnish>Tuuliputki on selkeä</Finnish>
             <Dutch>Luchtweg is vrij</Dutch>
+        </Key>
+        <Key ID="STR_KAT_Airway_AirwayStatus_Poison">
+            <English>Airway is heavily blistered</English>
         </Key>
         <Key ID="STR_KAT_Airway_AirwayStatus_NotClearForItem">
             <English>Item could not be used, airways are not clear</English>

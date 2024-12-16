@@ -137,6 +137,24 @@
             <Italian>Katmin Jump Standard</Italian>
             <French>Katmin Jump Standard</French>
         </Key>
+        <Key ID="STR_KAT_Watch_RangerDescription">
+            <English>Watch with Vital Monitoring Capabilities. Sua Sponte.</English>
+        </Key>
+        <Key ID="STR_KAT_Watch_RangerDisplayName">
+            <English>Katmin K12 Model R</English>
+        </Key>
+        <Key ID="STR_KAT_Watch_ShowKATWatch_Setting">
+            <English>Show KATMIN Watch</English>
+        </Key>
+        <Key ID="STR_KAT_Watch_AddTimer_Setting">
+            <English>Add 15 Seconds to Watch Timer</English>
+        </Key>
+        <Key ID="STR_KAT_Watch_SubtractTimer_Setting">
+            <English>Subtract 15 Seconds from Watch Timer</English>
+        </Key>
+        <Key ID="STR_KAT_Watch_StartStopTimer_Setting">
+            <English>Start and Stop Watch Timer</English>
+        </Key>
         <Key ID="STR_KAT_Watch_descentFT">
             <English>%1ft/s</English>
             <Japanese>%1ft/s</Japanese>

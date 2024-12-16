@@ -1,6 +1,7 @@
 #include "..\script_component.hpp"
 /*
- * Author: YetheSamartaka, Brett Mayson
+ * Author: YetheSamartaka
+ * Edited: Mazinski
  * Ensures proper initial values reset on respawn
  *
  * Arguments:
@@ -11,7 +12,7 @@
  * None
  *
  * Example:
- * [alive, body] call kat_chemical_fnc_handleRespawn;
+ * [alive, body] call kat_watch_fnc_handleRespawn;
  *
  * Public: No
  */
@@ -19,10 +20,5 @@
 params ["_unit","_dead"];
 TRACE_2("handleRespawn",_unit,_dead);
 
-if (!local _unit) exitWith {};
-
-params ["_unit"];
-
-[_unit] call FUNC(fullHealLocal);
-
-_unit setVariable [QGVAR(detectorSound), false, true];
+_unit setVariable [QGVAR(RangerStart), false, true];
+_unit setVariable [QGVAR(RangerTimer), 0, true];
