@@ -34,10 +34,6 @@ private _fnc_getActions = {
             _resultSampleActual = _resultSampleArray select 1;
             private _patient = _resultSampleArray select 0;
 
-            diag_log _resultSampleArray;
-            diag_log _resultSampleActual;
-            diag_log _patient;
-
             _actions pushBack [
                 [
                     _x,
