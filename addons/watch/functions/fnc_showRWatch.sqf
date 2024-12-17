@@ -54,6 +54,8 @@ private _o2 = _display displayCtrl 22810;
         _pfhID call CBA_fnc_removePerFrameHandler;
     };
 
+    _unit setVariable [QGVAR(rangerPFH), _pfhID, false];
+
     private _altitudeValue = round((getPosASL _unit) select 2);
 
     if (GVAR(altitudeUnit) == 1) then {
