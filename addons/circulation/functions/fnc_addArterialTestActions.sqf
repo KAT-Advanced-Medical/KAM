@@ -27,7 +27,6 @@ private _fnc_getActions = {
     {
         private _config = _cfgWeapons >> _x;
         _idNumber = getNumber (_config >> "nameID");
-        diag_log _idNumber;
 
         if (_idNumber > 0) then {   
             private _bloodSampleArray = missionNamespace getVariable [QEGVAR(circulation,bloodSampleMap), []];
