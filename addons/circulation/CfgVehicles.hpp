@@ -427,7 +427,7 @@ class CfgVehicles {
             class ACE_MainActions {
                 class KAT_ApplyBloodTest {
                     displayName = CSTRING(Arterial_Test);
-                    condition = QUOTE(missionNamespace getVariable [ARR_2(QQGVAR(abgEnable),false)]);
+                    condition = QUOTE(GVAR(abgEnable));
                     statement = "true";
                     insertChildren = QUOTE([ARR_2(_target,_player)] call FUNC(addArterialApplyActions));
                     icon = QACEPATHTOF(medical_gui,ui\cross.paa);
