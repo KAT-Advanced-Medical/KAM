@@ -43,7 +43,7 @@ class ACE_Medical_Treatment_Actions {
         displayNameProgress = CSTRING(Transfusing_Packed_RBC);
         callbackSuccess = "[_medic, _patient, _bodyPart, _className, _itemUser, _usedItem] call ace_medical_treatment_fnc_ivBag; [_patient, -400, 16, _className] call kat_pharma_fnc_fluid;";
     };
-    class PackedRBC_250: BloodIV {
+    class PackedRBCIV_250: BloodIV {
         displayName = CSTRING(Actions_Packed_RBC_250);
         items[] = {"kat_PackedRBCIV_250"};
         displayNameProgress = CSTRING(Transfusing_Packed_RBC);

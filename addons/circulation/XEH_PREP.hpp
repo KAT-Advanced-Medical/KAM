@@ -39,6 +39,7 @@ PREP(handleCardiacArrest);
 PREP(handleRespawn);
 PREP(handleTreatment);
 PREP(init);
+PREP(ivBagLocal);
 PREP(measureBloodPressure);
 PREP(onCloseDialog);
 PREP(placeAED_PickUpAction);

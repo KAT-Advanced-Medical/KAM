@@ -8,6 +8,9 @@ class CfgFunctions {
             class cprSuccess {
                 file = QPATHTOF(functions\fnc_cprSuccess.sqf);
             };
+            class ivBagLocal {
+                file = QPATHTOF(functions\fnc_ivBagLocal.sqf);
+            };
         };
     };
     class overwrite_ace_medical_status {

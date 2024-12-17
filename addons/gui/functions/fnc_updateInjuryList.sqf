@@ -81,6 +81,8 @@ private _totalIvVolume = 0;
 private _saline = 0;
 private _blood = 0;
 private _plasma = 0;
+private _ringers = 0;
+private _packedRBC = 0;
 {
     _x params ["_volumeRemaining", "_type"];
     switch (_type) do {
@@ -93,11 +95,11 @@ private _plasma = 0;
         case "Plasma": {
             _plasma = _plasma + _volumeRemaining;
         };
-        case "PackedRBC": {
-            _packedRBC = _packedRBC + _volumeRemaining;
-        };
         case "Ringers Lactate": {
             _ringers = _ringers + _volumeRemaining;
+        };
+        case "PackedRBC": {
+            _packedRBC = _packedRBC + _volumeRemaining;
         };
     };
     _totalIvVolume = _totalIvVolume + _volumeRemaining;
@@ -114,10 +116,10 @@ if (_totalIvVolume > 0) then {
         _entries pushBack [format [localize ACELSTRING(medical_treatment,receivingPlasmaIvVolume), floor _plasma], [1, 1, 1, 1]];
     };
     if (_ringers > 0) then {
-        _entries pushBack [format [localize ELSTRING(pharma,receivingPacked_RBCIvVolume), floor _plasma], [1, 1, 1, 1]];
+        _entries pushBack [format [localize ELSTRING(pharma,receivingRingers_LactateIvVolume), floor _ringers], [1, 1, 1, 1]];
     };
     if (_packedRBC > 0) then {
-        _entries pushBack [format [localize ELSTRING(pharma,receivingRingers_LactateIvVolume), floor _plasma], [1, 1, 1, 1]];
+        _entries pushBack [format [localize ELSTRING(pharma,receivingPacked_RBCIvVolume), floor _packedRBC], [1, 1, 1, 1]];
     };
 } else {
     _entries pushBack [localize ACELSTRING(medical_treatment,Status_NoIv), _nonissueColor];
