@@ -54,6 +54,8 @@ private _o2 = _display displayCtrl 22810;
         _pfhID call CBA_fnc_removePerFrameHandler;
     };
 
+    _unit setVariable [QGVAR(rangerPFH), _pfhID, false];
+
     private _altitudeValue = round((getPosASL _unit) select 2);
 
     if (GVAR(altitudeUnit) == 1) then {
@@ -82,23 +84,8 @@ private _o2 = _display displayCtrl 22810;
     _second ctrlSetAngle [(linearConversion [0, 60, _seconds, 0, 360]), 0.5, 0.5, true];
 
     private _timeValue = _unit getVariable [QGVAR(rangerTimer), 0];
-    private _active = _unit getVariable [QGVAR(rangerStart), false];
 
     _timer ctrlSetText ([_timeValue, 2, 0] call CBA_fnc_formatNumber);
-    
-    if (_active) then {
-        _timeValue = (_timeValue - 1) max 0;
-
-        _timer ctrlSetText ([_timeValue, 2, 0] call CBA_fnc_formatNumber);
-        _unit setVariable [QGVAR(rangerTimer), _timeValue, false];
-
-        if (_timeValue == 0) then {
-            _unit setVariable [QGVAR(rangerStart), false, false];
-            [QGVAR(playWatchTone), [_unit, QGVAR(watchAlarm)], _unit] call CBA_fnc_targetEvent;
-        };
-    } else {
-        _timer ctrlSetText ([_timeValue, 2, 0] call CBA_fnc_formatNumber);
-    };
 }, 1, [
     _unit,
     _hour,
