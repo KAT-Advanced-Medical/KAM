@@ -21,10 +21,6 @@ params ["_unit"];
     _this params ["_args", "_pfhID"];
     _args params ["_unit"];
 
-    if (GVAR(RangerActive)) exitWith {
-        _pfhID call CBA_fnc_removePerFrameHandler;
-    };
-
     if !(alive _unit) exitWith {
         _pfhID call CBA_fnc_removePerFrameHandler;
     };
@@ -47,5 +43,7 @@ params ["_unit"];
 
             _pfhID call CBA_fnc_removePerFrameHandler;
         };
+    } else {
+        _pfhID call CBA_fnc_removePerFrameHandler;
     };
 }, 1, [_unit]] call CBA_fnc_addPerFrameHandler;

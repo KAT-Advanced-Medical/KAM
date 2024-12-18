@@ -235,6 +235,15 @@ class CfgVehicles {
 
     class LandVehicle;
     class Car: LandVehicle {
+        class ACE_SelfActions {
+            class KAT_ArterialTest {
+                displayName = CSTRING(Arterial_Test_Action); 
+                condition = QUOTE(_target call ACEFUNC(medical_treatment,isMedicalVehicle));
+                statement = "";
+                insertChildren = QUOTE([ARR_2(_target,_player)] call FUNC(addArterialTestActions));
+                icon = QACEPATHTOF(medical_gui,ui\cross.paa);
+            };
+        };
         class ACE_Actions {
             class ACE_MainActions {
                 class KAT_ArterialTest {
@@ -250,6 +259,15 @@ class CfgVehicles {
 
     class Car_F: Car {};
     class Quadbike_01_base_F: Car_F {
+        class ACE_SelfActions {
+            class KAT_ArterialTest {
+                displayName = CSTRING(Arterial_Test_Action); 
+                condition = QUOTE(_target call ACEFUNC(medical_treatment,isMedicalVehicle));
+                statement = "";
+                insertChildren = QUOTE([ARR_2(_target,_player)] call FUNC(addArterialTestActions));
+                icon = QACEPATHTOF(medical_gui,ui\cross.paa);
+            };
+        };
         class ACE_Actions: ACE_Actions {
             class ACE_MainActions: ACE_MainActions {
                 class KAT_ArterialTest {
@@ -264,6 +282,15 @@ class CfgVehicles {
     };
 
     class Kart_01_Base_F: Car_F {
+        class ACE_SelfActions {
+            class KAT_ArterialTest {
+                displayName = CSTRING(Arterial_Test_Action); 
+                condition = QUOTE(_target call ACEFUNC(medical_treatment,isMedicalVehicle));
+                statement = "";
+                insertChildren = QUOTE([ARR_2(_target,_player)] call FUNC(addArterialTestActions));
+                icon = QACEPATHTOF(medical_gui,ui\cross.paa);
+            };
+        };
         class ACE_Actions: ACE_Actions {
             class ACE_MainActions: ACE_MainActions {
                 class KAT_ArterialTest {
@@ -278,6 +305,15 @@ class CfgVehicles {
     };
 
     class Tank: LandVehicle {
+        class ACE_SelfActions {
+            class KAT_ArterialTest {
+                displayName = CSTRING(Arterial_Test_Action); 
+                condition = QUOTE(_target call ACEFUNC(medical_treatment,isMedicalVehicle));
+                statement = "";
+                insertChildren = QUOTE([ARR_2(_target,_player)] call FUNC(addArterialTestActions));
+                icon = QACEPATHTOF(medical_gui,ui\cross.paa);
+            };
+        };
         class ACE_Actions {
             class ACE_MainActions {
                 class KAT_ArterialTest {
@@ -292,6 +328,15 @@ class CfgVehicles {
     };
 
     class Motorcycle: LandVehicle {
+        class ACE_SelfActions {
+            class KAT_ArterialTest {
+                displayName = CSTRING(Arterial_Test_Action); 
+                condition = QUOTE(_target call ACEFUNC(medical_treatment,isMedicalVehicle));
+                statement = "";
+                insertChildren = QUOTE([ARR_2(_target,_player)] call FUNC(addArterialTestActions));
+                icon = QACEPATHTOF(medical_gui,ui\cross.paa);
+            };
+        };
         class ACE_Actions {
             class ACE_MainActions {
                 class KAT_ArterialTest {
@@ -307,6 +352,15 @@ class CfgVehicles {
 
     class Air;
     class Helicopter: Air {
+        class ACE_SelfActions {
+            class KAT_ArterialTest {
+                displayName = CSTRING(Arterial_Test_Action); 
+                condition = QUOTE(_target call ACEFUNC(medical_treatment,isMedicalVehicle));
+                statement = "";
+                insertChildren = QUOTE([ARR_2(_target,_player)] call FUNC(addArterialTestActions));
+                icon = QACEPATHTOF(medical_gui,ui\cross.paa);
+            };
+        };
         class ACE_Actions {
             class ACE_MainActions {
                 class KAT_ArterialTest {
@@ -321,6 +375,15 @@ class CfgVehicles {
     };
 
     class Plane: Air {
+        class ACE_SelfActions {
+            class KAT_ArterialTest {
+                displayName = CSTRING(Arterial_Test_Action); 
+                condition = QUOTE(_target call ACEFUNC(medical_treatment,isMedicalVehicle));
+                statement = "";
+                insertChildren = QUOTE([ARR_2(_target,_player)] call FUNC(addArterialTestActions));
+                icon = QACEPATHTOF(medical_gui,ui\cross.paa);
+            };
+        };
         class ACE_Actions {
             class ACE_MainActions {
                 class KAT_ArterialTest {
@@ -336,6 +399,15 @@ class CfgVehicles {
 
     class Ship;
     class Ship_F: Ship {
+        class ACE_SelfActions {
+            class KAT_ArterialTest {
+                displayName = CSTRING(Arterial_Test_Action); 
+                condition = QUOTE(_target call ACEFUNC(medical_treatment,isMedicalVehicle));
+                statement = "";
+                insertChildren = QUOTE([ARR_2(_target,_player)] call FUNC(addArterialTestActions));
+                icon = QACEPATHTOF(medical_gui,ui\cross.paa);
+            };
+        };
         class ACE_Actions {
             class ACE_MainActions {
                 class KAT_ArterialTest {
@@ -354,12 +426,12 @@ class CfgVehicles {
         class ACE_Actions {
             class ACE_MainActions {
                 class KAT_ApplyBloodTest {
-                        displayName = CSTRING(Arterial_Test);
-                        condition = "true";
-                        statement = "true";
-                        insertChildren = QUOTE([ARR_2(_target,_player)] call FUNC(addArterialApplyActions));
-                        icon = QACEPATHTOF(medical_gui,ui\cross.paa);
-                    };
+                    displayName = CSTRING(Arterial_Test);
+                    condition = QUOTE(GVAR(abgEnable));
+                    statement = "true";
+                    insertChildren = QUOTE([ARR_2(_target,_player)] call FUNC(addArterialApplyActions));
+                    icon = QACEPATHTOF(medical_gui,ui\cross.paa);
+                };
             };
             class ACE_Head {
                 class CheckBloodPressure {}; // Remove the ability to check blood pressure at the head

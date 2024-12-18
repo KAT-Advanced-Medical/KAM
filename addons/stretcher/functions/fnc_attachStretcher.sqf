@@ -18,14 +18,14 @@
 params [["_target", objNull, [objNull]]];
 
 if !(isNull attachedTo _target) exitWith {};
-private _vehicles = nearestObjects [_target, ["Car", "Helicopter"], 20];
+private _vehicles = nearestObjects [_target, ["Car", "Helicopter", "Tank"], 20];
 private _actions = [];
 
 {
     private _type = typeOf _x;
     private _name = getText (configFile >> "CfgVehicles" >> _type >> "displayName");
     private _uniqueName = format ["kat_stretcher_%1", _type];
-    if (isArray (configFile >> "CfgVehicles" >> _type >> "stretcherPos")) then {
+    if (isArray (configFile >> "CfgVehicles" >> _type >> "kat_stretcherPos")) then {
         _actions pushBack [
             [
                 _uniqueName,
@@ -33,8 +33,8 @@ private _actions = [];
                 "",
                 {
                     params ["_target", "", "_parameter"];
-                    private _pos = getArray (configFile >> "CfgVehicles" >> typeOf (_parameter select 0) >> "stretcherPos");
-                    private _vector = getArray (configFile >> "CfgVehicles" >> typeOf (_parameter select 0) >> "stretcherVector");
+                    private _pos = getArray (configFile >> "CfgVehicles" >> typeOf (_parameter select 0) >> "kat_stretcherPos");
+                    private _vector = getArray (configFile >> "CfgVehicles" >> typeOf (_parameter select 0) >> "kat_stretcherVector");
                     _target attachTo [(_parameter select 0), _pos];
                     _target setVectorDirAndUp _vector;
                 },

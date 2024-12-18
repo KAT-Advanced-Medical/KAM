@@ -121,6 +121,12 @@
             <Russian>Определяет, влияет ли GAS на искусственный интеллект (если вы запускаете его на локальном сервере, это может вызвать проблемы с производительностью).</Russian>
             <Dutch>Bepaald of KI/AI beïnvloed wordt door gas (als je dit doet op een lokale server kan dit leiden tot prestatieproblemen)</Dutch>
         </Key>
+        <Key ID="STR_KAT_Chemical_SETTING_showPoisoning">
+            <English>Show Poisoning</English>
+        </Key>
+        <Key ID="STR_KAT_Chemical_SETTING_showPoisoning_DESC">
+            <English>Determines if poisoning and intoxication is shown in the medical menu</English>
+        </Key>
         <Key ID="STR_KAT_Chemical_GasFilterItem">
             <English>Gas mask filter</English>
             <Spanish>Filtro de la mascara de gas</Spanish>
@@ -793,7 +799,7 @@
         <Key ID="STR_KAT_Chemical_PutOnGasMask">
             <English>Put on gas mask</English>
             <Japanese>ガスマスクを装着</Japanese>
-            <French>Mettre le masque à gaz</French>          
+            <French>Mettre le masque à gaz</French>         
         </Key>
         <Key ID="STR_KAT_Chemical_TakeOffGasMask">
             <English>Take off gas mask</English>
@@ -814,9 +820,11 @@
         </Key>
         <Key ID="STR_KAT_Chemical_SETTING_dropWeaponChance">
             <English>Drop Weapon Chance</English>
+            <French>Chance de lâcher l'arme</French>
         </Key>
         <Key ID="STR_KAT_Chemical_SETTING_dropWeaponChance_DESC">
             <English>Determines chance for dropping weapon while in tear gas</English>
+            <French>Détermine les chances de lâcher l'arme en cas d'exposition aux gaz lacrymogènes.</French>
         </Key>
     </Package>
 </Project>

@@ -2,7 +2,7 @@
 
 if (!hasInterface) exitWith {};
 
-[QGVAR(closeWatchTimer), LINKFUNC(closeWatchTimer)] call CBA_fnc_addEventHandler;
+[QGVAR(startWatchTimer), LINKFUNC(startWatchTimer)] call CBA_fnc_addEventHandler;
 [QEGVAR(misc,handleRespawn), LINKFUNC(handleRespawn)] call CBA_fnc_addEventHandler;
 
 [QGVAR(playWatchTone), {
@@ -51,7 +51,7 @@ if (!hasInterface) exitWith {};
                 [ACE_player] call FUNC(showRWatch);
             } else {
                 call FUNC(hideRWatch);
-            };      
+            };     
         };
     };
 
@@ -96,11 +96,8 @@ if (!hasInterface) exitWith {};
         if (_timerActive) then {
             ACE_player setVariable [QGVAR(rangerStart), false, false];
         } else {
-            if !(GETMVAR(GVAR(RangerActive),false)) then {
-                [QGVAR(closeWatchTimer), [ACE_player], ACE_player] call CBA_fnc_targetEvent;
-            };
-
             ACE_player setVariable [QGVAR(rangerStart), true, false];
+            [QGVAR(startWatchTimer), [ACE_player], ACE_player] call CBA_fnc_targetEvent;
         };
     };
 

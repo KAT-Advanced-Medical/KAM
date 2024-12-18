@@ -28,7 +28,7 @@ private _resultSampleMap = missionNamespace getVariable [QEGVAR(circulation,resu
 _resultCounter = [_resultCounter +1, 1] select (_resultCounter == 20);
 missionNamespace setVariable [QEGVAR(circulation,resultCounter), _resultCounter, true];
 
-_resultSampleMap set [_resultCounter, [name(_patient), _bloodGas]];
+_resultSampleMap set [_resultCounter, [_patientName, _bloodGasArray]];
 missionNamespace setVariable [QEGVAR(circulation,resultSampleMap), _resultSampleMap, true];
 
 private _itemStr = format ["KAT_bloodResult_%1", _resultCounter];

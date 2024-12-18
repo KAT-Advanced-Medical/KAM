@@ -2748,50 +2748,62 @@
         <Key ID="STR_KAT_Breathing_SETTING_AVAIL_OXYMASK">
             <English>Available Oxygen Masks</English>
             <Japanese>使用可能な酸素マスク</Japanese>
+            <French>Masques à oxygène disponibles</French>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_AVAIL_OXYMASK_DISC">
             <English>Sets which goggles can act as oxygen masks</English>
             <Japanese>酸素マスクとして動作させたいゴーグルを指定します</Japanese>
+            <French>Spécifiez les masques que vous souhaitez utiliser comme masque à oxygène.</French>
         </Key>
         <Key ID="STR_KAT_Breathing_AttachPersonalOxygenTank">
             <English>Connect Personal Oxygen</English>
             <Japanese>個人用酸素供給機に接続</Japanese>
+            <French>Connecter de l'oxygène personnel</French>
         </Key>
         <Key ID="STR_KAT_Breathing_RemovePersonalOxygenTank">
             <English>Disconnect Personal Oxygen</English>
             <Japanese>個人用酸素供給機を切断</Japanese>
+            <French>Déconnexion de l'oxygène personnel</French>
         </Key>
         <Key ID="STR_KAT_Breathing_CheckPersonalOxygenTank">
             <English>Check Personal Oxygen Status</English>
             <Japanese>個人用酸素供給機の状態を確認</Japanese>
+            <French>Vérifier l'état de l'oxygène personnel</French>
         </Key>
         <Key ID="STR_KAT_Breathing_PersonalOxygen_Remaining">
             <English>Minutes Remaining</English>
             <Japanese>分残っています</Japanese>
+            <French>Minutes restantes</French>
         </Key>
         <Key ID="STR_KAT_Breathing_PersonalOxygen_Empty">
             <English>Oxygen Tank Empty</English>
             <Japanese>酸素ボンベは空です</Japanese>
+            <French>Réservoir d'oxygène vide</French>
         </Key>
         <Key ID="STR_KAT_Breathing_AttachOxygenVehicle">
             <English>Connect to Aircraft Oxygen</English>
             <Japanese>航空機酸素供給機に接続</Japanese>
+            <French>Connexion à l'oxygène de l'aéronef</French>
         </Key>
         <Key ID="STR_KAT_Breathing_VehicleOxygen_Affirm">
             <English>Attached to Aircraft Oxygen</English>
             <Japanese>航空機酸素供給機に接続済</Japanese>
+            <French>Attaché à l'oxygène de l'aéronef</French>
         </Key>
         <Key ID="STR_KAT_Breathing_PersonalOxygen_Affirm">
             <English>Oxygen already connected</English>
             <Japanese>既に酸素供給機に接続済です</Japanese>
+            <French>Oxygène déjà connecté</French>
         </Key>
         <Key ID="STR_KAT_Breathing_PersonalOxygen_Disconnect">
             <English>Oxygen tank disconnected</English>
             <Japanese>酸素供給機から切断しました</Japanese>
+            <French>Réservoir d'oxygène déconnecté</French>
         </Key>
         <Key ID="STR_KAT_Breathing_Remove_OxyMask">
             <English>Remove Oxygen Mask</English>
             <Japanese>酸素マスクを取り外す</Japanese>
+            <French>Retirer le masque à oxygène</French>
         </Key>
     </Package>
 </Project>

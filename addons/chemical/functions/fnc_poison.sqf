@@ -44,6 +44,11 @@ if (_gasLevel == 0) exitWith {
     };
 };
 
+// We assume that oxygen masks only cover the mouth and nose, leaving the eyes exposed to CS gas
+if ((_unit getVariable [QEGVAR(breathing,oxygenMaskActive), false])) exitWith {
+    TRACE_1("unit has oxygen mask",_unit);
+};
+
 private _currentInfectionArray = _unit getVariable [QGVAR(infectionArray), []];
 
 if ((_currentInfectionArray findIf { _x isEqualTo _infectedObject}) == -1) then {
