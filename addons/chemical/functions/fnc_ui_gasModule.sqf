@@ -72,7 +72,7 @@ private _fnc_onConfirm = {
     private _logic = GETMVAR(BIS_fnc_initCuratorAttributes_target,objNull);
     if (isNull _logic) exitWith {};
 
-    private _gasLevel = _display getVariable [QGVAR(ui_gastype), 0];
+    private _gasLevel = _display getVariable [QGVAR(ui_gastype), 1];
     private _radius = _display getVariable [QGVAR(ui_radius), 20];
     private _isSealable = _display getVariable [QGVAR(ui_sealable), false];
     private _center = objNull;
