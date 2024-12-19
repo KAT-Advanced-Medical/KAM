@@ -3,7 +3,7 @@ class ACE_Medical_Treatment {
         volume = 1000;
         ratio[] = {};
         type = "Blood";
-        kat_viscosity = 1;
+        rateCoef = 1;
         painReduce = 0;
         hrIncreaseLow[] = {0, 0};
         hrIncreaseNormal[] = {0, 0};
@@ -19,214 +19,212 @@ class ACE_Medical_Treatment {
         class BloodIV {
             volume = 1000;
             ratio[] = {"Plasma", 1};
-            kat_viscosity = 0.9;
+            rateCoef = 0.9;
         };
         class BloodIV_500: BloodIV {
             volume = 500;
-            kat_viscosity = 0.9;
         };
         class BloodIV_250: BloodIV {
             volume = 250;
-            kat_viscosity = 0.9;
         };
         class PlasmaIV: BloodIV {
             volume = 1000;
             ratio[] = {"Blood", 1};
             type = "Plasma";
-            kat_viscosity = 1;
+            rateCoef = 1;
         };
         class PlasmaIV_500: PlasmaIV {
             volume = 500;
-            kat_viscosity = 1;
+            rateCoef = 1;
         };
         class PlasmaIV_250: PlasmaIV {
             volume = 250;
-            kat_viscosity = 1;
+            rateCoef = 1;
         };
         class SalineIV: BloodIV {
             volume = 1000;
             type = "Saline";
             ratio[] = {};
-            kat_viscosity = 1.3;
+            rateCoef = 1.3;
         };
         class SalineIV_500: SalineIV {
             volume = 500;
-            kat_viscosity = 1.3;
+            rateCoef = 1.3;
         };
         class SalineIV_250: SalineIV {
             volume = 250;
-            kat_viscosity = 1.3;
+            rateCoef = 1.3;
         };
 
         class BloodIV_O: BloodIV {
             volume = 1000;
             bloodType = "O";
             compatibility[] = {"O", "A", "B", "AB"};
-            kat_viscosity = 0.9;
+            rateCoef = 0.9;
         };
         class BloodIV_O_N: BloodIV {
             volume = 1000;
             bloodType = "O_N";
             compatibility[] = {"O", "O_N", "A", "A_N", "B","B_N", "AB", "AB_N"};
-            kat_viscosity = 0.9;
+            rateCoef = 0.9;
         };
         class BloodIV_A: BloodIV {
             volume = 1000;
             bloodType = "A";
             compatibility[] = {"A", "AB"};
-            kat_viscosity = 0.9;
+            rateCoef = 0.9;
         };
         class BloodIV_A_N: BloodIV {
             volume = 1000;
             bloodType = "A_N";
             compatibility[] = {"A", "A_N", "AB", "AB_N"};
-            kat_viscosity = 0.9;
+            rateCoef = 0.9;
         };
         class BloodIV_B: BloodIV {
             volume = 1000;
             bloodType = "B";
             compatibility[] = {"B", "AB"};
-            kat_viscosity = 0.9;
+            rateCoef = 0.9;
         };
         class BloodIV_B_N: BloodIV {
             volume = 1000;
             bloodType = "B_N";
             compatibility[] = {"B","B_N", "AB", "AB_N"};
-            kat_viscosity = 0.9;
+            rateCoef = 0.9;
         };
         class BloodIV_AB: BloodIV {
             volume = 1000;
             bloodType = "AB";
             compatibility[] = {"AB"};
-            kat_viscosity = 0.9;
+            rateCoef = 0.9;
         };
         class BloodIV_AB_N: BloodIV {
             volume = 1000;
             bloodType = "AB_N";
             compatibility[] = {"AB","AB_N"};
-            kat_viscosity = 0.9;
+            rateCoef = 0.9;
         };
 
         class BloodIV_O_500: BloodIV_500 {
             volume = 500;
             bloodType = "O";
             compatibility[] = {"O", "A", "B", "AB"};
-            kat_viscosity = 0.9;
+            rateCoef = 0.9;
         };
         class BloodIV_O_N_500: BloodIV_500 {
             volume = 500;
             bloodType = "O_N";
             compatibility[] = {"O", "O_N", "A", "A_N", "B","B_N", "AB", "AB_N"};
-            kat_viscosity = 0.9;
+            rateCoef = 0.9;
         };
         class BloodIV_A_500: BloodIV_500 {
             volume = 500;
             bloodType = "A";
             compatibility[] = {"A", "AB"};
-            kat_viscosity = 0.9;
+            rateCoef = 0.9;
         };
             class BloodIV_A_N_500: BloodIV_500 {
             volume = 500;
             bloodType = "A_N";
             compatibility[] = {"A", "A_N", "AB", "AB_N"};
-            kat_viscosity = 0.9;
+            rateCoef = 0.9;
         };
         class BloodIV_B_500: BloodIV_500 {
             volume = 500;
             bloodType = "B";
             compatibility[] = {"B", "AB"};
-            kat_viscosity = 0.9;
+            rateCoef = 0.9;
         };
         class BloodIV_B_N_500: BloodIV_500 {
             volume = 500;
             bloodType = "B_N";
             compatibility[] = {"B","B_N", "AB", "AB_N"};
-            kat_viscosity = 0.9;
+            rateCoef = 0.9;
         };
         class BloodIV_AB_500: BloodIV_500 {
             volume = 500;
             bloodType = "AB";
             compatibility[] = {"AB"};
-            kat_viscosity = 0.9;
+            rateCoef = 0.9;
         };
         class BloodIV_AB_N_500: BloodIV_500 {
             volume = 500;
             bloodType = "AB_N";
             compatibility[] = {"AB","AB_N"};
-            kat_viscosity = 0.9;
+            rateCoef = 0.9;
         };
 
         class BloodIV_O_250: BloodIV_250 {
             volume = 250;
             bloodType = "O";
             compatibility[] = {"O", "A", "B", "AB"};
-            kat_viscosity = 0.9;
+            rateCoef = 0.9;
         };
         class BloodIV_O_N_250: BloodIV_250 {
             volume = 250;
             bloodType = "O_N";
             compatibility[] = {"O", "O_N", "A", "A_N", "B","B_N", "AB", "AB_N"};
-            kat_viscosity = 0.9;
+            rateCoef = 0.9;
         };
         class BloodIV_A_250: BloodIV_250 {
             volume = 250;
             bloodType = "A";
             compatibility[] = {"A", "AB"};
-            kat_viscosity = 0.9;
+            rateCoef = 0.9;
         };
         class BloodIV_A_N_250: BloodIV_250 {
             volume = 250;
             bloodType = "A_N";
             compatibility[] = {"A", "A_N", "AB", "AB_N"};
-            kat_viscosity = 0.9;
+            rateCoef = 0.9;
         };
         class BloodIV_B_250: BloodIV_250 {
             volume = 250;
             bloodType = "B";
             compatibility[] = {"B", "AB"};
-            kat_viscosity = 0.9;
+            rateCoef = 0.9;
         };
         class BloodIV_B_N_250: BloodIV_250 {
             volume = 250;
             bloodType = "B_N";
             compatibility[] = {"B","B_N", "AB", "AB_N"};
-            kat_viscosity = 0.9;
+            rateCoef = 0.9;
         };
         class BloodIV_AB_250: BloodIV_250 {
             volume = 250;
             bloodType = "AB";
             compatibility[] = {"AB"};
-            kat_viscosity = 0.9;
+            rateCoef = 0.9;
         };
         class BloodIV_AB_N_250: BloodIV_250 {
             volume = 250;
             bloodType = "AB_N";
             compatibility[] = {"AB","AB_N"};
-            kat_viscosity = 0.9;
+            rateCoef = 0.9;
         };
         class RingersLactateIV: SalineIV {
             volume = 1000;
-            kat_viscosity = 1.3;
+            rateCoef = 1.3;
             type = "Ringers Lactate";
         };
         class RingersLactateIV_500: SalineIV_500 {
             volume = 500;
-            kat_viscosity = 1.3;
+            rateCoef = 1.3;
             type = "Ringers Lactate";
         };
         class RingersLactateIV_250: SalineIV_250 {
             volume = 250;
-            kat_viscosity = 1.3;
+            rateCoef = 1.3;
             type = "Ringers Lactate";
         };
         class PackedRBCIV_500: BloodIV_500 {
             volume = 500;
-            kat_viscosity = 0.7;
+            rateCoef = 0.7;
             type = "PackedRBC";
         };
         class PackedRBCIV_250: BloodIV_250 {
             volume = 250;
-            kat_viscosity = 0.7;
+            rateCoef = 0.7;
             type = "PackedRBC";
         };
         //class MorphineIVInfusion: SalineIV_500 {
@@ -240,7 +238,7 @@ class ACE_Medical_Treatment {
         //    viscosityChange = -5;
         //   opioidRelief = 1.1;
         //   volume = 500;
-        //    kat_viscosity = 1.3;
+        //    rateCoef = 1.3;
         //    type = "MorphineIVInfusion";
         //};
         //class EpinephrineIVInfusion: SalineIV_500 {
@@ -254,7 +252,7 @@ class ACE_Medical_Treatment {
         //    alphaFactor = -0.2;
         //    onOverDose = "";
         //    volume = 500;
-        //    kat_viscosity = 1.3;
+        //    rateCoef = 1.3;
         //    type = "EpinephrineIVInfusion";
         //};
         //class EtomidateInfusion: SalineIV_500 {
@@ -267,7 +265,7 @@ class ACE_Medical_Treatment {
         //    dose = 0.1;
         //    viscosityChange = 0;
         //    volume = 500;
-        //    kat_viscosity = 1.3;
+        //    rateCoef = 1.3;
         //    type = "EtomidateInfusion";
         //};
     };
