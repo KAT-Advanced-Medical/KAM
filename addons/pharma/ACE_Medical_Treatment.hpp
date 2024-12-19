@@ -379,6 +379,7 @@ class ACE_ADDON(Medical_Treatment) {
             incompatibleMedication[] = {};
             viscosityChange = 0;
             onOverDose = "";
+            respiratoryRate = 0.1;
         };
         class BubbleWrap {
             painReduce = 0.05;
@@ -589,7 +590,7 @@ class ACE_ADDON(Medical_Treatment) {
             dose = 1;
             viscosityChange = 10;
             opioidEffect = 0.18;
-            respiratoryRate = -0.3;
+            respiratoryRate = -0.2;
         };
         class syringe_ketamine_5ml_3 {
             painReduce = 0.8;
@@ -602,7 +603,7 @@ class ACE_ADDON(Medical_Treatment) {
             viscosityChange = 10;
             onOverDose = "";
             opioidEffect = 0.21;
-            respiratoryRate = -0.4;
+            respiratoryRate = -0.3;
         };
         class syringe_nalbuphine_5ml_1 {
             painReduce = 0.5;
@@ -783,6 +784,26 @@ class ACE_ADDON(Medical_Treatment) {
             viscosityChange = 0;
         };
         class syringe_adenosineIV_5ml_3 {
+            painReduce = 0;
+            hrIncreaseLow[] = {-3, -10};
+            hrIncreaseNormal[] = {-5, -15};
+            hrIncreaseHigh[] = {-5, -20};
+            timeInSystem = 180;
+            timeTillMaxEffect = 15;
+            dose = 3;
+            viscosityChange = 0;
+        };
+        class syringe_doxapram_5ml_1 {
+            painReduce = 0;
+            hrIncreaseLow[] = {-3, -10};
+            hrIncreaseNormal[] = {-5, -10};
+            hrIncreaseHigh[] = {-5, -15};
+            timeInSystem = 180;
+            timeTillMaxEffect = 15;
+            dose = 1;
+            viscosityChange = 0;
+        };
+        class syringe_doxapram_5ml_3 {
             painReduce = 0;
             hrIncreaseLow[] = {-3, -10};
             hrIncreaseNormal[] = {-5, -15};
@@ -1018,6 +1039,12 @@ class ACE_ADDON(Medical_Treatment) {
         class syringe_alteplase {
             maxDose = 3;
             maxDoseDeviation = 0;
+            incompatibleMedication[] = {};
+            onOverDose = "";
+        };
+        class syringe_doxapram {
+            maxDose = 3;
+            maxDoseDeviation = 2;
             incompatibleMedication[] = {};
             onOverDose = "";
         };

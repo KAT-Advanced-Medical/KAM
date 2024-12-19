@@ -4758,5 +4758,47 @@
         <Key ID="STR_KAT_Pharma_Transfuse_Ringers_Lactate">
             <English>Transfuse Ringers Lactate</English>
         </Key>
+        <Key ID="STR_KAT_Pharma_SubCategory_AdenosineIV">
+            <English>Doxapram</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_medLvl_Doxapram">
+            <English>Medical level required for Doxapram</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_treatmentTime_Doxapram">
+            <English>Treatment time for Doxapram</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_Doxapram_DescShort">
+            <English>Doxapram</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_Doxapram_Display">
+            <English>Doxapram</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_Take_Doxapram">
+            <English>Push Doxapram</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_push_Doxapram_IV_1">
+            <English>Push 0.5mg Doxapram</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_push_Doxapram_IV_3">
+            <English>Push 1mg Doxapram</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_pushing_Doxapram_IV_1">
+            <English>Pushing 0.5mg Doxapram</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_pushing_Doxapram_IV_3">
+            <English>Pushing 1mg Doxapram</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_Syringe_Doxapram_5_1_Display">
+            <English>5ml Syringe/0.5mg Doxapram</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_Syringe_Doxapram_5_1_DescShort">
+            <English>5ml Syringe loaded with 0.5 mg of Doxapram</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_Syringe_Doxapram_5_3_Display">
+            <English>5ml Syringe/1mg Doxapram</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_Syringe_Doxapram_5_3_DescShort">
+            <English>5ml Syringe loaded with 1mg of Doxapram</English>
+        </Key>
     </Package>
 </Project>

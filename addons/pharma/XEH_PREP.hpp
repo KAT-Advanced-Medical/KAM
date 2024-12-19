@@ -38,6 +38,7 @@ PREP(treatmentAdvanced_CWMP);
 PREP(treatmentAdvanced_CWMPOverdoseLocal);
 PREP(treatmentAdvanced_Dialysis);
 PREP(treatmentAdvanced_DialysisLocal);
+PREP(treatmentAdvanced_DoxapramOverdoseLocal);
 PREP(treatmentAdvanced_EACALocal);
 PREP(treatmentAdvanced_EACAOverdoseLocal);
 PREP(treatmentAdvanced_EpinephrineOverdoseLocal);

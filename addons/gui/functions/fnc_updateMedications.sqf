@@ -38,7 +38,8 @@ disableSerialization;
     "kat_adenosineIV",
     "kat_atropineIV",
     "kat_alteplase",
-    "ACE_salineIV_250"
+    "ACE_salineIV_250",
+    "kat_doxapram"
 ];
 
 private _medicationsFound = {

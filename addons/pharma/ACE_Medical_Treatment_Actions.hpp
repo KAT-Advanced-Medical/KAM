@@ -854,7 +854,25 @@ class ACE_Medical_Treatment_Actions {
         callbackSuccess = QFUNC(medication);
         sounds[] = {};
     };
-     class syringe_lidocaine_10ml_1: syringe_TXA_10ml_1 {
+    class syringe_doxapram_5ml_1: syringe_EACA_5ml_1 {
+        displayName = CSTRING(push_doxapram_IV_1);
+        displayNameProgress = CSTRING(pushing_doxapram_IV_1);
+        allowedSelections[] = {"Body", "LeftArm", "RightArm", "LeftLeg", "RightLeg"};
+        allowSelfTreatment = 1;
+        medicRequired = QGVAR(medLvl_doxapram);
+        treatmentTime = QGVAR(treatmentTime_doxapram);
+        items[] = {"kat_syringe_doxapram_5ml_1"};
+        callbackSuccess = QFUNC(medication);
+        sounds[] = {};
+    };
+    class syringe_doxapram_5ml_3: syringe_doxapram_5ml_1 {
+        displayName = CSTRING(push_doxapram_IV_3);
+        displayNameProgress = CSTRING(pushing_doxapram_IV_3);
+        items[] = {"kat_syringe_doxapram_5ml_3"};
+        callbackSuccess = QFUNC(medication);
+        sounds[] = {};
+    };
+    class syringe_lidocaine_10ml_1: syringe_TXA_10ml_1 {
         displayName = CSTRING(inject_lidocaine_IM_1);
         displayNameProgress = CSTRING(injecting_lidocaine_IM_1);
         allowedSelections[] = {"LeftArm", "RightArm", "LeftLeg", "RightLeg"};
@@ -937,20 +955,20 @@ class ACE_Medical_Treatment_Actions {
         callbackSuccess = QFUNC(medication);
         sounds[] = {};
     };
-    //class CheckVein: CheckPulse {
-    //    displayName = CSTRING(CheckVein_DisplayName);
-    //    displayNameProgress = CSTRING(CheckVein_DisplayNameProgress);
-    //    allowedSelections[] = {"LeftArm", "RightArm", "Left Leg", "Right leg"};
-    //    treatmentLocations = 0;
-    //    medicRequired = QGVAR(CheckVein_MedLevel);
-    //    treatmentTime = QGVAR(CheckVein_TreatmentTime);
-    //    category = "examine";
-    //    consumeItem = 0;
-    //    condition = "";
-    //    callbackProgress = "";
-    //    callbackStart = "";
-    //    callbackFailure = "";
-    //    callbackSuccess = QFUNC(treatmentAdvanced_CheckVein);
-    //    litter[] = {};
-    //};
+    class CheckVein: CheckPulse {
+        displayName = CSTRING(CheckVein_DisplayName);
+        displayNameProgress = CSTRING(CheckVein_DisplayNameProgress);
+        allowedSelections[] = {"LeftArm", "RightArm", "Left Leg", "Right leg"};
+        treatmentLocations = 0;
+        medicRequired = QGVAR(CheckVein_MedLevel);
+        treatmentTime = QGVAR(CheckVein_TreatmentTime);
+        category = "examine";
+        consumeItem = 0;
+        condition = "";
+        callbackProgress = "";
+        callbackStart = "";
+        callbackFailure = "";
+        callbackSuccess = QFUNC(treatmentAdvanced_CheckVein);
+        litter[] = {};
+    };
 };
