@@ -35,7 +35,7 @@ class ACE_Medical_Treatment_Actions {
         animationPatientUnconscious = "AinjPpneMstpSnonWrflDnon_rolltoback";
         animationPatientUnconsciousExcludeOn[] = {"ainjppnemstpsnonwrfldnon", "kat_recoveryposition"};
     };
-    class CheckBloodPressureCuff: CheckPulse {
+    class CheckBloodPressureCuff: CheckBloodPressure {
         displayName = CSTRING(Actions_CheckBloodPressureCuff);
         displayNameProgress = CSTRING(Actions_CheckingBloodPressureCuff);
         treatmentTime = QGVAR(treatmentTime_BPcuff);
