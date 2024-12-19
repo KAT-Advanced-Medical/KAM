@@ -61,7 +61,7 @@
             <Russian>Определяет, как долго вы можете находиться в газе с противогазом без заражения.</Russian>
             <Dutch>Bepaald hoelang je in gas kan staan zonder dat je geïnfecteerd raakt.</Dutch>
         </Key>
-        <Key ID="STR_KAT_Chemical_SETTING_infection_time">
+        <Key ID="STR_KAT_Chemical_SETTING_infectionTime">
             <English>Time until infection</English>
             <Spanish>Tiempo hasta la infeccion</Spanish>
             <German>Zeit bis zur Infektion</German>
@@ -76,7 +76,7 @@
             <Russian>Время до заражения</Russian>
             <Dutch>Tijd tot infectie</Dutch>
         </Key>
-        <Key ID="STR_KAT_Chemical_SETTING_infection_time_disc">
+        <Key ID="STR_KAT_Chemical_SETTING_infectionTime_DESC">
             <English>Time you can stand in the gas before you get infected or need a gas mask.</English>
             <Spanish>Tiempo que puedes resistir en el gas hasta que resultes infectado o requieras una mascara de gas</Spanish>
             <German>Die Zeit, in der man im Gas stehen kann, bevor man infiziert wird bzw. eine Gasmaske benötigt.</German>
@@ -120,6 +120,12 @@
             <Finnish>Määrittää, vaikuttaako kaasu tekoälyyn (jos käytät peliä paikallisella palvelimella, tämä voi aiheuttaa suorituskykyongelmia)</Finnish>
             <Russian>Определяет, влияет ли GAS на искусственный интеллект (если вы запускаете его на локальном сервере, это может вызвать проблемы с производительностью).</Russian>
             <Dutch>Bepaald of KI/AI beïnvloed wordt door gas (als je dit doet op een lokale server kan dit leiden tot prestatieproblemen)</Dutch>
+        </Key>
+        <Key ID="STR_KAT_Chemical_SETTING_showPoisoning">
+            <English>Show Poisoning</English>
+        </Key>
+        <Key ID="STR_KAT_Chemical_SETTING_showPoisoning_DESC">
+            <English>Determines if poisoning and intoxication is shown in the medical menu</English>
         </Key>
         <Key ID="STR_KAT_Chemical_GasFilterItem">
             <English>Gas mask filter</English>
@@ -183,9 +189,18 @@
         </Key>
         <Key ID="STR_KAT_Chemical_ChemicalDetectorDisplayName">
             <English>JCAD Chemical Detector</English>
+            <Italian>Rilevatore chimico JCAD</Italian>
+            <French>Détecteur de produits chimiques JCAD</French>
+            <Japanese>JCAD 化学剤検知器</Japanese>
         </Key>
         <Key ID="STR_KAT_Chemical_ChemicalDetectorDescription">
             <English>Used to detect KAT toxic chemicals</English>
+            <Italian>Utilizzato per rilevare sostanze chimiche tossiche KAT</Italian>
+            <French>Utilisé pour détecter les produits chimiques toxiques KAT</French>
+            <Japanese>KAT毒性化学物質の検出に使用</Japanese>
+        </Key>
+        <Key ID="STR_KAT_Chemical_ChemicalDetector_Off">
+            <English>OFF</English>
         </Key>
         <Key ID="STR_KAT_Chemical_giveGasMask_action">
             <English>Put on gas mask</English>
@@ -253,7 +268,7 @@
             <German>Chemischen Detektor stumm schalten.</German>
             <French>Désactiver le son du détecteur de produits chimiques</French>
             <Korean>화학물 탐지기 음소거</Korean>
-            <Japanese>化学検知器をミュート</Japanese>
+            <Japanese>化学剤検知器をミュート</Japanese>
             <Italian>Silenzia il rilevatore chimico</Italian>
             <Portuguese>Silenciar detector químico</Portuguese>
             <Polish>Wycisz Detektor chemiczny</Polish>
@@ -267,7 +282,7 @@
             <Spanish>Desilenciar Detector Quimico</Spanish>
             <German>Chemischen Detektor laut schalten.</German>
             <French>Activer le son du détecteur de produits chimiques</French>
-            <Japanese>化学検知器のミュート解除</Japanese>
+            <Japanese>化学剤検知器のミュート解除</Japanese>
             <Korean>화학물 탐지기 음소거 해제</Korean>
             <Italian>Smuta il rilevatore chimico</Italian>
             <Portuguese>Ativar som de detector químico</Portuguese>
@@ -306,21 +321,6 @@
             <Finnish>Kaasulla täytetyn alueen ympärillä oleva säde</Finnish>
             <Russian>Радиус вокруг модуля, заполненного газом.</Russian>
             <Dutch>Radius om de module dat gevuld is met gas.</Dutch>
-        </Key>
-        <Key ID="STR_KAT_Chemical_GasModule_min_radius_dcs">
-            <English>The Minimal Range describes the area around the module where the gas is most lethal</English>
-            <Spanish>El rango minimo describe el area alrededor del modulo en el cual el gas sera mas letal</Spanish>
-            <German>Die minimale Reichweite beschreibt den Bereich im Umkreis des Moduls, in dem das Gas am tödlichsten wirkt.</German>
-            <French>Le rayon minimal décrit la zone autour du module ou le gaz est le plus létal</French>
-            <Japanese>最小範囲は、ガスが最も致死的であるモジュールの周辺を表します。</Japanese>
-            <Korean>최소 범위는 가스가 가장 치명적으로 작동하는 모듈 주변 영역을 나타냅니다.</Korean>
-            <Italian>Il raggio minimo descrive l'area attorno al modulo dove il gas è più letale</Italian>
-            <Portuguese>O Alcance Mínimo descreve a área ao redor do módulo onde o gás é mais letal</Portuguese>
-            <Polish>Minimalny zasięg określa obszar wokół modułu, gdzie gaz jest bardziej śmiertelny</Polish>
-            <Czech>Minimální vzdálenost vyjadřuje oblast kolem modulu kde je plyn nejvíce smrtící</Czech>
-            <Finnish>Minimialue kuvaa moduulia ympäröivän alueen, jossa kaasu on tappavin</Finnish>
-            <Russian>Минимальный радиус, описывающий область вокруг модели, в которой газ является наиболее смертоносным</Russian>
-            <Dutch>Het minimale bereik beschrijft het gebied om de module waar het gas het dodelijkst is</Dutch>
         </Key>
         <Key ID="STR_KAT_Chemical_GasModule_max_radius_dcs">
             <English>The Maximum Range is a range around the Minimal Range where the gas is less lethal and you have a longer chance of survival.(distance from module to outer ring)</English>
@@ -411,21 +411,6 @@
             <Finnish>Tuki vuoto</Finnish>
             <Russian>Герметизация утечки</Russian>
             <Dutch>Dicht lek</Dutch>
-        </Key>
-        <Key ID="STR_KAT_Chemical_GasModule_Needbigger">
-            <English>Minimal Range need to be less than Maximum Range!</English>
-            <Spanish>¡El rango minimo tiene que ser menor al rango maximo!</Spanish>
-            <German>Minimale Reichweite muss kleiner als maximale Reichweite sein!</German>
-            <French>Le rayon minimal a besoin d'être plus petit que le rayon maximal !</French>
-            <Japanese>最小範囲は最大範囲よりも小さくする必要があります!</Japanese>
-            <Korean>최소 범위는 반드시 최대 범위보다 작아야 합니다!</Korean>
-            <Italian>Il raggio minimo deve essere minore del raggio massimo!</Italian>
-            <Portuguese>O Alcance Mínimo precisa ser menor que o Alcance Máximo!</Portuguese>
-            <Polish>Minimalny zasięg musi być mniejszy niż maksymalny zasięg</Polish>
-            <Czech>Minimální vzdálenost musí být menší než Maximální vzdálenost!</Czech>
-            <Finnish>Vähimmäisalueen on oltava pienempi kuin enimmäisetäisyys</Finnish>
-            <Russian>Минимальный радиус должен быть меньше максимального радиуса !</Russian>
-            <Dutch>Het minimale bereik moet kleiner zijn dan het maximale bereik!</Dutch>
         </Key>
         <Key ID="STR_KAT_Chemical_Intoxication">
             <English>Intoxication</English>
@@ -741,21 +726,6 @@
             <Russian>Максимальная дальность действия.</Russian>
             <Dutch>Maximaal bereik.</Dutch>
         </Key>
-        <Key ID="STR_KAT_Chemical_UI_min_range">
-            <English>Minimal Range.</English>
-            <Spanish>Rango minimo</Spanish>
-            <German>Minimale Reichweite.</German>
-            <French>Portée minimale</French>
-            <Japanese>最小範囲</Japanese>
-            <Korean>최소 범위.</Korean>
-            <Italian>Raggio minimo.</Italian>
-            <Portuguese>Alcance Mínimo</Portuguese>
-            <Polish>Minimalny zasięg</Polish>
-            <Czech>Minimální vzdálenost.</Czech>
-            <Finnish>Vähimmäisalue</Finnish>
-            <Russian>Минимальный радиус действия.</Russian>
-            <Dutch>Minimaal bereik.</Dutch>
-        </Key>
         <Key ID="STR_KAT_Chemical_UI_sealable">
             <English>Is sealable?</English>
             <Spanish>¿Es sellable?</Spanish>
@@ -815,6 +785,46 @@
             <Finnish>Kaasutyyppi</Finnish>
             <Russian>Тип газа:</Russian>
             <Dutch>Gas type:</Dutch>
+        </Key>
+        <Key ID="STR_KAT_Chemical_SETTING_gasMaskSoundVolume">
+            <English>Gas Mask Sound Volume</English>
+            <Japanese>ガスマスクの音量</Japanese>
+            <French>Volume sonore du masque à gaz</French>
+        </Key>
+        <Key ID="STR_KAT_Chemical_SETTING_gasMaskSoundVolume_DESC">
+            <English>Determines how loud the breathing sounds are when using the gas mask</English>
+            <Japanese>ガスマスク使用時の呼吸音の大きさを設定します</Japanese>
+            <French>Détermine l'intensité des bruits respiratoires lors de l'utilisation du masque à gaz.</French>
+        </Key>
+        <Key ID="STR_KAT_Chemical_PutOnGasMask">
+            <English>Put on gas mask</English>
+            <Japanese>ガスマスクを装着</Japanese>
+            <French>Mettre le masque à gaz</French>         
+        </Key>
+        <Key ID="STR_KAT_Chemical_TakeOffGasMask">
+            <English>Take off gas mask</English>
+            <Japanese>ガスマスクを外す</Japanese>
+            <French>Enlever le masque à gaz</French>
+        </Key>
+        <Key ID="STR_KAT_Chemical_ChemicalDetector_Menu">
+            <English>JCAD</English>
+        </Key>
+        <Key ID="STR_KAT_Chemical_EnableDetector">
+            <English>Turn On Detector</English>
+        </Key>
+        <Key ID="STR_KAT_Chemical_EnableDetectorSound">
+            <English>Enable Warning Tone</English>
+        </Key>
+        <Key ID="STR_KAT_Chemical_DisableDetectorSound">
+            <English>Disable Warning Tone</English>
+        </Key>
+        <Key ID="STR_KAT_Chemical_SETTING_dropWeaponChance">
+            <English>Drop Weapon Chance</English>
+            <French>Chance de lâcher l'arme</French>
+        </Key>
+        <Key ID="STR_KAT_Chemical_SETTING_dropWeaponChance_DESC">
+            <English>Determines chance for dropping weapon while in tear gas</English>
+            <French>Détermine les chances de lâcher l'arme en cas d'exposition aux gaz lacrymogènes.</French>
         </Key>
     </Package>
 </Project>

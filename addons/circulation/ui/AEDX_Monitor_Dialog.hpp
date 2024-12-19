@@ -1,8 +1,4 @@
-#include "..\defines.hpp"
-
-class RscPicture;
 class RscLine;
-class RscText;
 class RscBackground;
 class RscButton;
 class RscStructuredText;

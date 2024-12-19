@@ -29,7 +29,7 @@ private _breathing_log = localize ACELSTRING(medical_treatment,Check_Pulse_Norma
 private _breath = "";
 
 private _respiratoryDepth = _patient getVariable [QEGVAR(vitals,respiratoryDepth), 10];
-if ((10 > _respiratoryDepth) && (_respiratoryDepth >= 7)) then {
+if (((10 > _respiratoryDepth) && (_respiratoryDepth >= 7)) || (_patient getVariable [QEGVAR(chemical,airPoisoning), false])) then {
     _breathing = LLSTRING(breathing_isShallow);
     _breathing_log = LLSTRING(breathing_shallow);
 };
@@ -49,6 +49,7 @@ if (_ph < 7.2) then {
 
 _output = format ["%1%2", _breathing ,_breath];
 _output_log = format ["%1%2", _breathing_log, _breath];
+
 
 if (_hr == 0 || !(alive _patient) || (_patient getVariable [QEGVAR(airway,obstruction), false] && !(_patient getVariable [QEGVAR(airway,overstretch), false])) || _patient getVariable [QEGVAR(airway,occluded), false] || _patient getVariable [QGVAR(hemopneumothorax), false] || _patient getVariable [QGVAR(tensionpneumothorax), false]) then {
     _output = LLSTRING(breathing_none);

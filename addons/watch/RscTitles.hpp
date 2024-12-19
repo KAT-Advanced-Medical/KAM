@@ -418,4 +418,141 @@ class RscTitles
             };
         };
     };
+    class KAT_Ranger
+    {
+        idd = 22935;
+        enableSimulation = 1;
+        movingEnable = 0;
+        fadeIn=0;
+        fadeOut=1;
+        duration = 10e10;
+        onLoad = "uiNamespace setVariable ['KAT_Ranger', _this select 0];";
+        class controls
+        {
+            class RangerImage: RscPicture
+            {
+                idc = 22800;
+                text = "\x\kat\addons\watch\UI\RangerWatchFace.paa";
+                x = QUOTE(SAFEZONE_X_RIGHTEDGE - FRAME_W(25) - FRAME_W(15.07));
+                y = QUOTE(SAFEZONE_Y_LOWEDGE - FRAME_H(20));
+                w = QUOTE(FRAME_W(28));
+                h = QUOTE(FRAME_H(28));
+            };
+            class RangerTime: RscText
+            {
+                idc = 22806;
+                style = ST_RIGHT;
+                shadow = 0;
+                font = "EtelkaMonospacePro";
+                text = "22:22:22"; //--- ToDo: Localize;
+                x = QUOTE(SAFEZONE_X_RIGHTEDGE - FRAME_W(25) - FRAME_W(4.7));
+                y = QUOTE(SAFEZONE_Y_LOWEDGE - FRAME_H(5.9));
+                w = QUOTE(FRAME_W(7.5));
+                h = QUOTE(FRAME_H(4));
+                colorBackground[] = {0,0,0,0};
+                colorText[] = {0.8,0.8,0.8,0.9};
+                sizeEx = QUOTE(FRAME_H(1.9));
+            };
+            class RangerTimer: RscText
+            {
+                idc = 22807;
+                style = ST_RIGHT;
+                valign = "middle";
+                shadow = 0;
+                font = "EtelkaMonospacePro";
+                text = ""; //--- ToDo: Localize;
+                x = QUOTE(SAFEZONE_X_RIGHTEDGE - FRAME_W(24.6));
+                y = QUOTE(SAFEZONE_Y_LOWEDGE - FRAME_H(7.5));
+                w = QUOTE(FRAME_W(3));
+                h = QUOTE(FRAME_H(1.5));
+                colorBackground[] = {0,0,0,0};
+                colorText[] = {0.8,0.8,0.8,0.9};
+                sizeEx = QUOTE(FRAME_H(1.8));
+            };
+            class RangerAltitude: RscText
+            {
+                idc = 22808;
+                style = ST_RIGHT;
+                valign = "middle";
+                shadow = 0;
+                font = "EtelkaMonospacePro";
+                text = "1000";
+                x = QUOTE(SAFEZONE_X_RIGHTEDGE - FRAME_W(25) - FRAME_W(5.5));
+                y = QUOTE(SAFEZONE_Y_LOWEDGE - FRAME_H(7.5));
+                w = QUOTE(FRAME_W(4));
+                h = QUOTE(FRAME_H(1.5));
+                colorBackground[] = {0,0,0,0};
+                colorText[] = {0.8,0.8,0.8,0.9};
+                sizeEx = QUOTE(FRAME_H(1.8));
+            };
+            class RangerHR: RscText
+            {
+                idc = 22809;
+                style = ST_CENTER;
+                valign = "middle";
+                shadow = 0;
+                font = "EtelkaMonospacePro";
+                text = "111";
+                x = QUOTE(SAFEZONE_X_RIGHTEDGE - FRAME_W(25) - FRAME_W(4.3));
+                y = QUOTE(SAFEZONE_Y_LOWEDGE - FRAME_H(10.1));
+                w = QUOTE(FRAME_W(4));
+                h = QUOTE(FRAME_H(1.5));
+                colorBackground[] = {0,0,0,0};
+                colorText[] = {0.8,0.8,0.8,0.9};
+                sizeEx = QUOTE(FRAME_H(1.4));
+            };
+            class RangerO2: RscText
+            {
+                idc = 22810;
+                style = ST_CENTER;
+                valign = "middle";
+                shadow = 0;
+                font = "EtelkaMonospacePro";
+                text = "97";
+                x = QUOTE(SAFEZONE_X_RIGHTEDGE - FRAME_W(25) - FRAME_W(1.2));
+                y = QUOTE(SAFEZONE_Y_LOWEDGE - FRAME_H(10.1));
+                w = QUOTE(FRAME_W(3));
+                h = QUOTE(FRAME_H(1.5));
+                colorBackground[] = {0,0,0,0};
+                colorText[] = {0.8,0.8,0.8,0.9};
+                sizeEx = QUOTE(FRAME_H(1.4));
+            };
+            class RangerWatchMinute: RscPicture
+            {
+                idc = 22802;
+                text = "\x\kat\addons\watch\UI\RangerWatchMinute.paa";
+                x = QUOTE(SAFEZONE_X_RIGHTEDGE - FRAME_W(25) - FRAME_W(15));
+                y = QUOTE(SAFEZONE_Y_LOWEDGE - FRAME_H(20));
+                w = QUOTE(FRAME_W(28));
+                h = QUOTE(FRAME_H(28));
+            };
+            class RangerWatchHour: RangerWatchMinute
+            {
+                idc = 22803;
+                text = "\x\kat\addons\watch\UI\RangerWatchHour.paa";
+                x = QUOTE(SAFEZONE_X_RIGHTEDGE - FRAME_W(25) - FRAME_W(15));
+                y = QUOTE(SAFEZONE_Y_LOWEDGE - FRAME_H(20));
+                w = QUOTE(FRAME_W(28));
+                h = QUOTE(FRAME_H(28));
+            };
+            class RangerWatchSecond: RangerWatchMinute
+            {
+                idc = 22804;
+                text = "\x\kat\addons\watch\UI\RangerWatchSecond.paa";
+                x = QUOTE(SAFEZONE_X_RIGHTEDGE - FRAME_W(25) - FRAME_W(15));
+                y = QUOTE(SAFEZONE_Y_LOWEDGE - FRAME_H(20));
+                w = QUOTE(FRAME_W(28));
+                h = QUOTE(FRAME_H(28));
+            };
+            class RangerWatchCaps: RangerImage
+            {
+                idc = 22805;
+                text = "\x\kat\addons\watch\UI\RangerWatchCaps.paa";
+                x = QUOTE(SAFEZONE_X_RIGHTEDGE - FRAME_W(25) - FRAME_W(15.07));
+                y = QUOTE(SAFEZONE_Y_LOWEDGE - FRAME_H(20));
+                w = QUOTE(FRAME_W(28));
+                h = QUOTE(FRAME_H(28));
+            };
+        };
+    };
 };

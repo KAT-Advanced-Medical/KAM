@@ -75,6 +75,6 @@ if (_UAVCrew isNotEqualTo []) then {
 };
 
 // Check everything
-[ACEFUNC(cdragging,carryObjectPFH), 0.5, [_unit, _target, CBA_missionTime]] call CBA_fnc_addPerFrameHandler;
+[ACEFUNC(dragging,carryObjectPFH), 0.5, [_unit, _target, CBA_missionTime]] call CBA_fnc_addPerFrameHandler;
 
 [QACEGVAR(dragging,startedCarry), [_unit, _target]] call CBA_fnc_localEvent;

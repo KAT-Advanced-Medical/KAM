@@ -2,7 +2,7 @@
 /*
  * Author: Garth 'L-H' de Wet
  * Modified: Mazinski
- * Displays the KWatch on screen.
+ * Displays the JCAD on screen.
  *
  * Arguments:
  * 0: unit <OBJECT>
@@ -11,7 +11,7 @@
  * None
  *
  * Example:
- * [player] call kat_watch_fnc_showKWatch
+ * [player] call kat_chemical_fnc_showChemDetector
  *
  * Public: Yes
  */
@@ -47,20 +47,21 @@ private _exposure = _display displayCtrl 18805;
         _pfhID call CBA_fnc_removePerFrameHandler;
     };
 
-    private _hour = floor dayTime;
-    private _minute = floor ((dayTime - _hour) * 60);
+    private _intensity = _unit getVariable [QGVAR(areaIntensity), 0];
 
-    _time ctrlSetText (format ["%1:%2", [_hour, 2] call CBA_fnc_formatNumber, [_minute, 2] call CBA_fnc_formatNumber]); 
+    if ((_unit getVariable [QGVAR(detectorEnabled), false])) then {
 
-    private _gas = nearestObjects [_unit, ["kat_module_zeus_gas"], 2000];
+        private _hour = floor dayTime;
+        private _minute = floor ((dayTime - _hour) * 60);
+    
+        _time ctrlSetText (format ["%1:%2", [_hour, 2] call CBA_fnc_formatNumber, [_minute, 2] call CBA_fnc_formatNumber]);
 
-    if ((count _gas) > 0) then {
-        private _distance = _unit distance (_gas select 0);
-        private _radius = (_gas select 0) getVariable [QGVAR(gas_radius), 0];
+        _exposure ctrlSetText (_intensity toFixed 2);
 
-        _exposure ctrlSetText ((linearConversion[0, _radius, _distance, 1, 0, true]) toFixed 2);
+        _unit setVariable [QGVAR(areaIntensity), _intensity, true];
     } else {
-        _exposure ctrlSetText str (0); 
+        _time ctrlSetText (LLSTRING(ChemicalDetector_Off));
+        _exposure ctrlSetText ("-.--");
     };
 
 }, 1, [

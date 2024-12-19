@@ -1,6 +1,11 @@
+PREP(handleRespawn);
 PREP(hideKWatch);
 PREP(hideCWatch);
 PREP(hideSWatch);
+PREP(hideRWatch);
+PREP(init);
 PREP(showKWatch);
 PREP(showCWatch);
 PREP(showSWatch);
+PREP(showRWatch);
+PREP(startWatchTimer);
