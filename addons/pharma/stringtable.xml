@@ -4710,6 +4710,18 @@
         <Key ID="STR_KAT_Pharma_medLvl_SalineFlush_Desc">
             <English>Changes what medical level is required to do a Saline Flush</English>
         </Key>
+        <Key ID="STR_KAT_Pharma_IVComplications">
+            <English>IV Complications</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_IVComplications_Desc">
+            <English>Enables failures to place IVs and negative effects when overpushing fluids</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_IVFailures">
+            <English>IV Failure Rate</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_IVFailures_Desc">
+            <English>Chance for a failed IV placement</English>
+        </Key>
         <Key ID="STR_KAT_Pharma_treatmentTime_SalineFlush">
             <English>Time to preform a Saline Flush</English>
         </Key>

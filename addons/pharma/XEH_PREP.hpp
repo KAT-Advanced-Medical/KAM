@@ -8,6 +8,7 @@ PREP(fullHealLocal);
 PREP(getBloodVolumeChange);
 PREP(gui_updateBodyImage);
 PREP(gui_updateInjuryListPart);
+PREP(handleLimbIVComplications);
 PREP(handleRespawn);
 PREP(init);
 PREP(inspectCatheter);

@@ -39,7 +39,7 @@ if (!isNil {_unit getVariable [QACEGVAR(medical,ivBags),[]]}) then {
     if (GET_HEART_RATE(_unit) < 20) then {
         _flowCalculation = _flowCalculation / 1.5;
     };
-
+    private _incomingFlowAmount = [0,0,0,0,0,0];
     private _incomingVolumeChange = [0,0,0,0,0,0];
     private _fluidWarmer = _unit getVariable [QEGVAR(hypothermia,fluidWarmer), [0,0,0,0,0,0]];
     private _fluidHeat = 0;
@@ -54,6 +54,10 @@ if (!isNil {_unit getVariable [QACEGVAR(medical,ivBags),[]]}) then {
             private _IVrate = _unit getVariable [QGVAR(IVrate), [0,0,0,0,0,0]];
             private _bagChange = (_flowCalculation * (_IVflow select _bodyPart) * (_IVrate select _bodyPart) * _rateCoef) min _bagVolumeRemaining; // absolute value of the change in miliLiters
             _bagVolumeRemaining = _bagVolumeRemaining - _bagChange;
+            _incomingFlowAmount set [_bodyPart, ((_incomingFlowAmount select _bodyPart) + _bagChange)];
+            private _incomingFlowDifference = (_incomingFlowAmount select _bodyPart) - (10 * _vasoconstriction);
+
+            if (GVAR(IVComplications)) && (((_incomingFlowAmount select _bodyPart) / (_IVrate select _bodyPart)) > (10 * _vasoconstriction)) then {[_unit, _bodyPart, _incomingFlowDifference] call FUNC(handleLimbIVComplications)};
 
             if (_hypothermia) then {
                 // If fluid warmers are on the line, fluids are "warmed" and added to the warmer. If there is no fluid warmer on the line, the fluids stayed cooled

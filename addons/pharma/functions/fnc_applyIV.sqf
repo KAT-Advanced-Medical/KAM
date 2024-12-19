@@ -41,28 +41,37 @@ if (_IVpfhActual > 0) then {
 };
 switch (_usedItem) do {
     case "kat_IV_16": {
+        if (random 100 < QGVAR(IVFailures)) then {
+            [_patient, [0.2, 0.3, 0.4] select (floor random 3)] call ACEFUNC(medical_status,adjustPainLevel);
+        } else {
         _IVarray set [_partIndex, 2];
         _IVrate set [_partIndex, 1];
         _patient setVariable [QGVAR(IV), _IVarray, true];
         _patient setVariable [QGVAR(IVrate), _IVrate, true];
         [_patient, "activity", LSTRING(iv_log), [[_medic] call ACEFUNC(common,getName), "16g IV"]] call ACEFUNC(medical_treatment,addToLog);
-        [_patient, "16g IV"] call ACEFUNC(medical_treatment,addToTriageCard); };
+        [_patient, "16g IV"] call ACEFUNC(medical_treatment,addToTriageCard);};};
         
-    case "kat_IV_14": {     
+    case "kat_IV_14": {
+        if (random 100 < QGVAR(IVFailures)) then {
+            [_patient, [0.2, 0.3, 0.4] select (floor random 3)] call ACEFUNC(medical_status,adjustPainLevel);
+        } else {     
         _IVarray set [_partIndex, 3];
         _IVrate set [_partIndex, 1.5];
         _patient setVariable [QGVAR(IV), _IVarray, true];
         _patient setVariable [QGVAR(IVrate), _IVrate, true];
         [_patient, "activity", LSTRING(iv_log), [[_medic] call ACEFUNC(common,getName), "14g IV"]] call ACEFUNC(medical_treatment,addToLog);
-        [_patient, "14g IV"] call ACEFUNC(medical_treatment,addToTriageCard);};
+        [_patient, "14g IV"] call ACEFUNC(medical_treatment,addToTriageCard);};};
 
-    case "kat_IV_20": {     
+    case "kat_IV_20": {
+        if (random 100 < QGVAR(IVFailures)) then {
+            [_patient, [0.2, 0.3, 0.4] select (floor random 3)] call ACEFUNC(medical_status,adjustPainLevel);
+        } else {      
         _IVarray set [_partIndex, 4];
         _IVrate set [_partIndex, 0.5];
         _patient setVariable [QGVAR(IV), _IVarray, true];
         _patient setVariable [QGVAR(IVrate), _IVrate, true];
         [_patient, "activity", LSTRING(iv_log), [[_medic] call ACEFUNC(common,getName), "20g IV"]] call ACEFUNC(medical_treatment,addToLog);
-        [_patient, "20g IV"] call ACEFUNC(medical_treatment,addToTriageCard);};
+        [_patient, "20g IV"] call ACEFUNC(medical_treatment,addToTriageCard);};};
 
     case "kat_IO_FAST": {
         _IVarray set [_partIndex, 1];
@@ -70,7 +79,7 @@ switch (_usedItem) do {
         _patient setVariable [QGVAR(IV), _IVarray, true];
         _patient setVariable [QGVAR(IVrate), _IVrate, true];
         private _medStack = _patient call ACEFUNC(medical_treatment,getAllMedicationCount);
-        private _medsToCheck = ["fentanyl", "ketamine", "nalbuphine", "morphine"];
+        private _medsToCheck = ["fentanyl", "ketamine", "nalbuphine", "morphine", "lidocaine"];
         private _fentanylEffectiveness = 0;
         private _ketamineEffectiveness = 0;
         private _nalbuphineEffectiveness = 0;
@@ -90,11 +99,15 @@ switch (_usedItem) do {
             if ("morphine" in _medName) then {
                 _morphineEffectiveness = _morphineEffectiveness max _effectiveness;
             };
+            if ("lidocaine" in _medName) then {
+                _lidocaineEffectiveness = _lidocaineEffectiveness max _effectiveness;
+            };
         } forEach _medStack;
         if (
             _fentanylEffectiveness <= 0.8 &&
             _ketamineEffectiveness <= 0.8 &&
             _nalbuphineEffectiveness <= 0.8 &&
+            _lidocaineEffectiveness <= 0.8 &&
             _morphineEffectiveness <= 0.8
         ) then {
             [_patient, [0.6, 0.7, 0.8] select (floor random 3)] call ACEFUNC(medical_status,adjustPainLevel);

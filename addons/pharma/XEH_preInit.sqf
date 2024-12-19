@@ -99,15 +99,6 @@ PREP_RECOMPILE_END;
     true
 ] call CBA_Settings_fnc_init;
 
-[
-    QGVAR(prepTime_PrepInfusion),
-    "SLIDER",
-    [LLSTRING(prepTime_PrepInfusion), LLSTRING(prepTime_PrepInfusion_Desc)],
-    [CBA_SETTINGS_CAT, ELSTRING(GUI,SubCategory_Basic)],
-    [1, 15, 6, 0],
-    true
-] call CBA_Settings_fnc_init;
-
 //IV Settings Category
 [
     QGVAR(medLvl_ApplyIV),
@@ -169,6 +160,24 @@ PREP_RECOMPILE_END;
     [LLSTRING(SETTING_ivCheckLimbDamage), LLSTRING(SETTING_ivCheckLimbDamage_DESC)],
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_ApplyIV)],
     [false],
+    true
+] call CBA_Settings_fnc_init;
+
+[
+    QGVAR(IVComplications),
+    "CHECKBOX",
+    [LLSTRING(IVComplications), LLSTRING(IVComplications_Desc)],
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_ApplyIV)],
+    [false],
+    true
+] call CBA_Settings_fnc_init;
+
+[
+    QGVAR(IVFailures),
+    "SLIDER",
+    [LLSTRING(IVFailures), LLSTRING(IVFailures_Desc)],
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_ApplyIV)],
+    [0, 100, 5, 0],
     true
 ] call CBA_Settings_fnc_init;
 
