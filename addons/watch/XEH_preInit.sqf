@@ -15,7 +15,7 @@ ADDON = true;
     "LIST",
     [LLSTRING(SETTING_TemperatureForm), LLSTRING(SETTING_TemperatureForm_Desc)],
     [CBA_SETTINGS_CAT, ELSTRING(GUI,SubCategory_Basic)],
-    [[0, 1], [LLSTRING(SETTING_TemperatureForm_Celcius), LLSTRING(SETTING_TemperatureForm_Fahrenheit)], 0],
+    [[0, 1], [LLSTRING(SETTING_TemperatureForm_Celsius), LLSTRING(SETTING_TemperatureForm_Fahrenheit)], 0],
     true
 ] call CBA_Settings_fnc_init;
 
