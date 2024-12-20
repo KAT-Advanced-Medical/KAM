@@ -193,7 +193,7 @@
             <Italian>Utilizzato per rilevare sostanze chimiche tossiche KAT</Italian>
             <French>Utilisé pour détecter les produits chimiques toxiques KAT</French>
             <Japanese>KAT毒性化学物質の検出に使用</Japanese>
-            <German>Wird zum Nachweis toxischer KAT-Chemikalien verwendet</German>
+            <German>zum Nachweis toxischer KAT-Chemikalien</German>
         </Key>
         <Key ID="STR_KAT_Chemical_giveGasMask_action">
             <English>Put on gas mask</English>
@@ -789,7 +789,7 @@
             <English>Determines how loud the breathing sounds are when using the gas mask</English>
             <Japanese>ガスマスク使用時の呼吸音の大きさを設定します</Japanese>
             <French>Détermine l'intensité des bruits respiratoires lors de l'utilisation du masque à gaz.</French>
-            <German>Bestimmt, wie laut die Atemgeräusche beim Tragen der Gasmaske sind</German>
+            <German>Bestimmt die Lautstärke der Atemgeräusche während des Tragens einer Gasmaske</German>
         </Key>
         <Key ID="STR_KAT_Chemical_PutOnGasMask">
             <English>Put on gas mask</English>
@@ -805,11 +805,11 @@
         </Key>
         <Key ID="STR_KAT_Chemical_SETTING_dropWeaponChance">
             <English>Drop Weapon Chance</English>
-            <German>Wahrscheinlichkeit, eine Waffe fallen zu lassen</German>
+            <German>Chance, die Waffe unter Tränengas zu verlieren</German>
         </Key>
         <Key ID="STR_KAT_Chemical_SETTING_dropWeaponChance_DESC">
             <English>Determines chance for dropping weapon while in tear gas</English>
-            <German>Bestimmt die Wahrscheinlichkeit, dass die Waffe fallen gelassen wird, während man unter Tränengas steht</German>
+            <German>Bestimmt die Wahrscheinlichkeit, die Waffe zu verlieren, während man unter dem Einfluss von Tränengas steht</German>
         </Key>
     </Package>
 </Project>

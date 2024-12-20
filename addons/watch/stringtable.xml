@@ -7,7 +7,7 @@
             <Spanish>Seleccionar temperatura de</Spanish>
             <Japanese>温度単位を選択</Japanese>
             <Italian>Seleziona formato temperatura</Italian>
-            <German>Temperaturform auswählen</German>
+            <German>Maßeinheit Temperatur</German>
             <French>Sélectionner l'unité de température</French>
         </Key>
         <Key ID="STR_KAT_Watch_SETTING_TemperatureForm_Desc">
@@ -16,7 +16,7 @@
             <Spanish>Seleccionar qué unidad de temperatura es usada para la pantalla del reloj KATMIN</Spanish>
             <Japanese>Katmin腕時計で表示される温度の単位を選択します</Japanese>
             <Italian>Seleziona quale unità di temperatura viene utilizzata per il display del KATMIN</Italian>
-            <German>Wählt aus, welche Temperatureinheit für die Anzeige der KATMIN-Uhr verwendet wird</German>
+            <German>Definiert die Maßeinheit der angezeigten Temperatur auf dem Display der KATMIN-Uhr</German>
             <French>Sélectionne l'unité de température utilisée pour l'affichage de la montre KATMIN</French>
         </Key>
         <Key ID="STR_KAT_Watch_SETTING_TemperatureForm_Celcius">
@@ -43,7 +43,7 @@
             <Spanish>Seleccionar presión de</Spanish>
             <Japanese>圧力単位を選択</Japanese>
             <Italian>Seleziona formato pressione</Italian>
-            <German>Druckform auswählen</German>
+            <German>Maßeinheit Druck</German>
             <French>Sélectionner la forme de pression</French>
         </Key>
         <Key ID="STR_KAT_Watch_SETTING_PressureForm_Desc">
@@ -52,7 +52,7 @@
             <Spanish>Selecciona qué unidad de presión es usada para la pantalla del reloj KATMIN</Spanish>
             <Japanese>Katmin腕時計で表示される圧力の単位を選択します</Japanese>
             <Italian>Seleziona quale unità di pressione viene utilizzata per il display del KATMIN</Italian>
-            <German>Wählt aus, welche Druckeinheit für die Anzeige der KATMIN-Uhr verwendet wird</German>
+            <German>Definiert die Maßeinheit des angezeigten Drucks auf dem Display der KATMIN-Uhr</German>
             <French>Sélectionne l'unité de pression utilisée pour l'affichage de la montre KATMIN</French>
         </Key>
         <Key ID="STR_KAT_Watch_SETTING_PressureForm_mmHg">
@@ -79,7 +79,7 @@
             <Spanish>Seleccionar altitud de</Spanish>
             <Japanese>高度単位を選択</Japanese>
             <Italian>Seleziona formato altitudine</Italian>
-            <German>Höhenform auswählen</German>
+            <German>Maßeinheit Höhe</German>
             <French>Sélectionner l'unité d'altitude</French>
         </Key>
         <Key ID="STR_KAT_Watch_SETTING_AltitudeForm_Desc">
@@ -88,7 +88,7 @@
             <Spanish>Selecciona qué unidad de altitud es usada para la pantalla del reloj KATMIN</Spanish>
             <Japanese>Katmin腕時計で表示される高度の単位を選択します</Japanese>
             <Italian>Seleziona quale unità di altitudine viene utilizzata per il display del KATMIN</Italian>
-            <German>Wählt aus, welche Höheneinheit für die Anzeige der KATMIN-Uhr verwendet wird</German>
+            <German>Definiert die Maßeinheit der angezeigten Höhe auf dem Display der KATMIN-Uhr</German>
             <French>Sélectionne l'unité d'altitude utilisée pour la montre KATMIN</French>
         </Key>
         <Key ID="STR_KAT_Watch_SETTING_AltitudeForm_meters">
@@ -115,7 +115,7 @@
             <Spanish>Reloj con Capacidad de Monitorización de Constantes Vitales</Spanish>
             <Japanese>カーミン K500。 バイタル監視機能を持った腕時計</Japanese>
             <Italian>Orologio con capacità di monitoraggio vitale</Italian>
-            <German>Beobachten Sie mit wichtigen Überwachungsfunktionen</German>
+            <German>Uhr mit Funktionen zur Vitalitätsüberwachung</German>
             <French>Montre avec moniteur de signes vitaux intégré</French>
         </Key>
         <Key ID="STR_KAT_Watch_KatminDisplayName">
@@ -131,7 +131,7 @@
             <English>Watch with Vital Monitoring Capabilities. Garry Owen!</English>
             <Japanese>カーミン キャバルリー・リミテッド。 バイタル監視機能を持った腕時計。 ギャリー・オーウェン!(Garry Owen!)</Japanese>
             <Italian>Orologio con capacità di monitoraggio vitale. Garry Owen!</Italian>
-            <German>Beobachten Sie mit wichtigen Überwachungsfunktionen. Garry Owen!</German>
+            <German>Uhr mit Funktionen zur Vitalitätsüberwachung. Garry Owen!</German>
             <French>Montre avec fonctions de surveillance vitale. Garry Owen !</French>
         </Key>
         <Key ID="STR_KAT_Watch_CavminDisplayName">
@@ -145,7 +145,7 @@
             <English>Watch with Vital Monitoring Capabilities. So Others May Live.</English>
             <Japanese>カーミン ジャンプ・スタンダード。 バイタル監視機能を持った腕時計。 他人の命の為に。(So Others May Live)</Japanese>
             <Italian>Orologio con capacità di monitoraggio vitale. Perché altri possano vivere.</Italian>
-            <German>Beobachten Sie mit wichtigen Überwachungsfunktionen. Damit andere leben können.</German>
+            <German>Uhr mit Funktionen zur Vitalitätsüberwachung. Damit andere leben können!</German>
             <French>Montre avec fonctions de surveillance vitale. Pour que d'autres puissent vivre.</French>
         </Key>
         <Key ID="STR_KAT_Watch_STSDisplayName">
