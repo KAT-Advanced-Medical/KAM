@@ -17,7 +17,7 @@
             <Italian>Seleziona quale unità di temperatura viene utilizzata per il display del KATMIN</Italian>
             <French>Sélectionne l'unité de température utilisée pour l'affichage de la montre KATMIN</French>
         </Key>
-        <Key ID="STR_KAT_Watch_SETTING_TemperatureForm_Celcius">
+        <Key ID="STR_KAT_Watch_SETTING_TemperatureForm_Celsius">
             <English>Celsius</English>
             <Dutch>Celsius</Dutch>
             <Spanish>Celsius</Spanish>
