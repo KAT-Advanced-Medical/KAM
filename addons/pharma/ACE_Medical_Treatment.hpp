@@ -28,6 +28,8 @@ class ACE_ADDON(Medical_Treatment) {
         maxRelief = 0;
         // Reduction of damage from wounds
         opioidRelief = 0;
+        // How strong should opioid Respiratory Depression be be
+        opioidDepression = 0;
         // How strong should opioid visuals be
         opioidEffect = 0;
         //multiplier to respiratory rate
@@ -213,6 +215,7 @@ class ACE_ADDON(Medical_Treatment) {
             onOverDose = "";
             opioidRelief = 0.2;
             opioidEffect = 0.18;
+            opioidDepression = 0.18;
         };
         class Ketamine {
             painReduce = 0.8;
@@ -228,6 +231,7 @@ class ACE_ADDON(Medical_Treatment) {
             viscosityChange = 10;
             onOverDose = "";
             opioidEffect = 0.17;
+            opioidDepression = 0.17;
         };
         class Nalbuphine {
             painReduce = 0.6;
@@ -565,6 +569,7 @@ class ACE_ADDON(Medical_Treatment) {
             viscosityChange = -10;
             opioidRelief = 1.2;
             opioidEffect = 0.17;
+            opioidDepression = 0.17;
             respiratoryRate = -0.2;
         };
         class syringe_fentanyl_5ml_3 {
@@ -578,6 +583,7 @@ class ACE_ADDON(Medical_Treatment) {
             viscosityChange = -10;
             opioidRelief = 1.5;
             opioidEffect = 0.25;
+            opioidDepression = 0.25;
             respiratoryRate = -0.3;
         };
         class syringe_ketamine_5ml_1 {
@@ -590,6 +596,7 @@ class ACE_ADDON(Medical_Treatment) {
             dose = 1;
             viscosityChange = 10;
             opioidEffect = 0.18;
+            opioidDepression = 0.18;
             respiratoryRate = -0.2;
         };
         class syringe_ketamine_5ml_3 {
@@ -603,6 +610,7 @@ class ACE_ADDON(Medical_Treatment) {
             viscosityChange = 10;
             onOverDose = "";
             opioidEffect = 0.21;
+            opioidDepression = 0.21;
             respiratoryRate = -0.3;
         };
         class syringe_nalbuphine_5ml_1 {
@@ -795,23 +803,23 @@ class ACE_ADDON(Medical_Treatment) {
         };
         class syringe_doxapram_5ml_1 {
             painReduce = 0;
-            hrIncreaseLow[] = {-3, -10};
-            hrIncreaseNormal[] = {-5, -10};
-            hrIncreaseHigh[] = {-5, -15};
+            hrIncreaseLow[] = {3, 10};
+            hrIncreaseNormal[] = {5, 10};
+            hrIncreaseHigh[] = {5, 15};
             timeInSystem = 180;
             timeTillMaxEffect = 15;
-            dose = 1;
-            viscosityChange = 0;
+            dose = 1; 
+            respiratoryRate = 0.2;
         };
         class syringe_doxapram_5ml_3 {
             painReduce = 0;
-            hrIncreaseLow[] = {-3, -10};
-            hrIncreaseNormal[] = {-5, -15};
-            hrIncreaseHigh[] = {-5, -20};
-            timeInSystem = 180;
+            hrIncreaseLow[] = {5, 15};
+            hrIncreaseNormal[] = {5, 20};
+            hrIncreaseHigh[] = {5, 25};
+            timeInSystem = 360;
             timeTillMaxEffect = 15;
             dose = 3;
-            viscosityChange = 0;
+            respiratoryRate = 0.2;
         };
         class syringe_alteplase_5ml_3 {
             painReduce = 0;
@@ -838,6 +846,7 @@ class ACE_ADDON(Medical_Treatment) {
             onOverDose = "";
             opioidRelief = 1.1;
             opioidEffect = 0.15;
+            opioidDepression = 0.15;
             respiratoryRate = -0.2;
         };
         class syringe_fentanyl_10ml_3 {
@@ -851,6 +860,7 @@ class ACE_ADDON(Medical_Treatment) {
             viscosityChange = -10;
             opioidRelief = 1.3;
             opioidEffect = 0.17;
+            opioidDepression = 0.17;
             respiratoryRate = -0.3;
         };
         class syringe_ketamine_10ml_1 {
@@ -863,6 +873,7 @@ class ACE_ADDON(Medical_Treatment) {
             dose = 1;
             viscosityChange = 10;
             opioidEffect = 0.12;
+            opioidDepression = 0.12;
             respiratoryRate = -0.3;
         };
         class syringe_ketamine_10ml_3 {
@@ -875,6 +886,7 @@ class ACE_ADDON(Medical_Treatment) {
             dose = 3;
             viscosityChange = 10;
             opioidEffect = 0.15;
+            opioidDepression = 0.15;
             respiratoryRate = -0.4;
         };
         class syringe_nalbuphine_10ml_1 {

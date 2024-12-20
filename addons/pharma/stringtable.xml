@@ -4758,7 +4758,7 @@
         <Key ID="STR_KAT_Pharma_Transfuse_Ringers_Lactate">
             <English>Transfuse Ringers Lactate</English>
         </Key>
-        <Key ID="STR_KAT_Pharma_SubCategory_AdenosineIV">
+        <Key ID="STR_KAT_Pharma_SubCategory_Doxapram">
             <English>Doxapram</English>
         </Key>
         <Key ID="STR_KAT_Pharma_medLvl_Doxapram">
@@ -4768,7 +4768,7 @@
             <English>Treatment time for Doxapram</English>
         </Key>
         <Key ID="STR_KAT_Pharma_Doxapram_DescShort">
-            <English>Doxapram</English>
+            <English>Doxapram Is a Respiratory Stimulant that increases Breathing Rate and Depth</English>
         </Key>
         <Key ID="STR_KAT_Pharma_Doxapram_Display">
             <English>Doxapram</English>
