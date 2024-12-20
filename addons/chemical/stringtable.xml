@@ -52,7 +52,7 @@
             <German>Bestimmt die Dauer, mit welcher man mit Gasmaske im Gas stehen kann, ohne infiziert zu werden.</German>
             <French>Détermine la durée où vous pouvez tenir dans un gaz avec un masque à gaz sans être infecté</French>
             <Korean>방독면을 사용하여 중독되지 않고 가스에 얼마나 오래 있을 수 있는지 결정합니다.</Korean>
-            <Japanese>ガスマスクを使用しながらガスの中にどれだけ長く感染せずにいられるかを設定します</Japanese>
+            <Japanese>ガスマスクを使用しながらガスの中にどれだけ長く感染せずにいられるかを定義します</Japanese>
             <Italian>Determina per quanto tempo puoi stare nel gas con la maschera a gas prima di risultare intossicato.</Italian>
             <Portuguese>Determina quanto tempo você pode ficar no gás com uma máscara de gás sem ser infectado.</Portuguese>
             <Polish>Ustala jak długo możesz stać w gazie z maską bez zagrożenia infekcją</Polish>
@@ -111,7 +111,7 @@
             <Spanish>Determina si la IA es afectada por el gas (Si estas ejecutando esto en un server local, puede causar problemas de rendimiento)</Spanish>
             <German>Bestimmt, ob KI von Gas beeinflusst wird (Kann auf lokalen Servern zu Leistungsproblemen führen)</German>
             <French>Détermine si les IA sont affectées par le gaz (Si cette option est activée sur des serveurs locaux cela peut créer des problèmes de performance)</French>
-            <Japanese>AIがガスの影響を受けるかどうか設定します (ローカル サーバーで実行している場合、パフォーマンスに影響する可能性があります)</Japanese>
+            <Japanese>AIがガスの影響を受けるかどうかを定義します (ローカル サーバーで実行している場合、パフォーマンスに影響する可能性があります)</Japanese>
             <Korean>인공지능이 가스에 영향을 받는지 결정합니다.(로컬 서버에서 이를 실행하는 경우 성능 문제가 발생할 수 있음)</Korean>
             <Italian>Determina se la AI subisce il gas (se stai eseguendo questo in un server locale questa può causare problemi di prestazioni)</Italian>
             <Portuguese>Determina se a IA é afetada pelo gás (se você estiver executando isso em um servidor local, isso pode causar problemas de desempenho)</Portuguese>
@@ -123,9 +123,11 @@
         </Key>
         <Key ID="STR_KAT_Chemical_SETTING_showPoisoning">
             <English>Show Poisoning</English>
+            <Japanese>中毒状態を表示</Japanese>
         </Key>
         <Key ID="STR_KAT_Chemical_SETTING_showPoisoning_DESC">
             <English>Determines if poisoning and intoxication is shown in the medical menu</English>
+            <Japanese>中毒(poisoningとintoxication)状態を医療メニューに表示するかどうかを定義します</Japanese>
         </Key>
         <Key ID="STR_KAT_Chemical_GasFilterItem">
             <English>Gas mask filter</English>
@@ -201,6 +203,7 @@
         </Key>
         <Key ID="STR_KAT_Chemical_ChemicalDetector_Off">
             <English>OFF</English>
+            <Japanese>オフ</Japanese>
         </Key>
         <Key ID="STR_KAT_Chemical_giveGasMask_action">
             <English>Put on gas mask</English>
@@ -793,13 +796,13 @@
         </Key>
         <Key ID="STR_KAT_Chemical_SETTING_gasMaskSoundVolume_DESC">
             <English>Determines how loud the breathing sounds are when using the gas mask</English>
-            <Japanese>ガスマスク使用時の呼吸音の大きさを設定します</Japanese>
+            <Japanese>ガスマスク使用時の呼吸音の大きさを定義します</Japanese>
             <French>Détermine l'intensité des bruits respiratoires lors de l'utilisation du masque à gaz.</French>
         </Key>
         <Key ID="STR_KAT_Chemical_PutOnGasMask">
             <English>Put on gas mask</English>
             <Japanese>ガスマスクを装着</Japanese>
-            <French>Mettre le masque à gaz</French>         
+            <French>Mettre le masque à gaz</French>
         </Key>
         <Key ID="STR_KAT_Chemical_TakeOffGasMask">
             <English>Take off gas mask</English>
@@ -808,23 +811,29 @@
         </Key>
         <Key ID="STR_KAT_Chemical_ChemicalDetector_Menu">
             <English>JCAD</English>
+            <Japanese>JCAD</Japanese>
         </Key>
         <Key ID="STR_KAT_Chemical_EnableDetector">
             <English>Turn On Detector</English>
+            <Japanese>検知器をつける</Japanese>
         </Key>
         <Key ID="STR_KAT_Chemical_EnableDetectorSound">
             <English>Enable Warning Tone</English>
+            <Japanese>警告音を有効化</Japanese>
         </Key>
         <Key ID="STR_KAT_Chemical_DisableDetectorSound">
             <English>Disable Warning Tone</English>
+            <Japanese>警告音を無効化</Japanese>
         </Key>
         <Key ID="STR_KAT_Chemical_SETTING_dropWeaponChance">
             <English>Drop Weapon Chance</English>
             <French>Chance de lâcher l'arme</French>
+            <Japanese>武器を落とす確率</Japanese>
         </Key>
         <Key ID="STR_KAT_Chemical_SETTING_dropWeaponChance_DESC">
             <English>Determines chance for dropping weapon while in tear gas</English>
             <French>Détermine les chances de lâcher l'arme en cas d'exposition aux gaz lacrymogènes.</French>
+            <Japanese>催涙ガスの中にあるときに武器を落とす確率を定義します</Japanese>
         </Key>
     </Package>
 </Project>

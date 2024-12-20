@@ -139,21 +139,27 @@
         </Key>
         <Key ID="STR_KAT_Watch_RangerDescription">
             <English>Watch with Vital Monitoring Capabilities. Sua Sponte.</English>
+            <Japanese>カーミン K12モデルR。 バイタル監視機能を持った腕時計。 自らの意思で。(Sua Sponte)</Japanese>
         </Key>
         <Key ID="STR_KAT_Watch_RangerDisplayName">
             <English>Katmin K12 Model R</English>
+            <Japanese>Katmin K12 Model R</Japanese>
         </Key>
         <Key ID="STR_KAT_Watch_ShowKATWatch_Setting">
             <English>Show KATMIN Watch</English>
+            <Japanese>Katmin腕時計を表示</Japanese>
         </Key>
         <Key ID="STR_KAT_Watch_AddTimer_Setting">
             <English>Add 15 Seconds to Watch Timer</English>
+            <Japanese>時計のタイマーを15秒増やす</Japanese>
         </Key>
         <Key ID="STR_KAT_Watch_SubtractTimer_Setting">
             <English>Subtract 15 Seconds from Watch Timer</English>
+            <Japanese>時計のタイマーを15秒減らす</Japanese>
         </Key>
         <Key ID="STR_KAT_Watch_StartStopTimer_Setting">
             <English>Start and Stop Watch Timer</English>
+            <Japanese>時計のタイマーを開始および停止</Japanese>
         </Key>
         <Key ID="STR_KAT_Watch_descentFT">
             <English>%1ft/s</English>

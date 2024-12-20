@@ -1070,7 +1070,7 @@
             <French>Détermine combien de temps chaque dose d'étomidate va rester dans le corps du patient</French>
             <Korean>에토미데이트의 각 투여량이 환자에게 얼마나 오래 가는지 결정합니다.</Korean>
             <German>Bestimmt, wie lange jede Etomidat-Dosis im Patienten verbleibt</German>
-            <Japanese>エトミデートが患者に留まる時間を設定します</Japanese>
+            <Japanese>エトミデートが患者に留まる時間を定義します</Japanese>
             <Spanish>Determina la duración de cada dosis de Etomidato en el paciente</Spanish>
             <Portuguese>Determina a duração de cada dose de Etomidato no paciente</Portuguese>
             <Finnish>Määrittää, kuinka kauan kukin etomidaattiannos pysyy potilaassa</Finnish>
