@@ -145,15 +145,15 @@ class CfgVehicles {
                 displayName = CSTRING(UI_gasType);
                 typeName = "NUMBER";
                 class values {
-                    class ToxicGas {
-                        name = CSTRING(LvL1_Gas);
-                        value = 1;
+                    class TearGas {
+                        name = CSTRING(Lvl0_Gas);
+                        value = 0;
                         default = 1;
                     };
-                   /* class csgas {
-                        name = "CS-Gas (Level 2)";
-                        value = "CS";
-                    };*/
+                    class ToxicGas {
+                        name = CSTRING(Lvl1_Gas);
+                        value = 1;
+                    };
                 };
             };
             class IsSealable

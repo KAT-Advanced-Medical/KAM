@@ -696,7 +696,10 @@
             <Russian>70mm GAS</Russian>
             <Dutch>70mm GAS</Dutch>
         </Key>
-        <Key ID="STR_KAT_Chemical_LvL1_Gas">
+        <Key ID="STR_KAT_Chemical_Lvl0_Gas">
+            <English>Tear gas (Level 0)</English>
+        </Key>
+        <Key ID="STR_KAT_Chemical_Lvl1_Gas">
             <English>Toxic gas (Level 1)</English>
             <Spanish>Gas toxico (Nivel 1)</Spanish>
             <German>Senfgas (Level 1)</German>
