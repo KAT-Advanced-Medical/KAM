@@ -195,11 +195,11 @@ if (GVAR(AMS_Enabled)) then {
     if (count _medicationParts > 3) then {
         _medicationName = _medicationParts select 1;
     
-        if (_medicationName in ["lorazepam","EACA","TXA","amiodarone","flumazenil","lidocaine"]) then {
+        if (_medicationName in ["lorazepam","EACA","TXA","amiodarone","flumazenil"]) then {
         [format ["kat_pharma_%1Local", toLower _medicationName], [_patient, _bodyPart], _patient] call CBA_fnc_targetEvent;
         };
 
-        if (_medicationName in ["ketamine","atropine","adenosine","alteplase","lidocaine"]) then {
+        if (_medicationName in ["ketamine","atropine","adenosine","alteplase"]) then {
         [format ["kat_pharma_%1Local", toLower _medicationName], [_patient, _bodyPart, _classname], _patient] call CBA_fnc_targetEvent;
         };
 
@@ -212,7 +212,7 @@ if (GVAR(AMS_Enabled)) then {
         };
 } else {
         
-    if (_className in ["Lorazepam","Ketamine","EACA","TXA","Atropine","Amiodarone","Flumazenil","lidocaine"]) then {
+    if (_className in ["Lorazepam","Ketamine","EACA","TXA","Atropine","Amiodarone","Flumazenil"]) then {
         [format ["kat_pharma_%1Local", toLower _className], [_patient, _bodyPart, _classname], _patient] call CBA_fnc_targetEvent;
     };
 
