@@ -3,7 +3,6 @@ class ACE_Medical_Treatment {
         volume = 1000;
         ratio[] = {};
         type = "Blood";
-        rateCoef = 1;
         painReduce = 0;
         hrIncreaseLow[] = {0, 0};
         hrIncreaseNormal[] = {0, 0};
@@ -35,11 +34,9 @@ class ACE_Medical_Treatment {
         };
         class PlasmaIV_500: PlasmaIV {
             volume = 500;
-            rateCoef = 1;
         };
         class PlasmaIV_250: PlasmaIV {
             volume = 250;
-            rateCoef = 1;
         };
         class SalineIV: BloodIV {
             volume = 1000;
@@ -49,180 +46,154 @@ class ACE_Medical_Treatment {
         };
         class SalineIV_500: SalineIV {
             volume = 500;
-            rateCoef = 1.3;
         };
         class SalineIV_250: SalineIV {
             volume = 250;
-            rateCoef = 1.3;
         };
 
         class BloodIV_O: BloodIV {
             volume = 1000;
             bloodType = "O";
             compatibility[] = {"O", "A", "B", "AB"};
-            rateCoef = 0.9;
         };
         class BloodIV_O_N: BloodIV {
             volume = 1000;
             bloodType = "O_N";
             compatibility[] = {"O", "O_N", "A", "A_N", "B","B_N", "AB", "AB_N"};
-            rateCoef = 0.9;
         };
         class BloodIV_A: BloodIV {
             volume = 1000;
             bloodType = "A";
             compatibility[] = {"A", "AB"};
-            rateCoef = 0.9;
         };
         class BloodIV_A_N: BloodIV {
             volume = 1000;
             bloodType = "A_N";
             compatibility[] = {"A", "A_N", "AB", "AB_N"};
-            rateCoef = 0.9;
         };
         class BloodIV_B: BloodIV {
             volume = 1000;
             bloodType = "B";
             compatibility[] = {"B", "AB"};
-            rateCoef = 0.9;
         };
         class BloodIV_B_N: BloodIV {
             volume = 1000;
             bloodType = "B_N";
             compatibility[] = {"B","B_N", "AB", "AB_N"};
-            rateCoef = 0.9;
         };
         class BloodIV_AB: BloodIV {
             volume = 1000;
             bloodType = "AB";
             compatibility[] = {"AB"};
-            rateCoef = 0.9;
         };
         class BloodIV_AB_N: BloodIV {
             volume = 1000;
             bloodType = "AB_N";
             compatibility[] = {"AB","AB_N"};
-            rateCoef = 0.9;
         };
 
         class BloodIV_O_500: BloodIV_500 {
             volume = 500;
             bloodType = "O";
             compatibility[] = {"O", "A", "B", "AB"};
-            rateCoef = 0.9;
         };
         class BloodIV_O_N_500: BloodIV_500 {
             volume = 500;
             bloodType = "O_N";
             compatibility[] = {"O", "O_N", "A", "A_N", "B","B_N", "AB", "AB_N"};
-            rateCoef = 0.9;
         };
         class BloodIV_A_500: BloodIV_500 {
             volume = 500;
             bloodType = "A";
             compatibility[] = {"A", "AB"};
-            rateCoef = 0.9;
         };
             class BloodIV_A_N_500: BloodIV_500 {
             volume = 500;
             bloodType = "A_N";
             compatibility[] = {"A", "A_N", "AB", "AB_N"};
-            rateCoef = 0.9;
         };
         class BloodIV_B_500: BloodIV_500 {
             volume = 500;
             bloodType = "B";
             compatibility[] = {"B", "AB"};
-            rateCoef = 0.9;
         };
         class BloodIV_B_N_500: BloodIV_500 {
             volume = 500;
             bloodType = "B_N";
             compatibility[] = {"B","B_N", "AB", "AB_N"};
-            rateCoef = 0.9;
         };
         class BloodIV_AB_500: BloodIV_500 {
             volume = 500;
             bloodType = "AB";
             compatibility[] = {"AB"};
-            rateCoef = 0.9;
         };
         class BloodIV_AB_N_500: BloodIV_500 {
             volume = 500;
             bloodType = "AB_N";
             compatibility[] = {"AB","AB_N"};
-            rateCoef = 0.9;
         };
 
         class BloodIV_O_250: BloodIV_250 {
             volume = 250;
             bloodType = "O";
             compatibility[] = {"O", "A", "B", "AB"};
-            rateCoef = 0.9;
         };
         class BloodIV_O_N_250: BloodIV_250 {
             volume = 250;
             bloodType = "O_N";
             compatibility[] = {"O", "O_N", "A", "A_N", "B","B_N", "AB", "AB_N"};
-            rateCoef = 0.9;
         };
         class BloodIV_A_250: BloodIV_250 {
             volume = 250;
             bloodType = "A";
             compatibility[] = {"A", "AB"};
-            rateCoef = 0.9;
         };
         class BloodIV_A_N_250: BloodIV_250 {
             volume = 250;
             bloodType = "A_N";
             compatibility[] = {"A", "A_N", "AB", "AB_N"};
-            rateCoef = 0.9;
         };
         class BloodIV_B_250: BloodIV_250 {
             volume = 250;
             bloodType = "B";
             compatibility[] = {"B", "AB"};
-            rateCoef = 0.9;
         };
         class BloodIV_B_N_250: BloodIV_250 {
             volume = 250;
             bloodType = "B_N";
             compatibility[] = {"B","B_N", "AB", "AB_N"};
-            rateCoef = 0.9;
         };
         class BloodIV_AB_250: BloodIV_250 {
             volume = 250;
             bloodType = "AB";
             compatibility[] = {"AB"};
-            rateCoef = 0.9;
         };
         class BloodIV_AB_N_250: BloodIV_250 {
             volume = 250;
             bloodType = "AB_N";
             compatibility[] = {"AB","AB_N"};
-            rateCoef = 0.9;
         };
         class RingersLactateIV: SalineIV {
             volume = 1000;
             rateCoef = 1.3;
             type = "Ringers Lactate";
         };
-        class RingersLactateIV_500: SalineIV_500 {
+        class RingersLactateIV_500: RingersLactateIV {
             volume = 500;
             rateCoef = 1.3;
             type = "Ringers Lactate";
         };
-        class RingersLactateIV_250: SalineIV_250 {
+        class RingersLactateIV_250: RingersLactateIV {
             volume = 250;
             rateCoef = 1.3;
             type = "Ringers Lactate";
         };
-        class PackedRBCIV_500: BloodIV_500 {
+        class PackedRBCIV_500: BloodIV {
             volume = 500;
             rateCoef = 0.7;
             type = "PackedRBC";
         };
-        class PackedRBCIV_250: BloodIV_250 {
+        class PackedRBCIV_250: PackedRBCIV_500 {
             volume = 250;
             rateCoef = 0.7;
             type = "PackedRBC";
