@@ -51,7 +51,7 @@ class ACE_Medical_Treatment_Actions {
         animationPatient = "";
         animationPatientUnconscious = "AinjPpneMstpSnonWrflDnon_rolltoback";
         animationPatientUnconsciousExcludeOn[] = {"ainjppnemstpsnonwrfldnon","kat_recoveryposition"};
-        sounds[] = {{QPATHTO_R(sounds\take_painkillers.wav),5,1,15}};
+        sounds[] = {{QPATHTO_R(sounds\take_CWMP.wav),5,1,15}};
         litter[] = {};
     };
     class Carbonate: Morphine {
@@ -68,7 +68,7 @@ class ACE_Medical_Treatment_Actions {
         animationPatient = "";
         animationPatientUnconscious = "AinjPpneMstpSnonWrflDnon_rolltoback";
         animationPatientUnconsciousExcludeOn[] = {"ainjppnemstpsnonwrfldnon","kat_recoveryposition"};
-        sounds[] = {{QPATHTO_R(sounds\take_painkillers.wav),5,1,15}};
+        sounds[] = {{QPATHTO_R(sounds\use_carbonate.wav),5,1,15}};
         litter[] = {};
     };
     class Pervitin: Morphine {
