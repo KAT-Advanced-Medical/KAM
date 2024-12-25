@@ -64,4 +64,14 @@ PREP_RECOMPILE_END;
     [0, 3600, 60],
     true
 ] call CBA_Settings_fnc_init;
+
+// Shows poisioning image
+[
+    QGVAR(showPoisoning),
+    "CHECKBOX",
+    [LLSTRING(SETTING_showPoisoning), LLSTRING(SETTING_showPoisoning_DESC)],
+    CBA_SETTINGS_CHEM,
+    [true],
+    true
+] call CBA_Settings_fnc_init;
 ADDON = true;

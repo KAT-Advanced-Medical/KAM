@@ -6,6 +6,11 @@
 [QGVAR(handleGasMaskDur), LINKFUNC(handleGasMaskDur)] call CBA_fnc_addEventHandler;
 [QGVAR(addSealAction), LINKFUNC(createSealAction)] call CBA_fnc_addEventHandler;
 
+[QGVAR(playTone), {
+    params ["_unit", "_tone"];
+    _unit say3D [_tone, 5];
+}] call CBA_fnc_addEventHandler;
+
 // ACE Events
 [QACEGVAR(medical_gui,updateInjuryListGeneral), LINKFUNC(gui_updateInjuryListGeneral)] call CBA_fnc_addEventHandler;
 [QACEGVAR(medical_gui,updateBodyImage), LINKFUNC(gui_updateBodyImage)] call CBA_fnc_addEventHandler;

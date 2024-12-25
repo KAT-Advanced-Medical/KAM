@@ -1,9 +1,42 @@
 class CfgSounds {
+    class GVAR(cough_0) {
+        name = QGVAR(cough_0);
+        sound[] =
+        {
+            QPATHTOF(audio\cough_0.ogg),
+            2,
+            1,
+            10
+        };
+        titles[] = {};
+    };
     class GVAR(cough_1) {
         name = QGVAR(cough_1);
         sound[] =
         {
             QPATHTOF(audio\cough_1.ogg),
+            2,
+            1,
+            10
+        };
+        titles[] = {};
+    };
+    class GVAR(cough_2) {
+        name = QGVAR(cough_2);
+        sound[] =
+        {
+            QPATHTOF(audio\cough_2.ogg),
+            2,
+            1,
+            10
+        };
+        titles[] = {};
+    };
+    class GVAR(cough_3) {
+        name = QGVAR(cough_3);
+        sound[] =
+        {
+            QPATHTOF(audio\cough_3.ogg),
             2,
             1,
             10
@@ -58,5 +91,70 @@ class CfgSounds {
         };
         titles[] = {};
     };
-
+    class GVAR(chemBaseChime) {
+        name = QGVAR(chemBaseChime);
+        sound[] =
+        {
+            QPATHTOF(audio\baseChime.ogg),
+            2,
+            1.0,
+            5
+        };
+        titles[] = {};
+    };
+    class GVAR(chemSlowChime) {
+        name = QGVAR(chemSlowChime);
+        sound[] =
+        {
+            QPATHTOF(audio\slowChime.ogg),
+            2,
+            1.0,
+            5
+        };
+        titles[] = {};
+    };
+    class GVAR(chemNormalChime) {
+        name = QGVAR(chemNormalChime);
+        sound[] =
+        {
+            QPATHTOF(audio\normalChime.ogg),
+            2,
+            1.0,
+            5
+        };
+        titles[] = {};
+    };
+    class GVAR(chemFastChime) {
+        name = QGVAR(chemFastChime);
+        sound[] =
+        {
+            QPATHTOF(audio\fastChime.ogg),
+            2,
+            1.0,
+            5
+        };
+        titles[] = {};
+    };
+    class GVAR(chemRapidChime) {
+        name = QGVAR(chemRapidChime);
+        sound[] =
+        {
+            QPATHTOF(audio\rapidChime.ogg),
+            2,
+            1.0,
+            5
+        };
+        titles[] = {};
+    };
+    class GVAR(chemTone) {
+        name = QGVAR(chemTone);
+        sound[] =
+        {
+            QPATHTOF(audio\tone.ogg),
+            2,
+            1.0,
+            5
+        };
+        titles[] = {};
+    };
 };

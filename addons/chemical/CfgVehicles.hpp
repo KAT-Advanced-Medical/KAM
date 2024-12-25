@@ -6,7 +6,7 @@ class CfgVehicles {
                 class KAT_CheckGasMaskDur {
                     displayName = CSTRING(CheckGasMaskDurability);
                     condition = QUOTE([_player] call FUNC(hasGasMaskOn));
-                    exceptions[] = {"isNotSwimming", "isNotInside", "isNotSitting"};
+                    exceptions[] = {"isNotSwimming"};
                     statement = QUOTE(_this call FUNC(checkGasMaskDur));
                     showDisabled = 0;
                     icon = QPATHTOF(ui\Gasmask_icon.paa);
@@ -14,7 +14,7 @@ class CfgVehicles {
                 class KAT_ChangeGasMaskFilter {
                     displayName = CSTRING(ChangeGasMaskFilter);
                     condition = QUOTE([_player] call FUNC(canReplaceFilter));
-                    exceptions[] = {"isNotSwimming", "isNotInside", "isNotSitting"};
+                    exceptions[] = {"isNotSwimming"};
                     statement = QUOTE(_this call FUNC(changeGasMaskFilter));
                     showDisabled = 0;
                     icon = QPATHTOF(ui\gasmaskfilter_ca.paa);
@@ -22,7 +22,7 @@ class CfgVehicles {
                 class KAT_PutOnGasMask {
                     displayName = CSTRING(PutOnGasMask);
                     condition = QUOTE([_player] call FUNC(canPutOnGasMask));
-                    exceptions[] = {"isNotSwimming", "isNotInside", "isNotSitting"};
+                    exceptions[] = {"isNotSwimming"};
                     statement = QUOTE([_player] call FUNC(putOnGasMask));
                     showDisabled = 0;
                     icon = QPATHTOF(ui\Gasmask_icon.paa);
@@ -30,10 +30,41 @@ class CfgVehicles {
                 class KAT_TakeOffGasMask {
                     displayName = CSTRING(TakeOffGasMask);
                     condition = QUOTE([_player] call FUNC(canTakeOffGasMask));
-                    exceptions[] = {"isNotSwimming", "isNotInside", "isNotSitting"};
+                    exceptions[] = {"isNotSwimming"};
                     statement = QUOTE([_player] call FUNC(takeOffGasMask));
                     showDisabled = 0;
                     icon = QPATHTOF(ui\Gasmask_icon.paa);
+                };
+
+                class KAT_ChemicalDetector {
+                    displayName = CSTRING(ChemicalDetector_Menu);
+                    icon = QPATHTOF(ui\kat_chemicalDet_icon.paa);
+                    exceptions[] = {"isNotSwimming"};
+                    
+                    class KAT_ChemicalDetector_Enable {
+                        displayName = CSTRING(EnableDetector);
+                        condition = QUOTE(([_player] call FUNC(hasDetector)) && !(_player getVariable [ARR_2(QQGVAR(detectorEnabled),false)]));
+                        exceptions[] = {"isNotSwimming"};
+                        statement = QUOTE([_player] call FUNC(enableChemDetector));
+                        showDisabled = 0;
+                        icon = QPATHTOF(ui\kat_chemicalDet_icon.paa);
+                    };
+                    class KAT_ChemicalDetector_SoundOn {
+                        displayName = CSTRING(EnableDetectorSound);
+                        condition = QUOTE(!(_player getVariable [ARR_2(QQGVAR(detectorSound),false)]) && ([_player] call FUNC(hasDetector)));
+                        exceptions[] = {"isNotSwimming"};
+                        statement = QUOTE(_player setVariable [ARR_3(QQGVAR(detectorSound),true,true)]);
+                        showDisabled = 0;
+                        icon = QPATHTOF(ui\kat_chemicalDet_icon.paa);
+                    };
+                    class KAT_ChemicalDetector_SoundOff {
+                        displayName = CSTRING(DisableDetectorSound);
+                        condition = QUOTE((_player getVariable [ARR_2(QQGVAR(detectorSound),false)]) && ([_player] call FUNC(hasDetector)));
+                        exceptions[] = {"isNotSwimming"};
+                        statement = QUOTE(_player setVariable [ARR_3(QQGVAR(detectorSound),false,true)]);
+                        showDisabled = 0;
+                        icon = QPATHTOF(ui\kat_chemicalDet_icon.paa);
+                    };
                 };
             };
         };
