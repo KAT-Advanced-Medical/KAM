@@ -26,6 +26,7 @@
             <Japanese>低体温症を有効化</Japanese>
             <Italian>Abilita l'ipotermia</Italian>
             <French>Permettre l'hypothermie</French>
+            <Chinesesimp>启用低温</Chinesesimp>
         </Key>
         <Key ID="STR_KAT_Hypothermia_HAND_WARMER_IMPACT">
             <English>Hand Warmer Impact</English>
@@ -34,6 +35,7 @@
             <Japanese>ハンドウォーマーの影響</Japanese>
             <Italian>Impatto dei riscaldatori per le mani</Italian>
             <French>Impact du chauffe-mains</French>
+            <Chinesesimp>暖手器影响乘数</Chinesesimp>
         </Key>
         <Key ID="STR_KAT_Hypothermia_HAND_WARMER_IMPACT_DESC">
             <English>Multipler for impact of hand warmers on heat gain</English>
@@ -42,6 +44,7 @@
             <Japanese>ハンドウォーマーが熱獲得に与える影響の乗数</Japanese>
             <Italian>Moltiplicatore per l'impatto dei riscaldatori per le mani sull'aumento del calore</Italian>
             <French>Multiplicateur pour l'impact des chauffe-mains sur le gain de chaleur</French>
+            <Chinesesimp>暖手器对热量增加影响的倍数</Chinesesimp>
         </Key>
         <Key ID="STR_KAT_Hypothermia_FLUID_WARMER_IMPACT">
             <English>Fluid Warmer Impact</English>
@@ -50,6 +53,7 @@
             <Japanese>輸液ウォーマーの影響</Japanese>
             <Italian>Impatto del riscaldatore per liquidi</Italian>
             <French>Impact du réchauffeur de fluide</French>
+            <Chinesesimp>流体加温影响乘数</Chinesesimp>
         </Key>
         <Key ID="STR_KAT_Hypothermia_FLUID_WARMER_IMPACT_DESC">
             <English>Multipler for impact of fluid warmer on heat gain</English>
@@ -58,6 +62,7 @@
             <Japanese>輸液ウォーマーが熱獲得に与える影響の乗数</Japanese>
             <Italian>Moltiplicatore per l'impatto del riscaldatore per liquidi sull'aumento del calore</Italian>
             <French>Multiplicateur pour l'impact du réchauffement des fluides sur le gain de chaleur</French>
+            <Chinesesimp>流体加热器对热增益影响的倍数</Chinesesimp>
         </Key>
         <Key ID="STR_KAT_Hypothermia_WARM_CLOTHING">
             <English>Warm Uniforms</English>
@@ -66,6 +71,7 @@
             <Japanese>暖かいユニフォーム</Japanese>
             <Italian>Uniformi riscaldate</Italian>
             <French>Uniformes chauds</French>
+            <Chinesesimp>保暖制服</Chinesesimp>
         </Key>
         <Key ID="STR_KAT_Hypothermia_WARM_CLOTHING_DESC">
             <English>List of clothing marked that reduces heat loss</English>
@@ -74,6 +80,7 @@
             <Japanese>熱損失を減らすことが出来るとマークされた衣類のリスト</Japanese>
             <Italian>Elenco degli indumenti segnati che riducono la perdita di calore</Italian>
             <French>Liste des vêtements qui réduisent les chutes de température</French>
+            <Chinesesimp>标有减少热量损失的衣物清单</Chinesesimp>
         </Key>
         <Key ID="STR_KAT_Hypothermia_CheckHandWarmers">
             <English>Check Hand Warmers</English>
@@ -82,6 +89,7 @@
             <Japanese>ハンドウォーマーを確認する</Japanese>
             <Italian>Controlla i riscaldatori per le mani</Italian>
             <French>Vérifier les chauffe-mains</French>
+            <Chinesesimp>检查暖手器</Chinesesimp>
         </Key>
         <Key ID="STR_KAT_Hypothermia_HandWarmer_displayName">
             <English>Hand Warmer</English>
@@ -90,6 +98,7 @@
             <Japanese>ハンドウォーマー</Japanese>
             <Italian>Riscaldatore per le mani</Italian>
             <French>Chauffe-mains</French>
+            <Chinesesimp>暖手器</Chinesesimp>
         </Key>
         <Key ID="STR_KAT_Hypothermia_HandWarmer_DescShort">
             <English>Small hand warmers to provide warmth in colder climates</English>
@@ -98,6 +107,7 @@
             <Japanese>寒冷地でも体を温めることが出来る小さなハンドウォーマー (懐炉)</Japanese>
             <Italian>Piccoli riscaldatori per le mani per fornire calore in climi freddi</Italian>
             <French>Petits chauffe-mains pour réchauffer les mains dans les climats plus froids</French>
+            <Chinesesimp>小型暖手器，在寒冷气候下提供温暖</Chinesesimp>
         </Key>
         <Key ID="STR_KAT_Hypothermia_Use_Handwarmer">
             <English>Use Hand Warmer</English>
@@ -106,6 +116,7 @@
             <Japanese>ハンドウォーマーを使用する</Japanese>
             <Italian>Usa il riscaldatore per le mani</Italian>
             <French>Utiliser des chauffe-mains</French>
+            <Chinesesimp>使用暖手器</Chinesesimp>
         </Key>
         <Key ID="STR_KAT_Hypothermia_Self_Handwarmer_Output">
             <English>This is where you have handwarmers and how much longer you think they have in minutes: %1, %2, %3, %4, %5</English>
@@ -114,6 +125,7 @@
             <Japanese>あなたが使用中の ハンドウォーマーの 位置と残り持続時間は 次の通りです (分単位): %1, %2, %3, %4, %5</Japanese>
             <Italian>Ecco dove hai i riscaldatori per le mani e quanto tempo pensi che rimangano in minuti: %1, %2, %3, %4, %5</Italian>
             <French>La position et la durée restante du chauffe-mains que vous utilisez sont les suivantes (en minutes) : %1, %2, %3, %4, %5</French>
+            <Chinesesimp>这是您有暖手器的地方，以及您认为他们还有多长的持续时间：%1、%2、%3、%4、%5</Chinesesimp>
         </Key>
         <Key ID="STR_KAT_Hypothermia_Other_Handwarmer_Output">
             <English>This patient has handwarmers and they will probably last this many more minutes at this locations: %1, %2, %3, %4, %5</English>
@@ -122,6 +134,7 @@
             <Japanese>この患者が使用中の ハンドウォーマーの 位置と残り持続時間は 次の通りです (分単位): %1, %2, %3, %4, %5</Japanese>
             <Italian>Questo paziente ha riscaldatori per le mani e probabilmente dureranno ancora questi minuti in queste posizioni: %1, %2, %3, %4, %5</Italian>
             <French>La position et la durée restante du chauffe-main utilisé par ce patient sont les suivantes (en minutes) : %1, %2, %3, %4, %5</French>
+            <Chinesesimp>该患者有暖手器，他们还有多长的持续时间：%1、%2、%3、%4、%5</Chinesesimp>
         </Key>
         <Key ID="STR_KAT_Hypothermia_FluidWarmer_displayName">
             <English>Fluid Line Warmer</English>
@@ -130,6 +143,7 @@
             <Japanese>輸液ラインウォーマー</Japanese>
             <Italian>Riscaldatore per linea endovenosa</Italian>
             <French>Chauffe-ligne fluide</French>
+            <Chinesesimp>流体管路加热器</Chinesesimp>
         </Key>
         <Key ID="STR_KAT_Hypothermia_FluidWarmer_DescShort">
             <English>Provides heating to IV fluids. Must be placed on an already existing line</English>
@@ -138,6 +152,7 @@
             <Japanese>IVの輸液を温めます。既存のライン上に配置する必要があります</Japanese>
             <Italian>Fornisce riscaldamento ai liquidi IV. Deve essere posizionato su una linea già esistente</Italian>
             <French>Permet de chauffer les fluides IV. Doit être placé sur une ligne déjà existante</French>
+            <Chinesesimp>为静脉输液提供加热。必须放置在已存在的线上</Chinesesimp>
         </Key>
         <Key ID="STR_KAT_Hypothermia_Apply_Warmer">
             <English>Attach Fluid Warmer</English>
@@ -146,6 +161,7 @@
             <Japanese>輸液ウォーマーを取り付ける</Japanese>
             <Italian>Attacca il riscaldatore per liquidi</Italian>
             <French>Attacher le réchauffeur de fluide</French>
+            <Chinesesimp>连接油液加热器</Chinesesimp>
         </Key>
         <Key ID="STR_KAT_Hypothermia_Remove_Warmer">
             <English>Remove Fluid Warmer</English>
@@ -154,6 +170,7 @@
             <Japanese>輸液ウォーマーを取り外す</Japanese>
             <Italian>Rimuovi il riscaldatore per liquidi</Italian>
             <French>Enlever le réchauffeur de fluide</French>
+            <Chinesesimp>拆下油液加热器</Chinesesimp>
         </Key>
         <Key ID="STR_KAT_Hypothermia_temperature_dead">
             <English>Patient feels frigid</English>
@@ -162,6 +179,7 @@
             <Japanese>患者は凍ったように冷たい</Japanese>
             <Italian>Il paziente sente gelato</Italian>
             <French>Le patient se sent frigorifié</French>
+            <Chinesesimp>患者感觉发冷</Chinesesimp>
         </Key>
         <Key ID="STR_KAT_Hypothermia_temperature_cold">
             <English>Patient feels remarkably cold</English>
@@ -170,6 +188,7 @@
             <Japanese>患者は著しく冷たい</Japanese>
             <Italian>Il paziente sente notevolmente freddo</Italian>
             <French>Le patient a une sensation de froid intense</French>
+            <Chinesesimp>患者感觉非常冷</Chinesesimp>
         </Key>
         <Key ID="STR_KAT_Hypothermia_temperature_cool">
             <English>Patient feels moderately cold</English>
@@ -178,6 +197,7 @@
             <Japanese>患者は少し冷たい</Japanese>
             <Italian>Il paziente sente moderatamente freddo</Italian>
             <French>Le patient a modérément froid</French>
+            <Chinesesimp>患者感觉中度寒冷</Chinesesimp>
         </Key>
         <Key ID="STR_KAT_Hypothermia_temperature_mild">
             <English>Patient feels mildly cool</English>
@@ -186,6 +206,7 @@
             <Japanese>患者は少しひんやりしている</Japanese>
             <Italian>Il paziente sente lievemente fresco</Italian>
             <French>Le patient ressent une légère fraîcheur</French>
+            <Chinesesimp>患者感觉有点凉</Chinesesimp>
         </Key>
         <Key ID="STR_KAT_Hypothermia_temperature_warm">
             <English>Patient feels warm</English>
@@ -194,6 +215,7 @@
             <Japanese>患者は暖かい</Japanese>
             <Italian>Il paziente sente caldo</Italian>
             <French>Le patient ressent de la chaleur</French>
+            <Chinesesimp>患者感觉温暖</Chinesesimp>
         </Key>
         <Key ID="STR_KAT_Hypothermia_Check_Temperature">
             <English>Check Temperature</English>
@@ -202,6 +224,7 @@
             <Japanese>体温を確認</Japanese>
             <Italian>Controlla la temperatura</Italian>
             <French>Vérifier la température</French>
+            <Chinesesimp>检查温度</Chinesesimp>
         </Key>
         <Key ID="STR_KAT_Hypothermia_Check_Temperature_Progress">
             <English>Checking Temperature</English>
@@ -210,6 +233,7 @@
             <Japanese>体温をチェックしています</Japanese>
             <Italian>Controllo della temperatura in corso</Italian>
             <French>La température est vérifiée</French>
+            <Chinesesimp>检查温度</Chinesesimp>
         </Key>
         <Key ID="STR_KAT_Hypothermia_Check_Hand_Warmers">
             <English>Check Hand Warmers</English>
@@ -218,6 +242,7 @@
             <Japanese>ハンドウォーマーをチェックします</Japanese>
             <Italian>Controlla i riscaldatori per le mani</Italian>
             <French>Vérifier les chauffe-mains.</French>
+            <Chinesesimp>检查暖手器</Chinesesimp>
         </Key>
         <Key ID="STR_KAT_Hypothermia_perform">
             <English>Performing</English>
@@ -226,6 +251,7 @@
             <Japanese>適用中</Japanese>
             <Italian>Esecuzione in corso</Italian>
             <French>En cours de mise en place</French>
+            <Chinesesimp>执行</Chinesesimp>
         </Key>
         <Key ID="STR_KAT_Hypothermia_LineWarmer">
             <English>Line Warmer Active</English>
@@ -234,6 +260,7 @@
             <Japanese>ラインウォーマーを利用中</Japanese>
             <Italian>Riscaldatore per linea attivo</Italian>
             <French>Chauffe-lignes en service.</French>
+            <Chinesesimp>线路加热器已激活</Chinesesimp>
         </Key>
         <Key ID="STR_KAT_Hypothermia_HandWarmer_None">
             <English>No Hand Warmers are active at this time</English>
@@ -242,6 +269,7 @@
             <Japanese>現在ハンドウォーマーは使っていません</Japanese>
             <Italian>Nessun riscaldatore per le mani è attivo in questo momento</Italian>
             <French>Les chauffe-mains ne sont pas utilisés actuellement.</French>
+            <Chinesesimp>此时没有激活的暖手器</Chinesesimp>
         </Key>
         <Key ID="STR_KAT_Hypothermia_HandWarmer_Body">
             <English>Body: %1</English>
@@ -250,6 +278,7 @@
             <Japanese>胴体: %1</Japanese>
             <Italian>Corpo: %1</Italian>
             <French>Corps : %1</French>
+            <Chinesesimp>躯干：%1</Chinesesimp>
         </Key>
         <Key ID="STR_KAT_Hypothermia_HandWarmer_Body_None">
             <English>Body: None</English>
@@ -258,6 +287,7 @@
             <Japanese>胴体: なし</Japanese>
             <Italian>Corpo: Nessuno</Italian>
             <French>Corps : Aucun</French>
+            <Chinesesimp>躯干：无</Chinesesimp>
         </Key>
         <Key ID="STR_KAT_Hypothermia_HandWarmer_LArm">
             <English>Left Arm: %1</English>
@@ -266,6 +296,7 @@
             <Japanese>左腕: %1</Japanese>
             <Italian>Braccio Sinistro: %1</Italian>
             <French>Bras gauche : %1</French>
+            <Chinesesimp>左臂：%1</Chinesesimp>
         </Key>
         <Key ID="STR_KAT_Hypothermia_HandWarmer_LArm_None">
             <English>Left Arm: None</English>
@@ -274,6 +305,7 @@
             <Japanese>左腕: なし</Japanese>
             <Italian>Braccio Sinistro: Nessuno</Italian>
             <French>Bras gauche : aucun</French>
+            <Chinesesimp>左臂：无</Chinesesimp>
         </Key>
         <Key ID="STR_KAT_Hypothermia_HandWarmer_RArm">
             <English>Right Arm: %1</English>
@@ -282,6 +314,7 @@
             <Japanese>右腕: %1</Japanese>
             <Italian>Braccio Destro: %1</Italian>
             <French>Bras droit : %1</French>
+            <Chinesesimp>右臂：%1</Chinesesimp>
         </Key>
         <Key ID="STR_KAT_Hypothermia_HandWarmer_RArm_None">
             <English>Right Arm: None</English>
@@ -290,6 +323,7 @@
             <Japanese>右腕: なし</Japanese>
             <Italian>Braccio Destro: Nessuno</Italian>
             <French>Bras droit : aucun</French>
+            <Chinesesimp>右臂：无</Chinesesimp>
         </Key>
         <Key ID="STR_KAT_Hypothermia_HandWarmer_LLeg">
             <English>Left Leg: %1</English>
@@ -298,6 +332,7 @@
             <Japanese>左脚: %1</Japanese>
             <Italian>Gamba Sinistra: %1</Italian>
             <French>Jambe gauche : %1</French>
+            <Chinesesimp>左腿：%1</Chinesesimp>
         </Key>
         <Key ID="STR_KAT_Hypothermia_HandWarmer_LLeg_None">
             <English>Left Leg: None</English>
@@ -306,6 +341,7 @@
             <Japanese>左脚: なし</Japanese>
             <Italian>Gamba Sinistra: Nessuna</Italian>
             <French>Jambe gauche : aucune</French>
+            <Chinesesimp>左腿：无</Chinesesimp>
         </Key>
         <Key ID="STR_KAT_Hypothermia_HandWarmer_RLeg">
             <English>Right Leg: %1</English>
@@ -314,6 +350,7 @@
             <Japanese>右脚: %1</Japanese>
             <Italian>Gamba Destra: %1</Italian>
             <French>Jambe droite : %1</French>
+            <Chinesesimp>右腿：%1</Chinesesimp>
         </Key>
         <Key ID="STR_KAT_Hypothermia_HandWarmer_RLeg_None">
             <English>Right Leg: None</English>
@@ -322,6 +359,7 @@
             <Japanese>右脚: なし</Japanese>
             <Italian>Gamba Destra: Nessuna</Italian>
             <French>Jambe droite : non</French>
+            <Chinesesimp>右腿：无</Chinesesimp>
         </Key>
     </Package>
 </Project>
