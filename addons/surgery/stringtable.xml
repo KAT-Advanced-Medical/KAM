@@ -530,6 +530,7 @@
             <Japanese>切開口を閉じる</Japanese>
             <Italian>Chiudere incisione</Italian>
             <French>Fermer l'incision</French>
+            <Chinesesimp>闭合切口</Chinesesimp>
         </Key>
         <Key ID="STR_KAT_Surgery_Plate_Display">
             <English>Bone Plate</English>
@@ -636,6 +637,7 @@
             <Portuguese>Ultrassom Portátil</Portuguese>
             <Dutch>Mobiele echograaf</Dutch>
             <Italian>Ecografo portatile</Italian>
+            <Chinesesimp>手持式超声波</Chinesesimp>
         </Key>
         <Key ID="STR_KAT_Surgery_Ultra_DescUse">
             <English>Used to assess internal injuries</English>
@@ -646,6 +648,7 @@
             <Portuguese>Utilizado para verificar lesões internas</Portuguese>
             <Dutch>Wordt gebruikt om interne verwondingen te evalueren</Dutch>
             <Italian>Utilizzato per valutare le lesioni interne</Italian>
+            <Chinesesimp>用于评估内伤</Chinesesimp>
         </Key>
         <Key ID="STR_KAT_Surgery_Ultra_Use">
             <English>Conduct Ultrasound Assessment</English>
@@ -656,6 +659,7 @@
             <Portuguese>Realizar verificação com ultrassom</Portuguese>
             <Dutch>Voer echo evaluatie uit</Dutch>
             <Italian>Esegui valutazione ecografica</Italian>
+            <Chinesesimp>进行超声评估</Chinesesimp>
         </Key>
         <Key ID="STR_KAT_Surgery_Ultra_Action">
             <English>Assessing</English>
@@ -666,6 +670,7 @@
             <Portuguese>Verificando</Portuguese>
             <Dutch>Aan het evalueren</Dutch>
             <Italian>In corso di valutazione</Italian>
+            <Chinesesimp>评估</Chinesesimp>
         </Key>
         <Key ID="STR_KAT_Surgery_Ultra_Airway">
             <English>Airway Status: %1</English>
@@ -676,6 +681,7 @@
             <Portuguese>Estado das vias aéreas: %1</Portuguese>
             <Dutch>Luchtwegstatus: %1</Dutch>
             <Italian>Stato delle vie aeree: %1</Italian>
+            <Chinesesimp>气道状态：%1</Chinesesimp>
         </Key>
         <Key ID="STR_KAT_Surgery_Ultra_Thorasic">
             <English>Lung Status: %1</English>
@@ -686,6 +692,7 @@
             <Portuguese>Estado do pulmão: %1</Portuguese>
             <Dutch>Longstatus: %1</Dutch>
             <Italian>Stato dei polmoni: %1</Italian>
+            <Chinesesimp>肺部状态：%1</Chinesesimp>
         </Key>
         <Key ID="STR_KAT_Surgery_Ultra_Cardiac">
             <English>Cardiac Status: %1</English>
@@ -696,6 +703,7 @@
             <Portuguese>Estado cardíaco: %1</Portuguese>
             <Dutch>Cardiale status: %1</Dutch>
             <Italian>Stato cardiaco: %1</Italian>
+            <Chinesesimp>心脏状态：%1</Chinesesimp>
         </Key>
         <Key ID="STR_KAT_Surgery_Ultra_Airway_Normal">
             <English>Normal</English>
@@ -706,6 +714,7 @@
             <Portuguese>Normal</Portuguese>
             <Dutch>Normaal</Dutch>
             <Italian>Normale</Italian>
+            <Chinesesimp>正常</Chinesesimp>
         </Key>
         <Key ID="STR_KAT_Surgery_Ultra_Thorasic_PTX">
             <English>Pneumothorax</English>
@@ -716,6 +725,7 @@
             <Portuguese>Pneumotórax</Portuguese>
             <Dutch>Pneumothorax</Dutch>
             <Italian>Pneumotorace</Italian>
+            <Chinesesimp>气胸</Chinesesimp>
         </Key>
         <Key ID="STR_KAT_Surgery_Ultra_Thorasic_Hemo">
             <English>Hemopneumothorax</English>
@@ -726,6 +736,7 @@
             <Portuguese>Hemotórax</Portuguese>
             <Dutch>Hemopneumothorax</Dutch>
             <Italian>Emopneumotorace</Italian>
+            <Chinesesimp>血气胸</Chinesesimp>
         </Key>
         <Key ID="STR_KAT_Surgery_Ultra_Thorasic_Tension">
             <English>Tension Pneumothorax</English>
@@ -736,6 +747,7 @@
             <Portuguese>Pneumotórax Hipertensivo</Portuguese>
             <Dutch>Tensiepneumothorax</Dutch>
             <Italian>Pneumotorace Iperteso</Italian>
+            <Chinesesimp>张力性气胸</Chinesesimp>
         </Key>
         <Key ID="STR_KAT_Surgery_Ultra_Cardiac_Shockable">
             <English>Arrest - Shockable</English>
@@ -746,6 +758,7 @@
             <Portuguese>Parada - Chocável</Portuguese>
             <Dutch>Hartstilstand - Schokbaar</Dutch>
             <Italian>Arresto - Defibrillabile</Italian>
+            <Chinesesimp>逮捕-令人震惊</Chinesesimp>
         </Key>
         <Key ID="STR_KAT_Surgery_Ultra_Cardiac_Unshockable">
             <English>Arrest - Not Shockable</English>
@@ -756,6 +769,7 @@
             <Portuguese>Parada - Não Chocável</Portuguese>
             <Dutch>Hartstilstand - Niet schokbaar</Dutch>
             <Italian>Arresto - Non defibrillabile</Italian>
+            <Chinesesimp>逮捕-不令人震惊</Chinesesimp>
         </Key>
         <Key ID="STR_KAT_Surgery_Ultra_Cardiac_Tamponade">
             <English>Tamponade</English>
@@ -766,6 +780,7 @@
             <Portuguese>Tamponado</Portuguese>
             <Dutch>Harttamponade</Dutch>
             <Italian>Tamponamento</Italian>
+            <Chinesesimp>篡改</Chinesesimp>
         </Key>
         <Key ID="STR_KAT_Surgery_Reboa_DescShort">
             <English>REBOA Unit</English>
@@ -776,6 +791,7 @@
             <Portuguese>Unidade REBOA</Portuguese>
             <Dutch>ROBOA eenheid</Dutch>
             <Italian>Unità REBOA</Italian>
+            <Chinesesimp>REBOA单元</Chinesesimp>
         </Key>
         <Key ID="STR_KAT_Surgery_Reboa_DescUse">
             <English>Used to block the aorta and prevent bleeding below the heart</English>
@@ -786,6 +802,7 @@
             <Portuguese>Utilizada para bloquear a aorta e prevenir sangramento abaixo do coração</Portuguese>
             <Dutch>Wordt gebruikt om de aorta te blokkeren, en bloedingen onder het hart te stelpen</Dutch>
             <Italian>Utilizzato per bloccare l'aorta e prevenire il sanguinamento sotto il cuore</Italian>
+            <Chinesesimp>用于阻断主动脉，防止心脏以下出血</Chinesesimp>
         </Key>
         <Key ID="STR_KAT_Surgery_Reboa_Use">
             <English>Place REBOA Unit</English>
@@ -796,6 +813,7 @@
             <Portuguese>Colocar Unidade REBOA</Portuguese>
             <Dutch>Plaats REBOA eenheid</Dutch>
             <Italian>Posiziona l'unità REBOA</Italian>
+            <Chinesesimp>放置REBOA单元</Chinesesimp>
         </Key>
         <Key ID="STR_KAT_Surgery_Reboa_Action">
             <English>Placing</English>
@@ -806,6 +824,7 @@
             <Portuguese>Colocando</Portuguese>
             <Dutch>Wordt geplaatst</Dutch>
             <Italian>Posizionamento in corso</Italian>
+            <Chinesesimp>放置</Chinesesimp>
         </Key>
         <Key ID="STR_KAT_Surgery_Reboa_Deep_Use">
             <English>Advance REBOA Unit</English>
@@ -816,6 +835,7 @@
             <Portuguese>Avançar Unidade REBOA</Portuguese>
             <Dutch>Voer REBOA eenheid op</Dutch>
             <Italian>Avanza l'unità REBOA</Italian>
+            <Chinesesimp>高级REBOA单元</Chinesesimp>
         </Key>
         <Key ID="STR_KAT_Surgery_Reboa_Deep_Action">
             <English>Advancing</English>
@@ -826,6 +846,7 @@
             <Portuguese>Avançando</Portuguese>
             <Dutch>Wordt opgevoerd</Dutch>
             <Italian>Avanzamento in corso</Italian>
+            <Chinesesimp>前进</Chinesesimp>
         </Key>
         <Key ID="STR_KAT_Surgery_Reboa_Remove_Use">
             <English>Remove REBOA Unit</English>
@@ -836,6 +857,7 @@
             <Portuguese>Remover Unidade REBOA</Portuguese>
             <Dutch>Verwijder REBOA eenheid</Dutch>
             <Italian>Rimuovi l'unità REBOA</Italian>
+            <Chinesesimp>拆除REBOA装置</Chinesesimp>
         </Key>
         <Key ID="STR_KAT_Surgery_Reboa_Remove_Action">
             <English>Removing</English>
@@ -846,6 +868,7 @@
             <Portuguese>Removendo</Portuguese>
             <Dutch>Wordt verwijderd</Dutch>
             <Italian>Rimozione in corso</Italian>
+            <Chinesesimp>删除</Chinesesimp>
         </Key>
         <Key ID="STR_KAT_Surgery_Reboa_Status">
             <English>REBOA</English>
@@ -856,6 +879,7 @@
             <Portuguese>REBOA</Portuguese>
             <Dutch>REBOA</Dutch>
             <Italian>REBOA</Italian>
+            <Chinesesimp>雷博亚</Chinesesimp>
         </Key>
         <Key ID="STR_KAT_Surgery_Pericardial_Tap_Use">
             <English>Pericardial Tap</English>
@@ -866,6 +890,7 @@
             <Portuguese>Pericardiocentese</Portuguese>
             <Dutch>Pericard drainage</Dutch>
             <Italian>Puntura pericardica</Italian>
+            <Chinesesimp>心包穿刺</Chinesesimp>
         </Key>
         <Key ID="STR_KAT_Surgery_Pericardial_Tap_Action">
             <English>Performing</English>
@@ -876,6 +901,7 @@
             <Portuguese>Realizando</Portuguese>
             <Dutch>Wordt uitgevoerd</Dutch>
             <Italian>Esecuzione in corso</Italian>
+            <Chinesesimp>表演</Chinesesimp>
         </Key>
         <Key ID="STR_KAT_Surgery_Pericardial_Tap_Log">
             <English>%1 performed a pericardial tap</English>
@@ -886,6 +912,7 @@
             <Portuguese>%1 realizou uma pericardiocentese</Portuguese>
             <Dutch>%1 heeft een pericard drainage uitgevoerd</Dutch>
             <Italian>%1 ha eseguito una puntura pericardica</Italian>
+            <Chinesesimp>%1 对患者进行了心包穿刺</Chinesesimp>
         </Key>
         <Key ID="STR_KAT_Surgery_KIDNEY_ACTION">
             <English>Kidney damage/failure</English>
@@ -997,6 +1024,7 @@
             <Finnish>Suljettu vähennys epäonnistuu</Finnish>
             <Russian>Вероятность неудачи закрытой репозиции</Russian>
             <Dutch>Kans dat een gesloten reductie faalt</Dutch>
+            <Chinesesimp>封闭式减少失败几率</Chinesesimp>
         </Key>
         <Key ID="STR_KAT_Surgery_CLOSED_REDUCTION_FAIL_DESC">
             <English>Chance that closed reduction will fail. Default value 10%</English>
@@ -1012,6 +1040,7 @@
             <Finnish>Mahdollisuus, että suljettu vähennys epäonnistuu. Oletusarvo 10 %</Finnish>
             <Russian>Вероятность того, что закрытая репозиция завершится неудачей. Значение по умолчанию 10%</Russian>
             <Dutch>Kans dat een gesloten reductie faalt. Standaard waarde is 10%</Dutch>
+            <Chinesesimp>封闭式缩减失败的可能性。默认值10%</Chinesesimp>
         </Key>
         <Key ID="STR_KAT_Surgery_COMPOUND_FRACTURE_CHANCE">
             <English>Compound fracture chance</English>
@@ -1031,7 +1060,7 @@
         </Key>
         <Key ID="STR_KAT_Surgery_COMPOUND_FRACTURE_CHANCE_DESC">
             <English>Sets the chance for compound fractures. Also sets the chance for comminuted fractures (60% Compound = 40% Comminuted)</English>
-            <Chinesesimp>设置复合骨折的机会,同时设置粉碎骨折的几率 (60% 复合 = 40% 粉碎)</Chinesesimp>
+            <Chinesesimp>设置复合骨折的几率,同时设置粉碎骨折的几率 (60% 复合 = 40% 粉碎)</Chinesesimp>
             <Italian>Imposta la possibilità di fratture composte. Imposta anche la possibilità di fratture comminute (60% composto = 40% sminuzzato)</Italian>
             <Polish>Ustawia szansę na złożone złamanie. \nPonadto ustawia szansę dla złamań z przemieszczeniem (60% proste = 40% z przemieszczeniem)</Polish>
             <Czech>Nastavuje šanci na otevřené zlomeniny. Také nastavuje šanci na rozdrcené zlomeniny (60% otevřené = 40% rozdrcené)</Czech>
@@ -1260,6 +1289,7 @@
             <French>Niveau médical requis pour le REBOA</French>
             <Spanish>Permitir REBOA</Spanish>
             <Italian>Consenti REBOA</Italian>
+            <Chinesesimp>允许REBOA</Chinesesimp>
         </Key>
         <Key ID="STR_KAT_Surgery_REBOA_LOCATION">
             <English>Locations for REBOA</English>
@@ -1268,6 +1298,7 @@
             <French>Emplacements du REBOA</French>
             <Spanish>Zonas para REBOA</Spanish>
             <Italian>Posizioni per REBOA</Italian>
+            <Chinesesimp>REBOA的位置</Chinesesimp>
         </Key>
         <Key ID="STR_KAT_Surgery_REBOA_TIMER">
             <English>Time to perform REBOA actions</English>
@@ -1276,6 +1307,7 @@
             <French>Temps nécessaire pour effectuer les actions du REBOA</French>
             <Spanish>Tiempo para realizar acciones de REBOA</Spanish>
             <Italian>Tempo per eseguire le azioni REBOA</Italian>
+            <Chinesesimp>执行REBOA操作的时间</Chinesesimp>
         </Key>
         <Key ID="STR_KAT_Surgery_REBOA_TIMER_DESC">
             <English>Sets how long it takes to perform REBOA actions (Placing, Advancing, Removing)</English>
@@ -1284,6 +1316,7 @@
             <French>Défini le temps nécessaire pour effectuer les actions du REBOA (placement, avancée, retrait)</French>
             <Spanish>Establece cuanto tiempo lleva realizar las acciones de REBOA (Colocar, Avanzar, Quitar)</Spanish>
             <Italian>Imposta quanto tempo ci vuole per eseguire le azioni REBOA (Posizionamento, Avanzamento, Rimozione)</Italian>
+            <Chinesesimp>设置执行REBOA操作（放置、前进、移除）所需的时间</Chinesesimp>
         </Key>
         <Key ID="STR_KAT_Surgery_ULTRASOUND_ACTION_MEDLEVEL">
             <English>Allow Ultrasound</English>
@@ -1292,6 +1325,7 @@
             <French>Niveau médical requis pour effectuer un ultrason</French>
             <Spanish>Permitir Ultrasonido</Spanish>
             <Italian>Consenti Ecografia</Italian>
+            <Chinesesimp>允许超声波</Chinesesimp>
         </Key>
         <Key ID="STR_KAT_Surgery_ULTRASOUND_LOCATION">
             <English>Locations for Ultrasound</English>
@@ -1300,6 +1334,7 @@
             <French>Emplacements de l'ultrason</French>
             <Spanish>Zonas para Ultrasonido</Spanish>
             <Italian>Posizioni per Ecografia</Italian>
+            <Chinesesimp>超声波检查地点</Chinesesimp>
         </Key>
         <Key ID="STR_KAT_Surgery_ULTRASOUND_TIMER">
             <English>Time to perform Ultrasound actions</English>
@@ -1308,6 +1343,7 @@
             <French>Temps nécessaire pour effectuer les actions de l'ultrason</French>
             <Spanish>Tiempo para realizar acciones de Ultrasonidos</Spanish>
             <Italian>Tempo per eseguire le azioni Ecografia</Italian>
+            <Chinesesimp>执行超声波操作的时间</Chinesesimp>
         </Key>
         <Key ID="STR_KAT_Surgery_ULTRASOUND_TIMER_DESC">
             <English>Sets how long it takes to perform an ultrasound exam</English>
@@ -1316,6 +1352,7 @@
             <French>Défini le temps nécessaire pour effectuer une examination à l'ultrason</French>
             <Spanish>Establece cuánto tiempo lleva realizar un examen de Ultrasonidos</Spanish>
             <Italian>Imposta quanto tempo ci vuole per eseguire un esame ecografico</Italian>
+            <Chinesesimp>设置执行超声波检查所需的时间</Chinesesimp>
         </Key>
         <Key ID="STR_KAT_Surgery_PERICARDIALTAP_ACTION_MEDLEVEL">
             <English>Allow Pericardial Tap</English>
@@ -1324,6 +1361,7 @@
             <French>Niveau médical requis pour le prélèvement péricardique</French>
             <Spanish>Permitir realizar Pericardiocentesis</Spanish>
             <Italian>Consenti Puntura Pericardica</Italian>
+            <Chinesesimp>允许心包穿刺</Chinesesimp>
         </Key>
         <Key ID="STR_KAT_Surgery_PERICARDIALTAP_LOCATION">
             <English>Locations for Pericardial Tap</English>
@@ -1332,6 +1370,7 @@
             <French>Emplacements du prélèvement péricardique</French>
             <Spanish>Zonas para Pericardiocentesis</Spanish>
             <Italian>Posizioni per Puntura Pericardica</Italian>
+            <Chinesesimp>心包穿刺位置</Chinesesimp>
         </Key>
         <Key ID="STR_KAT_Surgery_PERICARDIALTAP_TIMER">
             <English>Time to perform Pericardial Tap</English>
@@ -1340,6 +1379,7 @@
             <French>Temps nécessaire pour effectuer le prélèvement péricardique</French>
             <Spanish>Tiempo para realizar Pericardiocentesis</Spanish>
             <Italian>Tempo per eseguire la Puntura Pericardica</Italian>
+            <Chinesesimp>进行心包穿刺的时间</Chinesesimp>
         </Key>
         <Key ID="STR_KAT_Surgery_PERICARDIALTAP_TIMER_DESC">
             <English>Sets how long it takes to perform a Pericardial Tap</English>
@@ -1348,6 +1388,7 @@
             <French>Défini le temps nécessaire pour effectuer le prélèvement péricardique</French>
             <Spanish>Establece cuanto tiempo lleva realizar una Pericardiocentesis</Spanish>
             <Italian>Imposta quanto tempo ci vuole per eseguire una Puntura Pericardica</Italian>
+            <Chinesesimp>设置执行心包穿刺所需的时间</Chinesesimp>
         </Key>
         <Key ID="STR_KAT_Surgery_BREATH_CHECK_MEDLEVEL">
             <English>Allow Breath Check</English>
@@ -1375,6 +1416,7 @@
             <Portuguese>Permitir curativo a vácuo</Portuguese>
             <Dutch>Benodigde training voor het gebruik van een vacuümverband</Dutch>
             <Italian>Consenti NPWT</Italian>
+            <Chinesesimp>允许NPWT</Chinesesimp>
         </Key>
         <Key ID="STR_KAT_Surgery_NPWT_LOCATION">
             <English>Locations NPWT</English>
@@ -1386,6 +1428,7 @@
             <Portuguese>Locais para curativo a vácuo</Portuguese>
             <Dutch>Locaties waar een vacuümverband aangelegd kan worden</Dutch>
             <Italian>Posizioni NPWT</Italian>
+            <Chinesesimp>固定NPWT</Chinesesimp>
         </Key>
         <Key ID="STR_KAT_Surgery_CLOSED_LOCATION">
             <English>Locations Closed Reduction</English>
@@ -1605,6 +1648,7 @@
             <Portuguese>Configurações do curativo a vácuo</Portuguese>
             <Dutch>Vacuümverband instellingen</Dutch>
             <Italian>Impostazioni del sistema di aspirazione per medicazioni (NPWT)</Italian>
+            <Chinesesimp>敷料真空（NPWT）设置</Chinesesimp>
         </Key>
         <Key ID="STR_KAT_Surgery_surgeryToolbox">
             <English>[KAM] Surgery Box</English>
@@ -1620,6 +1664,7 @@
             <Finnish>[KAM] Leikkauslaatikko</Finnish>
             <Russian>[КАМ] Хирургический бокс</Russian>
             <Dutch>[KAM] Chirurgiedoos</Dutch>
+            <Chinesesimp>[KAM]手术箱</Chinesesimp>
         </Key>
         <Key ID="STR_KAT_Surgery_SETTING_ConsciousnessRequirement">
             <English>Surgery Consciousness Controls</English>
@@ -1633,6 +1678,7 @@
             <Russian>Контроль сознания во время операции</Russian>
             <Dutch>Operatie bewustzijninstellingen</Dutch>
             <Italian>Controlli della coscienza durante la chirurgia</Italian>
+            <Chinesesimp>手术意识控制</Chinesesimp>
         </Key>
         <Key ID="STR_KAT_Surgery_SETTING_ConsciousnessRequirement_DESC">
             <English>Surgery Causes Unconsciousness: Surgery without anesthesia and sedation results in unconsciousness from CA. \nUnconsciousness Required for Surgery: Surgery requires patient to be unconscious. \nNo Unconsciousness from Surgery: Surgery doesn't induce unconsciousness, causes pain. \nSurgery Anesthesia: Patient stays awake during surgery if given Etomidate, if not they will go into CA.</English>
@@ -1646,6 +1692,7 @@
             <Russian>Операция вызывает потерю сознания: операция без анестезии или седативного средства приводит к потере сознания из-за остановки сердца. \nбессознательное состояние, необходимое для операции: операция требует, чтобы пациент был без сознания. \nнет бессознательного состояния из-за операции: операция не вызывает бессознательного состояния, она вызывает боль. \nхирургическая анестезия: пациент не спит во время операции, если ему вводят этомидат.</Russian>
             <Dutch>Operatie veroorzaakt bewustzijnsverlies: Operaties zonder anesthesie en sedatie lijdt tot bewustzijnsverlies door hartstilstand. \n Bewusteloosheid benodigd voor operatie: Operaties vereisen dat de patiënt bewusteloos is. \n Geen bewustzijnsverlies door operaties: Operaties lijden niet tot bewustzijnsverlies, maar veroorzaken pijn. \n Operatie met anesthesie: Patiënt blijft wakker tijdens de operatie als etomidaat gegeven is, anders lijdt de operatie tot een hartstilstand.</Dutch>
             <Italian>Una chirurgia causa incoscienza: Una chirurgia senza anestesia e sedazione porta all'incoscienza a causa di CA. \n Incoscienza richiesta per la chirurgia: Per la chirurgia, è necessario che il paziente sia incosciente. \n Nessuna incoscienza dalla chirurgia: La chirurgia non causa incoscienza, ma dolore. \n Anestesia chirurgica: Il paziente rimane sveglio durante l'intervento se gli viene somministrato Etomidato.</Italian>
+            <Chinesesimp>手术导致昏迷：没有麻醉和镇静的手术会导致CA昏迷。\n手术需要昏迷：手术要求患者昏迷。\手术不会导致无意识：手术不会引起无意识，只会引起疼痛。\n手术麻醉：如果给予依托咪酯，患者在手术期间保持清醒，否则将进入CA。</Chinesesimp>
         </Key>
         <Key ID="STR_KAT_Surgery_SETTING_Causes_Unconsciousness">
             <English>Surgery Causes Unconsciousness</English>
@@ -1659,6 +1706,7 @@
             <Russian>Хирургическое вмешательство приводит к потере сознания</Russian>
             <Dutch>Operatie veroorzaakt bewustijnsverlies</Dutch>
             <Italian>Chirurgia causa incoscienza</Italian>
+            <Chinesesimp>手术导致昏迷</Chinesesimp>
         </Key>
         <Key ID="STR_KAT_Surgery_SETTING_Unconsciousness_Required">
             <English>Unconsciousness Required for Surgery</English>
@@ -1672,6 +1720,7 @@
             <Russian>Потеря сознания, необходимая для хирургического вмешательства</Russian>
             <Dutch>Bewusteloosheid </Dutch>
             <Italian>Incoscienza richiesta per la chirurgia</Italian>
+            <Chinesesimp>手术需要昏迷</Chinesesimp>
         </Key>
         <Key ID="STR_KAT_Surgery_SETTING_No_Unconsciousness">
             <English>No Unconsciousness from Surgery</English>
@@ -1685,6 +1734,7 @@
             <Russian>После операции никто не теряет сознание</Russian>
             <Dutch>Geen Bewustzijnsverlies door operaties</Dutch>
             <Italian>Nessuna incoscienza dalla chirurgia</Italian>
+            <Chinesesimp>手术后无意识</Chinesesimp>
         </Key>
         <Key ID="STR_KAT_Surgery_SETTING_Anesthesia">
             <English>Surgery Anesthesia</English>
