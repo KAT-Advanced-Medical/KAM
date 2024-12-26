@@ -99,6 +99,7 @@
             <Finnish>IV/IO pudotusaika</Finnish>
             <Russian>Время выпадения IV/IO</Russian>
             <Dutch>IV/IO uitvaltijd</Dutch>
+            <Chinesesimp>IV/IO 脱落时间</Chinesesimp>
         </Key>
         <Key ID="STR_KAT_Pharma_IV_DROP_TIME_DESC">
             <English>Changes the time at which IVs/IOs fall out of a patient</English>
@@ -179,6 +180,7 @@
             <Dutch>Gevechts wond medicatie pil pak&lt;br/&gt;Wordt gebruikt om milde pijn en bloed incompatibiliteit op te lossen</Dutch>
             <French>Pack de Pilules Médicales pour Blessures de Combat &lt;/br&gt; Utilisé pour supprimer les douleurs mineures et soulager les symptômes d'incompatibilité sanguine.</French>
             <Italian>Pacchetto di Pillole per Medicazioni da Combattimento&lt;br/&gt;Usato per sopprimere il dolore lieve e alleviare i sintomi di incompatibilità del sangue</Italian>
+            <Chinesesimp>战斗伤口药物药丸包&lt;br/&gt;用于抑制轻微疼痛和缓解血液不相容症状</Chinesesimp>
         </Key>
         <Key ID="STR_KAT_Pharma_Painkillers_Box_Display">
             <English>Combat Pill Pack</English>
@@ -188,6 +190,7 @@
             <Dutch>Gevechtspillendoosje</Dutch>
             <French>Pack de Pilules de combat</French>
             <Italian>Pacchetto di Pillole da Combattimento</Italian>
+            <Chinesesimp>战斗药丸包</Chinesesimp>
         </Key>
         <Key ID="STR_KAT_Pharma_Give_CWMP">
             <English>Use CWMP</English>
@@ -265,6 +268,7 @@
             <Russian>Ингалятор Пентрокс</Russian>
             <Dutch>Penthrox inhalator</Dutch>
             <Italian>Inalatore Penthrox</Italian>
+            <Chinesesimp>Penthrox吸入器</Chinesesimp>
         </Key>
         <Key ID="STR_KAT_Pharma_Use_Penthrox">
             <English>Use Penthrox Inhaler</English>
@@ -287,6 +291,7 @@
             <Dutch>volatiel anestheticum, wordt gebruik om stevige pijn te onderdrukken</Dutch>
             <French>Anesthésique volatil, utilisé pour supprimer les douleurs modérées</French>
             <Italian>Anestetico volatile, usato per sopprimere il dolore moderato</Italian>
+            <Chinesesimp>挥发性麻醉剂，用于抑制中度疼痛</Chinesesimp>
         </Key>
         <Key ID="STR_KAT_Pharma_Naloxone_DescShort">
             <English>Used to reverse opioid overdoses</English>
@@ -675,12 +680,14 @@
             <Portuguese>Autoinjetor de Fenilefrina</Portuguese>
             <Dutch>Fenylefrine autoinjector</Dutch>
             <Italian>Autoiniettore di Fenilefrina</Italian>
+            <Chinesesimp>苯肾上腺素自动注射器</Chinesesimp>
         </Key>
         <Key ID="STR_KAT_Pharma_PhenylAuto_DescShort">
             <English>Used to raise blood pressure</English>
             <Japanese>血圧を上げるために使用される</Japanese>
             <Italian>Usato per aumentare la pressione sanguigna</Italian>
             <French>Utilisé pour augmenter la pression artérielle</French>
+            <Chinesesimp>用于提高血压</Chinesesimp>
         </Key>
         <Key ID="STR_KAT_Pharma_Take_Phenyl_Auto">
             <English>Inject Phenylephrine</English>
@@ -1122,6 +1129,7 @@
             <Portuguese>Fluido necessita de inserção IV/IO</Portuguese>
             <Dutch>Vloeistoffen vereisen een aangelegde IV/IO</Dutch>
             <Italian>Fluido richiede IV/IO inserito</Italian>
+            <Chinesesimp>推注需要插入IV/IO</Chinesesimp>
         </Key>
         <Key ID="STR_KAT_Pharma_SETTING_REQUIRE_INS_IV_DESC">
             <English>Default false. If true, you will need to insert IV/IO first before being able to give someone saline/blood/plasma. \nIf false, it retains standard ACE behaviour for using saline/blood/plasma.</English>
@@ -1183,6 +1191,7 @@
             <Portuguese>Extração de sangue necessita de IV/IO</Portuguese>
             <Dutch>Bloedoptrekken vereist IV/IO</Dutch>
             <Italian>Prelievo di sangue richiede IV/IO</Italian>
+            <Chinesesimp>抽血需要插入IV/IO</Chinesesimp>
         </Key>
         <Key ID="STR_KAT_Pharma_SETTING_REQUIRE_INS_IV_BLOOD_DRAW_DESC">
             <English>Default false. If true, you will need to insert IV/IO first before being able to draw blood from someone. \nIf false, you can draw without it.</English>
@@ -1194,18 +1203,21 @@
             <Portuguese>Desativado, por padrão. Quando ativado, você precisará inserir IV/IO primeiro antes de poder retirar sangue de alguém. \nSe desativado, você pode retirar sem ele.</Portuguese>
             <Dutch>Standaard vals. Wanneer waar moet er eerst een IV/IO toegediend worden voordat je bloed kan optrekken. \nWanneer vals is dit niet vereist.</Dutch>
             <Italian>Impostazione predefinita falsa. Se vera, dovrai inserire prima IV/IO prima di poter prelevare sangue da qualcuno. \nSe falsa, puoi prelevare senza di esso.</Italian>
+            <Chinesesimp>默认值为false。如果是真的，你需要先插入静脉注射/IO，然后才能从某人身上抽血。\n如果是假的，你可以不用它画画。</Chinesesimp>
         </Key>
         <Key ID="STR_KAT_Pharma_SETTING_IV_FLOW_CONTROL">
             <English>Enable IV/IO Flow Control</English>
             <Japanese>IV/IO流量操作を有効化</Japanese>
             <Italian>Abilita il controllo del flusso IV/IO</Italian>
             <French>Activer les opérations de flux IV/IO</French>
+            <Chinesesimp>启用IV/IO流量控制</Chinesesimp>
         </Key>
         <Key ID="STR_KAT_Pharma_SETTING_IV_FLOW_CONTROL_DESC">
             <English>Enables the IV/IO flow control menu which gives the medic fine control over the volume running through the active line</English>
             <Japanese>IV/IO流量操作メニューを有効にし、輸液がラインを流れる液量を衛生兵が細かく制御できるようにします。</Japanese>
             <Italian>Abilita il menu di controllo del flusso IV/IO che consente al medico di controllare con precisione il volume che scorre attraverso la linea attiva.</Italian>
             <French>Active le menu de contrôle du débit IV/IO qui permet à l'infirmier de contrôler finement le volume circulant dans la ligne active.</French>
+            <Chinesesimp>启用IV/IO流量控制菜单，使医务人员能够精细控制通过活动线路的音量</Chinesesimp>
         </Key>
         <Key ID="STR_KAT_Pharma_SETTING_Reorientation_Slap">
             <English>Reorientation slap sound</English>
@@ -1329,6 +1341,7 @@
             <Finnish>Ota aseen heiluminen käyttöön</Finnish>
             <Russian>Включить раскачивание оружия</Russian>
             <Dutch>Schakel wapenbeweging in</Dutch>
+            <Chinesesimp>启用武器摇摆</Chinesesimp>
         </Key>
         <Key ID="STR_KAT_Pharma_SETTING_Weapon_Sway_Pervitin_DESC">
             <English>Enables if pervitin should influance your weapon sway</English>
@@ -1344,6 +1357,7 @@
             <Finnish>Mahdollistaa pervitiinin vaikutuksen aseen heilumiseen.</Finnish>
             <Russian>Включается, если Первитин должен повлиять на раскачивание вашего оружия</Russian>
             <Dutch>Bepaald of pervitin invloed heeft op wapenbewegingen</Dutch>
+            <Chinesesimp>启用柏飞汀(Pervitin)影响您的武器摆动</Chinesesimp>
         </Key>
         <Key ID="STR_KAT_Pharma_SETTING_PervitinSpeed_displayName">
             <English>Pervitin Speed Boost</English>
@@ -1359,6 +1373,7 @@
             <Finnish>Pervitiini nopeuden lisääminen</Finnish>
             <Russian>Повышение скорости Первитином</Russian>
             <Dutch>Pervitin snelheidsboost</Dutch>
+            <Chinesesimp>柏飞汀(Pervitin)速度提升</Chinesesimp>
         </Key>
         <Key ID="STR_KAT_Pharma_SETTING_PervitinSpeed_DESC">
             <English>The animation speed that gets set in Stage 1 of Pervitin. (1 = normal, 2 = twice)</English>
@@ -1374,6 +1389,7 @@
             <Finnish>Animaationopeus, joka asetetaan pervitiinin vaiheessa 1. (1 = normaali, 2 = kahdesti)</Finnish>
             <Russian>Скорость анимации, которая устанавливается на этапе 1 Первитина. (1 = обычная, 2 = двойная)</Russian>
             <Dutch>Animatiesnelheid van fase 1 van pervitin. (1 = normaal, 2 = dubbel)</Dutch>
+            <Chinesesimp>在柏飞汀(Pervitin)的第一阶段中设置的动画速度。（1=正常，2=两次）</Chinesesimp>
         </Key>
         <Key ID="STR_KAT_Pharma_treatmentTime_Reorientation">
             <English>Treatment time for reorientation</English>
@@ -1622,6 +1638,7 @@
             <Dutch>Dissociatieve anestheticum, wordt gebruikt om ernstige pijn te onderdrukken</Dutch>
             <French>Anesthésiques dissociatifs, utilisés pour supprimer les douleurs sévères</French>
             <Italian>Anestetici dissociativi, usati per sopprimere il dolore severo</Italian>
+            <Chinesesimp>解离性麻醉剂，用于抑制剧烈疼痛</Chinesesimp>
         </Key>
         <Key ID="STR_KAT_Pharma_Take_Fentanyl">
             <English>Push Fentanyl</English>
@@ -1663,6 +1680,7 @@
             <Dutch>Opïode analgeticum, wordt gebruikt om ernstige pijn te onderdrukken</Dutch>
             <French>Analgésique opioïde, utilisé pour supprimer les douleurs sévères</French>
             <Italian>Analgesico oppioide, usato per sopprimere il dolore severo</Italian>
+            <Chinesesimp>阿片类镇痛药，用于抑制剧烈疼痛</Chinesesimp>
         </Key>
         <Key ID="STR_KAT_Pharma_Take_Nalbuphine">
             <English>Push Nalbuphine</English>
@@ -1704,6 +1722,7 @@
             <Dutch>Opïode analgeticum, wordt gebruikt om matige pijn te onderdrukken</Dutch>
             <French>Analgésique opioïde, utilisé pour supprimer les douleurs modérées</French>
             <Italian>Analgesico oppioide, usato per sopprimere il dolore moderato</Italian>
+            <Chinesesimp>阿片类镇痛药，用于抑制中度疼痛</Chinesesimp>
         </Key>
         <Key ID="STR_KAT_Pharma_SETTING_reorientationChance">
             <English>Maximum Reorientation Success Chance</English>
@@ -1815,6 +1834,7 @@
             <Finnish>Pervitiinin hoitoaika</Finnish>
             <Russian>Время лечения Первитином</Russian>
             <Dutch>Behandeltijd van Pervitin</Dutch>
+            <Chinesesimp>柏飞汀(Pervitin)的治疗时间</Chinesesimp>
         </Key>
         <Key ID="STR_KAT_Pharma_medLvl_Pervitin">
             <English>Medical level required for Pervitin</English>
@@ -1830,11 +1850,12 @@
             <Finnish>Pervitiini vaatii lääketieteellisen koulutustason</Finnish>
             <Russian>Медицинский уровень, необходимый для использования Первитина</Russian>
             <Dutch>Medisch niveau benodigd voor het gebruik van Pervitin</Dutch>
+            <Chinesesimp>柏飞汀(Pervitin)所需的医疗水平</Chinesesimp>
         </Key>
         <Key ID="STR_KAT_Pharma_medLvl_TXA">
             <English>Medical level required for TXA</English>
             <Polish>Poziom wyszkolenia medycznego dla TXA</Polish>
-            <Chinesesimp>TXA所需的医疗水平</Chinesesimp>
+            <Chinesesimp>血栓素(TXA)所需的医疗水平</Chinesesimp>
             <Italian>Livello medico richiesto per TXA</Italian>
             <Czech>Zdravotnická úroveň potřebná pro TXA</Czech>
             <French>Niveau médical requis pour l'Acide Tranexamique</French>
@@ -1850,7 +1871,7 @@
         <Key ID="STR_KAT_Pharma_treatmentTime_TXA">
             <English>Treatment time for TXA</English>
             <Polish>Czas na wstrzyknięcie TXA</Polish>
-            <Chinesesimp>TXA的治疗时间</Chinesesimp>
+            <Chinesesimp>血栓素(TXA)的治疗时间</Chinesesimp>
             <Italian>Tempo di trattamento per TXA</Italian>
             <Czech>Doba léčby pro TXA</Czech>
             <French>Temps de traitement de l'Acide Tranexamique</French>
@@ -2291,6 +2312,7 @@
             <Russian>Медицинский уровень, необходимый для использования ингалятора Пентрокс</Russian>
             <Dutch>Medisch niveau benodigd voor het gebruik van Penthrox inhalators</Dutch>
             <Italian>Livello medico richiesto per l'inalatore Penthrox</Italian>
+            <Chinesesimp>Penthrox吸入器所需的医疗水平</Chinesesimp>
         </Key>
         <Key ID="STR_KAT_Pharma_SETTING_treatmentTime_Penthrox">
             <English>Treatment time for Penthrox Inhaler</English>
@@ -2304,6 +2326,7 @@
             <Russian>Время обработки ингалятором Пентрокс</Russian>
             <Dutch>Behandeltijd van Penthrox inhalators</Dutch>
             <Italian>Tempo di trattamento per l'inalatore Penthrox</Italian>
+            <Chinesesimp>Penthrox吸入器的治疗时间</Chinesesimp>
         </Key>
         <Key ID="STR_KAT_Pharma_SubCategory_Basic">
             <English>Basic Settings</English>
@@ -2415,6 +2438,7 @@
             <Finnish>Pervitiinin asetukset</Finnish>
             <Russian>Настройки Перфитина</Russian>
             <Dutch>Pervitin instellingen</Dutch>
+            <Chinesesimp>柏飞汀(Pervitin)设置</Chinesesimp>
         </Key>
         <Key ID="STR_KAT_Pharma_SubCategory_Caffeine">
             <English>Caffeine Settings</English>
@@ -2430,6 +2454,7 @@
             <Finnish>Kofeiiniasetukset</Finnish>
             <Russian>Настройки Кофеина</Russian>
             <Dutch>Caffeïne instellingen</Dutch>
+            <Chinesesimp>咖啡因设置</Chinesesimp>
         </Key>
         <Key ID="STR_KAT_Pharma_SubCategory_TXA">
             <English>TXA Settings</English>
@@ -2667,6 +2692,7 @@
             <Russian>Настройки ингалятора Пентрокс</Russian>
             <Dutch>Penthrox inhalator instellingen</Dutch>
             <Italian>Impostazioni dell'inalatore Penthrox</Italian>
+            <Chinesesimp>Penthrox吸入器设置</Chinesesimp>
         </Key>
         <Key ID="STR_KAT_Pharma_flush_log">
             <English>%1 performed a saline flush</English>
@@ -2680,6 +2706,7 @@
             <Russian>%1 провел промывание физиологическим раствором</Russian>
             <Dutch>%1 voerde een salinespoeling uit</Dutch>
             <Italian>%1 ha eseguito un lavaggio salino</Italian>
+            <Chinesesimp>%1 进行了盐水冲洗</Chinesesimp>
         </Key>
         <Key ID="STR_KAT_Pharma_IVblock_closed">
             <English>Patient's IV is blocked</English>
@@ -2823,6 +2850,7 @@
             <Finnish>Ota koagulaatio käyttöön</Finnish>
             <Russian>Включить Коагуляцию</Russian>
             <Dutch>Schakel coagulatie in</Dutch>
+            <Chinesesimp>启用凝血</Chinesesimp>
         </Key>
         <Key ID="STR_KAT_Pharma_SETTING_Coagulation_DESC">
             <English>Enables advanced coagulation features and modifies TXA and EACA behaviour accordingly.</English>
@@ -2838,6 +2866,7 @@
             <Finnish>Ottaa käyttöön edistyneet koagulaatioominaisuudet ja muuttaa TXA- ja EACA-käyttäytymistä vastaavasti</Finnish>
             <Russian>Включает расширенные функции коагуляции и соответствующим образом изменяет поведение TXA и EACA.</Russian>
             <Dutch>Schakelt geadvanceerde coagulatie functies in, en veranderd het gedrag van TXA en EACA naar behoren</Dutch>
+            <Chinesesimp>启用高级凝血功能，并相应地修改血栓素(TXA)和EACA行为。</Chinesesimp>
         </Key>
         <Key ID="STR_KAT_Pharma_EACA_Display">
             <English>EACA</English>
@@ -2885,6 +2914,7 @@
             <Finnish>Pervitiini kapseli</Finnish>
             <Russian>Капсула Первитина</Russian>
             <Dutch>Pervitin capsule</Dutch>
+            <Chinesesimp>柏飞汀(Pervitin)胶囊</Chinesesimp>
         </Key>
         <Key ID="STR_KAT_Pharma_Pervitin_Capsule_DescShort">
             <English>Performance enhancing drug, used to suppress moderate pain</English>
@@ -2894,6 +2924,7 @@
             <Dutch>Prestatieverhogend medicijn, wordt gebruikt om matige pijn te onderdrukken</Dutch>
             <French>Drogue améliorant les performances, utilisée pour supprimer les douleurs modérées</French>
             <Italian>Farmaco migliorante le prestazioni, utilizzato per sopprimere il dolore moderato</Italian>
+            <Chinesesimp>性能增强药物，用于抑制中度疼痛</Chinesesimp>
         </Key>
         <Key ID="STR_KAT_Pharma_Take_Pervitin">
             <English>Take Pervitin</English>
@@ -2925,6 +2956,7 @@
             <Finnish>Pervitiini saa sinut tuntemaan olosi hereille ja täynnä loputonta VOIMAA</Finnish>
             <Russian>Первитин заставляет вас чувствовать себя бодрым и полным бесконечной СИЛЫ</Russian>
             <Dutch>De Pervitin geeft je een wakker gevoel vol met oneinde ENERGIE</Dutch>
+            <Chinesesimp>柏飞汀(Pervitin)让你感到清醒，充满无尽的力量</Chinesesimp>
         </Key>
         <Key ID="STR_KAT_Pharma_Pervitin_mid">
             <English>You begin to lose your breath...</English>
@@ -2940,6 +2972,7 @@
             <Finnish>Alkaa menettää hengitystä...</Finnish>
             <Russian>У тебя начинает перехватывать дыхание...</Russian>
             <Dutch>Je begint je adem te verliezen...</Dutch>
+            <Chinesesimp>你开始喘不过气来。。。</Chinesesimp>
         </Key>
         <Key ID="STR_KAT_Pharma_Pervitin_mid2">
             <English>You gain a sudden rush!</English>
@@ -2955,6 +2988,7 @@
             <Finnish>Saat äkillisen kiireen!</Finnish>
             <Russian>Ты получаешь внезапный прилив сил!</Russian>
             <Dutch>Je krijgt een spontane boost!</Dutch>
+            <Chinesesimp>你突然冲动起来！</Chinesesimp>
         </Key>
         <Key ID="STR_KAT_Pharma_Pervitin_mid3">
             <English>You gain another rush!</English>
@@ -2970,6 +3004,7 @@
             <Finnish>Saat uuden kiireen!</Finnish>
             <Russian>Ты получаешь еще один прилив сил!</Russian>
             <Dutch>Je krijgt nog een boost!</Dutch>
+            <Chinesesimp>你获得了另一个冲刺！</Chinesesimp>
         </Key>
         <Key ID="STR_KAT_Pharma_Pervitin_mid4">
             <English>The exhaustion starts to settle in...</English>
@@ -2985,6 +3020,7 @@
             <Finnish>Väsymys alkaa laskeutua...</Finnish>
             <Russian>Усталость начинает наваливаться на меня...</Russian>
             <Dutch>Je begint in te zakken</Dutch>
+            <Chinesesimp>疲惫开始消退。。。</Chinesesimp>
         </Key>
         <Key ID="STR_KAT_Pharma_Pervitin_end">
             <English>You start to feel normal again</English>
@@ -3000,6 +3036,7 @@
             <Finnish>Alkaa taas tuntua normaalilta</Finnish>
             <Russian>Ты снова начинаешь чувствовать себя нормально</Russian>
             <Dutch>Je begint je weer normaal te voelen</Dutch>
+            <Chinesesimp>你又开始感觉正常了</Chinesesimp>
         </Key>
         <Key ID="STR_KAT_Pharma_Pervitin_chrom">
             <English>You start to see everything twice.</English>
@@ -3015,6 +3052,7 @@
             <Finnish>Alat nähdä kaiken kahdesti.</Finnish>
             <Russian>Ты начинаешь видеть все дважды.</Russian>
             <Dutch>Je begint met alles dubbelzien</Dutch>
+            <Chinesesimp>你开始看到一切两次。</Chinesesimp>
         </Key>
         <Key ID="STR_KAT_Pharma_Pervitin_chrom2">
             <English>You start to twitch...</English>
@@ -3030,6 +3068,7 @@
             <Finnish>Alkaa nykimään</Finnish>
             <Russian>Ты начинаешь дергаться...</Russian>
             <Dutch>Je begint te trillen</Dutch>
+            <Chinesesimp>你开始抽搐。。。</Chinesesimp>
         </Key>
         <Key ID="STR_KAT_Pharma_Pervitin_chrom3">
             <English>Your head starts to clear up and you stop twitching...</English>
@@ -3045,6 +3084,7 @@
             <Finnish>Pääsi alkaa selkiytyä ja lopetat nykimisen</Finnish>
             <Russian>Твоя голова начинает проясняться, и ты перестаешь дергаться...</Russian>
             <Dutch>Je hoofd begint zich op te helderen, en je stopt met trillen </Dutch>
+            <Chinesesimp>你的头开始清醒，不再抽搐。。。</Chinesesimp>
         </Key>
         <Key ID="STR_KAT_Pharma_Caffeine_Bottle_Display">
             <English>Caffeine bottle</English>
@@ -3060,6 +3100,7 @@
             <Finnish>Kofeiinipullo</Finnish>
             <Russian>Бутылка с Кофеином</Russian>
             <Dutch>Caffeïne doosje</Dutch>
+            <Chinesesimp>咖啡因瓶</Chinesesimp>
         </Key>
         <Key ID="STR_KAT_Pharma_Caffeine_Bottle_DescShort">
             <English>Stimulates the central nervous system and energizes</English>
@@ -3069,6 +3110,7 @@
             <Dutch>Stimuleert het centraal zenuwstelsel en geeft energie</Dutch>
             <French>Stimule le système nerveux central et revitalise</French>
             <Italian>Stimola il sistema nervoso centrale e aumenta l'energia</Italian>
+            <Chinesesimp>刺激中枢神经系统并使其充满活力</Chinesesimp>
         </Key>
         <Key ID="STR_KAT_Pharma_Take_Caffeine">
             <English>Take Caffeine</English>
@@ -3180,6 +3222,7 @@
             <Finnish>Suorita dialyysi</Finnish>
             <Russian>Провести Диализ</Russian>
             <Dutch>Voer dialyse uit</Dutch>
+            <Chinesesimp>进行透析</Chinesesimp>
         </Key>
         <Key ID="STR_KAT_Pharma_Dialysis_DisplayNameProgress">
             <English>Performing</English>
@@ -3195,6 +3238,7 @@
             <Finnish>esiintymässä</Finnish>
             <Russian>Провожу</Russian>
             <Dutch>Wordt uitgevoerd</Dutch>
+            <Chinesesimp>表演</Chinesesimp>
         </Key>
         <Key ID="STR_KAT_Pharma_dialysis_log">
             <English>%1 performed dialysis</English>
@@ -3226,6 +3270,7 @@
             <Finnish>[KAM] Lääkelaatikko</Finnish>
             <Russian>[КАМ] Ящик с лекарствами</Russian>
             <Dutch>[KAM] Medijnenkrat</Dutch>
+            <Chinesesimp>[KAM]药品箱</Chinesesimp>
         </Key>
         <Key ID="STR_KAT_Pharma_SETTING_staminaMedication">
             <English>Medication Modifies Stamina</English>
@@ -3239,6 +3284,7 @@
             <Russian>Лекарства изменяют выносливость</Russian>
             <Dutch>Medicatie heeft invloed op uithoudingsvermogen</Dutch>
             <Italian>Il farmaco modifica la resistenza</Italian>
+            <Chinesesimp>药物可以改善体力</Chinesesimp>
         </Key>
         <Key ID="STR_KAT_Pharma_SETTING_staminaMedication_DESC">
             <English>Allow certain medications to modify (vanilla/advanced fatigue) stamina as a side effect</English>
@@ -3252,6 +3298,7 @@
             <Russian>Позволяют определенным лекарствам изменять выносливость (ваниль/повышенная утомляемость) в качестве побочного эффекта</Russian>
             <Dutch>Bepaald of sommige medicijnen het uithoudingsvermogen (vanilla/geadvanceerde uitputting) beïnvloeden als een bijwerking</Dutch>
             <Italian>Consenti a determinati farmaci di modificare la resistenza (fatica normale/avanzata) come effetto collaterale</Italian>
+            <Chinesesimp>允许某些药物改变（香草/重度疲劳）耐力作为副作用</Chinesesimp>
         </Key>
         <Key ID="STR_KAT_Pharma_SETTING_EACA_Trauma">
             <English>EACA Clears Trauma</English>
@@ -3262,6 +3309,7 @@
             <Portuguese>EACA Remove Traumas</Portuguese>
             <Dutch>EACA verwijderd trauma</Dutch>
             <Italian>EACA elimina il trauma</Italian>
+            <Chinesesimp>EACA清除创伤</Chinesesimp>
         </Key>
         <Key ID="STR_KAT_Pharma_SETTING_EACA_Trauma_Desc">
             <English>Allows Trauma to be cleared by EACA in addition to stitching</English>
@@ -3272,6 +3320,7 @@
             <Portuguese>Permite que o EACA remova traumas além de suturar</Portuguese>
             <Dutch>Staat toe dat EACA trauma verwijderd, als additie van hechten</Dutch>
             <Italian>Consente al trauma di essere rimosso da EACA oltre alla sutura.</Italian>
+            <Chinesesimp>除了缝合外，EACA还可以清除创伤</Chinesesimp>
         </Key>
         <Key ID="STR_KAT_Pharma_SETTING_allowStackScript_TXA">
             <English>Allow Stacking</English>
@@ -3280,6 +3329,7 @@
             <Dutch>Sta stapelen toe</Dutch>
             <French>Autoriser l'empilage</French>
             <Italian>Permetti l'impilamento</Italian>
+            <Chinesesimp>允许堆叠</Chinesesimp>
         </Key>
         <Key ID="STR_KAT_Pharma_SETTING_allowStackScript_TXA_DESC">
             <English>If enabled TXA will be stackable and double it's efficiency</English>
@@ -3288,6 +3338,7 @@
             <Dutch>Wanneer ingeschakeld: sta het stapelen van TXA toe, wat de effectiviteit verdubbeld)</Dutch>
             <French>Si activé, le TXA sera empilable et doublera son efficacité</French>
             <Italian>Se abilitato, il TXA sarà impilabile e raddoppierà la sua efficienza</Italian>
+            <Chinesesimp>如果启用血栓素(TXA)，它将是可堆叠的，效率提高一倍</Chinesesimp>
         </Key>
         <Key ID="STR_KAT_Pharma_SETTING_keepScriptRunning_TXA">
             <English>Keep Bandaging Until Out Of System</English>
@@ -3296,6 +3347,7 @@
             <Dutch>Blijf verbinden tot uit het systeem</Dutch>
             <French>Continuer à bander jusqu'à ce que le produit soit éliminé du système</French>
             <Italian>Continua a fasciarti finché non esce dal sistema</Italian>
+            <Chinesesimp>保持包扎，直到脱离系统</Chinesesimp>
         </Key>
         <Key ID="STR_KAT_Pharma_SETTING_keepScriptRunning_TXA_DESC">
             <English>If enabled TXA will keep bandaging until it's out of your system\nIf disabled TXA will stop working after bandaging the last wound it can find</English>
@@ -3304,6 +3356,7 @@
             <Dutch>Wanneer ingeschakeld: TXA blijft verbinden tot het uit jouw systeem is.\nWanneer uitgeschakeld: TXA Stopt met werken wanneer alle wonden gedicht zijn.</Dutch>
             <French>Si activé, le TXA continuera à bander jusqu'à ce qu'il soit éliminé du système.\nSi désactivé, le TXA cessera de fonctionner après avoir bandé la dernière plaie qu'il peut trouver.</French>
             <Italian>Se abilitato, TXA continuerà a fasciarsi finché non sarà eliminato dal sistema.\nSe disabilitato, TXA smetterà di funzionare dopo aver fasciato l'ultima ferita che trova.</Italian>
+            <Chinesesimp>如果启用，血栓素(TXA)将继续包扎，直到它离开您的系统\n如果禁用，血栓素(TXA)在包扎最后一个伤口后将停止工作</Chinesesimp>
         </Key>
         <Key ID="STR_KAT_Pharma_SETTING_bandageCycleTime_TXA">
             <English>TXA Cycle Time</English>
@@ -3312,6 +3365,7 @@
             <Dutch>TXA cyclustijd</Dutch>
             <French>Temps de cycle du TXA</French>
             <Italian>Tempo del ciclo TXA</Italian>
+            <Chinesesimp>血栓素(TXA)循环时间</Chinesesimp>
         </Key>
         <Key ID="STR_KAT_Pharma_SETTING_bandageCycleTime_TXA_DESC">
             <English>The time it takes for TXA to close a wound</English>
@@ -3320,6 +3374,7 @@
             <Dutch>Hoe lang het duurt voordat TXA een wond dicht</Dutch>
             <French>Temps requis pour permettre au TXA de refermer une blessure</French>
             <Italian>Il tempo necessario affinché TXA chiuda una ferita</Italian>
+            <Chinesesimp>血栓素(TXA)闭合伤口所需的时间</Chinesesimp>
         </Key>
         <Key ID="STR_KAT_Pharma_SubCategory_Coagulation">
             <English>Coagulation Settings</English>
@@ -3329,6 +3384,7 @@
             <Dutch>Coagulatie instellingen</Dutch>
             <French>Paramètres de coagulation</French>
             <Italian>Impostazioni di coagulazione</Italian>
+            <Chinesesimp>凝固设置</Chinesesimp>
         </Key>
         <Key ID="STR_KAT_Pharma_SETTING_Coagulation_requireHR">
             <English>Require Heart Rate</English>
@@ -3337,6 +3393,7 @@
             <Dutch>Vereist hartslag</Dutch>
             <French>Fréquence cardiaque requise</French>
             <Italian>Richiede la Frequenza Cardiaca</Italian>
+            <Chinesesimp>要求心率</Chinesesimp>
         </Key>
         <Key ID="STR_KAT_Pharma_SETTING_Coagulation_requireHR_DESC">
             <English>Should coagulation require a heart rate above 20BPM? (Doing CPR will keep HR above 20BPM)</English>
@@ -3345,6 +3402,7 @@
             <Dutch>Is een hartslag van meer dan 20SPM benodigt voor coagulatie? (Het uitvoeren van CPR houdt de hartslag boven 20SPM)</Dutch>
             <French>La coagulation nécessite-elle un fréquence cardiaque supérieure à 20 BPM ? (Effectuer la RCP gardera le FC au dessus de 20 BPM)</French>
             <Italian>La coagulazione dovrebbe richiedere una frequenza cardiaca superiore a 20 BPM? (Fare RCP manterrà la frequenza cardiaca sopra i 20 BPM)</Italian>
+            <Chinesesimp>凝血需要心率超过20BPM吗？（做心肺复苏术将使心率保持在20BPM以上）</Chinesesimp>
         </Key>
         <Key ID="STR_KAT_Pharma_SETTING_Coagulation_requireBV">
             <English>Required Blood Volume</English>
@@ -3353,6 +3411,7 @@
             <Dutch>Benodigd bloedvolume</Dutch>
             <French>Volume sanguin requis</French>
             <Italian>Volume di sangue richiesto</Italian>
+            <Chinesesimp>所需血容量</Chinesesimp>
         </Key>
         <Key ID="STR_KAT_Pharma_SETTING_Coagulation_requireBV_DESC">
             <English>Minimum volume of blood required for coagulation to work</English>
@@ -3361,6 +3420,7 @@
             <Dutch>Het minimale bloedvolume dat vereist is voor coagulatie om te werken</Dutch>
             <French>Volume de sang minimal requis pour permettre à la coagulation de fonctionner</French>
             <Italian>Volume minimo di sangue richiesto affinché la coagulazione funzioni</Italian>
+            <Chinesesimp>凝血所需的最小血容量</Chinesesimp>
         </Key>
         <Key ID="STR_KAT_Pharma_SETTING_Coagulation_FactorCount">
             <English>Coagulation Factors</English>
@@ -3369,6 +3429,7 @@
             <Dutch>Stollingsfactoren</Dutch>
             <French>Facteurs de coagulation</French>
             <Italian>Fattori di coagulazione</Italian>
+            <Chinesesimp>凝血因子</Chinesesimp>
         </Key>
         <Key ID="STR_KAT_Pharma_SETTING_Coagulation_FactorCount_DESC">
             <English>The amount of coagulation factors that get set on unit spawn &amp; be kept as limit for factor regeneration</English>
@@ -3377,6 +3438,7 @@
             <Dutch>De hoeveelheid stollingsfactoren dat een eenheid krijgt op spawn en als limiet wordt gebruik voor hergeneratie</Dutch>
             <French>La quantité de facteurs de coagulation définie lors de l’apparition de l'unité et conservée comme limite pour la régénération des facteurs.</French>
             <Italian>La quantità di fattori di coagulazione che vengono impostati al momento della creazione dell'unità e mantenuti come limite per la rigenerazione dei fattori.</Italian>
+            <Chinesesimp>单位菌种上设定的凝血因子数量应作为因子再生的限制</Chinesesimp>
         </Key>
         <Key ID="STR_KAT_Pharma_SETTING_Coagulation_Time">
             <English>Clotting Cycle Time</English>
@@ -3385,6 +3447,7 @@
             <Dutch>Stollingscyclustijd</Dutch>
             <French>Temps de cycle de coagulation</French>
             <Italian>Tempo del ciclo di coagulazione</Italian>
+            <Chinesesimp>凝血周期时间</Chinesesimp>
         </Key>
         <Key ID="STR_KAT_Pharma_SETTING_Coagulation_Time_DESC">
             <English>The time between each wound clotting cycle that start wound clotting. (low number may cause lag)</English>
@@ -3393,6 +3456,7 @@
             <Dutch>De hoeveelheid tijd tussen elke wondstollingscyclus. (een laag nummer kan leiden tot lag)</Dutch>
             <French>Le temps entre chaque cycle de coagulation des plaies qui déclenche la coagulation. (Un nombre bas peut entraîner du lag)</French>
             <Italian>Il tempo tra ogni ciclo di coagulazione delle ferite che avvia la coagulazione. (un valore basso potrebbe causare lag</Italian>
+            <Chinesesimp>开始伤口凝血的每个伤口凝血周期之间的时间。（数字低可能会导致滞后）</Chinesesimp>
         </Key>
         <Key ID="STR_KAT_Pharma_SETTING_Coagulation_Time_Minor">
             <English>Minor Wounds Clotting Time</English>
@@ -3401,6 +3465,7 @@
             <Dutch>Kleine wonden stollingstijd</Dutch>
             <French>Temps de coagulation des blessures mineures</French>
             <Italian>Tempo di coagulazione per ferite minori</Italian>
+            <Chinesesimp>轻伤凝血时间</Chinesesimp>
         </Key>
         <Key ID="STR_KAT_Pharma_SETTING_Coagulation_Time_Medium">
             <English>Medium Wounds Clotting Time</English>
@@ -3409,6 +3474,7 @@
             <Dutch>Middelgrote wonden stollingstijd</Dutch>
             <French>Temps de coagulation des blessures moyennes</French>
             <Italian>Tempo di coagulazione per ferite medie</Italian>
+            <Chinesesimp>中等伤口凝血时间</Chinesesimp>
         </Key>
         <Key ID="STR_KAT_Pharma_SETTING_Coagulation_Time_Large">
             <English>Large Wounds Clotting Time</English>
@@ -3417,6 +3483,7 @@
             <Dutch>Grote wonden stollingstijd</Dutch>
             <French>Temps de coagulation des blessures larges</French>
             <Italian>Tempo di coagulazione per ferite gravi</Italian>
+            <Chinesesimp>大伤口凝血时间</Chinesesimp>
         </Key>
         <Key ID="STR_KAT_Pharma_SETTING_Coagulation_Time_Clotting_DESC">
             <English>This time gets divided by 2, randomized &amp; added with the same value devided by 2.\nFor example, if the value was set to 10s this would be one possible varriation: (random (10 / 2)) + (10 / 2) = 8s</English>
@@ -3425,6 +3492,7 @@
             <Dutch>Deze tijd wordt door 2 gedeeld, gerandomiseerd en dan met dezelfde waarde gedeeld door 2 opgeteld. \nBijvoorbeeld: als deze waarde op 10 seconden ingesteld staat dan is één mogelijke variatie:(random(10/2))+(10/2) = 8s</Dutch>
             <French>Ce temps est divisé par 2, randomisé et additionné à la même valeur divisée par 2. \nPar exemple, si une valeur est fixée à 10 secondes, une variation possible serait : (aléatoire (10 / 2)) + (10 / 2) = 8s</French>
             <Italian>Questo tempo viene diviso per 2, randomizzato e aggiunto al stesso valore diviso per 2.\nAd esempio, se il valore fosse impostato su 10 secondi, una possibile variazione sarebbe: (random (10 / 2)) + (10 / 2) = 8 secondi.</Italian>
+            <Chinesesimp>此时间除以2，随机化并加上除以2的相同值。\n例如，如果该值设置为10秒，则可能出现一种变化： (random (10 / 2)) + (10 / 2) = 8s</Chinesesimp>
         </Key>
         <Key ID="STR_KAT_Pharma_SETTING_Coagulation_Factor_Regenerate_Time">
             <English>Coagulation Factor Regeneration Cycle</English>
@@ -3433,6 +3501,7 @@
             <Dutch>Stollingsfactor hergeneratiecyclus</Dutch>
             <French>Cycle de régénération des facteurs de coagulation</French>
             <Italian>Ciclo di rigenerazione dei fattori di coagulazione</Italian>
+            <Chinesesimp>凝血因子再生循环</Chinesesimp>
         </Key>
         <Key ID="STR_KAT_Pharma_SETTING_Coagulation_Factor_Regenerate_Time_DESC">
             <English>The time between coagulation factor regeneration checks. Will add +1 factor on successful check. Uses Setting: "Coagulation Factors" as limit.\n Note: If the limit is exceeded, this time will be used and then remove -1 factor until Setting: "Coagulation Factors" is reached. Tipp: TXA or EACA stop losing factors\nRequirements for regeneration to work:\n- No wound being clotted in the last cycle check from this setting\n- Setting: "Require Heart Rate"\n- Setting: "Required Blood Volume"</English>
@@ -3441,6 +3510,7 @@
             <Dutch>De tijd tussen stollingsfactor hergeneratie checks. Geeft +1 factor op een succesvolle check. Gebruikt instelling: "Stollingsfactoren" als limiet. \n Wees alert: als het limiet overschreden is, dan zal na deze check 1 factor verwijderd worden (-1 factoren) tot het limiet weer bereikt is. Tip: TXA en EACA stoppen het verlies van factoren.\nVereisten voor hergeneratie:\n- Geen wond gestold in de laaste cyclus van deze instelling,\n- Instelling: "Vereist hartslag"\n- "Benodigd bloedvolume"</Dutch>
             <French>Le temps entre les vériofications de régénération des facteurs de coagulation. Ajoute +1 facteur en cas de vérification réussie. Utilise le paramètres : "Facteurs de coagulation" comme limite. \nRemarque : si la limite est dépassée, ce temps sera utilisé, puis -1 facteur sera retiré jusqu'à ce que le paramètre : "Facteurs de coagulation" soit atteint. Conseil :TXA ou EACA arrêtent la perte de facteurs.\nConditions nécessaires pour que la régénération fonctionne :\n- Aucune plaie en cours de coagulation au cours du dernier cycle de vérification de ce paramètres.\n- Paramètre : "Fréquence cardiaque requise"\n- Paramètre : "Volume sanguin requis"</French>
             <Italian>Il tempo tra i controlli di rigenerazione dei fattori di coagulazione. Aggiunge +1 fattore in caso di controllo riuscito. Utilizza l'impostazione: "Fattori di coagulazione" come limite.\nNota: se il limite viene superato, questo tempo verrà utilizzato e poi verrà rimosso -1 fattore fino a quando non si raggiunge l'impostazione: "Fattori di coagulazione". Suggerimento: TXA o EACA fermano la perdita di fattori.\nRequisiti affinché la rigenerazione funzioni:\n- Nessuna ferita in corso di coagulazione nell'ultimo ciclo di verifica di questa impostazione.\n- Impostazione: "Frequenza cardiaca richiesta"\n- Impostazione: "Volume sanguigno richiesto"</Italian>
+            <Chinesesimp>凝血因子再生检查之间的时间。成功检查后将添加+1个因素。使用设置：“凝血因子”为限值。\n注意：如果超过限制，将使用此时间，然后删除-1因子，直到达到设置：“凝血因子”。提示：血栓素(TXA)或EACA停止丢失因子\n再生工作的要求：\n-在此设置下的最后一个周期检查中没有伤口凝结\n-设置：“要求心率”\n-设定：“所需血容量”</Chinesesimp>
         </Key>
         <Key ID="STR_KAT_Pharma_SETTING_Coagulation_allowOnAI">
             <English>Affect AI</English>
@@ -3449,6 +3519,7 @@
             <Dutch>Beïnvloed AI/KI</Dutch>
             <French>Affecte l'IA</French>
             <Italian>Influenza IA</Italian>
+            <Chinesesimp>影响AI</Chinesesimp>
         </Key>
         <Key ID="STR_KAT_Pharma_SETTING_Coagulation_allowOnAI_DESC">
             <English>Allow coagulation to affect AI units.\nEvery other value will still be required if turned on. (May cause lag if many AI is present)</English>
@@ -3457,6 +3528,7 @@
             <Dutch>Laat coagulatie AI/KI beïnvloeden.\nElke andere waarde wordt ook voor AI/KI gecheckt wanneer dit aanstaat. (Kan prestatieproblemen opleveren als er veel AI's/KI's aanwezig zijn.)</Dutch>
             <French>Autoriser la coagulation à affecter les unités IA.\nTous les autres paramètres seront toujours nécessaires si cette option est activée. (Peut entraîner un lag si de nombreuses IA sont présentes.)</French>
             <Italian>Permettere alla coagulazione di influenzare le unità IA.\nOgni altro valore sarà comunque richiesto se attivato. (Può causare lag se sono presenti molte IA)</Italian>
+            <Chinesesimp>允许凝固影响AI单位。\n如果打开，仍需要其他值。（如果存在许多AI，可能会导致延迟）</Chinesesimp>
         </Key>
         <Key ID="STR_KAT_Pharma_SETTING_Coagulation_tourniquetBlock">
             <English>Tournique Blocks Blood Clotting</English>
@@ -3465,6 +3537,7 @@
             <Dutch>Tourniquets blokkeren wondstolling</Dutch>
             <French>Le garrot bloque la coagulation</French>
             <Italian>Il tourniquet blocca la coagulazione del sangue</Italian>
+            <Chinesesimp>止血带阻断凝血</Chinesesimp>
         </Key>
         <Key ID="STR_KAT_Pharma_SETTING_Coagulation_tourniquetBlock_DESC">
             <English>If enabled a applied tourniquet will stop wounds from being closed from coagulation on that bodypart</English>
@@ -3473,6 +3546,7 @@
             <Dutch>Tourniquets voorkomen dat wonden op hetzelfde ledemaat dichtgemaakt worden door coagulatie wanneer deze instelling actief is</Dutch>
             <French>Si activé, un garrot appliqué empêchera les plaies de se fermer par coagulation sur cette partie du corps.</French>
             <Italian>Se abilitato, un tourniquet applicato impedirà la chiusura delle ferite tramite coagulazione su quella parte del corpo.</Italian>
+            <Chinesesimp>如果启用止血带，可以防止伤口因身体部位的凝血而闭合</Chinesesimp>
         </Key>
         <Key ID="STR_KAT_Pharma_SETTING_Coagulation_allow_MinorWounds">
             <English>Affect Minor Wounds</English>
@@ -3481,6 +3555,7 @@
             <Dutch>Beïnvloed kleine wonden</Dutch>
             <French>Affecter les blessures mineures</French>
             <Italian>Influenza le ferite minori</Italian>
+            <Chinesesimp>影响轻微伤口</Chinesesimp>
         </Key>
         <Key ID="STR_KAT_Pharma_SETTING_Coagulation_allow_MinorWounds_DESC">
             <English>Allow coagulation to affect minor wounds when clotting</English>
@@ -3489,6 +3564,7 @@
             <Dutch>Staat toe dat coagulatie kleine wonden beïnvloed tijdens het stollen</Dutch>
             <French>Permettre à la coagulation d'affecter les blessures mineures lors de la coagulation</French>
             <Italian>Consenti alla coagulazione di influenzare le ferite minori durante la coagulazione</Italian>
+            <Chinesesimp>凝血时允许凝血影响轻微伤口</Chinesesimp>
         </Key>
         <Key ID="STR_KAT_Pharma_SETTING_Coagulation_allow_MediumWounds">
             <English>Affect Medium Wounds</English>
@@ -3497,6 +3573,7 @@
             <Dutch>Beïnvloed middelgrote wonden</Dutch>
             <French>Affecter les blessures moyennes</French>
             <Italian>Consenti alla coagulazione di influenzare le ferite medie</Italian>
+            <Chinesesimp>影响中度伤口</Chinesesimp>
         </Key>
         <Key ID="STR_KAT_Pharma_SETTING_Coagulation_allow_MediumWounds_DESC">
             <English>Allow coagulation to affect medium wounds when clotting</English>
@@ -3505,6 +3582,7 @@
             <Dutch>Staat toe dat coagulatie middelgrote wonden beïnvloed tijdens het stollen</Dutch>
             <French>Permettre à la coagulation d'affecter les blessures moyennes lors de la coagulation</French>
             <Italian>Consenti alla coagulazione di influenzare le ferite medie durante la coagulazione</Italian>
+            <Chinesesimp>凝血时允许凝血影响中度伤口</Chinesesimp>
         </Key>
         <Key ID="STR_KAT_Pharma_SETTING_Coagulation_allow_LargeWounds">
             <English>Affect Large Wounds</English>
@@ -3513,6 +3591,7 @@
             <Dutch>Beïnvloed grote wonden</Dutch>
             <French>Affecter les blessures larges</French>
             <Italian>Influenzare le ferite gravi</Italian>
+            <Chinesesimp>影响大伤口</Chinesesimp>
         </Key>
         <Key ID="STR_KAT_Pharma_SETTING_Coagulation_allow_LargeWounds_DESC">
             <English>Allow coagulation to affect large wounds when clotting</English>
@@ -3521,6 +3600,7 @@
             <Dutch>Staat toe dat coagulatie grote wonden beïnvloed tijdens het stollen</Dutch>
             <French>Permettre à la coagulation d'affecter les blessures larges lors de la coagulation</French>
             <Italian>Permettere alla coagulazione di influenzare le ferite gravi durante la coagulazione</Italian>
+            <Chinesesimp>凝血时允许凝血影响大伤口</Chinesesimp>
         </Key>
         <Key ID="STR_KAT_Pharma_SETTING_Coagulation_allow_TXA_script">
             <English>Allow Additional TXA Bandaging</English>
@@ -3529,6 +3609,7 @@
             <Dutch>Sta additionele TXA dichtingen toe</Dutch>
             <French>Permettre l'apport de bandages par le TXA</French>
             <Italian>Consenti la medicazione aggiuntiva con TXA</Italian>
+            <Chinesesimp>允许额外的血栓素(TXA)包扎</Chinesesimp>
         </Key>
         <Key ID="STR_KAT_Pharma_SETTING_Coagulation_allow_TXA_script_DESC">
             <English>If enabled TXA will keep all functionality and start bandaging wounds itself</English>
@@ -3537,6 +3618,7 @@
             <Dutch>TXA houdt zijn functionaliteit en zal wonden dichten wanneer deze instelling actief is.</Dutch>
             <French>Si activé, le TXA gardera toutes ses fonctionnalités et bandera les plaies par lui-même</French>
             <Italian>Se abilitato, TXA manterrà tutte le funzionalità e inizierà a medicare le ferite da solo</Italian>
+            <Chinesesimp>如果启用，血栓素(TXA)将保持所有功能并开始自行包扎伤口</Chinesesimp>
         </Key>
         <Key ID="STR_KAT_Pharma_SETTING_Coagulation_allow_EACA_script">
             <English>Allow Additional EACA Stiching</English>
@@ -3545,6 +3627,7 @@
             <Dutch>Sta additionele EACA hechtingen toe</Dutch>
             <French>Permettre la suture par l'EACA</French>
             <Italian>Consenti la sutura aggiuntiva con EACA</Italian>
+            <Chinesesimp>允许进行额外的EACA缝合</Chinesesimp>
         </Key>
         <Key ID="STR_KAT_Pharma_SETTING_Coagulation_allow_EACA_script_DESC">
             <English>If enabled EACA will keep all functionality and start stitching bandaged wounds</English>
@@ -3553,6 +3636,7 @@
             <Dutch>EACA houdt zijn functionaliteit en zal wonden hechten wanneer deze instelling actief is.</Dutch>
             <French>Si activé, l'EACA gardera toutes ses fonctionnalités et suturera les plaies par lui-même</French>
             <Italian>Se abilitato, EACA manterrà tutte le funzionalità e inizierà a suturare le ferite già medicati.</Italian>
+            <Chinesesimp>如果启用，EACA将保留所有功能并开始缝合绷带伤口</Chinesesimp>
         </Key>
         <Key ID="STR_KAT_Pharma_SETTING_Coagulation_on_all_Bodyparts">
             <English>Simultaneous Bodypart Coagulation</English>
@@ -3561,6 +3645,7 @@
             <Dutch>Gelijktijdige coagulatie</Dutch>
             <French>Coagulation simultanée de plusieurs membres</French>
             <Italian>Coagulazione simultanea delle parti del corpo</Italian>
+            <Chinesesimp>同时进行身体部位凝血</Chinesesimp>
         </Key>
         <Key ID="STR_KAT_Pharma_SETTING_Coagulation_on_all_Bodyparts_DESC">
             <English>If enabled each bodypart will be treated simultaneously by coagulation.\nMeaning if you have a wound on the head and body they will both be treated in the same coagulation cycle.</English>
@@ -3569,6 +3654,7 @@
             <Dutch>Als dit ingeschakeld is, zal elk lichaamsdeel tegelijkertijd behandeld worden door coagulatie. \nWat betekent dat als je een wond aan je arm en been hebt, dat deze in dezelfde coagulatiecyclus behandeld worden</Dutch>
             <French>Si activé, chaque membre sera affecté simultanément par la coagulation.\nCela signifie que si une plaie est présente sur la tête et le torse, elles seront toutes deux traitées lors du même cycle de coagulation. </French>
             <Italian>Se abilitato, ogni parte del corpo sarà trattata simultaneamente dalla coagulazione.\nCiò significa che se hai una ferita sulla testa e sul corpo, entrambe verranno trattate nello stesso ciclo di coagulazione.</Italian>
+            <Chinesesimp>如果启用，每个身体部位将同时接受凝血治疗。\n也就是说，如果你的头部和身体都有伤口，它们都会在相同的凝血周期中接受治疗。</Chinesesimp>
         </Key>
         <Key ID="STR_KAT_Pharma_SETTING_coagulation_Factor_Limit">
             <English>Coagulation Factor Limit</English>
@@ -3577,6 +3663,7 @@
             <Dutch>Stollingsfactor limiet</Dutch>
             <French>Limite de facteurs de coagulation</French>
             <Italian>Limite dei fattori di coagulazione</Italian>
+            <Chinesesimp>凝血因子限值</Chinesesimp>
         </Key>
         <Key ID="STR_KAT_Pharma_SETTING_coagulation_Factor_Limit_DESC">
             <English>The limit for how many coagulation factors can be present inside a units body at once. Meaning if you administer plasma this is the maximum attainable value.</English>
@@ -3585,6 +3672,7 @@
             <Dutch>Het limiet voor hoeveel stollingsfactoren er in een eenheids lichaam tegelijkertijd aanwezig kan zijn. Wat betekent dat dit de waarde is waar zelfs plasma geen extra factoren meer toevoegd</Dutch>
             <French>La limite du nombre de facteurs de coagulation pouvant être présents dans le corps d'une unité. Cela signifie que si du plasma est administré, il s'agira de la valeur maximale atteignable.</French>
             <Italian>Il limite di quanti fattori di coagulazione possono essere presenti nel corpo di un'unità contemporaneamente. Ciò significa che se somministri plasma, questo è il valore massimo raggiungibile.</Italian>
+            <Chinesesimp>一个单位体内同时存在多少凝血因子的限制。这意味着，如果你服用血浆，这是可达到的最大值。</Chinesesimp>
         </Key>
         <Key ID="STR_KAT_Pharma_SETTING_Coagulation_allow_clot_text">
             <English>Allow Clots To Be Shown in Menu</English>
@@ -3593,6 +3681,7 @@
             <Dutch>Sta toe dat stollingen worden weergeven in het menu</Dutch>
             <French>Autoriser l'affichage des caillots dans le menu</French>
             <Italian>Consenti la visualizzazione dei coaguli nel menu</Italian>
+            <Chinesesimp>允许在菜单中显示凝块</Chinesesimp>
         </Key>
         <Key ID="STR_KAT_Pharma_SETTING_Coagulation_allow_clot_text_DESC">
             <English>If enabled, when coagulation is bandaging a wound it will add a interaction log to the medical menu.</English>
@@ -3601,6 +3690,7 @@
             <Dutch>Wanneer dit is ingeschakeld is worden gestolde wonden toegevoegd aan de interactie log van het medisch menu.</Dutch>
             <French>Si activé, lorsque la coagulation bandera une plaie, une ligne sera ajoutée dans le journal des interactions du menu médical.</French>
             <Italian>Se abilitato, quando la coagulazione sta medicando una ferita, aggiungerà un registro di interazione nel menu medico.</Italian>
+            <Chinesesimp>如果启用，当凝固包扎伤口时，它将在医疗菜单中添加一个交互日志。</Chinesesimp>
         </Key>
         <Key ID="STR_KAT_Pharma_coagulation_Bandaged">
             <English>Blood clotting temporarily closed a wound on %1</English>
@@ -3610,6 +3700,7 @@
             <Dutch>Wondstolling heeft een wond op %1 tijdelijk gedicht</Dutch>
             <French>La coagulation a temporairement fermé une plaie sur %1</French>
             <Italian>Il coagulo di sangue ha temporaneamente chiuso una ferita su %1</Italian>
+            <Chinesesimp>凝血暂时闭合了%1的伤口</Chinesesimp>
         </Key>
         <Key ID="STR_KAT_Pharma_coagulation_Bandaged_TXA">
             <English>Blood clotting permanently closed a wound on %1</English>
@@ -3619,6 +3710,7 @@
             <Dutch>Wondstolling heeft een wond op %1 permanent gedicht</Dutch>
             <French>La coagulation a définitivement fermé une plaie sur %1</French>
             <Italian>Il coagulo di sangue ha chiuso permanentemente una ferita su %1</Italian>
+            <Chinesesimp>凝血永久闭合了%1的伤口</Chinesesimp>
         </Key>
         <Key ID="STR_KAT_Pharma_head">
             <English>Head</English>
@@ -3730,6 +3822,7 @@
             <Dutch>Coag-Sense</Dutch>
             <French>Coag-Sense</French>
             <Italian>Coag-Sense</Italian>
+            <Chinesesimp>凝血酶原监测系统(Coag-Sense)</Chinesesimp>
         </Key>
         <Key ID="STR_KAT_Pharma_Coag_Sense_Display_DESC">
             <English>The Coag-Sense is a PT/INR monitoring system that can measure the efficiency of your blood clotting</English>
@@ -3739,6 +3832,7 @@
             <Dutch>De Coag-Sense is een PT-INR monitoringssysteem dat de effectiviteit van jouw wondstolling kan bepalen</Dutch>
             <French>Le Coag-Sense est un système de surveillance PT/INR qui permet de mesurer l'efficacité de la coagulation sanguine</French>
             <Italian>Il Coag-Sense è un sistema di monitoraggio PT/INR che può misurare l'efficienza della coagulazione del sangue.</Italian>
+            <Chinesesimp>Coag-Sense是一种PT/INR监测系统，可以测量您的凝血效率</Chinesesimp>
         </Key>
         <Key ID="STR_KAT_Pharma_Coag_Sense_Log">
             <English>Coag-Sense concludes: %1</English>
@@ -3748,6 +3842,7 @@
             <Dutch>Coag-Sense concludeerd: %1</Dutch>
             <French>Le Coag-Sense a conclu : %1</French>
             <Italian>Coag-Sense conclude: %1</Italian>
+            <Chinesesimp>Coag-Sense得出结论：%1</Chinesesimp>
         </Key>
         <Key ID="STR_KAT_Pharma_CheckCoag_DisplayName">
             <English>Measure PT/INR</English>
@@ -3757,6 +3852,7 @@
             <Dutch>Meet PT-INR</Dutch>
             <French>Mesurer le PT/INR</French>
             <Italian>Misura PT/INR</Italian>
+            <Chinesesimp>测量PT/INR</Chinesesimp>
         </Key>
         <Key ID="STR_KAT_Pharma_CheckCoag_DisplayNameProgress">
             <English>Taking Blood Sample, </English>
@@ -3766,6 +3862,7 @@
             <Dutch>Bloedstaal wordt genomen</Dutch>
             <French>Prélè¨vement de sang,</French>
             <Italian>Prelievo campione di sangue,</Italian>
+            <Chinesesimp>采集血液样本，</Chinesesimp>
         </Key>
         <Key ID="STR_KAT_Pharma_CheckCoag_slightly_lowINR">
             <English>Slightly Below Normal INR</English>
@@ -3775,6 +3872,7 @@
             <Dutch>Lichtelijk onder normaal INR</Dutch>
             <French>légèrement inférieur à l'INR normal</French>
             <Italian>INR leggermente sotto la norma</Italian>
+            <Chinesesimp>略低于正常INR</Chinesesimp>
         </Key>
         <Key ID="STR_KAT_Pharma_CheckCoag_slightly_aboveINR">
             <English>Sligtly Above normal INR</English>
@@ -3784,6 +3882,7 @@
             <Dutch>Lichtelijk boven normaal INR</Dutch>
             <French>légèrement supérieur à l'INR normal</French>
             <Italian>INR leggermente sopra la norma</Italian>
+            <Chinesesimp>略高于正常INR</Chinesesimp>
         </Key>
         <Key ID="STR_KAT_Pharma_CheckCoag_highly_lowINR">
             <English>Very Low INR</English>
@@ -3793,6 +3892,7 @@
             <Dutch>Zeer laag INR</Dutch>
             <French>INR très bas</French>
             <Italian>INR molto basso</Italian>
+            <Chinesesimp>INR非常低</Chinesesimp>
         </Key>
         <Key ID="STR_KAT_Pharma_CheckCoag_highly_aboveINR">
             <English>Very high INR</English>
@@ -3802,6 +3902,7 @@
             <Dutch>Zeer hoog INR</Dutch>
             <French>INR très élevé</French>
             <Italian>INR molto alto</Italian>
+            <Chinesesimp>INR非常高</Chinesesimp>
         </Key>
         <Key ID="STR_KAT_Pharma_CheckCoag_normalINR">
             <English>Normal INR</English>
@@ -3811,6 +3912,7 @@
             <Dutch>Normaal INR</Dutch>
             <French>INR normal</French>
             <Italian>INR normale</Italian>
+            <Chinesesimp>正常INR</Chinesesimp>
         </Key>
         <Key ID="STR_KAT_Pharma_SubCategory_Coag_Sense">
             <English>Coag-Sense Settings</English>
@@ -3820,6 +3922,7 @@
             <Dutch>Coag-Sense instellingen</Dutch>
             <French>Paramètres du Coag-Sense</French>
             <Italian>Impostazioni Coag-Sense</Italian>
+            <Chinesesimp>Coag-Sense设置</Chinesesimp>
         </Key>
         <Key ID="STR_KAT_Pharma_SETTING_CheckCoag_MedLevel">
             <English>Medical level required for Coag-Sense</English>
@@ -3829,6 +3932,7 @@
             <Dutch>Vereist medisch niveau voor gebruik Coag-Sense</Dutch>
             <French>Niveau médical requis du Coag-Sense</French>
             <Italian>Livello medico richiesto per Coag-Sense</Italian>
+            <Chinesesimp>Coag-Sense所需的医疗水平</Chinesesimp>
         </Key>
         <Key ID="STR_KAT_Pharma_SETTING_CheckCoag_Location">
             <English>Locations Coag-Sense</English>
@@ -3838,6 +3942,7 @@
             <Dutch>Locaties voor gebruik Coag-Sense</Dutch>
             <French>Emplacements du Coag-Sense</French>
             <Italian>Posizioni Coag-Sense</Italian>
+            <Chinesesimp>Coag-Sense地点</Chinesesimp>
         </Key>
         <Key ID="STR_KAT_Pharma_SETTING_CheckCoag_treatmentTime">
             <English>Treatment time for measuring PT/INR</English>
@@ -3847,6 +3952,7 @@
             <Dutch>Onderzoekstijd voor bepalen PT-INR</Dutch>
             <French>Temps pour mesurer le PT/INR</French>
             <Italian>Tempo di trattamento per misurare PT/INR</Italian>
+            <Chinesesimp>PT/INR测量的治疗时间</Chinesesimp>
         </Key>
         <Key ID="STR_KAT_Pharma_SETTING_allowStackScript_EACA">
             <English>Allow Stacking</English>
@@ -3856,6 +3962,7 @@
             <Dutch>Sta stapelen toe</Dutch>
             <French>Autoriser l'empilage</French>
             <Italian>Consenti la sovrapposizione</Italian>
+            <Chinesesimp>允许堆叠</Chinesesimp>
         </Key>
         <Key ID="STR_KAT_Pharma_SETTING_allowStackScript_EACA_DESC">
             <English>If enabled EACA will be stackable and double its efficiency</English>
@@ -3865,6 +3972,7 @@
             <Dutch>Staat het stapelen van EACA toe wanneer ingeschakeld, wat leidt tot een verdubbeling van de effectiviteit</Dutch>
             <French>Si activé, l'EACA sera empilable et doublera son efficacité</French>
             <Italian>Se abilitato, EACA sarà sovrapponibile e raddoppierà la sua efficienza.</Italian>
+            <Chinesesimp>如果启用，EACA将可堆叠，效率提高一倍</Chinesesimp>
         </Key>
         <Key ID="STR_KAT_Pharma_SETTING_keepScriptRunning_EACA">
             <English>Keep Stiching Until Out Of System</English>
@@ -3874,6 +3982,7 @@
             <Dutch>Blijf hechten tot uit systeem</Dutch>
             <French>Continuer de suturer jusqu'à ce que le produit soit éliminé du système</French>
             <Italian>Continua a suturare fino all'eliminazione dal sistema</Italian>
+            <Chinesesimp>继续搅拌，直到系统崩溃</Chinesesimp>
         </Key>
         <Key ID="STR_KAT_Pharma_SETTING_keepScriptRunning_EACA_DESC">
             <English>If enabled EACA will keep stichinng until it's out of your system\nIf disabled EACA will stop working after stiching the last bandaged wound it can find</English>
@@ -3883,6 +3992,7 @@
             <Dutch>Als dit ingeschakeld is, EACA blijft hechten tot het uit je systeem is.\nEACA zal stoppen na de laatste hechtbare wond die hij kan vinden wanneer uitgeschakeld</Dutch>
             <French>Si activé, l'EACA continuera de suturer jusqu'à ce qu'il soit éliminé du système.\nSi désactivé, l'EACA cessera de fonctionner après avoir suturé le dernier bandage qu'il peut trouver.</French>
             <Italian>Se abilitato, EACA continuerà a suturare finché non verrà eliminato dal sistema.\nSe disabilitato, EACA smetterà di funzionare dopo aver suturato l'ultima ferita medicata che può trovare.</Italian>
+            <Chinesesimp>如果启用，EACA将继续缝合，直到它脱离您的系统\n如果禁用，EACA在缝合它能找到的最后一个绷带伤口后将停止工作</Chinesesimp>
         </Key>
         <Key ID="STR_KAT_Pharma_SETTING_bandageCycleTime_EACA">
             <English>EACA Cycle Time</English>
@@ -3892,6 +4002,7 @@
             <Dutch>EACA cyclustimer</Dutch>
             <French>Temps de cycle de l'EACA</French>
             <Italian>Tempo di ciclo EACA</Italian>
+            <Chinesesimp>EACA循环时间</Chinesesimp>
         </Key>
         <Key ID="STR_KAT_Pharma_SETTING_bandageCycleTime_EACA_DESC">
             <English>The time it takes for EACA to close a stich a wound</English>
@@ -3901,6 +4012,7 @@
             <Dutch>Hoe lang het duurt voor EACA om een wond te hechten</Dutch>
             <French>Temps requis à l'EACA pour suturer une plaie</French>
             <Italian>Il tempo che impiega EACA per suturare una ferita.</Italian>
+            <Chinesesimp>EACA闭合伤口所需的时间</Chinesesimp>
         </Key>
         <Key ID="STR_KAT_Pharma_SubCategory_EpinephrineIV">
             <English>IV Epinephrine Settings</English>
@@ -3909,6 +4021,7 @@
             <Dutch>IV Adrenaline Instellingen</Dutch>
             <French>Paramètres de l'épinéphrine IV</French>
             <Italian>Impostazioni Epinefrina IV</Italian>
+            <Chinesesimp>四肾上腺素设置</Chinesesimp>
         </Key>
         <Key ID="STR_KAT_Pharma_medLvl_EpinephrineIV">
             <English>Medical level required for IV Epinephrine</English>
@@ -3917,6 +4030,7 @@
             <Dutch>Vereist medisch niveau voor gebruik van IV Adrenaline</Dutch>
             <French>Niveau médical requis pour l'épinéphrine IV</French>
             <Italian>Livello medico richiesto per Epinefrina IV</Italian>
+            <Chinesesimp>静脉注射肾上腺素所需的医疗水平</Chinesesimp>
         </Key>
         <Key ID="STR_KAT_Pharma_treatmentTime_EpinephrineIV">
             <English>Treatment time for IV Epinephrine</English>
@@ -3925,6 +4039,7 @@
             <Dutch>Toedieningstijd voor IV Adrenaline</Dutch>
             <French>Temps de traitement pour l'épinéphrine IV</French>
             <Italian>Tempo di trattamento per Epinefrina IV</Italian>
+            <Chinesesimp>静脉注射肾上腺素的治疗时间</Chinesesimp>
         </Key>
         <Key ID="STR_KAT_Pharma_EpinephrineIV_DescShort">
             <English>IV Epinephrine</English>
@@ -3933,6 +4048,7 @@
             <Dutch>IV Adrenaline</Dutch>
             <French>Epinéphrine IV</French>
             <Italian>Epinefrina IV</Italian>
+            <Chinesesimp>IV肾上腺素</Chinesesimp>
         </Key>
         <Key ID="STR_KAT_Pharma_EpinephrineIV_displayName">
             <English>IV Epinephrine</English>
@@ -3941,6 +4057,7 @@
             <Dutch>IV Adrenaline</Dutch>
             <French>Epinéphrine IV</French>
             <Italian>Epinefrina IV</Italian>
+            <Chinesesimp>IV肾上腺素</Chinesesimp>
         </Key>
         <Key ID="STR_KAT_Pharma_Take_Epi">
             <English>Push Epinephrine</English>
@@ -3949,6 +4066,7 @@
             <Dutch>Injecteer IV Adrenaline</Dutch>
             <French>Administrer l'épinéphrine</French>
             <Italian>Somministra Epinefrina</Italian>
+            <Chinesesimp>推肾上腺素</Chinesesimp>
         </Key>
     </Package>
 </Project>
