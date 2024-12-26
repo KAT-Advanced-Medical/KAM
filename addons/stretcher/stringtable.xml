@@ -99,8 +99,7 @@
             <Japanese>担架を展開する</Japanese>
             <Italian>Dispiegare la barella</Italian>
             <French>Déployer le brancard</French>
-            <Chinesesimp>展开担架
-</Chinesesimp>
+            <Chinesesimp>展开担架</Chinesesimp>
         </Key>
         <Key ID="STR_KAT_Stretcher_RetractHeliStretcher">
             <English>Retract Stretcher</English>
@@ -110,8 +109,7 @@
             <Japanese>担架を収容する</Japanese>
             <Italian>Ritirare la barella</Italian>
             <French>Rétracter le brancard</French>
-            <Chinesesimp>缩回担架
-</Chinesesimp>
+            <Chinesesimp>缩回担架</Chinesesimp>
         </Key>
         <Key ID="STR_KAT_Stretcher_DetachHeliStretcher">
             <English>Detach Stretcher</English>
