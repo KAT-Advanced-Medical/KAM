@@ -6,7 +6,10 @@ class CfgPatches {
         requiredVersion = REQUIRED_VERSION;
         units[] = { };
         weapons[] = {
-            "KAT_Katmin"
+            "KAT_Katmin",
+            "KAT_Cavmin",
+            "KAT_STS",
+            "KAT_Ranger"
         };
         magazines[] = { };
         requiredAddons[] = {
@@ -34,4 +37,5 @@ class CfgPatches {
 
 #include "CfgEventHandlers.hpp"
 #include "CfgWeapons.hpp"
+#include "CfgSounds.hpp"
 #include "RscTitles.hpp"

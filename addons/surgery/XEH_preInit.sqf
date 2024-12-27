@@ -63,15 +63,6 @@ PREP_RECOMPILE_END;
 ] call CBA_Settings_fnc_init;
 
 [
-    QGVAR(etomidateTime),
-    "SLIDER",
-    [LLSTRING(ETOMIDATE_TIMER), LLSTRING(ETOMIDATE_TIMER_DESC)],
-    [CBA_SETTINGS_CAT, LSTRING(SubCategory_SurgicalActions)],
-    [0,100,45,0],
-    true
-] call CBA_Settings_fnc_init;
-
-[
     QGVAR(closedTime),
     "SLIDER",
     LLSTRING(CLOSED_TIMER),

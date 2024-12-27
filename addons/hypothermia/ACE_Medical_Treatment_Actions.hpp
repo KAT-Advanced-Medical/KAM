@@ -4,7 +4,7 @@ class ACE_Medical_Treatment_Actions {
     class ApplyHandWarmers: BasicBandage {
         displayName = CSTRING(Use_Handwarmer);
         displayNameProgress = CSTRING(Using);
-        condition = "true";
+        condition = QUOTE(GVAR(hypothermiaActive));
         treatmentLocations = 0;
         treatmentTime = 5;
         allowedSelections[] = {"Body", "LeftArm", "RightArm", "LeftLeg", "RightLeg"};
@@ -19,7 +19,7 @@ class ACE_Medical_Treatment_Actions {
         medicRequired = QACEGVAR(medical_treatment,medicIV);
         treatmentTime = 10;
         items[] = {"kat_fluidWarmer"};
-        condition = QUOTE(([ARR_3(_medic,_patient,_bodyPart)] call EFUNC(pharma,removeIV)) && !([ARR_2(_patient,_bodyPart)] call FUNC(removeWarmer)));     
+        condition = QUOTE(([ARR_3(_medic,_patient,_bodyPart)] call EFUNC(pharma,removeIV)) && !([ARR_2(_patient,_bodyPart)] call FUNC(removeWarmer)) && GVAR(hypothermiaActive));     
         callbackSuccess = QFUNC(applyFluidWarmer);
     };
     class RemoveFluidWarmer: BasicBandage {
@@ -30,7 +30,7 @@ class ACE_Medical_Treatment_Actions {
         medicRequired = QACEGVAR(medical_treatment,medicIV);
         treatmentTime = 10;
         items[] = {};
-        condition = QUOTE([ARR_2(_patient,_bodyPart)] call FUNC(removeWarmer));
+        condition = QUOTE([ARR_2(_patient,_bodyPart)] call FUNC(removeWarmer) && GVAR(hypothermiaActive));
         callbackSuccess = QFUNC(removeFluidWarmer);
     };
     class CheckTemperature: CheckPulse {
@@ -39,7 +39,7 @@ class ACE_Medical_Treatment_Actions {
         category = "examine";
         allowedSelections[] = {"Head"};
         treatmentTime = 3;
-        condition = "true";
+        condition = QUOTE(GVAR(hypothermiaActive));
         callbackSuccess = QFUNC(checkTemperature);
     };
 };

@@ -15,11 +15,12 @@ class CfgPatches {
             "kat_gasmaskFilter",
             "KAT_M7A3",
             "KAT_CAS_M43_Bomb",
-            "KAT_CAS_R_80mm_GAS_POD"
+            "KAT_CAS_R_80mm_GAS_POD",
+            "KAT_ChemicalDetector"
         };
         ammo[] = {
             "KAT_Gas_TripWireMine_Ammo",
-            "KAT_GASTripEffect",
+            "KAT_TripWireGasEffect",
             "KAT_GASTrip_SmokeEffect",
             "KAT_CAS_M43_Ammo",
             "KAT_CAS_M43_Ammo_sub",
@@ -60,5 +61,6 @@ class CfgPatches {
 #include "CfgVehicles.hpp"
 #include "CfgSounds.hpp"
 #include "ui\RscAttributes.hpp"
+#include "RscTitles.hpp"
 #include "ACE_Medical_Treatment_Actions.hpp"
 #include "CfgGlasses.hpp"

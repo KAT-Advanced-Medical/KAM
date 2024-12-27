@@ -18,7 +18,7 @@
  * Public: No
  */
 
-params ["_unit", "_opioidAdjustment", "_deltaT", "_syncValue"];
+params ["_unit", "_opioidEffectAdjustment", "_deltaT", "_syncValue"];
 
-_unit setVariable [VAR_PP, 0 max _opioidAdjustment, _syncValue];
+_unit setVariable [VAR_PP, 0 max _opioidEffectAdjustment, _syncValue];
 

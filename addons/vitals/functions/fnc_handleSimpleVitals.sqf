@@ -71,13 +71,10 @@ if !(_adjustments isEqualTo []) then {
 
 private _heartRate = [_unit, _hrTargetAdjustment, _deltaT, _syncValues] call ACEFUNC(medical_vitals,updateHeartRate); //Rename
 [_unit, _painSupressAdjustment, _deltaT, _syncValues] call ACEFUNC(medical_vitals,updatePainSuppress); //Leave alone
+[_unit, POISON_DECREASE, _deltaT, _syncValues] call FUNC(handlePoisoning);
 
-// Remeber to change getBloodPressure macro ----------------------------------------------------------
-
-private _bloodPressure = [120,80];
+private _bloodPressure = [80,120];
 _unit setVariable [VAR_BLOOD_PRESS, _bloodPressure, _syncValues];
-
-_bloodPressure params ["_bloodPressureL", "_bloodPressureH"];
 
 // Statements are ordered by most lethal first.
 switch (true) do {
@@ -118,5 +115,8 @@ if (!isPlayer _unit) then {
 #endif
 
 END_COUNTER(Vitals);
+
+//placed outside the counter as 3rd-party code may be called from this event
+[QACEGVAR(medical,handleUnitVitals), [_unit, _deltaT]] call CBA_fnc_localEvent;
 
 true
