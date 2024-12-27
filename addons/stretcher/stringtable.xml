@@ -99,6 +99,7 @@
             <Japanese>担架を展開する</Japanese>
             <Italian>Dispiegare la barella</Italian>
             <French>Déployer le brancard</French>
+            <Chinesesimp>展开担架</Chinesesimp>
         </Key>
         <Key ID="STR_KAT_Stretcher_RetractHeliStretcher">
             <English>Retract Stretcher</English>
@@ -108,6 +109,7 @@
             <Japanese>担架を収容する</Japanese>
             <Italian>Ritirare la barella</Italian>
             <French>Rétracter le brancard</French>
+            <Chinesesimp>缩回担架</Chinesesimp>
         </Key>
         <Key ID="STR_KAT_Stretcher_DetachHeliStretcher">
             <English>Detach Stretcher</English>
@@ -117,6 +119,7 @@
             <Japanese>担架を取り外す</Japanese>
             <Italian>Staccare la barella</Italian>
             <French>Détacher le brancard</French>
+            <Chinesesimp>分离担架</Chinesesimp>
         </Key>
         <Key ID="STR_KAT_Stretcher_Helistretcher_Display">
             <English>Attachable Helistretcher</English>
@@ -198,6 +201,7 @@
             <Japanese>ランチャーとして畳む</Japanese>
             <Italian>Mettere nella borsa</Italian>
             <French>Emballer dans un sac</French>
+            <Chinesesimp>装进袋子里</Chinesesimp>
         </Key>
         <Key ID="STR_KAT_Stretcher_PackIntoBackpack">
             <English>Pack into backpack</English>
@@ -207,6 +211,7 @@
             <Japanese>バックパックとして畳む</Japanese>
             <Italian>Mettere nello zaino</Italian>
             <French>Emballer dans un sac à dos</French>
+            <Chinesesimp>装进背包</Chinesesimp>
         </Key>
         <Key ID="STR_KAT_Stretcher_UnpackStretcher">
             <English>Deploy Stretcher</English>
@@ -216,6 +221,7 @@
             <Japanese>担架を展開する</Japanese>
             <Italian>Dispiegare la barella</Italian>
             <French>Déployer le brancard</French>
+            <Chinesesimp>展开担架</Chinesesimp>
         </Key>
         <Key ID="STR_KAT_Stretcher_PlaceStretcher_progressBar">
             <English>Placing Stretcher...</English>
@@ -225,6 +231,7 @@
             <Japanese>担架を設置しています・・・</Japanese>
             <Italian>Posizionamento della barella...</Italian>
             <French>Mise en place du brancard...</French>
+            <Chinesesimp>正在放置担架...</Chinesesimp>
         </Key>
         <Key ID="STR_KAT_Stretcher_PickupStretcher_progressBar">
             <English>Packing Stretcher...</English>
@@ -234,6 +241,7 @@
             <Japanese>担架を折り畳んでいます・・・</Japanese>
             <Italian>Imballaggio della barella...</Italian>
             <French>Le brancard est emballé</French>
+            <Chinesesimp>正在打包担架...</Chinesesimp>
         </Key>
         <Key ID="STR_KAT_Stretcher_KAT_HeliStretcher">
             <English>KAT Helistretcher</English>
@@ -242,6 +250,7 @@
             <Japanese>KAT ヘリコプター用担架</Japanese>
             <Italian>KAT Barella per elicotteri</Italian>
             <French>Brancard d'hélicoptère KAT</French>
+            <Chinesesimp>KAT Helistretcher</Chinesesimp>
         </Key>
     </Package>
 </Project>

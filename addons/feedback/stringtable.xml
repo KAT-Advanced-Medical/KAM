@@ -14,6 +14,7 @@
             <Czech>Hodnota SpO2 pro varování o nízkém SpO2</Czech>
             <Finnish>Matala SpO2-varoitustaso</Finnish>
             <Russian>Низкий уровень предупреждения SpO2</Russian>
+            <Chinesesimp>低SpO2警告级别</Chinesesimp>
         </Key>
         <Key ID="STR_KAT_Feedback_SETTING_lowSpO2_DESC">
             <English>Lets you change the SpO2 Value at which you get the Flashing warning indicator and stamina loss effect</English>
@@ -28,18 +29,21 @@
             <Czech>Nastavení hodnoty SpO2 při které se aktivují varovné efekty problikávání obrazovky a ztráta staminy</Czech>
             <Finnish>Voit muuttaa SpO2-arvoa, jolla saat vilkkuvan varoituksen ja kestävyyden heikkenemisen</Finnish>
             <Russian>Позволяет изменить значение SpO2, при котором вы получаете мигающий предупреждающий индикатор и эффект потери выносливости</Russian>
+            <Chinesesimp>允许您更改SpO2警告值，在该值下，您将获得闪烁警告指示器和耐力损失效果</Chinesesimp>
         </Key>
         <Key ID="STR_KAT_Feedback_SETTING_OpioidEffect_display">
             <English>Enable opioid effect</English>
             <Japanese>オピオイド効果を有効化</Japanese>
             <Italian>Abilita l'effetto degli oppioidi</Italian>
             <French>Activer l'effet opioïde</French>
+            <Chinesesimp>启用阿片类药物作用</Chinesesimp>
         </Key>
         <Key ID="STR_KAT_Feedback_SETTING_OpioidEffect_DESC">
             <English>Enables opioid effect on ketamine, fentanyl and pervitin</English>
             <Japanese>ケタミン、フェンタニル、ペルビチンなどでオピオイドの効果を有効にします</Japanese>
             <Italian>Abilita l'effetto degli oppioidi su ketamina, fentanil e pervitina</Italian>
             <French>Permet un effet opioïde sur la kétamine, le fentanyl et la pervitine</French>
+            <Chinesesimp>使阿片类药物对氯胺酮、芬太尼和帕维汀产生作用</Chinesesimp>
         </Key>
     </Package>
 </Project>

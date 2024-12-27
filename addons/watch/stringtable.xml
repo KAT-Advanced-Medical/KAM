@@ -8,6 +8,7 @@
             <Japanese>温度単位を選択</Japanese>
             <Italian>Seleziona formato temperatura</Italian>
             <French>Sélectionner l'unité de température</French>
+            <Chinesesimp>选择温度单位</Chinesesimp>
         </Key>
         <Key ID="STR_KAT_Watch_SETTING_TemperatureForm_Desc">
             <English>Selects which temperature unit is used for the KATMIN watch display</English>
@@ -16,6 +17,7 @@
             <Japanese>Katmin腕時計で表示される温度の単位を選択します</Japanese>
             <Italian>Seleziona quale unità di temperatura viene utilizzata per il display del KATMIN</Italian>
             <French>Sélectionne l'unité de température utilisée pour l'affichage de la montre KATMIN</French>
+            <Chinesesimp>选择KATMIN手表显示使用的温度单位</Chinesesimp>
         </Key>
         <Key ID="STR_KAT_Watch_SETTING_TemperatureForm_Celsius">
             <English>Celsius</English>
@@ -24,6 +26,7 @@
             <Japanese>摂氏 (C)</Japanese>
             <Italian>Celsius</Italian>
             <French>Celsius</French>
+            <Chinesesimp>摄氏度</Chinesesimp>
         </Key>
         <Key ID="STR_KAT_Watch_SETTING_TemperatureForm_Fahrenheit">
             <English>Fahrenheit</English>
@@ -32,6 +35,7 @@
             <Japanese>華氏 (F)</Japanese>
             <Italian>Fahrenheit</Italian>
             <French>Fahrenheit</French>
+            <Chinesesimp>华氏度</Chinesesimp>
         </Key>
         <Key ID="STR_KAT_Watch_SETTING_PressureForm">
             <English>Select pressure form</English>
@@ -40,6 +44,7 @@
             <Japanese>圧力単位を選択</Japanese>
             <Italian>Seleziona formato pressione</Italian>
             <French>Sélectionner la forme de pression</French>
+            <Chinesesimp>选择压力单位</Chinesesimp>
         </Key>
         <Key ID="STR_KAT_Watch_SETTING_PressureForm_Desc">
             <English>Selects which pressure unit is used for the KATMIN watch display</English>
@@ -48,6 +53,7 @@
             <Japanese>Katmin腕時計で表示される圧力の単位を選択します</Japanese>
             <Italian>Seleziona quale unità di pressione viene utilizzata per il display del KATMIN</Italian>
             <French>Sélectionne l'unité de pression utilisée pour l'affichage de la montre KATMIN</French>
+            <Chinesesimp>选择用于KATMIN手表显示的压力单位</Chinesesimp>
         </Key>
         <Key ID="STR_KAT_Watch_SETTING_PressureForm_mmHg">
             <English>mmHg</English>
@@ -56,6 +62,7 @@
             <Japanese>mmHg</Japanese>
             <Italian>mmHg</Italian>
             <French>mmHg</French>
+            <Chinesesimp>mmHg</Chinesesimp>
         </Key>
         <Key ID="STR_KAT_Watch_SETTING_PressureForm_hPa">
             <English>hPa</English>
@@ -64,6 +71,7 @@
             <Japanese>hPa</Japanese>
             <Italian>hPa</Italian>
             <French>hPa</French>
+            <Chinesesimp>hPa</Chinesesimp>
         </Key>
         <Key ID="STR_KAT_Watch_SETTING_AltitudeForm">
             <English>Select altitude form</English>
@@ -72,6 +80,7 @@
             <Japanese>高度単位を選択</Japanese>
             <Italian>Seleziona formato altitudine</Italian>
             <French>Sélectionner l'unité d'altitude</French>
+            <Chinesesimp>选择高度单位</Chinesesimp>
         </Key>
         <Key ID="STR_KAT_Watch_SETTING_AltitudeForm_Desc">
             <English>Selects which altitude unit is used for the KATMIN watch display</English>
@@ -80,6 +89,7 @@
             <Japanese>Katmin腕時計で表示される高度の単位を選択します</Japanese>
             <Italian>Seleziona quale unità di altitudine viene utilizzata per il display del KATMIN</Italian>
             <French>Sélectionne l'unité d'altitude utilisée pour la montre KATMIN</French>
+            <Chinesesimp>选择用于KATMIN手表显示的高度单位</Chinesesimp>
         </Key>
         <Key ID="STR_KAT_Watch_SETTING_AltitudeForm_meters">
             <English>Meters</English>
@@ -88,6 +98,7 @@
             <Japanese>メートル</Japanese>
             <Italian>Metri</Italian>
             <French>Mètres</French>
+            <Chinesesimp>米</Chinesesimp>
         </Key>
         <Key ID="STR_KAT_Watch_SETTING_AltitudeForm_feet">
             <English>Feet</English>
@@ -96,6 +107,7 @@
             <Japanese>フィート</Japanese>
             <Italian>Piedi</Italian>
             <French>Pieds</French>
+            <Chinesesimp>英尺</Chinesesimp>
         </Key>
         <Key ID="STR_KAT_Watch_KatminDescription">
             <English>Watch with Vital Monitoring Capabilities</English>
@@ -104,6 +116,7 @@
             <Japanese>カーミン K500。 バイタル監視機能を持った腕時計</Japanese>
             <Italian>Orologio con capacità di monitoraggio vitale</Italian>
             <French>Montre avec moniteur de signes vitaux intégré</French>
+            <Chinesesimp>具有重要监控功能的手表</Chinesesimp>
         </Key>
         <Key ID="STR_KAT_Watch_KatminDisplayName">
             <English>Katmin K500</English>
@@ -112,66 +125,79 @@
             <Japanese>Katmin K500</Japanese>
             <Italian>Katmin K500</Italian>
             <French>Katmin K500</French>
+            <Chinesesimp>凯敏K500</Chinesesimp>
         </Key>
         <Key ID="STR_KAT_Watch_CavminDescription">
             <English>Watch with Vital Monitoring Capabilities. Garry Owen!</English>
             <Japanese>カーミン キャバルリー・リミテッド。 バイタル監視機能を持った腕時計。 ギャリー・オーウェン!(Garry Owen!)</Japanese>
             <Italian>Orologio con capacità di monitoraggio vitale. Garry Owen!</Italian>
             <French>Montre avec fonctions de surveillance vitale. Garry Owen !</French>
+            <Chinesesimp>使用重要监控功能观看。加里·欧文！</Chinesesimp>
         </Key>
         <Key ID="STR_KAT_Watch_CavminDisplayName">
             <English>Katmin Cavalry Limited</English>
             <Japanese>Katmin Cavalry Limited</Japanese>
             <Italian>Katmin Cavalry Limited</Italian>
             <French>Katmin Cavalry Limited</French>
+            <Chinesesimp>Katmin骑兵有限公司</Chinesesimp>
         </Key>
         <Key ID="STR_KAT_Watch_STSDescription">
             <English>Watch with Vital Monitoring Capabilities. So Others May Live.</English>
             <Japanese>カーミン ジャンプ・スタンダード。 バイタル監視機能を持った腕時計。 他人の命の為に。(So Others May Live)</Japanese>
             <Italian>Orologio con capacità di monitoraggio vitale. Perché altri possano vivere.</Italian>
             <French>Montre avec fonctions de surveillance vitale. Pour que d'autres puissent vivre.</French>
+            <Chinesesimp>使用重要监控功能观看。所以其他人可以活下去。</Chinesesimp>
         </Key>
         <Key ID="STR_KAT_Watch_STSDisplayName">
             <English>Katmin Jump Standard</English>
             <Japanese>Katmin Jump Standard</Japanese>
             <Italian>Katmin Jump Standard</Italian>
             <French>Katmin Jump Standard</French>
+            <Chinesesimp>Katmin跳跃标准</Chinesesimp>
         </Key>
         <Key ID="STR_KAT_Watch_RangerDescription">
             <English>Watch with Vital Monitoring Capabilities. Sua Sponte.</English>
             <Japanese>カーミン K12モデルR。 バイタル監視機能を持った腕時計。 自らの意思で。(Sua Sponte)</Japanese>
+            <Chinesesimp>使用重要监控功能观看。Sua Sponte。</Chinesesimp>
         </Key>
         <Key ID="STR_KAT_Watch_RangerDisplayName">
             <English>Katmin K12 Model R</English>
             <Japanese>Katmin K12 Model R</Japanese>
+            <Chinesesimp>Katmin K12 R型</Chinesesimp>
         </Key>
         <Key ID="STR_KAT_Watch_ShowKATWatch_Setting">
             <English>Show KATMIN Watch</English>
             <Japanese>Katmin腕時計を表示</Japanese>
+            <Chinesesimp>显示KATMIN手表</Chinesesimp>
         </Key>
         <Key ID="STR_KAT_Watch_AddTimer_Setting">
             <English>Add 15 Seconds to Watch Timer</English>
             <Japanese>時計のタイマーを15秒増やす</Japanese>
+            <Chinesesimp>添加15秒观看计时器</Chinesesimp>
         </Key>
         <Key ID="STR_KAT_Watch_SubtractTimer_Setting">
             <English>Subtract 15 Seconds from Watch Timer</English>
             <Japanese>時計のタイマーを15秒減らす</Japanese>
+            <Chinesesimp>从手表计时器中减去15秒</Chinesesimp>
         </Key>
         <Key ID="STR_KAT_Watch_StartStopTimer_Setting">
             <English>Start and Stop Watch Timer</English>
             <Japanese>時計のタイマーを開始および停止</Japanese>
+            <Chinesesimp>启动和停止手表定时器</Chinesesimp>
         </Key>
         <Key ID="STR_KAT_Watch_descentFT">
             <English>%1ft/s</English>
             <Japanese>%1ft/s</Japanese>
             <Italian>%1ft/s</Italian>
             <French>%1ft/s</French>
+            <Chinesesimp>%1 ft/s</Chinesesimp>
         </Key>
         <Key ID="STR_KAT_Watch_descentM">
             <English>%1m/s</English>
             <Japanese>%1m/s</Japanese>
             <Italian>%1m/s</Italian>
             <French>%1m/s</French>
+            <Chinesesimp>%1 m/s</Chinesesimp>
         </Key>
     </Package>
 </Project>
