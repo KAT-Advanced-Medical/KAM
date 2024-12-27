@@ -348,3 +348,4 @@
 
 //Ophthalmology
 #define GET_EYE_INJURY(unit) (unit getVariable [QEGVAR(ophthalmology,eyeInjury), false])
+#define GET_EYE_INJURIES(unit) (unit getVariable [QEGVAR(ophthalmology,eyeInjuries), [0,0]])

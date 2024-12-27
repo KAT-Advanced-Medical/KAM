@@ -19,6 +19,7 @@ params [["_manualUpdate", false]];
 if (ACEGVAR(common,OldIsCamera) || {!alive ACE_player}) exitWith {
     [false]    call FUNC(effectOpioid);
     [false]    call FUNC(effectLowSpO2);
+    [false]    call FUNC(effectHurtEye);
 };
 
 BEGIN_COUNTER(handleEffects);
@@ -31,6 +32,7 @@ private _poisoned = IS_AIRPOISONED(ACE_player);
 private _tear = IN_TEARGAS(ACE_player);
 private _wheeze = ((ACE_player getVariable [QGVAR(pneumothorax), 0] > 0) || ACE_player getVariable [QGVAR(hemopneumothorax), false] || ACE_player getVariable [QGVAR(tensionpneumothorax), false] || ACE_player getVariable [QEGVAR(chemical,airPoisoning), false]);
 private _eyeInjury        = GET_EYE_INJURY(ACE_player);
+private _eyeInjuries        = GET_EYE_INJURIES(ACE_player);
 
 // - Visual effects -----------------------------------------------------------
 
@@ -45,6 +47,7 @@ private _eyeInjury        = GET_EYE_INJURY(ACE_player);
 [!_unconscious, _tear] call FUNC(effectTearHaze);
 [!_unconscious, _wheeze, ACE_player] call (effectBreathingWheeze);
 [!_unconscious, _eyeInjury] call FUNC(effectEyeInjury);
+[!_unconscious, _eyeInjuries, _manualUpdate] call FUNC(effectHurtEye);
 
 
 END_COUNTER(handleEffects);
