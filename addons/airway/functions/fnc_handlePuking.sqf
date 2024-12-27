@@ -1,7 +1,7 @@
 #include "..\script_component.hpp"
 /*
  * Author: Katalam, edited by MiszczuZPolski
- * Called when a unit enters the unconscious state. Will add a FrameHandler for puking while unconscious.
+ * Called when a unit enters the unconscious state. Will add a FrameHandler for aspirating while unconscious.
  *
  * Arguments:
  * 0: Unit <OBJECT>
@@ -18,7 +18,7 @@
 params ["_unit"];
 
 //Other mods can utilise KAT_Occlusion_Exclusion variable to prevent occlusions from happening
-if ((_unit getVariable ["kat_pukeActive_PFH", false]) || !(GVAR(enable)) || (_unit getVariable ["KAT_Occlusion_Exclusion", false])) exitWith {};
+if ((_unit getVariable ["kat_pukeActive_PFH", false]) || !(GVAR(enable)) || (_unit getVariable ["KAT_Obstruction_Exclusion", false])) exitWith {};
 _unit setVariable ["kat_pukeActive_PFH", true];
 
 [{
@@ -27,20 +27,26 @@ _unit setVariable ["kat_pukeActive_PFH", true];
 
     private _isUnconscious = _unit getVariable ["ACE_isUnconscious", false];
     private _recovery = _unit getVariable [QGVAR(recovery), false];
+    private _obstruction = _unit getVariable [QGVAR(obstruction), [false, false, false]];
+    _obstruction params ["_oral", "_upper", "_lower"];
 
-    if ((!(alive _unit)) || !_isUnconscious || (_unit getVariable [QGVAR(airway_item), ""] isEqualTo "Larynxtubus") || _recovery) exitWith {
+    if ((!(alive _unit)) || !_isUnconscious) exitWith {
         [_idPFH] call CBA_fnc_removePerFrameHandler;
         _unit setVariable ["kat_pukeActive_PFH", nil];
     };
 
-    if (GVAR(occlusion_cooldownPeriod) > 0 && {(_unit getVariable [QGVAR(clearedTime), 0] > 0) && ((_unit getVariable [QGVAR(clearedTime), 0]) + GVAR(occlusion_cooldownPeriod)) > CBA_missionTime}) exitWith {};
+    if (GVAR(obstruction_cooldownPeriod) > 0 && {(_unit getVariable [QGVAR(clearedTime), 0] > 0) && ((_unit getVariable [QGVAR(clearedTime), 0]) + GVAR(obstruction_cooldownPeriod)) > CBA_missionTime}) exitWith {};
 
-    if (random(100) <= GVAR(probability_occluded)) then {
-        if !(_unit getVariable [QGVAR(occluded), false]) then {
-            _unit setVariable [QGVAR(occluded), true, true];
+    if (random(100) <= GVAR(probability_obstructed)) then {
+        if !(_upper) then {
+            _upper = true;
+
             if (GVAR(checkbox_puking_sound)) then {
-                playSound3D [selectRandom [QPATHTOF_SOUND(sounds\puking1.wav),QPATHTOF_SOUND(sounds\puking2.wav),QPATHTOF_SOUND(sounds\puking3.wav)], _unit, false, getPosASL _unit, 8, 1, 15];
+                playsound3D [selectRandom [QPATHTOF_SOUND(sounds\puking1.wav),QPATHTOF_SOUND(sounds\puking2.wav),QPATHTOF_SOUND(sounds\puking3.wav)], _unit, false, getPosASL _unit, 8, 1, 15];
             };
+        } else {
+            _upper = false;
+            _lower = true;
         };
     };
-}, GVAR(occlusion_repeatTimer), [_unit]] call CBA_fnc_addPerFrameHandler;
+}, GVAR(obstruction_repeatTimer), [_unit]] call CBA_fnc_addPerFrameHandler;
