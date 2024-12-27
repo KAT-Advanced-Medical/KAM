@@ -61,3 +61,10 @@ GVAR(tearHaze) = [
     0.0054, 0.0041, 0.0090, 0.0070,
     0.5, 0.3, 10.0, 6.0]
 ] call _fnc_createEffect;
+
+// - Eye Injury -----------------------------------------------------------
+GVAR(eyeInjury) = [
+    "DynamicBlur",
+    213705,
+    [1]
+] call _fnc_createEffect;

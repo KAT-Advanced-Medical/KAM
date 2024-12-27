@@ -1,6 +1,5 @@
 PREP(fullHealLocal);
 PREP(handleDustInjury);
-PREP(handleDustInjuryEffects);
 PREP(handleRespawn);
 PREP(init);
 PREP(initKeybinds);

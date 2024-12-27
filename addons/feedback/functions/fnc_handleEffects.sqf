@@ -30,6 +30,7 @@ private _unconscious      = IS_UNCONSCIOUS(ACE_player);
 private _poisoned = IS_AIRPOISONED(ACE_player);
 private _tear = IN_TEARGAS(ACE_player);
 private _wheeze = ((ACE_player getVariable [QGVAR(pneumothorax), 0] > 0) || ACE_player getVariable [QGVAR(hemopneumothorax), false] || ACE_player getVariable [QGVAR(tensionpneumothorax), false] || ACE_player getVariable [QEGVAR(chemical,airPoisoning), false]);
+private _eyeInjury        = GET_EYE_INJURY(ACE_player);
 
 // - Visual effects -----------------------------------------------------------
 
@@ -43,5 +44,7 @@ private _wheeze = ((ACE_player getVariable [QGVAR(pneumothorax), 0] > 0) || ACE_
 [!_unconscious, _poisoned, ACE_player] call FUNC(effectCoughing);
 [!_unconscious, _tear] call FUNC(effectTearHaze);
 [!_unconscious, _wheeze, ACE_player] call (effectBreathingWheeze);
+[!_unconscious, _eyeInjury] call FUNC(effectEyeInjury);
+
 
 END_COUNTER(handleEffects);

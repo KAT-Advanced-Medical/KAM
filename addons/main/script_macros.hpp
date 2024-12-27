@@ -345,3 +345,6 @@
 
 #define IS_AIRPOISONED(unit) (unit getVariable [QEGVAR(chemical,airPoisoning), false])
 #define IN_TEARGAS(unit) (unit getVariable [QEGVAR(chemical,CSGas), 0])
+
+//Ophthalmology
+#define GET_EYE_INJURY(unit) (unit getVariable [QEGVAR(ophthalmology,eyeInjury), false])
