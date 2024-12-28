@@ -22,7 +22,4 @@ if !(_patient getVariable [QGVAR(dust_injury), false]) exitWith {};
 
 if (_random <= GVAR(probability_treatment_dust)) then {
     _patient setVariable [QGVAR(dust_injury), false, true];
-    GVAR(ppBlurDustInjury) ppEffectEnable false;
-    GVAR(ppBlurDustInjury) ppEffectAdjust [0];
-    GVAR(ppBlurDustInjury) ppEffectCommit 0;
 };

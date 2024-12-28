@@ -16,21 +16,10 @@ if (!hasInterface) exitWith {};
 
 [QUOTE(COMPONENT_BEAUTIFIED), QGVAR(blinking), LLSTRING(blink_action),
 {
-    GVAR(ppBlur) ppEffectEnable false;
-    GVAR(ppBlur) ppEffectAdjust [0];
-    GVAR(ppBlur) ppEffectCommit 0;
 
     GVAR(ppBlurBlink) ppEffectEnable true;
     GVAR(ppBlurBlink) ppEffectAdjust [0.5];
     GVAR(ppBlurBlink) ppEffectCommit 0.5;
-
-    private _random = floor(random 100);
-    if (_random <= GVAR(probability_treatment_dust)) then {
-        ACE_player setVariable [QGVAR(dust_injury), false, true];
-        GVAR(ppBlurDustInjury) ppEffectEnable false;
-        GVAR(ppBlurDustInjury) ppEffectAdjust [0];
-        GVAR(ppBlurDustInjury) ppEffectCommit 0;
-    };
 
     [{
         GVAR(ppBlurBlink) ppEffectEnable false;
@@ -39,4 +28,4 @@ if (!hasInterface) exitWith {};
     }, [], 0.1] call CBA_fnc_waitAndExecute;
 }, "",
 [DIK_TAB, [false, false, false]], false] call CBA_fnc_addKeybind;
-// [DIK, [shift, ctrl, alt]] 
+// [DIK, [shift, ctrl, alt]]

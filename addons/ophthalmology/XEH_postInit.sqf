@@ -8,6 +8,8 @@ call FUNC(initKeybinds);
     //If not enabled, dont't add
     if (!GVAR(enable)) exitWith {};
 
+    GVAR(ppBlurBlink) = ppEffectCreate ["DynamicBlur", 213706];
+
     [QACEGVAR(goggles,effect), LINKFUNC(handleDustInjury)] call CBA_fnc_addEventHandler;
 
     //Add Explosion XEH
