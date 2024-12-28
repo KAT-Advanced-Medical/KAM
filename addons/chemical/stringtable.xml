@@ -754,6 +754,7 @@
         </Key>
         <Key ID="STR_KAT_Chemical_Lvl0_Gas">
             <English>Tear gas (Level 0)</English>
+            <Japanese>催涙ガス (レベル0)</Japanese>
         </Key>
         <Key ID="STR_KAT_Chemical_Lvl1_Gas">
             <English>Toxic gas (Level 1)</English>
