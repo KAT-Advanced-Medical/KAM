@@ -40,7 +40,6 @@ class ACE_Medical_Treatment_Actions {
 
     class EyeWasher: EyeWash {
         displayName = CSTRING(eyewasher_display_item);
-        callbackSuccess = QFUNC(treatmentAdvanced_eyewasher);
         items[] = {"KAT_Eyewasher"};
     };
 };

@@ -20,6 +20,7 @@ if (ACEGVAR(common,OldIsCamera) || {!alive ACE_player}) exitWith {
     [false]    call FUNC(effectOpioid);
     [false]    call FUNC(effectLowSpO2);
     [false]    call FUNC(effectHurtEye);
+    [false]    call FUNC(effectEyeInjury);
 };
 
 BEGIN_COUNTER(handleEffects);

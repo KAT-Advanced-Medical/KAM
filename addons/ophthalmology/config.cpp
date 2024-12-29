@@ -11,10 +11,11 @@ class CfgPatches {
         magazines[] = { };
         requiredAddons[] = {
             "kat_main",
+            "kat_feedback",
             "cba_settings"
         };
         author = "Katalam";
-        authors[] = {"Katalam"};
+        authors[] = {"Katalam", "MiszczuZPolski", "Mazinski"};
         url = ECSTRING(main,URL);
         VERSION_CONFIG;
     };

@@ -1,6 +1,7 @@
 #include "..\script_component.hpp"
 /*
  * Author: Garth 'L-H' de Wet, commy2
+ * Edited by MiszczuZPolski
  * Handles explosions.
  *
  * Arguments:
@@ -64,8 +65,8 @@ if (_strength > 0.2) then {
     };
 
     // Reaction blink
-    [{ 
-        [0.1, true] call EFUNC(feedback,effectEyeBlink); 
+    [{
+        [0.1, true] call EFUNC(feedback,effectEyeBlink);
         [{ [0.05, true] call EFUNC(feedback,effectEyeBlink);  }, [], 0.3] call CBA_fnc_waitAndExecute;
     }, [], (_strength * 2.2)] call CBA_fnc_waitAndExecute;
 };

@@ -5,4 +5,3 @@ PREP(handleRespawn);
 PREP(init);
 PREP(initKeybinds);
 PREP(treatmentAdvanced_eyewash);
-PREP(treatmentAdvanced_eyewasher);

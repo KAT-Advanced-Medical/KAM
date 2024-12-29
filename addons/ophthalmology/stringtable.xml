@@ -16,14 +16,8 @@
         <Key ID="STR_KAT_Ophthalmology_setting_probability_treatment_dust">
             <English>Probability to treat (non-heavy) eye injury with blinking</English>
         </Key>
-        <Key ID="STR_KAT_Ophthalmology_setting_dust_effect_intensity">
-            <English>Intensity of the effect for eye injury</English>
-        </Key>
         <Key ID="STR_KAT_Ophthalmology_setting_subcategory_manual_blink">
             <English>Manual blinking</English>
-        </Key>
-        <Key ID="STR_KAT_Ophthalmology_setting_blink_treatment_time">
-            <English>Treatment time of blink</English>
         </Key>
         <Key ID="STR_KAT_Ophthalmology_setting_eyewash_treatment_time">
             <English>Treatment time of Eye Wash</English>

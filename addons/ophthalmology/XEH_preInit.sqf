@@ -48,26 +48,6 @@ PREP_RECOMPILE_END;
     true
 ] call CBA_Settings_fnc_init;
 
-// Dust in the eye post process effect intensity
-[
-    QGVAR(dust_effect_intensity),
-    "SLIDER",
-    [LLSTRING(setting_dust_effect_intensity)],
-    [CBA_SETTINGS_CAT, LSTRING(setting_subcategory_injury)],
-    [1, 10, 3, 0],
-    true
-] call CBA_Settings_fnc_init;
-
-// Blinking treatment time
-[
-    QGVAR(blink_treatment_time),
-    "SLIDER",
-    [LLSTRING(setting_blink_treatment_time)],
-    [CBA_SETTINGS_CAT, LSTRING(setting_subcategory_manual_blink)],
-    [1, 10, 2, 0],
-    true
-] call CBA_Settings_fnc_init;
-
 // Eye Wash treatment time
 [
     QGVAR(eyewash_treatment_time),
