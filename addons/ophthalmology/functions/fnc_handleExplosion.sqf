@@ -54,7 +54,7 @@ if (_strength > 0.2) then {
         // Get the current state of the eyes (defaulting to healthy if not set)
         private _eyeInjuries = _unit getVariable [QGVAR(eyeInjuries), [1, 1]];
 
-        // Randomly choose which eye to injure (0 = left, 1 = right)
+        // Randomly choose which eye to injure (0 = right, 1 = left)
         private _injuredEye = floor random 2;
 
         // Set the chosen eye to injured
