@@ -10,3 +10,5 @@
 
     [true] call FUNC(handleEffects);
 }] call CBA_fnc_addPlayerEventHandler;
+
+GVAR(ppBlurBlink) = ppEffectCreate ["DynamicBlur", 213706];
