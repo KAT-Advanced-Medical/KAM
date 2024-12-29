@@ -19,4 +19,12 @@ class CfgGlasses
         model = QPATHTOF(models\kat_mask_m04.p3d);
         picture = QPATHTOF(ui\maskM04.paa);
     };
+
+    class kat_mask_solr: kat_mask_M50
+    {
+        author = "MrAdrianPL + KJW";
+        displayname = "SOLR Oxygen Mask";
+        model = QPATHTOF(models\solr\kat_mask_solr.p3d);
+        picture = QPATHTOF(ui\maskM04.paa);
+    };
 };
