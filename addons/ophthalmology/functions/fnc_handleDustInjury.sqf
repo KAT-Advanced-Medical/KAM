@@ -23,6 +23,8 @@ private _random = floor (random 100);
 if (_cause in ["dust", "rotorWash"]) then {
     if (_random < GVAR(probability_dust)) exitWith {
         [0.1, false] call EFUNC(feedback,effectEyeBlink);
-        _unit setVariable [QGVAR(dust_injury), true, true];
+
+        private _dustInjurySeverity = _unit getVariable [QGVAR(dustInjurySeverity), 0];
+        _unit setVariable [QGVAR(dustInjurySeverity), ((_dustInjurySeverity + (random 1)) min 5), true];
     };
 };

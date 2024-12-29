@@ -21,7 +21,8 @@ if (!hasInterface) exitWith {};
     private _random = floor(random 100);
 
     if (_random <= GVAR(probability_treatment_dust)) then {
-        ACE_player setVariable [QGVAR(dust_injury), false, true];
+        private _dustInjurySeverity = ACE_player getVariable [QGVAR(dustInjurySeverity), 0];
+        ACE_player setVariable [QGVAR(dustInjurySeverity), ((_dustInjurySeverity - 0.5) max 0), true];
     };
 }, "",
 [DIK_TAB, [false, false, false]], false] call CBA_fnc_addKeybind;

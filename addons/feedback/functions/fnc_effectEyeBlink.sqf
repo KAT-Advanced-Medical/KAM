@@ -50,9 +50,9 @@ _upperLid ctrlCommit 0.04;
 _lowerLid ctrlCommit 0.04;
 
 if (_shock) then {
-    EGVAR(ophthalmology,ppBlurBlink) ppEffectEnable true;
-    EGVAR(ophthalmology,ppBlurBlink) ppEffectAdjust [0.4];
-    EGVAR(ophthalmology,ppBlurBlink) ppEffectCommit 0.04;
+    GVAR(ppBlurBlink) ppEffectEnable true;
+    GVAR(ppBlurBlink) ppEffectAdjust [0.4];
+    GVAR(ppBlurBlink) ppEffectCommit 0.04;
 };
 
 [{
@@ -64,10 +64,10 @@ if (_shock) then {
         _upperLid ctrlCommit 0.1;
         _lowerLid ctrlCommit 0.1;
 
-        EGVAR(ophthalmology,ppBlurBlink) ppEffectAdjust [0];
-        EGVAR(ophthalmology,ppBlurBlink) ppEffectCommit (_time * 4);
+        GVAR(ppBlurBlink) ppEffectAdjust [0];
+        GVAR(ppBlurBlink) ppEffectCommit (_time * 4);
 
-        [{ EGVAR(ophthalmology,ppBlurBlink) ppEffectEnable false; }, [], (_time * 4)] call CBA_fnc_waitAndExecute;
+        [{ GVAR(ppBlurBlink) ppEffectEnable false; }, [], (_time * 4)] call CBA_fnc_waitAndExecute;
     } else {
         _upperLid ctrlCommit 0.04;
         _lowerLid ctrlCommit 0.04;

@@ -18,11 +18,9 @@
 params ["_patient"];
 TRACE_1("fullHealLocal",_patient);
 
-_patient setVariable [QGVAR(dust_injury_heavy), false, true];
-_patient setVariable [QGVAR(dust_injury), false, true];
+_patient setVariable [QGVAR(dustInjurySeverity), 0, true];
 _patient setVariable [QGVAR(eyeInjuries), [1,1], true];
 
 GVAR(ppBlurDustInjury) ppEffectEnable false;
 GVAR(ppBlurDustInjury) ppEffectAdjust [0];
 GVAR(ppBlurDustInjury) ppEffectCommit 0;
-

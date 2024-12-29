@@ -347,5 +347,5 @@
 #define IN_TEARGAS(unit) (unit getVariable [QEGVAR(chemical,CSGas), 0])
 
 //Ophthalmology
-#define GET_EYE_INJURY(unit) (unit getVariable [QEGVAR(ophthalmology,eyeInjury), false])
+#define GET_DUST_INJURY_SEVERITY(unit) (unit getVariable [QEGVAR(ophthalmology,dustInjurySeverity), 0])
 #define GET_EYE_INJURIES(unit) (unit getVariable [QEGVAR(ophthalmology,eyeInjuries), [0,0]])
