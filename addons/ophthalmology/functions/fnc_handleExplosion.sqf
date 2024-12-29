@@ -25,7 +25,7 @@ _grenadePosASL set [2, (_grenadePosASL select 2) + 0.2]; // compensate for grena
 
 // Calculate distance-based strength
 private _distance = _eyePos vectorDistance _grenadePosASL;
-private _strength = 1 - (_distance min 20) / 20;
+private _strength = 1 - (_distance min 30) / 30;
 
 private _losCount = {
     !lineIntersects [_grenadePosASL vectorAdd _x, _eyePos, _unit]
@@ -40,12 +40,16 @@ private _eyeDir = ((AGLToASL positionCameraToWorld [0, 0, 1]) vectorDiff (AGLToA
 private _dirToGrenade = _eyePos vectorFromTo _grenadePosASL;
 private _angleDiff = acos (_eyeDir vectorDotProduct _dirToGrenade); // Angle difference in radians
 
-if (_angleDiff > 45) exitWith {};
+if (_angleDiff > 50) exitWith {};
 
 // Add visual and hearing effects
-if (_strength > 0.3) then {
+if (_strength > 0.2) then {
 
-    if (_random < GVAR(probability_dust_heavy)) exitWith {
+    // Eye closure from shock
+    [(_strength * 2), true] call EFUNC(feedback,effectEyeBlink);
+    private _random = floor (random 101);
+
+    if (_random < GVAR(probability_dust_heavy)) then {
 
         // Get the current state of the eyes (defaulting to healthy if not set)
         private _eyeInjuries = _unit getVariable [QGVAR(eyeInjuries), [1, 1]];
@@ -58,4 +62,10 @@ if (_strength > 0.3) then {
 
         _unit setVariable [QGVAR(eyeInjuries), _eyeInjuries, true];
     };
+
+    // Reaction blink
+    [{ 
+        [0.1, true] call EFUNC(feedback,effectEyeBlink); 
+        [{ [0.05, true] call EFUNC(feedback,effectEyeBlink);  }, [], 0.3] call CBA_fnc_waitAndExecute;
+    }, [], (_strength * 2.2)] call CBA_fnc_waitAndExecute;
 };

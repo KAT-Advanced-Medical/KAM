@@ -1,28 +1,4 @@
 class ACE_Medical_Treatment_Actions {
-    class Blink {
-        displayName = CSTRING(blink_display);
-        displayNameProgress = CSTRING(blink_action);
-        category = "bandage";
-        treatmentLocations = 0;
-        allowedSelections[] = {"Head"};
-        allowSelfTreatment = 1;
-        medicRequired = 0;
-        treatmentTime = QGVAR(blink_treatment_time);
-        items[] = {};
-        condition = QGETGVAR(enable,true);
-        callbackSuccess = QFUNC(treatmentAdvanced_blink);
-        callbackFailure = "";
-        callbackProgress = "";
-        consumeItem = 0;
-        animationPatient = "";
-        animationPatientUnconscious = "AinjPpneMstpSnonWrflDnon_rolltoback";
-        animationPatientUnconsciousExcludeOn[] = {"ainjppnemstpsnonwrfldnon"};
-        animationMedic = "";
-        animationMedicProne = "";
-        animationMedicSelf = "";
-        animationMedicSelfProne = "";
-        litter[] = {};
-    };
     class EyeWash {
         displayName = CSTRING(eyewash_display);
         displayNameProgress = CSTRING(eyewash_action);
