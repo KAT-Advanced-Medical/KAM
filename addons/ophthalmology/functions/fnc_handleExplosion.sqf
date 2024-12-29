@@ -1,14 +1,13 @@
 #include "..\script_component.hpp"
 /*
- * Author: Garth 'L-H' de Wet, commy2
- * Edited by MiszczuZPolski
+ * Author: MiszczuZPolski
  * Handles explosions.
  *
  * Arguments:
  * 0: Unit <OBJECT>
  *
  * Return Value:
- * Function is handled? <BOOL>
+ * None
  *
  * Example:
  * [bob] call kat_ophthalmology_fnc_handleExplosion

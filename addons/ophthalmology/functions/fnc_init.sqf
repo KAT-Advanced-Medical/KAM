@@ -1,7 +1,7 @@
 #include "..\script_component.hpp"
 /*
  * Author: Katalam
- * Will initialize the frame handler for the manual blinking and dust injuries
+ * Initialize unit
  *
  * Return Value:
  * None

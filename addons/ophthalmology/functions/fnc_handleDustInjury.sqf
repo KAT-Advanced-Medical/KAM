@@ -1,6 +1,6 @@
 #include "..\script_component.hpp"
 /*
- * Author: Katalam
+ * Author: MiszczuZPolski
  * Handles the possibility to have dust in the eye.
  *
  * Arguments:

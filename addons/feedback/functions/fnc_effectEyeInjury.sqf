@@ -1,12 +1,11 @@
 #include "..\script_component.hpp"
 /*
- * Author: Miss Heda, Digii
- * Modified by MiszczuZPolski
- * Triggers the low SPO2 visual effect.
+ * Author: Mazinski
+ * Triggers eye injury effect from dust and rotor wash.
  *
-* Arguments:
+ * Arguments:
  * 0: Enable <BOOL>
- * 1: Injury <BOOL>
+ * 1: Severity <NUMBER>
  *
  * Return Value:
  * None

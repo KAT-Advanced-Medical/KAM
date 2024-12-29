@@ -1,11 +1,11 @@
 #include "..\script_component.hpp"
 /*
  * Author: MiszczuZPolski
- * Handles the hurted eyes effect.
+ * Handles the hurted eyes effect from explosions.
  *
  * Arguments:
  * 0: Enable effect <BOOL>
- * 1: Current bloodloss (in l/s) <NUMBER>
+ * 1: Eyes state <ARRAY>
  * 2: Instant change (optional, default false) <BOOL>
  *
  * Return Value:
