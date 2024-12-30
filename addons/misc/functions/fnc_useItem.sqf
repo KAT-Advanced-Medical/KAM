@@ -29,7 +29,7 @@ scopeName "Main";
 private _sharedUseOrder = [[_patient, _medic],
     [_medic, _patient],
     [_medic],
-    ([([_patient, _medic],[_medic, _patient])] select ([_medic] call ACEFUNC(medical_treatment,isMedic)))
+    ([[_patient, _medic],[_medic, _patient]] select ([_medic] call ACEFUNC(medical_treatment,isMedic)))
 ] select ACEGVAR(medical_treatment,allowSharedEquipment);
 
 private _useOrder = [];
