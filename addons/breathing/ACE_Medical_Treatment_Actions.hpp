@@ -140,7 +140,7 @@ class ACE_Medical_Treatment_Actions {
         medicRequired = QGVAR(medLvl_hemopneumothoraxTreatment);
         treatmentTime = 7;
         items[] = {"kat_aatKit"};
-        condition = !QGVAR(hardcoreBreathingTreatment);
+        condition = "!GVAR(hardcoreBreathingTreatment)";
         callbackSuccess = QUOTE([ARR_2(_medic,_patient)] call EFUNC(airway,handleRecoveryPosition); [ARR_7(_medic,_patient,_bodyPart,_className,objNull,_usedItem,0)] call FUNC(treatmentAdvanced_hemopneumothorax););
         callbackFailure = "";
         callbackProgress = "";
