@@ -26,7 +26,12 @@ if (_medic isEqualTo player && {!isNull findDisplay 312}) exitWith {
 
 scopeName "Main";
 
-private _sharedUseOrder = [[_patient, _medic], [_medic, _patient], [_medic]] select ACEGVAR(medical_treatment,allowSharedEquipment);
+private _sharedUseOrder = [[_patient, _medic],
+    [_medic, _patient],
+    [_medic],
+    ([([_patient, _medic],[_medic, _patient])] select ([_medic] call ACEFUNC(medical_treatment,isMedic)))
+] select ACEGVAR(medical_treatment,allowSharedEquipment);
+
 private _useOrder = [];
 
 private _vehicle = objectParent _medic;
