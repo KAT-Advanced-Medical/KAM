@@ -55,14 +55,14 @@ private _fnc_sliderMove_ptx = {
     private _idc = ctrlIDC _slider;
     private _logic = GETMVAR(BIS_fnc_initCuratorAttributes_target,objNull);
     private _unit = attachedTo _logic;
-    private _curVal = _unit getVariable [QEGVAR(breathing,pneumothorax), 0];
+    private _curVal = _unit getVariable [QEGVAR(breathing,pneumothorax), [0, 0]];
     _slider ctrlSetTooltip format [LLSTRING(sliderFormat13was23), round(sliderPosition _slider), round _curVal, " "];
 };
 
 private _sliderPTX = _display displayCtrl 16105;
 _sliderPTX sliderSetRange [0, 4];
 _sliderPTX sliderSetSpeed [1,10];
-private _curPTX = _unit getVariable [QEGVAR(breathing,pneumothorax), 0];
+private _curPTX = _unit getVariable [QEGVAR(breathing,pneumothorax), [0, 0]];
 _sliderPTX sliderSetPosition (round _curPTX);
 _sliderPTX ctrlAddEventHandler ["SliderPosChanged", _fnc_sliderMove_ptx];
 [_sliderPTX,_curPTX] call _fnc_sliderMove_ptx;
@@ -86,8 +86,8 @@ _sliderSPO2 ctrlAddEventHandler ["SliderPosChanged", _fnc_sliderMove_SPO2];
 
 (_display displayCtrl 16101) cbSetChecked (_unit getVariable [QEGVAR(airway,obstruction), false]);
 (_display displayCtrl 16102) cbSetChecked (_unit getVariable [QEGVAR(airway,occluded), false]);
-(_display displayCtrl 16103) cbSetChecked (_unit getVariable [QEGVAR(breathing,hemopneumothorax), false]);
-(_display displayCtrl 16104) cbSetChecked (_unit getVariable [QEGVAR(breathing,tensionpneumothorax), false]);
+(_display displayCtrl 16103) cbSetChecked (_unit getVariable [QEGVAR(breathing,hemopneumothorax), [false, false]]);
+(_display displayCtrl 16104) cbSetChecked (_unit getVariable [QEGVAR(breathing,tensionpneumothorax), [false, false]]);
 
 private _fnc_onConfirm = {
     params [["_ctrlButtonOK", controlNull, [controlNull]]];
@@ -117,12 +117,23 @@ private _fnc_onConfirm = {
         };
 
         _unit setVariable [_x, _targetState, true];
-    } forEach [QEGVAR(airway,obstruction), QEGVAR(airway,occluded), QEGVAR(breathing,hemopneumothorax), QEGVAR(breathing,tensionpneumothorax)];
+    } forEach [QEGVAR(airway,obstruction), QEGVAR(airway,occluded)];
+
+    {
+        private _targetState = _valueArr select _forEachIndex;
+        private _currentState = _unit getVariable [_x, false];
+
+        if (!_initBreathing && (_targetState && !_currentState)) then {
+            _initBreathing = true;
+        };
+        private _targetArray = [_targetState, _targetState];
+        _unit setVariable [_x, _targetArray, true];
+    } forEach [QEGVAR(breathing,hemopneumothorax), QEGVAR(breathing,tensionpneumothorax)];
     
     private _curSpO2Val = GET_PAO2(_unit);    
     private _pneumothorax = round(sliderPosition (_display displayCtrl 16105));
-
-    _unit setVariable [QEGVAR(breathing,pneumothorax), _pneumothorax, true];
+    private _pneumothoraxArray = [_pneumothorax, _pneumothorax];
+    _unit setVariable [QEGVAR(breathing,pneumothorax), _pneumothoraxArray, true];
     private _o2Sat = round(sliderPosition (_display displayCtrl 16106)); 
 
     private _bloodGas = GET_BLOOD_GAS(_unit);
