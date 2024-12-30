@@ -19,11 +19,11 @@ params ["_patient"];
 TRACE_1("fullHealLocal",_patient);
 
 _patient setVariable [QGVAR(airwayStatus), 100, true];
-_patient setVariable [QGVAR(pneumothorax), 0, true];
-_patient setVariable [QGVAR(hemopneumothorax), false, true];
-_patient setVariable [QGVAR(tensionpneumothorax), false, true];
-_patient setVariable [QGVAR(activeChestSeal), false, true];
-_patient setVariable [QGVAR(deepPenetratingInjury), false, true];
+_patient setVariable [QGVAR(pneumothorax), [0, 0], true];
+_patient setVariable [QGVAR(hemopneumothorax), [false, false], true];
+_patient setVariable [QGVAR(tensionpneumothorax), [false, false], true];
+_patient setVariable [QGVAR(activeChestSeal), [false, false], true];
+_patient setVariable [QGVAR(deepPenetratingInjury), [false, false], true];
 _patient setVariable [QGVAR(etco2Monitor), [], true];
 _patient setVariable [QGVAR(breathRate), 15, true];
 _patient setVariable [QGVAR(nasalCannula), false, true];

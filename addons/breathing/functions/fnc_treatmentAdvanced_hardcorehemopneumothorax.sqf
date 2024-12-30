@@ -16,7 +16,7 @@
  * None
  *
  * Example:
- * [player, cursorObject, "Body", "HemopneumothoraxTreatment", objNull, "kat_aatKit"] call kat_breathing_fnc_treatmentAdvanced_hemopneumothorax;
+ * [player, cursorObject, "Body", "HemopneumothoraxTreatment", objNull, "kat_aatKit"] call kat_breathing_fnc_treatmentAdvanced_hardcorehemopneumothorax;
  *
  * Public: No
  */
@@ -26,4 +26,4 @@ params ["_medic", "_patient", "_bodyPart", "_classname", "", "_usedItem", "_side
 [_patient, _usedItem] call ACEFUNC(medical_treatment,addToTriageCard);
 [_patient, "activity", ACELSTRING(medical_treatment,Activity_usedItem), [[_medic] call ACEFUNC(common,getName), getText (configFile >> "CfgWeapons" >> _usedItem >> "displayName")]] call ACEFUNC(medical_treatment,addToLog);
 
-[QGVAR(hemopneumothoraxLocal), [_medic, _patient, _side], _patient] call CBA_fnc_targetEvent;
+[QGVAR(hardcorehemopneumothoraxLocal), [_medic, _patient, _side], _patient] call CBA_fnc_targetEvent;

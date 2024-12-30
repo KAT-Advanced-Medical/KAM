@@ -86,6 +86,17 @@ class ACEGVAR(medical_gui,BodyImage): RscControlsGroupNoScrollbars {
             text = QPATHTOF(data\body_image\torso_pneumothorax.paa);
             colorText[] = {1, 1, 1, 1};
         };
+        class Torso_RightPneumothorax: Torso_ChestSeal {
+            idc = IDC_BODY_TORSO_RIGHTPNEUMOTHORAX;
+            text = QPATHTOF(data\body_image\torso_rightpneumothorax.paa);
+            colorText[] = {1, 1, 1, 1};
+        };
+        class Torso_RightChestSeal: Torso_ChestSeal {
+            idc = IDC_BODY_TORSO_RIGHTCHESTSEAL;
+            text = QPATHTOF(data\body_image\torso_rightchestseal.paa);
+            colorText[] = {1, 0.95, 0, 1};
+            show = 0;
+        };
         class RightArm_IV: Torso_IO {
             idc = IDC_BODY_RIGHTARM_IV;
             text = QPATHTOF(data\body_image\rightarm_iv.paa);

@@ -23,25 +23,49 @@ private _ctrlPulseOximeterRight = _ctrlGroup controlsGroupCtrl IDC_BODY_RIGHTARM
 private _ctrlPulseOximeterLeft = _ctrlGroup controlsGroupCtrl IDC_BODY_LEFTARM_PULSEOX;
 private _ctrlChestSeal = _ctrlGroup controlsGroupCtrl IDC_BODY_TORSO_CHESTSEAL;
 private _ctrlChestInjury = _ctrlGroup controlsGroupCtrl IDC_BODY_TORSO_PNEUMOTHORAX;
+private _ctrlRightChestSeal = _ctrlGroup controlsGroupCtrl IDC_BODY_TORSO_RIGHTCHESTSEAL;
+private _ctrlRightChestInjury = _ctrlGroup controlsGroupCtrl IDC_BODY_TORSO_RIGHTPNEUMOTHORAX;
 private _ctrlNasalCannula = _ctrlGroup controlsGroupCtrl IDC_BODY_HEAD_NASAL;
 
-if (_target getVariable [QGVAR(activeChestSeal), false]) then {
+private _pneumothoraxState = _target getVariable [QGVAR(pneumothorax), [0, 0]];
+private _activeChestSeal = _target getVariable [QGVAR(activeChestSeal), [false, false]];
+private _deepPenetratingInjury = _target getVariable [QGVAR(deepPenetratingInjury), [false, false]];
+
+
+if (_activeChestSeal select 0) then {
     _ctrlChestSeal ctrlShow true;
 } else {
     _ctrlChestSeal ctrlShow false;
 };
 
+if (_activeChestSeal select 1) then {
+    _ctrlRightChestSeal ctrlShow true;
+} else {
+    _ctrlRightChestSeal ctrlShow false;
+};
+
+//Check pneumothorax and injuries
 if (GVAR(PneumothoraxAlwaysVisible)) then {
-    if(_target getVariable [QGVAR(pneumothorax), 0] > 0) then {
+    if (_pneumothoraxState select 0 > 0) then {
         _ctrlChestInjury ctrlShow true;
     } else {
         _ctrlChestInjury ctrlShow false;
     };
+    if (_pneumothoraxState select 1 > 0) then {
+        _ctrlRightChestInjury ctrlShow true;
+    } else {
+        _ctrlRightChestInjury ctrlShow false;
+    };
 } else {
-    if (_target getVariable [QGVAR(deepPenetratingInjury), false] || (_target getVariable [QGVAR(pneumothorax), 0] > 0)) then {
+    if ((_deepPenetratingInjury select 0) || (_pneumothoraxState select 0 > 0)) then {
         _ctrlChestInjury ctrlShow true;
     } else {
         _ctrlChestInjury ctrlShow false;
+    };
+    if ((_deepPenetratingInjury select 1) || (_pneumothoraxState select 1 > 0)) then {
+        _ctrlRightChestInjury ctrlShow true;
+    } else {
+        _ctrlRightChestInjury ctrlShow false;
     };
 };
 

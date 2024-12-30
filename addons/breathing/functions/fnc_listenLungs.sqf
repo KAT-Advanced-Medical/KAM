@@ -16,7 +16,7 @@
  * Public: No
  */
 
-params ["_medic","_patient"];
+params ["_medic","_patient","_side"];
 
 if (GET_HEART_RATE(_patient) isEqualTo 0) exitWith {};
 
@@ -34,8 +34,8 @@ variantDelay = 0;
         [_idPFH] call CBA_fnc_removePerFrameHandler;
     };
 
-    private _tension = (_patient getVariable [QGVAR(tensionpneumothorax), false] || (_patient getVariable [QGVAR(pneumothorax), 0] > 0));
-    private _hemo = _patient getVariable [QGVAR(hemopneumothorax), false];
+    private _tension = (_patient getVariable [QGVAR(tensionpneumothorax), [false, false]] select _side || (_patient getVariable [QGVAR(pneumothorax), [0,0] select _side] > 0));
+    private _hemo = _patient getVariable [QGVAR(hemopneumothorax), [false, false]] select _side;
 
     _breathDelay = 20/_HR;
 

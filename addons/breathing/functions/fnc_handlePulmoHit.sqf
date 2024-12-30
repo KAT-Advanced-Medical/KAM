@@ -33,24 +33,26 @@ if (GVAR(pneumothoraxDamageThreshold_TakenDamage)) then {
 };
 
 if (floor (random 100) < (GVAR(pneumothoraxChance) + _chanceIncrease)) then {
-    if (_unit getVariable [QGVAR(pneumothorax), 0] isEqualTo 0 && !(_unit getVariable [QGVAR(tensionpneumothorax), false])) then { // Initial pneumothorax
-        // add breathing sound
+    private _pneumothoraxState = _unit getVariable [QGVAR(pneumothorax), [0, 0]];
+    private _tensionState = _unit getVariable [QGVAR(tensionpneumothorax), [false, false]];
+    private _side = selectRandom [0, 1];
+
+    if (_pneumothoraxState select _side isEqualTo 0 && !(_tensionState select _side)) then { 
         [_unit, 0.2] call ACEFUNC(medical_status,adjustPainLevel);
-        _unit setVariable [QGVAR(pneumothorax), 1, true];
+        _pneumothoraxState set [_side, 1];
+        _unit setVariable [QGVAR(pneumothorax), _pneumothoraxState, true];
         _unit setVariable [QGVAR(deepPenetratingInjury), true, true];
         _unit setVariable [QGVAR(activeChestSeal), false, true];
 
-        // Start deteriorating after delay
-        [_unit, _chanceIncrease] call FUNC(handlePneumothoraxDeterioration);
+        [_unit, _chanceIncrease, _side] call FUNC(handlePneumothoraxDeterioration);
     } else {
-        if (_unit getVariable [QGVAR(tensionpneumothorax), false]) then { // If already afflicted with tensionpneumothorax -> fully deteriorate pneumothorax
-            _unit setVariable [QGVAR(pneumothorax), 4, true];
+        if (_tensionState select _side) then {
+            _pneumothoraxState set [_side, 4];
+            _unit setVariable [QGVAR(pneumothorax), _pneumothoraxState, true];
             _unit setVariable [QGVAR(activeChestSeal), false, true];
-
         } else {
             if (GVAR(advPtxEnable)) then {
-                // Roll chance to get advanced pneumothorax while afflicted with early stage of pneumothorax
-                [_unit, _chanceIncrease] call FUNC(inflictAdvancedPneumothorax);
+                [_unit, _chanceIncrease, _side] call FUNC(inflictAdvancedPneumothorax);
             };
         };
     };

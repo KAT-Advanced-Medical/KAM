@@ -21,54 +21,68 @@ params ["_unit", "_chanceIncrease"];
 [{
     params ["_unit", "_chanceIncrease"];
 
-    if (_unit getVariable [QGVAR(pneumothorax), 0] > 0) then {
+    private _pneumothoraxState = _unit getVariable [QGVAR(pneumothorax), [0, 0]]; // Default: [0, 0] for both sides
+
+    if ((_pneumothoraxState select 0 > 0) || (_pneumothoraxState select 1 > 0)) then {
         // Try to deteriorate at set interval
         [{
+
             params ["_args", "_idPFH"];
             _args params ["_unit", "_chanceIncrease"];
 
+            private _pneumothoraxState = _unit getVariable [QGVAR(pneumothorax), [0, 0]];
+            private _tensionState = _unit getVariable [QGVAR(tensionpneumothorax), [false, false]];
             private _breathing = !(_unit getVariable [QEGVAR(airway,occluded), false]) && !(_unit getVariable [QEGVAR(airway,obstruction), false]) && (GET_HEART_RATE(_unit) > 20);
+            {
+                params ["_side"];
+                if (_pneumothoraxState select _side > 0) then {
+                    // If patient is dead, treated, or already deteriorated to advanced pneumothorax, kill the PFH
+                    if (_unit getVariable [QGVAR(hemopneumothorax), [false, false] select _side] ||
+                        (_tensionState select _side) ||
+                        !(alive _unit) ||
+                        (_pneumothoraxState select _side isEqualTo 0)) exitWith {
+                        [_idPFH] call CBA_fnc_removePerFrameHandler;
+                    };
 
-            // If patient is dead, already treated or has already deteriorated into advanced pneumothorax, kill the PFH
-            if (_unit getVariable [QGVAR(hemopneumothorax), false] || _unit getVariable [QGVAR(tensionpneumothorax), false] || !(alive _unit) || _unit getVariable [QGVAR(pneumothorax), 0] isEqualTo 0) exitWith {
-                [_idPFH] call CBA_fnc_removePerFrameHandler;
-            };
-            if (floor (random 100) < GVAR(deterioratingPneumothorax_chance) && _breathing) then {
-                private _ptxTarget = (_unit getVariable [QGVAR(pneumothorax), 0]) + 1;
-                // Once deteriorated far enough try to inflict advanced pneumothorax or if disabled kill the PFH
-                if (_ptxTarget > 4) exitWith {
+                    if (floor (random 100) < GVAR(deterioratingPneumothorax_chance) && _breathing) then {
+                        private _ptxTarget = (_pneumothoraxState select _side) + 1;
 
-                    if (GVAR(PneumothoraxArrest)) then {
-                        [{
-                            params ["_args", "_idPFH"];
-                            _args params ["_unit"];
+                        if (_ptxTarget > 4) exitWith {
 
-                            if ((_unit getVariable [QGVAR(pneumothorax), 0]) == 4) then {
-                                private _ht = _unit getVariable [QEGVAR(circulation,ht), []];
-                                if ((_ht findIf {_x isEqualTo "tension"}) == -1) then {
-                                    _ht pushBack "tension";
+                            if (GVAR(PneumothoraxArrest)) then {
+                                [{
 
-                                    if (_unit getVariable [QEGVAR(circulation,cardiacArrestType), 0] == 0) then {
-                                        [QACEGVAR(medical,FatalVitals), _unit] call CBA_fnc_localEvent;
+                                    params ["_args", "_idPFH"];
+                                    _args params ["_unit", "_side"];
+
+                                    if ((_unit getVariable [QGVAR(pneumothorax), [0, 0]] select _side) == 4) then {
+                                        private _ht = _unit getVariable [QEGVAR(circulation,ht), []];
+                                        if ((_ht findIf {_x isEqualTo "tension"}) == -1) then {
+                                            _ht pushBack "tension";
+
+                                            if (_unit getVariable [QEGVAR(circulation,cardiacArrestType), 0] == 0) then {
+                                                [QACEGVAR(medical,FatalVitals), _unit] call CBA_fnc_localEvent;
+                                            };
+
+                                            _unit setVariable [QEGVAR(circulation,ht), _ht, true];
+                                        };
                                     };
-
-                                    _unit setVariable [QEGVAR(circulation,ht), _ht, true];
-                                };
+                                }, [_unit, _side], GVAR(arrestPneumothorax_interval)] call CBA_fnc_waitAndExecute;
                             };
-                        }, [_unit], GVAR(arrestPneumothorax_interval)] call CBA_fnc_waitAndExecute;
-                    };
 
-                    if (GVAR(advPtxEnable)) then {
-                        [_unit, _chanceIncrease, true] call FUNC(inflictAdvancedPneumothorax);
-                    };
+                            if (GVAR(advPtxEnable)) then {
+                                [_unit, _chanceIncrease, true, _side] call FUNC(inflictAdvancedPneumothorax);
+                            };
 
-                    [_idPFH] call CBA_fnc_removePerFrameHandler;
+                            [_idPFH] call CBA_fnc_removePerFrameHandler;
+                        };
+                        _pneumothoraxState set [_side, _ptxTarget];
+                        _unit setVariable [QGVAR(pneumothorax), _pneumothoraxState, true];
+                        [_unit, 0.5 * (_ptxTarget / 4)] call ACEFUNC(medical_status,adjustPainLevel);
+                        [_unit, -12, -12, format ["ptx_tension_%1", _side]] call EFUNC(circulation,updateBloodPressureChange);
+                    };
                 };
-                
-                _unit setVariable [QGVAR(pneumothorax), _ptxTarget, true];
-                [_unit, 0.5 * (_ptxTarget / 4)] call ACEFUNC(medical_status,adjustPainLevel); // Adjust pain based on severity
-                [_unit, -12, -12, "ptx_tension"] call EFUNC(circulation,updateBloodPressureChange); // Simulate low blood pressure and high heart rate caused by pneumothorax
-            };
+            } forEach [0, 1];
         }, GVAR(deterioratingPneumothorax_interval), [_unit, _chanceIncrease]] call CBA_fnc_addPerFrameHandler;
     };
 }, [_unit, _chanceIncrease], GVAR(deterioratingPneumothorax_interval)] call CBA_fnc_waitAndExecute;

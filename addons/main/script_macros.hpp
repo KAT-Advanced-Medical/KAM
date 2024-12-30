@@ -300,7 +300,8 @@
 
 // Breathing
 #define VAR_SURFACE_AREA                400
-#define GET_KAT_SURFACE_AREA(unit)      (VAR_SURFACE_AREA - (((unit getVariable [QEGVAR(breathing,pneumothorax), 0]) * 75)))
+#define GET_KAT_SURFACE_AREA(unit)      (VAR_SURFACE_AREA - (((unit getVariable [QEGVAR(breathing,pneumothorax), [0, 0]] select 0) * 40) + ((unit getVariable [QEGVAR(breathing,pneumothorax), [0, 0]] select 1) * 40)))
+
 
 #define VAR_BLOOD_GAS                  QEGVAR(circulation,bloodGas)
 #define VAR_BREATHING_RATE             QEGVAR(breathing,breathRate)

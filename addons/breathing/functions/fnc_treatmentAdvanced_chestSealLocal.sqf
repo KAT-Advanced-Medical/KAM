@@ -16,18 +16,32 @@
  * Public: No
  */
 
-params ["_medic", "_patient"];
+params ["_medic", "_patient", "_side"];
 
 if (GVAR(clearChestSealAfterTreatment)) then {
-    if (_patient getVariable [QGVAR(hemopneumothorax), false] || _patient getVariable [QGVAR(tensionpneumothorax), false]) then {
-        _patient setVariable [QGVAR(activeChestSeal), true, true];
+    private _hemopneumothorax = _patient getVariable [QGVAR(hemopneumothorax), [false, false]];
+    private _tensionpneumothorax = _patient getVariable [QGVAR(tensionpneumothorax), [false, false]];
+    private _activeChestSeal = _patient getVariable [QGVAR(activeChestSeal), [false, false]];
+
+    if ((_hemopneumothorax select _side) || (_tensionpneumothorax select _side)) then {
+        _activeChestSeal set [_side, true];
+        _patient setVariable [QGVAR(activeChestSeal), _activeChestSeal, true];
     };
 } else {
-    _patient setVariable [QGVAR(activeChestSeal), true, true];
+    private _activeChestSeal = _patient getVariable [QGVAR(activeChestSeal), [false, false]];
+    _activeChestSeal set [_side, true];
+    _patient setVariable [QGVAR(activeChestSeal), _activeChestSeal, true];
 };
-_patient setVariable [QGVAR(deepPenetratingInjury), false, true];
-_patient setVariable [QGVAR(pneumothorax), 0, true];
 
-if (!(_patient getVariable [QGVAR(hemopneumothorax), false]) && !(_patient getVariable [QGVAR(tensionpneumothorax), false])) then {
-    [_patient, 0, 0, "ptx_tension", true] call EFUNC(circulation,updateBloodPressureChange);
+private _deepPenetratingInjury = _patient getVariable [QGVAR(deepPenetratingInjury), [false, false]];
+private _pneumothorax = _patient getVariable [QGVAR(pneumothorax), [0, 0]];
+
+_deepPenetratingInjury set [_side, false];
+_pneumothorax set [_side, 0];
+
+_patient setVariable [QGVAR(deepPenetratingInjury), _deepPenetratingInjury, true];
+_patient setVariable [QGVAR(pneumothorax), _pneumothorax, true];
+
+if (!(_patient getVariable [QGVAR(hemopneumothorax), [false, false]] select _side) && !(_patient getVariable [QGVAR(tensionpneumothorax), [false, false]] select _side)) then {
+    [_patient, 0, 0, format ["ptx_tension_%1", _side], true] call EFUNC(circulation,updateBloodPressureChange);
 };

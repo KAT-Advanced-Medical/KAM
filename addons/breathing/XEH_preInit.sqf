@@ -567,4 +567,22 @@ PREP_RECOMPILE_END;
     true
 ] call CBA_settings_fnc_init;
 
+[
+    QGVAR(medLvl_FingerThoracostomyTreatment),
+    "LIST",
+    LLSTRING(SETTING_FingerThoracostomyTreatment_medLvl),
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_ThoraxInjuries)],
+    [[0, 1, 2], ["STR_ACE_Medical_Treatment_Anyone", "STR_ACE_Medical_Treatment_Medics", "STR_ACE_Medical_Treatment_Doctors"], 0],
+    true
+] call CBA_settings_fnc_init;
+
+[
+    QGVAR(hardcoreBreathingTreatment),
+    "CHECKBOX",
+    [LLSTRING(SETTING_hardcoreBreathingTreatment),LLSTRING(SETTING_hardcoreBreathingTreatment_DESC)],
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_ThoraxInjuries)],
+    [true],
+    true
+] call CBA_Settings_fnc_init;
+
 ADDON = true;

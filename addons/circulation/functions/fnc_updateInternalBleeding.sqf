@@ -23,7 +23,7 @@ private _alphaAction = GET_VASOCONSTRICTION(_unit);
 private _internalBleeding = 0;
 
 if !(_heal) then {
-    if (_unit getVariable [QEGVAR(breathing,hemopneumothorax), false]) then {
+    if ((_unit getVariable [QGVAR(hemopneumothorax), [false, false]] select 0) || (_unit getVariable [QGVAR(hemopneumothorax), [false, false]] select 1)) then {
         _internalBleeding = _internalBleeding + EGVAR(breathing,HPTXBleedAmount);
     };
 };

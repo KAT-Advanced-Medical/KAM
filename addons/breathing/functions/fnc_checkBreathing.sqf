@@ -28,7 +28,7 @@ private _breathing = LLSTRING(breathing_isNormal);
 private _breathing_log = localize ACELSTRING(medical_treatment,Check_Pulse_Normal);
 private _breath = "";
 
-if ((_patient getVariable [QGVAR(pneumothorax), 0] > 0) || (_patient getVariable [QEGVAR(chemical,airPoisoning), false])) then {
+if ((_patient getVariable [QGVAR(pneumothorax), [0, 0]] select 0 > 0) || (_patient getVariable [QGVAR(pneumothorax), [0, 0]] select 1 > 0) || (_patient getVariable [QEGVAR(chemical,airPoisoning), false])) then {
     _breathing = LLSTRING(breathing_isShallow);
     _breathing_log = LLSTRING(breathing_shallow);
 };
@@ -45,7 +45,7 @@ _output = format ["%1%2", _breathing ,_breath];
 _output_log = format ["%1%2", _breathing_log, _breath];
 
 
-if (_hr == 0 || !(alive _patient) || (_patient getVariable [QEGVAR(airway,obstruction), false] && !(_patient getVariable [QEGVAR(airway,overstretch), false])) || _patient getVariable [QEGVAR(airway,occluded), false] || _patient getVariable [QGVAR(hemopneumothorax), false] || _patient getVariable [QGVAR(tensionpneumothorax), false]) then {
+if (_hr == 0 || !(alive _patient) || (_patient getVariable [QEGVAR(airway,obstruction), false] && !(_patient getVariable [QEGVAR(airway,overstretch), false])) || _patient getVariable [QEGVAR(airway,occluded), false] || (_patient getVariable [QGVAR(tensionpneumothorax), [false, false]] select 0) || (_patient getVariable [QGVAR(tensionpneumothorax), [false, false]] select 1) ||(_patient getVariable [QGVAR(hemopneumothorax), [false, false]] select 0) || (_patient getVariable [QGVAR(hemopneumothorax), [false, false]] select 1)) then {
     _output = LLSTRING(breathing_none);
     _output_log = ACELSTRING(medical_treatment,Check_Pulse_None);
 };
