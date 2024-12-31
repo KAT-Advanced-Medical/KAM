@@ -19,16 +19,25 @@
 
 params ["_medic", "_patient", "_side"];
 
-if (GVAR(Surgery_ConsciousnessRequirement) == 1 && !(IS_UNCONSCIOUS(_patient))) exitWith {
-    private _output = LLSTRING(fracture_fail);
+if (GVAR(SchestTube_ConsciousnessRequirement) == 1 && !(IS_UNCONSCIOUS(_patient))) exitWith {
+    private _output = LLSTRING(chestTube_fail);
     [_output, 1.5, _medic] call ACEFUNC(common,displayTextStructured);
+};
+private _lidocaineCount = [_patient, "Lidocaine", false] call ACEFUNC(medical_status,getMedicationCount);
+private _morphineCount = [_patient, "Morphine", false] call ACEFUNC(medical_status,getMedicationCount);
+private _nalbuphineCount = [_patient, "Nalbuphine", false] call ACEFUNC(medical_status,getMedicationCount);
+private _fentanylCount = [_patient, "Fentanyl", false] call ACEFUNC(medical_status,getMedicationCount);
+private _ketamineCount = [_patient, "Ketamine", false] call ACEFUNC(medical_status,getMedicationCount);
+if ((_lidocaineCount <=  0.6 && _morphineCount <=  0.8 && _nalbuphineCount <=  0.8 && _fentanylCount <=  0.8 && _ketamineCount <=  0.8) || !IS_UNCONSCIOUS(_patient)) then {
+    private _pain = random [0.7, 0.8, 0.9];
+    [_patient, _pain] call ACEFUNC(medical_status,adjustPainLevel);
 };
 
 private _chestTubeArray = _patient getVariable [QGVAR(chestTube), [0,0]];
 private _liveTube = _chestTubeArray select _side;
 
 _liveTube = _liveTube + 0.1;
-_chestTubeArray set [_part, _liveTube];
+_chestTubeArray set [_side, _liveTube];
 _patient setVariable [QGVAR(chestTube), _chestTubeArray, true];
 
 [_patient, false] call ACEFUNC(dragging,setCarryable);
@@ -38,10 +47,10 @@ _patient setVariable [QGVAR(chestTube), _chestTubeArray, true];
 
 [{
     params ["_args", "_idPFH"];
-    _args params ["_patient", "_part"];
+    _args params ["_patient", "_side"];
 
     private _chestTubeArray = _patient getVariable [QGVAR(chestTube), [0,0]];
-    private _liveTube = _chestTubeArray select _part;
+    private _liveTube = _chestTubeArray select _side;
     private _count = [_patient, "Etomidate", true] call ACEFUNC(medical_status,getMedicationCount);
 
     private _alive = alive _patient;
@@ -64,5 +73,5 @@ _patient setVariable [QGVAR(chestTube), _chestTubeArray, true];
             _patient setVariable [QGVAR(etomidate_Pain), true]
         };
     };
-}, 5, [_patient, _part]] call CBA_fnc_addPerFrameHandler;
+}, 5, [_patient, _side]] call CBA_fnc_addPerFrameHandler;
 

@@ -595,7 +595,7 @@ PREP_RECOMPILE_END;
 ] call CBA_Settings_fnc_init;
 
 [
-    QGVAR(intermediateTime),
+    QGVAR(ChestTubeintermediateTime),
     "SLIDER",
     [LLSTRING(INTERMEDIATE_TIMER), LLSTRING(INTERMEDIATE_TIMER_DESC)],
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_ThoraxInjuries)],

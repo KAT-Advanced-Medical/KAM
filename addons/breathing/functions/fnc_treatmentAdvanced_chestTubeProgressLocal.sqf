@@ -13,7 +13,7 @@
  * None
  *
  * Example:
- * [player, cursorObject, 2.1, 1] call kat_surgery_fnc_chestTubeProgressLocal;
+ * [player, cursorObject, 2.1, 1] call kat_breathing_fnc_chestTubeProgressLocal;
  *
  * Public: No
  */
@@ -24,20 +24,28 @@ private _chestTubeArray = _patient getVariable [QGVAR(chestTube), [0,0]];
 private _liveTube = _chestTubeArray select _side;
 private _surgeryString = "";
 private _number = _entry;
-private _reduce = false;
-private _subReduce = false;
+
+private _lidocaineCount = [_patient, "Lidocaine", false] call ACEFUNC(medical_status,getMedicationCount);
+private _morphineCount = [_patient, "Morphine", false] call ACEFUNC(medical_status,getMedicationCount);
+private _nalbuphineCount = [_patient, "Nalbuphine", false] call ACEFUNC(medical_status,getMedicationCount);
+private _fentanylCount = [_patient, "Fentanyl", false] call ACEFUNC(medical_status,getMedicationCount);
+private _ketamineCount = [_patient, "Ketamine", false] call ACEFUNC(medical_status,getMedicationCount);
+if ((_lidocaineCount <=  0.6 && _morphineCount <=  0.8 && _nalbuphineCount <=  0.8 && _fentanylCount <=  0.8 && _ketamineCount <=  0.8) || !IS_UNCONSCIOUS(_patient)) then {
+    private _pain = random [0.7, 0.8, 0.9];
+    [_patient, _pain] call ACEFUNC(medical_status,adjustPainLevel);
+};
 
 if (_number == _liveTube) exitWith {
     switch (_entry) do {
-        case (2.1):{
-            _surgeryString = LSTRING(EXPOSED);
+        case (0.1):{
+            _surgeryString = LSTRING(SPREAD);
         };
-        case (2.3):{
-            _surgeryString = LSTRING(IRRIGATED);
+        case (0.3):{
+            _surgeryString = LSTRING(PREPARED);
         };
     };
 
-    [_patient, "quick_view", LSTRING(surgery_log), [[_medic] call ACEFUNC(common,getName), _surgeryString, STRING_BODY_PARTS select 1]] call ACEFUNC(medical_treatment,addToLog);
+    [_patient, "quick_view", LSTRING(ChestTube_log), [[_medic] call ACEFUNC(common,getName), _surgeryString, STRING_BODY_PARTS select 1]] call ACEFUNC(medical_treatment,addToLog);
 
     _liveTube = _liveTube + 0.2;
 
@@ -45,5 +53,5 @@ if (_number == _liveTube) exitWith {
     _patient setVariable [QGVAR(chestTube), _chestTubeArray, true];
 };
 
-private _output = LLSTRING(fracture_fail);
+private _output = LLSTRING(chest_tube_fail);
 [_output, 1.5, _medic] call ACEFUNC(common,displayTextStructured);

@@ -3013,17 +3013,17 @@
         <Key ID="STR_KAT_Breathing_SETTING_hardcoreBreathingTreatment">
             <English>Activate Hardcore Treatment options</English>
         </Key>
-        <Key ID="STR_KAT_Breathing_SETTING_ENABLE_DESC">
+        <Key ID="STR_KAT_Breathing_SETTING_hardcoreBreathingTreatment_DESC">
             <English>Enables hardcore treatments including finger thoracostomies</English>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_FingerThoracostomyTreatment_medLvl">
             <English>Allow Finger Thoracostomies</English>
         </Key>
-        <Key ID="STR_KAT_Breathing_Breathing_log">
-            <English>%1 %2 the fracture on the %3 side</English>
+        <Key ID="STR_KAT_Breathing_ChestTube_log">
+            <English>%1 %2 the incision</English>
         </Key>
         <Key ID="STR_KAT_Breathing_incision_log">
-            <English>%1 made an chest incision on the %2 side</English>
+            <English>%1 made an chest incision</English>
         </Key>
         <Key ID="STR_KAT_Breathing_chest_tube_fail">
             <English>Chest Tube Action Failed</English>
@@ -3064,14 +3064,11 @@
         <Key ID="STR_KAT_Breathing_Chest_Tube_Action">
             <English>Placing Chest Tube</English>
         </Key>
-        <Key ID="STR_KAT_Breathing_EXPOSED">
-            <English>exposed</English>
+        <Key ID="STR_KAT_Breathing_SPREAD">
+            <English>Spread</English>
         </Key>
-        <Key ID="STR_KAT_Breathing_IRRIGATED">
-            <English>irrigated</English>
-        </Key>
-        <Key ID="STR_KAT_Breathing_CLAMPED">
-            <English>clamped</English>
+        <Key ID="STR_KAT_Breathing_PREPARED">
+            <English>Prepared</English>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_ConsciousnessRequirement">
             <English>Chest Tube Consciousness Controls</English>

@@ -34,8 +34,6 @@ PREP(treatmentAdvanced_chestTubeProgress);
 PREP(treatmentAdvanced_chestTubeProgressLocal);
 PREP(treatmentAdvanced_fingerThoracostomy);
 PREP(treatmentAdvanced_fingerThoracostomyLocal);
-PREP(treatmentAdvanced_hardcorehemopneumothorax);
-PREP(treatmentAdvanced_hardcorehemopneumothoraxLocal);
 PREP(treatmentAdvanced_hemopneumothorax);
 PREP(treatmentAdvanced_hemopneumothoraxLocal);
 PREP(treatmentAdvanced_nasalCannula);
