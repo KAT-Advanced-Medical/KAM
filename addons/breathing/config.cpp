@@ -48,3 +48,4 @@ class CfgPatches {
 #include "CfgVehicles.hpp"
 #include "ACE_Medical_Treatment_Actions.hpp"
 #include "CfgSounds.hpp"
+#include "CfgGlasses.hpp"
