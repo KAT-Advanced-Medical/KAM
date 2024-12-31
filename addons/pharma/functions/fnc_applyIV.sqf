@@ -41,7 +41,7 @@ if (_IVpfhActual > 0) then {
 };
 switch (_usedItem) do {
     case "kat_IV_16": {
-        if (random 100 < QGVAR(IVFailures)) then {
+        if (random 100 < GVAR(IVFailures)) then {
             [_patient, [0.2, 0.3, 0.4] select (floor random 3)] call ACEFUNC(medical_status,adjustPainLevel);
         } else {
         _IVarray set [_partIndex, 2];
@@ -52,7 +52,7 @@ switch (_usedItem) do {
         [_patient, "16g IV"] call ACEFUNC(medical_treatment,addToTriageCard);};};
         
     case "kat_IV_14": {
-        if (random 100 < QGVAR(IVFailures)) then {
+        if (random 100 < GVAR(IVFailures)) then {
             [_patient, [0.2, 0.3, 0.4] select (floor random 3)] call ACEFUNC(medical_status,adjustPainLevel);
         } else {     
         _IVarray set [_partIndex, 3];
@@ -63,7 +63,7 @@ switch (_usedItem) do {
         [_patient, "14g IV"] call ACEFUNC(medical_treatment,addToTriageCard);};};
 
     case "kat_IV_20": {
-        if (random 100 < QGVAR(IVFailures)) then {
+        if (random 100 < GVAR(IVFailures)) then {
             [_patient, [0.2, 0.3, 0.4] select (floor random 3)] call ACEFUNC(medical_status,adjustPainLevel);
         } else {      
         _IVarray set [_partIndex, 4];
