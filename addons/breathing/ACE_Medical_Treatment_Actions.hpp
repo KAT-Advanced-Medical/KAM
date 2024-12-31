@@ -198,7 +198,6 @@ class ACE_Medical_Treatment_Actions {
         treatmentTime = 7;
         condition = "!GVAR(hardcoreBreathingTreatment)";
         items[] = {"kat_aatKit"};
-        condition = "true";
         callbackSuccess = QUOTE([ARR_2(_medic,_patient)] call EFUNC(airway,handleRecoveryPosition); [ARR_7(_medic,_patient,_bodyPart,_className,objNull,_usedItem,0)] call FUNC(treatmentAdvanced_tensionpneumothorax););
         callbackFailure = "";
         callbackProgress = "";
@@ -394,12 +393,12 @@ class ACE_Medical_Treatment_Actions {
         treatmentTime = QGVAR(incisionTime);
         items[] = {"kat_scalpel"};
         condition = QUOTE(([ARR_4(_medic,_patient,5,0)] call FUNC(treatmentAdvanced_chestTubeCheck)) && (GVAR(hardcoreBreathingTreatment)));
-        callbackSuccess = QUOTE([ARR_3(_medic,_patient,0)] call FUNC(treatmentAdvanced_chestTubeIncision);
+        callbackSuccess = QUOTE([ARR_3(_medic,_patient,0)] call FUNC(treatmentAdvanced_chestTubeIncision));
     };
     class RightIncision: BasicBandage {
         displayName = CSTRING(ScalpelRight_Use);
         condition = QUOTE(([ARR_4(_medic,_patient,5,1)] call FUNC(treatmentAdvanced_chestTubeCheck)) && (GVAR(hardcoreBreathingTreatment)));
-        callbackSuccess = QUOTE([ARR_3(_medic,_patient,1)] call FUNC(treatmentAdvanced_chestTubeIncision);
+        callbackSuccess = QUOTE([ARR_3(_medic,_patient,1)] call FUNC(treatmentAdvanced_chestTubeIncision));
     };
     class Spread: Incision {
         displayName = CSTRING(Retractor_Use);
