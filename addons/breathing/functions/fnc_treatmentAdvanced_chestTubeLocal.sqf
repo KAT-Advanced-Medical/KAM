@@ -17,11 +17,10 @@
  * Public: No
  */
 
-params ["_medic", "_patient", "_bodyPart", "_side"];
-
+params ["_medic", "_patient", "_side"];
 private _chestTubeArray = _patient getVariable [QGVAR(chestTube), [0,0]];
 private _liveChestTube = _chestTubeArray select _side;
-systemChat str _liveChestTube;
+
 if (_liveChestTube == 0.5)  exitWith {
     _liveChestTube = 0;
 
