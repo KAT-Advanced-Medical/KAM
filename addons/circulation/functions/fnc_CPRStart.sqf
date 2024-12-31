@@ -142,7 +142,9 @@ if (_notInVehicle) then {
 
             // Format time to minutes:seconds
             private _CPRTime = CBA_missionTime - _CPRStartTime;
-            private _time = format ["%1:%2",(["", "0"] select (floor _CPRTime / 3600 - floor _CPRTime / 3600 * 60 < 10)) + str (floor(((_CPRTime/3600) - floor(_CPRTime/3600)) * 60)), (["", "0"] select (floor _CPRTime / 60 - floor _CPRTime / 60 * 60 < 10)) + str (floor(((_CPRTime/60) - floor(_CPRTime/60)) * 60))];
+            private _minutes = floor (_CPRTime / 60);
+            private _seconds = floor (_CPRTime % 60);
+            private _time = format ["%1:%2", [_minutes, 2] call CBA_fnc_formatNumber, [_seconds, 2] call CBA_fnc_formatNumber];
 
             [_patient, "activity", LSTRING(Activity_CPR), [[_medic, false, true] call ACEFUNC(common,getName), _time]] call ACEFUNC(medical_treatment,addToLog);
 
