@@ -41,7 +41,7 @@ switch (_AEDOrigin) do {
     };
     case 2: {
         if !(isNull objectParent _patient) then {
-            _condition = !((itemCargo objectParent _patient) findIf {_x isEqualTo _AEDClassname} isEqualTo -1);
+            _condition = ((itemCargo objectParent _patient) findIf {_x isEqualTo _AEDClassname} isNotEqualTo -1);
         };
     };
     default {

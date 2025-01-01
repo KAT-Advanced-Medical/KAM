@@ -23,7 +23,7 @@
 params ["_unit", "_allDamages", "", "_ammo"];
 _allDamages select 0 params ["_damage", "_bodyPart"];
 
-if (!(GVAR(enable)) || !(_bodyPart isEqualTo "Body") || !(_ammo isKindOf "BulletBase")) exitWith {};
+if (!(GVAR(enable)) || (_bodyPart isNotEqualTo "Body") || !(_ammo isKindOf "BulletBase")) exitWith {};
 //Other mods can utilise KAT_Pneumothorax_Exclusion variable to prevent Pneumothorax from happening
 if ((_damage < GVAR(pneumothoraxDamageThreshold)) || (_unit getVariable ["KAT_Pneumothorax_Exclusion", false])) exitWith {};
 

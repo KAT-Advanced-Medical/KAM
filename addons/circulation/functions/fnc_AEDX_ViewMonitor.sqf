@@ -79,7 +79,7 @@ GVAR(PulseRateReady) = true;
 
     private _pads = false;
 
-    if !(GVAR(AEDX_MonitorTarget) isEqualTo objNull) then {
+    if (GVAR(AEDX_MonitorTarget) isNotEqualTo objNull) then {
         _pads = GVAR(AEDX_MonitorTarget) getVariable [QGVAR(DefibrillatorPads_Connected), false];
     };
 
@@ -90,7 +90,7 @@ GVAR(PulseRateReady) = true;
         ctrlSetText [IDC_EKG_DISPLAY_MIDTEXT, ""];
         private _ekgDisplay = QPATHTOF(ui\ekg_off.paa);
 
-        if !(GVAR(AEDX_MonitorTarget) getVariable [QACEGVAR(medical,CPR_provider), objNull] isEqualTo objNull) then {
+        if (GVAR(AEDX_MonitorTarget) getVariable [QACEGVAR(medical,CPR_provider), objNull] isNotEqualTo objNull) then {
             _ekgDisplay = QPATHTOF(ui\ekg_cpr.paa);
         } else {
             if (!(GVAR(AEDX_MonitorTarget) getVariable [QGVAR(heartRestart), false]) && alive GVAR(AEDX_MonitorTarget)) then {
@@ -213,7 +213,7 @@ GVAR(PulseRateReady) = true;
     private _pads = false;
     private _vitalsMonitor = false;
 
-    if !(GVAR(AEDX_MonitorTarget) isEqualTo objNull) then {
+    if (GVAR(AEDX_MonitorTarget) isNotEqualTo objNull) then {
         _pads = GVAR(AEDX_MonitorTarget) getVariable [QGVAR(DefibrillatorPads_Connected), false];
         _vitalsMonitor = GVAR(AEDX_MonitorTarget) getVariable [QGVAR(AED_X_VitalsMonitor_Connected), false];
     };
@@ -235,7 +235,7 @@ GVAR(PulseRateReady) = true;
         ctrlSetText [IDC_DISPLAY_SPO2, "---"];
     };
 
-    if !(GVAR(AEDX_MonitorTarget) getVariable [QACEGVAR(medical,CPR_provider), objNull] isEqualTo objNull) then {
+    if (GVAR(AEDX_MonitorTarget) getVariable [QACEGVAR(medical,CPR_provider), objNull] isNotEqualTo objNull) then {
 
         private _rhythmHR = 0;
 

@@ -51,7 +51,7 @@ private _dlg = uiNamespace getVariable ["KAT_Circulation_AEDX_Monitor_Display", 
 
     private _pads = false;
 
-    if !(GVAR(AEDX_MonitorTarget_Title) isEqualTo objNull) then {
+    if (GVAR(AEDX_MonitorTarget_Title) isNotEqualTo objNull) then {
         _pads = GVAR(AEDX_MonitorTarget_Title) getVariable [QGVAR(DefibrillatorPads_Connected), false];
     };
 
@@ -62,7 +62,7 @@ private _dlg = uiNamespace getVariable ["KAT_Circulation_AEDX_Monitor_Display", 
         (_dlg displayCtrl IDC_EKG_DISPLAY_MIDTEXT_TITLE) ctrlSetText "";
         private _ekgDisplay = QPATHTOF(ui\ekg_off.paa);
 
-        if !(GVAR(AEDX_MonitorTarget_Title) getVariable [QACEGVAR(medical,CPR_provider), objNull] isEqualTo objNull) then {
+        if (GVAR(AEDX_MonitorTarget_Title) getVariable [QACEGVAR(medical,CPR_provider), objNull] isNotEqualTo objNull) then {
             _ekgDisplay = QPATHTOF(ui\ekg_cpr.paa);
         } else {
             if (!(GVAR(AEDX_MonitorTarget_Title) getVariable [QGVAR(heartRestart), false]) && alive GVAR(AEDX_MonitorTarget_Title)) then {
@@ -179,7 +179,7 @@ private _dlg = uiNamespace getVariable ["KAT_Circulation_AEDX_Monitor_Display", 
     private _pads = false;
     private _vitalsMonitor = false;
 
-    if !(GVAR(AEDX_MonitorTarget_Title) isEqualTo objNull) then {
+    if (GVAR(AEDX_MonitorTarget_Title) isNotEqualTo objNull) then {
         _pads = GVAR(AEDX_MonitorTarget_Title) getVariable [QGVAR(DefibrillatorPads_Connected), false];
         _vitalsMonitor = GVAR(AEDX_MonitorTarget_Title) getVariable [QGVAR(AED_X_VitalsMonitor_Connected), false];
     };
@@ -201,7 +201,7 @@ private _dlg = uiNamespace getVariable ["KAT_Circulation_AEDX_Monitor_Display", 
         (_dlg displayCtrl IDC_DISPLAY_SPO2_TITLE) ctrlSetText "---";
     };
 
-    if !(GVAR(AEDX_MonitorTarget_Title) getVariable [QACEGVAR(medical,CPR_provider), objNull] isEqualTo objNull) then {
+    if (GVAR(AEDX_MonitorTarget_Title) getVariable [QACEGVAR(medical,CPR_provider), objNull] isNotEqualTo objNull) then {
 
         private _rhythmHR = 0;
 

@@ -25,7 +25,7 @@ if (!(_unit getVariable [QEGVAR(breathing,PneumoBreathCooldownOn), false])) then
 
     private _soundTargets = allPlayers inAreaArray [ASLToAGL getPosASL _unit, 15, 15, 0, false, 15];
 
-    if !(_soundTargets isEqualTo []) then {
+    if (_soundTargets isNotEqualTo []) then {
         [QEGVAR(breathing,playCough), [_unit], _soundTargets] call CBA_fnc_targetEvent;
     };
 

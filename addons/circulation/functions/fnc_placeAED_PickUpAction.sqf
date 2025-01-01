@@ -36,7 +36,7 @@ _pickUpText,
     private _patient = _AED getVariable [QGVAR(Defibrillator_Patient), objNull];
 
 
-    if !(_patient isEqualTo objNull) then {
+    if (_patient isNotEqualTo objNull) then {
         [_medic, _patient, true] call FUNC(Defibrillator_RemovePads);
 
         [{
@@ -52,7 +52,7 @@ _pickUpText,
 
         private _patientMonitor = _AED getVariable [QGVAR(AED_X_VitalsMonitor_Patient), objNull];
 
-        if !(_patientMonitor isEqualTo objNull) then {
+        if (_patientMonitor isNotEqualTo objNull) then {
             private _monitorBodyPart = ALL_BODY_PARTS select ((_patientMonitor getVariable [QGVAR(AED_X_VitalsMonitor_Provider), [objNull, -1, 3]]) select 2);
 
             [_medic, _patientMonitor, true] call FUNC(AEDX_DisconnectVitalsMonitor);
