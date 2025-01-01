@@ -84,6 +84,7 @@ switch (_usedItem) do {
         private _ketamineEffectiveness = 0;
         private _nalbuphineEffectiveness = 0;
         private _morphineEffectiveness = 0;
+        private _lidocaineEffectiveness = 0;
         {
             private _medName = toLower (_x select 0);
             private _effectiveness = _x select 2;
