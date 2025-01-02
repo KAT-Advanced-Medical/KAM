@@ -1,7 +1,7 @@
 #include "..\script_component.hpp"
 /*
- * Author: Kygan, modified by YetheSamartaka and Tomcat.
- * Treatment for hemopneumothorax
+ * Author: Cplhardcore
+ * Treatment for hemopneumothorax/tensionPnumo
  * Main function
  *
  * Arguments:
@@ -28,11 +28,15 @@ if ((_lidocaineCount <=  0.6 && _morphineCount <=  0.8 && _nalbuphineCount <=  0
     private _pain = random [0.7, 0.8, 0.9];
     [_patient, _pain] call ACEFUNC(medical_status,adjustPainLevel);
 };
+if (random 100 <= 30) exitWith {};
 private _activeChestSeal = _patient getVariable [QGVAR(activeChestSeal), [false, false]];
 if (_activeChestSeal select _side) then {
     private _hemopneumothorax = _patient getVariable [QGVAR(hemopneumothorax), [false, false]];
     _hemopneumothorax set [_side, false];
     _patient setVariable [QGVAR(hemopneumothorax), _hemopneumothorax, true];
+    private _tensionPneumothorax = _patient getVariable [QGVAR(tensionPneumothorax), [false, false]];
+    _tensionPneumothorax set [_side, false];
+    _patient setVariable [QGVAR(tensionPneumothorax), _tensionPneumothorax, true];
 };
 
 private _ht = _patient getVariable [QEGVAR(circulation,ht), []];

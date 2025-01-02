@@ -13,7 +13,7 @@
  * Succesful treatment <BOOL>
  *
  * Example:
- * [player, cursorObject, 3.1, 1] call kat_surgery_fnc_chestTubeCheck
+ * [player, cursorObject, 3.1, 1] call kat_breathing_treatmentAdvanced_chestTubeCheck
  *
  * Public: No
  */

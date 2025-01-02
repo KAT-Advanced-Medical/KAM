@@ -1,6 +1,6 @@
 #include "..\script_component.hpp"
 /*
- * Author: Mazinski
+ * Author: Cplhardcore
  * Progresses the treatment process for a chest Tube
  *
  * Arguments:
@@ -13,7 +13,7 @@
  * None
  *
  * Example:
- * [player, cursorObject, 2.1, 1] call kat_breathing_fnc_chestTubeProgressLocal;
+ * [player, cursorObject, 0.1, 1] call kat_breathing_fnc_treatmentAdvanced_chestTubeProgressLocal;
  *
  * Public: No
  */

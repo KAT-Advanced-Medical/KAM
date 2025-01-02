@@ -41,15 +41,18 @@ if (floor (random 100) < (GVAR(pneumothoraxChance) + _chanceIncrease)) then {
         [_unit, 0.2] call ACEFUNC(medical_status,adjustPainLevel);
         _pneumothoraxState set [_side, 1];
         _unit setVariable [QGVAR(pneumothorax), _pneumothoraxState, true];
-        _unit setVariable [QGVAR(deepPenetratingInjury), true, true];
-        _unit setVariable [QGVAR(activeChestSeal), false, true];
+        _deepPenetratingInjury set [_side, true];
+        _unit setVariable [QGVAR(deepPenetratingInjury), _deepPenetratingInjury, true];
+        _activeChestSeal set [_side, true];
+        _unit setVariable [QGVAR(activeChestSeal), _activeChestSeal, true];
 
         [_unit, _chanceIncrease, _side] call FUNC(handlePneumothoraxDeterioration);
     } else {
         if (_tensionState select _side) then {
             _pneumothoraxState set [_side, 4];
             _unit setVariable [QGVAR(pneumothorax), _pneumothoraxState, true];
-            _unit setVariable [QGVAR(activeChestSeal), false, true];
+            _activeChestSeal set [_side, true];
+            _unit setVariable [QGVAR(activeChestSeal), _activeChestSeal, true];
         } else {
             if (GVAR(advPtxEnable)) then {
                 [_unit, _chanceIncrease, _side] call FUNC(inflictAdvancedPneumothorax);
@@ -58,8 +61,10 @@ if (floor (random 100) < (GVAR(pneumothoraxChance) + _chanceIncrease)) then {
     };
 } else { // Damage threshold was passed but no pneumothorax given, try to just give injury instead
     if (floor (random 100) < GVAR(deepPenetratingInjuryChance)) then {
-        _unit setVariable [QGVAR(deepPenetratingInjury), true, true];
-        _unit setVariable [QGVAR(activeChestSeal), false, true];
+        _deepPenetratingInjury set [_side, true];
+        _unit setVariable [QGVAR(deepPenetratingInjury), _deepPenetratingInjury, true];
+        _activeChestSeal set [_side, true];
+        _unit setVariable [QGVAR(activeChestSeal), _activeChestSeal, true];
 
         if ((floor (random 100) <= EGVAR(circulation,tamponadeChance)) && (_unit getVariable [QEGVAR(circulation,effusion), 0] == 0)) then {
             _unit setVariable [QEGVAR(circulation,effusion), 1, true];

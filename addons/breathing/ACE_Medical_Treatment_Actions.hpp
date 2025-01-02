@@ -170,7 +170,7 @@ class ACE_Medical_Treatment_Actions {
         treatmentTime = 12;
         items[] = {"kat_scalpel"};
         condition = QGVAR(hardcoreBreathingTreatment);
-        callbackSuccess = QUOTE([ARR_2(_medic,_patient)] call EFUNC(airway,handleRecoveryPosition); [ARR_7(_medic,_patient,_bodyPart,_className,objNull,_usedItem,0)] call FUNC(treatmentAdvanced_FingerThoracostomy););
+        callbackSuccess = QUOTE([ARR_2(_medic,_patient)] call EFUNC(airway,handleRecoveryPosition); [ARR_3(_medic,_patient,0)] call FUNC(treatmentAdvanced_FingerThoracostomy););
         callbackFailure = "";
         callbackProgress = "";
         consumeItem = 1;
@@ -185,7 +185,7 @@ class ACE_Medical_Treatment_Actions {
     };
     class RightFingerThoracostomy: FingerThoracostomy{
         displayName = CSTRING(FingerThoracostomyRight_display);
-        callbackSuccess = QUOTE([ARR_2(_medic,_patient)] call EFUNC(airway,handleRecoveryPosition); [ARR_7(_medic,_patient,_bodyPart,_className,objNull,_usedItem,1)] call FUNC(treatmentAdvanced_FingerThoracostomy););
+        callbackSuccess = QUOTE([ARR_2(_medic,_patient)] call EFUNC(airway,handleRecoveryPosition); [ARR_3(_medic,_patient,1)] call FUNC(treatmentAdvanced_FingerThoracostomy););
     };
     class TensionpneumothoraxTreatment {
         displayName = CSTRING(tensionpneumothorax_display);

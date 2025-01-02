@@ -1,7 +1,7 @@
 #include "..\script_component.hpp"
 /*
- * Author: Mazinski
- * Removes the fracture status from an open fracture
+ * Author: Mazinski, Cplhardcore
+ * Ends the treatment cycle for a chest tube
  *
  * Arguments:
  * 0: Medic <OBJECT>
@@ -12,8 +12,8 @@
  * Nothing
  *
  * Example:
- * [player, cursorObject, "LeftLeg"] call kat_surgery_fnc_chestTube
- *
+ * [player, cursorObject, 1] call ka__breathing_treatmentAdvanced_chestTube
+ 
  * Public: No
  */
 

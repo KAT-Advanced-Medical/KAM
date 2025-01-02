@@ -12,7 +12,7 @@
  * None
  *
  * Example:
- * [player, cursorObject, 1] call kat_surgery_fnc_incisionLocal
+ * [player, cursorObject, 1] call kat_breathing_treatmentAdvanced_chestTubeIncisionLocal
  *
  * Public: No
  */

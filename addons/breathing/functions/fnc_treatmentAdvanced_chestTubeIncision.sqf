@@ -1,7 +1,7 @@
 #include "..\script_component.hpp"
 /*
- * Author: Mazinski
- * Starts the surgical process for a fracture
+ * Author: Cplhardcore
+ * Starts the surgical process for a chest tube
  *
  * Arguments:
  * 0: Medic <OBJECT>
@@ -12,7 +12,7 @@
  * Nothing
  *
  * Example:
- * [player, cursorObject, 1] call kat_surgery_fnc_incision
+ * [player, cursorObject, 1] call kat_breathing_treatmentAdvanced_chestTubeIncision
  *
  * Public: No
  */

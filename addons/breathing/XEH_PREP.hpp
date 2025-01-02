@@ -26,6 +26,7 @@ PREP(refillOxygenTank);
 PREP(removeOxygenMask);
 PREP(treatmentAdvanced_chestSeal);
 PREP(treatmentAdvanced_chestSealLocal);
+PREP(treatmentAdvanced_chestTube);
 PREP(treatmentAdvanced_chestTubeCheck);
 PREP(treatmentAdvanced_chestTubeIncision);
 PREP(treatmentAdvanced_chestTubeIncisionLocal);

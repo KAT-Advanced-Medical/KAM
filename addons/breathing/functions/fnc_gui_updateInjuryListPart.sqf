@@ -68,8 +68,8 @@ if (_selectionN isEqualTo 1) then {
             _tensionhemothorax = true;
         };
     };
-
-    if ((_target getVariable [QGVAR(activeChestSeal), [false, false]] select 0) || (_target getVariable [QGVAR(activeChestSeal), [false, false]] select 1)) then {
+    private _activeChestSeal = _target getVariable [QGVAR(activeChestSeal), [false, false]];
+    if ((_activeChestSeal select 0) || (_activeChestSeal select 1)) then {
         _entries pushBack [LLSTRING(ChestSealApplied), [1,0.95,0,1]];
     };
     {
