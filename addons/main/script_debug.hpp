@@ -2,7 +2,7 @@
 Fast Recompiling via function
 **/
 // #define DISABLE_COMPILE_CACHE
-// To Use: [] call KEKO_PREP_RECOMPILE;
+// To Use: [] call KAT_PREP_RECOMPILE;
 
 #ifdef DISABLE_COMPILE_CACHE
     #define LINKFUNC(x) {_this call FUNC(x)}
