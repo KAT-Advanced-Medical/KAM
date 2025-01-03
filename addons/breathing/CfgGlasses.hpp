@@ -6,7 +6,7 @@ class CfgGlasses
         author = "MrAdrianPL + KJW";
         displayname = "SOLR Oxygen Mask";
         model = QPATHTOF(models\solr\kat_mask_solr.p3d);
-        picture = QPATHTOF(ui\maskM04.paa);
+        picture = QPATHTOF(ui\maskSOLR.paa);
         identityTypes[] = {};
         mass = 4;
     };
