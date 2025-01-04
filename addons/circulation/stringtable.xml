@@ -1744,7 +1744,7 @@
             <Dutch>Voer ABG test uit</Dutch>
             <Spanish>Realizar prueba ABG</Spanish>
             <Japanese>ABGテストを行う</Japanese>
-            <German>Führen Sie den ABG-Test durch</German>
+            <German>Führ ein ABG-Test durch</German>
             <Italian>Eseguire test ABG</Italian>
             <French>Exécuter le test ABG</French>
         </Key>
@@ -2004,7 +2004,7 @@
             <English>Enable ABG Testing</English>
             <French>Activer le test ABG</French>
             <Japanese>ABGテストを有効化</Japanese>
-            <German>Aktivieren Sie ABG-Tests</German>
+            <German>ABG-Tests aktivieren</German>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_abg_enable_DESC">
             <English>Enables ABG Testing and ACE Menu Visibility</English>

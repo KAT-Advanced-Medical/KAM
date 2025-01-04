@@ -14,7 +14,7 @@
             <English>Apply simplified vital calculations to the AI unit. Which can be useful for saving FPS.</English>
             <Japanese>単純化されたバイタル計算をAIユニットに適用します。 これは負荷の軽減に役立つ可能性があります。</Japanese>
             <Italian>Applica calcoli vitali semplificati all'unità AI. Che può essere utile per salvare FPS.</Italian>
-            <German>Wenden Sie vereinfachte Vitalberechnungen auf die KI-Einheit an. Was zum Sparen von FPS nützlich sein kann.</German>
+            <German>Vereinfachte Vital-Simulation bei KI-Einheiten. Reduziert Leistungsaufwand.</German>
             <French>Appliquer des calculs vitaux simplifiés à l'unité AI. Ce qui peut être utile pour économiser des FPS.</French>
         </Key>
         <Key ID="STR_KAT_Vitals_FLUID_SHIFT">

@@ -3494,7 +3494,7 @@
             <Dutch>Laat coagulatie AI/KI beïnvloeden.\nElke andere waarde wordt ook voor AI/KI gecheckt wanneer dit aanstaat. (Kan prestatieproblemen opleveren als er veel AI's/KI's aanwezig zijn.)</Dutch>
             <French>Autoriser la coagulation à affecter les unités IA.\nTous les autres paramètres seront toujours nécessaires si cette option est activée. (Peut entraîner un lag si de nombreuses IA sont présentes.)</French>
             <Italian>Permettere alla coagulazione di influenzare le unità IA.\nOgni altro valore sarà comunque richiesto se attivato. (Può causare lag se sono presenti molte IA)</Italian>
-            <German>Koagulation auf AI-Einheiten zulassen.\nAlle anderen Werte sind weiterhin erforderlich, wenn sie aktiviert sind. (Kann zu Verzögerungen führen, wenn viele KI vorhanden sind)</German>
+            <German>Koagulation bei KI-Einheiten simulieren.\nAlle anderen Werte sind weiterhin erforderlich, wenn sie aktiviert sind.\nErhöter Leistungsaufwand bei vielen KI Einheiten.</German>
         </Key>
         <Key ID="STR_KAT_Pharma_SETTING_Coagulation_tourniquetBlock">
             <English>Tournique Blocks Blood Clotting</English>
