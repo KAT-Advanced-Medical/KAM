@@ -880,6 +880,7 @@
             <Japanese>ガスマスクを外す</Japanese>
             <French>Enlever le masque à gaz</French>
             <German>Gasmaske abnehmen</German>
+            <Chinesesimp>摘下防毒面具</Chinesesimp>
         </Key>
         <Key ID="STR_KAT_Chemical_ChemicalDetector_Menu">
             <English>JCAD</English>
