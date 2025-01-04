@@ -881,15 +881,6 @@
             <French>Enlever le masque à gaz</French>
             <German>Gasmaske abnehmen</German>
         </Key>
-        <Key ID="STR_KAT_Chemical_SETTING_dropWeaponChance">
-            <English>Drop Weapon Chance</English>
-            <German>Chance, die Waffe unter Tränengas zu verlieren</German>
-        </Key>
-        <Key ID="STR_KAT_Chemical_SETTING_dropWeaponChance_DESC">
-            <English>Determines chance for dropping weapon while in tear gas</English>
-            <German>Bestimmt die Wahrscheinlichkeit, die Waffe zu verlieren, während man unter dem Einfluss von Tränengas steht</German>
-            <Chinesesimp>摘下防毒面具</Chinesesimp>
-        </Key>
         <Key ID="STR_KAT_Chemical_ChemicalDetector_Menu">
             <English>JCAD</English>
             <Japanese>JCAD</Japanese>
@@ -919,12 +910,14 @@
             <French>Chance de lâcher l'arme</French>
             <Japanese>武器を落とす確率</Japanese>
             <Chinesesimp>投掷武器机会</Chinesesimp>
+            <German>Chance, die Waffe unter Tränengas zu verlieren</German>
         </Key>
         <Key ID="STR_KAT_Chemical_SETTING_dropWeaponChance_DESC">
             <English>Determines chance for dropping weapon while in tear gas</English>
             <French>Détermine les chances de lâcher l'arme en cas d'exposition aux gaz lacrymogènes.</French>
             <Japanese>催涙ガスの中で武器を落とす確率を定義します</Japanese>
             <Chinesesimp>确定在催泪瓦斯中投掷武器的几率</Chinesesimp>
+            <German>Bestimmt die Wahrscheinlichkeit, die Waffe zu verlieren, während man unter dem Einfluss von Tränengas steht</German>
         </Key>
     </Package>
 </Project>
