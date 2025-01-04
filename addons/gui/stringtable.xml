@@ -24,7 +24,7 @@
             <Polish>Kolorowe logi aktywności (AED-X/Pulsoksymetr)</Polish>
             <Spanish>Registros de actividad de color (DEA-X/Oximetro)</Spanish>
             <Chinese>彩色活动记录(AED-X/脉冲氧饱和度仪)</Chinese>
-            <Chinesesimp>允许彩色活动记录(AED-X/脉搏血氧仪)</Chinesesimp>
+            <Chinesesimp>彩色活动记录(AED-X/脉冲氧饱和度仪)</Chinesesimp>
             <Czech>Barevné protokoly aktivit (AED-X / Pulseoximeter)</Czech>
             <Korean>컬러 활동 기록 (AED-X / 맥박 측정기)</Korean>
             <French>Registres d'activité colorés (AED-X/Pulseoximeter)</French>
@@ -42,7 +42,7 @@
             <Polish>Zabarwia logi AED-X lub pulsoksymetru na czerwono, jeśli jakaś wartość jest krytyczna</Polish>
             <Spanish>Marca los registros de actividad del DEA-X o del Oximetro en rojo, si algún valor es crítico</Spanish>
             <Chinese>将AED-X或Pulseoximeter的Activitylogs染成红色，如果任何值是临界值。</Chinese>
-            <Chinesesimp>若任何生命处于危险中(处于临界值以下),则将AED-X或脉搏血氧仪的数值显示为红色</Chinesesimp>
+            <Chinesesimp>若任何数据处于危险中(处于临界值以下),将AED-X或脉搏血氧仪的数值显示为红色</Chinesesimp>
             <Czech>Pokud je nějaká hodnota kritická, vybarví Activitylogy AED-X nebo Pulseoximeter červeně</Czech>
             <Korean>중요한 값이있는 경우 AED-X 또는 맥박산소측정기의 활동 로그를 빨간색으로 표시합니다.</Korean>
             <French>Colore les registres d'activité de l'AED-X ou de l'oxymètre de pouls en rouge, si une valeur est critique</French>
@@ -56,7 +56,7 @@
         </Key>
         <Key ID="STR_KAT_GUI_Status_NoIv">
             <English>No pushed fluids</English>
-            <Chinesesimp>无法进行输液</Chinesesimp>
+            <Chinesesimp>无推液</Chinesesimp>
             <Korean>주입된 액체 없음</Korean>
             <Japanese>点滴中の輸液なし</Japanese>
             <German>Keine verabreichten Flüssigkeiten</German>
@@ -104,6 +104,7 @@
             <Italian>TESTA - SENZA LINEA</Italian>
             <German>KOPF - KEIN ZUGANG</German>
             <French>TETE - PAS DE LIGNES</French>
+            <Chinesesimp>头部-无线路</Chinesesimp>
         </Key>
         <Key ID="STR_KAT_GUI_ChestCover">
             <English>CHEST - NO LINE</English>
@@ -113,6 +114,7 @@
             <Italian>TORACE - SENZA LINEA</Italian>
             <German>BRUST - KEIN ZUGANG</German>
             <French>POITRINE - PAS DE LIGNES</French>
+            <Chinesesimp>胸部--无线路</Chinesesimp>
         </Key>
         <Key ID="STR_KAT_GUI_RArmCover">
             <English>RIGHT ARM - NO LINE</English>
@@ -122,6 +124,7 @@
             <Italian>BRACCIO DESTRO - SENZA LINEA</Italian>
             <German>RECHTER ARM – KEIN ZUGANG</German>
             <French>BRAS DROIT - PAS DE LIGNES</French>
+            <Chinesesimp>右臂--无线路</Chinesesimp>
         </Key>
         <Key ID="STR_KAT_GUI_LArmCover">
             <English>LEFT ARM - NO LINE</English>
@@ -131,6 +134,7 @@
             <Italian>BRACCIO SINISTRO - SENZA LINEA</Italian>
             <German>LINKER ARM – KEIN ZUGANG</German>
             <French>BRAS GAUCHE - PAS DE LIGNES</French>
+            <Chinesesimp>左臂--无线路</Chinesesimp>
         </Key>
         <Key ID="STR_KAT_GUI_RLegCover">
             <English>RIGHT LEG - NO LINE</English>
@@ -140,6 +144,7 @@
             <Italian>GAMBA DESTRA - SENZA LINEA</Italian>
             <German>RECHTES BEIN – KEIN ZUGANG</German>
             <French>JAMBE DROITE - PAS DE LIGNES</French>
+            <Chinesesimp>右腿--无线路</Chinesesimp>
         </Key>
         <Key ID="STR_KAT_GUI_LLegCover">
             <English>LEFT LEG - NO LINE</English>
@@ -149,6 +154,7 @@
             <Italian>GAMBA SINISTRA - SENZA LINEA</Italian>
             <German>LINKES BEIN – KEIN ZUGANG</German>
             <French>JAMBE GAUCHE - PAS DE LIGNES</French>
+            <Chinesesimp>左腿--无线路</Chinesesimp>
         </Key>
         <Key ID="STR_KAT_GUI_IVFlowTitle">
             <English>IV Flow Control</English>
@@ -158,6 +164,7 @@
             <Italian>Controllo del flusso IV</Italian>
             <German>IV-Flusskontrolle</German>
             <French>Fonctionnement du flux IV</French>
+            <Chinesesimp>IV 流量控制</Chinesesimp>
         </Key>
         <Key ID="STR_KAT_GUI_ABGTitle">
             <English>ABG Results</English>
@@ -167,6 +174,7 @@
             <Italian>Risultati ABG</Italian>
             <German>ABG-Ergebnisse</German>
             <French>Résultats de l'ABG</French>
+            <Chinesesimp>ABG结果</Chinesesimp>
         </Key>
         <Key ID="STR_KAT_GUI_IVValue">
             <English>0.0</English>
@@ -176,6 +184,7 @@
             <Italian>0.0</Italian>
             <German>0.0</German>
             <French>0.0</French>
+            <Chinesesimp>0</Chinesesimp>
         </Key>
         <Key ID="STR_KAT_GUI_HeadTitle">
             <English>Head</English>
@@ -185,6 +194,7 @@
             <Italian>Testa</Italian>
             <German>Kopf</German>
             <French>Tête</French>
+            <Chinesesimp>Head</Chinesesimp>
         </Key>
         <Key ID="STR_KAT_GUI_HeadType">
             <English>IV</English>
@@ -194,6 +204,7 @@
             <Italian>IV</Italian>
             <German>IV</German>
             <French>IV</French>
+            <Chinesesimp>IV</Chinesesimp>
         </Key>
         <Key ID="STR_KAT_GUI_ChestTitle">
             <English>Chest</English>
@@ -203,6 +214,7 @@
             <Italian>Torace</Italian>
             <German>Brust</German>
             <French>Torse</French>
+            <Chinesesimp>Chest</Chinesesimp>
         </Key>
         <Key ID="STR_KAT_GUI_ChestType">
             <English>IV</English>
@@ -212,6 +224,7 @@
             <Italian>IV</Italian>
             <German>IV</German>
             <French>IV</French>
+            <Chinesesimp>IV</Chinesesimp>
         </Key>
         <Key ID="STR_KAT_GUI_LArmTitle">
             <English>LA</English>
@@ -221,6 +234,7 @@
             <Italian>BS</Italian>
             <German>LA</German>
             <French>BG</French>
+            <Chinesesimp>LA</Chinesesimp>
         </Key>
         <Key ID="STR_KAT_GUI_LArmType">
             <English>IV</English>
@@ -230,6 +244,7 @@
             <Italian>IV</Italian>
             <German>IV</German>
             <French>IV</French>
+            <Chinesesimp>IV</Chinesesimp>
         </Key>
         <Key ID="STR_KAT_GUI_RArmTitle">
             <English>RA</English>
@@ -239,6 +254,7 @@
             <Italian>BD</Italian>
             <German>RA</German>
             <French>BD</French>
+            <Chinesesimp>RA</Chinesesimp>
         </Key>
         <Key ID="STR_KAT_GUI_RArmType">
             <English>IV</English>
@@ -248,6 +264,7 @@
             <Italian>IV</Italian>
             <German>IV</German>
             <French>IV</French>
+            <Chinesesimp>IV</Chinesesimp>
         </Key>
         <Key ID="STR_KAT_GUI_LLegTitle">
             <English>LL</English>
@@ -257,6 +274,7 @@
             <Italian>GS</Italian>
             <German>LB</German>
             <French>JG</French>
+            <Chinesesimp>LL</Chinesesimp>
         </Key>
         <Key ID="STR_KAT_GUI_LLegType">
             <English>IV</English>
@@ -266,6 +284,7 @@
             <Italian>IV</Italian>
             <German>IV</German>
             <French>IV</French>
+            <Chinesesimp>IV</Chinesesimp>
         </Key>
         <Key ID="STR_KAT_GUI_RLegTitle">
             <English>RL</English>
@@ -275,6 +294,7 @@
             <Italian>GB</Italian>
             <German>RB</German>
             <French>JD</French>
+            <Chinesesimp>RL</Chinesesimp>
         </Key>
         <Key ID="STR_KAT_GUI_RLegType">
             <English>IV</English>
@@ -284,6 +304,7 @@
             <Italian>IV</Italian>
             <German>IV</German>
             <French>IV</French>
+            <Chinesesimp>IV</Chinesesimp>
         </Key>
         <Key ID="STR_KAT_GUI_BGBlank">
             <English>--.-</English>
@@ -293,6 +314,7 @@
             <Italian>--.-</Italian>
             <German>--.-</German>
             <French>--.-</French>
+            <Chinesesimp>--.-</Chinesesimp>
         </Key>
         <Key ID="STR_KAT_GUI_TestReset">
             <English>Reset</English>
@@ -302,6 +324,7 @@
             <Italian>Ripristina</Italian>
             <German>Reset</German>
             <French>Réinitialiser</French>
+            <Chinesesimp>重置</Chinesesimp>
         </Key>
     </Package>
 </Project>

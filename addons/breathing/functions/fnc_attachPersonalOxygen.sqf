@@ -42,6 +42,8 @@ _patient removeMagazines "kat_personal_oxygen";
 
 _patient setVariable [QGVAR(oxygenMaskStatus), [(_largestTankValue + 1), 1], true];
 
+[QGVAR(playRespiratorTone), [_patient], _patient] call CBA_fnc_targetEvent;
+
 [{
     _this params ["_args", "_pfhID"];
     _args params ["_patient"];
@@ -68,6 +70,11 @@ _patient setVariable [QGVAR(oxygenMaskStatus), [(_largestTankValue + 1), 1], tru
     };
 
     private _maskStatus = _patient getVariable [QGVAR(oxygenMaskStatus), [0,0]];
+    _patient setVariable [QGVAR(oxygenMaskStatus), [((_maskStatus select 0) - 1), _pfhID]];
+
+    if ((_maskStatus select 0) < 4) then {
+        [QGVAR(playRespiratorTone), [_patient], _patient] call CBA_fnc_targetEvent;
+    };
 
     if ((_maskStatus select 0) == 0) exitWith {
         [LLSTRING(PersonalOxygen_Empty), 1.5, _patient] call ACEFUNC(common,displayTextStructured);
@@ -78,7 +85,6 @@ _patient setVariable [QGVAR(oxygenMaskStatus), [(_largestTankValue + 1), 1], tru
         _pfhID call CBA_fnc_removePerFrameHandler;
     };
 
-    _patient setVariable [QGVAR(oxygenMaskStatus), [((_maskStatus select 0) - 1), _pfhID]];
 }, 60, [
     _patient
 ]] call CBA_fnc_addPerFrameHandler;

@@ -19,4 +19,4 @@ if (!local _unit) exitWith {};
 
 [_unit] call FUNC(fullHealLocal);
 
-_unit setVariable [QGVAR(lastSoundTime), CBA_missionTime, true];
+_unit setVariable [QGVAR(detectorSound), false, true];

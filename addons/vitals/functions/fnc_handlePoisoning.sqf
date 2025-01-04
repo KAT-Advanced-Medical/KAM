@@ -24,6 +24,24 @@ private _currentCS = _unit getVariable [QEGVAR(chemical,CSGas), 0];
 
 _unit setVariable [QEGVAR(chemical,CSGas), (_currentCS - (_poisonAdjustment * _deltaT)) max 0, _syncValue];
 
+private _inZone = false;
+private _distance = 0;
+
+{
+    _y params ["_gasLogic", "_radius", "_gasLevel", "_condition", "_conditionArgs", "_isSealable"];
+    TRACE_2("gasVitalsPFH loop",_x,_y);
+
+    _distance = _unit distance _gasLogic;
+
+    if (_distance < _radius) then {
+        _inZone = true;
+    };
+} forEach GVAR(gasSources);
+
+if !(_inZone) then {
+    _unit setVariable [QGVAR(areaIntensity), 0, true];
+};
+
 private _infectionArray = _unit getVariable [QEGVAR(chemical,infectionArray), []];
 
 if (count _infectionArray == 0) then {
