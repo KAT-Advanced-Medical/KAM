@@ -31,7 +31,7 @@ if (_engineDamage < GVAR(pneumothoraxDamageThreshold) || _unit getVariable ["KAT
 
 private _chanceIncrease = 0;
 if (GVAR(pneumothoraxDamageThreshold_TakenDamage)) then {
-    _chanceIncrease = linearConversion [GVAR(pneumothoraxDamageThreshold), 3, _damage, 0, 30, true];
+    _chanceIncrease = linearConversion [GVAR(pneumothoraxDamageThreshold), 3, _engineDamage, 0, 30, true];
 };
 
 // Damage threshold passed & pneumothorax given
