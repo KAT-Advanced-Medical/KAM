@@ -200,7 +200,7 @@
             <Dutch>Gebruik Gevechtspillendoosje</Dutch>
             <French>Utiliser le PMBC</French>
             <Italian>Usa il Pacchetto di Pillole da Combattimento (CWMP)</Italian>
-            <German>Verwenden Sie CWMP</German>
+            <German>CWMP verwenden</German>
         </Key>
         <Key ID="STR_KAT_Pharma_Carbonate_DescShort">
             <English>Used to restore consciousness</English>
@@ -1205,7 +1205,7 @@
             <English>Enable IV/IO Flow Control</English>
             <Japanese>IV/IO流量操作を有効化</Japanese>
             <Italian>Abilita il controllo del flusso IV/IO</Italian>
-            <German>Aktivieren Sie die IV/IO-Flusskontrolle</German>
+            <German>IV/IO-Flusskontrolle aktivieren</German>
             <French>Activer les opérations de flux IV/IO</French>
         </Key>
         <Key ID="STR_KAT_Pharma_SETTING_IV_FLOW_CONTROL_DESC">
@@ -3275,7 +3275,7 @@
             <Portuguese>EACA Remove Traumas</Portuguese>
             <Dutch>EACA verwijderd trauma</Dutch>
             <Italian>EACA elimina il trauma</Italian>
-            <German>EACA behandeltTraumata</German>
+            <German>EACA behandelt Traumata</German>
         </Key>
         <Key ID="STR_KAT_Pharma_SETTING_EACA_Trauma_Desc">
             <English>Allows Trauma to be cleared by EACA in addition to stitching</English>
@@ -3313,7 +3313,7 @@
             <Dutch>Blijf verbinden tot uit het systeem</Dutch>
             <French>Continuer à bander jusqu'à ce que le produit soit éliminé du système</French>
             <Italian>Continua a fasciarti finché non esce dal sistema</Italian>
-            <German>Bleiben Sie so lange verbunden, bis das System außer Betrieb ist</German>
+            <German>So lange verbinden, bis es aus dem Kreislauf ist</German>
         </Key>
         <Key ID="STR_KAT_Pharma_SETTING_keepScriptRunning_TXA_DESC">
             <English>If enabled TXA will keep bandaging until it's out of your system\nIf disabled TXA will stop working after bandaging the last wound it can find</English>
@@ -3530,7 +3530,7 @@
             <Dutch>Staat toe dat coagulatie kleine wonden beïnvloed tijdens het stollen</Dutch>
             <French>Permettre à la coagulation d'affecter les blessures mineures lors de la coagulation</French>
             <Italian>Consenti alla coagulazione di influenzare le ferite minori durante la coagulazione</Italian>
-            <German>Lassen Sie die Gerinnung zu, um kleinere Wunden zu beeinflussen, wenn es zur Gerinnung kommt</German>
+            <German>Lässt bei Gerinnung  zu, dass Koagulation kleinere Wunden beeinflusst</German>
         </Key>
         <Key ID="STR_KAT_Pharma_SETTING_Coagulation_allow_MediumWounds">
             <English>Affect Medium Wounds</English>
@@ -3808,7 +3808,7 @@
             <Dutch>Coag-Sense concludeerd: %1</Dutch>
             <French>Le Coag-Sense a conclu : %1</French>
             <Italian>Coag-Sense conclude: %1</Italian>
-            <German>Coag-Sense kommt zu dem Schluss: %1</German>
+            <German>Coag-Sense kommt zu dem Ergebnis: %1</German>
         </Key>
         <Key ID="STR_KAT_Pharma_CheckCoag_DisplayName">
             <English>Measure PT/INR</English>
@@ -3818,7 +3818,7 @@
             <Dutch>Meet PT-INR</Dutch>
             <French>Mesurer le PT/INR</French>
             <Italian>Misura PT/INR</Italian>
-            <German>Messen Sie PT/INR</German>
+            <German>PT/INR Messen</German>
         </Key>
         <Key ID="STR_KAT_Pharma_CheckCoag_DisplayNameProgress">
             <English>Taking Blood Sample, </English>
@@ -3898,7 +3898,7 @@
             <Dutch>Vereist medisch niveau voor gebruik Coag-Sense</Dutch>
             <French>Niveau médical requis du Coag-Sense</French>
             <Italian>Livello medico richiesto per Coag-Sense</Italian>
-            <German>Für Coag-Sense ist ein medizinisches Niveau erforderlich</German>
+            <German>Erforderliches medizinisches Niveau für den Coag-Sense</German>
         </Key>
         <Key ID="STR_KAT_Pharma_SETTING_CheckCoag_Location">
             <English>Locations Coag-Sense</English>
@@ -3996,7 +3996,7 @@
             <Dutch>Vereist medisch niveau voor gebruik van IV Adrenaline</Dutch>
             <French>Niveau médical requis pour l'épinéphrine IV</French>
             <Italian>Livello medico richiesto per Epinefrina IV</Italian>
-            <German>Medizinisches Niveau für intravenös verabreichtes Epinephrine erforderlich</German>
+            <German>Erforderliches medizinisches Niveau für die Gabe von IV-Epinephrine</German>
         </Key>
         <Key ID="STR_KAT_Pharma_treatmentTime_EpinephrineIV">
             <English>Treatment time for IV Epinephrine</English>

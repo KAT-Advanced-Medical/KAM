@@ -107,7 +107,7 @@
             <Dutch>Trek brancard terug</Dutch>
             <Spanish>Recoger Camilla</Spanish>
             <Japanese>担架を収容する</Japanese>
-            <German>Trage aufheben</German>
+            <German>Trage einholen</German>
             <Italian>Ritirare la barella</Italian>
             <French>Rétracter le brancard</French>
         </Key>
@@ -117,7 +117,7 @@
             <Dutch>Maak brancard los</Dutch>
             <Spanish>Desanclar Camilla</Spanish>
             <Japanese>担架を取り外す</Japanese>
-            <German>Trage Loslassen</German>
+            <German>Trage lösen</German>
             <Italian>Staccare la barella</Italian>
             <French>Détacher le brancard</French>
         </Key>
@@ -229,7 +229,7 @@
             <Dutch>Brancard wordt geplaatst</Dutch>
             <Spanish>Colocando Camilla...</Spanish>
             <Japanese>担架を設置しています・・・</Japanese>
-            <German>Trage platzieren</German>
+            <German>Trage platzieren...</German>
             <Italian>Posizionamento della barella...</Italian>
             <French>Mise en place du brancard...</French>
         </Key>
@@ -239,7 +239,7 @@
             <Dutch>Brancard wordt verpakt</Dutch>
             <Spanish>Empaquetando Camilla...</Spanish>
             <Japanese>担架を折り畳んでいます・・・</Japanese>
-            <German>Trage aufräumen</German>
+            <German>Trage einpacken...</German>
             <Italian>Imballaggio della barella...</Italian>
             <French>Le brancard est emballé</French>
         </Key>

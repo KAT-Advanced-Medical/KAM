@@ -21,7 +21,7 @@
             <English>Enable Patient Fluid Shift</English>
             <Japanese>患者の体液移動を有効化</Japanese>
             <Italian>Abilita lo spostamento del fluido del paziente</Italian>
-            <German>Aktivieren Sie die Patientenflüssigkeitsverschiebung</German>
+            <German>Aktiviert Flüssigkeitsverschiebung im Patienten</German>
             <French>Permettre le transfert de fluide du patient</French>
         </Key>
     </Package>

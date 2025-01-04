@@ -813,7 +813,7 @@
             <Portuguese>Colocar Unidade REBOA</Portuguese>
             <Dutch>Plaats REBOA eenheid</Dutch>
             <Italian>Posiziona l'unità REBOA</Italian>
-            <German>Platzieren Sie die REBOA-Einheit</German>
+            <German>REBOA-Einheit platzieren</German>
         </Key>
         <Key ID="STR_KAT_Surgery_Reboa_Action">
             <English>Placing</English>
@@ -824,7 +824,7 @@
             <Portuguese>Colocando</Portuguese>
             <Dutch>Wordt geplaatst</Dutch>
             <Italian>Posizionamento in corso</Italian>
-            <German>wird Platziert</German>
+            <German>Wird platziert</German>
         </Key>
         <Key ID="STR_KAT_Surgery_Reboa_Deep_Use">
             <English>Advance REBOA Unit</English>
@@ -835,7 +835,7 @@
             <Portuguese>Avançar Unidade REBOA</Portuguese>
             <Dutch>Voer REBOA eenheid op</Dutch>
             <Italian>Avanza l'unità REBOA</Italian>
-            <German>Vorgezogene REBOA-Einheit</German>
+            <German>REBOA-Einheit vorschieben</German>
         </Key>
         <Key ID="STR_KAT_Surgery_Reboa_Deep_Action">
             <English>Advancing</English>
@@ -846,7 +846,7 @@
             <Portuguese>Avançando</Portuguese>
             <Dutch>Wordt opgevoerd</Dutch>
             <Italian>Avanzamento in corso</Italian>
-            <German>Vorwärts</German>
+            <German>Vorschieben</German>
         </Key>
         <Key ID="STR_KAT_Surgery_Reboa_Remove_Use">
             <English>Remove REBOA Unit</English>
@@ -857,7 +857,7 @@
             <Portuguese>Remover Unidade REBOA</Portuguese>
             <Dutch>Verwijder REBOA eenheid</Dutch>
             <Italian>Rimuovi l'unità REBOA</Italian>
-            <German>Entfernen Sie die REBOA-Einheit</German>
+            <German>REBOA-Einheit entfernen</German>
         </Key>
         <Key ID="STR_KAT_Surgery_Reboa_Remove_Action">
             <English>Removing</English>

@@ -102,7 +102,7 @@
             <Spanish>CABEZA - SIN LINEA</Spanish>
             <Japanese>頭部 - ライン無し</Japanese>
             <Italian>TESTA - SENZA LINEA</Italian>
-            <German>KOPF – KEINE LINIE</German>
+            <German>KOPF - KEIN ZUGANG</German>
             <French>TETE - PAS DE LIGNES</French>
         </Key>
         <Key ID="STR_KAT_GUI_ChestCover">
@@ -111,7 +111,7 @@
             <Spanish>TORSO - SIN LINEA</Spanish>
             <Japanese>胸部 - ライン無し</Japanese>
             <Italian>TORACE - SENZA LINEA</Italian>
-            <German>BRUST – KEINE LINIE</German>
+            <German>BRUST - KEIN ZUGANG</German>
             <French>POITRINE - PAS DE LIGNES</French>
         </Key>
         <Key ID="STR_KAT_GUI_RArmCover">
@@ -120,7 +120,7 @@
             <Spanish>BRAZO DERECHO - SIN LINEA</Spanish>
             <Japanese>右腕 - ライン無し</Japanese>
             <Italian>BRACCIO DESTRO - SENZA LINEA</Italian>
-            <German>RECHTER ARM – KEINE LINIE</German>
+            <German>RECHTER ARM – KEIN ZUGANG</German>
             <French>BRAS DROIT - PAS DE LIGNES</French>
         </Key>
         <Key ID="STR_KAT_GUI_LArmCover">
@@ -129,7 +129,7 @@
             <Spanish>BRAZO IZQUIERDO - SIN LINEA</Spanish>
             <Japanese>左腕 - ライン無し</Japanese>
             <Italian>BRACCIO SINISTRO - SENZA LINEA</Italian>
-            <German>LINKER ARM – KEINE LINIE</German>
+            <German>LINKER ARM – KEIN ZUGANG</German>
             <French>BRAS GAUCHE - PAS DE LIGNES</French>
         </Key>
         <Key ID="STR_KAT_GUI_RLegCover">
@@ -138,7 +138,7 @@
             <Spanish>PIERNA DERECHA - SIN LINEA</Spanish>
             <Japanese>右脚 - ライン無し</Japanese>
             <Italian>GAMBA DESTRA - SENZA LINEA</Italian>
-            <German>RECHTES BEIN – KEINE LINIE</German>
+            <German>RECHTES BEIN – KEIN ZUGANG</German>
             <French>JAMBE DROITE - PAS DE LIGNES</French>
         </Key>
         <Key ID="STR_KAT_GUI_LLegCover">
@@ -147,7 +147,7 @@
             <Spanish>PIERNA IZQUIERDA - SIN LINEA</Spanish>
             <Japanese>左脚 - ライン無し</Japanese>
             <Italian>GAMBA SINISTRA - SENZA LINEA</Italian>
-            <German>LINKES BEIN – KEINE LINIE</German>
+            <German>LINKES BEIN – KEIN ZUGANG</German>
             <French>JAMBE GAUCHE - PAS DE LIGNES</French>
         </Key>
         <Key ID="STR_KAT_GUI_IVFlowTitle">

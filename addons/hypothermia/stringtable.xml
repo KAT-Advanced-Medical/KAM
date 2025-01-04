@@ -24,7 +24,7 @@
             <Dutch>Schakel hypothermie in</Dutch>
             <Spanish>Habilitar hipotermia</Spanish>
             <Japanese>低体温症を有効化</Japanese>
-            <German>Erlaube Hypothermie</German>
+            <German>Hypothermie aktivieren</German>
             <Italian>Abilita l'ipotermia</Italian>
             <French>Permettre l'hypothermie</French>
         </Key>
@@ -78,7 +78,7 @@
             <Dutch>Lijst van kleding die temperatuurdalingen verminderen</Dutch>
             <Spanish>Listado de ropa marcada como reductora de la pérdida de calor</Spanish>
             <Japanese>熱損失を減らすことが出来るとマークされた衣類のリスト</Japanese>
-            <German>Liste der markierten Kleidungsstücke, die den Wärmeverlust reduzieren</German>
+            <German>Liste der Kleidungsstücke, die den Wärmeverlust reduzieren</German>
             <Italian>Elenco degli indumenti segnati che riducono la perdita di calore</Italian>
             <French>Liste des vêtements qui réduisent les chutes de température</French>
         </Key>
@@ -87,7 +87,7 @@
             <Dutch>Check handwarmers</Dutch>
             <Spanish>Comprobar Calentadores de Manos</Spanish>
             <Japanese>ハンドウォーマーを確認する</Japanese>
-            <German>Überprüfen Sie die Handwärmer</German>
+            <German>Handwärmer überprüfen</German>
             <Italian>Controlla i riscaldatori per le mani</Italian>
             <French>Vérifier les chauffe-mains</French>
         </Key>
@@ -114,7 +114,7 @@
             <Dutch>Gebruik handwarmer</Dutch>
             <Spanish>Usar Calentador de Manos</Spanish>
             <Japanese>ハンドウォーマーを使用する</Japanese>
-            <German>Verwenden Sie einen Handwärmer</German>
+            <German>Handwärmer verwenden</German>
             <Italian>Usa il riscaldatore per le mani</Italian>
             <French>Utiliser des chauffe-mains</French>
         </Key>
@@ -123,7 +123,7 @@
             <Dutch>Dit is waar je handwarmers hebt en hoelang je denkt dat ze nog werken in minuten: %1, %2, %3, %4, %5</Dutch>
             <Spanish>Aquí es donde tienes calentadores de manos y cuanto piensas que les queda de duración en minutos: %1, %2, %3, %4, %5</Spanish>
             <Japanese>あなたが使用中の ハンドウォーマーの 位置と残り持続時間は 次の通りです (分単位): %1, %2, %3, %4, %5</Japanese>
-            <German>Hier finden Sie Handwärmer und die geschätzte Zeitdauer in Minuten: %1, %2, %3, %4, %5</German>
+            <German>Hier hast du Handwärmer und wie lange sie deiner Schätzung nach halten werden in Minuten: %1, %2, %3, %4, %5</German>
             <Italian>Ecco dove hai i riscaldatori per le mani e quanto tempo pensi che rimangano in minuti: %1, %2, %3, %4, %5</Italian>
             <French>La position et la durée restante du chauffe-mains que vous utilisez sont les suivantes (en minutes) : %1, %2, %3, %4, %5</French>
         </Key>
@@ -150,7 +150,7 @@
             <Dutch>Verwarmt IV-vloeistoffen. Moet geplaatst worden op een al aangelegde lijn.</Dutch>
             <Spanish>Provee calor a los fluidos IV. Deben ser colocados en una línea ya existentes</Spanish>
             <Japanese>IVの輸液を温めます。既存のライン上に配置する必要があります</Japanese>
-            <German>Erwärmt IV-Flüssigkeiten. Muss auf einer bereits vorhandenen Zeile platziert werden</German>
+            <German>Erwärmt IV-Flüssigkeiten. Muss auf einer bereits vorhandenen Leitung platziert werden</German>
             <Italian>Fornisce riscaldamento ai liquidi IV. Deve essere posizionato su una linea già esistente</Italian>
             <French>Permet de chauffer les fluides IV. Doit être placé sur une ligne déjà existante</French>
         </Key>
@@ -231,7 +231,7 @@
             <Dutch>Temperatuur wordt gecheckt</Dutch>
             <Spanish>ComprobandoTemperatura</Spanish>
             <Japanese>体温をチェックしています</Japanese>
-            <German>prüfe Temperatur</German>
+            <German>Prüfe Temperatur</German>
             <Italian>Controllo della temperatura in corso</Italian>
             <French>La température est vérifiée</French>
         </Key>
@@ -240,7 +240,7 @@
             <Dutch>Check handwarmers</Dutch>
             <Spanish>Comprobar Calentadores de Mano</Spanish>
             <Japanese>ハンドウォーマーをチェックします</Japanese>
-            <German>Überprüfe Handwärmer</German>
+            <German>Handwärmer überprüfen</German>
             <Italian>Controlla i riscaldatori per le mani</Italian>
             <French>Vérifier les chauffe-mains.</French>
         </Key>
@@ -249,7 +249,7 @@
             <Dutch>Wordt uitgevoerd</Dutch>
             <Spanish>Realizando</Spanish>
             <Japanese>適用中</Japanese>
-            <German>Aufführen</German>
+            <German>Durchführen</German>
             <Italian>Esecuzione in corso</Italian>
             <French>En cours de mise en place</French>
         </Key>
