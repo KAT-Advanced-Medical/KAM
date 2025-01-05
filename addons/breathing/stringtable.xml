@@ -2105,11 +2105,13 @@
         <Key ID="STR_KAT_Breathing_PersonalOxygen_Display">
             <English>Personal Oxygen Tank</English>
             <Japanese>個人用酸素ボンベ</Japanese>
+            <French>Réservoir d'oxygène personnel</French>
             <Chinesesimp>便携式氧气罐</Chinesesimp>
         </Key>
         <Key ID="STR_KAT_Breathing_PersonalOxygen_Desc_Short">
             <English>Personal oxygen tank for high altitude operations</English>
             <Japanese>高高度作戦に用いる個人用酸素ボンベ</Japanese>
+            <French>Réservoir d'oxygène personnel pour les opérations en haute altitude</French>
             <Chinesesimp>高空作业用便携式氧气罐</Chinesesimp>
         </Key>
         <Key ID="STR_KAT_Breathing_PortableOxygenTank_150_Empty_Display">

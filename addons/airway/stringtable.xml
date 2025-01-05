@@ -201,6 +201,7 @@
         <Key ID="STR_KAT_Airway_checkAirway_poisonLog">
             <English>%1 checked airways: Heavily Blistered</English>
             <Japanese>%1 が気道を確認: ひどい水膨れ</Japanese>
+            <French>%1 voies aériennes contrôlées : Fortement cloquées</French>
             <Chinesesimp>%1 条检查气道: 严重起泡</Chinesesimp>
         </Key>
         <Key ID="STR_KAT_Airway_airway_log">
@@ -410,6 +411,7 @@
         <Key ID="STR_KAT_Airway_AirwayStatus_Poison">
             <English>Airway is heavily blistered</English>
             <Japanese>気道はひどく水膨れしている</Japanese>
+            <French>Les voies respiratoires sont fortement cloquées</French>
             <Chinesesimp>气道严重膨胀</Chinesesimp>
         </Key>
         <Key ID="STR_KAT_Airway_AirwayStatus_NotClearForItem">

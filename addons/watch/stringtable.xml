@@ -158,31 +158,37 @@
         <Key ID="STR_KAT_Watch_RangerDescription">
             <English>Watch with Vital Monitoring Capabilities. Sua Sponte.</English>
             <Japanese>カーミン K12モデルR。 バイタル監視機能を持った腕時計。 自らの意思で。(Sua Sponte)</Japanese>
+            <French>Montre avec fonctions de surveillance vitale. Sua Sponte.</French>
             <Chinesesimp>使用重要监控功能观看。Sua Sponte。</Chinesesimp>
         </Key>
         <Key ID="STR_KAT_Watch_RangerDisplayName">
             <English>Katmin K12 Model R</English>
             <Japanese>Katmin K12 Model R</Japanese>
+            <French>Katmin K12 Model R</French>
             <Chinesesimp>Katmin K12 R型</Chinesesimp>
         </Key>
         <Key ID="STR_KAT_Watch_ShowKATWatch_Setting">
             <English>Show KATMIN Watch</English>
             <Japanese>Katmin腕時計を表示</Japanese>
+            <French>Afficher la montre KATMIN</French>
             <Chinesesimp>显示KATMIN手表</Chinesesimp>
         </Key>
         <Key ID="STR_KAT_Watch_AddTimer_Setting">
             <English>Add 15 Seconds to Watch Timer</English>
             <Japanese>時計のタイマーを15秒増やす</Japanese>
+            <French>Ajouter 15 secondes à la minuterie de la montre</French>
             <Chinesesimp>添加15秒观看计时器</Chinesesimp>
         </Key>
         <Key ID="STR_KAT_Watch_SubtractTimer_Setting">
             <English>Subtract 15 Seconds from Watch Timer</English>
             <Japanese>時計のタイマーを15秒減らす</Japanese>
+            <French>Retirer 15 secondes de la minuterie de la montre</French>
             <Chinesesimp>从手表计时器中减去15秒</Chinesesimp>
         </Key>
         <Key ID="STR_KAT_Watch_StartStopTimer_Setting">
             <English>Start and Stop Watch Timer</English>
             <Japanese>時計のタイマーを開始および停止</Japanese>
+            <French>Démarrage et arrêt de la minuterie de la montre</French>
             <Chinesesimp>启动和停止手表定时器</Chinesesimp>
         </Key>
         <Key ID="STR_KAT_Watch_descentFT">
