@@ -35,7 +35,7 @@ if ((_eyeInjuries find 0) == 0) then {
         };
     
         private _eyeInjury = _unit getVariable ["kat_ophthalmology_eyeInjuries", [1, 1]];
-        _unit setVariable ["kat_ophthalmology_eyeInjuries", [(((_eyeInjury select 0) + 0.003) min 1), (_eyeInjury select 1)], true];
+        _unit setVariable ["kat_ophthalmology_eyeInjuries", [(((_eyeInjury select 0) + 0.001) min 1), (_eyeInjury select 1)], true];
     }, 30, [
         _patient,
         _activeEye
@@ -58,7 +58,7 @@ if ((_eyeInjuries find 0) == 0) then {
         };
     
         private _eyeInjury = _unit getVariable ["kat_ophthalmology_eyeInjuries", [1, 1]];
-        _unit setVariable ["kat_ophthalmology_eyeInjuries", [(_eyeInjury select 0), (((_eyeInjury select 1) + 0.003) min 1)], true];
+        _unit setVariable ["kat_ophthalmology_eyeInjuries", [(_eyeInjury select 0), (((_eyeInjury select 1) + 0.001) min 1)], true];
     }, 1, [
         _patient,
         _activeEye
