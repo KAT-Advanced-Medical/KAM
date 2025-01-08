@@ -5,12 +5,14 @@
  *
  * Arguments:
  * 0: Unit <OBJECT>
+ * 1: Damage Source <OBJECT>
+ * 2: Explosion Source <OBJECT>
  *
  * Return Value:
  * None
  *
  * Example:
- * [bob] call kat_ophthalmology_fnc_handleExplosion
+ * [bob, damage, explosion] call kat_ophthalmology_fnc_handleExplosion
  *
  * Public: No
  */

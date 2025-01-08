@@ -1,13 +1,15 @@
 #include "..\script_component.hpp"
 /*
- * Author: Katalam
- * Handles the placement of the eye shield.
+ * Author: Mazinski
+ * Sets condition for the Eye Shield
  *
  * Return Value:
- * None
+ * Boolean
+ *
+ * Example:
+ * [bob, patient] call kat_ophthalmology_fnc_treatmentAdvanced_eyeShieldCondition
  *
  * Public: No
- *
  */
 
 params ["_medic", "_patient"];

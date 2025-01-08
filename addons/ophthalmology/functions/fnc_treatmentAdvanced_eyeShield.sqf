@@ -1,13 +1,15 @@
 #include "..\script_component.hpp"
 /*
- * Author: Katalam
- * Handles the placement of the eye shield.
+ * Author: Mazinski
+ * Handles the placement of the eye shield
  *
  * Return Value:
  * None
  *
- * Public: No
+ * Example:
+ * [bob, patient] call kat_ophthalmology_fnc_treatmentAdvanced_eyeShield
  *
+ * Public: No
  */
 params ["_medic", "_patient"];
 
