@@ -11,6 +11,7 @@
  *
  * Public: No
  */
+ 
 params ["_medic", "_patient"];
 
 private _eyeInjuries = _patient getVariable ["kat_ophthalmology_eyeInjuries", [1, 1]];
