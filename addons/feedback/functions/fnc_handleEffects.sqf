@@ -32,7 +32,7 @@ private _unconscious      = IS_UNCONSCIOUS(ACE_player);
 private _poisoned = IS_AIRPOISONED(ACE_player);
 private _tear = IN_TEARGAS(ACE_player);
 private _wheeze = ((ACE_player getVariable [QGVAR(pneumothorax), 0] > 0) || ACE_player getVariable [QGVAR(hemopneumothorax), false] || ACE_player getVariable [QGVAR(tensionpneumothorax), false] || ACE_player getVariable [QEGVAR(chemical,airPoisoning), false]);
-private _eyeInjurySeverity        = GET_DUST_INJURY_SEVERITY(ACE_player);
+private _eyeInjurySeverity        = GET_DUST_INJURY(ACE_player);
 private _eyeInjuries        = GET_EYE_INJURIES(ACE_player);
 
 // - Visual effects -----------------------------------------------------------

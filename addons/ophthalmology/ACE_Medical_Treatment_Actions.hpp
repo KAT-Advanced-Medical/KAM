@@ -42,4 +42,16 @@ class ACE_Medical_Treatment_Actions {
         displayName = CSTRING(eyewasher_display_item);
         items[] = {"KAT_Eyewasher"};
     };
+
+    class EyeShield: EyeWash {
+        displayName = CSTRING(eyeshield_display);
+        displayNameProgress = CSTRING(eyeshield_action);
+        medicRequired = QGVAR(eyeshield_medic_required);
+        treatmentTime = 5;
+        items[] = {
+            "kat_eyecovers"
+        };
+        condition = QFUNC(eyeShieldCondition);
+        callbackSuccess = QFUNC(treatmentAdvanced_eyeShield);
+    };
 };

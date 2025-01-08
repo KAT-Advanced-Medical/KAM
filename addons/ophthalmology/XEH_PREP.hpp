@@ -1,7 +1,9 @@
+PREP(eyeShieldCondition);
 PREP(fullHealLocal);
 PREP(handleDustInjury);
 PREP(handleExplosion);
 PREP(handleRespawn);
 PREP(init);
 PREP(initKeybinds);
+PREP(treatmentAdvanced_eyeShield);
 PREP(treatmentAdvanced_eyewash);

@@ -18,5 +18,7 @@
 params ["_patient"];
 TRACE_1("fullHealLocal",_patient);
 
-_patient setVariable [QGVAR(dustInjurySeverity), 0, true];
+_patient setVariable [QGVAR(dustInjuryLight), 0, true];
+_patient setVariable [QGVAR(dustInjuryHeavy), 0, true];
 _patient setVariable [QGVAR(eyeInjuries), [1,1], true];
+_patient setVariable [QGVAR(eyeInjurySevere), false, true];

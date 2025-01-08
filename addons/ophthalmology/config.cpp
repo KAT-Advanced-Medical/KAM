@@ -8,8 +8,7 @@ class CfgPatches {
         weapons[] = {
             "KAT_Eyewasher",
             "kat_eyecovers_right",
-            "kat_eyecovers_left",
-            "kat_eyecovers_both"
+            "kat_eyecovers_left"
         };
         magazines[] = { };
         requiredAddons[] = {
@@ -28,3 +27,4 @@ class CfgPatches {
 #include "CfgWeapons.hpp"
 #include "CfgMagazines.hpp"
 #include "ACE_Medical_Treatment_Actions.hpp"
+#include "RscTitles.hpp"
