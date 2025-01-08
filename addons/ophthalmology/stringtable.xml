@@ -53,10 +53,13 @@
             <English>Eyewash bottles allow an individual to flush the injured area immediately</English>
         </Key>
         <Key ID="STR_KAT_Ophthalmology_EyeCover_Right">
-            <English>Right eye cover</English>
+            <English>Eye Shield</English>
+        </Key>
+        <Key ID="STR_KAT_Ophthalmology_EyeCover_Right">
+            <English>Right Eye Shield</English>
         </Key>
         <Key ID="STR_KAT_Ophthalmology_EyeCover_Left">
-            <English>Left eye cover</English>
+            <English>Left Eye Shield</English>
         </Key>
         <Key ID="STR_KAT_Ophthalmology_EyeCover_Both">
             <English>Both eye covers</English>
@@ -75,6 +78,9 @@
         </Key>
         <Key ID="STR_KAT_Ophthalmology_setting_eyeShield_treatment_time">
             <English>Treatment time for eye shield</English>
+        </Key>
+        <Key ID="STR_KAT_Ophthalmology_eyeInjuryPresent">
+            <English>Eye Injury</English>
         </Key>
     </Package>
 </Project>

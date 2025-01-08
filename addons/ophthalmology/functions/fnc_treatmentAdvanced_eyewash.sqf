@@ -18,9 +18,9 @@ _patient setVariable [QGVAR(dustInjuryLight), 0, true];
 _patient setVariable [QGVAR(dustInjuryHeavy), 0, true];
 
 private _eyeInjuries = _patient getVariable [QGVAR(eyeInjuries), [1, 1]];
-private _eyeInjurySevere = _patient setVariable [QGVAR(eyeInjurySevere), false, true];
+private _eyeInjurySevere = _patient getVariable [QGVAR(eyeInjurySevere), false];
 
-if (_eyeInjurySevere && (({_x = 1} count _eyeInjuries) > 1)) then {
+if (_eyeInjurySevere && (({_x == 1} count _eyeInjuries) > 1)) then {
     private _random = floor random 2;
     _eyeInjuries set [_random, 0];
 

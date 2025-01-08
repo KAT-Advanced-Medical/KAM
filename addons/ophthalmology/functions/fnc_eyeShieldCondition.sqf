@@ -13,9 +13,9 @@
 params ["_medic", "_patient"];
 
 private _eyeInjuries = _patient getVariable [QGVAR(eyeInjuries), [1, 1]];
-private _eyeInjurySevere = _patient setVariable [QGVAR(eyeInjurySevere), false, true];
+private _eyeInjurySevere = _patient getVariable [QGVAR(eyeInjurySevere), false];
 
-if (_eyeInjurySevere && (({_x = 1} count _eyeInjuries) == 1)) exitWith {
+if (_eyeInjurySevere && (({_x == 1} count _eyeInjuries) == 1)) exitWith {
     true
 };
 

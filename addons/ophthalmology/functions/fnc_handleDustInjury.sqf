@@ -43,7 +43,7 @@ if (_cause in ["dust", "rotorWash"]) then {
             // Set the chosen eye to injured
             _eyeInjuries set [_injuredEye, 0];
 
-            if (({_x = 0} count _eyeInjuries) > 1) then {
+            if (({_x == 0} count _eyeInjuries) > 1) then {
                 _unit setVariable [QGVAR(eyeInjurySevere), true, true];
             };
 

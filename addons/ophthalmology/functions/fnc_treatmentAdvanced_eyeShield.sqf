@@ -20,7 +20,7 @@ private _activeEye = _display displayCtrl 17102;
 
 if ((_eyeInjuries find 0) == 0) then {
     _patient linkItem "kat_eyecovers_left";
-    _activeEye = _display displayCtrl 17102;
+    _activeEye = _display displayCtrl 17103;
 
     _activeEye ctrlShow true;
     _activeEye ctrlCommit 0;
@@ -43,7 +43,7 @@ if ((_eyeInjuries find 0) == 0) then {
 
 } else {
     _patient linkItem "kat_eyecovers_right";
-    _activeEye = _display displayCtrl 17103;
+    _activeEye = _display displayCtrl 17102;
 
     _activeEye ctrlShow true;
     _activeEye ctrlCommit 0;
