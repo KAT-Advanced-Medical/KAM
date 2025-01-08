@@ -19,7 +19,7 @@ class CfgWeapons
     class kat_eyecovers_right: NVGoggles
     {
         author = "MrAdrianPL";
-        displayName = CSTRING(EyeCover_Item);
+        displayName = CSTRING(EyeCover_Right);
         scope = 2;
         scopeArsenal = 0;
         ace_nightvision_border = QPATHTOF(ui\RightEyeNVG.paa);
@@ -40,7 +40,7 @@ class CfgWeapons
     };
     class kat_eyecovers_left: kat_eyecovers_right
     {
-        displayName = CSTRING(EyeCover_Item);
+        displayName = CSTRING(EyeCover_Left);
         ace_nightvision_border = QPATHTOF(ui\LeftEyeNVG.paa);
         modelOptics = "\A3\Weapons_F\empty.p3d";
         hiddenSelections[] = {"eye_l","eye_r"};
