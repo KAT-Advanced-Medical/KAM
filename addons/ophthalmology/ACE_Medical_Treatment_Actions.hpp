@@ -47,7 +47,7 @@ class ACE_Medical_Treatment_Actions {
         displayName = CSTRING(eyeshield_display);
         displayNameProgress = CSTRING(eyeshield_action);
         medicRequired = QGVAR(eyeshield_medic_required);
-        treatmentTime = 5;
+        treatmentTime = QGVAR(eyeshield_treatment_time);
         items[] = {
             "kat_eyecovers"
         };

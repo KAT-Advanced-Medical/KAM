@@ -68,4 +68,25 @@ PREP_RECOMPILE_END;
     true
 ] call CBA_Settings_fnc_init;
 
+// Eye Shield treatment time
+[
+    QGVAR(eyeshield_treatment_time),
+    "SLIDER",
+    [LLSTRING(setting_eyeShield_treatment_time)],
+    [CBA_SETTINGS_CAT, LSTRING(setting_subcategory_manual_blink)],
+    [1, 10, 2, 0],
+    true
+] call CBA_Settings_fnc_init;
+
+
+// Eye Shield medic required
+[
+    QGVAR(eyeshield_medic_required),
+    "LIST",
+    [LLSTRING(setting_eyeShield_medic_required)],
+    [CBA_SETTINGS_CAT, LSTRING(setting_subcategory_manual_blink)],
+    [[0, 1, 2], ["STR_ACE_Medical_Treatment_Anyone", "STR_ACE_Medical_Treatment_Medics", "STR_ACE_Medical_Treatment_Doctors"], 0],
+    true
+] call CBA_Settings_fnc_init;
+
 ADDON = true;

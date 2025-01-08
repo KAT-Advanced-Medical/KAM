@@ -61,5 +61,23 @@
         <Key ID="STR_KAT_Ophthalmology_EyeCover_Both">
             <English>Both eye covers</English>
         </Key>
+        <Key ID="STR_KAT_Ophthalmology_eyeshield_display">
+            <English>Apply Eye Shield</English>
+        </Key>
+        <Key ID="STR_KAT_Ophthalmology_eyeshield_action">
+            <English>Applying</English>
+        </Key>
+        <Key ID="STR_KAT_Ophthalmology_EyeCover_Both">
+            <English>Both eye covers</English>
+        </Key>
+        <Key ID="STR_KAT_Ophthalmology_eyeshield_item">
+            <English>Eye Shield</English>
+        </Key>
+        <Key ID="STR_KAT_Ophthalmology_setting_eyeShield_medic_required">
+            <English>Medic required for eye shield</English>
+        </Key>
+        <Key ID="STR_KAT_Ophthalmology_setting_eyeShield_treatment_time">
+            <English>Treatment time for eye shield</English>
+        </Key>
     </Package>
 </Project>

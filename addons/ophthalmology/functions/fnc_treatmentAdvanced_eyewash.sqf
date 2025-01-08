@@ -21,14 +21,14 @@ private _eyeInjuries = _patient getVariable [QGVAR(eyeInjuries), [1, 1]];
 private _eyeInjurySevere = _patient setVariable [QGVAR(eyeInjurySevere), false, true];
 
 if (_eyeInjurySevere && (({_x = 1} count _eyeInjuries) > 1)) then {
-	private _random = floor random 2;
-	_eyeInjuries set [_random, 0];
+    private _random = floor random 2;
+    _eyeInjuries set [_random, 0];
 
-	_patient setVariable [QGVAR(eyeInjuries), _eyeInjuries, true];
+    _patient setVariable [QGVAR(eyeInjuries), _eyeInjuries, true];
 };
 
 if !(_eyeInjurySevere) then {
-	_patient setVariable [QGVAR(eyeInjuries), [0, 0], true];
+    _patient setVariable [QGVAR(eyeInjuries), [0, 0], true];
 };
 
 [_patient, LLSTRING(eyewash_item)] call ACEFUNC(medical_treatment,addToTriageCard);
