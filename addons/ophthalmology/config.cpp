@@ -6,9 +6,7 @@ class CfgPatches {
         requiredVersion = REQUIRED_VERSION;
         units[] = {};
         weapons[] = {
-            "KAT_Eyewasher",
-            "kat_eyecovers_right",
-            "kat_eyecovers_left"
+            "KAT_Eyewasher"
         };
         magazines[] = { };
         requiredAddons[] = {

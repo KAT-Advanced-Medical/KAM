@@ -5,6 +5,7 @@ class CfgWeapons
 
     class kat_eyecovers: ACE_ItemCore {
         scope = 2;
+        author = "MrAdrianPL";
         displayName = CSTRING(EyeCover_Item);
         picture = QPATHTOF(ui\icon_eyeshield.paa);
         model = QPATHTOF(models\eyecovers\kat_eyecovers.p3d);

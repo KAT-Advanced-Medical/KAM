@@ -52,11 +52,8 @@
         <Key ID="STR_KAT_Ophthalmology_eyewasher_desc">
             <English>Eyewash bottles allow an individual to flush the injured area immediately</English>
         </Key>
-        <Key ID="STR_KAT_Ophthalmology_EyeCover_Right">
-            <English>Right Eye Shield</English>
-        </Key>
-        <Key ID="STR_KAT_Ophthalmology_EyeCover_Left">
-            <English>Left Eye Shield</English>
+        <Key ID="STR_KAT_Ophthalmology_EyeCover_Item">
+            <English>Eye Shield</English>
         </Key>
         <Key ID="STR_KAT_Ophthalmology_eyeshield_display">
             <English>Apply Eye Shield</English>
