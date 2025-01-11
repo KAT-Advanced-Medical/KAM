@@ -165,7 +165,7 @@ switch (true) do {
         TRACE_3("Class IV Hemorrhage",_unit,_hemorrhage,_bloodVolume);
         [QACEGVAR(medical,FatalVitals), _unit] call CBA_fnc_localEvent;
     };
-    case (_heartRate < 20 || {_heartRate > 110}): {
+    case (_heartRate < 20 || {_heartRate > 90}): {
         TRACE_2("heartRate Fatal",_unit,_heartRate);
         if !(_unit getVariable [QEGVAR(conversion,conversion), false]) then {
             ["kat_conversion_convertCasualty", _unit] call CBA_fnc_localEvent;
@@ -189,14 +189,6 @@ switch (true) do {
         [QACEGVAR(medical,LoweredVitals), _unit] call CBA_fnc_localEvent;
     };
 };
-
-#ifdef DEBUG_MODE_FULL
-private _cardiacOutput = [_unit] call ACEFUNC(medical_status,getCardiacOutput);
-if (!isPlayer _unit) then {
-    private _painLevel = _unit getVariable [VAR_PAIN, 0];
-    hintSilent format["blood volume: %1, blood loss: [%2, %3]\nhr: %4, bp: %5, pain: %6", round(_bloodVolume * 100) / 100, round(_woundBloodLoss * 1000) / 1000, round((_woundBloodLoss / (0.001 max _cardiacOutput)) * 100) / 100, round(_heartRate), _bloodPressure, round(_painLevel * 100) / 100];
-};
-#endif
 
 END_COUNTER(Vitals);
 

@@ -11,20 +11,16 @@
         private _previousUnit = player;
         private _setName = name _previousUnit;
 
-		_previousUnit setVariable [QACEGVAR(medical,deathBlocked), true];
-
-        selectPlayer _unit; 
-
 		_previousUnit setVariable [QEGVAR(vitals,simpleMedical), false, true];
 		_previousUnit setVariable [QEGVAR(conversion,conversion), true, true];
+
+        selectPlayer _unit; 
 
 		["kat_conversion_unitTransfer", [_previousUnit]] call CBA_fnc_serverEvent;
 		_previousUnit setName _setName;
 
         _unit setDamage 1; 
         deleteVehicle _unit;
-
-		_previousUnit setVariable [QACEGVAR(medical,deathBlocked), false];
 }] call CBA_fnc_addEventHandler;
 
 ["kat_conversion_unitTransfer", {
