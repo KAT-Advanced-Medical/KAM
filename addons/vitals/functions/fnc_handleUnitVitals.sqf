@@ -165,8 +165,11 @@ switch (true) do {
         TRACE_3("Class IV Hemorrhage",_unit,_hemorrhage,_bloodVolume);
         [QACEGVAR(medical,FatalVitals), _unit] call CBA_fnc_localEvent;
     };
-    case (_heartRate < 20 || {_heartRate > 220}): {
+    case (_heartRate < 20 || {_heartRate > 110}): {
         TRACE_2("heartRate Fatal",_unit,_heartRate);
+        if !(_unit getVariable [QEGVAR(conversion,conversion), false]) then {
+            ["kat_conversion_convertCasualty", _unit] call CBA_fnc_localEvent;
+        };
         [QACEGVAR(medical,FatalVitals), _unit] call CBA_fnc_localEvent;
     };
     case (_bloodPressureL < 20 || {_bloodPressureL > 180}): {
