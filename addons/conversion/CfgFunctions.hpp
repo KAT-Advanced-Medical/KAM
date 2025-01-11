@@ -5,13 +5,8 @@ class CfgFunctions {
             class conditionSecondChance {
                 file = QPATHTOF(functions\fnc_conditionSecondChance.sqf);
             };
-        };
-    };
-    class overwrite_ace_medical_status {
-        tag = "ace_medical_status";
-        class ace_medical_status {
-            class setDead {
-                file = QPATHTOF(functions\fnc_setDead.sqf);
+            class conditionExecutionDeath {
+                file = QPATHTOF(functions\fnc_conditionExecutionDeath.sqf);
             };
         };
     };

@@ -1,5 +1,5 @@
 #define COMPONENT conversion
-#define COMPONENT_BEAUTIFIED KAT - conversion
+#define COMPONENT_BEAUTIFIED KAT - Conversion
 #include "\x\kat\addons\main\script_mod.hpp"
 
  #define DEBUG_MODE_FULL

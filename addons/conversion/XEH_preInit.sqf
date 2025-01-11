@@ -12,7 +12,7 @@ PREP_RECOMPILE_END;
 ACEGVAR(medical,STATE_MACHINE) = (configFile >> "KAT_StateMachine") call CBA_statemachine_fnc_createFromConfig;
 
 [
-    QGVAR(enableConversion),
+    QGVAR(enable),
     "CHECKBOX",
     [LLSTRING(CONVERSION_ENABLE), LLSTRING(CONVERSION_ENABLE_DISC)],
     [CBA_SETTINGS_CAT, ELSTRING(GUI,SubCategory_Basic)],

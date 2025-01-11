@@ -15,13 +15,12 @@
  * Public: No
  */
 
-params ["_unit"];
+params ["_this"];
 
-diag_log "CHANCE";
+if ((!(ACEGVAR(medical_statemachine,AIUnconsciousness))) && (!(_this getVariable [QEGVAR(conversion,convert),false])) && {!isPlayer _this}) exitWith {
+    diag_log "TRUE";
+    true
+};
 
-if (isPlayer _unit || (_unit getVariable [QGVAR(convert), false])) then {
-    diag_log "SECOND CHANCE";
-    ACEGVAR(medical_statemachine,fatalInjuriesPlayer) != FATAL_INJURIES_ALWAYS
-} else {
-    ACEGVAR(medical_statemachine,fatalInjuriesAI) != FATAL_INJURIES_ALWAYS
-}
+diag_log "FALSE";
+false

@@ -1,0 +1,28 @@
+#include "..\script_component.hpp"
+/*
+ * Author: mharis001
+ * Condition for going into cardiac arrest upon receiving a fatal injury.
+ *
+ * Arguments:
+ * 0: Unit <OBJECT>
+ *
+ * Return Value:
+ * None
+ *
+ * Example:
+ * [player] call ace_medical_statemachine_fnc_conditionSecondChance
+ *
+ * Public: No
+ */
+
+params ["_unit"];
+
+diag_log "EXECUTION";
+
+(if (isPlayer _unit || (_unit getVariable [QGVAR(convert), false])) then {
+    diag_log "EXECUTION DEATH";
+    ACEGVAR(medical_statemachine,fatalInjuriesPlayer) != FATAL_INJURIES_NEVER
+} else {
+    ACEGVAR(medical_statemachine,fatalInjuriesAI) != FATAL_INJURIES_NEVER
+})
+&& {!(_unit getVariable [QACEGVAR(medical,deathBlocked), false])}

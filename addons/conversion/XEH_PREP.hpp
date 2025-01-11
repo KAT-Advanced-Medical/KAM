@@ -1,4 +1,6 @@
 PREP(fullHealLocal);
-PREP(hasStableVitals);
+PREP(init);
+PREP(handleRespawn);
 PREP(conditionSecondChance);
-PREP(setDead);
+PREP(conversionCheck);
+PREP(conditionExecutionDeath);

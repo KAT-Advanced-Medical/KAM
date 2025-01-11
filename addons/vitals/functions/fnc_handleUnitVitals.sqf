@@ -167,7 +167,7 @@ switch (true) do {
     };
     case (_heartRate < 20 || {_heartRate > 90}): {
         TRACE_2("heartRate Fatal",_unit,_heartRate);
-        if !(_unit getVariable [QEGVAR(conversion,conversion), false]) then {
+        if (_unit getVariable [QEGVAR(conversion,convert), false]) then {
             ["kat_conversion_convertCasualty", _unit] call CBA_fnc_localEvent;
         };
         [QACEGVAR(medical,FatalVitals), _unit] call CBA_fnc_localEvent;
