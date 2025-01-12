@@ -55,10 +55,10 @@
         <Key ID="STR_KAT_Conversion_CONVERSION_MANUAL_CONVERSION_LEVEL_DESC">
             <English>What level should a player be in order to perform an initial conversion</English>
         </Key>
-        <Key ID="STR_KAT_Conversion_CONVERSION_MANUAL_CONVERSION_LEVEL">
+        <Key ID="STR_KAT_Conversion_CONVERSION_MANUAL_CONVERSION_LOCATION">
             <English>Location for Conversion</English>
         </Key>
-        <Key ID="STR_KAT_Conversion_CONVERSION_MANUAL_CONVERSION_LEVEL_DESC">
+        <Key ID="STR_KAT_Conversion_CONVERSION_MANUAL_CONVERSION_LOCATION_DESC">
             <English>What medical facility should a player be in order to perform an initial conversion</English>
         </Key>
         <Key ID="STR_KAT_Conversion_ConversionText">
