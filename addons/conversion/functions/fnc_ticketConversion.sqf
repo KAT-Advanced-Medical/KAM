@@ -15,9 +15,9 @@
  * Public: No
  */
 
-params ["_this"];
+params ["_patient"];
 
-[(side _this), GVAR(ticketConversionGain)] call BIS_fnc_respawnTickets;
+[(side _patient), GVAR(ticketConversionGain)] call BIS_fnc_respawnTickets;
 
-_this setDamage 1; 
-deleteVehicle _this;
+_patient setDamage 1; 
+deleteVehicle _patient;

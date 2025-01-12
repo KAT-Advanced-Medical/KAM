@@ -15,9 +15,9 @@
  * Public: No
  */
 
-params ["_this"];
+params ["_patient"];
 
-if ((!(ACEGVAR(medical_statemachine,AIUnconsciousness))) && (!(_this getVariable [QEGVAR(conversion,convert),false])) && {!isPlayer _this}) exitWith {
+if ((!(ACEGVAR(medical_statemachine,AIUnconsciousness))) && (!(_patient getVariable [QGVAR(convert),false])) && {!isPlayer _patient}) exitWith {
     true
 };
 

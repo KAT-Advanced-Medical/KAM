@@ -15,14 +15,14 @@
  * Public: No
  */
 
-params ["_this"];
+params ["_patient"];
 
-private _storageAreas = (([_this] call KPLIB_fnc_getNearestFob) nearobjects (GRLIB_fob_range)) select {(_x getVariable ["KP_liberation_storage_type",-1]) == 0};
-private _crate = [KP_liberation_supplyCrate, GVAR(enableLiberationConversionGain), [[getPos _this] select 0, [getPos _this] select 1, 10000]];
+private _storageAreas = (([_patient] call KPLIB_fnc_getNearestFob) nearobjects (GRLIB_fob_range)) select {(_x getVariable ["KP_liberation_storage_type",-1]) == 0};
+private _crate = [KP_liberation_supplyCrate, GVAR(enableLiberationConversionGain), [[getPos _patient] select 0, [getPos _patient] select 1, 10000]];
 
 {
     if ([_crate, _storage] call KPLIB_fnc_crateToStorage) then { break };
 } forEach _storageAreas;
 
-_this setDamage 1; 
-deleteVehicle _this;
+_patient setDamage 1; 
+deleteVehicle _patient;

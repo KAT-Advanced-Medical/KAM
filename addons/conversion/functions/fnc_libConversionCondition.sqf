@@ -15,16 +15,16 @@
  * Public: No
  */
 
-params ["_this"];
+params ["_patient"];
 
 if !(GVAR(enableLiberationConversion)) exitWith { false };
-if !(_this getVariable [QGVAR(currentConverted), false]) exitWith { false };
+if !(_patient getVariable [QGVAR(currentConverted), false]) exitWith { false };
 
 if (isNil GRLIB_fob_range) exitWith { false };
-if ((_this distance2d ([_this] call KPLIB_fnc_getNearestFob)) > GRLIB_fob_range) exitWith { false };
+if ((_patient distance2d ([_patient] call KPLIB_fnc_getNearestFob)) > GRLIB_fob_range) exitWith { false };
 
-if !([_this] call FUNC(conversionCondition)) exitWith { false };
+if !([_patient] call FUNC(conversionCondition)) exitWith { false };
 
-if (GVAR(forceVehicleConversion) && ((isNull objectParent _this) || !((objectParent _this) in GVAR(convertVehicles)))) exitWith { false };
+if (GVAR(forceVehicleConversion) && ((isNull objectParent _patient) || !((objectParent _patient) in GVAR(convertVehicles)))) exitWith { false };
 
 true

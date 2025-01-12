@@ -18,7 +18,7 @@
 params ["_patient"];
 
 if (hasInterface && GVAR(enable)) then {
-	_patient setVariable [QGVAR(convert), true, true];
+    _patient setVariable [QGVAR(convert), true, true];
 };
 
 _patient setVariable [QGVAR(currentConverted), false, true];
