@@ -31,6 +31,12 @@
         <Key ID="STR_KAT_Conversion_CONVERSION_LIBERATION_CONVERSION_GAIN_DESC">
             <English>How much supply should be gien when converting patients</English>
         </Key>
+        <Key ID="STR_KAT_Conversion_CONVERSION_SPECTATOR_RESPAWN">
+            <English>One Life Conversion</English>
+        </Key>
+        <Key ID="STR_KAT_Conversion_CONVERSION_SPECTATOR_RESPAWN_DESC">
+            <English>Prevents spectating players from respawning until their body has been converted</English>
+        </Key>
         <Key ID="STR_KAT_Conversion_CONVERSION_FORCE_VEHICLE">
             <English>Force Vehicle Conversion</English>
         </Key>

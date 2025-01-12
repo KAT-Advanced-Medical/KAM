@@ -57,6 +57,15 @@ ACEGVAR(medical,STATE_MACHINE) = (configFile >> "KAT_StateMachine") call CBA_sta
 ] call CBA_Settings_fnc_init;
 
 [
+    QGVAR(enableSpectatorRespawn),
+    "CHECKBOX",
+    [LLSTRING(CONVERSION_SPECTATOR_RESPAWN), LLSTRING(CONVERSION_SPECTATOR_RESPAWN_DESC)],
+    [CBA_SETTINGS_CAT, ELSTRING(GUI,SubCategory_Basic)],
+    [false],
+    true
+] call CBA_Settings_fnc_init;
+
+[
     QGVAR(forceVehicleConversion),
     "CHECKBOX",
     [LLSTRING(CONVERSION_FORCE_VEHICLE), LLSTRING(CONVERSION_FORCE_VEHICLE_DESC)],
