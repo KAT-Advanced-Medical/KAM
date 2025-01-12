@@ -17,11 +17,14 @@
 
 params ["_this"];
 
+if !(GVAR(enableLiberationConversion)) exitWith { false };
 if !(_this getVariable [QGVAR(currentConverted), false]) exitWith { false };
 
 if (isNil GRLIB_fob_range) exitWith { false };
 if ((_this distance2d ([_this] call KPLIB_fnc_getNearestFob)) > GRLIB_fob_range) exitWith { false };
 
 if !([_this] call FUNC(conversionCondition)) exitWith { false };
+
+if (GVAR(forceVehicleConversion) && ((isNull objectParent _this) || !((objectParent _this) in GVAR(convertVehicles)))) exitWith { false };
 
 true

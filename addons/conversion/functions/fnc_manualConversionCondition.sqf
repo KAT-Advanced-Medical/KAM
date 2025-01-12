@@ -15,9 +15,8 @@
  * Public: No
  */
 
-params ["_this"];
+params ["_medic", "_patient"];
 
-[(side _this), GVAR(ticketConversionGain)] call BIS_fnc_respawnTickets;
+if !(IS_UNCONSCIOUS(_patient)) exitWith { false };
 
-_this setDamage 1; 
-deleteVehicle _this;
+true

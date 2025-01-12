@@ -30,4 +30,5 @@
     private _group2 = createGroup [(side _previousUnit), true]; 
 	[_previousUnit] join _group2;
 	_group2 setGroupOwner 2;
+	[_previousUnit, true] call ACEFUNC(medical_engine,setUnconsciousAnim);
 }] call CBA_fnc_addEventHandler;

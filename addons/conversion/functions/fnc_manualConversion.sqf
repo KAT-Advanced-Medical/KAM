@@ -15,9 +15,6 @@
  * Public: No
  */
 
-params ["_this"];
+ params ["_medic", "_patient"];
 
-[(side _this), GVAR(ticketConversionGain)] call BIS_fnc_respawnTickets;
-
-_this setDamage 1; 
-deleteVehicle _this;
+["kat_conversion_convertCasualty", _patient] call CBA_fnc_localEvent;
