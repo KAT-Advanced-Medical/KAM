@@ -17,11 +17,11 @@
 
 params ["_this"];
 
-if !(_this getVariable [QGVAR(convert), false]) exitWith { false };
+if !(_this getVariable [QGVAR(currentConverted), false]) exitWith { false };
 
 if (isNil GRLIB_fob_range) exitWith { false };
 if ((_this distance2d ([_this] call KPLIB_fnc_getNearestFob)) > GRLIB_fob_range) exitWith { false };
 
-if !([_this] call EFUNC(vitals,hasStableVitals)) exitWith { false };
+if !([_this] call FUNC(conversionCondition)) exitWith { false };
 
 true

@@ -17,8 +17,8 @@
 
 params ["_this"];
 
-if !(_this getVariable [QGVAR(convert), false]) exitWith { false };
+if !(_this getVariable [QGVAR(currentConverted), false]) exitWith { false };
 if !(_this call ACEFUNC(medical_treatment,isInMedicalFacility)) exitWith { false };
-if !([_this] call EFUNC(vitals,hasStableVitals)) exitWith { false };
+if !([_this] call FUNC(conversionCondition)) exitWith { false };
 
 true
