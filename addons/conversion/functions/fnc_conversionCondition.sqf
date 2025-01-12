@@ -1,13 +1,13 @@
 #include "..\script_component.hpp"
 /*
- * Author: Ruthberg
- * Check if a unit can be converted back into resources
+ * Author: Mazinski
+ * Check if a unit is in a stable state for resource conversion
  *
  * Arguments:
  * 0: The patient <OBJECT>
  *
  * Return Value:
- * Has stable vitals <BOOL>
+ * Has no critical health conditions <BOOL>
  *
  * Example:
  * [player] call kat_conversion_conversionCondition

@@ -1,7 +1,7 @@
 #include "..\script_component.hpp"
 /*
- * Author: mharis001
- * Condition for going into cardiac arrest upon receiving a fatal injury.
+ * Author: Mazinski
+ * Converts patient to Liberation Supply
  *
  * Arguments:
  * 0: Unit <OBJECT>
@@ -10,7 +10,7 @@
  * None
  *
  * Example:
- * [player] call ace_medical_statemachine_fnc_conditionSecondChance
+ * [player] call kat_conversion_fnc_libConversion
  *
  * Public: No
  */

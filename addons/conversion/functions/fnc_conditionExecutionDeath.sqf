@@ -1,6 +1,7 @@
 #include "..\script_component.hpp"
 /*
  * Author: mharis001
+ * Edited: Mazinski.H
  * Condition for going into cardiac arrest upon receiving a fatal injury.
  *
  * Arguments:
@@ -10,7 +11,7 @@
  * None
  *
  * Example:
- * [player] call ace_medical_statemachine_fnc_conditionSecondChance
+ * [player] call kat_conversion_fnc_conditionSecondChance
  *
  * Public: No
  */

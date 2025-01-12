@@ -1,6 +1,7 @@
 #include "..\script_component.hpp"
 /*
  * Author: commy2
+ * Edited: Mazinski
  * Kills a local unit.
  *
  * Arguments:
