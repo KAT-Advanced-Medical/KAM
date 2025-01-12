@@ -16,7 +16,7 @@
         <Key ID="STR_KAT_Conversion_CONVERSION_TICKET_CONVERSION_GAIN">
             <English>Tickets Gained</English>
         </Key>
-        <Key ID="STR_KAT_Conversion_CONVERSION_TICKET_CONVERSION_DESC">
+        <Key ID="STR_KAT_Conversion_CONVERSION_TICKET_CONVERSION_GAIN_DESC">
             <English>How many tickets should be regained when converting patients</English>
         </Key>
         <Key ID="STR_KAT_Conversion_CONVERSION_LIBERATION_CONVERSION">
