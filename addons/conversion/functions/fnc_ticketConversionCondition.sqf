@@ -17,8 +17,8 @@
 
 params ["_this"];
 
-if ((!(ACEGVAR(medical_statemachine,AIUnconsciousness))) && (!(_this getVariable [QEGVAR(conversion,convert),false])) && {!isPlayer _this}) exitWith {
-    true
-};
+if !(_this getVariable [QGVAR(convert), false]) exitWith { false };
+if !(_this call ACEFUNC(medical_treatment,isInMedicalFacility)) exitWith { false };
+if !([_this] call EFUNC(vitals,hasStableVitals)) exitWith { false };
 
-false
+true

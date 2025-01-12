@@ -6,9 +6,11 @@
 ["kat_conversion_convertCasualty", {
 	private _type = typeOf player; 
 	private _group = createGroup [(side player), true]; 
-	private _unit = _group createUnit [_type, [0,0,0], [], 0, "NONE"];
 	private _previousUnit = player;
 	private _setName = name _previousUnit;
+	private _loadout = getUnitLoadout player;
+	private _unit = _group createUnit [_type, [0,0,0], [], 0, "NONE"];
+	_unit setUnitLoadout _loadout;
 
 	_previousUnit setVariable [QEGVAR(vitals,simpleMedical), false, true];
 	_previousUnit setVariable [QGVAR(currentConverted), true, true];

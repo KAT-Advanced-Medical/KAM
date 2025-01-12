@@ -17,10 +17,7 @@
 
 params ["_unit"];
 
-diag_log "EXECUTION";
-
 (if (isPlayer _unit || (_unit getVariable [QGVAR(convert), false])) then {
-    diag_log "EXECUTION DEATH";
     ACEGVAR(medical_statemachine,fatalInjuriesPlayer) != FATAL_INJURIES_NEVER
 } else {
     ACEGVAR(medical_statemachine,fatalInjuriesAI) != FATAL_INJURIES_NEVER

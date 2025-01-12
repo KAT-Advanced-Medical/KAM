@@ -1,8 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Project name="KAT">
-    <Package name="Statemachine">
+    <Package name="Conversion">
         <Key ID="STR_KAT_Vitals_SIMPLEMED_ENABLE">
             <English>Activate Casualty Conversion</English>
+        </Key>
+        <Key ID="STR_KAT_Conversion_TicketConversion">
+            <English>Convert Casualty to Tickets</English>
+        </Key>
+        <Key ID="STR_KAT_Conversion_LibConversion">
+            <English>Convert Casualty to Liberation Supply</English>
         </Key>
     </Package>
 </Project>

@@ -32,3 +32,4 @@ class CfgPatches {
 #include "Statemachine.hpp"
 #include "CfgEventHandlers.hpp"
 #include "CfgFunctions.hpp"
+#include "CfgVehicles.hpp"

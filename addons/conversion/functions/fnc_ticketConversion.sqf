@@ -17,8 +17,6 @@
 
 params ["_this"];
 
-if ((!(ACEGVAR(medical_statemachine,AIUnconsciousness))) && (!(_this getVariable [QEGVAR(conversion,convert),false])) && {!isPlayer _this}) exitWith {
-    true
-};
+private _unitSide = side _this;
 
-false
+[_unitSide, 2] call BIS_fnc_respawnTickets;

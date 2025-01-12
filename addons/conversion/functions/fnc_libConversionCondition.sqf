@@ -17,8 +17,11 @@
 
 params ["_this"];
 
-if ((!(ACEGVAR(medical_statemachine,AIUnconsciousness))) && (!(_this getVariable [QEGVAR(conversion,convert),false])) && {!isPlayer _this}) exitWith {
-    true
-};
+if !(_this getVariable [QGVAR(convert), false]) exitWith { false };
 
-false
+if (isNil GRLIB_fob_range) exitWith { false };
+if ((_this distance2d ([_this] call KPLIB_fnc_getNearestFob)) > GRLIB_fob_range) exitWith { false };
+
+if !([_this] call EFUNC(vitals,hasStableVitals)) exitWith { false };
+
+true
