@@ -3,6 +3,7 @@ PREP(init);
 PREP(handleRespawn);
 PREP(conditionSecondChance);
 PREP(conversionCheck);
+PREP(conversionCondition);
 PREP(conditionExecutionDeath);
 PREP(setDead);
 PREP(ticketConversion);
