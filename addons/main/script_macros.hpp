@@ -330,6 +330,10 @@
 #define VAR_BLOODPRESSURE_CHANGE       QEGVAR(circulation,bloodPressureChange)
 #define GET_BLOODPRESSURE_CHANGE(unit) (unit getVariable [VAR_BLOODPRESSURE_CHANGE, [0,0]])
 
+// Conversion
+#define UNIT_CONVERT                   QEGVAR(conversion,convert)
+#define GET_CONVERT_STATUS(unit)       (unit getVariable [UNIT_CONVERT, false])
+
 // Pharma
 #define VAR_VASOCONSTRICTION           QEGVAR(pharma,alphaAction)
 #define GET_VASOCONSTRICTION(unit)     (unit getVariable [VAR_VASOCONSTRICTION, 1])

@@ -7,7 +7,7 @@ class ACE_Medical_StateMachine {
     };
     class FatalInjury {
         class SecondChance {
-            condition = QFUNC(conditionSecondChance);
+            condition = QFUNC(KATConditionSecondChance);
         };
     };
     class CardiacArrest {
@@ -15,7 +15,7 @@ class ACE_Medical_StateMachine {
             condition = QFUNC(conversionCheck);
         };
         class Execution {
-            condition = QFUNC(conditionExecutionDeath);
+            condition = QFUNC(KATConditionExecutionDeath);
         };
     };
 };

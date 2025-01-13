@@ -18,9 +18,9 @@
 
 params ["_unit"];
 
-(if (isPlayer _unit || (_unit getVariable [QGVAR(convert), false])) then {
+(if (isPlayer _unit || GET_CONVERT_STATUS(_unit)) then {
     ACEGVAR(medical_statemachine,fatalInjuriesPlayer) != FATAL_INJURIES_NEVER
 } else {
-    ACEGVAR(medical_statemachine,fatalInjuriesAI) != FATAL_INJURIES_NEVER
+    (ACEGVAR(medical_statemachine,fatalInjuriesAI) != FATAL_INJURIES_NEVER) && {!(_unit getVariable [QEGVAR(misc,PreventInstantAIDeath), false])}
 })
 && {!(_unit getVariable [QACEGVAR(medical,deathBlocked), false])}

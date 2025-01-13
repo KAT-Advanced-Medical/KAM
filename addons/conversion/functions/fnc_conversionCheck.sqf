@@ -15,10 +15,8 @@
  * Public: No
  */
 
-params ["_patient"];
+params ["_unit"];
 
-if ((!(ACEGVAR(medical_statemachine,AIUnconsciousness))) && (!(_patient getVariable [QGVAR(convert),false])) && {!isPlayer _patient}) exitWith {
-    true
-};
-
-false
+if ((!(ACEGVAR(medical_statemachine,AIUnconsciousness))) && (!isPlayer _unit)) then {
+    GET_CONVERT_STATUS(_unit) != true
+}
