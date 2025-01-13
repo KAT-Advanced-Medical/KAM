@@ -7,6 +7,12 @@
         <Key ID="STR_KAT_Conversion_CONVERSION_ENABLE_DESC">
             <English>Enables Casualty Conversion for Players and Select AI</English>
         </Key>
+        <Key ID="STR_KAT_Conversion_CONVERSION_MESSAGE">
+            <English>Display Conversion</English>
+        </Key>
+        <Key ID="STR_KAT_Conversion_CONVERSION_MESSAGE_DESC">
+            <English>Enables text in patient menu that they are converted</English>
+        </Key>
         <Key ID="STR_KAT_Conversion_CONVERSION_TICKET_CONVERSION">
             <English>Ticket for Patient Conversion</English>
         </Key>

@@ -18,6 +18,15 @@ PREP_RECOMPILE_END;
 ] call CBA_Settings_fnc_init;
 
 [
+    QGVAR(enableConversionMessage),
+    "CHECKBOX",
+    [LLSTRING(CONVERSION_MESSAGE), LLSTRING(CONVERSION_MESSAGE_DESC)],
+    [CBA_SETTINGS_CAT, ELSTRING(GUI,SubCategory_Basic)],
+    [false],
+    true
+] call CBA_Settings_fnc_init;
+
+[
     QGVAR(enableTicketConversion),
     "CHECKBOX",
     [LLSTRING(CONVERSION_TICKET_CONVERSION), LLSTRING(CONVERSION_TICKET_CONVERSION_DESC)],

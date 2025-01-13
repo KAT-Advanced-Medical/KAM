@@ -21,7 +21,7 @@
 
     _previousUnit setName _setName;
 
-    _unit setDamage 1; 
+    forceRespawn player;
     deleteVehicle _unit;
 }] call CBA_fnc_addEventHandler;
 
@@ -30,5 +30,5 @@
     private _group2 = createGroup [(side _previousUnit), true]; 
     [_previousUnit] join _group2;
     _group2 setGroupOwner 2;
-    [_previousUnit, true] call ACEFUNC(medical_engine,setUnconsciousAnim);
+    ["ace_unconscious", [_previousUnit, true]] call CBA_fnc_serverEvent;
 }] call CBA_fnc_addEventHandler;

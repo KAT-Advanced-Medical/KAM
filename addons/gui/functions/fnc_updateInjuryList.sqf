@@ -132,7 +132,7 @@ if (_target call ACEFUNC(common,isAwake)) then {
     };
 };
 
-if (_target getVariable [QEGVAR(conversion,currentConverted),false]) then {
+if (_target getVariable [QEGVAR(conversion,currentConverted),false] && EGVAR(conversion,enableConversionMessage)) then {
     _entries pushBack [LELSTRING(conversion,ConversionText), [0.35, 0.72, 0.82, 1]];
 };
 
