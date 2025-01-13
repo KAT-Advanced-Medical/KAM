@@ -725,6 +725,9 @@
             <German>Normal</German>
             <Chinesesimp>正常</Chinesesimp>
         </Key>
+        <Key ID="STR_KAT_Surgery_Ultra_Airway_NoActivity">
+            <English>No Activity</English>
+        </Key>
         <Key ID="STR_KAT_Surgery_Ultra_Thorasic_PTX">
             <English>Pneumothorax</English>
             <Russian>Пневмоторакс</Russian>
@@ -760,6 +763,9 @@
             <Italian>Pneumotorace Iperteso</Italian>
             <German>Spannungspneumothorax</German>
             <Chinesesimp>张力性气胸</Chinesesimp>
+        </Key>
+        <Key ID="STR_KAT_Surgery_Ultra_Thorasic_NoActivity">
+            <English>No Activity</English>
         </Key>
         <Key ID="STR_KAT_Surgery_Ultra_Cardiac_Shockable">
             <English>Arrest - Shockable</English>
