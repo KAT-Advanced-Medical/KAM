@@ -3051,6 +3051,9 @@
             <Italian>Peso del tempo di deterioramento casuale</Italian>
             <Chinesesimp>随机劣化时间权重</Chinesesimp>
         </Key>
+        <Key ID="STR_KAT_Circulation_SETTING_AdvRhythm_HTHold">
+            <English>Enable H-and-T Holding in Arrest</English>
+        </Key>
         <Key ID="STR_KAT_Circulation_SETTING_AdvRhythm_deteriorateAfterTreatment">
             <English>Deteriorate After Treatment</English>
             <Japanese>治療後に調律状態が悪化するようにする</Japanese>
