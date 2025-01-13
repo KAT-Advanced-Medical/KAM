@@ -18,5 +18,6 @@
 params ["_medic", "_patient"];
 
 if !(IS_UNCONSCIOUS(_patient)) exitWith { false };
+if !(LIB_CONVERSION_DISTANCE(_patient)) exitWith { false };
 
 true

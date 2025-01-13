@@ -17,11 +17,11 @@
 
 params ["_patient"];
 
-private _storageAreas = (([_patient] call KPLIB_fnc_getNearestFob) nearobjects (GRLIB_fob_range)) select {(_x getVariable ["KP_liberation_storage_type",-1]) == 0};
-private _crate = [KP_liberation_supplyCrate, GVAR(enableLiberationConversionGain), [[getPos _patient] select 0, [getPos _patient] select 1, 10000]];
+private _storageAreas = (([getPos _patient] call KPLIB_fnc_getNearestFob) nearobjects (GRLIB_fob_range)) select {(_x getVariable ["KP_liberation_storage_type",-1]) == 0};
+private _crate = [KP_liberation_supplyCrate, GVAR(enableLiberationConversionGain), [(position _patient) select 0, (position _patient) select 1, 10000]] call KPLIB_fnc_createCrate;
 
 {
-    if ([_crate, _storage] call KPLIB_fnc_crateToStorage) then { break };
+    if ([_crate, _x] call KPLIB_fnc_crateToStorage) then { break };
 } forEach _storageAreas;
 
 _patient setDamage 1; 

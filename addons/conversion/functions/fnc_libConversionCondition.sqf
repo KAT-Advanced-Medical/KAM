@@ -20,8 +20,7 @@ params ["_patient"];
 if !(GVAR(enableLiberationConversion)) exitWith { false };
 if !(_patient getVariable [QGVAR(currentConverted), false]) exitWith { false };
 
-if (isNil GRLIB_fob_range) exitWith { false };
-if ((_patient distance2d ([_patient] call KPLIB_fnc_getNearestFob)) > GRLIB_fob_range) exitWith { false };
+if ((_patient distance2d ([getPos _patient] call KPLIB_fnc_getNearestFob)) > GRLIB_fob_range) exitWith { false };
 
 if !([_patient] call FUNC(conversionCondition)) exitWith { false };
 

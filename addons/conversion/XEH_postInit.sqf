@@ -32,3 +32,19 @@
     _group2 setGroupOwner 2;
     ["ace_unconscious", [_previousUnit, true]] call CBA_fnc_serverEvent;
 }] call CBA_fnc_addEventHandler;
+
+["kat_conversion_respawnTimer", {
+    params ["_time"];
+    private _currentRespawnTime = playerRespawnTime;
+    setPlayerRespawnTime _time;
+    _currentUnit = player;
+
+    [{
+        params ["_currentUnit"];
+    
+        (lifeState _currentUnit isEqualTo "HEALTHY")
+    }, {
+        params [_currentRespawnTime];
+        setPlayerRespawnTime _currentRespawnTime;
+    }, [_currentUnit, _currentRespawnTime], 360, {}] call CBA_fnc_waitUntilAndExecute;
+}] call CBA_fnc_addEventHandler;

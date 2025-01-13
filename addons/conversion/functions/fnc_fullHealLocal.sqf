@@ -22,3 +22,4 @@ if (hasInterface && GVAR(enable)) then {
 };
 
 _patient setVariable [QGVAR(currentConverted), false, true];
+_patient setVariable [QGVAR(associatedPlayer), player, true];

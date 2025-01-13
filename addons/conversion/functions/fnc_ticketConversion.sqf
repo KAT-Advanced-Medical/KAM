@@ -19,5 +19,11 @@ params ["_patient"];
 
 [(side _patient), GVAR(ticketConversionGain)] call BIS_fnc_respawnTickets;
 
+if (GVAR(enableSpectatorRespawn)) then {
+    if (lifeState (_patient getVariable [QGVAR(associatedPlayer), objNull]) isEqualTo "DEAD-RESPAWN") then {
+        ["kat_conversion_respawnTimer", 0] call CBA_fnc_localEvent;
+    };
+};
+
 _patient setDamage 1; 
 deleteVehicle _patient;

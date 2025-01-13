@@ -37,6 +37,12 @@
         <Key ID="STR_KAT_Conversion_CONVERSION_LIBERATION_CONVERSION_GAIN_DESC">
             <English>How much supply should be gien when converting patients</English>
         </Key>
+        <Key ID="STR_KAT_Conversion_CONVERSION_LIBERATION_CONVERSION_DISTANCE">
+            <English>Distance Required</English>
+        </Key>
+        <Key ID="STR_KAT_Conversion_CONVERSION_LIBERATION_CONVERSION_DISTANCE_DESC">
+            <English>How far do Liberation patients need to be from a FOB for a conversion to be valid</English>
+        </Key>
         <Key ID="STR_KAT_Conversion_CONVERSION_SPECTATOR_RESPAWN">
             <English>One Life Conversion</English>
         </Key>
