@@ -8,9 +8,6 @@ PREP_RECOMPILE_END;
 
 #define CBA_SETTINGS_CAT "KAT - ADV Medical: Conversion"
 
-// Overwrite ace statemachine
-ACEGVAR(medical,STATE_MACHINE) = (configFile >> "KAT_StateMachine") call CBA_statemachine_fnc_createFromConfig;
-
 [
     QGVAR(enable),
     "CHECKBOX",
