@@ -62,7 +62,7 @@ if (_patient getVariable [QEGVAR(circulation,effusion), 0] > 0) then {
     _cardiac = LSTRING(Ultra_Cardiac_Tamponade);
 };
 
-if (_patient getVariable [ACEGVAR(medical_status,causeOfDeath),nil) != nil) then {
+if (!alive) then {
     _cardiac = LSTRING(Ultra_Cardiac_Unshockable);
     _thorasic = LSTRING(Ultra_Thorasic_NoActivity);
     _airway = LSTRING(Ultra_Airway_NoActivity);
