@@ -1,7 +1,7 @@
 #include "..\script_component.hpp"
 /*
  * Author: mharis001
- * Edited: Mazinski.H
+ * Edited: Blue, Mazinski.H
  * Condition for going into cardiac arrest upon receiving a fatal injury.
  *
  * Arguments:
