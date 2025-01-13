@@ -2,20 +2,20 @@
 class ACE_Medical_StateMachine {
     class Unconscious {
         class DeathAI {
-            condition = QFUNC(conversionCheck);
+            condition = QUOTE(call FUNC(conversionCheck));
         };
     };
     class FatalInjury {
         class SecondChance {
-            condition = QFUNC(KATConditionSecondChance);
+            condition = QUOTE(call FUNC(KATConditionSecondChance));
         };
     };
     class CardiacArrest {
         class DeathAI {
-            condition = QFUNC(conversionCheck);
+            condition = QUOTE(call FUNC(conversionCheck));
         };
         class Execution {
-            condition = QFUNC(KATConditionExecutionDeath);
+            condition = QUOTE(call FUNC(KATConditionExecutionDeath));
         };
     };
 };
