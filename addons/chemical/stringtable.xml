@@ -920,5 +920,8 @@
             <Chinesesimp>确定在催泪瓦斯中投掷武器的几率</Chinesesimp>
             <German>Bestimmt die Wahrscheinlichkeit, die Waffe zu verlieren, während man unter dem Einfluss von Tränengas steht</German>
         </Key>
+        <Key ID="STR_KAT_Chemical_SETTING_gasMaskStaminaLoss">
+            <English>Enable Stamina Loss when using Gas Mask</English>
+        </Key>
     </Package>
 </Project>
