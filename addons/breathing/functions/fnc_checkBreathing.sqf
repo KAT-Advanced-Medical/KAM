@@ -43,7 +43,7 @@ if (_ph < 7.2) then {
     };
 };
 
-if ([_medic] call ACEFUNC(isMedic)) then {
+if ([_medic] call ACEFUNC(common,isMedic)) then {
     _breathRate = format ["%1%2", _breathRate, _rr];
 } else {
     switch (true) do {
