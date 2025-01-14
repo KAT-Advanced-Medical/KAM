@@ -39,14 +39,8 @@
         <Key ID="STR_KAT_Vitals_basicDiagnostic_description">
             <English>Vitals Kit which returns HR, BP, and RR</English>        
         </Key>
-        <Key ID="STR_KAT_Vitals_basicDiagnostic_display">
-            <English>Use Basic Vitals Kit</English>        
-        </Key>
         <Key ID="STR_KAT_Vitals_basicDiagnostic_progress">
             <English>Assessing Patient...</English>        
-        </Key>
-        <Key ID="STR_KAT_Vitals_basicDiagnostic_description">
-            <English>Vitals Kit which returns HR, BP, and RR</English>        
         </Key>
         <Key ID="STR_KAT_Vitals_BasicDiagnostic_Output">
             <English>HR: %1, BP: %2/%3, RR: %4</English>        
