@@ -399,6 +399,16 @@ if (isServer) then {
     true
 ] call CBA_Settings_fnc_init;
 
+// Sets whether or not H&T conditions keep patients in cardiac arrest until resolved
+[
+    QGVAR(AdvRhythm_HTHold),
+    "CHECKBOX",
+    LLSTRING(SETTING_AdvRhythm_HTHold),
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_AdvRhythms)],
+    [false],
+    true
+] call CBA_Settings_fnc_init;
+
 // Sets chance for Pulseless Electrical Activity / Asystole
 [
     QGVAR(AdvRhythm_PEAChance),
