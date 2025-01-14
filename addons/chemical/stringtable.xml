@@ -210,6 +210,7 @@
             <Italian>Rilevatore chimico JCAD</Italian>
             <French>Détecteur de produits chimiques JCAD</French>
             <Japanese>JCAD 化学剤検知器</Japanese>
+            <German>JCAD Chemiedetektor</German>
             <Chinesesimp>JCAD化学检测仪</Chinesesimp>
         </Key>
         <Key ID="STR_KAT_Chemical_ChemicalDetectorDescription">
@@ -217,6 +218,7 @@
             <Italian>Utilizzato per rilevare sostanze chimiche tossiche KAT</Italian>
             <French>Utilisé pour détecter les produits chimiques toxiques KAT</French>
             <Japanese>KAT毒性化学物質の検出に使用</Japanese>
+            <German>zum Nachweis toxischer KAT-Chemikalien</German>
             <Chinesesimp>用于检测KAT有毒化学物质</Chinesesimp>
         </Key>
         <Key ID="STR_KAT_Chemical_ChemicalDetector_Off">
@@ -856,24 +858,28 @@
             <English>Gas Mask Sound Volume</English>
             <Japanese>ガスマスクの音量</Japanese>
             <French>Volume sonore du masque à gaz</French>
+            <German>Lautstärke der Gasmaske</German>
             <Chinesesimp>防毒面具音量</Chinesesimp>
         </Key>
         <Key ID="STR_KAT_Chemical_SETTING_gasMaskSoundVolume_DESC">
             <English>Determines how loud the breathing sounds are when using the gas mask</English>
             <Japanese>ガスマスク使用時の呼吸音の大きさを定義します</Japanese>
             <French>Détermine l'intensité des bruits respiratoires lors de l'utilisation du masque à gaz.</French>
+            <German>Bestimmt die Lautstärke der Atemgeräusche während des Tragens einer Gasmaske</German>
             <Chinesesimp>确定使用防毒面具时呼吸声的音量</Chinesesimp>
         </Key>
         <Key ID="STR_KAT_Chemical_PutOnGasMask">
             <English>Put on gas mask</English>
             <Japanese>ガスマスクを装着</Japanese>
             <French>Mettre le masque à gaz</French>
+            <German>Gasmaske aufsetzen</German>
             <Chinesesimp>戴上防毒面具</Chinesesimp>
         </Key>
         <Key ID="STR_KAT_Chemical_TakeOffGasMask">
             <English>Take off gas mask</English>
             <Japanese>ガスマスクを外す</Japanese>
             <French>Enlever le masque à gaz</French>
+            <German>Gasmaske abnehmen</German>
             <Chinesesimp>摘下防毒面具</Chinesesimp>
         </Key>
         <Key ID="STR_KAT_Chemical_ChemicalDetector_Menu">
@@ -905,12 +911,14 @@
             <French>Chance de lâcher l'arme</French>
             <Japanese>武器を落とす確率</Japanese>
             <Chinesesimp>投掷武器机会</Chinesesimp>
+            <German>Chance, die Waffe unter Tränengas zu verlieren</German>
         </Key>
         <Key ID="STR_KAT_Chemical_SETTING_dropWeaponChance_DESC">
             <English>Determines chance for dropping weapon while in tear gas</English>
             <French>Détermine les chances de lâcher l'arme en cas d'exposition aux gaz lacrymogènes.</French>
             <Japanese>催涙ガスの中で武器を落とす確率を定義します</Japanese>
             <Chinesesimp>确定在催泪瓦斯中投掷武器的几率</Chinesesimp>
+            <German>Bestimmt die Wahrscheinlichkeit, die Waffe zu verlieren, während man unter dem Einfluss von Tränengas steht</German>
         </Key>
     </Package>
 </Project>

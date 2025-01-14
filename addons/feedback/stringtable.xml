@@ -34,6 +34,7 @@
         <Key ID="STR_KAT_Feedback_SETTING_OpioidEffect_display">
             <English>Enable opioid effect</English>
             <Japanese>オピオイド効果を有効化</Japanese>
+            <German>Opioidwirkung aktivieren</German>
             <Italian>Abilita l'effetto degli oppioidi</Italian>
             <French>Activer l'effet opioïde</French>
             <Chinesesimp>启用阿片类药物作用</Chinesesimp>
@@ -41,6 +42,7 @@
         <Key ID="STR_KAT_Feedback_SETTING_OpioidEffect_DESC">
             <English>Enables opioid effect on ketamine, fentanyl and pervitin</English>
             <Japanese>ケタミン、フェンタニル、ペルビチンなどでオピオイドの効果を有効にします</Japanese>
+            <German>Ermöglicht eine Opioidwirkung auf Ketamin, Fentanyl und Pervitin</German>
             <Italian>Abilita l'effetto degli oppioidi su ketamina, fentanil e pervitina</Italian>
             <French>Permet un effet opioïde sur la kétamine, le fentanyl et la pervitine</French>
             <Chinesesimp>使阿片类药物对氯胺酮、芬太尼和帕维汀产生作用</Chinesesimp>

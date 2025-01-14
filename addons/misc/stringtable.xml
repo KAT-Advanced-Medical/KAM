@@ -1646,6 +1646,7 @@
             <Portuguese>Utilizar kit cirúrgico (corpo inteiro)</Portuguese>
             <Dutch>Gebruik chirurgische kit (volledig lichaam)</Dutch>
             <Italian>Usa il Kit Chirurgico (Corpo Intero)</Italian>
+            <German>Operationsset benutzen (Ganzkörper)</German>
         </Key>
         <Key ID="STR_KAT_Misc_SETTING_EnableStitchFullBody">
             <English>Enable Full Body Stitching</English>
@@ -1655,6 +1656,7 @@
             <French>Activer la suture complète du corps</French>
             <Dutch>Schakel hechten van het volledige lichaam in</Dutch>
             <Italian>Abilita la Cucitura del Corpo Intero</Italian>
+            <German>Aktiviert das Vernähen aller Wunden</German>
             <Chinesesimp>启用全身缝合</Chinesesimp>
         </Key>
         <Key ID="STR_KAT_Misc_SETTING_EnableStitchFullBody_DESC">
@@ -1665,6 +1667,7 @@
             <French>Ajoute une option de suture complète du corps à côté de la suture de chaque partie du corps, en utilisant les paramètres et les valeurs établis par ACE pour plus de cohérence</French>
             <Dutch>Voegt een hechtingsactie toe voor het gehele lichaam, naast de standaard individuele hechtingsopties, die de waarden en instellingen van ACE gebruikt voor consistentie</Dutch>
             <Italian>Aggiunge un'opzione di cucitura del corpo intero insieme alla cucitura dei singoli arti, utilizzando le impostazioni e i valori stabiliti di ACE per coerenza</Italian>
+            <German>Fügt, neben dem Vernähen der Wunden eines jeweiligen Körperteils, die Option zum Vernähen der Wunden aller Körperteile hinzu. Hierbei werden die relevanten ACE Einstellungen verwendet werden.</German>
             <Chinesesimp>使用ACE的既定设置和值，在单个身体部位缝合的同时添加全身缝合选项，以保持一致性</Chinesesimp>
         </Key>
     </Package>
