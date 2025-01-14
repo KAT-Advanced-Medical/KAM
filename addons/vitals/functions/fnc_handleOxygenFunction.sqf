@@ -51,9 +51,9 @@ if (IN_CRDC_ARRST(_unit)) then {
     _demandVentilation = ((((_actualHeartRate * HEART_RATE_CO2_MULTIPLIER) / _anerobicPressure) + ((_previousCyclePaco2 - DEFAULT_PACO2) * 200)) max MINIMUM_VENTILATION);
     private _tidalVolume = GET_KAT_SURFACE_AREA(_unit);
 
-    // Respiratory Depth is supressed by Opioids and pneumothorax
-    private _respiratoryDepth = (DEFAULT_RESPIRATORY_DEPTH  - ((_unit getVariable [QEGVAR(breathing,pneumothorax), 0]) / 2));
-    _respiratoryDepression = [((_respiratoryDepth - (_opioidDepression * 5)) max MINIMUM_DEPTH), 10] select (_unit getVariable [QEGVAR(breathing,BVMInUse), false]);
+    // Tidal Volume is modified by respiratory depth which can be supressed by opioids and pneumothroax
+    private _respiratoryDepth = [((DEFAULT_RESPIRATORY_DEPTH / 10) - (_opioidDepression / 1.5), 10] select (_unit getVariable [QEGVAR(breathing,BVMInUse), false]);
+    private _tidalVolume = GET_KAT_SURFACE_AREA(_unit) * (_respiratoryDepth / 1);
     
     // Respiratory Rate Calculation
     _respiratoryRate = [((_demandVentilation / _tidalVolume)) min MAXIMUM_RR, 20] select (_unit getVariable [QEGVAR(breathing,BVMInUse), false]);
@@ -61,7 +61,7 @@ if (IN_CRDC_ARRST(_unit)) then {
     // If respiratory rate is low due to PaCO2, it starts increasing faster to compensate
     if (_previousCyclePaco2 > 50) then { _respiratoryRate = (_respiratoryRate + ((_previousCyclePaco2 - 50) * 0.2)) min MAXIMUM_RR};
 
-    _actualVentilation = _tidalVolume * _respiratoryRate * (_respiratoryDepression / 10);
+    _actualVentilation = _tidalVolume * _respiratoryRate;
 };
 
 private _paco2 = 40;
