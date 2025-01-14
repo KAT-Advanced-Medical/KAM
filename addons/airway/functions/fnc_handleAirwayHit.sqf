@@ -26,8 +26,8 @@ _allDamages select 0 params ["_damage", "_bodyPart"];
 if (!(GVAR(enable)) || !(_bodyPart isEqualTo "Head") || !(_ammo isKindOF "BulletBase")) exitWith {};
 
 if (floor (random 100) < GVAR(airwayDamageChance)) then {
-    private _occlusion = _unit getVariable (QGVAR(occlusion), 0);
+    private _occlusion = _unit getVariable [QGVAR(occlusion), 0];
     _occlusion = ((_occlusion + 1) min 4);
 
-    _unit setVariable (QGVAR(occlusion), _occlusion, true);
+    _unit setVariable [QGVAR(occlusion), _occlusion, true];
 };

@@ -26,7 +26,7 @@ _return = false;
 private _obstructonCount = count[_obstruction select { _x isEqualTo false }];
 
 // If a surgical airway is present, then the oral and upper airway obstructions are disregarded
-if (_surgical = false) then {
+if !(_surgical) then {
 
     // The worse the occlusion is, the fewer parts of the airway need to be obstructed for an airway blockage to occur
     switch (_occulsion) do {
