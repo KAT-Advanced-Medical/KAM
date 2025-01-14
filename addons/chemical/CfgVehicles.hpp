@@ -40,7 +40,7 @@ class CfgVehicles {
                     displayName = CSTRING(ChemicalDetector_Menu);
                     icon = QPATHTOF(ui\kat_chemicalDet_icon.paa);
                     exceptions[] = {"isNotSwimming"};
-                    
+
                     class KAT_ChemicalDetector_Enable {
                         displayName = CSTRING(EnableDetector);
                         condition = QUOTE(([_player] call FUNC(hasDetector)) && !(_player getVariable [ARR_2(QQGVAR(detectorEnabled),false)]));
@@ -145,15 +145,15 @@ class CfgVehicles {
                 displayName = CSTRING(UI_gasType);
                 typeName = "NUMBER";
                 class values {
+                    class TearGas {
+                        name = CSTRING(Lvl0_Gas);
+                        value = 0;
+                    };
                     class ToxicGas {
-                        name = CSTRING(LvL1_Gas);
+                        name = CSTRING(Lvl1_Gas);
                         value = 1;
                         default = 1;
                     };
-                   /* class csgas {
-                        name = "CS-Gas (Level 2)";
-                        value = "CS";
-                    };*/
                 };
             };
             class IsSealable

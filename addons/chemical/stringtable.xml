@@ -55,7 +55,7 @@
             <German>Bestimmt die Dauer, mit welcher man mit Gasmaske im Gas stehen kann, ohne infiziert zu werden.</German>
             <French>Détermine la durée où vous pouvez tenir dans un gaz avec un masque à gaz sans être infecté</French>
             <Korean>방독면을 사용하여 중독되지 않고 가스에 얼마나 오래 있을 수 있는지 결정합니다.</Korean>
-            <Japanese>ガスマスクを使用しながらガスの中にどれだけ長く感染せずにいられるかを定義します</Japanese>
+            <Japanese>ガスの中でガスマスクを装備した時に毒状態にならないで立っていられる時間を定義します</Japanese>
             <Italian>Determina per quanto tempo puoi stare nel gas con la maschera a gas prima di risultare intossicato.</Italian>
             <Portuguese>Determina quanto tempo você pode ficar no gás com uma máscara de gás sem ser infectado.</Portuguese>
             <Polish>Ustala jak długo możesz stać w gazie z maską bez zagrożenia infekcją</Polish>
@@ -87,7 +87,7 @@
             <German>Die Zeit, in der man im Gas stehen kann, bevor man infiziert wird bzw. eine Gasmaske benötigt.</German>
             <French>Durée où vous pouvez tenir dans un gaz avant d'être infecté ou d'avoir besoin d'un masque à gaz</French>
             <Korean>당신이 중독되거나 방독면이 필요하기 전에 가스 속에서 견딜 수 있는 시간입니다.</Korean>
-            <Japanese>ガスマスクを使わずに、感染せずガスの中に立つことができる時間を設定します</Japanese>
+            <Japanese>ガスの中でガスマスクを装備していない時に毒状態にならないで立っていられる時間を定義します</Japanese>
             <Italian>Tempo che puoi restare nel gas prima di rimanere intossicato o aver bisogno di una maschera a gas.</Italian>
             <Portuguese>Tempo que você pode ficar no gás antes de ser infectado ou precisar de uma máscara de gás.</Portuguese>
             <Polish>Ustala jak długo możesz stać w gazie zanim zostaniesz zainfekowany lub będziesz potrzebował maski gazowej.</Polish>
@@ -102,7 +102,7 @@
             <Spanish>El gas afecta a la IA</Spanish>
             <German>Gas beeinflusst KI</German>
             <French>Le gaz affecte les IA</French>
-            <Japanese>ガスがAIに影響を与えるか</Japanese>
+            <Japanese>AIへのガスの影響</Japanese>
             <Korean>가스가 인공지능에게도 영향을 미침</Korean>
             <Italian>Il gas è efficace contro la AI</Italian>
             <Portuguese>O gás afeta a IA</Portuguese>
@@ -132,11 +132,13 @@
         <Key ID="STR_KAT_Chemical_SETTING_showPoisoning">
             <English>Show Poisoning</English>
             <Japanese>中毒状態を表示</Japanese>
+            <French>Montrer l'empoisonnement</French>
             <Chinesesimp>显示中毒</Chinesesimp>
         </Key>
         <Key ID="STR_KAT_Chemical_SETTING_showPoisoning_DESC">
             <English>Determines if poisoning and intoxication is shown in the medical menu</English>
             <Japanese>中毒(poisoningとintoxication)状態を医療メニューに表示するかどうかを定義します</Japanese>
+            <French>Détermine si l'empoisonnement et l'intoxication sont affichés dans le menu médical</French>
             <Chinesesimp>确定医疗菜单中是否显示中毒</Chinesesimp>
         </Key>
         <Key ID="STR_KAT_Chemical_GasFilterItem">
@@ -208,6 +210,7 @@
             <Italian>Rilevatore chimico JCAD</Italian>
             <French>Détecteur de produits chimiques JCAD</French>
             <Japanese>JCAD 化学剤検知器</Japanese>
+            <German>JCAD Chemiedetektor</German>
             <Chinesesimp>JCAD化学检测仪</Chinesesimp>
         </Key>
         <Key ID="STR_KAT_Chemical_ChemicalDetectorDescription">
@@ -215,11 +218,13 @@
             <Italian>Utilizzato per rilevare sostanze chimiche tossiche KAT</Italian>
             <French>Utilisé pour détecter les produits chimiques toxiques KAT</French>
             <Japanese>KAT毒性化学物質の検出に使用</Japanese>
+            <German>zum Nachweis toxischer KAT-Chemikalien</German>
             <Chinesesimp>用于检测KAT有毒化学物质</Chinesesimp>
         </Key>
         <Key ID="STR_KAT_Chemical_ChemicalDetector_Off">
             <English>OFF</English>
             <Japanese>オフ</Japanese>
+            <French>ÉTEINT</French>
             <Chinesesimp>关闭</Chinesesimp>
         </Key>
         <Key ID="STR_KAT_Chemical_giveGasMask_action">
@@ -514,7 +519,7 @@
             <Spanish>Tipo: Cable trampa de Gas - Cuando se activa despliega un gas toxico. &lt;br /&gt;Rondas: 1&lt;br /&gt;Usado en: Tierra</Spanish>
             <German>Typ: Stolperdraht-Falle Senfgas - Versprüht bei Auslösung ein giftiges Gas.&lt;br /&gt;Ladungen: 1&lt;br /&gt;Benutzt auf: Boden</German>
             <French>Type : Gaz Tripwire - Spraye un gaz empoisonné quand activé.&lt;br /&gt;Munitions: 1&lt;br /&gt;Utilisé sur : le sol</French>
-            <Japanese>タイプ: 対人仕掛け線ガス地雷 - 作動で毒ガスを噴霧します&lt;br /&gt;弾薬: 1&lt;br /&gt;使用: 地上</Japanese>
+            <Japanese>タイプ: 対人仕掛け線ガス地雷 - 作動で毒ガスを噴霧します&lt;br /&gt;弾薬: 1&lt;br /&gt;使用: 地面</Japanese>
             <Korean>유형: 인계철선 가스 - 작동 시 독가스를 분사합니다.&lt;br /&gt;탄수: 1&lt;br /&gt;사용: 지상</Korean>
             <Italian>Tipo: Innesco a cavo GAS - Spruzza un gas velenoso quando innescato  &lt;br /&gt;Colpi: 1&lt;br /&gt;Usabile: Suolo</Italian>
             <Portuguese>Tipo: Tripwire gas - Espalha um gás venenoso quando acionado.&lt;br /&gt;Projéteis: 1&lt;br /&gt;Usado em: Solo</Portuguese>
@@ -594,7 +599,7 @@
             <Spanish>Granada antidisturbios de gas lacrimogeno M7A3</Spanish>
             <German>M7A3 CS Reizgas Granate</German>
             <French>Grenace à gaz CS anti-émeute M7A3</French>
-            <Japanese>M7A3 鎮圧CSガス手榴弾</Japanese>
+            <Japanese>M7A3 鎮圧用CSガス手榴弾</Japanese>
             <Korean>M7A3 진압용 CS가스 수류탄</Korean>
             <Italian>Granate CS-Gas antisommossa M7A3 </Italian>
             <Portuguese>Granada de gás CS M7A3</Portuguese>
@@ -749,12 +754,16 @@
             <Dutch>70mm GAS</Dutch>
             <Chinesesimp>70mm毒气</Chinesesimp>
         </Key>
-        <Key ID="STR_KAT_Chemical_LvL1_Gas">
+        <Key ID="STR_KAT_Chemical_Lvl0_Gas">
+            <English>Tear gas (Level 0)</English>
+            <Japanese>催涙ガス (レベル 0)</Japanese>
+        </Key>
+        <Key ID="STR_KAT_Chemical_Lvl1_Gas">
             <English>Toxic gas (Level 1)</English>
             <Spanish>Gas toxico (Nivel 1)</Spanish>
             <German>Senfgas (Level 1)</German>
             <French>Gaz toxique (Niveau 1)</French>
-            <Japanese>有毒ガス (レベル1)</Japanese>
+            <Japanese>有毒ガス (レベル 1)</Japanese>
             <Korean>유독가스 (레벨 1)</Korean>
             <Italian>Gas tossico (Livello 1)</Italian>
             <Portuguese>Gás tóxico (Nível 1)</Portuguese>
@@ -849,44 +858,52 @@
             <English>Gas Mask Sound Volume</English>
             <Japanese>ガスマスクの音量</Japanese>
             <French>Volume sonore du masque à gaz</French>
+            <German>Lautstärke der Gasmaske</German>
             <Chinesesimp>防毒面具音量</Chinesesimp>
         </Key>
         <Key ID="STR_KAT_Chemical_SETTING_gasMaskSoundVolume_DESC">
             <English>Determines how loud the breathing sounds are when using the gas mask</English>
             <Japanese>ガスマスク使用時の呼吸音の大きさを定義します</Japanese>
             <French>Détermine l'intensité des bruits respiratoires lors de l'utilisation du masque à gaz.</French>
+            <German>Bestimmt die Lautstärke der Atemgeräusche während des Tragens einer Gasmaske</German>
             <Chinesesimp>确定使用防毒面具时呼吸声的音量</Chinesesimp>
         </Key>
         <Key ID="STR_KAT_Chemical_PutOnGasMask">
             <English>Put on gas mask</English>
             <Japanese>ガスマスクを装着</Japanese>
             <French>Mettre le masque à gaz</French>
+            <German>Gasmaske aufsetzen</German>
             <Chinesesimp>戴上防毒面具</Chinesesimp>
         </Key>
         <Key ID="STR_KAT_Chemical_TakeOffGasMask">
             <English>Take off gas mask</English>
             <Japanese>ガスマスクを外す</Japanese>
             <French>Enlever le masque à gaz</French>
+            <German>Gasmaske abnehmen</German>
             <Chinesesimp>摘下防毒面具</Chinesesimp>
         </Key>
         <Key ID="STR_KAT_Chemical_ChemicalDetector_Menu">
             <English>JCAD</English>
             <Japanese>JCAD</Japanese>
+            <French>JCAD</French>
             <Chinesesimp>JCAD</Chinesesimp>
         </Key>
         <Key ID="STR_KAT_Chemical_EnableDetector">
             <English>Turn On Detector</English>
             <Japanese>検知器をつける</Japanese>
+            <French>Mise en marche du détecteur</French>
             <Chinesesimp>打开探测器</Chinesesimp>
         </Key>
         <Key ID="STR_KAT_Chemical_EnableDetectorSound">
             <English>Enable Warning Tone</English>
             <Japanese>警告音を有効化</Japanese>
+            <French>Activer les avertissements sonores</French>
             <Chinesesimp>启用警告音</Chinesesimp>
         </Key>
         <Key ID="STR_KAT_Chemical_DisableDetectorSound">
             <English>Disable Warning Tone</English>
             <Japanese>警告音を無効化</Japanese>
+            <French>Désactiver les avertissements sonores</French>
             <Chinesesimp>禁用警告音</Chinesesimp>
         </Key>
         <Key ID="STR_KAT_Chemical_SETTING_dropWeaponChance">
@@ -894,12 +911,14 @@
             <French>Chance de lâcher l'arme</French>
             <Japanese>武器を落とす確率</Japanese>
             <Chinesesimp>投掷武器机会</Chinesesimp>
+            <German>Chance, die Waffe unter Tränengas zu verlieren</German>
         </Key>
         <Key ID="STR_KAT_Chemical_SETTING_dropWeaponChance_DESC">
             <English>Determines chance for dropping weapon while in tear gas</English>
             <French>Détermine les chances de lâcher l'arme en cas d'exposition aux gaz lacrymogènes.</French>
-            <Japanese>催涙ガスの中にあるときに武器を落とす確率を定義します</Japanese>
+            <Japanese>催涙ガスの中で武器を落とす確率を定義します</Japanese>
             <Chinesesimp>确定在催泪瓦斯中投掷武器的几率</Chinesesimp>
+            <German>Bestimmt die Wahrscheinlichkeit, die Waffe zu verlieren, während man unter dem Einfluss von Tränengas steht</German>
         </Key>
     </Package>
 </Project>

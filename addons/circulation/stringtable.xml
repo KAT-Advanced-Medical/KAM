@@ -23,6 +23,7 @@
             <English>AI Simple Medical activated?</English>
             <Dutch>AI/KI simpel medische simulatie geactiveerd?</Dutch>
             <Spanish>¿Activar Médico Simple para IA?</Spanish>
+            <German>Vereinfachte med. Simulation für KI</German>
             <Japanese>AI用単純化医療を有効化</Japanese>
             <Italian>AI Simple Medical attivato?</Italian>
             <French>Médecine simplifiée pour l'IA ?</French>
@@ -1761,6 +1762,7 @@
             <Dutch>%1 bloedstaal</Dutch>
             <Spanish>%1 Muestra de sangre</Spanish>
             <Japanese>%1 血液サンプル</Japanese>
+            <German>%1 Blutprobe</German>
             <Italian>%1 Campione di sangue</Italian>
             <French>%1 échantillon de sang</French>
             <Chinesesimp>%1 血液样本</Chinesesimp>
@@ -1770,6 +1772,7 @@
             <Dutch>Voer ABG test uit</Dutch>
             <Spanish>Realizar prueba ABG</Spanish>
             <Japanese>ABGテストを行う</Japanese>
+            <German>Führ ein ABG-Test durch</German>
             <Italian>Eseguire test ABG</Italian>
             <French>Exécuter le test ABG</French>
             <Chinesesimp>运行ABG测试</Chinesesimp>
@@ -1779,6 +1782,7 @@
             <Dutch>ABG test</Dutch>
             <Spanish>Prueba ABG</Spanish>
             <Japanese>ABGテスト</Japanese>
+            <German>ABG-Test</German>
             <Italian>Test ABG</Italian>
             <French>Test ABG</French>
             <Chinesesimp>ABG测试</Chinesesimp>
@@ -1788,6 +1792,7 @@
             <Dutch>Voer %1 test uit</Dutch>
             <Spanish>Realizar prueba %1</Spanish>
             <Japanese>%1 テストを実施</Japanese>
+            <German>%1-Test anwenden</German>
             <Italian>Applicare il %1 Test</Italian>
             <French>Appliquer le test %1</French>
             <Chinesesimp>应用 %1 测试</Chinesesimp>
@@ -2042,12 +2047,14 @@
             <English>Enable ABG Testing</English>
             <French>Activer le test ABG</French>
             <Japanese>ABGテストを有効化</Japanese>
+            <German>ABG-Tests aktivieren</German>
             <Chinesesimp>启用ABG测试</Chinesesimp>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_abg_enable_DESC">
             <English>Enables ABG Testing and ACE Menu Visibility</English>
             <French>Permet le test ABG et la visibilité du menu ACE</French>
             <Japanese>ABGテストを有効化しACEメニューに表示します</Japanese>
+            <German>Ermöglicht ABG-Tests und Sichtbarkeit des ACE-Menüs</German>
             <Chinesesimp>启用ABG测试和ACE菜单可见性</Chinesesimp>
         </Key>
         <Key ID="STR_KAT_Circulation_bloodtype_log">
@@ -2663,6 +2670,7 @@
         <Key ID="STR_KAT_Circulation_ChangeCPRDevice">
             <English>Change Monitoring Device</English>
             <Japanese>モニタリングする装置を変更</Japanese>
+            <German>Überwachungsgerät ändern</German>
             <French>Changer le dispositif de surveillance</French>
             <Chinesesimp>更换监控设备</Chinesesimp>
         </Key>
@@ -2789,6 +2797,7 @@
             <Dutch>Neem Arterieel bloedstaal</Dutch>
             <Spanish>Extraer muestra arterial</Spanish>
             <Japanese>動脈サンプルを採る</Japanese>
+            <German>Arterielle Probe entnehmen</German>
             <Italian>Prelevare campione arterioso</Italian>
             <French>Prélèvement d'un échantillon artériel</French>
         </Key>
@@ -2797,6 +2806,7 @@
             <Dutch>Bloedstaal</Dutch>
             <Spanish>Muestra de sangre</Spanish>
             <Japanese>血液サンプル</Japanese>
+            <German>Blutprobe</German>
             <Italian>Campione di sangue</Italian>
             <French>Echantillon de sang</French>
             <Chinesesimp>血液样本</Chinesesimp>
@@ -2806,6 +2816,7 @@
             <Dutch>ABG resultaat</Dutch>
             <Spanish>Resultado ABG</Spanish>
             <Japanese>ABG結果</Japanese>
+            <German>ABG-Ergebnis</German>
             <Italian>Risultato del test ABG</Italian>
             <French>Résultat de l'ABG</French>
             <Chinesesimp>ABG结果</Chinesesimp>
@@ -3221,6 +3232,7 @@
             <Spanish>DEA-X: RC: %1 PS: --/-- SpO2: --- ETCo2: %2 Respiraciones/min: %3</Spanish>
             <Portuguese>DEA-X: FC: %1 PA: --/-- SpO2: --- ETCo2: %2 Respirações/min: %3</Portuguese>
             <Dutch>AED-X: HR %1 BD: --/-- SpO2: --- ETCo2: %2 Ademhalingen/min: %3</Dutch>
+            <German>AED-X: HR: %1 BP: -/- SpO2: - ETCo2: %2 Br/min: %3</German>
             <Italian>AED-X: HR: %1 BP: --/-- SpO2: --- ETCo2: %2 Respiri/min: %3</Italian>
             <Chinesesimp>AED-X: 心率(HR): %1 血压(BP):--/--血氧饱和度(SpO2):---呼气末二氧化碳浓度(ETCo2):%2呼吸/分钟：%3</Chinesesimp>
         </Key>
@@ -3232,6 +3244,7 @@
             <Spanish>DEA-X: RC: %1 PS: %2/%3 SpO2: %4 ETCo2: %5 Respiraciones/min: %6</Spanish>
             <Portuguese>DEA-X: FP: %1 PA: %2/%3 SpO2: %4 ETCo2: %5 Respirações/min: %6</Portuguese>
             <Dutch>AED-X: PR %1 BD: %2/%3 SpO2: %4 ETCo2: %5 Ademhalingen/min: %6</Dutch>
+            <German>AED-X: PR: %1 BP: %2/%3 SpO2: %4 ETCo2: %5 Br/min: %6</German>
             <Italian>AED-X: PR: %1 BP: %2/%3 SpO2: %4 ETCo2: %5 Respiri/min: %6</Italian>
             <Chinesesimp>AED-X: 心率(HR): %1 血压(BP):%2/%3血氧饱和度(SpO2):%4呼气末二氧化碳浓度(ETCo2):%5呼吸/分钟：%6</Chinesesimp>
         </Key>
@@ -3243,6 +3256,7 @@
             <Spanish>DEA-X: RC: %1 PS: %2/%3 SpO2: %4  ETCo2: %5 Respiraciones/min: %6</Spanish>
             <Portuguese>DEA-X: FC: %1 PA: %2/%3 SpO2: %4 ETCo2: %5 Respirações/min: %6</Portuguese>
             <Dutch>AED-X: HR %1 BD: %2/%3 SpO2: %4 ETCo2: %5 Ademhalingen/min: %6</Dutch>
+            <German>AED-X: HR: %1 BP: %2/%3 SpO2: %4  ETCo2: %5 Br/min: %6</German>
             <Italian>AED-X: HR: %1 BP: %2/%3 SpO2: %4 ETCo2: %5 Respiri/min: %6</Italian>
             <Chinesesimp>AED-X: 心率(HR): %1 血压(BP):%2/%3血氧饱和度(SpO2):%4呼气末二氧化碳浓度(ETCo2):%5呼吸/分钟：%6</Chinesesimp>
         </Key>
@@ -3395,6 +3409,7 @@
             <French>Chance de tamponnade au cours d'une blessure pénétrante</French>
             <Portuguese>Probabilidade de tamponamento em ferimentos penetrantes</Portuguese>
             <Dutch>Kans voor tamponade door penetrerende wonden</Dutch>
+            <German>Möglichkeit einer Tamponade bei penetrierenden Wunden</German>
             <Italian>Probabilità di tamponade in ferite penetranti</Italian>
             <Chinesesimp>穿透性伤口填塞的可能性</Chinesesimp>
         </Key>
@@ -3406,6 +3421,7 @@
             <French>Timer de progression de la tamponnade</French>
             <Portuguese>Temporizador de progresso de tamponamento</Portuguese>
             <Dutch>Tamponade progressie timer</Dutch>
+            <German>Tamponade-Fortschrittstimer</German>
             <Italian>Timer di progressione della tamponade</Italian>
             <Chinesesimp>填塞进展计时器</Chinesesimp>
         </Key>
@@ -3417,6 +3433,7 @@
             <French>Chance de progression de la tamponnade</French>
             <Portuguese>Probabilidade de progressão de tamponamento</Portuguese>
             <Dutch>Tamponade progressie kans</Dutch>
+            <German>Chance auf ein Fortschreiten der Tamponade</German>
             <Italian>Probabilità di progressione della tamponade</Italian>
             <Chinesesimp>填塞进展概率</Chinesesimp>
         </Key>
