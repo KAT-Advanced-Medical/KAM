@@ -34,7 +34,7 @@ if !(_surgical) then {
         case 3: { _return = false; }; // Full occlusion
         case 2: { _return = (_obstructionCount < 1); }; // Moderate occlusion
         case 1: { _return = (_obstructionCount < 2); }; // Mild occlusion
-        default: { _return = (_obstructionCount < 3); }; // No occlusion, obstruction needs 3 parts
+        default { _return = (_obstructionCount < 3); }; // No occlusion, obstruction needs 3 parts
     };
 } else {
     // Only check lower airway obstruction when a surgical airway is present
