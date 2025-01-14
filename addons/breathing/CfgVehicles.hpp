@@ -34,11 +34,7 @@ class CfgVehicles {
         };
     };
 
-    class NATO_Box_Base;
-    class ACE_medicalSupplyCrate: NATO_Box_Base {
-        class TransportItems;
-        class TransportMagazines;
-    };
+    class ACE_medicalSupplyCrate;
     class ACE_medicalSupplyCrate_advanced: ACE_medicalSupplyCrate {
         class TransportItems {
             MACRO_ADDITEM(kat_Pulseoximeter,3);

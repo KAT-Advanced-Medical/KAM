@@ -4,11 +4,7 @@ class CfgVehicles {
     class Item_Base_F;
     class Items_base_F;
     class WeaponHolder_Single_limited_item_F;
-    class NATO_Box_Base;
-    class ACE_medicalSupplyCrate: NATO_Box_Base {
-        class TransportItems;
-        class TransportMagazines;
-    };
+    class ACE_medicalSupplyCrate;
 
     class Land_Defibrillator_F: Items_base_F {
         ace_dragging_canCarry = 1;
