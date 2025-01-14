@@ -19,13 +19,12 @@ class CfgVehicles {
         mass = 60;
     };
 
-    class Tank: LandVehicle {};
-    class Tank_F: Tank {
+    class Tank: LandVehicle {
         class ACE_Actions {
             class ACE_MainActions;
         };
     };
-    class kat_stretcher: Tank_F {
+    class kat_stretcher: Tank {
         explosionEffect = "";
         fuelExplosionPower = 0;
         editorForceEmpty = 1;

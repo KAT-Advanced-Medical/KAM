@@ -9,7 +9,7 @@ class CfgVehicles {
         class TransportItems;
         class TransportMagazines;
     };
-    
+
     class Land_Defibrillator_F: Items_base_F {
         ace_dragging_canCarry = 1;
         ace_dragging_carryPosition[] = {0,1,1};
@@ -28,9 +28,9 @@ class CfgVehicles {
             MACRO_ADDITEM(kat_Painkiller,1);
         };
     };
-    
+
     class ACE_medicalSupplyCrate_advanced: ACE_medicalSupplyCrate {
-        class TransportItems: TransportItems {
+        class TransportItems {
             MACRO_ADDITEM(kat_amiodarone,20);
             MACRO_ADDITEM(kat_atropine,20);
             MACRO_ADDITEM(kat_IO_FAST,20);
@@ -49,13 +49,13 @@ class CfgVehicles {
             MACRO_ADDITEM(kat_etomidate,20);
             MACRO_ADDITEM(kat_EACA,20);
         };
-        class TransportMagazines: TransportMagazines {
+        class TransportMagazines {
             MACRO_ADDMAGAZINE(kat_Carbonate,10);
         };
     };
     class kat_pharmaMedicalCrate: ACE_medicalSupplyCrate {
         displayName = CSTRING(pharmaSupplyCrate_displayName);
-        class TransportItems: TransportItems {
+        class TransportItems {
             MACRO_ADDITEM(kat_amiodarone,15);
             MACRO_ADDITEM(kat_atropine,15);
             MACRO_ADDITEM(kat_EACA,15);
@@ -69,7 +69,7 @@ class CfgVehicles {
             MACRO_ADDITEM(kat_TXA,15);
             MACRO_ADDITEM(kat_nitroglycerin,15);
         };
-        class TransportMagazines: TransportMagazines {
+        class TransportMagazines {
             MACRO_ADDMAGAZINE(kat_Carbonate,15);
             MACRO_ADDMAGAZINE(kat_Painkiller,15);
         };

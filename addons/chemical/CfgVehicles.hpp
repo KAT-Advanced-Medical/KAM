@@ -222,7 +222,7 @@ class CfgVehicles {
         class TransportMagazines;
     };
     class ACE_Box_82mm_Mo_Combo: ACE_Box_82mm_Mo_HE {
-        class TransportMagazines: TransportMagazines {
+        class TransportMagazines {
             MACRO_ADDMAGAZINE(KAT_1Rnd_82mm_Mo_Type0,8);
             MACRO_ADDMAGAZINE(KAT_1Rnd_82mm_Mo_TypeCS,8);
         };
