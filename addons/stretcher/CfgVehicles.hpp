@@ -40,6 +40,7 @@ class CfgVehicles {
         armor = 20;
         displayName = CSTRING(Stretcher_Display);
         model = QPATHTOF(models\stretcher\vurtual_stretcher.p3d);
+        driverOpticsModel = "";
         simulation = "tankX";
         crewVulnerable = 1;
         explosionShielding = 0;
