@@ -82,7 +82,7 @@ class RscTitles
             class KatminTime: RscText
             {
                 idc = 22000;
-                style = ST_CENTER;
+                style = ST_RIGHT;
                 shadow = 0;
                 font = "PuristaBold";
                 text = "12:00"; //--- ToDo: Localize;
