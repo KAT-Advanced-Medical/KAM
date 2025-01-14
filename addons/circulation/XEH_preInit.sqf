@@ -406,7 +406,7 @@ if (isServer) then {
     LLSTRING(SETTING_AdvRhythm_HTHold),
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_AdvRhythms)],
     [true],
-    true,
+    true
 ] call CBA_Settings_fnc_init;
 
 // Sets chance for Pulseless Electrical Activity / Asystole
