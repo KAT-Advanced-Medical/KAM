@@ -50,6 +50,7 @@ if ([_medic] call ACEFUNC(common,isMedic)) then {
         case (_rr > 25): { _breathRate = LLSTRING(breathing_rrRapid); };
         case (_rr < 11): { _breathRate = LLSTRING(breathing_rrSlow); };
         default { _breathRate = LLSTRING(breathing_rrNormal); };
+    };
 };
 
 _output = format ["%1%2, %3", _breathing ,_breath, _breathRate];
