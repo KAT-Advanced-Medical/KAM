@@ -7,7 +7,7 @@ class ACE_Medical_Treatment_Actions {
         category = "examine";
         medicRequired = 0;
         consumeItem = 0;
-        callbackSuccess = callbackSuccess = QFUNC(basicDiagnostic);
+        callbackSuccess = QFUNC(basicDiagnostic);
         condition = QUOTE(missionNamespace getVariable [ARR_2(QQGVAR(enableBasicDiagnostic),false)]);
         items[] = {"kat_basicDiagnostic"};
     };
