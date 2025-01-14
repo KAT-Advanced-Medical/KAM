@@ -33,6 +33,8 @@ _bloodPressure params ["_bloodPressureLow", "_bloodPressureHigh"];
 
 if (_bloodPressureHigh > 20) then {
     _bloodPressureOutput = ACELSTRING(medical_treatment,Check_Bloodpressure_Output_1);
+    _bloodPressureHigh = if (_bloodPressureHigh % 2 != 0) then {_bloodPressureHigh - 1} else {_bloodPressureHigh};
+    _bloodPressureLow = if (_bloodPressureLow % 2 != 0) then {_bloodPressureLow - 1} else {_bloodPressureLow};
     _logOutput = format ["%1/%2", round _bloodPressureHigh, round _bloodPressureLow];
 };
 
