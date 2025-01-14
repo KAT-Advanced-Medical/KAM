@@ -2490,13 +2490,13 @@
             <Italian>Superficiale</Italian>
             <Chinesesimp>浅</Chinesesimp>
         </Key>
-        <Key ID="STR_KAT_Breathing_breathing_isRapid">
+        <Key ID="STR_KAT_Breathing_breathing_rrRapid">
             <English>Rapid</English>
         </Key>
-        <Key ID="STR_KAT_Breathing_breathing_isSlow">
+        <Key ID="STR_KAT_Breathing_breathing_rrSlow">
             <English>Slow</English>
         </Key>
-        <Key ID="STR_KAT_Breathing_breathing_isNormal">
+        <Key ID="STR_KAT_Breathing_breathing_rrNormal">
             <English>Normal</English>
         </Key>
         <Key ID="STR_KAT_Breathing_breathing_none">
