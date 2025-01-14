@@ -18,9 +18,9 @@
 
 params ["_medic", "_patient"];
 
-private _bloodPressure = GET_BLOOD_PRESSURE(unit)
+private _bloodPressure = GET_BLOOD_PRESSURE(_patient)
 private _hr = GET_HEART_RATE(_patient);
-private _rr = GET_BREATHING_RATE(unit)
+private _rr = GET_BREATHING_RATE(_patient)
 
 _bloodPressure params ["_bloodPressureLow", "_bloodPressureHigh"];
 _logOutput = format [LLSTRING(BasicDiagnostic_Output), _hr, _bloodPressureHigh, _bloodPressureLow, _rr];
