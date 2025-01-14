@@ -78,6 +78,22 @@ private _altitude = _display displayCtrl 22007;
     private _hour = floor dayTime;
     private _minute = floor ((dayTime - _hour) * 60);
 
+    if (_unit getVariable [QGVAR(katminSeconds),false]) then {
+        private _seconds = floor ((((dayTime - _hours) * 60) - _minutes) * 60);
+
+        _month ctrlShow false;
+        _day ctrlShow false;
+
+        _time ctrlSetText (format ["%1:%2:%3", [_hour, 2] call CBA_fnc_formatNumber, [_minute, 2] call CBA_fnc_formatNumber], [_seconds, 2] call CBA_fnc_formatNumber]);    
+    } else {
+        _month ctrlShow true;
+        _day ctrlShow true;
+
+        _time ctrlSetText (format ["%1:%2", [_hour, 2] call CBA_fnc_formatNumber, [_minute, 2] call CBA_fnc_formatNumber]);    
+        _month ctrlSetText (["JAN", "FEB", "MAR", "APR", "MAY", "JUN", "JUL", "AUG", "SEP", "OCT", "NOV", "DEC"] select (_monthNum - 1));
+        _day ctrlSetText (str(_dayNum));
+    };
+
     _time ctrlSetText (format ["%1:%2", [_hour, 2] call CBA_fnc_formatNumber, [_minute, 2] call CBA_fnc_formatNumber]);    
     _month ctrlSetText (["JAN", "FEB", "MAR", "APR", "MAY", "JUN", "JUL", "AUG", "SEP", "OCT", "NOV", "DEC"] select (_monthNum - 1));
     _day ctrlSetText (str(_dayNum));

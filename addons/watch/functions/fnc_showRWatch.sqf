@@ -71,6 +71,26 @@ private _o2 = _display displayCtrl 22810;
 
     _time ctrlSetText (format ["%1:%2:%3", [_hours, 2] call CBA_fnc_formatNumber, [_minutes, 2] call CBA_fnc_formatNumber, [_seconds, 2] call CBA_fnc_formatNumber]); 
 
+    if (_unit getVariable [QGVAR(rangerHands),false]) then {
+        _hour ctrlShow true;
+        _minute ctrlShow true;
+        _second ctrlShow true;
+
+        _hours = dayTime;
+
+        if (_hours > 12) then {
+            _hours = _hours - 12;
+        };
+
+        _hour ctrlSetAngle [(linearConversion [0, 12, _hours, 0, 360]), 0.5, 0.5, true];
+        _minute ctrlSetAngle [(linearConversion [0, 60, _minutes, 0, 360]), 0.5, 0.5, true];
+        _second ctrlSetAngle [(linearConversion [0, 60, _seconds, 0, 360]), 0.5, 0.5, true];
+    } else {
+        _hour ctrlShow true;
+        _minute ctrlShow true;
+        _second ctrlShow true;
+    };
+
     _hours = dayTime;
 
     if (_hours > 12) then {

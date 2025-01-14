@@ -103,3 +103,28 @@ if (!hasInterface) exitWith {};
 
     true
 }, { false }, [37, [false, false, true]], false] call CBA_fnc_addKeybind;
+
+["KAT Watch", QGVAR(katminTimeKey), CSTRING(TimeModifier_Settings), {
+    switch true do{
+        case (('KAT_Katmin' in assignedItems ACE_player)): {
+            private _katminSeconds = ACE_player getVariable [QGVAR(katminSeconds), false];
+
+            if (_katminSeconds) then {
+                ACE_player setVariable [QGVAR(katminSeconds),false,true];
+            } else {
+                ACE_player setVariable [QGVAR(katminSeconds),true,true];
+            };
+        };
+        case (('KAT_Ranger' in assignedItems ACE_player)): {
+            private _rangerHands = ACE_player getVariable [QGVAR(rangerHands), false];
+
+            if (_rangerHands) then {
+                ACE_player setVariable [QGVAR(rangerHands),false,true];
+            } else {
+                ACE_player setVariable [QGVAR(rangerHands),true,true];
+            };     
+        };
+    };
+
+    true
+}, { false }, [25, [false, false, true]], false] call CBA_fnc_addKeybind;
