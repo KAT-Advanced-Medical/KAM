@@ -18,7 +18,7 @@
 
 params ["_medic", "_patient"];
 
-private _bloodPressure = GET_BLOOD_PRESSURE(_patient)
+private _bloodPressure = GET_BLOOD_PRESSURE(_patient);
 private _hr = GET_HEART_RATE(_patient);
 private _rr = GET_BREATHING_RATE(_patient)
 
