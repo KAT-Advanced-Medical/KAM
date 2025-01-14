@@ -71,7 +71,7 @@ private _o2 = _display displayCtrl 22810;
 
     _time ctrlSetText (format ["%1:%2:%3", [_hours, 2] call CBA_fnc_formatNumber, [_minutes, 2] call CBA_fnc_formatNumber, [_seconds, 2] call CBA_fnc_formatNumber]); 
 
-    if (_unit getVariable [QGVAR(rangerHands),false]) then {
+    if (_unit getVariable [QGVAR(rangerHands), false]) then {
         _hour ctrlShow true;
         _minute ctrlShow true;
         _second ctrlShow true;
