@@ -1,5 +1,6 @@
 class CfgWeapons {
     class ACE_ItemCore;
+    class CBA_MiscItem_ItemInfo;
     class kat_basicDiagnostic: ACE_ItemCore {
         scope = 2;
         author = "Mazinski";
