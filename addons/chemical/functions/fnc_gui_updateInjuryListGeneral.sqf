@@ -21,6 +21,7 @@
 params ["_ctrl", "_target", "_selectionN", "_entries"];
 
 private _poisontype = _target getVariable [QGVAR(poisonType),""];
-if (_target getVariable [QGVAR(airPoisoning),false]) then{
+
+if (_target getVariable [QGVAR(airPoisoning),false] && (missionNamespace getVariable [QGVAR(showPoisoning), true])) then{
     _entries pushBack [LLSTRING(Intoxication), [0.4,0,0.5,1]];
 };

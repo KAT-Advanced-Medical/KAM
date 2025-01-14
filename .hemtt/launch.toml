@@ -2,5 +2,11 @@
 workshop = [
     "450814997", # CBA_A3's Workshop ID
     "463939057", # ACE3's Workshop ID
-    "2369477168", # Advanced Developer Tools's Workshop ID
+    "2369477168" # Advanced Developer Tools's Workshop ID
+]
+
+[rhs]
+extends = "default"
+workshop = [
+    "843577117", # RHS USAF Workshop ID
 ]

@@ -19,8 +19,3 @@
 
 /// ChromAberration effect
 params ["_target", "_bodyPart", "_opioidRelief"];
-
-private _opioidFactor = _target getVariable [QGVAR(opioidFactor), 1];
-if (_opioidFactor == 1) then {
-    _target setVariable [QGVAR(opioidFactor), _opioidRelief, true];
-};

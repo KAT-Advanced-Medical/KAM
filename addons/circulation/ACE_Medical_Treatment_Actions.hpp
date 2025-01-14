@@ -1,11 +1,11 @@
 class ACE_Medical_Treatment_Actions {
-    class FieldDressing;
+    class BasicBandage;
     class Morphine;
     class Diagnose;
     class CheckPulse: Diagnose {
         callbackSuccess = QFUNC(checkPulse);
     };
-    class CPR {
+    class CPR: BasicBandage {
         displayNameProgress = "";
         treatmentTime = 0.01;
         callbackStart = "";
@@ -95,8 +95,8 @@ class ACE_Medical_Treatment_Actions {
         displayName = CSTRING(DrawArterial_Action_Use);
         displayNameProgress = CSTRING(DrawBlood_Action_Progress);
         treatmentTime = 10;
+        condition = QUOTE(GVAR(abgEnable));
         callbackSuccess = QFUNC(drawArterial);
-        condition = "true";
         items[] = {"kat_IV_16"};
     };
 

@@ -32,6 +32,11 @@ private _fnc_advRhythm = {
     params ["_patient", ["_CPR",false]];
 
     private _patientState = _patient getVariable [QGVAR(cardiacArrestType), 0];
+    private _ht = if (GVAR(AdvRhythm_HTHold)) then {
+        ((count(_patient getVariable [QGVAR(ht), []])) == 0)
+    } else {
+        true
+    };
 
     if (_CPR) then {
         if (floor (random 100) < GVAR(AdvRhythm_CPR_ROSC_Chance)) then {
@@ -57,7 +62,7 @@ private _fnc_advRhythm = {
         };
     };
 
-    if (_patient getVariable [QGVAR(cardiacArrestType), 0] isEqualTo 0) exitWith {
+    if ((_patient getVariable [QGVAR(cardiacArrestType), 0] isEqualTo 0) && _ht) exitWith {
         [QACEGVAR(medical,CPRSucceeded), _patient] call CBA_fnc_localEvent;
     };
 

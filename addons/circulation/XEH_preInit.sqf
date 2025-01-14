@@ -73,6 +73,16 @@ if (isServer) then {
     true
 ] call CBA_Settings_fnc_init;
 
+// Enables ABG Menu and Testing
+[
+    QGVAR(abgEnable),
+    "CHECKBOX",
+    [LLSTRING(SETTING_abg_enable), LLSTRING(SETTING_abg_enable_DESC)],
+    [CBA_SETTINGS_CAT, ELSTRING(GUI,SubCategory_Basic)],
+    [false],
+    true
+] call CBA_Settings_fnc_init;
+
 //location for AED - Defi:
 [
     QGVAR(useLocation_AED),
@@ -386,6 +396,16 @@ if (isServer) then {
     LLSTRING(SETTING_AdvRhythm_deteriorateTimeWeight),
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_AdvRhythms)],
     [20,3600,180,0],
+    true
+] call CBA_Settings_fnc_init;
+
+// Sets whether or not H&T conditions keep patients in cardiac arrest until resolved
+[
+    QGVAR(AdvRhythm_HTHold),
+    "CHECKBOX",
+    LLSTRING(SETTING_AdvRhythm_HTHold),
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_AdvRhythms)],
+    [false],
     true
 ] call CBA_Settings_fnc_init;
 

@@ -1,8 +1,4 @@
-#include "..\defines.hpp"
-
-class RscPicture;
 class RscLine;
-class RscText;
 class RscBackground;
 class RscButton;
 class RscStructuredText;
@@ -107,14 +103,14 @@ class GVAR(AEDX_Monitor_Dialog) {
             x = QUOTE(KAT_pxToScreen_X(1010));
             colorBackground[] = {0.73,0.02,0.74,1};
             colorText[] = {0,0,0,1};
-            text = "Resp";
+            text = "CO2";
         };
         class RespirationRateDisplayBackgroundText: RespirationRateDisplayBackground {
             idc = -1;
             style = 1;
             colorBackground[] = {0,0,0,0};
             font = "RobotoCondensedLight";
-            text = "/min";
+            text = "mmHg";
         };
         class SpO2DisplayBackground: HeartRateVitalsDisplayBackground {
             idc = -1;
@@ -206,12 +202,39 @@ class GVAR(AEDX_Monitor_Dialog) {
             text = "";
         };
         class RespirationRateDisplay: HeartRateDisplay {
-            idc = IDC_DISPLAY_RESP;
+            idc = IDC_DISPLAY_RR_DEFAULT;
             x = QUOTE(KAT_pxToScreen_X(1010));
             h = QUOTE(KAT_pxToScreen_H(120));
             sizeEx = QUOTE(KAT_GRID_H * 0.7 * (0.55 / (getResolution select 5)));
             colorText[] = {0.73,0.02,0.74,1};
             text = "Resp off";
+        };
+        class RespirationRateDisplay_ETCO2: RespirationRateDisplay {
+            idc = IDC_DISPLAY_ETCO2;
+            x = QUOTE(KAT_pxToScreen_X(1050));
+            y = QUOTE(KAT_pxToScreen_Y(1175));
+            h = QUOTE(KAT_pxToScreen_H(120));
+            sizeEx = QUOTE(KAT_GRID_H * 2.2 * (0.55 / (getResolution select 5)));
+            show = 0;
+            text = "40";
+        };
+        class RespirationRateDisplay_ACTUAL: RespirationRateDisplay {
+            idc = IDC_DISPLAY_RR;
+            x = QUOTE(KAT_pxToScreen_X(1060));
+            y = QUOTE(KAT_pxToScreen_Y(1260));
+            h = QUOTE(KAT_pxToScreen_H(120));
+            sizeEx = QUOTE(KAT_GRID_H * 1.7 * (0.55 / (getResolution select 5)));
+            show = 0;
+            text = "15";
+        };
+        class RespirationRateDisplay_BR: RespirationRateDisplay {
+            idc = IDC_DISPLAY_BR;
+            x = QUOTE(KAT_pxToScreen_X(990));
+            y = QUOTE(KAT_pxToScreen_Y(1269));
+            h = QUOTE(KAT_pxToScreen_H(120));
+            sizeEx = QUOTE(KAT_GRID_H * 1 * (0.55 / (getResolution select 5)));
+            show = 0;
+            text = "BR";
         };
         class SpO2Display: HeartRateDisplay {
             idc = IDC_DISPLAY_SPO2;

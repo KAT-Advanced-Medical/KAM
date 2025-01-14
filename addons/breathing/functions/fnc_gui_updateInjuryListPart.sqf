@@ -24,7 +24,7 @@ if (GVAR(showCyanosis) && _selectionN in [0,2,3]) then {
     private _spO2 = 0;
 
     if (alive _target) then {
-        _spO2 = GET_SPO2(_target);
+        _spO2 = GET_KAT_SPO2(_target);
     };
 
     if (_spO2 <= GVAR(slightValue) || HAS_TOURNIQUET_APPLIED_ON(_target,_selectionN)) then {

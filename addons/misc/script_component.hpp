@@ -20,3 +20,9 @@
 
 #define DAMAGED_MIN_THRESHOLD 0.45
 #define LIMPING_MIN_DAMAGE 0.5
+
+// Animations that would be played slower than this are instead played exactly as slow as this. (= Progress bar will take longer than the slowed down animation).
+#define ANIMATION_SPEED_MIN_COEFFICIENT 0.5
+
+// Animations that would be played faster than this are instead skipped. (= Progress bar too quick for animation).
+#define ANIMATION_SPEED_MAX_COEFFICIENT 2.5
