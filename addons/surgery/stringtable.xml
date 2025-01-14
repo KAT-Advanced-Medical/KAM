@@ -719,6 +719,9 @@
             <German>Normal</German>
             <Chinesesimp>正常</Chinesesimp>
         </Key>
+        <Key ID="STR_KAT_Surgery_Ultra_Airway_NoActivity">
+            <English>No Activity</English>
+        </Key>
         <Key ID="STR_KAT_Surgery_Ultra_Thorasic_PTX">
             <English>Left Side Pneumothorax</English>
         </Key>
@@ -739,6 +742,9 @@
         </Key>
         <Key ID="STR_KAT_Surgery_Ultra_Thorasic_Right_Tension">
             <English>Right Side Tension Pneumothorax</English>
+        </Key>
+        <Key ID="STR_KAT_Surgery_Ultra_Thorasic_NoActivity">
+            <English>No Activity</English>
         </Key>
         <Key ID="STR_KAT_Surgery_Ultra_Cardiac_Shockable">
             <English>Arrest - Shockable</English>
