@@ -127,10 +127,10 @@ class ACE_Medical_Treatment_Actions {
         animationMedicSelfProne = "AinvPpneMstpSlayW[wpn]Dnon_medic";
         litter[] = {};
     };
-    // class RightChestSeal: ChestSeal {
-    //     displayName = CSTRING(rightchestseal_display);
-    //     callbackSuccess = QUOTE([ARR_2(_medic,_patient)] call EFUNC(airway,handleRecoveryPosition); [ARR_7(_medic,_patient,_bodyPart,_className,objNull,_usedItem,1)] call FUNC(treatmentAdvanced_chestSeal););
-    // };
+    class RightChestSeal: ChestSeal {
+        displayName = CSTRING(rightchestseal_display);
+        callbackSuccess = QUOTE([ARR_2(_medic,_patient)] call EFUNC(airway,handleRecoveryPosition); [ARR_7(_medic,_patient,_bodyPart,_className,objNull,_usedItem,1)] call FUNC(treatmentAdvanced_chestSeal););
+    };
     class HemopneumothoraxTreatment {
         displayName = CSTRING(hemopneumothorax_display);
         displayNameProgress = CSTRING(treating);
@@ -226,7 +226,7 @@ class ACE_Medical_Treatment_Actions {
         treatmentTime = 7;
         items[] = {"kat_ncdKit"};
         condition = "true";
-        callbackSuccess = QUOTE([ARR_2(_medic,_patient)] call EFUNC(airway,handleRecoveryPosition); ARR_7(_medic,_patient,_bodyPart,_className,objNull,_usedItem,0)] call FUNC(treatmentAdvanced_tensionpneumothorax););
+        callbackSuccess = QUOTE([ARR_2(_medic,_patient)] call EFUNC(airway,handleRecoveryPosition); [ARR_7(_medic,_patient,_bodyPart,_className,objNull,_usedItem,0)] call FUNC(treatmentAdvanced_tensionpneumothorax););
         callbackFailure = "";
         callbackProgress = "";
         consumeItem = 1;
