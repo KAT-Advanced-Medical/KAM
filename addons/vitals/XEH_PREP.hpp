@@ -1,4 +1,6 @@
 PREP(addMedicationAdjustment);
+PREP(basicDiagnostic);
+PREP(basicDiagnosticLocal);
 PREP(handleUnitVitals);
 PREP(handleSimpleVitals);
 PREP(handleCardiacFunction);
