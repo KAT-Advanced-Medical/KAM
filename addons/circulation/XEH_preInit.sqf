@@ -405,7 +405,7 @@ if (isServer) then {
     "CHECKBOX",
     LLSTRING(SETTING_AdvRhythm_HTHold),
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_AdvRhythms)],
-    [true],
+    [false],
     true
 ] call CBA_Settings_fnc_init;
 
