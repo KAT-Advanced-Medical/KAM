@@ -275,16 +275,16 @@ class RscTitles
             class RespirationRateDisplay_ETCO2_Title: RespirationRateDisplay_Title {
                 idc = IDC_DISPLAY_ETCO2_TITLE;
                 x = QUOTE(KAT_pxToScreen_X(1050));
-                y = QUOTE(KAT_pxToScreen_X(1226));
+                y = QUOTE(KAT_pxToScreen_Y(875));
                 h = QUOTE(KAT_pxToScreen_H(120));
                 sizeEx = QUOTE(KAT_GRID_H * 2.2 * (0.55 / (getResolution select 5)));
                 show = 0;
                 text = "40";
             };
-            class RespirationRateDisplay_Actual_Title: RespirationRateDisplay_Title {
+            class RespirationRateDisplay_ACTUAL_Title: RespirationRateDisplay_Title {
                 idc = IDC_DISPLAY_RR_TITLE;
                 x = QUOTE(KAT_pxToScreen_X(1060));
-                y = QUOTE(KAT_pxToScreen_Y(1260));
+                y = QUOTE(KAT_pxToScreen_Y(960));
                 h = QUOTE(KAT_pxToScreen_H(120));
                 sizeEx = QUOTE(KAT_GRID_H * 1.7 * (0.55 / (getResolution select 5)));
                 show = 0;
@@ -293,7 +293,7 @@ class RscTitles
             class RespirationRateDisplay_BR_Title: RespirationRateDisplay_Title {
                 idc = IDC_DISPLAY_BR_TITLE;
                 x = QUOTE(KAT_pxToScreen_X(990));
-                y = QUOTE(KAT_pxToScreen_Y(1269));
+                y = QUOTE(KAT_pxToScreen_Y(969));
                 h = QUOTE(KAT_pxToScreen_H(120));
                 sizeEx = QUOTE(KAT_GRID_H * 1 * (0.55 / (getResolution select 5)));
                 show = 0;

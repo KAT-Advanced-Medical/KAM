@@ -212,7 +212,7 @@ class GVAR(AEDX_Monitor_Dialog) {
         class RespirationRateDisplay_ETCO2: RespirationRateDisplay {
             idc = IDC_DISPLAY_ETCO2;
             x = QUOTE(KAT_pxToScreen_X(1050));
-            y = QUOTE(KAT_pxToScreen_X(1226));
+            y = QUOTE(KAT_pxToScreen_Y(1175));
             h = QUOTE(KAT_pxToScreen_H(120));
             sizeEx = QUOTE(KAT_GRID_H * 2.2 * (0.55 / (getResolution select 5)));
             show = 0;
