@@ -66,6 +66,7 @@ if (IN_CRDC_ARRST(_unit)) then {
 
 private _paco2 = 40;
 
+// Come back to this
 if (EGVAR(breathing,paco2Active)) then {
     // The greater the imbalance between CO2 explusion and O2 intake, the higher PaCO2 gets
     _paco2 = if ((_demandVentilation / _actualVentilation) == 1) then { _previousCyclePaco2 + (PACO2_MAX_CHANGE min (-PACO2_MAX_CHANGE max ((DEFAULT_PACO2 + ((_anerobicPressure max 1) - 1) * 150) - _previousCyclePaco2))) } else { [ _previousCyclePaco2 - (PACO2_MAX_CHANGE * _deltaT), _previousCyclePaco2 + (PACO2_MAX_CHANGE * _deltaT)] select ((_demandVentilation / _actualVentilation) > 1) };                                    
@@ -112,5 +113,5 @@ private _o2Sat = ((_pao2 max 1)^2.7 / ((25 - (((_pH / DEFAULT_PH) - 1) * 150))^2
 
 _unit setVariable [VAR_BREATHING_RATE, (_respiratoryRate max 0), _syncValues];
 _unit setVariable [VAR_BLOOD_GAS, [_paco2, _pao2, _o2Sat, 24, _pH, _etco2], _syncValues];
-_unit setVariable [QGVAR(respiratoryDepth), (_respiratoryDepression max 0), _syncValues];
+_unit setVariable [QGVAR(respiratoryDepth), (_respiratoryDepth max 0), _syncValues];
 _o2Sat * 100
