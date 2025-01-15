@@ -62,6 +62,12 @@ if (_patient getVariable [QEGVAR(circulation,effusion), 0] > 0) then {
     _cardiac = LSTRING(Ultra_Cardiac_Tamponade);
 };
 
+if !(alive _patient) then {
+    _cardiac = LSTRING(Ultra_Cardiac_Unshockable);
+    _thorasic = LSTRING(Ultra_Thorasic_NoActivity);
+    _airway = LSTRING(Ultra_Airway_NoActivity);
+};
+
 [_patient, "quick_view", LSTRING(Ultra_Airway), [_airway]] call ACEFUNC(medical_treatment,addToLog);
 [_patient, "quick_view", LSTRING(Ultra_Cardiac), [_cardiac]] call ACEFUNC(medical_treatment,addToLog);
 [_patient, "quick_view", LSTRING(Ultra_Thorasic), [_thorasic]] call ACEFUNC(medical_treatment,addToLog);

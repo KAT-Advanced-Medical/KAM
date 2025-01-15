@@ -336,6 +336,7 @@
 
 //Surgery
 #define STRING_BODY_PARTS ["head", "body", "left arm", "right arm", "left leg", "right leg"]
+#define GET_REBOA_VOLUME(unit)         ([unit] call EFUNC(surgery,reboaVolume))
 
 //Feedback
 #define VAR_PP QEGVAR(feedback,ppEffect)

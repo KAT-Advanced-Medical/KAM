@@ -1,8 +1,8 @@
 class ACE_Medical_Treatment_Actions {
-    class FieldDressing;
+    class BasicBandage;
     class Morphine;
     class CheckPulse;
-    class CPR {
+    class CPR: BasicBandage {
         displayNameProgress = "";
         treatmentTime = 0.01;
         callbackStart = "";

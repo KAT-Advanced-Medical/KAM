@@ -21,3 +21,6 @@ if (!local _unit) exitWith {};
 
 _unit setVariable [QGVAR(rangerStart), false, true];
 _unit setVariable [QGVAR(rangerTimer), 0, true];
+_unit setVariable [QGVAR(rangerHands), true, true];
+
+_unit setVariable [QGVAR(katminSeconds), false, true];

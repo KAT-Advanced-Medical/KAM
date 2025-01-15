@@ -309,6 +309,26 @@ GVAR(PulseRateReady) = true;
         ctrlSetText [IDC_DISPLAY_BLOODPRESSURE_M, ""];
         ctrlSetText [IDC_DISPLAY_SPO2, "---"];
     };
+
+    private _hasEtco2Monitor = !(GVAR(AEDX_MonitorTarget) getVariable [QEGVAR(breathing,etco2Monitor),[]] isEqualTo []); //check for etco2 monitoring apparatus
+    private _etco2 = GET_ETCO2(GVAR(AEDX_MonitorTarget));
+    private _breathrate = GET_BREATHING_RATE(GVAR(AEDX_MonitorTarget));
+
+    if (_hasEtco2Monitor) then {
+        ctrlShow [IDC_DISPLAY_RR_DEFAULT, false];
+        ctrlShow [IDC_DISPLAY_RR, true];
+        ctrlShow [IDC_DISPLAY_ETCO2, true];
+        ctrlShow [IDC_DISPLAY_BR, true];
+
+        ctrlSetText [IDC_DISPLAY_RR, format["%1", round(_breathrate)]];
+        ctrlSetText [IDC_DISPLAY_ETCO2, format["%1", round(_etco2)]];
+    } else {
+        ctrlShow [IDC_DISPLAY_RR_DEFAULT, true];
+        ctrlShow [IDC_DISPLAY_RR, false];
+        ctrlShow [IDC_DISPLAY_ETCO2, false];
+        ctrlShow [IDC_DISPLAY_BR, false];
+    };
+
 }, 1, [_dlg]] call CBA_fnc_addPerFrameHandler;
 
 [{

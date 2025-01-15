@@ -166,14 +166,14 @@ class RscTitles
                 x = QUOTE(KAT_pxToScreen_X(1010));
                 colorBackground[] = {0.73,0.02,0.74,1};
                 colorText[] = {0,0,0,1};
-                text = "Resp";
+                text = "CO2";
             };
             class RespirationRateDisplayBackgroundText_Title: RespirationRateDisplayBackground_Title {
                 idc = -1;
                 style = 1;
                 colorBackground[] = {0,0,0,0};
                 font = "RobotoCondensedLight";
-                text = "/min";
+                text = "mmHg";
             };
             class SpO2DisplayBackground_Title: HeartRateVitalsDisplayBackground_Title {
                 idc = -1;
@@ -265,12 +265,39 @@ class RscTitles
                 text = "";
             };
             class RespirationRateDisplay_Title: HeartRateDisplay_Title {
-                idc = IDC_DISPLAY_RESP_TITLE;
+                idc = IDC_DISPLAY_RR_DEFAULT_TITLE;
                 x = QUOTE(KAT_pxToScreen_X(1010));
                 h = QUOTE(KAT_pxToScreen_H(120));
                 sizeEx = QUOTE(KAT_GRID_H * 0.7 * (0.55 / (getResolution select 5)));
                 colorText[] = {0.73,0.02,0.74,1};
                 text = "Resp off";
+            };
+            class RespirationRateDisplay_ETCO2_Title: RespirationRateDisplay_Title {
+                idc = IDC_DISPLAY_ETCO2_TITLE;
+                x = QUOTE(KAT_pxToScreen_X(1050));
+                y = QUOTE(KAT_pxToScreen_Y(875));
+                h = QUOTE(KAT_pxToScreen_H(120));
+                sizeEx = QUOTE(KAT_GRID_H * 2.2 * (0.55 / (getResolution select 5)));
+                show = 0;
+                text = "40";
+            };
+            class RespirationRateDisplay_ACTUAL_Title: RespirationRateDisplay_Title {
+                idc = IDC_DISPLAY_RR_TITLE;
+                x = QUOTE(KAT_pxToScreen_X(1060));
+                y = QUOTE(KAT_pxToScreen_Y(960));
+                h = QUOTE(KAT_pxToScreen_H(120));
+                sizeEx = QUOTE(KAT_GRID_H * 1.7 * (0.55 / (getResolution select 5)));
+                show = 0;
+                text = "15";
+            };
+            class RespirationRateDisplay_BR_Title: RespirationRateDisplay_Title {
+                idc = IDC_DISPLAY_BR_TITLE;
+                x = QUOTE(KAT_pxToScreen_X(990));
+                y = QUOTE(KAT_pxToScreen_Y(969));
+                h = QUOTE(KAT_pxToScreen_H(120));
+                sizeEx = QUOTE(KAT_GRID_H * 1 * (0.55 / (getResolution select 5)));
+                show = 0;
+                text = "BR";
             };
             class SpO2Display_Title: HeartRateDisplay_Title {
                 idc = IDC_DISPLAY_SPO2_TITLE;

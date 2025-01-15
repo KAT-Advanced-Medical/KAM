@@ -272,4 +272,24 @@ private _dlg = uiNamespace getVariable ["KAT_Circulation_AEDX_Monitor_Display", 
         (_dlg displayCtrl IDC_DISPLAY_BLOODPRESSURE_M_TITLE) ctrlSetText "";
         (_dlg displayCtrl IDC_DISPLAY_SPO2_TITLE) ctrlSetText "---";
     };
+
+    private _hasEtco2Monitor = !(GVAR(AEDX_MonitorTarget) getVariable [QEGVAR(breathing,etco2Monitor),[]] isEqualTo []); 
+    private _etco2 = GET_ETCO2(GVAR(AEDX_MonitorTarget));
+    private _breathrate = GET_BREATHING_RATE(GVAR(AEDX_MonitorTarget));
+
+    if (_hasEtco2Monitor) then {
+        (_dlg displayCtrl IDC_DISPLAY_RR_DEFAULT_TITLE) ctrlShow false;
+        (_dlg displayCtrl IDC_DISPLAY_RR_TITLE) ctrlShow true;
+        (_dlg displayCtrl IDC_DISPLAY_ETCO2_TITLE) ctrlShow true;
+        (_dlg displayCtrl IDC_DISPLAY_BR_TITLE) ctrlShow true;
+
+        (_dlg displayCtrl IDC_DISPLAY_RR_TITLE) ctrlSetText (format ["%1", round(_breathrate)]);
+        (_dlg displayCtrl IDC_DISPLAY_ETCO2_TITLE) ctrlSetText (format ["%1", round(_etco2)]);
+    } else {
+        (_dlg displayCtrl IDC_DISPLAY_RR_DEFAULT_TITLE) ctrlShow true;
+        (_dlg displayCtrl IDC_DISPLAY_RR_TITLE) ctrlShow false;
+        (_dlg displayCtrl IDC_DISPLAY_ETCO2_TITLE) ctrlShow false;
+        (_dlg displayCtrl IDC_DISPLAY_BR_TITLE) ctrlShow false;
+    };
+
 }, 1, [_dlg]] call CBA_fnc_addPerFrameHandler;
