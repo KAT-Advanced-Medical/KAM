@@ -40,4 +40,17 @@ params ["_unit"];
             ["kat_LSDF"] call ACEFUNC(advanced_fatigue,removeDutyFactor);
         };
     };
+
+    if (EGVAR(chemical,maskStaminaLoss)) then {
+        if (goggles _target in (missionNamespace getVariable [QGVAR(availGasmaskList), []])) then {
+            if (ACEGVAR(advanced_fatigue,enabled)) then {
+                ["kat_CMSK", 1.5] call ACEFUNC(advanced_fatigue,addDutyFactor);
+            } else {
+                _unit setStamina(getStamina _unit - 3);
+            };
+        } else {
+                ["kat_CMSK"] call ACEFUNC(advanced_fatigue,removeDutyFactor);
+        };
+    };
+
 }, 10, [_unit]] call CBA_fnc_addPerFrameHandler;

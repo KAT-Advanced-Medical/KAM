@@ -21,7 +21,7 @@
 params ["_medic", "_patient", "_reviveObject"];
 
 private _chance = 0;
-private _random = random 100;
+private _random = (random 100) - (GET_REBOA_VOLUME(_patient) * 10);
 private _randomAmi = random 4;
 private _epiBoost = 1;
 private _amiBoost = 0;
