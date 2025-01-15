@@ -6,7 +6,7 @@ class CfgWeapons {
         author = "Mazinski";
         displayName = CSTRING(basicDiagnostic_display);
         descriptionShort = CSTRING(basicDiagnostic_description);
-        picture = QPATHTOF(ui\BPCuff.paa); // FLAG
+        picture = QPATHTOF(ui\basicDiagnostic.paa); // FLAG
         icon = "";
         class ItemInfo: CBA_MiscItem_ItemInfo {
             mass = 8;
