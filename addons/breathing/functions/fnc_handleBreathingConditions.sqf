@@ -49,7 +49,7 @@ params ["_unit"];
                 _unit setStamina(getStamina _unit - 3);
             };
         } else {
-                ["kat_CMSK", 1.5] call ACEFUNC(advanced_fatigue,removeDutyFactor);
+                ["kat_CMSK"] call ACEFUNC(advanced_fatigue,removeDutyFactor);
         };
     };
 
