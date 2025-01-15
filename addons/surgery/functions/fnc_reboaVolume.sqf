@@ -17,7 +17,7 @@
 
 params ["_patient"];
 
-private _reboa = _patient getVariable [QGVAR(reboa),false];
+private _reboa = _patient getVariable [QGVAR(reboa), false];
 private _tourniquets = GET_TOURNIQUETS(_patient);
 private _volume = 0;
 
