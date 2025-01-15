@@ -211,7 +211,7 @@
         </Key>
         <Key ID="STR_KAT_Watch_TimeModifier_Settings">
             <English>Time Modifier (Katmin/Model R)</English>
-            <Japanese>指針の表示切り替え (Katmin/Model R)</Japanese>
+            <Japanese>盤面/指針の表示切り替え (Katmin K500/K12 Model R)</Japanese>
         </Key>
         <Key ID="STR_KAT_Watch_descentFT">
             <English>%1ft/s</English>
