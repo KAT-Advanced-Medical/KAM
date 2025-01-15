@@ -82,7 +82,7 @@ class RscTitles
             class KatminTime: RscText
             {
                 idc = 22000;
-                style = ST_RIGHT;
+                style = ST_CENTER;
                 shadow = 0;
                 font = "PuristaBold";
                 text = "12:00"; //--- ToDo: Localize;
@@ -93,6 +93,21 @@ class RscTitles
                 colorBackground[] = {0,0,0,0};
                 colorText[] = {1,1,1,1};
                 sizeEx = QUOTE(FRAME_H(3.1));
+            };
+            class KatminTimeSeconds: RscText
+            {
+                idc = 22008;
+                style = ST_CENTER;
+                shadow = 0;
+                font = "PuristaBold";
+                text = "12:00:00"; //--- ToDo: Localize;
+                x = QUOTE(SAFEZONE_X_RIGHTEDGE - FRAME_W(25) - FRAME_W(6.9));
+                y = QUOTE(SAFEZONE_Y_LOWEDGE - FRAME_H(8.1));
+                w = QUOTE(FRAME_W(9));
+                h = QUOTE(FRAME_H(4));
+                colorBackground[] = {0,0,0,0};
+                colorText[] = {1,1,1,1};
+                sizeEx = QUOTE(FRAME_H(2.9));
             };
             class KatminMonth: RscText
             {
