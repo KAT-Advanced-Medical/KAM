@@ -6,6 +6,7 @@ PREP(checkBreathing);
 PREP(checkOxygenMask);
 PREP(checkPersonalOxygen);
 PREP(checkPulseOximeter);
+PREP(createTamponade);
 PREP(detachPersonalOxygen);
 PREP(fullHealLocal);
 PREP(gui_updateBodyImage);
