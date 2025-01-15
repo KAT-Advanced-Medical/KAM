@@ -45,7 +45,7 @@ PREP_RECOMPILE_END;
     false
 ] call CBA_Settings_fnc_init;
 
-// Sets sound volume of gas mask breathing
+// Should gas mask affect stamina
 [
     QGVAR(maskStaminaLoss),
     "CHECKBOX",
