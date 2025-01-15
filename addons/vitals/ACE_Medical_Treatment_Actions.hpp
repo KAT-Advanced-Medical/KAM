@@ -4,11 +4,8 @@ class ACE_Medical_Treatment_Actions {
         displayName = CSTRING(basicDiagnostic_use);
         displayNameProgress = CSTRING(basicDiagnostic_progress);
         treatmentTime = QGVAR(basicDiagnosticTime);
-        category = "examine";
-        medicRequired = 0;
-        consumeItem = 0;
         callbackSuccess = QFUNC(basicDiagnostic);
-        condition = QUOTE(missionNamespace getVariable [ARR_2(QQGVAR(enableBasicDiagnostic),false)]);
+        condition = QUOTE(GVAR(enableBasicDiagnostic));
         items[] = {"kat_basicDiagnostic"};
     };
 };
