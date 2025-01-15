@@ -124,7 +124,9 @@ if (!hasInterface) exitWith {};
                 ACE_player setVariable [QGVAR(rangerHands),false,true];
             } else {
                 ACE_player setVariable [QGVAR(rangerHands),true,true];
-            };   
+            };
         };
     };
+
+    true
 }, { false }, [25, [false, false, true]], false] call CBA_fnc_addKeybind;
