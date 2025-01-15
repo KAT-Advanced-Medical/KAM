@@ -2490,6 +2490,18 @@
             <Italian>Superficiale</Italian>
             <Chinesesimp>浅</Chinesesimp>
         </Key>
+        <Key ID="STR_KAT_Breathing_breathing_rrRapid">
+            <English>RR: Rapid</English>
+            <Japanese>RR: 速い</Japanese>
+        </Key>
+        <Key ID="STR_KAT_Breathing_breathing_rrSlow">
+            <English>RR: Slow</English>
+            <Japanese>RR: 遅い</Japanese>
+        </Key>
+        <Key ID="STR_KAT_Breathing_breathing_rrNormal">
+            <English>RR: Normal</English>
+            <Japanese>RR: 正常</Japanese>
+        </Key>
         <Key ID="STR_KAT_Breathing_breathing_none">
             <English>Patient is not breathing</English>
             <Japanese>患者は呼吸していない</Japanese>
