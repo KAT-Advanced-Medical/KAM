@@ -21,8 +21,8 @@ params ["_ctrlGroup", "_target", "_selectionN"];
 
 private _ctrlPulseOximeterRight = _ctrlGroup controlsGroupCtrl IDC_BODY_RIGHTARM_PULSEOX;
 private _ctrlPulseOximeterLeft = _ctrlGroup controlsGroupCtrl IDC_BODY_LEFTARM_PULSEOX;
-private _ctrlChestSeal = _ctrlGroup controlsGroupCtrl IDC_BODY_TORSO_CHESTSEAL;
-private _ctrlChestInjury = _ctrlGroup controlsGroupCtrl IDC_BODY_TORSO_PNEUMOTHORAX;
+private _ctrlLeftChestSeal = _ctrlGroup controlsGroupCtrl IDC_BODY_TORSO_LEFTCHESTSEAL;
+private _ctrlLeftChestInjury = _ctrlGroup controlsGroupCtrl IDC_BODY_TORSO_LEFTPNEUMOTHORAX;
 private _ctrlRightChestSeal = _ctrlGroup controlsGroupCtrl IDC_BODY_TORSO_RIGHTCHESTSEAL;
 private _ctrlRightChestInjury = _ctrlGroup controlsGroupCtrl IDC_BODY_TORSO_RIGHTPNEUMOTHORAX;
 private _ctrlNasalCannula = _ctrlGroup controlsGroupCtrl IDC_BODY_HEAD_NASAL;
@@ -33,9 +33,9 @@ private _deepPenetratingInjury = _target getVariable [QGVAR(deepPenetratingInjur
 
 
 if (_activeChestSeal select 0) then {
-    _ctrlChestSeal ctrlShow true;
+    _ctrlLeftChestSeal ctrlShow true;
 } else {
-    _ctrlChestSeal ctrlShow false;
+    _ctrlLeftChestSeal ctrlShow false;
 };
 
 if (_activeChestSeal select 1) then {
@@ -47,9 +47,9 @@ if (_activeChestSeal select 1) then {
 //Check pneumothorax and injuries
 if (GVAR(PneumothoraxAlwaysVisible)) then {
     if (_pneumothoraxState select 0 > 0) then {
-        _ctrlChestInjury ctrlShow true;
+        _ctrlLeftChestInjury ctrlShow true;
     } else {
-        _ctrlChestInjury ctrlShow false;
+        _ctrlLeftChestInjury ctrlShow false;
     };
     if (_pneumothoraxState select 1 > 0) then {
         _ctrlRightChestInjury ctrlShow true;
@@ -58,9 +58,9 @@ if (GVAR(PneumothoraxAlwaysVisible)) then {
     };
 } else {
     if ((_deepPenetratingInjury select 0) || (_pneumothoraxState select 0 > 0)) then {
-        _ctrlChestInjury ctrlShow true;
+        _ctrlLeftChestInjury ctrlShow true;
     } else {
-        _ctrlChestInjury ctrlShow false;
+        _ctrlLeftChestInjury ctrlShow false;
     };
     if ((_deepPenetratingInjury select 1) || (_pneumothoraxState select 1 > 0)) then {
         _ctrlRightChestInjury ctrlShow true;
