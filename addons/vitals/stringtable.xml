@@ -27,5 +27,29 @@
             <French>Permettre le transfert de fluide du patient</French>
             <Chinesesimp>启用患者液体转移</Chinesesimp>
         </Key>
+        <Key ID="STR_KAT_Vitals_BASIC_DIAGNOSTIC_ENABLE">
+            <English>Enable Basic Vitals Kit</English>        
+        </Key>
+        <Key ID="STR_KAT_Vitals_BASIC_DIAGNOSTIC_TIME">
+            <English>Basic Vitals Kit Time</English>        
+        </Key>
+        <Key ID="STR_KAT_Vitals_basicDiagnostic_display">
+            <English>Basic Vitals Kit</English>        
+        </Key>
+        <Key ID="STR_KAT_Vitals_basicDiagnostic_description">
+            <English>Vitals Kit which returns HR, BP, and RR</English>        
+        </Key>
+        <Key ID="STR_KAT_Vitals_basicDiagnostic_use">
+            <English>Use Basic Vitals Kit</English>        
+        </Key>
+        <Key ID="STR_KAT_Vitals_basicDiagnostic_progress">
+            <English>Assessing Patient...</English>        
+        </Key>
+        <Key ID="STR_KAT_Vitals_BasicDiagnostic_Output">
+            <English>HR: %1, BP: %2/%3, RR: %4</English>        
+        </Key>
+        <Key ID="STR_KAT_Vitals_basicDiagnostic_Log">
+            <English>%1 - %2</English>        
+        </Key>
     </Package>
 </Project>

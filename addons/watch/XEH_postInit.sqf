@@ -18,7 +18,7 @@ if (!hasInterface) exitWith {};
 
     private _return = false;
 
-    switch true do{
+    switch true do {
         case (('KAT_Katmin' in assignedItems ACE_player)): {
             _return = true;
 
@@ -26,7 +26,7 @@ if (!hasInterface) exitWith {};
                 [ACE_player] call FUNC(showKWatch);
             } else {
                 call FUNC(hideKWatch);
-            };        
+            };
         };
         case (('KAT_Cavmin' in assignedItems ACE_player)): {
             _return = true;
@@ -35,7 +35,7 @@ if (!hasInterface) exitWith {};
                 [ACE_player] call FUNC(showCWatch);
             } else {
                 call FUNC(hideCWatch);
-            };      
+            };
         };
         case (('KAT_STS' in assignedItems ACE_player)): {
             _return = true;
@@ -44,7 +44,7 @@ if (!hasInterface) exitWith {};
                 [ACE_player] call FUNC(showSWatch);
             } else {
                 call FUNC(hideSWatch);
-            };   
+            };
         };
         case (('KAT_Ranger' in assignedItems ACE_player)): {
             _return = true;
@@ -53,7 +53,7 @@ if (!hasInterface) exitWith {};
                 [ACE_player] call FUNC(showRWatch);
             } else {
                 call FUNC(hideRWatch);
-            };     
+            };
         };
     };
 
@@ -107,7 +107,7 @@ if (!hasInterface) exitWith {};
 }, { false }, [37, [false, false, true]], false] call CBA_fnc_addKeybind;
 
 [CBA_KEYBIND_CAT, QGVAR(katminTimeKey), CSTRING(TimeModifier_Settings), {
-    switch true do{
+    switch true do {
         case (('KAT_Katmin' in assignedItems ACE_player)): {
             private _katminSeconds = ACE_player getVariable [QGVAR(katminSeconds), false];
 
@@ -124,9 +124,7 @@ if (!hasInterface) exitWith {};
                 ACE_player setVariable [QGVAR(rangerHands),false,true];
             } else {
                 ACE_player setVariable [QGVAR(rangerHands),true,true];
-            };     
+            };   
         };
     };
-
-    true
 }, { false }, [25, [false, false, true]], false] call CBA_fnc_addKeybind;

@@ -209,6 +209,9 @@
             <French>Démarrage et arrêt de la minuterie de la montre</French>
             <Chinesesimp>启动和停止手表定时器</Chinesesimp>
         </Key>
+        <Key ID="STR_KAT_Watch_TimeModifier_Settings">
+            <English>Time Modifier (K500/Model R)</English>
+        </Key>
         <Key ID="STR_KAT_Watch_descentFT">
             <English>%1ft/s</English>
             <Japanese>%1ft/s</Japanese>

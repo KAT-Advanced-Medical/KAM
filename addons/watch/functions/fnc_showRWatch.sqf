@@ -29,6 +29,7 @@ private _background = _display displayCtrl 22800;
 private _minute = _display displayCtrl 22802;
 private _hour = _display displayCtrl 22803;
 private _second = _display displayCtrl 22804;
+private _caps = _display displayCtrl 22805;
 private _time = _display displayCtrl 22806;
 private _timer = _display displayCtrl 22807;
 private _altitude = _display displayCtrl 22808;
@@ -37,7 +38,7 @@ private _o2 = _display displayCtrl 22810;
 
 [{
     _this params ["_args", "_pfhID"];
-    _args params ["_unit", "_hour", "_minute", "_second", "_time", "_timer", "_altitude", "_hr", "_o2"];
+    _args params ["_unit", "_hour", "_minute", "_second", "_time", "_timer", "_altitude", "_hr", "_o2", "_caps"];
 
     if !(GVAR(RangerActive)) exitWith {
         [QGVAR(closeWatchTimer), [_unit], _unit] call CBA_fnc_targetEvent;
@@ -71,15 +72,27 @@ private _o2 = _display displayCtrl 22810;
 
     _time ctrlSetText (format ["%1:%2:%3", [_hours, 2] call CBA_fnc_formatNumber, [_minutes, 2] call CBA_fnc_formatNumber, [_seconds, 2] call CBA_fnc_formatNumber]); 
 
-    _hours = dayTime;
+    if (_unit getVariable [QGVAR(rangerHands), true]) then {
+        _hour ctrlShow true;
+        _minute ctrlShow true;
+        _second ctrlShow true;
+        _caps ctrlShow true;
 
-    if (_hours > 12) then {
-        _hours = _hours - 12;
+        _hours = dayTime;
+
+        if (_hours > 12) then {
+            _hours = _hours - 12;
+        };
+
+        _hour ctrlSetAngle [(linearConversion [0, 12, _hours, 0, 360]), 0.5, 0.5, true];
+        _minute ctrlSetAngle [(linearConversion [0, 60, _minutes, 0, 360]), 0.5, 0.5, true];
+        _second ctrlSetAngle [(linearConversion [0, 60, _seconds, 0, 360]), 0.5, 0.5, true];
+    } else {
+        _hour ctrlShow false;
+        _minute ctrlShow false;
+        _second ctrlShow false;
+        _caps ctrlShow false;
     };
-
-    _hour ctrlSetAngle [(linearConversion [0, 12, _hours, 0, 360]), 0.5, 0.5, true];
-    _minute ctrlSetAngle [(linearConversion [0, 60, _minutes, 0, 360]), 0.5, 0.5, true];
-    _second ctrlSetAngle [(linearConversion [0, 60, _seconds, 0, 360]), 0.5, 0.5, true];
 
     private _timeValue = _unit getVariable [QGVAR(rangerTimer), 0];
 
@@ -93,5 +106,6 @@ private _o2 = _display displayCtrl 22810;
     _timer,
     _altitude,
     _hr,
-    _o2
+    _o2,
+    _caps
 ]] call CBA_fnc_addPerFrameHandler;
