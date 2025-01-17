@@ -79,6 +79,9 @@
         <Key ID="STR_KAT_Conversion_CONVERSION_MANUAL_CONVERSION_LOCATION_DESC">
             <English>What medical facility should a player be in order to perform an initial conversion</English>
         </Key>
+        <Key ID="STR_KAT_Conversion_CONVERSION_MANUAL_CONVERSION_TIME">
+            <English>Manual Conversion Time</English>
+        </Key>
         <Key ID="STR_KAT_Conversion_ConversionText">
             <English>Converted</English>
         </Key>

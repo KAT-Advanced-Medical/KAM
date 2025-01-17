@@ -8,7 +8,7 @@ class ACE_Medical_Treatment_Actions {
         category = "examine";
         medicRequired = QGVAR(manualConversionLevel);
         treatmentLocations = QGVAR(manualConversionLocation);
-        treatmentTime = 10;
+        treatmentTime = QGVAR(manualConversionTime);
         allowedSelections[] = {"Head", "Body", "LeftArm", "RightArm", "LeftLeg", "RightLeg"};
         items[] = {""};
         callbackSuccess = QFUNC(manualConversion);

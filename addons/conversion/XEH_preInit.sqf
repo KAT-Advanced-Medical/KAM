@@ -130,4 +130,13 @@ PREP_RECOMPILE_END;
     true
 ] call CBA_Settings_fnc_init;
 
+[
+    QGVAR(manualConversionTime),
+    "SLIDER",
+    [LLSTRING(CONVERSION_LIBERATION_CONVERSION_TIME)],
+    [CBA_SETTINGS_CAT, ELSTRING(GUI,SubCategory_Basic)],
+    [0, 60, 15, 0],
+    true
+] call CBA_Settings_fnc_init;
+
 ADDON = true;
