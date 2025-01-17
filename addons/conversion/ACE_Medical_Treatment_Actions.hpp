@@ -5,7 +5,6 @@ class ACE_Medical_Treatment_Actions {
         displayName = CSTRING(convertPatient);
         displayNameProgress = CSTRING(converting);
         condition = QFUNC(manualConversionCondition);
-        category = "examine";
         medicRequired = QGVAR(manualConversionLevel);
         treatmentLocations = QGVAR(manualConversionLocation);
         treatmentTime = 10;
