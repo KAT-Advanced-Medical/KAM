@@ -38,6 +38,7 @@ private _hr = _display displayCtrl 22004;
 private _o2 = _display displayCtrl 22005;
 private _temp = _display displayCtrl 22006;
 private _altitude = _display displayCtrl 22007;
+private _timeSeconds = _display displayCtrl 22008;
 
 // We seperate this into two PFHs because the compass PFH needs to be run much faster in order to rotate smoothly, but vitals only need an update every second because thats how fast handleUnitVitals runs.
 [{
@@ -57,7 +58,7 @@ private _altitude = _display displayCtrl 22007;
 
 [{
     _this params ["_args", "_pfhID"];
-    _args params ["_unit", "_time", "_month", "_day", "_baro", "_hr", "_o2", "_temp", "_altitude", "_rain", "_overcast", "_sun"];
+    _args params ["_unit", "_time", "_month", "_day", "_baro", "_hr", "_o2", "_temp", "_altitude", "_rain", "_overcast", "_sun", "_timeSeconds"];
 
     if !(GVAR(KatminActive)) exitWith {
         _pfhID call CBA_fnc_removePerFrameHandler;
@@ -78,9 +79,25 @@ private _altitude = _display displayCtrl 22007;
     private _hour = floor dayTime;
     private _minute = floor ((dayTime - _hour) * 60);
 
-    _time ctrlSetText (format ["%1:%2", [_hour, 2] call CBA_fnc_formatNumber, [_minute, 2] call CBA_fnc_formatNumber]);    
-    _month ctrlSetText (["JAN", "FEB", "MAR", "APR", "MAY", "JUN", "JUL", "AUG", "SEP", "OCT", "NOV", "DEC"] select (_monthNum - 1));
-    _day ctrlSetText (str(_dayNum));
+    if (_unit getVariable [QGVAR(katminSeconds), false]) then {
+        private _second = floor ((((dayTime - _hour) * 60) - _minute) * 60);
+
+        _timeSeconds ctrlShow true;
+        _time ctrlShow false;
+        _month ctrlShow false;
+        _day ctrlShow false;
+
+        _timeSeconds ctrlSetText (format ["%1:%2:%3", [_hour, 2] call CBA_fnc_formatNumber, [_minute, 2] call CBA_fnc_formatNumber, [_second, 2] call CBA_fnc_formatNumber]);    
+    } else {
+        _timeSeconds ctrlShow false;
+        _month ctrlShow true;
+        _day ctrlShow true;
+        _time ctrlShow true;
+
+        _time ctrlSetText (format ["%1:%2", [_hour, 2] call CBA_fnc_formatNumber, [_minute, 2] call CBA_fnc_formatNumber]);    
+        _month ctrlSetText (["JAN", "FEB", "MAR", "APR", "MAY", "JUN", "JUL", "AUG", "SEP", "OCT", "NOV", "DEC"] select (_monthNum - 1));
+        _day ctrlSetText (str(_dayNum));
+    };
 
     private _altitudeValue = (getPosASL _unit) select 2;
 
@@ -123,5 +140,6 @@ private _altitude = _display displayCtrl 22007;
     _altitude,
     _rain,
     _overcast,
-    _sun
+    _sun,
+    _timeSeconds
 ]] call CBA_fnc_addPerFrameHandler;

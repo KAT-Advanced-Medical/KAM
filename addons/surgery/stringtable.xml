@@ -727,6 +727,7 @@
         </Key>
         <Key ID="STR_KAT_Surgery_Ultra_Airway_NoActivity">
             <English>No Activity</English>
+            <Japanese>活動なし</Japanese>
         </Key>
         <Key ID="STR_KAT_Surgery_Ultra_Thorasic_PTX">
             <English>Pneumothorax</English>
@@ -766,6 +767,7 @@
         </Key>
         <Key ID="STR_KAT_Surgery_Ultra_Thorasic_NoActivity">
             <English>No Activity</English>
+            <Japanese>活動なし</Japanese>
         </Key>
         <Key ID="STR_KAT_Surgery_Ultra_Cardiac_Shockable">
             <English>Arrest - Shockable</English>
