@@ -9,7 +9,7 @@ class ACE_Medical_Treatment_Actions {
         medicRequired = QGVAR(manualConversionLevel);
         treatmentLocations = QGVAR(manualConversionLocation);
         treatmentTime = 10;
-        allowedSelections[] = {"Head", "Body", "LeftArm", "RightArm", "LeftLeg", "RightLeg"};
+        allowedSelections[] = {"All"};
         items[] = {""};
         callbackSuccess = QFUNC(manualConversion);
     };
