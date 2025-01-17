@@ -30,7 +30,7 @@
     private _group2 = createGroup [(side _previousUnit), true]; 
     [_previousUnit] join _group2;
     _group2 setGroupOwner 2;
-    ["ace_unconscious", [_previousUnit, true]] call CBA_fnc_serverEvent;
+    [_previousUnit, true] call ACEFUNC(medical,setUnconscious);
 }] call CBA_fnc_addEventHandler;
 
 ["kat_conversion_respawnTimer", {

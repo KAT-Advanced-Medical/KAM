@@ -17,8 +17,8 @@
 
 params ["_patient"];
 
-if ((missionNamespace getVariable ["GRLIB_fob_range", -1]) == -1) exitWith { false };
 if !(GVAR(enableLiberationConversion)) exitWith { false };
+if ((missionNamespace getVariable ["GRLIB_fob_range", -1]) == -1) exitWith { false };
 if !(_patient getVariable [QGVAR(currentConverted), false]) exitWith { false };
 
 if ((_patient distance2d ([getPos _patient] call KPLIB_fnc_getNearestFob)) > GRLIB_fob_range) exitWith { false };

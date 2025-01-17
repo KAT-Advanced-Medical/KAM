@@ -2,20 +2,20 @@
 class ACE_Medical_StateMachine {
     class Unconscious {
         class DeathAI {
-            condition = QUOTE(call FUNC(conversionCheck));
+            condition = QUOTE(call EFUNC(conversion,conversionCheck));
         };
     };
     class FatalInjury {
         class SecondChance {
-            condition = QUOTE(call FUNC(KATConditionSecondChance));
+            condition = QUOTE(call EFUNC(conversion,conversionKATConditionSecondChance));
         };
     };
     class CardiacArrest {
         class DeathAI {
-            condition = QUOTE(call FUNC(conversionCheck));
+            condition = QUOTE(call EFUNC(conversion,conversionCheck));
         };
         class Execution {
-            condition = QUOTE(call FUNC(KATConditionExecutionDeath));
+            condition = QUOTE(call EFUNC(conversion,KATConditionExecutionDeath));
         };
     };
 };
