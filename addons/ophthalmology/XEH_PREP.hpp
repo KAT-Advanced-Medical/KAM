@@ -1,5 +1,6 @@
 PREP(eyeShieldCondition);
 PREP(fullHealLocal);
+PREP(gui_updateInjuryListPart);
 PREP(handleDustInjury);
 PREP(handleExplosion);
 PREP(handleRespawn);
