@@ -3489,5 +3489,11 @@
         <Key ID="STR_KAT_Circulation_Actions_CheckingHRSteth">
             <English>Checking HR with Stethoscope</English>
         </Key>
+        <Key ID="STR_KAT_Circulation_SETTING_hardcoreDiagnose">
+            <English>Enable Hardcore HR and BP Diagnose</English>
+        </Key>
+        <Key ID="STR_KAT_Circulation_SETTING_hardcoreDiagnose_DESC">
+            <English>Makes measuring BP and HR imprecise without tools (Stethoscope or BP cuff)</English>
+        </Key>
     </Package>
 </Project>

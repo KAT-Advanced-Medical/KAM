@@ -32,8 +32,14 @@ _bloodPressure params ["_bloodPressureLow", "_bloodPressureHigh"];
 
 if (_bloodPressureLow > 40) then {
     if (_medic call ACEFUNC(medical_treatment,isMedic)) then {
-        _bloodPressureOutput = LSTRING(Check_Bloodpressure_Output_Palp);
-        _logOutput = format [LLSTRING(Bloodpressure_Output_Palp), (round (_bloodPressureLow / 10) * 10) + ([10, -10] select (random 1 > 0.5))];
+        if (GVAR(hardcoreDiagnose)) then {
+            _bloodPressureOutput = LSTRING(Check_Bloodpressure_Output_Palp);
+            _logOutput = format [LLSTRING(Bloodpressure_Output_Palp), (round (_bloodPressureLow / 10) * 10) + ([10, -10] select (random 1 > 0.5))];
+        } else {
+            _bloodPressureOutput = ACELSTRING(medical_treatment,Check_Bloodpressure_Output_1);
+            _logOutput = format ["%1/%2", round _bloodPressureHigh, round _bloodPressureLow];
+        }
+        
     } else {
         if (_bloodPressureHigh > 20) then {
             _bloodPressureOutput = ACELSTRING(medical_treatment,Check_Bloodpressure_Output_2);

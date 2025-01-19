@@ -584,6 +584,15 @@ if (isServer) then {
 ] call CBA_Settings_fnc_init;
 
 [
+    QGVAR(hardcoreDiagnose),
+    "CHECKBOX",
+    [LLSTRING(SETTING_hardcoreDiagnose),LLSTRING(SETTING_hardcoreDiagnose_DESC)],
+    [CBA_SETTINGS_CAT, ELSTRING(GUI,SubCategory_Basic)],
+    [false],
+    true
+] call CBA_Settings_fnc_init;
+
+[
     QGVAR(medLvl_BPCuff),
     "LIST",
     [LLSTRING(SETTING_BPCuff),LLSTRING(SETTING_BPCuff_DESC)],
