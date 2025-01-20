@@ -2910,6 +2910,12 @@
             <French>Spécifiez les masques que vous souhaitez utiliser comme masque à oxygène.</French>
             <Chinesesimp>设置哪些护目镜可以作为氧气面罩</Chinesesimp>
         </Key>
+        <Key ID="STR_KAT_Breathing_SETTING_AVAIL_OXYHELMET">
+            <English>Available Oxygen Helmets</English>
+        </Key>
+        <Key ID="STR_KAT_Breathing_SETTING_AVAIL_OXYHELMET_DISC">
+            <English>Sets which helmets can act as oxygen masks</English>
+        </Key>
         <Key ID="STR_KAT_Breathing_AttachPersonalOxygenTank">
             <English>Connect Personal Oxygen</English>
             <Japanese>個人用酸素供給機に接続</Japanese>
