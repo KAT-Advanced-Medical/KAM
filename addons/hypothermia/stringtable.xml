@@ -239,6 +239,9 @@
             <French>Le patient ressent de la chaleur</French>
             <Chinesesimp>患者感觉温暖</Chinesesimp>
         </Key>
+        <Key ID="STR_KAT_Hypothermia_temperature_warm">
+            <English>Patient feels hot</English>
+        </Key>
         <Key ID="STR_KAT_Hypothermia_Check_Temperature">
             <English>Check Temperature</English>
             <Dutch>Check temperatuur</Dutch>
