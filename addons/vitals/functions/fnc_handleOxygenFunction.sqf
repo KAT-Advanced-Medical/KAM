@@ -104,8 +104,7 @@ private _arrestPerfusion = [1, (1 * EGVAR(breathing,SpO2_PerfusionMultiplier))] 
 // PaO2 moves in controlled steps to prevent hard movements when Ventilation Demand spikes
 _pao2 = if (_previousCyclePao2 != _pao2) then { ([ (_previousCyclePao2 - ((PAO2_MAX_CHANGE * EGVAR(breathing,SpO2_MultiplyNegative) * _arrestPerfusion) * _deltaT)) , (_previousCyclePao2 + ((PAO2_MAX_CHANGE * EGVAR(breathing,SpO2_MultiplyPositive)) * _deltaT))] select ((_previousCyclePao2 - _pao2) < 0)) } else { _pao2 };
 
-// Oxy-Hemo Dissociation Curve, driven by PaO2 with shaping done by pH. Fatigue impacts added 
-private _fatigue = [0, (ACEGVAR(advanced_fatigue,anFatigue) / 2)] select (ACEGVAR(advanced_fatigue,enabled));
+// Oxy-Hemo Dissociation Curve, driven by PaO2 with shaping done by pH.
 private _o2Sat = (((_pao2 max 1)^2.7 / ((25 - (((_pH / DEFAULT_PH) - 1) * 150))^2.7 + _pao2^2.7))) min 0.999;
 
 _unit setVariable [VAR_BREATHING_RATE, (_respiratoryRate max 0), _syncValues];
