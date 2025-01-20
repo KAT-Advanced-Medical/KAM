@@ -57,6 +57,12 @@ if (_initial) then {
         _cardiacArrestType = 2;
     };
 
+    private _nitroCount = [_patient, "Nitroglycerin", false] call ACEFUNC(medical_status,getMedicationCount);
+
+    if ((_nitroCount < 0.7) && ((random 3) < 1)) then {
+        _cardiacArrestType = 1;
+    };
+
     _unit setVariable [QGVAR(cardiacArrestType), _cardiacArrestType, true];
 } else {
     _cardiacArrestType = _unit getVariable [QGVAR(cardiacArrestType), 0];
