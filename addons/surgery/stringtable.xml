@@ -725,6 +725,9 @@
             <German>Normal</German>
             <Chinesesimp>正常</Chinesesimp>
         </Key>
+        <Key ID="STR_KAT_Surgery_Ultra_Airway_Compromise">
+            <English>Compromised</English>
+        </Key>
         <Key ID="STR_KAT_Surgery_Ultra_Airway_NoActivity">
             <English>No Activity</English>
             <Japanese>活動なし</Japanese>
