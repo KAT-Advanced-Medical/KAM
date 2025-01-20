@@ -36,3 +36,12 @@ ADDON = true;
     [[0, 1], [LLSTRING(SETTING_AltitudeForm_meters), LLSTRING(SETTING_AltitudeForm_feet)], 0],
     true
 ] call CBA_Settings_fnc_init;
+
+[
+    QGVAR(watchInaccuracy),
+    "CHECKBOX",
+    [LLSTRING(SETTING_WatchInaccuracy), LLSTRING(SETTING__WatchInaccuracy_Desc)],
+    [CBA_SETTINGS_CAT, ELSTRING(GUI,SubCategory_Basic)],
+    [false],
+    true
+] call CBA_Settings_fnc_init;
