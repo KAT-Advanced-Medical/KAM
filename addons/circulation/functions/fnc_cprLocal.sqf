@@ -26,6 +26,7 @@ private _randomAmi = random 4;
 private _epiBoost = 1;
 private _amiBoost = 0;
 private _lidoBoost = 0;
+private _nitroEffect = 1;
 private _CPRcount = _patient getVariable [QGVAR(cprCount), 0];
 
 private _fnc_advRhythm = {
@@ -62,7 +63,11 @@ private _fnc_advRhythm = {
         };
     };
 
-    if ((_patient getVariable [QGVAR(cardiacArrestType), 0] isEqualTo 0) && _ht) exitWith {
+    if !(_ht) then {
+        _patient setVariable [QGVAR(cardiacArrestType), 1, true];
+    };
+
+    if ((_patient getVariable [QGVAR(cardiacArrestType), 0] isEqualTo 0)) exitWith {
         [QACEGVAR(medical,CPRSucceeded), _patient] call CBA_fnc_localEvent;
     };
 
@@ -91,6 +96,10 @@ private _fnc_advRhythm = {
         case "Lidocaine":
         {
             _lidoBoost = _lidoBoost + 8;
+        };
+        case "Nitroglycerin":
+        {
+            _nitroEffect = _nitroEffect + 1;
         };
     };
 } forEach (_patient getVariable [QACEGVAR(medical,medications), []]);
@@ -122,7 +131,7 @@ switch (_reviveObject) do {
 };
 
 if (_reviveObject in ["AED", "AEDX"]) exitWith {
-    _chance = _chance + (_amiBoost + (1 max _lidoBoost) * _epiBoost);
+    _chance = _chance + (_amiBoost + (1 max _lidoBoost) * _epiBoost) / _nitroEffect;
 
     private _patientState = _patient getVariable [QGVAR(cardiacArrestType), 0];
 
@@ -168,6 +177,8 @@ if !(GVAR(enable_CPR_Chances)) then {
     if (_patient getVariable [QGVAR(cardiacArrestType), 0] in [4,3] && _randomAmi > 2) then {
         _chance = _chance + _amiBoost;
     };
+
+    _chance = _chance / _nitroEffect;
 
     if (_random <= _chance) then {
         if (GVAR(AdvRhythm)) then {
