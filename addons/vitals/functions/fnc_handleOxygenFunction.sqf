@@ -76,7 +76,7 @@ if (IN_CRDC_ARRST(_unit)) then {
     };
 } else {
     // Generated ETCO2 quadratic. Ensures ETCO2 moves with Respiratory Rate and is constantly below PaCO2 
-    _etco2 = ((_paco2 - 3) - ((-0.0416667 * (_respiratoryRate^2)) + (3.09167 * (_respiratoryRate)) - DEFAULT_ETCO2) max 10);
+    _etco2 = ((_paco2 - 3) - ((-0.0416667 * (_respiratoryRate^2)) + (3.09167 * (_respiratoryRate)) - DEFAULT_ETCO2) max 10) min 0;
 };
 
 private _externalPh = 0;
