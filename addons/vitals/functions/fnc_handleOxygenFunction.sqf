@@ -100,7 +100,7 @@ private _pALVo2 = ((_fio2 * (_baroPressure - 47)) - (_paco2 / _anerobicPressure)
 private _pao2 = (DEFAULT_PAO2 - ((DEFAULT_ECB / ((GET_BODY_FLUID(_unit) select 0) max 500)) * ((_demandVentilation - _actualVentilation) / 120)));
 
 // PaO2 is shifted by the difference between PALVO2 and PaO2, capped by PALVO2
-_pao2 = (((linearConversion[-50, 50, (_pALVo2 - _pao2), -20, 20, true]) + _pao2) min _pALVo2) max 0;
+_pao2 = (((linearConversion[-50, 50, (_pALVo2 - _pao2), -20, 20, false]) + _pao2) min _pALVo2) max 0;
 
 private _arrestPerfusion = [1, (1 * EGVAR(breathing,SpO2_PerfusionMultiplier))] select ((IN_CRDC_ARRST(_unit)) && (EGVAR(breathing,SpO2_perfusion)));
 // PaO2 moves in controlled steps to prevent hard movements when Ventilation Demand spikes
