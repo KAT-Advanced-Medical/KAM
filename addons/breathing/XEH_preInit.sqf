@@ -42,7 +42,7 @@ PREP_RECOMPILE_END;
     "'H_PilotHelmetFighter_B', 'H_PilotHelmetFighter_O', 'H_PilotHelmetFighter_I', 'H_PilotHelmetFighter_I_E'",
     1,
     {
-        private _array = [_this, "CfgGlasses"] call EFUNC(chemical,getList);
+        private _array = [_this, "CfgWeapons"] call EFUNC(chemical,getList);
         missionNamespace setVariable [QGVAR(availOxyHelmetList), _array, true];
     },
     true
