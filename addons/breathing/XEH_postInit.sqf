@@ -35,7 +35,7 @@ private _array = [_items, "CfgGlasses"] call EFUNC(chemical,getList);
 
 missionNamespace setVariable [QGVAR(availOxyMaskList), _array, true];
 
-private _items = missionNamespace getVariable [QGVAR(availOxyHelmet), "'H_PilotHelmetFighter_B', 'H_PilotHelmetFighter_O', 'H_PilotHelmetFighter_I', 'H_PilotHelmetFighter_I_E'"];
-private _array = [_items, "CfgWeapons"] call EFUNC(chemical,getList);
+private _itemsHelmet = missionNamespace getVariable [QGVAR(availOxyHelmet), "'H_PilotHelmetFighter_B', 'H_PilotHelmetFighter_O', 'H_PilotHelmetFighter_I', 'H_PilotHelmetFighter_I_E'"];
+private _arrayHelmet = [_itemsHelmet, "CfgWeapons"] call EFUNC(chemical,getList);
 
-missionNamespace setVariable [QGVAR(availOxyHelmetList), _array, true];
+missionNamespace setVariable [QGVAR(availOxyHelmetList), _arrayHelmet, true];
