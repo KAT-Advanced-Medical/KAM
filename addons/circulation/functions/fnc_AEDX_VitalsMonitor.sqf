@@ -93,10 +93,10 @@ if (_patient getVariable ["kat_AEDXPatient_PFH", -1] isEqualTo -1) then {
             _pr = 0;
         } else {
             _spO2 = GET_KAT_SPO2(_patient);
-
-            _etco2 = GET_ETCO2(_patient);
-            _breathrate = GET_BREATHING_RATE(_patient);
         };
+        
+        private _etco2 = GET_ETCO2(_patient);
+        private _breathrate = GET_BREATHING_RATE(_patient);
 
         // List vitals depending on if AED pads and vitals monitoring (pressure cuff + pulse oximeter) is connected
         if (_patient getVariable [QGVAR(AED_X_VitalsMonitor_Connected), false] && _patient getVariable [QGVAR(DefibrillatorPads_Connected), false]) then {
