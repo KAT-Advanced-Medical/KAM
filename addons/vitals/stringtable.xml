@@ -28,28 +28,36 @@
             <Chinesesimp>启用患者液体转移</Chinesesimp>
         </Key>
         <Key ID="STR_KAT_Vitals_BASIC_DIAGNOSTIC_ENABLE">
-            <English>Enable Basic Vitals Kit</English>        
+            <English>Enable Basic Vitals Kit</English>
+            <Japanese>基本型バイタル診断キットを有効化</Japanese>
         </Key>
         <Key ID="STR_KAT_Vitals_BASIC_DIAGNOSTIC_TIME">
-            <English>Basic Vitals Kit Time</English>        
+            <English>Basic Vitals Kit Time</English>
+            <Japanese>基本型バイタル診断キットの所要時間</Japanese>
         </Key>
         <Key ID="STR_KAT_Vitals_basicDiagnostic_display">
-            <English>Basic Vitals Kit</English>        
+            <English>Basic Vitals Kit</English>
+            <Japanese>基本型バイタル診断キット</Japanese>
         </Key>
         <Key ID="STR_KAT_Vitals_basicDiagnostic_description">
-            <English>Vitals Kit which returns HR, BP, and RR</English>        
+            <English>Vitals Kit which returns HR, BP, and RR</English>
+            <Japanese>心拍(HR)、血圧(BP)、呼吸回数(RR)などのバイタルを計測可能な診断キット</Japanese>
         </Key>
         <Key ID="STR_KAT_Vitals_basicDiagnostic_use">
-            <English>Use Basic Vitals Kit</English>        
+            <English>Use Basic Vitals Kit</English>
+            <Japanese>基本型バイタル診断キットを使用</Japanese>
         </Key>
         <Key ID="STR_KAT_Vitals_basicDiagnostic_progress">
-            <English>Assessing Patient...</English>        
+            <English>Assessing Patient...</English>
+            <Japanese>患者を診断中・・・</Japanese>
         </Key>
         <Key ID="STR_KAT_Vitals_BasicDiagnostic_Output">
-            <English>HR: %1, BP: %2/%3, RR: %4</English>        
+            <English>HR: %1, BP: %2/%3, RR: %4</English>
+            <Japanese>心拍: %1, 血圧: %2/%3, 呼吸回数: %4</Japanese>
         </Key>
         <Key ID="STR_KAT_Vitals_basicDiagnostic_Log">
-            <English>%1 - %2</English>        
+            <English>%1 - %2</English>
+            <Japanese>%1 - %2</Japanese>
         </Key>
     </Package>
 </Project>

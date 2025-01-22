@@ -42,7 +42,7 @@ params ["_unit"];
     };
 
     if (EGVAR(chemical,maskStaminaLoss)) then {
-        if (goggles _target in (missionNamespace getVariable [QGVAR(availGasmaskList), []])) then {
+        if (goggles _unit in (missionNamespace getVariable [QGVAR(availGasmaskList), []])) then {
             if (ACEGVAR(advanced_fatigue,enabled)) then {
                 ["kat_CMSK", 1.5] call ACEFUNC(advanced_fatigue,addDutyFactor);
             } else {

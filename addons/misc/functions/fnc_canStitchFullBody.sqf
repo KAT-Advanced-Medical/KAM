@@ -19,6 +19,6 @@
 params ["_medic", "_patient"];
 
 if !(GVAR(enableStitchFullBody)) exitWith {false};
-if ((ACEGVAR(medical_treatment,consumeSurgicalKit) == 2) && {!([_medic, _patient, ["ACE_Suture"]] call ACEFUNC(medical_treatment,hasItem))}) exitWith {false};
+if ((ACEGVAR(medical_treatment,consumeSurgicalKit) == 2) && {!([_medic, _patient, ["ACE_suture"]] call ACEFUNC(medical_treatment,hasItem))}) exitWith {false};
 
 count (_patient call FUNC(getFullBodyStitchableWounds)) > 0

@@ -922,6 +922,7 @@
         </Key>
         <Key ID="STR_KAT_Chemical_SETTING_gasMaskStaminaLoss">
             <English>Enable Stamina Loss when using Gas Mask</English>
+            <Japanese>ガスマスク使用時のスタミナ減少を有効化</Japanese>
         </Key>
     </Package>
 </Project>
