@@ -45,6 +45,16 @@ PREP_RECOMPILE_END;
     false
 ] call CBA_Settings_fnc_init;
 
+// Should gas mask affect stamina
+[
+    QGVAR(maskStaminaLoss),
+    "CHECKBOX",
+    [LLSTRING(SETTING_gasMaskStaminaLoss)],
+    CBA_SETTINGS_CHEM,
+    [false],
+    true
+] call CBA_Settings_fnc_init;
+
 // Chance of weapon drop by tear gas
 [
     QGVAR(tearGasDropChance),

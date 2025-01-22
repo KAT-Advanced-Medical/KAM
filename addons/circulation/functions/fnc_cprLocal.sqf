@@ -21,7 +21,7 @@
 params ["_medic", "_patient", "_reviveObject"];
 
 private _chance = 0;
-private _random = random 100;
+private _random = ((random 100) - (GET_REBOA_VOLUME(_patient) * 10)) max 1;
 private _randomAmi = random 4;
 private _epiBoost = 1;
 private _amiBoost = 0;
@@ -32,6 +32,11 @@ private _fnc_advRhythm = {
     params ["_patient", ["_CPR",false]];
 
     private _patientState = _patient getVariable [QGVAR(cardiacArrestType), 0];
+    private _ht = if (GVAR(AdvRhythm_HTHold)) then {
+        ((count(_patient getVariable [QGVAR(ht), []])) == 0)
+    } else {
+        true
+    };
 
     if (_CPR) then {
         if (floor (random 100) < GVAR(AdvRhythm_CPR_ROSC_Chance)) then {
@@ -57,7 +62,7 @@ private _fnc_advRhythm = {
         };
     };
 
-    if (_patient getVariable [QGVAR(cardiacArrestType), 0] isEqualTo 0) exitWith {
+    if ((_patient getVariable [QGVAR(cardiacArrestType), 0] isEqualTo 0) && _ht) exitWith {
         [QACEGVAR(medical,CPRSucceeded), _patient] call CBA_fnc_localEvent;
     };
 
