@@ -2744,7 +2744,7 @@
         </Key>
         <Key ID="STR_KAT_Breathing_inspectChest_simple">
             <English>Symptoms indicate %1</English>
-            <Japanese>診断症状:</Japanese>
+            <Japanese>診断症状 %1</Japanese>
             <French>Les symptômes indiquent %1</French>
             <Korean>현재 증상: %1</Korean>
             <German>Die Symptome weisen auf %1 hin.</German>
