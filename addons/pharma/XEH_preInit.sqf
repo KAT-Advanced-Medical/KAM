@@ -445,23 +445,6 @@ PREP_RECOMPILE_END;
     true
 ] call CBA_Settings_fnc_init;
 
-[
-    QGVAR(medLvl_TXAIM),
-    "LIST",
-    [LLSTRING(medLvl_TXAIM)],
-    [CBA_SETTINGS_CAT, LSTRING(SubCategory_TXA)],
-    [[0, 1, 2], [ACELSTRING(medical_treatment,Anyone), ACELSTRING(medical_treatment,Medics), ACELSTRING(medical_treatment,Doctors)], 0],
-    true
-] call CBA_Settings_fnc_init;
-
-[
-    QGVAR(treatmentTime_TXAIM),
-    "SLIDER",
-    [LLSTRING(treatmentTime_TXAIM)],
-    [CBA_SETTINGS_CAT, LSTRING(SubCategory_TXA)],
-    [0.1, 10, 7, 1],
-    true
-] call CBA_Settings_fnc_init;
 
 [
     QGVAR(bandageCycleTime_TXA),
@@ -586,24 +569,6 @@ PREP_RECOMPILE_END;
     true
 ] call CBA_Settings_fnc_init;
 
-[
-    QGVAR(medLvl_LidocaineIM),
-    "LIST",
-    [LLSTRING(medLvl_LidocaineIM)],
-    [CBA_SETTINGS_CAT, LSTRING(SubCategory_Lidocaine)],
-    [[0, 1, 2], [ACELSTRING(medical_treatment,Anyone), ACELSTRING(medical_treatment,Medics), ACELSTRING(medical_treatment,Doctors)], 0],
-    true
-] call CBA_Settings_fnc_init;
-
-[
-    QGVAR(treatmentTime_LidocaineIM),
-    "SLIDER",
-    [LLSTRING(treatmentTime_LidocaineIM)],
-    [CBA_SETTINGS_CAT, LSTRING(SubCategory_Lidocaine)],
-    [0.1, 10, 7, 1],
-    true
-] call CBA_Settings_fnc_init;
-
 // Atropine Settings Category
 [
     QGVAR(medLvl_Atropine),
@@ -623,23 +588,6 @@ PREP_RECOMPILE_END;
     true
 ] call CBA_Settings_fnc_init;
 
-[
-    QGVAR(medLvl_AtropineIV),
-    "LIST",
-    [LLSTRING(medLvl_AtropineIV)],
-    [CBA_SETTINGS_CAT, LSTRING(SubCategory_Atropine)],
-    [[0, 1, 2], [ACELSTRING(medical_treatment,Anyone), ACELSTRING(medical_treatment,Medics), ACELSTRING(medical_treatment,Doctors)], 0],
-    true
-] call CBA_Settings_fnc_init;
-
-[
-    QGVAR(treatmentTime_AtropineIV),
-    "SLIDER",
-    [LLSTRING(treatmentTime_AtropineIV)],
-    [CBA_SETTINGS_CAT, LSTRING(SubCategory_Atropine)],
-    [0.1, 10, 7, 1],
-    true
-] call CBA_Settings_fnc_init;
 // EACA Settings Category
 
 [
@@ -715,24 +663,6 @@ PREP_RECOMPILE_END;
     true
 ] call CBA_Settings_fnc_init;
 
-[
-    QGVAR(medLvl_KetamineIM),
-    "LIST",
-    [LLSTRING(medLvl_KetamineIM)],
-    [CBA_SETTINGS_CAT, LSTRING(SubCategory_Ketamine)],
-    [[0, 1, 2], [ACELSTRING(medical_treatment,Anyone), ACELSTRING(medical_treatment,Medics), ACELSTRING(medical_treatment,Doctors)], 0],
-    true
-] call CBA_Settings_fnc_init;
-
-[
-    QGVAR(treatmentTime_KetamineIM),
-    "SLIDER",
-    [LLSTRING(treatmentTime_KetamineIM)],
-    [CBA_SETTINGS_CAT, LSTRING(SubCategory_Ketamine)],
-    [0.1, 10, 7, 1],
-    true
-] call CBA_Settings_fnc_init;
-
 //Fentanyl Settings Category
 [
     QGVAR(medLvl_Fentanyl),
@@ -752,23 +682,6 @@ PREP_RECOMPILE_END;
     true
 ] call CBA_Settings_fnc_init;
 
-[
-    QGVAR(medLvl_FentanylIM),
-    "LIST",
-    [LLSTRING(medLvl_FentanylIM)],
-    [CBA_SETTINGS_CAT, LSTRING(SubCategory_Fentanyl)],
-    [[0, 1, 2], [ACELSTRING(medical_treatment,Anyone), ACELSTRING(medical_treatment,Medics), ACELSTRING(medical_treatment,Doctors)], 0],
-    true
-] call CBA_Settings_fnc_init;
-
-[
-    QGVAR(treatmentTime_FentanylIM),
-    "SLIDER",
-    [LLSTRING(treatmentTime_FentanylIM)],
-    [CBA_SETTINGS_CAT, LSTRING(SubCategory_Fentanyl)],
-    [0.1, 10, 7, 1],
-    true
-] call CBA_Settings_fnc_init;
 
 //Nalbuphine Settings Category
 [
@@ -784,24 +697,6 @@ PREP_RECOMPILE_END;
     QGVAR(treatmentTime_Nalbuphine),
     "SLIDER",
     [LLSTRING(treatmentTime_Nalbuphine)],
-    [CBA_SETTINGS_CAT, LSTRING(SubCategory_Nalbuphine)],
-    [0.1, 10, 7, 1],
-    true
-] call CBA_Settings_fnc_init;
-
-[
-    QGVAR(medLvl_NalbuphineIM),
-    "LIST",
-    [LLSTRING(medLvl_NalbuphineIM)],
-    [CBA_SETTINGS_CAT, LSTRING(SubCategory_Nalbuphine)],
-    [[0, 1, 2], [ACELSTRING(medical_treatment,Anyone), ACELSTRING(medical_treatment,Medics), ACELSTRING(medical_treatment,Doctors)], 0],
-    true
-] call CBA_Settings_fnc_init;
-
-[
-    QGVAR(treatmentTime_NalbuphineIM),
-    "SLIDER",
-    [LLSTRING(treatmentTime_NalbuphineIM)],
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_Nalbuphine)],
     [0.1, 10, 7, 1],
     true
@@ -1059,94 +954,5 @@ PREP_RECOMPILE_END;
     true
 ] call CBA_Settings_fnc_init;
 
-[
-    QGVAR(medLvl_morphineIM),
-    "LIST",
-    [LLSTRING(medLvl_MorphineIM)],
-    [CBA_SETTINGS_CAT, LSTRING(SubCategory_Morphine)],
-    [[0, 1, 2], [ACELSTRING(medical_treatment,Anyone), ACELSTRING(medical_treatment,Medics), ACELSTRING(medical_treatment,Doctors)], 0],
-    true
-] call CBA_Settings_fnc_init;
-
-[
-    QGVAR(treatmentTime_morphineIM),
-    "SLIDER",
-    [LLSTRING(treatmentTime_MorphineIM)],
-    [CBA_SETTINGS_CAT, LSTRING(SubCategory_Morphine)],
-    [0.1, 10, 7, 1],
-    true
-] call CBA_Settings_fnc_init;
-
-[
-    QGVAR(medLvl_morphineIV),
-    "LIST",
-    [LLSTRING(medLvl_MorphineIV)],
-    [CBA_SETTINGS_CAT, LSTRING(SubCategory_Morphine)],
-    [[0, 1, 2], [ACELSTRING(medical_treatment,Anyone), ACELSTRING(medical_treatment,Medics), ACELSTRING(medical_treatment,Doctors)], 0],
-    true
-] call CBA_Settings_fnc_init;
-
-[
-    QGVAR(treatmentTime_morphineIV),
-    "SLIDER",
-    [LLSTRING(treatmentTime_MorphineIV)],
-    [CBA_SETTINGS_CAT, LSTRING(SubCategory_Morphine)],
-    [0.1, 10, 7, 1],
-    true
-] call CBA_Settings_fnc_init;
-
-[
-    QGVAR(medLvl_adenosineIV),
-    "LIST",
-    [LLSTRING(medLvl_adenosineIV)],
-    [CBA_SETTINGS_CAT, LSTRING(SubCategory_AdenosineIV)],
-    [[0, 1, 2], [ACELSTRING(medical_treatment,Anyone), ACELSTRING(medical_treatment,Medics), ACELSTRING(medical_treatment,Doctors)], 0],
-    true
-] call CBA_Settings_fnc_init;
-
-[
-    QGVAR(treatmentTime_adenosineIV),
-    "SLIDER",
-    [LLSTRING(treatmentTime_adenosineIV)],
-    [CBA_SETTINGS_CAT, LSTRING(SubCategory_AdenosineIV)],
-    [0.1, 10, 7, 1],
-    true
-] call CBA_Settings_fnc_init;
-
-[
-    QGVAR(medLvl_Alteplase),
-    "LIST",
-    [LLSTRING(medLvl_Alteplase)],
-    [CBA_SETTINGS_CAT, LSTRING(SubCategory_Alteplase)],
-    [[0, 1, 2], [ACELSTRING(medical_treatment,Anyone), ACELSTRING(medical_treatment,Medics), ACELSTRING(medical_treatment,Doctors)], 0],
-    true
-] call CBA_Settings_fnc_init;
-
-[
-    QGVAR(treatmentTime_Alteplase),
-    "SLIDER",
-    [LLSTRING(treatmentTime_Alteplase)],
-    [CBA_SETTINGS_CAT, LSTRING(SubCategory_Alteplase)],
-    [0.1, 10, 7, 1],
-    true
-] call CBA_Settings_fnc_init;
-    
-[
-    QGVAR(CheckVein_MedLevel),
-    "LIST",
-    LLSTRING(SETTING_CheckVein_MedLevel),
-    [CBA_SETTINGS_CAT, ELSTRING(GUI,SubCategory_Basic)],
-    [[0, 1, 2], ["STR_ACE_Medical_Treatment_Anyone", "STR_ACE_Medical_Treatment_Medics", "STR_ACE_Medical_Treatment_Doctors"], 0],
-    true
-] call CBA_Settings_fnc_init;
-
-[
-    QGVAR(CheckVein_TreatmentTime),
-    "TIME",
-    LLSTRING(SETTING_CheckVein_treatmentTime),
-    [CBA_SETTINGS_CAT, ELSTRING(GUI,SubCategory_Basic)],
-    [1, 30, 4],
-    true
-] call CBA_Settings_fnc_init;
 
 ADDON = true;

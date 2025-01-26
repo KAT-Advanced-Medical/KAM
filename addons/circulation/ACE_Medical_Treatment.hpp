@@ -198,46 +198,5 @@ class ACE_Medical_Treatment {
             rateCoef = 0.7;
             type = "PackedRBC";
         };
-        //class MorphineIVInfusion: SalineIV_500 {
-        //    painReduce = 0.8;
-        //    hrIncreaseLow[] = {-2, -7};
-        //    hrIncreaseNormal[] = {-3, -10};
-        //    hrIncreaseHigh[] = {-5, -16};
-        //    timeInSystem = 15;
-        //    timeTillMaxEffect = 3;
-        //    dose = 0.3;
-        //    viscosityChange = -5;
-        //   opioidRelief = 1.1;
-        //   volume = 500;
-        //    rateCoef = 1.3;
-        //    type = "MorphineIVInfusion";
-        //};
-        //class EpinephrineIVInfusion: SalineIV_500 {
-        //    painReduce = 0;
-        //    hrIncreaseLow[] = {3, 14};
-        //    hrIncreaseNormal[] = {5, 20};
-        //    hrIncreaseHigh[] = {7, 25};
-        //    timeInSystem = 10;
-        //    timeTillMaxEffect = 3;
-        //    dose = 0.1;
-        //    alphaFactor = -0.2;
-        //    onOverDose = "";
-        //    volume = 500;
-        //    rateCoef = 1.3;
-        //    type = "EpinephrineIVInfusion";
-        //};
-        //class EtomidateInfusion: SalineIV_500 {
-        //    painReduce = 0.2;
-        //    hrIncreaseLow[] = {-3, -7};
-        //    hrIncreaseNormal[] = {-6, -13};
-        //    hrIncreaseHigh[] = {-10, -20};
-        //    timeInSystem = 7;
-        //    timeTillMaxEffect = 1;
-        //    dose = 0.1;
-        //    viscosityChange = 0;
-        //    volume = 500;
-        //    rateCoef = 1.3;
-        //    type = "EtomidateInfusion";
-        //};
     };
 };
