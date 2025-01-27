@@ -67,7 +67,7 @@ if (EGVAR(breathing,paco2Active)) then {
 private _etco2 = 37;
 
 if (IN_CRDC_ARRST(_unit)) then {
-    if (alive (_unit getVariable [QEGVAR(medical,CPR_provider), objNull])) then {
+    if (alive (_unit getVariable [QACEGVAR(medical,CPR_provider), objNull])) then {
         // If CPR is being provided, EtCO2 acts as a surrogate for remaining time patient can be in cardiac arrest before death
         _etco2 = 15 + (_paco2 / 20) - ((ACEGVAR(medical_statemachine,cardiacArrestTime) / (_unit getVariable [QACEGVAR(medical_statemachine,cardiacArrestTimeLeft)] max 1)) * 10);
     } else {
