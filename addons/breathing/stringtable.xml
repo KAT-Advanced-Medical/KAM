@@ -2915,9 +2915,11 @@
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_AVAIL_OXYHELMET">
             <English>Available Oxygen Helmets</English>
+            <French>Casques d'oxygène disponibles</French>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_AVAIL_OXYHELMET_DISC">
             <English>Sets which helmets can act as oxygen masks</English>
+            <French>Spécifiez le casque que vous souhaitez utiliser comme masque à oxygène.</French>
         </Key>
         <Key ID="STR_KAT_Breathing_AttachPersonalOxygenTank">
             <English>Connect Personal Oxygen</English>
