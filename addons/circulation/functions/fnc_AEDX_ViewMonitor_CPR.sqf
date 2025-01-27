@@ -273,9 +273,9 @@ private _dlg = uiNamespace getVariable ["KAT_Circulation_AEDX_Monitor_Display", 
         (_dlg displayCtrl IDC_DISPLAY_SPO2_TITLE) ctrlSetText "---";
     };
 
-    private _hasEtco2Monitor = !(GVAR(AEDX_MonitorTarget) getVariable [QEGVAR(breathing,etco2Monitor),[]] isEqualTo []); 
-    private _etco2 = GET_ETCO2(GVAR(AEDX_MonitorTarget));
-    private _breathrate = GET_BREATHING_RATE(GVAR(AEDX_MonitorTarget));
+    private _hasEtco2Monitor = !(GVAR(AEDX_MonitorTarget_Title) getVariable [QEGVAR(breathing,etco2Monitor),[]] isEqualTo []); 
+    private _etco2 = GET_ETCO2(GVAR(AEDX_MonitorTarget_Title));
+    private _breathrate = GET_BREATHING_RATE(GVAR(AEDX_MonitorTarget_Title));
 
     if (_hasEtco2Monitor) then {
         (_dlg displayCtrl IDC_DISPLAY_RR_DEFAULT_TITLE) ctrlShow false;
