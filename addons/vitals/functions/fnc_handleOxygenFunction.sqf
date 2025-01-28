@@ -123,5 +123,6 @@ private _o2Sat = ((_pao2 max 1)^2.7 / ((25 - (((_pH / DEFAULT_PH) - 1) * 150))^2
 
 _unit setVariable [VAR_BREATHING_RATE, (_respiratoryRate max 0), _syncValues];
 _unit setVariable [VAR_BLOOD_GAS, [_paco2, _pao2, _o2Sat, 24, _pH, _etco2], _syncValues];
+_unit setVariable [QEGVAR(breathing,airwayStatus), (floor (_o2Sat * 100)), _syncValues];
 
 _o2Sat * 100
