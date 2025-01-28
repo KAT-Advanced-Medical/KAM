@@ -134,8 +134,6 @@ if (EGVAR(breathing,enable)) then {
     private _anerobicPressure = (DEFAULT_ANEROBIC_EXCHANGE * (6 / (_bloodVolume max 6))) min 1.2;
 
     _spo2 = [_unit, _heartRate, _anerobicPressure, _bloodGas, _temperature, _baroPressure, _opioidDepression, _deltaT, _syncValues] call FUNC(handleOxygenFunction);
-} else {
-    _spo2 = (_unit getVariable [QEGVAR(breathing,airwayStatus), 97] min 99);
 };
 
 // Vasoconstriction from Wound Blood Loss and Alpha Adjustment
