@@ -113,22 +113,8 @@ private _fnc_clotWound = {
     private _openWounds = _unit getVariable [VAR_OPEN_WOUNDS, createHashMap];
     private _pulse = _unit getVariable [VAR_HEART_RATE, 80];
     private _coagulationFactor = _unit getVariable [QGVAR(coagulationFactor), 30];
-    private _countTXA = [_unit, "TXA"] call ACEFUNC(medical_status,getMedicationCount);
-    private _countEACA = [_unit, "EACA"] call ACEFUNC(medical_status,getMedicationCount);
-    private _medStack = _patient call ACEFUNC(medical_treatment,getAllMedicationCount);
-    private _medsToCheck = ["EACA", "TXA"];
-    private _countTXA = 0;
-    private _countEACA = 0;;
-    {
-        private _medName = toLower (_x select 0);
-        private _effectiveness = _x select 2;
-        if ("EACA" in _medName) then {
-            _countEACA = _countEACA max _effectiveness;
-        };
-        if ("TXA" in _medName) then {
-            _countTXA = _countTXA max _effectiveness;
-        };
-        } forEach _medStack;
+    private _countTXA = ([_unit, "TXA"] call ACEFUNC(medical_status,getMedicationCount)) select 1;
+    private _countEACA = ([_unit, "EACA"] call ACEFUNC(medical_status,getMedicationCount)) select 1;
     private _hasWoundToBandageArray = [];
 
     if (_openWounds isEqualTo createHashMap) exitWith {}; // Exit when hashmap not initialized (Will not work when hashmap is set, cause ace only changes value of "woundCount" to 0)
