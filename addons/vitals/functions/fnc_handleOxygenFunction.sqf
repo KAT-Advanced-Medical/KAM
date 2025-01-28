@@ -64,8 +64,20 @@ if (EGVAR(breathing,paco2Active)) then {
     _paco2 = if ((_demandVentilation / _actualVentilation) == 1) then { _previousCyclePaco2 + (PACO2_MAX_CHANGE min (-PACO2_MAX_CHANGE max ((DEFAULT_PACO2 + ((_anerobicPressure max 1) - 1) * 150) - _previousCyclePaco2))) } else { [ _previousCyclePaco2 - (PACO2_MAX_CHANGE * _deltaT), _previousCyclePaco2 + (PACO2_MAX_CHANGE * _deltaT)] select ((_demandVentilation / _actualVentilation) > 1) };                                    
 };
 
-// Generated ETCO2 quadratic. Ensures ETCO2 moves with Respiratory Rate and is constantly below PaCO2 
-private _etco2 = [((_paco2 - 3) - ((-0.0416667 * (_respiratoryRate^2)) + (3.09167 * (_respiratoryRate)) - DEFAULT_ETCO2) max 10), 0] select (IN_CRDC_ARRST(_unit));
+private _etco2 = 37;
+
+if (IN_CRDC_ARRST(_unit)) then {
+    if (alive (_unit getVariable [QACEGVAR(medical,CPR_provider), objNull])) then {
+        // If CPR is being provided, EtCO2 acts as a surrogate for remaining time patient can be in cardiac arrest before death
+        _etco2 = 15 + (_paco2 / 20) - ((ACEGVAR(medical_statemachine,cardiacArrestTime) / ((_unit getVariable [QACEGVAR(medical_statemachine,cardiacArrestTimeLeft), 1]) max 1)) * 10);
+    } else {
+        // With no CPR, there is no movement in the chest, and so there is no EtCO2
+        _etco2 = 0;
+    };
+} else {
+    // Generated ETCO2 quadratic. Ensures ETCO2 moves with Respiratory Rate and is constantly below PaCO2 
+    _etco2 = ((_paco2 - 3) - ((-0.0416667 * (_respiratoryRate^2)) + (3.09167 * (_respiratoryRate)) - DEFAULT_ETCO2) max 5);
+};
 
 private _externalPh = 0;
 private _pH = 7.4;

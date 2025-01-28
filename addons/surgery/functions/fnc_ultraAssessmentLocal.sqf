@@ -25,7 +25,7 @@ private _thorasic = LSTRING(Ultra_Airway_Normal);
 
 _patient setVariable [QGVAR(imaging), true, true];
 
-if ((_unit getVariable [QEGVAR(airway,occluded), false]) || (_unit getVariable [QEGVAR(airway,obstruction), false])) then {
+if ((_patient getVariable [QEGVAR(airway,occluded), false]) || (_patient getVariable [QEGVAR(airway,obstruction), false])) then {
     _airway = LSTRING(Ultra_Airway_Compromise);
 };
 

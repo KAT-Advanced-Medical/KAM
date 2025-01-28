@@ -728,6 +728,7 @@
         <Key ID="STR_KAT_Surgery_Ultra_Airway_Compromise">
             <English>Compromised</English>
             <French>Compromis</French>
+            <Japanese>機能不全</Japanese>
         </Key>
         <Key ID="STR_KAT_Surgery_Ultra_Airway_NoActivity">
             <English>No Activity</English>
