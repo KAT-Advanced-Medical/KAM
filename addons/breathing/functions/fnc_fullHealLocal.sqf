@@ -18,7 +18,7 @@
 params ["_patient"];
 TRACE_1("fullHealLocal",_patient);
 
-_patient setVariable [QGVAR(airwayStatus), 100, true];
+_patient setVariable [QGVAR(airwayStatus), 97, true];
 _patient setVariable [QGVAR(pneumothorax), 0, true];
 _patient setVariable [QGVAR(hemopneumothorax), false, true];
 _patient setVariable [QGVAR(tensionpneumothorax), false, true];
