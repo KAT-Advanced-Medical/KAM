@@ -3054,6 +3054,7 @@
         <Key ID="STR_KAT_Circulation_SETTING_AdvRhythm_HTHold">
             <English>Enable H-and-T Holding in Arrest</English>
             <Japanese>心停止回復のH&amp;T症状による阻害を有効化</Japanese>
+            <French>Activer le maintien en arrêt H et T</French>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_AdvRhythm_deteriorateAfterTreatment">
             <English>Deteriorate After Treatment</English>

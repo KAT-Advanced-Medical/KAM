@@ -2493,14 +2493,17 @@
         <Key ID="STR_KAT_Breathing_breathing_rrRapid">
             <English>RR: Rapid</English>
             <Japanese>呼吸速度: 速い</Japanese>
+            <French>RR : Rapide</French>
         </Key>
         <Key ID="STR_KAT_Breathing_breathing_rrSlow">
             <English>RR: Slow</English>
             <Japanese>呼吸速度: 遅い</Japanese>
+            <French>RR : Lent</French>
         </Key>
         <Key ID="STR_KAT_Breathing_breathing_rrNormal">
             <English>RR: Normal</English>
             <Japanese>呼吸速度: 正常</Japanese>
+            <French>RR : Normal</French>
         </Key>
         <Key ID="STR_KAT_Breathing_breathing_none">
             <English>Patient is not breathing</English>

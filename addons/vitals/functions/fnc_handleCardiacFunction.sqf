@@ -31,7 +31,7 @@ private _actualHeartRate = _hrTarget;
 private _actualReturn = 0;
 
 if IN_CRDC_ARRST(_unit) then {
-    if (alive (_unit getVariable [QEGVAR(medical,CPR_provider), objNull])) then {
+    if (alive (_unit getVariable [QACEGVAR(medical,CPR_provider), objNull])) then {
         if (_actualHeartRate == 0) then { _syncValue = true }; // always sync on large change
         _actualHeartRate = random [100, 110, 120];
     } else {

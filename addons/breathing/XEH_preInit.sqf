@@ -33,6 +33,21 @@ PREP_RECOMPILE_END;
     true
 ] call CBA_Settings_fnc_init;
 
+//Adds available oxygen helmets
+[
+    QGVAR(availOxyHelmet),
+    "EDITBOX",
+    [LLSTRING(SETTING_AVAIL_OXYHELMET), LLSTRING(SETTING_AVAIL_OXYHELMET_DISC)],
+    [CBA_SETTINGS_CAT, ELSTRING(GUI,SubCategory_Basic)],
+    "'H_PilotHelmetFighter_B', 'H_PilotHelmetFighter_O', 'H_PilotHelmetFighter_I', 'H_PilotHelmetFighter_I_E'",
+    1,
+    {
+        private _array = [_this, "CfgWeapons"] call EFUNC(chemical,getList);
+        missionNamespace setVariable [QGVAR(availOxyHelmetList), _array, true];
+    },
+    true
+] call CBA_Settings_fnc_init;
+
 //Enable Check Breathing medical action
 [
     QGVAR(enableCheckBreathing),
