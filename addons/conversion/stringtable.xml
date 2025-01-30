@@ -35,7 +35,7 @@
             <English>Supply Gained</English>
         </Key>
         <Key ID="STR_KAT_Conversion_CONVERSION_LIBERATION_CONVERSION_GAIN_DESC">
-            <English>How much supply should be gien when converting patients</English>
+            <English>How much supply should be given when converting patients</English>
         </Key>
         <Key ID="STR_KAT_Conversion_CONVERSION_LIBERATION_CONVERSION_DISTANCE">
             <English>Distance Required</English>
