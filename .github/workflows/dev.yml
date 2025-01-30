@@ -34,14 +34,11 @@ jobs:
         shell: bash
       - name: Go through files
         run: |
-          CHANGELOG=""
-          while IFS="" read -r p || [ -n "$p" ]
-          do
-            CHANGELOG+="$p\n"
+          echo "CHANGELOG<<EOF" >> $GITHUB_ENV
+          while IFS="" read -r p || [ -n "$p" ]; do
+            echo "$p" >> $GITHUB_ENV
           done < merged_prs.txt
-          echo -E "$CHANGELOG<<EOF" >> $GITHUB_ENV
-          echo -E "$CHANGELOG" >> $GITHUB_ENV
-          echo -E "EOF" >> $GITHUB_ENV
+          echo "EOF" >> $GITHUB_ENV
         shell: bash
 
       - name: Install Arma 3 Tools
