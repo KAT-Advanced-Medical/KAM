@@ -1,6 +1,5 @@
 class ACE_Medical_Treatment_Actions {
     class CheckPulse;
-    class BasicBandage;
     class ConvertPatient: CheckPulse {
         displayName = CSTRING(convertPatient);
         displayNameProgress = CSTRING(converting);
