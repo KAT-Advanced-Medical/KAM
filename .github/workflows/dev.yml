@@ -48,7 +48,7 @@ jobs:
         run: mv .hemttout/release .hemttout/@kat
 
       - name: Update to Steam Workshop (dev)
-        uses: arma-actions/workshop-upload@v1
+        uses: MiszczuZPolski/workshop-upload@master
         with:
           itemId: '2841189207'
           contentPath: '.hemttout/@kat'
