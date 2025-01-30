@@ -46,8 +46,6 @@ jobs:
             itemId: '2774641073'
             contentPath: '.hemttout/@kat'
             changelog: |
-              https://github.com/KAT-Advanced-Medical/KAM/releases/tag/v${{ env.VERSION }}
-
               Merged Pull Requests:
               $(cat merged_prs.txt)
           env:
