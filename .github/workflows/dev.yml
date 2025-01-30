@@ -52,7 +52,7 @@ jobs:
         with:
           itemId: '2841189207'
           contentPath: '.hemttout/@kat'
-          changelog: './merge_prs.txt'
+          changelog: '.\merge_prs.txt'
         env:
           STEAM_USERNAME: ${{ secrets.STEAM_USERNAME }}
           STEAM_PASSWORD: ${{ secrets.STEAM_PASSWORD }}
