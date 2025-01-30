@@ -43,7 +43,7 @@ jobs:
         - name: Update to Steam Workshop (dev)
           uses: arma-actions/workshop-upload@v1
           with:
-            itemId: '2774641073'
+            itemId: '2841189207'
             contentPath: '.hemttout/@kat'
             changelog: |
               Merged Pull Requests:
