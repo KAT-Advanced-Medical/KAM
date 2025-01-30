@@ -30,15 +30,7 @@ jobs:
 
       - name: Fetch merged PRs
         run: |
-          git log --pretty=format:"%s by %an" -n 20 --no-merges > merged_prs.txt
-        shell: bash
-      - name: Go through files
-        run: |
-          echo "CHANGELOG<<EOF" >> $GITHUB_ENV
-          while IFS="" read -r p || [ -n "$p" ]; do
-            echo "$p" >> $GITHUB_ENV
-          done < merged_prs.txt
-          echo "EOF" >> $GITHUB_ENV
+          git log --pretty=format:"%s by %an" -n ${{ needs.check.outputs.new-commits-number }} --no-merges > merged_prs.txt
         shell: bash
 
       - name: Install Arma 3 Tools
@@ -60,7 +52,7 @@ jobs:
         with:
           itemId: '2841189207'
           contentPath: '.hemttout/@kat'
-          changelog: '${{env.CHANGELOG}}'
+          changelog: merge_prs.txt
         env:
           STEAM_USERNAME: ${{ secrets.STEAM_USERNAME }}
           STEAM_PASSWORD: ${{ secrets.STEAM_PASSWORD }}
