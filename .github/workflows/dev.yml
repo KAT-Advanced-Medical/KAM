@@ -30,7 +30,7 @@ jobs:
 
       - name: Fetch merged PRs
         run: |
-          git log --pretty=format:"%s by %an" -n ${{ steps.check-new-commits.outputs.new-commits-number }} --no-merges > merged_prs.txt
+          git log --pretty=format:"%s by %an" -n ${{ needs.check.outputs.new-commits-number }} --no-merges > merged_prs.txt
           cat merged_prs.txt
         shell: bash
 
