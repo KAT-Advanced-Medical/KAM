@@ -24,7 +24,7 @@ if IN_CRDC_ARRST(_unit) exitWith { false };
 if (_unit getVariable [QEGVAR(surgery,sedated), false]) exitWith { false };
 if (_unit getVariable [QEGVAR(surgery,reboa), false]) exitWith { false };
 
-if (_unit getVariable [QEGVAR(conversion,convert),false]) exitWith { false };
+if (_unit getVariable [QEGVAR(conversion,convert), false]) exitWith { false };
 
 private _cardiacOutput = [_unit] call ACEFUNC(medical_status,getCardiacOutput);
 private _bloodLoss = _unit call ACEFUNC(medical_status,getBloodLoss);
