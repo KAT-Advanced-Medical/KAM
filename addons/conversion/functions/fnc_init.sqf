@@ -10,7 +10,7 @@
  * None
  *
  * Example:
- * [player] call kat_vitals_fnc_init
+ * [player] call kat_conversion_fnc_init
  *
  * Public: No
  */
