@@ -44,7 +44,7 @@ if (!isNil {_unit getVariable [QACEGVAR(medical,ivBags),[]]}) then {
     private _fluidHeat = 0;
 
     _bloodBags = _bloodBags apply {
-        _x params ["_bagVolumeRemaining", "_type", "_bodyPart"];
+        _x params ["_bagVolumeRemaining", "_type", "_bodyPart", "_treatment", "_rateCoef", "_item"];
 
         private _tourniquets = GET_TOURNIQUETS(_unit);
 
@@ -65,13 +65,13 @@ if (!isNil {_unit getVariable [QACEGVAR(medical,ivBags),[]]}) then {
             // Plasma adds to ECP. Saline splits between the ECP and ISP. Blood adds to ECB
             switch (true) do {
                 case(_type == "Plasma"): { _ECP = _ECP + _bagChange; _lossVolumeChange = _lossVolumeChange + (_bagChange / ML_TO_LITERS); };
-                case(_type == "Saline"): { 
+                case(_type == "Saline"): {
                     if (_enableFluidShift) then {
-                        _ECP = _ECP + _bagChange / 2; 
-                        _ISP = _ISP + _bagChange / 2; 
+                        _ECP = _ECP + _bagChange / 2;
+                        _ISP = _ISP + _bagChange / 2;
                         _lossVolumeChange = _lossVolumeChange + (_bagChange / 2000);
                     } else {
-                        _ECP = _ECP + _bagChange; 
+                        _ECP = _ECP + _bagChange;
                         _lossVolumeChange = _lossVolumeChange + (_bagChange / ML_TO_LITERS);
                     };
                 };
@@ -82,7 +82,7 @@ if (!isNil {_unit getVariable [QACEGVAR(medical,ivBags),[]]}) then {
         if (_bagVolumeRemaining < 0.01) then {
             []
         } else {
-            [_bagVolumeRemaining, _type, _bodyPart]
+            [_bagVolumeRemaining, _type, _bodyPart, _treatment, _rateCoef, _item]
         };
     };
 
@@ -142,7 +142,7 @@ if (_enableFluidShift) then {
 
     if (_defaultShift) then {
         _ISP = _ISP + ((((DEFAULT_ISP - _ISP) max -2) min 2) *_deltaT);
-        _SRBC = _SRBC + ((((DEFAULT_SRBC - _SRBC) max -1) min 1) * _deltaT);  
+        _SRBC = _SRBC + ((((DEFAULT_SRBC - _SRBC) max -1) min 1) * _deltaT);
     };
 };
 

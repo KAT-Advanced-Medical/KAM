@@ -37,7 +37,7 @@ GVAR(CPRCancel_MouseID) = [0xF0, [false, false, false], {
 GVAR(CPRDevice_Iterate) = [0xF1, [false, false, false], {
     private _deviceCode = GVAR(CPRTarget) getVariable [QGVAR(deviceCode), 0];
     _deviceCode = [(_deviceCode + 1), 1] select (_deviceCode == 2);
-    private _deviceArray = [true,(GVAR(CPRTarget) getVariable [QEGVAR(breathing,pulseoximeter), false]),((GVAR(CPRTarget) getVariable [QGVAR(AED_X_VitalsMonitor_Connected), false]) || (GVAR(CPRTarget) getVariable [QGVAR(DefibrillatorPads_Connected), false]))];
+    private _deviceArray = [true,(GVAR(CPRTarget) getVariable [QEGVAR(breathing,pulseoximeter), false]),((GVAR(CPRTarget) getVariable [QGVAR(DefibrillatorPads_Connected),false] && ((GVAR(CPRTarget) getVariable [QGVAR(Defibrillator_Provider),[-1,-1,-1]] select 2) isEqualTo 'kat_X_AED')) || (GVAR(CPRTarget) getVariable [QGVAR(AED_X_VitalsMonitor_Connected),false]))];
         while { !(_deviceArray select _deviceCode) } do {
             _deviceCode = [0, (_deviceCode + 1)] select (_deviceCode < 2);
         };
@@ -78,7 +78,7 @@ if (_notInVehicle) then {
     
     switch (true) do {
         case (_deviceCode == 2): {
-            if ((_patient getVariable [QGVAR(AED_X_VitalsMonitor_Connected), false]) || (_patient getVariable [QGVAR(DefibrillatorPads_Connected), false])) then {
+            if ((_patient getVariable [QGVAR(DefibrillatorPads_Connected),false] && ((_patient getVariable [QGVAR(Defibrillator_Provider),[-1,-1,-1]] select 2) isEqualTo 'kat_X_AED')) || (_patient getVariable [QGVAR(AED_X_VitalsMonitor_Connected),false])) then {
                 if !(GVAR(CPRDisplayActive)) then {
                     "CPR_MONITOR" cutText ["", "PLAIN",0,true];
                     "CPR_MONITOR" cutRsc ["CPR_AED_X", "PLAIN", 0, true];
@@ -142,7 +142,9 @@ if (_notInVehicle) then {
 
             // Format time to minutes:seconds
             private _CPRTime = CBA_missionTime - _CPRStartTime;
-            private _time = format ["%1:%2",(["", "0"] select (floor _CPRTime / 3600 - floor _CPRTime / 3600 * 60 < 10)) + str (floor(((_CPRTime/3600) - floor(_CPRTime/3600)) * 60)), (["", "0"] select (floor _CPRTime / 60 - floor _CPRTime / 60 * 60 < 10)) + str (floor(((_CPRTime/60) - floor(_CPRTime/60)) * 60))];
+            private _minutes = floor (_CPRTime / 60);
+            private _seconds = floor (_CPRTime % 60);
+            private _time = format ["%1:%2", [_minutes, 2] call CBA_fnc_formatNumber, [_seconds, 2] call CBA_fnc_formatNumber];
 
             [_patient, "activity", LSTRING(Activity_CPR), [[_medic, false, true] call ACEFUNC(common,getName), _time]] call ACEFUNC(medical_treatment,addToLog);
 
