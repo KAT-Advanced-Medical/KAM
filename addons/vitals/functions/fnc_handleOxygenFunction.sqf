@@ -121,7 +121,14 @@ _pao2 = if (_previousCyclePao2 != _pao2) then { ([ (_previousCyclePao2 - ((PAO2_
 // Oxy-Hemo Dissociation Curve, driven by PaO2 with shaping done by pH 
 private _o2Sat = ((_pao2 max 1)^2.7 / ((25 - (((_pH / DEFAULT_PH) - 1) * 150))^2.7 + _pao2^2.7)) min 0.999;
 
+// If another mod is changing airwayStatus, default to airwayStatus value
+private _externalAirway = _unit getVariable [QEGVAR(breathing,airwayStatus), 97];
+if (_o2Sat != _externalAirway) then {
+    _o2Sat = _externalAirway;
+};
+
 _unit setVariable [VAR_BREATHING_RATE, (_respiratoryRate max 0), _syncValues];
 _unit setVariable [VAR_BLOOD_GAS, [_paco2, _pao2, _o2Sat, 24, _pH, _etco2], _syncValues];
+_unit setVariable [QEGVAR(breathing,airwayStatus), ((_o2Sat * 100) min 0.999), _syncValues];
 
 _o2Sat * 100
