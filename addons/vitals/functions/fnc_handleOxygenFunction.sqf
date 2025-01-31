@@ -66,7 +66,6 @@ if (IN_CRDC_ARRST(_unit)) then {
 
 private _paco2 = 40;
 
-// Come back to this
 if (EGVAR(breathing,paco2Active)) then {
     // The greater the imbalance between CO2 explusion and O2 intake, the higher PaCO2 gets
     _paco2 = if ((_demandVentilation / _actualVentilation) == 1) then { _previousCyclePaco2 + (PACO2_MAX_CHANGE min (-PACO2_MAX_CHANGE max ((DEFAULT_PACO2 + ((_anerobicPressure max 1) - 1) * 150) - _previousCyclePaco2))) } else { [ _previousCyclePaco2 - (PACO2_MAX_CHANGE * _deltaT), _previousCyclePaco2 + (PACO2_MAX_CHANGE * _deltaT)] select ((_demandVentilation / _actualVentilation) > 1) };                                    
