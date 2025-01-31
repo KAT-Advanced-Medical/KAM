@@ -2507,9 +2507,11 @@
         </Key>
         <Key ID="STR_KAT_Breathing_breathing_isVeryShallow">
             <English>Patient's breathing is very shallow</English>
+            <Japanese>患者の呼吸はとても浅い</Japanese>
         </Key>
         <Key ID="STR_KAT_Breathing_breathing_Veryshallow">
             <English>Very Shallow</English>
+            <Japanese>とても浅い</Japanese>
         </Key>
         <Key ID="STR_KAT_Breathing_breathing_none">
             <English>Patient is not breathing</English>
