@@ -3444,57 +3444,75 @@
         </Key>
         <Key ID="STR_KAT_Circulation_BPCuff_display">
             <English>Blood Pressure Cuff</English>
+            <Japanese>血圧カフ</Japanese>
         </Key>
         <Key ID="STR_KAT_Circulation_BPCuff_desc">
             <English>A medical device to accurately determine a patients blood pressure</English>
+            <Japanese>患者の血圧を正確に測定する医療機器</Japanese>
         </Key>
         <Key ID="STR_KAT_Circulation_Actions_CheckBloodPressureCuff">
             <English>Check BP with BP Cuff</English>
+            <Japanese>血圧カフで血圧を確認</Japanese>
         </Key>
         <Key ID="STR_KAT_Circulation_Actions_CheckingBloodPressureCuff">
             <English>Checking BP with BP Cuff</English>
+            <Japanese>血圧カフで血圧を確認中</Japanese>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_BPCuff">
             <English>Allow BP Cuff</English>
+            <Japanese>血圧カフの許可</Japanese>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_BPCuff_DESC">
             <English>Training Level for use of the BP Cuff</English>
+            <Japanese>血圧カフの使用に必要な医療スキルのレベルを設定します。</Japanese>
         </Key>
         <Key ID="STR_KAT_Circulation_treatmentTime_BPCuff">
             <English>Time to measure BP with BP Cuff</English>
+            <Japanese>血圧カフによる血圧測定の所要時間</Japanese>
         </Key>
         <Key ID="STR_KAT_Circulation_Check_Bloodpressure_Output_Palp">
             <English>You find a blood pressure of %3 over Palp</English>
+            <Japanese>触診で計測した拡張期血圧は %3 でした</Japanese>
         </Key>
         <Key ID="STR_KAT_Circulation_Bloodpressure_Output_Palp">
             <English>%1 over Palp</English>
+            <Japanese>触診による拡張期血圧は %1</Japanese>
         </Key>
         <Key ID="STR_KAT_Circulation_Check_Pulse_Output">
             <English>You find a Pulse Rate of %2</English>
+            <Japanese>計測した脈拍は %2 でした</Japanese>
         </Key>
         <Key ID="STR_KAT_Circulation_Pulse_Output">
             <English>%1 PPM</English>
+            <Japanese>%1 PPM</Japanese>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_StethHR">
             <English>Allow Stethoscope HR check</English>
+            <Japanese>聴診器による脈拍確認の許可</Japanese>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_StethHR_DESC">
             <English>Training Level for use of the Stethoscope to measure HR</English>
+            <Japanese>聴診器による脈拍の測定に必要な医療スキルのレベルを設定します。</Japanese>
         </Key>
         <Key ID="STR_KAT_Circulation_treatmentTime_StethHR">
             <English>Time to measure HR with a Stethoscope</English>
+            <Japanese>聴診器による脈拍測定の所要時間</Japanese>
         </Key>
         <Key ID="STR_KAT_Circulation_Actions_CheckHRSteth">
             <English>Check HR w/ Stethoscope</English>
+            <Japanese>聴診器で脈拍を確認</Japanese>
         </Key>
         <Key ID="STR_KAT_Circulation_Actions_CheckingHRSteth">
             <English>Checking HR with Stethoscope</English>
+            <Japanese>聴診器で脈拍を確認中</Japanese>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_hardcoreDiagnose">
             <English>Enable Hardcore HR and BP Diagnose</English>
+            <Japanese>ハードコア脈拍および血圧診断を有効化</Japanese>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_hardcoreDiagnose_DESC">
             <English>Makes measuring BP and HR imprecise without tools (Stethoscope or BP cuff)</English>
+            <Japanese>器具(聴診器または血圧カフ)なしでは脈拍および血圧を正確に測定出来なくします</Japanese>
         </Key>
     </Package>
 </Project>
