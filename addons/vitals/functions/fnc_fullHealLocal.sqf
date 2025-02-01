@@ -18,6 +18,7 @@
 params ["_patient"];
 
 _patient setVariable [QGVAR(simpleMedical), false, true];
+_patient setVariable [QGVAR(respiratoryDepth), DEFAULT_RESPIRATORY_DEPTH, true];
 
 if (GVAR(enableSimpleMedical)) then {
     _patient setVariable [QGVAR(simpleMedical), true, true];

@@ -2505,6 +2505,12 @@
             <Japanese>呼吸速度: 正常</Japanese>
             <French>RR : Normal</French>
         </Key>
+        <Key ID="STR_KAT_Breathing_breathing_isVeryShallow">
+            <English>Patient's breathing is very shallow</English>
+        </Key>
+        <Key ID="STR_KAT_Breathing_breathing_Veryshallow">
+            <English>Very Shallow</English>
+        </Key>
         <Key ID="STR_KAT_Breathing_breathing_none">
             <English>Patient is not breathing</English>
             <Japanese>患者は呼吸していない</Japanese>
