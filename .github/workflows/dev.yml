@@ -34,10 +34,10 @@ jobs:
         shell: bash
 
 
-      - name: Install Arma 3 Tools
-        uses: arma-actions/arma3-tools@master
-        with:
-          toolsUrl: ${{ secrets.ARMA3_TOOLS_URL }}
+      # - name: Install Arma 3 Tools
+      #   uses: arma-actions/arma3-tools@master
+      #   with:
+      #     toolsUrl: ${{ secrets.ARMA3_TOOLS_URL }}
 
       - name: Setup HEMTT
         uses: arma-actions/hemtt@v1
