@@ -35,6 +35,7 @@ jobs:
           echo 'EOF' >> $GITHUB_ENV
         shell: bash
 
+
       - name: Install Arma 3 Tools
         uses: arma-actions/arma3-tools@master
         with:
