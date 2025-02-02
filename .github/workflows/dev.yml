@@ -30,7 +30,9 @@ jobs:
 
       - name: Fetch merged PRs
         run: |
-          git log --pretty=format:"%s by %an" -n ${{ needs.check.outputs.new-commits-number }} --no-merges > merged_prs.txt
+          echo 'MERGED_PRS<<EOF' >> $GITHUB_ENV
+          git log --pretty=format:"%s by %an \\n" -n ${{ needs.check.outputs.new-commits-number }} --no-merges >> $GITHUB_ENV
+          echo 'EOF' >> $GITHUB_ENV
         shell: bash
 
       - name: Install Arma 3 Tools
@@ -48,11 +50,11 @@ jobs:
         run: mv .hemttout/release .hemttout/@kat
 
       - name: Update to Steam Workshop (dev)
-        uses: MiszczuZPolski/workshop-upload@master
+        uses: arma-actions/workshop-upload@master
         with:
           itemId: '2841189207'
           contentPath: '.hemttout/@kat'
-          changelog: '.\merge_prs.txt'
+          changelog: ${{env.MERGED_PRS}}
         env:
           STEAM_USERNAME: ${{ secrets.STEAM_USERNAME }}
           STEAM_PASSWORD: ${{ secrets.STEAM_PASSWORD }}
