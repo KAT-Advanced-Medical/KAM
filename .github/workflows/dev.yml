@@ -30,9 +30,7 @@ jobs:
 
       - name: Fetch merged PRs
         run: |
-          echo 'MERGED_PRS<<EOF' >> $GITHUB_ENV
-          git log --pretty=format:"%s by %an \\n" -n ${{ needs.check.outputs.new-commits-number }} --no-merges >> $GITHUB_ENV
-          echo 'EOF' >> $GITHUB_ENV
+          echo "MERGED_PRS=$(git log --pretty=format:"%s by %an \\n" -n ${{ needs.check.outputs.new-commits-number }} --no-merges)" >> $GITHUB_ENV
         shell: bash
 
 
