@@ -10,7 +10,7 @@
  * None
  *
  * Example:
- * [player] call kat_pharma_fnc_clotWound;
+ * [player] call kat_pharma_fnc_coagRegen;
  *
  * Public: No
  */
