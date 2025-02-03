@@ -40,8 +40,8 @@ if !(GVAR(coagulation)) exitWith {};
     private _savedCoagFactors = _unit getVariable [QGVAR(coagulationSavedFactors), (_unit getVariable [QGVAR(coagulationFactor), 30])];
     private _limitRegenCoagFactors = missionNamespace getVariable [QGVAR(coagulation_factor_count), 30];
     private _cooldownON = _unit getVariable [QGVAR(coagulationRegenCooldown), false];
-    private _countTXA = [_unit, "TXA"] call ACEFUNC(medical_status,getMedicationCount);
-    private _countEACA = [_unit, "EACA"] call ACEFUNC(medical_status,getMedicationCount);
+    private _countTXA = ([_unit, "TXA"] call ACEFUNC(medical_status,getMedicationCount)) select 1;
+    private _countEACA = ([_unit, "EACA"] call ACEFUNC(medical_status,getMedicationCount)) select 1;
     private _ammountToAdd = 1;
 
     if (_currentCoagFactors < _savedCoagFactors) exitWith {
