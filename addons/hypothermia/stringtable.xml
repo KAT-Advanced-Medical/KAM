@@ -93,7 +93,7 @@
             <English>Check Hand Warmers</English>
             <Dutch>Check handwarmers</Dutch>
             <Spanish>Comprobar Calentadores de Manos</Spanish>
-            <Japanese>ハンドウォーマーを確認する</Japanese>
+            <Japanese>ハンドウォーマーを確認</Japanese>
             <German>Handwärmer überprüfen</German>
             <Italian>Controlla i riscaldatori per le mani</Italian>
             <French>Vérifier les chauffe-mains</French>
@@ -239,11 +239,15 @@
             <French>Le patient ressent de la chaleur</French>
             <Chinesesimp>患者感觉温暖</Chinesesimp>
         </Key>
+        <Key ID="STR_KAT_Hypothermia_temperature_hot">
+            <English>Patient feels hot</English>
+            <Japanese>患者は熱を帯びている</Japanese>
+        </Key>
         <Key ID="STR_KAT_Hypothermia_Check_Temperature">
             <English>Check Temperature</English>
             <Dutch>Check temperatuur</Dutch>
             <Spanish>Comprobar Temperatura</Spanish>
-            <Japanese>体温を確認</Japanese>
+            <Japanese>体温を検査</Japanese>
             <German>Temperatur prüfen</German>
             <Italian>Controlla la temperatura</Italian>
             <French>Vérifier la température</French>
@@ -253,7 +257,7 @@
             <English>Checking Temperature</English>
             <Dutch>Temperatuur wordt gecheckt</Dutch>
             <Spanish>ComprobandoTemperatura</Spanish>
-            <Japanese>体温をチェックしています</Japanese>
+            <Japanese>体温を検査中</Japanese>
             <German>Prüfe Temperatur</German>
             <Italian>Controllo della temperatura in corso</Italian>
             <French>La température est vérifiée</French>
@@ -263,7 +267,7 @@
             <English>Check Hand Warmers</English>
             <Dutch>Check handwarmers</Dutch>
             <Spanish>Comprobar Calentadores de Mano</Spanish>
-            <Japanese>ハンドウォーマーをチェックします</Japanese>
+            <Japanese>ハンドウォーマーを確認</Japanese>
             <German>Handwärmer überprüfen</German>
             <Italian>Controlla i riscaldatori per le mani</Italian>
             <French>Vérifier les chauffe-mains.</French>

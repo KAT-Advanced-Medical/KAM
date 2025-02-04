@@ -212,6 +212,7 @@
         <Key ID="STR_KAT_Watch_TimeModifier_Settings">
             <English>Time Modifier (K500/Model R)</English>
             <Japanese>盤面/指針の表示切り替え (K500/Model R)</Japanese>
+            <French>Passage entre l'heure complète et l'information du jour (K500/Modèle R)</French>
         </Key>
         <Key ID="STR_KAT_Watch_descentFT">
             <English>%1ft/s</English>

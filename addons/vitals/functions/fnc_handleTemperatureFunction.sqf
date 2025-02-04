@@ -28,8 +28,10 @@ _positionTemperature params ["_lattitude", "_projectedTemperature"];
 private _mapTemperature = _projectedTemperature - ((linearConversion [0, 90, _lattitude, 15, 5, true]) * (linearConversion [0, 1, sunOrMoon, 1, 0, true]));
 
 private _warmingImpact = (_unit getVariable [QEGVAR(hypothermia,warmingImpact), 0]) / ML_TO_LITERS; 
-private _pointTemperature = -3.5 * (0.95 ^ _mapTemperature + _altitudeAdjustment);
-private _currentTemperature = DEFAULT_TEMPERATURE min (((-0.3392 * (_bloodVolume^2)) + (6.00357 * _bloodVolume) + (13.3 + _warmingImpact - (_pointTemperature / 20))));
+private _pointTemperature = linearConversion [0, 40, (-3.5 * (0.95 ^ _mapTemperature + _altitudeAdjustment)), 12, -9, true];
+private _initialBodyTemperature = DEFAULT_TEMPERATURE min (((-0.3392 * (_bloodVolume^2)) + (6.00357 * _bloodVolume) + 13.3));
+
+private _currentTemperature = _initialBodyTemperature + _warmingImpact - (_pointTemperature / _bloodVolume);
 
 _unit setVariable [QEGVAR(hypothermia,unitTemperature), _currentTemperature, _syncValue];
 

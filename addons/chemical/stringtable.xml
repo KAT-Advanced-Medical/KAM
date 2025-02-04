@@ -132,7 +132,7 @@
         <Key ID="STR_KAT_Chemical_SETTING_showPoisoning">
             <English>Show Poisoning</English>
             <Japanese>中毒状態を表示</Japanese>
-            <French>Montrer l'empoisonnement</French>
+            <French>Afficher les intoxications</French>
             <Chinesesimp>显示中毒</Chinesesimp>
         </Key>
         <Key ID="STR_KAT_Chemical_SETTING_showPoisoning_DESC">
@@ -757,6 +757,7 @@
         <Key ID="STR_KAT_Chemical_Lvl0_Gas">
             <English>Tear gas (Level 0)</English>
             <Japanese>催涙ガス (レベル 0)</Japanese>
+            <French>Gaz lacrymogène (Niveau 0)</French>
         </Key>
         <Key ID="STR_KAT_Chemical_Lvl1_Gas">
             <English>Toxic gas (Level 1)</English>
@@ -923,6 +924,7 @@
         <Key ID="STR_KAT_Chemical_SETTING_gasMaskStaminaLoss">
             <English>Enable Stamina Loss when using Gas Mask</English>
             <Japanese>ガスマスク使用時のスタミナ減少を有効化</Japanese>
+            <French>Activer la perte d'endurance lors de l'utilisation du masque à gaz</French>
         </Key>
     </Package>
 </Project>

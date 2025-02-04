@@ -79,7 +79,7 @@ class CfgWeapons {
         picture = QPATHTOF(ui\steth.paa);
         ACE_isMedicalItem = 1;
         class ItemInfo: CBA_MiscItem_ItemInfo {
-            mass = 5;
+            mass = 6;
         };
     };
 

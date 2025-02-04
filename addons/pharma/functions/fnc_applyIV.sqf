@@ -49,13 +49,41 @@ if (_usedItem isEqualTo "kat_IV_16") then {
     _IVarray set [_partIndex, 1];
     _patient setVariable [QGVAR(IV), _IVarray, true];
 
-    private _lidocaineCount = [_patient, "Lidocaine", false] call ACEFUNC(medical_status,getMedicationCount);
-    private _morphineCount = [_patient, "Morphine", false] call ACEFUNC(medical_status,getMedicationCount);
-    private _nalbuphineCount = [_patient, "Nalbuphine", false] call ACEFUNC(medical_status,getMedicationCount);
-    private _fentanylCount = [_patient, "Fentanyl", false] call ACEFUNC(medical_status,getMedicationCount);
-    private _ketamineCount = [_patient, "Ketamine", false] call ACEFUNC(medical_status,getMedicationCount);
-    if (_lidocaineCount <=  0.6 && _morphineCount <=  0.6 && _nalbuphineCount <=  0.6 && _fentanylCount <=  0.6 && _ketamineCount <=  0.6) then {[_patient, 0.8] call ACEFUNC(medical_status,adjustPainLevel)};
-
+    private _medStack = _patient call ACEFUNC(medical_treatment,getAllMedicationCount);
+    private _medsToCheck = ["fentanyl", "ketamine", "nalbuphine", "morphine", "lidocaine"];
+    private _fentanylEffectiveness = 0;
+    private _ketamineEffectiveness = 0;
+    private _nalbuphineEffectiveness = 0;
+    private _morphineEffectiveness = 0;
+    private _lidocaineEffectiveness = 0;
+    {
+        private _medName = toLower (_x select 0);
+        private _effectiveness = _x select 2;
+        if ("fentanyl" in _medName) then {
+            _fentanylEffectiveness = _fentanylEffectiveness max _effectiveness;
+        };
+        if ("ketamine" in _medName) then {
+            _ketamineEffectiveness = _ketamineEffectiveness max _effectiveness;
+        };
+        if ("nalbuphine" in _medName) then {
+            _nalbuphineEffectiveness = _nalbuphineEffectiveness max _effectiveness;
+        };
+        if ("morphine" in _medName) then {
+            _morphineEffectiveness = _morphineEffectiveness max _effectiveness;
+        };
+        if ("lidocaine" in _medName) then {
+            _lidocaineEffectiveness = _lidocaineEffectiveness max _effectiveness;
+        };
+        } forEach _medStack;
+        if (
+            _fentanylEffectiveness <= 0.6 &&
+            _ketamineEffectiveness <= 0.6 &&
+            _nalbuphineEffectiveness <= 0.6 &&
+            _lidocaineEffectiveness <= 0.6 &&
+            _morphineEffectiveness <= 0.6
+        ) then {
+            [_patient, [0.6, 0.7, 0.8] select (floor random 3)] call ACEFUNC(medical_status,adjustPainLevel);
+        };
     [_patient, "activity", LSTRING(iv_log), [[_medic] call ACEFUNC(common,getName), "FAST IO"]] call ACEFUNC(medical_treatment,addToLog);
     [_patient, "FAST IO"] call ACEFUNC(medical_treatment,addToTriageCard);
 };

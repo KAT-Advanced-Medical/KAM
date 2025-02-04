@@ -2492,15 +2492,24 @@
         </Key>
         <Key ID="STR_KAT_Breathing_breathing_rrRapid">
             <English>RR: Rapid</English>
-            <Japanese>RR: 速い</Japanese>
+            <Japanese>呼吸速度: 速い</Japanese>
+            <French>RR : Rapide</French>
         </Key>
         <Key ID="STR_KAT_Breathing_breathing_rrSlow">
             <English>RR: Slow</English>
-            <Japanese>RR: 遅い</Japanese>
+            <Japanese>呼吸速度: 遅い</Japanese>
+            <French>RR : Lent</French>
         </Key>
         <Key ID="STR_KAT_Breathing_breathing_rrNormal">
             <English>RR: Normal</English>
-            <Japanese>RR: 正常</Japanese>
+            <Japanese>呼吸速度: 正常</Japanese>
+            <French>RR : Normal</French>
+        </Key>
+        <Key ID="STR_KAT_Breathing_breathing_isVeryShallow">
+            <English>Patient's breathing is very shallow</English>
+        </Key>
+        <Key ID="STR_KAT_Breathing_breathing_Veryshallow">
+            <English>Very Shallow</English>
         </Key>
         <Key ID="STR_KAT_Breathing_breathing_none">
             <English>Patient is not breathing</English>
@@ -2744,7 +2753,7 @@
         </Key>
         <Key ID="STR_KAT_Breathing_inspectChest_simple">
             <English>Symptoms indicate %1</English>
-            <Japanese>診断症状:</Japanese>
+            <Japanese>診断症状 %1</Japanese>
             <French>Les symptômes indiquent %1</French>
             <Korean>현재 증상: %1</Korean>
             <German>Die Symptome weisen auf %1 hin.</German>
@@ -2900,7 +2909,7 @@
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_AVAIL_OXYMASK">
             <English>Available Oxygen Masks</English>
-            <Japanese>使用可能な酸素マスク</Japanese>
+            <Japanese>利用可能な酸素供給マスク</Japanese>
             <French>Masques à oxygène disponibles</French>
             <Chinesesimp>可用氧气面罩</Chinesesimp>
         </Key>
@@ -2909,6 +2918,14 @@
             <Japanese>酸素マスクとして動作させたいゴーグルを指定します</Japanese>
             <French>Spécifiez les masques que vous souhaitez utiliser comme masque à oxygène.</French>
             <Chinesesimp>设置哪些护目镜可以作为氧气面罩</Chinesesimp>
+        </Key>
+        <Key ID="STR_KAT_Breathing_SETTING_AVAIL_OXYHELMET">
+            <English>Available Oxygen Helmets</English>
+            <Japanese>利用可能な酸素供給ヘルメット</Japanese>
+        </Key>
+        <Key ID="STR_KAT_Breathing_SETTING_AVAIL_OXYHELMET_DISC">
+            <English>Sets which helmets can act as oxygen masks</English>
+            <Japanese>酸素マスクとして動作させたいヘルメットを指定します</Japanese>
         </Key>
         <Key ID="STR_KAT_Breathing_AttachPersonalOxygenTank">
             <English>Connect Personal Oxygen</English>

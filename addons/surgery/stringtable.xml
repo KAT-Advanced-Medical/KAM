@@ -725,9 +725,14 @@
             <German>Normal</German>
             <Chinesesimp>正常</Chinesesimp>
         </Key>
+        <Key ID="STR_KAT_Surgery_Ultra_Airway_Compromise">
+            <English>Compromised</English>
+            <Japanese>機能不全</Japanese>
+        </Key>
         <Key ID="STR_KAT_Surgery_Ultra_Airway_NoActivity">
             <English>No Activity</English>
             <Japanese>活動なし</Japanese>
+            <French>Aucune activité</French>
         </Key>
         <Key ID="STR_KAT_Surgery_Ultra_Thorasic_PTX">
             <English>Pneumothorax</English>
@@ -767,6 +772,7 @@
         </Key>
         <Key ID="STR_KAT_Surgery_Ultra_Thorasic_NoActivity">
             <English>No Activity</English>
+            <French>Aucune activité</French>
             <Japanese>活動なし</Japanese>
         </Key>
         <Key ID="STR_KAT_Surgery_Ultra_Cardiac_Shockable">
