@@ -246,6 +246,7 @@
         <Key ID="STR_KAT_Hypothermia_temperature_hot">
             <English>Patient feels hot</English>
             <Japanese>患者は熱を帯びている</Japanese>
+            <French>Le patient est fiévreux.</French>
         </Key>
         <Key ID="STR_KAT_Hypothermia_Check_Temperature">
             <English>Check Temperature</English>
