@@ -241,10 +241,6 @@
         </Key>
         <Key ID="STR_KAT_Hypothermia_temperature_hot">
             <English>Patient feels hot</English>
-            <French>Le patient se sent brûlant</French>
-        </Key>
-        <Key ID="STR_KAT_Hypothermia_temperature_hot">
-            <English>Patient feels hot</English>
             <Japanese>患者は熱を帯びている</Japanese>
             <French>Le patient est fiévreux.</French>
         </Key>

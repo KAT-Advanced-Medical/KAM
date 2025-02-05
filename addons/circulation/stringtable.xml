@@ -3444,33 +3444,43 @@
         </Key>
         <Key ID="STR_KAT_Circulation_BPCuff_display">
             <English>Blood Pressure Cuff</English>
+            <French>Brassard de pression artérielle</French>
         </Key>
         <Key ID="STR_KAT_Circulation_BPCuff_desc">
             <English>A medical device to accurately determine a patients blood pressure</English>
+            <French>Dispositif médical permettant de déterminer avec précision la tension artérielle d'un patient</French>
         </Key>
         <Key ID="STR_KAT_Circulation_Actions_CheckBloodPressureCuff">
             <English>Check BP with BP Cuff</English>
+            <French>Prendre la tension à l'aide d'un tensiomètre</French>
         </Key>
         <Key ID="STR_KAT_Circulation_Actions_CheckingBloodPressureCuff">
             <English>Checking BP with BP Cuff</English>
+            <French>Vérification de la tension artérielle à l'aide d'un tensiomètre</French>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_BPCuff">
             <English>Allow BP Cuff</English>
+            <French>Autoriser le brassard de tension artérielle</French>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_BPCuff_DESC">
             <English>Training Level for use of the BP Cuff</English>
+            <French>Niveau de formation pour l'utilisation du brassard de tension artérielle</French>
         </Key>
         <Key ID="STR_KAT_Circulation_treatmentTime_BPCuff">
             <English>Time to measure BP with BP Cuff</English>
+            <French>Temps nécessaire pour mesurer la tension artérielle à l'aide d'un tensiomètre</French>
         </Key>
         <Key ID="STR_KAT_Circulation_Check_Bloodpressure_Output_Palp">
             <English>You find a blood pressure of %3 over Palp</English>
+            <French>Vous constatez une tension artérielle de %3 à la palpation.</French>
         </Key>
         <Key ID="STR_KAT_Circulation_Bloodpressure_Output_Palp">
             <English>%1 over Palp</English>
+            <French>%1 à la palpation</French>
         </Key>
         <Key ID="STR_KAT_Circulation_Check_Pulse_Output">
             <English>You find a Pulse Rate of %2</English>
+            <French>Vous trouvez un pouls de %2</French>
         </Key>
         <Key ID="STR_KAT_Circulation_Pulse_Output">
             <English>%1 PPM</English>
