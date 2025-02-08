@@ -10,6 +10,7 @@
             <German>Vereinfachte med. Simulation für KI</German>
             <French>Simplifier la médecine pour l'IA.</French>
             <Chinesesimp>激活AI简单医疗</Chinesesimp>
+            <Czech>Aktivovat AI Simple Medical</Czech>
         </Key>
         <Key ID="STR_KAT_Vitals_SIMPLEMED_ENABLE_DESC">
             <English>Apply simplified vital calculations to the AI unit. Which can be useful for saving FPS.</English>
@@ -18,6 +19,7 @@
             <German>Vereinfachte Vital-Simulation bei KI-Einheiten. Reduziert Leistungsaufwand.</German>
             <French>Appliquer des calculs vitaux simplifiés à l'unité AI. Ce qui peut être utile pour économiser des FPS.</French>
             <Chinesesimp>将简化的重要计算应用于AI单元。这对于保存FPS很有用。</Chinesesimp>
+            <Czech>Aplikujte zjednodušené životně důležité výpočty na AI jednotky. Může být užitečné pro úsporu FPS.</Czech>
         </Key>
         <Key ID="STR_KAT_Vitals_FLUID_SHIFT">
             <English>Enable Patient Fluid Shift</English>
@@ -26,46 +28,55 @@
             <German>Aktiviert Flüssigkeitsverschiebung im Patienten</German>
             <French>Permettre le transfert de fluide du patient</French>
             <Chinesesimp>启用患者液体转移</Chinesesimp>
+            <Czech>Povolit Posun Tekutin Pacienta</Czech>
         </Key>
         <Key ID="STR_KAT_Vitals_BASIC_DIAGNOSTIC_ENABLE">
             <English>Enable Basic Vitals Kit</English>
             <Japanese>基本型バイタル診断キットを有効化</Japanese>
             <French>Activer le kit de diagnostic vital de base.</French>
+            <Czech>Povolit Základní Vitální Sadu</Czech>
         </Key>
         <Key ID="STR_KAT_Vitals_BASIC_DIAGNOSTIC_TIME">
             <English>Basic Vitals Kit Time</English>
             <Japanese>基本型バイタル診断キットの所要時間</Japanese>
             <French>Temps nécessaire pour le kit de diagnostic vital de base</French>
+            <Czech>Čas Základní Vitální Sady</Czech>
         </Key>
         <Key ID="STR_KAT_Vitals_basicDiagnostic_display">
             <English>Basic Vitals Kit</English>
             <Japanese>基本型バイタル診断キット</Japanese>
             <French>Kit de diagnostic vital de base</French>
+            <Czech>Základní Vitální Sada</Czech>
         </Key>
         <Key ID="STR_KAT_Vitals_basicDiagnostic_description">
             <English>Vitals Kit which returns HR, BP, and RR</English>
             <Japanese>心拍(HR)、血圧(BP)、呼吸回数(RR)などのバイタルを計測可能な診断キット</Japanese>
             <French>Kits de diagnostic permettant de mesurer les paramètres vitaux tels que la fréquence cardiaque (FC), la pression artérielle (PA) et la fréquence respiratoire (FR).</French>
+            <Czech>Vitální Sada, která zobrazí SF, TK a DF (Srdeční Frekvence, Tlak Krve, Dechová Frekvence)</Czech>
         </Key>
         <Key ID="STR_KAT_Vitals_basicDiagnostic_use">
             <English>Use Basic Vitals Kit</English>
             <Japanese>基本型バイタル診断キットを使用</Japanese>
             <French>Utiliser un kit de diagnostic vital de base</French>
+            <Czech>Použít Základní Vitální Sadu</Czech>
         </Key>
         <Key ID="STR_KAT_Vitals_basicDiagnostic_progress">
             <English>Assessing Patient...</English>
             <Japanese>患者を診断中・・・</Japanese>
             <French>Évaluation du patient...</French>
+            <Czech>Vyhodnocování pacienta...</Czech>
         </Key>
         <Key ID="STR_KAT_Vitals_BasicDiagnostic_Output">
             <English>HR: %1, BP: %2/%3, RR: %4</English>
             <Japanese>心拍: %1, 血圧: %2/%3, 呼吸回数: %4</Japanese>
             <French>FC : %1, PA : %2/%3, FR : %4</French>
+            <Czech>SF: %1, TK: %2/%3, DF: %4</Czech>
         </Key>
         <Key ID="STR_KAT_Vitals_basicDiagnostic_Log">
             <English>%1 - %2</English>
             <Japanese>%1 - %2</Japanese>
             <French>%1 - %2</French>
+            <Czech>%1 - %2</Czech>
         </Key>
     </Package>
 </Project>

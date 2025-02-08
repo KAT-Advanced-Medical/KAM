@@ -67,6 +67,7 @@
             <Russian>Никаких переливаний</Russian>
             <Dutch>Geen toegediende vloeistoffen</Dutch>
             <Italian>Nessun fluido somministrato</Italian>
+            <Czech>Žádné tekutiny</Czech>
         </Key>
         <Key ID="STR_KAT_GUI_SETTING_overlayBodyPart">
             <English>Overlay Selected Body Part</English>
@@ -81,6 +82,7 @@
             <Russian>Показать выбранную часть тела</Russian>
             <Dutch>Omtrekking geselecteerd lichaamsdeel</Dutch>
             <Italian>Visualizza la parte del corpo selezionata</Italian>
+            <Czech>Zvýraznění vybrané části těla</Czech>
         </Key>
         <Key ID="STR_KAT_GUI_SETTING_showPatientSideLabels">
             <English>Label Patient Sides</English>
@@ -95,6 +97,7 @@
             <Russian>Маркировка сторон пациента</Russian>
             <Dutch>Label zijden van patiënt</Dutch>
             <Italian>Etichettare i lati del paziente</Italian>
+            <Czech>Označit strany pacienta</Czech>
         </Key>
         <Key ID="STR_KAT_GUI_HeadCover">
             <English>HEAD - NO LINE</English>
@@ -105,6 +108,7 @@
             <German>KOPF - KEIN ZUGANG</German>
             <French>TETE - PAS DE LIGNES</French>
             <Chinesesimp>头部-无线路</Chinesesimp>
+            <Czech>HLAVA - BEZ LINIE</Czech>
         </Key>
         <Key ID="STR_KAT_GUI_ChestCover">
             <English>CHEST - NO LINE</English>
@@ -115,6 +119,7 @@
             <German>BRUST - KEIN ZUGANG</German>
             <French>POITRINE - PAS DE LIGNES</French>
             <Chinesesimp>胸部--无线路</Chinesesimp>
+            <Czech>HRUDNÍK - BEZ LINIE</Czech>
         </Key>
         <Key ID="STR_KAT_GUI_RArmCover">
             <English>RIGHT ARM - NO LINE</English>
@@ -125,6 +130,7 @@
             <German>RECHTER ARM – KEIN ZUGANG</German>
             <French>BRAS DROIT - PAS DE LIGNES</French>
             <Chinesesimp>右臂--无线路</Chinesesimp>
+            <Czech>PRAVÁ RUKA - BEZ LINIE</Czech>
         </Key>
         <Key ID="STR_KAT_GUI_LArmCover">
             <English>LEFT ARM - NO LINE</English>
@@ -135,6 +141,7 @@
             <German>LINKER ARM – KEIN ZUGANG</German>
             <French>BRAS GAUCHE - PAS DE LIGNES</French>
             <Chinesesimp>左臂--无线路</Chinesesimp>
+            <Czech>LEVÁ RUKA - BEZ LINIE</Czech>
         </Key>
         <Key ID="STR_KAT_GUI_RLegCover">
             <English>RIGHT LEG - NO LINE</English>
@@ -145,6 +152,7 @@
             <German>RECHTES BEIN – KEIN ZUGANG</German>
             <French>JAMBE DROITE - PAS DE LIGNES</French>
             <Chinesesimp>右腿--无线路</Chinesesimp>
+            <Czech>PRAVÁ NOHA - BEZ LINIE</Czech>
         </Key>
         <Key ID="STR_KAT_GUI_LLegCover">
             <English>LEFT LEG - NO LINE</English>
@@ -155,6 +163,7 @@
             <German>LINKES BEIN – KEIN ZUGANG</German>
             <French>JAMBE GAUCHE - PAS DE LIGNES</French>
             <Chinesesimp>左腿--无线路</Chinesesimp>
+            <Czech>LEVÁ NOHA - BEZ LINIE</Czech>
         </Key>
         <Key ID="STR_KAT_GUI_IVFlowTitle">
             <English>IV Flow Control</English>
@@ -165,6 +174,7 @@
             <German>IV-Flusskontrolle</German>
             <French>Fonctionnement du flux IV</French>
             <Chinesesimp>IV 流量控制</Chinesesimp>
+            <Czech>Řízení průtoku IV</Czech>
         </Key>
         <Key ID="STR_KAT_GUI_ABGTitle">
             <English>ABG Results</English>
@@ -175,6 +185,7 @@
             <German>ABG-Ergebnisse</German>
             <French>Résultats de l'ABG</French>
             <Chinesesimp>ABG结果</Chinesesimp>
+            <Czech>ABG Výsledky</Czech>
         </Key>
         <Key ID="STR_KAT_GUI_IVValue">
             <English>0.0</English>
@@ -185,6 +196,7 @@
             <German>0.0</German>
             <French>0.0</French>
             <Chinesesimp>0</Chinesesimp>
+            <Czech>0.0</Czech>
         </Key>
         <Key ID="STR_KAT_GUI_HeadTitle">
             <English>Head</English>
@@ -195,6 +207,7 @@
             <German>Kopf</German>
             <French>Tête</French>
             <Chinesesimp>Head</Chinesesimp>
+            <Czech>Hlava</Czech>
         </Key>
         <Key ID="STR_KAT_GUI_HeadType">
             <English>IV</English>
@@ -205,6 +218,7 @@
             <German>IV</German>
             <French>IV</French>
             <Chinesesimp>IV</Chinesesimp>
+            <Czech>IV</Czech>
         </Key>
         <Key ID="STR_KAT_GUI_ChestTitle">
             <English>Chest</English>
@@ -215,6 +229,7 @@
             <German>Brust</German>
             <French>Torse</French>
             <Chinesesimp>Chest</Chinesesimp>
+            <Czech>Hrudník</Czech>
         </Key>
         <Key ID="STR_KAT_GUI_ChestType">
             <English>IV</English>
@@ -225,6 +240,7 @@
             <German>IV</German>
             <French>IV</French>
             <Chinesesimp>IV</Chinesesimp>
+            <Czech>IV</Czech>
         </Key>
         <Key ID="STR_KAT_GUI_LArmTitle">
             <English>LA</English>
@@ -235,6 +251,7 @@
             <German>LA</German>
             <French>BG</French>
             <Chinesesimp>LA</Chinesesimp>
+            <Czech>LR</Czech>
         </Key>
         <Key ID="STR_KAT_GUI_LArmType">
             <English>IV</English>
@@ -245,6 +262,7 @@
             <German>IV</German>
             <French>IV</French>
             <Chinesesimp>IV</Chinesesimp>
+            <Czech>IV</Czech>
         </Key>
         <Key ID="STR_KAT_GUI_RArmTitle">
             <English>RA</English>
@@ -255,6 +273,7 @@
             <German>RA</German>
             <French>BD</French>
             <Chinesesimp>RA</Chinesesimp>
+            <Czech>PR</Czech>
         </Key>
         <Key ID="STR_KAT_GUI_RArmType">
             <English>IV</English>
@@ -265,6 +284,7 @@
             <German>IV</German>
             <French>IV</French>
             <Chinesesimp>IV</Chinesesimp>
+            <Czech>IV</Czech>
         </Key>
         <Key ID="STR_KAT_GUI_LLegTitle">
             <English>LL</English>
@@ -275,6 +295,7 @@
             <German>LB</German>
             <French>JG</French>
             <Chinesesimp>LL</Chinesesimp>
+            <Czech>LN</Czech>
         </Key>
         <Key ID="STR_KAT_GUI_LLegType">
             <English>IV</English>
@@ -285,6 +306,7 @@
             <German>IV</German>
             <French>IV</French>
             <Chinesesimp>IV</Chinesesimp>
+            <Czech>IV</Czech>
         </Key>
         <Key ID="STR_KAT_GUI_RLegTitle">
             <English>RL</English>
@@ -295,6 +317,7 @@
             <German>RB</German>
             <French>JD</French>
             <Chinesesimp>RL</Chinesesimp>
+            <Czech>PN</Czech>
         </Key>
         <Key ID="STR_KAT_GUI_RLegType">
             <English>IV</English>
@@ -305,6 +328,7 @@
             <German>IV</German>
             <French>IV</French>
             <Chinesesimp>IV</Chinesesimp>
+            <Czech>IV</Czech>
         </Key>
         <Key ID="STR_KAT_GUI_BGBlank">
             <English>--.-</English>
@@ -315,6 +339,7 @@
             <German>--.-</German>
             <French>--.-</French>
             <Chinesesimp>--.-</Chinesesimp>
+            <Czech>--.-</Czech>
         </Key>
         <Key ID="STR_KAT_GUI_TestReset">
             <English>Reset</English>
@@ -325,6 +350,7 @@
             <German>Reset</German>
             <French>Réinitialiser</French>
             <Chinesesimp>重置</Chinesesimp>
+            <Czech>Reset</Czech>
         </Key>
     </Package>
 </Project>
