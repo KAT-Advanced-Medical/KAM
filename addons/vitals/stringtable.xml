@@ -6,16 +6,19 @@
             <Dutch>Activeer AI/KI versimpeld medisch</Dutch>
             <Spanish>Activar Médico Simple para IA</Spanish>
             <Chinese>啟用AI簡易醫療</Chinese>
+            <Chinesesimp>启用AI简易医疗</Chinesesimp>
             <Japanese>AI用単純化医療を有効化</Japanese>
         </Key>
         <Key ID="STR_KAT_Vitals_SIMPLEMED_ENABLE_DESC">
             <English>Apply simplified vital calculations to the AI unit. Which can be useful for saving FPS.</English>
-            <Chinese>將簡化的生命特徵計算應用於AI單元，這可以幫助節省FPS。</Chinese>
+            <Chinese>將簡化的生命特徵計算應用於AI單位，這可以幫助節省FPS。</Chinese>
+            <Chinesesimp>将简化的生命特征计算应用于AI单位，这可以帮助节省FPS。</Chinesesimp>
             <Japanese>単純化されたバイタル計算をAIユニットに適用します。 これは負荷の軽減に役立つ可能性があります。</Japanese>
         </Key>
         <Key ID="STR_KAT_Vitals_FLUID_SHIFT">
             <English>Enable Patient Fluid Shift</English>
             <Chinese>啟用患者體液轉移</Chinese>
+            <Chinesesimp>启用患者体液转移</Chinesesimp>
             <Japanese>患者の体液移動を有効化</Japanese>
         </Key>
     </Package>
