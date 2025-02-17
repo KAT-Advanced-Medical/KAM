@@ -136,6 +136,7 @@ class ACE_Medical_Menu {
                 y = QUOTE(POS_Y(1.1));
                 w = QUOTE(POS_W(9));
                 h = QUOTE(POS_H(3.3));
+                show = 0;
             };
             class ABGTitle: IVFlowTitle {
                 idc = IDC_ABG_TITLE; // LOOK HERE
@@ -144,7 +145,7 @@ class ACE_Medical_Menu {
                 y = QUOTE(POS_Y(0));
                 w = QUOTE(POS_W(9));
                 h = QUOTE(POS_H(1));
-                show = 1;
+                show = 0;
                 class Attributes {
                     color = "#E5E5E5";
                     font = "RobotoCondensed";
@@ -535,7 +536,7 @@ class ACE_Medical_Menu {
                 y = QUOTE(POS_Y(0));
                 w = QUOTE(POS_W(4.2));
                 h = QUOTE(POS_H(1));
-                show = 1;
+                show = 0;
                 colorBackground[] = {0, 0, 0, 0};
                 colorBackgroundActive[] = {1, 1, 1, 0.4};
                 colorBackgroundDisabled[] = {0, 0, 0, 0};

@@ -73,6 +73,16 @@ if (isServer) then {
     true
 ] call CBA_Settings_fnc_init;
 
+// Enables ABG Menu and Testing
+[
+    QGVAR(abgEnable),
+    "CHECKBOX",
+    [LLSTRING(SETTING_abg_enable), LLSTRING(SETTING_abg_enable_DESC)],
+    [CBA_SETTINGS_CAT, ELSTRING(GUI,SubCategory_Basic)],
+    [false],
+    true
+] call CBA_Settings_fnc_init;
+
 //location for AED - Defi:
 [
     QGVAR(useLocation_AED),
@@ -389,6 +399,16 @@ if (isServer) then {
     true
 ] call CBA_Settings_fnc_init;
 
+// Sets whether or not H&T conditions keep patients in cardiac arrest until resolved
+[
+    QGVAR(AdvRhythm_HTHold),
+    "CHECKBOX",
+    LLSTRING(SETTING_AdvRhythm_HTHold),
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_AdvRhythms)],
+    [false],
+    true
+] call CBA_Settings_fnc_init;
+
 // Sets chance for Pulseless Electrical Activity / Asystole
 [
     QGVAR(AdvRhythm_PEAChance),
@@ -560,6 +580,51 @@ if (isServer) then {
     LLSTRING(SETTING_tamponadeInterval),
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_AdvRhythms)],
     [0,3600,60,0],
+    true
+] call CBA_Settings_fnc_init;
+
+[
+    QGVAR(hardcoreDiagnose),
+    "CHECKBOX",
+    [LLSTRING(SETTING_hardcoreDiagnose),LLSTRING(SETTING_hardcoreDiagnose_DESC)],
+    [CBA_SETTINGS_CAT, ELSTRING(GUI,SubCategory_Basic)],
+    [false],
+    true
+] call CBA_Settings_fnc_init;
+
+[
+    QGVAR(medLvl_BPCuff),
+    "LIST",
+    [LLSTRING(SETTING_BPCuff),LLSTRING(SETTING_BPCuff_DESC)],
+    [CBA_SETTINGS_CAT, ELSTRING(GUI,SubCategory_Basic)],
+    [[0, 1, 2], ["STR_ACE_Medical_Treatment_Anyone", "STR_ACE_Medical_Treatment_Medics", "STR_ACE_Medical_Treatment_Doctors"], 0],
+    true
+] call CBA_settings_fnc_init;
+
+[
+    QGVAR(treatmentTime_BPCuff),
+    "SLIDER",
+    [LLSTRING(treatmentTime_BPCuff)],
+    [CBA_SETTINGS_CAT, ELSTRING(GUI,SubCategory_Basic)],
+    [0.1, 30, 12, 1],
+    true
+] call CBA_Settings_fnc_init;
+
+[
+    QGVAR(medLvl_StethHR),
+    "LIST",
+    [LLSTRING(SETTING_StethHR),LLSTRING(SETTING_StethHR_DESC)],
+    [CBA_SETTINGS_CAT, ELSTRING(GUI,SubCategory_Basic)],
+    [[0, 1, 2], ["STR_ACE_Medical_Treatment_Anyone", "STR_ACE_Medical_Treatment_Medics", "STR_ACE_Medical_Treatment_Doctors"], 0],
+    true
+] call CBA_settings_fnc_init;
+
+[
+    QGVAR(treatmentTime_StethHR),
+    "SLIDER",
+    [LLSTRING(treatmentTime_StethHR)],
+    [CBA_SETTINGS_CAT, ELSTRING(GUI,SubCategory_Basic)],
+    [0.1, 30, 8, 1],
     true
 ] call CBA_Settings_fnc_init;
 

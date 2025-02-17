@@ -18,4 +18,21 @@
 
 params ["_posX", "_posY", "_posZ"];
 
-[QGVAR(createZoneGlobal), [[_posX, _posY, _posZ], 240, 15, 0]] call CBA_fnc_globalEventJIP;
+private _projectile = QGVAR(logic) createVehicle [_posX,_posY,_posZ];
+
+if (isServer) then {
+    private _radius = 15;
+    private _timeToLive = 240;
+    private _gasLevel = 1;
+
+    [QGVAR(addGasSource), [_projectile, _radius, _gasLevel, _projectile, {
+        params ["_endTime", "_projectile"];
+
+        // If projectile no longer exists, exit
+        if (isNull _projectile) exitWith {
+            false // return
+        };
+
+        CBA_missionTime < _endTime // return
+    }, [CBA_missionTime + _timeToLive, _projectile]]] call CBA_fnc_serverEvent;
+};

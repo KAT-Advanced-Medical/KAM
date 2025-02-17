@@ -18,6 +18,46 @@ PREP_RECOMPILE_END;
     true
 ] call CBA_Settings_fnc_init;
 
+//Adds available oxygen masks
+[
+    QGVAR(availOxyMask),
+    "EDITBOX",
+    [LLSTRING(SETTING_AVAIL_OXYMASK), LLSTRING(SETTING_AVAIL_OXYMASK_DISC)],
+    [CBA_SETTINGS_CAT, ELSTRING(GUI,SubCategory_Basic)],
+    "'kat_mask_solr'",
+    1,
+    {
+        private _array = [_this, "CfgGlasses"] call EFUNC(chemical,getList);
+        missionNamespace setVariable [QGVAR(availOxyMaskList), _array, true];
+    },
+    true
+] call CBA_Settings_fnc_init;
+
+//Adds available oxygen helmets
+[
+    QGVAR(availOxyHelmet),
+    "EDITBOX",
+    [LLSTRING(SETTING_AVAIL_OXYHELMET), LLSTRING(SETTING_AVAIL_OXYHELMET_DISC)],
+    [CBA_SETTINGS_CAT, ELSTRING(GUI,SubCategory_Basic)],
+    "'H_PilotHelmetFighter_B', 'H_PilotHelmetFighter_O', 'H_PilotHelmetFighter_I', 'H_PilotHelmetFighter_I_E'",
+    1,
+    {
+        private _array = [_this, "CfgWeapons"] call EFUNC(chemical,getList);
+        missionNamespace setVariable [QGVAR(availOxyHelmetList), _array, true];
+    },
+    true
+] call CBA_Settings_fnc_init;
+
+//Enable Check Breathing medical action
+[
+    QGVAR(enableCheckBreathing),
+    "CHECKBOX",
+    [LLSTRING(SETTING_enableCheckBreathing),LLSTRING(SETTING_enableCheckBreathing_DESC)],
+    [CBA_SETTINGS_CAT, ELSTRING(GUI,SubCategory_Basic)],
+    [true],
+    true
+] call CBA_Settings_fnc_init;
+
 // Lethal SpO2 value
 [
     QGVAR(SpO2_dieValue),

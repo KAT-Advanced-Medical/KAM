@@ -62,6 +62,7 @@ class CfgPatches {
     };
 };
 
+#include "RscTitles.hpp"
 #include "CfgFunctions.hpp"
 #include "CfgMoves.hpp"
 #include "CfgEventHandlers.hpp"

@@ -65,6 +65,7 @@
             <French>Détérioration du pneumothorax :</French>
             <Portuguese>Deterioração do pneumotórax</Portuguese>
             <Dutch>Verslechterende pneumothorax: </Dutch>
+            <Italian>Il pneumotorace peggiora:</Italian>
             <Chinese>氣胸惡化：</Chinese>
         </Key>
         <Key ID="STR_KAT_Zeus_ModuleManageAirway_Hemopneumothorax">
@@ -205,25 +206,8 @@
             <Finnish>Muuta sydämen tilaa</Finnish>
             <Russian>Изменить состояние сердца</Russian>
             <Dutch>Verander cardiale staat</Dutch>
+            <Italian>Cambia stato cardiaco</Italian>
             <Chinese>更改心臟狀態</Chinese>
-        </Key>
-        <Key ID="STR_KAT_Zeus_checkmedical_Module_displayname">
-            <English>Open unit medical menu</English>
-            <German>Medic Menü der Einheit öffnen</German>
-            <Czech>Otevřít zdravotnickou nabídku jednotky</Czech>
-            <French>Ouvrir menu médical</French>
-            <Polish>Otwórz menu medyczne</Polish>
-            <Spanish>Abrir el menú médico de la unidad</Spanish>
-            <Chinese>開啟單位醫療選單</Chinese>
-            <Korean>유닛 의료 메뉴 열기</Korean>
-            <Turkish>Ünite tıbbi menüsünü aç</Turkish>
-            <Japanese>医療メニューを開く</Japanese>
-            <Russian>Медицинское меню открытого блока</Russian>
-            <Italian>Apri il menu medico</Italian>
-            <Chinesesimp>打开单位医疗菜单</Chinesesimp>
-            <Portuguese>Abra o menu médico da unidade</Portuguese>
-            <Finnish>Avaa laitteen lääketieteellinen valikko</Finnish>
-            <Dutch>Open eenheids medisch menu</Dutch>
         </Key>
         <Key ID="STR_KAT_Zeus_CardiacState_Module_State">
             <English>State:</English>
@@ -255,7 +239,8 @@
             <Finnish>Ventrikulaarinen takykardia: </Finnish>
             <Russian>Желудочковая тахикардия</Russian>
             <Dutch>Ventriculaire tachycardie</Dutch>
-            <Chinese>心室性心搏過速(VT)</Chinese>
+            <Italian>Tachicardia ventricolare</Italian>
+            <Chinese>室性心跳過速(VT)</Chinese>
         </Key>
         <Key ID="STR_KAT_Zeus_CardiacState_Module_VF">
             <English>Ventricular Fibrillation</English>
@@ -269,6 +254,7 @@
             <Finnish>Kammiovärinä:</Finnish>
             <Russian>Фибрилляция желудочков</Russian>
             <Dutch>Ventriculaire fibrillatie</Dutch>
+            <Italian>Fibrillazione ventricolare</Italian>
             <Chinese>心室顫動(VF)</Chinese>
         </Key>
         <Key ID="STR_KAT_Zeus_CardiacState_Module_PEA">
@@ -283,6 +269,7 @@
             <Finnish>Pulssiton sähköinen toiminta:</Finnish>
             <Russian>Безимпульсная электрическая активность</Russian>
             <Dutch>Polsloze electrische activiteit (PEA)</Dutch>
+            <Italian>Attività elettrica senza polso</Italian>
             <Chinese>無脈性電氣活動(PEA)</Chinese>
         </Key>
         <Key ID="STR_KAT_Zeus_CardiacState_Module_Asystole">
@@ -315,6 +302,7 @@
             <Finnish>Yksikön on oltava AI</Finnish>
             <Russian>Юнит должен быть ИИ</Russian>
             <Dutch>Eenheid moet een KI / AI zijn</Dutch>
+            <Italian>L'unità deve essere un'IA</Italian>
             <Chinese>單位必須是AI</Chinese>
         </Key>
         <Key ID="STR_KAT_Zeus_sliderFormat13was23">
@@ -347,7 +335,8 @@
             <Finnish>Valitse välitön AI-kuolema</Finnish>
             <Russian>Переключить мгновенную смерть ИИ</Russian>
             <Dutch>Schakel onmiddelijke KI / AI dood om</Dutch>
-            <Chinese>切換AI即時死亡</Chinese>
+            <Italian>Attiva/disattiva la morte istantanea dell'IA</Italian>
+            <Chinese>開關AI即時死亡</Chinese>
         </Key>
         <Key ID="STR_KAT_Zeus_toggleAIDeath_Module_Toggled">
             <English>Instant AI Death %1 for unit</English>
@@ -361,6 +350,7 @@
             <Finnish>Välitön AI-kuolema %1 yksikölle</Finnish>
             <Russian>Мгновенная смерть ИИ %1 для юнита</Russian>
             <Dutch>Onmiddelijke dood voor KI / AI %1 voor eenheid</Dutch>
+            <Italian>Morte istantanea dell'IA %1 per l'unità</Italian>
             <Chinese>AI單位即時死亡 %1</Chinese>
         </Key>
     </Package>

@@ -9,7 +9,7 @@ class ACE_Medical_Treatment_Actions {
         medicRequired = QGVAR(medLvl_Larynxtubus);
         treatmentTime = QGVAR(Larynxtubus_time);
         items[] = {"kat_larynx"};
-        condition = QUOTE(!([_patient] call ACEFUNC(common,isAwake)) && (missionNamespace getVariable [ARR_2(QQGVAR(enable),true)]) && !(_patient getVariable [ARR_2(QQGVAR(airway_item),'')] == 'Larynxtubus') && !(_patient getVariable [ARR_2(QQGVAR(airway_item),'')] == 'Guedeltubus'));
+        condition = QUOTE(!([_patient] call ACEFUNC(common,isAwake)) && (missionNamespace getVariable [ARR_2(QQGVAR(enable),true)]) && !(_patient getVariable [ARR_2(QQGVAR(airway_item),'')] == 'Larynxtubus') && !(_patient getVariable [ARR_2(QQGVAR(airway_item),'')] == 'Guedeltubus')  && !([_patient] call FUNC(checkMask)));
         callbackSuccess = QUOTE([ARR_3(_medic,_patient,(_patient getVariable [ARR_2(QQGVAR(occluded),false)]))] call FUNC(handleRecoveryPosition); [ARR_6(_medic,_patient,_bodyPart,_className,objNull,_usedItem)] call FUNC(treatmentAdvanced_airway););
         callbackFailure = "";
         callbackProgress = "";
@@ -57,7 +57,7 @@ class ACE_Medical_Treatment_Actions {
         displayName = CSTRING(AccuvacTreatment_displayName);
         treatmentTime = QGVAR(Accuvac_time);
         items[] = {"kat_accuvac"};
-        condition = QUOTE(!([_patient] call ACEFUNC(common,isAwake)) && (missionNamespace getVariable [ARR_2(QQGVAR(enable),true)]) && !(_patient getVariable [ARR_2(QQGVAR(recovery),false)]) && !(_patient getVariable [ARR_2(QQGVAR(airway_item),'')] == 'Larynxtubus'));
+        condition = QUOTE(!([_patient] call ACEFUNC(common,isAwake)) && (missionNamespace getVariable [ARR_2(QQGVAR(enable),true)]) && !(_patient getVariable [ARR_2(QQGVAR(recovery),false)]) && !(_patient getVariable [ARR_2(QQGVAR(airway_item),'')] == 'Larynxtubus') && !([_patient] call FUNC(checkMask)));
         icon = QPATHTOF(ui\accuvac.paa);
         consumeItem = 0;
         medicRequired = QGVAR(medLvl_Accuvac);
@@ -140,7 +140,7 @@ class ACE_Medical_Treatment_Actions {
         allowedSelections[] = {"Head"};
         allowSelfTreatment = 0;
         callbackSuccess = QFUNC(checkAirway);
-        condition = QUOTE(!([_patient] call ACEFUNC(common,isAwake)) && (missionNamespace getVariable [ARR_2(QQGVAR(enable),true)]));
+        condition = QUOTE((missionNamespace getVariable [ARR_2(QQGVAR(enable),true)]) && !([_patient] call FUNC(checkMask)));
         animationPatientUnconscious = "AinjPpneMstpSnonWrflDnon_rolltoback";
         animationPatientUnconsciousExcludeOn[] = {"ainjppnemstpsnonwrfldnon", "kat_recoveryposition"};
     };

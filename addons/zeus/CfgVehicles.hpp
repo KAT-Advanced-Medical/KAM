@@ -34,13 +34,6 @@ class CfgVehicles {
         icon = QACEPATHTOF(medical_gui,data\categories\advanced_treatment.paa);
     };
 
-    class GVAR(checkmedical_module): GVAR(baseModule) {
-        curatorCanAttach = 1;
-        displayName = CSTRING(checkmedical_Module_displayname);
-        function = QFUNC(openMedicalMenu);
-        icon = QACEPATHTOF(medical_gui,data\categories\triage_card.paa);
-    };
-
     class GVAR(toggleAIDeath_module): GVAR(baseModule) {
         author = "Blue";
         curatorCanAttach = 1;

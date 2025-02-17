@@ -122,6 +122,7 @@ if !(_adjustments isEqualTo []) then {
 [_unit, _peripheralResistanceAdjustment, _deltaT, _syncValues] call ACEFUNC(medical_vitals,updatePeripheralResistance);
 [_unit, _opioidAdjustment, _deltaT, _syncValues] call FUNC(updateOpioidRelief);
 [_unit, _opioidEffectAdjustment, _deltaT, _syncValues] call FUNC(updateOpioidEffect);
+[_unit, POISON_DECREASE, _deltaT, _syncValues] call FUNC(handlePoisoning);
 
 private _heartRate = [_unit, _hrTargetAdjustment, 0, _bloodVolume, _deltaT, _syncValues] call FUNC(handleCardiacFunction);
 
@@ -152,7 +153,7 @@ switch (true) do {
         TRACE_3("O2 Fatal",_unit,EGVAR(breathing,SpO2_dieValue),_spo2);
         [_unit, "Fatal_Blood_Oxygen"] call ACEFUNC(medical_status,setDead);
     };
-    case (_bloodVolume < BLOOD_VOLUME_FATAL): {
+    case ((_bloodVolume + GET_REBOA_VOLUME(_unit)) < BLOOD_VOLUME_FATAL): {
         TRACE_3("BloodVolume Fatal",_unit,BLOOD_VOLUME_FATAL,_bloodVolume);
         [QACEGVAR(medical,Bleedout), _unit] call CBA_fnc_localEvent;
     };
@@ -160,7 +161,7 @@ switch (true) do {
     case ((_spo2 < EGVAR(breathing,SpO2_cardiacValue)) && EGVAR(breathing,SpO2_cardiacActive)): {
         [QACEGVAR(medical,FatalVitals), _unit] call CBA_fnc_localEvent;
     };
-    case (_hemorrhage == 4): {
+    case ((_bloodVolume + GET_REBOA_VOLUME(_unit)) < BLOOD_VOLUME_CLASS_4_HEMORRHAGE): {
         TRACE_3("Class IV Hemorrhage",_unit,_hemorrhage,_bloodVolume);
         [QACEGVAR(medical,FatalVitals), _unit] call CBA_fnc_localEvent;
     };

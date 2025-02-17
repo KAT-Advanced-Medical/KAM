@@ -1,4 +1,4 @@
-class cfgMagazines
+class CfgMagazines
 {
     class ACE_1Rnd_82mm_Mo_HE;
     class KAT_1Rnd_82mm_Mo_Type0: ACE_1Rnd_82mm_Mo_HE
@@ -14,7 +14,7 @@ class cfgMagazines
         scope = 1;
         count = 5;
     };
-    class KAT_1Rnd_82mm_Mo_TypeCS: ACE_1Rnd_82mm_Mo_HE 
+    class KAT_1Rnd_82mm_Mo_TypeCS: ACE_1Rnd_82mm_Mo_HE
     {
         author="DiGii";
         ammo="Sh_82mm_AMOS_TypeCS";
@@ -22,7 +22,7 @@ class cfgMagazines
         displayNameShort= CSTRING(CSGas_MFDNAME);
         displayName= CSTRING(CSGas_DisplayName);
     };
-    class KAT_3Rnd_82mm_Mo_TypeCS_AI: KAT_1Rnd_82mm_Mo_TypeCS 
+    class KAT_3Rnd_82mm_Mo_TypeCS_AI: KAT_1Rnd_82mm_Mo_TypeCS
     {
         scope = 1;
         count = 3;
@@ -36,7 +36,7 @@ class cfgMagazines
         descriptionShort = CSTRING(M7A3_DcsShort);
         displayNameShort = CSTRING(M7A3_CSGrenade_ShortName);
         model = QPATHTOF(ui\m7a3.p3d);
-        picture = QPATHTOF(ui\KAT_m7a3_ca.paa);        
+        picture = QPATHTOF(ui\KAT_m7a3_ca.paa);
         ammo = "KAT_G_M7A3";
         mass = 4;
     };
@@ -69,7 +69,7 @@ class cfgMagazines
         pylonWeapon = "KAT_CAS_M43_Bomb";
     };
 
-    class KAT_CAS_M43_Mag_x2 : PylonRack_Bomb_GBU12_x2 
+    class KAT_CAS_M43_Mag_x2 : PylonRack_Bomb_GBU12_x2
     {
         ammo = "KAT_CAS_M43_Ammo";
         author = "DiGii";
@@ -82,7 +82,7 @@ class cfgMagazines
         mass = 200;
         pylonWeapon = "KAT_CAS_M43_Bomb";
     };
-    
+
     class PylonRack_19Rnd_Rocket_Skyfire;
     class KAT_CAS_R_80mm_GAS_MAG: PylonRack_19Rnd_Rocket_Skyfire {
         ammo = "KAT_CAS_R_80mm_GAS_AMMO";

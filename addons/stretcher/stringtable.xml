@@ -97,6 +97,9 @@
             <Dutch>Ontplooi brancard</Dutch>
             <Spanish>Desplegar Camilla</Spanish>
             <Japanese>担架を展開する</Japanese>
+            <German>Trage ausklappen</German>
+            <Italian>Dispiegare la barella</Italian>
+            <French>Déployer le brancard</French>
             <Chinese>展開擔架</Chinese>
             <Chinesesimp>展开担架</Chinesesimp>
         </Key>
@@ -106,8 +109,11 @@
             <Dutch>Trek brancard terug</Dutch>
             <Spanish>Recoger Camilla</Spanish>
             <Japanese>担架を収容する</Japanese>
+            <German>Trage einholen</German>
+            <Italian>Ritirare la barella</Italian>
+            <French>Rétracter le brancard</French>
             <Chinese>收回擔架</Chinese>
-            <Chinesesimp>收回担架</Chinesesimp>
+            <Chinesesimp>缩回担架</Chinesesimp>
         </Key>
         <Key ID="STR_KAT_Stretcher_DetachHeliStretcher">
             <English>Detach Stretcher</English>
@@ -115,7 +121,10 @@
             <Dutch>Maak brancard los</Dutch>
             <Spanish>Desanclar Camilla</Spanish>
             <Japanese>担架を取り外す</Japanese>
-            <Chinese>分離擔架</Chinese>
+            <German>Trage lösen</German>
+            <Italian>Staccare la barella</Italian>
+            <French>Détacher le brancard</French>
+            <Chinese>釋放擔架</Chinese>
             <Chinesesimp>分离担架</Chinesesimp>
         </Key>
         <Key ID="STR_KAT_Stretcher_Helistretcher_Display">
@@ -196,8 +205,11 @@
             <Dutch>Verpak naar een tas</Dutch>
             <Spanish>Empaquetar en bolsa</Spanish>
             <Japanese>ランチャーとして畳む</Japanese>
+            <German>In Tasche packen</German>
+            <Italian>Mettere nella borsa</Italian>
+            <French>Emballer dans un sac</French>
             <Chinese>打包到包裡</Chinese>
-            <Chinesesimp>打包到包里</Chinesesimp>
+            <Chinesesimp>装进袋子里</Chinesesimp>
         </Key>
         <Key ID="STR_KAT_Stretcher_PackIntoBackpack">
             <English>Pack into backpack</English>
@@ -205,8 +217,11 @@
             <Dutch>Verpak naar een rugzak</Dutch>
             <Spanish>Empaquetar en mochila</Spanish>
             <Japanese>バックパックとして畳む</Japanese>
-            <Chinese>打包到背包裡</Chinese>
-            <Chinesesimp>打包到背包里</Chinesesimp>
+            <German>In Rucksack packen</German>
+            <Italian>Mettere nello zaino</Italian>
+            <French>Emballer dans un sac à dos</French>
+            <Chinese>裝進背包</Chinese>
+            <Chinesesimp>装进背包</Chinesesimp>
         </Key>
         <Key ID="STR_KAT_Stretcher_UnpackStretcher">
             <English>Deploy Stretcher</English>
@@ -214,7 +229,10 @@
             <Dutch>Ontplooi brancard</Dutch>
             <Spanish>Desplegar Camilla</Spanish>
             <Japanese>担架を展開する</Japanese>
-            <Chinese>展開擔架</Chinese>
+            <German>Trage aufbauen</German>
+            <Italian>Dispiegare la barella</Italian>
+            <French>Déployer le brancard</French>
+            <Chinese>部屬擔架</Chinese>
             <Chinesesimp>展开担架</Chinesesimp>
         </Key>
         <Key ID="STR_KAT_Stretcher_PlaceStretcher_progressBar">
@@ -223,6 +241,9 @@
             <Dutch>Brancard wordt geplaatst</Dutch>
             <Spanish>Colocando Camilla...</Spanish>
             <Japanese>担架を設置しています・・・</Japanese>
+            <German>Trage platzieren...</German>
+            <Italian>Posizionamento della barella...</Italian>
+            <French>Mise en place du brancard...</French>
             <Chinese>正在放置擔架...</Chinese>
             <Chinesesimp>正在放置担架...</Chinesesimp>
         </Key>
@@ -232,6 +253,9 @@
             <Dutch>Brancard wordt verpakt</Dutch>
             <Spanish>Empaquetando Camilla...</Spanish>
             <Japanese>担架を折り畳んでいます・・・</Japanese>
+            <German>Trage einpacken...</German>
+            <Italian>Imballaggio della barella...</Italian>
+            <French>Le brancard est emballé</French>
             <Chinese>正在打包擔架...</Chinese>
             <Chinesesimp>正在打包担架...</Chinesesimp>
         </Key>
@@ -240,8 +264,11 @@
             <Dutch>KAT helibrancard</Dutch>
             <Spanish>KAT Camilla de Helicóptero</Spanish>
             <Japanese>KAT ヘリコプター用担架</Japanese>
-            <Chinese>KAT直升機擔架</Chinese>
-            <Chinesesimp>KAT直升机担架</Chinesesimp>
+            <German>KAT Helikoptertrage</German>
+            <Italian>KAT Barella per elicotteri</Italian>
+            <French>Brancard d'hélicoptère KAT</French>
+            <Chinese>KAT 直升機擔架</Chinese>
+            <Chinesesimp>KAT Helistretcher</Chinesesimp>
         </Key>
     </Package>
 </Project>

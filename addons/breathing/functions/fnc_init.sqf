@@ -25,3 +25,6 @@ if !(GVAR(enable)) exitWith {};
 _unit setVariable [QGVAR(pulseoximeter), false, true];
 _unit setVariable [QGVAR(PulseOximeter_Volume), true, true];
 _unit setVariable [QGVAR(PulseOximeter_VolumePatient), false, true];
+
+_unit setVariable [QGVAR(oxygenMaskActive), false, true];
+_unit setVariable [QGVAR(oxygenMaskStatus), [0,0], true];

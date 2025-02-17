@@ -92,7 +92,7 @@ private _altitudeUnit = GVAR(altitudeUnit);
     _time ctrlSetText (format ["%1:%2", [_hour, 2] call CBA_fnc_formatNumber, [_minute, 2] call CBA_fnc_formatNumber]); 
 
     _hr ctrlSetText ([GET_HEART_RATE(_unit), 1, 0] call CBA_fnc_formatNumber);
-    _o2 ctrlSetText ([GET_SPO2(_unit), 1, 0] call CBA_fnc_formatNumber);
+    _o2 ctrlSetText ([GET_KAT_SPO2(_unit), 1, 0] call CBA_fnc_formatNumber);
 
     private _curTime = CBA_missionTime;
     private _timeDiff = _curTime - _prevTime;

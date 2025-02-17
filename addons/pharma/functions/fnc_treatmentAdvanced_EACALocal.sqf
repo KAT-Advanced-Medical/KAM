@@ -21,7 +21,7 @@ params ["_patient", "_bodyPart"];
 private _partIndex = ALL_BODY_PARTS find toLower _bodyPart;
 private _IVarray = _patient getVariable [QGVAR(IV), [0,0,0,0,0,0]];
 private _IVactual = _IVarray select _partIndex;
-private _countEACA = [_patient, "EACA"] call ACEFUNC(medical_status,getMedicationCount);
+private _countEACA = ([_patient, "EACA"] call ACEFUNC(medical_status,getMedicationCount)) select 1;
 private _allowStack = missionNamespace getVariable [QGVAR(allowStackScript_EACA), true];
 private _keepRunning = missionNamespace getVariable [QGVAR(keepScriptRunning_EACA), false];
 private _cycleTime = missionNamespace getVariable [QGVAR(bandageCycleTime_EACA), 5];
