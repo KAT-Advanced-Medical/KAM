@@ -2505,7 +2505,7 @@
             <Finnish>Karbonaattiasetukset</Finnish>
             <Russian>Настройки Карбоната</Russian>
             <Dutch>Carbonaat instellingen</Dutch>
-            <Chinese>碳酸鹽設定</Chinese>
+            <Chinese>Carbonate碳酸鹽設定</Chinese>
         </Key>
         <Key ID="STR_KAT_Pharma_SubCategory_Naloxone">
             <English>Naloxone Settings</English>
@@ -2522,7 +2522,7 @@
             <Finnish>Naloksonin asetukset</Finnish>
             <Russian>Настройки Налоксона</Russian>
             <Dutch>Naloxone instellingen</Dutch>
-            <Chinese>納洛酮設定</Chinese>
+            <Chinese>Naloxone納洛酮設定</Chinese>
         </Key>
         <Key ID="STR_KAT_Pharma_SubCategory_Pervitin">
             <English>Pervitin Settings</English>
@@ -2573,7 +2573,7 @@
             <Finnish>TXA-asetukset</Finnish>
             <Russian>Настройки TXA</Russian>
             <Dutch>TXA instellingen</Dutch>
-            <Chinese>血栓素設定</Chinese>
+            <Chinese>TXA血栓素設定</Chinese>
         </Key>
         <Key ID="STR_KAT_Pharma_SubCategory_Norepinephrine">
             <English>Norepinephrine Settings</English>
