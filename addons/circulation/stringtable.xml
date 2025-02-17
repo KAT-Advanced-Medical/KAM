@@ -2496,7 +2496,7 @@
             <Portuguese>Nível médico necessário para pegar uma estação DEA/X colocada</Portuguese>
             <Dutch>Benodigd medisch niveau om geplaatste AED/X stations op te pakken</Dutch>
             <Italian>Livello medico richiesto per raccogliere la stazione AED/X posizionata</Italian>
-            <Chinese>撿起已放置的 AED/X 工作站所需的醫療等級</Chinese>
+            <Chinese>撿起已放置的 AED/X 工作站需要的醫療等級</Chinese>
             <Chinesesimp>领取放置的AED/X站所需的医疗水平</Chinesesimp>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_AEDX_VitalsMonitor_AttachTime">
