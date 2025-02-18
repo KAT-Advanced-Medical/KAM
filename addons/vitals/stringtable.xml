@@ -11,7 +11,6 @@
             <Italian>Attiva AI Simple Medical</Italian>
             <German>Vereinfachte med. Simulation für KI</German>
             <French>Simplifier la médecine pour l'IA.</French>
-            <Chinesesimp>激活AI简单医疗</Chinesesimp>
         </Key>
         <Key ID="STR_KAT_Vitals_SIMPLEMED_ENABLE_DESC">
             <English>Apply simplified vital calculations to the AI unit. Which can be useful for saving FPS.</English>
@@ -21,7 +20,6 @@
             <Italian>Applica calcoli vitali semplificati all'unità AI. Che può essere utile per salvare FPS.</Italian>
             <German>Vereinfachte Vital-Simulation bei KI-Einheiten. Reduziert Leistungsaufwand.</German>
             <French>Appliquer des calculs vitaux simplifiés à l'unité AI. Ce qui peut être utile pour économiser des FPS.</French>
-            <Chinesesimp>将简化的重要计算应用于AI单元。这对于保存FPS很有用。</Chinesesimp>
         </Key>
         <Key ID="STR_KAT_Vitals_FLUID_SHIFT">
             <English>Enable Patient Fluid Shift</English>
@@ -31,7 +29,6 @@
             <Italian>Abilita lo spostamento del fluido del paziente</Italian>
             <German>Aktiviert Flüssigkeitsverschiebung im Patienten</German>
             <French>Permettre le transfert de fluide du patient</French>
-            <Chinesesimp>启用患者液体转移</Chinesesimp>
         </Key>
         <Key ID="STR_KAT_Vitals_BASIC_DIAGNOSTIC_ENABLE">
             <English>Enable Basic Vitals Kit</English>
