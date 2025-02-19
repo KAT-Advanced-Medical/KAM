@@ -1521,7 +1521,7 @@
         </Key>
         <Key ID="STR_KAT_Airway_CancelRecoveryPosition_Log">
             <English>%1 cancelled recovery position</English>
-            <Chinese>%1 取消了 復甦姿勢/Chinese>
+            <Chinese>%1 取消了 復甦姿勢</Chinese>
             <Japanese>%1 が回復体位を崩した</Japanese>
             <Norwegian>%1 kansellerte stabilt sideleie</Norwegian>
             <French>%1 a annulé la position latérale de sécurité</French>
@@ -1577,7 +1577,7 @@
             <German>Stabile Seitenlage abbrechen</German>
             <Polish>Przerwij pozycję bezpieczną</Polish>
             <Chinesesimp>取消恢复体态</Chinesesimp>
-            <Chinese>取消 復甦姿勢/Chinese>
+            <Chinese>取消 復甦姿勢</Chinese>
             <Japanese>回復体位を崩す</Japanese>
             <Korean>회복자세 교정 취소</Korean>
             <French>Annuler la position latérale de sécurité</French>

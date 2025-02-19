@@ -186,7 +186,7 @@
             <Italian>Pacchetto di Pillole per Medicazioni da Combattimento&lt;br/&gt;Usato per sopprimere il dolore lieve e alleviare i sintomi di incompatibilità del sangue</Italian>
             <German>Schmerzmittel&lt;br/&gt;Wird zur Unterdrückung leichter Schmerzen und zur Linderung von Blutunverträglichkeitssymptomen verwendet</German>
             <Chinesesimp>战斗伤口药物药丸包&lt;br/&gt;用于抑制轻微疼痛和缓解血液不相容症状</Chinesesimp>
-            <Chinese>戰鬥傷口藥物藥丸包<br/>用於抑制輕微疼痛和緩解血液不相容症狀</Chinese>
+            <Chinese>戰鬥傷口藥物藥丸包&lt;br/&gt;用於抑制輕微疼痛和緩解血液不相容症狀</Chinese>
         </Key>
         <Key ID="STR_KAT_Pharma_Painkillers_Box_Display">
             <English>Combat Pill Pack</English>
@@ -3324,7 +3324,7 @@
             <Finnish>suolainen flunssa</Finnish>
             <Russian>Промывание физиологическим раствором</Russian>
             <Dutch>Salinespoeling</Dutch>
-            <Chinese>用生理鹽水沖洗</Chinese>
+            <Chinese>用生理食鹽水沖洗</Chinese>
         </Key>
         <Key ID="STR_KAT_Pharma_SETTING_ivCheckLimbDamage">
             <English>IV Check limb damage</English>

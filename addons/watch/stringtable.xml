@@ -108,9 +108,8 @@
             <Italian>Seleziona quale unità di altitudine viene utilizzata per il display del KATMIN</Italian>
             <German>Definiert die Maßeinheit der angezeigten Höhe auf dem Display der KATMIN-Uhr</German>
             <French>Sélectionne l'unité d'altitude utilisée pour la montre KATMIN</French>
-            <Chinesesimp>选择用于KATMIN手表显示的高度单位</Chinesesimp>
             <Chinese>選擇在KATMIN手錶顯示器上使用的高度單位</Chinese>
-            <Chinesesimp>选择在KATMIN手表显示器上使用的高度单位</Chinesesimp>
+            <Chinesesimp>选择用于KATMIN手表显示的高度单位</Chinesesimp>
         </Key>
         <Key ID="STR_KAT_Watch_SETTING_AltitudeForm_meters">
             <English>Meters</English>
