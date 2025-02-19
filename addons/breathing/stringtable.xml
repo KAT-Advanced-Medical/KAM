@@ -2636,11 +2636,13 @@
             <English>Patient's breathing is very shallow</English>
             <French>La respiration du patient est très superficielle</French>
             <Chinese>病人呼吸非常淺</Chinese>
+            <Japanese>患者の呼吸はとても浅い</Japanese>
         </Key>
         <Key ID="STR_KAT_Breathing_breathing_Veryshallow">
             <English>Very Shallow</English>
             <French>Très superficielle</French>
             <Chinese>非常淺</Chinese>
+            <Japanese>とても浅い</Japanese>
         </Key>
         <Key ID="STR_KAT_Breathing_breathing_none">
             <English>Patient is not breathing</English>
