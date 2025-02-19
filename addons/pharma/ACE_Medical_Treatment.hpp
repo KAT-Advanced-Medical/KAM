@@ -205,6 +205,20 @@ class ACE_ADDON(Medical_Treatment) {
             onOverDose = "";
             maxRelief = 0.5;
         };
+        class PainKillers {
+            painReduce = 0.2;
+            hrIncreaseLow[] = {0, 5};
+            hrIncreaseNormal[] = {5, 10};
+            hrIncreaseHigh[] = {5, 10};
+            timeInSystem = 360;
+            timeTillMaxEffect = 45;
+            maxDose = 6;
+            maxDoseDeviation = 4;
+            incompatibleMedication[] = {};
+            viscosityChange = -5;
+            onOverDose = "";
+            maxRelief = 0.5;
+        };
         class Atropine {
             painReduce = 0;
             hrIncreaseLow[] = {20, 40};
