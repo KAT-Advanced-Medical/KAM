@@ -3230,7 +3230,6 @@
             <Russian>Шанс вернуться в спонтанное кровообращение после СЛР</Russian>
             <Dutch>Kans voor ROSC na CPR (Terugkeer naar spontane circulatie)</Dutch>
             <Italian>Probabilità di ritorno alla circolazione spontanea dopo RCP</Italian>
-            <Chinesesimp>心肺复苏概率后ROSC</Chinesesimp>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_AdvRhythm_AED_ROSC_Chance">
             <English>ROSC After AED Chance</English>
