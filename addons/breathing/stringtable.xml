@@ -155,7 +155,7 @@
             <Russian>Инфузионный множитель</Russian>
             <Dutch>Perfusie vermenigvuldiger</Dutch>
         </Key>
-            <Key ID="STR_KAT_Breathing_SETTING_PACO2_ENABLE">
+        <Key ID="STR_KAT_Breathing_SETTING_PACO2_ENABLE">
             <English>Enable PaCO2</English>
             <Chinese>啟用PaCO2</Chinese>
             <Chinesesimp>启用PaCO2</Chinesesimp>
