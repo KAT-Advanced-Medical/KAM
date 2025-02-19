@@ -154,7 +154,6 @@
             <Finnish>Perfuusiokerroin</Finnish>
             <Russian>Инфузионный множитель</Russian>
             <Dutch>Perfusie vermenigvuldiger</Dutch>
-            <Chinesesimp>灌注流量乘数</Chinesesimp>
         </Key>
             <Key ID="STR_KAT_Breathing_SETTING_PACO2_ENABLE">
             <English>Enable PaCO2</English>
@@ -163,7 +162,6 @@
             <Japanese>PaCO2を有効化</Japanese>
             <Italian>Abilitare PaCO2</Italian>
             <French>Activation de la PaCO2</French>
-            <Chinesesimp>启用动脉血二氧化碳分压(PaCO2)</Chinesesimp>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_PACO2_ENABLE_DESC">
             <English>Enables PaCO2 movement and effects on ph and breathing rate</English>
@@ -172,7 +170,6 @@
             <Japanese>phや呼吸速度へ影響を与えるPaCO2(動脈血二酸化炭素分圧)の変動を有効にします</Japanese>
             <Italian>Abilita il movimento di PaCO2 e gli effetti su pH e frequenza respiratoria</Italian>
             <French>Permet le déplacement de la PaCO2 et les effets sur le pH et la fréquence respiratoire</French>
-            <Chinesesimp>启用脉血二氧化碳分压（PaCO2）变化，将会影响ph值和呼吸速率。</Chinesesimp>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_pneumothorax">
             <English>Probability for a pneumothorax</English>
@@ -181,8 +178,6 @@
             <German>Wahrscheinlichkeit für einen Pneumothorax</German>
             <Spanish>Probabilidad de un neumotórax</Spanish>
             <Polish>Szansa na odmę opłucnową</Polish>
-            <Chinese>氣胸的機率</Chinese>
-            <Chinesesimp>气胸概率</Chinesesimp>
             <Czech>Pravděpodobnost pneumotoraxu</Czech>
             <Korean>기흉 발생 확률</Korean>
             <French>Probabilité d'un pneumothorax</French>
@@ -205,7 +200,6 @@
             <Spanish>Permitir monitoreo de ETCo2</Spanish>
             <Dutch>Activeer ETCo2 monitor</Dutch>
             <Italian>Abilitare il monitoraggio ETCo2</Italian>
-            <Chinesesimp>启用呼气末二氧化碳(ETCo2)监测</Chinesesimp>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_Enable_Etco2_Desc">
             <English>Sets if medics can view a patient's ETCo2 and Respiratory Rate in the Vitals Monitor when a device capable of monitoring ETCo2 is connected</English>
@@ -218,7 +212,6 @@
             <Spanish>Establece si los médicos puede ver el ETCo2 y la Frecuencia Respiratoria de una paciente en el monitor de Signos Vitales cuando se conecta un dispositivo capaz de monitorear ETCo2</Spanish>
             <Dutch>Activeert het zien van ETCo2 en ademhalingstempo op de vitale waarden monitor wanneer een apparaat die ETCo2 kan monitoren is aangesloten</Dutch>
             <Italian>Imposta se i medici possono visualizzare l'ETCo2 e la frequenza respiratoria del paziente nel monitor dei parametri vitali quando è connesso un dispositivo in grado di monitorare l'ETCo2</Italian>
-            <Chinesesimp>设置当连接了能够监测ETCo2的设备时，医务人员是否可以在生命体征监测仪中查看患者的ETCo2和呼吸频率</Chinesesimp>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_Select_Etco2_Units">
             <English>Desired units for ETCo2 Monitoring</English>
@@ -231,7 +224,6 @@
             <Spanish>Unidades deseadas para el monitoreo de ETCo2</Spanish>
             <Dutch>Geprefereerde eenheden voor ETCo2 monitoren</Dutch>
             <Italian>Unità desiderate per il monitoraggio ETCo2</Italian>
-            <Chinesesimp>ETCo2监测所需单位</Chinesesimp>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_Allow_NasalCannula">
             <English>Allow Nasal Cannula</English>
@@ -244,7 +236,6 @@
             <Spanish>Permitir cánula nasal</Spanish>
             <Dutch>Sta nasale canule toe</Dutch>
             <Italian>Consentire l'uso della cannula nasale</Italian>
-            <Chinesesimp>允许使用鼻插管</Chinesesimp>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_Allow_NasalCannula_Desc">
             <English>Training level required to insert a Nasal Cannula</English>
@@ -257,7 +248,6 @@
             <Spanish>Nivel de formación requerido para insertar una cánula nasal</Spanish>
             <Dutch>Trainingsniveau benodigd voor het inbrengen van een nasale canule</Dutch>
             <Italian>Livello di formazione richiesto per inserire una cannula nasal</Italian>
-            <Chinesesimp>使用鼻插管所需的医疗技能水平</Chinesesimp>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_Time_NasalCannula">
             <English>Time for Nasal Cannula</English>
@@ -270,7 +260,6 @@
             <Spanish>Tiempo de la cánula nasal</Spanish>
             <Dutch>Tijd voor het inbrengen van een nasale canule</Dutch>
             <Italian>Tempo per la cannula nasale</Italian>
-            <Chinesesimp>鼻插管所需时间</Chinesesimp>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_Time_NasalCannula_Desc">
             <English>How long it will take to insert a Nasal Cannula</English>
@@ -283,7 +272,6 @@
             <Spanish>Tiempo necesario para insertar una cánula nasal</Spanish>
             <Dutch>Hoelang het gaat duren om een nasale canule in te brengen</Dutch>
             <Italian>Quanto tempo ci vorrà per inserire una cannula nasale</Italian>
-            <Chinesesimp>插入鼻插管需要多长时间</Chinesesimp>
         </Key>
         <Key ID="STR_KAT_Breathing_Pulseoximeter_Display">
             <English>Attach Pulse Oximeter</English>
@@ -348,7 +336,6 @@
             <French>Utilisé pour vérifier le rythme cardiaque et la SpO2</French>
             <Spanish>Utilizado para analizar el pulso sanguíneo y el SpO2</Spanish>
             <Italian>Utilizzato per leggere la frequenza del polso e il valore SpO2</Italian>
-            <Chinesesimp>用于读取脉搏率和SpO2</Chinesesimp>
         </Key>
         <Key ID="STR_KAT_Breathing_placing">
             <English>Placing</English>
@@ -2952,7 +2939,6 @@
             <Italian>Pneumotorace da tensione</Italian>
             <Chinesesimp>张力性气胸</Chinesesimp>
             <Chinese>張力性氣胸</Chinese>
-            <Chinesesimp>张力性气胸</Chinesesimp>
         </Key>
         <Key ID="STR_KAT_Breathing_Hemopneumothorax">
             <English>Hemopneumothorax</English>
@@ -3025,7 +3011,6 @@
             <Italian>Cannula nasale</Italian>
             <Chinesesimp>鼻插管</Chinesesimp>
             <Chinese>鼻導管</Chinese>
-            <Chinesesimp>鼻导管</Chinesesimp>
         </Key>
         <Key ID="STR_KAT_Breathing_NasalCannula_Desc_Short">
             <English>The Nasal Cannula can be inserted into a patient's nostrils and connected to a vitals monitor to record a patient's ETCo2 level and respiratory rate.</English>

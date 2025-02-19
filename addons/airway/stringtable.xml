@@ -342,7 +342,7 @@
         <Key ID="STR_KAT_Airway_AirwayStatus_noObstruction">
             <English>Airway is not obstructed</English>
             <Spanish>Las vías aéreas no están obstruidas</Spanish>
-            <Chinese>阻塞暫時緩解</Chinese>
+            <Chinese>氣道未阻塞</Chinese>
             <Japanese>気道は閉塞していない</Japanese>
             <Norwegian>Luftvei er ikke blokkert</Norwegian>
             <French>Les voies aériennes ne sont pas obstruées</French>
@@ -423,6 +423,7 @@
             <Japanese>気道はひどく水膨れしている</Japanese>
             <French>Les voies respiratoires sont fortement cloquées</French>
             <Chinesesimp>气道严重膨胀</Chinesesimp>
+            <Chinese>氣道嚴重膨脹</Chinese>
         </Key>
         <Key ID="STR_KAT_Airway_AirwayStatus_NotClearForItem">
             <English>Item could not be used, airways are not clear</English>
@@ -1614,6 +1615,7 @@
             <English>Time for cancelling recovery position</English>
             <German>Die Zeit, wie lange es dauert, eine stabile Seitenlage abzubrechen</German>
             <Polish>Czas na przerwanie pozycji bezpiecznej</Polish>
+            <Chinese>取消恢復體態時間</Chinese>
             <Chinesesimp>取消恢复体态时间</Chinesesimp>
             <Japanese>回復体位を崩すの所要時間</Japanese>
             <Korean>회복자세 교정 취소 시간</Korean>

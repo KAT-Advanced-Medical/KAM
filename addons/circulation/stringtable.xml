@@ -3200,7 +3200,6 @@
             <Russian>Вероятность желудочковой тахикардии (VT)</Russian>
             <Dutch>VT kans</Dutch>
             <Italian>Probabilità di tachicardia ventricolare (TV)</Italian>
-            <Chinesesimp>VT概率</Chinesesimp>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_AdvRhythm_asystoleBloodlossThreshold">
             <English>Asystole blood loss threshold</English>
@@ -3324,7 +3323,7 @@
             <Dutch>AED-X: PR %1 BD: %2/%3 SpO2: %4</Dutch>
             <Italian>AED-X: PR: %1 BP: %2/%3 SpO2: %4</Italian>
             <Chinese>AED-X：脈搏：%1 血壓：%2/%3 SpO2：%4</Chinese>
-            <Chinesesimp>AED-X: 心率(HR): %1 血压(BP): %2/%3 血氧饱和度(SpO2): %4</Chinesesimp>
+            <Chinesesimp>AED-X: 脉搏(PR): %1 血压(BP): %2/%3 血氧饱和度(SpO2): %4</Chinesesimp>
         </Key>
         <Key ID="STR_KAT_Circulation_VitalsMonitor_StatusLog">
             <English>AED-X: HR: %1 BP: %2/%3 SpO2: %4</English>
@@ -3367,7 +3366,7 @@
             <German>AED-X: PR: %1 BP: %2/%3 SpO2: %4 ETCo2: %5 Br/min: %6</German>
             <Italian>AED-X: PR: %1 BP: %2/%3 SpO2: %4 ETCo2: %5 Respiri/min: %6</Italian>
             <Chinese>AED-X：脈搏：%1 血壓：%2/%3 SpO2：%4 ETCo2：%5 呼吸/分：%6</Chinese>
-            <Chinesesimp>AED-X: 心率(HR): %1 血压(BP):%2/%3血氧饱和度(SpO2):%4呼气末二氧化碳浓度(ETCo2):%5呼吸/分钟：%6</Chinesesimp>
+            <Chinesesimp>AED-X: 脉搏(PR): %1 血压(BP):%2/%3血氧饱和度(SpO2):%4呼气末二氧化碳浓度(ETCo2):%5呼吸/分钟：%6</Chinesesimp>
         </Key>
         <Key ID="STR_KAT_Circulation_VitalsMonitor_StatusLog_HasEtco2Monitor">
             <English>AED-X: HR: %1 BP: %2/%3 SpO2: %4  ETCo2: %5 Breaths/min: %6</English>
