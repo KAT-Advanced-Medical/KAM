@@ -206,16 +206,14 @@ class ACE_ADDON(Medical_Treatment) {
             maxRelief = 0.5;
         };
         class PainKillers {
-            painReduce = 0.2;
-            hrIncreaseLow[] = {0, 5};
-            hrIncreaseNormal[] = {5, 10};
-            hrIncreaseHigh[] = {5, 10};
-            timeInSystem = 360;
-            timeTillMaxEffect = 45;
-            maxDose = 6;
-            maxDoseDeviation = 4;
+            painReduce = 0.35;
+            hrIncreaseLow[] = {-5, -10};
+            hrIncreaseNormal[] = {-5, -15};
+            hrIncreaseHigh[] = {-5, -17};
+            timeInSystem = 420;
+            timeTillMaxEffect = 60;
+            maxDose = 5;
             incompatibleMedication[] = {};
-            viscosityChange = -5;
             onOverDose = "";
             maxRelief = 0.5;
         };
