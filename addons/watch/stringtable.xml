@@ -124,7 +124,6 @@
             <Chinesesimp>米</Chinesesimp>
         </Key>
         <Key ID="STR_KAT_Watch_SETTING_AltitudeForm_feet">
-            <English>F<Key ID="STR_KAT_Watch_SETTING_AltitudeForm_feet">
             <English>Feet</English>
             <Dutch>Voet</Dutch>
             <Spanish>Pies</Spanish>
@@ -181,7 +180,7 @@
             <Italian>Orologio con capacità di monitoraggio vitale. Perché altri possano vivere.</Italian>
             <German>Uhr mit Funktionen zur Vitalitätsüberwachung. Damit andere leben können!</German>
             <French>Montre avec fonctions de surveillance vitale. Pour que d'autres puissent vivre.</French>
-            <Chinese>具有生命體徵監測功能的腕錶。為了他人的生命。</Chinese>
+            <Chinese>具有生命體徵監測功能的腕錶。以便其他人能夠活下去。</Chinese>
             <Chinesesimp>使用重要监控功能观看。所以其他人可以活下去。</Chinesesimp>
         </Key>
         <Key ID="STR_KAT_Watch_STSDisplayName">

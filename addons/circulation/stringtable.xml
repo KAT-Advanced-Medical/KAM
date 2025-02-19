@@ -2902,7 +2902,6 @@
             <German>Blutprobe</German>
             <Italian>Campione di sangue</Italian>
             <French>Echantillon de sang</French>
-            <Chinesesimp>血液样本</Chinesesimp>
         </Key>
         <Key ID="STR_KAT_Circulation_resultItemName">
             <English>ABG Result</English>
@@ -2914,7 +2913,6 @@
             <German>ABG-Ergebnis</German>
             <Italian>Risultato del test ABG</Italian>
             <French>Résultat de l'ABG</French>
-            <Chinesesimp>ABG结果</Chinesesimp>
         </Key>
         <Key ID="STR_KAT_Circulation_DrawBlood_Action_Progress">
             <English>Drawing Blood</English>
@@ -3137,7 +3135,6 @@
             <Russian>Максимальное значение времени случайного ухудшения функции сердца</Russian>
             <Dutch>Maximale willekeurige tijd voor een verslechtering</Dutch>
             <Italian>Tempo massimo di deterioramento casuale</Italian>
-            <Chinesesimp>随机劣化时间最大值</Chinesesimp>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_AdvRhythm_deteriorateTimeWeight">
             <English>Random Deteriorate Time Weight</English>
@@ -3153,7 +3150,6 @@
             <Russian>Взвешивание времени случайного ухудшения функции сердца</Russian>
             <Dutch>Tijdsgewicht willekeurige verslechtering</Dutch>
             <Italian>Peso del tempo di deterioramento casuale</Italian>
-            <Chinesesimp>随机劣化时间权重</Chinesesimp>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_AdvRhythm_HTHold">
             <English>Enable H-and-T Holding in Arrest</English>
@@ -3174,7 +3170,6 @@
             <Russian>Ухудшается после лечения</Russian>
             <Dutch>Verslechterd na behandeling</Dutch>
             <Italian>Deterioramento dopo il trattamento</Italian>
-            <Chinesesimp>治疗后恶化</Chinesesimp>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_AdvRhythm_PEAChance">
             <English>PEA Chance</English>
@@ -3190,7 +3185,6 @@
             <Russian>Показатель точности безимпульсной электрической активности (PEA)</Russian>
             <Dutch>PEA kans</Dutch>
             <Italian>Probabilità di attività elettrica senza polso (PEA)</Italian>
-            <Chinesesimp>PEA概率</Chinesesimp>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_AdvRhythm_VTChance">
             <English>VT Chance</English>
@@ -3210,7 +3204,7 @@
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_AdvRhythm_asystoleBloodlossThreshold">
             <English>Asystole blood loss threshold</English>
-            <Chinese>心臟停搏失血閾臨界值</Chinese>
+            <Chinese>心臟停搏失血臨界值</Chinese>
             <Chinesesimp>心脏停搏失血阈临界值</Chinesesimp>
             <Japanese>心静止(Asystole)時の失血しきい値</Japanese>
             <French>Seuil de perte de sang en cas d'asystolie</French>
@@ -3222,7 +3216,6 @@
             <Russian>Порог кровопотери при асистолии</Russian>
             <Dutch>Asystole bloedverlies drempelwaarde</Dutch>
             <Italian>Soglia di perdita di sangue per asistolia</Italian>
-            <Chinesesimp>心搏停止失血阈值</Chinesesimp>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_AdvRhythm_CPR_ROSC_Chance">
             <English>ROSC After CPR Chance</English>
@@ -3254,7 +3247,6 @@
             <Russian>Шанс вернуться в спонтанное кровообращение после AED</Russian>
             <Dutch>Kans voor ROSC na CPR (Terugkeer naar spontane circulatie)</Dutch>
             <Italian>Probabilità di ritorno alla circolazione spontanea dopo AED</Italian>
-            <Chinesesimp>ROSC在AED概率之后</Chinesesimp>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_AdvRhythm_Hardcore_Enable">
             <English>Hardcore Rhythms</English>
@@ -3270,7 +3262,6 @@
             <Russian>Интенсивность сердечного ритма</Russian>
             <Dutch>Hardcore hartritmen</Dutch>
             <Italian>Ritmi cardiaci intensi</Italian>
-            <Chinesesimp>核心节奏</Chinesesimp>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_AdvRhythm_hardcoreDeteriorationChance">
             <English>Hardcore Deterioration Chance</English>
@@ -3286,7 +3277,6 @@
             <Russian>Вероятность сильного ухудшения</Russian>
             <Dutch>Hardcore verslechteringskans</Dutch>
             <Italian>Probabilità di deterioramento intenso</Italian>
-            <Chinesesimp>核心劣化概率</Chinesesimp>
         </Key>
         <Key ID="STR_KAT_Circulation_SubCategory_BloodDraw">
             <English>Blood draw Settings</English>
@@ -3526,6 +3516,7 @@
             <Dutch>Tijd van de AED-X vitale waarde monitor BD metingsinterval</Dutch>
             <Italian>Tempo di intervallo di misurazione BP del monitor dei parametri vitali AED-X</Italian>
             <Chinesesimp>AED-X生命体征监测仪血压测量间隔时间</Chinesesimp>
+            <Chinese>AED-X生命監測器 血壓測量間隔時間</Chinese>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_cardiacArrestBleedRate">
             <English>Cardiac Arrest Bleed Rate</English>
@@ -3540,6 +3531,7 @@
             <Dutch>Bloedingsnelheid bij hartstilstand</Dutch>
             <Italian>Tasso di sanguinamento durante l'arresto cardiaco</Italian>
             <Chinesesimp>心脏骤停出血率</Chinesesimp>
+            <Chinese>心臟驟停期間的出血率</Chinese>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_tamponadeChance">
             <English>Chance for tamponade in penetrating wounds</English>
@@ -3552,6 +3544,7 @@
             <German>Möglichkeit einer Tamponade bei penetrierenden Wunden</German>
             <Italian>Probabilità di tamponade in ferite penetranti</Italian>
             <Chinesesimp>穿透性伤口填塞的可能性</Chinesesimp>
+            <Chinese>穿透性傷口填塞的可能性</Chinese>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_tamponadeInterval">
             <English>Tamponade progression timer</English>
@@ -3564,6 +3557,7 @@
             <German>Tamponade-Fortschrittstimer</German>
             <Italian>Timer di progressione della tamponade</Italian>
             <Chinesesimp>填塞进展计时器</Chinesesimp>
+            <Chinese>填塞進度計時器</Chinese>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_tamponadeChance_deterioration">
             <English>Tamponade progression chance</English>

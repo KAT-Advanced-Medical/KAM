@@ -3343,8 +3343,6 @@
             <Dutch>IV checkt voor ledemaatschade</Dutch>
             <Chinese>IV 檢查肢體損傷</Chinese> 
         </Key>
-
-        <!-- ///////////////////////////////////////// -->
         <Key ID="STR_KAT_Pharma_SETTING_ivCheckLimbDamage_DESC">
             <English>Whether or not you can apply the IV to the too damaged limb. In default, this is disabled.</English>
             <Italian>Puoi o no applicare la flebo all'arto troppo danneggiato. Nel default, questo è disabilitato.</Italian>
