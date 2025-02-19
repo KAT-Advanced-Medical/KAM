@@ -2637,6 +2637,11 @@
             <French>La respiration du patient est très superficielle</French>
             <Chinese>病人呼吸非常淺</Chinese>
         </Key>
+        <Key ID="STR_KAT_Breathing_breathing_Veryshallow">
+            <English>Very Shallow</English>
+            <French>Très superficielle</French>
+            <Chinese>非常淺</Chinese>
+        </Key>
         <Key ID="STR_KAT_Breathing_breathing_none">
             <English>Patient is not breathing</English>
             <Japanese>患者は呼吸していない</Japanese>
