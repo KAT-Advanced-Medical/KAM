@@ -15,7 +15,7 @@
             <Portuguese>Configurações básicas</Portuguese>
             <Finnish>Perus asetukset</Finnish>
             <Russian>Основные настройки</Russian>
-            <Chinese>基础设置</Chinese>
+            <Chinese>基本設定</Chinese>
             <Dutch>Basisinstellingen</Dutch>
         </Key>
         <Key ID="STR_KAT_GUI_SETTING_ColoredLogs">
@@ -23,7 +23,7 @@
             <German>Bunte Activitylogs (AED-X/Pulseoximeter)</German>
             <Polish>Kolorowe logi aktywności (AED-X/Pulsoksymetr)</Polish>
             <Spanish>Registros de actividad de color (DEA-X/Oximetro)</Spanish>
-            <Chinese>彩色活动记录(AED-X/脉冲氧饱和度仪)</Chinese>
+            <Chinese>彩色活動記錄(AED-X/脈搏血氧儀)</Chinese>
             <Chinesesimp>彩色活动记录(AED-X/脉冲氧饱和度仪)</Chinesesimp>
             <Czech>Barevné protokoly aktivit (AED-X / Pulseoximeter)</Czech>
             <Korean>컬러 활동 기록 (AED-X / 맥박 측정기)</Korean>
@@ -32,7 +32,7 @@
             <Italian>Logs di attività colorati (AED-X/Pulsossimetro)</Italian>
             <Russian>Цветные журналы активности (AED-X/пульсоксиметр)</Russian>
             <Japanese>色付きの活動ログ (AED-X / パルスオキシメーター)</Japanese>
-            <Portuguese>Registros de atividade colorizados (DEA-X\Oxímetro)</Portuguese>
+            <Portuguese>Registros de atividade coloridos (DEA-X\Oxímetro)</Portuguese>
             <Finnish>Värilliset aktiivisuuslokit (AUD-X/pulssioksimetri)</Finnish>
             <Dutch>Gekleurde activiteitslogs (AED-X/Pulseoximeter)</Dutch>
         </Key>
@@ -41,7 +41,7 @@
             <German>Färbt die Activitylogs von AED-X oder Pulsoximeter rot, wenn ein Wert kritisch ist</German>
             <Polish>Zabarwia logi AED-X lub pulsoksymetru na czerwono, jeśli jakaś wartość jest krytyczna</Polish>
             <Spanish>Marca los registros de actividad del DEA-X o del Oximetro en rojo, si algún valor es crítico</Spanish>
-            <Chinese>将AED-X或Pulseoximeter的Activitylogs染成红色，如果任何值是临界值。</Chinese>
+            <Chinese>當AED-X或脈搏血氧儀的任何數值達到危急值時，活動記錄將以紅色顯示。</Chinese>
             <Chinesesimp>若任何数据处于危险中(处于临界值以下),将AED-X或脉搏血氧仪的数值显示为红色</Chinesesimp>
             <Czech>Pokud je nějaká hodnota kritická, vybarví Activitylogy AED-X nebo Pulseoximeter červeně</Czech>
             <Korean>중요한 값이있는 경우 AED-X 또는 맥박산소측정기의 활동 로그를 빨간색으로 표시합니다.</Korean>
@@ -49,10 +49,10 @@
             <Turkish>Herhangi bir değer kritikse, AED-X veya Pulseoximeter Activitylog'larını kırmızı renklendirir</Turkish>
             <Italian>Colora gli Logs di attività di AED-X o il rosso del pulsossimetro, se un valore è critico</Italian>
             <Russian>Окрашивает журналы активности AED-X или пульсоксиметра в красный цвет, если какое-либо значение является критическим.</Russian>
-            <Japanese>重大値の場合、AED-Xやパルスオキシメーターの活動ログを赤色にします</Japanese>
-            <Portuguese>Exibe os registros de atividade em vermelhos se algum valor for crítico</Portuguese>
-            <Finnish>Lisää punaista väriä AUD-X:n tai pulssioksimetrin aktiivisuuslokeihin, jos jokin arvo on tappava</Finnish>
-            <Dutch>Kleurt de activiteitlog van de AED-X of de Pulsoximeter rood, wanneer een waarde kritiek is</Dutch>
+            <Japanese>重要な値の場合、AED-Xやパルスオキシメーターの活動ログを赤色にします。</Japanese>
+            <Portuguese>Coloriza os registros de atividade em vermelho se algum valor for crítico.</Portuguese>
+            <Finnish>Värjää AED-X:n tai pulssioksimetrin toimintalokit punaisiksi, jos jokin arvo on kriittinen.</Finnish>
+            <Dutch>Kleurt de activiteitslogs van de AED-X of de pulsoximeter rood als een waarde kritiek is.</Dutch>
         </Key>
         <Key ID="STR_KAT_GUI_Status_NoIv">
             <English>No pushed fluids</English>
@@ -67,6 +67,7 @@
             <Russian>Никаких переливаний</Russian>
             <Dutch>Geen toegediende vloeistoffen</Dutch>
             <Italian>Nessun fluido somministrato</Italian>
+            <Chinese>未輸注液體</Chinese>
         </Key>
         <Key ID="STR_KAT_GUI_SETTING_overlayBodyPart">
             <English>Overlay Selected Body Part</English>
@@ -81,6 +82,7 @@
             <Russian>Показать выбранную часть тела</Russian>
             <Dutch>Omtrekking geselecteerd lichaamsdeel</Dutch>
             <Italian>Visualizza la parte del corpo selezionata</Italian>
+            <Chinese>高亮顯示所選身體部位</Chinese>
         </Key>
         <Key ID="STR_KAT_GUI_SETTING_showPatientSideLabels">
             <English>Label Patient Sides</English>
@@ -95,6 +97,7 @@
             <Russian>Маркировка сторон пациента</Russian>
             <Dutch>Label zijden van patiënt</Dutch>
             <Italian>Etichettare i lati del paziente</Italian>
+            <Chinese>患者方向標籤</Chinese>
         </Key>
         <Key ID="STR_KAT_GUI_HeadCover">
             <English>HEAD - NO LINE</English>
@@ -104,6 +107,7 @@
             <Italian>TESTA - SENZA LINEA</Italian>
             <German>KOPF - KEIN ZUGANG</German>
             <French>TETE - PAS DE LIGNES</French>
+            <Chinese>頭部 - 無線</Chinese>
             <Chinesesimp>头部-无线路</Chinesesimp>
         </Key>
         <Key ID="STR_KAT_GUI_ChestCover">
@@ -114,6 +118,7 @@
             <Italian>TORACE - SENZA LINEA</Italian>
             <German>BRUST - KEIN ZUGANG</German>
             <French>POITRINE - PAS DE LIGNES</French>
+            <Chinese>胸部 - 無線</Chinese>
             <Chinesesimp>胸部--无线路</Chinesesimp>
         </Key>
         <Key ID="STR_KAT_GUI_RArmCover">
@@ -124,6 +129,7 @@
             <Italian>BRACCIO DESTRO - SENZA LINEA</Italian>
             <German>RECHTER ARM – KEIN ZUGANG</German>
             <French>BRAS DROIT - PAS DE LIGNES</French>
+            <Chinese>右臂 - 無線</Chinese>
             <Chinesesimp>右臂--无线路</Chinesesimp>
         </Key>
         <Key ID="STR_KAT_GUI_LArmCover">
@@ -134,6 +140,7 @@
             <Italian>BRACCIO SINISTRO - SENZA LINEA</Italian>
             <German>LINKER ARM – KEIN ZUGANG</German>
             <French>BRAS GAUCHE - PAS DE LIGNES</French>
+            <Chinese>左臂 - 無線</Chinese>
             <Chinesesimp>左臂--无线路</Chinesesimp>
         </Key>
         <Key ID="STR_KAT_GUI_RLegCover">
@@ -145,6 +152,7 @@
             <German>RECHTES BEIN – KEIN ZUGANG</German>
             <French>JAMBE DROITE - PAS DE LIGNES</French>
             <Chinesesimp>右腿--无线路</Chinesesimp>
+            <Chinese>右腳 - 無線</Chinese>
         </Key>
         <Key ID="STR_KAT_GUI_LLegCover">
             <English>LEFT LEG - NO LINE</English>
@@ -155,6 +163,7 @@
             <German>LINKES BEIN – KEIN ZUGANG</German>
             <French>JAMBE GAUCHE - PAS DE LIGNES</French>
             <Chinesesimp>左腿--无线路</Chinesesimp>
+            <Chinese>左腳 - 無線</Chinese>
         </Key>
         <Key ID="STR_KAT_GUI_IVFlowTitle">
             <English>IV Flow Control</English>
@@ -164,6 +173,7 @@
             <Italian>Controllo del flusso IV</Italian>
             <German>IV-Flusskontrolle</German>
             <French>Fonctionnement du flux IV</French>
+            <Chinese>IV輸液流速控制</Chinese>
             <Chinesesimp>IV 流量控制</Chinesesimp>
         </Key>
         <Key ID="STR_KAT_GUI_ABGTitle">
@@ -174,6 +184,7 @@
             <Italian>Risultati ABG</Italian>
             <German>ABG-Ergebnisse</German>
             <French>Résultats de l'ABG</French>
+            <Chinese>ABG 結果</Chinese>
             <Chinesesimp>ABG结果</Chinesesimp>
         </Key>
         <Key ID="STR_KAT_GUI_IVValue">
@@ -194,6 +205,7 @@
             <Italian>Testa</Italian>
             <German>Kopf</German>
             <French>Tête</French>
+            <Chinese>頭部</Chinese>
             <Chinesesimp>Head</Chinesesimp>
         </Key>
         <Key ID="STR_KAT_GUI_HeadType">
@@ -204,6 +216,7 @@
             <Italian>IV</Italian>
             <German>IV</German>
             <French>IV</French>
+            <Chinese>IV</Chinese>
             <Chinesesimp>IV</Chinesesimp>
         </Key>
         <Key ID="STR_KAT_GUI_ChestTitle">
@@ -214,7 +227,8 @@
             <Italian>Torace</Italian>
             <German>Brust</German>
             <French>Torse</French>
-            <Chinesesimp>Chest</Chinesesimp>
+            <Chinese>胸部</Chinese>
+            <Chinesesimp>胸部</Chinesesimp>
         </Key>
         <Key ID="STR_KAT_GUI_ChestType">
             <English>IV</English>
@@ -224,6 +238,7 @@
             <Italian>IV</Italian>
             <German>IV</German>
             <French>IV</French>
+            <Chinese>IV</Chinese>
             <Chinesesimp>IV</Chinesesimp>
         </Key>
         <Key ID="STR_KAT_GUI_LArmTitle">
@@ -234,7 +249,8 @@
             <Italian>BS</Italian>
             <German>LA</German>
             <French>BG</French>
-            <Chinesesimp>LA</Chinesesimp>
+            <Chinese>左臂</Chinese>
+            <Chinesesimp>左臂</Chinesesimp>
         </Key>
         <Key ID="STR_KAT_GUI_LArmType">
             <English>IV</English>
@@ -244,6 +260,7 @@
             <Italian>IV</Italian>
             <German>IV</German>
             <French>IV</French>
+            <Chinese>IV</Chinese>
             <Chinesesimp>IV</Chinesesimp>
         </Key>
         <Key ID="STR_KAT_GUI_RArmTitle">
@@ -254,7 +271,8 @@
             <Italian>BD</Italian>
             <German>RA</German>
             <French>BD</French>
-            <Chinesesimp>RA</Chinesesimp>
+            <Chinese>右臂</Chinese>
+            <Chinesesimp>右臂</Chinesesimp>
         </Key>
         <Key ID="STR_KAT_GUI_RArmType">
             <English>IV</English>
@@ -264,6 +282,7 @@
             <Italian>IV</Italian>
             <German>IV</German>
             <French>IV</French>
+            <Chinese>IV</Chinese>
             <Chinesesimp>IV</Chinesesimp>
         </Key>
         <Key ID="STR_KAT_GUI_LLegTitle">
@@ -274,7 +293,8 @@
             <Italian>GS</Italian>
             <German>LB</German>
             <French>JG</French>
-            <Chinesesimp>LL</Chinesesimp>
+            <Chinese>左腳</Chinese>
+            <Chinesesimp>左脚</Chinesesimp>
         </Key>
         <Key ID="STR_KAT_GUI_LLegType">
             <English>IV</English>
@@ -285,6 +305,7 @@
             <German>IV</German>
             <French>IV</French>
             <Chinesesimp>IV</Chinesesimp>
+            <Chinese>IV</Chinese>
         </Key>
         <Key ID="STR_KAT_GUI_RLegTitle">
             <English>RL</English>
@@ -294,7 +315,8 @@
             <Italian>GB</Italian>
             <German>RB</German>
             <French>JD</French>
-            <Chinesesimp>RL</Chinesesimp>
+            <Chinese>右腳</Chinese>
+            <Chinesesimp>右脚</Chinesesimp>
         </Key>
         <Key ID="STR_KAT_GUI_RLegType">
             <English>IV</English>
@@ -305,6 +327,7 @@
             <German>IV</German>
             <French>IV</French>
             <Chinesesimp>IV</Chinesesimp>
+            <Chinese>IV</Chinese>
         </Key>
         <Key ID="STR_KAT_GUI_BGBlank">
             <English>--.-</English>
@@ -324,6 +347,7 @@
             <Italian>Ripristina</Italian>
             <German>Reset</German>
             <French>Réinitialiser</French>
+            <Chinese>重置</Chinese>
             <Chinesesimp>重置</Chinesesimp>
         </Key>
     </Package>

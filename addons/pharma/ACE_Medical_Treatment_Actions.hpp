@@ -44,6 +44,8 @@ class ACE_Medical_Treatment_Actions {
         displayName = CSTRING(Give_CWMP);
         displayNameProgress = CSTRING(Using);
         allowedSelections[] = {"Head"};
+        medicRequired = QGVAR(medLvl_CWMP);
+        treatmentTime = QGVAR(treatmentTime_CWMP);
         items[] = {"kat_Painkiller"};
         condition = QUOTE(!(_patient getVariable [ARR_2(QQEGVAR(airway,recovery),false)]));
         callbackSuccess = QFUNC(treatmentAdvanced_CWMP);
@@ -92,7 +94,8 @@ class ACE_Medical_Treatment_Actions {
         displayNameProgress = CSTRING(Using);
         allowedSelections[] = {"Head"};
         allowSelfTreatment = 1;
-        treatmentTime = 5;
+        medicRequired = QGVAR(medLvl_Caffeine);
+        treatmentTime = QGVAR(treatmentTime_Caffeine);
         items[] = {"kat_Caffeine"};
         condition = QUOTE(!(_patient getVariable [ARR_2(QQEGVAR(airway,recovery),false)]));
         callbackSuccess = QFUNC(treatmentAdvanced_Caffeine);
