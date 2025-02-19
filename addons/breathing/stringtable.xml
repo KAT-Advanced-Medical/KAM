@@ -375,8 +375,8 @@
         </Key>
         <Key ID="STR_KAT_Breathing_pulseoxi_Log">
             <English>Pulse Oximeter: PR: %1 SpO2: %2</English>
-            <Chinese>脈搏血氧儀：脈率：%1 SpO2：%2</Chinese>
-            <Chinesesimp>脉搏血氧仪：脉率：%1 SpO2：%2</Chinesesimp>
+            <Chinese>脈搏血氧儀：脈搏：%1 SpO2：%2</Chinese>
+            <Chinesesimp>脉搏血氧仪：脉搏：%1 SpO2：%2</Chinesesimp>
             <German>Pulsoximeter: PR: %1 SpO2: %2</German>
             <Polish>Pulsoksymetr: PR: %1 SpO2: %2</Polish>
             <Czech>Pulzní Oxymetr: PR: %1 SpO2: %2</Czech>
@@ -390,7 +390,6 @@
             <Finnish>Pulssioksimetri PR:%1 SpO2: %2</Finnish>
             <Russian>Пульсоксиметр: PR: %1 SpO2: %2</Russian>
             <Dutch>Pulsoximeter: PR: %1 SpO2:%2</Dutch>
-            <Chinesesimp>脉搏血氧仪：心率(PR): %1 血氧饱和度(SpO2): %2</Chinesesimp>
         </Key>
         <Key ID="STR_KAT_Breathing_pulseoxi_Log_2">
             <English>%1 connected Pulseoximeter</English>

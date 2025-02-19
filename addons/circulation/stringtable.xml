@@ -2240,7 +2240,7 @@
             <Russian>% 1 использовал разряд (% 2)</Russian>
             <Dutch>%1 heeft een schok toegediend (%2)</Dutch>
             <Italian>%1 ha somministrato la scarica (%2)</Italian>
-            <Chinese>%1 施加了电击 (%2)</Chinese>
+            <Chinese>%1 施加了電擊 (%2)</Chinese>
             <Chinesesimp>%1 次电击（%2）</Chinesesimp>
         </Key>
         <Key ID="STR_KAT_Circulation_Activity_AttachPads">
