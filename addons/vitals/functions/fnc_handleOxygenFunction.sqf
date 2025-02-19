@@ -76,7 +76,7 @@ private _etco2 = 37;
 if (IN_CRDC_ARRST(_unit)) then {
     if (alive (_unit getVariable [QACEGVAR(medical,CPR_provider), objNull])) then {
         // If CPR is being provided, EtCO2 acts as a surrogate for remaining time patient can be in cardiac arrest before death
-        _etco2 = 15 + (_paco2 / 20) - ((ACEGVAR(medical_statemachine,cardiacArrestTime) / ((_unit getVariable [QACEGVAR(medical_statemachine,cardiacArrestTimeLeft), 1]) max 1)) * 10);
+        _etco2 = (15 + (_paco2 / 40) - (((_unit getVariable [QACEGVAR(medical_statemachine,cardiacArrestTimeLeft), 1]) max 1) / (ACEGVAR(medical_statemachine,cardiacArrestTime)) * 10)) max 1;
     } else {
         // With no CPR, there is no movement in the chest, and so there is no EtCO2
         _etco2 = 0;
