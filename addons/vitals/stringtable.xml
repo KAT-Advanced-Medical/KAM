@@ -5,62 +5,79 @@
             <English>Activate AI Simple Medical</English>
             <Dutch>Activeer AI/KI versimpeld medisch</Dutch>
             <Spanish>Activar Médico Simple para IA</Spanish>
+            <Chinese>啟用AI簡易醫療</Chinese>
+            <Chinesesimp>启用AI简易医疗</Chinesesimp>
             <Japanese>AI用単純化医療を有効化</Japanese>
             <Italian>Attiva AI Simple Medical</Italian>
             <German>Vereinfachte med. Simulation für KI</German>
             <French>Simplifier la médecine pour l'IA.</French>
-            <Chinesesimp>激活AI简单医疗</Chinesesimp>
         </Key>
         <Key ID="STR_KAT_Vitals_SIMPLEMED_ENABLE_DESC">
             <English>Apply simplified vital calculations to the AI unit. Which can be useful for saving FPS.</English>
+            <Chinese>將簡化的生命體徵計算應用於AI單位，這可以幫助節省FPS。</Chinese>
+            <Chinesesimp>将简化的生命体征计算应用于AI单位，这可以帮助节省FPS。</Chinesesimp>
             <Japanese>単純化されたバイタル計算をAIユニットに適用します。 これは負荷の軽減に役立つ可能性があります。</Japanese>
             <Italian>Applica calcoli vitali semplificati all'unità AI. Che può essere utile per salvare FPS.</Italian>
             <German>Vereinfachte Vital-Simulation bei KI-Einheiten. Reduziert Leistungsaufwand.</German>
             <French>Appliquer des calculs vitaux simplifiés à l'unité AI. Ce qui peut être utile pour économiser des FPS.</French>
-            <Chinesesimp>将简化的重要计算应用于AI单元。这对于保存FPS很有用。</Chinesesimp>
         </Key>
         <Key ID="STR_KAT_Vitals_FLUID_SHIFT">
             <English>Enable Patient Fluid Shift</English>
+            <Chinese>啟用患者體液轉移</Chinese>
+            <Chinesesimp>启用患者体液转移</Chinesesimp>
             <Japanese>患者の体液移動を有効化</Japanese>
             <Italian>Abilita lo spostamento del fluido del paziente</Italian>
             <German>Aktiviert Flüssigkeitsverschiebung im Patienten</German>
             <French>Permettre le transfert de fluide du patient</French>
-            <Chinesesimp>启用患者液体转移</Chinesesimp>
         </Key>
         <Key ID="STR_KAT_Vitals_BASIC_DIAGNOSTIC_ENABLE">
             <English>Enable Basic Vitals Kit</English>
             <Japanese>基本型バイタル診断キットを有効化</Japanese>
             <French>Activer le kit de diagnostic vital de base.</French>
+            <Chinese>啟用基本生命體徵套件</Chinese>
+            <Chinesesimp>启用基本生命体征套件</Chinesesimp>
         </Key>
         <Key ID="STR_KAT_Vitals_BASIC_DIAGNOSTIC_TIME">
             <English>Basic Vitals Kit Time</English>
             <Japanese>基本型バイタル診断キットの所要時間</Japanese>
             <French>Temps nécessaire pour le kit de diagnostic vital de base</French>
+            <Chinese>基本生命體徵套件時間</Chinese>
+            <Chinesesimp>基本生命体征套件时间</Chinesesimp>
         </Key>
         <Key ID="STR_KAT_Vitals_basicDiagnostic_display">
             <English>Basic Vitals Kit</English>
             <Japanese>基本型バイタル診断キット</Japanese>
             <French>Kit de diagnostic vital de base</French>
+            <Chinese>基本生命體徵套件</Chinese>
+            <Chinesesimp>基本生命体征套件</Chinesesimp>
         </Key>
         <Key ID="STR_KAT_Vitals_basicDiagnostic_description">
             <English>Vitals Kit which returns HR, BP, and RR</English>
             <Japanese>心拍(HR)、血圧(BP)、呼吸回数(RR)などのバイタルを計測可能な診断キット</Japanese>
             <French>Kits de diagnostic permettant de mesurer les paramètres vitaux tels que la fréquence cardiaque (FC), la pression artérielle (PA) et la fréquence respiratoire (FR).</French>
+            <Chinese>可測量心率（HR）、血壓（BP）和呼吸頻率（RR）等生命體徵的診斷套件</Chinese>
+            <Chinesesimp>可测量心率（HR）、血压（BP）和呼吸频率（RR）等生命体征的诊断套件</Chinesesimp>
         </Key>
         <Key ID="STR_KAT_Vitals_basicDiagnostic_use">
             <English>Use Basic Vitals Kit</English>
             <Japanese>基本型バイタル診断キットを使用</Japanese>
             <French>Utiliser un kit de diagnostic vital de base</French>
+            <Chinese>使用基本生命體徵套件</Chinese>
+            <Chinesesimp>使用基本生命体征套件</Chinesesimp>
         </Key>
         <Key ID="STR_KAT_Vitals_basicDiagnostic_progress">
             <English>Assessing Patient...</English>
             <Japanese>患者を診断中・・・</Japanese>
             <French>Évaluation du patient...</French>
+            <Chinese>正在評估患者...</Chinese>
+            <Chinesesimp>正在评估患者...</Chinesesimp>
         </Key>
         <Key ID="STR_KAT_Vitals_BasicDiagnostic_Output">
             <English>HR: %1, BP: %2/%3, RR: %4</English>
             <Japanese>心拍: %1, 血圧: %2/%3, 呼吸回数: %4</Japanese>
             <French>FC : %1, PA : %2/%3, FR : %4</French>
+            <Chinese>心率：％1，血壓：％2／％3，呼吸頻率：％4</Chinese>
+            <Chinesesimp>心率：％1，血压：％2／％3，呼吸频率：％4</Chinesesimp>
         </Key>
         <Key ID="STR_KAT_Vitals_basicDiagnostic_Log">
             <English>%1 - %2</English>
