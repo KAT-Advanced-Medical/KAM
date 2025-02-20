@@ -2634,10 +2634,12 @@
         </Key>
         <Key ID="STR_KAT_Breathing_breathing_isVeryShallow">
             <English>Patient's breathing is very shallow</English>
+            <French>La respiration du patient est très superficielle</French>
             <Chinese>病人呼吸非常淺</Chinese>
         </Key>
         <Key ID="STR_KAT_Breathing_breathing_Veryshallow">
             <English>Very Shallow</English>
+            <French>Très superficielle</French>
             <Chinese>非常淺</Chinese>
         </Key>
         <Key ID="STR_KAT_Breathing_breathing_none">
@@ -3081,11 +3083,13 @@
             <English>Available Oxygen Helmets</English>
             <Chinese>可用氧氣頭盔</Chinese>
             <Japanese>利用可能な酸素供給ヘルメット</Japanese>
+            <French>Casques d'oxygène disponibles</French>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_AVAIL_OXYHELMET_DISC">
             <English>Sets which helmets can act as oxygen masks</English>
             <Chinese>設定哪些頭盔可以作為氧氣面罩</Chinese>
             <Japanese>酸素マスクとして動作させたいヘルメットを指定します</Japanese>
+            <French>Spécifiez le casque que vous souhaitez utiliser comme masque à oxygène.</French>
         </Key>
         <Key ID="STR_KAT_Breathing_AttachPersonalOxygenTank">
             <English>Connect Personal Oxygen</English>

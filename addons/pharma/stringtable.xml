@@ -4368,5 +4368,20 @@
             <Chinesesimp>推肾上腺素</Chinesesimp>
             <Chinese>注射腎上腺素</Chinese>
         </Key>
+        <Key ID="STR_KAT_Pharma_medLvl_Caffeine">
+            <English>Allow using Caffeine</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_treatmentTime_Caffeine">
+            <English>Treatment time for Caffeine</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_medLvl_CWMP">
+            <English>Allow using CWMP</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_treatmentTime_CWMP">
+            <English>Treatment time for CWMP</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_SubCategory_CWMP">
+            <English>CWMP Settings</English>
+        </Key>
     </Package>
 </Project>
