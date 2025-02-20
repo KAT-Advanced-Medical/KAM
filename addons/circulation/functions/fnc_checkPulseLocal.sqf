@@ -12,7 +12,7 @@
  * None
  *
  * Example:
- * [player, cursorObject, "Head"] call ace_medical_treatment_fnc_checkPulseLocal
+ * [player, cursorObject, "Head"] call kat_circulation_fnc_checkPulseLocal
  *
  * Public: No
  */
@@ -40,9 +40,11 @@ if (_heartRate > 1) then {
     if ([_medic, QACEGVAR(medical,numericalPulse)] call FUNC(isMedic)) then {
         if (GVAR(hardcoreDiagnose)) then {
             _heartRateOutput = LSTRING(Check_Pulse_Output);
-            _logOutput = format [LLSTRING(Pulse_Output), (round(_heartRateOutput / 5) * 5)];
+            _outputHeartRate = (round(_heartRate / 5) * 5);
+            _logOutput = format [LLSTRING(Pulse_Output), _outputHeartRate];
         } else {
             _heartRateOutput = ACELSTRING(medical_treatment,Check_Pulse_Output_1);
+            _outputHeartRate = _heartRate
             _logOutput = str round _heartRate;
         };
     } else {
@@ -63,4 +65,4 @@ if (_heartRate > 1) then {
 
 [_patient, "quick_view", ACELSTRING(medical_treatment,Check_Pulse_Log), [_medic call ACEFUNC(common,getName), _logOutput]] call ACEFUNC(medical_treatment,addToLog);
 
-[QEGVAR(common,displayTextStructured), [[_heartRateOutput, _patient call ACEFUNC(common,getName), round _heartRate], 1.5, _medic], _medic] call CBA_fnc_targetEvent;
+[QACEGVAR(common,displayTextStructured), [[_heartRateOutput, _patient call ACEFUNC(common,getName), _outputHeartRate], 1.5, _medic], _medic] call CBA_fnc_targetEvent;
