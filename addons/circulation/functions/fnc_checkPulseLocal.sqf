@@ -44,7 +44,7 @@ if (_heartRate > 1) then {
             _logOutput = format [LLSTRING(Pulse_Output), _heartRate];
         } else {
             _heartRateOutput = ACELSTRING(medical_treatment,Check_Pulse_Output_1);
-        	_logOutput = str round _heartRate;
+            _logOutput = str round _heartRate;
         };
     } else {
         _heartRateOutput = ACELSTRING(medical_treatment,Check_Pulse_Output_2);
