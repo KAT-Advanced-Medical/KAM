@@ -14,16 +14,25 @@
  
 params ["_medic", "_patient"];
 
-private _eyeInjuries = _patient getVariable ["kat_ophthalmology_eyeInjuries", [1, 1]];
+private _eyeInjuries = _patient getVariable [QGVAR(eyeInjuries), [1, 1]];
+
+#define leftEyeDisplay 17103
+#define rightEyeDisplay 17102
 
 "KAT_EyeShield" cutRsc ["KAT_EyeShield", "PLAIN", 0, true];
 
 private _display = uiNamespace getVariable ["KAT_EyeShield", displayNull];
-private _activeEye = _display displayCtrl 17102;
+private _activeEye = _display displayCtrl rightEyeDisplay;
 
-if ((_eyeInjuries find 0) == 0) then {
-    _patient linkItem "kat_eyecovers_left";
-    _activeEye = _display displayCtrl 17103;
+private _fnc_applyEyeCover = {
+    params ["_patient", "_shieldItem", "_eyeDisplay"];
+
+    if (hmd _patient != "") then {
+        _patient addItem (hmd _patient);
+    };
+
+    _patient linkItem _shieldItem;
+    _activeEye = _display displayCtrl _eyeDisplay;
 
     _activeEye ctrlShow true;
     _activeEye ctrlCommit 0;
@@ -32,40 +41,23 @@ if ((_eyeInjuries find 0) == 0) then {
         _this params ["_args", "_pfhID"];
         _args params ["_unit", "_activeEye"];
     
-        if ((hmd _unit) != "kat_eyecovers_left") exitWith {
+        if ((hmd _unit) != _shieldItem) exitWith {
             _pfhID call CBA_fnc_removePerFrameHandler;
             "KAT_EyeShield" cutText ["","PLAIN",0,true];
         };
     
-        private _eyeInjury = _unit getVariable ["kat_ophthalmology_eyeInjuries", [1, 1]];
-        _unit setVariable ["kat_ophthalmology_eyeInjuries", [(((_eyeInjury select 0) + 0.001) min 1), (_eyeInjury select 1)], true];
+        private _eyeInjury = _unit getVariable [QGVAR(eyeInjuries), [1, 1]];
+        _unit setVariable [QGVAR(eyeInjuries), [(((_eyeInjury select 0) + 0.001) min 1), (_eyeInjury select 1)], true];
     }, 30, [
         _patient,
         _activeEye
     ]] call CBA_fnc_addPerFrameHandler;
+};
 
+if ((_eyeInjuries find 0) == 0) then {
+    [_patient, "kat_eyecovers_left", leftEyeDisplay] call _fnc_applyEyeCover;
 } else {
-    _patient linkItem "kat_eyecovers_right";
-    _activeEye = _display displayCtrl 17102;
-
-    _activeEye ctrlShow true;
-    _activeEye ctrlCommit 0;
-
-    [{
-        _this params ["_args", "_pfhID"];
-        _args params ["_unit", "_activeEye"];
-    
-        if ((hmd _unit) != "kat_eyecovers_right") exitWith {
-            _pfhID call CBA_fnc_removePerFrameHandler;
-            "KAT_EyeShield" cutText ["","PLAIN",0,true];
-        };
-    
-        private _eyeInjury = _unit getVariable ["kat_ophthalmology_eyeInjuries", [1, 1]];
-        _unit setVariable ["kat_ophthalmology_eyeInjuries", [(_eyeInjury select 0), (((_eyeInjury select 1) + 0.001) min 1)], true];
-    }, 1, [
-        _patient,
-        _activeEye
-    ]] call CBA_fnc_addPerFrameHandler;
+    [_patient, "kat_eyecovers_right", rightEyeDisplay] call _fnc_applyEyeCover;
 };
 
 [_patient, LLSTRING(eyeshield_item)] call ACEFUNC(medical_treatment,addToTriageCard);
