@@ -95,9 +95,10 @@ if (EGVAR(pharma,kidneyAction)) then {
 
     // Adjust dissociation constant based on temperature 
     private _phConstant = ((-0.00006653 * (_temperature ^ 2)) - (0.03268 * _temperature) + 7.4);
+    private _fatigue = [0, (ACEGVAR(advanced_fatigue,anFatigue) / 2)] select (ACEGVAR(advanced_fatigue,enabled));
 
     // pH is from the Henderson-Hasselbalch equation
-    _pH = (_phConstant + log(24 / ((0.03 * _paco2)))) - ((_externalPh max 1) / 2000);
+    _pH = (_phConstant + log(24 / ((0.03 * _paco2)))) - ((_externalPh max 1) / 2000) - (_fatigue / 3);
 };
 
 // Fractional Oxygen when breathing normal air is 0.21, 1 when breathing 100% Oxygen, and 0 when no air is being brought into the lungs
@@ -125,8 +126,8 @@ private _arrestPerfusion = [1, (1 * EGVAR(breathing,SpO2_PerfusionMultiplier))] 
 // PaO2 moves in controlled steps to prevent hard movements when Ventilation Demand spikes
 _pao2 = if (_previousCyclePao2 != _pao2) then { ([ (_previousCyclePao2 - ((PAO2_MAX_CHANGE * EGVAR(breathing,SpO2_MultiplyNegative) * _arrestPerfusion) * _deltaT)) , (_previousCyclePao2 + ((PAO2_MAX_CHANGE * EGVAR(breathing,SpO2_MultiplyPositive)) * _deltaT))] select ((_previousCyclePao2 - _pao2) < 0)) } else { _pao2 };
 
-// Oxy-Hemo Dissociation Curve, driven by PaO2 with shaping done by pH 
-private _o2Sat = ((_pao2 max 1)^2.7 / ((25 - (((_pH / DEFAULT_PH) - 1) * 150))^2.7 + _pao2^2.7)) min 0.999;
+// Oxy-Hemo Dissociation Curve, driven by PaO2 with shaping done by pH.
+private _o2Sat = (((_pao2 max 1)^2.7 / ((25 - (((_pH / DEFAULT_PH) - 1) * 150))^2.7 + _pao2^2.7))) min 0.999;
 
 _unit setVariable [VAR_BREATHING_RATE, (_respiratoryRate max 0), _syncValues];
 _unit setVariable [VAR_BLOOD_GAS, [_paco2, _pao2, _o2Sat, 24, _pH, _etco2], _syncValues];
