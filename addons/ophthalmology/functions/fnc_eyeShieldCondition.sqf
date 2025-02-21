@@ -7,7 +7,7 @@
  * Boolean
  *
  * Example:
- * [bob, patient] call kat_ophthalmology_fnc_treatmentAdvanced_eyeShieldCondition
+ * [bob, patient] call kat_ophthalmology_fnc_eyeShieldCondition
  *
  * Public: No
  */
@@ -17,7 +17,7 @@ params ["_medic", "_patient"];
 private _eyeInjuries = _patient getVariable [QGVAR(eyeInjuries), [1, 1]];
 private _eyeInjurySevere = _patient getVariable [QGVAR(eyeInjurySevere), false];
 
-if (_eyeInjurySevere && (({_x == 1} count _eyeInjuries) == 1)) exitWith {
+if (_eyeInjurySevere && (({_x == 0} count _eyeInjuries) == 1)) exitWith {
     true
 };
 
