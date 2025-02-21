@@ -27,6 +27,7 @@ private _activeEye = _display displayCtrl rightEyeDisplay;
 private _fnc_applyEyeCover = {
     params ["_patient", "_shieldItem", "_eyeDisplay"];
 
+    // If patient has NVGs on, move them to the patient's inventory
     if (hmd _patient != "") then {
         _patient addItem (hmd _patient);
     };
@@ -37,6 +38,7 @@ private _fnc_applyEyeCover = {
     _activeEye ctrlShow true;
     _activeEye ctrlCommit 0;
 
+    // Approximately 8 minutes to fully re-heal a damaged eye using the eyeshield
     [{
         _this params ["_args", "_pfhID"];
         _args params ["_unit", "_activeEye"];
@@ -47,8 +49,8 @@ private _fnc_applyEyeCover = {
         };
     
         private _eyeInjury = _unit getVariable [QGVAR(eyeInjuries), [1, 1]];
-        _unit setVariable [QGVAR(eyeInjuries), [(((_eyeInjury select 0) + 0.001) min 1), (_eyeInjury select 1)], true];
-    }, 30, [
+        _unit setVariable [QGVAR(eyeInjuries), [(((_eyeInjury select 0) + 0.002) min 1), (_eyeInjury select 1)], true];
+    }, 1, [
         _patient,
         _activeEye
     ]] call CBA_fnc_addPerFrameHandler;

@@ -1,4 +1,3 @@
-#include "script_component"
 #include "\a3\ui_f\hpp\defineDIKCodes.inc"
 /*
  * Author: Katalam
