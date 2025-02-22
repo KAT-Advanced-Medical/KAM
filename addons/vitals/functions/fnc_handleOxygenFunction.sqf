@@ -35,6 +35,7 @@ params ["_unit", "_actualHeartRate", "_anerobicPressure", "_bloodGas", "_tempera
 
 private _respiratoryRate = 0;
 private _respiratoryDepression = 0;
+private _respiratoryDepth = 0;
 private _demandVentilation = 0;
 private _actualVentilation = 0;
 private _previousCyclePaco2 = (_bloodGas select 0);
@@ -45,14 +46,14 @@ if (IN_CRDC_ARRST(_unit)) then {
     _demandVentilation = MINIMUM_VENTILATION;
     _respiratoryDepression = 1;
     _respiratoryRate = [0, 20] select (_unit getVariable [QEGVAR(breathing,BVMInUse), false]);
+    _respiratoryDepth = [0, 10] select (_unit getVariable [QEGVAR(breathing,BVMInUse), false]);
     _actualVentilation = 1;
 } else {
     // Ventilatory Demand comes from Heart Rate with increase demand from PaCO2 levels 
     _demandVentilation = ((((_actualHeartRate * HEART_RATE_CO2_MULTIPLIER) / _anerobicPressure) + ((_previousCyclePaco2 - DEFAULT_PACO2) * 200)) max MINIMUM_VENTILATION);
-    private _tidalVolume = GET_KAT_SURFACE_AREA(_unit);
 
     // Tidal Volume is modified by respiratory depth which can be supressed by opioids and pneumothroax
-    private _respiratoryDepth = [((DEFAULT_RESPIRATORY_DEPTH / 10) - (_opioidDepression / 1.5)), 10] select (_unit getVariable [QEGVAR(breathing,BVMInUse), false]);
+    _respiratoryDepth = [((DEFAULT_RESPIRATORY_DEPTH / 10) - (_opioidDepression / 1.5)), 10] select (_unit getVariable [QEGVAR(breathing,BVMInUse), false]);
     private _tidalVolume = GET_KAT_SURFACE_AREA(_unit) * (_respiratoryDepth / 1);
     
     // Respiratory Rate Calculation
