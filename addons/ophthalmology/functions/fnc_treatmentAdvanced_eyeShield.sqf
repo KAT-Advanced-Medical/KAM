@@ -21,8 +21,6 @@ private _eyeInjuries = _patient getVariable [QGVAR(eyeInjuries), [1, 1]];
 
 "KAT_EyeShield" cutRsc ["KAT_EyeShield", "PLAIN", 0, true];
 
-private _display = uiNamespace getVariable ["KAT_EyeShield", displayNull];
-private _activeEye = _display displayCtrl IDC_RIGHT_EYE_CONTROL;
 
 private _fnc_applyEyeCover = {
     params ["_patient", "_shieldItem", "_eyeDisplay"];
@@ -32,9 +30,11 @@ private _fnc_applyEyeCover = {
         _patient addItem (hmd _patient);
     };
 
-    _patient linkItem _shieldItem;
-    _activeEye = _display displayCtrl _eyeDisplay;
+    private _display = uiNamespace getVariable ["KAT_EyeShield", displayNull];
+    private _activeEye = _display displayCtrl _eyeDisplay;
 
+    _patient linkItem _shieldItem;
+    
     _activeEye ctrlShow true;
     _activeEye ctrlCommit 0;
 
