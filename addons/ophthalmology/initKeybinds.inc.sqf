@@ -1,15 +1,4 @@
 #include "\a3\ui_f\hpp\defineDIKCodes.inc"
-/*
- * Author: Katalam
- * Initialize the keybinds.
- *
- * Return Value:
- * None
- *
- * Public: No
- *
- * https://community.bistudio.com/wiki/DIK_KeyCodes
- */
 
 if (!hasInterface) exitWith {};
 
