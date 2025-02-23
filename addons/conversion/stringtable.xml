@@ -3,7 +3,7 @@
     <Package name="Conversion">
         <Key ID="STR_KAT_Conversion_CONVERSION_ENABLE">
             <English>Enable Casualty Conversion</English>
-            <French>Activer la conversion des victimes.</French>
+            <French>Permettre la conversion des victimes</French>
         </Key>
         <Key ID="STR_KAT_Conversion_CONVERSION_ENABLE_DESC">
             <English>Enables Casualty Conversion for Players and Select AI</English>
@@ -11,7 +11,7 @@
         </Key>
         <Key ID="STR_KAT_Conversion_CONVERSION_MESSAGE">
             <English>Display Conversion</English>
-            <French>Afficher les conversions.</French>
+            <French>Afficher les conversions</French>
         </Key>
         <Key ID="STR_KAT_Conversion_CONVERSION_MESSAGE_DESC">
             <English>Enables text in patient menu that they are converted</English>
@@ -19,7 +19,7 @@
         </Key>
         <Key ID="STR_KAT_Conversion_CONVERSION_TICKET_CONVERSION">
             <English>Ticket for Patient Conversion</English>
-            <French>Ticket pour la conversion des patients</French>
+            <French>Conversion des tickets par patient</French>
         </Key>
         <Key ID="STR_KAT_Conversion_CONVERSION_TICKET_CONVERSION_DESC">
             <English>Enables ticket gain when converting casualties</English>
@@ -55,7 +55,7 @@
         </Key>
         <Key ID="STR_KAT_Conversion_CONVERSION_LIBERATION_CONVERSION_DISTANCE_DESC">
             <English>How far do Liberation patients need to be from a FOB for a conversion to be valid</English>
-            <French>Quelle doit être la distance entre le patient et le FOB pour permettre la conversion dans Libération ?</French>
+            <French>Quelle doit être la distance entre le patient et la FOB pour permettre la conversion dans Libération ?</French>
         </Key>
         <Key ID="STR_KAT_Conversion_CONVERSION_SPECTATOR_RESPAWN">
             <English>One Life Conversion</English>
@@ -67,7 +67,7 @@
         </Key>
         <Key ID="STR_KAT_Conversion_CONVERSION_FORCE_VEHICLE">
             <English>Force Vehicle Conversion</English>
-            <French>Conversion de véhicules de la Force</French>
+            <French>Appliquer les conversions en voiture.</French>
         </Key>
         <Key ID="STR_KAT_Conversion_CONVERSION_FORCE_VEHICLE_DESC">
             <English>Should patients only be allowed to be converted when in a vehicle?</English>
