@@ -9,7 +9,8 @@ class CfgPatches {
         requiredAddons[] = {
             "A3_Data_F_Tank_Loadorder",
             "cba_main",
-            "ace_main"
+            "ace_main",
+            "ace_medical"
         };
         author = "Cplhardcore";
         ECSTRING(main,URL);
