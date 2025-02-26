@@ -597,7 +597,7 @@ class ACE_ADDON(Medical_Treatment) {
             viscosityChange = 10;
             opioidEffect = 0.18;
             opioidDepression = 0.18;
-            respiratoryRate = -0.2;
+            respiratoryRate = 0.2;
         };
         class syringe_ketamine_5ml_3 {
             painReduce = 0.8;
@@ -611,7 +611,7 @@ class ACE_ADDON(Medical_Treatment) {
             onOverDose = "";
             opioidEffect = 0.21;
             opioidDepression = 0.21;
-            respiratoryRate = -0.3;
+            respiratoryRate = 0.3;
         };
         class syringe_nalbuphine_5ml_1 {
             painReduce = 0.5;
@@ -874,7 +874,7 @@ class ACE_ADDON(Medical_Treatment) {
             viscosityChange = 10;
             opioidEffect = 0.12;
             opioidDepression = 0.12;
-            respiratoryRate = -0.3;
+            respiratoryRate = 0.3;
         };
         class syringe_ketamine_10ml_3 {
             painReduce = 0.8;
@@ -887,7 +887,7 @@ class ACE_ADDON(Medical_Treatment) {
             viscosityChange = 10;
             opioidEffect = 0.15;
             opioidDepression = 0.15;
-            respiratoryRate = -0.4;
+            respiratoryRate = 0.4;
         };
         class syringe_nalbuphine_10ml_1 {
             painReduce = 0.5;
