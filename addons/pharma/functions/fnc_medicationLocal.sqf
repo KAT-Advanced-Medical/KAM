@@ -83,7 +83,7 @@ private _bloodloss = (GET_BODY_FLUID(_patient) select 4);
 private _maxBloodloss = 2600;
 private _minBloodloss = 6000;
 private _minBloodMult = 1;
-private _maxDrugMult = 2;
+private _maxBloodMult = 2;
 private _bloodMult = _minBloodMult + ((_bloodloss - _maxBloodloss) / (_minBloodloss - _maxBloodloss)) * (_maxBloodMult - _minBloodMult);
 
 private _maxHR = 160;
@@ -118,7 +118,7 @@ if (GVAR(AMS_Enabled)) then {
     private _hrIncreaseHigh         = (GET_ARRAY(_medicationConfig >> "hrIncreaseHigh",getArray (_defaultConfig >> "hrIncreaseHigh"))) apply { _x * _drugMult };
     private _incompatibleMedication = GET_ARRAY(_medicationConfig >> "incompatibleMedication",getArray (_defaultConfig >> "incompatibleMedication"));
     private _maxRelief              = GET_NUMBER(_medicationConfig >> "maxRelief",getNumber (_defaultConfig >> "maxRelief"));
-    private _dose                   = GET_NUMBER(_medicationConfig >> "dose",getNumber (_defaultConfig >> "dose"));
+    private _dose                   = GET_NUMBER(_medicationConfig >> "dose",getNumber (_defaultConfig >> "dose")) * _drugMult;
 
     private _heartRate = GET_HEART_RATE(_patient);
     private _hrIncrease = [_hrIncreaseLow, _hrIncreaseNormal, _hrIncreaseHigh] select (floor ((0 max _heartRate min 110) / 55));
