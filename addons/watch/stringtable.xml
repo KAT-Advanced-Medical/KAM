@@ -133,6 +133,12 @@
             <Chinese>英尺</Chinese>
             <Chinesesimp>英尺</Chinesesimp>
         </Key>
+        <Key ID="STR_KAT_Watch_SETTING_WatchInaccuracy">
+            <English>Watch Vitals Inaccuracy</English>
+        </Key>
+        <Key ID="STR_KAT_Watch_SETTING__WatchInaccuracy_Desc">
+            <English>Enables watch inaccuracy when reading patient vitals</English>
+        </Key>
         <Key ID="STR_KAT_Watch_KatminDescription">
             <English>Watch with Vital Monitoring Capabilities</English>
             <Dutch>Horloge met ingebouwde vitale waarden monitor</Dutch>

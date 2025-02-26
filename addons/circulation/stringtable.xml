@@ -3574,91 +3574,109 @@
             <English>Blood Pressure Cuff</English>
             <French>Brassard de pression artérielle</French>
             <Chinese>血壓計</Chinese>
+            <Japanese>血圧カフ</Japanese>
         </Key>
         <Key ID="STR_KAT_Circulation_BPCuff_desc">
             <English>A medical device to accurately determine a patients blood pressure</English>
             <French>Dispositif médical permettant de déterminer avec précision la tension artérielle d'un patient</French>
             <Chinese>一種準確測量病人血壓的醫療裝置</Chinese>
+            <Japanese>患者の血圧を正確に測定する医療機器</Japanese>
         </Key>
         <Key ID="STR_KAT_Circulation_Actions_CheckBloodPressureCuff">
             <English>Check BP with BP Cuff</English>
             <French>Brassard pour vérifier la tension artérielle.</French>
             <Chinese>用血壓計量血壓</Chinese>
+            <Japanese>血圧カフで血圧を確認</Japanese>
         </Key>
         <Key ID="STR_KAT_Circulation_Actions_CheckingBloodPressureCuff">
             <English>Checking BP with BP Cuff</English>
             <French>Contrôler la tension artérielle à l'aide d'un brassard</French>
             <Chinese>用血壓計量血壓中</Chinese>
+            <Japanese>血圧カフで血圧を確認中</Japanese>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_BPCuff">
             <English>Allow BP Cuff</English>
             <French>Autoriser le brassard de tension artérielle</French>
             <Chinese>允許使用血壓計</Chinese>
+            <Japanese>血圧カフの許可</Japanese>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_BPCuff_DESC">
             <English>Training Level for use of the BP Cuff</English>
             <French>Niveau de formation médicale pour l'utilisation des brassards</French>
             <Chinese>使用血壓計的訓練等級</Chinese>
+            <Japanese>血圧カフの使用に必要な医療スキルのレベルを設定します。</Japanese>
         </Key>
         <Key ID="STR_KAT_Circulation_treatmentTime_BPCuff">
             <English>Time to measure BP with BP Cuff</English>
             <French>Heure de l'examen de la tension artérielle à l'aide d'un brassard</French>
             <Chinese>用血壓計量血壓所需時間</Chinese>
+            <Japanese>血圧カフによる血圧測定の所要時間</Japanese>
         </Key>
         <Key ID="STR_KAT_Circulation_Check_Bloodpressure_Output_Palp">
             <English>You find a blood pressure of %3 over Palp</English>
             <French>Vous avez mesuré la tension artérielle %3 au-dessus de la palpation</French>
             <Chinese>你發現血壓比觸診高 %3</Chinese>
+            <Japanese>触診で計測した拡張期血圧は %3 でした</Japanese>
         </Key>
         <Key ID="STR_KAT_Circulation_Bloodpressure_Output_Palp">
             <English>%1 over Palp</English>
             <French>%1 au-dessus de la valeur de palpation</French>
             <Chinese>比觸診高 %1</Chinese>
+            <Japanese>触診による拡張期血圧は %1</Japanese>
         </Key>
         <Key ID="STR_KAT_Circulation_Check_Pulse_Output">
             <English>You find a Pulse Rate of %2</English>
             <French>Vous trouvez un pouls de %2</French>
             <Chinese>你發現脈搏率為 %2</Chinese>
+            <Japanese>計測した脈拍は %2 でした</Japanese>
         </Key>
         <Key ID="STR_KAT_Circulation_Pulse_Output">
             <English>%1 PPM</English>
             <French>%1 PPM</French>
             <Chinese>%1 PPM</Chinese>
+            <Japanese>%1 PPM</Japanese>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_StethHR">
             <English>Allow Stethoscope HR check</English>
             <French>Autorisation de prendre le pouls à l'aide d'un stéthoscope.</French>
             <Chinese>允許使用聽診器檢查心率</Chinese>
+            <Japanese>聴診器による脈拍確認の許可</Japanese>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_StethHR_DESC">
             <English>Training Level for use of the Stethoscope to measure HR</English>
             <French>Définit le niveau de compétences médicales requis pour mesurer le pouls à l'aide d'un stéthoscope.</French>
             <Chinese>使用聽診器測量心率的訓練等級</Chinese>
+            <Japanese>聴診器による脈拍の測定に必要な医療スキルのレベルを設定します。</Japanese>
         </Key>
         <Key ID="STR_KAT_Circulation_treatmentTime_StethHR">
             <English>Time to measure HR with a Stethoscope</English>
             <French>Temps nécessaire pour mesurer le pouls à l'aide d'un stéthoscope</French>
             <Chinese>用聽診器測量心率所需時間</Chinese>
+            <Japanese>聴診器による脈拍測定の所要時間</Japanese>
         </Key>
         <Key ID="STR_KAT_Circulation_Actions_CheckHRSteth">
             <English>Check HR w/ Stethoscope</English>
             <French>Vérifier le pouls à l'aide d'un stéthoscope.</French>
             <Chinese>用聽診器檢查心率</Chinese>
+            <Japanese>聴診器で脈拍を確認</Japanese>
         </Key>
         <Key ID="STR_KAT_Circulation_Actions_CheckingHRSteth">
             <English>Checking HR with Stethoscope</English>
             <French>Vérification du pouls à l'aide d'un stéthoscope.</French>
             <Chinese>用聽診器檢查心率中</Chinese>
+            <Japanese>聴診器で脈拍を確認中</Japanese>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_hardcoreDiagnose">
             <English>Enable Hardcore HR and BP Diagnose</English>
             <French>Permettre un diagnostic approfondi de la fréquence cardiaque et de la tension artérielle</French>
             <Chinese>啟用硬核心率和血壓診斷</Chinese>
+            <Japanese>ハードコア脈拍および血圧診断を有効化</Japanese>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_hardcoreDiagnose_DESC">
             <English>Makes measuring BP and HR imprecise without tools (Stethoscope or BP cuff)</English>
             <French>Rend impossible la mesure précise du pouls et de la tension artérielle sans instrument (stéthoscope ou brassard).</French>
             <Chinese>在沒有工具（聽診器或血壓計）的情況下，測量血壓和心率會不準確</Chinese>
+            <Japanese>器具(聴診器または血圧カフ)なしでは脈拍および血圧を正確に測定出来なくします</Japanese>
         </Key>
     </Package>
 </Project>

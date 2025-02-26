@@ -91,8 +91,16 @@ private _altitudeUnit = GVAR(altitudeUnit);
 
     _time ctrlSetText (format ["%1:%2", [_hour, 2] call CBA_fnc_formatNumber, [_minute, 2] call CBA_fnc_formatNumber]); 
 
-    _hr ctrlSetText ([GET_HEART_RATE(_unit), 1, 0] call CBA_fnc_formatNumber);
-    _o2 ctrlSetText ([GET_KAT_SPO2(_unit), 1, 0] call CBA_fnc_formatNumber);
+    if (GVAR(watchInaccuracy)) then {
+        private _fatigue = [0, (ACEGVAR(advanced_fatigue,anFatigue) * 2)] select (ACEGVAR(advanced_fatigue,enabled));
+        private _temperature = _unit getVariable [QEGVAR(hypothermia,unitTemperature), 37];
+
+        _hr ctrlSetText ([(GET_HEART_RATE(_unit) + ((2 * _fatigue) - (37 - _temperature))), 1, 0] call CBA_fnc_formatNumber);
+        _o2 ctrlSetText ([(GET_KAT_SPO2(_unit) - (_fatigue - (37 - _temperature))), 1, 0] call CBA_fnc_formatNumber); 
+    } else {
+        _hr ctrlSetText ([GET_HEART_RATE(_unit), 1, 0] call CBA_fnc_formatNumber);
+        _o2 ctrlSetText ([GET_KAT_SPO2(_unit), 1, 0] call CBA_fnc_formatNumber);
+    };
 
     private _curTime = CBA_missionTime;
     private _timeDiff = _curTime - _prevTime;

@@ -12,7 +12,7 @@
  * None
  *
  * Example:
- * [player, cursorObject, "Head"] call ace_medical_treatment_fnc_checkPulseStethLocal
+ * [player, cursorObject, "Head"] call kat_circulation_fnc_checkPulseStethLocal
  *
  * Public: No
  */
@@ -43,4 +43,4 @@ if (_heartRate > 1) then {
 
 [_patient, "quick_view", ACELSTRING(medical_treatment,Check_Pulse_Log), [_medic call ACEFUNC(common,getName), _logOutput]] call ACEFUNC(medical_treatment,addToLog);
 
-[QEGVAR(common,displayTextStructured), [[_heartRateOutput, _patient call ACEFUNC(common,getName), round _heartRate], 1.5, _medic], _medic] call CBA_fnc_targetEvent;
+[QACEGVAR(common,displayTextStructured), [[_heartRateOutput, _patient call ACEFUNC(common,getName), round _heartRate], 1.5, _medic], _medic] call CBA_fnc_targetEvent;
