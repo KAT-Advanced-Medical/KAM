@@ -4344,6 +4344,12 @@
         <Key ID="STR_KAT_Pharma_pushing_EACA_IV_3">
             <English>Pushing 15g EACA IV</English>
         </Key>
+        <Key ID="STR_KAT_Pharma_EACA_Dose1">
+            <English>7.5g</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_EACA_Dose3">
+            <English>15g</English>
+        </Key>
         <Key ID="STR_KAT_Pharma_pushing_morphineIV_IV_1">
             <English>Pushing 10mg Morphine IV</English>
         </Key>
@@ -4449,11 +4455,23 @@
         <Key ID="STR_KAT_Pharma_pushing_norepinephrine_IV_3">
             <English>Pushing 240mg Norepinephrine IV</English>
         </Key>
+        <Key ID="STR_KAT_Pharma_norepinephrine_Dose1">
+            <English>150mg</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_norepinephrine_Dose3">
+            <English>240mg</English>
+        </Key>
         <Key ID="STR_KAT_Pharma_pushing_phenylephrine_IV_1">
             <English>Pushing 100mcg Phenylephrine IV</English>
         </Key>
         <Key ID="STR_KAT_Pharma_pushing_phenylephrine_IV_3">
             <English>Pushing 200mcg Phenylephrine IV</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_phenylephrine_Dose1">
+            <English>100mcg</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_phenylephrine_Dose3">
+            <English>200mcg</English>
         </Key>
         <Key ID="STR_KAT_Pharma_pushing_nitroglycerin_IV_1">
             <English>Pushing 50mcg Nitroglycerin IV</English>
@@ -4461,14 +4479,29 @@
         <Key ID="STR_KAT_Pharma_pushing_nitroglycerin_IV_3">
             <English>Pushing 100mcg Nitroglycerin IV</English>
         </Key>
+        <Key ID="STR_KAT_Pharma_nitroglycerin_Dose1">
+            <English>50mcg</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_nitroglycerin_Dose3">
+            <English>100mcg</English>
+        </Key>
         <Key ID="STR_KAT_Pharma_pushing_amiodarone_IV_1">
             <English>Pushing 150mg Amiodarone IV</English>
         </Key>
         <Key ID="STR_KAT_Pharma_pushing_amiodarone_IV_3">
             <English>Pushing 300mg Amiodarone IV</English>
         </Key>
+        <Key ID="STR_KAT_Pharma_amiodarone_Dose1">
+            <English>150mg</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_amiodarone_Dose3">
+            <English>300mg</English>
+        </Key>
         <Key ID="STR_KAT_Pharma_pushing_alteplase_IV_3">
             <English>Pushing 50mg Alteplase IV</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_alteplase_Dose3">
+            <English>50mg</English>
         </Key>
         <Key ID="STR_KAT_Pharma_pushing_lidocaine_IV_1">
             <English>Pushing 40mg Lidocaine IV</English>
@@ -4476,11 +4509,20 @@
         <Key ID="STR_KAT_Pharma_pushing_lidocaine_IV_3">
             <English>Pushing 80mg Lidocaine IV</English>
         </Key>
+        <Key ID="STR_KAT_Pharma_lidocaine_Dose3">
+            <English>80mg</English>
+        </Key>
         <Key ID="STR_KAT_Pharma_pushing_atropineIV_IV_1">
             <English>Pushing 0.6mg Atropine IV</English>
         </Key>
         <Key ID="STR_KAT_Pharma_pushing_atropineIV_IV_3">
             <English>Pushing 2mg Atropine IV</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_atropineIV_Dose1">
+            <English>0.6mg</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_atropineIV_Dose3">
+            <English>2mg</English>
         </Key>
         <Key ID="STR_KAT_Pharma_pushing_ketamine_IV_1">
             <English>Pushing 25mg Ketamine IV</English>
@@ -4506,11 +4548,23 @@
         <Key ID="STR_KAT_Pharma_pushing_lorazepam_IV_3">
             <English>Pushing 4mg Lorazepam IV</English>
         </Key>
+        <Key ID="STR_KAT_Pharma_lorazepam_Dose1">
+            <English>2.4mg</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_lorazepam_Dose3">
+            <English>4mg</English>
+        </Key>
         <Key ID="STR_KAT_Pharma_pushing_flumazenil_IV_1">
             <English>Pushing 0.1mg Flumazenil IV</English>
         </Key>
         <Key ID="STR_KAT_Pharma_pushing_flumazenil_IV_3">
             <English>Pushing 0.2mg Flumazenil IV</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_flumazenil_Dose1">
+            <English>0.1mg</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_flumazenil_Dose3">
+            <English>0.2mg</English>
         </Key>
         <Key ID="STR_KAT_Pharma_pushing_etomidate_IV_1">
             <English>Pushing 0.2mg Etomidate IV</English>
@@ -4518,17 +4572,35 @@
         <Key ID="STR_KAT_Pharma_pushing_etomidate_IV_3">
             <English>Pushing 0.3mg Etomidate IV</English>
         </Key>
+        <Key ID="STR_KAT_Pharma_etomidate_Dose1">
+            <English>0.2mg</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_etomidate_Dose3">
+            <English>0.3mg</English>
+        </Key>
         <Key ID="STR_KAT_Pharma_pushing_epinephrineIV_IV_1">
             <English>Pushing 10mcg Epinephrine IV</English>
         </Key>
         <Key ID="STR_KAT_Pharma_pushing_epinephrineIV_IV_3">
             <English>Pushing 1mg Epinephrine IV</English>
         </Key>
+        <Key ID="STR_KAT_Pharma_epinephrineIV_Dose1">
+            <English>10mcg</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_epinephrineIV_Dose3">
+            <English>1mg</English>
+        </Key>
         <Key ID="STR_KAT_Pharma_pushing_adenosineIV_IV_1">
             <English>Pushing 6mg Adenosine IV</English>
         </Key>
         <Key ID="STR_KAT_Pharma_pushing_adenosineIV_IV_3">
             <English>Pushing 12mg Adenosine IV</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_adenosineIV_Dose1">
+            <English>6mg</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_adenosineIV_Dose3">
+            <English>12mg</English>
         </Key>
         <Key ID="STR_KAT_Pharma_inject_TXA_IM_1">
             <English>Inject 1g TXA IM</English>
@@ -4569,14 +4641,29 @@
         <Key ID="STR_KAT_Pharma_injecting_TXA_IM_3">
             <English>Injecting 2g TXA IM</English>
         </Key>
+        <Key ID="STR_KAT_Pharma_TXA_Dose1">
+            <English>1g</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_TXA_Dose3">
+            <English>2g</English>
+        </Key>
         <Key ID="STR_KAT_Pharma_injecting_morphineIV_IM_1">
             <English>Injecting 10mg Morphine IM</English>
         </Key>
         <Key ID="STR_KAT_Pharma_injecting_morphineIV_IM_3">
             <English>Injecting 20mg Morphine IM</English>
         </Key>
+        <Key ID="STR_KAT_Pharma_morphineIV_Dose1">
+            <English>10mg</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_morphineIV_Dose3">
+            <English>20mg</English>
+        </Key>
         <Key ID="STR_KAT_Pharma_injecting_lidocaine_IM_1">
             <English>Injecting 40mg Lidocaine IM</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_lidocaine_Dose1">
+            <English>40mg</English>
         </Key>
         <Key ID="STR_KAT_Pharma_injecting_ketamine_IM_1">
             <English>Injecting 25mg Ketamine IM</English>
@@ -4584,17 +4671,35 @@
         <Key ID="STR_KAT_Pharma_injecting_ketamine_IM_3">
             <English>Injecting 80mg Ketamine IM</English>
         </Key>
+        <Key ID="STR_KAT_Pharma_ketamine_Dose1">
+            <English>25mg</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_ketamine_Dose3">
+            <English>80mg</English>
+        </Key>
         <Key ID="STR_KAT_Pharma_injecting_fentanyl_IM_1">
             <English>Injecting 40mcg Fentanyl IM</English>
         </Key>
         <Key ID="STR_KAT_Pharma_injecting_fentanyl_IM_3">
             <English>Injecting 80mcg Fentanyl IM</English>
         </Key>
+        <Key ID="STR_KAT_Pharma_fentanyl_Dose1">
+            <English>40mcg</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_fentanyl_Dose3">
+            <English>80mcg</English>
+        </Key>
         <Key ID="STR_KAT_Pharma_injecting_nalbuphine_IM_1">
             <English>Injecting 10mg Nalbuphine IM</English>
         </Key>
         <Key ID="STR_KAT_Pharma_injecting_nalbuphine_IM_3">
             <English>Injecting 20mg Nalbuphine IM</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_nalbuphine_Dose1">
+            <English>10mg</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_nalbuphine_Dose3">
+            <English>20mg</English>
         </Key>
         <Key ID="STR_KAT_Pharma_Syringe_morphineIV_10_1_Display">
             <English>10ml Syringe/10mg Morphine</English>
@@ -4781,6 +4886,12 @@
         </Key>
         <Key ID="STR_KAT_Pharma_push_Doxapram_IV_3">
             <English>Push 1mg Doxapram</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_Doxapram_Dose1">
+            <English>0.5mg</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_Doxapram_Dose3">
+            <English>1mg</English>
         </Key>
         <Key ID="STR_KAT_Pharma_pushing_Doxapram_IV_1">
             <English>Pushing 0.5mg Doxapram</English>

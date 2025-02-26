@@ -16,6 +16,7 @@
  */
 [] call FUNC(updateMedications);
 [] call FUNC(updateSyringes);
+[] call FUNC(updateDoses);
 [{player setVariable ["SyringeMenu", true];
 ctrlShow [71300, true];
 ctrlShow [71301, true];

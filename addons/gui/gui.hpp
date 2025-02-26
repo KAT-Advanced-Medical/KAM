@@ -780,31 +780,6 @@ class ACE_Medical_Menu {
             w = QUOTE(POS_W(8));
             h = QUOTE(POS_H(1));
             show = 1;
-            class Items
-            {
-                class LowDose
-                {
-                    text = CSTRING(DoseLow);
-                    default = 1;
-                    value = 1;
-                };
-                //class MediumDose
-                //{
-                //    text = CSTRING(DoseMedium);
-                //    value = 2;
-                //};
-                class HighDose
-                {
-                    text = CSTRING(DoseHigh);
-                    value = 3;
-                    
-                };
-                class Infusion
-                {
-                    text = CSTRING(Infusion);
-                    value = 4;
-                    };
-                };
             };
             class PrepSyringe: RscButton {
             idc = IDC_MEDICATION_PREP_SYRINGE; // LOOK HERE
