@@ -703,6 +703,7 @@ class ACE_ADDON(Medical_Treatment) {
             timeInSystem = 60;
             timeTillMaxEffect = 5;
             dose = 1;
+            opioidDepression = 0.12;
             viscosityChange = 0;
         };
         class syringe_etomidate_5ml_3 {
@@ -713,6 +714,7 @@ class ACE_ADDON(Medical_Treatment) {
             timeInSystem = 30;
             timeTillMaxEffect = 5;
             dose = 3;
+            opioidDepression = 0.15;
             viscosityChange = 0;
         };
         class syringe_flumazenil_5ml_1 {
@@ -743,6 +745,7 @@ class ACE_ADDON(Medical_Treatment) {
             timeInSystem = 60;
             timeTillMaxEffect = 5;
             dose = 1;
+            opioidDepression = 0.11;
             viscosityChange = -10;
             respiratoryRate = -0.1;
         };
@@ -754,6 +757,7 @@ class ACE_ADDON(Medical_Treatment) {
             timeInSystem = 60;
             timeTillMaxEffect = 5;
             dose = 3;
+            opioidDepression = 0.13;
             viscosityChange = -15;
             respiratoryRate = -0.1;
         };
