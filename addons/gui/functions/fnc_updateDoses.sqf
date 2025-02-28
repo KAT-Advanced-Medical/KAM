@@ -17,57 +17,42 @@
 
 if !(EGVAR(pharma,AMS_Enabled)) exitWith {};
 disableSerialization;
-
 private _medListBox = findDisplay 38580 displayCtrl 71305;
-private _doseListBox = findDisplay 38580 displayCtrl 71307;
-
-// Event handler: When a medication is selected, update dose listbox with delay
+_medListBox ctrlRemoveAllEventHandlers "LBSelChanged";  
 _medListBox ctrlAddEventHandler ["LBSelChanged", {
     params ["_control", "_selectedIndex"];
-
     if (_selectedIndex >= 0) then {
         private _medItem = _control lbData _selectedIndex;
-        systemChat format ["Selected _medItem: %1", _medItem];
-
-        private _doseListBox = findDisplay 38580 displayCtrl 71307;
-        if (isNull _doseListBox) exitWith { systemChat "ERROR: _doseListBox is NULL in event!"; };
-
-        systemChat "Scheduled dose list population...";
-
         private _capturedMedItem = _medItem;
 
         [{
+            params ["_capturedMedItem"];
 
-            params ["_doseListBox", "_capturedMedItem"];
+            private _syringeListBox = findDisplay 38580 displayCtrl 71303;
+            private _syringeSelected = lbCurSel _syringeListBox;
+            private _syringeType = _syringeBox lbData _syringeSelected;
+
+            private _doseListBox = findDisplay 38580 displayCtrl 71307;
+            lbClear _doseListBox;
 
             if (isNil "_capturedMedItem" || {_capturedMedItem == ""}) exitWith { 
-                systemChat "ERROR: Delayed _medItem is EMPTY!"; 
             };
-            if (isNull _doseListBox) exitWith { 
-                systemChat "ERROR: Delayed _doseListBox is NULL!"; 
-            };
-
-            systemChat "Executing dose list population...";
-            lbClear _doseListBox;
 
             private _medParts = _capturedMedItem splitString "_";
             private _medBaseName = _medParts select (count _medParts - 1);
-            systemChat format ["Computed _medBaseName: %1", _medBaseName];
 
             private _doseLevels = [1, 2, 3];
 
             {
-                private _stringtableKey = format ["STR_KAT_Pharma_%1_Dose%2", _medBaseName, _x];
+                private _stringtableKey = format ["STR_KAT_Pharma_%1_%2_Dose%3", _medBaseName, _syringeType, _x];
                 private _localizedText = localize _stringtableKey;
-                systemChat format ["Checking Key: %1, Result: %2", _stringtableKey, _localizedText];
 
                 if (_localizedText != _stringtableKey && {_localizedText != ""}) then {
                     private _index = _doseListBox lbAdd _localizedText;
                     _doseListBox lbSetValue [_index, _x];
-                    systemChat format ["Added Dose: %1", _localizedText];
                 };
             } forEach _doseLevels;
 
-        }, [_doseListBox, _capturedMedItem], 0.05] call CBA_fnc_waitAndExecute;
+        }, [_capturedMedItem], 0.05] call CBA_fnc_waitAndExecute;
     };
 }];

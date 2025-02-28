@@ -116,7 +116,8 @@ if (ACEGVAR(medical_gui,target) == ACE_player) then {
     _ctrl ctrlSetText QACEPATHTOF(medical_gui,data\categories\toggle_to_self.paa);
     _ctrl ctrlSetTooltip ACELLSTRING(medical_gui,ToggleToSelf);
 };
-private _syringeMenuStatus = player getVariable ["SyringeMenu", false];
+
+private _syringeMenuStatus = ACEGVAR(medical_gui,target) getVariable ["kat_SyringeMenu", false];
 if (_syringeMenuStatus) then {
     [] call FUNC(openSyringeMenu);
 } else {

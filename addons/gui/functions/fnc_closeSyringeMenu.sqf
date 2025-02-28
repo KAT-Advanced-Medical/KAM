@@ -14,7 +14,7 @@
  *
  * Public: No
  */
-[{player setVariable ["SyringeMenu", false];
+[{ACEGVAR(medical_gui,target) setVariable ["kat_SyringeMenu", false, true];
 ctrlShow [71300, false];
 ctrlShow [71301, false];
 ctrlShow [71311, false];
