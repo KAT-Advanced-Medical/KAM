@@ -26,6 +26,10 @@ private _thorasicRight = LSTRING(Ultra_Airway_Normal);
 
 _patient setVariable [QGVAR(imaging), true, true];
 
+if ((_patient getVariable [QEGVAR(airway,occluded), false]) || (_patient getVariable [QEGVAR(airway,obstruction), false])) then {
+    _airway = LSTRING(Ultra_Airway_Compromise);
+};
+
 //Reads Thorasic Condition
 if (_patient getVariable [QEGVAR(breathing,pneumothorax), [0, 0]] select 0 > 0) then {
     _thorasic = LSTRING(Ultra_Thorasic_PTX);

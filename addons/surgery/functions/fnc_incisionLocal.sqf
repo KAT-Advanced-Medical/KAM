@@ -43,7 +43,7 @@ _patient setVariable [QGVAR(fractures), _fractureArray, true];
 
     private _fractureArray = _patient getVariable [QGVAR(fractures), [0,0,0,0,0,0]];
     private _liveFracture = _fractureArray select _part;
-    private _count = [_patient, "Etomidate", true] call ACEFUNC(medical_status,getMedicationCount);
+    private _count = ([_patient, "Etomidate", true] call ACEFUNC(medical_status,getMedicationCount)) select 1;
 
     private _alive = alive _patient;
 

@@ -31,7 +31,7 @@ private _actualHeartRate = _hrTarget;
 private _actualReturn = 0;
 
 if IN_CRDC_ARRST(_unit) then {
-    if (alive (_unit getVariable [QEGVAR(medical,CPR_provider), objNull])) then {
+    if (alive (_unit getVariable [QACEGVAR(medical,CPR_provider), objNull])) then {
         if (_actualHeartRate == 0) then { _syncValue = true }; // always sync on large change
         _actualHeartRate = random [100, 110, 120];
     } else {
@@ -42,7 +42,7 @@ if IN_CRDC_ARRST(_unit) then {
     private _painLevel = GET_PAIN_PERCEIVED(_unit);
 
     // Adjustments and Pain Levels are taken off of last cycle HR to prevent any spiraling vitials
-    private _lastCycleHeartRate = GET_HEART_RATE(_unit) - _hrTargetAdjustment - (10 * _painLevel);
+    private _lastCycleHeartRate = GET_HEART_RATE(_unit) - _hrTargetAdjustment - (10 * _painLevel) - (ACEGVAR(advanced_fatigue,anFatigue) * 50);
     private _lastCycleCO2 = _lastCycleHeartRate * HEART_RATE_CO2_MULTIPLIER;
     private _demandReturn = _lastCycleCO2 / CO2_TO_DEMAND_DIVISOR;
     private _strokeVolume = (_bloodVolume / BLOOD_VOLUME_TO_STROKE_DIVISOR);
@@ -63,7 +63,7 @@ if IN_CRDC_ARRST(_unit) then {
     };
 
     // All additional adjustments are added back 
-    _actualHeartRate = _actualHeartRate + _hrTargetAdjustment + (10 * _painLevel);
+    _actualHeartRate = _actualHeartRate + _hrTargetAdjustment + (10 * _painLevel) + (ACEGVAR(advanced_fatigue,anFatigue) * 50);
 };
 
 _unit setVariable [VAR_HEART_RATE, _actualHeartRate, _syncValue];

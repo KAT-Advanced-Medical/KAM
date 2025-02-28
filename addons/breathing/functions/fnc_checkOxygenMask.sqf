@@ -17,7 +17,7 @@
 
 params ["_patient"];
 
-if ((goggles _patient in (missionNamespace getVariable [QGVAR(availOxyMaskList), []]))) exitWith {
+if ((goggles _patient in (missionNamespace getVariable [QGVAR(availOxyMaskList), []])) || (headgear _patient in (missionNamespace getVariable [QGVAR(availOxyHelmetList), []]))) exitWith {
     true
 };
 
