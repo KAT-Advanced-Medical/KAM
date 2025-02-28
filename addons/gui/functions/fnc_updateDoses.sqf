@@ -30,7 +30,7 @@ _medListBox ctrlAddEventHandler ["LBSelChanged", {
 
             private _syringeListBox = findDisplay 38580 displayCtrl 71303;
             private _syringeSelected = lbCurSel _syringeListBox;
-            private _syringeType = _syringeBox lbData _syringeSelected;
+            private _syringeType = _syringeListBox lbData _syringeSelected;
 
             private _doseListBox = findDisplay 38580 displayCtrl 71307;
             lbClear _doseListBox;
