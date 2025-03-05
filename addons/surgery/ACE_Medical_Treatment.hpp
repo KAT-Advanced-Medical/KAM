@@ -52,7 +52,7 @@ class ACE_Medical_Treatment {
             class Abrasion {
                 effectiveness = 0;
                 reopeningChance = 0.6;
-                reopeningMinDelay = 300;
+                reopeningMinDelay = 120;
                 reopeningMaxDelay = 900;
             };
             class AbrasionMinor: Abrasion {
@@ -117,7 +117,7 @@ class ACE_Medical_Treatment {
              class Abrasion {
                 effectiveness = 0;
                 reopeningChance = 0.5;
-                reopeningMinDelay = 300;
+                reopeningMinDelay = 60;
                 reopeningMaxDelay = 600;
             };
             class AbrasionMinor: Abrasion {};
@@ -180,7 +180,7 @@ class ACE_Medical_Treatment {
             class Abrasion {
                 effectiveness = 0;
                 reopeningChance = 0.8;
-                reopeningMinDelay = 150;
+                reopeningMinDelay = 30;
                 reopeningMaxDelay = 600;
             };
             class AbrasionMinor: Abrasion {};
