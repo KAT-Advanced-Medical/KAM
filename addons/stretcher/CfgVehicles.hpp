@@ -89,7 +89,7 @@ class CfgVehicles {
         fuelCapacity = 0;
 
         // Remove ACRE2 intercoms and infantry phone, inherited from the Tank class
-        delete AcreIntercoms;
+        class AcreIntercoms {};
         acre_hasInfantryPhone = 0;
 
         //pretend static weapon since some mods don't like unconscious people in static weapons
