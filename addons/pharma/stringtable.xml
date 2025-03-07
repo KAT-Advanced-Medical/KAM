@@ -4385,6 +4385,7 @@
         </Key>
         <Key ID="STR_KAT_Pharma_treatmentTime_CWMP">
             <English>Treatment time for CWMP</English>
+            <Japanese>戦闘傷病治療薬(CWMP)の所要時間</Japanese>
             <French>Temps de traitement pour le CWMP</French>
         </Key>
         <Key ID="STR_KAT_Pharma_SubCategory_CWMP">
