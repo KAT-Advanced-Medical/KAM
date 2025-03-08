@@ -740,7 +740,7 @@
             <Dutch>Longstatus: %1</Dutch>
             <Italian>Stato dei polmoni: %1</Italian>
             <German>Lungenstatus: %1</German>
-        </Key>    
+        </Key>
         <Key ID="STR_KAT_Surgery_Ultra_Cardiac">
             <English>Cardiac Status: %1</English>
             <Chinesesimp>心脏状态：%1</Chinesesimp>
