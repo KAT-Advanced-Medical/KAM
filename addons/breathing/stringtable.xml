@@ -910,7 +910,7 @@
             <Turkish>Hemotoraks veya Tansiyon Pnömotoraksı tedavi etmek için kullanılan İğne Dekompresyonu ve Boşaltma Sıvıları tedavi eylemlerini gerçekleştirebilmek için gerekli minimum tıbbi seviye.</Turkish>
             <Italian>Il livello medico minimo richiesto per eseguire la decompressione con ago e il drenaggio dei fluidi, necessari per il trattamento di un emotorace o pneumotorace iperteso</Italian>
             <Russian>Минимальный медицинский уровень, необходимый для того, чтобы кто-то мог выполнять лечебные действия «Декомпрессия иглой» и «Дренаж жидкости», используемые для лечения гемоторакса или напряженного пневмоторакса.</Russian>
-            <Japanese>胸腔穿刺減圧および胸腔ドレナージの使用に必要な医療スキルのレベルを設定します。これらは血胸と緊張性気胸の治療に使われます。</Japanese>
+            <Japanese>胸腔穿刺減圧および胸腔ドレナージの実施に必要な医療スキルのレベルを設定します。これらは血胸と緊張性気胸の治療に使われます。</Japanese>
             <Portuguese>O nível médico mínimo exigido para que alguém possa realizar as ações de tratamento de Descompressão de Agulha e Drenagem de Fluidos, usados ​​para tratar hemotórax ou pneumotórax hipertensivo.</Portuguese>
             <Finnish>Vähimmäiskoulutustaso, joka vaaditaan, jotta joku pystyy suorittamaan neulan dekompression ja nesteenpoiston, jota käytetään hemothoraksin tai jännitysilmarintain hoitoon</Finnish>
             <Dutch>Het minimaal benodigde trainingsniveau voor het uitvoeren van de naalddecompressie- en vloeistof afvoerende handelingen, benodigd om een hemo- en spanningspneumothorax te behandelen</Dutch>
@@ -1166,7 +1166,7 @@
             <Turkish>Akciğer seslerini dinlemenizi sağlar</Turkish>
             <Italian>Consente di auscultare i suoni polmonari </Italian>
             <Russian>Позволяет аускультировать легочные шумы</Russian>
-            <Japanese>呼吸音を聴診することができます</Japanese>
+            <Japanese>肺音を聴診することができます</Japanese>
             <Portuguese>Permite auscultar sons pulmonares</Portuguese>
             <Finnish>Voit kuunnella keuhkojen ääniä</Finnish>
             <Dutch>Zorgt ervoor dat je de longen kan beluisteren</Dutch>
@@ -1184,7 +1184,7 @@
             <Turkish>Akciğer Seslerini Dinleyin</Turkish>
             <Italian>Auscultare i suoni polmonari</Italian>
             <Russian>Выслушивайте легочные шумы</Russian>
-            <Japanese>呼吸音を聴診</Japanese>
+            <Japanese>肺音を聴診</Japanese>
             <Portuguese>Auscultar sons pulmonares</Portuguese>
             <Finnish>Kuuntele keuhkojen ääniä</Finnish>
             <Dutch>Beluister de longen</Dutch>
