@@ -728,13 +728,18 @@
             <Italian>Stato delle vie aeree: %1</Italian>
             <German>Atemwegsstatus: %1</German>
         </Key>
-        <Key ID="STR_KAT_Surgery_Ultra_Thorasic">        
-            <English>Left Lung Status: %1</English>
-            <French>Statut du poumon gauche: %1</French>
-        </Key>
-        <Key ID="STR_KAT_Surgery_Ultra_ThorasicRight">
-            <English>Right Lung Status: %1</English>
-            <French>Statut du poumon droit: %1</French>
+        <Key ID="STR_KAT_Surgery_Ultra_Thorasic">
+            <English>Lung Status: %1</English>
+            <Chinesesimp>肺部状态：%1</Chinesesimp>
+            <Chinese>肺部狀態：%1</Chinese>
+            <Russian>Лёгкие: %1</Russian>
+            <Spanish>Estado de Pulmones: %1</Spanish>
+            <Japanese>肺の状態: %1</Japanese>
+            <French>Statut des poumons :%1</French>
+            <Portuguese>Estado do pulmão: %1</Portuguese>
+            <Dutch>Longstatus: %1</Dutch>
+            <Italian>Stato dei polmoni: %1</Italian>
+            <German>Lungenstatus: %1</German>
         </Key>    
         <Key ID="STR_KAT_Surgery_Ultra_Cardiac">
             <English>Cardiac Status: %1</English>
@@ -773,12 +778,17 @@
             <French>Aucune activité</French>
         </Key>
         <Key ID="STR_KAT_Surgery_Ultra_Thorasic_PTX">
-            <English>Left Side Pneumothorax</English>
-            <French>Pneumothorax du côté gauche</French>
-        </Key>
-        <Key ID="STR_KAT_Surgery_Ultra_Thorasic_Right_PTX">
-            <English>Right Side Pneumothorax</English>
-            <French>Pneumothorax du côté droit</French>
+            <English>Pneumothorax</English>
+            <Chinesesimp>气胸</Chinesesimp>
+            <Chinese>氣胸</Chinese>
+            <Russian>Пневмоторакс</Russian>
+            <Spanish>Pneumotórax</Spanish>
+            <Japanese>気胸</Japanese>
+            <French>Pneumothorax</French>
+            <Portuguese>Pneumotórax</Portuguese>
+            <Dutch>Pneumothorax</Dutch>
+            <Italian>Pneumotorace</Italian>
+            <German>Pneumothorax</German>
         </Key>
         <Key ID="STR_KAT_Surgery_Ultra_Thorasic_Hemo">
             <English>Hemopneumothorax</English>
@@ -794,12 +804,17 @@
             <German>Hämopneumothorax</German>
         </Key>
         <Key ID="STR_KAT_Surgery_Ultra_Thorasic_Tension">
-            <English>Left Side Tension Pneumothorax</English>
-            <French>Pneumothorax sous tension du côté gauche</French>
-        </Key>
-        <Key ID="STR_KAT_Surgery_Ultra_Thorasic_Right_Tension">
-            <English>Right Side Tension Pneumothorax</English>
-            <French>Pneumothorax sous tension du côté droit</French>
+            <English>Tension Pneumothorax</English>
+            <Russian>Напряженный пневмоторакс</Russian>
+            <Spanish>Tensión de Pneumotórax</Spanish>
+            <Japanese>緊張性気胸</Japanese>
+            <French>Pneumothorax sous tension</French>
+            <Portuguese>Pneumotórax Hipertensivo</Portuguese>
+            <Dutch>Tensiepneumothorax</Dutch>
+            <Italian>Pneumotorace Iperteso</Italian>
+            <German>Spannungspneumothorax</German>
+            <Chinese>張力性氣胸</Chinese>
+            <Chinesesimp>张力性气胸</Chinesesimp>
         </Key>
         <Key ID="STR_KAT_Surgery_Ultra_Thorasic_NoActivity">
             <English>No Activity</English>
