@@ -23,3 +23,9 @@ _patient setVariable [QGVAR(respiratoryDepth), DEFAULT_RESPIRATORY_DEPTH, true];
 if (GVAR(enableSimpleMedical)) then {
     _patient setVariable [QGVAR(simpleMedical), true, true];
 };
+
+if ("RemoveStamina" call ACEFUNC(common,isModLoaded)) then {
+	_patient setVariable [QGVAR(fatigueEnabled), false, true];
+} else {
+    _patient setVariable [QGVAR(fatigueEnabled), (ACEGVAR(advanced_fatigue,enabled)), true];
+};

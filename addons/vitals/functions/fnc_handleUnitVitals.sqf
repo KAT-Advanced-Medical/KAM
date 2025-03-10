@@ -124,7 +124,7 @@ if !(_adjustments isEqualTo []) then {
 [_unit, _opioidEffectAdjustment, _deltaT, _syncValues] call FUNC(updateOpioidEffect);
 [_unit, POISON_DECREASE, _deltaT, _syncValues] call FUNC(handlePoisoning);
 
-private _aceAnFatigue = [0, ACEGVAR(advanced_fatigue,anFatigue)] select (ACEGVAR(advanced_fatigue,enabled));
+private _aceAnFatigue = [0, ACEGVAR(advanced_fatigue,anFatigue)] select (_unit getVariable [QGVAR(enableFatigue), false]);
 
 private _heartRate = [_unit, _hrTargetAdjustment, 0, _bloodVolume, _aceAnFatigue, _deltaT, _syncValues] call FUNC(handleCardiacFunction);
 
