@@ -25,7 +25,7 @@ if (GVAR(enableSimpleMedical)) then {
 };
 
 if ("RemoveStamina" call ACEFUNC(common,isModLoaded)) then {
-	_patient setVariable [QGVAR(fatigueEnabled), false, true];
+    _patient setVariable [QGVAR(fatigueEnabled), false, true];
 } else {
     _patient setVariable [QGVAR(fatigueEnabled), (ACEGVAR(advanced_fatigue,enabled)), true];
 };
