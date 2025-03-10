@@ -124,7 +124,9 @@ if !(_adjustments isEqualTo []) then {
 [_unit, _opioidEffectAdjustment, _deltaT, _syncValues] call FUNC(updateOpioidEffect);
 [_unit, POISON_DECREASE, _deltaT, _syncValues] call FUNC(handlePoisoning);
 
-private _heartRate = [_unit, _hrTargetAdjustment, 0, _bloodVolume, _deltaT, _syncValues] call FUNC(handleCardiacFunction);
+private _aceAnFatigue = [0, ACEGVAR(advanced_fatigue,anFatigue)] select (ACEGVAR(advanced_fatigue,enabled));
+
+private _heartRate = [_unit, _hrTargetAdjustment, 0, _bloodVolume, _aceAnFatigue, _deltaT, _syncValues] call FUNC(handleCardiacFunction);
 
 private _spo2 = 97;
 if (EGVAR(breathing,enable)) then {
@@ -133,7 +135,7 @@ if (EGVAR(breathing,enable)) then {
     private _opioidDepression = GET_OPIOID_FACTOR(_unit);
     private _anerobicPressure = (DEFAULT_ANEROBIC_EXCHANGE * (6 / (_bloodVolume max 6))) min 1.2;
 
-    _spo2 = [_unit, _heartRate, _anerobicPressure, _bloodGas, _temperature, _baroPressure, _opioidDepression, _deltaT, _syncValues] call FUNC(handleOxygenFunction);
+    _spo2 = [_unit, _heartRate, _anerobicPressure, _bloodGas, _temperature, _baroPressure, _opioidDepression, _aceAnFatigue, _deltaT, _syncValues] call FUNC(handleOxygenFunction);
 };
 
 private _woundBloodLoss = GET_WOUND_BLEEDING(_unit);
@@ -166,7 +168,7 @@ switch (true) do {
         TRACE_3("Class IV Hemorrhage",_unit,_hemorrhage,_bloodVolume);
         [QACEGVAR(medical,FatalVitals), _unit] call CBA_fnc_localEvent;
     };
-    case (_heartRate < 20 || {_heartRate > 220}): {
+    case (_heartRate < 20 || {(_heartRate - (_aceAnFatigue / 40)) > 220}): {
         TRACE_2("heartRate Fatal",_unit,_heartRate);
         [QACEGVAR(medical,FatalVitals), _unit] call CBA_fnc_localEvent;
     };

@@ -11,19 +11,20 @@
  * 4: Temperature <NUMBER>
  * 5: Barometric Pressure <NUMBER>
  * 6: Opioid Depression <NUMBER>
- * 7: Time since last update <NUMBER>
- * 8: Sync value? <BOOL> 
+ * 7: ACE Fatigue <NUMBER>
+ * 8: Time since last update <NUMBER>
+ * 9: Sync value? <BOOL> 
  *
  * ReturnValue:
  * Current O2 Saturation <NUMBER>
  *
  * Example:
- * [player, 80, 0.8, [40,90,0.96,24,7.4], 37, 760, 0, 1, true] call kat_vitals_fnc_handleOxygenFunction;
+ * [player, 80, 0.8, [40,90,0.96,24,7.4], 37, 760, 0, 0.1, 1, true] call kat_vitals_fnc_handleOxygenFunction;
  *
  * Public: No
  */
 
-params ["_unit", "_actualHeartRate", "_anerobicPressure", "_bloodGas", "_temperature", "_baroPressure", "_opioidDepression", "_deltaT", "_syncValues"];
+params ["_unit", "_actualHeartRate", "_anerobicPressure", "_bloodGas", "_temperature", "_baroPressure", "_opioidDepression", "_aceAnFatigue", "_deltaT", "_syncValues"];
 
 #define MAXIMUM_RR 40
 #define HEART_RATE_CO2_MULTIPLIER 60
@@ -96,10 +97,9 @@ if (EGVAR(pharma,kidneyAction)) then {
 
     // Adjust dissociation constant based on temperature 
     private _phConstant = ((-0.00006653 * (_temperature ^ 2)) - (0.03268 * _temperature) + 7.4);
-    private _fatigue = [0, (ACEGVAR(advanced_fatigue,anFatigue) / 2)] select (ACEGVAR(advanced_fatigue,enabled));
 
     // pH is from the Henderson-Hasselbalch equation
-    _pH = (_phConstant + log(24 / ((0.03 * _paco2)))) - ((_externalPh max 1) / 2000) - (_fatigue / 3);
+    _pH = (_phConstant + log(24 / ((0.03 * _paco2)))) - ((_externalPh max 1) / 2000) - ((_aceAnFatigue / 2) / 3);
 };
 
 // Fractional Oxygen when breathing normal air is 0.21, 1 when breathing 100% Oxygen, and 0 when no air is being brought into the lungs
