@@ -136,11 +136,12 @@ if (EGVAR(breathing,enable)) then {
     _spo2 = [_unit, _heartRate, _anerobicPressure, _bloodGas, _temperature, _baroPressure, _opioidDepression, _deltaT, _syncValues] call FUNC(handleOxygenFunction);
 };
 
+private _woundBloodLoss = GET_WOUND_BLEEDING(_unit);
+
 // Vasoconstriction from Wound Blood Loss and Alpha Adjustment
 _vasoconstriction = 1 + (0.5 * _woundBloodLoss) + _alphaFactorAdjustment;
 _unit setVariable [VAR_VASOCONSTRICTION, (1.8 min (0.2 max _vasoconstriction)), _syncValues];
 
-private _woundBloodLoss = GET_WOUND_BLEEDING(_unit);
 
 private _bloodPressure = [_unit] call EFUNC(circulation,getBloodPressure);
 _unit setVariable [VAR_BLOOD_PRESS, _bloodPressure, _syncValues];
