@@ -4370,22 +4370,27 @@
         </Key>
         <Key ID="STR_KAT_Pharma_medLvl_Caffeine">
             <English>Allow using Caffeine</English>
+            <French>Autoriser l'utilisation de la caféine</French>
             <Japanese>カフェインの許可</Japanese>
         </Key>
         <Key ID="STR_KAT_Pharma_treatmentTime_Caffeine">
             <English>Treatment time for Caffeine</English>
+            <French>Temps de traitement pour la caféine</French>
             <Japanese>カフェインの所要時間</Japanese>
         </Key>
         <Key ID="STR_KAT_Pharma_medLvl_CWMP">
             <English>Allow using CWMP</English>
+            <French>Autoriser l'utilisation du CWMP</French>
             <Japanese>戦闘傷病治療薬(CWMP)の許可</Japanese>
         </Key>
         <Key ID="STR_KAT_Pharma_treatmentTime_CWMP">
             <English>Treatment time for CWMP</English>
             <Japanese>戦闘傷病治療薬(CWMP)の所要時間</Japanese>
+            <French>Temps de traitement pour le CWMP</French>
         </Key>
         <Key ID="STR_KAT_Pharma_SubCategory_CWMP">
             <English>CWMP Settings</English>
+            <French>Paramètres CWMP</French>
             <Japanese>戦闘傷病治療薬(CWMP)設定</Japanese>
         </Key>
     </Package>

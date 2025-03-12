@@ -135,10 +135,12 @@
         </Key>
         <Key ID="STR_KAT_Watch_SETTING_WatchInaccuracy">
             <English>Watch Vitals Inaccuracy</English>
+            <French>Imprécision des constantes de la montre.</French>
             <Japanese>腕時計バイタルの不正確性</Japanese>
         </Key>
         <Key ID="STR_KAT_Watch_SETTING__WatchInaccuracy_Desc">
             <English>Enables watch inaccuracy when reading patient vitals</English>
+            <French>Permet l'imprécision de la montre lors de la lecture des constantes du patient</French>
             <Japanese>腕時計が患者のバイタルを不正確に読み取るようになります。</Japanese>
         </Key>
         <Key ID="STR_KAT_Watch_KatminDescription">

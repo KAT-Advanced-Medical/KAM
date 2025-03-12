@@ -8,19 +8,20 @@
  * 1: Heart Rate Adjustments <NUMBER>
  * 2: Heart Rate Target <NUMBER>
  * 3: Blood Volume <NUMBER>
- * 4: Time since last update <NUMBER>
- * 5: Sync value? <BOOL>
+ * 4: ACE Fatigue <NUMBER>
+ * 5: Time since last update <NUMBER>
+ * 6: Sync value? <BOOL>
  *
  * ReturnValue:
  * Current Heart Rate <NUMBER>
  *
  * Example:
- * [player, 0, 80, 6, 1, false] call kat_vitals_handleCardiacFunction;
+ * [player, 0, 80, 6, 0.1, 1, false] call kat_vitals_handleCardiacFunction;
  *
  * Public: No
  */
 
-params ["_unit", "_hrTargetAdjustment", "_hrTarget", "_bloodVolume", "_deltaT", "_syncValue"];
+params ["_unit", "_hrTargetAdjustment", "_hrTarget", "_bloodVolume", "_aceAnFatigue", "_deltaT", "_syncValue"];
 
 #define HEART_RATE_CO2_MULTIPLIER 60
 #define CO2_TO_DEMAND_DIVISOR 37894.7367424
@@ -42,7 +43,7 @@ if IN_CRDC_ARRST(_unit) then {
     private _painLevel = GET_PAIN_PERCEIVED(_unit);
 
     // Adjustments and Pain Levels are taken off of last cycle HR to prevent any spiraling vitials
-    private _lastCycleHeartRate = GET_HEART_RATE(_unit) - _hrTargetAdjustment - (10 * _painLevel) - (ACEGVAR(advanced_fatigue,anFatigue) * 50);
+    private _lastCycleHeartRate = GET_HEART_RATE(_unit) - _hrTargetAdjustment - (10 * _painLevel) - (_aceAnFatigue * 40);
     private _lastCycleCO2 = _lastCycleHeartRate * HEART_RATE_CO2_MULTIPLIER;
     private _demandReturn = _lastCycleCO2 / CO2_TO_DEMAND_DIVISOR;
     private _strokeVolume = (_bloodVolume / BLOOD_VOLUME_TO_STROKE_DIVISOR);
@@ -63,7 +64,7 @@ if IN_CRDC_ARRST(_unit) then {
     };
 
     // All additional adjustments are added back 
-    _actualHeartRate = _actualHeartRate + _hrTargetAdjustment + (10 * _painLevel) + (ACEGVAR(advanced_fatigue,anFatigue) * 50);
+    _actualHeartRate = _actualHeartRate + _hrTargetAdjustment + (10 * _painLevel) + (_aceAnFatigue * 40);
 };
 
 _unit setVariable [VAR_HEART_RATE, _actualHeartRate, _syncValue];
