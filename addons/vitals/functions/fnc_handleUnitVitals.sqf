@@ -124,7 +124,10 @@ if !(_adjustments isEqualTo []) then {
 [_unit, _opioidEffectAdjustment, _deltaT, _syncValues] call FUNC(updateOpioidEffect);
 [_unit, POISON_DECREASE, _deltaT, _syncValues] call FUNC(handlePoisoning);
 
-private _aceAnFatigue = [0, ACEGVAR(advanced_fatigue,anFatigue)] select (ACEGVAR(advanced_fatigue,enabled));
+private _aceAnFatigue = 0;
+if (_unit getVariable [QGVAR(fatigueEnabled), false]) then {
+    _aceAnFatigue = [_unit] call FUNC(returnFatigue);
+};
 
 private _heartRate = [_unit, _hrTargetAdjustment, 0, _bloodVolume, _aceAnFatigue, _deltaT, _syncValues] call FUNC(handleCardiacFunction);
 
@@ -143,7 +146,6 @@ private _woundBloodLoss = GET_WOUND_BLEEDING(_unit);
 // Vasoconstriction from Wound Blood Loss and Alpha Adjustment
 _vasoconstriction = 1 + (0.5 * _woundBloodLoss) + _alphaFactorAdjustment;
 _unit setVariable [VAR_VASOCONSTRICTION, (1.8 min (0.2 max _vasoconstriction)), _syncValues];
-
 
 private _bloodPressure = [_unit] call EFUNC(circulation,getBloodPressure);
 _unit setVariable [VAR_BLOOD_PRESS, _bloodPressure, _syncValues];
