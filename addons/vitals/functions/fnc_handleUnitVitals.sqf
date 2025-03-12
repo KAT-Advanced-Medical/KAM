@@ -124,10 +124,9 @@ if !(_adjustments isEqualTo []) then {
 [_unit, _opioidEffectAdjustment, _deltaT, _syncValues] call FUNC(updateOpioidEffect);
 [_unit, POISON_DECREASE, _deltaT, _syncValues] call FUNC(handlePoisoning);
 
-private _aceAnFatigue = if ((_unit getVariable [QGVAR(enableFatigue), false]) && (ACEGVAR(advanced_fatigue,anFatigue) isEqualTypeAny [0, 1e39])) then {
-    ACEGVAR(advanced_fatigue,anFatigue)
-} else {
-    0
+private _aceAnFatigue = 0;
+if (_unit getVariable [QGVAR(fatigueEnabled), false]) then {
+    _aceAnFatigue = [_unit] call FUNC(returnFatigue);
 };
 
 private _heartRate = [_unit, _hrTargetAdjustment, 0, _bloodVolume, _aceAnFatigue, _deltaT, _syncValues] call FUNC(handleCardiacFunction);

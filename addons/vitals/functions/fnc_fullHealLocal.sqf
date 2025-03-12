@@ -19,13 +19,8 @@ params ["_patient"];
 
 _patient setVariable [QGVAR(simpleMedical), false, true];
 _patient setVariable [QGVAR(respiratoryDepth), DEFAULT_RESPIRATORY_DEPTH, true];
+_patient setVariable [QGVAR(fatigueEnabled), (missionNamespace getVariable [QACEGVAR(advanced_fatigue,enabled), false]), true];
 
 if (GVAR(enableSimpleMedical)) then {
     _patient setVariable [QGVAR(simpleMedical), true, true];
-};
-
-if (("RemoveStamina" call ACEFUNC(common,isModLoaded)) || (isNil QACEGVAR(advanced_fatigue,enabled))) then {
-    _patient setVariable [QGVAR(fatigueEnabled), false, true];
-} else {
-    _patient setVariable [QGVAR(fatigueEnabled), (ACEGVAR(advanced_fatigue,enabled)), true];
 };
