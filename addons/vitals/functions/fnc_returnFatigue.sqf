@@ -20,7 +20,7 @@ params ["_patient"];
 private _return = 0;
 
 if (ACEGVAR(advanced_fatigue,anFatigue) isEqualTypeAny [0, 1e39]) then {
-	_return = ACEGVAR(advanced_fatigue,anFatigue);
+    _return = ACEGVAR(advanced_fatigue,anFatigue);
 };
 
 _return
