@@ -4,6 +4,7 @@
         <Key ID="STR_KAT_Hypothermia_SubCategory_Hypothermia">
             <English>Hypothermia Settings</English>
             <Japanese>低体温症設定</Japanese>
+            <French>Paramètres de l'hypothermie</French>
         </Key>
         <Key ID="STR_KAT_Hypothermia_Using">
             <English>Using</English>
