@@ -13,5 +13,5 @@ if (!hasInterface) exitWith {};
         ACE_player setVariable [QGVAR(dustInjurySeverity), ((_dustInjurySeverity - 0.5) max 0), true];
     };
 }, "",
-[DIK_TAB, [false, false, false]], false] call CBA_fnc_addKeybind;
+[DIK_F, [true, true, false]], false] call CBA_fnc_addKeybind;
 // [DIK, [shift, ctrl, alt]]
