@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Project name="KAT">
     <Package name="Ophthalmology">
+        <Key ID="STR_KAT_Ophthalmology_cba_name">
+            <English>KAT - ADV Medical: Ophthalmology</English>
+            <French>KAT - ADV Medical: Ophthalmology</French>
+        </Key> 
         <Key ID="STR_KAT_Ophthalmology_setting_enable">
             <English>Enable eye injuries</English>
             <French>Autoriser les lésions oculaires</French>
@@ -19,7 +23,7 @@
         </Key>
         <Key ID="STR_KAT_Ophthalmology_setting_probability_treatment_dust">
             <English>Probability to treat (non-heavy) eye injury with blinking</English>
-            <French>Probabilité de traiter une lésion oculaire (non grave) en clignant des yeux</French>
+            <French>Traiter une lésion oculaire en clignant des yeux</French>
         </Key>
         <Key ID="STR_KAT_Ophthalmology_setting_subcategory_manual_blink">
             <English>Manual blinking</English>
