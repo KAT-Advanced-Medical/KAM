@@ -40,7 +40,7 @@
         <Key ID="STR_KAT_Vitals_BASIC_DIAGNOSTIC_TIME">
             <English>Basic Vitals Kit Time</English>
             <Japanese>基本型バイタル診断キットの所要時間</Japanese>
-            <French>Temps nécessaire pour le kit de diagnostic vital de base</French>
+            <French>Temps pour le kit de diagnostic vital de base</French>
             <Chinese>基本生命體徵套件時間</Chinese>
             <Chinesesimp>基本生命体征套件时间</Chinesesimp>
         </Key>
