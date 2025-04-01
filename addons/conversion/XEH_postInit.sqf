@@ -8,9 +8,9 @@
     private _group = createGroup [(side player), true]; 
     private _previousUnit = player;
     private _setName = name _previousUnit;
-    private _loadout = getUnitLoadout player;
+    private _loadout = [player] call CBA_fnc_getLoadout;
     private _unit = _group createUnit [_type, [0,0,0], [], 0, "NONE"];
-    _unit setUnitLoadout _loadout;
+    [player, _loadout] call CBA_fnc_setLoadout;
 
     _previousUnit setVariable [QEGVAR(vitals,simpleMedical), false, true];
     _previousUnit setVariable [QGVAR(currentConverted), true, true];
