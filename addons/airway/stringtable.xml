@@ -1309,7 +1309,7 @@
             <Finnish>aika manuaaliselle imupumpulle</Finnish>
             <German>Behandlungszeit für die manuelle Absaugpumpe</German>
             <Russian>Время работы ручного всасывающего насоса</Russian>
-            <French>Durée d'aspiration avec la pompe d'aspiration manuelle</French>
+            <French>Durée d'aspiration via la pompe d'aspiration manuelle</French>
             <Portuguese>Tempo de uso da Bomba de Sucção Manual</Portuguese>
             <Dutch>Behandelstijd van een handmatige suctiepomp</Dutch>
             <Italian>Tempo per la pompa di aspirazione manuale</Italian>
@@ -1649,7 +1649,7 @@
             <Chinese>復甦姿勢 清除異物所需時間</Chinese>
             <Japanese>回復体位による異物排出にかかる時間</Japanese>
             <Norwegian>Tid i stabilt sideleie for å bli kvitt okklusjonen</Norwegian>
-            <French>Temps pour retirer l'occlusion en position latérale de sécurité</French>
+            <French>Temps pour retirer l'occlusion en PLS</French>
             <Finnish>Palautuminen Asento-aika tyhjennystukoksen poistamiseksi</Finnish>
             <Russian>Время бокового положения для дренирования окклюзии</Russian>
             <German>Stabile Seitenlage: Benötigte Zeit zum Entgegenwirken einer Verstopfung</German>

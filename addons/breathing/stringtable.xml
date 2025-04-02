@@ -129,7 +129,7 @@
             <Chinesesimp>心脏骤停时减少SpO2的下降</Chinesesimp>
             <Russian>Включить снижение SpO2 при остановке сердца</Russian>
             <Korean>심정지 중 SpO2 감소 활성화</Korean>
-            <French>Activer la réduction de la SpO2 pendant l’arrêt cardiaque</French>
+            <French>Réduction de la SpO2 pendant l’arrêt cardiaque</French>
             <Polish>Włącz utratę SpO2 w trakcie zatrzymania akcji serca</Polish>
             <Italian>Autorizza la riduzione della SpO2 nell'arresto cardiaco.</Italian>
             <Czech>Povolit redukci SpO2 při zástavě srdce</Czech>
@@ -594,7 +594,7 @@
             <Chinesesimp>允许意识清醒的最低SpO2值</Chinesesimp>
             <Czech>Stabilní hodnota SpO2 pro získání vědomí</Czech>
             <Korean>의식이 돌아오는 SpO2의 값</Korean>
-            <French>Valeur stable de SpO2 requise pour reprendre conscience</French>
+            <French>Valeur de SpO2 requise pour reprendre conscience</French>
             <Turkish>Bilinç kazanmak için gerekli SpO2 değeri</Turkish>
             <Italian>Valore stabile di Sp02 per riprendere conoscienza</Italian>
             <Russian>Стабильное значение SpO2 для прихода в сознание</Russian>
@@ -888,7 +888,7 @@
             <Chinesesimp>血气胸/张力性气胸治疗最低等级</Chinesesimp>
             <Czech>Minimální úroveň zdravotnického výcviku</Czech>
             <Korean>혈기흉 치료를 위한 최소 의료레벨 수준</Korean>
-            <French>Niveau d'entrainement requis pour traiter un hémopneumothorax / pneumothorax sous tension</French>
+            <French>Niveau pour un hémo/pneumothorax sous tension</French>
             <Turkish>Hemotoraks / Gerilim Pnömotoraks Tedavisi Minimum Seviye</Turkish>
             <Italian>Livello minimo per il trattamento di un emo/pneumotorace iperteso</Italian>
             <Russian>Лечение гемоторакса/напряженного пневмоторакса Минимальный уровень</Russian>
@@ -954,7 +954,7 @@
         <Key ID="STR_KAT_Breathing_SETTING_PneumothoraxDamageThreshold_DamageTaken">
             <English>Increase pneumothorax chance based on damage</English>
             <Japanese>ダメージに応じた気胸発生率の増加</Japanese>
-            <French>Augmente le risque de pneumothorax en fonction des dégâts</French>
+            <French>Augmente le risque de pneumothorax</French>
             <Korean>데미지에 따른 기흉 확률 증가</Korean>
             <German>Erhöht die Wahrscheinlichkeit eines Pneumothorax basierend auf dem Schaden</German>
             <Portuguese>Aumentar a probabilidade de pneumotórax em função do dano</Portuguese>
@@ -1048,7 +1048,7 @@
             <Spanish>Cantidad de sangrado por Hemotórax</Spanish>
             <Italian>Quantità di sanguinamento interno da emopneumotorace</Italian>
             <Portuguese>Quantidade de hemorragia interna causada por hemotórax</Portuguese>
-            <French>Quantité de saignements internes de l'hémopneumothorax</French>
+            <French>Quantité de saignements internes d'un pneumothorax</French>
             <Polish>Siła krwawienia krwiaka</Polish>
             <German>Hämopneumothorax inneres Bluten menge </German>
             <Czech>Míra vnitřního krvácení při hemotoraxu</Czech>
@@ -1108,7 +1108,7 @@
         <Key ID="STR_KAT_Breathing_SETTING_TensionHemothoraxAlwaysVisible">
             <English>Tension pneumothorax and hemothorax always visible</English>
             <Japanese>緊張性気胸と血胸を常に表示</Japanese>
-            <French>Visibilité d'un Pneumothorax sous tension et d'un hémothorax</French>
+            <French>Visibilité d'un hémo/pneumothorax sous tension</French>
             <Korean>긴장성 기흉 및 혈기흉 항상 표시</Korean>
             <German>Spannungspneumothorax und Hämothorax immer sichtbar</German>
             <Portuguese>Pneumotórax hipertensivo e hemotórax sempre visíveis</Portuguese>
