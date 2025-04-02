@@ -2446,7 +2446,7 @@
             <Japanese>CPR中の除細動器パッド貼り付けの許可</Japanese>
             <German>Anbringung von AED Pads während laufender HLW zulassen</German>
             <Spanish>Permitir la aplicación de parche AED durante la realización de RCP</Spanish>
-            <French>Autoriser l'application des électrodes de l'AED pendant la RCP</French>
+            <French>Application des électrodes de l'AED pendant la RCP</French>
             <Portuguese>Permitir aplicação de pás do desfibrilador durante RCP</Portuguese>
             <Dutch>Sta het plaatsen van AED pads tijdens CPR toe</Dutch>
             <Italian>Consentire l'applicazione dei pad AED durante la RCP</Italian>
@@ -2502,7 +2502,7 @@
         <Key ID="STR_KAT_Circulation_SETTING_AEDX_VitalsMonitor_AttachTime">
             <English>Attach AED-X Vitals Monitor Time</English>
             <Japanese>AED-Xモニターの取り付け時間</Japanese>
-            <French>Temps pour attacher les capteurs des signes vitaux à l'AED-X</French>
+            <French>Attacher du moniteur des signes vitaux AED-X</French>
             <Korean>X-시리즈 자동심장충격기의 환자감시장치 부착 시간</Korean>
             <German>Zeit zum Anbringen des AED-X Vitalmonitors</German>
             <Portuguese>Tempo para conectar o monitor de sinais vitais do DEA-X</Portuguese>
@@ -2517,7 +2517,7 @@
         <Key ID="STR_KAT_Circulation_SETTING_AEDX_VitalsMonitor_DetachTime">
             <English>Detach AED-X Vitals Monitor Time</English>
             <Japanese>AED-Xモニターの取り外し時間</Japanese>
-            <French>Temps pour détacher les capteurs des signes vitaux à l'AED-X</French>
+            <French>Détacher les capteurs des signes vitaux à l'AED-X</French>
             <Korean>X-시리즈 자동심장충격기의 환자감시장치 해제 시간</Korean>
             <German>Zeit zum Entfernen des AED-X Vitalmonitors</German>
             <Portuguese>Tempo para desconectar o monitor de sinais vitais do DEA-X</Portuguese>
@@ -2596,7 +2596,7 @@
             <English>Max CPR Chance for Doctors</English>
             <Italian>Massima probabilità RCP per i dottori</Italian>
             <Czech>Max šance úspěchu resuscitace pro Doktory</Czech>
-            <French>Chance maximale de succès de la RCP pour les médecins</French>
+            <French>Probabilité de RCP maximale pour les médecins</French>
             <Polish>Maksymalna szansa RKO dla Doktorów</Polish>
             <Korean>군의관의 최대 CPR 확률</Korean>
             <German>Maximale HLW-Erfolgsrate für Ärzte</German>
@@ -2613,7 +2613,7 @@
             <English>Max CPR Chance for Regular medics</English>
             <Czech>Max šance úspěchu resuscitace pro Zdravotníky</Czech>
             <Italian>Massima probabilità RCP per i medici</Italian>
-            <French>Chance maximale de succès de la RCP pour les infirmiers</French>
+            <French>Probabilité de RCP maximale pour les infirmiers</French>
             <Polish>Maksymalna szansa RKO dla Medyków</Polish>
             <Korean>의무병의 최대 CPR 확률</Korean>
             <German>Maximale HLW-Erfolgsrate für reguläre Sanitäter</German>
@@ -2630,7 +2630,7 @@
             <English>Max CPR Chance for Default</English>
             <Italian>Massima probabilità RCP per i default</Italian>
             <Czech>Max šance úspěchu resuscitace pro Základní</Czech>
-            <French>Chance maximale de succès de la RCP par défaut</French>
+            <French>Probabilité de RCP maximale par défaut</French>
             <Polish>Maksymalna szansa domyślnie</Polish>
             <Korean>일반병의 최대 CPR 확률</Korean>
             <German>Maximale Standard HLW-Erfolgsrate</German>
@@ -2647,7 +2647,7 @@
             <English>Min CPR Chance for Doctors</English>
             <Italian>Minima probabilità RCP per i dottori</Italian>
             <Czech>Min šance úspěchu resuscitace pro Doktory</Czech>
-            <French>Chance minimale de succès de la RCP pour les médecins</French>
+            <French>Probabilité de RCP minimale pour les médecins</French>
             <Polish>Minimalna szansa RKO dla Doktorów</Polish>
             <Korean>군의관의 최소 CPR 확률</Korean>
             <German>Minimale HLW-Erfolgsrate für Ärzte</German>
@@ -2664,7 +2664,7 @@
             <English>Min CPR Chance for Regular medics</English>
             <Czech>Min šance úspěchu resuscitace Zdravotníky</Czech>
             <Italian>Minima probabilità RCP per i medici</Italian>
-            <French>Chance minimale de succès de la RCP pour les infirmiers</French>
+            <French>Probabilité de RCP minimale pour les infirmiers</French>
             <Polish>Minimalna szansa RKO dla Medyków</Polish>
             <Korean>의무병의 최소 CPR 확률</Korean>
             <German>Minimale HLW-Erfolgsrate für reguläre Sanitäter</German>
@@ -2681,7 +2681,7 @@
             <English>Min CPR Chance for Default</English>
             <Italian>Minima probabilità RCP per i default</Italian>
             <Czech>Min šance úspěchu resuscitace pro Základní</Czech>
-            <French>Chance minimale de succès de la RCP par défaut</French>
+            <French>Probabilité de RCP minimale par défaut</French>
             <Polish>Minimalna szansa RKO domyślnie</Polish>
             <Korean>일반병의 최소 CPR 확률</Korean>
             <German>Minimale Standard HLW-Erfolgsrate</German>
@@ -2938,7 +2938,7 @@
             <Polish>Używaj grup krwi do pobieranie krwi?</Polish>
             <Korean>혈액 채취에 혈액형을 사용합니까?</Korean>
             <Turkish>Kan almak için Kan Grupları kullanılsın mı?</Turkish>
-            <French>Utiliser les groupes sanguin pour le prélèvement de sang?</French>
+            <French>Utiliser les groupes sanguins pour les prises de sang?</French>
             <Chinese>抽血時是否使用血型？</Chinese>
             <Chinesesimp>抽血时是否使用血型？</Chinesesimp>
             <Italian>Usare il gruppo sanguigno per il prelievo del sangue?</Italian>
@@ -3111,7 +3111,7 @@
             <Chinese>心律是否可能惡化</Chinese>
             <Chinesesimp>心律是否可能恶化</Chinesesimp>
             <Japanese>調律状態が悪化するようにする</Japanese>
-            <French>Possibilité de détérioration de la fonction cardiaque</French>
+            <French>Risque de détérioration</French>
             <Korean>심장기능이 악화될 수 있음</Korean>
             <German>Kann sich verschlechtern</German>
             <Portuguese>Pode deteriorar</Portuguese>
@@ -3126,7 +3126,7 @@
             <Chinese>隨機惡化最長時間</Chinese>
             <Chinesesimp>随机恶化最长时间</Chinesesimp>
             <Japanese>ランダムな調律悪化の最長遅延時間</Japanese>
-            <French>Délai aléatoire maximum de détérioration de la fonction cardiaque</French>
+            <French>Durée maximale de la détérioration aléatoire</French>
             <Korean>심장기능 무작위 악화 시간 최대값</Korean>
             <German>Maximale zufällige Verschlechterungszeit</German>
             <Portuguese>Tempo máximo de deterioração aleatória</Portuguese>
@@ -3141,7 +3141,7 @@
             <Chinese>隨機惡化時間權重</Chinese>
             <Chinesesimp>随机恶化时间权重</Chinesesimp>
             <Japanese>ランダムな調律悪化の時間的重みづけ</Japanese>
-            <French>Poids temporel de la détérioration de la fonction cardiaque</French>
+            <French>Poids de la durée de détérioration aléatoire</French>
             <Korean>심장기능 무작위 악화 시간 가중치</Korean>
             <German>Zeitgewichtung der zufälligen Verschlechterung</German>
             <Portuguese>Peso de tempo de deterioração aleatória</Portuguese>
@@ -3161,7 +3161,7 @@
             <Chinese>治療後是否惡化</Chinese>
             <Chinesesimp>治疗后是否恶化</Chinesesimp>
             <Japanese>治療後に調律状態が悪化するようにする</Japanese>
-            <French>Détérioration de la fonction cardiaque après le traitement</French>
+            <French>Détérioration après le traitement</French>
             <Korean>심장기능 치료 후 악화</Korean>
             <German>Verschlechterung nach der Behandlung</German>
             <Portuguese>Deteriorar após o tratamento</Portuguese>
@@ -3236,7 +3236,7 @@
             <Chinese>去顫後恢復自主循環機率</Chinese>
             <Chinesesimp>除颤后恢复自主循环概率</Chinesesimp>
             <Japanese>AED後の自己心拍再開(ROSC)の確率</Japanese>
-            <French>Chance de rretour en ciculation spontannée après AED</French>
+            <French>Chance de retour en ciculation spontannée après AED</French>
             <Korean>심장충격기 사용 후 자가회복 확률</Korean>
             <German>Chance für ROSC nach AED (Rückkehr des spontanen Kreislaufs)</German>
             <Portuguese>Chance de retorno da circulação espontânea após DEA</Portuguese>
@@ -3444,7 +3444,7 @@
         <Key ID="STR_KAT_Circulation_SETTING_AED_X_VitalsMonitor_BloodPressureInterval">
             <English>AED-X Vitals Monitor BP Measurement Interval</English>
             <Japanese>AED-Xモニター血圧測定間隔</Japanese>
-            <French>Intervalle de mesure de la pression artérielle du moniteur AED-X</French>
+            <French>Type de mesure de la BP du moniteur AED-X</French>
             <Korean>X-시리즈 자동심장충격기 환자감시장치 혈압 측정 간격</Korean>
             <German>AED-X Vitalmonitor BP-Messintervall</German>
             <Portuguese>Intervalo de medição da pressão arterial do monitor de sinais vitais do DEA-X</Portuguese>
@@ -3504,7 +3504,7 @@
         <Key ID="STR_KAT_Circulation_SETTING_AED_X_VitalsMonitor_BloodPressureInterval_Time">
             <English>AED-X Vitals Monitor BP Measurement Interval Time</English>
             <Japanese>血圧測定間隔の時間</Japanese>
-            <French>Temps d'intervalle de mesure de la pression artérielle du moniteur AED-X</French>
+            <French>Temps d'intervalle de mesure de la BP du moniteur AED-X</French>
             <Korean>X-시리즈 자동심장충격기 환자감시장치 혈압 측정 간격 시간</Korean>
             <German>AED-X Vitalmonitor BP-Messintervallzeit</German>
             <Portuguese>Tempo de intervalo de medição da pressão arterial do monitor de sinais vitais do DEA-X</Portuguese>
@@ -3536,7 +3536,7 @@
             <Russian>Вероятность тампонады при проникающих ранениях</Russian>
             <Spanish>Probabilidad de taponamiento en heridas penetrantes</Spanish>
             <Japanese>穿通創におけるタンポナーデの可能性</Japanese>
-            <French>Chance de tamponnade au cours d'une blessure pénétrante</French>
+            <French>Chance de tamponnade lors de plaies pénétrantes</French>
             <Portuguese>Probabilidade de tamponamento em ferimentos penetrantes</Portuguese>
             <Dutch>Kans voor tamponade door penetrerende wonden</Dutch>
             <German>Möglichkeit einer Tamponade bei penetrierenden Wunden</German>
@@ -3608,7 +3608,7 @@
         </Key>
         <Key ID="STR_KAT_Circulation_treatmentTime_BPCuff">
             <English>Time to measure BP with BP Cuff</English>
-            <French>Heure de l'examen de la tension artérielle à l'aide d'un brassard</French>
+            <French>Temps pour mesurer la tension via le brassard</French>
             <Chinese>用血壓計量血壓所需時間</Chinese>
             <Japanese>血圧カフによる血圧測定の所要時間</Japanese>
         </Key>
@@ -3638,7 +3638,7 @@
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_StethHR">
             <English>Allow Stethoscope HR check</English>
-            <French>Autorisation de prendre le pouls à l'aide d'un stéthoscope.</French>
+            <French>Autorisation de prendre le pouls via un stéthoscope.</French>
             <Chinese>允許使用聽診器檢查心率</Chinese>
             <Japanese>聴診器による脈拍確認の許可</Japanese>
         </Key>
@@ -3650,7 +3650,7 @@
         </Key>
         <Key ID="STR_KAT_Circulation_treatmentTime_StethHR">
             <English>Time to measure HR with a Stethoscope</English>
-            <French>Temps nécessaire pour mesurer le pouls à l'aide d'un stéthoscope</French>
+            <French>Temps pour mesurer le pouls via un stéthoscope</French>
             <Chinese>用聽診器測量心率所需時間</Chinese>
             <Japanese>聴診器による脈拍測定の所要時間</Japanese>
         </Key>
@@ -3668,7 +3668,7 @@
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_hardcoreDiagnose">
             <English>Enable Hardcore HR and BP Diagnose</English>
-            <French>Permettre un diagnostic approfondi de la fréquence cardiaque et de la tension artérielle</French>
+            <French>Diagnostic approfondi de la HR et de la BP</French>
             <Chinese>啟用硬核心率和血壓診斷</Chinese>
             <Japanese>ハードコア脈拍および血圧診断を有効化</Japanese>
         </Key>
