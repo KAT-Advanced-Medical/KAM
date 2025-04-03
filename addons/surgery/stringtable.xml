@@ -1381,7 +1381,7 @@
             <Italian>Livello medico richiesto per la riduzione ortopedica chiusa</Italian>
             <Polish>Poziom wyszkolenia medycznego potrzebny do zamkniętej redukcji</Polish>
             <Czech>Zdravotnická úroveň potřebná pro uzavřenou repozici</Czech>
-            <French>Niveau médical requis pour effectuer une réduction fermée</French>
+            <French>Niveau médical requis pour une réduction fermée</French>
             <Korean>폐쇄정복을 하는 데 필요한 의료 레벨 수준</Korean>
             <German>Erforderliches medizinisches Training für die geschlossene Reduktion</German>
             <Japanese>非観血的整復術の許可</Japanese>
@@ -1398,7 +1398,7 @@
             <Italian>Livello medico richiesto per l'azione chirurgica</Italian>
             <Polish>Poziom wyszkolenia medycznego potrzebny do akcji chirurgicznych</Polish>
             <Czech>Zdravotnická úroveň potřebná pro chirurgické akce</Czech>
-            <French>Niveau médical requis pour effectuer une action chirurgicale</French>
+            <French>Niveau médical requis pour une action chirurgicale</French>
             <Korean>수술을 하는 데 필요한 의료 레벨 수준</Korean>
             <German>Erforderliches medizinisches Training für chirurgische Maßnahmen</German>
             <Japanese>手術の許可</Japanese>
@@ -1436,7 +1436,7 @@
             <Chinesesimp>执行REBOA操作的时间</Chinesesimp>
             <Chinese>執行REBOA操作的時間</Chinese>
             <Dutch>Benodigde tijd om REBOA acties uit te voeren</Dutch>
-            <French>Temps nécessaire pour effectuer les actions du REBOA</French>
+            <French>Temps pour effectuer les actions du REBOA</French>
             <Spanish>Tiempo para realizar acciones de REBOA</Spanish>
             <Italian>Tempo per eseguire le azioni REBOA</Italian>
             <German>Zeitaufwand für die Durchführung von REBOA-Aktionen</German>
@@ -1458,7 +1458,7 @@
             <Chinesesimp>超声检查所需的医疗水平</Chinesesimp>
             <Chinese>超音波檢查需要的醫療等級</Chinese>
             <Dutch>Benodigde training voor gebruik mobiele echograaf</Dutch>
-            <French>Niveau médical requis pour effectuer un ultrason</French>
+            <French>Niveau médical pour effectuer un ultrason</French>
             <Spanish>Permitir Ultrasonido</Spanish>
             <Italian>Consenti Ecografia</Italian>
             <German>Ultraschall zulassen</German>
@@ -1480,7 +1480,7 @@
             <Chinesesimp>执行超声检查的时间</Chinesesimp>
             <Chinese>執行 超音波 檢查的時間</Chinese>
             <Dutch>Benodigde tijd voor het gebruik van een mobiele echograaf</Dutch>
-            <French>Temps nécessaire pour effectuer les actions de l'ultrason</French>
+            <French>Temps pour effectuer les actions de l'ultrason</French>
             <Spanish>Tiempo para realizar acciones de Ultrasonidos</Spanish>
             <Italian>Tempo per eseguire le azioni Ecografia</Italian>
             <German>Dauer von Ultraschallmaßnahmen</German>
@@ -1502,7 +1502,7 @@
             <Chinesesimp>心包穿刺术所需的医疗水平</Chinesesimp>
             <Chinese>心包穿刺術需要的醫療等級</Chinese>
             <Dutch>Benodigde training voor pericardiale drainage</Dutch>
-            <French>Niveau médical requis pour le prélèvement péricardique</French>
+            <French>Niveau médical pour le prélèvement péricardique</French>
             <Spanish>Permitir realizar Pericardiocentesis</Spanish>
             <Italian>Consenti Puntura Pericardica</Italian>
             <German>Perikardpunktion zulassen</German>
@@ -1743,7 +1743,7 @@
             <Italian>Tempo per applicare una medicazione NPWT</Italian>
             <Polish>Czas potrzebny do nałożenie opatrunku próżniowego (NPWT)</Polish>
             <Czech>Čas k použití NPWT</Czech>
-            <French>Temps pour appliquer un pansement par pression négative</French>
+            <French>Temps pour un pansement par pression négative</French>
             <Korean>음압상처치료 적용 시간</Korean>
             <German>Zeit zum Anlegen eines NPWT-Verbandes</German>
             <Japanese>NPWT被覆の所要時間</Japanese>

@@ -1104,7 +1104,7 @@
             <German>Trauma Sektion Gegenstände &amp; Anzahl</German>
             <Japanese>外傷枠のアイテムと数量</Japanese>
             <Russian>Предметы и количество травматологического раздела</Russian>
-            <French>Objets et quantité de la section de traumatologie</French>
+            <French>Objects &amp; Quantité de la section de traumatologie</French>
             <Dutch>Trauma sectie items &amp; hoeveelheden</Dutch>
             <Italian>Articoli e quantità della sezione trauma</Italian>
             <Chinese>創傷物品與數量</Chinese>
@@ -1116,7 +1116,7 @@
             <German>Bandagen Sektion Gegenstände &amp; Anzahl</German>
             <Japanese>包帯枠のアイテムと数量</Japanese>
             <Russian>Предметы и количество в разделе бинтов</Russian>
-            <French>Objets et quantité de la section de bandages</French>
+            <French>Objects &amp; Quantité de la section de bandages</French>
             <Dutch>Verbandssectie items &amp; hoeveelheden</Dutch>
             <Italian>Articoli e quantità della sezione bende</Italian>
             <Chinese>繃帶物品與數量</Chinese>
@@ -1128,7 +1128,7 @@
             <German>Schmerzmittel Sektion Gegenstände &amp; Anzahl</German>
             <Japanese>鎮痛枠のアイテムと数量</Japanese>
             <Russian>Предметы и количество раздела обезболивающих</Russian>
-            <French>Objets et quantité de la section de régulation de la douleur</French>
+            <French>Objects &amp; Quantité de la régulation de la douleur</French>
             <Dutch>Pijnbestrijdingssectie items &amp; hoeveelheden</Dutch>
             <Italian>Articoli e quantità della sezione gestione del dolore</Italian>
             <Chinese>止痛物品與數量</Chinese>
@@ -1140,7 +1140,7 @@
             <German>Beatmungs Sektion Gegenstände &amp; Anzahl</German>
             <Japanese>呼吸枠のアイテムと数量</Japanese>
             <Russian>Предметы и количество раздела дыхательной системы</Russian>
-            <French>Objets et quantité de la section d'articles respiratoires</French>
+            <French>Objects &amp; Quantité des articles respiratoires</French>
             <Dutch>Ademhalingssectie items &amp; hoeveelheden</Dutch>
             <Italian>Articoli e quantità della sezione respirazione</Italian>
             <Chinese>呼吸物品與數量</Chinese>
@@ -1152,7 +1152,7 @@
             <German>Atemwege Sektion Gegenstände &amp; Anzahl</German>
             <Japanese>気道枠のアイテムと数量</Japanese>
             <Russian>Предметы и количество раздела дыхательных путей</Russian>
-            <French>Objets et quantité de la section des voies aériennes</French>
+            <French>Objects &amp; Quantité des voies aériennes</French>
             <Dutch>Luchtweg sectie items &amp; hoeveelheden</Dutch>
             <Italian>Articoli e quantità della sezione vie aeree</Italian>
             <Chinese>呼吸道物品與數量</Chinese>
@@ -1164,7 +1164,7 @@
             <German>Arzneimittel Sektion Gegenstände &amp; Anzahl</German>
             <Japanese>薬品枠のアイテムと数量</Japanese>
             <Russian>Предметы и количество раздела фармацевтики</Russian>
-            <French>Objets et quantités de la section pharmaceutique</French>
+            <French>Objects &amp; Quantités de la section pharmaceutique</French>
             <Dutch>Pharmaceutische sectie items &amp; hoeveelheden</Dutch>
             <Italian>Articoli e quantità della sezione farmaceutica</Italian>
             <Chinese>藥物物品與數量</Chinese>
@@ -1176,7 +1176,7 @@
             <German>Flüssigkeit Sektion Gegenstände &amp; Anzahl</German>
             <Japanese>輸液枠のアイテムと数量</Japanese>
             <Russian>Предметы и количество раздела жидкостей</Russian>
-            <French>Objets et quantités de la section des fluides</French>
+            <French>Objects &amp; Quantités de la section des fluides</French>
             <Dutch>Vloeistofsectie items &amp; hoeveelheden</Dutch>
             <Italian>Articoli e quantità della sezione fluidi</Italian>
             <Chinese>液體物品與數量</Chinese>
@@ -1188,7 +1188,7 @@
             <German>Vermischte Sektion Gegenstände &amp; Anzahl</German>
             <Japanese>雑多枠のアイテムと数量</Japanese>
             <Russian>Предметы и количества прочего раздела</Russian>
-            <French>Objets et quantités de la section autres</French>
+            <French>Objects &amp; Quantités de la section autres</French>
             <Dutch>Overige sectie items &amp; hoeveelheden</Dutch>
             <Italian>Articoli e quantità della sezione miscellanea</Italian>
             <Chinese>雜項物品與數量</Chinese>

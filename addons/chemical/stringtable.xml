@@ -990,7 +990,7 @@
         <Key ID="STR_KAT_Chemical_SETTING_gasMaskStaminaLoss">
             <English>Enable Stamina Loss when using Gas Mask</English>
             <Japanese>ガスマスク使用時のスタミナ減少を有効化</Japanese>
-            <French>Activer la perte d'endurance lors de l'utilisation du masque à gaz</French>
+            <French>Perte d'endurance avec l'utilisation du masque à gaz</French>
             <Chinese>啟用使用防毒面具時的體力流失</Chinese>
         </Key>
     </Package>
