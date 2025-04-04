@@ -3,7 +3,7 @@
 [QEGVAR(misc,handleRespawn), LINKFUNC(handleRespawn)] call CBA_fnc_addEventHandler;
 [QACEGVAR(medical_treatment,fullHealLocalMod), LINKFUNC(fullHealLocal)] call CBA_fnc_addEventHandler;
 
-["kat_conversion_convertCasualty", {
+[QGVAR(convertCasualty), {
     private _type = typeOf player; 
     private _group = createGroup [(side player), true]; 
     private _previousUnit = player;
@@ -17,7 +17,7 @@
 
     selectPlayer _unit; 
 
-    ["kat_conversion_unitTransfer", [_previousUnit]] call CBA_fnc_serverEvent;
+    [QGVAR(unitTransfer), [_previousUnit]] call CBA_fnc_serverEvent;
 
     _previousUnit setName _setName;
 
@@ -25,7 +25,7 @@
     deleteVehicle _unit;
 }] call CBA_fnc_addEventHandler;
 
-["kat_conversion_unitTransfer", {
+[QGVAR(unitTransfer), {
     params ["_previousUnit"];
     private _group2 = createGroup [(side _previousUnit), true]; 
     [_previousUnit] join _group2;
@@ -33,7 +33,7 @@
     [_previousUnit, true] call ACEFUNC(medical,setUnconscious);
 }] call CBA_fnc_addEventHandler;
 
-["kat_conversion_respawnTimer", {
+[QGVAR(respawnTimer), {
     params ["_time"];
     private _currentRespawnTime = playerRespawnTime;
     setPlayerRespawnTime _time;

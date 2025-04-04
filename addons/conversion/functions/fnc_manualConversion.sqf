@@ -17,4 +17,4 @@
 
  params ["_medic", "_patient"];
 
-["kat_conversion_convertCasualty", _patient] call CBA_fnc_localEvent;
+[QGVAR(convertCasualty), _patient] call CBA_fnc_localEvent;
