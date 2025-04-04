@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Project name="KAT">
     <Package name="Airway">
+        <Key ID="STR_KAT_Airway_cba_name">
+            <English>KAT - ADV Medical: Airway</English>
+        </Key> 
         <Key ID="STR_KAT_Airway_SETTING_ENABLE">
             <English>ACE-Airway injuries activated?</English>
             <German>ACE-Atemwegverletzungen aktiviert?</German>

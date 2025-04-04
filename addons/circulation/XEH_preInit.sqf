@@ -16,7 +16,7 @@ if (isServer) then {
     missionNamespace setVariable [QGVAR(resultCounter), 0];
 };
 
-#define CBA_SETTINGS_CAT "KAT - ADV Medical: Circulation"
+#define CBA_SETTINGS_CAT LSTRING(cba_name)
 
 [
     QGVAR(enable),

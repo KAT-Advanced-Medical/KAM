@@ -6,7 +6,7 @@ PREP_RECOMPILE_START;
 #include "XEH_PREP.hpp"
 PREP_RECOMPILE_END;
 
-#define CBA_SETTINGS_CAT "KAT - ADV Medical: Airway"
+#define CBA_SETTINGS_CAT LSTRING(cba_name)
 
 /*
 When a patient enters the unconscious state, there are two things that can happen.

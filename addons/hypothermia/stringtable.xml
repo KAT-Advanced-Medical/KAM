@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Project name="KAT">
     <Package name="Hypothermia">
+        <Key ID="STR_KAT_Hypothermia_cba_name">
+            <English>KAT - ADV Medical: Hypothermia</English>
+        </Key> 
         <Key ID="STR_KAT_Hypothermia_SubCategory_Hypothermia">
             <English>Hypothermia Settings</English>
             <Japanese>低体温症設定</Japanese>

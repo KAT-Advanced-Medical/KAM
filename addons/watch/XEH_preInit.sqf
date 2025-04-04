@@ -8,7 +8,7 @@ PREP_RECOMPILE_END;
 
 ADDON = true;
 
-#define CBA_SETTINGS_CAT "KAT - ADV Medical: Watch"
+#define CBA_SETTINGS_CAT LSTRING(cba_name)
 
 [
     QGVAR(temperatureUnit),

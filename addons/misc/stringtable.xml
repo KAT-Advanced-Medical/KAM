@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Project name="KAT">
     <Package name="Misc">
+        <Key ID="STR_KAT_Misc_cba_name">
+            <English>KAT - ADV Medical: Misc</English>
+        </Key> 
         <Key ID="STR_KAT_Misc_Kat_Equipment">
             <English>KAT Equipment</English>
             <Spanish>Equipamiento KAT</Spanish>

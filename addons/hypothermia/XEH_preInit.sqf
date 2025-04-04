@@ -12,7 +12,7 @@ private _mapHighTemperature = if ((_mapPosition - 20) > 0) then { 27 + (-0.7 * (
 
 GVAR(positionTemperature) = [_mapPosition, _mapHighTemperature];
 
-#define CBA_SETTINGS_CAT "KAT - ADV Medical: Hypothermia"
+#define CBA_SETTINGS_CAT LSTRING(cba_name)
 
 [
     QGVAR(hypothermiaActive),

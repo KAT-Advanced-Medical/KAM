@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Project name="KAT">
     <Package name="Breathing">
+        <Key ID="STR_KAT_Breathing_cba_name">
+            <English>KAT - ADV Medical: Breathing</English>
+        </Key> 
         <Key ID="STR_KAT_Breathing_SETTING_ENABLE">
             <English>Activate Breathing Module</English>
             <Spanish>Activar el módulo de respiración</Spanish>
