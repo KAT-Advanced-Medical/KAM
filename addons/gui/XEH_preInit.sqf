@@ -88,3 +88,5 @@ private _categoryColors = [ACELSTRING(medical,Interface_Category), format ["| %1
         false // isGlobal
     ] call CBA_fnc_addSetting;
 } forEach _damageColors;
+
+ADDON = true;
