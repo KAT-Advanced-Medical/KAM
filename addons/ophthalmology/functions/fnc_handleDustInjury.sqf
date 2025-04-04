@@ -31,7 +31,7 @@ if (_cause in ["dust", "rotorWash"]) then {
 
             _unit setVariable [QGVAR(dustInjuryHeavy), ((_dustInjuryHeavy + (random 1)) min 5), true];
         } else {
-            _unit setVariable [QGVAR(_dustInjuryLight), ((_dustInjuryLight + (random 1)) min 5), true];
+            _unit setVariable [QGVAR(dustInjuryLight), ((_dustInjuryLight + (random 1)) min 5), true];
         };
 
         if (GET_DUST_INJURY(_unit) > 5) then {
