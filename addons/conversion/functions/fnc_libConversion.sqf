@@ -17,7 +17,7 @@
 
 params ["_patient"];
 
-private _storageAreas = (([getPos _patient] call KPLIB_fnc_getNearestFob) nearobjects (GRLIB_fob_range)) select {(_x getVariable ["KP_liberation_storage_type",-1]) == 0};
+private _storageAreas = (([getPos _patient] call KPLIB_fnc_getNearestFob) nearObjects (GRLIB_fob_range)) select {(_x getVariable ["KP_liberation_storage_type",-1]) == 0};
 private _crate = [KP_liberation_supplyCrate, GVAR(enableLiberationConversionGain), [(position _patient) select 0, (position _patient) select 1, 10000]] call KPLIB_fnc_createCrate;
 
 {

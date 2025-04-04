@@ -20,6 +20,6 @@ params ["_patient"];
 if ((missionNamespace getVariable ["GRLIB_fob_range", -1]) == -1) exitWith { true };
 if !(GVAR(enableLiberationConversion)) exitWith { true };
 if !(GVAR(enableConversionDistance)) exitWith { true };
-if ((_patient distance2d ([getPos _patient] call KPLIB_fnc_getNearestFob)) < enableLiberationConversionDistance) exitWith { true };
+if ((_patient distance2D ([getPos _patient] call KPLIB_fnc_getNearestFob)) < enableLiberationConversionDistance) exitWith { true };
 
 false
