@@ -273,7 +273,7 @@ private _dlg = uiNamespace getVariable ["KAT_Circulation_AEDX_Monitor_Display", 
         (_dlg displayCtrl IDC_DISPLAY_SPO2_TITLE) ctrlSetText "---";
     };
 
-    private _hasEtco2Monitor = !(GVAR(AEDX_MonitorTarget_Title) getVariable [QEGVAR(breathing,etco2Monitor),[]] isEqualTo []); 
+    private _hasEtco2Monitor = (GVAR(AEDX_MonitorTarget_Title) getVariable [QEGVAR(breathing,etco2Monitor),[]] isNotEqualTo []); 
     private _etco2 = GET_ETCO2(GVAR(AEDX_MonitorTarget_Title));
     private _breathrate = GET_BREATHING_RATE(GVAR(AEDX_MonitorTarget_Title));
 

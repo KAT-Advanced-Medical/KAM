@@ -12,10 +12,10 @@ class CfgAmmo {
         KAT_radius = 10;
         KAT_toxicLvL = 1;
         soundFakeFall[] = {"soundFakeFall0",0.25,"soundFakeFall1",0.25,"soundFakeFall2",0.25,"soundFakeFall3",0.25};
-        soundFakeFall0[] = {"a3\Sounds_F\weapons\falling_bomb\fall_01",3.16228,1,1000};
-        soundFakeFall1[] = {"a3\Sounds_F\weapons\falling_bomb\fall_02",3.16228,1,1000};
-        soundFakeFall2[] = {"a3\Sounds_F\weapons\falling_bomb\fall_03",3.16228,1,1000};
-        soundFakeFall3[] = {"a3\Sounds_F\weapons\falling_bomb\fall_04",3.16228,1,1000};
+        soundFakeFall0[] = {"a3\Sounds_F\weapons\falling_bomb\fall_01.wss",3.16228,1,1000};
+        soundFakeFall1[] = {"a3\Sounds_F\weapons\falling_bomb\fall_02.wss",3.16228,1,1000};
+        soundFakeFall2[] = {"a3\Sounds_F\weapons\falling_bomb\fall_03.wss",3.16228,1,1000};
+        soundFakeFall3[] = {"a3\Sounds_F\weapons\falling_bomb\fall_04.wss",3.16228,1,1000};
         whistleDist = 20;
         whistleOnFire = 2;
         submunitionAmmo = "KAT_SmokeShellArty";
@@ -55,7 +55,7 @@ class CfgAmmo {
         hit = 0;
         indirectHit = 0;
         indirectHitRange = 0;
-        soundHit[] = {"A3\Sounds_F\weapons\smokeshell\smoke_3",1.25893,1,100};
+        soundHit[] = {"A3\Sounds_F\weapons\smokeshell\smoke_3.wss",1.25893,1,100};
         explosionEffects = "KAT_TripWireGasEffect";
         CraterEffects = "";
         soundTrigger[] = {"",1,1};
@@ -100,7 +100,7 @@ class CfgAmmo {
         model = "\A3\Weapons_F\Ammo\Bomb_01_fly_F";
         nvLock = 1;
         simulation = "shotMissile";
-        soundFly[] = {"A3\Sounds_F\arsenal\weapons\Launchers\RPG32\Fly_RPG32",1,1,500};
+        soundFly[] = {"A3\Sounds_F\arsenal\weapons\launchers\RPG32\Fly_RPG32.wss",1,1,500};
         weaponLockSystem = 4;
         weaponType = "Default";
         triggerDistance = 250;
