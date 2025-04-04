@@ -63,8 +63,16 @@ private _o2 = _display displayCtrl 22810;
         _altitude ctrlSetText ([_altitudeValue, 1, 0] call CBA_fnc_formatNumber);
     };
 
-    _hr ctrlSetText ([GET_HEART_RATE(_unit), 1, 0] call CBA_fnc_formatNumber);
-    _o2 ctrlSetText ([GET_KAT_SPO2(_unit), 1, 0] call CBA_fnc_formatNumber);
+    if (GVAR(watchInaccuracy)) then {
+        private _fatigue = [0, (ACEGVAR(advanced_fatigue,anFatigue) * 2)] select (ACEGVAR(advanced_fatigue,enabled));
+        private _temperature = _unit getVariable [QEGVAR(hypothermia,unitTemperature), 37];
+
+        _hr ctrlSetText ([(GET_HEART_RATE(_unit) + ((2 * _fatigue) - (37 - _temperature))), 1, 0] call CBA_fnc_formatNumber);
+        _o2 ctrlSetText ([(GET_KAT_SPO2(_unit) - (_fatigue - (37 - _temperature))), 1, 0] call CBA_fnc_formatNumber); 
+    } else {
+        _hr ctrlSetText ([GET_HEART_RATE(_unit), 1, 0] call CBA_fnc_formatNumber);
+        _o2 ctrlSetText ([GET_KAT_SPO2(_unit), 1, 0] call CBA_fnc_formatNumber);
+    };
 
     private _hours = floor dayTime;
     private _minutes = floor ((dayTime - _hours) * 60);
