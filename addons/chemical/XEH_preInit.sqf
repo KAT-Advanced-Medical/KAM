@@ -84,4 +84,5 @@ PREP_RECOMPILE_END;
     [true],
     true
 ] call CBA_Settings_fnc_init;
+
 ADDON = true;
