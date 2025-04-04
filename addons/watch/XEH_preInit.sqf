@@ -6,8 +6,6 @@ PREP_RECOMPILE_START;
 #include "XEH_PREP.hpp"
 PREP_RECOMPILE_END;
 
-ADDON = true;
-
 #define CBA_SETTINGS_CAT LSTRING(cba_name)
 
 [
@@ -45,3 +43,5 @@ ADDON = true;
     [false],
     true
 ] call CBA_Settings_fnc_init;
+
+ADDON = true;
