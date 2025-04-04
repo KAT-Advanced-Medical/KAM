@@ -1,8 +1,5 @@
 PREP(effectBreathingWheeze);
 PREP(effectCoughing);
-PREP(effectEyeBlink);
-PREP(effectEyeInjury);
-PREP(effectHurtEye);
 PREP(effectLowSpO2);
 PREP(effectOpioid);
 PREP(effectTearHaze);

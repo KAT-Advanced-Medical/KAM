@@ -51,8 +51,8 @@ class ACE_Medical_Treatment {
         class BloodClotMinor: FieldDressing {
             class Abrasion {
                 effectiveness = 0;
-                reopeningChance = 0.4;
-                reopeningMinDelay = 150;
+                reopeningChance = 0.6;
+                reopeningMinDelay = 300;
                 reopeningMaxDelay = 900;
             };
             class AbrasionMinor: Abrasion {
@@ -117,7 +117,7 @@ class ACE_Medical_Treatment {
              class Abrasion {
                 effectiveness = 0;
                 reopeningChance = 0.5;
-                reopeningMinDelay = 120;
+                reopeningMinDelay = 300;
                 reopeningMaxDelay = 600;
             };
             class AbrasionMinor: Abrasion {};
@@ -179,8 +179,8 @@ class ACE_Medical_Treatment {
         class BloodClotLarge: FieldDressing {
             class Abrasion {
                 effectiveness = 0;
-                reopeningChance = 0.7;
-                reopeningMinDelay = 90;
+                reopeningChance = 0.8;
+                reopeningMinDelay = 150;
                 reopeningMaxDelay = 600;
             };
             class AbrasionMinor: Abrasion {};

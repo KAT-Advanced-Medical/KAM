@@ -11,20 +11,19 @@
  * 4: Temperature <NUMBER>
  * 5: Barometric Pressure <NUMBER>
  * 6: Opioid Depression <NUMBER>
- * 7: ACE Fatigue <NUMBER>
- * 8: Time since last update <NUMBER>
- * 9: Sync value? <BOOL> 
+ * 7: Time since last update <NUMBER>
+ * 8: Sync value? <BOOL> 
  *
  * ReturnValue:
  * Current O2 Saturation <NUMBER>
  *
  * Example:
- * [player, 80, 0.8, [40,90,0.96,24,7.4], 37, 760, 0, 0.1, 1, true] call kat_vitals_fnc_handleOxygenFunction;
+ * [player, 80, 0.8, [40,90,0.96,24,7.4], 37, 760, 0, 1, true] call kat_vitals_fnc_handleOxygenFunction;
  *
  * Public: No
  */
 
-params ["_unit", "_actualHeartRate", "_anerobicPressure", "_bloodGas", "_temperature", "_baroPressure", "_opioidDepression", "_aceAnFatigue", "_deltaT", "_syncValues"];
+params ["_unit", "_actualHeartRate", "_anerobicPressure", "_bloodGas", "_temperature", "_baroPressure", "_opioidDepression", "_deltaT", "_syncValues"];
 
 #define MAXIMUM_RR 40
 #define HEART_RATE_CO2_MULTIPLIER 60
@@ -36,7 +35,6 @@ params ["_unit", "_actualHeartRate", "_anerobicPressure", "_bloodGas", "_tempera
 
 private _respiratoryRate = 0;
 private _respiratoryDepression = 0;
-private _respiratoryDepth = 0;
 private _demandVentilation = 0;
 private _actualVentilation = 0;
 private _previousCyclePaco2 = (_bloodGas select 0);
@@ -47,14 +45,14 @@ if (IN_CRDC_ARRST(_unit)) then {
     _demandVentilation = MINIMUM_VENTILATION;
     _respiratoryDepression = 1;
     _respiratoryRate = [0, 20] select (_unit getVariable [QEGVAR(breathing,BVMInUse), false]);
-    _respiratoryDepth = [0, 10] select (_unit getVariable [QEGVAR(breathing,BVMInUse), false]);
     _actualVentilation = 1;
 } else {
     // Ventilatory Demand comes from Heart Rate with increase demand from PaCO2 levels 
     _demandVentilation = ((((_actualHeartRate * HEART_RATE_CO2_MULTIPLIER) / _anerobicPressure) + ((_previousCyclePaco2 - DEFAULT_PACO2) * 200)) max MINIMUM_VENTILATION);
+    private _tidalVolume = GET_KAT_SURFACE_AREA(_unit);
 
     // Tidal Volume is modified by respiratory depth which can be supressed by opioids and pneumothroax
-    _respiratoryDepth = [((DEFAULT_RESPIRATORY_DEPTH / 10) - (_opioidDepression / 1.5)), 10] select (_unit getVariable [QEGVAR(breathing,BVMInUse), false]);
+    private _respiratoryDepth = [((DEFAULT_RESPIRATORY_DEPTH / 10) - (_opioidDepression / 1.5)), 10] select (_unit getVariable [QEGVAR(breathing,BVMInUse), false]);
     private _tidalVolume = GET_KAT_SURFACE_AREA(_unit) * (_respiratoryDepth / 1);
     
     // Respiratory Rate Calculation
@@ -85,7 +83,7 @@ if (IN_CRDC_ARRST(_unit)) then {
     };
 } else {
     // Generated ETCO2 quadratic. Ensures ETCO2 moves with Respiratory Rate and is constantly below PaCO2 
-    _etco2 = (((-0.0416667 * (_respiratoryRate^2)) + (3.09167 * (_respiratoryRate))) * (_respiratoryDepth)) max 5;
+    _etco2 = (((_paco2 - 3) - ((-0.0416667 * (_respiratoryRate^2)) + (3.09167 * (_respiratoryRate))) * (_respiratoryDepth)) - DEFAULT_ETCO2) max 5;
 };
 
 private _externalPh = 0;
@@ -99,7 +97,7 @@ if (EGVAR(pharma,kidneyAction)) then {
     private _phConstant = ((-0.00006653 * (_temperature ^ 2)) - (0.03268 * _temperature) + 7.4);
 
     // pH is from the Henderson-Hasselbalch equation
-    _pH = (_phConstant + log(24 / ((0.03 * _paco2)))) - ((_externalPh max 1) / 2000) - ((_aceAnFatigue / 2) / 3);
+    _pH = (_phConstant + log(24 / ((0.03 * _paco2)))) - ((_externalPh max 1) / 2000);
 };
 
 // Fractional Oxygen when breathing normal air is 0.21, 1 when breathing 100% Oxygen, and 0 when no air is being brought into the lungs
@@ -127,10 +125,10 @@ private _arrestPerfusion = [1, (1 * EGVAR(breathing,SpO2_PerfusionMultiplier))] 
 // PaO2 moves in controlled steps to prevent hard movements when Ventilation Demand spikes
 _pao2 = if (_previousCyclePao2 != _pao2) then { ([ (_previousCyclePao2 - ((PAO2_MAX_CHANGE * EGVAR(breathing,SpO2_MultiplyNegative) * _arrestPerfusion) * _deltaT)) , (_previousCyclePao2 + ((PAO2_MAX_CHANGE * EGVAR(breathing,SpO2_MultiplyPositive)) * _deltaT))] select ((_previousCyclePao2 - _pao2) < 0)) } else { _pao2 };
 
-// Oxy-Hemo Dissociation Curve, driven by PaO2 with shaping done by pH.
-private _o2Sat = (((_pao2 max 1)^2.7 / ((25 - (((_pH / DEFAULT_PH) - 1) * 150))^2.7 + _pao2^2.7))) min 0.999;
+// Oxy-Hemo Dissociation Curve, driven by PaO2 with shaping done by pH 
+private _o2Sat = ((_pao2 max 1)^2.7 / ((25 - (((_pH / DEFAULT_PH) - 1) * 150))^2.7 + _pao2^2.7)) min 0.999;
 
 _unit setVariable [VAR_BREATHING_RATE, (_respiratoryRate max 0), _syncValues];
 _unit setVariable [VAR_BLOOD_GAS, [_paco2, _pao2, _o2Sat, 24, _pH, _etco2], _syncValues];
-_unit setVariable [QGVAR(respiratoryDepth), ((_respiratoryDepth * 10) max 0), _syncValues];
+_unit setVariable [QGVAR(respiratoryDepth), (_respiratoryDepth max 0), _syncValues];
 _o2Sat * 100

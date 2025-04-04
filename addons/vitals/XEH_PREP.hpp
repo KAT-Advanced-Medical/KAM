@@ -11,6 +11,5 @@ PREP(handleOxygenFunction);
 PREP(handlePoisoning);
 PREP(hasStableVitals);
 PREP(init);
-PREP(returnFatigue);
 PREP(updateOpioidEffect);
 PREP(updateOpioidRelief);

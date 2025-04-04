@@ -88,10 +88,6 @@ class CfgVehicles {
         destrType = "destructDefault";
         fuelCapacity = 0;
 
-        // Remove ACRE2 intercoms and infantry phone, inherited from the Tank class
-        class AcreIntercoms {};
-        acre_hasInfantryPhone = 0;
-
         //pretend static weapon since some mods don't like unconscious people in static weapons
         nameSound = "veh_static_s";
         vehicleClass = "static";
