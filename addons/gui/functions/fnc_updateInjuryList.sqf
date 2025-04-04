@@ -132,10 +132,6 @@ if (_target call ACEFUNC(common,isAwake)) then {
     };
 };
 
-if (_target getVariable [QEGVAR(conversion,currentConverted),false] && EGVAR(conversion,enableConversionMessage)) then {
-    _entries pushBack [LELSTRING(conversion,ConversionText), [0.35, 0.72, 0.82, 1]];
-};
-
 // Skip the rest as they're body part specific
 if (_selectionN == -1) exitWith {
     // Add all entries to injury list

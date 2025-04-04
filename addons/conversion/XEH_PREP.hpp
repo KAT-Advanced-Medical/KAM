@@ -1,6 +1,7 @@
 PREP(conversionCheck);
 PREP(conversionCondition);
 PREP(fullHealLocal);
+PREP(gui_updateInjuryListPart);
 PREP(handleRespawn);
 PREP(init);
 PREP(KATConditionExecutionDeath);
