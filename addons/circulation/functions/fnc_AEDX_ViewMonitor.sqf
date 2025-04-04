@@ -162,7 +162,10 @@ GVAR(PulseRateReady) = true;
 
         private _PRBar = _dlg displayCtrl IDC_DISPLAY_PULSERATEBAR;
 
-        if (!(HAS_TOURNIQUET_APPLIED_ON(GVAR(AEDX_MonitorTarget),_partIndex))) then {
+        if (HAS_TOURNIQUET_APPLIED_ON(GVAR(AEDX_MonitorTarget),_partIndex)) then {
+            _PRBar ctrlSetPosition [(ctrlPosition _PRBar) select 0, (ctrlPosition _PRBar) select 1, (ctrlPosition _PRBar) select 2, KAT_pxToScreen_H(71)];
+            _PRBar ctrlCommit 0;
+        } else {
             if (GVAR(PulseRateReady)) then {
                 GVAR(PulseRateReady) = false;
                 private _pr = GVAR(AEDX_MonitorTarget) getVariable [QACEGVAR(medical,heartRate), 0];
@@ -203,9 +206,6 @@ GVAR(PulseRateReady) = true;
                     }, [], 0.1] call CBA_fnc_waitAndExecute;
                 };
             };
-        } else {
-            _PRBar ctrlSetPosition [(ctrlPosition _PRBar) select 0, (ctrlPosition _PRBar) select 1, (ctrlPosition _PRBar) select 2, KAT_pxToScreen_H(71)];
-            _PRBar ctrlCommit 0;
         };
     } else {
         ctrlShow [IDC_DISPLAY_PULSERATEBORDER, false];

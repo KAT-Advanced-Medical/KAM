@@ -125,8 +125,11 @@ private _dlg = uiNamespace getVariable ["KAT_Circulation_AEDX_Monitor_Display", 
 
         private _PRBar = _dlg displayCtrl IDC_DISPLAY_PULSERATEBAR_TITLE;
 
-        if (!(HAS_TOURNIQUET_APPLIED_ON(GVAR(AEDX_MonitorTarget_Title),_partIndex))) then {
-            if (GVAR(PulseRateReady)) then {
+        if (HAS_TOURNIQUET_APPLIED_ON(GVAR(AEDX_MonitorTarget_Title),_partIndex)) then {
+            _PRBar ctrlSetPosition [(ctrlPosition _PRBar) select 0, (ctrlPosition _PRBar) select 1, (ctrlPosition _PRBar) select 2, KAT_pxToScreen_H(71)];
+            _PRBar ctrlCommit 0;
+        } else {
+           if (GVAR(PulseRateReady)) then {
                 GVAR(PulseRateReady) = false;
                 private _pr = GVAR(AEDX_MonitorTarget_Title) getVariable [QACEGVAR(medical,heartRate), 0];
 
@@ -166,9 +169,6 @@ private _dlg = uiNamespace getVariable ["KAT_Circulation_AEDX_Monitor_Display", 
                     }, [], 0.1] call CBA_fnc_waitAndExecute;
                 };
             };
-        } else {
-            _PRBar ctrlSetPosition [(ctrlPosition _PRBar) select 0, (ctrlPosition _PRBar) select 1, (ctrlPosition _PRBar) select 2, KAT_pxToScreen_H(71)];
-            _PRBar ctrlCommit 0;
         };
     } else {
         (_dlg displayCtrl IDC_DISPLAY_PULSERATEBORDER_TITLE) ctrlShow false;
