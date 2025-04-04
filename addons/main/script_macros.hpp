@@ -41,6 +41,8 @@
 #define GETGVAR(var1,var2) GETMVAR(GVAR(var1),var2)
 #define GETEGVAR(var1,var2,var3) GETMVAR(EGVAR(var1,var2),var3)
 
+#define QGETGVAR(var1,var2) QUOTE(GETMVAR(QGVAR(var1),var2))
+
 #define ARR_SELECT(ARRAY,INDEX,DEFAULT) (if (count ARRAY > INDEX) then {ARRAY select INDEX} else {DEFAULT})
 #define ANY_OF(ARRAY,CONDITION) (ARRAY findIf {CONDITION} != -1)
 
@@ -280,6 +282,7 @@
 #define DEFAULT_PH 7.4
 #define DEFAULT_ETCO2 37
 #define DEFAULT_BLOOD_GAS [DEFAULT_PACO2, DEFAULT_PAO2, DEFAULT_O2SAT, DEFAULT_HCO3, DEFAULT_PH, DEFAULT_ETCO2]
+#define DEFAULT_RESPIRATORY_DEPTH       10
 
 #define DEFAULT_ANEROBIC_EXCHANGE 0.8
 #define DEFAULT_TEMPERATURE 37
@@ -301,6 +304,9 @@
 // Breathing
 #define VAR_SURFACE_AREA                400
 #define GET_KAT_SURFACE_AREA(unit)      (VAR_SURFACE_AREA - (((unit getVariable [QEGVAR(breathing,pneumothorax), 0]) * 75)))
+
+#define VAR_RESPIRATORY_DEPTH           QEGVAR(vitals,respiratoryDepth)
+#define GET_KAT_RESPIRATORY_DEPTH(unit)      (unit getVariable [QEGVAR(vitals,respiratoryDepth), 10])
 
 #define VAR_BLOOD_GAS                  QEGVAR(circulation,bloodGas)
 #define VAR_BREATHING_RATE             QEGVAR(breathing,breathRate)
@@ -342,6 +348,7 @@
 
 //Surgery
 #define STRING_BODY_PARTS ["head", "body", "left arm", "right arm", "left leg", "right leg"]
+#define GET_REBOA_VOLUME(unit)         ([unit] call EFUNC(surgery,reboaVolume))
 
 //Feedback
 #define VAR_PP QEGVAR(feedback,ppEffect)
@@ -349,3 +356,7 @@
 
 #define IS_AIRPOISONED(unit) (unit getVariable [QEGVAR(chemical,airPoisoning), false])
 #define IN_TEARGAS(unit) (unit getVariable [QEGVAR(chemical,CSGas), 0])
+
+//Ophthalmology
+#define GET_DUST_INJURY(unit) ((unit getVariable [QEGVAR(ophthalmology,dustInjuryLight), 0]) + (unit getVariable [QEGVAR(ophthalmology,dustInjuryHeavy), 0]))
+#define GET_EYE_INJURIES(unit) (unit getVariable [QEGVAR(ophthalmology,eyeInjuries), [1,1]])

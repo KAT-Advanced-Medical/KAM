@@ -26,5 +26,6 @@ PREP(reboaDeepApply);
 PREP(reboaDeepApplyLocal);
 PREP(reboaRemove);
 PREP(reboaRemoveLocal);
+PREP(reboaVolume);
 PREP(ultraAssessment);
 PREP(ultraAssessmentLocal);

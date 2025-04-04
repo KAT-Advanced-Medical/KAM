@@ -30,7 +30,12 @@
 [QACEGVAR(medical_treatment,fullHealLocalMod), LINKFUNC(fullHealLocal)] call CBA_fnc_addEventHandler;
 [QACEGVAR(medical,woundReceived),LINKFUNC(handlePulmoHit)] call CBA_fnc_addEventHandler;
 
-private _items = missionNamespace getVariable [QGVAR(availOxyMask), "'G_AirPurifyingRespirator_01_F'"];
+private _items = missionNamespace getVariable [QGVAR(availOxyMask), "'kat_mask_solr'"];
 private _array = [_items, "CfgGlasses"] call EFUNC(chemical,getList);
 
 missionNamespace setVariable [QGVAR(availOxyMaskList), _array, true];
+
+private _itemsHelmet = missionNamespace getVariable [QGVAR(availOxyHelmet), "'H_PilotHelmetFighter_B', 'H_PilotHelmetFighter_O', 'H_PilotHelmetFighter_I', 'H_PilotHelmetFighter_I_E'"];
+private _arrayHelmet = [_itemsHelmet, "CfgWeapons"] call EFUNC(chemical,getList);
+
+missionNamespace setVariable [QGVAR(availOxyHelmetList), _arrayHelmet, true];

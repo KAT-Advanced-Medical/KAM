@@ -6,8 +6,8 @@
             <German>Trage einklappen</German>
             <Polish>Złóż nosze</Polish>
             <Spanish>Desarmar Camilla</Spanish>
-            <Chinese>拆卸式擔架</Chinese>
-            <Chinesesimp>可拆卸式担架</Chinesesimp>
+            <Chinese>拆卸擔架</Chinese>
+            <Chinesesimp>拆卸担架</Chinesesimp>
             <Czech>Rozložit nosítka</Czech>
             <Korean>들것 분리</Korean>
             <French>Désassembler la civière</French>
@@ -24,8 +24,8 @@
             <German>Anhängen an</German>
             <Polish>Przyczep do</Polish>
             <Spanish>Adjuntar a</Spanish>
-            <Chinese>掛在</Chinese>
-            <Chinesesimp>附加到</Chinesesimp>
+            <Chinese>附著到</Chinese>
+            <Chinesesimp>附着到</Chinesesimp>
             <Czech>Připevnit k</Czech>
             <Korean>에 부착</Korean>
             <French>Attacher à</French>
@@ -42,8 +42,8 @@
             <Polish>Przyczep nosze</Polish>
             <German>Trage befestigen</German>
             <Spanish>Adjuntar Camilla</Spanish>
-            <Chinese>附加担架 </Chinese>
-            <Chinesesimp>连接担架 </Chinesesimp>
+            <Chinese>附著擔架</Chinese>
+            <Chinesesimp>附着担架</Chinesesimp>
             <Czech>Připevnit nosítka</Czech>
             <Korean>들것 부착 </Korean>
             <French>Attacher la civière</French>
@@ -60,7 +60,7 @@
             <Polish>Wciągnij nosze</Polish>
             <German>Trage anheben</German>
             <Spanish>Subir la Camilla</Spanish>
-            <Chinese>AA抬起担架AA</Chinese>
+            <Chinese>抬起擔架</Chinese>
             <Chinesesimp>抬起担架</Chinesesimp>
             <Czech>Vytáhnout nosítka</Czech>
             <Korean>들것 올리기</Korean>
@@ -78,7 +78,7 @@
             <Polish>Opuść nosze</Polish>
             <German>Trage absenken</German>
             <Spanish>Bajar la Camilla</Spanish>
-            <Chinese>下担架</Chinese>
+            <Chinese>放下擔架</Chinese>
             <Chinesesimp>放下担架</Chinesesimp>
             <Czech>Snížit nosítka</Czech>
             <Korean>들것 내리기</Korean>
@@ -100,6 +100,7 @@
             <German>Trage ausklappen</German>
             <Italian>Dispiegare la barella</Italian>
             <French>Déployer le brancard</French>
+            <Chinese>展開擔架</Chinese>
             <Chinesesimp>展开担架</Chinesesimp>
         </Key>
         <Key ID="STR_KAT_Stretcher_RetractHeliStretcher">
@@ -111,6 +112,7 @@
             <German>Trage einholen</German>
             <Italian>Ritirare la barella</Italian>
             <French>Rétracter le brancard</French>
+            <Chinese>收回擔架</Chinese>
             <Chinesesimp>缩回担架</Chinesesimp>
         </Key>
         <Key ID="STR_KAT_Stretcher_DetachHeliStretcher">
@@ -122,6 +124,7 @@
             <German>Trage lösen</German>
             <Italian>Staccare la barella</Italian>
             <French>Détacher le brancard</French>
+            <Chinese>釋放擔架</Chinese>
             <Chinesesimp>分离担架</Chinesesimp>
         </Key>
         <Key ID="STR_KAT_Stretcher_Helistretcher_Display">
@@ -129,8 +132,8 @@
             <Polish>Nosze śmigłowcowe</Polish>
             <German>Anbringbare Helitrage</German>
             <Spanish>Camilla de helicóptero adjuntable</Spanish>
-            <Chinese>可连接直升机</Chinese>
-            <Chinesesimp>可连接担架</Chinesesimp>
+            <Chinese>可連接直升機擔架</Chinese>
+            <Chinesesimp>可连接直升机担架</Chinesesimp>
             <Czech>Připevnitelná helinosítka</Czech>
             <Korean>부착형 헬기용 들것</Korean>
             <French>Hélicivière amovible </French>
@@ -147,8 +150,8 @@
             <Polish>Pozwala podczepić nosze do śmigłowca(Podwójne kliknięcie)</Polish>
             <German>Ermöglicht das Anbringen einer Trage am Hubschrauber (Doppelklick)</German>
             <Spanish>Le permite adjuntar una camilla a un helicóptero (doble clic)</Spanish>
-            <Chinese>允许您在直升机上附加担架（双击）</Chinese>
-            <Chinesesimp>允许您在直升机上附加担架（双击）</Chinesesimp>
+            <Chinese>允許您雙擊將擔架連接到直升機上</Chinese>
+            <Chinesesimp>允许您双击将担架连接到直升机上</Chinesesimp>
             <Czech>Umožňuje připevnit nosítka na helikoptéru(Dvojtým kliknutím)</Czech>
             <Korean>헬기에 들것을 부착할 수 있습니다(더블 클릭)</Korean>
             <French>Vous permet d'attacher une civière sur hélicoptère (double clic)</French>
@@ -181,8 +184,8 @@
         <Key ID="STR_KAT_Stretcher_StretcherPacked_Display">
             <English>Stretcher (Packed)</English>
             <Japanese>担架 (折り畳み)</Japanese>
-            <Chinese>擔架（打包）</Chinese>
-            <Chinesesimp>担架（打包）</Chinesesimp>
+            <Chinese>擔架（已打包）</Chinese>
+            <Chinesesimp>担架（已打包）</Chinesesimp>
             <Czech>Nosítka (Zabalená)</Czech>
             <French>Civière (Emballée)</French>
             <German>Krankentrage (Gepackt)</German>
@@ -205,6 +208,7 @@
             <German>In Tasche packen</German>
             <Italian>Mettere nella borsa</Italian>
             <French>Emballer dans un sac</French>
+            <Chinese>打包到包裡</Chinese>
             <Chinesesimp>装进袋子里</Chinesesimp>
         </Key>
         <Key ID="STR_KAT_Stretcher_PackIntoBackpack">
@@ -216,6 +220,7 @@
             <German>In Rucksack packen</German>
             <Italian>Mettere nello zaino</Italian>
             <French>Emballer dans un sac à dos</French>
+            <Chinese>裝進背包</Chinese>
             <Chinesesimp>装进背包</Chinesesimp>
         </Key>
         <Key ID="STR_KAT_Stretcher_UnpackStretcher">
@@ -227,6 +232,7 @@
             <German>Trage aufbauen</German>
             <Italian>Dispiegare la barella</Italian>
             <French>Déployer le brancard</French>
+            <Chinese>部屬擔架</Chinese>
             <Chinesesimp>展开担架</Chinesesimp>
         </Key>
         <Key ID="STR_KAT_Stretcher_PlaceStretcher_progressBar">
@@ -238,6 +244,7 @@
             <German>Trage platzieren...</German>
             <Italian>Posizionamento della barella...</Italian>
             <French>Mise en place du brancard...</French>
+            <Chinese>正在放置擔架...</Chinese>
             <Chinesesimp>正在放置担架...</Chinesesimp>
         </Key>
         <Key ID="STR_KAT_Stretcher_PickupStretcher_progressBar">
@@ -249,6 +256,7 @@
             <German>Trage einpacken...</German>
             <Italian>Imballaggio della barella...</Italian>
             <French>Le brancard est emballé</French>
+            <Chinese>正在打包擔架...</Chinese>
             <Chinesesimp>正在打包担架...</Chinesesimp>
         </Key>
         <Key ID="STR_KAT_Stretcher_KAT_HeliStretcher">
@@ -259,6 +267,7 @@
             <German>KAT Helikoptertrage</German>
             <Italian>KAT Barella per elicotteri</Italian>
             <French>Brancard d'hélicoptère KAT</French>
+            <Chinese>KAT 直升機擔架</Chinese>
             <Chinesesimp>KAT Helistretcher</Chinesesimp>
         </Key>
     </Package>

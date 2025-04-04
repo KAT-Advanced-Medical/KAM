@@ -34,13 +34,9 @@ class CfgVehicles {
         };
     };
 
-    class NATO_Box_Base;
-    class ACE_medicalSupplyCrate: NATO_Box_Base {
-        class TransportItems;
-        class TransportMagazines;
-    };
+    class ACE_medicalSupplyCrate;
     class ACE_medicalSupplyCrate_advanced: ACE_medicalSupplyCrate {
-        class TransportItems: TransportItems {
+        class TransportItems {
             MACRO_ADDITEM(kat_Pulseoximeter,3);
             MACRO_ADDITEM(kat_chestSeal,25);
             MACRO_ADDITEM(kat_aatKit,10);
@@ -49,14 +45,14 @@ class CfgVehicles {
             MACRO_ADDITEM(kat_pocketBVM,5);
             MACRO_ADDITEM(kat_nasal,10);
         };
-        class TransportMagazines: TransportMagazines {
+        class TransportMagazines {
             MACRO_ADDMAGAZINE(kat_oxygenTank_150,2);
             MACRO_ADDMAGAZINE(kat_oxygenTank_300,2);
         };
     };
     class kat_basicSupplyCrate: ACE_medicalSupplyCrate {
         displayName = CSTRING(basicSupplyCrate_display);
-        class TransportItems: TransportItems {
+        class TransportItems {
             MACRO_ADDITEM(Attachable_Helistretcher,5);
             MACRO_ADDITEM(kat_stretcherBag,5);
             MACRO_ADDITEM(kat_accuvac,2);
@@ -77,7 +73,7 @@ class CfgVehicles {
             MACRO_ADDITEM(kat_BVM,5);
             MACRO_ADDITEM(kat_pocketBVM,5);
         };
-        class TransportMagazines: TransportMagazines {
+        class TransportMagazines {
             MACRO_ADDMAGAZINE(kat_oxygenTank_150,2);
             MACRO_ADDMAGAZINE(kat_oxygenTank_300,2);
         };

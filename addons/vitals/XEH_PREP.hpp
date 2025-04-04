@@ -1,4 +1,6 @@
 PREP(addMedicationAdjustment);
+PREP(basicDiagnostic);
+PREP(basicDiagnosticLocal);
 PREP(fullHealLocal);
 PREP(handleUnitVitals);
 PREP(handleSimpleVitals);
@@ -9,5 +11,6 @@ PREP(handleOxygenFunction);
 PREP(handlePoisoning);
 PREP(hasStableVitals);
 PREP(init);
+PREP(returnFatigue);
 PREP(updateOpioidEffect);
 PREP(updateOpioidRelief);

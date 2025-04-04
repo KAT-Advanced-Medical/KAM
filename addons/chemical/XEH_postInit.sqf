@@ -1,5 +1,7 @@
 #include "script_component.hpp"
 
+#define CBA_KEYBIND_CAT "KAT - ADV Medical: Chemical"
+
 //Events
 ["ace_glassesChanged", LINKFUNC(breathing)] call CBA_fnc_addEventHandler;
 [QGVAR(poison), LINKFUNC(poison)] call CBA_fnc_addEventHandler;
@@ -33,7 +35,7 @@ private _items = missionNamespace getVariable [QGVAR(availGasmask), "'G_AirPurif
 private _array = [_items, "CfgGlasses"] call FUNC(getList);
 missionNamespace setVariable [QGVAR(availGasmaskList), _array, true];
 
-["KAT_ChemicalDetector", QGVAR(showChemDetector), "Show Chemical Detector", {
+[CBA_KEYBIND_CAT, QGVAR(showChemDetector), "Show Chemical Detector", {
     // Conditions: canInteract
     if (!([ACE_player, objNull, ["isNotEscorting", "isNotInside"]] call ACEFUNC(common,canInteractWith)) || {!('KAT_ChemicalDetector' in assignedItems ACE_player)}) exitWith { false };
 
