@@ -6,13 +6,13 @@ PREP_RECOMPILE_START;
 #include "XEH_PREP.hpp"
 PREP_RECOMPILE_END;
 
-#define CBA_SETTINGS_CHEM LSTRING(cba_name)
+#define CBA_SETTINGS_CAT LSTRING(cba_name)
 
 [
     QGVAR(availGasmask),
     "EDITBOX",
     [LLSTRING(SETTING_AVAIL_GASMASK), LLSTRING(SETTING_AVAIL_GASMASK_DISC)],
-    CBA_SETTINGS_CHEM,
+    CBA_SETTINGS_CAT,
     "'G_AirPurifyingRespirator_01_F', 'kat_mask_M50', 'kat_mask_M04'",
     1,
     {
@@ -26,7 +26,7 @@ PREP_RECOMPILE_END;
     QGVAR(gasmask_durability),
     "TIME",
     [LLSTRING(SETTING_GASMASK_DURABILITY), LLSTRING(SETTING_GASMASK_DURABILITY_DISC)],
-    CBA_SETTINGS_CHEM,
+    CBA_SETTINGS_CAT,
     [1, 3600, 900],
     true
 ] call CBA_Settings_fnc_init;
@@ -36,7 +36,7 @@ PREP_RECOMPILE_END;
     QGVAR(gasMaskSoundVolume),
     "SLIDER",
     [LLSTRING(SETTING_gasMaskSoundVolume), LLSTRING(SETTING_gasMaskSoundVolume_DESC)],
-    CBA_SETTINGS_CHEM,
+    CBA_SETTINGS_CAT,
     [0, 2, 1, 1],
     2,
     {
@@ -50,7 +50,7 @@ PREP_RECOMPILE_END;
     QGVAR(maskStaminaLoss),
     "CHECKBOX",
     [LLSTRING(SETTING_gasMaskStaminaLoss)],
-    CBA_SETTINGS_CHEM,
+    CBA_SETTINGS_CAT,
     [false],
     true
 ] call CBA_Settings_fnc_init;
@@ -60,7 +60,7 @@ PREP_RECOMPILE_END;
     QGVAR(tearGasDropChance),
     "SLIDER",
     [LLSTRING(SETTING_dropWeaponChance), LLSTRING(SETTING_dropWeaponChance_DESC)],
-    CBA_SETTINGS_CHEM,
+    CBA_SETTINGS_CAT,
     [0, 1, 0, 2, true],
     true
 ] call CBA_Settings_fnc_init;
@@ -70,7 +70,7 @@ PREP_RECOMPILE_END;
     QGVAR(infectionTime),
     "TIME",
     [LLSTRING(SETTING_infectionTime), LLSTRING(SETTING_infectionTime_DESC)],
-    CBA_SETTINGS_CHEM,
+    CBA_SETTINGS_CAT,
     [0, 3600, 60],
     true
 ] call CBA_Settings_fnc_init;
@@ -80,7 +80,7 @@ PREP_RECOMPILE_END;
     QGVAR(showPoisoning),
     "CHECKBOX",
     [LLSTRING(SETTING_showPoisoning), LLSTRING(SETTING_showPoisoning_DESC)],
-    CBA_SETTINGS_CHEM,
+    CBA_SETTINGS_CAT,
     [true],
     true
 ] call CBA_Settings_fnc_init;
