@@ -1,0 +1,19 @@
+
+//low SPO2 Warning Level
+[
+    QGVAR(effectLowSpO2),
+    "SLIDER",
+    [LLSTRING(SETTING_lowSpO2_display), LLSTRING(SETTING_lowSpO2_DESC)],
+    CBA_SETTINGS_CAT,
+    [5, 100, 90, 1],
+    true
+] call CBA_Settings_fnc_init;
+
+[
+    QGVAR(enableOpioidEffect),
+    "CHECKBOX",
+    [LLSTRING(SETTING_OpioidEffect_display), LLSTRING(SETTING_OpioidEffect_DESC)],
+    CBA_SETTINGS_CAT,
+    [true],
+    true
+] call CBA_Settings_fnc_init;
