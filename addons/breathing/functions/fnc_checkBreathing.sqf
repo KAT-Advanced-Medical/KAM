@@ -21,7 +21,8 @@ params ["_medic", "_patient"];
 
 private _ph = GET_PH(_patient);
 private _hr = GET_HEART_RATE(_patient);
-private _rr = GET_BREATHING_RATE(_patient);
+private _rawRR = GET_BREATHING_RATE(_patient);
+private _rr = round _rawRR;
 private _output = "";
 private _output_log = "";
 
@@ -30,9 +31,15 @@ private _breathing_log = localize ACELSTRING(medical_treatment,Check_Pulse_Norma
 private _breath = "";
 private _breathRate = "RR: ";
 
-if ((_patient getVariable [QGVAR(pneumothorax), 0] > 0) || (_patient getVariable [QEGVAR(chemical,airPoisoning), false])) then {
+private _respiratoryDepth = _patient getVariable [QEGVAR(vitals,respiratoryDepth), 10];
+if ((_respiratoryDepth < 8.5) || (_patient getVariable [QEGVAR(chemical,airPoisoning), false])) then {
     _breathing = LLSTRING(breathing_isShallow);
     _breathing_log = LLSTRING(breathing_shallow);
+};
+
+if (_respiratoryDepth < 7)  then {
+    _breathing = LLSTRING(breathing_isVeryShallow);
+    _breathing_log = LLSTRING(breathing_Veryshallow);
 };
 
 if (_ph < 7.2) then {

@@ -6,6 +6,7 @@
             <Spanish>Nivel de Sp02 bajo para aviso</Spanish>
             <German>Schwellwert für niedrigen SpO2</German>
             <French>Niveau d'alerte de SpO2 basse</French>
+            <Chinese>警告 SpO2 過低</Chinese>
             <Japanese>低SpO2警告のレベル</Japanese>
             <Korean>낮은 산소포화도 경고 수준</Korean>
             <Italian>Livello di allerta bassa SPO2</Italian>
@@ -21,6 +22,7 @@
             <Spanish>Te permite bajar el nivel de Sp02 a partir del cual se empiezan a efectuar flashazos negros y se pierde resistencia</Spanish>
             <German>Definiert den SpO2 Wert, bei welchem der Ausdauerverlust und der visuelle Effekt (dunkle, pulsierende Vignettierung) eintritt</German>
             <French>Règle la valeur de SpO2 à laquelle les flashs d'alerte et la perte d'endurance apparaissent</French>
+            <Chinese>允許您更改在 閃爍警告指示 和 耐力損失效果 發生的SpO2值</Chinese>
             <Japanese>画面点滅による警告とスタミナ損失効果が発生するSpO2の値を変更できます</Japanese>
             <Korean>깜빡임 경고 표시 및 스태미나 손실 효과를 얻게 되는 산소포화도 값을 변경합니다.</Korean>
             <Italian>Ti permette di cambiare il valore di SPO2 al quale ricevi l'indicatore lampeggiante d'allerta e l'effetto di perdita della stamina </Italian>
@@ -33,6 +35,7 @@
         </Key>
         <Key ID="STR_KAT_Feedback_SETTING_OpioidEffect_display">
             <English>Enable opioid effect</English>
+            <Chinese>啟用鴉片類藥物效果</Chinese>
             <Japanese>オピオイド効果を有効化</Japanese>
             <German>Opioidwirkung aktivieren</German>
             <Italian>Abilita l'effetto degli oppioidi</Italian>
@@ -41,6 +44,7 @@
         </Key>
         <Key ID="STR_KAT_Feedback_SETTING_OpioidEffect_DESC">
             <English>Enables opioid effect on ketamine, fentanyl and pervitin</English>
+            <Chinese>啟用 K他命(氯胺酮)、芬太尼、冰毒(甲基苯丙胺) 等 鴉片類藥物的作用</Chinese>
             <Japanese>ケタミン、フェンタニル、ペルビチンなどでオピオイドの効果を有効にします</Japanese>
             <German>Ermöglicht eine Opioidwirkung auf Ketamin, Fentanyl und Pervitin</German>
             <Italian>Abilita l'effetto degli oppioidi su ketamina, fentanil e pervitina</Italian>

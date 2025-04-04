@@ -49,7 +49,7 @@ class CfgSounds {
         sound[] =
         {
             QPATHTOF(audio\breath1.ogg),
-            4,
+            2,
             1.0,
             10
         };
@@ -61,7 +61,7 @@ class CfgSounds {
         sound[] =
         {
             QPATHTOF(audio\breath2.ogg),
-            4,
+            2,
             1.0,
             10
         };
@@ -73,7 +73,7 @@ class CfgSounds {
         sound[] =
         {
             QPATHTOF(audio\heavyBreath.ogg),
-            4,
+            2,
             1.0,
             10
         };

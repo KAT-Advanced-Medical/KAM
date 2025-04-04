@@ -10,10 +10,6 @@ jobs:
   windows:
     runs-on: windows-latest
     steps:
-    - name: Install Arma 3 Tools
-      uses: arma-actions/arma3-tools@master
-      with:
-        toolsUrl: ${{ secrets.ARMA3_TOOLS_URL }}
     - name: Checkout the source code
       uses: actions/checkout@v4
     - name: Setup HEMTT
