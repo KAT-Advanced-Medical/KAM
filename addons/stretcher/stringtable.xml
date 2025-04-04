@@ -1,9 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Project name="KAT">
     <Package name="Stretcher">
-        <Key ID="STR_KAT_Stretcher_cba_name">
-            <English>KAT - ADV Medical: Stretcher</English>
-        </Key> 
         <Key ID="STR_KAT_Stretcher_disassemble_stretcher_display">
             <English>Disassemble Stretcher</English>
             <German>Trage einklappen</German>
