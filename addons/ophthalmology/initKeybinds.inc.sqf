@@ -2,7 +2,7 @@
 
 if (!hasInterface) exitWith {};
 
-[QUOTE(COMPONENT_BEAUTIFIED), QGVAR(blinking), LLSTRING(blink_action),
+[CBA_SETTINGS_CAT, QGVAR(blinking), LLSTRING(blink_action),
 {
     [0.2, false] call EFUNC(feedback,effectEyeBlink);
 
