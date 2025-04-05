@@ -163,7 +163,7 @@
             <German>Katmin K500</German>
             <French>Katmin K500</French>
             <Chinese>Katmin K500</Chinese>
-            <Chinesesimp>凯敏K500</Chinesesimp>
+            <Chinesesimp>Katmin K500</Chinesesimp>
         </Key>
         <Key ID="STR_KAT_Watch_CavminDescription">
             <English>Watch with Vital Monitoring Capabilities. Garry Owen!</English>
@@ -181,7 +181,7 @@
             <German>Katmin Cavalry Limited</German>
             <French>Katmin Cavalry Limited</French>
             <Chinese>Katmin Cavalry Limited</Chinese>
-            <Chinesesimp>Katmin骑兵有限公司</Chinesesimp>
+            <Chinesesimp>Katmin 骑兵限量</Chinesesimp>
         </Key>
         <Key ID="STR_KAT_Watch_STSDescription">
             <English>Watch with Vital Monitoring Capabilities. So Others May Live.</English>
@@ -198,7 +198,7 @@
             <Italian>Katmin Jump Standard</Italian>
             <German>Katmin Jump Standard</German>
             <French>Katmin Jump Standard</French>
-            <Chinesesimp>Katmin跳跃标准</Chinesesimp>
+            <Chinesesimp>Katmin 跳跃标准</Chinesesimp>
         </Key>
         <Key ID="STR_KAT_Watch_RangerDescription">
             <English>Watch with Vital Monitoring Capabilities. Sua Sponte.</English>
