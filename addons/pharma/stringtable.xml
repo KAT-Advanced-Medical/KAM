@@ -3,7 +3,7 @@
     <Package name="Pharma">
         <Key ID="STR_KAT_Pharma_cba_name">
             <English>KAT - ADV Medical: Pharmacy</English>
-            <Japanese>KAM - 薬学</Japanese>
+            <Japanese>KAM - 薬学 (Pharmacy)</Japanese>
         </Key> 
         <Key ID="STR_KAT_Pharma_medLvl_ApplyIV">
             <English>Allow applying IV</English>

@@ -3,7 +3,7 @@
     <Package name="Breathing">
         <Key ID="STR_KAT_Breathing_cba_name">
             <English>KAT - ADV Medical: Breathing</English>
-            <Japanese>KAM - 呼吸器系</Japanese>
+            <Japanese>KAM - 呼吸器系 (Breathing)</Japanese>
         </Key> 
         <Key ID="STR_KAT_Breathing_SETTING_ENABLE">
             <English>Activate Breathing Module</English>
