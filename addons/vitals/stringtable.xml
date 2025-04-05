@@ -3,6 +3,7 @@
     <Package name="Vitals">
         <Key ID="STR_KAT_Vitals_cba_name">
             <English>KAT - ADV Medical: Vitals</English>
+            <Japanese>KAM - バイタル</Japanese>
         </Key> 
         <Key ID="STR_KAT_Vitals_SIMPLEMED_ENABLE">
             <English>Activate AI Simple Medical</English>

@@ -3,6 +3,7 @@
     <Package name="Misc">
         <Key ID="STR_KAT_Misc_cba_name">
             <English>KAT - ADV Medical: Misc</English>
+            <Japanese>KAM - その他</Japanese>
         </Key> 
         <Key ID="STR_KAT_Misc_Kat_Equipment">
             <English>KAT Equipment</English>

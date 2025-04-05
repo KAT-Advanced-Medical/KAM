@@ -3,6 +3,7 @@
     <Package name="Hypothermia">
         <Key ID="STR_KAT_Hypothermia_cba_name">
             <English>KAT - ADV Medical: Hypothermia</English>
+            <Japanese>KAM - 低体温症</Japanese>
         </Key> 
         <Key ID="STR_KAT_Hypothermia_SubCategory_Hypothermia">
             <English>Hypothermia Settings</English>

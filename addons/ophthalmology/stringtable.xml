@@ -4,6 +4,7 @@
         <Key ID="STR_KAT_Ophthalmology_cba_name">
             <English>KAT - ADV Medical: Ophthalmology</English>
             <French>KAT - ADV Medical: Ophthalmology</French>
+            <Japanese>KAM - 眼科</Japanese>
         </Key> 
         <Key ID="STR_KAT_Ophthalmology_setting_enable">
             <English>Enable eye injuries</English>

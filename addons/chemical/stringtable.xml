@@ -3,6 +3,7 @@
     <Package name="Chemical">
         <Key ID="STR_KAT_Chemical_cba_name">
             <English>KAT - ADV Medical: Chemical</English>
+            <Japanese>KAM - 化学戦</Japanese>
         </Key> 
         <Key ID="STR_KAT_Chemical_SETTING_AVAIL_GASMASK">
             <English>Accepted gas masks</English>
