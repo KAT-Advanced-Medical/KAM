@@ -560,6 +560,7 @@
             <French>Fermer l'incision</French>
             <Chinese>封閉切口</Chinese>
             <Chinesesimp>闭合切口</Chinesesimp>
+            <Czech>Uzavřít řez</Czech>
         </Key>
         <Key ID="STR_KAT_Surgery_Plate_Display">
             <English>Bone Plate</English>
@@ -675,6 +676,7 @@
             <Dutch>Mobiele echograaf</Dutch>
             <Italian>Ecografo portatile</Italian>
             <German>Handultraschall</German>
+            <Czech>Ruční ultrazvuk</Czech>
         </Key>
         <Key ID="STR_KAT_Surgery_Ultra_DescUse">
             <English>Used to assess internal injuries</English>
@@ -688,6 +690,7 @@
             <Dutch>Wordt gebruikt om interne verwondingen te evalueren</Dutch>
             <Italian>Utilizzato per valutare le lesioni interne</Italian>
             <German>Wird zur Beurteilung innerer Verletzungen verwendet</German>
+            <Czech>Používá se ke zjištění vnitřních zranění</Czech>
         </Key>
         <Key ID="STR_KAT_Surgery_Ultra_Use">
             <English>Conduct Ultrasound Assessment</English>
@@ -701,6 +704,7 @@
             <Dutch>Voer echo evaluatie uit</Dutch>
             <Italian>Esegui valutazione ecografica</Italian>
             <German>Führe Ultraschalluntersuchung durch</German>
+            <Czech>Provést Ultrazvukové Vyšetření</Czech>
         </Key>
         <Key ID="STR_KAT_Surgery_Ultra_Action">
             <English>Assessing</English>
@@ -714,6 +718,7 @@
             <Dutch>Aan het evalueren</Dutch>
             <Italian>In corso di valutazione</Italian>
             <German>Bewerte</German>
+            <Czech>Vyhodnocování</Czech>
         </Key>
         <Key ID="STR_KAT_Surgery_Ultra_Airway">
             <English>Airway Status: %1</English>
@@ -727,6 +732,7 @@
             <Dutch>Luchtwegstatus: %1</Dutch>
             <Italian>Stato delle vie aeree: %1</Italian>
             <German>Atemwegsstatus: %1</German>
+            <Czech>Stav dýchacích cest: %1</Czech>
         </Key>
         <Key ID="STR_KAT_Surgery_Ultra_Thorasic">
             <English>Lung Status: %1</English>
@@ -740,6 +746,7 @@
             <Dutch>Longstatus: %1</Dutch>
             <Italian>Stato dei polmoni: %1</Italian>
             <German>Lungenstatus: %1</German>
+            <Czech>Stav plic: %1</Czech>
         </Key>
         <Key ID="STR_KAT_Surgery_Ultra_Cardiac">
             <English>Cardiac Status: %1</English>
@@ -753,6 +760,7 @@
             <Dutch>Cardiale status: %1</Dutch>
             <Italian>Stato cardiaco: %1</Italian>
             <German>Herzstatus: %1</German>
+            <Czech>Stav srdce: %1</Czech>
         </Key>
         <Key ID="STR_KAT_Surgery_Ultra_Airway_Normal">
             <English>Normal</English>
@@ -766,16 +774,19 @@
             <Dutch>Normaal</Dutch>
             <Italian>Normale</Italian>
             <German>Normal</German>
+            <Czech>Normální</Czech>
         </Key>
         <Key ID="STR_KAT_Surgery_Ultra_Airway_Compromise">
             <English>Compromised</English>
             <French>Compromis</French>
             <Japanese>機能不全</Japanese>
+            <Czech>Ohrožený</Czech>
         </Key>
         <Key ID="STR_KAT_Surgery_Ultra_Airway_NoActivity">
             <English>No Activity</English>
             <Japanese>活動なし</Japanese>
             <French>Aucune activité</French>
+            <Czech>Žádná činnost</Czech>
         </Key>
         <Key ID="STR_KAT_Surgery_Ultra_Thorasic_PTX">
             <English>Pneumothorax</English>
@@ -789,6 +800,7 @@
             <Dutch>Pneumothorax</Dutch>
             <Italian>Pneumotorace</Italian>
             <German>Pneumothorax</German>
+            <Czech>Pneumotorax</Czech>
         </Key>
         <Key ID="STR_KAT_Surgery_Ultra_Thorasic_Hemo">
             <English>Hemopneumothorax</English>
@@ -802,6 +814,7 @@
             <Dutch>Hemopneumothorax</Dutch>
             <Italian>Emopneumotorace</Italian>
             <German>Hämopneumothorax</German>
+            <Czech>Hemotorax</Czech>
         </Key>
         <Key ID="STR_KAT_Surgery_Ultra_Thorasic_Tension">
             <English>Tension Pneumothorax</English>
@@ -815,11 +828,13 @@
             <German>Spannungspneumothorax</German>
             <Chinese>張力性氣胸</Chinese>
             <Chinesesimp>张力性气胸</Chinesesimp>
+            <Czech>Tenzní pneumotorax</Czech>
         </Key>
         <Key ID="STR_KAT_Surgery_Ultra_Thorasic_NoActivity">
             <English>No Activity</English>
             <French>Aucune activité</French>
             <Japanese>活動なし</Japanese>
+            <Czech>Žádná činnost</Czech>
             <Chinese>無活動</Chinese>
         </Key>
         <Key ID="STR_KAT_Surgery_Ultra_Cardiac_Shockable">
@@ -832,6 +847,7 @@
             <Dutch>Hartstilstand - Schokbaar</Dutch>
             <Italian>Arresto - Defibrillabile</Italian>
             <German>Herzstillstand – Schockbar</German>
+            <Czech>Zástava - Šokovatelné</Czech>
             <Chinese>心臟驟停 - 可電擊</Chinese>
             <Chinesesimp>心脏骤停 - 可电击</Chinesesimp>
         </Key>
@@ -845,6 +861,7 @@
             <Dutch>Hartstilstand - Niet schokbaar</Dutch>
             <Italian>Arresto - Non defibrillabile</Italian>
             <German>Herzstillstand – Nicht defibrillierbar</German>
+            <Czech>Zástava - Nešokovatelné</Czech>
             <Chinese>心臟驟停 - 不可電擊</Chinese>
             <Chinesesimp>心脏骤停 - 不可电击</Chinesesimp>
         </Key>
@@ -858,6 +875,7 @@
             <Dutch>Harttamponade</Dutch>
             <Italian>Tamponamento</Italian>
             <German>Herztamponade</German>
+            <Czech>Tamponáda</Czech>
             <Chinesesimp>心包填塞</Chinesesimp>
             <Chinese>心包填塞</Chinese>
         </Key>
@@ -873,6 +891,7 @@
             <German>ROBOA-Einheit</German>
             <Chinese>REBOA 設備</Chinese>
             <Chinesesimp>REBOA单元</Chinesesimp>
+            <Czech>REBOA Jednotka</Czech>
         </Key>
         <Key ID="STR_KAT_Surgery_Reboa_DescUse">
             <English>Used to block the aorta and prevent bleeding below the heart</English>
@@ -886,6 +905,7 @@
             <German>Wird verwendet, um die Aorta zu verschließen und Blutungen unter dem Herzen zu stoppen</German>
             <Chinese>用於阻斷主動脈，防止心臟以下的出血</Chinese>
             <Chinesesimp>用于阻断主动脉，防止心脏以下出血</Chinesesimp>
+            <Czech>Používá se k zablokování aorty a zabránění krvácení pod úrovní srdce</Czech>
         </Key>
         <Key ID="STR_KAT_Surgery_Reboa_Use">
             <English>Place REBOA Unit</English>
@@ -899,6 +919,7 @@
             <German>REBOA-Einheit platzieren</German>
             <Chinese>放置 REBOA 設備</Chinese>
             <Chinesesimp>放置REBOA单元</Chinesesimp>
+            <Czech>Umístit REBOA Jednotku</Czech>
         </Key>
         <Key ID="STR_KAT_Surgery_Reboa_Action">
             <English>Placing</English>
@@ -912,6 +933,7 @@
             <German>Wird platziert</German>
             <Chinese>放置中</Chinese>
             <Chinesesimp>放置</Chinesesimp>
+            <Czech>Umisťuji</Czech>
         </Key>
         <Key ID="STR_KAT_Surgery_Reboa_Deep_Use">
             <English>Advance REBOA Unit</English>
@@ -925,6 +947,7 @@
             <German>REBOA-Einheit vorschieben</German>
             <Chinese>進階REBOA設備</Chinese>
             <Chinesesimp>高级REBOA单元</Chinesesimp>
+            <Czech>Zavést REBOA Jednotka</Czech>
         </Key>
         <Key ID="STR_KAT_Surgery_Reboa_Deep_Action">
             <English>Advancing</English>
@@ -936,6 +959,7 @@
             <Dutch>Wordt opgevoerd</Dutch>
             <Italian>Avanzamento in corso</Italian>
             <German>Vorschieben</German>
+            <Czech>Zavádím</Czech>
             <Chinese>推進中</Chinese>
             <Chinesesimp>推进中</Chinesesimp>
         </Key>
@@ -951,6 +975,7 @@
             <German>REBOA-Einheit entfernen</German>
             <Chinese>移除 REBOA 設備</Chinese>
             <Chinesesimp>拆除REBOA装置</Chinesesimp>
+            <Czech>Odstranit REBOA jednotku</Czech>
         </Key>
         <Key ID="STR_KAT_Surgery_Reboa_Remove_Action">
             <English>Removing</English>
@@ -962,6 +987,7 @@
             <Dutch>Wordt verwijderd</Dutch>
             <Italian>Rimozione in corso</Italian>
             <German>Entferne</German>
+            <Czech>Odstraňuji</Czech>
             <Chinese>移除中</Chinese>
             <Chinesesimp>移除中</Chinesesimp>
         </Key>
@@ -977,6 +1003,7 @@
             <German>REBOA</German>
             <Chinese>REBOA</Chinese>
             <Chinesesimp>雷博亚</Chinesesimp>
+            <Czech>REBOA</Czech>
         </Key>
         <Key ID="STR_KAT_Surgery_Pericardial_Tap_Use">
             <English>Pericardial Tap</English>
@@ -990,6 +1017,7 @@
             <German>Perikarddrainage</German>
             <Chinese>心包穿刺術</Chinese>
             <Chinesesimp>心包穿刺</Chinesesimp>
+            <Czech>Perikardiální kohoutek</Czech>
         </Key>
         <Key ID="STR_KAT_Surgery_Pericardial_Tap_Action">
             <English>Performing</English>
@@ -1001,6 +1029,7 @@
             <Dutch>Wordt uitgevoerd</Dutch>
             <Italian>Esecuzione in corso</Italian>
             <German>Im Gange</German>
+            <Czech>Provádím</Czech>
             <Chinese>實施中</Chinese>
             <Chinesesimp>操作中</Chinesesimp>
         </Key>
@@ -1016,6 +1045,7 @@
             <German>%1 führte eine Perikarddrainage durch</German>
             <Chinese>%1 進行了心包穿刺術</Chinese>
             <Chinesesimp>%1 对患者进行了心包穿刺</Chinesesimp>
+            <Czech>%1 umístil perikardiální kohoutek</Czech>
         </Key>
         <Key ID="STR_KAT_Surgery_KIDNEY_ACTION">
             <English>Kidney damage/failure</English>
@@ -1418,6 +1448,7 @@
             <Spanish>Permitir REBOA</Spanish>
             <Italian>Consenti REBOA</Italian>
             <German>Erforderliches Level zur Durchführung eines REBOA</German>
+            <Czech>Povolit REBOA</Czech>
         </Key>
         <Key ID="STR_KAT_Surgery_REBOA_LOCATION">
             <English>Locations for REBOA</English>
@@ -1429,6 +1460,7 @@
             <Spanish>Zonas para REBOA</Spanish>
             <Italian>Posizioni per REBOA</Italian>
             <German>Orte, an denen eine REBOA durchgeführt werden kann</German>
+            <Czech>Lokace pro REBOA</Czech>
         </Key>
         <Key ID="STR_KAT_Surgery_REBOA_TIMER">
             <English>Time to perform REBOA actions</English>
@@ -1440,6 +1472,7 @@
             <Spanish>Tiempo para realizar acciones de REBOA</Spanish>
             <Italian>Tempo per eseguire le azioni REBOA</Italian>
             <German>Zeitaufwand für die Durchführung von REBOA-Aktionen</German>
+            <Czech>Čas pro provedení REBOA akcí</Czech>
         </Key>
         <Key ID="STR_KAT_Surgery_REBOA_TIMER_DESC">
             <English>Sets how long it takes to perform REBOA actions (Placing, Advancing, Removing)</English>
@@ -1451,6 +1484,7 @@
             <Spanish>Establece cuanto tiempo lleva realizar las acciones de REBOA (Colocar, Avanzar, Quitar)</Spanish>
             <Italian>Imposta quanto tempo ci vuole per eseguire le azioni REBOA (Posizionamento, Avanzamento, Rimozione)</Italian>
             <German>Definiert die Dauer der Maßnahmen von REBOA-Aktionen (Setzen, Verschieben, Entfernen)</German>
+            <Czech>Nastavuje, jak dlouho potvrdá provedení akcí REBOA (umístění, zavedení, odstranění)</Czech>
         </Key>
         <Key ID="STR_KAT_Surgery_ULTRASOUND_ACTION_MEDLEVEL">
             <English>Allow Ultrasound</English>
@@ -1462,6 +1496,7 @@
             <Spanish>Permitir Ultrasonido</Spanish>
             <Italian>Consenti Ecografia</Italian>
             <German>Ultraschall zulassen</German>
+            <Czech>Povolit Ultrazvuk</Czech>
         </Key>
         <Key ID="STR_KAT_Surgery_ULTRASOUND_LOCATION">
             <English>Locations for Ultrasound</English>
@@ -1473,6 +1508,7 @@
             <Spanish>Zonas para Ultrasonido</Spanish>
             <Italian>Posizioni per Ecografia</Italian>
             <German>Standorte für Ultraschall</German>
+            <Czech>Lokace pro Ultrazvuk</Czech>
         </Key>
         <Key ID="STR_KAT_Surgery_ULTRASOUND_TIMER">
             <English>Time to perform Ultrasound actions</English>
@@ -1484,6 +1520,7 @@
             <Spanish>Tiempo para realizar acciones de Ultrasonidos</Spanish>
             <Italian>Tempo per eseguire le azioni Ecografia</Italian>
             <German>Dauer von Ultraschallmaßnahmen</German>
+            <Czech>Čas pro provedení akcí Ultrazvuku</Czech>
         </Key>
         <Key ID="STR_KAT_Surgery_ULTRASOUND_TIMER_DESC">
             <English>Sets how long it takes to perform an ultrasound exam</English>
@@ -1495,6 +1532,7 @@
             <Spanish>Establece cuánto tiempo lleva realizar un examen de Ultrasonidos</Spanish>
             <Italian>Imposta quanto tempo ci vuole per eseguire un esame ecografico</Italian>
             <German>Legt fest, wie lange die Durchführung einer Ultraschalluntersuchung dauert</German>
+            <Czech>Nastavuje, jak dlouho potrvá vyšetření Ultrazvukem</Czech>
         </Key>
         <Key ID="STR_KAT_Surgery_PERICARDIALTAP_ACTION_MEDLEVEL">
             <English>Allow Pericardial Tap</English>
@@ -1506,6 +1544,7 @@
             <Spanish>Permitir realizar Pericardiocentesis</Spanish>
             <Italian>Consenti Puntura Pericardica</Italian>
             <German>Perikardpunktion zulassen</German>
+            <Czech>Povolit Perikardiální Kohoutek</Czech>
         </Key>
         <Key ID="STR_KAT_Surgery_PERICARDIALTAP_LOCATION">
             <English>Locations for Pericardial Tap</English>
@@ -1517,6 +1556,7 @@
             <Spanish>Zonas para Pericardiocentesis</Spanish>
             <Italian>Posizioni per Puntura Pericardica</Italian>
             <German>Standorte für die Perikardpunktion</German>
+            <Czech>Lokace pro Perikardiální Kohoutek</Czech>
         </Key>
         <Key ID="STR_KAT_Surgery_PERICARDIALTAP_TIMER">
             <English>Time to perform Pericardial Tap</English>
@@ -1528,6 +1568,7 @@
             <Spanish>Tiempo para realizar Pericardiocentesis</Spanish>
             <Italian>Tempo per eseguire la Puntura Pericardica</Italian>
             <German>Dauer einer Perikardpunktion</German>
+            <Czech>Čas pro umístění Perikardiálního Kohoutku</Czech>
         </Key>
         <Key ID="STR_KAT_Surgery_PERICARDIALTAP_TIMER_DESC">
             <English>Sets how long it takes to perform a Pericardial Tap</English>
@@ -1539,6 +1580,7 @@
             <Spanish>Establece cuanto tiempo lleva realizar una Pericardiocentesis</Spanish>
             <Italian>Imposta quanto tempo ci vuole per eseguire una Puntura Pericardica</Italian>
             <German>Legt fest, wie lange die Durchführung einer Perikardpunktion dauert</German>
+            <Czech>Nastavuje, jak dlouho potrvá umístění Perikardiálního Kohoutku</Czech>
         </Key>
         <Key ID="STR_KAT_Surgery_BREATH_CHECK_MEDLEVEL">
             <English>Allow Breath Check</English>
@@ -1569,6 +1611,7 @@
             <Portuguese>Permitir curativo a vácuo</Portuguese>
             <Dutch>Benodigde training voor het gebruik van een vacuümverband</Dutch>
             <Italian>Consenti NPWT</Italian>
+            <Czech>Povolit NPWT</Czech>
         </Key>
         <Key ID="STR_KAT_Surgery_NPWT_LOCATION">
             <English>Locations NPWT</English>
@@ -1582,6 +1625,7 @@
             <Portuguese>Locais para curativo a vácuo</Portuguese>
             <Dutch>Locaties waar een vacuümverband aangelegd kan worden</Dutch>
             <Italian>Posizioni NPWT</Italian>
+            <Czech>Lokace pro NPWT</Czech>
         </Key>
         <Key ID="STR_KAT_Surgery_CLOSED_LOCATION">
             <English>Locations Closed Reduction</English>
@@ -1816,6 +1860,7 @@
             <Portuguese>Configurações do curativo a vácuo</Portuguese>
             <Dutch>Vacuümverband instellingen</Dutch>
             <Italian>Impostazioni del sistema di aspirazione per medicazioni (NPWT)</Italian>
+            <Czech>Laváž (NPWT) Nastavení</Czech>
         </Key>
         <Key ID="STR_KAT_Surgery_surgeryToolbox">
             <English>[KAM] Surgery Box</English>
@@ -1848,6 +1893,7 @@
             <Russian>Контроль сознания во время операции</Russian>
             <Dutch>Operatie bewustzijninstellingen</Dutch>
             <Italian>Controlli della coscienza durante la chirurgia</Italian>
+            <Czech>Chirurgické Operace a Vědomí</Czech>
         </Key>
         <Key ID="STR_KAT_Surgery_SETTING_ConsciousnessRequirement_DESC">
             <English>Surgery Causes Unconsciousness: Surgery without anesthesia and sedation results in unconsciousness from CA. \nUnconsciousness Required for Surgery: Surgery requires patient to be unconscious. \nNo Unconsciousness from Surgery: Surgery doesn't induce unconsciousness, causes pain. \nSurgery Anesthesia: Patient stays awake during surgery if given Etomidate, if not they will go into CA.</English>
@@ -1863,6 +1909,7 @@
             <Russian>Операция вызывает потерю сознания: операция без анестезии или седативного средства приводит к потере сознания из-за остановки сердца. \nбессознательное состояние, необходимое для операции: операция требует, чтобы пациент был без сознания. \nнет бессознательного состояния из-за операции: операция не вызывает бессознательного состояния, она вызывает боль. \nхирургическая анестезия: пациент не спит во время операции, если ему вводят этомидат.</Russian>
             <Dutch>Operatie veroorzaakt bewustzijnsverlies: Operaties zonder anesthesie en sedatie lijdt tot bewustzijnsverlies door hartstilstand. \n Bewusteloosheid benodigd voor operatie: Operaties vereisen dat de patiënt bewusteloos is. \n Geen bewustzijnsverlies door operaties: Operaties lijden niet tot bewustzijnsverlies, maar veroorzaken pijn. \n Operatie met anesthesie: Patiënt blijft wakker tijdens de operatie als etomidaat gegeven is, anders lijdt de operatie tot een hartstilstand.</Dutch>
             <Italian>Una chirurgia causa incoscienza: Una chirurgia senza anestesia e sedazione porta all'incoscienza a causa di CA. \n Incoscienza richiesta per la chirurgia: Per la chirurgia, è necessario che il paziente sia incosciente. \n Nessuna incoscienza dalla chirurgia: La chirurgia non causa incoscienza, ma dolore. \n Anestesia chirurgica: Il paziente rimane sveglio durante l'intervento se gli viene somministrato Etomidato.</Italian>
+            <Czech>Operace způsobují bezvědomí: Operace bez anestezie a sedace vede k bezvědomí ze srdeční zástavy.\nBezvědomí vyžadovánoi: Operace vyžaduje, aby byl pacient v bezvědomí.\nBez bezvědomí: Operace nezpůsobuje bezvědomí, ale způsobuje bolest.\nAnestezie: Pacient zůstává během operace vzhůru, pokud je mu podán Etomidate, pokud ne, dostaví se srdeční zástava.</Czech>
         </Key>
         <Key ID="STR_KAT_Surgery_SETTING_Causes_Unconsciousness">
             <English>Surgery Causes Unconsciousness</English>
@@ -1878,6 +1925,7 @@
             <Russian>Хирургическое вмешательство приводит к потере сознания</Russian>
             <Dutch>Operatie veroorzaakt bewustijnsverlies</Dutch>
             <Italian>Chirurgia causa incoscienza</Italian>
+            <Czech>Operace způsobují bezvědomí</Czech>
         </Key>
         <Key ID="STR_KAT_Surgery_SETTING_Unconsciousness_Required">
             <English>Unconsciousness Required for Surgery</English>
@@ -1893,6 +1941,7 @@
             <Russian>Потеря сознания, необходимая для хирургического вмешательства</Russian>
             <Dutch>Bewusteloosheid </Dutch>
             <Italian>Incoscienza richiesta per la chirurgia</Italian>
+            <Czech>Bezvědomí vyžadováno</Czech>
         </Key>
         <Key ID="STR_KAT_Surgery_SETTING_No_Unconsciousness">
             <English>No Unconsciousness from Surgery</English>
@@ -1908,6 +1957,7 @@
             <Russian>После операции никто не теряет сознание</Russian>
             <Dutch>Geen Bewustzijnsverlies door operaties</Dutch>
             <Italian>Nessuna incoscienza dalla chirurgia</Italian>
+            <Czech>Bez bezvědomí</Czech>
         </Key>
         <Key ID="STR_KAT_Surgery_SETTING_Anesthesia">
             <English>Surgery Anesthesia</English>
@@ -1923,6 +1973,7 @@
             <Russian>Хирургическая анестезия</Russian>
             <Dutch>Operatie met anesthesie</Dutch>
             <Italian>Anestesia chirurgica</Italian>
+            <Czech>Anestezie</Czech>
         </Key>
     </Package>
 </Project>

@@ -41,6 +41,7 @@
             <Italian>Abilita l'effetto degli oppioidi</Italian>
             <French>Activer l'effet opioïde</French>
             <Chinesesimp>启用阿片类药物作用</Chinesesimp>
+            <Czech>Povolit opioidní efekty</Czech>
         </Key>
         <Key ID="STR_KAT_Feedback_SETTING_OpioidEffect_DESC">
             <English>Enables opioid effect on ketamine, fentanyl and pervitin</English>
@@ -50,6 +51,7 @@
             <Italian>Abilita l'effetto degli oppioidi su ketamina, fentanil e pervitina</Italian>
             <French>Permet un effet opioïde sur la kétamine, le fentanyl et la pervitine</French>
             <Chinesesimp>使阿片类药物对氯胺酮、芬太尼和帕维汀产生作用</Chinesesimp>
+            <Czech>Povolit opioidní efekty ketaminu, fentanylu a pervitinu</Czech>
         </Key>
     </Package>
 </Project>

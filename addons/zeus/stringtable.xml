@@ -66,6 +66,7 @@
             <Portuguese>Deterioração do pneumotórax</Portuguese>
             <Dutch>Verslechterende pneumothorax: </Dutch>
             <Italian>Il pneumotorace peggiora:</Italian>
+            <Czech>Pneumotorax zhoršení:</Czech>
             <Chinese>氣胸惡化：</Chinese>
         </Key>
         <Key ID="STR_KAT_Zeus_ModuleManageAirway_Hemopneumothorax">
@@ -207,6 +208,7 @@
             <Russian>Изменить состояние сердца</Russian>
             <Dutch>Verander cardiale staat</Dutch>
             <Italian>Cambia stato cardiaco</Italian>
+            <Czech>Změna Srdečního Stavu</Czech>
             <Chinese>更改心臟狀態</Chinese>
         </Key>
         <Key ID="STR_KAT_Zeus_CardiacState_Module_State">
@@ -240,6 +242,7 @@
             <Russian>Желудочковая тахикардия</Russian>
             <Dutch>Ventriculaire tachycardie</Dutch>
             <Italian>Tachicardia ventricolare</Italian>
+            <Czech>Ventrikulární Tachykardie</Czech>
             <Chinese>室性心跳過速(VT)</Chinese>
         </Key>
         <Key ID="STR_KAT_Zeus_CardiacState_Module_VF">
@@ -255,6 +258,7 @@
             <Russian>Фибрилляция желудочков</Russian>
             <Dutch>Ventriculaire fibrillatie</Dutch>
             <Italian>Fibrillazione ventricolare</Italian>
+            <Czech>Ventrikulární Fibrilace</Czech>
             <Chinese>心室顫動(VF)</Chinese>
         </Key>
         <Key ID="STR_KAT_Zeus_CardiacState_Module_PEA">
@@ -270,6 +274,7 @@
             <Russian>Безимпульсная электрическая активность</Russian>
             <Dutch>Polsloze electrische activiteit (PEA)</Dutch>
             <Italian>Attività elettrica senza polso</Italian>
+            <Czech>Bezpulzová Elektrická Aktivita</Czech>
             <Chinese>無脈性電氣活動(PEA)</Chinese>
         </Key>
         <Key ID="STR_KAT_Zeus_CardiacState_Module_Asystole">
@@ -303,6 +308,7 @@
             <Russian>Юнит должен быть ИИ</Russian>
             <Dutch>Eenheid moet een KI / AI zijn</Dutch>
             <Italian>L'unità deve essere un'IA</Italian>
+            <Czech>Jednotka musí být AI</Czech>
             <Chinese>單位必須是AI</Chinese>
         </Key>
         <Key ID="STR_KAT_Zeus_sliderFormat13was23">
@@ -336,6 +342,7 @@
             <Russian>Переключить мгновенную смерть ИИ</Russian>
             <Dutch>Schakel onmiddelijke KI / AI dood om</Dutch>
             <Italian>Attiva/disattiva la morte istantanea dell'IA</Italian>
+            <Czech>Přepnout instantní smrt pro AI</Czech>
             <Chinese>開關AI即時死亡</Chinese>
         </Key>
         <Key ID="STR_KAT_Zeus_toggleAIDeath_Module_Toggled">
@@ -351,6 +358,7 @@
             <Russian>Мгновенная смерть ИИ %1 для юнита</Russian>
             <Dutch>Onmiddelijke dood voor KI / AI %1 voor eenheid</Dutch>
             <Italian>Morte istantanea dell'IA %1 per l'unità</Italian>
+            <Czech>Okamžitá smrt AI %1 pro jednotku</Czech>
             <Chinese>AI單位即時死亡 %1</Chinese>
         </Key>
     </Package>

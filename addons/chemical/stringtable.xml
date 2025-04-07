@@ -143,6 +143,7 @@
             <French>Afficher les intoxications</French>
             <Chinese>顯示中毒</Chinese>
             <Chinesesimp>显示中毒</Chinesesimp>
+            <Czech>Zobrazit otravu</Czech>
         </Key>
         <Key ID="STR_KAT_Chemical_SETTING_showPoisoning_DESC">
             <English>Determines if poisoning and intoxication is shown in the medical menu</English>
@@ -150,6 +151,7 @@
             <French>Détermine si l'empoisonnement et l'intoxication sont affichés dans le menu médical</French>
             <Chinese>確定醫療選單中是否顯示中毒</Chinese>
             <Chinesesimp>确定医疗菜单中是否显示中毒</Chinesesimp>
+            <Czech>Určuje, zda otrava a intoxikace budou zobrazovány ve zdravotnické tabulce</Czech>
         </Key>
         <Key ID="STR_KAT_Chemical_GasFilterItem">
             <English>Gas mask filter</English>
@@ -227,6 +229,7 @@
             <German>JCAD Chemiedetektor</German>
             <Chinese>JCAD 化學偵測器</Chinese>
             <Chinesesimp>JCAD化学检测仪</Chinesesimp>
+            <Czech>Chemický detektor JCAD</Czech>
         </Key>
         <Key ID="STR_KAT_Chemical_ChemicalDetectorDescription">
             <English>Used to detect KAT toxic chemicals</English>
@@ -236,6 +239,7 @@
             <German>zum Nachweis toxischer KAT-Chemikalien</German>
             <Chinese>用於偵測 KAT 有毒化學物質</Chinese>
             <Chinesesimp>用于检测KAT有毒化学物质</Chinesesimp>
+            <Czech>Používá se k detekování toxických chemikálií KAT</Czech>
         </Key>
         <Key ID="STR_KAT_Chemical_ChemicalDetector_Off">
             <English>OFF</English>
@@ -243,6 +247,7 @@
             <French>ÉTEINT</French>
             <Chinese>關閉</Chinese>
             <Chinesesimp>关闭</Chinesesimp>
+            <Czech>OFF</Czech>
         </Key>
         <Key ID="STR_KAT_Chemical_giveGasMask_action">
             <English>Put on gas mask</English>
@@ -514,6 +519,7 @@
             <Dutch>[ACE] 82mm Gasgranatenkist</Dutch>
             <Chinese>[ACE] 82毫米毒氣彈藥箱</Chinese>
             <Chinesesimp>[ACE]82毫米燃气轮箱</Chinesesimp>
+            <Czech>[ACE] 82mm Gas Rounds Box</Czech>
         </Key>
         <Key ID="STR_KAT_Chemical_M7A3_DcsShort">
             <English>The M7A3 CS gas grenade is a non-lethal tear gas grenade that causes severe burning of the mucous membranes and eyes on contact.</English>
@@ -808,6 +814,7 @@
             <English>Tear gas (Level 0)</English>
             <Japanese>催涙ガス (レベル 0)</Japanese>
             <French>Gaz lacrymogène (Niveau 0)</French>
+            <Czech>Slzný plyn (Level 0)</Czech>
         </Key>
         <Key ID="STR_KAT_Chemical_Lvl1_Gas">
             <English>Toxic gas (Level 1)</English>
@@ -918,6 +925,7 @@
             <German>Lautstärke der Gasmaske</German>
             <Chinese>防毒面具音量</Chinese>
             <Chinesesimp>防毒面具音量</Chinesesimp>
+            <Czech>Hlasitost zvuků plynové masky</Czech>
         </Key>
         <Key ID="STR_KAT_Chemical_SETTING_gasMaskSoundVolume_DESC">
             <English>Determines how loud the breathing sounds are when using the gas mask</English>
@@ -926,6 +934,7 @@
             <German>Bestimmt die Lautstärke der Atemgeräusche während des Tragens einer Gasmaske</German>
             <Chinese>確定使用防毒面具時呼吸聲的音量</Chinese>
             <Chinesesimp>确定使用防毒面具时呼吸声的音量</Chinesesimp>
+            <Czech>Určuje, jak hlasité jsou dýchací zvuky při používání plynové masky</Czech>
         </Key>
         <Key ID="STR_KAT_Chemical_PutOnGasMask">
             <English>Put on gas mask</English>
@@ -934,6 +943,7 @@
             <German>Gasmaske aufsetzen</German>
             <Chinese>戴上防毒面具</Chinese>
             <Chinesesimp>戴上防毒面具</Chinesesimp>
+            <Czech>Nasadit Plynovou Masku</Czech>
         </Key>
         <Key ID="STR_KAT_Chemical_TakeOffGasMask">
             <English>Take off gas mask</English>
@@ -942,6 +952,7 @@
             <German>Gasmaske abnehmen</German>
             <Chinese>摘下防毒面具</Chinese>
             <Chinesesimp>摘下防毒面具</Chinesesimp>
+            <Czech>Sundat Plynovou Masku</Czech>
         </Key>
         <Key ID="STR_KAT_Chemical_ChemicalDetector_Menu">
             <English>JCAD</English>
@@ -949,6 +960,7 @@
             <French>JCAD</French>
             <Chinese>JCAD</Chinese>
             <Chinesesimp>JCAD</Chinesesimp>
+            <Czech>JCAD</Czech>
         </Key>
         <Key ID="STR_KAT_Chemical_EnableDetector">
             <English>Turn On Detector</English>
@@ -956,6 +968,7 @@
             <French>Mise en marche du détecteur</French>
             <Chinese>打開探測器</Chinese>
             <Chinesesimp>打开探测器</Chinesesimp>
+            <Czech>Zapnout detektor</Czech>
         </Key>
         <Key ID="STR_KAT_Chemical_EnableDetectorSound">
             <English>Enable Warning Tone</English>
@@ -963,6 +976,7 @@
             <French>Activer les avertissements sonores</French>
             <Chinese>啟用警告音</Chinese>
             <Chinesesimp>启用警告音</Chinesesimp>
+            <Czech>Povolit tón varování</Czech>
         </Key>
         <Key ID="STR_KAT_Chemical_DisableDetectorSound">
             <English>Disable Warning Tone</English>
@@ -970,6 +984,7 @@
             <French>Désactiver les avertissements sonores</French>
             <Chinese>停用警告音</Chinese>
             <Chinesesimp>禁用警告音</Chinesesimp>
+            <Czech>Vypnout tón varování</Czech>
         </Key>
         <Key ID="STR_KAT_Chemical_SETTING_dropWeaponChance">
             <English>Drop Weapon Chance</English>
@@ -978,6 +993,7 @@
             <Chinese>丟下武器機會</Chinese>
             <Chinesesimp>投掷武器机会</Chinesesimp>
             <German>Chance, die Waffe unter Tränengas zu verlieren</German>
+            <Czech>Šance na upuštění zbraně</Czech>
         </Key>
         <Key ID="STR_KAT_Chemical_SETTING_dropWeaponChance_DESC">
             <English>Determines chance for dropping weapon while in tear gas</English>
@@ -986,11 +1002,13 @@
             <Chinese>確定在催淚瓦斯中丟下武器的機率</Chinese>
             <Chinesesimp>确定在催泪瓦斯中投掷武器的几率</Chinesesimp>
             <German>Bestimmt die Wahrscheinlichkeit, die Waffe zu verlieren, während man unter dem Einfluss von Tränengas steht</German>
+            <Czech>Určuje šanci na upuštění zbraně v přítomnosti slzného plynu</Czech>
         </Key>
         <Key ID="STR_KAT_Chemical_SETTING_gasMaskStaminaLoss">
             <English>Enable Stamina Loss when using Gas Mask</English>
             <Japanese>ガスマスク使用時のスタミナ減少を有効化</Japanese>
             <French>Perte d'endurance avec l'utilisation du masque à gaz</French>
+            <Czech>Povolit ztrátu staminy při použití plynové masky</Czech>
             <Chinese>啟用使用防毒面具時的體力流失</Chinese>
         </Key>
     </Package>
