@@ -91,14 +91,14 @@
         <Key ID="STR_KAT_Conversion_TicketConversion">
             <English>Convert Casualty to Tickets</English>
         </Key>
+        <Key ID="STR_KAT_Conversion_cba_name">
+            <English>KAT - ADV Medical: Conversion</English>
+        </Key>
         <Key ID="STR_KAT_Conversion_convertPatient">
             <English>Perform Initial Conversion</English>
         </Key>
         <Key ID="STR_KAT_Conversion_converting">
             <English>Converting</English>
-        </Key>
-        <Key ID="STR_KAT_Conversion_cba_name">
-            <English>KAT - ADV Medical: Conversion</English>
         </Key>
     </Package>
 </Project>
