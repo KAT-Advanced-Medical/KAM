@@ -13,18 +13,6 @@
             <Chinesesimp>连接油液加热器</Chinesesimp>
             <Dutch>Maak vloeistofverwarmer vast</Dutch>
         </Key>
-        <Key ID="STR_KAT_Hypothermia_CheckHandWarmers">
-            <English>Check Hand Warmers</English>
-            <Czech>Zkontrolovat Ohřívače Rukou</Czech>
-            <French>Vérifier les chauffe-mains</French>
-            <Spanish>Comprobar Calentadores de Manos</Spanish>
-            <Italian>Controlla i riscaldatori per le mani</Italian>
-            <German>Handwärmer überprüfen</German>
-            <Japanese>ハンドウォーマーを確認</Japanese>
-            <Chinese>檢查暖暖包</Chinese>
-            <Chinesesimp>检查暖手器</Chinesesimp>
-            <Dutch>Check handwarmers</Dutch>
-        </Key>
         <Key ID="STR_KAT_Hypothermia_Check_Hand_Warmers">
             <English>Check Hand Warmers</English>
             <Czech>Zkontrolovat Ohřívače Rukou</Czech>
@@ -73,30 +61,6 @@
             <Chinesesimp>启用低温</Chinesesimp>
             <Dutch>Schakel hypothermie in</Dutch>
         </Key>
-        <Key ID="STR_KAT_Hypothermia_FLUID_WARMER_IMPACT">
-            <English>Fluid Warmer Impact</English>
-            <Czech>Účinek Ohřívače Tekutin</Czech>
-            <French>Impact du réchauffeur de fluide</French>
-            <Spanish>Impacto del Calentador de Fluidos</Spanish>
-            <Italian>Impatto del riscaldatore per liquidi</Italian>
-            <German>Wirkung des Flüssigkeitswärmers</German>
-            <Japanese>輸液ウォーマーの影響</Japanese>
-            <Chinese>輸液加溫器效果</Chinese>
-            <Chinesesimp>流体加温影响乘数</Chinesesimp>
-            <Dutch>Vloeistofverwarmer impact</Dutch>
-        </Key>
-        <Key ID="STR_KAT_Hypothermia_FLUID_WARMER_IMPACT_DESC">
-            <English>Multipler for impact of fluid warmer on heat gain</English>
-            <Czech>Násobitel účinku Ohřívače Tekutin na zisk tepla</Czech>
-            <French>Multiplicateur pour l'impact du réchauffement des fluides sur le gain de chaleur</French>
-            <Spanish>Multiplicador del impacto del calentador de fluidos en la ganancia de calor</Spanish>
-            <Italian>Moltiplicatore per l'impatto del riscaldatore per liquidi sull'aumento del calore</Italian>
-            <German>Multiplikator für den Einfluss des Flüssigkeitserwärmers</German>
-            <Japanese>輸液ウォーマーが熱獲得に与える影響の乗数</Japanese>
-            <Chinese>輸液加溫器對熱量增加的影響倍數</Chinese>
-            <Chinesesimp>流体加热器对热增益影响的倍数</Chinesesimp>
-            <Dutch>Vermenigvuldiger voor de impact die vloeistofverwarmers hebben op de stijging van temperatuur</Dutch>
-        </Key>
         <Key ID="STR_KAT_Hypothermia_FluidWarmer_DescShort">
             <English>Provides heating to IV fluids. Must be placed on an already existing line</English>
             <Czech>Poskytuje ohřev infuzních tekutin. Musí být umístěn na již existující hadici.</Czech>
@@ -120,30 +84,6 @@
             <Chinese>輸液管加溫器</Chinese>
             <Chinesesimp>流体管路加热器</Chinesesimp>
             <Dutch>IV-lijn verwarmers</Dutch>
-        </Key>
-        <Key ID="STR_KAT_Hypothermia_HAND_WARMER_IMPACT">
-            <English>Hand Warmer Impact</English>
-            <Czech>Účinek Ohřívače Rukou</Czech>
-            <French>Impact du chauffe-mains</French>
-            <Spanish>Impacto de Calentador de Manos</Spanish>
-            <Italian>Impatto dei riscaldatori per le mani</Italian>
-            <German>Wirkung des Handwärmer</German>
-            <Japanese>ハンドウォーマーの影響</Japanese>
-            <Chinese>暖暖包效果</Chinese>
-            <Chinesesimp>暖手器影响乘数</Chinesesimp>
-            <Dutch>Handwarmer impact</Dutch>
-        </Key>
-        <Key ID="STR_KAT_Hypothermia_HAND_WARMER_IMPACT_DESC">
-            <English>Multipler for impact of hand warmers on heat gain</English>
-            <Czech>Násobitel účinku Ohřívače Rukou na zisk tepla</Czech>
-            <French>Multiplicateur pour l'impact des chauffe-mains sur le gain de chaleur</French>
-            <Spanish>Multiplicador del impacto del calentador de manos en la ganancia de calor</Spanish>
-            <Italian>Moltiplicatore per l'impatto dei riscaldatori per le mani sull'aumento del calore</Italian>
-            <German>Multiplikator für den Einfluss von Handwärmern</German>
-            <Japanese>ハンドウォーマーが熱獲得に与える影響の乗数</Japanese>
-            <Chinese>暖暖包對體溫上升的影響倍數</Chinese>
-            <Chinesesimp>暖手器对热量增加影响的倍数</Chinesesimp>
-            <Dutch>Vermenigvuldiger voor de impact die handwarmers hebben op de stijging van temperatuur</Dutch>
         </Key>
         <Key ID="STR_KAT_Hypothermia_HandWarmer_Body">
             <English>Body: %1</English>
@@ -382,30 +322,6 @@
             <Turkish>Kullanılıyor</Turkish>
             <Finnish>Käytetään</Finnish>
             <Dutch>Wordt gebruikt</Dutch>
-        </Key>
-        <Key ID="STR_KAT_Hypothermia_WARM_CLOTHING">
-            <English>Warm Uniforms</English>
-            <Czech>Teplé uniformy</Czech>
-            <French>Uniformes chauds</French>
-            <Spanish>Uniformes Calientes</Spanish>
-            <Italian>Uniformi riscaldate</Italian>
-            <German>Warme Uniformen</German>
-            <Japanese>暖かいユニフォーム</Japanese>
-            <Chinese>保暖制服</Chinese>
-            <Chinesesimp>保暖制服</Chinesesimp>
-            <Dutch>Warme uniformen</Dutch>
-        </Key>
-        <Key ID="STR_KAT_Hypothermia_WARM_CLOTHING_DESC">
-            <English>List of clothing marked that reduces heat loss</English>
-            <Czech>Seznam oblečení, které snižuje ztrátu tepla</Czech>
-            <French>Liste des vêtements qui réduisent les chutes de température</French>
-            <Spanish>Listado de ropa marcada como reductora de la pérdida de calor</Spanish>
-            <Italian>Elenco degli indumenti segnati che riducono la perdita di calore</Italian>
-            <German>Liste der Kleidungsstücke, die den Wärmeverlust reduzieren</German>
-            <Japanese>熱損失を減らすことが出来るとマークされた衣類のリスト</Japanese>
-            <Chinese>標有減少熱量損失的服裝列表</Chinese>
-            <Chinesesimp>标有减少热量损失的衣物清单</Chinesesimp>
-            <Dutch>Lijst van kleding die temperatuurdalingen verminderen</Dutch>
         </Key>
         <Key ID="STR_KAT_Hypothermia_cba_name">
             <English>KAT - ADV Medical: Hypothermia</English>

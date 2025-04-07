@@ -232,42 +232,6 @@
             <Finnish>Aseta AUD-X-tyynyt</Finnish>
             <Dutch>Plaats AED-X pads</Dutch>
         </Key>
-        <Key ID="STR_KAT_Circulation_AEDX_Action_addSound">
-            <English>AED-X Vitals Monitor Audio ON</English>
-            <Czech>Zvýšit hlasitost AED-X</Czech>
-            <French>Augmenter le volume du AED-X</French>
-            <Spanish>Subir el volúmen del DEA X</Spanish>
-            <Italian>Aumentare il volume del DAE-X</Italian>
-            <Polish>Włącz dźwięki AED X</Polish>
-            <Portuguese>Aumentar o volume do DEA-X</Portuguese>
-            <Russian>Увеличьте громкость AED-X</Russian>
-            <German>AED-X lauter schalten</German>
-            <Korean>X-시리즈 자동심장충격기 소리 켜기</Korean>
-            <Japanese>AED-Xモニター音声オフ</Japanese>
-            <Chinese>提高AED X音量</Chinese>
-            <Chinesesimp>提高AED X音量</Chinesesimp>
-            <Turkish>AED X'in sesini arttırın</Turkish>
-            <Finnish>AUD-X-terveysmonitorin ääni päällä</Finnish>
-            <Dutch>AED-X vitale waarden monitor geluid AAN</Dutch>
-        </Key>
-        <Key ID="STR_KAT_Circulation_AEDX_Action_removeSound">
-            <English>AED-X Vitals Monitor Audio OFF</English>
-            <Czech>Snížit hlasitost AED-X</Czech>
-            <French>Réduire le volume du AED-X</French>
-            <Spanish>Bajar el volúmen del DEA X</Spanish>
-            <Italian>Ridurre il volume del DAE-X</Italian>
-            <Polish>Wycisz dźwięki AED X</Polish>
-            <Portuguese>Abaixar o volume do DEA-X</Portuguese>
-            <Russian>Уменьшите громкость AED-X</Russian>
-            <German>AED-X leiser schalten</German>
-            <Korean>X-시리즈 자동심장충격기 소리 끄기</Korean>
-            <Japanese>AED-Xモニター音声オン</Japanese>
-            <Chinese>降低AED X音量</Chinese>
-            <Chinesesimp>降低AED X音量</Chinesesimp>
-            <Turkish>AED X'in sesini kısın</Turkish>
-            <Finnish>AUD-X-terveysmonitorin ääni pois päältä</Finnish>
-            <Dutch>AED-X vitale waarden monitor geluid UIT</Dutch>
-        </Key>
         <Key ID="STR_KAT_Circulation_AEDX_Monitor_AED_DISARMED">
             <English>AED DISARMED</English>
             <Czech>AED DEAKTIVOVÁNO</Czech>
@@ -3299,18 +3263,6 @@
             <Chinesesimp>填塞进展计时器</Chinesesimp>
             <Dutch>Tamponade progressie timer</Dutch>
         </Key>
-        <Key ID="STR_KAT_Circulation_SIMPLEMED_ENABLE">
-            <English>AI Simple Medical activated?</English>
-            <Czech>Jednoduchý AI Medical aktivován?</Czech>
-            <French>Médecine simplifiée pour l'IA ?</French>
-            <Spanish>¿Activar Médico Simple para IA?</Spanish>
-            <Italian>AI Simple Medical attivato?</Italian>
-            <German>Vereinfachte med. Simulation für KI</German>
-            <Japanese>AI用単純化医療を有効化</Japanese>
-            <Chinese>AI 簡易醫療功能已啟用？</Chinese>
-            <Chinesesimp>AI简单医疗启用?</Chinesesimp>
-            <Dutch>AI/KI simpel medische simulatie geactiveerd?</Dutch>
-        </Key>
         <Key ID="STR_KAT_Circulation_StartCPR">
             <English>CPR Started</English>
             <Czech>KPR zahájena</Czech>
@@ -3374,23 +3326,6 @@
             <Chinesesimp>高级节奏</Chinesesimp>
             <Finnish>Edistyneet sydämen rytmit</Finnish>
             <Dutch>Geadvanceerde hartritmen</Dutch>
-        </Key>
-        <Key ID="STR_KAT_Circulation_SubCategory_Basic">
-            <English>Basic Settings</English>
-            <Czech>Základní nastavení</Czech>
-            <French>Paramètres basiques</French>
-            <Spanish>Parámetros básicos</Spanish>
-            <Italian>Impostazioni base</Italian>
-            <Polish>Podstawowe Ustawienia</Polish>
-            <Portuguese>Configurações básicas</Portuguese>
-            <Russian>Основные настройки</Russian>
-            <German>Grundeinstellungen</German>
-            <Korean>일반 설정</Korean>
-            <Japanese>基本設定</Japanese>
-            <Chinese>基礎設定</Chinese>
-            <Chinesesimp>基础设置</Chinesesimp>
-            <Finnish>Perusasetukset</Finnish>
-            <Dutch>Basis instellingen</Dutch>
         </Key>
         <Key ID="STR_KAT_Circulation_SubCategory_BloodDraw">
             <English>Blood draw Settings</English>
@@ -3461,24 +3396,6 @@
             <Turkish>AED-X kullanmak için gerekli eğitim seviyesi</Turkish>
             <Finnish>AUD-X:n käyttämiseen vaadittava koulutustaso</Finnish>
             <Dutch>Benodigd trainingsniveau voor het gebruik van een AED-X</Dutch>
-        </Key>
-        <Key ID="STR_KAT_Circulation_Using">
-            <English>Using</English>
-            <Czech>Používám</Czech>
-            <French>Utilisation</French>
-            <Spanish>Usando</Spanish>
-            <Italian>Usando</Italian>
-            <Polish>Używanie</Polish>
-            <Portuguese>Usando</Portuguese>
-            <Russian>С использованием</Russian>
-            <German>Schlucke</German>
-            <Korean>사용 중</Korean>
-            <Japanese>使用中</Japanese>
-            <Chinese>使用中</Chinese>
-            <Chinesesimp>服用中...</Chinesesimp>
-            <Turkish>Kullanılıyor</Turkish>
-            <Finnish>Käyttämällä</Finnish>
-            <Dutch>Wordt gebruikt</Dutch>
         </Key>
         <Key ID="STR_KAT_Circulation_ViewMonitor">
             <English>View Monitor</English>
@@ -3623,24 +3540,6 @@
             <Turkish>AED X-Serisi</Turkish>
             <Finnish>AUD X-sarja</Finnish>
             <Dutch>AED X-Serie</Dutch>
-        </Key>
-        <Key ID="STR_KAT_Circulation_X_already">
-            <English>Already one connected</English>
-            <Czech>Jeden již připojen</Czech>
-            <French>Un déjà connecté</French>
-            <Spanish>Ya hay uno conectado</Spanish>
-            <Italian>Già uno collegato</Italian>
-            <Polish>Jeden jest już podłączony</Polish>
-            <Portuguese>Já há um conectado</Portuguese>
-            <Russian>Уже один подключен</Russian>
-            <German>Bereits einer verbunden</German>
-            <Korean>AED가 이미 연결되어 있습니다</Korean>
-            <Japanese>すでに1つ接続済です</Japanese>
-            <Chinese>已經有連接一個了</Chinese>
-            <Chinesesimp>已经连接一个了</Chinesesimp>
-            <Turkish>Zaten bağlandı</Turkish>
-            <Finnish>Jo yhdistetty</Finnish>
-            <Dutch>Er is al een verbonden</Dutch>
         </Key>
         <Key ID="STR_KAT_Circulation_bloodbank">
             <English>[KAM] Medical Blood bank</English>

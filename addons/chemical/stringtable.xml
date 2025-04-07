@@ -69,40 +69,6 @@
             <Finnish>Tarkista kaasunaamarin kestävyys</Finnish>
             <Dutch>Check levensduur Gasmasker</Dutch>
         </Key>
-        <Key ID="STR_KAT_Chemical_ChemDetector_Mute">
-            <English>Mute Chemical Detector.</English>
-            <Czech>Ztlumit Chemický Detektor</Czech>
-            <French>Désactiver le son du détecteur de produits chimiques</French>
-            <Spanish>Silenciar Detector Quimico</Spanish>
-            <Italian>Silenzia il rilevatore chimico</Italian>
-            <Polish>Wycisz Detektor chemiczny</Polish>
-            <Portuguese>Silenciar detector químico</Portuguese>
-            <Russian>Заглушить химический детектор.</Russian>
-            <German>Chemischen Detektor stumm schalten.</German>
-            <Korean>화학물 탐지기 음소거</Korean>
-            <Japanese>化学剤検知器をミュート</Japanese>
-            <Chinese>化學探測器，靜音。</Chinese>
-            <Chinesesimp>禁用化学探测器。</Chinesesimp>
-            <Finnish>Mykistä kemikaalien ilmaisin</Finnish>
-            <Dutch>Demp chemicaliën detector.</Dutch>
-        </Key>
-        <Key ID="STR_KAT_Chemical_ChemDetector_Unmute">
-            <English>Unmute Chemical Detector.</English>
-            <Czech>Zapnout zvuk Chemického Detektoru</Czech>
-            <French>Activer le son du détecteur de produits chimiques</French>
-            <Spanish>Desilenciar Detector Quimico</Spanish>
-            <Italian>Smuta il rilevatore chimico</Italian>
-            <Polish>Odcisz Detektor chemiczny</Polish>
-            <Portuguese>Ativar som de detector químico</Portuguese>
-            <Russian>Включите химический детектор.</Russian>
-            <German>Chemischen Detektor laut schalten.</German>
-            <Korean>화학물 탐지기 음소거 해제</Korean>
-            <Japanese>化学剤検知器のミュート解除</Japanese>
-            <Chinese>化學探測器，解除靜音。</Chinese>
-            <Chinesesimp>取消化学检测器静音。</Chinesesimp>
-            <Finnish>Poista mykistys kemikaalien tunnistimesta.</Finnish>
-            <Dutch>Ontdemp chemicaliën detector.</Dutch>
-        </Key>
         <Key ID="STR_KAT_Chemical_ChemicalDetectorDescription">
             <English>Used to detect KAT toxic chemicals</English>
             <Czech>Používá se k detekování toxických chemikálií KAT</Czech>
@@ -636,40 +602,6 @@
             <Chinesesimp>确定戴防毒面具在毒气中站立多长时间而不会感染。</Chinesesimp>
             <Finnish>Määrittää, kuinka kauan voit seistä kaasussa kaasunaamarin kanssa vaikuttamatta siihen</Finnish>
             <Dutch>Bepaald hoelang je in gas kan staan zonder dat je geïnfecteerd raakt.</Dutch>
-        </Key>
-        <Key ID="STR_KAT_Chemical_SETTING_affectAI">
-            <English>Gas Affects AI</English>
-            <Czech>Plyn ovlivňuje AI</Czech>
-            <French>Le gaz affecte les IA</French>
-            <Spanish>El gas afecta a la IA</Spanish>
-            <Italian>Il gas è efficace contro la AI</Italian>
-            <Polish>Gaz wpływa na AI</Polish>
-            <Portuguese>O gás afeta a IA</Portuguese>
-            <Russian>Газ влияет на ИИ.</Russian>
-            <German>Gas beeinflusst KI</German>
-            <Korean>가스가 인공지능에게도 영향을 미침</Korean>
-            <Japanese>AIへのガスの影響</Japanese>
-            <Chinese>毒氣是否影響AI</Chinese>
-            <Chinesesimp>毒气影响AI</Chinesesimp>
-            <Finnish>Kaasu vaikuttaa tekoälyyn</Finnish>
-            <Dutch>Gas beïnvloed KI/AI</Dutch>
-        </Key>
-        <Key ID="STR_KAT_Chemical_SETTING_affectAI_disc">
-            <English>Determines if AI is affected by gas (If you are running this on a local server this can cause perfomance problems)</English>
-            <Czech>Určuje, zda je AI ovlivněno plynem (může způsobovat problémy s výkonem pokud bude spuštěno na lokálním serveru)</Czech>
-            <French>Détermine si les IA sont affectées par le gaz (Si cette option est activée sur des serveurs locaux cela peut créer des problèmes de performance)</French>
-            <Spanish>Determina si la IA es afectada por el gas (Si estas ejecutando esto en un server local, puede causar problemas de rendimiento)</Spanish>
-            <Italian>Determina se la AI subisce il gas (se stai eseguendo questo in un server locale questa può causare problemi di prestazioni)</Italian>
-            <Polish>Ustala czy AI może być zainfekowane (Może powodować problemy z wydajnością)</Polish>
-            <Portuguese>Determina se a IA é afetada pelo gás (se você estiver executando isso em um servidor local, isso pode causar problemas de desempenho)</Portuguese>
-            <Russian>Определяет, влияет ли GAS на искусственный интеллект (если вы запускаете его на локальном сервере, это может вызвать проблемы с производительностью).</Russian>
-            <German>Bestimmt, ob KI von Gas beeinflusst wird (Kann auf lokalen Servern zu Leistungsproblemen führen)</German>
-            <Korean>인공지능이 가스에 영향을 받는지 결정합니다.(로컬 서버에서 이를 실행하는 경우 성능 문제가 발생할 수 있음)</Korean>
-            <Japanese>AIがガスの影響を受けるかどうかを定義します (ローカル サーバーで実行している場合、パフォーマンスに影響する可能性があります)</Japanese>
-            <Chinese>決定AI是否受毒氣影響（如果您在本地伺服器上運行此遊戲，可能會導致效能問題）。</Chinese>
-            <Chinesesimp>确定AI是否受毒气影响（如果在本地服务器上运行此程序，则可能会导致性能问题）</Chinesesimp>
-            <Finnish>Määrittää, vaikuttaako kaasu tekoälyyn (jos käytät peliä paikallisella palvelimella, tämä voi aiheuttaa suorituskykyongelmia)</Finnish>
-            <Dutch>Bepaald of KI/AI beïnvloed wordt door gas (als je dit doet op een lokale server kan dit leiden tot prestatieproblemen)</Dutch>
         </Key>
         <Key ID="STR_KAT_Chemical_SETTING_dropWeaponChance">
             <English>Drop Weapon Chance</English>

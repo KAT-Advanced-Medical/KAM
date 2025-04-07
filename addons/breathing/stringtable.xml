@@ -1899,22 +1899,6 @@
             <Finnish>Ota rinnan tarkastus käyttöön</Finnish>
             <Dutch>Sta Thoraxinspectie toe</Dutch>
         </Key>
-        <Key ID="STR_KAT_Breathing_SETTING_inspectChest_enable_default">
-            <English>Default</English>
-            <Czech>Defaultní</Czech>
-            <French>Défaut</French>
-            <Spanish>Por defecto</Spanish>
-            <Italian>Predefinito</Italian>
-            <Portuguese>Padrão</Portuguese>
-            <Russian>Значение по умолчанию</Russian>
-            <German>Standard</German>
-            <Korean>기본</Korean>
-            <Japanese>デフォルト</Japanese>
-            <Chinese>預設</Chinese>
-            <Chinesesimp>违约</Chinesesimp>
-            <Finnish>Default</Finnish>
-            <Dutch>Standaard</Dutch>
-        </Key>
         <Key ID="STR_KAT_Breathing_SETTING_inspectChest_enable_simple">
             <English>Simple</English>
             <Czech>Jednoduché</Czech>
@@ -2379,38 +2363,6 @@
             <Finnish>Pulssioksimetrin käyttämiseen vaadittava koulutustaso</Finnish>
             <Dutch>Trainingsniveau benodigd voor het plaatsen van een pulsoximeter</Dutch>
         </Key>
-        <Key ID="STR_KAT_Breathing_TensionPneumothorax">
-            <English>Tension Pneumothorax</English>
-            <Czech>Tenzní pneumotorax</Czech>
-            <French>Pneumothorax sous tension</French>
-            <Spanish>Neumotórax a tensión</Spanish>
-            <Italian>Pneumotorace da tensione</Italian>
-            <Portuguese>Pneumotórax Hipertensivo</Portuguese>
-            <Russian>Напряженный пневмотораксе</Russian>
-            <German>Spannungspneumothorax</German>
-            <Korean>긴장성 기흉</Korean>
-            <Japanese>緊張性気胸(TPTX)</Japanese>
-            <Chinese>張力性氣胸</Chinese>
-            <Chinesesimp>张力性气胸</Chinesesimp>
-            <Finnish>jännitysilmarinta</Finnish>
-            <Dutch>Spanningspneumothorax</Dutch>
-        </Key>
-        <Key ID="STR_KAT_Breathing_TensionPneumothorax_short">
-            <English>TPTX</English>
-            <Czech>TPTX</Czech>
-            <French>TPTX</French>
-            <Spanish>NTXT</Spanish>
-            <Italian>TPTX</Italian>
-            <Portuguese>PTXH</Portuguese>
-            <Russian>TPTX</Russian>
-            <German>SPTX</German>
-            <Korean>긴장성 기흉</Korean>
-            <Japanese>緊張性気胸</Japanese>
-            <Chinese>張力性氣胸</Chinese>
-            <Chinesesimp>TPTX</Chinesesimp>
-            <Finnish>JSA</Finnish>
-            <Dutch>SPTX</Dutch>
-        </Key>
         <Key ID="STR_KAT_Breathing_UseBVM">
             <English>Use BVM</English>
             <Czech>Použít RV</Czech>
@@ -2492,22 +2444,6 @@
             <Chinesesimp>使用带氧气罐的BVM（车辆）</Chinesesimp>
             <Finnish>Käytä BVM:ää ajoneuvon happisäiliön kanssa</Finnish>
             <Dutch>Gebruik BVM met zuurstoftank (voertuig)</Dutch>
-        </Key>
-        <Key ID="STR_KAT_Breathing_UseBVM_PortableOxygen_Vehicle_Progress">
-            <English>Using BVM with Oxygen Tank (Vehicle)</English>
-            <Czech>Používání RV s Kyslíkovou Lahví (Vozidlo)</Czech>
-            <French>Utilisation du BVM avec un réservoir d'oxygène (Véhicule)</French>
-            <Spanish>Usar la BVM con un cilindro de oxígeno (vehículo)</Spanish>
-            <Italian>Usa maschera ambu con la bombola d'ossigeno (veicolo)</Italian>
-            <Portuguese>Usando BVM com cilindro de oxigênio (veículo)</Portuguese>
-            <Russian>Использование BVM с кислородным баллоном (транспортное средство)</Russian>
-            <German>Beatme mit BVM und Sauerstoff (vom Fahrzeug)</German>
-            <Korean>산소 탱크가 달린 인공호흡기(차량) 사용 중</Korean>
-            <Japanese>BVMと酸素ボンベ(車両)を使用中</Japanese>
-            <Chinese>正在使用連接氧氣筒的BVM（車載）</Chinese>
-            <Chinesesimp>使用带氧气罐的BVM（车辆）</Chinesesimp>
-            <Finnish>BVM:n käyttäminen ajoneuvon happisäiliön kanssa</Finnish>
-            <Dutch>Beademing met BVM en zuurstoftank (voertuig)</Dutch>
         </Key>
         <Key ID="STR_KAT_Breathing_UseBVM_PutAway">
             <English>Put away BVM</English>

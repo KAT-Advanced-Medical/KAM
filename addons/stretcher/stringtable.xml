@@ -243,41 +243,5 @@
             <Chinesesimp>展开担架</Chinesesimp>
             <Dutch>Ontplooi brancard</Dutch>
         </Key>
-        <Key ID="STR_KAT_Stretcher_disassemble_attach_display">
-            <English>Attach to</English>
-            <Czech>Připevnit k</Czech>
-            <French>Attacher à</French>
-            <Spanish>Adjuntar a</Spanish>
-            <Italian>Collega a</Italian>
-            <Polish>Przyczep do</Polish>
-            <Portuguese>Anexar a</Portuguese>
-            <Russian>Приложить к</Russian>
-            <German>Anhängen an</German>
-            <Korean>에 부착</Korean>
-            <Japanese>取り付ける</Japanese>
-            <Chinese>附著到</Chinese>
-            <Chinesesimp>附着到</Chinesesimp>
-            <Turkish>Şuna Bağla</Turkish>
-            <Finnish>Kiinnitä se</Finnish>
-            <Dutch>Verbind aan</Dutch>
-        </Key>
-        <Key ID="STR_KAT_Stretcher_disassemble_stretcher_display">
-            <English>Disassemble Stretcher</English>
-            <Czech>Rozebrat nosítka</Czech>
-            <French>Désassembler la civière</French>
-            <Spanish>Desarmar Camilla</Spanish>
-            <Italian>Smonta la barella</Italian>
-            <Polish>Złóż nosze</Polish>
-            <Portuguese>Desmontar maca</Portuguese>
-            <Russian>Разобрать носилки</Russian>
-            <German>Trage einklappen</German>
-            <Korean>들것 분리</Korean>
-            <Japanese>担架を分解する</Japanese>
-            <Chinese>拆卸擔架</Chinese>
-            <Chinesesimp>拆卸担架</Chinesesimp>
-            <Turkish>Sedyeyi sökün</Turkish>
-            <Finnish>Pura paarit</Finnish>
-            <Dutch>Ontmantel brancard</Dutch>
-        </Key>
     </Package>
 </Project>

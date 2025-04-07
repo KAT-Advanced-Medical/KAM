@@ -18,40 +18,6 @@
             <Finnish>Mahdollistaa pitkälle edenneet murtumat</Finnish>
             <Dutch>Activeert geadvanceerde breuken</Dutch>
         </Key>
-        <Key ID="STR_KAT_Surgery_BREATH_CHECK_MEDLEVEL">
-            <English>Allow Breath Check</English>
-            <Czech>Zdravotnická úroveň potřebná pro kontrolu dechu</Czech>
-            <French>Niveau médical requis pour contrôler l'haleine</French>
-            <Spanish>Nivel médico requerido para analizar el aliento</Spanish>
-            <Italian>Livello medico richiesto per il controllo del respiro</Italian>
-            <Polish>Poziom wyszkolenia medycznego potrzebny do sprawdzenia oddechu</Polish>
-            <Portuguese>Nível médico necessário para analisar a o hálito</Portuguese>
-            <Russian>Разрешить проверку дыхания</Russian>
-            <German>Erforderliches medizinisches Training für die Prüfung des Atems</German>
-            <Korean>호흡 검사를 하는 데 필요한 의료 레벨 수준</Korean>
-            <Japanese>呼吸確認の許可</Japanese>
-            <Chinese>呼吸檢查需要的醫療等級</Chinese>
-            <Chinesesimp>呼吸检查所需的医疗水平</Chinesesimp>
-            <Finnish>Salli tarkistaa hengitys</Finnish>
-            <Dutch>Benodigde training om de adem te kunnen controleren</Dutch>
-        </Key>
-        <Key ID="STR_KAT_Surgery_BREATH_CHECK_TIME">
-            <English>Breath Check Time</English>
-            <Czech>Čas provádění kontroly dechu</Czech>
-            <French>Temps pour contrôler l'haleine</French>
-            <Spanish>Tiempo para checar el aliento</Spanish>
-            <Italian>Tempo per eseguire il controllo del respiro</Italian>
-            <Polish>Czas potrzebny na sprawdzenie oddechu</Polish>
-            <Portuguese>Duração da verificação de hálito</Portuguese>
-            <Russian>Время проверки дыхания</Russian>
-            <German>Zeit für die Durchführung der Atemkontrolle</German>
-            <Korean>호흡 확인 시간</Korean>
-            <Japanese>呼吸確認の所要時間</Japanese>
-            <Chinese>進行呼吸檢查的時間</Chinese>
-            <Chinesesimp>进行呼吸检查的时间</Chinesesimp>
-            <Finnish>Hengityksen tarkistusaika</Finnish>
-            <Dutch>Benodigde tijd om ademhaling te controleren</Dutch>
-        </Key>
         <Key ID="STR_KAT_Surgery_CLAMPED">
             <English>clamped</English>
             <Czech>Upnuto</Czech>
@@ -290,57 +256,6 @@
             <Finnish>Puristin</Finnish>
             <Dutch>Klem</Dutch>
         </Key>
-        <Key ID="STR_KAT_Surgery_DIALYSIS_TIMER">
-            <English>Time to perform dialysis</English>
-            <Czech>Čas pro dialýzu</Czech>
-            <French>Temps pour effectuer une dialyse</French>
-            <Spanish>Tiempo para realizar dialisis</Spanish>
-            <Italian>Tempo necessario per eseguire la dialisi</Italian>
-            <Polish>Czas potrzebny na dializę</Polish>
-            <Portuguese>Duração de diálise</Portuguese>
-            <Russian>Время для проведения диализа</Russian>
-            <German>Zeit zur Durchführung der Dialyse</German>
-            <Korean>투석 수행 시간</Korean>
-            <Japanese>透析の所要時間</Japanese>
-            <Chinese>進行透析的時間</Chinese>
-            <Chinesesimp>进行透析的时间</Chinesesimp>
-            <Finnish>Dialyysin suorittamisen aika</Finnish>
-            <Dutch>Tijd benodigd om dialyse uit te voeren</Dutch>
-        </Key>
-        <Key ID="STR_KAT_Surgery_ETOMIDATE_TIMER">
-            <English>Etomidate cycle timer</English>
-            <Czech>Časovač cyklu Etomidátu</Czech>
-            <French>Durée du cycle de l'étomidate</French>
-            <Spanish>Tiempo para ciclo del Etomidato</Spanish>
-            <Italian>Timer ciclo Etomidato</Italian>
-            <Polish>Cykl czasu Etomidatu</Polish>
-            <Portuguese>Tempo de ciclo do Etomidato</Portuguese>
-            <Russian>Таймер цикла Этомидации</Russian>
-            <German>Etomidat-Zyklus-Timer</German>
-            <Korean>에토미데이트 약효 시간</Korean>
-            <Japanese>エトミデートの効果時間</Japanese>
-            <Chinese>依托咪酯循環計時器</Chinese>
-            <Chinesesimp>依托咪酯循环计时器</Chinesesimp>
-            <Finnish>Etomidaattisyklin ajastin</Finnish>
-            <Dutch>Etomidaat cyclus timer</Dutch>
-        </Key>
-        <Key ID="STR_KAT_Surgery_ETOMIDATE_TIMER_DESC">
-            <English>Determines how long each dose of etomidate stays in a patient</English>
-            <Czech>Určuje, jak dlouho každá dávka etomidátu zůstává v pacientovi</Czech>
-            <French>Détermine combien de temps chaque dose d'étomidate va rester dans le corps du patient</French>
-            <Spanish>Determina la duración de cada dosis de Etomidato en el paciente</Spanish>
-            <Italian>Determina per quanto tempo ciascuna dose di etomidato rimane in un paziente</Italian>
-            <Polish>Ustala jak długo każda dawka Etomidatu zostaje w pacjencie</Polish>
-            <Portuguese>Determina a duração de cada dose de Etomidato no paciente</Portuguese>
-            <Russian>Определяет, как долго каждая доза Этомидата остается в организме пациента</Russian>
-            <German>Bestimmt, wie lange jede Etomidat-Dosis im Patienten verbleibt</German>
-            <Korean>에토미데이트의 각 투여량이 환자에게 얼마나 오래 가는지 결정합니다.</Korean>
-            <Japanese>エトミデートが患者に留まる時間を定義します</Japanese>
-            <Chinese>確定依托咪酯在患者體內的停留時間</Chinese>
-            <Chinesesimp>确定依托咪酯在患者体内的停留时间</Chinesesimp>
-            <Finnish>Määrittää, kuinka kauan kukin etomidaattiannos pysyy potilaassa</Finnish>
-            <Dutch>Bepaald hoe lang elke dosis etomidaat in een patiënt blijft</Dutch>
-        </Key>
         <Key ID="STR_KAT_Surgery_EXPOSED">
             <English>exposed</English>
             <Czech>Roztaženo</Czech>
@@ -493,40 +408,6 @@
             <Chinesesimp>冲洗伤口</Chinesesimp>
             <Finnish>Huuhtele haava</Finnish>
             <Dutch>Irrigeer wond</Dutch>
-        </Key>
-        <Key ID="STR_KAT_Surgery_KIDNEY_ACTION">
-            <English>Kidney damage/failure</English>
-            <Czech>Poškození/selhání ledvin</Czech>
-            <French>Dégâts/Insuffisance rénale</French>
-            <Spanish>Insuficiencia/Daño renal</Spanish>
-            <Italian>Danno/insufficienza renale</Italian>
-            <Polish>Uszkodzenie nerek</Polish>
-            <Portuguese>Dano/falha renal</Portuguese>
-            <Russian>Повреждение/недостаточность почек</Russian>
-            <German>Nierenschäden/-versagen</German>
-            <Korean>신장 손상/기능상실</Korean>
-            <Japanese>腎臓の損傷/機能不全</Japanese>
-            <Chinese>腎損傷/衰竭</Chinese>
-            <Chinesesimp>肾损伤/衰竭</Chinesesimp>
-            <Finnish>Munuaisvaurio/munuaisten vajaatoiminta</Finnish>
-            <Dutch>Nierschade/-falen</Dutch>
-        </Key>
-        <Key ID="STR_KAT_Surgery_KIDNEY_ACTION_DESC">
-            <English>Enables kidney damage caused by overuse of saline</English>
-            <Czech>Umožňuje poškození ledvin způsobené nadužíváním fyziologického roztoku</Czech>
-            <French>Autorise les dégâts rénaux causés par une surutilisation de solution saline</French>
-            <Spanish>Permite el daño de los riñones causado por uso excesivo de salino</Spanish>
-            <Italian>Consente danni renali causati da un uso eccessivo di soluzione salina</Italian>
-            <Polish>Włącza uszkadzanie nerek spowodowane zbytnim użyciem soli fizjologicznej</Polish>
-            <Portuguese>Permite dano renal causado pelo uso excessivo de soro fisiológico</Portuguese>
-            <Russian>Предотвращает повреждение почек, вызванное чрезмерным употреблением физиологического раствора</Russian>
-            <German>Ermöglicht Nierenschäden, die durch übermäßigen Gebrauch von Kochsalzlösung verursacht werden</German>
-            <Korean>식염수 과다 사용으로 인한 신장 손상 활성화</Korean>
-            <Japanese>生理食塩液の過剰投与(浸透圧過剰)による腎臓の損傷を可能にします</Japanese>
-            <Chinese>啟用因過度使用生理鹽水而造成的腎臟損害</Chinese>
-            <Chinesesimp>启用因过度使用生理盐水而造成的肾脏损害</Chinesesimp>
-            <Finnish>Mahdollistaa suolaliuoksen liiallisen käytön aiheuttaman munuaisvaurion</Finnish>
-            <Dutch>Schakelt nierschade bij een te hoog gebruik saline in</Dutch>
         </Key>
         <Key ID="STR_KAT_Surgery_NPWT_ACTION_MEDLEVEL">
             <English>Allow NPWT</English>
@@ -697,24 +578,6 @@
             <Finnish>Luulevy</Finnish>
             <Dutch>Botplaat</Dutch>
         </Key>
-        <Key ID="STR_KAT_Surgery_Pushing">
-            <English>Pushing</English>
-            <Czech>Aplikuji</Czech>
-            <French>Administration</French>
-            <Spanish>Administrando</Spanish>
-            <Italian>Somministrando</Italian>
-            <Polish>Wstrzykiwanie</Polish>
-            <Portuguese>Administrando</Portuguese>
-            <Russian>Принять</Russian>
-            <German>Verabreiche</German>
-            <Korean>사용 중</Korean>
-            <Japanese>注入中</Japanese>
-            <Chinese>注入中</Chinese>
-            <Chinesesimp>注入中</Chinesesimp>
-            <Turkish>Kullanılıyor</Turkish>
-            <Finnish>Työntää</Finnish>
-            <Dutch>Toedienen</Dutch>
-        </Key>
         <Key ID="STR_KAT_Surgery_REBOA_ACTION_MEDLEVEL">
             <English>Allow REBOA</English>
             <Czech>Povolit REBOA</Czech>
@@ -806,20 +669,6 @@
             <Dutch>Voer REBOA eenheid op</Dutch>
         </Key>
         <Key ID="STR_KAT_Surgery_Reboa_DescShort">
-            <English>REBOA Unit</English>
-            <Czech>REBOA Jednotka</Czech>
-            <French>Unité REBOA</French>
-            <Spanish>Unidad REBOA</Spanish>
-            <Italian>Unità REBOA</Italian>
-            <Portuguese>Unidade REBOA</Portuguese>
-            <Russian>REBOA</Russian>
-            <German>ROBOA-Einheit</German>
-            <Japanese>REBOAユニット</Japanese>
-            <Chinese>REBOA 設備</Chinese>
-            <Chinesesimp>REBOA单元</Chinesesimp>
-            <Dutch>ROBOA eenheid</Dutch>
-        </Key>
-        <Key ID="STR_KAT_Surgery_Reboa_DescUse">
             <English>Used to block the aorta and prevent bleeding below the heart</English>
             <Czech>Používá se k zablokování aorty a zabránění krvácení pod úrovní srdce</Czech>
             <French>Utilisé pour bloquer l'aorte et empêcher le saignement en dessous du coeur</French>
@@ -832,6 +681,20 @@
             <Chinese>用於阻斷主動脈，防止心臟以下的出血</Chinese>
             <Chinesesimp>用于阻断主动脉，防止心脏以下出血</Chinesesimp>
             <Dutch>Wordt gebruikt om de aorta te blokkeren, en bloedingen onder het hart te stelpen</Dutch>
+        </Key>
+        <Key ID="STR_KAT_Surgery_Reboa_DisplayName">
+            <English>REBOA Unit</English>
+            <Czech>REBOA Jednotka</Czech>
+            <French>Unité REBOA</French>
+            <Spanish>Unidad REBOA</Spanish>
+            <Italian>Unità REBOA</Italian>
+            <Portuguese>Unidade REBOA</Portuguese>
+            <Russian>REBOA</Russian>
+            <German>ROBOA-Einheit</German>
+            <Japanese>REBOAユニット</Japanese>
+            <Chinese>REBOA 設備</Chinese>
+            <Chinesesimp>REBOA单元</Chinesesimp>
+            <Dutch>ROBOA eenheid</Dutch>
         </Key>
         <Key ID="STR_KAT_Surgery_Reboa_Remove_Action">
             <English>Removing</English>
@@ -1184,23 +1047,6 @@
             <Finnish>Paikkakirurgia</Finnish>
             <Dutch>Locaties waar chirurgische acties uitgevoerd kan worden</Dutch>
         </Key>
-        <Key ID="STR_KAT_Surgery_SURGICAL_TIMER">
-            <English>Surgical Action Time</English>
-            <Czech>Čas provádění chirurgické akce</Czech>
-            <French>Temps pour effectuer des actions chirurgicales</French>
-            <Spanish>Tiempo para realizar acciones quirúrgicas</Spanish>
-            <Italian>Tempo per eseguire azioni chirurgiche</Italian>
-            <Polish>Czas potrzebny na wykonanie zabiegów chirurgicznych</Polish>
-            <Portuguese>Duração de ações cirúrgicas</Portuguese>
-            <Russian>Время хирургического вмешательства</Russian>
-            <German>Zeit für die Durchführung chirurgischer Maßnahmen</German>
-            <Korean>수술 수행 시간</Korean>
-            <Japanese>外科的処置の所要時間</Japanese>
-            <Chinese>執行手術的時間</Chinese>
-            <Chinesesimp>执行手术的时间</Chinesesimp>
-            <Finnish>Kirurgisen toiminnan aika</Finnish>
-            <Dutch>Benodigde tijd om een chirurgische actie uit te voeren</Dutch>
-        </Key>
         <Key ID="STR_KAT_Surgery_Scalpel_DescShort">
             <English>Used for creating incisions</English>
             <Czech>Používá se pro vytváření řezů a čištění ran</Czech>
@@ -1268,23 +1114,6 @@
             <Chinesesimp>骨折设置</Chinesesimp>
             <Finnish>Murtumien asetukset</Finnish>
             <Dutch>Instellingen voor fracturen</Dutch>
-        </Key>
-        <Key ID="STR_KAT_Surgery_SubCategory_Kidney">
-            <English>Kidney Settings</English>
-            <Czech>Nastavení ledvin</Czech>
-            <French>Paramètres des reins</French>
-            <Spanish>Parámetros para riñones</Spanish>
-            <Italian>Impostazioni renali</Italian>
-            <Polish>Ustawienia Nerek</Polish>
-            <Portuguese>Configurações do rim</Portuguese>
-            <Russian>Настройки почек</Russian>
-            <German>Niereneinstellungen</German>
-            <Korean>신장 설정</Korean>
-            <Japanese>腎臓設定</Japanese>
-            <Chinese>腎臟設定</Chinese>
-            <Chinesesimp>肾脏设置</Chinesesimp>
-            <Finnish>Munuaisten asetukset</Finnish>
-            <Dutch>Instellingen voor nieren</Dutch>
         </Key>
         <Key ID="STR_KAT_Surgery_SubCategory_NPWT">
             <English>Dressing Vacuum (NPWT) Settings</English>
@@ -1476,20 +1305,6 @@
             <Dutch>Hartstilstand - Niet schokbaar</Dutch>
         </Key>
         <Key ID="STR_KAT_Surgery_Ultra_DescShort">
-            <English>Handheld Ultrasound</English>
-            <Czech>Ruční ultrazvuk</Czech>
-            <French>Échographie portable</French>
-            <Spanish>Ultrasonidos Portátil</Spanish>
-            <Italian>Ecografo portatile</Italian>
-            <Portuguese>Ultrassom Portátil</Portuguese>
-            <Russian>Портативный Ультразвук</Russian>
-            <German>Handultraschall</German>
-            <Japanese>手持ち式超音波スキャナー</Japanese>
-            <Chinese>手持式超音波</Chinese>
-            <Chinesesimp>手持式超声</Chinesesimp>
-            <Dutch>Mobiele echograaf</Dutch>
-        </Key>
-        <Key ID="STR_KAT_Surgery_Ultra_DescUse">
             <English>Used to assess internal injuries</English>
             <Czech>Používá se ke zjištění vnitřních zranění</Czech>
             <French>Utilisé pour contrôlé les blessures internes</French>
@@ -1502,6 +1317,20 @@
             <Chinese>用於評估內部損傷</Chinese>
             <Chinesesimp>用于评估内部损伤</Chinesesimp>
             <Dutch>Wordt gebruikt om interne verwondingen te evalueren</Dutch>
+        </Key>
+        <Key ID="STR_KAT_Surgery_Ultra_DisplayName">
+            <English>Handheld Ultrasound</English>
+            <Czech>Ruční ultrazvuk</Czech>
+            <French>Échographie portable</French>
+            <Spanish>Ultrasonidos Portátil</Spanish>
+            <Italian>Ecografo portatile</Italian>
+            <Portuguese>Ultrassom Portátil</Portuguese>
+            <Russian>Портативный Ультразвук</Russian>
+            <German>Handultraschall</German>
+            <Japanese>手持ち式超音波スキャナー</Japanese>
+            <Chinese>手持式超音波</Chinese>
+            <Chinesesimp>手持式超声</Chinesesimp>
+            <Dutch>Mobiele echograaf</Dutch>
         </Key>
         <Key ID="STR_KAT_Surgery_Ultra_Thorasic">
             <English>Lung Status: %1</English>
@@ -1580,24 +1409,6 @@
             <Chinesesimp>进行超声评估</Chinesesimp>
             <Dutch>Voer echo evaluatie uit</Dutch>
         </Key>
-        <Key ID="STR_KAT_Surgery_Using">
-            <English>Using</English>
-            <Czech>Používám</Czech>
-            <French>Utilisation</French>
-            <Spanish>Usando</Spanish>
-            <Italian>Usando</Italian>
-            <Polish>Używanie</Polish>
-            <Portuguese>Usando</Portuguese>
-            <Russian>С помощью</Russian>
-            <German>Verwenden</German>
-            <Korean>사용 중</Korean>
-            <Japanese>使用中</Japanese>
-            <Chinese>使用中</Chinese>
-            <Chinesesimp>使用中</Chinesesimp>
-            <Turkish>Kullanılıyor</Turkish>
-            <Finnish>Käytetään</Finnish>
-            <Dutch>Gebruiken</Dutch>
-        </Key>
         <Key ID="STR_KAT_Surgery_Vacuum_Action">
             <English>Applying</English>
             <Czech>Aplikování</Czech>
@@ -1666,94 +1477,9 @@
             <Finnish>Pukeutumistyhjiö</Finnish>
             <Dutch>Vacuümverband (NPWT)</Dutch>
         </Key>
-        <Key ID="STR_KAT_Surgery_breath_check">
-            <English>Patient's breath is harsh and metallic</English>
-            <Czech>Dech pacienta je trpký a kovový</Czech>
-            <French>L'haleine du patient est mauvaise et métallique</French>
-            <Spanish>El aliento del paciente es áspero y metálico</Spanish>
-            <Italian>Il respiro del paziente è faticoso e metallico</Italian>
-            <Polish>Oddech pachnie ostro i metalicznie</Polish>
-            <Portuguese>O hálito do paciente é áspero e metálico</Portuguese>
-            <Russian>Дыхание пациента резкое и металлическое</Russian>
-            <German>Der Atem des Patienten ist rau und metallisch</German>
-            <Korean>환자의 호흡이 거칠고 쇠같습니다.</Korean>
-            <Japanese>患者の吐息は荒々しく金属臭がする</Japanese>
-            <Chinese>(Traditional) 病人的呼吸粗重且帶有金屬味</Chinese>
-            <Chinesesimp>(Simplified) 病人的呼吸粗重且带有金属味</Chinesesimp>
-            <Finnish>Potilaan hengitys on kovaa ja metallista</Finnish>
-            <Dutch>Patiënts adem is ruw en metallisch</Dutch>
-        </Key>
-        <Key ID="STR_KAT_Surgery_breath_good">
-            <English>Patient's breath is ok</English>
-            <Czech>Dech pacienta je v pořádku</Czech>
-            <French>L'haleine du patient est bonne</French>
-            <Spanish>El aliento del paciente es normal</Spanish>
-            <Italian>Il respiro del paziente è ok</Italian>
-            <Polish>Oddech pachnie dobrze</Polish>
-            <Portuguese>O hálito do paciente é normal</Portuguese>
-            <Russian>Дыхание пациента в норме</Russian>
-            <German>Der Atem des Patienten ist in Ordnung</German>
-            <Korean>환자의 호흡이 정상입니다</Korean>
-            <Japanese>患者の吐息は一般的です</Japanese>
-            <Chinese>病人的呼吸正常</Chinese>
-            <Chinesesimp>病人的呼吸正常</Chinesesimp>
-            <Finnish>Potilaan hengitys on hyvä</Finnish>
-            <Dutch>Patiënts adem is ok</Dutch>
-        </Key>
-        <Key ID="STR_KAT_Surgery_breath_mild">
-            <English>Patient's breath is slightly fruity</English>
-            <Czech>Dech pacienta je mírně ovocný</Czech>
-            <French>L'haleine du patient est légèrement fruitée</French>
-            <Spanish>El aliento del paciente es dulce</Spanish>
-            <Italian>Il respiro del paziente è leggermente fruttato</Italian>
-            <Polish>Oddech pachnie lekko owocowo</Polish>
-            <Portuguese>O hálito do paciente é ligeiramente frutado</Portuguese>
-            <Russian>Дыхание пациента слегка фруктовое</Russian>
-            <German>Der Atem des Patienten ist leicht fruchtig</German>
-            <Korean>환자의 호흡에서 과일향이 약간 납니다</Korean>
-            <Japanese>患者の吐息は少し果物臭がする</Japanese>
-            <Chinese>病人的呼吸帶有淡淡的果香</Chinese>
-            <Chinesesimp>病人的呼吸带有淡淡的果香</Chinesesimp>
-            <Finnish>Potilaan hengitys on hieman hedelmäistä</Finnish>
-            <Dutch>Patiënts adem is licht fruitig</Dutch>
-        </Key>
-        <Key ID="STR_KAT_Surgery_breath_stink">
-            <English>Patient's breath is harsh and metallic</English>
-            <Czech>Dech pacienta je trpký a kovový</Czech>
-            <French>L'haleine du patient est mauvaise et métallique</French>
-            <Spanish>El aliento del paciente es áspero y metálico</Spanish>
-            <Italian>Il respiro del paziente è faticoso e metallico</Italian>
-            <Polish>Oddech pachnie ostro i metalicznie</Polish>
-            <Portuguese>O hálito do paciente é áspero e metálico</Portuguese>
-            <Russian>Дыхание пациента резкое и металлическое</Russian>
-            <German>Der Atem des Patienten ist rau und metallisch</German>
-            <Korean>환자의 호흡이 거칠고 쇠같습니다.</Korean>
-            <Japanese>患者の吐息は荒々しく金属臭がする</Japanese>
-            <Chinese>病人的呼吸粗重且帶有金屬味</Chinese>
-            <Chinesesimp>病人的呼吸粗重且带有金属味</Chinesesimp>
-            <Finnish>Potilaan hengitys on kovaa ja metallista</Finnish>
-            <Dutch>Patiënts adem is ruw en metallisch</Dutch>
-        </Key>
         <Key ID="STR_KAT_Surgery_cba_name">
             <English>KAT - ADV Medical: Surgery</English>
             <Japanese>KAM - 外科 (Surgery)</Japanese>
-        </Key>
-        <Key ID="STR_KAT_Surgery_dialysis">
-            <English>Perform Dialysis</English>
-            <Czech>Provést dialýzu</Czech>
-            <French>Effectuer une dialyse</French>
-            <Spanish>Realizar dialisis</Spanish>
-            <Italian>Eseguire la dialisi</Italian>
-            <Polish>Przeprowadź dializę</Polish>
-            <Portuguese>Realizar diálise</Portuguese>
-            <Russian>Провести диализ</Russian>
-            <German>Dialyse durchführen</German>
-            <Korean>투석 수행</Korean>
-            <Japanese>透析を行う</Japanese>
-            <Chinese>進行透析</Chinese>
-            <Chinesesimp>进行透析</Chinesesimp>
-            <Finnish>Suorita dialyysi</Finnish>
-            <Dutch>Voer dialyse uit</Dutch>
         </Key>
         <Key ID="STR_KAT_Surgery_fracture_check">
             <English>Check Fracture</English>
@@ -1874,24 +1600,6 @@
             <Finnish>%1 teki viillon %2</Finnish>
             <Dutch>%1 heeft een incisie gemaakt op %2</Dutch>
         </Key>
-        <Key ID="STR_KAT_Surgery_inject_log">
-            <English>%1 injected %2</English>
-            <Czech>%1 aplikoval %2</Czech>
-            <French>%1 a injecté un(e) %2</French>
-            <Spanish>%1 inyectó %2</Spanish>
-            <Italian>%1 ha iniettato %2</Italian>
-            <Polish>%1 włożył %2</Polish>
-            <Portuguese>%1 injetou %2</Portuguese>
-            <Russian>%1 ввел %2</Russian>
-            <German>%1 injizierte %2</German>
-            <Korean>%2 부위에 %1 주사됨</Korean>
-            <Japanese>%1 が%2を注射した</Japanese>
-            <Chinese>%1 被注射 %2</Chinese>
-            <Chinesesimp>%1 被注射 %2</Chinesesimp>
-            <Turkish>% 1,% 2 eklendi</Turkish>
-            <Finnish>%1 pistetään %2</Finnish>
-            <Dutch>%1 injecteerde %2</Dutch>
-        </Key>
         <Key ID="STR_KAT_Surgery_perform">
             <English>Performing</English>
             <Czech>Provádění dialýzy</Czech>
@@ -1908,24 +1616,6 @@
             <Chinesesimp>透析中</Chinesesimp>
             <Finnish>Suorietaan</Finnish>
             <Dutch>Wordt uitgevoerd</Dutch>
-        </Key>
-        <Key ID="STR_KAT_Surgery_push_log">
-            <English>%1 pushed %2</English>
-            <Czech>%1 aplikoval %2</Czech>
-            <French>%1 a administré un(e) %2</French>
-            <Spanish>%1 administró %2</Spanish>
-            <Italian>%1 ha somministrato %2</Italian>
-            <Polish>%1 wstrzyknął %2</Polish>
-            <Portuguese>%1 administrou %2</Portuguese>
-            <Russian>%1 дал %2</Russian>
-            <German>%1 verabreichte %2</German>
-            <Korean>%2 부위에 %1 사용됨</Korean>
-            <Japanese>%1 が%2を注入した</Japanese>
-            <Chinese>%1 被注入 %2</Chinese>
-            <Chinesesimp>%1 被注入 %2</Chinesesimp>
-            <Turkish>% 1,% 2 eklendi</Turkish>
-            <Finnish>%1 työnnettiin %2</Finnish>
-            <Dutch>%1 diende %2 toe</Dutch>
         </Key>
         <Key ID="STR_KAT_Surgery_surgeryToolbox">
             <English>[KAM] Surgery Box</English>
@@ -1960,24 +1650,6 @@
             <Chinesesimp>在 %3 上有一处 %1 %2</Chinesesimp>
             <Finnish>%1 %2 murtuma %3</Finnish>
             <Dutch>%1 %2 de breuk op %3</Dutch>
-        </Key>
-        <Key ID="STR_KAT_Surgery_use_log">
-            <English>%1 used %2</English>
-            <Czech>%1 aplikoval %2</Czech>
-            <French>%1 a utilisé un(e) %2</French>
-            <Spanish>%1 usó %2</Spanish>
-            <Italian>%1 ha usato %2</Italian>
-            <Polish>%1 użył %2</Polish>
-            <Portuguese>%1 usou %2</Portuguese>
-            <Russian>%1 использовал %2</Russian>
-            <German>%1 verwendete %2</German>
-            <Korean>%2 부위에 %1 사용됨</Korean>
-            <Japanese>%1 が%2を使用した</Japanese>
-            <Chinese>%1 使用了 %2</Chinese>
-            <Chinesesimp>%1 使用了 %2</Chinesesimp>
-            <Turkish>% 1,% 2 eklendi</Turkish>
-            <Finnish>%1 käytetty %2</Finnish>
-            <Dutch>%1 gebruikte %2</Dutch>
         </Key>
     </Package>
 </Project>
