@@ -1,5 +1,5 @@
 #define COMPONENT ophthalmology
-#define COMPONENT_BEAUTIFIED KAT - Ophthalmology
+#define COMPONENT_BEAUTIFIED Ophthalmology
 #include "\x\kat\addons\main\script_mod.hpp"
 
 // #define DEBUG_MODE_FULL

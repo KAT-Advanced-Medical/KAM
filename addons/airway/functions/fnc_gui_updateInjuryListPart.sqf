@@ -26,7 +26,7 @@ if (_target getVariable [QGVAR(overstretch), false] && _selectionN isEqualTo 0) 
 
 if (_target getVariable [QGVAR(airway), false] && _selectionN isEqualTo 0) then {
     private _a = _target getVariable [QGVAR(airway_item), ""];
-    if !(_a isEqualTo "") then {
+    if (_a isNotEqualTo "") then {
         private _text = format [LSTRING(%1_Display), _a];
         _entries pushBack [localize _text, [0.1, 1, 1, 1]];
     };

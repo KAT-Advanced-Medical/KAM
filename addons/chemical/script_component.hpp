@@ -1,5 +1,5 @@
 #define COMPONENT chemical
-#define COMPONENT_BEAUTIFIED KAT - Chemical
+#define COMPONENT_BEAUTIFIED Chemical
 #include "\x\kat\addons\main\script_mod.hpp"
 #include "\x\kat\addons\gui\gui_defines.hpp"
 

@@ -30,7 +30,7 @@ class CfgWeapons
         hiddenSelections[] = {"eye_l","eye_r"};
         hiddenSelectionsTextures[] = {"",QPATHTOF(models\eyecovers\camo1_ca.paa)};
         visionMode[] = {};
-        class ItemInfo: ItemInfo
+        class ItemInfo
         {
             type = 616;
             hiddenSelections[] = {"eye_l","eye_r"};

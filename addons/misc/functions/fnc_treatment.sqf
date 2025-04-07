@@ -27,7 +27,7 @@ if (uiNamespace getVariable [QACEGVAR(interact_menu,cursorMenuOpened), false]) e
     [ACEFUNC(medical_treatment,treatment), _this] call CBA_fnc_execNextFrame;
 };
 
-if !(_this call ACEFUNC(medical_treatment,canTreat)) exitWith {false};
+if !(call ACEFUNC(medical_treatment,canTreat)) exitWith {false};
 
 private _config = configFile >> "ace_medical_treatment_actions" >> _classname;
 
