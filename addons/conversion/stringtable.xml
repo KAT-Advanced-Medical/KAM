@@ -7,48 +7,6 @@
         <Key ID="STR_KAT_Conversion_CONVERSION_ENABLE_DESC">
             <English>Enables Casualty Conversion for Players and Select AI</English>
         </Key>
-        <Key ID="STR_KAT_Conversion_CONVERSION_MESSAGE">
-            <English>Display Conversion</English>
-        </Key>
-        <Key ID="STR_KAT_Conversion_CONVERSION_MESSAGE_DESC">
-            <English>Enables text in patient menu that they are converted</English>
-        </Key>
-        <Key ID="STR_KAT_Conversion_CONVERSION_TICKET_CONVERSION">
-            <English>Ticket for Patient Conversion</English>
-        </Key>
-        <Key ID="STR_KAT_Conversion_CONVERSION_TICKET_CONVERSION_DESC">
-            <English>Enables ticket gain when converting casualties</English>
-        </Key>
-        <Key ID="STR_KAT_Conversion_CONVERSION_TICKET_CONVERSION_GAIN">
-            <English>Tickets Gained</English>
-        </Key>
-        <Key ID="STR_KAT_Conversion_CONVERSION_TICKET_CONVERSION_GAIN_DESC">
-            <English>How many tickets should be regained when converting patients</English>
-        </Key>
-        <Key ID="STR_KAT_Conversion_CONVERSION_LIBERATION_CONVERSION">
-            <English>Liberation Supply for Patient Conversion</English>
-        </Key>
-        <Key ID="STR_KAT_Conversion_CONVERSION_LIBERATION_CONVERSION_DESC">
-            <English>Enables supply gain when converting casualties</English>
-        </Key>
-        <Key ID="STR_KAT_Conversion_CONVERSION_LIBERATION_CONVERSION_GAIN">
-            <English>Supply Gained</English>
-        </Key>
-        <Key ID="STR_KAT_Conversion_CONVERSION_LIBERATION_CONVERSION_GAIN_DESC">
-            <English>How much supply should be given when converting patients</English>
-        </Key>
-        <Key ID="STR_KAT_Conversion_CONVERSION_LIBERATION_CONVERSION_DISTANCE">
-            <English>Distance Required</English>
-        </Key>
-        <Key ID="STR_KAT_Conversion_CONVERSION_LIBERATION_CONVERSION_DISTANCE_DESC">
-            <English>How far do Liberation patients need to be from a FOB for a conversion to be valid</English>
-        </Key>
-        <Key ID="STR_KAT_Conversion_CONVERSION_SPECTATOR_RESPAWN">
-            <English>One Life Conversion</English>
-        </Key>
-        <Key ID="STR_KAT_Conversion_CONVERSION_SPECTATOR_RESPAWN_DESC">
-            <English>Prevents spectating players from respawning until their body has been converted</English>
-        </Key>
         <Key ID="STR_KAT_Conversion_CONVERSION_FORCE_VEHICLE">
             <English>Force Vehicle Conversion</English>
         </Key>
@@ -60,6 +18,24 @@
         </Key>
         <Key ID="STR_KAT_Conversion_CONVERSION_FORCE_VEHICLE_LIST_DESC">
             <English>List of vehicles that can be used for conversion</English>
+        </Key>
+        <Key ID="STR_KAT_Conversion_CONVERSION_LIBERATION_CONVERSION">
+            <English>Liberation Supply for Patient Conversion</English>
+        </Key>
+        <Key ID="STR_KAT_Conversion_CONVERSION_LIBERATION_CONVERSION_DESC">
+            <English>Enables supply gain when converting casualties</English>
+        </Key>
+        <Key ID="STR_KAT_Conversion_CONVERSION_LIBERATION_CONVERSION_DISTANCE">
+            <English>Distance Required</English>
+        </Key>
+        <Key ID="STR_KAT_Conversion_CONVERSION_LIBERATION_CONVERSION_DISTANCE_DESC">
+            <English>How far do Liberation patients need to be from a FOB for a conversion to be valid</English>
+        </Key>
+        <Key ID="STR_KAT_Conversion_CONVERSION_LIBERATION_CONVERSION_GAIN">
+            <English>Supply Gained</English>
+        </Key>
+        <Key ID="STR_KAT_Conversion_CONVERSION_LIBERATION_CONVERSION_GAIN_DESC">
+            <English>How much supply should be given when converting patients</English>
         </Key>
         <Key ID="STR_KAT_Conversion_CONVERSION_MANUAL_CONVERSION">
             <English>Enable Manual Initial Conversion</English>
@@ -82,14 +58,38 @@
         <Key ID="STR_KAT_Conversion_CONVERSION_MANUAL_CONVERSION_TIME">
             <English>Manual Conversion Time</English>
         </Key>
+        <Key ID="STR_KAT_Conversion_CONVERSION_MESSAGE">
+            <English>Display Conversion</English>
+        </Key>
+        <Key ID="STR_KAT_Conversion_CONVERSION_MESSAGE_DESC">
+            <English>Enables text in patient menu that they are converted</English>
+        </Key>
+        <Key ID="STR_KAT_Conversion_CONVERSION_SPECTATOR_RESPAWN">
+            <English>One Life Conversion</English>
+        </Key>
+        <Key ID="STR_KAT_Conversion_CONVERSION_SPECTATOR_RESPAWN_DESC">
+            <English>Prevents spectating players from respawning until their body has been converted</English>
+        </Key>
+        <Key ID="STR_KAT_Conversion_CONVERSION_TICKET_CONVERSION">
+            <English>Ticket for Patient Conversion</English>
+        </Key>
+        <Key ID="STR_KAT_Conversion_CONVERSION_TICKET_CONVERSION_DESC">
+            <English>Enables ticket gain when converting casualties</English>
+        </Key>
+        <Key ID="STR_KAT_Conversion_CONVERSION_TICKET_CONVERSION_GAIN">
+            <English>Tickets Gained</English>
+        </Key>
+        <Key ID="STR_KAT_Conversion_CONVERSION_TICKET_CONVERSION_GAIN_DESC">
+            <English>How many tickets should be regained when converting patients</English>
+        </Key>
         <Key ID="STR_KAT_Conversion_ConversionText">
             <English>Converted</English>
         </Key>
-        <Key ID="STR_KAT_Conversion_TicketConversion">
-            <English>Convert Casualty to Tickets</English>
-        </Key>
         <Key ID="STR_KAT_Conversion_LibConversion">
             <English>Convert Casualty to Liberation Supply</English>
+        </Key>
+        <Key ID="STR_KAT_Conversion_TicketConversion">
+            <English>Convert Casualty to Tickets</English>
         </Key>
         <Key ID="STR_KAT_Conversion_convertPatient">
             <English>Perform Initial Conversion</English>
