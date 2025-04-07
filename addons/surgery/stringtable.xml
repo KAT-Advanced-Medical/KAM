@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Project name="KAT">
     <Package name="Surgery">
+        <Key ID="STR_KAT_Surgery_cba_name">
+            <English>KAT - ADV Medical: Surgery</English>
+            <Japanese>KAM - 外科 (Surgery)</Japanese>
+        </Key> 
         <Key ID="STR_KAT_Surgery_Using">
             <English>Using</English>
             <German>Verwenden</German>

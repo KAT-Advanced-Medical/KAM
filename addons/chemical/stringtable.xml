@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Project name="KAT">
     <Package name="Chemical">
+        <Key ID="STR_KAT_Chemical_cba_name">
+            <English>KAT - ADV Medical: Chemical</English>
+            <Japanese>KAM - 化学戦 (Chemical)</Japanese>
+        </Key> 
         <Key ID="STR_KAT_Chemical_SETTING_AVAIL_GASMASK">
             <English>Accepted gas masks</English>
             <Spanish>Máscaras de gas aceptadas</Spanish>

@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Project name="KAT">
     <Package name="Watch">
+        <Key ID="STR_KAT_Watch_cba_name">
+            <English>KAT - ADV Medical: Watch</English>
+            <Japanese>KAM - 腕時計 (Watch)</Japanese>
+        </Key> 
         <Key ID="STR_KAT_Watch_SETTING_TemperatureForm">
             <English>Select temperature form</English>
             <Dutch>Selecteer temperatuur vorm</Dutch>

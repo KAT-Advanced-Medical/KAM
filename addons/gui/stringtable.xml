@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Project name="KAT">
     <Package name="GUI">
+        <Key ID="STR_KAT_GUI_cba_name">
+            <English>KAT - ADV Medical: GUI</English>
+            <Japanese>KAM - GUI</Japanese>
+        </Key> 
         <Key ID="STR_KAT_GUI_SubCategory_Basic">
             <English>Basic Settings</English>
             <Polish>Podstawowe Ustawienia</Polish>

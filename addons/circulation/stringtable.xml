@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Project name="KAT">
     <Package name="Circulation">
+        <Key ID="STR_KAT_Circulation_cba_name">
+            <English>KAT - ADV Medical: Circulation</English>
+            <Japanese>KAM - 循環器系 (Circulation)</Japanese>
+        </Key> 
         <Key ID="STR_KAT_Circulation_SETTING_ENABLE">
             <English>ACE-Circulation activated?</English>
             <German>ACE-Kreislauf aktivieren?</German>
