@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Project name="KAT">
     <Package name="Vitals">
+        <Key ID="STR_KAT_Vitals_cba_name">
+            <English>KAT - ADV Medical: Vitals</English>
+            <Japanese>KAM - バイタル</Japanese>
+        </Key> 
         <Key ID="STR_KAT_Vitals_SIMPLEMED_ENABLE">
             <English>Activate AI Simple Medical</English>
             <Dutch>Activeer AI/KI versimpeld medisch</Dutch>
@@ -11,6 +15,7 @@
             <Italian>Attiva AI Simple Medical</Italian>
             <German>Vereinfachte med. Simulation für KI</German>
             <French>Simplifier la médecine pour l'IA.</French>
+            <Czech>Aktivovat AI Simple Medical</Czech>
         </Key>
         <Key ID="STR_KAT_Vitals_SIMPLEMED_ENABLE_DESC">
             <English>Apply simplified vital calculations to the AI unit. Which can be useful for saving FPS.</English>
@@ -20,6 +25,7 @@
             <Italian>Applica calcoli vitali semplificati all'unità AI. Che può essere utile per salvare FPS.</Italian>
             <German>Vereinfachte Vital-Simulation bei KI-Einheiten. Reduziert Leistungsaufwand.</German>
             <French>Appliquer des calculs vitaux simplifiés à l'unité AI. Ce qui peut être utile pour économiser des FPS.</French>
+            <Czech>Aplikujte zjednodušené životně důležité výpočty na AI jednotky. Může být užitečné pro úsporu FPS.</Czech>
         </Key>
         <Key ID="STR_KAT_Vitals_FLUID_SHIFT">
             <English>Enable Patient Fluid Shift</English>
@@ -29,11 +35,13 @@
             <Italian>Abilita lo spostamento del fluido del paziente</Italian>
             <German>Aktiviert Flüssigkeitsverschiebung im Patienten</German>
             <French>Permettre le transfert de fluide du patient</French>
+            <Czech>Povolit Posun Tekutin Pacienta</Czech>
         </Key>
         <Key ID="STR_KAT_Vitals_BASIC_DIAGNOSTIC_ENABLE">
             <English>Enable Basic Vitals Kit</English>
             <Japanese>基本型バイタル診断キットを有効化</Japanese>
             <French>Activer le kit de diagnostic vital de base.</French>
+            <Czech>Povolit Základní Vitální Sadu</Czech>
             <Chinese>啟用基本生命體徵套件</Chinese>
             <Chinesesimp>启用基本生命体征套件</Chinesesimp>
         </Key>
@@ -43,11 +51,13 @@
             <French>Temps pour le kit de diagnostic vital de base</French>
             <Chinese>基本生命體徵套件時間</Chinese>
             <Chinesesimp>基本生命体征套件时间</Chinesesimp>
+            <Czech>Čas Základní Vitální Sady</Czech>
         </Key>
         <Key ID="STR_KAT_Vitals_basicDiagnostic_display">
             <English>Basic Vitals Kit</English>
             <Japanese>基本型バイタル診断キット</Japanese>
             <French>Kit de diagnostic vital de base</French>
+            <Czech>Základní Vitální Sada</Czech>
             <Chinese>基本生命體徵套件</Chinese>
             <Chinesesimp>基本生命体征套件</Chinesesimp>
         </Key>
@@ -55,6 +65,7 @@
             <English>Vitals Kit which returns HR, BP, and RR</English>
             <Japanese>心拍(HR)、血圧(BP)、呼吸回数(RR)などのバイタルを計測可能な診断キット</Japanese>
             <French>Kits de diagnostic permettant de mesurer les paramètres vitaux tels que la fréquence cardiaque (FC), la pression artérielle (PA) et la fréquence respiratoire (FR).</French>
+            <Czech>Vitální Sada, která zobrazí SF, TK a DF (Srdeční Frekvence, Tlak Krve, Dechová Frekvence)</Czech>
             <Chinese>可測量心率（HR）、血壓（BP）和呼吸頻率（RR）等生命體徵的診斷套件</Chinese>
             <Chinesesimp>可测量心率（HR）、血压（BP）和呼吸频率（RR）等生命体征的诊断套件</Chinesesimp>
         </Key>
@@ -62,6 +73,7 @@
             <English>Use Basic Vitals Kit</English>
             <Japanese>基本型バイタル診断キットを使用</Japanese>
             <French>Utiliser un kit de diagnostic vital de base</French>
+            <Czech>Použít Základní Vitální Sadu</Czech>
             <Chinese>使用基本生命體徵套件</Chinese>
             <Chinesesimp>使用基本生命体征套件</Chinesesimp>
         </Key>
@@ -69,6 +81,7 @@
             <English>Assessing Patient...</English>
             <Japanese>患者を診断中・・・</Japanese>
             <French>Évaluation du patient...</French>
+            <Czech>Vyhodnocování pacienta...</Czech>
             <Chinese>正在評估患者...</Chinese>
             <Chinesesimp>正在评估患者...</Chinesesimp>
         </Key>
@@ -76,6 +89,7 @@
             <English>HR: %1, BP: %2/%3, RR: %4</English>
             <Japanese>心拍: %1, 血圧: %2/%3, 呼吸回数: %4</Japanese>
             <French>FC : %1, PA : %2/%3, FR : %4</French>
+            <Czech>SF: %1, TK: %2/%3, DF: %4</Czech>
             <Chinese>心率：％1，血壓：％2／％3，呼吸頻率：％4</Chinese>
             <Chinesesimp>心率：％1，血压：％2／％3，呼吸频率：％4</Chinesesimp>
         </Key>
@@ -83,6 +97,7 @@
             <English>%1 - %2</English>
             <Japanese>%1 - %2</Japanese>
             <French>%1 - %2</French>
+            <Czech>%1 - %2</Czech>
         </Key>
     </Package>
 </Project>

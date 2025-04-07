@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Project name="KAT">
     <Package name="Circulation">
+        <Key ID="STR_KAT_Circulation_cba_name">
+            <English>KAT - ADV Medical: Circulation</English>
+            <Japanese>KAM - 循環器系 (Circulation)</Japanese>
+        </Key> 
         <Key ID="STR_KAT_Circulation_SETTING_ENABLE">
             <English>ACE-Circulation activated?</English>
             <German>ACE-Kreislauf aktivieren?</German>
@@ -29,6 +33,7 @@
             <French>Médecine simplifiée pour l'IA ?</French>
             <Chinese>AI 簡易醫療功能已啟用？</Chinese>
             <Chinesesimp>AI简单医疗启用?</Chinesesimp>
+            <Czech>Jednoduchý AI Medical aktivován?</Czech>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_AdvRhythm_Enable">
             <English>Advanced Rhythms activated?</English>
@@ -943,6 +948,7 @@
             <Russian>Анализировать частоту сердечных сокращений</Russian>
             <Dutch>Analyseer hartritme</Dutch>
             <Italian>Analizzare il ritmo</Italian>
+            <Czech>Analyzovat Rytmus</Czech>
             <Chinese>分析心律</Chinese>
         </Key>
         <Key ID="STR_KAT_Circulation_DogTag">
@@ -1048,6 +1054,7 @@
             <Russian>Установить электроды AED</Russian>
             <Dutch>Plaats AED pads</Dutch>
             <Italian>Posizionare i pad AED</Italian>
+            <Czech>Umístit AED Elektrody</Czech>
             <Chinese>放置 AED 電極片</Chinese>
         </Key>
         <Key ID="STR_KAT_Circulation_AEDStation_Action_PlacePads">
@@ -1064,6 +1071,7 @@
             <Italian>Postazione: Posizionare i pad AED</Italian>
             <Chinese>固定式 AED：放置 AED 電極片</Chinese>
             <Chinesesimp>固定式 AED：放置 AED 电极片</Chinesesimp>
+            <Czech>Stanice: Umístit AED Elektrody</Czech>
         </Key>
         <Key ID="STR_KAT_Circulation_AEDVehicle_Action_PlacePads">
             <English>Vehicle: Place AED Pads</English>
@@ -1079,6 +1087,7 @@
             <Italian>Veicolo: Posizionare i pad AED</Italian>
             <Chinese>車載 AED：放置 AED 電極片</Chinese>
             <Chinesesimp>车辆：放置AED垫</Chinesesimp>
+            <Czech>Vozidlo: Umístit AED Elektrody</Czech>
         </Key>
         <Key ID="STR_KAT_Circulation_AEDX_Action_PlacePads">
             <English>Place AED-X Pads</English>
@@ -1093,6 +1102,7 @@
             <Russian>Установить электроды AED-X</Russian>
             <Dutch>Plaats AED-X pads</Dutch>
             <Italian>Posizionare i pad AED-X</Italian>
+            <Czech>Umístit AED-X Elektrody</Czech>
             <Chinese>放置 AED-X 電極片</Chinese>
         </Key>
         <Key ID="STR_KAT_Circulation_AEDXStation_Action_PlacePads">
@@ -1109,6 +1119,7 @@
             <Italian>Postazione: Posizionare i pad AED-X</Italian>
             <Chinese>固定式 AED-X：放置 AED-X 電極片</Chinese>
             <Chinesesimp>固定式 AED-X：放置 AED-X 电极片</Chinesesimp>
+            <Czech>Stanice: Umístit AED-X Elektrody</Czech>
         </Key>
         <Key ID="STR_KAT_Circulation_AEDXVehicle_Action_PlacePads">
             <English>Vehicle: Place AED-X Pads</English>
@@ -1124,6 +1135,7 @@
             <Italian>Veicolo: Posizionare i pad AED-X</Italian>
             <Chinese>車載 AED-X：放置 AED-X 電極片</Chinese>
             <Chinesesimp>车辆：放置AED-X垫</Chinesesimp>
+            <Czech>Vozidlo: Umístit AED-X Elektrody</Czech>
         </Key>
         <Key ID="STR_KAT_Circulation_Defibrillator_Action_RemovePads">
             <English>Remove Defibrillator Pads</English>
@@ -1138,6 +1150,7 @@
             <Russian>Снять электроды дефибриллятора</Russian>
             <Dutch>Verwijder defibrillatiepads</Dutch>
             <Italian>Rimuovere i pad del defibrillatore</Italian>
+            <Czech>Odebrat Elektrody defibrilátoru</Czech>
             <Chinese>移除除顫器電極片</Chinese>
         </Key>
         <Key ID="STR_KAT_Circulation_Defibrillator_Action_PlacePads_Progress">
@@ -1153,6 +1166,7 @@
             <Russian>Установка электродов дефибриллятора</Russian>
             <Dutch>Defibrillatiepads worden geplaatst</Dutch>
             <Italian>Posizionamento dei pad del defibrillatore</Italian>
+            <Czech>Umisťování Elektrod defibrilátoru</Czech>
             <Chinese>正在放置除顫器電極片</Chinese>
         </Key>
         <Key ID="STR_KAT_Circulation_Defibrillator_Action_RemovePads_Progress">
@@ -1168,6 +1182,7 @@
             <Russian>Снять электроды дефибриллятора</Russian>
             <Dutch>Defibrillatiepads worden verwijderd</Dutch>
             <Italian>Rimozione dei pad del defibrillatore</Italian>
+            <Czech>Odebírání Elektrod defibrilátoru</Czech>
             <Chinese>正在移除除顫器電極片</Chinese>
         </Key>
         <Key ID="STR_KAT_Circulation_Defibrillator_Action_Shock">
@@ -1183,6 +1198,7 @@
             <Russian>Применить разряд</Russian>
             <Dutch>Dien schok toe</Dutch>
             <Italian>Somministrare la scarica</Italian>
+            <Czech>Aplikovat Výboj</Czech>
             <Chinese>實施電擊</Chinese>
         </Key>
         <Key ID="STR_KAT_Circulation_Defibrillator_Action_Charge">
@@ -1198,6 +1214,7 @@
             <Russian>Зарядить дифибриллятор</Russian>
             <Dutch>Laad defribrillator op</Dutch>
             <Italian>Caricare il defibrillatore</Italian>
+            <Czech>Nabít defibrilátor</Czech>
             <Chinese>除顫器充電</Chinese>
         </Key>
         <Key ID="STR_KAT_Circulation_Defibrillator_Action_CancelCharge">
@@ -1213,6 +1230,7 @@
             <Russian>Отменить заряд</Russian>
             <Dutch>Annuleer lading</Dutch>
             <Italian>Annullare la carica</Italian>
+            <Czech>Zrušit nabití</Czech>
             <Chinese>取消充電</Chinese>
         </Key>
         <Key ID="STR_KAT_Circulation_ViewMonitor">
@@ -1228,6 +1246,7 @@
             <Russian>Просмотр монитора</Russian>
             <Dutch>Kijk op monitor</Dutch>
             <Italian>Visualizzare il monitor</Italian>
+            <Czech>Zobrazit monitorování</Czech>
             <Chinese>查看生命監測器</Chinese>
         </Key>
         <Key ID="STR_KAT_Circulation_AEDX_Action_ConnectMonitor">
@@ -1243,6 +1262,7 @@
             <Russian>Подключить монитор жизненно важных показателей</Russian>
             <Dutch>Verbind de vitale waarden monitor</Dutch>
             <Italian>Collegare il monitor dei parametri vitali</Italian>
+            <Czech>Připojit monitor životních funkcí</Czech>
             <Chinese>連接生命監測器</Chinese>
         </Key>
         <Key ID="STR_KAT_Circulation_AEDXStation_Action_ConnectMonitor">
@@ -1258,6 +1278,7 @@
             <Russian>Станция: Подключить монитор жизненно важных показателей</Russian>
             <Dutch>Station: Verbind de vitale waarden monitor</Dutch>
             <Italian>Postazione: Collegare il monitor dei parametri vitali</Italian>
+            <Czech>Stanice: Připojit monitor životních funkcí</Czech>
             <Chinese>固定式 AED-X：連接生命監測器</Chinese>
         </Key>
         <Key ID="STR_KAT_Circulation_AEDXVehicle_Action_ConnectMonitor">
@@ -1271,7 +1292,7 @@
             <Chinesesimp>载具: 生命监护仪</Chinesesimp>
             <Italian>Veicolo: Attaccare DAE-X</Italian>
             <Spanish>Vehículo: Colocar DEA-X</Spanish>
-            <Czech>Vozidlo: Připevnit AED-X</Czech>
+            <Czech>Vozidlo: Připojit AED-X</Czech>
             <Japanese>車載AED: バイタルモニターの接続</Japanese>
             <Russian>Трансопрт: Подключить монитор жизненно важных показателей</Russian>
             <Portuguese>Veículo: Colocar DEA-X</Portuguese>
@@ -1285,7 +1306,7 @@
             <Spanish>Retirar monitoreo</Spanish>
             <Chinese>移除監控</Chinese>
             <Chinesesimp>移除监控</Chinesesimp>
-            <Czech>Odstranit monitorování</Czech>
+            <Czech>Odpojit monitorování</Czech>
             <Korean>환자감시장치 해제</Korean>
             <French>Retirer le moniteur</French>
             <Turkish>İzlemeyi kaldır</Turkish>
@@ -1309,6 +1330,7 @@
             <Russian>Звук монитора жизненно важных органов ВКЛЮЧЕН</Russian>
             <Dutch>Vitale waarden monitor audio AAN</Dutch>
             <Italian>Audio monitor dei parametri vitali ATTIVO</Italian>
+            <Czech>Zvuk monitorování životních funkcí [ON]</Czech>
             <Chinese>開啟監測器聲音</Chinese>
         </Key>
         <Key ID="STR_KAT_Circulation_AEDX_Action_DisableAudio">
@@ -1324,6 +1346,7 @@
             <Russian>Звук монитора жизненно важных функций ВЫКЛЮЧЕН</Russian>
             <Dutch>Vitale waarden monitor UIT</Dutch>
             <Italian>Audio monitor dei parametri vitali SPENTO</Italian>
+            <Czech>Zvuk monitorování životních funkcí [OFF]</Czech>
             <Chinese>關閉監測器聲音</Chinese>
         </Key>
         <Key ID="STR_KAT_Circulation_AEDX_Action_Connecting_Progress">
@@ -1405,7 +1428,7 @@
             <Spanish>[KAM] Banco de sangre</Spanish>
             <Chinese>[KAM] 醫療用血庫</Chinese>
             <Chinesesimp>[KAM] 医用血库</Chinesesimp>
-            <Czech>[KAM] Lékařská krevní banka</Czech>
+            <Czech>[KAM] Zdravotnická krevní banka</Czech>
             <Korean>[KAM] 의료용 혈액은행</Korean>
             <French>[KAM] Réserve médicale de sang</French>
             <Turkish>[KAM] Tıbbi Kan bankası</Turkish>
@@ -1441,7 +1464,7 @@
             <Spanish>Colocar DEA</Spanish>
             <Chinese>打開血型相容表</Chinese>
             <Chinesesimp>放置AED</Chinesesimp>
-            <Czech>Místo AED</Czech>
+            <Czech>Umístit AED</Czech>
             <Korean>자동심장충격기 설치</Korean>
             <French>Placer l'AED</French>
             <Turkish>AED'yi yerleştirin</Turkish>
@@ -1466,6 +1489,7 @@
             <Italian>Posizionare AED-X</Italian>
             <Chinese>放置 AED-X</Chinese>
             <Chinesesimp>放置AED-X</Chinesesimp>
+            <Czech>Umístit AED-X</Czech>
         </Key>
         <Key ID="STR_KAT_Circulation_PickUpAED">
             <English>Pick Up AED</English>
@@ -1474,7 +1498,7 @@
             <Spanish>Recoger DEA</Spanish>
             <Chinese>撿起 AED</Chinese>
             <Chinesesimp>捡起 AED</Chinesesimp>
-            <Czech>Vyzvednout AED</Czech>
+            <Czech>Sebrat AED</Czech>
             <Korean>자동심장충격기 줍기</Korean>
             <French>Ramasser l'AED</French>
             <Turkish>AED'yi Alın</Turkish>
@@ -1499,6 +1523,7 @@
             <Italian>Prendere AED-X</Italian>
             <Chinese>撿起 AED-X</Chinese>
             <Chinesesimp>捡起 AED-X</Chinesesimp>
+            <Czech>Sebrat AED-X</Czech>
         </Key>
         <Key ID="STR_KAT_Circulation_AEDX_Monitor_ToggleVolume">
             <English>Toggle Volume</English>
@@ -1514,6 +1539,7 @@
             <Italian>Commutare volume</Italian>
             <Chinese>音量切換</Chinese>
             <Chinesesimp>切换音量</Chinesesimp>
+            <Czech>Upravit hlasitost</Czech>
         </Key>
         <Key ID="STR_KAT_Circulation_AEDX_Monitor_MeasureBloodPressure">
             <English>Measure Blood Pressure</English>
@@ -1529,6 +1555,7 @@
             <Italian>Misurare la pressione sanguigna</Italian>
             <Chinese>測量血壓</Chinese>
             <Chinesesimp>测量血压</Chinesesimp>
+            <Czech>Změřit Krevní Tlak</Czech>
         </Key>
         <Key ID="STR_KAT_Circulation_AEDX_Monitor_CheckPads">
             <English>Check Pads</English>
@@ -1544,6 +1571,7 @@
             <Italian>Controllare i pad</Italian>
             <Chinese>檢查電極片</Chinese>
             <Chinesesimp>检查垫片</Chinesesimp>
+            <Czech>Zkontrolovat elektrody</Czech>
         </Key>
         <Key ID="STR_KAT_Circulation_AEDX_Monitor_SHOCKADVISED">
             <English>SHOCK ADVISED</English>
@@ -1559,6 +1587,7 @@
             <Italian>SCARICA CONSIGLIATA</Italian>
             <Chinese>建議電擊</Chinese>
             <Chinesesimp>建议电击</Chinesesimp>
+            <Czech>VÝBOJ DOPORUČEN</Czech>
         </Key>
         <Key ID="STR_KAT_Circulation_AEDX_Monitor_NOSHOCKADVISED">
             <English>NO SHOCK ADVISED</English>
@@ -1574,6 +1603,7 @@
             <Italian>NESSUNA SCARICA CONSIGLIATA</Italian>
             <Chinese>不建議電擊</Chinese>
             <Chinesesimp>不建议电击</Chinesesimp>
+            <Czech>VÝBOJ NEDOPORUČEN</Czech>
         </Key>
         <Key ID="STR_KAT_Circulation_AEDX_Monitor_ANALYZINGEKG">
             <English>ANALYZING ECG</English>
@@ -1589,6 +1619,7 @@
             <Italian>ANALIZZANDO ECG</Italian>
             <Chinese>正在分析心電圖</Chinese>
             <Chinesesimp>正在分析心电图</Chinesesimp>
+            <Czech>ANALYZUJI EKG</Czech>
         </Key>
         <Key ID="STR_KAT_Circulation_AEDX_Monitor_CHARGED">
             <English>CHARGED</English>
@@ -1604,6 +1635,7 @@
             <Italian>CARICATO</Italian>
             <Chinese>已充電</Chinese>
             <Chinesesimp>已充电</Chinesesimp>
+            <Czech>NABITO</Czech>
         </Key>
         <Key ID="STR_KAT_Circulation_AEDX_Monitor_CHARGING">
             <English>CHARGING</English>
@@ -1619,6 +1651,7 @@
             <Italian>CARICAMENTO IN CORSO</Italian>
             <Chinese>正在充電</Chinese>
             <Chinesesimp>正在充电</Chinesesimp>
+            <Czech>NABÍJÍM</Czech>
         </Key>
         <Key ID="STR_KAT_Circulation_AEDX_Monitor_AED_DISARMED">
             <English>AED DISARMED</English>
@@ -1634,6 +1667,7 @@
             <Italian>AED DISARMATO</Italian>
             <Chinese>AED 已解除</Chinese>
             <Chinesesimp>AED解除</Chinesesimp>
+            <Czech>AED DEAKTIVOVÁNO</Czech>
         </Key>
         <Key ID="STR_KAT_Circulation_AEDX_Monitor_DISARMED">
             <English>DISARMED</English>
@@ -1649,6 +1683,7 @@
             <Italian>DISARMATO</Italian>
             <Chinese>已解除</Chinese>
             <Chinesesimp>解除</Chinesesimp>
+            <Czech>DEAKTIVOVÁNO</Czech>
         </Key>
         <Key ID="STR_KAT_Circulation_AEDX_Monitor_DeliveredEnergy">
             <English>Delivered Energy</English>
@@ -1664,6 +1699,7 @@
             <Italian>Energia erogata</Italian>
             <Chinese>已傳輸能量</Chinese>
             <Chinesesimp>输送能量</Chinesesimp>
+            <Czech>Energie dodána</Czech>
         </Key>
         <Key ID="STR_KAT_Circulation_AEDX_Monitor_Defibrillator">
             <English>Defibrillator</English>
@@ -1678,6 +1714,7 @@
             <Italian>Defibrillatore</Italian>
             <Chinese>除顫器</Chinese>
             <Chinesesimp>除颤器</Chinesesimp>
+            <Czech>Defibrilátor</Czech>
         </Key>
         <Key ID="STR_KAT_Circulation_AEDX_Monitor_SelectedEnergy">
             <English>Selected Energy</English>
@@ -1692,6 +1729,7 @@
             <Italian>Energia selezionata</Italian>
             <Chinese>已選取能量</Chinese>
             <Chinesesimp>选定能源</Chinesesimp>
+            <Czech>Zvolená energie</Czech>
         </Key>
         <Key ID="STR_KAT_Circulation_AEDX_Monitor_ENERGYDELIVERED">
             <English>ENERGY DELIVERED</English>
@@ -1707,6 +1745,7 @@
             <Italian>ENERGIA EROGATA</Italian>
             <Chinese>已傳輸能量</Chinese>
             <Chinesesimp>输送的能量</Chinesesimp>
+            <Czech>ENERGIE DODÁNA</Czech>
         </Key>
         <Key ID="STR_KAT_Circulation_AEDX_Monitor_StandClear">
             <English>Stand Clear</English>
@@ -1722,6 +1761,7 @@
             <Italian>Allontanarsi</Italian>
             <Chinese>請勿接觸患者</Chinese>
             <Chinesesimp>严禁倚靠</Chinesesimp>
+            <Czech>Ustupte</Czech>
         </Key>
         <Key ID="STR_KAT_Circulation_AEDX_Monitor_PerformCPR">
             <English>Perform CPR</English>
@@ -1737,6 +1777,7 @@
             <Italian>Eseguire RCP</Italian>
             <Chinese>執行 CPR</Chinese>
             <Chinesesimp>执行心肺复苏急救</Chinesesimp>
+            <Czech>Proveďte KPR</Czech>
         </Key>
         <Key ID="STR_KAT_Circulation_AEDX_Monitor_PUSHSHOCK">
             <English>PUSH SHOCK</English>
@@ -1752,6 +1793,7 @@
             <Italian>PREMERE SCARICA</Italian>
             <Chinese>按下電擊按鈕</Chinese>
             <Chinesesimp>按下电击按钮</Chinesesimp>
+            <Czech>PODAT VÝBOJ</Czech>
         </Key>
         <Key ID="STR_KAT_Circulation_AEDX_Monitor_PushAnalyze">
             <English>Push Analyze</English>
@@ -1767,6 +1809,7 @@
             <Italian>Premere Analizza</Italian>
             <Chinese>按下分析按鈕</Chinese>
             <Chinesesimp>按下分析按钮</Chinesesimp>
+            <Czech>Analyzovat</Czech>
         </Key>
         <Key ID="STR_KAT_Circulation_AEDX_Monitor_HR">
             <English>HR</English>
@@ -1782,6 +1825,7 @@
             <Italian>HR</Italian>
             <Chinese>心率</Chinese>
             <Chinesesimp>心率(HR)</Chinesesimp>
+            <Czech>SF</Czech>
         </Key>
         <Key ID="STR_KAT_Circulation_AEDX_Monitor_PR">
             <English>PR</English>
@@ -1797,6 +1841,7 @@
             <Italian>PR</Italian>
             <Chinese>脈博</Chinese>
             <Chinesesimp>PR</Chinesesimp>
+            <Czech>TK</Czech>
         </Key>
         <Key ID="STR_KAT_Circulation_Blood_Sample_String">
             <English>%1 Blood Sample</English>
@@ -1808,6 +1853,7 @@
             <French>%1 échantillon de sang</French>
             <Chinese>%1 血樣</Chinese>
             <Chinesesimp>%1 血液样本</Chinesesimp>
+            <Czech>%1 Vzorek Krve</Czech>
         </Key>
         <Key ID="STR_KAT_Circulation_Arterial_Test_Action">
             <English>Run ABG Test</English>
@@ -1819,6 +1865,7 @@
             <French>Exécuter le test ABG</French>
             <Chinese>進行ABG分析</Chinese>
             <Chinesesimp>运行ABG测试</Chinesesimp>
+            <Czech>Provést ABG Test</Czech>
         </Key>
         <Key ID="STR_KAT_Circulation_Arterial_Test">
             <English>ABG Test</English>
@@ -1830,6 +1877,7 @@
             <French>Test ABG</French>
             <Chinese>ABG分析</Chinese>
             <Chinesesimp>ABG测试</Chinesesimp>
+            <Czech>ABG Test</Czech>
         </Key>
         <Key ID="STR_KAT_Circulation_Apply_Arterial_Test">
             <English>Apply %1 Test</English>
@@ -1841,6 +1889,7 @@
             <French>Appliquer le test %1</French>
             <Chinese>進行 %1 測試</Chinese>
             <Chinesesimp>应用 %1 测试</Chinesesimp>
+            <Czech>Aplikovat %1 Test</Czech>
         </Key>
         <Key ID="STR_KAT_Circulation_crosspanel">
             <English>Blood groups cheat sheet</English>
@@ -2106,6 +2155,7 @@
             <German>ABG-Tests aktivieren</German>
             <Chinese>啟用 ABG 測試</Chinese>
             <Chinesesimp>启用ABG测试</Chinesesimp>
+            <Czech>Povolit ABG Testování</Czech>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_abg_enable_DESC">
             <English>Enables ABG Testing and ACE Menu Visibility</English>
@@ -2114,6 +2164,7 @@
             <German>Ermöglicht ABG-Tests und Sichtbarkeit des ACE-Menüs</German>
             <Chinese>啟用 ABG 測試和 ACE 選單可見性</Chinese>
             <Chinesesimp>启用ABG测试和ACE菜单可见性</Chinesesimp>
+            <Czech>Povoluje ABG Testování a zobrazení ACE Menu</Czech>
         </Key>
         <Key ID="STR_KAT_Circulation_bloodtype_log">
             <English>%1 checked dogtags blood group: %2</English>
@@ -2127,6 +2178,7 @@
             <Italian>%1 ha controllato il gruppo sanguigno delle targhette identificative: %2</Italian>
             <Chinese>%1 檢查了狗牌的血型: %2</Chinese>
             <Chinesesimp>%1 检查狗牌上的血型：%2</Chinesesimp>
+            <Czech>%1 zkontrolovat krevní skupinu ze psích známek od: %2</Czech>
         </Key>
         <Key ID="STR_KAT_Circulation_LOCATION_AED">
             <English>Locations AED</English>
@@ -2177,6 +2229,7 @@
             <Dutch>AED</Dutch>
             <Italian>AED</Italian>
             <Chinesesimp>AED</Chinesesimp>
+            <Czech>AED</Czech>
         </Key>
         <Key ID="STR_KAT_Circulation_AED_X">
             <English>AED-X</English>
@@ -2191,6 +2244,7 @@
             <Dutch>AED-X</Dutch>
             <Italian>AED-X</Italian>
             <Chinesesimp>AED-X</Chinesesimp>
+            <Czech>AED-X</Czech>
         </Key>
         <Key ID="STR_KAT_Circulation_AED_DISPLAYNAME">
             <English>Automated External Defibrillator</English>
@@ -2242,6 +2296,7 @@
             <Italian>%1 ha somministrato la scarica (%2)</Italian>
             <Chinese>%1 施加了電擊 (%2)</Chinese>
             <Chinesesimp>%1 次电击（%2）</Chinesesimp>
+            <Czech>%1 aplikoval výboj (%2)</Czech>
         </Key>
         <Key ID="STR_KAT_Circulation_Activity_AttachPads">
             <English>%1 attached defibrillator pads (%2)</English>
@@ -2257,6 +2312,7 @@
             <Italian>%1 ha attaccato i pad del defibrillatore (%2)</Italian>
             <Chinese>%1 連接了除顫器電極片 (%2)</Chinese>
             <Chinesesimp>%1 附加除颤器垫（%2）</Chinesesimp>
+            <Czech>%1 připojil elektrody defibrilátoru (%2)</Czech>
         </Key>
         <Key ID="STR_KAT_Circulation_Activity_RemovePads">
             <English>%1 removed defibrillator pads</English>
@@ -2272,6 +2328,7 @@
             <Italian>%1 ha rimosso i pad del defibrillatore</Italian>
             <Chinese>%1 移除了除顫器電極片</Chinese>
             <Chinesesimp>%1 拆下的除颤器垫</Chinesesimp>
+            <Czech>%1 odebral elektrody defibrilátoru</Czech>
         </Key>
         <Key ID="STR_KAT_Circulation_Activity_ConnectVitalsMonitor">
             <English>%1 connected vitals monitor</English>
@@ -2287,6 +2344,7 @@
             <Italian>%1 ha collegato il monitor dei parametri vitali</Italian>
             <Chinese>%1 連接了生命監測器</Chinese>
             <Chinesesimp>%1 连接的生命体征监测仪</Chinesesimp>
+            <Czech>%1 připojil monitorování životních funkcí</Czech>
         </Key>
         <Key ID="STR_KAT_Circulation_Activity_DisconnectVitalsMonitor">
             <English>%1 disconnected vitals monitor</English>
@@ -2302,6 +2360,7 @@
             <Italian>%1 ha scollegato il monitor dei parametri vitali</Italian>
             <Chinese>%1 斷開了生命監測器</Chinese>
             <Chinesesimp>%1 断开的生命体征监测仪</Chinesesimp>
+            <Czech>%1 odpojil monitorování životních funkcí</Czech>
         </Key>
         <Key ID="STR_KAT_Circulation_Defibrillator_PatientDisconnected">
             <English>Patient Disconnected</English>
@@ -2317,6 +2376,7 @@
             <Italian>Paziente scollegato</Italian>
             <Chinese>病人已斷開連接</Chinese>
             <Chinesesimp>患者已断开连接</Chinesesimp>
+            <Czech>Pacient Odpojen</Czech>
         </Key>
         <Key ID="STR_KAT_Circulation_AED_X_MaxChance">
             <English>Max Success chance for AED-X</English>
@@ -2452,6 +2512,7 @@
             <Italian>Consentire l'applicazione dei pad AED durante la RCP</Italian>
             <Chinese>允許在 CPR 期間應用 AED 電極片</Chinese>
             <Chinesesimp>允许在心肺复苏期间使用AED垫</Chinesesimp>
+            <Czech>Povolit připojení AED elektord během KPR</Czech>
         </Key>
         <Key ID="STR_KAT_Circulation_TRAINING_LEVEL_AED_X">
             <English>Training level required to use an AED-X</English>
@@ -2485,6 +2546,7 @@
             <Italian>Consentire l'interazione con la stazione AED/X</Italian>
             <Chinese>允許 AED/X 工作站 互動</Chinese>
             <Chinesesimp>允许AED/X站交互</Chinesesimp>
+            <Czech>Povolit interakci se stanicí AED/X</Czech>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_AEDStation_AllowInteraction_DESCRIPTION">
             <English>Medical level required to pick up placed AED/X station</English>
@@ -2498,6 +2560,7 @@
             <Italian>Livello medico richiesto per raccogliere la stazione AED/X posizionata</Italian>
             <Chinese>撿起已放置的 AED/X 工作站需要的醫療等級</Chinese>
             <Chinesesimp>领取放置的AED/X站所需的医疗水平</Chinesesimp>
+            <Czech>Zdravotnická úroveň potřebná pro sebrání položené AED/X stanice</Czech>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_AEDX_VitalsMonitor_AttachTime">
             <English>Attach AED-X Vitals Monitor Time</English>
@@ -2513,6 +2576,7 @@
             <Italian>Tempo di collegamento del monitor dei parametri vitali AED-X</Italian>
             <Chinese>連接 AED-X 生命監測器 的時間</Chinese>
             <Chinesesimp>附上AED-X生命体征监测仪时间</Chinesesimp>
+            <Czech>Čas k připojení AED-X monitorování životních funkcí</Czech>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_AEDX_VitalsMonitor_DetachTime">
             <English>Detach AED-X Vitals Monitor Time</English>
@@ -2528,6 +2592,7 @@
             <Italian>Tempo di scollegamento del monitor dei parametri vitali AED-X</Italian>
             <Chinese>斷開 AED-X 生命監測器 的時間</Chinese>
             <Chinesesimp>分离AED-X生命体征监护仪时间</Chinesesimp>
+            <Czech>Čas k odpojení AED-X monitorování životních funkcí</Czech>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_DefibrillatorPads_AttachTime">
             <English>Attach Defibrillator Pads Time</English>
@@ -2543,6 +2608,7 @@
             <Italian>Tempo di collegamento dei pad del defibrillatore</Italian>
             <Chinese>連接除顫器電極片的時間</Chinese>
             <Chinesesimp>安装除颤器极板时间</Chinesesimp>
+            <Czech>Čas k připojení Elektrod defibrilátoru</Czech>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_DefibrillatorPads_DetachTime">
             <English>Detach Defibrillator Pads Time</English>
@@ -2558,6 +2624,7 @@
             <Italian>Tempo di scollegamento dei pad del defibrillatore</Italian>
             <Chinese>移除除顫器電極片的時間</Chinese>
             <Chinesesimp>拆下除颤器极板时间</Chinesesimp>
+            <Czech>Čas k odpojení Elektrod defibrilátoru</Czech>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_Defibrillator_DistanceLimit">
             <English>Distance limit for defibrillators in meters</English>
@@ -2573,6 +2640,7 @@
             <Italian>Limite di distanza per i defibrillatori in metri</Italian>
             <Chinese>除顫器的距離限制（以公尺為單位）</Chinese>
             <Chinesesimp>除颤器的距离限制（单位：米）</Chinesesimp>
+            <Czech>Limit vzdálenosti elektrod v metrech</Czech>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_CPR_CHANCES">
             <English>Enable different CPR chances per medical level</English>
@@ -2708,6 +2776,7 @@
             <Italian>Intervallo di probabilità RCP</Italian>
             <Chinese>CPR 機率間隔</Chinese>
             <Chinesesimp>心肺复苏概率间隔</Chinesesimp>
+            <Czech>Interval šance KPR</Czech>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_CPR_OxygenationPeriod">
             <English>Oxygenation Period</English>
@@ -2723,6 +2792,7 @@
             <Italian>Periodo di ossigenazione</Italian>
             <Chinese>氧合時間</Chinese>
             <Chinesesimp>充氧期</Chinesesimp>
+            <Czech>Perioda okysličení</Czech>
         </Key>
         <Key ID="STR_KAT_Circulation_Activity_CPR">
             <English>%1 performed CPR (%2)</English>
@@ -2738,6 +2808,7 @@
             <Italian>%1 ha eseguito la RCP (%2)</Italian>
             <Chinese>%1 進行了 CPR  (%2)</Chinese>
             <Chinesesimp>%1 执行心肺复苏（%2）</Chinesesimp>
+            <Czech>%1 provedl KPR (%2)</Czech>
         </Key>
         <Key ID="STR_KAT_Circulation_StopCPR">
             <English>Stop CPR</English>
@@ -2753,6 +2824,7 @@
             <Italian>Interrompere la RCP</Italian>
             <Chinese>停止 CPR</Chinese>
             <Chinesesimp>停止心肺复苏</Chinesesimp>
+            <Czech>Zastavit KPR</Czech>
         </Key>
         <Key ID="STR_KAT_Circulation_ChangeCPRDevice">
             <English>Change Monitoring Device</English>
@@ -2761,6 +2833,7 @@
             <French>Changer le dispositif de surveillance</French>
             <Chinese>更換監控設備</Chinese>
             <Chinesesimp>更换监控设备</Chinesesimp>
+            <Czech>Změnit monitorovací zařízení</Czech>
         </Key>
         <Key ID="STR_KAT_Circulation_StartCPR">
             <English>CPR Started</English>
@@ -2775,6 +2848,7 @@
             <Italian>RCP iniziata</Italian>
             <Chinese>已開始 CPR</Chinese>
             <Chinesesimp>心肺复苏开始</Chinesesimp>
+            <Czech>KPR zahájena</Czech>
         </Key>
         <Key ID="STR_KAT_Circulation_CancelCPR">
             <English>CPR Cancelled</English>
@@ -2790,6 +2864,7 @@
             <Italian>RCP annullata</Italian>
             <Chinese>已取消 CPR</Chinese>
             <Chinesesimp>CPR取消</Chinesesimp>
+            <Czech>KPR přerušena</Czech>
         </Key>
         <Key ID="STR_KAT_Circulation_FieldBloodTK500_Display">
             <English>Field Blood Transfusion Kit (500ml)</English>
@@ -2891,6 +2966,7 @@
             <German>Arterielle Probe entnehmen</German>
             <Italian>Prelevare campione arterioso</Italian>
             <French>Prélèvement d'un échantillon artériel</French>
+            <Czech>Odebrat arteriální vzorek</Czech>
         </Key>
         <Key ID="STR_KAT_Circulation_sampleItemName">
             <English>Blood Sample</English>
@@ -2902,6 +2978,7 @@
             <German>Blutprobe</German>
             <Italian>Campione di sangue</Italian>
             <French>Echantillon de sang</French>
+            <Czech>Vzorek Krve</Czech>
         </Key>
         <Key ID="STR_KAT_Circulation_resultItemName">
             <English>ABG Result</English>
@@ -2913,6 +2990,7 @@
             <German>ABG-Ergebnis</German>
             <Italian>Risultato del test ABG</Italian>
             <French>Résultat de l'ABG</French>
+            <Czech>Výsledek ABG</Czech>
         </Key>
         <Key ID="STR_KAT_Circulation_DrawBlood_Action_Progress">
             <English>Drawing Blood</English>
@@ -3105,6 +3183,7 @@
             <Italian>Ritmi avanzati</Italian>
             <Chinese>進階心律</Chinese>
             <Chinesesimp>高级节奏</Chinesesimp>
+            <Czech>Pokročilé Rytmy</Czech>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_AdvRhythm_canDeteriorate">
             <English>Can Deteriorate</English>
@@ -3120,6 +3199,7 @@
             <Russian>Может ухудшиться</Russian>
             <Dutch>Kan verslechteren</Dutch>
             <Italian>Può deteriorarsi</Italian>
+            <Czech>Mohou se zhoršit</Czech>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_AdvRhythm_deteriorateTimeMax">
             <English>Random Deteriorate Time Maximum</English>
@@ -3135,6 +3215,7 @@
             <Russian>Максимальное значение времени случайного ухудшения функции сердца</Russian>
             <Dutch>Maximale willekeurige tijd voor een verslechtering</Dutch>
             <Italian>Tempo massimo di deterioramento casuale</Italian>
+            <Czech>Náhodný maximální čas zhoršení</Czech>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_AdvRhythm_deteriorateTimeWeight">
             <English>Random Deteriorate Time Weight</English>
@@ -3150,11 +3231,13 @@
             <Russian>Взвешивание времени случайного ухудшения функции сердца</Russian>
             <Dutch>Tijdsgewicht willekeurige verslechtering</Dutch>
             <Italian>Peso del tempo di deterioramento casuale</Italian>
+            <Czech>Váha náhodného času zhoršení</Czech>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_AdvRhythm_HTHold">
             <English>Enable H-and-T Holding in Arrest</English>
             <Japanese>心停止回復のH&amp;T症状による阻害を有効化</Japanese>
             <French>Activer le maintien en arrêt H et T</French>
+            <Czech>Povolit H&amp;T udržování v zástavě</Czech>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_AdvRhythm_deteriorateAfterTreatment">
             <English>Deteriorate After Treatment</English>
@@ -3170,6 +3253,7 @@
             <Russian>Ухудшается после лечения</Russian>
             <Dutch>Verslechterd na behandeling</Dutch>
             <Italian>Deterioramento dopo il trattamento</Italian>
+            <Czech>Zhoršení po ošetření</Czech>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_AdvRhythm_PEAChance">
             <English>PEA Chance</English>
@@ -3185,6 +3269,7 @@
             <Russian>Показатель точности безимпульсной электрической активности (PEA)</Russian>
             <Dutch>PEA kans</Dutch>
             <Italian>Probabilità di attività elettrica senza polso (PEA)</Italian>
+            <Czech>Šance PEA</Czech>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_AdvRhythm_VTChance">
             <English>VT Chance</English>
@@ -3200,6 +3285,7 @@
             <Russian>Вероятность желудочковой тахикардии (VT)</Russian>
             <Dutch>VT kans</Dutch>
             <Italian>Probabilità di tachicardia ventricolare (TV)</Italian>
+            <Czech>Šance VT</Czech>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_AdvRhythm_asystoleBloodlossThreshold">
             <English>Asystole blood loss threshold</English>
@@ -3215,6 +3301,7 @@
             <Russian>Порог кровопотери при асистолии</Russian>
             <Dutch>Asystole bloedverlies drempelwaarde</Dutch>
             <Italian>Soglia di perdita di sangue per asistolia</Italian>
+            <Czech>Práh ztráty krve pro asystolii</Czech>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_AdvRhythm_CPR_ROSC_Chance">
             <English>ROSC After CPR Chance</English>
@@ -3230,6 +3317,7 @@
             <Russian>Шанс вернуться в спонтанное кровообращение после СЛР</Russian>
             <Dutch>Kans voor ROSC na CPR (Terugkeer naar spontane circulatie)</Dutch>
             <Italian>Probabilità di ritorno alla circolazione spontanea dopo RCP</Italian>
+            <Czech>Šance na ROSC po KPR</Czech>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_AdvRhythm_AED_ROSC_Chance">
             <English>ROSC After AED Chance</English>
@@ -3245,6 +3333,7 @@
             <Russian>Шанс вернуться в спонтанное кровообращение после AED</Russian>
             <Dutch>Kans voor ROSC na CPR (Terugkeer naar spontane circulatie)</Dutch>
             <Italian>Probabilità di ritorno alla circolazione spontanea dopo AED</Italian>
+            <Czech>Šance na ROSC po AED</Czech>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_AdvRhythm_Hardcore_Enable">
             <English>Hardcore Rhythms</English>
@@ -3260,6 +3349,7 @@
             <Russian>Интенсивность сердечного ритма</Russian>
             <Dutch>Hardcore hartritmen</Dutch>
             <Italian>Ritmi cardiaci intensi</Italian>
+            <Czech>Hardcore Rytmy</Czech>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_AdvRhythm_hardcoreDeteriorationChance">
             <English>Hardcore Deterioration Chance</English>
@@ -3275,6 +3365,7 @@
             <Russian>Вероятность сильного ухудшения</Russian>
             <Dutch>Hardcore verslechteringskans</Dutch>
             <Italian>Probabilità di deterioramento intenso</Italian>
+            <Czech>Šance hardcore zhoršení</Czech>
         </Key>
         <Key ID="STR_KAT_Circulation_SubCategory_BloodDraw">
             <English>Blood draw Settings</English>
@@ -3308,6 +3399,7 @@
             <Dutch>AED-X: HR %1 BD: --/-- SpO2: ---</Dutch>
             <Chinese>AED-X：心率：%1 血壓：--/-- SpO2：---</Chinese>
             <Chinesesimp>AED-X: 心率(HR): %1 血压(BP):--/--血氧饱和度(SpO2):---</Chinesesimp>
+            <Czech>AED-X: SF %1 TK: --/-- SpO2: ---</Czech>
         </Key>
         <Key ID="STR_KAT_Circulation_VitalsMonitor_VMActive_StatusLog">
             <English>AED-X: PR: %1 BP: %2/%3 SpO2: %4</English>
@@ -3321,6 +3413,7 @@
             <Russian>AED-X: ЧСС: %1 АД: %2/%3 SpO2: %4</Russian>
             <Dutch>AED-X: PR %1 BD: %2/%3 SpO2: %4</Dutch>
             <Italian>AED-X: PR: %1 BP: %2/%3 SpO2: %4</Italian>
+            <Czech>AED-X: TF: %1 TK: %2/%3 SpO2: %4</Czech>
             <Chinese>AED-X：脈搏：%1 血壓：%2/%3 SpO2：%4</Chinese>
             <Chinesesimp>AED-X: 脉搏(PR): %1 血压(BP): %2/%3 血氧饱和度(SpO2): %4</Chinesesimp>
         </Key>
@@ -3353,6 +3446,7 @@
             <Italian>AED-X: HR: %1 BP: --/-- SpO2: --- ETCo2: %2 Respiri/min: %3</Italian>
             <Chinese>AED-X：心率：%1 血壓：--/-- SpO2：--- ETCo2：%2 呼吸/分：%3</Chinese>
             <Chinesesimp>AED-X: 心率(HR): %1 血压(BP):--/--血氧饱和度(SpO2):---呼气末二氧化碳浓度(ETCo2):%2呼吸/分钟：%3</Chinesesimp>
+            <Czech>AED-X: SF: %1 TK: --/-- SpO2: --- ETCo2: %2 Dechů/min: %3</Czech>
         </Key>
         <Key ID="STR_KAT_Circulation_VitalsMonitor_VMActive_StatusLog_HasEtco2Monitor">
             <English>AED-X: PR: %1 BP: %2/%3 SpO2: %4 ETCo2: %5 Breaths/min: %6</English>
@@ -3364,6 +3458,7 @@
             <Dutch>AED-X: PR %1 BD: %2/%3 SpO2: %4 ETCo2: %5 Ademhalingen/min: %6</Dutch>
             <German>AED-X: PR: %1 BP: %2/%3 SpO2: %4 ETCo2: %5 Br/min: %6</German>
             <Italian>AED-X: PR: %1 BP: %2/%3 SpO2: %4 ETCo2: %5 Respiri/min: %6</Italian>
+            <Czech>AED-X: PF: %1 TK: %2/%3 SpO2: %4 ETCo2: %5 Dechů/min: %6</Czech>
             <Chinese>AED-X：脈搏：%1 血壓：%2/%3 SpO2：%4 ETCo2：%5 呼吸/分：%6</Chinese>
             <Chinesesimp>AED-X: 脉搏(PR): %1 血压(BP):%2/%3血氧饱和度(SpO2):%4呼气末二氧化碳浓度(ETCo2):%5呼吸/分钟：%6</Chinesesimp>
         </Key>
@@ -3379,6 +3474,7 @@
             <Italian>AED-X: HR: %1 BP: %2/%3 SpO2: %4 ETCo2: %5 Respiri/min: %6</Italian>
             <Chinese>AED-X：心率：%1 血壓：%2/%3 SpO2：%4 ETCo2：%5 呼吸/分：%6</Chinese>
             <Chinesesimp>AED-X: 心率(HR): %1 血压(BP):%2/%3血氧饱和度(SpO2):%4呼气末二氧化碳浓度(ETCo2):%5呼吸/分钟：%6</Chinesesimp>
+            <Czech>AED-X: SF: %1 TK: %2/%3 SpO2: %4  ETCo2: %5 Dechů/min: %6</Czech>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_AED_X_VitalsMonitor_SoundsSelect">
             <English>AED-X Vitals Monitor Sounds</English>
@@ -3394,6 +3490,7 @@
             <Italian>Suoni del monitor dei parametri vitali AED-X</Italian>
             <Chinese>AED-X 生命監測器音效</Chinese>
             <Chinesesimp>AED-X生命体征监测仪声音</Chinesesimp>
+            <Czech>Zvuky monitoru životních funkcí AED-X</Czech>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_AED_X_VitalsMonitor_SoundsSelect_Original">
             <English>Original</English>
@@ -3409,6 +3506,7 @@
             <Italian>Originale</Italian>
             <Chinese>原本</Chinese>
             <Chinesesimp>原件</Chinesesimp>
+            <Czech>Originální</Czech>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_AED_X_VitalsMonitor_SoundsSelect_Default">
             <English>Default</English>
@@ -3422,6 +3520,7 @@
             <Russian>По умолчанию</Russian>
             <Dutch>Standaard</Dutch>
             <Italian>Predefinito</Italian>
+            <Czech>Defaultní</Czech>
             <Chinese>默認</Chinese>
             <Chinesesimp>默认</Chinesesimp>
         </Key>
@@ -3453,6 +3552,7 @@
             <Russian>Интервал измерения артериального давления на мониторе AED-X</Russian>
             <Dutch>AED-X vitale waarden monitor BD metingsinterval</Dutch>
             <Italian>Intervallo di misurazione BP del monitor dei parametri vitali AED-X</Italian>
+            <Czech>AED-X interval měření TK v monitoru životních funkcí</Czech>
             <Chinese>AED-X 生命監測器 血壓測量間隔</Chinese>
             <Chinesesimp>AED-X 生命监护仪 血压测量间隔</Chinesesimp>
         </Key>
@@ -3470,6 +3570,7 @@
             <Italian>Automatico istantaneo</Italian>
             <Chinese>自動即時</Chinese>
             <Chinesesimp>自动即时</Chinesesimp>
+            <Czech>Automaticky okamžitě</Czech>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_AED_X_VitalsMonitor_BloodPressureInterval_Automatic">
             <English>Automatic (Interval)</English>
@@ -3485,6 +3586,7 @@
             <Italian>Automatico (Intervallo)</Italian>
             <Chinese>自動（間隔）</Chinese>
             <Chinesesimp>自动（间隔）</Chinesesimp>
+            <Czech>Automaticky (interval)</Czech>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_AED_X_VitalsMonitor_BloodPressureInterval_Manual">
             <English>Manual</English>
@@ -3500,6 +3602,7 @@
             <Italian>Manuale</Italian>
             <Chinese>手動</Chinese>
             <Chinesesimp>手册</Chinesesimp>
+            <Czech>Manuální</Czech>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_AED_X_VitalsMonitor_BloodPressureInterval_Time">
             <English>AED-X Vitals Monitor BP Measurement Interval Time</English>
@@ -3514,6 +3617,7 @@
             <Dutch>Tijd van de AED-X vitale waarde monitor BD metingsinterval</Dutch>
             <Italian>Tempo di intervallo di misurazione BP del monitor dei parametri vitali AED-X</Italian>
             <Chinesesimp>AED-X生命体征监测仪血压测量间隔时间</Chinesesimp>
+            <Czech>AED-X čas intervalu měření TK v monitoru životních funkcí</Czech>
             <Chinese>AED-X生命監測器 血壓測量間隔時間</Chinese>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_cardiacArrestBleedRate">
@@ -3529,6 +3633,7 @@
             <Dutch>Bloedingsnelheid bij hartstilstand</Dutch>
             <Italian>Tasso di sanguinamento durante l'arresto cardiaco</Italian>
             <Chinesesimp>心脏骤停出血率</Chinesesimp>
+            <Czech>Rychlost krvácení při srdeční zástavě</Czech>
             <Chinese>心臟驟停期間的出血率</Chinese>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_tamponadeChance">
@@ -3542,6 +3647,7 @@
             <German>Möglichkeit einer Tamponade bei penetrierenden Wunden</German>
             <Italian>Probabilità di tamponade in ferite penetranti</Italian>
             <Chinesesimp>穿透性伤口填塞的可能性</Chinesesimp>
+            <Czech>Šance na tamponádu u penetrujících zranění</Czech>
             <Chinese>穿透性傷口填塞的可能性</Chinese>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_tamponadeInterval">
@@ -3555,6 +3661,7 @@
             <German>Tamponade-Fortschrittstimer</German>
             <Italian>Timer di progressione della tamponade</Italian>
             <Chinesesimp>填塞进展计时器</Chinesesimp>
+            <Czech>Časovač postupu tamponády</Czech>
             <Chinese>填塞進度計時器</Chinese>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_tamponadeChance_deterioration">
@@ -3569,114 +3676,133 @@
             <Italian>Probabilità di progressione della tamponade</Italian>
             <Chinese>心包填塞進展的機率</Chinese>
             <Chinesesimp>填塞进展概率</Chinesesimp>
+            <Czech>Šance na postup tamponády</Czech>
         </Key>
         <Key ID="STR_KAT_Circulation_BPCuff_display">
             <English>Blood Pressure Cuff</English>
             <French>Brassard de pression artérielle</French>
             <Chinese>血壓計</Chinese>
             <Japanese>血圧カフ</Japanese>
+            <Czech>TK Manžeta</Czech>
         </Key>
         <Key ID="STR_KAT_Circulation_BPCuff_desc">
             <English>A medical device to accurately determine a patients blood pressure</English>
             <French>Dispositif médical permettant de déterminer avec précision la tension artérielle d'un patient</French>
             <Chinese>一種準確測量病人血壓的醫療裝置</Chinese>
             <Japanese>患者の血圧を正確に測定する医療機器</Japanese>
+            <Czech>Zdravotnické zařízení pro přesné určení krevního tlaku pacienta</Czech>
         </Key>
         <Key ID="STR_KAT_Circulation_Actions_CheckBloodPressureCuff">
             <English>Check BP with BP Cuff</English>
             <French>Brassard pour vérifier la tension artérielle.</French>
             <Chinese>用血壓計量血壓</Chinese>
             <Japanese>血圧カフで血圧を確認</Japanese>
+            <Czech>Zkontrolovat tlak krve s TK Manžetou</Czech>
         </Key>
         <Key ID="STR_KAT_Circulation_Actions_CheckingBloodPressureCuff">
             <English>Checking BP with BP Cuff</English>
             <French>Contrôler la tension artérielle à l'aide d'un brassard</French>
             <Chinese>用血壓計量血壓中</Chinese>
             <Japanese>血圧カフで血圧を確認中</Japanese>
+            <Czech>Kontroluji TK s TK Manžetou</Czech>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_BPCuff">
             <English>Allow BP Cuff</English>
             <French>Autoriser le brassard de tension artérielle</French>
             <Chinese>允許使用血壓計</Chinese>
             <Japanese>血圧カフの許可</Japanese>
+            <Czech>Povolit TK Manžetu</Czech>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_BPCuff_DESC">
             <English>Training Level for use of the BP Cuff</English>
             <French>Niveau de formation médicale pour l'utilisation des brassards</French>
             <Chinese>使用血壓計的訓練等級</Chinese>
             <Japanese>血圧カフの使用に必要な医療スキルのレベルを設定します。</Japanese>
+            <Czech>Úroveň zdravotnického výcviku pro použití TK Manžety</Czech>
         </Key>
         <Key ID="STR_KAT_Circulation_treatmentTime_BPCuff">
             <English>Time to measure BP with BP Cuff</English>
             <French>Temps pour mesurer la tension via le brassard</French>
             <Chinese>用血壓計量血壓所需時間</Chinese>
             <Japanese>血圧カフによる血圧測定の所要時間</Japanese>
+            <Czech>Čas vyšetření TK pomocí TK Manžety</Czech>
         </Key>
         <Key ID="STR_KAT_Circulation_Check_Bloodpressure_Output_Palp">
             <English>You find a blood pressure of %3 over Palp</English>
             <French>Vous avez mesuré la tension artérielle %3 au-dessus de la palpation</French>
             <Chinese>你發現血壓比觸診高 %3</Chinese>
             <Japanese>触診で計測した拡張期血圧は %3 でした</Japanese>
+            <Czech>Naměřil jsi krevní tlak %3 nad palpační hodnotou</Czech>
         </Key>
         <Key ID="STR_KAT_Circulation_Bloodpressure_Output_Palp">
             <English>%1 over Palp</English>
             <French>%1 au-dessus de la valeur de palpation</French>
             <Chinese>比觸診高 %1</Chinese>
             <Japanese>触診による拡張期血圧は %1</Japanese>
+            <Czech>%1 nad palpační hodnotou</Czech>
         </Key>
         <Key ID="STR_KAT_Circulation_Check_Pulse_Output">
             <English>You find a Pulse Rate of %2</English>
             <French>Vous trouvez un pouls de %2</French>
             <Chinese>你發現脈搏率為 %2</Chinese>
             <Japanese>計測した脈拍は %2 でした</Japanese>
+            <Czech>Zjistil jsi pulzní frekvenci %2</Czech>
         </Key>
         <Key ID="STR_KAT_Circulation_Pulse_Output">
             <English>%1 PPM</English>
             <French>%1 PPM</French>
             <Chinese>%1 PPM</Chinese>
             <Japanese>%1 PPM</Japanese>
+            <Czech>%1 PPM</Czech>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_StethHR">
             <English>Allow Stethoscope HR check</English>
             <French>Autorisation de prendre le pouls via un stéthoscope.</French>
             <Chinese>允許使用聽診器檢查心率</Chinese>
             <Japanese>聴診器による脈拍確認の許可</Japanese>
+            <Czech>Povolit kontrolu SF Stetoskopem</Czech>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_StethHR_DESC">
             <English>Training Level for use of the Stethoscope to measure HR</English>
             <French>Définit le niveau de compétences médicales requis pour mesurer le pouls à l'aide d'un stéthoscope.</French>
             <Chinese>使用聽診器測量心率的訓練等級</Chinese>
             <Japanese>聴診器による脈拍の測定に必要な医療スキルのレベルを設定します。</Japanese>
+            <Czech>Úroveň zdravotnického výcviku pro měření SF Stetoskopem</Czech>
         </Key>
         <Key ID="STR_KAT_Circulation_treatmentTime_StethHR">
             <English>Time to measure HR with a Stethoscope</English>
             <French>Temps pour mesurer le pouls via un stéthoscope</French>
             <Chinese>用聽診器測量心率所需時間</Chinese>
             <Japanese>聴診器による脈拍測定の所要時間</Japanese>
+            <Czech>Čas měření SF Stetoskopem</Czech>
         </Key>
         <Key ID="STR_KAT_Circulation_Actions_CheckHRSteth">
             <English>Check HR w/ Stethoscope</English>
             <French>Vérifier le pouls à l'aide d'un stéthoscope.</French>
             <Chinese>用聽診器檢查心率</Chinese>
             <Japanese>聴診器で脈拍を確認</Japanese>
+            <Czech>Zkontrolovat SF pomocí Stetoskopu</Czech>
         </Key>
         <Key ID="STR_KAT_Circulation_Actions_CheckingHRSteth">
             <English>Checking HR with Stethoscope</English>
             <French>Vérification du pouls à l'aide d'un stéthoscope.</French>
             <Chinese>用聽診器檢查心率中</Chinese>
             <Japanese>聴診器で脈拍を確認中</Japanese>
+            <Czech>Kontroluji SF pomocí Stetoskopu</Czech>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_hardcoreDiagnose">
             <English>Enable Hardcore HR and BP Diagnose</English>
             <French>Diagnostic approfondi de la HR et de la BP</French>
             <Chinese>啟用硬核心率和血壓診斷</Chinese>
             <Japanese>ハードコア脈拍および血圧診断を有効化</Japanese>
+            <Czech>Povolit hardcore diagnostiku SF a TK</Czech>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_hardcoreDiagnose_DESC">
             <English>Makes measuring BP and HR imprecise without tools (Stethoscope or BP cuff)</English>
             <French>Rend impossible la mesure précise du pouls et de la tension artérielle sans instrument (stéthoscope ou brassard).</French>
             <Chinese>在沒有工具（聽診器或血壓計）的情況下，測量血壓和心率會不準確</Chinese>
             <Japanese>器具(聴診器または血圧カフ)なしでは脈拍および血圧を正確に測定出来なくします</Japanese>
+            <Czech>Znemožňuje přesné měření SF a TK bez nástrojů (Stetoskop nebo TK Manžeta)</Czech>
         </Key>
     </Package>
 </Project>

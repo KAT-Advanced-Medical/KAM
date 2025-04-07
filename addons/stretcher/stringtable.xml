@@ -8,7 +8,7 @@
             <Spanish>Desarmar Camilla</Spanish>
             <Chinese>拆卸擔架</Chinese>
             <Chinesesimp>拆卸担架</Chinesesimp>
-            <Czech>Rozložit nosítka</Czech>
+            <Czech>Rozebrat nosítka</Czech>
             <Korean>들것 분리</Korean>
             <French>Désassembler la civière</French>
             <Turkish>Sedyeyi sökün</Turkish>
@@ -102,6 +102,7 @@
             <French>Déployer le brancard</French>
             <Chinese>展開擔架</Chinese>
             <Chinesesimp>展开担架</Chinesesimp>
+            <Czech>Rozložit nosítka</Czech>
         </Key>
         <Key ID="STR_KAT_Stretcher_RetractHeliStretcher">
             <English>Retract Stretcher</English>
@@ -114,6 +115,7 @@
             <French>Rétracter le brancard</French>
             <Chinese>收回擔架</Chinese>
             <Chinesesimp>缩回担架</Chinesesimp>
+            <Czech>Zatáhnout nosítka</Czech>
         </Key>
         <Key ID="STR_KAT_Stretcher_DetachHeliStretcher">
             <English>Detach Stretcher</English>
@@ -126,6 +128,7 @@
             <French>Détacher le brancard</French>
             <Chinese>釋放擔架</Chinese>
             <Chinesesimp>分离担架</Chinesesimp>
+            <Czech>Odpojit nosítka</Czech>
         </Key>
         <Key ID="STR_KAT_Stretcher_Helistretcher_Display">
             <English>Attachable Helistretcher</English>
@@ -210,6 +213,7 @@
             <French>Emballer dans un sac</French>
             <Chinese>打包到包裡</Chinese>
             <Chinesesimp>装进袋子里</Chinesesimp>
+            <Czech>Zabalit do tašky</Czech>
         </Key>
         <Key ID="STR_KAT_Stretcher_PackIntoBackpack">
             <English>Pack into backpack</English>
@@ -222,6 +226,7 @@
             <French>Emballer dans un sac à dos</French>
             <Chinese>裝進背包</Chinese>
             <Chinesesimp>装进背包</Chinesesimp>
+            <Czech>Zabalit do batohu</Czech>
         </Key>
         <Key ID="STR_KAT_Stretcher_UnpackStretcher">
             <English>Deploy Stretcher</English>
@@ -234,6 +239,7 @@
             <French>Déployer le brancard</French>
             <Chinese>部屬擔架</Chinese>
             <Chinesesimp>展开担架</Chinesesimp>
+            <Czech>Rozložit nosítka</Czech>
         </Key>
         <Key ID="STR_KAT_Stretcher_PlaceStretcher_progressBar">
             <English>Placing Stretcher...</English>
@@ -246,6 +252,7 @@
             <French>Mise en place du brancard...</French>
             <Chinese>正在放置擔架...</Chinese>
             <Chinesesimp>正在放置担架...</Chinesesimp>
+            <Czech>Umisťování nosítek...</Czech>
         </Key>
         <Key ID="STR_KAT_Stretcher_PickupStretcher_progressBar">
             <English>Packing Stretcher...</English>
@@ -258,6 +265,7 @@
             <French>Le brancard est emballé</French>
             <Chinese>正在打包擔架...</Chinese>
             <Chinesesimp>正在打包担架...</Chinesesimp>
+            <Czech>Balení nosítek...</Czech>
         </Key>
         <Key ID="STR_KAT_Stretcher_KAT_HeliStretcher">
             <English>KAT Helistretcher</English>
@@ -269,6 +277,7 @@
             <French>Brancard d'hélicoptère KAT</French>
             <Chinese>KAT 直升機擔架</Chinese>
             <Chinesesimp>KAT Helistretcher</Chinesesimp>
+            <Czech>KAT Helinosítka</Czech>
         </Key>
     </Package>
 </Project>

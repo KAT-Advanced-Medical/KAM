@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Project name="KAT">
     <Package name="Airway">
+        <Key ID="STR_KAT_Airway_cba_name">
+            <English>KAT - ADV Medical: Airway</English>
+            <Japanese>KAM - 気道 (Airway)</Japanese>
+        </Key> 
         <Key ID="STR_KAT_Airway_SETTING_ENABLE">
             <English>ACE-Airway injuries activated?</English>
             <German>ACE-Atemwegverletzungen aktiviert?</German>
@@ -125,6 +129,7 @@
             <Dutch>Verstoppings afkoelingsperiode</Dutch>
             <Italian>Periodo di Recupero dell'Occlusione</Italian>
             <Chinesesimp>闭塞冷却期</Chinesesimp>
+            <Czech>Období obnovy okluze</Czech>
         </Key>
         <Key ID="STR_KAT_Airway_SETTING_puking_sound">
             <English>Activate the puking sound?</English>
@@ -207,6 +212,7 @@
             <Japanese>%1 が気道を確認: ひどい水膨れ</Japanese>
             <French>%1 voies aériennes contrôlées : Fortement cloquées</French>
             <Chinesesimp>%1 条检查气道: 严重起泡</Chinesesimp>
+            <Czech>%1 zkontroloval dýchací cesty: Silné puchýře</Czech>
         </Key>
         <Key ID="STR_KAT_Airway_airway_log">
             <English>%1 inserted a %2</English>
@@ -353,6 +359,7 @@
             <Portuguese>Vias aéreas não obstruídas</Portuguese>
             <Dutch>Luchtweg is niet geblokkeerd</Dutch>
             <Italian>Le vie aeree non sono ostruite</Italian>
+            <Czech>Dýchací cesty nejsou zablokovány</Czech>
         </Key>
         <Key ID="STR_KAT_Airway_AirwayStatus_noOcclusion">
             <English>Airway is not occluded</English>
@@ -368,6 +375,7 @@
             <Portuguese>Vias aéreas não ocluídas</Portuguese>
             <Dutch>Luchtweg is niet verstopt</Dutch>
             <Italian>Le vie aeree non sono occluse</Italian>
+            <Czech>Dýchací cesty nejsou ucpány</Czech>
         </Key>
         <Key ID="STR_KAT_Airway_AirwayStatus_Obstruction">
             <English>Airway is obstructed, airway management needed</English>
@@ -383,6 +391,7 @@
             <Portuguese>Vias aéreas obstruídas, gerenciamento de vias aéreas necessário</Portuguese>
             <Dutch>Luchtweg is geblokkeerd, luchtwegmanagement is vereist</Dutch>
             <Italian>Le vie aeree sono ostruite, è necessario un intervento sulle vie aeree</Italian>
+            <Czech>Dýchací cesty zablokovány, péče nutná</Czech>
         </Key>
         <Key ID="STR_KAT_Airway_AirwayStatus_Occlusion">
             <English>Airway is occluded, medical suction needed</English>
@@ -398,6 +407,7 @@
             <Portuguese>Vias aéreas ocluídas, sucção médica necessária</Portuguese>
             <Dutch>Luchtweg is verstopt, medische suctie is vereist</Dutch>
             <Italian>Le vie aeree sono occluse, è necessaria l'aspirazione medica</Italian>
+            <Czech>Dýchací cesty jsou ucpány, odsávání nutné</Czech>
         </Key>
         <Key ID="STR_KAT_Airway_AirwayStatus_Clear">
             <English>Airway is clear</English>
@@ -423,6 +433,7 @@
             <Japanese>気道はひどく水膨れしている</Japanese>
             <French>Les voies respiratoires sont fortement cloquées</French>
             <Chinesesimp>气道严重膨胀</Chinesesimp>
+            <Czech>Silné puchýře na dýchacích cestách</Czech>
             <Chinese>氣道嚴重膨脹</Chinese>
         </Key>
         <Key ID="STR_KAT_Airway_AirwayStatus_NotClearForItem">
@@ -496,6 +507,7 @@
             <Portuguese>A cabeça do paciente já está hiperestendida</Portuguese>
             <Dutch>Patiënts hoofd is al overstrekt</Dutch>
             <Italian>La testa del paziente è già iperestesa</Italian>
+            <Czech>Pacient má již narovnanou hlavu</Czech>
         </Key>
         <Key ID="STR_KAT_Airway_Hyperextend_progress">
             <English>Hyperextending head</English>
@@ -549,6 +561,7 @@
             <Portuguese>Cabeça hiperestendida com sucesso</Portuguese>
             <Dutch>Hoofd succesvol overstrekt</Dutch>
             <Italian>Testa iperestesa con successo</Italian>
+            <Czech>Hlava úspěšně narovnána</Czech>
         </Key>
         <Key ID="STR_KAT_Airway_Hyperextend_Log">
             <English>%1 hyperextended %2s head</English>
@@ -562,6 +575,7 @@
             <Dutch>%1 overstrekte %2s hoofd</Dutch>
             <Italian>%1 ha posto la testa di %2 in iperestensione</Italian>
             <Chinesesimp>%1 头部过度伸展 %2</Chinesesimp>
+            <Czech>%1 narovnal %2 hlavu</Czech>
         </Key>
         <Key ID="STR_KAT_Airway_headTurning_info">
             <English>Head turn performed, airways are still not clear</English>
@@ -616,6 +630,7 @@
             <Dutch>Begin hoofddraaiing</Dutch>
             <Italian>Iniziata la rotazione della testa</Italian>
             <Chinesesimp>开始转头</Chinesesimp>
+            <Czech>Začít s otáčením hlavy</Czech>
         </Key>
         <Key ID="STR_KAT_Airway_headTurning_cancelled">
             <English>Head turning cancelled</English>
@@ -632,6 +647,7 @@
             <Chinesesimp>异物清除停止了</Chinesesimp>
             <Dutch>Hoofddraaiing gestopt</Dutch>
             <Italian>Rotazione della testa annullata</Italian>
+            <Czech>Otáčení hlavy zrušeno</Czech>
         </Key>
         <Key ID="STR_KAT_Airway_headTurning_start">
             <English>Head Turning Started</English>
@@ -647,6 +663,7 @@
             <Portuguese>Rotação de cabeça iniciada</Portuguese>
             <Dutch>Hoofddraaiing gestart</Dutch>
             <Italian>Rotazione della testa avviata</Italian>
+            <Czech>Otáčení hlavy započato</Czech>
         </Key>
         <Key ID="STR_KAT_Airway_headTurning_stop">
             <English>Stop head turning</English>
@@ -663,6 +680,7 @@
             <Chinesesimp>停止清除异物</Chinesesimp>
             <Dutch>Stop de hoofddraaiing</Dutch>
             <Italian>Fermare la rotazione della testa</Italian>
+            <Czech>Přestat s otáčením hlavu</Czech>
         </Key>
         <Key ID="STR_KAT_Airway_Accuvac_NA">
             <English>Medical suction not needed</English>
@@ -696,6 +714,7 @@
             <Dutch>Medische suctie voltooid, Verstopping verwijderd</Dutch>
             <Italian>Aspirazione medica completata, occlusione rimossa</Italian>
             <Chinesesimp>医用抽吸完成，封堵物移除</Chinesesimp>
+            <Czech>Odsávání dokončeno, okluze odstraněna</Czech>
         </Key>
         <Key ID="STR_KAT_Airway_action_checking">
             <English>Checking Airway</English>
@@ -823,6 +842,7 @@
             <Dutch>ACCUVAC</Dutch>
             <Italian>ACCUVAC</Italian>
             <Chinesesimp>ACCUVAC</Chinesesimp>
+            <Czech>ACCUVAC</Czech>
         </Key>
         <Key ID="STR_KAT_Airway_Accuvac_Desc_Short">
             <English>ACCUVAC is a medical suction device for airway suction with battery drive for mobile use in emergency medicine.</English>
@@ -856,6 +876,7 @@
             <Portuguese>Sucção de vias aéreas</Portuguese>
             <Dutch>Luchtweg suctie</Dutch>
             <Italian>Aspirazione delle vie aeree</Italian>
+            <Czech>Odsátí dýchacích cest</Czech>
         </Key>
         <Key ID="STR_KAT_Airway_Suction_Display">
             <English>Manual Suction Pump</English>
@@ -870,6 +891,7 @@
             <Dutch>Handmatige suctiepomp</Dutch>
             <Italian>Pompa di aspirazione manuale</Italian>
             <Chinesesimp>手动抽吸泵</Chinesesimp>
+            <Czech>Manuální odsávací pumpa</Czech>
         </Key>
         <Key ID="STR_KAT_Airway_Suction_Log">
             <English>%1 did a medical suction using a %2</English>
@@ -883,6 +905,7 @@
             <Dutch>%1 voerde een medische suctie uit met een %2</Dutch>
             <Italian>%1 ha eseguito un'aspirazione medica utilizzando un/a %2</Italian>
             <Chinesesimp>%1 使用 %2 进行了医用抽吸</Chinesesimp>
+            <Czech>%1 odsál dýchací cesty s použitím %2</Czech>
         </Key>
         <Key ID="STR_KAT_Airway_Suction_Desc_Short">
             <English>Manual Suction Pump is a medical suction device for airway suction manually. This is an alternative to electrical devices.</English>
@@ -897,6 +920,7 @@
             <Dutch>De handmatige suctiepomp is een apparaat om handmatig de luchtwegen af te zuigen. Dit is een alternatief voor electrische apparaten</Dutch>
             <Italian>La pompa di aspirazione manuale è un dispositivo medico per l'aspirazione delle vie aeree manualmente. Questa è un'alternativa ai dispositivi elettrici.</Italian>
             <Chinesesimp>手动抽吸泵是一种用于手动气道抽吸的医用抽吸装置。这是电气设备的替代品。</Chinesesimp>
+            <Czech>Manuální odsávací pumpa je zdravotnická pomůcka pro manuální odsávání dýchacích cest. Je alternativou k elektronickým zařízením.</Czech>
         </Key>
         <Key ID="STR_KAT_Airway_SuctionTreatment_displayName">
             <English>Airway Suction (Manual)</English>
@@ -911,6 +935,7 @@
             <Dutch>Handmatige luchtweg suctie</Dutch>
             <Italian>Aspirazione delle vie aeree (manuale)</Italian>
             <Chinesesimp>气道吸气（手动）</Chinesesimp>
+            <Czech>Odsátí dýchacích cest (Manuální)</Czech>
         </Key>
         <Key ID="STR_KAT_Airway_Suction_Reuse">
             <English>Reusable Manual Suction Pump</English>
@@ -925,6 +950,7 @@
             <Dutch>Herbruikbare handmatige suctiepomp</Dutch>
             <Italian>Pompa di aspirazione manuale riutilizzabile</Italian>
             <Chinesesimp>可重复使用的手动抽吸泵</Chinesesimp>
+            <Czech>Znovupoužitelná Manuální Odsávací Pumpa</Czech>
         </Key>
         <Key ID="STR_KAT_Airway_Suction_Reuse_DESC">
             <English>Regain the Manual Suction Pump after use</English>
@@ -939,6 +965,7 @@
             <Dutch>Krijg de handmatige suctiepomp terug na gebruik</Dutch>
             <Italian>Recuperare la pompa di aspirazione manuale dopo l'uso</Italian>
             <Chinesesimp>使用后重新启动手动抽吸泵</Chinesesimp>
+            <Czech>Získat zpět Manuální Odsávací Pumpu po použití</Czech>
         </Key>
         <Key ID="STR_KAT_Airway_Vomit_Display">
             <English>Vomit (Small)</English>
@@ -1124,6 +1151,7 @@
             <Dutch>Sta handmatige suctiepomp toe</Dutch>
             <Italian>Permettere l'uso della pompa di aspirazione manuale</Italian>
             <Chinesesimp>允许手动抽吸泵</Chinesesimp>
+            <Czech>Povolit Manuální Odsávací Pumpu</Czech>
         </Key>
         <Key ID="STR_KAT_Airway_ALLOW_SUCTION_DESC">
             <English>Training level required to use a Manual Suction Pump</English>
@@ -1138,6 +1166,7 @@
             <Dutch>Trainingsniveau benodigd om een handmatige suctiepomp te gebruiken</Dutch>
             <Italian>Livello di formazione richiesto per utilizzare una pompa di aspirazione manuale</Italian>
             <Chinesesimp>使用手动抽吸泵所需的培训水平</Chinesesimp>
+            <Czech>Úroveň výcviku potřebná k použití Manuální Odsávací Pumpy</Czech>
         </Key>
         <Key ID="STR_KAT_Airway_TIME_CHECKAIRWAY">
             <English>Time to check Airway</English>
@@ -1230,6 +1259,7 @@
             <Dutch>Hoofddraaiing interval</Dutch>
             <Italian>Intervallo di rotazione della testa</Italian>
             <Chinesesimp>头部转动间隔</Chinesesimp>
+            <Czech>Interval otáčení hlavy</Czech>
         </Key>
         <Key ID="STR_KAT_Airway_SETTING_HeadTurning_Interval_DESC">
             <English>Time between head turning attempts</English>
@@ -1246,6 +1276,7 @@
             <Dutch>Tijd tussen hoofddraaiing pogingen</Dutch>
             <Italian>Tempo tra i tentativi di rotazione della testa</Italian>
             <Chinesesimp>两次扭头尝试之间的时间</Chinesesimp>
+            <Czech>Čas mezi pokusy otáčení hlavy</Czech>
         </Key>
         <Key ID="STR_KAT_Airway_Activity_HeadTurning">
             <English>%1 finished head turning (x%2)</English>
@@ -1262,6 +1293,7 @@
             <Dutch>%1 heeft het hoofd gedraaid (x%2)</Dutch>
             <Italian>%1 ha completato la rotazione della testa (x%2)</Italian>
             <Chinesesimp>%1 完成头部旋转（x %2）</Chinesesimp>
+            <Czech>%1 dokončil otáčení hlavy (x%2)</Czech>
         </Key>
         <Key ID="STR_KAT_Airway_TIME_ACCUVAC">
             <English>Time for ACCUVAC</English>
@@ -1314,6 +1346,7 @@
             <Dutch>Behandelstijd van een handmatige suctiepomp</Dutch>
             <Italian>Tempo per la pompa di aspirazione manuale</Italian>
             <Chinesesimp>手吸泵所需时间</Chinesesimp>
+            <Czech>Čas pro Manuální Odsávací Pumpu</Czech>
         </Key>
         <Key ID="STR_KAT_Airway_TIME_SUCTION_DESC">
             <English>How long it will take to use Manual Suction Pump</English>
@@ -1328,6 +1361,7 @@
             <Dutch>Hoe lang het gaat duren om een handmatige suctiepomp te gebruiken</Dutch>
             <Italian>Quanto tempo ci vorrà per utilizzare la pompa di aspirazione manuale</Italian>
             <Chinesesimp>使用手吸泵需要多长时间</Chinesesimp>
+            <Czech>Jak dlouho zabere použití Manuální Odsávací Pumpy</Czech>
         </Key>
         <Key ID="STR_KAT_Airway_TIME_LARYNXTUBUS">
             <English>Time for Larynxtubus</English>
@@ -1532,6 +1566,7 @@
             <Dutch>%1 stopte de stabiele zijligging</Dutch>
             <Italian>%1 ha annullato la posizione laterale di sicurezza</Italian>
             <Chinesesimp>%1 已取消恢复体位</Chinesesimp>
+            <Czech>%1 zrušil stabilizovanou polohu</Czech>
         </Key>
         <Key ID="STR_KAT_Airway_SETTING_RecoveryPosition_Time">
             <English>Time for recovery position</English>
@@ -1642,6 +1677,7 @@
             <Dutch>Hoe lang het gaat duren om de stabiele zijligging te stoppen</Dutch>
             <Italian>Quanto tempo ci vorrà per annullare manualmente la posizione laterale di sicurezza</Italian>
             <Chinesesimp>手动取消恢复位置需要多长时间</Chinesesimp>
+            <Czech>Jak dlouho potrvá manuálně zrušit stabilizovanou polohu</Czech>
         </Key>
         <Key ID="STR_KAT_Airway_SETTING_RecoveryPosition_TimeToDrain">
             <English>Recovery Position time to drain occlusion</English>
@@ -1657,6 +1693,7 @@
             <Dutch>Stabiele zijligging: Benodigde tijd om zich te ontdoen van een verstopping</Dutch>
             <Italian>Tempo in posizione laterale di sicurezza per drenare l'occlusione</Italian>
             <Chinesesimp>恢复体位引流闭塞的时间</Chinesesimp>
+            <Czech>Čas pro odstranění okluze ve stabilizované poloze</Czech>
         </Key>
         <Key ID="STR_KAT_Airway_SETTING_RecoveryPosition_TimeToDrain_DESC">
             <English>Maximum time required for patient in recovery position to be drained of occlusion.</English>
@@ -1672,6 +1709,7 @@
             <Dutch>Maximale tijd die nodig is om een patiënt in de stabiele zijligging te ontdoen van een verstopping.</Dutch>
             <Italian>Tempo massimo richiesto per drenare l'occlusione nel paziente in posizione laterale di sicurezza</Italian>
             <Chinesesimp>处于恢复位置的患者排空闭塞所需的最长时间。</Chinesesimp>
+            <Czech>Maximální čas ve stabilizované poloze potřebný pro odstranění okluze.</Czech>
         </Key>
         <Key ID="STR_KAT_Airway_SubCategory_RecoveryPositionHyperextend">
             <English>Recovery Position + Head Hyperextend Settings</English>
@@ -1687,6 +1725,7 @@
             <Dutch>Stabiele zijliggings- en hoofd overstrekkings opties</Dutch>
             <Italian>Impostazioni della posizione laterale di sicurezza + iperestensione della testa</Italian>
             <Chinesesimp>恢复位置+头部超伸展设置</Chinesesimp>
+            <Czech>Nastavení stabilizované polohy + narovnávání hlavy</Czech>
         </Key>
         <Key ID="STR_KAT_Airway_SubCategory_Suction">
             <English>Suction devices Settings</English>
@@ -1701,6 +1740,7 @@
             <Dutch>Suctie apparaten instellingen</Dutch>
             <Italian>Impostazioni dei dispositivi di aspirazione</Italian>
             <Chinesesimp>抽吸装置设置</Chinesesimp>
+            <Czech>Nastavení odsávacích zařízení</Czech>
         </Key>
         <Key ID="STR_KAT_Airway_SubCategory_Items">
             <English>Airway items Settings</English>
@@ -1854,6 +1894,7 @@
             <Russian>Автоматическая сортировка дыхательных путей</Russian>
             <Dutch>Auto triage van de luchtwegen</Dutch>
             <Chinesesimp>自动分流气道</Chinesesimp>
+            <Czech>Automatická triáž dýchacích cest</Czech>
         </Key>
         <Key ID="STR_KAT_Airway_AutoTriage_Desc">
             <English>Sets if checking airways can override current triage level</English>
@@ -1870,6 +1911,7 @@
             <Russian>Определяет, изменяет ли проверка дыхательных путей текущий уровень сортировки</Russian>
             <Dutch>Zet of het checken van de luchtwegen het huidige triage niveau overschrijft</Dutch>
             <Chinesesimp>设置检查气道是否可以覆盖当前的分诊级别</Chinesesimp>
+            <Czech>Nastavuje, zda kontrola dýchacích cest může přepsat momentální úroveň triáže</Czech>
         </Key>
         <Key ID="STR_KAT_Airway_BLOCK_HEADTURNING">
             <English>Block head turning</English>

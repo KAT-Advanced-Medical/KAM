@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Project name="KAT">
     <Package name="Breathing">
+        <Key ID="STR_KAT_Breathing_cba_name">
+            <English>KAT - ADV Medical: Breathing</English>
+            <Japanese>KAM - 呼吸器系 (Breathing)</Japanese>
+        </Key> 
         <Key ID="STR_KAT_Breathing_SETTING_ENABLE">
             <English>Activate Breathing Module</English>
             <Spanish>Activar el módulo de respiración</Spanish>
@@ -13,6 +17,7 @@
             <Dutch>Activeer ademhalingsmodule</Dutch>
             <Italian>Attivare il modulo di respirazione</Italian>
             <Chinesesimp>启用呼吸模块</Chinesesimp>
+            <Czech>Aktivovat modul Dýchání</Czech>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_ENABLE_DESC">
             <English>Sets if SPO2 simulation and according functionality like Pneumothorax and \nAirway: occlusion &amp; obstruction (SPO2 reduction will be deactivated) should be activated</English>
@@ -26,6 +31,7 @@
             <Dutch>Activeert SpO2 simulatie omtrend pneumothorax en luchtwegen: verstopping en obstructie (SpO2 reductie wordt gedeactiveerd)</Dutch>
             <Italian>Imposta se la simulazione SPO2 e le relative funzionalità, come Pneumotorace e Vie aeree: occlusione e ostruzione (la riduzione SPO2 sarà disattivata), devono essere attivate</Italian>
             <Chinesesimp>如果SPO2模拟和相应的功能，如气胸和\nAirway：闭塞和阻塞（SPO2减少将被停用）应被激活，则设置</Chinesesimp>
+            <Czech>Aktivace SpO2 simulace a souvisejících funkcí, jako jsou Pneumotorax, Okluze a Obstrukce (snižování SpO2 bude deaktivováno)</Czech>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_SpO2_dieValue">
             <English>Lethal SpO2 value</English>
@@ -74,6 +80,7 @@
             <Dutch>Hartstilstand SpO2 waarde</Dutch>
             <Italian>Valore SpO2 arresto cardiaco</Italian>
             <Chinesesimp>心脏骤停SpO2值</Chinesesimp>
+            <Czech>Hodnota SpO2 pro srdeční zástavu</Czech>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_SpO2_cardiacActive">
             <English>Activate cardiac arrest SpO2 value</English>
@@ -86,6 +93,7 @@
             <Dutch>Activeer hartstilstand SpO2 waarde</Dutch>
             <Italian>Attivare il valore SpO2 arresto cardiaco</Italian>
             <Chinesesimp>激活心脏骤停的SpO2值</Chinesesimp>
+            <Czech>Aktivace hodnoty SpO2 pro srdeční zástavu</Czech>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_MultiplyPositive">
             <English>SpO2 positive multiplier</English>
@@ -162,6 +170,7 @@
             <Japanese>PaCO2を有効化</Japanese>
             <Italian>Abilitare PaCO2</Italian>
             <French>Activation de la PaCO2</French>
+            <Czech>Povolit PaCO2</Czech>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_PACO2_ENABLE_DESC">
             <English>Enables PaCO2 movement and effects on ph and breathing rate</English>
@@ -170,6 +179,7 @@
             <Japanese>phや呼吸速度へ影響を与えるPaCO2(動脈血二酸化炭素分圧)の変動を有効にします</Japanese>
             <Italian>Abilita il movimento di PaCO2 e gli effetti su pH e frequenza respiratoria</Italian>
             <French>Permet le déplacement de la PaCO2 et les effets sur le pH et la fréquence respiratoire</French>
+            <Czech>Povoluje hodnoty PaCO2 a efekt na ph a frekvenci dechu</Czech>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_pneumothorax">
             <English>Probability for a pneumothorax</English>
@@ -200,6 +210,7 @@
             <Spanish>Permitir monitoreo de ETCo2</Spanish>
             <Dutch>Activeer ETCo2 monitor</Dutch>
             <Italian>Abilitare il monitoraggio ETCo2</Italian>
+            <Czech>Povolit monitorování ETCo2</Czech>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_Enable_Etco2_Desc">
             <English>Sets if medics can view a patient's ETCo2 and Respiratory Rate in the Vitals Monitor when a device capable of monitoring ETCo2 is connected</English>
@@ -212,6 +223,7 @@
             <Spanish>Establece si los médicos puede ver el ETCo2 y la Frecuencia Respiratoria de una paciente en el monitor de Signos Vitales cuando se conecta un dispositivo capaz de monitorear ETCo2</Spanish>
             <Dutch>Activeert het zien van ETCo2 en ademhalingstempo op de vitale waarden monitor wanneer een apparaat die ETCo2 kan monitoren is aangesloten</Dutch>
             <Italian>Imposta se i medici possono visualizzare l'ETCo2 e la frequenza respiratoria del paziente nel monitor dei parametri vitali quando è connesso un dispositivo in grado di monitorare l'ETCo2</Italian>
+            <Czech>Nastavuje, zda mohou zdravotníci sledovat hodnotu ETCo2 a dechovou frekvenci pacienta na monitoru životních funkcí, pokud je připojeno zařízení schopné monitorování ETCo2</Czech>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_Select_Etco2_Units">
             <English>Desired units for ETCo2 Monitoring</English>
@@ -224,6 +236,7 @@
             <Spanish>Unidades deseadas para el monitoreo de ETCo2</Spanish>
             <Dutch>Geprefereerde eenheden voor ETCo2 monitoren</Dutch>
             <Italian>Unità desiderate per il monitoraggio ETCo2</Italian>
+            <Czech>Požadované jednotky pro monitorování ETCo2</Czech>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_Allow_NasalCannula">
             <English>Allow Nasal Cannula</English>
@@ -236,6 +249,7 @@
             <Spanish>Permitir cánula nasal</Spanish>
             <Dutch>Sta nasale canule toe</Dutch>
             <Italian>Consentire l'uso della cannula nasale</Italian>
+            <Czech>Povolit Nosní Kanylu</Czech>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_Allow_NasalCannula_Desc">
             <English>Training level required to insert a Nasal Cannula</English>
@@ -248,6 +262,7 @@
             <Spanish>Nivel de formación requerido para insertar una cánula nasal</Spanish>
             <Dutch>Trainingsniveau benodigd voor het inbrengen van een nasale canule</Dutch>
             <Italian>Livello di formazione richiesto per inserire una cannula nasal</Italian>
+            <Czech>Úroveň výcviku potřebná k zavedení Nosní Kanyly</Czech>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_Time_NasalCannula">
             <English>Time for Nasal Cannula</English>
@@ -260,6 +275,7 @@
             <Spanish>Tiempo de la cánula nasal</Spanish>
             <Dutch>Tijd voor het inbrengen van een nasale canule</Dutch>
             <Italian>Tempo per la cannula nasale</Italian>
+            <Czech>Čas pro Nosní Kanylu</Czech>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_Time_NasalCannula_Desc">
             <English>How long it will take to insert a Nasal Cannula</English>
@@ -272,6 +288,7 @@
             <Spanish>Tiempo necesario para insertar una cánula nasal</Spanish>
             <Dutch>Hoelang het gaat duren om een nasale canule in te brengen</Dutch>
             <Italian>Quanto tempo ci vorrà per inserire una cannula nasale</Italian>
+            <Czech>Jak dlouho zabere zavedení Nosní Kanyly</Czech>
         </Key>
         <Key ID="STR_KAT_Breathing_Pulseoximeter_Display">
             <English>Attach Pulse Oximeter</English>
@@ -336,6 +353,7 @@
             <French>Utilisé pour vérifier le rythme cardiaque et la SpO2</French>
             <Spanish>Utilizado para analizar el pulso sanguíneo y el SpO2</Spanish>
             <Italian>Utilizzato per leggere la frequenza del polso e il valore SpO2</Italian>
+            <Czech>Používá se k měření tepové frekvence a SpO2</Czech>
         </Key>
         <Key ID="STR_KAT_Breathing_placing">
             <English>Placing</English>
@@ -582,6 +600,7 @@
             <Russian>Устранить уплотнение в грудной клетке после лечения</Russian>
             <Dutch>Verwijder chest seal na behandeling</Dutch>
             <Italian>Rimuovere il Chest Seal dopo il trattamento</Italian>
+            <Czech>Odstranit Hrudní Chlopeň po ošetření</Czech>
             <Chinese>治療後移除胸腔密封貼</Chinese>
             <Chinesesimp>治疗后移除胸腔密封贴</Chinesesimp>
         </Key>
@@ -878,6 +897,7 @@
             <Italian>La percentuale di probabilità che determina se un pneumotorace completamente deteriorato degenererà in un pneumotorace avanzato, questo viene calcolato continuamente come impostato nell'intervallo di deterioramento del pneumotorace.</Italian>
             <Chinese>百分比機率決定完全惡化的氣胸是否會惡化為 進階氣胸，這是根據氣胸惡化間隔的設定持續計算的。</Chinese>
             <Chinesesimp>决定完全恶化的气胸是否恶化为晚期（高级）气胸的概率。这是按照气胸恶化的间隔设定的每个时机持续计算的。</Chinesesimp>
+            <Czech>Procentuální šance, která určuje, zda se plně zhoršený pneumotorax dále vyvine v pokročilý pneumotorax. Tato šance se neustále vyhodnocuje podle nastaveného intervalu zhoršování pneumotoraxu.</Czech>
         </Key>
         <Key ID="STR_KAT_Breathing_HEMOPNEUMOTHORAX_TREATMENT_LEVEL">
             <English>Hemothorax / Tension Pnuemothorax Treament Minimum Level</English>
@@ -965,6 +985,7 @@
             <Italian>Aumentare la probabilità di pneumotorace in base al danno subito</Italian>
             <Chinese>根據損傷程度增加氣胸機率</Chinese>
             <Chinesesimp>根据损伤增加气胸的概率</Chinesesimp>
+            <Czech>Zvýšení šance na pneumotorax podle poškození</Czech>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_PneumothoraxDamageThreshold_DamageTaken_DESCRIPTION">
             <English>Increase chance of a pneumothorax and advanced pneumothorax occurring based on damage taken if over the pneumothorax damage threshold</English>
@@ -980,6 +1001,7 @@
             <Italian>Aumentare la probabilità che si verifichi un pneumotorace e un pneumotorace avanzato in base al danno subito, se oltre la soglia di danno del pneumotorace</Italian>
             <Chinese>若損傷超過氣胸損傷閾值，則根據所受損傷增加發生氣胸和進階氣胸的機率。</Chinese>
             <Chinesesimp>如果超过气胸损伤阈值，则根据所受损伤增加气胸和晚期气胸发生的概率</Chinesesimp>
+            <Czech>Zvyšuje šanci na pneumotorax a pokročilý pneumotorax na základě utrženého poškození, pokud překročí práh poškození pro pneumotorax.</Czech>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_deepPenetratingInjuryChance">
             <English>Deep Penetrating Injury Chance</English>
@@ -995,6 +1017,7 @@
             <Italian>Probabilità di lesione penetrante profonda</Italian>
             <Chinese>深度穿透性損傷機率</Chinese>
             <Chinesesimp>深度穿透伤概率</Chinesesimp>
+            <Czech>Šance na Hluboce Penetrující Zranění</Czech>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_deepPenetratingInjuryChance_DESC">
             <English>Chance for deep penetrating injury to appear when pneumothorax damage threshold is passed but no pneumothorax is inflicted</English>
@@ -1010,6 +1033,7 @@
             <Italian>Probabilità che si verifichi una lesione penetrante profonda quando la soglia di danno del pneumotorace è superata, ma non si verifica pneumotorace</Italian>
             <Chinese>若超過氣胸損傷閾值但未引發氣胸，則有機會出現深度穿透性損傷。</Chinese>
             <Chinesesimp>当超过气胸损伤阈值但未造成气胸时，出现深穿透伤的概率</Chinesesimp>
+            <Czech>Šance na hluboce penetrující zranění pokud je překročen práh poškození pneumotoraxu, ale žádný pneumotorax nevznikl</Czech>
         </Key>
         <Key ID="STR_KAT_Breathing_DeepPenetratingInjury">
             <English>Deep Penetrating Injury</English>
@@ -1025,6 +1049,7 @@
             <Italian>Lesione penetrante profonda</Italian>
             <Chinese>深度穿透性損傷</Chinese>
             <Chinesesimp>深穿透伤</Chinesesimp>
+            <Czech>Hluboce Penetrující Zranění</Czech>
         </Key>
         <Key ID="STR_KAT_Breathing_ChestSealApplied">
             <English>Chest Seal Applied</English>
@@ -1040,6 +1065,7 @@
             <Italian>Sigillo toracico applicato</Italian>
             <Chinese>已應用 胸部封貼</Chinese>
             <Chinesesimp>胸部密封已应用</Chinesesimp>
+            <Czech>Hrudní Chlopeň aplikována</Czech>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_HPTX_BleedAmount">
             <English>Hemopneumothorax internal bleeding amount</English>
@@ -1089,6 +1115,7 @@
             <Italian>Pneumotorace sempre visibile</Italian>
             <Chinese>氣胸總是可見</Chinese>
             <Chinesesimp>气胸始终可见</Chinesesimp>
+            <Czech>Pneumotoraxy vždy viditelné</Czech>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_PneumothoraxAlwaysVisible_DESCRIPTION">
             <English>Sets if pneumothorax should always be visible in the medical menu as an injury instead of requiring diagnosis (1x pneumothorax)</English>
@@ -1104,6 +1131,7 @@
             <Italian>Imposta se il pneumotorace deve essere sempre visibile nel menu medico come lesione, invece di richiedere una diagnosi (1x pneumotorace)</Italian>
             <Chinese>設定氣胸是否應始終在醫療選單中顯示為損傷，不需要診斷（如 1x 氣胸）。</Chinese>
             <Chinesesimp>设置气胸是否应始终作为损伤出现在医疗菜单中，而不需要诊断（1x气胸）</Chinesesimp>
+            <Czech>Nastavuje, zda má být pneumotorax vždy viditelný ve zdravotnickém menu jako zranění namísto nutnosti diagnózy (1x pneumotorax)</Czech>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_TensionHemothoraxAlwaysVisible">
             <English>Tension pneumothorax and hemothorax always visible</English>
@@ -1119,6 +1147,7 @@
             <Italian>Pneumotorace da tensione e emotorace sempre visibili</Italian>
             <Chinese>張力性氣胸、血氣胸 總是可見</Chinese>
             <Chinesesimp>设置张力性气胸和血气胸是否应始终作为损伤出现在医疗菜单中，而不需要诊断（1x张力性气胸/1x血气胸）</Chinesesimp>
+            <Czech>Tenzní pneumotorax a hemotorax vždy viditelné</Czech>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_TensionHemothoraxAlwaysVisible_DESCRIPTION">
             <English>Sets if tension pneumothorax and hemopneumothorax should always be visible in the medical menu as an injury instead of requiring diagnosis (1x tensionpneumothorax/1x hemopneumothorax)</English>
@@ -1134,6 +1163,7 @@
             <Italian>Imposta se il pneumotorace da tensione e l'emopneumotorace devono essere sempre visibili nel menu medico come lesioni, invece di richiedere una diagnosi (1x pneumotorace da tensione/1x emopneumotorace)</Italian>
             <Chinese>設定張力性氣胸和血氣胸是否應始終在醫療選單中顯示為損傷，不需要診斷（如 1x 張力性氣胸/1x 血氣胸）。</Chinese>
             <Chinesesimp>设置张力性气胸和血气胸是否应始终作为损伤出现在医疗菜单中，而不需要诊断</Chinesesimp>
+            <Czech>Nastavuje, zda mají být tenzní pneumotorax a hemotorax vždy viditelné ve zdravotnickém menu jako zranění namísto nutnosti diagnózy (1x tenzní pneumotorax/1x hemotorax)</Czech>
         </Key>
         <Key ID="STR_KAT_Breathing_Stethoscope_display">
             <English>Stethoscope</English>
@@ -1416,6 +1446,7 @@
             <Italian>Mostra cianosi</Italian>
             <Chinese>顯示發紺</Chinese>
             <Chinesesimp>显示发绀</Chinesesimp>
+            <Czech>Zobrazit cyanózu</Czech>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_showCyanosis_DESC">
             <English>Shows cyanosis of patient in overview tab</English>
@@ -1431,6 +1462,7 @@
             <Italian>Mostra la cianosi del paziente nella scheda panoramica</Italian>
             <Chinese>在總覽標籤中顯示患者的發紺情況</Chinese>
             <Chinesesimp>在概览选项卡中显示患者的紫绀</Chinesesimp>
+            <Czech>Zobrazit cyanóza v pacientové tabulce přehledu</Czech>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_slightValue">
             <English>Slight cyanosis SpO2 value</English>
@@ -1571,6 +1603,7 @@
             <Italian>Probabilità che il pneumotorace peggiori</Italian>
             <Chinese>氣胸惡化的機率</Chinese>
             <Chinesesimp>气胸恶化的可能性</Chinesesimp>
+            <Czech>Šance na zhoršení pneumotoraxu</Czech>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_deterioratingPneumothorax_interval">
             <English>Deteriorating pneumothorax interval</English>
@@ -1586,6 +1619,7 @@
             <Italian>Intervallo di deterioramento del pneumotorace</Italian>
             <Chinese>氣胸惡化的間隔</Chinese>
             <Chinesesimp>气胸间隔恶化</Chinesesimp>
+            <Czech>Interval zhoršování pneumotoraxu</Czech>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_deterioratingPneumothorax_interval_Desc">
             <English>After each interval a chance will be rolled whether or not the pneumothorax will deteriorate</English>
@@ -1601,6 +1635,7 @@
             <Italian>Dopo ogni intervallo, verrà calcolata una probabilità che il pneumotorace peggiori</Italian>
             <Chinese>每個間隔後，將計算氣胸是否惡化的機率</Chinese>
             <Chinesesimp>每次间隔后，气胸是否会恶化的概率都会被滚动</Chinesesimp>
+            <Czech>Po každém intervalu bude vyhodnocena šance, zda bude či nebude pneumotorax zhoršen</Czech>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_PneumothoraxArrest">
             <English>Enable Pneumothorax Arrest</English>
@@ -1613,6 +1648,7 @@
             <Italian>Abilitare l'arresto del pneumotorace</Italian>
             <Chinese>啟用氣胸心跳驟停</Chinese>
             <Chinesesimp>启用气胸抑制</Chinesesimp>
+            <Czech>Povolit zástavu pneumotoraxem</Czech>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_PneumothoraxArrest_DESCRIPTION">
             <English>Enables a chance for cardiac arrest following pneumothorax</English>
@@ -1625,6 +1661,7 @@
             <Italian>Abilita una probabilità di arresto cardiaco a seguito di pneumotorace</Italian>
             <Chinese>啟用氣胸後發生心跳停止的機率</Chinese>
             <Chinesesimp>气胸后有可能发生心脏骤停</Chinesesimp>
+            <Czech>Povoluje šanci na srdeční zástavu způsobenou pneumotoraxem</Czech>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_arrestPneumothorax_interval">
             <English>Deteriorating pneumothorax arrest interval</English>
@@ -1637,6 +1674,7 @@
             <Italian>Intervallo di arresto del pneumotorace in deterioramento</Italian>
             <Chinese>惡化性氣胸驟停間隔</Chinese>
             <Chinesesimp>气胸停止间隔恶化</Chinesesimp>
+            <Czech>Interval zástavy zhoršujícím se pneumotoraxem</Czech>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_arrestPneumothorax_interval_Desc">
             <English>After each interval a chance will be rolled whether or not a pneumothorax will result in cardiac arrest</English>
@@ -1649,6 +1687,7 @@
             <Italian>Dopo ogni intervallo, verrà calcolata una probabilità che un pneumotorace porti a un arresto cardiaco</Italian>
             <Chinese>每個間隔後，將計算氣胸是否導致心跳停止的機率</Chinese>
             <Chinesesimp>每间隔一次，就会有概率判断气胸是否会导致心脏骤停</Chinesesimp>
+            <Czech>Po každém intervalu bude vyhodnocena šance, zda pneumotorax způsobí či nezpůsobí srdeční zástavu</Czech>
         </Key>
         <Key ID="STR_KAT_Breathing_SubCategory_Items">
             <English>Breathing items Settings</English>
@@ -1833,6 +1872,7 @@
             <Italian>Respirazione di salvataggio avviata</Italian>
             <Chinese>開始使用BVM輔助呼吸</Chinese>
             <Chinesesimp>救援呼吸开始</Chinesesimp>
+            <Czech>Umělé vdechy započaty</Czech>
         </Key>
         <Key ID="STR_KAT_Breathing_UseBVM_PutAway">
             <English>Put away BVM</English>
@@ -1848,6 +1888,7 @@
             <Italian>Riporre il BVM</Italian>
             <Chinese>收起BVM</Chinese>
             <Chinesesimp>收起BVM</Chinesesimp>
+            <Czech>Odložit RV</Czech>
         </Key>
         <Key ID="STR_KAT_Breathing_UseBVM_Cancelled">
             <English>Rescue Breaths Cancelled</English>
@@ -1863,6 +1904,7 @@
             <Italian>Respirazione di salvataggio annullata</Italian>
             <Chinese>停止使用BVM輔助呼吸</Chinese>
             <Chinesesimp>救援呼吸被取消</Chinesesimp>
+            <Czech>Umělé vdechy přerušeny</Czech>
         </Key>
         <Key ID="STR_KAT_Breathing_UsePocketBVM">
             <English>Use Pocket BVM</English>
@@ -1928,6 +1970,7 @@
             <Italian>Usare il BVM con bombola di ossigeno (veicolo)</Italian>
             <Chinese>使用連接氧氣筒的BVM（車載）</Chinese>
             <Chinesesimp>使用带氧气罐的BVM（车辆）</Chinesesimp>
+            <Czech>Použít RV s Kyslíkovou Lahví (Vozidlo)</Czech>
         </Key>
         <Key ID="STR_KAT_Breathing_UseBVM_PortableOxygen_Vehicle_Progress">
             <English>Using BVM with Oxygen Tank (Vehicle)</English>
@@ -1943,6 +1986,7 @@
             <Dutch>Beademing met BVM en zuurstoftank (voertuig)</Dutch>
             <Chinese>正在使用連接氧氣筒的BVM（車載）</Chinese>
             <Chinesesimp>使用带氧气罐的BVM（车辆）</Chinesesimp>
+            <Czech>Používání RV s Kyslíkovou Lahví (Vozidlo)</Czech>
         </Key>
         <Key ID="STR_KAT_Breathing_PortableOxygenTankDisconnected_Empty">
             <English>Oxygen tank disconnected (empty)</English>
@@ -2204,6 +2248,7 @@
             <Japanese>個人用酸素ボンベ</Japanese>
             <French>Réservoir d'oxygène personnel</French>
             <Chinesesimp>便携式氧气罐</Chinesesimp>
+            <Czech>Osobní Kyslíková Lahev</Czech>
             <Chinese>個人氧氣罐</Chinese>
         </Key>
         <Key ID="STR_KAT_Breathing_PersonalOxygen_Desc_Short">
@@ -2211,6 +2256,7 @@
             <Japanese>高高度作戦に用いる個人用酸素ボンベ</Japanese>
             <French>Réservoir d'oxygène personnel pour les opérations en haute altitude</French>
             <Chinesesimp>高空作业用便携式氧气罐</Chinesesimp>
+            <Czech>Osobní Kyslíková Lahev pro operace ve vysokých nadmořských výškách</Czech>
             <Chinese>用於高空作業的個人氧氣罐</Chinese>
         </Key>
         <Key ID="STR_KAT_Breathing_PortableOxygenTank_150_Empty_Display">
@@ -2278,6 +2324,7 @@
             <Dutch>BVM zuurstof effectiviteits vermenigvuldiger</Dutch>
             <Chinese>BVM供氧效率倍數</Chinese>
             <Chinesesimp>BVM氧气效率倍增器</Chinesesimp>
+            <Czech>Násobitel efektivity kyslíku RV</Czech>
         </Key>
         <Key ID="STR_KAT_Breathing_Activity_BVM">
             <English>%1 used %2 (x%3)</English>
@@ -2293,6 +2340,7 @@
             <Dutch>%1 gebruikte %2 (x%3)</Dutch>
             <Chinese>%1 使用了 %2 (x%3)</Chinese>
             <Chinesesimp>%1已使用%2（x%3）</Chinesesimp>
+            <Czech>%1 použil %2 (x%3)</Czech>
         </Key>
         <Key ID="STR_KAT_Breathing_Activity_BVM_Oxygenated">
             <English>%1 (Oxygenated)</English>
@@ -2308,6 +2356,7 @@
             <Dutch>%1 (zuurstofrijk)</Dutch>
             <Chinese>%1 (含氧)</Chinese>
             <Chinesesimp>%1（含氧）</Chinesesimp>
+            <Czech>%1 (Okysličen)</Czech>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_BVM_MedLvl">
             <English>Allow BVM</English>
@@ -2493,6 +2542,7 @@
             <Dutch>Locaties die zuurstof geven</Dutch>
             <Chinese>提供氧氣的地點</Chinese>
             <Chinesesimp>位置提供氧气</Chinesesimp>
+            <Czech>Lokace poskytuje Kyslík</Czech>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_locationProvideOxygen_DESC">
             <English>Sets if medical vehicles/facilites can provide oxygen</English>
@@ -2508,6 +2558,7 @@
             <Dutch>Bepaalt of voertuigen/gebouwen zuurstof kunnen geven</Dutch>
             <Chinese>設定醫療車輛/設施是否可以提供氧氣</Chinese>
             <Chinesesimp>设置医疗车辆/设施是否可以提供氧气</Chinesesimp>
+            <Czech>Nastavuje, zda zdravotnická zařízení / vozidla mohou poskytovat kyslík</Czech>
         </Key>
         <Key ID="STR_KAT_Breathing_Check_Breathing">
             <English>Check Breathing</English>
@@ -2523,6 +2574,7 @@
             <Italian>Controllare la respirazione</Italian>
             <Chinese>檢查呼吸</Chinese>
             <Chinesesimp>检查呼吸</Chinesesimp>
+            <Czech>Zkontrolovat dýchání</Czech>
         </Key>
         <Key ID="STR_KAT_Breathing_Check_Breathing_Progress">
             <English>Checking Breathing</English>
@@ -2538,6 +2590,7 @@
             <Italian>Controllando la respirazione</Italian>
             <Chinese>正在檢查呼吸</Chinese>
             <Chinesesimp>检查呼吸中</Chinesesimp>
+            <Czech>Kontroluji dýchání</Czech>
         </Key>
         <Key ID="STR_KAT_Breathing_breath_stink">
             <English>, harsh and metallic</English>
@@ -2553,6 +2606,7 @@
             <Italian>, aspra e metallica</Italian>
             <Chinese>，粗重且有金屬味</Chinese>
             <Chinesesimp>，粗糙的金属质感</Chinesesimp>
+            <Czech>, těžké s kovovým zápachem</Czech>
         </Key>
         <Key ID="STR_KAT_Breathing_breath_mild">
             <English>, slightly fruity</English>
@@ -2568,6 +2622,7 @@
             <Italian>, leggermente fruttata</Italian>
             <Chinese>，略帶果香</Chinese>
             <Chinesesimp>，略带果香</Chinesesimp>
+            <Czech>, lehce nasládlý zápach</Czech>
         </Key>
         <Key ID="STR_KAT_Breathing_breathing_isNormal">
             <English>Patient is breathing normally</English>
@@ -2583,6 +2638,7 @@
             <Italian>Il paziente respira normalmente</Italian>
             <Chinese>病人呼吸正常</Chinese>
             <Chinesesimp>患者呼吸正常</Chinesesimp>
+            <Czech>Pacient dýchá normálně</Czech>
         </Key>
         <Key ID="STR_KAT_Breathing_breathing_isShallow">
             <English>Patient's breathing is shallow</English>
@@ -2598,6 +2654,7 @@
             <Italian>La respirazione del paziente è superficiale</Italian>
             <Chinese>病人呼吸淺促</Chinese>
             <Chinesesimp>患者呼吸微弱</Chinesesimp>
+            <Czech>Pacientův dech je mělký</Czech>
         </Key>
         <Key ID="STR_KAT_Breathing_breathing_shallow">
             <English>Shallow</English>
@@ -2613,17 +2670,20 @@
             <Italian>Superficiale</Italian>
             <Chinese>淺促</Chinese>
             <Chinesesimp>浅</Chinesesimp>
+            <Czech>Mělký</Czech>
         </Key>
         <Key ID="STR_KAT_Breathing_breathing_rrRapid">
             <English>RR: Rapid</English>
             <Japanese>呼吸速度: 速い</Japanese>
             <French>RR : Rapide</French>
+            <Czech>DF: Rychlá</Czech>
             <Chinese>呼吸頻率：快</Chinese>
         </Key>
         <Key ID="STR_KAT_Breathing_breathing_rrSlow">
             <English>RR: Slow</English>
             <Japanese>呼吸速度: 遅い</Japanese>
             <French>RR : Lent</French>
+            <Czech>DF: Pomalá</Czech>
             <Chinese>呼吸頻率：慢</Chinese>
         </Key>
         <Key ID="STR_KAT_Breathing_breathing_rrNormal">
@@ -2637,12 +2697,14 @@
             <French>La respiration du patient est très superficielle</French>
             <Chinese>病人呼吸非常淺</Chinese>
             <Japanese>患者の呼吸はとても浅い</Japanese>
+            <Czech>Pacientův dech je velmi mělký</Czech>
         </Key>
         <Key ID="STR_KAT_Breathing_breathing_Veryshallow">
             <English>Very Shallow</English>
             <French>Très superficielle</French>
             <Chinese>非常淺</Chinese>
             <Japanese>とても浅い</Japanese>
+            <Czech>Velmi mělký</Czech>
         </Key>
         <Key ID="STR_KAT_Breathing_breathing_none">
             <English>Patient is not breathing</English>
@@ -2675,6 +2737,7 @@
             <Italian>%1 ha controllato la respirazione: %2</Italian>
             <Chinese>%1 檢查了呼吸：%2</Chinese>
             <Chinesesimp>%1检查呼吸：%2</Chinesesimp>
+            <Czech>%1 zkontroloval dýchání: %2</Czech>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_inspectChest_enable">
             <English>Enable Inspect Chest</English>
@@ -2690,6 +2753,7 @@
             <Italian>Abilitare l'ispezione del torace</Italian>
             <Chinese>啟用胸部檢查</Chinese>
             <Chinesesimp>启用胸部检查</Chinesesimp>
+            <Czech>Povolit Kontrolu Hrudníku</Czech>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_inspectChest_enable_simple">
             <English>Simple</English>
@@ -2705,6 +2769,7 @@
             <Italian>Semplice</Italian>
             <Chinese>簡易</Chinese>
             <Chinesesimp>简单</Chinesesimp>
+            <Czech>Jednoduché</Czech>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_inspectChest_enable_default">
             <English>Default</English>
@@ -2720,6 +2785,7 @@
             <Italian>Predefinito</Italian>
             <Chinese>預設</Chinese>
             <Chinesesimp>违约</Chinesesimp>
+            <Czech>Defaultní</Czech>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_inspectChest_time">
             <English>Inspect Chest Time</English>
@@ -2735,6 +2801,7 @@
             <Italian>Tempo di ispezione del torace</Italian>
             <Chinese>胸部檢查時間</Chinese>
             <Chinesesimp>检查胸部时间</Chinesesimp>
+            <Czech>Čas Kontroly Hrudníku</Czech>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_inspectChest_medLvl">
             <English>Allow Inspecting Chest</English>
@@ -2750,6 +2817,7 @@
             <Italian>Consentire l'ispezione del torace</Italian>
             <Chinese>允許檢查胸部</Chinese>
             <Chinesesimp>允许检查胸部</Chinesesimp>
+            <Czech>Povoluje Kontrolu Hrudníku</Czech>
         </Key>
         <Key ID="STR_KAT_Breathing_inspectChest_display">
             <English>Inspect Chest</English>
@@ -2765,6 +2833,7 @@
             <Italian>Ispezionare il torace</Italian>
             <Chinese>檢查胸部</Chinese>
             <Chinesesimp>检查胸部</Chinesesimp>
+            <Czech>Zkontrolovat hrudník</Czech>
         </Key>
         <Key ID="STR_KAT_Breathing_inspectChest_progress">
             <English>Inspecting Chest</English>
@@ -2780,6 +2849,7 @@
             <Italian>Ispezionando il torace</Italian>
             <Chinese>正在檢查胸部</Chinese>
             <Chinesesimp>检查胸部</Chinesesimp>
+            <Czech>Kontroluji hrudník</Czech>
         </Key>
         <Key ID="STR_KAT_Breathing_inspectChest_log">
             <English>%1 inspected chest: %2</English>
@@ -2795,6 +2865,7 @@
             <Italian>%1 ha ispezionato il torace: %2</Italian>
             <Chinese>%1 檢查了胸部：%2</Chinese>
             <Chinesesimp>%1个检查胸部：%2</Chinesesimp>
+            <Czech>%1 zkontroloval hrudník: %2</Czech>
         </Key>
         <Key ID="STR_KAT_Breathing_inspectChest_normal">
             <English>Chest rise and fall observed</English>
@@ -2810,6 +2881,7 @@
             <Italian>Sollevamento e abbassamento del torace osservati</Italian>
             <Chinese>觀察到胸部起伏</Chinese>
             <Chinesesimp>观察胸部起伏</Chinesesimp>
+            <Czech>Pozorování zvedání a klesání hrudníku</Czech>
         </Key>
         <Key ID="STR_KAT_Breathing_inspectChest_none">
             <English>No chest movement observed</English>
@@ -2825,6 +2897,7 @@
             <Italian>Nessun movimento del torace osservato</Italian>
             <Chinese>未觀察到胸部起伏</Chinese>
             <Chinesesimp>未观察到胸部运动</Chinesesimp>
+            <Czech>Nebyl pozorován žádný pohyb hrudníku</Czech>
         </Key>
         <Key ID="STR_KAT_Breathing_inspectChest_none_log">
             <English>No chest movement</English>
@@ -2840,6 +2913,7 @@
             <Italian>Nessun movimento del torace</Italian>
             <Chinese>胸部沒有起伏</Chinese>
             <Chinesesimp>胸部无动作</Chinesesimp>
+            <Czech>Hrudník bez pohybu</Czech>
         </Key>
         <Key ID="STR_KAT_Breathing_inspectChest_uneven">
             <English>Chest sides are uneven</English>
@@ -2855,6 +2929,7 @@
             <Italian>I lati del torace sono irregolari</Italian>
             <Chinese>胸部兩側不對稱</Chinese>
             <Chinesesimp>胸部两侧不平</Chinesesimp>
+            <Czech>Strany hrudníku jsou nerovnoměrné</Czech>
         </Key>
         <Key ID="STR_KAT_Breathing_inspectChest_uneven_log">
             <English>, chest sides uneven</English>
@@ -2870,6 +2945,7 @@
             <Italian>, lati del torace irregolari</Italian>
             <Chinese>，胸部兩側不對稱</Chinese>
             <Chinesesimp>胸部两侧不平</Chinesesimp>
+            <Czech>, strany hrudníku nerovnoměrné</Czech>
         </Key>
         <Key ID="STR_KAT_Breathing_inspectChest_unevenMovement">
             <English>Uneven chest rise and fall</English>
@@ -2885,6 +2961,7 @@
             <Italian>Sollevamento e abbassamento del torace irregolari</Italian>
             <Chinese>胸部起伏不均勻</Chinese>
             <Chinesesimp>胸部起伏不均</Chinesesimp>
+            <Czech>Nerovnoměrné zvedání a klesání hrudníku</Czech>
         </Key>
         <Key ID="STR_KAT_Breathing_inspectChest_internalBleeding">
             <English>Skin is rigid, looks bruised</English>
@@ -2900,6 +2977,7 @@
             <Italian>La pelle è rigida, appare lividi</Italian>
             <Chinese>皮膚僵硬，看起來有瘀青</Chinese>
             <Chinesesimp>皮肤僵硬，看起来有瘀伤</Chinesesimp>
+            <Czech>Kůže je ztuhlá, vypadá pohmožděně</Czech>
         </Key>
         <Key ID="STR_KAT_Breathing_inspectChest_simple">
             <English>Symptoms indicate %1</English>
@@ -2915,6 +2993,7 @@
             <Italian>I sintomi indicano %1</Italian>
             <Chinese>症狀顯示 %1</Chinese>
             <Chinesesimp>症状表明%1</Chinesesimp>
+            <Czech>Symptomy indikují %1</Czech>
         </Key>
         <Key ID="STR_KAT_Breathing_Pneumothorax">
             <English>Pneumothorax</English>
@@ -2927,6 +3006,7 @@
             <Finnish>Pneumotoraksi</Finnish>
             <Russian>Пневмоторакс (PTX)</Russian>
             <Dutch>Pneumothorax</Dutch>
+            <Czech>Pneumotorax</Czech>
         </Key>
         <Key ID="STR_KAT_Breathing_TensionPneumothorax">
             <English>Tension Pneumothorax</English>
@@ -2941,6 +3021,7 @@
             <Dutch>Spanningspneumothorax</Dutch>
             <Italian>Pneumotorace da tensione</Italian>
             <Chinesesimp>张力性气胸</Chinesesimp>
+            <Czech>Tenzní pneumotorax</Czech>
             <Chinese>張力性氣胸</Chinese>
         </Key>
         <Key ID="STR_KAT_Breathing_Hemopneumothorax">
@@ -2957,6 +3038,7 @@
             <Italian>Emopneumotorace</Italian>
             <Chinese>血氣胸</Chinese>
             <Chinesesimp>血气胸</Chinesesimp>
+            <Czech>Hemotorax</Czech>
         </Key>
         <Key ID="STR_KAT_Breathing_Pneumothorax_short">
             <English>PTX</English>
@@ -2972,6 +3054,7 @@
             <Italian>PTX</Italian>
             <Chinese>氣胸</Chinese>
             <Chinesesimp>PTX</Chinesesimp>
+            <Czech>PTX</Czech>
         </Key>
         <Key ID="STR_KAT_Breathing_TensionPneumothorax_short">
             <English>TPTX</English>
@@ -2987,6 +3070,7 @@
             <Italian>TPTX</Italian>
             <Chinese>張力性氣胸</Chinese>
             <Chinesesimp>TPTX</Chinesesimp>
+            <Czech>TPTX</Czech>
         </Key>
         <Key ID="STR_KAT_Breathing_Hemopneumothorax_short">
             <English>HPTX</English>
@@ -3002,6 +3086,7 @@
             <Italian>HPTX</Italian>
             <Chinese>血氣胸</Chinese>
             <Chinesesimp>HPTX</Chinesesimp>
+            <Czech>HPTX</Czech>
         </Key>
         <Key ID="STR_KAT_Breathing_NasalCannula_Display">
             <English>Nasal Cannula</English>
@@ -3013,6 +3098,7 @@
             <Dutch>Nasale canule</Dutch>
             <Italian>Cannula nasale</Italian>
             <Chinesesimp>鼻插管</Chinesesimp>
+            <Czech>Nosní Kanyla</Czech>
             <Chinese>鼻導管</Chinese>
         </Key>
         <Key ID="STR_KAT_Breathing_NasalCannula_Desc_Short">
@@ -3026,6 +3112,7 @@
             <Italian>La cannula nasale può essere inserita nelle narici di un paziente e collegata a un monitor dei parametri vitali per registrare il livello di ETCo2 e la frequenza respiratoria del paziente.</Italian>
             <Chinese>鼻導管可插入病人鼻孔，並連接到生命體徵監測器，以記錄病人的呼氣末期二氧化碳 (ETCo2) 水平和呼吸率。</Chinese>
             <Chinesesimp>鼻导管可以插入患者的鼻孔并连接到生命体征监测仪，以记录患者的ETCo2水平和呼吸频率。</Chinesesimp>
+            <Czech>Nosní Kanyla může být zavedena do nosních dírek pacienta a připojena k zařízení monitorující životní funkce pro sledování hodnot ETCo2 a dechové frekvence pacienta.</Czech>
         </Key>
         <Key ID="STR_KAT_Breathing_Cancel_NasalCannula">
             <English>Remove Nasal Cannula</English>
@@ -3038,6 +3125,7 @@
             <Italian>Rimuovere la cannula nasale</Italian>
             <Chinese>移除鼻導管</Chinese>
             <Chinesesimp>移除鼻导管</Chinesesimp>
+            <Czech>Odstranit Nosní Kanylu</Czech>
         </Key>
         <Key ID="STR_KAT_Breathing_Remove_NasalCannula_Log">
             <English>%1 removed Nasal Cannula</English>
@@ -3050,6 +3138,7 @@
             <Italian>%1 ha rimosso la cannula nasale</Italian>
             <Chinese>%1 移除了鼻導管</Chinese>
             <Chinesesimp>%1个已移除的鼻导管</Chinesesimp>
+            <Czech>%1 odstranil Nosní Kanylu</Czech>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_enableCheckBreathing">
             <English>Enable Check Breathing</English>
@@ -3058,6 +3147,7 @@
             <Japanese>"呼吸を確認"を有効化</Japanese>
             <Chinese>啟用檢查呼吸</Chinese>
             <Chinesesimp>启用检查呼吸</Chinesesimp>
+            <Czech>Povolit Kontrolu Dýchání</Czech>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_enableCheckBreathing_DESC">
             <English>Whether or not Check Breathing medical action is enabled</English>
@@ -3066,6 +3156,7 @@
             <Japanese>呼吸を確認のアクションを可能にするかどうかを設定します</Japanese>
             <Chinese>檢查呼吸醫療動作是否啟用</Chinese>
             <Chinesesimp>检查呼吸医疗动作是否启用</Chinesesimp>
+            <Czech>Zda je či není povolena Kontrola Dýchání</Czech>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_AVAIL_OXYMASK">
             <English>Available Oxygen Masks</English>
@@ -3073,6 +3164,7 @@
             <French>Masques à oxygène disponibles</French>
             <Chinese>可用氧氣面罩</Chinese>
             <Chinesesimp>可用氧气面罩</Chinesesimp>
+            <Czech>Dostupné Kyslíkové Masky</Czech>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_AVAIL_OXYMASK_DISC">
             <English>Sets which goggles can act as oxygen masks</English>
@@ -3080,17 +3172,20 @@
             <French>Spécifiez les masques que vous souhaitez utiliser comme masque à oxygène.</French>
             <Chinese>設定哪些護目鏡可以作為氧氣面罩</Chinese>
             <Chinesesimp>设置哪些护目镜可以作为氧气面罩</Chinesesimp>
+            <Czech>Nastavuje, které brýle mohou fungovat jako kyslíkové masky</Czech>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_AVAIL_OXYHELMET">
             <English>Available Oxygen Helmets</English>
             <Chinese>可用氧氣頭盔</Chinese>
             <Japanese>利用可能な酸素供給ヘルメット</Japanese>
+            <Czech>Dostupné Kyslíkové Helmy</Czech>
             <French>Casques d'oxygène disponibles</French>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_AVAIL_OXYHELMET_DISC">
             <English>Sets which helmets can act as oxygen masks</English>
             <Chinese>設定哪些頭盔可以作為氧氣面罩</Chinese>
             <Japanese>酸素マスクとして動作させたいヘルメットを指定します</Japanese>
+            <Czech>Nastavuje, které helmy mohou fungovat jako kyslíkové masky</Czech>
             <French>Spécifiez le casque que vous souhaitez utiliser comme masque à oxygène.</French>
         </Key>
         <Key ID="STR_KAT_Breathing_AttachPersonalOxygenTank">
@@ -3099,6 +3194,7 @@
             <French>Connecter de l'oxygène personnel</French>
             <Chinese>連接個人氧氣</Chinese>
             <Chinesesimp>连接个人氧气</Chinesesimp>
+            <Czech>Připojit Osobní Kyslíkovou Lahev</Czech>
         </Key>
         <Key ID="STR_KAT_Breathing_RemovePersonalOxygenTank">
             <English>Disconnect Personal Oxygen</English>
@@ -3106,6 +3202,7 @@
             <French>Déconnexion de l'oxygène personnel</French>
             <Chinese>斷開個人氧氣</Chinese>
             <Chinesesimp>断开个人氧气</Chinesesimp>
+            <Czech>Odpojit Osobní Kyslíkovou Lahev</Czech>
         </Key>
         <Key ID="STR_KAT_Breathing_CheckPersonalOxygenTank">
             <English>Check Personal Oxygen Status</English>
@@ -3113,6 +3210,7 @@
             <French>Vérifier l'état de l'oxygène personnel</French>
             <Chinese>檢查個人氧氣狀況</Chinese>
             <Chinesesimp>检查个人氧气状况</Chinesesimp>
+            <Czech>Zkontrolovat stav Osobní Kyslikové Lahve</Czech>
         </Key>
         <Key ID="STR_KAT_Breathing_PersonalOxygen_Remaining">
             <English>Minutes Remaining</English>
@@ -3120,6 +3218,7 @@
             <French>Minutes restantes</French>
             <Chinese>剩餘分鐘數</Chinese>
             <Chinesesimp>剩余分钟数</Chinesesimp>
+            <Czech>Zbývající minuty</Czech>
         </Key>
         <Key ID="STR_KAT_Breathing_PersonalOxygen_Empty">
             <English>Oxygen Tank Empty</English>
@@ -3127,6 +3226,7 @@
             <French>Réservoir d'oxygène vide</French>
             <Chinese>氧氣罐空</Chinese>
             <Chinesesimp>氧气罐空</Chinesesimp>
+            <Czech>Kyslíková Lahev je prázdná</Czech>
         </Key>
         <Key ID="STR_KAT_Breathing_AttachOxygenVehicle">
             <English>Connect to Aircraft Oxygen</English>
@@ -3134,6 +3234,7 @@
             <French>Connexion à l'oxygène de l'aéronef</French>
             <Chinese>連接到飛機氧氣</Chinese>
             <Chinesesimp>连接到飞机氧气</Chinesesimp>
+            <Czech>Připojit ke Kyslíku Letounu</Czech>
         </Key>
         <Key ID="STR_KAT_Breathing_VehicleOxygen_Affirm">
             <English>Attached to Aircraft Oxygen</English>
@@ -3141,6 +3242,7 @@
             <French>Attaché à l'oxygène de l'aéronef</French>
             <Chinese>附在飛機氧氣上</Chinese>
             <Chinesesimp>附在飞机氧气上</Chinesesimp>
+            <Czech>Připojeno ke Kyslíku Letounu</Czech>
         </Key>
         <Key ID="STR_KAT_Breathing_PersonalOxygen_Affirm">
             <English>Oxygen already connected</English>
@@ -3148,6 +3250,7 @@
             <French>Oxygène déjà connecté</French>
             <Chinese>氧氣已連接</Chinese>
             <Chinesesimp>氧气已连接</Chinesesimp>
+            <Czech>Kyslík je již připojen</Czech>
         </Key>
         <Key ID="STR_KAT_Breathing_PersonalOxygen_Disconnect">
             <English>Oxygen tank disconnected</English>
@@ -3155,6 +3258,7 @@
             <French>Réservoir d'oxygène déconnecté</French>
             <Chinese>氧氣罐斷開</Chinese>
             <Chinesesimp>氧气罐断开</Chinesesimp>
+            <Czech>Kyslíková Lahev odpojena</Czech>
         </Key>
         <Key ID="STR_KAT_Breathing_Remove_OxyMask">
             <English>Remove Oxygen Mask</English>
@@ -3162,6 +3266,7 @@
             <French>Retirer le masque à oxygène</French>
             <Chinese>取下氧氣面罩</Chinese>
             <Chinesesimp>取下氧气面罩</Chinesesimp>
+            <Czech>Odebrat Kyslíkovou Masku</Czech>
         </Key>
     </Package>
 </Project>
