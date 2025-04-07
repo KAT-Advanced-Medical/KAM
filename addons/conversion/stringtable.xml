@@ -58,6 +58,9 @@
         <Key ID="STR_KAT_Conversion_CONVERSION_MANUAL_CONVERSION_TIME">
             <English>Manual Conversion Time</English>
         </Key>
+        <Key ID="STR_KAT_Conversion_CONVERSION_MANUAL_CONVERSION_TIME_DESC">
+            <English>Time to convert patient</English>
+        </Key>
         <Key ID="STR_KAT_Conversion_CONVERSION_MESSAGE">
             <English>Display Conversion</English>
         </Key>
