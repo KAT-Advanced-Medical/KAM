@@ -1,5 +1,5 @@
 #define COMPONENT stretcher
-#define COMPONENT_BEAUTIFIED KAT - STRETCHER
+#define COMPONENT_BEAUTIFIED Stretcher
 #include "\x\kat\addons\main\script_mod.hpp"
 
 // #define DEBUG_MODE_FULL

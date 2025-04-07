@@ -6,4 +6,4 @@ PREP(handleExplosion);
 PREP(handleRespawn);
 PREP(init);
 PREP(treatmentAdvanced_eyeShield);
-PREP(treatmentAdvanced_eyeWash);
+PREP(treatmentAdvanced_eyewash);

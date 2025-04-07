@@ -159,7 +159,7 @@ class CfgWeapons {
         scope = 2;
         author = "Cplhardcore";
         displayName = CSTRING(BPCuff_display);
-        descriptionShort = CSTRING(BPCuff_display);
+        descriptionShort = CSTRING(BPCuff_desc);
         picture = QPATHTOF(ui\BPCuff.paa);
         icon = "";
         class ItemInfo: CBA_MiscItem_ItemInfo {
