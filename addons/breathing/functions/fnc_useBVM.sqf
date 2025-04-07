@@ -132,7 +132,7 @@ GVAR(BVM_timeOut) = true;
                         if (count _carriedTanks > 0) then {
                             _patient setVariable [QGVAR(oxygenTankConnected), true, true];
 
-                            private _tank = _carriedTanks select (count _carriedTanks - 1);
+                            private _tank = _carriedTanks select - 1;
                             _tank params ["_tankClassName", "_oxygenLeft"];
 
                             if(_oxygenLeft > 1) then {
@@ -161,7 +161,7 @@ GVAR(BVM_timeOut) = true;
                         if (count _oxygenTanks > 0) then {
                             _patient setVariable [QGVAR(oxygenTankConnected), true, true];
 
-                            private _tank = _oxygenTanks select (count _oxygenTanks - 1);
+                            private _tank = _oxygenTanks select - 1;
                             _tank params ["_tankClassName", "_oxygenLeft"];
 
                             if (_oxygenLeft > 1) then {
