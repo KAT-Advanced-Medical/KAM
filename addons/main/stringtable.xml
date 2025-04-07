@@ -3,17 +3,17 @@
     <Package name="Main">
         <Key ID="STR_KAT_Main_URL">
             <English>https://github.com/KAT-Advanced-Medical/KAM</English>
-            <German>https://github.com/KAT-Advanced-Medical/KAM</German>
-            <Japanese>https://github.com/KAT-Advanced-Medical/KAM</Japanese>
-            <Italian>https://github.com/KAT-Advanced-Medical/KAM</Italian>
-            <Spanish>https://github.com/KAT-Advanced-Medical/KAM</Spanish>
-            <French>https://github.com/KAT-Advanced-Medical/KAM</French>
-            <Korean>https://github.com/KAT-Advanced-Medical/KAM</Korean>
-            <Portuguese>https://github.com/KAT-Advanced-Medical/KAM</Portuguese>
-            <Finnish>https://github.com/KAT-Advanced-Medical/KAM</Finnish>
-            <Russian>https://github.com/KAT-Advanced-Medical/KAM</Russian>
-            <Dutch>https://github.com/KAT-Advanced-Medical/KAM</Dutch>
             <Czech>https://github.com/KAT-Advanced-Medical/KAM</Czech>
+            <French>https://github.com/KAT-Advanced-Medical/KAM</French>
+            <Spanish>https://github.com/KAT-Advanced-Medical/KAM</Spanish>
+            <Italian>https://github.com/KAT-Advanced-Medical/KAM</Italian>
+            <Portuguese>https://github.com/KAT-Advanced-Medical/KAM</Portuguese>
+            <Russian>https://github.com/KAT-Advanced-Medical/KAM</Russian>
+            <German>https://github.com/KAT-Advanced-Medical/KAM</German>
+            <Korean>https://github.com/KAT-Advanced-Medical/KAM</Korean>
+            <Japanese>https://github.com/KAT-Advanced-Medical/KAM</Japanese>
+            <Finnish>https://github.com/KAT-Advanced-Medical/KAM</Finnish>
+            <Dutch>https://github.com/KAT-Advanced-Medical/KAM</Dutch>
         </Key>
     </Package>
 </Project>
