@@ -38,7 +38,7 @@ private _fnc_getActions = {
                     _x,
                     format [LLSTRING(Blood_Sample_String), _patient],
                     "",
-                    {_this call FUNC(showBloodGas)},
+                    {call FUNC(showBloodGas)},
                     {true},
                     {},
                     [],

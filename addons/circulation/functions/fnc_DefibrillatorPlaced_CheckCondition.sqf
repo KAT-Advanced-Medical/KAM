@@ -20,9 +20,9 @@
 params ["_medic", "_defib", ["_check", 0]];
 
 private _patient = _defib getVariable [QGVAR(Defibrillator_Patient), objNull];
-private _patientExists = !(_patient isEqualTo objNull);
+private _patientExists = (_patient isNotEqualTo objNull);
 private _patientMonitor = _defib getVariable [QGVAR(AED_X_VitalsMonitor_Patient), objNull];
-private _patientMonitorExists = !(_patientMonitor isEqualTo objNull);
+private _patientMonitorExists = (_patientMonitor isNotEqualTo objNull);
 private _condition = false;
 
 switch (_check) do {

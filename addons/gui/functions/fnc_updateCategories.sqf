@@ -22,7 +22,7 @@ params ["_display"];
 
     private _ctrl = _display displayCtrl _idc;
     private _enable = true;
-    if !(_category == "triage") then {
+    if (_category != "triage") then {
         _enable = ACEGVAR(medical_gui,actions) findIf {_category == _x select 1 && {call (_x select 2)}} > -1;
     };
     _ctrl ctrlEnable _enable;
