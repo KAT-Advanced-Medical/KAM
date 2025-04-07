@@ -7,7 +7,7 @@
     [CBA_SETTINGS_CAT, ELSTRING(GUI,SubCategory_Basic)],
     [true],
     true
-] call CBA_Settings_fnc_init;
+] call CBA_fnc_addSetting;
 
 //Adds available oxygen masks
 [
@@ -22,7 +22,7 @@
         missionNamespace setVariable [QGVAR(availOxyMaskList), _array, true];
     },
     true
-] call CBA_Settings_fnc_init;
+] call CBA_fnc_addSetting;
 
 //Adds available oxygen helmets
 [
@@ -37,7 +37,7 @@
         missionNamespace setVariable [QGVAR(availOxyHelmetList), _array, true];
     },
     true
-] call CBA_Settings_fnc_init;
+] call CBA_fnc_addSetting;
 
 //Enable Check Breathing medical action
 [
@@ -47,7 +47,7 @@
     [CBA_SETTINGS_CAT, ELSTRING(GUI,SubCategory_Basic)],
     [true],
     true
-] call CBA_Settings_fnc_init;
+] call CBA_fnc_addSetting;
 
 // Lethal SpO2 value
 [
@@ -57,7 +57,7 @@
     [CBA_SETTINGS_CAT, ELSTRING(GUI,SubCategory_Basic)],
     [5, 95, 65, 0],
     true
-] call CBA_Settings_fnc_init;
+] call CBA_fnc_addSetting;
 
 // Enables death in cause of SpO2 lethal value
 [
@@ -67,7 +67,7 @@
     [CBA_SETTINGS_CAT, ELSTRING(GUI,SubCategory_Basic)],
     [true],
     true
-] call CBA_Settings_fnc_init;
+] call CBA_fnc_addSetting;
 
 // Cardiac Arrest SpO2 value
 [
@@ -77,7 +77,7 @@
     [CBA_SETTINGS_CAT, ELSTRING(GUI,SubCategory_Basic)],
     [0, 100, 75, 0],
     true
-] call CBA_Settings_fnc_init;
+] call CBA_fnc_addSetting;
 
 // Enables cardiac arrest in cause of SpO2 cardiac value
 [
@@ -87,7 +87,7 @@
     [CBA_SETTINGS_CAT, ELSTRING(GUI,SubCategory_Basic)],
     [false],
     true
-] call CBA_Settings_fnc_init;
+] call CBA_fnc_addSetting;
 
 // Turn to unconscious in cause of SpO2 unconscious value
 [
@@ -97,7 +97,7 @@
     [CBA_SETTINGS_CAT, ELSTRING(GUI,SubCategory_Basic)],
     [0, 100, 75, 0],
     true
-] call CBA_Settings_fnc_init;
+] call CBA_fnc_addSetting;
 
 // breathing SpO2 add value
 [
@@ -107,7 +107,7 @@
     [CBA_SETTINGS_CAT, ELSTRING(GUI,SubCategory_Basic)],
     [0, 10, 1, 1],
     true
-] call CBA_Settings_fnc_init;
+] call CBA_fnc_addSetting;
 
 // breathing SpO2 remove value
 [
@@ -117,7 +117,7 @@
     [CBA_SETTINGS_CAT, ELSTRING(GUI,SubCategory_Basic)],
     [0, 10, 1, 1],
     true
-] call CBA_Settings_fnc_init;
+] call CBA_fnc_addSetting;
 
 // SpO2 value for stability determination
 [
@@ -127,7 +127,7 @@
     [CBA_SETTINGS_CAT, ELSTRING(GUI,SubCategory_Basic)],
     [0, 95, 85, 0],
     true
-] call CBA_Settings_fnc_init;
+] call CBA_fnc_addSetting;
 
 // changes whether SpO2 falls during cardiac arrest
 [
@@ -137,7 +137,7 @@
     [CBA_SETTINGS_CAT, ELSTRING(GUI,SubCategory_Basic)],
     [true],
     true
-] call CBA_Settings_fnc_init;
+] call CBA_fnc_addSetting;
 
 // breathing SpO2 perfusion multiplier
 [
@@ -147,7 +147,7 @@
     [CBA_SETTINGS_CAT, ELSTRING(GUI,SubCategory_Basic)],
     [0, 10, 1, 1],
     true
-] call CBA_Settings_fnc_init;
+] call CBA_fnc_addSetting;
 
 [
     QGVAR(paco2Active),
@@ -156,7 +156,7 @@
     [CBA_SETTINGS_CAT, ELSTRING(GUI,SubCategory_Basic)],
     [false],
     true
-] call CBA_Settings_fnc_init;
+] call CBA_fnc_addSetting;
 
 //Settable list for using Pulseoximeter per medical class
 [
@@ -166,7 +166,7 @@
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_Items)],
     [[0, 1, 2], ["STR_ACE_Medical_Treatment_Anyone", "STR_ACE_Medical_Treatment_Medics", "STR_ACE_Medical_Treatment_Doctors"], 0],
     true
-] call CBA_settings_fnc_init;
+] call CBA_fnc_addSetting;
 
 //Settable list for using Chestseal per medical class
 [
@@ -176,7 +176,7 @@
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_Items)],
     [[0, 1, 2], ["STR_ACE_Medical_Treatment_Anyone", "STR_ACE_Medical_Treatment_Medics", "STR_ACE_Medical_Treatment_Doctors"], 0],
     true
-] call CBA_settings_fnc_init;
+] call CBA_fnc_addSetting;
 
 //Settable list for using Nasal Cannula per medical class
 [
@@ -186,7 +186,7 @@
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_Items)],
     [[0, 1, 2], ["STR_ACE_Medical_Treatment_Anyone", "STR_ACE_Medical_Treatment_Medics", "STR_ACE_Medical_Treatment_Doctors"], 0],
     true
-] call CBA_settings_fnc_init;
+] call CBA_fnc_addSetting;
 
 // Settable action time for Nasal Cannula
 [
@@ -196,7 +196,7 @@
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_Items)],
     [1, 10, 3, 0],
     true
-] call CBA_Settings_fnc_init;
+] call CBA_fnc_addSetting;
 
 //Allow ChestSeal SelfTreatment
 [
@@ -206,7 +206,7 @@
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_Items)],
     [[0, 1], ["STR_ACE_common_No", "STR_ACE_common_Yes"], 1],
     true
-] call CBA_Settings_fnc_init;
+] call CBA_fnc_addSetting;
 
 // Clear Chest Seal from medical menu after treatment
 [
@@ -216,7 +216,7 @@
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_Items)],
     [false],
     true
-] call CBA_Settings_fnc_init;
+] call CBA_fnc_addSetting;
 
 // Sets SpO2 level threshold for audible warning
 [
@@ -226,7 +226,7 @@
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_Items)],
     [1, 100, 85, 1],
     true
-] call CBA_Settings_fnc_init;
+] call CBA_fnc_addSetting;
 
 // breathing probability for a pneumothorax
 // a pneumothorax is the presence of air or gas in the cavity between the lungs and the chest wall
@@ -237,7 +237,7 @@
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_ThoraxInjuries)],
     [0, 100, 5, 0],
     true
-] call CBA_Settings_fnc_init;
+] call CBA_fnc_addSetting;
 
 // % Chance of Hemopneumothorax and Tension Pneumothorax happening when a Pneumothorax happens
 [
@@ -247,7 +247,7 @@
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_ThoraxInjuries)],
     [0, 100, 5, 0, false],
     true
-] call CBA_Settings_fnc_init;
+] call CBA_fnc_addSetting;
 
 // % Chance of Hemopneumothorax (rest of % is chance for tension)
 [
@@ -257,7 +257,7 @@
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_ThoraxInjuries)],
     [0, 100, 5, 0, false],
     true
-] call CBA_Settings_fnc_init;
+] call CBA_fnc_addSetting;
 
 //Enable Advanced Pneumothorax
 [
@@ -267,7 +267,7 @@
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_ThoraxInjuries)],
     [false],
     true
-] call CBA_Settings_fnc_init;
+] call CBA_fnc_addSetting;
 
 //Settable list for using Pulseoximeter per medical class
 [
@@ -277,7 +277,7 @@
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_ThoraxInjuries)],
     [[0, 1, 2], ["STR_ACE_Medical_Treatment_Anyone", "STR_ACE_Medical_Treatment_Medics", "STR_ACE_Medical_Treatment_Doctors"], 0],
     true
-] call CBA_settings_fnc_init;
+] call CBA_fnc_addSetting;
 
 //Damage Threshold for Pneumothorax
 [
@@ -287,7 +287,7 @@
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_ThoraxInjuries)],
     [0, 1, 0.4, 2],
     true
-] call CBA_Settings_fnc_init;
+] call CBA_fnc_addSetting;
 
 // Sets if damage above pneumothorax damage threshold increases chance of inflicting pneumothorax or advanced pneumothorax
 [
@@ -297,7 +297,7 @@
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_ThoraxInjuries)],
     [true],
     true
-] call CBA_Settings_fnc_init;
+] call CBA_fnc_addSetting;
 
 // Chance for deep penetrating injury to appear when pneumothorax damage threshold is passed but no pneumothorax is inflicted
 [
@@ -307,7 +307,7 @@
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_ThoraxInjuries)],
     [0, 100, 30, 0, false],
     true
-] call CBA_Settings_fnc_init;
+] call CBA_fnc_addSetting;
 
 // Sets how much internal bleeding is applied while suffering from hemopneumothorax
 [
@@ -317,7 +317,7 @@
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_ThoraxInjuries)],
     [0, 1, 0.06, 2],
     true
-] call CBA_Settings_fnc_init;
+] call CBA_fnc_addSetting;
 
 //Chance for pneumothorax to deteriorate into tension pneumothorax
 [
@@ -327,7 +327,7 @@
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_ThoraxInjuries)],
     [0, 100, 50, 0],
     true
-] call CBA_Settings_fnc_init;
+] call CBA_fnc_addSetting;
 
 //Deteriorating pneumothorax countdown
 [
@@ -337,7 +337,7 @@
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_ThoraxInjuries)],
     [1, 3600, 60, 0],
     true
-] call CBA_Settings_fnc_init;
+] call CBA_fnc_addSetting;
 
 //Deteriorating pneumothorax arrest countdown
 [
@@ -347,7 +347,7 @@
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_ThoraxInjuries)],
     [true],
     true
-] call CBA_Settings_fnc_init;
+] call CBA_fnc_addSetting;
 
 //Deteriorating pneumothorax arrest countdown
 [
@@ -357,7 +357,7 @@
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_ThoraxInjuries)],
     [1, 3600, 30, 0],
     true
-] call CBA_Settings_fnc_init;
+] call CBA_fnc_addSetting;
 
 // Set if pneumothorax injury should always be visible in medical menu
 [
@@ -367,7 +367,7 @@
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_ThoraxInjuries)],
     [false],
     true
-] call CBA_Settings_fnc_init;
+] call CBA_fnc_addSetting;
 
 // Set if tension/hemopneumothorax injury should always be visible in medical menu
 [
@@ -377,7 +377,7 @@
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_ThoraxInjuries)],
     [false],
     true
-] call CBA_Settings_fnc_init;
+] call CBA_fnc_addSetting;
 
 // Default is disabled. If enabled, units with tension pneumothorax or hemopneumothorax will also have pneumothorax injury displayed in medical menu.
 [
@@ -387,7 +387,7 @@
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_ThoraxInjuries)],
     [false],
     true
-] call CBA_Settings_fnc_init;
+] call CBA_fnc_addSetting;
 
 // Sets if inspect chest action is enabled
 [
@@ -397,7 +397,7 @@
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_ThoraxInjuries)],
     [[0, 1, 2], [ACELLSTRING(Common,Disabled), LLSTRING(SETTING_inspectChest_enable_simple), ACELLSTRING(Common,Enabled)], 2],
     true
-] call CBA_Settings_fnc_init;
+] call CBA_fnc_addSetting;
 
 // Sets medical level required to inspect chest
 [
@@ -407,7 +407,7 @@
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_ThoraxInjuries)],
     [[0, 1, 2], ["STR_ACE_Medical_Treatment_Anyone", "STR_ACE_Medical_Treatment_Medics", "STR_ACE_Medical_Treatment_Doctors"], 0],
     true
-] call CBA_settings_fnc_init;
+] call CBA_fnc_addSetting;
 
 // Sets chest inspect action time
 [
@@ -417,7 +417,7 @@
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_ThoraxInjuries)],
     [1, 60, 6, 1],
     true
-] call CBA_Settings_fnc_init;
+] call CBA_fnc_addSetting;
 
 // Shows cyanosis in medical menu
 [
@@ -427,7 +427,7 @@
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_Cyanosis)],
     [true],
     true
-] call CBA_Settings_fnc_init;
+] call CBA_fnc_addSetting;
 
 //Slight level for cyanosis
 [
@@ -437,7 +437,7 @@
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_Cyanosis)],
     [0, 100, 90, 1],
     true
-] call CBA_Settings_fnc_init;
+] call CBA_fnc_addSetting;
 
 //Mild level for cyanosis
 [
@@ -447,7 +447,7 @@
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_Cyanosis)],
     [0, 100, 75, 1],
     true
-] call CBA_Settings_fnc_init;
+] call CBA_fnc_addSetting;
 
 //Severe level for cyanosis
 [
@@ -457,7 +457,7 @@
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_Cyanosis)],
     [0, 100, 66, 1],
     true
-] call CBA_Settings_fnc_init;
+] call CBA_fnc_addSetting;
 
 //Enable stamina loss by low SPO2
 [
@@ -467,7 +467,7 @@
     [CBA_SETTINGS_CAT, ELSTRING(GUI,SubCategory_Basic)],
     [true],
     true
-]   call CBA_Settings_fnc_init;
+]   call CBA_fnc_addSetting;
 
 // enable/disable etco2 and respiratory rate readouts
 [
@@ -477,7 +477,7 @@
     [CBA_SETTINGS_CAT, ELSTRING(GUI,SubCategory_Basic)],
     [true],
     true
-] call CBA_Settings_fnc_init;
+] call CBA_fnc_addSetting;
 
 // select units for etco2
 [
@@ -487,7 +487,7 @@
     [CBA_SETTINGS_CAT, ELSTRING(GUI,SubCategory_Basic)],
     [[0, 1], ["mmHg", "kPa"], 0],
     true
-] call CBA_settings_fnc_init;
+] call CBA_fnc_addSetting;
 
 // Sets sound volume of stethoscope
 [
@@ -501,7 +501,7 @@
         player setVariable [QGVAR(stethoscopeSoundVolume), _this, true];
     },
     false
-] call CBA_Settings_fnc_init;
+] call CBA_fnc_addSetting;
 
 // Sets how long stethoscope listening action lasts
 [
@@ -511,7 +511,7 @@
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_Items)],
     [1, 60, 15, 1],
     true
-] call CBA_Settings_fnc_init;
+] call CBA_fnc_addSetting;
 
 // Sets required medical level for BVM usage
 [
@@ -521,7 +521,7 @@
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_Items)],
     [[0, 1, 2], ["STR_ACE_Medical_Treatment_Anyone", "STR_ACE_Medical_Treatment_Medics", "STR_ACE_Medical_Treatment_Doctors"], 0],
     true
-] call CBA_settings_fnc_init;
+] call CBA_fnc_addSetting;
 
 // Sets required medical level for Pocket BVM usage
 [
@@ -531,7 +531,7 @@
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_Items)],
     [[0, 1, 2], ["STR_ACE_Medical_Treatment_Anyone", "STR_ACE_Medical_Treatment_Medics", "STR_ACE_Medical_Treatment_Doctors"], 0],
     true
-] call CBA_settings_fnc_init;
+] call CBA_fnc_addSetting;
 
 // Sets required medical level for BVM with oxygen usage
 [
@@ -541,7 +541,7 @@
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_Items)],
     [[0, 1, 2], ["STR_ACE_Medical_Treatment_Anyone", "STR_ACE_Medical_Treatment_Medics", "STR_ACE_Medical_Treatment_Doctors"], 0],
     true
-] call CBA_settings_fnc_init;
+] call CBA_fnc_addSetting;
 
 // Sets BVM oxygen effectiveness multiplier
 [
@@ -551,7 +551,7 @@
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_Items)],
     [1, 10, 1, 1],
     true
-] call CBA_Settings_fnc_init;
+] call CBA_fnc_addSetting;
 
 // Sets time required to refill oxygen tank
 [
@@ -561,7 +561,7 @@
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_Items)],
     [0.1, 60, 5, 1],
     true
-] call CBA_settings_fnc_init;
+] call CBA_fnc_addSetting;
 
 // Sets whether medical facilites and/or vehicles provide direct oxygen and refill capability
 [
@@ -571,4 +571,4 @@
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_Items)],
     [[0, 1, 2, 3], ["STR_ACE_Common_None", "STR_ACE_Common_Vehicle", "STR_ACE_Medical_Treatment_MedicalFacilities", "STR_ACE_Medical_Treatment_VehiclesAndFacilities"], 3],
     true
-] call CBA_settings_fnc_init;
+] call CBA_fnc_addSetting;

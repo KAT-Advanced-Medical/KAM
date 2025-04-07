@@ -6,7 +6,7 @@
     [CBA_SETTINGS_CAT, ELSTRING(GUI,SubCategory_Basic)],
     [false],
     true
-] call CBA_Settings_fnc_init;
+] call CBA_fnc_addSetting;
 
 [
     QGVAR(enableFluidShift),
@@ -15,7 +15,7 @@
     [CBA_SETTINGS_CAT, ELSTRING(GUI,SubCategory_Basic)],
     [true],
     true
-] call CBA_Settings_fnc_init;
+] call CBA_fnc_addSetting;
 
 [
     QGVAR(enableBasicDiagnostic),
@@ -24,7 +24,7 @@
     [CBA_SETTINGS_CAT, ELSTRING(GUI,SubCategory_Basic)],
     [false],
     true
-] call CBA_Settings_fnc_init;
+] call CBA_fnc_addSetting;
 
 [
     QGVAR(basicDiagnosticTime),
@@ -33,4 +33,4 @@
     [CBA_SETTINGS_CAT, ELSTRING(GUI,SubCategory_Basic)],
     [0.1, 60, 15, 1],
     true
-] call CBA_Settings_fnc_init;
+] call CBA_fnc_addSetting;

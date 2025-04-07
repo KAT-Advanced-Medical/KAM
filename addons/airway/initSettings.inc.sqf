@@ -7,7 +7,7 @@
     [CBA_SETTINGS_CAT, ELSTRING(GUI,SubCategory_Basic)],
     [true],
     true
-] call CBA_Settings_fnc_init;
+] call CBA_fnc_addSetting;
 
 // Settable action time for CheckAirway
 [
@@ -17,7 +17,7 @@
     [CBA_SETTINGS_CAT, ELSTRING(GUI,SubCategory_Basic)],
     [1, 10, 2, 0],
     true
-] call CBA_Settings_fnc_init;
+] call CBA_fnc_addSetting;
 
 // airway Injuries probability obstruction
 [
@@ -27,7 +27,7 @@
     [CBA_SETTINGS_CAT, ELSTRING(GUI,SubCategory_Basic)],
     [0, 100, 15, 0],
     true
-] call CBA_Settings_fnc_init;
+] call CBA_fnc_addSetting;
 
 // airway Injuries probability occluded
 [
@@ -37,7 +37,7 @@
     [CBA_SETTINGS_CAT, ELSTRING(GUI,SubCategory_Basic)],
     [0, 100, 10, 0],
     true
-] call CBA_Settings_fnc_init;
+] call CBA_fnc_addSetting;
 
 // Occlusion repeat timer
 [
@@ -47,7 +47,7 @@
     [CBA_SETTINGS_CAT, ELSTRING(GUI,SubCategory_Basic)],
     [1, 1200, 60, 0],
     true
-] call CBA_Settings_fnc_init;
+] call CBA_fnc_addSetting;
 
 // Set period during which patient cannot get another occlusion after last occlusion was cleared, disabled if 0
 [
@@ -57,7 +57,7 @@
     [CBA_SETTINGS_CAT, ELSTRING(GUI,SubCategory_Basic)],
     [0, 60, 6, 1],
     true
-] call CBA_Settings_fnc_init;
+] call CBA_fnc_addSetting;
 
 // Succes for headturning
 [
@@ -67,7 +67,7 @@
     [CBA_SETTINGS_CAT, ELSTRING(GUI,SubCategory_Basic)],
     [1, 100, 50, 0],
     true
-] call CBA_Settings_fnc_init;
+] call CBA_fnc_addSetting;
 
 // Settable action time for Head turning
 [
@@ -77,7 +77,7 @@
     [CBA_SETTINGS_CAT, ELSTRING(GUI,SubCategory_Basic)],
     [1, 30, 3, 0],
     true
-] call CBA_Settings_fnc_init;
+] call CBA_fnc_addSetting;
 
 // Blocks head turning if patient has Guedel Tube or KingLT inserted
 [
@@ -87,7 +87,7 @@
     [CBA_SETTINGS_CAT, ELSTRING(GUI,SubCategory_Basic)],
     [true],
     true
-] call CBA_Settings_fnc_init;
+] call CBA_fnc_addSetting;
 
 // airway puking sound yes or no?
 // somebody told me that the sound which is played then someone is puking is super annoying and now you can remove it easily
@@ -98,7 +98,7 @@
     [CBA_SETTINGS_CAT, ELSTRING(GUI,SubCategory_Basic)],
     [true],
     true
-] call CBA_Settings_fnc_init;
+] call CBA_fnc_addSetting;
 
 [
     QGVAR(string_exit),
@@ -107,7 +107,7 @@
     [CBA_SETTINGS_CAT, ELSTRING(GUI,SubCategory_Basic)],
     [["", "keko_wasPunched"], ["", "keko_wasPunched"], 0],
     true
-] call CBA_Settings_fnc_init;
+] call CBA_fnc_addSetting;
 
 //Settable list for using Larynxtubus per medical class
 [
@@ -117,7 +117,7 @@
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_Items)],
     [[0, 1, 2], ["STR_ACE_Medical_Treatment_Anyone", "STR_ACE_Medical_Treatment_Medics", "STR_ACE_Medical_Treatment_Doctors"], 0],
     true
-] call CBA_settings_fnc_init;
+] call CBA_fnc_addSetting;
 
 //Settable list for using Guedeltubus per medical class
 [
@@ -127,7 +127,7 @@
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_Items)],
     [[0, 1, 2], ["STR_ACE_Medical_Treatment_Anyone", "STR_ACE_Medical_Treatment_Medics", "STR_ACE_Medical_Treatment_Doctors"], 0],
     true
-] call CBA_settings_fnc_init;
+] call CBA_fnc_addSetting;
 
 //Settable list for using Accuvac per medical class
 [
@@ -137,7 +137,7 @@
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_Suction)],
     [[0, 1, 2], ["STR_ACE_Medical_Treatment_Anyone", "STR_ACE_Medical_Treatment_Medics", "STR_ACE_Medical_Treatment_Doctors"], 0],
     true
-] call CBA_settings_fnc_init;
+] call CBA_fnc_addSetting;
 
 // Settable action time for Accuvac
 [
@@ -147,7 +147,7 @@
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_Suction)],
     [1, 30, 8, 0],
     true
-] call CBA_Settings_fnc_init;
+] call CBA_fnc_addSetting;
 
 //Settable list for using Manual Suction Pump per medical class
 [
@@ -157,7 +157,7 @@
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_Suction)],
     [[0, 1, 2], ["STR_ACE_Medical_Treatment_Anyone", "STR_ACE_Medical_Treatment_Medics", "STR_ACE_Medical_Treatment_Doctors"], 0],
     true
-] call CBA_settings_fnc_init;
+] call CBA_fnc_addSetting;
 
 // Settable action time for Manual Suction Pump
 [
@@ -167,7 +167,7 @@
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_Suction)],
     [1, 30, 12, 0],
     true
-] call CBA_Settings_fnc_init;
+] call CBA_fnc_addSetting;
 
 // Reuse Item checkbox for Manual Suction Pump
 [
@@ -177,7 +177,7 @@
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_Suction)],
     [false],
     true
-] call CBA_Settings_fnc_init;
+] call CBA_fnc_addSetting;
 
 // Settable action time for Larynxtubus
 [
@@ -187,7 +187,7 @@
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_Items)],
     [1, 10, 3, 0],
     true
-] call CBA_Settings_fnc_init;
+] call CBA_fnc_addSetting;
 
 // Settable action time for Guedeltubus
 [
@@ -197,7 +197,7 @@
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_Items)],
     [1, 20, 6, 0],
     true
-] call CBA_Settings_fnc_init;
+] call CBA_fnc_addSetting;
 
 // Enable reuasble Larynxtubus & Guedeltubus
 [
@@ -207,7 +207,7 @@
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_Items)],
     [false],
     true
-] call CBA_Settings_fnc_init;
+] call CBA_fnc_addSetting;
 
 // Settable action time for Head overstretching
 [
@@ -217,7 +217,7 @@
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_RecoveryPositionHyperextend)],
     [1, 10, 3, 0],
     true
-] call CBA_Settings_fnc_init;
+] call CBA_fnc_addSetting;
 
 // Settable action time for Recovery position
 [
@@ -227,7 +227,7 @@
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_RecoveryPositionHyperextend)],
     [1, 60, 6, 0],
     true
-] call CBA_Settings_fnc_init;
+] call CBA_fnc_addSetting;
 
 // Settable action time for Cancel recovery position
 [
@@ -237,7 +237,7 @@
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_RecoveryPositionHyperextend)],
     [1, 60, 3, 0],
     true
-] call CBA_Settings_fnc_init;
+] call CBA_fnc_addSetting;
 
 // Settable maximum time required for occlusion to be cleared from patient in recovery position
 [
@@ -247,7 +247,7 @@
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_RecoveryPositionHyperextend)],
     [0, 30, 10, 0],
     true
-] call CBA_Settings_fnc_init;
+] call CBA_fnc_addSetting;
 
 [
     QGVAR(autoTriage),
@@ -256,4 +256,4 @@
     [CBA_SETTINGS_CAT, ELSTRING(GUI,SubCategory_Basic)],
     [true],
     true
-] call CBA_Settings_fnc_init;
+] call CBA_fnc_addSetting;

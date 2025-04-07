@@ -7,7 +7,7 @@
     CBA_SETTINGS_CAT,
     [5, 100, 90, 1],
     true
-] call CBA_Settings_fnc_init;
+] call CBA_fnc_addSetting;
 
 [
     QGVAR(enableOpioidEffect),
@@ -16,4 +16,4 @@
     CBA_SETTINGS_CAT,
     [true],
     true
-] call CBA_Settings_fnc_init;
+] call CBA_fnc_addSetting;

@@ -11,7 +11,7 @@
         missionNamespace setVariable [QGVAR(availGasmaskList), _array, true];
     },
     true
-] call CBA_Settings_fnc_init;
+] call CBA_fnc_addSetting;
 
 [
     QGVAR(gasmask_durability),
@@ -20,7 +20,7 @@
     CBA_SETTINGS_CAT,
     [1, 3600, 900],
     true
-] call CBA_Settings_fnc_init;
+] call CBA_fnc_addSetting;
 
 // Sets sound volume of gas mask breathing
 [
@@ -34,7 +34,7 @@
         player setVariable [QGVAR(gasMaskSoundVolume), _this, true];
     },
     false
-] call CBA_Settings_fnc_init;
+] call CBA_fnc_addSetting;
 
 // Should gas mask affect stamina
 [
@@ -44,7 +44,7 @@
     CBA_SETTINGS_CAT,
     [false],
     true
-] call CBA_Settings_fnc_init;
+] call CBA_fnc_addSetting;
 
 // Chance of weapon drop by tear gas
 [
@@ -54,7 +54,7 @@
     CBA_SETTINGS_CAT,
     [0, 1, 0, 2, true],
     true
-] call CBA_Settings_fnc_init;
+] call CBA_fnc_addSetting;
 
 // Infection time
 [
@@ -64,7 +64,7 @@
     CBA_SETTINGS_CAT,
     [0, 3600, 60],
     true
-] call CBA_Settings_fnc_init;
+] call CBA_fnc_addSetting;
 
 // Shows poisioning image
 [
@@ -74,4 +74,4 @@
     CBA_SETTINGS_CAT,
     [true],
     true
-] call CBA_Settings_fnc_init;
+] call CBA_fnc_addSetting;

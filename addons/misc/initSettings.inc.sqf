@@ -7,7 +7,7 @@
     [CBA_SETTINGS_CAT, ELSTRING(GUI,SubCategory_Basic)],
     [true],
     true
-] call CBA_Settings_fnc_init;
+] call CBA_fnc_addSetting;
 
 // Sets whether player can use items straight from vehicle inventory for treatment, and their priority
 [
@@ -26,7 +26,7 @@
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_Tourniquet)],
     [1, 60, 7, 1],
     true
-] call CBA_Settings_fnc_init;
+] call CBA_fnc_addSetting;
 
 [
     QGVAR(tourniquetEffects_Enable),
@@ -35,7 +35,7 @@
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_Tourniquet)],
     [true],
     true
-] call CBA_Settings_fnc_init;
+] call CBA_fnc_addSetting;
 
 [
     QGVAR(tourniquetEffects_PositiveMultiplier),
@@ -44,7 +44,7 @@
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_Tourniquet)],
     [0.1, 10, 1, 1],
     true
-] call CBA_Settings_fnc_init;
+] call CBA_fnc_addSetting;
 
 [
     QGVAR(tourniquetEffects_NegativeMultiplier),
@@ -53,7 +53,7 @@
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_Tourniquet)],
     [0.1, 10, 1, 1],
     true
-] call CBA_Settings_fnc_init;
+] call CBA_fnc_addSetting;
 
 
 //Incompatibility Warning with other addons
@@ -64,7 +64,7 @@
     [CBA_SETTINGS_CAT, ELSTRING(GUI,SubCategory_Basic)],
     [true],
     true
-] call CBA_Settings_fnc_init;
+] call CBA_fnc_addSetting;
 
 //Adjust armband sling left arm (x, y, z)
 [
@@ -79,7 +79,7 @@
         private _array = parseSimpleArray _string;
         missionNamespace setVariable [QGVAR(armbandSlingLeftArm), _array, true];
     }
-] call CBA_Settings_fnc_init;
+] call CBA_fnc_addSetting;
 
 //Adjust armband rotation left arm (yaw, pitch, roll)
 [
@@ -94,7 +94,7 @@
         private _array = parseSimpleArray _string;
         missionNamespace setVariable [QGVAR(armbandSlingLeftArmRotation), _array, true];
     }
-] call CBA_Settings_fnc_init;
+] call CBA_fnc_addSetting;
 
 //Adjust armband sling right arm (x, y, z)
 [
@@ -109,7 +109,7 @@
         private _array = parseSimpleArray _string;
         missionNamespace setVariable [QGVAR(armbandSlingRightArm), _array, true];
     }
-] call CBA_Settings_fnc_init;
+] call CBA_fnc_addSetting;
 
 //Adjust armband rotation right arm (yaw, pitch, roll)
 [
@@ -124,7 +124,7 @@
         private _array = parseSimpleArray _string;
         missionNamespace setVariable [QGVAR(armbandSlingRightArmRotation), _array, true];
     }
-] call CBA_Settings_fnc_init;
+] call CBA_fnc_addSetting;
 
 //Adjust armband sling left leg (x, y, z)
 [
@@ -139,7 +139,7 @@
         private _array = parseSimpleArray _string;
         missionNamespace setVariable [QGVAR(armbandSlingLeftLeg), _array, true];
     }
-] call CBA_Settings_fnc_init;
+] call CBA_fnc_addSetting;
 
 //Adjust armband rotation left leg (yaw, pitch, roll)
 [
@@ -154,7 +154,7 @@
         private _array = parseSimpleArray _string;
         missionNamespace setVariable [QGVAR(armbandSlingLeftLegRotation), _array, true];
     }
-] call CBA_Settings_fnc_init;
+] call CBA_fnc_addSetting;
 
 //Adjust armband sling right leg (x, y, z)
 [
@@ -169,7 +169,7 @@
         private _array = parseSimpleArray _string;
         missionNamespace setVariable [QGVAR(armbandSlingRightLeg), _array, true];
     }
-] call CBA_Settings_fnc_init;
+] call CBA_fnc_addSetting;
 
 //Adjust armband rotation right Leg (yaw, pitch, roll)
 [
@@ -184,7 +184,7 @@
         private _array = parseSimpleArray _string;
         missionNamespace setVariable [QGVAR(armbandSlingRightLegRotation), _array, true];
     }
-] call CBA_Settings_fnc_init;
+] call CBA_fnc_addSetting;
 
 // Remove IFAK when empty
 [
@@ -240,7 +240,7 @@
         missionNamespace setVariable [QGVAR(IFAKFirstSlotItem), _array, true];
         call FUNC(FAK_updateContents);
     }
-] call CBA_Settings_fnc_init;
+] call CBA_fnc_addSetting;
 
 //IFAK Second Slot Item
 [
@@ -256,7 +256,7 @@
         missionNamespace setVariable [QGVAR(IFAKSecondSlotItem), _array, true];
         call FUNC(FAK_updateContents);
     }
-] call CBA_Settings_fnc_init;
+] call CBA_fnc_addSetting;
 
 //IFAK Third Slot Item
 [
@@ -272,7 +272,7 @@
         missionNamespace setVariable [QGVAR(IFAKThirdSlotItem), _array, true];
         call FUNC(FAK_updateContents);
     }
-] call CBA_Settings_fnc_init;
+] call CBA_fnc_addSetting;
 
 //IFAK Fourth Item
 [
@@ -288,7 +288,7 @@
         missionNamespace setVariable [QGVAR(IFAKFourthSlotItem), _array, true];
         call FUNC(FAK_updateContents);
     }
-] call CBA_Settings_fnc_init;
+] call CBA_fnc_addSetting;
 
 // Remove AFAK when empty
 [
@@ -344,7 +344,7 @@
         missionNamespace setVariable [QGVAR(AFAKFirstSlotItem), _array, true];
         call FUNC(FAK_updateContents);
     }
-] call CBA_Settings_fnc_init;
+] call CBA_fnc_addSetting;
 
 //AFAK Second Slot Item
 [
@@ -360,7 +360,7 @@
         missionNamespace setVariable [QGVAR(AFAKSecondSlotItem), _array, true];
         call FUNC(FAK_updateContents);
     }
-] call CBA_Settings_fnc_init;
+] call CBA_fnc_addSetting;
 
 //AFAK Third Slot Item
 [
@@ -376,7 +376,7 @@
         missionNamespace setVariable [QGVAR(AFAKThirdSlotItem), _array, true];
         call FUNC(FAK_updateContents);
     }
-] call CBA_Settings_fnc_init;
+] call CBA_fnc_addSetting;
 
 //AFAK Fourth Item
 [
@@ -392,7 +392,7 @@
         missionNamespace setVariable [QGVAR(AFAKFourthSlotItem), _array, true];
         call FUNC(FAK_updateContents);
     }
-] call CBA_Settings_fnc_init;
+] call CBA_fnc_addSetting;
 
 //AFAK Fifth Item
 [
@@ -408,7 +408,7 @@
         missionNamespace setVariable [QGVAR(AFAKFifthSlotItem), _array, true];
         call FUNC(FAK_updateContents);
     }
-] call CBA_Settings_fnc_init;
+] call CBA_fnc_addSetting;
 
 //AFAK Sixth Item
 [
@@ -424,7 +424,7 @@
         missionNamespace setVariable [QGVAR(AFAKSixthSlotItem), _array, true];
         call FUNC(FAK_updateContents);
     }
-] call CBA_Settings_fnc_init;
+] call CBA_fnc_addSetting;
 
 // Remove MFAK when empty
 [
@@ -480,7 +480,7 @@
         missionNamespace setVariable [QGVAR(MFAKFirstSlotItem), _array, true];
         call FUNC(FAK_updateContents);
     }
-] call CBA_Settings_fnc_init;
+] call CBA_fnc_addSetting;
 
 //MFAK Second Slot Item
 [
@@ -496,7 +496,7 @@
         missionNamespace setVariable [QGVAR(MFAKSecondSlotItem), _array, true];
         call FUNC(FAK_updateContents);
     }
-] call CBA_Settings_fnc_init;
+] call CBA_fnc_addSetting;
 
 //MFAK Third Slot Item
 [
@@ -512,7 +512,7 @@
         missionNamespace setVariable [QGVAR(MFAKThirdSlotItem), _array, true];
         call FUNC(FAK_updateContents);
     }
-] call CBA_Settings_fnc_init;
+] call CBA_fnc_addSetting;
 
 //MFAK Fourth Item
 [
@@ -528,7 +528,7 @@
         missionNamespace setVariable [QGVAR(MFAKFourthSlotItem), _array, true];
         call FUNC(FAK_updateContents);
     }
-] call CBA_Settings_fnc_init;
+] call CBA_fnc_addSetting;
 
 //MFAK Fifth Item
 [
@@ -544,7 +544,7 @@
         missionNamespace setVariable [QGVAR(MFAKFifthSlotItem), _array, true];
         call FUNC(FAK_updateContents);
     }
-] call CBA_Settings_fnc_init;
+] call CBA_fnc_addSetting;
 
 //MFAK Sixth Item
 [
@@ -560,7 +560,7 @@
         missionNamespace setVariable [QGVAR(MFAKSixthSlotItem), _array, true];
         call FUNC(FAK_updateContents);
     }
-] call CBA_Settings_fnc_init;
+] call CBA_fnc_addSetting;
 
 //MFAK Seventh Item
 [
@@ -576,7 +576,7 @@
         missionNamespace setVariable [QGVAR(MFAKSeventhSlotItem), _array, true];
         call FUNC(FAK_updateContents);
     }
-] call CBA_Settings_fnc_init;
+] call CBA_fnc_addSetting;
 
 //MFAK Eighth Item
 [
@@ -592,7 +592,7 @@
         missionNamespace setVariable [QGVAR(MFAKEighthSlotItem), _array, true];
         call FUNC(FAK_updateContents);
     }
-] call CBA_Settings_fnc_init;
+] call CBA_fnc_addSetting;
 
 //Enable's Stitching of the Full Body 
 [
@@ -602,4 +602,4 @@
     [CBA_SETTINGS_CAT, ELSTRING(GUI,SubCategory_Basic)],
     [false],
     true
-] call CBA_Settings_fnc_init;
+] call CBA_fnc_addSetting;

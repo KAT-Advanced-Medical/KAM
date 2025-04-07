@@ -6,4 +6,4 @@
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_Hypothermia)],
     [true],
     true
-] call CBA_Settings_fnc_init;
+] call CBA_fnc_addSetting;

@@ -6,7 +6,7 @@
     [CBA_SETTINGS_CAT, ELSTRING(GUI,SubCategory_Basic)],
     [true],
     true
-] call CBA_Settings_fnc_init;
+] call CBA_fnc_addSetting;
 
 // Sets how player bloodtype is designated
 [
@@ -16,7 +16,7 @@
     [CBA_SETTINGS_CAT, ELSTRING(GUI,SubCategory_Basic)],
     [[0,1,2,3,4,5],[LSTRING(SETTING_bloodtype_assign_player), LSTRING(SETTING_bloodtype_assign_player_forced), LSTRING(SETTING_bloodtype_assign_random), LSTRING(SETTING_bloodtype_assign_random_onJoin), LSTRING(SETTING_bloodtype_assign_steamid), LSTRING(SETTING_bloodtype_assign_steamid_custom)],4],
     true
-] call CBA_Settings_fnc_init;
+] call CBA_fnc_addSetting;
 
 // Sets if randomizer should be weighted (according to bloodtype commonness)
 [
@@ -26,7 +26,7 @@
     [CBA_SETTINGS_CAT, ELSTRING(GUI,SubCategory_Basic)],
     [true],
     true
-] call CBA_Settings_fnc_init;
+] call CBA_fnc_addSetting;
 
 // Sets the player's desired bloodtype
 [
@@ -42,7 +42,7 @@
         player setVariable [QACEGVAR(dogtags,dogtagData), nil, true];
     },
     false
-] call CBA_Settings_fnc_init;
+] call CBA_fnc_addSetting;
 
 // Custom bloodtype list to use with custom steamid option
 [
@@ -52,7 +52,7 @@
     [CBA_SETTINGS_CAT, ELSTRING(GUI,SubCategory_Basic)],
     "O,O,A,A,O_N,B,A_N,AB,B_N,AB_N",
     true
-] call CBA_Settings_fnc_init;
+] call CBA_fnc_addSetting;
 
 // Enables ABG Menu and Testing
 [
@@ -62,7 +62,7 @@
     [CBA_SETTINGS_CAT, ELSTRING(GUI,SubCategory_Basic)],
     [false],
     true
-] call CBA_Settings_fnc_init;
+] call CBA_fnc_addSetting;
 
 //location for AED - Defi:
 [
@@ -72,7 +72,7 @@
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_AED)],
     [[0,1,2,3],["STR_ACE_Common_Anywhere", "STR_ACE_Common_Vehicle", "STR_ACE_Medical_Treatment_MedicalFacilities", "STR_ACE_Medical_Treatment_VehiclesAndFacilities"],0],
     true
-] call CBA_Settings_fnc_init;
+] call CBA_fnc_addSetting;
 
 // Allow application of AED pads while CPR is performed
 [
@@ -82,7 +82,7 @@
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_AED)],
     [true],
     true
-] call CBA_Settings_fnc_init;
+] call CBA_fnc_addSetting;
 
 
 //Max Succes chance for AED-X
@@ -93,7 +93,7 @@
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_AED)],
     [1, 100, 90, 0],
     true
-] call CBA_Settings_fnc_init;
+] call CBA_fnc_addSetting;
 
 //Min Succes chance for AED-X
 [
@@ -103,7 +103,7 @@
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_AED)],
     [1, 100, 50, 0],
     true
-] call CBA_Settings_fnc_init;
+] call CBA_fnc_addSetting;
 
 //Max Succes chance for AED
 [
@@ -113,7 +113,7 @@
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_AED)],
     [1, 100, 80, 0],
     true
-] call CBA_Settings_fnc_init;
+] call CBA_fnc_addSetting;
 
 //Min Succes chance for AED
 [
@@ -123,7 +123,7 @@
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_AED)],
     [1, 100, 45, 0],
     true
-] call CBA_Settings_fnc_init;
+] call CBA_fnc_addSetting;
 
 //Settable list for using AED per medical class
 [
@@ -133,7 +133,7 @@
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_AED)],
     [[0, 1, 2], ["STR_ACE_Medical_Treatment_Anyone", "STR_ACE_Medical_Treatment_Medics", "STR_ACE_Medical_Treatment_Doctors"], 0],
     true
-] call CBA_settings_fnc_init;
+] call CBA_fnc_addSetting;
 
 //Settable list for using AED-X per medical class
 [
@@ -143,7 +143,7 @@
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_AED)],
     [[0, 1, 2], ["STR_ACE_Medical_Treatment_Anyone", "STR_ACE_Medical_Treatment_Medics", "STR_ACE_Medical_Treatment_Doctors"], 0],
     true
-] call CBA_settings_fnc_init;
+] call CBA_fnc_addSetting;
 
 //Sets medical level required to pick up placed AED/X Station
 [
@@ -153,7 +153,7 @@
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_AED)],
     [[0, 1, 2], ["STR_ACE_Medical_Treatment_Anyone", "STR_ACE_Medical_Treatment_Medics", "STR_ACE_Medical_Treatment_Doctors"], 0],
     true
-] call CBA_settings_fnc_init;
+] call CBA_fnc_addSetting;
 
 // Sets time required to attach AED-X monitor
 [
@@ -163,7 +163,7 @@
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_AED)],
     [1, 60, 6, 1],
     true
-] call CBA_Settings_fnc_init;
+] call CBA_fnc_addSetting;
 
 // Sets time required to detach AED-X monitor
 [
@@ -173,7 +173,7 @@
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_AED)],
     [1, 60, 3, 1],
     true
-] call CBA_Settings_fnc_init;
+] call CBA_fnc_addSetting;
 
 // Sets time required to attach defibrillator pads
 [
@@ -183,7 +183,7 @@
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_AED)],
     [1, 60, 6, 1],
     true
-] call CBA_Settings_fnc_init;
+] call CBA_fnc_addSetting;
 
 // Sets time required to detach defibrillator pads
 [
@@ -193,7 +193,7 @@
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_AED)],
     [1, 60, 3, 1],
     true
-] call CBA_Settings_fnc_init;
+] call CBA_fnc_addSetting;
 
 // Distance limit for AED
 [
@@ -203,7 +203,7 @@
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_AED)],
     [2, 15, 6, 0],
     true
-] call CBA_Settings_fnc_init;
+] call CBA_fnc_addSetting;
 
 // Sets sounds played by AED-X vitals monitor
 [
@@ -213,7 +213,7 @@
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_AED)],
     [[0, 1], [LLSTRING(SETTING_AED_X_VitalsMonitor_SoundsSelect_Original), LLSTRING(SETTING_AED_X_VitalsMonitor_SoundsSelect_Default)], 1],
     true
-] call CBA_Settings_fnc_init;
+] call CBA_fnc_addSetting;
 
 // Sets SpO2 level threshold for audible warning
 [
@@ -223,7 +223,7 @@
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_AED)],
     [1, 100, 85, 1],
     true
-] call CBA_Settings_fnc_init;
+] call CBA_fnc_addSetting;
 
 // Sets vitals monitor blood pressure measurement behaviour
 // Automatic Instant - every second along with HR
@@ -236,7 +236,7 @@
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_AED)],
     [[0, 1, 2], [LLSTRING(SETTING_AED_X_VitalsMonitor_BloodPressureInterval_AutomaticInstant), LLSTRING(SETTING_AED_X_VitalsMonitor_BloodPressureInterval_Automatic), LLSTRING(SETTING_AED_X_VitalsMonitor_BloodPressureInterval_Manual)], 0],
     true
-] call CBA_Settings_fnc_init;
+] call CBA_fnc_addSetting;
 
 // Set vitals monitor blood pressure measurement time interval
 [
@@ -246,7 +246,7 @@
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_AED)],
     [30, 300, 30, 0],
     true
-] call CBA_Settings_fnc_init;
+] call CBA_fnc_addSetting;
 
 //Enable different CPR chances per medical level
 [
@@ -256,7 +256,7 @@
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_CPR)],
     [true],
     true
-] call CBA_Settings_fnc_init;
+] call CBA_fnc_addSetting;
 
 //Max CPR Chance for Doctors
 [
@@ -266,7 +266,7 @@
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_CPR)],
     [0,100,40,0],
     true
-] call CBA_Settings_fnc_init;
+] call CBA_fnc_addSetting;
 
 //Min CPR Chance for Doctors
 [
@@ -276,7 +276,7 @@
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_CPR)],
     [0,100,20,0],
     true
-] call CBA_Settings_fnc_init;
+] call CBA_fnc_addSetting;
 
 //Max CPR Chance for Regular medics
 [
@@ -286,7 +286,7 @@
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_CPR)],
     [0,100,30,0],
     true
-] call CBA_Settings_fnc_init;
+] call CBA_fnc_addSetting;
 
 //Min CPR Chance for Regular medics
 [
@@ -296,7 +296,7 @@
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_CPR)],
     [0,100,15,0],
     true
-] call CBA_Settings_fnc_init;
+] call CBA_fnc_addSetting;
 
 //Max CPR Chance for Default
 [
@@ -306,7 +306,7 @@
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_CPR)],
     [0,100,20,0],
     true
-] call CBA_Settings_fnc_init;
+] call CBA_fnc_addSetting;
 
 //Min CPR Chance for Default
 [
@@ -316,7 +316,7 @@
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_CPR)],
     [0,100,10,0],
     true
-] call CBA_Settings_fnc_init;
+] call CBA_fnc_addSetting;
 
 // Sets interval at which CPR chance is rolled
 [
@@ -326,7 +326,7 @@
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_CPR)],
     [1 , 3600, 15, 0],
     true
-] call CBA_Settings_fnc_init;
+] call CBA_fnc_addSetting;
 
 // Sets oxygenation period length after CPR has stopped
 [
@@ -336,7 +336,7 @@
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_CPR)],
     [0, 3600, 15, 0],
     true
-] call CBA_Settings_fnc_init;
+] call CBA_fnc_addSetting;
 
 //Advanced Rhythms
 [
@@ -348,7 +348,7 @@
     true,
     {},
     true
-] call CBA_Settings_fnc_init;
+] call CBA_fnc_addSetting;
 
 // Sets if cardiac arrest rhythms can deteriorate
 [
@@ -358,7 +358,7 @@
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_AdvRhythms)],
     [true],
     true
-] call CBA_Settings_fnc_init;
+] call CBA_fnc_addSetting;
 
 // Sets maximum time for cardiac arrest rhythm deterioration randomizer
 [
@@ -368,7 +368,7 @@
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_AdvRhythms)],
     [30,3600,900,0],
     true
-] call CBA_Settings_fnc_init;
+] call CBA_fnc_addSetting;
 
 // Sets time weight for cardiac arrest rhythm deterioration time randomizer // should be less than maximum
 [
@@ -378,7 +378,7 @@
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_AdvRhythms)],
     [20,3600,180,0],
     true
-] call CBA_Settings_fnc_init;
+] call CBA_fnc_addSetting;
 
 // Sets whether or not H&T conditions keep patients in cardiac arrest until resolved
 [
@@ -388,7 +388,7 @@
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_AdvRhythms)],
     [false],
     true
-] call CBA_Settings_fnc_init;
+] call CBA_fnc_addSetting;
 
 // Sets chance for Pulseless Electrical Activity / Asystole
 [
@@ -398,7 +398,7 @@
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_AdvRhythms)],
     [0,100,50,0],
     true
-] call CBA_Settings_fnc_init;
+] call CBA_fnc_addSetting;
 
 // Sets chance for Ventricular Tachycardia / Ventricular Fibrillation
 [
@@ -408,7 +408,7 @@
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_AdvRhythms)],
     [0,100,50,0],
     true
-] call CBA_Settings_fnc_init;
+] call CBA_fnc_addSetting;
 
 // Non-shockable Bloodloss Threshold
 [
@@ -418,7 +418,7 @@
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_AdvRhythms)],
     [0,6.0,3.6,1],
     true
-] call CBA_Settings_fnc_init;
+] call CBA_fnc_addSetting;
 
 // Sets if cardiac arrest rhythm can deteriorate after CPR/AED treatment
 [
@@ -428,7 +428,7 @@
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_AdvRhythms)],
     [true],
     true
-] call CBA_Settings_fnc_init;
+] call CBA_fnc_addSetting;
 
 // Sets chance for Return Of Spontaneous Circulation after CPR
 [
@@ -438,7 +438,7 @@
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_AdvRhythms)],
     [0,100,5,0],
     true
-] call CBA_Settings_fnc_init;
+] call CBA_fnc_addSetting;
 
 // Sets chance for Return Of Spontaneous Circulation after AED
 [
@@ -448,7 +448,7 @@
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_AdvRhythms)],
     [0,100,50,0],
     true
-] call CBA_Settings_fnc_init;
+] call CBA_fnc_addSetting;
 
 // Sets if hardcore cardiac arrest rhythm behaviours are enabled
 // Incorrect AED usage (stable/non-shockable) has chance to deteriorate rhythm
@@ -460,7 +460,7 @@
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_AdvRhythms)],
     [false],
     true
-] call CBA_Settings_fnc_init;
+] call CBA_fnc_addSetting;
 
 // Sets chance for cardiac arrest rhythm to deteriorate from shockable straight to non-shockable
 [
@@ -470,7 +470,7 @@
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_AdvRhythms)],
     [0,100,10,0],
     true
-] call CBA_Settings_fnc_init;
+] call CBA_fnc_addSetting;
 
 //Enable self blood draw
 [
@@ -480,7 +480,7 @@
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_BloodDraw)],
     [[0, 1], ["STR_ACE_common_No", "STR_ACE_common_Yes"], 1],
     true
-] call CBA_Settings_fnc_init;
+] call CBA_fnc_addSetting;
 
 //Blood draw uses blood groups
 [
@@ -490,7 +490,7 @@
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_BloodDraw)],
     [true],
     true
-] call CBA_Settings_fnc_init;
+] call CBA_fnc_addSetting;
 
 //blood draw time for 500ml kit
 [
@@ -500,7 +500,7 @@
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_BloodDraw)],
     [1,600,50,0],
     true
-] call CBA_Settings_fnc_init;
+] call CBA_fnc_addSetting;
 
 //blood draw time for 250ml kit
 [
@@ -510,7 +510,7 @@
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_BloodDraw)],
     [1,600,25,0],
     true
-] call CBA_Settings_fnc_init;
+] call CBA_fnc_addSetting;
 
 //Minimum acceptable blood volume for drawing blood
 [
@@ -520,7 +520,7 @@
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_BloodDraw)],
     [0, 6, 3.6, 1], // 3.6 default matches ACE Class IV hemorrhage
     true
-] call CBA_Settings_fnc_init;
+] call CBA_fnc_addSetting;
 
 [
     QGVAR(cardiacArrestBleedRate),
@@ -533,7 +533,7 @@
         params ["_value"];
         ACEGVAR(medical,const_minCardiacOutput) = _value;
     }
-] call CBA_Settings_fnc_init;
+] call CBA_fnc_addSetting;
 
 // Chance of tamponade from chest wounds
 [
@@ -543,7 +543,7 @@
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_AdvRhythms)],
     [0,100,10,0],
     true
-] call CBA_Settings_fnc_init;
+] call CBA_fnc_addSetting;
 
 [
     QGVAR(deterioratingTamponade_chance),
@@ -552,7 +552,7 @@
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_AdvRhythms)],
     [0,100,35,0],
     true
-] call CBA_Settings_fnc_init;
+] call CBA_fnc_addSetting;
 
 // Tamponade deterioration timer
 [
@@ -562,7 +562,7 @@
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_AdvRhythms)],
     [0,3600,60,0],
     true
-] call CBA_Settings_fnc_init;
+] call CBA_fnc_addSetting;
 
 [
     QGVAR(hardcoreDiagnose),
@@ -571,7 +571,7 @@
     [CBA_SETTINGS_CAT, ELSTRING(GUI,SubCategory_Basic)],
     [false],
     true
-] call CBA_Settings_fnc_init;
+] call CBA_fnc_addSetting;
 
 [
     QGVAR(medLvl_BPCuff),
@@ -580,7 +580,7 @@
     [CBA_SETTINGS_CAT, ELSTRING(GUI,SubCategory_Basic)],
     [[0, 1, 2], ["STR_ACE_Medical_Treatment_Anyone", "STR_ACE_Medical_Treatment_Medics", "STR_ACE_Medical_Treatment_Doctors"], 0],
     true
-] call CBA_settings_fnc_init;
+] call CBA_fnc_addSetting;
 
 [
     QGVAR(treatmentTime_BPCuff),
@@ -589,7 +589,7 @@
     [CBA_SETTINGS_CAT, ELSTRING(GUI,SubCategory_Basic)],
     [0.1, 30, 12, 1],
     true
-] call CBA_Settings_fnc_init;
+] call CBA_fnc_addSetting;
 
 [
     QGVAR(medLvl_StethHR),
@@ -598,7 +598,7 @@
     [CBA_SETTINGS_CAT, ELSTRING(GUI,SubCategory_Basic)],
     [[0, 1, 2], ["STR_ACE_Medical_Treatment_Anyone", "STR_ACE_Medical_Treatment_Medics", "STR_ACE_Medical_Treatment_Doctors"], 0],
     true
-] call CBA_settings_fnc_init;
+] call CBA_fnc_addSetting;
 
 [
     QGVAR(treatmentTime_StethHR),
@@ -607,4 +607,4 @@
     [CBA_SETTINGS_CAT, ELSTRING(GUI,SubCategory_Basic)],
     [0.1, 30, 8, 1],
     true
-] call CBA_Settings_fnc_init;
+] call CBA_fnc_addSetting;

@@ -7,7 +7,7 @@
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_Basic)],
     [true],
     true
-] call CBA_Settings_fnc_init;
+] call CBA_fnc_addSetting;
 
 // Label left and right in medical menu
 [
@@ -17,4 +17,4 @@
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_Basic)],
     [false],
     false
-] call CBA_Settings_fnc_init;
+] call CBA_fnc_addSetting;

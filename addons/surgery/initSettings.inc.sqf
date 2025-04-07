@@ -6,7 +6,7 @@
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_Fractures)],
     [true],
     true
-] call CBA_Settings_fnc_init;
+] call CBA_fnc_addSetting;
 
 [
     QGVAR(simpleChance),
@@ -15,7 +15,7 @@
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_Fractures)],
     [0,100,60,0],
     true
-] call CBA_Settings_fnc_init;
+] call CBA_fnc_addSetting;
 
 [
     QGVAR(closedReductionFailChance),
@@ -24,7 +24,7 @@
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_Fractures)],
     [0,100,10,0],
     true
-] call CBA_Settings_fnc_init;
+] call CBA_fnc_addSetting;
 
 [
     QGVAR(compoundChance),
@@ -33,7 +33,7 @@
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_Fractures)],
     [0,100,30,0],
     true
-] call CBA_Settings_fnc_init;
+] call CBA_fnc_addSetting;
 
 [
     QGVAR(fractureCheck_MedLevel),
@@ -42,7 +42,7 @@
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_Fractures)],
     [[0, 1, 2], ["STR_ACE_Medical_Treatment_Anyone", "STR_ACE_Medical_Treatment_Medics", "STR_ACE_Medical_Treatment_Doctors"], 0],
     true
-] call CBA_Settings_fnc_init;
+] call CBA_fnc_addSetting;
 
 [
     QGVAR(enable_selfCheckFracture),
@@ -51,7 +51,7 @@
      [CBA_SETTINGS_CAT, LSTRING(SubCategory_Fractures)],
     [[0, 1], ["STR_ACE_common_No", "STR_ACE_common_Yes"], 1],
     true
-] call CBA_Settings_fnc_init;
+] call CBA_fnc_addSetting;
 
 [
     QGVAR(closedTime),
@@ -60,7 +60,7 @@
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_SurgicalActions)],
     [0,100,10,0],
     true
-] call CBA_Settings_fnc_init;
+] call CBA_fnc_addSetting;
 
 [
     QGVAR(incisionTime),
@@ -69,7 +69,7 @@
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_SurgicalActions)],
     [0,100,10,0],
     true
-] call CBA_Settings_fnc_init;
+] call CBA_fnc_addSetting;
 
 [
     QGVAR(intermediateTime),
@@ -78,7 +78,7 @@
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_SurgicalActions)],
     [0,100,8,0],
     true
-] call CBA_Settings_fnc_init;
+] call CBA_fnc_addSetting;
 
 [
     QGVAR(openTime),
@@ -87,7 +87,7 @@
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_SurgicalActions)],
     [0,100,15,0],
     true
-] call CBA_Settings_fnc_init;
+] call CBA_fnc_addSetting;
 
 [
     QGVAR(fractureCheck_Time),
@@ -96,7 +96,7 @@
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_SurgicalActions)],
     [0,100,10,0],
     true
-] call CBA_Settings_fnc_init;
+] call CBA_fnc_addSetting;
 
 [
     QGVAR(closedReduction_MedLevel),
@@ -105,7 +105,7 @@
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_SurgicalActions)],
     [[0, 1, 2], ["STR_ACE_Medical_Treatment_Anyone", "STR_ACE_Medical_Treatment_Medics", "STR_ACE_Medical_Treatment_Doctors"], 2],
     true
-] call CBA_Settings_fnc_init;
+] call CBA_fnc_addSetting;
 
 [
     QGVAR(surgicalAction_MedLevel),
@@ -114,7 +114,7 @@
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_SurgicalActions)],
     [[0, 1, 2], ["STR_ACE_Medical_Treatment_Anyone", "STR_ACE_Medical_Treatment_Medics", "STR_ACE_Medical_Treatment_Doctors"], 2],
     true
-] call CBA_Settings_fnc_init;
+] call CBA_fnc_addSetting;
 
 [
     QGVAR(closedLocation),
@@ -123,7 +123,7 @@
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_SurgicalActions)],
     [[0,1,2,3],["STR_ACE_Common_Anywhere", "STR_ACE_Common_Vehicle", "STR_ACE_Medical_Treatment_MedicalFacilities", "STR_ACE_Medical_Treatment_VehiclesAndFacilities"],0],
     true
-] call CBA_Settings_fnc_init;
+] call CBA_fnc_addSetting;
 
 [
     QGVAR(surgicalLocation),
@@ -132,7 +132,7 @@
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_SurgicalActions)],
     [[0,1,2,3],["STR_ACE_Common_Anywhere", "STR_ACE_Common_Vehicle", "STR_ACE_Medical_Treatment_MedicalFacilities", "STR_ACE_Medical_Treatment_VehiclesAndFacilities"],3],
     true
-] call CBA_Settings_fnc_init;
+] call CBA_fnc_addSetting;
 
 // 0 Surgery Causes Unconsciousness: If you do an incision (without anesthesia & sedative) patient will go into CA
 // 1 Unconsciousness Required for Surgery: Surgery fails unless patient is unconscious, needs anesthesia
@@ -145,7 +145,7 @@
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_SurgicalActions)],
     [[0, 1, 2, 3], [LLSTRING(SETTING_Causes_Unconsciousness), LLSTRING(SETTING_Unconsciousness_Required), LLSTRING(SETTING_No_Unconsciousness), LLSTRING(SETTING_Anesthesia)], 0],
     true
-] call CBA_Settings_fnc_init;
+] call CBA_fnc_addSetting;
 
 [
     QGVAR(npwt_MedLevel),
@@ -154,7 +154,7 @@
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_NPWT)],
     [[0, 1, 2], ["STR_ACE_Medical_Treatment_Anyone", "STR_ACE_Medical_Treatment_Medics", "STR_ACE_Medical_Treatment_Doctors"], 2],
     true
-] call CBA_Settings_fnc_init;
+] call CBA_fnc_addSetting;
 
 [
     QGVAR(npwtLocation),
@@ -163,7 +163,7 @@
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_NPWT)],
     [[0,1,2,3],["STR_ACE_Common_Anywhere", "STR_ACE_Common_Vehicle", "STR_ACE_Medical_Treatment_MedicalFacilities", "STR_ACE_Medical_Treatment_VehiclesAndFacilities"],3],
     true
-] call CBA_Settings_fnc_init;
+] call CBA_fnc_addSetting;
 
 [
     QGVAR(npwtTime),
@@ -172,7 +172,7 @@
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_NPWT)],
     [0.1, 60, 5, 1],
     true
-] call CBA_Settings_fnc_init;
+] call CBA_fnc_addSetting;
 
 [
     QGVAR(reboa_MedLevel),
@@ -181,7 +181,7 @@
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_SurgicalActions)],
     [[0, 1, 2], ["STR_ACE_Medical_Treatment_Anyone", "STR_ACE_Medical_Treatment_Medics", "STR_ACE_Medical_Treatment_Doctors"], 2],
     true
-] call CBA_Settings_fnc_init;
+] call CBA_fnc_addSetting;
 
 [
     QGVAR(reboaLocation),
@@ -190,7 +190,7 @@
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_SurgicalActions)],
     [[0,1,2,3],["STR_ACE_Common_Anywhere", "STR_ACE_Common_Vehicle", "STR_ACE_Medical_Treatment_MedicalFacilities", "STR_ACE_Medical_Treatment_VehiclesAndFacilities"],3],
     true
-] call CBA_Settings_fnc_init;
+] call CBA_fnc_addSetting;
 
 [
     QGVAR(reboaTime),
@@ -199,7 +199,7 @@
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_SurgicalActions)],
     [0,100,8,0],
     true
-] call CBA_Settings_fnc_init;
+] call CBA_fnc_addSetting;
 
 [
     QGVAR(ultrasound_MedLevel),
@@ -208,7 +208,7 @@
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_SurgicalActions)],
     [[0, 1, 2], ["STR_ACE_Medical_Treatment_Anyone", "STR_ACE_Medical_Treatment_Medics", "STR_ACE_Medical_Treatment_Doctors"], 2],
     true
-] call CBA_Settings_fnc_init;
+] call CBA_fnc_addSetting;
 
 [
     QGVAR(ultrasoundLocation),
@@ -217,7 +217,7 @@
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_SurgicalActions)],
     [[0,1,2,3],["STR_ACE_Common_Anywhere", "STR_ACE_Common_Vehicle", "STR_ACE_Medical_Treatment_MedicalFacilities", "STR_ACE_Medical_Treatment_VehiclesAndFacilities"],3],
     true
-] call CBA_Settings_fnc_init;
+] call CBA_fnc_addSetting;
 
 [
     QGVAR(ultrasoundTime),
@@ -226,7 +226,7 @@
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_SurgicalActions)],
     [0,100,8,0],
     true
-] call CBA_Settings_fnc_init;
+] call CBA_fnc_addSetting;
 
 [
     QGVAR(pericardialtap_MedLevel),
@@ -235,7 +235,7 @@
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_SurgicalActions)],
     [[0, 1, 2], ["STR_ACE_Medical_Treatment_Anyone", "STR_ACE_Medical_Treatment_Medics", "STR_ACE_Medical_Treatment_Doctors"], 2],
     true
-] call CBA_Settings_fnc_init;
+] call CBA_fnc_addSetting;
 
 [
     QGVAR(pericardialtapLocation),
@@ -244,7 +244,7 @@
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_SurgicalActions)],
     [[0,1,2,3],["STR_ACE_Common_Anywhere", "STR_ACE_Common_Vehicle", "STR_ACE_Medical_Treatment_MedicalFacilities", "STR_ACE_Medical_Treatment_VehiclesAndFacilities"],3],
     true
-] call CBA_Settings_fnc_init;
+] call CBA_fnc_addSetting;
 
 [
     QGVAR(pericardialtapTime),
@@ -253,4 +253,4 @@
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_SurgicalActions)],
     [0,100,8,0],
     true
-] call CBA_Settings_fnc_init;
+] call CBA_fnc_addSetting;
