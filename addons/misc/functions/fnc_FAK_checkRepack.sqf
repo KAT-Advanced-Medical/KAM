@@ -26,7 +26,7 @@ private _return = true;
 
 private _fnc_getTargetItemCount = {
     params ["_unit", "_className", ["_targetCount", 1], ["_magazine", false]];
-    
+
     private _total = 0;
 
     if !(_magazine) then {
@@ -36,7 +36,7 @@ private _fnc_getTargetItemCount = {
         if (_index != -1) then {
             _total = ((_uniformArray select 1) select _index);
         };
-        
+
         if (_total >= _targetCount) exitWith {_total};
 
         private _vestArray = getItemCargo vestContainer _unit;
@@ -95,12 +95,12 @@ switch (_type) do {
     _x params ["_className", "_amount"];
 
     if (((_className call BIS_fnc_itemType) select 0) == "Item") then {
-        if !([_unit, _className, _amount] call _fnc_getTargetItemCount >= _amount) exitWith {
+        if ([_unit, _className, _amount] call _fnc_getTargetItemCount < _amount) exitWith {
             _return = false;
             break;
         };
     } else {
-        if !([_unit, _className, _amount, true] call _fnc_getTargetItemCount >= _amount) exitWith {
+        if ([_unit, _className, _amount, true] call _fnc_getTargetItemCount < _amount) exitWith {
             _return = false;
             break;
         };

@@ -61,7 +61,7 @@ GVAR(headTurn_timeOut) = true;
 
         private _patientCondition = (!(IS_UNCONSCIOUS(_patient)) && alive _patient || _patient isEqualTo objNull);
         private _medicCondition = (!(alive _medic) || IS_UNCONSCIOUS(_medic) || _medic isEqualTo objNull);
-        private _vehicleCondition = !(objectParent _medic isEqualTo objectParent _patient);
+        private _vehicleCondition = (objectParent _medic isNotEqualTo objectParent _patient);
         private _distanceCondition = (_patient distance2D _medic > ACEGVAR(medical_gui,maxDistance));
 
         if (_patientCondition || _medicCondition || !(_patient getVariable [QGVAR(headTurningActive), false]) || dialog || {(!_notInVehicle && _vehicleCondition) || {(_notInVehicle && _distanceCondition)}}) exitWith {

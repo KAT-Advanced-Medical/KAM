@@ -6,27 +6,8 @@ PREP_RECOMPILE_START;
 #include "XEH_PREP.hpp"
 PREP_RECOMPILE_END;
 
-#define CBA_SETTINGS_CAT "KAT - ADV Medical: GUI"
-
-// Enable or disable Colored Action Logs
-[
-    QGVAR(ColoredLogs),
-    "CHECKBOX",
-    [LLSTRING(SETTING_ColoredLogs), LLSTRING(SETTING_ColoredLogs_DESC)],
-    [CBA_SETTINGS_CAT, LSTRING(SubCategory_Basic)],
-    [true],
-    true
-] call CBA_Settings_fnc_init;
-
-// Label left and right in medical menu
-[
-    QGVAR(showPatientSideLabels),
-    "CHECKBOX",
-    LLSTRING(SETTING_showPatientSideLabels),
-    [CBA_SETTINGS_CAT, LSTRING(SubCategory_Basic)],
-    [false],
-    false
-] call CBA_Settings_fnc_init;
+#define CBA_SETTINGS_CAT LSTRING(cba_name)
+#include "initSettings.inc.sqf"
 
 // OVERRIDE ACE
 
@@ -88,3 +69,5 @@ private _categoryColors = [ACELSTRING(medical,Interface_Category), format ["| %1
         false // isGlobal
     ] call CBA_fnc_addSetting;
 } forEach _damageColors;
+
+ADDON = true;
