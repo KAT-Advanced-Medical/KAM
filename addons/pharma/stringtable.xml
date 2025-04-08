@@ -3514,6 +3514,7 @@
         <Key ID="STR_KAT_Pharma_cba_name">
             <English>KAT - ADV Medical: Pharmacy</English>
             <Japanese>KAM - 薬学 (Pharmacy)</Japanese>
+            <French>KAT - ADV Medical : Pharmacie</French>
         </Key>
         <Key ID="STR_KAT_Pharma_coagulation_Bandaged">
             <English>Blood clotting temporarily closed a wound on %1</English>

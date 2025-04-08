@@ -3576,6 +3576,7 @@
         <Key ID="STR_KAT_Circulation_cba_name">
             <English>KAT - ADV Medical: Circulation</English>
             <Japanese>KAM - 循環器系 (Circulation)</Japanese>
+            <French>KAT - ADV Medical : Circulation</French>
         </Key>
         <Key ID="STR_KAT_Circulation_crosspanel">
             <English>Blood groups cheat sheet</English>
