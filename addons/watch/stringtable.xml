@@ -223,6 +223,24 @@
             <French>Permet l'imprécision de la montre lors de la lecture des constantes du patient</French>
             <Japanese>腕時計が患者のバイタルを不正確に読み取るようになります。</Japanese>
         </Key>
+        <Key ID="STR_KAT_Watch_STSDescription">
+            <English>Watch with Vital Monitoring Capabilities. So Others May Live.</English>
+            <Czech>Hodinky s možností monitoringu životních funkcí. So Others May Live.</Czech>
+            <French>Montre avec fonctions de surveillance vitale. Pour que d'autres puissent vivre.</French>
+            <Italian>Orologio con capacità di monitoraggio vitale. Perché altri possano vivere.</Italian>
+            <German>Uhr mit Funktionen zur Vitalitätsüberwachung. Damit andere leben können!</German>
+            <Japanese>カーミン ジャンプ・スタンダード。 バイタル監視機能を持った腕時計。 他人の命の為に。(So Others May Live)</Japanese>
+            <Chinese>具有生命體徵監測功能的腕錶。以便其他人能夠活下去。</Chinese>
+            <Chinesesimp>使用重要监控功能观看。所以其他人可以活下去。</Chinesesimp>
+        </Key>
+        <Key ID="STR_KAT_Watch_STSDisplayName">
+            <English>Katmin Jump Standard</English>
+            <Czech>Katmin Jump Standard</Czech>
+            <French>Katmin Jump Standard</French>
+            <Italian>Katmin Jump Standard</Italian>
+            <German>Katmin Jump Standard</German>
+            <Japanese>Katmin Jump Standard</Japanese>
+            <Chinesesimp>Katmin跳跃标准</Chinesesimp>
         </Key>
         <Key ID="STR_KAT_Watch_ShowKATWatch_Setting">
             <English>Show KATMIN Watch</English>
