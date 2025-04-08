@@ -98,6 +98,7 @@
         <Key ID="STR_KAT_Vitals_cba_name">
             <English>KAT - ADV Medical: Vitals</English>
             <Japanese>KAM - バイタル</Japanese>
+            <French>KAT - ADV Medical : Données vitales</French>
         </Key>
     </Package>
 </Project>

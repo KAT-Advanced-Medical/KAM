@@ -861,6 +861,7 @@
         <Key ID="STR_KAT_Chemical_cba_name">
             <English>KAT - ADV Medical: Chemical</English>
             <Japanese>KAM - 化学戦 (Chemical)</Japanese>
+            <French>KAT - ADV Medical : Chimique</French>
         </Key>
         <Key ID="STR_KAT_Chemical_giveGasMask_action">
             <English>Put on gas mask</English>

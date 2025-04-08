@@ -276,6 +276,7 @@
         <Key ID="STR_KAT_Watch_cba_name">
             <English>KAT - ADV Medical: Watch</English>
             <Japanese>KAM - 腕時計 (Watch)</Japanese>
+            <French>KAT - ADV Médical : Surveillance</French>
         </Key>
         <Key ID="STR_KAT_Watch_descentFT">
             <English>%1ft/s</English>

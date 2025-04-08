@@ -3,6 +3,7 @@
     <Package name="Ophthalmology">
         <Key ID="STR_KAT_Ophthalmology_EyeCover_Desc">
             <English>Eye Covers are used to treat heavy injury to the eye</English>
+            <French>Les caches-œil sont utilisés pour traiter les lésions graves de l'œil.</French>
         </Key>
         <Key ID="STR_KAT_Ophthalmology_EyeCover_Item">
             <English>Eye Shield</English>
@@ -10,9 +11,11 @@
         </Key>
         <Key ID="STR_KAT_Ophthalmology_EyeCover_Left">
             <English>Left EyeCover</English>
+            <French>Œil gauche Couvert</French>
         </Key>
         <Key ID="STR_KAT_Ophthalmology_EyeCover_Right">
             <English>Right EyeCover</English>
+            <French>Œil droit Couvert</French>
         </Key>
         <Key ID="STR_KAT_Ophthalmology_blink_action">
             <English>Blinking</English>
@@ -20,7 +23,7 @@
         </Key>
         <Key ID="STR_KAT_Ophthalmology_cba_name">
             <English>KAT - ADV Medical: Ophthalmology</English>
-            <French>KAT - ADV Medical: Ophthalmology</French>
+            <French>KAT - ADV Medical : Ophtalmologie</French>
             <Japanese>KAM - 眼科 (Ophthalmology)</Japanese>
         </Key>
         <Key ID="STR_KAT_Ophthalmology_eyeInjuryPresent">

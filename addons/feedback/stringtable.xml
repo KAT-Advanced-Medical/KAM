@@ -56,6 +56,7 @@
         <Key ID="STR_KAT_Feedback_cba_name">
             <English>KAT - ADV Medical: Feedback</English>
             <Japanese>KAM - フィードバック</Japanese>
+            <French>KAT - ADV Medical : Retour d'expérience</French>
         </Key>
     </Package>
 </Project>
