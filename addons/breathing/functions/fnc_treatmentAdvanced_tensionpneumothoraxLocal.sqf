@@ -17,7 +17,7 @@
  * Public: No
  */
 
-params ["_medic", "_patient"];
+params ["_medic", "_patient", "_side"];
 
 private _activeChestSeal = _patient getVariable [QGVAR(activeChestSeal), [false, false]];
 if (_activeChestSeal select _side) then {
