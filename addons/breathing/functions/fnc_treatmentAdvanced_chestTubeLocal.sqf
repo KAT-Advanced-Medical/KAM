@@ -39,6 +39,10 @@ if (_liveChestTube == 0.5)  exitWith {
     };
     [_patient, true] call ACEFUNC(dragging,setCarryable);
     [_patient, true] call ACEFUNC(dragging,setDraggable);
+    private _ht = _patient getVariable [QEGVAR(circulation,ht), []];
+    _ht deleteAt (_ht find "tension");
+    _ht deleteAt (_ht find "hemo");
+    _patient setVariable [QEGVAR(circulation,ht), _ht, true];
 };
 
 private _output = LLSTRING(chestTube_fail);

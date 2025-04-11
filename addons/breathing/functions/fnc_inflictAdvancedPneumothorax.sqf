@@ -30,6 +30,10 @@ if ((floor (random 100) < (GVAR(advPtxChance) + _chanceIncrease) || _deteriorate
         _hemoState set [_side, true];
         _unit setVariable [QGVAR(hemopneumothorax), _hemoState, true];
 
+        private _ht = _unit getVariable [QEGVAR(circulation,ht), []];
+            if ((_ht findIf {_x isEqualTo "hemo"}) == -1) then {
+            _ht pushBack "hemo";
+            };
         _pneumothoraxState set [_side, 4];
         _unit setVariable [QGVAR(pneumothorax), _pneumothoraxState, true];
 
