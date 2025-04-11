@@ -3146,7 +3146,7 @@
             <Finnish>Hoito</Finnish>
             <Dutch>Behandelen</Dutch>
         </Key>
-         <Key ID="STR_KAT_Breathing_SETTING_hardcoreBreathingTreatment">
+        <Key ID="STR_KAT_Breathing_SETTING_hardcoreBreathingTreatment">
             <English>Activate Hardcore Treatment options</English>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_hardcoreBreathingTreatment_DESC">
