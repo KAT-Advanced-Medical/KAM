@@ -1228,32 +1228,6 @@
         <Key ID="STR_KAT_Surgery_Ultra_ThorasicRight">
             <English>Right Lung Status: %1</English>
         </Key>
-        <Key ID="STR_KAT_Surgery_Ultra_Cardiac">
-            <English>Cardiac Status: %1</English>
-            <Chinesesimp>心脏状态：%1</Chinesesimp>
-            <Chinese>心臟狀態：%1</Chinese>
-            <Russian>Сердце: %1</Russian>
-            <Spanish>Estado Cardíaco: %1</Spanish>
-            <Japanese>心臓の状態: %1</Japanese>
-            <French>Statut cardiaque :%1</French>
-            <Portuguese>Estado cardíaco: %1</Portuguese>
-            <Dutch>Cardiale status: %1</Dutch>
-            <Italian>Stato cardiaco: %1</Italian>
-            <German>Herzstatus: %1</German>
-        </Key>
-        <Key ID="STR_KAT_Surgery_Ultra_Airway_Normal">
-            <English>Normal</English>
-            <Chinesesimp>正常</Chinesesimp>
-            <Chinese>正常</Chinese>
-            <Russian>Стабильно</Russian>
-            <Spanish>Normal</Spanish>
-            <Japanese>正常</Japanese>
-            <French>Normal</French>
-            <Portuguese>Normal</Portuguese>
-            <Dutch>Normaal</Dutch>
-            <Italian>Normale</Italian>
-            <German>Normal</German>
-        </Key>
         <Key ID="STR_KAT_Surgery_Ultra_Airway_Compromise">
             <English>Compromised</English>
             <Czech>Ohrožený</Czech>
@@ -1382,69 +1356,7 @@
             <Chinesesimp>手持式超声</Chinesesimp>
             <Dutch>Mobiele echograaf</Dutch>
         </Key>
-        <Key ID="STR_KAT_Surgery_Ultra_Thorasic">
-            <English>Lung Status: %1</English>
-            <Czech>Stav plic: %1</Czech>
-            <French>Statut des poumons :%1</French>
-            <Spanish>Estado de Pulmones: %1</Spanish>
-            <Italian>Stato dei polmoni: %1</Italian>
-            <Portuguese>Estado do pulmão: %1</Portuguese>
-            <Russian>Лёгкие: %1</Russian>
-            <German>Lungenstatus: %1</German>
-            <Japanese>肺の状態: %1</Japanese>
-            <Chinese>肺部狀態：%1</Chinese>
-            <Chinesesimp>肺部状态：%1</Chinesesimp>
-            <Dutch>Longstatus: %1</Dutch>
-        </Key>
-        <Key ID="STR_KAT_Surgery_Ultra_Thorasic_Hemo">
-            <English>Hemopneumothorax</English>
-            <Czech>Hemotorax</Czech>
-            <French>Hémopneumothorax</French>
-            <Spanish>Hemopneumotórax</Spanish>
-            <Italian>Emopneumotorace</Italian>
-            <Portuguese>Hemotórax</Portuguese>
-            <Russian>Гемоторакс</Russian>
-            <German>Hämopneumothorax</German>
-            <Japanese>血気胸</Japanese>
-            <Chinese>血氣胸</Chinese>
-            <Chinesesimp>血气胸</Chinesesimp>
-            <Dutch>Hemopneumothorax</Dutch>
-        </Key>
-        <Key ID="STR_KAT_Surgery_Ultra_Thorasic_NoActivity">
-            <English>No Activity</English>
-            <Czech>Žádná činnost</Czech>
-            <French>Aucune activité</French>
-            <Japanese>活動なし</Japanese>
-            <Chinese>無活動</Chinese>
-        </Key>
-        <Key ID="STR_KAT_Surgery_Ultra_Thorasic_PTX">
-            <English>Pneumothorax</English>
-            <Czech>Pneumotorax</Czech>
-            <French>Pneumothorax</French>
-            <Spanish>Pneumotórax</Spanish>
-            <Italian>Pneumotorace</Italian>
-            <Portuguese>Pneumotórax</Portuguese>
-            <Russian>Пневмоторакс</Russian>
-            <German>Pneumothorax</German>
-            <Japanese>気胸</Japanese>
-            <Chinese>氣胸</Chinese>
-            <Chinesesimp>气胸</Chinesesimp>
-            <Dutch>Pneumothorax</Dutch>
-        </Key>
-        <Key ID="STR_KAT_Surgery_Ultra_Thorasic_Tension">
-            <English>Tension Pneumothorax</English>
-            <Czech>Tenzní pneumotorax</Czech>
-            <French>Pneumothorax sous tension</French>
-            <Spanish>Tensión de Pneumotórax</Spanish>
-            <Italian>Pneumotorace Iperteso</Italian>
-            <Portuguese>Pneumotórax Hipertensivo</Portuguese>
-            <Russian>Напряженный пневмоторакс</Russian>
-            <German>Spannungspneumothorax</German>
-            <Japanese>緊張性気胸</Japanese>
-            <Chinese>張力性氣胸</Chinese>
-            <Chinesesimp>张力性气胸</Chinesesimp>
-            <Dutch>Tensiepneumothorax</Dutch>
-        </Key>
+        
         <Key ID="STR_KAT_Surgery_Ultra_Use">
             <English>Conduct Ultrasound Assessment</English>
             <Czech>Provést Ultrazvukové Vyšetření</Czech>
