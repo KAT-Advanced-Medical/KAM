@@ -45,5 +45,5 @@ if (_liveChestTube == 0.5)  exitWith {
     _patient setVariable [QEGVAR(circulation,ht), _ht, true];
 };
 
-private _output = LLSTRING(chestTube_fail);
+private _output = LLSTRING(chest_tube_fail);
 [_output, 1.5, _medic] call ACEFUNC(common,displayTextStructured);

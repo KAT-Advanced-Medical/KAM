@@ -32,7 +32,7 @@ class CfgWeapons {
         scopeCurator = 2;
         scopeArsenal = 2;
         author = "Katalam";
-        displayName = CSTRING(chestseal_item_display);
+        displayName = CSTRING(chestseal_display);
         descriptionShort = CSTRING(chestseal_desc);
         picture = QPATHTOF(ui\chest-seal.paa);
         ACE_isMedicalItem = 1;

@@ -3161,7 +3161,7 @@
         <Key ID="STR_KAT_Breathing_incision_log">
             <English>%1 made an chest incision</English>
         </Key>
-        <Key ID="STR_KAT_Breathing_chesttube_fail">
+        <Key ID="STR_KAT_Breathing_chest_tube_fail">
             <English>Chest Tube Action Failed</English>
         </Key>
         <Key ID="STR_KAT_Breathing_Scalpel_Use">
@@ -3318,7 +3318,7 @@
         <Key ID="STR_KAT_Breathing_righthemopneumothorax_display">
             <English>Right Side Chest Tube</English>
         </Key>
-        <Key ID="STR_KAT_Breathing_chestseal_display">
+        <Key ID="STR_KAT_Breathing_leftchestseal_display">
             <English>Left Side Chest Seal</English>
         </Key>
         <Key ID="STR_KAT_Breathing_rightchestseal_display">

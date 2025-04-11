@@ -26,7 +26,7 @@ class CfgVehicles {
     class kat_chestSealItem: Item_Base_F {
         scope = 2;
         scopeCurator = 2;
-        displayName= CSTRING(chestseal_item_display);
+        displayName= CSTRING(chestseal_display);
         author = "Katalam";
         vehicleClass = "Items";
         class TransportItems {

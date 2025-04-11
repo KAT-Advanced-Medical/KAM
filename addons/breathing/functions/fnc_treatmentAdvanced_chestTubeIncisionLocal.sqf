@@ -20,7 +20,7 @@
 params ["_medic", "_patient", "_side"];
 
 if (GVAR(SchestTube_ConsciousnessRequirement) == 1 && !(IS_UNCONSCIOUS(_patient))) exitWith {
-    private _output = LLSTRING(chestTube_fail);
+    private _output = LLSTRING(chest_tube_fail);
     [_output, 1.5, _medic] call ACEFUNC(common,displayTextStructured);
 };
 private _lidocaineCount = [_patient, "Lidocaine", false] call ACEFUNC(medical_status,getMedicationCount);
