@@ -2537,24 +2537,6 @@
             <Finnish>AAT-laite</Finnish>
             <Dutch>AAT kit</Dutch>
         </Key>
-        <Key ID="STR_KAT_Breathing_auscultateLung_display">
-            <English>Auscultate Lung Sounds</English>
-            <Czech>Vyšetřit plíce poslechem</Czech>
-            <French>Ausculter les sons pulmonaires</French>
-            <Spanish>Auscultar sonidos pulmonares</Spanish>
-            <Italian>Auscultare i suoni polmonari</Italian>
-            <Polish>Osłuchaj płuca</Polish>
-            <Portuguese>Auscultar sons pulmonares</Portuguese>
-            <Russian>Выслушивайте легочные шумы</Russian>
-            <German>Lungengeräusche abhören</German>
-            <Korean>폐음 청진</Korean>
-            <Japanese>肺音を聴診</Japanese>
-            <Chinese>聽診肺音</Chinese>
-            <Chinesesimp>听诊肺音</Chinesesimp>
-            <Turkish>Akciğer Seslerini Dinleyin</Turkish>
-            <Finnish>Kuuntele keuhkojen ääniä</Finnish>
-            <Dutch>Beluister de longen</Dutch>
-        </Key>
         <Key ID="STR_KAT_Breathing_basicSupplyCrate_display">
             <English>[KAM] General Items</English>
             <Czech>[KAM] Obecné předměty</Czech>
@@ -2743,24 +2725,6 @@
             <Turkish>Chest Seal</Turkish>
             <Finnish>Rintatiiviste</Finnish>
             <Dutch>Chest seal</Dutch>
-        </Key>
-        <Key ID="STR_KAT_Breathing_hemopneumothorax_display">
-            <English>Drain Fluid</English>
-            <Czech>Odsát tekutiny</Czech>
-            <French>Aspirer le fluide</French>
-            <Spanish>Drenar fluido</Spanish>
-            <Italian>Drenare il liquido</Italian>
-            <Polish>Drenaż opłucnej</Polish>
-            <Portuguese>Drenar fluido</Portuguese>
-            <Russian>Слить жидкость</Russian>
-            <German>Flüssigkeit ablassen</German>
-            <Korean>체액 배출</Korean>
-            <Japanese>胸腔ドレナージ</Japanese>
-            <Chinese>排出 胸腔積液</Chinese>
-            <Chinesesimp>排出 胸腔液体</Chinesesimp>
-            <Turkish>Sıvıyı Boşaltın</Turkish>
-            <Finnish>Tyhjennä neste</Finnish>
-            <Dutch>Vloeistof afvoeren</Dutch>
         </Key>
         <Key ID="STR_KAT_Breathing_hemopneumothorax_mm">
             <English>1x Hemopneumothorax</English>
@@ -3135,39 +3099,16 @@
             <Dutch>Standaard staat deze optie uit. Wanneer dit aanstaat zal een spanningspneumothorax of een hemopneumothorax ook een pneumothorax tonen in het medische menu.</Dutch>
         </Key>
         <Key ID="STR_KAT_Breathing_tensionpneumothoraxNCDKit_display">
-            <English>Needle Decompression (NCD Kit)</English>
-            <Czech>Dekompresní Jehla (NCD Kit)</Czech>
-            <French>Aiguille de décompression (NCD kit)</French>
-            <Spanish>Descomprensión con aguja (Kit NCD)</Spanish>
-            <Italian>Decompressione con ago (NCD Kit)</Italian>
-            <Polish>Igła dekompresyjna (NCD Kit)</Polish>
-            <Portuguese>Descompressão com Agulha (Kit NCD)</Portuguese>
-            <Russian>Декомпрессионная игла (NCD Набор)</Russian>
-            <German>Nadel Dekompression (NDK Kit)</German>
-            <Korean>바늘 감압(NCD 키트)</Korean>
-            <Japanese>胸腔穿刺減圧 (NCDキット)</Japanese>
-            <Chinese>針刺減壓（NCD套件）</Chinese>
-            <Chinesesimp>胸腔穿刺减压（NCD套件）</Chinesesimp>
-            <Finnish>Neulan dekompressio (NCD Kit)</Finnish>
-            <Dutch>Naalddecompressie kit (ND kit)</Dutch>
+            <English>Left Needle Decompression (NCD Kit)</English>
+        </Key>
+        <Key ID="STR_KAT_Breathing_righttensionpneumothoraxNCDKit_display">
+            <English>Right Needle Decompression (NCD Kit)</English>
         </Key>
         <Key ID="STR_KAT_Breathing_tensionpneumothorax_display">
-            <English>Needle Decompression</English>
-            <Czech>Dekompresní Jehla</Czech>
-            <French>Aiguille de décompression</French>
-            <Spanish>Descompresión con aguja</Spanish>
-            <Italian>Decompressione con ago</Italian>
-            <Polish>Igła dekompresyjna</Polish>
-            <Portuguese>Descompressão com Agulha</Portuguese>
-            <Russian>Декомпрессия иглы</Russian>
-            <German>Nadel Dekompression</German>
-            <Korean>바늘 감압</Korean>
-            <Japanese>胸腔穿刺減圧</Japanese>
-            <Chinese>針刺減壓</Chinese>
-            <Chinesesimp>胸腔穿刺减压</Chinesesimp>
-            <Turkish>İğne Dekompresyonu</Turkish>
-            <Finnish>Neulan dekompressio</Finnish>
-            <Dutch>Naalddecompressie</Dutch>
+            <English>Left Needle Decompression</English>
+        </Key>
+        <Key ID="STR_KAT_Breathing_righttensionpneumothorax_display">
+            <English>Right Needle Decompression</English>
         </Key>
         <Key ID="STR_KAT_Breathing_tensionpneumothorax_mm">
             <English>1x Tension Pneumothorax</English>
@@ -3220,7 +3161,7 @@
         <Key ID="STR_KAT_Breathing_incision_log">
             <English>%1 made an chest incision</English>
         </Key>
-        <Key ID="STR_KAT_Breathing_chest_tube_fail">
+        <Key ID="STR_KAT_Breathing_chesttube_fail">
             <English>Chest Tube Action Failed</English>
         </Key>
         <Key ID="STR_KAT_Breathing_Scalpel_Use">

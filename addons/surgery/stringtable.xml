@@ -1258,6 +1258,13 @@
         <Key ID="STR_KAT_Surgery_Ultra_Thorasic_Right_Tension">
             <English>Right Side Tension Pneumothorax</English>
         </Key>
+        <Key ID="STR_KAT_Surgery_Ultra_Thorasic_NoActivity">
+            <English>No Activity</English>
+            <Czech>Žádná činnost</Czech>
+            <French>Aucune activité</French>
+            <Japanese>活動なし</Japanese>
+            <Chinese>無活動</Chinese>
+        </Key>
         <Key ID="STR_KAT_Surgery_Ultra_Airway_Normal">
             <English>Normal</English>
             <Czech>Normální</Czech>
