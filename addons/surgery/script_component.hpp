@@ -1,5 +1,5 @@
 #define COMPONENT surgery
-#define COMPONENT_BEAUTIFIED KAT - Surgery
+#define COMPONENT_BEAUTIFIED Surgery
 #include "\x\kat\addons\main\script_mod.hpp"
 
 // #define DEBUG_MODE_FULL

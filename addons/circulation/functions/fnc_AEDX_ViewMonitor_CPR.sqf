@@ -51,7 +51,7 @@ private _dlg = uiNamespace getVariable ["KAT_Circulation_AEDX_Monitor_Display", 
 
     private _pads = false;
 
-    if !(GVAR(AEDX_MonitorTarget_Title) isEqualTo objNull) then {
+    if (GVAR(AEDX_MonitorTarget_Title) isNotEqualTo objNull) then {
         _pads = GVAR(AEDX_MonitorTarget_Title) getVariable [QGVAR(DefibrillatorPads_Connected), false];
     };
 
@@ -62,7 +62,7 @@ private _dlg = uiNamespace getVariable ["KAT_Circulation_AEDX_Monitor_Display", 
         (_dlg displayCtrl IDC_EKG_DISPLAY_MIDTEXT_TITLE) ctrlSetText "";
         private _ekgDisplay = QPATHTOF(ui\ekg_off.paa);
 
-        if !(GVAR(AEDX_MonitorTarget_Title) getVariable [QACEGVAR(medical,CPR_provider), objNull] isEqualTo objNull) then {
+        if (GVAR(AEDX_MonitorTarget_Title) getVariable [QACEGVAR(medical,CPR_provider), objNull] isNotEqualTo objNull) then {
             _ekgDisplay = QPATHTOF(ui\ekg_cpr.paa);
         } else {
             if (!(GVAR(AEDX_MonitorTarget_Title) getVariable [QGVAR(heartRestart), false]) && alive GVAR(AEDX_MonitorTarget_Title)) then {
@@ -125,8 +125,11 @@ private _dlg = uiNamespace getVariable ["KAT_Circulation_AEDX_Monitor_Display", 
 
         private _PRBar = _dlg displayCtrl IDC_DISPLAY_PULSERATEBAR_TITLE;
 
-        if (!(HAS_TOURNIQUET_APPLIED_ON(GVAR(AEDX_MonitorTarget_Title),_partIndex))) then {
-            if (GVAR(PulseRateReady)) then {
+        if (HAS_TOURNIQUET_APPLIED_ON(GVAR(AEDX_MonitorTarget_Title),_partIndex)) then {
+            _PRBar ctrlSetPosition [(ctrlPosition _PRBar) select 0, (ctrlPosition _PRBar) select 1, (ctrlPosition _PRBar) select 2, KAT_pxToScreen_H(71)];
+            _PRBar ctrlCommit 0;
+        } else {
+           if (GVAR(PulseRateReady)) then {
                 GVAR(PulseRateReady) = false;
                 private _pr = GVAR(AEDX_MonitorTarget_Title) getVariable [QACEGVAR(medical,heartRate), 0];
 
@@ -166,9 +169,6 @@ private _dlg = uiNamespace getVariable ["KAT_Circulation_AEDX_Monitor_Display", 
                     }, [], 0.1] call CBA_fnc_waitAndExecute;
                 };
             };
-        } else {
-            _PRBar ctrlSetPosition [(ctrlPosition _PRBar) select 0, (ctrlPosition _PRBar) select 1, (ctrlPosition _PRBar) select 2, KAT_pxToScreen_H(71)];
-            _PRBar ctrlCommit 0;
         };
     } else {
         (_dlg displayCtrl IDC_DISPLAY_PULSERATEBORDER_TITLE) ctrlShow false;
@@ -185,7 +185,7 @@ private _dlg = uiNamespace getVariable ["KAT_Circulation_AEDX_Monitor_Display", 
     private _pads = false;
     private _vitalsMonitor = false;
 
-    if !(GVAR(AEDX_MonitorTarget_Title) isEqualTo objNull) then {
+    if (GVAR(AEDX_MonitorTarget_Title) isNotEqualTo objNull) then {
         _pads = GVAR(AEDX_MonitorTarget_Title) getVariable [QGVAR(DefibrillatorPads_Connected), false];
         _vitalsMonitor = GVAR(AEDX_MonitorTarget_Title) getVariable [QGVAR(AED_X_VitalsMonitor_Connected), false];
     };
@@ -207,7 +207,7 @@ private _dlg = uiNamespace getVariable ["KAT_Circulation_AEDX_Monitor_Display", 
         (_dlg displayCtrl IDC_DISPLAY_SPO2_TITLE) ctrlSetText "---";
     };
 
-    if !(GVAR(AEDX_MonitorTarget_Title) getVariable [QACEGVAR(medical,CPR_provider), objNull] isEqualTo objNull) then {
+    if (GVAR(AEDX_MonitorTarget_Title) getVariable [QACEGVAR(medical,CPR_provider), objNull] isNotEqualTo objNull) then {
 
         private _rhythmHR = 0;
 
@@ -273,7 +273,7 @@ private _dlg = uiNamespace getVariable ["KAT_Circulation_AEDX_Monitor_Display", 
         (_dlg displayCtrl IDC_DISPLAY_SPO2_TITLE) ctrlSetText "---";
     };
 
-    private _hasEtco2Monitor = !(GVAR(AEDX_MonitorTarget_Title) getVariable [QEGVAR(breathing,etco2Monitor),[]] isEqualTo []); 
+    private _hasEtco2Monitor = (GVAR(AEDX_MonitorTarget_Title) getVariable [QEGVAR(breathing,etco2Monitor),[]] isNotEqualTo []); 
     private _etco2 = GET_ETCO2(GVAR(AEDX_MonitorTarget_Title));
     private _breathrate = GET_BREATHING_RATE(GVAR(AEDX_MonitorTarget_Title));
 

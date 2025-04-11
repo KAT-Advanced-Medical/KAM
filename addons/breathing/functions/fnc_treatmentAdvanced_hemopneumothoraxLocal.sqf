@@ -27,10 +27,14 @@ if (_activeChestSeal select _side) then {
 };
 
 private _ht = _patient getVariable [QEGVAR(circulation,ht), []];
-private _tensionIndex = _ht find "tension";
-if (_tensionIndex > -1) then {
-    _ht deleteAt _tensionIndex;
-    _patient setVariable [QEGVAR(circulation,ht), _ht, true];
+_ht deleteAt (_ht find "tension");
+_patient setVariable [QEGVAR(circulation,ht), _ht, true];
+
+if ((_patient getVariable [QGVAR(pneumothorax), 0] == 0) && !(_patient getVariable [QGVAR(hemopneumothorax), false]) && !(_patient getVariable [QGVAR(tensionpneumothorax), false])) then {
+    [_patient, 0, 0, "ptx_tension", true] call EFUNC(circulation,updateBloodPressureChange);
+    if (GVAR(clearChestSealAfterTreatment)) then {
+        _patient setVariable [QGVAR(activeChestSeal), false, true];
+    };
 };
 
 private _pneumothorax = _patient getVariable [QGVAR(pneumothorax), [0, 0]];

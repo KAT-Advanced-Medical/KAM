@@ -41,6 +41,8 @@
 #define GETGVAR(var1,var2) GETMVAR(GVAR(var1),var2)
 #define GETEGVAR(var1,var2,var3) GETMVAR(EGVAR(var1,var2),var3)
 
+#define QGETGVAR(var1,var2) QUOTE(GETMVAR(QGVAR(var1),var2))
+
 #define ARR_SELECT(ARRAY,INDEX,DEFAULT) (if (count ARRAY > INDEX) then {ARRAY select INDEX} else {DEFAULT})
 #define ANY_OF(ARRAY,CONDITION) (ARRAY findIf {CONDITION} != -1)
 
@@ -349,3 +351,7 @@
 
 #define IS_AIRPOISONED(unit) (unit getVariable [QEGVAR(chemical,airPoisoning), false])
 #define IN_TEARGAS(unit) (unit getVariable [QEGVAR(chemical,CSGas), 0])
+
+//Ophthalmology
+#define GET_DUST_INJURY(unit) ((unit getVariable [QEGVAR(ophthalmology,dustInjuryLight), 0]) + (unit getVariable [QEGVAR(ophthalmology,dustInjuryHeavy), 0]))
+#define GET_EYE_INJURIES(unit) (unit getVariable [QEGVAR(ophthalmology,eyeInjuries), [1,1]])
