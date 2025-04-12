@@ -1796,6 +1796,7 @@
         <Key ID="STR_KAT_Airway_cba_name">
             <English>KAT - ADV Medical: Airway</English>
             <Japanese>KAM - 気道 (Airway)</Japanese>
+            <French>KAT - ADV Medical : Voies respiratoires</French>
         </Key>
         <Key ID="STR_KAT_Airway_checkAirway">
             <English>Check Airway</English>

@@ -2706,6 +2706,7 @@
         <Key ID="STR_KAT_Breathing_cba_name">
             <English>KAT - ADV Medical: Breathing</English>
             <Japanese>KAM - 呼吸器系 (Breathing)</Japanese>
+            <French>KAT - ADV Medical : Respiration</French>
         </Key>
         <Key ID="STR_KAT_Breathing_chestseal_desc">
             <English>Chest Seal is engineered to treat, seal, and reseal open chest wounds under most circumstances.</English>

@@ -1480,6 +1480,7 @@
         <Key ID="STR_KAT_Surgery_cba_name">
             <English>KAT - ADV Medical: Surgery</English>
             <Japanese>KAM - 外科 (Surgery)</Japanese>
+            <French>KAT - ADV Medical : Chirurgie</French>
         </Key>
         <Key ID="STR_KAT_Surgery_fracture_check">
             <English>Check Fracture</English>

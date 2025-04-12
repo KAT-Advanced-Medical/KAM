@@ -275,6 +275,7 @@
         <Key ID="STR_KAT_GUI_cba_name">
             <English>KAT - ADV Medical: GUI</English>
             <Japanese>KAM - GUI</Japanese>
+            <French>KAT - ADV Medical : GUI</French>
         </Key>
     </Package>
 </Project>
