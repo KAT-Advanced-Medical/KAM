@@ -27,7 +27,7 @@
             <German>Katmin Cavalry Limited</German>
             <Japanese>Katmin Cavalry Limited</Japanese>
             <Chinese>Katmin Cavalry Limited</Chinese>
-            <Chinesesimp>Katmin骑兵有限公司</Chinesesimp>
+            <Chinesesimp>Katmin 骑兵限量</Chinesesimp>
         </Key>
         <Key ID="STR_KAT_Watch_KatminDescription">
             <English>Watch with Vital Monitoring Capabilities</English>
@@ -50,7 +50,7 @@
             <German>Katmin K500</German>
             <Japanese>Katmin K500</Japanese>
             <Chinese>Katmin K500</Chinese>
-            <Chinesesimp>凯敏K500</Chinesesimp>
+            <Chinesesimp>Katmin K500</Chinesesimp>
             <Dutch>Katmin k500</Dutch>
         </Key>
         <Key ID="STR_KAT_Watch_RangerDescription">
@@ -240,7 +240,7 @@
             <Italian>Katmin Jump Standard</Italian>
             <German>Katmin Jump Standard</German>
             <Japanese>Katmin Jump Standard</Japanese>
-            <Chinesesimp>Katmin跳跃标准</Chinesesimp>
+            <Chinesesimp>Katmin 跳跃标准</Chinesesimp>
         </Key>
         <Key ID="STR_KAT_Watch_ShowKATWatch_Setting">
             <English>Show KATMIN Watch</English>
