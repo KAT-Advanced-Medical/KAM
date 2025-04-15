@@ -1,6 +1,6 @@
 #define COMPONENT medical_feedback
 #define COMPONENT_BEAUTIFIED Medical Feedback
-#include "\z\ace\addons\main\script_mod.hpp"
+#include "\x\kat\addons\main\script_mod.hpp"
 
 // #define DEBUG_MODE_FULL
 // #define DISABLE_COMPILE_CACHE
@@ -15,8 +15,8 @@
 #endif
 
 #include "\a3\ui_f\hpp\defineCommonGrids.inc"
-#include "\z\ace\addons\medical_engine\script_macros_medical.hpp"
-#include "\z\ace\addons\main\script_macros.hpp"
+#include "\x\kat\addons\medical_engine\script_macros_medical.hpp"
+#include "\x\kat\addons\main\script_macros.hpp"
 
 #define EMPTY_SOUND {"A3\Sounds_F\dummysound.wss",1,1}
 #define NAMESPACE_NULL locationNull

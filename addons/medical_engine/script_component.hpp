@@ -1,6 +1,6 @@
 #define COMPONENT medical_engine
 #define COMPONENT_BEAUTIFIED Medical Engine
-#include "\z\ace\addons\main\script_mod.hpp"
+#include "\x\kat\addons\main\script_mod.hpp"
 
 // #define DEBUG_MODE_FULL
 // #define DISABLE_COMPILE_CACHE
@@ -14,9 +14,9 @@
     #define DEBUG_SETTINGS DEBUG_SETTINGS_MEDICAL_ENGINE
 #endif
 
-#include "\z\ace\addons\medical_engine\script_macros_medical.hpp"
-#include "\z\ace\addons\main\script_macros.hpp"
-#include "\z\ace\addons\medical_engine\script_macros_config.hpp"
+#include "\x\kat\addons\medical_engine\script_macros_medical.hpp"
+#include "\x\kat\addons\main\script_macros.hpp"
+#include "\x\kat\addons\medical_engine\script_macros_config.hpp"
 
 #define PRELOAD_CLASS(class) \
     TRACE_1("Starting preload",class);\
