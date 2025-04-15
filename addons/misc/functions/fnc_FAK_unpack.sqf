@@ -121,7 +121,7 @@ private _containerFAK = "";
     };
 } forEach _ammoCount;
 
-if !(_lowestAmmoCount < 257) exitWith {};
+if (_lowestAmmoCount >= 257) exitWith {};
 
 private _unitContainer = [_containerFAK, _unit] call _fnc_getUnitContainer;
 
