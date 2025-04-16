@@ -1885,7 +1885,7 @@
             <English>KAT - ADV Medical: Misc</English>
             <Japanese>KAM - その他</Japanese>
             <French>KAT - ADV Medical : Divers</French>
-            <German>KAT - ADV Medical: Anderes</German>
+            <German>KAT - ADV Medical: Sonstiges</German>
         </Key>
         <Key ID="STR_KAT_Misc_incompatibilityWarning_Desc">
             <English>[KAM WARNING] Incompatible addon(s) that could negatively affect correct functionality detected. KAT - Advanced Medical REWRITE Development Team strongly advises to remove these addons: %1</English>

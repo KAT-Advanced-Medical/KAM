@@ -553,7 +553,7 @@
             <Japanese>酸素供給機から切断しました</Japanese>
             <Chinese>氧氣罐斷開</Chinese>
             <Chinesesimp>氧气罐断开</Chinesesimp>
-            <German>Sauerstofftank diskonnektiert</German>
+            <German>Sauerstofftank wurde abgeklemmt</German>
         </Key>
         <Key ID="STR_KAT_Breathing_PersonalOxygen_Display">
             <English>Personal Oxygen Tank</English>
@@ -990,7 +990,7 @@
             <Japanese>個人用酸素供給機を切断</Japanese>
             <Chinese>斷開個人氧氣</Chinese>
             <Chinesesimp>断开个人氧气</Chinesesimp>
-            <German>Persönlichen Sauerstofftank diskonnektieren</German>
+            <German>Persönlichen Sauerstofftank abklemmen</German>
         </Key>
         <Key ID="STR_KAT_Breathing_Remove_NasalCannula_Log">
             <English>%1 removed Nasal Cannula</English>

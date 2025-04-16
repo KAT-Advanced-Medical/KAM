@@ -5,25 +5,25 @@
             <English>Eye Covers are used to treat heavy injury to the eye</English>
             <French>Les caches-œil sont utilisés pour traiter les lésions graves de l'œil.</French>
             <Japanese>眼球保護帯は重傷となった目の治療に使用します</Japanese>
-            <German>Ein Augenschutz wird zur Behandlung von schweren Augenverletzungen verwendet</German>
+            <German>Ein Augenschild wird zur Behandlung von schweren Augenverletzungen verwendet</German>
         </Key>
         <Key ID="STR_KAT_Ophthalmology_EyeCover_Item">
             <English>Eye Shield</English>
             <French>Protection oculaire</French>
             <Japanese>眼球保護帯</Japanese>
-            <German>Augenschutz</German>
+            <German>Augenschild</German>
         </Key>
         <Key ID="STR_KAT_Ophthalmology_EyeCover_Left">
             <English>Left EyeCover</English>
             <French>Œil gauche Couvert</French>
             <Japanese>左眼球保護帯</Japanese>
-            <German>Linker Augenschutz</German>
+            <German>Linkes Augenschild</German>
         </Key>
         <Key ID="STR_KAT_Ophthalmology_EyeCover_Right">
             <English>Right EyeCover</English>
             <French>Œil droit Couvert</French>
             <Japanese>右眼球保護帯</Japanese>
-            <German>Rechter Augenschutz</German>
+            <German>Rechtes Augenschild</German>
         </Key>
         <Key ID="STR_KAT_Ophthalmology_blink_action">
             <English>Blinking</English>
@@ -47,25 +47,25 @@
             <English>Applying</English>
             <French>Application</French>
             <Japanese>装着中</Japanese>
-            <German>Wende an</German>
+            <German>Anwenden</German>
         </Key>
         <Key ID="STR_KAT_Ophthalmology_eyeshield_display">
             <English>Apply Eye Shield</English>
             <French>Appliquer une protection oculaire</French>
             <Japanese>眼帯を装着</Japanese>
-            <German>Augenschutz anwenden</German>
+            <German>Augenschild anwenden</German>
         </Key>
         <Key ID="STR_KAT_Ophthalmology_eyeshield_item">
             <English>Eye Shield</English>
             <French>Protection oculaire</French>
             <Japanese>眼帯</Japanese>
-            <German>Augenschutz</German>
+            <German>Augenschild</German>
         </Key>
         <Key ID="STR_KAT_Ophthalmology_eyewash_action">
             <English>Washing</English>
             <French>Lavage</French>
             <Japanese>洗浄中</Japanese>
-            <German>Spüle</German>
+            <German>Spülen</German>
         </Key>
         <Key ID="STR_KAT_Ophthalmology_eyewash_display">
             <English>Wash eyes with saline</English>
@@ -89,7 +89,7 @@
             <English>Eyewash bottles allow an individual to flush the injured area immediately</English>
             <French>Les flacons de rinçage oculaire permettent à une personne de rincer immédiatement la zone blessée.</French>
             <Japanese>外傷部をすぐに洗い流すことができる洗眼ボトル</Japanese>
-            <German>Augenspülungsflaschen ermöglichen das sofortige ausspülen von verletzten Augen</German>
+            <German>Augenspühlungen ermöglichen das sofortige ausspülen von verletzten Augen</German>
         </Key>
         <Key ID="STR_KAT_Ophthalmology_eyewasher_display">
             <English>Eye Washer</English>
@@ -131,7 +131,7 @@
             <English>Treatment time of Eye Wash</English>
             <French>Durée de traitement du lavage des yeux</French>
             <Japanese>洗眼の所要時間</Japanese>
-            <German>Dauer der Augenspülung</German>
+            <German>Anwendungszeit der Augenspülung</German>
         </Key>
         <Key ID="STR_KAT_Ophthalmology_setting_probability_dust">
             <English>Probability to get eye injury</English>

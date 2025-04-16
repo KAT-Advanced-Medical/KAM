@@ -8,7 +8,7 @@
             <Japanese>基本型バイタル診断キットを有効化</Japanese>
             <Chinese>啟用基本生命體徵套件</Chinese>
             <Chinesesimp>启用基本生命体征套件</Chinesesimp>
-            <German>Aktiviere Simples Vitalwerte-Kit</German>
+            <German>Aktiviere Einfaches Vitalwerte-Kit</German>
         </Key>
         <Key ID="STR_KAT_Vitals_BASIC_DIAGNOSTIC_TIME">
             <English>Basic Vitals Kit Time</English>
@@ -83,7 +83,7 @@
             <Japanese>基本型バイタル診断キット</Japanese>
             <Chinese>基本生命體徵套件</Chinese>
             <Chinesesimp>基本生命体征套件</Chinesesimp>
-            <German>Simples Vitalwerte-Kit</German>
+            <German>Einfaches Vitalwerte-Kit</German>
         </Key>
         <Key ID="STR_KAT_Vitals_basicDiagnostic_progress">
             <English>Assessing Patient...</English>
