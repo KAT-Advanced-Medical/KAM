@@ -2770,6 +2770,7 @@
             <English>CWMP Settings</English>
             <French>Paramètres CWMP</French>
             <Japanese>戦闘傷病治療薬(CWMP)設定</Japanese>
+            <German>CWMP Einstellungen</German>
         </Key>
         <Key ID="STR_KAT_Pharma_SubCategory_Caffeine">
             <English>Caffeine Settings</English>
@@ -3515,6 +3516,7 @@
             <English>KAT - ADV Medical: Pharmacy</English>
             <Japanese>KAM - 薬学 (Pharmacy)</Japanese>
             <French>KAT - ADV Medical : Pharmacie</French>
+            <German>KAT - ADV Medical: Medikamente</German>
         </Key>
         <Key ID="STR_KAT_Pharma_coagulation_Bandaged">
             <English>Blood clotting temporarily closed a wound on %1</English>
@@ -3769,11 +3771,13 @@
             <English>Allow using CWMP</English>
             <French>Autoriser l'utilisation du CWMP</French>
             <Japanese>戦闘傷病治療薬(CWMP)の許可</Japanese>
+            <German>Erlaube die Verwendung von CWMP</German>
         </Key>
         <Key ID="STR_KAT_Pharma_medLvl_Caffeine">
             <English>Allow using Caffeine</English>
             <French>Autoriser l'utilisation de la caféine</French>
             <Japanese>カフェインの許可</Japanese>
+            <German>Erlaube die Verwendung von Koffein</German>
         </Key>
         <Key ID="STR_KAT_Pharma_medLvl_Carbonate">
             <English>Allow using Carbonate</English>
@@ -4185,11 +4189,13 @@
             <English>Treatment time for CWMP</English>
             <French>Temps de traitement pour le CWMP</French>
             <Japanese>戦闘傷病治療薬(CWMP)の所要時間</Japanese>
+            <German>Anwendungszeit für CWMP</German>
         </Key>
         <Key ID="STR_KAT_Pharma_treatmentTime_Caffeine">
             <English>Treatment time for Caffeine</English>
             <French>Temps de traitement pour la caféine</French>
             <Japanese>カフェインの所要時間</Japanese>
+            <German>Anwendungszeit für Koffein</German>
         </Key>
         <Key ID="STR_KAT_Pharma_treatmentTime_Carbonate">
             <English>Treatment time for Carbonate</English>

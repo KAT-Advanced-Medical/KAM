@@ -359,6 +359,7 @@
             <Japanese>気道はひどく水膨れしている</Japanese>
             <Chinese>氣道嚴重膨脹</Chinese>
             <Chinesesimp>气道严重膨胀</Chinesesimp>
+            <German>Die Atemwege sind stark verätzt</German>
         </Key>
         <Key ID="STR_KAT_Airway_AirwayStatus_mitigatedObstruction">
             <English>Obstruction is temporarily mitigated</English>
@@ -1797,6 +1798,7 @@
             <English>KAT - ADV Medical: Airway</English>
             <Japanese>KAM - 気道 (Airway)</Japanese>
             <French>KAT - ADV Medical : Voies respiratoires</French>
+            <German>KAT - ADV Medical:Atemwege</German>
         </Key>
         <Key ID="STR_KAT_Airway_checkAirway">
             <English>Check Airway</English>
@@ -1842,6 +1844,7 @@
             <French>%1 voies aériennes contrôlées : Fortement cloquées</French>
             <Japanese>%1 が気道を確認: ひどい水膨れ</Japanese>
             <Chinesesimp>%1 条检查气道: 严重起泡</Chinesesimp>
+            <German>%1 überprüfte die Atemwege: Stark verätzt</German>
         </Key>
         <Key ID="STR_KAT_Airway_headTurning_begin">
             <English>Begin Head Turning</English>

@@ -96,6 +96,7 @@
             <Japanese>JCAD</Japanese>
             <Chinese>JCAD</Chinese>
             <Chinesesimp>JCAD</Chinesesimp>
+            <German>JCAD</German>
         </Key>
         <Key ID="STR_KAT_Chemical_ChemicalDetector_Off">
             <English>OFF</English>
@@ -104,6 +105,7 @@
             <Japanese>オフ</Japanese>
             <Chinese>關閉</Chinese>
             <Chinesesimp>关闭</Chinesesimp>
+            <German>AUS</German>
         </Key>
         <Key ID="STR_KAT_Chemical_DisableDetectorSound">
             <English>Disable Warning Tone</English>
@@ -112,6 +114,7 @@
             <Japanese>警告音を無効化</Japanese>
             <Chinese>停用警告音</Chinese>
             <Chinesesimp>禁用警告音</Chinesesimp>
+            <German>Warnton ausschalten</German>
         </Key>
         <Key ID="STR_KAT_Chemical_EnableDetector">
             <English>Turn On Detector</English>
@@ -120,6 +123,7 @@
             <Japanese>検知器をつける</Japanese>
             <Chinese>打開探測器</Chinese>
             <Chinesesimp>打开探测器</Chinesesimp>
+            <German>Detektor einschalten</German>
         </Key>
         <Key ID="STR_KAT_Chemical_EnableDetectorSound">
             <English>Enable Warning Tone</English>
@@ -128,6 +132,7 @@
             <Japanese>警告音を有効化</Japanese>
             <Chinese>啟用警告音</Chinese>
             <Chinesesimp>启用警告音</Chinesesimp>
+            <German>Warnton einschalten</German>
         </Key>
         <Key ID="STR_KAT_Chemical_GasBox_Displayname">
             <English>[ACE] 82mm Gas Rounds Box</English>
@@ -372,6 +377,7 @@
             <Czech>Slzný plyn (Level 0)</Czech>
             <French>Gaz lacrymogène (Niveau 0)</French>
             <Japanese>催涙ガス (レベル 0)</Japanese>
+            <German>Tränengas (Level 0)</German>
         </Key>
         <Key ID="STR_KAT_Chemical_Lvl1_Gas">
             <English>Toxic gas (Level 1)</English>
@@ -645,6 +651,7 @@
             <French>Perte d'endurance avec l'utilisation du masque à gaz</French>
             <Japanese>ガスマスク使用時のスタミナ減少を有効化</Japanese>
             <Chinese>啟用使用防毒面具時的體力流失</Chinese>
+            <German>Ausdauerverlust bei der Nutzung von Gasmasken aktivieren</German>
         </Key>
         <Key ID="STR_KAT_Chemical_SETTING_infectionTime">
             <English>Time until infection</English>
@@ -687,6 +694,7 @@
             <Japanese>中毒状態を表示</Japanese>
             <Chinese>顯示中毒</Chinese>
             <Chinesesimp>显示中毒</Chinesesimp>
+            <German>Vergiftung anzeigen</German>
         </Key>
         <Key ID="STR_KAT_Chemical_SETTING_showPoisoning_DESC">
             <English>Determines if poisoning and intoxication is shown in the medical menu</English>
@@ -695,6 +703,7 @@
             <Japanese>中毒(poisoningとintoxication)状態を医療メニューに表示するかどうかを定義します</Japanese>
             <Chinese>確定醫療選單中是否顯示中毒</Chinese>
             <Chinesesimp>确定医疗菜单中是否显示中毒</Chinesesimp>
+            <German>Bestimmt, ob Vergiftungen im Behandlungsmenü angezeigt werden</German>
         </Key>
         <Key ID="STR_KAT_Chemical_TakeOffGasMask">
             <English>Take off gas mask</English>
@@ -862,6 +871,7 @@
             <English>KAT - ADV Medical: Chemical</English>
             <Japanese>KAM - 化学戦 (Chemical)</Japanese>
             <French>KAT - ADV Medical : Chimique</French>
+            <German>KAT - ADV Medical: Chemie</German>
         </Key>
         <Key ID="STR_KAT_Chemical_giveGasMask_action">
             <English>Put on gas mask</English>
