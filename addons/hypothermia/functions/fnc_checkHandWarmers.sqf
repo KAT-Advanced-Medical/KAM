@@ -15,7 +15,7 @@
  * Public: No
  */
 
-params ["_target"];
+params ["_player", "_target"];
 
 private _warmers = _target getVariable [QGVAR(handWarmers), [0,0,0,0,0,0]];
 _warmers params ["_head", "_body", "_larm", "_rarm", "_lleg", "_rleg"];
