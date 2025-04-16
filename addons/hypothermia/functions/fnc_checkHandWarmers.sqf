@@ -4,7 +4,8 @@
  * Checks handwarmer status
  *
  * Arguments:
- * 0: Patient <OBJECT>
+ * 0: Player <OBJECT>
+ * 1: Target <OBJECT>
  *
  * Return Value:
  * None
