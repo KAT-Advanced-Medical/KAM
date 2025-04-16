@@ -10,7 +10,7 @@
  * None
  *
  * Example:
- * [patient] call kat_hypothermia_fnc_checkHandWarmers;
+ * [player, cursorObject] call kat_hypothermia_fnc_checkHandWarmers;
  *
  * Public: No
  */
