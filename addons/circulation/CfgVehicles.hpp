@@ -191,9 +191,6 @@ class CfgVehicles {
             MACRO_ADDITEM(KAT_Empty_bloodIV_250,20);
             MACRO_ADDITEM(kat_crossPanel,5);
         };
-        class TransportMagazines {
-            MACRO_ADDMAGAZINE(kat_Painkiller,10);
-        };
     };
     class kat_medicalSupplyCrate: ACE_medicalSupplyCrate {
         displayName = CSTRING(bloodbank);
