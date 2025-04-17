@@ -186,6 +186,7 @@ class CfgVehicles {
         class TransportItems {
             MACRO_ADDITEM(kat_X_AED,1);
             MACRO_ADDITEM(kat_AED,1);
+            MACRO_ADDITEM(kat_BPCuff,2);
             MACRO_ADDITEM(KAT_Empty_bloodIV_500,10);
             MACRO_ADDITEM(KAT_Empty_bloodIV_250,20);
             MACRO_ADDITEM(kat_crossPanel,5);
