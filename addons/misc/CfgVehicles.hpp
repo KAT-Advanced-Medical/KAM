@@ -145,7 +145,6 @@ class CfgVehicles {
             //pharma
             MACRO_ADDITEM(kat_IO_FAST,15);
             MACRO_ADDITEM(kat_IV_16,15);
-            MACRO_ADDITEM(kat_eyecovers,15);
             //surgery
             MACRO_ADDITEM(kat_ultrasound,15);
             //vitals
