@@ -225,6 +225,9 @@ class CfgVehicles {
             MACRO_ADDITEM(kat_bloodIV_AB_250,7);
             MACRO_ADDITEM(kat_bloodIV_AB_N_250,7);
         };
+        class TransportMagazines {
+            MACRO_ADDMAGAZINE(kat_Painkiller,5);
+        };
     };
 
     class LandVehicle;
