@@ -77,6 +77,57 @@ class CfgVehicles {
             MACRO_ADDMAGAZINE(kat_Bubble_Wrap,15);
         };
     };
+    class kat_basicSupplyCrate: ACE_medicalSupplyCrate {
+        displayName = CSTRING(basicSupplyCrate_display);
+        class TransportItems {
+            //airway
+            MACRO_ADDITEM(kat_larynx,15);
+            MACRO_ADDITEM(kat_guedel,15);
+            MACRO_ADDITEM(kat_accuvac,2);
+            MACRO_ADDITEM(kat_suction,10);
+            //breathing
+            MACRO_ADDITEM(kat_Pulseoximeter,5);
+            MACRO_ADDITEM(kat_chestSeal,15);
+            MACRO_ADDITEM(kat_aatKit,10);
+            MACRO_ADDITEM(kat_ncdKit,10);
+            MACRO_ADDITEM(kat_stethoscope,2);
+            MACRO_ADDITEM(kat_BVM,5);
+            MACRO_ADDITEM(kat_pocketBVM,5);
+            //circulation
+            MACRO_ADDITEM(KAT_Empty_bloodIV_250,7);
+            MACRO_ADDITEM(KAT_Empty_bloodIV_500,7);
+            MACRO_ADDITEM(kat_AED,2);
+            MACRO_ADDITEM(kat_X_AED,2);
+            MACRO_ADDITEM(kat_crosspanel,5);
+            MACRO_ADDITEM(kat_BPCuff,5);
+            //stretcher
+            MACRO_ADDITEM(kat_helistretcher,5);
+            MACRO_ADDITEM(kat_stretcherBag,5);
+            //ophthalmology
+            MACRO_ADDITEM(kat_eyecovers,15);
+            //pharma
+            MACRO_ADDITEM(kat_IO_FAST,15);
+            MACRO_ADDITEM(kat_IV_16,15);
+            MACRO_ADDITEM(kat_eyecovers,15);
+            //surgery
+            MACRO_ADDITEM(kat_ultrasound,15);
+            //vitals
+            MACRO_ADDITEM(kat_basicDiagnostic,5);
+        };
+        class TransportMagazines {
+            //breathing
+            MACRO_ADDMAGAZINE(kat_oxygenTank_150,2);
+            MACRO_ADDMAGAZINE(kat_oxygenTank_300,2);
+            //misc
+            MACRO_ADDMAGAZINE(kat_Bubble_Wrap,15);
+            //ophthalmology
+            MACRO_ADDMAGAZINE(KAT_Eyewasher,15);
+            //pharmacy
+            MACRO_ADDMAGAZINE(kat_Carbonate,15);
+            MACRO_ADDMAGAZINE(kat_Painkiller,15);
+            MACRO_ADDMAGAZINE(kat_Caffeine,15);
+        };
+    };
 
     class Man;
     class CAManBase: Man {
