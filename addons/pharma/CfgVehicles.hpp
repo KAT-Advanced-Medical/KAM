@@ -36,6 +36,7 @@ class CfgVehicles {
             MACRO_ADDITEM(kat_nitroglycerin,20);
             MACRO_ADDITEM(kat_norepinephrine,20);
             MACRO_ADDITEM(kat_phenylephrine,20);
+            MACRO_ADDITEM(kat_phenylephrineAuto,20);
             MACRO_ADDITEM(kat_TXA,20);
             MACRO_ADDITEM(kat_ketamine,20);
             MACRO_ADDITEM(kat_fentanyl,20);
@@ -44,9 +45,15 @@ class CfgVehicles {
             MACRO_ADDITEM(kat_flumazenil,20);
             MACRO_ADDITEM(kat_etomidate,20);
             MACRO_ADDITEM(kat_EACA,20);
+            MACRO_ADDITEM(kat_epinephrineIV,20);
+            MACRO_ADDITEM(kat_coag_sense,2);
         };
         class TransportMagazines {
             MACRO_ADDMAGAZINE(kat_Carbonate,10);
+            MACRO_ADDMAGAZINE(kat_Painkiller,20);
+            MACRO_ADDMAGAZINE(kat_Pervitin,10);
+            MACRO_ADDMAGAZINE(kat_Caffeine,15);
+            MACRO_ADDMAGAZINE(kat_Penthrox,15);
         };
     };
     class kat_pharmaMedicalCrate: ACE_medicalSupplyCrate {
