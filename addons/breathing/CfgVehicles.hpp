@@ -40,6 +40,7 @@ class CfgVehicles {
             MACRO_ADDITEM(kat_Pulseoximeter,3);
             MACRO_ADDITEM(kat_chestSeal,25);
             MACRO_ADDITEM(kat_aatKit,10);
+            MACRO_ADDITEM(kat_ncdKit,10);
             MACRO_ADDITEM(kat_stethoscope,5);
             MACRO_ADDITEM(kat_BVM,5);
             MACRO_ADDITEM(kat_pocketBVM,5);
@@ -48,6 +49,7 @@ class CfgVehicles {
         class TransportMagazines {
             MACRO_ADDMAGAZINE(kat_oxygenTank_150,2);
             MACRO_ADDMAGAZINE(kat_oxygenTank_300,2);
+            MACRO_ADDMAGAZINE(kat_personal_oxygen,2);
         };
     };
     class kat_basicSupplyCrate: ACE_medicalSupplyCrate {
