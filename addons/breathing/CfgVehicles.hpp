@@ -37,13 +37,13 @@ class CfgVehicles {
     class ACE_medicalSupplyCrate;
     class ACE_medicalSupplyCrate_advanced: ACE_medicalSupplyCrate {
         class TransportItems {
-            MACRO_ADDITEM(kat_Pulseoximeter,3);
+            MACRO_ADDITEM(kat_Pulseoximeter,5);
             MACRO_ADDITEM(kat_chestSeal,25);
             MACRO_ADDITEM(kat_aatKit,10);
             MACRO_ADDITEM(kat_ncdKit,10);
-            MACRO_ADDITEM(kat_stethoscope,5);
-            MACRO_ADDITEM(kat_BVM,5);
-            MACRO_ADDITEM(kat_pocketBVM,5);
+            MACRO_ADDITEM(kat_stethoscope,2);
+            MACRO_ADDITEM(kat_BVM,2);
+            MACRO_ADDITEM(kat_pocketBVM,2);
             MACRO_ADDITEM(kat_nasal,10);
         };
         class TransportMagazines {
