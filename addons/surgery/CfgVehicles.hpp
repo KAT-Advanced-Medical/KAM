@@ -5,6 +5,17 @@ class CfgVehicles {
     class Items_base_F;
     class WeaponHolder_Single_limited_item_F;
     class ACE_medicalSupplyCrate;
+    class ACE_medicalSupplyCrate_advanced: ACE_medicalSupplyCrate {
+        class TransportItems {
+            MACRO_ADDITEM(kat_scalpel,5);
+            MACRO_ADDITEM(kat_retractor,5);
+            MACRO_ADDITEM(kat_clamp,5);
+            MACRO_ADDITEM(kat_plate,15);
+            MACRO_ADDITEM(kat_vacuum,15);
+            MACRO_ADDITEM(kat_ultrasound,5);
+            MACRO_ADDITEM(kat_reboa,10);
+        };
+    };
 
     class kat_surgerySupplyCrate: ACE_medicalSupplyCrate {
         displayName = CSTRING(surgeryToolbox);
