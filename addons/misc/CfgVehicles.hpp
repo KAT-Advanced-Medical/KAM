@@ -77,6 +77,43 @@ class CfgVehicles {
             MACRO_ADDMAGAZINE(kat_Bubble_Wrap,15);
         };
     };
+    class kat_miscSupplyCrate: ACE_medicalSupplyCrate {
+        displayName = CSTRING(miscSupplyCrate_display);
+        class TransportItems {
+            //chemical
+            MACRO_ADDITEM(kat_gasmaskFilter,15);
+            MACRO_ADDITEM(kat_sealant,15);
+            MACRO_ADDITEM(KAT_ChemicalDetector,15);
+            //misc.FAK
+            MACRO_ADDITEM(kat_IFAK,15);
+            MACRO_ADDITEM(kat_AFAK,15);
+            MACRO_ADDITEM(kat_MFAK,15);
+            //misc.Armband
+            MACRO_ADDITEM(kat_Armband_Red_Cross_Item,5);
+            MACRO_ADDITEM(kat_Armband_Medic_Item,5);
+            MACRO_ADDITEM(kat_Armband_Doctor_Item,5);
+            MACRO_ADDITEM(kat_Armband_Kat_Item,5);
+            MACRO_ADDITEM(kat_Armband_Red_Cross_NVG,5);
+            MACRO_ADDITEM(kat_Armband_Medic_NVG,5);
+            MACRO_ADDITEM(kat_Armband_Doctor_NVG,5);
+            MACRO_ADDITEM(kat_Armband_Kat_NVG,5);
+            //stretcher
+            MACRO_ADDITEM(kat_helistretcher,5);
+            MACRO_ADDITEM(kat_stretcherBag,5);
+            MACRO_ADDITEM(kat_CarryStretcherBag,5);
+            //watch
+            MACRO_ADDITEM(KAT_Katmin,15);
+            MACRO_ADDITEM(KAT_Cavmin,15);
+            MACRO_ADDITEM(KAT_STS,15);
+            MACRO_ADDITEM(KAT_Ranger,15);
+        };
+        class TransportMagazines {
+            //misc
+            MACRO_ADDMAGAZINE(kat_Bubble_Wrap,15);
+            //breathing
+            MACRO_ADDMAGAZINE(kat_personal_oxygen,15);
+        };
+    };
     class kat_basicSupplyCrate: ACE_medicalSupplyCrate {
         displayName = CSTRING(basicSupplyCrate_display);
         class TransportItems {

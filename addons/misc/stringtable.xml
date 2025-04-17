@@ -1898,6 +1898,10 @@
             <Finnish>[KAM] Yleiset kohteet</Finnish>
             <Dutch>[KAM] Algemene items</Dutch>
         </Key>
+        <Key ID="STR_KAT_Misc_miscSupplyCrate_display">
+            <English>[KAM] Misc Items</English>
+            <Japanese>[KAM] その他物資箱</Japanese>
+        </Key>
         <Key ID="STR_KAT_Misc_cba_name">
             <English>KAT - ADV Medical: Misc</English>
             <Japanese>KAM - その他</Japanese>
