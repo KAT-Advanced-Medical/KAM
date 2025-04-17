@@ -59,22 +59,24 @@ class CfgVehicles {
     class kat_pharmaMedicalCrate: ACE_medicalSupplyCrate {
         displayName = CSTRING(pharmaSupplyCrate_displayName);
         class TransportItems {
-            MACRO_ADDITEM(kat_amiodarone,15);
-            MACRO_ADDITEM(kat_atropine,15);
-            MACRO_ADDITEM(kat_EACA,15);
-            MACRO_ADDITEM(kat_fentanyl,15);
-            MACRO_ADDITEM(kat_ketamine,15);
-            MACRO_ADDITEM(kat_lidocaine,15);
-            MACRO_ADDITEM(kat_nalbuphine,15);
-            MACRO_ADDITEM(kat_naloxone,15);
-            MACRO_ADDITEM(kat_norepinephrine,15);
-            MACRO_ADDITEM(kat_phenylephrine,15);
-            MACRO_ADDITEM(kat_TXA,15);
-            MACRO_ADDITEM(kat_nitroglycerin,15);
+            MACRO_ADDITEM(kat_naloxone,20);
+            MACRO_ADDITEM(kat_EACA,20);
+            MACRO_ADDITEM(kat_TXA,20);
+            MACRO_ADDITEM(kat_norepinephrine,20);
+            MACRO_ADDITEM(kat_phenylephrine,20);
+            MACRO_ADDITEM(kat_phenylephrineAuto,20);
+            MACRO_ADDITEM(kat_nitroglycerin,20);
+            MACRO_ADDITEM(kat_amiodarone,20);
+            MACRO_ADDITEM(kat_lidocaine,20);
+            MACRO_ADDITEM(kat_atropine,20);
+            MACRO_ADDITEM(kat_ketamine,20);
+            MACRO_ADDITEM(kat_fentanyl,20);
+            MACRO_ADDITEM(kat_nalbuphine,20);
+            MACRO_ADDITEM(kat_epinephrineIV,20);
         };
         class TransportMagazines {
-            MACRO_ADDMAGAZINE(kat_Carbonate,15);
-            MACRO_ADDMAGAZINE(kat_Painkiller,15);
+            MACRO_ADDMAGAZINE(kat_Pervitin,15);
+            MACRO_ADDMAGAZINE(kat_Penthrox,15);
         };
     };
 };
