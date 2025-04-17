@@ -436,8 +436,7 @@ class CfgVehicles {
                 };
             };
         };
-        class ACE_SelfActions
-        {
+        class ACE_SelfActions {
             class KAT_Equipment {
                 displayName = CSTRING(Kat_Equipment);
                 icon = QPATHTOF(ui\KAM_Iteraction_Logo.paa);
