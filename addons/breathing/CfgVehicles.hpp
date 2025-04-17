@@ -53,7 +53,6 @@ class CfgVehicles {
     class kat_basicSupplyCrate: ACE_medicalSupplyCrate {
         displayName = CSTRING(basicSupplyCrate_display);
         class TransportItems {
-            MACRO_ADDITEM(Attachable_Helistretcher,5);
             MACRO_ADDITEM(kat_stretcherBag,5);
             MACRO_ADDITEM(kat_accuvac,2);
             MACRO_ADDITEM(kat_suction,15);
