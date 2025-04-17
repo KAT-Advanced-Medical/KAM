@@ -4,6 +4,7 @@ class CfgVehicles {
     class Item_Base_F;
     class Items_base_F;
     class WeaponHolder_Single_limited_item_F;
+
     class ACE_medicalSupplyCrate;
     class ACE_medicalSupplyCrate_advanced: ACE_medicalSupplyCrate {
         class TransportItems {

@@ -4,7 +4,6 @@ class CfgVehicles {
     class Item_Base_F;
     class Items_base_F;
     class WeaponHolder_Single_limited_item_F;
-    class ACE_medicalSupplyCrate;
 
     class Land_Defibrillator_F: Items_base_F {
         ace_dragging_canCarry = 1;
@@ -25,6 +24,7 @@ class CfgVehicles {
         };
     };
 
+    class ACE_medicalSupplyCrate;
     class ACE_medicalSupplyCrate_advanced: ACE_medicalSupplyCrate {
         class TransportItems {
             MACRO_ADDITEM(kat_IV_16,20);
