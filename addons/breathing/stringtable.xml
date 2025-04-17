@@ -2593,23 +2593,6 @@
             <Finnish>Kuuntele keuhkojen ääniä</Finnish>
             <Dutch>Beluister de longen</Dutch>
         </Key>
-        <Key ID="STR_KAT_Breathing_basicSupplyCrate_display">
-            <English>[KAM] General Items</English>
-            <Czech>[KAM] Obecné předměty</Czech>
-            <French>[KAM] Objets généraux</French>
-            <Spanish>[KAM] Objetos Generales</Spanish>
-            <Italian>[KAM] Oggetti generali</Italian>
-            <Polish>[KAM] Podstawowe przedmioty</Polish>
-            <Portuguese>[KAM] Itens gerais</Portuguese>
-            <Russian>[КАМ] Общие пункты</Russian>
-            <German>[KAM] Allgemeine Gegenstände</German>
-            <Korean>[KAM] 일반 아이템</Korean>
-            <Japanese>[KAM] 一般物資箱</Japanese>
-            <Chinese>[KAM] 一般物品</Chinese>
-            <Chinesesimp>[KAM]一般项目</Chinesesimp>
-            <Finnish>[KAM] Yleiset kohteet</Finnish>
-            <Dutch>[KAM] Algemene items</Dutch>
-        </Key>
         <Key ID="STR_KAT_Breathing_breath_mild">
             <English>, slightly fruity</English>
             <Czech>, lehce nasládlý zápach</Czech>
