@@ -70,6 +70,14 @@ class CfgVehicles {
         model = QPATHTOF(models\armband\Armband.p3d);
         hiddenSelectionsTextures[] = {QPATHTOF(models\armband\ArmbandKAT.paa)};
     };
+
+    class ACE_medicalSupplyCrate;
+    class ACE_medicalSupplyCrate_advanced: ACE_medicalSupplyCrate {
+        class TransportMagazines {
+            MACRO_ADDMAGAZINE(kat_Bubble_Wrap,15);
+        };
+    };
+
     class Man;
     class CAManBase: Man {
         class ACE_Actions {
