@@ -22,19 +22,9 @@
 #undef HITPOINT_INDEX_LLEG
 #undef HITPOINT_INDEX_RLEG
 
-#undef ALL_BODY_PARTS
-#undef ALL_SELECTIONS
-#undef ALL_HITPOINTS
-
 #undef DEFAULT_TOURNIQUET_VALUES
 #undef DEFAULT_FRACTURE_VALUES
 #undef DEFAULT_BODYPART_DAMAGE_VALUES
-
-
-#define ALL_BODY_PARTS ["head", "neck", "chest", "body", "leftarm", "upperleftarm", "rightarm", "upperrightarm", "leftleg", "upperleftleg", "rightleg", "upperrightleg"]
-#define ALL_SELECTIONS ["head", "neck", "chest", "body", "hand_l", "uhand_l", "hand_r", "uhand_r", "leg_l", "uleg_l", "leg_r", "uleg_r"]
-#define ALL_HITPOINTS ["HitHead", "HitNeck", "HitChest", "HitAbdomen", "HitLeftArm", "HitRightArm", "HitLeftLeg", "HitRightLeg"]
-
 
 #define PRIORITY_NECK       3
 #define PRIORITY_CHEST      4

@@ -273,7 +273,7 @@
 
 #include "script_debug.hpp"
 
-#define ALL_BODY_PARTS_PRIORITY ["body", "head", "leftarm", "rightarm", "leftleg", "rightleg"]
+#define ALL_BODY_PARTS_PRIORITY ["chest", "body", "head", "neck", "leftarm", "upperleftarm", "rightarm", "upperrightarm", "leftleg", "upperleftleg", "rightleg", "upperrightleg"]
 
 #define DEFAULT_PACO2 40
 #define DEFAULT_PAO2 90
@@ -354,3 +354,8 @@
 //Ophthalmology
 #define GET_DUST_INJURY(unit) ((unit getVariable [QEGVAR(ophthalmology,dustInjuryLight), 0]) + (unit getVariable [QEGVAR(ophthalmology,dustInjuryHeavy), 0]))
 #define GET_EYE_INJURIES(unit) (unit getVariable [QEGVAR(ophthalmology,eyeInjuries), [1,1]])
+
+//Hitpoints
+#define ALL_BODY_PARTS ["head", "neck", "chest", "body", "leftarm", "upperleftarm", "rightarm", "upperrightarm", "leftleg", "upperleftleg", "rightleg", "upperrightleg"]
+#define ALL_SELECTIONS ["head", "neck", "chest", "body", "hand_l", "uhand_l", "hand_r", "uhand_r", "leg_l", "uleg_l", "leg_r", "uleg_r"]
+#define ALL_HITPOINTS ["HitHead", "HitNeck", "HitChest", "HitAbdomen", "HitLeftArm", "HitRightArm", "HitLeftLeg", "HitRightLeg"]
