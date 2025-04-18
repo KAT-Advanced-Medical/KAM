@@ -15,24 +15,24 @@
  * Public: No
  */
 
-private _actionsConfig = configFile >> QEGVAR(medical_treatment,actions);
+private _actionsConfig = configFile >> QACEGVAR(medical_treatment,actions);
 private _actionPaths = ["ACE_Head", "ACE_Neck", "ACE_Torso", "ACE_Chest", "ACE_ArmLeft", "ACE_ArmUpperLeft", "ACE_ArmRight", "ACE_ArmUpperRight", "ACE_LegLeft", "ACE_LegUpperLeft", "ACE_LegRight", "ACE_LegUpperRight"];
 
 private _fnc_statement = {
     params ["_target", "_player", "_args"];
     _args params ["_bodyPart", "_treatmentName"];
-    [_player, _target, _bodyPart, _treatmentName] call EFUNC(medical_treatment,treatment);
+    [_player, _target, _bodyPart, _treatmentName] call ACEFUNC(medical_treatment,treatment);
 };
 
 private _fnc_condition = {
     params ["_target", "_player", "_args"];
     _args params ["_bodyPart", "_treatmentName"];
-    [_player, _target, _bodyPart, _treatmentName] call EFUNC(medical_treatment,canTreatCached);
+    [_player, _target, _bodyPart, _treatmentName] call ACEFUNC(medical_treatment,canTreatCached);
 };
 
 {
     private _configName = configName _x;
-    private _actionName = format [QGVAR(_%1), _configName];
+    private _actionName = format [QACEGVAR(interaction, _%1), _configName];
     private _displayName = getText (_x >> "displayName");
     private _icon = getText (_x >> "icon");
 
@@ -56,10 +56,10 @@ private _fnc_condition = {
             {[0, 0, 0]},
             2,
             [false, true, false, false, false]
-        ] call EFUNC(interact_menu,createAction);
+        ] call ACEFUNC(interact_menu,createAction);
 
-        ["CAManBase", 0, [_actionPath], _action, true] call EFUNC(interact_menu,addActionToClass);
-        ["CAManBase", 0, ["ACE_MainActions", "ACE_Medical_Radial", _actionPath], _action, true] call EFUNC(interact_menu,addActionToClass);
+        ["CAManBase", 0, [_actionPath], _action, true] call ACEFUNC(interact_menu,addActionToClass);
+        ["CAManBase", 0, ["ACE_MainActions", "ACE_Medical_Radial", _actionPath], _action, true] call ACEFUNC(interact_menu,addActionToClass);
         GVAR(selfInteractionActions) pushBack ["", 1, ["ACE_SelfActions", "ACE_Medical", _actionPath], _action];
     } forEach _allowedBodyParts;
 } forEach configProperties [_actionsConfig, "isClass _x"];

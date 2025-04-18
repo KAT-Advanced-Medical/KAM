@@ -32,7 +32,7 @@ if (_structuralDamage) then {
     _oldDamage = _unit getHitIndex _hitPointIndex;
 };
 // Damage can be disabled with old variable or via sqf command allowDamage
-if !(isDamageAllowed _unit && {_unit getVariable [QEGVAR(medical,allowDamage), true]}) exitWith {_oldDamage};
+if !(isDamageAllowed _unit && {_unit getVariable [QACEGVAR(medical,allowDamage), true]}) exitWith {_oldDamage};
 
 // Killing units via End key is an edge case (#10375)
 // This didn't matter pre-Arma 3 2.18 but now this goes through the event handler
@@ -79,7 +79,7 @@ if (
     {_damage isEqualTo (_oldDamage + 0.005)}
 ) exitWith {
     TRACE_5("Drowning",_unit,_shooter,_instigator,_damage,_newDamage);
-    [QEGVAR(medical,woundReceived), [_unit, [[_newDamage, "Body", _newDamage]], _unit, "drowning"]] call CBA_fnc_localEvent;
+    [QACEGVAR(medical,woundReceived), [_unit, [[_newDamage, "Body", _newDamage]], _unit, "drowning"]] call CBA_fnc_localEvent;
 
     0
 };
@@ -98,7 +98,7 @@ if (
     // todo: no way to detect if stationary and another vehicle hits you
 ) exitWith {
     TRACE_5("Crash",_unit,_shooter,_instigator,_damage,_newDamage);
-    [QEGVAR(medical,woundReceived), [_unit, [[_newDamage, _hitpoint, _newDamage]], _unit, "vehiclecrash"]] call CBA_fnc_localEvent;
+    [QACEGVAR(medical,woundReceived), [_unit, [[_newDamage, _hitpoint, _newDamage]], _unit, "vehiclecrash"]] call CBA_fnc_localEvent;
 
     0
 };
@@ -115,57 +115,57 @@ if (
 ) exitWith {
     TRACE_5("Vehicle hit",_unit,_shooter,_instigator,_damage,_newDamage);
 
-    _unit setVariable [QEGVAR(medical,lastDamageSource), _shooter];
-    _unit setVariable [QEGVAR(medical,lastInstigator), _instigator];
+    _unit setVariable [QACEGVAR(medical,lastDamageSource), _shooter];
+    _unit setVariable [QACEGVAR(medical,lastInstigator), _instigator];
 
-    [QEGVAR(medical,woundReceived), [_unit, [[_newDamage, _hitpoint, _newDamage]], _shooter, "vehiclehit"]] call CBA_fnc_localEvent;
+    [QACEGVAR(medical,woundReceived), [_unit, [[_newDamage, _hitpoint, _newDamage]], _shooter, "vehiclehit"]] call CBA_fnc_localEvent;
 
     0
 };
 
 // Damages are stored for last iteration of the HandleDamage event (_context == 2)
-_unit setVariable [format [QGVAR($%1), _hitpoint], [_realDamage, _newDamage]];
+_unit setVariable [format [QACEGVAR(medical_engine,$%1), _hitpoint], [_realDamage, _newDamage]];
 
 // Ref https://community.bistudio.com/wiki/Arma_3:_Event_Handlers#HandleDamage
 // Context 2 means this is the last iteration of HandleDamage, so figure out which hitpoint took the most real damage and send wound event
 // Don't exit, as the last iteration can be one of the hitpoints that we need to keep _oldDamage for
 if (_context == 2) then {
-    _unit setVariable [QEGVAR(medical,lastDamageSource), _shooter];
-    _unit setVariable [QEGVAR(medical,lastInstigator), _instigator];
+    _unit setVariable [QACEGVAR(medical,lastDamageSource), _shooter];
+    _unit setVariable [QACEGVAR(medical,lastInstigator), _instigator];
 
-    private _damageStructural = _unit getVariable [QGVAR($#structural), [0,0]];
+    private _damageStructural = _unit getVariable [QACEGVAR(medical_engine,$#structural), [0,0]];
 
     // --- Head
     private _damageHead = [
-        _unit getVariable [QGVAR($HitFace), [0,0]],
-        _unit getVariable [QGVAR($HitHead), [0,0]]
+        _unit getVariable [QACEGVAR(medical_engine,$HitFace), [0,0]],
+        _unit getVariable [QACEGVAR(medical_engine,$HitHead), [0,0]]
     ];
     _damageHead sort false;
     _damageHead = _damageHead select 0;
 
     // --- Neck
-    private _damageNeck = _unit getVariable [QGVAR($HitNeck), [0,0]];
+    private _damageNeck = _unit getVariable [QACEGVAR(medical_engine,$HitNeck), [0,0]];
 
     // --- Body
     private _damageBody = [
-        _unit getVariable [QGVAR($HitPelvis), [0,0]],
-        _unit getVariable [QGVAR($HitAbdomen), [0,0]]
+        _unit getVariable [QACEGVAR(medical_engine,$HitPelvis), [0,0]],
+        _unit getVariable [QACEGVAR(medical_engine,$HitAbdomen), [0,0]]
     ];
     _damageBody sort false;
     _damageBody = _damageBody select 0;
 
     private _damageChest = [
-        _unit getVariable [QGVAR($HitDiaphragm), [0,0]],
-        _unit getVariable [QGVAR($HitChest), [0,0]]
+        _unit getVariable [QACEGVAR(medical_engine,$HitDiaphragm), [0,0]],
+        _unit getVariable [QACEGVAR(medical_engine,$HitChest), [0,0]]
     ];
     _damageChest sort false;
     _damageChest = _damageChest select 0;
 
     // --- Arms and Legs
-    private _damageLeftArm = _unit getVariable [QGVAR($HitLeftArm), [0,0]];
-    private _damageRightArm = _unit getVariable [QGVAR($HitRightArm), [0,0]];
-    private _damageLeftLeg = _unit getVariable [QGVAR($HitLeftLeg), [0,0]];
-    private _damageRightLeg = _unit getVariable [QGVAR($HitRightLeg), [0,0]];
+    private _damageLeftArm = _unit getVariable [QACEGVAR(medical_engine,$HitLeftArm), [0,0]];
+    private _damageRightArm = _unit getVariable [QACEGVAR(medical_engine,$HitRightArm), [0,0]];
+    private _damageLeftLeg = _unit getVariable [QACEGVAR(medical_engine,$HitLeftLeg), [0,0]];
+    private _damageRightLeg = _unit getVariable [QACEGVAR(medical_engine,$HitRightLeg), [0,0]];
 
     // Find hit point that received the maximum damage
     // Priority used for sorting if incoming damage is equal
@@ -217,7 +217,7 @@ if (_context == 2) then {
     // TODO check if this needs to be changed for burning damage (occurs as lots of small events that we add together)
     if ((_allDamages select 0 select 0) > 1E-3) then {
         TRACE_1("received",_allDamages);
-        [QEGVAR(medical,woundReceived), [_unit, _allDamages, _shooter, _ammo]] call CBA_fnc_localEvent;
+        [QACEGVAR(medical,woundReceived), [_unit, _allDamages, _shooter, _ammo]] call CBA_fnc_localEvent;
     };
 
     // Clear stored damages otherwise they will influence future damage events
@@ -225,10 +225,10 @@ if (_context == 2) then {
     {
         _unit setVariable [_x, nil];
     } forEach [
-        QGVAR($HitFace),QGVAR($HitNeck),QGVAR($HitHead),
-        QGVAR($HitPelvis),QGVAR($HitAbdomen),QGVAR($HitDiaphragm),QGVAR($HitChest),QGVAR($HitBody),
-        QGVAR($HitLeftArm),QGVAR($HitRightArm),QGVAR($HitLeftLeg),QGVAR($HitRightLeg),
-        QGVAR($#structural)
+        QACEGVAR(medical_engine,$HitFace),QACEGVAR(medical_engine,$HitNeck),QACEGVAR(medical_engine,$HitHead),
+        QACEGVAR(medical_engine,$HitPelvis),QACEGVAR(medical_engine,$HitAbdomen),QACEGVAR(medical_engine,$HitDiaphragm),QACEGVAR(medical_engine,$HitChest),QACEGVAR(medical_engine,$HitBody),
+        QACEGVAR(medical_engine,$HitLeftArm),QACEGVAR(medical_engine,$HitRightArm),QACEGVAR(medical_engine,$HitLeftLeg),QACEGVAR(medical_engine,$HitRightLeg),
+        QACEGVAR(medical_engine,$#structural)
     ];
 };
 

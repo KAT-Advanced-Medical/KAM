@@ -41,7 +41,7 @@ if (_bodyPartIndex < 0) exitWith {ERROR_1("addDamageToUnit - bad selection %1",_
 if (isNull _unit || {!local _unit} || {!alive _unit}) exitWith {ERROR_2("addDamageToUnit - badUnit %1 [local %2]",_this,local _unit); false};
 if (_damageToAdd < 0) exitWith {ERROR_1("addDamageToUnit - bad damage %1",_this); false};
 
-if (!_overrideInvuln && {!((isDamageAllowed _unit) && {_unit getVariable [QEGVAR(medical,allowDamage), true]})}) exitWith {
+if (!_overrideInvuln && {!((isDamageAllowed _unit) && {_unit getVariable [QACEGVAR(medical,allowDamage), true]})}) exitWith {
     ERROR_1("addDamageToUnit - unit invulnerable %1",_this); false
 };
 
@@ -49,8 +49,8 @@ if (!_overrideInvuln && {!((isDamageAllowed _unit) && {_unit getVariable [QEGVAR
 _bodyPart = ["Head", "Neck", "Chest", "Body", "LeftArm", "LeftUpperArm", "RightArm", "RightUpperArm", "LeftLeg", "LeftUpperLeg", "RightLeg", "RightUpperLeg"] select _bodyPartIndex;
 
 if (!isNull _instigator) then {
-    _unit setVariable [QEGVAR(medical,lastDamageSource), _instigator];
-    _unit setVariable [QEGVAR(medical,lastInstigator), _instigator];
+    _unit setVariable [QACEGVAR(medical,lastDamageSource), _instigator];
+    _unit setVariable [QACEGVAR(medical,lastInstigator), _instigator];
 };
 
 #ifdef DEBUG_TESTRESULTS
@@ -58,12 +58,12 @@ private _startDmg = +GET_BODYPART_DAMAGE(_unit);
 private _startPain = GET_PAIN(_unit);
 #endif
 
-[QEGVAR(medical,woundReceived), [_unit, [[_damageToAdd, _bodyPart, _damageToAdd]], _instigator, _typeOfDamage]] call CBA_fnc_localEvent;
+[QACEGVAR(medical,woundReceived), [_unit, [[_damageToAdd, _bodyPart, _damageToAdd]], _instigator, _typeOfDamage]] call CBA_fnc_localEvent;
 
 #ifdef DEBUG_TESTRESULTS
 private _endDmg = GET_BODYPART_DAMAGE(_unit);
 private _endPain = GET_PAIN(_unit);
-private _typeOfDamageAdj = _typeOfDamage call EFUNC(medical_damage,getTypeOfDamage);
+private _typeOfDamageAdj = _typeOfDamage call ACEFUNC(medical_damage,getTypeOfDamage);
 private _config = configFile >> "ACE_Medical_Injuries" >> "damageTypes" >> _typeOfDamageAdj;
 private _selectionSpecific = true;
 if (isClass _config) then {

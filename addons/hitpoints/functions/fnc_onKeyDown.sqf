@@ -34,7 +34,7 @@ private _visibleCategories = [
     "bandage","medication","airway","advanced","drag"
 ] select {
     private _category = _x;
-    (GVAR(actions) findIf {_category == _x select 1}) > -1
+    (ACEGVAR(medical_gui,actions) findIf {_category == _x select 1}) > -1
 };
 
 private _allCategories = ["triage", "examine"] + _visibleCategories + ["toggle"];
@@ -52,12 +52,12 @@ switch (true) do {
     {
         _temp_category = _x; // _x does not exist inside case code
         _temp_idc = IDC_TRIAGE + (ALL_CATEGORIES find _temp_category) * 10;
-        case (_keyPressed == _y && {GVAR(selectedCategory) != _temp_category}): {
+        case (_keyPressed == _y && {ACEGVAR(medical_gui,selectedCategory) != _temp_category}): {
             if (ctrlEnabled _temp_idc) then {
                 if (_temp_category == "toggle") then {
-                    call FUNC(handleToggle);
+                    call ACEFUNC(medical_gui,handleToggle);
                 } else {
-                    GVAR(selectedCategory) = _temp_category;
+                    ACEGVAR(medical_gui,selectedCategory) = _temp_category;
                 };
             } else {
                 _return = false;
@@ -69,41 +69,41 @@ switch (true) do {
 //     w
 //   a s d
 //    z x
-    case (_keyPressed == DIK_W && {GVAR(selectedBodyPart) != 0}): {
-        GVAR(selectedBodyPart) = 0;
+    case (_keyPressed == DIK_W && {ACEGVAR(medical_gui,selectedBodyPart) != 0}): {
+        ACEGVAR(medical_gui,selectedBodyPart) = 0;
     };
-    case (_keyPressed == DIK_W && {GVAR(selectedBodyPart) != 1}): {
-        GVAR(selectedBodyPart) = 1;
+    case (_keyPressed == DIK_W && {ACEGVAR(medical_gui,selectedBodyPart) != 1}): {
+        ACEGVAR(medical_gui,selectedBodyPart) = 1;
     };
-    case (_keyPressed == DIK_S && {GVAR(selectedBodyPart != 2)}): {
-        GVAR(selectedBodyPart) = 2;
+    case (_keyPressed == DIK_S && {ACEGVAR(medical_gui,selectedBodyPart != 2)}): {
+        ACEGVAR(medical_gui,selectedBodyPart) = 2;
     };
-    case (_keyPressed == DIK_S && {GVAR(selectedBodyPart != 3)}): {
-        GVAR(selectedBodyPart) = 3;
+    case (_keyPressed == DIK_S && {ACEGVAR(medical_gui,selectedBodyPart != 3)}): {
+        ACEGVAR(medical_gui,selectedBodyPart) = 3;
     };
-    case (_keyPressed == DIK_D && {GVAR(selectedBodyPart) != 4}): {
-        GVAR(selectedBodyPart) = 4;
+    case (_keyPressed == DIK_D && {ACEGVAR(medical_gui,selectedBodyPart) != 4}): {
+        ACEGVAR(medical_gui,selectedBodyPart) = 4;
     };
-    case (_keyPressed == DIK_D && {GVAR(selectedBodyPart) != 5}): {
-        GVAR(selectedBodyPart) = 5;
+    case (_keyPressed == DIK_D && {ACEGVAR(medical_gui,selectedBodyPart) != 5}): {
+        ACEGVAR(medical_gui,selectedBodyPart) = 5;
     };
-    case (_keyPressed == DIK_A && {GVAR(selectedBodyPart) != 6}): {
-        GVAR(selectedBodyPart) = 6;
+    case (_keyPressed == DIK_A && {ACEGVAR(medical_gui,selectedBodyPart) != 6}): {
+        ACEGVAR(medical_gui,selectedBodyPart) = 6;
     };
-    case (_keyPressed == DIK_A && {GVAR(selectedBodyPart) != 7}): {
-        GVAR(selectedBodyPart) = 7;
+    case (_keyPressed == DIK_A && {ACEGVAR(medical_gui,selectedBodyPart) != 7}): {
+        ACEGVAR(medical_gui,selectedBodyPart) = 7;
     };
-    case (_keyPressed == DIK_X && {GVAR(selectedBodyPart) != 8}): {
-        GVAR(selectedBodyPart) = 8;
+    case (_keyPressed == DIK_X && {ACEGVAR(medical_gui,selectedBodyPart) != 8}): {
+        ACEGVAR(medical_gui,selectedBodyPart) = 8;
     };
-    case (_keyPressed == DIK_X && {GVAR(selectedBodyPart) != 9}): {
-        GVAR(selectedBodyPart) = 9;
+    case (_keyPressed == DIK_X && {ACEGVAR(medical_gui,selectedBodyPart) != 9}): {
+        ACEGVAR(medical_gui,selectedBodyPart) = 9;
     };
-    case (_keyPressed == DIK_Z && {GVAR(selectedBodyPart) != 10}): {
-        GVAR(selectedBodyPart) = 10;
+    case (_keyPressed == DIK_Z && {ACEGVAR(medical_gui,selectedBodyPart) != 10}): {
+        ACEGVAR(medical_gui,selectedBodyPart) = 10;
     };
-    case (_keyPressed == DIK_Z && {GVAR(selectedBodyPart) != 11}): {
-        GVAR(selectedBodyPart) = 11;
+    case (_keyPressed == DIK_Z && {ACEGVAR(medical_gui,selectedBodyPart) != 11}): {
+        ACEGVAR(medical_gui,selectedBodyPart) = 11;
     };
 
     default {
