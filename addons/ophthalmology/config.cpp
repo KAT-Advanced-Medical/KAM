@@ -24,5 +24,6 @@ class CfgPatches {
 #include "CfgEventHandlers.hpp"
 #include "CfgWeapons.hpp"
 #include "CfgMagazines.hpp"
+#include "CfgVehicles.hpp"
 #include "ACE_Medical_Treatment_Actions.hpp"
 #include "RscTitles.hpp"
