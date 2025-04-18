@@ -151,11 +151,17 @@ if (_selectionN == -1) exitWith {
 // Add selected body part name
 private _bodyPartName = [
     ACELSTRING(medical_gui,Head),
+    ELSTRING(hitpoints,Neck),
+    ELSTRING(hitpoints,Chest),
     ACELSTRING(medical_gui,Torso),
     ACELSTRING(medical_gui,LeftArm),
+    ELSTRING(hitpoints,ArmUpperLeft),
     ACELSTRING(medical_gui,RightArm),
+    ELSTRING(hitpoints,ArmUpperRight),
     ACELSTRING(medical_gui,LeftLeg),
-    ACELSTRING(medical_gui,RightLeg)
+    ELSTRING(hitpoints,LegUpperLeft),
+    ACELSTRING(medical_gui,RightLeg),
+    ELSTRING(hitpoints,LegUpperRight)
 ] select _selectionN;
 
 _entries pushBack [localize _bodyPartName, [1, 1, 1, 1]];
