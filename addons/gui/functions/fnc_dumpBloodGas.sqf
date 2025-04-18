@@ -17,4 +17,4 @@
 
 params ["_target"];
 
- _target setVariable [QEGVAR(circulation,testedBloodGas), [0,0,0,0,0,0], true];
+ _target setVariable [QEGVAR(circulation,testedBloodGas), [0,0,0,0,0,0,0,0,0,0,0,0], true];

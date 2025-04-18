@@ -21,12 +21,12 @@ params ["_unit", "_allDamages", "_typeOfDamage"];
 TRACE_3("woundsHandlerBase",_unit,_allDamages,_typeOfDamage);
 
 
-if !(_typeOfDamage in GVAR(damageTypeDetails)) then {
+if !(_typeOfDamage in ACEGVAR(medical_damage,damageTypeDetails)) then {
     WARNING_1("damage type %1 not found",_typeOfDamage);
     _typeOfDamage = "unknown";
 };
 
-GVAR(damageTypeDetails) get _typeOfDamage params ["_thresholds", "_selectionSpecific", "", "_damageWoundDetails"];
+ACEGVAR(medical_damage,damageTypeDetails) get _typeOfDamage params ["_thresholds", "_selectionSpecific", "", "_damageWoundDetails"];
 
 // Administration for open wounds and ids
 private _openWounds = GET_OPEN_WOUNDS(_unit);
@@ -68,7 +68,7 @@ private _bodyPartVisParams = [_unit, false, false, false, false]; // params arra
     };
 
     // determine how many wounds to create
-    private _nWounds = [_damage, _thresholds, true] call FUNC(interpolatePoints);
+    private _nWounds = [_damage, _thresholds, true] call ACEFUNC(medical_damage,interpolatePoints);
     if (_nWounds < 1) then {
         TRACE_2("Damage created zero wounds",_damage,_typeOfDamage);
         continue
@@ -79,7 +79,7 @@ private _bodyPartVisParams = [_unit, false, false, false, false]; // params arra
     private _weightedWoundTypes = [];
     {
         private _weighting = _x select 1;
-        private _woundWeight = [_dmgPerWound, _weighting] call FUNC(interpolatePoints);
+        private _woundWeight = [_dmgPerWound, _weighting] call ACEFUNC(medical_damage,interpolatePoints);
         _weightedWoundTypes pushBack _x;
         _weightedWoundTypes pushBack _woundWeight;
     } forEach _damageWoundDetails;
@@ -97,8 +97,8 @@ private _bodyPartVisParams = [_unit, false, false, false, false]; // params arra
             WARNING_4("No valid wound types %1-%2-%3-%4",_damage,_dmgPerWound,_typeOfDamage,_bodyPart);
             continue
         };
-        GVAR(woundDetails) get _woundTypeToAdd params ["","_injuryBleedingRate","_injuryPain","_causeLimping","_causeFracture"];
-        private _woundClassIDToAdd = GVAR(woundClassNames) find _woundTypeToAdd;
+        ACEGVAR(medical_damage,woundDetails) get _woundTypeToAdd params ["","_injuryBleedingRate","_injuryPain","_causeLimping","_causeFracture"];
+        private _woundClassIDToAdd = ACEGVAR(medical_damage,woundClassNames) find _woundTypeToAdd;
 
         // Add a bit of random variance to wounds
         private _woundDamage = _dmgPerWound * _dmgMultiplier * random [0.9, 1, 1.1];
@@ -133,10 +133,10 @@ private _bodyPartVisParams = [_unit, false, false, false, false]; // params arra
        if (_bodyPart in ["head", "body", "neck", "chest"] && {_woundDamage > PENETRATION_THRESHOLD}) then {
             _criticalDamage = true;
         };
-        if ([_unit, _bodyPartNToAdd, _bodyPartDamage, _woundDamage] call FUNC(determineIfFatal)) then {
-            if (!isPlayer _unit || {random 1 < EGVAR(medical,deathChance)}) then {
+        if ([_unit, _bodyPartNToAdd, _bodyPartDamage, _woundDamage] call ACEFUNC(medical_damage,determineIfFatal)) then {
+            if (!isPlayer _unit || {random 1 < ACEGVAR(medical,deathChance)}) then {
                 TRACE_1("determineIfFatal returned true",_woundDamage);
-                [QEGVAR(medical,FatalInjury), _unit] call CBA_fnc_localEvent;
+                [QACEGVAR(medical,FatalInjury), _unit] call CBA_fnc_localEvent;
             };
         };
 
@@ -147,23 +147,23 @@ private _bodyPartVisParams = [_unit, false, false, false, false]; // params arra
         switch (true) do {
             case (
                 _causeFracture
-                && {EGVAR(medical,fractures) > 0}
+                && {ACEGVAR(medical,fractures) > 0}
                 && {_bodyPartNToAdd > 3}
                 && {_woundDamage > FRACTURE_DAMAGE_THRESHOLD}
-                && {random 1 < (_fractureMultiplier * EGVAR(medical,fractureChance))}
+                && {random 1 < (_fractureMultiplier * ACEGVAR(medical,fractureChance))}
             ): {
                 private _fractures = GET_FRACTURES(_unit);
                 _fractures set [_bodyPartNToAdd, 1];
                 _unit setVariable [VAR_FRACTURES, _fractures, true];
 
-                [QEGVAR(medical,fracture), [_unit, _bodyPartNToAdd]] call CBA_fnc_localEvent;
+                [QACEGVAR(medical,fracture), [_unit, _bodyPartNToAdd]] call CBA_fnc_localEvent;
                 TRACE_1("Limb fracture",_bodyPartNToAdd);
 
                 _updateDamageEffects = true;
             };
             case (
                 _causeLimping
-                && {EGVAR(medical,limping) > 0}
+                && {ACEGVAR(medical,limping) > 0}
                 && {_bodyPartNToAdd > 3}
                 && {_woundDamage > LIMPING_DAMAGE_THRESHOLD}
             ): {
@@ -206,19 +206,19 @@ private _bodyPartVisParams = [_unit, false, false, false, false]; // params arra
 } forEach _allDamages;
 
 if (_updateDamageEffects) then {
-    [_unit] call EFUNC(medical_engine,updateDamageEffects);
+    [_unit] call ACEFUNC(medical_engine,updateDamageEffects);
 };
 
 if (_createdWounds) then {
     _unit setVariable [VAR_OPEN_WOUNDS, _openWounds, true];
     _unit setVariable [VAR_BODYPART_DAMAGE, _bodyPartDamage, true];
 
-    _bodyPartVisParams call EFUNC(medical_engine,updateBodyPartVisuals);
+    _bodyPartVisParams call ACEFUNC(medical_engine,updateBodyPartVisuals);
 
-    [QEGVAR(medical,injured), [_unit, _painLevel]] call CBA_fnc_localEvent;
+    [QACEGVAR(medical,injured), [_unit, _painLevel]] call CBA_fnc_localEvent;
 
     if (_criticalDamage || {_painLevel > PAIN_UNCONSCIOUS}) then {
-        [_unit] call FUNC(handleIncapacitation);
+        [_unit] call ACEFUNC(medical_damage,handleIncapacitation);
     };
 
     TRACE_4("exit",_unit,_painLevel,GET_PAIN(_unit),GET_OPEN_WOUNDS(_unit));

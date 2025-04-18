@@ -25,7 +25,7 @@ if (GVAR(Surgery_ConsciousnessRequirement) == 1 && !(IS_UNCONSCIOUS(_patient))) 
 };
 
 private _part = ALL_BODY_PARTS find toLower _bodyPart;
-private _fractureArray = _patient getVariable [QGVAR(fractures), [0,0,0,0,0,0]];
+private _fractureArray = _patient getVariable [QGVAR(fractures), [0,0,0,0,0,0,0,0,0,0,0,0]];
 private _liveFracture = _fractureArray select _part;
 
 _liveFracture = _liveFracture + 0.1;
@@ -41,7 +41,7 @@ _patient setVariable [QGVAR(fractures), _fractureArray, true];
     params ["_args", "_idPFH"];
     _args params ["_patient", "_part"];
 
-    private _fractureArray = _patient getVariable [QGVAR(fractures), [0,0,0,0,0,0]];
+    private _fractureArray = _patient getVariable [QGVAR(fractures), [0,0,0,0,0,0,0,0,0,0,0,0]];
     private _liveFracture = _fractureArray select _part;
     private _count = ([_patient, "Etomidate", true] call ACEFUNC(medical_status,getMedicationCount)) select 1;
 

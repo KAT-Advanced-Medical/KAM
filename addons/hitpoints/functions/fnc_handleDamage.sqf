@@ -52,8 +52,8 @@ if (_context != 2 && {_context == 4 || _newDamage == 0}) exitWith {
     TRACE_4("Skipping engine bleeding or zero damage, blocking insta kills until next frame",_ammo,_newDamage,_directHit,_context);
 
     if (INSTAKILL_ALLOWED(_unit)) then {
-        _unit setVariable [QGVAR(blockInstaKill), _unit];
-        [{_this setVariable [QGVAR(blockInstaKill), nil]}, _unit] call CBA_fnc_execNextFrame;
+        _unit setVariable [QACEGVAR(medical_engine,blockInstaKill), _unit];
+        [{_this setVariable [QACEGVAR(medical_engine,blockInstaKill), nil]}, _unit] call CBA_fnc_execNextFrame;
     };
 
     _oldDamage
@@ -62,11 +62,11 @@ if (_context != 2 && {_context == 4 || _newDamage == 0}) exitWith {
 // Get scaled armor value of hitpoint and calculate damage before armor
 // We scale using passThrough to handle explosive-resistant armor properly (#9063)
 // We need realDamage to determine which limb was hit correctly
-[_unit, _hitpoint] call FUNC(getHitpointArmor) params ["_armor", "_armorScaled"];
+[_unit, _hitpoint] call ACEFUNC(medical_engine,getHitpointArmor) params ["_armor", "_armorScaled"];
 private _realDamage = _newDamage * _armor;
 if (!_structuralDamage) then {
     private _armorCoef = _armor/_armorScaled;
-    private _damageCoef = linearConversion [0, 1, GVAR(damagePassThroughEffect), 1, _armorCoef];
+    private _damageCoef = linearConversion [0, 1, ACEGVAR(medical_engine,damagePassThroughEffect), 1, _armorCoef];
     _newDamage = _newDamage * _damageCoef;
 };
 TRACE_6("Received hit",_hitpoint,_ammo,_newDamage,_realDamage,_directHit,_context);
@@ -92,7 +92,7 @@ private _environmentDamage = _ammo == "";
 // Crashing a vehicle doesn't fire the EH for each hitpoint and never triggers _context=2 (LastHitPoint)
 // It does fire the EH multiple times, but this seems to scale with the intensity of the crash
 if (
-    EGVAR(medical,enableVehicleCrashes) &&
+    ACEGVAR(medical,enableVehicleCrashes) &&
     {_environmentDamage && _inVehicle && _structuralDamage} &&
     {vectorMagnitude (velocity _vehicle) > 5}
     // todo: no way to detect if stationary and another vehicle hits you

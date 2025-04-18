@@ -31,7 +31,7 @@ _ECB = (_ECB + (_lossVolumeChange * LITERS_TO_ML) / 2) max 100;
 
 if (!isNil {_unit getVariable [QACEGVAR(medical,ivBags),[]]}) then {
     private _bloodBags = _unit getVariable [QACEGVAR(medical,ivBags), []];
-    private _IVarray = _unit getVariable [QGVAR(IV), [0,0,0,0,0,0]];
+    private _IVarray = _unit getVariable [QGVAR(IV), [0,0,0,0,0,0,0,0,0,0,0,0]];
     private _flowCalculation = (ACEGVAR(medical,ivFlowRate) * _deltaT * 4.16);
     private _hypothermia = EGVAR(hypothermia,hypothermiaActive);
 
@@ -39,8 +39,8 @@ if (!isNil {_unit getVariable [QACEGVAR(medical,ivBags),[]]}) then {
         _flowCalculation = _flowCalculation / 1.5;
     };
 
-    private _incomingVolumeChange = [0,0,0,0,0,0];
-    private _fluidWarmer = _unit getVariable [QEGVAR(hypothermia,fluidWarmer), [0,0,0,0,0,0]];
+    private _incomingVolumeChange = [0,0,0,0,0,0,0,0,0,0,0,0];
+    private _fluidWarmer = _unit getVariable [QEGVAR(hypothermia,fluidWarmer), [0,0,0,0,0,0,0,0,0,0,0,0]];
     private _fluidHeat = 0;
 
     _bloodBags = _bloodBags apply {
@@ -49,7 +49,7 @@ if (!isNil {_unit getVariable [QACEGVAR(medical,ivBags),[]]}) then {
         private _tourniquets = GET_TOURNIQUETS(_unit);
 
         if ((_tourniquets select _bodyPart isEqualTo 0) && (_IVarray select _bodyPart isNotEqualTo 3)) then {
-            private _IVflow = _unit getVariable [QGVAR(IVflow), [0,0,0,0,0,0]];
+            private _IVflow = _unit getVariable [QGVAR(IVflow), [0,0,0,0,0,0,0,0,0,0,0,0]];
             private _bagChange = (_flowCalculation * (_IVflow select _bodyPart)) min _bagVolumeRemaining; // absolute value of the change in miliLiters
             _bagVolumeRemaining = _bagVolumeRemaining - _bagChange;
 

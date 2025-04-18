@@ -8,6 +8,16 @@ class ACE_Head {
     modifierFunction = QUOTE([ARR_3(_target,""head"",_this select 3)] call ACEFUNC(medical_gui,modifyAction));
     runOnHover = 1;
 };
+class ACE_Neck {
+    displayName = CSTRING(Neck);
+    distance = MEDICAL_ACTION_DISTANCE;
+    icon = QPATHTOF(ui\cross.paa);
+    exceptions[] = {"isNotInside", "isNotSitting"};
+    ACTION_CONDITION
+    statement = QUOTE([ARR_2(_target,1)] call ACEFUNC(medical_gui,displayPatientInformation));
+    modifierFunction = QUOTE([ARR_3(_target,""neck"",_this select 3)] call ACEFUNC(medical_gui,modifyAction));
+    runOnHover = 1;
+};
 class ACE_Chest {
     displayName = CSTRING(Chest);
     distance = MEDICAL_ACTION_DISTANCE;

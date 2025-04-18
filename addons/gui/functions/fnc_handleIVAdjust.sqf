@@ -19,7 +19,7 @@
 
 params ["_target", "_bodyPartN", "_adjust"];
 
-private _ivFlow = _target getVariable [QEGVAR(pharma,IVFlow),[0,0,0,0,0,0]];
+private _ivFlow = _target getVariable [QEGVAR(pharma,IVFlow),[0,0,0,0,0,0,0,0,0,0,0,0]];
 
 _ivFlow set [_bodyPartN, ((((_ivFlow select _bodyPartN) + _adjust) max 0) min 1.5)];
 _target setVariable [QEGVAR(pharma,IVFlow), _ivFlow, true];

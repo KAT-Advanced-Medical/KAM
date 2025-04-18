@@ -21,7 +21,7 @@ if (!local _unit) exitWith { ERROR_2("updateDamageEffects: Unit not local or nul
 
 private _isLimping = false;
 
-if (EGVAR(medical,fractures) > 0) then {
+if (ACEGVAR(medical,fractures) > 0) then {
     private _fractures = GET_FRACTURES(_unit);
     TRACE_1("",_fractures);
     if ((_fractures select 8) == 1 || (_fractures select 9) == 1 || (_fractures select 10) == 1 || (_fractures select 11) == 1) then {
@@ -34,10 +34,10 @@ if (EGVAR(medical,fractures) > 0) then {
     if ((_fractures select 6) == 1) then { _aimFracture = _aimFracture + 4; };
     if ((_fractures select 7) == 1) then { _aimFracture = _aimFracture + 4; };
 
-    if (EGVAR(medical,fractures) in [4, 5, 6, 7]) then { // the limp with a splint will still cause effects
+    if (ACEGVAR(medical,fractures) in [4, 5, 6, 7]) then { // the limp with a splint will still cause effects
         // Block sprint / force walking based on fracture setting and leg splint status
         private _hasLegSplint = (_fractures select 8) == -1 || (_fractures select 9) == -1 || (_fractures select 10) == -1 || (_fractures select 11) == -1;
-        if (EGVAR(medical,fractures) == 2) then {
+        if (ACEGVAR(medical,fractures) == 2) then {
             [_unit, "blockSprint", QEGVAR(medical,fracture), _hasLegSplint] call EFUNC(common,statusEffect_set);
         } else {
             [_unit, "forceWalk", QEGVAR(medical,fracture), _hasLegSplint] call EFUNC(common,statusEffect_set);
@@ -48,17 +48,17 @@ if (EGVAR(medical,fractures) > 0) then {
         if ((_fractures select 6) == 1) then { _aimFracture = _aimFracture + 4; };
         if ((_fractures select 7) == 1) then { _aimFracture = _aimFracture + 4; };
     };
-    _unit setVariable [QGVAR(aimFracture), _aimFracture, false]; // local only var, used in ace_medical's postInit to set ACE_setCustomAimCoef
+    _unit setVariable [QACEGVAR(medical_engine,aimFracture), _aimFracture, false]; // local only var, used in ace_medical's postInit to set ACE_setCustomAimCoef
 };
 
-if (!_isLimping && {EGVAR(medical,limping) > 0}) then {
+if (!_isLimping && {ACEGVAR(medical,limping) > 0}) then {
     private _openWounds = GET_OPEN_WOUNDS(_unit);
 
     // Want a copy of combined arrays to prevent wound mixing
     private _legWounds = (_openWounds getOrDefault ["leftleg", []])
         + (_openWounds getOrDefault ["rightleg", []]);
 
-    if (EGVAR(medical,limping) == 2) then {
+    if (ACEGVAR(medical,limping) == 2) then {
         private _bandagedWounds = GET_BANDAGED_WOUNDS(_unit);
         _legWounds = _legWounds
             + (_bandagedWounds getOrDefault ["leftleg", []])
@@ -71,16 +71,16 @@ if (!_isLimping && {EGVAR(medical,limping) > 0}) then {
             (_xAmountOf > 0)
             && {_xDamage > LIMPING_DAMAGE_THRESHOLD}
             // select _causeLimping from woundDetails
-            && {(EGVAR(medical_damage,woundDetails) get (floor (_xClassID / 10))) select 3}
+            && {(ACEGVAR(medical_damage,woundDetails) get (floor (_xClassID / 10))) select 3}
         ) exitWith {
             TRACE_1("limping because of wound",_x);
             _isLimping = true;
         };
     } forEach _legWounds;
 };
-_unit setVariable [QEGVAR(medical,isLimping), _isLimping, true];
+_unit setVariable [QACEGVAR(medical,isLimping), _isLimping, true];
 
 // refresh
 private _isDamaged = _unit getHitPointDamage "HitLegs" >= DAMAGED_MIN_THRESHOLD && {_unit getHitPointDamage "HitLegs" != LIMPING_MIN_DAMAGE};
 
-[_unit, "Legs", _isDamaged] call FUNC(damageBodyPart);
+[_unit, "Legs", _isDamaged] call ACEFUNC(medical_engine,damageBodyPart);

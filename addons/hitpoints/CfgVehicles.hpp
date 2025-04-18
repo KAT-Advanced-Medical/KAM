@@ -15,7 +15,6 @@ class CfgVehicles {
             class ACE_Chest {
                 displayName = CSTRING(Chest);
                 selection = "spine3";
-                distance = 1.50;
                 distance = 1.5;
                 condition = "";
                 statement = "";
@@ -24,7 +23,14 @@ class CfgVehicles {
             class ACE_Head {
                 displayName = CSTRING(Head);
                 selection = "pilot";
-                distance = 1.50;
+                distance = 1.5;
+                condition = "";
+                statement = "";
+                exceptions[] = {"isNotSwimming"};
+            };
+            class ACE_Neck {
+                displayName = CSTRING(Neck);
+                selection = "Neck";
                 distance = 1.5;
                 condition = "";
                 statement = "";
@@ -41,7 +47,6 @@ class CfgVehicles {
             class ACE_ArmUpperLeft {
                 displayName = CSTRING(ArmUpperLeft);
                 selection = "LeftForeArm";
-                distance = 1.50;
                 distance = 1.5;
                 condition = "";
                 statement = "";
@@ -58,7 +63,6 @@ class CfgVehicles {
             class ACE_ArmUpperRight {
                 displayName = CSTRING(ArmUpperRight);
                 selection = "RightForeArm";
-                distance = 1.50;
                 distance = 1.5;
                 condition = "";
                 statement = "";
@@ -75,7 +79,6 @@ class CfgVehicles {
             class ACE_LegUpperLeft {
                 displayName = CSTRING(LegUpperLeft);
                 selection = "LKnee";
-                distance = 1.50;
                 distance = 1.5;
                 condition = "";
                 statement = "";
@@ -92,7 +95,6 @@ class CfgVehicles {
             class ACE_LegUpperRight {
                 displayName = CSTRING(LegUpperRight);
                 selection = "RKnee";
-                distance = 1.50;
                 distance = 1.5;
                 condition = "";
                 statement = "";

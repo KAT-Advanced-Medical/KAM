@@ -37,5 +37,41 @@
         <Key ID="STR_KAT_Hitpoints_LegUpperRight">
             <English>Upper Right Leg</English>
         </Key>
+        <Key ID="STR_KAT_Hitpoints_SelectHead">
+            <English>Select Head</English>
+        </Key>
+        <Key ID="STR_KAT_Hitpoints_SelectNeck">
+            <English>Select Neck</English>
+        </Key>
+        <Key ID="STR_KAT_Hitpoints_SelectChest">
+            <English>Select Chest</English>
+        </Key>
+        <Key ID="STR_KAT_Hitpoints_SelectTorso">
+            <English>Select Torso</English>
+        </Key>
+        <Key ID="STR_KAT_Hitpoints_SelectLeftArm">
+            <English>Select Lower Left Arm</English>
+        </Key>
+        <Key ID="STR_KAT_Hitpoints_SelectUpperLeftArm">
+            <English>Select Upper Left Arm</English>
+        </Key>
+        <Key ID="STR_KAT_Hitpoints_SelectRightArm">
+            <English>Select Lower Right Arm</English>
+        </Key>
+        <Key ID="STR_KAT_Hitpoints_SelectRightUpperArm">
+            <English>Select Upper Right Arm</English>
+        </Key>
+        <Key ID="STR_KAT_Hitpoints_SelectLeftLeg">
+            <English>Select Lower Left Leg</English>
+        </Key>
+        <Key ID="STR_KAT_Hitpoints_SelectLeftUpperLeg">
+            <English>Select Upper Left Leg</English>
+        </Key>
+        <Key ID="STR_KAT_Hitpoints_SelectRightLeg">
+            <English>Select Lower Right Leg</English>
+        </Key>
+        <Key ID="STR_KAT_Hitpoints_SelectRightUpperLeg">
+            <English>Select Upper Right Leg</English>
+        </Key>
     </Package>
 </Project>

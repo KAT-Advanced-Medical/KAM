@@ -32,7 +32,7 @@ private _fnc_condition = {
 
 {
     private _configName = configName _x;
-    private _actionName = format [QACEGVAR(interaction, _%1), _configName];
+    private _actionName = format [QACEGVAR(interaction,_%1), _configName];
     private _displayName = getText (_x >> "displayName");
     private _icon = getText (_x >> "icon");
 

@@ -25,7 +25,7 @@ private _ctrlIVLeftLeg = _ctrlGroup controlsGroupCtrl IDC_BODY_LEFTLEG_IV;
 private _ctrlIVRightLeg = _ctrlGroup controlsGroupCtrl IDC_BODY_RIGHTLEG_IV;
 private _ctrlIO = _ctrlGroup controlsGroupCtrl IDC_BODY_TORSO_IO;
 
-private _IVArray = _target getVariable [QGVAR(IV), [0,0,0,0,0,0]];
+private _IVArray = _target getVariable [QGVAR(IV), [0,0,0,0,0,0,0,0,0,0,0,0]];
 
 {
     switch (_IVArray select (_forEachIndex + 2)) do {

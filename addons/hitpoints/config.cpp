@@ -1,20 +1,23 @@
 #include "script_component.hpp"
 
 class CfgPatches {
-    class ADDON {
+    class ADDON    {
         name = COMPONENT_NAME;
         units[] = {};
         weapons[] = {};
-        requiredVersion = REQUIRED_VERSION;
+        magazines[] = { };
         requiredAddons[] = {
-            "A3_Data_F_Tank_Loadorder",
-            "cba_main",
-            "ace_main",
-            "ace_medical"
+            "kat_main",
+            "ace_medical",
         };
-        author = "Cplhardcore";
-        ECSTRING(main,URL);
+        author = "Katalam";
+        authors[] = {"Katalam"};
+        url = ECSTRING(main,URL);
         VERSION_CONFIG;
     };
 };
 
+#include "ACE_Medical_Injuries.hpp"
+#include "CfgFunctions.hpp"
+#include "CfgVehicles.hpp"
+#include "gui.hpp"

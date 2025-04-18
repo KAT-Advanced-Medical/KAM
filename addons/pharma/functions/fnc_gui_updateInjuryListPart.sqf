@@ -20,7 +20,7 @@
 
 params ["_ctrl", "_target", "_selectionN", "_entries"];
 
-private _placed = _target getVariable [QGVAR(IV), [0,0,0,0,0,0]];
+private _placed = _target getVariable [QGVAR(IV), [0,0,0,0,0,0,0,0,0,0,0,0]];
 private _IVactual = _placed select _selectionN;
 
 if (_IVactual > 0) then {

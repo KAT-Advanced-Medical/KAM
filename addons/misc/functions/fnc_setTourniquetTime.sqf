@@ -19,7 +19,7 @@
 params ["_patient", "_bodyPart"];
 
 private _partIndex = ALL_BODY_PARTS find toLower _bodyPart;
-private _tourniquetsDisplay = _patient getVariable [QEGVAR(circulation,tourniquetTime), [0,0,0,0,0,0]];
+private _tourniquetsDisplay = _patient getVariable [QEGVAR(circulation,tourniquetTime), [0,0,0,0,0,0,0,0,0,0,0,0]];
 
 _tourniquetsDisplay set [_partIndex, ([dayTime, "HH:MM"] call BIS_fnc_timeToString)];
 

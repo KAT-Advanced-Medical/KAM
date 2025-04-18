@@ -39,7 +39,7 @@ private _bodyPartBloodLoss = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
 
     private _selected = _forEachIndex == _selectionN;
     private _ctrlSelected = _ctrlGroup controlsGroupCtrl _selectedIDC;
-    _ctrlSelected ctrlSetTextColor GVAR(bodypartOutlineColor);
+    _ctrlSelected ctrlSetTextColor ACEGVAR(medical_gui,bodypartOutlineColor);
     _ctrlSelected ctrlShow _selected;
 
     // Show or hide the tourniquet icon
@@ -61,7 +61,7 @@ private _bodyPartBloodLoss = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
                 _ctrlBone ctrlSetTextColor [1, 0, 0, 1];
             };
             case -1: {
-                if (EGVAR(medical,fractures) in [4, 5, 6, 7]) then {
+                if (ACEGVAR(medical,fractures) in [4, 5, 6, 7]) then {
                     _ctrlBone ctrlShow true;
                     _ctrlBone ctrlSetTextColor [0, 0, 1, 1];
                 } else {
@@ -74,22 +74,22 @@ private _bodyPartBloodLoss = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
     // Update body part color based on blood loss and damage
     private _bloodLoss = _bodyPartBloodLoss select _forEachIndex;
     private _bodyPartColor = if (_bloodLoss > 0) then {
-        [_bloodLoss] call FUNC(bloodLossToRGBA);
+        [_bloodLoss] call ACEFUNC(medical_gui,bloodLossToRGBA);
     } else {
         private _damage = _bodyPartDamage select _forEachIndex;
         // _damageThreshold here indicates how close unit is to guaranteed death via sum of trauma, so use the same multipliers used in medical_damage/functions/fnc_determineIfFatal.sqf
         // TODO: make multipliers for head and torso a macro in medical_engine/script_macros_medical.hpp
         switch (true) do { // torso damage threshold doesn't need scaling
             case (_forEachIndex > 7): { // legs: index 8,9,10,11
-                if (EGVAR(medical,limbDamageThreshold) != 0 && {[false, !isPlayer _target, true] select EGVAR(medical,useLimbDamage)}) then { // Just indicate how close to the limping threshold we are
-                    _damageThreshold = _damageThreshold * EGVAR(medical,limbDamageThreshold);
+                if (ACEGVAR(medical,limbDamageThreshold) != 0 && {[false, !isPlayer _target, true] select ACEGVAR(medical,useLimbDamage)}) then { // Just indicate how close to the limping threshold we are
+                    _damageThreshold = _damageThreshold * ACEGVAR(medical,limbDamageThreshold);
                 } else {
                     _damageThreshold = LIMPING_DAMAGE_THRESHOLD * 4;
                 };
             };
             case (_forEachIndex > 3): { // arms: index 4,5,6,7
-                if (EGVAR(medical,limbDamageThreshold) != 0 && {[false, !isPlayer _target, true] select EGVAR(medical,useLimbDamage)}) then { // Just indicate how close to the fracture threshold we are
-                    _damageThreshold = _damageThreshold * EGVAR(medical,limbDamageThreshold);
+                if (ACEGVAR(medical,limbDamageThreshold) != 0 && {[false, !isPlayer _target, true] select ACEGVAR(medical,useLimbDamage)}) then { // Just indicate how close to the fracture threshold we are
+                    _damageThreshold = _damageThreshold * ACEGVAR(medical,limbDamageThreshold);
                 } else {
                     _damageThreshold = FRACTURE_DAMAGE_THRESHOLD * 4;
                 };
@@ -102,7 +102,7 @@ private _bodyPartBloodLoss = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
             };
         };
         _damage = (_damage / (0.01 max _damageThreshold)) min 1;
-        [_damage] call FUNC(damageToRGBA);
+        [_damage] call ACEFUNC(medical_gui,damageToRGBA);
     };
 
     private _ctrlBodyPart = _ctrlGroup controlsGroupCtrl _bodyPartIDC;
@@ -122,4 +122,4 @@ private _bodyPartBloodLoss = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
     [IDC_BODY_LEGUPPERRIGHT, IDC_BODY_LEGUPPERRIGHT_S, IDC_BODY_LEGUPPERRIGHT_T, IDC_BODY_LEGUPPERRIGHT_B]
 ];
 
-[QGVAR(updateBodyImage), [_ctrlGroup, _target, _selectionN]] call CBA_fnc_localEvent;
+[QACEGVAR(medical_gui,updateBodyImage), [_ctrlGroup, _target, _selectionN]] call CBA_fnc_localEvent;

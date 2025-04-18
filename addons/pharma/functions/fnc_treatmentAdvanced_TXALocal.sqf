@@ -19,7 +19,7 @@
 params ["_patient", "_bodyPart"];
 
 private _partIndex = ALL_BODY_PARTS find toLower _bodyPart;
-private _IVarray = _patient getVariable [QGVAR(IV), [0,0,0,0,0,0]];
+private _IVarray = _patient getVariable [QGVAR(IV), [0,0,0,0,0,0,0,0,0,0,0,0]];
 private _IVactual = _IVarray select _partIndex;
 private _countTXA = ([_patient, "TXA"] call ACEFUNC(medical_status,getMedicationCount)) select 1;
 private _allowStack = missionNamespace getVariable [QGVAR(allowStackScript_TXA), true];
