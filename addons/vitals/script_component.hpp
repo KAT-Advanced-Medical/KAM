@@ -1,5 +1,5 @@
 #define COMPONENT vitals
-#define COMPONENT_BEAUTIFIED KAT - Vitals
+#define COMPONENT_BEAUTIFIED Vitals
 #include "\x\kat\addons\main\script_mod.hpp"
 
 // #define DEBUG_MODE_FULL

@@ -75,7 +75,7 @@ if (_notInVehicle) then {
         "CPR_MONITOR" cutText ["", "PLAIN",0,true];
         _patient setVariable [QGVAR(deviceCode), 0, true];
     };
-    
+
     switch (true) do {
         case (_deviceCode == 2): {
             if ((_patient getVariable [QGVAR(DefibrillatorPads_Connected),false] && ((_patient getVariable [QGVAR(Defibrillator_Provider),[-1,-1,-1]] select 2) isEqualTo 'kat_X_AED')) || (_patient getVariable [QGVAR(AED_X_VitalsMonitor_Connected),false])) then {
@@ -90,11 +90,11 @@ if (_notInVehicle) then {
                 GVAR(CPRDisplayActive) = false;
             };
         };
-        case (_deviceCode == 1): { 
+        case (_deviceCode == 1): {
             if ((_patient getVariable [QEGVAR(breathing,pulseoximeter), false])) then {
                 if !(GVAR(PulseOxDisplay)) then {
                     "CPR_MONITOR" cutText ["", "PLAIN",0,true];
-                    "CPR_MONITOR" cutRsc ["CPR_PulseOx", "PLAIN", 0, true]; 
+                    "CPR_MONITOR" cutRsc ["CPR_PulseOx", "PLAIN", 0, true];
                     GVAR(PulseOxDisplay) = true;
                     [_medic, GVAR(CPRTarget)] call FUNC(PulseOx_ViewMonitor);
                 };
@@ -109,7 +109,7 @@ if (_notInVehicle) then {
 
 [{
     params ["_medic", "_patient", "_notInVehicle", "_CPRStartTime"];
-    
+
     [LLSTRING(StopCPR), LLSTRING(ChangeCPRDevice), ""] call ACEFUNC(interaction,showMouseHint);
     [LLSTRING(StartCPR), 1.5, _medic] call ACEFUNC(common,displayTextStructured);
 
@@ -119,7 +119,7 @@ if (_notInVehicle) then {
 
         private _patientCondition = (!(IS_UNCONSCIOUS(_patient)) && alive _patient || _patient isEqualTo objNull);
         private _medicCondition = (!(alive _medic) || IS_UNCONSCIOUS(_medic) || _medic isEqualTo objNull);
-        private _vehicleCondition = !(objectParent _medic isEqualTo objectParent _patient);
+        private _vehicleCondition = (objectParent _medic isNotEqualTo objectParent _patient);
         private _distanceCondition = (_patient distance2D _medic > ACEGVAR(medical_gui,maxDistance));
 
         if (_patientCondition || _medicCondition || (_patient getVariable [QACEGVAR(medical,CPR_provider), objNull]) isEqualTo objNull || !(_medic getVariable [QGVAR(isPerformingCPR), false]) || dialog || {(!_notInVehicle && _vehicleCondition) || {(_notInVehicle && _distanceCondition)}}) exitWith { // Stop CPR
@@ -127,7 +127,7 @@ if (_notInVehicle) then {
 
             _medic setVariable [QGVAR(isPerformingCPR), false, true];
 
-            if !(_patient getVariable [QACEGVAR(medical,CPR_provider), objNull] isEqualTo objNull) then {
+            if (_patient getVariable [QACEGVAR(medical,CPR_provider), objNull] isNotEqualTo objNull) then {
                 _patient setVariable [QACEGVAR(medical,CPR_provider), objNull, true];
             };
 
@@ -190,7 +190,7 @@ if (_patient getVariable [QGVAR(RhythmAnalyzed), false]) then {
     [{
         params ["_medic", "_patient"];
 
-        if(!((_patient getVariable [QACEGVAR(medical,CPR_provider), objNull]) isEqualTo objNull) && _patient getVariable [QGVAR(DefibrillatorPads_Connected), false] && !(_patient getVariable [QGVAR(DefibrillatorInUse), false])) then {
+        if(((_patient getVariable [QACEGVAR(medical,CPR_provider), objNull]) isNotEqualTo objNull) && _patient getVariable [QGVAR(DefibrillatorPads_Connected), false] && !(_patient getVariable [QGVAR(DefibrillatorInUse), false])) then {
             private _provider = _patient getVariable QGVAR(Defibrillator_Provider);
             private _source = _medic;
 

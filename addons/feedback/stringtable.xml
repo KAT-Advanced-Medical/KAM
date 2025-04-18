@@ -1,55 +1,63 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Project name="KAT">
     <Package name="Feedback">
-        <Key ID="STR_KAT_Feedback_SETTING_lowSpO2_display">
-            <English>Low SpO2 warning level</English>
-            <Spanish>Nivel de Sp02 bajo para aviso</Spanish>
-            <German>Schwellwert für niedrigen SpO2</German>
-            <French>Niveau d'alerte de SpO2 basse</French>
-            <Chinese>警告 SpO2 過低</Chinese>
-            <Japanese>低SpO2警告のレベル</Japanese>
-            <Korean>낮은 산소포화도 경고 수준</Korean>
-            <Italian>Livello di allerta bassa SPO2</Italian>
-            <Portuguese>Nível de alerta de SpO2 baixo</Portuguese>
-            <Polish>Ostrzeżenie o niskim SpO2</Polish>
-            <Czech>Hodnota SpO2 pro varování o nízkém SpO2</Czech>
-            <Finnish>Matala SpO2-varoitustaso</Finnish>
-            <Russian>Низкий уровень предупреждения SpO2</Russian>
-            <Chinesesimp>低SpO2警告级别</Chinesesimp>
-        </Key>
-        <Key ID="STR_KAT_Feedback_SETTING_lowSpO2_DESC">
-            <English>Lets you change the SpO2 Value at which you get the Flashing warning indicator and stamina loss effect</English>
-            <Spanish>Te permite bajar el nivel de Sp02 a partir del cual se empiezan a efectuar flashazos negros y se pierde resistencia</Spanish>
-            <German>Definiert den SpO2 Wert, bei welchem der Ausdauerverlust und der visuelle Effekt (dunkle, pulsierende Vignettierung) eintritt</German>
-            <French>Règle la valeur de SpO2 à laquelle les flashs d'alerte et la perte d'endurance apparaissent</French>
-            <Chinese>允許您更改在 閃爍警告指示 和 耐力損失效果 發生的SpO2值</Chinese>
-            <Japanese>画面点滅による警告とスタミナ損失効果が発生するSpO2の値を変更できます</Japanese>
-            <Korean>깜빡임 경고 표시 및 스태미나 손실 효과를 얻게 되는 산소포화도 값을 변경합니다.</Korean>
-            <Italian>Ti permette di cambiare il valore di SPO2 al quale ricevi l'indicatore lampeggiante d'allerta e l'effetto di perdita della stamina </Italian>
-            <Portuguese>Permite alterar o valor SpO2 no qual você é avisado e sofre perda de stamina</Portuguese>
-            <Polish>Pozwala zmienić poziom SpO2, poniżej którego będzie widać ostrzeżenie w postaci migotania ekranu i zmniejszonej staminy</Polish>
-            <Czech>Nastavení hodnoty SpO2 při které se aktivují varovné efekty problikávání obrazovky a ztráta staminy</Czech>
-            <Finnish>Voit muuttaa SpO2-arvoa, jolla saat vilkkuvan varoituksen ja kestävyyden heikkenemisen</Finnish>
-            <Russian>Позволяет изменить значение SpO2, при котором вы получаете мигающий предупреждающий индикатор и эффект потери выносливости</Russian>
-            <Chinesesimp>允许您更改SpO2警告值，在该值下，您将获得闪烁警告指示器和耐力损失效果</Chinesesimp>
+        <Key ID="STR_KAT_Feedback_SETTING_OpioidEffect_DESC">
+            <English>Enables opioid effect on ketamine, fentanyl and pervitin</English>
+            <Czech>Povolit opioidní efekty ketaminu, fentanylu a pervitinu</Czech>
+            <French>Permet un effet opioïde sur la kétamine, le fentanyl et la pervitine</French>
+            <Italian>Abilita l'effetto degli oppioidi su ketamina, fentanil e pervitina</Italian>
+            <German>Ermöglicht eine Opioidwirkung auf Ketamin, Fentanyl und Pervitin</German>
+            <Japanese>ケタミン、フェンタニル、ペルビチンなどでオピオイドの効果を有効にします</Japanese>
+            <Chinese>啟用 K他命(氯胺酮)、芬太尼、冰毒(甲基苯丙胺) 等 鴉片類藥物的作用</Chinese>
+            <Chinesesimp>使阿片类药物对氯胺酮、芬太尼和帕维汀产生作用</Chinesesimp>
         </Key>
         <Key ID="STR_KAT_Feedback_SETTING_OpioidEffect_display">
             <English>Enable opioid effect</English>
-            <Chinese>啟用鴉片類藥物效果</Chinese>
-            <Japanese>オピオイド効果を有効化</Japanese>
-            <German>Opioidwirkung aktivieren</German>
-            <Italian>Abilita l'effetto degli oppioidi</Italian>
+            <Czech>Povolit opioidní efekty</Czech>
             <French>Activer l'effet opioïde</French>
+            <Italian>Abilita l'effetto degli oppioidi</Italian>
+            <German>Opioidwirkung aktivieren</German>
+            <Japanese>オピオイド効果を有効化</Japanese>
+            <Chinese>啟用鴉片類藥物效果</Chinese>
             <Chinesesimp>启用阿片类药物作用</Chinesesimp>
         </Key>
-        <Key ID="STR_KAT_Feedback_SETTING_OpioidEffect_DESC">
-            <English>Enables opioid effect on ketamine, fentanyl and pervitin</English>
-            <Chinese>啟用 K他命(氯胺酮)、芬太尼、冰毒(甲基苯丙胺) 等 鴉片類藥物的作用</Chinese>
-            <Japanese>ケタミン、フェンタニル、ペルビチンなどでオピオイドの効果を有効にします</Japanese>
-            <German>Ermöglicht eine Opioidwirkung auf Ketamin, Fentanyl und Pervitin</German>
-            <Italian>Abilita l'effetto degli oppioidi su ketamina, fentanil e pervitina</Italian>
-            <French>Permet un effet opioïde sur la kétamine, le fentanyl et la pervitine</French>
-            <Chinesesimp>使阿片类药物对氯胺酮、芬太尼和帕维汀产生作用</Chinesesimp>
+        <Key ID="STR_KAT_Feedback_SETTING_lowSpO2_DESC">
+            <English>Lets you change the SpO2 Value at which you get the Flashing warning indicator and stamina loss effect</English>
+            <Czech>Nastavení hodnoty SpO2 při které se aktivují varovné efekty problikávání obrazovky a ztráta staminy</Czech>
+            <French>Règle la valeur de SpO2 à laquelle les flashs d'alerte et la perte d'endurance apparaissent</French>
+            <Spanish>Te permite bajar el nivel de Sp02 a partir del cual se empiezan a efectuar flashazos negros y se pierde resistencia</Spanish>
+            <Italian>Ti permette di cambiare il valore di SPO2 al quale ricevi l'indicatore lampeggiante d'allerta e l'effetto di perdita della stamina</Italian>
+            <Polish>Pozwala zmienić poziom SpO2, poniżej którego będzie widać ostrzeżenie w postaci migotania ekranu i zmniejszonej staminy</Polish>
+            <Portuguese>Permite alterar o valor SpO2 no qual você é avisado e sofre perda de stamina</Portuguese>
+            <Russian>Позволяет изменить значение SpO2, при котором вы получаете мигающий предупреждающий индикатор и эффект потери выносливости</Russian>
+            <German>Definiert den SpO2 Wert, bei welchem der Ausdauerverlust und der visuelle Effekt (dunkle, pulsierende Vignettierung) eintritt</German>
+            <Korean>깜빡임 경고 표시 및 스태미나 손실 효과를 얻게 되는 산소포화도 값을 변경합니다.</Korean>
+            <Japanese>画面点滅による警告とスタミナ損失効果が発生するSpO2の値を変更できます</Japanese>
+            <Chinese>允許您更改在 閃爍警告指示 和 耐力損失效果 發生的SpO2值</Chinese>
+            <Chinesesimp>允许您更改SpO2警告值，在该值下，您将获得闪烁警告指示器和耐力损失效果</Chinesesimp>
+            <Finnish>Voit muuttaa SpO2-arvoa, jolla saat vilkkuvan varoituksen ja kestävyyden heikkenemisen</Finnish>
+        </Key>
+        <Key ID="STR_KAT_Feedback_SETTING_lowSpO2_display">
+            <English>Low SpO2 warning level</English>
+            <Czech>Hodnota SpO2 pro varování o nízkém SpO2</Czech>
+            <French>Niveau d'alerte de SpO2 basse</French>
+            <Spanish>Nivel de Sp02 bajo para aviso</Spanish>
+            <Italian>Livello di allerta bassa SPO2</Italian>
+            <Polish>Ostrzeżenie o niskim SpO2</Polish>
+            <Portuguese>Nível de alerta de SpO2 baixo</Portuguese>
+            <Russian>Низкий уровень предупреждения SpO2</Russian>
+            <German>Schwellwert für niedrigen SpO2</German>
+            <Korean>낮은 산소포화도 경고 수준</Korean>
+            <Japanese>低SpO2警告のレベル</Japanese>
+            <Chinese>警告 SpO2 過低</Chinese>
+            <Chinesesimp>低SpO2警告级别</Chinesesimp>
+            <Finnish>Matala SpO2-varoitustaso</Finnish>
+        </Key>
+        <Key ID="STR_KAT_Feedback_cba_name">
+            <English>KAT - ADV Medical: Feedback</English>
+            <Japanese>KAM - フィードバック</Japanese>
+            <French>KAT - ADV Medical : Retour d'expérience</French>
+            <German>KAT - ADV Medical: Feedback</German>
         </Key>
     </Package>
 </Project>

@@ -136,7 +136,7 @@ class CfgVehicles {
             class Radius
             {
                 displayName = CSTRING(UI_max_range);
-                tooltip = CSTRING(GasModule_min_radius_dcs);
+                tooltip = CSTRING(GasModule_max_radius_dcs);
                 typeName = "NUMBER";
                 defaultValue = 20;
             };
