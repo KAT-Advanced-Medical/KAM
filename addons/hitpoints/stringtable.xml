@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project name="KAT">
+    <Package name="Hitpoints">
+        <Key ID="STR_KAT_Hitpoints_Torso">
+            <English>Torso</English>
+        </Key>
+        <Key ID="STR_KAT_Hitpoints_Chest">
+            <English>Chest</English>
+        </Key>
+        <Key ID="STR_KAT_Hitpoints_Neck">
+            <English>Neck</English>
+        </Key>
+        <Key ID="STR_KAT_Hitpoints_Head">
+            <English>Head</English>
+        </Key>
+        <Key ID="STR_KAT_Hitpoints_ArmLeft">
+            <English>Left Arm</English>
+        </Key>
+        <Key ID="STR_KAT_Hitpoints_ArmUpperLeft">
+            <English>Upper Left Arm</English>
+        </Key>
+        <Key ID="STR_KAT_Hitpoints_ArmRight">
+            <English>Right Arm</English>
+        </Key>
+        <Key ID="STR_KAT_Hitpoints_ArmUpperRight">
+            <English>Upper Right Arm</English>
+        </Key>
+        <Key ID="STR_KAT_Hitpoints_LegLeft">
+            <English>Left Leg</English>
+        </Key>
+        <Key ID="STR_KAT_Hitpoints_LegUpperLeft">
+            <English>Upper Left Leg</English>
+        </Key>
+        <Key ID="STR_KAT_Hitpoints_LegRight">
+            <English>Right Leg</English>
+        </Key>
+        <Key ID="STR_KAT_Hitpoints_LegUpperRight">
+            <English>Upper Right Leg</English>
+        </Key>
+    </Package>
+</Project>
