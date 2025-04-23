@@ -8,6 +8,7 @@ class ACE_Medical_Treatment_Actions {
     class CPR: BasicBandage {
         displayNameProgress = "";
         treatmentTime = 0.01;
+        allowedSelections[] = {"Chest"};
         callbackStart = "";
         callbackProgress = "";
         callbackFailure = "";
@@ -29,7 +30,7 @@ class ACE_Medical_Treatment_Actions {
         animationPatientUnconsciousExcludeOn[] = {"ainjppnemstpsnonwrfldnon", "kat_recoveryposition"};
     };
     class CheckBloodPressure: CheckPulse {
-        allowedSelections[] = {"LeftArm", "RightArm", "LeftLeg", "RightLeg"};
+        allowedSelections[] = {"LeftArm", "RightArm", "LeftLeg", "RightLeg", "UpperLeftArm", "UpperRightArm", "UpperLeftLeg", "UpperRightLeg"};
         callbackSuccess = QFUNC(checkBloodPressure);
         animationPatient = "";
         animationPatientUnconscious = "AinjPpneMstpSnonWrflDnon_rolltoback";
@@ -39,7 +40,7 @@ class ACE_Medical_Treatment_Actions {
         displayName = CSTRING(Actions_CheckBloodPressureCuff);
         displayNameProgress = CSTRING(Actions_CheckingBloodPressureCuff);
         treatmentTime = QGVAR(treatmentTime_BPcuff);
-        allowedSelections[] = {"LeftArm", "RightArm", "LeftLeg", "RightLeg"};
+        allowedSelections[] = {"UpperLeftArm", "UpperRightArm", "UpperLeftLeg", "UpperRightLeg"};
         callbackSuccess = QFUNC(checkBloodPressureCuff);
         medicRequired = QGVAR(medLvl_BPCuff);
         items[] = {"kat_BPCuff"};
@@ -51,7 +52,7 @@ class ACE_Medical_Treatment_Actions {
         displayName = CSTRING(Actions_CheckHRSteth);
         displayNameProgress = CSTRING(Actions_CheckingHRSteth);
         treatmentTime = QGVAR(treatmentTime_StethHR);
-        allowedSelections[] = {"LeftArm", "RightArm", "LeftLeg", "RightLeg", "Body"};
+        allowedSelections[] = {"UpperLeftArm", "UpperRightArm", "UpperLeftLeg", "UpperRightLeg", "Chest"};
         callbackSuccess = QFUNC(checkPulseSteth);
         medicRequired = QGVAR(medLvl_StethHR);
         items[] = {"kat_stethoscope"};
@@ -105,7 +106,7 @@ class ACE_Medical_Treatment_Actions {
     class AnalyzeRhythm: CheckPulse {
         displayName = CSTRING(AnalyzeRhythm);
         displayNameProgress = "";
-        allowedSelections[] = {"Body"};
+        allowedSelections[] = {"Chest"};
         icon = QPATHTOF(ui\icon_aed_shock.paa);
         treatmentTime = 0.01;
         items[] = {};
@@ -121,7 +122,7 @@ class ACE_Medical_Treatment_Actions {
     class AEDShock: CheckPulse {
         displayName = CSTRING(Defibrillator_Action_Shock);
         displayNameProgress = "";
-        allowedSelections[] = {"Body"};
+        allowedSelections[] = {"Chest"};
         icon = QPATHTOF(ui\icon_aed_shock.paa);
         category = "advanced";
         items[] = {};
@@ -219,7 +220,7 @@ class ACE_Medical_Treatment_Actions {
     class AEDXConnectVitalsMonitor: AEDXPlacePads {
         displayName = CSTRING(AEDX_Action_ConnectMonitor);
         displayNameProgress = CSTRING(AEDX_Action_Connecting_Progress);
-        allowedSelections[] = {"LeftArm", "RightArm"};
+        allowedSelections[] = {"UpperLeftArm", "UpperRightArm"};
         category = "examine";
         items[] = {"kat_X_AED"};
         treatmentTime = QGVAR(AEDX_VitalsMonitor_AttachTime);
@@ -253,7 +254,7 @@ class ACE_Medical_Treatment_Actions {
         category = "examine";
         treatmentLocations = 0;
         medicRequired = QGVAR(medLvl_AED_X);
-        allowedSelections[] = {"Head","LeftArm","RightArm","Body","LeftLeg","RightLeg"};
+        allowedSelections[] = {"Head","LeftArm","RightArm","Body","LeftLeg","RightLeg", "Chest", "UpperLeftArm", "UpperRightArm", "UpperLeftLeg", "UpperRightLeg", "Neck"};
         treatmentTime = 0.01;
         allowSelfTreatment = 0;
         condition = QUOTE((_patient getVariable [ARR_2(QQGVAR(DefibrillatorPads_Connected),false)] || _patient getVariable [ARR_2(QQGVAR(AED_X_VitalsMonitor_Connected),false)]) && ((_patient getVariable [ARR_2(QQGVAR(Defibrillator_Provider),[ARR_3(-1,-1,-1)])]) select 2 isEqualTo 'kat_X_AED') && (_patient getVariable [ARR_2(QQGVAR(AED_X_VitalsMonitor_VolumePatient),false)]));
@@ -272,7 +273,7 @@ class ACE_Medical_Treatment_Actions {
     };
     class AEDXMeasureBloodPressure: AnalyzeRhythm {
         displayName = CSTRING(AEDX_Monitor_MeasureBloodPressure);
-        allowedSelections[] = {"Head","LeftArm","RightArm","Body","LeftLeg","RightLeg"};
+        allowedSelections[] = {"Head","LeftArm","RightArm","Body","LeftLeg","RightLeg", "Chest", "UpperLeftArm", "UpperRightArm", "UpperLeftLeg", "UpperRightLeg", "Neck"};
         icon = QPATHTOF(ui\icon_aed_pads.paa);
         condition = QUOTE(_patient getVariable [ARR_2(QQGVAR(AED_X_VitalsMonitor_Connected),false)] && (missionNamespace getVariable [ARR_2(QQGVAR(AED_X_VitalsMonitor_BloodPressureInterval),0)] > 0));
         callbackSuccess = QUOTE(_patient call FUNC(measureBloodPressure));
@@ -284,7 +285,7 @@ class ACE_Medical_Treatment_Actions {
         icon = QPATHTOF(ui\icon_aedx_monitor.paa);
         category = "examine";
         medicRequired = QGVAR(medLvl_AED_X);
-        allowedSelections[] = {"Head","LeftArm","RightArm","Body","LeftLeg","RightLeg"};
+        allowedSelections[] = {"Head","LeftArm","RightArm","Body","LeftLeg","RightLeg", "Chest", "UpperLeftArm", "UpperRightArm", "UpperLeftLeg", "UpperRightLeg", "Neck"};
         treatmentTime = 0.01;
         items[] = {};
         consumeItem = 0;

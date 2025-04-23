@@ -105,7 +105,7 @@ class ACE_Medical_Treatment_Actions {
         displayNameProgress = CSTRING(RecoveryPosition_displayNameProgress);
         category="advanced";
         treatmentTime = QGVAR(RecoveryPosition_Time);
-        allowedSelections[] = {"Body"};
+        allowedSelections[] = {"Chest", "Body"};
         medicRequired = 0;
         items[] = {};
         condition = QUOTE((!([_patient] call ACEFUNC(common,isAwake)) && (missionNamespace getVariable [ARR_2(QQGVAR(enable),true)]) && !(_patient getVariable [ARR_2(QQGVAR(recovery),false)])) && [ARR_2(_medic,_patient)] call FUNC(checkRecovery));
@@ -120,7 +120,7 @@ class ACE_Medical_Treatment_Actions {
         displayNameProgress = CSTRING(CancelRecoveryPosition_displayNameProgress);
         category="advanced";
         treatmentTime = QGVAR(CancelRecoveryPosition_Time);
-        allowedSelections[] = {"Body"};
+        allowedSelections[] = {"Chest", "Body"};
         medicRequired = 0;
         items[] = {};
         condition = QUOTE(!([_patient] call ACEFUNC(common,isAwake)) && (missionNamespace getVariable [ARR_2(QQGVAR(enable),true)]) && (_patient getVariable [ARR_2(QQGVAR(recovery),false)]));

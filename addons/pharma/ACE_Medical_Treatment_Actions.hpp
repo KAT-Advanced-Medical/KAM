@@ -8,7 +8,7 @@ class ACE_Medical_Treatment_Actions {
     class CPR;
 
     class BloodIV: BasicBandage {
-        allowedSelections[] = {"Body", "LeftArm", "RightArm", "LeftLeg", "RightLeg"};
+        allowedSelections[] = {"Chest", "LeftArm", "RightArm", "LeftLeg", "RightLeg"};
         medicRequired = QUOTE(ace_medical_treatment_medicIV);
         condition = QUOTE(!(GVAR(RequireInsIV)) || FUNC(removeIV));
         callbackSuccess = "[_medic, _patient, _bodyPart, _className, _itemUser, _usedItem] call ace_medical_treatment_fnc_ivBag; [_patient, -800, 16] call kat_pharma_fnc_fluid;";
@@ -136,7 +136,7 @@ class ACE_Medical_Treatment_Actions {
     };
     class EACA: Carbonate {
         displayName = CSTRING(Take_EACA);
-        allowedSelections[] = {"Body", "LeftArm", "RightArm", "LeftLeg", "RightLeg"};
+        allowedSelections[] = {"Chest", "LeftArm", "RightArm", "LeftLeg", "RightLeg"};
         allowSelfTreatment = 1;
         medicRequired = QGVAR(medLvl_EACA);
         treatmentTime = QGVAR(treatmentTime_EACA);
@@ -147,7 +147,7 @@ class ACE_Medical_Treatment_Actions {
     };
     class TXA: EACA {
         displayName = CSTRING(Take_TXA);
-        allowedSelections[] = {"Body", "LeftArm", "RightArm", "LeftLeg", "RightLeg"};
+        allowedSelections[] = {"Chest", "LeftArm", "RightArm", "LeftLeg", "RightLeg"};
         allowSelfTreatment = 1;
         medicRequired = QGVAR(medLvl_TXA);
         treatmentTime = QGVAR(treatmentTime_TXA);
@@ -182,7 +182,7 @@ class ACE_Medical_Treatment_Actions {
     };
     class Norepinephrine: EACA {
         displayName = CSTRING(Take_Norep);
-        allowedSelections[] = {"Body", "LeftArm", "RightArm", "LeftLeg", "RightLeg"};
+        allowedSelections[] = {"Chest", "LeftArm", "RightArm", "LeftLeg", "RightLeg"};
         allowSelfTreatment = 1;
         medicRequired = QGVAR(medLvl_Norepinephrine);
         treatmentTime = QGVAR(treatmentTime_Norepinephrine);
@@ -193,7 +193,7 @@ class ACE_Medical_Treatment_Actions {
     class Phenylephrine: EACA {
         displayName = CSTRING(Take_Phenyl);
         displayNameProgress = CSTRING(Using);
-        allowedSelections[] = {"Body", "LeftArm", "RightArm", "LeftLeg", "RightLeg"};
+        allowedSelections[] = {"Chest", "LeftArm", "RightArm", "LeftLeg", "RightLeg"};
         allowSelfTreatment = 1;
         medicRequired = QGVAR(medLvl_Phenylephrine);
         treatmentTime = QGVAR(treatmentTime_Phenylephrine);
@@ -214,7 +214,7 @@ class ACE_Medical_Treatment_Actions {
     };
     class Nitroglycerin: EACA {
         displayName = CSTRING(Take_Nitro);
-        allowedSelections[] = {"Body", "LeftArm", "RightArm", "LeftLeg", "RightLeg"};
+        allowedSelections[] = {"Chest", "LeftArm", "RightArm", "LeftLeg", "RightLeg"};
         allowSelfTreatment = 1;
         medicRequired = QGVAR(medLvl_Nitroglicerin);
         treatmentTime = QGVAR(treatmentTime_Nitroglycerin);
@@ -224,7 +224,7 @@ class ACE_Medical_Treatment_Actions {
     };
     class Amiodarone: EACA {
         displayName = CSTRING(Take_Amiodarone);
-        allowedSelections[] = {"Body", "LeftArm", "RightArm", "LeftLeg", "RightLeg"};
+        allowedSelections[] = {"Chest", "LeftArm", "RightArm", "LeftLeg", "RightLeg"};
         allowSelfTreatment = 1;
         medicRequired = QGVAR(medLvl_Amiodarone);
         treatmentTime = QGVAR(treatmentTime_Amiodarone);
@@ -234,7 +234,7 @@ class ACE_Medical_Treatment_Actions {
     };
     class Lidocaine: EACA {
         displayName = CSTRING(Take_Lidocaine);
-        allowedSelections[] = {"Body", "LeftArm", "RightArm", "LeftLeg", "RightLeg"};
+        allowedSelections[] = {"Chest", "LeftArm", "RightArm", "LeftLeg", "RightLeg"};
         allowSelfTreatment = 1;
         medicRequired = QGVAR(medLvl_Lidocain);
         treatmentTime = QGVAR(treatmentTime_Lidocaine);
@@ -256,7 +256,7 @@ class ACE_Medical_Treatment_Actions {
     };
     class Ketamine: EACA {
         displayName = CSTRING(Take_Ketamine);
-        allowedSelections[] = {"Body", "LeftArm", "RightArm", "LeftLeg", "RightLeg"};
+        allowedSelections[] = {"Chest", "LeftArm", "RightArm", "LeftLeg", "RightLeg"};
         allowSelfTreatment = 1;
         medicRequired = QGVAR(medLvl_Ketamine);
         treatmentTime = QGVAR(treatmentTime_Ketamine);
@@ -266,7 +266,7 @@ class ACE_Medical_Treatment_Actions {
     };
     class Fentanyl: EACA {
         displayName = CSTRING(Take_Fentanyl);
-        allowedSelections[] = {"Body", "LeftArm", "RightArm", "LeftLeg", "RightLeg"};
+        allowedSelections[] = {"Chest", "LeftArm", "RightArm", "LeftLeg", "RightLeg"};
         allowSelfTreatment = 1;
         medicRequired = QGVAR(medLvl_Fentanyl);
         treatmentTime = QGVAR(treatmentTime_Fentanyl);
@@ -276,7 +276,7 @@ class ACE_Medical_Treatment_Actions {
     };
     class Nalbuphine: EACA {
         displayName = CSTRING(Take_Nalbuphine);
-        allowedSelections[] = {"Body", "LeftArm", "RightArm", "LeftLeg", "RightLeg"};
+        allowedSelections[] = {"Chest", "LeftArm", "RightArm", "LeftLeg", "RightLeg"};
         allowSelfTreatment = 1;
         medicRequired = QGVAR(medLvl_Nalbuphine);
         treatmentTime = QGVAR(treatmentTime_Nalbuphine);
@@ -317,7 +317,7 @@ class ACE_Medical_Treatment_Actions {
         displayNameProgress = CSTRING(Applying_IV);
         medicRequired = QGVAR(medLvl_ApplyIO);
         category = "advanced";
-        allowedSelections[] = {"Body"};
+        allowedSelections[] = {"Chest"};
         items[] = {"kat_IO_FAST"};
         condition = QUOTE(!([ARR_3(_player,_patient,_bodyPart)] call FUNC(removeIV)));
         treatmentTime = QGVAR(treatmentTime_ApplyIO);
@@ -329,7 +329,7 @@ class ACE_Medical_Treatment_Actions {
         displayName = CSTRING(Remove_IV);
         displayNameProgress = CSTRING(Removing_IV);
         category = "advanced";
-        allowedSelections[] = {"Body", "LeftArm", "RightArm", "LeftLeg", "RightLeg"};
+        allowedSelections[] = {"Chest", "LeftArm", "RightArm", "LeftLeg", "RightLeg"};
         treatmentTime = 3;
         items[] = {};
         condition = QFUNC(removeIV);
@@ -340,7 +340,7 @@ class ACE_Medical_Treatment_Actions {
         displayName = CSTRING(Etomidate_Use);
         category = "surgery";
         treatmentLocations = 0;
-        allowedSelections[] = {"Body", "LeftArm", "RightArm", "LeftLeg", "RightLeg"};
+        allowedSelections[] = {"Chest", "LeftArm", "RightArm", "LeftLeg", "RightLeg"};
         allowSelfTreatment = 0;
         medicRequired = QGVAR(medLvl_Etomidate);
         treatmentTime = QGVAR(treatmentTime_Etomidate);
@@ -352,7 +352,7 @@ class ACE_Medical_Treatment_Actions {
         displayName = CSTRING(Lorazepam_Use);
         category = "surgery";
         treatmentLocations = 0;
-        allowedSelections[] = {"Body", "LeftArm", "RightArm", "LeftLeg", "RightLeg"};
+        allowedSelections[] = {"Chest", "LeftArm", "RightArm", "LeftLeg", "RightLeg"};
         allowSelfTreatment = 0;
         medicRequired = QGVAR(medLvl_Lorazepam);
         treatmentTime = QGVAR(treatmentTime_Lorazepam);
@@ -364,7 +364,7 @@ class ACE_Medical_Treatment_Actions {
         displayName = CSTRING(Flumazenil_Use);
         category = "surgery";
         treatmentLocations = 0;
-        allowedSelections[] = {"Body", "LeftArm", "RightArm", "LeftLeg", "RightLeg"};
+        allowedSelections[] = {"Chest", "LeftArm", "RightArm", "LeftLeg", "RightLeg"};
         allowSelfTreatment = 0;
         medicRequired = QGVAR(medLvl_Flumezenil);
         treatmentTime = QGVAR(treatmentTime_Flumazenil);
@@ -375,7 +375,7 @@ class ACE_Medical_Treatment_Actions {
     class EpinephrineIV: EACA {
         displayName = CSTRING(Take_Epi);
         displayNameProgress = CSTRING(Using);
-        allowedSelections[] = {"Body", "LeftArm", "RightArm", "LeftLeg", "RightLeg"};
+        allowedSelections[] = {"Chest", "LeftArm", "RightArm", "LeftLeg", "RightLeg"};
         allowSelfTreatment = 1;
         medicRequired = QGVAR(medLvl_EpinephrineIV);
         treatmentTime = QGVAR(treatmentTime_EpinephrineIV);

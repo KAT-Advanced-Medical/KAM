@@ -32,7 +32,7 @@ ACEGVAR(medical_gui,actions) = [];
 
 if ("ace_dragging" call ACEFUNC(common,isModLoaded)) then {
     ACEGVAR(medical_gui,actions) pushBack [
-        localize(str_ace_dragging_drag), "drag",
+        ACELSTRING(dragging,drag), "drag",
         {ACE_player != ACEGVAR(medical_gui,target) && {[ACE_player, ACEGVAR(medical_gui,target)] call ACEFUNC(dragging,canDrag)}},
         {
             ACEGVAR(medical_gui,pendingReopen) = false;
@@ -41,7 +41,7 @@ if ("ace_dragging" call ACEFUNC(common,isModLoaded)) then {
     ];
 
     ACEGVAR(medical_gui,actions) pushBack [
-        localize(str_ace_dragging_carry), "drag",
+        ACELSTRING(dragging,carry), "drag",
         {ACE_player != ACEGVAR(medical_gui,target) && {[ACE_player, ACEGVAR(medical_gui,target)] call ACEFUNC(dragging,canCarry)}},
         {
             ACEGVAR(medical_gui,pendingReopen) = false;

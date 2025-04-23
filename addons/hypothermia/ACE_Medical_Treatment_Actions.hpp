@@ -7,7 +7,7 @@ class ACE_Medical_Treatment_Actions {
         condition = QUOTE(GVAR(hypothermiaActive));
         treatmentLocations = 0;
         treatmentTime = 5;
-        allowedSelections[] = {"Body", "LeftArm", "RightArm", "LeftLeg", "RightLeg"};
+        allowedSelections[] = {"LeftArm","RightArm","Body","LeftLeg","RightLeg", "Chest", "UpperLeftArm", "UpperRightArm", "UpperLeftLeg", "UpperRightLeg"};
         items[] = {"kat_handWarmer"};
         callbackSuccess = QFUNC(useHandWarmer);
     };
@@ -15,7 +15,7 @@ class ACE_Medical_Treatment_Actions {
         displayName = CSTRING(Apply_Warmer);
         displayNameProgress = CSTRING(perform);
         category = "advanced";
-        allowedSelections[] = {"Body", "LeftArm", "RightArm", "LeftLeg", "RightLeg"};
+        allowedSelections[] = {"Chest", "LeftArm", "RightArm", "LeftLeg", "RightLeg"};
         medicRequired = QACEGVAR(medical_treatment,medicIV);
         treatmentTime = 10;
         items[] = {"kat_fluidWarmer"};
@@ -37,7 +37,7 @@ class ACE_Medical_Treatment_Actions {
         displayName = CSTRING(Check_Temperature);
         displayNameProgress = CSTRING(Check_Temperature_Progress);
         category = "examine";
-        allowedSelections[] = {"Head"};
+        allowedSelections[] = {"Head","UpperLeftArm", "UpperRightArm", "UpperLeftLeg", "UpperRightLeg"};
         treatmentTime = 3;
         condition = QUOTE(GVAR(hypothermiaActive));
         callbackSuccess = QFUNC(checkTemperature);

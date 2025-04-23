@@ -1,5 +1,3 @@
-
-class CBA_Extended_EventHandlers;
 class CfgVehicles {
     class Man;
     class CAManBase: Man {
