@@ -20,4 +20,3 @@ class CfgPatches {
 #include "ACE_Medical_Injuries.hpp"
 #include "CfgFunctions.hpp"
 #include "CfgVehicles.hpp"
-#include "gui.hpp"

@@ -1,3 +1,4 @@
+PREP(collectActions);
 PREP(dumpBloodGas);
 PREP(handleABGShow);
 PREP(handleIVAdjust);
