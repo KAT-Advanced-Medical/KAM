@@ -22,8 +22,8 @@ ACEGVAR(medical_gui,actions) = [];
     private _configName = configName _x;
     private _displayName = getText (_x >> "displayName");
     private _category = getText (_x >> "category");
-    private _condition = compile format [QUOTE([ARR_4(ACE_player,ACEGVAR(medical_gui,target),%1 select ACEGVAR(medical_gui,selectedBodyPart),'%2')] call ace_medical_treatment_canTreatCached), ALL_BODY_PARTS, _configName];
-    private _statement = compile format [QUOTE([ARR_4(ACE_player,ACEGVAR(medical_gui,target),%1 select ACEGVAR(medical_gui,selectedBodyPart),'%2')] call ace_medical_treatment_treatment), ALL_BODY_PARTS, _configName];
+    private _condition = compile format [QUOTE([ARR_4(ACE_player,ACEGVAR(medical_gui,target),%1 select ACEGVAR(medical_gui,selectedBodyPart),'%2')] call ACEFUNC(medical_treatment,canTreatCached)), ALL_BODY_PARTS, _configName];
+    private _statement = compile format [QUOTE([ARR_4(ACE_player,ACEGVAR(medical_gui,target),%1 select ACEGVAR(medical_gui,selectedBodyPart),'%2')] call ACEFUNC(medical_treatment,treatment)), ALL_BODY_PARTS, _configName];
     private _items = getArray (_x >> "items");
 
     ACEGVAR(medical_gui,actions) pushBack [_displayName, _category, _condition, _statement, _items];
