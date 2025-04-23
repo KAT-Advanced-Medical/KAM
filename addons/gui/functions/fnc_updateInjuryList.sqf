@@ -168,30 +168,31 @@ _entries pushBack [localize _bodyPartName, [1, 1, 1, 1]];
 
 // Damage taken tooltip
 if (ACEGVAR(medical_gui,showDamageEntry)) then {
-    private _bodyPartDamage = (_target getVariable [QACEGVAR(medical,bodyPartDamage), [0, 0, 0, 0, 0, 0]]) select _selectionN;
+    private _bodyPartDamage = GET_BODYPART_DAMAGE(_target) select _selectionN;
     if (_bodyPartDamage > 0) then {
         private _damageThreshold = GET_DAMAGE_THRESHOLD(_target);
         switch (true) do {
-            case (_selectionN > 3): { // legs: index 4 & 5
+            case (_selectionN > 7): { // legs: index 4 & 5
                 if (ACEGVAR(medical,limbDamageThreshold) != 0 && {[false, !isPlayer _target, true] select ACEGVAR(medical,useLimbDamage)}) then { // Just indicate how close to the limping threshold we are
                     _damageThreshold = _damageThreshold * ACEGVAR(medical,limbDamageThreshold);
                 } else {
                     _damageThreshold = FRACTURE_DAMAGE_THRESHOLD * 4;
                 };
             };
-            case (_selectionN > 1): { // arms: index 2 & 3
+            case (_selectionN > 3): { // arms: index 2 & 3
                 if (ACEGVAR(medical,limbDamageThreshold) != 0 && {[false, !isPlayer _target, true] select ACEGVAR(medical,useLimbDamage)}) then { // Just indicate how close to the fracture threshold we are
                     _damageThreshold = _damageThreshold * ACEGVAR(medical,limbDamageThreshold);
                 } else {
                     _damageThreshold = FRACTURE_DAMAGE_THRESHOLD * 4;
                 };
             };
-            case (_selectionN == 0): { // head: index 0
-                _damageThreshold = _damageThreshold * 1.25;
-            };
-            default { // torso: index 1
+            case (_selectionN > 1): { // chest and torso index 2-3
                 _damageThreshold = _damageThreshold * 1.5;
             };
+            default { // Head and neck index 0-1
+                _damageThreshold = _damageThreshold * 1.25;
+            };
+
         };
         _bodyPartDamage = (_bodyPartDamage / _damageThreshold) min 1;
         switch (true) do {

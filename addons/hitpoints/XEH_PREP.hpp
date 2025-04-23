@@ -1,12 +1,11 @@
 PREP(addDamageToUnit);
 PREP(addTreatmentActions);
+PREP(fullHealLocal);
 PREP(handleDamage);
 PREP(handleIncapacitation);
 PREP(onKeyDown);
-PREP(updateBodyImage);
 PREP(updateBodyPartVisuals);
 PREP(updateDamageEffects);
-PREP(updateInjuryList);
 PREP(updateWoundBloodLoss);
 PREP(woundsHandlerBase);
 PREP(woundsHandlerExplosion);

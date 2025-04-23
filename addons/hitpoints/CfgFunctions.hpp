@@ -39,12 +39,6 @@ class CfgFunctions {
             class onKeyDown {
                 file = QPATHTOF(functions\fnc_onKeyDown.sqf);
             };
-            class updateBodyImage {
-                file = QPATHTOF(functions\fnc_updateBodyImage.sqf);
-            };
-            class updateInjuryList {
-                file = QPATHTOF(functions\fnc_updateInjuryList.sqf);
-            };
         };
     };
     class overwrite_ace_medical_status {
