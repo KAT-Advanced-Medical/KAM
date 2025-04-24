@@ -72,6 +72,9 @@ class CfgFunctions {
             class splintLocal {
                 file = QPATHTOF(functions\fnc_splintLocal.sqf);
             };
+            class fullHealLocal {
+                file = QPATHTOF(functions\fnc_fullHealLocal.sqf);
+            };
          };
     };
 };
