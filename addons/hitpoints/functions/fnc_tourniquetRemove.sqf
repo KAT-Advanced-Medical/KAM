@@ -60,9 +60,12 @@ private _arrayModified = false;
 {
     _x params ["_bodyPartN", "_medication"];
 
-    if (_partIndex == _bodyPartN) then {
-        TRACE_1("delayed medication call after tourniquet removeal",_x);
-        [QACEGVAR(medical_treatment,medicationLocal), [_patient, _bodyPart, _medication], _patient] call CBA_fnc_targetEvent;
+    // Check if the site is no longer occluded
+    private _isStillOccluded = [_patient, _bodyPartN] call EFUNC(pharma,occlusionCheck);
+
+    if (!_isStillOccluded) then {
+        TRACE_1("delayed medication call after tourniquet removal", _x);
+        [QACEGVAR(medical_treatment,medicationLocal), [_patient, _bodyPartN, _medication], _patient] call CBA_fnc_targetEvent;
         _occludedMedications set [_forEachIndex, []];
         _arrayModified = true;
     };

@@ -17,18 +17,15 @@
  */
 
 params [["_unit", objNull, [objNull]]];
-diag_log format ["updateDamageEffects"];
 if (!local _unit) exitWith { ERROR_2("updateDamageEffects: Unit not local or null [%1:%2]",_unit,typeOf _unit); };
 
 private _isLimping = false;
 private _hasLegSplint = false;
 private _noSprint = false;
 private _noJog = false;
-diag_log format [ACEGVAR(medical,fractures)];
 if (ACEGVAR(medical,fractures) > 0) then {
     private _fractures = GET_FRACTURES(_unit);
     TRACE_1("",_fractures);
-    hint str _fractures;
     if ((_fractures select 8) == 1 || (_fractures select 9) == 1 || (_fractures select 10) == 1 || (_fractures select 11) == 1) then {
         TRACE_1("limping because of fracture",_fractures);
         diag_log format ["limping because of fracture %1",_fractures];

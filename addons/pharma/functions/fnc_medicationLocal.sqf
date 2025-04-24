@@ -68,8 +68,9 @@ if (((_patient getVariable [QGVAR(IV), [0,0,0,0,0,0,0,0,0,0,0,0]]) select _partI
 };
 
 // Handle tourniquet on body part blocking blood flow at injection site
-if (HAS_TOURNIQUET_APPLIED_ON(_patient,_partIndex)) exitWith {
-    TRACE_1("unit has tourniquets blocking blood flow on injection site",_tourniquets);
+if ([_patient, _partIndex] call FUNC(isMedicationSiteOccluded)) exitWith {
+    TRACE_1("Medication injection site is occluded by tourniquet", _partIndex);
+    
     private _occludedMedications = _patient getVariable [QACEGVAR(medical,occludedMedications), []];
     _occludedMedications pushBack [_partIndex, _classname];
     _patient setVariable [QACEGVAR(medical,occludedMedications), _occludedMedications, true];

@@ -341,7 +341,7 @@
 #define GET_VASOCONSTRICTION(unit)     (unit getVariable [VAR_VASOCONSTRICTION, 1])
 
 //Surgery
-#define STRING_BODY_PARTS ["head", "body", "left arm", "right arm", "left leg", "right leg"]
+#define STRING_BODY_PARTS ["head", "neck", "chest", "body", "left arm", "upper left arm", "right arm", "upper right arm", "left leg", "upper leftleg", "right leg", "upper right leg"]
 #define GET_REBOA_VOLUME(unit)         ([unit] call EFUNC(surgery,reboaVolume))
 
 //Feedback

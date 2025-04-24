@@ -13,6 +13,7 @@ PREP(init);
 PREP(inspectCatheter);
 PREP(medication);
 PREP(medicationLocal);
+PREP(occlusionCheck);
 PREP(pervitinPP);
 PREP(removeIV);
 PREP(retrieveIV);
