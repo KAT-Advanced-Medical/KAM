@@ -25,9 +25,6 @@ class CfgFunctions {
             class updateBodyPartVisuals {
                 file = QPATHTOF(functions\fnc_updateBodyPartVisuals.sqf);
             };
-            class updateDamageEffects {
-                file = QPATHTOF(functions\fnc_updateDamageEffects.sqf);
-            };
         };
     };
     class overwrite_ace_medical_gui {
@@ -56,5 +53,25 @@ class CfgFunctions {
                 file = QPATHTOF(functions\fnc_addDamageToUnit.sqf);
             };
         };
+    };
+    class overwrite_ace_medical_treatment {
+        tag = "ace_medical_treatment";
+        class ace_medical_treatment {
+            class tourniquetLocal {
+                file = QPATHTOF(functions\fnc_tourniquetLocal.sqf);
+            };
+            class hasTourniquetAppliedTo {
+                file = QPATHTOF(functions\fnc_hasTourniquetAppliedTo.sqf);
+            };
+            class tourniquetRemove {
+                file = QPATHTOF(functions\fnc_tourniquetRemove.sqf);
+            };
+            class canSplint {
+                file = QPATHTOF(functions\fnc_canSplint.sqf);
+            };
+            class splintLocal {
+                file = QPATHTOF(functions\fnc_splintLocal.sqf);
+            };
+         };
     };
 };

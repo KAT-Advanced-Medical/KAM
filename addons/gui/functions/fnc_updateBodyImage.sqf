@@ -62,7 +62,7 @@ private _surgicalBlock = GET_SURGICAL_TOURNIQUETS(_target);
                 _ctrlBone ctrlSetTextColor [1, 0, 0, 1];
             };
             case -1: {
-                if (ACEGVAR(medical,fractures) in [4, 5, 6, 7]) then {
+                if (ACEGVAR(medical,fractures) in [2, 3]) then {
                     _ctrlBone ctrlShow true;
                     _ctrlBone ctrlSetTextColor [0, 0, 1, 1];
                 } else {
