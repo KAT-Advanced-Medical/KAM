@@ -24,7 +24,7 @@
 params ["_unit", "_allDamages"];
 (_allDamages select 0) params ["_engineDamage", "_bodyPart"]; // selection-specific
 
-if !(GVAR(enable) && _bodyPart == "body") exitWith {_this};
+if !(GVAR(enable) && _bodyPart == "chest") exitWith {_this};
 
 //Other mods can utilise KAT_Pneumothorax_Exclusion variable to prevent Pneumothorax from happening
 if (_engineDamage < GVAR(pneumothoraxDamageThreshold) || _unit getVariable ["KAT_Pneumothorax_Exlusion", false]) exitWith {_this};
