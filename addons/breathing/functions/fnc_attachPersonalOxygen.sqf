@@ -65,7 +65,7 @@ _patient setVariable [QGVAR(oxygenMaskStatus), [(_largestTankValue + 1), 1], tru
         _pfhID call CBA_fnc_removePerFrameHandler;
     };
 
-    if !(_patient setVariable [QGVAR(oxygenMaskActive), true]) exitWith {
+    if !(_patient getVariable [QGVAR(oxygenMaskActive), true]) exitWith {
         _pfhID call CBA_fnc_removePerFrameHandler;
     };
 
