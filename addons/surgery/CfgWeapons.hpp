@@ -71,7 +71,6 @@ class CfgWeapons {
         scope = 2;
         displayName = CSTRING(Reboa_DisplayName);
         picture = QPATHTOF(ui\reboa.paa);
-        model = "\A3\Structures_F_Heli\Items\Electronics\HDMICable_01_F.p3d";
         descriptionShort = CSTRING(Reboa_DescShort);
         class ItemInfo: CBA_MiscItem_ItemInfo {
             mass = 1;
