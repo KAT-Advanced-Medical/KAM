@@ -1,5 +1,6 @@
 PREP(addTreatmentActions);
 PREP(collectActions);
+PREP(displayPatientInformation);
 PREP(dumpBloodGas);
 PREP(handleABGShow);
 PREP(handleIVAdjust);

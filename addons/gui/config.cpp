@@ -32,5 +32,5 @@ class CfgPatches {
 
 #include "CfgEventHandlers.hpp"
 #include "CfgFunctions.hpp"
-#include "CfgVehicles.hpp"
 #include "gui.hpp"
+#include "CfgVehicles.hpp"

@@ -26,6 +26,9 @@ class CfgFunctions {
             class updateBodyImage {
                 file = QPATHTOF(functions\fnc_updateBodyImage.sqf);
             };
+            class displayPatientInformation {
+                file = QPATHTOF(functions\fnc_displayPatientInformation.sqf);
+            };
         };
     };
 };
