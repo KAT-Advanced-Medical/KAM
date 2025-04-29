@@ -9,6 +9,8 @@ class CfgPatches {
         requiredAddons[] = {
             "kat_main",
             "ace_medical",
+            "ace_medical_gui",
+            "kat_gui",
         };
         author = "Katalam";
         authors[] = {"Katalam"};

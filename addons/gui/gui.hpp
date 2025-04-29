@@ -885,15 +885,15 @@ class ACE_Medical_Menu {
             x = QUOTE(POS_X(20.0));
             y = QUOTE(POS_Y(11.7));
             w = QUOTE(POS_W(1.1));
-            h = QUOTE(POS_H(2.4));
+            h = QUOTE(POS_H(2.1));
         };
         class SelectLegLeft: SelectUpperLegLeft {
             onButtonClick = QUOTE(ACEGVAR(medical_gui,selectedBodyPart) = 9);
             tooltip = CSTRING(SelectLeftUpperLeg);
             x = QUOTE(POS_X(20.0));
-            y = QUOTE(POS_Y(8.4));
+            y = QUOTE(POS_Y(8.1));
             w = QUOTE(POS_W(1.1));
-            h = QUOTE(POS_H(3.3));
+            h = QUOTE(POS_H(3.6));
         };
         class SelectUpperLegRight: SelectHead {
             onButtonClick = QUOTE(ACEGVAR(medical_gui,selectedBodyPart) = 10);
@@ -901,15 +901,15 @@ class ACE_Medical_Menu {
             x = QUOTE(POS_X(18.9));
             y = QUOTE(POS_Y(11.7));
             w = QUOTE(POS_W(1.1));
-            h = QUOTE(POS_H(2.4));
+            h = QUOTE(POS_H(2.1));
         };
         class SelectLegRight: SelectUpperLegRight {
             onButtonClick = QUOTE(ACEGVAR(medical_gui,selectedBodyPart) = 11);
             tooltip = CSTRING(SelectRightUpperLeg);
             x = QUOTE(POS_X(18.9));
-            y = QUOTE(POS_Y(8.8));
+            y = QUOTE(POS_Y(8.1));
             w = QUOTE(POS_W(1.1));
-            h = QUOTE(POS_H(3.3));
+            h = QUOTE(POS_H(3.6));
         };
     };
 };

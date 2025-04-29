@@ -99,5 +99,9 @@ class CfgVehicles {
                 exceptions[] = {"isNotSwimming"};
             };
         };
+        class ACE_SelfActions {
+            class ACE_Medical {
+            };
+        };
     };
 };

@@ -73,5 +73,22 @@
         <Key ID="STR_KAT_Hitpoints_SelectRightUpperLeg">
             <English>Select Upper Right Leg</English>
         </Key>
+         <Key ID="STR_KAT_Hitpoints_Actions_TriageCard">
+            <English>Triage Card</English>
+            <Czech>Štítek</Czech>
+            <French>Fiche de triage</French>
+            <Spanish>Tarjeta de clasificación</Spanish>
+            <Italian>Scheda Triage</Italian>
+            <Polish>Karta segregacyjna</Polish>
+            <Portuguese>Cartão de Triagem</Portuguese>
+            <Russian>Медкарта</Russian>
+            <German>Triagekarte</German>
+            <Korean>부상자 분류 카드</Korean>
+            <Japanese>トリアージカード</Japanese>
+            <Chinese>檢傷分類卡</Chinese>
+            <Chinesesimp>分诊卡</Chinesesimp>
+            <Turkish>Triyaj Kartı</Turkish>
+            <Hungarian>Orvosi lap</Hungarian>
+        </Key>
     </Package>
 </Project>
