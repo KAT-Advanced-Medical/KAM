@@ -40,7 +40,7 @@
             <Czech>Povolit Hrudní Chlopeň</Czech>
             <French>Autoriser le pansement thoracique</French>
             <Spanish>Permitir sello torácico</Spanish>
-            <Italian>Permetti Chest Seal</Italian>
+            <Italian>Permetti Sigillo Toracico</Italian>
             <Polish>Pozwól na użycie Chest Seal</Polish>
             <Portuguese>Permitir Selo de Tórax</Portuguese>
             <Russian>Разрешить оклюзивный пластырь</Russian>
@@ -76,7 +76,7 @@
             <Czech>%1 použil %2 (x%3)</Czech>
             <French>%1 a utilisé %2 (x%3)</French>
             <Spanish>%1 uso %2 (x%3)</Spanish>
-            <Italian>%1 verwendete %2 (x%3)</Italian>
+            <Italian>%1 ha utilizzato %2 (x%3)</Italian>
             <Portuguese>%1 usou %2 (x%3)</Portuguese>
             <Russian>%1 использует %2 (x%3)</Russian>
             <German>%1 verwendet %2 (x%3)</German>
@@ -92,7 +92,7 @@
             <Czech>%1 (Okysličen)</Czech>
             <French>%1 (Oxygéné)</French>
             <Spanish>%1 (Oxigenado)</Spanish>
-            <Italian>%1 (Sauerstoff)</Italian>
+            <Italian>%1 (Ossigenato)</Italian>
             <Portuguese>%1 (Oxigenado)</Portuguese>
             <Russian>%1 (насыщение кислородом)</Russian>
             <German>%1 (Sauerstoffhaltig)</German>
@@ -319,7 +319,7 @@
             <Czech>Povolí pokročilé pneumotoraxy - hemopneumotorax a tenzní pneumotorax.</Czech>
             <French>Active les pneumothorax avancés - Hémopneumothorax et pneumothorax sous tension</French>
             <Spanish>Habitilita neumotóraxes avanzados - hemotórax y neumotórax a tensión</Spanish>
-            <Italian>Abilità la pneumotorace avanzato - emopneumotorace e pneumotorace da tensione</Italian>
+            <Italian>Abilita il pneumotorace avanzato - emopneumotorace e pneumotorace da tensione</Italian>
             <Polish>Włącza zaawansowane odmiany odmy opłucnowej - krwiaka opłucnej oraz odmę prężną</Polish>
             <Portuguese>Permite tipos avançados de pneumotórax - hemotórax e pneumotórax hipertensivo</Portuguese>
             <Russian>Включает прогрессирующий пневмоторакс - гемопневмоторакс и напряженный пневмоторакс</Russian>
@@ -1503,7 +1503,7 @@
             <Czech>Povolit vlastní léčení pomocí Hrudní Chlopně</Czech>
             <French>Autoriser le pansement thoracique sur soi-même</French>
             <Spanish>Permitir autotratarse con un sello torácico</Spanish>
-            <Italian>Permetti automedicazione con Chest Seal</Italian>
+            <Italian>Permetti automedicazione con Sigillo Toracico</Italian>
             <Polish>Pozwól na samo leczenie przy użyciu Chest Seala</Polish>
             <Portuguese>Permitir auto-tratamento com Selo de Tórax</Portuguese>
             <Russian>Разрешить самолечение оклюзимным пластырем</Russian>
@@ -2109,7 +2109,7 @@
             <Czech>Hodnota těžké cyanózy - výchozí hodnota SpO2 66 \nMěla by být mírně vyšší, než smrtelná hodnota SpO2</Czech>
             <French>Valeur de la cyanose grave - 66 SpO2 par défaut \nCette valeur devrait être un peu plus haute que la valeur de SpO2 létale.</French>
             <Spanish>Valor SpO2 de Cianosis severa - Predeterminado en 66 SpO2 \nEste valor deberia de ser un poco mas alto que el valor letal de SpO2</Spanish>
-            <Italian>Valore di cianosi grave- default SpO2 66. (Dovrebbe essere un pochino più alta del valore letate di SpO2</Italian>
+            <Italian>Valore di cianosi grave- default SpO2 66. \n(Dovrebbe essere un pochino più alta del valore letate di SpO2</Italian>
             <Polish>Poziom SpO2 dla ciężkiej sinicy - domyślnie 66 SpO2 \nPowinien być minimalnie wyższy niż wartość śmiertelna SpO2</Polish>
             <Portuguese>Valor de SpO2 para cianose grave (padrão 66)\nDeve estar um pouco acima do valor letal de SpO2</Portuguese>
             <Russian>Значение Тяжелый цианоза - по умолчанию 66 SpO2 \nДолжно быть немного выше летального значения SpO2</Russian>
@@ -2487,7 +2487,7 @@
             <Czech>Použít RV s Kyslíkovou Lahví (Vozidlo)</Czech>
             <French>Utiliser le BVM avec de l'oxygène (Véhicule)</French>
             <Spanish>Usa el Ambu con tanque de oxígeno (vehículo)</Spanish>
-            <Italian>Usare il BVM con bombola di ossigeno (veicolo)</Italian>
+            <Italian>Usa maschera ambu con bombola di ossigeno (veicolo)</Italian>
             <Portuguese>Usar BVM com cilindro de oxigênio (veículo)</Portuguese>
             <Russian>Использовать BVM с кислородным баллоном (автомобиль)</Russian>
             <German>Verwende BVM mit Sauerstoff (Fahrzeug)</German>
@@ -2503,7 +2503,7 @@
             <Czech>Odložit RV</Czech>
             <French>Ranger le BVM</French>
             <Spanish>Guarda el Ambu</Spanish>
-            <Italian>Riporre il BVM</Italian>
+            <Italian>Riporre la maschera ambu</Italian>
             <Portuguese>Remover BVM</Portuguese>
             <Russian>Убрать BVM</Russian>
             <German>BVM Weglegen</German>
@@ -2763,7 +2763,7 @@
             <Czech>Hrudní Chlopeň je navržena pro léčení, zakrytí a uzavření otevřených ran na hrudníku ve většině situací.</Czech>
             <French>Le pansement thoracique est conçu pour traiter et refermer une blessure thoracique dans la majorité des cas</French>
             <Spanish>El sello torácico es un parche diseñado para tratar y sellar heridas abiertas en el pecho bajo la mayoría de circustancias.</Spanish>
-            <Italian>Il Chest Seal è progettato per trattare, sigillare e risigillare ferite aperte al torace nella maggior parte delle circostanze</Italian>
+            <Italian>Il Sigillo Toracico è progettato per trattare, sigillare e risigillare ferite aperte al torace nella maggior parte delle circostanze</Italian>
             <Polish>Chest Seal służy do leczenia, tamowania i zamykania ran klatki piersiowej w każdych warunkach. Leczy odmę opłucnową.</Polish>
             <Portuguese>O Selo de Tórax é projetado para tratar, selar e resselar feridas abertas no peito na maioria das circunstâncias.</Portuguese>
             <Russian>Оклюзивный пластырь разработан для лечения, герметизации и повторной герметизации открытых ран грудной клетки в большинстве случаев.</Russian>
@@ -2781,7 +2781,7 @@
             <Czech>Hrudní Chlopeň</Czech>
             <French>Pansement thoracique</French>
             <Spanish>Sello torácico</Spanish>
-            <Italian>Chest Seal</Italian>
+            <Italian>Sigillo Toracico</Italian>
             <Polish>Chest Seal</Polish>
             <Portuguese>Selo de Tórax</Portuguese>
             <Russian>Оклюзивный пластырь</Russian>
@@ -2851,7 +2851,7 @@
             <Czech>Kůže je ztuhlá, vypadá pohmožděně</Czech>
             <French>La peau est rigide et présente des signes de marbrure</French>
             <Spanish>La piel está rígida y magullada</Spanish>
-            <Italian>La pelle è rigida, appare lividi</Italian>
+            <Italian>La pelle è rigida, appare contusa</Italian>
             <Portuguese>A pele está rígida, com aparência de contusão</Portuguese>
             <Russian>Кожа жесткая, выглядит ушибленной</Russian>
             <German>Die Haut ist steif und sieht gequetscht aus</German>
