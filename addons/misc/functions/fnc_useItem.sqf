@@ -87,10 +87,10 @@ if (GVAR(allowSharedVehicleEquipment) > 0 && _vehicleCondition) then {
         _originItems = [_origin, 2] call ACEFUNC(common,uniqueItems); // Magazine
         {
             if (_x in _originItems) then {
-                private _magsStart = count magazines _unit;
+                private _magsStart = count magazines _origin;
                 [_origin, _x] call ACEFUNC(common,adjustMagazineAmmo);
-                 private _magsEnd = count magazines _unit;
-                [_unit, _x, (_magsEnd < _magsStart)] breakOut "Main";
+                private _magsEnd = count magazines _origin;
+                [_origin, _x, (_magsEnd < _magsStart)] breakOut "Main";
             };
         } forEach _items;
     } else { // Remove vehicle item
