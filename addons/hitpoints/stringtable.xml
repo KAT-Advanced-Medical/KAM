@@ -73,7 +73,7 @@
         <Key ID="STR_KAT_Hitpoints_SelectRightUpperLeg">
             <English>Select Upper Right Leg</English>
         </Key>
-         <Key ID="STR_KAT_Hitpoints_Actions_TriageCard">
+        <Key ID="STR_KAT_Hitpoints_Actions_TriageCard">
             <English>Triage Card</English>
             <Czech>Štítek</Czech>
             <French>Fiche de triage</French>
