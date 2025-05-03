@@ -29,5 +29,5 @@ if (_bandagedWoundsOnPart isEqualTo []) exitWith {false};
 if (_totalTime - _elapsedTime > ([_patient, _bodyPart] call FUNC(getWrapTime)) - 6) exitWith {true};
 
 // Stitch the first possible wound on the body part
-private _stitched = [_patient, _bodyPart] call FUNC(wrapWound);
+private _wrapped = [_patient, _bodyPart] call FUNC(wrapWound);
 

@@ -35,6 +35,7 @@ class ACE_Medical_Treatment_Actions {
         displayName = CSTRING(ETD_Display);
         displayNameProgress = CSTRING(ETD_Progress);
         icon = QPATHTOF(ui\ETD.paa);
+        treatmentTime = 16;
         items[] = {"kat_ETD"};
     };
     class Elastic_Wrap: BasicBandage {

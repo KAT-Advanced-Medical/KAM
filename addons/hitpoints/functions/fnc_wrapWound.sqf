@@ -32,14 +32,15 @@ if (_bandagedIndex == -1) exitWith {false};
 
 private _rawBandageType = (_bandagedWoundsOnPart select _bandagedIndex) select 2;
 
-private _excludedTypes = ["FieldDressing", "PackingBandage", "ElasticBandage", "QuikClot"];
+private _excludedTypes = ["FieldDressing", "PackingBandage", "ElasticBandage", "QuikClot", "ETD", "Hemostat", "Abdominal_Pad"];
 if (_rawBandageType in _excludedTypes) exitWith {false};
 
 private _bandageType = _rawBandageType + "_wrapped";
-[_patient, _bodyPart, _bandageType] call EFUNC(misc,bandageLocal);
 
 _bandagedWoundsOnPart deleteAt _bandagedIndex;
 
 _patient setVariable [VAR_BANDAGED_WOUNDS, _bandagedWounds, true];
+
+[_patient, _bodyPart, _bandageType] call EFUNC(misc,bandageLocal);
 
 true // return
