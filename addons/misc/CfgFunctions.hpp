@@ -47,6 +47,9 @@ class CfgFunctions {
             class findMostEffectiveWounds {
                 file = QPATHTOF(functions\fnc_findMostEffectiveWounds.sqf);
             };
+            class handleBandageOpening {
+                file = QPATHTOF(functions\fnc_handleBandageOpening.sqf);
+            };
         };
     };
     class ace_medical {
