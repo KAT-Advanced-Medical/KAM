@@ -41,6 +41,12 @@ class CfgFunctions {
             class bandageLocal {
                 file = QPATHTOF(functions\fnc_bandageLocal.sqf);
             };
+            class getBandageTime {
+                file = QPATHTOF(functions\fnc_getBandageTime.sqf);
+            };
+            class findMostEffectiveWounds {
+                file = QPATHTOF(functions\fnc_findMostEffectiveWounds.sqf);
+            };
         };
     };
     class ace_medical {
