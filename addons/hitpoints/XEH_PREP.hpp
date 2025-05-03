@@ -9,7 +9,6 @@ PREP(onKeyDown);
 PREP(splintLocal);
 PREP(tourniquetLocal);
 PREP(tourniquetRemove);
-PREP(TQCheck);
 PREP(updateBodyPartVisuals);
 PREP(updateWoundBloodLoss);
 PREP(woundsHandlerBase);

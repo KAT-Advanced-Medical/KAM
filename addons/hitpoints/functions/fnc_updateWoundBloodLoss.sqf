@@ -18,21 +18,42 @@
 
 params ["_unit"];
 
+TRACE_1("updateWoundBloodLoss",_unit);
 private _tourniquets = GET_TOURNIQUETS(_unit);
+private _occlusionMap = [
+    [4, [4, 5]],
+    [5, [5]],
+    [6, [6, 7]],
+    [7, [7]],
+    [8, [8, 9, 3]],
+    [9, [9, 3]],
+    [10, [10, 11, 3]],
+    [11, [11, 3]]
+];
+
 private _bodyPartBleeding = [0,0,0,0,0,0,0,0,0,0,0,0];
+
 {
     private _partIndex = ALL_BODY_PARTS find _x;
-    private _isOccluded = [_unit, _partIndex] call FUNC(TQCheck);
-    if (!_isOccluded) then {
+    TRACE_1("updateWoundBloodLoss1",_partIndex);
+    TRACE_1("updateWoundBloodLoss1",_unit);
+
+    private _idx = _occlusionMap findIf { _x#0 == _partIndex };
+    TRACE_1("updateWoundBloodLoss3",_idx);
+    private _result = if (_idx != -1) then { _occlusionMap select _idx select 1 } else { [] };
+    TRACE_1("updateWoundBloodLoss4",_result);
+    private _isNotOccluded = { _tourniquets select _x != 0 } count _result > 0;
+    TRACE_1("updateWoundBloodLoss2",_isNotOccluded);
+    if (!_isNotOccluded) then {
         private _partBleeding = 0;
         {
             _x params ["", "_amountOf", "_bleeding"];
             _partBleeding = _partBleeding + (_amountOf * _bleeding);
         } forEach _y;
         _bodyPartBleeding set [_partIndex, _partBleeding];
+        TRACE_1("updateWoundBloodLoss",_partBleeding);
     };
 } forEach GET_OPEN_WOUNDS(_unit);
-
 if (selectMax _bodyPartBleeding == 0) exitWith {
     TRACE_1("updateWoundBloodLoss-none",_unit);
     _unit setVariable [VAR_WOUND_BLEEDING, 0, true];

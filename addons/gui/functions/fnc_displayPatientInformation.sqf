@@ -35,7 +35,6 @@ if (isNull _display) then {
 
         private _target = _display getVariable [QACEGVAR(medical_gui,target), objNull];
         private _selectionN = _display getVariable [QACEGVAR(medical_gui,selectionN), -1];
-        systemchat str _selectionN;
         // Close display if target moved too far away (ignore if in same vehicle)
         if (ACE_player distance _target > MAX_DISTANCE && {vehicle _target != vehicle ACE_player}) exitWith {
             [_pfhID] call CBA_fnc_removePerFrameHandler;
