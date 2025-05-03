@@ -31,4 +31,4 @@ private _occlusionMap = [
 
 private _tourniquets = GET_TOURNIQUETS(_patient);
 private _occludingSites = (_occlusionMap select {_x#0 == _partIndex}) param [0, [], [[],[]]] param [1, []];
-_occludingSites findIf { (_tourniquets select _x) > 0 } != -1
+_occludingSites findIf { (_tourniquets select _x) > 0 } != -1;
