@@ -19,16 +19,17 @@
 params ["_patient", "_partIndex"];
 
 private _occlusionMap = [
-    [HITPOINT_INDEX_LARM, [HITPOINT_INDEX_LARM, HITPOINT_INDEX_ULARM]],
-    [HITPOINT_INDEX_ULARM, [HITPOINT_INDEX_ULARM]],
-    [HITPOINT_INDEX_RARM, [HITPOINT_INDEX_RARM, HITPOINT_INDEX_URARM]],
-    [HITPOINT_INDEX_URARM, [HITPOINT_INDEX_URARM]],
-    [HITPOINT_INDEX_LLEG, [HITPOINT_INDEX_LLEG, HITPOINT_INDEX_ULLEG, HITPOINT_INDEX_BODY]],
-    [HITPOINT_INDEX_ULLEG, [HITPOINT_INDEX_ULLEG, HITPOINT_INDEX_BODY]],
-    [HITPOINT_INDEX_RLEG, [HITPOINT_INDEX_RLEG, HITPOINT_INDEX_URLEG, HITPOINT_INDEX_BODY]],
-    [HITPOINT_INDEX_URLEG, [HITPOINT_INDEX_URLEG, HITPOINT_INDEX_BODY]]
+    [4, [4, 5]],
+    [5, [5]],
+    [6, [6, 7]],
+    [7, [7]],
+    [8, [8, 9, 3]],
+    [9, [9, 3]],
+    [10, [10, 11, 3]],
+    [11, [11, 3]]
 ];
 
 private _tourniquets = GET_TOURNIQUETS(_patient);
-private _occludingSites = (_occlusionMap select {_x#0 == _partIndex}) param [0, [], [[],[]]] param [1, []];
-_occludingSites findIf { (_tourniquets select _x) > 0 } != -1
+private _idx = _occlusionMap findIf { _x#0 == _partIndex };
+private _result = if (_idx != -1) then { _occlusionMap select _idx select 1 } else { [] };
+private _isNotOccluded = { _tourniquets select _x != 0 } count _result > 0;
