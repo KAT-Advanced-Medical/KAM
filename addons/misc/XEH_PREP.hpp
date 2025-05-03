@@ -26,6 +26,7 @@ PREP(getFullBodyStitchableWounds);
 PREP(getMagazineAmmoCounts);
 PREP(getStitchTimeFullBody);
 PREP(groupID);
+PREP(handleBandageOpening);
 PREP(handleRespawn);
 PREP(handleTourniquetEffects);
 PREP(handleUnconscious);
