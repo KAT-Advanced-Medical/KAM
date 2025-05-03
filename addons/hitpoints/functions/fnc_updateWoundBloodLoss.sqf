@@ -22,18 +22,15 @@ private _tourniquets = GET_TOURNIQUETS(_unit);
 private _bodyPartBleeding = [0,0,0,0,0,0,0,0,0,0,0,0];
 {
     private _partIndex = ALL_BODY_PARTS find _x;
-    private _isStopped = [_unit, _partIndex] call FUNC(TQCheck);
-    
-    if !(_isStopped) then {
+    private _isOccluded = [_unit, _partIndex] call FUNC(TQCheck);
+    if (!_isOccluded) then {
         private _partBleeding = 0;
         {
             _x params ["", "_amountOf", "_bleeding"];
             _partBleeding = _partBleeding + (_amountOf * _bleeding);
         } forEach _y;
-
         _bodyPartBleeding set [_partIndex, _partBleeding];
     };
-
 } forEach GET_OPEN_WOUNDS(_unit);
 
 if (selectMax _bodyPartBleeding == 0) exitWith {
