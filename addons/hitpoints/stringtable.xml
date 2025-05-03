@@ -90,5 +90,74 @@
             <Turkish>Triyaj Kartı</Turkish>
             <Hungarian>Orvosi lap</Hungarian>
         </Key>
+        <Key ID="STR_KAT_Hitpoints_Hemostat">
+            <English>Hemostatic Injector (CELOX)</English>
+        </Key>
+        <Key ID="STR_KAT_Hitpoints_Hemostat_Progress">
+            <English>Injecting Hemostatic Granules</English>
+        </Key>
+        <Key ID="STR_KAT_Hitpoints_Hemostat_Desc_Short">
+            <English>Hemostatic Injector with CELOX granules</English>
+        </Key>
+        <Key ID="STR_KAT_Hitpoints_Hemostat_Desc_Use">
+            <English>Injector loaded with Hemostatic granules for penetrating wounds</English>
+        </Key>
+        <Key ID="STR_KAT_Hitpoints_Hemostat_Display">
+            <English>Hemostatic Injector (CELOX)</English>
+        </Key>
+        <Key ID="STR_KAT_Hitpoints_Elastic_Wrap_Desc_Short">
+            <English>Elastic Bandage for Wrapping Packed Wounds and Splints</English>
+        </Key>
+        <Key ID="STR_KAT_Hitpoints_Elastic_Wrap_Desc_Use">
+            <English>Elastic Bandage for Wrapping Packed Wounds and Splints</English>
+        </Key>
+        <Key ID="STR_KAT_Hitpoints_Elastic_Wrap_Display">
+            <English>Elastic Wrapping Bandage</English>
+        </Key>
+        <Key ID="STR_KAT_Hitpoints_4X4_Gauze_Desc_Short">
+            <English>4X4 Gauze Sponge for Small Wounds</English>
+        </Key>
+        <Key ID="STR_KAT_Hitpoints_4X4_Gauze_Desc_Use">
+            <English>4X4 Gauze Sponge for Small Wounds</English>
+        </Key>
+        <Key ID="STR_KAT_Hitpoints_4X4_Gauze_Display">
+            <English>4X4 Gauze Sponge</English>
+        </Key>
+        <Key ID="STR_KAT_Hitpoints_Compressed_Gauze_Desc_Short">
+            <English>Compressed Gauze for Packing Large Wounds</English>
+        </Key>
+        <Key ID="STR_KAT_Hitpoints_Compressed_Gauze_Desc_Use">
+            <English>Compressed Gauze for Packing Large Wounds</English>
+        </Key>
+        <Key ID="STR_KAT_Hitpoints_Compressed_Gauze_Display">
+            <English>Compressed Packing Gauze</English>
+        </Key>
+        <Key ID="STR_KAT_Hitpoints_Roller_Gauze_Desc_Short">
+            <English>Roller Gauze for Wrapping Packed Wounds</English>
+        </Key>
+        <Key ID="STR_KAT_Hitpoints_Roller_Gauze_Desc_Use">
+            <English>Roller Gauze for Wrapping Packed Wounds</English>
+        </Key>
+        <Key ID="STR_KAT_Hitpoints_Roller_Gauze_Display">
+            <English>Roller Gauze</English>
+        </Key>
+        <Key ID="STR_KAT_Hitpoints_Abdominal_Pad_Desc_Short">
+            <English>Abdominal Pad for Extremely Large Wounds On the Torso</English>
+        </Key>
+        <Key ID="STR_KAT_Hitpoints_Abdominal_Pad_Desc_Use">
+            <English>Abdominal Pad for Extremely Large Wounds On the Torso</English>
+        </Key>
+        <Key ID="STR_KAT_Hitpoints_Abdominal_Pad_Display">
+            <English>Abdominal Pad</English>
+        </Key>
+        <Key ID="STR_KAT_Hitpoints_ETD_Desc_Short">
+            <English>Emergency Trauma Dressing for Extremely Large Wounds</English>
+        </Key>
+        <Key ID="STR_KAT_Hitpoints_ETD_Desc_Use">
+            <English>Emergency Trauma Dressing for Extremely Large Wounds</English>
+        </Key>
+        <Key ID="STR_KAT_Hitpoints_ETD_Display">
+            <English>Emergency Trauma Dressing</English>
+        </Key>
     </Package>
 </Project>

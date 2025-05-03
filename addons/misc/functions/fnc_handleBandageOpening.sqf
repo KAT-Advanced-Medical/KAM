@@ -20,7 +20,7 @@
 params ["_target", "_impact", "_part", "_injuryIndex", "_injury", "_bandage"];
 TRACE_6("handleBandageOpening",_target,_impact,_part,_injuryIndex,_injury,_bandage);
 
-_injury params ["_classID"];
+_injury params ["_classID", "_amountOf", "_bleeding", "_damage"];
 
 private _className = ACEGVAR(medical_damage,woundClassNamesComplex) select _classID;
 private _reopeningChance = DEFAULT_BANDAGE_REOPENING_CHANCE;
@@ -87,7 +87,7 @@ _target setVariable [VAR_BANDAGED_WOUNDS, _bandagedWounds, true];
 TRACE_1("",_reopeningChance);
 // Check if we are ever going to reopen this
 if (random 1 <= _reopeningChance * ACEGVAR(medical_treatment,woundReopenChance)) then {
-    private _delay = _reopeningMinDelay + random (_reopeningMaxDelay - _reopeningMinDelay);
+    private _delay = ((_reopeningMinDelay + random (_reopeningMaxDelay - _reopeningMinDelay)) * (4 * _bleeding));
     TRACE_1("Will open",_delay);
     [{
         params ["_target", "_impact", "_part", "_injuryIndex", "_injury"];

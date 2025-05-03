@@ -1,7 +1,10 @@
 PREP(addDamageToUnit);
 PREP(addTreatmentActions);
 PREP(canSplint);
+PREP(canWrapSplint);
+PREP(canWrapWound);
 PREP(fullHealLocal);
+PREP(getWrapTime);
 PREP(handleDamage);
 PREP(handleIncapacitation);
 PREP(hasTourniquetAppliedTo);
@@ -14,3 +17,5 @@ PREP(updateWoundBloodLoss);
 PREP(woundsHandlerBase);
 PREP(woundsHandlerExplosion);
 PREP(woundsHandlerVehiclehit);
+PREP(wrapSplint);
+PREP(wrapWound);

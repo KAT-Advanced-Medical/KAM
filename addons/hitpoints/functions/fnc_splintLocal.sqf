@@ -26,6 +26,8 @@ private _fractures = GET_FRACTURES(_patient);
 _fractures set [_partIndex, -1];
 _patient setVariable [VAR_FRACTURES, _fractures, true];
 
+[_patient, _bodyPart] call FUNC(handleSplintFalloff);
+
 // Check if we fixed limping from this treatment
 [_patient] call EFUNC(misc,updateDamageEffects);
 
