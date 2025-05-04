@@ -814,24 +814,6 @@
             <Finnish>Lyöt poskelle, mutta potilas nukkuu edelleen!</Finnish>
             <Dutch>Je hebt de wang geraakt, maar de patiënt slaapt nog!</Dutch>
         </Key>
-        <Key ID="STR_KAT_Pharma_ReorientingSuccess">
-            <English>Patient woke up with a hard hit!</English>
-            <German>Patient wachte mit einem harten Schlag auf!</German>
-            <Polish>Pacjent obudził się z mocnym uderzeniem!</Polish>
-            <Spanish>¡El paciente se despertó con tremendo bofetón!</Spanish>
-            <Chinese>患者被重击醒来！</Chinese>
-            <Chinesesimp>患者苏醒了!</Chinesesimp>
-            <Czech>Pacient se probudil po silném úderu!</Czech>
-            <Korean>환자는 강한 타격으로 깨어났습니다!</Korean>
-            <French>Le patient s'est réveillé avec un coup dur !</French>
-            <Turkish>Hasta sert bir vuruşla uyandı!</Turkish>
-            <Italian>Il paziente si è svegliato con un duro colpo!</Italian>
-            <Russian>Пациент проснулся от сильного удара!</Russian>
-            <Japanese>患者は強打で飛び起きた!</Japanese>
-            <Portuguese>O bofetão acorda o paciente!</Portuguese>
-            <Finnish>Potilas heräsi kovalla iskulla!</Finnish>
-            <Dutch>Patiënt werd wakker na een harde klap!</Dutch>
-        </Key>
         <Key ID="STR_KAT_Pharma_Using">
             <English>Using</English>
             <German>Verwenden</German>
@@ -2037,22 +2019,6 @@
             <Russian>Ввести Этомидат</Russian>
             <Dutch>Injecteer Etomidaat</Dutch>
         </Key>
-        <Key ID="STR_KAT_Pharma_Lorazepam_displayName">
-            <English>Lorazepam</English>
-            <Chinesesimp>劳拉西泮</Chinesesimp>
-            <Italian>Lorazepam</Italian>
-            <Czech>Lorazepam</Czech>
-            <French>Lorazépam</French>
-            <Polish>Lorazepam</Polish>
-            <Korean>로라제팜</Korean>
-            <German>Lorazepam</German>
-            <Japanese>ロラゼパム</Japanese>
-            <Spanish>Lorazepam</Spanish>
-            <Portuguese>Lorazepam</Portuguese>
-            <Finnish>Loratsepaami</Finnish>
-            <Russian>Лоразепам</Russian>
-            <Dutch>Lorazepam</Dutch>
-        </Key>
         <Key ID="STR_KAT_Pharma_Lorazepam_DescShort">
             <English>Sedtation medication</English>
             <Chinesesimp>镇静药物</Chinesesimp>
@@ -2116,22 +2082,6 @@
             <Finnish>Flumatseniili</Finnish>
             <Russian>Флумазенил</Russian>
             <Dutch>Flumazenil</Dutch>
-        </Key>
-        <Key ID="STR_KAT_Pharma_Flumazenil_DescShort">
-            <English>Counter to Lorazepam</English>
-            <Chinesesimp>用于对抗劳拉西泮</Chinesesimp>
-            <Italian>Antagonista del Lorazepam</Italian>
-            <Czech>Proti Lorazepamu</Czech>
-            <French>Lutte contre le lorazépam</French>
-            <Polish>Środek wybudzający z Lorazepamu</Polish>
-            <Korean>로라제팜의 반대 약물</Korean>
-            <German>Antagonist zu Lorazepam</German>
-            <Japanese>ロラゼパムへの拮抗薬</Japanese>
-            <Spanish>Contrarresta el Lorazepam</Spanish>
-            <Portuguese>Antídoto para Lorazepam</Portuguese>
-            <Finnish>Loratsepaamin vastainen</Finnish>
-            <Russian>Противодействие к Лоразепаму</Russian>
-            <Dutch>Antagonist van Lorazepam</Dutch>
         </Key>
         <Key ID="STR_KAT_Pharma_Flumazenil_DescUse">
             <English>Used to bring patients out of sedation</English>
@@ -2262,22 +2212,6 @@
             <Russian>Ввести Налбуфин</Russian>
             <Dutch>Injecteer Nalbufine</Dutch>
         </Key>
-        <Key ID="STR_KAT_Pharma_Nalbuphine_Box_Display">
-            <English>Nalbuphine</English>
-            <Chinesesimp>纳布啡</Chinesesimp>
-            <Italian>Nalbufina (Nubain)</Italian>
-            <Czech>Nalbufin</Czech>
-            <French>Nalbuphine</French>
-            <Polish>Nalbufina</Polish>
-            <Korean>날부핀</Korean>
-            <German>Nalbuphin</German>
-            <Japanese>ナルブフィン</Japanese>
-            <Spanish>Nalbufina</Spanish>
-            <Portuguese>Nalbufina</Portuguese>
-            <Finnish>Nalbufiini</Finnish>
-            <Russian>Налбуфин</Russian>
-            <Dutch>Nalbufine</Dutch>
-        </Key>
         <Key ID="STR_KAT_Pharma_Nalbuphine_DescShort">
             <English>Opioid analgesic, used to suppress moderate pain</English>
             <Polish>Opioidowy środek przeciwbólowy, stosowany do tłumienia umiarkowanego bólu</Polish>
@@ -2302,38 +2236,6 @@
             <Finnish>Suurin mahdollisuus uudelleenorientoitumiseen</Finnish>
             <Russian>Максимальный шанс на успех переориентации</Russian>
             <Dutch>Maximale heroriëntatie succeskans</Dutch>
-        </Key>
-        <Key ID="STR_KAT_Pharma_SETTING_carbonateChance">
-            <English>Maximum Carbonate Success Chance</English>
-            <Polish>Szansa na pomyślne użycie soli trzeźwiących</Polish>
-            <Chinesesimp>成功使用碳酸盐的几率</Chinesesimp>
-            <Italian>Possibilità di utilizzare con successo il carbonato</Italian>
-            <Czech>Šance na úspěšné použití Uhličitanu</Czech>
-            <French>Chance de succès des Sels d'Ammoniac</French>
-            <Korean>탄산암모늄 사용으로 성공할 확률</Korean>
-            <German>Chance für den erfolgreichen Einsatz von Carbonat</German>
-            <Japanese>炭酸アンモニウムを使用した際の覚醒成功率</Japanese>
-            <Spanish>Probabilidad para un uso exitoso del Carbonato</Spanish>
-            <Portuguese>Possibilidade de uso bem-sucedido de Carbonato</Portuguese>
-            <Finnish>Suurin karbonaatin onnistumismahdollisuus</Finnish>
-            <Russian>Максимальный шанс успеха Карбоната</Russian>
-            <Dutch>Maximale succeskans van carbonaat</Dutch>
-        </Key>
-        <Key ID="STR_KAT_Pharma_medLvl_Carbonate">
-            <English>Allow using Carbonate</English>
-            <Polish>Poziom wyszkolenia medycznego dla soli trzeźwiących</Polish>
-            <Chinesesimp>允许使用碳酸盐</Chinesesimp>
-            <Czech>Povolení použití Uhličitanu</Czech>
-            <Italian>Consenti di usare il Carbonato</Italian>
-            <French>Autoriser l'usage des Sels d'Ammoniac</French>
-            <Korean>탄산암모늄 사용 허가</Korean>
-            <German>Erlaube die Verwendung von Carbonat</German>
-            <Japanese>炭酸アンモニウムの使用を許可</Japanese>
-            <Spanish>Habilitar el uso del Carbonato</Spanish>
-            <Portuguese>Permitir o uso de Carbonato</Portuguese>
-            <Finnish>Salli karbonaatin käyttö</Finnish>
-            <Russian>Разрешить использование Карбоната</Russian>
-            <Dutch>Sta gebruik van carbonaat toe</Dutch>
         </Key>
         <Key ID="STR_KAT_Pharma_treatmentTime_Carbonate">
             <English>Treatment time for Carbonate</English>
@@ -2436,22 +2338,6 @@
         <Key ID="STR_KAT_Pharma_treatmentTime_TXAIM">
             <English>Treatment time for IM TXA</English>
         </Key>
-        <Key ID="STR_KAT_Pharma_medLvl_Norepinephrine">
-            <English>Medical level required for Norepinephrine</English>
-            <Polish>Poziom wyszkolenia medycznego dla Noradrenaliny</Polish>
-            <Chinesesimp>去甲肾上腺素所需的医疗水平</Chinesesimp>
-            <Czech>Zdravotnická úroveň potřebná pro Norepinefrin</Czech>
-            <Italian>Livello medico richiesto per la Norepinefrina</Italian>
-            <French>Niveau médical requis pour la Noradrénaline</French>
-            <Korean>노르에피네프린을 사용하는 데 필요한 의료 레벨 수준 변경</Korean>
-            <German>Benötigter medizinischer Grad, für die Gabe von Norepinephrin</German>
-            <Japanese>ノルアドレナリンの許可</Japanese>
-            <Spanish>Nivel médico requerido para la Norepinefrina</Spanish>
-            <Portuguese>Nível médico exigido para uso de Norepinefrina</Portuguese>
-            <Finnish>Norepinefriinin käytön edellyttämä lääketieteellinen taso</Finnish>
-            <Russian>Медицинский уровень, необходимый для использования Норадреналина</Russian>
-            <Dutch>Medisch niveau benodigd voor het gebruik van Noradrenaline</Dutch>
-        </Key>
         <Key ID="STR_KAT_Pharma_treatmentTime_Norepinephrine">
             <English>Treatment time for Norepinephrine</English>
             <Polish>Czas na wstrzyknięcie Noradrenaliny</Polish>
@@ -2484,22 +2370,6 @@
             <Russian>Медицинский уровень, необходимый для использования Фенилэфрина</Russian>
             <Dutch>Medisch niveau benodigd voor het gebruik van Fenylefrine</Dutch>
         </Key>
-        <Key ID="STR_KAT_Pharma_treatmentTime_Phenylephrine">
-            <English>Treatment time for Phenylephrine</English>
-            <Polish>Czas na wstrzyknięcie Fenylefryny</Polish>
-            <Chinesesimp>苯肾上腺素的治疗时间</Chinesesimp>
-            <Czech>Doba léčby pro Fenylefrin</Czech>
-            <Italian>Tempo di trattamento per la Fenilefrina</Italian>
-            <French>Temps de traitement de la Phényléphrine</French>
-            <Korean>페닐에프린으로 치료하는 시간</Korean>
-            <German>Anwendungszeit für Phenylephrin</German>
-            <Japanese>フェニレフリンの所要時間</Japanese>
-            <Spanish>Tiempo para uso de la Fenilefrina</Spanish>
-            <Portuguese>Tempo de uso de Fenilefrina</Portuguese>
-            <Finnish>Käsittelyaika fenyylille</Finnish>
-            <Russian>Время обработки Фенилэфрином</Russian>
-            <Dutch>Behandeltijd van Fenylefrine</Dutch>
-        </Key>
         <Key ID="STR_KAT_Pharma_treatmentTime_Nitroglycerin">
             <English>Treatment time for Nitroglycerin</English>
             <Polish>Czas na wstrzyknięcie Nitrogliceryny</Polish>
@@ -2515,22 +2385,6 @@
             <Finnish>Nitroglyseriinin hoitoaika</Finnish>
             <Russian>Время обработки Нитроглицерином</Russian>
             <Dutch>Behandeltijd van Nitroglycerine</Dutch>
-        </Key>
-        <Key ID="STR_KAT_Pharma_medLvl_Amiodarone">
-            <English>Medical level required for Amiodarone</English>
-            <Polish>Poziom wyszkolenia medycznego dla Amiodaronu</Polish>
-            <Chinesesimp>胺碘酮所需的医疗水平</Chinesesimp>
-            <Italian>Livello medico richiesto per Amiodarone</Italian>
-            <Czech>Zdravotnická úroveň potřebná pro Amiodaron</Czech>
-            <French>Niveau médical requis pour l'Amiodarone</French>
-            <Korean>아미오다론을 사용하는 데 필요한 의료 레벨 수준 변경</Korean>
-            <German>Anwendungszeit für Amiodaron</German>
-            <Japanese>アミオダロンの許可</Japanese>
-            <Spanish>Nivel médico requerido para la Amiodarona</Spanish>
-            <Portuguese>Nível médico exigido para uso de Amiodarona</Portuguese>
-            <Finnish>Amiodaronille vaadittu lääketieteellinen koulutustaso</Finnish>
-            <Russian>Медицинский уровень, необходимый для использования Амиодарона</Russian>
-            <Dutch>Medisch niveau benodigd voor het gebruik van Amiodaron</Dutch>
         </Key>
         <Key ID="STR_KAT_Pharma_treatmentTime_Amiodarone">
             <English>Treatment time for Amiodarone</English>
@@ -2607,22 +2461,6 @@
             <Finnish>Atropiinia varten vaadittava lääketieteellinen koulutustaso</Finnish>
             <Russian>Медицинский уровень, необходимый для использования Атропина</Russian>
             <Dutch>Medisch niveau benodigd voor het gebruik van Atropine</Dutch>
-        </Key>
-        <Key ID="STR_KAT_Pharma_treatmentTime_Atropine">
-            <English>Treatment time for Atropine</English>
-            <Polish>Czas na wstrzyknięcie Atropiny</Polish>
-            <Chinesesimp>阿托品的治疗时间</Chinesesimp>
-            <Czech>Doba léčby na Atropin</Czech>
-            <Italian>Tempo di trattamento per l'Atropina</Italian>
-            <French>Temps de traitement de l'Atropine</French>
-            <Korean>아트로핀으로 치료하는 시간</Korean>
-            <German>Anwendungszeit für Atropin</German>
-            <Japanese>アトロピンの所要時間</Japanese>
-            <Spanish>Tiempo para uso de la Atropina</Spanish>
-            <Portuguese>Tempo de uso de Atropina</Portuguese>
-            <Finnish>Atropiinin hoitoaika</Finnish>
-            <Russian>Время обратки Атропином</Russian>
-            <Dutch>Behandeltijd van Atropine</Dutch>
         </Key>
         <Key ID="STR_KAT_Pharma_medLvl_AtropineIV">
             <English>Medical level required for Atropine IV</English>
@@ -2796,22 +2634,6 @@
             <Russian>Медицинский уровень, необходимый для использования Фентанила</Russian>
             <Dutch>Medisch niveau benodigd voor het gebruik van Fentanyl</Dutch>
         </Key>
-        <Key ID="STR_KAT_Pharma_treatmentTime_Fentanyl">
-            <English>Treatment time for Fentanyl</English>
-            <Polish>Czas na wstrzyknięcie Fentanylu</Polish>
-            <Chinesesimp>芬太尼的治疗时间</Chinesesimp>
-            <Italian>Tempo di trattamento per Fentanil</Italian>
-            <Czech>Doba léčby pro Fentanyl</Czech>
-            <French>Temps de traitement du Fentanyl</French>
-            <Korean>펜타닐로 치료하는 시간</Korean>
-            <German>Anwendungszeit für Fentanyl</German>
-            <Japanese>フェンタニルの所要時間</Japanese>
-            <Spanish>Tiempo para uso del Fentalino</Spanish>
-            <Portuguese>Tempo de uso de Fentanil</Portuguese>
-            <Finnish>Fentanyylin hoitoaika</Finnish>
-            <Russian>Время обработки Фентанилом</Russian>
-            <Dutch>Behandeltijd van Fentanyl</Dutch>
-        </Key>
         <Key ID="STR_KAT_Pharma_medLvl_FentanylIM">
             <English>Medical level required for IM Fentanyl</English>
         </Key>
@@ -2868,22 +2690,6 @@
             <Russian>Время обработки ингалятором Пентрокс</Russian>
             <Dutch>Behandeltijd van Penthrox inhalators</Dutch>
             <Italian>Tempo di trattamento per l'inalatore Penthrox</Italian>
-        </Key>
-        <Key ID="STR_KAT_Pharma_SubCategory_Basic">
-            <English>Basic Settings</English>
-            <Polish>Podstawowe Ustawienia</Polish>
-            <Chinesesimp>基础设置</Chinesesimp>
-            <Italian>Impostazioni di base</Italian>
-            <Czech>Základní nastavení</Czech>
-            <French>Paramètres basiques</French>
-            <Korean>일반 설정</Korean>
-            <German>Grundeinstellungen</German>
-            <Japanese>基本設定</Japanese>
-            <Spanish>Parámetros básicos</Spanish>
-            <Portuguese>Configurações básicas</Portuguese>
-            <Finnish>Perus asetukset</Finnish>
-            <Russian>Основные настройки</Russian>
-            <Dutch>Basis instellingen</Dutch>
         </Key>
         <Key ID="STR_KAT_Pharma_SubCategory_ApplyIV">
             <English>IV Settings</English>
@@ -3247,38 +3053,6 @@
             <Russian>%1 провел промывание физиологическим раствором</Russian>
             <Dutch>%1 voerde een salinespoeling uit</Dutch>
             <Italian>%1 ha eseguito un lavaggio salino</Italian>
-        </Key>
-        <Key ID="STR_KAT_Pharma_IVblock_closed">
-            <English>Patient's IV is blocked</English>
-            <Italian>La IV del paziente è ostruita/bloccata</Italian>
-            <Czech>IV pacienta je blokována</Czech>
-            <French>L'IV du patient est bloquée</French>
-            <Polish>IV jest zablokowane</Polish>
-            <Korean>환자의 IV가 막힘</Korean>
-            <German>Die IV des Patienten ist blockiert</German>
-            <Chinesesimp>患者的IV受到阻塞</Chinesesimp>
-            <Japanese>患者のIVは閉塞している</Japanese>
-            <Spanish>La IV del paciente esta bloqueada</Spanish>
-            <Portuguese>IV do paciente está bloqueado</Portuguese>
-            <Finnish>Potilaan IV on tukossa</Finnish>
-            <Russian>Капельница пациента заблокирована</Russian>
-            <Dutch>Patiënt's IV is geblokkeerd</Dutch>
-        </Key>
-        <Key ID="STR_KAT_Pharma_IVblock_clear">
-            <English>Patient's IV is clear</English>
-            <Italian>La IV del paziente è pulita</Italian>
-            <Czech>IV pacienta je čistá</Czech>
-            <French>L'IV du patient est dégagée</French>
-            <Polish>IV jest drożne</Polish>
-            <Korean>환자의 IV가 정상</Korean>
-            <German>Die IV des Patienten ist durchgängig</German>
-            <Chinesesimp>患者的IV是干净的</Chinesesimp>
-            <Japanese>患者のIVはクリアです</Japanese>
-            <Spanish>La IV del paciente esta funcionando correctamente</Spanish>
-            <Portuguese>IV do paciente está funcionando corretamente</Portuguese>
-            <Finnish>Potilaan IV on selvä</Finnish>
-            <Russian>Капельница пациента чиста</Russian>
-            <Dutch>Patiënt's IV is niet geblokkeerd</Dutch>
         </Key>
         <Key ID="STR_KAT_Pharma_SETTING_Kidney_Action">
             <English>Kidney damage/failure</English>
@@ -4813,24 +4587,6 @@
             <Finnish>Käytä naloksonia</Finnish>
             <Dutch>Gebruik Naloxone</Dutch>
         </Key>
-        <Key ID="STR_KAT_Pharma_Take_Nitro">
-            <English>Push Nitroglycerin</English>
-            <Czech>Aplikovat Nitroglycerin</Czech>
-            <French>Injecter Nitroglycérine</French>
-            <Spanish>Administrar Nitroglicerina</Spanish>
-            <Italian>Iniettare la nitroglicerina</Italian>
-            <Polish>Wstrzyknij Nitroglicerynę</Polish>
-            <Portuguese>Injetar Nitroglicerina</Portuguese>
-            <Russian>Ввести Нитроглицерин</Russian>
-            <German>Nitroglycerin verabreichen</German>
-            <Korean>니트로글리세린 투여</Korean>
-            <Japanese>ニトログリセリンを注入</Japanese>
-            <Chinese>注射硝化甘油</Chinese>
-            <Chinesesimp>推注硝化甘油</Chinesesimp>
-            <Turkish>Nitrogliserin itin</Turkish>
-            <Finnish>Paina nitroglyseriiniä</Finnish>
-            <Dutch>Injecteer Nitroglycerine</Dutch>
-        </Key>
         <Key ID="STR_KAT_Pharma_Take_Norep">
             <English>Push Norepinephrine</English>
             <Czech>Aplikovat Norepinefrin</Czech>
@@ -5205,24 +4961,6 @@
             <Chinesesimp>允许使用IV</Chinesesimp>
             <Finnish>Salli hakeminen IV</Finnish>
             <Dutch>IV plaatsing niveau</Dutch>
-        </Key>
-        <Key ID="STR_KAT_Pharma_medLvl_ApplyIV_Desc">
-            <English>Changes what medical level is required to set IVs</English>
-            <Czech>Změní, která zdravotnická úroveň je potřeba k zavedení IV</Czech>
-            <French>Niveau nécessaire pour poser une IV</French>
-            <Spanish>Cambia el nivel médico que se requiere para colocar las IVs</Spanish>
-            <Italian>Cambia il livello medico richiesto per impostare le IV</Italian>
-            <Polish>Poziom wyszkolenia medycznego potrzebnego do założenia kaniul IV</Polish>
-            <Portuguese>Muda qual nível médico é necessário para aplicar IVs</Portuguese>
-            <Russian>Изменяет медицинский уровень, необходимый для установки IV.</Russian>
-            <German>Benötigter medizinischer Grad, welcher für das Legen von IVs erforderlich ist</German>
-            <Korean>IV를 설정하는 데 필요한 의료 레벨 수준 변경</Korean>
-            <Japanese>IVの使用に必要な医療スキルのレベルを設定します。</Japanese>
-            <Chinese>更改設置 IV 需要的醫療級別</Chinese>
-            <Chinesesimp>改变设置 IV 所需的医疗级别</Chinesesimp>
-            <Turkish>IV'leri'ları ayarlamak için gereken tıbbi düzeyi değiştirir</Turkish>
-            <Finnish>Muuttaa, mitä lääketieteen koulutustasoa tarvitaan IV:n lisäämiseen</Finnish>
-            <Dutch>Bepaald welk medisch niveau benodigd is om IV's aan te kunnen leggen</Dutch>
         </Key>
         <Key ID="STR_KAT_Pharma_medLvl_Atropine">
             <English>Medical level required for Atropine</English>
