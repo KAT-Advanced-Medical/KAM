@@ -27,7 +27,7 @@ private _IVarray = _patient getVariable [QGVAR(IV), [0,0,0,0,0,0,0,0,0,0,0,0]];
 private _IVactual = _IVarray select _partIndex;
 private _IVpfh = _patient getVariable [QGVAR(IVpfh), [0,0,0,0,0,0,0,0,0,0,0,0]];
 private _IVpfhActual = _IVpfh select _partIndex;
-private _IVrate = _patient getVariable [QGVAR(IVrate), [0,0,0,0,0,0]];
+private _IVrate = _patient getVariable [QGVAR(IVrate), [0,0,0,0,0,0,0,0,0,0,0,0]];
 
 if (_IVpfhActual > 0) then {
     [_IVpfhActual] call CBA_fnc_removePerFrameHandler;

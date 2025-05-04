@@ -16,6 +16,9 @@ class CfgFunctions {
             class getBloodPressure {
                 file = QPATHTOF(functions\fnc_getBloodPressure.sqf);
             };
+            class updateWoundBloodLoss {
+                file = QPATHTOF(functions\fnc_updateWoundBloodLoss.sqf);
+            };
         };
     };
     class overwrite_medical_vitals {
@@ -23,14 +26,6 @@ class CfgFunctions {
         class ace_medical_treatment {
             class updateHeartRate {
                 file = QPATHTOF(functions\fnc_updateHeartRate.sqf);
-            };
-        };
-    };
-    class overwrite_medical {
-        tag = "ace_medical";
-        class ace_medical {
-            class updateWoundBloodLoss {
-                file = QPATHTOF(functions\fnc_updateWoundBloodLoss.sqf);
             };
         };
     };

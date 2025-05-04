@@ -18,7 +18,7 @@
  */
 
 params ["_patient", "_bodyPart", "_classname"];
-if !(_classname isEqualTo "syringe_ketamine_5ml_3") exitWith {};
+if (_classname isNotEqualTo "syringe_ketamine_5ml_3") exitWith {};
 
 _patient setVariable [QEGVAR(surgery,sedated), true, true];
 [_patient, true] call ACEFUNC(medical,setUnconscious);

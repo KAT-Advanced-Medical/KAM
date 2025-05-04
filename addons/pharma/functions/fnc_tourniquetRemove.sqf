@@ -57,11 +57,13 @@ if (_medic call ACEFUNC(common,isPlayer)) then {
 private _occludedMedications = _patient getVariable [QACEGVAR(medical,occludedMedications), []];
 private _arrayModified = false;
 
-if !(((_patient getVariable [QGVAR(IV), [0,0,0,0,0,0,0,0,0,0,0,0];]) select _partIndex) isEqualTo 7) then {
+if (((_patient getVariable [QGVAR(IV), [0,0,0,0,0,0,0,0,0,0,0,0]]) select _partIndex) isNotEqualTo 7) then {
     {
         _x params ["_bodyPartN", "_medication"];
 
-        if (_partIndex == _bodyPartN) then {
+        private _isStillOccluded = [_patient, _bodyPartN] call FUNC(occlusionCheck);
+
+        if (!_isStillOccluded) then {
             TRACE_1("delayed medication call after tourniquet removal",_x);
             [QGVAR(medicationLocal), [_patient, _bodyPart, _medication], _patient] call CBA_fnc_targetEvent;
             _occludedMedications set [_forEachIndex, []];
