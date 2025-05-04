@@ -312,6 +312,77 @@
         </Key>
         <Key ID="STR_KAT_GUI_Prepared_Syringe">
             <English>Prepared %1</English>
+        <Key ID="STR_KAT_GUI_Torso">
+            <English>Torso</English>
+        </Key>
+        <Key ID="STR_KAT_GUI_Chest">
+            <English>Chest</English>
+        </Key>
+        <Key ID="STR_KAT_GUI_Neck">
+            <English>Neck</English>
+        </Key>
+        <Key ID="STR_KAT_GUI_Head">
+            <English>Head</English>
+        </Key>
+        <Key ID="STR_KAT_GUI_ArmLeft">
+            <English>Left Arm</English>
+        </Key>
+        <Key ID="STR_KAT_GUI_ArmUpperLeft">
+            <English>Upper Left Arm</English>
+        </Key>
+        <Key ID="STR_KAT_GUI_ArmRight">
+            <English>Right Arm</English>
+        </Key>
+        <Key ID="STR_KAT_GUI_ArmUpperRight">
+            <English>Upper Right Arm</English>
+        </Key>
+        <Key ID="STR_KAT_GUI_LegLeft">
+            <English>Left Leg</English>
+        </Key>
+        <Key ID="STR_KAT_GUI_LegUpperLeft">
+            <English>Upper Left Leg</English>
+        </Key>
+        <Key ID="STR_KAT_GUI_LegRight">
+            <English>Right Leg</English>
+        </Key>
+        <Key ID="STR_KAT_GUI_LegUpperRight">
+            <English>Upper Right Leg</English>
+        </Key>
+        <Key ID="STR_KAT_GUI_SelectHead">
+            <English>Select Head</English>
+        </Key>
+        <Key ID="STR_KAT_GUI_SelectNeck">
+            <English>Select Neck</English>
+        </Key>
+        <Key ID="STR_KAT_GUI_SelectChest">
+            <English>Select Chest</English>
+        </Key>
+        <Key ID="STR_KAT_GUI_SelectTorso">
+            <English>Select Torso</English>
+        </Key>
+        <Key ID="STR_KAT_GUI_SelectLeftArm">
+            <English>Select Lower Left Arm</English>
+        </Key>
+        <Key ID="STR_KAT_GUI_SelectUpperLeftArm">
+            <English>Select Upper Left Arm</English>
+        </Key>
+        <Key ID="STR_KAT_GUI_SelectRightArm">
+            <English>Select Lower Right Arm</English>
+        </Key>
+        <Key ID="STR_KAT_GUI_SelectRightUpperArm">
+            <English>Select Upper Right Arm</English>
+        </Key>
+        <Key ID="STR_KAT_GUI_SelectLeftLeg">
+            <English>Select Lower Left Leg</English>
+        </Key>
+        <Key ID="STR_KAT_GUI_SelectLeftUpperLeg">
+            <English>Select Upper Left Leg</English>
+        </Key>
+        <Key ID="STR_KAT_GUI_SelectRightLeg">
+            <English>Select Lower Right Leg</English>
+        </Key>
+        <Key ID="STR_KAT_GUI_SelectRightUpperLeg">
+            <English>Select Upper Right Leg</English>
         </Key>
     </Package>
 </Project>

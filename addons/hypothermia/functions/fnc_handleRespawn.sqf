@@ -31,7 +31,7 @@ if (GVAR(hypothermiaActive)) then {
             [_idPFH] call CBA_fnc_removePerFrameHandler;
         };
 
-        private _handWarmers = _patient getVariable [QGVAR(handWarmers), [0,0,0,0,0,0]];
+        private _handWarmers = _patient getVariable [QGVAR(handWarmers), [0,0,0,0,0,0,0,0,0,0,0,0]];
 
         {
             _x params ["_timeRemaining"];

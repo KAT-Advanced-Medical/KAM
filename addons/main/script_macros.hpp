@@ -197,7 +197,7 @@
 #undef GET_DAMAGE_THRESHOLD
 #define GET_DAMAGE_THRESHOLD(unit)  ((unit getVariable [QACEGVAR(medical,damageThreshold), [ACEGVAR(medical,AIDamageThreshold),ACEGVAR(medical,playerDamageThreshold)] select (isPlayer unit)]) * (GET_OPIOID_FACTOR(unit) + 1))
 
-#define DEFAULT_TOURNIQUET_VALUES   [0,0,0,0,0,0]
+#define DEFAULT_TOURNIQUET_VALUES   [0,0,0,0,0,0,0,0,0,0,0,0]
 #define GET_TOURNIQUETS(unit)       (unit getVariable [VAR_TOURNIQUET, DEFAULT_TOURNIQUET_VALUES])
 #define GET_SURGICAL_TOURNIQUETS(unit)       (unit getVariable [QEGVAR(surgery,surgicalBlock), DEFAULT_TOURNIQUET_VALUES])
 #define HAS_TOURNIQUET_APPLIED_ON(unit,index) ((GET_TOURNIQUETS(unit) select index) > 0 )
@@ -274,7 +274,7 @@
 
 #include "script_debug.hpp"
 
-#define ALL_BODY_PARTS_PRIORITY ["body", "head", "leftarm", "rightarm", "leftleg", "rightleg"]
+#define ALL_BODY_PARTS_PRIORITY ["chest", "body", "head", "neck", "leftarm", "upperleftarm", "rightarm", "upperrightarm", "leftleg", "upperleftleg", "rightleg", "upperrightleg"]
 
 #define DEFAULT_PACO2 40
 #define DEFAULT_PAO2 90
@@ -343,7 +343,7 @@
 #define GET_VASOCONSTRICTION(unit)     (unit getVariable [VAR_VASOCONSTRICTION, 1])
 
 //Surgery
-#define STRING_BODY_PARTS ["head", "body", "left arm", "right arm", "left leg", "right leg"]
+#define STRING_BODY_PARTS ["head", "neck", "chest", "body", "left arm", "upper left arm", "right arm", "upper right arm", "left leg", "upper leftleg", "right leg", "upper right leg"]
 #define GET_REBOA_VOLUME(unit)         ([unit] call EFUNC(surgery,reboaVolume))
 
 //Feedback
@@ -356,3 +356,53 @@
 //Ophthalmology
 #define GET_DUST_INJURY(unit) ((unit getVariable [QEGVAR(ophthalmology,dustInjuryLight), 0]) + (unit getVariable [QEGVAR(ophthalmology,dustInjuryHeavy), 0]))
 #define GET_EYE_INJURIES(unit) (unit getVariable [QEGVAR(ophthalmology,eyeInjuries), [1,1]])
+
+//Hitpoints
+
+#undef ALL_BODY_PARTS
+#undef ALL_SELECTIONS
+#undef ALL_HITPOINTS
+
+#define ALL_BODY_PARTS ["head", "neck", "chest", "body", "leftarm", "upperleftarm", "rightarm", "upperrightarm", "leftleg", "upperleftleg", "rightleg", "upperrightleg"]
+#define ALL_SELECTIONS ["head", "neck", "chest", "body", "hand_l", "uhand_l", "hand_r", "uhand_r", "leg_l", "uleg_l", "leg_r", "uleg_r"]
+#define ALL_HITPOINTS ["HitHead", "HitNeck", "HitChest", "HitAbdomen", "HitLeftArm", "HitRightArm", "HitLeftLeg", "HitRightLeg"]
+
+#undef HITPOINT_INDEX_BODY
+#undef HITPOINT_INDEX_LARM
+#undef HITPOINT_INDEX_RARM
+#undef HITPOINT_INDEX_LLEG
+#undef HITPOINT_INDEX_RLEG
+
+#undef DEFAULT_TOURNIQUET_VALUES
+#undef DEFAULT_FRACTURE_VALUES
+#undef DEFAULT_BODYPART_DAMAGE_VALUES
+
+#define PRIORITY_NECK       3
+#define PRIORITY_CHEST      4
+#define HITPOINT_INDEX_NECK 1
+#define HITPOINT_INDEX_CHEST 2
+#define HITPOINT_INDEX_BODY 3
+#define HITPOINT_INDEX_LARM 4
+#define HITPOINT_INDEX_ULARM 5
+#define HITPOINT_INDEX_RARM 6
+#define HITPOINT_INDEX_URARM 7
+#define HITPOINT_INDEX_LLEG 8
+#define HITPOINT_INDEX_ULLEG 9
+#define HITPOINT_INDEX_RLEG 10
+#define HITPOINT_INDEX_URLEG 11
+
+#define DEFAULT_TOURNIQUET_VALUES [0,0,0,0,0,0,0,0,0,0,0,0]
+#define DEFAULT_FRACTURE_VALUES [0,0,0,0,0,0,0,0,0,0,0,0]
+#define DEFAULT_BODYPART_DAMAGE_VALUES [0,0,0,0,0,0,0,0,0,0,0,0]
+
+#define POS_X(N) ((N) * GUI_GRID_W + GUI_GRID_CENTER_X)
+#define POS_Y(N) ((N) * GUI_GRID_H + GUI_GRID_CENTER_Y)
+#define POS_W(N) ((N) * GUI_GRID_W)
+#define POS_H(N) ((N) * GUI_GRID_H)
+
+#define PATIENT_INFO_IGUI_BASE_X (safeZoneX + POS_W(2))
+#define PATIENT_INFO_IGUI_BASE_Y (safeZoneY + POS_H(1))
+#define PATIENT_INFO_IGUI_X (profilenamespace getVariable ['TRIPLES(IGUI,GVAR(patientInfo),X)', 0])
+#define PATIENT_INFO_IGUI_Y (profilenamespace getVariable ['TRIPLES(IGUI,GVAR(patientInfo),Y)', 0])
+#define PATIENT_INFO_IGUI_OFFSET_X (PATIENT_INFO_IGUI_X - PATIENT_INFO_IGUI_BASE_X)
+#define PATIENT_INFO_IGUI_OFFSET_Y (PATIENT_INFO_IGUI_Y - PATIENT_INFO_IGUI_BASE_Y)

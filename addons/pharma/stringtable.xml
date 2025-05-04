@@ -6625,5 +6625,23 @@
             <Finnish>Käytetään bradykardian hoitoon</Finnish>
             <Dutch>Wordt gebruikt om chemische blootstelling en bradycardie te behandelen</Dutch>
         </Key>
+        <Key ID="STR_KAT_Pharma_Chest">
+            <English>Chest</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_Neck">
+            <English>Neck</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_ArmUpperLeft">
+            <English>Upper Left Arm</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_ArmUpperRight">
+            <English>Upper Right Arm</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_LegUpperLeft">
+            <English>Upper Left Leg</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_LegUpperRight">
+            <English>Upper Right Leg</English>
+        </Key>
     </Package>
 </Project>

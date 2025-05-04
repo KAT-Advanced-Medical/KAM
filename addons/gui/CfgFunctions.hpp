@@ -2,6 +2,12 @@ class CfgFunctions {
     class overwrite_medical_gui {
         tag = "ace_medical_gui";
         class ace_medical_gui {
+            class addTreatmentActions {
+                file = QPATHTOF(functions\fnc_addTreatmentActions.sqf);
+            };
+            class collectActions {
+                file = QPATHTOF(functions\fnc_collectActions.sqf);
+            };
             class menuPFH {
                 file = QPATHTOF(functions\fnc_menuPFH.sqf);
             };
@@ -19,6 +25,9 @@ class CfgFunctions {
             };
             class updateBodyImage {
                 file = QPATHTOF(functions\fnc_updateBodyImage.sqf);
+            };
+            class displayPatientInformation {
+                file = QPATHTOF(functions\fnc_displayPatientInformation.sqf);
             };
         };
     };

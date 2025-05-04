@@ -20,7 +20,7 @@
 params ["_medic", "_patient", "_bodyPart"];
 
 private _part = ALL_BODY_PARTS find toLower _bodyPart;
-private _fractureArray = _patient getVariable [QGVAR(fractures), [0,0,0,0,0,0]];
+private _fractureArray = _patient getVariable [QGVAR(fractures), [0,0,0,0,0,0,0,0,0,0,0,0]];
 private _liveFracture = _fractureArray select _part;
 private _fractureString = "";
 

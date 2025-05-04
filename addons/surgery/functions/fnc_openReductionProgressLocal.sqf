@@ -26,7 +26,7 @@ if (GVAR(Surgery_ConsciousnessRequirement) == 1 && !(IS_UNCONSCIOUS(_patient))) 
 };
 
 private _part = ALL_BODY_PARTS find toLower _bodyPart;
-private _fractureArray = _patient getVariable [QGVAR(fractures), [0,0,0,0,0,0]];
+private _fractureArray = _patient getVariable [QGVAR(fractures), [0,0,0,0,0,0,0,0,0,0,0,0]];
 private _liveFracture = _fractureArray select _part;
 private _surgeryString = "";
 private _number = _entry;

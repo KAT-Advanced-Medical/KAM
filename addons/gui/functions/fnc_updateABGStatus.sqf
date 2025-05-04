@@ -18,7 +18,7 @@
 params ["_target"];
 
 // Get tourniquets, damage, and blood loss for target
-private _bloodGasTest = _target getVariable [QEGVAR(circulation,testedBloodGas), [0,0,0,0,0,0]];
+private _bloodGasTest = _target getVariable [QEGVAR(circulation,testedBloodGas), [0,0,0,0,0,0,0,0,0,0,0,0]];
 private _activeBlood = 0;
 private _ABGmenuShow = _target getVariable [QEGVAR(pharma,ABGmenuShow), false];
 

@@ -1,0 +1,16 @@
+PREP(addDamageToUnit);
+PREP(addTreatmentActions);
+PREP(canSplint);
+PREP(fullHealLocal);
+PREP(handleDamage);
+PREP(handleIncapacitation);
+PREP(hasTourniquetAppliedTo);
+PREP(onKeyDown);
+PREP(splintLocal);
+PREP(tourniquetLocal);
+PREP(tourniquetRemove);
+PREP(updateBodyPartVisuals);
+PREP(updateWoundBloodLoss);
+PREP(woundsHandlerBase);
+PREP(woundsHandlerExplosion);
+PREP(woundsHandlerVehiclehit);

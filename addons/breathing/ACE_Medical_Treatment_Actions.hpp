@@ -5,7 +5,7 @@ class ACE_Medical_Treatment_Actions {
         displayName = CSTRING(auscultateLung_display);
         displayNameProgress = CSTRING(listening_progress);
         treatmentTime = QGVAR(stethoscopeListeningTime);
-        allowedSelections[] = {"Body"};
+        allowedSelections[] = {"Chest"};
         allowSelfTreatment = 0;
         category = "airway";
         medicRequired = 0;
@@ -46,7 +46,7 @@ class ACE_Medical_Treatment_Actions {
         displayNameProgress = CSTRING(inspectChest_progress);
         category = "airway";
         treatmentTime = QGVAR(InspectChest_time);
-        allowedSelections[] = {"Body"};
+        allowedSelections[] = {"Chest"};
         allowSelfTreatment = 0;
         medicRequired = QGVAR(inspectChest_medLvl);
         condition = QUOTE(!([_patient] call ACEFUNC(common,isAwake)) && (missionNamespace getVariable [ARR_2(QQGVAR(enable),true)]) && (missionNamespace getVariable [ARR_2(QQGVAR(inspectChest_enable),0)] > 0));
@@ -108,7 +108,7 @@ class ACE_Medical_Treatment_Actions {
         displayNameProgress = CSTRING(treating);
         category = "airway";
         treatmentLocations = 0;
-        allowedSelections[] = {"Body"};
+        allowedSelections[] = {"Chest"};
         allowSelfTreatment = QGVAR(enable_selfChestseal);
         medicRequired = QGVAR(medLvl_Chestseal);
         treatmentTime = 7;
@@ -136,7 +136,7 @@ class ACE_Medical_Treatment_Actions {
         displayNameProgress = CSTRING(treating);
         category = "airway";
         treatmentLocations = 0;
-        allowedSelections[] = {"Body"};
+        allowedSelections[] = {"Chest"};
         allowSelfTreatment = 0;
         medicRequired = QGVAR(medLvl_hemopneumothoraxTreatment);
         treatmentTime = 7;
@@ -164,7 +164,7 @@ class ACE_Medical_Treatment_Actions {
         displayNameProgress = CSTRING(treating);
         category = "airway";
         treatmentLocations = 0;
-        allowedSelections[] = {"Body"};
+        allowedSelections[] = {"Chest"};
         allowSelfTreatment = 0;
         medicRequired = QGVAR(medLvl_FingerThoracostomyTreatment);
         treatmentTime = 12;
@@ -220,7 +220,7 @@ class ACE_Medical_Treatment_Actions {
         displayNameProgress = CSTRING(treating);
         category = "airway";
         treatmentLocations = 0;
-        allowedSelections[] = {"Body"};
+        allowedSelections[] = {"Chest"};
         allowSelfTreatment = 0;
         medicRequired = QGVAR(medLvl_hemopneumothoraxTreatment);
         treatmentTime = 7;

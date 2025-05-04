@@ -20,8 +20,8 @@
 params ["_target"];
 
 // Get tourniquets, damage, and blood loss for target
-private _IV = _target getVariable [QEGVAR(pharma,IV), [0,0,0,0,0,0]];
-private _ivFlow = _target getVariable [QEGVAR(pharma,IVflow), [0,0,0,0,0,0]];
+private _IV = _target getVariable [QEGVAR(pharma,IV), [0,0,0,0,0,0,0,0,0,0,0,0]];
+private _ivFlow = _target getVariable [QEGVAR(pharma,IVflow), [0,0,0,0,0,0,0,0,0,0,0,0]];
 private _ivMenuShow = _target getVariable [QEGVAR(pharma,IVmenuActive), false];
 
 if (_ivMenuShow) then {

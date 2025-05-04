@@ -12,7 +12,7 @@ class ACE_Medical_Treatment_Actions {
         displayNameProgress = CSTRING(fracture_checking);
         category = "examine";
         treatmentLocations = 0;
-        allowedSelections[] = {"LeftArm", "RightArm", "LeftLeg", "RightLeg"};
+        allowedSelections[] = {"LeftArm", "RightArm", "LeftLeg", "RightLeg", "UpperLeftArm", "UpperRightArm", "UpperLeftLeg", "UpperRightLeg"};
         allowSelfTreatment = QGVAR(enable_selfCheckFracture);
         medicRequired = QGVAR(fractureCheck_MedLevel);
         treatmentTime = QGVAR(fractureCheck_Time);
@@ -25,7 +25,7 @@ class ACE_Medical_Treatment_Actions {
         displayNameProgress = CSTRING(perform);
         category = "surgery";
         treatmentLocations = QGVAR(closedLocation);
-        allowedSelections[] = {"LeftArm", "RightArm", "LeftLeg", "RightLeg"};
+        allowedSelections[] = {"LeftArm", "RightArm", "LeftLeg", "RightLeg", "UpperLeftArm", "UpperRightArm", "UpperLeftLeg", "UpperRightLeg"};
         allowSelfTreatment = 0;
         medicRequired = QGVAR(closedReduction_MedLevel);
         treatmentTime = QGVAR(closedTime);
@@ -38,7 +38,7 @@ class ACE_Medical_Treatment_Actions {
         displayNameProgress = CSTRING(perform);
         category = "surgery";
         treatmentLocations = QGVAR(surgicalLocation);
-        allowedSelections[] = {"LeftArm", "RightArm", "LeftLeg", "RightLeg"};
+        allowedSelections[] = {"LeftArm", "RightArm", "LeftLeg", "RightLeg", "UpperLeftArm", "UpperRightArm", "UpperLeftLeg", "UpperRightLeg"};
         allowSelfTreatment = 0;
         medicRequired = QGVAR(surgicalAction_MedLevel);
         treatmentTime = QGVAR(openTime);
@@ -52,7 +52,7 @@ class ACE_Medical_Treatment_Actions {
         displayNameProgress = CSTRING(Retractor_Action);
         category = "surgery";
         treatmentLocations = QGVAR(surgicalLocation);
-        allowedSelections[] = {"LeftArm", "RightArm", "LeftLeg", "RightLeg"};
+        allowedSelections[] = {"LeftArm", "RightArm", "LeftLeg", "RightLeg", "UpperLeftArm", "UpperRightArm", "UpperLeftLeg", "UpperRightLeg"};
         allowSelfTreatment = 0;
         medicRequired = QGVAR(surgicalAction_MedLevel);
         treatmentTime = QGVAR(intermediateTime);
@@ -66,7 +66,7 @@ class ACE_Medical_Treatment_Actions {
         displayNameProgress = CSTRING(perform);
         category = "surgery";
         treatmentLocations = QGVAR(surgicalLocation);
-        allowedSelections[] = {"LeftArm", "RightArm", "LeftLeg", "RightLeg"};
+        allowedSelections[] = {"LeftArm", "RightArm", "LeftLeg", "RightLeg", "UpperLeftArm", "UpperRightArm", "UpperLeftLeg", "UpperRightLeg"};
         allowSelfTreatment = 0;
         medicRequired = QGVAR(surgicalAction_MedLevel);
         treatmentTime = QGVAR(incisionTime);
@@ -79,7 +79,7 @@ class ACE_Medical_Treatment_Actions {
         displayNameProgress = CSTRING(Clamp_Action);
         category = "surgery";
         treatmentLocations = QGVAR(surgicalLocation);
-        allowedSelections[] = {"LeftArm", "RightArm", "LeftLeg", "RightLeg"};
+        allowedSelections[] = {"LeftArm", "RightArm", "LeftLeg", "RightLeg", "UpperLeftArm", "UpperRightArm", "UpperLeftLeg", "UpperRightLeg"};
         allowSelfTreatment = 0;
         medicRequired = QGVAR(surgicalAction_MedLevel);
         treatmentTime = QGVAR(intermediateTime);
@@ -93,7 +93,7 @@ class ACE_Medical_Treatment_Actions {
         displayNameProgress = CSTRING(Irrigate_Action);
         category = "surgery";
         treatmentLocations = QGVAR(surgicalLocation);
-        allowedSelections[] = {"LeftArm", "RightArm", "LeftLeg", "RightLeg"};
+        allowedSelections[] = {"LeftArm", "RightArm", "LeftLeg", "RightLeg", "UpperLeftArm", "UpperRightArm", "UpperLeftLeg", "UpperRightLeg"};
         allowSelfTreatment = 0;
         medicRequired = QGVAR(surgicalAction_MedLevel);
         treatmentTime = QGVAR(intermediateTime);
@@ -106,7 +106,7 @@ class ACE_Medical_Treatment_Actions {
         displayNameProgress = CSTRING(perform);
         category = "surgery";
         treatmentLocations = QGVAR(surgicalLocation);
-        allowedSelections[] = {"LeftArm", "RightArm", "LeftLeg", "RightLeg"};
+        allowedSelections[] = {"LeftArm", "RightArm", "LeftLeg", "RightLeg", "UpperLeftArm", "UpperRightArm", "UpperLeftLeg", "UpperRightLeg"};
         allowSelfTreatment = 0;
         medicRequired = QGVAR(surgicalAction_MedLevel);
         treatmentTime = QGVAR(openTime);
@@ -136,7 +136,7 @@ class ACE_Medical_Treatment_Actions {
         displayNameProgress = CSTRING(Ultra_Action);
         category = "surgery";
         treatmentLocations = QGVAR(ultrasoundLocation);
-        allowedSelections[] = {"Body"};
+        allowedSelections[] = {"Chest"};
         allowSelfTreatment = 0;
         medicRequired = QGVAR(ultrasoundAction_MedLevel);
         treatmentTime = QGVAR(ultrasoundTime);
@@ -150,7 +150,7 @@ class ACE_Medical_Treatment_Actions {
         displayNameProgress = CSTRING(Reboa_Action);
         category = "surgery";
         treatmentLocations = QGVAR(reboaLocation);
-        allowedSelections[] = {"LeftLeg", "RightLeg"};
+        allowedSelections[] = {"UpperLeftLeg", "UpperRightLeg"};
         allowSelfTreatment = 0;
         medicRequired = QGVAR(reboa_MedLevel);
         treatmentTime = QGVAR(reboaTime);
@@ -164,7 +164,7 @@ class ACE_Medical_Treatment_Actions {
         displayNameProgress = CSTRING(Reboa_Deep_Action);
         category = "surgery";
         treatmentLocations = QGVAR(reboaLocation);
-        allowedSelections[] = {"LeftLeg", "RightLeg"};
+        allowedSelections[] = {"UpperLeftLeg", "UpperRightLeg"};
         allowSelfTreatment = 0;
         medicRequired = QGVAR(reboa_MedLevel);
         treatmentTime = QGVAR(reboaTime);
@@ -178,7 +178,7 @@ class ACE_Medical_Treatment_Actions {
         displayNameProgress = CSTRING(Reboa_Remove_Action);
         category = "surgery";
         treatmentLocations = QGVAR(reboaLocation);
-        allowedSelections[] = {"LeftLeg", "RightLeg"};
+        allowedSelections[] = {"UpperLeftLeg", "UpperRightLeg"};
         allowSelfTreatment = 0;
         medicRequired = QGVAR(reboa_MedLevel);
         treatmentTime = QGVAR(reboaTime);
@@ -192,7 +192,7 @@ class ACE_Medical_Treatment_Actions {
         displayNameProgress = CSTRING(Pericardial_Tap_Action);
         category = "surgery";
         treatmentLocations = QGVAR(pericardialtapLocation);
-        allowedSelections[] = {"Body"};
+        allowedSelections[] = {"Chest"};
         allowSelfTreatment = 0;
         medicRequired = QGVAR(pericardialtapAction_MedLevel);
         treatmentTime = QGVAR(pericardialtapTime);

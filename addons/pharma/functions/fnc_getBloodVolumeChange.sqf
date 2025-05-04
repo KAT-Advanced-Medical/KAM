@@ -31,7 +31,7 @@ _ECB = (_ECB + (_lossVolumeChange * LITERS_TO_ML) / 2) max 100;
 
 if (!isNil {_unit getVariable [QACEGVAR(medical,ivBags),[]]}) then {
     private _bloodBags = _unit getVariable [QACEGVAR(medical,ivBags), []];
-    private _IVarray = _unit getVariable [QGVAR(IV), [0,0,0,0,0,0]];
+    private _IVarray = _unit getVariable [QGVAR(IV), [0,0,0,0,0,0,0,0,0,0,0,0]];
     private _flowCalculation = (ACEGVAR(medical,ivFlowRate) * _deltaT * 4.16);
     private _hypothermia = EGVAR(hypothermia,hypothermiaActive);
     private _vasoconstriction = GET_VASOCONSTRICTION(_unit);
@@ -39,9 +39,9 @@ if (!isNil {_unit getVariable [QACEGVAR(medical,ivBags),[]]}) then {
     if (GET_HEART_RATE(_unit) < 20) then {
         _flowCalculation = _flowCalculation / 1.5;
     };
-    private _incomingFlowAmount = [0,0,0,0,0,0];
-    private _incomingVolumeChange = [0,0,0,0,0,0];
-    private _fluidWarmer = _unit getVariable [QEGVAR(hypothermia,fluidWarmer), [0,0,0,0,0,0]];
+    private _incomingFlowAmount = [0,0,0,0,0,0,0,0,0,0,0,0];;
+    private _incomingVolumeChange = [0,0,0,0,0,0,0,0,0,0,0,0];;
+    private _fluidWarmer = _unit getVariable [QEGVAR(hypothermia,fluidWarmer), [0,0,0,0,0,0,0,0,0,0,0,0];];
     private _fluidHeat = 0;
 
     _bloodBags = _bloodBags apply {
@@ -50,8 +50,8 @@ if (!isNil {_unit getVariable [QACEGVAR(medical,ivBags),[]]}) then {
         private _tourniquets = GET_TOURNIQUETS(_unit);
 
         if ((_tourniquets select _bodyPart isEqualTo 0) && ([7,8,9] find (_IVarray select _bodyPart) == -1)) then {
-            private _IVflow = _unit getVariable [QGVAR(IVflow), [0,0,0,0,0,0]];
-            private _IVrate = _unit getVariable [QGVAR(IVrate), [0,0,0,0,0,0]];
+            private _IVflow = _unit getVariable [QGVAR(IVflow), [0,0,0,0,0,0,0,0,0,0,0,0];];
+            private _IVrate = _unit getVariable [QGVAR(IVrate), [0,0,0,0,0,0,0,0,0,0,0,0];];
             private _bagChange = (_flowCalculation * (_IVflow select _bodyPart) * (_IVrate select _bodyPart) * _rateCoef) min _bagVolumeRemaining; // absolute value of the change in miliLiters
             _bagVolumeRemaining = _bagVolumeRemaining - _bagChange;
             _incomingFlowAmount set [_bodyPart, ((_incomingFlowAmount select _bodyPart) + _bagChange)];

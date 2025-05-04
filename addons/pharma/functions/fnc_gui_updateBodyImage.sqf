@@ -25,10 +25,15 @@ private _ctrlIVLeftLeg = _ctrlGroup controlsGroupCtrl IDC_BODY_LEFTLEG_IV;
 private _ctrlIVRightLeg = _ctrlGroup controlsGroupCtrl IDC_BODY_RIGHTLEG_IV;
 private _ctrlIO = _ctrlGroup controlsGroupCtrl IDC_BODY_TORSO_IO;
 
-private _IVArray = _target getVariable [QGVAR(IV), [0,0,0,0,0,0]];
+private _IVArray = _target getVariable [QGVAR(IV), [0,0,0,0,0,0,0,0,0,0,0,0]];
+private _indicesToCheck = [4, 6, 9, 11];
+private _controls = [_ctrlIVLeftArm, _ctrlIVRightArm, _ctrlIVLeftLeg, _ctrlIVRightLeg];
 
 {
-    switch (_IVArray select (_forEachIndex + 2)) do {
+    private _index = _indicesToCheck select _forEachIndex;
+    private _value = _IVArray select _index;
+
+    switch (_value) do {
         case 0: {
             _x ctrlShow false;
         };
@@ -36,9 +41,9 @@ private _IVArray = _target getVariable [QGVAR(IV), [0,0,0,0,0,0]];
             _x ctrlShow true;
         };
     };
-} forEach [_ctrlIVLeftArm, _ctrlIVRightArm, _ctrlIVLeftLeg, _ctrlIVRightLeg];
+} forEach _controls;
 
-if ((_IVArray select 1) isEqualTo 1) then {
+if ((_IVArray select 3) isEqualTo 1) then {
     _ctrlIO ctrlShow true;
 } else {
     _ctrlIO ctrlShow false;

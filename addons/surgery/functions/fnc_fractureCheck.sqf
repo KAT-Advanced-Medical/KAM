@@ -25,7 +25,7 @@ private _activeFracture = GET_FRACTURES(_patient);
 
 if (_number == 5 && (_activeFracture select _part) != 0) exitWith {true};
 
-private _fractureArray = _patient getVariable [QGVAR(fractures), [0,0,0,0,0,0]];
+private _fractureArray = _patient getVariable [QGVAR(fractures), [0,0,0,0,0,0,0,0,0,0,0,0]];
 private _liveFracture = _fractureArray select _part;
 
 if ((_liveFracture == 1) && (_number == 1)) exitWith {true};

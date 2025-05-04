@@ -22,9 +22,9 @@ params ["_ctrlGroup", "_target", "_selectionN"];
 // Get tourniquets, damage, and blood loss for target
 private _tourniquets = GET_TOURNIQUETS(_target);
 private _fractures = GET_FRACTURES(_target);
-private _bodyPartDamage = _target getVariable [QACEGVAR(medical,bodyPartDamage), [0, 0, 0, 0, 0, 0]];
+private _bodyPartDamage = _target getVariable [QACEGVAR(medical,bodyPartDamage), [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]];
 private _damageThreshold = GET_DAMAGE_THRESHOLD(_target);
-private _bodyPartBloodLoss = [0, 0, 0, 0, 0, 0];
+private _bodyPartBloodLoss = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
 private _surgicalBlock = GET_SURGICAL_TOURNIQUETS(_target);
 
 {
@@ -81,25 +81,44 @@ private _surgicalBlock = GET_SURGICAL_TOURNIQUETS(_target);
         // _damageThreshold here indicates how close unit is to guaranteed death via sum of trauma, so use the same multipliers used in medical_damage/functions/fnc_determineIfFatal.sqf
         // TODO: make multipliers for head and torso a macro in medical_engine/script_macros_medical.hpp
         switch (true) do { // torso damage threshold doesn't need scaling
-            case (_forEachIndex > 3): { // legs: index 4 & 5
+            case (_forEachIndex > 7): { // legs: index 8,9,10,11
+
                 if (ACEGVAR(medical,limbDamageThreshold) != 0 && {[false, !isPlayer _target, true] select ACEGVAR(medical,useLimbDamage)}) then { // Just indicate how close to the limping threshold we are
-                    _damageThreshold = _damageThreshold * EGVAR(medical,limbDamageThreshold);
-                } else {
-                    _damageThreshold = LIMPING_DAMAGE_THRESHOLD * 4;
-                };
-            };
-            case (_forEachIndex > 1): { // arms: index 2 & 3
-                if (ACEGVAR(medical,limbDamageThreshold) != 0 && {[false, !isPlayer _target, true] select ACEGVAR(medical,useLimbDamage)}) then { // Just indicate how close to the fracture threshold we are
+
                     _damageThreshold = _damageThreshold * ACEGVAR(medical,limbDamageThreshold);
+
                 } else {
-                    _damageThreshold = FRACTURE_DAMAGE_THRESHOLD * 4;
+
+                    _damageThreshold = LIMPING_DAMAGE_THRESHOLD * 4;
+
                 };
+
             };
-            case (_forEachIndex == 0): { // head: index 0
-                _damageThreshold = _damageThreshold * 1.25;
+
+            case (_forEachIndex > 3): { // arms: index 4,5,6,7
+
+                if (ACEGVAR(medical,limbDamageThreshold) != 0 && {[false, !isPlayer _target, true] select ACEGVAR(medical,useLimbDamage)}) then { // Just indicate how close to the fracture threshold we are
+
+                    _damageThreshold = _damageThreshold * ACEGVAR(medical,limbDamageThreshold);
+
+                } else {
+
+                    _damageThreshold = FRACTURE_DAMAGE_THRESHOLD * 4;
+
+                };
+
             };
-            default { // torso: index 1
+
+            case (_forEachIndex > 1): { // body
+
+                _damageThreshold = _damageThreshold * 1.5;
+
+            };
+
+            default { //head and neck
+
                 _damageThreshold = _damageThreshold * 1.5
+
             };
         };
         _damage = (_damage / (0.01 max _damageThreshold)) min 1;
@@ -110,11 +129,28 @@ private _surgicalBlock = GET_SURGICAL_TOURNIQUETS(_target);
     _ctrlBodyPart ctrlSetTextColor _bodyPartColor;
 } forEach [
     [IDC_BODY_HEAD, IDC_BODY_HEAD_S],
+
+    [IDC_BODY_NECK, IDC_BODY_NECK_S],
+
+    [IDC_BODY_CHEST, IDC_BODY_CHEST_S],
+
     [IDC_BODY_TORSO, IDC_BODY_TORSO_S],
+
     [IDC_BODY_ARMLEFT, IDC_BODY_ARMLEFT_S,  IDC_BODY_ARMLEFT_T,  IDC_BODY_ARMLEFT_B],
+
+    [IDC_BODY_ARMUPPERLEFT, IDC_BODY_ARMUPPERLEFT_S,  IDC_BODY_ARMUPPERLEFT_T,  IDC_BODY_ARMUPPERLEFT_B],
+
     [IDC_BODY_ARMRIGHT, IDC_BODY_ARMRIGHT_S, IDC_BODY_ARMRIGHT_T, IDC_BODY_ARMRIGHT_B],
+
+    [IDC_BODY_ARMUPPERRIGHT, IDC_BODY_ARMUPPERRIGHT_S, IDC_BODY_ARMUPPERRIGHT_T, IDC_BODY_ARMUPPERRIGHT_B],
+
     [IDC_BODY_LEGLEFT, IDC_BODY_LEGLEFT_S,  IDC_BODY_LEGLEFT_T,  IDC_BODY_LEGLEFT_B],
-    [IDC_BODY_LEGRIGHT, IDC_BODY_LEGRIGHT_S, IDC_BODY_LEGRIGHT_T, IDC_BODY_LEGRIGHT_B]
+
+    [IDC_BODY_LEGUPPERLEFT, IDC_BODY_LEGUPPERLEFT_S,  IDC_BODY_LEGUPPERLEFT_T,  IDC_BODY_LEGUPPERLEFT_B],
+
+    [IDC_BODY_LEGRIGHT, IDC_BODY_LEGRIGHT_S, IDC_BODY_LEGRIGHT_T, IDC_BODY_LEGRIGHT_B],
+
+    [IDC_BODY_LEGUPPERRIGHT, IDC_BODY_LEGUPPERRIGHT_S, IDC_BODY_LEGUPPERRIGHT_T, IDC_BODY_LEGUPPERRIGHT_B]
 ];
 
 [QACEGVAR(medical_gui,updateBodyImage), [_ctrlGroup, _target, _selectionN]] call CBA_fnc_localEvent;

@@ -23,9 +23,9 @@
 params ["_medic", "_patient", "_bodyPart", "_usedItem"];
 
 private _partIndex = ALL_BODY_PARTS find toLower _bodyPart;
-private _IVarray = _patient getVariable [QGVAR(IV), [0,0,0,0,0,0]];
+private _IVarray = _patient getVariable [QGVAR(IV), [0,0,0,0,0,0,0,0,0,0,0,0]];
 private _IVactual = _IVarray select _partIndex;
-private _IVpfh = _patient getVariable [QGVAR(IVpfh), [0,0,0,0,0,0]];
+private _IVpfh = _patient getVariable [QGVAR(IVpfh), [0,0,0,0,0,0,0,0,0,0,0,0]];
 private _IVpfhActual = _IVpfh select _partIndex;
 private _IVrate = _patient getVariable [QGVAR(IVrate), [0,0,0,0,0,0]];
 
@@ -122,7 +122,7 @@ if (GVAR(IVdropEnable) && ((_usedItem isEqualTo "kat_IV_16") || (_usedItem isEqu
     [{
         params ["_patient", "_partIndex", "_IVpfhActual"];
 
-        private _IVpfh = _patient getVariable [QGVAR(IVpfh), [0,0,0,0,0,0]];
+        private _IVpfh = _patient getVariable [QGVAR(IVpfh), [0,0,0,0,0,0,0,0,0,0,0,0]];
         private _IVpfhCurrent = _IVpfh select _partIndex;
 
         if (_IVpfhCurrent == _IVpfhActual) then {
@@ -130,7 +130,7 @@ if (GVAR(IVdropEnable) && ((_usedItem isEqualTo "kat_IV_16") || (_usedItem isEqu
                 params ["_args", "_idPFH"];
                 _args params ["_patient", "_partIndex"];
 
-                private _IVpfh = _patient getVariable [QGVAR(IVpfh), [0,0,0,0,0,0]];
+                private _IVpfh = _patient getVariable [QGVAR(IVpfh), [0,0,0,0,0,0,0,0,0,0,0,0]];
                 _IVpfh set [_partIndex, _idPFH];
                 _patient setVariable [QGVAR(IVpfh), _IVpfh, true];
 
@@ -138,7 +138,7 @@ if (GVAR(IVdropEnable) && ((_usedItem isEqualTo "kat_IV_16") || (_usedItem isEqu
 
                 if (_bloodBags isEqualTo []) exitWith {
                     [_idPFH] call CBA_fnc_removePerFrameHandler;
-                    private _IVarray = _patient getVariable [QGVAR(IV), [0,0,0,0,0,0]];
+                    private _IVarray = _patient getVariable [QGVAR(IV), [0,0,0,0,0,0,0,0,0,0,0,0]];
                     private _IVactual = _IVarray select _partIndex;
 
                     if(GVAR(IVreuse)) then {

@@ -60,15 +60,16 @@ TRACE_1("Running treatmentMedicationLocal with Advanced configuration for",_pati
 private _partIndex = ALL_BODY_PARTS find toLower _bodyPart;
 
 // Handle IV blockage
-if (((_patient getVariable [QGVAR(IV), [0,0,0,0,0,0]]) select _partIndex) isEqualTo 7) exitWith {
+if (((_patient getVariable [QGVAR(IV), [0,0,0,0,0,0,0,0,0,0,0,0]]) select _partIndex) isEqualTo 7) exitWith {
     private _occludedMedications = _patient getVariable [QACEGVAR(medical,occludedMedications), []];
     _occludedMedications pushBack [_partIndex, _classname];
     _patient setVariable [QACEGVAR(medical,occludedMedications), _occludedMedications, true];
 };
 
 // Handle tourniquet on body part blocking blood flow at injection site
-if (HAS_TOURNIQUET_APPLIED_ON(_patient,_partIndex)) exitWith {
-    TRACE_1("unit has tourniquets blocking blood flow on injection site",_tourniquets);
+if ([_patient, _partIndex] call FUNC(occlusionCheck)) exitWith {
+    TRACE_1("Medication injection site is occluded by tourniquet", _partIndex);
+    
     private _occludedMedications = _patient getVariable [QACEGVAR(medical,occludedMedications), []];
     _occludedMedications pushBack [_partIndex, _classname];
     _patient setVariable [QACEGVAR(medical,occludedMedications), _occludedMedications, true];
