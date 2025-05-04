@@ -47,6 +47,8 @@ if (!isNil {_unit getVariable [QACEGVAR(medical,ivBags),[]]}) then {
     _bloodBags = _bloodBags apply {
         _x params ["_bagVolumeRemaining", "_type", "_bodyPart", "_treatment", "_rateCoef", "_item"];
 
+        params ["_unit", "_bodyPart"];
+
         private _tourniquets = GET_TOURNIQUETS(_unit);
         private _occlusionMap = [
             [4, [4, 5]],
@@ -58,11 +60,12 @@ if (!isNil {_unit getVariable [QACEGVAR(medical,ivBags),[]]}) then {
             [10, [10, 11, 3]],
             [11, [11, 3]]
         ];
-            private _partIndex = ALL_BODY_PARTS find _x;
-            private _idx = _occlusionMap findIf { _x#0 == _partIndex };
-            private _result = if (_idx != -1) then { _occlusionMap select _idx select 1 } else { [] };
-            private _isNotOccluded = { _tourniquets select _x != 0 } count _result > 0;
-            
+
+        private _partIndex = ALL_BODY_PARTS find _bodyPart;
+        private _idx = _occlusionMap findIf { _x#0 == _partIndex };
+        private _result = if (_idx != -1) then { _occlusionMap select _idx select 1 } else { [] };
+        private _isNotOccluded = { _tourniquets select _x != 0 } count _result > 0;
+
         if ((!_isNotOccluded) && ([7,8,9] find (_IVarray select _bodyPart) == -1)) then {
             private _IVflow = _unit getVariable [QGVAR(IVflow), [0,0,0,0,0,0,0,0,0,0,0,0]];
             private _IVrate = _unit getVariable [QGVAR(IVrate), [0,0,0,0,0,0,0,0,0,0,0,0]];
