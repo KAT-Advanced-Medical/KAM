@@ -55,6 +55,15 @@ if (!(_patient getVariable [QGVAR(occluded), false]) && !(_patient getVariable [
     _hintWidth = 10;
 };
 
+if (_patient getVariable [QEGVAR(chemical,airPoisoning), false]) exitWith {
+    _message = LLSTRING(AirwayStatus_Poison);
+
+    [_message, _hintSize, _medic, _hintWidth] call ACEFUNC(common,displayTextStructured);
+    [_patient, "quick_view", LSTRING(checkAirway_log)] call EFUNC(circulation,removeLog);
+    [_patient, "quick_view", LSTRING(checkAirway_poisonLog)] call EFUNC(circulation,removeLog);
+    [_patient, "quick_view", LSTRING(checkAirway_poisonLog), [[_medic] call ACEFUNC(common,getName)]] call ACEFUNC(medical_treatment,addToLog);
+};
+
 [_message, _hintSize, _medic, _hintWidth] call ACEFUNC(common,displayTextStructured);
 
 [_patient, "quick_view", LSTRING(checkAirway_log)] call EFUNC(circulation,removeLog);

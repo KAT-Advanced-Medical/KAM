@@ -1,5 +1,5 @@
 #define COMPONENT gui
-#define COMPONENT_BEAUTIFIED KAT GUI
+#define COMPONENT_BEAUTIFIED GUI
 #include "\x\kat\addons\main\script_mod.hpp"
 
 // #define DEBUG_MODE_FULL

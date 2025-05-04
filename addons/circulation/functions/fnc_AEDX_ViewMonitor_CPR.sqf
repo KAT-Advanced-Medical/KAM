@@ -51,7 +51,7 @@ private _dlg = uiNamespace getVariable ["KAT_Circulation_AEDX_Monitor_Display", 
 
     private _pads = false;
 
-    if !(GVAR(AEDX_MonitorTarget_Title) isEqualTo objNull) then {
+    if (GVAR(AEDX_MonitorTarget_Title) isNotEqualTo objNull) then {
         _pads = GVAR(AEDX_MonitorTarget_Title) getVariable [QGVAR(DefibrillatorPads_Connected), false];
     };
 
@@ -62,7 +62,7 @@ private _dlg = uiNamespace getVariable ["KAT_Circulation_AEDX_Monitor_Display", 
         (_dlg displayCtrl IDC_EKG_DISPLAY_MIDTEXT_TITLE) ctrlSetText "";
         private _ekgDisplay = QPATHTOF(ui\ekg_off.paa);
 
-        if !(GVAR(AEDX_MonitorTarget_Title) getVariable [QACEGVAR(medical,CPR_provider), objNull] isEqualTo objNull) then {
+        if (GVAR(AEDX_MonitorTarget_Title) getVariable [QACEGVAR(medical,CPR_provider), objNull] isNotEqualTo objNull) then {
             _ekgDisplay = QPATHTOF(ui\ekg_cpr.paa);
         } else {
             if (!(GVAR(AEDX_MonitorTarget_Title) getVariable [QGVAR(heartRestart), false]) && alive GVAR(AEDX_MonitorTarget_Title)) then {
@@ -106,8 +106,14 @@ private _dlg = uiNamespace getVariable ["KAT_Circulation_AEDX_Monitor_Display", 
 
     // Handle date and time display - [year,month,day,hour,min]
 
-    (_dlg displayCtrl IDC_DISPLAY_DATEANDTIME_TITLE) ctrlSetText (format ["%1/%2/%3               %4:%5", (["", "0"] select (date select 2 < 10)) + str (date select 2), (["", "0"] select (date select 1 < 10)) + str (date select 1), date select 0, (["", "0"] select (date select 3 < 10)) + str (date select 3), (["", "0"] select (date select 4 < 10)) + str (date select 4)]);
-    (_dlg displayCtrl IDC_DISPLAY_ELAPSEDTIME_TITLE) ctrlSetText (format ["%1:%2:%3", (["", "0"] select (floor time / 3600 < 10)) + str (floor(time/3600)), (["", "0"] select (floor time / 3600 - floor time / 3600 * 60 < 10)) + str (floor(((time/3600) - floor(time/3600)) * 60)), (["", "0"] select (floor time / 60 - floor time / 60 * 60 < 10)) + str (floor(((time/60) - floor(time/60)) * 60))]);
+    date params ["_year", "_month", "_day", "_hours", "_minutes"];
+    (_dlg displayCtrl IDC_DISPLAY_DATEANDTIME_TITLE) ctrlSetText (format ["%1/%2/%3               %4:%5", [_day, 2] call CBA_fnc_formatNumber, [_month, 2] call CBA_fnc_formatNumber, _year, [_hours, 2] call CBA_fnc_formatNumber, [_minutes, 2] call CBA_fnc_formatNumber]);
+
+    private _time = time;
+    private _hours = floor (_time / 3600);
+    private _minutes = floor ((_time / 60) - (_hours * 60));
+    private _seconds = floor (_time % 60);
+    (_dlg displayCtrl IDC_DISPLAY_ELAPSEDTIME_TITLE) ctrlSetText (format ["%1:%2:%3", [_hours, 2] call CBA_fnc_formatNumber, [_minutes, 2] call CBA_fnc_formatNumber, [_seconds, 2] call CBA_fnc_formatNumber]);
 
     if (GVAR(AEDX_MonitorTarget_Title) getVariable [QGVAR(AED_X_VitalsMonitor_Connected), false]) then {
         private _partIndex = ((GVAR(AEDX_MonitorTarget_Title) getVariable [QGVAR(AED_X_VitalsMonitor_Provider), [-1, -1, -1]]) select 2);
@@ -119,8 +125,11 @@ private _dlg = uiNamespace getVariable ["KAT_Circulation_AEDX_Monitor_Display", 
 
         private _PRBar = _dlg displayCtrl IDC_DISPLAY_PULSERATEBAR_TITLE;
 
-        if (!(HAS_TOURNIQUET_APPLIED_ON(GVAR(AEDX_MonitorTarget_Title),_partIndex))) then {
-            if (GVAR(PulseRateReady)) then {
+        if (HAS_TOURNIQUET_APPLIED_ON(GVAR(AEDX_MonitorTarget_Title),_partIndex)) then {
+            _PRBar ctrlSetPosition [(ctrlPosition _PRBar) select 0, (ctrlPosition _PRBar) select 1, (ctrlPosition _PRBar) select 2, KAT_pxToScreen_H(71)];
+            _PRBar ctrlCommit 0;
+        } else {
+           if (GVAR(PulseRateReady)) then {
                 GVAR(PulseRateReady) = false;
                 private _pr = GVAR(AEDX_MonitorTarget_Title) getVariable [QACEGVAR(medical,heartRate), 0];
 
@@ -160,9 +169,6 @@ private _dlg = uiNamespace getVariable ["KAT_Circulation_AEDX_Monitor_Display", 
                     }, [], 0.1] call CBA_fnc_waitAndExecute;
                 };
             };
-        } else {
-            _PRBar ctrlSetPosition [(ctrlPosition _PRBar) select 0, (ctrlPosition _PRBar) select 1, (ctrlPosition _PRBar) select 2, KAT_pxToScreen_H(71)];
-            _PRBar ctrlCommit 0;
         };
     } else {
         (_dlg displayCtrl IDC_DISPLAY_PULSERATEBORDER_TITLE) ctrlShow false;
@@ -179,7 +185,7 @@ private _dlg = uiNamespace getVariable ["KAT_Circulation_AEDX_Monitor_Display", 
     private _pads = false;
     private _vitalsMonitor = false;
 
-    if !(GVAR(AEDX_MonitorTarget_Title) isEqualTo objNull) then {
+    if (GVAR(AEDX_MonitorTarget_Title) isNotEqualTo objNull) then {
         _pads = GVAR(AEDX_MonitorTarget_Title) getVariable [QGVAR(DefibrillatorPads_Connected), false];
         _vitalsMonitor = GVAR(AEDX_MonitorTarget_Title) getVariable [QGVAR(AED_X_VitalsMonitor_Connected), false];
     };
@@ -201,7 +207,7 @@ private _dlg = uiNamespace getVariable ["KAT_Circulation_AEDX_Monitor_Display", 
         (_dlg displayCtrl IDC_DISPLAY_SPO2_TITLE) ctrlSetText "---";
     };
 
-    if !(GVAR(AEDX_MonitorTarget_Title) getVariable [QACEGVAR(medical,CPR_provider), objNull] isEqualTo objNull) then {
+    if (GVAR(AEDX_MonitorTarget_Title) getVariable [QACEGVAR(medical,CPR_provider), objNull] isNotEqualTo objNull) then {
 
         private _rhythmHR = 0;
 
@@ -266,4 +272,24 @@ private _dlg = uiNamespace getVariable ["KAT_Circulation_AEDX_Monitor_Display", 
         (_dlg displayCtrl IDC_DISPLAY_BLOODPRESSURE_M_TITLE) ctrlSetText "";
         (_dlg displayCtrl IDC_DISPLAY_SPO2_TITLE) ctrlSetText "---";
     };
+
+    private _hasEtco2Monitor = (GVAR(AEDX_MonitorTarget_Title) getVariable [QEGVAR(breathing,etco2Monitor),[]] isNotEqualTo []); 
+    private _etco2 = GET_ETCO2(GVAR(AEDX_MonitorTarget_Title));
+    private _breathrate = GET_BREATHING_RATE(GVAR(AEDX_MonitorTarget_Title));
+
+    if (_hasEtco2Monitor) then {
+        (_dlg displayCtrl IDC_DISPLAY_RR_DEFAULT_TITLE) ctrlShow false;
+        (_dlg displayCtrl IDC_DISPLAY_RR_TITLE) ctrlShow true;
+        (_dlg displayCtrl IDC_DISPLAY_ETCO2_TITLE) ctrlShow true;
+        (_dlg displayCtrl IDC_DISPLAY_BR_TITLE) ctrlShow true;
+
+        (_dlg displayCtrl IDC_DISPLAY_RR_TITLE) ctrlSetText (format ["%1", round(_breathrate)]);
+        (_dlg displayCtrl IDC_DISPLAY_ETCO2_TITLE) ctrlSetText (format ["%1", round(_etco2)]);
+    } else {
+        (_dlg displayCtrl IDC_DISPLAY_RR_DEFAULT_TITLE) ctrlShow true;
+        (_dlg displayCtrl IDC_DISPLAY_RR_TITLE) ctrlShow false;
+        (_dlg displayCtrl IDC_DISPLAY_ETCO2_TITLE) ctrlShow false;
+        (_dlg displayCtrl IDC_DISPLAY_BR_TITLE) ctrlShow false;
+    };
+
 }, 1, [_dlg]] call CBA_fnc_addPerFrameHandler;

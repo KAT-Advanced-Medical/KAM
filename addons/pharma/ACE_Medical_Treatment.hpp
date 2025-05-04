@@ -18,6 +18,8 @@ class ACE_ADDON(Medical_Treatment) {
         // The number of doses over maxDose where there is a chance to overdose.
         // Example with maxDose = 4 and maxDoseDeviation = 2: Dose 4: Safe | Dose 5 and 6: Possible overdose | Dose 7: Guaranteed overdose
         maxDoseDeviation = 2;
+        // The dose of the medication, to allow for different dose amounts of the same medication
+        dose = 1;
         // Function to execute upon overdose. Arguments passed to call back are 0: unit <OBJECT>, 1: medicationClassName <STRING>
         onOverDose = "";
         // The viscosity of a fluid is a measure of its resistance to gradual deformation by shear stress or tensile stress. For liquids, it corresponds to the informal concept of "thickness". This value will increase/decrease the viscoty of the blood with the percentage given. Where 100 = max. Using the minus will decrease viscosity
@@ -262,6 +264,18 @@ class ACE_ADDON(Medical_Treatment) {
             viscosityChange = -5;
             onOverDose = "";
             maxRelief = 0.4;
+        };
+        class PainKillers {
+            painReduce = 0.35;
+            hrIncreaseLow[] = {-5, -10};
+            hrIncreaseNormal[] = {-5, -15};
+            hrIncreaseHigh[] = {-5, -17};
+            timeInSystem = 420;
+            timeTillMaxEffect = 60;
+            maxDose = 5;
+            incompatibleMedication[] = {};
+            onOverDose = "";
+            maxRelief = 0.5;
         };
         class Atropine {
             painReduce = 0;

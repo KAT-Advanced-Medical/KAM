@@ -20,7 +20,7 @@
 params ["_ctrlGroup", "_target", "_selectionN"];
 
 private _ctrlAirInfected = _ctrlGroup controlsGroupCtrl IDC_BODY_TORSO_I;
-if (_target getVariable [QGVAR(airPoisoning), false]) then {
+if ((_target getVariable [QGVAR(airPoisoning), false]) && (missionNamespace getVariable [QGVAR(showPoisoning), true])) then {
     _ctrlAirInfected ctrlShow true;
 } else {
     _ctrlAirInfected ctrlShow false;

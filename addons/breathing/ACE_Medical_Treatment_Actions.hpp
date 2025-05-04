@@ -1,5 +1,6 @@
 class ACE_Medical_Treatment_Actions {
     class CheckPulse;
+    class BasicBandage;
     class ListenToLungs: CheckPulse {
         displayName = CSTRING(auscultateLung_display);
         displayNameProgress = CSTRING(listening_progress);
@@ -9,7 +10,7 @@ class ACE_Medical_Treatment_Actions {
         category = "airway";
         medicRequired = 0;
         consumeItem = 0;
-        callbackStart = QUOTE(_medic setVariable [ARR_3(QQGVAR(usingStethoscope),true,true)]; [ARR_2(_medic,_patient)] call FUNC(listenLungs));
+        callbackStart = QUOTE(_medic setVariable [ARR_3(QQGVAR(usingStethoscope),true,true)]; [ARR_3(_medic,_patient,0)] call FUNC(listenLungs));
         callbackSuccess = QUOTE(_medic setVariable [ARR_3(QQGVAR(usingStethoscope),false,true)]);
         callbackProgress = "";
         callbackFailure = QUOTE(_medic setVariable [ARR_3(QQGVAR(usingStethoscope),false,true)]);
@@ -18,6 +19,10 @@ class ACE_Medical_Treatment_Actions {
         animationPatient = "";
         animationPatientUnconscious = "AinjPpneMstpSnonWrflDnon_rolltoback";
         animationPatientUnconsciousExcludeOn[] = {"ainjppnemstpsnonwrfldnon", "kat_recoveryposition"};
+    };
+    class ListenToRightLungs: ListenToLungs {
+        displayName = CSTRING(auscultateRightLung_display);
+        callbackStart = QUOTE(_medic setVariable [ARR_3(QQGVAR(usingStethoscope),true,true)]; [ARR_3(_medic,_patient,1)] call FUNC(listenLungs));
     };
     class CheckBreathing: CheckPulse {
         displayName = CSTRING(Check_Breathing);
@@ -99,7 +104,7 @@ class ACE_Medical_Treatment_Actions {
         litter[] = {};
     };
     class ChestSeal {
-        displayName = CSTRING(chestseal_display);
+        displayName = CSTRING(leftchestseal_display);
         displayNameProgress = CSTRING(treating);
         category = "airway";
         treatmentLocations = 0;
@@ -109,7 +114,7 @@ class ACE_Medical_Treatment_Actions {
         treatmentTime = 7;
         items[] = {"kat_chestSeal"};
         condition = "true";
-        callbackSuccess = QUOTE([ARR_2(_medic,_patient)] call EFUNC(airway,handleRecoveryPosition); [ARR_6(_medic,_patient,_bodyPart,_className,objNull,_usedItem)] call FUNC(treatmentAdvanced_chestSeal););
+        callbackSuccess = QUOTE([ARR_2(_medic,_patient)] call EFUNC(airway,handleRecoveryPosition); [ARR_7(_medic,_patient,_bodyPart,_className,objNull,_usedItem,0)] call FUNC(treatmentAdvanced_chestSeal););
         callbackFailure = "";
         callbackProgress = "";
         consumeItem = 1;
@@ -121,6 +126,10 @@ class ACE_Medical_Treatment_Actions {
         animationMedicSelf = "AinvPknlMstpSlayW[wpn]Dnon_medic";
         animationMedicSelfProne = "AinvPpneMstpSlayW[wpn]Dnon_medic";
         litter[] = {};
+    };
+    class RightChestSeal: ChestSeal {
+        displayName = CSTRING(rightchestseal_display);
+        callbackSuccess = QUOTE([ARR_2(_medic,_patient)] call EFUNC(airway,handleRecoveryPosition); [ARR_7(_medic,_patient,_bodyPart,_className,objNull,_usedItem,1)] call FUNC(treatmentAdvanced_chestSeal););
     };
     class HemopneumothoraxTreatment {
         displayName = CSTRING(hemopneumothorax_display);
@@ -132,8 +141,8 @@ class ACE_Medical_Treatment_Actions {
         medicRequired = QGVAR(medLvl_hemopneumothoraxTreatment);
         treatmentTime = 7;
         items[] = {"kat_aatKit"};
-        condition = "true";
-        callbackSuccess = QUOTE([ARR_2(_medic,_patient)] call EFUNC(airway,handleRecoveryPosition); [ARR_6(_medic,_patient,_bodyPart,_className,objNull,_usedItem)] call FUNC(treatmentAdvanced_hemopneumothorax););
+        condition = QUOTE(!GVAR(hardcoreBreathingTreatment));
+        callbackSuccess = QUOTE([ARR_2(_medic,_patient)] call EFUNC(airway,handleRecoveryPosition); [ARR_7(_medic,_patient,_bodyPart,_className,objNull,_usedItem,0)] call FUNC(treatmentAdvanced_hemopneumothorax););
         callbackFailure = "";
         callbackProgress = "";
         consumeItem = 1;
@@ -146,18 +155,22 @@ class ACE_Medical_Treatment_Actions {
         animationMedicSelfProne = "AinvPpneMstpSlayW[wpn]Dnon_medic";
         litter[] = {};
     };
-    class TensionpneumothoraxTreatment {
-        displayName = CSTRING(tensionpneumothorax_display);
+    class RightHemopneumothoraxTreatment: HemopneumothoraxTreatment {
+        displayName = CSTRING(righthemopneumothorax_display);
+        callbackSuccess = QUOTE([ARR_2(_medic,_patient)] call EFUNC(airway,handleRecoveryPosition); [ARR_7(_medic,_patient,_bodyPart,_className,objNull,_usedItem,1)] call FUNC(treatmentAdvanced_hemopneumothorax););
+    };
+    class FingerThoracostomy {
+        displayName = CSTRING(FingerThoracostomy_display);
         displayNameProgress = CSTRING(treating);
         category = "airway";
         treatmentLocations = 0;
         allowedSelections[] = {"Body"};
         allowSelfTreatment = 0;
-        medicRequired = QGVAR(medLvl_hemopneumothoraxTreatment);
-        treatmentTime = 7;
-        items[] = {"kat_aatKit"};
-        condition = "true";
-        callbackSuccess = QUOTE([ARR_2(_medic,_patient)] call EFUNC(airway,handleRecoveryPosition); [ARR_6(_medic,_patient,_bodyPart,_className,objNull,_usedItem)] call FUNC(treatmentAdvanced_tensionpneumothorax););
+        medicRequired = QGVAR(medLvl_FingerThoracostomyTreatment);
+        treatmentTime = 12;
+        items[] = {"kat_scalpel"};
+        condition = QGVAR(hardcoreBreathingTreatment);
+        callbackSuccess = QUOTE([ARR_2(_medic,_patient)] call EFUNC(airway,handleRecoveryPosition); [ARR_3(_medic,_patient,0)] call FUNC(treatmentAdvanced_FingerThoracostomy););
         callbackFailure = "";
         callbackProgress = "";
         consumeItem = 1;
@@ -169,6 +182,38 @@ class ACE_Medical_Treatment_Actions {
         animationMedicSelf = "AinvPknlMstpSlayW[wpn]Dnon_medic";
         animationMedicSelfProne = "AinvPpneMstpSlayW[wpn]Dnon_medic";
         litter[] = {};
+    };
+    class RightFingerThoracostomy: FingerThoracostomy{
+        displayName = CSTRING(FingerThoracostomyRight_display);
+        callbackSuccess = QUOTE([ARR_2(_medic,_patient)] call EFUNC(airway,handleRecoveryPosition); [ARR_3(_medic,_patient,1)] call FUNC(treatmentAdvanced_FingerThoracostomy););
+    };
+    class TensionpneumothoraxTreatment {
+        displayName = CSTRING(tensionpneumothorax_display);
+        displayNameProgress = CSTRING(treating);
+        category = "airway";
+        treatmentLocations = 0;
+        allowedSelections[] = {"Body"};
+        allowSelfTreatment = 0;
+        medicRequired = QGVAR(medLvl_hemopneumothoraxTreatment);
+        treatmentTime = 7;
+        condition = QUOTE(!GVAR(hardcoreBreathingTreatment));
+        items[] = {"kat_aatKit"};
+        callbackSuccess = QUOTE([ARR_2(_medic,_patient)] call EFUNC(airway,handleRecoveryPosition); [ARR_7(_medic,_patient,_bodyPart,_className,objNull,_usedItem,0)] call FUNC(treatmentAdvanced_tensionpneumothorax););
+        callbackFailure = "";
+        callbackProgress = "";
+        consumeItem = 1;
+        animationPatient = "";
+        animationPatientUnconscious = "AinjPpneMstpSnonWrflDnon_rolltoback";
+        animationPatientUnconsciousExcludeOn[] = {"ainjppnemstpsnonwrfldnon", "kat_recoveryposition"};
+        animationMedic = "AinvPknlMstpSlayWrflDnon_medicOther";
+        animationMedicProne = "AinvPpneMstpSlayW[wpn]Dnon_medicOther";
+        animationMedicSelf = "AinvPknlMstpSlayW[wpn]Dnon_medic";
+        animationMedicSelfProne = "AinvPpneMstpSlayW[wpn]Dnon_medic";
+        litter[] = {};
+    };
+    class RightTensionpneumothoraxTreatment: TensionpneumothoraxTreatment{
+        displayName = CSTRING(righttensionpneumothorax_display);
+        callbackSuccess = QUOTE([ARR_2(_medic,_patient)] call EFUNC(airway,handleRecoveryPosition); [ARR_7(_medic,_patient,_bodyPart,_className,objNull,_usedItem,1)] call FUNC(treatmentAdvanced_tensionpneumothorax););
     };
     class ncdKit: TensionpneumothoraxTreatment {
         displayName = CSTRING(tensionpneumothoraxNCDKit_display);
@@ -181,7 +226,7 @@ class ACE_Medical_Treatment_Actions {
         treatmentTime = 7;
         items[] = {"kat_ncdKit"};
         condition = "true";
-        callbackSuccess = QUOTE([ARR_2(_medic,_patient)] call EFUNC(airway,handleRecoveryPosition); [ARR_6(_medic,_patient,_bodyPart,_className,objNull,_usedItem)] call FUNC(treatmentAdvanced_tensionpneumothorax););
+        callbackSuccess = QUOTE([ARR_2(_medic,_patient)] call EFUNC(airway,handleRecoveryPosition); [ARR_7(_medic,_patient,_bodyPart,_className,objNull,_usedItem,0)] call FUNC(treatmentAdvanced_tensionpneumothorax););
         callbackFailure = "";
         callbackProgress = "";
         consumeItem = 1;
@@ -193,6 +238,10 @@ class ACE_Medical_Treatment_Actions {
         animationMedicSelf = "AinvPknlMstpSlayW[wpn]Dnon_medic";
         animationMedicSelfProne = "AinvPpneMstpSlayW[wpn]Dnon_medic";
         litter[] = {};
+    };
+    class RightncdKit: ncdKit {
+        displayName = CSTRING(righttensionpneumothoraxNCDKit_display);
+        callbackSuccess = QUOTE([ARR_2(_medic,_patient)] call EFUNC(airway,handleRecoveryPosition); [ARR_7(_medic,_patient,_bodyPart,_className,objNull,_usedItem,1)] call FUNC(treatmentAdvanced_tensionpneumothorax););
     };
     class DisablePulseOximeterAudio {
         displayName = CSTRING(PulseOximeter_Action_removeSound);
@@ -313,5 +362,80 @@ class ACE_Medical_Treatment_Actions {
         items[] = {};
         condition = QUOTE(_patient call EFUNC(airway,checkMask));
         callbackSuccess = QFUNC(removeOxygenMask);
+    };
+    class ChestTube: CheckPulse {
+        displayName = CSTRING(Chest_Tube_Use);
+        displayNameProgress = CSTRING(Chest_Tube_Action);
+        category = "surgery";
+        treatmentLocations = QGVAR(chestTubeLocation);
+        allowedSelections[] = {"Body"};
+        allowSelfTreatment = 0;
+        medicRequired = QGVAR(chestTubeAction_MedLevel);
+        treatmentTime = QGVAR(openTime);
+        items[] = {"kat_aatKit"};
+        consumeItem = 1;
+        condition = QUOTE(([ARR_4(_medic,_patient,0.5,0)] call FUNC(treatmentAdvanced_chestTubeCheck)) && (GVAR(hardcoreBreathingTreatment)));
+        callbackSuccess = QUOTE([ARR_3(_medic,_patient,0)] call FUNC(treatmentAdvanced_chestTube));
+    };
+    class RightChestTube: ChestTube {
+        displayName = CSTRING(Chest_TubeRight_Use);
+        condition = QUOTE(([ARR_4(_medic,_patient,0.5,1)] call FUNC(treatmentAdvanced_chestTubeCheck)) && (GVAR(hardcoreBreathingTreatment)));
+        callbackSuccess = QUOTE([ARR_3(_medic,_patient,1)] call FUNC(treatmentAdvanced_chestTube));
+    };
+    class Incision: BasicBandage {
+        displayName = CSTRING(Scalpel_Use);
+        displayNameProgress = CSTRING(Scalpel_Action);
+        category = "surgery";
+        treatmentLocations = QGVAR(surgicalLocation);
+        allowedSelections[] = {"Body"};
+        allowSelfTreatment = 0;
+        medicRequired = QGVAR(surgicalAction_MedLevel);
+        treatmentTime = QGVAR(incisionTime);
+        items[] = {"kat_scalpel"};
+        condition = QUOTE(([ARR_4(_medic,_patient,5,0)] call FUNC(treatmentAdvanced_chestTubeCheck)) && (GVAR(hardcoreBreathingTreatment)));
+        callbackSuccess = QUOTE([ARR_3(_medic,_patient,0)] call FUNC(treatmentAdvanced_chestTubeIncision));
+    };
+    class RightIncision: Incision {
+        displayName = CSTRING(ScalpelRight_Use);
+        condition = QUOTE(([ARR_4(_medic,_patient,5,1)] call FUNC(treatmentAdvanced_chestTubeCheck)) && (GVAR(hardcoreBreathingTreatment)));
+        callbackSuccess = QUOTE([ARR_3(_medic,_patient,1)] call FUNC(treatmentAdvanced_chestTubeIncision));
+    };
+    class Spread: BasicBandage {
+        displayName = CSTRING(Retractor_Use);
+        displayNameProgress = CSTRING(Retractor_Action);
+        category = "surgery";
+        treatmentLocations = QGVAR(surgicalLocation);
+        treatmentTime = QGVAR(ChestTubeintermediateTime);
+        allowedSelections[] = {"Body"};
+        allowSelfTreatment = 0;
+        medicRequired = QGVAR(surgicalAction_MedLevel);
+        items[] = {"kat_retractor"};
+        consumeItem = 1;
+        condition = QUOTE(([ARR_4(_medic,_patient,0.1,0)] call FUNC(treatmentAdvanced_chestTubeCheck)) && (GVAR(hardcoreBreathingTreatment)));
+        callbackSuccess = QUOTE([ARR_4(_medic,_patient,0.1,0)] call FUNC(treatmentAdvanced_chestTubeProgress));
+    };
+    class RightSpread: Spread {
+        displayName = CSTRING(RetractorRight_Use);
+        condition = QUOTE(([ARR_4(_medic,_patient,0.1,1)] call FUNC(treatmentAdvanced_chestTubeCheck)) && (GVAR(hardcoreBreathingTreatment)));
+        callbackSuccess = QUOTE([ARR_4(_medic,_patient,0.1,1)] call FUNC(treatmentAdvanced_chestTubeProgress));
+    };
+    class Clamp: BasicBandage {
+        displayName = CSTRING(Clamp_Use);
+        displayNameProgress = CSTRING(Clamp_Action);
+        category = "surgery";
+        treatmentLocations = QGVAR(surgicalLocation);
+        treatmentTime = QGVAR(ChestTubeintermediateTime);
+        allowedSelections[] = {"Body"};
+        allowSelfTreatment = 0;
+        medicRequired = QGVAR(surgicalAction_MedLevel);
+        items[] = {"kat_clamp"};
+        consumeItem = 1;
+        condition = QUOTE(([ARR_4(_medic,_patient,0.3,0)] call FUNC(treatmentAdvanced_chestTubeCheck)) && (GVAR(hardcoreBreathingTreatment)));
+        callbackSuccess = QUOTE([ARR_4(_medic,_patient,0.3,0)] call FUNC(treatmentAdvanced_chestTubeProgress));
+    };
+    class RightClamp: Incision {
+        displayName = CSTRING(ClampRight_Use);
+        condition = QUOTE(([ARR_4(_medic,_patient,0.3,1)] call FUNC(treatmentAdvanced_chestTubeCheck)) && (GVAR(hardcoreBreathingTreatment)));
+        callbackSuccess = QUOTE([ARR_4(_medic,_patient,0.3,1)] call FUNC(treatmentAdvanced_chestTubeProgress));
     };
 };

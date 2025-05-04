@@ -32,11 +32,11 @@ if (!local _unit) then {
         _unit setVariable ["kat_O2Breathing_PFH", nil];
         [_idPFH] call CBA_fnc_removePerFrameHandler;
     };
-
+    
     private _airway = true;
     private _breathing = true;
 
-    if ((_unit getVariable [QEGVAR(chemical,airPoisoning), false]) || (_unit getVariable [QGVAR(tensionpneumothorax), false]) || (_unit getVariable [QGVAR(hemopneumothorax), false])) then {
+    if ((_unit getVariable [QEGVAR(chemical,airPoisoning), false]) || (_unit getVariable [QGVAR(tensionpneumothorax), [false, false]] select 0) || (_unit getVariable [QGVAR(tensionpneumothorax), [false, false]] select 1) ||(_unit getVariable [QGVAR(hemopneumothorax), [false, false]] select 0) || (_unit getVariable [QGVAR(hemopneumothorax), [false, false]] select 1)) then {
         _breathing = false;
     };
 
@@ -165,7 +165,7 @@ if (!local _unit) then {
         if (_finalOutput < 1) then {
             _finalOutput = 1;
         };
-        
+
         _unit setVariable [QGVAR(airwayStatus), _finalOutput, true];
     };
 
@@ -209,13 +209,13 @@ if (!local _unit) then {
             };
         };
 
-        if ((_unit getVariable [QGVAR(pneumothorax), 0] > 0) || _unit getVariable [QGVAR(hemopneumothorax), false] || _unit getVariable [QGVAR(tensionpneumothorax), false]) then {
+        if ((_unit getVariable [QGVAR(tensionpneumothorax), [false, false]] select 0) || (_unit getVariable [QGVAR(tensionpneumothorax), [false, false]] select 1) ||(_unit getVariable [QGVAR(hemopneumothorax), [false, false]] select 0) || (_unit getVariable [QGVAR(hemopneumothorax), [false, false]] select 1)) then {
             if (!(_unit getVariable [QACEGVAR(medical,inCardiacArrest), false]) && !(_unit getVariable [QGVAR(PneumoBreathCooldownOn), false])) then {
                 _unit setVariable [QGVAR(PneumoBreathCooldownOn), true, true];
 
                 private _soundTargets = allPlayers inAreaArray [ASLToAGL getPosASL _unit, 15, 15, 0, false, 15];
 
-                if !(_soundTargets isEqualTo []) then {
+                if (_soundTargets isNotEqualTo []) then {
                     [QGVAR(playCough), [_unit], _soundTargets] call CBA_fnc_targetEvent;
                 };
 

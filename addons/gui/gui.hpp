@@ -34,7 +34,7 @@ class ACEGVAR(medical_gui,BodyImage): RscControlsGroupNoScrollbars {
             show = 0;
         };
         class Torso_ChestSeal: Background {
-            idc = IDC_BODY_TORSO_CHESTSEAL;
+            idc = IDC_BODY_TORSO_LEFTCHESTSEAL;
             text = QPATHTOF(data\body_image\torso_chestseal.paa);
             colorText[] = {1, 0.95, 0, 1};
             show = 0;
@@ -83,9 +83,20 @@ class ACEGVAR(medical_gui,BodyImage): RscControlsGroupNoScrollbars {
             colorText[] = {0.3, 0.6, 0.3, 1};
         };
         class Torso_Pneumothorax: Torso_ChestSeal {
-            idc = IDC_BODY_TORSO_PNEUMOTHORAX;
+            idc = IDC_BODY_TORSO_LEFTPNEUMOTHORAX;
             text = QPATHTOF(data\body_image\torso_pneumothorax.paa);
             colorText[] = {1, 1, 1, 1};
+        };
+        class Torso_RightPneumothorax: Torso_ChestSeal {
+            idc = IDC_BODY_TORSO_RIGHTPNEUMOTHORAX;
+            text = QPATHTOF(data\body_image\torso_rightpneumothorax.paa);
+            colorText[] = {1, 1, 1, 1};
+        };
+        class Torso_RightChestSeal: Torso_ChestSeal {
+            idc = IDC_BODY_TORSO_RIGHTCHESTSEAL;
+            text = QPATHTOF(data\body_image\torso_rightchestseal.paa);
+            colorText[] = {1, 0.95, 0, 1};
+            show = 0;
         };
         class RightArm_IV: Torso_IO {
             idc = IDC_BODY_RIGHTARM_IV;

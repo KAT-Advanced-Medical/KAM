@@ -23,11 +23,12 @@ private _part = ALL_BODY_PARTS find toLower _bodyPart;
 private _activeFracture = GET_FRACTURES(_patient);
 private _fractureArray = _patient getVariable [QGVAR(fractures), [0,0,0,0,0,0]];
 private _medStack = _patient call ACEFUNC(medical_treatment,getAllMedicationCount);
-private _medsToCheck = ["fentanyl", "ketamine", "nalbuphine", "morphine"];
+private _medsToCheck = ["fentanyl", "ketamine", "nalbuphine", "morphine", "lidocaine"];
 private _fentanylEffectiveness = 0;
 private _ketamineEffectiveness = 0;
 private _nalbuphineEffectiveness = 0;
 private _morphineEffectiveness = 0;
+private _lidocaineEffectiveness = 0;
 {
     private _medName = toLower (_x select 0);
     private _effectiveness = _x select 2;
@@ -43,15 +44,19 @@ private _morphineEffectiveness = 0;
     if ("morphine" in _medName) then {
         _morphineEffectiveness = _morphineEffectiveness max _effectiveness;
     };
-} forEach _medStack;
-if (
-    _fentanylEffectiveness <= 0.8 &&
-    _ketamineEffectiveness <= 0.8 &&
-    _nalbuphineEffectiveness <= 0.8 &&
-    _morphineEffectiveness <= 0.8
-) then {
-    [_patient, [0.6, 0.7, 0.8] select (floor random 3)] call ACEFUNC(medical_status,adjustPainLevel);
-};
+    if ("lidocaine" in _medName) then {
+        _lidocaineEffectiveness = _lidocaineEffectiveness max _effectiveness;
+    };
+    } forEach _medStack;
+    if (
+        _fentanylEffectiveness <= 0.8 &&
+        _ketamineEffectiveness <= 0.8 &&
+        _nalbuphineEffectiveness <= 0.8 &&
+        _lidocaineEffectiveness <= 0.8 &&
+        _morphineEffectiveness <= 0.8
+    ) then {
+        [_patient, [0.7, 0.8, 0.9] select (floor random 3)] call ACEFUNC(medical_status,adjustPainLevel);
+    };
 
 playSound3D [QPATHTOF_SOUND(sounds\reduction.wav), _patient, false, getPosASL _patient, 8, 1, 15];
 

@@ -163,9 +163,6 @@ if (GVAR(AMS_Enabled)) then {
     };
 };
 
-
-
-
 if (GVAR(AMS_Enabled)) then {
     private _medicationParts = (_className splitString "_");
     TRACE_1("ClassName being processed:",_className);
