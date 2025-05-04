@@ -17,7 +17,6 @@
 params ["_patient"];
 private _hrAdjust = 10 + floor random ((25 - 10) + 1);
 [_patient, "AlteplaseOverdose", 30, 600, _hrAdjust, "", "", 0.2, "", ""] call EFUNC(vitals,addMedicationAdjustment);
-_patient setVariable [QACEGVAR(medical,medications), _medicationArray, true];
 [{
     params ["_patient"];
     private _AlteplaseTarget = 0;
