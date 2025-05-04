@@ -2398,21 +2398,6 @@
             <Russian>Время лечения Первитином</Russian>
             <Dutch>Behandeltijd van Pervitin</Dutch>
         </Key>
-        <Key ID="STR_KAT_Pharma_medLvl_Pervitin">
-            <English>Medical level required for Pervitin</English>
-            <German>Erforderliches medizinischer Grad für die Gabe von Pervitin</German>
-            <French>Niveau médical requis pour la Pervitine</French>
-            <Japanese>ペルビチンの許可</Japanese>
-            <Korean>페르피틴을 사용하는데 필요한 의료 레벨 수준 변경</Korean>
-            <Italian>Livello medico richiesto per il Pervitin</Italian>
-            <Portuguese>Nível médico exigido para administrar Pervitin</Portuguese>
-            <Polish>Poziom wyszkolenia medycznego dla Pervitinu</Polish>
-            <Spanish>Nivel médico requerido para la Pervitina</Spanish>
-            <Czech>Zdravotnická úroveň potřebná k použití Pervitinu</Czech>
-            <Finnish>Pervitiini vaatii lääketieteellisen koulutustason</Finnish>
-            <Russian>Медицинский уровень, необходимый для использования Первитина</Russian>
-            <Dutch>Medisch niveau benodigd voor het gebruik van Pervitin</Dutch>
-        </Key>
         <Key ID="STR_KAT_Pharma_medLvl_TXA">
             <English>Medical level required for TXA</English>
             <Polish>Poziom wyszkolenia medycznego dla TXA</Polish>
@@ -2514,22 +2499,6 @@
             <Finnish>Käsittelyaika fenyylille</Finnish>
             <Russian>Время обработки Фенилэфрином</Russian>
             <Dutch>Behandeltijd van Fenylefrine</Dutch>
-        </Key>
-        <Key ID="STR_KAT_Pharma_medLvl_Nitroglycerin">
-            <English>Medical level required for Nitroglycerin</English>
-            <Polish>Poziom wyszkolenia medycznego dla Nitrogliceryny</Polish>
-            <Chinesesimp>硝酸甘油所需的医疗水平</Chinesesimp>
-            <Czech>Zdravotnická úroveň potřebná pro Nitroglycerin</Czech>
-            <Italian>Livello medico richiesto per la Nitroglicerina</Italian>
-            <French>Niveau médical requis pour la Nitroglycérine</French>
-            <Korean>니트로글리세린을 사용하는 데 필요한 의료 레벨 수준 변경</Korean>
-            <German>Anwendungszeit für Nitroglycerin</German>
-            <Japanese>ニトログリセリンの許可</Japanese>
-            <Spanish>Nivel médico requerido para la Nitroglicerina</Spanish>
-            <Portuguese>Nível médico exigido para uso de Nitroglicerina</Portuguese>
-            <Finnish>Nitroglyseriinille vaadittu lääketieteellinen koulutustaso</Finnish>
-            <Russian>Медицинский уровень, необходимый для использования Нитроглицерина</Russian>
-            <Dutch>Medisch niveau benodigd voor het gebruik van Nitroglycerine</Dutch>
         </Key>
         <Key ID="STR_KAT_Pharma_treatmentTime_Nitroglycerin">
             <English>Treatment time for Nitroglycerin</English>
@@ -2725,22 +2694,6 @@
             <Russian>Время обработки Флумазенилом</Russian>
             <Dutch>Behandeltijd van Flumazenil</Dutch>
         </Key>
-        <Key ID="STR_KAT_Pharma_medLvl_Lorazepam">
-            <English>Medical level required for Lorazepam</English>
-            <Chinesesimp>劳拉西泮所需的医疗水平</Chinesesimp>
-            <Italian>Livello medico richiesto per Lorazepam</Italian>
-            <Czech>Zdravotnická úroveň potřebná pro Lorazepam</Czech>
-            <French>Niveau médical requis pour le Lorazépam</French>
-            <Korean>로라제팜을 사용하는 데 필요한 의료 레벨 수준 변경</Korean>
-            <German>Benötigter medizinischer Grad, für die Gabe von Lorazepam</German>
-            <Polish>Poziom wyszkolenia medycznego dla Lorazepamu</Polish>
-            <Japanese>ロラゼパムの許可</Japanese>
-            <Spanish>Nivel médico requerido para el Lorazepam</Spanish>
-            <Portuguese>Nível médico exigido para uso de Lorazepam</Portuguese>
-            <Finnish>Lääketieteellinen koulutustaso vaaditaan loratsepaamia varten</Finnish>
-            <Russian>Медицинский уровень, необходимый для применения Лоразепама</Russian>
-            <Dutch>Medisch niveau benodigd voor het gebruik van Lorazepam</Dutch>
-        </Key>
         <Key ID="STR_KAT_Pharma_treatmentTime_Lorazepam">
             <English>Treatment time for Lorazepam</English>
             <Polish>Czas na wstrzyknięcie Lorazepamu</Polish>
@@ -2902,19 +2855,6 @@
         </Key>
         <Key ID="STR_KAT_Pharma_treatmentTime_NalbuphineIM">
             <English>Treatment time for IM Nalbuphine</English>
-        </Key>
-        <Key ID="STR_KAT_Pharma_SETTING_medLvl_Penthrox">
-            <English>Medical level required for Penthrox Inhaler</English>
-            <Japanese>ペンスロックス吸入器の許可</Japanese>
-            <French>Niveau médical requis pour l'inhalateur de Penthrox</French>
-            <Korean>펜트록스를 사용하는 데 필요한 의료 레벨 수준 변경</Korean>
-            <German>Benötigter medizinischer Grad, für die Verwendung des Penthrox-Inhalators</German>
-            <Portuguese>Nível médico exigido para uso do Inalador de Penthrox</Portuguese>
-            <Spanish>Nivel médico requerido para el Penthrox</Spanish>
-            <Finnish>Lääketieteellinen koulutustaso vaatii penthrox-inhalaattorin</Finnish>
-            <Russian>Медицинский уровень, необходимый для использования ингалятора Пентрокс</Russian>
-            <Dutch>Medisch niveau benodigd voor het gebruik van Penthrox inhalators</Dutch>
-            <Italian>Livello medico richiesto per l'inalatore Penthrox</Italian>
         </Key>
         <Key ID="STR_KAT_Pharma_SETTING_treatmentTime_Penthrox">
             <English>Treatment time for Penthrox Inhaler</English>

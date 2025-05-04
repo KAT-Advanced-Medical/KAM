@@ -116,9 +116,18 @@ private _fnc_advRhythm = {
         case "syringe_amiodarone_5ml_3":
         {
             _amiBoost = _amiBoost + (random [8,14,20]);
+        };
         case "Nitroglycerin":
         {
             _nitroEffect = _nitroEffect + 1;
+        };
+        case "syringe_nitroglycerin_5ml_1":
+        {
+            _nitroEffect = _nitroEffect + 1;
+        };
+        case "syringe_nitroglycerin_5ml_3":
+        {
+            _nitroEffect = _nitroEffect + 3;
         };
     };
 } forEach (_patient getVariable [QACEGVAR(medical,medications), []]);

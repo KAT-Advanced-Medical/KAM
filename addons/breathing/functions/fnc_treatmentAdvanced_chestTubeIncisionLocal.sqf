@@ -19,19 +19,45 @@
 
 params ["_medic", "_patient", "_side"];
 
-if (GVAR(SchestTube_ConsciousnessRequirement) == 1 && !(IS_UNCONSCIOUS(_patient))) exitWith {
+if (GVAR(chestTube_ConsciousnessRequirement) == 1 && !(IS_UNCONSCIOUS(_patient))) exitWith {
     private _output = LLSTRING(chest_tube_fail);
     [_output, 1.5, _medic] call ACEFUNC(common,displayTextStructured);
 };
-private _lidocaineCount = [_patient, "Lidocaine", false] call ACEFUNC(medical_status,getMedicationCount);
-private _morphineCount = [_patient, "Morphine", false] call ACEFUNC(medical_status,getMedicationCount);
-private _nalbuphineCount = [_patient, "Nalbuphine", false] call ACEFUNC(medical_status,getMedicationCount);
-private _fentanylCount = [_patient, "Fentanyl", false] call ACEFUNC(medical_status,getMedicationCount);
-private _ketamineCount = [_patient, "Ketamine", false] call ACEFUNC(medical_status,getMedicationCount);
-if ((_lidocaineCount <=  0.6 && _morphineCount <=  0.8 && _nalbuphineCount <=  0.8 && _fentanylCount <=  0.8 && _ketamineCount <=  0.8) || !IS_UNCONSCIOUS(_patient)) then {
-    private _pain = random [0.7, 0.8, 0.9];
-    [_patient, _pain] call ACEFUNC(medical_status,adjustPainLevel);
-};
+private _medStack = _patient call ACEFUNC(medical_treatment,getAllMedicationCount);
+private _medsToCheck = ["fentanyl", "ketamine", "nalbuphine", "morphine", "lidocaine"];
+private _fentanylEffectiveness = 0;
+private _ketamineEffectiveness = 0;
+private _nalbuphineEffectiveness = 0;
+private _morphineEffectiveness = 0;
+private _lidocaineEffectiveness = 0;
+{
+    private _medName = toLower (_x select 0);
+    private _effectiveness = _x select 2;
+    if ("fentanyl" in _medName) then {
+        _fentanylEffectiveness = _fentanylEffectiveness max _effectiveness;
+    };
+    if ("ketamine" in _medName) then {
+        _ketamineEffectiveness = _ketamineEffectiveness max _effectiveness;
+    };
+    if ("nalbuphine" in _medName) then {
+        _nalbuphineEffectiveness = _nalbuphineEffectiveness max _effectiveness;
+    };
+    if ("morphine" in _medName) then {
+        _morphineEffectiveness = _morphineEffectiveness max _effectiveness;
+    };
+    if ("lidocaine" in _medName) then {
+        _lidocaineEffectiveness = _lidocaineEffectiveness max _effectiveness;
+    };
+    } forEach _medStack;
+    if (
+        _fentanylEffectiveness <= 0.8 &&
+        _ketamineEffectiveness <= 0.8 &&
+        _nalbuphineEffectiveness <= 0.8 &&
+        _lidocaineEffectiveness <= 0.6 &&
+        _morphineEffectiveness <= 0.8
+    ) then {
+        [_patient, [0.7, 0.8, 0.9] select (floor random 3)] call ACEFUNC(medical_status,adjustPainLevel);
+    };
 
 private _chestTubeArray = _patient getVariable [QGVAR(chestTube), [0,0]];
 private _liveTube = _chestTubeArray select _side;

@@ -11,8 +11,6 @@ class ACE_ADDON(Medical_Treatment) {
         timeInSystem = 120;
         // How long until the maximum effect is reached
         timeTillMaxEffect = 30;
-
-        dose = 1;
         // How many of this type of medication can be in the system before the patient overdoses?
         maxDose = 4;
         // The number of doses over maxDose where there is a chance to overdose.
