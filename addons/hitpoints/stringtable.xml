@@ -204,5 +204,35 @@
         <Key ID="STR_KAT_Hitpoints_SplintFellOff">
             <English>Splint Fell Off</English>
         </Key>
+        <Key ID="STR_KAT_Hitpoints_Hemostatic_Gauze_Desc_Short">
+            <English>Hemostatic Gauze for Heavily Bleeding Wounds</English>
+        </Key>
+        <Key ID="STR_KAT_Hitpoints_Hemostatic_Gauze_Desc_Use">
+            <English>Hemostatic Gauze for Heavily Bleeding Wounds</English>
+        </Key>
+        <Key ID="STR_KAT_Hitpoints_Hemostatic_Gauze_Display">
+            <English>Hemostatic Gauze</English>
+        </Key>
+        <Key ID="STR_KAT_Hitpoints_Hemostatic_Gauze">
+            <English>Apply Hemostatic Gauze</English>
+        </Key>
+        <Key ID="STR_KAT_Hitpoints_Hemostatic_Gauze_Progress">
+            <English>Applying Hemostatic Gauze</English>
+        </Key>
+        <Key ID="STR_KAT_Hitpoints_Adhesive_Bandage_Desc_Short">
+            <English>Adhesive Bandage for Cuts and Scrapes</English>
+        </Key>
+        <Key ID="STR_KAT_Hitpoints_Adhesive_Bandage_Desc_Use">
+            <English>Adhesive Bandage for Cuts and Scrapes</English>
+        </Key>
+        <Key ID="STR_KAT_HitpointsAdhesive_Bandage_Display">
+            <English>Adhesive Bandage</English>
+        </Key>
+        <Key ID="STR_KAT_Hitpoints_Adhesive_Bandage">
+            <English>Apply Adhesive Bandage</English>
+        </Key>
+        <Key ID="STR_KAT_Hitpoints_Adhesive_Bandage_Progress">
+            <English>Applying Adhesive Bandage</English>
+        </Key>
     </Package>
 </Project>

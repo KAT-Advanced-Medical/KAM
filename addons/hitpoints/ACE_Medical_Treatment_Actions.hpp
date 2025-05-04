@@ -22,6 +22,18 @@ class ACE_Medical_Treatment_Actions {
         icon = QPATHTOF(ui\Compressed_Gauze.paa);
         items[] = {"kat_Compressed_Gauze"};
     };
+    class Hemostatic_Gauze: BasicBandage {
+        displayName = CSTRING(Hemostatic_Gauze);
+        displayNameProgress = CSTRING(Hemostatic_Gauze_Progress);
+        icon = QPATHTOF(ui\Hemostatic_Gauze.paa);
+        items[] = {"kat_Hemostatic_Gauze"};
+    };
+    class Adhesive_Bandage: BasicBandage {
+        displayName = CSTRING(Adhesive_Bandage);
+        displayNameProgress = CSTRING(Adhesive_Bandage_Progress);
+        icon = QPATHTOF(ui\Adhesive_Bandage.paa);
+        items[] = {"kat_Adhesive_Bandage"};
+    };
     class Abdominal_Pad: BasicBandage {
         displayName = CSTRING(Abdominal_Pad);
         displayNameProgress = CSTRING(Abdominal_Pad_Progress);

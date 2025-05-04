@@ -32,7 +32,7 @@ if (_bandagedIndex == -1) exitWith {false};
 
 private _rawBandageType = (_bandagedWoundsOnPart select _bandagedIndex) select 2;
 
-private _excludedTypes = ["FieldDressing", "PackingBandage", "ElasticBandage", "QuikClot", "ETD", "Hemostat", "Abdominal_Pad"];
+private _excludedTypes = ["FieldDressing", "PackingBandage", "ElasticBandage", "QuikClot", "ETD", "Hemostat", "Abdominal_Pad", "Adhesive_Bandage"];
 if (_rawBandageType in _excludedTypes) exitWith {false};
 
 private _bandageType = _rawBandageType + "_wrapped";

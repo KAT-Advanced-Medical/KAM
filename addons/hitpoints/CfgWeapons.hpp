@@ -76,7 +76,7 @@ class CfgWeapons {
         descriptionUse = CSTRING(Abdominal_Pad_Desc_Use);
         ACE_isMedicalItem = 1;
         class ItemInfo: CBA_MiscItem_ItemInfo {
-            mass = 0.3;
+            mass = 0.5;
         };
     };
     class kat_ETD: ACE_ItemCore {
@@ -87,6 +87,32 @@ class CfgWeapons {
         model = "\A3\Structures_F_EPA\Items\Medical\Bandage_F.p3d";
         descriptionShort = CSTRING(ETD_Desc_Short);
         descriptionUse = CSTRING(ETD_Desc_Use);
+        ACE_isMedicalItem = 1;
+        class ItemInfo: CBA_MiscItem_ItemInfo {
+            mass = 0.5;
+        };
+    };
+    class kat_Hemostatic_Gauze: ACE_ItemCore {
+        scope = 2;
+        author = "Cplhardcore";
+        displayName = CSTRING(Hemostatic_Gauze_Display);
+        picture = QPATHTOF(ui\Hemostatic_Gauze.paa);
+        model = "\A3\Structures_F_EPA\Items\Medical\Bandage_F.p3d";
+        descriptionShort = CSTRING(Hemostatic_Gauze_Desc_Short);
+        descriptionUse = CSTRING(Hemostatic_Gauze_Desc_Use);
+        ACE_isMedicalItem = 1;
+        class ItemInfo: CBA_MiscItem_ItemInfo {
+            mass = 0.3;
+        };
+    };
+    class kat_Adhesive_Bandage: ACE_ItemCore {
+        scope = 2;
+        author = "Cplhardcore";
+        displayName = CSTRING(Adhesive_Bandage_Display);
+        picture = QPATHTOF(ui\Adhesive_Bandage.paa);
+        model = "\A3\Structures_F_EPA\Items\Medical\Bandage_F.p3d";
+        descriptionShort = CSTRING(Adhesive_Bandage_Desc_Short);
+        descriptionUse = CSTRING(Adhesive_Bandage_Desc_Use);
         ACE_isMedicalItem = 1;
         class ItemInfo: CBA_MiscItem_ItemInfo {
             mass = 0.3;
