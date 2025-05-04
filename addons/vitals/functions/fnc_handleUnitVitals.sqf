@@ -202,6 +202,14 @@ switch (true) do {
     };
 };
 
+#ifdef DEBUG_MODE_FULL
+private _cardiacOutput = [_unit] call ACEFUNC(medical_status,getCardiacOutput);
+if (!isPlayer _unit) then {
+    private _painLevel = _unit getVariable [VAR_PAIN, 0];
+    hintSilent format["blood volume: %1, blood loss: [%2, %3]\nhr: %4, bp: %5, pain: %6", round(_bloodVolume * 100) / 100, round(_woundBloodLoss * 1000) / 1000, round((_woundBloodLoss / (0.001 max _cardiacOutput)) * 100) / 100, round(_heartRate), _bloodPressure, round(_painLevel * 100) / 100];
+};
+#endif
+
 END_COUNTER(Vitals);
 
 //placed outside the counter as 3rd-party code may be called from this event
