@@ -192,7 +192,7 @@ class ACE_Medical_Treatment_Actions {
         displayNameProgress = CSTRING(treating);
         category = "airway";
         treatmentLocations = 0;
-        allowedSelections[] = {"Body"};
+        allowedSelections[] = {"Chest"};
         allowSelfTreatment = 0;
         medicRequired = QGVAR(medLvl_hemopneumothoraxTreatment);
         treatmentTime = 7;
