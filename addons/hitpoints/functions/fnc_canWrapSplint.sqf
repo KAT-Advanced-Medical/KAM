@@ -18,10 +18,9 @@
  * Public: No
  */
 
-params ["_medic", "_patient", "_bodyPart", "_bandage"];
-_bodyPart = toLowerANSI _bodyPart;
-
-// If patient is swimming, don't allow bandage actions.
+params ["", "_patient", "_bodyPart"];
 if (_patient call ACEFUNC(common,isSwimming)) exitWith {false};
 
-(GET_FRACTURES(_patient) select _partIndex) == -1;
+private _partIndex = ALL_BODY_PARTS find toLowerANSI _bodyPart;
+
+(GET_FRACTURES(_patient) select _partIndex) == -1

@@ -114,6 +114,18 @@
         <Key ID="STR_KAT_Hitpoints_Elastic_Wrap_Display">
             <English>Elastic Wrapping Bandage</English>
         </Key>
+        <Key ID="STR_KAT_Hitpoints_Elastic_Wrap">
+            <English>Wrap Wounds (Elastic)</English>
+        </Key>
+        <Key ID="STR_KAT_Hitpoints_Elastic_Wrap_Splint">
+            <English>Wrap Splint</English>
+        </Key>
+        <Key ID="STR_KAT_Hitpoints_Elastic_Wrap_Progress">
+            <English>Wrapping Wounds</English>
+        </Key>
+        <Key ID="STR_KAT_Hitpoints_Elastic_Wrap_Splint_Progress">
+            <English>Wrapping Splint</English>
+        </Key>
         <Key ID="STR_KAT_Hitpoints_4X4_Gauze_Desc_Short">
             <English>4X4 Gauze Sponge for Small Wounds</English>
         </Key>
@@ -122,6 +134,12 @@
         </Key>
         <Key ID="STR_KAT_Hitpoints_4X4_Gauze_Display">
             <English>4X4 Gauze Sponge</English>
+        </Key>
+        <Key ID="STR_KAT_Hitpoints_4X4_Gauze">
+            <English>Apply Gauze Sponge</English>
+        </Key>
+        <Key ID="STR_KAT_Hitpoints_4X4_Gauze_Progress">
+            <English>Applying Gauze Sponge</English>
         </Key>
         <Key ID="STR_KAT_Hitpoints_Compressed_Gauze_Desc_Short">
             <English>Compressed Gauze for Packing Large Wounds</English>
@@ -132,6 +150,12 @@
         <Key ID="STR_KAT_Hitpoints_Compressed_Gauze_Display">
             <English>Compressed Packing Gauze</English>
         </Key>
+        <Key ID="STR_KAT_Hitpoints_Compressed_Gauze">
+            <English>Pack Wound</English>
+        </Key>
+        <Key ID="STR_KAT_Hitpoints_Compressed_Gauze_Progress">
+            <English>Packing Wound</English>
+        </Key>
         <Key ID="STR_KAT_Hitpoints_Roller_Gauze_Desc_Short">
             <English>Roller Gauze for Wrapping Packed Wounds</English>
         </Key>
@@ -140,6 +164,12 @@
         </Key>
         <Key ID="STR_KAT_Hitpoints_Roller_Gauze_Display">
             <English>Roller Gauze</English>
+        </Key>
+        <Key ID="STR_KAT_Hitpoints_Roller_Gauze">
+            <English>Wrap Wounds (Gauze)</English>
+        </Key>
+        <Key ID="STR_KAT_Hitpoints_Roller_Gauze_Progress">
+            <English>Wrapping Wounds</English>
         </Key>
         <Key ID="STR_KAT_Hitpoints_Abdominal_Pad_Desc_Short">
             <English>Abdominal Pad for Extremely Large Wounds On the Torso</English>
@@ -150,6 +180,12 @@
         <Key ID="STR_KAT_Hitpoints_Abdominal_Pad_Display">
             <English>Abdominal Pad</English>
         </Key>
+        <Key ID="STR_KAT_Hitpoints_Abdominal_Pad">
+            <English>Apply Abdominal Pad</English>
+        </Key>
+        <Key ID="STR_KAT_Hitpoints_Abdominal_Pad_Progress">
+            <English>Applying Abdominal Pad</English>
+        </Key>
         <Key ID="STR_KAT_Hitpoints_ETD_Desc_Short">
             <English>Emergency Trauma Dressing for Extremely Large Wounds</English>
         </Key>
@@ -158,6 +194,15 @@
         </Key>
         <Key ID="STR_KAT_Hitpoints_ETD_Display">
             <English>Emergency Trauma Dressing</English>
+        </Key>
+        <Key ID="STR_KAT_Hitpoints_ETD">
+            <English>Apply Emergency Trauma Dressing</English>
+        </Key>
+        <Key ID="STR_KAT_Hitpoints_ETD_Progress">
+            <English>Applying Emergency Trauma Dressing</English>
+        </Key>
+        <Key ID="STR_KAT_Hitpoints_SplintFellOff">
+            <English>Splint Fell Off</English>
         </Key>
     </Package>
 </Project>

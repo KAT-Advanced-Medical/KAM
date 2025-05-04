@@ -7,7 +7,6 @@ PREP(fullHealLocal);
 PREP(getWrapTime);
 PREP(handleDamage);
 PREP(handleIncapacitation);
-PREP(handleSplintFalloff);
 PREP(hasTourniquetAppliedTo);
 PREP(onKeyDown);
 PREP(splintLocal);

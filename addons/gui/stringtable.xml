@@ -349,5 +349,8 @@
         <Key ID="STR_KAT_GUI_SelectRightUpperLeg">
             <English>Select Upper Right Leg</English>
         </Key>
+        <Key ID="STR_KAT_GUI_Status_SplintWrapped">
+            <English>Splint Wrapped</English>
+        </Key>
     </Package>
 </Project>

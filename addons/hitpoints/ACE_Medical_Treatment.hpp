@@ -47,9 +47,15 @@ class ADDON {
                 reopeningMinDelay = 900;
                 reopeningMaxDelay = 1800;
             };
-            class VelocityWoundMinor: VelocityWound {};
-            class VelocityWoundMedium: VelocityWound {};
-            class VelocityWoundLarge: VelocityWound {};
+            class VelocityWoundMinor: VelocityWound {
+                effectiveness = 1;
+            };
+            class VelocityWoundMedium: VelocityWound {
+                effectiveness = 1;
+            };
+            class VelocityWoundLarge: VelocityWound {
+                effectiveness = 1;
+            };
 
             class PunctureWound: Abrasion {
                 effectiveness = 1;
@@ -57,9 +63,15 @@ class ADDON {
                 reopeningMinDelay = 900;
                 reopeningMaxDelay = 1800;
             };
-            class PunctureWoundMinor: PunctureWound {};
-            class PunctureWoundMedium: PunctureWound {};
-            class PunctureWoundLarge: PunctureWound {};
+            class PunctureWoundMinor: PunctureWound {
+                effectiveness = 1;
+            };
+            class PunctureWoundMedium: PunctureWound {
+                effectiveness = 1;
+            };
+            class PunctureWoundLarge: PunctureWound {
+                effectiveness = 1;
+            };
         };
         class fourByfour_Gauze {
             effectiveness = 1;

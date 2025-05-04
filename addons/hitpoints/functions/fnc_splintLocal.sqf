@@ -23,10 +23,23 @@ TRACE_3("splintLocal",_medic,_patient,_bodyPart);
 private _partIndex = ALL_BODY_PARTS find toLowerANSI _bodyPart;
 
 private _fractures = GET_FRACTURES(_patient);
+TRACE_2("handleSplintFalloff1",_partIndex,_fractures);
 _fractures set [_partIndex, -1];
 _patient setVariable [VAR_FRACTURES, _fractures, true];
 
-[_patient, _bodyPart] call FUNC(handleSplintFalloff);
+[{
+    params ["_patient", "_partIndex"];
+    private _fractures = GET_FRACTURES(_patient);
+    TRACE_3("handleSplintFalloff2",_patient,_partIndex,_fractures);
+    if (_fractures select _partIndex == -1) then {
+        _fractures set [_partIndex, 1];
+        _patient setVariable [ace_medical_fractures, _fractures, true];
+        [_patient] call EFUNC(misc,updateDamageEffects);
+        [LSTRING(SplintFellOff), 1.5, _patient] call ACEFUNC(common,displayTextStructured);
+    }
+}, [_patient, _partIndex], 180] call CBA_fnc_waitAndExecute;
+
+TRACE_2("splintFalloff",_patient,_bodyPart);
 
 // Check if we fixed limping from this treatment
 [_patient] call EFUNC(misc,updateDamageEffects);

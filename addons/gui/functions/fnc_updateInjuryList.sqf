@@ -233,6 +233,11 @@ switch (GET_FRACTURES(_target) select _selectionN) do {
             _entries pushBack [localize ACELSTRING(medical_gui,Status_SplintApplied), [0.2, 0.2, 1, 1]];
         };
     };
+    case -2: {
+        if (ACEGVAR(medical,fractures) in [2, 3]) then { // Ignore if the splint has no effect
+            _entries pushBack [localize LSTRING(Status_SplintWrapped), [0.2, 0.2, 1, 1]];
+        };
+    };
 };
 
 [QACEGVAR(medical_gui,updateInjuryListPart), [_ctrl, _target, _selectionN, _entries, _bodyPartName]] call CBA_fnc_localEvent;

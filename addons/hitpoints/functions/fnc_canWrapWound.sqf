@@ -31,5 +31,6 @@ private _canWrap = true;
     if (_amountOf * _bleeding > 0) exitWith {
         _canWrap = false;
     };
+    
 } forEach ((GET_OPEN_WOUNDS(_patient)) getOrDefault [_bodyPart, []]);
 _canWrap

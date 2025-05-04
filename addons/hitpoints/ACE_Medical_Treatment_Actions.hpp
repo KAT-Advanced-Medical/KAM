@@ -11,35 +11,33 @@ class ACE_Medical_Treatment_Actions {
         treatmentTime = 6;
     };
     class fourByfour_Gauze: BasicBandage {
-        displayName = CSTRING(4X4_Gauze_Display);
+        displayName = CSTRING(4X4_Gauze);
         displayNameProgress = CSTRING(4X4_Gauze_Progress);
         icon = QPATHTOF(ui\4X4_Gauze.paa);
         items[] = {"kat_4X4_Gauze"};
     };
     class Compressed_Gauze: BasicBandage {
-        displayName = CSTRING(Compressed_Gauze_Display);
+        displayName = CSTRING(Compressed_Gauze);
         displayNameProgress = CSTRING(Compressed_Gauze_Progress);
         icon = QPATHTOF(ui\Compressed_Gauze.paa);
-        condition = QFUNC(canPackWound);
-        treatmentTime = QFUNC(getPackTime);
         items[] = {"kat_Compressed_Gauze"};
     };
     class Abdominal_Pad: BasicBandage {
-        displayName = CSTRING(Abdominal_Pad_Display);
+        displayName = CSTRING(Abdominal_Pad);
         displayNameProgress = CSTRING(Abdominal_Pad_Progress);
         icon = QPATHTOF(ui\Abdominal_Pad.paa);
         items[] = {"kat_Abdominal_Pad"};
         allowedSelections[] = {"Body"};
     };
     class ETD: BasicBandage {
-        displayName = CSTRING(ETD_Display);
+        displayName = CSTRING(ETD);
         displayNameProgress = CSTRING(ETD_Progress);
         icon = QPATHTOF(ui\ETD.paa);
         treatmentTime = 16;
         items[] = {"kat_ETD"};
     };
     class Elastic_Wrap: BasicBandage {
-        displayName = CSTRING(Elastic_Wrap_Display);
+        displayName = CSTRING(Elastic_Wrap);
         displayNameProgress = CSTRING(Elastic_Wrap_Progress);
         icon = QPATHTOF(ui\Elastic_Wrap.paa);
         condition = QFUNC(canWrapWound);
@@ -48,16 +46,16 @@ class ACE_Medical_Treatment_Actions {
         items[] = {"kat_Elastic_Wrap"};
     };
     class Elastic_Wrap_Splint: BasicBandage {
-        displayName = CSTRING(Elastic_Wrap_Display);
-        displayNameProgress = CSTRING(Elastic_Wrap_Progress);
+        displayName = CSTRING(Elastic_Wrap_Splint);
+        displayNameProgress = CSTRING(Elastic_Wrap_Splint_Progress);
         icon = QPATHTOF(ui\Elastic_Wrap.paa);
-        condition = QFUNC(canWrapSplint);
         callbackSuccess = QFUNC(wrapSplint);
+        condition = QFUNC(canWrapSplint);
         treatmentTime = 12;
         items[] = {"kat_Elastic_Wrap"};
     };
     class Roller_Gauze: BasicBandage {
-        displayName = CSTRING(Roller_Gauze_Display);
+        displayName = CSTRING(Roller_Gauze);
         displayNameProgress = CSTRING(Roller_Gauze_Progress);
         icon = QPATHTOF(ui\Roller_Gauze.paa);
         condition = QFUNC(canWrapWound);
