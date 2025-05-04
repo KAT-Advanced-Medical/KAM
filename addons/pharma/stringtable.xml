@@ -6607,5 +6607,23 @@
         <Key ID="STR_KAT_Pharma_Syringe_Doxapram_5_3_DescShort">
             <English>5ml Syringe loaded with 1mg of Doxapram</English>
         </Key>
+        <Key ID="STR_KAT_Pharma_Atropine_DescShort">
+            <English>Used to treat chemical exposure and bradycardia</English>
+            <German>Zur Behandlung von Bradykardie</German>
+            <Polish>Używany do zwalczania bradykardii</Polish>
+            <French>Utiliser pour traiter une bradycardie</French>
+            <Chinese>用于治疗心动过缓</Chinese>
+            <Chinesesimp>用于治疗心动过缓</Chinesesimp>
+            <Italian>Usato per trattare la bradicardia</Italian>
+            <Spanish>Se utiliza para tratar la bradicardia</Spanish>
+            <Korean>서맥 치료에 사용</Korean>
+            <Turkish>Bradikardi tedavisinde kullanılır</Turkish>
+            <Czech>Používá se k léčbě bradykardie</Czech>
+            <Japanese>徐脈の治療に使用される</Japanese>
+            <Russian>Используется для лечения брадикардии</Russian>
+            <Portuguese>Usado para tratar bradicardia</Portuguese>
+            <Finnish>Käytetään bradykardian hoitoon</Finnish>
+            <Dutch>Wordt gebruikt om chemische blootstelling en bradycardie te behandelen</Dutch>
+        </Key>
     </Package>
 </Project>
