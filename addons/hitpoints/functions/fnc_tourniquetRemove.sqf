@@ -61,9 +61,23 @@ private _arrayModified = false;
     _x params ["_bodyPartN", "_medication"];
 
     // Check if the site is no longer occluded
-    private _isStillOccluded = [_patient, _bodyPartN] call EFUNC(pharma,occlusionCheck);
+    private _occlusionMap = [
+    [4, [4, 5]],
+    [5, [5]],
+    [6, [6, 7]],
+    [7, [7]],
+    [8, [8, 9, 3]],
+    [9, [9, 3]],
+    [10, [10, 11, 3]],
+    [11, [11, 3]]
+    ];
 
-    if (!_isStillOccluded) then {
+    private _tourniquets = GET_TOURNIQUETS(_patient);
+    private _idx = _occlusionMap findIf { _x#0 == _bodyPartN };
+    private _result = if (_idx != -1) then { _occlusionMap select _idx select 1 } else { [] };
+    private _isOccluded = { _tourniquets select _x != 0 } count _result > 0;
+
+    if (!_isOccluded) then {
         TRACE_1("delayed medication call after tourniquet removal", _x);
         [QACEGVAR(medical_treatment,medicationLocal), [_patient, _bodyPartN, _medication], _patient] call CBA_fnc_targetEvent;
         _occludedMedications set [_forEachIndex, []];
