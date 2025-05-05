@@ -10,6 +10,7 @@
  * 3: Injury index <NUMBER>
  * 4: Injury <ARRAY>
  * 5: Used Bandage type <STRING>
+ * 6: New Bandage <Bool> Optional, default is true
  *
  * Return Value:
  * None
@@ -17,7 +18,7 @@
  * Public: No
  */
 
-params ["_target", "_impact", "_part", "_injuryIndex", "_injury", "_bandage"];
+params ["_target", "_impact", "_part", "_injuryIndex", "_injury", "_bandage", ["_isNew", true]];
 TRACE_6("handleBandageOpening",_target,_impact,_part,_injuryIndex,_injury,_bandage);
 
 _injury params ["_classID", "_amountOf", "_bleeding", "_damage"];
@@ -60,11 +61,14 @@ TRACE_5("configs",_bandage,_className,_reopeningChance,_reopeningMinDelay,_reope
 
 private _bandagedWounds = GET_BANDAGED_WOUNDS(_target);
 
-TRACE_3("adding new bandagedWound",_classID,_part,_bandage);
-private _bandagedInjury = +_injury;
-_bandagedInjury set [1, _impact];
-_bandagedInjury set [4, _bandage];
-(_bandagedWounds getOrDefault [_part, [], true]) pushBack _bandagedInjury;
+if !(_isNew) then {} else {
+    TRACE_3("adding new bandagedWound",_classID,_part,_bandage);
+    private _bandagedInjury = +_injury;
+    _bandagedInjury set [1, _impact];
+    _bandagedInjury set [4, _bandage];
+    (_bandagedWounds getOrDefault [_part, [], true]) pushBack _bandagedInjury;
+};
+
 
 _target setVariable [VAR_BANDAGED_WOUNDS, _bandagedWounds, true];
 

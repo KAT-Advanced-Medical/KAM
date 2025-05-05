@@ -36,19 +36,17 @@ private _internalBleedAmount = 0;
 private _sizeLabel = "";
 TRACE_1("checkLimb2",_internalBleedAmount);
 if (_internalBleedAmount > 0) then {
-    private _sizeLabel = switch (true) do {
+    _sizeLabel = switch (true) do {
         case (_internalBleedAmount < 0.1): { localize LSTRING(InternalBleeding_Minor) };
         case (_internalBleedAmount < 3): { localize LSTRING(InternalBleeding_Medium) };
         case (_internalBleedAmount < 6): { localize LSTRING(InternalBleeding_Large) };
         default {};
     };
 } else {
-    private _sizeLabel = localize LSTRING(InternalBleeding_None);
+    _sizeLabel = localize LSTRING(InternalBleeding_None);
 };
-
-
-private _fixedBodyPart = format [localize ELSTRING(gui,InternalBleeding), _sizeLabel, _fixedBodyPart];
-TRACE_1("checkLimb3",_sizeLabel);
+TRACE_1("SizeLabel",_sizeLabel);
+private _fixedBodyPart = localize ("STR_KAT_Hitpoints_" + _bodyPart);
     private _output = format [localize LSTRING(InternalBleeding), _sizeLabel, _fixedBodyPart];
 
     [_patient, "quick_view", LSTRING(InternalBleedingLog), [[_medic] call ACEFUNC(common,getName), _sizeLabel,  _fixedBodyPart]] call ACEFUNC(medical_treatment,addToLog);

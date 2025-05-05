@@ -17,5 +17,6 @@
  */
 
 params ["", "_patient", "_bodyPart"];
-
-((count ((_patient getVariable ["ace_medical_bandagedWounds", []]) getOrDefault [_bodyPart, []])) * 4) min 16
+_number = count ((_patient getVariable ["ace_medical_bandagedWounds", []]) getOrDefault [_bodyPart, []]);
+_time = (_number * 4) min 16;
+_time

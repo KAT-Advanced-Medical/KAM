@@ -37,15 +37,16 @@ if (_bandagedIndex == -1) exitWith {false};
 TRACE_1("WrapWound2",_bandagedIndex);
 
 private _entry = _bandagedWoundsOnPart select _bandagedIndex;
-private _originalBandage = _entry param [4, ""];
 TRACE_1("WrapWound3",_originalBandage);
+_entry params ["_classID", "_amount", "_bleeding", "_damage", "_oldBandage"];
 private _newEntry = [
-    _entry select 0,
-    _entry select 1,
-    _entry select 2,
-    _entry select 3,
-    _originalBandage + "_wrapped"
+    _classID,
+    _amount,
+    _bleeding,
+    _damage,
+    _oldBandage + "_wrapped"
 ];
+TRACE_2("Wound Before/After Wrap", _entry, _newEntry);
 TRACE_1("WrapWound4",_newEntry);
 _bandagedWoundsOnPart set [_bandagedIndex, _newEntry];
 _bandagedWounds set [_bodyPart, _bandagedWoundsOnPart];
@@ -57,6 +58,6 @@ private _woundIndex = _bandagedIndex;
 private _wound = _newEntry;
 private _bandage =_originalBandage + "_wrapped";
 
-[_patient, _impact, _bodyPart, _woundIndex, _wound, _bandage] call ACEFUNC(medical_treatment,handleBandageOpening);
+[_patient, _impact, _bodyPart, _woundIndex, _wound, _bandage, false] call ACEFUNC(medical_treatment,handleBandageOpening);
 
 true

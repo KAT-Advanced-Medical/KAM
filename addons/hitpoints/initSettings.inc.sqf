@@ -7,3 +7,12 @@
     [4, 20, 8, 1],
     true
 ] call CBA_fnc_addSetting;
+
+[
+    QGVAR(woundWrapTime),
+    "SLIDER",
+    [LSTRING(WoundWrapTime_DisplayName), LSTRING(WoundWrapTime_Description)],
+    LSTRING(Category),
+    [4, 16, 4, 1],
+    true
+] call CBA_fnc_addSetting;

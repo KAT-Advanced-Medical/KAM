@@ -27,9 +27,7 @@ private _bandagedWoundsOnPart = _bandagedWounds get _bodyPart;
 if (_bandagedWoundsOnPart isEqualTo []) exitWith {false};
 
 // Not enough time has elapsed to stitch a wound
-if (_totalTime - _elapsedTime > ([_patient, _bodyPart] call FUNC(getWrapTime)) - 4) exitWith {true};
+if (_totalTime - _elapsedTime > ([_patient, _patient, _bodyPart] call FUNC(getWrapTime)) - GVAR(woundWrapTime)) exitWith {true};
 
 // Stitch the first possible wound on the body part
 private _wrapped = [_patient, _bodyPart] call FUNC(wrapWound);
-
-
