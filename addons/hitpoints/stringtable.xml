@@ -13,28 +13,28 @@
         <Key ID="STR_KAT_Hitpoints_Head">
             <English>Head</English>
         </Key>
-        <Key ID="STR_KAT_Hitpoints_ArmLeft">
+        <Key ID="STR_KAT_Hitpoints_LeftArm">
             <English>Left Arm</English>
         </Key>
-        <Key ID="STR_KAT_Hitpoints_ArmUpperLeft">
+        <Key ID="STR_KAT_Hitpoints_UpperLeftArm">
             <English>Upper Left Arm</English>
         </Key>
-        <Key ID="STR_KAT_Hitpoints_ArmRight">
+        <Key ID="STR_KAT_Hitpoints_RightArm">
             <English>Right Arm</English>
         </Key>
-        <Key ID="STR_KAT_Hitpoints_ArmUpperRight">
+        <Key ID="STR_KAT_Hitpoints_UpperRightArm">
             <English>Upper Right Arm</English>
         </Key>
-        <Key ID="STR_KAT_Hitpoints_LegLeft">
+        <Key ID="STR_KAT_Hitpoints_LeftLeg">
             <English>Left Leg</English>
         </Key>
-        <Key ID="STR_KAT_Hitpoints_LegUpperLeft">
+        <Key ID="STR_KAT_Hitpoints_UpperLeftLeg">
             <English>Upper Left Leg</English>
         </Key>
-        <Key ID="STR_KAT_Hitpoints_LegRight">
+        <Key ID="STR_KAT_Hitpoints_RightLeg">
             <English>Right Leg</English>
         </Key>
-        <Key ID="STR_KAT_Hitpoints_LegUpperRight">
+        <Key ID="STR_KAT_Hitpoints_UpperRightLeg">
             <English>Upper Right Leg</English>
         </Key>
         <Key ID="STR_KAT_Hitpoints_SelectHead">
@@ -58,19 +58,19 @@
         <Key ID="STR_KAT_Hitpoints_SelectRightArm">
             <English>Select Lower Right Arm</English>
         </Key>
-        <Key ID="STR_KAT_Hitpoints_SelectRightUpperArm">
+        <Key ID="STR_KAT_Hitpoints_SelectUpperRightArm">
             <English>Select Upper Right Arm</English>
         </Key>
         <Key ID="STR_KAT_Hitpoints_SelectLeftLeg">
             <English>Select Lower Left Leg</English>
         </Key>
-        <Key ID="STR_KAT_Hitpoints_SelectLeftUpperLeg">
+        <Key ID="STR_KAT_Hitpoints_SelectUpperLeftLeg">
             <English>Select Upper Left Leg</English>
         </Key>
         <Key ID="STR_KAT_Hitpoints_SelectRightLeg">
             <English>Select Lower Right Leg</English>
         </Key>
-        <Key ID="STR_KAT_Hitpoints_SelectRightUpperLeg">
+        <Key ID="STR_KAT_Hitpoints_SelectUpperRightLeg">
             <English>Select Upper Right Leg</English>
         </Key>
         <Key ID="STR_KAT_Hitpoints_Actions_TriageCard">
