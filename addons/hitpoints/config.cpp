@@ -10,6 +10,7 @@ class CfgPatches {
             "kat_main",
             "ace_medical",
             "ace_medical_gui",
+            "ace_medical_treatment",
             "kat_gui",
         };
         author = "Katalam";
@@ -18,6 +19,7 @@ class CfgPatches {
         VERSION_CONFIG;
     };
 };
+#include "CfgEventHandlers.hpp"
 #include "CfgVehicles.hpp"
 #include "ACE_Medical_Injuries.hpp"
 #include "ACE_Medical_Treatment_Actions.hpp"

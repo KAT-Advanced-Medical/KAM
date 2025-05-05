@@ -59,24 +59,12 @@ if (isClass (_config >> _className)) then {
 TRACE_5("configs",_bandage,_className,_reopeningChance,_reopeningMinDelay,_reopeningMaxDelay);
 
 private _bandagedWounds = GET_BANDAGED_WOUNDS(_target);
-private _exist = false;
-{
-    _x params ["_id", "_amountOf"];
-    if (_id == _classID) exitWith {
-        _x set [1, _amountOf + _impact];
-        _x set [2, _bandage];
-        TRACE_2("adding to existing bandagedWound",_id,_part);
-        _exist = true;
-    };
-} forEach (_bandagedWounds getOrDefault [_part, []]);
 
-if (!_exist) then {
-    TRACE_3("adding new bandagedWound",_classID,_part,_bandage);
-    private _bandagedInjury = +_injury;
-    _bandagedInjury set [1, _impact];
-    _bandagedInjury set [2, _bandage];
-    (_bandagedWounds getOrDefault [_part, [], true]) pushBack _bandagedInjury;
-};
+TRACE_3("adding new bandagedWound",_classID,_part,_bandage);
+private _bandagedInjury = +_injury;
+_bandagedInjury set [1, _impact];
+_bandagedInjury set [4, _bandage];
+(_bandagedWounds getOrDefault [_part, [], true]) pushBack _bandagedInjury;
 
 _target setVariable [VAR_BANDAGED_WOUNDS, _bandagedWounds, true];
 

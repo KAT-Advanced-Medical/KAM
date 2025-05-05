@@ -21,9 +21,30 @@ params ["_ctrl", "_target", "_selectionN"];
 
 private _entries = [];
 private _nonissueColor = [1, 1, 1, 0.33];
+private _wounds = GET_OPEN_WOUNDS(_target);
+private _hasExternalBleeding = false;
+
+{
+    private _bodyPart = _x;
+    private _woundList = _wounds get _bodyPart;
+
+    {
+        private _woundClassID = _x select 0;
+        private _amountOf     = _x select 1;
+
+        private _classIndex = _woundClassID / 10;
+        private _className  = ACEGVAR(medical_damage,woundClassNames) select _classIndex;
+
+        if (_amountOf > 0 && {_className != "InternalBleeding"}) exitWith {
+            _hasExternalBleeding = true;
+        };
+    } forEach _woundList;
+
+    if (_hasExternalBleeding) exitWith {};
+} forEach (keys _wounds);
 
 // Indicate if unit is bleeding at all
-if (IS_BLEEDING(_target)) then {
+if (_hasExternalBleeding && {IS_BLEEDING(_target)}) then {
     switch (ACEGVAR(medical_gui,showBleeding)) do {
         case 1: {
         //  Just show whether the unit is bleeding at all
@@ -155,13 +176,13 @@ private _bodyPartName = [
     ELSTRING(hitpoints,Chest),
     ACELSTRING(medical_gui,Torso),
     ACELSTRING(medical_gui,LeftArm),
-    ELSTRING(hitpoints,ArmUpperLeft),
+    ELSTRING(hitpoints,UpperLeftArm),
     ACELSTRING(medical_gui,RightArm),
-    ELSTRING(hitpoints,ArmUpperRight),
+    ELSTRING(hitpoints,UpperRightArm),
     ACELSTRING(medical_gui,LeftLeg),
-    ELSTRING(hitpoints,LegUpperLeft),
+    ELSTRING(hitpoints,UpperLeftLeg),
     ACELSTRING(medical_gui,RightLeg),
-    ELSTRING(hitpoints,LegUpperRight)
+    ELSTRING(hitpoints,UpperRightLeg)
 ] select _selectionN;
 
 _entries pushBack [localize _bodyPartName, [1, 1, 1, 1]];
@@ -255,6 +276,7 @@ private _fnc_processWounds = {
             private _classIndex = _woundClassID / 10;
             private _category   = _woundClassID % 10;
             private _className = ACEGVAR(medical_damage,woundClassNames) select _classIndex;
+            if (_className isEqualTo "InternalBleeding") exitWith {};
             private _suffix = ["Minor", "Medium", "Large"] select _category;
             private _woundName = localize format [LSTRING(%1_%2), _className, _suffix];
 

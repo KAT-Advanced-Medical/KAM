@@ -289,28 +289,28 @@
         <Key ID="STR_KAT_GUI_Head">
             <English>Head</English>
         </Key>
-        <Key ID="STR_KAT_GUI_ArmLeft">
+        <Key ID="STR_KAT_GUI_LeftArm">
             <English>Left Arm</English>
         </Key>
-        <Key ID="STR_KAT_GUI_ArmUpperLeft">
+        <Key ID="STR_KAT_GUI_UpperLeftArm">
             <English>Upper Left Arm</English>
         </Key>
-        <Key ID="STR_KAT_GUI_ArmRight">
+        <Key ID="STR_KAT_GUI_RightArm">
             <English>Right Arm</English>
         </Key>
-        <Key ID="STR_KAT_GUI_ArmUpperRight">
+        <Key ID="STR_KAT_GUI_UpperRightArm">
             <English>Upper Right Arm</English>
         </Key>
-        <Key ID="STR_KAT_GUI_LegLeft">
+        <Key ID="STR_KAT_GUI_LeftLeg">
             <English>Left Leg</English>
         </Key>
-        <Key ID="STR_KAT_GUI_LegUpperLeft">
+        <Key ID="STR_KAT_GUI_UpperLeftLeg">
             <English>Upper Left Leg</English>
         </Key>
-        <Key ID="STR_KAT_GUI_LegRight">
+        <Key ID="STR_KAT_GUI_RightLeg">
             <English>Right Leg</English>
         </Key>
-        <Key ID="STR_KAT_GUI_LegUpperRight">
+        <Key ID="STR_KAT_GUI_UpperRightLeg">
             <English>Upper Right Leg</English>
         </Key>
         <Key ID="STR_KAT_GUI_SelectHead">
@@ -334,19 +334,19 @@
         <Key ID="STR_KAT_GUI_SelectRightArm">
             <English>Select Lower Right Arm</English>
         </Key>
-        <Key ID="STR_KAT_GUI_SelectRightUpperArm">
+        <Key ID="STR_KAT_GUI_SelectUpperRightArm">
             <English>Select Upper Right Arm</English>
         </Key>
         <Key ID="STR_KAT_GUI_SelectLeftLeg">
             <English>Select Lower Left Leg</English>
         </Key>
-        <Key ID="STR_KAT_GUI_SelectLeftUpperLeg">
+        <Key ID="STR_KAT_GUI_SelectUpperLeftLeg">
             <English>Select Upper Left Leg</English>
         </Key>
         <Key ID="STR_KAT_GUI_SelectRightLeg">
             <English>Select Lower Right Leg</English>
         </Key>
-        <Key ID="STR_KAT_GUI_SelectRightUpperLeg">
+        <Key ID="STR_KAT_GUI_SelectUpperRightLeg">
             <English>Select Upper Right Leg</English>
         </Key>
         <Key ID="STR_KAT_GUI_Status_SplintWrapped">

@@ -35,7 +35,7 @@ class CfgVehicles {
                 exceptions[] = {"isNotSwimming"};
             };
             class ACE_ArmLeft {
-                displayName = CSTRING(ArmLeft);
+                displayName = CSTRING(LeftArm);
                 selection = "LWrist";
                 distance = 1.5;
                 condition = "";
@@ -43,7 +43,7 @@ class CfgVehicles {
                 exceptions[] = {"isNotSwimming"};
             };
             class ACE_ArmUpperLeft {
-                displayName = CSTRING(ArmUpperLeft);
+                displayName = CSTRING(UpperLeftArm);
                 selection = "LeftForeArm";
                 distance = 1.5;
                 condition = "";
@@ -51,7 +51,7 @@ class CfgVehicles {
                 exceptions[] = {"isNotSwimming"};
             };
             class ACE_ArmRight {
-                displayName = CSTRING(ArmRight);
+                displayName = CSTRING(RightArm);
                 selection = "RWrist";
                 distance = 1.5;
                 condition = "";
@@ -59,7 +59,7 @@ class CfgVehicles {
                 exceptions[] = {"isNotSwimming"};
             };
             class ACE_ArmUpperRight {
-                displayName = CSTRING(ArmUpperRight);
+                displayName = CSTRING(UpperRightArm);
                 selection = "RightForeArm";
                 distance = 1.5;
                 condition = "";
@@ -67,7 +67,7 @@ class CfgVehicles {
                 exceptions[] = {"isNotSwimming"};
             };
             class ACE_LegLeft {
-                displayName = CSTRING(LegLeft);
+                displayName = CSTRING(LeftLeg);
                 selection = "LeftFoot";
                 distance = 1.5;
                 condition = "";
@@ -75,7 +75,7 @@ class CfgVehicles {
                 exceptions[] = {"isNotSwimming"};
             };
             class ACE_LegUpperLeft {
-                displayName = CSTRING(LegUpperLeft);
+                displayName = CSTRING(UpperLeftLeg);
                 selection = "LKnee";
                 distance = 1.5;
                 condition = "";
@@ -83,7 +83,7 @@ class CfgVehicles {
                 exceptions[] = {"isNotSwimming"};
             };
             class ACE_LegRight {
-                displayName = CSTRING(LegRight);
+                displayName = CSTRING(RightLeg);
                 selection = "RightFoot";
                 distance = 1.5;
                 condition = "";
@@ -91,7 +91,7 @@ class CfgVehicles {
                 exceptions[] = {"isNotSwimming"};
             };
             class ACE_LegUpperRight {
-                displayName = CSTRING(LegUpperRight);
+                displayName = CSTRING(UpperRightLeg);
                 selection = "RKnee";
                 distance = 1.5;
                 condition = "";

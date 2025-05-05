@@ -18,19 +18,20 @@
  * Public: No
  */
 
-params ["_medic", "_patient", "_bodyPart", "_bandage"];
+params ["_medic", "_patient", "_bodyPart"];
 _bodyPart = toLowerANSI _bodyPart;
 
-// If patient is swimming, don't allow bandage actions.
-if (_patient call ACEFUNC(common,isSwimming)) exitWith {false};
+private _bandagedWounds = _patient getVariable [VAR_BANDAGED_WOUNDS, []];
+if (isNil "_bandagedWounds") exitWith {false};
 
-private _canWrap = true;
+private _bandagedWoundsOnPart = _bandagedWounds getOrDefault [_bodyPart, []];
+if (_bandagedWoundsOnPart isEqualTo []) exitWith {false};
+
+private _includedTypes = ["Compressed_Gauze", "fourByfour_Gauze"];
 
 {
-    _x params ["", "_amountOf", "_bleeding"];
-    if (_amountOf * _bleeding > 0) exitWith {
-        _canWrap = false;
-    };
-    
-} forEach ((GET_OPEN_WOUNDS(_patient)) getOrDefault [_bodyPart, []]);
-_canWrap
+    private _bandageType = _x param [4, ""];
+    if (_bandageType in _includedTypes) exitWith {true};
+} forEach _bandagedWoundsOnPart;
+
+false

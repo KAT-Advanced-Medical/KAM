@@ -18,4 +18,4 @@
 
 params ["", "_patient", "_bodyPart"];
 
-count ((GET_BANDAGED_WOUNDS(_patient) getOrDefault [_bodyPart, []]) * 4) min 16
+((count ((_patient getVariable ["ace_medical_bandagedWounds", []]) getOrDefault [_bodyPart, []])) * 4) min 16

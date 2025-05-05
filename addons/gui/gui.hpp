@@ -873,7 +873,7 @@ class ACE_Medical_Menu {
         };
         class SelectArmRight: SelectUpperArmRight {
             onButtonClick = QUOTE(ACEGVAR(medical_gui,selectedBodyPart) = 7);
-            tooltip = CSTRING(SelectRightUpperArm);
+            tooltip = CSTRING(SelectUpperRightArm);
             x = QUOTE(POS_X(17.8));
             y = QUOTE(POS_Y(5.1));
             w = QUOTE(POS_W(1.1));
@@ -889,7 +889,7 @@ class ACE_Medical_Menu {
         };
         class SelectLegLeft: SelectUpperLegLeft {
             onButtonClick = QUOTE(ACEGVAR(medical_gui,selectedBodyPart) = 9);
-            tooltip = CSTRING(SelectLeftUpperLeg);
+            tooltip = CSTRING(SelectUpperLeftLeg);
             x = QUOTE(POS_X(20.0));
             y = QUOTE(POS_Y(8.1));
             w = QUOTE(POS_W(1.1));
@@ -905,7 +905,7 @@ class ACE_Medical_Menu {
         };
         class SelectLegRight: SelectUpperLegRight {
             onButtonClick = QUOTE(ACEGVAR(medical_gui,selectedBodyPart) = 11);
-            tooltip = CSTRING(SelectRightUpperLeg);
+            tooltip = CSTRING(SelectUpperRightLeg);
             x = QUOTE(POS_X(18.9));
             y = QUOTE(POS_Y(8.1));
             w = QUOTE(POS_W(1.1));

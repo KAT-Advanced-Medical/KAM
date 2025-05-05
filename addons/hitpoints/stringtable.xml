@@ -249,5 +249,38 @@
         <Key ID="STR_KAT_Hitpoints_Burn_Dressing_Progress">
             <English>Applying Burn Dressing</English>
         </Key>
+        <Key ID="STR_KAT_Hitpoints_InternalBleedingLog">
+            <English>%1 found %2 internal bleeding on %3</English>
+        </Key>
+        <Key ID="STR_KAT_Hitpoints_InternalBleeding">
+            <English>You found %1 internal bleeding on %2</English>
+        </Key>
+        <Key ID="STR_KAT_Hitpoints_InternalBleeding_Minor">
+            <English>Light</English>
+        </Key>
+        <Key ID="STR_KAT_Hitpoints_InternalBleeding_Medium">
+            <English>Medium</English>
+        </Key>
+        <Key ID="STR_KAT_Hitpoints_InternalBleeding_Large">
+            <English>Heavy</English>
+        </Key>
+        <Key ID="STR_KAT_Hitpoints_InternalBleeding_None">
+            <English>No</English>
+        </Key>
+        <Key ID="STR_KAT_Hitpoints_Check_Limb">
+            <English>Check Internal Bleeds</English>
+        </Key>
+        <Key ID="STR_KAT_Hitpoints_Check_Limb_Progress">
+            <English>Checking Internal Bleeds</English>
+        </Key>
+        <Key ID="STR_KAT_Hitpoints_cba_name">
+            <English>KAT: Body</English>
+        </Key>
+        <Key ID="STR_KAT_Hitpoints_SETTING_checkLimbTime">
+            <English>Time to Check Internal Bleeds</English>
+        </Key>
+        <Key ID="STR_KAT_Hitpoints_SETTING_checkLimbTime_DESC">
+            <English>Time it takes to check a body part for internal bleeding</English>
+        </Key>
     </Package>
 </Project>

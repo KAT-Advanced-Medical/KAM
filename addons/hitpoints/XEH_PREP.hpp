@@ -3,6 +3,7 @@ PREP(addTreatmentActions);
 PREP(canSplint);
 PREP(canWrapSplint);
 PREP(canWrapWound);
+PREP(checkLimb);
 PREP(fullHealLocal);
 PREP(getWrapTime);
 PREP(handleDamage);

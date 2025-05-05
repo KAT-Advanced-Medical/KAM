@@ -14,18 +14,25 @@ class ACE_Medical_Treatment_Actions {
         displayName = CSTRING(4X4_Gauze);
         displayNameProgress = CSTRING(4X4_Gauze_Progress);
         icon = QPATHTOF(ui\4X4_Gauze.paa);
+        treatmentTime = QACEFUNC(medical_treatment,getBandageTime);
+        callbackSuccess = QACEFUNC(medical_treatment,bandage);
         items[] = {"kat_4X4_Gauze"};
     };
     class Compressed_Gauze: BasicBandage {
         displayName = CSTRING(Compressed_Gauze);
         displayNameProgress = CSTRING(Compressed_Gauze_Progress);
         icon = QPATHTOF(ui\Compressed_Gauze.paa);
+        allowedSelections[] = {"LeftArm", "RightArm", "LeftLeg", "RightLeg", "UpperLeftArm", "UpperRightArm", "UpperLeftLeg", "UpperRightLeg"};
+        treatmentTime = QACEFUNC(medical_treatment,getBandageTime);
+        callbackSuccess = QACEFUNC(medical_treatment,bandage);
         items[] = {"kat_Compressed_Gauze"};
     };
     class Hemostatic_Gauze: BasicBandage {
         displayName = CSTRING(Hemostatic_Gauze);
         displayNameProgress = CSTRING(Hemostatic_Gauze_Progress);
         icon = QPATHTOF(ui\Hemostatic_Gauze.paa);
+        treatmentTime = QACEFUNC(medical_treatment,getBandageTime);
+        callbackSuccess = QACEFUNC(medical_treatment,bandage);
         items[] = {"kat_Hemostatic_Gauze"};
     };
     class Adhesive_Bandage: BasicBandage {
@@ -33,11 +40,15 @@ class ACE_Medical_Treatment_Actions {
         displayNameProgress = CSTRING(Adhesive_Bandage_Progress);
         icon = QPATHTOF(ui\Adhesive_Bandage.paa);
         items[] = {"kat_Adhesive_Bandage"};
+        callbackSuccess = QACEFUNC(medical_treatment,bandage);
+        treatmentTime = 3;
     };
     class Burn_Dressing: BasicBandage {
         displayName = CSTRING(Burn_Dressing);
         displayNameProgress = CSTRING(Burn_Dressing_Progress);
         icon = QPATHTOF(ui\Burn_Dressing.paa);
+        treatmentTime = QACEFUNC(medical_treatment,getBandageTime);
+        callbackSuccess = QACEFUNC(medical_treatment,bandage);
         items[] = {"kat_Burn_Dressing"};
     };
     class Abdominal_Pad: BasicBandage {
@@ -46,11 +57,14 @@ class ACE_Medical_Treatment_Actions {
         icon = QPATHTOF(ui\Abdominal_Pad.paa);
         items[] = {"kat_Abdominal_Pad"};
         allowedSelections[] = {"Body"};
+        callbackSuccess = QACEFUNC(medical_treatment,bandage);
+        treatmentTime = 6;
     };
     class ETD: BasicBandage {
         displayName = CSTRING(ETD);
         displayNameProgress = CSTRING(ETD_Progress);
         icon = QPATHTOF(ui\ETD.paa);
+        callbackSuccess = QACEFUNC(medical_treatment,bandage);
         treatmentTime = 16;
         items[] = {"kat_ETD"};
     };
@@ -58,7 +72,7 @@ class ACE_Medical_Treatment_Actions {
         displayName = CSTRING(Elastic_Wrap);
         displayNameProgress = CSTRING(Elastic_Wrap_Progress);
         icon = QPATHTOF(ui\Elastic_Wrap.paa);
-        condition = QFUNC(canWrapWound);
+        condition = "true";
         treatmentTime = QFUNC(getWrapTime);
         callbackProgress = QFUNC(wrapWoundProgress);
         items[] = {"kat_Elastic_Wrap"};
@@ -76,7 +90,7 @@ class ACE_Medical_Treatment_Actions {
         displayName = CSTRING(Roller_Gauze);
         displayNameProgress = CSTRING(Roller_Gauze_Progress);
         icon = QPATHTOF(ui\Roller_Gauze.paa);
-        condition = QFUNC(canWrapWound);
+        condition = "true";
         treatmentTime = QFUNC(getWrapTime);
         callbackProgress = QFUNC(wrapWoundProgress);
         items[] = {"kat_Compressed_Gauze"};
@@ -97,20 +111,15 @@ class ACE_Medical_Treatment_Actions {
     class Diagnose: BasicBandage {
         allowedSelections[] = {"Head", "Chest"};
     };
-    class CheckLimbs: CheckPulse {
-        displayName = CSTRING(Check_Limbs);
-        displayNameProgress = CSTRING(Check_Limbs_Progress);
+    class CheckLimb: CheckPulse {
+        displayName = CSTRING(Check_Limb);
+        displayNameProgress = CSTRING(Check_Limb_Progress);
         category = "examine";
+        condition = "true";
         allowedSelections[] = {"All"};
         allowSelfTreatment = 1;
         medicRequired = 0;
-        treatmentTime = 8;
-        callbackSuccess = QFUNC(checkLimbs);
-        animationPatient = "";
-        animationPatientUnconscious = "AinjPpneMstpSnonWrflDnon_rolltoback";
-        animationPatientUnconsciousExcludeOn[] = {"ainjppnemstpsnonwrfldnon", "kat_recoveryposition"};
-        animationMedic = "";
-        animationMedicProne = "";
-        sounds[] = {};
-    };   
+        treatmentTime = 2;
+        callbackSuccess = QFUNC(checkLimb);
+    };
 };

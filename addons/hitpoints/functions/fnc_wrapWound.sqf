@@ -16,31 +16,47 @@
  * Public: No
  */
 
-params ["_patient", "_bodyPart", ["_treatedWound", []]];
+params ["_patient", "_bodyPart"];
 
-private _bandagedWounds = GET_BANDAGED_WOUNDS(_patient);
+private _bandagedWounds = _patient getVariable [VAR_BANDAGED_WOUNDS, []];
+if (isNil "_bandagedWounds") exitWith {false};
+
 private _bandagedWoundsOnPart = _bandagedWounds getOrDefault [_bodyPart, []];
+if (_bandagedWoundsOnPart isEqualTo []) exitWith {false};
+TRACE_1("WrapWound1",_bandagedWoundsOnPart);
 
-private _bandagedIndex = (count _bandagedWoundsOnPart) - 1;
-if (_treatedWound isEqualTo []) then {
-    _treatedWound = _bandagedWoundsOnPart param [_bandagedIndex, _treatedWound];
-} else {
-    _bandagedIndex = _bandagedWoundsOnPart find _treatedWound;
-};
+private _includedTypes = ["Compressed_Gauze", "fourByfour_Gauze"];
+
+private _bandagedIndex = -1;
+{
+    private _bandageType = _x param [4, ""];
+    if (_bandageType in _includedTypes) exitWith { _bandagedIndex = _forEachIndex };
+} forEach _bandagedWoundsOnPart;
 
 if (_bandagedIndex == -1) exitWith {false};
+TRACE_1("WrapWound2",_bandagedIndex);
 
-private _rawBandageType = (_bandagedWoundsOnPart select _bandagedIndex) select 2;
-
-private _excludedTypes = ["FieldDressing", "PackingBandage", "ElasticBandage", "QuikClot", "ETD", "Hemostat", "Abdominal_Pad", "Adhesive_Bandage"];
-if (_rawBandageType in _excludedTypes) exitWith {false};
-
-private _bandageType = _rawBandageType + "_wrapped";
-
-_bandagedWoundsOnPart deleteAt _bandagedIndex;
-
+private _entry = _bandagedWoundsOnPart select _bandagedIndex;
+private _originalBandage = _entry param [4, ""];
+TRACE_1("WrapWound3",_originalBandage);
+private _newEntry = [
+    _entry select 0,
+    _entry select 1,
+    _entry select 2,
+    _entry select 3,
+    _originalBandage + "_wrapped"
+];
+TRACE_1("WrapWound4",_newEntry);
+_bandagedWoundsOnPart set [_bandagedIndex, _newEntry];
+_bandagedWounds set [_bodyPart, _bandagedWoundsOnPart];
+TRACE_1("WrapWound5",_bandagedWounds);
 _patient setVariable [VAR_BANDAGED_WOUNDS, _bandagedWounds, true];
 
-[_patient, _bodyPart, _bandageType] call EFUNC(misc,bandageLocal);
+private _impact = 1;
+private _woundIndex = _bandagedIndex;
+private _wound = _newEntry;
+private _bandage =_originalBandage + "_wrapped";
 
-true // return
+[_patient, _impact, _bodyPart, _woundIndex, _wound, _bandage] call ACEFUNC(medical_treatment,handleBandageOpening);
+
+true
