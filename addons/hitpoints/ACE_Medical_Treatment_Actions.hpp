@@ -34,6 +34,12 @@ class ACE_Medical_Treatment_Actions {
         icon = QPATHTOF(ui\Adhesive_Bandage.paa);
         items[] = {"kat_Adhesive_Bandage"};
     };
+    class Burn_Dressing: BasicBandage {
+        displayName = CSTRING(Burn_Dressing);
+        displayNameProgress = CSTRING(Burn_Dressing_Progress);
+        icon = QPATHTOF(ui\Burn_Dressing.paa);
+        items[] = {"kat_Burn_Dressing"};
+    };
     class Abdominal_Pad: BasicBandage {
         displayName = CSTRING(Abdominal_Pad);
         displayNameProgress = CSTRING(Abdominal_Pad_Progress);
@@ -90,5 +96,21 @@ class ACE_Medical_Treatment_Actions {
     // - Diagnose -------------------------------------------------------------
     class Diagnose: BasicBandage {
         allowedSelections[] = {"Head", "Chest"};
-    };    
+    };
+    class CheckLimbs: CheckPulse {
+        displayName = CSTRING(Check_Limbs);
+        displayNameProgress = CSTRING(Check_Limbs_Progress);
+        category = "examine";
+        allowedSelections[] = {"All"};
+        allowSelfTreatment = 1;
+        medicRequired = 0;
+        treatmentTime = 8;
+        callbackSuccess = QFUNC(checkLimbs);
+        animationPatient = "";
+        animationPatientUnconscious = "AinjPpneMstpSnonWrflDnon_rolltoback";
+        animationPatientUnconsciousExcludeOn[] = {"ainjppnemstpsnonwrfldnon", "kat_recoveryposition"};
+        animationMedic = "";
+        animationMedicProne = "";
+        sounds[] = {};
+    };   
 };

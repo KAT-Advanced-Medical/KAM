@@ -115,6 +115,19 @@ class CfgWeapons {
         descriptionUse = CSTRING(Adhesive_Bandage_Desc_Use);
         ACE_isMedicalItem = 1;
         class ItemInfo: CBA_MiscItem_ItemInfo {
+            mass = 0.01;
+        };
+    };
+    class kat_Burn_Dressing: ACE_ItemCore {
+        scope = 2;
+        author = "Cplhardcore";
+        displayName = CSTRING(Burn_Dressing_Display);
+        picture = QPATHTOF(ui\Burn_Dressing.paa);
+        model = "\A3\Structures_F_EPA\Items\Medical\Bandage_F.p3d";
+        descriptionShort = CSTRING(Burn_Dressing_Desc_Short);
+        descriptionUse = CSTRING(Burn_Dressing_Desc_Use);
+        ACE_isMedicalItem = 1;
+        class ItemInfo: CBA_MiscItem_ItemInfo {
             mass = 0.3;
         };
     };

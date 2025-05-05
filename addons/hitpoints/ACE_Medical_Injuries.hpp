@@ -57,6 +57,13 @@ class ACE_Medical_Injuries {
             pain = 0.7;
             minDamage = 0;
         };
+        // wound that is caused by Non-Penetrative Blasts, cannot be bandaged externally.
+        class InternalBleeding {
+            bleeding = 0.075;
+            pain = 0.8;
+            causeLimping = 1;
+            causeFracture = 1;
+        };
     };
 
     class damageTypes {
@@ -147,6 +154,11 @@ class ACE_Medical_Injuries {
                 sizeMultiplier = 2;
                 painMultiplier = 0.9;
             };
+            class InternalBleeding {
+                weighting[] = {{0.5, 0}, {0.35, 1}};
+                sizeMultiplier = 2;
+                painMultiplier = 0.9;
+            };
         };
         class shell {
             // shells tend to involve big pieces of shrapnel, so create fewer and larger wounds
@@ -165,6 +177,11 @@ class ACE_Medical_Injuries {
                 weighting[] = {{0.7, 0}, {0.35, 1}, {0.35, 0}};
             };
             class Contusion {
+                weighting[] = {{0.5, 0}, {0.35, 1}};
+                sizeMultiplier = 2;
+                painMultiplier = 0.9;
+            };
+            class InternalBleeding {
                 weighting[] = {{0.5, 0}, {0.35, 1}};
                 sizeMultiplier = 2;
                 painMultiplier = 0.9;
@@ -199,7 +216,10 @@ class ACE_Medical_Injuries {
                 weighting[] = {{0.1, 1}, {0.1, 0}};
             };
             class Laceration {
-
+                weighting[] = {{0.1, 1}, {0.1, 0}};
+            };
+            class InternalBleeding {
+                weighting[] = {{0.4, 0}, {0.2, 1}};
             };
         };
         class collision {
@@ -220,7 +240,11 @@ class ACE_Medical_Injuries {
             class Cut {
                 weighting[] = {{0.1, 1}, {0.1, 0}};
             };
+            class InternalBleeding {
+                weighting[] = {{0.4, 0}, {0.2, 1}};
+            };
             class Laceration {
+                weighting[] = {{0.1, 1}, {0.1, 0}};
             };
         };
         class falling {
@@ -250,6 +274,11 @@ class ACE_Medical_Injuries {
             };
             class Cut {
                 weighting[] = {{0.1, 1}, {0.1, 0}};
+            };
+            class InternalBleeding {
+                weighting[] = {{0.1, 1}, {0.1, 0}};
+                sizeMultiplier = 2;
+                painMultiplier = 0.9;
             };
         };
         class stab {

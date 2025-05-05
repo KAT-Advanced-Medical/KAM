@@ -1117,5 +1117,287 @@ class ADDON {
                 effectiveness = 0;
             };
         };
+        class Burn_Dressing {
+            effectiveness = 1;
+            reopeningChance = 0.2;
+            reopeningMinDelay = 600;
+            reopeningMaxDelay = 1200;
+
+            class Abrasion {
+                effectiveness = 0;
+                reopeningChance = 0.2;
+                reopeningMinDelay = 600;
+                reopeningMaxDelay = 1200;
+            };
+            class AbrasionMinor: Abrasion {
+                effectiveness = 0;
+            };
+            class AbrasionMedium: Abrasion {
+                effectiveness = 0;
+            };
+            class AbrasionLarge: Abrasion {
+                effectiveness = 0;
+            };
+
+            class Avulsion: Abrasion {
+                effectiveness = 0;
+                reopeningChance = 0.2;
+                reopeningMinDelay = 600;
+                reopeningMaxDelay = 1200;
+            };
+            class AvulsionMinor: Avulsion {
+                effectiveness = 0;
+            };
+            class AvulsionMedium: Avulsion {
+                effectiveness = 0;
+            };
+            class AvulsionLarge: Avulsion {
+                effectiveness = 0;
+            };
+
+            class Contusion: Abrasion {
+                effectiveness = 0;
+            };
+            class ContusionMinor: Contusion {
+            };
+            class ContusionMedium: Contusion {
+            };
+            class ContusionLarge: Contusion {
+            };
+
+            class Crush: Abrasion {
+                effectiveness = 0;
+                reopeningChance = 0.2;
+                reopeningMinDelay = 600;
+                reopeningMaxDelay = 1200;
+            };
+            class CrushMinor: Crush {
+                effectiveness = 0;
+            };
+            class CrushMedium: Crush {
+                effectiveness = 0;
+            };
+            class CrushLarge: Crush {
+                effectiveness = 0;
+            };
+
+            class Cut: Abrasion {
+                effectiveness = 0;
+                reopeningChance = 0.2;
+                reopeningMinDelay = 600;
+                reopeningMaxDelay = 1200;
+            };
+            class CutMinor: Cut {
+                effectiveness = 0;
+            };
+            class CutMedium: Cut {
+                effectiveness = 0;
+            };
+            class CutLarge: Cut {
+                effectiveness = 0;
+            };
+
+            class Laceration: Abrasion {
+                effectiveness = 0;
+            };
+            class LacerationMinor: Laceration {
+                effectiveness = 0;
+            };
+            class LacerationMedium: Laceration {
+                effectiveness = 0;
+            };
+            class LacerationLarge: Laceration {
+                effectiveness = 0;
+            };
+
+            class VelocityWound: Abrasion {
+                effectiveness = 0;
+                reopeningChance = 0.5;
+                reopeningMinDelay = 60;
+                reopeningMaxDelay = 120;
+            };
+            class VelocityWoundMinor: VelocityWound {
+                effectiveness = 0;
+            };
+            class VelocityWoundMedium: VelocityWound {
+                effectiveness = 0;
+            };
+            class VelocityWoundLarge: VelocityWound {
+                effectiveness = 0;
+            };
+
+            class PunctureWound: Abrasion {
+                effectiveness = 0;
+                reopeningChance = 0.5;
+                reopeningMinDelay = 60;
+                reopeningMaxDelay = 120;
+            };
+            class PunctureWoundMinor: PunctureWound {
+                effectiveness = 0;
+            };
+            class PunctureWoundMedium: PunctureWound {
+                effectiveness = 0;
+            };
+            class PunctureWoundLarge: PunctureWound {
+                effectiveness = 0;
+            };
+
+            class ThermalBurn: Abrasion {
+                effectiveness = 1;
+                reopeningChance = 0.4;
+                reopeningMinDelay = 120;
+                reopeningMaxDelay = 240;
+            };
+            class ThermalBurnMinor: PunctureWound {
+                effectiveness = 1;
+            };
+            class ThermalBurnMedium: PunctureWound {
+                effectiveness = 1;
+            };
+            class ThermalBurnLarge: PunctureWound {
+                effectiveness = 0.5;
+            };
+        };
+        class Burn_Dressing_wrapped {
+            effectiveness = 1;
+            reopeningChance = 0.2;
+            reopeningMinDelay = 600;
+            reopeningMaxDelay = 1200;
+
+            class Abrasion {
+                effectiveness = 0;
+                reopeningChance = 0.2;
+                reopeningMinDelay = 600;
+                reopeningMaxDelay = 1200;
+            };
+            class AbrasionMinor: Abrasion {
+                effectiveness = 0;
+            };
+            class AbrasionMedium: Abrasion {
+                effectiveness = 0;
+            };
+            class AbrasionLarge: Abrasion {
+                effectiveness = 0;
+            };
+
+            class Avulsion: Abrasion {
+                effectiveness = 0;
+                reopeningChance = 0.2;
+                reopeningMinDelay = 600;
+                reopeningMaxDelay = 1200;
+            };
+            class AvulsionMinor: Avulsion {
+                effectiveness = 0;
+            };
+            class AvulsionMedium: Avulsion {
+                effectiveness = 0;
+            };
+            class AvulsionLarge: Avulsion {
+                effectiveness = 0;
+            };
+
+            class Contusion: Abrasion {
+                effectiveness = 0;
+            };
+            class ContusionMinor: Contusion {
+            };
+            class ContusionMedium: Contusion {
+            };
+            class ContusionLarge: Contusion {
+            };
+
+            class Crush: Abrasion {
+                effectiveness = 0;
+                reopeningChance = 0.2;
+                reopeningMinDelay = 600;
+                reopeningMaxDelay = 1200;
+            };
+            class CrushMinor: Crush {
+                effectiveness = 0;
+            };
+            class CrushMedium: Crush {
+                effectiveness = 0;
+            };
+            class CrushLarge: Crush {
+                effectiveness = 0;
+            };
+
+            class Cut: Abrasion {
+                effectiveness = 0;
+                reopeningChance = 0.2;
+                reopeningMinDelay = 600;
+                reopeningMaxDelay = 1200;
+            };
+            class CutMinor: Cut {
+                effectiveness = 0;
+            };
+            class CutMedium: Cut {
+                effectiveness = 0;
+            };
+            class CutLarge: Cut {
+                effectiveness = 0;
+            };
+
+            class Laceration: Abrasion {
+                effectiveness = 0;
+            };
+            class LacerationMinor: Laceration {
+                effectiveness = 0;
+            };
+            class LacerationMedium: Laceration {
+                effectiveness = 0;
+            };
+            class LacerationLarge: Laceration {
+                effectiveness = 0;
+            };
+
+            class VelocityWound: Abrasion {
+                effectiveness = 0;
+                reopeningChance = 0.5;
+                reopeningMinDelay = 60;
+                reopeningMaxDelay = 120;
+            };
+            class VelocityWoundMinor: VelocityWound {
+                effectiveness = 0;
+            };
+            class VelocityWoundMedium: VelocityWound {
+                effectiveness = 0;
+            };
+            class VelocityWoundLarge: VelocityWound {
+                effectiveness = 0;
+            };
+
+            class PunctureWound: Abrasion {
+                effectiveness = 0;
+                reopeningChance = 0.5;
+                reopeningMinDelay = 60;
+                reopeningMaxDelay = 120;
+            };
+            class PunctureWoundMinor: PunctureWound {
+                effectiveness = 0;
+            };
+            class PunctureWoundMedium: PunctureWound {
+                effectiveness = 0;
+            };
+            class PunctureWoundLarge: PunctureWound {
+                effectiveness = 0;
+            };
+
+            class ThermalBurn: Abrasion {
+                effectiveness = 1;
+                reopeningChance = 0.1;
+                reopeningMinDelay = 600;
+                reopeningMaxDelay = 1800;
+            };
+            class ThermalBurnMinor: PunctureWound {
+                effectiveness = 1;
+            };
+            class ThermalBurnMedium: PunctureWound {
+                effectiveness = 1;
+            };
+            class ThermalBurnLarge: PunctureWound {
+                effectiveness = 0.5;
+            };
+        };
     };
 };

@@ -225,7 +225,7 @@
         <Key ID="STR_KAT_Hitpoints_Adhesive_Bandage_Desc_Use">
             <English>Adhesive Bandage for Cuts and Scrapes</English>
         </Key>
-        <Key ID="STR_KAT_HitpointsAdhesive_Bandage_Display">
+        <Key ID="STR_KAT_Hitpoints_Adhesive_Bandage_Display">
             <English>Adhesive Bandage</English>
         </Key>
         <Key ID="STR_KAT_Hitpoints_Adhesive_Bandage">
@@ -233,6 +233,21 @@
         </Key>
         <Key ID="STR_KAT_Hitpoints_Adhesive_Bandage_Progress">
             <English>Applying Adhesive Bandage</English>
+        </Key>
+        <Key ID="STR_KAT_Hitpoints_Burn_Dressing_Desc_Short">
+            <English>Burn Dressing for Burns</English>
+        </Key>
+        <Key ID="STR_KAT_Hitpoints_Burn_Dressing_Desc_Use">
+            <English>Burn Dressing for Burns</English>
+        </Key>
+        <Key ID="STR_KAT_Hitpoints_Burn_Dressing_Display">
+            <English>Burn Dressing</English>
+        </Key>
+        <Key ID="STR_KAT_Hitpoints_Burn_Dressing">
+            <English>Apply Burn Dressing</English>
+        </Key>
+        <Key ID="STR_KAT_Hitpoints_Burn_Dressing_Progress">
+            <English>Applying Burn Dressing</English>
         </Key>
     </Package>
 </Project>
