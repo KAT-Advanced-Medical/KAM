@@ -73,7 +73,7 @@ class ACE_Medical_Injuries {
         // each entry should be a SQF expression that returns a function
         // this can also be overridden for each damage type
         class woundHandlers {
-            GVAR(woundsHandlerBase) = QFUNC(woundsHandlerBase);
+            ACEGVAR(medical_damage,woundsHandlerBase) = QFUNC(woundsHandlerBase);
         };
 
         class bullet {
@@ -134,7 +134,7 @@ class ACE_Medical_Injuries {
             thresholds[] = {{20, 15}, {8, 7}, {2, 3}, {1.2, 2}, {0.4, 1}, {0,0}};
             selectionSpecific = 0;
             class woundHandlers: woundHandlers {
-                GVAR(woundsHandlerExplosion) = QFUNC(woundsHandlerExplosion);
+                ACEGVAR(medical_damage,woundsHandlerExplosion) = QFUNC(woundsHandlerExplosion);
             };
             class Avulsion {
                 weighting[] = {{1, 1}, {0.8, 0}};
@@ -174,14 +174,14 @@ class ACE_Medical_Injuries {
             // vehicle explosions are usually caused by explosive damage and should behave similarly
             thresholds[] = {{6, 3}, {4.5, 2}, {2, 2}, {0.8, 1}, {0.2, 1}, {0, 0}};
             class woundHandlers: woundHandlers {
-                GVAR(woundsHandlerVehiclehit) = QFUNC(woundsHandlerVehiclehit);
+                ACEGVAR(medical_damage,woundsHandlerVehiclehit) = QFUNC(woundsHandlerVehiclehit);
             };
         };
         class vehiclecrash {
             thresholds[] = {{1.5, 3}, {1.5, 2}, {1, 2}, {1, 1}, {0.05, 1}}; // prevent subdividing wounds past FRACTURE_DAMAGE_THRESHOLD to ensure limp/fractue is triggered
             selectionSpecific = 0;
             class woundHandlers: woundHandlers {
-                GVAR(woundsHandlerVehiclecrash) = QFUNC(woundsHandlerVehiclecrash);
+                ACEGVAR(medical_damage,woundsHandlerVehiclecrash) = QACEFUNC(medical_damage,woundsHandlerVehiclecrash);
             };
             class Abrasion {
                 weighting[] = {{0.30, 0}, {0.30, 1}};
@@ -294,7 +294,7 @@ class ACE_Medical_Injuries {
             // custom handling for environmental fire sources
             // passes damage to "burn" so doesn't need its own wound stats
             class woundHandlers {
-                GVAR(woundsHandlerBurning) = QFUNC(woundsHandlerBurning);
+                ACEGVAR(medical_damage,woundsHandlerBurning) = QACEFUNC(medical_damage,woundsHandlerBurning);
             };
         };
         class burn {
