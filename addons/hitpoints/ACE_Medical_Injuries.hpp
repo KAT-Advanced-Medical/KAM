@@ -73,7 +73,7 @@ class ACE_Medical_Injuries {
         // each entry should be a SQF expression that returns a function
         // this can also be overridden for each damage type
         class woundHandlers {
-            ACEGVAR(medical_damage,woundsHandlerBase) = QFUNC(woundsHandlerBase);
+            ACEGVAR(medical_damage,woundsHandlerBase) = QACEFUNC(medical_damage,woundsHandlerBase);
         };
 
         class bullet {
@@ -134,7 +134,7 @@ class ACE_Medical_Injuries {
             thresholds[] = {{20, 15}, {8, 7}, {2, 3}, {1.2, 2}, {0.4, 1}, {0,0}};
             selectionSpecific = 0;
             class woundHandlers: woundHandlers {
-                ACEGVAR(medical_damage,woundsHandlerExplosion) = QFUNC(woundsHandlerExplosion);
+                ACEGVAR(medical_damage,woundsHandlerExplosion) = QACEFUNC(medical_damage,woundsHandlerExplosion);
             };
             class Avulsion {
                 weighting[] = {{1, 1}, {0.8, 0}};
@@ -174,7 +174,7 @@ class ACE_Medical_Injuries {
             // vehicle explosions are usually caused by explosive damage and should behave similarly
             thresholds[] = {{6, 3}, {4.5, 2}, {2, 2}, {0.8, 1}, {0.2, 1}, {0, 0}};
             class woundHandlers: woundHandlers {
-                ACEGVAR(medical_damage,woundsHandlerVehiclehit) = QFUNC(woundsHandlerVehiclehit);
+                ACEGVAR(medical_damage,woundsHandlerVehiclehit) = QACEFUNC(medical_damage,woundsHandlerVehiclehit);
             };
         };
         class vehiclecrash {
