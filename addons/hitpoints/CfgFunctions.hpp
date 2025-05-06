@@ -14,6 +14,9 @@ class CfgFunctions {
             class woundsHandlerVehiclehit {
                 file = QPATHTOF(functions\fnc_woundsHandlerVehiclehit.sqf);
             };
+            class woundsHandlerBurning {
+                file = QPATHTOF(functions\fnc_woundsHandlerBurning.sqf);
+            };
         };
     };
     class overwrite_ace_medical_engine {
