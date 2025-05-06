@@ -21,17 +21,16 @@
 params ["_medic", "_patient", "_bodyPart"];
 _bodyPart = toLowerANSI _bodyPart;
 
-private _bandagedWounds = _patient getVariable [VAR_BANDAGED_WOUNDS, []];
-if (isNil "_bandagedWounds") exitWith {false};
+private _bandagedWounds = GET_BANDAGED_WOUNDS(_patient);
+TRACE_1("WrappableWounds1",_bandagedWounds);
+private _bandagedWoundsOnPart = _bandagedWounds get _bodyPart;
+TRACE_1("WrappableWounds2",_bandagedWoundsOnPart);
+if (isNil "_bandagedWoundsOnPart" || {_bandagedWoundsOnPart isEqualTo []}) exitWith {
+    TRACE_1("No WrappableWounds",_bandagedWoundsOnPart);
+    false};
 
-private _bandagedWoundsOnPart = _bandagedWounds getOrDefault [_bodyPart, []];
-if (_bandagedWoundsOnPart isEqualTo []) exitWith {false};
+private _includedTypes = ["Compressed_Gauze", "fourByfour_Gauze", "Burn_Dressing", "Hemostatic_Gauze"];
 
-private _includedTypes = ["Compressed_Gauze", "fourByfour_Gauze"];
-
-{
-    private _bandageType = _x param [4, ""];
-    if (_bandageType in _includedTypes) exitWith {true};
-} forEach _bandagedWoundsOnPart;
-
-false
+(_bandagedWoundsOnPart findIf {
+    (_x param [4, ""]) in _includedTypes
+}) != -1

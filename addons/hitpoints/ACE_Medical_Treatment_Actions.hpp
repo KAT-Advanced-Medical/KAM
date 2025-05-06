@@ -72,9 +72,9 @@ class ACE_Medical_Treatment_Actions {
         displayName = CSTRING(Elastic_Wrap);
         displayNameProgress = CSTRING(Elastic_Wrap_Progress);
         icon = QPATHTOF(ui\Elastic_Wrap.paa);
-        condition = "true";
+        condition = QFUNC(canWrapWound);
         treatmentTime = QFUNC(getWrapTime);
-        callbackProgress = QFUNC(wrapWoundProgress);
+        callbackSuccess = QFUNC(wrapWound);
         items[] = {"kat_Elastic_Wrap"};
     };
     class Elastic_Wrap_Splint: BasicBandage {
@@ -90,9 +90,9 @@ class ACE_Medical_Treatment_Actions {
         displayName = CSTRING(Roller_Gauze);
         displayNameProgress = CSTRING(Roller_Gauze_Progress);
         icon = QPATHTOF(ui\Roller_Gauze.paa);
-        condition = "true";
+        condition = QFUNC(canWrapWound);
         treatmentTime = QFUNC(getWrapTime);
-        callbackProgress = QFUNC(wrapWoundProgress);
+        callbackSuccess = QFUNC(wrapWound);
         items[] = {"kat_Compressed_Gauze"};
     };
     class ApplyTourniquet: BasicBandage {

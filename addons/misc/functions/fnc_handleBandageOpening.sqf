@@ -104,10 +104,11 @@ if (random 1 <= _reopeningChance * ACEGVAR(medical_treatment,woundReopenChance))
                     _exist = true;
                 };
             } forEach (_bandagedWounds getOrDefault [_part, []]);
-
+            TRACE_2("Before openWound update",_openWounds,_bandagedWounds);
             if (_exist) then {
                 TRACE_2("Reopening Wound",_bandagedWounds,_openWounds);
                 _selectedInjury set [1, _selAmount + _impact];
+                TRACE_3("Reopening Wound2",_selectedInjury,_impact,_selAmount);
                 _target setVariable [VAR_BANDAGED_WOUNDS, _bandagedWounds, true];
                 _target setVariable [VAR_OPEN_WOUNDS, _openWounds, true];
 
@@ -125,6 +126,7 @@ if (random 1 <= _reopeningChance * ACEGVAR(medical_treatment,woundReopenChance))
                     [_target] call EFUNC(medical_engine,updateDamageEffects);
                 };
             };
+            TRACE_2("After openWound update", _openWounds,_bandagedWounds);
         } else {
             TRACE_3("no match",_selectedInjury,_classID,_part);
         };

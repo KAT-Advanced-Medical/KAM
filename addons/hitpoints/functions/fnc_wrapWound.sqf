@@ -1,17 +1,17 @@
 #include "..\script_component.hpp"
 /*
- * Author: Cplhardcore
- * Callback to wrap wounds on a bodypart
+ * Author: Cplhardcore, 
+ * Function to wrap all wrappable wounds on a specified body part
  *
  * Arguments:
  * 0: The Unit <OBJECT>
  * 1: Body part ("Head", "Body", "LeftArm", "RightArm", "LeftLeg", "RightLeg") <STRING>
  *
  * Return Value:
- * None
+ * True if at least one wound was wrapped, otherwise false <BOOL>
  *
  * Example:
- * [player, "rightleg"] call kat_hitpoints_fnc_wrapWound
+ * [player, "RightLeg"] call kat_hitpoints_fnc_wrapWound
  *
  * Public: No
  */
@@ -23,41 +23,47 @@ if (isNil "_bandagedWounds") exitWith {false};
 
 private _bandagedWoundsOnPart = _bandagedWounds getOrDefault [_bodyPart, []];
 if (_bandagedWoundsOnPart isEqualTo []) exitWith {false};
-TRACE_1("WrapWound1",_bandagedWoundsOnPart);
+TRACE_1("WrapAllWounds1",_bandagedWoundsOnPart);
 
-private _includedTypes = ["Compressed_Gauze", "fourByfour_Gauze"];
+private _includedTypes = ["Compressed_Gauze", "fourByfour_Gauze", "Burn_Dressing", "Hemostatic_Gauze"];
 
-private _bandagedIndex = -1;
+private _wrappedAny = false;
+
 {
     private _bandageType = _x param [4, ""];
-    if (_bandageType in _includedTypes) exitWith { _bandagedIndex = _forEachIndex };
+    if (_bandageType in _includedTypes) then {
+        private _classID = (_x select 0) + 0.1;
+        private _amount = _x select 1;
+        private _bleeding = _x select 2;
+        private _damage = _x select 3;
+        private _oldBandage = _bandageType;
+
+        private _newClassID = _classID + 0.01;
+        private _newEntry = [
+            _newClassID,
+            _amount,
+            _bleeding,
+            _damage,
+            _oldBandage + "_wrapped"
+        ];
+
+        TRACE_2("Wound Before/After Wrap", _x, _newEntry);
+
+        _bandagedWoundsOnPart set [_forEachIndex, _newEntry];
+        _bandagedWounds set [_bodyPart, _bandagedWoundsOnPart];
+
+        private _impact = 1;
+        private _woundIndex = _forEachIndex;
+        private _wound = _newEntry;
+        private _bandage = _oldBandage + "_wrapped";
+
+        TRACE_6("WrapWound",_patient,_impact,_bodyPart,_woundIndex,_wound,_bandage);
+        [_patient, _impact, _bodyPart, _woundIndex, _wound, _bandage, false] call ACEFUNC(medical_treatment,handleBandageOpening);
+
+        _wrappedAny = true;
+    };
 } forEach _bandagedWoundsOnPart;
 
-if (_bandagedIndex == -1) exitWith {false};
-TRACE_1("WrapWound2",_bandagedIndex);
-
-private _entry = _bandagedWoundsOnPart select _bandagedIndex;
-_entry params ["_classID", "_amount", "_bleeding", "_damage", "_oldBandage"];
-TRACE_1("WrapWound3",_oldBandage);
-private _newEntry = [
-    _classID,
-    _amount,
-    _bleeding,
-    _damage,
-    _oldBandage + "_wrapped"
-];
-TRACE_2("Wound Before/After Wrap", _entry, _newEntry);
-TRACE_1("WrapWound4",_newEntry);
-_bandagedWoundsOnPart set [_bandagedIndex, _newEntry];
-_bandagedWounds set [_bodyPart, _bandagedWoundsOnPart];
-TRACE_1("WrapWound5",_bandagedWounds);
 _patient setVariable [VAR_BANDAGED_WOUNDS, _bandagedWounds, true];
 
-private _impact = 1;
-private _woundIndex = _bandagedIndex;
-private _wound = _newEntry;
-private _bandage =_oldBandage + "_wrapped";
-
-[_patient, _impact, _bodyPart, _woundIndex, _wound, _bandage, false] call ACEFUNC(medical_treatment,handleBandageOpening);
-
-true
+_wrappedAny

@@ -17,6 +17,11 @@
  */
 
 params ["", "_patient", "_bodyPart"];
-_number = count ((_patient getVariable ["ace_medical_bandagedWounds", []]) getOrDefault [_bodyPart, []]);
-_time = (_number * 4) min 16;
+private _allowedBandages = ["Compressed_Gauze", "fourByfour_Gauze", "Burn_Dressing", "Hemostatic_Gauze"];
+private _wounds = (_patient getVariable ["ace_medical_bandagedWounds", []]) getOrDefault [_bodyPart, []];
+private _filtered = _wounds select {
+    _x isEqualType [] && {(_x select 4) in _allowedBandages}
+};
+private _number = count _filtered;
+private _time = _number * QGVAR(woundWrapTime);
 _time

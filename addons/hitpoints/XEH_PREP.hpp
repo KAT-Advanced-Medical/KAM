@@ -1,5 +1,6 @@
 PREP(addDamageToUnit);
 PREP(addTreatmentActions);
+PREP(canBandage);
 PREP(canSplint);
 PREP(canWrapSplint);
 PREP(canWrapWound);
@@ -20,4 +21,3 @@ PREP(woundsHandlerExplosion);
 PREP(woundsHandlerVehiclehit);
 PREP(wrapSplint);
 PREP(wrapWound);
-PREP(wrapWoundProgress);
