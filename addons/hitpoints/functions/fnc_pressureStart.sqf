@@ -41,9 +41,14 @@ private _notInVehicle = isNull objectParent _medic;
 loopPressure = false;
 
 if (_notInVehicle) then {
-    [_medic, "AinvPknlMstpSnonWnonDnon_AinvPknlMstpSnonWnonDnon_medic", 1] call ACEFUNC(common,doAnimation);
+    [_medic, "Acts_TreatingWounded_in", 1] call ACEFUNC(common,doAnimation);
     loopPressure = true;
 };
+
+[{if (_notInVehicle) then {
+    [_medic, "Acts_TreatingWounded_loop", 1] call ACEFUNC(common,doAnimation);
+    loopPressure = true;
+};}, [_medic, _notInVehicle], 3] call CBA_fnc_waitAndExecute;
 
 [{
     params ["_medic", "_patient", "_bodypart", "_notInVehicle"];
@@ -75,7 +80,7 @@ if (_notInVehicle) then {
             [GVAR(PressureCancel_MouseID), "keydown"] call CBA_fnc_removeKeyHandler;
 
             if (_notInVehicle) then {
-                [_medic, "AinvPknlMstpSnonWnonDnon_medicEnd", 2] call ACEFUNC(common,doAnimation);
+                [_medic, "Acts_TreatingWounded_Out", 2] call ACEFUNC(common,doAnimation);
             };
 
             closeDialog 0;
