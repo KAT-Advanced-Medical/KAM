@@ -292,6 +292,7 @@
             <English>Hypothermia Settings</English>
             <French>Paramètres de l'hypothermie</French>
             <Japanese>低体温症設定</Japanese>
+            <German>Hypothermieeinstellungen</German>
         </Key>
         <Key ID="STR_KAT_Hypothermia_Use_Handwarmer">
             <English>Use Hand Warmer</English>
@@ -326,6 +327,8 @@
         <Key ID="STR_KAT_Hypothermia_cba_name">
             <English>KAT - ADV Medical: Hypothermia</English>
             <Japanese>KAM - 低体温症 (Hypothermia)</Japanese>
+            <French>KAT - ADV Medical : Hypothermie</French>
+            <German>KAT - ADV Medical: Hypothermie</German>
         </Key>
         <Key ID="STR_KAT_Hypothermia_perform">
             <English>Performing</English>
@@ -381,6 +384,7 @@
             <French>Le patient est fiévreux.</French>
             <Japanese>患者は熱を帯びている</Japanese>
             <Chinese>患者覺得熱</Chinese>
+            <German>Der Patient fühlt sich heiß an</German>
         </Key>
         <Key ID="STR_KAT_Hypothermia_temperature_mild">
             <English>Patient feels mildly cool</English>

@@ -1159,6 +1159,7 @@
             <French>Brassard pour vérifier la tension artérielle.</French>
             <Japanese>血圧カフで血圧を確認</Japanese>
             <Chinese>用血壓計量血壓</Chinese>
+            <German>Blutdruck mit Manschette prüfen</German>
         </Key>
         <Key ID="STR_KAT_Circulation_Actions_CheckHRSteth">
             <English>Check HR w/ Stethoscope</English>
@@ -1166,6 +1167,7 @@
             <French>Vérifier le pouls à l'aide d'un stéthoscope.</French>
             <Japanese>聴診器で脈拍を確認</Japanese>
             <Chinese>用聽診器檢查心率</Chinese>
+            <German>Herzfrequenz mit Stethoskop prüfen</German>
         </Key>
         <Key ID="STR_KAT_Circulation_Actions_CheckingBloodPressureCuff">
             <English>Checking BP with BP Cuff</English>
@@ -1173,6 +1175,7 @@
             <French>Contrôler la tension artérielle à l'aide d'un brassard</French>
             <Japanese>血圧カフで血圧を確認中</Japanese>
             <Chinese>用血壓計量血壓中</Chinese>
+            <German>Überprüfung des Blutdruck mittels Manschette</German>
         </Key>
         <Key ID="STR_KAT_Circulation_Actions_CheckingHRSteth">
             <English>Checking HR with Stethoscope</English>
@@ -1180,6 +1183,7 @@
             <French>Vérification du pouls à l'aide d'un stéthoscope.</French>
             <Japanese>聴診器で脈拍を確認中</Japanese>
             <Chinese>用聽診器檢查心率中</Chinese>
+            <German>Überprüfung der HF mittels Stethoskop</German>
         </Key>
         <Key ID="STR_KAT_Circulation_Activity_AttachPads">
             <English>%1 attached defibrillator pads (%2)</English>
@@ -1335,6 +1339,7 @@
             <French>Dispositif médical permettant de déterminer avec précision la tension artérielle d'un patient</French>
             <Japanese>患者の血圧を正確に測定する医療機器</Japanese>
             <Chinese>一種準確測量病人血壓的醫療裝置</Chinese>
+            <German>Medizinisches Gerät zur genauen Bestimmung des Blutdrucks</German>
         </Key>
         <Key ID="STR_KAT_Circulation_BPCuff_display">
             <English>Blood Pressure Cuff</English>
@@ -1342,6 +1347,7 @@
             <French>Brassard de pression artérielle</French>
             <Japanese>血圧カフ</Japanese>
             <Chinese>血壓計</Chinese>
+            <German>Blutdruckmanschette</German>
         </Key>
         <Key ID="STR_KAT_Circulation_BloodIV_A">
             <English>Blood IV (1000ml) BT: A+</English>
@@ -1793,6 +1799,7 @@
             <French>%1 au-dessus de la valeur de palpation</French>
             <Japanese>触診による拡張期血圧は %1</Japanese>
             <Chinese>比觸診高 %1</Chinese>
+            <German>%1 per Palpitation</German>
         </Key>
         <Key ID="STR_KAT_Circulation_CPR_MaxChance_Default">
             <English>Max CPR Chance for Default</English>
@@ -1927,6 +1934,7 @@
             <French>Vous avez mesuré la tension artérielle %3 au-dessus de la palpation</French>
             <Japanese>触診で計測した拡張期血圧は %3 でした</Japanese>
             <Chinese>你發現血壓比觸診高 %3</Chinese>
+            <German>Du misst einen Blutdruck von %3 per Palpitation</German>
         </Key>
         <Key ID="STR_KAT_Circulation_Check_Pulse_Output">
             <English>You find a Pulse Rate of %2</English>
@@ -1934,6 +1942,7 @@
             <French>Vous trouvez un pouls de %2</French>
             <Japanese>計測した脈拍は %2 でした</Japanese>
             <Chinese>你發現脈搏率為 %2</Chinese>
+            <German>Du misst eine Herzfrequenz von %2</German>
         </Key>
         <Key ID="STR_KAT_Circulation_Defibrillator_Action_CancelCharge">
             <English>Cancel Charge</English>
@@ -2279,6 +2288,7 @@
             <French>%1 PPM</French>
             <Japanese>%1 PPM</Japanese>
             <Chinese>%1 PPM</Chinese>
+            <German>%1 PPM</German>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_AEDStation_AllowInteraction">
             <English>Allow AED/X Station Interaction</English>
@@ -2539,6 +2549,7 @@
             <Czech>Povolit H&amp;T udržování v zástavě</Czech>
             <French>Activer le maintien en arrêt H et T</French>
             <Japanese>心停止回復のH&amp;T症状による阻害を有効化</Japanese>
+            <German>H&amp;Ts halten Herzstillstand aufrecht</German>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_AdvRhythm_Hardcore_Enable">
             <English>Hardcore Rhythms</English>
@@ -2726,6 +2737,7 @@
             <French>Autoriser le brassard de tension artérielle</French>
             <Japanese>血圧カフの許可</Japanese>
             <Chinese>允許使用血壓計</Chinese>
+            <German>Blutdruckmanschette erlauben</German>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_BPCuff_DESC">
             <English>Training Level for use of the BP Cuff</English>
@@ -2733,6 +2745,7 @@
             <French>Niveau de formation médicale pour l'utilisation des brassards</French>
             <Japanese>血圧カフの使用に必要な医療スキルのレベルを設定します。</Japanese>
             <Chinese>使用血壓計的訓練等級</Chinese>
+            <German>Ausbildungslevel für Blutdruckmanschette</German>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_CPR_CHANCES">
             <English>Enable different CPR chances per medical level</English>
@@ -2928,6 +2941,7 @@
             <French>Autorisation de prendre le pouls via un stéthoscope.</French>
             <Japanese>聴診器による脈拍確認の許可</Japanese>
             <Chinese>允許使用聽診器檢查心率</Chinese>
+            <German>Stethoskop zur Herzfrequenzmessung erlauben</German>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_StethHR_DESC">
             <English>Training Level for use of the Stethoscope to measure HR</English>
@@ -2935,6 +2949,7 @@
             <French>Définit le niveau de compétences médicales requis pour mesurer le pouls à l'aide d'un stéthoscope.</French>
             <Japanese>聴診器による脈拍の測定に必要な医療スキルのレベルを設定します。</Japanese>
             <Chinese>使用聽診器測量心率的訓練等級</Chinese>
+            <German>Ausbildungslevel zur Herzfrequenzmessung mit Stethoskop</German>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_Threshold_SpO2Warning">
             <English>AED-X alarm SpO2 threshold</English>
@@ -3213,6 +3228,7 @@
             <French>Diagnostic approfondi de la HR et de la BP</French>
             <Japanese>ハードコア脈拍および血圧診断を有効化</Japanese>
             <Chinese>啟用硬核心率和血壓診斷</Chinese>
+            <German>Aktiviere Hardcore-Messung von Blutdruck und Puls</German>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_hardcoreDiagnose_DESC">
             <English>Makes measuring BP and HR imprecise without tools (Stethoscope or BP cuff)</English>
@@ -3220,6 +3236,7 @@
             <French>Rend impossible la mesure précise du pouls et de la tension artérielle sans instrument (stéthoscope ou brassard).</French>
             <Japanese>器具(聴診器または血圧カフ)なしでは脈拍および血圧を正確に測定出来なくします</Japanese>
             <Chinese>在沒有工具（聽診器或血壓計）的情況下，測量血壓和心率會不準確</Chinese>
+            <German>Ungenaue Blutdruck- und Pulsmessungen, wenn keine Werkzeuge verwendet werden (Manschette und Stethoskop)</German>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_tamponadeChance">
             <English>Chance for tamponade in penetrating wounds</English>
@@ -3576,6 +3593,8 @@
         <Key ID="STR_KAT_Circulation_cba_name">
             <English>KAT - ADV Medical: Circulation</English>
             <Japanese>KAM - 循環器系 (Circulation)</Japanese>
+            <French>KAT - ADV Medical : Circulation</French>
+            <German>KAT - ADV Medical: Zirkulation</German>
         </Key>
         <Key ID="STR_KAT_Circulation_crosspanel">
             <English>Blood groups cheat sheet</English>
@@ -3695,6 +3714,7 @@
             <French>Temps pour mesurer la tension via le brassard</French>
             <Japanese>血圧カフによる血圧測定の所要時間</Japanese>
             <Chinese>用血壓計量血壓所需時間</Chinese>
+            <German>Dauer der Blutdruckmessung mit Manschette</German>
         </Key>
         <Key ID="STR_KAT_Circulation_treatmentTime_StethHR">
             <English>Time to measure HR with a Stethoscope</English>
@@ -3702,6 +3722,7 @@
             <French>Temps pour mesurer le pouls via un stéthoscope</French>
             <Japanese>聴診器による脈拍測定の所要時間</Japanese>
             <Chinese>用聽診器測量心率所需時間</Chinese>
+            <German>Dauer der Pulsmessung mit Stethoskop</German>
         </Key>
     </Package>
 </Project>
