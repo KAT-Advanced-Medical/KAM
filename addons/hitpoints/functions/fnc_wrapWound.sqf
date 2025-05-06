@@ -16,13 +16,10 @@
  * Public: No
  */
 
-params ["_patient", "_bodyPart"];
+params ["_medic", "_patient", "_bodyPart"];
 
-private _bandagedWounds = _patient getVariable [VAR_BANDAGED_WOUNDS, []];
-if (isNil "_bandagedWounds") exitWith {false};
-
-private _bandagedWoundsOnPart = _bandagedWounds getOrDefault [_bodyPart, []];
-if (_bandagedWoundsOnPart isEqualTo []) exitWith {false};
+private _bandagedWounds = GET_BANDAGED_WOUNDS(_patient);
+private _bandagedWoundsOnPart = _bandagedWounds get _bodyPart;
 TRACE_1("WrapAllWounds1",_bandagedWoundsOnPart);
 
 private _includedTypes = ["Compressed_Gauze", "fourByfour_Gauze", "Burn_Dressing", "Hemostatic_Gauze"];

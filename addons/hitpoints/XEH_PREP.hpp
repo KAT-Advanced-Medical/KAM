@@ -1,6 +1,7 @@
 PREP(addDamageToUnit);
 PREP(addTreatmentActions);
 PREP(canBandage);
+PREP(canBurnBandage);
 PREP(canSplint);
 PREP(canWrapSplint);
 PREP(canWrapWound);
