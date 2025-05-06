@@ -1,6 +1,7 @@
 class ACE_Medical_Treatment_Actions {
     class CheckPulse;
     class BasicBandage;
+    class CPR;
     class Hemostat: BasicBandage {
         displayName = CSTRING(Hemostat);
         displayNameProgress = CSTRING(Hemostat_Progress);
@@ -117,5 +118,23 @@ class ACE_Medical_Treatment_Actions {
         medicRequired = 0;
         treatmentTime = 2;
         callbackSuccess = QFUNC(checkLimb);
+    };
+    class ApplyPressure: CPR {
+        displayName = CSTRING(ApplyPressure);
+        displayNameProgress = "";
+        icon = "";
+        category = "bandage";
+        treatmentTime = 0.01;
+        allowSelfTreatment = 0;
+        medicRequired = 0;
+        treatmentLocations = TREATMENT_LOCATIONS_ALL;
+        allowedSelections[] = {"All"};
+        callbackStart = "";
+        callbackProgress = "";
+        callbackFailure = "";
+        callbackSuccess = QFUNC(pressureStart);
+        condition = QFUNC(canBandage);
+        animationPatientUnconscious = "AinjPpneMstpSnonWrflDnon_rolltoback";
+        animationPatientUnconsciousExcludeOn[] = {"ainjppnemstpsnonwrfldnon"};
     };
 };

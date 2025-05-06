@@ -282,11 +282,23 @@
         <Key ID="STR_KAT_Hitpoints_SETTING_checkLimbTime_DESC">
             <English>Time it takes to check a body part for internal bleeding</English>
         </Key>
-        <Key ID="STR_KAT_Hitpoints_WoundStitchTime_Description">
+        <Key ID="STR_KAT_Hitpoints_WoundWrapTime_Description">
             <English>Time, in seconds, required to wrap a single wound.</English>
         </Key>
-        <Key ID="STR_KAT_Hitpoints_WoundStitchTime_DisplayName">
+        <Key ID="STR_KAT_Hitpoints_WoundWrapTime_DisplayName">
             <English>Wound Wrap Time</English>
+        </Key>
+        <Key ID="STR_KAT_Hitpoints_stoppressure">
+            <English>Stop Applying Pressure</English>
+        </Key>
+        <Key ID="STR_KAT_Hitpoints_startpressure">
+            <English>Started Applying Pressure</English>
+        </Key>
+        <Key ID="STR_KAT_Hitpoints_cancelpressure">
+            <English>Stopped Applying Pressure</English>
+        </Key>
+        <Key ID="STR_KAT_Hitpoints_ApplyPressure">
+            <English>Apply Pressure to Limb</English>
         </Key>
     </Package>
 </Project>

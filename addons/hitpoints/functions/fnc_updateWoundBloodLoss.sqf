@@ -32,23 +32,28 @@ private _occlusionMap = [
 ];
 
 private _bodyPartBleeding = [0,0,0,0,0,0,0,0,0,0,0,0];
+private _part = ALL_BODY_PARTS find toLower _bodyPart;
+private _appliedPressure = GET_APPLIEDPRESSURE(_patient);
+private _pressureApplied = _appliedPressure select _part;
 
 {
     private _partIndex = ALL_BODY_PARTS find _x;
-    TRACE_1("updateWoundBloodLoss1",_partIndex);
-    TRACE_1("updateWoundBloodLoss1",_unit);
 
     private _idx = _occlusionMap findIf { _x#0 == _partIndex };
-    TRACE_1("updateWoundBloodLoss3",_idx);
     private _result = if (_idx != -1) then { _occlusionMap select _idx select 1 } else { [] };
-    TRACE_1("updateWoundBloodLoss4",_result);
-    private _isNotOccluded = { _tourniquets select _x != 0 } count _result > 0;
-    TRACE_1("updateWoundBloodLoss2",_isNotOccluded);
-    if (!_isNotOccluded) then {
+    private _isOccluded = { _tourniquets select _x != 0 } count _result > 0;
+
+    private _hasPressureApplied = { _pressureApplied select _x != 0 } count _result > 0;
+    if (!_isOccluded) then {
         private _partBleeding = 0;
         {
             _x params ["", "_amountOf", "_bleeding"];
-            _partBleeding = _partBleeding + (_amountOf * _bleeding);
+            if (_hasPressureApplied) then {
+                _partBleeding = _partBleeding + ((_amountOf * _bleeding) * _pressureApplied);
+            } else {
+                _partBleeding = _partBleeding + (_amountOf * _bleeding);
+            }
+            
         } forEach _y;
         _bodyPartBleeding set [_partIndex, _partBleeding];
         TRACE_1("updateWoundBloodLoss",_partBleeding);

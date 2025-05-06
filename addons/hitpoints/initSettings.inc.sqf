@@ -12,7 +12,7 @@
     QGVAR(woundWrapTime),
     "SLIDER",
     [LSTRING(WoundWrapTime_DisplayName), LSTRING(WoundWrapTime_Description)],
-    LSTRING(Category),
+    [CBA_SETTINGS_CAT, ELSTRING(GUI,SubCategory_Basic)],
     [4, 16, 4, 1],
     true
 ] call CBA_fnc_addSetting;
