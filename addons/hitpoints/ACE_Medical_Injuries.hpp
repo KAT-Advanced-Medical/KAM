@@ -65,6 +65,12 @@ class ACE_Medical_Injuries {
             causeLimping = 1;
             causeFracture = 1;
         };
+        class Evisceration {
+            bleeding = 0.03;
+            pain = 0.09;
+            causeLimping = 1;
+            causeFracture = 0;
+        };
     };
 
     class damageTypes {

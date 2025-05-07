@@ -277,7 +277,7 @@ private _fnc_processWounds = {
             private _category   = _woundClassID % 10;
             TRACE_2("ProcessWounds",_classIndex,_category);
             private _className = ACEGVAR(medical_damage,woundClassNames) select _classIndex;
-            if (_className isEqualTo "InternalBleeding") exitWith {};
+            if (_className in ["InternalBleeding", "Evisceration"]) exitWith {};
             private _suffix = ["Minor", "Medium", "Large"] select _category;
             private _woundName = localize format [LSTRING(%1_%2), _className, _suffix];
 

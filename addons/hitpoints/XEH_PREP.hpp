@@ -1,3 +1,5 @@
+PREP(ABDPad);
+PREP(ABDPadLocal);
 PREP(addDamageToUnit);
 PREP(addTreatmentActions);
 PREP(canBandage);
@@ -7,6 +9,7 @@ PREP(canWrapSplint);
 PREP(canWrapWound);
 PREP(checkLimb);
 PREP(fullHealLocal);
+PREP(fullHealMod);
 PREP(getWrapTime);
 PREP(gui_updateBodyImage);
 PREP(gui_updateInjuryListPart);

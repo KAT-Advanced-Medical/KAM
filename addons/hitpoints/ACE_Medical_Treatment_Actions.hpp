@@ -15,7 +15,6 @@ class ACE_Medical_Treatment_Actions {
         displayName = CSTRING(4X4_Gauze);
         displayNameProgress = CSTRING(4X4_Gauze_Progress);
         icon = QPATHTOF(ui\4X4_Gauze.paa);
-        callbackSuccess = QACEFUNC(medical_treatment,bandage);
         items[] = {"kat_4X4_Gauze"};
     };
     class Compressed_Gauze: BasicBandage {
@@ -29,7 +28,6 @@ class ACE_Medical_Treatment_Actions {
         displayName = CSTRING(Hemostatic_Gauze);
         displayNameProgress = CSTRING(Hemostatic_Gauze_Progress);
         icon = QPATHTOF(ui\Hemostatic_Gauze.paa);
-        callbackSuccess = QACEFUNC(medical_treatment,bandage);
         items[] = {"kat_Hemostatic_Gauze"};
     };
     class Adhesive_Bandage: BasicBandage {
@@ -37,7 +35,6 @@ class ACE_Medical_Treatment_Actions {
         displayNameProgress = CSTRING(Adhesive_Bandage_Progress);
         icon = QPATHTOF(ui\Adhesive_Bandage.paa);
         items[] = {"kat_Adhesive_Bandage"};
-        callbackSuccess = QACEFUNC(medical_treatment,bandage);
         treatmentTime = 3;
     };
     class Burn_Dressing: BasicBandage {
@@ -45,7 +42,6 @@ class ACE_Medical_Treatment_Actions {
         displayNameProgress = CSTRING(Burn_Dressing_Progress);
         icon = QPATHTOF(ui\Burn_Dressing.paa);
         condition = QFUNC(canBurnBandage);
-        callbackSuccess = QACEFUNC(medical_treatment,bandage);
         items[] = {"kat_Burn_Dressing"};
     };
     class Abdominal_Pad: BasicBandage {
@@ -54,7 +50,7 @@ class ACE_Medical_Treatment_Actions {
         icon = QPATHTOF(ui\Abdominal_Pad.paa);
         items[] = {"kat_Abdominal_Pad"};
         allowedSelections[] = {"Body"};
-        callbackSuccess = QACEFUNC(medical_treatment,bandage);
+        callbackSuccess = QFUNC(ABDPad);
         treatmentTime = 6;
     };
     class ETD: BasicBandage {

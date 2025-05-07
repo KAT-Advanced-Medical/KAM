@@ -141,19 +141,19 @@ class ACE_Medical_Treatment {
                 effectiveness = 0.9;
             };
             class ThermalBurn: Abrasion {
-                effectiveness = 1;
+                effectiveness = 0;
                 reopeningChance = 0.1;
                 reopeningMinDelay = 1200;
                 reopeningMaxDelay = 1800;
             };
             class ThermalBurnMinor: ThermalBurn {
-                effectiveness = 1;
+                effectiveness = 0;
             };
             class ThermalBurnMedium: ThermalBurn {
-                effectiveness = 1;
+                effectiveness = 0;
             };
             class ThermalBurnLarge: ThermalBurn {
-                effectiveness = 0.5;
+                effectiveness = 0;
             };
             class InternalBleeding: Abrasion {
                 effectiveness = 0;
@@ -168,6 +168,21 @@ class ACE_Medical_Treatment {
                 effectiveness = 0;
             };
             class InternalBleedingLarge: InternalBleeding {
+                effectiveness = 0;
+            };
+            class Evisceration: Abrasion {
+                effectiveness = 0;
+                reopeningChance = 0.5;
+                reopeningMinDelay = 900;
+                reopeningMaxDelay = 1800;
+            };
+            class EviscerationMinor: Evisceration {
+                effectiveness = 0;
+            };
+            class EviscerationMedium: Evisceration {
+                effectiveness = 0;
+            };
+            class EviscerationLarge: Evisceration {
                 effectiveness = 0;
             };
         };
@@ -306,19 +321,19 @@ class ACE_Medical_Treatment {
                 effectiveness = 0.9;
             };
             class ThermalBurn: Abrasion {
-                effectiveness = 1;
+                effectiveness = 0;
                 reopeningChance = 0.1;
                 reopeningMinDelay = 1200;
                 reopeningMaxDelay = 1800;
             };
             class ThermalBurnMinor: ThermalBurn {
-                effectiveness = 1;
+                effectiveness = 0;
             };
             class ThermalBurnMedium: ThermalBurn {
-                effectiveness = 1;
+                effectiveness = 0;
             };
             class ThermalBurnLarge: ThermalBurn {
-                effectiveness = 0.5;
+                effectiveness = 0;
             };
             class InternalBleeding: Abrasion {
                 effectiveness = 0;
@@ -333,6 +348,21 @@ class ACE_Medical_Treatment {
                 effectiveness = 0;
             };
             class InternalBleedingLarge: InternalBleeding {
+                effectiveness = 0;
+            };
+            class Evisceration: Abrasion {
+                effectiveness = 0;
+                reopeningChance = 0.7;
+                reopeningMinDelay = 1000;
+                reopeningMaxDelay = 1600;
+            };
+            class EviscerationMinor: Evisceration {
+                effectiveness = 0;
+            };
+            class EviscerationMedium: Evisceration {
+                effectiveness = 0;
+            };
+            class EviscerationLarge: Evisceration {
                 effectiveness = 0;
             };
         };
@@ -471,19 +501,19 @@ class ACE_Medical_Treatment {
                 effectiveness = 1.5;
             };
             class ThermalBurn: Abrasion {
-                effectiveness = 1;
+                effectiveness = 0;
                 reopeningChance = 0.1;
                 reopeningMinDelay = 1200;
                 reopeningMaxDelay = 1800;
             };
             class ThermalBurnMinor: ThermalBurn {
-                effectiveness = 1;
+                effectiveness = 0;
             };
             class ThermalBurnMedium: ThermalBurn {
-                effectiveness = 1;
+                effectiveness = 0;
             };
             class ThermalBurnLarge: ThermalBurn {
-                effectiveness = 0.5;
+                effectiveness = 0;
             };
             class InternalBleeding: Abrasion {
                 effectiveness = 0;
@@ -498,6 +528,21 @@ class ACE_Medical_Treatment {
                 effectiveness = 0;
             };
             class InternalBleedingLarge: InternalBleeding {
+                effectiveness = 0;
+            };
+            class Evisceration: Abrasion {
+                effectiveness = 0;
+                reopeningChance = 0.7;
+                reopeningMinDelay = 1000;
+                reopeningMaxDelay = 1600;
+            };
+            class EviscerationMinor: Evisceration {
+                effectiveness = 0;
+            };
+            class EviscerationMedium: Evisceration {
+                effectiveness = 0;
+            };
+            class EviscerationLarge: Evisceration {
                 effectiveness = 0;
             };
         };
@@ -629,19 +674,19 @@ class ACE_Medical_Treatment {
                 effectiveness = 0.4;
             };
             class ThermalBurn: Abrasion {
-                effectiveness = 1;
+                effectiveness = 0;
                 reopeningChance = 0.1;
                 reopeningMinDelay = 1200;
                 reopeningMaxDelay = 1800;
             };
             class ThermalBurnMinor: ThermalBurn {
-                effectiveness = 1;
+                effectiveness = 0;
             };
             class ThermalBurnMedium: ThermalBurn {
-                effectiveness = 1;
+                effectiveness = 0;
             };
             class ThermalBurnLarge: ThermalBurn {
-                effectiveness = 0.5;
+                effectiveness = 0;
             };
             class InternalBleeding: Abrasion {
                 effectiveness = 0;
@@ -656,6 +701,21 @@ class ACE_Medical_Treatment {
                 effectiveness = 0;
             };
             class InternalBleedingLarge: InternalBleeding {
+                effectiveness = 0;
+            };
+            class Evisceration: Abrasion {
+                effectiveness = 0;
+                reopeningChance = 0.7;
+                reopeningMinDelay = 1000;
+                reopeningMaxDelay = 1600;
+            };
+            class EviscerationMinor: Evisceration {
+                effectiveness = 0;
+            };
+            class EviscerationMedium: Evisceration {
+                effectiveness = 0;
+            };
+            class EviscerationLarge: Evisceration {
                 effectiveness = 0;
             };
         };
@@ -756,10 +816,25 @@ class ACE_Medical_Treatment {
                 effectiveness = 0;
             };
             class ThermalBurnMedium: ThermalBurn {
-                effectiveness = 1;
+                effectiveness = 0;
             };
             class ThermalBurnLarge: ThermalBurn {
-                effectiveness = 0.5;
+                effectiveness = 0;
+            };
+            class Evisceration: Abrasion {
+                effectiveness = 0;
+                reopeningChance = 0.7;
+                reopeningMinDelay = 1000;
+                reopeningMaxDelay = 1600;
+            };
+            class EviscerationMinor: Evisceration {
+                effectiveness = 0;
+            };
+            class EviscerationMedium: Evisceration {
+                effectiveness = 0;
+            };
+            class EviscerationLarge: Evisceration {
+                effectiveness = 0;
             };
         };
         class fourByfour_Gauze: FieldDressing {
@@ -923,10 +998,25 @@ class ACE_Medical_Treatment {
                 effectiveness = 0;
             };
             class ThermalBurnMedium: ThermalBurn {
-                effectiveness = 1;
+                effectiveness = 0;
             };
             class ThermalBurnLarge: ThermalBurn {
-                effectiveness = 0.5;
+                effectiveness = 0;
+            };
+            class Evisceration: Abrasion {
+                effectiveness = 0;
+                reopeningChance = 0.7;
+                reopeningMinDelay = 1000;
+                reopeningMaxDelay = 1600;
+            };
+            class EviscerationMinor: Evisceration {
+                effectiveness = 0;
+            };
+            class EviscerationMedium: Evisceration {
+                effectiveness = 0;
+            };
+            class EviscerationLarge: Evisceration {
+                effectiveness = 0;
             };
         };
         class fourByfour_Gauze_wrapped: FieldDressing {
@@ -1081,10 +1171,25 @@ class ACE_Medical_Treatment {
                 effectiveness = 0;
             };
             class ThermalBurnMedium: ThermalBurn {
-                effectiveness = 1;
+                effectiveness = 0;
             };
             class ThermalBurnLarge: ThermalBurn {
-                effectiveness = 0.5;
+                effectiveness = 0;
+            };
+            class Evisceration: Abrasion {
+                effectiveness = 0;
+                reopeningChance = 0.7;
+                reopeningMinDelay = 1000;
+                reopeningMaxDelay = 1600;
+            };
+            class EviscerationMinor: Evisceration {
+                effectiveness = 0;
+            };
+            class EviscerationMedium: Evisceration {
+                effectiveness = 0;
+            };
+            class EviscerationLarge: Evisceration {
+                effectiveness = 0;
             };
         };
         class Compressed_Gauze: FieldDressing {
@@ -1248,10 +1353,25 @@ class ACE_Medical_Treatment {
                 effectiveness = 0;
             };
             class ThermalBurnMedium: ThermalBurn {
-                effectiveness = 1;
+                effectiveness = 0;
             };
             class ThermalBurnLarge: ThermalBurn {
-                effectiveness = 0.5;
+                effectiveness = 0;
+            };
+            class Evisceration: Abrasion {
+                effectiveness = 0.25;
+                reopeningChance = 0.8;
+                reopeningMinDelay = 120;
+                reopeningMaxDelay = 180;
+            };
+            class EviscerationMinor: Evisceration {
+                effectiveness = 0;
+            };
+            class EviscerationMedium: Evisceration {
+                effectiveness = 0;
+            };
+            class EviscerationLarge: Evisceration {
+                effectiveness = 0.25;
             };
         };
         class Compressed_Gauze_wrapped: FieldDressing {
@@ -1407,10 +1527,25 @@ class ACE_Medical_Treatment {
                 effectiveness = 0;
             };
             class ThermalBurnMedium: ThermalBurn {
-                effectiveness = 1;
+                effectiveness = 0;
             };
             class ThermalBurnLarge: ThermalBurn {
-                effectiveness = 0.5;
+                effectiveness = 0;
+            };
+            class Evisceration: Abrasion {
+                effectiveness = 0.25;
+                reopeningChance = 0.2;
+                reopeningMinDelay = 180;
+                reopeningMaxDelay = 360;
+            };
+            class EviscerationMinor: Evisceration {
+                effectiveness = 0;
+            };
+            class EviscerationMedium: Evisceration {
+                effectiveness = 0;
+            };
+            class EviscerationLarge: Evisceration {
+                effectiveness = 0.25;
             };
         };
         class Hemostatic_Gauze: FieldDressing {
@@ -1565,10 +1700,25 @@ class ACE_Medical_Treatment {
                 effectiveness = 0;
             };
             class ThermalBurnMedium: ThermalBurn {
-                effectiveness = 1;
+                effectiveness = 0;
             };
             class ThermalBurnLarge: ThermalBurn {
-                effectiveness = 0.5;
+                effectiveness = 0;
+            };
+            class Evisceration: Abrasion {
+                effectiveness = 0.0;
+                reopeningChance = 0.8;
+                reopeningMinDelay = 120;
+                reopeningMaxDelay = 180;
+            };
+            class EviscerationMinor: Evisceration {
+                effectiveness = 0;
+            };
+            class EviscerationMedium: Evisceration {
+                effectiveness = 0;
+            };
+            class EviscerationLarge: Evisceration {
+                effectiveness = 0;
             };
         };
         class Hemostatic_Gauze_wrapped: FieldDressing {
@@ -1723,10 +1873,25 @@ class ACE_Medical_Treatment {
                 effectiveness = 0;
             };
             class ThermalBurnMedium: ThermalBurn {
-                effectiveness = 1;
+                effectiveness = 0;
             };
             class ThermalBurnLarge: ThermalBurn {
-                effectiveness = 0.5;
+                effectiveness = 0;
+            };
+            class Evisceration: Abrasion {
+                effectiveness = 0.0;
+                reopeningChance = 0.8;
+                reopeningMinDelay = 120;
+                reopeningMaxDelay = 180;
+            };
+            class EviscerationMinor: Evisceration {
+                effectiveness = 0;
+            };
+            class EviscerationMedium: Evisceration {
+                effectiveness = 0;
+            };
+            class EviscerationLarge: Evisceration {
+                effectiveness = 0;
             };
         };
         class ETD: FieldDressing {
@@ -1882,10 +2047,25 @@ class ACE_Medical_Treatment {
                 effectiveness = 0;
             };
             class ThermalBurnMedium: ThermalBurn {
-                effectiveness = 1;
+                effectiveness = 0;
             };
             class ThermalBurnLarge: ThermalBurn {
-                effectiveness = 0.5;
+                effectiveness = 0;
+            };
+            class Evisceration: Abrasion {
+                effectiveness = 1;
+                reopeningChance = 0.8;
+                reopeningMinDelay = 300;
+                reopeningMaxDelay = 900;
+            };
+            class EviscerationMinor: Evisceration {
+                effectiveness = 1;
+            };
+            class EviscerationMedium: Evisceration {
+                effectiveness = 1;
+            };
+            class EviscerationLarge: Evisceration {
+                effectiveness = 1;
             };
         };
         class Adhesive_Bandage: FieldDressing {
@@ -2040,10 +2220,25 @@ class ACE_Medical_Treatment {
                 effectiveness = 0;
             };
             class ThermalBurnMedium: ThermalBurn {
-                effectiveness = 1;
+                effectiveness = 0;
             };
             class ThermalBurnLarge: ThermalBurn {
-                effectiveness = 0.5;
+                effectiveness = 0;
+            };
+            class Evisceration: Abrasion {
+                effectiveness = 0;
+                reopeningChance = 0.8;
+                reopeningMinDelay = 300;
+                reopeningMaxDelay = 900;
+            };
+            class EviscerationMinor: Evisceration {
+                effectiveness = 0;
+            };
+            class EviscerationMedium: Evisceration {
+                effectiveness = 0;
+            };
+            class EviscerationLarge: Evisceration {
+                effectiveness = 0;
             };
         };
         class Burn_Dressing: FieldDressing {
@@ -2201,6 +2396,21 @@ class ACE_Medical_Treatment {
             class InternalBleedingLarge: InternalBleeding {
                 effectiveness = 0;
             };
+            class Evisceration: Abrasion {
+                effectiveness = 0;
+                reopeningChance = 0.8;
+                reopeningMinDelay = 300;
+                reopeningMaxDelay = 900;
+            };
+            class EviscerationMinor: Evisceration {
+                effectiveness = 0;
+            };
+            class EviscerationMedium: Evisceration {
+                effectiveness = 0;
+            };
+            class EviscerationLarge: Evisceration {
+                effectiveness = 0;
+            };
         };
         class Burn_Dressing_wrapped: FieldDressing {
             effectiveness = 0;
@@ -2356,6 +2566,21 @@ class ACE_Medical_Treatment {
             class InternalBleedingLarge: InternalBleeding {
                 effectiveness = 0;
             };
+            class Evisceration: Abrasion {
+                effectiveness = 0;
+                reopeningChance = 0.8;
+                reopeningMinDelay = 300;
+                reopeningMaxDelay = 900;
+            };
+            class EviscerationMinor: Evisceration {
+                effectiveness = 0;
+            };
+            class EviscerationMedium: Evisceration {
+                effectiveness = 0;
+            };
+            class EviscerationLarge: Evisceration {
+                effectiveness = 0;
+            };
         };
         class Dressing: FieldDressing {
             class Abrasion {
@@ -2402,6 +2627,21 @@ class ACE_Medical_Treatment {
             class PunctureWoundMinor: PunctureWound {};
             class PunctureWoundMedium: PunctureWound {};
             class PunctureWoundLarge: PunctureWound {};
+
+            class ThermalBurn: Abrasion {};
+            class ThermalBurnMinor: ThermalBurn {};
+            class ThermalBurnMedium: ThermalBurn {};
+            class ThermalBurnLarge: ThermalBurn {};
+
+            class InternalBleeding: Abrasion {};
+            class InternalBleedingMinor: InternalBleeding {};
+            class InternalBleedingMedium: InternalBleeding {};
+            class InternalBleedingLarge: InternalBleeding {};
+            
+            class Evisceration: Abrasion {};
+            class EviscerationMinor: Evisceration {};
+            class EviscerationMedium: Evisceration {};
+            class EviscerationLarge: Evisceration {};
         };
 
         class BloodClotMinor: FieldDressing {

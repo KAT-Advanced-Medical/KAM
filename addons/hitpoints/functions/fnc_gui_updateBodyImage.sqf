@@ -23,20 +23,22 @@ private _ctrlWoundPack = _ctrlGroup controlsGroupCtrl IDC_BODY_TORSO_WOUNDPACK;
 private _ctrlWoundPackVac = _ctrlGroup controlsGroupCtrl IDC_BODY_TORSO_WOUNDPACK_VACUUM;
 private _ctrlEvisceration = _ctrlGroup controlsGroupCtrl IDC_BODY_TORSO_EVISCERATION;
 
-diag_log "UPDATEBODYHITPOINTS";
-if (_target getVariable [QGVAR(activeWoundPack), 0] == 1) then {
+private _activeWoundPack = _target getVariable [QGVAR(activeWoundPack), 0];
+private _evisceration = _target getVariable [QGVAR(evisceration), 0];
+TRACE_5("UPDATEBODYHITPOINTS",_ctrlGroup,_target,_selectionN,_activeWoundPack,_evisceration);
+if (_activeWoundPack == 1) then {
     _ctrlWoundPack ctrlShow true;
 } else {
     _ctrlWoundPack ctrlShow false;
 };
 
-if (_target getVariable [QGVAR(activeWoundPack), 0] == 2) then {
+if (_activeWoundPack == 2) then {
     _ctrlWoundPackVac ctrlShow true;
 } else {
     _ctrlWoundPackVac ctrlShow false;
 };
 
-if(_target getVariable [QGVAR(evisceration), 0] > 0) then {
+if (_evisceration > 0) then {
     _ctrlEvisceration ctrlShow true;
 } else {
     _ctrlEvisceration ctrlShow false;
