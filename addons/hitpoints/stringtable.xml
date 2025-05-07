@@ -4,6 +4,9 @@
         <Key ID="STR_KAT_Hitpoints_Torso">
             <English>Torso</English>
         </Key>
+        <Key ID="STR_KAT_Hitpoints_Body">
+            <English>Torso</English>
+        </Key>
         <Key ID="STR_KAT_Hitpoints_Chest">
             <English>Chest</English>
         </Key>
@@ -13,28 +16,28 @@
         <Key ID="STR_KAT_Hitpoints_Head">
             <English>Head</English>
         </Key>
-        <Key ID="STR_KAT_Hitpoints_ArmLeft">
+        <Key ID="STR_KAT_Hitpoints_LeftArm">
             <English>Left Arm</English>
         </Key>
-        <Key ID="STR_KAT_Hitpoints_ArmUpperLeft">
+        <Key ID="STR_KAT_Hitpoints_UpperLeftArm">
             <English>Upper Left Arm</English>
         </Key>
-        <Key ID="STR_KAT_Hitpoints_ArmRight">
+        <Key ID="STR_KAT_Hitpoints_RightArm">
             <English>Right Arm</English>
         </Key>
-        <Key ID="STR_KAT_Hitpoints_ArmUpperRight">
+        <Key ID="STR_KAT_Hitpoints_UpperRightArm">
             <English>Upper Right Arm</English>
         </Key>
-        <Key ID="STR_KAT_Hitpoints_LegLeft">
+        <Key ID="STR_KAT_Hitpoints_LeftLeg">
             <English>Left Leg</English>
         </Key>
-        <Key ID="STR_KAT_Hitpoints_LegUpperLeft">
+        <Key ID="STR_KAT_Hitpoints_UpperLeftLeg">
             <English>Upper Left Leg</English>
         </Key>
-        <Key ID="STR_KAT_Hitpoints_LegRight">
+        <Key ID="STR_KAT_Hitpoints_RightLeg">
             <English>Right Leg</English>
         </Key>
-        <Key ID="STR_KAT_Hitpoints_LegUpperRight">
+        <Key ID="STR_KAT_Hitpoints_UpperRightLeg">
             <English>Upper Right Leg</English>
         </Key>
         <Key ID="STR_KAT_Hitpoints_SelectHead">
@@ -58,19 +61,19 @@
         <Key ID="STR_KAT_Hitpoints_SelectRightArm">
             <English>Select Lower Right Arm</English>
         </Key>
-        <Key ID="STR_KAT_Hitpoints_SelectRightUpperArm">
+        <Key ID="STR_KAT_Hitpoints_SelectUpperRightArm">
             <English>Select Upper Right Arm</English>
         </Key>
         <Key ID="STR_KAT_Hitpoints_SelectLeftLeg">
             <English>Select Lower Left Leg</English>
         </Key>
-        <Key ID="STR_KAT_Hitpoints_SelectLeftUpperLeg">
+        <Key ID="STR_KAT_Hitpoints_SelectUpperLeftLeg">
             <English>Select Upper Left Leg</English>
         </Key>
         <Key ID="STR_KAT_Hitpoints_SelectRightLeg">
             <English>Select Lower Right Leg</English>
         </Key>
-        <Key ID="STR_KAT_Hitpoints_SelectRightUpperLeg">
+        <Key ID="STR_KAT_Hitpoints_SelectUpperRightLeg">
             <English>Select Upper Right Leg</English>
         </Key>
         <Key ID="STR_KAT_Hitpoints_Actions_TriageCard">
@@ -89,6 +92,252 @@
             <Chinesesimp>分诊卡</Chinesesimp>
             <Turkish>Triyaj Kartı</Turkish>
             <Hungarian>Orvosi lap</Hungarian>
+        </Key>
+        <Key ID="STR_KAT_Hitpoints_Hemostat">
+            <English>Hemostatic Injector (CELOX)</English>
+        </Key>
+        <Key ID="STR_KAT_Hitpoints_Hemostat_Progress">
+            <English>Injecting Hemostatic Granules</English>
+        </Key>
+        <Key ID="STR_KAT_Hitpoints_Hemostat_Desc_Short">
+            <English>Hemostatic Injector with CELOX granules</English>
+        </Key>
+        <Key ID="STR_KAT_Hitpoints_Hemostat_Desc_Use">
+            <English>Injector loaded with Hemostatic granules for penetrating wounds</English>
+        </Key>
+        <Key ID="STR_KAT_Hitpoints_Hemostat_Display">
+            <English>Hemostatic Injector (CELOX)</English>
+        </Key>
+        <Key ID="STR_KAT_Hitpoints_Elastic_Wrap_Desc_Short">
+            <English>Elastic Bandage for Wrapping Packed Wounds and Splints</English>
+        </Key>
+        <Key ID="STR_KAT_Hitpoints_Elastic_Wrap_Desc_Use">
+            <English>Elastic Bandage for Wrapping Packed Wounds and Splints</English>
+        </Key>
+        <Key ID="STR_KAT_Hitpoints_Elastic_Wrap_Display">
+            <English>Elastic Wrapping Bandage</English>
+        </Key>
+        <Key ID="STR_KAT_Hitpoints_Elastic_Wrap">
+            <English>Wrap Wounds (Elastic)</English>
+        </Key>
+        <Key ID="STR_KAT_Hitpoints_Elastic_Wrap_Splint">
+            <English>Wrap Splint</English>
+        </Key>
+        <Key ID="STR_KAT_Hitpoints_Elastic_Wrap_Progress">
+            <English>Wrapping Wounds</English>
+        </Key>
+        <Key ID="STR_KAT_Hitpoints_Elastic_Wrap_Splint_Progress">
+            <English>Wrapping Splint</English>
+        </Key>
+        <Key ID="STR_KAT_Hitpoints_4X4_Gauze_Desc_Short">
+            <English>4X4 Gauze Sponge for Small Wounds</English>
+        </Key>
+        <Key ID="STR_KAT_Hitpoints_4X4_Gauze_Desc_Use">
+            <English>4X4 Gauze Sponge for Small Wounds</English>
+        </Key>
+        <Key ID="STR_KAT_Hitpoints_4X4_Gauze_Display">
+            <English>4X4 Gauze Sponge</English>
+        </Key>
+        <Key ID="STR_KAT_Hitpoints_4X4_Gauze">
+            <English>Apply Gauze Sponge</English>
+        </Key>
+        <Key ID="STR_KAT_Hitpoints_4X4_Gauze_Progress">
+            <English>Applying Gauze Sponge</English>
+        </Key>
+        <Key ID="STR_KAT_Hitpoints_Compressed_Gauze_Desc_Short">
+            <English>Compressed Gauze for Packing Large Wounds</English>
+        </Key>
+        <Key ID="STR_KAT_Hitpoints_Compressed_Gauze_Desc_Use">
+            <English>Compressed Gauze for Packing Large Wounds</English>
+        </Key>
+        <Key ID="STR_KAT_Hitpoints_Compressed_Gauze_Display">
+            <English>Compressed Packing Gauze</English>
+        </Key>
+        <Key ID="STR_KAT_Hitpoints_Compressed_Gauze">
+            <English>Pack Wound</English>
+        </Key>
+        <Key ID="STR_KAT_Hitpoints_Compressed_Gauze_Progress">
+            <English>Packing Wound</English>
+        </Key>
+        <Key ID="STR_KAT_Hitpoints_Roller_Gauze_Desc_Short">
+            <English>Roller Gauze for Wrapping Packed Wounds</English>
+        </Key>
+        <Key ID="STR_KAT_Hitpoints_Roller_Gauze_Desc_Use">
+            <English>Roller Gauze for Wrapping Packed Wounds</English>
+        </Key>
+        <Key ID="STR_KAT_Hitpoints_Roller_Gauze_Display">
+            <English>Roller Gauze</English>
+        </Key>
+        <Key ID="STR_KAT_Hitpoints_Roller_Gauze">
+            <English>Wrap Wounds (Gauze)</English>
+        </Key>
+        <Key ID="STR_KAT_Hitpoints_Roller_Gauze_Progress">
+            <English>Wrapping Wounds</English>
+        </Key>
+        <Key ID="STR_KAT_Hitpoints_Abdominal_Pad_Desc_Short">
+            <English>Abdominal Pad for Extremely Large Wounds On the Torso</English>
+        </Key>
+        <Key ID="STR_KAT_Hitpoints_Abdominal_Pad_Desc_Use">
+            <English>Abdominal Pad for Extremely Large Wounds On the Torso</English>
+        </Key>
+        <Key ID="STR_KAT_Hitpoints_Abdominal_Pad_Display">
+            <English>Abdominal Pad</English>
+        </Key>
+        <Key ID="STR_KAT_Hitpoints_Abdominal_Pad">
+            <English>Apply Abdominal Pad</English>
+        </Key>
+        <Key ID="STR_KAT_Hitpoints_Abdominal_Pad_Progress">
+            <English>Applying Abdominal Pad</English>
+        </Key>
+        <Key ID="STR_KAT_Hitpoints_ETD_Desc_Short">
+            <English>Emergency Trauma Dressing for Extremely Large Wounds</English>
+        </Key>
+        <Key ID="STR_KAT_Hitpoints_ETD_Desc_Use">
+            <English>Emergency Trauma Dressing for Extremely Large Wounds</English>
+        </Key>
+        <Key ID="STR_KAT_Hitpoints_ETD_Display">
+            <English>Emergency Trauma Dressing</English>
+        </Key>
+        <Key ID="STR_KAT_Hitpoints_ETD">
+            <English>Apply Emergency Trauma Dressing</English>
+        </Key>
+        <Key ID="STR_KAT_Hitpoints_ETD_Progress">
+            <English>Applying Emergency Trauma Dressing</English>
+        </Key>
+        <Key ID="STR_KAT_Hitpoints_SplintFellOff">
+            <English>Splint Fell Off</English>
+        </Key>
+        <Key ID="STR_KAT_Hitpoints_Hemostatic_Gauze_Desc_Short">
+            <English>Hemostatic Gauze for Heavily Bleeding Wounds</English>
+        </Key>
+        <Key ID="STR_KAT_Hitpoints_Hemostatic_Gauze_Desc_Use">
+            <English>Hemostatic Gauze for Heavily Bleeding Wounds</English>
+        </Key>
+        <Key ID="STR_KAT_Hitpoints_Hemostatic_Gauze_Display">
+            <English>Hemostatic Gauze</English>
+        </Key>
+        <Key ID="STR_KAT_Hitpoints_Hemostatic_Gauze">
+            <English>Apply Hemostatic Gauze</English>
+        </Key>
+        <Key ID="STR_KAT_Hitpoints_Hemostatic_Gauze_Progress">
+            <English>Applying Hemostatic Gauze</English>
+        </Key>
+        <Key ID="STR_KAT_Hitpoints_Adhesive_Bandage_Desc_Short">
+            <English>Adhesive Bandage for Cuts and Scrapes</English>
+        </Key>
+        <Key ID="STR_KAT_Hitpoints_Adhesive_Bandage_Desc_Use">
+            <English>Adhesive Bandage for Cuts and Scrapes</English>
+        </Key>
+        <Key ID="STR_KAT_Hitpoints_Adhesive_Bandage_Display">
+            <English>Adhesive Bandage</English>
+        </Key>
+        <Key ID="STR_KAT_Hitpoints_Adhesive_Bandage">
+            <English>Apply Adhesive Bandage</English>
+        </Key>
+        <Key ID="STR_KAT_Hitpoints_Adhesive_Bandage_Progress">
+            <English>Applying Adhesive Bandage</English>
+        </Key>
+        <Key ID="STR_KAT_Hitpoints_Burn_Dressing_Desc_Short">
+            <English>Burn Dressing for Burns</English>
+        </Key>
+        <Key ID="STR_KAT_Hitpoints_Burn_Dressing_Desc_Use">
+            <English>Burn Dressing for Burns</English>
+        </Key>
+        <Key ID="STR_KAT_Hitpoints_Burn_Dressing_Display">
+            <English>Burn Dressing</English>
+        </Key>
+        <Key ID="STR_KAT_Hitpoints_Burn_Dressing">
+            <English>Apply Burn Dressing</English>
+        </Key>
+        <Key ID="STR_KAT_Hitpoints_Burn_Dressing_Progress">
+            <English>Applying Burn Dressing</English>
+        </Key>
+        <Key ID="STR_KAT_Hitpoints_InternalBleedingLog">
+            <English>%1 found %2 internal bleeding on %3</English>
+        </Key>
+        <Key ID="STR_KAT_Hitpoints_InternalBleeding">
+            <English>You found %1 internal bleeding on %2</English>
+        </Key>
+        <Key ID="STR_KAT_Hitpoints_InternalBleeding_Minor">
+            <English>Light</English>
+        </Key>
+        <Key ID="STR_KAT_Hitpoints_InternalBleeding_Medium">
+            <English>Medium</English>
+        </Key>
+        <Key ID="STR_KAT_Hitpoints_InternalBleeding_Large">
+            <English>Heavy</English>
+        </Key>
+        <Key ID="STR_KAT_Hitpoints_InternalBleeding_None">
+            <English>No</English>
+        </Key>
+        <Key ID="STR_KAT_Hitpoints_Check_Limb">
+            <English>Check Body</English>
+        </Key>
+        <Key ID="STR_KAT_Hitpoints_Check_Limb_Progress">
+            <English>Checking Body</English>
+        </Key>
+        <Key ID="STR_KAT_Hitpoints_cba_name">
+            <English>KAT - ADV Medical: Body</English>
+        </Key>
+        <Key ID="STR_KAT_Hitpoints_SETTING_checkLimbTime">
+            <English>Time to Check Body</English>
+        </Key>
+        <Key ID="STR_KAT_Hitpoints_SETTING_checkLimbTime_DESC">
+            <English>Time it takes to check a body part for internal bleeding</English>
+        </Key>
+        <Key ID="STR_KAT_Hitpoints_WoundWrapTime_Description">
+            <English>Time, in seconds, required to wrap a single wound.</English>
+        </Key>
+        <Key ID="STR_KAT_Hitpoints_WoundWrapTime_DisplayName">
+            <English>Wound Wrap Time</English>
+        </Key>
+        <Key ID="STR_KAT_Hitpoints_stoppressure">
+            <English>Stop Applying Pressure</English>
+        </Key>
+        <Key ID="STR_KAT_Hitpoints_startpressure">
+            <English>Started Applying Pressure</English>
+        </Key>
+        <Key ID="STR_KAT_Hitpoints_cancelpressure">
+            <English>Stopped Applying Pressure</English>
+        </Key>
+        <Key ID="STR_KAT_Hitpoints_ApplyPressure">
+            <English>Apply Pressure to Limb</English>
+        </Key>
+        <Key ID="STR_KAT_Hitpoints_">
+            <English></English>
+        </Key>
+        <Key ID="STR_KAT_Hitpoints_setting_enable">
+            <English>Enable Catastrophic Injuries</English>
+        </Key>
+        <Key ID="STR_KAT_Hitpoints_Subcatagory_Catastrophic_Injuries">
+            <English>Catastrophic Injuries</English>
+        </Key>
+        <Key ID="STR_KAT_Hitpoints_setting_enable_desc">
+            <English>Enables Catastrophic Injuries such as Eviscerations, Amputations, and others</English>
+        </Key>
+        <Key ID="STR_KAT_Hitpoints_EviscerationChance">
+            <English>Precent chance of an Evisceration happening</English>
+        </Key>
+        <Key ID="STR_KAT_Hitpoints_Evisceration_DAMAGE_THRESHOLD">
+            <English>Evisceration Damage Threshold </English>
+        </Key>
+        <Key ID="STR_KAT_Hitpoints_Evisceration_DAMAGE_THRESHOLD_DESC">
+            <English>Damage Threshold to cause an Evisceration</English>
+        </Key>
+        <Key ID="STR_KAT_Hitpoints_SETTING_EviscerationDamageThreshold_DamageTaken">
+            <English>Increase Evisceration chance based on damage</English>
+        </Key>
+        <Key ID="STR_KAT_Hitpoints_SETTING_EviscerationDamageThreshold_DamageTaken_DESC">
+            <English>Increase chance of a Evisceration occurring based on damage taken if over the Evisceration damage threshold</English>
+        </Key>
+        <Key ID="STR_KAT_Hitpoints_evisceration">
+            <English>Evisceration</English>
+        </Key>
+        <Key ID="STR_KAT_Hitpoints_woundpackapplied">
+            <English>Wound Pack Applied</English>
+        </Key>
+        <Key ID="STR_KAT_Hitpoints_woundvacapplied">
+            <English>Wound Vac Applied</English>
         </Key>
     </Package>
 </Project>

@@ -20,6 +20,7 @@ class ACE_Medical_Injuries {
         class Contusion {
             bleeding = 0;
             pain = 0.3;
+            causeFracture = 1;
         };
         // Occur when a heavy object falls onto a person, splitting the skin and shattering or tearing underlying structures.
         class Crush {
@@ -57,6 +58,19 @@ class ACE_Medical_Injuries {
             pain = 0.7;
             minDamage = 0;
         };
+        // wound that is caused by Non-Penetrative Blasts, cannot be bandaged externally.
+        class InternalBleeding {
+            bleeding = 0.025;
+            pain = 0.8;
+            causeLimping = 1;
+            causeFracture = 1;
+        };
+        class Evisceration {
+            bleeding = 0.03;
+            pain = 0.09;
+            causeLimping = 1;
+            causeFracture = 0;
+        };
     };
 
     class damageTypes {
@@ -80,6 +94,9 @@ class ACE_Medical_Injuries {
             // bullets only create multiple wounds when the damage is very high
             thresholds[] = {{20, 10}, {4.5, 2}, {3, 1}, {0, 1}};
             selectionSpecific = 1;
+            class woundHandlers: woundHandlers {
+                GVAR(eviscerationHit) = QFUNC(woundsHandlerEviscerationHit);
+            };
 
             class Avulsion {
                 // at damage, weight. between points, weight is interpolated then wound is chosen by weighted random.
@@ -106,26 +123,39 @@ class ACE_Medical_Injuries {
                 // velocity wounds will tend to be medium or large
                 sizeMultiplier = 0.9;
             };
+            class InternalBleeding {
+                weighting[] = {{1, 1}, {0.35, 0}};
+                sizeMultiplier = 0.7;
+                painMultiplier = 0.9;
+            };
         };
         class grenade {
             // at low damage numbers, chance to create no wounds - makes it a bit more random instead of consistently covering people in bruises
             thresholds[] = {{20, 10}, {10, 5}, {4, 3}, {1.5, 2}, {0.8, 2}, {0.3, 1}, {0, 0}};
             selectionSpecific = 0;
+            class woundHandlers: woundHandlers {
+                GVAR(eviscerationHit) = QFUNC(woundsHandlerEviscerationHit);
+            };
             class Avulsion {
                 weighting[] = {{1.5, 1}, {1.1, 0}};
             };
             class VelocityWound {
-                weighting[] = {{1.5, 0}, {1.1, 1}, {0.7, 0}};
+                weighting[] = {{1.5, 1}, {1.1, 1}, {0.7, 0}};
             };
             class PunctureWound {
-                weighting[] = {{0.9, 0}, {0.7, 1}, {0.35, 0}};
+                weighting[] = {{0.9, 2}, {0.7, 1}, {0.35, 0}};
             };
             class Cut {
-                weighting[] = {{0.7, 0}, {0.35, 1}, {0.35, 0}};
+                weighting[] = {{0.7, 2}, {0.35, 1}, {0.35, 0}};
             };
             class Contusion {
-                weighting[] = {{0.5, 0}, {0.35, 1}};
+                weighting[] = {{0.5, 1}, {0.35, 1}};
                 sizeMultiplier = 2;
+                painMultiplier = 0.9;
+            };
+            class InternalBleeding {
+                weighting[] = {{1, 1}, {0.35, 0}};
+                sizeMultiplier = 0.7;
                 painMultiplier = 0.9;
             };
         };
@@ -140,11 +170,19 @@ class ACE_Medical_Injuries {
                 weighting[] = {{1, 1}, {0.8, 0}};
             };
             class Cut {
-                weighting[] = {{1.5, 0}, {0.35, 1}, {0, 0}};
+                weighting[] = {{1.5, 1}, {0.35, 1}, {0, 0}};
+            };
+            class Laceration {
+                weighting[] = {{1.5, 1}, {0.35, 1}, {0, 0}};
             };
             class Contusion {
-                weighting[] = {{0.5, 0}, {0.35, 1}};
+                weighting[] = {{1, 2}, {0.35, 1}};
                 sizeMultiplier = 2;
+                painMultiplier = 0.9;
+            };
+            class InternalBleeding {
+                weighting[] = {{1, 1}, {0.8, 0}};
+                sizeMultiplier = 1.3;
                 painMultiplier = 0.9;
             };
         };
@@ -152,20 +190,28 @@ class ACE_Medical_Injuries {
             // shells tend to involve big pieces of shrapnel, so create fewer and larger wounds
             thresholds[] = {{20, 10}, {10, 5}, {4.5, 2}, {2, 2}, {0.8, 1}, {0.2, 1}, {0, 0}};
             selectionSpecific = 0;
+            class woundHandlers: woundHandlers {
+                GVAR(eviscerationHit) = QFUNC(woundsHandlerEviscerationHit);
+            };
             class Avulsion {
                 weighting[] = {{1.5, 1}, {1.1, 0}};
             };
             class VelocityWound {
-                weighting[] = {{1.5, 0}, {1.1, 1}, {0.7, 0}};
+                weighting[] = {{1.5, 1}, {1.1, 1}, {0.7, 0}};
             };
             class PunctureWound {
-                weighting[] = {{0.9, 0}, {0.7, 1}, {0.35, 0}};
+                weighting[] = {{0.9, 1}, {0.7, 1}, {0.35, 0}};
             };
             class Cut {
-                weighting[] = {{0.7, 0}, {0.35, 1}, {0.35, 0}};
+                weighting[] = {{0.7, 1}, {0.35, 1}, {0.35, 0}};
             };
             class Contusion {
-                weighting[] = {{0.5, 0}, {0.35, 1}};
+                weighting[] = {{0.5, 1}, {0.35, 1}};
+                sizeMultiplier = 2;
+                painMultiplier = 0.9;
+            };
+            class InternalBleeding {
+                weighting[] = {{0.5, 1}, {0.35, 1}};
                 sizeMultiplier = 2;
                 painMultiplier = 0.9;
             };
@@ -199,7 +245,10 @@ class ACE_Medical_Injuries {
                 weighting[] = {{0.1, 1}, {0.1, 0}};
             };
             class Laceration {
-
+                weighting[] = {{0.1, 1}, {0.1, 0}};
+            };
+            class InternalBleeding {
+                weighting[] = {{0.4, 0}, {0.2, 1}};
             };
         };
         class collision {
@@ -209,10 +258,10 @@ class ACE_Medical_Injuries {
                 weighting[] = {{1, 2}, {0.5, 0.5}, {0.5, 0}};
             };
             class Abrasion {
-                weighting[] = {{0.4, 0}, {0.2, 1}, {0, 0}};
+                weighting[] = {{0.4, 1}, {0.2, 1}, {0, 0}};
             };
             class Contusion {
-                weighting[] = {{0.4, 0}, {0.2, 1}};
+                weighting[] = {{0.4, 1}, {0.2, 1}};
             };
             class Crush {
                 weighting[] = {{0.4, 1}, {0.2, 0}};
@@ -220,7 +269,11 @@ class ACE_Medical_Injuries {
             class Cut {
                 weighting[] = {{0.1, 1}, {0.1, 0}};
             };
+            class InternalBleeding {
+                weighting[] = {{0.4, 1}, {0.2, 1}};
+            };
             class Laceration {
+                weighting[] = {{0.1, 1}, {0.1, 0}};
             };
         };
         class falling {
@@ -251,10 +304,18 @@ class ACE_Medical_Injuries {
             class Cut {
                 weighting[] = {{0.1, 1}, {0.1, 0}};
             };
+            class InternalBleeding {
+                weighting[] = {{0.1, 1}, {0.1, 0}};
+                sizeMultiplier = 2;
+                painMultiplier = 0.9;
+            };
         };
         class stab {
             thresholds[] = {{0.1, 1}, {0.1, 0}};
             selectionSpecific = 1;
+            class woundHandlers: woundHandlers {
+                GVAR(eviscerationHit) = QFUNC(woundsHandlerEviscerationHit);
+            };
             class Cut {
                 weighting[] = {{0.1, 1}, {0.1, 0}};
             };

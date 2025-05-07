@@ -1,8 +1,9 @@
 #define COMPONENT hitpoints
 #define COMPONENT_BEAUTIFIED KAT - Hitpoints
 #include "\x\kat\addons\main\script_mod.hpp"
+#include "\x\kat\addons\gui\gui_defines.hpp"
 
-// #define DEBUG_MODE_FULL
+#define DEBUG_MODE_FULL
 // #define DISABLE_COMPILE_CACHE
 // #define ENABLE_PERFORMANCE_COUNTERS
 

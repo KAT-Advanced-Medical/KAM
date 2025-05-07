@@ -18,14 +18,6 @@ class CfgFunctions {
             };
         };
     };
-    class overwrite_ace_medical_damage {
-        tag = "ace_medical_damage";
-        class ace_medical_damage {
-            class woundsHandlerBurning {
-                file = QPATHTOF(functions\fnc_woundsHandlerBurning.sqf);
-            };
-        };
-    };
     class overwrite_medical_treatment {
         tag = "ace_medical_treatment";
         class ace_medical_treatment {

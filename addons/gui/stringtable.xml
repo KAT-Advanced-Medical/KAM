@@ -325,28 +325,28 @@
         <Key ID="STR_KAT_GUI_Head">
             <English>Head</English>
         </Key>
-        <Key ID="STR_KAT_GUI_ArmLeft">
+        <Key ID="STR_KAT_GUI_LeftArm">
             <English>Left Arm</English>
         </Key>
-        <Key ID="STR_KAT_GUI_ArmUpperLeft">
+        <Key ID="STR_KAT_GUI_UpperLeftArm">
             <English>Upper Left Arm</English>
         </Key>
-        <Key ID="STR_KAT_GUI_ArmRight">
+        <Key ID="STR_KAT_GUI_RightArm">
             <English>Right Arm</English>
         </Key>
-        <Key ID="STR_KAT_GUI_ArmUpperRight">
+        <Key ID="STR_KAT_GUI_UpperRightArm">
             <English>Upper Right Arm</English>
         </Key>
-        <Key ID="STR_KAT_GUI_LegLeft">
+        <Key ID="STR_KAT_GUI_LeftLeg">
             <English>Left Leg</English>
         </Key>
-        <Key ID="STR_KAT_GUI_LegUpperLeft">
+        <Key ID="STR_KAT_GUI_UpperLeftLeg">
             <English>Upper Left Leg</English>
         </Key>
-        <Key ID="STR_KAT_GUI_LegRight">
+        <Key ID="STR_KAT_GUI_RightLeg">
             <English>Right Leg</English>
         </Key>
-        <Key ID="STR_KAT_GUI_LegUpperRight">
+        <Key ID="STR_KAT_GUI_UpperRightLeg">
             <English>Upper Right Leg</English>
         </Key>
         <Key ID="STR_KAT_GUI_SelectHead">
@@ -370,20 +370,628 @@
         <Key ID="STR_KAT_GUI_SelectRightArm">
             <English>Select Lower Right Arm</English>
         </Key>
-        <Key ID="STR_KAT_GUI_SelectRightUpperArm">
+        <Key ID="STR_KAT_GUI_SelectUpperRightArm">
             <English>Select Upper Right Arm</English>
         </Key>
         <Key ID="STR_KAT_GUI_SelectLeftLeg">
             <English>Select Lower Left Leg</English>
         </Key>
-        <Key ID="STR_KAT_GUI_SelectLeftUpperLeg">
+        <Key ID="STR_KAT_GUI_SelectUpperLeftLeg">
             <English>Select Upper Left Leg</English>
         </Key>
         <Key ID="STR_KAT_GUI_SelectRightLeg">
             <English>Select Lower Right Leg</English>
         </Key>
-        <Key ID="STR_KAT_GUI_SelectRightUpperLeg">
+        <Key ID="STR_KAT_GUI_SelectUpperRightLeg">
             <English>Select Upper Right Leg</English>
+        </Key>
+        <Key ID="STR_KAT_GUI_Status_SplintWrapped">
+            <English>Splint Wrapped</English>
+        </Key>
+        <Key ID="STR_KAT_GUI_Abrasion">
+            <English>Scrape</English>
+            <Czech>Odřenina</Czech>
+            <French>Écorchure</French>
+            <Spanish>Arañazo</Spanish>
+            <Italian>Scorticatura</Italian>
+            <Polish>Draśnięcie</Polish>
+            <Portuguese>Raspão</Portuguese>
+            <Russian>Ссадина</Russian>
+            <German>Kratzer</German>
+            <Korean>긁힘</Korean>
+            <Japanese>擦り傷</Japanese>
+            <Chinese>擦傷</Chinese>
+            <Chinesesimp>擦伤</Chinesesimp>
+            <Turkish>Sıyrık</Turkish>
+            <Hungarian>Horzsolás</Hungarian>
+        </Key>
+        <Key ID="STR_KAT_GUI_Abrasion_Large">
+            <English>Large Scrape</English>
+            <Czech>Velká odřenina</Czech>
+            <French>Grande écorchure</French>
+            <Spanish>Arañazo severo</Spanish>
+            <Italian>Ampia Scorticatura</Italian>
+            <Polish>Duże draśnięcie</Polish>
+            <Portuguese>Raspão grave</Portuguese>
+            <Russian>Большая ссадина</Russian>
+            <German>Großer Kratzer</German>
+            <Korean>심하게 긁힘</Korean>
+            <Japanese>大きな擦り傷</Japanese>
+            <Chinese>嚴重擦傷</Chinese>
+            <Chinesesimp>重度擦伤</Chinesesimp>
+            <Turkish>Büyük Sıyrık</Turkish>
+            <Hungarian>Nagy horzsolás</Hungarian>
+        </Key>
+        <Key ID="STR_KAT_GUI_Abrasion_Medium">
+            <English>Medium Scrape</English>
+            <Czech>Středně velká odřenina</Czech>
+            <French>Moyenne écorchure</French>
+            <Spanish>Arañazo medio</Spanish>
+            <Italian>Media Scorticatura</Italian>
+            <Polish>Średnie draśnięcie</Polish>
+            <Portuguese>Raspão médio</Portuguese>
+            <Russian>Средняя ссадина</Russian>
+            <German>Mittlerer Kratzer</German>
+            <Korean>꽤 긁힘</Korean>
+            <Japanese>中くらいの擦り傷</Japanese>
+            <Chinese>中度擦傷</Chinese>
+            <Chinesesimp>中度擦伤</Chinesesimp>
+            <Turkish>Orta Sıyrık</Turkish>
+            <Hungarian>Közepes horzsolás</Hungarian>
+        </Key>
+        <Key ID="STR_KAT_GUI_Abrasion_Minor">
+            <English>Minor Scrape</English>
+            <Czech>Malá odřenina</Czech>
+            <French>Petite écorchure</French>
+            <Spanish>Arañazo menor</Spanish>
+            <Italian>Minima Scorticatura</Italian>
+            <Polish>Pomniejsze draśnięcie</Polish>
+            <Portuguese>Raspão leve</Portuguese>
+            <Russian>Малая ссадина</Russian>
+            <German>Kleiner Kratzer</German>
+            <Korean>조금 긁힘</Korean>
+            <Japanese>小さな擦り傷</Japanese>
+            <Chinese>小擦傷</Chinese>
+            <Chinesesimp>轻度擦伤</Chinesesimp>
+            <Turkish>Küçük Sıyrık</Turkish>
+            <Hungarian>Kis horzsolás</Hungarian>
+        </Key>
+        <Key ID="STR_KAT_GUI_Avulsion">
+            <English>Avulsion</English>
+            <Czech>Avulze</Czech>
+            <French>Avulsion</French>
+            <Spanish>Avulsión</Spanish>
+            <Italian>Avulsione</Italian>
+            <Polish>Rana płatowa</Polish>
+            <Portuguese>Avulsão</Portuguese>
+            <Russian>Авульсия</Russian>
+            <German>Avulsion</German>
+            <Korean>찢김</Korean>
+            <Japanese>剥離傷</Japanese>
+            <Chinese>撕除傷</Chinese>
+            <Chinesesimp>撕脱伤</Chinesesimp>
+            <Turkish>Kopma</Turkish>
+            <Hungarian>Leszakadás</Hungarian>
+        </Key>
+        <Key ID="STR_KAT_GUI_Avulsion_Large">
+            <English>Large Avulsion</English>
+            <Czech>Velká avulze</Czech>
+            <French>Grande avulsion</French>
+            <Spanish>Avulsión severa</Spanish>
+            <Italian>Grande Avulsione</Italian>
+            <Polish>Duża rana płatowa</Polish>
+            <Portuguese>Avulsão grave</Portuguese>
+            <Russian>Большая Авульсия</Russian>
+            <German>Große Avulsion</German>
+            <Korean>크게 찢김</Korean>
+            <Japanese>大きな剥離傷</Japanese>
+            <Chinese>嚴重撕除傷</Chinese>
+            <Chinesesimp>重度撕脱伤</Chinesesimp>
+            <Turkish>Büyük Kopuk</Turkish>
+            <Hungarian>Nagy leszakadás</Hungarian>
+        </Key>
+        <Key ID="STR_KAT_GUI_Avulsion_Medium">
+            <English>Medium Avulsion</English>
+            <Czech>Střední avulze</Czech>
+            <French>Moyenne avulsion</French>
+            <Spanish>Avulsión media</Spanish>
+            <Italian>Media Avulsione</Italian>
+            <Polish>Średnia rana płatowa</Polish>
+            <Portuguese>Avulsão média</Portuguese>
+            <Russian>Средняя Авульсия</Russian>
+            <German>Mittlere Avulsion</German>
+            <Korean>꽤 찢김</Korean>
+            <Japanese>中くらいの剥離傷</Japanese>
+            <Chinese>中度撕除傷</Chinese>
+            <Chinesesimp>中度撕脱伤</Chinesesimp>
+            <Turkish>Orta Kopuk</Turkish>
+            <Hungarian>Közepes leszakadás</Hungarian>
+        </Key>
+        <Key ID="STR_KAT_GUI_Avulsion_Minor">
+            <English>Minor Avulsion</English>
+            <Czech>Malá avulze</Czech>
+            <French>Petite avulsion</French>
+            <Spanish>Avulsión menor</Spanish>
+            <Italian>Piccola Avulsione</Italian>
+            <Polish>Pomniejsza rana płatowa</Polish>
+            <Portuguese>Avulsão leve</Portuguese>
+            <Russian>Малая Авульсия</Russian>
+            <German>Kleine Avulsion</German>
+            <Korean>조금 찢김</Korean>
+            <Japanese>小さな剥離傷</Japanese>
+            <Chinese>小撕除傷</Chinese>
+            <Chinesesimp>轻度撕脱伤</Chinesesimp>
+            <Turkish>Küçük Kopuk</Turkish>
+            <Hungarian>Kis leszakadás</Hungarian>
+        </Key>
+        <Key ID="STR_KAT_GUI_Contusion">
+            <English>Bruise</English>
+            <Czech>Modřina</Czech>
+            <French>Hématome</French>
+            <Spanish>Contusión</Spanish>
+            <Italian>Contusione</Italian>
+            <Polish>Stłuczenie</Polish>
+            <Portuguese>Contusão</Portuguese>
+            <Russian>Ушиб</Russian>
+            <German>Prellung</German>
+            <Korean>멍</Korean>
+            <Japanese>打撲傷</Japanese>
+            <Chinese>挫傷</Chinese>
+            <Chinesesimp>挫伤</Chinesesimp>
+            <Turkish>Yara</Turkish>
+            <Hungarian>Zúzódás</Hungarian>
+        </Key>
+        <Key ID="STR_KAT_GUI_Contusion_Large">
+            <English>Large Bruise</English>
+            <Czech>Velká modřina</Czech>
+            <French>Grand hématome</French>
+            <Spanish>Contusión severa</Spanish>
+            <Italian>Grande Contusione</Italian>
+            <Polish>Duże stłuczenie</Polish>
+            <Portuguese>Contusão grave</Portuguese>
+            <Russian>Сильный ушиб</Russian>
+            <German>Große Prellung</German>
+            <Korean>심하게 멍듬</Korean>
+            <Japanese>大きな打撲傷</Japanese>
+            <Chinese>嚴重挫傷</Chinese>
+            <Chinesesimp>重度挫伤</Chinesesimp>
+            <Turkish>Büyük Yara</Turkish>
+            <Hungarian>Nagy zúzódás</Hungarian>
+        </Key>
+        <Key ID="STR_KAT_GUI_Contusion_Medium">
+            <English>Medium Bruise</English>
+            <Czech>Středně velká modřina</Czech>
+            <French>Moyen hématome</French>
+            <Spanish>Contusión media</Spanish>
+            <Italian>Media Contusione</Italian>
+            <Polish>Średnie stłuczenie</Polish>
+            <Portuguese>Contusão média</Portuguese>
+            <Russian>Средний ушиб</Russian>
+            <German>Mittlere Prellung</German>
+            <Korean>꽤 멍듬</Korean>
+            <Japanese>中くらいの打撲傷</Japanese>
+            <Chinese>中度挫傷</Chinese>
+            <Chinesesimp>中度挫伤</Chinesesimp>
+            <Turkish>Orta Yara</Turkish>
+            <Hungarian>Közepes zúzódás</Hungarian>
+        </Key>
+        <Key ID="STR_KAT_GUI_Contusion_Minor">
+            <English>Minor Bruise</English>
+            <Czech>Malá modřina</Czech>
+            <French>Petit hématome</French>
+            <Spanish>Contusión menor</Spanish>
+            <Italian>Piccola Contusione</Italian>
+            <Polish>Pomniejsze stłuczenie</Polish>
+            <Portuguese>Contusão leve</Portuguese>
+            <Russian>Слабый ушиб</Russian>
+            <German>Kleine Prellung</German>
+            <Korean>조금 멍듬</Korean>
+            <Japanese>小さな打撲傷</Japanese>
+            <Chinese>小挫傷</Chinese>
+            <Chinesesimp>轻度挫伤</Chinesesimp>
+            <Turkish>Küçük Yara</Turkish>
+            <Hungarian>Kis zúzódás</Hungarian>
+        </Key>
+        <Key ID="STR_KAT_GUI_Crush">
+            <English>Crushed Tissue</English>
+            <Czech>Zhmoždění měkkých tkání</Czech>
+            <French>Tissu écrasé</French>
+            <Spanish>Tejido triturado</Spanish>
+            <Italian>Tessuto Schiacciato</Italian>
+            <Polish>Zgniecienie tkanek miękkich</Polish>
+            <Portuguese>Tecido esmagado</Portuguese>
+            <Russian>Компрессионная травма</Russian>
+            <German>Quetschverletzung</German>
+            <Korean>뭉개짐</Korean>
+            <Japanese>圧挫傷</Japanese>
+            <Chinese>壓迫傷</Chinese>
+            <Chinesesimp>挤压伤</Chinesesimp>
+            <Turkish>Ezilmiş Doku</Turkish>
+            <Hungarian>Zúzott szövet</Hungarian>
+        </Key>
+        <Key ID="STR_KAT_GUI_Crush_Large">
+            <English>Large Crushed Tissue</English>
+            <Czech>Velké zhmoždění měkkých tkání</Czech>
+            <French>Tissu fortement écrasé</French>
+            <Spanish>Tejido triturado severo</Spanish>
+            <Italian>Molto Tessuto Schiacciato</Italian>
+            <Polish>Duże zgniecienie tkanek miękkich</Polish>
+            <Portuguese>Tecido esmagado grave</Portuguese>
+            <Russian>Сильная компрессионная травма</Russian>
+            <German>Große Quetschverletzung</German>
+            <Korean>심하게 뭉개짐</Korean>
+            <Japanese>大きな圧挫傷</Japanese>
+            <Chinese>嚴重壓迫傷</Chinese>
+            <Chinesesimp>重度挤压伤</Chinesesimp>
+            <Turkish>Büyük Ezilmiş Doku</Turkish>
+            <Hungarian>Nagy zúzött szövet</Hungarian>
+        </Key>
+        <Key ID="STR_KAT_GUI_Crush_Medium">
+            <English>Medium Crushed Tissue</English>
+            <Czech>Střední zhmoždění měkkých tkání</Czech>
+            <French>Tissu moyennement écrasé</French>
+            <Spanish>Tejido triturado medio</Spanish>
+            <Italian>Medio Tessuto Schiacciato</Italian>
+            <Polish>Średnie zgniecienie tkanek miękkich</Polish>
+            <Portuguese>Tecido esmagado médio</Portuguese>
+            <Russian>Умеренная компрессионная травма</Russian>
+            <German>Mittlere Quetschverletzung</German>
+            <Korean>꽤 뭉개짐</Korean>
+            <Japanese>中くらいの圧挫傷</Japanese>
+            <Chinese>中度壓迫傷</Chinese>
+            <Chinesesimp>中度挤压伤</Chinesesimp>
+            <Turkish>Orta Ezilmiş Doku</Turkish>
+            <Hungarian>Közepes zúzott szövet</Hungarian>
+        </Key>
+        <Key ID="STR_KAT_GUI_Crush_Minor">
+            <English>Minor Crushed Tissue</English>
+            <Czech>Malé zhmoždění měkkých tkání</Czech>
+            <French>Tissu légèrement écrasé</French>
+            <Spanish>Tejido triturado menor</Spanish>
+            <Italian>Poco Tessuto Schiacciato</Italian>
+            <Polish>Pomniejsze zgniecienie tkanek miękkich</Polish>
+            <Portuguese>Tecido esmagado leve</Portuguese>
+            <Russian>Слабая компрессионная травма</Russian>
+            <German>Kleine Quetschverletzung</German>
+            <Korean>조금 뭉개짐</Korean>
+            <Japanese>小さな圧挫傷</Japanese>
+            <Chinese>小壓迫傷</Chinese>
+            <Chinesesimp>轻度挤压伤</Chinesesimp>
+            <Turkish>Küçük Ezilmiş Doku</Turkish>
+            <Hungarian>Kis zúzott szövet</Hungarian>
+        </Key>
+        <Key ID="STR_KAT_GUI_Cut">
+            <English>Cut</English>
+            <Czech>Řezná rána</Czech>
+            <French>Coupure</French>
+            <Spanish>Corte</Spanish>
+            <Italian>Taglio</Italian>
+            <Polish>Rana cięta</Polish>
+            <Portuguese>Corte</Portuguese>
+            <Russian>Порез</Russian>
+            <German>Schnittwunde</German>
+            <Korean>베임</Korean>
+            <Japanese>切り傷</Japanese>
+            <Chinese>割傷</Chinese>
+            <Chinesesimp>割伤</Chinesesimp>
+            <Turkish>Kesik</Turkish>
+            <Hungarian>Vágás</Hungarian>
+        </Key>
+        <Key ID="STR_KAT_GUI_Cut_Large">
+            <English>Large Cut</English>
+            <Czech>Velká řezná rána</Czech>
+            <French>Large coupure</French>
+            <Spanish>Corte severo</Spanish>
+            <Italian>Grande Taglio</Italian>
+            <Polish>Duża rana cięta</Polish>
+            <Portuguese>Corte grave</Portuguese>
+            <Russian>Сильный порез</Russian>
+            <German>Große Schnittwunde</German>
+            <Korean>심하게 베임</Korean>
+            <Japanese>大きな切り傷</Japanese>
+            <Chinese>嚴重割傷</Chinese>
+            <Chinesesimp>重度割伤</Chinesesimp>
+            <Turkish>Büyük Kesik</Turkish>
+            <Hungarian>Nagy vágás</Hungarian>
+        </Key>
+        <Key ID="STR_KAT_GUI_Cut_Medium">
+            <English>Medium Cut</English>
+            <Czech>Střední řezná rána</Czech>
+            <French>Coupure moyenne</French>
+            <Spanish>Corte mediano</Spanish>
+            <Italian>Medio Taglio</Italian>
+            <Polish>Średnia rana cięta</Polish>
+            <Portuguese>Corte médio</Portuguese>
+            <Russian>Средний порез</Russian>
+            <German>Mittlere Schnittwunde</German>
+            <Korean>꽤 베임</Korean>
+            <Japanese>中くらいの切り傷</Japanese>
+            <Chinese>中度割傷</Chinese>
+            <Chinesesimp>中度割伤</Chinesesimp>
+            <Turkish>Orta Kesik</Turkish>
+            <Hungarian>Közepes vágás</Hungarian>
+        </Key>
+        <Key ID="STR_KAT_GUI_Cut_Minor">
+            <English>Small Cut</English>
+            <Czech>Malá řezná rána</Czech>
+            <French>Petite coupure</French>
+            <Spanish>Corte menor</Spanish>
+            <Italian>Piccolo Taglio</Italian>
+            <Polish>Pomniejsza rana cięta</Polish>
+            <Portuguese>Corte leve</Portuguese>
+            <Russian>Мелкий порез</Russian>
+            <German>Kleine Schnittwunde</German>
+            <Korean>조금 베임</Korean>
+            <Japanese>小さな切り傷</Japanese>
+            <Chinese>小割傷</Chinese>
+            <Chinesesimp>轻度割伤</Chinesesimp>
+            <Turkish>Küçük Kesik</Turkish>
+            <Hungarian>Kis vágás</Hungarian>
+        </Key>
+        <Key ID="STR_KAT_GUI_Laceration">
+            <English>Tear</English>
+            <Czech>Tržná rána</Czech>
+            <French>Lacération</French>
+            <Spanish>Desgarro</Spanish>
+            <Italian>Strappo</Italian>
+            <Polish>Rozerwanie skóry</Polish>
+            <Portuguese>Ruptura</Portuguese>
+            <Russian>Рваная рана</Russian>
+            <German>Riss</German>
+            <Korean>열상</Korean>
+            <Japanese>裂傷</Japanese>
+            <Chinese>撕裂傷</Chinese>
+            <Chinesesimp>撕裂伤</Chinesesimp>
+            <Turkish>Yırtık</Turkish>
+            <Hungarian>Szakadás</Hungarian>
+        </Key>
+        <Key ID="STR_KAT_GUI_Laceration_Large">
+            <English>Large Tear</English>
+            <Czech>Velká tržná rána</Czech>
+            <French>Grande lacération</French>
+            <Spanish>Desgarro severo</Spanish>
+            <Italian>Grande Strappo</Italian>
+            <Polish>Duże rozerwanie skóry</Polish>
+            <Portuguese>Ruptura grave</Portuguese>
+            <Russian>Большая рваная рана</Russian>
+            <German>Großer Riss</German>
+            <Korean>심한 열상</Korean>
+            <Japanese>大きな裂傷</Japanese>
+            <Chinese>嚴重撕裂傷</Chinese>
+            <Chinesesimp>重度撕裂伤</Chinesesimp>
+            <Turkish>Büyük Yırtık</Turkish>
+            <Hungarian>Nagy szakadás</Hungarian>
+        </Key>
+        <Key ID="STR_KAT_GUI_Laceration_Medium">
+            <English>Medium Tear</English>
+            <Czech>Střední tržná rána</Czech>
+            <French>Moyenne lacération</French>
+            <Spanish>Desgarro medio</Spanish>
+            <Italian>Medio Strappo</Italian>
+            <Polish>Średnie rozerwanie skóry</Polish>
+            <Portuguese>Ruptura média</Portuguese>
+            <Russian>Средняя рваная рана</Russian>
+            <German>Mittlerer Riss</German>
+            <Korean>꽤 큰 열상</Korean>
+            <Japanese>中くらいの裂傷</Japanese>
+            <Chinese>中度撕裂傷</Chinese>
+            <Chinesesimp>中度撕裂伤</Chinesesimp>
+            <Turkish>Orta Yırtık</Turkish>
+            <Hungarian>Közepes szakadás</Hungarian>
+        </Key>
+        <Key ID="STR_KAT_GUI_Laceration_Minor">
+            <English>Small Tear</English>
+            <Czech>Malá tržná rána</Czech>
+            <French>Petite lacération</French>
+            <Spanish>Desgarro menor</Spanish>
+            <Italian>Piccolo Strappo</Italian>
+            <Polish>Pomniejsze rozerwanie skóry</Polish>
+            <Portuguese>Ruptura leve</Portuguese>
+            <Russian>Малая рваная рана</Russian>
+            <German>Kleiner Riss</German>
+            <Korean>조그마한 열상</Korean>
+            <Japanese>小さな裂傷</Japanese>
+            <Chinese>小撕裂傷</Chinese>
+            <Chinesesimp>轻度撕裂伤</Chinesesimp>
+            <Turkish>Küçük Yırtık</Turkish>
+            <Hungarian>Kis szakadás</Hungarian>
+        </Key>
+        <Key ID="STR_KAT_GUI_PunctureWound">
+            <English>Puncture Wound</English>
+            <Czech>Bodná rána</Czech>
+            <French>Blessure par perforation</French>
+            <Spanish>Herida punzante</Spanish>
+            <Italian>Ferita Perforante</Italian>
+            <Polish>Rana kłuta</Polish>
+            <Portuguese>Ferimento por perfuração</Portuguese>
+            <Russian>Колотая рана</Russian>
+            <German>Stichwunde</German>
+            <Korean>관통상</Korean>
+            <Japanese>刺し傷</Japanese>
+            <Chinese>刺傷</Chinese>
+            <Chinesesimp>刺伤</Chinesesimp>
+            <Turkish>Delinme Yarası</Turkish>
+            <Hungarian>Szúrt seb</Hungarian>
+        </Key>
+        <Key ID="STR_KAT_GUI_PunctureWound_Large">
+            <English>Large Puncture Wound</English>
+            <Czech>Velká bodná rána</Czech>
+            <French>Grande perforation</French>
+            <Spanish>Herida punzante severa</Spanish>
+            <Italian>Grande Ferita Perforante</Italian>
+            <Polish>Duża rana kłuta</Polish>
+            <Portuguese>Ferimento grave por perfuração</Portuguese>
+            <Russian>Большая колотая рана</Russian>
+            <German>Große Stichwunde</German>
+            <Korean>대형 관통상</Korean>
+            <Japanese>大きな刺し傷</Japanese>
+            <Chinese>嚴重刺傷</Chinese>
+            <Chinesesimp>重度刺伤</Chinesesimp>
+            <Turkish>Büyük Delinme Yarası</Turkish>
+            <Hungarian>Nagy szúrt seb</Hungarian>
+        </Key>
+        <Key ID="STR_KAT_GUI_PunctureWound_Medium">
+            <English>Medium Puncture Wound</English>
+            <Czech>Střední bodná rána</Czech>
+            <French>Moyenne perforation</French>
+            <Spanish>Herida punzante media</Spanish>
+            <Italian>Media Ferita Perforante</Italian>
+            <Polish>Średnia rana kłuta</Polish>
+            <Portuguese>Ferimento médio por perfuração</Portuguese>
+            <Russian>Средняя колотая рана</Russian>
+            <German>Mittlere Stichwunde</German>
+            <Korean>중형 관통상</Korean>
+            <Japanese>中くらいの刺し傷</Japanese>
+            <Chinese>中度刺傷</Chinese>
+            <Chinesesimp>中度刺伤</Chinesesimp>
+            <Turkish>Orta Delinme Yarası</Turkish>
+            <Hungarian>Közepes szúrt seb</Hungarian>
+        </Key>
+        <Key ID="STR_KAT_GUI_PunctureWound_Minor">
+            <English>Minor Puncture Wound</English>
+            <Czech>Malá bodná rána</Czech>
+            <French>Petite perforation</French>
+            <Spanish>Herida punzante menor</Spanish>
+            <Italian>Piccola Ferita Perforante</Italian>
+            <Polish>Pomniejsza rana kłuta</Polish>
+            <Portuguese>Ferimento leve por perfuração</Portuguese>
+            <Russian>Малая колотая рана</Russian>
+            <German>Kleine Stichwunde</German>
+            <Korean>소형 관통상</Korean>
+            <Japanese>小さな刺し傷</Japanese>
+            <Chinese>小刺傷</Chinese>
+            <Chinesesimp>轻度刺伤</Chinesesimp>
+            <Turkish>Küçük Delinme Yarası</Turkish>
+            <Hungarian>Kis szúrt seb</Hungarian>
+        </Key>
+        <Key ID="STR_KAT_GUI_ThermalBurn">
+            <English>Thermal Burn</English>
+            <French>Brûlure thermique</French>
+            <Spanish>Quemadura térmica</Spanish>
+            <Italian>Ustione Termica</Italian>
+            <Polish>Oparzenie</Polish>
+            <Portuguese>Queimadura Térmica</Portuguese>
+            <Russian>Термический ожог</Russian>
+            <German>Thermische Verbrennung</German>
+            <Korean>화상</Korean>
+            <Japanese>熱傷</Japanese>
+            <Chinesesimp>热灼伤</Chinesesimp>
+        </Key>
+        <Key ID="STR_KAT_GUI_ThermalBurn_Large">
+            <English>Major Thermal Burn</English>
+            <French>Sévère brûlure thermique</French>
+            <Spanish>Quemadura térmica severa</Spanish>
+            <Italian>Severa Ustione Termica</Italian>
+            <Polish>Duże oparzenie</Polish>
+            <Portuguese>Queimadura Térmica Grave</Portuguese>
+            <Russian>Сильный термический ожог</Russian>
+            <German>Schwere thermische Verbrennung</German>
+            <Korean>심각한 화상</Korean>
+            <Japanese>重度の熱傷</Japanese>
+            <Chinesesimp>重度热灼伤</Chinesesimp>
+        </Key>
+        <Key ID="STR_KAT_GUI_ThermalBurn_Medium">
+            <English>Medium Thermal Burn</English>
+            <French>Brûlure thermique modérée</French>
+            <Spanish>Quemadura térmica media</Spanish>
+            <Italian>Media Ustione Termica</Italian>
+            <Polish>Średnie oparzenie</Polish>
+            <Portuguese>Queimadura Térmica Média</Portuguese>
+            <Russian>Средний термический ожог</Russian>
+            <German>Mittlere thermische Verbrennung</German>
+            <Korean>꽤 큰 화상</Korean>
+            <Japanese>中度の熱傷</Japanese>
+            <Chinesesimp>中度热灼伤</Chinesesimp>
+        </Key>
+        <Key ID="STR_KAT_GUI_ThermalBurn_Minor">
+            <English>Minor Thermal Burn</English>
+            <French>Légère brûlure thermique</French>
+            <Spanish>Quemadura térmica menor</Spanish>
+            <Italian>Leggera Ustione Termica</Italian>
+            <Polish>Pomniejsze oparzenie</Polish>
+            <Portuguese>Queimadura Térmica Leve</Portuguese>
+            <Russian>Незначительный термический ожог</Russian>
+            <German>Leichte thermische Verbrennung</German>
+            <Korean>작은 화상</Korean>
+            <Japanese>軽度の熱傷</Japanese>
+            <Chinesesimp>轻微热灼伤</Chinesesimp>
+        </Key>
+        <Key ID="STR_KAT_GUI_VelocityWound">
+            <English>Velocity Wound</English>
+            <Czech>Střelné poranění</Czech>
+            <French>Plaie pénétrante</French>
+            <Spanish>Herida de bala</Spanish>
+            <Italian>Ferita Balistica</Italian>
+            <Polish>Rana postrzałowa</Polish>
+            <Portuguese>Ferimento por projétil de arma de fogo</Portuguese>
+            <Russian>Огнестрельная рана</Russian>
+            <German>Ballistisches Trauma</German>
+            <Korean>총상</Korean>
+            <Japanese>銃創</Japanese>
+            <Chinese>槍傷</Chinese>
+            <Chinesesimp>穿透伤</Chinesesimp>
+            <Turkish>Hız Yarası</Turkish>
+            <Hungarian>Lőtt seb</Hungarian>
+        </Key>
+        <Key ID="STR_KAT_GUI_VelocityWound_Large">
+            <English>Large Velocity Wound</English>
+            <Czech>Velké střelné poranění</Czech>
+            <French>Grande plaie pénétrante</French>
+            <Spanish>Herida de bala severa</Spanish>
+            <Italian>Grande Ferita Balistica</Italian>
+            <Polish>Duża rana postrzałowa</Polish>
+            <Portuguese>Ferimento grave por projétil de arma de fogo</Portuguese>
+            <Russian>Большая огнестрельная рана</Russian>
+            <German>Großes Ballistisches Trauma</German>
+            <Korean>대형 총상</Korean>
+            <Japanese>大きな銃創</Japanese>
+            <Chinese>嚴重槍傷</Chinese>
+            <Chinesesimp>重度穿透伤</Chinesesimp>
+            <Turkish>Büyük Hız Yarası</Turkish>
+            <Hungarian>Nagy lőtt seb</Hungarian>
+        </Key>
+        <Key ID="STR_KAT_GUI_VelocityWound_Medium">
+            <English>Medium Velocity Wound</English>
+            <Czech>Střední střelné poranění</Czech>
+            <French>Plaie moyenne pénétrante</French>
+            <Spanish>Herida de bala media</Spanish>
+            <Italian>Media Ferita Balistica</Italian>
+            <Polish>Średnia rana postrzałowa</Polish>
+            <Portuguese>Ferimento médio por projétil de arma de fogo</Portuguese>
+            <Russian>Средняя огнестрельная рана</Russian>
+            <German>Mittleres Ballistisches Trauma</German>
+            <Korean>중형 총상</Korean>
+            <Japanese>中くらいの銃創</Japanese>
+            <Chinese>中度槍傷</Chinese>
+            <Chinesesimp>中度穿透伤</Chinesesimp>
+            <Turkish>Orta Hız Yarası</Turkish>
+            <Hungarian>Közepes lőtt seb</Hungarian>
+        </Key>
+        <Key ID="STR_KAT_GUI_VelocityWound_Minor">
+            <English>Small Velocity Wound</English>
+            <Czech>Malé střelné poranění</Czech>
+            <French>Petite plaie pénétrante</French>
+            <Spanish>Herida de bala menor</Spanish>
+            <Italian>Piccola Ferita Balistica</Italian>
+            <Polish>Pomniejsza rana postrzałowa</Polish>
+            <Portuguese>Ferimento leve por projétil de arma de fogo</Portuguese>
+            <Russian>Малая огнестрельная рана</Russian>
+            <German>Kleines Ballistisches Trauma</German>
+            <Korean>소형 총상</Korean>
+            <Japanese>小さな銃創</Japanese>
+            <Chinese>小槍傷</Chinese>
+            <Chinesesimp>轻度穿透伤</Chinesesimp>
+            <Turkish>Küçük Hız Yarası</Turkish>
+            <Hungarian>Kis lőtt seb</Hungarian>
+        </Key>
+        <Key ID="STR_KAT_GUI_InternalBleeding_Large">
+            <English>Severe Internal Bleeding</English>
+        </Key>
+        <Key ID="STR_KAT_GUI_InternalBleeding_Medium">
+            <English>Moderate Internal Bleeding</English>
+        </Key>
+        <Key ID="STR_KAT_GUI_InternalBleeding_Minor">
+            <English>Light Internal Bleeding</English>
         </Key>
     </Package>
 </Project>

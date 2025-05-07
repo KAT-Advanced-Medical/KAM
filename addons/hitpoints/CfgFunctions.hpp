@@ -67,6 +67,9 @@ class CfgFunctions {
             class fullHealLocal {
                 file = QPATHTOF(functions\fnc_fullHealLocal.sqf);
             };
+            class canBandage {
+                file = QPATHTOF(functions\fnc_canBandage.sqf);
+            };
          };
     };
 };
