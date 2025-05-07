@@ -60,7 +60,7 @@ private _pneumothoraxState = _target getVariable [QGVAR(pneumothorax), [0, 0]];
 private _tensionState = _target getVariable [QGVAR(tensionpneumothorax), [false, false]];
 private _hemoState = _target getVariable [QGVAR(hemopneumothorax), [false, false]];
 
-if (_selectionN isEqualTo 1) then {
+if (_selectionN isEqualTo 2) then {
     private _tensionhemothorax = false;
 
     if (!(GVAR(showPneumothorax_dupe))) then {
