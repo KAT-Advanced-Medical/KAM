@@ -60,7 +60,7 @@ class ACE_Medical_Injuries {
         };
         // wound that is caused by Non-Penetrative Blasts, cannot be bandaged externally.
         class InternalBleeding {
-            bleeding = 0.025;
+            bleeding = 0.02;
             pain = 0.8;
             causeLimping = 1;
             causeFracture = 1;
@@ -119,14 +119,13 @@ class ACE_Medical_Injuries {
             };
             class VelocityWound {
                 // velocity wounds are only in the 0.35-1.5 range
-                weighting[] = {{1.5, 0}, {1.5, 1}, {0.35, 1}, {0.35, 0}};
+                weighting[] = {{1, 1}, {0.35, 0}};
                 // velocity wounds will tend to be medium or large
                 sizeMultiplier = 0.9;
             };
             class InternalBleeding {
                 weighting[] = {{1, 1}, {0.35, 0}};
-                sizeMultiplier = 0.7;
-                painMultiplier = 0.9;
+                sizeMultiplier = 0.2;
             };
         };
         class grenade {
@@ -154,9 +153,8 @@ class ACE_Medical_Injuries {
                 painMultiplier = 0.9;
             };
             class InternalBleeding {
-                weighting[] = {{1, 1}, {0.35, 0}};
+                weighting[] = {{0.7, 2}, {0.35, 1}, {0.35, 0}};
                 sizeMultiplier = 0.7;
-                painMultiplier = 0.9;
             };
         };
         class explosive {
@@ -182,8 +180,7 @@ class ACE_Medical_Injuries {
             };
             class InternalBleeding {
                 weighting[] = {{1, 1}, {0.8, 0}};
-                sizeMultiplier = 1.3;
-                painMultiplier = 0.9;
+                sizeMultiplier = 0.7;
             };
         };
         class shell {
@@ -211,9 +208,8 @@ class ACE_Medical_Injuries {
                 painMultiplier = 0.9;
             };
             class InternalBleeding {
-                weighting[] = {{0.5, 1}, {0.35, 1}};
+                weighting[] = {{1.5, 1}, {1.1, 1}, {0.7, 0}};
                 sizeMultiplier = 2;
-                painMultiplier = 0.9;
             };
         };
         class vehiclehit: explosive {
@@ -246,9 +242,6 @@ class ACE_Medical_Injuries {
             };
             class Laceration {
                 weighting[] = {{0.1, 1}, {0.1, 0}};
-            };
-            class InternalBleeding {
-                weighting[] = {{0.4, 0}, {0.2, 1}};
             };
         };
         class collision {
@@ -306,8 +299,7 @@ class ACE_Medical_Injuries {
             };
             class InternalBleeding {
                 weighting[] = {{0.1, 1}, {0.1, 0}};
-                sizeMultiplier = 2;
-                painMultiplier = 0.9;
+                sizeMultiplier = 0.3;
             };
         };
         class stab {
@@ -331,9 +323,6 @@ class ACE_Medical_Injuries {
             };
             class Crush {
                 weighting[] = {{0.1, 1}, {0.1, 0}};
-            };
-            class Laceration {
-
             };
         };
         class ropeburn {
