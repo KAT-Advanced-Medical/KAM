@@ -29,6 +29,6 @@ private _filteredWounds = [];
 } forEach _woundsOnPart;
 
 private _number = count _filteredWounds;
-private _time = _number * 4;
+private _time = _number * GVAR(woundWrapTime);
 TRACE_4("getWrap",_time,_number,_woundsOnPart,_filteredWounds);
 _time

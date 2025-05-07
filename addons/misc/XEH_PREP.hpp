@@ -48,4 +48,3 @@ PREP(unloadAndCarryPatient);
 PREP(unSlingArmband);
 PREP(updateDamageEffects);
 PREP(useItem);
-PREP(woundsHandlerBurning);

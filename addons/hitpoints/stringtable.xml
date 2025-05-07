@@ -300,5 +300,41 @@
         <Key ID="STR_KAT_Hitpoints_ApplyPressure">
             <English>Apply Pressure to Limb</English>
         </Key>
+        <Key ID="STR_KAT_Hitpoints_">
+            <English></English>
+        </Key>
+        <Key ID="STR_KAT_Hitpoints_setting_enable">
+            <English>Enable Catastrophic Injuries</English>
+        </Key>
+        <Key ID="STR_KAT_Hitpoints_Subcatagory_Catastrophic_Injuries">
+            <English>Catastrophic Injuries</English>
+        </Key>
+        <Key ID="STR_KAT_Hitpoints_setting_enable_desc">
+            <English>Enables Catastrophic Injuries such as Eviscerations, Amputations, and others</English>
+        </Key>
+        <Key ID="STR_KAT_Hitpoints_EviscerationChance">
+            <English>Precent chance of an Evisceration happening</English>
+        </Key>
+        <Key ID="STR_KAT_Hitpoints_Evisceration_DAMAGE_THRESHOLD">
+            <English>Evisceration Damage Threshold </English>
+        </Key>
+        <Key ID="STR_KAT_Hitpoints_Evisceration_DAMAGE_THRESHOLD_DESC">
+            <English>Damage Threshold to cause an Evisceration</English>
+        </Key>
+        <Key ID="STR_KAT_Hitpoints_SETTING_EviscerationDamageThreshold_DamageTaken">
+            <English>Increase Evisceration chance based on damage</English>
+        </Key>
+        <Key ID="STR_KAT_Hitpoints_SETTING_EviscerationDamageThreshold_DamageTaken_DESC">
+            <English>Increase chance of a Evisceration occurring based on damage taken if over the Evisceration damage threshold</English>
+        </Key>
+        <Key ID="str_kat_hitpoints_evisceration">
+            <English>Evisceration</English>
+        </Key>
+        <Key ID="str_kat_hitpoints_woundpackapplied">
+            <English>Wound Pack Applied</English>
+        </Key>
+        <Key ID="str_kat_hitpoints_woundvacapplied">
+            <English>Wound Vac Applied</English>
+        </Key>
     </Package>
 </Project>

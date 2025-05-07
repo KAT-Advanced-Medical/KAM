@@ -56,7 +56,7 @@ if (_target getVariable [QGVAR(nasalCannula), false] && _selectionN isEqualTo 0)
 
 private _ptxEntry = [];
 
-if (_selectionN isEqualTo 1) then {
+if (_selectionN isEqualTo 2) then {
     private _tensionhemothorax = false;
     if (!(GVAR(showPneumothorax_dupe))) then {
         if ((_target getVariable [QGVAR(hemopneumothorax), false]) || (_target getVariable [QGVAR(tensionpneumothorax), false])) then {

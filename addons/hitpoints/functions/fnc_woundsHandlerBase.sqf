@@ -178,7 +178,7 @@ private _bodyPartVisParams = [_unit, false, false, false, false]; // params arra
             _x params ["_classID", "_oldAmountOf", "_oldBleeding", "_oldDamage"];
             if (
                     (_classComplex == _classID) &&
-                    {(_bodyPart isNotEqualTo "body") || {(_woundDamage < PENETRATION_THRESHOLD) isEqualTo (_oldDamage < PENETRATION_THRESHOLD)}} && // penetrating body damage is handled differently
+                    {(_bodyPart isNotEqualTo "body") || {(_woundDamage < PENETRATION_THRESHOLD) isEqualTo (_oldDamage < PENETRATION_THRESHOLD)}} && 
                     {(_bodyPartNToAdd > 3) || {!_causeLimping} || {(_woundDamage <= LIMPING_DAMAGE_THRESHOLD) isEqualTo (_oldDamage <= LIMPING_DAMAGE_THRESHOLD)}} // ensure limping damage is stacked correctly
                     ) exitWith {
                 TRACE_2("merging with existing wound",_injury,_x);
@@ -212,7 +212,7 @@ if (_updateDamageEffects) then {
 if (_createdWounds) then {
     _unit setVariable [VAR_OPEN_WOUNDS, _openWounds, true];
     _unit setVariable [VAR_BODYPART_DAMAGE, _bodyPartDamage, true];
-
+    TRACE_1("CreatedNewWounds",_openWounds);
     _bodyPartVisParams call ACEFUNC(medical_engine,updateBodyPartVisuals);
 
     [QACEGVAR(medical,injured), [_unit, _painLevel]] call CBA_fnc_localEvent;

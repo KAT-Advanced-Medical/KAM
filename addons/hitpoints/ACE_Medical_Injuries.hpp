@@ -88,6 +88,9 @@ class ACE_Medical_Injuries {
             // bullets only create multiple wounds when the damage is very high
             thresholds[] = {{20, 10}, {4.5, 2}, {3, 1}, {0, 1}};
             selectionSpecific = 1;
+            class woundHandlers: woundHandlers {
+                GVAR(eviscerationHit) = QFUNC(woundsHandlerEviscerationHit);
+            };
 
             class Avulsion {
                 // at damage, weight. between points, weight is interpolated then wound is chosen by weighted random.
@@ -124,6 +127,9 @@ class ACE_Medical_Injuries {
             // at low damage numbers, chance to create no wounds - makes it a bit more random instead of consistently covering people in bruises
             thresholds[] = {{20, 10}, {10, 5}, {4, 3}, {1.5, 2}, {0.8, 2}, {0.3, 1}, {0, 0}};
             selectionSpecific = 0;
+            class woundHandlers: woundHandlers {
+                GVAR(eviscerationHit) = QFUNC(woundsHandlerEviscerationHit);
+            };
             class Avulsion {
                 weighting[] = {{1.5, 1}, {1.1, 0}};
             };
@@ -178,6 +184,9 @@ class ACE_Medical_Injuries {
             // shells tend to involve big pieces of shrapnel, so create fewer and larger wounds
             thresholds[] = {{20, 10}, {10, 5}, {4.5, 2}, {2, 2}, {0.8, 1}, {0.2, 1}, {0, 0}};
             selectionSpecific = 0;
+            class woundHandlers: woundHandlers {
+                GVAR(eviscerationHit) = QFUNC(woundsHandlerEviscerationHit);
+            };
             class Avulsion {
                 weighting[] = {{1.5, 1}, {1.1, 0}};
             };
@@ -298,6 +307,9 @@ class ACE_Medical_Injuries {
         class stab {
             thresholds[] = {{0.1, 1}, {0.1, 0}};
             selectionSpecific = 1;
+            class woundHandlers: woundHandlers {
+                GVAR(eviscerationHit) = QFUNC(woundsHandlerEviscerationHit);
+            };
             class Cut {
                 weighting[] = {{0.1, 1}, {0.1, 0}};
             };
