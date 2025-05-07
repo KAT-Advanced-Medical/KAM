@@ -330,13 +330,13 @@
         <Key ID="STR_KAT_Hitpoints_SETTING_EviscerationDamageThreshold_DamageTaken_DESC">
             <English>Increase chance of a Evisceration occurring based on damage taken if over the Evisceration damage threshold</English>
         </Key>
-        <Key ID="str_kat_hitpoints_evisceration">
+        <Key ID="STR_KAT_Hitpoints_evisceration">
             <English>Evisceration</English>
         </Key>
-        <Key ID="str_kat_hitpoints_woundpackapplied">
+        <Key ID="STR_KAT_Hitpoints_woundpackapplied">
             <English>Wound Pack Applied</English>
         </Key>
-        <Key ID="str_kat_hitpoints_woundvacapplied">
+        <Key ID="STR_KAT_Hitpoints_woundvacapplied">
             <English>Wound Vac Applied</English>
         </Key>
     </Package>
