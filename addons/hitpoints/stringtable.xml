@@ -4,6 +4,9 @@
         <Key ID="STR_KAT_Hitpoints_Torso">
             <English>Torso</English>
         </Key>
+        <Key ID="STR_KAT_Hitpoints_Body">
+            <English>Torso</English>
+        </Key>
         <Key ID="STR_KAT_Hitpoints_Chest">
             <English>Chest</English>
         </Key>
