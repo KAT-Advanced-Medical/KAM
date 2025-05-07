@@ -19,7 +19,6 @@ class CfgPatches {
         VERSION_CONFIG;
     };
 };
-#include "CfgEventHandlers.hpp"
 #include "CfgVehicles.hpp"
 #include "CfgEventHandlers.hpp"
 #include "ACE_Medical_Injuries.hpp"
