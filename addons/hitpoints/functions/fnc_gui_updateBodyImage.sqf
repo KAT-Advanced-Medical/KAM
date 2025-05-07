@@ -25,7 +25,6 @@ private _ctrlEvisceration = _ctrlGroup controlsGroupCtrl IDC_BODY_TORSO_EVISCERA
 
 private _activeWoundPack = _target getVariable [QGVAR(activeWoundPack), 0];
 private _evisceration = _target getVariable [QGVAR(evisceration), 0];
-TRACE_5("UPDATEBODYHITPOINTS",_ctrlGroup,_target,_selectionN,_activeWoundPack,_evisceration);
 if (_activeWoundPack == 1) then {
     _ctrlWoundPack ctrlShow true;
 } else {

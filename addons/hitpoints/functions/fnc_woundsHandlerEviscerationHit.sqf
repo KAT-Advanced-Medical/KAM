@@ -24,8 +24,9 @@
 params ["_unit", "_allDamages"];
 (_allDamages select 0) params ["_engineDamage", "_bodyPart"]; // selection-specific
 
-if !(GVAR(CatastrophicEnable) && _bodyPart == "body") exitWith {
-    TRACE_1("NotEnable",_bodyPart);
+private _fixedBodyPart = toLower _bodyPart;
+if !(GVAR(CatastrophicEnable) && _fixedBodyPart == "body") exitWith {
+    TRACE_1("NotEnable",_fixedBodyPart);
     _this};
 if (_engineDamage < GVAR(EviscerationDamageThreshold)) exitWith {
     TRACE_1("NotEnoughDamage",_engineDamage);
@@ -39,10 +40,10 @@ if (GVAR(EviscerationDamageThreshold_TakenDamage)) then {
 private _openWounds = GET_OPEN_WOUNDS(_unit);
 
 private _fnc_create_Evisceration = {
-        private _existingWounds = _openWounds getOrDefault [_bodyPart, [], true];
+        private _existingWounds = _openWounds getOrDefault [_fixedBodyPart, [], true];
         private _bodyPartDamage = GET_BODYPART_DAMAGE(_unit);
         private _woundTypeToAdd = "Evisceration";
-        TRACE_5("create_Evisceration1",_bodyPart,_openWounds,_existingWounds,_bodyPartDamage,_woundTypeToAdd);
+        TRACE_5("create_Evisceration1",_fixedBodyPart,_openWounds,_existingWounds,_bodyPartDamage,_woundTypeToAdd);
         private _woundClassIDToAdd = ACEGVAR(medical_damage,woundClassNames) find _woundTypeToAdd;
         _bodyPartDamage set [3, (_bodyPartDamage select 3) + _woundDamage];
          _unit setVariable [VAR_BODYPART_DAMAGE, _bodyPartDamage, true];

@@ -51,8 +51,9 @@ private _impactFound = -1;
     private _woundEffectiveness = _effectiveness;
 
     // Select the classname from the wound classname storage
+    private _classTest = ACEGVAR(medical_damage,woundClassNamesComplex);
     private _className = ACEGVAR(medical_damage,woundClassNamesComplex) select _classID;
-    TRACE_3("whyyounowork",_className,_bandage,_config);
+    TRACE_5("whyyounowork",_className,_bandage,_config,_classID,_classTest);
 
     // Get the effectiveness of the bandage on this wound type
     if (isClass (_config >> _className)) then {

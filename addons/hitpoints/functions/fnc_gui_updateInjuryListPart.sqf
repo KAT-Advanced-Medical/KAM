@@ -21,7 +21,6 @@
 params ["_ctrl", "_target", "_selectionN", "_entries"];
 
 private _eviscEntry = [];
-diag_log "UPDATEINJURYHITPOINTS";
 if (_selectionN isEqualTo 3) then {
     if ((_target getVariable [QGVAR(evisceration), 0]) > 0) then {
         _eviscEntry pushBack [LLSTRING(Evisceration), [1,0.95,0,1]];

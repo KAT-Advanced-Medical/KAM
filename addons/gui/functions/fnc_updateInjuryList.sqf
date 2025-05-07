@@ -275,7 +275,6 @@ private _fnc_processWounds = {
         if (_amountOf > 0) then {
             private _classIndex = _woundClassID / 10;
             private _category   = _woundClassID % 10;
-            TRACE_2("ProcessWounds",_classIndex,_category);
             private _className = ACEGVAR(medical_damage,woundClassNames) select _classIndex;
             if (_className in ["InternalBleeding", "Evisceration"]) exitWith {};
             private _suffix = ["Minor", "Medium", "Large"] select _category;
@@ -288,7 +287,6 @@ private _fnc_processWounds = {
             };
 
             _woundEntries pushBack [format [_format, _woundDescription], _color];
-            TRACE_3("ProcessWounds",_classIndex,_category,_woundEntries);
         };
     } forEach (_wounds getOrDefault [ALL_BODY_PARTS select _selectionN, []]);
 };
