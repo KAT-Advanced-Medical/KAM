@@ -40,7 +40,7 @@ if (isNull _display) then {
             [_pfhID] call CBA_fnc_removePerFrameHandler;
             QACEGVAR(medical_gui,RscPatientInfo) cutFadeOut 0.3;
             if (((getPosATL _target) # 2) < -9) exitWith {}; // handle dragging corpse/clone
-            [[ELSTRING(medical,DistanceToFar), _target call ACEFUNC(common,getName)], 2] call ACEFUNC(common,displayTextStructured);
+            [[ACELSTRING(medical,DistanceToFar), _target call ACEFUNC(common,getName)], 2] call ACEFUNC(common,displayTextStructured);
         };
 
         // Update body image
