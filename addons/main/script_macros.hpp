@@ -415,7 +415,7 @@
 #define BANDAGE_TIME_S 6
 #define BANDAGE_TIME_M 8
 #define BANDAGE_TIME_L 10
-#define BANDAGE_TIME_MOD_MEDIC -2
+#define BANDAGE_TIME_MOD_MEDIC -4
 #define BANDAGE_TIME_MOD_SELF 4
 
 #define VAR_APPLIEDPRESSURE   QEGVAR(hitpoints,appliedPressure)
