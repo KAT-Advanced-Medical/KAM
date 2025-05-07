@@ -97,6 +97,9 @@ if (_unit getVariable [QGVAR(Tourniquet_LegNecrosis_Threshold), 0] >= 60) then {
 if (_unit getVariable [QGVAR(Tourniquet_LegNecrosis_Threshold), 0] >= 90) then {
     _isLimping = true;
 };
+if (_unit getVariable [QEGVAR(hitpoints,evisceration), 0] > 0) then {
+    _isLimping = true;
+};
 
 if (_unit getVariable [QEGVAR(surgery,reboa), false]) then {
     _isLimping = true;

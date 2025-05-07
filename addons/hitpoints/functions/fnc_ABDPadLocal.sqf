@@ -20,7 +20,7 @@ private _eviscerationLevel = _patient getVariable [QGVAR(evisceration), 0];
 private _newEviscerationLevel = (_eviscerationLevel - 2) max 0;
 _patient setVariable [QGVAR(evisceration), _newEviscerationLevel, true];
 _patient setVariable [QGVAR(activeWoundPack), 1, true];
-if (_eviscerationLevel == 0) then {
+if (_newEviscerationLevel == 0) then {
     [_patient] call EFUNC(misc,updateDamageEffects);
 };
 
