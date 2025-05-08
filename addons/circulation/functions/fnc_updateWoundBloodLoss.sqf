@@ -55,6 +55,7 @@ private _pressureApplied = _appliedPressure select _part;
         } forEach _y;
         _bodyPartBleeding set [_partIndex, _partBleeding];
         TRACE_1("updateWoundBloodLoss",_partBleeding);
+        _unit setVariable [VAR_BODY_BLEED_RATE, _bodyPartBleeding, true];
     };
 } forEach GET_OPEN_WOUNDS(_unit);
 if (selectMax _bodyPartBleeding == 0) exitWith {
@@ -68,7 +69,7 @@ private _limbBleedingRate = ((_leftArmBleeding min 0.3) + (_leftUpperArmBleeding
 
 
 // limb bleeding is scaled down based on the amount of body bleeding
-_limbBleedingRate = _limbBleedingRate * (1 - _bodyBleedingRate);
+_limbBleedingRate = _limbBleedingRate * ((1 - _bodyBleedingRate) min 0.5);
 
 TRACE_3("updateWoundBloodLoss-bleeding",_unit,_bodyBleedingRate,_limbBleedingRate);
 _unit setVariable [VAR_WOUND_BLEEDING, _bodyBleedingRate + _limbBleedingRate, true];

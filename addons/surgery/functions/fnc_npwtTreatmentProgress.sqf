@@ -37,6 +37,11 @@ if (_isBleeding) then {
     [QACEGVAR(medical_treatment,bandageLocal), [_patient, _bodyPart, "Dressing"], _patient] call CBA_fnc_targetEvent; //TODO replace this
 };
 
+if (_bodypart isEqualTo "Body") then {
+    _patient setVariable [QGVAR(evisceration), 0, true];
+    _patient setVariable [QGVAR(activeWoundPack), 2, true];
+};
+
 private _bandagedWounds = GET_BANDAGED_WOUNDS(_patient);
 private _bandagedWoundsOnPart = _bandagedWounds get _bodyPart;
 

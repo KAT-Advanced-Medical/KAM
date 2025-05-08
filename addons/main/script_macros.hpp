@@ -395,6 +395,7 @@
 #define DEFAULT_TOURNIQUET_VALUES [0,0,0,0,0,0,0,0,0,0,0,0]
 #define DEFAULT_FRACTURE_VALUES [0,0,0,0,0,0,0,0,0,0,0,0]
 #define DEFAULT_BODYPART_DAMAGE_VALUES [0,0,0,0,0,0,0,0,0,0,0,0]
+#define DEFAULT_BODY_BLEED_RATE_VALUES   [0,0,0,0,0,0,0,0,0,0,0,0]
 
 #define POS_X(N) ((N) * GUI_GRID_W + GUI_GRID_CENTER_X)
 #define POS_Y(N) ((N) * GUI_GRID_H + GUI_GRID_CENTER_Y)
@@ -423,3 +424,8 @@
 #define VAR_APPLIEDPRESSURE   QEGVAR(hitpoints,appliedPressure)
 #define GET_APPLIEDPRESSURE(unit)   (unit getVariable [VAR_APPLIEDPRESSURE, DEFAULT_APPLIEDPRESSURE_VALUES])
 #define HAS_APPLIEDPRESSURE_ON(unit,index) ((GET_APPLIEDPRESSURE(unit) select index) > 0)
+
+#define VAR_BODY_BLEED_RATE   QEGVAR(hitpoints,limbBleedRate)
+#define GET_BODY_BLEED_RATE(unit)   (unit getVariable [VAR_BODY_BLEED_RATE, DEFAULT_BODY_BLEED_RATE_VALUES])
+#define GET_BODY_PART_RATE(unit,index) (GET_BODY_BLEED_RATE(unit) select index)
+#define HAS_LIMB_BLEEDING(unit,index) ((GET_BODY_BLEED_RATE(unit) select index) > 0)

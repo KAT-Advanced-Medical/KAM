@@ -993,5 +993,35 @@
         <Key ID="STR_KAT_GUI_InternalBleeding_Minor">
             <English>Light Internal Bleeding</English>
         </Key>
+        <Key ID="STR_KAT_GUI_ShowBleeding_Rate">
+            <English>Show Bleeding Rate</English>
+            <French>Afficher le taux de saignement</French>
+            <Spanish>Mostrar tasa de sangrado</Spanish>
+            <Italian>Mostra rateo di sanguinamento</Italian>
+            <Portuguese>Mostrar taxa de sangramento</Portuguese>
+            <Russian>Показать частоту кровотечения</Russian>
+            <German>Blutungsrate anzeigen</German>
+            <Korean>출혈 속도 표시</Korean>
+            <Japanese>出血速度の表示</Japanese>
+            <Chinesesimp>显示流血速度</Chinesesimp>
+        </Key>
+        <Key ID="STR_KAT_GUI_ShowBleeding_Rate_Limb">
+            <English>Show Bleeding Rate Per Limb</English>
+        </Key>
+        <Key ID="STR_KAT_GUI_showBleeding_Description">
+            <English>Display if the patient is bleeding, optionally with rate or with rate on a part by part basis</English>
+        </Key>
+        <Key ID="STR_KAT_GUI_showBleeding_DisplayName">
+            <English>Show Bleeding State</English>
+            <French>Afficher l'état des saignements</French>
+            <Spanish>Mostrar estado de sangrado</Spanish>
+            <Italian>Mostra stato di sanguinamento</Italian>
+            <Portuguese>Mostrar estado de sangramento</Portuguese>
+            <Russian>Показать состояние кровотечения</Russian>
+            <German>Blutungsstatus anzeigen</German>
+            <Korean>출혈 상태 표시</Korean>
+            <Japanese>出血状態の表示</Japanese>
+            <Chinesesimp>显示流血速度</Chinesesimp>
+        </Key>
     </Package>
 </Project>
