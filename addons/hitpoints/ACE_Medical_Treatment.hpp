@@ -1907,14 +1907,14 @@ class ACE_Medical_Treatment {
                 reopeningMaxDelay = 1800;
             };
             class AbrasionMinor: Abrasion {
-                effectiveness = 3;
+                effectiveness = 7;
 
             };
             class AbrasionMedium: Abrasion {
-                effectiveness = 3;
+                effectiveness = 6;
             };
             class AbrasionLarge: Abrasion {
-                effectiveness = 2;
+                effectiveness = 6;
             };
 
             class Avulsion: Abrasion {
@@ -1924,13 +1924,13 @@ class ACE_Medical_Treatment {
                 reopeningMaxDelay = 1800;
             };
             class AvulsionMinor: Avulsion {
-                effectiveness = 4;
+                effectiveness = 5;
             };
             class AvulsionMedium: Avulsion {
-                effectiveness = 3;
+                effectiveness = 4;
             };
             class AvulsionLarge: Avulsion {
-                effectiveness = 2;
+                effectiveness = 5;
             };
 
             class Contusion: Abrasion {
@@ -1950,13 +1950,13 @@ class ACE_Medical_Treatment {
                 reopeningMaxDelay = 1800;
             };
             class CrushMinor: Crush {
-                effectiveness = 3;
+                effectiveness = 6;
             };
             class CrushMedium: Crush {
-                effectiveness = 3;
+                effectiveness = 5;
             };
             class CrushLarge: Crush {
-                effectiveness = 2;
+                effectiveness = 5;
             };
 
             class Cut: Abrasion {
@@ -1966,13 +1966,13 @@ class ACE_Medical_Treatment {
                 reopeningMaxDelay = 1800;
             };
             class CutMinor: Cut {
-                effectiveness = 3;
+                effectiveness = 5;
             };
             class CutMedium: Cut {
-                effectiveness = 3;
+                effectiveness = 4;
             };
             class CutLarge: Cut {
-                effectiveness = 2;
+                effectiveness = 4;
             };
 
             class Laceration: Abrasion {
@@ -1982,13 +1982,13 @@ class ACE_Medical_Treatment {
                 reopeningMaxDelay = 1800;
             };
             class LacerationMinor: Laceration {
-                effectiveness = 3;
+                effectiveness = 5;
             };
             class LacerationMedium: Laceration {
-                effectiveness = 3;
+                effectiveness = 4;
             };
             class LacerationLarge: Laceration {
-                effectiveness = 2;
+                effectiveness = 4;
             };
 
             class VelocityWound: Abrasion {
@@ -1998,29 +1998,29 @@ class ACE_Medical_Treatment {
                 reopeningMaxDelay = 1800;
             };
             class VelocityWoundMinor: VelocityWound {
-                effectiveness = 3;
+                effectiveness = 6;
             };
             class VelocityWoundMedium: VelocityWound {
-                effectiveness = 3;
+                effectiveness = 4;
             };
             class VelocityWoundLarge: VelocityWound {
-                effectiveness = 2;
+                effectiveness = 4;
             };
 
             class PunctureWound: Abrasion {
-                effectiveness = 3;
+                effectiveness = 6;
                 reopeningChance = 0.3;
                 reopeningMinDelay = 600;
                 reopeningMaxDelay = 1800;
             };
             class PunctureWoundMinor: PunctureWound {
-                effectiveness = 3;
+                effectiveness = 8;
             };
             class PunctureWoundMedium: PunctureWound {
-                effectiveness = 3;
+                effectiveness = 6;
             };
             class PunctureWoundLarge: PunctureWound {
-                effectiveness = 2;
+                effectiveness = 4;
             };
             class InternalBleeding: Abrasion {
                 effectiveness = 0;
@@ -2053,19 +2053,17 @@ class ACE_Medical_Treatment {
                 effectiveness = 0;
             };
             class Evisceration: Abrasion {
-                effectiveness = 1;
+                effectiveness = 2;
                 reopeningChance = 0.8;
                 reopeningMinDelay = 300;
                 reopeningMaxDelay = 900;
             };
             class EviscerationMinor: Evisceration {
-                effectiveness = 1;
             };
             class EviscerationMedium: Evisceration {
-                effectiveness = 1;
             };
             class EviscerationLarge: Evisceration {
-                effectiveness = 1;
+                effectiveness = 2;
             };
         };
         class Abdominal_Pad: FieldDressing {
@@ -2238,7 +2236,7 @@ class ACE_Medical_Treatment {
                 effectiveness = 1;
             };
             class EviscerationLarge: Evisceration {
-                effectiveness = 1;
+                effectiveness = 2;
             };
         };
         class Adhesive_Bandage: FieldDressing {
