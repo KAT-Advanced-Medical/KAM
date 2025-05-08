@@ -339,7 +339,7 @@
         <Key ID="STR_KAT_Hitpoints_woundvacapplied">
             <English>Wound Vac Applied</English>
         </Key>
-        <Key ID="STR_KAT_Hitpoints_SETTING_ArterialChance_DESC">
+        <Key ID="STR_KAT_Hitpoints_SETTING_ArterialChance">
             <English>Arterial Bleed Chance</English>
         </Key>
         <Key ID="STR_KAT_Hitpoints_SETTING_ArterialChance_DESC">
