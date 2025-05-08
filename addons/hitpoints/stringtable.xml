@@ -339,5 +339,11 @@
         <Key ID="STR_KAT_Hitpoints_woundvacapplied">
             <English>Wound Vac Applied</English>
         </Key>
+        <Key ID="STR_KAT_Hitpoints_SETTING_ArterialChance_DESC">
+            <English>Arterial Bleed Chance</English>
+        </Key>
+        <Key ID="STR_KAT_Hitpoints_SETTING_ArterialChance_DESC">
+            <English>Chance for a wound to be an arterial bleed (10% - 45% worse bleeding)</English>
+        </Key>
     </Package>
 </Project>

@@ -18,6 +18,16 @@
 ] call CBA_fnc_addSetting;
 
 [
+    QGVAR(ArterialChance),
+    "SLIDER",
+    [LLSTRING(SETTING_ArterialChance), LLSTRING(SETTING_ArterialChance_DESC)],
+    [CBA_SETTINGS_CAT, ELSTRING(GUI,SubCategory_Basic)],
+    [0, 100, 1.5, 1],
+    true
+] call CBA_fnc_addSetting;
+
+
+[
     QGVAR(CatastrophicEnable),
     "CHECKBOX",
     [LLSTRING(SETTING_ENABLE),LLSTRING(SETTING_ENABLE_DESC)],
@@ -41,7 +51,7 @@
     "SLIDER",
     [LLSTRING(Evisceration_DAMAGE_THRESHOLD), LLSTRING(Evisceration_DAMAGE_THRESHOLD_DESC)],
     [CBA_SETTINGS_CAT, LSTRING(Subcatagory_Catastrophic_Injuries)],
-    [0, 4, 1.5, 2],
+    [0, 3, 1.5, 1],
     true
 ] call CBA_fnc_addSetting;
 
@@ -53,3 +63,5 @@
     [true],
     true
 ] call CBA_fnc_addSetting;
+
+
