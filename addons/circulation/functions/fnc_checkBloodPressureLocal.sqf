@@ -20,8 +20,23 @@
 params ["_medic", "_patient", "_bodyPart"];
 
 private _bloodPressure = [0, 0];
+private _tourniquets = GET_TOURNIQUETS(_unit);
+private _occlusionMap = [
+    [4, [4, 5]],
+    [5, [5]],
+    [6, [6, 7]],
+    [7, [7]],
+    [8, [8, 9, 3]],
+    [9, [9, 3]],
+    [10, [10, 11, 3]],
+    [11, [11, 3]]
+];
+private _part = ALL_BODY_PARTS find toLower _bodyPart;
+private _idx = _occlusionMap findIf { _x#0 == _part };
+private _result = if (_idx != -1) then { _occlusionMap select _idx select 1 } else { [] };
+private _isOccluded = { _tourniquets select _x != 0 } count _result > 0;
 
-if (alive _patient && {!([_patient, _bodyPart] call ACEFUNC(medical_treatment,hasTourniquetAppliedTo))}) then {
+if (alive _patient && {!(_isOccluded)}) then {
     _bloodPressure = [_patient] call FUNC(getBloodPressure);
 };
 
