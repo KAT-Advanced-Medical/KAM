@@ -118,7 +118,7 @@ private _bodyPartVisParams = [_unit, false, false, false, false]; // params arra
         private _pain = _woundSize * _painMultiplier * _injuryPain;
         _painLevel = _painLevel + _pain;
 
-        if (random 100 < QGVAR(ArterialChance)) then { 
+        if (random 100 < GVAR(ArterialChance)) then { 
             private _arterialRate = 1.1 + random (1.45 - 1.1);
             private _bleeding = (_woundSize * _bleedMultiplier * _injuryBleedingRate) * _arterialRate;
         } else {
