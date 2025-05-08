@@ -2230,10 +2230,8 @@ class ACE_Medical_Treatment {
                 reopeningMaxDelay = 900;
             };
             class EviscerationMinor: Evisceration {
-                effectiveness = 1;
             };
             class EviscerationMedium: Evisceration {
-                effectiveness = 1;
             };
             class EviscerationLarge: Evisceration {
                 effectiveness = 2;
