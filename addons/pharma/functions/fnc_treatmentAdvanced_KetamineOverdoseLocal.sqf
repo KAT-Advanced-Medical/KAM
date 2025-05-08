@@ -30,14 +30,9 @@ params ["_patient"];
                         params ["_args", "_idPFH"];
                         _args params ["_patient"];
                         private _ht = _patient getVariable [QEGVAR(circulation,ht), []];
-                        if ((_ht findIf {_x isEqualTo "KetamineOD"}) == -1) then {
-                            _ht pushBack "KetamineOD";
-
-                            if (_patient getVariable [QEGVAR(circulation,cardiacArrestType), 0] == 0) then {
+                        if (_patient getVariable [QEGVAR(circulation,cardiacArrestType), 0] == 0) then {
                                 [QACEGVAR(medical,FatalVitals), _patient] call CBA_fnc_localEvent;
-                            };
-                            _patient setVariable [QEGVAR(circulation,ht), _ht, true];
-                            };
+                        };
                     }, [_patient], 15] call CBA_fnc_waitAndExecute;
                     };
                     [_idPFH] call CBA_fnc_removePerFrameHandler;
