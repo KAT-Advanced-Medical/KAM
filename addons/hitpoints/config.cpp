@@ -4,7 +4,18 @@ class CfgPatches {
     class ADDON    {
         name = COMPONENT_NAME;
         units[] = {};
-        weapons[] = {};
+        weapons[] = {
+            "kat_Hemostatic_Injector",
+            "kat_Elastic_Wrap",
+            "kat_4X4_Gauze",
+            "kat_Compressed_Gauze",
+            "kat_Roller_Gauze",
+            "kat_Abdominal_Pad",
+            "kat_ETD",
+            "kat_Hemostatic_Gauze",
+            "kat_Adhesive_Bandage",
+            "kat_Burn_Dressing"
+        };
         magazines[] = { };
         requiredAddons[] = {
             "kat_main",

@@ -21,7 +21,7 @@ class ACE_Medical_Treatment_Actions {
         displayName = CSTRING(Compressed_Gauze);
         displayNameProgress = CSTRING(Compressed_Gauze_Progress);
         icon = QPATHTOF(ui\Compressed_Gauze.paa);
-        allowedSelections[] = {"LeftArm", "RightArm", "LeftLeg", "RightLeg", "UpperLeftArm", "UpperRightArm", "UpperLeftLeg", "UpperRightLeg"};
+        allowedSelections[] = {"Body", "LeftArm", "RightArm", "LeftLeg", "RightLeg", "UpperLeftArm", "UpperRightArm", "UpperLeftLeg", "UpperRightLeg"};
         items[] = {"kat_Compressed_Gauze"};
     };
     class Hemostatic_Gauze: BasicBandage {
@@ -58,7 +58,6 @@ class ACE_Medical_Treatment_Actions {
         displayNameProgress = CSTRING(ETD_Progress);
         icon = QPATHTOF(ui\ETD.paa);
         callbackSuccess = QACEFUNC(medical_treatment,bandage);
-        treatmentTime = 16;
         items[] = {"kat_ETD"};
     };
     class Elastic_Wrap: BasicBandage {
