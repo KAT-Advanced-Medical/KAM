@@ -29,16 +29,9 @@ params ["_patient"];
                     [{
                         params ["_args", "_idPFH"];
                         _args params ["_patient"];
-                        private _ht = _patient getVariable [QEGVAR(circulation,ht), []];
-                        if ((_ht findIf {_x isEqualTo "adenosineOD"}) == -1) then {
-                            _ht pushBack "adenosineOD";
-
-                            if (_patient getVariable [QEGVAR(circulation,cardiacArrestType), 0] == 0) then {
+                        if (_patient getVariable [QEGVAR(circulation,cardiacArrestType), 0] == 0) then {
                                 [QACEGVAR(medical,FatalVitals), _patient] call CBA_fnc_localEvent;
-                            };
-
-                            _patient setVariable [QEGVAR(circulation,ht), _ht, true];
-                            };
+                        };
                     }, [_patient], 15] call CBA_fnc_waitAndExecute;
                     };
                     [_idPFH] call CBA_fnc_removePerFrameHandler;
@@ -47,13 +40,23 @@ params ["_patient"];
                 _patient setVariable [QEGVAR(breathing,lungSurfaceArea), _surfaceArea];
         }, 15, [_patient]] call CBA_fnc_addPerFrameHandler;
 }, _patient, 15] call CBA_fnc_waitAndExecute;
-private _medStack = [_patient, false] call ACEFUNC(medical_treatment,getAllMedicationCount);
-private _medIndex = _medStack find "Adenosine";
-private _hasMed = false;
-if (_medIndex > -1) then {
-    private _medCount = _medStack select (_medIndex + 1);
-    _hasMed = (_medCount > 0);
-};
+[{
+    params ["_patient", "_idPFH"];
+    if (!(alive _patient)) exitWith {
+        [_idPFH] call CBA_fnc_removePerFrameHandler;
+        };
+        private _medStack = [_patient, false] call ACEFUNC(medical_treatment,getAllMedicationCount);
+        private _medIndex = _medStack find "adenosine";
+        private _hasMed = false;
+
+        if (_medIndex > -1) then {
+        private _medCount = _medStack select (_medIndex + 1);
+        _hasMed = (_medCount > 0);
+        if (_hasMed) then {
+            [_idPFH] call CBA_fnc_removePerFrameHandler;
+        };
+    };
+}, 5, [_patient]] call CBA_fnc_addPerFrameHandler;
 [_hasmed, {},{
     params ["_patient"];
     private _AdenosineTarget = 0;

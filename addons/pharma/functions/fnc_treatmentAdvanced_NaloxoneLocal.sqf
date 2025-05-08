@@ -19,6 +19,7 @@ params ["_patient"];
 
 private _medicationArray = _patient getVariable [QACEGVAR(medical,medications), []];
 private _medicationDeleted = false;
+private _ht = _patient getVariable [QEGVAR(circulation,ht), []];
 
 {
     _x params ["_medication"];
@@ -35,6 +36,8 @@ private _medicationDeleted = false;
             _medicationArray deleteAt (_medicationArray find _x);
             _medicationDeleted = true;
             _patient setVariable [QEGVAR(pharma,opioidFactor), 1];
+            _ht deleteAt (_ht find "opioidOD");
+            _patient setVariable [QEGVAR(circulation,ht), _ht, true];
         };
     };
 

@@ -46,13 +46,23 @@ params ["_patient"];
                 if ((random 1000) < 1) then {_patient setDamage 1;};
         }, 20, [_patient]] call CBA_fnc_addPerFrameHandler;
 }, _patient, 20] call CBA_fnc_waitAndExecute;
-private _medStack = [_patient, false] call ACEFUNC(medical_treatment,getAllMedicationCount);
-private _medIndex = _medStack find "Penthrox";
-private _hasMed = false;
-if (_medIndex > -1) then {
-    private _medCount = _medStack select (_medIndex + 1);
-    _hasMed = (_medCount > 0);
-};
+[{
+    params ["_patient", "_idPFH"];
+    if (!(alive _patient)) exitWith {
+        [_idPFH] call CBA_fnc_removePerFrameHandler;
+        };
+        private _medStack = [_patient, false] call ACEFUNC(medical_treatment,getAllMedicationCount);
+        private _medIndex = _medStack find "adenosine";
+        private _hasMed = false;
+
+        if (_medIndex > -1) then {
+        private _medCount = _medStack select (_medIndex + 1);
+        _hasMed = (_medCount > 0);
+        if (_hasMed) then {
+            [_idPFH] call CBA_fnc_removePerFrameHandler;
+        };
+    };
+}, 5, [_patient]] call CBA_fnc_addPerFrameHandler;
 [_hasmed, {}, {
     params ["_patient"];
     private _PenthroxOverdoseTarget = 0;
