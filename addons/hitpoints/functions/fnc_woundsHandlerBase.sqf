@@ -118,13 +118,12 @@ private _bodyPartVisParams = [_unit, false, false, false, false]; // params arra
         private _pain = _woundSize * _painMultiplier * _injuryPain;
         _painLevel = _painLevel + _pain;
 
-        if (random 100 < QGVAR(ArterialChance)) then { 
-            private _arterialRate = 1.1 + random (1.45 - 1.1);
-            private _bleeding = (_woundSize * _bleedMultiplier * _injuryBleedingRate) * _arterialRate;
-        } else {
-            private _bleeding = _woundSize * _bleedMultiplier * _injuryBleedingRate;
-        };
-
+        _arterialRate = 1;
+        if (random 100 < GVAR(ArterialChance)) then {
+            _arterialRate  = random [1.1, 1.3];
+            };
+        _bleeding = (_woundSize * _bleedMultiplier * _injuryBleedingRate) * _arterialRate;
+        TRACE_6("BleedingRate",_bleeding,_woundSize,_bleedMultiplier,_injuryBleedingRate,_arterialRate,GVAR(ArterialChance));
         // large wounds are > LARGE_WOUND_THRESHOLD
         // medium is > LARGE_WOUND_THRESHOLD^2
         // minor is > LARGE_WOUND_THRESHOLD^3
@@ -146,6 +145,7 @@ private _bodyPartVisParams = [_unit, false, false, false, false]; // params arra
         };
 
         #ifdef DEBUG_MODE_FULL
+        diag_log format["%1, damage: %2, peneration: %3, bleeding: %4, pain: %5", _bodyPart, _woundDamage toFixed 2, _woundDamage > PENETRATION_THRESHOLD, _bleeding toFixed 3, _pain toFixed 3];
         systemChat format["%1, damage: %2, peneration: %3, bleeding: %4, pain: %5", _bodyPart, _woundDamage toFixed 2, _woundDamage > PENETRATION_THRESHOLD, _bleeding toFixed 3, _pain toFixed 3];
         #endif
 
