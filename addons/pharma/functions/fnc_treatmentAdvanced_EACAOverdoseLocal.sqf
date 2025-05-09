@@ -19,12 +19,15 @@ params ["_patient"];
 [_patient, EACAOverdose, 1, 900, "", "", -90, -0.3, "", ""] call EFUNC(vitals,addMedicationAdjustment);
 [{
     params ["_patient"];
-    private _EACAOverdoseTarget = 0;
-        [{
-            params ["_patient", "_idPFH"];
+    [{
+            params ["_args", "_idPFH"];
+            _args params ["_patient", "_EACAOverdoseTarget"];
+            _EACAOverdoseTarget = _EACAOverdoseTarget + 1;
+            _args set [1, _EACAOverdoseTarget];
             if (!(alive _patient)) exitWith {
                 [_idPFH] call CBA_fnc_removePerFrameHandler;
             };
+
                 _EACAOverdoseTarget = _EACAOverdoseTarget + 1;
                 if (_EACAOverdoseTarget > 12) exitWith {
                     if (random(100) < 25) then {
@@ -47,5 +50,5 @@ params ["_patient"];
                 private _factorstoremove = 1;
                 _patient setVariable [QGVAR(coagulationFactor), (_coagulationFactor - _factorstoremove), true];
                 if ((random 10000) < 1) then {_patient setDamage 1;};
-        }, 15, [_patient]] call CBA_fnc_addPerFrameHandler;
-}, _patient, 15] call CBA_fnc_waitAndExecute;
+        }, 15, [_patient, 0]] call CBA_fnc_addPerFrameHandler;
+}, [_patient], 15] call CBA_fnc_waitAndExecute;

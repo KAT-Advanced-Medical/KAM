@@ -17,13 +17,14 @@
 params ["_patient"];
 [{
     params ["_patient"];
-    private _adenosineOverdoseTarget = 0;
         [{
-            params ["_patient", "_idPFH"];
+            params ["_args", "_idPFH"];
+            _args params ["_patient", "_adenosineOverdoseTarget"];
             if (!(alive _patient)) exitWith {
                 [_idPFH] call CBA_fnc_removePerFrameHandler;
             };
                 _adenosineOverdoseTarget = _adenosineOverdoseTarget + 1;
+                _args set [1, _adenosineOverdoseTarget];
                 if (_adenosineOverdoseTarget > 12) exitWith {
                     if (random(100) < 15) then {
                     [{
@@ -38,7 +39,7 @@ params ["_patient"];
                 };
                 private _surfaceArea = (_patient getVariable [QEGVAR(breathing,lungSurfaceArea), 400]) - 10;
                 _patient setVariable [QEGVAR(breathing,lungSurfaceArea), _surfaceArea];
-        }, 15, [_patient]] call CBA_fnc_addPerFrameHandler;
+        }, 15, [_patient, _adenosineOverdoseTarget]] call CBA_fnc_addPerFrameHandler;
 }, _patient, 15] call CBA_fnc_waitAndExecute;
 [{
     params ["_patient", "_idPFH"];
@@ -59,9 +60,14 @@ params ["_patient"];
 }, 5, [_patient]] call CBA_fnc_addPerFrameHandler;
 [_hasmed, {},{
     params ["_patient"];
-    private _AdenosineTarget = 0;
+    [{
+        params ["_patient"];
+        _AdenosineTarget = 0;
         [{
-            params ["_patient", "_idPFH"];
+            params ["_args", "_idPFH"];
+            _args params ["_patient", "_AdenosineTarget"];
+            _AdenosineTarget = _AdenosineTarget + 1;
+            _args set [1, _AdenosineTarget];
             if (!(alive _patient)) exitWith {
                 [_idPFH] call CBA_fnc_removePerFrameHandler;
             };
@@ -71,5 +77,6 @@ params ["_patient"];
                 };
                 private _surfaceArea = (_patient getVariable [QEGVAR(breathing,lungSurfaceArea), 400]) + 10;
                 _patient setVariable [QEGVAR(breathing,lungSurfaceArea), _surfaceArea];
-        }, 10, [_patient]] call CBA_fnc_addPerFrameHandler;
-}, _patient, 120] call CBA_fnc_waitUntilAndExecute;
+        }, 10, [_patient,_AdenosineTarget]] call CBA_fnc_addPerFrameHandler;
+    }, [_patient], 10] call CBA_fnc_waitAndExecute;
+}, [_patient]] call CBA_fnc_waitUntilAndExecute;

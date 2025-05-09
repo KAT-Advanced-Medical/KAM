@@ -23,11 +23,13 @@ private _hrAdjust = -50 + floor random ((-30 - -50) + 1);
     params ["_patient"];
     private _LorazepamOverdoseTarget = 0;
         [{
-            params ["_patient", "_idPFH"];
+            params ["_args", "_idPFH"];
+            _args params ["_patient", "_LorazepamOverdoseTarget"];
+            _LorazepamOverdoseTarget = _LorazepamOverdoseTarget + 1;
+            _args set [1, _LorazepamOverdoseTarget];
             if (!(alive _patient)) exitWith {
                 [_idPFH] call CBA_fnc_removePerFrameHandler;
             };
-                _LorazepamOverdoseTarget = _LorazepamOverdoseTarget + 1;
                 if (_LorazepamOverdoseTarget > 12) exitWith {
                     if (random(100) < 25) then {
                     [{
@@ -43,8 +45,8 @@ private _hrAdjust = -50 + floor random ((-30 - -50) + 1);
                 };
                 private _depression = _unit getVariable [QEGVAR(pharma,opioidDepressionFactor)] + 0.08;
                 _patient setVariable [QEGVAR(pharma,opioidDepressionFactor), _depression];
-        }, 15, [_patient]] call CBA_fnc_addPerFrameHandler;
-}, _patient, 15] call CBA_fnc_waitAndExecute;
+        }, 15, [_patient,0]] call CBA_fnc_addPerFrameHandler;
+}, [_patient], 15] call CBA_fnc_waitAndExecute;
 
 
 if QEGVAR(feedback,effectOverdose) then

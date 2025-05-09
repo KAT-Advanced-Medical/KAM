@@ -20,9 +20,11 @@ if GVAR(kidneyAction) then
     {[
         {
         params ["_patient"];
-        private _kidneyTarget = 0;
         [{
-        params ["_patient", "_idPFH"];
+        params ["_args", "_idPFH"];
+        _args params ["_patient", "_kidneyTarget"];
+        _kidneyTarget = _kidneyTarget + 1;
+        _args set [1, _kidneyTarget];
         if (!(alive _patient)) exitWith {
             [_idPFH] call CBA_fnc_removePerFrameHandler;
             };
@@ -31,7 +33,7 @@ if GVAR(kidneyAction) then
                 [_idPFH] call CBA_fnc_removePerFrameHandler;};
                 private _ph = _patient getVariable [QGVAR(externalPh), _ph, true] + 100;
                 _patient setVariable [QGVAR(externalPh), _ph, true];
-                }, 10, [_patient]] call CBA_fnc_addPerFrameHandler;
+                }, 10, [_patient,0]] call CBA_fnc_addPerFrameHandler;
     }, _patient, 15] call CBA_fnc_waitAndExecute;
 };
 [{
@@ -40,7 +42,7 @@ if GVAR(kidneyAction) then
         [_idPFH] call CBA_fnc_removePerFrameHandler;
         };
         private _medStack = [_patient, false] call ACEFUNC(medical_treatment,getAllMedicationCount);
-        private _medIndex = _medStack find "adenosine";
+        private _medIndex = _medStack find "CWMP";
         private _hasMed = false;
 
         if (_medIndex > -1) then {
@@ -53,18 +55,24 @@ if GVAR(kidneyAction) then
 }, 5, [_patient]] call CBA_fnc_addPerFrameHandler;
 [_hasmed, {}, {
     params ["_patient"];
-    private _bpTarget = 0;
+    [{
+    params ["_patient"];
         [{
-            params ["_patient", "_idPFH"];
+            params ["_args", "_idPFH"];
+            _args params ["_patient", "_kidneyTarget"];
+            _kidneyTarget = _kidneyTarget + 1;
+            _args set [1, _kidneyTarget];
             if (!(alive _patient)) exitWith {
                 [_idPFH] call CBA_fnc_removePerFrameHandler;
             };
-                _bpTarget = _bpTarget + 1;
-                if (_bpTarget > 12) exitWith {
+                
+                _kidneyTarget = _kidneyTarget + 1;
+                if (_kidneyTarget > 12) exitWith {
                 [_idPFH] call CBA_fnc_removePerFrameHandler;};
                 [_patient, -2, -2, "CWMPOverdose"] call EFUNC(circulation,updateBloodPressureChange);
                 private _coagulationFactor = (_patient getVariable [QGVAR(coagulationFactor), 30]);
                 private _factorstoremove = 1;
                 _patient setVariable [QGVAR(coagulationFactor), (_coagulationFactor - _factorstoremove), true];
-        }, 15, [_patient]] call CBA_fnc_addPerFrameHandler;
-}, _patient, 15] call CBA_fnc_waitUntilAndExecute;
+        }, 15, [_patient,0]] call CBA_fnc_addPerFrameHandler;
+    }, [_patient], 15] call CBA_fnc_waitAndExecute;
+}, [_patient]] call CBA_fnc_waitUntilAndExecute;

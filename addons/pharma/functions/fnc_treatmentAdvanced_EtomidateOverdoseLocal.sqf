@@ -24,13 +24,14 @@ switch (_randomNumber) do {
         [_patient, "BRADYCARDIA", 120, 1200, _hrAdjust, "", "", "", "", ""] call EFUNC(vitals,addMedicationAdjustment);
         [{
         params ["_patient"];
-        private _etomidateOverdoseTarget = 0;
         [{
-            params ["_patient", "_idPFH"];
+            params ["_args", "_idPFH"];
+            _args params ["_patient", "_etomidateOverdoseTarget"];
+            _etomidateOverdoseTarget = _etomidateOverdoseTarget + 1;
+            _args set [1, _etomidateOverdoseTarget];
             if (!(alive _patient)) exitWith {
                 [_idPFH] call CBA_fnc_removePerFrameHandler;
             };
-                _etomidateOverdoseTarget = _etomidateOverdoseTarget + 1;
                 if (_etomidateOverdoseTarget > 12) exitWith {
                     if (random(100) < 25) then {
                     [{
@@ -52,8 +53,8 @@ switch (_randomNumber) do {
                 };
                 private _depression = _unit getVariable [QEGVAR(pharma,opioidDepressionFactor)] + 0.08;
                 _patient setVariable [QEGVAR(pharma,opioidDepressionFactor), _depression];
-                }, 30, [_patient]] call CBA_fnc_addPerFrameHandler;
-        }, _patient, 30] call CBA_fnc_waitAndExecute;
+                }, 30, [_patient,0]] call CBA_fnc_addPerFrameHandler;
+        }, [_patient], 30] call CBA_fnc_waitAndExecute;
     };
     case 2: {
         private _bpAdjust = -20 + floor random ((-5 - -20) + 1);
@@ -62,13 +63,14 @@ switch (_randomNumber) do {
         [_patient, "TACHYCARDIA", 120, 1200, _hrAdjust, "", "", "", "", ""] call EFUNC(vitals,addMedicationAdjustment);
         [{
         params ["_patient"];
-        private _etomidateOverdoseTarget = 0;
         [{
-            params ["_patient", "_idPFH"];
+            params ["_args", "_idPFH"];
+            _args params ["_patient", "_etomidateOverdoseTarget"];
+            _etomidateOverdoseTarget = _etomidateOverdoseTarget + 1;
+            _args set [1, _etomidateOverdoseTarget];
             if (!(alive _patient)) exitWith {
                 [_idPFH] call CBA_fnc_removePerFrameHandler;
             };
-                _etomidateOverdoseTarget = _etomidateOverdoseTarget + 1;
                 if (_etomidateOverdoseTarget > 12) exitWith {
                     if (random(100) < 25) then {
                     [{
@@ -90,8 +92,8 @@ switch (_randomNumber) do {
                 };
                 private _depression = _unit getVariable [QEGVAR(pharma,opioidDepressionFactor)] + 0.08;
                 _patient setVariable [QEGVAR(pharma,opioidDepressionFactor), _depression];
-                }, 30, [_patient]] call CBA_fnc_addPerFrameHandler;
-        }, _patient, 30] call CBA_fnc_waitAndExecute;
+                }, 30, [_patient,0]] call CBA_fnc_addPerFrameHandler;
+        }, [_patient], 30] call CBA_fnc_waitAndExecute;
     };
     case 3: {
         private _bpAdjust = -20 + floor random ((-5 - -20) + 1);
@@ -100,27 +102,23 @@ switch (_randomNumber) do {
         [_patient, "TACHYCARDIA", 120, 1200, _hrAdjust, "", "", "", "", ""] call EFUNC(vitals,addMedicationAdjustment);
         [{
         params ["_patient"];
-        private _etomidateOverdoseTarget = 0;
         [{
-            params ["_patient", "_idPFH"];
+            params ["_args", "_idPFH"];
+            _args params ["_patient", "_etomidateOverdoseTarget"];
+            _etomidateOverdoseTarget = _etomidateOverdoseTarget + 1;
+            _args set [1, _etomidateOverdoseTarget];
             if (!(alive _patient)) exitWith {
                 [_idPFH] call CBA_fnc_removePerFrameHandler;
             };
-                _etomidateOverdoseTarget = _etomidateOverdoseTarget + 1;
                 if (_etomidateOverdoseTarget > 12) exitWith {
                     if (random(100) < 15) then {
                     [{
                         params ["_args", "_idPFH"];
                         _args params ["_patient"];
                         private _ht = _patient getVariable [QEGVAR(circulation,ht), []];
-                        if ((_ht findIf {_x isEqualTo "EtomidateOD"}) == -1) then {
-                            _ht pushBack "EtomidateOD";
 
                             if (_patient getVariable [QEGVAR(circulation,cardiacArrestType), 0] == 0) then {
                                 [QACEGVAR(medical,FatalVitals), _patient] call CBA_fnc_localEvent;
-                            };
-
-                            _patient setVariable [QEGVAR(circulation,ht), _ht, true];
                             };
                     }, [_patient], 15] call CBA_fnc_waitAndExecute;
                     };
@@ -130,8 +128,8 @@ switch (_randomNumber) do {
                 _patient setVariable [QEGVAR(pharma,opioidDepressionFactor), _depression];
                 private _rr = _patient getVariable [QEGVAR(breathing,respiratoryRateMultiplier), 1] - 0.06;
                 _patient setVariable [QEGVAR(breathing,respiratoryRateMultiplier), _rr];
-                }, 30, [_patient]] call CBA_fnc_addPerFrameHandler;
-        }, _patient, 30] call CBA_fnc_waitAndExecute;
+                }, 30, [_patient,0]] call CBA_fnc_addPerFrameHandler;
+        }, [_patient], 30] call CBA_fnc_waitAndExecute;
     };
     case 4: {
         private _bpAdjust = -20 + floor random ((-5 - -20) + 1);
@@ -140,28 +138,24 @@ switch (_randomNumber) do {
         [_patient, "BRADYCARDIA", 120, 1200, _hrAdjust, "", "", "", "", ""] call EFUNC(vitals,addMedicationAdjustment);
         [{
         params ["_patient"];
-        private _etomidateOverdoseTarget = 0;
+
         [{
-            params ["_patient", "_idPFH"];
+            params ["_args", "_idPFH"];
+            _args params ["_patient", "_etomidateOverdoseTarget"];
+            _etomidateOverdoseTarget = _etomidateOverdoseTarget + 1;
+            _args set [1, _etomidateOverdoseTarget];
             if (!(alive _patient)) exitWith {
                 [_idPFH] call CBA_fnc_removePerFrameHandler;
             };
-                _etomidateOverdoseTarget = _etomidateOverdoseTarget + 1;
                 if (_etomidateOverdoseTarget > 12) exitWith {
                     if (random(100) < 15) then {
                     [{
                         params ["_args", "_idPFH"];
                         _args params ["_patient"];
-                        private _ht = _patient getVariable [QEGVAR(circulation,ht), []];
-                        if ((_ht findIf {_x isEqualTo "lidocaineOD"}) == -1) then {
-                            _ht pushBack "lidocaineOD";
 
-                            if (_patient getVariable [QEGVAR(circulation,cardiacArrestType), 0] == 0) then {
+                        if (_patient getVariable [QEGVAR(circulation,cardiacArrestType), 0] == 0) then {
                                 [QACEGVAR(medical,FatalVitals), _patient] call CBA_fnc_localEvent;
-                            };
-
-                            _patient setVariable [QEGVAR(circulation,ht), _ht, true];
-                            };
+                        };
                     }, [_patient], 15] call CBA_fnc_waitAndExecute;
                     };
                     [_idPFH] call CBA_fnc_removePerFrameHandler;
@@ -170,8 +164,8 @@ switch (_randomNumber) do {
                 _patient setVariable [QEGVAR(pharma,opioidDepressionFactor), _depression];
                 private _rr = _patient getVariable [QEGVAR(breathing,respiratoryRateMultiplier), 1] - 0.06;
                 _patient setVariable [QEGVAR(breathing,respiratoryRateMultiplier), _rr];
-                }, 30, [_patient]] call CBA_fnc_addPerFrameHandler;
-        }, _patient, 30] call CBA_fnc_waitAndExecute;
+                }, 30, [_patient,0]] call CBA_fnc_addPerFrameHandler;
+        }, [_patient], 30] call CBA_fnc_waitAndExecute;
     };
 };
 if QEGVAR(feedback,effectOverdose) then

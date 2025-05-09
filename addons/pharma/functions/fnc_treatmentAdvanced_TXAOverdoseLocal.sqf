@@ -22,7 +22,8 @@ params ["_patient"];
     params ["_patient"];
     private _TXAOverdoseTarget = 0;
         [{
-            params ["_patient", "_idPFH"];
+            params ["_args", "_idPFH"];
+            _args params ["_patient", "_TXAOverdoseTarget"];
             if (!(alive _patient)) exitWith {
                 [_idPFH] call CBA_fnc_removePerFrameHandler;
             };
@@ -56,5 +57,5 @@ params ["_patient"];
                 private _factorstoremove = 1;
                 _patient setVariable [QGVAR(coagulationFactor), (_coagulationFactor - _factorstoremove), true];
                 if ((random 10000) < 1) then {_patient setDamage 1;};
-        }, 15, [_patient]] call CBA_fnc_addPerFrameHandler;
-}, _patient, 15] call CBA_fnc_waitAndExecute;
+        }, 15, [_patient,_TXAOverdoseTarget]] call CBA_fnc_addPerFrameHandler;
+}, [_patient], 15] call CBA_fnc_waitAndExecute;
