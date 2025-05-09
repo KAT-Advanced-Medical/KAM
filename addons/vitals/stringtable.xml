@@ -9,6 +9,7 @@
             <Chinese>啟用基本生命體徵套件</Chinese>
             <Chinesesimp>启用基本生命体征套件</Chinesesimp>
             <German>Aktiviere Einfaches Vitalwerte-Kit</German>
+            <Italian>Abilita il Kit diagnostico per la misurazione di parametri vitali</Italian>
         </Key>
         <Key ID="STR_KAT_Vitals_BASIC_DIAGNOSTIC_TIME">
             <English>Basic Vitals Kit Time</English>
@@ -18,6 +19,7 @@
             <Chinese>基本生命體徵套件時間</Chinese>
             <Chinesesimp>基本生命体征套件时间</Chinesesimp>
             <German>Nutzungszeit für Vitalwerte-Kit</German>
+            <Italian>Tempo di utilizzo del Kit parametri vitali di base</Italian>
         </Key>
         <Key ID="STR_KAT_Vitals_BasicDiagnostic_Output">
             <English>HR: %1, BP: %2/%3, RR: %4</English>
@@ -27,6 +29,7 @@
             <Chinese>心率：％1，血壓：％2／％3，呼吸頻率：％4</Chinese>
             <Chinesesimp>心率：％1，血压：％2／％3，呼吸频率：％4</Chinesesimp>
             <German>HF: %1, BD: %2/%3, AF: %4</German>
+            <Italian>FC: %1, PS: %2/%3, FR:%4</Italian>
         </Key>
         <Key ID="STR_KAT_Vitals_FLUID_SHIFT">
             <English>Enable Patient Fluid Shift</English>
@@ -66,6 +69,7 @@
             <French>%1 - %2</French>
             <Japanese>%1 - %2</Japanese>
             <German>%1 - %2</German>
+            <Italian>%1 - %2</Italian>
         </Key>
         <Key ID="STR_KAT_Vitals_basicDiagnostic_description">
             <English>Vitals Kit which returns HR, BP, and RR</English>
@@ -75,6 +79,7 @@
             <Chinese>可測量心率（HR）、血壓（BP）和呼吸頻率（RR）等生命體徵的診斷套件</Chinese>
             <Chinesesimp>可测量心率（HR）、血压（BP）和呼吸频率（RR）等生命体征的诊断套件</Chinesesimp>
             <German>Vitalwerte-Kit zur Messung von Blutdruck, Puls und Atemfrequenz</German>
+            <Italian>Kit diagnostico per la misurazione di parametri vitali come la Frequenza Cardiaca(FC), la Pressione Sanguinea(PS) e Frequenza Respiratoria(FR) </Italian>
         </Key>
         <Key ID="STR_KAT_Vitals_basicDiagnostic_display">
             <English>Basic Vitals Kit</English>
@@ -84,6 +89,7 @@
             <Chinese>基本生命體徵套件</Chinese>
             <Chinesesimp>基本生命体征套件</Chinesesimp>
             <German>Einfaches Vitalwerte-Kit</German>
+            <Italian>Kit diagnostico per la misurazione di parametri vitali</Italian>
         </Key>
         <Key ID="STR_KAT_Vitals_basicDiagnostic_progress">
             <English>Assessing Patient...</English>
@@ -93,6 +99,7 @@
             <Chinese>正在評估患者...</Chinese>
             <Chinesesimp>正在评估患者...</Chinesesimp>
             <German>Untersuche den Patienten</German>
+            <Italian>Valutazione del paziente...</Italian>
         </Key>
         <Key ID="STR_KAT_Vitals_basicDiagnostic_use">
             <English>Use Basic Vitals Kit</English>
@@ -102,12 +109,14 @@
             <Chinese>使用基本生命體徵套件</Chinese>
             <Chinesesimp>使用基本生命体征套件</Chinesesimp>
             <German>Vitalwerte-Kit verwenden</German>
+            <Italian>Usa il Kit diagnostico per la misurazione di parametri vitali</Italian>
         </Key>
         <Key ID="STR_KAT_Vitals_cba_name">
             <English>KAT - ADV Medical: Vitals</English>
             <Japanese>KAM - バイタル</Japanese>
             <French>KAT - ADV Medical : Données vitales</French>
             <German>KAT - ADV Medical: Vitalwerte</German>
+            <Italian>KAT - ADV Medica: Parametri vitali</Italian>
         </Key>
     </Package>
 </Project>

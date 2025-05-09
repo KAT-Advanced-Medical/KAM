@@ -1732,6 +1732,7 @@
             <Chinese>啟用止血帶效果</Chinese>
             <Chinesesimp>启用止血带效果</Chinesesimp>
             <Dutch>Schakel tourniquet effecten in</Dutch>
+            <Italian>Abilita gli effetti del Laccio Emostatico</Italian>
         </Key>
         <Key ID="STR_KAT_Misc_SETTING_tourniquetEffects_NegativeMultiplier">
             <English>Tourniquet effects negative multiplier</English>
@@ -1746,6 +1747,7 @@
             <Chinesesimp>止血带效应负乘数</Chinesesimp>
             <Finnish>Tourniquet-vaikutusten negatiivinen kerroin</Finnish>
             <Dutch>Negatieve multiplicator voor tourniquet effecten</Dutch>
+            <Italian>Moltiplicatore degli effetti negativi del Laccio Emostatico</Italian>
         </Key>
         <Key ID="STR_KAT_Misc_SETTING_tourniquetEffects_PositiveMultiplier">
             <English>Tourniquet effects positive multiplier</English>
@@ -1759,6 +1761,7 @@
             <Chinese>止血帶效果正向乘數</Chinese>
             <Chinesesimp>止血带效果正乘数</Chinesesimp>
             <Dutch>Positieve multiplicator voor tourniquet effecten</Dutch>
+            <Italian>Moltiplicatore degli effetti positivi del Laccio Emostatico</Italian>
         </Key>
         <Key ID="STR_KAT_Misc_SETTING_treatmentTimeDetachTourniquet">
             <English>Time to take off tourniquet</English>
@@ -1866,6 +1869,7 @@
             <Chinese>止血帶設定</Chinese>
             <Chinesesimp>止血带设置</Chinesesimp>
             <Dutch>Tourniquet instellingen</Dutch>
+            <Italian>Impostazioni Laccio Emostatico</Italian>
         </Key>
         <Key ID="STR_KAT_Misc_Use_SurgicalKitFullBody">
             <English>Use Surgical Kit (Full Body)</English>
@@ -1901,12 +1905,14 @@
         <Key ID="STR_KAT_Misc_miscSupplyCrate_display">
             <English>[KAM] Misc Items</English>
             <Japanese>[KAM] その他物資箱</Japanese>
+            <Italian>[KAM] Oggetti vari</Italian>
         </Key>
         <Key ID="STR_KAT_Misc_cba_name">
             <English>KAT - ADV Medical: Misc</English>
             <Japanese>KAM - その他</Japanese>
             <French>KAT - ADV Medical : Divers</French>
             <German>KAT - ADV Medical: Sonstiges</German>
+            <Italian>KAT- ADV Medica: Vari</Italian>
         </Key>
         <Key ID="STR_KAT_Misc_incompatibilityWarning_Desc">
             <English>[KAM WARNING] Incompatible addon(s) that could negatively affect correct functionality detected. KAT - Advanced Medical REWRITE Development Team strongly advises to remove these addons: %1</English>
