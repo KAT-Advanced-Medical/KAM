@@ -18,6 +18,7 @@
  */
 
 params ["_patient", "_bodyPart", "_classname"];
+systemChat str "KetamineLocal";
 if !(_classname isEqualTo "syringe_ketamine_5ml_3") exitWith {};
 
 _patient setVariable [QEGVAR(surgery,sedated), true, true];

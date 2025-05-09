@@ -20,6 +20,7 @@
  * Public: No
  */
 params ["_patient"];
+systemChat str "PenthroxODOverdose";
 [{
     params ["_patient"];
         [{
@@ -48,7 +49,8 @@ params ["_patient"];
         }, 20, [_patient,0]] call CBA_fnc_addPerFrameHandler;
 }, [_patient], 20] call CBA_fnc_waitAndExecute;
 [{
-    params ["_patient", "_idPFH"];
+    params ["_args", "_idPFH"];
+    _args params ["_patient"];
     if (!(alive _patient)) exitWith {
         [_idPFH] call CBA_fnc_removePerFrameHandler;
         };
@@ -64,7 +66,7 @@ params ["_patient"];
         };
     };
 }, 5, [_patient]] call CBA_fnc_addPerFrameHandler;
-[_hasmed, {}, {
+[{_hasmed},{
     params ["_patient"];
     private _PenthroxOverdoseTarget = 0;
         [{

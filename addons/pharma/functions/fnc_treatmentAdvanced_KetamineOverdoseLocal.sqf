@@ -15,6 +15,7 @@
  * Public: No
  */
 params ["_patient"];
+systemChat str "KetODLocal";
 [{
     params ["_patient"];
         [{
