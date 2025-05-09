@@ -23,11 +23,13 @@ private _hrAdjust = -50 + floor random ((-30 - -50) + 1);
     params ["_patient"];
     private _nalbuphineOverdoseTarget = 0;
         [{
-            params ["_patient", "_idPFH"];
+            params ["_args", "_idPFH"];
+            _args params ["_patient", "_nalbuphineOverdoseTarget"];
+            _nalbuphineOverdoseTarget = _nalbuphineOverdoseTarget + 1;
+            _args set [1, _nalbuphineOverdoseTarget];
             if (!(alive _patient)) exitWith {
                 [_idPFH] call CBA_fnc_removePerFrameHandler;
             };
-                _nalbuphineOverdoseTarget = _nalbuphineOverdoseTarget + 1;
                 if (_nalbuphineOverdoseTarget > 6) exitWith {
                     [{
                         params ["_args", "_idPFH"];
@@ -47,5 +49,5 @@ private _hrAdjust = -50 + floor random ((-30 - -50) + 1);
                 if (_medications findIf {_x isEqualTo "naloxone"} != -1) exitWith {};
                 private _depression = _unit getVariable [QEGVAR(pharma,opioidDepressionFactor)] + 0.05;
                 _patient setVariable [QEGVAR(pharma,opioidDepressionFactor), _depression];
-        }, 10, [_patient]] call CBA_fnc_addPerFrameHandler;
-}, _patient, 10] call CBA_fnc_waitAndExecute;
+        }, 10, [_patient,0]] call CBA_fnc_addPerFrameHandler;
+}, [_patient], 10] call CBA_fnc_waitAndExecute;

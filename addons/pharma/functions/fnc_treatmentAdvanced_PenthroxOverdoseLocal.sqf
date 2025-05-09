@@ -22,13 +22,14 @@
 params ["_patient"];
 [{
     params ["_patient"];
-    private _PenthroxOverdoseTarget = 0;
         [{
-            params ["_patient", "_idPFH"];
+            params ["_args", "_idPFH"];
+            _args params ["_patient", "_PenthroxOverdoseTarget"];
+            _PenthroxOverdoseTarget = _PenthroxOverdoseTarget + 1;
+            _args set [1, _PenthroxOverdoseTarget];
             if (!(alive _patient)) exitWith {
                 [_idPFH] call CBA_fnc_removePerFrameHandler;
             };
-                _PenthroxOverdoseTarget = _PenthroxOverdoseTarget + 1;
                 if (_PenthroxOverdoseTarget > 6) exitWith {
                     [{
                         if (random 25 < 1) then {
@@ -44,8 +45,8 @@ params ["_patient"];
                 private _respRate = _patient getVariable [VAR_BREATHING_RATE, 15];
                 _patient setVariable [VAR_BREATHING_RATE, (_respRate + 1), true];
                 if ((random 1000) < 1) then {_patient setDamage 1;};
-        }, 20, [_patient]] call CBA_fnc_addPerFrameHandler;
-}, _patient, 20] call CBA_fnc_waitAndExecute;
+        }, 20, [_patient,0]] call CBA_fnc_addPerFrameHandler;
+}, [_patient], 20] call CBA_fnc_waitAndExecute;
 [{
     params ["_patient", "_idPFH"];
     if (!(alive _patient)) exitWith {
@@ -67,7 +68,8 @@ params ["_patient"];
     params ["_patient"];
     private _PenthroxOverdoseTarget = 0;
         [{
-            params ["_patient", "_idPFH"];
+            params ["_args", "_idPFH"];
+            _args params ["_patient", "_PenthroxOverdoseTarget"];
             if (!(alive _patient)) exitWith {
                 [_idPFH] call CBA_fnc_removePerFrameHandler;
             };
@@ -77,6 +79,6 @@ params ["_patient"];
                 };
                 private _surfaceArea = (_patient getVariable [QGVAR(lungSurfaceArea), 400]) + 5;
                 _patient setVariable [QGVAR(lungSurfaceArea), _surfaceArea];
-        }, 60, [_patient]] call CBA_fnc_addPerFrameHandler;
-}, _patient, 150] call CBA_fnc_waitUntilAndExecute;
+        }, 60, [_patient,_PenthroxOverdoseTarget]] call CBA_fnc_addPerFrameHandler;
+}, [_patient], 150] call CBA_fnc_waitUntilAndExecute;
 

@@ -21,9 +21,11 @@ private _hrAdjust = -50 + floor random ((-30 - -50) + 1);
 [_patient, "BRADYCARDIA", 120, 1200, _hrAdjust, "", "", "", "", ""] call EFUNC(vitals,addMedicationAdjustment);
 [{
     params ["_patient"];
-    private _lidocaineOverdoseTarget = 0;
         [{
-            params ["_patient", "_idPFH"];
+            params ["_args", "_idPFH"];
+            _args params ["_patient", "_lidocaineOverdoseTarget"];
+            _lidocaineOverdoseTarget = _lidocaineOverdoseTarget + 1;
+            _args set [1, _lidocaineOverdoseTarget];
             if (!(alive _patient)) exitWith {
                 [_idPFH] call CBA_fnc_removePerFrameHandler;
             };
@@ -44,5 +46,5 @@ private _hrAdjust = -50 + floor random ((-30 - -50) + 1);
                 private _medications = _patient getVariable [QACEGVAR(medical,medications), []];
                 private _depression = _unit getVariable [QEGVAR(pharma,opioidDepressionFactor)] + 0.08;
                 _patient setVariable [QEGVAR(pharma,opioidDepressionFactor), _depression];
-        }, 30, [_patient]] call CBA_fnc_addPerFrameHandler;
-}, _patient, 30] call CBA_fnc_waitAndExecute;
+        }, 30, [_patient,0]] call CBA_fnc_addPerFrameHandler;
+}, [_patient], 30] call CBA_fnc_waitAndExecute;

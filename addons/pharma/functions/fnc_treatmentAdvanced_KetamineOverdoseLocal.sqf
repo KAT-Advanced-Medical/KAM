@@ -17,13 +17,15 @@
 params ["_patient"];
 [{
     params ["_patient"];
-    private _KetamineOverdoseTarget = 0;
         [{
-            params ["_patient", "_idPFH"];
+            params ["_args", "_idPFH"];
+            _args params ["_patient", "_KetamineOverdoseTarget"];
+            _KetamineOverdoseTarget = _KetamineOverdoseTarget + 1;
+            _args set [1, _KetamineOverdoseTarget];
             if (!(alive _patient)) exitWith {
                 [_idPFH] call CBA_fnc_removePerFrameHandler;
             };
-                _KetamineOverdoseTarget = _KetamineOverdoseTarget + 1;
+                _KetamineOverdoseTarget =  + 1;
                 if (_KetamineOverdoseTarget > 12) exitWith {
                     if (random(100) < 25) then {
                     [{
@@ -41,5 +43,5 @@ params ["_patient"];
                 _patient setVariable [QEGVAR(breathing,respiratoryRateMultiplier), _rr];
                 private _depression = _unit getVariable [QEGVAR(pharma,opioidDepressionFactor)] + 0.04;
                 _patient setVariable [QEGVAR(pharma,opioidDepressionFactor), _depression];
-        }, 15, [_patient]] call CBA_fnc_addPerFrameHandler;
-}, _patient, 15] call CBA_fnc_waitAndExecute;
+        }, 15, [_patient,0]] call CBA_fnc_addPerFrameHandler;
+}, [_patient], 15] call CBA_fnc_waitAndExecute;
