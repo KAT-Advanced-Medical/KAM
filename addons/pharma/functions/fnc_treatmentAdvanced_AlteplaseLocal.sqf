@@ -30,13 +30,16 @@ private _medicationArray = _patient getVariable [QACEGVAR(medical,medications), 
 _patient setVariable [QACEGVAR(medical,medications), _medicationArray, true];
 [{
     params ["_patient"];
-    private _AlteplaseTarget = 0;
         [{
-            params ["_patient", "_idPFH"];
+            params ["_args", "_idPFH"];
+            _args params ["_patient", "_AlteplaseTarget"];
+            _AlteplaseTarget = _AlteplaseTarget + 1;
+            _args set [1, _AlteplaseTarget];
             if (!(alive _patient)) exitWith {
                 [_idPFH] call CBA_fnc_removePerFrameHandler;
             };
                 _AlteplaseTarget = _AlteplaseTarget + 1;
+                _args set [1, _AlteplaseTarget];
                 if (_AlteplaseTarget > 24) exitWith {
                 [_idPFH] call CBA_fnc_removePerFrameHandler;};
                 private _surfaceArea = (_patient getVariable [QEGVAR(breathing,lungSurfaceArea), 400]) + 5;
@@ -44,5 +47,5 @@ _patient setVariable [QACEGVAR(medical,medications), _medicationArray, true];
                 private _coagulationFactor = (_patient getVariable [QGVAR(coagulationFactor), 30]);
                 private _factorstoremove = 1;
                 _patient setVariable [QGVAR(coagulationFactor), (_coagulationFactor - _factorstoremove), true];
-        }, 10, [_patient]] call CBA_fnc_addPerFrameHandler;
-}, _patient, 15] call CBA_fnc_waitAndExecute;
+        }, 10, [_patient,0]] call CBA_fnc_addPerFrameHandler;
+}, [_patient], 15] call CBA_fnc_waitAndExecute;

@@ -19,13 +19,14 @@ private _hrAdjust = 10 + floor random ((25 - 10) + 1);
 [_patient, "AlteplaseOverdose", 30, 600, _hrAdjust, "", "", 0.2, "", ""] call EFUNC(vitals,addMedicationAdjustment);
 [{
     params ["_patient"];
-    private _AlteplaseTarget = 0;
         [{
-            params ["_patient", "_idPFH"];
+            params ["_args", "_idPFH"];
+            _args params ["_patient", "_AlteplaseTarget"];
             if (!(alive _patient)) exitWith {
                 [_idPFH] call CBA_fnc_removePerFrameHandler;
             };
                 _AlteplaseTarget = _AlteplaseTarget + 1;
+                _args set [1, _AlteplaseTarget];
                 if (_AlteplaseTarget > 12) exitWith {
                 [_idPFH] call CBA_fnc_removePerFrameHandler;};
                 private _bloodlevels = GET_BODY_FLUID(_patient);
@@ -34,5 +35,5 @@ private _hrAdjust = 10 + floor random ((25 - 10) + 1);
                 private _coagulationFactor = (_patient getVariable [QGVAR(coagulationFactor), 30]);
                 private _factorstoremove = 1;
                 _patient setVariable [QGVAR(coagulationFactor), (_coagulationFactor - _factorstoremove), true];
-        }, 15, [_patient]] call CBA_fnc_addPerFrameHandler;
-}, _patient, 15] call CBA_fnc_waitAndExecute;
+        }, 15, [_patient, 0]] call CBA_fnc_addPerFrameHandler;
+}, [_patient], 15] call CBA_fnc_waitAndExecute;
