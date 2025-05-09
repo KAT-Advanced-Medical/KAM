@@ -15,6 +15,7 @@
  * Public: No
  */
 params ["_patient"];
+systemChat str "AltePlaseODLocal";
 private _hrAdjust = 10 + floor random ((25 - 10) + 1);
 [_patient, "AlteplaseOverdose", 30, 600, _hrAdjust, "", "", 0.2, "", ""] call EFUNC(vitals,addMedicationAdjustment);
 [{

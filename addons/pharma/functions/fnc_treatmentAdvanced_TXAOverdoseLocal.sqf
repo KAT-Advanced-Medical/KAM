@@ -16,8 +16,6 @@
  */
 
 params ["_patient"];
-
-[_patient, "TXAOverdose", 1, 900, "", "", -90, -0.3, "", ""] call EFUNC(vitals,addMedicationAdjustment);
 [{
     params ["_patient"];
     private _TXAOverdoseTarget = 0;
@@ -34,14 +32,9 @@ params ["_patient"];
                         params ["_args", "_idPFH"];
                         _args params ["_patient"];
                         private _ht = _patient getVariable [QEGVAR(circulation,ht), []];
-                        if ((_ht findIf {_x isEqualTo "txaOD"}) == -1) then {
-                            _ht pushBack "txaOD";
 
                             if (_patient getVariable [QEGVAR(circulation,cardiacArrestType), 0] == 0) then {
                                 [QACEGVAR(medical,FatalVitals), _patient] call CBA_fnc_localEvent;
-                            };
-
-                            _patient setVariable [QEGVAR(circulation,ht), _ht, true];
                             };
                     }, [_patient], 15] call CBA_fnc_waitAndExecute;
                     };

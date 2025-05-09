@@ -15,7 +15,6 @@
  * Public: No
  */
 params ["_patient"];
-[_patient, "CWMPOverdose", 30, 600, "", "", "", 0.3, "", ""] call EFUNC(vitals,addMedicationAdjustment);
 if GVAR(kidneyAction) then
     {[
         {
@@ -37,7 +36,8 @@ if GVAR(kidneyAction) then
     }, _patient, 15] call CBA_fnc_waitAndExecute;
 };
 [{
-    params ["_patient", "_idPFH"];
+    params ["_args", "_idPFH"];
+    _args params ["_patient"];
     if (!(alive _patient)) exitWith {
         [_idPFH] call CBA_fnc_removePerFrameHandler;
         };
@@ -53,7 +53,7 @@ if GVAR(kidneyAction) then
         };
     };
 }, 5, [_patient]] call CBA_fnc_addPerFrameHandler;
-[_hasmed, {}, {
+[{_hasmed},{
     params ["_patient"];
     [{
     params ["_patient"];

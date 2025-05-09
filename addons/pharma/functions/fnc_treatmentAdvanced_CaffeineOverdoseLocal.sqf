@@ -14,6 +14,7 @@
  * Public: No
  */
 params ["_patient"];
+systemChat str "CaffineODLocal";
 [{
     params ["_patient"];
     private _CaffineOverdoseTarget = 0;
@@ -34,7 +35,8 @@ params ["_patient"];
         }, 10, [_patient,0]] call CBA_fnc_addPerFrameHandler;
 }, [_patient], 10] call CBA_fnc_waitAndExecute;
 [{
-    params ["_patient", "_idPFH"];
+    params ["_args", "_idPFH"];
+    _args params ["_patient"];
     if (!(alive _patient)) exitWith {
         [_idPFH] call CBA_fnc_removePerFrameHandler;
         };
@@ -50,7 +52,7 @@ params ["_patient"];
         };
     };
 }, 5, [_patient]] call CBA_fnc_addPerFrameHandler;
-[_hasmed, {}, {
+[{_hasmed}, {
     params ["_patient"];
     [{
     params ["_patient"];
