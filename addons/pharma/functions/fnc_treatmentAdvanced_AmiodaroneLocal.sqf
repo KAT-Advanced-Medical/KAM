@@ -15,7 +15,7 @@
  * Public: No
  */
 params ["_patient"];
-
+systemChat str "AmiodaroneLocal";
 private _random = random 3;
 if (_random <= 1) then {
     private _hrAdjust = -50 + floor random ((-30 - -50) + 1);

@@ -14,6 +14,7 @@
  *
  * Public: No
  */
+ systemChat str "AtropineODLocal";
 params ["_patient"];
 [{
     params ["_patient"];
@@ -43,7 +44,8 @@ params ["_patient"];
         }, 15, [_patient,0]] call CBA_fnc_addPerFrameHandler;
 }, _patient, 15] call CBA_fnc_waitAndExecute;
 [{
-    params ["_patient", "_idPFH"];
+    params ["_args", "_idPFH"];
+    _args params ["_patient"];
     if (!(alive _patient)) exitWith {
         [_idPFH] call CBA_fnc_removePerFrameHandler;
         };
@@ -59,11 +61,10 @@ params ["_patient"];
         };
     };
 }, 5, [_patient]] call CBA_fnc_addPerFrameHandler;
-[_hasmed, {}, {
+[{_hasmed},{
     params ["_patient"];
     [{
     params ["_patient"];
-    private _atropineTarget = 0;
         [{
             params ["_args", "_idPFH"];
             _args params ["_patient", "_atropineTarget"];
