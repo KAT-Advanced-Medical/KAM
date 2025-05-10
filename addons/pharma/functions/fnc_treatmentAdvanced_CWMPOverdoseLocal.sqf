@@ -15,6 +15,8 @@
  * Public: No
  */
 params ["_patient"];
+systemChat str "CWMPODLocal";
+[_patient, "CWMPOverdose", 30, 600, "", "", "", 0.3, "", ""] call EFUNC(vitals,addMedicationAdjustment);
 if GVAR(kidneyAction) then
     {[
         {

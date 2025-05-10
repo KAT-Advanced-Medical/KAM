@@ -16,8 +16,8 @@
  * Public: No
  */
 params ["_patient"];
-
-[_patient, "EACAOverdose", 1, 900, 0, 0, 0, -0.3] call EFUNC(vitals,addMedicationAdjustment);
+systemChat str "EACAODLocal";
+[_patient, EACAOverdose, 1, 900, "", "", -90, -0.3, "", ""] call EFUNC(vitals,addMedicationAdjustment);
 [{
     params ["_patient"];
     [{

@@ -4,15 +4,11 @@ class CfgVehicles {
     class Item_Base_F;
     class Items_base_F;
     class WeaponHolder_Single_limited_item_F;
-<<<<<<< HEAD
-    class ACE_medicalSupplyCrate;
-=======
     class NATO_Box_Base;
     class ACE_medicalSupplyCrate: NATO_Box_Base {
         class TransportItems;
         class TransportMagazines;
     };
->>>>>>> parent of 3e8d19e5 (Merge remote-tracking branch 'upstream/dev-Tomcat' into Medication_Rework)
 
     class kat_surgerySupplyCrate: ACE_medicalSupplyCrate {
         displayName = CSTRING(surgeryToolbox);

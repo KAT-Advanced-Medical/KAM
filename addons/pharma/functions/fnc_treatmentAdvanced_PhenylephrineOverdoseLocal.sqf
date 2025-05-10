@@ -15,11 +15,12 @@
  * Public: No
  */
 params ["_patient"];
+systemChat str "PhenylODOverdose";
 private _hrValue = [20, 25, 30, 35, 40, 45];
 private _hrAdjust = selectRandom _hrValue;
 private _alphaValue = [-0.7, -0.6, -0.8];
 private _alphaAdjust = selectRandom _alphaValue;
-[_patient, "PhenylephrineOverdose", 30, 1200, _hrAdjust, 0, 0, 0, _alphaAdjust] call EFUNC(vitals,addMedicationAdjustment);
+[_patient, PhenylephrineOverdose, 30, 1200, _hrAdjust, "", "", _alphaAdjust, "", ""] call EFUNC(vitals,addMedicationAdjustment);
 if (random 5 < 1) then {
     private _randomValue = [3, 4];
     private _randomRhythm = selectRandom _randomValue;

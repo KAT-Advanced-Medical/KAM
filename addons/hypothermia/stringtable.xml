@@ -91,61 +91,6 @@
             <Italian>Riscaldatore per le mani</Italian>
             <French>Chauffe-mains</French>
         </Key>
-<<<<<<< HEAD
-        <Key ID="STR_KAT_Hypothermia_LineWarmer">
-            <English>Line Warmer Active</English>
-            <Czech>Ohřívač Tekutin aktivní</Czech>
-            <French>Chauffe-lignes en service.</French>
-            <Spanish>Calentador de Línea Activo</Spanish>
-            <Italian>Riscaldatore per linea attivo</Italian>
-            <German>Leitungswärmer aktiv</German>
-            <Japanese>ラインウォーマーを利用中</Japanese>
-            <Chinese>輸液加溫器已啟動</Chinese>
-            <Chinesesimp>线路加热器已激活</Chinesesimp>
-            <Dutch>Lijnwarmer actief</Dutch>
-        </Key>
-        <Key ID="STR_KAT_Hypothermia_Other_Handwarmer_Output">
-            <English>This patient has handwarmers and they will probably last this many more minutes at this locations: %1, %2, %3, %4, %5</English>
-            <Czech>Tento pacient má Ohřívače Rukou na těchto místech a vydrží zhruba ještě tolik minut: %1, %2, %3, %4, %5</Czech>
-            <French>La position et la durée restante du chauffe-main utilisé par ce patient sont les suivantes (en minutes) : %1, %2, %3, %4, %5</French>
-            <Spanish>Este paciente tiene calentadores de manos y probablemente le duren muchos mas minutos en esos sitios: %1, %2, %3, %4, %5</Spanish>
-            <Italian>Questo paziente ha riscaldatori per le mani e probabilmente dureranno ancora questi minuti in queste posizioni: %1, %2, %3, %4, %5</Italian>
-            <German>Dieser Patient hat Handwärmer und sie werden wahrscheinlich noch so viele Minuten an diesen Orten aushalten: %1, %2, %3, %4, %5</German>
-            <Japanese>この患者が使用中の ハンドウォーマーの 位置と残り持続時間は 次の通りです (分単位): %1, %2, %3, %4, %5</Japanese>
-            <Chinese>該患者目前使用的暖暖包位置及剩餘可用時間（分鐘）：%1、%2、%3、%4、%5</Chinese>
-            <Chinesesimp>该患者有暖手器，他们还有多长的持续时间：%1、%2、%3、%4、%5</Chinesesimp>
-            <Dutch>Deze patient heeft handwarmers op deze locaties en dit is hoelang ze ongeveer nog werken: %1, %2, %3, %4, %5</Dutch>
-        </Key>
-        <Key ID="STR_KAT_Hypothermia_Remove_Warmer">
-            <English>Remove Fluid Warmer</English>
-            <Czech>Odpojit Ohřívač Tekutin</Czech>
-            <French>Enlever le réchauffeur de fluide</French>
-            <Spanish>Quitar Calentador de Fluidos</Spanish>
-            <Italian>Rimuovi il riscaldatore per liquidi</Italian>
-            <German>Flüssigkeitswärmer entfernen</German>
-            <Japanese>輸液ウォーマーを取り外す</Japanese>
-            <Chinese>移除輸液加溫器</Chinese>
-            <Chinesesimp>拆下油液加热器</Chinesesimp>
-            <Dutch>Maak vloeistofverwarmer los</Dutch>
-        </Key>
-        <Key ID="STR_KAT_Hypothermia_Self_Handwarmer_Output">
-            <English>This is where you have handwarmers and how much longer you think they have in minutes: %1, %2, %3, %4, %5</English>
-            <Czech>Toto jsou místa, kde máš Ohřívače Rukou a kolik minut zhruba ještě vydrží: %1, %2, %3, %4, %5</Czech>
-            <French>La position et la durée restante du chauffe-mains que vous utilisez sont les suivantes (en minutes) : %1, %2, %3, %4, %5</French>
-            <Spanish>Aquí es donde tienes calentadores de manos y cuanto piensas que les queda de duración en minutos: %1, %2, %3, %4, %5</Spanish>
-            <Italian>Ecco dove hai i riscaldatori per le mani e quanto tempo pensi che rimangano in minuti: %1, %2, %3, %4, %5</Italian>
-            <German>Hier hast du Handwärmer und wie lange sie deiner Schätzung nach halten werden in Minuten: %1, %2, %3, %4, %5</German>
-            <Japanese>あなたが使用中の ハンドウォーマーの 位置と残り持続時間は 次の通りです (分単位): %1, %2, %3, %4, %5</Japanese>
-            <Chinese>您目前使用的暖暖包位置及剩餘可用時間（分鐘）：%1、%2、%3、%4、%5</Chinese>
-            <Chinesesimp>这是您有暖手器的地方，以及您认为他们还有多长的持续时间：%1、%2、%3、%4、%5</Chinesesimp>
-            <Dutch>Dit is waar je handwarmers hebt en hoelang je denkt dat ze nog werken in minuten: %1, %2, %3, %4, %5</Dutch>
-        </Key>
-        <Key ID="STR_KAT_Hypothermia_SubCategory_Hypothermia">
-            <English>Hypothermia Settings</English>
-            <French>Paramètres de l'hypothermie</French>
-            <Japanese>低体温症設定</Japanese>
-            <German>Hypothermieeinstellungen</German>
-=======
         <Key ID="STR_KAT_Hypothermia_HandWarmer_DescShort">
             <English>Small hand warmers to provide warmth in colder climates</English>
             <Dutch>Kleine handwarmers die warmte bieden in koude klimaten</Dutch>
@@ -153,7 +98,6 @@
             <Japanese>寒冷地でも体を温めることが出来る小さなハンドウォーマー (懐炉)</Japanese>
             <Italian>Piccoli riscaldatori per le mani per fornire calore in climi freddi</Italian>
             <French>Petits chauffe-mains pour réchauffer les mains dans les climats plus froids</French>
->>>>>>> parent of 3e8d19e5 (Merge remote-tracking branch 'upstream/dev-Tomcat' into Medication_Rework)
         </Key>
         <Key ID="STR_KAT_Hypothermia_Use_Handwarmer">
             <English>Use Hand Warmer</English>
@@ -171,13 +115,6 @@
             <Italian>Ecco dove hai i riscaldatori per le mani e quanto tempo pensi che rimangano in minuti: %1, %2, %3, %4, %5</Italian>
             <French>La position et la durée restante du chauffe-mains que vous utilisez sont les suivantes (en minutes) : %1, %2, %3, %4, %5</French>
         </Key>
-<<<<<<< HEAD
-        <Key ID="STR_KAT_Hypothermia_cba_name">
-            <English>KAT - ADV Medical: Hypothermia</English>
-            <Japanese>KAM - 低体温症 (Hypothermia)</Japanese>
-            <French>KAT - ADV Medical : Hypothermie</French>
-            <German>KAT - ADV Medical: Hypothermie</German>
-=======
         <Key ID="STR_KAT_Hypothermia_Other_Handwarmer_Output">
             <English>This patient has handwarmers and they will probably last this many more minutes at this locations: %1, %2, %3, %4, %5</English>
             <Dutch>Deze patient heeft handwarmers op deze locaties en dit is hoelang ze ongeveer nog werken: %1, %2, %3, %4, %5</Dutch>
@@ -185,7 +122,6 @@
             <Japanese>この患者が使用中の ハンドウォーマーの 位置と残り持続時間は 次の通りです (分単位): %1, %2, %3, %4, %5</Japanese>
             <Italian>Questo paziente ha riscaldatori per le mani e probabilmente dureranno ancora questi minuti in queste posizioni: %1, %2, %3, %4, %5</Italian>
             <French>La position et la durée restante du chauffe-main utilisé par ce patient sont les suivantes (en minutes) : %1, %2, %3, %4, %5</French>
->>>>>>> parent of 3e8d19e5 (Merge remote-tracking branch 'upstream/dev-Tomcat' into Medication_Rework)
         </Key>
         <Key ID="STR_KAT_Hypothermia_FluidWarmer_displayName">
             <English>Fluid Line Warmer</English>
@@ -195,42 +131,6 @@
             <Italian>Riscaldatore per linea endovenosa</Italian>
             <French>Chauffe-ligne fluide</French>
         </Key>
-<<<<<<< HEAD
-        <Key ID="STR_KAT_Hypothermia_temperature_cold">
-            <English>Patient feels remarkably cold</English>
-            <Czech>Pacient je mimořádně studený</Czech>
-            <French>Le patient a une sensation de froid intense</French>
-            <Spanish>El paciente se siente realmente frío</Spanish>
-            <Italian>Il paziente sente notevolmente freddo</Italian>
-            <German>Der Patient fühlt sich kalt an</German>
-            <Japanese>患者は著しく冷たい</Japanese>
-            <Chinese>患者感到非常寒冷</Chinese>
-            <Chinesesimp>患者感觉非常冷</Chinesesimp>
-            <Dutch>Patiënt voel opmerkelijk koud aan</Dutch>
-        </Key>
-        <Key ID="STR_KAT_Hypothermia_temperature_cool">
-            <English>Patient feels moderately cold</English>
-            <Czech>Pacient je středně studený</Czech>
-            <French>Le patient a modérément froid</French>
-            <Spanish>El paciente se siente moderadamente frío</Spanish>
-            <Italian>Il paziente sente moderatamente freddo</Italian>
-            <German>Der Patient fühlt sich mäßig kalt an</German>
-            <Japanese>患者は少し冷たい</Japanese>
-            <Chinese>患者感到有些寒冷</Chinese>
-            <Chinesesimp>患者感觉中度寒冷</Chinesesimp>
-            <Dutch>Patiënt voelt redelijk koud aan</Dutch>
-        </Key>
-        <Key ID="STR_KAT_Hypothermia_temperature_dead">
-            <English>Patient feels frigid</English>
-            <Czech>Pacient je ztuhlý</Czech>
-            <French>Le patient se sent frigorifié</French>
-            <Spanish>El paciente se siente frígido</Spanish>
-            <Italian>Il paziente sente gelato</Italian>
-            <German>Der Patient fühlt sich sehr kalt an</German>
-            <Japanese>患者は凍ったように冷たい</Japanese>
-            <Chinese>患者感到極度寒冷</Chinese>
-            <Chinesesimp>患者感觉发冷</Chinesesimp>
-=======
         <Key ID="STR_KAT_Hypothermia_FluidWarmer_DescShort">
             <English>Provides heating to IV fluids. Must be placed on an already existing line</English>
             <Dutch>Verwarmt IV-vloeistoffen. Moet geplaatst worden op een al aangelegde lijn.</Dutch>
@@ -257,33 +157,12 @@
         </Key>
         <Key ID="STR_KAT_Hypothermia_temperature_dead">
             <English>Patient feels frigid</English>
->>>>>>> parent of 3e8d19e5 (Merge remote-tracking branch 'upstream/dev-Tomcat' into Medication_Rework)
             <Dutch>Patiënt voelt ijskoud aan</Dutch>
             <Spanish>El paciente se siente frígido</Spanish>
             <Japanese>患者は凍ったように冷たい</Japanese>
             <Italian>Il paziente sente gelato</Italian>
             <French>Le patient se sent frigorifié</French>
         </Key>
-<<<<<<< HEAD
-        <Key ID="STR_KAT_Hypothermia_temperature_hot">
-            <English>Patient feels hot</English>
-            <Czech>Pacient je rozpálený</Czech>
-            <French>Le patient est fiévreux.</French>
-            <Japanese>患者は熱を帯びている</Japanese>
-            <Chinese>患者覺得熱</Chinese>
-            <German>Der Patient fühlt sich heiß an</German>
-        </Key>
-        <Key ID="STR_KAT_Hypothermia_temperature_mild">
-            <English>Patient feels mildly cool</English>
-            <Czech>Pacient je mírně chladný</Czech>
-            <French>Le patient ressent une légère fraîcheur</French>
-            <Spanish>El paciente se siente algo frío</Spanish>
-            <Italian>Il paziente sente lievemente fresco</Italian>
-            <German>Der Patient fühlt sich leicht kühl an</German>
-            <Japanese>患者は少しひんやりしている</Japanese>
-            <Chinese>患者感到稍微涼爽</Chinese>
-            <Chinesesimp>患者感觉有点凉</Chinesesimp>
-=======
         <Key ID="STR_KAT_Hypothermia_temperature_cold">
             <English>Patient feels remarkably cold</English>
             <Dutch>Patiënt voel opmerkelijk koud aan</Dutch>
@@ -302,7 +181,6 @@
         </Key>
         <Key ID="STR_KAT_Hypothermia_temperature_mild">
             <English>Patient feels mildly cool</English>
->>>>>>> parent of 3e8d19e5 (Merge remote-tracking branch 'upstream/dev-Tomcat' into Medication_Rework)
             <Dutch>Patiënt voelt een klein beetje koud aan</Dutch>
             <Spanish>El paciente se siente algo frío</Spanish>
             <Japanese>患者は少しひんやりしている</Japanese>
@@ -311,17 +189,6 @@
         </Key>
         <Key ID="STR_KAT_Hypothermia_temperature_warm">
             <English>Patient feels warm</English>
-<<<<<<< HEAD
-            <Czech>Pacient je teplý</Czech>
-            <French>Le patient ressent de la chaleur</French>
-            <Spanish>El paciente se siente cálido</Spanish>
-            <Italian>Il paziente sente caldo</Italian>
-            <German>Der Patient fühlt sich warm an</German>
-            <Japanese>患者は暖かい</Japanese>
-            <Chinese>患者感到溫暖</Chinese>
-            <Chinesesimp>患者感觉温暖</Chinesesimp>
-=======
->>>>>>> parent of 3e8d19e5 (Merge remote-tracking branch 'upstream/dev-Tomcat' into Medication_Rework)
             <Dutch>Patiënt voelt warm aan</Dutch>
             <Spanish>El paciente se siente cálido</Spanish>
             <Japanese>患者は暖かい</Japanese>

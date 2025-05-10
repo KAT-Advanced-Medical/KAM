@@ -99,7 +99,6 @@ class CfgWeapons {
     class kat_bloodIV_AB_N_250: kat_bloodIV_O_250 {
         displayName = CSTRING(BloodIV_AB_250_N);
     };
-<<<<<<< HEAD
     class kat_RingersLactateIV: ACE_salineIV {
         scope = 2;
         author = "Cplhardcore";
@@ -188,8 +187,6 @@ class CfgWeapons {
             mass = 2.5;
         };
     };
-=======
->>>>>>> parent of aaaa00b4 (Merge branch 'dev-Tomcat' of https://github.com/Cplhardcore/KAM into dev-Tomcat)
     class KAT_Empty_bloodIV_500: ACE_bloodIV
     {
         displayName = CSTRING(FieldBloodTK500_Display);

@@ -16,6 +16,8 @@
  */
 
 params ["_patient"];
+systemChat str "TXAOverdose";
+[_patient, "TXAOverdose", 1, 900, 0, 0, -90, -0.3, 0, 0] call EFUNC(vitals,addMedicationAdjustment);
 [{
     params ["_patient"];
     private _TXAOverdoseTarget = 0;

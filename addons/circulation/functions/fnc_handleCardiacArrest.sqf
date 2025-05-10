@@ -57,15 +57,6 @@ if (_initial) then {
         _cardiacArrestType = 2;
     };
 
-<<<<<<< HEAD
-    private _nitroCount = ([_patient, "Nitroglycerin", false] call ACEFUNC(medical_status,getMedicationCount)) select 1;
-
-    if ((_nitroCount < 0.5) && ((random 3) < 1)) then {
-        _cardiacArrestType = 2;
-    };
-
-=======
->>>>>>> parent of 3e8d19e5 (Merge remote-tracking branch 'upstream/dev-Tomcat' into Medication_Rework)
     _unit setVariable [QGVAR(cardiacArrestType), _cardiacArrestType, true];
 } else {
     _cardiacArrestType = _unit getVariable [QGVAR(cardiacArrestType), 0];

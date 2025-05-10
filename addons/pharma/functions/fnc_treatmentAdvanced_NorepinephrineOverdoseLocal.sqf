@@ -17,7 +17,7 @@
  params ["_patient"];
  systemChat str "NorepiOverdose";
 private _hrAdjust = 30 + floor random ((50 - 30) + 1);
-[_patient, "TACHYCARDIA", 120, 1200, _hrAdjust] call EFUNC(vitals,addMedicationAdjustment);
+[_patient, "TACHYCARDIA", 120, 1200, _hrAdjust, "", "", "", "", ""] call EFUNC(vitals,addMedicationAdjustment);
 if (random 10 < 1) then {
     private _randomValue = [3, 4];
     private _randomRhythm = selectRandom _randomValue;

@@ -40,11 +40,7 @@ class CfgVehicles {
         class TransportMagazines;
     };
     class ACE_medicalSupplyCrate_advanced: ACE_medicalSupplyCrate {
-<<<<<<< HEAD
         class TransportItems: TransportItems {
-=======
-        class TransportItems {
->>>>>>> parent of aaaa00b4 (Merge branch 'dev-Tomcat' of https://github.com/Cplhardcore/KAM into dev-Tomcat)
             MACRO_ADDITEM(kat_Pulseoximeter,3);
             MACRO_ADDITEM(kat_chestSeal,25);
             MACRO_ADDITEM(kat_aatKit,10);
@@ -53,22 +49,14 @@ class CfgVehicles {
             MACRO_ADDITEM(kat_pocketBVM,5);
             MACRO_ADDITEM(kat_nasal,10);
         };
-<<<<<<< HEAD
         class TransportMagazines: TransportMagazines {
-=======
-        class TransportMagazines {
->>>>>>> parent of aaaa00b4 (Merge branch 'dev-Tomcat' of https://github.com/Cplhardcore/KAM into dev-Tomcat)
             MACRO_ADDMAGAZINE(kat_oxygenTank_150,2);
             MACRO_ADDMAGAZINE(kat_oxygenTank_300,2);
         };
     };
     class kat_basicSupplyCrate: ACE_medicalSupplyCrate {
         displayName = CSTRING(basicSupplyCrate_display);
-<<<<<<< HEAD
         class TransportItems: TransportItems {
-=======
-        class TransportItems {
->>>>>>> parent of aaaa00b4 (Merge branch 'dev-Tomcat' of https://github.com/Cplhardcore/KAM into dev-Tomcat)
             MACRO_ADDITEM(Attachable_Helistretcher,5);
             MACRO_ADDITEM(kat_stretcherBag,5);
             MACRO_ADDITEM(kat_accuvac,2);
@@ -79,13 +67,6 @@ class CfgVehicles {
             MACRO_ADDITEM(kat_chestSeal,15);
             MACRO_ADDITEM(kat_Pulseoximeter,2);
             MACRO_ADDITEM(kat_stethoscope,2);
-<<<<<<< HEAD
-<<<<<<< HEAD
-            MACRO_ADDITEM(kat_BVM,2);
-            MACRO_ADDITEM(kat_pocketBVM,2);
-=======
-=======
->>>>>>> parent of 3e8d19e5 (Merge remote-tracking branch 'upstream/dev-Tomcat' into Medication_Rework)
             MACRO_ADDITEM(kat_IO_FAST,15);
             MACRO_ADDITEM(kat_IV_16,15);
             MACRO_ADDITEM(kat_crosspanel,2);
@@ -95,10 +76,6 @@ class CfgVehicles {
             MACRO_ADDITEM(kat_X_AED,2);
             MACRO_ADDITEM(kat_BVM,5);
             MACRO_ADDITEM(kat_pocketBVM,5);
-<<<<<<< HEAD
->>>>>>> parent of aaaa00b4 (Merge branch 'dev-Tomcat' of https://github.com/Cplhardcore/KAM into dev-Tomcat)
-=======
->>>>>>> parent of 3e8d19e5 (Merge remote-tracking branch 'upstream/dev-Tomcat' into Medication_Rework)
         };
         class TransportMagazines: TransportMagazines {
             MACRO_ADDMAGAZINE(kat_oxygenTank_150,2);

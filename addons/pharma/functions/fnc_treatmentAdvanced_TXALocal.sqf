@@ -17,6 +17,7 @@
  */
 
 params ["_patient", "_bodyPart"];
+systemChat str "TXALocal";
 private _partIndex = ALL_BODY_PARTS find toLower _bodyPart;
 private _IVarray = _patient getVariable [QGVAR(IV), [0,0,0,0,0,0]];
 private _IVactual = _IVarray select _partIndex;
