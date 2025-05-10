@@ -39,7 +39,7 @@ private _bloodVolume = _bloodVolume - (_woundBloodLoss / 100);
 _unit setVariable [VAR_BLOOD_VOL, _bloodVolume, _syncValues];
 
 private _inPain = GET_PAIN_PERCEIVED(_unit) > 0;
-if (_inPain isNotEqualTo IS_IN_PAIN(_unit)) then {
+if !(_inPain isEqualTo IS_IN_PAIN(_unit)) then {
     _unit setVariable [VAR_IN_PAIN, _inPain, true];
 };
 
@@ -48,7 +48,7 @@ private _hrTargetAdjustment = 0;
 private _painSupressAdjustment = 0;
 private _adjustments = _unit getVariable [VAR_MEDICATIONS,[]];
 
-if (_adjustments isNotEqualTo []) then {
+if !(_adjustments isEqualTo []) then {
     private _deleted = false;
     {
         _x params ["_medication", "_timeAdded", "_timeTillMaxEffect", "_maxTimeInSystem", "_hrAdjust", "_painAdjust", "_flowAdjust", "_alphaFactor"];

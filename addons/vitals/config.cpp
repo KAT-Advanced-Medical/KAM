@@ -5,9 +5,7 @@ class CfgPatches {
         name = COMPONENT_NAME;
         requiredVersion = REQUIRED_VERSION;
         units[] = {};
-        weapons[] = {
-            "kat_basicDiagnostic"
-        };
+        weapons[] = {};
         magazines[] = {};
         requiredAddons[] = {
             "ace_medical",
