@@ -10,7 +10,7 @@
  * None
  *
  * Example:
- * [player] call kat_pharma_fnc_clotWound;
+ * [player] call kat_pharma_fnc_coagRegen;
  *
  * Public: No
  */
@@ -40,20 +40,8 @@ if !(GVAR(coagulation)) exitWith {};
     private _savedCoagFactors = _unit getVariable [QGVAR(coagulationSavedFactors), (_unit getVariable [QGVAR(coagulationFactor), 30])];
     private _limitRegenCoagFactors = missionNamespace getVariable [QGVAR(coagulation_factor_count), 30];
     private _cooldownON = _unit getVariable [QGVAR(coagulationRegenCooldown), false];
-    private _medStack = [_patient, false] call ACEFUNC(medical_treatment,getAllMedicationCount);
-    private _medsToCheck = ["TXA", "EACA"];
-    private _eacaEffectiveness = 0;
-    private _txaEffectiveness = 0;
-    {
-        private _medName = toLower (_x select 0);
-        private _effectiveness = _x select 2;
-        if ("TXA" in _medName) then {
-            _txaEffectiveness = _txaEffectiveness max _effectiveness;
-        };
-        if ("EACA" in _medName) then {
-            _eacaEffectiveness = _eacaEffectiveness max _effectiveness;
-        };
-    } forEach _medStack;
+    private _countTXA = ([_unit, "TXA"] call ACEFUNC(medical_status,getMedicationCount)) select 1;
+    private _countEACA = ([_unit, "EACA"] call ACEFUNC(medical_status,getMedicationCount)) select 1;
     private _ammountToAdd = 1;
 
     if (_currentCoagFactors < _savedCoagFactors) exitWith {
@@ -66,8 +54,8 @@ if !(GVAR(coagulation)) exitWith {};
 
     if (_currentCoagFactors == _savedCoagFactors && _currentCoagFactors < _limitRegenCoagFactors) exitWith {
 
-        if (__eacaEffectiveness > 0.3 || _txaEffectiveness > 0.3) then { // If TXA or EACA are in system add more factors
-            if (_eacaEffectiveness > 0.3 && _txaEffectiveness > 0.3) exitWith {
+        if (_countTXA > 0 || _countEACA > 0) then { // If TXA or EACA are in system add more factors
+            if (_countTXA > 0 && _countEACA > 0) exitWith {
                 _ammountToAdd = 4;
             };
             _ammountToAdd = 2;
@@ -79,7 +67,7 @@ if !(GVAR(coagulation)) exitWith {};
 
     if (_currentCoagFactors > _limitRegenCoagFactors && !(_cooldownON)) exitWith {
 
-        if ((_countTXA > 0 || _countTXAiV51 > 0 || _countTXAiV53 > 0 || _countTXAiM101 > 0 || _countTXAiM103 > 0) || (_countEACA > 0 || _countEACAIV51 > 0 || _countEACAIV53 > 0)) exitWith {}; // If TXA or EACA is in system don't remove factor
+        if (_countTXA > 0 || _countEACA > 0) exitWith {}; // If TXA or EACA is in system don't remove factor
 
         _unit setVariable [QGVAR(coagulationFactor), (_currentCoagFactors - 1), true];
         _unit setVariable [QGVAR(coagulationSavedFactors), (_currentCoagFactors - 1), true];

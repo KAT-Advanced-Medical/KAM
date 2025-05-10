@@ -17,13 +17,10 @@
  * Public: No
  */
 
-params ["_patient", "_ph", "_coagulation", "_classname"];
+params ["_patient", "_ph", "_coagulation"];
 
 private _current = _patient getVariable [QGVAR(externalPh), 0];
-private _fluidVolume = GET_BODY_FLUID(_unit);
-
 _patient setVariable [QGVAR(externalPh), ((_current + _ph) max 0), true];
-_fluidVolume params ["_ECB","_ECP","_SRBC","_ISP","_fullVolume"];
 
 if (_classname in ["PackedRBCIV_500", "PackedRBCIV_250"]) then {
     private _plasma = (_fluidVolume select 1);

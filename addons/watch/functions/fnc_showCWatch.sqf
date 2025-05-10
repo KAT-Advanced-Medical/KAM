@@ -84,7 +84,14 @@ private _bearing = _display displayCtrl 20807;
         _altitude ctrlSetText ([_altitudeValue, 1, 0] call CBA_fnc_formatNumber);
     };
 
-    _hr ctrlSetText ([GET_HEART_RATE(_unit), 1, 0] call CBA_fnc_formatNumber);
+    if (GVAR(watchInaccuracy)) then {
+        private _fatigue = [0, (ACEGVAR(advanced_fatigue,anFatigue) * 2)] select (ACEGVAR(advanced_fatigue,enabled));
+        private _temperature = _unit getVariable [QEGVAR(hypothermia,unitTemperature), 37];
+
+        _hr ctrlSetText ([(GET_HEART_RATE(_unit) + ((2 * _fatigue) - (37 - _temperature))), 1, 0] call CBA_fnc_formatNumber);
+    } else {
+        _hr ctrlSetText ([GET_HEART_RATE(_unit), 1, 0] call CBA_fnc_formatNumber);
+    };
 
 }, 1, [
     _unit,

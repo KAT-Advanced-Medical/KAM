@@ -7,7 +7,6 @@ class RscActivePicture;
 class RscButtonMenu;
 class RscControlsGroup;
 class RscControlsGroupNoScrollbars;
-class RscCombo;
 
 class ace_medical_gui_TriageToggle: RscButton {
     x = QUOTE(POS_X(14.33));
@@ -168,28 +167,7 @@ class ACE_Medical_Menu {
                     shadow = "true";
                 };
             };
-        class SYRINGEBackground: IVFlowBackground {
-            idc = IDC_SYRINGE_BACKGROUND; // LOOK HERE
-            x = QUOTE(POS_X(39.6));
-            y = QUOTE(POS_Y(4.9));
-            w = QUOTE(POS_W(9));
-            h = QUOTE(POS_H(16.5));
-        };
-        class SYRINGETitle: IVFlowTitle {
-            idc = IDC_SYRINGE_TITLE; // LOOK HERE
-            text = CSTRING(SYRINGETitle);
-            x = QUOTE(POS_X(39.6));
-            y = QUOTE(POS_Y(4.9));
-            w = QUOTE(POS_W(9));
-            h = QUOTE(POS_H(1));
-            show = 1;
-            class Attributes {
-                color = "#E5E5E5";
-                font = "RobotoCondensed";
-                shadow = "true";
-                };
-            };
-        };
+    };
     class controls {
             class IVbutton: RscButton {
                 idc = IDC_IV_FLOW_SHOWBUTTON; // LOOK HERE

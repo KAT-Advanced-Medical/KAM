@@ -22,11 +22,8 @@ params ["_medic", "_patient", "_bodyPart"];
 private _partIndex = ALL_BODY_PARTS find toLower _bodyPart;
 private _IVarray = _patient getVariable [QGVAR(IV), [0,0,0,0,0,0]];
 private _IVactual = _IVarray select _partIndex;
-if ([7,8,9] find _IVactual != -1) then {
-    _IVarray set [_partIndex, _IVactual + 3];
-} else {
-    _IVarray set [_partIndex, _IVactual + 8];
-    };
+
+_IVarray set [_partIndex, 4];
 _patient setVariable [QGVAR(IV), _IVarray, true];
 
 private _occludedMedications = _patient getVariable [QACEGVAR(medical,occludedMedications), []];
@@ -35,20 +32,20 @@ private _occludedFlushed = false;
 
 [_patient, "activity", LLSTRING(flush_log), [[_medic] call ACEFUNC(common,getName)]] call ACEFUNC(medical_treatment,addToLog);
 
-if !(HAS_TOURNIQUET_APPLIED_ON(_patient,_partIndex)) then {
-    {
-        _x params ["_partIndexN", "_medication"];
+if (HAS_TOURNIQUET_APPLIED_ON(_patient,_partIndex)) exitWith {};
 
-        if(_partIndex isEqualTo _partIndexN) then {
-            [QGVAR(medicationLocal), [_patient, _bodyPart, _medication], _patient] call CBA_fnc_targetEvent;
+{
+    _x params ["_partIndexN", "_medication"];
 
-            _occludedMedications set [_forEachIndex, []];
-            _occludedFlushed = true;
-        };
-    } forEach _occludedMedications;
+    if(_partIndex isEqualTo _partIndexN) then {
+        [QGVAR(medicationLocal), [_patient, _bodyPart, _medication], _patient] call CBA_fnc_targetEvent;
 
-    if (_occludedFlushed) then {
-        _occludedMedications = _occludedMedications - [[]];
-        _patient setVariable [QACEGVAR(medical,occludedMedications), _occludedMedications, true];
+        _occludedMedications set [_forEachIndex, []];
+        _occludedFlushed = true;
     };
+} forEach _occludedMedications;
+
+if (_occludedFlushed) then {
+    _occludedMedications = _occludedMedications - [[]];
+    _patient setVariable [QACEGVAR(medical,occludedMedications), _occludedMedications, true];
 };

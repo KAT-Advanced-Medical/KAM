@@ -21,16 +21,7 @@ params ["_patient", "_bodyPart"];
 private _partIndex = ALL_BODY_PARTS find toLower _bodyPart;
 private _IVarray = _patient getVariable [QGVAR(IV), [0,0,0,0,0,0]];
 private _IVactual = _IVarray select _partIndex;
-private _medStack = [_patient, false] call ACEFUNC(medical_treatment,getAllMedicationCount);
-private _medsToCheck = ["EACA"];
-private _eacaEffectiveness = 0;
-{
-    private _medName = toLower (_x select 0);
-    private _effectiveness = _x select 2;
-    if ("EACA" in _medName) then {
-        _eacaEffectiveness = _eacaEffectiveness max _effectiveness;
-    };
-} forEach _medStack;
+private _countEACA = ([_patient, "EACA"] call ACEFUNC(medical_status,getMedicationCount)) select 1;
 private _allowStack = missionNamespace getVariable [QGVAR(allowStackScript_EACA), true];
 private _keepRunning = missionNamespace getVariable [QGVAR(keepScriptRunning_EACA), false];
 private _cycleTime = missionNamespace getVariable [QGVAR(bandageCycleTime_EACA), 5];
@@ -38,27 +29,27 @@ private _cycleTime = missionNamespace getVariable [QGVAR(bandageCycleTime_EACA),
 if (_IVactual > 1) then {
     private _randomNumber = random 100;
 
-    if (_IVactual != 14) exitWith {
+    if (_IVactual != 4) exitWith {
         if (_randomNumber < GVAR(blockChance)) then {
             [{
                 params ["_patient", "_IVarray", "_partIndex"];
 
-                if (_IVactual > 1 && ([10,11,12] find _IVactual == -1)) exitWith {};
-                _IVarray set [_partIndex, _IVactual + 5];
+                if (_IVactual > 1 && _IVactual != 4) exitWith {};
+                _IVarray set [_partIndex, 3];
                 _patient setVariable [QGVAR(IV), _IVarray, true];
             },
             [_patient, _IVarray, _partIndex], (random 300)] call CBA_fnc_waitAndExecute;
         };
     };
 
-    _IVarray set [_partIndex, _IVactual];
+    _IVarray set [_partIndex, 2];
     _patient setVariable [QGVAR(IV), _IVarray, true];
 };
 
 if (!(GVAR(coagulation)) || GVAR(coagulation_allow_EACA_script)) then {
 
-    if ([7,8,9] find _IVactual == -1) then {
-        if (_eacaEffectiveness > 0.3)&& !(_allowStack) exitWith {};
+    if (_IVactual != 3) then {
+        if (_countEACA > 1 && !(_allowStack)) exitWith {};
 
         [{
             params ["_args", "_idPFH"];

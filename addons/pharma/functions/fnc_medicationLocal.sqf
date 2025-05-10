@@ -42,6 +42,7 @@ if !(ACEGVAR(medical_treatment,advancedMedication)) exitWith {
             if !(_sedated) then {
                 [QACEGVAR(medical,WakeUp), _patient] call CBA_fnc_localEvent;
             };
+
         };
         case "EpinephrineIV": {
             private _sedated = _patient getVariable [QEGVAR(surgery,sedated), false];
@@ -60,7 +61,7 @@ TRACE_1("Running treatmentMedicationLocal with Advanced configuration for",_pati
 private _partIndex = ALL_BODY_PARTS find toLower _bodyPart;
 
 // Handle IV blockage
-if (((_patient getVariable [QGVAR(IV), [0,0,0,0,0,0]]) select _partIndex) isEqualTo 7) exitWith {
+if (((_patient getVariable [QGVAR(IV), [0,0,0,0,0,0]]) select _partIndex) isEqualTo 3) exitWith {
     private _occludedMedications = _patient getVariable [QACEGVAR(medical,occludedMedications), []];
     _occludedMedications pushBack [_partIndex, _classname];
     _patient setVariable [QACEGVAR(medical,occludedMedications), _occludedMedications, true];
@@ -192,7 +193,6 @@ if (GVAR(AMS_Enabled)) then {
 
     if (_className in ["Fentanyl","Morphine","Nalbuphine"]) then {
     [format ["kat_pharma_%1Local", toLower _className], [_patient, _bodyPart, _opioidRelief], _patient] call CBA_fnc_targetEvent;
-    };
 };
 
 if (GVAR(AMSEnabled)) then {

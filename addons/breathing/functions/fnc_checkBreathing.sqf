@@ -21,16 +21,25 @@ params ["_medic", "_patient"];
 
 private _ph = GET_PH(_patient);
 private _hr = GET_HEART_RATE(_patient);
+private _rawRR = GET_BREATHING_RATE(_patient);
+private _rr = round _rawRR;
 private _output = "";
 private _output_log = "";
 
 private _breathing = LLSTRING(breathing_isNormal);
 private _breathing_log = localize ACELSTRING(medical_treatment,Check_Pulse_Normal);
 private _breath = "";
+private _breathRate = "RR: ";
 
-if (_patient getVariable [QGVAR(pneumothorax), 0] > 0) then {
+private _respiratoryDepth = _patient getVariable [QEGVAR(vitals,respiratoryDepth), 10];
+if ((_respiratoryDepth < 8.5) || (_patient getVariable [QEGVAR(chemical,airPoisoning), false])) then {
     _breathing = LLSTRING(breathing_isShallow);
     _breathing_log = LLSTRING(breathing_shallow);
+};
+
+if (_respiratoryDepth < 7)  then {
+    _breathing = LLSTRING(breathing_isVeryShallow);
+    _breathing_log = LLSTRING(breathing_Veryshallow);
 };
 
 if (_ph < 7.2) then {
@@ -41,8 +50,18 @@ if (_ph < 7.2) then {
     };
 };
 
-_output = format ["%1%2", _breathing ,_breath];
-_output_log = format ["%1%2", _breathing_log, _breath];
+if ([_medic] call ACEFUNC(common,isMedic)) then {
+    _breathRate = format ["%1%2", _breathRate, _rr];
+} else {
+    switch (true) do {
+        case (_rr > 25): { _breathRate = LLSTRING(breathing_rrRapid); };
+        case (_rr < 11): { _breathRate = LLSTRING(breathing_rrSlow); };
+        default { _breathRate = LLSTRING(breathing_rrNormal); };
+    };
+};
+
+_output = format ["%1%2, %3", _breathing ,_breath, _breathRate];
+_output_log = format ["%1%2, %3", _breathing_log, _breath, _breathRate];
 
 if (_hr == 0 || !(alive _patient) || (_patient getVariable [QEGVAR(airway,obstruction), false] && !(_patient getVariable [QEGVAR(airway,overstretch), false])) || _patient getVariable [QEGVAR(airway,occluded), false] || _patient getVariable [QGVAR(hemopneumothorax), false] || _patient getVariable [QGVAR(tensionpneumothorax), false]) then {
     _output = LLSTRING(breathing_none);

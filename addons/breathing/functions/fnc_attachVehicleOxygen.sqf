@@ -24,6 +24,8 @@ if (_patient getVariable [QGVAR(oxygenMaskActive), false]) exitWith {
 
 _patient setVariable [QGVAR(oxygenMaskActive), true, true];
 
+[QGVAR(playRespiratorTone), [_patient], _patient] call CBA_fnc_targetEvent;
+
 [{
     _this params ["_args", "_pfhID"];
     _args params ["_patient"];
@@ -38,7 +40,7 @@ _patient setVariable [QGVAR(oxygenMaskActive), true, true];
         _pfhID call CBA_fnc_removePerFrameHandler;
     };
 
-    if !((_patient call EFUNC(airway,checkMask))) exitWith {
+    if !((_patient call FUNC(checkOxygenMask))) exitWith {
         _patient setVariable [QGVAR(oxygenMaskActive), false, true];
         _pfhID call CBA_fnc_removePerFrameHandler;
     };

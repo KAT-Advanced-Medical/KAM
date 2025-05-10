@@ -20,29 +20,28 @@ jobs:
       run: python3 tools/stringtable_validator.py
     - name: Check Strings
       run: python3 tools/check_strings.py
+    - name: Check for BOM
+      uses: arma-actions/bom-check@master
+      with:
+        path: 'addons'
 
-  lint:
-    runs-on: ubuntu-latest
-    steps:
-    - name: Checkout the source code
-      uses: actions/checkout@v4
-    - name: Lint (sqflint)
-      uses: arma-actions/sqflint@master
-      continue-on-error: true # No failure due to many false-positives
 
   build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
-        with:
-          fetch-depth: 1
+      - name: Checkout the source code
+        uses: actions/checkout@v4
       - name: Setup HEMTT
         uses: arma-actions/hemtt@v1
+        with:
+          annotate: false
       - name: Run HEMTT Build
         run: hemtt build
+      - name: Rename build folder
+        run: mv .hemttout/build .hemttout/@kat
       - name: Upload Release
         uses: actions/upload-artifact@v4
         with:
-          name: '@kat'
-          path: '.hemttout/build/*'
+          name: 'kat-${{github.sha}}-nobin'
+          path: '.hemttout/@*'
           include-hidden-files: true # Because .hemttout is a hidden directory

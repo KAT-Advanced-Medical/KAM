@@ -30,22 +30,22 @@ private _fnc_getActions = {
 
         if (_idNumber > 0) then {   
             private _resultSampleMap = missionNamespace getVariable [QEGVAR(circulation,resultSampleMap), []];
-            _resultSampleMap = _resultSampleMap get _idNumber;
-            _resultSampleMap = _resultSampleMap select 1;
-            private _patient = _resultSampleMap select 0;
+            _resultSampleArray = _resultSampleMap get _idNumber;
+            _resultSampleActual = _resultSampleArray select 1;
+            private _patient = _resultSampleArray select 0;
 
             _actions pushBack [
                 [
                     _x,
                     format [LLSTRING(Apply_Arterial_Test), _patient],
                     "",
-                    {_this call FUNC(attachBloodGas)},
+                    {call FUNC(attachBloodGas)},
                     {true},
                     {},
                     []
                 ] call ACEFUNC(interact_menu,createAction),
                 [],
-                [_resultSampleMap, _target, _idNumber, _player]
+                [_resultSampleActual, _target, _idNumber, _player]
             ];
         };
     } forEach ([_player, 0] call ACEFUNC(common,uniqueItems));

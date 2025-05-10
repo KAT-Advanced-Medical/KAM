@@ -40,9 +40,6 @@ private _ht = _patient getVariable [QEGVAR(circulation,ht), []];
             _patient setVariable [QEGVAR(circulation,ht), _ht, true];
         };
     };
-
-    if (_medicationDeleted) exitWith {};
-    
 } forEach _medicationArray;
 
 _patient setVariable [QACEGVAR(medical,medications), _medicationArray, true];

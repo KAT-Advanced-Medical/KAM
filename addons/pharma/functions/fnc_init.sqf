@@ -38,7 +38,7 @@ if (!local _unit) exitWith {};
     {
         _x params ["_medication"];
 
-        if (_medication in ["Epinephrine", "EpinephrineIV", "Phenylephrine", "Nitroglycerin", "Lidocaine", "Norepinephrine", "syringe_norepinephrine_5ml_1", "syringe_norepinephrine_5ml_2", "syringe_phenylephrine_5ml_1", "syringe_phenylephrine_5ml_2", "syringe_nitroglycerin_5ml_1", "syringe_nitroglycerin_5ml_2", "syringe_epinephrineIV_5ml_1", "syringe_epinephrineIV_5ml_2", "syringe_lidocaine_5ml_1", "syringe_lidocaine_5ml_2","syringe_lidocaine_10ml_1"]) exitWith {
+        if (_medication in ["Epinephrine", "EpinephrineIV", "Phenylephrine", "Nitroglycerin", "Lidocaine", "Norepinephrine"]) exitWith {
             _alpha = true;
         };
     } forEach (_medicationArray);
@@ -46,7 +46,7 @@ if (!local _unit) exitWith {};
     {
         _x params ["_medication"];
 
-        if (_medication in ["Fentanyl", "Morphine", "Nalbuphine", "syringe_fentanyl_5ml_1", "syringe_fentanyl_5ml_2", "syringe_nalbuphine_5ml_1", "syringe_nalbuphine_5ml_2","syringe_fentanyl_10ml_1", "syringe_fentanyl_10ml_2", "syringe_nalbuphine_10ml_1", "syringe_nalbuphine_10ml_2"]) exitWith {
+        if (_medication in ["Fentanyl", "Morphine", "Nalbuphine"]) exitWith {
             _opioid = true;
         };
     } forEach (_medicationArray);
@@ -101,7 +101,7 @@ if (GVAR(kidneyAction)) then {
     
                 if !(_kidneyPressure) then {
                     _unit setVariable [QGVAR(kidneyPressure), true, true];
-                    [_unit, "KIDNEY", 15, 1200, 30, 0, 15, "", "", ""] call EFUNC(vitals,addMedicationAdjustment);
+                    [_unit, "KIDNEY", 15, 1200, 30, 0, 15] call ACEFUNC(medical_status,addMedicationAdjustment);
                 };
             };
             default {

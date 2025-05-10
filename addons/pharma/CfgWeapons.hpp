@@ -13,28 +13,6 @@ class CfgWeapons {
             mass = 0.5;
         };
     };
-    class kat_IV_14: ACE_ItemCore {
-        scope = 2;
-        displayName = CSTRING(IV_14_Display);
-        picture = QPATHTOF(ui\icon_IV_16.paa);
-        model = QPATHTOF(models\iv\kat_iv.p3d);
-        descriptionShort = CSTRING(IV_DescShort);
-        ACE_isMedicalItem = 1;
-        class ItemInfo: CBA_MiscItem_ItemInfo {
-            mass = 0.5;
-        };
-    };
-    class kat_IV_20: ACE_ItemCore {
-        scope = 2;
-        displayName = CSTRING(IV_20_Display);
-        picture = QPATHTOF(ui\icon_IV_20.paa);
-        model = QPATHTOF(models\iv\kat_iv.p3d);
-        descriptionShort = CSTRING(IV_DescShort);
-        ACE_isMedicalItem = 1;
-        class ItemInfo: CBA_MiscItem_ItemInfo {
-            mass = 0.5;
-        };
-    };
     class kat_IO_FAST: ACE_ItemCore {
         scope = 2;
         displayName = CSTRING(IO_45_Display);
@@ -44,28 +22,6 @@ class CfgWeapons {
         ACE_isMedicalItem = 1;
         class ItemInfo: CBA_MiscItem_ItemInfo {
             mass = 0.5;
-        };
-    };
-    class kat_10ml_syringe: ACE_ItemCore {
-        scope = 2;
-        displayName = CSTRING(Syringe_10_Display);
-        picture = QPATHTOF(ui\syringe_item.paa);
-        model = "\A3\Structures_F_EPA\Items\Medical\Painkillers_F.p3d";
-        descriptionShort = CSTRING(Syringe_10_DescShort);
-        ACE_isMedicalItem = 1;
-        class ItemInfo: CBA_MiscItem_ItemInfo {
-            mass = 1;
-        };
-    };
-    class kat_5ml_syringe: ACE_ItemCore {
-        scope = 2;
-        displayName = CSTRING(Syringe_5_Display);
-        picture = QPATHTOF(ui\syringe_item.paa);
-        model = "\A3\Structures_F_EPA\Items\Medical\Painkillers_F.p3d";
-        descriptionShort = CSTRING(Syringe_5_DescShort);
-        ACE_isMedicalItem = 1;
-        class ItemInfo: CBA_MiscItem_ItemInfo {
-            mass = 1;
         };
     };
     class kat_naloxone: ACE_ItemCore {
@@ -179,17 +135,6 @@ class CfgWeapons {
             mass = 0.5;
         };
     };
-    class kat_atropineIV: ACE_ItemCore {
-        scope = 2;
-        displayName = CSTRING(AtropineIV_Display);
-        picture = QPATHTOF(ui\icon_AtropineIV.paa);
-        model = "\A3\Structures_F_EPA\Items\Medical\Painkillers_F.p3d";
-        descriptionShort = CSTRING(AtropineIV_DescShort);
-        ACE_isMedicalItem = 1;
-        class ItemInfo: CBA_MiscItem_ItemInfo {
-            mass = 0.5;
-        };
-    };
     class kat_ketamine: ACE_ItemCore {
         scope = 2;
         displayName = CSTRING(Ketamine_Box_Display);
@@ -231,7 +176,7 @@ class CfgWeapons {
         descriptionShort = CSTRING(Lorazepam_DescShort);
         ACE_isMedicalItem = 1;
         class ItemInfo: CBA_MiscItem_ItemInfo {
-            mass = 0.5;
+            mass = 0.2;
         };
     };
     class kat_flumazenil: ACE_ItemCore {
@@ -242,7 +187,7 @@ class CfgWeapons {
         descriptionShort = CSTRING(Flumazenil_DescShort);
         ACE_isMedicalItem = 1;
         class ItemInfo: CBA_MiscItem_ItemInfo {
-            mass = 0.5;
+            mass = 0.2;
         };
     };
     class kat_etomidate: ACE_ItemCore {
@@ -253,7 +198,7 @@ class CfgWeapons {
         descriptionShort = CSTRING(Etomidate_DescShort);
         ACE_isMedicalItem = 1;
         class ItemInfo: CBA_MiscItem_ItemInfo {
-            mass = 0.5;
+            mass = 0.2;
         };
     };
     class kat_epinephrineIV: ACE_ItemCore {
@@ -264,40 +209,7 @@ class CfgWeapons {
         descriptionShort = CSTRING(EpinephrineIV_DescShort);
         ACE_isMedicalItem = 1;
         class ItemInfo: CBA_MiscItem_ItemInfo {
-            mass = 0.5;
-        };
-    };
-    class kat_morphineIV: ACE_ItemCore {
-        scope = 2;
-        displayName = CSTRING(MorphineIV_displayName);
-        picture = QPATHTOF(ui\icon_MorphineIV.paa);
-        model = "\A3\Structures_F_EPA\Items\Medical\Painkillers_F.p3d";
-        descriptionShort = CSTRING(MorphineIV_DescShort);
-        ACE_isMedicalItem = 1;
-        class ItemInfo: CBA_MiscItem_ItemInfo {
-            mass = 0.5;
-        };
-    };
-    class kat_adenosineIV: ACE_ItemCore {
-        scope = 2;
-        displayName = CSTRING(AdenosineIV_displayName);
-        picture = QPATHTOF(ui\icon_AdenosineIV.paa);
-        model = "\A3\Structures_F_EPA\Items\Medical\Painkillers_F.p3d";
-        descriptionShort = CSTRING(AdenosineIV_DescShort);
-        ACE_isMedicalItem = 1;
-        class ItemInfo: CBA_MiscItem_ItemInfo {
-            mass = 0.5;
-        };
-    };
-    class kat_alteplase: ACE_ItemCore {
-        scope = 2;
-        displayName = CSTRING(Alteplase_Display);
-        picture = QPATHTOF(ui\icon_Alteplase.paa);
-        model = "\A3\Structures_F_EPA\Items\Medical\Painkillers_F.p3d";
-        descriptionShort = CSTRING(Alteplase_DescShort);
-        ACE_isMedicalItem = 1;
-        class ItemInfo: CBA_MiscItem_ItemInfo {
-            mass = 0.5;
+            mass = 0.2;
         };
     };
     class kat_doxapram: ACE_ItemCore {

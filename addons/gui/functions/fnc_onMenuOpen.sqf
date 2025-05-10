@@ -98,11 +98,6 @@ if (EGVAR(pharma,RequireInsIV) && EGVAR(pharma,IVflowControl)) then {
     (_display displayCtrl IDC_IV_FLOW_SHOWBUTTON) ctrlShow true;
 };
 
-
-if (EGVAR(pharma,AMS_Enabled)) then {
-    (_display displayCtrl IDC_SYRINGE_OPEN) ctrlShow true;
-};
-
 if (EGVAR(circulation,abgEnable)) then {
     (_display displayCtrl IDC_TEST_SHOWBUTTON) ctrlShow true;
 };

@@ -1,5 +1,4 @@
 class BloodIV;
-class SalineIV;
 class BloodIV_O: BloodIV {
     displayName = CSTRING(Action_BloodIV_O);
     items[] = {"kat_bloodIV_O"};

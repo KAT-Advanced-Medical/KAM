@@ -1,10 +1,17 @@
 #include "script_component.hpp"
 
+#define CBA_SETTINGS_CAT LSTRING(cba_name)
+
 //Events
 ["ace_glassesChanged", LINKFUNC(breathing)] call CBA_fnc_addEventHandler;
 [QGVAR(poison), LINKFUNC(poison)] call CBA_fnc_addEventHandler;
 [QGVAR(handleGasMaskDur), LINKFUNC(handleGasMaskDur)] call CBA_fnc_addEventHandler;
 [QGVAR(addSealAction), LINKFUNC(createSealAction)] call CBA_fnc_addEventHandler;
+
+[QGVAR(playTone), {
+    params ["_unit", "_tone"];
+    _unit say3D [_tone, 5];
+}] call CBA_fnc_addEventHandler;
 
 // ACE Events
 [QACEGVAR(medical_gui,updateInjuryListGeneral), LINKFUNC(gui_updateInjuryListGeneral)] call CBA_fnc_addEventHandler;
@@ -28,7 +35,7 @@ private _items = missionNamespace getVariable [QGVAR(availGasmask), "'G_AirPurif
 private _array = [_items, "CfgGlasses"] call FUNC(getList);
 missionNamespace setVariable [QGVAR(availGasmaskList), _array, true];
 
-["KAT_ChemicalDetector", QGVAR(showChemDetector), "Show Chemical Detector", {
+[CBA_SETTINGS_CAT, QGVAR(showChemDetector), "Show Chemical Detector", {
     // Conditions: canInteract
     if (!([ACE_player, objNull, ["isNotEscorting", "isNotInside"]] call ACEFUNC(common,canInteractWith)) || {!('KAT_ChemicalDetector' in assignedItems ACE_player)}) exitWith { false };
 
