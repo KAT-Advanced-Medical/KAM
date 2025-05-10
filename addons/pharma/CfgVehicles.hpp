@@ -5,10 +5,19 @@ class CfgVehicles {
     class Items_base_F;
     class WeaponHolder_Single_limited_item_F;
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
     class ACE_medicalSupplyCrate;
 
 >>>>>>> parent of aaaa00b4 (Merge branch 'dev-Tomcat' of https://github.com/Cplhardcore/KAM into dev-Tomcat)
+=======
+    class NATO_Box_Base;
+    class ACE_medicalSupplyCrate: NATO_Box_Base {
+        class TransportItems;
+        class TransportMagazines;
+    };
+    
+>>>>>>> parent of 3e8d19e5 (Merge remote-tracking branch 'upstream/dev-Tomcat' into Medication_Rework)
     class Land_Defibrillator_F: Items_base_F {
         ace_dragging_canCarry = 1;
         ace_dragging_carryPosition[] = {0,1,1};
@@ -27,9 +36,15 @@ class CfgVehicles {
             MACRO_ADDITEM(kat_Painkiller,1);
         };
     };
+<<<<<<< HEAD
 
     class ACE_medicalSupplyCrate_advanced: ACE_medicalSupplyCrate {
         class TransportItems {
+=======
+    
+    class ACE_medicalSupplyCrate_advanced: ACE_medicalSupplyCrate {
+        class TransportItems: TransportItems {
+>>>>>>> parent of 3e8d19e5 (Merge remote-tracking branch 'upstream/dev-Tomcat' into Medication_Rework)
             MACRO_ADDITEM(kat_amiodarone,20);
             MACRO_ADDITEM(kat_atropine,20);
             MACRO_ADDITEM(kat_IO_FAST,20);
@@ -48,13 +63,21 @@ class CfgVehicles {
             MACRO_ADDITEM(kat_etomidate,20);
             MACRO_ADDITEM(kat_EACA,20);
         };
+<<<<<<< HEAD
         class TransportMagazines {
+=======
+        class TransportMagazines: TransportMagazines {
+>>>>>>> parent of 3e8d19e5 (Merge remote-tracking branch 'upstream/dev-Tomcat' into Medication_Rework)
             MACRO_ADDMAGAZINE(kat_Carbonate,10);
         };
     };
     class kat_pharmaMedicalCrate: ACE_medicalSupplyCrate {
         displayName = CSTRING(pharmaSupplyCrate_displayName);
+<<<<<<< HEAD
         class TransportItems {
+=======
+        class TransportItems: TransportItems {
+>>>>>>> parent of 3e8d19e5 (Merge remote-tracking branch 'upstream/dev-Tomcat' into Medication_Rework)
             MACRO_ADDITEM(kat_amiodarone,15);
             MACRO_ADDITEM(kat_atropine,15);
             MACRO_ADDITEM(kat_EACA,15);
@@ -68,7 +91,11 @@ class CfgVehicles {
             MACRO_ADDITEM(kat_TXA,15);
             MACRO_ADDITEM(kat_nitroglycerin,15);
         };
+<<<<<<< HEAD
         class TransportMagazines {
+=======
+        class TransportMagazines: TransportMagazines {
+>>>>>>> parent of 3e8d19e5 (Merge remote-tracking branch 'upstream/dev-Tomcat' into Medication_Rework)
             MACRO_ADDMAGAZINE(kat_Carbonate,15);
             MACRO_ADDMAGAZINE(kat_Painkiller,15);
         };

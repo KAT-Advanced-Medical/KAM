@@ -51,10 +51,12 @@ if (IN_CRDC_ARRST(_unit)) then {
 } else {
     // Ventilatory Demand comes from Heart Rate with increase demand from PaCO2 levels 
     _demandVentilation = ((((_actualHeartRate * HEART_RATE_CO2_MULTIPLIER) / _anerobicPressure) + ((_previousCyclePaco2 - DEFAULT_PACO2) * 200)) max MINIMUM_VENTILATION);
+    private _baseTidalVolume = GET_KAT_SURFACE_AREA(_unit);
 
 <<<<<<< HEAD
     // Respiratory Rate is supressed by Opioids 
     _respiratoryDepth = [((DEFAULT_RESPIRATORY_DEPTH) - (_opioidDepression / 1.5)), 10] select (_unit getVariable [QEGVAR(breathing,BVMInUse), false]);
+<<<<<<< HEAD
     private _baseTidalVolume = GET_KAT_SURFACE_AREA(_unit) * (_respiratoryDepth / 10);
 =======
     // Tidal Volume is modified by respiratory depth which can be supressed by opioids and pneumothroax
@@ -64,6 +66,9 @@ if (IN_CRDC_ARRST(_unit)) then {
     // Respiratory Rate Calculation
     _respiratoryRate = [((_demandVentilation / _tidalVolume)) min MAXIMUM_RR, 20] select (_unit getVariable [QEGVAR(breathing,BVMInUse), false]);
 >>>>>>> parent of aaaa00b4 (Merge branch 'dev-Tomcat' of https://github.com/Cplhardcore/KAM into dev-Tomcat)
+=======
+    private _tidalVolume = GET_KAT_SURFACE_AREA(_unit) * (_respiratoryDepth / 10);
+>>>>>>> parent of 3e8d19e5 (Merge remote-tracking branch 'upstream/dev-Tomcat' into Medication_Rework)
 
     _respiratoryRate = [(((_demandVentilation / _tidalVolume)) min MAXIMUM_RR)* _respiratoryRateMult, 20] select (_unit getVariable [QEGVAR(breathing,BVMInUse), false]);
     
@@ -87,6 +92,7 @@ if (EGVAR(breathing,paco2Active)) then {
     _paco2 = if ((_demandVentilation / _actualVentilation) == 1) then { _previousCyclePaco2 + (PACO2_MAX_CHANGE min (-PACO2_MAX_CHANGE max ((DEFAULT_PACO2 + ((_anerobicPressure max 1) - 1) * 150) - _previousCyclePaco2))) } else { [ _previousCyclePaco2 - (PACO2_MAX_CHANGE * _deltaT), _previousCyclePaco2 + (PACO2_MAX_CHANGE * _deltaT)] select ((_demandVentilation / _actualVentilation) > 1) };                                    
 };
 
+<<<<<<< HEAD
 private _etco2 = 37;
 
 if (IN_CRDC_ARRST(_unit)) then {
@@ -101,6 +107,10 @@ if (IN_CRDC_ARRST(_unit)) then {
     // Generated ETCO2 quadratic. Ensures ETCO2 moves with Respiratory Rate and is constantly below PaCO2 
     _etco2 = (((-0.0416667 * (_respiratoryRate^2)) + (3.09167 * (_respiratoryRate))) * (_respiratoryDepth)) max 5;
 };
+=======
+// Generated ETCO2 quadratic. Ensures ETCO2 moves with Respiratory Rate and is constantly below PaCO2 
+private _etco2 = [((((_paco2 - 3) - ((-0.0416667 * (_respiratoryRate^2)) + (3.09167 * (_respiratoryRate))) * (_respiratoryDepth)) - DEFAULT_ETCO2) max 10), 0] select (IN_CRDC_ARRST(_unit));
+>>>>>>> parent of 3e8d19e5 (Merge remote-tracking branch 'upstream/dev-Tomcat' into Medication_Rework)
 
 private _externalPh = 0;
 private _pH = 7.4;

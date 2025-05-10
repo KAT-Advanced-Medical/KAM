@@ -326,11 +326,14 @@
         <Key ID="STR_KAT_GUI_Prepared_Syringe">
             <English>Prepared %1</English>
         </Key>
+<<<<<<< HEAD
         <Key ID="STR_KAT_GUI_cba_name">
             <English>KAT - ADV Medical: GUI</English>
             <Japanese>KAM - GUI</Japanese>
             <French>KAT - ADV Medical : GUI</French>
             <German>KAT - ADV Medical: GUI</German>
         </Key>
+=======
+>>>>>>> parent of 3e8d19e5 (Merge remote-tracking branch 'upstream/dev-Tomcat' into Medication_Rework)
     </Package>
 </Project>

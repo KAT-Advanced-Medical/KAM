@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Project name="KAT">
     <Package name="Airway">
+<<<<<<< HEAD
         <Key ID="STR_KAT_Airway_ALLOW_ACCUVAC">
             <English>Allow ACCUVAC</English>
             <Czech>Povolit ACCUVAC</Czech>
@@ -1075,6 +1076,8 @@
             <Finnish>Kuinka kauan lepoasennon manuaalinen peruuttaminen kestää</Finnish>
             <Dutch>Hoe lang het gaat duren om de stabiele zijligging te stoppen</Dutch>
         </Key>
+=======
+>>>>>>> parent of 3e8d19e5 (Merge remote-tracking branch 'upstream/dev-Tomcat' into Medication_Rework)
         <Key ID="STR_KAT_Airway_SETTING_ENABLE">
             <English>ACE-Airway injuries activated?</English>
             <German>ACE-Atemwegverletzungen aktiviert?</German>
@@ -1115,12 +1118,15 @@
         </Key>
         <Key ID="STR_KAT_Airway_SETTING_obstruction_DESC">
             <English>Probability for an obstructed airway in percentage that gets rolled every: \n- Falling unconscious \n- Removing KingLT / Guedel Tube</English>
+<<<<<<< HEAD
             <Czech>Pravděpodobnost obstrukce dýchacích cest v procentech, která se vylosuje při každém: \n- Upadnutí do bezvědomí \n- Odstranění KingLT / GuedelTuby</Czech>
             <French>La probabilité d'obstruction des voies aériennes en pourcentage qui est tirée aléatoirement lorsque : \n- la personne tombe inconsciente \n- Une canule de Guedel/tube laryngé est retiré</French>
             <Spanish>Probabilidad en porcentaje de que una vía aérea sea obstruida cada vez que: \n- Cae inconsciente \n- Se retira el tubo laríngeo / Cánula de Guedel</Spanish>
             <Italian>Probabilità in percentuale di una via aerea ostruita che viene sorteggiata ogni : \n- Caduta priva di sensi \n- Rimozione KingLT / Guedel Tube</Italian>
             <Portuguese>Probabilidade percentual de obstrução de uma via aérea a cada vez que: \n- Ficar inconsciente \n- Remoção do Tubo Laríngeo / Cânula de Guedel</Portuguese>
             <Russian>Вероятность закупорки дыхательных путей в процентах, которая приводит к смерти при каждом: \n- падении без сознания \n - Удалении гортанной трубки/трубки Геделя</Russian>
+=======
+>>>>>>> parent of 3e8d19e5 (Merge remote-tracking branch 'upstream/dev-Tomcat' into Medication_Rework)
             <German>Wahrscheinlichkeit blockierter Atemwege in Prozent basierend auf:\n- Bewustlos werden\n- Das Entfernen von Larynxtubus / Guedeltubus\n- Abbrechen der Stabile Seitenlage</German>
             <Czech>Pravděpodobnost obstrukce dýchacích cest v procentech, která se vylosuje při každém: \n- Upadnutí do bezvědomí \n- Odstranění KingLT / GuedelTuby</Czech>
             <Spanish>Probabilidad en porcentaje de que una vía aérea sea obstruida cada vez que: \n- Cae inconsciente \n- Se retira el tubo laríngeo / Cánula de Guedel</Spanish>
@@ -1275,14 +1281,24 @@
             <Chinesesimp>%1 检查呼吸道: %2, %3</Chinesesimp>
             <Dutch>%1 Heeft de luchtwegen gecheckt: %2, %3</Dutch>
         </Key>
-        <Key ID="STR_KAT_Airway_checkAirway_poisonLog">
-            <English>%1 checked airways: Heavily Blistered</English>
-            <Czech>%1 zkontroloval dýchací cesty: Silné puchýře</Czech>
-            <French>%1 voies aériennes contrôlées : Fortement cloquées</French>
-            <Japanese>%1 が気道を確認: ひどい水膨れ</Japanese>
-            <Chinesesimp>%1 条检查气道: 严重起泡</Chinesesimp>
-            <German>%1 überprüfte die Atemwege: Starke Blasenbildung</German>
-            <Italian>%1 ha controllato le vie aeree: Piene di Vescicole</Italian>
+        <Key ID="STR_KAT_Airway_airway_log">
+            <English>%1 inserted a %2</English>
+            <German>%1 intubierte mit %2</German>
+            <Polish>%1 intubował %2</Polish>
+            <Spanish>%1 intubó con %2</Spanish>
+            <Chinese>%1 被插入一個 %2</Chinese>
+            <Chinesesimp>%1 被插入 %2</Chinesesimp>
+            <Czech>%1 intuboval %2</Czech>
+            <Korean>%1 은(는) %2 을(를) 삽입했습니다</Korean>
+            <French>%1 a intubé avec un(e) %2</French>
+            <Turkish>% 1,% 2 eklendi</Turkish>
+            <Italian>%1 ha intubato con %2</Italian>
+            <Russian>%1 вставил %2</Russian>
+            <Japanese>%1 が%2を挿管した</Japanese>
+            <Portuguese>%1 intubou com %2</Portuguese>
+            <Norwegian>%1 satte inn en %2.</Norwegian>
+            <Finnish>%1 lisäsi a %2</Finnish>
+            <Dutch>%1 heeft een %2 ingebracht</Dutch>
         </Key>
         <Key ID="STR_KAT_Airway_AirwayStatus_Occlusion_short">
             <English>Occluded</English>
@@ -2904,6 +2920,7 @@
             <Russian>Блокирует вращение головы, если пациенту вставлена трубка Геделя</Russian>
             <Dutch>Blokkeert het draaien van het hoofd als de patiënt een Guedel-tube in heeft</Dutch>
         </Key>
+<<<<<<< HEAD
         <Key ID="STR_KAT_Airway_airway_log">
             <English>%1 inserted a %2</English>
             <Czech>%1 intuboval %2</Czech>
@@ -3083,5 +3100,7 @@
             <Dutch>Verstopping verwijderd</Dutch>
         </Key>
 >>>>>>> parent of aaaa00b4 (Merge branch 'dev-Tomcat' of https://github.com/Cplhardcore/KAM into dev-Tomcat)
+=======
+>>>>>>> parent of 3e8d19e5 (Merge remote-tracking branch 'upstream/dev-Tomcat' into Medication_Rework)
     </Package>
 </Project>

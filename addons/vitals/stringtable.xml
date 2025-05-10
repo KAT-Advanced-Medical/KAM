@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Project name="KAT">
     <Package name="Vitals">
+<<<<<<< HEAD
         <Key ID="STR_KAT_Vitals_BASIC_DIAGNOSTIC_ENABLE">
             <English>Enable Basic Vitals Kit</English>
             <Czech>Povolit Základní Vitální Sadu</Czech>
@@ -38,6 +39,8 @@
             <Chinese>啟用患者體液轉移</Chinese>
             <Chinesesimp>启用患者体液转移</Chinesesimp>
         </Key>
+=======
+>>>>>>> parent of 3e8d19e5 (Merge remote-tracking branch 'upstream/dev-Tomcat' into Medication_Rework)
         <Key ID="STR_KAT_Vitals_SIMPLEMED_ENABLE">
             <English>Activate AI Simple Medical</English>
             <Dutch>Activeer AI/KI versimpeld medisch</Dutch>
@@ -58,6 +61,7 @@
             <Italian>Abilita lo spostamento del fluido del paziente</Italian>
             <French>Permettre le transfert de fluide du patient</French>
         </Key>
+<<<<<<< HEAD
         <Key ID="STR_KAT_Vitals_basicDiagnostic_Log">
             <English>%1 - %2</English>
             <Czech>%1 - %2</Czech>
@@ -107,5 +111,7 @@
             <French>KAT - ADV Medical : Données vitales</French>
             <German>KAT - ADV Medical: Vitalwerte</German>
         </Key>
+=======
+>>>>>>> parent of 3e8d19e5 (Merge remote-tracking branch 'upstream/dev-Tomcat' into Medication_Rework)
     </Package>
 </Project>

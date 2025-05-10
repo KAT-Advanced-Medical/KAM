@@ -187,14 +187,22 @@ class CfgVehicles {
     };
 
     class ACE_medicalSupplyCrate_advanced: ACE_medicalSupplyCrate {
+<<<<<<< HEAD
         class TransportItems {
+=======
+        class TransportItems: TransportItems {
+>>>>>>> parent of 3e8d19e5 (Merge remote-tracking branch 'upstream/dev-Tomcat' into Medication_Rework)
             MACRO_ADDITEM(kat_X_AED,1);
             MACRO_ADDITEM(kat_AED,1);
             MACRO_ADDITEM(KAT_Empty_bloodIV_500,10);
             MACRO_ADDITEM(KAT_Empty_bloodIV_250,20);
             MACRO_ADDITEM(kat_crossPanel,5);
         };
+<<<<<<< HEAD
         class TransportMagazines {
+=======
+        class TransportMagazines: TransportMagazines {
+>>>>>>> parent of 3e8d19e5 (Merge remote-tracking branch 'upstream/dev-Tomcat' into Medication_Rework)
             MACRO_ADDMAGAZINE(kat_Painkiller,10);
         };
     };

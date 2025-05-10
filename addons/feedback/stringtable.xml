@@ -43,15 +43,19 @@
         </Key>
         <Key ID="STR_KAT_Feedback_SETTING_effectOverdose_display">
             <English>Enable Overdose effects</English>
+            <Japanese>オピオイド効果を有効化</Japanese>
         </Key>
         <Key ID="STR_KAT_Feedback_SETTING_effectOverdose_DESC">
             <English>Enables Overdose effects on certain medications</English>
         </Key>
+<<<<<<< HEAD
         <Key ID="STR_KAT_Feedback_cba_name">
             <English>KAT - ADV Medical: Feedback</English>
             <Japanese>KAM - フィードバック</Japanese>
             <French>KAT - ADV Medical : Retour d'expérience</French>
             <German>KAT - ADV Medical: Feedback</German>
         </Key>
+=======
+>>>>>>> parent of 3e8d19e5 (Merge remote-tracking branch 'upstream/dev-Tomcat' into Medication_Rework)
     </Package>
 </Project>
