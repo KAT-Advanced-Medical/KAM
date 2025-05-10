@@ -41,7 +41,7 @@ private _fnc_applyEyeCover = {
     // Approximately 8 minutes to fully re-heal a damaged eye using the eyeshield
     [{
         params ["_args", "_pfhID"];
-        _args params ["_unit", "_activeEye"];
+        _args params ["_unit", "_activeEye", "_shieldItem"];
     
         if ((hmd _unit) != _shieldItem) exitWith {
             _pfhID call CBA_fnc_removePerFrameHandler;
@@ -52,7 +52,8 @@ private _fnc_applyEyeCover = {
         _unit setVariable [QGVAR(eyeInjuries), [(((_eyeInjury select 0) + 0.002) min 1), (_eyeInjury select 1)], true];
     }, 1, [
         _patient,
-        _activeEye
+        _activeEye,
+        _shieldItem
     ]] call CBA_fnc_addPerFrameHandler;
 };
 

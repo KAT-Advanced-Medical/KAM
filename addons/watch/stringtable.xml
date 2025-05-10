@@ -9,6 +9,7 @@
             <Chinese>計時器增加 15 秒</Chinese>
             <Chinesesimp>添加15秒观看计时器</Chinesesimp>
             <German>15 Sekunden zum Timer hinzufügen</German>
+            <Italian>Aggiungi 15 secondi al timer dell'orologgio</Italian>
         </Key>
         <Key ID="STR_KAT_Watch_CavminDescription">
             <English>Watch with Vital Monitoring Capabilities. Garry Owen!</English>
@@ -62,6 +63,7 @@
             <Chinese>具有生命監測功能的腕錶。Sua Sponte。</Chinese>
             <Chinesesimp>使用重要监控功能观看。Sua Sponte。</Chinesesimp>
             <German>Uhr mit Fähigkeit zur Überwachung der Vitalwerte. Sua Sponte.</German>
+            <Italian>Orologio con monitoraggio dei parametri vitali: Sua Sponte.</Italian>
         </Key>
         <Key ID="STR_KAT_Watch_RangerDisplayName">
             <English>Katmin K12 Model R</English>
@@ -71,6 +73,7 @@
             <Chinese>Katmin K12 R 型</Chinese>
             <Chinesesimp>Katmin K12 R型</Chinesesimp>
             <German>Katmin K12 Model R</German>
+            <Italian>Katmin K12 Model R</Italian>
         </Key>
         <Key ID="STR_KAT_Watch_SETTING_AltitudeForm">
             <English>Select altitude form</English>
@@ -221,12 +224,14 @@
             <French>Imprécision des constantes de la montre.</French>
             <Japanese>腕時計バイタルの不正確性</Japanese>
             <German>Ungenauigkeit der Uhren-Vitalwerte</German>
+            <Italian>Inaccuratezza della misurazione dei parametri vitali dell'orologio</Italian>
         </Key>
         <Key ID="STR_KAT_Watch_SETTING__WatchInaccuracy_Desc">
             <English>Enables watch inaccuracy when reading patient vitals</English>
             <French>Permet l'imprécision de la montre lors de la lecture des constantes du patient</French>
             <Japanese>腕時計が患者のバイタルを不正確に読み取るようになります。</Japanese>
             <German>Aktiviert Ungenauigkeit der Vitalwerte der Uhren</German>
+            <Italian>Abilita l'inaccuratezza dell'orologio quando vengono letti i parametri vitali di un paziente</Italian>
         </Key>
         <Key ID="STR_KAT_Watch_STSDescription">
             <English>Watch with Vital Monitoring Capabilities. So Others May Live.</English>
@@ -255,6 +260,7 @@
             <Chinese>顯示 KATMIN 腕錶</Chinese>
             <Chinesesimp>显示KATMIN手表</Chinesesimp>
             <German>KATMIN-Uhr anzeigen</German>
+            <Italian>Visualizza orologio KATMIN</Italian>
         </Key>
         <Key ID="STR_KAT_Watch_StartStopTimer_Setting">
             <English>Start and Stop Watch Timer</English>
@@ -264,6 +270,7 @@
             <Chinese>啟動、停止計時器</Chinese>
             <Chinesesimp>启动和停止手表定时器</Chinesesimp>
             <German>Timer starten/stoppen</German>
+            <Italian>Start/Stop timer orologio</Italian>
         </Key>
         <Key ID="STR_KAT_Watch_SubtractTimer_Setting">
             <English>Subtract 15 Seconds from Watch Timer</English>
@@ -273,6 +280,7 @@
             <Chinese>計時器減去 15 秒</Chinese>
             <Chinesesimp>从手表计时器中减去15秒</Chinesesimp>
             <German>15 Sekunden vom Timer abziehen</German>
+            <Italian>Togli 15 secondi al timer dell'orologio</Italian>
         </Key>
         <Key ID="STR_KAT_Watch_TimeModifier_Settings">
             <English>Time Modifier (K500/Model R)</English>
@@ -281,12 +289,14 @@
             <Japanese>盤面/指針の表示切り替え (K500/Model R)</Japanese>
             <Chinese>時間調整器 (K500/Model R)</Chinese>
             <German>Zeitmodifikator (K500/Model R)</German>
+            <Italian>Modifica visualizzazione del quadrante (K500/Model R)</Italian>
         </Key>
         <Key ID="STR_KAT_Watch_cba_name">
             <English>KAT - ADV Medical: Watch</English>
             <Japanese>KAM - 腕時計 (Watch)</Japanese>
             <French>KAT - ADV Médical : Surveillance</French>
             <German>KAT - ADV Medical: Uhren</German>
+            <Italian>KAT - ADV Medica: Orologi</Italian>
         </Key>
         <Key ID="STR_KAT_Watch_descentFT">
             <English>%1ft/s</English>

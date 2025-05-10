@@ -641,7 +641,7 @@
             <Czech>AED-X</Czech>
             <French>AED-X</French>
             <Spanish>DEA-X</Spanish>
-            <Italian>AED-X</Italian>
+            <Italian>DAE-X</Italian>
             <Portuguese>DEA-X</Portuguese>
             <Russian>AED-X</Russian>
             <German>AED-X</German>
@@ -1160,6 +1160,7 @@
             <Japanese>血圧カフで血圧を確認</Japanese>
             <Chinese>用血壓計量血壓</Chinese>
             <German>Blutdruck mit Manschette prüfen</German>
+            <Italian>Controllare la pressione sanguigna con il bracciale PS</Italian>
         </Key>
         <Key ID="STR_KAT_Circulation_Actions_CheckHRSteth">
             <English>Check HR w/ Stethoscope</English>
@@ -1168,6 +1169,7 @@
             <Japanese>聴診器で脈拍を確認</Japanese>
             <Chinese>用聽診器檢查心率</Chinese>
             <German>Herzfrequenz mit Stethoskop prüfen</German>
+            <Italian>Controlla la frequenza cardiaca con lo stetoscopio</Italian>
         </Key>
         <Key ID="STR_KAT_Circulation_Actions_CheckingBloodPressureCuff">
             <English>Checking BP with BP Cuff</English>
@@ -1176,6 +1178,7 @@
             <Japanese>血圧カフで血圧を確認中</Japanese>
             <Chinese>用血壓計量血壓中</Chinese>
             <German>Überprüfung des Blutdruck mittels Manschette</German>
+            <Italian>Controllo della pressione sanguigna con il bracciale PS in corso</Italian>
         </Key>
         <Key ID="STR_KAT_Circulation_Actions_CheckingHRSteth">
             <English>Checking HR with Stethoscope</English>
@@ -1184,6 +1187,7 @@
             <Japanese>聴診器で脈拍を確認中</Japanese>
             <Chinese>用聽診器檢查心率中</Chinese>
             <German>Überprüfung der HF mittels Stethoskop</German>
+            <Italian>Controllo della frequenza cardiaca con lo stetoscopio in corso</Italian>
         </Key>
         <Key ID="STR_KAT_Circulation_Activity_AttachPads">
             <English>%1 attached defibrillator pads (%2)</English>
@@ -1340,6 +1344,7 @@
             <Japanese>患者の血圧を正確に測定する医療機器</Japanese>
             <Chinese>一種準確測量病人血壓的醫療裝置</Chinese>
             <German>Medizinisches Gerät zur genauen Bestimmung des Blutdrucks</German>
+            <Italian>Un dispositivo medico per misurare in maniera accurata la pressione sanguinea del paziente</Italian>
         </Key>
         <Key ID="STR_KAT_Circulation_BPCuff_display">
             <English>Blood Pressure Cuff</English>
@@ -1348,6 +1353,7 @@
             <Japanese>血圧カフ</Japanese>
             <Chinese>血壓計</Chinese>
             <German>Blutdruckmanschette</German>
+            <Italian>Bracciale PS</Italian>
         </Key>
         <Key ID="STR_KAT_Circulation_BloodIV_A">
             <English>Blood IV (1000ml) BT: A+</English>
@@ -1800,6 +1806,7 @@
             <Japanese>触診による拡張期血圧は %1</Japanese>
             <Chinese>比觸診高 %1</Chinese>
             <German>%1 per Palpitation</German>
+            <Italian>%1 su Palp</Italian>
         </Key>
         <Key ID="STR_KAT_Circulation_CPR_MaxChance_Default">
             <English>Max CPR Chance for Default</English>
@@ -1927,6 +1934,7 @@
             <Japanese>モニタリングする装置を変更</Japanese>
             <Chinese>更換監控設備</Chinese>
             <Chinesesimp>更换监控设备</Chinesesimp>
+            <Italian>Cambia dispositivo di monitoraggio</Italian>
         </Key>
         <Key ID="STR_KAT_Circulation_Check_Bloodpressure_Output_Palp">
             <English>You find a blood pressure of %3 over Palp</English>
@@ -1935,6 +1943,7 @@
             <Japanese>触診で計測した拡張期血圧は %3 でした</Japanese>
             <Chinese>你發現血壓比觸診高 %3</Chinese>
             <German>Du misst einen Blutdruck von %3 per Palpitation</German>
+            <Italian>Misuri una pressione sanguinea di %3 su Palp</Italian>
         </Key>
         <Key ID="STR_KAT_Circulation_Check_Pulse_Output">
             <English>You find a Pulse Rate of %2</English>
@@ -1943,6 +1952,7 @@
             <Japanese>計測した脈拍は %2 でした</Japanese>
             <Chinese>你發現脈搏率為 %2</Chinese>
             <German>Du misst eine Herzfrequenz von %2</German>
+            <Italian>Misuri una frequenza cardiaca di %2</Italian>
         </Key>
         <Key ID="STR_KAT_Circulation_Defibrillator_Action_CancelCharge">
             <English>Cancel Charge</English>
@@ -2271,7 +2281,7 @@
             <Czech>Sebrat AED-X</Czech>
             <French>Récupérer l'AED-X</French>
             <Spanish>Recoger DEA-X</Spanish>
-            <Italian>Prendere AED-X</Italian>
+            <Italian>Prendere DAE-X</Italian>
             <Portuguese>Recolher DEA-X</Portuguese>
             <Russian>Подобрать AED-X</Russian>
             <German>Nehme AED-X auf</German>
@@ -2289,13 +2299,14 @@
             <Japanese>%1 PPM</Japanese>
             <Chinese>%1 PPM</Chinese>
             <German>%1 PPM</German>
+            <Italian>%1 PPM</Italian>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_AEDStation_AllowInteraction">
             <English>Allow AED/X Station Interaction</English>
             <Czech>Povolit interakci se stanicí AED/X</Czech>
             <French>Autoriser l'interaction avec la station AED-X</French>
             <Spanish>Permitir la interacción con la estación de DEA/X</Spanish>
-            <Italian>Consentire l'interazione con la stazione AED/X</Italian>
+            <Italian>Consentire l'interazione con la stazione DAE/X</Italian>
             <Portuguese>Permitir interação com a estação DEA-X</Portuguese>
             <Russian>Разрешить взаимодействие станции AED/X</Russian>
             <German>AED/X-Station-Interaktion zulassen</German>
@@ -2311,7 +2322,7 @@
             <Czech>Zdravotnická úroveň potřebná pro sebrání položené AED/X stanice</Czech>
             <French>Niveau médical requis pour ramasser un AED-X posé au sol</French>
             <Spanish>Nivel médico requerido para recoger una estación AED/X puesta</Spanish>
-            <Italian>Livello medico richiesto per raccogliere la stazione AED/X posizionata</Italian>
+            <Italian>Livello medico richiesto per raccogliere la stazione DAE/X posizionata</Italian>
             <Portuguese>Nível médico necessário para pegar uma estação DEA/X colocada</Portuguese>
             <Russian>Медицинский уровень, необходимый для приема/ взаимодействия с размещенной станцией AED/X</Russian>
             <German>Benötigter medizinischer Grad, um einen platzierte AED/X Station aufzunehmen</German>
@@ -2325,7 +2336,7 @@
             <Czech>Čas k připojení AED-X monitorování životních funkcí</Czech>
             <French>Attacher du moniteur des signes vitaux AED-X</French>
             <Spanish>Tiempo para colocar el monitor DEA-X</Spanish>
-            <Italian>Tempo di collegamento del monitor dei parametri vitali AED-X</Italian>
+            <Italian>Tempo di collegamento del monitor dei parametri vitali DAE-X</Italian>
             <Portuguese>Tempo para conectar o monitor de sinais vitais do DEA-X</Portuguese>
             <Russian>Время подключения мониторинга жизненно важных показателей AED-X</Russian>
             <German>Zeit zum Anbringen des AED-X Vitalmonitors</German>
@@ -2341,7 +2352,7 @@
             <Czech>Čas k odpojení AED-X monitorování životních funkcí</Czech>
             <French>Détacher les capteurs des signes vitaux à l'AED-X</French>
             <Spanish>Tiempo para retirar el monitor AED-X</Spanish>
-            <Italian>Tempo di scollegamento del monitor dei parametri vitali AED-X</Italian>
+            <Italian>Tempo di scollegamento del monitor dei parametri vitali DAE-X</Italian>
             <Portuguese>Tempo para desconectar o monitor de sinais vitais do DEA-X</Portuguese>
             <Russian>Время отключения мониторинга жизненно важных показателей AED-X</Russian>
             <German>Zeit zum Entfernen des AED-X Vitalmonitors</German>
@@ -2357,7 +2368,7 @@
             <Czech>AED-X interval měření TK v monitoru životních funkcí</Czech>
             <French>Type de mesure de la BP du moniteur AED-X</French>
             <Spanish>Intervalo de medición de la PS en el monitor DEA-X.</Spanish>
-            <Italian>Intervallo di misurazione BP del monitor dei parametri vitali AED-X</Italian>
+            <Italian>Intervallo di misurazione BP del monitor dei parametri vitali DAE-X</Italian>
             <Portuguese>Intervalo de medição da pressão arterial do monitor de sinais vitais do DEA-X</Portuguese>
             <Russian>Интервал измерения артериального давления на мониторе AED-X</Russian>
             <German>AED-X Vitalmonitor BP-Messintervall</German>
@@ -2421,7 +2432,7 @@
             <Czech>AED-X čas intervalu měření TK v monitoru životních funkcí</Czech>
             <French>Temps d'intervalle de mesure de la BP du moniteur AED-X</French>
             <Spanish>Tiempo de medición de PS en el monitor DEA-X</Spanish>
-            <Italian>Tempo di intervallo di misurazione BP del monitor dei parametri vitali AED-X</Italian>
+            <Italian>Tempo di intervallo di misurazione PS del monitor dei parametri vitali DAE-X</Italian>
             <Portuguese>Tempo de intervalo de medição da pressão arterial do monitor de sinais vitais do DEA-X</Portuguese>
             <Russian>Интервал измерения артериального давления на мониторе AED-X</Russian>
             <German>AED-X Vitalmonitor BP-Messintervallzeit</German>
@@ -2437,7 +2448,7 @@
             <Czech>Zvuky monitoru životních funkcí AED-X</Czech>
             <French>Sons des signes vitaux de l'AED-X</French>
             <Spanish>Sonidos del monitor DEA-X</Spanish>
-            <Italian>Suoni del monitor dei parametri vitali AED-X</Italian>
+            <Italian>Suoni del monitor dei parametri vitali DAE-X</Italian>
             <Portuguese>Sons do monitor de sinais vitais do DEA-X</Portuguese>
             <Russian>Звуки монитора жизненно важных функций AED-X</Russian>
             <German>Töne des AED-X-Vitalmonitors</German>
@@ -2485,7 +2496,7 @@
             <Czech>Povolit připojení AED elektord během KPR</Czech>
             <French>Application des électrodes de l'AED pendant la RCP</French>
             <Spanish>Permitir la aplicación de parche AED durante la realización de RCP</Spanish>
-            <Italian>Consentire l'applicazione dei pad AED durante la RCP</Italian>
+            <Italian>Consentire l'applicazione dei pad DAE durante la RCP</Italian>
             <Portuguese>Permitir aplicação de pás do desfibrilador durante RCP</Portuguese>
             <Russian>Разрешить применение подкладки AED во время СЛР</Russian>
             <German>Anbringung von AED Pads während laufender HLW zulassen</German>
@@ -2499,7 +2510,7 @@
             <Czech>Šance na ROSC po AED</Czech>
             <French>Chance de retour en ciculation spontannée après AED</French>
             <Spanish>Probabilidad de RCE después desfibrilar con DEA</Spanish>
-            <Italian>Probabilità di ritorno alla circolazione spontanea dopo AED</Italian>
+            <Italian>Probabilità di ritorno alla circolazione spontanea dopo DAE</Italian>
             <Portuguese>Chance de retorno da circulação espontânea após DEA</Portuguese>
             <Russian>Шанс вернуться в спонтанное кровообращение после AED</Russian>
             <German>Chance für ROSC nach AED (Rückkehr des spontanen Kreislaufs)</German>
@@ -2550,6 +2561,7 @@
             <French>Activer le maintien en arrêt H et T</French>
             <Japanese>心停止回復のH&amp;T症状による阻害を有効化</Japanese>
             <German>H&amp;Ts halten Herzstillstand aufrecht</German>
+            <Italian>Abilità la possibilità di pressione prolungata di H e T durante l'arresto</Italian>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_AdvRhythm_Hardcore_Enable">
             <English>Hardcore Rhythms</English>
@@ -2738,6 +2750,7 @@
             <Japanese>血圧カフの許可</Japanese>
             <Chinese>允許使用血壓計</Chinese>
             <German>Blutdruckmanschette erlauben</German>
+            <Italian>Abilità il bracciale della pressione sanguigna</Italian>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_BPCuff_DESC">
             <English>Training Level for use of the BP Cuff</English>
@@ -2746,6 +2759,7 @@
             <Japanese>血圧カフの使用に必要な医療スキルのレベルを設定します。</Japanese>
             <Chinese>使用血壓計的訓練等級</Chinese>
             <German>Ausbildungslevel für Blutdruckmanschette</German>
+            <Italian>Livello di addestramento per l'utilizzo del bracciale della pressione sanguigna</Italian>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_CPR_CHANCES">
             <English>Enable different CPR chances per medical level</English>
@@ -2942,6 +2956,7 @@
             <Japanese>聴診器による脈拍確認の許可</Japanese>
             <Chinese>允許使用聽診器檢查心率</Chinese>
             <German>Stethoskop zur Herzfrequenzmessung erlauben</German>
+            <Italian>Permetti il controllo della Frequenza Cardiaca con lo Stetoscopio</Italian>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_StethHR_DESC">
             <English>Training Level for use of the Stethoscope to measure HR</English>
@@ -2950,13 +2965,14 @@
             <Japanese>聴診器による脈拍の測定に必要な医療スキルのレベルを設定します。</Japanese>
             <Chinese>使用聽診器測量心率的訓練等級</Chinese>
             <German>Ausbildungslevel zur Herzfrequenzmessung mit Stethoskop</German>
+            <Italian>Livello di addestramento per il controllo della Frequenza Cardiaca con lo Stetoscopio</Italian>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_Threshold_SpO2Warning">
             <English>AED-X alarm SpO2 threshold</English>
             <Czech>Práh AED-X pro aktivaci alarmu Pulzního Oxymetru</Czech>
             <French>Seuil d'alarme de SpO2 de l'AED-X</French>
             <Spanish>Umbral de alarma de SpO2 del AED-X</Spanish>
-            <Italian>Soglia di allarme della SpO2 del AED-X</Italian>
+            <Italian>Soglia di allarme della SpO2 del DAE-X</Italian>
             <Portuguese>Limiar de alarme de SpO2 do DEA-X</Portuguese>
             <Russian>Порог сигнала тревоги SpO2 AED-X</Russian>
             <German>AED-X Sättigungsalarm Grenzwert</German>
@@ -2975,6 +2991,7 @@
             <Japanese>ABGテストを有効化</Japanese>
             <Chinese>啟用 ABG 測試</Chinese>
             <Chinesesimp>启用ABG测试</Chinesesimp>
+            <Italian>Abilita test ABG</Italian>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_abg_enable_DESC">
             <English>Enables ABG Testing and ACE Menu Visibility</English>
@@ -2984,6 +3001,7 @@
             <Japanese>ABGテストを有効化しACEメニューに表示します</Japanese>
             <Chinese>啟用 ABG 測試和 ACE 選單可見性</Chinese>
             <Chinesesimp>启用ABG测试和ACE菜单可见性</Chinesesimp>
+            <Italian>Abilità test ABG e visibilità menù ACE</Italian>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_bloodtype_assign">
             <English>Blood Type Assignment</English>
@@ -3229,6 +3247,7 @@
             <Japanese>ハードコア脈拍および血圧診断を有効化</Japanese>
             <Chinese>啟用硬核心率和血壓診斷</Chinese>
             <German>Aktiviere Hardcore-Messung von Blutdruck und Puls</German>
+            <Italian>Abilità la modalità estrema per il controllo della PS e della FC</Italian>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_hardcoreDiagnose_DESC">
             <English>Makes measuring BP and HR imprecise without tools (Stethoscope or BP cuff)</English>
@@ -3237,13 +3256,14 @@
             <Japanese>器具(聴診器または血圧カフ)なしでは脈拍および血圧を正確に測定出来なくします</Japanese>
             <Chinese>在沒有工具（聽診器或血壓計）的情況下，測量血壓和心率會不準確</Chinese>
             <German>Ungenaue Blutdruck- und Pulsmessungen, wenn keine Werkzeuge verwendet werden (Manschette und Stethoskop)</German>
+            <Italian>Rendi imprecise le misurazioni della PS e della FC senza l'utilizzo di dispositivi (Stetoscopio o bracciale PS)</Italian>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_tamponadeChance">
             <English>Chance for tamponade in penetrating wounds</English>
             <Czech>Šance na tamponádu u penetrujících zranění</Czech>
             <French>Chance de tamponnade lors de plaies pénétrantes</French>
             <Spanish>Probabilidad de taponamiento en heridas penetrantes</Spanish>
-            <Italian>Probabilità di tamponade in ferite penetranti</Italian>
+            <Italian>Probabilità di tamponamento cardiaco in ferite penetranti</Italian>
             <Portuguese>Probabilidade de tamponamento em ferimentos penetrantes</Portuguese>
             <Russian>Вероятность тампонады при проникающих ранениях</Russian>
             <German>Möglichkeit einer Tamponade bei penetrierenden Wunden</German>
@@ -3257,7 +3277,7 @@
             <Czech>Šance na postup tamponády</Czech>
             <French>Chance de progression de la tamponnade</French>
             <Spanish>Probabilidad de progresión de taponamiento</Spanish>
-            <Italian>Probabilità di progressione della tamponade</Italian>
+            <Italian>Probabilità di progressione del tamponamento cardiaco</Italian>
             <Portuguese>Probabilidade de progressão de tamponamento</Portuguese>
             <Russian>Вероятность прогрессирования тампонады</Russian>
             <German>Chance auf ein Fortschreiten der Tamponade</German>
@@ -3271,7 +3291,7 @@
             <Czech>Časovač postupu tamponády</Czech>
             <French>Timer de progression de la tamponnade</French>
             <Spanish>Temporizador de progreso de taponamiento</Spanish>
-            <Italian>Timer di progressione della tamponade</Italian>
+            <Italian>Timer di progressione del tamponamento cardiaco</Italian>
             <Portuguese>Temporizador de progresso de tamponamento</Portuguese>
             <Russian>Таймер прогрессирования тампонады</Russian>
             <German>Tamponade-Fortschrittstimer</German>
@@ -3435,7 +3455,7 @@
             <Czech>AED-X SF: %1 TK: %2%3 SpO2: %4</Czech>
             <French>AED-X: HR: %1 BP: %2/%3 SpO2: %4</French>
             <Spanish>DEA-X: RC: %1 PS: %2/%3 SpO2: %4</Spanish>
-            <Italian>AED-X: FC: %1 PS: %2/%3 SpO2: %4</Italian>
+            <Italian>DAE-X: FC: %1 PS: %2/%3 SpO2: %4</Italian>
             <Polish>AED-X: HR: %1 BP: %2/%3 SpO2: %4</Polish>
             <Portuguese>DEA-X: FC: %1 PA: %2/%3 SpO2: %4</Portuguese>
             <Russian>AED-X: ЧСС: %1 АД: %2/%3 SpO2: %4</Russian>
@@ -3452,7 +3472,7 @@
             <Czech>AED-X: SF: %1 TK: %2/%3 SpO2: %4  ETCo2: %5 Dechů/min: %6</Czech>
             <French>AED-X: HR: %1 BP: %2/%3 SpO2: %4  ETCo2: %5 Respirations/min: %6</French>
             <Spanish>DEA-X: RC: %1 PS: %2/%3 SpO2: %4  ETCo2: %5 Respiraciones/min: %6</Spanish>
-            <Italian>AED-X: HR: %1 BP: %2/%3 SpO2: %4 ETCo2: %5 Respiri/min: %6</Italian>
+            <Italian>DAE-X: FC: %1 PS: %2/%3 SpO2: %4 ETCo2: %5 Respiri/min: %6</Italian>
             <Portuguese>DEA-X: FC: %1 PA: %2/%3 SpO2: %4 ETCo2: %5 Respirações/min: %6</Portuguese>
             <Russian>AED-X: ЧСС: %1 АД: %2/%3 SpO2: %4  ETCo2: %5 Вдохи/мин: %6</Russian>
             <German>AED-X: HR: %1 BP: %2/%3 SpO2: %4  ETCo2: %5 Br/min: %6</German>
@@ -3466,7 +3486,7 @@
             <Czech>AED-X: TF: %1 TK: %2/%3 SpO2: %4</Czech>
             <French>AED-X: HR: %1 BP: %2/%3 SpO2: %4</French>
             <Spanish>DEA-X: RC: %1 PS: %2/%3 SpO2: %4</Spanish>
-            <Italian>AED-X: PR: %1 BP: %2/%3 SpO2: %4</Italian>
+            <Italian>DAE-X: FC: %1 PS: %2/%3 SpO2: %4</Italian>
             <Portuguese>DEA-X: FP: %1 PA: %2/%3 SpO2: %4</Portuguese>
             <Russian>AED-X: ЧСС: %1 АД: %2/%3 SpO2: %4</Russian>
             <German>AED-X: PI: %1 BP: %2/%3 SpO2: %4</German>
@@ -3482,7 +3502,7 @@
             <Czech>AED-X: PF: %1 TK: %2/%3 SpO2: %4 ETCo2: %5 Dechů/min: %6</Czech>
             <French>AED-X: PR: %1 BP: %2/%3 SpO2: %4 ETCo2: %5 Respirations/min: %6</French>
             <Spanish>DEA-X: RC: %1 PS: %2/%3 SpO2: %4 ETCo2: %5 Respiraciones/min: %6</Spanish>
-            <Italian>AED-X: PR: %1 BP: %2/%3 SpO2: %4 ETCo2: %5 Respiri/min: %6</Italian>
+            <Italian>DAE-X: FC: %1 PS: %2/%3 SpO2: %4 ETCo2: %5 Respiri/min: %6</Italian>
             <Portuguese>DEA-X: FP: %1 PA: %2/%3 SpO2: %4 ETCo2: %5 Respirações/min: %6</Portuguese>
             <Russian>AED-X: ЧСС: %1 АД: %2/%3 SpO2: %4 ETCo2: %5 Вдохи/мин: %6</Russian>
             <German>AED-X: PR: %1 BP: %2/%3 SpO2: %4 ETCo2: %5 Br/min: %6</German>
@@ -3496,7 +3516,7 @@
             <Czech>AED-X: SF %1 TK: --/-- SpO2: ---</Czech>
             <French>AED-X: HR: %1 BP: --/-- SpO2: ---</French>
             <Spanish>DEA-X: RC: %1 PS: --/-- SpO2: ---</Spanish>
-            <Italian>AED-X: FC: %1 PS: --/-- SpO2: ---</Italian>
+            <Italian>DAE-X: FC: %1 PS: --/-- SpO2: ---</Italian>
             <Polish>AED-X: HR: %1 BP: --/-- SpO2: ---</Polish>
             <Portuguese>DEA-X: FC: %1 PA: --/-- SpO2: ---</Portuguese>
             <Russian>AED-X: ЧСС: %1 АД: --/-- SpO2: ---</Russian>
@@ -3513,7 +3533,7 @@
             <Czech>AED-X: SF: %1 TK: --/-- SpO2: --- ETCo2: %2 Dechů/min: %3</Czech>
             <French>AED-X: HR: %1 BP: --/-- SpO2: --- ETCo2: %2 Respirations/min: %3</French>
             <Spanish>DEA-X: RC: %1 PS: --/-- SpO2: --- ETCo2: %2 Respiraciones/min: %3</Spanish>
-            <Italian>AED-X: HR: %1 BP: --/-- SpO2: --- ETCo2: %2 Respiri/min: %3</Italian>
+            <Italian>DAE-X: FC: %1 PS: --/-- SpO2: --- ETCo2: %2 Respiri/min: %3</Italian>
             <Portuguese>DEA-X: FC: %1 PA: --/-- SpO2: --- ETCo2: %2 Respirações/min: %3</Portuguese>
             <Russian>AED-X: ЧСС: %1 АД: --/-- SpO2: --- ETCo2: %2 Вдохи/мин: %3</Russian>
             <German>AED-X: HR: %1 BP: -/- SpO2: - ETCo2: %2 Br/min: %3</German>
@@ -3595,6 +3615,7 @@
             <Japanese>KAM - 循環器系 (Circulation)</Japanese>
             <French>KAT - ADV Medical : Circulation</French>
             <German>KAT - ADV Medical: Zirkulation</German>
+            <Italian>KAT - ADV Medica: Circolazione</Italian>
         </Key>
         <Key ID="STR_KAT_Circulation_crosspanel">
             <English>Blood groups cheat sheet</English>
@@ -3673,7 +3694,7 @@
             <Czech>Umístit AED-X</Czech>
             <French>Placer l'AED-X</French>
             <Spanish>Colocar DEA-X</Spanish>
-            <Italian>Posizionare AED-X</Italian>
+            <Italian>Posizionare DAE-X</Italian>
             <Portuguese>Colocar DEA-X</Portuguese>
             <Russian>Разместить AED-X</Russian>
             <German>Platzieren AED-X</German>
@@ -3715,6 +3736,7 @@
             <Japanese>血圧カフによる血圧測定の所要時間</Japanese>
             <Chinese>用血壓計量血壓所需時間</Chinese>
             <German>Dauer der Blutdruckmessung mit Manschette</German>
+            <Italian>Tempo per la misurarazione la Pressione Sanguinea con il bracciale della pressione sanguigna</Italian>
         </Key>
         <Key ID="STR_KAT_Circulation_treatmentTime_StethHR">
             <English>Time to measure HR with a Stethoscope</English>
@@ -3723,6 +3745,7 @@
             <Japanese>聴診器による脈拍測定の所要時間</Japanese>
             <Chinese>用聽診器測量心率所需時間</Chinese>
             <German>Dauer der Pulsmessung mit Stethoskop</German>
+            <Italian>Tempo per la misurazione della Frequenza Cardiaca con lo Stetoscopio</Italian>
         </Key>
     </Package>
 </Project>

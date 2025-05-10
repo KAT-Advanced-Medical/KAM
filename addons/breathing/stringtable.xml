@@ -40,7 +40,7 @@
             <Czech>Povolit Hrudní Chlopeň</Czech>
             <French>Autoriser le pansement thoracique</French>
             <Spanish>Permitir sello torácico</Spanish>
-            <Italian>Permetti Chest Seal</Italian>
+            <Italian>Permetti Sigillo Toracico</Italian>
             <Polish>Pozwól na użycie Chest Seal</Polish>
             <Portuguese>Permitir Selo de Tórax</Portuguese>
             <Russian>Разрешить оклюзивный пластырь</Russian>
@@ -76,7 +76,7 @@
             <Czech>%1 použil %2 (x%3)</Czech>
             <French>%1 a utilisé %2 (x%3)</French>
             <Spanish>%1 uso %2 (x%3)</Spanish>
-            <Italian>%1 verwendete %2 (x%3)</Italian>
+            <Italian>%1 ha utilizzato %2 (x%3)</Italian>
             <Portuguese>%1 usou %2 (x%3)</Portuguese>
             <Russian>%1 использует %2 (x%3)</Russian>
             <German>%1 verwendet %2 (x%3)</German>
@@ -92,7 +92,7 @@
             <Czech>%1 (Okysličen)</Czech>
             <French>%1 (Oxygéné)</French>
             <Spanish>%1 (Oxigenado)</Spanish>
-            <Italian>%1 (Sauerstoff)</Italian>
+            <Italian>%1 (Ossigenato)</Italian>
             <Portuguese>%1 (Oxigenado)</Portuguese>
             <Russian>%1 (насыщение кислородом)</Russian>
             <German>%1 (Sauerstoffhaltig)</German>
@@ -111,6 +111,7 @@
             <Chinese>連接到飛機氧氣</Chinese>
             <Chinesesimp>连接到飞机氧气</Chinesesimp>
             <German>Mit Luftfahrzeug-Sauerstofftank verbinden</German>
+            <Italian>Connetti alla riserva di Ossigeno del Velivolo</Italian>
         </Key>
         <Key ID="STR_KAT_Breathing_AttachPersonalOxygenTank">
             <English>Connect Personal Oxygen</English>
@@ -120,6 +121,7 @@
             <Chinese>連接個人氧氣</Chinese>
             <Chinesesimp>连接个人氧气</Chinesesimp>
             <German>Mit persönlichem Sauerstofftank verbinden</German>
+            <Italian>Connetti alla riserva di Ossigeno Personale</Italian>
         </Key>
         <Key ID="STR_KAT_Breathing_BVM_Desc_Short">
             <English>Bag-Valve-Mask, used to assist with breathing of unconscious patients</English>
@@ -193,6 +195,7 @@
             <Chinese>檢查個人氧氣狀況</Chinese>
             <Chinesesimp>检查个人氧气状况</Chinesesimp>
             <German>Sauerstofftankstatus prüfen</German>
+            <Italian>Controlla lo Stato della riserva personale di Ossigen</Italian>
         </Key>
         <Key ID="STR_KAT_Breathing_Check_Breathing">
             <English>Check Breathing</English>
@@ -316,7 +319,7 @@
             <Czech>Povolí pokročilé pneumotoraxy - hemopneumotorax a tenzní pneumotorax.</Czech>
             <French>Active les pneumothorax avancés - Hémopneumothorax et pneumothorax sous tension</French>
             <Spanish>Habitilita neumotóraxes avanzados - hemotórax y neumotórax a tensión</Spanish>
-            <Italian>Abilità la pneumotorace avanzato - emopneumotorace e pneumotorace da tensione</Italian>
+            <Italian>Abilita il pneumotorace avanzato - emopneumotorace e pneumotorace da tensione</Italian>
             <Polish>Włącza zaawansowane odmiany odmy opłucnowej - krwiaka opłucnej oraz odmę prężną</Polish>
             <Portuguese>Permite tipos avançados de pneumotórax - hemotórax e pneumotórax hipertensivo</Portuguese>
             <Russian>Включает прогрессирующий пневмоторакс - гемопневмоторакс и напряженный пневмоторакс</Russian>
@@ -536,6 +539,7 @@
             <Chinese>氧氣已連接</Chinese>
             <Chinesesimp>氧气已连接</Chinesesimp>
             <German>Sauerstoff ist bereits verbunden</German>
+            <Italian>Ossigeno già connesso</Italian>
         </Key>
         <Key ID="STR_KAT_Breathing_PersonalOxygen_Desc_Short">
             <English>Personal oxygen tank for high altitude operations</English>
@@ -545,6 +549,7 @@
             <Chinese>用於高空作業的個人氧氣罐</Chinese>
             <Chinesesimp>高空作业用便携式氧气罐</Chinesesimp>
             <German>Persönlicher Sauerstofftank für Operationen in großer Höhe</German>
+            <Italian>Serbatoio di Ossigeno personale per operazioni ad alta quota</Italian>
         </Key>
         <Key ID="STR_KAT_Breathing_PersonalOxygen_Disconnect">
             <English>Oxygen tank disconnected</English>
@@ -554,6 +559,7 @@
             <Chinese>氧氣罐斷開</Chinese>
             <Chinesesimp>氧气罐断开</Chinesesimp>
             <German>Sauerstofftank wurde abgeklemmt</German>
+            <Italian>Serbatoio di Ossigeno disconnesso</Italian>
         </Key>
         <Key ID="STR_KAT_Breathing_PersonalOxygen_Display">
             <English>Personal Oxygen Tank</English>
@@ -563,6 +569,7 @@
             <Chinese>個人氧氣罐</Chinese>
             <Chinesesimp>便携式氧气罐</Chinesesimp>
             <German>Persönlicher Sauerstofftank</German>
+            <Italian>Serbatoio di Ossigeno personale</Italian>
         </Key>
         <Key ID="STR_KAT_Breathing_PersonalOxygen_Empty">
             <English>Oxygen Tank Empty</English>
@@ -572,6 +579,7 @@
             <Chinese>氧氣罐空</Chinese>
             <Chinesesimp>氧气罐空</Chinesesimp>
             <German>Sauerstofftank leer</German>
+            <Italian>Serbatoio di Ossigeno vuoto</Italian>
         </Key>
         <Key ID="STR_KAT_Breathing_PersonalOxygen_Remaining">
             <English>Minutes Remaining</English>
@@ -581,6 +589,7 @@
             <Chinese>剩餘分鐘數</Chinese>
             <Chinesesimp>剩余分钟数</Chinesesimp>
             <German>Minuten übrig</German>
+            <Italian>Minuti rimasti</Italian>
         </Key>
         <Key ID="STR_KAT_Breathing_Pneumothorax">
             <English>Pneumothorax</English>
@@ -594,6 +603,7 @@
             <Japanese>気胸(PTX)</Japanese>
             <Finnish>Pneumotoraksi</Finnish>
             <Dutch>Pneumothorax</Dutch>
+            <Italian>Pneumotorace</Italian>
         </Key>
         <Key ID="STR_KAT_Breathing_Pneumothorax_short">
             <English>PTX</English>
@@ -991,6 +1001,7 @@
             <Chinese>斷開個人氧氣</Chinese>
             <Chinesesimp>断开个人氧气</Chinesesimp>
             <German>Persönlichen Sauerstofftank abklemmen</German>
+            <Italian>Disconnetti Riserva personale di Ossigeno</Italian>
         </Key>
         <Key ID="STR_KAT_Breathing_Remove_NasalCannula_Log">
             <English>%1 removed Nasal Cannula</English>
@@ -1014,6 +1025,7 @@
             <Chinese>取下氧氣面罩</Chinese>
             <Chinesesimp>取下氧气面罩</Chinesesimp>
             <German>Sauerstoffmaske entfernen</German>
+            <Italian>Rimuovi maschera per Ossigeno</Italian>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_AVAIL_OXYHELMET">
             <English>Available Oxygen Helmets</English>
@@ -1022,6 +1034,7 @@
             <Japanese>利用可能な酸素供給ヘルメット</Japanese>
             <Chinese>可用氧氣頭盔</Chinese>
             <German>Verfügbare Sauerstoffhelme</German>
+            <Italian>Elmetto per ossigeno disponibile</Italian>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_AVAIL_OXYHELMET_DISC">
             <English>Sets which helmets can act as oxygen masks</English>
@@ -1030,6 +1043,7 @@
             <Japanese>酸素マスクとして動作させたいヘルメットを指定します</Japanese>
             <Chinese>設定哪些頭盔可以作為氧氣面罩</Chinese>
             <German>Legt fest, welche Helme als Sauerstoffhelme benutzt werden können</German>
+            <Italian>Imposta quale elmetto può funzionare come maschera per ossigeno</Italian>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_AVAIL_OXYMASK">
             <English>Available Oxygen Masks</English>
@@ -1039,6 +1053,7 @@
             <Chinese>可用氧氣面罩</Chinese>
             <Chinesesimp>可用氧气面罩</Chinesesimp>
             <German>Verfügbare Sauerstoffmasken</German>
+            <Italian>Maschera per ossigeno disponibile</Italian>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_AVAIL_OXYMASK_DISC">
             <English>Sets which goggles can act as oxygen masks</English>
@@ -1048,6 +1063,7 @@
             <Chinese>設定哪些護目鏡可以作為氧氣面罩</Chinese>
             <Chinesesimp>设置哪些护目镜可以作为氧气面罩</Chinesesimp>
             <German>Legt fest, welche Brillen als Sauerstoffmaske verwendet werden können</German>
+            <Italian>Imposta quali occhiali possono funzionare come maschera per ossigeno</Italian>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_Allow_NasalCannula">
             <English>Allow Nasal Cannula</English>
@@ -1487,7 +1503,7 @@
             <Czech>Povolit vlastní léčení pomocí Hrudní Chlopně</Czech>
             <French>Autoriser le pansement thoracique sur soi-même</French>
             <Spanish>Permitir autotratarse con un sello torácico</Spanish>
-            <Italian>Permetti automedicazione con Chest Seal</Italian>
+            <Italian>Permetti automedicazione con Sigillo Toracico</Italian>
             <Polish>Pozwól na samo leczenie przy użyciu Chest Seala</Polish>
             <Portuguese>Permitir auto-tratamento com Selo de Tórax</Portuguese>
             <Russian>Разрешить самолечение оклюзимным пластырем</Russian>
@@ -2093,7 +2109,7 @@
             <Czech>Hodnota těžké cyanózy - výchozí hodnota SpO2 66 \nMěla by být mírně vyšší, než smrtelná hodnota SpO2</Czech>
             <French>Valeur de la cyanose grave - 66 SpO2 par défaut \nCette valeur devrait être un peu plus haute que la valeur de SpO2 létale.</French>
             <Spanish>Valor SpO2 de Cianosis severa - Predeterminado en 66 SpO2 \nEste valor deberia de ser un poco mas alto que el valor letal de SpO2</Spanish>
-            <Italian>Valore di cianosi grave- default SpO2 66. (Dovrebbe essere un pochino più alta del valore letate di SpO2</Italian>
+            <Italian>Valore di cianosi grave- default SpO2 66. \n(Dovrebbe essere un pochino più alta del valore letate di SpO2</Italian>
             <Polish>Poziom SpO2 dla ciężkiej sinicy - domyślnie 66 SpO2 \nPowinien być minimalnie wyższy niż wartość śmiertelna SpO2</Polish>
             <Portuguese>Valor de SpO2 para cianose grave (padrão 66)\nDeve estar um pouco acima do valor letal de SpO2</Portuguese>
             <Russian>Значение Тяжелый цианоза - по умолчанию 66 SpO2 \nДолжно быть немного выше летального значения SpO2</Russian>
@@ -2471,7 +2487,7 @@
             <Czech>Použít RV s Kyslíkovou Lahví (Vozidlo)</Czech>
             <French>Utiliser le BVM avec de l'oxygène (Véhicule)</French>
             <Spanish>Usa el Ambu con tanque de oxígeno (vehículo)</Spanish>
-            <Italian>Usare il BVM con bombola di ossigeno (veicolo)</Italian>
+            <Italian>Usa maschera ambu con bombola di ossigeno (veicolo)</Italian>
             <Portuguese>Usar BVM com cilindro de oxigênio (veículo)</Portuguese>
             <Russian>Использовать BVM с кислородным баллоном (автомобиль)</Russian>
             <German>Verwende BVM mit Sauerstoff (Fahrzeug)</German>
@@ -2487,7 +2503,7 @@
             <Czech>Odložit RV</Czech>
             <French>Ranger le BVM</French>
             <Spanish>Guarda el Ambu</Spanish>
-            <Italian>Riporre il BVM</Italian>
+            <Italian>Riporre la maschera ambu</Italian>
             <Portuguese>Remover BVM</Portuguese>
             <Russian>Убрать BVM</Russian>
             <German>BVM Weglegen</German>
@@ -2538,6 +2554,7 @@
             <Chinese>附在飛機氧氣上</Chinese>
             <Chinesesimp>附在飞机氧气上</Chinesesimp>
             <German>Mit Luftfahrzeug-Sauerstoff verbunden</German>
+            <Italian>Collegato alla riserva d'Ossigeno del velivolo</Italian>
         </Key>
         <Key ID="STR_KAT_Breathing_aatKit_desc">
             <English>The Advanced Airway Treatment Kit is a single use kit designed to treat advanced airway conditions, like hemopneumothorax</English>
@@ -2593,23 +2610,6 @@
             <Finnish>Kuuntele keuhkojen ääniä</Finnish>
             <Dutch>Beluister de longen</Dutch>
         </Key>
-        <Key ID="STR_KAT_Breathing_basicSupplyCrate_display">
-            <English>[KAM] General Items</English>
-            <Czech>[KAM] Obecné předměty</Czech>
-            <French>[KAM] Objets généraux</French>
-            <Spanish>[KAM] Objetos Generales</Spanish>
-            <Italian>[KAM] Oggetti generali</Italian>
-            <Polish>[KAM] Podstawowe przedmioty</Polish>
-            <Portuguese>[KAM] Itens gerais</Portuguese>
-            <Russian>[КАМ] Общие пункты</Russian>
-            <German>[KAM] Allgemeine Gegenstände</German>
-            <Korean>[KAM] 일반 아이템</Korean>
-            <Japanese>[KAM] 一般物資箱</Japanese>
-            <Chinese>[KAM] 一般物品</Chinese>
-            <Chinesesimp>[KAM]一般项目</Chinesesimp>
-            <Finnish>[KAM] Yleiset kohteet</Finnish>
-            <Dutch>[KAM] Algemene items</Dutch>
-        </Key>
         <Key ID="STR_KAT_Breathing_breath_mild">
             <English>, slightly fruity</English>
             <Czech>, lehce nasládlý zápach</Czech>
@@ -2649,6 +2649,7 @@
             <Japanese>とても浅い</Japanese>
             <Chinese>非常淺</Chinese>
             <German>Sehr flach</German>
+            <Italian>Molto Debole</Italian>
         </Key>
         <Key ID="STR_KAT_Breathing_breathing_isNormal">
             <English>Patient is breathing normally</English>
@@ -2689,6 +2690,7 @@
             <Japanese>患者の呼吸はとても浅い</Japanese>
             <Chinese>病人呼吸非常淺</Chinese>
             <German>Die Atmung des Patienten ist sehr flach</German>
+            <Italian>La respirazione del paziente è molto debole</Italian>
         </Key>
         <Key ID="STR_KAT_Breathing_breathing_none">
             <English>Patient is not breathing</English>
@@ -2713,6 +2715,7 @@
             <Japanese>呼吸速度: 正常</Japanese>
             <Chinese>呼吸頻率：正常</Chinese>
             <German>AF: Normal</German>
+            <Italian>RR: Normale</Italian>
         </Key>
         <Key ID="STR_KAT_Breathing_breathing_rrRapid">
             <English>RR: Rapid</English>
@@ -2721,6 +2724,7 @@
             <Japanese>呼吸速度: 速い</Japanese>
             <Chinese>呼吸頻率：快</Chinese>
             <German>AF: Beschleunigt</German>
+            <Italian>RR: Rapido</Italian>
         </Key>
         <Key ID="STR_KAT_Breathing_breathing_rrSlow">
             <English>RR: Slow</English>
@@ -2729,6 +2733,7 @@
             <Japanese>呼吸速度: 遅い</Japanese>
             <Chinese>呼吸頻率：慢</Chinese>
             <German>AF: Langsam</German>
+            <Italian>RR: Lento</Italian>
         </Key>
         <Key ID="STR_KAT_Breathing_breathing_shallow">
             <English>Shallow</English>
@@ -2751,13 +2756,14 @@
             <Japanese>KAM - 呼吸器系 (Breathing)</Japanese>
             <French>KAT - ADV Medical : Respiration</French>
             <German>KAT - ADV Medical: Atmung</German>
+            <Italian>KAT- ADV Medica: Respirazione</Italian>
         </Key>
         <Key ID="STR_KAT_Breathing_chestseal_desc">
             <English>Chest Seal is engineered to treat, seal, and reseal open chest wounds under most circumstances.</English>
             <Czech>Hrudní Chlopeň je navržena pro léčení, zakrytí a uzavření otevřených ran na hrudníku ve většině situací.</Czech>
             <French>Le pansement thoracique est conçu pour traiter et refermer une blessure thoracique dans la majorité des cas</French>
             <Spanish>El sello torácico es un parche diseñado para tratar y sellar heridas abiertas en el pecho bajo la mayoría de circustancias.</Spanish>
-            <Italian>Il Chest Seal è progettato per trattare, sigillare e risigillare ferite aperte al torace nella maggior parte delle circostanze</Italian>
+            <Italian>Il Sigillo Toracico è progettato per trattare, sigillare e risigillare ferite aperte al torace nella maggior parte delle circostanze</Italian>
             <Polish>Chest Seal służy do leczenia, tamowania i zamykania ran klatki piersiowej w każdych warunkach. Leczy odmę opłucnową.</Polish>
             <Portuguese>O Selo de Tórax é projetado para tratar, selar e resselar feridas abertas no peito na maioria das circunstâncias.</Portuguese>
             <Russian>Оклюзивный пластырь разработан для лечения, герметизации и повторной герметизации открытых ран грудной клетки в большинстве случаев.</Russian>
@@ -2775,7 +2781,7 @@
             <Czech>Hrudní Chlopeň</Czech>
             <French>Pansement thoracique</French>
             <Spanish>Sello torácico</Spanish>
-            <Italian>Chest Seal</Italian>
+            <Italian>Sigillo Toracico</Italian>
             <Polish>Chest Seal</Polish>
             <Portuguese>Selo de Tórax</Portuguese>
             <Russian>Оклюзивный пластырь</Russian>
@@ -2845,7 +2851,7 @@
             <Czech>Kůže je ztuhlá, vypadá pohmožděně</Czech>
             <French>La peau est rigide et présente des signes de marbrure</French>
             <Spanish>La piel está rígida y magullada</Spanish>
-            <Italian>La pelle è rigida, appare lividi</Italian>
+            <Italian>La pelle è rigida, appare contusa</Italian>
             <Portuguese>A pele está rígida, com aparência de contusão</Portuguese>
             <Russian>Кожа жесткая, выглядит ушибленной</Russian>
             <German>Die Haut ist steif und sieht gequetscht aus</German>
