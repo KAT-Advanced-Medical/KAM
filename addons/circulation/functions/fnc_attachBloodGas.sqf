@@ -16,7 +16,8 @@
  */
 params ["_entries"];
 _entries params ["_bloodGas", "_patient", "_idNumber", "_player"];
+_bloodGas params ["_patientName", "_bloodGasArray"];
 
-_patient setVariable [QGVAR(testedBloodGas), _bloodGas, true];
+_patient setVariable [QGVAR(testedBloodGas), _bloodGasArray, true];
 
 _player removeItem (format ["KAT_bloodResult_%1",_idNumber]);

@@ -1,5 +1,5 @@
 #define COMPONENT hypothermia
-#define COMPONENT_BEAUTIFIED Hypothermia
+#define COMPONENT_BEAUTIFIED KAT - Hypothermia
 #include "\x\kat\addons\main\script_mod.hpp"
 
 // #define DEBUG_MODE_FULL

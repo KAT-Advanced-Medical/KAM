@@ -21,7 +21,7 @@ class CfgMods {
     class PREFIX {
         dir = "@kat_aceAdvMedical";
         name = "KAT - Advanced Medical";
-        picture = "A3\Ui_f\data\Logos\arma3_expansion_alpha_ca.paa";
+        picture = "A3\Ui_f\data\Logos\arma3_expansion_alpha_ca";
         hidePicture = "true";
         hideName = "true";
         actionName = "Website";

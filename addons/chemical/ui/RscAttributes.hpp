@@ -76,11 +76,9 @@ class GVAR(kat_RscAtributeRadius): RscControlsGroupNoScrollbars {
             h = QUOTE(H_PART(1));
             colorBackground[] = {0, 0, 0, 0.7};
             class Items {
-                class type0 {
-                    text = CSTRING(Lvl0_Gas);
-                };
                 class type1 {
-                    text = CSTRING(Lvl1_Gas);
+                    text = CSTRING(LvL1_Gas);
+                    pricture = "";
                     default = 1;
                 };
             };

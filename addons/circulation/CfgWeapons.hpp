@@ -18,6 +18,9 @@ class CfgWeapons {
     class ACE_ItemCore;
     class CBA_MiscItem_ItemInfo;
     class ACE_bloodIV;
+    class ACE_salineIV;
+    class ACE_salineIV_500;
+    class ACE_salineIV_250;
 
     class kat_bloodIV_O: ACE_bloodIV {
         displayName = CSTRING(BloodIV_O);
@@ -241,17 +244,6 @@ class CfgWeapons {
         mapSize = 0.034;
         class ItemInfo: CBA_MiscItem_ItemInfo {
             mass = 0.1;
-        };
-    };
-    class kat_BPCuff: ACE_ItemCore {
-        scope = 2;
-        author = "Cplhardcore";
-        displayName = CSTRING(BPCuff_display);
-        descriptionShort = CSTRING(BPCuff_desc);
-        picture = QPATHTOF(ui\BPCuff.paa);
-        icon = "";
-        class ItemInfo: CBA_MiscItem_ItemInfo {
-            mass = 8;
         };
     };
     class KAT_bloodSample: ACE_ItemCore {

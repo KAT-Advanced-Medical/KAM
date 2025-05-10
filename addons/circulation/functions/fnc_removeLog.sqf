@@ -29,7 +29,7 @@ private _log = _target getVariable [_logVarName, []];
 private _newLog = [];
 
 {
-    if (_x select 0 isNotEqualTo _message) then {
+    if !(_x select 0 isEqualTo _message) then {
         _newLog pushBack _x;
     };
 } forEach _log;

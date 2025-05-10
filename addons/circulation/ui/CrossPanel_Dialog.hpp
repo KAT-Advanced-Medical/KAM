@@ -15,7 +15,7 @@ class GVAR(CrossPanel_Dialog) {
             style = 48;
             x = "safezoneX";
             y = "safezoneY+0.181889";
-            w = 1.62727*3/4;
+            w = "1.62727*3/4";
             h = "1.62727";
             colorBackground[] = {1,1,1,1};
             colorText[] = {1,1,1,1};

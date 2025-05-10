@@ -33,7 +33,7 @@ _unit setVariable [QGVAR(GetOffActionID), [0xF1, [false, false, false], {
 }, {
     params ["_carrier", "_unit"];
 
-    if (_carrier getVariable [QACEGVAR(dragging,carriedObject), objNull] isNotEqualTo objNull) then {
+    if !(_carrier getVariable [QACEGVAR(dragging,carriedObject), objNull] isEqualTo objNull) then {
         [format [LLSTRING(StoppedCarrying%1), [(_this select 0), true] call ACEFUNC(common,getName)], 1.5, GVAR(Carrier)] call ACEFUNC(common,displayTextStructured);
         [QGVAR(dropObject_carryLocal), [GVAR(Carrier), (GVAR(Carrier) getVariable QACEGVAR(dragging,carriedObject))], GVAR(Carrier)] call CBA_fnc_targetEvent;
     };

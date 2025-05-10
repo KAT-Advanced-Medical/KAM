@@ -6,7 +6,7 @@ class CfgVehicles {
                 class KAT_CheckGasMaskDur {
                     displayName = CSTRING(CheckGasMaskDurability);
                     condition = QUOTE([_player] call FUNC(hasGasMaskOn));
-                    exceptions[] = {"isNotSwimming"};
+                    exceptions[] = {"isNotSwimming", "isNotInside", "isNotSitting"};
                     statement = QUOTE(_this call FUNC(checkGasMaskDur));
                     showDisabled = 0;
                     icon = QPATHTOF(ui\Gasmask_icon.paa);
@@ -14,7 +14,7 @@ class CfgVehicles {
                 class KAT_ChangeGasMaskFilter {
                     displayName = CSTRING(ChangeGasMaskFilter);
                     condition = QUOTE([_player] call FUNC(canReplaceFilter));
-                    exceptions[] = {"isNotSwimming"};
+                    exceptions[] = {"isNotSwimming", "isNotInside", "isNotSitting"};
                     statement = QUOTE(_this call FUNC(changeGasMaskFilter));
                     showDisabled = 0;
                     icon = QPATHTOF(ui\gasmaskfilter_ca.paa);
@@ -22,7 +22,7 @@ class CfgVehicles {
                 class KAT_PutOnGasMask {
                     displayName = CSTRING(PutOnGasMask);
                     condition = QUOTE([_player] call FUNC(canPutOnGasMask));
-                    exceptions[] = {"isNotSwimming"};
+                    exceptions[] = {"isNotSwimming", "isNotInside", "isNotSitting"};
                     statement = QUOTE([_player] call FUNC(putOnGasMask));
                     showDisabled = 0;
                     icon = QPATHTOF(ui\Gasmask_icon.paa);
@@ -30,41 +30,10 @@ class CfgVehicles {
                 class KAT_TakeOffGasMask {
                     displayName = CSTRING(TakeOffGasMask);
                     condition = QUOTE([_player] call FUNC(canTakeOffGasMask));
-                    exceptions[] = {"isNotSwimming"};
+                    exceptions[] = {"isNotSwimming", "isNotInside", "isNotSitting"};
                     statement = QUOTE([_player] call FUNC(takeOffGasMask));
                     showDisabled = 0;
                     icon = QPATHTOF(ui\Gasmask_icon.paa);
-                };
-
-                class KAT_ChemicalDetector {
-                    displayName = CSTRING(ChemicalDetector_Menu);
-                    icon = QPATHTOF(ui\kat_chemicalDet_icon.paa);
-                    exceptions[] = {"isNotSwimming"};
-
-                    class KAT_ChemicalDetector_Enable {
-                        displayName = CSTRING(EnableDetector);
-                        condition = QUOTE(([_player] call FUNC(hasDetector)) && !(_player getVariable [ARR_2(QQGVAR(detectorEnabled),false)]));
-                        exceptions[] = {"isNotSwimming"};
-                        statement = QUOTE([_player] call FUNC(enableChemDetector));
-                        showDisabled = 0;
-                        icon = QPATHTOF(ui\kat_chemicalDet_icon.paa);
-                    };
-                    class KAT_ChemicalDetector_SoundOn {
-                        displayName = CSTRING(EnableDetectorSound);
-                        condition = QUOTE(!(_player getVariable [ARR_2(QQGVAR(detectorSound),false)]) && ([_player] call FUNC(hasDetector)));
-                        exceptions[] = {"isNotSwimming"};
-                        statement = QUOTE(_player setVariable [ARR_3(QQGVAR(detectorSound),true,true)]);
-                        showDisabled = 0;
-                        icon = QPATHTOF(ui\kat_chemicalDet_icon.paa);
-                    };
-                    class KAT_ChemicalDetector_SoundOff {
-                        displayName = CSTRING(DisableDetectorSound);
-                        condition = QUOTE((_player getVariable [ARR_2(QQGVAR(detectorSound),false)]) && ([_player] call FUNC(hasDetector)));
-                        exceptions[] = {"isNotSwimming"};
-                        statement = QUOTE(_player setVariable [ARR_3(QQGVAR(detectorSound),false,true)]);
-                        showDisabled = 0;
-                        icon = QPATHTOF(ui\kat_chemicalDet_icon.paa);
-                    };
                 };
             };
         };
@@ -136,7 +105,7 @@ class CfgVehicles {
             class Radius
             {
                 displayName = CSTRING(UI_max_range);
-                tooltip = CSTRING(GasModule_max_radius_dcs);
+                tooltip = CSTRING(GasModule_min_radius_dcs);
                 typeName = "NUMBER";
                 defaultValue = 20;
             };
@@ -145,15 +114,15 @@ class CfgVehicles {
                 displayName = CSTRING(UI_gasType);
                 typeName = "NUMBER";
                 class values {
-                    class TearGas {
-                        name = CSTRING(Lvl0_Gas);
-                        value = 0;
-                    };
                     class ToxicGas {
-                        name = CSTRING(Lvl1_Gas);
+                        name = CSTRING(LvL1_Gas);
                         value = 1;
                         default = 1;
                     };
+                   /* class csgas {
+                        name = "CS-Gas (Level 2)";
+                        value = "CS";
+                    };*/
                 };
             };
             class IsSealable
@@ -222,7 +191,7 @@ class CfgVehicles {
         class TransportMagazines;
     };
     class ACE_Box_82mm_Mo_Combo: ACE_Box_82mm_Mo_HE {
-        class TransportMagazines {
+        class TransportMagazines: TransportMagazines {
             MACRO_ADDMAGAZINE(KAT_1Rnd_82mm_Mo_Type0,8);
             MACRO_ADDMAGAZINE(KAT_1Rnd_82mm_Mo_TypeCS,8);
         };

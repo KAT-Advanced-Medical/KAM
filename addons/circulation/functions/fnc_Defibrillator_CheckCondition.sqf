@@ -30,7 +30,7 @@ switch (_defibProvider select 1) do {
         _condition = (_patient distance (_defibProvider select 0)) <= GVAR(Defibrillator_DistanceLimit);
     };
     case 2: {
-        _condition = !(isNull objectParent _patient) && (objectParent _patient isEqualTo objectParent _medic) && ((itemCargo objectParent _patient) findIf {_x isEqualTo (_defibProvider select 2)} isNotEqualTo -1);
+        _condition = !(isNull objectParent _patient) && (objectParent _patient isEqualTo objectParent _medic) && !((itemCargo objectParent _patient) findIf {_x isEqualTo (_defibProvider select 2)} isEqualTo -1);
     };
     default {
         _condition = [_medic, _medic, [(_defibProvider select 2)]] call ACEFUNC(medical_treatment,hasItem);

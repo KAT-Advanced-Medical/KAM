@@ -1,5 +1,5 @@
 #define COMPONENT breathing
-#define COMPONENT_BEAUTIFIED Breathing
+#define COMPONENT_BEAUTIFIED KAT - Breathing
 #include "\x\kat\addons\main\script_mod.hpp"
 #include "\x\kat\addons\gui\gui_defines.hpp"
 

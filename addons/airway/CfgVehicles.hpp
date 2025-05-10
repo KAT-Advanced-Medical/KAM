@@ -47,9 +47,12 @@ class CfgVehicles {
         hiddenSelectionsTextures[] = {QPATHTOF(ui\vomit.paa)};
     };
 
-    class ACE_medicalSupplyCrate;
+    class NATO_Box_Base;
+    class ACE_medicalSupplyCrate: NATO_Box_Base {
+        class TransportItems;
+    };
     class ACE_medicalSupplyCrate_advanced: ACE_medicalSupplyCrate {
-        class TransportItems {
+        class TransportItems: TransportItems {
             MACRO_ADDITEM(kat_larynx,15);
             MACRO_ADDITEM(kat_guedel,15);
             MACRO_ADDITEM(kat_suction,15);

@@ -38,7 +38,6 @@ private _hr = _display displayCtrl 22004;
 private _o2 = _display displayCtrl 22005;
 private _temp = _display displayCtrl 22006;
 private _altitude = _display displayCtrl 22007;
-private _timeSeconds = _display displayCtrl 22008;
 
 // We seperate this into two PFHs because the compass PFH needs to be run much faster in order to rotate smoothly, but vitals only need an update every second because thats how fast handleUnitVitals runs.
 [{
@@ -58,7 +57,7 @@ private _timeSeconds = _display displayCtrl 22008;
 
 [{
     _this params ["_args", "_pfhID"];
-    _args params ["_unit", "_time", "_month", "_day", "_baro", "_hr", "_o2", "_temp", "_altitude", "_rain", "_overcast", "_sun", "_timeSeconds"];
+    _args params ["_unit", "_time", "_month", "_day", "_baro", "_hr", "_o2", "_temp", "_altitude", "_rain", "_overcast", "_sun"];
 
     if !(GVAR(KatminActive)) exitWith {
         _pfhID call CBA_fnc_removePerFrameHandler;
@@ -79,25 +78,9 @@ private _timeSeconds = _display displayCtrl 22008;
     private _hour = floor dayTime;
     private _minute = floor ((dayTime - _hour) * 60);
 
-    if (_unit getVariable [QGVAR(katminSeconds), false]) then {
-        private _second = floor ((((dayTime - _hour) * 60) - _minute) * 60);
-
-        _timeSeconds ctrlShow true;
-        _time ctrlShow false;
-        _month ctrlShow false;
-        _day ctrlShow false;
-
-        _timeSeconds ctrlSetText (format ["%1:%2:%3", [_hour, 2] call CBA_fnc_formatNumber, [_minute, 2] call CBA_fnc_formatNumber, [_second, 2] call CBA_fnc_formatNumber]);    
-    } else {
-        _timeSeconds ctrlShow false;
-        _month ctrlShow true;
-        _day ctrlShow true;
-        _time ctrlShow true;
-
-        _time ctrlSetText (format ["%1:%2", [_hour, 2] call CBA_fnc_formatNumber, [_minute, 2] call CBA_fnc_formatNumber]);    
-        _month ctrlSetText (["JAN", "FEB", "MAR", "APR", "MAY", "JUN", "JUL", "AUG", "SEP", "OCT", "NOV", "DEC"] select (_monthNum - 1));
-        _day ctrlSetText (str(_dayNum));
-    };
+    _time ctrlSetText (format ["%1:%2", [_hour, 2] call CBA_fnc_formatNumber, [_minute, 2] call CBA_fnc_formatNumber]);    
+    _month ctrlSetText (["JAN", "FEB", "MAR", "APR", "MAY", "JUN", "JUL", "AUG", "SEP", "OCT", "NOV", "DEC"] select (_monthNum - 1));
+    _day ctrlSetText (str(_dayNum));
 
     private _altitudeValue = (getPosASL _unit) select 2;
 
@@ -119,16 +102,8 @@ private _timeSeconds = _display displayCtrl 22008;
         _temp ctrlSetText (format ["%1C", ([(_altitudeValue call ACEFUNC(weather,calculateTemperatureAtHeight)), 1, 0] call CBA_fnc_formatNumber)]);
     };
 
-    if (GVAR(watchInaccuracy)) then {
-        private _fatigue = [0, (ACEGVAR(advanced_fatigue,anFatigue) * 2)] select (ACEGVAR(advanced_fatigue,enabled));
-        private _temperature = _unit getVariable [QEGVAR(hypothermia,unitTemperature), 37];
-
-        _hr ctrlSetText ([(GET_HEART_RATE(_unit) + ((2 * _fatigue) - (37 - _temperature))), 1, 0] call CBA_fnc_formatNumber);
-        _o2 ctrlSetText ([(GET_KAT_SPO2(_unit) - (_fatigue - (37 - _temperature))), 1, 0] call CBA_fnc_formatNumber); 
-    } else {
-        _hr ctrlSetText ([GET_HEART_RATE(_unit), 1, 0] call CBA_fnc_formatNumber);
-        _o2 ctrlSetText ([GET_KAT_SPO2(_unit), 1, 0] call CBA_fnc_formatNumber);
-    };
+    _hr ctrlSetText ([GET_HEART_RATE(_unit), 1, 0] call CBA_fnc_formatNumber);
+    _o2 ctrlSetText ([GET_KAT_SPO2(_unit), 1, 0] call CBA_fnc_formatNumber);
 
     switch (true) do {
         case(rain != 0): { _rain ctrlShow true; _overcast ctrlShow false; _sun ctrlShow false; };
@@ -148,6 +123,5 @@ private _timeSeconds = _display displayCtrl 22008;
     _altitude,
     _rain,
     _overcast,
-    _sun,
-    _timeSeconds
+    _sun
 ]] call CBA_fnc_addPerFrameHandler;

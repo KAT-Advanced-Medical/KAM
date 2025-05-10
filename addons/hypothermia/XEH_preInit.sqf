@@ -12,7 +12,15 @@ private _mapHighTemperature = if ((_mapPosition - 20) > 0) then { 27 + (-0.7 * (
 
 GVAR(positionTemperature) = [_mapPosition, _mapHighTemperature];
 
-#define CBA_SETTINGS_CAT LSTRING(cba_name)
-#include "initSettings.inc.sqf"
+#define CBA_SETTINGS_CAT "KAT - ADV Medical: Hypothermia"
+
+[
+    QGVAR(hypothermiaActive),
+    "CHECKBOX",
+    LLSTRING(ENABLE_HYPOTHERMIA),
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_Hypothermia)],
+    [true],
+    true
+] call CBA_Settings_fnc_init;
 
 ADDON = true;

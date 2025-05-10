@@ -1,5 +1,5 @@
 #define COMPONENT airway
-#define COMPONENT_BEAUTIFIED Airway
+#define COMPONENT_BEAUTIFIED KAT - Airway
 #include "\x\kat\addons\main\script_mod.hpp"
 #include "\x\kat\addons\gui\gui_defines.hpp"
 

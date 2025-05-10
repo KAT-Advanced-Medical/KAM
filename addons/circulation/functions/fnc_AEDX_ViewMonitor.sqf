@@ -79,7 +79,7 @@ GVAR(PulseRateReady) = true;
 
     private _pads = false;
 
-    if (GVAR(AEDX_MonitorTarget) isNotEqualTo objNull) then {
+    if !(GVAR(AEDX_MonitorTarget) isEqualTo objNull) then {
         _pads = GVAR(AEDX_MonitorTarget) getVariable [QGVAR(DefibrillatorPads_Connected), false];
     };
 
@@ -90,7 +90,7 @@ GVAR(PulseRateReady) = true;
         ctrlSetText [IDC_EKG_DISPLAY_MIDTEXT, ""];
         private _ekgDisplay = QPATHTOF(ui\ekg_off.paa);
 
-        if (GVAR(AEDX_MonitorTarget) getVariable [QACEGVAR(medical,CPR_provider), objNull] isNotEqualTo objNull) then {
+        if !(GVAR(AEDX_MonitorTarget) getVariable [QACEGVAR(medical,CPR_provider), objNull] isEqualTo objNull) then {
             _ekgDisplay = QPATHTOF(ui\ekg_cpr.paa);
         } else {
             if (!(GVAR(AEDX_MonitorTarget) getVariable [QGVAR(heartRestart), false]) && alive GVAR(AEDX_MonitorTarget)) then {
@@ -140,17 +140,8 @@ GVAR(PulseRateReady) = true;
 
     // Handle date and time display - [year,month,day,hour,min]
 
-    date params ["_year", "_month", "_day", "_hours", "_minutes"];
-    ctrlSetText [
-        IDC_DISPLAY_DATEANDTIME,
-        format ["%1/%2/%3               %4:%5", [_day, 2] call CBA_fnc_formatNumber, [_month, 2] call CBA_fnc_formatNumber, _year, [_hours, 2] call CBA_fnc_formatNumber, [_minutes, 2] call CBA_fnc_formatNumber]
-    ];
-
-    private _time = time;
-    private _hours = floor (_time / 3600);
-    private _minutes = floor ((_time / 60) - (_hours * 60));
-    private _seconds = floor (_time % 60);
-    ctrlSetText [IDC_DISPLAY_ELAPSEDTIME, format ["%1:%2:%3", [_hours, 2] call CBA_fnc_formatNumber, [_minutes, 2] call CBA_fnc_formatNumber, [_seconds, 2] call CBA_fnc_formatNumber]];
+    ctrlSetText [IDC_DISPLAY_DATEANDTIME, format ["%1/%2/%3               %4:%5", (["", "0"] select (date select 2 < 10)) + str (date select 2), (["", "0"] select (date select 1 < 10)) + str (date select 1), date select 0, (["", "0"] select (date select 3 < 10)) + str (date select 3), (["", "0"] select (date select 4 < 10)) + str (date select 4)]];
+    ctrlSetText [IDC_DISPLAY_ELAPSEDTIME, format ["%1:%2:%3", (["", "0"] select (floor time / 3600 < 10)) + str (floor(time/3600)), (["", "0"] select (floor time / 3600 - floor time / 3600 * 60 < 10)) + str (floor(((time/3600) - floor(time/3600)) * 60)), (["", "0"] select (floor time / 60 - floor time / 60 * 60 < 10)) + str (floor(((time/60) - floor(time/60)) * 60))]];
 
     if (GVAR(AEDX_MonitorTarget) getVariable [QGVAR(AED_X_VitalsMonitor_Connected), false]) then {
         private _partIndex = ((GVAR(AEDX_MonitorTarget) getVariable [QGVAR(AED_X_VitalsMonitor_Provider), [-1, -1, -1]]) select 2);
@@ -162,10 +153,7 @@ GVAR(PulseRateReady) = true;
 
         private _PRBar = _dlg displayCtrl IDC_DISPLAY_PULSERATEBAR;
 
-        if (HAS_TOURNIQUET_APPLIED_ON(GVAR(AEDX_MonitorTarget),_partIndex)) then {
-            _PRBar ctrlSetPosition [(ctrlPosition _PRBar) select 0, (ctrlPosition _PRBar) select 1, (ctrlPosition _PRBar) select 2, KAT_pxToScreen_H(71)];
-            _PRBar ctrlCommit 0;
-        } else {
+        if (!(HAS_TOURNIQUET_APPLIED_ON(GVAR(AEDX_MonitorTarget),_partIndex))) then {
             if (GVAR(PulseRateReady)) then {
                 GVAR(PulseRateReady) = false;
                 private _pr = GVAR(AEDX_MonitorTarget) getVariable [QACEGVAR(medical,heartRate), 0];
@@ -206,6 +194,9 @@ GVAR(PulseRateReady) = true;
                     }, [], 0.1] call CBA_fnc_waitAndExecute;
                 };
             };
+        } else {
+            _PRBar ctrlSetPosition [(ctrlPosition _PRBar) select 0, (ctrlPosition _PRBar) select 1, (ctrlPosition _PRBar) select 2, KAT_pxToScreen_H(71)];
+            _PRBar ctrlCommit 0;
         };
     } else {
         ctrlShow [IDC_DISPLAY_PULSERATEBORDER, false];
@@ -222,7 +213,7 @@ GVAR(PulseRateReady) = true;
     private _pads = false;
     private _vitalsMonitor = false;
 
-    if (GVAR(AEDX_MonitorTarget) isNotEqualTo objNull) then {
+    if !(GVAR(AEDX_MonitorTarget) isEqualTo objNull) then {
         _pads = GVAR(AEDX_MonitorTarget) getVariable [QGVAR(DefibrillatorPads_Connected), false];
         _vitalsMonitor = GVAR(AEDX_MonitorTarget) getVariable [QGVAR(AED_X_VitalsMonitor_Connected), false];
     };
@@ -244,7 +235,7 @@ GVAR(PulseRateReady) = true;
         ctrlSetText [IDC_DISPLAY_SPO2, "---"];
     };
 
-    if (GVAR(AEDX_MonitorTarget) getVariable [QACEGVAR(medical,CPR_provider), objNull] isNotEqualTo objNull) then {
+    if !(GVAR(AEDX_MonitorTarget) getVariable [QACEGVAR(medical,CPR_provider), objNull] isEqualTo objNull) then {
 
         private _rhythmHR = 0;
 
@@ -309,26 +300,6 @@ GVAR(PulseRateReady) = true;
         ctrlSetText [IDC_DISPLAY_BLOODPRESSURE_M, ""];
         ctrlSetText [IDC_DISPLAY_SPO2, "---"];
     };
-
-    private _hasEtco2Monitor = (GVAR(AEDX_MonitorTarget) getVariable [QEGVAR(breathing,etco2Monitor),[]] isNotEqualTo []); //check for etco2 monitoring apparatus
-    private _etco2 = GET_ETCO2(GVAR(AEDX_MonitorTarget));
-    private _breathrate = GET_BREATHING_RATE(GVAR(AEDX_MonitorTarget));
-
-    if (_hasEtco2Monitor) then {
-        ctrlShow [IDC_DISPLAY_RR_DEFAULT, false];
-        ctrlShow [IDC_DISPLAY_RR, true];
-        ctrlShow [IDC_DISPLAY_ETCO2, true];
-        ctrlShow [IDC_DISPLAY_BR, true];
-
-        ctrlSetText [IDC_DISPLAY_RR, format["%1", round(_breathrate)]];
-        ctrlSetText [IDC_DISPLAY_ETCO2, format["%1", round(_etco2)]];
-    } else {
-        ctrlShow [IDC_DISPLAY_RR_DEFAULT, true];
-        ctrlShow [IDC_DISPLAY_RR, false];
-        ctrlShow [IDC_DISPLAY_ETCO2, false];
-        ctrlShow [IDC_DISPLAY_BR, false];
-    };
-
 }, 1, [_dlg]] call CBA_fnc_addPerFrameHandler;
 
 [{

@@ -165,7 +165,7 @@ if (!local _unit) then {
         if (_finalOutput < 1) then {
             _finalOutput = 1;
         };
-
+        
         _unit setVariable [QGVAR(airwayStatus), _finalOutput, true];
     };
 
@@ -215,7 +215,7 @@ if (!local _unit) then {
 
                 private _soundTargets = allPlayers inAreaArray [ASLToAGL getPosASL _unit, 15, 15, 0, false, 15];
 
-                if (_soundTargets isNotEqualTo []) then {
+                if !(_soundTargets isEqualTo []) then {
                     [QGVAR(playCough), [_unit], _soundTargets] call CBA_fnc_targetEvent;
                 };
 

@@ -1,247 +1,247 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Project name="KAT">
     <Package name="Stretcher">
+        <Key ID="STR_KAT_Stretcher_disassemble_stretcher_display">
+            <English>Disassemble Stretcher</English>
+            <German>Trage einklappen</German>
+            <Polish>Złóż nosze</Polish>
+            <Spanish>Desarmar Camilla</Spanish>
+            <Chinese>拆卸式擔架</Chinese>
+            <Chinesesimp>可拆卸式担架</Chinesesimp>
+            <Czech>Rozložit nosítka</Czech>
+            <Korean>들것 분리</Korean>
+            <French>Désassembler la civière</French>
+            <Turkish>Sedyeyi sökün</Turkish>
+            <Italian>Smonta la barella</Italian>
+            <Russian>Разобрать носилки</Russian>
+            <Japanese>担架を分解する</Japanese>
+            <Portuguese>Desmontar maca</Portuguese>
+            <Finnish>Pura paarit</Finnish>
+            <Dutch>Ontmantel brancard</Dutch>
+        </Key>
+        <Key ID="STR_KAT_Stretcher_disassemble_attach_display">
+            <English>Attach to</English>
+            <German>Anhängen an</German>
+            <Polish>Przyczep do</Polish>
+            <Spanish>Adjuntar a</Spanish>
+            <Chinese>掛在</Chinese>
+            <Chinesesimp>附加到</Chinesesimp>
+            <Czech>Připevnit k</Czech>
+            <Korean>에 부착</Korean>
+            <French>Attacher à</French>
+            <Turkish>Şuna Bağla</Turkish>
+            <Italian>Collega a</Italian>
+            <Russian>Приложить к</Russian>
+            <Japanese>取り付ける</Japanese>
+            <Portuguese>Anexar a</Portuguese>
+            <Finnish>Kiinnitä se</Finnish>
+            <Dutch>Verbind aan</Dutch>
+        </Key>
         <Key ID="STR_KAT_Stretcher_AttachHeliStretcher">
             <English>Attach Stretcher</English>
-            <Czech>Připevnit nosítka</Czech>
-            <French>Attacher la civière</French>
-            <Spanish>Adjuntar Camilla</Spanish>
-            <Italian>Attacca la barella</Italian>
             <Polish>Przyczep nosze</Polish>
-            <Portuguese>Anexar maca</Portuguese>
-            <Russian>Прикрепить носилки</Russian>
             <German>Trage befestigen</German>
-            <Korean>들것 부착</Korean>
-            <Japanese>担架を取り付ける</Japanese>
-            <Chinese>附著擔架</Chinese>
-            <Chinesesimp>附着担架</Chinesesimp>
+            <Spanish>Adjuntar Camilla</Spanish>
+            <Chinese>附加担架 </Chinese>
+            <Chinesesimp>连接担架 </Chinesesimp>
+            <Czech>Připevnit nosítka</Czech>
+            <Korean>들것 부착 </Korean>
+            <French>Attacher la civière</French>
             <Turkish>Sedyeyi Takın</Turkish>
+            <Italian>Attacca la barella</Italian>
+            <Russian>Прикрепить носилки</Russian>
+            <Japanese>担架を取り付ける</Japanese>
+            <Portuguese>Anexar maca</Portuguese>
             <Finnish>Kiinnitä paarit</Finnish>
             <Dutch>Brancard bevestigen</Dutch>
         </Key>
-        <Key ID="STR_KAT_Stretcher_DeployHeliStretcher">
-            <English>Deploy Stretcher</English>
-            <Czech>Rozložit nosítka</Czech>
-            <French>Déployer le brancard</French>
-            <Spanish>Desplegar Camilla</Spanish>
-            <Italian>Dispiegare la barella</Italian>
-            <Polish>Wypuść nosze</Polish>
-            <German>Trage ausklappen</German>
-            <Japanese>担架を展開する</Japanese>
-            <Chinese>展開擔架</Chinese>
-            <Chinesesimp>展开担架</Chinesesimp>
-            <Dutch>Ontplooi brancard</Dutch>
-        </Key>
-        <Key ID="STR_KAT_Stretcher_DetachHeliStretcher">
-            <English>Detach Stretcher</English>
-            <Czech>Odpojit nosítka</Czech>
-            <French>Détacher le brancard</French>
-            <Spanish>Desanclar Camilla</Spanish>
-            <Italian>Staccare la barella</Italian>
-            <Polish>Odczep nosze</Polish>
-            <German>Trage lösen</German>
-            <Japanese>担架を取り外す</Japanese>
-            <Chinese>釋放擔架</Chinese>
-            <Chinesesimp>分离担架</Chinesesimp>
-            <Dutch>Maak brancard los</Dutch>
-        </Key>
-        <Key ID="STR_KAT_Stretcher_Helistretcher_Desc">
-            <English>Allows you to attach a Stretcher to a helicopter (Double click)</English>
-            <Czech>Umožňuje připevnit nosítka na helikoptéru(Dvojtým kliknutím)</Czech>
-            <French>Vous permet d'attacher une civière sur hélicoptère (double clic)</French>
-            <Spanish>Le permite adjuntar una camilla a un helicóptero (doble clic)</Spanish>
-            <Italian>Consente di collegare una barella sull'elicottero (doppio clic)</Italian>
-            <Polish>Pozwala podczepić nosze do śmigłowca(Podwójne kliknięcie)</Polish>
-            <Portuguese>Permite anexar uma maca a um helicóptero (clique duplo)</Portuguese>
-            <Russian>Позволяет прикрепить носилки к вертолету (двойной щелчок)</Russian>
-            <German>Ermöglicht das Anbringen einer Trage am Hubschrauber (Doppelklick)</German>
-            <Korean>헬기에 들것을 부착할 수 있습니다(더블 클릭)</Korean>
-            <Japanese>ヘリコプターに担架を取り付けることができます (ダブルクリック)</Japanese>
-            <Chinese>允許您雙擊將擔架連接到直升機上</Chinese>
-            <Chinesesimp>允许您双击将担架连接到直升机上</Chinesesimp>
-            <Turkish>Helikoptere sedye takmanızı sağlar(Çift tıklama)</Turkish>
-            <Finnish>Mahdollistaa paareiden kiinnittämisen helikopteriin (klikkaa kahdesti)</Finnish>
-            <Dutch>Staat je toe om een brancard aan een heli te bevestigen (dubbel klik)</Dutch>
-        </Key>
-        <Key ID="STR_KAT_Stretcher_Helistretcher_Display">
-            <English>Attachable Helistretcher</English>
-            <Czech>Připevnitelná helinosítka</Czech>
-            <French>Hélicivière amovible</French>
-            <Spanish>Camilla de helicóptero adjuntable</Spanish>
-            <Italian>Elibarella agganciabile</Italian>
-            <Polish>Nosze śmigłowcowe</Polish>
-            <Portuguese>Maca de helicóptero acoplável</Portuguese>
-            <Russian>Вы должны находиться в пределах 15 м от вертолета и посмотри на это!</Russian>
-            <German>Anbringbare Helitrage</German>
-            <Korean>부착형 헬기용 들것</Korean>
-            <Japanese>ヘリコプター用担架</Japanese>
-            <Chinese>可連接直升機擔架</Chinese>
-            <Chinesesimp>可连接直升机担架</Chinesesimp>
-            <Turkish>Helitakılabilir sedye</Turkish>
-            <Finnish>Kiinnitettävä paarit helikoptereille</Finnish>
-            <Dutch>Bevestigbare helibrancard</Dutch>
-        </Key>
-        <Key ID="STR_KAT_Stretcher_KAT_HeliStretcher">
-            <English>KAT Helistretcher</English>
-            <Czech>KAT Helinosítka</Czech>
-            <French>Brancard d'hélicoptère KAT</French>
-            <Spanish>KAT Camilla de Helicóptero</Spanish>
-            <Italian>KAT Barella per elicotteri</Italian>
-            <German>KAT Helikoptertrage</German>
-            <Japanese>KAT ヘリコプター用担架</Japanese>
-            <Chinese>KAT 直升機擔架</Chinese>
-            <Chinesesimp>KAT Helistretcher</Chinesesimp>
-            <Dutch>KAT helibrancard</Dutch>
-        </Key>
-        <Key ID="STR_KAT_Stretcher_LowerHeliStretcher">
-            <English>Lower Stretcher</English>
-            <Czech>Snížit nosítka</Czech>
-            <French>Baisser la civière</French>
-            <Spanish>Bajar la Camilla</Spanish>
-            <Italian>Barella inferiore</Italian>
-            <Polish>Opuść nosze</Polish>
-            <Portuguese>Abaixar a maca</Portuguese>
-            <Russian>Нижние носилки</Russian>
-            <German>Trage absenken</German>
-            <Korean>들것 내리기</Korean>
-            <Japanese>担架を下げる</Japanese>
-            <Chinese>放下擔架</Chinese>
-            <Chinesesimp>放下担架</Chinesesimp>
-            <Turkish>Alt Sedye</Turkish>
-            <Finnish>Laske paarit</Finnish>
-            <Dutch>Laat de brancard zakken</Dutch>
-        </Key>
-        <Key ID="STR_KAT_Stretcher_PackIntoBackpack">
-            <English>Pack into backpack</English>
-            <Czech>Zabalit do batohu</Czech>
-            <French>Emballer dans un sac à dos</French>
-            <Spanish>Empaquetar en mochila</Spanish>
-            <Italian>Mettere nello zaino</Italian>
-            <Polish>Spakuj jako plecak</Polish>
-            <German>In Rucksack packen</German>
-            <Japanese>バックパックとして畳む</Japanese>
-            <Chinese>裝進背包</Chinese>
-            <Chinesesimp>装进背包</Chinesesimp>
-            <Dutch>Verpak naar een rugzak</Dutch>
-        </Key>
-        <Key ID="STR_KAT_Stretcher_PackIntoBag">
-            <English>Pack into bag</English>
-            <Czech>Zabalit do tašky</Czech>
-            <French>Emballer dans un sac</French>
-            <Spanish>Empaquetar en bolsa</Spanish>
-            <Italian>Mettere nella borsa</Italian>
-            <Polish>Spakuj jako torba</Polish>
-            <German>In Tasche packen</German>
-            <Japanese>ランチャーとして畳む</Japanese>
-            <Chinese>打包到包裡</Chinese>
-            <Chinesesimp>装进袋子里</Chinesesimp>
-            <Dutch>Verpak naar een tas</Dutch>
-        </Key>
-        <Key ID="STR_KAT_Stretcher_PickupStretcher_progressBar">
-            <English>Packing Stretcher...</English>
-            <Czech>Balení nosítek...</Czech>
-            <French>Le brancard est emballé</French>
-            <Spanish>Empaquetando Camilla...</Spanish>
-            <Italian>Imballaggio della barella...</Italian>
-            <Polish>Pakowanie noszy...</Polish>
-            <German>Trage einpacken...</German>
-            <Japanese>担架を折り畳んでいます・・・</Japanese>
-            <Chinese>正在打包擔架...</Chinese>
-            <Chinesesimp>正在打包担架...</Chinesesimp>
-            <Dutch>Brancard wordt verpakt</Dutch>
-        </Key>
-        <Key ID="STR_KAT_Stretcher_PlaceStretcher_progressBar">
-            <English>Placing Stretcher...</English>
-            <Czech>Umisťování nosítek...</Czech>
-            <French>Mise en place du brancard...</French>
-            <Spanish>Colocando Camilla...</Spanish>
-            <Italian>Posizionamento della barella...</Italian>
-            <Polish>Rozkładanie noszy...</Polish>
-            <German>Trage platzieren...</German>
-            <Japanese>担架を設置しています・・・</Japanese>
-            <Chinese>正在放置擔架...</Chinese>
-            <Chinesesimp>正在放置担架...</Chinesesimp>
-            <Dutch>Brancard wordt geplaatst</Dutch>
-        </Key>
         <Key ID="STR_KAT_Stretcher_RaiseHeliStretcher">
             <English>Raise Stretcher</English>
-            <Czech>Vytáhnout nosítka</Czech>
-            <French>Elever la civière</French>
-            <Spanish>Subir la Camilla</Spanish>
-            <Italian>Alzare la barella</Italian>
             <Polish>Wciągnij nosze</Polish>
-            <Portuguese>Elevar a maca</Portuguese>
-            <Russian>Поднимите носилки</Russian>
             <German>Trage anheben</German>
-            <Korean>들것 올리기</Korean>
-            <Japanese>担架を上げる</Japanese>
-            <Chinese>抬起擔架</Chinese>
+            <Spanish>Subir la Camilla</Spanish>
+            <Chinese>AA抬起担架AA</Chinese>
             <Chinesesimp>抬起担架</Chinesesimp>
+            <Czech>Vytáhnout nosítka</Czech>
+            <Korean>들것 올리기</Korean>
+            <French>Elever la civière</French>
             <Turkish>Kaldırma Sedyesi</Turkish>
+            <Italian>Alzare la barella</Italian>
+            <Russian>Поднимите носилки</Russian>
+            <Japanese>担架を上げる</Japanese>
+            <Portuguese>Elevar a maca</Portuguese>
             <Finnish>Nosta paarit</Finnish>
             <Dutch>Til de brancard op</Dutch>
         </Key>
+        <Key ID="STR_KAT_Stretcher_LowerHeliStretcher">
+            <English>Lower Stretcher</English>
+            <Polish>Opuść nosze</Polish>
+            <German>Trage absenken</German>
+            <Spanish>Bajar la Camilla</Spanish>
+            <Chinese>下担架</Chinese>
+            <Chinesesimp>放下担架</Chinesesimp>
+            <Czech>Snížit nosítka</Czech>
+            <Korean>들것 내리기</Korean>
+            <French>Baisser la civière</French>
+            <Turkish>Alt Sedye</Turkish>
+            <Italian>Barella inferiore</Italian>
+            <Russian>Нижние носилки</Russian>
+            <Japanese>担架を下げる</Japanese>
+            <Portuguese>Abaixar a maca</Portuguese>
+            <Finnish>Laske paarit</Finnish>
+            <Dutch>Laat de brancard zakken</Dutch>
+        </Key>
+        <Key ID="STR_KAT_Stretcher_DeployHeliStretcher">
+            <English>Deploy Stretcher</English>
+            <Polish>Wypuść nosze</Polish>
+            <Dutch>Ontplooi brancard</Dutch>
+            <Spanish>Desplegar Camilla</Spanish>
+            <Japanese>担架を展開する</Japanese>
+            <Italian>Dispiegare la barella</Italian>
+            <French>Déployer le brancard</French>
+        </Key>
         <Key ID="STR_KAT_Stretcher_RetractHeliStretcher">
             <English>Retract Stretcher</English>
-            <Czech>Zatáhnout nosítka</Czech>
-            <French>Rétracter le brancard</French>
-            <Spanish>Recoger Camilla</Spanish>
-            <Italian>Ritirare la barella</Italian>
             <Polish>Przywołaj nosze</Polish>
-            <German>Trage einholen</German>
-            <Japanese>担架を収容する</Japanese>
-            <Chinese>收回擔架</Chinese>
-            <Chinesesimp>缩回担架</Chinesesimp>
             <Dutch>Trek brancard terug</Dutch>
+            <Spanish>Recoger Camilla</Spanish>
+            <Japanese>担架を収容する</Japanese>
+            <Italian>Ritirare la barella</Italian>
+            <French>Rétracter le brancard</French>
         </Key>
-        <Key ID="STR_KAT_Stretcher_StretcherPacked_Display">
-            <English>Stretcher (Packed)</English>
-            <Czech>Nosítka (Zabalená)</Czech>
-            <French>Civière (Emballée)</French>
-            <Spanish>Camilla (Plegada)</Spanish>
-            <Italian>Barella (Imballo)</Italian>
-            <Polish>Nosze (Zapakowane)</Polish>
-            <Portuguese>Maca (Embalada)</Portuguese>
-            <Russian>Носилки (упакованные)</Russian>
-            <German>Krankentrage (Gepackt)</German>
-            <Korean>들것 (포장되다)</Korean>
-            <Japanese>担架 (折り畳み)</Japanese>
-            <Chinese>擔架（已打包）</Chinese>
-            <Chinesesimp>担架（已打包）</Chinesesimp>
-            <Turkish>Sedye (Paketli)</Turkish>
-            <Finnish>Paarit (pakattu)</Finnish>
-            <Dutch>Brancard (verpakt)</Dutch>
+        <Key ID="STR_KAT_Stretcher_DetachHeliStretcher">
+            <English>Detach Stretcher</English>
+            <Polish>Odczep nosze</Polish>
+            <Dutch>Maak brancard los</Dutch>
+            <Spanish>Desanclar Camilla</Spanish>
+            <Japanese>担架を取り外す</Japanese>
+            <Italian>Staccare la barella</Italian>
+            <French>Détacher le brancard</French>
+        </Key>
+        <Key ID="STR_KAT_Stretcher_Helistretcher_Display">
+            <English>Attachable Helistretcher</English>
+            <Polish>Nosze śmigłowcowe</Polish>
+            <German>Anbringbare Helitrage</German>
+            <Spanish>Camilla de helicóptero adjuntable</Spanish>
+            <Chinese>可连接直升机</Chinese>
+            <Chinesesimp>可连接担架</Chinesesimp>
+            <Czech>Připevnitelná helinosítka</Czech>
+            <Korean>부착형 헬기용 들것</Korean>
+            <French>Hélicivière amovible </French>
+            <Turkish>Helitakılabilir sedye</Turkish>
+            <Italian>Elibarella agganciabile</Italian>
+            <Russian>Вы должны находиться в пределах 15 м от вертолета и посмотри на это!</Russian>
+            <Japanese>ヘリコプター用担架</Japanese>
+            <Portuguese>Maca de helicóptero acoplável</Portuguese>
+            <Finnish>Kiinnitettävä paarit helikoptereille</Finnish>
+            <Dutch>Bevestigbare helibrancard</Dutch>
+        </Key>
+        <Key ID="STR_KAT_Stretcher_Helistretcher_Desc">
+            <English>Allows you to attach a Stretcher to a helicopter (Double click)</English>
+            <Polish>Pozwala podczepić nosze do śmigłowca(Podwójne kliknięcie)</Polish>
+            <German>Ermöglicht das Anbringen einer Trage am Hubschrauber (Doppelklick)</German>
+            <Spanish>Le permite adjuntar una camilla a un helicóptero (doble clic)</Spanish>
+            <Chinese>允许您在直升机上附加担架（双击）</Chinese>
+            <Chinesesimp>允许您在直升机上附加担架（双击）</Chinesesimp>
+            <Czech>Umožňuje připevnit nosítka na helikoptéru(Dvojtým kliknutím)</Czech>
+            <Korean>헬기에 들것을 부착할 수 있습니다(더블 클릭)</Korean>
+            <French>Vous permet d'attacher une civière sur hélicoptère (double clic)</French>
+            <Turkish>Helikoptere sedye takmanızı sağlar(Çift tıklama)</Turkish>
+            <Italian>Consente di collegare una barella sull'elicottero (doppio clic)</Italian>
+            <Russian>Позволяет прикрепить носилки к вертолету (двойной щелчок)</Russian>
+            <Japanese>ヘリコプターに担架を取り付けることができます (ダブルクリック)</Japanese>
+            <Portuguese>Permite anexar uma maca a um helicóptero (clique duplo)</Portuguese>
+            <Finnish>Mahdollistaa paareiden kiinnittämisen helikopteriin (klikkaa kahdesti)</Finnish>
+            <Dutch>Staat je toe om een brancard aan een heli te bevestigen (dubbel klik)</Dutch>
         </Key>
         <Key ID="STR_KAT_Stretcher_Stretcher_Display">
             <English>Stretcher</English>
-            <Czech>Nosítka</Czech>
-            <French>Civière</French>
-            <Spanish>Camilla</Spanish>
-            <Italian>Barella</Italian>
-            <Polish>Nosze</Polish>
-            <Portuguese>Maca</Portuguese>
-            <Russian>Носилки</Russian>
-            <German>Krankentrage</German>
-            <Korean>들것</Korean>
             <Japanese>担架</Japanese>
             <Chinese>擔架</Chinese>
             <Chinesesimp>担架</Chinesesimp>
+            <Czech>Nosítka</Czech>
+            <French>Civière</French>
+            <German>Krankentrage</German>
+            <Italian>Barella</Italian>
+            <Korean>들것</Korean>
+            <Polish>Nosze</Polish>
+            <Russian>Носилки</Russian>
+            <Spanish>Camilla</Spanish>
             <Turkish>Sedye</Turkish>
+            <Portuguese>Maca</Portuguese>
             <Finnish>Paarit</Finnish>
             <Dutch>Brancard</Dutch>
         </Key>
+        <Key ID="STR_KAT_Stretcher_StretcherPacked_Display">
+            <English>Stretcher (Packed)</English>
+            <Japanese>担架 (折り畳み)</Japanese>
+            <Chinese>擔架（打包）</Chinese>
+            <Chinesesimp>担架（打包）</Chinesesimp>
+            <Czech>Nosítka (Zabalená)</Czech>
+            <French>Civière (Emballée)</French>
+            <German>Krankentrage (Gepackt)</German>
+            <Italian>Barella (Imballo)</Italian>
+            <Korean>들것 (포장되다)</Korean>
+            <Polish>Nosze (Zapakowane)</Polish>
+            <Russian>Носилки (упакованные)</Russian>
+            <Spanish>Camilla (Plegada)</Spanish>
+            <Turkish>Sedye (Paketli)</Turkish>
+            <Portuguese>Maca (Embalada)</Portuguese>
+            <Finnish>Paarit (pakattu)</Finnish>
+            <Dutch>Brancard (verpakt)</Dutch>
+        </Key>
+        <Key ID="STR_KAT_Stretcher_PackIntoBag">
+            <English>Pack into bag</English>
+            <Polish>Spakuj jako torba</Polish>
+            <Dutch>Verpak naar een tas</Dutch>
+            <Spanish>Empaquetar en bolsa</Spanish>
+            <Japanese>ランチャーとして畳む</Japanese>
+            <Italian>Mettere nella borsa</Italian>
+            <French>Emballer dans un sac</French>
+        </Key>
+        <Key ID="STR_KAT_Stretcher_PackIntoBackpack">
+            <English>Pack into backpack</English>
+            <Polish>Spakuj jako plecak</Polish>
+            <Dutch>Verpak naar een rugzak</Dutch>
+            <Spanish>Empaquetar en mochila</Spanish>
+            <Japanese>バックパックとして畳む</Japanese>
+            <Italian>Mettere nello zaino</Italian>
+            <French>Emballer dans un sac à dos</French>
+        </Key>
         <Key ID="STR_KAT_Stretcher_UnpackStretcher">
             <English>Deploy Stretcher</English>
-            <Czech>Rozložit nosítka</Czech>
-            <French>Déployer le brancard</French>
-            <Spanish>Desplegar Camilla</Spanish>
-            <Italian>Dispiegare la barella</Italian>
             <Polish>Rozstaw nosze</Polish>
-            <German>Trage aufbauen</German>
-            <Japanese>担架を展開する</Japanese>
-            <Chinese>部屬擔架</Chinese>
-            <Chinesesimp>展开担架</Chinesesimp>
             <Dutch>Ontplooi brancard</Dutch>
+            <Spanish>Desplegar Camilla</Spanish>
+            <Japanese>担架を展開する</Japanese>
+            <Italian>Dispiegare la barella</Italian>
+            <French>Déployer le brancard</French>
+        </Key>
+        <Key ID="STR_KAT_Stretcher_PlaceStretcher_progressBar">
+            <English>Placing Stretcher...</English>
+            <Polish>Rozkładanie noszy...</Polish>
+            <Dutch>Brancard wordt geplaatst</Dutch>
+            <Spanish>Colocando Camilla...</Spanish>
+            <Japanese>担架を設置しています・・・</Japanese>
+            <Italian>Posizionamento della barella...</Italian>
+            <French>Mise en place du brancard...</French>
+        </Key>
+        <Key ID="STR_KAT_Stretcher_PickupStretcher_progressBar">
+            <English>Packing Stretcher...</English>
+            <Polish>Pakowanie noszy...</Polish>
+            <Dutch>Brancard wordt verpakt</Dutch>
+            <Spanish>Empaquetando Camilla...</Spanish>
+            <Japanese>担架を折り畳んでいます・・・</Japanese>
+            <Italian>Imballaggio della barella...</Italian>
+            <French>Le brancard est emballé</French>
+        </Key>
+        <Key ID="STR_KAT_Stretcher_KAT_HeliStretcher">
+            <English>KAT Helistretcher</English>
+            <Dutch>KAT helibrancard</Dutch>
+            <Spanish>KAT Camilla de Helicóptero</Spanish>
+            <Japanese>KAT ヘリコプター用担架</Japanese>
+            <Italian>KAT Barella per elicotteri</Italian>
+            <French>Brancard d'hélicoptère KAT</French>
         </Key>
     </Package>
 </Project>

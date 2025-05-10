@@ -47,7 +47,7 @@ TRACE_1("clearConditionCaches: tourniquetRemove",_nearPlayers);
 private _occludedMedications = _patient getVariable [QACEGVAR(medical,occludedMedications), []];
 private _arrayModified = false;
 
-if (((_patient getVariable [QEGVAR(pharma,IV), [0,0,0,0,0,0]]) select _partIndex) isNotEqualTo 3) then {
+if !(((_patient getVariable [QEGVAR(pharma,IV), [0,0,0,0,0,0]]) select _partIndex) isEqualTo 3) then {
     {
         _x params ["_bodyPartN", "_medication"];
 

@@ -1,5 +1,5 @@
 #define COMPONENT circulation
-#define COMPONENT_BEAUTIFIED Circulation
+#define COMPONENT_BEAUTIFIED KAT - Circulation
 #include "\x\kat\addons\main\script_mod.hpp"
 #include "\x\kat\addons\gui\gui_defines.hpp"
 

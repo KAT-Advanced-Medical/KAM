@@ -1,5 +1,5 @@
-PREP(assemble_canDeployStretcher);
 PREP(assemble_deployStretcher);
+PREP(assemble_canDeployStretcher);
 PREP(attachHeliStretcher);
 PREP(attachStretcher);
 PREP(canAdjustRopes);

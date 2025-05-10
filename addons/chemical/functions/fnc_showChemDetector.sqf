@@ -2,7 +2,7 @@
 /*
  * Author: Garth 'L-H' de Wet
  * Modified: Mazinski
- * Displays the JCAD on screen.
+ * Displays the KWatch on screen.
  *
  * Arguments:
  * 0: unit <OBJECT>
@@ -11,7 +11,7 @@
  * None
  *
  * Example:
- * [player] call kat_chemical_fnc_showChemDetector
+ * [player] call kat_watch_fnc_showKWatch
  *
  * Public: Yes
  */
@@ -47,21 +47,30 @@ private _exposure = _display displayCtrl 18805;
         _pfhID call CBA_fnc_removePerFrameHandler;
     };
 
+    private _hour = floor dayTime;
+    private _minute = floor ((dayTime - _hour) * 60);
+
+    _time ctrlSetText (format ["%1:%2", [_hour, 2] call CBA_fnc_formatNumber, [_minute, 2] call CBA_fnc_formatNumber]);
+
     private _intensity = _unit getVariable [QGVAR(areaIntensity), 0];
 
-    if ((_unit getVariable [QGVAR(detectorEnabled), false])) then {
+    _exposure ctrlSetText (_intensity toFixed 2);
 
-        private _hour = floor dayTime;
-        private _minute = floor ((dayTime - _hour) * 60);
-    
-        _time ctrlSetText (format ["%1:%2", [_hour, 2] call CBA_fnc_formatNumber, [_minute, 2] call CBA_fnc_formatNumber]);
+    if (_intensity > 0) then {
+        private _lastSoundTime = _unit getVariable QGVAR(lastSoundTime);
+        _unit setVariable [QGVAR(areaIntensity), 0, true];
 
-        _exposure ctrlSetText (_intensity toFixed 2);
+        if (isNil "_lastSoundTime") then {
+            TRACE_1("undefined lastSoundTime: setting to current time",_lastSoundTime);
+            _unit setVariable [QGVAR(lastSoundTime), CBA_missionTime];
+        };
 
-        _unit setVariable [QGVAR(areaIntensity), _intensity, true];
+        if (CBA_missionTime - _lastSoundTime > 6) exitWith {
+            playSound3D [QPATHTOF(audio\chemDetector.ogg), _unit, false, getPosASL _unit, 4, 1, 10];
+            _unit setVariable [QGVAR(lastSoundTime), CBA_missionTime];
+        };
     } else {
-        _time ctrlSetText (LLSTRING(ChemicalDetector_Off));
-        _exposure ctrlSetText ("-.--");
+        _unit setVariable [QGVAR(areaIntensity), 0, true];
     };
 
 }, 1, [

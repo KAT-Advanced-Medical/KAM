@@ -28,7 +28,7 @@ params ["_target", "_player", "_newML"];
         private _value = [];
 
         // exit if _target isn't a valid IV stand
-        if ([_className, 0, 17] call BIS_fnc_trimString isNotEqualTo "Land_IntravenStand") exitWith {};
+        if !([_className, 0, 17] call BIS_fnc_trimString isEqualTo "Land_IntravenStand") exitWith {};
 
         // get some parameters
         private _newObjectClass = "";

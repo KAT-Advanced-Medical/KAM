@@ -2,131 +2,41 @@
 
 if (!hasInterface) exitWith {};
 
-#define CBA_SETTINGS_CAT LSTRING(cba_name)
-
-[QGVAR(startWatchTimer), LINKFUNC(startWatchTimer)] call CBA_fnc_addEventHandler;
-[QEGVAR(misc,handleRespawn), LINKFUNC(handleRespawn)] call CBA_fnc_addEventHandler;
-
-[QGVAR(playWatchTone), {
-    params ["_unit", "_tone"];
-    _unit say3D [_tone, 5];
-}] call CBA_fnc_addEventHandler;
-
-[CBA_SETTINGS_CAT, QGVAR(showKatmin), CSTRING(ShowKATWatch_Setting), {
+["KAT Watch", QGVAR(showKatmin), "Show Katmin", {
     // Conditions: canInteract
-    if (!([ACE_player, objNull, ["isNotEscorting", "isNotInside"]] call ACEFUNC(common,canInteractWith))) exitWith { false };
+    if (!([ACE_player, objNull, ["isNotEscorting", "isNotInside"]] call ACEFUNC(common,canInteractWith)) || {!('KAT_Katmin' in assignedItems ACE_player)}) exitWith { false };
 
-    private _return = false;
-
-    switch true do {
-        case (('KAT_Katmin' in assignedItems ACE_player)): {
-            _return = true;
-
-            if !(GETMVAR(GVAR(KatminActive),false)) then {
-                [ACE_player] call FUNC(showKWatch);
-            } else {
-                call FUNC(hideKWatch);
-            };
-        };
-        case (('KAT_Cavmin' in assignedItems ACE_player)): {
-            _return = true;
-
-            if !(GETMVAR(GVAR(CavminActive),false)) then {
-                [ACE_player] call FUNC(showCWatch);
-            } else {
-                call FUNC(hideCWatch);
-            };
-        };
-        case (('KAT_STS' in assignedItems ACE_player)): {
-            _return = true;
-
-            if !(GETMVAR(GVAR(STSActive),false)) then {
-                [ACE_player] call FUNC(showSWatch);
-            } else {
-                call FUNC(hideSWatch);
-            };
-        };
-        case (('KAT_Ranger' in assignedItems ACE_player)): {
-            _return = true;
-
-            if !(GETMVAR(GVAR(RangerActive),false)) then {
-                [ACE_player] call FUNC(showRWatch);
-            } else {
-                call FUNC(hideRWatch);
-            };
-        };
+    if !(GETMVAR(GVAR(KatminActive),false)) then {
+        [ACE_player] call FUNC(showKWatch);
+    } else {
+        call FUNC(hideKWatch);
     };
 
-    _return
+    true
 }, { false }, [24, [false, false, false]], false] call CBA_fnc_addKeybind;
 
-[CBA_SETTINGS_CAT, QGVAR(increaseTimer), CSTRING(AddTimer_Setting), {
-    if (!([ACE_player, objNull, ["isNotEscorting", "isNotInside"]] call ACEFUNC(common,canInteractWith)) || {!('KAT_Ranger' in assignedItems ACE_player)}) exitWith { false };
+["KAT Cav Watch", QGVAR(showCavmin), "Show Cavmin", {
+    // Conditions: canInteract
+    if (!([ACE_player, objNull, ["isNotEscorting", "isNotInside"]] call ACEFUNC(common,canInteractWith)) || {!('KAT_Cavmin' in assignedItems ACE_player)}) exitWith { false };
 
-    if !(GETMVAR(GVAR(RangerActive),false)) exitWith { false };
-
-    private _timerLength = ACE_player getVariable [QGVAR(rangerTimer), 0];
-
-    if (_timerLength < 999) then {
-        ACE_player setVariable [QGVAR(rangerTimer), ((_timerLength + 15) min 999), false];
+    if !(GETMVAR(GVAR(CavminActive),false)) then {
+        [ACE_player] call FUNC(showCWatch);
+    } else {
+        call FUNC(hideCWatch);
     };
 
     true
-}, { false }, [38, [false, false, true]], false] call CBA_fnc_addKeybind;
+}, { false }, [24, [false, false, false]], false] call CBA_fnc_addKeybind;
 
-[CBA_SETTINGS_CAT, QGVAR(decreaseTimer), CSTRING(SubtractTimer_Setting), {
-    if (!([ACE_player, objNull, ["isNotEscorting", "isNotInside"]] call ACEFUNC(common,canInteractWith)) || {!('KAT_Ranger' in assignedItems ACE_player)}) exitWith { false };
+["KAT STS Watch", QGVAR(showSTS), "Show STS", {
+    // Conditions: canInteract
+    if (!([ACE_player, objNull, ["isNotEscorting", "isNotInside"]] call ACEFUNC(common,canInteractWith)) || {!('KAT_STS' in assignedItems ACE_player)}) exitWith { false };
 
-    if !(GETMVAR(GVAR(RangerActive),false)) exitWith { false };
-
-    private _timerLength = ACE_player getVariable [QGVAR(rangerTimer), 0];
-
-    if (_timerLength > 0) then {
-        ACE_player setVariable [QGVAR(rangerTimer), ((_timerLength - 15) max 0), false];
+    if !(GETMVAR(GVAR(STSActive),false)) then {
+        [ACE_player] call FUNC(showSWatch);
+    } else {
+        call FUNC(hideSWatch);
     };
 
     true
-}, { false }, [36, [false, false, true]], false] call CBA_fnc_addKeybind;
-
-[CBA_SETTINGS_CAT, QGVAR(startTimer), CSTRING(StartStopTimer_Setting), {
-    if (!([ACE_player, objNull, ["isNotEscorting", "isNotInside"]] call ACEFUNC(common,canInteractWith)) || {!('KAT_Ranger' in assignedItems ACE_player)}) exitWith { false };
-
-    private _timerLength = ACE_player getVariable [QGVAR(rangerTimer), 0];
-    private _timerActive = ACE_player getVariable [QGVAR(rangerStart), false];
-
-    if (_timerLength > 0) then {
-        if (_timerActive) then {
-            ACE_player setVariable [QGVAR(rangerStart), false, false];
-        } else {
-            ACE_player setVariable [QGVAR(rangerStart), true, false];
-            [QGVAR(startWatchTimer), [ACE_player], ACE_player] call CBA_fnc_targetEvent;
-        };
-    };
-
-    true
-}, { false }, [37, [false, false, true]], false] call CBA_fnc_addKeybind;
-
-[CBA_SETTINGS_CAT, QGVAR(katminTimeKey), CSTRING(TimeModifier_Settings), {
-    switch true do {
-        case (('KAT_Katmin' in assignedItems ACE_player)): {
-            private _katminSeconds = ACE_player getVariable [QGVAR(katminSeconds), false];
-
-            if (_katminSeconds) then {
-                ACE_player setVariable [QGVAR(katminSeconds),false,true];
-            } else {
-                ACE_player setVariable [QGVAR(katminSeconds),true,true];
-            };
-        };
-        case (('KAT_Ranger' in assignedItems ACE_player)): {
-            private _rangerHands = ACE_player getVariable [QGVAR(rangerHands), false];
-
-            if (_rangerHands) then {
-                ACE_player setVariable [QGVAR(rangerHands),false,true];
-            } else {
-                ACE_player setVariable [QGVAR(rangerHands),true,true];
-            };
-        };
-    };
-
-    true
-}, { false }, [25, [false, false, true]], false] call CBA_fnc_addKeybind;
+}, { false }, [24, [false, false, false]], false] call CBA_fnc_addKeybind;

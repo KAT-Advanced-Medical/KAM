@@ -35,7 +35,6 @@ class CfgWeapons {
         descriptionShort = CSTRING(ChemicalDetectorDescription);
         displayName = CSTRING(ChemicalDetectorDisplayName);
         picture = QPATHTOF(UI\kat_chemicalDet_icon.paa);
-        model = "\a3\Weapons_F_Enoch\Items\ChemicalDetector_01_F.p3d";
     };
 
     class CannonCore;

@@ -41,7 +41,7 @@ ACELLSTRING(Interaction,MainAction),
 {
     params ["_vehicle", "_medic", "_args"];
 
-    (_medic getVariable [QACEGVAR(dragging,carriedObject), objNull] isNotEqualTo objNull) && {_medic getVariable [QACEGVAR(dragging,carriedObject), objNull] isKindOf 'CAManBase'}
+    !(_medic getVariable [QACEGVAR(dragging,carriedObject), objNull] isEqualTo objNull) && {_medic getVariable [QACEGVAR(dragging,carriedObject), objNull] isKindOf 'CAManBase'}
 },
 {
     params ["_vehicle", "_medic", "_args"];

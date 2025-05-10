@@ -52,11 +52,11 @@ switch (_source) do {
         [{ // Disconnect monitoring if patient gets too far
             params ["_medic", "_patient", "_provider"];
 
-            (_patient distance _provider) > GVAR(Defibrillator_DistanceLimit) || ((objectParent _medic) isNotEqualTo (objectParent _patient));
+            (_patient distance _provider) > GVAR(Defibrillator_DistanceLimit) || !((objectParent _medic) isEqualTo (objectParent _patient));
         }, {
             params ["_medic", "_patient", "_provider"];
 
-            if (_patient isNotEqualTo objNull) then {
+            if !(_patient isEqualTo objNull) then {
                 if (_patient getVariable [QGVAR(AED_X_VitalsMonitor_Connected), false]) then {
                     [_medic, _patient] call FUNC(AEDX_DisconnectVitalsMonitor);
                     if !(_patient getVariable [QGVAR(DefibrillatorPads_Connected), false]) then {
@@ -76,11 +76,11 @@ switch (_source) do {
         [{ // Disconnect monitoring if patient exits vehicle
             params ["_medic", "_patient", "_provider"];
 
-            ((objectParent _patient) isNotEqualTo _provider);
+            !((objectParent _patient) isEqualTo _provider);
         }, {
             params ["_medic", "_patient", "_provider"];
 
-            if (_patient isNotEqualTo objNull) then {
+            if !(_patient isEqualTo objNull) then {
                 [_medic, _patient] call FUNC(AEDX_DisconnectVitalsMonitor);
 
                 if ((objectParent _medic) isEqualTo _provider && !(_patient getVariable [QGVAR(DefibrillatorPads_Connected), false])) then {
@@ -97,11 +97,11 @@ switch (_source) do {
         [{ // Disconnect monitoring if patient gets too far
             params ["_medic", "_patient"];
 
-            (_patient distance _medic) > GVAR(Defibrillator_DistanceLimit) || ((objectParent _medic) isNotEqualTo (objectParent _patient));
+            (_patient distance _medic) > GVAR(Defibrillator_DistanceLimit) || !((objectParent _medic) isEqualTo (objectParent _patient));
         }, {
             params ["_medic", "_patient"];
 
-            if (_patient isNotEqualTo objNull) then {
+            if !(_patient isEqualTo objNull) then {
                 if (_patient getVariable [QGVAR(AED_X_VitalsMonitor_Connected), false]) then {
                     [_medic, _patient] call FUNC(AEDX_DisconnectVitalsMonitor);
                     if !(_patient getVariable [QGVAR(DefibrillatorPads_Connected), false]) then {

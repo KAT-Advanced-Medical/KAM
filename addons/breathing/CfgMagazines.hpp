@@ -47,11 +47,11 @@ class CfgMagazines {
         picture = QPATHTOF(ui\oxygenTank.paa);
         
         ammo = "";
-        count = 30;
+        count = 60;
         initSpeed = 0;
         tracersEvery = 0;
         lastRoundsTracer = 0;
-        mass = 5;
+        mass = 3;
         ACE_isMedicalItem = 1;
         ACE_asItem = 1;
     };

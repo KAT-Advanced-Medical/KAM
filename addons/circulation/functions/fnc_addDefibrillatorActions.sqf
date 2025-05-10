@@ -24,7 +24,7 @@ private _actions = [];
 switch (_type) do { // AED-X pads
     case 1: {
         {
-            if (_x isNotEqualTo _medic) then {
+            if !(_x isEqualTo _medic) then {
                 _actions pushBack [[format ["KAT_AEDX_PlacePads_%1", _x],
                 [_x, true] call ACEFUNC(common,getName),
                 "",
@@ -48,7 +48,7 @@ switch (_type) do { // AED-X pads
     };
     case 2: { // AED-X vitals monitoring (to)
         {
-            if (_x isNotEqualTo _medic) then {
+            if !(_x isEqualTo _medic) then {
                 _actions pushBack [[format ["KAT_AEDX_ConnectVitalsMonitorTo_%1", _x],
                 [_x, true] call ACEFUNC(common,getName),
                 "",
@@ -149,7 +149,7 @@ switch (_type) do { // AED-X pads
     };
     default { // AED pads
         {
-            if (_x isNotEqualTo _medic) then {
+            if !(_x isEqualTo _medic) then {
                 _actions pushBack [[format ["KAT_AED_PlacePads_%1", _x],
                 [_x, true] call ACEFUNC(common,getName),
                 "",

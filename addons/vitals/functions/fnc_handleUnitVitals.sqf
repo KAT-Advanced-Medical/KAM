@@ -67,7 +67,7 @@ if (_hemorrhage != GET_HEMORRHAGE(_unit)) then {
 };
 
 private _inPain = GET_PAIN_PERCEIVED(_unit) > 0;
-if (_inPain isNotEqualTo IS_IN_PAIN(_unit)) then {
+if !(_inPain isEqualTo IS_IN_PAIN(_unit)) then {
     _unit setVariable [VAR_IN_PAIN, _inPain, true];
 };
 
@@ -91,12 +91,13 @@ private _peripheralResistanceAdjustment = 0;
 private _alphaFactorAdjustment = 0;
 private _opioidAdjustment = 0;
 private _opioidEffectAdjustment = 0;
+private _opioidDepressionAdjustment = 0;
 private _adjustments = _unit getVariable [VAR_MEDICATIONS,[]];
 
-if (_adjustments isNotEqualTo []) then {
+if !(_adjustments isEqualTo []) then {
     private _deleted = false;
     {
-        _x params ["_medication", "_timeAdded", "_timeTillMaxEffect", "_maxTimeInSystem", "_hrAdjust", "_painAdjust", "_flowAdjust", "_alphaFactor", "_opioidRelief", "_opioidEffect"];
+        _x params ["_medication", "_timeAdded", "_timeTillMaxEffect", "_maxTimeInSystem", "_hrAdjust", "_painAdjust", "_flowAdjust", "_alphaFactor", "_opioidRelief", "_opioidEffect", "_opioidDepression", "_respiratoryRate"];
         private _timeInSystem = CBA_missionTime - _timeAdded;
         if (_timeInSystem >= _maxTimeInSystem) then {
             _deleted = true;
@@ -109,6 +110,8 @@ if (_adjustments isNotEqualTo []) then {
             if (_alphaFactor != 0) then { _alphaFactorAdjustment = _alphaFactorAdjustment + _alphaFactor * _effectRatio; };
             if (_opioidRelief != 0) then {_opioidAdjustment = _opioidAdjustment + _opioidRelief * _effectRatio; };
             if (_opioidEffect != 0) then {_opioidEffectAdjustment = _opioidEffectAdjustment + _opioidEffect * _effectRatio; };
+            if (_opioidDepression != 0) then {_opioidDepressionAdjustment = _opioidAdjustment + _opioidDepression * _effectRatio; };
+            if (_respiratoryRate != 0) then {_respiratoryRateAdjustment = _respiratoryRateAdjustment + _respiratoryRate * _effectRatio; };
         };
     } forEach _adjustments;
 
@@ -122,30 +125,27 @@ if (_adjustments isNotEqualTo []) then {
 [_unit, _peripheralResistanceAdjustment, _deltaT, _syncValues] call ACEFUNC(medical_vitals,updatePeripheralResistance);
 [_unit, _opioidAdjustment, _deltaT, _syncValues] call FUNC(updateOpioidRelief);
 [_unit, _opioidEffectAdjustment, _deltaT, _syncValues] call FUNC(updateOpioidEffect);
+[_unit, _opioidDepressionAdjustment, _deltaT, _syncValues] call FUNC(updateOpioidDepression);
+[_unit, _respiratoryRateAdjustment, _deltaT, _syncValues] call FUNC(updateRespiratoryRate);
 [_unit, POISON_DECREASE, _deltaT, _syncValues] call FUNC(handlePoisoning);
 
-private _aceAnFatigue = 0;
-if (_unit getVariable [QGVAR(fatigueEnabled), false]) then {
-    _aceAnFatigue = [_unit] call FUNC(returnFatigue);
-};
-
-private _heartRate = [_unit, _hrTargetAdjustment, 0, _bloodVolume, _aceAnFatigue, _deltaT, _syncValues] call FUNC(handleCardiacFunction);
+private _heartRate = [_unit, _hrTargetAdjustment, 0, _bloodVolume, _deltaT, _syncValues] call FUNC(handleCardiacFunction);
 
 private _spo2 = 97;
 if (EGVAR(breathing,enable)) then {
     // Additional variables for Respiration functions
     private _bloodGas = GET_BLOOD_GAS(_unit);
-    private _opioidDepression = GET_OPIOID_FACTOR(_unit);
+    private _opioidDepression = GET_OPIOID_DEPRESSION(_unit);
     private _anerobicPressure = (DEFAULT_ANEROBIC_EXCHANGE * (6 / (_bloodVolume max 6))) min 1.2;
 
-    _spo2 = [_unit, _heartRate, _anerobicPressure, _bloodGas, _temperature, _baroPressure, _opioidDepression, _aceAnFatigue, _deltaT, _syncValues] call FUNC(handleOxygenFunction);
+    _spo2 = [_unit, _heartRate, _anerobicPressure, _bloodGas, _temperature, _baroPressure, _opioidDepression, _deltaT, _syncValues] call FUNC(handleOxygenFunction);
 };
-
-private _woundBloodLoss = GET_WOUND_BLEEDING(_unit);
 
 // Vasoconstriction from Wound Blood Loss and Alpha Adjustment
 _vasoconstriction = 1 + (0.5 * _woundBloodLoss) + _alphaFactorAdjustment;
 _unit setVariable [VAR_VASOCONSTRICTION, (1.8 min (0.2 max _vasoconstriction)), _syncValues];
+
+private _woundBloodLoss = GET_WOUND_BLEEDING(_unit);
 
 private _bloodPressure = [_unit] call EFUNC(circulation,getBloodPressure);
 _unit setVariable [VAR_BLOOD_PRESS, _bloodPressure, _syncValues];
@@ -158,7 +158,7 @@ switch (true) do {
         TRACE_3("O2 Fatal",_unit,EGVAR(breathing,SpO2_dieValue),_spo2);
         [_unit, "Fatal_Blood_Oxygen"] call ACEFUNC(medical_status,setDead);
     };
-    case ((_bloodVolume + GET_REBOA_VOLUME(_unit)) < BLOOD_VOLUME_FATAL): {
+    case (_bloodVolume < BLOOD_VOLUME_FATAL): {
         TRACE_3("BloodVolume Fatal",_unit,BLOOD_VOLUME_FATAL,_bloodVolume);
         [QACEGVAR(medical,Bleedout), _unit] call CBA_fnc_localEvent;
     };
@@ -166,11 +166,11 @@ switch (true) do {
     case ((_spo2 < EGVAR(breathing,SpO2_cardiacValue)) && EGVAR(breathing,SpO2_cardiacActive)): {
         [QACEGVAR(medical,FatalVitals), _unit] call CBA_fnc_localEvent;
     };
-    case ((_bloodVolume + GET_REBOA_VOLUME(_unit)) < BLOOD_VOLUME_CLASS_4_HEMORRHAGE): {
+    case (_hemorrhage == 4): {
         TRACE_3("Class IV Hemorrhage",_unit,_hemorrhage,_bloodVolume);
         [QACEGVAR(medical,FatalVitals), _unit] call CBA_fnc_localEvent;
     };
-    case (_heartRate < 20 || {(_heartRate - (_aceAnFatigue / 40)) > 220}): {
+    case (_heartRate < 20 || {_heartRate > 220}): {
         TRACE_2("heartRate Fatal",_unit,_heartRate);
         [QACEGVAR(medical,FatalVitals), _unit] call CBA_fnc_localEvent;
     };

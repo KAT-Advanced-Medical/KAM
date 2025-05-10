@@ -19,14 +19,8 @@
 params ["_medic", "_patient"];
 
 private _ht = _patient getVariable [QEGVAR(circulation,ht), []];
-private _effusion = _patient getVariable [QEGVAR(circulation,effusion), 0];
+_ht deleteAt (_ht find "tamponade");
+_patient setVariable [QEGVAR(circulation,ht), _ht, true];
 
-if (_effusion == 0) then {
-    [_patient] call EFUNC(breathing,createTamponade);
-} else {
-    _ht deleteAt (_ht find "tamponade");
-    _patient setVariable [QEGVAR(circulation,ht), _ht, true];
-
-    _patient setVariable [QEGVAR(circulation,effusion), 0, true];
-    _patient setVariable [QGVAR(imaging), false, true];
-};
+_patient setVariable [QEGVAR(circulation,effusion), 0, true];
+_patient setVariable [QGVAR(imaging), false, true];

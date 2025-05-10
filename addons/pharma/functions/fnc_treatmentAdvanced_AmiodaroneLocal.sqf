@@ -1,6 +1,6 @@
 #include "..\script_component.hpp"
 /*
- * Author: Mazinski.H, Edited by MiszczuZPolski
+ * Author: Mazinski.H, Edited by MiszczuZPolski and Cplhardcore
  * Applies Bradycardia randomly
  *
  * Arguments:
@@ -14,10 +14,10 @@
  *
  * Public: No
  */
-
 params ["_patient"];
 systemChat str "AmiodaroneLocal";
 private _random = random 3;
 if (_random <= 1) then {
-    [_patient, "BRADYCARDIA", 120, 1200, -40, 0, 0] call ACEFUNC(medical_status,addMedicationAdjustment);
+    private _hrAdjust = -50 + floor random ((-30 - -50) + 1);
+    [_patient, "BRADYCARDIA", 120, 1200, _hrAdjust, "", "", "", "", ""] call EFUNC(vitals,addMedicationAdjustment);
 };

@@ -56,7 +56,7 @@ private _containerFAK = "";
     };
 } forEach _ammoCount;
 
-if (_highestAmmoCount <= -1) exitWith {};
+if !(_highestAmmoCount > -1) exitWith {};
 
 private _FAKToAdd = "";
 private _itemList = [];

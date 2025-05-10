@@ -16,6 +16,7 @@
  */
 
 params ["_patient"];
+systemChat str "flumanzinilLocal";
 _patient setVariable [QEGVAR(surgery,sedated), false, true];
 private _medications = _patient getVariable [QACEGVAR(medical,medications), []];
 if (_medications findIf {_x isEqualTo "Lorazepam"} != -1) exitWith {

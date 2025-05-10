@@ -27,6 +27,7 @@ private _IVarray = _patient getVariable [QGVAR(IV), [0,0,0,0,0,0]];
 private _IVactual = _IVarray select _partIndex;
 private _IVpfh = _patient getVariable [QGVAR(IVpfh), [0,0,0,0,0,0]];
 private _IVpfhActual = _IVpfh select _partIndex;
+private _IVrate = _patient getVariable [QGVAR(IVrate), [0,0,0,0,0,0]];
 
 if (_IVpfhActual > 0) then {
     [_IVpfhActual] call CBA_fnc_removePerFrameHandler;
@@ -112,12 +113,12 @@ switch (_usedItem) do {
         ) then {
             [_patient, [0.6, 0.7, 0.8] select (floor random 3)] call ACEFUNC(medical_status,adjustPainLevel);
         };
-    [_patient, "activity", LSTRING(iv_log), [[_medic] call ACEFUNC(common,getName), "FAST IO"]] call ACEFUNC(medical_treatment,addToLog);
-    [_patient, "FAST IO"] call ACEFUNC(medical_treatment,addToTriageCard);
-    };
+        [_patient, "activity", LSTRING(iv_log), [[_medic] call ACEFUNC(common,getName), "FAST IO"]] call ACEFUNC(medical_treatment,addToLog);
+        [_patient, "FAST IO"] call ACEFUNC(medical_treatment,addToTriageCard);};
+    default {};
 };
 
-if (GVAR(IVdropEnable) && (_usedItem isEqualTo "kat_IV_16")) then {
+if (GVAR(IVdropEnable) && ((_usedItem isEqualTo "kat_IV_16") || (_usedItem isEqualTo "kat_IV_14") || (_usedItem isEqualTo "kat_IV_20"))) then {
     [{
         params ["_patient", "_partIndex", "_IVpfhActual"];
 
@@ -141,10 +142,11 @@ if (GVAR(IVdropEnable) && (_usedItem isEqualTo "kat_IV_16")) then {
                     private _IVactual = _IVarray select _partIndex;
 
                     if(GVAR(IVreuse)) then {
-                        if (_IVactual == 1) then {
-                            _patient addItem "kat_IO_FAST";
-                        } else {
-                            _patient addItem "kat_IV_16";
+                        switch (_IVactual) do {
+                        case "1": {_patient addItem "kat_IO_FAST"};
+                        case "2": {_patient addItem "kat_IV_16"};
+                        case "3": {_patient addItem "kat_IV_14"};
+                        case "4": {_patient addItem "kat_IV_20"};
                         };
                     };
 
