@@ -54,16 +54,24 @@ if (IN_CRDC_ARRST(_unit)) then {
     // Ventilatory Demand comes from Heart Rate with increase demand from PaCO2 levels 
     _demandVentilation = ((((_actualHeartRate * HEART_RATE_CO2_MULTIPLIER) / _anerobicPressure) + ((_previousCyclePaco2 - DEFAULT_PACO2) * 200)) max MINIMUM_VENTILATION);
 
-    // Tidal Volume is modified by respiratory depth which can be supressed by opioids and pneumothroax
-    _respiratoryDepth = [((DEFAULT_RESPIRATORY_DEPTH / 10) - (_opioidDepression / 1.5)), 10] select (_unit getVariable [QEGVAR(breathing,BVMInUse), false]);
-    private _tidalVolume = GET_KAT_SURFACE_AREA(_unit) * (_respiratoryDepth / 1);
+    // Respiratory Rate is supressed by Opioids 
     
-    // Respiratory Rate Calculation
-    _respiratoryRate = [((_demandVentilation / _tidalVolume) * _respiratoryRateMult) min MAXIMUM_RR, 20] select (_unit getVariable [QEGVAR(breathing,BVMInUse), false]);
+    _respiratoryDepth = [((DEFAULT_RESPIRATORY_DEPTH) - (_opioidDepression / 1.5)), 10] select (_unit getVariable [QEGVAR(breathing,BVMInUse), false]);
+    private _baseTidalVolume = GET_KAT_SURFACE_AREA(_unit) * (_respiratoryDepth / 10);
 
+    _respiratoryRate = [(((_demandVentilation / _tidalVolume)) min MAXIMUM_RR)* _respiratoryRateMult, 20] select (_unit getVariable [QEGVAR(breathing,BVMInUse), false]);
+    
     // If respiratory rate is low due to PaCO2, it starts increasing faster to compensate
     if (_previousCyclePaco2 > 50) then { _respiratoryRate = (_respiratoryRate + ((_previousCyclePaco2 - 50) * 0.2)) min MAXIMUM_RR};
 
+    private _tidalVolume = _baseTidalVolume;
+    if (_respiratoryRate > 20) then {
+    private _excessRR = _respiratoryRate - 25;
+    private _scaleFactor = 1 - (0.03 * _excessRR);  // reduces ~1.5% per breath over 25
+    _tidalVolume = _baseTidalVolume * (_scaleFactor max 0.5); // never drops below 50% of base
+    };
+    // If respiratory rate is low due to PaCO2, it starts increasing faster to compensate
+    
     _actualVentilation = _tidalVolume * _respiratoryRate;
 };
 

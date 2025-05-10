@@ -320,6 +320,10 @@
 #define GET_ETCO2(unit)                ((unit getVariable [VAR_BLOOD_GAS, DEFAULT_BLOOD_GAS]) select 5)
 #define GET_BREATHING_RATE(unit)       (unit getVariable [VAR_BREATHING_RATE, 15])
 
+#define VAR_RESPIRATORY_DEPTH           QEGVAR(vitals,respiratoryDepth)
+#define GET_KAT_RESPIRATORY_DEPTH(unit)      (unit getVariable [QEGVAR(vitals,respiratoryDepth), 10])
+
+
 // Circulation
 #define VAR_INTERNAL_BLEEDING          QEGVAR(circulation,internalBleeding)
 #define GET_INTERNAL_BLEEDING(unit)    (unit getVariable [VAR_INTERNAL_BLEEDING, 0])
