@@ -43,23 +43,25 @@
         </Key>
         <Key ID="STR_KAT_Vitals_SIMPLEMED_ENABLE">
             <English>Activate AI Simple Medical</English>
-            <Dutch>Activeer AI/KI versimpeld medisch</Dutch>
-            <Spanish>Activar Médico Simple para IA</Spanish>
-            <Japanese>AI用単純化医療を有効化</Japanese>
-            <Italian>Attiva AI Simple Medical</Italian>
+            <Czech>Aktivovat AI Simple Medical</Czech>
             <French>Simplifier la médecine pour l'IA.</French>
+            <Spanish>Activar Médico Simple para IA</Spanish>
+            <Italian>Attiva AI Simple Medical</Italian>
+            <German>Vereinfachte med. Simulation für KI</German>
+            <Japanese>AI用単純化医療を有効化</Japanese>
+            <Chinese>啟用AI簡易醫療</Chinese>
+            <Chinesesimp>启用AI简易医疗</Chinesesimp>
+            <Dutch>Activeer AI/KI versimpeld medisch</Dutch>
         </Key>
         <Key ID="STR_KAT_Vitals_SIMPLEMED_ENABLE_DESC">
             <English>Apply simplified vital calculations to the AI unit. Which can be useful for saving FPS.</English>
-            <Japanese>単純化されたバイタル計算をAIユニットに適用します。 これは負荷の軽減に役立つ可能性があります。</Japanese>
-            <Italian>Applica calcoli vitali semplificati all'unità AI. Che può essere utile per salvare FPS.</Italian>
+            <Czech>Aplikujte zjednodušené životně důležité výpočty na AI jednotky. Může být užitečné pro úsporu FPS.</Czech>
             <French>Appliquer des calculs vitaux simplifiés à l'unité AI. Ce qui peut être utile pour économiser des FPS.</French>
-        </Key>
-        <Key ID="STR_KAT_Vitals_FLUID_SHIFT">
-            <English>Enable Patient Fluid Shift</English>
-            <Japanese>患者の体液移動を有効化</Japanese>
-            <Italian>Abilita lo spostamento del fluido del paziente</Italian>
-            <French>Permettre le transfert de fluide du patient</French>
+            <Italian>Applica calcoli vitali semplificati all'unità AI. Che può essere utile per salvare FPS.</Italian>
+            <German>Vereinfachte Vital-Simulation bei KI-Einheiten. Reduziert Leistungsaufwand.</German>
+            <Japanese>単純化されたバイタル計算をAIユニットに適用します。 これは負荷の軽減に役立つ可能性があります。</Japanese>
+            <Chinese>將簡化的生命體徵計算應用於AI單位，這可以幫助節省FPS。</Chinese>
+            <Chinesesimp>将简化的生命体征计算应用于AI单位，这可以帮助节省FPS。</Chinesesimp>
         </Key>
         <Key ID="STR_KAT_Vitals_basicDiagnostic_Log">
             <English>%1 - %2</English>
