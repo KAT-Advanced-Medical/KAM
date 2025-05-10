@@ -1,4 +1,5 @@
-class CfgWeapons {
+class CfgWeapons
+{
     class ACE_ItemCore;
     class CBA_MiscItem_ItemInfo;
 
@@ -16,7 +17,8 @@ class CfgWeapons {
     };
 
     class NVGoggles;
-    class kat_eyecovers_right: NVGoggles {
+    class kat_eyecovers_right: NVGoggles
+    {
         author = "MrAdrianPL";
         displayName = CSTRING(EyeCover_Right);
         scope = 2;
@@ -28,7 +30,8 @@ class CfgWeapons {
         hiddenSelections[] = {"eye_l","eye_r"};
         hiddenSelectionsTextures[] = {"",QPATHTOF(models\eyecovers\camo1_ca.paa)};
         visionMode[] = {};
-        class ItemInfo {
+        class ItemInfo
+        {
             type = 616;
             hiddenSelections[] = {"eye_l","eye_r"};
             uniformModel = QPATHTOF(models\eyecovers\kat_eyecovers.p3d);
@@ -36,7 +39,8 @@ class CfgWeapons {
             mass = 0.1;
         };
     };
-    class kat_eyecovers_left: kat_eyecovers_right {
+    class kat_eyecovers_left: kat_eyecovers_right
+    {
         displayName = CSTRING(EyeCover_Left);
         ace_nightvision_border = QPATHTOF(ui\LeftEyeNVG.paa);
         modelOptics = "\A3\Weapons_F\empty.p3d";

@@ -19,12 +19,10 @@ params ["_target"];
 
 // CamShake effect
 [{
-    params ["_target"];
     if !(alive _target) exitWith {};
     [LLSTRING(Pervitin_chrom2), 2, _target] call ACEFUNC(common,displayTextStructured);
     addCamShake[1, 180, 2]; // wearoff after 9m
     [{
-        params ["_target"];
         [LLSTRING(Pervitin_chrom3), 2, _target] call ACEFUNC(common,displayTextStructured);
     },
     [_target], 180] call CBA_fnc_waitAndExecute;

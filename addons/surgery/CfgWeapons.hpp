@@ -71,6 +71,7 @@ class CfgWeapons {
         scope = 2;
         displayName = CSTRING(Reboa_DescShort); //Not an error - it has the same description as display name
         picture = QPATHTOF(ui\reboa.paa);
+        model = "\A3\Structures_F_Heli\Items\Electronics\HDMICable_01_F.p3d";
         descriptionShort = CSTRING(Reboa_DescShort);
         class ItemInfo: CBA_MiscItem_ItemInfo {
             mass = 1;

@@ -57,7 +57,7 @@ if (_initial) then {
         _cardiacArrestType = 2;
     };
 
-    private _nitroCount = ([_unit, "Nitroglycerin", false] call ACEFUNC(medical_status,getMedicationCount)) select 1;
+    private _nitroCount = ([_patient, "Nitroglycerin", false] call ACEFUNC(medical_status,getMedicationCount)) select 1;
 
     if ((_nitroCount < 0.5) && ((random 3) < 1)) then {
         _cardiacArrestType = 2;

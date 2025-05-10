@@ -223,7 +223,7 @@ class CfgWeapons {
             mass = 0.5;
         };
     };
-    class kat_lorazepam: ACE_ItemCore {
+        class kat_lorazepam: ACE_ItemCore {
         scope = 2;
         displayName = CSTRING(Lorazepam_displayName);
         picture = QPATHTOF(ui\icon_lorazepam.paa);

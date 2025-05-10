@@ -293,7 +293,6 @@
             <French>Paramètres de l'hypothermie</French>
             <Japanese>低体温症設定</Japanese>
             <German>Hypothermieeinstellungen</German>
-            <Italian>Impostazioni Ipotermia</Italian>
         </Key>
         <Key ID="STR_KAT_Hypothermia_Use_Handwarmer">
             <English>Use Hand Warmer</English>
@@ -330,7 +329,6 @@
             <Japanese>KAM - 低体温症 (Hypothermia)</Japanese>
             <French>KAT - ADV Medical : Hypothermie</French>
             <German>KAT - ADV Medical: Hypothermie</German>
-            <Italian>KAT - ADV Medica: Ipotermia</Italian>
         </Key>
         <Key ID="STR_KAT_Hypothermia_perform">
             <English>Performing</English>
@@ -349,7 +347,7 @@
             <Czech>Pacient je mimořádně studený</Czech>
             <French>Le patient a une sensation de froid intense</French>
             <Spanish>El paciente se siente realmente frío</Spanish>
-            <Italian>Senti il paziente notevolmente freddo</Italian>
+            <Italian>Il paziente sente notevolmente freddo</Italian>
             <German>Der Patient fühlt sich kalt an</German>
             <Japanese>患者は著しく冷たい</Japanese>
             <Chinese>患者感到非常寒冷</Chinese>
@@ -361,7 +359,7 @@
             <Czech>Pacient je středně studený</Czech>
             <French>Le patient a modérément froid</French>
             <Spanish>El paciente se siente moderadamente frío</Spanish>
-            <Italian>Senti il paziente moderatamente freddo</Italian>
+            <Italian>Il paziente sente moderatamente freddo</Italian>
             <German>Der Patient fühlt sich mäßig kalt an</German>
             <Japanese>患者は少し冷たい</Japanese>
             <Chinese>患者感到有些寒冷</Chinese>
@@ -373,7 +371,7 @@
             <Czech>Pacient je ztuhlý</Czech>
             <French>Le patient se sent frigorifié</French>
             <Spanish>El paciente se siente frígido</Spanish>
-            <Italian>Senti il paziente gelato</Italian>
+            <Italian>Il paziente sente gelato</Italian>
             <German>Der Patient fühlt sich sehr kalt an</German>
             <Japanese>患者は凍ったように冷たい</Japanese>
             <Chinese>患者感到極度寒冷</Chinese>
@@ -387,14 +385,13 @@
             <Japanese>患者は熱を帯びている</Japanese>
             <Chinese>患者覺得熱</Chinese>
             <German>Der Patient fühlt sich heiß an</German>
-            <Italian>Senti il paziente bollente</Italian>
         </Key>
         <Key ID="STR_KAT_Hypothermia_temperature_mild">
             <English>Patient feels mildly cool</English>
             <Czech>Pacient je mírně chladný</Czech>
             <French>Le patient ressent une légère fraîcheur</French>
             <Spanish>El paciente se siente algo frío</Spanish>
-            <Italian>Senti il paziente lievemente fresco</Italian>
+            <Italian>Il paziente sente lievemente fresco</Italian>
             <German>Der Patient fühlt sich leicht kühl an</German>
             <Japanese>患者は少しひんやりしている</Japanese>
             <Chinese>患者感到稍微涼爽</Chinese>
@@ -406,7 +403,7 @@
             <Czech>Pacient je teplý</Czech>
             <French>Le patient ressent de la chaleur</French>
             <Spanish>El paciente se siente cálido</Spanish>
-            <Italian>Senti il paziente caldo</Italian>
+            <Italian>Il paziente sente caldo</Italian>
             <German>Der Patient fühlt sich warm an</German>
             <Japanese>患者は暖かい</Japanese>
             <Chinese>患者感到溫暖</Chinese>

@@ -34,7 +34,7 @@ if !(GVAR(coagulation)) exitWith {};
     };
 
     if (GET_BLOOD_VOLUME_LITERS(_unit) < GVAR(coagulation_requireBV)) exitWith {}; // Blood volume check
-    if ((GET_HEART_RATE(_unit) < 20) && GVAR(coagulation_requireHR)) exitWith {}; // Has pulse & require setting
+    if ((_pulse < 20) && GVAR(coagulation_requireHR)) exitWith {}; // Has pulse & require setting
 
     private _currentCoagFactors = _unit getVariable [QGVAR(coagulationFactor), 30];
     private _savedCoagFactors = _unit getVariable [QGVAR(coagulationSavedFactors), (_unit getVariable [QGVAR(coagulationFactor), 30])];

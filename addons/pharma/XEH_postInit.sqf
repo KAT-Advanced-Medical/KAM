@@ -18,8 +18,11 @@
 [QGVAR(pervitinLocal), LINKFUNC(treatmentAdvanced_PervitinLocal)] call CBA_fnc_addEventHandler;
 [QGVAR(pervitinPP), LINKFUNC(pervitinPP)] call CBA_fnc_addEventHandler;
 [QGVAR(ketamineLocal), LINKFUNC(treatmentAdvanced_KetamineLocal)] call CBA_fnc_addEventHandler;
+<<<<<<< HEAD
 [QGVAR(morphineLocal), LINKFUNC(treatmentAdvanced_MorphineLocal)] call CBA_fnc_addEventHandler;
 [QGVAR(nalbuphineLocal), LINKFUNC(treatmentAdvanced_NalbuphineLocal)] call CBA_fnc_addEventHandler;
+=======
+>>>>>>> parent of aaaa00b4 (Merge branch 'dev-Tomcat' of https://github.com/Cplhardcore/KAM into dev-Tomcat)
 [QGVAR(fentanylLocal), LINKFUNC(treatmentAdvanced_FentanylLocal)] call CBA_fnc_addEventHandler;
 [QGVAR(caffeineLocal), LINKFUNC(treatmentAdvanced_CaffeineLocal)] call CBA_fnc_addEventHandler;
 [QGVAR(lidocaineLocal), LINKFUNC(treatmentAdvanced_LidocaineLocal)] call CBA_fnc_addEventHandler;

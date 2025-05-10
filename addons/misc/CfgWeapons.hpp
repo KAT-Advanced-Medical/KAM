@@ -1,4 +1,5 @@
-class CfgWeapons {
+class CfgWeapons
+{
     class ACE_ItemCore;
     class ACE_NVGoggles_WP;
     class CBA_MiscItem_ItemInfo;

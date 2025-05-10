@@ -32,5 +32,9 @@ class CfgPatches {
 #include "CfgEventHandlers.hpp"
 #include "CfgFunctions.hpp"
 #include "CfgWeapons.hpp"
+<<<<<<< HEAD
 #include "CfgVehicles.hpp"
 #include "ACE_Medical_Treatment_Actions.hpp"
+=======
+#include "ACE_Medical_Treatment_Actions.hpp"
+>>>>>>> parent of aaaa00b4 (Merge branch 'dev-Tomcat' of https://github.com/Cplhardcore/KAM into dev-Tomcat)

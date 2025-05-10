@@ -307,9 +307,9 @@ GVAR(PulseRateReady) = true;
 
     isNull _dlg || GVAR(AEDX_MonitorTarget) getVariable [QGVAR(Defibrillator_Charged), false];
 }, {
-    params ["_dlg"];
+    params ["_dlg", "_chargeBar"];
 
     if !(isNull _dlg) then {
         [true] call FUNC(AEDX_ViewMonitor_Charging);
     };
-}, [_dlg], 4, {}] call CBA_fnc_waitUntilAndExecute;
+}, [_dlg, _chargeBar], 4, {}] call CBA_fnc_waitUntilAndExecute;

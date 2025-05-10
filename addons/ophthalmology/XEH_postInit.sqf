@@ -2,6 +2,8 @@
 
 if (!hasInterface) exitWith {};
 
+call FUNC(initKeybinds);
+
 ["CBA_settingsInitialized", {
     //If not enabled, dont't add
     if (!GVAR(enable)) exitWith {};

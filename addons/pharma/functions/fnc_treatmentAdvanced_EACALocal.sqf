@@ -41,13 +41,13 @@ if (_IVactual > 1) then {
     if (_IVactual != 14) exitWith {
         if (_randomNumber < GVAR(blockChance)) then {
             [{
-                params ["_patient", "_IVarray", "_partIndex", "_IVactual"];
+                params ["_patient", "_IVarray", "_partIndex"];
 
                 if (_IVactual > 1 && ([10,11,12] find _IVactual == -1)) exitWith {};
                 _IVarray set [_partIndex, _IVactual + 5];
                 _patient setVariable [QGVAR(IV), _IVarray, true];
             },
-            [_patient, _IVarray, _partIndex, _IVactual], (random 300)] call CBA_fnc_waitAndExecute;
+            [_patient, _IVarray, _partIndex], (random 300)] call CBA_fnc_waitAndExecute;
         };
     };
 

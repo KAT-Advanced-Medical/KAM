@@ -52,9 +52,18 @@ if (IN_CRDC_ARRST(_unit)) then {
     // Ventilatory Demand comes from Heart Rate with increase demand from PaCO2 levels 
     _demandVentilation = ((((_actualHeartRate * HEART_RATE_CO2_MULTIPLIER) / _anerobicPressure) + ((_previousCyclePaco2 - DEFAULT_PACO2) * 200)) max MINIMUM_VENTILATION);
 
+<<<<<<< HEAD
     // Respiratory Rate is supressed by Opioids 
     _respiratoryDepth = [((DEFAULT_RESPIRATORY_DEPTH) - (_opioidDepression / 1.5)), 10] select (_unit getVariable [QEGVAR(breathing,BVMInUse), false]);
     private _baseTidalVolume = GET_KAT_SURFACE_AREA(_unit) * (_respiratoryDepth / 10);
+=======
+    // Tidal Volume is modified by respiratory depth which can be supressed by opioids and pneumothroax
+    _respiratoryDepth = [((DEFAULT_RESPIRATORY_DEPTH / 10) - (_opioidDepression / 1.5)), 10] select (_unit getVariable [QEGVAR(breathing,BVMInUse), false]);
+    private _tidalVolume = GET_KAT_SURFACE_AREA(_unit) * (_respiratoryDepth / 1);
+    
+    // Respiratory Rate Calculation
+    _respiratoryRate = [((_demandVentilation / _tidalVolume)) min MAXIMUM_RR, 20] select (_unit getVariable [QEGVAR(breathing,BVMInUse), false]);
+>>>>>>> parent of aaaa00b4 (Merge branch 'dev-Tomcat' of https://github.com/Cplhardcore/KAM into dev-Tomcat)
 
     _respiratoryRate = [(((_demandVentilation / _tidalVolume)) min MAXIMUM_RR)* _respiratoryRateMult, 20] select (_unit getVariable [QEGVAR(breathing,BVMInUse), false]);
     
@@ -90,7 +99,7 @@ if (IN_CRDC_ARRST(_unit)) then {
     };
 } else {
     // Generated ETCO2 quadratic. Ensures ETCO2 moves with Respiratory Rate and is constantly below PaCO2 
-    _etco2 = (((-0.0416667 * (_respiratoryRate^2)) + (3.09167 * (_respiratoryRate))) * (_respiratoryDepth / 10 )) max 5;
+    _etco2 = (((-0.0416667 * (_respiratoryRate^2)) + (3.09167 * (_respiratoryRate))) * (_respiratoryDepth)) max 5;
 };
 
 private _externalPh = 0;
@@ -131,6 +140,10 @@ private _o2Sat = ((_pao2 max 1)^2.7 / ((25 - (((_pH / DEFAULT_PH) - 1) * 150))^2
 
 _unit setVariable [VAR_BREATHING_RATE, (_respiratoryRate max 0), _syncValues];
 _unit setVariable [VAR_BLOOD_GAS, [_paco2, _pao2, _o2Sat, 24, _pH, _etco2], _syncValues];
+<<<<<<< HEAD
 _unit setVariable [QGVAR(respiratoryDepth), (_respiratoryDepth max 0), _syncValues];
 
+=======
+_unit setVariable [QGVAR(respiratoryDepth), ((_respiratoryDepth * 10) max 0), _syncValues];
+>>>>>>> parent of aaaa00b4 (Merge branch 'dev-Tomcat' of https://github.com/Cplhardcore/KAM into dev-Tomcat)
 _o2Sat * 100

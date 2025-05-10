@@ -59,9 +59,6 @@ switch (_type) do { // AED-X pads
                     [_medic, _patient, "rightarm", "AEDXStationConnectVitalsMonitor", [_defibObject]] call EFUNC(misc,treatment);
                 },
                 {
-                    params ["_medic", "", "_args"];
-                    _args params ["_patient", "_defibObject"];
-                    
                     [_medic, _patient, "rightarm", "AEDXStationConnectVitalsMonitor", [_defibObject]] call ACEFUNC(medical_treatment,canTreat);
                 },
                 {

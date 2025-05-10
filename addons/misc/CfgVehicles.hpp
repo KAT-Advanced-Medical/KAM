@@ -70,101 +70,6 @@ class CfgVehicles {
         model = QPATHTOF(models\armband\Armband.p3d);
         hiddenSelectionsTextures[] = {QPATHTOF(models\armband\ArmbandKAT.paa)};
     };
-
-    class ACE_medicalSupplyCrate;
-    class ACE_medicalSupplyCrate_advanced: ACE_medicalSupplyCrate {
-        class TransportMagazines {
-            MACRO_ADDMAGAZINE(kat_Bubble_Wrap,15);
-        };
-    };
-    class kat_miscSupplyCrate: ACE_medicalSupplyCrate {
-        displayName = CSTRING(miscSupplyCrate_display);
-        class TransportItems {
-            //chemical
-            MACRO_ADDITEM(kat_gasmaskFilter,15);
-            MACRO_ADDITEM(kat_sealant,15);
-            MACRO_ADDITEM(KAT_ChemicalDetector,15);
-            //misc.FAK
-            MACRO_ADDITEM(kat_IFAK,15);
-            MACRO_ADDITEM(kat_AFAK,15);
-            MACRO_ADDITEM(kat_MFAK,15);
-            //misc.Armband
-            MACRO_ADDITEM(kat_Armband_Red_Cross_Item,5);
-            MACRO_ADDITEM(kat_Armband_Medic_Item,5);
-            MACRO_ADDITEM(kat_Armband_Doctor_Item,5);
-            MACRO_ADDITEM(kat_Armband_Kat_Item,5);
-            MACRO_ADDITEM(kat_Armband_Red_Cross_NVG,5);
-            MACRO_ADDITEM(kat_Armband_Medic_NVG,5);
-            MACRO_ADDITEM(kat_Armband_Doctor_NVG,5);
-            MACRO_ADDITEM(kat_Armband_Kat_NVG,5);
-            //stretcher
-            MACRO_ADDITEM(kat_helistretcher,5);
-            MACRO_ADDITEM(kat_stretcherBag,5);
-            MACRO_ADDITEM(kat_CarryStretcherBag,5);
-            //watch
-            MACRO_ADDITEM(KAT_Katmin,15);
-            MACRO_ADDITEM(KAT_Cavmin,15);
-            MACRO_ADDITEM(KAT_STS,15);
-            MACRO_ADDITEM(KAT_Ranger,15);
-        };
-        class TransportMagazines {
-            //misc
-            MACRO_ADDMAGAZINE(kat_Bubble_Wrap,15);
-            //breathing
-            MACRO_ADDMAGAZINE(kat_personal_oxygen,15);
-        };
-    };
-    class kat_basicSupplyCrate: ACE_medicalSupplyCrate {
-        displayName = CSTRING(basicSupplyCrate_display);
-        class TransportItems {
-            //airway
-            MACRO_ADDITEM(kat_larynx,15);
-            MACRO_ADDITEM(kat_guedel,15);
-            MACRO_ADDITEM(kat_accuvac,2);
-            MACRO_ADDITEM(kat_suction,10);
-            //breathing
-            MACRO_ADDITEM(kat_Pulseoximeter,5);
-            MACRO_ADDITEM(kat_chestSeal,15);
-            MACRO_ADDITEM(kat_aatKit,10);
-            MACRO_ADDITEM(kat_ncdKit,10);
-            MACRO_ADDITEM(kat_stethoscope,2);
-            MACRO_ADDITEM(kat_BVM,5);
-            MACRO_ADDITEM(kat_pocketBVM,5);
-            //circulation
-            MACRO_ADDITEM(KAT_Empty_bloodIV_250,7);
-            MACRO_ADDITEM(KAT_Empty_bloodIV_500,7);
-            MACRO_ADDITEM(kat_AED,2);
-            MACRO_ADDITEM(kat_X_AED,2);
-            MACRO_ADDITEM(kat_crosspanel,5);
-            MACRO_ADDITEM(kat_BPCuff,5);
-            //stretcher
-            MACRO_ADDITEM(kat_helistretcher,5);
-            MACRO_ADDITEM(kat_stretcherBag,5);
-            //ophthalmology
-            MACRO_ADDITEM(kat_eyecovers,15);
-            //pharma
-            MACRO_ADDITEM(kat_IO_FAST,15);
-            MACRO_ADDITEM(kat_IV_16,15);
-            //surgery
-            MACRO_ADDITEM(kat_ultrasound,15);
-            //vitals
-            MACRO_ADDITEM(kat_basicDiagnostic,5);
-        };
-        class TransportMagazines {
-            //breathing
-            MACRO_ADDMAGAZINE(kat_oxygenTank_150,2);
-            MACRO_ADDMAGAZINE(kat_oxygenTank_300,2);
-            //misc
-            MACRO_ADDMAGAZINE(kat_Bubble_Wrap,15);
-            //ophthalmology
-            MACRO_ADDMAGAZINE(KAT_Eyewasher,15);
-            //pharmacy
-            MACRO_ADDMAGAZINE(kat_Carbonate,15);
-            MACRO_ADDMAGAZINE(kat_Painkiller,15);
-            MACRO_ADDMAGAZINE(kat_Caffeine,15);
-        };
-    };
-
     class Man;
     class CAManBase: Man {
         class ACE_Actions {
@@ -531,7 +436,8 @@ class CfgVehicles {
                 };
             };
         };
-        class ACE_SelfActions {
+        class ACE_SelfActions
+        {
             class KAT_Equipment {
                 displayName = CSTRING(Kat_Equipment);
                 icon = QPATHTOF(ui\KAM_Iteraction_Logo.paa);

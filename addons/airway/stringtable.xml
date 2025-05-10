@@ -44,7 +44,7 @@
             <Czech>Povolit Guedel Tubu</Czech>
             <French>Autoriser la canule de Guedel</French>
             <Spanish>Permitir cánula de Guedel</Spanish>
-            <Italian>Permetti la cannula di Guedel</Italian>
+            <Italian>Permetti la canula di Guedel</Italian>
             <Polish>Pozwól na użycie rurki ustno-gardłowej</Polish>
             <Portuguese>Permitir Cânula de Guedel</Portuguese>
             <Russian>Разрешить гедельтубус</Russian>
@@ -63,7 +63,7 @@
             <Czech>Úroveň výcviku potřebná k použití Guedel Tuby</Czech>
             <French>Niveau d'entrainement requis pour utiliser une canule de Guedel</French>
             <Spanish>Nivel de entrenamiento requerido para usar una cánula de Guedel</Spanish>
-            <Italian>Livello d'addestramento richiesto per utilizzare la cannula di Guedel</Italian>
+            <Italian>Livello d'addestramento richiesto per utilizzare la canula di Guedel</Italian>
             <Polish>Poziom wyszkolenia wymagany do korzystania z rurki ustno-gardłowej</Polish>
             <Portuguese>Nível de treinamento necessário para usar uma Cânula de Guedel</Portuguese>
             <Russian>Уровень подготовки, необходимый для использования тубуса Геделя.</Russian>
@@ -360,14 +360,13 @@
             <Chinese>氣道嚴重膨脹</Chinese>
             <Chinesesimp>气道严重膨胀</Chinesesimp>
             <German>Die Atemwege haben eine starke Blasenbildung</German>
-            <Italian>Le vie aeree sono piene di vescicole</Italian>
         </Key>
         <Key ID="STR_KAT_Airway_AirwayStatus_mitigatedObstruction">
             <English>Obstruction is temporarily mitigated</English>
             <Czech>Obstrukce je dočasně zmírněna</Czech>
             <French>L'obstruction a été temporairement atténuée</French>
             <Spanish>Obstrucción temporalmente mitigada</Spanish>
-            <Italian>L'ostruzione è momentaneamente attenuata</Italian>
+            <Italian>Ostruzione è momentaneamente attenuata</Italian>
             <Polish>Drogi oddechowe są ręcznie udrożnione</Polish>
             <Portuguese>Obstrução temporariamente mitigada</Portuguese>
             <Russian>Препятствие временно устранено</Russian>
@@ -419,7 +418,7 @@
             <Czech>Bez obstrukce</Czech>
             <French>Non obstruées</French>
             <Spanish>No obstruída</Spanish>
-            <Italian>Non ostruita</Italian>
+            <Italian>No ostruita</Italian>
             <Polish>Drożne</Polish>
             <Portuguese>Não obstruída</Portuguese>
             <Russian>Язык не запал</Russian>
@@ -454,7 +453,7 @@
             <Czech>Není ucpáno</Czech>
             <French>Non occludées</French>
             <Spanish>No ocluída</Spanish>
-            <Italian>Non occlusa</Italian>
+            <Italian>No occlusa</Italian>
             <Polish>Brak zatoru</Polish>
             <Portuguese>Não ocluída</Portuguese>
             <Russian>Рвота отсутствуют</Russian>
@@ -524,7 +523,7 @@
             <Czech>Blokuje otáčení hlavou pokud má pacient zavedenou Guedel tubu</Czech>
             <French>Bloque la rotation de la tête si le patient a une canule de Guedel insérée</French>
             <Spanish>Bloquea el giro de la cabeza si el paciente tiene insertado un tubo de Guedel.</Spanish>
-            <Italian>Blocca la rotazione della testa se il paziente ha la cannula di Guedel inserita</Italian>
+            <Italian>Blocca la rotazione della testa se il paziente ha la canula di Guedel inserita</Italian>
             <Portuguese>Bloqueia a rotação de cabeça em pacientes com Cânula de Guedel</Portuguese>
             <Russian>Блокирует вращение головы, если пациенту вставлена трубка Геделя</Russian>
             <German>Verhindert das zur Seite Drehen des Kopfes während ein Guedetubus eingeführt ist</German>
@@ -595,7 +594,7 @@
             <Czech>Odstranit Guedel Tubu</Czech>
             <French>Retirer la canule de Guedel</French>
             <Spanish>Retirando Cánula de Guedel</Spanish>
-            <Italian>Rimuovi cannula di Guedel</Italian>
+            <Italian>Rimuovi canula di Guedel</Italian>
             <Portuguese>Remover Cânula de Guedel</Portuguese>
             <Russian>Удалить трубку Геделя</Russian>
             <German>Entferne Guedeltubus</German>
@@ -629,7 +628,7 @@
             <Czech>Guedel tuba je používána k zajištění dýchacích cest</Czech>
             <French>La canule de Guedel est utilisée pour protéger les voies aériennes</French>
             <Spanish>La cánula de Guedel impide obstrucciones</Spanish>
-            <Italian>La cannula di Guedel viene usata per mantenere le vie aeree aperte</Italian>
+            <Italian>La canula di Guedel viene usata per salvare le vie aeree</Italian>
             <Polish>Rurka ustno-gardłowa zabezpiecza drogi oddechowe</Polish>
             <Portuguese>A Cânula de Guedel evita obstruções</Portuguese>
             <Russian>Трубка Геделя используется для сохранения дыхательных путей.</Russian>
@@ -648,7 +647,7 @@
             <Czech>Guedel Tuba</Czech>
             <French>Canule de Guedel</French>
             <Spanish>Cánula de Guedel</Spanish>
-            <Italian>Cannula di Guedel</Italian>
+            <Italian>Canula di Guedel</Italian>
             <Polish>Rurka ustno-gardłowa</Polish>
             <Portuguese>Cânula de Guedel</Portuguese>
             <Russian>Трубка Геделя</Russian>
@@ -827,7 +826,7 @@
             <Czech>King LT je používán k zajištění dýchacích cest</Czech>
             <French>Le tube laryngé est utilisé pour protéger les voies aériennes</French>
             <Spanish>El tubo laríngeo previene obstrucciones y oclusiones</Spanish>
-            <Italian>Il tubo laringeo viene usato per mantenere le vie aeree aperte</Italian>
+            <Italian>Il tubo laringeo viene usato per salvare le vie aeree</Italian>
             <Polish>Rurka krtaniowa służy do ratowania dróg oddechowych</Polish>
             <Portuguese>O Tubo Laríngeo evita obstruções e oclusões</Portuguese>
             <Russian>Ларингеальная трубка – это устройство для обеспечения проходимости дыхательных путей.</Russian>
@@ -978,7 +977,7 @@
             <Czech>%1 odstranil Guedel Tubu</Czech>
             <French>%1 a retiré la canule de Guedel</French>
             <Spanish>%1 retiró la Canula de Guedel</Spanish>
-            <Italian>%1 rimosso cannula di Guedel</Italian>
+            <Italian>%1 rimosso Guedel Tube</Italian>
             <Portuguese>%1 removeu a Cânula de Guedel</Portuguese>
             <Russian>%1 удалил трубку Геделя</Russian>
             <German>%1 hat Guedeltubus entfernt</German>
@@ -1029,7 +1028,7 @@
             <Czech>Vrácení KingLT nebo Guedel Tuby při jejich manuálním odebrání</Czech>
             <French>Récupérer le tube laryngé ou la canule de guedel lorsque ceux-ci sont retirés manuellement</French>
             <Spanish>Recuperar el Tubo laríngeo o la Cánula de Guedel cuando se quitan manualmente</Spanish>
-            <Italian>Riguadagna il KingLT o la cannula di Guedel quando li rimuovi manualmente</Italian>
+            <Italian>Riguadagna il KingLT o la canula di Guedel quando li rimuovi manualmente</Italian>
             <Portuguese>Recupere o Tubo Laríngeo ou a Cânula de Guedel quando removidos manualmente</Portuguese>
             <Russian>Извлеките гортанную трубку или трубку Геделя, когда они удалены вручную</Russian>
             <German>Erhalte den Larynxtubus oder Guedeltubus wieder bei manueller Entfernung</German>
@@ -1119,7 +1118,7 @@
             <Czech>Pravděpodobnost obstrukce dýchacích cest v procentech, která se vylosuje při každém: \n- Upadnutí do bezvědomí \n- Odstranění KingLT / GuedelTuby</Czech>
             <French>La probabilité d'obstruction des voies aériennes en pourcentage qui est tirée aléatoirement lorsque : \n- la personne tombe inconsciente \n- Une canule de Guedel/tube laryngé est retiré</French>
             <Spanish>Probabilidad en porcentaje de que una vía aérea sea obstruida cada vez que: \n- Cae inconsciente \n- Se retira el tubo laríngeo / Cánula de Guedel</Spanish>
-            <Italian>Probabilità in percentuale di una via aerea ostruita che viene sorteggiata ogni : \n- Caduta priva di sensi \n- Rimozione KingLT / cannula di Guedel</Italian>
+            <Italian>Probabilità in percentuale di una via aerea ostruita che viene sorteggiata ogni : \n- Caduta priva di sensi \n- Rimozione KingLT / Guedel Tube</Italian>
             <Portuguese>Probabilidade percentual de obstrução de uma via aérea a cada vez que: \n- Ficar inconsciente \n- Remoção do Tubo Laríngeo / Cânula de Guedel</Portuguese>
             <Russian>Вероятность закупорки дыхательных путей в процентах, которая приводит к смерти при каждом: \n- падении без сознания \n - Удалении гортанной трубки/трубки Геделя</Russian>
             <German>Wahrscheinlichkeit blockierter Atemwege in Prozent basierend auf:\n- Bewustlos werden\n- Das Entfernen von Larynxtubus / Guedeltubus\n- Abbrechen der Stabile Seitenlage</German>
@@ -1470,6 +1469,7 @@
             <Finnish>Tuuliputki on selkeä</Finnish>
             <Dutch>Luchtweg is vrij</Dutch>
         </Key>
+<<<<<<< HEAD
         <Key ID="STR_KAT_Airway_AirwayStatus_NotClearForItem">
             <English>Item could not be used, airways are not clear</English>
             <German>Gegenstand konnte nicht verwendet werden, Atemwege sind nicht frei</German>
@@ -1507,6 +1507,45 @@
             <Norwegian>Hyperforlengelse av hode</Norwegian>
             <Finnish>Hyperojentuva pää</Finnish>
             <Dutch>Hoofd overstrekken</Dutch>
+=======
+        <Key ID="STR_KAT_Airway_TIME_GUEDELTUBUS">
+            <English>Time for Geudeltubus</English>
+            <Czech>Čas pro Guedel Tubu</Czech>
+            <French>Durée d'installation de la canule de Guedel</French>
+            <Spanish>Tiempo para cánula de Guedel</Spanish>
+            <Italian>Tempo per la canula di Guedel</Italian>
+            <Polish>Czas na użycie rurki ustno-gardłowej</Polish>
+            <Portuguese>Tempo para usar uma Cânula de Guedel</Portuguese>
+            <Russian>Время для трубки Геделя</Russian>
+            <German>Zeit um den Geudeltubus zu nutzen</German>
+            <Korean>게델튜브 사용에 걸리는 시간</Korean>
+            <Japanese>口咽頭エアウェイの所要時間</Japanese>
+            <Chinese>Geudeltubus的時間</Chinese>
+            <Chinesesimp>口咽通气道時間</Chinesesimp>
+            <Turkish>Geudel Tüp zamanı</Turkish>
+            <Norwegian>Tid for Guedeltubus</Norwegian>
+            <Finnish>Guedel-putken aika</Finnish>
+            <Dutch>Intubatietijd voor Guedel-tube</Dutch>
+        </Key>
+        <Key ID="STR_KAT_Airway_TIME_GUEDELTUBUS_DESC">
+            <English>How long it will take to use Guedeltubus</English>
+            <Czech>Jak dlouho zabere použití Guedel Tuby</Czech>
+            <French>Combien de temps faudra t-il pour placer une canule de Guedel</French>
+            <Spanish>Cuánto tiempo tomará usar cánula de Guedel</Spanish>
+            <Italian>Quanto tempo si impiega per posizionare una canula di Guedel</Italian>
+            <Polish>Jak długo potrwa użycie rurki ustno-gardłowej</Polish>
+            <Portuguese>Quanto tempo demorará para usar uma Cânula de Guedel</Portuguese>
+            <Russian>Сколько времени потребуется, чтобы использовать трубку Геделя</Russian>
+            <German>Wie lange dauert es, den Guedeltubus zu nutzen</German>
+            <Korean>게델튜브 사용에 얼마나 시간이 걸리는지 결정합니다</Korean>
+            <Japanese>口咽頭エアウェイ(ゲデルチューブ)を使用するのにどのくらい時間がかかるか設定します</Japanese>
+            <Chinese>使用 Guedel（口腔通氣管） 所需時間</Chinese>
+            <Chinesesimp>使用口咽通气道的所需时间</Chinesesimp>
+            <Turkish>Guedel Tüp'ü kullanmak ne kadar sürecek</Turkish>
+            <Norwegian>Hvor lang tid vil det ta å bruke Guedeltubus</Norwegian>
+            <Finnish>Kuinka kauan Guedel-putken asettaminen vie</Finnish>
+            <Dutch>Hoe lang het gaat duren om een Guedel-tube in te brengen</Dutch>
+>>>>>>> parent of aaaa00b4 (Merge branch 'dev-Tomcat' of https://github.com/Cplhardcore/KAM into dev-Tomcat)
         </Key>
         <Key ID="STR_KAT_Airway_Hyperextended">
             <English>Hyperextended Head</English>
@@ -2884,5 +2923,165 @@
             <Finnish>%1 lisäsi a %2</Finnish>
             <Dutch>%1 heeft een %2 ingebracht</Dutch>
         </Key>
+<<<<<<< HEAD
+=======
+        <Key ID="STR_KAT_Airway_cba_name">
+            <English>KAT - ADV Medical: Airway</English>
+            <Japanese>KAM - 気道 (Airway)</Japanese>
+            <French>KAT - ADV Medical : Voies respiratoires</French>
+            <German>KAT - ADV Medical: Atemwege</German>
+        </Key>
+        <Key ID="STR_KAT_Airway_checkAirway">
+            <English>Check Airway</English>
+            <Czech>Zkontrolovat dýchací cesty</Czech>
+            <French>Vérifier les voies aériennes</French>
+            <Spanish>Comprobar vías aéreas</Spanish>
+            <Italian>Controllare vie aeree</Italian>
+            <Polish>Sprawdź drogi oddechowe</Polish>
+            <Portuguese>Verificar as vias aéreas</Portuguese>
+            <Russian>проверить дыхательные пути</Russian>
+            <German>Überprüfe Atemwege</German>
+            <Korean>기도 확인</Korean>
+            <Japanese>気道を確認</Japanese>
+            <Chinese>檢查呼吸道</Chinese>
+            <Chinesesimp>检查气道</Chinesesimp>
+            <Turkish>Hava Yollarını Kontrol Edin</Turkish>
+            <Norwegian>Sjekk lufveier</Norwegian>
+            <Finnish>Tarkista hengitystiet</Finnish>
+            <Dutch>Check luchtwegen</Dutch>
+        </Key>
+        <Key ID="STR_KAT_Airway_checkAirway_log">
+            <English>%1 checked airways: %2, %3</English>
+            <Czech>%1 zkontroloval dýchací cesty: %2, %3</Czech>
+            <French>%1 a vérifié les voies aériennes : %2, %3</French>
+            <Spanish>%1 comprobó las vías aéreas: %2, %3</Spanish>
+            <Italian>%1 ha controllato le vie aeree: %2, %3</Italian>
+            <Polish>%1 sprawdził drogi oddechowe: %2, %3</Polish>
+            <Portuguese>%1 verificou as vias aéreas: %2, %3</Portuguese>
+            <Russian>%1 проверенные дыхательные пути: %2, %3</Russian>
+            <German>%1 überprüfte Atemwege: %2, %3</German>
+            <Korean>%1 기도 확인됨: %2, %3</Korean>
+            <Japanese>%1 が気道を確認: %2, %3</Japanese>
+            <Chinese>%1 檢查呼吸道: %2, %3</Chinese>
+            <Chinesesimp>%1 检查呼吸道: %2, %3</Chinesesimp>
+            <Turkish>%1 kontrol edilmiş havayolları: %2, %3</Turkish>
+            <Norwegian>%1 sjekket luftveiene: %2, %3</Norwegian>
+            <Finnish>%1 tarkistettu hengitystiet, %2, %3</Finnish>
+            <Dutch>%1 Heeft de luchtwegen gecheckt: %2, %3</Dutch>
+        </Key>
+        <Key ID="STR_KAT_Airway_checkAirway_poisonLog">
+            <English>%1 checked airways: Heavily Blistered</English>
+            <Czech>%1 zkontroloval dýchací cesty: Silné puchýře</Czech>
+            <French>%1 voies aériennes contrôlées : Fortement cloquées</French>
+            <Japanese>%1 が気道を確認: ひどい水膨れ</Japanese>
+            <Chinesesimp>%1 条检查气道: 严重起泡</Chinesesimp>
+            <German>%1 überprüfte die Atemwege: Starke Blasenbildung</German>
+        </Key>
+        <Key ID="STR_KAT_Airway_headTurning_begin">
+            <English>Begin Head Turning</English>
+            <Czech>Začít s otáčením hlavy</Czech>
+            <French>Début de la rotation de la tête</French>
+            <Spanish>Comenzar giro de cabeza</Spanish>
+            <Italian>Iniziata la rotazione della testa</Italian>
+            <Portuguese>Iniciar rotação de cabeça</Portuguese>
+            <Russian>Начать поворачивать голову</Russian>
+            <German>Drehe den Kopf</German>
+            <Korean>고개 돌리기 시작</Korean>
+            <Japanese>顔を横に向ける (指拭法で異物除去)</Japanese>
+            <Chinese>進行頭部轉向</Chinese>
+            <Chinesesimp>开始转头</Chinesesimp>
+            <Norwegian>Begynn vending av hode</Norwegian>
+            <Finnish>Aloita potilaan pään kääntäminen</Finnish>
+            <Dutch>Begin hoofddraaiing</Dutch>
+        </Key>
+        <Key ID="STR_KAT_Airway_headTurning_cancelled">
+            <English>Head turning cancelled</English>
+            <Czech>Otáčení hlavy zrušeno</Czech>
+            <French>Annulation de la rotation de la tête</French>
+            <Spanish>Giro de cabeza cancelado</Spanish>
+            <Italian>Rotazione della testa annullata</Italian>
+            <Portuguese>Rotação de cabeça cancelada</Portuguese>
+            <Russian>Поворот головы отменен</Russian>
+            <German>Kopfdrehung abgebrochen</German>
+            <Korean>고개 돌리기 취소됨</Korean>
+            <Japanese>異物除去が中止された</Japanese>
+            <Chinese>頭部轉向已取消</Chinese>
+            <Chinesesimp>异物清除停止了</Chinesesimp>
+            <Norwegian>vewnding av hode ble avbrutt</Norwegian>
+            <Finnish>pään kääntäminen peruttu</Finnish>
+            <Dutch>Hoofddraaiing gestopt</Dutch>
+        </Key>
+        <Key ID="STR_KAT_Airway_headTurning_info">
+            <English>Head turn performed, airways are still not clear</English>
+            <Czech>Hlavou se otočilo, dýchací cesty stále nejsou volné</Czech>
+            <French>Tour de tête effectué, les voies respiratoires ne sont toujours pas dégagées</French>
+            <Spanish>Giro realizado, vías aéreas aún sin despejadar</Spanish>
+            <Italian>Rotazione della testa eseguita, le vie aeree non sono ancora libere</Italian>
+            <Polish>Obrót głowy wykonany, drogi oddechowe wciąż nie są czyste</Polish>
+            <Portuguese>Cabeça virada, vias aéreas ainda não limpas</Portuguese>
+            <Russian>Выполнен поворот головы, дыхательные пути еще не очистились</Russian>
+            <German>Kopfdrehung durchgeführt, Atemwege sind noch nicht frei</German>
+            <Korean>고개를 돌려보았으나, 기도는 여전히 막혀 있다.</Korean>
+            <Japanese>除去を試みたが、 気道はまだ詰まっている</Japanese>
+            <Chinese>已頭部轉向，但呼吸道仍未清理</Chinese>
+            <Chinesesimp>尝试清理气道异物失败, 异物仍存在</Chinesesimp>
+            <Turkish>Baş dönüşü yapıldı, hava yolları hala net değil</Turkish>
+            <Norwegian>vending av hode er utført, luftveiene er fortsatt ikke frie</Norwegian>
+            <Finnish>Pään käännös suoritettu, hengitystiet vielä epäselvät</Finnish>
+            <Dutch>Hoofddraaiing uitgevoerd, luchtwegen zij nog niet vrij</Dutch>
+        </Key>
+        <Key ID="STR_KAT_Airway_headTurning_start">
+            <English>Head Turning Started</English>
+            <Czech>Otáčení hlavy započato</Czech>
+            <French>Rotation de la tête débutée</French>
+            <Spanish>Comenzó a girar la cabeza</Spanish>
+            <Italian>Rotazione della testa avviata</Italian>
+            <Portuguese>Rotação de cabeça iniciada</Portuguese>
+            <Russian>Начался поворот головы</Russian>
+            <German>Kopfdrehung begonnen</German>
+            <Japanese>異物除去を開始した</Japanese>
+            <Chinese>頭部轉向已開始</Chinese>
+            <Chinesesimp>开始清除异物</Chinesesimp>
+            <Norwegian>Startet vending av hode</Norwegian>
+            <Finnish>pään kääntyminen alkoi</Finnish>
+            <Dutch>Hoofddraaiing gestart</Dutch>
+        </Key>
+        <Key ID="STR_KAT_Airway_headTurning_stop">
+            <English>Stop head turning</English>
+            <Czech>Přestat s otáčením hlavu</Czech>
+            <French>Arrêt de la rotation de la tête</French>
+            <Spanish>Parar giro de cabeza</Spanish>
+            <Italian>Fermare la rotazione della testa</Italian>
+            <Portuguese>Interromper rotação de cabeça</Portuguese>
+            <Russian>Перестаньте поворачивать голову</Russian>
+            <German>Kopf nicht mehr drehen</German>
+            <Korean>고개 돌리기 멈추기</Korean>
+            <Japanese>異物除去を止める</Japanese>
+            <Chinese>停止頭部轉向</Chinese>
+            <Chinesesimp>停止清除异物</Chinesesimp>
+            <Norwegian>Stop vending av hode</Norwegian>
+            <Finnish>Lopeta potilaan pään kääntäminen</Finnish>
+            <Dutch>Stop de hoofddraaiing</Dutch>
+        </Key>
+        <Key ID="STR_KAT_Airway_headTurning_success">
+            <English>Occlusion removed</English>
+            <Czech>Ucpání odstraněno</Czech>
+            <French>Occlusion supprimée</French>
+            <Spanish>Oclusión eliminada</Spanish>
+            <Italian>Occlusione rimossa</Italian>
+            <Polish>Zablokowanie usunięte</Polish>
+            <Portuguese>Oclusão removida</Portuguese>
+            <Russian>Окклюзия удалена</Russian>
+            <German>Okklusion entfernt</German>
+            <Korean>구토 제거 성공</Korean>
+            <Japanese>異物が除去された</Japanese>
+            <Chinese>阻塞物已移除</Chinese>
+            <Chinesesimp>气道异物移除</Chinesesimp>
+            <Turkish>Tıkanıklık kaldırıldı</Turkish>
+            <Norwegian>Okklusjonen er fjernet</Norwegian>
+            <Finnish>Likaantuminen poistettu</Finnish>
+            <Dutch>Verstopping verwijderd</Dutch>
+        </Key>
+>>>>>>> parent of aaaa00b4 (Merge branch 'dev-Tomcat' of https://github.com/Cplhardcore/KAM into dev-Tomcat)
     </Package>
 </Project>

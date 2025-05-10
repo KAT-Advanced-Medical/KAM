@@ -4,19 +4,18 @@
  * Checks handwarmer status
  *
  * Arguments:
- * 0: Player <OBJECT>
- * 1: Target <OBJECT>
+ * 0: Patient <OBJECT>
  *
  * Return Value:
  * None
  *
  * Example:
- * [player, cursorObject] call kat_hypothermia_fnc_checkHandWarmers;
+ * [patient] call kat_hypothermia_fnc_checkHandWarmers;
  *
  * Public: No
  */
 
-params ["_player", "_target"];
+params ["_target"];
 
 private _warmers = _target getVariable [QGVAR(handWarmers), [0,0,0,0,0,0]];
 _warmers params ["_head", "_body", "_larm", "_rarm", "_lleg", "_rleg"];

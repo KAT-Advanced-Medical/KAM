@@ -40,7 +40,7 @@ private _actions = [];
         },
         {},
         [_unit]
-        ] call ACEFUNC(interact_menu,createAction),[], _unit];
+        ] call ACEFUNC(interact_menu,createAction),[], _medic];
     };
 } forEach (_vehicleSeats);
 

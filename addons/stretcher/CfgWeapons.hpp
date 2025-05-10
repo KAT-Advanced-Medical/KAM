@@ -1,4 +1,5 @@
-class CfgWeapons {
+class CfgWeapons
+{
     class ACE_ItemCore;
     class CBA_MiscItem_ItemInfo;
     class kat_helistretcher: ACE_ItemCore {
