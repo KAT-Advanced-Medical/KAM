@@ -316,5 +316,12 @@
         <Key ID="STR_KAT_GUI_Prepared_Syringe">
             <English>Prepared %1</English>
         </Key>
+        <Key ID="STR_KAT_GUI_cba_name">
+            <English>KAT - ADV Medical: GUI</English>
+            <Japanese>KAM - GUI</Japanese>
+            <French>KAT - ADV Medical : GUI</French>
+            <German>KAT - ADV Medical: GUI</German>
+            <Italian>KAT - ADV Medica: Interfaccia Grafica </Italian>
+        </Key>
     </Package>
 </Project>

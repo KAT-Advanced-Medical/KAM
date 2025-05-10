@@ -67,19 +67,13 @@ class CfgVehicles {
             MACRO_ADDITEM(kat_chestSeal,15);
             MACRO_ADDITEM(kat_Pulseoximeter,2);
             MACRO_ADDITEM(kat_stethoscope,2);
-            MACRO_ADDITEM(kat_IO_FAST,15);
-            MACRO_ADDITEM(kat_IV_16,15);
-            MACRO_ADDITEM(kat_crosspanel,2);
-            MACRO_ADDITEM(KAT_Empty_bloodIV_250,7);
-            MACRO_ADDITEM(KAT_Empty_bloodIV_500,7);
-            MACRO_ADDITEM(kat_AED,2);
-            MACRO_ADDITEM(kat_X_AED,2);
-            MACRO_ADDITEM(kat_BVM,5);
-            MACRO_ADDITEM(kat_pocketBVM,5);
+            MACRO_ADDITEM(kat_BVM,2);
+            MACRO_ADDITEM(kat_pocketBVM,2);
         };
         class TransportMagazines: TransportMagazines {
             MACRO_ADDMAGAZINE(kat_oxygenTank_150,2);
             MACRO_ADDMAGAZINE(kat_oxygenTank_300,2);
+            MACRO_ADDMAGAZINE(kat_personal_oxygen,2);
         };
     };
 

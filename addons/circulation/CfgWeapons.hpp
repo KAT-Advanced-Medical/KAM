@@ -199,8 +199,7 @@ class CfgWeapons {
             mass = 2;
         };
     };
-    class KAT_Empty_bloodIV_250: ACE_bloodIV
-    {
+    class KAT_Empty_bloodIV_250: ACE_bloodIV {
         displayName = CSTRING(FieldBloodTK250_Display);
         descriptionShort = CSTRING(FieldBloodTK_Desc);
         picture = QPATHTOF(ui\bloodIV_empty_ca.paa);

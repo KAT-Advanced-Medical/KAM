@@ -69,7 +69,7 @@ class CfgWeapons {
             mass = 2;
         };
     };
-    class kat_stethoscope: ACE_ItemCore    {
+    class kat_stethoscope: ACE_ItemCore {
         scope = 2;
         scopeCurator = 2;
         scopeArsenal = 2;

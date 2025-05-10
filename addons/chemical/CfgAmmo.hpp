@@ -106,8 +106,7 @@ class CfgAmmo {
         triggerDistance = 250;
         triggerSpeedCoef[] = {0.8,1};
         submunitionAmmo="KAT_CAS_M43_Ammo_sub";
-        class CamShakeExplode
-        {
+        class CamShakeExplode {
             power = 20;
             duration = 2;
             frequency = 5;

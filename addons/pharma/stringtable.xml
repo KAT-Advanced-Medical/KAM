@@ -2428,6 +2428,13 @@
             <Russian>Настройки IV</Russian>
             <Dutch>IV instellingen</Dutch>
         </Key>
+        <Key ID="STR_KAT_Pharma_SubCategory_CWMP">
+            <English>CWMP Settings</English>
+            <French>Paramètres CWMP</French>
+            <Japanese>戦闘傷病治療薬(CWMP)設定</Japanese>
+            <German>CWMP Einstellungen</German>
+            <Italian>Impostazioni CWMP</Italian>
+        </Key>
         <Key ID="STR_KAT_Pharma_SubCategory_ApplyIO">
             <English>IO Settings</English>
             <Polish>Ustawienia IO</Polish>
@@ -3124,6 +3131,13 @@
             <Finnish>Alkaa nykimään</Finnish>
             <Russian>Ты начинаешь дергаться...</Russian>
             <Dutch>Je begint te trillen</Dutch>
+        </Key>
+        <Key ID="STR_KAT_Pharma_cba_name">
+            <English>KAT - ADV Medical: Pharmacy</English>
+            <Japanese>KAM - 薬学 (Pharmacy)</Japanese>
+            <French>KAT - ADV Medical : Pharmacie</French>
+            <German>KAT - ADV Medical: Medikamente</German>
+            <Italian>KAT - ADV Medica: Farmaceutica</Italian>
         </Key>
         <Key ID="STR_KAT_Pharma_Pervitin_chrom3">
             <English>Your head starts to clear up and you stop twitching...</English>
@@ -3869,6 +3883,20 @@
             <Dutch>Lichtelijk onder normaal INR</Dutch>
             <French>légèrement inférieur à l'INR normal</French>
             <Italian>INR leggermente sotto la norma</Italian>
+        </Key>
+        <Key ID="STR_KAT_Pharma_treatmentTime_CWMP">
+            <English>Treatment time for CWMP</English>
+            <French>Temps de traitement pour le CWMP</French>
+            <Japanese>戦闘傷病治療薬(CWMP)の所要時間</Japanese>
+            <German>Anwendungszeit für CWMP</German>
+            <Italian>Tempo di trattamento per il CWMP</Italian>
+        </Key>
+        <Key ID="STR_KAT_Pharma_treatmentTime_Caffeine">
+            <English>Treatment time for Caffeine</English>
+            <French>Temps de traitement pour la caféine</French>
+            <Japanese>カフェインの所要時間</Japanese>
+            <German>Anwendungszeit für Koffein</German>
+            <Italian>Tempo di trattamento per la Caffeina</Italian>
         </Key>
         <Key ID="STR_KAT_Pharma_CheckCoag_slightly_aboveINR">
             <English>Sligtly Above normal INR</English>

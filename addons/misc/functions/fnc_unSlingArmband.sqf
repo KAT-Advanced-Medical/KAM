@@ -24,25 +24,25 @@ private _originalArmband = "";
 switch (_limbNumber) do {
     case 0: {
         _armbandObject = _unit getVariable [QGVAR(whichArmabndisSlingedLA), objNull]; 
-        _originalArmband = _unit getVariable [QGVAR(armbandVersionLA), _armbandVersion];
+        _originalArmband = _unit getVariable [QGVAR(armbandVersionLA), ""];
         _unit setVariable [QGVAR(isLeftArmFree), true, true];
     };
 
     case 1: {
         _armbandObject = _unit getVariable [QGVAR(whichArmabndisSlingedRA), objNull]; 
-        _originalArmband = _unit getVariable [QGVAR(armbandVersionRA), _armbandVersion];
+        _originalArmband = _unit getVariable [QGVAR(armbandVersionRA), ""];
         _unit setVariable [QGVAR(isRightArmFree), true, true];
     };
 
     case 2: {
         _armbandObject = _unit getVariable [QGVAR(whichArmabndisSlingedLL), objNull]; 
-        _originalArmband = _unit getVariable [QGVAR(armbandVersionLL), _armbandVersion];
+        _originalArmband = _unit getVariable [QGVAR(armbandVersionLL), ""];
         _unit setVariable [QGVAR(isLeftLegFree), true, true];
     };
 
     case 3: {
         _armbandObject = _unit getVariable [QGVAR(whichArmabndisSlingedRL), objNull]; 
-        _originalArmband = _unit getVariable [QGVAR(armbandVersionRL), _armbandVersion];
+        _originalArmband = _unit getVariable [QGVAR(armbandVersionRL), ""];
         _unit setVariable [QGVAR(isRightLegFree), true, true];
     };
 };

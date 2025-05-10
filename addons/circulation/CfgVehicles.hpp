@@ -187,15 +187,13 @@ class CfgVehicles {
     };
 
     class ACE_medicalSupplyCrate_advanced: ACE_medicalSupplyCrate {
-        class TransportItems: TransportItems {
-            MACRO_ADDITEM(kat_X_AED,1);
+        class TransportItems {
             MACRO_ADDITEM(kat_AED,1);
+            MACRO_ADDITEM(kat_X_AED,1);
+            MACRO_ADDITEM(kat_BPCuff,2);
             MACRO_ADDITEM(KAT_Empty_bloodIV_500,10);
             MACRO_ADDITEM(KAT_Empty_bloodIV_250,20);
             MACRO_ADDITEM(kat_crossPanel,5);
-        };
-        class TransportMagazines: TransportMagazines {
-            MACRO_ADDMAGAZINE(kat_Painkiller,10);
         };
     };
     class kat_medicalSupplyCrate: ACE_medicalSupplyCrate {
@@ -230,6 +228,9 @@ class CfgVehicles {
             MACRO_ADDITEM(kat_bloodIV_B_N_250,7);
             MACRO_ADDITEM(kat_bloodIV_AB_250,7);
             MACRO_ADDITEM(kat_bloodIV_AB_N_250,7);
+        };
+        class TransportMagazines {
+            MACRO_ADDMAGAZINE(kat_Painkiller,5);
         };
     };
 
