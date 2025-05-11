@@ -96,6 +96,8 @@
             <Japanese>JCAD</Japanese>
             <Chinese>JCAD</Chinese>
             <Chinesesimp>JCAD</Chinesesimp>
+            <German>JCAD</German>
+            <Italian>JCAD</Italian>
         </Key>
         <Key ID="STR_KAT_Chemical_ChemicalDetector_Off">
             <English>OFF</English>
@@ -104,6 +106,8 @@
             <Japanese>オフ</Japanese>
             <Chinese>關閉</Chinese>
             <Chinesesimp>关闭</Chinesesimp>
+            <German>AUS</German>
+            <Italian>Spento</Italian>
         </Key>
         <Key ID="STR_KAT_Chemical_DisableDetectorSound">
             <English>Disable Warning Tone</English>
@@ -112,6 +116,8 @@
             <Japanese>警告音を無効化</Japanese>
             <Chinese>停用警告音</Chinese>
             <Chinesesimp>禁用警告音</Chinesesimp>
+            <German>Warnton ausschalten</German>
+            <Italian>Disabilita il segnale acustico d'avviso</Italian>
         </Key>
         <Key ID="STR_KAT_Chemical_EnableDetector">
             <English>Turn On Detector</English>
@@ -120,6 +126,8 @@
             <Japanese>検知器をつける</Japanese>
             <Chinese>打開探測器</Chinese>
             <Chinesesimp>打开探测器</Chinesesimp>
+            <German>Detektor einschalten</German>
+            <Italian>Attiva il rilevatore</Italian>
         </Key>
         <Key ID="STR_KAT_Chemical_EnableDetectorSound">
             <English>Enable Warning Tone</English>
@@ -128,6 +136,8 @@
             <Japanese>警告音を有効化</Japanese>
             <Chinese>啟用警告音</Chinese>
             <Chinesesimp>启用警告音</Chinesesimp>
+            <German>Warnton einschalten</German>
+            <Italian>Abilita il segnale acustico d'avviso</Italian>
         </Key>
         <Key ID="STR_KAT_Chemical_GasBox_Displayname">
             <English>[ACE] 82mm Gas Rounds Box</English>
@@ -372,13 +382,15 @@
             <Czech>Slzný plyn (Level 0)</Czech>
             <French>Gaz lacrymogène (Niveau 0)</French>
             <Japanese>催涙ガス (レベル 0)</Japanese>
+            <German>Tränengas (Level 0)</German>
+            <Italian>Gas Lacrimogeno (Livello 0)</Italian>
         </Key>
         <Key ID="STR_KAT_Chemical_Lvl1_Gas">
             <English>Toxic gas (Level 1)</English>
             <Czech>Toxický plyn (Úroveň 1)</Czech>
             <French>Gaz toxique (Niveau 1)</French>
             <Spanish>Gas toxico (Nivel 1)</Spanish>
-            <Italian>Gas tossico (Livello 1)</Italian>
+            <Italian>Gas Lacrimogeno (Livello 1)</Italian>
             <Polish>Toksyczny gaz ( Poziom 1)</Polish>
             <Portuguese>Gás tóxico (Nível 1)</Portuguese>
             <Russian>Токсичный газ (уровень 1)</Russian>
@@ -534,13 +546,14 @@
             <Japanese>ガスマスクを装着</Japanese>
             <Chinese>戴上防毒面具</Chinese>
             <Chinesesimp>戴上防毒面具</Chinesesimp>
+            <Italian>Indossa la maschera antigas</Italian>
         </Key>
         <Key ID="STR_KAT_Chemical_SETTING_AVAIL_GASMASK">
             <English>Accepted gas masks</English>
             <Czech>Povolené plynové masky</Czech>
             <French>Masques à gaz acceptés</French>
             <Spanish>Máscaras de gas aceptadas</Spanish>
-            <Italian>Maschere a gas accettate</Italian>
+            <Italian>Maschere antigas accettate</Italian>
             <Polish>Dozwolone maski gazowe</Polish>
             <Portuguese>Permitir máscaras de gás</Portuguese>
             <Russian>Разрешенные противогазы</Russian>
@@ -611,6 +624,7 @@
             <Japanese>武器を落とす確率</Japanese>
             <Chinese>丟下武器機會</Chinese>
             <Chinesesimp>投掷武器机会</Chinesesimp>
+            <Italian>Possibilità di perdere l'arma</Italian>
         </Key>
         <Key ID="STR_KAT_Chemical_SETTING_dropWeaponChance_DESC">
             <English>Determines chance for dropping weapon while in tear gas</English>
@@ -620,6 +634,7 @@
             <Japanese>催涙ガスの中で武器を落とす確率を定義します</Japanese>
             <Chinese>確定在催淚瓦斯中丟下武器的機率</Chinese>
             <Chinesesimp>确定在催泪瓦斯中投掷武器的几率</Chinesesimp>
+            <Italian>Determina la probabilità di perdere l'arma mentre si è nel gas lacrimogeno</Italian>
         </Key>
         <Key ID="STR_KAT_Chemical_SETTING_gasMaskSoundVolume">
             <English>Gas Mask Sound Volume</English>
@@ -629,6 +644,7 @@
             <Japanese>ガスマスクの音量</Japanese>
             <Chinese>防毒面具音量</Chinese>
             <Chinesesimp>防毒面具音量</Chinesesimp>
+            <Italian>Volume effetti maschera antigas</Italian>
         </Key>
         <Key ID="STR_KAT_Chemical_SETTING_gasMaskSoundVolume_DESC">
             <English>Determines how loud the breathing sounds are when using the gas mask</English>
@@ -638,6 +654,7 @@
             <Japanese>ガスマスク使用時の呼吸音の大きさを定義します</Japanese>
             <Chinese>確定使用防毒面具時呼吸聲的音量</Chinese>
             <Chinesesimp>确定使用防毒面具时呼吸声的音量</Chinesesimp>
+            <Italian>Determina quanto è alto il volume del respiro mentre si utilizza la maschera antigas</Italian>
         </Key>
         <Key ID="STR_KAT_Chemical_SETTING_gasMaskStaminaLoss">
             <English>Enable Stamina Loss when using Gas Mask</English>
@@ -645,6 +662,8 @@
             <French>Perte d'endurance avec l'utilisation du masque à gaz</French>
             <Japanese>ガスマスク使用時のスタミナ減少を有効化</Japanese>
             <Chinese>啟用使用防毒面具時的體力流失</Chinese>
+            <German>Ausdauerverlust bei der Nutzung von Gasmasken aktivieren</German>
+            <Italian>Abilità la perdita di Resistenza mentre si usa la maschera antigas</Italian>
         </Key>
         <Key ID="STR_KAT_Chemical_SETTING_infectionTime">
             <English>Time until infection</English>
@@ -668,7 +687,7 @@
             <Czech>Čas po který můžete stát v plynu bez infikování se či potřeby plynové masky</Czech>
             <French>Durée où vous pouvez tenir dans un gaz avant d'être infecté ou d'avoir besoin d'un masque à gaz</French>
             <Spanish>Tiempo que puedes resistir en el gas hasta que resultes infectado o requieras una mascara de gas</Spanish>
-            <Italian>Tempo che puoi restare nel gas prima di rimanere intossicato o aver bisogno di una maschera a gas.</Italian>
+            <Italian>Tempo che puoi restare nel gas prima di rimanere intossicato o aver bisogno di una maschera antigas.</Italian>
             <Polish>Ustala jak długo możesz stać w gazie zanim zostaniesz zainfekowany lub będziesz potrzebował maski gazowej.</Polish>
             <Portuguese>Tempo que você pode ficar no gás antes de ser infectado ou precisar de uma máscara de gás.</Portuguese>
             <Russian>Время, когда вы сможете постоять в газе, прежде чем заразитесь или вам понадобится противогаз.</Russian>
@@ -687,6 +706,8 @@
             <Japanese>中毒状態を表示</Japanese>
             <Chinese>顯示中毒</Chinese>
             <Chinesesimp>显示中毒</Chinesesimp>
+            <German>Vergiftungen anzeigen</German>
+            <Italian>Visualizza avvelenamento</Italian>
         </Key>
         <Key ID="STR_KAT_Chemical_SETTING_showPoisoning_DESC">
             <English>Determines if poisoning and intoxication is shown in the medical menu</English>
@@ -695,6 +716,8 @@
             <Japanese>中毒(poisoningとintoxication)状態を医療メニューに表示するかどうかを定義します</Japanese>
             <Chinese>確定醫療選單中是否顯示中毒</Chinese>
             <Chinesesimp>确定医疗菜单中是否显示中毒</Chinesesimp>
+            <German>Bestimmt, ob Vergiftungen im Behandlungsmenü angezeigt werden</German>
+            <Italian>Determina se avvelenamento ed intossicazione sono visualizzati nel menù medico</Italian>
         </Key>
         <Key ID="STR_KAT_Chemical_TakeOffGasMask">
             <English>Take off gas mask</English>
@@ -704,6 +727,7 @@
             <Japanese>ガスマスクを外す</Japanese>
             <Chinese>摘下防毒面具</Chinese>
             <Chinesesimp>摘下防毒面具</Chinesesimp>
+            <Italian>Rimuovi maschera antigas</Italian>
         </Key>
         <Key ID="STR_KAT_Chemical_ToxicGas_DisplayName">
             <English>82mm Toxic Gas Round</English>
@@ -862,13 +886,15 @@
             <English>KAT - ADV Medical: Chemical</English>
             <Japanese>KAM - 化学戦 (Chemical)</Japanese>
             <French>KAT - ADV Medical : Chimique</French>
+            <German>KAT - ADV Medical: Chemie</German>
+            <Italian>KAT - ADV Medica - Agenti Chimici</Italian>
         </Key>
         <Key ID="STR_KAT_Chemical_giveGasMask_action">
             <English>Put on gas mask</English>
             <Czech>Nasadit Plynovou masku</Czech>
             <French>Mettre le masque à gaz</French>
             <Spanish>Poner mascara de gas</Spanish>
-            <Italian>Indossa la maschera a gas</Italian>
+            <Italian>Indossa la maschera antigas</Italian>
             <Polish>Załóż maskę gazową</Polish>
             <Portuguese>Colocar máscara de gás</Portuguese>
             <Russian>Надеть противогаз</Russian>
@@ -885,7 +911,7 @@
             <Czech>Nasazování Plynové masky</Czech>
             <French>Mise en place du masque à gaz...</French>
             <Spanish>Colocando mascara de gas...</Spanish>
-            <Italian>Indossando la maschera a gas...</Italian>
+            <Italian>Indossando la maschera antigas...</Italian>
             <Polish>Zakładanie maski...</Polish>
             <Portuguese>Colocando máscara de gás...</Portuguese>
             <Russian>Надевается противогаз...</Russian>
@@ -936,7 +962,7 @@
             <Czech>Hmota používaná k utěsnění objektů např. při úniku toxických substancí</Czech>
             <French>Mastic servant à sceller les objets quand par exemple une substance toxique en sort</French>
             <Spanish>Sellante que se usa para sellar los objetos por ejemplo cuanto tienen una fuga de gas toxico</Spanish>
-            <Italian>Sigillante che è utilizzato per sigillare oggetti quanto per esemipo la sostanza tossica fuoriesce.</Italian>
+            <Italian>Sigillante che è utilizzato per sigillare oggetti quando per esemipo la sostanza tossica fuoriesce.</Italian>
             <Polish>Uszczelniacz używany do uszczelniania przedmiotów, na przykład w przypadku wycieków toksycznych gazów</Polish>
             <Portuguese>Selante que é usado para selar objetos quando, por exemplo, há vazamento de substância tóxica</Portuguese>
             <Russian>Герметик, который используется для герметизации предметов, например, при утечке токсичного вещества</Russian>

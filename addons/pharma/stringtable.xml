@@ -2431,6 +2431,13 @@
             <Russian>Настройки IV</Russian>
             <Dutch>IV instellingen</Dutch>
         </Key>
+        <Key ID="STR_KAT_Pharma_SubCategory_CWMP">
+            <English>CWMP Settings</English>
+            <French>Paramètres CWMP</French>
+            <Japanese>戦闘傷病治療薬(CWMP)設定</Japanese>
+            <German>CWMP Einstellungen</German>
+            <Italian>Impostazioni CWMP</Italian>
+        </Key>
         <Key ID="STR_KAT_Pharma_SubCategory_ApplyIO">
             <English>IO Settings</English>
             <Polish>Ustawienia IO</Polish>
@@ -2767,16 +2774,19 @@
         </Key>
         <Key ID="STR_KAT_Pharma_flush_log">
             <English>%1 performed a saline flush</English>
-            <Japanese>%1 が生理食塩水フラッシュを実施</Japanese>
+            <Czech>%1 provedl výplach fyziologickým roztokem</Czech>
             <French>%1 a effectué le rinçage salin</French>
-            <Korean>%1이(가) 식염수 주입을 수행했다</Korean>
-            <German>%1 hat eine Kochsalzlösungsspülung durchgeführt</German>
-            <Portuguese>%1 realizou uma lavagem salina</Portuguese>
             <Spanish>%1 realizó un enjuague con salino</Spanish>
-            <Finnish>%1 suoritti suolaliuoksen huuhtelun</Finnish>
-            <Russian>%1 провел промывание физиологическим раствором</Russian>
-            <Dutch>%1 voerde een salinespoeling uit</Dutch>
             <Italian>%1 ha eseguito un lavaggio salino</Italian>
+            <Portuguese>%1 realizou uma lavagem salina</Portuguese>
+            <Russian>%1 провел промывание физиологическим раствором</Russian>
+            <German>%1 hat eine Kochsalzlösungsspülung durchgeführt</German>
+            <Korean>%1이(가) 식염수 주입을 수행했다</Korean>
+            <Japanese>%1 が生理食塩液フラッシュを実施</Japanese>
+            <Chinese>%1 進行了鹽水沖洗</Chinese>
+            <Chinesesimp>%1 进行了盐水冲洗</Chinesesimp>
+            <Finnish>%1 suoritti suolaliuoksen huuhtelun</Finnish>
+            <Dutch>%1 voerde een salinespoeling uit</Dutch>
         </Key>
         <Key ID="STR_KAT_Pharma_IVblock_closed">
             <English>Patient's IV is blocked</English>
@@ -3127,6 +3137,13 @@
             <Finnish>Alkaa nykimään</Finnish>
             <Russian>Ты начинаешь дергаться...</Russian>
             <Dutch>Je begint te trillen</Dutch>
+        </Key>
+        <Key ID="STR_KAT_Pharma_cba_name">
+            <English>KAT - ADV Medical: Pharmacy</English>
+            <Japanese>KAM - 薬学 (Pharmacy)</Japanese>
+            <French>KAT - ADV Medical : Pharmacie</French>
+            <German>KAT - ADV Medical: Medikamente</German>
+            <Italian>KAT - ADV Medica: Farmaceutica</Italian>
         </Key>
         <Key ID="STR_KAT_Pharma_Pervitin_chrom3">
             <English>Your head starts to clear up and you stop twitching...</English>
@@ -3872,6 +3889,20 @@
             <Dutch>Lichtelijk onder normaal INR</Dutch>
             <French>légèrement inférieur à l'INR normal</French>
             <Italian>INR leggermente sotto la norma</Italian>
+        </Key>
+        <Key ID="STR_KAT_Pharma_treatmentTime_CWMP">
+            <English>Treatment time for CWMP</English>
+            <French>Temps de traitement pour le CWMP</French>
+            <Japanese>戦闘傷病治療薬(CWMP)の所要時間</Japanese>
+            <German>Anwendungszeit für CWMP</German>
+            <Italian>Tempo di trattamento per il CWMP</Italian>
+        </Key>
+        <Key ID="STR_KAT_Pharma_treatmentTime_Caffeine">
+            <English>Treatment time for Caffeine</English>
+            <French>Temps de traitement pour la caféine</French>
+            <Japanese>カフェインの所要時間</Japanese>
+            <German>Anwendungszeit für Koffein</German>
+            <Italian>Tempo di trattamento per la Caffeina</Italian>
         </Key>
         <Key ID="STR_KAT_Pharma_CheckCoag_slightly_aboveINR">
             <English>Sligtly Above normal INR</English>

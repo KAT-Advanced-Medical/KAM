@@ -214,7 +214,7 @@
             <Czech>Pokud je nějaká hodnota kritická, vybarví Activitylogy AED-X nebo Pulseoximeter červeně</Czech>
             <French>Colore les registres d'activité de l'AED-X ou de l'oxymètre de pouls en rouge, si une valeur est critique</French>
             <Spanish>Marca los registros de actividad del DEA-X o del Oximetro en rojo, si algún valor es crítico</Spanish>
-            <Italian>Colora gli Logs di attività di AED-X o il rosso del pulsossimetro, se un valore è critico</Italian>
+            <Italian>Se un valore è critico, colora i log di attività di AED-X o del pulsossimetro di rosso</Italian>
             <Polish>Zabarwia logi AED-X lub pulsoksymetru na czerwono, jeśli jakaś wartość jest krytyczna</Polish>
             <Portuguese>Coloriza os registros de atividade em vermelho se algum valor for crítico.</Portuguese>
             <Russian>Окрашивает журналы активности AED-X или пульсоксиметра в красный цвет, если какое-либо значение является критическим.</Russian>
@@ -276,6 +276,8 @@
             <English>KAT - ADV Medical: GUI</English>
             <Japanese>KAM - GUI</Japanese>
             <French>KAT - ADV Medical : GUI</French>
+            <German>KAT - ADV Medical: GUI</German>
+            <Italian>KAT - ADV Medica: Interfaccia Grafica </Italian>
         </Key>
         <Key ID="STR_KAT_GUI_SyringeTitle">
             <English>Syringe Preparation</English>

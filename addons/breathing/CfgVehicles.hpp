@@ -37,45 +37,19 @@ class CfgVehicles {
     class ACE_medicalSupplyCrate;
     class ACE_medicalSupplyCrate_advanced: ACE_medicalSupplyCrate {
         class TransportItems {
-            MACRO_ADDITEM(kat_Pulseoximeter,3);
+            MACRO_ADDITEM(kat_Pulseoximeter,5);
+            MACRO_ADDITEM(kat_nasal,10);
             MACRO_ADDITEM(kat_chestSeal,25);
             MACRO_ADDITEM(kat_aatKit,10);
-            MACRO_ADDITEM(kat_stethoscope,5);
-            MACRO_ADDITEM(kat_BVM,5);
-            MACRO_ADDITEM(kat_pocketBVM,5);
-            MACRO_ADDITEM(kat_nasal,10);
-        };
-        class TransportMagazines {
-            MACRO_ADDMAGAZINE(kat_oxygenTank_150,2);
-            MACRO_ADDMAGAZINE(kat_oxygenTank_300,2);
-        };
-    };
-    class kat_basicSupplyCrate: ACE_medicalSupplyCrate {
-        displayName = CSTRING(basicSupplyCrate_display);
-        class TransportItems {
-            MACRO_ADDITEM(Attachable_Helistretcher,5);
-            MACRO_ADDITEM(kat_stretcherBag,5);
-            MACRO_ADDITEM(kat_accuvac,2);
-            MACRO_ADDITEM(kat_suction,15);
-            MACRO_ADDITEM(kat_guedel,15);
-            MACRO_ADDITEM(kat_larynx,15);
-            MACRO_ADDITEM(kat_aatKit,15);
-            MACRO_ADDITEM(kat_chestSeal,15);
-            MACRO_ADDITEM(kat_Pulseoximeter,2);
+            MACRO_ADDITEM(kat_ncdKit,10);
             MACRO_ADDITEM(kat_stethoscope,2);
-            MACRO_ADDITEM(kat_IO_FAST,15);
-            MACRO_ADDITEM(kat_IV_16,15);
-            MACRO_ADDITEM(kat_crosspanel,2);
-            MACRO_ADDITEM(KAT_Empty_bloodIV_250,7);
-            MACRO_ADDITEM(KAT_Empty_bloodIV_500,7);
-            MACRO_ADDITEM(kat_AED,2);
-            MACRO_ADDITEM(kat_X_AED,2);
-            MACRO_ADDITEM(kat_BVM,5);
-            MACRO_ADDITEM(kat_pocketBVM,5);
+            MACRO_ADDITEM(kat_BVM,2);
+            MACRO_ADDITEM(kat_pocketBVM,2);
         };
         class TransportMagazines {
             MACRO_ADDMAGAZINE(kat_oxygenTank_150,2);
             MACRO_ADDMAGAZINE(kat_oxygenTank_300,2);
+            MACRO_ADDMAGAZINE(kat_personal_oxygen,2);
         };
     };
 
