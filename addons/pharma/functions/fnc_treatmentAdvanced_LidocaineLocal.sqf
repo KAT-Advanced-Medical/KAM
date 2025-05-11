@@ -29,7 +29,7 @@ if (_className in ["syringe_lidocaine_5ml_1", "syringe_lidocaine_5ml_3"]) exitWi
                 private _partIndex = ALL_BODY_PARTS find toLower _bodyPart;
                 _localAnesthesia = GET_LOCAL_ANESTHESIA(_patient,_partIndex);
                 _localAnesthesia = _localAnesthesia + 0.2;
-                _patient setVariable [VAR_VASOCONSTRICTION, _localAnesthesia, true]
+                _patient setVariable [VAR_VASOCONSTRICTION, _localAnesthesia, true];
                 if (_lidocaineTarget > 5) exitWith {
                     [_idPFH] call CBA_fnc_removePerFrameHandler;
                 };
@@ -49,7 +49,7 @@ if (_className in ["syringe_lidocaine_5ml_1", "syringe_lidocaine_5ml_3"]) exitWi
                 private _partIndex = ALL_BODY_PARTS find toLower _bodyPart;
                 _localAnesthesia = GET_LOCAL_ANESTHESIA(_patient,_partIndex);
                 _localAnesthesia = _localAnesthesia - 0.5;
-                _patient setVariable [VAR_VASOCONSTRICTION, _localAnesthesia, true]
+                _patient setVariable [VAR_VASOCONSTRICTION, _localAnesthesia, true];
                 if (_lidocaineTarget > 20) exitWith {
                     [_idPFH] call CBA_fnc_removePerFrameHandler;
                 };
