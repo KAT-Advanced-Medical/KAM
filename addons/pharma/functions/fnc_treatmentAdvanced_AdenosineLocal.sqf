@@ -15,9 +15,7 @@
  * Public: No
  */
 params ["_patient", "_classname"];
-systemChat str "AdenosineLocal";
 if (_classname isEqualTo "ACE_adenosine") exitWith {};
-systemChat str "AdenosineLocal";
 private _cardiacRhythm = _patient getVariable [QEGVAR(circulation,cardiacArrestType), 0];
 _patient setVariable [QEGVAR(circulation,cardiacArrestType), 1];
 private _medStack = _patient call ACEFUNC(medical_treatment,getAllMedicationCount);
@@ -31,7 +29,7 @@ private _amiodaroneEffectiveness = 0;
     };
 } forEach _medStack;
 if (_amiodaroneEffectiveness > 0.2) then {
-    _time = random(16) + 16
+    _time = random(12) + 12
 } else {
     _time = random(8) + 8
 };

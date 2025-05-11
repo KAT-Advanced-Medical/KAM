@@ -48,7 +48,8 @@ if (
     _fentanylEffectiveness <= 0.8 &&
     _ketamineEffectiveness <= 0.8 &&
     _nalbuphineEffectiveness <= 0.8 &&
-    _morphineEffectiveness <= 0.8
+    _morphineEffectiveness <= 0.8 &&
+    (GET_LOCAL_ANESTHESIA(_patient,_partIndex) <= 0.8)
 ) then {
     [_patient, [0.6, 0.7, 0.8] select (floor random 3)] call ACEFUNC(medical_status,adjustPainLevel);
 };

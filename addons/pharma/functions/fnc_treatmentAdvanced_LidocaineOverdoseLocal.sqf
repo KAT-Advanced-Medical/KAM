@@ -30,7 +30,6 @@ private _hrAdjust = -50 + floor random ((-30 - -50) + 1);
             if (!(alive _patient)) exitWith {
                 [_idPFH] call CBA_fnc_removePerFrameHandler;
             };
-                _lidocaineOverdoseTarget = _lidocaineOverdoseTarget + 1;
                 if (_lidocaineOverdoseTarget > 12) exitWith {
                     if (random(100) < 25) then {
                     [{
