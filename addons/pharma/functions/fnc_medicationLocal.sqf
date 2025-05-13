@@ -128,7 +128,7 @@ if (GVAR(AMS_Enabled)) then {
         if ((toUpper (_medicationName select [count _medicationName - 2])) isEqualTo "IV") then {
             _medicationName = _medicationName select [0, count _medicationName - 2];
         };
-        if (_medicationName in ["Lorazepam","EACA","TXA","TXAAuto","Amiodarone","Flumazenil"]) then {
+        if (_medicationName in ["Lorazepam","EACA","TXA","Amiodarone","Flumazenil"]) then {
         [format ["kat_pharma_%1Local", toLower _medicationName], [_patient, _bodyPart], _patient] call CBA_fnc_targetEvent;
         };
 
@@ -183,7 +183,7 @@ if (GVAR(AMS_Enabled)) then {
     [_patient, _className, _timeTillMaxEffect, _timeInSystem, _heartRateChange, _painReduce, _viscosityChange, _dose, _alphaFactor, _opioidRelief, _opioidEffect, _opioidDepression, _respiratoryRate] call EFUNC(vitals,addMedicationAdjustment);
     [_patient, _className, _incompatibleMedication] call FUNC(onMedicationUsage);
 
-    if (_className in ["Lorazepam","Ketamine","EACA","TXA","TXAAuto","Atropine","Amiodarone","Flumazenil","Lidocaine"]) then {
+    if (_className in ["Lorazepam","Ketamine","EACA","TXA","Atropine","Amiodarone","Flumazenil","Lidocaine"]) then {
         [format ["kat_pharma_%1Local", toLower _className], [_patient, _bodyPart, _classname], _patient] call CBA_fnc_targetEvent;
     };
 
