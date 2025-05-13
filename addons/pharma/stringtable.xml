@@ -537,6 +537,9 @@
             <Finnish>Edistää verihyytymien muodostumista</Finnish>
             <Dutch>Bevorderd bloedstolling</Dutch>
         </Key>
+        <Key ID="STR_KAT_Pharma_TXAAuto_Box_Display">
+            <English>TXA Autoinjector</English>
+        </Key>
         <Key ID="STR_KAT_Pharma_TXA_Box_Display">
             <English>TXA</English>
             <German>TXA</German>
@@ -572,6 +575,9 @@
             <Portuguese>Injetar TXA</Portuguese>
             <Finnish>Paina TXA</Finnish>
             <Dutch>Injecteer TXA</Dutch>
+        </Key>
+        <Key ID="STR_KAT_Pharma_Take_TXAAuto">
+            <English>Inject TXA</English>
         </Key>
         <Key ID="STR_KAT_Pharma_Norep_DescShort">
             <English>Used to raise blood pressure</English>
@@ -1918,6 +1924,9 @@
         <Key ID="STR_KAT_Pharma_treatmentTime_TXAIM">
             <English>Treatment time for IM TXA</English>
         </Key>
+        <Key ID="STR_KAT_Pharma_medLvl_TXAAuto">
+            <English>Medical level required for TXA Autoinjector</English>
+        </Key>
         <Key ID="STR_KAT_Pharma_medLvl_Norepinephrine">
             <English>Medical level required for Norepinephrine</English>
             <Polish>Poziom wyszkolenia medycznego dla Noradrenaliny</Polish>
@@ -2427,6 +2436,9 @@
             <Finnish>IV asetukset</Finnish>
             <Russian>Настройки IV</Russian>
             <Dutch>IV instellingen</Dutch>
+        </Key>
+        <Key ID="STR_KAT_Pharma_SubCategory_Coagulation">
+            <English>Coagulation Settings</English>
         </Key>
         <Key ID="STR_KAT_Pharma_SubCategory_ApplyIO">
             <English>IO Settings</English>
@@ -4961,6 +4973,18 @@
             <Portuguese>Usado para tratar bradicardia</Portuguese>
             <Finnish>Käytetään bradykardian hoitoon</Finnish>
             <Dutch>Wordt gebruikt om chemische blootstelling en bradycardie te behandelen</Dutch>
+        </Key>
+        <Key ID="STR_KAT_Pharma_SETTING_Coagulation_Delay">
+            <English>Coagulation Delay</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_SETTING_Coagulation_Delay_DESC">
+            <English>Minimum time for coagulation to close a wound</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_SETTING_Coagulation_Random_Delay">
+            <English>Coagulation Delay Extension</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_SETTING_Coagulation_Random_Delay_DESC">
+            <English>Additional time coagulation can take to close a wound, random number between 0 and this setting</English>
         </Key>
     </Package>
 </Project>
