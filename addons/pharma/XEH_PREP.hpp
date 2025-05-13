@@ -82,6 +82,7 @@ PREP(treatmentAdvanced_PervitinOverdoseLocal);
 PREP(treatmentAdvanced_PhenylephrineOverdoseLocal);
 PREP(treatmentAdvanced_Reorientation);
 PREP(treatmentAdvanced_ReorientationLocal);
+PREP(treatmentAdvanced_TXAAutoLocal);
 PREP(treatmentAdvanced_TXALocal);
 PREP(treatmentAdvanced_TXAOverdoseLocal);
 PREP(vehicleCheckDialysis);

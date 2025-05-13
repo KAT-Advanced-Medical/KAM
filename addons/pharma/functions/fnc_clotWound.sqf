@@ -114,7 +114,7 @@ private _fnc_clotWound = {
     private _pulse = _unit getVariable [VAR_HEART_RATE, 80];
     private _coagulationFactor = _unit getVariable [QGVAR(coagulationFactor), 30];
     private _medStack = [_patient, false] call ACEFUNC(medical_treatment,getAllMedicationCount);
-    private _medsToCheck = ["TXA", "EACA"];
+    private _medsToCheck = ["TXA", "EACA", "TXAAuto"];
     private _eacaEffectiveness = 0;
     private _txaEffectiveness = 0;
     {

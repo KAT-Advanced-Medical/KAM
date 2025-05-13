@@ -454,6 +454,7 @@ PREP_RECOMPILE_END;
     true
 ] call CBA_Settings_fnc_init;
 
+
 [
     QGVAR(medLvl_TXAIM),
     "LIST",
@@ -467,6 +468,24 @@ PREP_RECOMPILE_END;
     QGVAR(treatmentTime_TXAIM),
     "SLIDER",
     [LLSTRING(treatmentTime_TXAIM)],
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_TXA)],
+    [0.1, 10, 7, 1],
+    true
+] call CBA_Settings_fnc_init;
+
+[
+    QGVAR(medLvl_TXAAuto),
+    "LIST",
+    [LLSTRING(medLvl_TXAAuto)],
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_TXA)],
+    [[0, 1, 2], [ACELSTRING(medical_treatment,Anyone), ACELSTRING(medical_treatment,Medics), ACELSTRING(medical_treatment,Doctors)], 0],
+    true
+] call CBA_Settings_fnc_init;
+
+[
+    QGVAR(treatmentTime_TXAAuto),
+    "SLIDER",
+    [LLSTRING(treatmentTime_TXAAuto)],
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_TXA)],
     [0.1, 10, 7, 1],
     true
