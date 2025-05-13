@@ -132,39 +132,39 @@ class CfgWeapons {
             mass = 2.5;
         };
     };
-    //class kat_MorphineIVInfusion: ACE_salineIV_250 {
-    //    scope = 1;
-    //    author = "Cplhardcore";
-    //    displayName = CSTRING(Morphine_Infusion);
-    //    descriptionShort = CSTRING(Morphine_Infusion_Desc_Short);
-    //   descriptionUse = CSTRING(Morphine_Infusion_Desc_Use);
-    //    ACE_isMedicalItem = 1;
-    //    class ItemInfo: CBA_MiscItem_ItemInfo {
-    //        mass = 2.5;
-    //    };
-    //};
-    //class kat_EpinephrineIVInfusion: ACE_salineIV_250 {
-    //    scope = 1;
-    //    author = "Cplhardcore";
-    //    displayName = CSTRING(Epinephrine_Infusion);
-    //   descriptionShort = CSTRING(Epinephrine_Infusion_Desc_Short);
-    //    descriptionUse = CSTRING(Epinephrine_Infusion_Desc_Use);
-    //    ACE_isMedicalItem = 1;
-    //    class ItemInfo: CBA_MiscItem_ItemInfo {
-    //        mass = 2.5;
-    //    };
-    //};
-    //class kat_EtomidateInfusion: ACE_salineIV_250 {
-    //    scope = 1;
-    //    author = "Cplhardcore";
-    //    displayName = CSTRING(Etomidate_Infusion);
-    //    descriptionShort = CSTRING(Etomidate_Infusion_Desc_Short);
-    //    descriptionUse = CSTRING(Etomidate_Infusion_Desc_Use);
-    //    ACE_isMedicalItem = 1;
-    //    class ItemInfo: CBA_MiscItem_ItemInfo {
-    //        mass = 2.5;
-    //    };
-    //};
+    class kat_MorphineIVInfusion: ACE_salineIV_250 {
+        scope = 1;
+        author = "Cplhardcore";
+        displayName = CSTRING(Morphine_Infusion);
+        descriptionShort = CSTRING(Morphine_Infusion_Desc_Short);
+       descriptionUse = CSTRING(Morphine_Infusion_Desc_Use);
+        ACE_isMedicalItem = 1;
+        class ItemInfo: CBA_MiscItem_ItemInfo {
+            mass = 2.5;
+        };
+    };
+    class kat_EpinephrineIVInfusion: ACE_salineIV_250 {
+        scope = 1;
+        author = "Cplhardcore";
+        displayName = CSTRING(Epinephrine_Infusion);
+       descriptionShort = CSTRING(Epinephrine_Infusion_Desc_Short);
+        descriptionUse = CSTRING(Epinephrine_Infusion_Desc_Use);
+        ACE_isMedicalItem = 1;
+        class ItemInfo: CBA_MiscItem_ItemInfo {
+            mass = 2.5;
+        };
+    };
+    class kat_EtomidateInfusion: ACE_salineIV_250 {
+        scope = 1;
+        author = "Cplhardcore";
+        displayName = CSTRING(Etomidate_Infusion);
+        descriptionShort = CSTRING(Etomidate_Infusion_Desc_Short);
+        descriptionUse = CSTRING(Etomidate_Infusion_Desc_Use);
+        ACE_isMedicalItem = 1;
+        class ItemInfo: CBA_MiscItem_ItemInfo {
+            mass = 2.5;
+        };
+    };
     class kat_PackedRBCIV_500: ACE_bloodIV_500 {
         scope = 2;
         author = "Cplhardcore";

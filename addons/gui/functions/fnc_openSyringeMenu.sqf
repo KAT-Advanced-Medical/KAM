@@ -14,8 +14,8 @@
  *
  * Public: No
  */
-[] call FUNC(updateMedications);
 [] call FUNC(updateSyringes);
+[{[] call FUNC(updateMedications);}, [], 0.1] call CBA_fnc_waitAndExecute;
 [{[] call FUNC(updateDoses);}, [], 0.1] call CBA_fnc_waitAndExecute;
 [{ACEGVAR(medical_gui,target) setVariable ["kat_SyringeMenu", true, true];
 ctrlShow [71300, true];

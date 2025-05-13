@@ -74,20 +74,54 @@ private _populateListBox = {
     params ["_foundMedications", "_listBox"];
 
     lbClear _listBox;
+
+    // Get selected syringe type (e.g., "5ml", "10ml", "SalineIV")
+    private _syringeListBox = findDisplay 38580 displayCtrl 71303;
+    private _selectedIndex = lbCurSel _syringeListBox;
+    if (_selectedIndex == -1) exitWith { systemChat "No syringe type selected, Commander."; };
+
+    private _selectedDose = _syringeListBox lbData _selectedIndex;
+
+    // List of items compatible with SalineIV
+    private _salineIVWhitelist = [
+        "kat_epinephrineIV",
+        "kat_morphineIV",
+        "kat_etomidate"
+    ];
+
+    private _doseVariants = ["Dose1", "Dose2", "Dose3"];
+
     {
         private _medItem = _x select 0;
-        private _medCount = _x select 1; 
+        private _medCount = _x select 1;
+
         if (_medItem != "") then {
-            private _config = configFile >> "CfgWeapons" >> _medItem;
-            private _displayName = getText (_config >> "displayName");
-            private _picture = getText (_config >> "picture");
-            private _data = toLower ((_medItem splitString "_") select 1);
-            private _entryText = format ["%1 (x%2)", _displayName, _medCount];
-            private _index = _listBox lbAdd _entryText;
-            _listBox lbSetPicture [_index, _picture];
-            _listBox lbSetData [_index, _data];
+            private _parts = _medItem splitString "_";
+            private _medName = if ((count _parts) > 1) then {_parts select 1} else {_medItem};
+
+            private _valid = false;
+            systemchat str _medItem;
+            systemchat str _selectedDose;
+            if (_selectedDose == "SalineIV") then {
+                _valid = _medItem in _salineIVWhitelist;
+            } else {
+                {
+                    private _key = format ["STR_KAT_Pharma_%1_%2_%3", _medName, _selectedDose, _x];
+                    if (localize _key != _key) exitWith { _valid = true };
+                } forEach _doseVariants;
+            };
+
+            if (_valid) then {
+                private _config = configFile >> "CfgWeapons" >> _medItem;
+                private _displayName = getText (_config >> "displayName");
+                private _picture = getText (_config >> "picture");
+                private _entryText = format ["%1 (x%2)", _displayName, _medCount];
+                private _index = _listBox lbAdd _entryText;
+                _listBox lbSetPicture [_index, _picture];
+                _listBox lbSetData [_index, toLower _medName];
+            };
         };
-    } forEach _foundMedications; 
+    } forEach _foundMedications;
 };
 
 [_foundMedications, _listBox] call _populateListBox; }, [], 0.01] call CBA_fnc_waitAndExecute;

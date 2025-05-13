@@ -36,15 +36,17 @@ variantDelay = 0;
 
     private _tension = (_patient getVariable [QGVAR(tensionpneumothorax), false] || (_patient getVariable [QGVAR(pneumothorax), 0] > 0));
     private _hemo = _patient getVariable [QGVAR(hemopneumothorax), false];
+    private _trali = _patient getVariable [QGVAR(TRALI), 0];
 
     _breathDelay = 20/_HR;
 
     _random = round random 1;
 
-    private _type = 3;
+    private _type = 4;
 
     if(_hemo && _random >= 0.5) then {_type = 1};
     if(_tension && _random >= 0.5) then {_type = 2};
+    if((_trali > 6) && _random >= 0.5) then {_type = 3};
 
     if(!(soundPlaying)) then {
         switch (_type) do {
@@ -94,7 +96,35 @@ variantDelay = 0;
                     };
                 }, [_medic,_patient,_volume,_breathDelay], variantDelay + _breathDelay] call CBA_fnc_waitAndExecute;
             };
-            case 3;
+            case 3: { //Transfusion-related acute lung injury (Crackling)
+                if (round random 1 >= 0.5) then {
+                    playSoundUI [QPATHTOF(audio\trali_inhale1.ogg), _volume, 1];
+                    variantDelay = 1.65;
+                } else {
+                    playSoundUI [QPATHTOF(audio\trali_inhale2.ogg), _volume, 1];
+                    variantDelay = 1.7;
+                };
+                soundPlaying = true;
+                [{
+                    params ["_medic","_patient","_volume","_breathDelay"];
+
+                    if (_medic getVariable [QGVAR(usingStethoscope), false] && (alive _patient)) then {
+                        if (round random 1 >= 0.5) then {
+                            playSoundUI [QPATHTOF(audio\trali_exhale1.ogg), _volume, 1];
+                            variantDelay = 0.85;
+                        } else {
+                            playSoundUI [QPATHTOF(audio\trali_exhale2.ogg), _volume, 1];
+                            variantDelay = 0.8;
+                        };
+                        [{
+                            soundPlaying = false;
+                        }, [], variantDelay + _breathDelay] call CBA_fnc_waitAndExecute;
+                    } else {
+                        soundPlaying = false;
+                    };
+                }, [_medic,_patient,_volume,_breathDelay], variantDelay + _breathDelay] call CBA_fnc_waitAndExecute;
+            };
+            case 4;
             default { // clear
                 if (round random 1 >= 0.5) then {
                     playSoundUI [QPATHTOF(audio\clear_inhale1.ogg), _volume, 1];
