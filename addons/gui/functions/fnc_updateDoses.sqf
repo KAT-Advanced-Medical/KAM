@@ -10,7 +10,7 @@
  * None
  *
  * Example:
- * [] call kat_medical_gui_fnc_updateMedication;
+ * [] call kat_medical_gui_fnc_updateDoses;
  *
  * Public: No
  */
