@@ -3386,5 +3386,20 @@
         <Key ID="STR_KAT_Circulation_Packed_RBC_IV_Desc_Use">
             <English>O Negative infusion blood used in strict and rare events to replenish blood supply usually conducted in the transport phase of medical care.</English>
         </Key>
+        <Key ID="STR_KAT_Circulation_Doxapram_Infusion">
+            <English>Doxapram Infusion IV (250ml)</English>
+        </Key>
+        <Key ID="STR_KAT_Circulation_Doxapram_Infusion_Desc_Short">
+            <English>Doxapram Infusion IV, for management of respiratory issues</English>
+        </Key>
+        <Key ID="STR_KAT_Circulation_Doxapram_Infusion_Desc_Use">
+            <English>A Infusion of Doxapram and Saline introduced into the blood system through an IV.</English>
+        </Key>
+        <Key ID="STR_KAT_Circulation_Actions_DoxapramInfusion">
+            <English>Transfuse Doxapram Infusion</English>
+        </Key>
+        <Key ID="STR_KAT_Circulation_Transfusing_Doxapram_Infusion">
+            <English>Transfusing Doxapram Infusion...</English>
+        </Key>
     </Package>
 </Project>

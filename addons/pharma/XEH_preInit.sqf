@@ -99,6 +99,15 @@ PREP_RECOMPILE_END;
     true
 ] call CBA_Settings_fnc_init;
 
+[
+    QGVAR(prepTime_PrepInfusion),
+    "SLIDER",
+    [LLSTRING(prepTime_PrepInfusion), LLSTRING(prepTime_PrepInfusion_Desc)],
+    [CBA_SETTINGS_CAT, ELSTRING(GUI,SubCategory_Basic)],
+    [1, 25, 12, 0],
+    true
+] call CBA_Settings_fnc_init;
+
 //IV Settings Category
 [
     QGVAR(medLvl_ApplyIV),

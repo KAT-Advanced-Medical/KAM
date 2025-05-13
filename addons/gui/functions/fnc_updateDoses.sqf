@@ -41,7 +41,7 @@ _medListBox ctrlAddEventHandler ["LBSelChanged", {
             private _medBaseName = _medParts select (count _medParts - 1);
 
             if (_syringeType == "salineIV") then {
-                private _index = _doseListBox lbAdd LSTRING(Infusion);
+                private _index = _doseListBox lbAdd LLSTRING(Infusion);
                 _doseListBox lbSetValue [_index, 4];
             } else {
                 private _doseLevels = [1, 2, 3];

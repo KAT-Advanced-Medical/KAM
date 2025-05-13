@@ -137,7 +137,7 @@ class CfgWeapons {
         author = "Cplhardcore";
         displayName = CSTRING(Morphine_Infusion);
         descriptionShort = CSTRING(Morphine_Infusion_Desc_Short);
-       descriptionUse = CSTRING(Morphine_Infusion_Desc_Use);
+        descriptionUse = CSTRING(Morphine_Infusion_Desc_Use);
         ACE_isMedicalItem = 1;
         class ItemInfo: CBA_MiscItem_ItemInfo {
             mass = 2.5;
@@ -147,7 +147,7 @@ class CfgWeapons {
         scope = 1;
         author = "Cplhardcore";
         displayName = CSTRING(Epinephrine_Infusion);
-       descriptionShort = CSTRING(Epinephrine_Infusion_Desc_Short);
+        descriptionShort = CSTRING(Epinephrine_Infusion_Desc_Short);
         descriptionUse = CSTRING(Epinephrine_Infusion_Desc_Use);
         ACE_isMedicalItem = 1;
         class ItemInfo: CBA_MiscItem_ItemInfo {
@@ -160,6 +160,17 @@ class CfgWeapons {
         displayName = CSTRING(Etomidate_Infusion);
         descriptionShort = CSTRING(Etomidate_Infusion_Desc_Short);
         descriptionUse = CSTRING(Etomidate_Infusion_Desc_Use);
+        ACE_isMedicalItem = 1;
+        class ItemInfo: CBA_MiscItem_ItemInfo {
+            mass = 2.5;
+        };
+    };
+    class kat_DoxapramInfusion: ACE_salineIV_250 {
+        scope = 1;
+        author = "Cplhardcore";
+        displayName = CSTRING(Doxapram_Infusion);
+        descriptionShort = CSTRING(Doxapram_Infusion_Desc_Short);
+        descriptionUse = CSTRING(Doxapram_Infusion_Desc_Use);
         ACE_isMedicalItem = 1;
         class ItemInfo: CBA_MiscItem_ItemInfo {
             mass = 2.5;
