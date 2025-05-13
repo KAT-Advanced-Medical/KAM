@@ -44,7 +44,6 @@ private _previousCyclePao2 = (_bloodGas select 1);
 if (IN_CRDC_ARRST(_unit)) then { 
     // When in arrest, there should be no effecive breaths but still a minimum O2 demand. Zero O2 demand would mean a dead patient. Actual ventilation is 1 to prevent issues in the gas tension functions
     _demandVentilation = MINIMUM_VENTILATION;
-    _respiratoryRate = [0, 20] select (_unit getVariable [QEGVAR(breathing,BVMInUse), false]);
     _respiratoryDepression = 1;
     _respiratoryRate = [0, 20] select (_unit getVariable [QEGVAR(breathing,BVMInUse), false]);
     _respiratoryDepth = [0, 10] select (_unit getVariable [QEGVAR(breathing,BVMInUse), false]);
