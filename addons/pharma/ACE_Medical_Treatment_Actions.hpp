@@ -190,7 +190,7 @@ class ACE_Medical_Treatment_Actions {
         medicRequired = QGVAR(medLvl_TXAAuto);
         items[] = {"kat_TXAAuto"};
         condition = "";
-        treatmentTime = 5;
+        treatmentTime = QGVAR(treatmentTime_TXAAuto);
         callbackSuccess = QFUNC(medication);
         sounds[] = {};
     };

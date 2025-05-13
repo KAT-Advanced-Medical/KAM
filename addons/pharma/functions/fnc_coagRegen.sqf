@@ -41,7 +41,7 @@ if !(GVAR(coagulation)) exitWith {};
     private _limitRegenCoagFactors = missionNamespace getVariable [QGVAR(coagulation_factor_count), 30];
     private _cooldownON = _unit getVariable [QGVAR(coagulationRegenCooldown), false];
     private _medStack = [_patient, false] call ACEFUNC(medical_treatment,getAllMedicationCount);
-    private _medsToCheck = ["TXA", "EACA"];
+    private _medsToCheck = ["TXA", "EACA", "TXAAuto"];
     private _eacaEffectiveness = 0;
     private _txaEffectiveness = 0;
     {

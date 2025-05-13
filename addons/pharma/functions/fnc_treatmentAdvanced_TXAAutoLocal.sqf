@@ -1,6 +1,6 @@
 #include "..\script_component.hpp"
 /*
- * Author: 2LT.Mazinski
+ * Author: Mazinski/Cplhardcore
  * Begins TXA bandaging process
  *
  * Arguments:
@@ -17,47 +17,67 @@
  */
 
 params ["_patient", "_bodyPart"];
-
 private _partIndex = ALL_BODY_PARTS find toLower _bodyPart;
+private _medStack = [_patient, false] call ACEFUNC(medical_treatment,getAllMedicationCount);
+private _medsToCheck = ["TXA"];
+private _txaEffectiveness = 0;
+{
+    private _medName = toLower (_x select 0);
+    private _effectiveness = _x select 2;
+    if ("TXA" in _medName) then {
+        _txaEffectiveness = _txaEffectiveness max _effectiveness;
+    };
+} forEach _medStack;
+private _allowStack = missionNamespace getVariable [QGVAR(allowStackScript_TXA), true];
+private _keepRunning = missionNamespace getVariable [QGVAR(keepScriptRunning_TXA), false];
+private _cycleTime = missionNamespace getVariable [QGVAR(bandageCycleTime_TXA), 5];
 
-if !(GVAR(coagulation)) then {
-    [{
-        params ["_args", "_idPFH"];
-        _args params ["_patient"];
+if (!(GVAR(coagulation)) || GVAR(coagulation_allow_TXA_script)) then {
 
-        private _alive = alive _patient;
-        private _exit = true;
+        if ((_txaEffectiveness > 0.3) && !(_allowStack)) exitWith {};
 
-        if !(GVAR(kidneyAction)) then {
-            _patient setVariable [QGVAR(pH), 1500, true];
-        };
+        [{
+            params ["_args", "_idPFH"];
+            _args params ["_patient", "_keepRunning"];
 
-        private _random = random 1000;
-        private _ph = (_patient getVariable [QGVAR(pH), 1500]) - 500;
+            private _alive = alive _patient;
+            private _exit = true;
+            private _random = random [6.4, 6.8, 7.2];
+            private _ph = GET_PH(_patient);
 
-        if (_random <= _ph) then {
-            {
-                _x params ["_targetBodyPart"];
-                
-                private _openWounds = GET_OPEN_WOUNDS(_patient);
-                private _openWoundsOnPart = _openWounds getOrDefault [_targetBodyPart, []];
+            if !(_alive) exitWith {
+                [_idPFH] call CBA_fnc_removePerFrameHandler;
+            };
 
-                if (_openWoundsOnPart isEqualTo [] || [_patient,_x] call ACEFUNC(medical_treatment,hasTourniquetAppliedTo)) then {
-                    continue;
-                };
+            if (_random <= _ph) then {
+                {
+                    _x params ["_targetBodyPart"];
+                    
+                    private _openWounds = GET_OPEN_WOUNDS(_patient);
+                    private _openWoundsOnPart = _openWounds getOrDefault [_targetBodyPart, []];
 
-                private _woundIndex = _openWoundsOnPart findIf {(_x select 1) > 0 && (_x select 2) > 0};
-                
-                if (_woundIndex != -1) exitWith {
-                    [QACEGVAR(medical_treatment,bandageLocal), [_patient, _targetBodyPart, "UnstableClot"], _patient] call CBA_fnc_targetEvent;
-                    _exit = false;
-                };
-            } forEach ALL_BODY_PARTS_PRIORITY;
-        };
+                    if (_openWoundsOnPart isEqualTo [] || [_patient,_x] call ACEFUNC(medical_treatment,hasTourniquetAppliedTo)) then {
+                        continue;
+                    };
 
-        if (!(_alive) || (_exit)) exitWith {
-            [_idPFH] call CBA_fnc_removePerFrameHandler;
-        };
+                    private _woundIndex = _openWoundsOnPart findIf {(_x select 1) > 0 && (_x select 2) > 0};
+                    
+                    if (_woundIndex != -1) exitWith {
+                        [QACEGVAR(medical_treatment,bandageLocal), [_patient, _targetBodyPart, "PackingBandage"], _patient] call CBA_fnc_targetEvent;
+                        _exit = false;
+                    };
+                } forEach ALL_BODY_PARTS_PRIORITY;
+            };
 
-    }, 5, [_patient]] call CBA_fnc_addPerFrameHandler;
+            [{
+                params["_patient", "_idPFH"];
+                [_idPFH] call CBA_fnc_removePerFrameHandler;
+            },
+            [_patient, _idPFH], 300] call CBA_fnc_waitAndExecute;
+
+            if (_exit && !(_keepRunning)) exitWith {
+                [_idPFH] call CBA_fnc_removePerFrameHandler;
+            };
+
+        }, _cycleTime, [_patient, _keepRunning]] call CBA_fnc_addPerFrameHandler;
 };

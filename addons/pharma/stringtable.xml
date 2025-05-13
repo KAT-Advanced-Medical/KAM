@@ -1927,6 +1927,9 @@
         <Key ID="STR_KAT_Pharma_medLvl_TXAAuto">
             <English>Medical level required for TXA Autoinjector</English>
         </Key>
+        <Key ID="STR_KAT_Pharma_treatmentTime_TXAAuto">
+            <English>Treatment time for TXA Autoinjector</English>
+        </Key>
         <Key ID="STR_KAT_Pharma_medLvl_Norepinephrine">
             <English>Medical level required for Norepinephrine</English>
             <Polish>Poziom wyszkolenia medycznego dla Noradrenaliny</Polish>
