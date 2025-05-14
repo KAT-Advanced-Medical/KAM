@@ -477,9 +477,6 @@
             <Finnish>Käytetään bradykardian hoitoon</Finnish>
             <Dutch>Wordt gebruikt om chemische blootstelling en bradycardie te behandelen</Dutch>
         </Key>
-        <Key ID="STR_KAT_Pharma_Atropine_DescShort">
-            <English>Used to treat chemical exposure</English>
-        </Key>
         <Key ID="STR_KAT_Pharma_Atropine_Box_Display">
             <English>Atropine Autoinjector</English>
             <German>Atropin</German>
