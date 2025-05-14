@@ -4993,5 +4993,47 @@
             <Finnish>Käytetään bradykardian hoitoon</Finnish>
             <Dutch>Wordt gebruikt om chemische blootstelling en bradycardie te behandelen</Dutch>
         </Key>
+         <Key ID="STR_KAT_Pharma_TXAAuto_Box_Display">
+            <English>TXA Autoinjector</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_TXA_Box_Display">
+            <English>TXA</English>
+            <German>TXA</German>
+            <Polish>TXA</Polish>
+            <French>Acide Tranexamique</French>
+            <Italian>TXA</Italian>
+            <Spanish>ATX</Spanish>
+            <Chinese>TXA</Chinese>
+            <Chinesesimp>血栓素</Chinesesimp>
+            <Korean>TXA</Korean>
+            <Turkish>TXA</Turkish>
+            <Czech>TXA</Czech>
+            <Japanese>トラネキサム酸 (TXA)</Japanese>
+            <Russian>TXA</Russian>
+            <Portuguese>TXA</Portuguese>
+            <Finnish>TXA</Finnish>
+            <Dutch>TXA</Dutch>
+        </Key>
+        <Key ID="STR_KAT_Pharma_Take_TXA">
+            <English>Push TXA</English>
+            <German>TXA verabreichen</German>
+            <Polish>Wstrzyknij TXA</Polish>
+            <French>Injecter Acide Tranexamique</French>
+            <Italian>Iniettare TXA</Italian>
+            <Spanish>Administrar ATX</Spanish>
+            <Chinese>推动TXA</Chinese>
+            <Chinesesimp>推注血栓素</Chinesesimp>
+            <Korean>TXA 투여</Korean>
+            <Turkish>TXA'yı itin</Turkish>
+            <Czech>Aplikovat TXA</Czech>
+            <Japanese>トラネキサム酸 (TXA)を注入</Japanese>
+            <Russian>Ввести TXA</Russian>
+            <Portuguese>Injetar TXA</Portuguese>
+            <Finnish>Paina TXA</Finnish>
+            <Dutch>Injecteer TXA</Dutch>
+        </Key>
+        <Key ID="STR_KAT_Pharma_Take_TXAAuto">
+            <English>Inject TXA</English>
+        </Key>
     </Package>
 </Project>

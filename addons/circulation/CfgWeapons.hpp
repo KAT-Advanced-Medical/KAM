@@ -277,6 +277,17 @@ class CfgWeapons {
             mass = 0;
         };
     };
+    class kat_BPCuff: ACE_ItemCore {
+        scope = 2;
+        author = "Cplhardcore";
+        displayName = CSTRING(BPCuff_display);
+        descriptionShort = CSTRING(BPCuff_desc);
+        picture = QPATHTOF(ui\BPCuff.paa);
+        icon = "";
+        class ItemInfo: CBA_MiscItem_ItemInfo {
+            mass = 8;
+        };
+    };
     KAT_bloodSample_ITEM(KAT_bloodSample,1);
     KAT_bloodSample_ITEM(KAT_bloodSample,2);
     KAT_bloodSample_ITEM(KAT_bloodSample,3);
