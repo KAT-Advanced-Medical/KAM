@@ -7,6 +7,7 @@
 [QGVAR(adenosineLocal), LINKFUNC(treatmentAdvanced_AdenosineLocal)] call CBA_fnc_addEventHandler;
 [QGVAR(amiodaroneLocal), LINKFUNC(treatmentAdvanced_AmiodaroneLocal)] call CBA_fnc_addEventHandler;
 [QGVAR(txaLocal), LINKFUNC(treatmentAdvanced_TXALocal)] call CBA_fnc_addEventHandler;
+[QGVAR(txaautoLocal), LINKFUNC(treatmentAdvanced_TXAAutoLocal)] call CBA_fnc_addEventHandler;
 [QGVAR(reorientationLocal), LINKFUNC(treatmentAdvanced_ReorientationLocal)] call CBA_fnc_addEventHandler;
 [QGVAR(medicationLocal), LINKFUNC(medicationLocal)] call CBA_fnc_addEventHandler;
 [QGVAR(eacaLocal), LINKFUNC(treatmentAdvanced_EACALocal)] call CBA_fnc_addEventHandler;

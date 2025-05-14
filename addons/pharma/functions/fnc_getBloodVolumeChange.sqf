@@ -73,7 +73,11 @@ if (!isNil {_unit getVariable [QACEGVAR(medical,ivBags),[]]}) then {
             _bagVolumeRemaining = _bagVolumeRemaining - _bagChange;
             _incomingFlowAmount set [_bodyPart, ((_incomingFlowAmount select _bodyPart) + _bagChange)];
             private _incomingFlowDifference = (_incomingFlowAmount select _bodyPart) - (10 * _vasoconstriction);
-
+            _totalFlow = 0;
+            {
+                _totalFlow = _totalFlow + _x;
+            } forEach _incomingFlowAmount;
+            if (GVAR(IVComplications)) && (_totalFlow > (10 * _vasoconstriction)) then {[_unit,  _incomingFlowDifference] call FUNC(handleIVComplications)};
             if (GVAR(IVComplications)) && (((_incomingFlowAmount select _bodyPart) / (_IVrate select _bodyPart)) > (10 * _vasoconstriction)) then {[_unit, _bodyPart, _incomingFlowDifference] call FUNC(handleLimbIVComplications)};
 
             if (_hypothermia) then {
@@ -88,10 +92,10 @@ if (!isNil {_unit getVariable [QACEGVAR(medical,ivBags),[]]}) then {
             // Plasma adds to ECP. Saline splits between the ECP and ISP. Blood adds to ECB
             switch (true) do {
                 case(_type == "Plasma"): { _ECP = _ECP + _bagChange; _lossVolumeChange = _lossVolumeChange + (_bagChange / ML_TO_LITERS); };
-                case(_type == "Saline"): {
+                case(_type == "Saline"): { 
                     if (_enableFluidShift) then {
-                        _ECP = _ECP + _bagChange / 2;
-                        _ISP = _ISP + _bagChange / 2;
+                        _ECP = _ECP + _bagChange / 2; 
+                        _ISP = _ISP + _bagChange / 2; 
                         _lossVolumeChange = _lossVolumeChange + (_bagChange / 2000);
                     } else {
                         { _ECP = _ECP + _bagChange; _lossVolumeChange = _lossVolumeChange + (_bagChange / ML_TO_LITERS); };
@@ -121,7 +125,77 @@ if (!isNil {_unit getVariable [QACEGVAR(medical,ivBags),[]]}) then {
                     };
                 };
             };
+        } else {
+            private _className = format ["%1_IV", _type];
+            private _defaultConfig = configFile >> QUOTE(ACE_ADDON(Medical_Treatment)) >> "IV";
+            private _ivConfig = _defaultConfig >> _className;
+            private _painReduce             = GET_NUMBER(_ivConfig >> "painReduce",getNumber (_defaultConfig >> "painReduce") * _IVflow);
+            private _timeInSystem           = GET_NUMBER(_ivConfig >> "timeInSystem",getNumber (_defaultConfig >> "timeInSystem") * _IVflow);
+            private _timeTillMaxEffect      = GET_NUMBER(_ivConfig >> "timeTillMaxEffect",getNumber (_defaultConfig >> "timeTillMaxEffect") * _IVflow);
+            private _viscosityChange        = GET_NUMBER(_ivConfig >> "viscosityChange",getNumber (_defaultConfig >> "viscosityChange") * _IVflow);
+            private _hrIncreaseLow          = GET_ARRAY(_ivConfig >> "hrIncreaseLow",getArray (_defaultConfig >> "hrIncreaseLow") * _IVflow);
+            private _hrIncreaseNormal       = GET_ARRAY(_ivConfig >> "hrIncreaseNormal",getArray (_defaultConfig >> "hrIncreaseNormal") * _IVflow);
+            private _hrIncreaseHigh         = GET_ARRAY(_ivConfig >> "hrIncreaseHigh",getArray (_defaultConfig >> "hrIncreaseHigh") * _IVflow);
+            private _alphaFactor            = GET_NUMBER(_ivConfig >> "alphaFactor",getNumber (_defaultConfig >> "alphaFactor") * _IVflow);
+            private _maxRelief              = GET_NUMBER(_ivConfig >> "maxRelief",getNumber (_defaultConfig >> "maxRelief") * _IVflow);
+            private _opioidRelief           = GET_NUMBER(_ivConfig >> "opioidRelief",getNumber (_defaultConfig >> "opioidRelief") * _IVflow);
+            private _opioidEffect           = GET_NUMBER(_ivConfig >> "opioidEffect",getNumber (_defaultConfig >> "opioidEffect") * _IVflow);
+            private _viscosity              = GET_NUMBER(_ivConfig >> "viscosity",getNumber (_defaultConfig >> "viscosity"));
+            private _dose                   = GET_NUMBER(_medicationConfig >> "dose",getNumber (_defaultConfig >> "dose"));
+            private _heartRate = GET_HEART_RATE(_patient);
+            private _hrIncrease = [_hrIncreaseLow, _hrIncreaseNormal, _hrIncreaseHigh] select (floor ((0 max _heartRate min 110) / 55));
+            _hrIncrease params ["_minIncrease", "_maxIncrease"];
+            private _heartRateChange = _minIncrease + random (_maxIncrease - _minIncrease);
+
+            private _presentPain = GET_PAIN(_patient);
+            private _presentReduce = 0;
+            if (_maxRelief > 0) then {
+                if (_presentPain > _maxRelief) then {
+                    _painReduce = _painReduce / 4;
+                };
+            };
+            private _medicationParts = _className splitString "_";
+            private _baseName = (_medicationParts select 0); 
+            private _medicationName = (_baseName splitString "Infusion") select 0;
+            TRACE_3("adjustments",_heartRateChange,_painReduce,_viscosityChange);
+
+            [_patient, _medicationName, _timeTillMaxEffect, _timeInSystem, _heartRateChange, _painReduce, _viscosityChange, _dose, _alphaFactor, _opioidRelief, _opioidEffect, _opioidDepression, _respiratoryRate] call EFUNC(vitals,addMedicationAdjustment);
+            [_patient, _medicationName] call ACEFUNC(medical_treatment,onMedicationUsage);
+
+            private _IVflow = _unit getVariable [QGVAR(IVflow), [0,0,0,0,0,0]];
+            private _IVrate = _unit getVariable [QGVAR(IVrate), [0,0,0,0,0,0]];
+
+            private _bagChange = (_flowCalculation * (_IVflow select _bodyPart) * (_IVrate select _bodyPart) * _viscosity) min _bagVolumeRemaining;  // absolute value of the change in miliLiters
+
+            _bagVolumeRemaining = _bagVolumeRemaining - _bagChange;
+            _incomingFlowAmount set [_bodyPart, ((_incomingFlowAmount select _bodyPart) + _bagChange)];
+            private _incomingFlowDifference = _incomingFlowAmount - (10 * _vasoconstriction);
+
+            _totalFlow = 0;
+            {
+                _totalFlow = _totalFlow + _x;
+            } forEach _incomingFlowAmount;
+            if (GVAR(IVComplications)) && (_totalFlow > (10 * _vasoconstriction)) then {[_unit,  _incomingFlowDifference] call FUNC(handleIVComplications)};
+            if (GVAR(IVComplications)) && (((_incomingFlowAmount select _bodyPart) / (_IVrate select _bodyPart)) > (10 * _vasoconstriction)) then {[_unit, _bodyPart, _incomingFlowDifference] call FUNC(handleLimbIVComplications)};
+
+            if (_hypothermia) then {
+                // If fluid warmers are on the line, fluids are "warmed" and added to the warmer. If there is no fluid warmer on the line, the fluids stayed cooled
+                if (_fluidWarmer select _bodyPart == 1) then {
+                    _incomingVolumeChange set [_bodyPart, ((_incomingVolumeChange select _bodyPart) + _bagChange)];
+                } else {
+                    _incomingVolumeChange set [_bodyPart, ((_incomingVolumeChange select _bodyPart) - _bagChange)];
+                };
+            };
+            
+            if (_enableFluidShift) then {
+                _ECP = _ECP + _bagChange / 2; 
+                _ISP = _ISP + _bagChange / 2; 
+                _lossVolumeChange = _lossVolumeChange + (_bagChange / 2000);
+                } else {
+                { _ECP = _ECP + _bagChange; _lossVolumeChange = _lossVolumeChange + (_bagChange / ML_TO_LITERS); };
+                };
         };
+    
 
         if (_bagVolumeRemaining < 0.01) then {
             []
@@ -186,7 +260,7 @@ if (_enableFluidShift) then {
 
     if (_defaultShift) then {
         _ISP = _ISP + ((((DEFAULT_ISP - _ISP) max -2) min 2) *_deltaT);
-        _SRBC = _SRBC + ((((DEFAULT_SRBC - _SRBC) max -1) min 1) * _deltaT);
+        _SRBC = _SRBC + ((((DEFAULT_SRBC - _SRBC) max -1) min 1) * _deltaT);  
     };
 };
 

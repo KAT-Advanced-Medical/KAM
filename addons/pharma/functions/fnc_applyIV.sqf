@@ -84,7 +84,6 @@ switch (_usedItem) do {
         private _ketamineEffectiveness = 0;
         private _nalbuphineEffectiveness = 0;
         private _morphineEffectiveness = 0;
-        private _lidocaineEffectiveness = 0;
         {
             private _medName = toLower (_x select 0);
             private _effectiveness = _x select 2;
@@ -100,19 +99,27 @@ switch (_usedItem) do {
             if ("morphine" in _medName) then {
                 _morphineEffectiveness = _morphineEffectiveness max _effectiveness;
             };
-            if ("lidocaine" in _medName) then {
-                _lidocaineEffectiveness = _lidocaineEffectiveness max _effectiveness;
-            };
         } forEach _medStack;
         if (
             _fentanylEffectiveness <= 0.8 &&
             _ketamineEffectiveness <= 0.8 &&
             _nalbuphineEffectiveness <= 0.8 &&
-            _lidocaineEffectiveness <= 0.8 &&
-            _morphineEffectiveness <= 0.8
+            _morphineEffectiveness <= 0.8 &&
+            (GET_LOCAL_ANESTHESIA(_patient,_partIndex) <= 0.8)
+
         ) then {
-            [_patient, [0.6, 0.7, 0.8] select (floor random 3)] call ACEFUNC(medical_status,adjustPainLevel);
+            _painLevel = [0.6, 0.7, 0.8] select (floor random 3);
+            [_patient, _painLevel] call ACEFUNC(medical_status,adjustPainLevel);
         };
+        [{
+            params ["_patient", "_partIndex"];
+            GET_LOCAL_ANESTHESIA(_patient,_partindex) > 0.7;
+        }, {
+            params ["_patient", "_partIndex", "_painLevel"];
+            _negPainLevel = -1 * _painLevel;
+            [_patient, _negPainLevel] call ACEFUNC(medical_status,adjustPainLevel);
+        }, [_patient, _partIndex, _painLevel], 60] call CBA_fnc_waitUntilAndExecute;
+
         [_patient, "activity", LSTRING(iv_log), [[_medic] call ACEFUNC(common,getName), "FAST IO"]] call ACEFUNC(medical_treatment,addToLog);
         [_patient, "FAST IO"] call ACEFUNC(medical_treatment,addToTriageCard);};
     default {};
