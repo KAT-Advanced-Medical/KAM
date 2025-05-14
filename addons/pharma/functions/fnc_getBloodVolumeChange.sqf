@@ -162,8 +162,8 @@ if (!isNil {_unit getVariable [QACEGVAR(medical,ivBags),[]]}) then {
             [_patient, _medicationName, _timeTillMaxEffect, _timeInSystem, _heartRateChange, _painReduce, _viscosityChange, _dose, _alphaFactor, _opioidRelief, _opioidEffect, _opioidDepression, _respiratoryRate] call EFUNC(vitals,addMedicationAdjustment);
             [_patient, _medicationName] call ACEFUNC(medical_treatment,onMedicationUsage);
 
-            private _IVflow = _unit getVariable [QGVAR(IVflow), [0,0,0,0,0,0]];
-            private _IVrate = _unit getVariable [QGVAR(IVrate), [0,0,0,0,0,0]];
+            private _IVflow = _unit getVariable [QGVAR(IVflow), [0,0,0,0,0,0,0,0,0,0,0,0]];
+            private _IVrate = _unit getVariable [QGVAR(IVrate), [0,0,0,0,0,0,0,0,0,0,0,0]];
 
             private _bagChange = (_flowCalculation * (_IVflow select _bodyPart) * (_IVrate select _bodyPart) * _viscosity) min _bagVolumeRemaining;  // absolute value of the change in miliLiters
 
