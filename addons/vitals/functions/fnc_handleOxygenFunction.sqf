@@ -73,10 +73,9 @@ if (IN_CRDC_ARRST(_unit)) then {
     private _respiratoryDepth = _baseRespiratoryDepth;
     if (_respiratoryRate > 20) then {
     private _excessRR = _respiratoryRate - 25;
-    private _scaleFactor = 1 - (0.03 * _excessRR);  // reduces ~1.5% per breath over 25
+    private _scaleFactor = 1 - (0.03 * _excessRR);  // reduces ~3% per breath over 25
     _respiratoryDepth = _baseRespiratoryDepth * (_scaleFactor max 0.5); // never drops below 50% of base
     };
-    // If respiratory rate is low due to PaCO2, it starts increasing faster to compensate
     
     _actualVentilation = _tidalVolume * _respiratoryRate;
 };
