@@ -57,12 +57,12 @@ if (GVAR(PneumothoraxAlwaysVisible)) then {
         _ctrlRightChestInjury ctrlShow false;
     };
 } else {
-    if ((_deepPenetratingInjury select 0) || (_pneumothoraxState select 0 > 0)) then {
+    if ((_deepPenetratingInjury select 0) || ((_pneumothoraxState select 0) > 0)) then {
         _ctrlLeftChestInjury ctrlShow true;
     } else {
         _ctrlLeftChestInjury ctrlShow false;
     };
-    if ((_deepPenetratingInjury select 1) || (_pneumothoraxState select 1 > 0)) then {
+    if ((_deepPenetratingInjury select 1) || ((_pneumothoraxState select 1) > 0)) then {
         _ctrlRightChestInjury ctrlShow true;
     } else {
         _ctrlRightChestInjury ctrlShow false;
