@@ -4993,7 +4993,7 @@
             <Finnish>Käytetään bradykardian hoitoon</Finnish>
             <Dutch>Wordt gebruikt om chemische blootstelling en bradycardie te behandelen</Dutch>
         </Key>
-         <Key ID="STR_KAT_Pharma_TXAAuto_Box_Display">
+        <Key ID="STR_KAT_Pharma_TXAAuto_Box_Display">
             <English>TXA Autoinjector</English>
         </Key>
         <Key ID="STR_KAT_Pharma_Take_TXAAuto">
