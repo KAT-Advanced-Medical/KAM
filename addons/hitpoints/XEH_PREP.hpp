@@ -5,6 +5,7 @@ PREP(fullHealLocal);
 PREP(handleDamage);
 PREP(handleIncapacitation);
 PREP(hasTourniquetAppliedTo);
+PREP(ivBagLocal);
 PREP(onKeyDown);
 PREP(splintLocal);
 PREP(tourniquetLocal);

@@ -22,6 +22,7 @@ params ["_target"];
 // Get tourniquets, damage, and blood loss for target
 private _IV = _target getVariable [QEGVAR(pharma,IV), [0,0,0,0,0,0,0,0,0,0,0,0]];
 private _ivFlow = _target getVariable [QEGVAR(pharma,IVflow), [0,0,0,0,0,0,0,0,0,0,0,0]];
+private _ivRate = _target getVariable [QEGVAR(pharma,IVincomingFlowAmount), [0,0,0,0,0,0,0,0,0,0,0,0]];
 private _ivMenuShow = _target getVariable [QEGVAR(pharma,IVmenuActive), false];
 
 if (_ivMenuShow) then {
@@ -37,6 +38,7 @@ if (_ivMenuShow) then {
 
     private _activeIV = _IV select _bodyPartN;
     private _activeFlow = _ivFlow select _bodyPartN;
+    private _activeRate = _ivRate select _bodyPartN;
 
     if !(_ivMenuShow) then {
         _activeIV = -1;
@@ -62,6 +64,7 @@ if (_ivMenuShow) then {
             _buttonIDCArray apply {ctrlEnable [_x, true]};
             ctrlSetText [_typeIDC, "IO"];
             ctrlSetText [_valueIDC, (_activeFlow toFixed 1)];
+            ctrlSetText [_rateIDC, (_activeRate toFixed 1)];
         };
         case (_activeIV == 2): {
             ctrlShow [_coverIDC, false];
@@ -73,6 +76,7 @@ if (_ivMenuShow) then {
             _buttonIDCArray apply {ctrlEnable [_x, true]};
             ctrlSetText [_typeIDC, "16g"];
             ctrlSetText [_valueIDC, (_activeFlow toFixed 1)];
+            ctrlSetText [_rateIDC, (_activeRate toFixed 1)];
         };
         case (_activeIV == 3): {
             ctrlShow [_coverIDC, false];
@@ -84,6 +88,7 @@ if (_ivMenuShow) then {
             _buttonIDCArray apply {ctrlEnable [_x, true]};
             ctrlSetText [_typeIDC, "14g"];
             ctrlSetText [_valueIDC, (_activeFlow toFixed 1)];
+            ctrlSetText [_rateIDC, (_activeRate toFixed 1)];
         };
         case (_activeIV == 4): {
             ctrlShow [_coverIDC, false];
@@ -95,6 +100,7 @@ if (_ivMenuShow) then {
             _buttonIDCArray apply {ctrlEnable [_x, true]};
             ctrlSetText [_typeIDC, "20g"];
             ctrlSetText [_valueIDC, (_activeFlow toFixed 1)];
+            ctrlSetText [_rateIDC, (_activeRate toFixed 1)];
         };
         case (_activeIV == -1): {
             ctrlShow [_coverIDC, false];
@@ -107,10 +113,10 @@ if (_ivMenuShow) then {
         };
     };
 } forEach [
-    [IDC_IV_FLOW_HEADCOVER, IDC_IV_FLOW_HEADTITLE, IDC_IV_FLOW_HEADTYPE, IDC_IV_FLOW_HEADIV_VALUE, IDC_IV_FLOW_HEADRATE, [IDC_IV_FLOW_HEADSUBTRACTFULL, IDC_IV_FLOW_HEADSUBTRACT, IDC_IV_FLOW_HEADADD, IDC_IV_FLOW_HEADADDFULL], 1],
-    [IDC_IV_FLOW_CHESTCOVER, IDC_IV_FLOW_CHESTTITLE, IDC_IV_FLOW_CHESTTYPE, IDC_IV_FLOW_CHESTTEST, IDC_IV_FLOW_CHESTRATE, [IDC_IV_FLOW_CHESTSUBTRACTFULL, IDC_IV_FLOW_CHESTSUBTRACT, IDC_IV_FLOW_CHESTADD, IDC_IV_FLOW_CHESTADDFULL], 2],
-    [IDC_IV_FLOW_LARMCOVER, IDC_IV_FLOW_LARMTITLE, IDC_IV_FLOW_LARMTYPE, IDC_IV_FLOW_LARMIVVALUE, IDC_IV_FLOW_LARMRATE, [IDC_IV_FLOW_LARMSUBTRACTFULL, IDC_IV_FLOW_LARMSUBTRACT, IDC_IV_FLOW_LARMADD, IDC_IV_FLOW_LARMADDFULL], 4],
-    [IDC_IV_FLOW_RARMCOVER, IDC_IV_FLOW_RARMTITLE, IDC_IV_FLOW_RARMTYPE, IDC_IV_FLOW_RARMIVVALUE, IDC_IV_FLOW_RARMRATE, [IDC_IV_FLOW_RARMSUBTRACTFULL, IDC_IV_FLOW_RARMSUBTRACT, IDC_IV_FLOW_RARMADD, IDC_IV_FLOW_RARMADDFULL], 6],
-    [IDC_IV_FLOW_LLEGCOVER, IDC_IV_FLOW_LLEGTITLE, IDC_IV_FLOW_LLEGTYPE, IDC_IV_FLOW_LLEGIVVALUE, IDC_IV_FLOW_LLEGRATE, [IDC_IV_FLOW_LLEGSUBTRACTFULL, IDC_IV_FLOW_LLEGSUBTRACT, IDC_IV_FLOW_LLEGADD, IDC_IV_FLOW_LLEGADDFULL], 9],
-    [IDC_IV_FLOW_RLEGCOVER, IDC_IV_FLOW_RLEGTITLE, IDC_IV_FLOW_RLEGTYPE, IDC_IV_FLOW_RLEGIVVALUE, IDC_IV_FLOW_RLEGRATE, [IDC_IV_FLOW_RLEGSUBTRACTFULL, IDC_IV_FLOW_RLEGSUBTRACT, IDC_IV_FLOW_RLEGADD, IDC_IV_FLOW_RLEGADDFULL], 11]
+    [IDC_IV_FLOW_HEADCOVER, IDC_IV_FLOW_HEADTITLE, IDC_IV_FLOW_HEADTYPE, IDC_IV_FLOW_HEADIV_VALUE, IDC_IV_FLOW_HEADIVRATE, [IDC_IV_FLOW_HEADSUBTRACTFULL, IDC_IV_FLOW_HEADSUBTRACT, IDC_IV_FLOW_HEADADD, IDC_IV_FLOW_HEADADDFULL], 1],
+    [IDC_IV_FLOW_CHESTCOVER, IDC_IV_FLOW_CHESTTITLE, IDC_IV_FLOW_CHESTTYPE, IDC_IV_FLOW_CHESTTEST, IDC_IV_FLOW_CHESTIVRATE, [IDC_IV_FLOW_CHESTSUBTRACTFULL, IDC_IV_FLOW_CHESTSUBTRACT, IDC_IV_FLOW_CHESTADD, IDC_IV_FLOW_CHESTADDFULL], 2],
+    [IDC_IV_FLOW_LARMCOVER, IDC_IV_FLOW_LARMTITLE, IDC_IV_FLOW_LARMTYPE, IDC_IV_FLOW_LARMIVVALUE, IDC_IV_FLOW_LARMIVRATE, [IDC_IV_FLOW_LARMSUBTRACTFULL, IDC_IV_FLOW_LARMSUBTRACT, IDC_IV_FLOW_LARMADD, IDC_IV_FLOW_LARMADDFULL], 4],
+    [IDC_IV_FLOW_RARMCOVER, IDC_IV_FLOW_RARMTITLE, IDC_IV_FLOW_RARMTYPE, IDC_IV_FLOW_RARMIVVALUE, IDC_IV_FLOW_RARMIVRATE, [IDC_IV_FLOW_RARMSUBTRACTFULL, IDC_IV_FLOW_RARMSUBTRACT, IDC_IV_FLOW_RARMADD, IDC_IV_FLOW_RARMADDFULL], 6],
+    [IDC_IV_FLOW_LLEGCOVER, IDC_IV_FLOW_LLEGTITLE, IDC_IV_FLOW_LLEGTYPE, IDC_IV_FLOW_LLEGIVVALUE, IDC_IV_FLOW_LLEGIVRATE, [IDC_IV_FLOW_LLEGSUBTRACTFULL, IDC_IV_FLOW_LLEGSUBTRACT, IDC_IV_FLOW_LLEGADD, IDC_IV_FLOW_LLEGADDFULL], 9],
+    [IDC_IV_FLOW_RLEGCOVER, IDC_IV_FLOW_RLEGTITLE, IDC_IV_FLOW_RLEGTYPE, IDC_IV_FLOW_RLEGIVVALUE, IDC_IV_FLOW_RLEGIVRATE, [IDC_IV_FLOW_RLEGSUBTRACTFULL, IDC_IV_FLOW_RLEGSUBTRACT, IDC_IV_FLOW_RLEGADD, IDC_IV_FLOW_RLEGADDFULL], 11]
 ];

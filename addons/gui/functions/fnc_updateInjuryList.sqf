@@ -84,8 +84,9 @@ private _plasma = 0;
 private _ringers = 0;
 private _packedRBC = 0;
 {
-    _x params ["_volumeRemaining", "_type"];
-    switch (_type) do {
+    _x params ["_volumeRemaining", "_type", "_partIndex"];
+    if (_partIndex == _selectionN) then{
+        switch (_type) do {
         case "Saline": {
             _saline = _saline + _volumeRemaining;
         };
@@ -103,6 +104,7 @@ private _packedRBC = 0;
         };
     };
     _totalIvVolume = _totalIvVolume + _volumeRemaining;
+    };
 } forEach (_target getVariable [QACEGVAR(medical,ivBags), []]);
 
 if (_totalIvVolume > 0) then {

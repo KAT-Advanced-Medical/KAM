@@ -95,6 +95,17 @@
             <Chinesesimp>0</Chinesesimp>
             <Dutch>0.0</Dutch>
         </Key>
+        <Key ID="STR_KAT_GUI_IVRate">
+            <English>0.0</English>
+            <Czech>0.0</Czech>
+            <French>0.0</French>
+            <Spanish>0.0</Spanish>
+            <Italian>0.0</Italian>
+            <German>0.0</German>
+            <Japanese>0.0</Japanese>
+            <Chinesesimp>0</Chinesesimp>
+            <Dutch>0.0</Dutch>
+        </Key>
         <Key ID="STR_KAT_GUI_LArmCover">
             <English>LEFT ARM - NO LINE</English>
             <Czech>LEVÁ RUKA - BEZ LINIE</Czech>
