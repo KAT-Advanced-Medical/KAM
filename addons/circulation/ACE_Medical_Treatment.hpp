@@ -3,18 +3,44 @@ class ACE_Medical_Treatment {
         volume = 1000;
         ratio[] = {};
         type = "Blood";
+        rateCoef = 1;
+        // How much does the pain get reduced?
         painReduce = 0;
-        hrIncreaseLow[] = {0, 0};
-        hrIncreaseNormal[] = {0, 0};
-        hrIncreaseHigh[] = {0, 0};
+        // How much will the heart rate be increased when the HR is low (below 55)? {minIncrease, maxIncrease}
+        hrIncreaseLow[] = {0, 0};    // _heartRate < 55
+        hrIncreaseNormal[] = {0, 0}; // 55 <= _heartRate <= 110
+        hrIncreaseHigh[] = {0, 0};   // 110 < _heartRate
+
+        // How long until this medication has disappeared
         timeInSystem = 120;
+        // How long until the maximum effect is reached
         timeTillMaxEffect = 30;
+        // How many of this type of medication can be in the system before the patient overdoses?
+        maxDose = 4;
+        // The number of doses over maxDose where there is a chance to overdose.
+        // Example with maxDose = 4 and maxDoseDeviation = 2: Dose 4: Safe | Dose 5 and 6: Possible overdose | Dose 7: Guaranteed overdose
+        maxDoseDeviation = 2;
+        // The dose of the medication, to allow for different dose amounts of the same medication
+        dose = 1;
+        // Function to execute upon overdose. Arguments passed to call back are 0: unit <OBJECT>, 1: medicationClassName <STRING>
         onOverDose = "";
+        // The viscosity of a fluid is a measure of its resistance to gradual deformation by shear stress or tensile stress. For liquids, it corresponds to the informal concept of "thickness". This value will increase/decrease the viscoty of the blood with the percentage given. Where 100 = max. Using the minus will decrease viscosity
         viscosityChange = 0;
+        // How much does the medication constrict/dilate the patient's blood vessels?
         alphaFactor = 0;
+        // Max amount of pain the medication can remove
         maxRelief = 0;
+        // Reduction of damage from wounds
         opioidRelief = 0;
+        // How strong should opioid Respiratory Depression be be
+        opioidDepression = 0;
+        // How strong should opioid visuals be
         opioidEffect = 0;
+        //multiplier to respiratory rate
+        respiratoryRate = 0;
+
+        incompatibleMedication[] = {};
+
         class BloodIV {
             volume = 1000;
             ratio[] = {"Plasma", 1};
@@ -198,7 +224,7 @@ class ACE_Medical_Treatment {
             rateCoef = 0.7;
             type = "PackedRBC";
         };
-        class MorphineIVInfusion: SalineIV_250 {
+        class Morphine_IVInfusion: SalineIV_250 {
             painReduce = 0.8;
             hrIncreaseLow[] = {-2, -7};
             hrIncreaseNormal[] = {-3, -10};
@@ -210,9 +236,9 @@ class ACE_Medical_Treatment {
             opioidRelief = 1.1;
             volume = 250;
             rateCoef = 1.3;
-            type = "MorphineIVInfusion";
+            type = "Morphine_IVInfusion";
         };
-        class EpinephrineIVInfusion: SalineIV_250 {
+        class Epinephrine_IVInfusion: SalineIV_250 {
             painReduce = 0;
             hrIncreaseLow[] = {3, 14};
             hrIncreaseNormal[] = {5, 20};
@@ -223,9 +249,10 @@ class ACE_Medical_Treatment {
             alphaFactor = -0.2;
             volume = 250;
             rateCoef = 1.3;
-            type = "EpinephrineIVInfusion";
+            type = "Epinephrine_IVInfusion";
+            incompatibleMedication[] = {};
         };
-        class EtomidateInfusion: SalineIV_250 {
+        class Etomidate_IVInfusion: SalineIV_250 {
             painReduce = 0.2;
             hrIncreaseLow[] = {-3, -7};
             hrIncreaseNormal[] = {-6, -13};
@@ -236,9 +263,10 @@ class ACE_Medical_Treatment {
             viscosityChange = 0;
             volume = 250;
             rateCoef = 1.3;
-            type = "EtomidateInfusion";
+            type = "Etomidate_IVInfusion";
+            incompatibleMedication[] = {};
         };
-        class DoxapramInfusion: SalineIV_250 {
+        class Doxapram_IVInfusion: SalineIV_250 {
             painReduce = 0;
             hrIncreaseLow[] = {3, 12};
             hrIncreaseNormal[] = {5, 18};
@@ -247,10 +275,10 @@ class ACE_Medical_Treatment {
             timeTillMaxEffect = 2;
             dose = 0.1;
             respiratoryRate = 0.2;
-            respiratoryDepth = 0.2;
             volume = 250;
             rateCoef = 1.3;
-            type = "DoxapramInfusion";
+            type = "Doxapram_IVInfusion";
+            incompatibleMedication[] = {};
         };
     };
 };

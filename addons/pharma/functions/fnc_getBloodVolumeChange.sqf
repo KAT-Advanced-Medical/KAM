@@ -31,7 +31,6 @@ _ECB = (_ECB + (_lossVolumeChange * LITERS_TO_ML) / 2) max 100;
 
 if (!isNil {_unit getVariable [QACEGVAR(medical,ivBags),[]]}) then {
     private _bloodBags = _unit getVariable [QACEGVAR(medical,ivBags), []];
-    TRACE_1("IVBAGS",_bloodBags);
     private _IVarray = _unit getVariable [QGVAR(IV), [0,0,0,0,0,0,0,0,0,0,0,0]];
     private _flowCalculation = (ACEGVAR(medical,ivFlowRate) * _deltaT * 4.16);
     private _hypothermia = EGVAR(hypothermia,hypothermiaActive);
@@ -65,7 +64,8 @@ if (!isNil {_unit getVariable [QACEGVAR(medical,ivBags),[]]}) then {
         private _result = if (_idx != -1) then { _occlusionMap select _idx select 1 } else { [] };
         private _isNotOccluded = { _tourniquets select _x != 0 } count _result > 0;
 
-        if ((!_isNotOccluded) && ([7,8,9] find (_IVarray select _bodyPart) == -1)) then {
+        if ((!_isNotOccluded) && ([7,8,9] find (_IVarray select _bodyPart) == -1) ) then {
+            if (_type in ["Blood", "Saline", "Plasma"]) then {
             private _IVflow = _unit getVariable [QGVAR(IVflow), [0,0,0,0,0,0,0,0,0,0,0,0]];
             private _IVrate = _unit getVariable [QGVAR(IVrate), [0,0,0,0,0,0,0,0,0,0,0,0]];
             private _bagChange = (_flowCalculation * (_IVflow select _bodyPart) * (_IVrate select _bodyPart) * _rateCoef) min _bagVolumeRemaining; // absolute value of the change in miliLiters
@@ -125,58 +125,50 @@ if (!isNil {_unit getVariable [QACEGVAR(medical,ivBags),[]]}) then {
                     };
                 };
             };
+        
         } else {
-            private _className = format ["%1_IV", _type];
+            private _IVflow = _unit getVariable [QGVAR(IVflow), [0,0,0,0,0,0,0,0,0,0,0,0]];
+            private _IVrate = _unit getVariable [QGVAR(IVrate), [0,0,0,0,0,0,0,0,0,0,0,0]];
+            private _bagChange = (_flowCalculation * (_IVflow select _bodyPart) * (_IVrate select _bodyPart) * _rateCoef) min _bagVolumeRemaining;
+            private _medicationMult = ((_flowCalculation * (_IVflow select _bodyPart) * (_IVrate select _bodyPart) * _rateCoef) / 4) ;
+            _bagVolumeRemaining = _bagVolumeRemaining - _bagChange;
+            _incomingFlowAmount set [_bodyPart, ((_incomingFlowAmount select _bodyPart) + _bagChange)];
+            _unit setVariable [QGVAR(IVincomingFlowAmount), _incomingFlowAmount, true];
+
             private _defaultConfig = configFile >> QUOTE(ACE_ADDON(Medical_Treatment)) >> "IV";
-            private _ivConfig = _defaultConfig >> _className;
-            private _painReduce             = GET_NUMBER(_ivConfig >> "painReduce",getNumber (_defaultConfig >> "painReduce") * _IVflow);
-            private _timeInSystem           = GET_NUMBER(_ivConfig >> "timeInSystem",getNumber (_defaultConfig >> "timeInSystem") * _IVflow);
-            private _timeTillMaxEffect      = GET_NUMBER(_ivConfig >> "timeTillMaxEffect",getNumber (_defaultConfig >> "timeTillMaxEffect") * _IVflow);
-            private _viscosityChange        = GET_NUMBER(_ivConfig >> "viscosityChange",getNumber (_defaultConfig >> "viscosityChange") * _IVflow);
-            private _hrIncreaseLow          = GET_ARRAY(_ivConfig >> "hrIncreaseLow",getArray (_defaultConfig >> "hrIncreaseLow") * _IVflow);
-            private _hrIncreaseNormal       = GET_ARRAY(_ivConfig >> "hrIncreaseNormal",getArray (_defaultConfig >> "hrIncreaseNormal") * _IVflow);
-            private _hrIncreaseHigh         = GET_ARRAY(_ivConfig >> "hrIncreaseHigh",getArray (_defaultConfig >> "hrIncreaseHigh") * _IVflow);
-            private _alphaFactor            = GET_NUMBER(_ivConfig >> "alphaFactor",getNumber (_defaultConfig >> "alphaFactor") * _IVflow);
-            private _maxRelief              = GET_NUMBER(_ivConfig >> "maxRelief",getNumber (_defaultConfig >> "maxRelief") * _IVflow);
-            private _opioidRelief           = GET_NUMBER(_ivConfig >> "opioidRelief",getNumber (_defaultConfig >> "opioidRelief") * _IVflow);
-            private _opioidEffect           = GET_NUMBER(_ivConfig >> "opioidEffect",getNumber (_defaultConfig >> "opioidEffect") * _IVflow);
-            private _viscosity              = GET_NUMBER(_ivConfig >> "viscosity",getNumber (_defaultConfig >> "viscosity"));
-            private _dose                   = GET_NUMBER(_medicationConfig >> "dose",getNumber (_defaultConfig >> "dose"));
-            private _heartRate = GET_HEART_RATE(_patient);
+            private _ivConfig = _defaultConfig >> _type;
+            private _painReduce             = (GET_NUMBER(_ivConfig >> "painReduce",getNumber (_defaultConfig >> "painReduce")) * _medicationMult);
+            private _timeInSystem           = (GET_NUMBER(_ivConfig >> "timeInSystem",getNumber (_defaultConfig >> "timeInSystem")) * _medicationMult);
+            private _timeTillMaxEffect      = (GET_NUMBER(_ivConfig >> "timeTillMaxEffect",getNumber (_defaultConfig >> "timeTillMaxEffect")) * _medicationMult);
+            private _viscosityChange        = (GET_NUMBER(_ivConfig >> "viscosityChange",getNumber (_defaultConfig >> "viscosityChange")) * _medicationMult);
+            private _hrIncreaseLow          = GET_ARRAY(_ivConfig >> "hrIncreaseLow",getArray (_defaultConfig >> "hrIncreaseLow"));
+            private _hrIncreaseNormal       = GET_ARRAY(_ivConfig >> "hrIncreaseNormal",getArray (_defaultConfig >> "hrIncreaseNormal"));
+            private _hrIncreaseHigh         = GET_ARRAY(_ivConfig >> "hrIncreaseHigh",getArray (_defaultConfig >> "hrIncreaseHigh"));
+            private _alphaFactor            = (GET_NUMBER(_ivConfig >> "alphaFactor",getNumber (_defaultConfig >> "alphaFactor")) * _medicationMult);
+            private _maxRelief              = (GET_NUMBER(_ivConfig >> "maxRelief",getNumber (_defaultConfig >> "maxRelief")) * _medicationMult);
+            private _opioidRelief           = (GET_NUMBER(_ivConfig >> "opioidRelief",getNumber (_defaultConfig >> "opioidRelief")) * _medicationMult);
+            private _opioidEffect           = (GET_NUMBER(_ivConfig >> "opioidEffect",getNumber (_defaultConfig >> "opioidEffect")) * _medicationMult);
+            private _dose                   = (GET_NUMBER(_ivConfig >> "dose",getNumber (_defaultConfig >> "dose")) * _medicationMult);
+            private _respiratoryRate        = (GET_NUMBER(_ivConfig >> "respiratoryRate",getNumber (_defaultConfig >> "respiratoryRate")) * _medicationMult);
+            private _opioidDepression       = (GET_NUMBER(_ivConfig >> "opioidDepression",getNumber (_defaultConfig >> "opioidDepression")) * _medicationMult);
+            private _heartRate = GET_HEART_RATE(_unit);
             private _hrIncrease = [_hrIncreaseLow, _hrIncreaseNormal, _hrIncreaseHigh] select (floor ((0 max _heartRate min 110) / 55));
             _hrIncrease params ["_minIncrease", "_maxIncrease"];
-            private _heartRateChange = _minIncrease + random (_maxIncrease - _minIncrease);
+            private _heartRateChange = (_minIncrease + random (_maxIncrease - _minIncrease)) * _medicationMult;
 
-            private _presentPain = GET_PAIN(_patient);
+            private _presentPain = GET_PAIN(_unit);
             private _presentReduce = 0;
             if (_maxRelief > 0) then {
                 if (_presentPain > _maxRelief) then {
                     _painReduce = _painReduce / 4;
                 };
             };
-            private _medicationParts = _className splitString "_";
-            private _baseName = (_medicationParts select 0); 
-            private _medicationName = (_baseName splitString "Infusion") select 0;
-            TRACE_3("adjustments",_heartRateChange,_painReduce,_viscosityChange);
+            private _medicationName = (_type splitString "_") select 0;
+            TRACE_6("adjustments1",_unit,_medicationName,_timeTillMaxEffect,_timeInSystem,_heartRateChange,_painReduce);
+            TRACE_7("adjustments2",_viscosityChange,_dose,_alphaFactor,_opioidRelief,_opioidEffect,_opioidDepression,_respiratoryRate);
 
-            [_patient, _medicationName, _timeTillMaxEffect, _timeInSystem, _heartRateChange, _painReduce, _viscosityChange, _dose, _alphaFactor, _opioidRelief, _opioidEffect, _opioidDepression, _respiratoryRate] call EFUNC(vitals,addMedicationAdjustment);
-            [_patient, _medicationName] call ACEFUNC(medical_treatment,onMedicationUsage);
-
-            private _IVflow = _unit getVariable [QGVAR(IVflow), [0,0,0,0,0,0,0,0,0,0,0,0]];
-            private _IVrate = _unit getVariable [QGVAR(IVrate), [0,0,0,0,0,0,0,0,0,0,0,0]];
-
-            private _bagChange = (_flowCalculation * (_IVflow select _bodyPart) * (_IVrate select _bodyPart) * _viscosity) min _bagVolumeRemaining;  // absolute value of the change in miliLiters
-
-            _bagVolumeRemaining = _bagVolumeRemaining - _bagChange;
-            _incomingFlowAmount set [_bodyPart, ((_incomingFlowAmount select _bodyPart) + _bagChange)];
-            private _incomingFlowDifference = _incomingFlowAmount - (10 * _vasoconstriction);
-
-            _totalFlow = 0;
-            {
-                _totalFlow = _totalFlow + _x;
-            } forEach _incomingFlowAmount;
-            if (GVAR(IVComplications)) && (_totalFlow > (10 * _vasoconstriction)) then {[_unit,  _incomingFlowDifference] call FUNC(handleIVComplications)};
-            if (GVAR(IVComplications)) && (((_incomingFlowAmount select _bodyPart) / (_IVrate select _bodyPart)) > (10 * _vasoconstriction)) then {[_unit, _bodyPart, _incomingFlowDifference] call FUNC(handleLimbIVComplications)};
+            [_unit, _medicationName, _timeTillMaxEffect, _timeInSystem, _heartRateChange, _painReduce, _viscosityChange, _dose, _alphaFactor, _opioidRelief, _opioidEffect, _opioidDepression, _respiratoryRate] call EFUNC(vitals,addMedicationAdjustment);
+            [_unit, _medicationName] call ACEFUNC(medical_treatment,onMedicationUsage);
 
             if (_hypothermia) then {
                 // If fluid warmers are on the line, fluids are "warmed" and added to the warmer. If there is no fluid warmer on the line, the fluids stayed cooled
@@ -222,6 +214,7 @@ if (!isNil {_unit getVariable [QACEGVAR(medical,ivBags),[]]}) then {
         } else {
             private _totalCooling = _unit getVariable [QEGVAR(hypothermia,warmingImpact), 0];
             _unit setVariable [QEGVAR(hypothermia,warmingImpact), _totalCooling + _fluidHeat, _syncValues];
+            };
         };
     };
 };

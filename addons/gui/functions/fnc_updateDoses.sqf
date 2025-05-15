@@ -38,7 +38,7 @@ _medListBox ctrlAddEventHandler ["LBSelChanged", {
             if (isNil "_capturedMedItem" || {_capturedMedItem == ""}) exitWith {}; 
 
             private _medParts = _capturedMedItem splitString "_";
-            private _medBaseName = _medParts select (count _medParts - 1);
+            private _medBaseName = _medParts select -1;
 
             if (_syringeType == "salineIV") then {
                 private _index = _doseListBox lbAdd LLSTRING(Infusion);

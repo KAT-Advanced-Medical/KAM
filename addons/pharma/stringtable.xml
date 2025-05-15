@@ -5008,5 +5008,17 @@
         <Key ID="STR_KAT_Pharma_treatmentTime_TXAAuto">
             <English>Treatment time for TXA Autoinjector</English>
         </Key>
+        <Key ID="STR_KAT_Pharma_receivingDoxapramIVInfusionVolume">
+            <English>Receiving Doxapram Infusion [%1ml]</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_receivingEpinephrineIVInfusionVolume">
+            <English>Receiving Epinephrine Infusion [%1ml]</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_receivingEtomidateIVInfusionVolume">
+            <English>Receiving Etomidate Infusion [%1ml]</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_receivingMorphineIVInfusionVolume">
+            <English>Receiving Morphine Infusion [%1ml]</English>
+        </Key>
     </Package>
 </Project>
