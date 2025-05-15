@@ -31,6 +31,7 @@ _ECB = (_ECB + (_lossVolumeChange * LITERS_TO_ML) / 2) max 100;
 
 if (!isNil {_unit getVariable [QACEGVAR(medical,ivBags),[]]}) then {
     private _bloodBags = _unit getVariable [QACEGVAR(medical,ivBags), []];
+    TRACE_1("IVBAGS",_bloodBags);
     private _IVarray = _unit getVariable [QGVAR(IV), [0,0,0,0,0,0,0,0,0,0,0,0]];
     private _flowCalculation = (ACEGVAR(medical,ivFlowRate) * _deltaT * 4.16);
     private _hypothermia = EGVAR(hypothermia,hypothermiaActive);
@@ -39,16 +40,15 @@ if (!isNil {_unit getVariable [QACEGVAR(medical,ivBags),[]]}) then {
     if (GET_HEART_RATE(_unit) < 20) then {
         _flowCalculation = _flowCalculation / 1.5;
     };
-    private _incomingFlowAmount = [0,0,0,0,0,0,0,0,0,0,0,0];;
-    private _incomingVolumeChange = [0,0,0,0,0,0,0,0,0,0,0,0];;
+    private _incomingFlowAmount = [0,0,0,0,0,0,0,0,0,0,0,0];
+    private _incomingVolumeChange = [0,0,0,0,0,0,0,0,0,0,0,0];
     private _fluidWarmer = _unit getVariable [QEGVAR(hypothermia,fluidWarmer), [0,0,0,0,0,0,0,0,0,0,0,0]];
     private _fluidHeat = 0;
 
+
     _bloodBags = _bloodBags apply {
         _x params ["_bagVolumeRemaining", "_type", "_bodyPart", "_treatment", "_rateCoef", "_item"];
-
-        params ["_unit", "_bodyPart"];
-
+        
         private _tourniquets = GET_TOURNIQUETS(_unit);
         private _occlusionMap = [
             [4, [4, 5]],
@@ -61,8 +61,7 @@ if (!isNil {_unit getVariable [QACEGVAR(medical,ivBags),[]]}) then {
             [11, [11, 3]]
         ];
 
-        private _partIndex = ALL_BODY_PARTS find _bodyPart;
-        private _idx = _occlusionMap findIf { _x#0 == _partIndex };
+        private _idx = _occlusionMap findIf { _x#0 == _bodyPart };
         private _result = if (_idx != -1) then { _occlusionMap select _idx select 1 } else { [] };
         private _isNotOccluded = { _tourniquets select _x != 0 } count _result > 0;
 
@@ -72,13 +71,14 @@ if (!isNil {_unit getVariable [QACEGVAR(medical,ivBags),[]]}) then {
             private _bagChange = (_flowCalculation * (_IVflow select _bodyPart) * (_IVrate select _bodyPart) * _rateCoef) min _bagVolumeRemaining; // absolute value of the change in miliLiters
             _bagVolumeRemaining = _bagVolumeRemaining - _bagChange;
             _incomingFlowAmount set [_bodyPart, ((_incomingFlowAmount select _bodyPart) + _bagChange)];
+            _unit setVariable [QGVAR(IVincomingFlowAmount), _incomingFlowAmount, true];
             private _incomingFlowDifference = (_incomingFlowAmount select _bodyPart) - (10 * _vasoconstriction);
             _totalFlow = 0;
             {
                 _totalFlow = _totalFlow + _x;
             } forEach _incomingFlowAmount;
-            if (GVAR(IVComplications)) && (_totalFlow > (10 * _vasoconstriction)) then {[_unit,  _incomingFlowDifference] call FUNC(handleIVComplications)};
-            if (GVAR(IVComplications)) && (((_incomingFlowAmount select _bodyPart) / (_IVrate select _bodyPart)) > (10 * _vasoconstriction)) then {[_unit, _bodyPart, _incomingFlowDifference] call FUNC(handleLimbIVComplications)};
+            TRACE_8("IV",_bagChange,_IVrate,_IVflow,_IVarray,_isNotOccluded,_rateCoef,_flowCalculation,_bodyPart);
+            if ((GVAR(IVComplications)) && ((((_incomingFlowAmount select _bodyPart) max 0.01) / ((_IVrate select _bodyPart) max 0.01)) > (10 * _vasoconstriction))) then {[_unit, _bodyPart, _incomingFlowDifference] call FUNC(handleLimbIVComplications)};
 
             if (_hypothermia) then {
                 // If fluid warmers are on the line, fluids are "warmed" and added to the warmer. If there is no fluid warmer on the line, the fluids stayed cooled

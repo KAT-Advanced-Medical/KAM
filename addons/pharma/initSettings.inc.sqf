@@ -1159,9 +1159,9 @@
 
 [
     QGVAR(CheckVein_TreatmentTime),
-    "TIME",
+    "SLIDER",
     LLSTRING(SETTING_CheckVein_treatmentTime),
     [CBA_SETTINGS_CAT, ELSTRING(GUI,SubCategory_Basic)],
-    [1, 30, 4],
+    [1, 15, 4, 1],
     true
 ] call CBA_Settings_fnc_init;

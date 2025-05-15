@@ -28,7 +28,7 @@ _syringeListBox ctrlAddEventHandler ["LBSelChanged", {
         "kat_etomidate", "kat_fentanyl", "kat_flumazenil", "kat_ketamine",
         "kat_lidocaine", "kat_lorazepam", "kat_nalbuphine", "kat_nitroglycerin",
         "kat_norepinephrine", "kat_phenylephrine", "kat_TXA", "kat_morphineIV",
-        "kat_adenosineIV", "kat_atropineIV", "kat_alteplase", "kat_doxapram"
+        "kat_adenosineIV", "kat_atropineIV", "kat_alteplase", "kat_doxapram", "ACE_salineIV_250"
     ];
 
     private _inventory = (items player) + (magazines player);
@@ -49,12 +49,13 @@ _syringeListBox ctrlAddEventHandler ["LBSelChanged", {
             };
         };
     } forEach _inventory;
+    diag_log str _found;
 
     private _listBox = findDisplay 38580 displayCtrl 71305;
     lbClear _listBox;
 
-    private _selectedDose = _control lbData _selectedIndex;
-    if (_selectedDose == "") exitWith { systemChat "No syringe selected, Commander."; };
+    private _selectedSyringe = _control lbData _selectedIndex;
+    if (_selectedSyringe == "") exitWith { systemChat "No syringe selected, Commander."; };
 
     private _salineIVWhitelist = [
         "kat_epinephrineIV", "kat_morphineIV", "kat_etomidate"
@@ -64,12 +65,14 @@ _syringeListBox ctrlAddEventHandler ["LBSelChanged", {
         "kat_etomidate", "kat_fentanyl", "kat_flumazenil", "kat_ketamine",
         "kat_lidocaine", "kat_lorazepam", "kat_nalbuphine", "kat_nitroglycerin",
         "kat_norepinephrine", "kat_phenylephrine", "kat_TXA", "kat_morphineIV",
-        "kat_adenosineIV", "kat_atropineIV", "kat_alteplase", "kat_doxapram"
+        "kat_adenosineIV", "kat_atropineIV", "kat_alteplase", "kat_doxapram", "ACE_salineIV_250"
     ];
     private _10mlWhitelist = [
         "kat_fentanyl", "kat_ketamine",
         "kat_lidocaine", "kat_nalbuphine","kat_TXA", "kat_morphineIV"
     ];
+
+    private _entries = [];
 
     {
         private _medItem = _x select 0;
@@ -77,32 +80,32 @@ _syringeListBox ctrlAddEventHandler ["LBSelChanged", {
 
         if (_medItem == "") exitWith {};
 
-        private _parts = _medItem splitString "_";
-        private _medName = if ((count _parts) > 1) then { _parts select 1 } else { _medItem };
-
-        private _valid = false;
-
-        if (_selectedDose == "SalineIV") then {
-            _valid = _medItem in _salineIVWhitelist;
+        private _valid = switch (_selectedSyringe) do {
+            case "SalineIV": { _medItem in _salineIVWhitelist };
+            case "5ml":      { _medItem in _5mlWhitelist };
+            case "10ml":     { _medItem in _10mlWhitelist };
+            default { false };
         };
-        if (_selectedDose == "5ml") then {
-            _valid = _medItem in _5mlWhitelist;
-        };
-        if (_selectedDose == "10ml") then {
-            _valid = _medItem in _10mlWhitelist;
-        };
-
 
         if (_valid) then {
             private _config = configFile >> "CfgWeapons" >> _medItem;
             private _displayName = getText (_config >> "displayName");
-            private _picture = getText (_config >> "picture");
-            private _entryText = format ["%1 (x%2)", _displayName, _medCount];
-            private _index = _listBox lbAdd _entryText;
-            _listBox lbSetPicture [_index, _picture];
-            _listBox lbSetData [_index, toLower _medName];
-        } else {
-            diag_log format ["Skipping %1 due to missing valid stringtable entry.", _medItem];
+            _entries pushBack [_displayName, _medItem, _medCount];
         };
     } forEach _found;
+
+    _entries sort true;
+
+    {
+        private _displayName = _x select 0;
+        private _medItem = _x select 1;
+        private _medCount = _x select 2;
+        private _medName = (toLower _medItem) splitString "_" select 1;
+        private _picture = getText (configFile >> "CfgWeapons" >> _medItem >> "picture");
+        private _entryText = format ["%1 (x%2)", _displayName, _medCount];
+        private _index = _listBox lbAdd _entryText;
+        _listBox lbSetPicture [_index, _picture];
+        _listBox lbSetData [_index, toLower _medName];
+    } forEach _entries;
 }];
+

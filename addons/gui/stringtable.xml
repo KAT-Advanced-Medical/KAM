@@ -315,6 +315,9 @@
         <Key ID="STR_KAT_GUI_Prepared_Syringe">
             <English>Prepared %1</English>
         </Key>
+        <Key ID="STR_KAT_GUI_Prepared_Infusion">
+            <English>Prepared %1</English>
+        </Key>
         <Key ID="STR_KAT_GUI_Torso">
             <English>Torso</English>
         </Key>
