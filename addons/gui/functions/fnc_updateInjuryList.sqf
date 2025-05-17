@@ -123,9 +123,16 @@ private _totalIvVolume = 0;
 private _saline = 0;
 private _blood = 0;
 private _plasma = 0;
+private _ringers = 0;
+private _packedRBC = 0;
+private _MorphineIVInfusion = 0;
+private _EpinephrineIVInfusion = 0;
+private _EtomidateIVInfusion = 0;
+private _DoxapramIVInfusion = 0;
 {
-    _x params ["_volumeRemaining", "_type"];
-    switch (_type) do {
+    _x params ["_volumeRemaining", "_type", "_partIndex"];
+    if (_partIndex == _selectionN) then{
+        switch (_type) do {
         case "Saline": {
             _saline = _saline + _volumeRemaining;
         };
@@ -135,8 +142,27 @@ private _plasma = 0;
         case "Plasma": {
             _plasma = _plasma + _volumeRemaining;
         };
+        case "Ringers Lactate": {
+            _ringers = _ringers + _volumeRemaining;
+        };
+        case "PackedRBC": {
+            _packedRBC = _packedRBC + _volumeRemaining;
+        };
+        case "Morphine_IVInfusion": {
+            _MorphineIVInfusion = _MorphineIVInfusion + _volumeRemaining;
+        };
+        case "Epinephrine_IVInfusion": {
+            _EpinephrineIVInfusion = _EpinephrineIVInfusion + _volumeRemaining;
+        };
+        case "Etomidate_IVInfusion": {
+            _EtomidateIVInfusion = _EtomidateIVInfusion + _volumeRemaining;
+        };
+        case "Doxapram_IVInfusion": {
+            _DoxapramIVInfusion = _DoxapramIVInfusion + _volumeRemaining;
+        };
     };
     _totalIvVolume = _totalIvVolume + _volumeRemaining;
+    };
 } forEach (_target getVariable [QACEGVAR(medical,ivBags), []]);
 
 if (_totalIvVolume > 0) then {
@@ -148,6 +174,24 @@ if (_totalIvVolume > 0) then {
     };
     if (_plasma > 0) then {
         _entries pushBack [format [localize ACELSTRING(medical_treatment,receivingPlasmaIvVolume), floor _plasma], [1, 1, 1, 1]];
+    };
+    if (_ringers > 0) then {
+        _entries pushBack [format [localize ELSTRING(pharma,receivingRingers_LactateIvVolume), floor _ringers], [1, 1, 1, 1]];
+    };
+    if (_packedRBC > 0) then {
+        _entries pushBack [format [localize ELSTRING(pharma,receivingPacked_RBCIvVolume), floor _packedRBC], [1, 1, 1, 1]];
+    };
+    if (_DoxapramIVInfusion > 0) then {
+        _entries pushBack [format [localize ELSTRING(pharma,receivingDoxapramIVInfusionVolume), floor _DoxapramIVInfusion], [1, 1, 1, 1]];
+    };
+    if (_EpinephrineIVInfusion > 0) then {
+        _entries pushBack [format [localize ELSTRING(pharma,receivingEpinephrineIVInfusionVolume), floor _EpinephrineIVInfusion], [1, 1, 1, 1]];
+    };
+    if (_EtomidateIVInfusion > 0) then {
+        _entries pushBack [format [localize ELSTRING(pharma,receivingEtomidateIVInfusionVolume), floor _EtomidateIVInfusion], [1, 1, 1, 1]];
+    };
+    if (_MorphineIVInfusion > 0) then {
+        _entries pushBack [format [localize ELSTRING(pharma,receivingMorphineIVInfusionVolume), floor _MorphineIVInfusion], [1, 1, 1, 1]];
     };
 } else {
     _entries pushBack [localize ACELSTRING(medical_treatment,Status_NoIv), _nonissueColor];

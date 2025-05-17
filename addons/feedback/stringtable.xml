@@ -57,6 +57,15 @@
             <English>KAT - ADV Medical: Feedback</English>
             <Japanese>KAM - フィードバック</Japanese>
             <French>KAT - ADV Medical : Retour d'expérience</French>
+            <German>KAT - ADV Medical: Feedback</German>
+            <Italian>KAT - ADV Medica: Riscontro </Italian>
+        </Key>
+        <Key ID="STR_KAT_Feedback_SETTING_effectOverdose_display">
+            <English>Enable Overdose effects</English>
+            <Japanese>オピオイド効果を有効化</Japanese>
+        </Key>
+        <Key ID="STR_KAT_Feedback_SETTING_effectOverdose_DESC">
+            <English>Enables Overdose effects on certain medications</English>
         </Key>
     </Package>
 </Project>

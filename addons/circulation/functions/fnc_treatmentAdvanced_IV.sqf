@@ -23,7 +23,7 @@ private _volume = getNumber (configFile >> "ACE_Medical_Treatment" >> "IV" >> _c
 
 private _hradjust = -_volume;
 
-[_unit, "BloodPoisoning", 150, 300, _hradjust, 0, -10] call ACEFUNC(medical_status,addMedicationAdjustment);
+[_unit, "BloodPoisoning", 150, 600, _hradjust, 0, -10, "", "", ""] call EFUNC(vitals,addMedicationAdjustment);
 
 [{
     params ["_unit"];

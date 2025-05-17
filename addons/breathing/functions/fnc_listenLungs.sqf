@@ -6,17 +6,17 @@
  * Arguments:
  * 0: Medic <OBJECT>
  * 1: Patient <OBJECT>
- *
+ * 2: Side <Number>
  * Return Value:
  * None
  *
  * Example:
- * [player, cursorTarget] call kat_breathing_fnc_listenLungs;
+ * [player, cursorTarget, 1] call kat_breathing_fnc_listenLungs;
  *
  * Public: No
  */
 
-params ["_medic","_patient"];
+params ["_medic","_patient","_side"];
 
 if (GET_HEART_RATE(_patient) isEqualTo 0) exitWith {};
 
@@ -28,16 +28,16 @@ variantDelay = 0;
     params ["_args", "_idPFH"];
     _args params ["_medic","_patient","_volume"];
 
-    private _HR = GET_HEART_RATE(_patient);
+    private _BR = GET_BREATHING_RATE(_patient);
 
     if (!(_medic getVariable [QGVAR(usingStethoscope), false]) || !(alive _patient) || _HR isEqualTo 0) exitWith {
         [_idPFH] call CBA_fnc_removePerFrameHandler;
     };
 
-    private _tension = (_patient getVariable [QGVAR(tensionpneumothorax), false] || (_patient getVariable [QGVAR(pneumothorax), 0] > 0));
-    private _hemo = _patient getVariable [QGVAR(hemopneumothorax), false];
+    private _tension = (_patient getVariable [QGVAR(tensionpneumothorax), [false, false]] select _side || (_patient getVariable [QGVAR(pneumothorax), [0,0] select _side] > 0));
+    private _hemo = _patient getVariable [QGVAR(hemopneumothorax), [false, false]] select _side;
 
-    _breathDelay = 20/_HR;
+    _breathDelay = _BR;
 
     _random = round random 1;
 

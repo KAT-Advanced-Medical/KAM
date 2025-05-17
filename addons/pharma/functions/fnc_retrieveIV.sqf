@@ -25,11 +25,13 @@ private _newArray = _patient getVariable [QACEGVAR(medical,ivBags), []];
 private _IVactual = _IVarray select _partIndex;
 
 if(GVAR(IVreuse)) then {
-    if (_IVactual == 1) then {
-        _medic addItem "kat_IO_FAST";
-    } else {
-        _medic addItem "kat_IV_16";
-    };
+    switch (_IVactual) do {
+        case 1: {_patient addItem "kat_IO_FAST"};
+        case 2: {_patient addItem "kat_IV_16"};
+        case 3: {_patient addItem "kat_IV_14"};
+        case 4: {_patient addItem "kat_IV_20"};
+        default {};
+        };
 };
 
 _IVarray set [_partIndex, 0];
@@ -39,6 +41,8 @@ private _totalIvVolume = 0;
 private _saline = 0;
 private _blood = 0;
 private _plasma = 0;
+private _ringersLactate = 0;
+private _packedRBC = 0;
 
 {
     _x params ["_volumeRemaining", "_type", "_partIndex2"];
@@ -54,6 +58,12 @@ private _plasma = 0;
             };
             case ("Plasma"): {
                 _plasma = _plasma + _volumeRemaining;
+            };
+            case ("Ringers Lactate"): {
+                _ringersLactate = _ringersLactate + _volumeRemaining;
+            };
+            case ("PackedRBC"): {
+                _packedRBC = _packedRBC + _volumeRemaining;
             };
         };
     };
@@ -121,6 +131,50 @@ if (_totalIvVolume >= 1) then {
             };
             case (_plasma > 150): {
                 _medic addItem "ACE_plasmaIV_250";
+            };
+        };
+    };
+    if (_ringersLactate > 1) then {
+        switch (true) do {
+            case (_ringersLactate > 1200): {
+                _medic addItem "kat_RingersLactateIV";
+                _medic addItem "kat_RingersLactateIV_500";
+            };
+            case (_ringersLactate > 800): {
+                _medic addItem "kat_RingersLactateIV";
+            };
+            case (_ringersLactate > 600): {
+                _medic addItem "kat_RingersLactateIV_500";
+                _medic addItem "kat_RingersLactateIV_250";
+            };
+            case (_ringersLactate > 400): {
+                _medic addItem "kat_RingersLactateIV_500";
+            };
+            case (_ringersLactate > 150): {
+                _medic addItem "kat_RingersLactateIV_250";
+            };
+        };
+    };
+    if (_packedRBC > 1) then {
+        switch (true) do {
+            case (_packedRBC > 1200): {
+                _medic addItem "kat_PackedRBCIV_500";
+                _medic addItem "kat_PackedRBCIV_500";
+                _medic addItem "kat_PackedRBCIV_500";
+            };
+            case (_packedRBC > 800): {
+                _medic addItem "kat_PackedRBCIV_500";
+                _medic addItem "kat_PackedRBCIV_500";
+            };
+            case (_packedRBC > 600): {
+                _medic addItem "kat_PackedRBCIV_500";
+                _medic addItem "kat_PackedRBCIV_250";
+            };
+            case (_packedRBC > 400): {
+                _medic addItem "kat_PackedRBCIV_500";
+            };
+            case (_packedRBC > 150): {
+                _medic addItem "kat_PackedRBCIV_250";
             };
         };
     };

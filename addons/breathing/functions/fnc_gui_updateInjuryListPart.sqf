@@ -56,37 +56,45 @@ if (_target getVariable [QGVAR(nasalCannula), false] && _selectionN isEqualTo 0)
 
 private _ptxEntry = [];
 
+private _pneumothoraxState = _target getVariable [QGVAR(pneumothorax), [0, 0]];
+private _tensionState = _target getVariable [QGVAR(tensionpneumothorax), [false, false]];
+private _hemoState = _target getVariable [QGVAR(hemopneumothorax), [false, false]];
+
 if (_selectionN isEqualTo 2) then {
     private _tensionhemothorax = false;
+
     if (!(GVAR(showPneumothorax_dupe))) then {
-        if ((_target getVariable [QGVAR(hemopneumothorax), false]) || (_target getVariable [QGVAR(tensionpneumothorax), false])) then {
+        if ((_hemoState select 0 || _hemoState select 1) || (_tensionState select 0 || _tensionState select 1)) then {
             _tensionhemothorax = true;
         };
     };
-
-    if (_target getVariable [QGVAR(activeChestSeal), false]) then {
+    private _activeChestSeal = _target getVariable [QGVAR(activeChestSeal), [false, false]];
+    if ((_activeChestSeal select 0) || (_activeChestSeal select 1)) then {
         _entries pushBack [LLSTRING(ChestSealApplied), [1,0.95,0,1]];
     };
-
-    if (GVAR(PneumothoraxAlwaysVisible)) then {
-        if ((_target getVariable [QGVAR(pneumothorax), 0] > 0) && !(_tensionhemothorax)) then {
-            _ptxEntry pushBack [LLSTRING(pneumothorax_mm), [1,1,1,1]];
-        };
-    } else {
-        if (_target getVariable [QGVAR(deepPenetratingInjury), false]) then {
-            _entries pushBack [LLSTRING(DeepPenetratingInjury), [1,0,0,1]];
-        };
-    };
-
-    if (GVAR(TensionHemothoraxAlwaysVisible)) then {
-        if (_target getVariable [QGVAR(hemopneumothorax), false]) then {
-            _ptxEntry pushBack [LLSTRING(hemopneumothorax_mm), [1,1,1,1]];
+    {
+        private _side = _x;
+        
+        if (GVAR(PneumothoraxAlwaysVisible)) then {
+            if (((_pneumothoraxState select _side) > 0) && !(_tensionhemothorax)) then {
+                _ptxEntry pushBack [LLSTRING(pneumothorax_mm), [1,1,1,1]];
+            };
+        } else {
+            if ((_target getVariable [QGVAR(deepPenetratingInjury), [false, false]]) select _side) then {
+                _entries pushBack [LLSTRING(DeepPenetratingInjury), [1,0,0,1]];
+            };
         };
 
-        if (_target getVariable [QGVAR(tensionpneumothorax), false]) then {
-            _ptxEntry pushBack [LLSTRING(tensionpneumothorax_mm), [1,1,1,1]];
+        if (GVAR(TensionHemothoraxAlwaysVisible)) then {
+            if (_hemoState select _side) then {
+                _ptxEntry pushBack [LLSTRING(hemopneumothorax_mm), [1,1,1,1]];
+            };
+
+            if (_tensionState select _side) then {
+                _ptxEntry pushBack [LLSTRING(tensionpneumothorax_mm), [1,1,1,1]];
+            };
         };
-    };
+    } forEach [0, 1];
 };
 
 _target setVariable [QGVAR(gui_updateInjuryList_ptxEntries), _ptxEntry];

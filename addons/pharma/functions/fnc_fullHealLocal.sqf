@@ -21,9 +21,15 @@ TRACE_1("fullHealLocal",_patient);
 /*
 * 0 = No IV
 * 1 = IO
-* 2 = IV
-* 3 = IV w/ Block
-* 4 = IV w/ Flush
+* 2 = 16g IV
+* 3 = 14g IV
+* 4 = 20g IV
+* 7 = 16g IV w/ Block
+* 8 = 14g IV w/ Block
+* 9 = 20g IV w/ Block
+* 10 = 16g IV w/ Flush
+* 11 = 14g IV w/ Flush
+* 12 = 20g IV w/ Flush
 */
 
 GVAR(cardiacArrestBleedRate) = ACEGVAR(medical,const_minCardiacOutput) * EGVAR(circulation,cardiacArrestBleedRate);
@@ -36,7 +42,13 @@ if (GVAR(RequireInsIV) && GVAR(IVflowControl)) then {
 } else {
     _patient setVariable [QGVAR(IVflow), [1,1,1,1,1,1], true];
 };
+if (GVAR(RequireInsIV)) then {
+    _patient setVariable [QGVAR(IVrate), [0,0,0,0,0,0,0,0,0,0,0,0], true];
+} else {
+    _patient setVariable [QGVAR(IVrate), [1,1,1,1,1,1], true];
+};
 
+_patient setVariable [QGVAR(IVincomingFlowAmount), [0,0,0,0,0,0,0,0,0,0,0,0], true];
 _patient setVariable [QGVAR(IVpfh), [0,0,0,0,0,0,0,0,0,0,0,0], true];
 _patient setVariable [QGVAR(active), false, true];
 _patient setVariable [QGVAR(IVPharma_PFH), nil, true];
@@ -47,10 +59,14 @@ _patient setVariable [QGVAR(externalPh), 0, true];
 _patient setVariable [QGVAR(pH), 0, true];
 
 _patient setVariable [QGVAR(opioidFactor), 0, true];
+_patient setVariable [QGVAR(opioidDepressionFactor), 0, true];
 
 _patient setVariable [QGVAR(kidneyFail), false, true];
 _patient setVariable [QGVAR(kidneyArrest), false, true];
 _patient setVariable [QGVAR(kidneyPressure), false, true];
+_patient setVariable [QGVAR(respiratoryRate), 1, true];
+
+_patient setVariable [VAR_LOCAL_ANESTHESIA, DEFAULT_LOCAL_ANESTHESIA, true];
 
 _patient setVariable [QGVAR(coagulationFactor), missionNamespace getVariable [QGVAR(coagulation_factor_count), 30], true];
 

@@ -41,14 +41,6 @@ class CfgFunctions {
             };
         };
     };
-    class overwrite_ace_medical_status {
-        tag = "ace_medical_status";
-        class ace_medical_status {
-            class updateWoundBloodLoss {
-                file = QPATHTOF(functions\fnc_updateWoundBloodLoss.sqf);
-            };
-        };
-    };
     class overwrite_ace_medical {
         tag = "ace_medical";
         class ace_medical {
@@ -66,9 +58,6 @@ class CfgFunctions {
             class hasTourniquetAppliedTo {
                 file = QPATHTOF(functions\fnc_hasTourniquetAppliedTo.sqf);
             };
-            class tourniquetRemove {
-                file = QPATHTOF(functions\fnc_tourniquetRemove.sqf);
-            };
             class canSplint {
                 file = QPATHTOF(functions\fnc_canSplint.sqf);
             };
@@ -80,6 +69,9 @@ class CfgFunctions {
             };
             class canBandage {
                 file = QPATHTOF(functions\fnc_canBandage.sqf);
+            };
+            class ivBagLocal {
+                file = QPATHTOF(functions\fnc_ivBagLocal.sqf);
             };
          };
     };

@@ -50,6 +50,9 @@ if (_ph < 7.2) then {
     };
 };
 
+private _tension = _patient getVariable [QGVAR(tensionpneumothorax), [false, false]];
+private _hemo = _patient getVariable [QGVAR(hemopneumothorax), [false, false]];
+
 if ([_medic] call ACEFUNC(common,isMedic)) then {
     _breathRate = format ["%1%2", _breathRate, _rr];
 } else {
@@ -63,7 +66,7 @@ if ([_medic] call ACEFUNC(common,isMedic)) then {
 _output = format ["%1%2, %3", _breathing ,_breath, _breathRate];
 _output_log = format ["%1%2, %3", _breathing_log, _breath, _breathRate];
 
-if (_hr == 0 || !(alive _patient) || (_patient getVariable [QEGVAR(airway,obstruction), false] && !(_patient getVariable [QEGVAR(airway,overstretch), false])) || _patient getVariable [QEGVAR(airway,occluded), false] || _patient getVariable [QGVAR(hemopneumothorax), false] || _patient getVariable [QGVAR(tensionpneumothorax), false]) then {
+if (_hr == 0 || !(alive _patient) || (_patient getVariable [QEGVAR(airway,obstruction), false] && !(_patient getVariable [QEGVAR(airway,overstretch), false])) || _patient getVariable [QEGVAR(airway,occluded), false] || (_tension select 0) || (_tension select 1) || (_hemo select 0) || (_hemo select 1)) then {
     _output = LLSTRING(breathing_none);
     _output_log = ACELSTRING(medical_treatment,Check_Pulse_None);
 };

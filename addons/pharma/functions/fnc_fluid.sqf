@@ -17,6 +17,6 @@
  * Public: No
  */
 
-params ["_patient", "_ph", "_coagulation"];
+params ["_patient", "_ph", "_coagulation", "_classname"];
 
-[QGVAR(fluidLocal),[ _patient, _ph, _coagulation], _patient] call CBA_fnc_targetEvent;
+[QGVAR(fluidLocal),[ _patient, _ph, _coagulation, _classname], _patient] call CBA_fnc_targetEvent;

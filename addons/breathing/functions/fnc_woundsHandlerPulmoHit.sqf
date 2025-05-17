@@ -35,34 +35,33 @@ if (GVAR(pneumothoraxDamageThreshold_TakenDamage)) then {
 };
 
 // Damage threshold passed & pneumothorax given
-if (floor (random 100) < (GVAR(pneumothoraxChance) + _chanceIncrease)) exitWith {
-    private _hasTensionPneumothorax = _unit getVariable [QGVAR(tensionpneumothorax), false];
-    private _initialPneumothorax = (_unit getVariable [QGVAR(pneumothorax), 0]) == 0;
+if (floor (random 100) < (GVAR(pneumothoraxChance) + _chanceIncrease)) then {
+    private _pneumothoraxState = _unit getVariable [QGVAR(pneumothorax), [0, 0]];
+    private _tensionState = _unit getVariable [QGVAR(tensionpneumothorax), [false, false]];
+    private _side = selectRandom [0, 1];
 
-    switch (true) do {
-        case (_hasTensionPneumothorax): { // fully deteriorate pneumothorax
-            _unit setVariable [QGVAR(pneumothorax), 4, true];
-            _unit setVariable [QGVAR(activeChestSeal), false, true];
-        };
-        case (_initialPneumothorax): {
-            // Set pain to at least 0.2
-            [_unit, 0.2] call ACEFUNC(medical_status,adjustPainLevel);
+    if ((_pneumothoraxState select _side) isEqualTo 0 && !(_tensionState select _side)) then { 
+        [_unit, 0.2] call ACEFUNC(medical_status,adjustPainLevel);
+        _pneumothoraxState set [_side, 1];
+        _unit setVariable [QGVAR(pneumothorax), _pneumothoraxState, true];
+        _deepPenetratingInjury set [_side, true];
+        _unit setVariable [QGVAR(deepPenetratingInjury), _deepPenetratingInjury, true];
+        _activeChestSeal set [_side, true];
+        _unit setVariable [QGVAR(activeChestSeal), _activeChestSeal, true];
 
-            // add breathing sound
-            _unit setVariable [QGVAR(pneumothorax), 1, true];
-            _unit setVariable [QGVAR(deepPenetratingInjury), true, true];
-            _unit setVariable [QGVAR(activeChestSeal), false, true];
-
-            // Start deteriorating after delay
-            [_unit, _chanceIncrease] call FUNC(handlePneumothoraxDeterioration);
-        };
-
-        case (GVAR(advPtxEnable)): {
-            // Roll chance to get advanced pneumothorax while afflicted with early stage of pneumothorax
-            [_unit, _chanceIncrease] call FUNC(inflictAdvancedPneumothorax);
+        [_unit, _chanceIncrease, _side] call FUNC(handlePneumothoraxDeterioration);
+    } else {
+        if (_tensionState select _side) then {
+            _pneumothoraxState set [_side, 4];
+            _unit setVariable [QGVAR(pneumothorax), _pneumothoraxState, true];
+            _activeChestSeal set [_side, true];
+            _unit setVariable [QGVAR(activeChestSeal), _activeChestSeal, true];
+        } else {
+            if (GVAR(advPtxEnable)) then {
+                [_unit, _chanceIncrease, _side] call FUNC(inflictAdvancedPneumothorax);
+            };
         };
     };
-
     _this // return
 };
 
@@ -71,8 +70,10 @@ if (floor (random 100) < (GVAR(pneumothoraxChance) + _chanceIncrease)) exitWith 
 // No injury
 if (floor (random 100) >= GVAR(deepPenetratingInjuryChance)) exitWith {_this};
 
-_unit setVariable [QGVAR(deepPenetratingInjury), true, true];
-_unit setVariable [QGVAR(activeChestSeal), false, true];
+_deepPenetratingInjury set [_side, true];
+_unit setVariable [QGVAR(deepPenetratingInjury), _deepPenetratingInjury, true];
+_activeChestSeal set [_side, true];
+_unit setVariable [QGVAR(activeChestSeal), _activeChestSeal, true];
 
 // Check for tamponade
 

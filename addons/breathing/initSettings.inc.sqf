@@ -572,3 +572,79 @@
     [[0, 1, 2, 3], ["STR_ACE_Common_None", "STR_ACE_Common_Vehicle", "STR_ACE_Medical_Treatment_MedicalFacilities", "STR_ACE_Medical_Treatment_VehiclesAndFacilities"], 3],
     true
 ] call CBA_fnc_addSetting;
+
+[
+    QGVAR(medLvl_FingerThoracostomyTreatment),
+    "LIST",
+    LLSTRING(SETTING_FingerThoracostomyTreatment_medLvl),
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_ThoraxInjuries)],
+    [[0, 1, 2], ["STR_ACE_Medical_Treatment_Anyone", "STR_ACE_Medical_Treatment_Medics", "STR_ACE_Medical_Treatment_Doctors"], 0],
+    true
+] call CBA_fnc_addSetting;
+
+[
+    QGVAR(hardcoreBreathingTreatment),
+    "CHECKBOX",
+    [LLSTRING(SETTING_hardcoreBreathingTreatment),LLSTRING(SETTING_hardcoreBreathingTreatment_DESC)],
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_ThoraxInjuries)],
+    [true],
+    true
+] call CBA_fnc_addSetting;
+
+[
+    QGVAR(incisionTime),
+    "SLIDER",
+    LLSTRING(INCISION_TIMER),
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_ThoraxInjuries)],
+    [0,100,10,0],
+    true
+] call CBA_fnc_addSetting;
+
+[
+    QGVAR(ChestTubeintermediateTime),
+    "SLIDER",
+    [LLSTRING(INTERMEDIATE_TIMER), LLSTRING(INTERMEDIATE_TIMER_DESC)],
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_ThoraxInjuries)],
+    [0,100,8,0],
+    true
+] call CBA_fnc_addSetting;
+
+[
+    QGVAR(openTime),
+    "SLIDER",
+    LLSTRING(OPEN_TIMER),
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_ThoraxInjuries)],
+    [0,100,15,0],
+    true
+] call CBA_fnc_addSetting;
+
+[
+    QGVAR(chestTubeAction_MedLevel),
+    "LIST",
+    LLSTRING(CHESTTUBE_ACTION_MEDLEVEL),
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_ThoraxInjuries)],
+    [[0, 1, 2], ["STR_ACE_Medical_Treatment_Anyone", "STR_ACE_Medical_Treatment_Medics", "STR_ACE_Medical_Treatment_Doctors"], 2],
+    true
+] call CBA_fnc_addSetting;
+
+[
+    QGVAR(chestTubeLocation),
+    "LIST",
+    LLSTRING(CHESTTUBE_LOCATION),
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_ThoraxInjuries)],
+    [[0,1,2,3],["STR_ACE_Common_Anywhere", "STR_ACE_Common_Vehicle", "STR_ACE_Medical_Treatment_MedicalFacilities", "STR_ACE_Medical_Treatment_VehiclesAndFacilities"],3],
+    true
+] call CBA_fnc_addSetting;
+
+// 0 Surgery Causes Unconsciousness: If you do an incision (without anesthesia & sedative) patient will go into CA
+// 1 Unconsciousness Required for Surgery: Surgery fails unless patient is unconscious, needs anesthesia
+// 2 No Unconsciousness from Surgery: Patient can stay awake without anesthesia, causes pain
+// 3 Surgery Anesthesia: The patient is able to stay awake through the entirety of the surgery. If Etomidate has not been applied, then the patient will go into CA.
+[
+    QGVAR(chestTube_ConsciousnessRequirement),
+    "LIST",
+    [LLSTRING(SETTING_ConsciousnessRequirement), LLSTRING(SETTING_ConsciousnessRequirement_DESC)],
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_ThoraxInjuries)],
+    [[0, 1, 2, 3], [LLSTRING(SETTING_Causes_Unconsciousness), LLSTRING(SETTING_Unconsciousness_Required), LLSTRING(SETTING_No_Unconsciousness), LLSTRING(SETTING_Anesthesia)], 0],
+    true
+] call CBA_fnc_addSetting;

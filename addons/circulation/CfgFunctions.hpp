@@ -16,6 +16,9 @@ class CfgFunctions {
             class getBloodPressure {
                 file = QPATHTOF(functions\fnc_getBloodPressure.sqf);
             };
+            class updateWoundBloodLoss {
+                file = QPATHTOF(functions\fnc_updateWoundBloodLoss.sqf);
+            };
         };
     };
     class overwrite_medical_vitals {

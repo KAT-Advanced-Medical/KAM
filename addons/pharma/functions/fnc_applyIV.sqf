@@ -27,6 +27,7 @@ private _IVarray = _patient getVariable [QGVAR(IV), [0,0,0,0,0,0,0,0,0,0,0,0]];
 private _IVactual = _IVarray select _partIndex;
 private _IVpfh = _patient getVariable [QGVAR(IVpfh), [0,0,0,0,0,0,0,0,0,0,0,0]];
 private _IVpfhActual = _IVpfh select _partIndex;
+private _IVrate = _patient getVariable [QGVAR(IVrate), [0,0,0,0,0,0,0,0,0,0,0,0]];
 
 if (_IVpfhActual > 0) then {
     [_IVpfhActual] call CBA_fnc_removePerFrameHandler;
@@ -38,57 +39,93 @@ if (_IVpfhActual > 0) then {
     _IVpfh set [_partIndex, _IVpfhActual];
     _patient setVariable [QGVAR(IVpfh), _IVpfh, true];
 };
+switch (_usedItem) do {
+    case "kat_IV_16": {
+        if (random 100 < GVAR(IVFailures)) then {
+            [_patient, [0.2, 0.3, 0.4] select (floor random 3)] call ACEFUNC(medical_status,adjustPainLevel);
+        } else {
+        _IVarray set [_partIndex, 2];
+        _IVrate set [_partIndex, 1];
+        _patient setVariable [QGVAR(IV), _IVarray, true];
+        _patient setVariable [QGVAR(IVrate), _IVrate, true];
+        [_patient, "activity", LSTRING(iv_log), [[_medic] call ACEFUNC(common,getName), "16g IV"]] call ACEFUNC(medical_treatment,addToLog);
+        [_patient, "16g IV"] call ACEFUNC(medical_treatment,addToTriageCard);};};
+        
+    case "kat_IV_14": {
+        if (random 100 < GVAR(IVFailures)) then {
+            [_patient, [0.2, 0.3, 0.4] select (floor random 3)] call ACEFUNC(medical_status,adjustPainLevel);
+        } else {     
+        _IVarray set [_partIndex, 3];
+        _IVrate set [_partIndex, 1.5];
+        _patient setVariable [QGVAR(IV), _IVarray, true];
+        _patient setVariable [QGVAR(IVrate), _IVrate, true];
+        [_patient, "activity", LSTRING(iv_log), [[_medic] call ACEFUNC(common,getName), "14g IV"]] call ACEFUNC(medical_treatment,addToLog);
+        [_patient, "14g IV"] call ACEFUNC(medical_treatment,addToTriageCard);};};
 
-if (_usedItem isEqualTo "kat_IV_16") then {
-    _IVarray set [_partIndex, 2];
-    _patient setVariable [QGVAR(IV), _IVarray, true];
+    case "kat_IV_20": {
+        if (random 100 < GVAR(IVFailures)) then {
+            [_patient, [0.2, 0.3, 0.4] select (floor random 3)] call ACEFUNC(medical_status,adjustPainLevel);
+        } else {      
+        _IVarray set [_partIndex, 4];
+        _IVrate set [_partIndex, 0.5];
+        _patient setVariable [QGVAR(IV), _IVarray, true];
+        _patient setVariable [QGVAR(IVrate), _IVrate, true];
+        [_patient, "activity", LSTRING(iv_log), [[_medic] call ACEFUNC(common,getName), "20g IV"]] call ACEFUNC(medical_treatment,addToLog);
+        [_patient, "20g IV"] call ACEFUNC(medical_treatment,addToTriageCard);};};
 
-    [_patient, "activity", LSTRING(iv_log), [[_medic] call ACEFUNC(common,getName), "16g IV"]] call ACEFUNC(medical_treatment,addToLog);
-    [_patient, "16g IV"] call ACEFUNC(medical_treatment,addToTriageCard);
-} else {
-    _IVarray set [_partIndex, 1];
-    _patient setVariable [QGVAR(IV), _IVarray, true];
-
-    private _medStack = _patient call ACEFUNC(medical_treatment,getAllMedicationCount);
-    private _medsToCheck = ["fentanyl", "ketamine", "nalbuphine", "morphine", "lidocaine"];
-    private _fentanylEffectiveness = 0;
-    private _ketamineEffectiveness = 0;
-    private _nalbuphineEffectiveness = 0;
-    private _morphineEffectiveness = 0;
-    private _lidocaineEffectiveness = 0;
-    {
-        private _medName = toLower (_x select 0);
-        private _effectiveness = _x select 2;
-        if ("fentanyl" in _medName) then {
-            _fentanylEffectiveness = _fentanylEffectiveness max _effectiveness;
-        };
-        if ("ketamine" in _medName) then {
-            _ketamineEffectiveness = _ketamineEffectiveness max _effectiveness;
-        };
-        if ("nalbuphine" in _medName) then {
-            _nalbuphineEffectiveness = _nalbuphineEffectiveness max _effectiveness;
-        };
-        if ("morphine" in _medName) then {
-            _morphineEffectiveness = _morphineEffectiveness max _effectiveness;
-        };
-        if ("lidocaine" in _medName) then {
-            _lidocaineEffectiveness = _lidocaineEffectiveness max _effectiveness;
-        };
+    case "kat_IO_FAST": {
+        _IVarray set [_partIndex, 1];
+        _IVrate set [_partIndex, 0.4];
+        _patient setVariable [QGVAR(IV), _IVarray, true];
+        _patient setVariable [QGVAR(IVrate), _IVrate, true];
+        private _medStack = _patient call ACEFUNC(medical_treatment,getAllMedicationCount);
+        private _medsToCheck = ["fentanyl", "ketamine", "nalbuphine", "morphine", "lidocaine"];
+        private _fentanylEffectiveness = 0;
+        private _ketamineEffectiveness = 0;
+        private _nalbuphineEffectiveness = 0;
+        private _morphineEffectiveness = 0;
+        {
+            private _medName = toLower (_x select 0);
+            private _effectiveness = _x select 2;
+            if ("fentanyl" in _medName) then {
+                _fentanylEffectiveness = _fentanylEffectiveness max _effectiveness;
+            };
+            if ("ketamine" in _medName) then {
+                _ketamineEffectiveness = _ketamineEffectiveness max _effectiveness;
+            };
+            if ("nalbuphine" in _medName) then {
+                _nalbuphineEffectiveness = _nalbuphineEffectiveness max _effectiveness;
+            };
+            if ("morphine" in _medName) then {
+                _morphineEffectiveness = _morphineEffectiveness max _effectiveness;
+            };
         } forEach _medStack;
         if (
-            _fentanylEffectiveness <= 0.6 &&
-            _ketamineEffectiveness <= 0.6 &&
-            _nalbuphineEffectiveness <= 0.6 &&
-            _lidocaineEffectiveness <= 0.6 &&
-            _morphineEffectiveness <= 0.6
+            _fentanylEffectiveness <= 0.8 &&
+            _ketamineEffectiveness <= 0.8 &&
+            _nalbuphineEffectiveness <= 0.8 &&
+            _morphineEffectiveness <= 0.8 &&
+            (GET_LOCAL_ANESTHESIA(_patient,_partIndex) <= 0.8)
+
         ) then {
-            [_patient, [0.6, 0.7, 0.8] select (floor random 3)] call ACEFUNC(medical_status,adjustPainLevel);
+            _painLevel = [0.6, 0.7, 0.8] select (floor random 3);
+            [_patient, _painLevel] call ACEFUNC(medical_status,adjustPainLevel);
         };
-    [_patient, "activity", LSTRING(iv_log), [[_medic] call ACEFUNC(common,getName), "FAST IO"]] call ACEFUNC(medical_treatment,addToLog);
-    [_patient, "FAST IO"] call ACEFUNC(medical_treatment,addToTriageCard);
+        [{
+            params ["_patient", "_partIndex"];
+            GET_LOCAL_ANESTHESIA(_patient,_partindex) > 0.7;
+        }, {
+            params ["_patient", "_partIndex", "_painLevel"];
+            _negPainLevel = -1 * _painLevel;
+            [_patient, _negPainLevel] call ACEFUNC(medical_status,adjustPainLevel);
+        }, [_patient, _partIndex, _painLevel], 60] call CBA_fnc_waitUntilAndExecute;
+
+        [_patient, "activity", LSTRING(iv_log), [[_medic] call ACEFUNC(common,getName), "FAST IO"]] call ACEFUNC(medical_treatment,addToLog);
+        [_patient, "FAST IO"] call ACEFUNC(medical_treatment,addToTriageCard);};
+    default {};
 };
 
-if (GVAR(IVdropEnable) && (_usedItem isEqualTo "kat_IV_16")) then {
+if (GVAR(IVdropEnable) && ((_usedItem isEqualTo "kat_IV_16") || (_usedItem isEqualTo "kat_IV_14") || (_usedItem isEqualTo "kat_IV_20"))) then {
     [{
         params ["_patient", "_partIndex", "_IVpfhActual"];
 
@@ -112,10 +149,11 @@ if (GVAR(IVdropEnable) && (_usedItem isEqualTo "kat_IV_16")) then {
                     private _IVactual = _IVarray select _partIndex;
 
                     if(GVAR(IVreuse)) then {
-                        if (_IVactual == 1) then {
-                            _patient addItem "kat_IO_FAST";
-                        } else {
-                            _patient addItem "kat_IV_16";
+                        switch (_IVactual) do {
+                        case "1": {_patient addItem "kat_IO_FAST"};
+                        case "2": {_patient addItem "kat_IV_16"};
+                        case "3": {_patient addItem "kat_IV_14"};
+                        case "4": {_patient addItem "kat_IV_20"};
                         };
                     };
 

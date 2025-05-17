@@ -165,7 +165,7 @@
 // Defined here for easy consistency with GETVAR/SETVAR (also a list for reference)
 #define VAR_BLOOD_PRESS       QACEGVAR(medical,bloodPressure)
 #define VAR_BLOOD_VOL         QACEGVAR(medical,bloodVolume)
-#define VAR_WOUND_BLEEDING    QACEGVAR(medical,woundBleeding)
+#define VAR_WOUND_BLEEDING    QEGVAR(circulation,woundBleeding)
 #define VAR_CRDC_ARRST        QACEGVAR(medical,inCardiacArrest)
 #define VAR_HEART_RATE        QACEGVAR(medical,heartRate)
 #define VAR_PAIN              QACEGVAR(medical,pain)
@@ -191,6 +191,7 @@
 #undef GET_BLOOD_VOLUME
 
 #define GET_OPIOID_FACTOR(unit)           (unit getVariable [QEGVAR(pharma,opioidFactor), 0])
+#define GET_OPIOID_DEPRESSION(unit)           (unit getVariable [QEGVAR(pharma,opioidDepression), 0])
 #define GET_PAIN_PERCEIVED(unit)    (0 max ((GET_PAIN(unit) - GET_PAIN_SUPPRESS(unit)) min 1))
 
 #undef GET_DAMAGE_THRESHOLD
@@ -283,6 +284,7 @@
 #define DEFAULT_ETCO2 37
 #define DEFAULT_BLOOD_GAS [DEFAULT_PACO2, DEFAULT_PAO2, DEFAULT_O2SAT, DEFAULT_HCO3, DEFAULT_PH, DEFAULT_ETCO2]
 #define DEFAULT_RESPIRATORY_DEPTH       10
+#define DEFAULT_LOCAL_ANESTHESIA        [0,0,0,0,0,0,0,0,0,0,0,0]
 
 #define DEFAULT_ANEROBIC_EXCHANGE 0.8
 #define DEFAULT_TEMPERATURE 37
@@ -302,11 +304,9 @@
 #define OXYGEN_PERCENTAGE_FATAL 75
 
 // Breathing
-#define VAR_SURFACE_AREA                400
-#define GET_KAT_SURFACE_AREA(unit)      (VAR_SURFACE_AREA - (((unit getVariable [QEGVAR(breathing,pneumothorax), 0]) * 75)))
+#define VAR_SURFACE_AREA(unit)          (unit getVariable [QEGVAR(breathing,lungSurfaceArea), 400])
+#define GET_KAT_SURFACE_AREA(unit)      (VAR_SURFACE_AREA(unit) - (((unit getVariable [QEGVAR(breathing,pneumothorax), [0, 0]] select 0) * 40) + ((unit getVariable [QEGVAR(breathing,pneumothorax), [0, 0]] select 1) * 40)))
 
-#define VAR_RESPIRATORY_DEPTH           QEGVAR(vitals,respiratoryDepth)
-#define GET_KAT_RESPIRATORY_DEPTH(unit)      (unit getVariable [QEGVAR(vitals,respiratoryDepth), 10])
 
 #define VAR_BLOOD_GAS                  QEGVAR(circulation,bloodGas)
 #define VAR_BREATHING_RATE             QEGVAR(breathing,breathRate)
@@ -317,6 +317,10 @@
 #define GET_PH(unit)                   ((unit getVariable [VAR_BLOOD_GAS, DEFAULT_BLOOD_GAS]) select 4)
 #define GET_ETCO2(unit)                ((unit getVariable [VAR_BLOOD_GAS, DEFAULT_BLOOD_GAS]) select 5)
 #define GET_BREATHING_RATE(unit)       (unit getVariable [VAR_BREATHING_RATE, 15])
+
+#define VAR_RESPIRATORY_DEPTH           QEGVAR(vitals,respiratoryDepth)
+#define GET_KAT_RESPIRATORY_DEPTH(unit)      (unit getVariable [QEGVAR(vitals,respiratoryDepth), 10])
+
 
 // Circulation
 #define VAR_INTERNAL_BLEEDING          QEGVAR(circulation,internalBleeding)
@@ -339,6 +343,9 @@
 // Pharma
 #define VAR_VASOCONSTRICTION           QEGVAR(pharma,alphaAction)
 #define GET_VASOCONSTRICTION(unit)     (unit getVariable [VAR_VASOCONSTRICTION, 1])
+
+#define VAR_LOCAL_ANESTHESIA            QEGVAR(pharma,localAnesthesia)
+#define GET_LOCAL_ANESTHESIA(unit,partindex)      ((unit getVariable [VAR_LOCAL_ANESTHESIA, DEFAULT_LOCAL_ANESTHESIA]) select _partindex)
 
 //Surgery
 #define STRING_BODY_PARTS ["head", "neck", "chest", "body", "left arm", "upper left arm", "right arm", "upper right arm", "left leg", "upper leftleg", "right leg", "upper right leg"]

@@ -1,0 +1,114 @@
+#include "..\script_component.hpp"
+/*
+ * Author: Glowbal, Cplhardcore
+ * Handles the medication given to a patient.
+ *
+ * Arguments:
+ * 0: Patient <OBJECT>
+ * 1: Medication Treatment classname <STRING>
+ * 2: Incompatible medication <ARRAY of <STRING, NUMBER>>
+ *
+ * Return Value:
+ * None
+ *
+ * Example:
+ * [player, "morphine", [["x", 1]]] call kat_pharma_fnc_onMedicationUsage
+ *
+ * Public: No
+ */
+ 
+params ["_target", "_className", "_incompatibleMedication"];
+TRACE_3("onMedicationUsage",_target,_className,_incompatibleMedication);
+
+if (GVAR(AMS_Enabled)) then {
+    private _medicationParts = (_className splitString "_");
+
+    if (count _medicationParts > 3) then {
+        _medicationName = _medicationParts select 1; {
+        private _defaultConfig    = configFile >> QUOTE(ACE_ADDON(Medical_Treatment)) >> "Medication";
+        private _medicationConfig = _defaultConfig >> _medicationName;
+        private _maxDose          = GET_NUMBER(_medicationConfig >> "maxDose",getNumber (_defaultConfig >> "maxDose"));
+        TRACE_2("onMedUsage1",_maxDose,_medicationName);
+
+        if (_maxDose > 0) then {
+            private _maxDoseDeviation = GET_NUMBER(_medicationConfig >> "maxDoseDeviation",getNumber (_defaultConfig >> "maxDoseDeviation"));
+            private _currentDose = [_target, _medicationName] call ACEFUNC(medical_status,getMedicationCount) select 0;
+            TRACE_2("onMedUsage2",_currentDose,_medicationName);
+            // Because both {floor random 0} and {floor random 1} return 0
+            if (_maxDoseDeviation > 0) then {
+                _maxDoseDeviation = _maxDoseDeviation + 1;
+            };
+
+            private _limit = _maxDose + (floor random _maxDoseDeviation);
+            if (_currentDose > _limit) then {
+                TRACE_1("exceeded max dose",_currentDose);
+                [_target, _medicationName, _currentDose, _limit, _incompatibleMed] call FUNC(overDose);
+            };
+            {
+            _x params ["_xMed", "_xLimit"];
+            private _inSystem = ([_target, _xMed] call ACEFUNC(medical_status,getMedicationCount)) select 0;
+            if (_inSystem > _xLimit) then {
+                [_target, _medicationName, _inSystem, _xLimit, _xMed] call FUNC(overDose);
+                };
+            } forEach _incompatibleMedication;
+            };
+        };
+    } else {
+        private _defaultConfig    = configFile >> QUOTE(ACE_ADDON(Medical_Treatment)) >> "Medication";
+        private _medicationConfig = _defaultConfig >> _classname;
+        private _maxDose          = GET_NUMBER(_medicationConfig >> "maxDose",getNumber (_defaultConfig >> "maxDose"));
+        TRACE_2("onMedUsage1",_maxDose,_classname);
+        if (_maxDose > 0) then {
+        private _maxDoseDeviation = GET_NUMBER(_medicationConfig >> "maxDoseDeviation",getNumber (_defaultConfig >> "maxDoseDeviation"));
+        private _currentDose = [_target, _className] call ACEFUNC(medical_status,getMedicationCount) select 0;
+        TRACE_2("onMedUsage2",_currentDose,_classname);
+        // Because both {floor random 0} and {floor random 1} return 0
+        if (_maxDoseDeviation > 0) then {
+            _maxDoseDeviation = _maxDoseDeviation + 1;
+        };
+
+        private _limit = _maxDose + (floor random _maxDoseDeviation);
+        if (_currentDose > _limit) then {
+            TRACE_1("exceeded max dose",_currentDose);
+            [_target, _classname, _currentDose, _limit, _classname] call FUNC(overDose);
+        };
+    };
+
+// Check incompatible medication (format [med,limit])
+    {
+        _x params ["_xMed", "_xLimit"];
+        private _inSystem = ([_target, _xMed] call ACEFUNC(medical_status,getMedicationCount)) select 0;
+        if (_inSystem > _xLimit) then {
+            [_target, _classname, _inSystem, _xLimit, _xMed] call FUNC(overDose);
+        };
+        } forEach _incompatibleMedication;
+    };
+
+} else {
+    private _defaultConfig    = configFile >> QUOTE(ACE_ADDON(Medical_Treatment)) >> "Medication";
+    private _medicationConfig = _defaultConfig >> _classname;
+    private _maxDose          = GET_NUMBER(_medicationConfig >> "maxDose",getNumber (_defaultConfig >> "maxDose"));
+
+    if (_maxDose > 0) then {
+        private _maxDoseDeviation = GET_NUMBER(_medicationConfig >> "maxDoseDeviation",getNumber (_defaultConfig >> "maxDoseDeviation"));
+        private _currentDose = [_target, _className] call ACEFUNC(medical_status,getMedicationCount) select 0;
+        // Because both {floor random 0} and {floor random 1} return 0
+        if (_maxDoseDeviation > 0) then {
+            _maxDoseDeviation = _maxDoseDeviation + 1;
+        };
+
+        private _limit = _maxDose + (floor random _maxDoseDeviation);
+        if (_currentDose > _limit) then {
+            TRACE_1("exceeded max dose",_currentDose);
+            [_target, _classname, _currentDose, _limit, _classname] call FUNC(overDose);
+        };
+    };
+
+// Check incompatible medication (format [med,limit])
+    {
+        _x params ["_xMed", "_xLimit"];
+        private _inSystem = ([_target, _xMed] call ACEFUNC(medical_status,getMedicationCount)) select 0;
+        if (_inSystem > _xLimit) then {
+            [_target, _classname, _inSystem, _xLimit, _xMed] call FUNC(overDose);
+        };
+    } forEach _incompatibleMedication;}

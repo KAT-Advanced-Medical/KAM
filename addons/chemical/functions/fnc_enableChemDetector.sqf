@@ -31,7 +31,7 @@ _unit setVariable [QGVAR(detectorEnabled), true, true];
 
     if !("KAT_ChemicalDetector" in assignedItems _unit) exitWith {
         _unit setVariable [QGVAR(detectorEnabled), false, true];
-        _pfhID call CBA_fnc_removePerFrameHandler;
+        _idPFH call CBA_fnc_removePerFrameHandler;
     };
 
     private _detectorSound = _unit getVariable [QGVAR(detectorSound), false];

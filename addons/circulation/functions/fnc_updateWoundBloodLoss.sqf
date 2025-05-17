@@ -1,6 +1,6 @@
 #include "..\script_component.hpp"
 /*
- * Author: Glowbal
+ * Author: Glowbal, modified by Cplhardcore
  * Update total wound bleeding based on open wounds and tourniquets
  * Wound bleeding = percentage of cardiac output lost
  *
@@ -11,7 +11,7 @@
  * Nothing
  *
  * Example:
- * [player] call ace_medical_status_fnc_updateWoundBloodLoss
+ * [player] call kat_circulation_fnc_updateWoundBloodLoss
  *
  * Public: No
  */

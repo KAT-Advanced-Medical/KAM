@@ -1,4 +1,12 @@
 class CfgVehicles {
+    class ACE_medicalSupplyCrate;
+    class ACE_medicalSupplyCrate_advanced: ACE_medicalSupplyCrate {
+        class TransportItems {
+            MACRO_ADDITEM(kat_fluidWarmer,5);
+            MACRO_ADDITEM(kat_handWarmer,15);
+        };
+    };
+
     class Man;
 
     class CAManBase: Man {
