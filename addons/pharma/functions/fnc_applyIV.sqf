@@ -42,13 +42,22 @@ if (_IVpfhActual > 0) then {
 if (_usedItem isEqualTo "kat_IV_16") then {
     _IVarray set [_partIndex, 2];
     _patient setVariable [QGVAR(IV), _IVarray, true];
-
+    private _ivMenu = _patient getVariable [QGVAR(IVmenuActive), false];
+    private _ivFlowControl = missionNamespace getVariable [QGVAR(IVflowControl), false];
+    if (!_ivMenu && _ivFlowControl) then {
+        [_patient] call EFUNC(gui,handleIVShow);
+    };
     [_patient, "activity", LSTRING(iv_log), [[_medic] call ACEFUNC(common,getName), "16g IV"]] call ACEFUNC(medical_treatment,addToLog);
     [_patient, "16g IV"] call ACEFUNC(medical_treatment,addToTriageCard);
 } else {
     _IVarray set [_partIndex, 1];
     _patient setVariable [QGVAR(IV), _IVarray, true];
+    private _ivMenu = _patient getVariable [QGVAR(IVmenuActive), false];
+    private _ivFlowControl = missionNamespace getVariable [QGVAR(IVflowControl), false];
 
+    if (!_ivMenu && _ivFlowControl) then {
+    [_patient] call EFUNC(gui,handleIVShow);
+    };
     private _medStack = _patient call ACEFUNC(medical_treatment,getAllMedicationCount);
     private _medsToCheck = ["fentanyl", "ketamine", "nalbuphine", "morphine", "lidocaine"];
     private _fentanylEffectiveness = 0;
