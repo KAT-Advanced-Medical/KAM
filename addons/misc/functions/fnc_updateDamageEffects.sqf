@@ -23,6 +23,11 @@ private _isLimping = false;
 private _hasLegSplint = false;
 private _noSprint = false;
 private _noJog = false;
+private _noThrow = false;
+private _keepProne = false;
+private _holsterWeapon = false;
+_unit setVariable [QGVAR(keepProne), _keepProne, true];
+_unit setVariable [QGVAR(holsterWeapon), _holsterWeapon, true];
 if (ACEGVAR(medical,fractures) > 0) then {
     private _fractures = GET_FRACTURES(_unit);
     TRACE_1("",_fractures);
@@ -99,6 +104,70 @@ if (_unit getVariable [QGVAR(Tourniquet_LegNecrosis_Threshold), 0] >= 90) then {
 };
 if (_unit getVariable [QEGVAR(hitpoints,evisceration), 0] > 0) then {
     _isLimping = true;
+    _noJog = true;
+    _noSprint = true;
+};
+
+if (_unit getVariable [QEGVAR(hitpoints,pelvicFracture), 0] > 0) then {
+    _isLimping = true;
+    _noJog = true;
+    _noSprint = true;
+    _keepProne = true;
+    [{
+        params ["_unit"];
+        if (!alive _unit || {!(_unit getVariable [QGVAR(keepProne), false])}) exitWith {};
+
+        if (animationState _unit find "pne" == -1)  then {
+            _unit playMove "AmovPpneMstpSnonWnonDnon_SnonWnonDnon";
+        };
+    }, 0.2, _unit] call CBA_fnc_addPerFrameHandler;
+};
+
+
+private _legJointArray = GET_JOINTS(_unit) select [2, 2];
+private _armJointArray = GET_JOINTS(_unit) select [0, 2];
+private _hasLegJointInjury = _legJointArray findIf {_x findIf {_x != 0} != -1} != -1;
+private _hasLegDislocationInjury = _legJointArray findIf {_x findIf {_x in [3, 6]} != -1} != -1;
+private _hasArmDislocationInjury = _armJointArray findIf {_x findIf {_x in [3, 6]} != -1} != -1;
+private _hasArmJointInjury = _armJointArray findIf {_x findIf {_x != 0} != -1} != -1;
+TRACE_6("HasInjury",_hasLegJointInjury,_hasLegDislocationInjury,_hasArmDislocationInjury,_hasArmJointInjury,_legJointArray,_armJointArray);
+if (_hasLegJointInjury) then {
+    _isLimping = true;
+    _noSprint = true;
+};
+
+if (_hasLegDislocationInjury) then {
+    _isLimping = true;
+    _noJog = true;
+    _noSprint = true;
+    _keepProne = true;
+    [{
+        params ["_unit"];
+        if (!alive _unit || {!(_unit getVariable [QGVAR(keepProne), false])}) exitWith {};
+
+        if (animationState _unit find "pne" == -1)  then {
+            _unit playMove "AmovPpneMstpSnonWnonDnon_SnonWnonDnon";
+        };
+    }, 0.2, _unit] call CBA_fnc_addPerFrameHandler;
+};
+
+if (_hasArmDislocationInjury) then {
+    _noThrow = true;
+    _holsterWeapon = true;
+    _unit setVariable [QGVAR(holsterWeapon), _holsterWeapon, true];
+    [{
+        params ["_unit"];
+        if (!alive _unit || {!(_unit getVariable [QGVAR(holsterWeapon), false])}) exitWith {};
+        private _currentWeapon = currentWeapon _unit;
+        if (_currentWeapon != "") then {
+            _unit action ["SwitchWeapon", _unit, _unit, -1];
+        };
+    }, 0.2, _unit] call CBA_fnc_addPerFrameHandler;
+};
+
+
+if (_hasArmJointInjury) then {
+    _noThrow = true;
 };
 
 if (_unit getVariable [QEGVAR(surgery,reboa), false]) then {
@@ -108,9 +177,11 @@ if (_unit getVariable [QEGVAR(surgery,reboa), false]) then {
 };
 
 [_unit, "blockSprint", QACEGVAR(medical,fracture), _noSprint] call ACEFUNC(common,statusEffect_set);
+[_unit, "blockThrow", QEGVAR(hitpoints,Joints), _noThrow] call ACEFUNC(common,statusEffect_set);
 [_unit, "forceWalk", QACEGVAR(medical,fracture), _noJog] call ACEFUNC(common,statusEffect_set);
 
 _unit setVariable [QACEGVAR(medical,isLimping), _isLimping, true];
+_unit setVariable [QGVAR(keepProne), _keepProne, true];
 
 // refresh
 private _isDamaged = _unit getHitPointDamage "HitLegs" >= DAMAGED_MIN_THRESHOLD && {_unit getHitPointDamage "HitLegs" != LIMPING_MIN_DAMAGE};

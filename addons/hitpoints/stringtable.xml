@@ -316,7 +316,7 @@
             <English>Enables Catastrophic Injuries such as Eviscerations, Amputations, and others</English>
         </Key>
         <Key ID="STR_KAT_Hitpoints_EviscerationChance">
-            <English>Precent chance of an Evisceration happening</English>
+            <English>Percent chance of an Evisceration happening</English>
         </Key>
         <Key ID="STR_KAT_Hitpoints_Evisceration_DAMAGE_THRESHOLD">
             <English>Evisceration Damage Threshold </English>
@@ -344,6 +344,162 @@
         </Key>
         <Key ID="STR_KAT_Hitpoints_SETTING_ArterialChance_DESC">
             <English>Chance for a wound to be an arterial bleed (10% - 45% worse bleeding)</English>
+        </Key>
+        <Key ID="STR_KAT_Hitpoints_JointChance">
+            <English>Percent chance of an Joint Injury happening</English>
+        </Key>
+        <Key ID="STR_KAT_Hitpoints_Joint_DAMAGE_THRESHOLD">
+            <English>Joint Injury Damage Threshold </English>
+        </Key>
+        <Key ID="STR_KAT_Hitpoints_Joint_DAMAGE_THRESHOLD_DESC">
+            <English>Damage Threshold to cause a Joint Injury</English>
+        </Key>
+        <Key ID="STR_KAT_Hitpoints_SETTING_JointDamageThreshold_DamageTaken">
+            <English>Increase Joint Injury chance based on damage</English>
+        </Key>
+        <Key ID="STR_KAT_Hitpoints_SETTING_JointDamageThreshold_DamageTaken_DESC">
+            <English>Increase chance of a Joint Injury occurring based on damage taken if over the Joint Injury damage threshold</English>
+        </Key>
+        <Key ID="STR_KAT_Hitpoints_Ice_Pack_Desc_Short">
+            <English>Ice Pack for Sprains and Strains</English>
+        </Key>
+        <Key ID="STR_KAT_Hitpoints_Ice_Pack_Desc_Use">
+            <English>Ice Pack for Sprains and Strains</English>
+        </Key>
+        <Key ID="STR_KAT_Hitpoints_Ice_Pack_Display">
+            <English>Ice Pack</English>
+        </Key>
+        <Key ID="STR_KAT_Hitpoints_Ice_Pack">
+            <English>Apply Ice Pack</English>
+        </Key>
+        <Key ID="STR_KAT_Hitpoints_Ice_Pack_Progress">
+            <English>Applying Ice Pack</English>
+        </Key>
+        <Key ID="STR_KAT_Hitpoints_JointInjury_Strain">
+            <English>Strained</English>
+        </Key>
+        <Key ID="STR_KAT_Hitpoints_JointInjury_Sprain">
+            <English>Sprained</English>
+        </Key>
+        <Key ID="STR_KAT_Hitpoints_JointInjury_Dislocation">
+            <English>Dislocated</English>
+        </Key>
+        <Key ID="STR_KAT_Hitpoints_JointInjury_Shoulder">
+            <English>Shoulder</English>
+        </Key>
+        <Key ID="STR_KAT_Hitpoints_JointInjury_Elbow">
+            <English>Elbow</English>
+        </Key>
+        <Key ID="STR_KAT_Hitpoints_JointInjury_Wrist">
+            <English>Wrist</English>
+        </Key>
+        <Key ID="STR_KAT_Hitpoints_JointInjury_Hip">
+            <English>Hip</English>
+        </Key>
+        <Key ID="STR_KAT_Hitpoints_JointInjury_Knee">
+            <English>Knee</English>
+        </Key>
+        <Key ID="STR_KAT_Hitpoints_JointInjury_Ankle">
+            <English>Ankle</English>
+        </Key>
+        <Key ID="STR_KAT_Hitpoints_Check_Joints">
+            <English>Check Joints</English>
+        </Key>
+        <Key ID="STR_KAT_Hitpoints_Check_Joints_Progress">
+            <English>Checking Joints</English>
+        </Key>
+        <Key ID="STR_KAT_Hitpoints_JointLog">
+            <English>%1 has found a %2 %3 on the %4</English>
+        </Key>
+        <Key ID="STR_KAT_Hitpoints_Pelvic_Binder_Desc_Short">
+            <English>Pelvic Binder for securing Pelvic Injuries</English>
+        </Key>
+        <Key ID="STR_KAT_Hitpoints_Pelvic_Binder_Desc_Use">
+            <English>Pelvic Binder for securing Pelvic Injuries</English>
+        </Key>
+        <Key ID="STR_KAT_Hitpoints_Pelvic_Binder_Display">
+            <English>Pelvic Binder</English>
+        </Key>
+        <Key ID="STR_KAT_Hitpoints_Elastic_Wrap_Joint">
+            <English>Wrap Joint</English>
+        </Key>
+        <Key ID="STR_KAT_Hitpoints_Elastic_Wrap_Joint_Progress">
+            <English>Wrapping Joint</English>
+        </Key>
+        <Key ID="STR_KAT_Hitpoints_JointInjury_IcedStrain">
+            <English>Iced Strained</English>
+        </Key>
+        <Key ID="STR_KAT_Hitpoints_JointInjury_IcedSprain">
+            <English>Iced Sprained</English>
+        </Key>
+        <Key ID="STR_KAT_Hitpoints_JointInjury_StabilizedDislocation">
+            <English>Stabilised Dislocated</English>
+        </Key>
+        <Key ID="STR_KAT_Hitpoints_JointInjury_InflamedStrain">
+            <English>Inflamed Strained</English>
+        </Key>
+        <Key ID="STR_KAT_Hitpoints_JointInjury_InflamedSprain">
+            <English>Inflamed Sprained</English>
+        </Key>
+        <Key ID="STR_KAT_Hitpoints_JointInjury_ReducedDislocation">
+            <English>Reduced Dislocated</English>
+        </Key>
+        <Key ID="STR_KAT_Hitpoints_JointInjury_WrappedStrain">
+            <English>Wrapped Strained</English>
+        </Key>
+        <Key ID="STR_KAT_Hitpoints_JointInjury_WrappedSprain">
+            <English>Wrapped Sprained</English>
+        </Key>
+        <Key ID="STR_KAT_Hitpoints_Stabilize_Joint">
+            <English>Stabilize Joint</English>
+        </Key>
+        <Key ID="STR_KAT_Hitpoints_Stabilize_Joint_Progress">
+            <English>Stabilizing Joint</English>
+        </Key>
+        <Key ID="STR_KAT_Hitpoints_Reduce_Joint">
+            <English>Reduce Joint</English>
+        </Key>
+        <Key ID="STR_KAT_Hitpoints_Reduce_Joint_Progress">
+            <English>Reducing Joint</English>
+        </Key>
+        <Key ID="STR_KAT_Hitpoints_Subcatagory_Joints">
+            <English>Joint Injuries</English>
+        </Key>
+        <Key ID="STR_KAT_Hitpoints_Ice_Timer">
+            <English>Time to ice a joint</English>
+        </Key>
+        <Key ID="STR_KAT_Hitpoints_Wrap_Timer">
+            <English>Time to wrap a joint</English>
+        </Key>
+        <Key ID="STR_KAT_Hitpoints_Stabilize_Timer">
+            <English>Time to stabilize a joint</English>
+        </Key>
+        <Key ID="STR_KAT_Hitpoints_Reduce_Timer">
+            <English>Time to reduce a joint</English>
+        </Key>
+        <Key ID="STR_KAT_Hitpoints_Joint_Care_Medlevel">
+            <English>Med Level to take care of joint injuries</English>
+        </Key>
+        <Key ID="STR_KAT_Hitpoints_PelvicChance">
+            <English>Percent chance of a Pelvic Fracture happening</English>
+        </Key>
+        <Key ID="STR_KAT_Hitpoints_Pelvic_DAMAGE_THRESHOLD">
+            <English>Pelvic Fracture Damage Threshold </English>
+        </Key>
+        <Key ID="STR_KAT_Hitpoints_Pelvic_DAMAGE_THRESHOLD_DESC">
+            <English>Damage Threshold to cause an Pelvic Fracture</English>
+        </Key>
+        <Key ID="STR_KAT_Hitpoints_SETTING_PelvicDamageThreshold_DamageTaken">
+            <English>Increase Pelvic Fracture chance based on damage</English>
+        </Key>
+        <Key ID="STR_KAT_Hitpoints_SETTING_PelvicDamageThreshold_DamageTaken_DESC">
+            <English>Increase chance of a Pelvic Fracture occurring based on damage taken if over the Pelvic Fracture damage threshold</English>
+        </Key>
+        <Key ID="STR_KAT_Hitpoints_Bind_Pelvis">
+            <English>Bind Pelvis</English>
+        </Key>
+        <Key ID="STR_KAT_Hitpoints_Bind_Pelvis_Progress">
+            <English>Binding Pelvis</English>
         </Key>
     </Package>
 </Project>

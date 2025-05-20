@@ -49,7 +49,9 @@ private _bandageTime = 0;
     if (GVAR(advancedBandages != 0)) then {
         _woundTime = _woundTime * linearConversion [0, _effectiveness, _impact, 0.666, 1, true];
     };
-
+    private _classIndex = _woundClassID / 10;
+    private _className  = ACEGVAR(medical_damage,woundClassNames) select _classIndex;
+    if (_className in ["InternalBleeding", "Evisceration"]) exitWith {};
     _bandageTime = _bandageTime + _woundTime;
 } forEach _targetWounds;
 

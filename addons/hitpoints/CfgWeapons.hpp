@@ -131,4 +131,30 @@ class CfgWeapons {
             mass = 0.3;
         };
     };
+    class kat_Ice_Pack: ACE_ItemCore {
+        scope = 2;
+        author = "Cplhardcore";
+        displayName = CSTRING(Ice_Pack_Display);
+        picture = QPATHTOF(ui\Ice_Pack.paa);
+        model = "\A3\Structures_F_EPA\Items\Medical\Bandage_F.p3d";
+        descriptionShort = CSTRING(Ice_Pack_Desc_Short);
+        descriptionUse = CSTRING(Ice_Pack_Desc_Use);
+        ACE_isMedicalItem = 1;
+        class ItemInfo: CBA_MiscItem_ItemInfo {
+            mass = 0.5;
+        };
+    };
+    class kat_Pelvic_Binder: ACE_ItemCore {
+        scope = 2;
+        author = "Cplhardcore";
+        displayName = CSTRING(Pelvic_Binder_Display);
+        picture = QPATHTOF(ui\Pelvic_Binder.paa);
+        model = "\A3\Structures_F_EPA\Items\Medical\Bandage_F.p3d";
+        descriptionShort = CSTRING(Pelvic_Binder_Desc_Short);
+        descriptionUse = CSTRING(Pelvic_Binder_Desc_Use);
+        ACE_isMedicalItem = 1;
+        class ItemInfo: CBA_MiscItem_ItemInfo {
+            mass = 3;
+        };
+    };
 };

@@ -64,4 +64,102 @@
     true
 ] call CBA_fnc_addSetting;
 
+[
+    QGVAR(PelvicFractureChance),
+    "SLIDER",
+    LLSTRING(PelvicChance),
+    [CBA_SETTINGS_CAT, LSTRING(Subcatagory_Catastrophic_Injuries)],
+    [0, 100, 5, 0],
+    true
+] call CBA_fnc_addSetting;
 
+
+[
+    QGVAR(PelvicDamageThreshold),
+    "SLIDER",
+    [LLSTRING(Pelvic_DAMAGE_THRESHOLD), LLSTRING(Pelvic_DAMAGE_THRESHOLD_DESC)],
+    [CBA_SETTINGS_CAT, LSTRING(Subcatagory_Catastrophic_Injuries)],
+    [0, 6, 3, 1],
+    true
+] call CBA_fnc_addSetting;
+
+[
+    QGVAR(PelvicDamageThreshold_TakenDamage),
+    "CHECKBOX",
+    [LLSTRING(SETTING_PelvicDamageThreshold_DamageTaken), LLSTRING(SETTING_PelvicDamageThreshold_DamageTaken_DESC)],
+    [CBA_SETTINGS_CAT, LSTRING(Subcatagory_Catastrophic_Injuries)],
+    [true],
+    true
+] call CBA_fnc_addSetting;
+
+[
+    QGVAR(JointChance),
+    "SLIDER",
+    LLSTRING(JointChance),
+    [CBA_SETTINGS_CAT, LSTRING(Subcatagory_Joints)],
+    [0, 100, 5, 0],
+    true
+] call CBA_fnc_addSetting;
+
+[
+    QGVAR(JointDamageThreshold),
+    "SLIDER",
+    [LLSTRING(Joint_DAMAGE_THRESHOLD), LLSTRING(Joint_DAMAGE_THRESHOLD_DESC)],
+    [CBA_SETTINGS_CAT, LSTRING(Subcatagory_Joints)],
+    [0, 3, 1.5, 1],
+    true
+] call CBA_fnc_addSetting;
+
+[
+    QGVAR(JointDamageThreshold_TakenDamage),
+    "CHECKBOX",
+    [LLSTRING(SETTING_JointDamageThreshold_DamageTaken), LLSTRING(SETTING_JointDamageThreshold_DamageTaken_DESC)],
+    [CBA_SETTINGS_CAT, LSTRING(Subcatagory_Joints)],
+    [true],
+    true
+] call CBA_fnc_addSetting;
+
+[
+    QGVAR(JointCareLevel),
+    "LIST",
+    LLSTRING(JOINT_CARE_MEDLEVEL),
+    [CBA_SETTINGS_CAT, LSTRING(Subcatagory_Joints)],
+    [[0, 1, 2], ["STR_ACE_Medical_Treatment_Anyone", "STR_ACE_Medical_Treatment_Medics", "STR_ACE_Medical_Treatment_Doctors"], 0],
+    true
+] call CBA_fnc_addSetting;
+
+[
+    QGVAR(iceTime),
+    "SLIDER",
+    LLSTRING(ICE_TIMER),
+    [CBA_SETTINGS_CAT, LSTRING(Subcatagory_Joints)],
+    [0,100,10,0],
+    true
+] call CBA_fnc_addSetting;
+
+[
+    QGVAR(wrapTime),
+    "SLIDER",
+    LLSTRING(WRAP_TIMER),
+    [CBA_SETTINGS_CAT, LSTRING(Subcatagory_Joints)],
+    [0,100,10,0],
+    true
+] call CBA_fnc_addSetting;
+
+[
+    QGVAR(stabilizeTime),
+    "SLIDER",
+    LLSTRING(STABILIZE_TIMER),
+    [CBA_SETTINGS_CAT, LSTRING(Subcatagory_Joints)],
+    [0,100,10,0],
+    true
+] call CBA_fnc_addSetting;
+
+[
+    QGVAR(reduceTime),
+    "SLIDER",
+    LLSTRING(REDUCE_TIMER),
+    [CBA_SETTINGS_CAT, LSTRING(Subcatagory_Joints)],
+    [0,100,10,0],
+    true
+] call CBA_fnc_addSetting;
