@@ -81,7 +81,7 @@ _syringeListBox ctrlAddEventHandler ["LBSelChanged", {
         if (_medItem == "") exitWith {};
 
         private _valid = switch (_selectedSyringe) do {
-            case "salineIV": { _medItem in _salineIVWhitelist };
+            case "salineiv": { _medItem in _salineIVWhitelist };
             case "5ml":      { _medItem in _5mlWhitelist };
             case "10ml":     { _medItem in _10mlWhitelist };
             default { false };
