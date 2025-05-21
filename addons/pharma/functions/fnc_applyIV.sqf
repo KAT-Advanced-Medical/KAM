@@ -56,7 +56,7 @@ if (_usedItem isEqualTo "kat_IV_16") then {
     private _ivFlowControl = missionNamespace getVariable [QGVAR(IVflowControl), false];
 
     if (!_ivMenu && _ivFlowControl) then {
-    [_patient] call EFUNC(gui,handleIVShow);
+        [_patient] call EFUNC(gui,handleIVShow);
     };
     private _medStack = _patient call ACEFUNC(medical_treatment,getAllMedicationCount);
     private _medsToCheck = ["fentanyl", "ketamine", "nalbuphine", "morphine", "lidocaine"];
