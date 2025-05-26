@@ -15,7 +15,11 @@ class CfgPatches {
             "kat_ETD",
             "kat_Hemostatic_Gauze",
             "kat_Adhesive_Bandage",
-            "kat_Burn_Dressing"
+            "kat_Burn_Dressing",
+            "kat_Israeli_Bandage",
+            "kat_Ice_Pack",
+            "kat_Pelvic_Binder"
+
         };
         magazines[] = { };
         requiredAddons[] = {
