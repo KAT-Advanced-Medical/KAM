@@ -190,10 +190,10 @@
             <English>Applying Abdominal Pad</English>
         </Key>
         <Key ID="STR_KAT_Hitpoints_ETD_Desc_Short">
-            <English>Emergency Trauma Dressing for Extremely Large Wounds</English>
+            <English>Emergency Trauma Dressing for Extremely Large Amounts of Wounds</English>
         </Key>
         <Key ID="STR_KAT_Hitpoints_ETD_Desc_Use">
-            <English>Emergency Trauma Dressing for Extremely Large Wounds</English>
+            <English>Emergency Trauma Dressing for Extremely Large Amounts of Wounds</English>
         </Key>
         <Key ID="STR_KAT_Hitpoints_ETD_Display">
             <English>Emergency Trauma Dressing</English>
@@ -203,6 +203,21 @@
         </Key>
         <Key ID="STR_KAT_Hitpoints_ETD_Progress">
             <English>Applying Emergency Trauma Dressing</English>
+        </Key>
+        <Key ID="STR_KAT_Hitpoints_Israeli_Bandage_Desc_Short">
+            <English>Israeli Bandage for General Use</English>
+        </Key>
+        <Key ID="STR_KAT_Hitpoints_Israeli_Bandage_Desc_Use">
+            <English>Israeli Bandage for General Use</English>
+        </Key>
+        <Key ID="STR_KAT_Hitpoints_Israeli_Bandage_Display">
+            <English>Israeli Bandage</English>
+        </Key>
+        <Key ID="STR_KAT_Hitpoints_Israeli_Bandage">
+            <English>Apply Israeli Bandage</English>
+        </Key>
+        <Key ID="STR_KAT_Hitpoints_Israeli_Bandage_Progress">
+            <English>Applying Israeli Bandage</English>
         </Key>
         <Key ID="STR_KAT_Hitpoints_SplintFellOff">
             <English>Splint Fell Off</English>

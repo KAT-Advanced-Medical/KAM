@@ -51,8 +51,9 @@ private _bandageTime = 0;
     };
     private _classIndex = _woundClassID / 10;
     private _className  = ACEGVAR(medical_damage,woundClassNames) select _classIndex;
-    if (_className in ["InternalBleeding", "Evisceration"]) exitWith {};
-    _bandageTime = _bandageTime + _woundTime;
+    if (_className in ["InternalBleeding", "Evisceration"]) then {} else {
+        _bandageTime = _bandageTime + _woundTime;
+    };
 } forEach _targetWounds;
 
 // Medics are more practised at applying bandages
@@ -64,6 +65,18 @@ if ([_medic] call ACEFUNC(medical_treatment,isMedic)) then {
 if (_medic == _patient) then {
     _bandageTime = _bandageTime + BANDAGE_TIME_MOD_SELF;
 };
+switch (true) do {
+        case (_bandage in ["ETD", "Israeli_Bandage"]): {
+            _bandageTime = _bandageTime * 1.5;
+        };
+        case (_bandage in ["Hemostatic_Gauze", "Compressed_Gauze", "fourByfour_Gauze", "Burn_Dressing"]): {
+            _bandageTime = _bandageTime * 0.8;
+        };
+        case (_bandage == "Adhesive_Bandage"): {
+            _bandageTime = _bandageTime * 0.5;
+        };
+        default {_bandageTime = _bandageTime};
+    };
 
 // Bandaging multiple injuries doesn't require opening a new bandage each time
 if (_woundCount > 1) then {
@@ -72,4 +85,4 @@ if (_woundCount > 1) then {
 
 TRACE_1("",_bandageTime);
 // Nobody can bandage instantly
-_bandageTime max 2.25
+_bandageTime max 3

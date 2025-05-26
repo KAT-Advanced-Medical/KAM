@@ -92,6 +92,19 @@ class CfgWeapons {
             mass = 0.5;
         };
     };
+    class kat_Israeli_Bandage: ACE_ItemCore {
+        scope = 2;
+        author = "Cplhardcore";
+        displayName = CSTRING(Israeli_Bandage_Display);
+        picture = QPATHTOF(ui\Israeli_Bandage.paa);
+        model = "\A3\Structures_F_EPA\Items\Medical\Bandage_F.p3d";
+        descriptionShort = CSTRING(Israeli_Bandage_Desc_Short);
+        descriptionUse = CSTRING(Israeli_Bandage_Desc_Use);
+        ACE_isMedicalItem = 1;
+        class ItemInfo: CBA_MiscItem_ItemInfo {
+            mass = 0.3;
+        };
+    };
     class kat_Hemostatic_Gauze: ACE_ItemCore {
         scope = 2;
         author = "Cplhardcore";

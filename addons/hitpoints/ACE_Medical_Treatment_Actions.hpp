@@ -51,7 +51,7 @@ class ACE_Medical_Treatment_Actions {
         items[] = {"kat_Abdominal_Pad"};
         allowedSelections[] = {"Body"};
         callbackSuccess = QFUNC(ABDPad);
-        treatmentTime = 6;
+        treatmentTime = 8;
     };
     class ETD: BasicBandage {
         displayName = CSTRING(ETD);
@@ -59,6 +59,13 @@ class ACE_Medical_Treatment_Actions {
         icon = QPATHTOF(ui\ETD.paa);
         callbackSuccess = QACEFUNC(medical_treatment,bandage);
         items[] = {"kat_ETD"};
+    };
+    class Israeli_Bandage: BasicBandage {
+        displayName = CSTRING(Israeli_Bandage);
+        displayNameProgress = CSTRING(Israeli_Bandage_Progress);
+        icon = QPATHTOF(ui\Israeli_Bandage.paa);
+        callbackSuccess = QACEFUNC(medical_treatment,bandage);
+        items[] = {"kat_Israeli_Bandage"};
     };
     class Elastic_Wrap: BasicBandage {
         displayName = CSTRING(Elastic_Wrap);
