@@ -75,11 +75,63 @@ _target setVariable [VAR_BANDAGED_WOUNDS, _bandagedWounds, true];
 // _reopeningChance = 1;
 // _reopeningMinDelay = 5;
 // _reopeningMaxDelay = 6;
-
+private _delay = ((_reopeningMinDelay + random (_reopeningMaxDelay - _reopeningMinDelay)) * (1 - _bleeding));
 TRACE_1("",_reopeningChance);
 // Check if we are ever going to reopen this
 if (random 1 <= _reopeningChance * ACEGVAR(medical_treatment,woundReopenChance)) then {
-    private _delay = ((_reopeningMinDelay + random (_reopeningMaxDelay - _reopeningMinDelay)) * (4 * _bleeding));
+    TRACE_1("Will open",_delay);
+    [{
+        params ["_target", "_impact", "_part", "_injuryIndex", "_injury"];
+        TRACE_5("reopen delay finished",_target,_impact,_part,_injuryIndex,_injury);
+
+        private _openWounds = GET_OPEN_WOUNDS(_target);
+        private _woundsOnPart = _openWounds getOrDefault [_part, []];
+        if (count _woundsOnPart - 1 < _injuryIndex) exitWith { TRACE_2("index bounds",_injuryIndex,count _woundsOnPart); };
+
+        _injury params ["_classID"];
+
+        private _selectedInjury = _woundsOnPart select _injuryIndex;
+        _selectedInjury params ["_selClassID", "_selAmount", "", "_selDamage"];
+        if (_selClassID == _classID) then { // matching the IDs
+            private _bandagedWounds = GET_BANDAGED_WOUNDS(_target);
+            private _exist = false;
+            {
+                _x params ["_id", "_amountOf"];
+                if (_id == _classID) exitWith {
+                    TRACE_2("bandagedWound exists",_id,_classID);
+                    _x set [1, 0 max (_amountOf - _impact)];
+                    _exist = true;
+                };
+            } forEach (_bandagedWounds getOrDefault [_part, []]);
+            TRACE_2("Before openWound update",_openWounds,_bandagedWounds);
+            if (_exist) then {
+                TRACE_2("Reopening Wound",_bandagedWounds,_openWounds);
+                _selectedInjury set [1, _selAmount + _impact];
+                TRACE_3("Reopening Wound2",_selectedInjury,_impact,_selAmount);
+                _target setVariable [VAR_BANDAGED_WOUNDS, _bandagedWounds, true];
+                _target setVariable [VAR_OPEN_WOUNDS, _openWounds, true];
+
+                [_target] call ACEFUNC(medical_status,updateWoundBloodLoss);
+
+                private _partIndex = ALL_BODY_PARTS find _part;
+
+                // Re-add trauma and damage visuals
+                if (ACEGVAR(medical_treatment,clearTrauma) == 2) then {
+                    [_target, _part, _selDamage * _impact] call ACEFUNC(medical_treatment,addTrauma);
+                };
+
+                // Check if we gained limping from this wound re-opening
+                if ((ACEGVAR(medical,limping) == 1) && {_partIndex > 7}) then {
+                    [_target] call EFUNC(medical_engine,updateDamageEffects);
+                };
+            };
+            TRACE_2("After openWound update", _openWounds,_bandagedWounds);
+        } else {
+            TRACE_3("no match",_selectedInjury,_classID,_part);
+        };
+    }, [_target, _impact, _part, _injuryIndex, +_injury], _delay] call CBA_fnc_waitAndExecute;
+} else {
+    private _delay = _delay * (random [1.5, 2, 3]);
     TRACE_1("Will open",_delay);
     [{
         params ["_target", "_impact", "_part", "_injuryIndex", "_injury"];

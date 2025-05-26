@@ -55,7 +55,7 @@ if (IN_CRDC_ARRST(_unit)) then {
 
     // Respiratory Rate is supressed by Opioids 
     
-    _baseRespiratoryDepth = [((DEFAULT_RESPIRATORY_DEPTH) - (_opioidDepression / 1.5)), 10] select (_unit getVariable [QEGVAR(breathing,BVMInUse), false]);
+    private _baseRespiratoryDepth = ((DEFAULT_RESPIRATORY_DEPTH) - (_opioidDepression / 1.5));
     private _baseTidalVolume = GET_KAT_SURFACE_AREA(_unit) * (_baseRespiratoryDepth / 10);
 
     _respiratoryRate = [(((_demandVentilation / _baseTidalVolume)) min MAXIMUM_RR) * _respiratoryRateMult, 20] select (_unit getVariable [QEGVAR(breathing,BVMInUse), false]);
@@ -66,7 +66,7 @@ if (IN_CRDC_ARRST(_unit)) then {
     private _tidalVolume = _baseTidalVolume;
     if (_respiratoryRate > 20) then {
     private _excessRR = _respiratoryRate - 25;
-    private _scaleFactor = 1 - (0.03 * _excessRR);  // reduces ~1.5% per breath over 25
+    private _scaleFactor = 1 - (0.03 * _excessRR);  // reduces ~3% per breath over 25
     _tidalVolume = _baseTidalVolume * (_scaleFactor max 0.5); // never drops below 50% of base
     };
 
@@ -74,7 +74,7 @@ if (IN_CRDC_ARRST(_unit)) then {
     if (_respiratoryRate > 20) then {
     private _excessRR = _respiratoryRate - 25;
     private _scaleFactor = 1 - (0.03 * _excessRR);  // reduces ~3% per breath over 25
-    _respiratoryDepth = _baseRespiratoryDepth * (_scaleFactor max 0.5); // never drops below 50% of base
+    _respiratoryDepth = [(_baseRespiratoryDepth * (_scaleFactor max 0.5)), 10] select (_unit getVariable [QEGVAR(breathing,BVMInUse), false]); // never drops below 50% of base
     };
     
     _actualVentilation = _tidalVolume * _respiratoryRate;
