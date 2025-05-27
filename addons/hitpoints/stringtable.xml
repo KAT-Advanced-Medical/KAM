@@ -516,5 +516,14 @@
         <Key ID="STR_KAT_Hitpoints_Bind_Pelvis_Progress">
             <English>Binding Pelvis</English>
         </Key>
+        <Key ID="STR_KAT_Hitpoints_pelvicFracture_log">
+            <English>%1 has found a Pelvic Fracture</English>
+        </Key>
+        <Key ID="STR_KAT_Hitpoints_pelvicFracture_log">
+            <English>%1 has found a Stabilized Pelvic Fracture</English>
+        </Key>
+        <Key ID="STR_KAT_Hitpoints_noPelvicFracture_log">
+            <English>%1 did not find a Pelvic Fracture</English>
+        </Key>
     </Package>
 </Project>
