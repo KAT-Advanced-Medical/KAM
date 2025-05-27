@@ -128,10 +128,11 @@ if (_unit getVariable [QEGVAR(hitpoints,evisceration), 0] > 0) then {
     _noSprint = true;
 };
 
-if (_unit getVariable [QEGVAR(hitpoints,pelvicFracture), 0] > 0) then {
+if ((_unit getVariable [QEGVAR(hitpoints,pelvicFracture), 0]) > 0) then {
     _isLimping = true;
     _noJog = true;
     _noSprint = true;
+    _keepProne = true;
 };
 
 
@@ -166,6 +167,7 @@ if (_hasLegDislocationInjury) then {
     _isLimping = true;
     _noJog = true;
     _noSprint = true;
+    _keepProne = true;
 };
 
 if (_hasArmDislocationInjury) then {
@@ -187,6 +189,21 @@ if (_unit getVariable [QEGVAR(surgery,reboa), false]) then {
 [_unit, "forceWalk", QACEGVAR(medical,fracture), _noJog] call ACEFUNC(common,statusEffect_set);
 
 _unit setVariable [QACEGVAR(medical,isLimping), _isLimping, true];
+_unit setVariable [QGVAR(keepProne), _keepProne, true];
+
+[{
+        _this params ["_args", "_pfhID"];
+        _args params ["_unit"];
+        if (!alive _unit || {!(_unit getVariable [QGVAR(keepProne), false])}) then {
+            _pfhID call CBA_fnc_removePerFrameHandler;
+        };
+        private _state = animationState _unit;
+        TRACE_1("State",_state);
+        if ((_state find "pne") == -1) then {
+            _unit playActionNow "PlayerProne";
+            TRACE_2("State2",_state,_unit);
+        };
+}, 0.05, [_unit]] call CBA_fnc_addPerFrameHandler;
 
 // refresh
 private _isDamaged = _unit getHitPointDamage "HitLegs" >= DAMAGED_MIN_THRESHOLD && {_unit getHitPointDamage "HitLegs" != LIMPING_MIN_DAMAGE};

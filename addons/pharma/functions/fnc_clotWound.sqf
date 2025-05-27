@@ -88,6 +88,9 @@ private _fnc_clotWound = {
                     _unit setVariable [QGVAR(coagulationFactor), (_coagulationFactor - _factorCountToRemove), true];
                     [QACEGVAR(medical_treatment,bandageLocal), [_unit, _bodyPart, _bandageToUse, 1], _unit] call CBA_fnc_targetEvent;
                     if (GVAR(coagulation_allow_clot_text)) then {
+                        private _classIndex = _woundClassID / 10;
+                        private _className = ACEGVAR(medical_damage,woundClassNames) select _classIndex;
+                        if (_className in ["InternalBleeding", "Evisceration"]) exitWith {};
                         [_unit, "activity", _logString, [(toLower _selectionName)]] call ACEFUNC(medical_treatment,addToLog);
                     };
                 },

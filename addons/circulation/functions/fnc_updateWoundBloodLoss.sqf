@@ -54,12 +54,13 @@ private _bodyPartBleeding = [0,0,0,0,0,0,0,0,0,0,0,0];
             
         } forEach _y;
         _bodyPartBleeding set [_partIndex, _partBleeding];
-        TRACE_1("updateWoundBloodLoss",_partBleeding);
+        TRACE_3("updateWoundBloodLoss",_partBleeding,_bodyPartBleeding,_partIndex);
         _unit setVariable [VAR_BODY_BLEED_RATE, _bodyPartBleeding, true];
     };
 } forEach GET_OPEN_WOUNDS(_unit);
 if (selectMax _bodyPartBleeding == 0) exitWith {
     TRACE_1("updateWoundBloodLoss-none",_unit);
+    _unit setVariable [VAR_BODY_BLEED_RATE, DEFAULT_BODY_BLEED_RATE_VALUES, true];
     _unit setVariable [VAR_WOUND_BLEEDING, 0, true];
 };
 
