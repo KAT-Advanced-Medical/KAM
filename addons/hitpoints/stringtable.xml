@@ -519,7 +519,7 @@
         <Key ID="STR_KAT_Hitpoints_pelvicFracture_log">
             <English>%1 has found a Pelvic Fracture</English>
         </Key>
-        <Key ID="STR_KAT_Hitpoints_pelvicFracture_log">
+        <Key ID="STR_KAT_Hitpoints_stabilizedPelvicFracture_log">
             <English>%1 has found a Stabilized Pelvic Fracture</English>
         </Key>
         <Key ID="STR_KAT_Hitpoints_noPelvicFracture_log">
