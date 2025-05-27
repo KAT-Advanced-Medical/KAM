@@ -21,6 +21,16 @@ params ["_medic", "_patient", "_bodyPart"];
 
 TRACE_1("checkLimb1",_bodyPart);
 private _partIndex = ALL_BODY_PARTS find _bodyPart;
+if (_partindex == 3) then {
+    private _pelvicFracture = _unit getVariable [QGVAR(pelvicFracture), 0];
+    _typeLabel = switch (true) do {
+        case (_pelvicFracture == -1): { localize LSTRING(securedPelvicFracture_log) };
+        case (_pelvicFracture == 0): { localize LSTRING(noPelvicFracture_log) };
+        case (_pelvicFracture == 1): { LSTRING(pelvicFracture_log) };
+        default {""};
+    };
+    [_patient, "quick_view", _typeLabel, [[_medic] call ACEFUNC(common,getName)]] call ACEFUNC(medical_treatment,addToLog);
+} else {
 private _jointArray = GET_JOINTS(_patient);
 private _jointGroupIndex = switch (true) do {
 case (_partIndex in [4, 5]): { 0 };
@@ -75,5 +85,7 @@ private _limbJointStatus = _jointArray select _jointGroupIndex;
         [_patient, "quick_view", LSTRING(JointLog), [[_medic] call ACEFUNC(common,getName), _typeLabel, _joint, _limbLabel]] call ACEFUNC(medical_treatment,addToLog);
     };
 } forEach _limbJointStatus;
+}
+
 
 

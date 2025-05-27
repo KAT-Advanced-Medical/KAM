@@ -184,7 +184,7 @@ class ACE_Medical_Treatment_Actions {
         displayNameProgress = CSTRING(Check_Joints_Progress);
         category = "examine";
         condition = "true";
-        allowedSelections[] = {"LeftArm", "RightArm", "LeftLeg", "RightLeg", "UpperLeftArm", "UpperRightArm", "UpperLeftLeg", "UpperRightLeg"};
+        allowedSelections[] = {"LeftArm", "RightArm", "LeftLeg", "RightLeg", "UpperLeftArm", "UpperRightArm", "UpperLeftLeg", "UpperRightLeg", "Body"};
         allowSelfTreatment = 1;
         medicRequired = 0;
         treatmentTime = 2;
