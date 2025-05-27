@@ -1879,19 +1879,12 @@ class ACE_Medical_Treatment {
                 effectiveness = 0;
             };
             class Evisceration: Abrasion {
-                effectiveness = 0.0;
-                reopeningChance = 0.8;
-                reopeningMinDelay = 120;
-                reopeningMaxDelay = 180;
             };
             class EviscerationMinor: Evisceration {
-                effectiveness = 0;
             };
             class EviscerationMedium: Evisceration {
-                effectiveness = 0;
             };
             class EviscerationLarge: Evisceration {
-                effectiveness = 0;
             };
         };
         class ETD: FieldDressing {
