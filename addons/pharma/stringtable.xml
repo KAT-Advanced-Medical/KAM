@@ -3833,6 +3833,24 @@
             <Turkish>Sağ Bacak</Turkish>
             <Dutch>Rechterbeen</Dutch>
         </Key>
+        <Key ID="STR_KAT_Pharma_Chest">
+            <English>Chest</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_Neck">
+            <English>Neck</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_UpperLeftArm">
+            <English>Upper Left Arm</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_UpperRightArm">
+            <English>Upper Right Arm</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_UpperLeftLeg">
+            <English>Upper Left Leg</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_UpperRightLeg">
+            <English>Upper Right Leg</English>
+        </Key>
         <Key ID="STR_KAT_Pharma_Coag_Sense_Display">
             <English>Coag-Sense</English>
             <Japanese>Coag-Sense</Japanese>

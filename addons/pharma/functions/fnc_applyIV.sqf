@@ -79,7 +79,7 @@ switch (_usedItem) do {
         _patient setVariable [QGVAR(IV), _IVarray, true];
         _patient setVariable [QGVAR(IVrate), _IVrate, true];
         private _medStack = _patient call ACEFUNC(medical_treatment,getAllMedicationCount);
-        private _medsToCheck = ["fentanyl", "ketamine", "nalbuphine", "morphine", "lidocaine"];
+        private _medsToCheck = ["fentanyl", "ketamine", "nalbuphine", "morphine"];
         private _fentanylEffectiveness = 0;
         private _ketamineEffectiveness = 0;
         private _nalbuphineEffectiveness = 0;

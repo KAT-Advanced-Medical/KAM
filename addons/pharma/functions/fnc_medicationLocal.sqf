@@ -92,7 +92,7 @@ private _tourniquets = GET_TOURNIQUETS(_patient);
 private _idx = _occlusionMap findIf { _x#0 == _partIndex };
 private _result = if (_idx != -1) then { _occlusionMap select _idx select 1 } else { [] };
 private _isOccluded = { _tourniquets select _x != 0 } count _result > 0;
-if (_isNotOccluded) exitWith {
+if (_isOccluded) exitWith {
     TRACE_1("Medication injection site is occluded by tourniquet", _partIndex);
     
     private _occludedMedications = _patient getVariable [QACEGVAR(medical,occludedMedications), []];

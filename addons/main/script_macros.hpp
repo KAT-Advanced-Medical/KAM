@@ -181,6 +181,7 @@
 #define VAR_IN_PAIN           QACEGVAR(medical,inPain)
 #define VAR_TOURNIQUET        QACEGVAR(medical,tourniquets)
 #define VAR_FRACTURES         QACEGVAR(medical,fractures)
+#define VAR_JOINTS            QEGVAR(hitpoints,joints)
 
 // - Unit Functions ---------------------------------------------------
 // Retrieval macros for common unit values
@@ -396,11 +397,54 @@
 #define HITPOINT_INDEX_RLEG 10
 #define HITPOINT_INDEX_URLEG 11
 
+// Body points
+// 0 Head
+// 1 Neck
+// 2 Chest (Above Diaphragm)
+// 3 Body (Below Diaphragm)
+// 4 Left Arm
+// 5 Upper Left Arm
+// 6 Right Arm
+// 7 Upper Right Arm
+// 8 Left Leg
+// 9 Upper Left Leg
+// 10 Right Leg
+// 11 Upper Right Leg
+
 #define DEFAULT_APPLIEDPRESSURE_VALUES [0,0,0,0,0,0,0,0,0,0,0,0]
 #define DEFAULT_TOURNIQUET_VALUES [0,0,0,0,0,0,0,0,0,0,0,0]
 #define DEFAULT_FRACTURE_VALUES [0,0,0,0,0,0,0,0,0,0,0,0]
 #define DEFAULT_BODYPART_DAMAGE_VALUES [0,0,0,0,0,0,0,0,0,0,0,0]
 #define DEFAULT_BODY_BLEED_RATE_VALUES   [0,0,0,0,0,0,0,0,0,0,0,0]
+// Joint points
+// 0 Left Shoulder
+// 1 Left Elbow
+// 2 Left Wrist
+// 3 Right Shoulder
+// 4 Right Elbow
+// 5 Right Wrist
+// 6 Left Hip
+// 7 Left Knee
+// 8 Left Ankle
+// 9 Right Hip
+// 10 Right Knee
+// 11 Right Ankle
+
+// Joint Injury
+// 0 No Injury
+// 1 Inflamed Strain
+// 2 Inflamed Sprain
+// 3 Dislocation
+// 4 Iced Strain
+// 5 Iced Sprain
+// 6 Stabilized Dislocation
+// 7 Strain
+// 8 Sprain
+// 9 Reduced Dislocation
+// 10 Wrapped Strain
+// 11 Wrapped Sprain
+
+#define DEFAULT_JOINT_VALUES [[0,0,0],[0,0,0],[0,0,0],[0,0,0]]
 
 #define POS_X(N) ((N) * GUI_GRID_W + GUI_GRID_CENTER_X)
 #define POS_Y(N) ((N) * GUI_GRID_H + GUI_GRID_CENTER_Y)
@@ -420,11 +464,11 @@
 #undef BANDAGE_TIME_MOD_MEDIC
 #undef BANDAGE_TIME_MOD_SELF
 
-#define BANDAGE_TIME_S 6
-#define BANDAGE_TIME_M 8
-#define BANDAGE_TIME_L 10
-#define BANDAGE_TIME_MOD_MEDIC -4
-#define BANDAGE_TIME_MOD_SELF 4
+#define BANDAGE_TIME_S 4
+#define BANDAGE_TIME_M 6
+#define BANDAGE_TIME_L 8
+#define BANDAGE_TIME_MOD_MEDIC 0.75
+#define BANDAGE_TIME_MOD_SELF 1.25
 
 #define VAR_APPLIEDPRESSURE   QEGVAR(hitpoints,appliedPressure)
 #define GET_APPLIEDPRESSURE(unit)   (unit getVariable [VAR_APPLIEDPRESSURE, DEFAULT_APPLIEDPRESSURE_VALUES])
@@ -434,3 +478,6 @@
 #define GET_BODY_BLEED_RATE(unit)   (unit getVariable [VAR_BODY_BLEED_RATE, DEFAULT_BODY_BLEED_RATE_VALUES])
 #define GET_BODY_PART_RATE(unit,index) (GET_BODY_BLEED_RATE(unit) select index)
 #define HAS_LIMB_BLEEDING(unit,index) ((GET_BODY_BLEED_RATE(unit) select index) > 0)
+
+#define GET_JOINTS(unit)   (unit getVariable [VAR_JOINTS, DEFAULT_JOINT_VALUES])
+#define GET_LIMB_JOINT(unit,jointindex)   ((unit getVariable [VAR_JOINTS, DEFAULT_JOINT_VALUES]) select _jointindex)

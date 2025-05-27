@@ -27,6 +27,10 @@ private _targetWounds = [_patient, _bandage, _bodyPart] call ACEFUNC(medical_tre
 TRACE_1("findMostEffectiveWounds",_targetWounds);
 
 private _woundCount = count _targetWounds;
+private _woundKeys = keys _targetWounds;
+private _woundValue = _targetWounds get (_woundKeys select 0);
+private _woundAmount = _woundValue select 2;
+TRACE_3("_woundAmount",_woundAmount,_woundKeys,_woundValue);
 
 // Everything is patched up on this body part already
 if (_woundCount == 0) exitWith {0};
@@ -49,25 +53,52 @@ private _bandageTime = 0;
     if (GVAR(advancedBandages != 0)) then {
         _woundTime = _woundTime * linearConversion [0, _effectiveness, _impact, 0.666, 1, true];
     };
-
-    _bandageTime = _bandageTime + _woundTime;
+    TRACE_1("bandageTime0",_woundTime);
+    private _classIndex = _classID / 10;
+    private _className  = ACEGVAR(medical_damage,woundClassNames) select _classIndex;
+    TRACE_1("bandageTime0.5",_className);
+    if (_className in ["InternalBleeding"]) then {
+        _bandageTime = _bandageTime;
+        TRACE_1("bandageTime0.6",_bandageTime);
+    } else {
+        _bandageTime = _bandageTime + _woundTime;
+        TRACE_2("bandageTime0.7",_bandageTime,_woundTime);
+    };
 } forEach _targetWounds;
+TRACE_1("bandageTime1",_bandageTime);
 
-// Medics are more practised at applying bandages
-if ([_medic] call ACEFUNC(medical_treatment,isMedic)) then {
-    _bandageTime = _bandageTime + BANDAGE_TIME_MOD_MEDIC;
-};
+switch (true) do {
+        case (_bandage in ["ETD", "Israeli_Bandage"]): {
+            _bandageTime = _bandageTime * 1.5;
+            TRACE_1("bandageTime4",_bandageTime);
+        };
+        case (_bandage in ["Hemostatic_Gauze", "Compressed_Gauze", "fourByfour_Gauze", "Burn_Dressing"]): {
+            _bandageTime = _bandageTime * 0.8;
+            TRACE_1("bandageTime4",_bandageTime);
+        };
+        case (_bandage == "Adhesive_Bandage"): {
+            _bandageTime = _bandageTime * 0.5;
+            TRACE_1("bandageTime4",_bandageTime);
+        };
+        default {_bandageTime = _bandageTime};
+    };
 
-// Bandaging yourself requires more work
-if (_medic == _patient) then {
-    _bandageTime = _bandageTime + BANDAGE_TIME_MOD_SELF;
-};
-
-// Bandaging multiple injuries doesn't require opening a new bandage each time
 if (_woundCount > 1) then {
     _bandageTime = _bandageTime - (2 * _woundCount);
 };
+if (_woundAmount > 1) then {
+    _bandageTime = _bandageTime * ((1 + (_woundAmount * 0.2)) min 2);
+};
+TRACE_2("bandageTimeAmount",_bandageTime,_woundAmount);
+if ([_medic] call ACEFUNC(medical_treatment,isMedic)) then {
+    _bandageTime = _bandageTime * BANDAGE_TIME_MOD_MEDIC;
+};
+TRACE_1("bandageTime2",_bandageTime);
+// Bandaging yourself requires more work
+if (_medic == _patient) then {
+    _bandageTime = _bandageTime * BANDAGE_TIME_MOD_SELF;
+};
 
-TRACE_1("",_bandageTime);
+TRACE_2("bandageTime5",_bandageTime,_woundCount);
 // Nobody can bandage instantly
-_bandageTime max 2.25
+_bandageTime max 3

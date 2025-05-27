@@ -32,12 +32,12 @@ private _occlusionMap = [
 ];
 
 private _bodyPartBleeding = [0,0,0,0,0,0,0,0,0,0,0,0];
-private _part = ALL_BODY_PARTS find toLower _bodyPart;
-private _appliedPressure = GET_APPLIEDPRESSURE(_patient);
-private _pressureApplied = _appliedPressure select _part;
 
 {
     private _partIndex = ALL_BODY_PARTS find _x;
+    private _appliedPressure = GET_APPLIEDPRESSURE(_unit);
+    private _pressureApplied = _appliedPressure select _partIndex;
+
     private _idx = _occlusionMap findIf { _x#0 == _partIndex };
     private _result = if (_idx != -1) then { _occlusionMap select _idx select 1 } else { [] };
     private _isOccluded = { _tourniquets select _x != 0 } count _result > 0;
@@ -54,12 +54,13 @@ private _pressureApplied = _appliedPressure select _part;
             
         } forEach _y;
         _bodyPartBleeding set [_partIndex, _partBleeding];
-        TRACE_1("updateWoundBloodLoss",_partBleeding);
+        TRACE_3("updateWoundBloodLoss",_partBleeding,_bodyPartBleeding,_partIndex);
         _unit setVariable [VAR_BODY_BLEED_RATE, _bodyPartBleeding, true];
     };
 } forEach GET_OPEN_WOUNDS(_unit);
 if (selectMax _bodyPartBleeding == 0) exitWith {
     TRACE_1("updateWoundBloodLoss-none",_unit);
+    _unit setVariable [VAR_BODY_BLEED_RATE, DEFAULT_BODY_BLEED_RATE_VALUES, true];
     _unit setVariable [VAR_WOUND_BLEEDING, 0, true];
 };
 

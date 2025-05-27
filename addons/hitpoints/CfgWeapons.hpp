@@ -24,7 +24,7 @@ class CfgWeapons {
         descriptionUse = CSTRING(Elastic_Wrap_Desc_Use);
         ACE_isMedicalItem = 1;
         class ItemInfo: CBA_MiscItem_ItemInfo {
-            mass = 0.4;
+            mass = 1;
         };
     };
     class kat_4X4_Gauze: ACE_ItemCore {
@@ -63,7 +63,7 @@ class CfgWeapons {
         descriptionUse = CSTRING(Roller_Gauze_Desc_Use);
         ACE_isMedicalItem = 1;
         class ItemInfo: CBA_MiscItem_ItemInfo {
-            mass = 0.3;
+            mass = 0.5;
         };
     };
     class kat_Abdominal_Pad: ACE_ItemCore {
@@ -76,7 +76,7 @@ class CfgWeapons {
         descriptionUse = CSTRING(Abdominal_Pad_Desc_Use);
         ACE_isMedicalItem = 1;
         class ItemInfo: CBA_MiscItem_ItemInfo {
-            mass = 0.5;
+            mass = 1.5;
         };
     };
     class kat_ETD: ACE_ItemCore {
@@ -89,7 +89,20 @@ class CfgWeapons {
         descriptionUse = CSTRING(ETD_Desc_Use);
         ACE_isMedicalItem = 1;
         class ItemInfo: CBA_MiscItem_ItemInfo {
-            mass = 0.5;
+            mass = 3;
+        };
+    };
+    class kat_Israeli_Bandage: ACE_ItemCore {
+        scope = 2;
+        author = "Cplhardcore";
+        displayName = CSTRING(Israeli_Bandage_Display);
+        picture = QPATHTOF(ui\Israeli_Bandage.paa);
+        model = "\A3\Structures_F_EPA\Items\Medical\Bandage_F.p3d";
+        descriptionShort = CSTRING(Israeli_Bandage_Desc_Short);
+        descriptionUse = CSTRING(Israeli_Bandage_Desc_Use);
+        ACE_isMedicalItem = 1;
+        class ItemInfo: CBA_MiscItem_ItemInfo {
+            mass = 1;
         };
     };
     class kat_Hemostatic_Gauze: ACE_ItemCore {
@@ -115,7 +128,7 @@ class CfgWeapons {
         descriptionUse = CSTRING(Adhesive_Bandage_Desc_Use);
         ACE_isMedicalItem = 1;
         class ItemInfo: CBA_MiscItem_ItemInfo {
-            mass = 0.01;
+            mass = 0.05;
         };
     };
     class kat_Burn_Dressing: ACE_ItemCore {
@@ -129,6 +142,32 @@ class CfgWeapons {
         ACE_isMedicalItem = 1;
         class ItemInfo: CBA_MiscItem_ItemInfo {
             mass = 0.3;
+        };
+    };
+    class kat_Ice_Pack: ACE_ItemCore {
+        scope = 2;
+        author = "Cplhardcore";
+        displayName = CSTRING(Ice_Pack_Display);
+        picture = QPATHTOF(ui\Ice_Pack.paa);
+        model = "\A3\Structures_F_EPA\Items\Medical\Bandage_F.p3d";
+        descriptionShort = CSTRING(Ice_Pack_Desc_Short);
+        descriptionUse = CSTRING(Ice_Pack_Desc_Use);
+        ACE_isMedicalItem = 1;
+        class ItemInfo: CBA_MiscItem_ItemInfo {
+            mass = 2;
+        };
+    };
+    class kat_Pelvic_Binder: ACE_ItemCore {
+        scope = 2;
+        author = "Cplhardcore";
+        displayName = CSTRING(Pelvic_Binder_Display);
+        picture = QPATHTOF(ui\Pelvic_Binder.paa);
+        model = "\A3\Structures_F_EPA\Items\Medical\Bandage_F.p3d";
+        descriptionShort = CSTRING(Pelvic_Binder_Desc_Short);
+        descriptionUse = CSTRING(Pelvic_Binder_Desc_Use);
+        ACE_isMedicalItem = 1;
+        class ItemInfo: CBA_MiscItem_ItemInfo {
+            mass = 5;
         };
     };
 };

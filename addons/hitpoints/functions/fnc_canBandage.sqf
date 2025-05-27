@@ -32,6 +32,4 @@ private _canBandage = false;
         _canBandage = true;
     };
 } forEach _wounds;
-
-TRACE_2("canBandage",_bodyPart,_canBandage);
 _canBandage

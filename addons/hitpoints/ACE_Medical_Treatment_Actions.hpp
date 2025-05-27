@@ -51,7 +51,7 @@ class ACE_Medical_Treatment_Actions {
         items[] = {"kat_Abdominal_Pad"};
         allowedSelections[] = {"Body"};
         callbackSuccess = QFUNC(ABDPad);
-        treatmentTime = 6;
+        treatmentTime = 8;
     };
     class ETD: BasicBandage {
         displayName = CSTRING(ETD);
@@ -59,6 +59,13 @@ class ACE_Medical_Treatment_Actions {
         icon = QPATHTOF(ui\ETD.paa);
         callbackSuccess = QACEFUNC(medical_treatment,bandage);
         items[] = {"kat_ETD"};
+    };
+    class Israeli_Bandage: BasicBandage {
+        displayName = CSTRING(Israeli_Bandage);
+        displayNameProgress = CSTRING(Israeli_Bandage_Progress);
+        icon = QPATHTOF(ui\Israeli_Bandage.paa);
+        callbackSuccess = QACEFUNC(medical_treatment,bandage);
+        items[] = {"kat_Israeli_Bandage"};
     };
     class Elastic_Wrap: BasicBandage {
         displayName = CSTRING(Elastic_Wrap);
@@ -87,6 +94,63 @@ class ACE_Medical_Treatment_Actions {
         callbackSuccess = QFUNC(wrapWound);
         items[] = {"kat_Compressed_Gauze"};
     };
+    class Ice_Pack: BasicBandage {
+        displayName = CSTRING(Ice_Pack);
+        displayNameProgress = CSTRING(Ice_Pack_Progress);
+        icon = QPATHTOF(ui\Ice_Pack.paa);
+        condition = QFUNC(canIceJoint);
+        category = "surgery";
+        medicRequired = 0;
+        treatmentTime = QGVAR(iceTime);
+        callbackSuccess = QFUNC(IceJoint);
+        items[] = {"kat_Ice_Pack"};
+    };
+    class Elastic_Wrap_Joint: BasicBandage {
+        displayName = CSTRING(Elastic_Wrap_Joint);
+        displayNameProgress = CSTRING(Elastic_Wrap_Joint_Progress);
+        icon = QPATHTOF(ui\Elastic_Wrap.paa);
+        category = "surgery";
+        callbackSuccess = QFUNC(wrapJoint);
+        condition = QFUNC(canWrapJoint);
+        medicRequired = QGVAR(JointCareLevel);
+        treatmentTime = QGVAR(wrapTime);
+        items[] = {"kat_Elastic_Wrap"};
+    };
+    class Stabilize_Joint: BasicBandage {
+        displayName = CSTRING(Stabilize_Joint);
+        displayNameProgress = CSTRING(Stabilize_Joint_Progress);
+        icon = QPATHTOF(ui\Elastic_Wrap.paa);
+        category = "surgery";
+        callbackSuccess = QFUNC(stabilizeJoint);
+        condition = QFUNC(canStabilizeJoint);
+        medicRequired = QGVAR(JointCareLevel);
+        treatmentTime = QGVAR(stabilizeTime);
+        items[] = {"kat_Elastic_Wrap", "ACE_Splint"};
+    };
+    class Reduce_Joint: BasicBandage {
+        displayName = CSTRING(Reduce_Joint);
+        displayNameProgress = CSTRING(Reduce_Joint_Progress);
+        icon = QPATHTOF(ui\Elastic_Wrap.paa);
+        category = "surgery";
+        callbackSuccess = QFUNC(reduceJoint);
+        condition = QFUNC(canReduceJoint);
+        allowSelfTreatment = 0;
+        medicRequired = QGVAR(JointCareLevel);
+        treatmentTime = QGVAR(reduceTime);
+        items[] = {};
+    };
+    class Bind_Pelvis: BasicBandage {
+        displayName = CSTRING(Bind_Pelvis);
+        displayNameProgress = CSTRING(Bind_Pelvis_Progress);
+        icon = QPATHTOF(ui\Pelvic_Binder.paa);
+        category = "surgery";
+        callbackSuccess = QFUNC(bindPelvis);
+        condition = QFUNC(canBindPelvis);
+        allowSelfTreatment = 0;
+        medicRequired = QGVAR(JointCareLevel);
+        treatmentTime = QGVAR(bindTime);
+        items[] = {"kat_Pelvic_Binder"};
+    };
     class ApplyTourniquet: BasicBandage {
         allowedSelections[] = {"LeftArm", "RightArm", "LeftLeg", "RightLeg", "UpperLeftArm", "UpperRightArm", "UpperLeftLeg", "UpperRightLeg"};
     };
@@ -112,7 +176,20 @@ class ACE_Medical_Treatment_Actions {
         allowSelfTreatment = 1;
         medicRequired = 0;
         treatmentTime = 2;
+        items[] = {};
         callbackSuccess = QFUNC(checkLimb);
+    };
+    class CheckJoints: CheckPulse {
+        displayName = CSTRING(Check_Joints);
+        displayNameProgress = CSTRING(Check_Joints_Progress);
+        category = "examine";
+        condition = "true";
+        allowedSelections[] = {"LeftArm", "RightArm", "LeftLeg", "RightLeg", "UpperLeftArm", "UpperRightArm", "UpperLeftLeg", "UpperRightLeg"};
+        allowSelfTreatment = 1;
+        medicRequired = 0;
+        treatmentTime = 2;
+        items[] = {};
+        callbackSuccess = QFUNC(checkJoints);
     };
     class ApplyPressure: CPR {
         displayName = CSTRING(ApplyPressure);
@@ -120,7 +197,7 @@ class ACE_Medical_Treatment_Actions {
         icon = "";
         category = "bandage";
         treatmentTime = 0.01;
-        allowSelfTreatment = 0;
+        allowSelfTreatment = 1;
         medicRequired = 0;
         treatmentLocations = TREATMENT_LOCATIONS_ALL;
         allowedSelections[] = {"All"};

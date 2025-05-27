@@ -20,7 +20,6 @@
 params ["_unit", "_allDamages", "_typeOfDamage"];
 TRACE_3("woundsHandlerBase",_unit,_allDamages,_typeOfDamage);
 
-
 if !(_typeOfDamage in ACEGVAR(medical_damage,damageTypeDetails)) then {
     WARNING_1("damage type %1 not found",_typeOfDamage);
     _typeOfDamage = "unknown";
@@ -120,7 +119,7 @@ private _bodyPartVisParams = [_unit, false, false, false, false]; // params arra
 
         _arterialRate = 1;
         if (random 100 < GVAR(ArterialChance)) then {
-            _arterialRate  = random [1.1, 1.3];
+            _arterialRate  = random [1.1, 1.3, 1.6];
             };
         _bleeding = (_woundSize * _bleedMultiplier * _injuryBleedingRate) * _arterialRate;
         TRACE_6("BleedingRate",_bleeding,_woundSize,_bleedMultiplier,_injuryBleedingRate,_arterialRate,GVAR(ArterialChance));
@@ -184,7 +183,7 @@ private _bodyPartVisParams = [_unit, false, false, false, false]; // params arra
             if (
                     (_classComplex == _classID) &&
                     {(_bodyPart isNotEqualTo "body") || {(_woundDamage < PENETRATION_THRESHOLD) isEqualTo (_oldDamage < PENETRATION_THRESHOLD)}} && 
-                    {(_bodyPartNToAdd > 3) || {!_causeLimping} || {(_woundDamage <= LIMPING_DAMAGE_THRESHOLD) isEqualTo (_oldDamage <= LIMPING_DAMAGE_THRESHOLD)}} // ensure limping damage is stacked correctly
+                    {(_bodyPartNToAdd > 7) || {!_causeLimping} || {(_woundDamage <= LIMPING_DAMAGE_THRESHOLD) isEqualTo (_oldDamage <= LIMPING_DAMAGE_THRESHOLD)}} // ensure limping damage is stacked correctly
                     ) exitWith {
                 TRACE_2("merging with existing wound",_injury,_x);
                 private _newAmountOf = _oldAmountOf + 1;

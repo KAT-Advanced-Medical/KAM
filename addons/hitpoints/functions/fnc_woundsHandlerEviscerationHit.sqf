@@ -84,7 +84,6 @@ if (floor (random 100) < (GVAR(EviscerationChance) + _chanceIncrease)) exitWith 
             _unit setVariable [QGVAR(evisceration), _newEviscerationLevel, true];
             _unit setVariable [QGVAR(activeWoundPack), 0, true];
             [_unit] call _fnc_create_Evisceration;
-            [_unit, _chanceIncrease] call FUNC(handleEviscerationDeterioration);
         };
     };
 

@@ -21,3 +21,7 @@ TRACE_1("fullHealMod",_patient);
 _patient setVariable [QGVAR(isApplyingPressure), false, true];
 _patient setVariable [QGVAR(evisceration), 0, true];
 _patient setVariable [QGVAR(activeWoundPack), 0, true];
+_patient setVariable [VAR_JOINTS, DEFAULT_JOINT_VALUES, true];
+_patient setVariable [QGVAR(jointCheck), [false, false, false, false], true];
+_patient setVariable [QGVAR(pelvicFracture), 0, true];
+_patient setVariable [QGVAR(activePelvicBinder), false, true];

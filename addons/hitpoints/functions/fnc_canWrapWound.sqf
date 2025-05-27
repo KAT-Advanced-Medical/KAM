@@ -22,11 +22,8 @@ params ["_medic", "_patient", "_bodyPart"];
 _bodyPart = toLowerANSI _bodyPart;
 
 private _bandagedWounds = GET_BANDAGED_WOUNDS(_patient);
-TRACE_1("WrappableWounds1",_bandagedWounds);
 private _bandagedWoundsOnPart = _bandagedWounds get _bodyPart;
-TRACE_1("WrappableWounds2",_bandagedWoundsOnPart);
 if (isNil "_bandagedWoundsOnPart" || {_bandagedWoundsOnPart isEqualTo []}) exitWith {
-    TRACE_1("No WrappableWounds",_bandagedWoundsOnPart);
     false};
 
 private _includedTypes = ["Compressed_Gauze", "fourByfour_Gauze", "Burn_Dressing", "Hemostatic_Gauze"];

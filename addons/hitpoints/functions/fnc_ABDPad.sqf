@@ -20,7 +20,7 @@ _this set [7, _this param [7, 1]]; // set bandage effectiveness coefficient
 
 params ["_medic", "_patient", "_bodyPart", "_classname", "", "", "", "_bandageEffectiveness"];
 
-[_patient, "activity", LSTRING(Activity_bandagedPatient), [[_medic, false, true] call ACEFUNC(common,getName)]] call ACEFUNC(medical_treatment,addToLog);
+[_patient, "activity", ACELSTRING(medical_treatment,Activity_bandagedPatient), [[_medic, false, true] call ACEFUNC(common,getName)]] call ACEFUNC(medical_treatment,addToLog);
 [_patient, _bodyPart, _classname, _bandageEffectiveness] call EFUNC(misc,bandageLocal);
 
 [_patient, _bodyPart] call FUNC(ABDPadLocal);

@@ -65,7 +65,7 @@ _patient setVariable [VAR_OPEN_WOUNDS, _openWounds, true];
 if (
     ACEGVAR(medical,limping) == 1
     && {_clearConditionCache}
-    && {_bodyPart in ["leftleg", "rightleg"]}
+    && {_bodyPart in ["leftleg", "rightleg", "upperleftleg", "upperrightleg"]}
     && {_patient getVariable [QACEGVAR(medical,isLimping), false]}
 ) then {
     [_patient] call ACEFUNC(medical_engine,updateDamageEffects);

@@ -88,6 +88,7 @@ if (_notInVehicle) then {
             private _appliedPressure = GET_APPLIEDPRESSURE(_patient);
             _appliedPressure set [_part, 0];
             _patient setVariable [VAR_APPLIEDPRESSURE, _appliedPressure, true];
+            [_patient] call ACEFUNC(medical_status,updateWoundBloodLoss);
             TRACE_1("Pressure1",_appliedPressure);
             [LLSTRING(CancelPressure), 1.5, _medic] call ACEFUNC(common,displayTextStructured);
         };
@@ -119,6 +120,7 @@ if (_notInVehicle) then {
         private _part = ALL_BODY_PARTS find toLower _bodyPart;
         private _appliedPressure = GET_APPLIEDPRESSURE(_patient);
         private _randomPressureAmmount = selectRandom [0.3, 0.4, 0.5, 0.6, 0.7];
+        [_patient] call ACEFUNC(medical_status,updateWoundBloodLoss);
         _appliedPressure set [_part, _randomPressureAmmount];
         _patient setVariable [VAR_APPLIEDPRESSURE, _appliedPressure, true];
         TRACE_2("Pressure3",_appliedPressure,_randomPressureAmmount);

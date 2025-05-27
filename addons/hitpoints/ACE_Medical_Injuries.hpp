@@ -97,6 +97,7 @@ class ACE_Medical_Injuries {
             class woundHandlers: woundHandlers {
                 GVAR(eviscerationHit) = QFUNC(woundsHandlerEviscerationHit);
                 EGVAR(breathing,pulmoHit) = QEFUNC(breathing,woundsHandlerPulmoHit);
+                GVAR(pelvicHit) = QFUNC(woundsHandlerPelvicHit);
             };
 
             class Avulsion {
@@ -166,6 +167,8 @@ class ACE_Medical_Injuries {
                 ACEGVAR(medical_damage,woundsHandlerExplosion) = QACEFUNC(medical_damage,woundsHandlerExplosion);
                 GVAR(eviscerationHit) = QFUNC(woundsHandlerEviscerationHit);
                 EGVAR(breathing,pulmoHit) = QEFUNC(breathing,woundsHandlerPulmoHit);
+                GVAR(jointHit) = QFUNC(woundsHandlerJoints);
+                GVAR(pelvicHit) = QFUNC(woundsHandlerPelvicHit);
             };
             class Avulsion {
                 weighting[] = {{1, 1}, {0.8, 0}};
@@ -193,6 +196,8 @@ class ACE_Medical_Injuries {
             class woundHandlers: woundHandlers {
                 GVAR(eviscerationHit) = QFUNC(woundsHandlerEviscerationHit);
                 EGVAR(breathing,pulmoHit) = QEFUNC(breathing,woundsHandlerPulmoHit);
+                GVAR(jointHit) = QFUNC(woundsHandlerJoints);
+                GVAR(pelvicHit) = QFUNC(woundsHandlerPelvicHit);
             };
             class Avulsion {
                 weighting[] = {{1.5, 1}, {1.1, 0}};
@@ -221,6 +226,7 @@ class ACE_Medical_Injuries {
             thresholds[] = {{6, 3}, {4.5, 2}, {2, 2}, {0.8, 1}, {0.2, 1}, {0, 0}};
             class woundHandlers: woundHandlers {
                 ACEGVAR(medical_damage,woundsHandlerVehiclehit) = QACEFUNC(medical_damage,woundsHandlerVehiclehit);
+                GVAR(pelvicHit) = QFUNC(woundsHandlerPelvicHit);
             };
         };
         class vehiclecrash {
@@ -229,6 +235,8 @@ class ACE_Medical_Injuries {
             class woundHandlers: woundHandlers {
                 ACEGVAR(medical_damage,woundsHandlerVehiclecrash) = QACEFUNC(medical_damage,woundsHandlerVehiclecrash);
                 EGVAR(breathing,pulmoHit) = QEFUNC(breathing,woundsHandlerPulmoHit);
+                GVAR(jointHit) = QFUNC(woundsHandlerJoints);
+                GVAR(pelvicHit) = QFUNC(woundsHandlerPelvicHit);
             };
             class Abrasion {
                 weighting[] = {{0.30, 0}, {0.30, 1}};
@@ -252,6 +260,9 @@ class ACE_Medical_Injuries {
         class collision {
             thresholds[] = {{8, 4}, {1, 1}, {0.3, 1}, {0.15, 0.5}, {0, 0.3}}; // prevent subdividing wounds past FRACTURE_DAMAGE_THRESHOLD to ensure limp/fractue is triggered
             selectionSpecific = 0;
+            class woundHandlers: woundHandlers {
+                GVAR(jointHit) = QFUNC(woundsHandlerJoints);
+            };
             class Avulsion {
                 weighting[] = {{1, 2}, {0.5, 0.5}, {0.5, 0}};
             };
@@ -277,6 +288,9 @@ class ACE_Medical_Injuries {
         class falling {
             thresholds[] = {{8, 4}, {1, 1}, {0.2, 1}, {0.1, 0.7}, {0, 0.5}}; // prevent subdividing wounds past FRACTURE_DAMAGE_THRESHOLD to ensure limp/fractue is triggered
             selectionSpecific = 0;
+            class woundHandlers: woundHandlers {
+                GVAR(jointHit) = QFUNC(woundsHandlerJoints);
+            };
             class Abrasion {
                 weighting[] = {{0.4, 0}, {0.2, 1}, {0, 0}};
                 sizeMultiplier = 3;
