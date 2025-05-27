@@ -44,7 +44,7 @@
             <Czech>Povolit Guedel Tubu</Czech>
             <French>Autoriser la canule de Guedel</French>
             <Spanish>Permitir cánula de Guedel</Spanish>
-            <Italian>Permetti la canula di Guedel</Italian>
+            <Italian>Permetti la cannula di Guedel</Italian>
             <Polish>Pozwól na użycie rurki ustno-gardłowej</Polish>
             <Portuguese>Permitir Cânula de Guedel</Portuguese>
             <Russian>Разрешить гедельтубус</Russian>
@@ -63,7 +63,7 @@
             <Czech>Úroveň výcviku potřebná k použití Guedel Tuby</Czech>
             <French>Niveau d'entrainement requis pour utiliser une canule de Guedel</French>
             <Spanish>Nivel de entrenamiento requerido para usar una cánula de Guedel</Spanish>
-            <Italian>Livello d'addestramento richiesto per utilizzare la canula di Guedel</Italian>
+            <Italian>Livello d'addestramento richiesto per utilizzare la cannula di Guedel</Italian>
             <Polish>Poziom wyszkolenia wymagany do korzystania z rurki ustno-gardłowej</Polish>
             <Portuguese>Nível de treinamento necessário para usar uma Cânula de Guedel</Portuguese>
             <Russian>Уровень подготовки, необходимый для использования тубуса Геделя.</Russian>
@@ -359,13 +359,15 @@
             <Japanese>気道はひどく水膨れしている</Japanese>
             <Chinese>氣道嚴重膨脹</Chinese>
             <Chinesesimp>气道严重膨胀</Chinesesimp>
+            <German>Die Atemwege haben eine starke Blasenbildung</German>
+            <Italian>Le vie aeree sono piene di vescicole</Italian>
         </Key>
         <Key ID="STR_KAT_Airway_AirwayStatus_mitigatedObstruction">
             <English>Obstruction is temporarily mitigated</English>
             <Czech>Obstrukce je dočasně zmírněna</Czech>
             <French>L'obstruction a été temporairement atténuée</French>
             <Spanish>Obstrucción temporalmente mitigada</Spanish>
-            <Italian>Ostruzione è momentaneamente attenuata</Italian>
+            <Italian>L'ostruzione è momentaneamente attenuata</Italian>
             <Polish>Drogi oddechowe są ręcznie udrożnione</Polish>
             <Portuguese>Obstrução temporariamente mitigada</Portuguese>
             <Russian>Препятствие временно устранено</Russian>
@@ -417,7 +419,7 @@
             <Czech>Bez obstrukce</Czech>
             <French>Non obstruées</French>
             <Spanish>No obstruída</Spanish>
-            <Italian>No ostruita</Italian>
+            <Italian>Non ostruita</Italian>
             <Polish>Drożne</Polish>
             <Portuguese>Não obstruída</Portuguese>
             <Russian>Язык не запал</Russian>
@@ -452,7 +454,7 @@
             <Czech>Není ucpáno</Czech>
             <French>Non occludées</French>
             <Spanish>No ocluída</Spanish>
-            <Italian>No occlusa</Italian>
+            <Italian>Non occlusa</Italian>
             <Polish>Brak zatoru</Polish>
             <Portuguese>Não ocluída</Portuguese>
             <Russian>Рвота отсутствуют</Russian>
@@ -522,7 +524,7 @@
             <Czech>Blokuje otáčení hlavou pokud má pacient zavedenou Guedel tubu</Czech>
             <French>Bloque la rotation de la tête si le patient a une canule de Guedel insérée</French>
             <Spanish>Bloquea el giro de la cabeza si el paciente tiene insertado un tubo de Guedel.</Spanish>
-            <Italian>Blocca la rotazione della testa se il paziente ha la canula di Guedel inserita</Italian>
+            <Italian>Blocca la rotazione della testa se il paziente ha la cannula di Guedel inserita</Italian>
             <Portuguese>Bloqueia a rotação de cabeça em pacientes com Cânula de Guedel</Portuguese>
             <Russian>Блокирует вращение головы, если пациенту вставлена трубка Геделя</Russian>
             <German>Verhindert das zur Seite Drehen des Kopfes während ein Guedetubus eingeführt ist</German>
@@ -593,7 +595,7 @@
             <Czech>Odstranit Guedel Tubu</Czech>
             <French>Retirer la canule de Guedel</French>
             <Spanish>Retirando Cánula de Guedel</Spanish>
-            <Italian>Rimuovi canula di Guedel</Italian>
+            <Italian>Rimuovi cannula di Guedel</Italian>
             <Portuguese>Remover Cânula de Guedel</Portuguese>
             <Russian>Удалить трубку Геделя</Russian>
             <German>Entferne Guedeltubus</German>
@@ -627,7 +629,7 @@
             <Czech>Guedel tuba je používána k zajištění dýchacích cest</Czech>
             <French>La canule de Guedel est utilisée pour protéger les voies aériennes</French>
             <Spanish>La cánula de Guedel impide obstrucciones</Spanish>
-            <Italian>La canula di Guedel viene usata per salvare le vie aeree</Italian>
+            <Italian>La cannula di Guedel viene usata per mantenere le vie aeree aperte</Italian>
             <Polish>Rurka ustno-gardłowa zabezpiecza drogi oddechowe</Polish>
             <Portuguese>A Cânula de Guedel evita obstruções</Portuguese>
             <Russian>Трубка Геделя используется для сохранения дыхательных путей.</Russian>
@@ -646,7 +648,7 @@
             <Czech>Guedel Tuba</Czech>
             <French>Canule de Guedel</French>
             <Spanish>Cánula de Guedel</Spanish>
-            <Italian>Canula di Guedel</Italian>
+            <Italian>Cannula di Guedel</Italian>
             <Polish>Rurka ustno-gardłowa</Polish>
             <Portuguese>Cânula de Guedel</Portuguese>
             <Russian>Трубка Геделя</Russian>
@@ -825,7 +827,7 @@
             <Czech>King LT je používán k zajištění dýchacích cest</Czech>
             <French>Le tube laryngé est utilisé pour protéger les voies aériennes</French>
             <Spanish>El tubo laríngeo previene obstrucciones y oclusiones</Spanish>
-            <Italian>Il tubo laringeo viene usato per salvare le vie aeree</Italian>
+            <Italian>Il tubo laringeo viene usato per mantenere le vie aeree aperte</Italian>
             <Polish>Rurka krtaniowa służy do ratowania dróg oddechowych</Polish>
             <Portuguese>O Tubo Laríngeo evita obstruções e oclusões</Portuguese>
             <Russian>Ларингеальная трубка – это устройство для обеспечения проходимости дыхательных путей.</Russian>
@@ -976,7 +978,7 @@
             <Czech>%1 odstranil Guedel Tubu</Czech>
             <French>%1 a retiré la canule de Guedel</French>
             <Spanish>%1 retiró la Canula de Guedel</Spanish>
-            <Italian>%1 rimosso Guedel Tube</Italian>
+            <Italian>%1 rimosso cannula di Guedel</Italian>
             <Portuguese>%1 removeu a Cânula de Guedel</Portuguese>
             <Russian>%1 удалил трубку Геделя</Russian>
             <German>%1 hat Guedeltubus entfernt</German>
@@ -1027,7 +1029,7 @@
             <Czech>Vrácení KingLT nebo Guedel Tuby při jejich manuálním odebrání</Czech>
             <French>Récupérer le tube laryngé ou la canule de guedel lorsque ceux-ci sont retirés manuellement</French>
             <Spanish>Recuperar el Tubo laríngeo o la Cánula de Guedel cuando se quitan manualmente</Spanish>
-            <Italian>Riguadagna il KingLT o la canula di Guedel quando li rimuovi manualmente</Italian>
+            <Italian>Riguadagna il KingLT o la cannula di Guedel quando li rimuovi manualmente</Italian>
             <Portuguese>Recupere o Tubo Laríngeo ou a Cânula de Guedel quando removidos manualmente</Portuguese>
             <Russian>Извлеките гортанную трубку или трубку Геделя, когда они удалены вручную</Russian>
             <German>Erhalte den Larynxtubus oder Guedeltubus wieder bei manueller Entfernung</German>
@@ -1240,7 +1242,7 @@
             <Czech>Pravděpodobnost obstrukce dýchacích cest v procentech, která se vylosuje při každém: \n- Upadnutí do bezvědomí \n- Odstranění KingLT / GuedelTuby</Czech>
             <French>La probabilité d'obstruction des voies aériennes en pourcentage qui est tirée aléatoirement lorsque : \n- la personne tombe inconsciente \n- Une canule de Guedel/tube laryngé est retiré</French>
             <Spanish>Probabilidad en porcentaje de que una vía aérea sea obstruida cada vez que: \n- Cae inconsciente \n- Se retira el tubo laríngeo / Cánula de Guedel</Spanish>
-            <Italian>Probabilità in percentuale di una via aerea ostruita che viene sorteggiata ogni : \n- Caduta priva di sensi \n- Rimozione KingLT / Guedel Tube</Italian>
+            <Italian>Probabilità in percentuale di una via aerea ostruita che viene sorteggiata ogni : \n- Caduta priva di sensi \n- Rimozione KingLT / cannula di Guedel</Italian>
             <Portuguese>Probabilidade percentual de obstrução de uma via aérea a cada vez que: \n- Ficar inconsciente \n- Remoção do Tubo Laríngeo / Cânula de Guedel</Portuguese>
             <Russian>Вероятность закупорки дыхательных путей в процентах, которая приводит к смерти при каждом: \n- падении без сознания \n - Удалении гортанной трубки/трубки Геделя</Russian>
             <German>Wahrscheinlichkeit blockierter Atemwege in Prozent basierend auf:\n- Bewustlos werden\n- Das Entfernen von Larynxtubus / Guedeltubus\n- Abbrechen der Stabile Seitenlage</German>
@@ -1599,7 +1601,7 @@
             <Czech>Čas pro Guedel Tubu</Czech>
             <French>Durée d'installation de la canule de Guedel</French>
             <Spanish>Tiempo para cánula de Guedel</Spanish>
-            <Italian>Tempo per la canula di Guedel</Italian>
+            <Italian>Tempo per la cannula di Guedel</Italian>
             <Polish>Czas na użycie rurki ustno-gardłowej</Polish>
             <Portuguese>Tempo para usar uma Cânula de Guedel</Portuguese>
             <Russian>Время для трубки Геделя</Russian>
@@ -1618,7 +1620,7 @@
             <Czech>Jak dlouho zabere použití Guedel Tuby</Czech>
             <French>Combien de temps faudra t-il pour placer une canule de Guedel</French>
             <Spanish>Cuánto tiempo tomará usar cánula de Guedel</Spanish>
-            <Italian>Quanto tempo si impiega per posizionare una canula di Guedel</Italian>
+            <Italian>Quanto tempo si impiega per posizionare una cannula di Guedel</Italian>
             <Polish>Jak długo potrwa użycie rurki ustno-gardłowej</Polish>
             <Portuguese>Quanto tempo demorará para usar uma Cânula de Guedel</Portuguese>
             <Russian>Сколько времени потребуется, чтобы использовать трубку Геделя</Russian>
@@ -1797,6 +1799,8 @@
             <English>KAT - ADV Medical: Airway</English>
             <Japanese>KAM - 気道 (Airway)</Japanese>
             <French>KAT - ADV Medical : Voies respiratoires</French>
+            <German>KAT - ADV Medical: Atemwege</German>
+            <Italian>KAT - ADV Medicale: Vie Aeree</Italian>
         </Key>
         <Key ID="STR_KAT_Airway_checkAirway">
             <English>Check Airway</English>
@@ -1842,6 +1846,8 @@
             <French>%1 voies aériennes contrôlées : Fortement cloquées</French>
             <Japanese>%1 が気道を確認: ひどい水膨れ</Japanese>
             <Chinesesimp>%1 条检查气道: 严重起泡</Chinesesimp>
+            <German>%1 überprüfte die Atemwege: Starke Blasenbildung</German>
+            <Italian>%1 ha controllato le vie aeree: Piene di Vescicole</Italian>
         </Key>
         <Key ID="STR_KAT_Airway_headTurning_begin">
             <English>Begin Head Turning</English>

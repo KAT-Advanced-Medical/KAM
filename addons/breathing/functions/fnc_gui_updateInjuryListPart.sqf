@@ -76,11 +76,11 @@ if (_selectionN isEqualTo 2) then {
         private _side = _x;
         
         if (GVAR(PneumothoraxAlwaysVisible)) then {
-            if ((_pneumothoraxState select _side > 0) && !(_tensionhemothorax)) then {
+            if (((_pneumothoraxState select _side) > 0) && !(_tensionhemothorax)) then {
                 _ptxEntry pushBack [LLSTRING(pneumothorax_mm), [1,1,1,1]];
             };
         } else {
-            if (_target getVariable [QGVAR(deepPenetratingInjury), [false, false]] select _side) then {
+            if ((_target getVariable [QGVAR(deepPenetratingInjury), [false, false]]) select _side) then {
                 _entries pushBack [LLSTRING(DeepPenetratingInjury), [1,0,0,1]];
             };
         };

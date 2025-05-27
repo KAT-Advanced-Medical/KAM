@@ -48,6 +48,7 @@ if (GVAR(RequireInsIV)) then {
     _patient setVariable [QGVAR(IVrate), [1,1,1,1,1,1], true];
 };
 
+_patient setVariable [QGVAR(IVincomingFlowAmount), [0,0,0,0,0,0,0,0,0,0,0,0], true];
 _patient setVariable [QGVAR(IVpfh), [0,0,0,0,0,0,0,0,0,0,0,0], true];
 _patient setVariable [QGVAR(active), false, true];
 _patient setVariable [QGVAR(IVPharma_PFH), nil, true];
@@ -64,6 +65,8 @@ _patient setVariable [QGVAR(kidneyFail), false, true];
 _patient setVariable [QGVAR(kidneyArrest), false, true];
 _patient setVariable [QGVAR(kidneyPressure), false, true];
 _patient setVariable [QGVAR(respiratoryRate), 1, true];
+
+_patient setVariable [VAR_LOCAL_ANESTHESIA, DEFAULT_LOCAL_ANESTHESIA, true];
 
 _patient setVariable [QGVAR(coagulationFactor), missionNamespace getVariable [QGVAR(coagulation_factor_count), 30], true];
 

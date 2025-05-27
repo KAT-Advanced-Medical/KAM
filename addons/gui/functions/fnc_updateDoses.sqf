@@ -10,7 +10,7 @@
  * None
  *
  * Example:
- * [] call kat_medical_gui_fnc_updateMedication;
+ * [] call kat_medical_gui_fnc_updateDoses;
  *
  * Public: No
  */
@@ -35,23 +35,27 @@ _medListBox ctrlAddEventHandler ["LBSelChanged", {
             private _doseListBox = findDisplay 38580 displayCtrl 71307;
             lbClear _doseListBox;
 
-            if (isNil "_capturedMedItem" || {_capturedMedItem == ""}) exitWith { 
-            };
+            if (isNil "_capturedMedItem" || {_capturedMedItem == ""}) exitWith {}; 
 
             private _medParts = _capturedMedItem splitString "_";
-            private _medBaseName = _medParts select (count _medParts - 1);
+            private _medBaseName = _medParts select -1;
 
-            private _doseLevels = [1, 2, 3];
+            if (_syringeType == "salineIV") then {
+                private _index = _doseListBox lbAdd LLSTRING(Infusion);
+                _doseListBox lbSetValue [_index, 4];
+            } else {
+                private _doseLevels = [1, 2, 3];
 
-            {
-                private _stringtableKey = format ["STR_KAT_Pharma_%1_%2_Dose%3", _medBaseName, _syringeType, _x];
-                private _localizedText = localize _stringtableKey;
+                {
+                    private _stringtableKey = format ["STR_KAT_Pharma_%1_%2_Dose%3", _medBaseName, _syringeType, _x];
+                    private _localizedText = localize _stringtableKey;
 
-                if (_localizedText != _stringtableKey && {_localizedText != ""}) then {
-                    private _index = _doseListBox lbAdd _localizedText;
-                    _doseListBox lbSetValue [_index, _x];
-                };
-            } forEach _doseLevels;
+                    if (_localizedText != _stringtableKey && {_localizedText != ""}) then {
+                        private _index = _doseListBox lbAdd _localizedText;
+                        _doseListBox lbSetValue [_index, _x];
+                    };
+                } forEach _doseLevels;
+            };
 
         }, [_capturedMedItem], 0.05] call CBA_fnc_waitAndExecute;
     };

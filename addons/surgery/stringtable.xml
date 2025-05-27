@@ -1233,12 +1233,16 @@
             <Czech>Ohrožený</Czech>
             <French>Compromis</French>
             <Japanese>機能不全</Japanese>
+            <German>Kompromittiert</German>
+            <Italian>Compromesso</Italian>
         </Key>
         <Key ID="STR_KAT_Surgery_Ultra_Airway_NoActivity">
             <English>No Activity</English>
             <Czech>Žádná činnost</Czech>
             <French>Aucune activité</French>
             <Japanese>活動なし</Japanese>
+            <German>Keine Aktivität</German>
+            <Italian>Nessuna attività</Italian>
         </Key>
         <Key ID="STR_KAT_Surgery_Ultra_Thorasic_PTX">
             <English>Left Side Pneumothorax</English>
@@ -1449,6 +1453,8 @@
             <English>KAT - ADV Medical: Surgery</English>
             <Japanese>KAM - 外科 (Surgery)</Japanese>
             <French>KAT - ADV Medical : Chirurgie</French>
+            <German>KAT - ADV Medical: Chirurgie</German>
+            <Italian>KAT - ADV Medica: Chirurgia</Italian>
         </Key>
         <Key ID="STR_KAT_Surgery_fracture_check">
             <English>Check Fracture</English>

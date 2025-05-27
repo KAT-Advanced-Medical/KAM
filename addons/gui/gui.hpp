@@ -457,7 +457,7 @@ class ACE_Medical_Menu {
             };
             class HeadSubtractFull: RscButton {
                 idc = IDC_IV_FLOW_HEADSUBTRACTFULL; // LOOK HERE
-                onButtonClick = QUOTE([ARR_3(ACEGVAR(medical_gui,target),0,-0.5)] call FUNC(handleIVAdjust));
+                onButtonClick = QUOTE([ARR_3(ACEGVAR(medical_gui,target),1,-0.5)] call FUNC(handleIVAdjust));
                 text = "<<";
                 x = QUOTE(POS_X(-7.5));
                 y = QUOTE(POS_Y(2.5));
@@ -476,7 +476,7 @@ class ACE_Medical_Menu {
             };
             class HeadSubtract: RscButton {
                 idc = IDC_IV_FLOW_HEADSUBTRACT; // LOOK HERE
-                onButtonClick = QUOTE([ARR_3(ACEGVAR(medical_gui,target),0,-0.1)] call FUNC(handleIVAdjust));
+                onButtonClick = QUOTE([ARR_3(ACEGVAR(medical_gui,target),1,-0.1)] call FUNC(handleIVAdjust));
                 text = "<";
                 x = QUOTE(POS_X(-6));
                 y = QUOTE(POS_Y(2.5));
@@ -510,9 +510,26 @@ class ACE_Medical_Menu {
                     size = 1;
                 };
             };
+            class HeadIVRate: RscStructuredText {
+                idc = IDC_IV_FLOW_HEADIVRATE; // LOOK HERE
+                text = CSTRING(IVRate);
+                x = QUOTE(POS_X(-5));
+                y = QUOTE(POS_Y(1.5));
+                w = QUOTE(POS_W(2));
+                h = QUOTE(POS_H(1));
+                colorBackground[] = {0, 0, 0, 0.2};
+                show = 0;
+                class Attributes {
+                    align = "center";
+                    color = "#E5E5E5";
+                    font = "RobotoCondensed";
+                    shadow = "false";
+                    size = 1;
+                };
+            };
             class HeadAdd: RscButton {
                 idc = IDC_IV_FLOW_HEADADD; // LOOK HERE
-                onButtonClick = QUOTE([ARR_3(ACEGVAR(medical_gui,target),0,0.1)] call FUNC(handleIVAdjust));
+                onButtonClick = QUOTE([ARR_3(ACEGVAR(medical_gui,target),1,0.1)] call FUNC(handleIVAdjust));
                 text = ">";
                 x = QUOTE(POS_X(-3));
                 y = QUOTE(POS_Y(2.5));
@@ -531,7 +548,7 @@ class ACE_Medical_Menu {
             };
             class HeadAddFull: RscButton {
                 idc = IDC_IV_FLOW_HEADADDFULL; // LOOK HERE
-                onButtonClick = QUOTE([ARR_3(ACEGVAR(medical_gui,target),0,0.5)] call FUNC(handleIVAdjust));
+                onButtonClick = QUOTE([ARR_3(ACEGVAR(medical_gui,target),1,0.5)] call FUNC(handleIVAdjust));
                 text = ">>";
                 x = QUOTE(POS_X(-1.5));
                 y = QUOTE(POS_Y(2.5));
@@ -565,26 +582,30 @@ class ACE_Medical_Menu {
             };
             class ChestSubtractFull: HeadSubtractFull {
                 idc = IDC_IV_FLOW_CHESTSUBTRACTFULL; // LOOK HERE
-                onButtonClick = QUOTE([ARR_3(ACEGVAR(medical_gui,target),1,-0.5)] call FUNC(handleIVAdjust));
+                onButtonClick = QUOTE([ARR_3(ACEGVAR(medical_gui,target),3,-0.5)] call FUNC(handleIVAdjust));
                 y = QUOTE(POS_Y(5));
             };
             class ChestSubtract: HeadSubtract {
                 idc = IDC_IV_FLOW_CHESTSUBTRACT; // LOOK HERE
-                onButtonClick = QUOTE([ARR_3(ACEGVAR(medical_gui,target),1,-0.1)] call FUNC(handleIVAdjust));
+                onButtonClick = QUOTE([ARR_3(ACEGVAR(medical_gui,target),3,-0.1)] call FUNC(handleIVAdjust));
                 y = QUOTE(POS_Y(5));
             };
             class ChestIVValue: HeadIVValue {
                 idc = IDC_IV_FLOW_CHESTTEST; // LOOK HERE
                 y = QUOTE(POS_Y(5));
             };
+            class ChestIVRate: HeadIVRate {
+                idc = IDC_IV_FLOW_CHESTIVRATE; // LOOK HERE
+                y = QUOTE(POS_Y(4.1));
+            };
             class ChestAdd: HeadAdd {
                 idc = IDC_IV_FLOW_CHESTADD; // LOOK HERE
-                onButtonClick = QUOTE([ARR_3(ACEGVAR(medical_gui,target),1,0.1)] call FUNC(handleIVAdjust));
+                onButtonClick = QUOTE([ARR_3(ACEGVAR(medical_gui,target),3,0.1)] call FUNC(handleIVAdjust));
                 y = QUOTE(POS_Y(5));
             };
             class ChestAddFull: HeadAddFull {
                 idc = IDC_IV_FLOW_CHESTADDFULL; // LOOK HERE
-                onButtonClick = QUOTE([ARR_3(ACEGVAR(medical_gui,target),1,0.5)] call FUNC(handleIVAdjust));
+                onButtonClick = QUOTE([ARR_3(ACEGVAR(medical_gui,target),3,0.5)] call FUNC(handleIVAdjust));
                 y = QUOTE(POS_Y(5));
             };
 
@@ -604,26 +625,30 @@ class ACE_Medical_Menu {
             };
             class LArmSubtractFull: HeadSubtractFull {
                 idc = IDC_IV_FLOW_LARMSUBTRACTFULL; // LOOK HERE
-                onButtonClick = QUOTE([ARR_3(ACEGVAR(medical_gui,target),2,-0.5)] call FUNC(handleIVAdjust));
+                onButtonClick = QUOTE([ARR_3(ACEGVAR(medical_gui,target),4,-0.5)] call FUNC(handleIVAdjust));
                 y = QUOTE(POS_Y(7.6));
             };
             class LArmSubtract: HeadSubtract {
                 idc = IDC_IV_FLOW_LARMSUBTRACT; // LOOK HERE
-                onButtonClick = QUOTE([ARR_3(ACEGVAR(medical_gui,target),2,-0.1)] call FUNC(handleIVAdjust));
+                onButtonClick = QUOTE([ARR_3(ACEGVAR(medical_gui,target),4,-0.1)] call FUNC(handleIVAdjust));
                 y = QUOTE(POS_Y(7.6));
             };
             class LArmIVValue: HeadIVValue {
                 idc = IDC_IV_FLOW_LARMIVVALUE; // LOOK HERE
                 y = QUOTE(POS_Y(7.6));
             };
+            class LArmIVRate: HeadIVRate {
+                idc = IDC_IV_FLOW_LARMIVRATE; // LOOK HERE
+                y = QUOTE(POS_Y(6.6));
+            };
             class LArmAdd: HeadAdd {
                 idc = IDC_IV_FLOW_LARMADD; // LOOK HERE
-                onButtonClick = QUOTE([ARR_3(ACEGVAR(medical_gui,target),2,0.1)] call FUNC(handleIVAdjust));
+                onButtonClick = QUOTE([ARR_3(ACEGVAR(medical_gui,target),4,0.1)] call FUNC(handleIVAdjust));
                 y = QUOTE(POS_Y(7.6));
             };
             class LArmAddFull: HeadAddFull {
                 idc = IDC_IV_FLOW_LARMADDFULL; // LOOK HERE
-                onButtonClick = QUOTE([ARR_3(ACEGVAR(medical_gui,target),2,0.5)] call FUNC(handleIVAdjust));
+                onButtonClick = QUOTE([ARR_3(ACEGVAR(medical_gui,target),4,0.5)] call FUNC(handleIVAdjust));
                 y = QUOTE(POS_Y(7.6));
             };
 
@@ -643,26 +668,30 @@ class ACE_Medical_Menu {
             };
             class RArmSubtractFull: HeadSubtractFull {
                 idc = IDC_IV_FLOW_RARMSUBTRACTFULL; // LOOK HERE
-                onButtonClick = QUOTE([ARR_3(ACEGVAR(medical_gui,target),3,-0.5)] call FUNC(handleIVAdjust));
+                onButtonClick = QUOTE([ARR_3(ACEGVAR(medical_gui,target),6,-0.5)] call FUNC(handleIVAdjust));
                 y = QUOTE(POS_Y(10.3));
             };
             class RArmSubtract: HeadSubtract {
                 idc = IDC_IV_FLOW_RARMSUBTRACT; // LOOK HERE
-                onButtonClick = QUOTE([ARR_3(ACEGVAR(medical_gui,target),3,-0.1)] call FUNC(handleIVAdjust));
+                onButtonClick = QUOTE([ARR_3(ACEGVAR(medical_gui,target),6,-0.1)] call FUNC(handleIVAdjust));
                 y = QUOTE(POS_Y(10.3));
             };
             class RArmIVValue: HeadIVValue {
                 idc = IDC_IV_FLOW_RARMIVVALUE; // LOOK HERE
                 y = QUOTE(POS_Y(10.3));
             };
+            class RArmIVRate: HeadIVRate {
+                idc = IDC_IV_FLOW_RARMIVRATE; // LOOK HERE
+                y = QUOTE(POS_Y(9.3));
+            };
             class RArmAdd: HeadAdd {
                 idc = IDC_IV_FLOW_RARMADD; // LOOK HERE
-                onButtonClick = QUOTE([ARR_3(ACEGVAR(medical_gui,target),3,0.1)] call FUNC(handleIVAdjust));
+                onButtonClick = QUOTE([ARR_3(ACEGVAR(medical_gui,target),6,0.1)] call FUNC(handleIVAdjust));
                 y = QUOTE(POS_Y(10.3));
             };
             class RArmAddFull: HeadAddFull {
                 idc = IDC_IV_FLOW_RARMADDFULL; // LOOK HERE
-                onButtonClick = QUOTE([ARR_3(ACEGVAR(medical_gui,target),3,0.5)] call FUNC(handleIVAdjust));
+                onButtonClick = QUOTE([ARR_3(ACEGVAR(medical_gui,target),6,0.5)] call FUNC(handleIVAdjust));
                 y = QUOTE(POS_Y(10.3));
             };
 
@@ -682,26 +711,30 @@ class ACE_Medical_Menu {
             };
             class LLegSubtractFull: HeadSubtractFull {
                 idc = IDC_IV_FLOW_LLEGSUBTRACTFULL; // LOOK HERE
-                onButtonClick = QUOTE([ARR_3(ACEGVAR(medical_gui,target),4,-0.5)] call FUNC(handleIVAdjust));
+                onButtonClick = QUOTE([ARR_3(ACEGVAR(medical_gui,target),9,-0.5)] call FUNC(handleIVAdjust));
                 y = QUOTE(POS_Y(12.9));
             };
             class LLegSubtract: HeadSubtract {
                 idc = IDC_IV_FLOW_LLEGSUBTRACT; // LOOK HERE
-                onButtonClick = QUOTE([ARR_3(ACEGVAR(medical_gui,target),4,-0.1)] call FUNC(handleIVAdjust));
+                onButtonClick = QUOTE([ARR_3(ACEGVAR(medical_gui,target),9,-0.1)] call FUNC(handleIVAdjust));
                 y = QUOTE(POS_Y(12.9));
             };
             class LLegIVValue: HeadIVValue {
                 idc = IDC_IV_FLOW_LLEGIVVALUE; // LOOK HERE
                 y = QUOTE(POS_Y(12.9));
             };
+            class LLegIVRate: HeadIVRate {
+                idc = IDC_IV_FLOW_LLEGIVRATE; // LOOK HERE
+                y = QUOTE(POS_Y(12));
+            };
             class LLegAdd: HeadAdd {
                 idc = IDC_IV_FLOW_LLEGADD; // LOOK HERE
-                onButtonClick = QUOTE([ARR_3(ACEGVAR(medical_gui,target),4,0.1)] call FUNC(handleIVAdjust));
+                onButtonClick = QUOTE([ARR_3(ACEGVAR(medical_gui,target),9,0.1)] call FUNC(handleIVAdjust));
                 y = QUOTE(POS_Y(12.9));
             };
             class LLegAddFull: HeadAddFull {
                 idc = IDC_IV_FLOW_LLEGADDFULL; // LOOK HERE
-                onButtonClick = QUOTE([ARR_3(ACEGVAR(medical_gui,target),4,0.5)] call FUNC(handleIVAdjust));
+                onButtonClick = QUOTE([ARR_3(ACEGVAR(medical_gui,target),9,0.5)] call FUNC(handleIVAdjust));
                 y = QUOTE(POS_Y(12.9));
             };
 
@@ -721,26 +754,30 @@ class ACE_Medical_Menu {
             };
             class RLegSubtractFull: HeadSubtractFull {
                 idc = IDC_IV_FLOW_RLEGSUBTRACTFULL; // LOOK HERE
-                onButtonClick = QUOTE([ARR_3(ACEGVAR(medical_gui,target),5,-0.5)] call FUNC(handleIVAdjust));
+                onButtonClick = QUOTE([ARR_3(ACEGVAR(medical_gui,target),11,-0.5)] call FUNC(handleIVAdjust));
                 y = QUOTE(POS_Y(15.5));
             };
             class RLegSubtract: HeadSubtract {
                 idc = IDC_IV_FLOW_RLEGSUBTRACT; // LOOK HERE
-                onButtonClick = QUOTE([ARR_3(ACEGVAR(medical_gui,target),5,-0.1)] call FUNC(handleIVAdjust));
+                onButtonClick = QUOTE([ARR_3(ACEGVAR(medical_gui,target),11,-0.1)] call FUNC(handleIVAdjust));
                 y = QUOTE(POS_Y(15.5));
             };
             class RLegIVValue: HeadIVValue {
                 idc = IDC_IV_FLOW_RLEGIVVALUE; // LOOK HERE
                 y = QUOTE(POS_Y(15.5));
             };
+            class RLegIVRate: HeadIVRate {
+                idc = IDC_IV_FLOW_RLEGIVRATE; // LOOK HERE
+                y = QUOTE(POS_Y(14.6));
+            };
             class RLegAdd: HeadAdd {
                 idc = IDC_IV_FLOW_RLEGADD; // LOOK HERE
-                onButtonClick = QUOTE([ARR_3(ACEGVAR(medical_gui,target),5,0.1)] call FUNC(handleIVAdjust));
+                onButtonClick = QUOTE([ARR_3(ACEGVAR(medical_gui,target),11,0.1)] call FUNC(handleIVAdjust));
                 y = QUOTE(POS_Y(15.5));
             };
             class RLegAddFull: HeadAddFull {
                 idc = IDC_IV_FLOW_RLEGADDFULL; // LOOK HERE
-                onButtonClick = QUOTE([ARR_3(ACEGVAR(medical_gui,target),5,0.5)] call FUNC(handleIVAdjust));
+                onButtonClick = QUOTE([ARR_3(ACEGVAR(medical_gui,target),11,0.5)] call FUNC(handleIVAdjust));
                 y = QUOTE(POS_Y(15.5));
             };
 

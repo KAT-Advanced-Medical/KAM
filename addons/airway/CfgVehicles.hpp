@@ -52,8 +52,8 @@ class CfgVehicles {
         class TransportItems {
             MACRO_ADDITEM(kat_larynx,15);
             MACRO_ADDITEM(kat_guedel,15);
-            MACRO_ADDITEM(kat_suction,15);
             MACRO_ADDITEM(kat_accuvac,1);
+            MACRO_ADDITEM(kat_suction,10);
         };
     };
 };

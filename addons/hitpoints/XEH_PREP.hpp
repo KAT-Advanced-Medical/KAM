@@ -19,6 +19,7 @@ PREP(handleIncapacitation);
 PREP(handleRespawn);
 PREP(hasTourniquetAppliedTo);
 PREP(init);
+PREP(ivBagLocal);
 PREP(onKeyDown);
 PREP(pressureStart);
 PREP(splintLocal);

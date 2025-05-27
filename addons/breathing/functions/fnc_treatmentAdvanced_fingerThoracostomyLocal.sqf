@@ -20,12 +20,11 @@
 params ["_medic", "_patient", "_side"];
 
 private _medStack = _patient call ACEFUNC(medical_treatment,getAllMedicationCount);
-private _medsToCheck = ["fentanyl", "ketamine", "nalbuphine", "morphine", "lidocaine"];
+private _medsToCheck = ["fentanyl", "ketamine", "nalbuphine", "morphine"];
 private _fentanylEffectiveness = 0;
 private _ketamineEffectiveness = 0;
 private _nalbuphineEffectiveness = 0;
 private _morphineEffectiveness = 0;
-private _lidocaineEffectiveness = 0;
 {
     private _medName = toLower (_x select 0);
     private _effectiveness = _x select 2;
@@ -41,16 +40,13 @@ private _lidocaineEffectiveness = 0;
     if ("morphine" in _medName) then {
         _morphineEffectiveness = _morphineEffectiveness max _effectiveness;
     };
-    if ("lidocaine" in _medName) then {
-        _lidocaineEffectiveness = _lidocaineEffectiveness max _effectiveness;
-    };
     } forEach _medStack;
     if (
         _fentanylEffectiveness <= 0.8 &&
         _ketamineEffectiveness <= 0.8 &&
         _nalbuphineEffectiveness <= 0.8 &&
-        _lidocaineEffectiveness <= 0.6 &&
-        _morphineEffectiveness <= 0.8
+        _morphineEffectiveness <= 0.8 &&
+        (GET_LOCAL_ANESTHESIA(_patient,2) <= 0.8)
     ) then {
         [_patient, [0.7, 0.8, 0.9] select (floor random 3)] call ACEFUNC(medical_status,adjustPainLevel);
     };

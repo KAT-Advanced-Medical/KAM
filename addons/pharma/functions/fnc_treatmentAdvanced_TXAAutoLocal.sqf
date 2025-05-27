@@ -1,6 +1,6 @@
 #include "..\script_component.hpp"
 /*
- * Author: Mazinski
+ * Author: Mazinski/Cplhardcore
  * Begins TXA bandaging process
  *
  * Arguments:
@@ -11,15 +11,13 @@
  * None
  *
  * Example:
- * [player] call kat_pharma_fnc_treatmentAdvanced_TXALocal;
+ * [player] call kat_pharma_fnc_treatmentAdvanced_TXAAutoLocal;
  *
  * Public: No
  */
 
 params ["_patient", "_bodyPart"];
 private _partIndex = ALL_BODY_PARTS find toLower _bodyPart;
-private _IVarray = _patient getVariable [QGVAR(IV), [0,0,0,0,0,0,0,0,0,0,0,0]];
-private _IVactual = _IVarray select _partIndex;
 private _medStack = [_patient, false] call ACEFUNC(medical_treatment,getAllMedicationCount);
 private _medsToCheck = ["TXA"];
 private _txaEffectiveness = 0;
@@ -34,29 +32,7 @@ private _allowStack = missionNamespace getVariable [QGVAR(allowStackScript_TXA),
 private _keepRunning = missionNamespace getVariable [QGVAR(keepScriptRunning_TXA), false];
 private _cycleTime = missionNamespace getVariable [QGVAR(bandageCycleTime_TXA), 5];
 
-if (_IVactual > 1) then {
-    private _randomNumber = random 100;
-
-    if (_IVactual != 14) exitWith {
-        if (_randomNumber < GVAR(blockChance)) then {
-            [{
-                params ["_patient", "_IVarray", "_partIndex", "_IVactual"];
-
-                if (_IVactual > 1 && ([10,11,12] find _IVactual == -1)) exitWith {};
-                _IVarray set [_partIndex, _IVactual + 5];
-                _patient setVariable [QGVAR(IV), _IVarray, true];
-            },
-            [_patient, _IVarray, _partIndex, _IVactual], (random 300)] call CBA_fnc_waitAndExecute;
-        };
-    };
-
-    _IVarray set [_partIndex, _IVactual];
-    _patient setVariable [QGVAR(IV), _IVarray, true];
-};
-
 if (!(GVAR(coagulation)) || GVAR(coagulation_allow_TXA_script)) then {
-
-    if ([7,8,9] find _IVactual == -1) then {
 
         if ((_txaEffectiveness > 0.3) && !(_allowStack)) exitWith {};
 
@@ -104,5 +80,4 @@ if (!(GVAR(coagulation)) || GVAR(coagulation_allow_TXA_script)) then {
             };
 
         }, _cycleTime, [_patient, _keepRunning]] call CBA_fnc_addPerFrameHandler;
-    };
 };

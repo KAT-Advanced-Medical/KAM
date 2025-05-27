@@ -22,7 +22,7 @@
  */
 
 params ["_unit", "_allDamages"];
-(_allDamages select 0) params ["_engineDamage", "_bodyPart"]; // selection-specific
+(_allDamages select 5) params ["_engineDamage", "_bodyPart"]; // selection-specific
 
 if !(GVAR(enable) && _bodyPart == "chest") exitWith {_this};
 
@@ -40,7 +40,7 @@ if (floor (random 100) < (GVAR(pneumothoraxChance) + _chanceIncrease)) then {
     private _tensionState = _unit getVariable [QGVAR(tensionpneumothorax), [false, false]];
     private _side = selectRandom [0, 1];
 
-    if (_pneumothoraxState select _side isEqualTo 0 && !(_tensionState select _side)) then { 
+    if ((_pneumothoraxState select _side) isEqualTo 0 && !(_tensionState select _side)) then { 
         [_unit, 0.2] call ACEFUNC(medical_status,adjustPainLevel);
         _pneumothoraxState set [_side, 1];
         _unit setVariable [QGVAR(pneumothorax), _pneumothoraxState, true];

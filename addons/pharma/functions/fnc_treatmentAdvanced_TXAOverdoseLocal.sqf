@@ -16,6 +16,7 @@
  */
 
 params ["_patient"];
+[_patient, "TXAOverdose", 1, 900, 0, 0, -0.5] call EFUNC(vitals,addMedicationAdjustment);
 [{
     params ["_patient"];
     private _TXAOverdoseTarget = 0;

@@ -70,6 +70,9 @@ class CfgFunctions {
             class canBandage {
                 file = QPATHTOF(functions\fnc_canBandage.sqf);
             };
+            class ivBagLocal {
+                file = QPATHTOF(functions\fnc_ivBagLocal.sqf);
+            };
          };
     };
 };
