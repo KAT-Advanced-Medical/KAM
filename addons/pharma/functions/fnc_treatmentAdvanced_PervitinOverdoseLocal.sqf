@@ -16,7 +16,6 @@
  * Public: No
  */
 params ["_patient"];
-systemChat str "PervatinODOverdose";
 private _randomNumber = floor (random 3) + 1;
 switch (_randomNumber) do {
     case 1: {

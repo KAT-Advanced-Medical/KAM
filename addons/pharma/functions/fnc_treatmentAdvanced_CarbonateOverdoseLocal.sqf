@@ -15,7 +15,6 @@
  * Public: No
  */
 params ["_patient"];
-systemChat str "CarbonateODLocal";
 [{
     params ["_patient"];
     private _CarbonateOverdoseTarget = 0;

@@ -15,7 +15,7 @@
  * Public: No
  */
 params ["_patient"];
-systemChat str "AdenosineODLocal";
+
 [{
     params ["_patient"];
         [{

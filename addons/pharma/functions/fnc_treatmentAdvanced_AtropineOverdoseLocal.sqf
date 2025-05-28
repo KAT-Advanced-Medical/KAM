@@ -14,7 +14,6 @@
  *
  * Public: No
  */
- systemChat str "AtropineODLocal";
 params ["_patient"];
 [{
     params ["_patient"];

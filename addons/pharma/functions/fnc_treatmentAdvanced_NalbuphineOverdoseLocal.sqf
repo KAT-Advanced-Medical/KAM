@@ -14,7 +14,6 @@
  *
  * Public: No
  */
-systemChat str "nalbuphineOverdose";
 params ["_patient"];
 private _bpAdjust = -30 + floor random ((-15 - -30) + 1);
 [_patient, _bpAdjust, _bpAdjust, "nalbuphineOverdose"] call kat_circulation_fnc_updateBloodPressureChange;
