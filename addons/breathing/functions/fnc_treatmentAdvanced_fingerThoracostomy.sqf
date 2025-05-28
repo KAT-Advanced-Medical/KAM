@@ -19,7 +19,6 @@
 
 params ["_medic", "_patient", "_side"];
 
-[_patient, _usedItem] call ACEFUNC(medical_treatment,addToTriageCard);
-[_patient, "activity", ACELSTRING(medical_treatment,Activity_usedItem), [[_medic] call ACEFUNC(common,getName), getText (configFile >> "CfgWeapons" >> _usedItem >> "displayName")]] call ACEFUNC(medical_treatment,addToLog);
+[_patient, "activity", LSTRING(FingerThoracostomy_Log), [[_medic] call ACEFUNC(common,getName)]] call ACEFUNC(medical_treatment,addToLog);
 
 [QGVAR(fingerThoracostomyLocal), [_medic, _patient, _side], _patient] call CBA_fnc_targetEvent;

@@ -26,7 +26,6 @@ if (_liveChestTube == 0.5)  exitWith {
     _liveChestTube = 0;
 
     _chestTubeArray set [_side, _liveChestTube];
-    _tensionPneumothoraxArray set [_side, false];
     _patient setVariable [QGVAR(chestTube), _chestTubeArray, true];
     private _activeChestSeal = _patient getVariable [QGVAR(activeChestSeal), [false, false]];
     if (_activeChestSeal select _side) then {

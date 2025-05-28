@@ -84,6 +84,7 @@ switch (_usedItem) do {
         private _ketamineEffectiveness = 0;
         private _nalbuphineEffectiveness = 0;
         private _morphineEffectiveness = 0;
+        private _localAnesthesia = (_patient getVariable [QEGVAR(pharma,localAnesthesia), [0,0,0,0,0,0,0,0,0,0,0,0]]) select _partIndex;
         {
             private _medName = toLower (_x select 0);
             private _effectiveness = _x select 2;
@@ -105,15 +106,15 @@ switch (_usedItem) do {
             _ketamineEffectiveness <= 0.8 &&
             _nalbuphineEffectiveness <= 0.8 &&
             _morphineEffectiveness <= 0.8 &&
-            (GET_LOCAL_ANESTHESIA(_patient,_partIndex) <= 0.8)
-
+            _localAnesthesia <= 0.8
         ) then {
             _painLevel = [0.6, 0.7, 0.8] select (floor random 3);
             [_patient, _painLevel] call ACEFUNC(medical_status,adjustPainLevel);
         };
         [{
             params ["_patient", "_partIndex"];
-            GET_LOCAL_ANESTHESIA(_patient,_partindex) > 0.7;
+            private _localAnesthesia = (_patient getVariable [QEGVAR(pharma,localAnesthesia), [0,0,0,0,0,0,0,0,0,0,0,0]]) select _partIndex;
+            (_localAnesthesia > 0.7);
         }, {
             params ["_patient", "_partIndex", "_painLevel"];
             _negPainLevel = -1 * _painLevel;

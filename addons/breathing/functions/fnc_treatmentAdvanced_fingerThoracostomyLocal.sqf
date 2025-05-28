@@ -25,6 +25,7 @@ private _fentanylEffectiveness = 0;
 private _ketamineEffectiveness = 0;
 private _nalbuphineEffectiveness = 0;
 private _morphineEffectiveness = 0;
+private _localAnesthesia = (_patient getVariable [QEGVAR(pharma,localAnesthesia), [0,0,0,0,0,0,0,0,0,0,0,0]]) select 2;
 {
     private _medName = toLower (_x select 0);
     private _effectiveness = _x select 2;
@@ -46,10 +47,11 @@ private _morphineEffectiveness = 0;
         _ketamineEffectiveness <= 0.8 &&
         _nalbuphineEffectiveness <= 0.8 &&
         _morphineEffectiveness <= 0.8 &&
-        (GET_LOCAL_ANESTHESIA(_patient,2) <= 0.8)
+        (_localAnesthesia <= 0.8)
     ) then {
         [_patient, [0.7, 0.8, 0.9] select (floor random 3)] call ACEFUNC(medical_status,adjustPainLevel);
     };
+TRACE_5("FingerThora1",_fentanylEffectiveness,_ketamineEffectiveness,_nalbuphineEffectiveness,_morphineEffectiveness,_localAnesthesia);
 if (random 100 <= 30) exitWith {};
 private _activeChestSeal = _patient getVariable [QGVAR(activeChestSeal), [false, false]];
 if (_activeChestSeal select _side) then {
@@ -59,14 +61,11 @@ if (_activeChestSeal select _side) then {
     private _tensionPneumothorax = _patient getVariable [QGVAR(tensionPneumothorax), [false, false]];
     _tensionPneumothorax set [_side, false];
     _patient setVariable [QGVAR(tensionPneumothorax), _tensionPneumothorax, true];
+    private _ht = _patient getVariable [QEGVAR(circulation,ht), []];
+    _ht deleteAt (_ht find "tension");
+    _ht deleteAt (_ht find "hemo");
+    _patient setVariable [QEGVAR(circulation,ht), _ht, true];
 };
-
-private _ht = _patient getVariable [QEGVAR(circulation,ht), []];
-_ht deleteAt (_ht find "tension");
-_patient setVariable [QEGVAR(circulation,ht), _ht, true];
-
-private _pneumothorax = _patient getVariable [QGVAR(pneumothorax), [0, 0]];
-private _hemopneumothorax = _patient getVariable [QGVAR(hemopneumothorax), [false, false]];
 
 if ((_patient getVariable [QGVAR(pneumothorax), [0, 0]] select _side > 0) &&
     !(_patient getVariable [QGVAR(hemopneumothorax), [false, false]] select _side) &&
