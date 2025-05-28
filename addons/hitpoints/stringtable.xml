@@ -525,10 +525,10 @@
         <Key ID="STR_KAT_Hitpoints_noPelvicFracture_log">
             <English>%1 did not find a Pelvic Fracture</English>
         </Key>
-        <Key ID="STR_KAT_Hitpoints_Pelvic_DAMAGE_THRESHOLD">
+        <Key ID="STR_KAT_Hitpoints_InternalBleedingEnable">
             <English>Internal Bleeding</English>
         </Key>
-        <Key ID="STR_KAT_Hitpoints_Pelvic_DAMAGE_THRESHOLD_DESC">
+        <Key ID="STR_KAT_Hitpoints_InternalBleedingEnable_DESC">
             <English>Turns on internal bleeding as a wound type</English>
         </Key>
     </Package>
