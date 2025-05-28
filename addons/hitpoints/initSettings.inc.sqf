@@ -26,6 +26,15 @@
     true
 ] call CBA_fnc_addSetting;
 
+[
+    QGVAR(InternalBleedingEnable),
+    "CHECKBOX",
+    [LLSTRING(SETTING_InternalBleedingEnable), LLSTRING(SETTING_InternalBleedingEnable_DESC)],
+    [CBA_SETTINGS_CAT, LSTRING(Subcatagory_Catastrophic_Injuries)],
+    [true],
+    true
+] call CBA_fnc_addSetting;
+
 
 [
     QGVAR(CatastrophicEnable),
