@@ -15,7 +15,6 @@
  * Public: No
  */
 params ["_patient"];
-systemChat str "LidocaineLocal";
 private _bpAdjust = -40 + floor random ((-25 - -40) + 1);
 [_patient, _bpAdjust, _bpAdjust, "lidocaineOverdose"] call EFUNC(circulation,updateBloodPressureChange);
 private _hrAdjust = -50 + floor random ((-30 - -50) + 1);

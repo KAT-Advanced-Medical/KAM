@@ -14,7 +14,6 @@
  * Public: No
  */
 params ["_patient"];
-systemChat str "CaffineODLocal";
 [{
     params ["_patient"];
     private _CaffineOverdoseTarget = 0;

@@ -15,7 +15,6 @@
  *
  * Public: No
  */
-systemChat str "EpiODLocal";
 params ["_patient"];
 private _hrAdjust = 30 + floor random ((60 - 30) + 1);
 [_patient, "TACHYCARDIA", 30, 1200, _hrAdjust] call EFUNC(vitals,addMedicationAdjustment);

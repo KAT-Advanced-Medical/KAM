@@ -15,7 +15,6 @@
  * Public: No
  */
 params ["_patient"];
-systemChat str "flumanzinilODLocal";
 private _hrAdjust = 20 + floor random ((40 - 20) + 1);
 [_patient, "TACHYCARDIA", 120, 1200, _hrAdjust] call EFUNC(vitals,addMedicationAdjustment);
 if QEGVAR(feedback,effectOverdose) then
