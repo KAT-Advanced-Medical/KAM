@@ -44,8 +44,9 @@ if (!isNil {_unit getVariable [QACEGVAR(medical,ivBags),[]]}) then {
     private _fluidWarmer = _unit getVariable [QEGVAR(hypothermia,fluidWarmer), [0,0,0,0,0,0,0,0,0,0,0,0]];
     private _fluidHeat = 0;
 
-
     _bloodBags = _bloodBags apply {
+        _x params ["_bagVolumeRemaining", "_type", "_bodyPart", "_treatment", "_rateCoef", "_item"];
+
         _x params ["_bagVolumeRemaining", "_type", "_bodyPart", "_treatment", "_rateCoef", "_item"];
         
         private _tourniquets = GET_TOURNIQUETS(_unit);
@@ -62,10 +63,10 @@ if (!isNil {_unit getVariable [QACEGVAR(medical,ivBags),[]]}) then {
 
         private _idx = _occlusionMap findIf { _x#0 == _bodyPart };
         private _result = if (_idx != -1) then { _occlusionMap select _idx select 1 } else { [] };
-        private _isNotOccluded = { _tourniquets select _x != 0 } count _result > 0;
+        private _isOccluded = { _tourniquets select _x != 0 } count _result > 0;
 
-        if ((!_isNotOccluded) && ([7,8,9] find (_IVarray select _bodyPart) == -1) ) then {
-            if (_type in ["Blood", "Saline", "Plasma"]) then {
+        if ((!_isOccluded) && ([7,8,9] find (_IVarray select _bodyPart) == -1) ) then {
+            if (_type in ["Blood", "Saline", "Plasma", "Ringers Lactate", "PackedRBC"]) then {
             private _IVflow = _unit getVariable [QGVAR(IVflow), [0,0,0,0,0,0,0,0,0,0,0,0]];
             private _IVrate = _unit getVariable [QGVAR(IVrate), [0,0,0,0,0,0,0,0,0,0,0,0]];
             private _bagChange = (_flowCalculation * (_IVflow select _bodyPart) * (_IVrate select _bodyPart) * _rateCoef) min _bagVolumeRemaining; // absolute value of the change in miliLiters
@@ -74,10 +75,11 @@ if (!isNil {_unit getVariable [QACEGVAR(medical,ivBags),[]]}) then {
             _unit setVariable [QGVAR(IVincomingFlowAmount), _incomingFlowAmount, true];
             private _incomingFlowDifference = (_incomingFlowAmount select _bodyPart) - (10 * _vasoconstriction);
             _totalFlow = 0;
-            {
+             {
                 _totalFlow = _totalFlow + _x;
             } forEach _incomingFlowAmount;
-            TRACE_8("IV",_bagChange,_IVrate,_IVflow,_IVarray,_isNotOccluded,_rateCoef,_flowCalculation,_bodyPart);
+            TRACE_8("IV",_bagChange,_IVrate,_IVflow,_IVarray,_isOccluded,_rateCoef,_flowCalculation,_bodyPart);
+            TRACE_2("IV2",_bagVolumeRemaining,_incomingFlowAmount);
             if ((GVAR(IVComplications)) && ((((_incomingFlowAmount select _bodyPart) max 0.01) / ((_IVrate select _bodyPart) max 0.01)) > (10 * _vasoconstriction))) then {[_unit, _bodyPart, _incomingFlowDifference] call FUNC(handleLimbIVComplications)};
 
             if (_hypothermia) then {
@@ -125,7 +127,6 @@ if (!isNil {_unit getVariable [QACEGVAR(medical,ivBags),[]]}) then {
                     };
                 };
             };
-        
         } else {
             private _IVflow = _unit getVariable [QGVAR(IVflow), [0,0,0,0,0,0,0,0,0,0,0,0]];
             private _IVrate = _unit getVariable [QGVAR(IVrate), [0,0,0,0,0,0,0,0,0,0,0,0]];
@@ -183,19 +184,17 @@ if (!isNil {_unit getVariable [QACEGVAR(medical,ivBags),[]]}) then {
                 _ECP = _ECP + _bagChange / 2; 
                 _ISP = _ISP + _bagChange / 2; 
                 _lossVolumeChange = _lossVolumeChange + (_bagChange / 2000);
-                } else {
+                    } else {
                 { _ECP = _ECP + _bagChange; _lossVolumeChange = _lossVolumeChange + (_bagChange / ML_TO_LITERS); };
-                };
+            };
         };
-    
-
-        if (_bagVolumeRemaining < 0.01) then {
+    };
+    if (_bagVolumeRemaining < 0.01) then {
             []
         } else {
             [_bagVolumeRemaining, _type, _bodyPart, _treatment, _rateCoef, _item]
-        };
     };
-
+    };
     _bloodBags = _bloodBags - [[]]; // remove empty bags
 
     if (_bloodBags isEqualTo []) then {
@@ -214,12 +213,10 @@ if (!isNil {_unit getVariable [QACEGVAR(medical,ivBags),[]]}) then {
         } else {
             private _totalCooling = _unit getVariable [QEGVAR(hypothermia,warmingImpact), 0];
             _unit setVariable [QEGVAR(hypothermia,warmingImpact), _totalCooling + _fluidHeat, _syncValues];
-            };
         };
     };
 };
 
-// Movement and recovery of interstital fluid and SRBC collection
 private _SRBCChange = 0;
 
 if (_enableFluidShift) then {
@@ -253,7 +250,7 @@ if (_enableFluidShift) then {
 
     if (_defaultShift) then {
         _ISP = _ISP + ((((DEFAULT_ISP - _ISP) max -2) min 2) *_deltaT);
-        _SRBC = _SRBC + ((((DEFAULT_SRBC - _SRBC) max -1) min 1) * _deltaT);  
+        _SRBC = _SRBC + ((((DEFAULT_SRBC - _SRBC) max -1) min 1) * _deltaT);
     };
 };
 
