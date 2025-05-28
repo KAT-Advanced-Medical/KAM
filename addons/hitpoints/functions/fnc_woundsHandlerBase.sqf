@@ -96,6 +96,10 @@ private _bodyPartVisParams = [_unit, false, false, false, false]; // params arra
             WARNING_4("No valid wound types %1-%2-%3-%4",_damage,_dmgPerWound,_typeOfDamage,_bodyPart);
             continue
         };
+        if (_woundTypeToAdd == "InternalBleeding" && !(GVAR(InternalBleedingEnable))) then {
+            _woundTypeToAdd = "Avulsion";
+            continue
+        };
         ACEGVAR(medical_damage,woundDetails) get _woundTypeToAdd params ["","_injuryBleedingRate","_injuryPain","_causeLimping","_causeFracture"];
         private _woundClassIDToAdd = ACEGVAR(medical_damage,woundClassNames) find _woundTypeToAdd;
 
