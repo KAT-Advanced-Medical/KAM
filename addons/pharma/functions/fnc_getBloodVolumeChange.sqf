@@ -47,8 +47,6 @@ if (!isNil {_unit getVariable [QACEGVAR(medical,ivBags),[]]}) then {
     _bloodBags = _bloodBags apply {
         _x params ["_bagVolumeRemaining", "_type", "_bodyPart", "_treatment", "_rateCoef", "_item"];
 
-        _x params ["_bagVolumeRemaining", "_type", "_bodyPart", "_treatment", "_rateCoef", "_item"];
-        
         private _tourniquets = GET_TOURNIQUETS(_unit);
         private _occlusionMap = [
             [4, [4, 5]],
