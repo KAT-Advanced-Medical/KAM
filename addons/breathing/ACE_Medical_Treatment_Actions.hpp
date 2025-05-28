@@ -368,7 +368,7 @@ class ACE_Medical_Treatment_Actions {
         displayNameProgress = CSTRING(Chest_Tube_Action);
         category = "surgery";
         treatmentLocations = QGVAR(chestTubeLocation);
-        allowedSelections[] = {"Body"};
+        allowedSelections[] = {"Chest"};
         allowSelfTreatment = 0;
         medicRequired = QGVAR(chestTubeAction_MedLevel);
         treatmentTime = QGVAR(openTime);
@@ -387,7 +387,7 @@ class ACE_Medical_Treatment_Actions {
         displayNameProgress = CSTRING(Scalpel_Action);
         category = "surgery";
         treatmentLocations = QGVAR(surgicalLocation);
-        allowedSelections[] = {"Body"};
+        allowedSelections[] = {"Chest"};
         allowSelfTreatment = 0;
         medicRequired = QGVAR(surgicalAction_MedLevel);
         treatmentTime = QGVAR(incisionTime);
@@ -406,7 +406,7 @@ class ACE_Medical_Treatment_Actions {
         category = "surgery";
         treatmentLocations = QGVAR(surgicalLocation);
         treatmentTime = QGVAR(ChestTubeintermediateTime);
-        allowedSelections[] = {"Body"};
+        allowedSelections[] = {"Chest"};
         allowSelfTreatment = 0;
         medicRequired = QGVAR(surgicalAction_MedLevel);
         items[] = {"kat_retractor"};
@@ -425,7 +425,7 @@ class ACE_Medical_Treatment_Actions {
         category = "surgery";
         treatmentLocations = QGVAR(surgicalLocation);
         treatmentTime = QGVAR(ChestTubeintermediateTime);
-        allowedSelections[] = {"Body"};
+        allowedSelections[] = {"Chest"};
         allowSelfTreatment = 0;
         medicRequired = QGVAR(surgicalAction_MedLevel);
         items[] = {"kat_clamp"};
