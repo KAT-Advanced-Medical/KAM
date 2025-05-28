@@ -27,7 +27,7 @@ if (_className in ["syringe_lidocaine_5ml_1", "syringe_lidocaine_5ml_3"]) exitWi
                 [_idPFH] call CBA_fnc_removePerFrameHandler;
             };
                 private _partIndex = ALL_BODY_PARTS find toLower _bodyPart;
-                _localAnesthesia = GET_LOCAL_ANESTHESIA(_patient,_partIndex);
+                _localAnesthesia = (_patient getVariable [QEGVAR(pharma,localAnesthesia), [0,0,0,0,0,0,0,0,0,0,0,0]]) select _partIndex;
                 _localAnesthesia = _localAnesthesia + 0.2;
                 _patient setVariable [VAR_LOCAL_ANESTHESIA, _localAnesthesia, true];
                 if (_lidocaineTarget > 5) exitWith {
@@ -47,7 +47,7 @@ if (_className in ["syringe_lidocaine_5ml_1", "syringe_lidocaine_5ml_3"]) exitWi
                 [_idPFH] call CBA_fnc_removePerFrameHandler;
             };
                 private _partIndex = ALL_BODY_PARTS find toLower _bodyPart;
-                _localAnesthesia = GET_LOCAL_ANESTHESIA(_patient,_partIndex);
+                _localAnesthesia = (_patient getVariable [QEGVAR(pharma,localAnesthesia), [0,0,0,0,0,0,0,0,0,0,0,0]]) select _partIndex;
                 _localAnesthesia = _localAnesthesia - 0.05;
                 _patient setVariable [VAR_LOCAL_ANESTHESIA, _localAnesthesia, true];
                 if (_lidocaineTarget > 20) exitWith {
