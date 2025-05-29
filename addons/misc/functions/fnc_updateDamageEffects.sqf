@@ -136,7 +136,11 @@ if ((_unit getVariable [QEGVAR(hitpoints,pelvicFracture), 0]) > 0) then {
     _keepProne = true;
 };
 
-
+if ((_unit getVariable [QEGVAR(hitpoints,pelvicFracture), 0]) < 0) then {
+    _isLimping = true;
+    _noJog = true;
+    _noSprint = true;
+};
 
 private _hasLegDislocationInjury = _legJointArray findIf {_x findIf {_x in [3, 6]} != -1} != -1;
 private _hasLegSprainInjury = _legJointArray findIf {_x findIf {_x in [1, 4, 7]} != -1} != -1;
