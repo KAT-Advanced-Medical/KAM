@@ -208,3 +208,7 @@
 
 // Ignore UAV/Drone AI Base Classes
 #define IGNORE_BASE_UAVPILOTS "B_UAV_AI", "O_UAV_AI", "UAV_AI_base_F"
+
+#define VAR_SPO2              QEGVAR(medical,spo2)
+#define DEFAULT_SPO2 97
+#define VAR_OXYGEN_DEMAND     QEGVAR(medical,oxygenDemand)
