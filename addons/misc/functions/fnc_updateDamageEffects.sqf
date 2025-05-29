@@ -28,6 +28,7 @@ private _keepProne = false;
 private _holsterWeapon = false;
 private _aimFracture = 0;
 private _armJointArray = GET_JOINTS(_unit) select [0, 2];
+private _legJointArray = GET_JOINTS(_unit) select [2, 2];
 _unit setVariable [QGVAR(keepProne), _keepProne, true];
 _unit setVariable [QGVAR(holsterWeapon), _holsterWeapon, true];
 if (ACEGVAR(medical,fractures) > 0) then {
@@ -142,7 +143,7 @@ private _hasLegSprainInjury = _legJointArray findIf {_x findIf {_x in [1, 4, 7]}
 private _hasLegStrainInjury = _legJointArray findIf {_x findIf {_x in [2, 5, 8]} != -1} != -1;
 private _hasArmDislocationInjury = _armJointArray findIf {_x findIf {_x in [3, 6]} != -1} != -1;
 private _hasArmJointInjury = _armJointArray findIf {_x findIf {_x != 0} != -1} != -1;
-TRACE_6("HasInjury",_hasLegJointInjury,_hasLegDislocationInjury,_hasArmDislocationInjury,_hasArmJointInjury,_legJointArray,_armJointArray);
+TRACE_7("HasInjury",_hasLegSprainInjury,_hasLegStrainInjury,_hasLegDislocationInjury,_hasArmDislocationInjury,_hasArmJointInjury,_legJointArray,_armJointArray);
 if (_hasLegStrainInjury) then {
     _noSprint = true;
 };
@@ -194,7 +195,7 @@ _unit setVariable [QGVAR(keepProne), _keepProne, true];
 [{
         _this params ["_args", "_pfhID"];
         _args params ["_unit"];
-        if (!alive _unit || {!(_unit getVariable [QGVAR(keepProne), false])}) then {
+        if (!alive _unit || {!(_unit getVariable [QGVAR(keepProne), false])} || (_unit != ACE_player)) exitWith {
             _pfhID call CBA_fnc_removePerFrameHandler;
         };
         private _state = animationState _unit;
@@ -202,6 +203,7 @@ _unit setVariable [QGVAR(keepProne), _keepProne, true];
         if ((_state find "pne") == -1) then {
             _unit playActionNow "PlayerProne";
             TRACE_2("State2",_state,_unit);
+
         };
 }, 0.05, [_unit]] call CBA_fnc_addPerFrameHandler;
 
