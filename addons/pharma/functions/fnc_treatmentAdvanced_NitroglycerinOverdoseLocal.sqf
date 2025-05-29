@@ -15,7 +15,6 @@
  * Public: No
  */
 params ["_patient"];
-systemChat str "NitroOverdose";
 private _hrValue = [-20, -25, -30, -35, -40, -45, 20, 25, 30, 35, 40, 45];
 private _hrAdjust = selectRandom _hrValue;
 

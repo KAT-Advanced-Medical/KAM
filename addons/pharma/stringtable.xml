@@ -4817,7 +4817,8 @@
             <English>Enable Advanced Medication System</English>
         </Key>
         <Key ID="STR_KAT_Pharma_advancedMedicationSystem_Desc">
-            <English>Enables Advanced Medication System and disables Basic System</English>
+            <English>Enables Advanced Medication System and disables Basic System
+            REQUIRED: Medications Require IV/IO, Fluid Require inserted IV/IO</English>
         </Key>
         <Key ID="STR_KAT_Pharma_SubCategory_Morphine">
             <English>KAT Morphine Settings</English>

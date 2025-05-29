@@ -15,7 +15,6 @@
  * Public: No
  */
 params ["_patient"];
-systemChat str "ALteplaseLocal";
 private _medicationArray = _patient getVariable [QACEGVAR(medical,medications), []];
 {
     _x params ["_medication"];
