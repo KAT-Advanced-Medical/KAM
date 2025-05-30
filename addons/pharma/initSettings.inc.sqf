@@ -1077,6 +1077,24 @@
 ] call CBA_Settings_fnc_init;
 
 [
+    QGVAR(medLvl_Caffeine),
+    "LIST",
+    [LLSTRING(medLvl_Caffeine)],
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_Caffeine)],
+    [[0, 1, 2], [ACELSTRING(medical_treatment,Anyone), ACELSTRING(medical_treatment,Medics), ACELSTRING(medical_treatment,Doctors)], 0],
+    true
+] call CBA_fnc_addSetting;
+
+[
+    QGVAR(treatmentTime_Caffeine),
+    "SLIDER",
+    [LLSTRING(treatmentTime_Caffeine)],
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_Caffeine)],
+    [0.1, 10, 7, 1],
+    true
+] call CBA_fnc_addSetting;
+
+[
     QGVAR(medLvl_morphineIM),
     "LIST",
     [LLSTRING(medLvl_MorphineIM)],
