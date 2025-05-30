@@ -296,6 +296,8 @@
 #define DEFAULT_ISP 10000
 #define DEFAULT_BODY_FLUID [2700, 3300, 500, 10000, 6000]
 
+#define DEFAULT_BLOOD_PRESSURE [80, 120]
+
 #define LITERS_TO_ML 1000
 #define ML_TO_LITERS 1000
 
@@ -329,6 +331,7 @@
 
 #define VAR_BODY_FLUID                 QEGVAR(circulation,bodyFluid)
 #define GET_BODY_FLUID(unit)           (unit getVariable [VAR_BODY_FLUID, DEFAULT_BODY_FLUID])
+
 
 #define GET_BLOOD_VOLUME_LITERS(unit)  ((GET_BODY_FLUID(unit) select 4) / 1000)
 #define GET_BLOOD_VOLUME_ML(unit)      (GET_BODY_FLUID(unit) select 4)
@@ -481,3 +484,4 @@
 
 #define GET_JOINTS(unit)   (unit getVariable [VAR_JOINTS, DEFAULT_JOINT_VALUES])
 #define GET_LIMB_JOINT(unit,jointindex)   ((unit getVariable [VAR_JOINTS, DEFAULT_JOINT_VALUES]) select _jointindex)
+

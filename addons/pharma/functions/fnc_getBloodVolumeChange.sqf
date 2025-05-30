@@ -21,7 +21,8 @@ params ["_unit", "_deltaT", "_syncValues"];
 
 private _bloodLoss = [_unit] call ACEFUNC(medical_status,getBloodLoss);
 private _internalBleeding = GET_INTERNAL_BLEEDING(_unit);
-private _lossVolumeChange = (-_deltaT * ((_bloodLoss + _internalBleeding * (GET_HEART_RATE(_unit) / DEFAULT_HEART_RATE)) / GET_VASOCONSTRICTION(_unit)));
+private _defaultHeartRate = _unit getVariable [QEGVAR(circulation,defaultHeartRate), 80];
+private _lossVolumeChange = (-_deltaT * ((_bloodLoss + _internalBleeding * (GET_HEART_RATE(_unit) / _defaultHeartRate)) / GET_VASOCONSTRICTION(_unit)));
 private _enableFluidShift = EGVAR(vitals,enableFluidShift);
 private _fluidVolume = GET_BODY_FLUID(_unit);
 _fluidVolume params ["_ECB","_ECP","_SRBC","_ISP","_fullVolume"];
