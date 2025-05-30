@@ -2,6 +2,8 @@ PREP(addMedicationAdjustment);
 PREP(basicDiagnostic);
 PREP(basicDiagnosticLocal);
 PREP(fullHealLocal);
+PREP(getCardiacOutput);
+PREP(getDefaultStrokeVolume);
 PREP(getStrokeVolume);
 PREP(handleCardiacFunction);
 PREP(handleOxygenFunction);

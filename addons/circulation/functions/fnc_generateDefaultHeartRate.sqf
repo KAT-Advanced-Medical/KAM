@@ -18,7 +18,7 @@
 
 params ["_unit"];
 
-private _defaultHeartRate = 80;
+private _defaultHeartRate = 90;
 private _playerdefaultHeartRate = _unit getVariable [QGVAR(defaultHeartRate), _defaultHeartRate];
 
 if (isMultiplayer) then {

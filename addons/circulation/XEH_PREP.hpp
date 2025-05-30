@@ -41,7 +41,6 @@ PREP(drawArterial);
 PREP(drawBlood);
 PREP(fullHealLocal);
 PREP(generateBloodType);
-PREP(generateDefaultBloodPressure);
 PREP(generateDefaultHeartRate);
 PREP(getBloodPressure);
 PREP(getCardiacArrestHeartRate);
