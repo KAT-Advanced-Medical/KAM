@@ -45,6 +45,9 @@ class CfgFunctions {
             class canStitch {
                 file = QPATHTOF(functions\fnc_canStitch.sqf);
             };
+            class stitchWound {
+                file = QPATHTOF(functions\fnc_stitchWound.sqf);
+            };
         };
     };
     class ace_medical {
