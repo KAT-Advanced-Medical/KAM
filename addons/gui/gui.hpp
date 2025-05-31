@@ -582,12 +582,12 @@ class ACE_Medical_Menu {
             };
             class ChestSubtractFull: HeadSubtractFull {
                 idc = IDC_IV_FLOW_CHESTSUBTRACTFULL; // LOOK HERE
-                onButtonClick = QUOTE([ARR_3(ACEGVAR(medical_gui,target),3,-0.5)] call FUNC(handleIVAdjust));
+                onButtonClick = QUOTE([ARR_3(ACEGVAR(medical_gui,target),2,-0.5)] call FUNC(handleIVAdjust));
                 y = QUOTE(POS_Y(5));
             };
             class ChestSubtract: HeadSubtract {
                 idc = IDC_IV_FLOW_CHESTSUBTRACT; // LOOK HERE
-                onButtonClick = QUOTE([ARR_3(ACEGVAR(medical_gui,target),3,-0.1)] call FUNC(handleIVAdjust));
+                onButtonClick = QUOTE([ARR_3(ACEGVAR(medical_gui,target),2,-0.1)] call FUNC(handleIVAdjust));
                 y = QUOTE(POS_Y(5));
             };
             class ChestIVValue: HeadIVValue {
@@ -600,12 +600,12 @@ class ACE_Medical_Menu {
             };
             class ChestAdd: HeadAdd {
                 idc = IDC_IV_FLOW_CHESTADD; // LOOK HERE
-                onButtonClick = QUOTE([ARR_3(ACEGVAR(medical_gui,target),3,0.1)] call FUNC(handleIVAdjust));
+                onButtonClick = QUOTE([ARR_3(ACEGVAR(medical_gui,target),2,0.1)] call FUNC(handleIVAdjust));
                 y = QUOTE(POS_Y(5));
             };
             class ChestAddFull: HeadAddFull {
                 idc = IDC_IV_FLOW_CHESTADDFULL; // LOOK HERE
-                onButtonClick = QUOTE([ARR_3(ACEGVAR(medical_gui,target),3,0.5)] call FUNC(handleIVAdjust));
+                onButtonClick = QUOTE([ARR_3(ACEGVAR(medical_gui,target),2,0.5)] call FUNC(handleIVAdjust));
                 y = QUOTE(POS_Y(5));
             };
 

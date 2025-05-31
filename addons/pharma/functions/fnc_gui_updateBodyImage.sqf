@@ -43,7 +43,7 @@ private _controls = [_ctrlIVLeftArm, _ctrlIVRightArm, _ctrlIVLeftLeg, _ctrlIVRig
     };
 } forEach _controls;
 
-if ((_IVArray select 3) isEqualTo 1) then {
+if ((_IVArray select 2) isEqualTo 1) then {
     _ctrlIO ctrlShow true;
 } else {
     _ctrlIO ctrlShow false;

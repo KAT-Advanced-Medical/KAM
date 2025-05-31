@@ -22,8 +22,10 @@ params ["_unit"];
 private _bleedingBodyParts = createHashMap;
 {
     private _isBleeding = _y findIf {
-        _x params ["", "_amountOf", "_bleedingRate"];
-        _amountOf > 0 && {_bleedingRate > 0}
+        _x params ["_woundClassID", "_amountOf", "_bleedingRate"];
+        private _classIndex = _woundClassID / 10;
+        private _className = ACEGVAR(medical_damage,woundClassNames) select _classIndex;
+        (_amountOf > 0 && {_bleedingRate > 0} && !(_className in ["InternalBleeding", "Evisceration"]));
     } != -1;
 
     if (_isBleeding) then {
