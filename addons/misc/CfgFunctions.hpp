@@ -42,6 +42,9 @@ class CfgFunctions {
             class handleBandageOpening {
                 file = QPATHTOF(functions\fnc_handleBandageOpening.sqf);
             };
+            class canStitch {
+                file = QPATHTOF(functions\fnc_canStitch.sqf);
+            };
         };
     };
     class ace_medical {
