@@ -3919,6 +3919,13 @@
             <German>Anwendungszeit für Koffein</German>
             <Italian>Tempo di trattamento per la Caffeina</Italian>
         </Key>
+        <Key ID="STR_KAT_Pharma_medLvl_Caffeine">
+            <English>Allow using Caffeine</English>
+            <French>Autoriser l'utilisation de la caféine</French>
+            <Japanese>カフェインの許可</Japanese>
+            <German>Erlaube die Verwendung von Koffein</German>
+            <Italian>Consenti l'uso della caffeina</Italian>
+        </Key>
         <Key ID="STR_KAT_Pharma_CheckCoag_slightly_aboveINR">
             <English>Sligtly Above normal INR</English>
             <Japanese>正常INRより少し高い</Japanese>

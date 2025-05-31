@@ -17,3 +17,12 @@
     [true],
     true
 ] call CBA_fnc_addSetting;
+
+[
+    QGVAR(effectOverdose),
+    "CHECKBOX",
+    [LLSTRING(SETTING_effectOverdose_display), LLSTRING(SETTING_effectOverdose_DESC)],
+    CBA_SETTINGS_CAT,
+    [true],
+    true
+] call CBA_fnc_addSetting;
