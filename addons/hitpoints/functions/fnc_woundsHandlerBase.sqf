@@ -186,7 +186,7 @@ private _bodyPartVisParams = [_unit, false, false, false, false]; // params arra
             _x params ["_classID", "_oldAmountOf", "_oldBleeding", "_oldDamage"];
             if (
                     (_classComplex == _classID) &&
-                    {(_bodyPart isNotEqualTo "body") || {(_woundDamage < PENETRATION_THRESHOLD) isEqualTo (_oldDamage < PENETRATION_THRESHOLD)}} && 
+                    {(_bodyPart isNotEqualTo "") || {(_woundDamage < PENETRATION_THRESHOLD) isEqualTo (_oldDamage < PENETRATION_THRESHOLD)}} && 
                     {(_bodyPartNToAdd > 7) || {!_causeLimping} || {(_woundDamage <= LIMPING_DAMAGE_THRESHOLD) isEqualTo (_oldDamage <= LIMPING_DAMAGE_THRESHOLD)}} // ensure limping damage is stacked correctly
                     ) exitWith {
                 TRACE_2("merging with existing wound",_injury,_x);
