@@ -16,7 +16,7 @@
  */
 
 params ["_unit"];
-
+private _heartRate = GET_HEART_RATE(_unit);
 private _cardiacOutput = ([_unit] call FUNC(getStrokeVolume)) * _heartRate / 60;
-
+TRACE_1("cardicaOutput",_cardiacOutput);
 0 max _cardiacOutput

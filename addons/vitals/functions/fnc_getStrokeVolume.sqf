@@ -33,12 +33,12 @@ private _cvp = (_defaultCVP * _heartRateRatio * _bloodVolumeRatio * (1 + _ptxNor
 private _afterload = ((_bloodPressure select 1) / (DEFAULT_BLOOD_PRESSURE select 1)) * _vasoconstriction * _bloodVolumeRatio;
 private _contractility = _unit getVariable [QEGVAR(pharma,heartContractility), 1];
 
-private _fillTime = _defaultHeartRate / _heartRate;
+private _fillTime = _defaultHeartRate / (_heartRate max 0.05);
 private _fillPortion = 1 - exp (-3 * _fillTime);
 private _edv = _fillPortion * _cvp * 1.4 * _strokeVolume;
 
 private _esv = (_afterload/_contractility) * (0.5 * _strokeVolume);
 
 private _strokeVol = (_edv - _esv) max 0;
-
+TRACE_7("strokeVolume",_edv,_strokeVol,_esv,_cvp,_defaultHeartRate,_heartRate,_fillTime);
 _strokeVol
