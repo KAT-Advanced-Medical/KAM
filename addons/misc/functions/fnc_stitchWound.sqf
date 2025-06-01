@@ -22,41 +22,41 @@ params ["_patient", "_bodyPart", ["_treatedWound", []]];
 private _bandagedWounds = GET_BANDAGED_WOUNDS(_patient);
 private _bandagedWoundsOnPart = _bandagedWounds getOrDefault [_bodyPart, []];
 
-// Get the first stitchable wound from bandaged wounds, or make sure the passed wound exists
-private _bandagedIndex = (count _bandagedWoundsOnPart) - 1;
+private _bandagedIndex = -1;
+
 if (_treatedWound isEqualTo []) then {
-    _treatedWound = _bandagedWoundsOnPart param [_bandagedIndex, _treatedWound];
+    {
+        private _candidate = _x;
+        _candidate params ["_id"];
+        private _classIndex = _id / 10;
+        private _className = ACEGVAR(medical_damage,woundClassNames) select _classIndex;
+
+        if !(_className in ["InternalBleeding", "Evisceration"]) exitWith {
+            _treatedWound = _candidate;
+            _bandagedIndex = _forEachIndex;
+        };
+    } forEach _bandagedWoundsOnPart;
 } else {
     _bandagedIndex = _bandagedWoundsOnPart find _treatedWound;
+    if (_bandagedIndex != -1) then {
+        _treatedWound params ["_treatedID"];
+        private _classIndex = _treatedID / 10;
+        private _className = ACEGVAR(medical_damage,woundClassNames) select _classIndex;
+
+        if (_className in ["InternalBleeding", "Evisceration"]) exitWith { false };
+    };
 };
+
+
 
 // Wound doesn't exist or there are no bandaged wounds to stitch
 if (_bandagedIndex == -1) exitWith {false};
 
 // Remove the wound from bandagedWounds
-private _treatedWound = _bandagedWoundsOnPart select (count _bandagedWoundsOnPart - 1);
-_treatedWound params ["_treatedID", "_treatedAmountOf", "", "_treatedDamageOf"];
-private _classIndex = _treatedID / 10;
-private _className = ACEGVAR(medical_damage,woundClassNames) select _classIndex;
-if !(_className in ["InternalBleeding", "Evisceration"]) then {
-    _bandagedWoundsOnPart deleteAt _bandagedIndex;
-} else {
-    private _bandagedIndex = (count _bandagedWoundsOnPart - 2);
-    private _treatedWound = _bandagedWoundsOnPart select (count _bandagedWoundsOnPart - 1);
-    _treatedWound params ["_treatedID", "_treatedAmountOf", "", "_treatedDamageOf"];
-    private _classIndex = _treatedID / 10;
-    private _className = ACEGVAR(medical_damage,woundClassNames) select _classIndex;
-    if !(_className in ["InternalBleeding", "Evisceration"]) then {
-        _bandagedWoundsOnPart deleteAt _bandagedIndex;
-    } else {
-        private _bandagedIndex = (count _bandagedWoundsOnPart - 3);
-        private _treatedWound = _bandagedWoundsOnPart select (count _bandagedWoundsOnPart - 1);
-        _treatedWound params ["_treatedID", "_treatedAmountOf", "", "_treatedDamageOf"];
-        _bandagedWoundsOnPart deleteAt _bandagedIndex;
-    };
-};
+_bandagedWoundsOnPart deleteAt _bandagedIndex;
 
 _treatedWound params ["_treatedID", "_treatedAmountOf", "", "_treatedDamageOf"];
+
 
 // Check if we need to add a new stitched wound or increase the amount of an existing one
 private _stitchedWounds = GET_STITCHED_WOUNDS(_patient);
