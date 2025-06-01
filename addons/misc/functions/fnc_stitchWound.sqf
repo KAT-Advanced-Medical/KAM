@@ -76,7 +76,7 @@ if (_stitchedIndex == -1) then {
 
 if (GVAR(clearTrauma) == 1) then {
     TRACE_2("trauma - clearing trauma after stitching",_bodyPart,_treatedWound);
-    [_patient, _bodyPart, -(_treatedDamageOf * _treatedAmountOf)] call FUNC(addTrauma);
+    [_patient, _bodyPart, -(_treatedDamageOf * _treatedAmountOf)] call ACEFUNC(medical_treatment,addTrauma);
 };
 
 _patient setVariable [VAR_BANDAGED_WOUNDS, _bandagedWounds, true];
@@ -84,9 +84,9 @@ _patient setVariable [VAR_STITCHED_WOUNDS, _stitchedWounds, true];
 
 // Check if we fixed limping by stitching this wound (only for leg wounds)
 if (
-    EGVAR(medical,limping) == 2
+    ACEGVAR(medical,limping) == 2
     && {_patient getVariable [QEGVAR(medical,isLimping), false]}
-    && {_bodyPart in ["leftleg", "rightleg"]}
+    && {_bodyPart in ["leftleg", "rightleg", "upperleftleg", "upperrightleg"]}
 ) then {
     TRACE_3("Updating damage effects",_patient,_bodyPart,local _patient);
     [QEGVAR(medical_engine,updateDamageEffects), _patient, _patient] call CBA_fnc_targetEvent;

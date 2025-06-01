@@ -21,9 +21,10 @@ params ["", "_patient", "_bodyPart"];
 
 private _woundCount = 0;
 { // ace_medical_treatment_fnc_canBandage
-    _x params ["_id", "_amountOf", "_bleeding"]; 
-    
-    if (_amountOf * _bleeding > 0) then {
+    _x params ["_woundClassID", "_amountOf", "_bleeding"];
+    private _classIndex = _woundClassID / 10;
+    private _className = ACEGVAR(medical_damage,woundClassNames) select _classIndex;
+    if (_amountOf * _bleeding > 0 && !(_classname in ["InternalBleeding"])) then {
         _woundCount = _woundCount + 1;
     };
 } forEach ((GET_OPEN_WOUNDS(_patient)) getOrDefault [_bodyPart, []]);

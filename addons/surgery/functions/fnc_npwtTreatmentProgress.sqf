@@ -38,29 +38,18 @@ if (_isBleeding) then {
     [QACEGVAR(medical_treatment,bandageLocal), [_patient, _bodyPart, "Dressing"], _patient] call CBA_fnc_targetEvent; //TODO replace this
 };
 
-if (_bodypart isEqualTo "Body" && (QGVAR(EviscerationChance) > 0)) then {
-    _patient setVariable [QGVAR(evisceration), 0, true];
-    _patient setVariable [QGVAR(activeWoundPack), 2, true];
-};
-
 private _bandagedWounds = GET_BANDAGED_WOUNDS(_patient);
 private _bandagedWoundsOnPart = _bandagedWounds get _bodyPart;
 
 if (_bandagedWoundsOnPart isEqualTo []) exitWith {false};
 
-// Remove the first stitchable wound from the bandaged wounds
-{
-    private _candidate = _x;
-    _candidate params ["_id"];
-    private _classIndex = _id / 10;
-    private _className = ACEGVAR(medical_damage,woundClassNames) select _classIndex;
+if (_bodypart isEqualTo "Body" && (EGVAR(hitpoints,EviscerationChance) > 0)) then {
+    _patient setVariable [QGVAR(evisceration), 0, true];
+    _patient setVariable [QGVAR(activeWoundPack), 2, true];
+};
 
-    if !(_className in ["InternalBleeding"]) exitWith {
-        _treatedWound = _candidate;
-        _bandagedIndex = _forEachIndex;
-    };
-} forEach _bandagedWoundsOnPart;
-_bandagedWoundsOnPart deleteAt _bandagedIndex;
+// Remove the first stitchable wound from the bandaged wounds
+private _treatedWound = _bandagedWoundsOnPart deleteAt (count _bandagedWoundsOnPart - 1);
 _treatedWound params ["_treatedID", "_treatedAmountOf", "", "_treatedDamageOf"];
 
 // Check if we need to add a new stitched wound or increase the amount of an existing one
@@ -83,8 +72,9 @@ _patient setVariable [VAR_BANDAGED_WOUNDS, _bandagedWounds, true];
 _patient setVariable [VAR_STITCHED_WOUNDS, _stitchedWounds, true];
 
 private _partIndex = ALL_BODY_PARTS find _bodyPart;
-private _bodyPartDamage = _patient getVariable [QACEGVAR(medical,bodyPartDamage), []];
+private _bodyPartDamage = GET_BODYPART_DAMAGE(_patient);
 private _damage = (_bodyPartDamage select _partIndex) - (_treatedDamageOf * _treatedAmountOf);
+TRACE_5("_treatedWound",_treatedWound,_bodyPartDamage,_partIndex,_treatedDamageOf,_treatedAmountOf);
 if (_damage < 0.05) then {
     _bodyPartDamage set [_partIndex, 0];
 } else {
