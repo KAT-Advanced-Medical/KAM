@@ -21,9 +21,10 @@ _args params ["_medic", "_patient", "_bodyPart"];
 
 private _isBleeding = false;
 { // ace_medical_treatment_fnc_canBandage
-    _x params ["", "_amountOf", "_bleeding"]; 
-    
-    if (_amountOf * _bleeding > 0) exitWith {
+    _x params ["_woundClassID", "_amountOf", "_bleeding"];
+    private _classIndex = _woundClassID / 10;
+    private _className = ACEGVAR(medical_damage,woundClassNames) select _classIndex;
+    if (_amountOf * _bleeding > 0 && !(_classname in ["InternalBleeding"])) exitWith {
         _isBleeding = true;
     };
 } forEach ((GET_OPEN_WOUNDS(_patient)) getOrDefault [_bodyPart, []]);
@@ -37,7 +38,7 @@ if (_isBleeding) then {
     [QACEGVAR(medical_treatment,bandageLocal), [_patient, _bodyPart, "Dressing"], _patient] call CBA_fnc_targetEvent; //TODO replace this
 };
 
-if (_bodypart isEqualTo "Body") then {
+if (_bodypart isEqualTo "Body" && (QGVAR(EviscerationChance) > 0)) then {
     _patient setVariable [QGVAR(evisceration), 0, true];
     _patient setVariable [QGVAR(activeWoundPack), 2, true];
 };
@@ -48,7 +49,18 @@ private _bandagedWoundsOnPart = _bandagedWounds get _bodyPart;
 if (_bandagedWoundsOnPart isEqualTo []) exitWith {false};
 
 // Remove the first stitchable wound from the bandaged wounds
-private _treatedWound = _bandagedWoundsOnPart deleteAt (count _bandagedWoundsOnPart - 1);
+{
+    private _candidate = _x;
+    _candidate params ["_id"];
+    private _classIndex = _id / 10;
+    private _className = ACEGVAR(medical_damage,woundClassNames) select _classIndex;
+
+    if !(_className in ["InternalBleeding"]) exitWith {
+        _treatedWound = _candidate;
+        _bandagedIndex = _forEachIndex;
+    };
+} forEach _bandagedWoundsOnPart;
+_bandagedWoundsOnPart deleteAt _bandagedIndex;
 _treatedWound params ["_treatedID", "_treatedAmountOf", "", "_treatedDamageOf"];
 
 // Check if we need to add a new stitched wound or increase the amount of an existing one

@@ -2966,7 +2966,12 @@ class ACE_Medical_Treatment {
             class ThermalBurnMedium: ThermalBurn {};
             class ThermalBurnLarge: ThermalBurn {};
 
-            class InternalBleeding: Abrasion {};
+            class InternalBleeding: Abrasion {
+                effectiveness = 0;
+                reopeningChance = 0;
+                reopeningMinDelay = 120;
+                reopeningMaxDelay = 200;
+            };
             class InternalBleedingMinor: InternalBleeding {};
             class InternalBleedingMedium: InternalBleeding {};
             class InternalBleedingLarge: InternalBleeding {};

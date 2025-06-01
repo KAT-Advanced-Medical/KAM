@@ -24,13 +24,29 @@ private _openWounds = GET_OPEN_WOUNDS(_patient) getOrDefault [_bodyPart, []];
 private _isBleeding = false;
 
 if (_openWounds isNotEqualTo []) then {
-    { // ace_medical_treatment_fnc_canBandage
-        _x params ["", "_amountOf", "_bleeding"]; 
-        
-        if (_amountOf * _bleeding > 0) exitWith {
+    { // ace_medical_treatment_fnc_canBandage 
+        _x params ["_woundClassID", "_amountOf", "_bleeding"];
+        private _classIndex = _woundClassID / 10;
+        private _className = ACEGVAR(medical_damage,woundClassNames) select _classIndex;
+        if (_amountOf * _bleeding > 0 && !(_classname in ["InternalBleeding"])) exitWith {
             _isBleeding = true;
         };
     } forEach _openWounds;
 };
 
-(_isBleeding || (GET_BANDAGED_WOUNDS(_patient) getOrDefault [_bodyPart, []] isNotEqualTo []));
+private _bandagedWounds = GET_BANDAGED_WOUNDS(_patient) getOrDefault [_bodyPart, []];
+
+private _isNotInternal = false;
+
+if (_bandagedWounds isNotEqualTo []) then {
+    { // ace_medical_treatment_fnc_canBandage 
+        _x params ["_woundClassID"];
+        private _classIndex = _woundClassID / 10;
+        private _className = ACEGVAR(medical_damage,woundClassNames) select _classIndex;
+        if !(_classname in ["InternalBleeding"]) exitWith {
+            _isNotInternal = true;
+        };
+    } forEach _bandagedWounds;
+};
+
+(_isBleeding || _isNotInternal);
