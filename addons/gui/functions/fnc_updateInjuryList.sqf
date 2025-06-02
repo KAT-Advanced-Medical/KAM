@@ -73,7 +73,7 @@ if (_hasExternalBleeding) then {
         };
         case 3: {
             // Give a qualitative description of the rate of bleeding on a limb by limb basis
-            if ({HAS_LIMB_BLEEDING(_target,_selectionN)}) then {
+            if (HAS_LIMB_BLEEDING(_target,_selectionN)) then {
                 private _cardiacOutput = [_target] call ACEFUNC(medical_status,getCardiacOutput);
                 private _bleedRate = GET_BODY_PART_RATE(_target,_selectionN);
                 private _bleedRateKO = BLOOD_LOSS_KNOCK_OUT_THRESHOLD * (_cardiacOutput max 0.05);

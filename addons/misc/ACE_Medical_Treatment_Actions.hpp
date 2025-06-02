@@ -27,7 +27,7 @@ class ACE_Medical_Treatment_Actions {
     class FullBodySurgicalKit: SurgicalKit {
         displayName = CSTRING(Use_SurgicalKitFullBody);
         treatmentTime = QFUNC(getStitchTimeFullBody);
-        condition = "false";
+        condition = QFUNC(canStitchFullBody);
         callbackProgress = QFUNC(surgicalKitProgressFullBody);
     };
 };
