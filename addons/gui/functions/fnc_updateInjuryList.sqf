@@ -44,7 +44,7 @@ private _hasExternalBleeding = false;
 } forEach (keys _wounds);
 
 // Indicate if unit is bleeding at all
-if (_hasExternalBleeding && {HAS_LIMB_BLEEDING(_target,_selectionN)}) then {
+if (_hasExternalBleeding) then {
     switch (GVAR(showBleeding)) do {
         case 1: {
         //  Just show whether the unit is bleeding at all
@@ -73,22 +73,24 @@ if (_hasExternalBleeding && {HAS_LIMB_BLEEDING(_target,_selectionN)}) then {
         };
         case 3: {
             // Give a qualitative description of the rate of bleeding on a limb by limb basis
-            private _cardiacOutput = [_target] call ACEFUNC(medical_status,getCardiacOutput);
-            private _bleedRate = GET_BODY_PART_RATE(_target,_selectionN);
-            private _bleedRateKO = BLOOD_LOSS_KNOCK_OUT_THRESHOLD * (_cardiacOutput max 0.05);
-            // Use nonzero minimum cardiac output to prevent all bleeding showing as massive during cardiac arrest
-            switch (true) do {
-                case (_bleedRate < _bleedRateKO * BLEED_RATE_SLOW): {
-                    _entries pushBack [localize ACELSTRING(medical_gui,Bleed_Rate1), [1, 1, 0, 1]];
-                };
-                case (_bleedRate < _bleedRateKO * BLEED_RATE_MODERATE): {
-                    _entries pushBack [localize ACELSTRING(medical_gui,Bleed_Rate2), [1, 0.67, 0, 1]];
-                };
-                case (_bleedRate < _bleedRateKO * BLEED_RATE_SEVERE): {
-                    _entries pushBack [localize ACELSTRING(medical_gui,Bleed_Rate3), [1, 0.33, 0, 1]];
-                };
-                default {
-                    _entries pushBack [localize ACELSTRING(medical_gui,Bleed_Rate4), [1, 0, 0, 1]];
+            if ({HAS_LIMB_BLEEDING(_target,_selectionN)}) then {
+                private _cardiacOutput = [_target] call ACEFUNC(medical_status,getCardiacOutput);
+                private _bleedRate = GET_BODY_PART_RATE(_target,_selectionN);
+                private _bleedRateKO = BLOOD_LOSS_KNOCK_OUT_THRESHOLD * (_cardiacOutput max 0.05);
+                // Use nonzero minimum cardiac output to prevent all bleeding showing as massive during cardiac arrest
+                switch (true) do {
+                    case (_bleedRate < _bleedRateKO * BLEED_RATE_SLOW): {
+                        _entries pushBack [localize ACELSTRING(medical_gui,Bleed_Rate1), [1, 1, 0, 1]];
+                    };
+                    case (_bleedRate < _bleedRateKO * BLEED_RATE_MODERATE): {
+                        _entries pushBack [localize ACELSTRING(medical_gui,Bleed_Rate2), [1, 0.67, 0, 1]];
+                    };
+                    case (_bleedRate < _bleedRateKO * BLEED_RATE_SEVERE): {
+                        _entries pushBack [localize ACELSTRING(medical_gui,Bleed_Rate3), [1, 0.33, 0, 1]];
+                    };
+                    default {
+                        _entries pushBack [localize ACELSTRING(medical_gui,Bleed_Rate4), [1, 0, 0, 1]];
+                    };
                 };
             };
         };
