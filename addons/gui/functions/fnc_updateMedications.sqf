@@ -58,7 +58,7 @@ _syringeListBox ctrlAddEventHandler ["LBSelChanged", {
     if (_selectedSyringe == "") exitWith { systemChat "No syringe selected, Commander."; };
 
     private _salineIVWhitelist = [
-        "kat_epinephrineIV", "kat_morphineIV", "kat_etomidate"
+        "kat_epinephrineIV", "kat_morphineIV", "kat_etomidate", "kat_doxapram"
     ];
     private _5mlWhitelist = [
         "kat_amiodarone", "kat_atropine", "kat_EACA", "kat_epinephrineIV",
