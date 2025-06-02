@@ -63,8 +63,8 @@ private _bandagedWounds = GET_BANDAGED_WOUNDS(_target);
 
 private _exist = false;
 {
-    _x params ["_id", "_amountOf"];
-    if (_id == _classID) exitWith {
+    _x params ["_id", "_amountOf", "", "", "_oldBandage"];
+    if ((_id == _classID) && (_oldBandage == _bandage)) exitWith {
         _x set [1, _amountOf + _impact];
         TRACE_2("adding to existing bandagedWound",_id,_part);
         _exist = true;
@@ -75,6 +75,7 @@ if (!_exist) then {
     TRACE_2("adding new bandagedWound",_classID,_part);
     private _bandagedInjury = +_injury;
     _bandagedInjury set [1, _impact];
+    _bandagedInjury set [4, _bandage];
     (_bandagedWounds getOrDefault [_part, [], true]) pushBack _bandagedInjury;
 };
 
