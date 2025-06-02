@@ -848,7 +848,7 @@ class ACE_ADDON(Medical_Treatment) {
             timeInSystem = 360;
             timeTillMaxEffect = 15;
             dose = 3;
-            respiratoryRate = 0.2;
+            respiratoryRate = 0.3;
         };
         class syringe_alteplase_5ml_3 {
             painReduce = 0;
