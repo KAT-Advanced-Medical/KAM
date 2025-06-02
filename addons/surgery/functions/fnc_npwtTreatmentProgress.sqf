@@ -49,7 +49,20 @@ if (_bodypart isEqualTo "Body" && (EGVAR(hitpoints,EviscerationChance) > 0)) the
 };
 
 // Remove the first stitchable wound from the bandaged wounds
-private _treatedWound = _bandagedWoundsOnPart deleteAt (count _bandagedWoundsOnPart - 1);
+private _treatedWound = [];
+private _woundCount = count _bandagedWoundsOnPart;
+
+for "_i" from (_woundCount - 1) to 0 step -1 do {
+    private _wound = _bandagedWoundsOnPart select _i;
+    private _treatedID = _wound select 0;
+    private _classIndex = _treatedID / 10;
+    private _className = ACEGVAR(medical_damage,woundClassNames) select _classIndex;
+    if !(_className in ["InternalBleeding"]) then {
+        _treatedWound = _bandagedWoundsOnPart deleteAt _i;
+        break;
+    };
+};
+
 _treatedWound params ["_treatedID", "_treatedAmountOf", "", "_treatedDamageOf"];
 
 // Check if we need to add a new stitched wound or increase the amount of an existing one

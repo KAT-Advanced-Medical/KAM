@@ -56,10 +56,10 @@ private _bodyExternalPartBleeding = [0,0,0,0,0,0,0,0,0,0,0,0];
             private _className = ACEGVAR(medical_damage,woundClassNames) select _classIndex;
             if !(_className in ["InternalBleeding"]) then {
                 _bodyExternalPartBleeding set [_partIndex, _partBleeding];
+                TRACE_3("updateWoundBloodLossExternal",_partBleeding,_bodyExternalPartBleeding,_partIndex);
             };
         } forEach _y;
         _bodyPartBleeding set [_partIndex, _partBleeding];
-        _bodyExternalPartBleeding set [_partIndex, _partBleeding];
         TRACE_3("updateWoundBloodLoss",_partBleeding,_bodyPartBleeding,_partIndex);
         _unit setVariable [VAR_BODY_BLEED_RATE, _bodyExternalPartBleeding, true];
     };
