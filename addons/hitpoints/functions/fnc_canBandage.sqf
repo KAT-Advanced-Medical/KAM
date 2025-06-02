@@ -22,6 +22,8 @@
 private _wounds = (GET_OPEN_WOUNDS(_patient)) getOrDefault [_bodyPart, []];
 private _canBandage = false;
 
+if ((_bandage == "BasicBandage") isEqualTo (ACEGVAR(medical_treatment,advancedBandages) != 0)) exitWith {false};
+
 {
     _x params ["_woundClassID", "_amountOf", "_bleeding"];
 
