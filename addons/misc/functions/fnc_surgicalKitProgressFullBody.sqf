@@ -35,19 +35,18 @@ private _stitchedWounds = GET_STITCHED_WOUNDS(_patient);
 private _bodyPart = (keys _stitchableWounds) select 0;
 private _bandagedWoundsOnPart = _bandagedWounds get _bodyPart;
 private _treatedWound = [];
+private _woundCount = count _bandagedWoundsOnPart;
 
-{
-    private _candidate = _x;
-        _candidate params ["_id"];
-        private _classIndex = _id / 10;
-        private _className = ACEGVAR(medical_damage,woundClassNames) select _classIndex;
-
-        if !(_className in ["InternalBleeding", "Evisceration"]) exitWith {
-            _treatedWound = _candidate;
-            _bandagedIndex = _forEachIndex;
-            _bandagedWoundsOnPart deleteAt _bandagedIndex;
-        };
-    } forEach _bandagedWoundsOnPart;
+for "_i" from (_woundCount - 1) to 0 step -1 do {
+    private _wound = _bandagedWoundsOnPart select _i;
+    private _treatedID = _wound select 0;
+    private _classIndex = _treatedID / 10;
+    private _className = ACEGVAR(medical_damage,woundClassNames) select _classIndex;
+    if !(_className in ["InternalBleeding", "Evisceration"]) then {
+        _treatedWound = _bandagedWoundsOnPart deleteAt _i;
+        break;
+    };
+};
 _treatedWound params ["_treatedID", "_treatedAmountOf", "", "_treatedDamageOf"];
 
 // Check if we need to add a new stitched wound or increase the amount of an existing one
@@ -103,5 +102,3 @@ if (ACEGVAR(medical_treatment,consumeSurgicalKit) == 2) then {
 } else {
     true
 };
-
-false
