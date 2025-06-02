@@ -178,7 +178,7 @@ if (_hasLegDislocationInjury) then {
     _keepProne = true;
 };
 
-if (_hasLegSprainInjury && (random 100 > 50)) then {
+if (_hasLegJointInjury) then {
     _noSprint = true;
     _noJog = true;
     _isLimping = true;
