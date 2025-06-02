@@ -22,12 +22,19 @@ params ["_medic", "_patient", "_bodyPart"];
 _bodyPart = toLowerANSI _bodyPart;
 
 private _bandagedWounds = GET_BANDAGED_WOUNDS(_patient);
-private _bandagedWoundsOnPart = _bandagedWounds get _bodyPart;
-if (isNil "_bandagedWoundsOnPart" || {_bandagedWoundsOnPart isEqualTo []}) exitWith {
-    false};
 
-private _includedTypes = ["Compressed_Gauze", "fourByfour_Gauze", "Burn_Dressing", "Hemostatic_Gauze"];
+private _bandagedWoundsOnPart = _bandagedWounds getOrDefault [_bodyPart, []];
+if (_bandagedWoundsOnPart isEqualTo []) exitWith { false };
 
-(_bandagedWoundsOnPart findIf {
+private _includedTypes = [
+    "Compressed_Gauze",
+    "fourByfour_Gauze",
+    "Burn_Dressing",
+    "Hemostatic_Gauze"
+];
+
+private _hasIncludedBandage = _bandagedWoundsOnPart findIf {
     (_x param [4, ""]) in _includedTypes
-}) != -1
+} != -1;
+TRACE_2("canwrap",_hasIncludedBandage,_bandagedWoundsOnPart);
+_hasIncludedBandage
