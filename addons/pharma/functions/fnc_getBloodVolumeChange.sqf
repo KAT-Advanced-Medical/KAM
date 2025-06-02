@@ -23,7 +23,6 @@ private _bloodLoss = GET_BLOOD_LOSS(_unit);
 private _internalBleeding = GET_INTERNAL_BLEEDING(_unit);
 private _lossVolumeChange = (-_deltaT * ((_bloodLoss + _internalBleeding * (GET_HEART_RATE(_unit) / DEFAULT_HEART_RATE)) / GET_VASOCONSTRICTION(_unit)));
 private _enableFluidShift = EGVAR(vitals,enableFluidShift);
-TRACE_3("GBVC",_bloodLoss,_lossVolumeChange,_internalBleeding);
 private _fluidVolume = GET_BODY_FLUID(_unit);
 _fluidVolume params ["_ECB","_ECP","_SRBC","_ISP","_fullVolume"];
 

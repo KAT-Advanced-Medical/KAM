@@ -34,7 +34,7 @@ variantDelay = 0;
         [_idPFH] call CBA_fnc_removePerFrameHandler;
     };
 
-    private _tension = (_patient getVariable [QGVAR(tensionpneumothorax), [false, false]] select _side || (_patient getVariable [QGVAR(pneumothorax), [0,0] select _side] > 0));
+    private _tension = (_patient getVariable [QGVAR(tensionpneumothorax), [false, false]] select _side || (_patient getVariable [QGVAR(pneumothorax), [0,0]] select _side > 0));
     private _hemo = _patient getVariable [QGVAR(hemopneumothorax), [false, false]] select _side;
 
     _breathDelay = _BR;
