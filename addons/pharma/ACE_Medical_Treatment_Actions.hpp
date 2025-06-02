@@ -856,7 +856,7 @@ class ACE_Medical_Treatment_Actions {
     class syringe_lidocaine_10ml_1: syringe_TXA_10ml_1 {
         displayName = CSTRING(inject_lidocaine_IM_1);
         displayNameProgress = CSTRING(injecting_lidocaine_IM_1);
-        allowedSelections[] = {"LeftArm", "RightArm", "UpperLeftArm", "UpperRightArm", "UpperLeftLeg", "UpperRightLeg", "LeftLeg", "RightLeg"};
+        allowedSelections[] = {"Chest", "Body", "LeftArm", "RightArm", "UpperLeftArm", "UpperRightArm", "UpperLeftLeg", "UpperRightLeg", "LeftLeg", "RightLeg"};
         allowSelfTreatment = 1;
         medicRequired = QGVAR(medLvl_lidocaineIM);
         treatmentTime = QGVAR(treatmentTime_lidocaineIM);
