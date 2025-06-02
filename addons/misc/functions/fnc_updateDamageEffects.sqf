@@ -144,10 +144,11 @@ if ((_unit getVariable [QEGVAR(hitpoints,pelvicFracture), 0]) < 0) then {
 
 
 
-private _hasLegDislocationInjury = _legJointArray findIf {_x findIf {_x in [3, 6]} != -1} != -1;
+private _hasLegDislocationInjury = _legJointArray findIf {_x findIf {_x == 3} != -1} != -1;
+private _hasLegJointInjury = _legJointArray findIf {_x findIf {_x in [6, 9]} != -1} != -1;
 private _hasLegSprainInjury = _legJointArray findIf {_x findIf {_x in [1, 4, 7]} != -1} != -1;
 private _hasLegStrainInjury = _legJointArray findIf {_x findIf {_x in [2, 5, 8]} != -1} != -1;
-private _hasArmDislocationInjury = _armJointArray findIf {_x findIf {_x in [3, 6]} != -1} != -1;
+private _hasArmDislocationInjury = _armJointArray findIf {_x findIf {_x == 3} != -1} != -1;
 private _hasArmJointInjury = _armJointArray findIf {_x findIf {_x != 0} != -1} != -1;
 TRACE_7("HasInjury",_hasLegSprainInjury,_hasLegStrainInjury,_hasLegDislocationInjury,_hasArmDislocationInjury,_hasArmJointInjury,_legJointArray,_armJointArray);
 if (_hasLegStrainInjury) then {
@@ -175,6 +176,12 @@ if (_hasLegDislocationInjury) then {
     _noJog = true;
     _noSprint = true;
     _keepProne = true;
+};
+
+if (_hasLegSprainInjury && (random 100 > 50)) then {
+    _noSprint = true;
+    _noJog = true;
+    _isLimping = true;
 };
 
 if (_hasArmDislocationInjury) then {

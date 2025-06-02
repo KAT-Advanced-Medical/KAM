@@ -1079,7 +1079,7 @@ class ACE_ADDON(Medical_Treatment) {
         };
         class syringe_alteplase {
             maxDose = 3;
-            maxDoseDeviation = 0;
+            maxDoseDeviation = 1;
             incompatibleMedication[] = {};
             onOverDose = "";
         };
