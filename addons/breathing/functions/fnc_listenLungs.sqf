@@ -26,18 +26,17 @@ soundPlaying = false;
 variantDelay = 0;
 [{
     params ["_args", "_idPFH"];
-    _args params ["_medic","_patient","_volume"];
+    _args params ["_medic","_patient","_volume","_side"];
 
     private _BR = GET_BREATHING_RATE(_patient);
 
-    if (!(_medic getVariable [QGVAR(usingStethoscope), false]) || !(alive _patient) || _HR isEqualTo 0) exitWith {
+    if (!(_medic getVariable [QGVAR(usingStethoscope), false]) || !(alive _patient) || _BR isEqualTo 0) exitWith {
         [_idPFH] call CBA_fnc_removePerFrameHandler;
     };
+    private _tension = ((_patient getVariable [QGVAR(tensionpneumothorax), [false, false]]) select _side) || (((_patient getVariable [QGVAR(pneumothorax), [0,0]]) select _side) > 0);
+    private _hemo = (_patient getVariable [QGVAR(hemopneumothorax), [false, false]]) select _side;
 
-    private _tension = (_patient getVariable [QGVAR(tensionpneumothorax), [false, false]] select _side || (_patient getVariable [QGVAR(pneumothorax), [0,0]] select _side > 0));
-    private _hemo = _patient getVariable [QGVAR(hemopneumothorax), [false, false]] select _side;
-
-    _breathDelay = _BR;
+    _breathDelay = _BR/60;
 
     _random = round random 1;
 
@@ -125,4 +124,4 @@ variantDelay = 0;
             };
         };
     };
-}, 0, [_medic,_patient,_volume]] call CBA_fnc_addPerFrameHandler;
+}, 0, [_medic,_patient,_volume,_side]] call CBA_fnc_addPerFrameHandler;
