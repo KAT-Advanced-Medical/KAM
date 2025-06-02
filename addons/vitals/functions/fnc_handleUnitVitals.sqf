@@ -92,6 +92,7 @@ private _alphaFactorAdjustment = 0;
 private _opioidAdjustment = 0;
 private _opioidEffectAdjustment = 0;
 private _opioidDepressionAdjustment = 0;
+private _contractility = 0;
 private _adjustments = _unit getVariable [VAR_MEDICATIONS,[]];
 
 if (_adjustments isNotEqualTo []) then {
@@ -112,6 +113,7 @@ if (_adjustments isNotEqualTo []) then {
             if (_opioidEffect != 0) then {_opioidEffectAdjustment = _opioidEffectAdjustment + _opioidEffect * _effectRatio; };
             if (_opioidDepression != 0) then {_opioidDepressionAdjustment = _opioidAdjustment + _opioidDepression * _effectRatio; };
             if (_respiratoryRate != 0) then {_respiratoryRateAdjustment = _respiratoryRateAdjustment + _respiratoryRate * _effectRatio; };
+            if (_contractility != 0) then {_contractilityAdjustment = _contractilityAdjustment + _contractility * _effectRatio; };
         };
     } forEach _adjustments;
 
@@ -127,6 +129,7 @@ if (_adjustments isNotEqualTo []) then {
 [_unit, _opioidEffectAdjustment, _deltaT, _syncValues] call FUNC(updateOpioidEffect);
 [_unit, _opioidDepressionAdjustment, _deltaT, _syncValues] call FUNC(updateOpioidDepression);
 [_unit, _respiratoryRateAdjustment, _deltaT, _syncValues] call FUNC(updateRespiratoryRate);
+[_unit, _contractility, _deltaT, _syncValues] call FUNC(updateContractility);
 [_unit, POISON_DECREASE, _deltaT, _syncValues] call FUNC(handlePoisoning);
 
 private _aceAnFatigue = 0;
