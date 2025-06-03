@@ -426,7 +426,7 @@ class ACE_Medical_Treatment_Actions {
         displayNameProgress = CSTRING(Removing_IV);
         category = "advanced";
         allowedSelections[] = {"Chest", "LeftArm", "RightArm", "UpperLeftLeg", "UpperRightLeg"};
-        treatmentTime = 3;
+        treatmentTime = QGVAR(treatmentTime_ApplyIV);
         items[] = {};
         condition = QFUNC(removeIV);
         callbackSuccess = QFUNC(retrieveIV);
@@ -951,5 +951,45 @@ class ACE_Medical_Treatment_Actions {
         callbackFailure = "";
         callbackSuccess = QFUNC(treatmentAdvanced_CheckVein);
         litter[] = {};
+    };
+    class RemoveSaline: RemoveIV {
+        displayName = CSTRING(RemoveSaline);
+        displayNameProgress = CSTRING(RemovingSalineIV_Progress);
+        treatmentTime = QACEGVAR(medical_treatment,treatmentTimeIV);
+        consumeItem = 0;
+        condition = QUOTE([ARR_4(_player,_patient,_bodyPart,'Saline')] call FUNC(ivBagCheck));
+        callbackSuccess = QUOTE([ARR_4(_player,_patient,_bodyPart,'Saline')] call FUNC(removeIVBag));
+    };
+    class RemovePlasma: RemoveIV {
+        displayName = CSTRING(RemovePlasma);
+        displayNameProgress = CSTRING(RemovingPlasmaIV_Progress);
+        treatmentTime = QACEGVAR(medical_treatment,treatmentTimeIV);
+        consumeItem = 0;
+        condition = QUOTE([ARR_4(_player,_patient,_bodyPart,'Plasma')] call FUNC(ivBagCheck));
+        callbackSuccess = QUOTE([ARR_4(_player,_patient,_bodyPart,'Plasma')] call FUNC(removeIVBag));
+    };
+    class RemoveBlood: RemoveIV {
+        displayName = CSTRING(RemoveBlood);
+        displayNameProgress = CSTRING(RemovingBloodIV_Progress);
+        treatmentTime = QACEGVAR(medical_treatment,treatmentTimeIV);
+        consumeItem = 0;
+        condition = QUOTE([ARR_4(_player,_patient,_bodyPart,'Blood')] call FUNC(ivBagCheck));
+        callbackSuccess = QUOTE([ARR_4(_player,_patient,_bodyPart,'Blood')] call FUNC(removeIVBag));
+    };
+    class RemovePackedRBC: RemoveIV {
+        displayName = CSTRING(RemovePackedRBC);
+        displayNameProgress = CSTRING(RemovingPackedRBCIV_Progress);
+        treatmentTime = QACEGVAR(medical_treatment,treatmentTimeIV);
+        consumeItem = 0;
+        condition = QUOTE([ARR_4(_player,_patient,_bodyPart,'PackedRBC')] call FUNC(ivBagCheck));
+        callbackSuccess = QUOTE([ARR_4(_player,_patient,_bodyPart,'PackedRBC')] call FUNC(removeIVBag));
+    };
+    class RemoveRingersLactate: RemoveIV {
+        displayName = CSTRING(RemoveRingersLactate);
+        displayNameProgress = CSTRING(RemovingRingersLactateIV_Progress);
+        treatmentTime = QACEGVAR(medical_treatment,treatmentTimeIV);
+        consumeItem = 0;
+        condition = QUOTE([ARR_4(_player,_patient,_bodyPart,'Ringers Lactate')] call FUNC(ivBagCheck));
+        callbackSuccess = QUOTE([ARR_4(_player,_patient,_bodyPart,'Ringers Lactate')] call FUNC(removeIVBag));
     };
 };

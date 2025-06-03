@@ -39,7 +39,7 @@ if IN_CRDC_ARRST(_unit) then {
         private _meanBP = (2/3) * _bloodPressureH + (1/3) * _bloodPressureL;
         private _painLevel = GET_PAIN_PERCEIVED(_unit);
 
-        _targetHR = DEFAULT_HEART_RATE;
+        _targetHR = (_unit getVariable [QEGVAR(circulation,defaultHeartRate), 80]);
         if (_bloodVolume < BLOOD_VOLUME_CLASS_3_HEMORRHAGE) then {
             private _targetBP = 107 * (_bloodVolume / DEFAULT_BLOOD_VOLUME);
             _targetHR = _heartRate * (_targetBP / (45 max _meanBP));
