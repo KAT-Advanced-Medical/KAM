@@ -4482,10 +4482,10 @@
             <English>Push 0.2mg Flumazenil IV</English>
         </Key>
         <Key ID="STR_KAT_Pharma_push_etomidate_IV_1">
-            <English>Push 0.2mg Etomidate IV</English>
+            <English>Push 20mg Etomidate IV</English>
         </Key>
         <Key ID="STR_KAT_Pharma_push_etomidate_IV_3">
-            <English>Push 0.3mg Etomidate IV</English>
+            <English>Push 30mg Etomidate IV</English>
         </Key>
         <Key ID="STR_KAT_Pharma_push_epinephrineIV_IV_1">
             <English>Push 10mcg Epinephrine IV</English>
@@ -4626,16 +4626,16 @@
             <English>0.2mg</English>
         </Key>
         <Key ID="STR_KAT_Pharma_pushing_etomidate_IV_1">
-            <English>Pushing 0.2mg Etomidate IV</English>
+            <English>Pushing 20mg Etomidate IV</English>
         </Key>
         <Key ID="STR_KAT_Pharma_pushing_etomidate_IV_3">
-            <English>Pushing 0.3mg Etomidate IV</English>
+            <English>Pushing 30mg Etomidate IV</English>
         </Key>
         <Key ID="STR_KAT_Pharma_etomidate_5ml_Dose1">
-            <English>0.2mg</English>
+            <English>20mg</English>
         </Key>
         <Key ID="STR_KAT_Pharma_etomidate_5ml_Dose3">
-            <English>0.3mg</English>
+            <English>30mg</English>
         </Key>
         <Key ID="STR_KAT_Pharma_pushing_epinephrineIV_IV_1">
             <English>Pushing 10mcg Epinephrine IV</English>

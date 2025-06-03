@@ -30,7 +30,7 @@ if ((_bandage == "BasicBandage") isEqualTo (ACEGVAR(medical_treatment,advancedBa
     private _classIndex = _woundClassID / 10;
     private _className = ACEGVAR(medical_damage,woundClassNames) select _classIndex;
 
-    if (!(_className isEqualTo "InternalBleeding") && (_amountOf * _bleeding > 0)) exitWith {
+    if ((_className isNotEqualTo "InternalBleeding") && (_amountOf * _bleeding > 0)) exitWith {
         _canBandage = true;
     };
 } forEach _wounds;

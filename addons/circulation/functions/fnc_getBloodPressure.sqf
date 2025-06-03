@@ -29,7 +29,7 @@ private _cardiacOutput = [_unit] call EFUNC(vitals,getCardiacOutput);
 private _resistance = _unit getVariable [VAR_PERIPH_RES, DEFAULT_PERIPH_RES];
 private _vasoconstriction = GET_VASOCONSTRICTION(_unit);
 private _bloodPressure = _cardiacOutput * _resistance * ((_vasoconstriction max 0.5) min 1.5);
-TRACE_3("cardiacOutput",_cardiacOutput,_resistance,_bloodPressure);
+TRACE_3("BP1",_cardiacOutput,_resistance,_bloodPressure);
 
 private _BPChange = _unit getVariable [VAR_BLOODPRESSURE_CHANGE, []];
 
@@ -45,5 +45,5 @@ if (count _BPChange > 0) then {
 
 private _systolic = _bloodPressure * MODIFIER_BP_LOW;
 private _diastolic = _bloodPressure * MODIFIER_BP_HIGH;
-
+TRACE_2("BP2",_diastolic,_systolic);
 [(round(_systolic + _changeSystolic * (_systolic / 80)) max 0), (round(_diastolic + _changeDiastolic * (_diastolic / 120)) max 0)]

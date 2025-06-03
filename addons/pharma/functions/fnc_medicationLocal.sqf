@@ -94,8 +94,10 @@ private _medicationConfig = _defaultConfig >> _classname;
 
 // Get and calculate medication modifiers
 if (GVAR(AMS_Enabled)) then {
-    private _heartRateRatio = GET_HEART_RATE(_patient) / _patient getVariable [QGVAR(defaultHeartRate), 80];
-    private _drugMult = (((GET_BLOOD_VOLUME_LITERS(_patient) / DEFAULT_BLOOD_VOLUME) * (_heartRateRatio) * ((GET_BODY_FLUID_ECB(_patient)/GET_BODY_FLUID_ECP(_patient)) / (DEFAULT_ECB/DEFAULT_ECP)) max 0.2) min 2.5);
+    private _defaultHeartRate = _patient getVariable [QGVAR(defaultHeartRate), 80]; 
+    private _heartRateRatio = GET_HEART_RATE(_patient) / _defaultHeartRate;
+    TRACE_2("HeartRate",_defaultHeartRate,_heartRateRatio);
+    private _drugMult = ((((GET_BLOOD_VOLUME_LITERS(_unit)) max 0.5 / DEFAULT_BLOOD_VOLUME) * (_heartRateRatio) * ((GET_BODY_FLUID_ECB(_patient)/GET_BODY_FLUID_ECP(_patient)) / (DEFAULT_ECB/DEFAULT_ECP)) max 0.2) min 2.5);
     _painReduce             = GET_NUMBER(_medicationConfig >> "painReduce",getNumber (_defaultConfig >> "painReduce")) * _drugMult;
     _timeInSystem           = GET_NUMBER(_medicationConfig >> "timeInSystem",getNumber (_defaultConfig >> "timeInSystem")) * _drugMult;
     _timeTillMaxEffect      = GET_NUMBER(_medicationConfig >> "timeTillMaxEffect",getNumber (_defaultConfig >> "timeTillMaxEffect")) * _heartRateRatio;
@@ -209,24 +211,22 @@ if (GVAR(AMS_Enabled)) then {
     [format ["kat_pharma_%1Local", toLower _className], [_patient, _bodyPart, _opioidRelief], _patient] call CBA_fnc_targetEvent;
     };
 };
-if (GVAR(AMSEnabled)) then {
-    if (_classname == "syringe_etomidate_5ml_3") then {
-        _patient setVariable [QGVAR(activeEtomidateLoadingDose), true, true];
+    if (_classname == syringe_etomidate_5ml_3) then {
         [{
             params ["_patient"];
             _patient setVariable [QGVAR(activeEtomidateLoadingDose), true, true];
+            TRACE_1("activeDose",_patient);
         },
         [_patient], 10] call CBA_fnc_waitAndExecute;
         [{
             params ["_patient"];
             _patient setVariable [QGVAR(activeEtomidateLoadingDose), false, true];
+            TRACE_1("activeDose",_patient);
         },
         [_patient], 120] call CBA_fnc_waitAndExecute; 
-    }
-};
+    };
 
-if (GVAR(AMSEnabled)) then {
-private _TXAmedications = ["syringe_TXA_5ml_1", "syringe_TXA_10ml_1"];
+private _TXAmedications = [syringe_TXA_5ml_1, syringe_TXA_10ml_1];
     if (_classname in _TXAmedications) then {
         private _medication = _classname;
         private _administered = _patient getVariable ["kat_TXA_meds_administered", []];
@@ -258,4 +258,3 @@ private _TXAmedications = ["syringe_TXA_5ml_1", "syringe_TXA_10ml_1"];
             _patient setVariable ["kat_TXA_meds_window_active", false, true];
         };
     };
-};

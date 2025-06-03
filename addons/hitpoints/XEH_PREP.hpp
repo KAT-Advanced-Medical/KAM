@@ -18,7 +18,6 @@ PREP(checkJoints);
 PREP(checkLimb);
 PREP(fullHealLocal);
 PREP(fullHealMod);
-PREP(getBloodLoss);
 PREP(getWrapTime);
 PREP(gui_updateBodyImage);
 PREP(gui_updateInjuryListPart);
