@@ -331,6 +331,10 @@
 
 #define VAR_BODY_FLUID                 QEGVAR(circulation,bodyFluid)
 #define GET_BODY_FLUID(unit)           (unit getVariable [VAR_BODY_FLUID, DEFAULT_BODY_FLUID])
+#define GET_BODY_FLUID_ECB(unit)       ((unit getVariable [VAR_BODY_FLUID, DEFAULT_BODY_FLUID]) select 0)
+#define GET_BODY_FLUID_ECP(unit)       ((unit getVariable [VAR_BODY_FLUID, DEFAULT_BODY_FLUID]) select 1)
+#define GET_BODY_FLUID_SRBC(unit)      ((unit getVariable [VAR_BODY_FLUID, DEFAULT_BODY_FLUID]) select 2)
+#define GET_BODY_FLUID_ISP(unit)       ((unit getVariable [VAR_BODY_FLUID, DEFAULT_BODY_FLUID]) select 3)
 
 
 #define GET_BLOOD_VOLUME_LITERS(unit)  ((GET_BODY_FLUID(unit) select 4) / 1000)

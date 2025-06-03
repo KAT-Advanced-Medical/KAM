@@ -38,6 +38,8 @@ class ACE_Medical_Treatment {
         opioidEffect = 0;
         //multiplier to respiratory rate
         respiratoryRate = 0;
+        //multiplier to contractility
+        contractility = 0;
 
         incompatibleMedication[] = {};
 
@@ -226,37 +228,39 @@ class ACE_Medical_Treatment {
         };
         class Morphine_IVInfusion: SalineIV_250 {
             painReduce = 0.8;
-            hrIncreaseLow[] = {-2, -7};
-            hrIncreaseNormal[] = {-3, -10};
-            hrIncreaseHigh[] = {-5, -16};
+            hrIncreaseLow[] = {-2, -4};
+            hrIncreaseNormal[] = {-3, -6};
+            hrIncreaseHigh[] = {-3, -9};
             timeInSystem = 15;
             timeTillMaxEffect = 3;
-            dose = 0.3;
-            viscosityChange = -5;
+            dose = 0.2;
+            viscosityChange = -3;
             opioidRelief = 1.1;
+            respiratoryRate = -0.1;
             volume = 250;
             rateCoef = 1.3;
             type = "Morphine_IVInfusion";
         };
         class Epinephrine_IVInfusion: SalineIV_250 {
             painReduce = 0;
-            hrIncreaseLow[] = {3, 14};
-            hrIncreaseNormal[] = {5, 20};
-            hrIncreaseHigh[] = {7, 25};
+            hrIncreaseLow[] = {1, 10};
+            hrIncreaseNormal[] = {3, 15};
+            hrIncreaseHigh[] = {7, 15};
             timeInSystem = 10;
             timeTillMaxEffect = 3;
             dose = 0.1;
-            alphaFactor = -0.2;
+            alphaFactor = -0.1;
             volume = 250;
             rateCoef = 1.3;
+            contractility = 0.2;
             type = "Epinephrine_IVInfusion";
             incompatibleMedication[] = {};
         };
         class Etomidate_IVInfusion: SalineIV_250 {
             painReduce = 0.2;
             hrIncreaseLow[] = {-3, -7};
-            hrIncreaseNormal[] = {-6, -13};
-            hrIncreaseHigh[] = {-10, -20};
+            hrIncreaseNormal[] = {-5, -11};
+            hrIncreaseHigh[] = {-8, -15};
             timeInSystem = 7;
             timeTillMaxEffect = 1;
             dose = 0.1;
@@ -268,13 +272,13 @@ class ACE_Medical_Treatment {
         };
         class Doxapram_IVInfusion: SalineIV_250 {
             painReduce = 0;
-            hrIncreaseLow[] = {3, 12};
-            hrIncreaseNormal[] = {5, 18};
-            hrIncreaseHigh[] = {5, 25};
+            hrIncreaseLow[] = {3, 6};
+            hrIncreaseNormal[] = {5, 9};
+            hrIncreaseHigh[] = {5, 12};
             timeInSystem = 10;
             timeTillMaxEffect = 2;
             dose = 0.1;
-            respiratoryRate = 0.2;
+            respiratoryRate = 0.1;
             volume = 250;
             rateCoef = 1.3;
             type = "Doxapram_IVInfusion";
