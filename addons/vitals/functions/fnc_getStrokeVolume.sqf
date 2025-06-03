@@ -40,5 +40,5 @@ private _edv = _fillPortion * _cvp * 1.4 * _strokeVolume;
 private _esv = (_afterload/_contractility) * (0.5 * _strokeVolume);
 
 private _strokeVol = (_edv - _esv) max 0;
-TRACE_7("strokeVolume",_edv,_strokeVol,_esv,_cvp,_defaultHeartRate,_heartRate,_fillTime);
+TRACE_8("strokeVolume",_edv,_strokeVol,_esv,_cvp,_defaultHeartRate,_heartRate,_fillTime,_bloodVolumeRatio);
 _strokeVol

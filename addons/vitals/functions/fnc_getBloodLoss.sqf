@@ -21,7 +21,7 @@ private _woundBleeding = GET_WOUND_BLEEDING(_unit);
 if (_woundBleeding == 0) exitWith {0};
 
 private _baseCardiacOutput = [_unit] call FUNC(getCardiacOutput);
-private _cardiacOutput = (_baseCardiacOutput / 4);
+private _cardiacOutput = (_baseCardiacOutput / 10);
 private _resistance = _unit getVariable [VAR_PERIPH_RES, DEFAULT_PERIPH_RES]; // can use value directly since this is sum of default and adjustments
 
 // even if heart stops blood will still flow slowly (gravity)

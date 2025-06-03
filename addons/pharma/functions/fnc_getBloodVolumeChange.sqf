@@ -25,7 +25,10 @@ private _defaultHeartRate = _unit getVariable [QEGVAR(circulation,defaultHeartRa
 private _bloodPressure = GET_BLOOD_PRESSURE(_unit);
 _bloodPressure params ["_bloodPressureL", "_bloodPressureH"];
 private _map = _bloodPressureL + (0.3333333333 * (_bloodPressureH - _bloodPressureL));
-private _correctedMap = linearconversion [40, 180, _map, 0.05, 2, true];
+private _correctedMap = linearConversion [14.3333, 174.3333, _map, 2, 0.05, true];
+TRACE_2("correctedMAP",_correctedMap,_map);
+private _flowMap = linearConversion [14.3333, 174.3333, _map, 0.05, 2, true];
+TRACE_1("flowMAP",_flowMap);
 private _lossVolumeChange = (-_deltaT * ((_bloodLoss + _internalBleeding * (GET_HEART_RATE(_unit) / _defaultHeartRate) * _correctedMap) / GET_VASOCONSTRICTION(_unit)));
 private _enableFluidShift = EGVAR(vitals,enableFluidShift);
 private _fluidVolume = GET_BODY_FLUID(_unit);
@@ -37,7 +40,7 @@ _ECB = (_ECB + (_lossVolumeChange * LITERS_TO_ML) / 2) max 100;
 if (!isNil {_unit getVariable [QACEGVAR(medical,ivBags),[]]}) then {
     private _bloodBags = _unit getVariable [QACEGVAR(medical,ivBags), []];
     private _IVarray = _unit getVariable [QGVAR(IV), [0,0,0,0,0,0,0,0,0,0,0,0]];
-    private _flowCalculation = (ACEGVAR(medical,ivFlowRate) * _deltaT * 4.16);
+    private _flowCalculation = (ACEGVAR(medical,ivFlowRate) * _deltaT * 4.16 * _flowMap);
     private _hypothermia = EGVAR(hypothermia,hypothermiaActive);
     private _vasoconstriction = GET_VASOCONSTRICTION(_unit);
 

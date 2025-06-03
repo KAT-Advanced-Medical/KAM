@@ -5039,5 +5039,36 @@
         <Key ID="STR_KAT_Pharma_receivingMorphineIVInfusionVolume">
             <English>Receiving Morphine Infusion [%1ml]</English>
         </Key>
+        <Key ID="STR_KAT_Pharma_RemovingSalineIV_Progress">
+            <English>Removing Saline IV bags</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_RemovingPlasmaIV_Progress">
+            <English>Removing Plasma IV bags</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_RemovingBloodIV_Progress">
+            <English>Removing Blood IV bags</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_RemovingPackedRBCIV_Progress">
+            <English>Removing Packed RBC IV bags</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_RemovingRingersLactateIV_Progress">
+            <English>Removing Ringers Lactate IV bags</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_RemoveSaline">
+            <English>Remove Saline IV bags</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_RemovePlasma">
+            <English>Remove Plasma IV bags</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_RemoveBlood">
+            <English>Remove Blood IV bags</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_RemovePackedRBC">
+            <English>Remove Packed RBC IV bags</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_RemoveRingersLactate">
+            <English>Remove Ringers Lactate IV bags</English>
+        </Key>
+
     </Package>
 </Project>
