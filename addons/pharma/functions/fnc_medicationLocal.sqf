@@ -211,7 +211,10 @@ if (GVAR(AMS_Enabled)) then {
     [format ["kat_pharma_%1Local", toLower _className], [_patient, _bodyPart, _opioidRelief], _patient] call CBA_fnc_targetEvent;
     };
 };
-    if (_classname == syringe_etomidate_5ml_3) then {
+_test = typeName _classname;
+TRACE_1("type",_test);
+    if (_classname == "syringe_etomidate_5ml_3") then {
+        TRACE_1("etomidateeDose",_patient);
         [{
             params ["_patient"];
             _patient setVariable [QGVAR(activeEtomidateLoadingDose), true, true];
@@ -226,8 +229,9 @@ if (GVAR(AMS_Enabled)) then {
         [_patient], 120] call CBA_fnc_waitAndExecute; 
     };
 
-private _TXAmedications = [syringe_TXA_5ml_1, syringe_TXA_10ml_1];
+private _TXAmedications = ["syringe_TXA_5ml_1", "syringe_TXA_10ml_1"];
     if (_classname in _TXAmedications) then {
+        TRACE_1("TXADose",_patient);
         private _medication = _classname;
         private _administered = _patient getVariable ["kat_TXA_meds_administered", []];
         private _effectTriggered = _patient getVariable ["kat_TXA_effect_triggered", false];
