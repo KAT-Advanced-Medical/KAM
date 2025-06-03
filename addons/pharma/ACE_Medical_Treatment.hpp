@@ -767,7 +767,7 @@ class ACE_ADDON(Medical_Treatment) {
             hrIncreaseLow[] = {-5, -10};
             hrIncreaseNormal[] = {-5, -15};
             hrIncreaseHigh[] = {-10, -15};
-            timeInSystem = 60;
+            timeInSystem = 120;
             timeTillMaxEffect = 5;
             dose = 3;
             opioidDepression = 0.15;

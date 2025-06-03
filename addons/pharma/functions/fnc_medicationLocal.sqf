@@ -209,38 +209,53 @@ if (GVAR(AMS_Enabled)) then {
     [format ["kat_pharma_%1Local", toLower _className], [_patient, _bodyPart, _opioidRelief], _patient] call CBA_fnc_targetEvent;
     };
 };
+if (GVAR(AMSEnabled)) then {
+    if (_classname == "syringe_etomidate_5ml_3") then {
+        _patient setVariable [QGVAR(activeEtomidateLoadingDose), true, true];
+        [{
+            params ["_patient"];
+            _patient setVariable [QGVAR(activeEtomidateLoadingDose), true, true];
+        },
+        [_patient], 10] call CBA_fnc_waitAndExecute;
+        [{
+            params ["_patient"];
+            _patient setVariable [QGVAR(activeEtomidateLoadingDose), false, true];
+        },
+        [_patient], 120] call CBA_fnc_waitAndExecute; 
+    }
+};
 
 if (GVAR(AMSEnabled)) then {
 private _TXAmedications = ["syringe_TXA_5ml_1", "syringe_TXA_10ml_1"];
     if (_classname in _TXAmedications) then {
         private _medication = _classname;
-        private _administered = _patient getVariable ["meds_administered", []];
-        private _effectTriggered = _patient getVariable ["effect_triggered", false];
-        private _windowActive = _patient getVariable ["meds_window_active", false];
+        private _administered = _patient getVariable ["kat_TXA_meds_administered", []];
+        private _effectTriggered = _patient getVariable ["kat_TXA_effect_triggered", false];
+        private _windowActive = _patient getVariable ["kat_TXA_meds_window_active", false];
         if (!(_medication in _administered)) then {
             _administered pushBack _medication;
-            _patient setVariable ["meds_administered", _administered, true];
+            _patient setVariable ["kat_TXA_meds_administered", _administered, true];
         };
         if (count _administered == 1) then {
-            _patient setVariable ["meds_window_active", false, true];
+            _patient setVariable ["kat_TXA_meds_window_active", false, true];
         [{
             params ["_patient"];
-            _patient setVariable ["meds_window_active", true, true];  
+            _patient setVariable ["kat_TXA_meds_window_active", true, true];  
         },
         [_patient], 180] call CBA_fnc_waitAndExecute; 
         [{
             params ["_patient"];
-            _patient setVariable ["meds_window_active", false, true]; 
+            _patient setVariable ["kat_TXA_meds_window_active", false, true]; 
         },
         [_patient], 300] call CBA_fnc_waitAndExecute; 
         };
-        if ((count _administered == count _TXAmedications) && (_patient getVariable ["meds_window_active", false]) && {!_effectTriggered}) then {
+        if ((count _administered == count _TXAmedications) && (_patient getVariable ["kat_TXA_meds_window_active", false]) && {!_effectTriggered}) then {
             _effectTriggered = true;
             [_patient, "EACA", 15, 360, "", "", "", "",  "", "", "", ""] call EFUNC(vitals,addMedicationAdjustment);
             [_patient, "Body"] call FUNC(treatmentAdvanced_EACALocal);
-            _patient setVariable ["effect_triggered", false, true];
-            _patient setVariable ["meds_administered", [], true];
-            _patient setVariable ["meds_window_active", false, true];
+            _patient setVariable ["kat_TXA_effect_triggered", false, true];
+            _patient setVariable ["kat_TXA_meds_administered", [], true];
+            _patient setVariable ["kat_TXA_meds_window_active", false, true];
         };
     };
 };
