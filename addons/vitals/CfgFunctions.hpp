@@ -8,6 +8,12 @@ class CfgFunctions {
             class addMedicationAdjustment {
                 file = QPATHTOF(functions\fnc_addMedicationAdjustment.sqf);
             };
+            class getCardiacOutput {
+                file = QPATHTOF(functions\fnc_getCardiacOutput.sqf);
+            };
+            class getBloodLoss {
+                file = QPATHTOF(functions\fnc_getBloodLoss.sqf);
+            };
         };
     };
     class overwrite_ace_medical_vitals {

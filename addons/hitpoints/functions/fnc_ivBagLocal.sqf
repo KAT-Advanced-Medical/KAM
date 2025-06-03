@@ -24,7 +24,7 @@ params ["_patient", "_bodyPart", "_treatment", "_medic", "_itemUser", "_item"];
 
 // Exit if patient has max blood volume
 private _bloodVolume = GET_BLOOD_VOLUME_LITERS(_patient);
-if (_bloodVolume >= DEFAULT_BLOOD_VOLUME) exitWith {
+if (_bloodVolume >= 7) exitWith {
     // Return the bag if patient is topped up on blood
     if (_medic call ACEFUNC(common,isPlayer) || {missionNamespace getVariable [QACEGVAR(medical_ai,requireItems), 0] > 0}) then {
         [_itemUser, _item] call ACEFUNC(common,addToInventory);

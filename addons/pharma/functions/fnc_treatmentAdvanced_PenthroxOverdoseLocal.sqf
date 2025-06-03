@@ -20,7 +20,6 @@
  * Public: No
  */
 params ["_patient"];
-systemChat str "PenthroxODOverdose";
 [{
     params ["_patient"];
         [{

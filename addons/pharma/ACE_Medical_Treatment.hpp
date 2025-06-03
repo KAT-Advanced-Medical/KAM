@@ -34,6 +34,8 @@ class ACE_ADDON(Medical_Treatment) {
         opioidEffect = 0;
         //multiplier to respiratory rate
         respiratoryRate = 0;
+        //multiplier to contractility
+        contractility = 0;
 
         class Epinephrine {
             painReduce = 0;
@@ -62,6 +64,7 @@ class ACE_ADDON(Medical_Treatment) {
             incompatibleMedication[] = {};
             alphaFactor = -0.3;
             onOverDose = "";
+            contractility = 1;
         };
         class Morphine {
             painReduce = 0.6;
@@ -168,6 +171,7 @@ class ACE_ADDON(Medical_Treatment) {
             viscosityChange = 25;
             alphaFactor = -0.3;
             onOverDose = "";
+            contractility = 0.7;
         };
         class Phenylephrine {
             painReduce = 0;
@@ -212,6 +216,7 @@ class ACE_ADDON(Medical_Treatment) {
             viscosityChange = -25;
             alphaFactor = 0.3;
             onOverDose = "";
+            contractility = -0.3;
         };
         class Fentanyl {
             painReduce = 1;
@@ -229,6 +234,7 @@ class ACE_ADDON(Medical_Treatment) {
             opioidRelief = 0.2;
             opioidEffect = 0.18;
             opioidDepression = 0.18;
+            contractility = -0.2;
         };
         class Ketamine {
             painReduce = 0.8;
@@ -245,6 +251,7 @@ class ACE_ADDON(Medical_Treatment) {
             onOverDose = "";
             opioidEffect = 0.17;
             opioidDepression = 0.17;
+            contractility = 0.3;
         };
         class Nalbuphine {
             painReduce = 0.6;
@@ -260,6 +267,7 @@ class ACE_ADDON(Medical_Treatment) {
             viscosityChange = -5;
             onOverDose = "";
             opioidRelief = 0.1;
+            contractility = -0.2;
         };
         class CWMP {
             painReduce = 0.2;
@@ -300,6 +308,7 @@ class ACE_ADDON(Medical_Treatment) {
             incompatibleMedication[]= {};
             viscosityChange = 0;
             onOverDose = "";
+            contractility = 0.2;
         };
         class Amiodarone {
             painReduce = 0;
@@ -313,6 +322,7 @@ class ACE_ADDON(Medical_Treatment) {
             incompatibleMedication[]= {};
             viscosityChange = 0;
             onOverDose = "";
+            contractility = -0.5;
         };
         class Lidocaine {
             painReduce = 0.2;
@@ -327,6 +337,7 @@ class ACE_ADDON(Medical_Treatment) {
             incompatibleMedication[]= {};
             onOverDose = "";
             maxRelief = 0.6;
+            contractility = -0.4;
         };
         class EACA {
             painReduce = 0;
@@ -379,6 +390,7 @@ class ACE_ADDON(Medical_Treatment) {
             incompatibleMedication[] = {};
             viscosityChange = -15;
             onOverDose = "";
+            contractility = -0.1;
         };
         class Pervitin {
             painReduce = 0.5;
@@ -506,6 +518,7 @@ class ACE_ADDON(Medical_Treatment) {
             timeTillMaxEffect = 10;
             dose = 1;
             alphaFactor = -0.2;
+            contractility = 0.7;
         };
         class syringe_epinephrineIV_5ml_3 {
             painReduce = 0;
@@ -516,6 +529,7 @@ class ACE_ADDON(Medical_Treatment) {
             timeTillMaxEffect = 10;
             dose = 3;
             alphaFactor = -0.4;
+            contractility = 1;
         };
         class syringe_norepinephrine_5ml_1 {
             painReduce = 0;
@@ -527,6 +541,7 @@ class ACE_ADDON(Medical_Treatment) {
             viscosityChange = 15;
             dose = 1;
             alphaFactor = -0.2;
+            contractility = 0.5;
         };
         class syringe_norepinephrine_5ml_3 {
             painReduce = 0;
@@ -538,6 +553,7 @@ class ACE_ADDON(Medical_Treatment) {
             dose = 3;
             viscosityChange = 25;
             alphaFactor = -0.4;
+            contractility = 0.7;
         };
         class syringe_phenylephrine_5ml_1 {
             painReduce = 0;
@@ -571,6 +587,7 @@ class ACE_ADDON(Medical_Treatment) {
             viscosityChange = -25;
             dose = 1;
             alphaFactor = 0.3;
+            contractility = -0.2;
         };
         class syringe_nitroglycerin_5ml_3 {
             painReduce = 0;
@@ -582,6 +599,7 @@ class ACE_ADDON(Medical_Treatment) {
             dose = 3;
             viscosityChange = -35;
             alphaFactor = 0.5;
+            contractility = -0.4;
         };
         class syringe_fentanyl_5ml_1 {
             painReduce = 0.6;
@@ -596,6 +614,7 @@ class ACE_ADDON(Medical_Treatment) {
             opioidEffect = 0.17;
             opioidDepression = 0.17;
             respiratoryRate = -0.2;
+            contractility = -0.2;
         };
         class syringe_fentanyl_5ml_3 {
             painReduce = 1;
@@ -610,6 +629,7 @@ class ACE_ADDON(Medical_Treatment) {
             opioidEffect = 0.25;
             opioidDepression = 0.25;
             respiratoryRate = -0.3;
+            contractility = -0.4;
         };
         class syringe_ketamine_5ml_1 {
             painReduce = 0.5;
@@ -623,6 +643,7 @@ class ACE_ADDON(Medical_Treatment) {
             opioidEffect = 0.18;
             opioidDepression = 0.18;
             respiratoryRate = 0.2;
+            contractility = 0.1;
         };
         class syringe_ketamine_5ml_3 {
             painReduce = 0.8;
@@ -637,6 +658,7 @@ class ACE_ADDON(Medical_Treatment) {
             opioidEffect = 0.21;
             opioidDepression = 0.21;
             respiratoryRate = 0.3;
+            contractility = 0.3;
         };
         class syringe_nalbuphine_5ml_1 {
             painReduce = 0.5;
@@ -649,6 +671,7 @@ class ACE_ADDON(Medical_Treatment) {
             viscosityChange = -5;
             opioidRelief = 1.1;
             respiratoryRate = -0.1;
+            contractility = -0.2;
         };
         class syringe_nalbuphine_5ml_3 {
             painReduce = 0.7;
@@ -661,6 +684,7 @@ class ACE_ADDON(Medical_Treatment) {
             viscosityChange = -5;
             opioidRelief = 1.2;
             respiratoryRate = -0.1;
+            contractility = -0.3;
         };
         class syringe_atropineIV_5ml_1 {
             painReduce = 0;
@@ -671,6 +695,7 @@ class ACE_ADDON(Medical_Treatment) {
             timeTillMaxEffect = 30;
             dose = 1;
             viscosityChange = 0;
+            contractility = 0.2;
         };
         class syringe_atropineIV_5ml_3 {
             painReduce = 0;
@@ -681,6 +706,7 @@ class ACE_ADDON(Medical_Treatment) {
             timeTillMaxEffect = 30;
             dose = 3;
             viscosityChange = 0;
+            contractility = 0.3;
         };
         class syringe_amiodarone_5ml_1 {
             painReduce = 0;
@@ -691,6 +717,7 @@ class ACE_ADDON(Medical_Treatment) {
             timeTillMaxEffect = 30;
             dose = 1;
             viscosityChange = 0;
+            contractility = -0.4;
         };
         class syringe_amiodarone_5ml_3 {
             painReduce = 0;
@@ -701,6 +728,7 @@ class ACE_ADDON(Medical_Treatment) {
             timeTillMaxEffect = 30;
             dose = 3;
             viscosityChange = 0;
+            contractility = -0.6;
         };
         class syringe_lidocaine_5ml_1 {
             painReduce = 0;
@@ -710,6 +738,7 @@ class ACE_ADDON(Medical_Treatment) {
             timeInSystem = 120;
             timeTillMaxEffect = 30;
             dose = 1;
+            contractility = -0.2;
         };
         class syringe_lidocaine_5ml_3 {
             painReduce = 0;
@@ -719,6 +748,7 @@ class ACE_ADDON(Medical_Treatment) {
             timeInSystem = 120;
             timeTillMaxEffect = 30;
             dose = 3;
+            contractility = -0.4;
         };
         class syringe_etomidate_5ml_1 {
             painReduce = 0.2;
@@ -730,17 +760,19 @@ class ACE_ADDON(Medical_Treatment) {
             dose = 1;
             opioidDepression = 0.12;
             viscosityChange = 0;
+            contractility = -0.05;
         };
         class syringe_etomidate_5ml_3 {
             painReduce = 0.4;
             hrIncreaseLow[] = {-5, -10};
             hrIncreaseNormal[] = {-5, -15};
             hrIncreaseHigh[] = {-10, -15};
-            timeInSystem = 30;
+            timeInSystem = 120;
             timeTillMaxEffect = 5;
             dose = 3;
             opioidDepression = 0.15;
             viscosityChange = 0;
+            contractility = -0.1;
         };
         class syringe_flumazenil_5ml_1 {
             painReduce = 0;
@@ -767,12 +799,13 @@ class ACE_ADDON(Medical_Treatment) {
             hrIncreaseLow[] = {5, 10};
             hrIncreaseNormal[] = {5, 15};
             hrIncreaseHigh[] = {7, 15};
-            timeInSystem = 60;
+            timeInSystem = 30;
             timeTillMaxEffect = 5;
             dose = 1;
             opioidDepression = 0.11;
             viscosityChange = -10;
             respiratoryRate = -0.1;
+            contractility = -0.1;
         };
         class syringe_lorazepam_5ml_3 {
             painReduce = 0;
@@ -785,6 +818,7 @@ class ACE_ADDON(Medical_Treatment) {
             opioidDepression = 0.13;
             viscosityChange = -15;
             respiratoryRate = -0.1;
+            contractility = -0.1;
         };
         class syringe_morphineIV_5ml_1 {
             painReduce = 0.6;

@@ -3391,5 +3391,8 @@
         <Key ID="STR_KAT_Breathing_rightchestseal_display">
             <English>Right Side Chest Seal</English>
         </Key>
+        <Key ID="STR_KAT_Breathing_FingerThoracostomy_Log">
+            <English>%1 preformed a Finger Thoracostomy</English>
+        </Key>
     </Package>
 </Project>

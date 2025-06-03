@@ -4482,10 +4482,10 @@
             <English>Push 0.2mg Flumazenil IV</English>
         </Key>
         <Key ID="STR_KAT_Pharma_push_etomidate_IV_1">
-            <English>Push 0.2mg Etomidate IV</English>
+            <English>Push 20mg Etomidate IV</English>
         </Key>
         <Key ID="STR_KAT_Pharma_push_etomidate_IV_3">
-            <English>Push 0.3mg Etomidate IV</English>
+            <English>Push 30mg Etomidate IV</English>
         </Key>
         <Key ID="STR_KAT_Pharma_push_epinephrineIV_IV_1">
             <English>Push 10mcg Epinephrine IV</English>
@@ -4626,16 +4626,16 @@
             <English>0.2mg</English>
         </Key>
         <Key ID="STR_KAT_Pharma_pushing_etomidate_IV_1">
-            <English>Pushing 0.2mg Etomidate IV</English>
+            <English>Pushing 20mg Etomidate IV</English>
         </Key>
         <Key ID="STR_KAT_Pharma_pushing_etomidate_IV_3">
-            <English>Pushing 0.3mg Etomidate IV</English>
+            <English>Pushing 30mg Etomidate IV</English>
         </Key>
         <Key ID="STR_KAT_Pharma_etomidate_5ml_Dose1">
-            <English>0.2mg</English>
+            <English>20mg</English>
         </Key>
         <Key ID="STR_KAT_Pharma_etomidate_5ml_Dose3">
-            <English>0.3mg</English>
+            <English>30mg</English>
         </Key>
         <Key ID="STR_KAT_Pharma_pushing_epinephrineIV_IV_1">
             <English>Pushing 10mcg Epinephrine IV</English>
@@ -4824,7 +4824,8 @@
             <English>Enable Advanced Medication System</English>
         </Key>
         <Key ID="STR_KAT_Pharma_advancedMedicationSystem_Desc">
-            <English>Enables Advanced Medication System and disables Basic System</English>
+            <English>Enables Advanced Medication System and disables Basic System
+            REQUIRED: Medications Require IV/IO, Fluid Require inserted IV/IO</English>
         </Key>
         <Key ID="STR_KAT_Pharma_SubCategory_Morphine">
             <English>KAT Morphine Settings</English>
@@ -5051,6 +5052,36 @@
             <Japanese>戦闘傷病治療薬(CWMP)の許可</Japanese>
             <German>Erlaube die Verwendung von CWMP</German>
             <Italian>Consenti l'uso dei CWMP</Italian>
+        </Key>
+        <Key ID="STR_KAT_Pharma_RemovingSalineIV_Progress">
+            <English>Removing Saline IV bags</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_RemovingPlasmaIV_Progress">
+            <English>Removing Plasma IV bags</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_RemovingBloodIV_Progress">
+            <English>Removing Blood IV bags</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_RemovingPackedRBCIV_Progress">
+            <English>Removing Packed RBC IV bags</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_RemovingRingersLactateIV_Progress">
+            <English>Removing Ringers Lactate IV bags</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_RemoveSaline">
+            <English>Remove Saline IV bags</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_RemovePlasma">
+            <English>Remove Plasma IV bags</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_RemoveBlood">
+            <English>Remove Blood IV bags</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_RemovePackedRBC">
+            <English>Remove Packed RBC IV bags</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_RemoveRingersLactate">
+            <English>Remove Ringers Lactate IV bags</English>
         </Key>
     </Package>
 </Project>

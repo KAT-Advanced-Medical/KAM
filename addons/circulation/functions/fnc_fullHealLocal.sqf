@@ -42,3 +42,4 @@ _patient setVariable [QGVAR(effusion), 0, true];
 
 [_patient, true] call FUNC(updateInternalBleeding);
 
+_patient setVariable [QGVAR(defaultHeartRate), [_patient] call FUNC(generateDefaultHeartRate), true];

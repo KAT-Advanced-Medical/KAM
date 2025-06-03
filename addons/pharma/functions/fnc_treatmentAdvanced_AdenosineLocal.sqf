@@ -15,9 +15,7 @@
  * Public: No
  */
 params ["_patient", "_classname"];
-systemChat str "AdenosineLocal";
 if (_classname isEqualTo "ACE_adenosine") exitWith {};
-systemChat str "AdenosineLocal";
 private _cardiacRhythm = _patient getVariable [QEGVAR(circulation,cardiacArrestType), 0];
 _patient setVariable [QEGVAR(circulation,cardiacArrestType), 1];
 private _medStack = _patient call ACEFUNC(medical_treatment,getAllMedicationCount);

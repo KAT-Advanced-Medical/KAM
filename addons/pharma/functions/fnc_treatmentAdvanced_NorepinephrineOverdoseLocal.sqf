@@ -15,7 +15,6 @@
  * Public: No
  */
  params ["_patient"];
- systemChat str "NorepiOverdose";
 private _hrAdjust = 30 + floor random ((50 - 30) + 1);
 [_patient, "TACHYCARDIA", 120, 1200, _hrAdjust] call EFUNC(vitals,addMedicationAdjustment);
 if (random 10 < 1) then {

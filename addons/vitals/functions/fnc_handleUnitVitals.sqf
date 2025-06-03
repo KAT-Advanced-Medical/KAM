@@ -92,6 +92,7 @@ private _alphaFactorAdjustment = 0;
 private _opioidAdjustment = 0;
 private _opioidEffectAdjustment = 0;
 private _opioidDepressionAdjustment = 0;
+private _contractility = 0;
 private _adjustments = _unit getVariable [VAR_MEDICATIONS,[]];
 
 if (_adjustments isNotEqualTo []) then {
@@ -112,6 +113,7 @@ if (_adjustments isNotEqualTo []) then {
             if (_opioidEffect != 0) then {_opioidEffectAdjustment = _opioidEffectAdjustment + _opioidEffect * _effectRatio; };
             if (_opioidDepression != 0) then {_opioidDepressionAdjustment = _opioidAdjustment + _opioidDepression * _effectRatio; };
             if (_respiratoryRate != 0) then {_respiratoryRateAdjustment = _respiratoryRateAdjustment + _respiratoryRate * _effectRatio; };
+            if (_contractility != 0) then {_contractilityAdjustment = _contractilityAdjustment + _contractility * _effectRatio; };
         };
     } forEach _adjustments;
 
@@ -127,6 +129,7 @@ if (_adjustments isNotEqualTo []) then {
 [_unit, _opioidEffectAdjustment, _deltaT, _syncValues] call FUNC(updateOpioidEffect);
 [_unit, _opioidDepressionAdjustment, _deltaT, _syncValues] call FUNC(updateOpioidDepression);
 [_unit, _respiratoryRateAdjustment, _deltaT, _syncValues] call FUNC(updateRespiratoryRate);
+[_unit, _contractility, _deltaT, _syncValues] call FUNC(updateContractility);
 [_unit, POISON_DECREASE, _deltaT, _syncValues] call FUNC(handlePoisoning);
 
 private _aceAnFatigue = 0;
@@ -157,6 +160,9 @@ _unit setVariable [VAR_BLOOD_PRESS, _bloodPressure, _syncValues];
 
 _bloodPressure params ["_bloodPressureL", "_bloodPressureH"];
 
+private _map = _bloodPressureL + (0.3333333333 * (_bloodPressureH - _bloodPressureL));
+TRACE_1("MAP",_map);
+
 // Statements are ordered by most lethal first.
 switch (true) do {
     case ((_spo2 < EGVAR(breathing,SpO2_dieValue)) && EGVAR(breathing,SpO2_dieActive)): {
@@ -179,8 +185,8 @@ switch (true) do {
         TRACE_2("heartRate Fatal",_unit,_heartRate);
         [QACEGVAR(medical,FatalVitals), _unit] call CBA_fnc_localEvent;
     };
-    case (_bloodPressureL < 20 || {_bloodPressureL > 180}): {
-        TRACE_2("bloodPressure L above or below limits",_unit,_bloodPressureL);
+    case (_map < 45 || {_map > 150}): {
+        TRACE_2("Mean Arterial Pressure above or below limits",_unit,_map);
         [QACEGVAR(medical,CriticalVitals), _unit] call CBA_fnc_localEvent;
     };
     case (_spo2 < EGVAR(breathing,SpO2_unconscious)): {

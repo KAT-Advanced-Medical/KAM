@@ -27,6 +27,7 @@ private _isBleeding = false;
     private _classIndex = _woundClassID / 10;
     private _className = ACEGVAR(medical_damage,woundClassNames) select _classIndex;
     _isBleeding = _amountOf > 0 && {_bleedingRate > 0};
+    TRACE_4("canStitch",_woundClassID,_classIndex,_className,_isBleeding);
     if (_isBleeding && !(_className in ["InternalBleeding", "Evisceration"])) then {break};
 } forEach (GET_OPEN_WOUNDS(_patient) get _bodyPart);
 

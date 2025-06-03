@@ -29,7 +29,7 @@ private _fentanylEffectiveness = 0;
 private _ketamineEffectiveness = 0;
 private _nalbuphineEffectiveness = 0;
 private _morphineEffectiveness = 0;
-private _lidocaineEffectiveness = 0;
+private _localAnesthesia = (_patient getVariable [QEGVAR(pharma,localAnesthesia), [0,0,0,0,0,0,0,0,0,0,0,0]]) select 2;
 {
     private _medName = toLower (_x select 0);
     private _effectiveness = _x select 2;
@@ -51,7 +51,7 @@ private _lidocaineEffectiveness = 0;
         _ketamineEffectiveness <= 0.8 &&
         _nalbuphineEffectiveness <= 0.8 &&
         _morphineEffectiveness <= 0.8 &&
-        (GET_LOCAL_ANESTHESIA(_patient,2) <= 0.8)
+        (_localAnesthesia <= 0.8)
     ) then {
         [_patient, [0.7, 0.8, 0.9] select (floor random 3)] call ACEFUNC(medical_status,adjustPainLevel);
     };
@@ -82,15 +82,20 @@ _patient setVariable [QGVAR(chestTube), _chestTubeArray, true];
         [_idPFH] call CBA_fnc_removePerFrameHandler;
         _patient setVariable [QGVAR(etomidate_Pain), false]
     };
+    if (GVAR(AMSEnabled)) then {
+        _activeLoadingDose = _patient getVariable [QEGVAR(pharma,activeEtomidateLoadingDose), false];
+    } else {
+        _activeLoadingDose = true;
+    };
 
-    if (((GVAR(ChestTube_ConsciousnessRequirement) in [0,1]) && (!(IS_UNCONSCIOUS(_patient))) && (_count <= 0.2)) || (GVAR(Surgery_ConsciousnessRequirement) == 3 && _count <= 0.2)) exitWith {
+    if (((GVAR(ChestTube_ConsciousnessRequirement) in [0,1]) && (!(IS_UNCONSCIOUS(_patient))) && (_count <= 0.2) && (_activeLoadingDose)) || (GVAR(Surgery_ConsciousnessRequirement) == 3 && _count <= 0.2 && (_activeLoadingDose))) exitWith {
         if !(_patient getVariable [QGVAR(etomidate_Pain), false]) then {
             [_patient, "Pain", 2, 10, 120, 0.6, 40] call ACEFUNC(medical_status,addMedicationAdjustment);
             _patient setVariable [QGVAR(etomidate_Pain), true]};
         [_patient, true] call ACEFUNC(medical,setUnconscious);
     };
 
-    if (GVAR(ChestTube_ConsciousnessRequirement) == 2 && _count <= 0.2) then {
+    if (GVAR(ChestTube_ConsciousnessRequirement) == 2 && _count <= 0.2 && (_activeLoadingDose)) then {
         if !(_patient getVariable [QGVAR(etomidate_Pain), false]) then {
             [_patient, "Pain", 2, 10, 120, 0.6, 40] call ACEFUNC(medical_status,addMedicationAdjustment);
             _patient setVariable [QGVAR(etomidate_Pain), true]

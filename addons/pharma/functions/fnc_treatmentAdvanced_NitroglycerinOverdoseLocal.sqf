@@ -15,10 +15,8 @@
  * Public: No
  */
 params ["_patient"];
-systemChat str "NitroOverdose";
 private _hrValue = [-20, -25, -30, -35, -40, -45, 20, 25, 30, 35, 40, 45];
 private _hrAdjust = selectRandom _hrValue;
-params ["_unit", "_medication", "_timeToMaxEffect", "_maxTimeInSystem", "_hrAdjust", "_painAdjust", "_flowAdjust", "_dose",  "_alphaFactor", "_opioidRelief", "_opioidEffect", "_opioidDepression", "_respiratoryRate"];
 
 [_patient, "NitroglycerinOverdose", 30, 1200, _hrAdjust] call EFUNC(vitals,addMedicationAdjustment);
 if (random 3 < 1) then {

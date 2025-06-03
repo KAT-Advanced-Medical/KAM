@@ -18,16 +18,18 @@
  */
 
 // Value is taken because with cardic output and resistance at default values, it will put blood pressure High at 120.
-#define MODIFIER_BP_HIGH    9.4736842
+#define MODIFIER_BP_HIGH    1.2766
 
 // Value is taken because with cardic output and resistance at default values, it will put blood pressure Low at 80.
-#define MODIFIER_BP_LOW     6.3157894
+#define MODIFIER_BP_LOW     0.85106
 
 params ["_unit"];
 
-private _cardiacOutput = [_unit] call ACEFUNC(medical_status,getCardiacOutput);
+private _cardiacOutput = [_unit] call EFUNC(vitals,getCardiacOutput);
 private _resistance = _unit getVariable [VAR_PERIPH_RES, DEFAULT_PERIPH_RES];
-private _bloodPressure = _cardiacOutput * _resistance;
+private _vasoconstriction = GET_VASOCONSTRICTION(_unit);
+private _bloodPressure = _cardiacOutput * _resistance * ((_vasoconstriction max 0.5) min 1.5);
+TRACE_3("BP1",_cardiacOutput,_resistance,_bloodPressure);
 
 private _BPChange = _unit getVariable [VAR_BLOODPRESSURE_CHANGE, []];
 
@@ -43,5 +45,5 @@ if (count _BPChange > 0) then {
 
 private _systolic = _bloodPressure * MODIFIER_BP_LOW;
 private _diastolic = _bloodPressure * MODIFIER_BP_HIGH;
-
+TRACE_2("BP2",_diastolic,_systolic);
 [(round(_systolic + _changeSystolic * (_systolic / 80)) max 0), (round(_diastolic + _changeDiastolic * (_diastolic / 120)) max 0)]
