@@ -142,7 +142,7 @@ if (!isNil {_unit getVariable [QACEGVAR(medical,ivBags),[]]}) then {
             _incomingFlowAmount set [_bodyPart, ((_incomingFlowAmount select _bodyPart) + _bagChange)];
             _unit setVariable [QGVAR(IVincomingFlowAmount), _incomingFlowAmount, true];
             private _heartRateRatio = GET_HEART_RATE(_patient) / _patient getVariable [QGVAR(defaultHeartRate), 80];
-            private _drugMult = (GET_BLOOD_VOLUME_LITERS(_patient) / DEFAULT_BLOOD_VOLUME) * (_heartRateRatio) * ((GET_BODY_FLUID_ECB(_patient)/GET_BODY_FLUID_ECP(_patient)) / (DEFAULT_ECB/DEFAULT_ECP));
+            private _drugMult = (((GET_BLOOD_VOLUME_LITERS(_patient) / DEFAULT_BLOOD_VOLUME) * (_heartRateRatio) * ((GET_BODY_FLUID_ECB(_patient)/GET_BODY_FLUID_ECP(_patient)) / (DEFAULT_ECB/DEFAULT_ECP)) max 0.2) min 2.5);
 
             private _defaultConfig = configFile >> QUOTE(ACE_ADDON(Medical_Treatment)) >> "IV";
             private _ivConfig = _defaultConfig >> _type;
