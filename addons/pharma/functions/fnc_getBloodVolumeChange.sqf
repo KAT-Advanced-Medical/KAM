@@ -26,12 +26,14 @@ private _bloodPressure = GET_BLOOD_PRESSURE(_unit);
 _bloodPressure params ["_bloodPressureL", "_bloodPressureH"];
 private _map = _bloodPressureL + (0.3333333333 * (_bloodPressureH - _bloodPressureL));
 private _correctedMap = linearConversion [14.3333, 174.3333, _map, 2, 0.05, true];
-TRACE_2("correctedMAP",_correctedMap,_map);
+TRACE_3("correctedMAP",_correctedMap,_map,_bloodPressure);
 private _flowMap = linearConversion [14.3333, 174.3333, _map, 0.05, 2, true];
 TRACE_1("flowMAP",_flowMap);
-private _lossVolumeChange = (-_deltaT * ((_bloodLoss + _internalBleeding * (GET_HEART_RATE(_unit) / _defaultHeartRate) * _correctedMap) / GET_VASOCONSTRICTION(_unit)));
+private _heartRate = GET_HEART_RATE(_unit);
+private _lossVolumeChange = (-_deltaT * ((_bloodLoss + _internalBleeding * (_heartRate / _defaultHeartRate) * _correctedMap) / GET_VASOCONSTRICTION(_unit)));
 private _enableFluidShift = EGVAR(vitals,enableFluidShift);
 private _fluidVolume = GET_BODY_FLUID(_unit);
+TRACE_3("gbvc",_internalBleeding,_bloodLoss,_heartRate);
 _fluidVolume params ["_ECB","_ECP","_SRBC","_ISP","_fullVolume"];
 
 _ECP = (_ECP + (_lossVolumeChange * LITERS_TO_ML) / 2) max 100;
@@ -141,8 +143,9 @@ if (!isNil {_unit getVariable [QACEGVAR(medical,ivBags),[]]}) then {
             _bagVolumeRemaining = _bagVolumeRemaining - _bagChange;
             _incomingFlowAmount set [_bodyPart, ((_incomingFlowAmount select _bodyPart) + _bagChange)];
             _unit setVariable [QGVAR(IVincomingFlowAmount), _incomingFlowAmount, true];
-            private _heartRateRatio = GET_HEART_RATE(_patient) / _patient getVariable [QGVAR(defaultHeartRate), 80];
-            private _drugMult = (((GET_BLOOD_VOLUME_LITERS(_patient) / DEFAULT_BLOOD_VOLUME) * (_heartRateRatio) * ((GET_BODY_FLUID_ECB(_patient)/GET_BODY_FLUID_ECP(_patient)) / (DEFAULT_ECB/DEFAULT_ECP)) max 0.2) min 2.5);
+            private _defaultHeartRate = _patient getVariable [QGVAR(defaultHeartRate), 80]; 
+            private _heartRateRatio = GET_HEART_RATE(_patient) / _defaultHeartRate;
+            private _drugMult = ((((GET_BLOOD_VOLUME_LITERS(_unit)) max 0.5 / DEFAULT_BLOOD_VOLUME) * (_heartRateRatio) * ((GET_BODY_FLUID_ECB(_patient)/GET_BODY_FLUID_ECP(_patient)) / (DEFAULT_ECB/DEFAULT_ECP)) max 0.2) min 2.5);
 
             private _defaultConfig = configFile >> QUOTE(ACE_ADDON(Medical_Treatment)) >> "IV";
             private _ivConfig = _defaultConfig >> _type;
@@ -264,5 +267,5 @@ if (_enableFluidShift) then {
 };
 
 _unit setVariable [QEGVAR(circulation,bodyFluid), [_ECB, _ECP, _SRBC, _ISP, (_ECP + _ECB)], _syncValues];
-
+TRACE_3("bloodLoss",_ECB,_ECP,(_ECP + _ECB));
 ((_lossVolumeChange + GET_BLOOD_VOLUME_LITERS(_unit)) max 0.01)
