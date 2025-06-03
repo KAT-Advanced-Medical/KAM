@@ -9,3 +9,8 @@
 [QGVAR(wrapJoint), LINKFUNC(wrapJointLocal)] call CBA_fnc_addEventHandler;
 [QGVAR(stabilizeJoint), LINKFUNC(stabilizeJointLocal)] call CBA_fnc_addEventHandler;
 [QGVAR(bindPelvis), LINKFUNC(bindPelvisLocal)] call CBA_fnc_addEventHandler;
+[QGVAR(removeBandage), LINKFUNC(removeBandageLocal)] call CBA_fnc_addEventHandler;
+[QGVAR(wrapWound), LINKFUNC(wrapWoundLocal)] call CBA_fnc_addEventHandler;
+[QGVAR(burnDressing), LINKFUNC(burnDressingLocal)] call CBA_fnc_addEventHandler;
+
+

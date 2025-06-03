@@ -23,15 +23,16 @@ private _bandagedWounds = GET_BANDAGED_WOUNDS(_patient);
 private _bandagedWoundsOnPart = _bandagedWounds getOrDefault [_bodyPart, []];
 
 private _bandagedIndex = -1;
+private _unstitchableTypes = ["ETD", "Israeli_Bandage"];
 
 if (_treatedWound isEqualTo []) then {
     {
         private _candidate = _x;
-        _candidate params ["_id"];
+        _candidate params ["_id", "_amount", "_bleedRate", "", "_type"];
         private _classIndex = _id / 10;
         private _className = ACEGVAR(medical_damage,woundClassNames) select _classIndex;
 
-        if !(_className in ["InternalBleeding", "Evisceration"]) exitWith {
+        if (!(_className in ["InternalBleeding", "Evisceration", "Thermal_Burn"]) && !(_type in _unstitchableTypes)) exitWith {
             _treatedWound = _candidate;
             _bandagedIndex = _forEachIndex;
         };
@@ -39,11 +40,11 @@ if (_treatedWound isEqualTo []) then {
 } else {
     _bandagedIndex = _bandagedWoundsOnPart find _treatedWound;
     if (_bandagedIndex != -1) then {
-        _treatedWound params ["_treatedID"];
+        _treatedWound params ["_treatedID", "_amount", "_bleedRate", "", "_type"];
         private _classIndex = _treatedID / 10;
         private _className = ACEGVAR(medical_damage,woundClassNames) select _classIndex;
 
-        if (_className in ["InternalBleeding", "Evisceration"]) exitWith { false };
+        if ((_className in ["InternalBleeding", "Evisceration", "Thermal_Burn"]) || (_type in _unstitchableTypes)) exitWith { false };
     };
 };
 

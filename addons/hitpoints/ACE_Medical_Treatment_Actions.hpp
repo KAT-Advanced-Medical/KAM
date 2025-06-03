@@ -42,6 +42,7 @@ class ACE_Medical_Treatment_Actions {
         displayNameProgress = CSTRING(Burn_Dressing_Progress);
         icon = QPATHTOF(ui\Burn_Dressing.paa);
         condition = QFUNC(canBurnBandage);
+        callbackSuccess = QFUNC(burnDressing);
         items[] = {"kat_Burn_Dressing"};
     };
     class Abdominal_Pad: BasicBandage {
@@ -175,7 +176,7 @@ class ACE_Medical_Treatment_Actions {
         allowedSelections[] = {"All"};
         allowSelfTreatment = 1;
         medicRequired = 0;
-        treatmentTime = 2;
+        treatmentTime = 5;
         items[] = {};
         callbackSuccess = QFUNC(checkLimb);
     };
@@ -187,7 +188,7 @@ class ACE_Medical_Treatment_Actions {
         allowedSelections[] = {"LeftArm", "RightArm", "LeftLeg", "RightLeg", "UpperLeftArm", "UpperRightArm", "UpperLeftLeg", "UpperRightLeg", "Body"};
         allowSelfTreatment = 1;
         medicRequired = 0;
-        treatmentTime = 2;
+        treatmentTime = 8;
         items[] = {};
         callbackSuccess = QFUNC(checkJoints);
     };
@@ -208,5 +209,21 @@ class ACE_Medical_Treatment_Actions {
         condition = QFUNC(canBandage);
         animationPatientUnconscious = "AinjPpneMstpSnonWrflDnon_rolltoback";
         animationPatientUnconsciousExcludeOn[] = {"ainjppnemstpsnonwrfldnon"};
+    };
+    class RemoveETD: BasicBandage {
+        displayName = CSTRING(Remove_ETD);
+        displayNameProgress = CSTRING(Removing_ETD);
+        items[] = {};
+        treatmentTime = QGVAR(removalTimeETD);
+        condition = QUOTE([ARR_3(_patient,_bodyPart,'ETD')] call FUNC(hasRemovableBandage));
+        callbackSuccess = QUOTE([ARR_3(_patient,_bodyPart,'ETD')] call FUNC(removeBandage));
+    };
+    class RemoveIsraeli: BasicBandage {
+        displayName = CSTRING(Remove_Israeli);
+        displayNameProgress = CSTRING(Removing_Israeli);
+        items[] = {};
+        treatmentTime = QGVAR(removalTimeIsraeli);
+        condition = QUOTE([ARR_3(_patient,_bodyPart,'Israeli_Bandage')] call FUNC(hasRemovableBandage));
+        callbackSuccess = QUOTE([ARR_3(_patient,_bodyPart,'Israeli_Bandage')] call FUNC(removeBandage));
     };
 };

@@ -40,9 +40,10 @@ private _woundCount = count _bandagedWoundsOnPart;
 for "_i" from (_woundCount - 1) to 0 step -1 do {
     private _wound = _bandagedWoundsOnPart select _i;
     private _treatedID = _wound select 0;
+    private _type = _wound select 4;
     private _classIndex = _treatedID / 10;
     private _className = ACEGVAR(medical_damage,woundClassNames) select _classIndex;
-    if !(_className in ["InternalBleeding", "Evisceration"]) then {
+    if !(_className in ["InternalBleeding", "Evisceration", "Thermal_Burn"] || _type in ["ETD", "Israeli_Bandage"]) then {
         _treatedWound = _bandagedWoundsOnPart deleteAt _i;
         break;
     };

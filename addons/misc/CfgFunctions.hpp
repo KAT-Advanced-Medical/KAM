@@ -48,6 +48,10 @@ class CfgFunctions {
             class stitchWound {
                 file = QPATHTOF(functions\fnc_stitchWound.sqf);
             };
+            class getStitchTime {
+                file = QPATHTOF(functions\fnc_getStitchTime.sqf);
+            };
+
         };
     };
     class ace_medical {

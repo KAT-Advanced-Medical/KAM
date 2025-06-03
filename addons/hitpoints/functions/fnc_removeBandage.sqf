@@ -17,6 +17,6 @@
  * Public: No
  */
 
-params ["_medic", "_patient", "_bodyPart"];
+params ["_patient", "_bodyPart", "_type"];
 
-[QGVAR(wrapWound), [_medic, _patient, _bodyPart], _patient] call CBA_fnc_targetEvent;
+[QGVAR(removeBandage), [_patient, _bodyPart, _type], _patient] call CBA_fnc_targetEvent;

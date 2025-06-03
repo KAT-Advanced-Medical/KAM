@@ -68,8 +68,12 @@ private _bandageTime = 0;
 TRACE_1("bandageTime1",_bandageTime);
 
 switch (true) do {
-        case (_bandage in ["ETD", "Israeli_Bandage"]): {
-            _bandageTime = _bandageTime * 1.5;
+        case (_bandage in ["Israeli_Bandage"]): {
+            _bandageTime = _bandageTime * 1.25;
+            TRACE_1("bandageTime4",_bandageTime);
+        };
+        case (_bandage in ["ETD"]): {
+            _bandageTime = _bandageTime * 1.50;
             TRACE_1("bandageTime4",_bandageTime);
         };
         case (_bandage in ["Hemostatic_Gauze", "Compressed_Gauze", "fourByfour_Gauze", "Burn_Dressing"]): {

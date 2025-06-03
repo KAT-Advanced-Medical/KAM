@@ -531,5 +531,29 @@
         <Key ID="STR_KAT_Hitpoints_SETTING_InternalBleedingEnable_DESC">
             <English>Turns on internal bleeding as a wound type</English>
         </Key>
+        <Key ID="STR_KAT_Hitpoints_Remove_Israeli">
+            <English>Remove Israeli Bandage</English>
+        </Key>
+        <Key ID="STR_KAT_Hitpoints_Removing_Israeli">
+            <English>Removing Israeli Bandage</English>
+        </Key>
+        <Key ID="STR_KAT_Hitpoints_Remove_ETD">
+            <English>Remove ETD</English>
+        </Key>
+        <Key ID="STR_KAT_Hitpoints_Removing_ETD">
+            <English>Removing ETD</English>
+        </Key>
+        <Key ID="STR_KAT_Hitpoints_removalTimeETD_Description">
+            <English>Time, in seconds, required to remove an ETD.</English>
+        </Key>
+        <Key ID="STR_KAT_Hitpoints_removalTimeETD_DisplayName">
+            <English>ETD Removal Time</English>
+        </Key>
+        <Key ID="STR_KAT_Hitpoints_removalTimeIsraeli_Description">
+            <English>Time, in seconds, required to remove an Israeli Bandage.</English>
+        </Key>
+        <Key ID="STR_KAT_Hitpoints_removalTimeIsraeli_DisplayName">
+            <English>Israeli Bandage Removal Time</English>
+        </Key>
     </Package>
 </Project>

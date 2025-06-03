@@ -25,7 +25,7 @@ private _bleedingBodyParts = createHashMap;
         _x params ["_woundClassID", "_amountOf", "_bleedingRate"];
         private _classIndex = _woundClassID / 10;
         private _className = ACEGVAR(medical_damage,woundClassNames) select _classIndex;
-        (_amountOf > 0 && {_bleedingRate > 0} && !(_className in ["InternalBleeding", "Evisceration"]));
+        (_amountOf > 0 && {_bleedingRate > 0} && !(_className in ["InternalBleeding", "Evisceration", "Thermal_Burn"]));
     } != -1;
 
     if (_isBleeding) then {
@@ -34,11 +34,20 @@ private _bleedingBodyParts = createHashMap;
 } forEach GET_OPEN_WOUNDS(_unit);
 
 // Any bandaged wound on a body part not bleeding is stitchable
+private _unstitchableTypes = ["ETD", "Israeli_Bandage"];
 private _stitchableWounds = createHashMap;
 {
     if (!(_x in _bleedingBodyParts) && {_y isNotEqualTo []}) then {
-        _stitchableWounds set [_x, _y];
+        private _filteredWounds = _y select {
+            _x params ["_woundClassID", "_amountOf", "_bleedingRate", "", "_type"];
+            !(_type in _unstitchableTypes)
+        };
+
+        if (_filteredWounds isNotEqualTo []) then {
+            _stitchableWounds set [_x, _filteredWounds];
+        };
     };
 } forEach GET_BANDAGED_WOUNDS(_unit);
+
 
 _stitchableWounds

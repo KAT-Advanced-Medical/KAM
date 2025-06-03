@@ -19,4 +19,4 @@
 
 params ["_medic", "_patient", "_bodyPart"];
 
-[QGVAR(wrapWound), [_medic, _patient, _bodyPart], _patient] call CBA_fnc_targetEvent;
+[QGVAR(burnDressing), [_medic, _patient, _bodyPart], _patient] call CBA_fnc_targetEvent;

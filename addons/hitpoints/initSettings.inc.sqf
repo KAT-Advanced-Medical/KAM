@@ -172,3 +172,21 @@
     [0,100,10,0],
     true
 ] call CBA_fnc_addSetting;
+
+[
+    QGVAR(removalTimeETD),
+    "SLIDER",
+    [LSTRING(removalTimeETD_DisplayName), LSTRING(removalTimeETD_Description)],
+    [CBA_SETTINGS_CAT, ELSTRING(GUI,SubCategory_Basic)],
+    [2, 16, 8, 1],
+    true
+] call CBA_fnc_addSetting;
+
+[
+    QGVAR(removalTimeIsraeli),
+    "SLIDER",
+    [LSTRING(removalTimeIsraeli_DisplayName), LSTRING(removalTimeIsraeli_Description)],
+    [CBA_SETTINGS_CAT, ELSTRING(GUI,SubCategory_Basic)],
+    [2, 16, 6, 1],
+    true
+] call CBA_fnc_addSetting;

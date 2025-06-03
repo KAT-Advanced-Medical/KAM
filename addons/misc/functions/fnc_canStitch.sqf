@@ -28,7 +28,15 @@ private _isBleeding = false;
     private _className = ACEGVAR(medical_damage,woundClassNames) select _classIndex;
     _isBleeding = _amountOf > 0 && {_bleedingRate > 0};
     TRACE_4("canStitch",_woundClassID,_classIndex,_className,_isBleeding);
-    if (_isBleeding && !(_className in ["InternalBleeding", "Evisceration"])) then {break};
+    if (_isBleeding && !(_className in ["InternalBleeding", "Evisceration", "Thermal_Burn"])) then {break};
 } forEach (GET_OPEN_WOUNDS(_patient) get _bodyPart);
 
-(!_isBleeding && {(GET_BANDAGED_WOUNDS(_patient) getOrDefault [_bodyPart, []]) isNotEqualTo []}) // return
+private _onlyGoodBandages = false;
+{
+    _x params ["_woundClassID", "_amountOf", "_bleedingRate", "", "_type"];
+    if !(_type in ["ETD", "Israeli_Bandage"]) exitWith {
+        _onlyGoodBandages = true;
+    };
+} forEach (GET_BANDAGED_WOUNDS(_patient) get _bodyPart);
+
+(!_isBleeding && _onlyGoodBandages && {(GET_BANDAGED_WOUNDS(_patient) getOrDefault [_bodyPart, []]) isNotEqualTo []}) // return
