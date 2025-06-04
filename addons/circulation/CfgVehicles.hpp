@@ -120,7 +120,7 @@ class CfgVehicles {
                 class KAT_AED_X_PlacePads {
                     displayName = CSTRING(AEDX_Action_PlacePads);
                     condition = QUOTE([ARR_2(_player,GVAR(medLvl_AED_X))] call ACEFUNC(medical_treatment,isMedic) && [ARR_3(_player,_target,1)] call FUNC(DefibrillatorPlaced_CheckCondition));
-                    statement = QUOTE([ARR_5(_player,(_target getVariable QQGVAR(AED_X_VitalsMonitor_Patient)),'body','AEDXStationPlacePads',[_target])] call EFUNC(misc,treatment));
+                    statement = QUOTE([ARR_5(_player,(_target getVariable QQGVAR(AED_X_VitalsMonitor_Patient)),'chest','AEDXStationPlacePads',[_target])] call EFUNC(misc,treatment));
                     showDisabled = 0;
                     icon = QPATHTOF(ui\icon_aed_pads.paa);
                 };
@@ -133,14 +133,14 @@ class CfgVehicles {
                 class KAT_AED_X_RemovePads: KAT_AED_X_PlacePads {
                     displayName = CSTRING(Defibrillator_Action_RemovePads);
                     condition = QUOTE([ARR_2(_player,GVAR(medLvl_AED_X))] call ACEFUNC(medical_treatment,isMedic) && [ARR_3(_player,_target,4)] call FUNC(DefibrillatorPlaced_CheckCondition));
-                    statement = QUOTE([ARR_4(_player,(_target getVariable [ARR_2(QQGVAR(Defibrillator_Patient),nil)]),'body','DefibrillatorRemovePads')] call EFUNC(misc,treatment));
+                    statement = QUOTE([ARR_4(_player,(_target getVariable [ARR_2(QQGVAR(Defibrillator_Patient),nil)]),'chest','DefibrillatorRemovePads')] call EFUNC(misc,treatment));
                     insertChildren = "";
                     icon = QPATHTOF(ui\icon_aed_pads.paa);
                 };
                 class KAT_AED_X_ConnectMonitor {
                     displayName = CSTRING(AEDX_Action_ConnectMonitor);
                     condition = QUOTE([ARR_2(_player,GVAR(medLvl_AED_X))] call ACEFUNC(medical_treatment,isMedic) && [ARR_3(_player,_target,5)] call FUNC(DefibrillatorPlaced_CheckCondition));
-                    statement = QUOTE([ARR_5(_player,(_target getVariable QQGVAR(Defibrillator_Patient)),'rightarm','AEDXStationConnectVitalsMonitor',[_target])] call EFUNC(misc,treatment));
+                    statement = QUOTE([ARR_5(_player,(_target getVariable QQGVAR(Defibrillator_Patient)),'upperrightarm','AEDXStationConnectVitalsMonitor',[_target])] call EFUNC(misc,treatment));
                     insertChildren = QUOTE([ARR_3(_player,_target,3)] call FUNC(addDefibrillatorActions));
                     showDisabled = 0;
                     icon = QPATHTOF(ui\icon_aed_pads.paa);
@@ -154,7 +154,7 @@ class CfgVehicles {
                 class KAT_AED_X_DisconnectMonitor {
                     displayName = CSTRING(AEDX_Action_DisconnectMonitor);
                     condition = QUOTE([ARR_2(_player,GVAR(medLvl_AED_X))] call ACEFUNC(medical_treatment,isMedic) && [ARR_3(_player,_target,6)] call FUNC(DefibrillatorPlaced_CheckCondition));
-                    statement = QUOTE([ARR_4(_player,(_target getVariable QQGVAR(AED_X_VitalsMonitor_Patient)),'rightarm','AEDXDisconnectVitalsMonitor')] call EFUNC(misc,treatment));
+                    statement = QUOTE([ARR_4(_player,(_target getVariable QQGVAR(AED_X_VitalsMonitor_Patient)),'upperrightarm','AEDXDisconnectVitalsMonitor')] call EFUNC(misc,treatment));
                     showDisabled = 0;
                     icon = QPATHTOF(ui\icon_aed_pads.paa);
                 };
