@@ -67,7 +67,7 @@ _patient setVariable [QGVAR(kidneyPressure), false, true];
 _patient setVariable [QGVAR(respiratoryRate), 1, true];
 
 _patient setVariable [VAR_LOCAL_ANESTHESIA, DEFAULT_LOCAL_ANESTHESIA, true];
-
+_patient setVariable [QGVAR(activeEtomidateLoadingDose), false, true];
 _patient setVariable [QGVAR(coagulationFactor), missionNamespace getVariable [QGVAR(coagulation_factor_count), 30], true];
 
 /// Clear Stamina & weapon sway
