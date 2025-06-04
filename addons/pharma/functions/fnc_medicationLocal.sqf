@@ -77,18 +77,6 @@ private _occlusionMap = [
     [11, [11, 3]]
 ];
 
-private _occlusionMap = [
-    [4, [4, 5]],
-    [5, [5]],
-    [6, [6, 7]],
-    [7, [7]],
-    [8, [8, 9, 3]],
-    [9, [9, 3]],
-    [10, [10, 11, 3]],
-    [11, [11, 3]]
-];
-
-private _tourniquets = GET_TOURNIQUETS(_patient);
 private _idx = _occlusionMap findIf { _x#0 == _partIndex };
 private _result = if (_idx != -1) then { _occlusionMap select _idx select 1 } else { [] };
 private _isOccluded = { _tourniquets select _x != 0 } count _result > 0;
@@ -107,7 +95,8 @@ private _medicationConfig = _defaultConfig >> _classname;
 // Get and calculate medication modifiers
 if (GVAR(AMS_Enabled)) then {
     private _heartRateRatio = GET_HEART_RATE(_patient) / DEFAULT_HEART_RATE;
-    private _drugMult = ((((GET_BLOOD_VOLUME_LITERS(_patient))/ DEFAULT_BLOOD_VOLUME) * (_heartRateRatio) * ((GET_BODY_FLUID_ECB(_patient)/GET_BODY_FLUID_ECP(_patient)) / (DEFAULT_ECB/DEFAULT_ECP)) max 0.2) min 2.5);
+    TRACE_2("HeartRate",_defaultHeartRate,_heartRateRatio);
+    private _drugMult = ((((GET_BLOOD_VOLUME_LITERS(_patient)) max 0.5 / DEFAULT_BLOOD_VOLUME) * (_heartRateRatio) * ((GET_BODY_FLUID_ECB(_patient)/GET_BODY_FLUID_ECP(_patient)) / (DEFAULT_ECB/DEFAULT_ECP)) max 0.2) min 2.5);
     _painReduce             = GET_NUMBER(_medicationConfig >> "painReduce",getNumber (_defaultConfig >> "painReduce")) * _drugMult;
     _timeInSystem           = GET_NUMBER(_medicationConfig >> "timeInSystem",getNumber (_defaultConfig >> "timeInSystem")) * _drugMult;
     _timeTillMaxEffect      = GET_NUMBER(_medicationConfig >> "timeTillMaxEffect",getNumber (_defaultConfig >> "timeTillMaxEffect")) * _heartRateRatio;
@@ -122,12 +111,13 @@ if (GVAR(AMS_Enabled)) then {
     _hrIncreaseHigh         = GET_ARRAY(_medicationConfig >> "hrIncreaseHigh",getArray (_defaultConfig >> "hrIncreaseHigh"));
     _incompatibleMedication = GET_ARRAY(_medicationConfig >> "incompatibleMedication",getArray (_defaultConfig >> "incompatibleMedication"));
     _maxRelief              = GET_NUMBER(_medicationConfig >> "maxRelief",getNumber (_defaultConfig >> "maxRelief"));
-    _dose                   = GET_NUMBER(_medicationConfig >> "dose",getNumber (_defaultConfig >> "dose"));
+    _dose                   = GET_NUMBER(_medicationConfig >> "dose",getNumber (_defaultConfig >> "dose")) * _drugMult;
+    _contractility        = GET_NUMBER(_medicationConfig >> "contractility",getNumber (_defaultConfig >> "contractility")) * _drugMult;
 
     private _heartRate = GET_HEART_RATE(_patient);
     private _hrIncrease = [_hrIncreaseLow, _hrIncreaseNormal, _hrIncreaseHigh] select (floor ((0 max _heartRate min 110) / 55));
     _hrIncrease params ["_minIncrease", "_maxIncrease"];
-    _heartRateChange = _minIncrease + random (_maxIncrease - _minIncrease);
+    _heartRateChange = (_minIncrease + random (_maxIncrease - _minIncrease)) * _drugMult;
 
     private _presentPain = GET_PAIN(_patient);
     private _presentReduce = 0;
@@ -143,10 +133,10 @@ if (GVAR(AMS_Enabled)) then {
         private _medicationName = _medicationParts select 1;
         TRACE_6("adjustments1",_patient,_medicationName,_timeTillMaxEffect,_timeInSystem,_heartRateChange,_painReduce);
         TRACE_7("adjustments2",_viscosityChange,_dose,_alphaFactor,_opioidRelief,_opioidEffect,_opioidDepression,_respiratoryRate);
-        [_patient, _medicationName, _timeTillMaxEffect, _timeInSystem, _heartRateChange, _painReduce, _viscosityChange, _dose, _alphaFactor, _opioidRelief, _opioidEffect, _opioidDepression, _respiratoryRate] call EFUNC(vitals,addMedicationAdjustment);
+        [_patient, _medicationName, _timeTillMaxEffect, _timeInSystem, _heartRateChange, _painReduce, _viscosityChange, _dose, _alphaFactor, _opioidRelief, _opioidEffect, _opioidDepression, _respiratoryRate, _contractility] call EFUNC(vitals,addMedicationAdjustment);
         [_patient, _medicationName, _incompatibleMedication] call FUNC(onMedicationUsage);
     } else {
-        [_patient, _className, _timeTillMaxEffect, _timeInSystem, _heartRateChange, _painReduce, _viscosityChange, _dose, _alphaFactor, _opioidRelief, _opioidEffect, _opioidDepression, _respiratoryRate] call EFUNC(vitals,addMedicationAdjustment);
+        [_patient, _className, _timeTillMaxEffect, _timeInSystem, _heartRateChange, _painReduce, _viscosityChange, _dose, _alphaFactor, _opioidRelief, _opioidEffect, _opioidDepression, _respiratoryRate, _contractility] call EFUNC(vitals,addMedicationAdjustment);
         [_patient, _className, _incompatibleMedication] call FUNC(onMedicationUsage);
     };
 
@@ -193,6 +183,7 @@ if (GVAR(AMS_Enabled)) then {
     _incompatibleMedication = GET_ARRAY(_medicationConfig >> "incompatibleMedication",getArray (_defaultConfig >> "incompatibleMedication"));
     _maxRelief              = GET_NUMBER(_medicationConfig >> "maxRelief",getNumber (_defaultConfig >> "maxRelief"));
     _dose                   = GET_NUMBER(_medicationConfig >> "dose",getNumber (_defaultConfig >> "dose"));
+    _contractility       = GET_NUMBER(_medicationConfig >> "_contractility",getNumber (_defaultConfig >> "_contractility"));
     
     private _heartRate = GET_HEART_RATE(_patient);
     private _hrIncrease = [_hrIncreaseLow, _hrIncreaseNormal, _hrIncreaseHigh] select (floor ((0 max _heartRate min 110) / 55));
@@ -208,7 +199,7 @@ if (GVAR(AMS_Enabled)) then {
     };
     TRACE_6("adjustments1",_patient,_medicationName,_timeTillMaxEffect,_timeInSystem,_heartRateChange,_painReduce);
     TRACE_7("adjustments2",_viscosityChange,_dose,_alphaFactor,_opioidRelief,_opioidEffect,_opioidDepression,_respiratoryRate);
-    [_patient, _className, _timeTillMaxEffect, _timeInSystem, _heartRateChange, _painReduce, _viscosityChange, _dose, _alphaFactor, _opioidRelief, _opioidEffect, _opioidDepression, _respiratoryRate] call EFUNC(vitals,addMedicationAdjustment);
+    [_patient, _className, _timeTillMaxEffect, _timeInSystem, _heartRateChange, _painReduce, _viscosityChange, _dose, _alphaFactor, _opioidRelief, _opioidEffect, _opioidDepression, _respiratoryRate, _contractility] call EFUNC(vitals,addMedicationAdjustment);
     [_patient, _className, _incompatibleMedication] call FUNC(onMedicationUsage);
 
     if (_className in ["Lorazepam","Ketamine","EACA","TXA","TXAAuto","Atropine","Amiodarone","Flumazenil","Lidocaine"]) then {
@@ -219,6 +210,8 @@ if (GVAR(AMS_Enabled)) then {
     [format ["kat_pharma_%1Local", toLower _className], [_patient, _bodyPart, _opioidRelief], _patient] call CBA_fnc_targetEvent;
     };
 };
+_test = typeName _classname;
+TRACE_1("type",_test);
     if (_classname == "syringe_etomidate_5ml_3") then {
         TRACE_1("etomidateeDose",_patient);
         [{
@@ -239,32 +232,32 @@ private _TXAmedications = ["syringe_TXA_5ml_1", "syringe_TXA_10ml_1"];
     if (_classname in _TXAmedications) then {
         TRACE_1("TXADose",_patient);
         private _medication = _classname;
-        private _administered = _patient getVariable ["meds_administered", []];
-        private _effectTriggered = _patient getVariable ["effect_triggered", false];
-        private _windowActive = _patient getVariable ["meds_window_active", false];
+        private _administered = _patient getVariable ["kat_TXA_meds_administered", []];
+        private _effectTriggered = _patient getVariable ["kat_TXA_effect_triggered", false];
+        private _windowActive = _patient getVariable ["kat_TXA_meds_window_active", false];
         if (!(_medication in _administered)) then {
             _administered pushBack _medication;
-            _patient setVariable ["meds_administered", _administered, true];
+            _patient setVariable ["kat_TXA_meds_administered", _administered, true];
         };
         if (count _administered == 1) then {
-            _patient setVariable ["meds_window_active", false, true];
+            _patient setVariable ["kat_TXA_meds_window_active", false, true];
         [{
             params ["_patient"];
-            _patient setVariable ["meds_window_active", true, true];  
+            _patient setVariable ["kat_TXA_meds_window_active", true, true];  
         },
         [_patient], 180] call CBA_fnc_waitAndExecute; 
         [{
             params ["_patient"];
-            _patient setVariable ["meds_window_active", false, true]; 
+            _patient setVariable ["kat_TXA_meds_window_active", false, true]; 
         },
         [_patient], 300] call CBA_fnc_waitAndExecute; 
         };
-        if ((count _administered == count _TXAmedications) && (_patient getVariable ["meds_window_active", false]) && {!_effectTriggered}) then {
+        if ((count _administered == count _TXAmedications) && (_patient getVariable ["kat_TXA_meds_window_active", false]) && {!_effectTriggered}) then {
             _effectTriggered = true;
             [_patient, "EACA", 15, 360, "", "", "", "",  "", "", "", ""] call EFUNC(vitals,addMedicationAdjustment);
             [_patient, "Body"] call FUNC(treatmentAdvanced_EACALocal);
-            _patient setVariable ["effect_triggered", false, true];
-            _patient setVariable ["meds_administered", [], true];
-            _patient setVariable ["meds_window_active", false, true];
+            _patient setVariable ["kat_TXA_effect_triggered", false, true];
+            _patient setVariable ["kat_TXA_meds_administered", [], true];
+            _patient setVariable ["kat_TXA_meds_window_active", false, true];
         };
     };

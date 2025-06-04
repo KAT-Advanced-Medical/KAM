@@ -34,6 +34,8 @@ class ACE_ADDON(Medical_Treatment) {
         opioidEffect = 0;
         //multiplier to respiratory rate
         respiratoryRate = 0;
+        //multiplier to contractility
+        contractility = 0;
 
         class Epinephrine {
             painReduce = 0;

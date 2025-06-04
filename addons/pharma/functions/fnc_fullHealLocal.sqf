@@ -65,6 +65,9 @@ _patient setVariable [QGVAR(kidneyFail), false, true];
 _patient setVariable [QGVAR(kidneyArrest), false, true];
 _patient setVariable [QGVAR(kidneyPressure), false, true];
 _patient setVariable [QGVAR(respiratoryRate), 1, true];
+_patient setVariable [QGVAR(heartContractility), 1, true];
+
+_patient setVariable [QGVAR(activeEtomidateLoadingDose), false, true];
 
 _patient setVariable [VAR_LOCAL_ANESTHESIA, DEFAULT_LOCAL_ANESTHESIA, true];
 _patient setVariable [QGVAR(activeEtomidateLoadingDose), false, true];
