@@ -19,47 +19,64 @@
 
 params ["_patient", "_bodyPart", ["_treatedWound", []]];
 
+// Fetch wounds per body part
 private _bandagedWounds = GET_BANDAGED_WOUNDS(_patient);
-private _bandagedWoundsOnPart = _bandagedWounds getOrDefault [_bodyPart, []];
+private _wrappedWounds = GET_WRAPPED_WOUNDS(_patient);
+private _coagWounds    = GET_COAGED_WOUNDS(_patient);
 
-private _bandagedIndex = -1;
+private _bandagedWoundsOnPart = _bandagedWounds getOrDefault [_bodyPart, []];
+private _wrappedWoundsOnPart  = _wrappedWounds getOrDefault [_bodyPart, []];
+private _coagWoundsOnPart     = _coagWounds getOrDefault [_bodyPart, []];
+
 private _unstitchableTypes = ["ETD", "Israeli_Bandage"];
+
+// Combine all wounds into one array for processing
+private _allWounds = [];
+{
+    private _woundArray = _x select 0;
+    private _woundSource = _x select 1;
+    {
+        _allWounds pushBack [_x, _forEachIndex, _woundSource]; // [wound, index, source]
+    } forEach _woundArray;
+} forEach [
+    [_bandagedWoundsOnPart, "bandaged"],
+    [_wrappedWoundsOnPart, "wrapped"],
+    [_coagWoundsOnPart, "coag"]
+];
+
+private _treatedSource = "";
+private _woundIndex = -1;
 
 if (_treatedWound isEqualTo []) then {
     {
-        private _candidate = _x;
-        _candidate params ["_id", "_amount", "_bleedRate", "", "_type"];
-        private _classIndex = _id / 10;
-        private _className = ACEGVAR(medical_damage,woundClassNames) select _classIndex;
+        _x params ["_wound", "_index", "_source"];
+        _wound params ["_treatedID", "", "", "", "_type"];
 
-        if (!(_className in ["InternalBleeding", "Evisceration", "Thermal_Burn"]) && !(_type in _unstitchableTypes)) exitWith {
-            _treatedWound = _candidate;
-            _bandagedIndex = _forEachIndex;
-        };
-    } forEach _bandagedWoundsOnPart;
-} else {
-    _bandagedIndex = _bandagedWoundsOnPart find _treatedWound;
-    if (_bandagedIndex != -1) then {
-        _treatedWound params ["_treatedID", "_amount", "_bleedRate", "", "_type"];
         private _classIndex = _treatedID / 10;
         private _className = ACEGVAR(medical_damage,woundClassNames) select _classIndex;
 
-        if ((_className in ["InternalBleeding", "Evisceration", "Thermal_Burn"]) || (_type in _unstitchableTypes)) exitWith { false };
-    };
+        if (!(_className in ["InternalBleeding", "Evisceration", "Thermal_Burn"]) && !(_type in _unstitchableTypes)) exitWith {
+            _treatedWound = _wound;
+            _woundIndex = _index;
+            _treatedSource = _source;
+        };
+    } forEach _allWounds;
 };
 
+// Exit if no valid wound found
+if (_woundIndex == -1) exitWith { false };
 
+// Remove wound from the correct array
+switch (_treatedSource) do {
+    case "bandaged": { _bandagedWoundsOnPart deleteAt _woundIndex };
+    case "wrapped":  { _wrappedWoundsOnPart  deleteAt _woundIndex };
+    case "coag":     { _coagWoundsOnPart     deleteAt _woundIndex };
+};
 
-// Wound doesn't exist or there are no bandaged wounds to stitch
-if (_bandagedIndex == -1) exitWith {false};
-
-// Remove the wound from bandagedWounds
-_bandagedWoundsOnPart deleteAt _bandagedIndex;
-
+// Extract wound data
 _treatedWound params ["_treatedID", "_treatedAmountOf", "", "_treatedDamageOf"];
 
-
-// Check if we need to add a new stitched wound or increase the amount of an existing one
+// Update stitched wounds
 private _stitchedWounds = GET_STITCHED_WOUNDS(_patient);
 private _stitchedWoundsOnPart = _stitchedWounds getOrDefault [_bodyPart, [], true];
 
@@ -71,24 +88,28 @@ private _stitchedIndex = _stitchedWoundsOnPart findIf {
 if (_stitchedIndex == -1) then {
     _stitchedWoundsOnPart pushBack _treatedWound;
 } else {
-    private _wound = _stitchedWoundsOnPart select _stitchedIndex;
-    _wound set [1, (_wound select 1) + _treatedAmountOf];
+    private _existingWound = _stitchedWoundsOnPart select _stitchedIndex;
+    _existingWound set [1, (_existingWound select 1) + _treatedAmountOf];
 };
 
+// Clear trauma if enabled
 if (GVAR(clearTrauma) == 1) then {
-    TRACE_2("trauma - clearing trauma after stitching",_bodyPart,_treatedWound);
     [_patient, _bodyPart, -(_treatedDamageOf * _treatedAmountOf)] call ACEFUNC(medical_treatment,addTrauma);
 };
 
+// Save updated wound data
 _patient setVariable [VAR_BANDAGED_WOUNDS, _bandagedWounds, true];
+_patient setVariable [VAR_WRAPPED_WOUNDS, _wrappedWounds, true];
+_patient setVariable [VAR_COAGED_WOUNDS, _coagWounds, true];
 _patient setVariable [VAR_STITCHED_WOUNDS, _stitchedWounds, true];
 
-// Check if we fixed limping by stitching this wound (only for leg wounds)
+// Limb recheck if necessary
 if (
     ACEGVAR(medical,limping) == 2
-    && {_patient getVariable [QEGVAR(medical,isLimping), false]}
-    && {_bodyPart in ["leftleg", "rightleg", "upperleftleg", "upperrightleg"]}
+    && { _patient getVariable [QEGVAR(medical,isLimping), false] }
+    && { _bodyPart in ["leftleg", "rightleg", "upperleftleg", "upperrightleg"] }
 ) then {
-    TRACE_3("Updating damage effects",_patient,_bodyPart,local _patient);
     [QEGVAR(medical_engine,updateDamageEffects), _patient, _patient] call CBA_fnc_targetEvent;
 };
+
+true

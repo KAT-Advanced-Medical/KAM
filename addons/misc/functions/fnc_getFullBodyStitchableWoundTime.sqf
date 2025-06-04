@@ -32,7 +32,7 @@ private _bleedingBodyParts = createHashMap;
         _bleedingBodyParts set [_x, true];
     };
 } forEach GET_OPEN_WOUNDS(_unit);
-
+private _totalAmount = 0;
 // Any bandaged wound on a body part not bleeding is stitchable
 private _unstitchableTypes = ["ETD", "Israeli_Bandage"];
 private _stitchableWounds = createHashMap;
@@ -40,7 +40,8 @@ private _stitchableWounds = createHashMap;
     if (!(_x in _bleedingBodyParts) && {_y isNotEqualTo []}) then {
         private _filteredWounds = _y select {
             _x params ["_woundClassID", "_amountOf", "_bleedingRate", "", "_type"];
-            !(_type in _unstitchableTypes)
+            !(_type in _unstitchableTypes);
+            _totalAmount = _totalAmount + _amountOf;
         };
 
         if (_filteredWounds isNotEqualTo []) then {
@@ -53,7 +54,8 @@ private _stitchableWounds = createHashMap;
     if (!(_x in _bleedingBodyParts) && {_y isNotEqualTo []}) then {
         private _filteredWounds = _y select {
             _x params ["_woundClassID", "_amountOf", "_bleedingRate", "", "_type"];
-            !(_type in _unstitchableTypes)
+            !(_type in _unstitchableTypes);
+            _totalAmount = _totalAmount + _amountOf;
         };
 
         if (_filteredWounds isNotEqualTo []) then {
@@ -66,7 +68,8 @@ private _stitchableWounds = createHashMap;
     if (!(_x in _bleedingBodyParts) && {_y isNotEqualTo []}) then {
         private _filteredWounds = _y select {
             _x params ["_woundClassID", "_amountOf", "_bleedingRate", "", "_type"];
-            !(_type in _unstitchableTypes)
+            !(_type in _unstitchableTypes);
+            _totalAmount = _totalAmount + _amountOf;
         };
 
         if (_filteredWounds isNotEqualTo []) then {
@@ -76,4 +79,4 @@ private _stitchableWounds = createHashMap;
 } forEach GET_WRAPPED_WOUNDS(_unit);
 
 
-_stitchableWounds
+_totalAmount

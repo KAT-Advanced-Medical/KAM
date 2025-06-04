@@ -18,10 +18,8 @@
 
 params ["", "_patient"];
 
-private _stitchableTotal = 0;
+private _amount = 0;
 
-{
-    _stitchableTotal = _stitchableTotal + count _y;
-} forEach (_patient call FUNC(getFullBodyStitchableWounds));
+private _amount = _patient call FUNC(getFullBodyStitchableWoundTime);
 
-_stitchableTotal * ACEGVAR(medical_treatment,woundStitchTime);
+_amount * ACEGVAR(medical_treatment,woundStitchTime);

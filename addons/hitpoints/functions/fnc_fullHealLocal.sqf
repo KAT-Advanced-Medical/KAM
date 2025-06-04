@@ -56,6 +56,8 @@ _patient setVariable [QACEGVAR(medical,occludedMedications), nil, true];
 _patient setVariable [VAR_OPEN_WOUNDS, createHashMap, true];
 _patient setVariable [VAR_BANDAGED_WOUNDS, createHashMap, true];
 _patient setVariable [VAR_STITCHED_WOUNDS, createHashMap, true];
+_patient setVariable [VAR_COAGED_WOUNDS, createHashMap, true];
+_patient setVariable [VAR_WRAPPED_WOUNDS, createHashMap, true];
 _patient setVariable [QACEGVAR(medical,isLimping), false, true];
 _patient setVariable [VAR_FRACTURES, DEFAULT_FRACTURE_VALUES, true];
 

@@ -174,6 +174,10 @@
 #define VAR_OPEN_WOUNDS       QACEGVAR(medical,openWounds)
 #define VAR_BANDAGED_WOUNDS   QACEGVAR(medical,bandagedWounds)
 #define VAR_STITCHED_WOUNDS   QACEGVAR(medical,stitchedWounds)
+#define VAR_COAGED_WOUNDS     QEGVAR(hitpoints,coagedWounds)
+#define VAR_WRAPPED_WOUNDS    QEGVAR(hitpoints,wrappedWounds)
+#define GET_COAGED_WOUNDS(unit)   (unit getVariable [VAR_COAGED_WOUNDS, createHashMap])
+#define GET_WRAPPED_WOUNDS(unit)   (unit getVariable [VAR_WRAPPED_WOUNDS, createHashMap])
 // These variables track gradual adjustments (from medication, etc.)
 #define VAR_MEDICATIONS       QACEGVAR(medical,medications)
 // These variables track the current state of status values above

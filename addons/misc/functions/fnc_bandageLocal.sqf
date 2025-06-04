@@ -53,8 +53,18 @@ private _clearConditionCache = false;
 
     // Handle reopening bandaged wounds
     if (_impact > 0 && {ACEGVAR(medical_treatment,advancedBandages) == 2}) then {
-        [_patient, _impact, _bodyPart, _woundIndex, _wound, _bandage] call ACEFUNC(medical_treatment,handleBandageOpening);
+    switch (true) do {
+        case ((toLower _bandage) find "wrapped" != -1): {
+            [_patient, _impact, _bodyPart, _woundIndex, _wound, _bandage] call FUNC(handleWrappedReopening);
+        };
+        case ((toLower _bandage) find "bloodclot" != -1): {
+            [_patient, _impact, _bodyPart, _woundIndex, _wound, _bandage] call FUNC(handleCoagReopening);
+        };
+        default {
+            [_patient, _impact, _bodyPart, _woundIndex, _wound, _bandage] call ACEFUNC(medical_treatment,handleBandageOpening);
+        };
     };
+};
 } forEach _targetWounds;
 
 _patient setVariable [VAR_OPEN_WOUNDS, _openWounds, true];

@@ -22,13 +22,35 @@ params ["", "_patient", "_bodyPart"];
 private _unstitchableTypes = ["ETD", "Israeli_Bandage"];
 
 private _bandagedWounds = GET_BANDAGED_WOUNDS(_patient) getOrDefault [_bodyPart, []];
+private _clottedWounds  = GET_COAGED_WOUNDS(_patient) getOrDefault [_bodyPart, []];
+private _wrappedWounds = GET_WRAPPED_WOUNDS(_patient) getOrDefault [_bodyPart, []];
+private _startingAmountOf = 0;
 
 private _stitchableWounds = _bandagedWounds select {
-    _x params ["_woundClassID", "_amountOf", "_bleedingRate", "", "_type"];
+    _x params ["_woundClassID", "_amountOfWounds", "_bleedingRate", "", "_type"];
     
     private _classIndex = _woundClassID / 10;
     private _className = ACEGVAR(medical_damage,woundClassNames) select _classIndex;
+    _amountOf = _amountOf + _amountOfWounds;
     !(_type in _unstitchableTypes) && !(_className in ["InternalBleeding", "Evisceration", "Thermal_Burn"]);
 };
 
-count _stitchableWounds * ACEGVAR(medical_treatment,woundStitchTime)
+private _stitchableClottedWounds = _clottedWounds select {
+    _x params ["_woundClassID", "_amountOfWounds", "_bleedingRate", "", "_type"];
+    
+    private _classIndex = _woundClassID / 10;
+    private _className = ACEGVAR(medical_damage,woundClassNames) select _classIndex;
+    _amountOf = _amountOf + _amountOfWounds;
+    !(_type in _unstitchableTypes) && !(_className in ["InternalBleeding", "Evisceration", "Thermal_Burn"]);
+};
+
+private _stitchableWrappedWounds = _wrappedWounds select {
+    _x params ["_woundClassID", "_amountOfWounds", "_bleedingRate", "", "_type"];
+    
+    private _classIndex = _woundClassID / 10;
+    private _className = ACEGVAR(medical_damage,woundClassNames) select _classIndex;
+    _amountOf = _amountOf + _amountOfWounds;
+    !(_type in _unstitchableTypes) && !(_className in ["InternalBleeding", "Evisceration", "Thermal_Burn"]);
+};
+TRACE_1("AmountOf",_amountOf);
+_amountOf * ACEGVAR(medical_treatment,woundStitchTime)
