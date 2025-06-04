@@ -62,7 +62,14 @@ if (random 100 < GVAR(closedReductionFailChance)) exitWith {
     [_output, 1.5, _medic] call ACEFUNC(common,displayTextStructured);
 };
 
-_activeFracture set [_part, 0];
+_activeFracture set [_part, -3];
+private _delay = (random [120, 200, 240]);
+[{
+    params ["_patient", "_activeFracture"];
+    _activeFracture set [_part, 0];
+    [_patient] call EFUNC(misc,updateDamageEffects);
+    _patient setVariable [VAR_FRACTURES, _activeFracture, true];
+}, [_patient, _activeFracture], _delay] call CBA_fnc_waitAndExecute;
 _fractureArray set [_part, 0];
 
 _patient setVariable [QGVAR(fractures), _fractureArray, true];

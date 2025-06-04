@@ -41,8 +41,15 @@ if (_exit) exitWith {
 if ((_liveFracture == 2.5) || (_liveFracture == 3.5)) exitWith {
     _liveFracture = 0;
 
-    _activeFracture set [_part, _liveFracture];
+    _activeFracture set [_part, -3];
     _fractureArray set [_part, _liveFracture];
+    private _delay = (random [120, 200, 240]);
+        [{
+            params ["_patient", "_activeFracture"];
+            _activeFracture set [_part, 0];
+            [_patient] call EFUNC(misc,updateDamageEffects);
+            _patient setVariable [VAR_FRACTURES, _activeFracture, true];
+        }, [_patient, _activeFracture], _delay] call CBA_fnc_waitAndExecute;
 
     _patient setVariable [QGVAR(fractures), _fractureArray, true];
     _patient setVariable [VAR_FRACTURES, _activeFracture, true];

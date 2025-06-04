@@ -92,7 +92,7 @@ class ACE_Medical_Injuries {
 
         class bullet {
             // bullets only create multiple wounds when the damage is very high
-            thresholds[] = {{20, 10}, {4.5, 2}, {3, 1}, {0, 1}};
+            thresholds[] = {{20, 10}, {10, 6}, {4.5, 2}, {3, 1}, {0, 1}};
             selectionSpecific = 1;
             class woundHandlers: woundHandlers {
                 GVAR(eviscerationHit) = QFUNC(woundsHandlerEviscerationHit);
@@ -126,8 +126,8 @@ class ACE_Medical_Injuries {
                 sizeMultiplier = 0.9;
             };
             class InternalBleeding {
-                weighting[] = {{1, 1}, {0.35, 0}};
-                sizeMultiplier = 0.3;
+                weighting[] = {{1.7, 1}, {1.1, 1}, {0.7, 0}};
+                sizeMultiplier = 0.5;
             };
         };
         class grenade {

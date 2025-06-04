@@ -26,11 +26,54 @@ private _noJog = false;
 private _noThrow = false;
 private _keepProne = false;
 private _holsterWeapon = false;
+private _hasPainMed = false;
 private _aimFracture = 0;
 private _armJointArray = GET_JOINTS(_unit) select [0, 2];
 private _legJointArray = GET_JOINTS(_unit) select [2, 2];
-_unit setVariable [QGVAR(keepProne), _keepProne, true];
-_unit setVariable [QGVAR(holsterWeapon), _holsterWeapon, true];
+// First, check if the unit already has a PFH stored
+if (isNil {_unit getVariable [QGVAR(painMedPFH), nil]}) then {
+    private _pfhID = [{
+        _this params ["_args", "_pfhID"];
+        _args params ["_unit"];
+
+        if (!alive _unit || {_unit != ACE_player}) exitWith {
+            _pfhID call CBA_fnc_removePerFrameHandler;
+            _unit setVariable [QGVAR(painMedPFH), nil]; // Clear the tracking variable
+        };
+
+        private _medStack = _unit call ACEFUNC(medical_treatment,getAllMedicationCount);
+        private _fentanylEffectiveness = 0;
+        private _ketamineEffectiveness = 0;
+        private _nalbuphineEffectiveness = 0;
+        private _morphineEffectiveness = 0;
+
+        {
+            private _medName = toLower (_x select 0);
+            private _effectiveness = _x select 2;
+            if ("fentanyl" in _medName) then {
+                _fentanylEffectiveness = _fentanylEffectiveness max _effectiveness;
+            };
+            if ("ketamine" in _medName) then {
+                _ketamineEffectiveness = _ketamineEffectiveness max _effectiveness;
+            };
+            if ("nalbuphine" in _medName) then {
+                _nalbuphineEffectiveness = _nalbuphineEffectiveness max _effectiveness;
+            };
+            if ("morphine" in _medName) then {
+                _morphineEffectiveness = _morphineEffectiveness max _effectiveness;
+            };
+        } forEach _medStack;
+
+        private _hasPainMed = (
+            _fentanylEffectiveness >= 0.6 ||
+            _ketamineEffectiveness >= 0.6 ||
+            _nalbuphineEffectiveness >= 0.6 ||
+            _morphineEffectiveness >= 0.6
+        );
+        [_unit] call FUNC(updateDamageEffects);
+    }, 15, [_unit]] call CBA_fnc_addPerFrameHandler;
+    _unit setVariable [QGVAR(painMedPFH), _pfhID];
+};
 if (ACEGVAR(medical,fractures) > 0) then {
     private _fractures = GET_FRACTURES(_unit);
     TRACE_1("",_fractures);
@@ -46,11 +89,11 @@ if (ACEGVAR(medical,fractures) > 0) then {
 
     if (ACEGVAR(medical,fractures) in [2, 3]) then { // the limp with a splint will still cause effects
         // Block sprint / force walking based on fracture setting and leg splint status
-        _hasLegSplint = (_fractures select 8) in [-1, -2] || (_fractures select 9) in [-1, -2] || (_fractures select 10) in [-1, -2] || (_fractures select 11) in [-1, -2];
+        _hasLegSplint = (_fractures select 8) in [-1, -2, -3] || (_fractures select 9) in [-1, -2, -3] || (_fractures select 10) in [-1, -2, -3] || (_fractures select 11) in [-1, -2, -3];
         if (ACEGVAR(medical,fractures) == 2) then {
-            _noSprint = _hasLegSplint;
+            _noSprint = _hasLegSplint && !_hasPainMed;
         } else {
-            _noJog = _hasLegSplint;
+            _noJog = _hasLegSplint && !_hasPainMed;
         };
 
         if ((_fractures select 4) in [-1, -2]) then { _aimFracture = _aimFracture + 2; };
@@ -155,7 +198,8 @@ if (_hasLegStrainInjury) then {
     _noSprint = true;
 };
 
-if (_hasLegStrainInjury && (random 100 > 50)) then {
+
+if (_hasLegStrainInjury && (random 100 > 50) && !_hasPainMed) then {
     _noSprint = true;
     _noJog = true;
 };
@@ -164,7 +208,7 @@ if (_hasLegSprainInjury) then {
     _noSprint = true;
 };
 
-if (_hasLegSprainInjury && (random 100 > 50)) then {
+if (_hasLegSprainInjury && (random 100 > 50) && !_hasPainMed) then {
     _noSprint = true;
     _noJog = true;
     _isLimping = true;
@@ -178,11 +222,21 @@ if (_hasLegDislocationInjury) then {
     _keepProne = true;
 };
 
-if (_hasLegJointInjury) then {
+if (_hasLegJointInjury && !_hasPainMed) then {
     _noSprint = true;
     _noJog = true;
     _isLimping = true;
 };
+
+if (_hasLegJointInjury && (random 100 > 50) && _hasPainMed) then {
+    _noSprint = true;
+    _noJog = true;
+};
+
+if (_hasLegJointInjury && _hasPainMed) then {
+    _noSprint = true;
+};
+
 
 if (_hasArmDislocationInjury) then {
     _noThrow = true;
@@ -204,12 +258,14 @@ if (_unit getVariable [QEGVAR(surgery,reboa), false]) then {
 
 _unit setVariable [QACEGVAR(medical,isLimping), _isLimping, true];
 _unit setVariable [QGVAR(keepProne), _keepProne, true];
-
-[{
+if (isNil {_unit getVariable [QGVAR(keepPronePFH), nil]}) then {
+    private _pfhID = [{
         _this params ["_args", "_pfhID"];
         _args params ["_unit"];
-        if (!alive _unit || {!(_unit getVariable [QGVAR(keepProne), false])} || (_unit != ACE_player)) exitWith {
+
+        if (!alive _unit || {_unit != ACE_player} || {!(_unit getVariable [QGVAR(keepProne), false])}) exitWith {
             _pfhID call CBA_fnc_removePerFrameHandler;
+            _unit setVariable [QGVAR(keepPronePFH), nil]; // Clear the tracking variable
         };
         private _state = animationState _unit;
         TRACE_1("State",_state);
@@ -218,7 +274,9 @@ _unit setVariable [QGVAR(keepProne), _keepProne, true];
             TRACE_2("State2",_state,_unit);
 
         };
-}, 0.05, [_unit]] call CBA_fnc_addPerFrameHandler;
+    }, 0.05, [_unit]] call CBA_fnc_addPerFrameHandler;
+    _unit setVariable [QGVAR(keepPronePFH), _pfhID];
+};
 
 // refresh
 private _isDamaged = _unit getHitPointDamage "HitLegs" >= DAMAGED_MIN_THRESHOLD && {_unit getHitPointDamage "HitLegs" != LIMPING_MIN_DAMAGE};
