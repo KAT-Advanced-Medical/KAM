@@ -30,8 +30,7 @@ if (_bloodLoss > (ACEGVAR(medical,const_bloodLossKnockOutThreshold) * _cardiacOu
 
 private _bloodPressure = GET_BLOOD_PRESSURE(_unit);
 _bloodPressure params ["_bloodPressureL", "_bloodPressureH"];
-private _map = _bloodPressureL + (0.3333333333 * (_bloodPressureH - _bloodPressureL));
-if (_map < 60 || {_map < 120}) exitWith { false };
+if (_bloodPressureL < 50 || {_bloodPressureH < 60}) exitWith { false };
 
 private _heartRate = GET_HEART_RATE(_unit);
 if (_heartRate < 40) exitWith { false };

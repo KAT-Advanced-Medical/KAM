@@ -60,7 +60,7 @@ if (_bloodPressureLow > 40) then {
             _bloodPressureOutput = ACELSTRING(medical_treatment,Check_Bloodpressure_Output_2);
             _logOutput = ACELSTRING(medical_treatment,Check_Bloodpressure_Low);
 
-            if (_bloodPressureHigh > 80) then {
+            if (_bloodPressureHigh > 100) then {
                 _bloodPressureOutput = ACELSTRING(medical_treatment,Check_Bloodpressure_Output_3);
                 _logOutput = ACELSTRING(medical_treatment,Check_Bloodpressure_Normal);
 

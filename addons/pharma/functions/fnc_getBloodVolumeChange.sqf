@@ -21,7 +21,6 @@ params ["_unit", "_deltaT", "_syncValues"];
 
 private _bloodLoss = GET_BLOOD_LOSS(_unit);
 private _internalBleeding = GET_INTERNAL_BLEEDING(_unit);
-private _defaultHeartRate = _unit getVariable [QEGVAR(circulation,defaultHeartRate), 80];
 private _bloodPressure = GET_BLOOD_PRESSURE(_unit);
 _bloodPressure params ["_bloodPressureL", "_bloodPressureH"];
 private _map = _bloodPressureL + (0.3333333333 * (_bloodPressureH - _bloodPressureL));
@@ -30,7 +29,7 @@ TRACE_3("correctedMAP",_correctedMap,_map,_bloodPressure);
 private _flowMap = linearConversion [14.3333, 174.3333, _map, 0.05, 2, true];
 TRACE_1("flowMAP",_flowMap);
 private _heartRate = GET_HEART_RATE(_unit);
-private _lossVolumeChange = (-_deltaT * ((_bloodLoss + _internalBleeding * (_heartRate / _defaultHeartRate) * _correctedMap) / GET_VASOCONSTRICTION(_unit)));
+private _lossVolumeChange = (-_deltaT * ((_bloodLoss + _internalBleeding * (GET_HEART_RATE(_unit) / DEFAULT_HEART_RATE) * _correctedMap) / GET_VASOCONSTRICTION(_unit)));
 private _enableFluidShift = EGVAR(vitals,enableFluidShift);
 private _fluidVolume = GET_BODY_FLUID(_unit);
 TRACE_3("gbvc",_internalBleeding,_bloodLoss,_heartRate);
@@ -42,7 +41,7 @@ _ECB = (_ECB + (_lossVolumeChange * LITERS_TO_ML) / 2) max 100;
 if (!isNil {_unit getVariable [QACEGVAR(medical,ivBags),[]]}) then {
     private _bloodBags = _unit getVariable [QACEGVAR(medical,ivBags), []];
     private _IVarray = _unit getVariable [QGVAR(IV), [0,0,0,0,0,0,0,0,0,0,0,0]];
-    private _flowCalculation = (ACEGVAR(medical,ivFlowRate) * _deltaT * 4.16 * _flowMap);
+    private _flowCalculation = (ACEGVAR(medical,ivFlowRate) * _deltaT * 4.16);
     private _hypothermia = EGVAR(hypothermia,hypothermiaActive);
     private _vasoconstriction = GET_VASOCONSTRICTION(_unit);
 
@@ -143,15 +142,13 @@ if (!isNil {_unit getVariable [QACEGVAR(medical,ivBags),[]]}) then {
             _bagVolumeRemaining = _bagVolumeRemaining - _bagChange;
             _incomingFlowAmount set [_bodyPart, ((_incomingFlowAmount select _bodyPart) + _bagChange)];
             _unit setVariable [QGVAR(IVincomingFlowAmount), _incomingFlowAmount, true];
-            private _defaultHeartRate = _patient getVariable [QGVAR(defaultHeartRate), 80]; 
-            private _heartRateRatio = GET_HEART_RATE(_patient) / _defaultHeartRate;
-            private _drugMult = ((((GET_BLOOD_VOLUME_LITERS(_unit)) max 0.5 / DEFAULT_BLOOD_VOLUME) * (_heartRateRatio) * ((GET_BODY_FLUID_ECB(_patient)/GET_BODY_FLUID_ECP(_patient)) / (DEFAULT_ECB/DEFAULT_ECP)) max 0.2) min 2.5);
-
+            private _heartRateRatio = GET_HEART_RATE(_patient) / DEFAULT_HEART_RATE;
+            private _drugMult = ((((GET_BLOOD_VOLUME_LITERS(_patient))/ DEFAULT_BLOOD_VOLUME) * (_heartRateRatio) * ((GET_BODY_FLUID_ECB(_patient)/GET_BODY_FLUID_ECP(_patient)) / (DEFAULT_ECB/DEFAULT_ECP)) max 0.2) min 2.5);
             private _defaultConfig = configFile >> QUOTE(ACE_ADDON(Medical_Treatment)) >> "IV";
             private _ivConfig = _defaultConfig >> _type;
             private _painReduce             = (GET_NUMBER(_ivConfig >> "painReduce",getNumber (_defaultConfig >> "painReduce")) * _medicationMult) * _drugMult;
             private _timeInSystem           = (GET_NUMBER(_ivConfig >> "timeInSystem",getNumber (_defaultConfig >> "timeInSystem")) * _medicationMult) * _drugMult;
-            private _timeTillMaxEffect      = (GET_NUMBER(_ivConfig >> "timeTillMaxEffect",getNumber (_defaultConfig >> "timeTillMaxEffect")) * _medicationMult);
+            private _timeTillMaxEffect      = (GET_NUMBER(_ivConfig >> "timeTillMaxEffect",getNumber (_defaultConfig >> "timeTillMaxEffect")) * _medicationMult) * _drugMult;
             private _viscosityChange        = (GET_NUMBER(_ivConfig >> "viscosityChange",getNumber (_defaultConfig >> "viscosityChange")) * _medicationMult) * _drugMult;
             private _hrIncreaseLow          = GET_ARRAY(_ivConfig >> "hrIncreaseLow",getArray (_defaultConfig >> "hrIncreaseLow"));
             private _hrIncreaseNormal       = GET_ARRAY(_ivConfig >> "hrIncreaseNormal",getArray (_defaultConfig >> "hrIncreaseNormal"));
@@ -163,7 +160,6 @@ if (!isNil {_unit getVariable [QACEGVAR(medical,ivBags),[]]}) then {
             private _dose                   = (GET_NUMBER(_ivConfig >> "dose",getNumber (_defaultConfig >> "dose")) * _medicationMult) * _drugMult;
             private _respiratoryRate        = (GET_NUMBER(_ivConfig >> "respiratoryRate",getNumber (_defaultConfig >> "respiratoryRate")) * _medicationMult) * _drugMult;
             private _opioidDepression       = (GET_NUMBER(_ivConfig >> "opioidDepression",getNumber (_defaultConfig >> "opioidDepression")) * _medicationMult) * _drugMult;
-            private _contractility          = (GET_NUMBER(_ivConfig >> "contractility",getNumber (_defaultConfig >> "contractility"))* _medicationMult) * _drugMult;
             private _heartRate = GET_HEART_RATE(_unit);
             private _hrIncrease = [_hrIncreaseLow, _hrIncreaseNormal, _hrIncreaseHigh] select (floor ((0 max _heartRate min 110) / 55));
             _hrIncrease params ["_minIncrease", "_maxIncrease"];
