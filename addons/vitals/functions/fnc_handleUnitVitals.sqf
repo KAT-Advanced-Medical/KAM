@@ -156,7 +156,8 @@ private _bloodPressure = [_unit] call EFUNC(circulation,getBloodPressure);
 _unit setVariable [VAR_BLOOD_PRESS, _bloodPressure, _syncValues];
 
 _bloodPressure params ["_bloodPressureL", "_bloodPressureH"];
-
+private _map = _bloodPressureL + (0.3333333333 * (_bloodPressureH - _bloodPressureL));
+TRACE_1("MAP",_map);
 // Statements are ordered by most lethal first.
 switch (true) do {
     case ((_spo2 < EGVAR(breathing,SpO2_dieValue)) && EGVAR(breathing,SpO2_dieActive)): {
@@ -179,8 +180,8 @@ switch (true) do {
         TRACE_2("heartRate Fatal",_unit,_heartRate);
         [QACEGVAR(medical,FatalVitals), _unit] call CBA_fnc_localEvent;
     };
-    case (_bloodPressureL < 20 || {_bloodPressureL > 180}): {
-        TRACE_2("bloodPressure L above or below limits",_unit,_bloodPressureL);
+    case (_map < 45 || {_map > 140}): {
+        TRACE_2("Mean Arterial Pressure above or below limits",_unit,_map);
         [QACEGVAR(medical,CriticalVitals), _unit] call CBA_fnc_localEvent;
     };
     case (_spo2 < EGVAR(breathing,SpO2_unconscious)): {
