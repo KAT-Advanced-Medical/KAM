@@ -184,7 +184,10 @@ switch (true) do {
         TRACE_2("heartRate Fatal",_unit,_heartRate);
         [QACEGVAR(medical,FatalVitals), _unit] call CBA_fnc_localEvent;
     };
-    case (_map < 45 || {_map > 160}): {
+    case (_map < 25 || {_map > 240}): {
+        [QACEGVAR(medical,FatalVitals), _unit] call CBA_fnc_localEvent;
+    };
+    case (_map < 45 || {_map > 190}): {
         [QACEGVAR(medical,CriticalVitals), _unit] call CBA_fnc_localEvent;
     };
     case (_spo2 < EGVAR(breathing,SpO2_unconscious)): {

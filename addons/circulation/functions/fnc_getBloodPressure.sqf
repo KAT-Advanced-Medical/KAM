@@ -28,7 +28,32 @@ params ["_unit"];
 private _cardiacOutput = [_unit] call EFUNC(vitals,getCardiacOutput);
 private _resistance = _unit getVariable [VAR_PERIPH_RES, DEFAULT_PERIPH_RES];
 private _vasoconstriction = GET_VASOCONSTRICTION(_unit);
-private _bloodPressure = (_cardiacOutput * _resistance) / (((_vasoconstriction max 0.3) min 1.8) * 0.35);
+private _tourniquets = GET_TOURNIQUETS(_unit);
+private _occlusionMap = [
+    [4, [4, 5]],
+    [5, [5]],
+    [6, [6, 7]],
+    [7, [7]],
+    [8, [8, 9, 3]],
+    [9, [9, 3]],
+    [10, [10, 11, 3]],
+    [11, [11, 3]]
+];
+private _occludedParts = [];
+{
+    private _index = _forEachIndex;
+    private _isActive = _x != 0;
+    if (_isActive) then {
+        private _mapIndex = _occlusionMap findIf { _x#0 == _index };
+        if (_mapIndex != -1) then {
+            _occludedParts append (_occlusionMap select _mapIndex select 1);
+        };
+    };
+} forEach _tourniquets;
+TRACE_1("Occluded",_occludedParts);
+private _uniqueOccluded = _occludedParts arrayIntersect _occludedParts;
+private _countOccluded = count _uniqueOccluded;
+private _bloodPressure = ((_cardiacOutput * _resistance) / ((_vasoconstriction max 0.4) min 1.8)) * (1.08 ^ _countOccluded);
 TRACE_3("BP1",_cardiacOutput,_resistance,_bloodPressure);
 
 private _BPChange = _unit getVariable [VAR_BLOODPRESSURE_CHANGE, []];
