@@ -119,10 +119,10 @@ if (_notInVehicle) then {
         };
         private _part = ALL_BODY_PARTS find toLower _bodyPart;
         private _appliedPressure = GET_APPLIEDPRESSURE(_patient);
-        private _randomPressureAmmount = selectRandom [0.3, 0.4, 0.5, 0.6, 0.7];
+        private _randomPressureAmmount = selectRandom [0.6, 0.7, 0.8];
         [_patient] call ACEFUNC(medical_status,updateWoundBloodLoss);
         _appliedPressure set [_part, _randomPressureAmmount];
         _patient setVariable [VAR_APPLIEDPRESSURE, _appliedPressure, true];
         TRACE_2("Pressure3",_appliedPressure,_randomPressureAmmount);
-    }, 0.5, [_medic, _patient, _bodypart]] call CBA_fnc_addPerFrameHandler;
+    }, 5, [_medic, _patient, _bodypart]] call CBA_fnc_addPerFrameHandler;
 }, [_medic, _patient, _bodypart], 0.2] call CBA_fnc_waitAndExecute;

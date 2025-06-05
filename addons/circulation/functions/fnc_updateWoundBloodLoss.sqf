@@ -47,13 +47,28 @@ private _bodyExternalPartBleeding = [0,0,0,0,0,0,0,0,0,0,0,0];
         private _partBleeding = 0;
         {
             _x params ["_woundClassID", "_amountOf", "_bleeding"];
+            private _classIndex = _woundClassID / 10;
+            private _category   = _woundClassID % 10;
+            private _suffix = ["Minor", "Medium", "Large"] select _category;
+            private _className = ACEGVAR(medical_damage,woundClassNames) select _classIndex;
             if (_isPressureApplied) then {
-                _partBleeding = _partBleeding + ((_amountOf * _bleeding) * _pressureApplied);
+                switch (true) do {
+                    case (_suffix == "Minor"): {
+                        _partBleeding = _partBleeding + ((_amountOf * _bleeding) * (_pressureApplied * 1.5));
+                    };
+                    case (_suffix == "Medium"): {
+                        _partBleeding = _partBleeding + ((_amountOf * _bleeding) * _pressureApplied);
+                    };
+                    case (_suffix == "Large"): {
+                        _partBleeding = _partBleeding + ((_amountOf * _bleeding) * (_pressureApplied * 0.7));
+                    };
+                    default {
+                        _partBleeding = _partBleeding + ((_amountOf * _bleeding) * _pressureApplied);
+                    };
+                };
             } else {
                 _partBleeding = _partBleeding + (_amountOf * _bleeding);
             };
-            private _classIndex = _woundClassID / 10;
-            private _className = ACEGVAR(medical_damage,woundClassNames) select _classIndex;
             if !(_className in ["InternalBleeding"]) then {
                 _bodyExternalPartBleeding set [_partIndex, _partBleeding];
                 TRACE_3("updateWoundBloodLossExternal",_partBleeding,_bodyExternalPartBleeding,_partIndex);
