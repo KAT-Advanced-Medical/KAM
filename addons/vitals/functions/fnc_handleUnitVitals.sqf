@@ -98,7 +98,7 @@ private _adjustments = _unit getVariable [VAR_MEDICATIONS,[]];
 if (_adjustments isNotEqualTo []) then {
     private _deleted = false;
     {
-        _x params ["_medication", "_timeAdded", "_timeTillMaxEffect", "_maxTimeInSystem", "_hrAdjust", "_painAdjust", "_flowAdjust", "_alphaFactor", "_opioidRelief", "_opioidEffect", "_opioidDepression", "_respiratoryRate"];
+        _x params ["_medication", "_timeAdded", "_timeTillMaxEffect", "_maxTimeInSystem", "_hrAdjust", "_painAdjust", "_flowAdjust", "_dose", "_alphaFactor", "_opioidRelief", "_opioidEffect", "_opioidDepression", "_respiratoryRate"];
         private _timeInSystem = CBA_missionTime - _timeAdded;
         if (_timeInSystem >= _maxTimeInSystem) then {
             _deleted = true;
@@ -153,6 +153,7 @@ private _woundBloodLoss = GET_WOUND_BLEEDING(_unit);
 
 // Vasoconstriction from Wound Blood Loss and Alpha Adjustment
 _vasoconstriction = 1 + (0.5 * _woundBloodLoss) + _alphaFactorAdjustment;
+TRACE_3("vasoconstriction",_woundBloodLoss,_alphaFactorAdjustment,_vasoconstriction);
 _unit setVariable [VAR_VASOCONSTRICTION, (1.8 min (0.2 max _vasoconstriction)), _syncValues];
 
 private _bloodPressure = [_unit] call EFUNC(circulation,getBloodPressure);
@@ -204,7 +205,7 @@ switch (true) do {
 private _cardiacOutput = [_unit] call ACEFUNC(medical_status,getCardiacOutput);
 if (!isPlayer _unit) then {
     private _painLevel = _unit getVariable [VAR_PAIN, 0];
-    hintSilent format["blood volume: %1, blood loss: [%2, %3]\nhr: %4, bp: %5, pain: %6", round(_bloodVolume * 100) / 100, round(_woundBloodLoss * 1000) / 1000, round((_woundBloodLoss / (0.001 max _cardiacOutput)) * 100) / 100, round(_heartRate), _bloodPressure, round(_painLevel * 100) / 100];
+    hintSilent format["blood volume: %1, blood loss: [%2, %3]\nhr: %4, bp: %5, vasoconstriction: %6", round(_bloodVolume * 100) / 100, round(_woundBloodLoss * 1000) / 1000, round((_woundBloodLoss / (0.001 max _cardiacOutput)) * 100) / 100, round(_heartRate), _bloodPressure, _vasoconstriction];
 };
 #endif
 
