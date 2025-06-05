@@ -590,7 +590,7 @@ class ACE_Medical_Treatment_Actions {
         callbackSuccess = QFUNC(medication);
         sounds[] = {};
     };
-    class syringe_penylephrine_5ml_3: syringe_phenylephrine_5ml_1 {
+    class syringe_phenylephrine_5ml_3: syringe_phenylephrine_5ml_1 {
         displayName = CSTRING(push_phenylephrine_IV_3);
         displayNameProgress = CSTRING(pushing_phenylephrine_IV_3);
         items[] = {"kat_syringe_phenylephrine_5ml_3"};

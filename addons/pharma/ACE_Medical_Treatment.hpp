@@ -48,7 +48,7 @@ class ACE_ADDON(Medical_Treatment) {
             maxDose = 6;
             maxDoseDeviation = 4;
             incompatibleMedication[] = {};
-            alphaFactor = -0.15;
+            alphaFactor = -0.1;
             onOverDose = "";
         };
         class EpinephrineIV {
@@ -62,7 +62,7 @@ class ACE_ADDON(Medical_Treatment) {
             maxDose = 4;
             maxDoseDeviation = 2;
             incompatibleMedication[] = {};
-            alphaFactor = -0.3;
+            alphaFactor = -0.2;
             onOverDose = "";
             contractility = 1;
         };
@@ -169,7 +169,7 @@ class ACE_ADDON(Medical_Treatment) {
             maxDose = 12;
             incompatibleMedication[] = {};
             viscosityChange = 25;
-            alphaFactor = -0.3;
+            alphaFactor = -0.2;
             onOverDose = "";
             contractility = 0.7;
         };
@@ -185,7 +185,7 @@ class ACE_ADDON(Medical_Treatment) {
             maxDoseDeviation = 4;
             incompatibleMedication[] = {};
             viscosityChange = 50;
-            alphaFactor = -0.5;
+            alphaFactor = -0.4;
             onOverDose = "";
         };
         class PhenylephrineAuto {
@@ -200,7 +200,7 @@ class ACE_ADDON(Medical_Treatment) {
             maxDoseDeviation = 4;
             incompatibleMedication[] = {};
             viscosityChange = 25;
-            alphaFactor = -0.3;
+            alphaFactor = -0.15;
         };
         class Nitroglycerin {
             painReduce = 0;
@@ -214,7 +214,7 @@ class ACE_ADDON(Medical_Treatment) {
             maxDoseDeviation = 4;
             incompatibleMedication[] = {};
             viscosityChange = -25;
-            alphaFactor = 0.3;
+            alphaFactor = 0.2;
             onOverDose = "";
             contractility = -0.3;
         };
@@ -517,7 +517,7 @@ class ACE_ADDON(Medical_Treatment) {
             timeInSystem = 120;
             timeTillMaxEffect = 10;
             dose = 1;
-            alphaFactor = -0.2;
+            alphaFactor = -0.1;
             contractility = 0.7;
         };
         class syringe_epinephrineIV_5ml_3 {
@@ -528,7 +528,7 @@ class ACE_ADDON(Medical_Treatment) {
             timeInSystem = 180;
             timeTillMaxEffect = 10;
             dose = 3;
-            alphaFactor = -0.4;
+            alphaFactor = -0.15;
             contractility = 1;
         };
         class syringe_norepinephrine_5ml_1 {
@@ -540,7 +540,7 @@ class ACE_ADDON(Medical_Treatment) {
             timeTillMaxEffect = 15;
             viscosityChange = 15;
             dose = 1;
-            alphaFactor = -0.2;
+            alphaFactor = -0.15;
             contractility = 0.5;
         };
         class syringe_norepinephrine_5ml_3 {
@@ -552,7 +552,7 @@ class ACE_ADDON(Medical_Treatment) {
             timeTillMaxEffect = 15;
             dose = 3;
             viscosityChange = 25;
-            alphaFactor = -0.4;
+            alphaFactor = -0.3;
             contractility = 0.7;
         };
         class syringe_phenylephrine_5ml_1 {
@@ -564,7 +564,7 @@ class ACE_ADDON(Medical_Treatment) {
             timeTillMaxEffect = 15;
             viscosityChange = 35;
             dose = 1;
-            alphaFactor = -0.4;
+            alphaFactor = -0.3;
         };
         class syringe_phenylephrine_5ml_3 {
             painReduce = 0;
@@ -575,7 +575,7 @@ class ACE_ADDON(Medical_Treatment) {
             timeTillMaxEffect = 15;
             viscosityChange = 50;
             dose = 3;
-            alphaFactor = -0.7;
+            alphaFactor = -0.5;
         };
         class syringe_nitroglycerin_5ml_1 {
             painReduce = 0;
@@ -586,7 +586,7 @@ class ACE_ADDON(Medical_Treatment) {
             timeTillMaxEffect = 15;
             viscosityChange = -25;
             dose = 1;
-            alphaFactor = 0.3;
+            alphaFactor = 0.2;
             contractility = -0.2;
         };
         class syringe_nitroglycerin_5ml_3 {
@@ -598,7 +598,7 @@ class ACE_ADDON(Medical_Treatment) {
             timeTillMaxEffect = 15;
             dose = 3;
             viscosityChange = -35;
-            alphaFactor = 0.5;
+            alphaFactor = 0.4;
             contractility = -0.4;
         };
         class syringe_fentanyl_5ml_1 {

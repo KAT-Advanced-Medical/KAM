@@ -249,7 +249,7 @@ class ACE_Medical_Treatment {
             timeInSystem = 10;
             timeTillMaxEffect = 3;
             dose = 0.1;
-            alphaFactor = -0.1;
+            alphaFactor = -0.05;
             volume = 250;
             rateCoef = 1.3;
             contractility = 0.2;

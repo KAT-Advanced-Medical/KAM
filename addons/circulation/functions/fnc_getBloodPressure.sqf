@@ -28,7 +28,7 @@ params ["_unit"];
 private _cardiacOutput = [_unit] call EFUNC(vitals,getCardiacOutput);
 private _resistance = _unit getVariable [VAR_PERIPH_RES, DEFAULT_PERIPH_RES];
 private _vasoconstriction = GET_VASOCONSTRICTION(_unit);
-private _bloodPressure = _cardiacOutput * _resistance * ((_vasoconstriction max 0.5) min 1.5);
+private _bloodPressure = (_cardiacOutput * _resistance) / (((_vasoconstriction max 0.3) min 1.8) * 0.35);
 TRACE_3("BP1",_cardiacOutput,_resistance,_bloodPressure);
 
 private _BPChange = _unit getVariable [VAR_BLOODPRESSURE_CHANGE, []];
