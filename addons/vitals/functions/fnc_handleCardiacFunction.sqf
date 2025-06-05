@@ -45,16 +45,17 @@ if IN_CRDC_ARRST(_unit) then {
     // Adjustments and Pain Levels are taken off of last cycle HR to prevent any spiraling vitials
     private _lastCycleHeartRate = GET_HEART_RATE(_unit) - _hrTargetAdjustment - (10 * _painLevel) - (_aceAnFatigue * 40);
     private _lastCycleCO2 = _lastCycleHeartRate * HEART_RATE_CO2_MULTIPLIER;
+    private _defaultHeartRate = _unit getVariable [QEGVAR(circulation,defaultHeartRate), 80];
     private _demandReturn = _lastCycleCO2 / CO2_TO_DEMAND_DIVISOR;
     private _strokeVolume = [_unit] call FUNC(getStrokeVolume);
 
     private _strokeVolumeDifference = [_strokeVolume / (_defaultstrokeVolume * 0.66), _defaultstrokeVolume / _strokeVolume ] select (_defaultstrokeVolume / _strokeVolume < 1.22);
-    private _volumeSupportHR = DEFAULT_HEART_RATE * _strokeVolumeDifference;
+    private _volumeSupportHR = _defaultHeartRate * _strokeVolumeDifference;
 
     // As HR increases, pressure is taken off decreasing stroke volume. However, this effect decreases at higher heart rates and lower SVs
-    TRACE_8("HR1",_lastCycleHeartRate,_lastCycleCO2,_demandReturn,_strokeVolume,DEFAULT_HEART_RATE,_strokeVolumeDifference,_volumeSupportHR,_hrTargetAdjustment);
+    TRACE_8("HR1",_lastCycleHeartRate,_lastCycleCO2,_demandReturn,_strokeVolume,,_strokeVolumeDifference,_volumeSupportHR,_hrTargetAdjustment);
     // Model HR driven by demandReturn divided by stroke volume with pressure applied by volume shortage. 40 point baseline applied to keep movements more stable
-    private _modelHeartRate = 40 + ((_demandReturn / _strokeVolume) * ((0.03507 * DEFAULT_HEART_RATE) * DEFAULT_HEART_RATE)) + (_volumeSupportHR - DEFAULT_HEART_RATE);
+    private _modelHeartRate = 40 + ((_demandReturn / _strokeVolume) * ((0.03507 * _defaultHeartRate) * _defaultHeartRate)) + (_volumeSupportHR - _defaultHeartRate);
     TRACE_1("HR2",_modelHeartRate);
     // Actual Heart Rate increases stepwise under the target model
     _actualHeartRate = switch (true) do {

@@ -94,9 +94,10 @@ private _medicationConfig = _defaultConfig >> _classname;
 
 // Get and calculate medication modifiers
 if (GVAR(AMS_Enabled)) then {
-    private _heartRateRatio = GET_HEART_RATE(_patient) / DEFAULT_HEART_RATE;
-    TRACE_2("HeartRate",_defaultHeartRate,_heartRateRatio);
-    private _drugMult = ((((GET_BLOOD_VOLUME_LITERS(_patient)) max 0.5 / DEFAULT_BLOOD_VOLUME) * (_heartRateRatio) * ((GET_BODY_FLUID_ECB(_patient)/GET_BODY_FLUID_ECP(_patient)) / (DEFAULT_ECB/DEFAULT_ECP)) max 0.2) min 2.5);
+    private _defaultHeartRate = _patient getVariable [QEGVAR(circulation,defaultHeartRate), 80];
+    private _heartRateRatio = GET_HEART_RATE(_patient) / _defaultHeartRate;
+    private _drugMult = (((GET_BLOOD_VOLUME_LITERS(_patient) / DEFAULT_BLOOD_VOLUME) * (_heartRateRatio) * ((GET_BODY_FLUID_ECB(_patient)/GET_BODY_FLUID_ECP(_patient)) / (DEFAULT_ECB/DEFAULT_ECP)) max 0.2) min 2.5);
+    TRACE_5("_drugMult",_patient,_defaultHeartRate,_heartRateRatio,(GET_BLOOD_VOLUME_LITERS(_patient) / DEFAULT_BLOOD_VOLUME),_drugMult);
     _painReduce             = GET_NUMBER(_medicationConfig >> "painReduce",getNumber (_defaultConfig >> "painReduce")) * _drugMult;
     _timeInSystem           = GET_NUMBER(_medicationConfig >> "timeInSystem",getNumber (_defaultConfig >> "timeInSystem")) * _drugMult;
     _timeTillMaxEffect      = GET_NUMBER(_medicationConfig >> "timeTillMaxEffect",getNumber (_defaultConfig >> "timeTillMaxEffect")) * _heartRateRatio;
@@ -136,6 +137,8 @@ if (GVAR(AMS_Enabled)) then {
         [_patient, _medicationName, _timeTillMaxEffect, _timeInSystem, _heartRateChange, _painReduce, _viscosityChange, _dose, _alphaFactor, _opioidRelief, _opioidEffect, _opioidDepression, _respiratoryRate, _contractility] call EFUNC(vitals,addMedicationAdjustment);
         [_patient, _medicationName, _incompatibleMedication] call FUNC(onMedicationUsage);
     } else {
+        TRACE_6("adjustments1",_patient,_className,_timeTillMaxEffect,_timeInSystem,_heartRateChange,_painReduce);
+        TRACE_7("adjustments2",_viscosityChange,_dose,_alphaFactor,_opioidRelief,_opioidEffect,_opioidDepression,_respiratoryRate);
         [_patient, _className, _timeTillMaxEffect, _timeInSystem, _heartRateChange, _painReduce, _viscosityChange, _dose, _alphaFactor, _opioidRelief, _opioidEffect, _opioidDepression, _respiratoryRate, _contractility] call EFUNC(vitals,addMedicationAdjustment);
         [_patient, _className, _incompatibleMedication] call FUNC(onMedicationUsage);
     };

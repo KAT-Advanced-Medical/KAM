@@ -20,8 +20,8 @@ private _defaultCVP = 6;
 private _strokeVolume = 0.095;
 private _heartRate = GET_HEART_RATE(_unit);
 private _bloodPressure = _unit getVariable [VAR_BLOOD_PRESS, DEFAULT_BLOOD_PRESSURE];
-
-private _heartRateRatio = GET_HEART_RATE(_unit) / DEFAULT_HEART_RATE;
+private _defaultHeartRate = _unit getVariable [QEGVAR(circulation,defaultHeartRate), 80];
+private _heartRateRatio = GET_HEART_RATE(_unit) / _defaultHeartRate;
 private _bloodVolumeRatio = GET_BLOOD_VOLUME_LITERS(_unit) / DEFAULT_BLOOD_VOLUME;
 private _vasoconstriction = GET_VASOCONSTRICTION(_unit);
 private _ptxBase = ((_unit getVariable [QEGVAR(breathing,pneumothorax), [0, 0]]) select 0) + ((_unit getVariable [QEGVAR(breathing,pneumothorax), [0, 0]]) select 1);
@@ -32,7 +32,7 @@ private _cvp = (_defaultCVP * _heartRateRatio * _bloodVolumeRatio * (1 + _ptxNor
 private _afterload = ((_bloodPressure select 1) / (DEFAULT_BLOOD_PRESSURE select 1)) * _vasoconstriction * _bloodVolumeRatio;
 private _contractility = _unit getVariable [QEGVAR(pharma,heartContractility), 1];
 
-private _fillTime = DEFAULT_HEART_RATE / (_heartRate max 0.05);
+private _fillTime = _defaultHeartRate / (_heartRate max 0.05);
 private _fillPortion = 1 - exp (-3 * _fillTime);
 private _edv = _fillPortion * _cvp * 1.4 * _strokeVolume;
 
