@@ -163,9 +163,43 @@ if (_context == 2) then {
 
     // --- Arms and Legs
     private _damageLeftArm = _unit getVariable [QACEGVAR(medical_engine,$HitLeftArm), [0,0]];
+
     private _damageRightArm = _unit getVariable [QACEGVAR(medical_engine,$HitRightArm), [0,0]];
-    private _damageLeftLeg = _unit getVariable [QACEGVAR(medical_engine,$HitLeftLeg), [0,0]];
-    private _damageRightLeg = _unit getVariable [QACEGVAR(medical_engine,$HitRightLeg), [0,0]];
+
+    private _damageLeftLeg = [
+        _unit getVariable [QACEGVAR(medical_engine,$HitLeftLeg), [0,0]],
+        _unit getVariable [QACEGVAR(medical_engine,$HitLeftLegRoll), [0,0]],
+        _unit getVariable [QACEGVAR(medical_engine,$HitLeftFoot), [0,0]]
+    ];
+
+    _damageLeftLeg sort false;
+    _damageLeftLeg = _damageLeftLeg select 0;
+
+    private _damageRightLeg = [
+        _unit getVariable [QACEGVAR(medical_engine,$HitRightLeg), [0,0]],
+        _unit getVariable [QACEGVAR(medical_engine,$HitRightLegRoll), [0,0]],
+        _unit getVariable [QACEGVAR(medical_engine,$HitRightFoot), [0,0]]
+    ];
+    _damageRightLeg sort false;
+    _damageRightLeg = _damageRightLeg select 0;
+
+    private _damageUpperLeftArm = [
+        _unit getVariable [QACEGVAR(medical_engine,$HitUpperLeftArm), [0,0]],
+        _unit getVariable [QACEGVAR(medical_engine,$HitUpperRollLeftArm), [0,0]]
+    ];
+    _damageUpperLeftArm sort false;
+    _damageUpperLeftArm = _damageUpperLeftArm select 0;
+
+    private _damageUpperRightArm = [
+        _unit getVariable [QACEGVAR(medical_engine,$HitUpperRightArm), [0,0]],
+        _unit getVariable [QACEGVAR(medical_engine,$HitUpperRollRightArm), [0,0]]
+    ];
+    _damageUpperRightArm sort false;
+    _damageUpperRightArm = _damageUpperRightArm select 0;
+
+    private _damageUpperLeftLeg = _unit getVariable [QACEGVAR(medical_engine,$HitUpperLeftLeg), [0,0]];
+
+    private _damageUpperRightLeg = _unit getVariable [QACEGVAR(medical_engine,$HitUpperRightLeg), [0,0]];
 
     // Find hit point that received the maximum damage
     // Priority used for sorting if incoming damage is equal
@@ -177,8 +211,12 @@ if (_context == 2) then {
         [_damageBody select 0,       PRIORITY_BODY,       _damageBody select 1,       "Body"],
         [_damageLeftArm select 0,    PRIORITY_LEFT_ARM,   _damageLeftArm select 1,    "LeftArm"],
         [_damageRightArm select 0,   PRIORITY_RIGHT_ARM,  _damageRightArm select 1,   "RightArm"],
+        [_damageUpperLeftArm select 0,    PRIORITY_UPPER_LEFT_ARM,   _damageUpperLeftArm select 1,    "UpperLeftArm"],
+        [_damageUpperRightArm select 0,   PRIORITY_UPPER_RIGHT_ARM,  _damageUpperRightArm select 1,   "UpperRightArm"],
         [_damageLeftLeg select 0,    PRIORITY_LEFT_LEG,   _damageLeftLeg select 1,    "LeftLeg"],
         [_damageRightLeg select 0,   PRIORITY_RIGHT_LEG,  _damageRightLeg select 1,   "RightLeg"],
+        [_damageUpperLeftLeg select 0,    PRIORITY_UPPER_LEFT_LEG,   _damageUpperLeftLeg select 1,    "UpperLeftLeg"],
+        [_damageUpperRightLeg select 0,   PRIORITY_UPPER_RIGHT_ARM,  _damageUpperRightLeg select 1,   "UpperRightLeg"],
         [_damageStructural select 0, PRIORITY_STRUCTURAL, _damageStructural select 1, "#structural"]
     ];
     TRACE_2("incoming",_allDamages,_damageStructural);
@@ -227,7 +265,9 @@ if (_context == 2) then {
     } forEach [
         QACEGVAR(medical_engine,$HitFace),QACEGVAR(medical_engine,$HitNeck),QACEGVAR(medical_engine,$HitHead),
         QACEGVAR(medical_engine,$HitPelvis),QACEGVAR(medical_engine,$HitAbdomen),QACEGVAR(medical_engine,$HitDiaphragm),QACEGVAR(medical_engine,$HitChest),QACEGVAR(medical_engine,$HitBody),
-        QACEGVAR(medical_engine,$HitLeftArm),QACEGVAR(medical_engine,$HitRightArm),QACEGVAR(medical_engine,$HitLeftLeg),QACEGVAR(medical_engine,$HitRightLeg),
+        QACEGVAR(medical_engine,$HitLeftArm),QACEGVAR(medical_engine,$HitRightArm),QACEGVAR(medical_engine,$HitLeftLeg),QACEGVAR(medical_engine,$HitRightLeg),QACEGVAR(medical_engine,$HitUpperLeftArm),
+        QACEGVAR(medical_engine,$HitUpperRightArm),QACEGVAR(medical_engine,$HitUpperRollLeftArm),QACEGVAR(medical_engine,$HitUpperRollRightArm),QACEGVAR(medical_engine,$HitUpperLeftLeg),QACEGVAR(medical_engine,$HitUpperRightLeg),
+        QACEGVAR(medical_engine,$HitLeftLegRoll),QACEGVAR(medical_engine,$HitRightLegRoll),QACEGVAR(medical_engine,$HitLeftFoot),QACEGVAR(medical_engine,$HitRightFoot),
         QACEGVAR(medical_engine,$#structural)
     ];
 };

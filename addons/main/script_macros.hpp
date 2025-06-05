@@ -382,7 +382,7 @@
 
 #define ALL_BODY_PARTS ["head", "neck", "chest", "body", "leftarm", "upperleftarm", "rightarm", "upperrightarm", "leftleg", "upperleftleg", "rightleg", "upperrightleg"]
 #define ALL_SELECTIONS ["head", "neck", "chest", "body", "hand_l", "uhand_l", "hand_r", "uhand_r", "leg_l", "uleg_l", "leg_r", "uleg_r"]
-#define ALL_HITPOINTS ["HitHead", "HitNeck", "HitChest", "HitAbdomen", "HitLeftArm", "HitRightArm", "HitLeftLeg", "HitRightLeg"]
+#define ALL_HITPOINTS ["HitHead", "HitNeck", "HitChest", "HitAbdomen", "HitLeftArm", "HitRightArm", "HitLeftLeg", "HitRightLeg" "HitUpperUpperLeftArm", "HitUpperRightArm", "HitUpperLeftLeg", "HitUpperRightLeg"]
 
 #undef HITPOINT_INDEX_BODY
 #undef HITPOINT_INDEX_LARM
@@ -394,8 +394,6 @@
 #undef DEFAULT_FRACTURE_VALUES
 #undef DEFAULT_BODYPART_DAMAGE_VALUES
 
-#define PRIORITY_NECK       3
-#define PRIORITY_CHEST      4
 #define HITPOINT_INDEX_NECK 1
 #define HITPOINT_INDEX_CHEST 2
 #define HITPOINT_INDEX_BODY 3
@@ -492,4 +490,77 @@
 
 #define GET_JOINTS(unit)   (unit getVariable [VAR_JOINTS, DEFAULT_JOINT_VALUES])
 #define GET_LIMB_JOINT(unit,jointindex)   ((unit getVariable [VAR_JOINTS, DEFAULT_JOINT_VALUES]) select _jointindex)
+
+#undef PRIORITY_HEAD
+#undef PRIORITY_BODY
+#undef PRIORITY_LEFT_ARM
+#undef PRIORITY_RIGHT_ARM
+#undef PRIORITY_LEFT_LEG
+#undef PRIORITY_RIGHT_LEG
+
+#define PRIORITY_HEAD       4
+#define PRIORITY_NECK       3
+#define PRIORITY_BODY       5
+#define PRIORITY_CHEST      6
+#define PRIORITY_LEFT_ARM   (1 + random 1)
+#define PRIORITY_RIGHT_ARM  (1 + random 1)
+#define PRIORITY_UPPER_LEFT_ARM   (1 + random 1)
+#define PRIORITY_UPPER_RIGHT_ARM  (1 + random 1)
+#define PRIORITY_LEFT_LEG   (1 + random 1)
+#define PRIORITY_RIGHT_LEG  (1 + random 1)
+#define PRIORITY_UPPER_LEFT_LEG   (1 + random 1)
+#define PRIORITY_UPPER_RIGHT_LEG  (1 + random 1)
+
+#undef ADD_ACE_HITPOINTS
+#define ADD_ACE_HITPOINTS\
+    class HitLeftArm: HitHands {\
+        material = -1;\
+        name = "LeftForeArm";\
+        radius = 0.08;\
+        visual = "injury_hands";\
+        minimalHit = 0.01;\
+    };\
+    class HitRightArm: HitLeftArm {\
+        name = "RightForeArm";\
+    };\
+    class HitUpperLeftArm: HitLeftArm {\
+        name = "LeftArm";\
+    };\
+    class HitUpperRightArm: HitLeftArm {\
+        name = "RightArm";\
+    };\
+    class HitUpperRollLeftArm: HitLeftArm {\
+        name = "LeftArmRoll";\
+    };\
+    class HitUpperRollRightArm: HitLeftArm {\
+        name = "RightArmRoll";\
+    };\
+    class HitLeftLeg: HitLegs {\
+        material = -1;\
+        name = "LeftLeg";\
+        radius = 0.1;\
+        visual = "injury_legs";\
+        minimalHit = 0.01;\
+    };\
+    class HitRightLeg: HitLeftLeg {\
+        name = "RightLeg";\
+    };\
+    class HitUpperLeftLeg: HitLeftLeg {\
+        name = "L_Femur_hit";\
+    };\
+    class HitUpperRightLeg: HitLeftLeg {\
+        name = "R_Femur_hit";\
+    };\
+    class HitLeftLegRoll: HitLeftLeg {\
+        name = "LeftLegRoll";\
+    };\
+    class HitRightLegRoll: HitLeftLeg {\
+        name = "RightLegRoll";\
+    };\
+    class HitLeftFoot: HitLeftLeg {\
+        name = "LeftFoot";\
+    };\
+    class HitRightFoot: HitLeftLeg {\
+        name = "RightFoot";\
+    }
 

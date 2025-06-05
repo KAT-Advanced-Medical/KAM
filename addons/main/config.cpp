@@ -31,3 +31,4 @@ class CfgMods {
 };
 
 #include "CfgSettings.hpp"
+#include "CfgVehicles.hpp"
