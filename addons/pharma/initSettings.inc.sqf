@@ -126,6 +126,15 @@
 ] call CBA_Settings_fnc_init;
 
 [
+    QGVAR(medLvl_ApplyEJV),
+    "LIST",
+    [LLSTRING(medLvl_ApplyEJV), LLSTRING(medLvl_ApplyEJV_Desc)],
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_ApplyIV)],
+    [[0, 1, 2], [ACELSTRING(medical_treatment,Anyone), ACELSTRING(medical_treatment,Medics), ACELSTRING(medical_treatment,Doctors)], 0],
+    true
+] call CBA_Settings_fnc_init;
+
+[
     QGVAR(treatmentTime_ApplyIV),
     "SLIDER",
     [LLSTRING(treatmentTime_ApplyIV)],
@@ -147,6 +156,15 @@
     QGVAR(treatmentTime_Apply20IV),
     "SLIDER",
     [LLSTRING(treatmentTime_Apply20IV)],
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_ApplyIV)],
+    [0.1, 10, 7, 1],
+    true
+] call CBA_Settings_fnc_init;
+
+[
+    QGVAR(treatmentTime_ApplyEJV),
+    "SLIDER",
+    [LLSTRING(treatmentTime_ApplyEJV)],
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_ApplyIV)],
     [0.1, 10, 7, 1],
     true
@@ -211,6 +229,24 @@
     QGVAR(treatmentTime_ApplyIO),
     "SLIDER",
     [LLSTRING(treatmentTime_ApplyIO)],
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_ApplyIO)],
+    [0.1, 10, 7, 1],
+    true
+] call CBA_Settings_fnc_init;
+
+[
+    QGVAR(medLvl_ApplyEZIO),
+    "LIST",
+    [LLSTRING(medLvl_ApplyEZIO), LLSTRING(medLvl_ApplyEZIO_Desc)],
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_ApplyIO)],
+    [[0, 1, 2], [ACELSTRING(medical_treatment,Anyone), ACELSTRING(medical_treatment,Medics), ACELSTRING(medical_treatment,Doctors)], 0],
+    true
+] call CBA_Settings_fnc_init;
+
+[
+    QGVAR(treatmentTime_ApplyEZIO),
+    "SLIDER",
+    [LLSTRING(treatmentTime_ApplyEZIO)],
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_ApplyIO)],
     [0.1, 10, 7, 1],
     true

@@ -421,6 +421,30 @@ class ACE_Medical_Treatment_Actions {
         litter[] = {};
         sounds[] = {};
     };
+    class ApplyEZIO: ApplyIV {
+        displayName = CSTRING(Apply_EZ_IO);
+        displayNameProgress = CSTRING(Applying_IV);
+        medicRequired = QGVAR(medLvl_ApplyIO);
+        category = "advanced";
+        allowedSelections[] = {"Chest"};
+        items[] = {"kat_EZ_IO"};
+        condition = QUOTE(!([ARR_3(_player,_patient,_bodyPart)] call FUNC(removeIV)));
+        treatmentTime = QGVAR(treatmentTime_ApplyEZ_IO);
+        callbackSuccess = QUOTE([ARR_4(_player,_patient,_bodyPart,'kat_EZ_IO')] call FUNC(applyIV));
+        sounds[] = {};
+    };
+    class ApplyEJV: ApplyIV {
+        displayName = CSTRING(Apply_EJV);
+        displayNameProgress = CSTRING(Applying_EJV);
+        medicRequired = QGVAR(medLvl_ApplyEJV);
+        category = "advanced";
+        allowedSelections[] = {"Neck"};
+        items[] = {"kat_EJV"};
+        condition = QUOTE(!([ARR_3(_player,_patient,_bodyPart)] call FUNC(removeIV)));
+        treatmentTime = QGVAR(treatmentTime_ApplyEJV);
+        callbackSuccess = QUOTE([ARR_4(_player,_patient,_bodyPart,'kat_EJV')] call FUNC(applyIV));
+        sounds[] = {};
+    };
     class RemoveIV: ApplyTourniquet {
         displayName = CSTRING(Remove_IV);
         displayNameProgress = CSTRING(Removing_IV);

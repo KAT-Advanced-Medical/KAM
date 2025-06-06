@@ -46,6 +46,28 @@ class CfgWeapons {
             mass = 0.5;
         };
     };
+    class kat_IO_EZ: ACE_ItemCore {
+        scope = 2;
+        displayName = CSTRING(EZ_IO_Display);
+        picture = QPATHTOF(ui\icon_ez_io.paa);
+        model = "\A3\Structures_F_EPA\Items\Medical\Painkillers_F.p3d";
+        descriptionShort = CSTRING(IO_DescShort);
+        ACE_isMedicalItem = 1;
+        class ItemInfo: CBA_MiscItem_ItemInfo {
+            mass = 2;
+        };
+    };
+    class kat_EJV: ACE_ItemCore {
+        scope = 2;
+        displayName = CSTRING(EJV_Display);
+        picture = QPATHTOF(ui\icon_EJV.paa);
+        model = "\A3\Structures_F_EPA\Items\Medical\Painkillers_F.p3d";
+        descriptionShort = CSTRING(EJV_DescShort);
+        ACE_isMedicalItem = 1;
+        class ItemInfo: CBA_MiscItem_ItemInfo {
+            mass = 1;
+        };
+    };
     class kat_10ml_syringe: ACE_ItemCore {
         scope = 2;
         displayName = CSTRING(Syringe_10_Display);
