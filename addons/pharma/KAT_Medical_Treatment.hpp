@@ -1,4 +1,5 @@
-class ACE_ADDON(Medical_Treatment) {
+class KAT_Medical_Treatment {
+    // Contains medications for the AMS system
     class Medication {
         // How much does the pain get reduced?
         painReduce = 0;

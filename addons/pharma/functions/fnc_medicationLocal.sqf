@@ -89,11 +89,11 @@ if (_isOccluded) exitWith {
 };
 
 // Get adjustment attributes for used medication
-private _defaultConfig = configFile >> QUOTE(ACE_ADDON(Medical_Treatment)) >> "Medication";
-private _medicationConfig = _defaultConfig >> _classname;
 
 // Get and calculate medication modifiers
 if (GVAR(AMS_Enabled)) then {
+    private _defaultConfig = configFile >> QUOTE(KAT_Medical_Treatment) >> "Medication";
+    private _medicationConfig = _defaultConfig >> _classname;
     private _defaultHeartRate = _patient getVariable [QEGVAR(circulation,defaultHeartRate), 80];
     private _heartRateRatio = GET_HEART_RATE(_patient) / _defaultHeartRate;
     private _drugMult = (((GET_BLOOD_VOLUME_LITERS(_patient) / DEFAULT_BLOOD_VOLUME) * (_heartRateRatio) * ((GET_BODY_FLUID_ECB(_patient)/GET_BODY_FLUID_ECP(_patient)) / (DEFAULT_ECB/DEFAULT_ECP)) max 0.2) min 2.5);
@@ -171,6 +171,8 @@ if (GVAR(AMS_Enabled)) then {
     };
     
 } else {
+    private _defaultConfig = configFile >> QUOTE(ACE_ADDON(Medical_Treatment)) >> "Medication";
+    private _medicationConfig = _defaultConfig >> _classname;
     _painReduce             = GET_NUMBER(_medicationConfig >> "painReduce",getNumber (_defaultConfig >> "painReduce"));
     _timeInSystem           = GET_NUMBER(_medicationConfig >> "timeInSystem",getNumber (_defaultConfig >> "timeInSystem"));
     _timeTillMaxEffect      = GET_NUMBER(_medicationConfig >> "timeTillMaxEffect",getNumber (_defaultConfig >> "timeTillMaxEffect"));

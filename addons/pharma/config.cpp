@@ -108,4 +108,5 @@ class CfgPatches {
 #include "CfgVehicles.hpp"
 #include "CfgFunctions.hpp"
 #include "ACE_Medical_Treatment.hpp"
+#include "KAT_Medical_Treatment.hpp"
 #include "ACE_Medical_Treatment_Actions.hpp"
