@@ -52,7 +52,11 @@ private _localAnesthesia = (_patient getVariable [QEGVAR(pharma,localAnesthesia)
         [_patient, [0.7, 0.8, 0.9] select (floor random 3)] call ACEFUNC(medical_status,adjustPainLevel);
     };
 TRACE_5("FingerThora1",_fentanylEffectiveness,_ketamineEffectiveness,_nalbuphineEffectiveness,_morphineEffectiveness,_localAnesthesia);
-if (random 100 <= 30) exitWith {};
+if (random 100 <= 30) exitWith {
+    private _surface = (_patient getVariable [QEGVAR(breathing,lungSurfaceArea), 400]);
+    private _surfaceArea = _surface - 60;
+    _patient setVariable [QEGVAR(breathing,lungSurfaceArea), _surfaceArea];
+};
 private _activeChestSeal = _patient getVariable [QGVAR(activeChestSeal), [false, false]];
 if (_activeChestSeal select _side) then {
     private _hemopneumothorax = _patient getVariable [QGVAR(hemopneumothorax), [false, false]];
