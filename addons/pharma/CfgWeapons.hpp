@@ -333,7 +333,7 @@ class CfgWeapons {
             mass = 1;
         };
     };
-    class kat_syringe_txa_10ml_1: ACE_ItemCore {
+    class kat_syringe_txa_10ml_10: ACE_ItemCore {
         scope = 1;
         displayName = CSTRING(Syringe_txa_10_1_Display);
         picture = QPATHTOF(ui\syringe_item.paa);
@@ -344,532 +344,112 @@ class CfgWeapons {
             mass = 1;
         };
     };
-    class kat_syringe_txa_10ml_3: ACE_ItemCore {
-        scope = 1;
-        displayName = CSTRING(Syringe_txa_10_3_Display);
-        picture = QPATHTOF(ui\syringe_item.paa);
-        model = "\A3\Structures_F_EPA\Items\Medical\Painkillers_F.p3d";
-        descriptionShort = CSTRING(Syringe_txa_10_3_DescShort);
-        ACE_isMedicalItem = 1;
-        class ItemInfo: CBA_MiscItem_ItemInfo {
-            mass = 1;
-        };
-    };
-    class kat_syringe_morphineIV_10ml_1: ACE_ItemCore {
-        scope = 1;
+    class kat_syringe_morphineIV_10ml_10: kat_syringe_txa_10ml_10 {
         displayName = CSTRING(Syringe_morphineIV_10_1_Display);
-        picture = QPATHTOF(ui\syringe_item.paa);
-        model = "\A3\Structures_F_EPA\Items\Medical\Painkillers_F.p3d";
         descriptionShort = CSTRING(Syringe_morphineIV_10_1_DescShort);
-        ACE_isMedicalItem = 1;
-        class ItemInfo: CBA_MiscItem_ItemInfo {
-            mass = 1;
-        };
     };
-    class kat_syringe_morphineIV_10ml_3: ACE_ItemCore {
-        scope = 1;
-        displayName = CSTRING(Syringe_morphineIV_10_3_Display);
-        picture = QPATHTOF(ui\syringe_item.paa);
-        model = "\A3\Structures_F_EPA\Items\Medical\Painkillers_F.p3d";
-        descriptionShort = CSTRING(Syringe_morphineIV_10_3_DescShort);
-        ACE_isMedicalItem = 1;
-        class ItemInfo: CBA_MiscItem_ItemInfo {
-            mass = 1;
-        };
-    };
-    class kat_syringe_lidocaine_10ml_1: ACE_ItemCore {
-        scope = 1;
+    class kat_syringe_lidocaine_10ml_10: kat_syringe_txa_10ml_10 {
         displayName = CSTRING(Syringe_lidocaine_10_1_Display);
-        picture = QPATHTOF(ui\syringe_item.paa);
-        model = "\A3\Structures_F_EPA\Items\Medical\Painkillers_F.p3d";
         descriptionShort = CSTRING(Syringe_lidocaine_10_1_DescShort);
-        ACE_isMedicalItem = 1;
-        class ItemInfo: CBA_MiscItem_ItemInfo {
-            mass = 1;
-        };
     };
-    class kat_syringe_ketamine_10ml_1: ACE_ItemCore {
-        scope = 1;
+    class kat_syringe_ketamine_10ml_10: kat_syringe_txa_10ml_10 {
         displayName = CSTRING(Syringe_ketamine_10_1_Display);
-        picture = QPATHTOF(ui\syringe_item.paa);
-        model = "\A3\Structures_F_EPA\Items\Medical\Painkillers_F.p3d";
         descriptionShort = CSTRING(Syringe_ketamine_10_1_DescShort);
-        ACE_isMedicalItem = 1;
-        class ItemInfo: CBA_MiscItem_ItemInfo {
-            mass = 1;
-        };
     };
-    class kat_syringe_ketamine_10ml_3: ACE_ItemCore {
-        scope = 1;
-        displayName = CSTRING(Syringe_ketamine_10_3_Display);
-        picture = QPATHTOF(ui\syringe_item.paa);
-        model = "\A3\Structures_F_EPA\Items\Medical\Painkillers_F.p3d";
-        descriptionShort = CSTRING(Syringe_ketamine_10_3_DescShort);
-        ACE_isMedicalItem = 1;
-        class ItemInfo: CBA_MiscItem_ItemInfo {
-            mass = 1;
-        };
-    };
-    class kat_syringe_fentanyl_10ml_1: ACE_ItemCore {
-        scope = 1;
+    class kat_syringe_fentanyl_10ml_10: kat_syringe_txa_10ml_10 {
         displayName = CSTRING(Syringe_fentanyl_10_1_Display);
-        picture = QPATHTOF(ui\syringe_item.paa);
-        model = "\A3\Structures_F_EPA\Items\Medical\Painkillers_F.p3d";
         descriptionShort = CSTRING(Syringe_fentanyl_10_1_DescShort);
-        ACE_isMedicalItem = 1;
-        class ItemInfo: CBA_MiscItem_ItemInfo {
-            mass = 1;
-        };
     };
-    class kat_syringe_fentanyl_10ml_3: ACE_ItemCore {
-        scope = 1;
-        displayName = CSTRING(Syringe_fentanyl_10_3_Display);
-        picture = QPATHTOF(ui\syringe_item.paa);
-        model = "\A3\Structures_F_EPA\Items\Medical\Painkillers_F.p3d";
-        descriptionShort = CSTRING(Syringe_fentanyl_10_3_DescShort);
-        ACE_isMedicalItem = 1;
-        class ItemInfo: CBA_MiscItem_ItemInfo {
-            mass = 1;
-        };
-    };
-    class kat_syringe_nalbuphine_10ml_1: ACE_ItemCore {
-        scope = 1;
+    class kat_syringe_nalbuphine_10ml_10: kat_syringe_txa_10ml_10 {
         displayName = CSTRING(Syringe_nalbuphine_10_1_Display);
-        picture = QPATHTOF(ui\syringe_item.paa);
-        model = "\A3\Structures_F_EPA\Items\Medical\Painkillers_F.p3d";
         descriptionShort = CSTRING(Syringe_nalbuphine_10_1_DescShort);
-        ACE_isMedicalItem = 1;
-        class ItemInfo: CBA_MiscItem_ItemInfo {
-            mass = 1;
-        };
     };
-    class kat_syringe_nalbuphine_10ml_3: ACE_ItemCore {
-        scope = 1;
-        displayName = CSTRING(Syringe_nalbuphine_10_3_Display);
-        picture = QPATHTOF(ui\syringe_item.paa);
-        model = "\A3\Structures_F_EPA\Items\Medical\Painkillers_F.p3d";
-        descriptionShort = CSTRING(Syringe_nalbuphine_10_3_DescShort);
-        ACE_isMedicalItem = 1;
-        class ItemInfo: CBA_MiscItem_ItemInfo {
-            mass = 1;
-        };
-    };
-    class kat_syringe_txa_5ml_1: ACE_ItemCore {
-        scope = 1;
+    class kat_syringe_txa_5ml_10: kat_syringe_txa_10ml_10 {
         displayName = CSTRING(Syringe_txa_5_1_Display);
-        picture = QPATHTOF(ui\syringe_item.paa);
-        model = "\A3\Structures_F_EPA\Items\Medical\Painkillers_F.p3d";
         descriptionShort = CSTRING(Syringe_txa_5_1_DescShort);
-        ACE_isMedicalItem = 1;
-        class ItemInfo: CBA_MiscItem_ItemInfo {
-            mass = 1;
-        };
     };
-    class kat_syringe_txa_5ml_3: ACE_ItemCore {
-        scope = 1;
+    class kat_syringe_txa_5ml_20: kat_syringe_txa_5ml_10 {
         displayName = CSTRING(Syringe_txa_5_3_Display);
-        picture = QPATHTOF(ui\syringe_item.paa);
-        model = "\A3\Structures_F_EPA\Items\Medical\Painkillers_F.p3d";
         descriptionShort = CSTRING(Syringe_txa_5_3_DescShort);
-        ACE_isMedicalItem = 1;
-        class ItemInfo: CBA_MiscItem_ItemInfo {
-            mass = 1;
-        };
     };
-    class kat_syringe_eaca_5ml_1: ACE_ItemCore {
-        scope = 1;
+    class kat_syringe_eaca_5ml_10: kat_syringe_txa_5ml_10 {
         displayName = CSTRING(Syringe_eaca_5_1_Display);
-        picture = QPATHTOF(ui\syringe_item.paa);
-        model = "\A3\Structures_F_EPA\Items\Medical\Painkillers_F.p3d";
         descriptionShort = CSTRING(Syringe_eaca_5_1_DescShort);
-        ACE_isMedicalItem = 1;
-        class ItemInfo: CBA_MiscItem_ItemInfo {
-            mass = 1;
-        };
     };
-    class kat_syringe_eaca_5ml_3: ACE_ItemCore {
-        scope = 1;
-        displayName = CSTRING(Syringe_eaca_5_3_Display);
-        picture = QPATHTOF(ui\syringe_item.paa);
-        model = "\A3\Structures_F_EPA\Items\Medical\Painkillers_F.p3d";
+    class kat_syringe_eaca_5ml_20: kat_syringe_txa_5ml_10 {
+        displayName = CSTRING(Syringe_eaca_5_20_Display);
         descriptionShort = CSTRING(Syringe_eaca_5_3_DescShort);
-        ACE_isMedicalItem = 1;
-        class ItemInfo: CBA_MiscItem_ItemInfo {
-            mass = 1;
-        };
     };
-    class kat_syringe_norepinephrine_5ml_1: ACE_ItemCore {
-        scope = 1;
+    class kat_syringe_norepinephrine_5ml_10: kat_syringe_txa_5ml_10 {
         displayName = CSTRING(Syringe_norepinephrine_5_1_Display);
-        picture = QPATHTOF(ui\syringe_item.paa);
-        model = "\A3\Structures_F_EPA\Items\Medical\Painkillers_F.p3d";
         descriptionShort = CSTRING(Syringe_norepinephrine_5_1_DescShort);
-        ACE_isMedicalItem = 1;
-        class ItemInfo: CBA_MiscItem_ItemInfo {
-            mass = 1;
-        };
     };
-    class kat_syringe_norepinephrine_5ml_3: ACE_ItemCore {
-        scope = 1;
-        displayName = CSTRING(Syringe_norepinephrine_5_3_Display);
-        picture = QPATHTOF(ui\syringe_item.paa);
-        model = "\A3\Structures_F_EPA\Items\Medical\Painkillers_F.p3d";
-        descriptionShort = CSTRING(Syringe_norepinephrine_5_3_DescShort);
-        ACE_isMedicalItem = 1;
-        class ItemInfo: CBA_MiscItem_ItemInfo {
-            mass = 1;
-        };
-    };
-    class kat_syringe_phenylephrine_5ml_1: ACE_ItemCore {
-        scope = 1;
+    class kat_syringe_phenylephrine_5ml_10: kat_syringe_txa_5ml_10 {
         displayName = CSTRING(Syringe_phenylephrine_5_1_Display);
-        picture = QPATHTOF(ui\syringe_item.paa);
-        model = "\A3\Structures_F_EPA\Items\Medical\Painkillers_F.p3d";
         descriptionShort = CSTRING(Syringe_phenylephrine_5_1_DescShort);
-        ACE_isMedicalItem = 1;
-        class ItemInfo: CBA_MiscItem_ItemInfo {
-            mass = 1;
-        };
     };
-    class kat_syringe_phenylephrine_5ml_3: ACE_ItemCore {
-        scope = 1;
-        displayName = CSTRING(Syringe_phenylephrine_5_3_Display);
-        picture = QPATHTOF(ui\syringe_item.paa);
-        model = "\A3\Structures_F_EPA\Items\Medical\Painkillers_F.p3d";
-        descriptionShort = CSTRING(Syringe_phenylephrine_5_3_DescShort);
-        ACE_isMedicalItem = 1;
-        class ItemInfo: CBA_MiscItem_ItemInfo {
-            mass = 1;
-        };
-    };
-    class kat_syringe_nitroglycerin_5ml_1: ACE_ItemCore {
-        scope = 1;
+    class kat_syringe_nitroglycerin_5ml_10: kat_syringe_txa_5ml_10 {
         displayName = CSTRING(Syringe_nitroglycerin_5_1_Display);
-        picture = QPATHTOF(ui\syringe_item.paa);
-        model = "\A3\Structures_F_EPA\Items\Medical\Painkillers_F.p3d";
         descriptionShort = CSTRING(Syringe_phenylephrine_5_1_DescShort);
-        ACE_isMedicalItem = 1;
-        class ItemInfo: CBA_MiscItem_ItemInfo {
-            mass = 1;
-        };
     };
-    class kat_syringe_nitroglycerin_5ml_3: ACE_ItemCore {
-        scope = 1;
-        displayName = CSTRING(Syringe_nitroglycerin_5_3_Display);
-        picture = QPATHTOF(ui\syringe_item.paa);
-        model = "\A3\Structures_F_EPA\Items\Medical\Painkillers_F.p3d";
-        descriptionShort = CSTRING(Syringe_nitroglycerin_5_3_DescShort);
-        ACE_isMedicalItem = 1;
-        class ItemInfo: CBA_MiscItem_ItemInfo {
-            mass = 1;
-        };
-    };
-    class kat_syringe_amiodarone_5ml_1: ACE_ItemCore {
-        scope = 1;
+    class kat_syringe_amiodarone_5ml_10: kat_syringe_txa_5ml_10 {
         displayName = CSTRING(Syringe_amiodarone_5_1_Display);
-        picture = QPATHTOF(ui\syringe_item.paa);
-        model = "\A3\Structures_F_EPA\Items\Medical\Painkillers_F.p3d";
         descriptionShort = CSTRING(Syringe_amiodarone_5_1_DescShort);
-        ACE_isMedicalItem = 1;
-        class ItemInfo: CBA_MiscItem_ItemInfo {
-            mass = 1;
-        };
     };
-    class kat_syringe_amiodarone_5ml_3: ACE_ItemCore {
-        scope = 1;
-        displayName = CSTRING(Syringe_amiodarone_5_3_Display);
-        picture = QPATHTOF(ui\syringe_item.paa);
-        model = "\A3\Structures_F_EPA\Items\Medical\Painkillers_F.p3d";
-        descriptionShort = CSTRING(Syringe_amiodarone_5_3_DescShort);
-        ACE_isMedicalItem = 1;
-        class ItemInfo: CBA_MiscItem_ItemInfo {
-            mass = 1;
-        };
+    class kat_syringe_alteplase_5ml_10: kat_syringe_txa_5ml_10 {
+        displayName = CSTRING(Syringe_alteplase_5_1_Display);
+        descriptionShort = CSTRING(Syringe_alteplase_5_1_DescShort);
     };
-    class kat_syringe_alteplase_5ml_3: ACE_ItemCore {
-        scope = 1;
-        displayName = CSTRING(Syringe_alteplase_5_3_Display);
-        picture = QPATHTOF(ui\syringe_item.paa);
-        model = "\A3\Structures_F_EPA\Items\Medical\Painkillers_F.p3d";
-        descriptionShort = CSTRING(Syringe_alteplase_5_3_DescShort);
-        ACE_isMedicalItem = 1;
-        class ItemInfo: CBA_MiscItem_ItemInfo {
-            mass = 1;
-        };
-    };
-    class kat_syringe_epinephrineIV_5ml_1: ACE_ItemCore {
-        scope = 1;
+    class kat_syringe_epinephrineIV_5ml_10: kat_syringe_txa_5ml_10 {
         displayName = CSTRING(Syringe_epinephrineIV_5_1_Display);
-        picture = QPATHTOF(ui\syringe_item.paa);
-        model = "\A3\Structures_F_EPA\Items\Medical\Painkillers_F.p3d";
         descriptionShort = CSTRING(Syringe_epinephrineIV_5_1_DescShort);
-        ACE_isMedicalItem = 1;
-        class ItemInfo: CBA_MiscItem_ItemInfo {
-            mass = 1;
-        };
     };
-    class kat_syringe_epinephrineIV_5ml_3: ACE_ItemCore {
-        scope = 1;
-        displayName = CSTRING(Syringe_epinephrineIV_5_3_Display);
-        picture = QPATHTOF(ui\syringe_item.paa);
-        model = "\A3\Structures_F_EPA\Items\Medical\Painkillers_F.p3d";
-        descriptionShort = CSTRING(Syringe_epinephrineIV_5_3_DescShort);
-        ACE_isMedicalItem = 1;
-        class ItemInfo: CBA_MiscItem_ItemInfo {
-            mass = 1;
-        };
-    };
-    class kat_syringe_lidocaine_5ml_1: ACE_ItemCore {
-        scope = 1;
+    class kat_syringe_lidocaine_5ml_10: kat_syringe_txa_5ml_10 {
         displayName = CSTRING(Syringe_lidocaine_5_1_Display);
-        picture = QPATHTOF(ui\syringe_item.paa);
-        model = "\A3\Structures_F_EPA\Items\Medical\Painkillers_F.p3d";
         descriptionShort = CSTRING(Syringe_lidocaine_5_1_DescShort);
-        ACE_isMedicalItem = 1;
-        class ItemInfo: CBA_MiscItem_ItemInfo {
-            mass = 1;
-        };
     };
-    class kat_syringe_lidocaine_5ml_3: ACE_ItemCore {
-        scope = 1;
-        displayName = CSTRING(Syringe_lidocaine_5_3_Display);
-        picture = QPATHTOF(ui\syringe_item.paa);
-        model = "\A3\Structures_F_EPA\Items\Medical\Painkillers_F.p3d";
-        descriptionShort = CSTRING(Syringe_lidocaine_5_3_DescShort);
-        ACE_isMedicalItem = 1;
-        class ItemInfo: CBA_MiscItem_ItemInfo {
-            mass = 1;
-        };
-    };
-    class kat_syringe_ketamine_5ml_1: ACE_ItemCore {
-        scope = 1;
+    class kat_syringe_ketamine_5ml_10: kat_syringe_txa_5ml_10 {
         displayName = CSTRING(Syringe_ketamine_5_1_Display);
-        picture = QPATHTOF(ui\syringe_item.paa);
-        model = "\A3\Structures_F_EPA\Items\Medical\Painkillers_F.p3d";
         descriptionShort = CSTRING(Syringe_ketamine_5_1_DescShort);
-        ACE_isMedicalItem = 1;
-        class ItemInfo: CBA_MiscItem_ItemInfo {
-            mass = 1;
-        };
     };
-    class kat_syringe_ketamine_5ml_3: ACE_ItemCore {
-        scope = 1;
-        displayName = CSTRING(Syringe_ketamine_5_3_Display);
-        picture = QPATHTOF(ui\syringe_item.paa);
-        model = "\A3\Structures_F_EPA\Items\Medical\Painkillers_F.p3d";
-        descriptionShort = CSTRING(Syringe_ketamine_5_3_DescShort);
-        ACE_isMedicalItem = 1;
-        class ItemInfo: CBA_MiscItem_ItemInfo {
-            mass = 1;
-        };
-    };
-    class kat_syringe_fentanyl_5ml_1: ACE_ItemCore {
-        scope = 1;
+    class kat_syringe_fentanyl_5ml_10: kat_syringe_txa_5ml_10 {
         displayName = CSTRING(Syringe_fentanyl_5_1_Display);
-        picture = QPATHTOF(ui\syringe_item.paa);
-        model = "\A3\Structures_F_EPA\Items\Medical\Painkillers_F.p3d";
         descriptionShort = CSTRING(Syringe_fentanyl_5_1_DescShort);
-        ACE_isMedicalItem = 1;
-        class ItemInfo: CBA_MiscItem_ItemInfo {
-            mass = 1;
-        };
     };
-    class kat_syringe_fentanyl_5ml_3: ACE_ItemCore {
-        scope = 1;
-        displayName = CSTRING(Syringe_fentanyl_10_3_Display);
-        picture = QPATHTOF(ui\syringe_item.paa);
-        model = "\A3\Structures_F_EPA\Items\Medical\Painkillers_F.p3d";
-        descriptionShort = CSTRING(Syringe_fentanyl_10_3_DescShort);
-        ACE_isMedicalItem = 1;
-        class ItemInfo: CBA_MiscItem_ItemInfo {
-            mass = 1;
-        };
-    };
-    class kat_syringe_nalbuphine_5ml_1: ACE_ItemCore {
-        scope = 1;
+    class kat_syringe_nalbuphine_5ml_10: kat_syringe_txa_5ml_10 {
         displayName = CSTRING(Syringe_nalbuphine_5_1_Display);
-        picture = QPATHTOF(ui\syringe_item.paa);
-        model = "\A3\Structures_F_EPA\Items\Medical\Painkillers_F.p3d";
         descriptionShort = CSTRING(Syringe_nalbuphine_5_1_DescShort);
-        ACE_isMedicalItem = 1;
-        class ItemInfo: CBA_MiscItem_ItemInfo {
-            mass = 1;
-        };
     };
-    class kat_syringe_nalbuphine_5ml_3: ACE_ItemCore {
-        scope = 1;
-        displayName = CSTRING(Syringe_nalbuphine_5_3_Display);
-        picture = QPATHTOF(ui\syringe_item.paa);
-        model = "\A3\Structures_F_EPA\Items\Medical\Painkillers_F.p3d";
-        descriptionShort = CSTRING(Syringe_nalbuphine_5_3_DescShort);
-        ACE_isMedicalItem = 1;
-        class ItemInfo: CBA_MiscItem_ItemInfo {
-            mass = 1;
-        };
-    };
-    class kat_syringe_lorazepam_5ml_1: ACE_ItemCore {
-        scope = 1;
+    class kat_syringe_lorazepam_5ml_10: kat_syringe_txa_5ml_10 {
         displayName = CSTRING(Syringe_lorazepam_5_1_Display);
-        picture = QPATHTOF(ui\syringe_item.paa);
-        model = "\A3\Structures_F_EPA\Items\Medical\Painkillers_F.p3d";
         descriptionShort = CSTRING(Syringe_lorazepam_5_1_DescShort);
-        ACE_isMedicalItem = 1;
-        class ItemInfo: CBA_MiscItem_ItemInfo {
-            mass = 1;
-        };
     };
-    class kat_syringe_lorazepam_5ml_3: ACE_ItemCore {
-        scope = 1;
-        displayName = CSTRING(Syringe_lorazepam_5_3_Display);
-        picture = QPATHTOF(ui\syringe_item.paa);
-        model = "\A3\Structures_F_EPA\Items\Medical\Painkillers_F.p3d";
-        descriptionShort = CSTRING(Syringe_lorazepam_5_3_DescShort);
-        ACE_isMedicalItem = 1;
-        class ItemInfo: CBA_MiscItem_ItemInfo {
-            mass = 1;
-        };
-    };
-    class kat_syringe_flumazenil_5ml_1: ACE_ItemCore {
-        scope = 1;
+    class kat_syringe_flumazenil_5ml_10: kat_syringe_txa_5ml_10 {
         displayName = CSTRING(Syringe_flumazenil_5_1_Display);
-        picture = QPATHTOF(ui\syringe_item.paa);
-        model = "\A3\Structures_F_EPA\Items\Medical\Painkillers_F.p3d";
         descriptionShort = CSTRING(Syringe_flumazenil_5_1_DescShort);
-        ACE_isMedicalItem = 1;
-        class ItemInfo: CBA_MiscItem_ItemInfo {
-            mass = 1;
-        };
     };
-    class kat_syringe_flumazenil_5ml_3: ACE_ItemCore {
-        scope = 1;
-        displayName = CSTRING(Syringe_flumazenil_5_3_Display);
-        picture = QPATHTOF(ui\syringe_item.paa);
-        model = "\A3\Structures_F_EPA\Items\Medical\Painkillers_F.p3d";
-        descriptionShort = CSTRING(Syringe_flumazenil_5_3_DescShort);
-        ACE_isMedicalItem = 1;
-        class ItemInfo: CBA_MiscItem_ItemInfo {
-            mass = 1;
-        };
-    };
-    class kat_syringe_etomidate_5ml_1: ACE_ItemCore {
-        scope = 1;
+    class kat_syringe_etomidate_5ml_10: kat_syringe_txa_5ml_10 {
         displayName = CSTRING(Syringe_etomidate_5_1_Display);
-        picture = QPATHTOF(ui\syringe_item.paa);
-        model = "\A3\Structures_F_EPA\Items\Medical\Painkillers_F.p3d";
         descriptionShort = CSTRING(Syringe_etomidate_5_1_DescShort);
-        ACE_isMedicalItem = 1;
-        class ItemInfo: CBA_MiscItem_ItemInfo {
-            mass = 1;
-        };
     };
-    class kat_syringe_etomidate_5ml_3: ACE_ItemCore {
-        scope = 1;
-        displayName = CSTRING(Syringe_etomidate_5_3_Display);
-        picture = QPATHTOF(ui\syringe_item.paa);
-        model = "\A3\Structures_F_EPA\Items\Medical\Painkillers_F.p3d";
-        descriptionShort = CSTRING(Syringe_etomidate_5_3_DescShort);
-        ACE_isMedicalItem = 1;
-        class ItemInfo: CBA_MiscItem_ItemInfo {
-            mass = 1;
-        };
-    };
-    class kat_syringe_morphineIV_5ml_1: ACE_ItemCore {
-        scope = 1;
+    class kat_syringe_morphineIV_5ml_10: kat_syringe_txa_5ml_10 {
         displayName = CSTRING(Syringe_morphineIV_5_1_Display);
-        picture = QPATHTOF(ui\syringe_item.paa);
-        model = "\A3\Structures_F_EPA\Items\Medical\Painkillers_F.p3d";
         descriptionShort = CSTRING(Syringe_morphineIV_5_1_DescShort);
-        ACE_isMedicalItem = 1;
-        class ItemInfo: CBA_MiscItem_ItemInfo {
-            mass = 1;
-        };
     };
-    class kat_syringe_morphineIV_5ml_3: ACE_ItemCore {
-        scope = 1;
-        displayName = CSTRING(Syringe_morphineIV_5_3_Display);
-        picture = QPATHTOF(ui\syringe_item.paa);
-        model = "\A3\Structures_F_EPA\Items\Medical\Painkillers_F.p3d";
-        descriptionShort = CSTRING(Syringe_morphineIV_5_3_DescShort);
-        ACE_isMedicalItem = 1;
-        class ItemInfo: CBA_MiscItem_ItemInfo {
-            mass = 1;
-        };
-    };
-    class kat_syringe_atropineIV_5ml_1: ACE_ItemCore {
-        scope = 1;
+    class kat_syringe_atropineIV_5ml_10: kat_syringe_txa_5ml_10 {
         displayName = CSTRING(Syringe_atropineIV_5_1_Display);
-        picture = QPATHTOF(ui\syringe_item.paa);
-        model = "\A3\Structures_F_EPA\Items\Medical\Painkillers_F.p3d";
         descriptionShort = CSTRING(Syringe_atropineIV_5_1_DescShort);
-        ACE_isMedicalItem = 1;
-        class ItemInfo: CBA_MiscItem_ItemInfo {
-            mass = 1;
-        };
     };
-    class kat_syringe_atropineIV_5ml_3: ACE_ItemCore {
-        scope = 1;
-        displayName = CSTRING(Syringe_atropineIV_5_3_Display);
-        picture = QPATHTOF(ui\syringe_item.paa);
-        model = "\A3\Structures_F_EPA\Items\Medical\Painkillers_F.p3d";
-        descriptionShort = CSTRING(Syringe_atropineIV_5_3_DescShort);
-        ACE_isMedicalItem = 1;
-        class ItemInfo: CBA_MiscItem_ItemInfo {
-            mass = 1;
-        };
-    };
-    class kat_syringe_adenosineIV_5ml_1: ACE_ItemCore {
-        scope = 1;
+    class kat_syringe_adenosineIV_5ml_10: kat_syringe_txa_5ml_10 {
         displayName = CSTRING(Syringe_adenosineIV_5_1_Display);
-        picture = QPATHTOF(ui\syringe_item.paa);
-        model = "\A3\Structures_F_EPA\Items\Medical\Painkillers_F.p3d";
         descriptionShort = CSTRING(Syringe_adenosineIV_5_1_DescShort);
-        ACE_isMedicalItem = 1;
-        class ItemInfo: CBA_MiscItem_ItemInfo {
-            mass = 1;
-        };
     };
-    class kat_syringe_adenosineIV_5ml_3: ACE_ItemCore {
-        scope = 1;
-        displayName = CSTRING(Syringe_adenosineIV_5_3_Display);
-        picture = QPATHTOF(ui\syringe_item.paa);
-        model = "\A3\Structures_F_EPA\Items\Medical\Painkillers_F.p3d";
-        descriptionShort = CSTRING(Syringe_adenosineIV_5_3_DescShort);
-        ACE_isMedicalItem = 1;
-        class ItemInfo: CBA_MiscItem_ItemInfo {
-            mass = 1;
-        };
-    };
-    class kat_syringe_salineIV_5ml_3: ACE_ItemCore {
-        scope = 1;
+    class kat_syringe_salineIV_5ml_3: kat_syringe_txa_5ml_10 {
         displayName = CSTRING(Syringe_SalineFlush_Display);
-        picture = QPATHTOF(ui\syringe_item.paa);
-        model = "\A3\Structures_F_EPA\Items\Medical\Painkillers_F.p3d";
         descriptionShort = CSTRING(Syringe_SalineFlush_DescShort);
-        ACE_isMedicalItem = 1;
-        class ItemInfo: CBA_MiscItem_ItemInfo {
-            mass = 1;
-        };
     };
-    class kat_syringe_doxapram_5ml_1: ACE_ItemCore {
-        scope = 1;
+    class kat_syringe_doxapram_5ml_10: kat_syringe_txa_5ml_10 {
         displayName = CSTRING(Syringe_doxapram_5_1_Display);
-        picture = QPATHTOF(ui\syringe_item.paa);
-        model = "\A3\Structures_F_EPA\Items\Medical\Painkillers_F.p3d";
         descriptionShort = CSTRING(Syringe_doxapram_5_1_DescShort);
-        ACE_isMedicalItem = 1;
-        class ItemInfo: CBA_MiscItem_ItemInfo {
-            mass = 1;
-        };
-    };
-    class kat_syringe_doxapram_5ml_3: ACE_ItemCore {
-        scope = 1;
-        displayName = CSTRING(Syringe_doxapram_5_3_Display);
-        picture = QPATHTOF(ui\syringe_item.paa);
-        model = "\A3\Structures_F_EPA\Items\Medical\Painkillers_F.p3d";
-        descriptionShort = CSTRING(Syringe_doxapram_5_3_DescShort);
-        ACE_isMedicalItem = 1;
-        class ItemInfo: CBA_MiscItem_ItemInfo {
-            mass = 1;
-        };
     };
 };
