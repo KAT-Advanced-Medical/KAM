@@ -102,7 +102,7 @@ if (_ivMenuShow) then {
             ctrlSetText [_valueIDC, (_activeFlow toFixed 1)];
             ctrlSetText [_rateIDC, (_activeRate toFixed 1)];
         };
-        case (_activeIV == 10): {
+        case (_activeIV == 13): {
             ctrlShow [_coverIDC, false];
             ctrlShow [_titleIDC, true];
             ctrlShow [_typeIDC, true];
@@ -114,7 +114,7 @@ if (_ivMenuShow) then {
             ctrlSetText [_valueIDC, (_activeFlow toFixed 1)];
             ctrlSetText [_rateIDC, (_activeRate toFixed 1)];
         };
-        case (_activeIV == 13): {
+        case (_activeIV == 14): {
             ctrlShow [_coverIDC, false];
             ctrlShow [_titleIDC, true];
             ctrlShow [_typeIDC, true];
