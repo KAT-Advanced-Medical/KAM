@@ -8,7 +8,7 @@ class ACE_Medical_Treatment_Actions {
     class CPR;
 
     class BloodIV: BasicBandage {
-        allowedSelections[] = {"Chest", "LeftArm", "RightArm", "UpperLeftLeg", "UpperRightLeg"};
+        allowedSelections[] = {"Chest", "LeftArm", "RightArm", "UpperLeftLeg", "UpperRightLeg", "Neck"};
         medicRequired = QUOTE(ace_medical_treatment_medicIV);
         condition = QUOTE(!(GVAR(RequireInsIV)) || FUNC(removeIV));
         callbackSuccess = "[_medic, _patient, _bodyPart, _className, _itemUser, _usedItem] call ace_medical_treatment_fnc_ivBag; [_patient, -800, 16, _className] call kat_pharma_fnc_fluid;";
@@ -424,12 +424,11 @@ class ACE_Medical_Treatment_Actions {
     class ApplyEZIO: ApplyIV {
         displayName = CSTRING(Apply_EZ_IO);
         displayNameProgress = CSTRING(Applying_IV);
-        medicRequired = QGVAR(medLvl_ApplyIO);
+        medicRequired = QGVAR(medLvl_ApplyEZIO);
         category = "advanced";
-        allowedSelections[] = {"Chest"};
         items[] = {"kat_EZ_IO"};
         condition = QUOTE(!([ARR_3(_player,_patient,_bodyPart)] call FUNC(removeIV)));
-        treatmentTime = QGVAR(treatmentTime_ApplyEZ_IO);
+        treatmentTime = QGVAR(treatmentTime_ApplyEZIO);
         callbackSuccess = QUOTE([ARR_4(_player,_patient,_bodyPart,'kat_EZ_IO')] call FUNC(applyIV));
         sounds[] = {};
     };

@@ -5095,14 +5095,20 @@
         <Key ID="STR_KAT_Pharma_medLvl_ApplyEZIO_Desc">
             <English>Changes what medical level is required to set EZ IOs</English>
         </Key>
-        <Key ID="STR_KAT_Pharma_treatmentTime_ApplyIO">
+        <Key ID="STR_KAT_Pharma_treatmentTime_ApplyEZIO">
             <English>Time to establish EZ IOs</English>
         </Key>
         <Key ID="STR_KAT_Pharma_Apply_EJV">
             <English>Establish EJV</English>
         </Key>
+        <Key ID="STR_KAT_Pharma_Applying_EJV">
+            <English>Establishing External Jugular Vein Access</English>
+        </Key>
         <Key ID="STR_KAT_Pharma_EJV_Display">
             <English>Central Line Kit</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_EJV_InjuryDisplay">
+            <English>EJV</English>
         </Key>
         <Key ID="STR_KAT_Pharma_medLvl_ApplyEJV">
             <English>Allow External Jugular Vein Access</English>

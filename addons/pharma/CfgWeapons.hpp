@@ -46,7 +46,7 @@ class CfgWeapons {
             mass = 0.5;
         };
     };
-    class kat_IO_EZ: ACE_ItemCore {
+    class kat_EZ_IO: ACE_ItemCore {
         scope = 2;
         displayName = CSTRING(EZ_IO_Display);
         picture = QPATHTOF(ui\icon_ez_io.paa);
@@ -54,7 +54,7 @@ class CfgWeapons {
         descriptionShort = CSTRING(IO_DescShort);
         ACE_isMedicalItem = 1;
         class ItemInfo: CBA_MiscItem_ItemInfo {
-            mass = 2;
+            mass = 1.5;
         };
     };
     class kat_EJV: ACE_ItemCore {

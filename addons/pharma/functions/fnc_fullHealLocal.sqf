@@ -30,6 +30,8 @@ TRACE_1("fullHealLocal",_patient);
 * 10 = 16g IV w/ Flush
 * 11 = 14g IV w/ Flush
 * 12 = 20g IV w/ Flush
+* 13 = EZ IO
+* 14 = EJV
 */
 
 GVAR(cardiacArrestBleedRate) = ACEGVAR(medical,const_minCardiacOutput) * EGVAR(circulation,cardiacArrestBleedRate);

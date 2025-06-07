@@ -123,6 +123,65 @@ switch (_usedItem) do {
 
         [_patient, "activity", LSTRING(iv_log), [[_medic] call ACEFUNC(common,getName), "FAST IO"]] call ACEFUNC(medical_treatment,addToLog);
         [_patient, "FAST IO"] call ACEFUNC(medical_treatment,addToTriageCard);};
+
+    case "kat_EZ_IO": {
+        _IVarray set [_partIndex, 13];
+        _IVrate set [_partIndex, 0.4];
+        _patient setVariable [QGVAR(IV), _IVarray, true];
+        _patient setVariable [QGVAR(IVrate), _IVrate, true];
+        private _medStack = _patient call ACEFUNC(medical_treatment,getAllMedicationCount);
+        private _medsToCheck = ["fentanyl", "ketamine", "nalbuphine", "morphine"];
+        private _fentanylEffectiveness = 0;
+        private _ketamineEffectiveness = 0;
+        private _nalbuphineEffectiveness = 0;
+        private _morphineEffectiveness = 0;
+        private _localAnesthesia = (_patient getVariable [QEGVAR(pharma,localAnesthesia), [0,0,0,0,0,0,0,0,0,0,0,0]]) select _partIndex;
+        {
+            private _medName = toLower (_x select 0);
+            private _effectiveness = _x select 2;
+            if ("fentanyl" in _medName) then {
+                _fentanylEffectiveness = _fentanylEffectiveness max _effectiveness;
+            };
+            if ("ketamine" in _medName) then {
+                _ketamineEffectiveness = _ketamineEffectiveness max _effectiveness;
+            };
+            if ("nalbuphine" in _medName) then {
+                _nalbuphineEffectiveness = _nalbuphineEffectiveness max _effectiveness;
+            };
+            if ("morphine" in _medName) then {
+                _morphineEffectiveness = _morphineEffectiveness max _effectiveness;
+            };
+        } forEach _medStack;
+        if (
+            _fentanylEffectiveness <= 0.8 &&
+            _ketamineEffectiveness <= 0.8 &&
+            _nalbuphineEffectiveness <= 0.8 &&
+            _morphineEffectiveness <= 0.8 &&
+            _localAnesthesia <= 0.8
+        ) then {
+            _painLevel = [0.6, 0.7, 0.8] select (floor random 3);
+            [_patient, _painLevel] call ACEFUNC(medical_status,adjustPainLevel);
+        };
+        [{
+            params ["_patient", "_partIndex"];
+            private _localAnesthesia = (_patient getVariable [QEGVAR(pharma,localAnesthesia), [0,0,0,0,0,0,0,0,0,0,0,0]]) select _partIndex;
+            (_localAnesthesia > 0.7);
+        }, {
+            params ["_patient", "_partIndex", "_painLevel"];
+            _negPainLevel = -1 * _painLevel;
+            [_patient, _negPainLevel] call ACEFUNC(medical_status,adjustPainLevel);
+        }, [_patient, _partIndex, _painLevel], 60] call CBA_fnc_waitUntilAndExecute;
+
+        [_patient, "activity", LSTRING(iv_log), [[_medic] call ACEFUNC(common,getName), "EZ IO"]] call ACEFUNC(medical_treatment,addToLog);
+        [_patient, "EZ IO"] call ACEFUNC(medical_treatment,addToTriageCard);};
+
+        case "kat_EJV": {     
+        _IVarray set [_partIndex, 14];
+        _IVrate set [_partIndex, 1.8];
+        _patient setVariable [QGVAR(IV), _IVarray, true];
+        _patient setVariable [QGVAR(IVrate), _IVrate, true];
+        [_patient, "activity", LSTRING(iv_log), [[_medic] call ACEFUNC(common,getName), "EJV"]] call ACEFUNC(medical_treatment,addToLog);
+        [_patient, "EJV"] call ACEFUNC(medical_treatment,addToTriageCard);};
     default {};
 };
 
