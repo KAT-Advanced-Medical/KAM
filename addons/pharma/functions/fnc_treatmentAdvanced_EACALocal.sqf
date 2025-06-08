@@ -56,9 +56,8 @@ if (_IVactual > 1) then {
 };
 
 if (!(GVAR(coagulation)) || GVAR(coagulation_allow_EACA_script)) then {
-
     if ([7,8,9] find _IVactual == -1) then {
-        if (_eacaEffectiveness > 0.3)&& !(_allowStack) exitWith {};
+        if (_eacaEffectiveness > 0.3) && (!_allowStack) exitWith {};
 
         [{
             params ["_args", "_idPFH"];

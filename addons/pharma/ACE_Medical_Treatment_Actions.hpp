@@ -8,7 +8,7 @@ class ACE_Medical_Treatment_Actions {
     class CPR;
 
     class BloodIV: BasicBandage {
-        allowedSelections[] = {"Chest", "LeftArm", "RightArm", "UpperLeftLeg", "UpperRightLeg"};
+        allowedSelections[] = {"Chest", "LeftArm", "RightArm", "UpperLeftLeg", "UpperRightLeg", "Neck"};
         medicRequired = QUOTE(ace_medical_treatment_medicIV);
         condition = QUOTE(!(GVAR(RequireInsIV)) || FUNC(removeIV));
         callbackSuccess = "[_medic, _patient, _bodyPart, _className, _itemUser, _usedItem] call ace_medical_treatment_fnc_ivBag; [_patient, -800, 16, _className] call kat_pharma_fnc_fluid;";
@@ -421,11 +421,36 @@ class ACE_Medical_Treatment_Actions {
         litter[] = {};
         sounds[] = {};
     };
+    class ApplyEZIO: ApplyIV {
+        displayName = CSTRING(Apply_EZ_IO);
+        displayNameProgress = CSTRING(Applying_IV);
+        medicRequired = QGVAR(medLvl_ApplyEZIO);
+        allowSelfTreatment = 0;
+        category = "advanced";
+        items[] = {"kat_EZ_IO"};
+        condition = QUOTE(!([ARR_3(_player,_patient,_bodyPart)] call FUNC(removeIV)));
+        treatmentTime = QGVAR(treatmentTime_ApplyEZIO);
+        callbackSuccess = QUOTE([ARR_4(_player,_patient,_bodyPart,'kat_EZ_IO')] call FUNC(applyIV));
+        sounds[] = {};
+    };
+    class ApplyEJV: ApplyIV {
+        displayName = CSTRING(Apply_EJV);
+        displayNameProgress = CSTRING(Applying_EJV);
+        medicRequired = QGVAR(medLvl_ApplyEJV);
+        allowSelfTreatment = 0;
+        category = "advanced";
+        allowedSelections[] = {"Neck"};
+        items[] = {"kat_EJV"};
+        condition = QUOTE(!([ARR_3(_player,_patient,_bodyPart)] call FUNC(removeIV)));
+        treatmentTime = QGVAR(treatmentTime_ApplyEJV);
+        callbackSuccess = QUOTE([ARR_4(_player,_patient,_bodyPart,'kat_EJV')] call FUNC(applyIV));
+        sounds[] = {};
+    };
     class RemoveIV: ApplyTourniquet {
         displayName = CSTRING(Remove_IV);
         displayNameProgress = CSTRING(Removing_IV);
         category = "advanced";
-        allowedSelections[] = {"Chest", "LeftArm", "RightArm", "UpperLeftLeg", "UpperRightLeg"};
+        allowedSelections[] = {"Chest", "Neck", "LeftArm", "RightArm", "UpperLeftLeg", "UpperRightLeg"};
         treatmentTime = QGVAR(treatmentTime_ApplyIV);
         items[] = {};
         condition = QFUNC(removeIV);
@@ -509,8 +534,9 @@ class ACE_Medical_Treatment_Actions {
         litter[] = {};
     };
     class syringe_EACA_5ml_10: Carbonate {
-
-        allowedSelections[] = {"Chest", "LeftArm", "RightArm", "UpperLeftLeg", "UpperRightLeg"};
+        displayName = CSTRING(push_EACA_IV_1);
+        displayNameProgress = CSTRING(pushing_EACA_IV_1);
+        allowedSelections[] = {"Chest", "LeftArm", "RightArm", "UpperLeftLeg", "UpperRightLeg", "Neck"};
         allowSelfTreatment = 1;
         medicRequired = QGVAR(medLvl_EACA);
         treatmentTime = QGVAR(treatmentTime_EACA);
@@ -535,7 +561,6 @@ class ACE_Medical_Treatment_Actions {
         treatmentTime = QGVAR(treatmentTime_TXAIM);
         items[] = {"kat_syringe_txa_10ml_10"};
         callbackSuccess = QFUNC(medication);
-        sounds[] = {};
     };
     class syringe_TXA_10ml_30: syringe_TXA_10ml_10 {
         displayName = CSTRING(inject_TXA_IM_3);

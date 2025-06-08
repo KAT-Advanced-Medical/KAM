@@ -29,6 +29,8 @@ if (_IVactual > 0) then {
         case 2: { _entries pushBack [LLSTRING(IV_16_Display), [0.3, 0.6, 0.3, 1]]};
         case 3: { _entries pushBack [LLSTRING(IV_14_Display), [0.3, 0.6, 0.3, 1]]};
         case 4: { _entries pushBack [LLSTRING(IV_20_Display), [0.3, 0.6, 0.3, 1]]};
+        case 13: { _entries pushBack [LLSTRING(EZ_IO_Display), [0.3, 0.6, 0.3, 1]]};
+        case 14: { _entries pushBack [LLSTRING(EJV_InjuryDisplay), [0.3, 0.6, 0.3, 1]]};
         default {};
         };
 };
