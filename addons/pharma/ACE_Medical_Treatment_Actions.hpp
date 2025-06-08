@@ -425,6 +425,7 @@ class ACE_Medical_Treatment_Actions {
         displayName = CSTRING(Apply_EZ_IO);
         displayNameProgress = CSTRING(Applying_IV);
         medicRequired = QGVAR(medLvl_ApplyEZIO);
+        allowSelfTreatment = 0;
         category = "advanced";
         items[] = {"kat_EZ_IO"};
         condition = QUOTE(!([ARR_3(_player,_patient,_bodyPart)] call FUNC(removeIV)));
@@ -436,6 +437,7 @@ class ACE_Medical_Treatment_Actions {
         displayName = CSTRING(Apply_EJV);
         displayNameProgress = CSTRING(Applying_EJV);
         medicRequired = QGVAR(medLvl_ApplyEJV);
+        allowSelfTreatment = 0;
         category = "advanced";
         allowedSelections[] = {"Neck"};
         items[] = {"kat_EJV"};
@@ -448,7 +450,7 @@ class ACE_Medical_Treatment_Actions {
         displayName = CSTRING(Remove_IV);
         displayNameProgress = CSTRING(Removing_IV);
         category = "advanced";
-        allowedSelections[] = {"Chest", "LeftArm", "RightArm", "UpperLeftLeg", "UpperRightLeg"};
+        allowedSelections[] = {"Chest", "Neck", "LeftArm", "RightArm", "UpperLeftLeg", "UpperRightLeg"};
         treatmentTime = QGVAR(treatmentTime_ApplyIV);
         items[] = {};
         condition = QFUNC(removeIV);

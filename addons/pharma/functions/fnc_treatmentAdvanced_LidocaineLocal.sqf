@@ -27,15 +27,15 @@ private _partIndex = ALL_BODY_PARTS find toLower _bodyPart;
             if (!(alive _patient)) exitWith {
                 [_idPFH] call CBA_fnc_removePerFrameHandler;
             };
-                if (_lidocaineTarget > 4) exitWith {
+                if (_lidocaineTarget > 16) exitWith {
                     [_idPFH] call CBA_fnc_removePerFrameHandler;
                 };
                 private _anesthesiaArray = _patient getVariable [QEGVAR(pharma,localAnesthesia), [0,0,0,0,0,0,0,0,0,0,0,0]];
                 private _localAnesthesia = _anesthesiaArray select _partIndex;
-                private _localAnesthesia = _localAnesthesia + 0.2;
+                private _localAnesthesia = (_localAnesthesia + 0.05) min 1;
                 _anesthesiaArray set [_partIndex, _localAnesthesia];
                 _patient setVariable [VAR_LOCAL_ANESTHESIA, _anesthesiaArray, true];
-        }, 5, [_patient,0,_partIndex]] call CBA_fnc_addPerFrameHandler;
+        }, 0.75, [_patient,0,_partIndex]] call CBA_fnc_addPerFrameHandler;
 }, [_patient,_partIndex], 5] call CBA_fnc_waitAndExecute;
 
 [{
@@ -57,4 +57,4 @@ private _partIndex = ALL_BODY_PARTS find toLower _bodyPart;
                 _anesthesiaArray set [_partIndex, _localAnesthesia];
                 _patient setVariable [VAR_LOCAL_ANESTHESIA, _anesthesiaArray, true];
         }, 3, [_patient,0,_partIndex]] call CBA_fnc_addPerFrameHandler;
-}, [_patient,_partIndex], 60] call CBA_fnc_waitAndExecute;
+}, [_patient,_partIndex], 30] call CBA_fnc_waitAndExecute;

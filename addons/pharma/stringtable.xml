@@ -5107,6 +5107,9 @@
         <Key ID="STR_KAT_Pharma_EJV_Display">
             <English>Central Line Kit</English>
         </Key>
+        <Key ID="STR_KAT_Pharma_EJV_DESCSHORT">
+            <English>Allows for External Jugular Vein Access</English>
+        </Key>
         <Key ID="STR_KAT_Pharma_EJV_InjuryDisplay">
             <English>EJV</English>
         </Key>
