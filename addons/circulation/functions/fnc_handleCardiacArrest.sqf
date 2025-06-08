@@ -54,13 +54,21 @@ if (_initial) then {
     };
 
     if ((count(_unit getVariable [QGVAR(ht), []])) != 0) then {
-        _cardiacArrestType = 2;
+        if (GVAR(AdvRhythm_PEAEnabled)) then {
+            _cardiacArrestType = 2;
+        } else {
+            _cardiacArrestType = 1;
+        };
     };
 
     private _nitroCount = ([_unit, "Nitroglycerin", false] call ACEFUNC(medical_status,getMedicationCount)) select 1;
 
     if ((_nitroCount < 0.5) && ((random 3) < 1)) then {
-        _cardiacArrestType = 2;
+        if (GVAR(AdvRhythm_PEAEnabled)) then {
+            _cardiacArrestType = 2;
+        } else {
+            _cardiacArrestType = 1;
+        };
     };
 
     _unit setVariable [QGVAR(cardiacArrestType), _cardiacArrestType, true];
