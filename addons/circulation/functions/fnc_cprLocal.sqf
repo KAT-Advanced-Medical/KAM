@@ -23,7 +23,7 @@ params ["_medic", "_patient", "_reviveObject"];
 private _chance = 0;
 private _random = ((random 100) - (GET_REBOA_VOLUME(_patient) * 10)) max 1;
 private _randomAmi = random 4;
-private _epiBoost = 1;
+private _epiBoost = 0;
 private _amiBoost = 0;
 private _lidoBoost = 0;
 private _nitroEffect = 1;
@@ -77,7 +77,7 @@ private _fnc_advRhythm = {
 };
 
 {
-    _x params ["_medication"];
+    _x params ["_medication", "", "", "", "", "", "", "_dose"];
 
     switch(_medication) do
     {
@@ -97,37 +97,25 @@ private _fnc_advRhythm = {
         {
             _lidoBoost = _lidoBoost + 8;
         };
-        case "syringe_epinephrineIV_5ml_1":
+        case "epinephrineIV":
         {
-            _epiBoost = 1.3;
+            _epiBoost = _epiBoost + (1.1 * (1 + (_dose / 5)));
         };
-        case "syringe_epinephrineIV_5ml_3":
+        case "lidocaine":
         {
-            _epiBoost = 1.5;
+            _lidoBoost = _lidoBoost + (6 * (1 + (_dose / 5)));
         };
-        case "syringe_lidocaine_5ml_3":
+        case "amiodarone":
         {
-            _lidoBoost = _lidoBoost + 8;
-        };
-        case "syringe_amiodarone_5ml_1":
-        {
-            _amiBoost = _amiBoost + (random [6,10,16]);
-        };
-        case "syringe_amiodarone_5ml_3":
-        {
-            _amiBoost = _amiBoost + (random [8,14,20]);
+            _amiBoost = _amiBoost + ((random [6,10,16]) * (1 + (_dose / 5)));
         };
         case "Nitroglycerin":
         {
             _nitroEffect = _nitroEffect + 1;
         };
-        case "syringe_nitroglycerin_5ml_1":
+        case "nitroglycerin":
         {
-            _nitroEffect = _nitroEffect + 1;
-        };
-        case "syringe_nitroglycerin_5ml_3":
-        {
-            _nitroEffect = _nitroEffect + 3;
+            _nitroEffect = (_nitroEffect + 1) * (1 + (_dose / 5));
         };
     };
 } forEach (_patient getVariable [QACEGVAR(medical,medications), []]);
