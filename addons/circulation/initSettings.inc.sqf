@@ -392,6 +392,15 @@
 
 // Sets chance for Pulseless Electrical Activity / Asystole
 [
+    QGVAR(AdvRhythm_PEAEnabled),
+    "CHECKBOX",
+    LLSTRING(SETTING_AdvRhythm_PEAEnabled),
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_AdvRhythms)],
+    [false],
+    true
+] call CBA_fnc_addSetting;
+
+[
     QGVAR(AdvRhythm_PEAChance),
     "SLIDER",
     LLSTRING(SETTING_AdvRhythm_PEAChance),
