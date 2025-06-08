@@ -40,7 +40,7 @@ if (_initial) then {
     if !(_active) exitWith {};
 
     if (GET_BLOOD_VOLUME_LITERS(_unit) < GVAR(AdvRhythm_asystoleBloodlossThreshold)) then {
-        if (floor (random 100) < GVAR(AdvRhythm_PEAChance)) then {
+        if ((floor (random 100) < GVAR(AdvRhythm_PEAChance)) && GVAR(AdvRhythm_PEAEnabled)) then {
             _cardiacArrestType = 2;
         } else {
             _cardiacArrestType = 1;
@@ -96,7 +96,7 @@ if (GVAR(AdvRhythm_canDeteriorate)) then {
                 params ["_unit"];
 
                 private _targetType = 1;
-                if (floor (random 100) < GVAR(AdvRhythm_PEAChance)) then {
+                if ((floor (random 100) < GVAR(AdvRhythm_PEAChance)) && GVAR(AdvRhythm_PEAEnabled)) then {
                     _targetType = 2;
                 } else {
                     _targetType = 1;
@@ -135,7 +135,7 @@ if (GVAR(AdvRhythm_canDeteriorate)) then {
                 params ["_unit"];
 
                 private _targetType = 1;
-                if (floor (random 100) < GVAR(AdvRhythm_PEAChance)) then {
+                if ((floor (random 100) < GVAR(AdvRhythm_PEAChance)) && GVAR(AdvRhythm_PEAEnabled)) then {
                     _targetType = 2;
                 } else {
                     _targetType = 1;
