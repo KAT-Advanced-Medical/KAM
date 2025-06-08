@@ -52,7 +52,7 @@ if (floor (random 100) < (GVAR(pneumothoraxChance) + _chanceIncrease)) then {
         [_unit, _chanceIncrease, _side] call FUNC(handlePneumothoraxDeterioration);
     } else {
         if (_tensionState select _side) then {
-            _pneumothoraxState set [_side, 4];
+            _pneumothoraxState set [_side, 16];
             _unit setVariable [QGVAR(pneumothorax), _pneumothoraxState, true];
             _activeChestSeal set [_side, true];
             _unit setVariable [QGVAR(activeChestSeal), _activeChestSeal, true];

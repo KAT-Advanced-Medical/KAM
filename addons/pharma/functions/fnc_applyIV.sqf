@@ -175,13 +175,40 @@ switch (_usedItem) do {
         [_patient, "activity", LSTRING(iv_log), [[_medic] call ACEFUNC(common,getName), "EZ IO"]] call ACEFUNC(medical_treatment,addToLog);
         [_patient, "EZ IO"] call ACEFUNC(medical_treatment,addToTriageCard);};
 
-    case "kat_EJV": {     
+    case "kat_EJV": {
+        if (random 100 < (GVAR(IVFailures) * 4)) then {
+            [_patient, [0.4, 0.5, 0.7] select (floor random 3)] call ACEFUNC(medical_status,adjustPainLevel);
+            if (random 100 < 20) then {
+                if (floor (random 100) < GVAR(hptxChance)) then {
+                _hemoState set [_side, true];
+                _unit setVariable [QGVAR(hemopneumothorax), _hemoState, true];
+
+                private _ht = _unit getVariable [QEGVAR(circulation,ht), []];
+                    if ((_ht findIf {_x isEqualTo "hemo"}) == -1) then {
+                    _ht pushBack "hemo";
+                    };
+                if (_unit getVariable [QEGVAR(circulation,cardiacArrestType), 0] == 0) then {
+                            [QACEGVAR(medical,FatalVitals), _unit] call CBA_fnc_localEvent;
+                };
+                _pneumothoraxState set [_side, 16];
+                _unit setVariable [QGVAR(pneumothorax), _pneumothoraxState, true];
+
+                [_unit] call EFUNC(circulation,updateInternalBleeding);
+                } else {
+                _tensionState set [_side, true];
+                _unit setVariable [QGVAR(tensionpneumothorax), _tensionState, true];
+
+                _pneumothoraxState set [_side, 16];
+                _unit setVariable [QGVAR(pneumothorax), _pneumothoraxState, true];
+                };      
+            };
+        } else {
         _IVarray set [_partIndex, 14];
         _IVrate set [_partIndex, 1.8];
         _patient setVariable [QGVAR(IV), _IVarray, true];
         _patient setVariable [QGVAR(IVrate), _IVrate, true];
         [_patient, "activity", LSTRING(iv_log), [[_medic] call ACEFUNC(common,getName), "EJV"]] call ACEFUNC(medical_treatment,addToLog);
-        [_patient, "EJV"] call ACEFUNC(medical_treatment,addToTriageCard);};
+        [_patient, "EJV"] call ACEFUNC(medical_treatment,addToTriageCard);};};
     default {};
 };
 
