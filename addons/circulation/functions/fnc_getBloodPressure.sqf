@@ -29,8 +29,6 @@ private _cardiacOutput = [_unit] call EFUNC(vitals,getCardiacOutput);
 private _resistance = _unit getVariable [VAR_PERIPH_RES, DEFAULT_PERIPH_RES];
 private _vasoconstriction = GET_VASOCONSTRICTION(_unit);
 private _tourniquets = GET_TOURNIQUETS(_unit);
-private _vasoconstriction = GET_VASOCONSTRICTION(_unit);
-private _tourniquets = GET_TOURNIQUETS(_unit);
 private _occlusionMap = [
     [3, [3, 8, 9, 10, 11]],
     [4, [4]],
