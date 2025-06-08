@@ -80,10 +80,12 @@ private _occlusionMap = [
 private _idx = _occlusionMap findIf { _x#0 == _partIndex };
 private _result = if (_idx != -1) then { _occlusionMap select _idx select 1 } else { [] };
 private _medParts = (_className splitString "_");
-private _isOccluded = ({ _tourniquets select _x != 0 } count _result > 0);
-if (_isOccluded && (_IVarray select _partIndex isNotEqualTo 10)) exitWith {
+private _subDermalMeds = [
+    "syringe_lidocaine_10ml_1"
+];
+private _isOccluded = ({ _tourniquets select _x != 0 } count _result > 0) && !(((_IVarray select _bodyPart isEqualTo 13) && (_medParts select 2 isEqualTo "5ml")) || (_classname in _subDermalMeds));
+if (_isOccluded) exitWith {
     TRACE_1("Medication injection site is occluded by tourniquet", _partIndex);
-    
     private _occludedMedications = _patient getVariable [QACEGVAR(medical,occludedMedications), []];
     _occludedMedications pushBack [_partIndex, _classname];
     _patient setVariable [QACEGVAR(medical,occludedMedications), _occludedMedications, true];
