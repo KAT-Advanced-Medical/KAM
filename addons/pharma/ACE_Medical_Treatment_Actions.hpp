@@ -536,7 +536,7 @@ class ACE_Medical_Treatment_Actions {
     class syringe_EACA_5ml_1: Carbonate {
         displayName = CSTRING(push_EACA_IV_1);
         displayNameProgress = CSTRING(pushing_EACA_IV_1);
-        allowedSelections[] = {"Chest", "LeftArm", "RightArm", "UpperLeftLeg", "UpperRightLeg"};
+        allowedSelections[] = {"Chest", "LeftArm", "RightArm", "UpperLeftLeg", "UpperRightLeg", "Neck"};
         allowSelfTreatment = 1;
         medicRequired = QGVAR(medLvl_EACA);
         treatmentTime = QGVAR(treatmentTime_EACA);
@@ -573,7 +573,7 @@ class ACE_Medical_Treatment_Actions {
     class syringe_TXA_5ml_1: syringe_EACA_5ml_1 {
         displayName = CSTRING(push_TXA_IV_1);
         displayNameProgress = CSTRING(pushing_TXA_IV_1);
-        allowedSelections[] = {"Chest", "LeftArm", "RightArm", "UpperLeftLeg", "UpperRightLeg"};
+        allowedSelections[] = {"Chest", "LeftArm", "RightArm", "UpperLeftLeg", "UpperRightLeg", "Neck"};
         allowSelfTreatment = 1;
         medicRequired = QGVAR(medLvl_TXA);
         treatmentTime = QGVAR(treatmentTime_TXA);
