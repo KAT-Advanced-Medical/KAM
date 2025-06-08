@@ -114,7 +114,7 @@ switch (_usedItem) do {
         [{
             params ["_patient", "_partIndex"];
             private _localAnesthesia = (_patient getVariable [QEGVAR(pharma,localAnesthesia), [0,0,0,0,0,0,0,0,0,0,0,0]]) select _partIndex;
-            (_localAnesthesia > 0.7);
+            (_localAnesthesia > 0.4);
         }, {
             params ["_patient", "_partIndex", "_painLevel"];
             _negPainLevel = -1 * _painLevel;
@@ -165,7 +165,7 @@ switch (_usedItem) do {
         [{
             params ["_patient", "_partIndex"];
             private _localAnesthesia = (_patient getVariable [QEGVAR(pharma,localAnesthesia), [0,0,0,0,0,0,0,0,0,0,0,0]]) select _partIndex;
-            (_localAnesthesia > 0.7);
+            (_localAnesthesia > 0.4);
         }, {
             params ["_patient", "_partIndex", "_painLevel"];
             _negPainLevel = -1 * _painLevel;
@@ -175,7 +175,7 @@ switch (_usedItem) do {
         [_patient, "activity", LSTRING(iv_log), [[_medic] call ACEFUNC(common,getName), "EZ IO"]] call ACEFUNC(medical_treatment,addToLog);
         [_patient, "EZ IO"] call ACEFUNC(medical_treatment,addToTriageCard);};
 
-        case "kat_EJV": {     
+    case "kat_EJV": {     
         _IVarray set [_partIndex, 14];
         _IVrate set [_partIndex, 1.8];
         _patient setVariable [QGVAR(IV), _IVarray, true];

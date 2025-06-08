@@ -83,7 +83,7 @@ private _medParts = (_className splitString "_");
 private _subDermalMeds = [
     "syringe_lidocaine_10ml_1"
 ];
-private _isOccluded = ({ _tourniquets select _x != 0 } count _result > 0) && !(((_IVarray select _bodyPart isEqualTo 13) && (_medParts select 2 isEqualTo "5ml")) || (_classname in _subDermalMeds));
+private _isOccluded = ({ _tourniquets select _x != 0 } count _result > 0) && !(((_IVarray select _partIndex isEqualTo 13) && (_medParts select 2 isEqualTo "5ml")) || (_classname in _subDermalMeds));
 if (_isOccluded) exitWith {
     TRACE_1("Medication injection site is occluded by tourniquet", _partIndex);
     private _occludedMedications = _patient getVariable [QACEGVAR(medical,occludedMedications), []];

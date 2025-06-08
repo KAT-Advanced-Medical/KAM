@@ -15,7 +15,7 @@
  * Public: No
  */
 params ["_patient", "_bodyPart", "_classname"];
-if (_className in ["syringe_lidocaine_5ml_1", "syringe_lidocaine_5ml_3"]) exitWith {};
+if (_className in ["syringe_lidocaine_5ml_3"]) exitWith {};
 private _partIndex = ALL_BODY_PARTS find toLower _bodyPart;
 [{
     params ["_patient", "_partIndex"];
