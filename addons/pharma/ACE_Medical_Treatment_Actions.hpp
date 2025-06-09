@@ -534,8 +534,8 @@ class ACE_Medical_Treatment_Actions {
         litter[] = {};
     };
     class syringe_EACA_5ml_10: Carbonate {
-        displayName = CSTRING(push_EACA_IV_1);
-        displayNameProgress = CSTRING(pushing_EACA_IV_1);
+        displayName = KATPUSHCSTRING(eaca,5ml,10);
+        displayNameProgress = KATPUSHINGCSTRING(eaca,5ml,10);
         allowedSelections[] = {"Chest", "LeftArm", "RightArm", "UpperLeftLeg", "UpperRightLeg", "Neck"};
         allowSelfTreatment = 1;
         medicRequired = QGVAR(medLvl_EACA);
@@ -545,16 +545,14 @@ class ACE_Medical_Treatment_Actions {
         callbackSuccess = QFUNC(medication);
         sounds[] = {};
     };
-    class syringe_EACA_5ml_30: syringe_EACA_5ml_10 {
-        displayName = CSTRING(push_EACA_IV_3);
-        displayNameProgress = CSTRING(pushing_EACA_IV_3);
-        items[] = {"kat_syringe_eaca_5ml_30"};
-        callbackSuccess = QFUNC(medication);
-        sounds[] = {};
+    class syringe_EACA_5ml_20: syringe_EACA_5ml_10 {
+        displayName = KATPUSHCSTRING(eaca,5ml,20);
+        displayNameProgress = KATPUSHINGCSTRING(eaca,5ml,20);
+        items[] = {"kat_syringe_eaca_5ml_20"};
     };
     class syringe_TXA_10ml_10: Carbonate {
-        displayName = CSTRING(inject_TXA_IM_1);
-        displayNameProgress = CSTRING(injecting_TXA_IM_1);
+        displayName = KATPUSHCSTRING(txa,10ml,10);
+        displayNameProgress = KATPUSHINGCSTRING(txa,10ml,10);
         allowedSelections[] = {"LeftArm", "RightArm", "UpperLeftArm", "UpperRightArm", "UpperLeftLeg", "UpperRightLeg", "LeftLeg", "RightLeg"};
         allowSelfTreatment = 1;
         medicRequired = QGVAR(medLvl_TXAIM);
@@ -562,24 +560,22 @@ class ACE_Medical_Treatment_Actions {
         items[] = {"kat_syringe_txa_10ml_10"};
         callbackSuccess = QFUNC(medication);
     };
-    class syringe_TXA_10ml_30: syringe_TXA_10ml_10 {
-        displayName = CSTRING(inject_TXA_IM_3);
-        displayNameProgress = CSTRING(injecting_TXA_IM_3);
-        items[] = {"kat_syringe_txa_10ml_30"};
-        callbackSuccess = QFUNC(medication);
-        sounds[] = {};
+    class syringe_TXA_10ml_20: syringe_TXA_10ml_10 {
+        displayName = KATPUSHCSTRING(txa,10ml,20);
+        displayNameProgress = KATPUSHINGCSTRING(txa,10ml,20);
+        items[] = {"kat_syringe_txa_10ml_20"};
     };
     class syringe_TXA_5ml_10: syringe_EACA_5ml_10 {
-        displayName = CSTRING(push_TXA_IV_1);
-        displayNameProgress = CSTRING(pushing_TXA_IV_1);
+        displayName = KATPUSHCSTRING(txa,5ml,10);
+        displayNameProgress = KATPUSHINGCSTRING(txa,5ml,10);
         medicRequired = QGVAR(medLvl_TXA);
         treatmentTime = QGVAR(treatmentTime_TXA);
         items[] = {"kat_syringe_txa_5ml_10"};
     };
-    class syringe_TXA_5ml_30: syringe_TXA_5ml_10 {
-        displayName = CSTRING(push_TXA_IV_3);
-        displayNameProgress = CSTRING(pushing_TXA_IV_3);
-        items[] = {"kat_syringe_txa_5ml_30"};
+    class syringe_TXA_5ml_20: syringe_TXA_5ml_10 {
+        displayName = KATPUSHCSTRING(txa,5ml,20);
+        displayNameProgress = KATPUSHINGCSTRING(txa,5ml,20);
+        items[] = {"kat_syringe_txa_5ml_20"};
     };
     class syringe_norepinephrine_5ml_10: syringe_EACA_5ml_10 {
         displayName = KATPUSHCSTRING(norepinephrine,5ml,10);
@@ -1049,50 +1045,20 @@ class ACE_Medical_Treatment_Actions {
         displayName = KATPUSHCSTRING(morphineIV,5ml,10);
         displayNameProgress = KATPUSHINGCSTRING(morphineIV,5ml,10);
     };
-    class syringe_morphineIV_5ml_12: syringe_morphineIV_5ml_10 {
-        items[] = {"kat_syringe_morphineIV_5ml_12"};
-        displayName = KATPUSHCSTRING(morphineIV,5ml,12);
-        displayNameProgress = KATPUSHINGCSTRING(morphineIV,5ml,12);
-    };
-    class syringe_morphineIV_5ml_14: syringe_morphineIV_5ml_10 {
-        items[] = {"kat_syringe_morphineIV_5ml_14"};
-        displayName = KATPUSHCSTRING(morphineIV,5ml,14);
-        displayNameProgress = KATPUSHINGCSTRING(morphineIV,5ml,14);
-    };
     class syringe_morphineIV_5ml_16: syringe_morphineIV_5ml_10 {
         items[] = {"kat_syringe_morphineIV_5ml_16"};
         displayName = KATPUSHCSTRING(morphineIV,5ml,16);
         displayNameProgress = KATPUSHINGCSTRING(morphineIV,5ml,16);
-    };
-    class syringe_morphineIV_5ml_18: syringe_morphineIV_5ml_10 {
-        items[] = {"kat_syringe_morphineIV_5ml_18"};
-        displayName = KATPUSHCSTRING(morphineIV,5ml,18);
-        displayNameProgress = KATPUSHINGCSTRING(morphineIV,5ml,18);
     };
     class syringe_morphineIV_5ml_20: syringe_morphineIV_5ml_10 {
         items[] = {"kat_syringe_morphineIV_5ml_20"};
         displayName = KATPUSHCSTRING(morphineIV,5ml,20);
         displayNameProgress = KATPUSHINGCSTRING(morphineIV,5ml,20);
     };
-    class syringe_morphineIV_5ml_22: syringe_morphineIV_5ml_10 {
-        items[] = {"kat_syringe_morphineIV_5ml_22"};
-        displayName = KATPUSHCSTRING(morphineIV,5ml,22);
-        displayNameProgress = KATPUSHINGCSTRING(morphineIV,5ml,22);
-    };
-    class syringe_morphineIV_5ml_24: syringe_morphineIV_5ml_10 {
-        items[] = {"kat_syringe_morphineIV_5ml_24"};
-        displayName = KATPUSHCSTRING(morphineIV,5ml,24);
-        displayNameProgress = KATPUSHINGCSTRING(morphineIV,5ml,24);
-    };
     class syringe_morphineIV_5ml_26: syringe_morphineIV_5ml_10 {
         items[] = {"kat_syringe_morphineIV_5ml_26"};
         displayName = KATPUSHCSTRING(morphineIV,5ml,26);
         displayNameProgress = KATPUSHINGCSTRING(morphineIV,5ml,26);
-    };
-    class syringe_morphineIV_5ml_28: syringe_morphineIV_5ml_10 {
-        items[] = {"kat_syringe_morphineIV_5ml_28"};
-        displayName = KATPUSHCSTRING(morphineIV,5ml,28);
-        displayNameProgress = KATPUSHINGCSTRING(morphineIV,5ml,28);
     };
     class syringe_morphineIV_5ml_30: syringe_morphineIV_5ml_10 {
         items[] = {"kat_syringe_morphineIV_5ml_30"};
@@ -1737,50 +1703,20 @@ class ACE_Medical_Treatment_Actions {
         displayName = KATPUSHCSTRING(morphineIV,10ml,10);
         displayNameProgress = KATPUSHINGCSTRING(morphineIV,10ml,10);
     };
-    class syringe_morphineIV_10ml_12: syringe_morphineIV_10ml_10 {
-        items[] = {"kat_syringe_morphineIV_10ml_12"};
-        displayName = KATPUSHCSTRING(morphineIV,10ml,12);
-        displayNameProgress = KATPUSHINGCSTRING(morphineIV,10ml,12);
-    };
-    class syringe_morphineIV_10ml_14: syringe_morphineIV_10ml_10 {
-        items[] = {"kat_syringe_morphineIV_10ml_14"};
-        displayName = KATPUSHCSTRING(morphineIV,10ml,14);
-        displayNameProgress = KATPUSHINGCSTRING(morphineIV,10ml,14);
-    };
     class syringe_morphineIV_10ml_16: syringe_morphineIV_10ml_10 {
         items[] = {"kat_syringe_morphineIV_10ml_16"};
         displayName = KATPUSHCSTRING(morphineIV,10ml,16);
         displayNameProgress = KATPUSHINGCSTRING(morphineIV,10ml,16);
-    };
-    class syringe_morphineIV_10ml_18: syringe_morphineIV_10ml_10 {
-        items[] = {"kat_syringe_morphineIV_10ml_18"};
-        displayName = KATPUSHCSTRING(morphineIV,10ml,18);
-        displayNameProgress = KATPUSHINGCSTRING(morphineIV,10ml,18);
     };
     class syringe_morphineIV_10ml_20: syringe_morphineIV_10ml_10 {
         items[] = {"kat_syringe_morphineIV_10ml_20"};
         displayName = KATPUSHCSTRING(morphineIV,10ml,20);
         displayNameProgress = KATPUSHINGCSTRING(morphineIV,10ml,20);
     };
-    class syringe_morphineIV_10ml_22: syringe_morphineIV_10ml_10 {
-        items[] = {"kat_syringe_morphineIV_10ml_22"};
-        displayName = KATPUSHCSTRING(morphineIV,10ml,22);
-        displayNameProgress = KATPUSHINGCSTRING(morphineIV,10ml,22);
-    };
-    class syringe_morphineIV_10ml_24: syringe_morphineIV_10ml_10 {
-        items[] = {"kat_syringe_morphineIV_10ml_24"};
-        displayName = KATPUSHCSTRING(morphineIV,10ml,24);
-        displayNameProgress = KATPUSHINGCSTRING(morphineIV,10ml,24);
-    };
     class syringe_morphineIV_10ml_26: syringe_morphineIV_10ml_10 {
         items[] = {"kat_syringe_morphineIV_10ml_26"};
         displayName = KATPUSHCSTRING(morphineIV,10ml,26);
         displayNameProgress = KATPUSHINGCSTRING(morphineIV,10ml,26);
-    };
-    class syringe_morphineIV_10ml_28: syringe_morphineIV_10ml_10 {
-        items[] = {"kat_syringe_morphineIV_10ml_28"};
-        displayName = KATPUSHCSTRING(morphineIV,10ml,28);
-        displayNameProgress = KATPUSHINGCSTRING(morphineIV,10ml,28);
     };
     class syringe_morphineIV_10ml_30: syringe_morphineIV_10ml_10 {
         items[] = {"kat_syringe_morphineIV_10ml_30"};

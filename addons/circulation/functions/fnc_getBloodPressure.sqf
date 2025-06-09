@@ -53,7 +53,7 @@ private _occludedParts = [];
     };
 } forEach _occlusionMap;
 private _countOccluded = count _occludedParts;
-private _bloodPressure = ((_cardiacOutput * _resistance) / ((_vasoconstriction max 0.4) min 1.8)) * (1.07 ^ _countOccluded);
+private _bloodPressure = ((_cardiacOutput * _resistance) / ((_vasoconstriction max 0.4) min 1.8)) * (1.07 ^ _countOccluded) * (GET_BLOOD_VOLUME_LITERS(_unit) / DEFAULT_BLOOD_VOLUME);
 TRACE_3("BP1",_cardiacOutput,_resistance,_bloodPressure);
 
 private _BPChange = _unit getVariable [VAR_BLOODPRESSURE_CHANGE, []];

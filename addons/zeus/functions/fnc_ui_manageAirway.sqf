@@ -147,7 +147,7 @@ private _fnc_onConfirm = {
     };
 
     if ((_valueArr select 2) || (_valueArr select 3)) then {
-        _unit setVariable [QEGVAR(breathing,pneumothorax), 4, true];
+        _unit setVariable [QEGVAR(breathing,pneumothorax), [4, 4], true];
         [_unit, -48, -48, "ptx_tension", true] call EFUNC(circulation,updateBloodPressureChange);
         [_unit, 0.5] call ACEFUNC(medical_status,adjustPainLevel);
     };

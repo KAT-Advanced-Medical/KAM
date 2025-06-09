@@ -14,9 +14,10 @@
 #define DFUNC(var1) TRIPLES(ADDON,fnc,var1)
 #define DEFUNC(var1,var2) TRIPLES(DOUBLES(PREFIX,var1),fnc,var2)
 
-#define SIXES(var1,var2,var3,var4,var5,var6) var1##_##var2##_##var3##_##var4##_##var5##_##var5
-#define KATPUSHCSTRING(var1,var2,var3) QUOTE(SIXES($STR,ADDON,push,var1,var2,var3))
-#define KATPUSHINGCSTRING(var1,var2,var3) QUOTE(SIXES($STR,ADDON,pushing,var1,var2,var3))
+#define SIXES(var1,var2,var3,var4,var5,var6) var1##_##var2##_##var3##_##var4##_##var5##_##var6
+#define KATPUSHCSTRING(var1,var2,var3) QUOTE(SIXES($STR,ADDON,Push,var1,var2,var3))
+#define KATPUSHINGCSTRING(var1,var2,var3) QUOTE(SIXES($STR,ADDON,Pushing,var1,var2,var3))
+#define KATDISPLAYCSTRING(var1,var2,var3) QUOTE(SIXES($STR,ADDON,SyringeDisplay,var1,var2,var3))
 
 #undef QFUNC
 #undef QEFUNC

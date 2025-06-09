@@ -44,10 +44,10 @@ _medListBox ctrlAddEventHandler ["LBSelChanged", {
                 private _index = _doseListBox lbAdd LLSTRING(Infusion);
                 _doseListBox lbSetValue [_index, 4];
             } else {
-                private _doseLevels = [1, 2, 3];
+                private _doseLevels = [10, 12, 14, 16, 18, 20, 22, 24, 26, 28, 30];
 
                 {
-                    private _stringtableKey = format ["STR_KAT_Pharma_%1_%2_Dose%3", _medBaseName, _syringeType, _x];
+                    private _stringtableKey = format ["STR_KAT_Pharma_SyringeDisplay_%1_%2_%3", _medBaseName, _syringeType, _x];
                     private _localizedText = localize _stringtableKey;
 
                     if (_localizedText != _stringtableKey && {_localizedText != ""}) then {
