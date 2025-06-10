@@ -491,7 +491,7 @@ class KAT_Medical_Treatment {
             alphaFactor = -0.1;
             contractility = 0.7;
         };
-        class syringe_phenylephrine_5ml_1 {
+        class syringe_phenylephrine_5ml {
             painReduce = 0;
             hrIncreaseLow[] = {2, 10};
             hrIncreaseNormal[] = {2, 15};
@@ -502,32 +502,7 @@ class KAT_Medical_Treatment {
             dose = 1;
             alphaFactor = -0.3;
         };
-    
-        class syringe_nitroglycerin_5ml_1 {
-            painReduce = 0;
-            hrIncreaseLow[] = {5, 10};
-            hrIncreaseNormal[] = {10, 15};
-            hrIncreaseHigh[] = {10, 15};
-            timeInSystem = 360;
-            timeTillMaxEffect = 15;
-            viscosityChange = -25;
-            dose = 1;
-            alphaFactor = 0.2;
-            contractility = -0.2;
-        };
-        class syringe_nitroglycerin_5ml_3 {
-            painReduce = 0;
-            hrIncreaseLow[] = {5, 15};
-            hrIncreaseNormal[] = {5, 20};
-            hrIncreaseHigh[] = {5, 20};
-            timeInSystem = 360;
-            timeTillMaxEffect = 15;
-            dose = 3;
-            viscosityChange = -35;
-            alphaFactor = 0.4;
-            contractility = -0.4;
-        };
-        class syringe_fentanyl_5ml_1 {
+        class syringe_fentanyl_5ml {
             painReduce = 0.6;
             hrIncreaseLow[] = {-5, -10};
             hrIncreaseNormal[] = {-10, -15};
@@ -542,22 +517,7 @@ class KAT_Medical_Treatment {
             respiratoryRate = -0.2;
             contractility = -0.2;
         };
-        class syringe_fentanyl_5ml_3 {
-            painReduce = 1;
-            hrIncreaseLow[] = {-5, -15};
-            hrIncreaseNormal[] = {-10, -20};
-            hrIncreaseHigh[] = {-10, -20};
-            timeInSystem = 900;
-            timeTillMaxEffect = 20;
-            dose = 3;
-            viscosityChange = -10;
-            opioidRelief = 1.5;
-            opioidEffect = 0.25;
-            opioidDepression = 0.25;
-            respiratoryRate = -0.3;
-            contractility = -0.4;
-        };
-        class syringe_ketamine_5ml_1 {
+        class syringe_ketamine_5ml {
             painReduce = 0.5;
             hrIncreaseLow[] = {5, 20};
             hrIncreaseNormal[] = {10, 25};
@@ -571,22 +531,7 @@ class KAT_Medical_Treatment {
             respiratoryRate = 0.2;
             contractility = 0.1;
         };
-        class syringe_ketamine_5ml_3 {
-            painReduce = 0.8;
-            hrIncreaseLow[] = {15, 30};
-            hrIncreaseNormal[] = {15, 35};
-            hrIncreaseHigh[] = {15, 35};
-            timeInSystem = 900;
-            timeTillMaxEffect = 15;
-            dose = 3;
-            viscosityChange = 10;
-            onOverDose = "";
-            opioidEffect = 0.21;
-            opioidDepression = 0.21;
-            respiratoryRate = 0.3;
-            contractility = 0.3;
-        };
-        class syringe_nalbuphine_5ml_1 {
+        class syringe_nalbuphine_5ml {
             painReduce = 0.5;
             hrIncreaseLow[] = {-5, 0};
             hrIncreaseNormal[] = {-10, -5};
@@ -599,20 +544,7 @@ class KAT_Medical_Treatment {
             respiratoryRate = -0.1;
             contractility = -0.2;
         };
-        class syringe_nalbuphine_5ml_3 {
-            painReduce = 0.7;
-            hrIncreaseLow[] = {0, -10};
-            hrIncreaseNormal[] = {-5, -15};
-            hrIncreaseHigh[] = {-5, -15};
-            timeInSystem = 900;
-            timeTillMaxEffect = 30;
-            dose = 3;
-            viscosityChange = -5;
-            opioidRelief = 1.2;
-            respiratoryRate = -0.1;
-            contractility = -0.3;
-        };
-        class syringe_atropineIV_5ml_1 {
+        class syringe_atropineIV_5ml {
             painReduce = 0;
             hrIncreaseLow[] = {5, 20};
             hrIncreaseNormal[] = {5, 15};
@@ -623,18 +555,7 @@ class KAT_Medical_Treatment {
             viscosityChange = 0;
             contractility = 0.2;
         };
-        class syringe_atropineIV_5ml_3 {
-            painReduce = 0;
-            hrIncreaseLow[] = {10, 30};
-            hrIncreaseNormal[] = {10, 25};
-            hrIncreaseHigh[] = {5, 15};
-            timeInSystem = 120;
-            timeTillMaxEffect = 30;
-            dose = 3;
-            viscosityChange = 0;
-            contractility = 0.3;
-        };
-        class syringe_amiodarone_5ml_1 {
+        class syringe_amiodarone_5ml {
             painReduce = 0;
             hrIncreaseLow[] = {0, 0};
             hrIncreaseNormal[] = {0, 0};
@@ -645,18 +566,7 @@ class KAT_Medical_Treatment {
             viscosityChange = 0;
             contractility = -0.4;
         };
-        class syringe_amiodarone_5ml_3 {
-            painReduce = 0;
-            hrIncreaseLow[] = {0, 0};
-            hrIncreaseNormal[] = {0, 0};
-            hrIncreaseHigh[] = {0, 0};
-            timeInSystem = 120;
-            timeTillMaxEffect = 30;
-            dose = 3;
-            viscosityChange = 0;
-            contractility = -0.6;
-        };
-        class syringe_lidocaine_5ml_1 {
+        class syringe_lidocaine_5ml {
             painReduce = 0;
             hrIncreaseLow[] = {0, 0};
             hrIncreaseNormal[] = {0, 0};
@@ -666,7 +576,7 @@ class KAT_Medical_Treatment {
             dose = 1;
             contractility = -0.2;
         };
-        class syringe_lidocaine_5ml_3 {
+        class syringe_lidocaine_5ml {
             painReduce = 0;
             hrIncreaseLow[] = {0, 0};
             hrIncreaseNormal[] = {0, 0};
@@ -676,7 +586,7 @@ class KAT_Medical_Treatment {
             dose = 3;
             contractility = -0.4;
         };
-        class syringe_etomidate_5ml_1 {
+        class syringe_etomidate_5ml {
             painReduce = 0.2;
             hrIncreaseLow[] = {0, -5};
             hrIncreaseNormal[] = {-5, -10};
@@ -688,19 +598,7 @@ class KAT_Medical_Treatment {
             viscosityChange = 0;
             contractility = -0.05;
         };
-        class syringe_etomidate_5ml_3 {
-            painReduce = 0.4;
-            hrIncreaseLow[] = {-5, -10};
-            hrIncreaseNormal[] = {-5, -15};
-            hrIncreaseHigh[] = {-10, -15};
-            timeInSystem = 120;
-            timeTillMaxEffect = 5;
-            dose = 3;
-            opioidDepression = 0.15;
-            viscosityChange = 0;
-            contractility = -0.1;
-        };
-        class syringe_flumazenil_5ml_1 {
+        class syringe_flumazenil_5ml {
             painReduce = 0;
             hrIncreaseLow[] = {0, 0};
             hrIncreaseNormal[] = {0, 0};
@@ -708,16 +606,6 @@ class KAT_Medical_Treatment {
             timeInSystem = 60;
             timeTillMaxEffect = 5;
             dose = 1;
-            viscosityChange = 0;
-        };
-        class syringe_flumazenil_5ml_3 {
-            painReduce = 0;
-            hrIncreaseLow[] = {0, 0};
-            hrIncreaseNormal[] = {0, 0};
-            hrIncreaseHigh[] = {0, 0};
-            timeInSystem = 60;
-            timeTillMaxEffect = 5;
-            dose = 3;
             viscosityChange = 0;
         };
         class syringe_lorazepam_5ml_1 {
@@ -733,20 +621,7 @@ class KAT_Medical_Treatment {
             respiratoryRate = -0.1;
             contractility = -0.1;
         };
-        class syringe_lorazepam_5ml_3 {
-            painReduce = 0;
-            hrIncreaseLow[] = {5, 15};
-            hrIncreaseNormal[] = {5, 20};
-            hrIncreaseHigh[] = {5, 20};
-            timeInSystem = 60;
-            timeTillMaxEffect = 5;
-            dose = 3;
-            opioidDepression = 0.13;
-            viscosityChange = -15;
-            respiratoryRate = -0.1;
-            contractility = -0.1;
-        };
-        class syringe_morphineIV_5ml_1 {
+        class syringe_morphineIV_5ml {
             painReduce = 0.6;
             hrIncreaseLow[] = {-5, -15};
             hrIncreaseNormal[] = {-5, -20};
@@ -758,19 +633,8 @@ class KAT_Medical_Treatment {
             opioidRelief = 1.2;
             respiratoryRate = -0.2;
         };
-        class syringe_morphineIV_5ml_3 {
-            painReduce = 0.8;
-            hrIncreaseLow[] = {-5, -15};
-            hrIncreaseNormal[] = {-5, -25};
-            hrIncreaseHigh[] = {-5, -25};
-            timeInSystem = 600;
-            timeTillMaxEffect = 30;
-            dose = 3;
-            viscosityChange = -20;
-            opioidRelief = 1.3;
-            respiratoryRate = -0.3;
         };
-        class syringe_adenosineIV_5ml_1 {
+        class syringe_adenosineIV_5ml {
             painReduce = 0;
             hrIncreaseLow[] = {-3, -10};
             hrIncreaseNormal[] = {-5, -10};
@@ -780,17 +644,7 @@ class KAT_Medical_Treatment {
             dose = 1;
             viscosityChange = 0;
         };
-        class syringe_adenosineIV_5ml_3 {
-            painReduce = 0;
-            hrIncreaseLow[] = {-3, -10};
-            hrIncreaseNormal[] = {-5, -15};
-            hrIncreaseHigh[] = {-5, -20};
-            timeInSystem = 180;
-            timeTillMaxEffect = 15;
-            dose = 3;
-            viscosityChange = 0;
-        };
-        class syringe_doxapram_5ml_1 {
+        class syringe_doxapram_5ml {
             painReduce = 0;
             hrIncreaseLow[] = {3, 10};
             hrIncreaseNormal[] = {5, 10};
@@ -800,17 +654,7 @@ class KAT_Medical_Treatment {
             dose = 1; 
             respiratoryRate = 0.2;
         };
-        class syringe_doxapram_5ml_3 {
-            painReduce = 0;
-            hrIncreaseLow[] = {5, 15};
-            hrIncreaseNormal[] = {5, 20};
-            hrIncreaseHigh[] = {5, 25};
-            timeInSystem = 360;
-            timeTillMaxEffect = 15;
-            dose = 3;
-            respiratoryRate = 0.3;
-        };
-        class syringe_alteplase_5ml_3 {
+        class syringe_alteplase_5ml_30 {
             painReduce = 0;
             hrIncreaseLow[] = {-4, -10};
             hrIncreaseNormal[] = {-5, -15};
@@ -823,7 +667,7 @@ class KAT_Medical_Treatment {
             incompatibleMedication[] = {};
             viscosityChange = 0;
         };
-        class syringe_fentanyl_10ml_1 {
+        class syringe_fentanyl_10ml {
             painReduce = 0.6;
             hrIncreaseLow[] = {-5, -10};
             hrIncreaseNormal[] = {-10, -15};
@@ -838,20 +682,6 @@ class KAT_Medical_Treatment {
             opioidDepression = 0.15;
             respiratoryRate = -0.2;
         };
-        class syringe_fentanyl_10ml_3 {
-            painReduce = 0.8;
-            hrIncreaseLow[] = {-5, -15};
-            hrIncreaseNormal[] = {-10, -20};
-            hrIncreaseHigh[] = {-10, -20};
-            timeInSystem = 600;
-            timeTillMaxEffect = 60;
-            dose = 3;
-            viscosityChange = -10;
-            opioidRelief = 1.3;
-            opioidEffect = 0.17;
-            opioidDepression = 0.17;
-            respiratoryRate = -0.3;
-        };
         class syringe_ketamine_10ml_1 {
             painReduce = 0.6;
             hrIncreaseLow[] = {5, 20};
@@ -865,20 +695,7 @@ class KAT_Medical_Treatment {
             opioidDepression = 0.12;
             respiratoryRate = 0.3;
         };
-        class syringe_ketamine_10ml_3 {
-            painReduce = 0.8;
-            hrIncreaseLow[] = {15, 30};
-            hrIncreaseNormal[] = {15, 35};
-            hrIncreaseHigh[] = {15, 35};
-            timeInSystem = 450;
-            timeTillMaxEffect = 30;
-            dose = 3;
-            viscosityChange = 10;
-            opioidEffect = 0.15;
-            opioidDepression = 0.15;
-            respiratoryRate = 0.4;
-        };
-        class syringe_nalbuphine_10ml_1 {
+        class syringe_nalbuphine_10ml {
             painReduce = 0.5;
             hrIncreaseLow[] = {-5, 0};
             hrIncreaseNormal[] = {-10, -5};
@@ -890,19 +707,7 @@ class KAT_Medical_Treatment {
             opioidRelief = 1.1;
             respiratoryRate = -0.1;
         };
-        class syringe_nalbuphine_10ml_3 {
-            painReduce = 0.7;
-            hrIncreaseLow[] = {0, -10};
-            hrIncreaseNormal[] = {-5, -15};
-            hrIncreaseHigh[] = {-5, -15};
-            timeInSystem = 300;
-            timeTillMaxEffect = 45;
-            dose = 3;
-            viscosityChange = -5;
-            opioidRelief = 1.2;
-            respiratoryRate = -0.1;
-        };
-        class syringe_lidocaine_10ml_1 {
+        class syringe_lidocaine_10ml {
             painReduce = 0;
             hrIncreaseLow[] = {0, 0};
             hrIncreaseNormal[] = {0, 0};
@@ -911,7 +716,7 @@ class KAT_Medical_Treatment {
             timeTillMaxEffect = 30;
             dose = 1;
         };
-        class syringe_morphineIV_10ml_1 {
+        class syringe_morphineIV_10ml {
             painReduce = 0.6;
             hrIncreaseLow[] = {-5, -15};
             hrIncreaseNormal[] = {-5, -20};
