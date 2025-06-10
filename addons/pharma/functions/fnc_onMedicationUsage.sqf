@@ -25,12 +25,15 @@ if (GVAR(AMS_Enabled)) then {
 
     if (count _medicationParts > 3) then {
         _medicationName = _medicationParts select 1; {
-        private _defaultConfig    = configFile >> QUOTE(ACE_ADDON(Medical_Treatment)) >> "Medication";
+        private _defaultConfig    = configFile >> QUOTE(KAT_Medical_Treatment) >> "Medication";
         private _medicationConfig = _defaultConfig >> _medicationName;
         private _maxDose          = GET_NUMBER(_medicationConfig >> "maxDose",getNumber (_defaultConfig >> "maxDose"));
+        private _currentWeight = _patient getVariable [QEGVAR(vitals,currentWeight), 80];
+        private _maxDoseMult = linearConversion [60, 100, _currentWeight, 0.5, 1.5, true];
+        private _maxDoseFixed = _maxDose * _maxDoseMult
         TRACE_2("onMedUsage1",_maxDose,_medicationName);
 
-        if (_maxDose > 0) then {
+        if (_maxDoseFixed > 0) then {
             private _maxDoseDeviation = GET_NUMBER(_medicationConfig >> "maxDoseDeviation",getNumber (_defaultConfig >> "maxDoseDeviation"));
             private _currentDose = [_target, _medicationName] call ACEFUNC(medical_status,getMedicationCount) select 0;
             TRACE_2("onMedUsage2",_currentDose,_medicationName);
@@ -39,7 +42,7 @@ if (GVAR(AMS_Enabled)) then {
                 _maxDoseDeviation = _maxDoseDeviation + 1;
             };
 
-            private _limit = _maxDose + (floor random _maxDoseDeviation);
+            private _limit = _maxDoseFixed + (floor random _maxDoseDeviation);
             if (_currentDose > _limit) then {
                 TRACE_1("exceeded max dose",_currentDose);
                 [_target, _medicationName, _currentDose, _limit, _incompatibleMed] call FUNC(overDose);

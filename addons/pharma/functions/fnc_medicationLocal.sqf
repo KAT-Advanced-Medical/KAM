@@ -81,7 +81,7 @@ private _idx = _occlusionMap findIf { _x#0 == _partIndex };
 private _result = if (_idx != -1) then { _occlusionMap select _idx select 1 } else { [] };
 private _medParts = (_className splitString "_");
 private _subDermalMeds = [
-    "syringe_lidocaine_10ml_1"
+    "syringe_lidocaine_10ml_10"
 ];
 private _isOccluded = ({ _tourniquets select _x != 0 } count _result > 0) && !(((_IVarray select _partIndex isEqualTo 13) && (_medParts select 2 isEqualTo "5ml")) || (_classname in _subDermalMeds));
 if (_isOccluded) exitWith {
@@ -117,15 +117,44 @@ if (GVAR(AMS_Enabled)) then {
         private _defaultWeight = _patient getVariable [QEGVAR(circulation,defaultWeight), 80];
         private _weightFixed = linearConversion [60, 100, _defaultWeight, 10, 30, true];
         _weightDoseFixed = _weightDose;
-        if !(_weightDose == 20) then {
-            _weightDoseFixed = linearConversion [10, 20, _weightDose, 10, 30, true];
+        if (_weightDose != 20) then {
+            private _weightDoseMin = GET_NUMBER(_medicationConfig >> "weightDoseMin",getNumber (_defaultConfig >> "weightDoseMin"));
+            private _weightDoseMax = GET_NUMBER(_medicationConfig >> "weightDoseMax",getNumber (_defaultConfig >> "weightDoseMax"));
+            _weightDoseFixed = linearConversion [_weightDoseMin, _weightDoseMax, _weightDose, 10, 30, true];
         };
         _weightMult = (_weightFixed/_weightDoseFixed);
+        private _distance = abs (_weightMult - 1);
         if (_weightMult < 1) then {
-            _weightMult = _weightMult / (random [1.1, 1.3, 1.5]);
+            private _divisor = linearConversion [0, 1, _distance, 1.0, 1.7, true];
+            _weightMult = _weightMult / _divisor;
+        } else {
+            private _multiplier = linearConversion [0, 1, _distance, 1.0, 1.7, true];
+            _weightMult = _weightMult * _multiplier;
         };
     };
-    private _drugMult = (((GET_BLOOD_VOLUME_LITERS(_patient) / DEFAULT_BLOOD_VOLUME) * (_heartRateRatio) * ((GET_BODY_FLUID_ECB(_patient)/GET_BODY_FLUID_ECP(_patient)) / (DEFAULT_ECB/DEFAULT_ECP)) max 0.2) min 2.5) * _weightMult;
+    private _parts = (_classname splitString "_");
+    _medication = _classname;
+    if (count _parts > 3) then {
+        _medication = _parts select 1;
+    };
+    private _currentDose = [_patient, _medication] call ACEFUNC(medical_status,getMedicationCount) select 0;
+    private _maximumEffectiveDose = GET_NUMBER(_medicationConfig >> "maximumEffectiveDose",getNumber (_defaultConfig >> "maximumEffectiveDose"));
+    private _doseMult = 1;
+        if ((_currentDose + _startDose) > _maximumEffectiveDose) then {
+            private _excess = (_currentDose + _startDose) - _maximumEffectiveDose;
+            private _reductionFactor = linearConversion [0, _maximumEffectiveDose, _excess, 1.0, 0.1, true];
+            _doseMult = _doseMult * _reductionFactor;
+        };
+
+    private _distance = abs (_weightMult - 1);
+        if (_weightMult < 1) then {
+            private _divisor = linearConversion [0, 1, _distance, 1.0, 1.7, true];
+            _weightMult = _weightMult / _divisor;
+        } else {
+            private _multiplier = linearConversion [0, 1, _distance, 1.0, 1.7, true];
+            _weightMult = _weightMult * _multiplier;
+        };
+    private _drugMult = (((GET_BLOOD_VOLUME_LITERS(_patient) / DEFAULT_BLOOD_VOLUME) * (_heartRateRatio) * ((GET_BODY_FLUID_ECB(_patient)/GET_BODY_FLUID_ECP(_patient)) / (DEFAULT_ECB/DEFAULT_ECP)) max 0.2) min 2.5) * _weightMult * _doseMult;
     TRACE_5("_drugMult",_patient,_defaultHeartRate,_heartRateRatio,(GET_BLOOD_VOLUME_LITERS(_patient) / DEFAULT_BLOOD_VOLUME),_drugMult);
     _painReduce             = GET_NUMBER(_medicationConfig >> "painReduce",getNumber (_defaultConfig >> "painReduce")) * _drugMult;
     _timeInSystem           = GET_NUMBER(_medicationConfig >> "timeInSystem",getNumber (_defaultConfig >> "timeInSystem")) * _drugMult;
@@ -141,7 +170,7 @@ if (GVAR(AMS_Enabled)) then {
     _hrIncreaseHigh         = GET_ARRAY(_medicationConfig >> "hrIncreaseHigh",getArray (_defaultConfig >> "hrIncreaseHigh"));
     _incompatibleMedication = GET_ARRAY(_medicationConfig >> "incompatibleMedication",getArray (_defaultConfig >> "incompatibleMedication"));
     _maxRelief              = GET_NUMBER(_medicationConfig >> "maxRelief",getNumber (_defaultConfig >> "maxRelief"));
-    _dose                   = GET_NUMBER(_medicationConfig >> "dose",getNumber (_defaultConfig >> "dose")) * _drugMult * _startDose;
+    _dose                   = (GET_NUMBER(_medicationConfig >> "dose",getNumber (_defaultConfig >> "dose")) * _drugMult) + _startDose;
     _contractility        = GET_NUMBER(_medicationConfig >> "contractility",getNumber (_defaultConfig >> "contractility")) * _drugMult;
 
     private _heartRate = GET_HEART_RATE(_patient);

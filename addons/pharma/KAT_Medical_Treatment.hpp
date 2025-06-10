@@ -37,6 +37,16 @@ class KAT_Medical_Treatment {
         respiratoryRate = 0;
         //multiplier to contractility
         contractility = 0;
+        //Is the medication dosaging based off of weight
+        weightBased = "false";
+        //what dose corresponds to a weight of 80kg
+        weightDose = 20;
+        //if weightDose isnt 20 (default), what is the upper and lower range of doses
+        weightDoseMin = 10; //60kg
+        weightDoseMax = 30; //100kg
+        //maximum dose before medication effects are reduced
+        maximumEffectiveDose = 30;
+
 
         class Epinephrine {
             painReduce = 0;
@@ -46,11 +56,12 @@ class KAT_Medical_Treatment {
             timeInSystem = 120;
             timeTillMaxEffect = 10;
             dose = 1;
-            maxDose = 6;
-            maxDoseDeviation = 4;
+            maxDose = 60;
+            maxDoseDeviation = 40;
             incompatibleMedication[] = {};
             alphaFactor = -0.1;
             onOverDose = "";
+            maximumEffectiveDose = 30;
         };
         class EpinephrineIV {
             painReduce = 0;
@@ -75,10 +86,11 @@ class KAT_Medical_Treatment {
             timeInSystem = 300;
             timeTillMaxEffect = 60;
             dose = 1;
-            maxDose = 2;
-            maxDoseDeviation = 1;
+            maxDose = 20;
+            maxDoseDeviation = 10;
             incompatibleMedication[] = {};
             viscosityChange = -0;
+            maximumEffectiveDose = 20;
         };
         class MorphineIV {
             painReduce = 0.8;
@@ -102,10 +114,11 @@ class KAT_Medical_Treatment {
             timeInSystem = 180;
             timeTillMaxEffect = 30;
             dose = 1;
-            maxDose = 4;
-            maxDoseDeviation = 2;
+            maxDose = 40;
+            maxDoseDeviation = 20;
             incompatibleMedication[] = {};
             viscosityChange = 0;
+            maximumEffectiveDose = 30;
         };
         class AdenosineIV {
             painReduce = 0;
@@ -154,10 +167,11 @@ class KAT_Medical_Treatment {
             timeInSystem = 90;
             timeTillMaxEffect = 5;
             dose = 1;
-            maxDose = 3;
+            maxDose = 30;
             incompatibleMedication[] = {};
             viscosityChange = 0;
             onOverDose = "";
+            maximumEffectiveDose = 20;
         };
         class Norepinephrine {
             painReduce = 0;
@@ -197,11 +211,12 @@ class KAT_Medical_Treatment {
             timeInSystem = 360;
             timeTillMaxEffect = 15;
             dose = 1;
-            maxDose = 6;
-            maxDoseDeviation = 4;
+            maxDose = 30;
+            maxDoseDeviation = 10;
             incompatibleMedication[] = {};
             viscosityChange = 25;
             alphaFactor = -0.15;
+            maximumEffectiveDose = 20;
         };
         class Nitroglycerin {
             painReduce = 0;
@@ -278,12 +293,13 @@ class KAT_Medical_Treatment {
             timeInSystem = 360;
             timeTillMaxEffect = 45;
             dose = 1;
-            maxDose = 6;
-            maxDoseDeviation = 4;
+            maxDose = 60;
+            maxDoseDeviation = 40;
             incompatibleMedication[] = {};
             viscosityChange = -5;
             onOverDose = "";
             maxRelief = 0.4;
+            maximumEffectiveDose = 4;
         };
         class PainKillers {
             painReduce = 0.35;
@@ -401,12 +417,13 @@ class KAT_Medical_Treatment {
             timeInSystem = 600;
             timeTillMaxEffect = 5;
             dose = 1;
-            maxDose = 2;
-            maxDoseDeviation = 1;
+            maxDose = 20;
+            maxDoseDeviation = 10;
             incompatibleMedication[] = {};
             viscosityChange = 5;
             onOverDose = "";
             opioidEffect = 0.2;
+            maximumEffectiveDose = 10;
         };
         class Caffeine {
             painReduce = 0;
@@ -416,8 +433,8 @@ class KAT_Medical_Treatment {
             timeInSystem = 1800;
             timeTillMaxEffect = 5;
             dose = 1;
-            maxDose = 4;
-            maxDoseDeviation = 4;
+            maxDose = 40;
+            maxDoseDeviation = 20;
             incompatibleMedication[] = {};
             viscosityChange = 0;
             onOverDose = "";
@@ -444,11 +461,12 @@ class KAT_Medical_Treatment {
             timeInSystem = 300;
             timeTillMaxEffect = 20;
             dose = 1;
-            maxDose = 4;
+            maxDose = 40;
             incompatibleMedication[] = {};
             viscosityChange = 5;
             onOverDose = "";
             maxRelief = 0.6;
+            maximumEffectiveDose = 30;
         };
         class syringe_txa_5ml {
             painReduce = 0;
@@ -459,6 +477,7 @@ class KAT_Medical_Treatment {
             timeTillMaxEffect = 5;
             dose = 1;
             viscosityChange = 0;
+            maximumEffectiveDose = 30;
         };
         class syringe_txa_10ml {
             painReduce = 0;
@@ -469,6 +488,7 @@ class KAT_Medical_Treatment {
             timeTillMaxEffect = 20;
             dose = 1;
             viscosityChange = 0;
+            maximumEffectiveDose = 30;
         };
         class syringe_eaca_5ml {
             painReduce = 0;
@@ -479,6 +499,7 @@ class KAT_Medical_Treatment {
             timeTillMaxEffect = 35;
             dose = 1;
             viscosityChange = 0;
+            maximumEffectiveDose = 30;
         };
         class syringe_epinephrineIV_5ml {
             painReduce = 0;
@@ -490,6 +511,7 @@ class KAT_Medical_Treatment {
             dose = 1;
             alphaFactor = -0.1;
             contractility = 0.7;
+            maximumEffectiveDose = 30;
         };
         class syringe_phenylephrine_5ml {
             painReduce = 0;
@@ -503,6 +525,7 @@ class KAT_Medical_Treatment {
             alphaFactor = -0.3;
             weightBased = "true";
             weightDose = 20;
+            maximumEffectiveDose = 30;
         };
         class syringe_fentanyl_5ml {
             painReduce = 0.6;
@@ -520,6 +543,7 @@ class KAT_Medical_Treatment {
             contractility = -0.2;
             weightBased = "true";
             weightDose = 20;
+            maximumEffectiveDose = 30;
         };
         class syringe_ketamine_5ml {
             painReduce = 0.5;
@@ -536,6 +560,9 @@ class KAT_Medical_Treatment {
             contractility = 0.1;
             weightBased = "true";
             weightDose = 15;
+            weightDoseMin = 10;
+            weightDoseMax = 20;
+            maximumEffectiveDose = 30;
         };
         class syringe_nalbuphine_5ml {
             painReduce = 0.5;
@@ -551,6 +578,7 @@ class KAT_Medical_Treatment {
             contractility = -0.2;
             weightBased = "true";
             weightDose = 20;
+            maximumEffectiveDose = 30;
         };
         class syringe_atropineIV_5ml {
             painReduce = 0;
@@ -562,6 +590,7 @@ class KAT_Medical_Treatment {
             dose = 1;
             viscosityChange = 0;
             contractility = 0.2;
+            maximumEffectiveDose = 30;
         };
         class syringe_amiodarone_5ml {
             painReduce = 0;
@@ -573,6 +602,7 @@ class KAT_Medical_Treatment {
             dose = 1;
             viscosityChange = 0;
             contractility = -0.4;
+            maximumEffectiveDose = 30;
         };
         class syringe_lidocaine_5ml {
             painReduce = 0;
@@ -583,6 +613,7 @@ class KAT_Medical_Treatment {
             timeTillMaxEffect = 30;
             dose = 1;
             contractility = -0.2;
+            maximumEffectiveDose = 30;
         };
         class syringe_etomidate_5ml {
             painReduce = 0.2;
@@ -597,6 +628,7 @@ class KAT_Medical_Treatment {
             contractility = -0.05;
             weightBased = "true";
             weightDose = 20;
+            maximumEffectiveDose = 30;
         };
         class syringe_flumazenil_5ml {
             painReduce = 0;
@@ -607,6 +639,7 @@ class KAT_Medical_Treatment {
             timeTillMaxEffect = 5;
             dose = 1;
             viscosityChange = 0;
+            maximumEffectiveDose = 30;
         };
         class syringe_lorazepam_5ml {
             painReduce = 0;
@@ -622,6 +655,7 @@ class KAT_Medical_Treatment {
             contractility = -0.1;
             weightBased = "true";
             weightDose = 20;
+            maximumEffectiveDose = 30;
         };
         class syringe_morphineIV_5ml {
             painReduce = 0.6;
@@ -636,6 +670,7 @@ class KAT_Medical_Treatment {
             respiratoryRate = -0.2;
             weightBased = "true";
             weightDose = 20;
+            maximumEffectiveDose = 30;
         };
         class syringe_adenosineIV_5ml {
             painReduce = 0;
@@ -646,6 +681,7 @@ class KAT_Medical_Treatment {
             timeTillMaxEffect = 15;
             dose = 1;
             viscosityChange = 0;
+            maximumEffectiveDose = 30;
         };
         class syringe_doxapram_5ml {
             painReduce = 0;
@@ -656,6 +692,7 @@ class KAT_Medical_Treatment {
             timeTillMaxEffect = 15;
             dose = 1; 
             respiratoryRate = 0.2;
+            maximumEffectiveDose = 30;
         };
         class syringe_alteplase_5ml_30 {
             painReduce = 0;
@@ -665,10 +702,11 @@ class KAT_Medical_Treatment {
             timeInSystem = 180;
             timeTillMaxEffect = 30;
             dose = 3;
-            maxDose = 3;
-            maxDoseDeviation = 0;
+            maxDose = 30;
+            maxDoseDeviation = 10;
             incompatibleMedication[] = {};
             viscosityChange = 0;
+            maximumEffectiveDose = 30;
         };
         class syringe_fentanyl_10ml {
             painReduce = 0.6;
@@ -686,6 +724,7 @@ class KAT_Medical_Treatment {
             respiratoryRate = -0.2;
             weightBased = "true";
             weightDose = 20;
+            maximumEffectiveDose = 30;
         };
         class syringe_ketamine_10ml {
             painReduce = 0.6;
@@ -701,6 +740,7 @@ class KAT_Medical_Treatment {
             respiratoryRate = 0.3;
             weightBased = "true";
             weightDose = 20;
+            maximumEffectiveDose = 30;
         };
         class syringe_nalbuphine_10ml {
             painReduce = 0.5;
@@ -715,6 +755,7 @@ class KAT_Medical_Treatment {
             respiratoryRate = -0.1;
             weightBased = "true";
             weightDose = 20;
+            maximumEffectiveDose = 30;
         };
         class syringe_lidocaine_10ml {
             painReduce = 0;
@@ -724,6 +765,7 @@ class KAT_Medical_Treatment {
             timeInSystem = 120;
             timeTillMaxEffect = 30;
             dose = 1;
+            maximumEffectiveDose = 30;
         };
         class syringe_morphineIV_10ml {
             painReduce = 0.6;
@@ -738,6 +780,7 @@ class KAT_Medical_Treatment {
             respiratoryRate = -0.2;
             weightBased = "true";
             weightDose = 20;
+            maximumEffectiveDose = 30;
         };
         class syringe_txa {
             maxDose = 60;

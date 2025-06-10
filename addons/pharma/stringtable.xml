@@ -4481,7 +4481,7 @@
             <English>Pushing 3mg Morphine</English>
         </Key>
         <Key ID="STR_KAT_Pharma_SyringeDisplay_morphineIV_5ml_10">
-            <English>5ml Syringe / 3mg Morphine</English>
+            <English>5ml Syringe / 3mg(60kg) Morphine</English>
         </Key>
         <Key ID="STR_KAT_Pharma_Push_morphineIV_5ml_16">
             <English>Push 3.5mg Morphine</English>
@@ -4490,7 +4490,7 @@
             <English>Pushing 3.5mg Morphine</English>
         </Key>
         <Key ID="STR_KAT_Pharma_SyringeDisplay_morphineIV_5ml_16">
-            <English>5ml Syringe / 3.5mg Morphine</English>
+            <English>5ml Syringe / 3.5mg(70kg) Morphine</English>
         </Key>
         <Key ID="STR_KAT_Pharma_Push_morphineIV_5ml_20">
             <English>Push 4mg Morphine</English>
@@ -4499,7 +4499,7 @@
             <English>Pushing 4mg Morphine</English>
         </Key>
         <Key ID="STR_KAT_Pharma_SyringeDisplay_morphineIV_5ml_20">
-            <English>5ml Syringe / 4mg Morphine</English>
+            <English>5ml Syringe / 4mg(80kg) Morphine</English>
         </Key>
         <Key ID="STR_KAT_Pharma_Push_morphineIV_5ml_26">
             <English>Push 4.5mg Morphine</English>
@@ -4508,7 +4508,7 @@
             <English>Pushing 4.5mg Morphine</English>
         </Key>
         <Key ID="STR_KAT_Pharma_SyringeDisplay_morphineIV_5ml_26">
-            <English>5ml Syringe / 4.5mg Morphine</English>
+            <English>5ml Syringe / 4.5mg(90kg) Morphine</English>
         </Key>
         <Key ID="STR_KAT_Pharma_Push_morphineIV_5ml_30">
             <English>Push 5mg Morphine</English>
@@ -4517,7 +4517,7 @@
             <English>Pushing 5mg Morphine</English>
         </Key>
         <Key ID="STR_KAT_Pharma_SyringeDisplay_morphineIV_5ml_30">
-            <English>5ml Syringe / 5mg Morphine</English>
+            <English>5ml Syringe / 5mg(100kg) Morphine</English>
         </Key>
         <Key ID="STR_KAT_Pharma_Push_morphineIV_10ml_10">
             <English>Inject 3mg Morphine</English>
@@ -4526,7 +4526,7 @@
             <English>Injecting 3mg Morphine</English>
         </Key>
         <Key ID="STR_KAT_Pharma_SyringeDisplay_morphineIV_10ml_10">
-            <English>10ml Syringe / 3mg Morphine</English>
+            <English>10ml Syringe / 3mg(60kg) Morphine</English>
         </Key>
         <Key ID="STR_KAT_Pharma_Push_morphineIV_10ml_16">
             <English>Inject 3.5mg Morphine</English>
@@ -4535,7 +4535,7 @@
             <English>Injecting 3.5mg Morphine</English>
         </Key>
         <Key ID="STR_KAT_Pharma_SyringeDisplay_morphineIV_10ml_16">
-            <English>10ml Syringe / 3.5mg Morphine</English>
+            <English>10ml Syringe / 3.5mg(70kg) Morphine</English>
         </Key>
         <Key ID="STR_KAT_Pharma_Push_morphineIV_10ml_20">
             <English>Inject 4mg Morphine</English>
@@ -4544,7 +4544,7 @@
             <English>Injecting 4mg Morphine</English>
         </Key>
         <Key ID="STR_KAT_Pharma_SyringeDisplay_morphineIV_10ml_20">
-            <English>10ml Syringe / 4mg Morphine</English>
+            <English>10ml Syringe / 4mg(80kg) Morphine</English>
         </Key>
         <Key ID="STR_KAT_Pharma_Push_morphineIV_10ml_26">
             <English>Inject 4.5mg Morphine</English>
@@ -4553,7 +4553,7 @@
             <English>Injecting 4.5mg Morphine</English>
         </Key>
         <Key ID="STR_KAT_Pharma_SyringeDisplay_morphineIV_10ml_26">
-            <English>10ml Syringe / 4.5mg Morphine</English>
+            <English>10ml Syringe / 4.5mg(90kg) Morphine</English>
         </Key>
         <Key ID="STR_KAT_Pharma_Push_morphineIV_10ml_30">
             <English>Inject 5mg Morphine</English>
@@ -4562,7 +4562,7 @@
             <English>Injecting 5mg Morphine</English>
         </Key>
         <Key ID="STR_KAT_Pharma_SyringeDisplay_morphineIV_10ml_30">
-            <English>10ml Syringe / 5mg Morphine</English>
+            <English>10ml Syringe / 5mg(100kg) Morphine</English>
         </Key>
         <Key ID="STR_KAT_Pharma_Push_ketamine_10ml_10">
             <English>Inject 30mg Ketamine</English>
@@ -4571,7 +4571,7 @@
             <English>Injecting 30mg Ketamine</English>
         </Key>
         <Key ID="STR_KAT_Pharma_SyringeDisplay_ketamine_10ml_10">
-            <English>10ml Syringe / 30mg Ketamine</English>
+            <English>10ml Syringe / 30mg(60kg) Ketamine</English>
         </Key>
         <Key ID="STR_KAT_Pharma_Push_ketamine_10ml_12">
             <English>Inject 32mg Ketamine</English>
@@ -4580,7 +4580,7 @@
             <English>Injecting 32mg Ketamine</English>
         </Key>
         <Key ID="STR_KAT_Pharma_SyringeDisplay_ketamine_10ml_12">
-            <English>10ml Syringe / 32mg Ketamine</English>
+            <English>10ml Syringe / 32mg(64kg) Ketamine</English>
         </Key>
         <Key ID="STR_KAT_Pharma_Push_ketamine_10ml_14">
             <English>Inject 34mg Ketamine</English>
@@ -4589,7 +4589,7 @@
             <English>Injecting 34mg Ketamine</English>
         </Key>
         <Key ID="STR_KAT_Pharma_SyringeDisplay_ketamine_10ml_14">
-            <English>10ml Syringe / 34mg Ketamine</English>
+            <English>10ml Syringe / 34mg(68kg) Ketamine</English>
         </Key>
         <Key ID="STR_KAT_Pharma_Push_ketamine_10ml_16">
             <English>Inject 36mg Ketamine</English>
@@ -4598,7 +4598,7 @@
             <English>Injecting 36mg Ketamine</English>
         </Key>
         <Key ID="STR_KAT_Pharma_SyringeDisplay_ketamine_10ml_16">
-            <English>10ml Syringe / 36mg Ketamine</English>
+            <English>10ml Syringe / 36mg(72kg) Ketamine</English>
         </Key>
         <Key ID="STR_KAT_Pharma_Push_ketamine_10ml_18">
             <English>Inject 38mg Ketamine</English>
@@ -4607,7 +4607,7 @@
             <English>Injecting 38mg Ketamine</English>
         </Key>
         <Key ID="STR_KAT_Pharma_SyringeDisplay_ketamine_10ml_18">
-            <English>10ml Syringe / 38mg Ketamine</English>
+            <English>10ml Syringe / 38mg(76kg) Ketamine</English>
         </Key>
         <Key ID="STR_KAT_Pharma_Push_ketamine_10ml_20">
             <English>Inject 40mg Ketamine</English>
@@ -4616,7 +4616,7 @@
             <English>Injecting 40mg Ketamine</English>
         </Key>
         <Key ID="STR_KAT_Pharma_SyringeDisplay_ketamine_10ml_20">
-            <English>10ml Syringe / 40mg Ketamine</English>
+            <English>10ml Syringe / 40mg(80kg) Ketamine</English>
         </Key>
         <Key ID="STR_KAT_Pharma_Push_ketamine_10ml_22">
             <English>Inject 42mg Ketamine</English>
@@ -4625,7 +4625,7 @@
             <English>Injecting 42mg Ketamine</English>
         </Key>
         <Key ID="STR_KAT_Pharma_SyringeDisplay_ketamine_10ml_22">
-            <English>10ml Syringe / 42mg Ketamine</English>
+            <English>10ml Syringe / 42mg(84kg) Ketamine</English>
         </Key>
         <Key ID="STR_KAT_Pharma_Push_ketamine_10ml_24">
             <English>Inject 44mg Ketamine</English>
@@ -4634,7 +4634,7 @@
             <English>Injecting 44mg Ketamine</English>
         </Key>
         <Key ID="STR_KAT_Pharma_SyringeDisplay_ketamine_10ml_24">
-            <English>10ml Syringe / 44mg Ketamine</English>
+            <English>10ml Syringe / 44mg(88kg) Ketamine</English>
         </Key>
         <Key ID="STR_KAT_Pharma_Push_ketamine_10ml_26">
             <English>Inject 46mg Ketamine</English>
@@ -4643,7 +4643,7 @@
             <English>Injecting 46mg Ketamine</English>
         </Key>
         <Key ID="STR_KAT_Pharma_SyringeDisplay_ketamine_10ml_26">
-            <English>10ml Syringe / 46mg Ketamine</English>
+            <English>10ml Syringe / 46mg(92kg) Ketamine</English>
         </Key>
         <Key ID="STR_KAT_Pharma_Push_ketamine_10ml_28">
             <English>Inject 48mg Ketamine</English>
@@ -4652,7 +4652,7 @@
             <English>Injecting 48mg Ketamine</English>
         </Key>
         <Key ID="STR_KAT_Pharma_SyringeDisplay_ketamine_10ml_28">
-            <English>10ml Syringe / 48mg Ketamine</English>
+            <English>10ml Syringe / 48mg(96kg) Ketamine</English>
         </Key>
         <Key ID="STR_KAT_Pharma_Push_ketamine_10ml_30">
             <English>Inject 50mg Ketamine</English>
@@ -4661,7 +4661,7 @@
             <English>Injecting 50mg Ketamine</English>
         </Key>
         <Key ID="STR_KAT_Pharma_SyringeDisplay_ketamine_10ml_30">
-            <English>10ml Syringe / 50mg Ketamine</English>
+            <English>10ml Syringe / 50mg(100kg) Ketamine</English>
         </Key>
         <Key ID="STR_KAT_Pharma_Push_fentanyl_10ml_10">
             <English>Inject 30mcg Fentanyl</English>
@@ -4670,7 +4670,7 @@
             <English>Injecting 30mcg Fentanyl</English>
         </Key>
         <Key ID="STR_KAT_Pharma_SyringeDisplay_fentanyl_10ml_10">
-            <English>10ml Syringe / 30mcg Fentanyl</English>
+            <English>10ml Syringe / 30mcg(60kg) Fentanyl</English>
         </Key>
         <Key ID="STR_KAT_Pharma_Push_fentanyl_10ml_12">
             <English>Inject 32mcg Fentanyl</English>
@@ -4679,7 +4679,7 @@
             <English>Injecting 32mcg Fentanyl</English>
         </Key>
         <Key ID="STR_KAT_Pharma_SyringeDisplay_fentanyl_10ml_12">
-            <English>10ml Syringe / 32mcg Fentanyl</English>
+            <English>10ml Syringe / 32mcg(64kg) Fentanyl</English>
         </Key>
         <Key ID="STR_KAT_Pharma_Push_fentanyl_10ml_14">
             <English>Inject 34mcg Fentanyl</English>
@@ -4688,7 +4688,7 @@
             <English>Injecting 34mcg Fentanyl</English>
         </Key>
         <Key ID="STR_KAT_Pharma_SyringeDisplay_fentanyl_10ml_14">
-            <English>10ml Syringe / 34mcg Fentanyl</English>
+            <English>10ml Syringe / 34mcg(68kg) Fentanyl</English>
         </Key>
         <Key ID="STR_KAT_Pharma_Push_fentanyl_10ml_16">
             <English>Inject 36mcg Fentanyl</English>
@@ -4697,7 +4697,7 @@
             <English>Injecting 36mcg Fentanyl</English>
         </Key>
         <Key ID="STR_KAT_Pharma_SyringeDisplay_fentanyl_10ml_16">
-            <English>10ml Syringe / 36mcg Fentanyl</English>
+            <English>10ml Syringe / 36mcg(72kg) Fentanyl</English>
         </Key>
         <Key ID="STR_KAT_Pharma_Push_fentanyl_10ml_18">
             <English>Inject 38mcg Fentanyl</English>
@@ -4706,7 +4706,7 @@
             <English>Injecting 38mcg Fentanyl</English>
         </Key>
         <Key ID="STR_KAT_Pharma_SyringeDisplay_fentanyl_10ml_18">
-            <English>10ml Syringe / 38mcg Fentanyl</English>
+            <English>10ml Syringe / 38mcg(76kg) Fentanyl</English>
         </Key>
         <Key ID="STR_KAT_Pharma_Push_fentanyl_10ml_20">
             <English>Inject 40mcg Fentanyl</English>
@@ -4715,7 +4715,7 @@
             <English>Injecting 40mcg Fentanyl</English>
         </Key>
         <Key ID="STR_KAT_Pharma_SyringeDisplay_fentanyl_10ml_20">
-            <English>10ml Syringe / 40mcg Fentanyl</English>
+            <English>10ml Syringe / 40mcg(80kg) Fentanyl</English>
         </Key>
         <Key ID="STR_KAT_Pharma_Push_fentanyl_10ml_22">
             <English>Inject 42mcg Fentanyl</English>
@@ -4724,7 +4724,7 @@
             <English>Injecting 42mcg Fentanyl</English>
         </Key>
         <Key ID="STR_KAT_Pharma_SyringeDisplay_fentanyl_10ml_22">
-            <English>10ml Syringe / 42mcg Fentanyl</English>
+            <English>10ml Syringe / 42mcg(84kg) Fentanyl</English>
         </Key>
         <Key ID="STR_KAT_Pharma_Push_fentanyl_10ml_24">
             <English>Inject 44mcg Fentanyl</English>
@@ -4733,7 +4733,7 @@
             <English>Injecting 44mcg Fentanyl</English>
         </Key>
         <Key ID="STR_KAT_Pharma_SyringeDisplay_fentanyl_10ml_24">
-            <English>10ml Syringe / 44mcg Fentanyl</English>
+            <English>10ml Syringe / 44mcg(88kg) Fentanyl</English>
         </Key>
         <Key ID="STR_KAT_Pharma_Push_fentanyl_10ml_26">
             <English>Inject 46mcg Fentanyl</English>
@@ -4742,7 +4742,7 @@
             <English>Injecting 46mcg Fentanyl</English>
         </Key>
         <Key ID="STR_KAT_Pharma_SyringeDisplay_fentanyl_10ml_26">
-            <English>10ml Syringe / 46mcg Fentanyl</English>
+            <English>10ml Syringe / 46mcg(92kg) Fentanyl</English>
         </Key>
         <Key ID="STR_KAT_Pharma_Push_fentanyl_10ml_28">
             <English>Inject 48mcg Fentanyl</English>
@@ -4751,7 +4751,7 @@
             <English>Injecting 48mcg Fentanyl</English>
         </Key>
         <Key ID="STR_KAT_Pharma_SyringeDisplay_fentanyl_10ml_28">
-            <English>10ml Syringe / 48mcg Fentanyl</English>
+            <English>10ml Syringe / 48mcg(96kg) Fentanyl</English>
         </Key>
         <Key ID="STR_KAT_Pharma_Push_fentanyl_10ml_30">
             <English>Inject 50mcg Fentanyl</English>
@@ -4760,7 +4760,7 @@
             <English>Injecting 50mcg Fentanyl</English>
         </Key>
         <Key ID="STR_KAT_Pharma_SyringeDisplay_fentanyl_10ml_30">
-            <English>10ml Syringe / 50mcg Fentanyl</English>
+            <English>10ml Syringe / 50mcg(100kg) Fentanyl</English>
         </Key>
         <Key ID="STR_KAT_Pharma_Push_nalbuphine_10ml_10">
             <English>Inject 10mg Nalbuphine</English>
@@ -4769,7 +4769,7 @@
             <English>Injecting 10mg Nalbuphine</English>
         </Key>
         <Key ID="STR_KAT_Pharma_SyringeDisplay_nalbuphine_10ml_10">
-            <English>10ml Syringe / 10mg Nalbuphine</English>
+            <English>10ml Syringe / 10mg(60kg) Nalbuphine</English>
         </Key>
         <Key ID="STR_KAT_Pharma_Push_nalbuphine_10ml_12">
             <English>Inject 12mg Nalbuphine</English>
@@ -4778,7 +4778,7 @@
             <English>Injecting 12mg Nalbuphine</English>
         </Key>
         <Key ID="STR_KAT_Pharma_SyringeDisplay_nalbuphine_10ml_12">
-            <English>10ml Syringe / 12mg Nalbuphine</English>
+            <English>10ml Syringe / 12mg(64kg) Nalbuphine</English>
         </Key>
         <Key ID="STR_KAT_Pharma_Push_nalbuphine_10ml_14">
             <English>Inject 14mg Nalbuphine</English>
@@ -4787,7 +4787,7 @@
             <English>Injecting 14mg Nalbuphine</English>
         </Key>
         <Key ID="STR_KAT_Pharma_SyringeDisplay_nalbuphine_10ml_14">
-            <English>10ml Syringe / 14mg Nalbuphine</English>
+            <English>10ml Syringe / 14mg(68kg) Nalbuphine</English>
         </Key>
         <Key ID="STR_KAT_Pharma_Push_nalbuphine_10ml_16">
             <English>Inject 16mg Nalbuphine</English>
@@ -4796,7 +4796,7 @@
             <English>Injecting 16mg Nalbuphine</English>
         </Key>
         <Key ID="STR_KAT_Pharma_SyringeDisplay_nalbuphine_10ml_16">
-            <English>10ml Syringe / 16mg Nalbuphine</English>
+            <English>10ml Syringe / 16mg(72kg) Nalbuphine</English>
         </Key>
         <Key ID="STR_KAT_Pharma_Push_nalbuphine_10ml_18">
             <English>Inject 18mg Nalbuphine</English>
@@ -4805,7 +4805,7 @@
             <English>Injecting 18mg Nalbuphine</English>
         </Key>
         <Key ID="STR_KAT_Pharma_SyringeDisplay_nalbuphine_10ml_18">
-            <English>10ml Syringe / 28mg Nalbuphine</English>
+            <English>10ml Syringe / 18mg(76kg) Nalbuphine</English>
         </Key>
         <Key ID="STR_KAT_Pharma_Push_nalbuphine_10ml_20">
             <English>Inject 20mg Nalbuphine</English>
@@ -4814,7 +4814,7 @@
             <English>Injecting 20mg Nalbuphine</English>
         </Key>
         <Key ID="STR_KAT_Pharma_SyringeDisplay_nalbuphine_10ml_20">
-            <English>10ml Syringe / 20mg Nalbuphine</English>
+            <English>10ml Syringe / 20mg(80kg) Nalbuphine</English>
         </Key>
         <Key ID="STR_KAT_Pharma_Push_nalbuphine_10ml_22">
             <English>Inject 22mg Nalbuphine</English>
@@ -4823,7 +4823,7 @@
             <English>Injecting 22mg Nalbuphine</English>
         </Key>
         <Key ID="STR_KAT_Pharma_SyringeDisplay_nalbuphine_10ml_22">
-            <English>10ml Syringe / 22mg Nalbuphine</English>
+            <English>10ml Syringe / 22mg(84kg) Nalbuphine</English>
         </Key>
         <Key ID="STR_KAT_Pharma_Push_nalbuphine_10ml_24">
             <English>Inject 24mg Nalbuphine</English>
@@ -4832,7 +4832,7 @@
             <English>Injecting 24mg Nalbuphine</English>
         </Key>
         <Key ID="STR_KAT_Pharma_SyringeDisplay_nalbuphine_10ml_24">
-            <English>10ml Syringe / 24mg Nalbuphine</English>
+            <English>10ml Syringe / 24mg(88kg) Nalbuphine</English>
         </Key>
         <Key ID="STR_KAT_Pharma_Push_nalbuphine_10ml_26">
             <English>Inject 26mg Nalbuphine</English>
@@ -4841,7 +4841,7 @@
             <English>Injecting 26mg Nalbuphine</English>
         </Key>
         <Key ID="STR_KAT_Pharma_SyringeDisplay_nalbuphine_10ml_26">
-            <English>10ml Syringe / 26mg Nalbuphine</English>
+            <English>10ml Syringe / 26mg(92kg) Nalbuphine</English>
         </Key>
         <Key ID="STR_KAT_Pharma_Push_nalbuphine_10ml_28">
             <English>Inject 28mg Nalbuphine</English>
@@ -4850,7 +4850,7 @@
             <English>Injecting 28mg Nalbuphine</English>
         </Key>
         <Key ID="STR_KAT_Pharma_SyringeDisplay_nalbuphine_10ml_28">
-            <English>10ml Syringe / 28mg Nalbuphine</English>
+            <English>10ml Syringe / 28mg(96kg) Nalbuphine</English>
         </Key>
         <Key ID="STR_KAT_Pharma_Push_nalbuphine_10ml_30">
             <English>Inject 30mg Nalbuphine</English>
@@ -4859,106 +4859,7 @@
             <English>Injecting 30mg Nalbuphine</English>
         </Key>
         <Key ID="STR_KAT_Pharma_SyringeDisplay_nalbuphine_10ml_30">
-            <English>10ml Syringe / 30mg Nalbuphine</English>
-        </Key>
-        <Key ID="STR_KAT_Pharma_Push_nalbuphine_5ml_10">
-            <English>Push 10mg Nalbuphine</English>
-        </Key>
-        <Key ID="STR_KAT_Pharma_Pushing_nalbuphine_5ml_10">
-            <English>Pushing 10mg Nalbuphine</English>
-        </Key>
-        <Key ID="STR_KAT_Pharma_SyringeDisplay_nalbuphine_5ml_10">
-            <English>5ml Syringe / 10mg Nalbuphine</English>
-        </Key>
-        <Key ID="STR_KAT_Pharma_Push_nalbuphine_5ml_12">
-            <English>Push 12mg Nalbuphine</English>
-        </Key>
-        <Key ID="STR_KAT_Pharma_Pushing_nalbuphine_5ml_12">
-            <English>Pushing 12mg Nalbuphine</English>
-        </Key>
-        <Key ID="STR_KAT_Pharma_SyringeDisplay_nalbuphine_5ml_12">
-            <English>5ml Syringe / 12mg Nalbuphine</English>
-        </Key>
-        <Key ID="STR_KAT_Pharma_Push_nalbuphine_5ml_14">
-            <English>Push 14mg Nalbuphine</English>
-        </Key>
-        <Key ID="STR_KAT_Pharma_Pushing_nalbuphine_5ml_14">
-            <English>Pushing 14mg Nalbuphine</English>
-        </Key>
-        <Key ID="STR_KAT_Pharma_SyringeDisplay_nalbuphine_5ml_14">
-            <English>5ml Syringe / 14mg Nalbuphine</English>
-        </Key>
-        <Key ID="STR_KAT_Pharma_Push_nalbuphine_5ml_16">
-            <English>Push 16mg Nalbuphine</English>
-        </Key>
-        <Key ID="STR_KAT_Pharma_Pushing_nalbuphine_5ml_16">
-            <English>Pushing 16mg Nalbuphine</English>
-        </Key>
-        <Key ID="STR_KAT_Pharma_SyringeDisplay_nalbuphine_5ml_16">
-            <English>5ml Syringe / 16mg Nalbuphine</English>
-        </Key>
-        <Key ID="STR_KAT_Pharma_Push_nalbuphine_5ml_18">
-            <English>Push 18mg Nalbuphine</English>
-        </Key>
-        <Key ID="STR_KAT_Pharma_Pushing_nalbuphine_5ml_18">
-            <English>Pushing 18mg Nalbuphine</English>
-        </Key>
-        <Key ID="STR_KAT_Pharma_SyringeDisplay_nalbuphine_5ml_18">
-            <English>5ml Syringe / 28mg Nalbuphine</English>
-        </Key>
-        <Key ID="STR_KAT_Pharma_Push_nalbuphine_5ml_20">
-            <English>Push 20mg Nalbuphine</English>
-        </Key>
-        <Key ID="STR_KAT_Pharma_Pushing_nalbuphine_5ml_20">
-            <English>Pushing 20mg Nalbuphine</English>
-        </Key>
-        <Key ID="STR_KAT_Pharma_SyringeDisplay_nalbuphine_5ml_20">
-            <English>5ml Syringe / 20mg Nalbuphine</English>
-        </Key>
-        <Key ID="STR_KAT_Pharma_Push_nalbuphine_5ml_22">
-            <English>Push 22mg Nalbuphine</English>
-        </Key>
-        <Key ID="STR_KAT_Pharma_Pushing_nalbuphine_5ml_22">
-            <English>Pushing 22mg Nalbuphine</English>
-        </Key>
-        <Key ID="STR_KAT_Pharma_SyringeDisplay_nalbuphine_5ml_22">
-            <English>5ml Syringe / 22mg Nalbuphine</English>
-        </Key>
-        <Key ID="STR_KAT_Pharma_Push_nalbuphine_5ml_24">
-            <English>Push 24mg Nalbuphine</English>
-        </Key>
-        <Key ID="STR_KAT_Pharma_Pushing_nalbuphine_5ml_24">
-            <English>Pushing 24mg Nalbuphine</English>
-        </Key>
-        <Key ID="STR_KAT_Pharma_SyringeDisplay_nalbuphine_5ml_24">
-            <English>5ml Syringe / 24mg Nalbuphine</English>
-        </Key>
-        <Key ID="STR_KAT_Pharma_Push_nalbuphine_5ml_26">
-            <English>Push 26mg Nalbuphine</English>
-        </Key>
-        <Key ID="STR_KAT_Pharma_Pushing_nalbuphine_5ml_26">
-            <English>Pushing 26mg Nalbuphine</English>
-        </Key>
-        <Key ID="STR_KAT_Pharma_SyringeDisplay_nalbuphine_5ml_26">
-            <English>5ml Syringe / 26mg Nalbuphine</English>
-        </Key>
-        <Key ID="STR_KAT_Pharma_Push_nalbuphine_5ml_28">
-            <English>Push 28mg Nalbuphine</English>
-        </Key>
-        <Key ID="STR_KAT_Pharma_Pushing_nalbuphine_5ml_28">
-            <English>Pushing 28mg Nalbuphine</English>
-        </Key>
-        <Key ID="STR_KAT_Pharma_SyringeDisplay_nalbuphine_5ml_28">
-            <English>5ml Syringe / 28mg Nalbuphine</English>
-        </Key>
-        <Key ID="STR_KAT_Pharma_Push_nalbuphine_5ml_30">
-            <English>Push 30mg Nalbuphine</English>
-        </Key>
-        <Key ID="STR_KAT_Pharma_Pushing_nalbuphine_5ml_30">
-            <English>Pushing 30mg Nalbuphine</English>
-        </Key>
-        <Key ID="STR_KAT_Pharma_SyringeDisplay_nalbuphine_5ml_30">
-            <English>5ml Syringe / 30mg Nalbuphine</English>
+            <English>10ml Syringe / 30mg(100kg) Nalbuphine</English>
         </Key>
         <Key ID="STR_KAT_Pharma_Push_fentanyl_5ml_10">
             <English>Push 30mcg Fentanyl</English>
@@ -4967,7 +4868,7 @@
             <English>Pushing 30mcg Fentanyl</English>
         </Key>
         <Key ID="STR_KAT_Pharma_SyringeDisplay_fentanyl_5ml_10">
-            <English>5ml Syringe / 30mcg Fentanyl</English>
+            <English>5ml Syringe / 30mcg(60kg) Fentanyl</English>
         </Key>
         <Key ID="STR_KAT_Pharma_Push_fentanyl_5ml_12">
             <English>Push 32mcg Fentanyl</English>
@@ -4976,7 +4877,7 @@
             <English>Pushing 32mcg Fentanyl</English>
         </Key>
         <Key ID="STR_KAT_Pharma_SyringeDisplay_fentanyl_5ml_12">
-            <English>5ml Syringe / 32mcg Fentanyl</English>
+            <English>5ml Syringe / 32mcg(64kg) Fentanyl</English>
         </Key>
         <Key ID="STR_KAT_Pharma_Push_fentanyl_5ml_14">
             <English>Push 34mcg Fentanyl</English>
@@ -4985,7 +4886,7 @@
             <English>Pushing 34mcg Fentanyl</English>
         </Key>
         <Key ID="STR_KAT_Pharma_SyringeDisplay_fentanyl_5ml_14">
-            <English>5ml Syringe / 34mcg Fentanyl</English>
+            <English>5ml Syringe / 34mcg(68kg) Fentanyl</English>
         </Key>
         <Key ID="STR_KAT_Pharma_Push_fentanyl_5ml_16">
             <English>Push 36mcg Fentanyl</English>
@@ -4994,7 +4895,7 @@
             <English>Pushing 36mcg Fentanyl</English>
         </Key>
         <Key ID="STR_KAT_Pharma_SyringeDisplay_fentanyl_5ml_16">
-            <English>5ml Syringe / 36mcg Fentanyl</English>
+            <English>5ml Syringe / 36mcg(72kg) Fentanyl</English>
         </Key>
         <Key ID="STR_KAT_Pharma_Push_fentanyl_5ml_18">
             <English>Push 38mcg Fentanyl</English>
@@ -5003,7 +4904,7 @@
             <English>Pushing 38mcg Fentanyl</English>
         </Key>
         <Key ID="STR_KAT_Pharma_SyringeDisplay_fentanyl_5ml_18">
-            <English>5ml Syringe / 38mcg Fentanyl</English>
+            <English>5ml Syringe / 38mcg(76kg) Fentanyl</English>
         </Key>
         <Key ID="STR_KAT_Pharma_Push_fentanyl_5ml_20">
             <English>Push 40mcg Fentanyl</English>
@@ -5012,7 +4913,7 @@
             <English>Pushing 40mcg Fentanyl</English>
         </Key>
         <Key ID="STR_KAT_Pharma_SyringeDisplay_fentanyl_5ml_20">
-            <English>5ml Syringe / 40mcg Fentanyl</English>
+            <English>5ml Syringe / 40mcg(80kg) Fentanyl</English>
         </Key>
         <Key ID="STR_KAT_Pharma_Push_fentanyl_5ml_22">
             <English>Push 42mcg Fentanyl</English>
@@ -5021,7 +4922,7 @@
             <English>Pushing 42mcg Fentanyl</English>
         </Key>
         <Key ID="STR_KAT_Pharma_SyringeDisplay_fentanyl_5ml_22">
-            <English>5ml Syringe / 42mcg Fentanyl</English>
+            <English>5ml Syringe / 42mcg(84kg) Fentanyl</English>
         </Key>
         <Key ID="STR_KAT_Pharma_Push_fentanyl_5ml_24">
             <English>Push 44mcg Fentanyl</English>
@@ -5030,7 +4931,7 @@
             <English>Pushing 44mcg Fentanyl</English>
         </Key>
         <Key ID="STR_KAT_Pharma_SyringeDisplay_fentanyl_5ml_24">
-            <English>5ml Syringe / 44mcg Fentanyl</English>
+            <English>5ml Syringe / 44mcg(88kg) Fentanyl</English>
         </Key>
         <Key ID="STR_KAT_Pharma_Push_fentanyl_5ml_26">
             <English>Push 46mcg Fentanyl</English>
@@ -5039,7 +4940,7 @@
             <English>Pushing 46mcg Fentanyl</English>
         </Key>
         <Key ID="STR_KAT_Pharma_SyringeDisplay_fentanyl_5ml_26">
-            <English>5ml Syringe / 46mcg Fentanyl</English>
+            <English>5ml Syringe / 46mcg(92kg) Fentanyl</English>
         </Key>
         <Key ID="STR_KAT_Pharma_Push_fentanyl_5ml_28">
             <English>Push 48mcg Fentanyl</English>
@@ -5048,7 +4949,7 @@
             <English>Pushing 48mcg Fentanyl</English>
         </Key>
         <Key ID="STR_KAT_Pharma_SyringeDisplay_fentanyl_5ml_28">
-            <English>5ml Syringe / 48mcg Fentanyl</English>
+            <English>5ml Syringe / 48mcg(96kg) Fentanyl</English>
         </Key>
         <Key ID="STR_KAT_Pharma_Push_fentanyl_5ml_30">
             <English>Push 50mcg Fentanyl</English>
@@ -5057,7 +4958,106 @@
             <English>Pushing 50mcg Fentanyl</English>
         </Key>
         <Key ID="STR_KAT_Pharma_SyringeDisplay_fentanyl_5ml_30">
-            <English>5ml Syringe / 50mcg Fentanyl</English>
+            <English>5ml Syringe / 50mcg(100kg) Fentanyl</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_Push_nalbuphine_5ml_10">
+            <English>Push 10mg Nalbuphine</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_Pushing_nalbuphine_5ml_10">
+            <English>Pushing 10mg Nalbuphine</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_SyringeDisplay_nalbuphine_5ml_10">
+            <English>5ml Syringe / 10mg(60kg) Nalbuphine</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_Push_nalbuphine_5ml_12">
+            <English>Push 12mg Nalbuphine</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_Pushing_nalbuphine_5ml_12">
+            <English>Pushing 12mg Nalbuphine</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_SyringeDisplay_nalbuphine_5ml_12">
+            <English>5ml Syringe / 12mg(64kg) Nalbuphine</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_Push_nalbuphine_5ml_14">
+            <English>Push 14mg Nalbuphine</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_Pushing_nalbuphine_5ml_14">
+            <English>Pushing 14mg Nalbuphine</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_SyringeDisplay_nalbuphine_5ml_14">
+            <English>5ml Syringe / 14mg(68kg) Nalbuphine</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_Push_nalbuphine_5ml_16">
+            <English>Push 16mg Nalbuphine</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_Pushing_nalbuphine_5ml_16">
+            <English>Pushing 16mg Nalbuphine</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_SyringeDisplay_nalbuphine_5ml_16">
+            <English>5ml Syringe / 16mg(72kg) Nalbuphine</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_Push_nalbuphine_5ml_18">
+            <English>Push 18mg Nalbuphine</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_Pushing_nalbuphine_5ml_18">
+            <English>Pushing 18mg Nalbuphine</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_SyringeDisplay_nalbuphine_5ml_18">
+            <English>5ml Syringe / 18mg(76kg) Nalbuphine</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_Push_nalbuphine_5ml_20">
+            <English>Push 20mg Nalbuphine</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_Pushing_nalbuphine_5ml_20">
+            <English>Pushing 20mg Nalbuphine</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_SyringeDisplay_nalbuphine_5ml_20">
+            <English>5ml Syringe / 20mg(80kg) Nalbuphine</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_Push_nalbuphine_5ml_22">
+            <English>Push 22mg Nalbuphine</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_Pushing_nalbuphine_5ml_22">
+            <English>Pushing 22mg Nalbuphine</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_SyringeDisplay_nalbuphine_5ml_22">
+            <English>5ml Syringe / 22mg(84kg) Nalbuphine</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_Push_nalbuphine_5ml_24">
+            <English>Push 24mg Nalbuphine</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_Pushing_nalbuphine_5ml_24">
+            <English>Pushing 24mg Nalbuphine</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_SyringeDisplay_nalbuphine_5ml_24">
+            <English>5ml Syringe / 24mg(88kg) Nalbuphine</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_Push_nalbuphine_5ml_26">
+            <English>Push 26mg Nalbuphine</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_Pushing_nalbuphine_5ml_26">
+            <English>Pushing 26mg Nalbuphine</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_SyringeDisplay_nalbuphine_5ml_26">
+            <English>5ml Syringe / 26mg(92kg) Nalbuphine</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_Push_nalbuphine_5ml_28">
+            <English>Push 28mg Nalbuphine</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_Pushing_nalbuphine_5ml_28">
+            <English>Pushing 28mg Nalbuphine</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_SyringeDisplay_nalbuphine_5ml_28">
+            <English>5ml Syringe / 28mg(96kg) Nalbuphine</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_Push_nalbuphine_5ml_30">
+            <English>Push 30mg Nalbuphine</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_Pushing_nalbuphine_5ml_30">
+            <English>Pushing 30mg Nalbuphine</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_SyringeDisplay_nalbuphine_5ml_30">
+            <English>5ml Syringe / 30mg(100kg) Nalbuphine</English>
         </Key>
         <Key ID="STR_KAT_Pharma_Push_ketamine_5ml_10">
             <English>Push 15mg(Analgesia) Ketamine</English>
@@ -5066,7 +5066,7 @@
             <English>Pushing 15mg(Analgesia) Ketamine</English>
         </Key>
         <Key ID="STR_KAT_Pharma_SyringeDisplay_ketamine_5ml_10">
-            <English>5ml Syringe / 15mg(Analgesia) Ketamine</English>
+            <English>5ml Syringe / 15mg(60kg)(Analgesia) Ketamine</English>
         </Key>
         <Key ID="STR_KAT_Pharma_Push_ketamine_5ml_12">
             <English>Push 20mg(Analgesia) Ketamine</English>
@@ -5075,7 +5075,7 @@
             <English>Pushing 20mg(Analgesia) Ketamine</English>
         </Key>
         <Key ID="STR_KAT_Pharma_SyringeDisplay_ketamine_5ml_12">
-            <English>5ml Syringe / 20mg(Analgesia) Ketamine</English>
+            <English>5ml Syringe / 20mg(70kg)(Analgesia) Ketamine</English>
         </Key>
         <Key ID="STR_KAT_Pharma_Push_ketamine_5ml_14">
             <English>Push 25mg(Analgesia) Ketamine</English>
@@ -5084,7 +5084,7 @@
             <English>Pushing 25mg(Analgesia) Ketamine</English>
         </Key>
         <Key ID="STR_KAT_Pharma_SyringeDisplay_ketamine_5ml_14">
-            <English>5ml Syringe / 25mg(Analgesia) Ketamine</English>
+            <English>5ml Syringe / 25mg(80kg)(Analgesia) Ketamine</English>
         </Key>
         <Key ID="STR_KAT_Pharma_Push_ketamine_5ml_16">
             <English>Push 30mg(Analgesia) Ketamine</English>
@@ -5093,7 +5093,7 @@
             <English>Pushing 30mg(Analgesia) Ketamine</English>
         </Key>
         <Key ID="STR_KAT_Pharma_SyringeDisplay_ketamine_5ml_16">
-            <English>5ml Syringe / 30mg(Analgesia) Ketamine</English>
+            <English>5ml Syringe / 30mg(90kg)(Analgesia) Ketamine</English>
         </Key>
         <Key ID="STR_KAT_Pharma_Push_ketamine_5ml_18">
             <English>Push 35mg(Analgesia) Ketamine</English>
@@ -5102,7 +5102,7 @@
             <English>Pushing 35mg(Analgesia) Ketamine</English>
         </Key>
         <Key ID="STR_KAT_Pharma_SyringeDisplay_ketamine_5ml_18">
-            <English>5ml Syringe / 35mg(Analgesia) Ketamine</English>
+            <English>5ml Syringe / 35mg(100kg)(Analgesia) Ketamine</English>
         </Key>
         <Key ID="STR_KAT_Pharma_Push_ketamine_5ml_20">
             <English>Push 40mg(Analgesia) Ketamine</English>
@@ -5282,7 +5282,7 @@
             <English>Pushing 1mg Lorazepam</English>
         </Key>
         <Key ID="STR_KAT_Pharma_SyringeDisplay_lorazepam_5ml_10">
-            <English>5ml Syringe / 1mg Lorazepam</English>
+            <English>5ml Syringe / 1mg(60kg) Lorazepam</English>
         </Key>
         <Key ID="STR_KAT_Pharma_Push_lorazepam_5ml_12">
             <English>Push 1.2mg Lorazepam</English>
@@ -5291,7 +5291,7 @@
             <English>Pushing 1.2mg Lorazepam</English>
         </Key>
         <Key ID="STR_KAT_Pharma_SyringeDisplay_lorazepam_5ml_12">
-            <English>5ml Syringe / 1.2mg Lorazepam</English>
+            <English>5ml Syringe / 1.2mg(64kg) Lorazepam</English>
         </Key>
         <Key ID="STR_KAT_Pharma_Push_lorazepam_5ml_14">
             <English>Push 1.4mg Lorazepam</English>
@@ -5300,7 +5300,7 @@
             <English>Pushing 1.4mg Lorazepam</English>
         </Key>
         <Key ID="STR_KAT_Pharma_SyringeDisplay_lorazepam_5ml_14">
-            <English>5ml Syringe / 1.4mg Lorazepam</English>
+            <English>5ml Syringe / 1.4mg(68kg) Lorazepam</English>
         </Key>
         <Key ID="STR_KAT_Pharma_Push_lorazepam_5ml_16">
             <English>Push 1.6mg Lorazepam</English>
@@ -5309,7 +5309,7 @@
             <English>Pushing 1.6mg Lorazepam</English>
         </Key>
         <Key ID="STR_KAT_Pharma_SyringeDisplay_lorazepam_5ml_16">
-            <English>5ml Syringe / 1.6mg Lorazepam</English>
+            <English>5ml Syringe / 1.6mg(72kg) Lorazepam</English>
         </Key>
         <Key ID="STR_KAT_Pharma_Push_lorazepam_5ml_18">
             <English>Push 1.8mg Lorazepam</English>
@@ -5318,7 +5318,7 @@
             <English>Pushing 1.8mg Lorazepam</English>
         </Key>
         <Key ID="STR_KAT_Pharma_SyringeDisplay_lorazepam_5ml_18">
-            <English>5ml Syringe / 1.8mg Lorazepam</English>
+            <English>5ml Syringe / 1.8mg(76kg) Lorazepam</English>
         </Key>
         <Key ID="STR_KAT_Pharma_Push_lorazepam_5ml_20">
             <English>Push 2mg Lorazepam</English>
@@ -5327,7 +5327,7 @@
             <English>Pushing 2mg Lorazepam</English>
         </Key>
         <Key ID="STR_KAT_Pharma_SyringeDisplay_lorazepam_5ml_20">
-            <English>5ml Syringe / 2mg Lorazepam</English>
+            <English>5ml Syringe / 2mg(80kg) Lorazepam</English>
         </Key>
         <Key ID="STR_KAT_Pharma_Push_lorazepam_5ml_22">
             <English>Push 2.2mg Lorazepam</English>
@@ -5336,7 +5336,7 @@
             <English>Pushing 2.2mg Lorazepam</English>
         </Key>
         <Key ID="STR_KAT_Pharma_SyringeDisplay_lorazepam_5ml_22">
-            <English>5ml Syringe / 2.2mg Lorazepam</English>
+            <English>5ml Syringe / 2.2mg(84kg) Lorazepam</English>
         </Key>
         <Key ID="STR_KAT_Pharma_Push_lorazepam_5ml_24">
             <English>Push 2.4mg Lorazepam</English>
@@ -5345,7 +5345,7 @@
             <English>Pushing 2.4mg Lorazepam</English>
         </Key>
         <Key ID="STR_KAT_Pharma_SyringeDisplay_lorazepam_5ml_24">
-            <English>5ml Syringe / 2.4mg Lorazepam</English>
+            <English>5ml Syringe / 2.4mg(88kg) Lorazepam</English>
         </Key>
         <Key ID="STR_KAT_Pharma_Push_lorazepam_5ml_26">
             <English>Push 2.6mg Lorazepam</English>
@@ -5354,7 +5354,7 @@
             <English>Pushing 2.6mg Lorazepam</English>
         </Key>
         <Key ID="STR_KAT_Pharma_SyringeDisplay_lorazepam_5ml_26">
-            <English>5ml Syringe / 2.6mg Lorazepam</English>
+            <English>5ml Syringe / 2.6mg(92kg) Lorazepam</English>
         </Key>
         <Key ID="STR_KAT_Pharma_Push_lorazepam_5ml_28">
             <English>Push 2.8mg Lorazepam</English>
@@ -5363,7 +5363,7 @@
             <English>Pushing 2.8mg Lorazepam</English>
         </Key>
         <Key ID="STR_KAT_Pharma_SyringeDisplay_lorazepam_5ml_28">
-            <English>5ml Syringe / 2.8mg Lorazepam</English>
+            <English>5ml Syringe / 2.8mg(96kg) Lorazepam</English>
         </Key>
         <Key ID="STR_KAT_Pharma_Push_lorazepam_5ml_30">
             <English>Push 3mg Lorazepam</English>
@@ -5372,7 +5372,7 @@
             <English>Pushing 3mg Lorazepam</English>
         </Key>
         <Key ID="STR_KAT_Pharma_SyringeDisplay_lorazepam_5ml_30">
-            <English>5ml Syringe / 3mg Lorazepam</English>
+            <English>5ml Syringe / 3mg(100kg) Lorazepam</English>
         </Key>
         <Key ID="STR_KAT_Pharma_Push_flumazenil_5ml_10">
             <English>Push 0.1mg Flumazenil</English>
@@ -5402,22 +5402,31 @@
             <English>5ml Syringe / 0.3mg Flumazenil</English>
         </Key>
         <Key ID="STR_KAT_Pharma_Push_etomidate_5ml_10">
-            <English>Push 12mg Etomidate</English>
+            <English>Push 10mg Etomidate</English>
         </Key>
         <Key ID="STR_KAT_Pharma_Pushing_etomidate_5ml_10">
-            <English>Pushing 12mg Etomidate</English>
+            <English>Pushing 10mg Etomidate</English>
         </Key>
         <Key ID="STR_KAT_Pharma_SyringeDisplay_etomidate_5ml_10">
-            <English>5ml Syringe / 12mg Etomidate</English>
+            <English>5ml Syringe / 10mg(60kg) Etomidate</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_Push_etomidate_5ml_12">
+            <English>Push 12mg Etomidate</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_Pushing_etomidate_5ml_12">
+            <English>Pushing 12mg Etomidate</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_SyringeDisplay_etomidate_5ml_12">
+            <English>5ml Syringe / 12mg(64kg) Etomidate</English>
         </Key>
         <Key ID="STR_KAT_Pharma_Push_etomidate_5ml_14">
-            <English>Push 1.4mg Etomidate</English>
+            <English>Push 14mg Etomidate</English>
         </Key>
         <Key ID="STR_KAT_Pharma_Pushing_etomidate_5ml_14">
-            <English>Pushing 1.4mg Etomidate</English>
+            <English>Pushing 14mg Etomidate</English>
         </Key>
         <Key ID="STR_KAT_Pharma_SyringeDisplay_etomidate_5ml_14">
-            <English>5ml Syringe / 1.4mg Etomidate</English>
+            <English>5ml Syringe / 14mg(68kg) Etomidate</English>
         </Key>
         <Key ID="STR_KAT_Pharma_Push_etomidate_5ml_16">
             <English>Push 16mg Etomidate</English>
@@ -5426,7 +5435,7 @@
             <English>Pushing 16mg Etomidate</English>
         </Key>
         <Key ID="STR_KAT_Pharma_SyringeDisplay_etomidate_5ml_16">
-            <English>5ml Syringe / 16mg Etomidate</English>
+            <English>5ml Syringe / 16mg(72kg) Etomidate</English>
         </Key>
         <Key ID="STR_KAT_Pharma_Push_etomidate_5ml_18">
             <English>Push 18mg Etomidate</English>
@@ -5435,7 +5444,7 @@
             <English>Pushing 18mg Etomidate</English>
         </Key>
         <Key ID="STR_KAT_Pharma_SyringeDisplay_etomidate_5ml_18">
-            <English>5ml Syringe / 18mg Etomidate</English>
+            <English>5ml Syringe / 18mg(76kg) Etomidate</English>
         </Key>
         <Key ID="STR_KAT_Pharma_Push_etomidate_5ml_20">
             <English>Push 20mg Etomidate</English>
@@ -5444,7 +5453,7 @@
             <English>Pushing 20mg Etomidate</English>
         </Key>
         <Key ID="STR_KAT_Pharma_SyringeDisplay_etomidate_5ml_20">
-            <English>5ml Syringe / 20mg Etomidate</English>
+            <English>5ml Syringe / 20mg(80kg) Etomidate</English>
         </Key>
         <Key ID="STR_KAT_Pharma_Push_etomidate_5ml_22">
             <English>Push 22mg Etomidate</English>
@@ -5453,7 +5462,7 @@
             <English>Pushing 22mg Etomidate</English>
         </Key>
         <Key ID="STR_KAT_Pharma_SyringeDisplay_etomidate_5ml_22">
-            <English>5ml Syringe / 22mg Etomidate</English>
+            <English>5ml Syringe / 22mg(84kg) Etomidate</English>
         </Key>
         <Key ID="STR_KAT_Pharma_Push_etomidate_5ml_24">
             <English>Push 24mg Etomidate</English>
@@ -5462,7 +5471,7 @@
             <English>Pushing 24mg Etomidate</English>
         </Key>
         <Key ID="STR_KAT_Pharma_SyringeDisplay_etomidate_5ml_24">
-            <English>5ml Syringe / 24mg Etomidate</English>
+            <English>5ml Syringe / 24mg(88kg) Etomidate</English>
         </Key>
         <Key ID="STR_KAT_Pharma_Push_etomidate_5ml_26">
             <English>Push 26mg Etomidate</English>
@@ -5471,7 +5480,7 @@
             <English>Pushing 26mg Etomidate</English>
         </Key>
         <Key ID="STR_KAT_Pharma_SyringeDisplay_etomidate_5ml_26">
-            <English>5ml Syringe / 26mg Etomidate</English>
+            <English>5ml Syringe / 26mg(92kg) Etomidate</English>
         </Key>
         <Key ID="STR_KAT_Pharma_Push_etomidate_5ml_28">
             <English>Push 28mg Etomidate</English>
@@ -5480,7 +5489,7 @@
             <English>Pushing 28mg Etomidate</English>
         </Key>
         <Key ID="STR_KAT_Pharma_SyringeDisplay_etomidate_5ml_28">
-            <English>5ml Syringe / 28mg Etomidate</English>
+            <English>5ml Syringe / 28mg(96kg) Etomidate</English>
         </Key>
         <Key ID="STR_KAT_Pharma_Push_etomidate_5ml_30">
             <English>Push 30mg Etomidate</English>
@@ -5489,7 +5498,7 @@
             <English>Pushing 30mg Etomidate</English>
         </Key>
         <Key ID="STR_KAT_Pharma_SyringeDisplay_etomidate_5ml_30">
-            <English>5ml Syringe / 30mg Etomidate</English>
+            <English>5ml Syringe / 30mg(100kg) Etomidate</English>
         </Key>
         <Key ID="STR_KAT_Pharma_Push_epinephrineIV_5ml_10">
             <English>Push 10mcg Epinephrine</English>
