@@ -450,7 +450,7 @@ class KAT_Medical_Treatment {
             onOverDose = "";
             maxRelief = 0.6;
         };
-        class syringe_txa_5ml_10 {
+        class syringe_txa_5ml {
             painReduce = 0;
             hrIncreaseLow[] = {-2, -5};
             hrIncreaseNormal[] = {-2, -5};
@@ -460,17 +460,7 @@ class KAT_Medical_Treatment {
             dose = 1;
             viscosityChange = 0;
         };
-        class syringe_txa_5ml_30 {
-            painReduce = 0;
-            hrIncreaseLow[] = {-4, -12};
-            hrIncreaseNormal[] = {-4, -12};
-            hrIncreaseHigh[] = {-4, -12};
-            timeInSystem = 240;
-            timeTillMaxEffect = 5;
-            dose = 3;
-            viscosityChange = 0;
-        };
-        class syringe_txa_10ml_10 {
+        class syringe_txa_10ml {
             painReduce = 0;
             hrIncreaseLow[] = {-2, -5};
             hrIncreaseNormal[] = {-2, -5};
@@ -480,17 +470,7 @@ class KAT_Medical_Treatment {
             dose = 1;
             viscosityChange = 0;
         };
-        class syringe_txa_10ml_30 {
-            painReduce = 0;
-            hrIncreaseLow[] = {-4, -12};
-            hrIncreaseNormal[] = {-4, -12};
-            hrIncreaseHigh[] = {-4, -12};
-            timeInSystem = 180;
-            timeTillMaxEffect = 20;
-            dose = 3;
-            viscosityChange = 0;
-        };
-        class syringe_eaca_5ml_10 {
+        class syringe_eaca_5ml {
             painReduce = 0;
             hrIncreaseLow[] = {-2, -5};
             hrIncreaseNormal[] = {-2, -5};
@@ -500,17 +480,7 @@ class KAT_Medical_Treatment {
             dose = 1;
             viscosityChange = 0;
         };
-        class syringe_eaca_5ml_30 {
-            painReduce = 0;
-            hrIncreaseLow[] = {-4, -12};
-            hrIncreaseNormal[] = {-4, -12};
-            hrIncreaseHigh[] = {-4, -12};
-            timeInSystem = 300;
-            timeTillMaxEffect = 35;
-            dose = 3;
-            viscosityChange = 0;
-        };
-        class syringe_epinephrineIV_5ml_1 {
+        class syringe_epinephrineIV_5ml {
             painReduce = 0;
             hrIncreaseLow[] = {10, 20};
             hrIncreaseNormal[] = {10, 30};
@@ -519,41 +489,6 @@ class KAT_Medical_Treatment {
             timeTillMaxEffect = 10;
             dose = 1;
             alphaFactor = -0.1;
-            contractility = 0.7;
-        };
-        class syringe_epinephrineIV_5ml_3 {
-            painReduce = 0;
-            hrIncreaseLow[] = {10, 20};
-            hrIncreaseNormal[] = {10, 35};
-            hrIncreaseHigh[] = {15, 30};
-            timeInSystem = 180;
-            timeTillMaxEffect = 10;
-            dose = 3;
-            alphaFactor = -0.15;
-            contractility = 1;
-        };
-        class syringe_norepinephrine_5ml_1 {
-            painReduce = 0;
-            hrIncreaseLow[] = {-5, 5};
-            hrIncreaseNormal[] = {-10, 5};
-            hrIncreaseHigh[] = {-10, 5};
-            timeInSystem = 360;
-            timeTillMaxEffect = 15;
-            viscosityChange = 15;
-            dose = 1;
-            alphaFactor = -0.15;
-            contractility = 0.5;
-        };
-        class syringe_norepinephrine_5ml_3 {
-            painReduce = 0;
-            hrIncreaseLow[] = {-10, 0};
-            hrIncreaseNormal[] = {-15, 5};
-            hrIncreaseHigh[] = {-15, 5};
-            timeInSystem = 360;
-            timeTillMaxEffect = 15;
-            dose = 3;
-            viscosityChange = 25;
-            alphaFactor = -0.3;
             contractility = 0.7;
         };
         class syringe_phenylephrine_5ml_1 {
@@ -567,17 +502,7 @@ class KAT_Medical_Treatment {
             dose = 1;
             alphaFactor = -0.3;
         };
-        class syringe_phenylephrine_5ml_3 {
-            painReduce = 0;
-            hrIncreaseLow[] = {2, 15};
-            hrIncreaseNormal[] = {2, 20};
-            hrIncreaseHigh[] = {2, 15};
-            timeInSystem = 300;
-            timeTillMaxEffect = 15;
-            viscosityChange = 50;
-            dose = 3;
-            alphaFactor = -0.5;
-        };
+    
         class syringe_nitroglycerin_5ml_1 {
             painReduce = 0;
             hrIncreaseLow[] = {5, 10};

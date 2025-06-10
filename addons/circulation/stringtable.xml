@@ -3837,5 +3837,35 @@
         <Key ID="STR_KAT_Circulation_Transfusing_Doxapram_Infusion">
             <English>Transfusing Doxapram Infusion...</English>
         </Key>
+        <Key ID="STR_KAT_Circulation_Nitroglycerin_Infusion">
+            <English>Nitroglycerin Infusion IV (250ml)</English>
+        </Key>
+        <Key ID="STR_KAT_Circulation_Nitroglycerin_Infusion_Desc_Short">
+            <English>Nitroglycerin Infusion IV, for management of blood pressure</English>
+        </Key>
+        <Key ID="STR_KAT_Circulation_Nitroglycerin_Infusion_Desc_Use">
+            <English>A Infusion of Nitroglycerin and Saline introduced into the blood system through an IV.</English>
+        </Key>
+        <Key ID="STR_KAT_Circulation_Actions_NitroglycerinInfusion">
+            <English>Transfuse Nitroglycerin Infusion</English>
+        </Key>
+        <Key ID="STR_KAT_Circulation_Transfusing_Nitroglycerin_Infusion">
+            <English>Transfusing Nitroglycerin Infusion...</English>
+        </Key>
+        <Key ID="STR_KAT_Circulation_Norepinephrine_Infusion">
+            <English>Norepinephrine Infusion IV (250ml)</English>
+        </Key>
+        <Key ID="STR_KAT_Circulation_Norepinephrine_Infusion_Desc_Short">
+            <English>Norepinephrine Infusion IV, for management of blood pressure</English>
+        </Key>
+        <Key ID="STR_KAT_Circulation_Norepinephrine_Infusion_Desc_Use">
+            <English>A Infusion of Norepinephrine and Saline introduced into the blood system through an IV.</English>
+        </Key>
+        <Key ID="STR_KAT_Circulation_Actions_NorepinephrineInfusion">
+            <English>Transfuse Norepinephrine Infusion</English>
+        </Key>
+        <Key ID="STR_KAT_Circulation_Transfusing_Norepinephrine_Infusion">
+            <English>Transfusing Norepinephrine Infusion...</English>
+        </Key>
     </Package>
 </Project>

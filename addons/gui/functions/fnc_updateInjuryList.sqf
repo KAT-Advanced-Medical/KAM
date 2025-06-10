@@ -131,6 +131,8 @@ private _MorphineIVInfusion = 0;
 private _EpinephrineIVInfusion = 0;
 private _EtomidateIVInfusion = 0;
 private _DoxapramIVInfusion = 0;
+private _NitroglycerinIVInfusion = 0;
+private _NorepinephrineIVInfusion = 0;
 {
     _x params ["_volumeRemaining", "_type", "_partIndex"];
     if (_partIndex == _selectionN) then{
@@ -161,6 +163,12 @@ private _DoxapramIVInfusion = 0;
         };
         case "Doxapram_IVInfusion": {
             _DoxapramIVInfusion = _DoxapramIVInfusion + _volumeRemaining;
+        };
+        case "Nitroglycerin_IVInfusion": {
+            _NitroglycerinIVInfusion = _NitroglycerinIVInfusion + _volumeRemaining;
+        };
+        case "Norepinephrine_IVInfusion": {
+            _NorepinephrineIVInfusion = _NorepinephrineIVInfusion + _volumeRemaining;
         };
     };
     _totalIvVolume = _totalIvVolume + _volumeRemaining;
@@ -194,6 +202,12 @@ if (_totalIvVolume > 0) then {
     };
     if (_MorphineIVInfusion > 0) then {
         _entries pushBack [format [localize ELSTRING(pharma,receivingMorphineIVInfusionVolume), floor _MorphineIVInfusion], [1, 1, 1, 1]];
+    };
+    if (_NitroglycerinIVInfusion > 0) then {
+        _entries pushBack [format [localize ELSTRING(pharma,receivingNitroglycerinIVInfusionVolume), floor _NitroglycerinIVInfusion], [1, 1, 1, 1]];
+    };
+    if (_NorepinephrineIVInfusion > 0) then {
+        _entries pushBack [format [localize ELSTRING(pharma,receivingNorepinephrineIVInfusionVolume), floor _NorepinephrineIVInfusion], [1, 1, 1, 1]];
     };
 } else {
     _entries pushBack [localize ACELSTRING(medical_treatment,Status_NoIv), _nonissueColor];

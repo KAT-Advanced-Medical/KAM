@@ -284,5 +284,36 @@ class ACE_Medical_Treatment {
             type = "Doxapram_IVInfusion";
             incompatibleMedication[] = {};
         };
+        class Nitroglycerin_IVInfusion: SalineIV_250 {
+            painReduce = 0;
+            hrIncreaseLow[] = {3, 6};
+            hrIncreaseNormal[] = {5, 9};
+            hrIncreaseHigh[] = {5, 12};
+            timeInSystem = 10;
+            timeTillMaxEffect = 2;
+            dose = 0.2;
+            volume = 250;
+            rateCoef = 1.3;
+            alphaFactor = 0.1;
+            viscosityChange = -10;
+            contractility = -0.05;
+            type = "Nitroglycerin_IVInfusion";
+            incompatibleMedication[] = {};
+        };
+        class Norepinephrine_IVInfusion: SalineIV_250 {
+            painReduce = 0;
+            hrIncreaseLow[] = {3, 6};
+            hrIncreaseNormal[] = {5, 9};
+            hrIncreaseHigh[] = {5, 12};
+            timeInSystem = 10;
+            timeTillMaxEffect = 2;
+            dose = 0.2;
+            volume = 250;
+            rateCoef = 1.3;
+            alphaFactor = -0.1;
+            viscosityChange = 10;
+            type = "Norepinephrine_IVInfusion";
+            incompatibleMedication[] = {};
+        };
     };
 };

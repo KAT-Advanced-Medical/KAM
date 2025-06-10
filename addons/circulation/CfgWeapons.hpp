@@ -176,6 +176,28 @@ class CfgWeapons {
             mass = 2.5;
         };
     };
+    class kat_NitroglycerinInfusion: ACE_salineIV_250 {
+        scope = 1;
+        author = "Cplhardcore";
+        displayName = CSTRING(Nitroglycerin_Infusion);
+        descriptionShort = CSTRING(Nitroglycerin_Infusion_Desc_Short);
+        descriptionUse = CSTRING(Nitroglycerin_Infusion_Desc_Use);
+        ACE_isMedicalItem = 1;
+        class ItemInfo: CBA_MiscItem_ItemInfo {
+            mass = 2.5;
+        };
+    };
+    class kat_NorepinephrineInfusion: ACE_salineIV_250 {
+        scope = 1;
+        author = "Cplhardcore";
+        displayName = CSTRING(Norepinephrine_Infusion);
+        descriptionShort = CSTRING(Norepinephrine_Infusion_Desc_Short);
+        descriptionUse = CSTRING(Norepinephrine_Infusion_Desc_Use);
+        ACE_isMedicalItem = 1;
+        class ItemInfo: CBA_MiscItem_ItemInfo {
+            mass = 2.5;
+        };
+    };
     class kat_PackedRBCIV_500: ACE_bloodIV_500 {
         scope = 2;
         author = "Cplhardcore";

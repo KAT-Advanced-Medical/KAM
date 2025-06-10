@@ -58,13 +58,12 @@ _syringeListBox ctrlAddEventHandler ["LBSelChanged", {
     if (_selectedSyringe == "") exitWith { systemChat "No syringe selected, Commander."; };
 
     private _salineIVWhitelist = [
-        "kat_epinephrineIV", "kat_morphineIV", "kat_etomidate", "kat_doxapram"
+        "kat_epinephrineIV", "kat_morphineIV", "kat_etomidate", "kat_doxapram", "kat_norepinephrine", "kat_nitroglycerin"
     ];
     private _5mlWhitelist = [
         "kat_amiodarone", "kat_atropine", "kat_EACA", "kat_epinephrineIV",
         "kat_etomidate", "kat_fentanyl", "kat_flumazenil", "kat_ketamine",
-        "kat_lidocaine", "kat_lorazepam", "kat_nalbuphine", "kat_nitroglycerin",
-        "kat_norepinephrine", "kat_phenylephrine", "kat_TXA", "kat_morphineIV",
+        "kat_lidocaine", "kat_lorazepam", "kat_nalbuphine", "kat_phenylephrine", "kat_TXA", "kat_morphineIV",
         "kat_adenosineIV", "kat_atropineIV", "kat_alteplase", "kat_doxapram", "ACE_salineIV_250"
     ];
     private _10mlWhitelist = [
