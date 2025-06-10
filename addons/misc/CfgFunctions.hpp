@@ -71,6 +71,9 @@ class CfgFunctions {
             class canCheckDogtag {
                 file = QPATHTOF(functions\fnc_canCheckDogtag.sqf);
             };
+            class showDogtagData {
+                file = QPATHTOF(functions\fnc_showDogtagData.sqf);
+            };
         };
     };
     class overwrite_ace_medical_statemachine {

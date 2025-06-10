@@ -41,6 +41,7 @@ PREP(removeIVbag);
 PREP(removeTourniquetTime);
 PREP(setTourniquetTime);
 PREP(setUnconscious);
+PREP(showDogtagData);
 PREP(slingArmband);
 PREP(stitchWound);
 PREP(stopCarryingPrompt);

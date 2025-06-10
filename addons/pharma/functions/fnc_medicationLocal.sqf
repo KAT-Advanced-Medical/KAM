@@ -97,9 +97,35 @@ if (_isOccluded) exitWith {
 if (GVAR(AMS_Enabled)) then {
     private _defaultConfig = configFile >> QUOTE(KAT_Medical_Treatment) >> "Medication";
     private _medicationConfig = _defaultConfig >> _classname;
+    if (!isClass _medicationConfig) then {
+        private _parts = _classname splitString "_";
+        if ((count _parts) > 1) then {
+            _parts deleteAt ((count _parts) - 1);
+            private _trimmedClassname = _parts joinString "_";
+            _medicationConfig = _defaultConfig >> _trimmedClassname;
+        };
+    };
+    private _startDose = (_classname splitString "_") select -1;
+    private _currentWeight = _patient getVariable [QEGVAR(vitals,currentWeight), 80];
     private _defaultHeartRate = _patient getVariable [QEGVAR(circulation,defaultHeartRate), 80];
     private _heartRateRatio = GET_HEART_RATE(_patient) / _defaultHeartRate;
-    private _drugMult = (((GET_BLOOD_VOLUME_LITERS(_patient) / DEFAULT_BLOOD_VOLUME) * (_heartRateRatio) * ((GET_BODY_FLUID_ECB(_patient)/GET_BODY_FLUID_ECP(_patient)) / (DEFAULT_ECB/DEFAULT_ECP)) max 0.2) min 2.5);
+    private _bloodBased = GET_STRING(_medicationConfig >> "bloodBased",getText (_defaultConfig >> "bloodBased"));
+    private _weightBase = GET_STRING(_medicationConfig >> "weightBase",getText (_defaultConfig >> "weightBase"));
+    private _weightDose = GET_NUMBER(_medicationConfig >> "weightDose",getNumber (_defaultConfig >> "weightDose"));
+    private _weightMult = 1;
+    if (_weightBase == "true") then {
+        private _defaultWeight = _patient getVariable [QEGVAR(circulation,defaultWeight), 80];
+        private _weightFixed = linearConversion [60, 100, _defaultWeight, 10, 30, true];
+        _weightDoseFixed = _weightDose;
+        if !(_weightDose == 20) then {
+            _weightDoseFixed = linearConversion [10, 20, _weightDose, 10, 30, true];
+        };
+        _weightMult = (_weightFixed/_weightDoseFixed);
+        if (_weightMult < 1) then {
+            _weightMult = _weightMult / (random [1.1, 1.3, 1.5]);
+        };
+    };
+    private _drugMult = (((GET_BLOOD_VOLUME_LITERS(_patient) / DEFAULT_BLOOD_VOLUME) * (_heartRateRatio) * ((GET_BODY_FLUID_ECB(_patient)/GET_BODY_FLUID_ECP(_patient)) / (DEFAULT_ECB/DEFAULT_ECP)) max 0.2) min 2.5) * _weightMult;
     TRACE_5("_drugMult",_patient,_defaultHeartRate,_heartRateRatio,(GET_BLOOD_VOLUME_LITERS(_patient) / DEFAULT_BLOOD_VOLUME),_drugMult);
     _painReduce             = GET_NUMBER(_medicationConfig >> "painReduce",getNumber (_defaultConfig >> "painReduce")) * _drugMult;
     _timeInSystem           = GET_NUMBER(_medicationConfig >> "timeInSystem",getNumber (_defaultConfig >> "timeInSystem")) * _drugMult;
@@ -115,7 +141,7 @@ if (GVAR(AMS_Enabled)) then {
     _hrIncreaseHigh         = GET_ARRAY(_medicationConfig >> "hrIncreaseHigh",getArray (_defaultConfig >> "hrIncreaseHigh"));
     _incompatibleMedication = GET_ARRAY(_medicationConfig >> "incompatibleMedication",getArray (_defaultConfig >> "incompatibleMedication"));
     _maxRelief              = GET_NUMBER(_medicationConfig >> "maxRelief",getNumber (_defaultConfig >> "maxRelief"));
-    _dose                   = GET_NUMBER(_medicationConfig >> "dose",getNumber (_defaultConfig >> "dose")) * _drugMult;
+    _dose                   = GET_NUMBER(_medicationConfig >> "dose",getNumber (_defaultConfig >> "dose")) * _drugMult * _startDose;
     _contractility        = GET_NUMBER(_medicationConfig >> "contractility",getNumber (_defaultConfig >> "contractility")) * _drugMult;
 
     private _heartRate = GET_HEART_RATE(_patient);

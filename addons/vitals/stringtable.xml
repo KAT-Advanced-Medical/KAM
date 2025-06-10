@@ -118,5 +118,8 @@
             <German>KAT - ADV Medical: Vitalwerte</German>
             <Italian>KAT - ADV Medica: Parametri vitali</Italian>
         </Key>
+        <Key ID="STR_KAT_Vitals_weight_log">
+            <English>%1 checked dogtags weight: %2</English>
+        </Key>
     </Package>
 </Project>

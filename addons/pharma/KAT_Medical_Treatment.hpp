@@ -501,6 +501,8 @@ class KAT_Medical_Treatment {
             viscosityChange = 35;
             dose = 1;
             alphaFactor = -0.3;
+            weightBased = "true";
+            weightDose = 20;
         };
         class syringe_fentanyl_5ml {
             painReduce = 0.6;
@@ -516,6 +518,8 @@ class KAT_Medical_Treatment {
             opioidDepression = 0.17;
             respiratoryRate = -0.2;
             contractility = -0.2;
+            weightBased = "true";
+            weightDose = 20;
         };
         class syringe_ketamine_5ml {
             painReduce = 0.5;
@@ -530,6 +534,8 @@ class KAT_Medical_Treatment {
             opioidDepression = 0.18;
             respiratoryRate = 0.2;
             contractility = 0.1;
+            weightBased = "true";
+            weightDose = 15;
         };
         class syringe_nalbuphine_5ml {
             painReduce = 0.5;
@@ -543,6 +549,8 @@ class KAT_Medical_Treatment {
             opioidRelief = 1.1;
             respiratoryRate = -0.1;
             contractility = -0.2;
+            weightBased = "true";
+            weightDose = 20;
         };
         class syringe_atropineIV_5ml {
             painReduce = 0;
@@ -576,16 +584,6 @@ class KAT_Medical_Treatment {
             dose = 1;
             contractility = -0.2;
         };
-        class syringe_lidocaine_5ml {
-            painReduce = 0;
-            hrIncreaseLow[] = {0, 0};
-            hrIncreaseNormal[] = {0, 0};
-            hrIncreaseHigh[] = {0, 0};
-            timeInSystem = 120;
-            timeTillMaxEffect = 30;
-            dose = 3;
-            contractility = -0.4;
-        };
         class syringe_etomidate_5ml {
             painReduce = 0.2;
             hrIncreaseLow[] = {0, -5};
@@ -597,6 +595,8 @@ class KAT_Medical_Treatment {
             opioidDepression = 0.12;
             viscosityChange = 0;
             contractility = -0.05;
+            weightBased = "true";
+            weightDose = 20;
         };
         class syringe_flumazenil_5ml {
             painReduce = 0;
@@ -608,7 +608,7 @@ class KAT_Medical_Treatment {
             dose = 1;
             viscosityChange = 0;
         };
-        class syringe_lorazepam_5ml_1 {
+        class syringe_lorazepam_5ml {
             painReduce = 0;
             hrIncreaseLow[] = {5, 10};
             hrIncreaseNormal[] = {5, 15};
@@ -620,6 +620,8 @@ class KAT_Medical_Treatment {
             viscosityChange = -10;
             respiratoryRate = -0.1;
             contractility = -0.1;
+            weightBased = "true";
+            weightDose = 20;
         };
         class syringe_morphineIV_5ml {
             painReduce = 0.6;
@@ -632,7 +634,8 @@ class KAT_Medical_Treatment {
             viscosityChange = -15;
             opioidRelief = 1.2;
             respiratoryRate = -0.2;
-        };
+            weightBased = "true";
+            weightDose = 20;
         };
         class syringe_adenosineIV_5ml {
             painReduce = 0;
@@ -681,8 +684,10 @@ class KAT_Medical_Treatment {
             opioidEffect = 0.15;
             opioidDepression = 0.15;
             respiratoryRate = -0.2;
+            weightBased = "true";
+            weightDose = 20;
         };
-        class syringe_ketamine_10ml_1 {
+        class syringe_ketamine_10ml {
             painReduce = 0.6;
             hrIncreaseLow[] = {5, 20};
             hrIncreaseNormal[] = {10, 25};
@@ -694,6 +699,8 @@ class KAT_Medical_Treatment {
             opioidEffect = 0.12;
             opioidDepression = 0.12;
             respiratoryRate = 0.3;
+            weightBased = "true";
+            weightDose = 20;
         };
         class syringe_nalbuphine_10ml {
             painReduce = 0.5;
@@ -706,6 +713,8 @@ class KAT_Medical_Treatment {
             viscosityChange = -5;
             opioidRelief = 1.1;
             respiratoryRate = -0.1;
+            weightBased = "true";
+            weightDose = 20;
         };
         class syringe_lidocaine_10ml {
             painReduce = 0;
@@ -727,130 +736,120 @@ class KAT_Medical_Treatment {
             viscosityChange = -15;
             opioidRelief = 1.1;
             respiratoryRate = -0.2;
-        };
-        class syringe_morphineIV_10ml_3 {
-            painReduce = 0.8;
-            hrIncreaseLow[] = {-5, -15};
-            hrIncreaseNormal[] = {-5, -25};
-            hrIncreaseHigh[] = {-5, -25};
-            timeInSystem = 600;
-            timeTillMaxEffect = 30;
-            dose = 3;
-            viscosityChange = -15;
-            opioidRelief = 1.3;
-            respiratoryRate = -0.3;
+            weightBased = "true";
+            weightDose = 20;
         };
         class syringe_txa {
-            maxDose = 6;
-            maxDoseDeviation = 2;
+            maxDose = 60;
+            maxDoseDeviation = 20;
             incompatibleMedication[] = {};
             onOverDose = "";
         };
         class syringe_eaca {
-            maxDose = 6;
-            maxDoseDeviation = 2;
+            maxDose = 60;
+            maxDoseDeviation = 20;
             incompatibleMedication[] = {};
             onOverDose = "";
         };
         class syringe_epinephrineIV {
-            maxDose = 9;
-            maxDoseDeviation = 3;
+            maxDose = 90;
+            maxDoseDeviation = 30;
             incompatibleMedication[] = {};
             onOverDose = ""; 
         };
         class syringe_norepinephrine {
-            maxDose = 6;
-            maxDoseDeviation = 3;
+            maxDose = 60;
+            maxDoseDeviation = 30;
             incompatibleMedication[] = {};
             onOverDose = "";
         };
         class syringe_phenylephrine {
-            maxDose = 6;
-            maxDoseDeviation = 3;
+            maxDose = 60;
+            maxDoseDeviation = 30;
             incompatibleMedication[] = {};
             onOverDose = "";
         };
         class syringe_nitroglycerin {
-            maxDose = 6;
-            maxDoseDeviation = 3;
+            maxDose = 60;
+            maxDoseDeviation = 30;
             incompatibleMedication[] = {};
             onOverDose = "";
         };
         class syringe_atropineIV {
-            maxDose = 9;
-            maxDoseDeviation = 3;
+            maxDose = 90;
+            maxDoseDeviation = 30;
             incompatibleMedication[] = {};
             onOverDose = "";
         };
         class syringe_amiodarone {
-            maxDose = 6;
-            maxDoseDeviation = 3;
+            maxDose = 60;
+            maxDoseDeviation = 30;
             incompatibleMedication[] = {};
             onOverDose = "";
         };
         class syringe_etomidate {
-            maxDose = 9;
-            maxDoseDeviation = 3;
+            maxDose = 90;
+            maxDoseDeviation = 30;
             incompatibleMedication[] = {};
             onOverDose = "";
         };
         class syringe_flumazenil {
-            maxDose = 4;
-            maxDoseDeviation = 2;
+            maxDose = 40;
+            maxDoseDeviation = 20;
             incompatibleMedication[] = {};
             onOverDose = "";
         };
         class syringe_lorazepam {
-            maxDose = 4;
-            maxDoseDeviation = 2;
+            maxDose = 40;
+            maxDoseDeviation = 20;
             incompatibleMedication[] = {};
             onOverDose = "";
         };
         class syringe_lidocaine {
-            maxDose = 6;
-            maxDoseDeviation = 3;
+            maxDose = 60;
+            maxDoseDeviation = 30;
             incompatibleMedication[] = {};
             onOverDose = "";
         };
         class syringe_fentanyl {
-            maxDose = 3;
-            maxDoseDeviation = 1;
+            maxDose = 30;
+            maxDoseDeviation = 10;
             incompatibleMedication[] = {};
             onOverDose = "";
         };
         class syringe_ketamine {
-            maxDose = 4;
-            maxDoseDeviation = 2;
+            maxDose = 40;
+            maxDoseDeviation = 20;
             incompatibleMedication[] = {};
             onOverDose = "";
         };
         class syringe_nalbuphine {
-            maxDose = 4;
-            maxDoseDeviation = 2;
+            maxDose = 40;
+            maxDoseDeviation = 20;
             incompatibleMedication[] = {};
             onOverDose = "";
         };
         class syringe_morphineIV {
-            maxDose = 3;
-            maxDoseDeviation = 3;
+            maxDose = 30;
+            maxDoseDeviation = 30;
             incompatibleMedication[] = {};
             onOverDose = "";
         };
         class syringe_adenosineIV {
-            maxDose = 6;
-            maxDoseDeviation = 3;
+            maxDose = 60;
+            maxDoseDeviation = 30;
             incompatibleMedication[] = {};
             onOverDose = "";
         };
         class syringe_alteplase {
-            maxDose = 3;
-            maxDoseDeviation = 1;
+            maxDose = 30;
+            maxDoseDeviation = 10;
             incompatibleMedication[] = {};
             onOverDose = "";
         };
         class syringe_doxapram {
-            maxDose = 3;
-            maxDoseDeviation = 2;
+            maxDose = 30;
+            maxDoseDeviation = 20;
             incompatibleMedication[] = {};
             onOverDose = "";
         };

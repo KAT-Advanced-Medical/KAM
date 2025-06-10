@@ -42,7 +42,8 @@ switch (_targetBlood) do {
 private _dogTagData = [
     _targetName,
     _targetBlood, //EDIT by Katalam switch name to target objective //EDIT 2 changed called function, old: ace_dogtags_fnc_bloodType //EDIT 3 working solution for added rhesus factor
-    _target call FUNC(groupID) //EDIT changed called function, old: ace_dogtags_fnc_ssns
+    _target call FUNC(groupID),//EDIT changed called function, old: ace_dogtags_fnc_ssns
+    _target getVariable [QEGVAR(vitals,defaultWeight), 80]
 ];
 // Store it
 _target setVariable [QACEGVAR(dogtags,dogtagData), _dogTagData, true];
