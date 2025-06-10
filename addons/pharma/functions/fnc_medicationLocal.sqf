@@ -105,7 +105,12 @@ if (GVAR(AMS_Enabled)) then {
             _medicationConfig = _defaultConfig >> _trimmedClassname;
         };
     };
-    private _startDose = (_classname splitString "_") select -1;
+    _startDose = 10;
+    private _parts = (_classname splitString "_");
+    _medication = _classname;
+    if (count _parts > 3) then {
+        _startDose = _parts select -1;
+    };
     private _currentWeight = _patient getVariable [QEGVAR(vitals,currentWeight), 80];
     private _defaultHeartRate = _patient getVariable [QEGVAR(circulation,defaultHeartRate), 80];
     private _heartRateRatio = GET_HEART_RATE(_patient) / _defaultHeartRate;
@@ -170,7 +175,7 @@ if (GVAR(AMS_Enabled)) then {
     _hrIncreaseHigh         = GET_ARRAY(_medicationConfig >> "hrIncreaseHigh",getArray (_defaultConfig >> "hrIncreaseHigh"));
     _incompatibleMedication = GET_ARRAY(_medicationConfig >> "incompatibleMedication",getArray (_defaultConfig >> "incompatibleMedication"));
     _maxRelief              = GET_NUMBER(_medicationConfig >> "maxRelief",getNumber (_defaultConfig >> "maxRelief"));
-    _dose                   = (GET_NUMBER(_medicationConfig >> "dose",getNumber (_defaultConfig >> "dose")) * _drugMult) + _startDose;
+    _dose                   = (GET_NUMBER(_medicationConfig >> "dose",getNumber (_defaultConfig >> "dose")) * _drugMult) * _startDose;
     _contractility        = GET_NUMBER(_medicationConfig >> "contractility",getNumber (_defaultConfig >> "contractility")) * _drugMult;
 
     private _heartRate = GET_HEART_RATE(_patient);

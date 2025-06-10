@@ -439,6 +439,7 @@ class KAT_Medical_Treatment {
             viscosityChange = 0;
             onOverDose = "";
             respiratoryRate = 0.1;
+            maximumEffectiveDose = 10;
         };
         class BubbleWrap {
             painReduce = 0.05;
@@ -701,7 +702,7 @@ class KAT_Medical_Treatment {
             hrIncreaseHigh[] = {-5, -20};
             timeInSystem = 180;
             timeTillMaxEffect = 30;
-            dose = 3;
+            dose = 1;
             maxDose = 30;
             maxDoseDeviation = 10;
             incompatibleMedication[] = {};
