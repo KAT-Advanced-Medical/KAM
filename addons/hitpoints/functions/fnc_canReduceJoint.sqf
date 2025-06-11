@@ -31,7 +31,7 @@ case (_partIndex in [10, 11]): { 3 };
 default { -1 };
 };
 private _jointCheck = (_patient getVariable [QGVAR(jointCheck), [false, false, false, false]]) select _jointGroupIndex;
-if !(_jointCheck) exitWith {_canIceJoint};
+if !(_jointCheck) exitWith {_canReduceJoint};
 if (_jointGroupIndex != -1) then {
     private _limbJointStatus = _jointArray select _jointGroupIndex;
     private _selectedJointIndexes = if (["upper", _bodyPart] call BIS_fnc_inString) then {

@@ -15,7 +15,6 @@
  * Public: No
  */
 params ["_patient", "_bodyPart", "_classname"];
-if (_className in ["syringe_lidocaine_5ml_3"]) exitWith {};
 private _partIndex = ALL_BODY_PARTS find toLower _bodyPart;
 [{
     params ["_patient", "_partIndex"];
@@ -53,7 +52,7 @@ private _partIndex = ALL_BODY_PARTS find toLower _bodyPart;
                 };
                 private _anesthesiaArray = _patient getVariable [QEGVAR(pharma,localAnesthesia), [0,0,0,0,0,0,0,0,0,0,0,0]];
                 private _localAnesthesia = _anesthesiaArray select _partIndex;
-                private _localAnesthesia = _localAnesthesia - 0.05;
+                private _localAnesthesia = (_localAnesthesia - 0.05) max 0;
                 _anesthesiaArray set [_partIndex, _localAnesthesia];
                 _patient setVariable [VAR_LOCAL_ANESTHESIA, _anesthesiaArray, true];
         }, 3, [_patient,0,_partIndex]] call CBA_fnc_addPerFrameHandler;

@@ -203,7 +203,7 @@ class KAT_Medical_Treatment {
             alphaFactor = -0.4;
             onOverDose = "";
         };
-        class PhenylephrineAuto {
+        class phenylephrineAuto {
             painReduce = 0;
             hrIncreaseLow[] = {-5, -10};
             hrIncreaseNormal[] = {-5, -10};
@@ -502,7 +502,7 @@ class KAT_Medical_Treatment {
             viscosityChange = 0;
             maximumEffectiveDose = 30;
         };
-        class syringe_epinephrineIV_5ml {
+        class syringe_EpinephrineIV_5ml {
             painReduce = 0;
             hrIncreaseLow[] = {10, 20};
             hrIncreaseNormal[] = {10, 30};
@@ -658,7 +658,7 @@ class KAT_Medical_Treatment {
             weightDose = 20;
             maximumEffectiveDose = 30;
         };
-        class syringe_morphineIV_5ml {
+        class syringe_MorphineIV_5ml {
             painReduce = 0.6;
             hrIncreaseLow[] = {-5, -15};
             hrIncreaseNormal[] = {-5, -20};
@@ -783,19 +783,19 @@ class KAT_Medical_Treatment {
             weightDose = 20;
             maximumEffectiveDose = 30;
         };
-        class syringe_txa {
+        class syringe_TXA {
             maxDose = 60;
             maxDoseDeviation = 20;
             incompatibleMedication[] = {};
             onOverDose = "";
         };
-        class syringe_eaca {
+        class syringe_EACA {
             maxDose = 60;
             maxDoseDeviation = 20;
             incompatibleMedication[] = {};
             onOverDose = "";
         };
-        class syringe_epinephrineIV {
+        class syringe_EpinephrineIV {
             maxDose = 90;
             maxDoseDeviation = 30;
             incompatibleMedication[] = {};
@@ -819,7 +819,7 @@ class KAT_Medical_Treatment {
             incompatibleMedication[] = {};
             onOverDose = "";
         };
-        class syringe_atropineIV {
+        class syringe_atropine {
             maxDose = 90;
             maxDoseDeviation = 30;
             incompatibleMedication[] = {};
@@ -873,13 +873,13 @@ class KAT_Medical_Treatment {
             incompatibleMedication[] = {};
             onOverDose = "";
         };
-        class syringe_morphineIV {
+        class syringe_Morphine {
             maxDose = 30;
             maxDoseDeviation = 30;
             incompatibleMedication[] = {};
             onOverDose = "";
         };
-        class syringe_adenosineIV {
+        class syringe_Adenosine {
             maxDose = 60;
             maxDoseDeviation = 30;
             incompatibleMedication[] = {};

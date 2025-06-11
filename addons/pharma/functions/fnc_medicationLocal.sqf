@@ -136,6 +136,8 @@ if (GVAR(AMS_Enabled)) then {
             private _multiplier = linearConversion [0, 1, _distance, 1.0, 1.7, true];
             _weightMult = _weightMult * _multiplier;
         };
+    } else {
+        _weightMult = _weightMult * linearConversion [10, 301, _startDose, 0.5, 1.5, true];
     };
     private _parts = (_classname splitString "_");
     _medication = _classname;
@@ -150,7 +152,7 @@ if (GVAR(AMS_Enabled)) then {
             private _reductionFactor = linearConversion [0, _maximumEffectiveDose, _excess, 1.0, 0.1, true];
             _doseMult = _doseMult * _reductionFactor;
         };
-
+    
     private _distance = abs (_weightMult - 1);
         if (_weightMult < 1) then {
             private _divisor = linearConversion [0, 1, _distance, 1.0, 1.7, true];
@@ -175,8 +177,8 @@ if (GVAR(AMS_Enabled)) then {
     _hrIncreaseHigh         = GET_ARRAY(_medicationConfig >> "hrIncreaseHigh",getArray (_defaultConfig >> "hrIncreaseHigh"));
     _incompatibleMedication = GET_ARRAY(_medicationConfig >> "incompatibleMedication",getArray (_defaultConfig >> "incompatibleMedication"));
     _maxRelief              = GET_NUMBER(_medicationConfig >> "maxRelief",getNumber (_defaultConfig >> "maxRelief"));
-    _dose                   = (GET_NUMBER(_medicationConfig >> "dose",getNumber (_defaultConfig >> "dose")) * _drugMult) * _startDose;
-    _contractility        = GET_NUMBER(_medicationConfig >> "contractility",getNumber (_defaultConfig >> "contractility")) * _drugMult;
+    _dose                   = GET_NUMBER(_medicationConfig >> "dose",getNumber (_defaultConfig >> "dose")) * _drugMult;
+    _contractility          = GET_NUMBER(_medicationConfig >> "contractility",getNumber (_defaultConfig >> "contractility")) * _drugMult;
 
     private _heartRate = GET_HEART_RATE(_patient);
     private _hrIncrease = [_hrIncreaseLow, _hrIncreaseNormal, _hrIncreaseHigh] select (floor ((0 max _heartRate min 110) / 55));
@@ -220,15 +222,15 @@ if (GVAR(AMS_Enabled)) then {
             _medicationName = _medicationName select [0, count _medicationName - 2];
         };
         if (_medicationName in ["lorazepam","EACA","TXA","TXAAuto","amiodarone","flumazenil"]) then {
-        [format ["kat_pharma_%1Local", toLower _medicationName], [_patient, _bodyPart], _patient] call CBA_fnc_targetEvent;
+        [format ["kat_pharma_%1Local", toLower _medicationName], [_patient, _bodyPart, _doseRatio], _patient] call CBA_fnc_targetEvent;
         };
 
-        if (_medicationName in ["ketamine","atropine","adenosine","alteplase","lidocaine"]) then {
-        [format ["kat_pharma_%1Local", toLower _medicationName], [_patient, _bodyPart, _classname], _patient] call CBA_fnc_targetEvent;
+        if (_medicationName in ["ketamine","atropine","Adenosine","alteplase","lidocaine"]) then {
+        [format ["kat_pharma_%1Local", toLower _medicationName], [_patient, _bodyPart, _classname, _doseRatio], _patient] call CBA_fnc_targetEvent;
         };
 
-        if (_medicationName in ["fentanyl","morphine","nalbuphine"]) then {
-        [format ["kat_pharma_%1Local", toLower _medicationName], [_patient, _bodyPart, _opioidRelief], _patient] call CBA_fnc_targetEvent;
+        if (_medicationName in ["fentanyl","Morphine","nalbuphine"]) then {
+        [format ["kat_pharma_%1Local", toLower _medicationName], [_patient, _bodyPart, _opioidRelief, _doseRatio], _patient] call CBA_fnc_targetEvent;
         };
     } else {
         if (_className in ["Lorazepam","Ketamine","EACA","TXA","Atropine","Amiodarone","Flumazenil","Lidocaine"]) then {
