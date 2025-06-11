@@ -692,7 +692,7 @@ class KAT_Medical_Treatment {
             timeInSystem = 180;
             timeTillMaxEffect = 15;
             dose = 1; 
-            respiratoryRate = 0.2;
+            respiratoryRate = 0.15;
             maximumEffectiveDose = 30;
         };
         class syringe_alteplase_5ml_30 {
