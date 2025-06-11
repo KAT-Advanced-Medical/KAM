@@ -1092,7 +1092,7 @@ class CfgWeapons {
     class kat_syringe_adenosineIV_5ml_30: kat_syringe_adenosineIV_5ml_10 {
         displayName = KATDISPLAYCSTRING(adenosineIV,5ml,30);
     };
-    class kat_syringe_salineIV_5ml_3: kat_syringe_txa_5ml_10 {
+    class kat_syringe_salineIV_5ml_30: kat_syringe_txa_5ml_10 {
         displayName = CSTRING(Syringe_SalineFlush_Display);
         descriptionShort = CSTRING(Syringe_SalineFlush_DescShort);
     };

@@ -5599,5 +5599,8 @@
         <Key ID="STR_KAT_Pharma_SyringeDisplay_alteplase_5ml_30">
             <English>5ml Syringe / 80mg Alteplase</English>
         </Key>
+        <Key ID="STR_KAT_Pharma_SyringeDisplay_salineIV_5ml_30">
+            <English>5ml Syringe / Saline_Flush Syringe</English>
+        </Key>
     </Package>
 </Project>

@@ -40,6 +40,8 @@ private _fnc_condition = {
     if (_allowedBodyParts isEqualTo ["all"]) then {
         _allowedBodyParts = ALL_BODY_PARTS apply {toLowerANSI _x};
     };
+    private _removeFromInteractions = getText (_x >> "removeFromInteractions");;
+    if (_removeFromInteractions isEqualTo "true") exitWith {};
 
     {
         private _bodyPart = _x;
@@ -60,6 +62,6 @@ private _fnc_condition = {
 
         ["CAManBase", 0, [_actionPath], _action, true] call ACEFUNC(interact_menu,addActionToClass);
         ["CAManBase", 0, ["ACE_MainActions", "ACE_Medical_Radial", _actionPath], _action, true] call ACEFUNC(interact_menu,addActionToClass);
-        GVAR(selfInteractionActions) pushBack ["", 1, ["ACE_SelfActions", "ACE_Medical", _actionPath], _action];
+        ACEGVAR(medical_gui,selfInteractionActions) pushBack ["", 1, ["ACE_SelfActions", "ACE_Medical", _actionPath], _action];
     } forEach _allowedBodyParts;
 } forEach configProperties [_actionsConfig, "isClass _x"];

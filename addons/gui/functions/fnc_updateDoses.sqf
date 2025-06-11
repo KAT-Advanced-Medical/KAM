@@ -51,7 +51,7 @@ _medListBox ctrlAddEventHandler ["LBSelChanged", {
                     private _localizedText = localize _stringtableKey;
 
                     if (_localizedText != _stringtableKey && {_localizedText != ""}) then {
-                        private _doseText = (_localizedText splitstring " ") select 3;
+                        private _doseText = (_localizedText splitString " ") select 3;
                         private _index = _doseListBox lbAdd _doseText;
                         _doseListBox lbSetValue [_index, _x];
                     };

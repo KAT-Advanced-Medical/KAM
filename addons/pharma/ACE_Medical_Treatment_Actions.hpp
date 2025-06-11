@@ -1,5 +1,7 @@
 class ACE_Medical_Treatment_Actions {
-    class BasicBandage;
+     class BasicBandage {
+        removeFromInteractions = "false";
+    };
     class FieldDressing;
     class ApplyTourniquet;
     class RemoveTourniquet;
@@ -212,7 +214,7 @@ class ACE_Medical_Treatment_Actions {
         allowSelfTreatment = 1;
         medicRequired = QGVAR(medLvl_SalineFlush);
         treatmentTime = QGVAR(treatmentTime_SalineFlush);
-        items[] = {"kat_syringe_salineIV_5ml_3"};
+        items[] = {"kat_syringe_salineIV_5ml_30"};
         condition = QUOTE(_patient getVariable [ARR_2(QQGVAR(IVplaced),true)]);
         callbackSuccess = QFUNC(treatmentAdvanced_Flush);
         sounds[] = {};
@@ -543,6 +545,7 @@ class ACE_Medical_Treatment_Actions {
         items[] = {"kat_syringe_eaca_5ml_10"};
         condition = QUOTE(FUNC(ivCondition));
         callbackSuccess = QFUNC(medication);
+        removeFromInteractions = "true";
         sounds[] = {};
     };
     class syringe_EACA_5ml_20: syringe_EACA_5ml_10 {
@@ -559,6 +562,7 @@ class ACE_Medical_Treatment_Actions {
         treatmentTime = QGVAR(treatmentTime_TXAIM);
         items[] = {"kat_syringe_txa_10ml_10"};
         callbackSuccess = QFUNC(medication);
+        removeFromInteractions = "true";
     };
     class syringe_TXA_10ml_20: syringe_TXA_10ml_10 {
         displayName = KATPUSHCSTRING(txa,10ml,20);
@@ -582,50 +586,10 @@ class ACE_Medical_Treatment_Actions {
         treatmentTime = QGVAR(treatmentTime_phenylephrine);
         items[] = {"kat_syringe_phenylephrine_5ml_10"};
     };
-    class syringe_phenylephrine_5ml_12: syringe_phenylephrine_5ml_10 {
-        displayName = KATPUSHCSTRING(phenylephrine,5ml,12);
-        displayNameProgress = KATPUSHINGCSTRING(phenylephrine,5ml,12);
-        items[] = {"kat_syringe_phenylephrine_5ml_12"};
-    };
-    class syringe_phenylephrine_5ml_14: syringe_phenylephrine_5ml_10 {
-        displayName = KATPUSHCSTRING(phenylephrine,5ml,14);
-        displayNameProgress = KATPUSHINGCSTRING(phenylephrine,5ml,14);
-        items[] = {"kat_syringe_phenylephrine_5ml_14"};
-    };
-    class syringe_phenylephrine_5ml_16: syringe_phenylephrine_5ml_10 {
-        displayName = KATPUSHCSTRING(phenylephrine,5ml,16);
-        displayNameProgress = KATPUSHINGCSTRING(phenylephrine,5ml,16);
-        items[] = {"kat_syringe_phenylephrine_5ml_16"};
-    };
-    class syringe_phenylephrine_5ml_18: syringe_phenylephrine_5ml_10 {
-        displayName = KATPUSHCSTRING(phenylephrine,5ml,18);
-        displayNameProgress = KATPUSHINGCSTRING(phenylephrine,5ml,18);
-        items[] = {"kat_syringe_phenylephrine_5ml_18"};
-    };
     class syringe_phenylephrine_5ml_20: syringe_phenylephrine_5ml_10 {
         displayName = KATPUSHCSTRING(phenylephrine,5ml,20);
         displayNameProgress = KATPUSHINGCSTRING(phenylephrine,5ml,20);
         items[] = {"kat_syringe_phenylephrine_5ml_20"};
-    };
-    class syringe_phenylephrine_5ml_22: syringe_phenylephrine_5ml_10 {
-        displayName = KATPUSHCSTRING(phenylephrine,5ml,22);
-        displayNameProgress = KATPUSHINGCSTRING(phenylephrine,5ml,22);
-        items[] = {"kat_syringe_phenylephrine_5ml_22"};
-    };
-    class syringe_phenylephrine_5ml_24: syringe_phenylephrine_5ml_10 {
-        displayName = KATPUSHCSTRING(phenylephrine,5ml,24);
-        displayNameProgress = KATPUSHINGCSTRING(phenylephrine,5ml,24);
-        items[] = {"kat_syringe_phenylephrine_5ml_24"};
-    };
-    class syringe_phenylephrine_5ml_26: syringe_phenylephrine_5ml_10 {
-        displayName = KATPUSHCSTRING(phenylephrine,5ml,26);
-        displayNameProgress = KATPUSHINGCSTRING(phenylephrine,5ml,26);
-        items[] = {"kat_syringe_phenylephrine_5ml_26"};
-    };
-    class syringe_phenylephrine_5ml_28: syringe_phenylephrine_5ml_10 {
-        displayName = KATPUSHCSTRING(phenylephrine,5ml,28);
-        displayNameProgress = KATPUSHINGCSTRING(phenylephrine,5ml,28);
-        items[] = {"kat_syringe_phenylephrine_5ml_28"};
     };
     class syringe_phenylephrine_5ml_30: syringe_phenylephrine_5ml_10 {
         displayName = KATPUSHCSTRING(phenylephrine,5ml,30);
