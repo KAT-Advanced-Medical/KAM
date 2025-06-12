@@ -53,6 +53,7 @@ PREP(treatmentAdvanced_DoxapramOverdoseLocal);
 PREP(treatmentAdvanced_EACALocal);
 PREP(treatmentAdvanced_EACAOverdoseLocal);
 PREP(treatmentAdvanced_EpinephrineOverdoseLocal);
+PREP(treatmentAdvanced_EtomidateLocal);
 PREP(treatmentAdvanced_EtomidateOverdoseLocal);
 PREP(treatmentAdvanced_FentanylLocal);
 PREP(treatmentAdvanced_FentanylOverdoseLocal);

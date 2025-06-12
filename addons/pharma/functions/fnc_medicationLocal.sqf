@@ -79,11 +79,15 @@ private _occlusionMap = [
 
 private _idx = _occlusionMap findIf { _x#0 == _partIndex };
 private _result = if (_idx != -1) then { _occlusionMap select _idx select 1 } else { [] };
-private _medParts = (_className splitString "_");
 private _subDermalMeds = [
-    "syringe_lidocaine_10ml_10"
+    "syringe_Lidocaine_10ml_10"
 ];
-private _isOccluded = ({ _tourniquets select _x != 0 } count _result > 0) && !(((_IVarray select _partIndex isEqualTo 13) && (_medParts select 2 isEqualTo "5ml")) || (_classname in _subDermalMeds));
+private _medParts = _className splitString "_";
+private _hasValidSuffix = count _medParts > 2 && { _medParts select 2 isEqualTo "5ml" };
+private _isOccluded = 
+    ({ _tourniquets select _x != 0 } count _result > 0) 
+    && !( ((_IVarray select _partIndex isEqualTo 13) && _hasValidSuffix) 
+    || (_className in _subDermalMeds));
 if (_isOccluded) exitWith {
     TRACE_1("Medication injection site is occluded by tourniquet", _partIndex);
     private _occludedMedications = _patient getVariable [QACEGVAR(medical,occludedMedications), []];
@@ -95,7 +99,7 @@ if (_isOccluded) exitWith {
 
 // Get and calculate medication modifiers
 if (GVAR(AMS_Enabled)) then {
-    private _defaultConfig = configFile >> QUOTE(KAT_Medical_Treatment) >> "Medication";
+    private _defaultConfig = configFile >> QUOTE(ACE_ADDON(Medical_Treatment)) >> "Medication";
     private _medicationConfig = _defaultConfig >> _classname;
     if (!isClass _medicationConfig) then {
         private _parts = _classname splitString "_";
@@ -105,11 +109,10 @@ if (GVAR(AMS_Enabled)) then {
             _medicationConfig = _defaultConfig >> _trimmedClassname;
         };
     };
-    _startDose = 10;
+    _startDose = 20;
     private _parts = (_classname splitString "_");
-    _medication = _classname;
     if (count _parts > 3) then {
-        _startDose = _parts select -1;
+        _startDose = parseNumber (_parts select -1);
     };
     private _currentWeight = _patient getVariable [QEGVAR(vitals,currentWeight), 80];
     private _defaultHeartRate = _patient getVariable [QEGVAR(circulation,defaultHeartRate), 80];
@@ -117,7 +120,7 @@ if (GVAR(AMS_Enabled)) then {
     private _bloodBased = GET_STRING(_medicationConfig >> "bloodBased",getText (_defaultConfig >> "bloodBased"));
     private _weightBase = GET_STRING(_medicationConfig >> "weightBase",getText (_defaultConfig >> "weightBase"));
     private _weightDose = GET_NUMBER(_medicationConfig >> "weightDose",getNumber (_defaultConfig >> "weightDose"));
-    private _weightMult = 1;
+    _weightMult = 1;
     if (_weightBase == "true") then {
         private _defaultWeight = _patient getVariable [QEGVAR(circulation,defaultWeight), 80];
         private _weightFixed = linearConversion [60, 100, _defaultWeight, 10, 30, true];
@@ -137,15 +140,21 @@ if (GVAR(AMS_Enabled)) then {
             _weightMult = _weightMult * _multiplier;
         };
     } else {
-        _weightMult = _weightMult * linearConversion [10, 301, _startDose, 0.5, 1.5, true];
+        private _lc = linearConversion [10, 30, _startDose, 0.5, 1.5, true];
+        _weightMult = _weightMult * _lc;
+        TRACE_2("weightMult",_weightMult,_lc);
     };
     private _parts = (_classname splitString "_");
     _medication = _classname;
     if (count _parts > 3) then {
         _medication = _parts select 1;
     };
+    if ((toUpper (_medication select [count _medication- 2])) isEqualTo "IV") then {
+            _medication = _medication select [0, count _medication - 2];
+    };
     private _currentDose = [_patient, _medication] call ACEFUNC(medical_status,getMedicationCount) select 0;
     private _maximumEffectiveDose = GET_NUMBER(_medicationConfig >> "maximumEffectiveDose",getNumber (_defaultConfig >> "maximumEffectiveDose"));
+    TRACE_4("medicationEffectivness",_currentDose,_medication,_maximumEffectiveDose,_startDose);
     private _doseMult = 1;
         if ((_currentDose + _startDose) > _maximumEffectiveDose) then {
             private _excess = (_currentDose + _startDose) - _maximumEffectiveDose;
@@ -177,7 +186,7 @@ if (GVAR(AMS_Enabled)) then {
     _hrIncreaseHigh         = GET_ARRAY(_medicationConfig >> "hrIncreaseHigh",getArray (_defaultConfig >> "hrIncreaseHigh"));
     _incompatibleMedication = GET_ARRAY(_medicationConfig >> "incompatibleMedication",getArray (_defaultConfig >> "incompatibleMedication"));
     _maxRelief              = GET_NUMBER(_medicationConfig >> "maxRelief",getNumber (_defaultConfig >> "maxRelief"));
-    _dose                   = GET_NUMBER(_medicationConfig >> "dose",getNumber (_defaultConfig >> "dose")) * _drugMult;
+    _dose                   = GET_NUMBER(_medicationConfig >> "dose",getNumber (_defaultConfig >> "dose")) * _drugMult * _startDose;
     _contractility          = GET_NUMBER(_medicationConfig >> "contractility",getNumber (_defaultConfig >> "contractility")) * _drugMult;
 
     private _heartRate = GET_HEART_RATE(_patient);
@@ -197,6 +206,9 @@ if (GVAR(AMS_Enabled)) then {
     TRACE_1("SplitString result for _className:",_medicationParts);
     if (count _medicationParts > 3) then {
         private _medicationName = _medicationParts select 1;
+        if ((toUpper (_medicationName select [count _medicationName - 2])) isEqualTo "IV") then {
+            _medicationName = _medicationName select [0, count _medicationName - 2];
+        };
         TRACE_6("adjustments1",_patient,_medicationName,_timeTillMaxEffect,_timeInSystem,_heartRateChange,_painReduce);
         TRACE_7("adjustments2",_viscosityChange,_dose,_alphaFactor,_opioidRelief,_opioidEffect,_opioidDepression,_respiratoryRate);
         [_patient, _medicationName, _timeTillMaxEffect, _timeInSystem, _heartRateChange, _painReduce, _viscosityChange, _dose, _alphaFactor, _opioidRelief, _opioidEffect, _opioidDepression, _respiratoryRate, _contractility] call EFUNC(vitals,addMedicationAdjustment);
@@ -221,19 +233,24 @@ if (GVAR(AMS_Enabled)) then {
         if ((toUpper (_medicationName select [count _medicationName - 2])) isEqualTo "IV") then {
             _medicationName = _medicationName select [0, count _medicationName - 2];
         };
-        if (_medicationName in ["lorazepam","EACA","TXA","TXAAuto","amiodarone","flumazenil"]) then {
-        [format ["kat_pharma_%1Local", toLower _medicationName], [_patient, _bodyPart, _doseRatio], _patient] call CBA_fnc_targetEvent;
+
+        if (_medicationName in ["EACA","TXA","Amiodarone","Flumazenil"]) then {
+        [format ["kat_pharma_%1Local", toLower _medicationName], [_patient, _bodyPart], _patient] call CBA_fnc_targetEvent;
         };
 
-        if (_medicationName in ["ketamine","atropine","Adenosine","alteplase","lidocaine"]) then {
-        [format ["kat_pharma_%1Local", toLower _medicationName], [_patient, _bodyPart, _classname, _doseRatio], _patient] call CBA_fnc_targetEvent;
+        if (_medicationName in ["Lorazepam","Etomidate"]) then {
+        [format ["kat_pharma_%1Local", toLower _medicationName], [_patient, _bodyPart, _dose], _patient] call CBA_fnc_targetEvent;
         };
 
-        if (_medicationName in ["fentanyl","Morphine","nalbuphine"]) then {
-        [format ["kat_pharma_%1Local", toLower _medicationName], [_patient, _bodyPart, _opioidRelief, _doseRatio], _patient] call CBA_fnc_targetEvent;
+        if (_medicationName in ["Ketamine","Atropine","Adenosine","Alteplase","Lidocaine"]) then {
+        [format ["kat_pharma_%1Local", toLower _medicationName], [_patient, _bodyPart, _classname], _patient] call CBA_fnc_targetEvent;
+        };
+
+        if (_medicationName in ["Fentanyl","Morphine","Nalbuphine"]) then {
+        [format ["kat_pharma_%1Local", toLower _medicationName], [_patient, _bodyPart, _opioidRelief], _patient] call CBA_fnc_targetEvent;
         };
     } else {
-        if (_className in ["Lorazepam","Ketamine","EACA","TXA","Atropine","Amiodarone","Flumazenil","Lidocaine"]) then {
+        if (_className in ["Lorazepam","Ketamine","EACA","TXA","Atropine","Amiodarone","Flumazenil","Lidocaine", "TXAAuto"]) then {
         [format ["kat_pharma_%1Local", toLower _className], [_patient, _bodyPart, _classname], _patient] call CBA_fnc_targetEvent;
         };
 
@@ -287,54 +304,43 @@ if (GVAR(AMS_Enabled)) then {
     [format ["kat_pharma_%1Local", toLower _className], [_patient, _bodyPart, _opioidRelief], _patient] call CBA_fnc_targetEvent;
     };
 };
-_test = typeName _classname;
-TRACE_1("type",_test);
-    if (_classname == "syringe_etomidate_5ml_3") then {
-        TRACE_1("etomidateeDose",_patient);
-        [{
-            params ["_patient"];
-            _patient setVariable [QGVAR(activeEtomidateLoadingDose), true, true];
-            TRACE_1("activeDose",_patient);
-        },
-        [_patient], 10] call CBA_fnc_waitAndExecute;
-        [{
-            params ["_patient"];
-            _patient setVariable [QGVAR(activeEtomidateLoadingDose), false, true];
-            TRACE_1("activeDose",_patient);
-        },
-        [_patient], 120] call CBA_fnc_waitAndExecute; 
-    };
-
-private _TXAmedications = ["syringe_TXA_5ml_1", "syringe_TXA_10ml_1"];
+private _TXAmedications = ["syringe_TXA_5ml_10", "syringe_TXA_10ml_10", "TXAAuto"];
     if (_classname in _TXAmedications) then {
         TRACE_1("TXADose",_patient);
-        private _medication = _classname;
-        private _administered = _patient getVariable ["kat_TXA_meds_administered", []];
-        private _effectTriggered = _patient getVariable ["kat_TXA_effect_triggered", false];
-        private _windowActive = _patient getVariable ["kat_TXA_meds_window_active", false];
+        if (_className in ["TXAAuto"]) then {
+            _medicationName = _className select [0, count _className - 4];
+        };
+        private _medicationParts = (_className splitString "_");
+        if (count _medicationParts > 3) then {
+                _medicationName = _medicationParts select 1;
+        };
+        private _medication = _medicationName;
+        private _administered = _patient getVariable [QGVAR(TXAActive), []];
+        private _effectTriggered = _patient getVariable [QGVAR(TXATriggered), false];
+        private _windowActive = _patient getVariable [QGVAR(TXAWindow), false];
         if (!(_medication in _administered)) then {
             _administered pushBack _medication;
-            _patient setVariable ["kat_TXA_meds_administered", _administered, true];
+            _patient setVariable [QGVAR(TXAActive), _administered, true];
         };
         if (count _administered == 1) then {
-            _patient setVariable ["kat_TXA_meds_window_active", false, true];
+            _patient setVariable [QGVAR(TXATriggered), false, true];
         [{
             params ["_patient"];
-            _patient setVariable ["kat_TXA_meds_window_active", true, true];  
+            _patient setVariable [QGVAR(TXAWindow), true, true];  
         },
         [_patient], 180] call CBA_fnc_waitAndExecute; 
         [{
             params ["_patient"];
-            _patient setVariable ["kat_TXA_meds_window_active", false, true]; 
+            _patient setVariable [QGVAR(TXAWindow), false, true]; 
         },
         [_patient], 300] call CBA_fnc_waitAndExecute; 
         };
-        if ((count _administered == count _TXAmedications) && (_patient getVariable ["kat_TXA_meds_window_active", false]) && {!_effectTriggered}) then {
+        if ((count _administered == count _TXAmedications) && (_patient getVariable [QGVAR(TXAWindow), false]) && {!_effectTriggered}) then {
             _effectTriggered = true;
             [_patient, "EACA", 15, 360, "", "", "", "",  "", "", "", ""] call EFUNC(vitals,addMedicationAdjustment);
             [_patient, "Body"] call FUNC(treatmentAdvanced_EACALocal);
-            _patient setVariable ["kat_TXA_effect_triggered", false, true];
-            _patient setVariable ["kat_TXA_meds_administered", [], true];
-            _patient setVariable ["kat_TXA_meds_window_active", false, true];
+            _patient setVariable [QGVAR(TXATriggered), false, true];
+            _patient setVariable [QGVAR(TXAActive), [], true];
+            _patient setVariable [QGVAR(TXAWindow), false, true];
         };
     };

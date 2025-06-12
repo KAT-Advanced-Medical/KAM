@@ -21,22 +21,21 @@ params ["_target", "_className", "_incompatibleMedication"];
 TRACE_3("onMedicationUsage",_target,_className,_incompatibleMedication);
 
 if (GVAR(AMS_Enabled)) then {
-    private _medicationParts = (_className splitString "_");
-
-    if (count _medicationParts > 3) then {
-        _medicationName = _medicationParts select 1; {
-        private _defaultConfig    = configFile >> QUOTE(KAT_Medical_Treatment) >> "Medication";
+    if !(_className in ["CWMP", "Painkillers", "Penthrox", "Carbonate", "BubbleWrap", "Caffeine", "Pervitin", "Naloxone"]) then {
+        _medicationName = format ["syringe_%1", _className];
+        private _defaultConfig    = configFile >> QUOTE(ACE_ADDON(Medical_Treatment)) >> "Medication";
         private _medicationConfig = _defaultConfig >> _medicationName;
-        private _maxDose          = GET_NUMBER(_medicationConfig >> "maxDose",getNumber (_defaultConfig >> "maxDose"));
+        TRACE_1("onMedicationUsage2",_medicationConfig);
+        private _maxDose = GET_NUMBER(_medicationConfig >> "maxDose",getNumber (_defaultConfig >> "maxDose"));
         private _currentWeight = _patient getVariable [QEGVAR(vitals,currentWeight), 80];
         private _maxDoseMult = linearConversion [60, 100, _currentWeight, 0.5, 1.5, true];
-        private _maxDoseFixed = _maxDose * _maxDoseMult
+        private _maxDoseFixed = _maxDose * _maxDoseMult;
         TRACE_2("onMedUsage1",_maxDose,_medicationName);
 
         if (_maxDoseFixed > 0) then {
             private _maxDoseDeviation = GET_NUMBER(_medicationConfig >> "maxDoseDeviation",getNumber (_defaultConfig >> "maxDoseDeviation"));
-            private _currentDose = [_target, _medicationName] call ACEFUNC(medical_status,getMedicationCount) select 0;
-            TRACE_2("onMedUsage2",_currentDose,_medicationName);
+            private _currentDose = [_target, _className] call ACEFUNC(medical_status,getMedicationCount) select 0;
+            TRACE_2("onMedUsage2",_currentDose,_className);
             // Because both {floor random 0} and {floor random 1} return 0
             if (_maxDoseDeviation > 0) then {
                 _maxDoseDeviation = _maxDoseDeviation + 1;
@@ -55,7 +54,6 @@ if (GVAR(AMS_Enabled)) then {
                 };
             } forEach _incompatibleMedication;
             };
-        };
     } else {
         private _defaultConfig    = configFile >> QUOTE(ACE_ADDON(Medical_Treatment)) >> "Medication";
         private _medicationConfig = _defaultConfig >> _classname;

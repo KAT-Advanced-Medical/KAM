@@ -36,6 +36,16 @@ class ACE_ADDON(Medical_Treatment) {
         respiratoryRate = 0;
         //multiplier to contractility
         contractility = 0;
+        //Is the medication dosaging based off of weight
+        weightBased = "false";
+        //what dose corresponds to a weight of 80kg
+        weightDose = 20;
+        //if weightDose isnt 20 (default), what is the upper and lower range of doses
+        weightDoseMin = 10; //60kg
+        weightDoseMax = 30; //100kg
+        //maximum dose before medication effects are reduced
+        maximumEffectiveDose = 30;
+
 
         class Epinephrine {
             painReduce = 0;
@@ -45,11 +55,12 @@ class ACE_ADDON(Medical_Treatment) {
             timeInSystem = 120;
             timeTillMaxEffect = 10;
             dose = 1;
-            maxDose = 6;
-            maxDoseDeviation = 4;
+            maxDose = 60;
+            maxDoseDeviation = 40;
             incompatibleMedication[] = {};
             alphaFactor = -0.1;
             onOverDose = "";
+            maximumEffectiveDose = 30;
         };
         class EpinephrineIV {
             painReduce = 0;
@@ -74,10 +85,11 @@ class ACE_ADDON(Medical_Treatment) {
             timeInSystem = 300;
             timeTillMaxEffect = 60;
             dose = 1;
-            maxDose = 2;
-            maxDoseDeviation = 1;
+            maxDose = 20;
+            maxDoseDeviation = 10;
             incompatibleMedication[] = {};
             viscosityChange = -0;
+            maximumEffectiveDose = 20;
         };
         class MorphineIV {
             painReduce = 0.8;
@@ -101,10 +113,11 @@ class ACE_ADDON(Medical_Treatment) {
             timeInSystem = 180;
             timeTillMaxEffect = 30;
             dose = 1;
-            maxDose = 4;
-            maxDoseDeviation = 2;
+            maxDose = 40;
+            maxDoseDeviation = 20;
             incompatibleMedication[] = {};
             viscosityChange = 0;
+            maximumEffectiveDose = 30;
         };
         class AdenosineIV {
             painReduce = 0;
@@ -153,10 +166,11 @@ class ACE_ADDON(Medical_Treatment) {
             timeInSystem = 90;
             timeTillMaxEffect = 5;
             dose = 1;
-            maxDose = 3;
+            maxDose = 30;
             incompatibleMedication[] = {};
             viscosityChange = 0;
             onOverDose = "";
+            maximumEffectiveDose = 20;
         };
         class Norepinephrine {
             painReduce = 0;
@@ -188,7 +202,7 @@ class ACE_ADDON(Medical_Treatment) {
             alphaFactor = -0.4;
             onOverDose = "";
         };
-        class PhenylephrineAuto {
+        class phenylephrineAuto {
             painReduce = 0;
             hrIncreaseLow[] = {-5, -10};
             hrIncreaseNormal[] = {-5, -10};
@@ -196,11 +210,12 @@ class ACE_ADDON(Medical_Treatment) {
             timeInSystem = 360;
             timeTillMaxEffect = 15;
             dose = 1;
-            maxDose = 6;
-            maxDoseDeviation = 4;
+            maxDose = 30;
+            maxDoseDeviation = 10;
             incompatibleMedication[] = {};
             viscosityChange = 25;
             alphaFactor = -0.15;
+            maximumEffectiveDose = 20;
         };
         class Nitroglycerin {
             painReduce = 0;
@@ -277,12 +292,13 @@ class ACE_ADDON(Medical_Treatment) {
             timeInSystem = 360;
             timeTillMaxEffect = 45;
             dose = 1;
-            maxDose = 6;
-            maxDoseDeviation = 4;
+            maxDose = 60;
+            maxDoseDeviation = 40;
             incompatibleMedication[] = {};
             viscosityChange = -5;
             onOverDose = "";
             maxRelief = 0.4;
+            maximumEffectiveDose = 4;
         };
         class PainKillers {
             painReduce = 0.35;
@@ -400,12 +416,13 @@ class ACE_ADDON(Medical_Treatment) {
             timeInSystem = 600;
             timeTillMaxEffect = 5;
             dose = 1;
-            maxDose = 2;
-            maxDoseDeviation = 1;
+            maxDose = 20;
+            maxDoseDeviation = 10;
             incompatibleMedication[] = {};
             viscosityChange = 5;
             onOverDose = "";
             opioidEffect = 0.2;
+            maximumEffectiveDose = 10;
         };
         class Caffeine {
             painReduce = 0;
@@ -415,12 +432,13 @@ class ACE_ADDON(Medical_Treatment) {
             timeInSystem = 1800;
             timeTillMaxEffect = 5;
             dose = 1;
-            maxDose = 4;
-            maxDoseDeviation = 4;
+            maxDose = 40;
+            maxDoseDeviation = 20;
             incompatibleMedication[] = {};
             viscosityChange = 0;
             onOverDose = "";
             respiratoryRate = 0.1;
+            maximumEffectiveDose = 10;
         };
         class BubbleWrap {
             painReduce = 0.05;
@@ -443,11 +461,440 @@ class ACE_ADDON(Medical_Treatment) {
             timeInSystem = 300;
             timeTillMaxEffect = 20;
             dose = 1;
-            maxDose = 4;
+            maxDose = 40;
             incompatibleMedication[] = {};
             viscosityChange = 5;
             onOverDose = "";
             maxRelief = 0.6;
+            maximumEffectiveDose = 30;
+        };
+        class syringe_TXA_5ml {
+            painReduce = 0;
+            hrIncreaseLow[] = {-2, -5};
+            hrIncreaseNormal[] = {-2, -5};
+            hrIncreaseHigh[] = {-2, -5};
+            timeInSystem = 120;
+            timeTillMaxEffect = 5;
+            dose = 1;
+            viscosityChange = 0;
+            maximumEffectiveDose = 30;
+        };
+        class syringe_TXA_10ml {
+            painReduce = 0;
+            hrIncreaseLow[] = {-2, -5};
+            hrIncreaseNormal[] = {-2, -5};
+            hrIncreaseHigh[] = {-2, -5};
+            timeInSystem = 120;
+            timeTillMaxEffect = 20;
+            dose = 1;
+            viscosityChange = 0;
+            maximumEffectiveDose = 30;
+        };
+        class syringe_EACA_5ml {
+            painReduce = 0;
+            hrIncreaseLow[] = {-2, -5};
+            hrIncreaseNormal[] = {-2, -5};
+            hrIncreaseHigh[] = {-2, -5};
+            timeInSystem = 100;
+            timeTillMaxEffect = 35;
+            dose = 1;
+            viscosityChange = 0;
+            maximumEffectiveDose = 30;
+        };
+        class syringe_EpinephrineIV_5ml {
+            painReduce = 0;
+            hrIncreaseLow[] = {10, 20};
+            hrIncreaseNormal[] = {10, 30};
+            hrIncreaseHigh[] = {15, 30};
+            timeInSystem = 120;
+            timeTillMaxEffect = 10;
+            dose = 1;
+            alphaFactor = -0.1;
+            contractility = 0.7;
+            maximumEffectiveDose = 30;
+        };
+        class syringe_Phenylephrine_5ml {
+            painReduce = 0;
+            hrIncreaseLow[] = {2, 10};
+            hrIncreaseNormal[] = {2, 15};
+            hrIncreaseHigh[] = {2, 10};
+            timeInSystem = 180;
+            timeTillMaxEffect = 15;
+            viscosityChange = 35;
+            dose = 1;
+            alphaFactor = -0.3;
+            weightBased = "true";
+            weightDose = 20;
+            maximumEffectiveDose = 30;
+        };
+        class syringe_Fentanyl_5ml {
+            painReduce = 0.6;
+            hrIncreaseLow[] = {-5, -10};
+            hrIncreaseNormal[] = {-10, -15};
+            hrIncreaseHigh[] = {-10, -15};
+            timeInSystem = 900;
+            timeTillMaxEffect = 20;
+            dose = 1;
+            viscosityChange = -10;
+            opioidRelief = 1.2;
+            opioidEffect = 0.17;
+            opioidDepression = 0.17;
+            respiratoryRate = -0.2;
+            contractility = -0.2;
+            weightBased = "true";
+            weightDose = 20;
+            maximumEffectiveDose = 30;
+        };
+        class syringe_Ketamine_5ml {
+            painReduce = 0.5;
+            hrIncreaseLow[] = {5, 20};
+            hrIncreaseNormal[] = {10, 25};
+            hrIncreaseHigh[] = {5, 25};
+            timeInSystem = 600;
+            timeTillMaxEffect = 15;
+            dose = 1;
+            viscosityChange = 10;
+            opioidEffect = 0.18;
+            opioidDepression = 0.18;
+            respiratoryRate = 0.2;
+            contractility = 0.1;
+            weightBased = "true";
+            weightDose = 15;
+            weightDoseMin = 10;
+            weightDoseMax = 20;
+            maximumEffectiveDose = 30;
+        };
+        class syringe_Nalbuphine_5ml {
+            painReduce = 0.5;
+            hrIncreaseLow[] = {-5, 0};
+            hrIncreaseNormal[] = {-10, -5};
+            hrIncreaseHigh[] = {-15, -5};
+            timeInSystem = 600;
+            timeTillMaxEffect = 30;
+            dose = 1;
+            viscosityChange = -5;
+            opioidRelief = 1.1;
+            respiratoryRate = -0.1;
+            contractility = -0.2;
+            weightBased = "true";
+            weightDose = 20;
+            maximumEffectiveDose = 30;
+        };
+        class syringe_AtropineIV_5ml {
+            painReduce = 0;
+            hrIncreaseLow[] = {5, 20};
+            hrIncreaseNormal[] = {5, 15};
+            hrIncreaseHigh[] = {5, 10};
+            timeInSystem = 120;
+            timeTillMaxEffect = 30;
+            dose = 1;
+            viscosityChange = 0;
+            contractility = 0.2;
+            maximumEffectiveDose = 30;
+        };
+        class syringe_Amiodarone_5ml {
+            painReduce = 0;
+            hrIncreaseLow[] = {0, 0};
+            hrIncreaseNormal[] = {0, 0};
+            hrIncreaseHigh[] = {0, 0};
+            timeInSystem = 120;
+            timeTillMaxEffect = 30;
+            dose = 1;
+            viscosityChange = 0;
+            contractility = -0.4;
+            maximumEffectiveDose = 30;
+        };
+        class syringe_Lidocaine_5ml {
+            painReduce = 0;
+            hrIncreaseLow[] = {0, 0};
+            hrIncreaseNormal[] = {0, 0};
+            hrIncreaseHigh[] = {0, 0};
+            timeInSystem = 120;
+            timeTillMaxEffect = 30;
+            dose = 1;
+            contractility = -0.2;
+            maximumEffectiveDose = 30;
+        };
+        class syringe_Etomidate_5ml {
+            painReduce = 0.2;
+            hrIncreaseLow[] = {0, -5};
+            hrIncreaseNormal[] = {-5, -10};
+            hrIncreaseHigh[] = {-10, -15};
+            timeInSystem = 60;
+            timeTillMaxEffect = 5;
+            dose = 1;
+            opioidDepression = 0.12;
+            viscosityChange = 0;
+            contractility = -0.05;
+            weightBased = "true";
+            weightDose = 20;
+            maximumEffectiveDose = 30;
+        };
+        class syringe_Flumazenil_5ml {
+            painReduce = 0;
+            hrIncreaseLow[] = {0, 0};
+            hrIncreaseNormal[] = {0, 0};
+            hrIncreaseHigh[] = {0, 0};
+            timeInSystem = 60;
+            timeTillMaxEffect = 5;
+            dose = 1;
+            viscosityChange = 0;
+            maximumEffectiveDose = 30;
+        };
+        class syringe_Lorazepam_5ml {
+            painReduce = 0;
+            hrIncreaseLow[] = {5, 10};
+            hrIncreaseNormal[] = {5, 15};
+            hrIncreaseHigh[] = {7, 15};
+            timeInSystem = 30;
+            timeTillMaxEffect = 5;
+            dose = 1;
+            opioidDepression = 0.11;
+            viscosityChange = -10;
+            respiratoryRate = -0.1;
+            contractility = -0.1;
+            weightBased = "true";
+            weightDose = 20;
+            maximumEffectiveDose = 30;
+        };
+        class syringe_MorphineIV_5ml {
+            painReduce = 0.6;
+            hrIncreaseLow[] = {-5, -15};
+            hrIncreaseNormal[] = {-5, -20};
+            hrIncreaseHigh[] = {-5, -20};
+            timeInSystem = 600;
+            timeTillMaxEffect = 30;
+            dose = 1;
+            viscosityChange = -15;
+            opioidRelief = 1.2;
+            respiratoryRate = -0.2;
+            weightBased = "true";
+            weightDose = 20;
+            maximumEffectiveDose = 30;
+        };
+        class syringe_AdenosineIV_5ml {
+            painReduce = 0;
+            hrIncreaseLow[] = {-3, -10};
+            hrIncreaseNormal[] = {-5, -10};
+            hrIncreaseHigh[] = {-5, -15};
+            timeInSystem = 180;
+            timeTillMaxEffect = 15;
+            dose = 1;
+            viscosityChange = 0;
+            maximumEffectiveDose = 30;
+        };
+        class syringe_Doxapram_5ml {
+            painReduce = 0;
+            hrIncreaseLow[] = {3, 10};
+            hrIncreaseNormal[] = {5, 10};
+            hrIncreaseHigh[] = {5, 15};
+            timeInSystem = 180;
+            timeTillMaxEffect = 15;
+            dose = 1; 
+            respiratoryRate = 0.15;
+            maximumEffectiveDose = 30;
+        };
+        class syringe_Alteplase_5ml_30 {
+            painReduce = 0;
+            hrIncreaseLow[] = {-4, -10};
+            hrIncreaseNormal[] = {-5, -15};
+            hrIncreaseHigh[] = {-5, -20};
+            timeInSystem = 180;
+            timeTillMaxEffect = 30;
+            dose = 1;
+            maxDose = 30;
+            maxDoseDeviation = 10;
+            incompatibleMedication[] = {};
+            viscosityChange = 0;
+            maximumEffectiveDose = 30;
+        };
+        class syringe_Fentanyl_10ml {
+            painReduce = 0.6;
+            hrIncreaseLow[] = {-5, -10};
+            hrIncreaseNormal[] = {-10, -15};
+            hrIncreaseHigh[] = {-10, -15};
+            timeInSystem = 300;
+            timeTillMaxEffect = 60;
+            dose = 1;
+            viscosityChange = -10;
+            onOverDose = "";
+            opioidRelief = 1.1;
+            opioidEffect = 0.15;
+            opioidDepression = 0.15;
+            respiratoryRate = -0.2;
+            weightBased = "true";
+            weightDose = 20;
+            maximumEffectiveDose = 30;
+        };
+        class syringe_Ketamine_10ml {
+            painReduce = 0.6;
+            hrIncreaseLow[] = {5, 20};
+            hrIncreaseNormal[] = {10, 25};
+            hrIncreaseHigh[] = {5, 25};
+            timeInSystem = 300;
+            timeTillMaxEffect = 30;
+            dose = 1;
+            viscosityChange = 10;
+            opioidEffect = 0.12;
+            opioidDepression = 0.12;
+            respiratoryRate = 0.3;
+            weightBased = "true";
+            weightDose = 20;
+            maximumEffectiveDose = 30;
+        };
+        class syringe_Nalbuphine_10ml {
+            painReduce = 0.5;
+            hrIncreaseLow[] = {-5, 0};
+            hrIncreaseNormal[] = {-10, -5};
+            hrIncreaseHigh[] = {-15, -5};
+            timeInSystem = 300;
+            timeTillMaxEffect = 45;
+            dose = 1;
+            viscosityChange = -5;
+            opioidRelief = 1.1;
+            respiratoryRate = -0.1;
+            weightBased = "true";
+            weightDose = 20;
+            maximumEffectiveDose = 30;
+        };
+        class syringe_Lidocaine_10ml {
+            painReduce = 0;
+            hrIncreaseLow[] = {0, 0};
+            hrIncreaseNormal[] = {0, 0};
+            hrIncreaseHigh[] = {0, 0};
+            timeInSystem = 120;
+            timeTillMaxEffect = 30;
+            dose = 1;
+            maximumEffectiveDose = 30;
+        };
+        class syringe_MorphineIV_10ml {
+            painReduce = 0.6;
+            hrIncreaseLow[] = {-5, -15};
+            hrIncreaseNormal[] = {-5, -20};
+            hrIncreaseHigh[] = {-5, -20};
+            timeInSystem = 600;
+            timeTillMaxEffect = 30;
+            dose = 1;
+            viscosityChange = -15;
+            opioidRelief = 1.1;
+            respiratoryRate = -0.2;
+            weightBased = "true";
+            weightDose = 20;
+            maximumEffectiveDose = 30;
+        };
+        class syringe_TXA {
+            maxDose = 60;
+            maxDoseDeviation = 20;
+            incompatibleMedication[] = {};
+            onOverDose = "";
+        };
+        class syringe_EACA {
+            maxDose = 60;
+            maxDoseDeviation = 20;
+            incompatibleMedication[] = {};
+            onOverDose = "";
+        };
+        class syringe_Epinephrine {
+            maxDose = 90;
+            maxDoseDeviation = 30;
+            incompatibleMedication[] = {};
+            onOverDose = ""; 
+        };
+        class syringe_Norepinephrine {
+            maxDose = 60;
+            maxDoseDeviation = 30;
+            incompatibleMedication[] = {};
+            onOverDose = "";
+        };
+        class syringe_Phenylephrine {
+            maxDose = 60;
+            maxDoseDeviation = 30;
+            incompatibleMedication[] = {};
+            onOverDose = "";
+        };
+        class syringe_Nitroglycerin {
+            maxDose = 60;
+            maxDoseDeviation = 30;
+            incompatibleMedication[] = {};
+            onOverDose = "";
+        };
+        class syringe_Atropine {
+            maxDose = 90;
+            maxDoseDeviation = 30;
+            incompatibleMedication[] = {};
+            onOverDose = "";
+        };
+        class syringe_Amiodarone {
+            maxDose = 60;
+            maxDoseDeviation = 30;
+            incompatibleMedication[] = {};
+            onOverDose = "";
+        };
+        class syringe_Etomidate {
+            maxDose = 90;
+            maxDoseDeviation = 30;
+            incompatibleMedication[] = {};
+            onOverDose = "";
+        };
+        class syringe_Flumazenil {
+            maxDose = 40;
+            maxDoseDeviation = 20;
+            incompatibleMedication[] = {};
+            onOverDose = "";
+        };
+        class syringe_Lorazepam {
+            maxDose = 40;
+            maxDoseDeviation = 20;
+            incompatibleMedication[] = {};
+            onOverDose = "";
+        };
+        class syringe_Lidocaine {
+            maxDose = 60;
+            maxDoseDeviation = 30;
+            incompatibleMedication[] = {};
+            onOverDose = "";
+        };
+        class syringe_Fentanyl {
+            maxDose = 30;
+            maxDoseDeviation = 10;
+            incompatibleMedication[] = {};
+            onOverDose = "";
+        };
+        class syringe_Ketamine {
+            maxDose = 40;
+            maxDoseDeviation = 20;
+            incompatibleMedication[] = {};
+            onOverDose = "";
+        };
+        class syringe_Nalbuphine {
+            maxDose = 40;
+            maxDoseDeviation = 20;
+            incompatibleMedication[] = {};
+            onOverDose = "";
+        };
+        class syringe_Morphine {
+            maxDose = 30;
+            maxDoseDeviation = 30;
+            incompatibleMedication[] = {};
+            onOverDose = "";
+        };
+        class syringe_Adenosine {
+            maxDose = 60;
+            maxDoseDeviation = 30;
+            incompatibleMedication[] = {};
+            onOverDose = "";
+        };
+        class syringe_Alteplase {
+            maxDose = 30;
+            maxDoseDeviation = 10;
+            incompatibleMedication[] = {};
+            onOverDose = "";
+        };
+        class syringe_Doxapram {
+            maxDose = 30;
+            maxDoseDeviation = 20;
+            incompatibleMedication[] = {};
+            onOverDose = "";
         };
     };
 };

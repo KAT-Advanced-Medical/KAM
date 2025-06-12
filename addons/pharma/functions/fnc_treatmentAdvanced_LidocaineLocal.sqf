@@ -16,7 +16,8 @@
  */
 params ["_patient", "_bodyPart", "_classname"];
 private _partIndex = ALL_BODY_PARTS find toLower _bodyPart;
-[{
+if (_classname in ["syringe_Lidocaine_10ml_10", "syringe_Lidocaine_5ml_10"]) then {
+    [{
     params ["_patient", "_partIndex"];
         [{
             params ["_args", "_idPFH"];
@@ -57,3 +58,5 @@ private _partIndex = ALL_BODY_PARTS find toLower _bodyPart;
                 _patient setVariable [VAR_LOCAL_ANESTHESIA, _anesthesiaArray, true];
         }, 3, [_patient,0,_partIndex]] call CBA_fnc_addPerFrameHandler;
 }, [_patient,_partIndex], 30] call CBA_fnc_waitAndExecute;
+
+}

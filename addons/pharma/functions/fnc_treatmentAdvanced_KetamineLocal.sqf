@@ -18,9 +18,24 @@
  */
 
 params ["_patient", "_bodyPart", "_classname"];
-_patient setVariable [QEGVAR(surgery,sedated), true, true];
+private _parts = _classname splitString "_";
+if ((count _parts) >= 2) then {
+    private _lastTwo = [_parts select -2, _parts select -1];
+     _isMatch = _lastTwo in [
+        ["5ml", "22"],
+        ["5ml", "24"],
+        ["5ml", "26"],
+        ["5ml", "28"],
+        ["5ml", "30"]
+    ];
+};
+if (_isMatch) then {
+    _patient setVariable [QEGVAR(surgery,sedated), true, true];
 [_patient, true] call ACEFUNC(medical,setUnconscious);
 
 [{ 
-    _patient setVariable ["kat_surgery_sedated", false, true]; 
+    params ["_patient"];
+    _patient setVariable [QEGVAR(surgery,sedated), false, true]; 
 }, [_patient], 30] call CBA_fnc_waitAndExecute;
+
+};

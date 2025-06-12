@@ -15,7 +15,7 @@
  * Public: No
  */
 
-params ["_patient"];
+params ["_patient", "_dose"];
 
 private _random = random 3;
 if (_random <= 1) then {
@@ -23,6 +23,11 @@ if (_random <= 1) then {
     private _hrAdjust = selectRandom _hrValue;
     [_patient, "BRADYCARDIA", 120, 1200, _hrAdjust, 0, 0, "", "", ""] call EFUNC(vitals,addMedicationAdjustment);
 };
+private _currentWeight = _patient getVariable [QEGVAR(vitals,currentWeight), 80];
+private _doseNormalized = linearConversion [0, 40, _dose, 10, 30, true];
+private _weightNormalized = linearConversion [60, 100, _currentWeight, 10, 30, true];
+if (_doseNormalized >_weightNormalized) then {
+    _patient setVariable [QEGVAR(surgery,sedated), true, true];
+    [_patient, true] call ACEFUNC(medical,setUnconscious);
+};
 
-_patient setVariable [QEGVAR(surgery,sedated), true, true];
-[_patient, true] call ACEFUNC(medical,setUnconscious);

@@ -29,7 +29,6 @@ _timeToMaxEffect = _timeToMaxEffect max 1;
 
 
 private _adjustments = _unit getVariable [VAR_MEDICATIONS, []];
-
 _adjustments pushBack [_medication, CBA_missionTime, _timeToMaxEffect, _maxTimeInSystem, _hrAdjust, _painAdjust, _flowAdjust, _dose, _alphaFactor, _opioidRelief, _opioidEffect, _opioidDepression, _respiratoryRate, _contractility];
 
 _unit setVariable [VAR_MEDICATIONS, _adjustments, true];
