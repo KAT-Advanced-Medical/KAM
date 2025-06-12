@@ -16,7 +16,7 @@
  */
 params ["_patient"];
 private _hrAdjust = 20 + floor random ((40 - 20) + 1);
-[_patient, "TACHYCARDIA", 120, 1200, _hrAdjust] call EFUNC(vitals,addMedicationAdjustment);
+[_patient, "TACHYCARDIA", 120, 1200, _hrAdjust, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0] call EFUNC(vitals,addMedicationAdjustment);
 if QEGVAR(feedback,effectOverdose) then
     {
     PP_wetD = ppEffectCreate ["WetDistortion",300];

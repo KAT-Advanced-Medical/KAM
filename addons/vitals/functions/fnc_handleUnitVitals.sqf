@@ -94,7 +94,7 @@ private _opioidEffectAdjustment = 0;
 private _opioidDepressionAdjustment = 0;
 private _contractility = 0;
 private _adjustments = _unit getVariable [VAR_MEDICATIONS,[]];
-
+TRACE_1("HUV",_adjustments);
 if (_adjustments isNotEqualTo []) then {
     private _deleted = false;
     {

@@ -337,7 +337,7 @@ private _TXAmedications = ["syringe_TXA_5ml_10", "syringe_TXA_10ml_10", "TXAAuto
         };
         if ((count _administered == count _TXAmedications) && (_patient getVariable [QGVAR(TXAWindow), false]) && {!_effectTriggered}) then {
             _effectTriggered = true;
-            [_patient, "EACA", 15, 360, "", "", "", "",  "", "", "", ""] call EFUNC(vitals,addMedicationAdjustment);
+            [_patient, "EACA", 15, 360, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0] call EFUNC(vitals,addMedicationAdjustment);
             [_patient, "Body"] call FUNC(treatmentAdvanced_EACALocal);
             _patient setVariable [QGVAR(TXATriggered), false, true];
             _patient setVariable [QGVAR(TXAActive), [], true];
