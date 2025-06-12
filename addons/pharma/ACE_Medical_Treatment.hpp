@@ -477,7 +477,7 @@ class ACE_ADDON(Medical_Treatment) {
             timeTillMaxEffect = 5;
             dose = 1;
             viscosityChange = 0;
-            maximumEffectiveDose = 30;
+            maximumEffectiveDose = 20;
         };
         class syringe_TXA_10ml {
             painReduce = 0;
@@ -488,7 +488,7 @@ class ACE_ADDON(Medical_Treatment) {
             timeTillMaxEffect = 20;
             dose = 1;
             viscosityChange = 0;
-            maximumEffectiveDose = 30;
+            maximumEffectiveDose = 20;
         };
         class syringe_EACA_5ml {
             painReduce = 0;
@@ -499,18 +499,18 @@ class ACE_ADDON(Medical_Treatment) {
             timeTillMaxEffect = 35;
             dose = 1;
             viscosityChange = 0;
-            maximumEffectiveDose = 30;
+            maximumEffectiveDose = 20;
         };
         class syringe_EpinephrineIV_5ml {
             painReduce = 0;
-            hrIncreaseLow[] = {10, 20};
-            hrIncreaseNormal[] = {10, 30};
-            hrIncreaseHigh[] = {15, 30};
+            hrIncreaseLow[] = {10, 15};
+            hrIncreaseNormal[] = {10, 20};
+            hrIncreaseHigh[] = {10, 20};
             timeInSystem = 120;
             timeTillMaxEffect = 10;
             dose = 1;
             alphaFactor = -0.1;
-            contractility = 0.7;
+            contractility = 0.3;
             maximumEffectiveDose = 30;
         };
         class syringe_Phenylephrine_5ml {
@@ -522,7 +522,7 @@ class ACE_ADDON(Medical_Treatment) {
             timeTillMaxEffect = 15;
             viscosityChange = 35;
             dose = 1;
-            alphaFactor = -0.3;
+            alphaFactor = -0.2;
             weightBased = "true";
             weightDose = 20;
             maximumEffectiveDose = 30;
@@ -537,10 +537,10 @@ class ACE_ADDON(Medical_Treatment) {
             dose = 1;
             viscosityChange = -10;
             opioidRelief = 1.2;
-            opioidEffect = 0.17;
-            opioidDepression = 0.17;
-            respiratoryRate = -0.2;
-            contractility = -0.2;
+            opioidEffect = 0.11;
+            opioidDepression = 0.11;
+            respiratoryRate = -0.1;
+            contractility = -0.1;
             weightBased = "true";
             weightDose = 20;
             maximumEffectiveDose = 30;
@@ -548,15 +548,15 @@ class ACE_ADDON(Medical_Treatment) {
         class syringe_Ketamine_5ml {
             painReduce = 0.5;
             hrIncreaseLow[] = {5, 20};
-            hrIncreaseNormal[] = {10, 25};
-            hrIncreaseHigh[] = {5, 25};
+            hrIncreaseNormal[] = {10, 20};
+            hrIncreaseHigh[] = {5, 20};
             timeInSystem = 600;
             timeTillMaxEffect = 15;
             dose = 1;
             viscosityChange = 10;
-            opioidEffect = 0.18;
-            opioidDepression = 0.18;
-            respiratoryRate = 0.2;
+            opioidEffect = 0.9;
+            opioidDepression = 0.9;
+            respiratoryRate = 0.1;
             contractility = 0.1;
             weightBased = "true";
             weightDose = 15;
@@ -575,7 +575,7 @@ class ACE_ADDON(Medical_Treatment) {
             viscosityChange = -5;
             opioidRelief = 1.1;
             respiratoryRate = -0.1;
-            contractility = -0.2;
+            contractility = -0.1;
             weightBased = "true";
             weightDose = 20;
             maximumEffectiveDose = 30;
@@ -589,7 +589,7 @@ class ACE_ADDON(Medical_Treatment) {
             timeTillMaxEffect = 30;
             dose = 1;
             viscosityChange = 0;
-            contractility = 0.2;
+            contractility = 0.1;
             maximumEffectiveDose = 30;
         };
         class syringe_Amiodarone_5ml {
@@ -601,7 +601,7 @@ class ACE_ADDON(Medical_Treatment) {
             timeTillMaxEffect = 30;
             dose = 1;
             viscosityChange = 0;
-            contractility = -0.4;
+            contractility = -0.2;
             maximumEffectiveDose = 30;
         };
         class syringe_Lidocaine_5ml {
@@ -612,7 +612,7 @@ class ACE_ADDON(Medical_Treatment) {
             timeInSystem = 120;
             timeTillMaxEffect = 30;
             dose = 1;
-            contractility = -0.2;
+            contractility = -0.1;
             maximumEffectiveDose = 30;
         };
         class syringe_Etomidate_5ml {
@@ -623,7 +623,7 @@ class ACE_ADDON(Medical_Treatment) {
             timeInSystem = 60;
             timeTillMaxEffect = 5;
             dose = 1;
-            opioidDepression = 0.12;
+            opioidDepression = 0.06;
             viscosityChange = 0;
             contractility = -0.05;
             weightBased = "true";
@@ -650,7 +650,7 @@ class ACE_ADDON(Medical_Treatment) {
             timeTillMaxEffect = 5;
             dose = 1;
             opioidDepression = 0.11;
-            viscosityChange = -10;
+            viscosityChange = -5;
             respiratoryRate = -0.1;
             contractility = -0.1;
             weightBased = "true";
@@ -665,9 +665,9 @@ class ACE_ADDON(Medical_Treatment) {
             timeInSystem = 600;
             timeTillMaxEffect = 30;
             dose = 1;
-            viscosityChange = -15;
-            opioidRelief = 1.2;
-            respiratoryRate = -0.2;
+            viscosityChange = -7;
+            opioidRelief = 1.1;
+            respiratoryRate = -0.1;
             weightBased = "true";
             weightDose = 20;
             maximumEffectiveDose = 30;
@@ -691,7 +691,7 @@ class ACE_ADDON(Medical_Treatment) {
             timeInSystem = 180;
             timeTillMaxEffect = 15;
             dose = 1; 
-            respiratoryRate = 0.15;
+            respiratoryRate = 0.10;
             maximumEffectiveDose = 30;
         };
         class syringe_Alteplase_5ml_30 {
@@ -716,7 +716,7 @@ class ACE_ADDON(Medical_Treatment) {
             timeInSystem = 300;
             timeTillMaxEffect = 60;
             dose = 1;
-            viscosityChange = -10;
+            viscosityChange = -6;
             onOverDose = "";
             opioidRelief = 1.1;
             opioidEffect = 0.15;
@@ -735,9 +735,9 @@ class ACE_ADDON(Medical_Treatment) {
             timeTillMaxEffect = 30;
             dose = 1;
             viscosityChange = 10;
-            opioidEffect = 0.12;
-            opioidDepression = 0.12;
-            respiratoryRate = 0.3;
+            opioidEffect = 0.06;
+            opioidDepression = 0.06;
+            respiratoryRate = 0.15;
             weightBased = "true";
             weightDose = 20;
             maximumEffectiveDose = 30;
@@ -775,40 +775,40 @@ class ACE_ADDON(Medical_Treatment) {
             timeInSystem = 600;
             timeTillMaxEffect = 30;
             dose = 1;
-            viscosityChange = -15;
+            viscosityChange = -10;
             opioidRelief = 1.1;
-            respiratoryRate = -0.2;
+            respiratoryRate = -0.1;
             weightBased = "true";
             weightDose = 20;
             maximumEffectiveDose = 30;
         };
         class syringe_TXA {
-            maxDose = 60;
-            maxDoseDeviation = 20;
+            maxDose = 40;
+            maxDoseDeviation = 10;
             incompatibleMedication[] = {};
             onOverDose = "";
         };
         class syringe_EACA {
-            maxDose = 60;
-            maxDoseDeviation = 20;
+            maxDose = 40;
+            maxDoseDeviation = 10;
             incompatibleMedication[] = {};
             onOverDose = "";
         };
         class syringe_Epinephrine {
-            maxDose = 90;
-            maxDoseDeviation = 30;
+            maxDose = 40;
+            maxDoseDeviation = 10;
             incompatibleMedication[] = {};
             onOverDose = ""; 
         };
         class syringe_Norepinephrine {
-            maxDose = 60;
-            maxDoseDeviation = 30;
+            maxDose = 30;
+            maxDoseDeviation = 10;
             incompatibleMedication[] = {};
             onOverDose = "";
         };
         class syringe_Phenylephrine {
-            maxDose = 60;
-            maxDoseDeviation = 30;
+            maxDose = 40;
+            maxDoseDeviation = 20;
             incompatibleMedication[] = {};
             onOverDose = "";
         };
@@ -825,14 +825,14 @@ class ACE_ADDON(Medical_Treatment) {
             onOverDose = "";
         };
         class syringe_Amiodarone {
-            maxDose = 60;
-            maxDoseDeviation = 30;
+            maxDose = 30;
+            maxDoseDeviation = 10;
             incompatibleMedication[] = {};
             onOverDose = "";
         };
         class syringe_Etomidate {
-            maxDose = 90;
-            maxDoseDeviation = 30;
+            maxDose = 60;
+            maxDoseDeviation = 20;
             incompatibleMedication[] = {};
             onOverDose = "";
         };

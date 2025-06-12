@@ -239,7 +239,7 @@ if (GVAR(AMS_Enabled)) then {
         };
 
         if (_medicationName in ["Lorazepam","Etomidate"]) then {
-        [format ["kat_pharma_%1Local", toLower _medicationName], [_patient, _bodyPart, _dose], _patient] call CBA_fnc_targetEvent;
+        [format ["kat_pharma_%1Local", toLower _medicationName], [_patient, _dose], _patient] call CBA_fnc_targetEvent;
         };
 
         if (_medicationName in ["Ketamine","Atropine","Adenosine","Alteplase","Lidocaine"]) then {

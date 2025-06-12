@@ -49,7 +49,6 @@ _syringeListBox ctrlAddEventHandler ["LBSelChanged", {
             };
         };
     } forEach _inventory;
-    diag_log str _found;
 
     private _listBox = findDisplay 38580 displayCtrl 71305;
     lbClear _listBox;
