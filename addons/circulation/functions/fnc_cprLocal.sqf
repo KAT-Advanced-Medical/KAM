@@ -83,39 +83,19 @@ private _fnc_advRhythm = {
     {
         case "Epinephrine":
         {
-            _epiBoost = 1.2;
-        };
-        case "EpinephrineIV":
-        {
-            _epiBoost = 1.5;
-        };
-        case "Amiodarone":
-        {
-            _amiBoost = _amiBoost + (random [8,14,20]);
+            _epiBoost = _epiBoost + (1.1 * (_dose / 10));
         };
         case "Lidocaine":
         {
-            _lidoBoost = _lidoBoost + 8;
+            _lidoBoost = _lidoBoost + (6 * (_dose / 10));
         };
-        case "epinephrineIV":
+        case "Amiodarone":
         {
-            _epiBoost = _epiBoost + (1.1 * (1 + (_dose / 5)));
-        };
-        case "lidocaine":
-        {
-            _lidoBoost = _lidoBoost + (6 * (1 + (_dose / 5)));
-        };
-        case "amiodarone":
-        {
-            _amiBoost = _amiBoost + ((random [6,10,16]) * (1 + (_dose / 5)));
+            _amiBoost = _amiBoost + ((random [6,10,16]) * (_dose / 10));
         };
         case "Nitroglycerin":
         {
-            _nitroEffect = _nitroEffect + 1;
-        };
-        case "nitroglycerin":
-        {
-            _nitroEffect = (_nitroEffect + 1) * (1 + (_dose / 5));
+            _nitroEffect = (_nitroEffect + (1 * (_dose / 10)));
         };
     };
 } forEach (_patient getVariable [QACEGVAR(medical,medications), []]);
