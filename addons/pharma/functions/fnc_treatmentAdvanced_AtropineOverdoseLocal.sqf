@@ -49,7 +49,7 @@ params ["_patient"];
         [_idPFH] call CBA_fnc_removePerFrameHandler;
         };
         private _medStack = [_patient, false] call ACEFUNC(medical_treatment,getAllMedicationCount);
-        private _medIndex = _medStack find "atropine";
+        private _medIndex = _medStack find "Atropine";
         private _hasMed = false;
 
         if (_medIndex > -1) then {

@@ -19,7 +19,7 @@ if (_classname isEqualTo "ACE_adenosine") exitWith {};
 private _cardiacRhythm = _patient getVariable [QEGVAR(circulation,cardiacArrestType), 0];
 _patient setVariable [QEGVAR(circulation,cardiacArrestType), 1];
 private _medStack = _patient call ACEFUNC(medical_treatment,getAllMedicationCount);
-private _medsToCheck = ["amiodarone"];
+private _medsToCheck = ["Amiodarone"];
 private _amiodaroneEffectiveness = 0;
 {
     private _medName = toLower (_x select 0);
