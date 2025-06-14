@@ -45,7 +45,7 @@
     "SLIDER",
     LLSTRING(SETTING_occlusion_repeatTimer),
     [CBA_SETTINGS_CAT, ELSTRING(GUI,SubCategory_Basic)],
-    [1, 1200, 60, 0],
+    [1, 1200, 30, 0],
     true
 ] call CBA_fnc_addSetting;
 
