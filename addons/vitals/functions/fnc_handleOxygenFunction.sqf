@@ -76,8 +76,17 @@ if (IN_CRDC_ARRST(_unit)) then {
     private _scaleFactor = 1 - (0.03 * _excessRR);  // reduces ~3% per breath over 25
     _respiratoryDepth = [(_baseRespiratoryDepth * (_scaleFactor max 0.5)), 10] select (_unit getVariable [QEGVAR(breathing,BVMInUse), false]); // never drops below 50% of base
     };
-    
-    _actualVentilation = _tidalVolume * _respiratoryRate;
+
+    // Obstructed airway reduces effective ventilation
+    private _airwayResistance = 1;
+    if (selectMax (_unit getVariable [QEGVAR(airway,obstruction), [0, 0, 0]]) > 0) then {
+        _airwayResistance = 0.2;
+    };
+    if (selectMax (_unit getVariable [QEGVAR(airway,occlusion), [0, 0, 0]]) > 0) then {
+        private _occlusion = selectMax (_unit getVariable [QEGVAR(airway,occlusion), [0, 0, 0]]);
+        _airwayResistance = linearConversion [0, 6, _occlusion, 1, 0.2, true];
+    };
+    _actualVentilation = (_tidalVolume * _respiratoryRate) * _airwayResistance;
 };
 
 private _paco2 = 40;
@@ -103,7 +112,7 @@ if (EGVAR(pharma,kidneyAction)) then {
 
 // Fractional Oxygen when breathing normal air is 0.21, 1 when breathing 100% Oxygen, and 0 when no air is being brought into the lungs
 private _fio2 = switch (true) do {
-    case ((_unit getVariable [QEGVAR(airway,occluded), false]) || (_unit getVariable [QEGVAR(airway,obstruction), false])): { 
+    case ((selectMax (_unit getVariable [QEGVAR(airway,occlusion), [0, 0, 0]]) == 6) || (((_unit getVariable [QGVAR(obstruction), [0, 0, 0]]) findIf { _x != 0 }) != -1)): { 
         [0, DEFAULT_FIO2] select ((_unit getVariable [QEGVAR(airway,recovery), false]) || (_unit getVariable [QEGVAR(airway,overstretch), false])) 
     };
     case ((_respiratoryRate == 0) && (EGVAR(breathing,SpO2_perfusion))): { 0 };
@@ -119,12 +128,27 @@ private _pALVo2 = ((_fio2 * (_baroPressure - 47)) - (_paco2 / _anerobicPressure)
 // PaO2 cannot be higher than PALVO2 and comes from ventilation shortage multipled by RBC volume
 private _pao2 = (DEFAULT_PAO2 - ((DEFAULT_ECB / ((GET_BODY_FLUID(_unit) select 0) max 500)) * ((_demandVentilation - _actualVentilation) / 120))) min _pALVo2;
 
+private _airwayO2TransferMultiplier = 1;
+if (selectMax (_unit getVariable [QEGVAR(airway,occlusion), [0, 0, 0]]) > 0) then {
+    private _occlusion = selectMax (_unit getVariable [QEGVAR(airway,occlusion), [0, 0, 0]]);
+    _airwayO2TransferMultiplier = linearConversion [0, 6, _occlusion, 1, 0.2, true];
+};
+if (selectMax (_unit getVariable [QEGVAR(airway,obstruction), [0, 0, 0]]) > 0) then {
+    _airwayO2TransferMultiplier = 0.5;
+};
+_pao2 = ((_pao2 * _airwayO2TransferMultiplier) min _pALVo2);
+
+
 private _arrestPerfusion = [1, (1 * EGVAR(breathing,SpO2_PerfusionMultiplier))] select ((IN_CRDC_ARRST(_unit)) && (EGVAR(breathing,SpO2_perfusion)));
 // PaO2 moves in controlled steps to prevent hard movements when Ventilation Demand spikes
 _pao2 = if (_previousCyclePao2 != _pao2) then { ([ (_previousCyclePao2 - ((PAO2_MAX_CHANGE * EGVAR(breathing,SpO2_MultiplyNegative) * _arrestPerfusion) * _deltaT)) , (_previousCyclePao2 + ((PAO2_MAX_CHANGE * EGVAR(breathing,SpO2_MultiplyPositive)) * _deltaT))] select ((_previousCyclePao2 - _pao2) < 0)) } else { _pao2 };
 
 // Oxy-Hemo Dissociation Curve, driven by PaO2 with shaping done by pH 
 private _o2Sat = ((_pao2 max 1)^2.7 / ((25 - (((_pH / DEFAULT_PH) - 1) * 150))^2.7 + _pao2^2.7)) min 0.999;
+
+if (_unit getVariable [QEGVAR(airway,overstretch), false]) then {
+    _o2Sat = _o2Sat * 0.95;
+};
 
 _unit setVariable [VAR_BREATHING_RATE, (_respiratoryRate max 0), _syncValues];
 _unit setVariable [VAR_BLOOD_GAS, [_paco2, _pao2, _o2Sat, 24, _pH, _etco2], _syncValues];
