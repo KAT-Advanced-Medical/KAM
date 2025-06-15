@@ -20,9 +20,8 @@ params ["_unit"];
 //Other mods can utilise KAT_Obstruction_Exclussion variable to prevent obstructions from happening
 if !(GVAR(enable)) exitWith {};
 
-if (random(100) < GVAR(probability_obstruction)) then {
-    private _level = selectRandom [0, 1];
-    private _obstruction = _unit getVariable [QGVAR(obstruction), [0, 0, 0]] select _level;
-    _obstruction set [_level, ((_obstruction + 1) min 2)];
+if (random(100) < GVAR(airwayObstructionChance)) then {
+    private _obstruction = _unit getVariable [QGVAR(obstruction), [0, 0, 0]] select 0;
+    _obstruction set [0, ((_obstruction + 1) min 2)];
     _unit setVariable [QGVAR(obstruction), _obstruction, true];
 };

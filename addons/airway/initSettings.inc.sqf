@@ -21,7 +21,7 @@
 
 // airway Injuries probability obstruction
 [
-    QGVAR(probability_obstruction),
+    QGVAR(airwayObstructionChance),
     "SLIDER",
     [LLSTRING(SETTING_obstruction),LLSTRING(SETTING_obstruction_DESC)],
     [CBA_SETTINGS_CAT, ELSTRING(GUI,SubCategory_Basic)],
@@ -29,13 +29,49 @@
     true
 ] call CBA_fnc_addSetting;
 
+[
+    QGVAR(airwayObstructionDamageThreshold),
+    "SLIDER",
+    [LLSTRING(SETTING_obstructionDamageThreshold),LLSTRING(SETTING_obstructionDamageThreshold_DESC)],
+    [CBA_SETTINGS_CAT, ELSTRING(GUI,SubCategory_Basic)],
+    [0, 1, 0.2, 2],
+    true
+] call CBA_fnc_addSetting;
+
 // airway Injuries probability occluded
 [
-    QGVAR(probability_occluded),
+    QGVAR(airwayOcclusionChance),
     "SLIDER",
     [LLSTRING(SETTING_occluded),LLSTRING(SETTING_occluded_DESC)],
     [CBA_SETTINGS_CAT, ELSTRING(GUI,SubCategory_Basic)],
-    [0, 100, 10, 0],
+    [0, 100, 15, 0],
+    true
+] call CBA_fnc_addSetting;
+
+[
+    QGVAR(airwayOcclusionDamageThreshold),
+    "SLIDER",
+    [LLSTRING(SETTING_occlusionDamageThreshold),LLSTRING(SETTING_occlusionDamageThreshold_DESC)],
+    [CBA_SETTINGS_CAT, ELSTRING(GUI,SubCategory_Basic)],
+    [0, 1, 0.1, 2],
+    true
+] call CBA_fnc_addSetting;
+
+[
+    QGVAR(catastrophicAirwayChance),
+    "SLIDER",
+    [LLSTRING(SETTING_catastrophicAirwayChance),LLSTRING(SETTING_catastrophicAirwayChance_DESC)],
+    [CBA_SETTINGS_CAT, ELSTRING(GUI,SubCategory_Basic)],
+    [0, 100, 2, 0],
+    true
+] call CBA_fnc_addSetting;
+
+[
+    QGVAR(catastrophicAirwayDamageThreshold),
+    "SLIDER",
+    [LLSTRING(SETTING_catastrophicAirwayDamageThreshold),LLSTRING(SETTING_catastrophicAirwayDamageThreshold_DESC)],
+    [CBA_SETTINGS_CAT, ELSTRING(GUI,SubCategory_Basic)],
+    [0, 1, 0.3, 2],
     true
 ] call CBA_fnc_addSetting;
 

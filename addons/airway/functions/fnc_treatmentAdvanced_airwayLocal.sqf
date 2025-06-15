@@ -19,17 +19,19 @@
  */
 
 params ["_medic", "_patient","_classname", "_usedItem"];
+private _occlusion = ((_patient getVariable [QGVAR(occlusion), [0, 0, 0]]) findIf { _x > 2 }) != -1;
+private _obstruction = ((_patient getVariable [QGVAR(obstruction), [0, 0, 0]]) findIf { _x != 0 }) != -1;
 
-if (_patient getVariable [QGVAR(occluded), false]) exitWith {
+
+if (_occlusion || _obstruction)  exitWith {
     [QGVAR(airwayFeedback), [_medic, LLSTRING(AirwayStatus_NotClearForItem)], _medic] call CBA_fnc_targetEvent;
     [_medic, _usedItem] call ACEFUNC(common,addToInventory);
 };
 
 _patient setVariable [QGVAR(airway), true, true];
-_patient setVariable [QGVAR(obstruction), false, true];
 _patient setVariable [QGVAR(airway_item), _classname, true];
 
-if (_classname isEqualTo "Larynxtubus") then {
+if (_classname in ["Larynxtubus"]) then {
     private _currentMonitors = _patient getVariable [QEGVAR(breathing,etco2Monitor), []];
     _currentMonitors pushBack _classname;
     _patient setVariable [QEGVAR(breathing,etco2Monitor), _currentMonitors, true];

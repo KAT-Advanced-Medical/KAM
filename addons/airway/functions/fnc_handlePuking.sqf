@@ -19,31 +19,48 @@ params ["_unit"];
 
 //Other mods can utilise KAT_Occlusion_Exclusion variable to prevent occlusions from happening
 if ((_unit getVariable ["kat_pukeActive_PFH", false]) || !(GVAR(enable))) exitWith {};
-_unit setVariable ["kat_pukeActive_PFH", true];
 
-
-[{
-    params ["_args", "_idPFH"];
+private _args = ["_unit"];
+private _recursiveCode = {
+    params ["_args", "_recursiveCode"];
     _args params ["_unit"];
-
     private _isUnconscious = _unit getVariable ["ACE_isUnconscious", false];
-    private _recovery = _unit getVariable [QGVAR(recovery), false];
-
-    if ((!(alive _unit)) || !_isUnconscious) exitWith {
-        [_idPFH] call CBA_fnc_removePerFrameHandler;
+    private _alive = alive _unit;
+    if !(_alive && _isUnconscious) exitWith {
         _unit setVariable ["kat_pukeActive_PFH", nil];
     };
+    private _pukeMult = 1;
     private _ondansetronCount = ([_unit, "Ondansetron", false] call ACEFUNC(medical_status,getMedicationCount)) select 1;
-    if (GVAR(occlusion_cooldownPeriod) > 0 && {(_unit getVariable [QGVAR(clearedTime), 0] > 0) && ((_unit getVariable [QGVAR(clearedTime), 0]) + GVAR(occlusion_cooldownPeriod)) > CBA_missionTime && (_unit getVariable [QGVAR(airway_item), ""] isEqualTo "Larynxtubus")} && (_ondansetronCount > 0.6)) exitWith {};
+    if (_ondansetronCount > 0.3) then {
+        _pukeMult = 2 + _ondansetronCount
+    };
+    if (_unit getVariable [QGVAR(airway_item), ""] isEqualTo "Larynxtubus") then {
+        _pukeMult = _pukeMult * 4
+    };
 
-    if (random(100) <= GVAR(probability_occluded)) then {
+    if (random (100) <= GVAR(probability_occluded)) then {
         private _occlusionState = _unit getVariable [QGVAR(occlusion), [0, 0, 0]];
-        _occlusionState set [0, ((_occlusion select 0) + floor random [1, 3, 5]) min 6];
-        _occlusionState set [1, ((_occlusion select 1) + floor random [1, 3, 5]) min 6];
-        _occlusionState set [2, ((_occlusion select 2) + floor random [1, 3, 5]) min 6];
+        _occlusionState set [0, ((_occlusionState select 0) + floor random [1, 3, 5]) min 6];
+        _occlusionState set [1, ((_occlusionState select 1) + floor random [1, 3, 5]) min 6];
+        _occlusionState set [2, ((_occlusionState select 2) + floor random [1, 3, 5]) min 6];
+
+        for "_i" from 0 to 2 do {
+            [_unit, _i] call FUNC(airwayPFH);
+        };
+
         _unit setVariable [QGVAR(occlusion), _occlusionState, true];
+
         if (GVAR(checkbox_puking_sound)) then {
-            playSound3D [selectRandom [QPATHTOF_SOUND(sounds\puking1.wav),QPATHTOF_SOUND(sounds\puking2.wav),QPATHTOF_SOUND(sounds\puking3.wav)], _unit, false, getPosASL _unit, 8, 1, 15];
+            private _sound = selectRandom [
+                QPATHTOF_SOUND(sounds\puking1.wav),
+                QPATHTOF_SOUND(sounds\puking2.wav),
+                QPATHTOF_SOUND(sounds\puking3.wav)
+            ];
+            playSound3D [_sound, _unit, false, getPosASL _unit, 8, 1, 15];
         };
     };
-}, GVAR(occlusion_repeatTimer), [_unit]] call CBA_fnc_addPerFrameHandler;
+    [{_recursiveCode}, [_args, _recursiveCode], (GVAR(occlusion_repeatTimer) * _pukeMult * random [0.8, 1, 1.3])] call CBA_fnc_waitAndExecute;
+};
+[_args, _recursiveCode] call _recursiveCode;
+
+
