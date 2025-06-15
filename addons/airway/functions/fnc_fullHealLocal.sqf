@@ -25,6 +25,7 @@ _patient setVariable [QGVAR(surgicalAirway), false, true];
 _patient setVariable [QGVAR(catastrophicAirway), [false, false], true];
 _patient setVariable [QGVAR(obstruction), [0, 0, 0], true];
 _patient setVariable [QGVAR(occlusion), [0, 0, 0], true];
+_patient setVariable [QGVAR(occlusionMitigation), [false, false, false], true];
 _patient setVariable [QGVAR(overstretch), false, true];
 _patient setVariable [QGVAR(recovery), false, true];
 _patient setVariable [QGVAR(wasOccluded), [0, 0, 0]];

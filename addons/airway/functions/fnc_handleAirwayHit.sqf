@@ -42,12 +42,14 @@ switch (_bodypart) do {
                 private _obstruction = _unit getVariable [QGVAR(obstruction), [0, 0, 0]] select _level;
                 _obstruction set [_level, ((_obstruction + 1) min 2)];
                 _unit setVariable [QGVAR(obstruction), _obstruction, true];
+                [_unit, true] call ACEFUNC(medical,setUnconscious);
                 };
             if ((floor (random 100) < GVAR(catastrophicAirwayChance)) && (_engineDamage > GVAR(catastrophicAirwayDamageThreshold))) then {
                 private _level = selectRandom [0, 1];
-                private _catastrophic = _patient getVariable [QGVAR(catastrophicAirway), [false, false]]; select _level;
+                private _catastrophic =  _unit getVariable [QGVAR(catastrophicAirway), [false, false]] select _level;
                 _catastrophic set [_level, true];
                 _unit setVariable [QGVAR(catastrophicAirway), _catastrophic, true];
+                [_unit, true] call ACEFUNC(medical,setUnconscious);
                 };
             };
         case (_bodyPart == "Neck"): {
@@ -63,6 +65,7 @@ switch (_bodypart) do {
                 private _obstruction = _unit getVariable [QGVAR(obstruction), [0, 0, 0]] select _level;
                 _obstruction set [_level, ((_obstruction + 1) min 2)];
                 _unit setVariable [QGVAR(obstruction), _obstruction, true];
+                [_unit, true] call ACEFUNC(medical,setUnconscious);
                 };
             };
         default {};
