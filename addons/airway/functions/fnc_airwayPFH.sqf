@@ -54,6 +54,6 @@ _unit setVariable ["kat_occlusion_PFH", true];
                         _unit setVariable [QGVAR(occlusion), _occlusionState, true];
                     };
                 };
-        }, (GVAR(deterioratingOcclusion_interval) * random [0.6, 1, 1.7]), [_unit, _level]] call CBA_fnc_addPerFrameHandler;
+        }, (GVAR(deterioratingAirway_interval) * random [0.8, 1, 1.3]), [_unit, _level]] call CBA_fnc_addPerFrameHandler;
     };
 }, [_unit, _level], GVAR(deterioratingOcclusion_interval)] call CBA_fnc_waitAndExecute;

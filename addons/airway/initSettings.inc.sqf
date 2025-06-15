@@ -75,13 +75,32 @@
     true
 ] call CBA_fnc_addSetting;
 
+[
+    QGVAR(deterioratingAirways_chance),
+    "SLIDER",
+    [LLSTRING(SETTING_deterioratingAirways_chance), LLSTRING(SETTING_deterioratingAirways_chance_DESC)],
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_ThoraxInjuries)],
+    [0, 100, 25, 0],
+    true
+] call CBA_fnc_addSetting;
+
+//Deteriorating Airways countdown
+[
+    QGVAR(deterioratingAirways_interval),
+    "SLIDER",
+    [LLSTRING(SETTING_deterioratingAirways_interval), LLSTRING(SETTING_deterioratingAirways_interval_Desc)],
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_ThoraxInjuries)],
+    [1, 1200, 30, 0],
+    true
+] call CBA_fnc_addSetting;
+
 // Occlusion repeat timer
 [
     QGVAR(occlusion_repeatTimer),
     "SLIDER",
     LLSTRING(SETTING_occlusion_repeatTimer),
     [CBA_SETTINGS_CAT, ELSTRING(GUI,SubCategory_Basic)],
-    [1, 1200, 30, 0],
+    [1, 1200, 60, 0],
     true
 ] call CBA_fnc_addSetting;
 
