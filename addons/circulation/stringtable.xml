@@ -2595,6 +2595,9 @@
             <Finnish>Pulssittoman sähköisen toiminnan mahdollisuus</Finnish>
             <Dutch>PEA kans</Dutch>
         </Key>
+        <Key ID="STR_KAT_Circulation_SETTING_AdvRhythm_PEAEnabled">
+            <English>Enable PEA</English>
+        </Key>
         <Key ID="STR_KAT_Circulation_SETTING_AdvRhythm_VTChance">
             <English>VT Chance</English>
             <Czech>Šance VT</Czech>
