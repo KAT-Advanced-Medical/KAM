@@ -1233,6 +1233,33 @@ class ACE_Medical_Treatment_Actions {
         displayName = KATPUSHCSTRING(morphineIV,10ml,30);
         displayNameProgress = KATPUSHINGCSTRING(morphineIV,10ml,30);
     };
+    class syringe_Ondansetron_5ml_10: syringe_EACA_5ml_10 {
+        medicRequired = QGVAR(medLvl_ondansetron);
+        treatmentTime = QGVAR(treatmentTime_ondansetron);
+        items[] = {"kat_syringe_ondansetron_5ml_10"};
+        displayName = KATPUSHCSTRING(ondansetron,5ml,10);
+        displayNameProgress = KATPUSHINGCSTRING(ondansetron,5ml,10);
+    };
+    class syringe_Ondansetron_5ml_16: syringe_Ondansetron_5ml_10 {
+        items[] = {"kat_syringe_ondansetron_5ml_16"};
+        displayName = KATPUSHCSTRING(ondansetron,5ml,16);
+        displayNameProgress = KATPUSHINGCSTRING(ondansetron,5ml,16);
+    };
+    class syringe_Ondansetron_5ml_20: syringe_Ondansetron_5ml_10 {
+        items[] = {"kat_syringe_ondansetron_5ml_20"};
+        displayName = KATPUSHCSTRING(ondansetron,5ml,20);
+        displayNameProgress = KATPUSHINGCSTRING(ondansetron,5ml,20);
+    };
+    class syringe_Ondansetron_5ml_26: syringe_Ondansetron_5ml_10 {
+        items[] = {"kat_syringe_ondansetron_5ml_26"};
+        displayName = KATPUSHCSTRING(ondansetron,5ml,26);
+        displayNameProgress = KATPUSHINGCSTRING(ondansetron,5ml,26);
+    };
+    class syringe_Ondansetron_5ml_30: syringe_Ondansetron_5ml_10 {
+        items[] = {"kat_syringe_ondansetron_5ml_30"};
+        displayName = KATPUSHCSTRING(ondansetron,5ml,30);
+        displayNameProgress = KATPUSHINGCSTRING(ondansetron,5ml,30);
+    };
     class CheckVein: CheckPulse {
         displayName = CSTRING(CheckVein_DisplayName);
         displayNameProgress = CSTRING(CheckVein_DisplayNameProgress);

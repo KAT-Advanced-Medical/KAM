@@ -4519,6 +4519,51 @@
         <Key ID="STR_KAT_Pharma_SyringeDisplay_morphineIV_5ml_30">
             <English>5ml Syringe / 5mg(100kg) Morphine</English>
         </Key>
+        <Key ID="STR_KAT_Pharma_Push_ondansetron_5ml_10">
+            <English>Push 3mg Ondansetron</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_Pushing_ondansetron_5ml_10">
+            <English>Pushing 3mg Ondansetron</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_SyringeDisplay_ondansetron_5ml_10">
+            <English>5ml Syringe / 3mg(60kg) Ondansetron</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_Push_ondansetron_5ml_16">
+            <English>Push 3.5mg Ondansetron</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_Pushing_ondansetron_5ml_16">
+            <English>Pushing 3.5mg Ondansetron</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_SyringeDisplay_ondansetron_5ml_16">
+            <English>5ml Syringe / 3.5mg(70kg) Ondansetron</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_Push_ondansetron_5ml_20">
+            <English>Push 4mg Ondansetron</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_Pushing_ondansetron_5ml_20">
+            <English>Pushing 4mg Ondansetron</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_SyringeDisplay_ondansetron_5ml_20">
+            <English>5ml Syringe / 4mg(80kg) Ondansetron</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_Push_ondansetron_5ml_26">
+            <English>Push 4.5mg Ondansetron</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_Pushing_ondansetron_5ml_26">
+            <English>Pushing 4.5mg Ondansetron</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_SyringeDisplay_ondansetron_5ml_26">
+            <English>5ml Syringe / 4.5mg(90kg) Ondansetron</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_Push_ondansetron_5ml_30">
+            <English>Push 5mg Ondansetron</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_Pushing_ondansetron_5ml_30">
+            <English>Pushing 5mg Ondansetron</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_SyringeDisplay_ondansetron_5ml_30">
+            <English>5ml Syringe / 5mg(100kg) Ondansetron</English>
+        </Key>
         <Key ID="STR_KAT_Pharma_Push_morphineIV_10ml_10">
             <English>Inject 3mg Morphine</English>
         </Key>
@@ -5601,6 +5646,21 @@
         </Key>
         <Key ID="STR_KAT_Pharma_SyringeDisplay_salineIV_5ml_30">
             <English>5ml Syringe / Saline_Flush Syringe</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_SubCategory_Ondansetron">
+            <English>Ondansetron Settings</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_Ondansetron_DescShort">
+            <English>Ondansetron, For relief of nausea</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_Ondansetron_displayName">
+            <English>Ondansetron</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_medLvl_Ondansetron">
+            <English>Medical level required for Ondansetron</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_treatmentTime_Ondansetron">
+            <English>Treatment time for Ondansetron</English>
         </Key>
     </Package>
 </Project>

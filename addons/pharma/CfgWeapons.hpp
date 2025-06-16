@@ -311,6 +311,17 @@ class CfgWeapons {
             mass = 0.5;
         };
     };
+    class kat_ondansetron: ACE_ItemCore {
+        scope = 2;
+        displayName = CSTRING(Ondansetron_displayName);
+        picture = QPATHTOF(ui\icon_Ondansetron.paa);
+        model = "\A3\Structures_F_EPA\Items\Medical\Painkillers_F.p3d";
+        descriptionShort = CSTRING(Ondansetron_DescShort);
+        ACE_isMedicalItem = 1;
+        class ItemInfo: CBA_MiscItem_ItemInfo {
+            mass = 0.5;
+        };
+    };
     class kat_adenosineIV: ACE_ItemCore {
         scope = 2;
         displayName = CSTRING(AdenosineIV_displayName);
@@ -1010,6 +1021,21 @@ class CfgWeapons {
     };
     class kat_syringe_etomidate_5ml_30: kat_syringe_etomidate_5ml_10 {
         displayName = KATDISPLAYCSTRING(etomidate,5ml,30);
+    };
+    class kat_syringe_ondansetron_5ml_10: kat_syringe_txa_5ml_10 {
+        displayName = KATDISPLAYCSTRING(ondansetron,5ml,10);
+    };
+    class kat_syringe_ondansetron_5ml_16: kat_syringe_ondansetron_5ml_10 {
+        displayName = KATDISPLAYCSTRING(ondansetron,5ml,16);
+    };
+    class kat_syringe_ondansetron_5ml_20: kat_syringe_ondansetron_5ml_10 {
+        displayName = KATDISPLAYCSTRING(ondansetron,5ml,20);
+    };
+    class kat_syringe_ondansetron_5ml_26: kat_syringe_ondansetron_5ml_10 {
+        displayName = KATDISPLAYCSTRING(ondansetron,5ml,26);
+    };
+    class kat_syringe_ondansetron_5ml_30: kat_syringe_ondansetron_5ml_10 {
+        displayName = KATDISPLAYCSTRING(ondansetron,5ml,30);
     };
     class kat_syringe_morphineIV_5ml_10: kat_syringe_txa_5ml_10 {
         displayName = KATDISPLAYCSTRING(morphineIV,5ml,10);

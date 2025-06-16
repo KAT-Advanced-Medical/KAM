@@ -45,6 +45,7 @@ class ACE_ADDON(Medical_Treatment) {
         weightDoseMax = 30; //100kg
         //maximum dose before medication effects are reduced
         maximumEffectiveDose = 30;
+        nauseaMult = 1;
 
 
         class Epinephrine {
@@ -85,11 +86,12 @@ class ACE_ADDON(Medical_Treatment) {
             timeInSystem = 300;
             timeTillMaxEffect = 60;
             dose = 1;
-            maxDose = 20;
-            maxDoseDeviation = 10;
+            maxDose = 2;
+            maxDoseDeviation = 1;
             incompatibleMedication[] = {};
             viscosityChange = -0;
-            maximumEffectiveDose = 20;
+            maximumEffectiveDose = 2;
+            nauseaMult = 1.2;
         };
         class MorphineIV {
             painReduce = 0.8;
@@ -423,6 +425,7 @@ class ACE_ADDON(Medical_Treatment) {
             onOverDose = "";
             opioidEffect = 0.2;
             maximumEffectiveDose = 10;
+            nauseaMult = 0.2;
         };
         class Caffeine {
             painReduce = 0;
@@ -467,6 +470,18 @@ class ACE_ADDON(Medical_Treatment) {
             onOverDose = "";
             maxRelief = 0.6;
             maximumEffectiveDose = 30;
+        };
+        class Ondansetron {
+            painReduce = 0.0;
+            hrIncreaseLow[] = {0, 0};
+            hrIncreaseNormal[] = {0, 0};
+            hrIncreaseHigh[] = {0, 0};
+            timeInSystem = 300;
+            timeTillMaxEffect = 15;
+            dose = 1;
+            viscosityChange = -0;
+            maximumEffectiveDose = 20;
+            nauseaMult = -0.4;
         };
         class syringe_TXA_5ml {
             painReduce = 0;
@@ -544,6 +559,7 @@ class ACE_ADDON(Medical_Treatment) {
             weightBased = "true";
             weightDose = 20;
             maximumEffectiveDose = 30;
+            nauseaMult = 0.4;
         };
         class syringe_Ketamine_5ml {
             painReduce = 0.5;
@@ -563,6 +579,7 @@ class ACE_ADDON(Medical_Treatment) {
             weightDoseMin = 10;
             weightDoseMax = 20;
             maximumEffectiveDose = 30;
+            nauseaMult = 0.3;
         };
         class syringe_Nalbuphine_5ml {
             painReduce = 0.5;
@@ -579,6 +596,7 @@ class ACE_ADDON(Medical_Treatment) {
             weightBased = "true";
             weightDose = 20;
             maximumEffectiveDose = 30;
+            nauseaMult = 0.3;
         };
         class syringe_AtropineIV_5ml {
             painReduce = 0;
@@ -671,6 +689,7 @@ class ACE_ADDON(Medical_Treatment) {
             weightBased = "true";
             weightDose = 20;
             maximumEffectiveDose = 30;
+            nauseaMult = 0.3;
         };
         class syringe_AdenosineIV_5ml {
             painReduce = 0;
@@ -725,6 +744,7 @@ class ACE_ADDON(Medical_Treatment) {
             weightBased = "true";
             weightDose = 20;
             maximumEffectiveDose = 30;
+            nauseaMult = 0.3;
         };
         class syringe_Ketamine_10ml {
             painReduce = 0.6;
@@ -741,6 +761,7 @@ class ACE_ADDON(Medical_Treatment) {
             weightBased = "true";
             weightDose = 20;
             maximumEffectiveDose = 30;
+            nauseaMult = 0.3;
         };
         class syringe_Nalbuphine_10ml {
             painReduce = 0.5;
@@ -756,6 +777,7 @@ class ACE_ADDON(Medical_Treatment) {
             weightBased = "true";
             weightDose = 20;
             maximumEffectiveDose = 30;
+            nauseaMult = 0.3;
         };
         class syringe_Lidocaine_10ml {
             painReduce = 0;
@@ -778,6 +800,21 @@ class ACE_ADDON(Medical_Treatment) {
             viscosityChange = -10;
             opioidRelief = 1.1;
             respiratoryRate = -0.1;
+            weightBased = "true";
+            weightDose = 20;
+            maximumEffectiveDose = 30;
+            nauseaMult = 0.3;
+        };
+        class syringe_Ondansetron_5ml {
+            painReduce = 0.0;
+            hrIncreaseLow[] = {0, 0};
+            hrIncreaseNormal[] = {0, 0};
+            hrIncreaseHigh[] = {0, 0};
+            timeInSystem = 300;
+            timeTillMaxEffect = 15;
+            dose = 1;
+            viscosityChange = -0;
+            nauseaMult = -0.4;
             weightBased = "true";
             weightDose = 20;
             maximumEffectiveDose = 30;
@@ -892,6 +929,12 @@ class ACE_ADDON(Medical_Treatment) {
         };
         class syringe_Doxapram {
             maxDose = 30;
+            maxDoseDeviation = 20;
+            incompatibleMedication[] = {};
+            onOverDose = "";
+        };
+        class syringe_Ondansetron {
+            maxDose = 50;
             maxDoseDeviation = 20;
             incompatibleMedication[] = {};
             onOverDose = "";

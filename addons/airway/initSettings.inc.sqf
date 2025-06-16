@@ -58,6 +58,15 @@
 ] call CBA_fnc_addSetting;
 
 [
+    QGVAR(airwayPukeChance),
+    "SLIDER",
+    [LLSTRING(SETTING_pukeChance),LLSTRING(SETTING_pukeChance_DESC)],
+    [CBA_SETTINGS_CAT, ELSTRING(GUI,SubCategory_Basic)],
+    [0, 100, 15, 0],
+    true
+] call CBA_fnc_addSetting;
+
+[
     QGVAR(catastrophicAirwayChance),
     "SLIDER",
     [LLSTRING(SETTING_catastrophicAirwayChance),LLSTRING(SETTING_catastrophicAirwayChance_DESC)],

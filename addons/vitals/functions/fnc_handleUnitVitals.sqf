@@ -98,7 +98,7 @@ TRACE_1("HUV",_adjustments);
 if (_adjustments isNotEqualTo []) then {
     private _deleted = false;
     {
-        _x params ["_medication", "_timeAdded", "_timeTillMaxEffect", "_maxTimeInSystem", "_hrAdjust", "_painAdjust", "_flowAdjust", "_dose", "_alphaFactor", "_opioidRelief", "_opioidEffect", "_opioidDepression", "_respiratoryRate"];
+        _x params ["_medication", "_timeAdded", "_timeTillMaxEffect", "_maxTimeInSystem", "_hrAdjust", "_painAdjust", "_flowAdjust", "_dose", "_alphaFactor", "_opioidRelief", "_opioidEffect", "_opioidDepression", "_respiratoryRate", "_contractility", "_nauseaMult"];
         private _timeInSystem = CBA_missionTime - _timeAdded;
         if (_timeInSystem >= _maxTimeInSystem) then {
             _deleted = true;
@@ -114,6 +114,7 @@ if (_adjustments isNotEqualTo []) then {
             if (_opioidDepression != 0) then {_opioidDepressionAdjustment = _opioidAdjustment + _opioidDepression * _effectRatio; };
             if (_respiratoryRate != 0) then {_respiratoryRateAdjustment = _respiratoryRateAdjustment + _respiratoryRate * _effectRatio; };
             if (_contractility != 0) then {_contractilityAdjustment = _contractilityAdjustment + _contractility * _effectRatio; };
+            if (_nauseaMult != 0) then {_nauseaMultAdjustment = _nauseaMultAdjustment + _nauseaMult * _effectRatio; };
         };
     } forEach _adjustments;
 
@@ -129,7 +130,8 @@ if (_adjustments isNotEqualTo []) then {
 [_unit, _opioidEffectAdjustment, _deltaT, _syncValues] call FUNC(updateOpioidEffect);
 [_unit, _opioidDepressionAdjustment, _deltaT, _syncValues] call FUNC(updateOpioidDepression);
 [_unit, _respiratoryRateAdjustment, _deltaT, _syncValues] call FUNC(updateRespiratoryRate);
-[_unit, _contractility, _deltaT, _syncValues] call FUNC(updateContractility);
+[_unit, _contractilityAdjustment, _deltaT, _syncValues] call FUNC(updateContractility);
+[_unit, _nauseaMultAdjustment, _deltaT, _syncValues] call FUNC(updateNauseaMult);
 [_unit, POISON_DECREASE, _deltaT, _syncValues] call FUNC(handlePoisoning);
 
 private _aceAnFatigue = 0;
