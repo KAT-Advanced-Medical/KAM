@@ -2148,5 +2148,11 @@
         <Key ID="STR_KAT_Airway_SETTING_SUCTION_Interval_DESC">
             <English>Time between Suction attempts</English>
         </Key>
+        <Key ID="STR_KAT_Airway_SETTING_ENABLE_Catastrophic">
+            <English>Catastrophic Airways</English>
+        </Key>
+        <Key ID="STR_KAT_Airway_SETTING_ENABLE_Catastrophic_DESC">
+            <English>Enables Catastrophic Airways, needing surgery to correct</English>
+        </Key>
     </Package>
 </Project>

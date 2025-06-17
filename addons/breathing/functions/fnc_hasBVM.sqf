@@ -17,4 +17,4 @@
 
 params ["_patient"];
 
-_patient getVariable [QGVAR(BVM), false] || _patient getVariable [QGVAR(pocketBVM), false];
+_patient getVariable [QGVAR(attachedBVM), false];

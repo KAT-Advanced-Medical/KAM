@@ -1,5 +1,9 @@
+PREP(attachBVM);
 PREP(attachPersonalOxygen);
 PREP(attachVehicleOxygen);
+PREP(canAttachBVM);
+PREP(canDetachBVM);
+PREP(canUseAttachedBVM);
 PREP(canUseBVM);
 PREP(checkAircraftOxygen);
 PREP(checkBreathing);
@@ -7,6 +11,7 @@ PREP(checkOxygenMask);
 PREP(checkPersonalOxygen);
 PREP(checkPulseOximeter);
 PREP(createTamponade);
+PREP(detachBVM);
 PREP(detachPersonalOxygen);
 PREP(fullHealLocal);
 PREP(gui_updateBodyImage);

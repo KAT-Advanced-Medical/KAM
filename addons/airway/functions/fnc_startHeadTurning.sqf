@@ -99,7 +99,7 @@ GVAR(headTurn_timeOut) = true;
 
                 if (_patient getVariable [QGVAR(occluded), false]) then {
                     if(random 100 < GVAR(probability_headturning)) then {
-                        rivate _occlusionState = _patient getVariable [QGVAR(occlusion), [0, 0, 0]];
+                        private _occlusionState = _patient getVariable [QGVAR(occlusion), [0, 0, 0]];
                             _occlusionState set [0, ((_occlusionState select 0) - 1) max 0];
                             _occlusionState set [1, ((_occlusionState select 1) - 1) max 0];
                             _occlusionState set [2, ((_occlusionState select 2) - 1) max 0];

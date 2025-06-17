@@ -61,7 +61,7 @@ switch (true) do {
                 _unit setVariable [QGVAR(obstruction), _obstruction, true];
                 [_unit, true] call ACEFUNC(medical,setUnconscious);
                 };
-            if ((floor (random 100) < GVAR(catastrophicAirwayChance)) && (_engineDamage > (GVAR(catastrophicAirwayDamageThreshold + _catastrophicAirwayChanceIncrease)))) then {
+            if ((floor (random 100) < GVAR(catastrophicAirwayChance)) && (_engineDamage > (GVAR(catastrophicAirwayDamageThreshold + _catastrophicAirwayChanceIncrease))) && GVAR(CatastrophicAirwaysEnable)) then {
                 private _level = selectRandom [0, 1];
                 private _catastrophic =  _unit getVariable [QGVAR(catastrophicAirway), [false, false]];
                 _catastrophic set [_level, true];

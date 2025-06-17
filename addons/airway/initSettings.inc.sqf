@@ -9,6 +9,15 @@
     true
 ] call CBA_fnc_addSetting;
 
+[
+    QGVAR(CatastrophicAirwaysEnable),
+    "CHECKBOX",
+    [LLSTRING(SETTING_ENABLE_Catastrophic),LLSTRING(SETTING_ENABLE_Catastrophic_DESC)],
+    [CBA_SETTINGS_CAT, ELSTRING(GUI,SubCategory_Basic)],
+    [false],
+    true
+] call CBA_fnc_addSetting;
+
 // Settable action time for CheckAirway
 [
     QGVAR(CheckAirway_time),

@@ -3394,5 +3394,14 @@
         <Key ID="STR_KAT_Breathing_FingerThoracostomy_Log">
             <English>%1 preformed a Finger Thoracostomy</English>
         </Key>
+        <Key ID="STR_KAT_Breathing_AttachBVM">
+            <English>Attach BVM</English>
+        </Key>
+        <Key ID="STR_KAT_Breathing_DetachBVM">
+            <English>Detach BVM</English>
+        </Key>
+        <Key ID="STR_KAT_Breathing_UseAttachedBVM">
+            <English>Use Attached BVM</English>
+        </Key>
     </Package>
 </Project>
