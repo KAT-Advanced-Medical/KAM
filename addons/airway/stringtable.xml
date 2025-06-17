@@ -160,8 +160,8 @@
             <Finnish>Ilmateiden imu</Finnish>
             <Dutch>Luchtweg suctie</Dutch>
         </Key>
-        <Key ID="STR_KAT_Airway_Accuvac_Desc_Short">
-            <English>ACCUVAC is a medical suction device for airway suction with battery drive for mobile use in emergency medicine.</English>
+        <Key ID="STR_KAT_Airway_Accuvac_DESC_Short">
+            <English>ACCUVAC is a medical suction device for Airway suction with battery drive for mobile use in emergency medicine.</English>
             <Czech>ACCUVAC je lékařské odsávací zařízení pro odsávání dýchacích cest s pohonem na baterky pro mobilní použití v pohotovostní medicíně.</Czech>
             <French>L’ACCUVAC est un dispositif médical mobile d’aspiration pour libérer les voies aériennes supérieures des patients en cas d'encombrement ou d'obstruction</French>
             <Spanish>ACCUVAC es un equipo de succión médica para vías aéreas alimentado por una batería, permitiendo movilidad ante una emergencia médica.</Spanish>
@@ -264,7 +264,7 @@
             <Dutch>Luchtweg is vrij</Dutch>
         </Key>
         <Key ID="STR_KAT_Airway_AirwayStatus_NotClearForItem">
-            <English>Item could not be used, airways are not clear</English>
+            <English>Item could not be used, Airways are not clear</English>
             <Czech>Předmět nemohl být použit, dýchací cesty nejsou volné</Czech>
             <French>L'objet n'a pas pu être utilisé, les voies respiratoires ne sont pas dégagées</French>
             <Spanish>No se pudo usar, las vías aéreas no están despejadas</Spanish>
@@ -283,39 +283,10 @@
             <Dutch>Item kon niet gebruikt worden, luchtwegen zijn niet vrij</Dutch>
         </Key>
         <Key ID="STR_KAT_Airway_AirwayStatus_Obstruction">
-            <English>Airway is obstructed, airway management needed</English>
-            <Czech>Dýchací cesty zablokovány, péče nutná</Czech>
-            <French>Voies aériennes obstruées, geste médical nécessaire</French>
-            <Spanish>Las vías respiratorias están obstruidas, es necesario gestionarlas</Spanish>
-            <Italian>Le vie aeree sono ostruite, è necessario un intervento sulle vie aeree</Italian>
-            <Portuguese>Vias aéreas obstruídas, gerenciamento de vias aéreas necessário</Portuguese>
-            <Russian>Дыхательные пути закупорены языком, требуется лечение дыхательных путей</Russian>
-            <German>Atemwege sind blockiert, die Atemwege müssen freigelegt werden</German>
-            <Japanese>気道は閉塞しています、 気道管理が必要です</Japanese>
-            <Chinese>呼吸道阻塞，需要管控呼吸道</Chinese>
-            <Chinesesimp>气道阻塞，需要气道管理</Chinesesimp>
-            <Norwegian>Luftvei er blokkert, behov for luftveishåndtering</Norwegian>
-            <Finnish>Hengitystiet ovat tukossa, hengityshoitoa tarvitaan</Finnish>
-            <Dutch>Luchtweg is geblokkeerd, luchtwegmanagement is vereist</Dutch>
+            <English>You fond a Collapsed Airway</English>
         </Key>
         <Key ID="STR_KAT_Airway_AirwayStatus_Obstruction_short">
-            <English>Obstruction</English>
-            <Czech>Obstrukce</Czech>
-            <French>Obstruées</French>
-            <Spanish>Obstruída</Spanish>
-            <Italian>Ostruita</Italian>
-            <Polish>Niedrożne</Polish>
-            <Portuguese>Obstruída</Portuguese>
-            <Russian>Обструкция</Russian>
-            <German>Obstruktion</German>
-            <Korean>혀로 인한 기도 폐쇄</Korean>
-            <Japanese>閉塞あり</Japanese>
-            <Chinese>阻塞</Chinese>
-            <Chinesesimp>闭塞</Chinesesimp>
-            <Turkish>Kapanma</Turkish>
-            <Norwegian>Obstruksjon</Norwegian>
-            <Finnish>Tukkeuma</Finnish>
-            <Dutch>Geblokkeerd</Dutch>
+            <English>Collapsed Airway</English>
         </Key>
         <Key ID="STR_KAT_Airway_AirwayStatus_Occlusion">
             <English>Airway is occluded, medical suction needed</English>
@@ -485,8 +456,8 @@
             <Finnish>Luokittelee hengitystiet automaattisesti</Finnish>
             <Dutch>Auto triage van de luchtwegen</Dutch>
         </Key>
-        <Key ID="STR_KAT_Airway_AutoTriage_Desc">
-            <English>Sets if checking airways can override current triage level</English>
+        <Key ID="STR_KAT_Airway_AutoTriage_DESC">
+            <English>Sets if checking Airways can override current triage level</English>
             <Czech>Nastavuje, zda kontrola dýchacích cest může přepsat momentální úroveň triáže</Czech>
             <French>Définit si l'inspection des voies aériennes modifie le niveau actuel de triage</French>
             <Spanish>Establece si la comprobación de las vías respiratorias puede anular el nivel de triaje actual.</Spanish>
@@ -624,8 +595,8 @@
             <Finnish>Irrota kurkunpään putki</Finnish>
             <Dutch>Verwijder King LT</Dutch>
         </Key>
-        <Key ID="STR_KAT_Airway_Guedel_Desc_Short">
-            <English>The Guedel Tube is used to maintain the airway</English>
+        <Key ID="STR_KAT_Airway_Guedel_DESC_Short">
+            <English>The Guedel Tube is used to maintain the Airway</English>
             <Czech>Guedel tuba je používána k zajištění dýchacích cest</Czech>
             <French>La canule de Guedel est utilisée pour protéger les voies aériennes</French>
             <Spanish>La cánula de Guedel impide obstrucciones</Spanish>
@@ -822,8 +793,8 @@
             <Finnish>Hyperpidennetty pää</Finnish>
             <Dutch>Hoofd is overstrekt</Dutch>
         </Key>
-        <Key ID="STR_KAT_Airway_Larynx_Desc_Short">
-            <English>The King LT is used to maintain the airway</English>
+        <Key ID="STR_KAT_Airway_Larynx_DESC_Short">
+            <English>The King LT is used to maintain the Airway</English>
             <Czech>King LT je používán k zajištění dýchacích cest</Czech>
             <French>Le tube laryngé est utilisé pour protéger les voies aériennes</French>
             <Spanish>El tubo laríngeo previene obstrucciones y oclusiones</Spanish>
@@ -1200,7 +1171,7 @@
             <Dutch>Hoe lang het gaat duren om iemand in de stabiele zijligging te leggen</Dutch>
         </Key>
         <Key ID="STR_KAT_Airway_SETTING_exit">
-            <English>Community called keko had addon for AFK players. They were put unconscious so others could drag them away. That triggered chances for airway problems. This string prevents that from happening when they get unconscious by that AFK addon.</English>
+            <English>Community called keko had addon for AFK players. They were put unconscious so others could drag them away. That triggered chances for Airway problems. This string prevents that from happening when they get unconscious by that AFK addon.</English>
             <Czech>Komunita zvaná keko měla addon pro AFK hráče. Ti byli dáni do bezvědomí, takže je ostatní mohli odtáhnout pryč. To ale vyvolalo problémy, které mohly ohrozit jejich dýchací cesty. Tento string zabrání dýchacím potížím, pokud je hráč tímto AFK addonem dán do bezvědomí.</Czech>
             <French>Le membre de la communauté appelé Keko avait un addon pour les joueurs AFK. Ils étaient passés inconscients et pouvaient être trainés. Ce qui déclenchait les chances de problèmes respiratoires. Cette option empêche cela de se produire quand ils deviennent inconscients par cet addon AFK.</French>
             <Spanish>La comunidad llamada Keko tenía un addon para los jugadores AFK. Se les ponía inconscientes para que otros pudieran arrastrarlos. Eso disparó las posibilidades de problemas en las vías respiratorias. Esta cadena evita que eso suceda cuando quedan inconscientes por ese addon de AFK.</Spanish>
@@ -1219,7 +1190,7 @@
             <Dutch>De community met de naam keko had een addon voor AFK spelers. Ze werden in een bewusteloze staat gebracht zodat anderen ze konder wegslepen. Dit veroorzaakte kansen voor luchtwegproblemen. Deze streng voorkomt dit wanneer ze door de addon bewusteloos worden gemaakt.</Dutch>
         </Key>
         <Key ID="STR_KAT_Airway_SETTING_obstruction">
-            <English>Probability for an obstructed airway</English>
+            <English>Probability for an obstructed Airway</English>
             <Czech>Pravděpodobnost obstrukce dýchacích cest</Czech>
             <French>Probabilité d'obstruction des voies aériennes</French>
             <Spanish>Probabilidad de obstrucción de las vías aéreas</Spanish>
@@ -1238,7 +1209,7 @@
             <Dutch>Kans op geblokkeerde luchtweg</Dutch>
         </Key>
         <Key ID="STR_KAT_Airway_SETTING_obstruction_DESC">
-            <English>Probability for an obstructed airway in percentage that gets rolled every: \n- Falling unconscious \n- Removing KingLT / Guedel Tube</English>
+            <English>Probability for an obstructed Airway in percentage that gets rolled every: \n- Falling unconscious \n- Removing KingLT / Guedel Tube</English>
             <Czech>Pravděpodobnost obstrukce dýchacích cest v procentech, která se vylosuje při každém: \n- Upadnutí do bezvědomí \n- Odstranění KingLT / GuedelTuby</Czech>
             <French>La probabilité d'obstruction des voies aériennes en pourcentage qui est tirée aléatoirement lorsque : \n- la personne tombe inconsciente \n- Une canule de Guedel/tube laryngé est retiré</French>
             <Spanish>Probabilidad en porcentaje de que una vía aérea sea obstruida cada vez que: \n- Cae inconsciente \n- Se retira el tubo laríngeo / Cánula de Guedel</Spanish>
@@ -1255,7 +1226,7 @@
             <Dutch>Kans op geblokkeerde luchtweg in een percentage die gerold wordt elke: \n- Bewusteloos raken \n- KingLT / Guedel verwijderen</Dutch>
         </Key>
         <Key ID="STR_KAT_Airway_SETTING_occluded">
-            <English>Probability for airway occluding</English>
+            <English>Probability for Airway occluding</English>
             <Czech>Pravděpodobnost ucpání dýchacích cest</Czech>
             <French>Probabilité d'occlusion des voies aériennes</French>
             <Spanish>Probabilidad de oclusión en las vías aéreas</Spanish>
@@ -1446,8 +1417,8 @@
             <Finnish>Ilmateiden imu (manuaalinen)</Finnish>
             <Dutch>Handmatige luchtweg suctie</Dutch>
         </Key>
-        <Key ID="STR_KAT_Airway_Suction_Desc_Short">
-            <English>Manual Suction Pump is a medical suction device for airway suction manually. This is an alternative to electrical devices.</English>
+        <Key ID="STR_KAT_Airway_Suction_DESC_Short">
+            <English>Manual Suction Pump is a medical suction device for Airway suction manually. This is an alternative to electrical devices.</English>
             <Czech>Manuální odsávací pumpa je zdravotnická pomůcka pro manuální odsávání dýchacích cest. Je alternativou k elektronickým zařízením.</Czech>
             <French>La pompe d’aspiration manuelle est un dispositif d’aspiration médical pour l’aspiration manuelle des voies respiratoires. C’est une alternative aux appareils électriques.</French>
             <Spanish>La bomba de succión manual es un dispositivo de succión médico para la succión manual de las vías respiratorias. Es alternativa a los dispositivos eléctricos.</Spanish>
@@ -1776,7 +1747,7 @@
             <Finnish>Poistaminen</Finnish>
             <Dutch>Verwijderen</Dutch>
         </Key>
-        <Key ID="STR_KAT_Airway_airway_log">
+        <Key ID="STR_KAT_Airway_Airway_log">
             <English>%1 inserted a %2</English>
             <Czech>%1 intuboval %2</Czech>
             <French>%1 a intubé avec un(e) %2</French>
@@ -1822,7 +1793,7 @@
             <Dutch>Check luchtwegen</Dutch>
         </Key>
         <Key ID="STR_KAT_Airway_checkAirway_log">
-            <English>%1 checked airways: %2, %3</English>
+            <English>%1 checked Airways: %2</English>
             <Czech>%1 zkontroloval dýchací cesty: %2, %3</Czech>
             <French>%1 a vérifié les voies aériennes : %2, %3</French>
             <Spanish>%1 comprobó las vías aéreas: %2, %3</Spanish>
@@ -1841,7 +1812,7 @@
             <Dutch>%1 Heeft de luchtwegen gecheckt: %2, %3</Dutch>
         </Key>
         <Key ID="STR_KAT_Airway_checkAirway_poisonLog">
-            <English>%1 checked airways: Heavily Blistered</English>
+            <English>%1 checked Airways: Heavily Blistered</English>
             <Czech>%1 zkontroloval dýchací cesty: Silné puchýře</Czech>
             <French>%1 voies aériennes contrôlées : Fortement cloquées</French>
             <Japanese>%1 が気道を確認: ひどい水膨れ</Japanese>
@@ -1884,7 +1855,7 @@
             <Dutch>Hoofddraaiing gestopt</Dutch>
         </Key>
         <Key ID="STR_KAT_Airway_headTurning_info">
-            <English>Head turn performed, airways are still not clear</English>
+            <English>Head turn performed, Airways are still not clear</English>
             <Czech>Hlavou se otočilo, dýchací cesty stále nejsou volné</Czech>
             <French>Tour de tête effectué, les voies respiratoires ne sont toujours pas dégagées</French>
             <Spanish>Giro realizado, vías aéreas aún sin despejadar</Spanish>
@@ -1953,6 +1924,132 @@
             <Norwegian>Okklusjonen er fjernet</Norwegian>
             <Finnish>Likaantuminen poistettu</Finnish>
             <Dutch>Verstopping verwijderd</Dutch>
+        </Key>
+        <Key ID="STR_KAT_Airway_SETTING_obstructionDamageThreshold">
+            <English>Obstruction Damage Threshold</English>
+        </Key>
+        <Key ID="STR_KAT_Airway_SETTING_obstructionDamageThreshold_DESC">
+            <English>Damage Threshold to cause a injury-based Obstruction</English>
+        </Key>
+        <Key ID="STR_KAT_Airway_SETTING_occlusionDamageThreshold">
+            <English>Occlusion Damage Threshold</English>
+        </Key>
+        <Key ID="STR_KAT_Airway_SETTING_occlusionDamageThreshold_DESC">
+            <English>Damage Threshold to cause a injury-based Occlusion</English>
+        </Key>
+        <Key ID="STR_KAT_Airway_SETTING_pukeChance">
+            <English>Vomit Chance</English>
+        </Key>
+        <Key ID="STR_KAT_Airway_SETTING_pukeChance_DESC">
+            <English>Chance to Vomit</English>
+        </Key>
+        <Key ID="STR_KAT_Airway_SETTING_catastrophicAirwaychance">
+            <English>Catastrophic Chance</English>
+        </Key>
+        <Key ID="STR_KAT_Airway_SETTING_catastrophicAirwaychance_DESC">
+            <English>Chance to have a Catastrophic Airway Injury</English>
+        </Key>
+        <Key ID="STR_KAT_Airway_SETTING_CatastrophicAirwayDamageThreshold">
+            <English>Catastrophic Airway Damage Threshold</English>
+        </Key>
+        <Key ID="STR_KAT_Airway_SETTING_CatastrophicAirwayDamageThreshold_DESC">
+            <English>Damage Threshold to cause a injury-based Catastrophic Airway</English>
+        </Key>
+        <Key ID="STR_KAT_Airway_SETTING_DeterioratingAirways_Chance">
+            <English>Deteriorating Airways Chance</English>
+        </Key>
+        <Key ID="STR_KAT_Airway_SETTING_DeterioratingAirways_Chance_DESC">
+            <English>Chance to have an Airway deteriorate due to bleeding/leakage</English>
+        </Key>
+        <Key ID="STR_KAT_Airway_SETTING_deterioratingAirways_Interval">
+            <English>Deteriorating Airways Interval</English>
+        </Key>
+        <Key ID="STR_KAT_Airway_SETTING_DeterioratingAirways_Interval_DESC">
+            <English>Interval between having an Airway deteriorate due to bleeding/leakage</English>
+        </Key>
+        <Key ID="STR_KAT_Airway_SETTING_airwayCollapse">
+            <English>Airway Collapse Time</English>
+        </Key>
+        <Key ID="STR_KAT_Airway_SETTING_airwayCollapse_DESC">
+            <English>Time it takes to have an Airway collapse</English>
+        </Key>
+        <Key ID="STR_KAT_Airway_AirwayStatus_noAirwayInjuries">
+            <English>You found no Airway injuries</English>
+        </Key>
+        <Key ID="STR_KAT_Airway_AirwayStatus_noAirwayInjuries_short">
+            <English>Airways are Clear</English>
+        </Key>
+        <Key ID="STR_KAT_Airway_AirwayStatus_oralCatastrophic">
+            <English>You found a Catastropic Oral Injury</English>
+        </Key>
+        <Key ID="STR_KAT_Airway_AirwayStatus_oralCatastrophic_short">
+            <English>Catastropic Oral Injury</English>
+        </Key>
+        <Key ID="STR_KAT_Airway_AirwayStatus_catastrophic">
+            <English>You found a Catastropic Injury</English>
+        </Key>
+        <Key ID="STR_KAT_Airway_AirwayStatus_catastrophic_short">
+            <English>Catastropic Injury</English>
+        </Key>
+        <Key ID="STR_KAT_Airway_AirwayStatus_oralTongueBloodPukeObstruction">
+            <English>You found a Tongue Obstructed Airway with Blood And Vomit</English>
+        </Key>
+        <Key ID="STR_KAT_Airway_AirwayStatus_oralTongueBloodPukeObstruction_short">
+            <English>Tongue Obstructed w/ Blood/Vomit</English>
+        </Key>
+        <Key ID="STR_KAT_Airway_AirwayStatus_oralTongueBloodObstruction">
+            <English>You found a Tongue Obstructed Airway with Blood</English>
+        </Key>
+        <Key ID="STR_KAT_Airway_AirwayStatus_oralTongueBloodObstruction_short">
+            <English>Tongue Obstructed w/ Blood</English>
+        </Key>
+        <Key ID="STR_KAT_Airway_AirwayStatus_oralTongueObstruction">
+            <English>You found a Tongue Obstructed Airway</English>
+        </Key>
+        <Key ID="STR_KAT_Airway_AirwayStatus_oralTongueObstruction_short">
+            <English>Tongue Obstructed</English>
+        </Key>
+        <Key ID="STR_KAT_Airway_AirwayStatus_oralBloodPukeOcclusion">
+            <English>You found a Oral Airway blocked by Blood and Vomit</English>
+        </Key>
+        <Key ID="STR_KAT_Airway_AirwayStatus_oralBloodPukeOcclusion_short">
+            <English>Oral Airway blocked by Blood/Vomit</English>
+        </Key>
+        <Key ID="STR_KAT_Airway_AirwayStatus_oralBloodOcclusion">
+            <English>You found a Oral Airway blocked by Blood</English>
+        </Key>
+        <Key ID="STR_KAT_Airway_AirwayStatus_oralBloodOcclusion_short">
+            <English>Oral Airway blocked by Blood</English>
+        </Key>
+        <Key ID="STR_KAT_Airway_AirwayStatus_bloodPukeOcclusion">
+            <English>You found a Airway blocked by Blood and Vomit</English>
+        </Key>
+        <Key ID="STR_KAT_Airway_AirwayStatus_bloodPukeOcclusion_short">
+            <English>Airway blocked by Blood/Vomit</English>
+        </Key>
+        <Key ID="STR_KAT_Airway_AirwayStatus_bloodOcclusion">
+            <English>You found a Airway blocked by Blood</English>
+        </Key>
+        <Key ID="STR_KAT_Airway_AirwayStatus_bloodOcclusion_short">
+            <English>Airway blocked by Blood</English>
+        </Key>
+        <Key ID="STR_KAT_Airway_SETTING_catastrophicAirwayDamageThreshold_DamageTaken">
+            <English>Increase Catastrophic Airway chance based on damage</English>
+        </Key>
+        <Key ID="STR_KAT_Airway_SETTING_catastrophicAirwayDamageThreshold_DamageTaken_DESCRIPTION">
+            <English>Increase chance of a Catastrophic Airway occurring based on damage taken if over the Catastrophic Airway damage threshold</English>
+        </Key>
+        <Key ID="STR_KAT_Airway_SETTING_OcclusionDamageThreshold_DamageTaken">
+            <English>Increase Occlusion chance based on damage</English>
+        </Key>
+        <Key ID="STR_KAT_Airway_SETTING_OcclusionDamageThreshold_DamageTaken_DESCRIPTION">
+            <English>Increase chance of a Occlusion occurring based on damage taken if over the Occlusion damage threshold</English>
+        </Key>
+        <Key ID="STR_KAT_Airway_SETTING_ObstructionDamageThreshold_DamageTaken">
+            <English>Increase Obstruction chance based on damage</English>
+        </Key>
+        <Key ID="STR_KAT_Airway_SETTING_ObstructionDamageThreshold_DamageTaken_DESCRIPTION">
+            <English>Increase chance of a Obstruction occurring based on damage taken if over the Obstruction damage threshold</English>
         </Key>
     </Package>
 </Project>

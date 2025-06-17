@@ -38,6 +38,15 @@
     true
 ] call CBA_fnc_addSetting;
 
+[
+    QGVAR(airwayObstructionDamageThreshold_TakenDamage),
+    "CHECKBOX",
+    [LLSTRING(SETTING_ObstructionDamageThreshold_DamageTaken), LLSTRING(SETTING_ObstructionDamageThreshold_DamageTaken_DESCRIPTION)],
+    [CBA_SETTINGS_CAT, ELSTRING(GUI,SubCategory_Basic)],
+    [true],
+    true
+] call CBA_fnc_addSetting;
+
 // airway Injuries probability occluded
 [
     QGVAR(airwayOcclusionChance),
@@ -54,6 +63,15 @@
     [LLSTRING(SETTING_occlusionDamageThreshold),LLSTRING(SETTING_occlusionDamageThreshold_DESC)],
     [CBA_SETTINGS_CAT, ELSTRING(GUI,SubCategory_Basic)],
     [0, 1, 0.1, 2],
+    true
+] call CBA_fnc_addSetting;
+
+[
+    QGVAR(airwayOcclusionDamageThreshold_TakenDamage),
+    "CHECKBOX",
+    [LLSTRING(SETTING_OcclusionDamageThreshold_DamageTaken), LLSTRING(SETTING_OcclusionDamageThreshold_DamageTaken_DESCRIPTION)],
+    [CBA_SETTINGS_CAT, ELSTRING(GUI,SubCategory_Basic)],
+    [true],
     true
 ] call CBA_fnc_addSetting;
 
@@ -80,7 +98,16 @@
     "SLIDER",
     [LLSTRING(SETTING_catastrophicAirwayDamageThreshold),LLSTRING(SETTING_catastrophicAirwayDamageThreshold_DESC)],
     [CBA_SETTINGS_CAT, ELSTRING(GUI,SubCategory_Basic)],
-    [0, 1, 0.3, 2],
+    [0, 3, 0.3, 2],
+    true
+] call CBA_fnc_addSetting;
+
+[
+    QGVAR(catastrophicAirwayDamageThreshold_TakenDamage),
+    "CHECKBOX",
+    [LLSTRING(SETTING_catastrophicAirwayDamageThreshold_DamageTaken), LLSTRING(SETTING_catastrophicAirwayDamageThreshold_DamageTaken_DESCRIPTION)],
+    [CBA_SETTINGS_CAT, ELSTRING(GUI,SubCategory_Basic)],
+    [true],
     true
 ] call CBA_fnc_addSetting;
 
@@ -88,7 +115,7 @@
     QGVAR(deterioratingAirways_chance),
     "SLIDER",
     [LLSTRING(SETTING_deterioratingAirways_chance), LLSTRING(SETTING_deterioratingAirways_chance_DESC)],
-    [CBA_SETTINGS_CAT, LSTRING(SubCategory_ThoraxInjuries)],
+    [CBA_SETTINGS_CAT, ELSTRING(GUI,SubCategory_Basic)],
     [0, 100, 25, 0],
     true
 ] call CBA_fnc_addSetting;
@@ -98,8 +125,17 @@
     QGVAR(deterioratingAirways_interval),
     "SLIDER",
     [LLSTRING(SETTING_deterioratingAirways_interval), LLSTRING(SETTING_deterioratingAirways_interval_Desc)],
-    [CBA_SETTINGS_CAT, LSTRING(SubCategory_ThoraxInjuries)],
+    [CBA_SETTINGS_CAT, ELSTRING(GUI,SubCategory_Basic)],
     [1, 1200, 30, 0],
+    true
+] call CBA_fnc_addSetting;
+
+[
+    QGVAR(airwayCollapse_Timer),
+    "SLIDER",
+    [LLSTRING(SETTING_airwayCollapse),LLSTRING(SETTING_airwayCollapse_DESC)],
+    [CBA_SETTINGS_CAT, ELSTRING(GUI,SubCategory_Basic)],
+    [1, 1200, 180, 0],
     true
 ] call CBA_fnc_addSetting;
 

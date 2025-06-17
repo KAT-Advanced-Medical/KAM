@@ -33,11 +33,11 @@ private _display = uiNamespace getVariable [QACEGVAR(dogtags,tag), displayNull];
 if (isNull _display) exitWith {};
 
 private _control = _display displayCtrl 1001;
-_dogtagData params ["_name", "_code", "_bloodType", "_weight"];
+_dogtagData params ["_name", "_bloodType", "_weight", "_code"];
 
 // If data doesn't exist or body has no name, set name as "unknown"
 if (_name == "") then {
-    _name = LELSTRING(common,unknown);
+    _name = ACELSTRING(common,unknown);
 };
 
-_control ctrlSetStructuredText parseText format ["%1<br/>%2<br/>%3<br/>%4", toUpper _name, _code, _bloodType, _weight];
+_control ctrlSetStructuredText parseText format ["%1<br/>%2<br/>%3<br/>%4", toUpper _name, _bloodType, _weight, _code];

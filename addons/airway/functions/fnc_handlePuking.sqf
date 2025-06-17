@@ -1,3 +1,4 @@
+#define DEBUG_MODE_FULL
 #include "..\script_component.hpp"
 /*
  * Author: Katalam, edited by MiszczuZPolski
@@ -27,16 +28,23 @@ if ((_unit getVariable ["kat_pukeActive_PFH", false]) || !(GVAR(enable))) exitWi
     };
     
     private _nauseaMult = _unit getVariable [QEGVAR(pharma,nauseaMult), 1];
-    if (_unit getVariable [QGVAR(airway_item), ""] isEqualTo "Larynxtubus") then {
-        _nauseaMult = _nauseaMult * 4
+    if (_nauseaMult < 1) then {
+        _nauseaMult = abs log _nauseaMult;
+        _nauseaMult = _nauseaMult max 0.1;
     };
-
-    if (random (100) <= GVAR(airwayPukeChance)) then {
+    if (_unit getVariable [QGVAR(airway_item), ""] isEqualTo "Larynxtubus") then {
+        _nauseaMult = _nauseaMult / 4
+    };
+    private _delay = (GVAR(occlusion_repeatTimer) / _nauseaMult) * random [0.8, 1, 1.3];
+    TRACE_1("PukeDelay",_delay);
+    [{
+        params ["_unit"];
+        if (random (100) <= GVAR(airwayPukeChance)) then {
         private _occlusionState = _unit getVariable [QGVAR(occlusion), [0, 0, 0]];
         _occlusionState set [0, ((_occlusionState select 0) + floor random [1, 3, 6]) min 6];
         _occlusionState set [1, ((_occlusionState select 1) + floor random [1, 3, 6]) min 6];
         _occlusionState set [2, ((_occlusionState select 2) + floor random [1, 3, 6]) min 6];
-
+        _unit setVariable [QGVAR(hasPuked), true, true];
         for "_i" from 0 to 2 do {
             [_unit, _i] call FUNC(airwayPFH);
         };
@@ -49,9 +57,11 @@ if ((_unit getVariable ["kat_pukeActive_PFH", false]) || !(GVAR(enable))) exitWi
                 QPATHTOF_SOUND(sounds\puking2.wav),
                 QPATHTOF_SOUND(sounds\puking3.wav)
             ];
+            TRACE_3("Puke",_sound, _unit, (getPosASL _unit));
             playSound3D [_sound, _unit, false, getPosASL _unit, 8, 1, 15];
+            };
         };
-    };
-    [{[_unit] call FUNC(handlePuking); }, [_unit], (GVAR(occlusion_repeatTimer) * _nauseaMult * random [0.8, 1, 1.3])] call CBA_fnc_waitAndExecute;
+        [_unit] call FUNC(handlePuking);
+    }, [_unit], _delay] call CBA_fnc_waitAndExecute;
 
 

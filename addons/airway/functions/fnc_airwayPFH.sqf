@@ -41,7 +41,7 @@ _unit setVariable ["kat_occlusion_PFH", true];
                         _unit setVariable ["kat_occlusion_PFH", nil];
                     };
                     private _occlusionMitigation = _unit getVariable [QGVAR(occlusionMitigation), [false, false, false]] select _level;
-                    if ((floor (random 100) < GVAR(deterioratingAirway_chance)) && !(_occlusionMitigation)) then {
+                    if ((floor (random 100) < GVAR(deterioratingAirways_chance)) && !(_occlusionMitigation)) then {
                         _occlusionTarget = ((_occlusionState select _level) + 1) min 6;
                         if (_occlusionTarget > 6) then {
                             _occlusionState set [_level - 1 max 0, _occlusionTarget];
@@ -54,6 +54,6 @@ _unit setVariable ["kat_occlusion_PFH", true];
                         _unit setVariable [QGVAR(occlusion), _occlusionState, true];
                     };
                 };
-        }, (GVAR(deterioratingAirway_interval) * random [0.8, 1, 1.3]), [_unit, _level]] call CBA_fnc_addPerFrameHandler;
+        }, (GVAR(deterioratingAirways_interval) * random [0.8, 1, 1.3]), [_unit, _level]] call CBA_fnc_addPerFrameHandler;
     };
-}, [_unit, _level], GVAR(deterioratingOcclusion_interval)] call CBA_fnc_waitAndExecute;
+}, [_unit, _level], GVAR(deterioratingAirways_interval)] call CBA_fnc_waitAndExecute;

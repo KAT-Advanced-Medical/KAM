@@ -29,3 +29,5 @@ _patient setVariable [QGVAR(occlusionMitigation), [false, false, false], true];
 _patient setVariable [QGVAR(overstretch), false, true];
 _patient setVariable [QGVAR(recovery), false, true];
 _patient setVariable [QGVAR(wasOccluded), [0, 0, 0]];
+_patient setVariable [QGVAR(hasPuked), false, true];
+_patient setVariable [QGVAR(airwayStatus), [0, 0, 0], true]
