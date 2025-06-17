@@ -2051,5 +2051,53 @@
         <Key ID="STR_KAT_Airway_SETTING_ObstructionDamageThreshold_DamageTaken_DESCRIPTION">
             <English>Increase chance of a Obstruction occurring based on damage taken if over the Obstruction damage threshold</English>
         </Key>
+        <Key ID="STR_KAT_Airway_RemoveIGEL_Log">
+            <English>%1 removed I-GEL</English>
+        </Key>
+        <Key ID="STR_KAT_Airway_IGEL_DESC_Short">
+            <English>The I-GEL is used to maintain and secure the Airway</English>
+        </Key>
+        <Key ID="STR_KAT_Airway_IGEL_Display">
+            <English>I-GEL</English>
+        </Key>
+        <Key ID="STR_KAT_Airway_RemoveNPA_Log">
+            <English>%1 removed Nasopharyngeal Airway</English>
+        </Key>
+        <Key ID="STR_KAT_Airway_NPA_DESC_Short">
+            <English>A Nasopharyngeal Airway is used to maintain and secure the Airway when a Oral airway isnt suitable</English>
+        </Key>
+        <Key ID="STR_KAT_Airway_NPA_Display">
+            <English>Nasopharyngeal Airway</English>
+        </Key>
+        <Key ID="STR_KAT_Airway_ALLOW_NPA">
+            <English>Allow Nasopharyngeal Airway</English>
+        </Key>
+        <Key ID="STR_KAT_Airway_ALLOW_NPA_DESC">
+            <English>Training level required to use a Nasopharyngeal Airway</English>
+        </Key>
+        <Key ID="STR_KAT_Airway_TIME_NPA">
+            <English>Time for Nasopharyngeal Airway</English>
+        </Key>
+        <Key ID="STR_KAT_Airway_TIME_NPA_DESC">
+            <English>How long it will take to use Nasopharyngeal Airway</English>
+        </Key>
+        <Key ID="STR_KAT_Airway_Cancel_NPA">
+            <English>Remove NPA</English>
+        </Key>
+        <Key ID="STR_KAT_Airway_ALLOW_IGEL">
+            <English>Allow I-GEL</English>
+        </Key>
+        <Key ID="STR_KAT_Airway_ALLOW_IGEL_DESC">
+            <English>Training level required to use a I-GEL</English>
+        </Key>
+        <Key ID="STR_KAT_Airway_TIME_IGEL">
+            <English>Time for I-GEL</English>
+        </Key>
+        <Key ID="STR_KAT_Airway_TIME_IGEL_DESC">
+            <English>How long it will take to use I-GEL</English>
+        </Key>
+        <Key ID="STR_KAT_Airway_Cancel_IGEL">
+            <English>Remove I-GEL</English>
+        </Key>
     </Package>
 </Project>

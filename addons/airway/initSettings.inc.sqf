@@ -229,6 +229,24 @@
     true
 ] call CBA_fnc_addSetting;
 
+[
+    QGVAR(medLvl_NPA),
+    "LIST",
+    [LLSTRING(ALLOW_NPA),LLSTRING(ALLOW_NPA_DESC)],
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_Items)],
+    [[0, 1, 2], ["STR_ACE_Medical_Treatment_Anyone", "STR_ACE_Medical_Treatment_Medics", "STR_ACE_Medical_Treatment_Doctors"], 0],
+    true
+] call CBA_fnc_addSetting;
+
+[
+    QGVAR(medLvl_IGEL),
+    "LIST",
+    [LLSTRING(ALLOW_IGEL),LLSTRING(ALLOW_IGEL_DESC)],
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_Items)],
+    [[0, 1, 2], ["STR_ACE_Medical_Treatment_Anyone", "STR_ACE_Medical_Treatment_Medics", "STR_ACE_Medical_Treatment_Doctors"], 0],
+    true
+] call CBA_fnc_addSetting;
+
 //Settable list for using Accuvac per medical class
 [
     QGVAR(medLvl_Accuvac),
@@ -290,6 +308,24 @@
 ] call CBA_fnc_addSetting;
 
 // Settable action time for Guedeltubus
+[
+    QGVAR(IGEL_time),
+    "SLIDER",
+    [LLSTRING(TIME_IGEL),LLSTRING(TIME_IGEL_DESC)],
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_Items)],
+    [1, 20, 6, 0],
+    true
+] call CBA_fnc_addSetting;
+
+[
+    QGVAR(NPA_time),
+    "SLIDER",
+    [LLSTRING(TIME_NPA),LLSTRING(TIME_NPA_DESC)],
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_Items)],
+    [1, 20, 6, 0],
+    true
+] call CBA_fnc_addSetting;
+
 [
     QGVAR(Guedeltubus_time),
     "SLIDER",

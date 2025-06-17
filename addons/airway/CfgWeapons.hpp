@@ -26,6 +26,28 @@ class CfgWeapons {
             mass = 0.5;
         };
     };
+    class kat_NPA: ACE_ItemCore {
+        scope = 2;
+        author = "Katalam";
+        displayName= CSTRING(NPA_Display);
+        descriptionShort =  CSTRING(NPA_Desc_Short);
+        picture = QPATHTOF(ui\npa.paa);
+        ACE_isMedicalItem = 1;
+        class ItemInfo: CBA_MiscItem_ItemInfo {
+            mass = 0.5;
+        };
+    };
+    class kat_IGEL: ACE_ItemCore {
+        scope = 2;
+        author = "Katalam";
+        displayName= CSTRING(IGEL_Display);
+        descriptionShort =  CSTRING(IGEL_Desc_Short);
+        picture = QPATHTOF(ui\igel.paa);
+        ACE_isMedicalItem = 1;
+        class ItemInfo: CBA_MiscItem_ItemInfo {
+            mass = 0.5;
+        };
+    };
     class kat_accuvac: ACE_ItemCore {
         scope = 2;
         author = "Katalam";
