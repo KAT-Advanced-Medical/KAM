@@ -393,3 +393,22 @@
     [true],
     true
 ] call CBA_fnc_addSetting;
+
+[
+    QGVAR(probability_suction),
+    "SLIDER",
+    [LLSTRING(SUCCES_SUCTION),LLSTRING(SUCCES_SUCTION_DESC)],
+    [CBA_SETTINGS_CAT, ELSTRING(GUI,SubCategory_Basic)],
+    [1, 100, 50, 0],
+    true
+] call CBA_fnc_addSetting;
+
+// Settable action time for Head turning
+[
+    QGVAR(Suction_Interval),
+    "SLIDER",
+    [LLSTRING(SETTING_SUCTION_Interval), LLSTRING(SETTING_SUCTION_Interval_DESC)],
+    [CBA_SETTINGS_CAT, ELSTRING(GUI,SubCategory_Basic)],
+    [7, 30, 7, 0],
+    true
+] call CBA_fnc_addSetting;

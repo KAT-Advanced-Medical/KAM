@@ -44,6 +44,7 @@ if ((_unit getVariable ["kat_pukeActive_PFH", false]) || !(GVAR(enable))) exitWi
         _occlusionState set [0, ((_occlusionState select 0) + floor random [1, 3, 6]) min 6];
         _occlusionState set [1, ((_occlusionState select 1) + floor random [1, 3, 6]) min 6];
         _occlusionState set [2, ((_occlusionState select 2) + floor random [1, 3, 6]) min 6];
+        _unit setVariable [QGVAR(occlusion), _occlusionState, true];
         _unit setVariable [QGVAR(hasPuked), true, true];
         for "_i" from 0 to 2 do {
             [_unit, _i] call FUNC(airwayPFH);

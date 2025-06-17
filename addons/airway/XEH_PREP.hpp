@@ -13,8 +13,6 @@ PREP(handleRecoveryPosition);
 PREP(handleRespawn);
 PREP(init);
 PREP(startHeadTurning);
-PREP(treatmentAdvanced_Accuvac);
-PREP(treatmentAdvanced_AccuvacLocal);
 PREP(treatmentAdvanced_AccuvacStart);
 PREP(treatmentAdvanced_CancelRecoveryPosition);
 PREP(treatmentAdvanced_CancelRecoveryPositionLocal);
