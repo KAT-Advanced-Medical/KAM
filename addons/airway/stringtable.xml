@@ -356,11 +356,11 @@
             <English>Airway is heavily blistered</English>
             <Czech>Silné puchýře na dýchacích cestách</Czech>
             <French>Les voies respiratoires sont fortement cloquées</French>
+            <Italian>Le vie aeree sono piene di vescicole</Italian>
+            <German>Die Atemwege haben eine starke Blasenbildung</German>
             <Japanese>気道はひどく水膨れしている</Japanese>
             <Chinese>氣道嚴重膨脹</Chinese>
             <Chinesesimp>气道严重膨胀</Chinesesimp>
-            <German>Die Atemwege haben eine starke Blasenbildung</German>
-            <Italian>Le vie aeree sono piene di vescicole</Italian>
         </Key>
         <Key ID="STR_KAT_Airway_AirwayStatus_mitigatedObstruction">
             <English>Obstruction is temporarily mitigated</English>
@@ -1797,10 +1797,10 @@
         </Key>
         <Key ID="STR_KAT_Airway_cba_name">
             <English>KAT - ADV Medical: Airway</English>
-            <Japanese>KAM - 気道 (Airway)</Japanese>
             <French>KAT - ADV Medical : Voies respiratoires</French>
-            <German>KAT - ADV Medical: Atemwege</German>
             <Italian>KAT - ADV Medicale: Vie Aeree</Italian>
+            <German>KAT - ADV Medical: Atemwege</German>
+            <Japanese>KAM - 気道 (Airway)</Japanese>
         </Key>
         <Key ID="STR_KAT_Airway_checkAirway">
             <English>Check Airway</English>
@@ -1844,10 +1844,10 @@
             <English>%1 checked airways: Heavily Blistered</English>
             <Czech>%1 zkontroloval dýchací cesty: Silné puchýře</Czech>
             <French>%1 voies aériennes contrôlées : Fortement cloquées</French>
+            <Italian>%1 ha controllato le vie aeree: Piene di Vescicole</Italian>
+            <German>%1 überprüfte die Atemwege: Starke Blasenbildung</German>
             <Japanese>%1 が気道を確認: ひどい水膨れ</Japanese>
             <Chinesesimp>%1 条检查气道: 严重起泡</Chinesesimp>
-            <German>%1 überprüfte die Atemwege: Starke Blasenbildung</German>
-            <Italian>%1 ha controllato le vie aeree: Piene di Vescicole</Italian>
         </Key>
         <Key ID="STR_KAT_Airway_headTurning_begin">
             <English>Begin Head Turning</English>
