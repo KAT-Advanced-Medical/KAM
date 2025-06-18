@@ -32,6 +32,9 @@ switch (true) do {
     case (_item isEqualTo "IGEL"): {
         [_medic, "kat_IGEL"] call ACEFUNC(common,addToInventory);
     };
+    case (_item isEqualTo "ETT"): {
+        [_medic, "kat_ETT"] call ACEFUNC(common,addToInventory);
+    };
     case (_item isEqualTo "NPA"): {
         [_medic, "kat_NPA"] call ACEFUNC(common,addToInventory);
     };

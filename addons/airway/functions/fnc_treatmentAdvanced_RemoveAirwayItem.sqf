@@ -33,6 +33,12 @@ switch (true) do {
         _currentMonitors deleteAt (_currentMonitors find "IGEL");
         _patient setVariable [QEGVAR(breathing,etco2Monitor), _currentMonitors, true];
     };
+    case (_item isEqualTo "ETT"): {
+        [_patient, "activity", LSTRING(RemoveETT_Log), [[_medic] call ACEFUNC(common,getName)]] call ACEFUNC(medical_treatment,addToLog);
+        private _currentMonitors = _patient getVariable [QEGVAR(breathing,etco2Monitor), []];
+        _currentMonitors deleteAt (_currentMonitors find "ETT");
+        _patient setVariable [QEGVAR(breathing,etco2Monitor), _currentMonitors, true];
+    };
     case (_item isEqualTo "NPA"): {
         [_patient, "activity", LSTRING(RemoveNPA_Log), [[_medic] call ACEFUNC(common,getName)]] call ACEFUNC(medical_treatment,addToLog);
     };
