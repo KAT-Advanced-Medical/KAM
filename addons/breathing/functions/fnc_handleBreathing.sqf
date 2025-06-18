@@ -61,6 +61,8 @@ if (!local _unit) then {
     private _multiplierNegative = GVAR(SpO2_MultiplyNegative);
     private _multiplierOxygen = GVAR(BVMOxygen_Multiplier);
     private _perfusionActive = false;
+    private _occlusion = ((_patient getVariable [QEGVAR(airway,occlusion), [0, 0, 0]]) findIf { _x == 6 }) != -1;
+    private _obstruction = ((_patient getVariable [QEGVAR(airway,obstruction), [0, 0, 0]]) findIf { _x != 0 }) != -1;
 
     if (GVAR(SpO2_cardiacActive)) then {
         private _ht = _unit getVariable [QEGVAR(circulation,ht), []];
@@ -128,7 +130,7 @@ if (!local _unit) then {
 
                 _output = 0; // SpO2_perfusion is false
             } else {// Obstruction with hyperextended head
-                if (_overstretch && _unit getVariable [QEGVAR(airway,obstruction), false] && !(_unit getVariable [QEGVAR(airway,occlusion), false]) && _heartRate >= 25) exitWith {
+                if (_overstretch && _obstruction && !(_occlusion) && _heartRate >= 25) exitWith {
                     if(_BVMInUse) then {
                         if(_oxygenAssisted) then {
                             _output = 0.5 * _multiplierOxygen;

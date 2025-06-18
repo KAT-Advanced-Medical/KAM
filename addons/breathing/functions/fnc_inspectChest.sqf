@@ -22,12 +22,15 @@ private _message = LLSTRING(inspectChest_normal);
 private _messageLog = LLSTRING(inspectChest_normal);
 private _tension = _patient getVariable [QGVAR(tensionpneumothorax), [false, false]];
 private _hemo = _patient getVariable [QGVAR(hemopneumothorax), [false, false]];
+private _occlusion = ((_patient getVariable [QEGVAR(airway,occlusion), [0, 0, 0]]) findIf { _x == 6 }) != -1;
+private _obstruction = ((_patient getVariable [QEGVAR(airway,obstruction), [0, 0, 0]]) findIf { _x != 0 }) != -1;
 private _hasPneumothorax = (_patient getVariable [QGVAR(pneumothorax), [0, 0]] select 0 > 0 || _patient getVariable [QGVAR(pneumothorax), [0, 0]] select 1 > 0 || (_tension select 0) || (_tension select 1) || (_hemo select 0) || (_hemo select 1));
-private _airwaySecure = (_patient getVariable [QEGVAR(airway,airway), false] && !(_patient getVariable [QEGVAR(airway,occluded), false]));
-private _airwayClear = (!(_patient getVariable [QEGVAR(airway,obstruction), false]) || (_patient getVariable [QEGVAR(airway,obstruction), false] && _patient getVariable [QEGVAR(airway,overstretch), false])) && !(_patient getVariable [QEGVAR(airway,occluded), false]);
+private _airwaySecure = (_patient getVariable [QEGVAR(airway,airway), false] && !(_occlusion));
+private _airwayClear = (!(_obstruction) || (_obstruction && _patient getVariable [QEGVAR(airway,overstretch), false])) && !(_occlusion);
 private _simpleSetting = (GVAR(inspectChest_enable) == 1);
 private _hintSize = 1.5;
 private _hintWidth = 10;
+
 
 if (GET_HEART_RATE(_patient) isEqualTo 0) then {
     _message = LLSTRING(inspectChest_none);

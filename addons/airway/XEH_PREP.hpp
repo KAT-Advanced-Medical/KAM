@@ -20,6 +20,7 @@ PREP(treatmentAdvanced_RecoveryPosition);
 PREP(treatmentAdvanced_RecoveryPositionLocal);
 PREP(treatmentAdvanced_RemoveAirwayItem);
 PREP(treatmentAdvanced_RemoveAirwayItemLocal);
+PREP(treatmentAdvanced_Visualization);
 PREP(treatmentAdvanced_airway);
 PREP(treatmentAdvanced_airwayLocal);
 PREP(treatmentAdvanced_hyperextendHead);

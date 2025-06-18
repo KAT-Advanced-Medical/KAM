@@ -22,7 +22,7 @@
  */
 
 params ["_unit", "_allDamages"];
-(_allDamages select 5) params ["_engineDamage", "_bodyPart"]; // selection-specific
+(_allDamages select 0) params ["_engineDamage", "_bodyPart"]; // selection-specific
 
 if !(GVAR(enable) && _bodyPart == "chest") exitWith {_this};
 

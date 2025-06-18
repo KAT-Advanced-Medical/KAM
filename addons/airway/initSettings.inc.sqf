@@ -256,6 +256,15 @@
     true
 ] call CBA_fnc_addSetting;
 
+[
+    QGVAR(medLvl_ETT),
+    "LIST",
+    [LLSTRING(ALLOW_ETT),LLSTRING(ALLOW_ETT_DESC)],
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_Items)],
+    [[0, 1, 2], ["STR_ACE_Medical_Treatment_Anyone", "STR_ACE_Medical_Treatment_Medics", "STR_ACE_Medical_Treatment_Doctors"], 0],
+    true
+] call CBA_fnc_addSetting;
+
 //Settable list for using Accuvac per medical class
 [
     QGVAR(medLvl_Accuvac),
@@ -344,6 +353,25 @@
     true
 ] call CBA_fnc_addSetting;
 
+[
+    QGVAR(ETT_time),
+    "SLIDER",
+    [LLSTRING(TIME_ETT),LLSTRING(TIME_ETT_DESC)],
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_Items)],
+    [1, 20, 6, 0],
+    true
+] call CBA_fnc_addSetting;
+
+[
+    QGVAR(Visualization_time),
+    "SLIDER",
+    [LLSTRING(TIME_Visualization),LLSTRING(TIME_Visualization_DESC)],
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_Items)],
+    [1, 20, 6, 0],
+    true
+] call CBA_fnc_addSetting;
+
+
 // Enable reuasble Larynxtubus & Guedeltubus
 [
     QGVAR(ReusableAirwayItems),
@@ -421,3 +449,23 @@
     [7, 30, 7, 0],
     true
 ] call CBA_fnc_addSetting;
+
+[
+    QGVAR(probability_visualization),
+    "SLIDER",
+    [LLSTRING(SUCCES_visualization),LLSTRING(SUCCES_visualization_DESC)],
+    [CBA_SETTINGS_CAT, ELSTRING(GUI,SubCategory_Basic)],
+    [1, 100, 50, 0],
+    true
+] call CBA_fnc_addSetting;
+
+// Settable action time for Head turning
+[
+    QGVAR(visualization_Interval),
+    "SLIDER",
+    [LLSTRING(SETTING_visualization_Interval), LLSTRING(SETTING_visualization_Interval_DESC)],
+    [CBA_SETTINGS_CAT, ELSTRING(GUI,SubCategory_Basic)],
+    [1, 30, 7, 0],
+    true
+] call CBA_fnc_addSetting;
+

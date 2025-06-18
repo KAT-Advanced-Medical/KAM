@@ -2154,5 +2154,93 @@
         <Key ID="STR_KAT_Airway_SETTING_ENABLE_Catastrophic_DESC">
             <English>Enables Catastrophic Airways, needing surgery to correct</English>
         </Key>
+        <Key ID="STR_KAT_Airway_RemoveETA_Log">
+            <English>%1 removed Endotracheal Airway</English>
+        </Key>
+        <Key ID="STR_KAT_Airway_ETT_DESC_Short">
+            <English>A Endotracheal Airway is used to maintain and secure the Airway</English>
+        </Key>
+        <Key ID="STR_KAT_Airway_ETT_Display">
+            <English>Endotracheal Airway</English>
+        </Key>
+        <Key ID="STR_KAT_Airway_ALLOW_ETT">
+            <English>Allow Endotracheal Airway</English>
+        </Key>
+        <Key ID="STR_KAT_Airway_ALLOW_ETT_DESC">
+            <English>Training level required to use a Endotracheal Airway</English>
+        </Key>
+        <Key ID="STR_KAT_Airway_TIME_ETT">
+            <English>Time for Endotracheal Airway</English>
+        </Key>
+        <Key ID="STR_KAT_Airway_TIME_ETT_DESC">
+            <English>How long it will take to use Endotracheal Airway</English>
+        </Key>
+        <Key ID="STR_KAT_Airway_laryngoscope_DESC_Short">
+            <English>A Laryngoscope is used during RSI to secure the airway</English>
+        </Key>
+        <Key ID="STR_KAT_Airway_laryngoscope_Display">
+            <English>Laryngoscope</English>
+        </Key>
+        <Key ID="STR_KAT_Airway_TIME_Visualization">
+            <English>Time To visulize the Vocal Cords</English>
+        </Key>
+        <Key ID="STR_KAT_Airway_TIME_Visualization_DESC">
+            <English>How long it will take to visulize the Vocal Cords</English>
+        </Key>
+        <Key ID="STR_KAT_Airway_Visualization_begin">
+            <English>Begin Visualization</English>
+        </Key>
+        <Key ID="STR_KAT_Airway_Visualization_cancelled">
+            <English>Visualization cancelled</English>
+        </Key>
+        <Key ID="STR_KAT_Airway_Visualization_info">
+            <English>Visualization performed, Airways are still not clear</English>
+        </Key>
+        <Key ID="STR_KAT_Airway_Visualization_start">
+            <English>Visualization Started</English>
+        </Key>
+        <Key ID="STR_KAT_Airway_Visualization_failure">
+            <English>Visualization failure</English>
+        </Key>
+        <Key ID="STR_KAT_Airway_Visualization_stop">
+            <English>Stop Visualization</English>
+        </Key>
+        <Key ID="STR_KAT_Airway_Visualization_success">
+            <English>Visualized Airway</English>
+        </Key>
+        <Key ID="STR_KAT_Airway_Visualization_display">
+            <English>Visualize Airway</English>
+        </Key>
+        <Key ID="STR_KAT_Airway_Activity_Visualization">
+            <English>%1 finished Visualization (x%2)</English>
+        </Key>
+        <Key ID="STR_KAT_Airway_SUCCES_Visualization">
+            <English>Success probability for Visualization</English>
+        </Key>
+        <Key ID="STR_KAT_Airway_SUCCES_Visualization_DESC">
+            <English>Higher, the better the probability of success</English>
+            <Czech>Čím vyšší, tím lepší šance</Czech>
+            <French>Plus élevé, les chances de réussite seront meilleures</French>
+            <Spanish>Cuanto mayor sea, mayor será la probabilidad de éxito</Spanish>
+            <Italian>Più alto è, migliori sono le probabilità di successo</Italian>
+            <Polish>Im wyższa, tym większe prawdopodobieństwo sukcesu</Polish>
+            <Portuguese>Quanto maior, melhor a probabilidade de sucesso</Portuguese>
+            <Russian>Чем выше, тем выше вероятность успеха</Russian>
+            <German>Größer = höhere Chance auf Erfolg</German>
+            <Korean>값이 높을수록 성공 확률이 높음</Korean>
+            <Japanese>高いほど、成功の可能性が高くなります</Japanese>
+            <Chinese>越高，成功的機率越大</Chinese>
+            <Chinesesimp>越高，成功的可能性越大</Chinesesimp>
+            <Turkish>Başarı olasılığı ne kadar yüksekse, o kadar iyi</Turkish>
+            <Norwegian>Jo høyere, desto bedre er sannsynligheten for suksess</Norwegian>
+            <Finnish>Mitä korkeampi, sitä suurempi on onnistumisen todennäköisyys</Finnish>
+            <Dutch>Groter betekent een hogere kans op succes</Dutch>
+        </Key>
+        <Key ID="STR_KAT_Airway_SETTING_Visualization_Interval">
+            <English>Visualization Interval</English>
+        </Key>
+        <Key ID="STR_KAT_Airway_SETTING_Visualization_Interval_DESC">
+            <English>Time between Visualization attempts</English>
+        </Key>
     </Package>
 </Project>

@@ -48,6 +48,28 @@ class CfgWeapons {
             mass = 0.5;
         };
     };
+    class kat_laryngoscope: ACE_ItemCore {
+        scope = 2;
+        author = "Katalam";
+        displayName= CSTRING(laryngoscope_Display);
+        descriptionShort =  CSTRING(laryngoscope_Desc_Short);
+        picture = QPATHTOF(ui\Laryngoscope.paa);
+        ACE_isMedicalItem = 1;
+        class ItemInfo: CBA_MiscItem_ItemInfo {
+            mass = 5;
+        };
+    };
+    class kat_ETT: ACE_ItemCore {
+        scope = 2;
+        author = "Katalam";
+        displayName= CSTRING(ETT_Display);
+        descriptionShort =  CSTRING(ETT_Desc_Short);
+        picture = QPATHTOF(ui\ETT.paa);
+        ACE_isMedicalItem = 1;
+        class ItemInfo: CBA_MiscItem_ItemInfo {
+            mass = 2.5;
+        };
+    };
     class kat_accuvac: ACE_ItemCore {
         scope = 2;
         author = "Katalam";

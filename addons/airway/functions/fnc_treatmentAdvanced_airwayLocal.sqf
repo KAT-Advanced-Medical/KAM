@@ -31,7 +31,7 @@ if ((_occlusion || _obstruction) && _requireClear)  exitWith {
 _patient setVariable [QGVAR(airway), true, true];
 _patient setVariable [QGVAR(airway_item), _classname, true];
 
-if (_classname in ["Larynxtubus", "IGEL"]) then {
+if (_classname in ["Larynxtubus", "IGEL", "ETT"]) then {
     private _currentMonitors = _patient getVariable [QEGVAR(breathing,etco2Monitor), []];
     _currentMonitors pushBack _classname;
     _patient setVariable [QEGVAR(breathing,etco2Monitor), _currentMonitors, true];
