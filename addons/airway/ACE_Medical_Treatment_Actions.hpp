@@ -49,7 +49,7 @@ class ACE_Medical_Treatment_Actions {
         treatmentTime = QGVAR(NPA_time);
         items[] = {"kat_NPA"};
         icon = QPATHTOF(ui\npa.paa);
-        callbackSuccess = QUOTE([ARR_2(_medic,_patient)] call FUNC(handleRecoveryPosition); [ARR_7(_medic,_patient,_bodyPart,_className,objNull,_usedItem,false)] call FUNC(treatmentAdvanced_airway););
+        callbackSuccess = QUOTE([ARR_2(_medic,_patient)] call FUNC(handleRecoveryPosition); [ARR_6(_medic,_patient,_bodyPart,_className,objNull,_usedItem)] call FUNC(treatmentAdvanced_airway););
     };
     class IGEL: Larynxtubus {
         displayName = CSTRING(IGEL_Display);
@@ -71,7 +71,8 @@ class ACE_Medical_Treatment_Actions {
     class Visualization: Larynxtubus {
         displayName = CSTRING(Visualization_Display);
         medicRequired = QGVAR(medLvl_ETT);
-        treatmentTime = QGVAR(ETT_time);
+        treatmentTime = QGVAR(Visualization_time);
+        consumeItem = 0;
         condition = QUOTE(!([_patient] call ACEFUNC(common,isAwake)) && (missionNamespace getVariable [ARR_2(QQGVAR(enable),true)]) && (_patient getVariable [ARR_2(QQGVAR(airway_item),'')] == '')  && !([_patient] call FUNC(checkMask)) && [ARR_4(_medic,_patient,_bodyPart,_className)] call FUNC(airwayPlacementCheck););
         items[] = {"kat_laryngoscope"};
         icon = QPATHTOF(ui\Laryngoscope.paa);

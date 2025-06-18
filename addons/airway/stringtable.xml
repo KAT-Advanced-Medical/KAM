@@ -2157,6 +2157,9 @@
         <Key ID="STR_KAT_Airway_RemoveETT_Log">
             <English>%1 removed Endotracheal Airway</English>
         </Key>
+        <Key ID="STR_KAT_Airway_Cancel_ETT">
+            <English>Remove Endotracheal Airway</English>
+        </Key>
         <Key ID="STR_KAT_Airway_ETT_DESC_Short">
             <English>A Endotracheal Airway is used to maintain and secure the Airway</English>
         </Key>
@@ -2194,7 +2197,7 @@
             <English>Visualization cancelled</English>
         </Key>
         <Key ID="STR_KAT_Airway_Visualization_info">
-            <English>Visualization performed, Airways are still not clear</English>
+            <English>Visualization performed, Unable to locate Vocal Cords</English>
         </Key>
         <Key ID="STR_KAT_Airway_Visualization_start">
             <English>Visualization Started</English>
@@ -2213,6 +2216,9 @@
         </Key>
         <Key ID="STR_KAT_Airway_Activity_Visualization">
             <English>%1 finished Visualization (x%2)</English>
+        </Key>
+        <Key ID="STR_KAT_Airway_Visualization_place">
+            <English>(Double Click) Place ETT</English>
         </Key>
         <Key ID="STR_KAT_Airway_SUCCES_Visualization">
             <English>Success probability for Visualization</English>

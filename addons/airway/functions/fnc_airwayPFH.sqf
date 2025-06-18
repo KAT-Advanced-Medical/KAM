@@ -42,13 +42,13 @@ _unit setVariable ["kat_occlusion_PFH", true];
                     };
                     private _occlusionMitigation = _unit getVariable [QGVAR(occlusionMitigation), [false, false, false]] select _level;
                     if ((floor (random 100) < GVAR(deterioratingAirways_chance)) && !(_occlusionMitigation)) then {
-                        _occlusionTarget = ((_occlusionState select _level) + 1) min 6;
+                        _occlusionTarget = ((_occlusionState select _level) + 1);
                         if (_occlusionTarget > 6) then {
-                            _occlusionState set [_level - 1 max 0, _occlusionTarget];
-                            _occlusionState set [_level + 1 min 2, _occlusionTarget];
+                            _occlusionState set [_level - 1 max 0, ((_occlusionState select (_level- 1 max 0)) + 1)];
+                            _occlusionState set [_level + 1 min 2, ((_occlusionState select (_level + 1 min 2)) + 1)];
                         };
                         if (floor (random 100) < 25) then {
-                            _occlusionState set [selectRandom [((_level + 1) min 2), ((_level - 1) max 0)], _occlusionTarget];
+                            _occlusionState set [selectRandom [((_level + 1) min 2), ((_level - 1) max 0)], (_occlusionTarget min 6)];
                         };
                         _occlusionState set [_level, _occlusionTarget];
                         _unit setVariable [QGVAR(occlusion), _occlusionState, true];

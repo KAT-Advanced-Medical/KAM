@@ -41,18 +41,40 @@ private _demandVentilation = 0;
 private _actualVentilation = 0;
 private _previousCyclePaco2 = (_bloodGas select 0);
 private _previousCyclePao2 = (_bloodGas select 1);
-private _catastrophicState = _patient getVariable [QGVAR(catastrophicAirway), [false, false]];
-private _hasCatastrophicAirway = (_catastrophicState select 0) || (_catastrophicState select 1);
 
-if (IN_CRDC_ARRST(_unit)) then { 
-    // When in arrest, there should be no effecive breaths but still a minimum O2 demand. Zero O2 demand would mean a dead patient. Actual ventilation is 1 to prevent issues in the gas tension functions
+private _occlusionArray = _unit getVariable [QEGVAR(airway,occlusion), [0, 0, 0]];
+private _obstructionArray = _unit getVariable [QEGVAR(airway,obstruction), [0, 0, 0]];
+if ((_unit getVariable [QEGVAR(airway,airway_item), ""]) isEqualTo "NPA") then {
+    _occlusionArray = _occlusionArray select [1,2];
+    _obstructionArray = _obstructionArray select [1,2];
+};
+private _occlusion = (_occlusionArray findIf { _x == 6 }) != -1;
+private _obstruction = (_obstructionArray findIf { _x != 0 }) != -1;
+
+private _catastrophicState = _unit getVariable [QGVAR(catastrophicAirway), [false, false]];
+private _hasCatastrophicAirway = ((_catastrophicState select 0) || (_catastrophicState select 1));
+
+private _airway = true;
+private _noETT = (_unit getVariable [QEGVAR(airway,airway_item), ""] isNotEqualTo "ETT");
+if (((_obstruction || _occlusion) && _noETT) || _hasCatastrophicAirway) then {
+    _airway = false;
+};
+switch (true) do {
+    case (!_airway): { 
+    _demandVentilation = MINIMUM_VENTILATION;
+    _respiratoryDepression = 1;
+    _respiratoryRate = 0;
+    _respiratoryDepth = 0;
+    _actualVentilation = 1;
+    };
+    case (IN_CRDC_ARRST(_unit)): { 
     _demandVentilation = MINIMUM_VENTILATION;
     _respiratoryDepression = 1;
     _respiratoryRate = [0, 20] select (_unit getVariable [QEGVAR(breathing,BVMInUse), false]);
     _respiratoryDepth = [0, 10] select (_unit getVariable [QEGVAR(breathing,BVMInUse), false]);
-    _actualVentilation = 1;
-} else {
-    // Ventilatory Demand comes from Heart Rate with increase demand from PaCO2 levels 
+    _actualVentilation = 1; 
+    };
+    default { // Ventilatory Demand comes from Heart Rate with increase demand from PaCO2 levels 
     _demandVentilation = ((((_actualHeartRate * HEART_RATE_CO2_MULTIPLIER) / _anerobicPressure) + ((_previousCyclePaco2 - DEFAULT_PACO2) * 200)) max MINIMUM_VENTILATION);
 
     // Respiratory Rate is supressed by Opioids 
@@ -89,8 +111,8 @@ if (IN_CRDC_ARRST(_unit)) then {
         _airwayResistance = linearConversion [0, 6, _occlusion, 1, 0.2, true];
     };
     _actualVentilation = (_tidalVolume * _respiratoryRate) * _airwayResistance;
+    };
 };
-
 private _paco2 = 40;
 
 if (EGVAR(breathing,paco2Active)) then {
@@ -111,10 +133,9 @@ if (EGVAR(pharma,kidneyAction)) then {
     // pH is from the Henderson-Hasselbalch equation
     _pH = (6.1 + log(24 / ((0.03 - 0.001 * (_temperature - DEFAULT_TEMPERATURE)) * _paco2))) - ((_externalPh max 1) / 2000);
 };
-
 // Fractional Oxygen when breathing normal air is 0.21, 1 when breathing 100% Oxygen, and 0 when no air is being brought into the lungs
 private _fio2 = switch (true) do {
-    case (((((_unit getVariable [QEGVAR(airway,occlusion), [0, 0, 0]]) findIf { _x == 6 }) != -1) || (((_unit getVariable [QGVAR(obstruction), [0, 0, 0]]) findIf { _x != 0 }) != -1) && (_patient getVariable [QGVAR(airway_item), ""] isNotEqualTo "ETT")) || _hasCatastrophicAirway): { 
+    case (!_airway): { 
         [0, DEFAULT_FIO2] select ((_unit getVariable [QEGVAR(airway,recovery), false]) || (_unit getVariable [QEGVAR(airway,overstretch), false])) 
     };
     case ((_respiratoryRate == 0) && (EGVAR(breathing,SpO2_perfusion))): { 0 };
@@ -123,6 +144,7 @@ private _fio2 = switch (true) do {
     case (_unit getVariable [QEGVAR(breathing,oxygenTankConnected), false]): { 1 };
     default { DEFAULT_FIO2 };
 };
+
 
 // Alveolar Gas equation. PALVO2 is largely impacted by Barometric Pressure and FiO2
 private _pALVo2 = ((_fio2 * (_baroPressure - 47)) - (_paco2 / _anerobicPressure)) max 1;
@@ -151,7 +173,6 @@ private _o2Sat = ((_pao2 max 1)^2.7 / ((25 - (((_pH / DEFAULT_PH) - 1) * 150))^2
 if (_unit getVariable [QEGVAR(airway,overstretch), false]) then {
     _o2Sat = _o2Sat * 0.95;
 };
-
 _unit setVariable [VAR_BREATHING_RATE, (_respiratoryRate max 0), _syncValues];
 _unit setVariable [VAR_BLOOD_GAS, [_paco2, _pao2, _o2Sat, 24, _pH, _etco2], _syncValues];
 

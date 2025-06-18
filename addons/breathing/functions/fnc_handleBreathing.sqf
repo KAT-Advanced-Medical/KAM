@@ -26,17 +26,15 @@ if (!local _unit) then {
 };
 private _occlusionArray = _patient getVariable [QEGVAR(airway,occlusion), [0, 0, 0]];
 private _obstructionArray = _patient getVariable [QEGVAR(airway,obstruction), [0, 0, 0]];
-
-
-if (_patient getVariable [QGVAR(airway_item), ""] isEqualTo "NPA") then {
-    _occlusionArray = _occlusionArray select [1];
-    _obstructionArray = _obstructionArray select [1];
+if ((_patient getVariable [QEGVAR(airway,airway_item), ""]) isEqualTo "NPA") then {
+    _occlusionArray = _occlusionArray select [1,2];
+    _obstructionArray = _obstructionArray select [1,2];
 };
 private _occlusion = (_occlusionArray findIf { _x == 6 }) != -1;
 private _obstruction = (_obstructionArray findIf { _x != 0 }) != -1;
 
 private _catastrophicState = _patient getVariable [QGVAR(catastrophicAirway), [false, false]];
-private _hasCatastrophicAirway = (_catastrophicState select 0 && (patient getVariable [QGVAR(airway_item), ""] isNotEqualTo "NPA")) || (_catastrophicState select 1);
+private _hasCatastrophicAirway = ((_catastrophicState select 0) || (_catastrophicState select 1));
 
 [{
     params ["_args", "_idPFH"];
@@ -49,13 +47,12 @@ private _hasCatastrophicAirway = (_catastrophicState select 0 && (patient getVar
     private _airway = true;
     private _breathing = true;
 
-    if ((_unit getVariable [QEGVAR(chemical,airPoisoning), false]) || (_unit getVariable [QGVAR(tensionpneumothorax), [false, false]] select 0) || (_unit getVariable [QGVAR(tensionpneumothorax), [false, false]] select 1) ||(_unit getVariable [QGVAR(hemopneumothorax), [false, false]] select 0) || (_unit getVariable [QGVAR(hemopneumothorax), [false, false]] select 1)) then {
+    if ((_unit getVariable [QEGVAR(chemical,airPoisoning), false]) || (_tension select 0) || (_tension select 1) || (_hemo select 0) || (_hemo select 1)) then {
         _breathing = false;
     };
-
-    if ((((_obstruction) || (_occlusion)) && (_patient getVariable [QGVAR(airway_item), ""] isNotEqualTo "ETT")) || (_hasCatastrophicAirway)) then {
+    private _noETT = (_patient getVariable [QEGVAR(airway,airway_item), ""] isNotEqualTo "ETT");
+    if (((_obstruction || _occlusion) && _noETT) || _hasCatastrophicAirway) then {
         _airway = false;
-        systemChat STR _airway;
     };
 
     private _isAwake = [_unit] call ACEFUNC(common,isAwake);

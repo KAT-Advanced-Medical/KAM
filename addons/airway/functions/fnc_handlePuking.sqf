@@ -32,7 +32,7 @@ if ((_unit getVariable ["kat_pukeActive_PFH", false]) || !(GVAR(enable))) exitWi
         _nauseaMult = abs log _nauseaMult;
         _nauseaMult = _nauseaMult max 0.1;
     };
-    if (_unit getVariable [QGVAR(airway_item), ""] isEqualTo "Larynxtubus") then {
+    if (_unit getVariable [QGVAR(airway_item), ""] in ["Larynxtubus", "ETT"]) then {
         _nauseaMult = _nauseaMult / 4
     };
     private _delay = (GVAR(occlusion_repeatTimer) / _nauseaMult) * random [0.8, 1, 1.3];
@@ -41,9 +41,35 @@ if ((_unit getVariable ["kat_pukeActive_PFH", false]) || !(GVAR(enable))) exitWi
         params ["_unit"];
         if (random (100) <= GVAR(airwayPukeChance)) then {
         private _occlusionState = _unit getVariable [QGVAR(occlusion), [0, 0, 0]];
-        _occlusionState set [0, ((_occlusionState select 0) + floor random [1, 3, 6]) min 6];
-        _occlusionState set [1, ((_occlusionState select 1) + floor random [1, 3, 6]) min 6];
-        _occlusionState set [2, ((_occlusionState select 2) + floor random [1, 3, 6]) min 6];
+        private _usedItem = _unit getVariable [QGVAR(airway_item), ""];
+        switch (true) do {
+            case (_usedItem isEqualTo "Larynxtubus"): {
+                _occlusionState set [1, ((_occlusionState select 1) + floor random [1, 2, 6]) min 6];
+            };
+            case (_usedItem isEqualTo "IGEL"): {
+                _occlusionState set [0, ((_occlusionState select 0) + floor random [1, 3, 6]) min 6];
+                _occlusionState set [1, ((_occlusionState select 1) + floor random [1, 2, 4]) min 6];
+            };
+            case (_usedItem isEqualTo "ETT"): {
+                _occlusionState set [0, ((_occlusionState select 0) + floor random [1, 3, 6]) min 6];
+                _occlusionState set [1, ((_occlusionState select 1) + floor random [1, 2, 4]) min 6];
+            };
+            case (_usedItem isEqualTo "NPA"): {
+                _occlusionState set [0, ((_occlusionState select 0) + floor random [1, 3, 6]) min 6];
+                _occlusionState set [1, ((_occlusionState select 1) + floor random [1, 2, 4]) min 6];
+                _occlusionState set [2, ((_occlusionState select 2) + floor random [1, 1, 3]) min 6];
+            };
+            case (_usedItem isEqualTo "Guedeltubes"): {
+                _occlusionState set [0, ((_occlusionState select 0) + floor random [1, 3, 6]) min 6];
+                _occlusionState set [1, ((_occlusionState select 1) + floor random [1, 2, 4]) min 6];
+                _occlusionState set [2, ((_occlusionState select 2) + floor random [1, 1, 3]) min 6];
+            };
+        default {
+            _occlusionState set [0, ((_occlusionState select 0) + floor random [1, 3, 6]) min 6];
+            _occlusionState set [1, ((_occlusionState select 1) + floor random [1, 2, 4]) min 6];
+            _occlusionState set [2, ((_occlusionState select 2) + floor random [1, 1, 3]) min 6];
+        };
+        };
         _unit setVariable [QGVAR(occlusion), _occlusionState, true];
         _unit setVariable [QGVAR(hasPuked), true, true];
         for "_i" from 0 to 2 do {

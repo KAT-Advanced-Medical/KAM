@@ -24,14 +24,12 @@ _patient setVariable [QGVAR(overstretch), true, true];
 private _output = LLSTRING(RecoveryPosition_Ready);
 [_output, 2, _medic] call ACEFUNC(common,displayTextStructured);
 
-_patient setVariable [QGVAR(wasOccluded), (_patient getVariable [QGVAR(occluded), false])];
-
 if (GVAR(RecoveryPosition_TimeToDrain) > 0) then {
    [{
     params ["_args", "_idPFH"];
     _args params ["_unit"];
     private _occlusionState = _unit getVariable [QGVAR(occlusion), [0, 0, 0]];
-    if (!(alive _unit) || {(_occlusionState select 0 == 0) && (_occlusionState select 1 == 0) && (_occlusionState select 2 == 0)}) exitWith {
+    if (!(alive _unit)) exitWith {
         [_idPFH] call CBA_fnc_removePerFrameHandler;
     };
     private _occlusionState = _unit getVariable [QGVAR(occlusion), [0, 0, 0]];

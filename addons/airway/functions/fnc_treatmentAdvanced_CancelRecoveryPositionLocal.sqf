@@ -21,8 +21,6 @@ params ["_medic", "_patient", ["_delayed", false]];
 
 _patient setVariable [QGVAR(recovery), false, true];
 _patient setVariable [QGVAR(overstretch), false, true];
-_patient setVariable [QGVAR(occluded), (_patient getVariable [QGVAR(wasOccluded), [0,0,0]]), true];
-_patient call FUNC(handlePuking);
 
 private _output = LLSTRING(RecoveryPosition_Cancel);
 

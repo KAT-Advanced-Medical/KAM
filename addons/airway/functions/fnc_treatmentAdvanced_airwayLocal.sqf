@@ -23,7 +23,7 @@ private _occlusion = ((_patient getVariable [QGVAR(occlusion), [0, 0, 0]]) findI
 private _obstruction = ((_patient getVariable [QGVAR(obstruction), [0, 0, 0]]) findIf { _x != 0 }) != -1;
 
 
-if ((_occlusion || _obstruction) && _requireClear)  exitWith {
+if ((_occlusion || (_obstruction && !(_patient getVariable [QGVAR(overstretch), false])) ) && !(_classname in ["NPA"])) exitWith {
     [QGVAR(airwayFeedback), [_medic, LLSTRING(AirwayStatus_NotClearForItem)], _medic] call CBA_fnc_targetEvent;
     [_medic, _usedItem] call ACEFUNC(common,addToInventory);
 };
@@ -39,6 +39,8 @@ switch (true) do {
     };
     case (_usedItem isEqualTo "ETT"): {
         _patient setVariable [QGVAR(airwayStatus), [1, 1, 1], true];
+        [GVAR(PlaceETT), "keydown"] call CBA_fnc_removeKeyHandler;
+        _patient setVariable [QGVAR(visualizationActive), false, true];
     };
     case (_usedItem isEqualTo "NPA"): {
         _patient setVariable [QGVAR(airwayStatus), [1, 0, 0], true];

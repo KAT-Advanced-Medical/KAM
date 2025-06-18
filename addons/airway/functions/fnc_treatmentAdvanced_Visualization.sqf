@@ -25,6 +25,7 @@ params ["_medic", "_patient", "_bodyPart"];
 _patient setVariable [QGVAR(visualizationActive), true, true];
 
 GVAR(visualizationTarget) = _patient;
+GVAR(visualizationSource) = _medic;
 
 GVAR(visualizationCancel_EscapeID) = [0x01, [false, false, false], {
     GVAR(visualizationTarget) setVariable [QGVAR(visualizationActive), false, true];
@@ -32,6 +33,11 @@ GVAR(visualizationCancel_EscapeID) = [0x01, [false, false, false], {
 
 GVAR(visualizationCancel_MouseID) = [0xF0, [false, false, false], {
     GVAR(visualizationTarget) setVariable [QGVAR(visualizationActive), false, true];
+}, "keydown", "", false, 0] call CBA_fnc_addKeyHandler;
+
+GVAR(PlaceETT) = [0xF1, [false, false, false], {
+[GVAR(visualizationSource), GVAR(visualizationTarget), "head", "ETT"] call ACEFUNC(medical_treatment,treatment);
+GVAR(visualizationTarget) setVariable [QGVAR(visualizationActive), false, true];
 }, "keydown", "", false, 0] call CBA_fnc_addKeyHandler;
 
 ACEGVAR(medical_gui,pendingReopen) = false; // Prevent medical menu from reopening
@@ -56,7 +62,7 @@ GVAR(visualization_timeOut) = true;
 [{
     params ["_medic", "_patient", "_notInVehicle"];
 
-    [LLSTRING(visualization_stop), "", ""] call ACEFUNC(interaction,showMouseHint);
+    [LLSTRING(visualization_stop), LLSTRING(visualization_place), ""] call ACEFUNC(interaction,showMouseHint);
     [LLSTRING(visualization_start), 1.5, _medic] call ACEFUNC(common,displayTextStructured);
 
     [{
@@ -100,14 +106,6 @@ GVAR(visualization_timeOut) = true;
                 if (((_patient getVariable [QGVAR(occlusion), [0, 0, 0]]) findIf { _x < 1 }) != -1) then {
                     if(random 100 < (GVAR(probability_visualization) * 1/*_visualizationDifficulty*/)) then {
                         _patient setVariable [QGVAR(isVisualized), true, true];
-                        private _canTreat = [_medic, _patient, "Head", "ETT"] call ACEFUNC(medical_treatment,canTreat);
-                            if (_canTreat) then {
-                                GVAR(PlaceETT) = [0xF1, [false, false, false], {
-                                [_medic, _patient, "Head", "ETT"] call ACEFUNC(medical_treatment,treatment);
-                                _patient setVariable [QGVAR(visualizationActive), false, true];
-                                [GVAR(PlaceETT), "keydown"] call CBA_fnc_removeKeyHandler;
-                                }, "keydown", "", false, 0] call CBA_fnc_addKeyHandler;
-                            };
                         [{_patient setVariable [QGVAR(isVisualized), false, true]; }, [_patient], 60] call CBA_fnc_waitAndExecute;
                         [LLSTRING(visualization_success), 2, _medic] call ACEFUNC(common,displayTextStructured);
                     } else {
