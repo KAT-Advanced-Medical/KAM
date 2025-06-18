@@ -10,7 +10,7 @@ class ACE_Medical_Treatment_Actions {
         treatmentTime = QGVAR(Larynxtubus_time);
         items[] = {"kat_larynx"};
         condition = QUOTE(!([_patient] call ACEFUNC(common,isAwake)) && (missionNamespace getVariable [ARR_2(QQGVAR(enable),true)]) && !(_patient getVariable [ARR_2(QQGVAR(airway_item),'')] == 'Larynxtubus') && (_patient getVariable [ARR_2(QQGVAR(airway_item),'')] == '')  && !([_patient] call FUNC(checkMask)));
-        callbackSuccess = QUOTE([ARR_3(_medic,_patient,(_patient getVariable [ARR_2(QQGVAR(occluded),false)]))] call FUNC(handleRecoveryPosition); [ARR_6(_medic,_patient,_bodyPart,_className,objNull,_usedItem)] call FUNC(treatmentAdvanced_airway););
+        callbackSuccess = QUOTE([ARR_2(_medic,_patient)] call FUNC(handleRecoveryPosition); [ARR_6(_medic,_patient,_bodyPart,_className,objNull,_usedItem)] call FUNC(treatmentAdvanced_airway););
         callbackFailure = "";
         callbackProgress = "";
         callbackCondition = "useCondition";
