@@ -1801,6 +1801,7 @@
             <Italian>KAT - ADV Medicale: Vie Aeree</Italian>
             <German>KAT - ADV Medical: Atemwege</German>
             <Japanese>KAM - 気道 (Airway)</Japanese>
+            <Czech>KAT - ADV Zdravotní modul: Horní dýchací cesty</Czech>
         </Key>
         <Key ID="STR_KAT_Airway_checkAirway">
             <English>Check Airway</English>

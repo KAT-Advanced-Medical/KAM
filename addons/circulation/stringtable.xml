@@ -2597,6 +2597,7 @@
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_AdvRhythm_PEAEnabled">
             <English>Enable PEA</English>
+            <Czech>Povolit PEA</Czech>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_AdvRhythm_VTChance">
             <English>VT Chance</English>
@@ -3619,6 +3620,7 @@
             <Italian>KAT - ADV Medica: Circolazione</Italian>
             <German>KAT - ADV Medical: Zirkulation</German>
             <Japanese>KAM - 循環器系 (Circulation)</Japanese>
+            <Czech>KAT - ADV Zdravotnický modul: Krevní oběh</Czech>
         </Key>
         <Key ID="STR_KAT_Circulation_crosspanel">
             <English>Blood groups cheat sheet</English>

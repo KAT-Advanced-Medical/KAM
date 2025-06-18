@@ -294,6 +294,7 @@
             <Italian>Impostazioni Ipotermia</Italian>
             <German>Hypothermieeinstellungen</German>
             <Japanese>低体温症設定</Japanese>
+            <Czech>Nastavení hypothermie</Czech>
         </Key>
         <Key ID="STR_KAT_Hypothermia_Use_Handwarmer">
             <English>Use Hand Warmer</English>
@@ -331,6 +332,7 @@
             <Italian>KAT - ADV Medica: Ipotermia</Italian>
             <German>KAT - ADV Medical: Hypothermie</German>
             <Japanese>KAM - 低体温症 (Hypothermia)</Japanese>
+            <Czech>KAT - ADV Zdravotní modul: Hypotermie</Czech>
         </Key>
         <Key ID="STR_KAT_Hypothermia_perform">
             <English>Performing</English>

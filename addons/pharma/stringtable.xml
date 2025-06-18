@@ -2772,6 +2772,7 @@
             <Italian>Impostazioni CWMP</Italian>
             <German>CWMP Einstellungen</German>
             <Japanese>戦闘傷病治療薬(CWMP)設定</Japanese>
+            <Czech>CWMP nastavení</Czech>
         </Key>
         <Key ID="STR_KAT_Pharma_SubCategory_Caffeine">
             <English>Caffeine Settings</English>
@@ -3519,6 +3520,7 @@
             <Italian>KAT - ADV Medica: Farmaceutica</Italian>
             <German>KAT - ADV Medical: Medikamente</German>
             <Japanese>KAM - 薬学 (Pharmacy)</Japanese>
+            <Czech>KAT- ADV Zdravotní modul: Léky</Czech>
         </Key>
         <Key ID="STR_KAT_Pharma_coagulation_Bandaged">
             <English>Blood clotting temporarily closed a wound on %1</English>
@@ -3775,6 +3777,7 @@
             <Italian>Consenti l'uso dei CWMP</Italian>
             <German>Erlaube die Verwendung von CWMP</German>
             <Japanese>戦闘傷病治療薬(CWMP)の許可</Japanese>
+            <Czech>Povolení k použítí CWMP</Czech>
         </Key>
         <Key ID="STR_KAT_Pharma_medLvl_Caffeine">
             <English>Allow using Caffeine</English>
@@ -3782,6 +3785,7 @@
             <Italian>Consenti l'uso della caffeina</Italian>
             <German>Erlaube die Verwendung von Koffein</German>
             <Japanese>カフェインの許可</Japanese>
+            <Czech>Povolení k použití kofeinu</Czech>
         </Key>
         <Key ID="STR_KAT_Pharma_medLvl_Carbonate">
             <English>Allow using Carbonate</English>
@@ -4195,6 +4199,7 @@
             <Italian>Tempo di trattamento per il CWMP</Italian>
             <German>Anwendungszeit für CWMP</German>
             <Japanese>戦闘傷病治療薬(CWMP)の所要時間</Japanese>
+            <Czech>Čas vyléčení s CWMP</Czech>
         </Key>
         <Key ID="STR_KAT_Pharma_treatmentTime_Caffeine">
             <English>Treatment time for Caffeine</English>
@@ -4202,6 +4207,7 @@
             <Italian>Tempo di trattamento per la Caffeina</Italian>
             <German>Anwendungszeit für Koffein</German>
             <Japanese>カフェインの所要時間</Japanese>
+            <Czech>Čas vyléčení s kofeinem</Czech>
         </Key>
         <Key ID="STR_KAT_Pharma_treatmentTime_Carbonate">
             <English>Treatment time for Carbonate</English>

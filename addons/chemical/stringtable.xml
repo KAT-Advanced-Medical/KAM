@@ -888,6 +888,7 @@
             <Italian>KAT - ADV Medica - Agenti Chimici</Italian>
             <German>KAT - ADV Medical: Chemie</German>
             <Japanese>KAM - 化学戦 (Chemical)</Japanese>
+            <Czech>KAT - ADV Zdravotní modul: Chemikálie</Czech>
         </Key>
         <Key ID="STR_KAT_Chemical_giveGasMask_action">
             <English>Put on gas mask</English>
