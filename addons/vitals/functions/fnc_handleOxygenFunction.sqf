@@ -41,6 +41,8 @@ private _demandVentilation = 0;
 private _actualVentilation = 0;
 private _previousCyclePaco2 = (_bloodGas select 0);
 private _previousCyclePao2 = (_bloodGas select 1);
+private _catastrophicState = _patient getVariable [QGVAR(catastrophicAirway), [false, false]];
+private _hasCatastrophicAirway = (_catastrophicState select 0) || (_catastrophicState select 1);
 
 if (IN_CRDC_ARRST(_unit)) then { 
     // When in arrest, there should be no effecive breaths but still a minimum O2 demand. Zero O2 demand would mean a dead patient. Actual ventilation is 1 to prevent issues in the gas tension functions
@@ -112,7 +114,7 @@ if (EGVAR(pharma,kidneyAction)) then {
 
 // Fractional Oxygen when breathing normal air is 0.21, 1 when breathing 100% Oxygen, and 0 when no air is being brought into the lungs
 private _fio2 = switch (true) do {
-    case ((selectMax (_unit getVariable [QEGVAR(airway,occlusion), [0, 0, 0]]) == 6) || (((_unit getVariable [QGVAR(obstruction), [0, 0, 0]]) findIf { _x != 0 }) != -1)): { 
+    case (((((_unit getVariable [QEGVAR(airway,occlusion), [0, 0, 0]]) findIf { _x == 6 }) != -1) || (((_unit getVariable [QGVAR(obstruction), [0, 0, 0]]) findIf { _x != 0 }) != -1) && (_patient getVariable [QGVAR(airway_item), ""] isNotEqualTo "ETT")) || _hasCatastrophicAirway): { 
         [0, DEFAULT_FIO2] select ((_unit getVariable [QEGVAR(airway,recovery), false]) || (_unit getVariable [QEGVAR(airway,overstretch), false])) 
     };
     case ((_respiratoryRate == 0) && (EGVAR(breathing,SpO2_perfusion))): { 0 };

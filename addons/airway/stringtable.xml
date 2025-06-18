@@ -2154,7 +2154,7 @@
         <Key ID="STR_KAT_Airway_SETTING_ENABLE_Catastrophic_DESC">
             <English>Enables Catastrophic Airways, needing surgery to correct</English>
         </Key>
-        <Key ID="STR_KAT_Airway_RemoveETA_Log">
+        <Key ID="STR_KAT_Airway_RemoveETT_Log">
             <English>%1 removed Endotracheal Airway</English>
         </Key>
         <Key ID="STR_KAT_Airway_ETT_DESC_Short">

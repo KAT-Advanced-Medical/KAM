@@ -21,6 +21,7 @@ params ["_medic", "_patient", "_item"];
 
 _patient setVariable [QGVAR(airway_item), "", true];
 _patient setVariable [QGVAR(airway), false, true];
+_patient setVariable [QGVAR(airwayStatus), [0, 0, 0], true];
 _patient call FUNC(handleAirway);
 
 if !(GVAR(ReusableAirwayItems)) exitWith {};

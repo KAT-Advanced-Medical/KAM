@@ -24,6 +24,19 @@ _unit setVariable ["kat_O2Breathing_PFH", true];
 if (!local _unit) then {
     [QGVAR(handleBreathing), [_unit], _unit] call CBA_fnc_targetEvent;
 };
+private _occlusionArray = _patient getVariable [QEGVAR(airway,occlusion), [0, 0, 0]];
+private _obstructionArray = _patient getVariable [QEGVAR(airway,obstruction), [0, 0, 0]];
+
+
+if (_patient getVariable [QGVAR(airway_item), ""] isEqualTo "NPA") then {
+    _occlusionArray = _occlusionArray select [1];
+    _obstructionArray = _obstructionArray select [1];
+};
+private _occlusion = (_occlusionArray findIf { _x == 6 }) != -1;
+private _obstruction = (_obstructionArray findIf { _x != 0 }) != -1;
+
+private _catastrophicState = _patient getVariable [QGVAR(catastrophicAirway), [false, false]];
+private _hasCatastrophicAirway = (_catastrophicState select 0 && (patient getVariable [QGVAR(airway_item), ""] isNotEqualTo "NPA")) || (_catastrophicState select 1);
 
 [{
     params ["_args", "_idPFH"];
@@ -40,8 +53,9 @@ if (!local _unit) then {
         _breathing = false;
     };
 
-    if ((_unit getVariable [QEGVAR(airway,occluded), false]) || (_unit getVariable [QEGVAR(airway,obstruction), false])) then {
+    if ((((_obstruction) || (_occlusion)) && (_patient getVariable [QGVAR(airway_item), ""] isNotEqualTo "ETT")) || (_hasCatastrophicAirway)) then {
         _airway = false;
+        systemChat STR _airway;
     };
 
     private _isAwake = [_unit] call ACEFUNC(common,isAwake);
@@ -61,8 +75,6 @@ if (!local _unit) then {
     private _multiplierNegative = GVAR(SpO2_MultiplyNegative);
     private _multiplierOxygen = GVAR(BVMOxygen_Multiplier);
     private _perfusionActive = false;
-    private _occlusion = ((_patient getVariable [QEGVAR(airway,occlusion), [0, 0, 0]]) findIf { _x == 6 }) != -1;
-    private _obstruction = ((_patient getVariable [QEGVAR(airway,obstruction), [0, 0, 0]]) findIf { _x != 0 }) != -1;
 
     if (GVAR(SpO2_cardiacActive)) then {
         private _ht = _unit getVariable [QEGVAR(circulation,ht), []];

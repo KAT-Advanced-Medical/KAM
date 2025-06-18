@@ -31,8 +31,15 @@ private _breathing_log = localize ACELSTRING(medical_treatment,Check_Pulse_Norma
 private _breath = "";
 private _breathRate = "RR: ";
 
-private _occlusion = ((_patient getVariable [QEGVAR(airway,occlusion), [0, 0, 0]]) findIf { _x == 6 }) != -1;
-private _obstruction = ((_patient getVariable [QEGVAR(airway,obstruction), [0, 0, 0]]) findIf { _x != 0 }) != -1;
+if (_patient getVariable [QGVAR(airway_item), ""] isEqualTo "NPA") then {
+    _occlusionArray = _occlusionArray select [1];
+    _obstructionArray = _obstructionArray select [1];
+};
+private _occlusion = (_occlusionArray findIf { _x == 6 }) != -1;
+private _obstruction = (_obstructionArray findIf { _x != 0 }) != -1;
+
+private _catastrophicState = _patient getVariable [QGVAR(catastrophicAirway), [false, false]];
+private _hasCatastrophicAirway = (_catastrophicState select 0 && (patient getVariable [QGVAR(airway_item), ""] isNotEqualTo "NPA")) || (_catastrophicState select 1);
 
 private _respiratoryDepth = _patient getVariable [QEGVAR(vitals,respiratoryDepth), 10];
 if ((_respiratoryDepth < 8.5) || (_patient getVariable [QEGVAR(chemical,airPoisoning), false])) then {
@@ -68,8 +75,12 @@ if ([_medic] call ACEFUNC(common,isMedic)) then {
 
 _output = format ["%1%2, %3", _breathing ,_breath, _breathRate];
 _output_log = format ["%1%2, %3", _breathing_log, _breath, _breathRate];
+private _isObstructed = (_obstruction && !(_patient getVariable [QEGVAR(airway,overstretch), false]));
+private _isFullyObstructed = ((_isObstructed) || _occlusion) && (_patient getVariable [QGVAR(airway_item), ""] isNotEqualTo "ETT");
+systemchat str _isFullyObstructed;
+systemchat str _isObstructed;
 
-if (_hr == 0 || !(alive _patient) || (_obstruction && !(_patient getVariable [QEGVAR(airway,overstretch), false])) || _occlusion || (_tension select 0) || (_tension select 1) || (_hemo select 0) || (_hemo select 1)) then {
+if (_hr == 0 || !(alive _patient) || (((_isObstructed) || _occlusion) && (_patient getVariable [QGVAR(airway_item), ""] isNotEqualTo "ETT")) || (_tension select 0) || (_tension select 1) || (_hemo select 0) || (_hemo select 1)) then {
     _output = LLSTRING(breathing_none);
     _output_log = ACELSTRING(medical_treatment,Check_Pulse_None);
 };

@@ -30,6 +30,24 @@ if ((_occlusion || _obstruction) && _requireClear)  exitWith {
 
 _patient setVariable [QGVAR(airway), true, true];
 _patient setVariable [QGVAR(airway_item), _classname, true];
+switch (true) do {
+    case (_usedItem isEqualTo "Larynxtubus"): {
+        _patient setVariable [QGVAR(airwayStatus), [1, 1, 0], true];
+    };
+    case (_usedItem isEqualTo "IGEL"): {
+        _patient setVariable [QGVAR(airwayStatus), [1, 1, 0], true];
+    };
+    case (_usedItem isEqualTo "ETT"): {
+        _patient setVariable [QGVAR(airwayStatus), [1, 1, 1], true];
+    };
+    case (_usedItem isEqualTo "NPA"): {
+        _patient setVariable [QGVAR(airwayStatus), [1, 0, 0], true];
+    };
+    case (_usedItem isEqualTo "Guedeltubes"): {
+        _patient setVariable [QGVAR(airwayStatus), [1, 0, 0], true];
+    };
+    default {};
+};
 
 if (_classname in ["Larynxtubus", "IGEL", "ETT"]) then {
     private _currentMonitors = _patient getVariable [QEGVAR(breathing,etco2Monitor), []];
