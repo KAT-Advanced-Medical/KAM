@@ -18,10 +18,9 @@
  * Public: No
  */
 
-params ["_medic", "_patient", "_entry", "_side"];
+params ["_medic", "_patient", "_entry"];
 
-private _chestTubeArray = _patient getVariable [QGVAR(chestTube), [0,0]];
-private _liveTube = _chestTubeArray select _side;
+private _cricothyrotomy = _patient getVariable [QGVAR(cricothyrotomy), 0];
 private _surgeryString = "";
 private _number = _entry;
 
@@ -58,23 +57,21 @@ private _localAnesthesia = (_patient getVariable [QEGVAR(pharma,localAnesthesia)
         [_patient, [0.7, 0.8, 0.9] select (floor random 3)] call ACEFUNC(medical_status,adjustPainLevel);
     };
 
-if (_number == _liveTube) exitWith {
+if (_number == _cricothyrotomy) exitWith {
     switch (_entry) do {
         case (0.1):{
             _surgeryString = LSTRING(SPREAD);
         };
         case (0.3):{
-            _surgeryString = LSTRING(PREPARED);
+            _surgeryString = LSTRING(PLACED);
         };
     };
 
-    [_patient, "quick_view", LSTRING(ChestTube_log), [[_medic] call ACEFUNC(common,getName), _surgeryString, STRING_BODY_PARTS select 2]] call ACEFUNC(medical_treatment,addToLog);
+    [_patient, "quick_view", LSTRING(ChestTube_log), [[_medic] call ACEFUNC(common,getName), _surgeryString, STRING_BODY_PARTS select 1]] call ACEFUNC(medical_treatment,addToLog);
 
-    _liveTube = _liveTube + 0.2;
-
-    _chestTubeArray set [_side, _liveTube];
-    _patient setVariable [QGVAR(chestTube), _chestTubeArray, true];
+    _cricothyrotomy = _cricothyrotomy + 0.2;
+    _patient setVariable [QGVAR(cricothyrotomy), _cricothyrotomy, true];
 };
 
-private _output = LLSTRING(chest_tube_fail);
+private _output = LLSTRING(cricothyrotomy_fail);
 [_output, 1.5, _medic] call ACEFUNC(common,displayTextStructured);

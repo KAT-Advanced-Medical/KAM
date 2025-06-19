@@ -1,3 +1,4 @@
+
 #include "..\script_component.hpp"
 /*
  * Author: Glowbal, Mazinski
@@ -94,6 +95,8 @@ private _opioidEffectAdjustment = 0;
 private _opioidDepressionAdjustment = 0;
 private _contractilityAdjustment = 0;
 private _nauseaMultAdjustment = 0;
+private _sedationAdjustment = 0;
+private _paralysisAdjustment = 0;
 private _adjustments = _unit getVariable [VAR_MEDICATIONS,[]];
 TRACE_1("HUV",_adjustments);
 if (_adjustments isNotEqualTo []) then {
@@ -116,7 +119,8 @@ if (_adjustments isNotEqualTo []) then {
             if (_respiratoryRate != 0) then {_respiratoryRateAdjustment = _respiratoryRateAdjustment + _respiratoryRate * _effectRatio; };
             if (_contractility != 0) then {_contractilityAdjustment = _contractilityAdjustment + _contractility * _effectRatio; };
             if (_nauseaMult != 0) then {_nauseaMultAdjustment = _nauseaMultAdjustment + _nauseaMult * _effectRatio; };
-            if (_sedation == "true") then {_sedationAdjustment = (_sedationAdjustment + 1 * _effectRatio) min 1; };
+            if (_sedation == "true") then {_sedationAdjustment = (_sedationAdjustment + (1 * _effectRatio)) min 1; };
+            if (_paralysis == "true") then {_paralysisAdjustment = (_paralysisAdjustment + (1 * _effectRatio)) min 1; };
         };
     } forEach _adjustments;
 
@@ -135,6 +139,7 @@ if (_adjustments isNotEqualTo []) then {
 [_unit, _contractilityAdjustment, _deltaT, _syncValues] call FUNC(updateContractility);
 [_unit, _nauseaMultAdjustment, _deltaT, _syncValues] call FUNC(updateNauseaMult);
 [_unit, _sedationAdjustment, _deltaT, _syncValues] call FUNC(updateSedation);
+[_unit, _paralysisAdjustment, _deltaT, _syncValues] call FUNC(updateParalysis);
 [_unit, POISON_DECREASE, _deltaT, _syncValues] call FUNC(handlePoisoning);
 
 private _aceAnFatigue = 0;

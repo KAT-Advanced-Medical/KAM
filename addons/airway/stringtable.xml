@@ -2248,5 +2248,44 @@
         <Key ID="STR_KAT_Airway_SETTING_Visualization_Interval_DESC">
             <English>Time between Visualization attempts</English>
         </Key>
+        <Key ID="STR_KAT_Airway_ChestTube_log">
+            <English>%1 %2 the incision</English>
+        </Key>
+        <Key ID="STR_KAT_Airway_incision_log">
+            <English>%1 made a neck incision</English>
+        </Key>
+        <Key ID="STR_KAT_Airway_chest_tube_fail">
+            <English>Surgical Airway Action Failed</English>
+        </Key>
+        <Key ID="STR_KAT_Airway_Scalpel_Use">
+            <English>Perform Incision</English>
+        </Key>
+        <Key ID="STR_KAT_Airway_Scalpel_Action">
+            <English>Performing Incision</English>
+        </Key>
+        <Key ID="STR_KAT_Airway_Retractor_Use">
+            <English>Expand Incision</English>
+        </Key>
+        <Key ID="STR_KAT_Airway_Retractor_Action">
+            <English>Expanding</English>
+        </Key>
+        <Key ID="STR_KAT_Airway_Clamp_Use">
+            <English>Place Surgical Airway</English>
+        </Key>
+        <Key ID="STR_KAT_Airway_Clamp_Action">
+            <English>Placing Surgical Airway</English>
+        </Key>
+        <Key ID="STR_KAT_Airway_Chest_Tube_Use">
+            <English>Secure Surgical Airway</English>
+        </Key>
+        <Key ID="STR_KAT_Airway_Chest_Tube_Action">
+            <English>Securing Surgical Airway </English>
+        </Key>
+        <Key ID="STR_KAT_Airway_SPREAD">
+            <English>Spread</English>
+        </Key>
+        <Key ID="STR_KAT_Airway_PREPARED">
+            <English>Placed</English>
+        </Key>
     </Package>
 </Project>

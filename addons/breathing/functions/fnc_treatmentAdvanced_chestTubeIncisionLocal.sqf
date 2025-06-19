@@ -66,7 +66,7 @@ _patient setVariable [QGVAR(chestTube), _chestTubeArray, true];
 [_patient, false] call ACEFUNC(dragging,setCarryable);
 [_patient, false] call ACEFUNC(dragging,setDraggable);
 
-[_patient, "quick_view", LSTRING(incision_log), [[_medic] call ACEFUNC(common,getName), STRING_BODY_PARTS select 1]] call ACEFUNC(medical_treatment,addToLog);
+[_patient, "quick_view", LSTRING(incision_log), [[_medic] call ACEFUNC(common,getName), STRING_BODY_PARTS select 2]] call ACEFUNC(medical_treatment,addToLog);
 
 [{
     params ["_args", "_idPFH"];

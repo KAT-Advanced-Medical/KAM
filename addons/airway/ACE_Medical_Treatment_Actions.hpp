@@ -1,4 +1,5 @@
 class ACE_Medical_Treatment_Actions {
+    class BasicBandage;
     class Larynxtubus {
         displayName = CSTRING(Larynxtubus_Display);
         displayNameProgress = CSTRING(action_placing);
@@ -207,5 +208,60 @@ class ACE_Medical_Treatment_Actions {
         condition = QUOTE((missionNamespace getVariable [ARR_2(QQGVAR(enable),true)]) && !([_patient] call FUNC(checkMask)));
         animationPatientUnconscious = "AinjPpneMstpSnonWrflDnon_rolltoback";
         animationPatientUnconsciousExcludeOn[] = {"ainjppnemstpsnonwrfldnon", "kat_recoveryposition"};
+    };
+    class Crike: CheckPulse {
+        displayName = CSTRING(cricothyrotomy_Use);
+        displayNameProgress = CSTRING(cricothyrotomy_Action);
+        category = "surgery";
+        treatmentLocations = QGVAR(surgicalLocationn);
+        allowedSelections[] = {"Neck"};
+        allowSelfTreatment = 0;
+        medicRequired = QEGVAR(surgery,surgicalAction_MedLevel);
+        treatmentTime = QGVAR(openTime);
+        items[] = {"kat_aatKit"};
+        consumeItem = 1;
+        condition = QUOTE([ARR_3(_medic,_patient,0.5)] call FUNC(treatmentAdvanced_cricothyrotomyCheck));
+        callbackSuccess = QUOTE([ARR_2(_medic,_patient)] call FUNC(treatmentAdvanced_cricothyrotomy));
+    };
+    class Incision: BasicBandage {
+        displayName = CSTRING(Scalpel_Use);
+        displayNameProgress = CSTRING(Scalpel_Action);
+        category = "surgery";
+        treatmentLocations = QGVAR(surgicalLocation);
+        allowedSelections[] = {"Neck"};
+        allowSelfTreatment = 0;
+        medicRequired = QEGVAR(surgery,surgicalAction_MedLevel);
+        treatmentTime = QGVAR(incisionTime);
+        items[] = {"kat_scalpel"};
+        condition = QUOTE([ARR_3(_medic,_patient,5)] call FUNC(treatmentAdvanced_cricothyrotomyCheck));
+        callbackSuccess = QUOTE([ARR_2(_medic,_patient)] call FUNC(treatmentAdvanced_cricothyrotomyIncision));
+    };
+    class Spread: BasicBandage {
+        displayName = CSTRING(Retractor_Use);
+        displayNameProgress = CSTRING(Retractor_Action);
+        category = "surgery";
+        treatmentLocations = QGVAR(surgicalLocation);
+        treatmentTime = QGVAR(cricothyrotomyintermediateTime);
+        allowedSelections[] = {"Chest"};
+        allowSelfTreatment = 0;
+        medicRequired = QEGVAR(surgery,surgicalAction_MedLevel);
+        items[] = {"kat_retractor"};
+        consumeItem = 1;
+        condition = QUOTE([ARR_3(_medic,_patient,0.1)] call FUNC(treatmentAdvanced_cricothyrotomyCheck));
+        callbackSuccess = QUOTE([ARR_3(_medic,_patient,0.1)] call FUNC(treatmentAdvanced_cricothyrotomyProgress));
+    };
+    class Clamp: BasicBandage {
+        displayName = CSTRING(Clamp_Use);
+        displayNameProgress = CSTRING(Clamp_Action);
+        category = "surgery";
+        treatmentLocations = QGVAR(surgicalLocation);
+        treatmentTime = QGVAR(cricothyrotomyintermediateTime);
+        allowedSelections[] = {"Chest"};
+        allowSelfTreatment = 0;
+        medicRequired = QEGVAR(surgery,surgicalAction_MedLevel);
+        items[] = {"kat_clamp"};
+        consumeItem = 1;
+        condition = QUOTE([ARR_3(_medic,_patient,0.3)] call FUNC(treatmentAdvanced_cricothyrotomyCheck));
+        callbackSuccess = QUOTE([ARR_3(_medic,_patient,0.3)] call FUNC(treatmentAdvanced_cricothyrotomyProgress));
     };
 };

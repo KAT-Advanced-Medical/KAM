@@ -59,6 +59,7 @@ private _noETT = (_unit getVariable [QEGVAR(airway,airway_item), ""] isNotEqualT
 if (((_obstruction || _occlusion) && _noETT) || _hasCatastrophicAirway) then {
     _airway = false;
 };
+private _paralysis = (_unit getVariable [QGVAR(paralysis), 0] > 0.1);
 switch (true) do {
     case (!_airway): { 
     _demandVentilation = MINIMUM_VENTILATION;
@@ -68,6 +69,13 @@ switch (true) do {
     _actualVentilation = 1;
     };
     case (IN_CRDC_ARRST(_unit)): { 
+    _demandVentilation = MINIMUM_VENTILATION;
+    _respiratoryDepression = 1;
+    _respiratoryRate = [0, 20] select (_unit getVariable [QEGVAR(breathing,BVMInUse), false]);
+    _respiratoryDepth = [0, 10] select (_unit getVariable [QEGVAR(breathing,BVMInUse), false]);
+    _actualVentilation = 1; 
+    };
+    case (_paralysis): { 
     _demandVentilation = MINIMUM_VENTILATION;
     _respiratoryDepression = 1;
     _respiratoryRate = [0, 20] select (_unit getVariable [QEGVAR(breathing,BVMInUse), false]);

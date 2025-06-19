@@ -469,3 +469,11 @@
     true
 ] call CBA_fnc_addSetting;
 
+[
+    QGVAR(hardcoreCrike),
+    "CHECKBOX",
+    [LLSTRING(hardcoreCrike),LLSTRING(hardcoreCrike_DESC)],
+    [CBA_SETTINGS_CAT, ELSTRING(GUI,SubCategory_Basic)],
+    [false],
+    true
+] call CBA_fnc_addSetting;

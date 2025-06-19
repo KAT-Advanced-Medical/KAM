@@ -80,8 +80,8 @@ _output_log = format ["%1%2, %3", _breathing_log, _breath, _breathRate];
 
 private _airway = true;
 private _breathing = true;
-
-if ((_unit getVariable [QEGVAR(chemical,airPoisoning), false]) || (_tension select 0) || (_tension select 1) || (_hemo select 0) || (_hemo select 1)) then {
+private _paralysis = (_unit getVariable [QEGVAR(vitals,paralysis), 0] > 0.1);
+if ((_unit getVariable [QEGVAR(chemical,airPoisoning), false]) || (_tension select 0) || (_tension select 1) || (_hemo select 0) || (_hemo select 1) || _paralysis) then {
     _breathing = false;
 };
 private _noETT = (_patient getVariable [QEGVAR(airway,airway_item), ""] isNotEqualTo "ETT");

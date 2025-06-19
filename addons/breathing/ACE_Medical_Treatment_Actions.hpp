@@ -410,7 +410,7 @@ class ACE_Medical_Treatment_Actions {
         treatmentLocations = QGVAR(chestTubeLocation);
         allowedSelections[] = {"Chest"};
         allowSelfTreatment = 0;
-        medicRequired = QGVAR(chestTubeAction_MedLevel);
+        medicRequired = QEGVAR(surgery,surgicalAction_MedLevel);
         treatmentTime = QGVAR(openTime);
         items[] = {"kat_aatKit"};
         consumeItem = 1;
@@ -429,7 +429,7 @@ class ACE_Medical_Treatment_Actions {
         treatmentLocations = QGVAR(surgicalLocation);
         allowedSelections[] = {"Chest"};
         allowSelfTreatment = 0;
-        medicRequired = QGVAR(surgicalAction_MedLevel);
+        medicRequired = QEGVAR(surgery,surgicalAction_MedLevel);
         treatmentTime = QGVAR(incisionTime);
         items[] = {"kat_scalpel"};
         condition = QUOTE(([ARR_4(_medic,_patient,5,0)] call FUNC(treatmentAdvanced_chestTubeCheck)) && (GVAR(hardcoreBreathingTreatment)));
@@ -448,7 +448,7 @@ class ACE_Medical_Treatment_Actions {
         treatmentTime = QGVAR(ChestTubeintermediateTime);
         allowedSelections[] = {"Chest"};
         allowSelfTreatment = 0;
-        medicRequired = QGVAR(surgicalAction_MedLevel);
+        medicRequired = QEGVAR(surgery,surgicalAction_MedLevel);
         items[] = {"kat_retractor"};
         consumeItem = 1;
         condition = QUOTE(([ARR_4(_medic,_patient,0.1,0)] call FUNC(treatmentAdvanced_chestTubeCheck)) && (GVAR(hardcoreBreathingTreatment)));
@@ -467,7 +467,7 @@ class ACE_Medical_Treatment_Actions {
         treatmentTime = QGVAR(ChestTubeintermediateTime);
         allowedSelections[] = {"Chest"};
         allowSelfTreatment = 0;
-        medicRequired = QGVAR(surgicalAction_MedLevel);
+        medicRequired = QEGVAR(surgery,surgicalAction_MedLevel);
         items[] = {"kat_clamp"};
         consumeItem = 1;
         condition = QUOTE(([ARR_4(_medic,_patient,0.3,0)] call FUNC(treatmentAdvanced_chestTubeCheck)) && (GVAR(hardcoreBreathingTreatment)));

@@ -22,6 +22,7 @@ PREP(updateNauseaMult);
 PREP(updateOpioidDepression);
 PREP(updateOpioidEffect);
 PREP(updateOpioidRelief);
+PREP(updateParalysis);
 PREP(updateRespiratoryDepth);
 PREP(updateRespiratoryRate);
 PREP(updateSedation);
