@@ -4,7 +4,7 @@
     "CHECKBOX",
     LLSTRING(setting_enable),
     [CBA_SETTINGS_CAT, LSTRING(setting_subcategory_injury)],
-    [true],
+    [false],
     true
 ] call CBA_fnc_addSetting;
 
