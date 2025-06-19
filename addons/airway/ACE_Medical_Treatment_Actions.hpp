@@ -210,10 +210,10 @@ class ACE_Medical_Treatment_Actions {
         animationPatientUnconsciousExcludeOn[] = {"ainjppnemstpsnonwrfldnon", "kat_recoveryposition"};
     };
     class Crike: CheckPulse {
-        displayName = CSTRING(cricothyrotomy_Use);
-        displayNameProgress = CSTRING(cricothyrotomy_Action);
+        displayName = CSTRING(Surgical_Airway_Use);
+        displayNameProgress = CSTRING(Surgical_Airway_Action);
         category = "surgery";
-        treatmentLocations = QGVAR(surgicalLocationn);
+        treatmentLocations = QEGVAR(surgery,surgicalLocationn);
         allowedSelections[] = {"Neck"};
         allowSelfTreatment = 0;
         medicRequired = QEGVAR(surgery,surgicalAction_MedLevel);
@@ -227,7 +227,7 @@ class ACE_Medical_Treatment_Actions {
         displayName = CSTRING(Scalpel_Use);
         displayNameProgress = CSTRING(Scalpel_Action);
         category = "surgery";
-        treatmentLocations = QGVAR(surgicalLocation);
+        treatmentLocations = QEGVAR(surgery,surgicalLocation);
         allowedSelections[] = {"Neck"};
         allowSelfTreatment = 0;
         medicRequired = QEGVAR(surgery,surgicalAction_MedLevel);
@@ -240,9 +240,9 @@ class ACE_Medical_Treatment_Actions {
         displayName = CSTRING(Retractor_Use);
         displayNameProgress = CSTRING(Retractor_Action);
         category = "surgery";
-        treatmentLocations = QGVAR(surgicalLocation);
+        treatmentLocations = QEGVAR(surgery,surgicalLocation);
         treatmentTime = QGVAR(cricothyrotomyintermediateTime);
-        allowedSelections[] = {"Chest"};
+        allowedSelections[] = {"Neck"};
         allowSelfTreatment = 0;
         medicRequired = QEGVAR(surgery,surgicalAction_MedLevel);
         items[] = {"kat_retractor"};
@@ -254,9 +254,9 @@ class ACE_Medical_Treatment_Actions {
         displayName = CSTRING(Clamp_Use);
         displayNameProgress = CSTRING(Clamp_Action);
         category = "surgery";
-        treatmentLocations = QGVAR(surgicalLocation);
+        treatmentLocations = QEGVAR(surgery,surgicalLocation);
         treatmentTime = QGVAR(cricothyrotomyintermediateTime);
-        allowedSelections[] = {"Chest"};
+        allowedSelections[] = {"Neck"};
         allowSelfTreatment = 0;
         medicRequired = QEGVAR(surgery,surgicalAction_MedLevel);
         items[] = {"kat_clamp"};

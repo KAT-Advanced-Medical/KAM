@@ -70,7 +70,7 @@ if (GVAR(hardcoreCrike)) then {
 
 [{
     params ["_args", "_idPFH"];
-    _args params ["_patient",];
+    _args params ["_patient"];
 
     private _cricothyrotomy = _patient getVariable [QGVAR(cricothyrotomy), 0];
     private _alive = alive _patient;

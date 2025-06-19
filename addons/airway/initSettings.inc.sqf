@@ -477,3 +477,48 @@
     [false],
     true
 ] call CBA_fnc_addSetting;
+
+[
+    QGVAR(incisionTime),
+    "SLIDER",
+    LLSTRING(INCISION_TIMER),
+    [CBA_SETTINGS_CAT, ELSTRING(GUI,SubCategory_Basic)],
+    [0,100,10,0],
+    true
+] call CBA_fnc_addSetting;
+
+[
+    QGVAR(CrikeintermediateTime),
+    "SLIDER",
+    [LLSTRING(INTERMEDIATE_TIMER), LLSTRING(INTERMEDIATE_TIMER_DESC)],
+    [CBA_SETTINGS_CAT, ELSTRING(GUI,SubCategory_Basic)],
+    [0,100,8,0],
+    true
+] call CBA_fnc_addSetting;
+
+[
+    QGVAR(openTime),
+    "SLIDER",
+    LLSTRING(OPEN_TIMER),
+    [CBA_SETTINGS_CAT, ELSTRING(GUI,SubCategory_Basic)],
+    [0,100,15,0],
+    true
+] call CBA_fnc_addSetting;
+
+[
+    QGVAR(CrikeAction_MedLevel),
+    "LIST",
+    LLSTRING(Crike_ACTION_MEDLEVEL),
+    [CBA_SETTINGS_CAT, ELSTRING(GUI,SubCategory_Basic)],
+    [[0, 1, 2], ["STR_ACE_Medical_Treatment_Anyone", "STR_ACE_Medical_Treatment_Medics", "STR_ACE_Medical_Treatment_Doctors"], 2],
+    true
+] call CBA_fnc_addSetting;
+
+[
+    QGVAR(CrikeLocation),
+    "LIST",
+    LLSTRING(Crike_LOCATION),
+    [CBA_SETTINGS_CAT, ELSTRING(GUI,SubCategory_Basic)],
+    [[0,1,2,3],["STR_ACE_Common_Anywhere", "STR_ACE_Common_Vehicle", "STR_ACE_Medical_Treatment_MedicalFacilities", "STR_ACE_Medical_Treatment_VehiclesAndFacilities"],3],
+    true
+] call CBA_fnc_addSetting;
