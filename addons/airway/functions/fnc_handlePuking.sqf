@@ -35,8 +35,11 @@ if ((_unit getVariable ["kat_pukeActive_PFH", false]) || !(GVAR(enable))) exitWi
     if (_unit getVariable [QGVAR(airway_item), ""] in ["Larynxtubus", "ETT"]) then {
         _nauseaMult = _nauseaMult / 4
     };
+    if (_nauseaMult > 1000) then {
+        _nauseaMult = 1
+    };
     private _delay = (GVAR(occlusion_repeatTimer) / _nauseaMult) * random [0.8, 1, 1.3];
-    TRACE_1("PukeDelay",_delay);
+    TRACE_3("PukeDelay",_delay,_nauseaMult,GVAR(occlusion_repeatTimer));
     [{
         params ["_unit"];
         if (random (100) <= GVAR(airwayPukeChance)) then {

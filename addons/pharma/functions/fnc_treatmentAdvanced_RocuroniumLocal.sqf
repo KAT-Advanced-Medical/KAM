@@ -14,7 +14,7 @@
  *
  * Public: No
  */
-params ["_patient"];
+params ["_patient", "_dose"];
 private _currentWeight = _patient getVariable [QEGVAR(vitals,currentWeight), 80];
 private _doseNormalized = linearConversion [0, 40, _dose, 10, 30, true];
 private _weightNormalized = linearConversion [60, 100, _currentWeight, 10, 30, true];

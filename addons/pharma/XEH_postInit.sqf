@@ -25,6 +25,9 @@
 [QGVAR(fentanylLocal), LINKFUNC(treatmentAdvanced_FentanylLocal)] call CBA_fnc_addEventHandler;
 [QGVAR(caffeineLocal), LINKFUNC(treatmentAdvanced_CaffeineLocal)] call CBA_fnc_addEventHandler;
 [QGVAR(lidocaineLocal), LINKFUNC(treatmentAdvanced_LidocaineLocal)] call CBA_fnc_addEventHandler;
+[QGVAR(succinylcholineLocal), LINKFUNC(treatmentAdvanced_SuccinylcholineLocal)] call CBA_fnc_addEventHandler;
+[QGVAR(rocuroniumLocal), LINKFUNC(treatmentAdvanced_RocuroniumLocal)] call CBA_fnc_addEventHandler;
+[QGVAR(sugammadexLocal), LINKFUNC(treatmentAdvanced_SugammadexLocal)] call CBA_fnc_addEventHandler;
 
 [QGVAR(adenosineOverdoseLocal), LINKFUNC(treatmentAdvanced_AdenosineOverdoseLocal)] call CBA_fnc_addEventHandler;
 [QGVAR(alteplaseOverdoseLocal), LINKFUNC(treatmentAdvanced_AlteplaseOverdoseLocal)] call CBA_fnc_addEventHandler;

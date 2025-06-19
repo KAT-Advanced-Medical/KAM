@@ -19,7 +19,7 @@
 params ["_unit"];
 
 private _defaultWeight = 80;
-private _playerdefaultWeight = _unit getVariable [QGVAR(defaultWeight), _defaultWeight];
+private _playerdefaultWeight = _unit getVariable [QGVAR(currentWeight), _defaultWeight];
 
 if (isMultiplayer) then {
     private _id = parseNumber (getPlayerUID _unit select [15, 2]);
