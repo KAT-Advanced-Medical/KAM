@@ -27,7 +27,7 @@ private _currentWeight = _patient getVariable [QEGVAR(vitals,currentWeight), 80]
 private _doseNormalized = linearConversion [0, 40, _dose, 10, 30, true];
 private _weightNormalized = linearConversion [60, 100, _currentWeight, 10, 30, true];
 if (_doseNormalized >_weightNormalized) then {
-    _patient setVariable [QEGVAR(surgery,sedated), true, true];
+    [_patient, "Lorazepam", 10, 600, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, "true"] call EFUNC(vitals,addMedicationAdjustment);
     [_patient, true] call ACEFUNC(medical,setUnconscious);
 };
 

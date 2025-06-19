@@ -74,7 +74,7 @@ _patient setVariable [QGVAR(chestTube), _chestTubeArray, true];
 
     private _chestTubeArray = _patient getVariable [QGVAR(chestTube), [0,0]];
     private _liveTube = _chestTubeArray select _side;
-    private _count = [_patient, "Etomidate", true] call ACEFUNC(medical_status,getMedicationCount);
+    private _count = [_patient, "Etomidate", true] call ACEFUNC(medical_status,getMedicationCount) select 1;
 
     private _alive = alive _patient;
 

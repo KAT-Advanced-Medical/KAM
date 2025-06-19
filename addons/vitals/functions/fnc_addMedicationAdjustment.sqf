@@ -21,7 +21,7 @@
  *
  * Public: No
  */
-params ["_unit", "_medication", "_timeToMaxEffect", "_maxTimeInSystem", "_hrAdjust", "_painAdjust", "_flowAdjust", "_dose", "_alphaFactor", "_opioidRelief", "_opioidEffect", "_opioidDepression", "_respiratoryRate", "_contractility", "_nauseaMult"];
+params ["_unit", "_medication", "_timeToMaxEffect", "_maxTimeInSystem", "_hrAdjust", "_painAdjust", "_flowAdjust", "_dose", "_alphaFactor", "_opioidRelief", "_opioidEffect", "_opioidDepression", "_respiratoryRate", "_contractility", "_nauseaMult", ["_sedation", false]];
 TRACE_8("addMedicationAdjustment",_unit,_medication,_timeToMaxEffect,_maxTimeInSystem,_hrAdjust,_painAdjust,_flowAdjust,_dose);
 
 if (_maxTimeInSystem <= 0) exitWith { WARNING_1("bad value for _maxTimeInSystem - %1",_this); };
@@ -29,6 +29,6 @@ _timeToMaxEffect = _timeToMaxEffect max 1;
 
 
 private _adjustments = _unit getVariable [VAR_MEDICATIONS, []];
-_adjustments pushBack [_medication, CBA_missionTime, _timeToMaxEffect, _maxTimeInSystem, _hrAdjust, _painAdjust, _flowAdjust, _dose, _alphaFactor, _opioidRelief, _opioidEffect, _opioidDepression, _respiratoryRate, _contractility,_nauseaMult];
+_adjustments pushBack [_medication, CBA_missionTime, _timeToMaxEffect, _maxTimeInSystem, _hrAdjust, _painAdjust, _flowAdjust, _dose, _alphaFactor, _opioidRelief, _opioidEffect, _opioidDepression, _respiratoryRate, _contractility,_nauseaMult,_sedation];
 
 _unit setVariable [VAR_MEDICATIONS, _adjustments, true];

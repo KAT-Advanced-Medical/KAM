@@ -613,7 +613,7 @@ class ACE_Medical_Treatment_Actions {
         displayName = KATPUSHCSTRING(amiodarone,5ml,30);
         displayNameProgress = KATPUSHINGCSTRING(amiodarone,5ml,30);
     };
-    class syringe_Alteplase_5ml_30: syringe_EACA_5ml_10 {
+    class syringe_Alteplase_5ml_20: syringe_EACA_5ml_10 {
         medicRequired = QGVAR(medLvl_alteplase);
         treatmentTime = QGVAR(treatmentTime_alteplase);
         items[] = {"kat_syringe_alteplase_5ml_3"};

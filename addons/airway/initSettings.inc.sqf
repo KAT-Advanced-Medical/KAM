@@ -358,7 +358,7 @@
     "SLIDER",
     [LLSTRING(TIME_ETT),LLSTRING(TIME_ETT_DESC)],
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_Items)],
-    [1, 20, 6, 0],
+    [1, 15, 6, 0],
     true
 ] call CBA_fnc_addSetting;
 

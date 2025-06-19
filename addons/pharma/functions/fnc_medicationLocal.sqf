@@ -38,14 +38,14 @@ if !(ACEGVAR(medical_treatment,advancedMedication)) exitWith {
             _patient setVariable [VAR_PAIN_SUPP, (_painSuppress + MORPHINE_PAIN_SUPPRESSION) min 1, true];
         };
         case "Epinephrine": {
-            private _sedated = _patient getVariable [QEGVAR(surgery,sedated), false];
-            if !(_sedated) then {
+            private _sedated = _patient getVariable [QEGVAR(surgery,sedated), 0];
+            if (_sedated == 0) then {
                 [QACEGVAR(medical,WakeUp), _patient] call CBA_fnc_localEvent;
             };
         };
         case "EpinephrineIV": {
-            private _sedated = _patient getVariable [QEGVAR(surgery,sedated), false];
-            if !(_sedated) then {
+            private _sedated = _patient getVariable [QEGVAR(surgery,sedated), 0];
+            if (_sedated == 0) then {
                 [QACEGVAR(medical,WakeUp), _patient] call CBA_fnc_localEvent;
             };
         };
@@ -188,7 +188,8 @@ if (GVAR(AMS_Enabled)) then {
     _maxRelief              = GET_NUMBER(_medicationConfig >> "maxRelief",getNumber (_defaultConfig >> "maxRelief"));
     _dose                   = GET_NUMBER(_medicationConfig >> "dose",getNumber (_defaultConfig >> "dose")) * _drugMult * _startDose;
     _contractility          = GET_NUMBER(_medicationConfig >> "contractility",getNumber (_defaultConfig >> "contractility")) * _drugMult;
-    _nauseaMult          = GET_NUMBER(_medicationConfig >> "nauseaMult",getNumber (_defaultConfig >> "nauseaMult")) * _drugMult;
+    _nauseaMult             = GET_NUMBER(_medicationConfig >> "nauseaMult",getNumber (_defaultConfig >> "nauseaMult")) * _drugMult;
+    _sedation               = GET_STRING(_medicationConfig >> "sedation",getText (_defaultConfig >> "sedation"));
 
     private _heartRate = GET_HEART_RATE(_patient);
     private _hrIncrease = [_hrIncreaseLow, _hrIncreaseNormal, _hrIncreaseHigh] select (floor ((0 max _heartRate min 110) / 55));
@@ -212,7 +213,7 @@ if (GVAR(AMS_Enabled)) then {
         };
         TRACE_6("adjustments1",_patient,_medicationName,_timeTillMaxEffect,_timeInSystem,_heartRateChange,_painReduce);
         TRACE_7("adjustments2",_viscosityChange,_dose,_alphaFactor,_opioidRelief,_opioidEffect,_opioidDepression,_respiratoryRate);
-        [_patient, _medicationName, _timeTillMaxEffect, _timeInSystem, _heartRateChange, _painReduce, _viscosityChange, _dose, _alphaFactor, _opioidRelief, _opioidEffect, _opioidDepression, _respiratoryRate, _contractility, _nauseaMult] call EFUNC(vitals,addMedicationAdjustment);
+        [_patient, _medicationName, _timeTillMaxEffect, _timeInSystem, _heartRateChange, _painReduce, _viscosityChange, _dose, _alphaFactor, _opioidRelief, _opioidEffect, _opioidDepression, _respiratoryRate, _contractility, _nauseaMult, _sedation] call EFUNC(vitals,addMedicationAdjustment);
         [_patient, _medicationName, _incompatibleMedication] call FUNC(onMedicationUsage);
     } else {
         if (_className in ["TXAAuto", "PhenylephrineAuto"]) then {
@@ -224,7 +225,7 @@ if (GVAR(AMS_Enabled)) then {
         } else {
             TRACE_6("adjustments1",_patient,_className,_timeTillMaxEffect,_timeInSystem,_heartRateChange,_painReduce);
             TRACE_7("adjustments2",_viscosityChange,_dose,_alphaFactor,_opioidRelief,_opioidEffect,_opioidDepression,_respiratoryRate);
-            [_patient, _className, _timeTillMaxEffect, _timeInSystem, _heartRateChange, _painReduce, _viscosityChange, _dose, _alphaFactor, _opioidRelief, _opioidEffect, _opioidDepression, _respiratoryRate, _contractility, _nauseaMult] call EFUNC(vitals,addMedicationAdjustment);
+            [_patient, _className, _timeTillMaxEffect, _timeInSystem, _heartRateChange, _painReduce, _viscosityChange, _dose, _alphaFactor, _opioidRelief, _opioidEffect, _opioidDepression, _respiratoryRate, _contractility, _nauseaMult, _sedation] call EFUNC(vitals,addMedicationAdjustment);
             [_patient, _className, _incompatibleMedication] call FUNC(onMedicationUsage);
         };
     };
@@ -278,7 +279,9 @@ if (GVAR(AMS_Enabled)) then {
     _incompatibleMedication = GET_ARRAY(_medicationConfig >> "incompatibleMedication",getArray (_defaultConfig >> "incompatibleMedication"));
     _maxRelief              = GET_NUMBER(_medicationConfig >> "maxRelief",getNumber (_defaultConfig >> "maxRelief"));
     _dose                   = GET_NUMBER(_medicationConfig >> "dose",getNumber (_defaultConfig >> "dose"));
-    _contractility       = GET_NUMBER(_medicationConfig >> "_contractility",getNumber (_defaultConfig >> "_contractility"));
+    _contractility          = GET_NUMBER(_medicationConfig >> "_contractility",getNumber (_defaultConfig >> "_contractility"));
+    _nauseaMult             = GET_NUMBER(_medicationConfig >> "nauseaMult",getNumber (_defaultConfig >> "nauseaMult"));
+    _sedation               = GET_STRING(_medicationConfig >> "sedation",getText (_defaultConfig >> "sedation"));
     
     private _heartRate = GET_HEART_RATE(_patient);
     private _hrIncrease = [_hrIncreaseLow, _hrIncreaseNormal, _hrIncreaseHigh] select (floor ((0 max _heartRate min 110) / 55));
@@ -294,7 +297,7 @@ if (GVAR(AMS_Enabled)) then {
     };
     TRACE_6("adjustments1",_patient,_medicationName,_timeTillMaxEffect,_timeInSystem,_heartRateChange,_painReduce);
     TRACE_7("adjustments2",_viscosityChange,_dose,_alphaFactor,_opioidRelief,_opioidEffect,_opioidDepression,_respiratoryRate);
-    [_patient, _className, _timeTillMaxEffect, _timeInSystem, _heartRateChange, _painReduce, _viscosityChange, _dose, _alphaFactor, _opioidRelief, _opioidEffect, _opioidDepression, _respiratoryRate, _contractility] call EFUNC(vitals,addMedicationAdjustment);
+    [_patient, _className, _timeTillMaxEffect, _timeInSystem, _heartRateChange, _painReduce, _viscosityChange, _dose, _alphaFactor, _opioidRelief, _opioidEffect, _opioidDepression, _respiratoryRate, _contractility, _nauseaMult, _sedation] call EFUNC(vitals,addMedicationAdjustment);
     [_patient, _className, _incompatibleMedication] call FUNC(onMedicationUsage);
 
     if (_className in ["Lorazepam","Ketamine","EACA","TXA","TXAAuto","Atropine","Amiodarone","Flumazenil","Lidocaine"]) then {

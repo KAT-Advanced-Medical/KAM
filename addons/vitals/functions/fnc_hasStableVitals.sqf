@@ -21,7 +21,7 @@ private _bloodVolume = GET_BLOOD_VOLUME_LITERS(_unit);
 if (_bloodVolume < ACEGVAR(medical,const_stableVitalsBloodThreshold)) exitWith { false };
 
 if IN_CRDC_ARRST(_unit) exitWith { false };
-if (_unit getVariable [QEGVAR(surgery,sedated), false]) exitWith { false };
+if ((_unit getVariable [QEGVAR(surgery,sedated), 0]) > 0.1) exitWith { false };
 if (_unit getVariable [QEGVAR(surgery,reboa), false]) exitWith { false };
 
 private _cardiacOutput = [_unit] call ACEFUNC(medical_status,getCardiacOutput);

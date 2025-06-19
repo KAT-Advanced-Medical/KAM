@@ -278,6 +278,39 @@ class CfgWeapons {
             mass = 0.5;
         };
     };
+    class kat_succinylcholine: ACE_ItemCore {
+        scope = 2;
+        displayName = CSTRING(Succinylcholine_displayName);
+        picture = QPATHTOF(ui\icon_succinylcholine.paa);
+        model = "\A3\Structures_F_EPA\Items\Medical\Painkillers_F.p3d";
+        descriptionShort = CSTRING(Succinylcholine_DescShort);
+        ACE_isMedicalItem = 1;
+        class ItemInfo: CBA_MiscItem_ItemInfo {
+            mass = 0.5;
+        };
+    };
+    class kat_rocuronium: ACE_ItemCore {
+        scope = 2;
+        displayName = CSTRING(Rocuronium_displayName);
+        picture = QPATHTOF(ui\icon_rocuronium.paa);
+        model = "\A3\Structures_F_EPA\Items\Medical\Painkillers_F.p3d";
+        descriptionShort = CSTRING(Rocuronium_DescShort);
+        ACE_isMedicalItem = 1;
+        class ItemInfo: CBA_MiscItem_ItemInfo {
+            mass = 0.5;
+        };
+    };
+    class kat_sugammadex: ACE_ItemCore {
+        scope = 2;
+        displayName = CSTRING(Sugammadex_displayName);
+        picture = QPATHTOF(ui\icon_sugammadex.paa);
+        model = "\A3\Structures_F_EPA\Items\Medical\Painkillers_F.p3d";
+        descriptionShort = CSTRING(Sugammadex_DescShort);
+        ACE_isMedicalItem = 1;
+        class ItemInfo: CBA_MiscItem_ItemInfo {
+            mass = 0.5;
+        };
+    };
     class kat_etomidate: ACE_ItemCore {
         scope = 2;
         displayName = CSTRING(Etomidate_displayName);
@@ -527,7 +560,7 @@ class CfgWeapons {
     class kat_syringe_amiodarone_5ml_30: kat_syringe_amiodarone_5ml_10 {
         displayName = KATDISPLAYCSTRING(amiodarone,5ml,30);
     };
-    class kat_syringe_alteplase_5ml_30: kat_syringe_txa_5ml_10 {
+    class kat_syringe_alteplase_5ml_20: kat_syringe_txa_5ml_10 {
         displayName = KATDISPLAYCSTRING(alteplase,5ml,30);
     };
     class kat_syringe_epinephrineIV_5ml_10: kat_syringe_txa_5ml_10 {
