@@ -46,7 +46,7 @@ class ACE_ADDON(Medical_Treatment) {
         //maximum dose before medication effects are reduced
         maximumEffectiveDose = 30;
         //multiplier to nausea
-        nauseaMult = 0;
+        nauseaMult = 1;
         //is this drug a sedation drug
         sedation = "false";
 
@@ -94,7 +94,7 @@ class ACE_ADDON(Medical_Treatment) {
             incompatibleMedication[] = {};
             viscosityChange = -0;
             maximumEffectiveDose = 2;
-            nauseaMult = 0.5;
+            nauseaMult = 1.2;
         };
         class MorphineIV {
             painReduce = 0.8;
@@ -484,7 +484,7 @@ class ACE_ADDON(Medical_Treatment) {
             dose = 1;
             viscosityChange = -0;
             maximumEffectiveDose = 2;
-            nauseaMult = -0.6;
+            nauseaMult = -0.4;
         };
         class Succinylcholine {
             painReduce = 0.0;
@@ -595,7 +595,7 @@ class ACE_ADDON(Medical_Treatment) {
             weightBased = "true";
             weightDose = 20;
             maximumEffectiveDose = 30;
-            nauseaMult = 0.8;
+            nauseaMult = 0.4;
         };
         class syringe_Ketamine_5ml {
             painReduce = 0.5;
@@ -615,7 +615,7 @@ class ACE_ADDON(Medical_Treatment) {
             weightDoseMin = 10;
             weightDoseMax = 20;
             maximumEffectiveDose = 30;
-            nauseaMult = 0.4;
+            nauseaMult = 0.3;
         };
         class syringe_Nalbuphine_5ml {
             painReduce = 0.5;
@@ -725,7 +725,7 @@ class ACE_ADDON(Medical_Treatment) {
             weightBased = "true";
             weightDose = 20;
             maximumEffectiveDose = 30;
-            nauseaMult = 0.5;
+            nauseaMult = 0.3;
         };
         class syringe_AdenosineIV_5ml {
             painReduce = 0;
@@ -758,7 +758,7 @@ class ACE_ADDON(Medical_Treatment) {
             timeTillMaxEffect = 15;
             dose = 1;
             viscosityChange = -0;
-            nauseaMult = -0.6;
+            nauseaMult = -0.4;
             weightBased = "true";
             weightDose = 20;
             maximumEffectiveDose = 30;
@@ -828,7 +828,7 @@ class ACE_ADDON(Medical_Treatment) {
             weightBased = "true";
             weightDose = 20;
             maximumEffectiveDose = 30;
-            nauseaMult = 0.5;
+            nauseaMult = 0.3;
         };
         class syringe_Ketamine_10ml {
             painReduce = 0.6;
@@ -845,7 +845,7 @@ class ACE_ADDON(Medical_Treatment) {
             weightBased = "true";
             weightDose = 20;
             maximumEffectiveDose = 30;
-            nauseaMult = 0.4;
+            nauseaMult = 0.3;
         };
         class syringe_Nalbuphine_10ml {
             painReduce = 0.5;
