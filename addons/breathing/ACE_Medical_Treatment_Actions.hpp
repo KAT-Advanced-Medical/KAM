@@ -352,7 +352,7 @@ class ACE_Medical_Treatment_Actions {
         condition = QFUNC(canDetachVent);
         callbackSuccess = QFUNC(detachVent);
     };
-    /*class SpeedUpVent: AttachVent {
+    class SpeedUpVent: AttachVent {
         displayName = CSTRING(IncreaseVent);
         displayNameProgress = CSTRING(IncreasingVent);
         medicRequired = QGVAR(medLvl_Vent);
@@ -369,7 +369,7 @@ class ACE_Medical_Treatment_Actions {
         items[] = {};
         condition = QFUNC(canAdjustRate);
         callbackSuccess = QUOTE([ARR_2(_patient,1)] call FUNC(adjustVentRate));
-    };*/
+    };
     class NasalCannula {
         displayName = CSTRING(NasalCannula_Display);
         displayNameProgress = ECSTRING(airway,action_placing);
