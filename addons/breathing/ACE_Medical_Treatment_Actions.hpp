@@ -319,46 +319,39 @@ class ACE_Medical_Treatment_Actions {
         condition = QUOTE(_patient call FUNC(canUseBVM) && ((GVAR(locationProvideOxygen) in [ARR_2(2,3)] && _patient call ACEFUNC(medical_treatment,isInMedicalFacility)) || (GVAR(locationProvideOxygen) in [ARR_2(1,3)] && _patient call ACEFUNC(medical_treatment,isInMedicalVehicle))));
         callbackSuccess = QUOTE([ARR_3(_medic,_patient,true)] call EFUNC(airway,handleRecoveryPosition); [ARR_4(_medic,_patient,false,true)] call FUNC(useBVM););
     };
-    /*class AttachBVM {
-        displayName = CSTRING(AttachBVM);
-        displayNameProgress = "";
+    class AttachVent {
+        displayName = CSTRING(AttachVent);
+        displayNameProgress = CSTRING(AttachingVent);
         category = "airway";
-        treatmentLocations = 0;
+        treatmentLocations = 1;
         allowedSelections[] = {"Head"};
         allowSelfTreatment = 0;
-        medicRequired = QGVAR(medLvl_BVM);
+        medicRequired = QGVAR(medLvl_Vent);
         treatmentTime = 6;
         consumeItem = 0;
-        items[] = {"kat_BVM"};
-        condition = QFUNC(canAttachBVM);
+        items[] = {};
+        condition = QFUNC(canAttachVent);
         callbackStart = "";
-        callbackSuccess = QFUNC(attachBVM);
+        callbackSuccess = QFUNC(attachVent);
         callbackFailure = "";
         callbackProgress = "";
         animationPatient = "";
-        animationPatientUnconscious = "AinjPpneMstpSnonWrflDnon_rolltoback";
-        animationPatientUnconsciousExcludeOn[] = {"ainjppnemstpsnonwrfldnon"};
+        animationPatientUnconscious = "";
+        animationPatientUnconsciousExcludeOn[] = {};
         animationMedic = "";
         animationMedicProne = "";
         litter[] = {};
         icon = QPATHTOF(ui\BVM_ui.paa);
     };
-    class DetachBVM: AttachBVM {
-        displayName = CSTRING(AttachBVM);
-        medicRequired = QGVAR(medLvl_BVM);
+    class DetachVent: AttachVent {
+        displayName = CSTRING(DetachVent);
+        displayNameProgress = CSTRING(DetachingVent);
+        medicRequired = QGVAR(medLvl_Vent);
         treatmentTime = 6;
         items[] = {};
-        condition = QFUNC(canDetachBVM);
-        callbackSuccess = QFUNC(detachBVM);
+        condition = QFUNC(canDetachVent);
+        callbackSuccess = QFUNC(detachVent);
     };
-    class UseAttachedBVM: UseBVM {
-        displayName = CSTRING(UseAttachedBVM);
-        medicRequired = 0;
-        items[] = {};
-        condition = QFUNC(canUseAttachedBVM);
-        callbackSuccess = QUOTE([ARR_3(_medic,_patient,true)] call EFUNC(airway,handleRecoveryPosition); [ARR_2(_medic,_patient)] call FUNC(useBVM););
-        icon = QPATHTOF(ui\BVM_ui.paa);
-    };*/
     class NasalCannula {
         displayName = CSTRING(NasalCannula_Display);
         displayNameProgress = ECSTRING(airway,action_placing);

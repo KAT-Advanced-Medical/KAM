@@ -17,7 +17,5 @@
  */
 
 params ["_medic", "_patient"];
-
-
-if (_patient getVariable [QGVAR(attachedBVM), false]) exitWith {true};
+if (_patient getVariable [QGVAR(attachedVent), false]) exitWith {true};
 false

@@ -3394,14 +3394,35 @@
         <Key ID="STR_KAT_Breathing_FingerThoracostomy_Log">
             <English>%1 preformed a Finger Thoracostomy</English>
         </Key>
-        <Key ID="STR_KAT_Breathing_AttachBVM">
-            <English>Attach BVM</English>
+        <Key ID="STR_KAT_Breathing_AttachVent">
+            <English>Attach Ventilator</English>
         </Key>
-        <Key ID="STR_KAT_Breathing_DetachBVM">
-            <English>Detach BVM</English>
+        <Key ID="STR_KAT_Breathing_AttachingVent">
+            <English>Attaching Ventilator</English>
         </Key>
-        <Key ID="STR_KAT_Breathing_UseAttachedBVM">
-            <English>Use Attached BVM</English>
+        <Key ID="STR_KAT_Breathing_DetachVent">
+            <English>Detach Ventilator</English>
+        </Key>
+        <Key ID="STR_KAT_Breathing_DetachingVent">
+            <English>Detaching Ventilator</English>
+        </Key>
+        <Key ID="STR_KAT_Breathing_ALLOW_Vent">
+            <English>Allow Ventilator</English>
+        </Key>
+        <Key ID="STR_KAT_Breathing_TRAININGLEVEL_Vent">
+            <English>Medical Level to attach or detach Ventilator</English>
+        </Key>
+        <Key ID="STR_KAT_Breathing_Ventilator_Display">
+            <English>Ventilator</English>
+        </Key>
+        <Key ID="STR_KAT_Breathing_Vent_Display">
+            <English>Ventilator</English>
+        </Key>
+        <Key ID="STR_KAT_Breathing_Vent_log">
+            <English>%1 Attached a %2</English>
+        </Key>
+        <Key ID="STR_KAT_Breathing_Removed_Vent_log">
+            <English>%1 Detached a %2</English>
         </Key>
     </Package>
 </Project>

@@ -648,3 +648,12 @@
     [[0, 1, 2, 3], [LLSTRING(SETTING_Causes_Unconsciousness), LLSTRING(SETTING_Unconsciousness_Required), LLSTRING(SETTING_No_Unconsciousness), LLSTRING(SETTING_Anesthesia)], 0],
     true
 ] call CBA_fnc_addSetting;
+
+[
+    QGVAR(medLvl_Vent),
+    "LIST",
+    [LLSTRING(ALLOW_Vent), LLSTRING(TRAININGLEVEL_Vent)],
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_Items)],
+    [[0, 1, 2], ["STR_ACE_Medical_Treatment_Anyone", "STR_ACE_Medical_Treatment_Medics", "STR_ACE_Medical_Treatment_Doctors"], 0],
+    true
+] call CBA_fnc_addSetting;

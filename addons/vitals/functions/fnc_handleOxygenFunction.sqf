@@ -114,8 +114,8 @@ if ((IN_CRDC_ARRST(_unit)) || _airway || _paralysis) then {
     // When in arrest, there should be no effecive breaths but still a minimum O2 demand. Zero O2 demand would mean a dead patient. Actual ventilation is 1 to prevent issues in the gas tension functions
     _demandVentilation = MINIMUM_VENTILATION;
     _respiratoryDepression = 1;
-    _respiratoryRate = [0, 20] select (_unit getVariable [QEGVAR(breathing,BVMInUse), false]);
-    _respiratoryDepth = [0, 10] select (_unit getVariable [QEGVAR(breathing,BVMInUse), false]);
+    _respiratoryRate = [0, 20] select ((_unit getVariable [QEGVAR(breathing,BVMInUse), false]) || (_unit getVariable [QEGVAR(breathing,VentInUse), false]));
+    _respiratoryDepth = [0, 10] select ((_unit getVariable [QEGVAR(breathing,BVMInUse), false]) || (_unit getVariable [QEGVAR(breathing,VentInUse), false]));
     _actualVentilation = 1;
 } else {
     // Ventilatory Demand comes from Heart Rate with increase demand from PaCO2 levels 
@@ -187,6 +187,7 @@ private _fio2 = switch (true) do {
     case ((_unit getVariable [QEGVAR(chemical,airPoisoning), false]) || (_unit getVariable [QEGVAR(breathing,tensionpneumothorax), [false, false]] select 0) || (_unit getVariable [QEGVAR(breathing,tensionpneumothorax), [false, false]] select 1) ||(_unit getVariable [QEGVAR(breathing,hemopneumothorax), [false, false]] select 0) || (_unit getVariable [QEGVAR(breathing,hemopneumothorax), [false, false]] select 1)): { 0 };
     case (_unit getVariable [QEGVAR(breathing,oxygenMaskActive), false]): { 0.95 };
     case (_unit getVariable [QEGVAR(breathing,oxygenTankConnected), false]): { 1 };
+    case (_unit getVariable [QEGVAR(breathing,attachedVent), false]): { 1 };
     default { DEFAULT_FIO2 };
 };
 

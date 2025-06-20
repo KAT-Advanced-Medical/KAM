@@ -102,24 +102,10 @@ GVAR(visualization_timeOut) = true;
 
                 GVAR(visualization_timeOut) = false;
                 GVAR(visualization_attempts) = GVAR(visualization_attempts) + 1;
-                private _etomidateCount = [_patient, "Etomidate", true] call ACEFUNC(medical_status,getMedicationCount) select 1;
-                private _rocuroniumCount = [_patient, "Rocuronium", true] call ACEFUNC(medical_status,getMedicationCount) select 1;
-                private _succinylcholineCount = [_patient, "Succinylcholine", true] call ACEFUNC(medical_status,getMedicationCount) select 1;
-                private _ketamineCount = [_patient, "Ketamine", true] call ACEFUNC(medical_status,getMedicationCount) select 1;
-                _medicationDifficulty = 1;
-                _traumaDifficulty = 1;
-                if (((_etomidateCount || _ketamineCount) > 0.2) && ((_rocuroniumCount || _succinylcholineCount) > 0.2)) then {
-                    private _medicationDifficulty = linearConversion [0.2, 1, ((_rocuroniumCount + _succinylcholineCount) min 1), 1, 0.1, true];
-                    private _openWounds = count (GET_OPEN_WOUNDS(_patient) getOrDefault ["head", []]);
-                    private _bandagedWounds = count (GET_BANDAGED_WOUNDS(_patient) getOrDefault ["head", []]);
-                    private _wrappedWounds = count (GET_WRAPPED_WOUNDS(_patient) getOrDefault ["head", []]);
-                    private _coagWounds = count (GET_COAGED_WOUNDS(_patient) getOrDefault ["head", []]);
-                    private _traumaDifficulty = linearConversion [1, 60, (_openWounds + _bandagedWounds + _wrappedWounds + _coagWounds), 0.01, 3, true];
-                    _visualizationDifficulty = _traumaDifficulty * _medicationDifficulty;
-                };
+                private _paralysis = _patient getVariable [QEGVAR(breathing,paralysis), 0];
                     
                 if (((_patient getVariable [QGVAR(occlusion), [0, 0, 0]]) findIf { _x < 2 }) != -1) then {
-                    if(random 100 < (20 / _visualizationDifficulty)) then {
+                    if(random 100 < (5 / ((1 -_paralysis) max 0.1))) then {
                         _patient setVariable [QGVAR(isVisualized), true, true];
                         [{_patient setVariable [QGVAR(isVisualized), false, true]; }, [_patient], 20] call CBA_fnc_waitAndExecute;
                         [LLSTRING(visualization_success), 2, _medic] call ACEFUNC(common,displayTextStructured);
