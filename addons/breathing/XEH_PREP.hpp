@@ -1,6 +1,8 @@
+PREP(adjustVentRate);
 PREP(attachPersonalOxygen);
 PREP(attachVehicleOxygen);
 PREP(attachVent);
+PREP(canAdjustRate);
 PREP(canAttachVent);
 PREP(canDetachVent);
 PREP(canUseBVM);

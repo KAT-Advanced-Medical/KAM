@@ -19,6 +19,7 @@
 params ["_medic", "_patient"];
 
 _patient setVariable [QGVAR(attachedVent), true, true];
+_patient setVariable [QGVAR(attachedVentGUI), true, true];
 _patient call FUNC(ventPFH);
 
 _currentMonitors = _patient getVariable [QGVAR(etco2Monitor),[]];

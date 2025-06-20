@@ -30,8 +30,10 @@ _patient setVariable [QGVAR(breathRate), 15, true];
 _patient setVariable [QGVAR(nasalCannula), false, true];
 _patient setVariable [QGVAR(lungSurfaceArea), 400];
 _patient setVariable [QGVAR(chestTube), [0, 0], true];
-_patient setVariable [QGVAR(attachedBVM), false, true];
+_patient setVariable [QGVAR(attachedVent), false, true];
+_patient setVariable [QGVAR(attachedVentGUI), false, true];
 _patient setVariable [QGVAR(paralysis), 0, true];
+_patient setVariable [QGVAR(ventRate), 2, true];
 
 if (ACEGVAR(advanced_fatigue,enabled)) then {
     ["kat_LSDF"] call ACEFUNC(advanced_fatigue,removeDutyFactor);

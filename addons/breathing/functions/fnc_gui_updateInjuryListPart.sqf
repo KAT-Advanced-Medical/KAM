@@ -53,7 +53,7 @@ if (_target getVariable [QGVAR(pulseoximeter), false] && _selectionN in [2,3]) t
 if (_target getVariable [QGVAR(nasalCannula), false] && _selectionN isEqualTo 0) then {
     _entries pushBack [LLSTRING(NasalCannula_Display), [0.3, 0.8, 0.8, 1]];
 };
-if (_target getVariable [QGVAR(attachedVent), false] && _selectionN isEqualTo 0) then {
+if (_target getVariable [QGVAR(attachedVentGUI), false] && _selectionN isEqualTo 0) then {
     _entries pushBack [LLSTRING(Vent_Display), [0.3, 0.8, 0.8, 1]];
 };
 

@@ -3424,5 +3424,17 @@
         <Key ID="STR_KAT_Breathing_Removed_Vent_log">
             <English>%1 Detached a %2</English>
         </Key>
+        <Key ID="STR_KAT_Breathing_IncreaseVent">
+            <English>Increase Ventilator Rate</English>
+        </Key>
+        <Key ID="STR_KAT_Breathing_IncreasingVent">
+            <English>Increasing Ventilator Rate</English>
+        </Key>
+        <Key ID="STR_KAT_Breathing_DecreaseVent">
+            <English>Decrease Ventilator Rate</English>
+        </Key>
+        <Key ID="STR_KAT_Breathing_DecreasingVent">
+            <English>Decreasing Ventilator Rate</English>
+        </Key>
     </Package>
 </Project>

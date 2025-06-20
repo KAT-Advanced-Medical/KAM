@@ -352,6 +352,24 @@ class ACE_Medical_Treatment_Actions {
         condition = QFUNC(canDetachVent);
         callbackSuccess = QFUNC(detachVent);
     };
+    class SpeedUpVent: AttachVent {
+        displayName = CSTRING(IncreaseVent);
+        displayNameProgress = CSTRING(IncreasingVent);
+        medicRequired = QGVAR(medLvl_Vent);
+        treatmentTime = 1;
+        items[] = {};
+        condition = QFUNC(canAdjustRate);
+        callbackSuccess = QUOTE([ARR_2(_patient,-1)] call FUNC(adjustVentRate));
+    };
+    class SlowDownVent: AttachVent {
+        displayName = CSTRING(DecreaseVent);
+        displayNameProgress = CSTRING(DecreasingVent);
+        medicRequired = QGVAR(medLvl_Vent);
+        treatmentTime = 1;
+        items[] = {};
+        condition = QFUNC(canAdjustRate);
+        callbackSuccess = QUOTE([ARR_2(_patient,1)] call FUNC(adjustVentRate));
+    };
     class NasalCannula {
         displayName = CSTRING(NasalCannula_Display);
         displayNameProgress = ECSTRING(airway,action_placing);
@@ -376,7 +394,7 @@ class ACE_Medical_Treatment_Actions {
         animationMedicSelf = "AinvPknlMstpSlayW[wpn]Dnon_medic";
         animationMedicSelfProne = "AinvPpneMstpSlayW[wpn]Dnon_medic";
         litter[] = {};
-        icon = QPATHTOEF(airway,ui\larynx.paa); // TODO update to nasal specific icon
+        icon = QPATHTOF(ui\nasalcannula.paa); // TODO update to nasal specific icon
     };
     class RemoveNasalCannula : NasalCannula {
         displayName = CSTRING(Cancel_NasalCannula);
