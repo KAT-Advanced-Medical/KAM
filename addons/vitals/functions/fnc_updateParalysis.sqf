@@ -20,4 +20,4 @@
 
 params ["_unit", "_paralysisAdjustment", "_deltaT", "_syncValue"];
 
-_unit setVariable [QGVAR(paralysis), _paralysisAdjustment, _syncValue];
+_unit setVariable [QEGVAR(breathing,paralysis), _paralysisAdjustment, _syncValue];

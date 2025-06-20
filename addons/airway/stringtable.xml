@@ -2356,5 +2356,11 @@
         <Key ID="STR_KAT_Airway_TraumaticObstruction_Display">
             <English>Traumatic Obstruction</English>
         </Key>
+        <Key ID="STR_KAT_Airway_SubCategory_Crike">
+            <English>Cricothyrotomy Settings</English>
+        </Key>
+        <Key ID="STR_KAT_Airway_SubCategory_AirwayInjury">
+            <English>Airway Injury Settings</English>
+        </Key>
     </Package>
 </Project>

@@ -52,7 +52,8 @@ private _hasCatastrophicAirway = ((_catastrophicState select 0) || (_catastrophi
     };
     private _noETT = (_patient getVariable [QEGVAR(airway,airway_item), ""] isNotEqualTo "ETT");
     private _noSurgicalAirway = (_patient getVariable [QEGVAR(airway,airway_item), ""] isNotEqualTo "Surgical_Airway");
-    if ((((_obstruction || _occlusion) && _noETT) || _hasCatastrophicAirway) && _noSurgicalAirway) then {
+    private _noOverstretch = _patient getVariable [QEGVAR(airway,overstretch), false];
+    if (((((_obstruction && !_noOverstretch) || _occlusion) && _noETT) || _hasCatastrophicAirway) && _noSurgicalAirway) then {
         _airway = false;
     };
 

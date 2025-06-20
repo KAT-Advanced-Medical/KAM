@@ -80,17 +80,18 @@ _output_log = format ["%1%2, %3", _breathing_log, _breath, _breathRate];
 
 private _airway = true;
 private _breathing = true;
-private _paralysis = (_unit getVariable [QEGVAR(vitals,paralysis), 0] > 0.1);
+private _paralysis = _unit getVariable [QGVAR(paralysis), 0] > 0.1;
 if ((_unit getVariable [QEGVAR(chemical,airPoisoning), false]) || (_tension select 0) || (_tension select 1) || (_hemo select 0) || (_hemo select 1) || _paralysis) then {
     _breathing = false;
 };
 private _noETT = (_patient getVariable [QEGVAR(airway,airway_item), ""] isNotEqualTo "ETT");
 private _noSurgicalAirway = (_patient getVariable [QEGVAR(airway,airway_item), ""] isNotEqualTo "Surgical_Airway");
-if ((((_obstruction || _occlusion) && _noETT) || _hasCatastrophicAirway) && _noSurgicalAirway) then {
+private _noOverstretch = _patient getVariable [QEGVAR(airway,overstretch), false];
+if (((((_obstruction && !_noOverstretch) || _occlusion) && _noETT) || _hasCatastrophicAirway) && _noSurgicalAirway) then {
     _airway = false;
 };
 
-if (_hr == 0 || !(alive _patient) || !_airway || !_breathing) then {
+if (_hr == 0 || !(alive _patient) || !_airway || !_breathing || _rr == 0) then {
     _output = LLSTRING(breathing_none);
     _output_log = ACELSTRING(medical_treatment,Check_Pulse_None);
 };

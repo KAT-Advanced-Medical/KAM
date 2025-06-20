@@ -13,12 +13,12 @@ class CfgVehicles {
         side=7; 
     };
 
-    class GVAR(manageAirway_module): GVAR(baseModule) {
+    /*class GVAR(manageAirway_module): GVAR(baseModule) {
         curatorCanAttach = 1;
         displayName = CSTRING(manageAirway_Module_displayname);
         curatorInfoType = QGVAR(RscManageAirway);
         icon = QACEPATHTOF(medical_gui,data\categories\airway_management.paa);
-    };
+    };*/
 
     class GVAR(bloodType_module): GVAR(baseModule) {
         curatorCanAttach = 1;

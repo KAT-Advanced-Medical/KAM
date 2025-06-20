@@ -55,12 +55,13 @@ private _catastrophicState = _unit getVariable [QEGVAR(airway,catastrophicAirway
 private _hasCatastrophicAirway = ((_catastrophicState select 0) || (_catastrophicState select 1));
 
 private _airway = false;
-private _noETT = (_unit getVariable [QEGVAR(airway,airway_item), ""] isNotEqualTo "ETT");
-private _noSurgicalAirway = (_unit getVariable [QEGVAR(airway,airway_item), ""] isNotEqualTo "Surgical_Airway");
-if ((((_obstruction || _occlusion) && _noETT) || _hasCatastrophicAirway) && _noSurgicalAirway) then {
-    _airway = true;
+private _noETT = (_patient getVariable [QEGVAR(airway,airway_item), ""] isNotEqualTo "ETT");
+private _noSurgicalAirway = (_patient getVariable [QEGVAR(airway,airway_item), ""] isNotEqualTo "Surgical_Airway");
+private _noOverstretch = _patient getVariable [QEGVAR(airway,overstretch), false];
+if (((((_obstruction && !_noOverstretch) || _occlusion) && _noETT) || _hasCatastrophicAirway) && _noSurgicalAirway) then {
+    _airway = false;
 };
-private _paralysis = (_unit getVariable [QGVAR(paralysis), 0] > 0.1);
+private _paralysis = (_unit getVariable [QEGVAR(breathing,paralysis), 0] > 0.1);
 private _existingPFH = _unit getVariable [QGVAR(airwayMonitorPFH), -1];
 if ((_existingPFH isEqualTo -1) && (IN_CRDC_ARRST(_unit) || _airway || _paralysis)) then {
     private _interval = 1;
@@ -89,7 +90,7 @@ if ((_existingPFH isEqualTo -1) && (IN_CRDC_ARRST(_unit) || _airway || _paralysi
             _airway = true;
         };
 
-        private _paralysis = (_unit getVariable [QGVAR(paralysis), 0] > 0.1);
+        private _paralysis = (_unit getVariable [QEGVAR(breathing,paralysis), 0] > 0.1);
         private _condition = IN_CRDC_ARRST(_unit) || _airway || _paralysis;
         if (_condition) then {
             _elapsed = _elapsed + 1;

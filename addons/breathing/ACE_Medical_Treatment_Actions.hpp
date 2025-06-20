@@ -330,7 +330,7 @@ class ACE_Medical_Treatment_Actions {
         treatmentTime = 6;
         consumeItem = 0;
         items[] = {"kat_BVM"};
-        condition = QUOTE(_patient call FUNC(canAttachBVM));
+        condition = QFUNC(canAttachBVM);
         callbackStart = "";
         callbackSuccess = QFUNC(attachBVM);
         callbackFailure = "";
@@ -348,14 +348,14 @@ class ACE_Medical_Treatment_Actions {
         medicRequired = QGVAR(medLvl_BVM);
         treatmentTime = 6;
         items[] = {};
-        condition = QUOTE(_patient call FUNC(canDetachBVM));
+        condition = QFUNC(canDetachBVM);
         callbackSuccess = QFUNC(detachBVM);
     };
     class UseAttachedBVM: UseBVM {
         displayName = CSTRING(UseAttachedBVM);
         medicRequired = 0;
         items[] = {};
-        condition = QUOTE(_patient call FUNC(canUseAttachedBVM));
+        condition = QFUNC(canUseAttachedBVM);
         callbackSuccess = QUOTE([ARR_3(_medic,_patient,true)] call EFUNC(airway,handleRecoveryPosition); [ARR_2(_medic,_patient)] call FUNC(useBVM););
         icon = QPATHTOF(ui\BVM_ui.paa);
     };*/

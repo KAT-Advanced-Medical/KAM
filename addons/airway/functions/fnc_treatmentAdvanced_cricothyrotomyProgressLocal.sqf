@@ -72,6 +72,29 @@ if (_number == _cricothyrotomy) exitWith {
     _cricothyrotomy = _cricothyrotomy + 0.2;
     _patient setVariable [QGVAR(cricothyrotomy), _cricothyrotomy, true];
 };
+if (_entry == 0.1) then {
+    [{
+    params ["_args", "_idPFH"];
+    _args params ["_patient"];
+
+    private _cricothyrotomy = _patient getVariable [QGVAR(cricothyrotomy), 0];
+    private _alive = alive _patient;
+    if ((!_alive) || (_cricothyrotomy == 0) || (_cricothyrotomy == 1)) exitWith {
+        [_idPFH] call CBA_fnc_removePerFrameHandler;
+    };
+    if (!(IS_UNCONSCIOUS(_patient))) exitWith {
+            [_patient, "Pain", 2, 10, 120, 0.8, 40] call ACEFUNC(medical_status,addMedicationAdjustment);
+        [_patient, true] call ACEFUNC(medical,setUnconscious);
+        };
+    }, 5, [_patient]] call CBA_fnc_addPerFrameHandler;
+
+if (GVAR(hardcoreCrike)) then {
+    [_unit, "blockRadio", "kat_crike", true] call ACEFUNC(common,statusEffect_set);
+    [_unit, "blockSpeaking", "kat_crike", true] call ACEFUNC(common,statusEffect_set);
+};
+};
+
+
 
 private _output = LLSTRING(cricothyrotomy_fail);
 [_output, 1.5, _medic] call ACEFUNC(common,displayTextStructured);
