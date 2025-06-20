@@ -561,7 +561,7 @@ class ACE_ADDON(Medical_Treatment) {
             timeTillMaxEffect = 10;
             dose = 1;
             alphaFactor = -0.1;
-            contractility = 0.3;
+            contractility = 0.9;
             maximumEffectiveDose = 30;
         };
         class syringe_Phenylephrine_5ml {
@@ -589,9 +589,9 @@ class ACE_ADDON(Medical_Treatment) {
             viscosityChange = -10;
             opioidRelief = 1.2;
             opioidEffect = 0.11;
-            opioidDepression = 0.11;
-            respiratoryRate = -0.1;
-            contractility = -0.1;
+            opioidDepression = 0.2;
+            respiratoryRate = -0.2;
+            contractility = -0.2;
             weightBased = "true";
             weightDose = 20;
             maximumEffectiveDose = 30;
@@ -758,7 +758,7 @@ class ACE_ADDON(Medical_Treatment) {
             timeTillMaxEffect = 15;
             dose = 1;
             viscosityChange = -0;
-            nauseaMult = -0.4;
+            nauseaMult = -0.7;
             weightBased = "true";
             weightDose = 20;
             maximumEffectiveDose = 30;
