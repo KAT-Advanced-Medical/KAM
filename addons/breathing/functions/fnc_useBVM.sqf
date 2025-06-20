@@ -28,13 +28,69 @@ _patient setVariable [QGVAR(BVMInUse), true, true];
 
 GVAR(BVMTarget) = _patient;
 
-GVAR(CPRCancel_EscapeID) = [0x01, [false, false, false], {
+GVAR(BVMCancel_EscapeID) = [0x01, [false, false, false], {
     GVAR(BVMTarget) setVariable [QGVAR(BVMInUse), false, true];
 }, "keydown", "", false, 0] call CBA_fnc_addKeyHandler;
 
-GVAR(CPRCancel_MouseID) = [0xF0, [false, false, false], {
+GVAR(BVMCancel_MouseID) = [0xF0, [false, false, false], {
     GVAR(BVMTarget) setVariable [QGVAR(BVMInUse), false, true];
 }, "keydown", "", false, 0] call CBA_fnc_addKeyHandler;
+
+GVAR(CPRDevice_Iterate) = [0xF1, [false, false, false], {
+    private _deviceCode = GVAR(BVMTarget) getVariable [QEGVAR(circulation,deviceCode), 0];
+    _deviceCode = [(_deviceCode + 1), 1] select (_deviceCode == 2);
+    private _deviceArray = [true,(GVAR(BVMTarget) getVariable [QGVAR(pulseoximeter), false]),((GVAR(BVMTarget) getVariable [QEGVAR(circulation,DefibrillatorPads_Connected),false] && ((GVAR(BVMTarget) getVariable [QEGVAR(circulation,Defibrillator_Provider),[-1,-1,-1]] select 2) isEqualTo 'kat_X_AED')) || (GVAR(BVMTarget) getVariable [QEGVAR(circulation,AED_X_VitalsMonitor_Connected),false]))];
+        while { !(_deviceArray select _deviceCode) } do {
+            _deviceCode = [0, (_deviceCode + 1)] select (_deviceCode < 2);
+        };
+    GVAR(BVMTarget) setVariable [QEGVAR(circulation,deviceCode), _deviceCode, true];
+    true
+}, "keydown", "", false, 0] call CBA_fnc_addKeyHandler;
+
+[{
+    params ["_args", "_idPFH"];
+    _args params ["_medic", "_patient"];
+
+    private _deviceCode = _patient getVariable [QEGVAR(circulation,deviceCode), 0];
+
+    if !(_patient getVariable [QGVAR(BVMInUse), false]) exitWith {
+        [_idPFH] call CBA_fnc_removePerFrameHandler;
+        GVAR(BVMDisplayActive) = false;
+
+        "CPR_MONITOR" cutText ["", "PLAIN",0,true];
+        _patient setVariable [QGVAR(deviceCode), 0, true];
+    };
+
+    switch (true) do {
+        case (_deviceCode == 2): {
+            if ((_patient getVariable [QEGVAR(circulation,DefibrillatorPads_Connected),false] && ((_patient getVariable [QEGVAR(circulation,Defibrillator_Provider),[-1,-1,-1]] select 2) isEqualTo 'kat_X_AED')) || (_patient getVariable [QEGVAR(circulation,AED_X_VitalsMonitor_Connected),false])) then {
+                if !(GVAR(BVMDisplayActive)) then {
+                    "CPR_MONITOR" cutText ["", "PLAIN",0,true];
+                    "CPR_MONITOR" cutRsc ["CPR_AED_X", "PLAIN", 0, true];
+                    GVAR(BVMDisplayActive) = true;
+                    [_medic, GVAR(BVMTarget)] call EFUNC(circulation,AEDX_ViewMonitor_CPR);
+                };
+            } else {
+                "CPR_MONITOR" cutText ["", "PLAIN",0,true];
+                GVAR(BVMDisplayActive) = false;
+            };
+        };
+        case (_deviceCode == 1): {
+            if ((_patient getVariable [QGVAR(pulseoximeter), false])) then {
+                if !(GVAR(PulseOxDisplay)) then {
+                    "CPR_MONITOR" cutText ["", "PLAIN",0,true];
+                    "CPR_MONITOR" cutRsc ["CPR_PulseOx", "PLAIN", 0, true];
+                    GVAR(PulseOxDisplay) = true;
+                    [_medic, GVAR(BVMTarget)] call EFUNC(circulation,PulseOx_ViewMonitor);
+                };
+            } else {
+                "CPR_MONITOR" cutText ["", "PLAIN",0,true];
+                GVAR(PulseOxDisplay) = false;
+            };
+        };
+        case (_deviceCode == 0): { "CPR_MONITOR" cutText ["", "PLAIN"]; GVAR(PulseOxDisplay) = false; GVAR(BVMDisplayActive) = false;};
+    };
+}, 2, [_medic, _patient]] call CBA_fnc_addPerFrameHandler;
 
 ACEGVAR(medical_gui,pendingReopen) = false; // Prevent medical menu from reopening
 
@@ -56,7 +112,7 @@ GVAR(BVM_timeOut) = true;
 [{
     params ["_medic", "_patient", "_pocket", "_useOxygen", "_oxygenOrigin", "_notInVehicle"];
 
-    [LLSTRING(UseBVM_PutAway), "", ""] call ACEFUNC(interaction,showMouseHint);
+    [LLSTRING(UseBVM_PutAway), LELSTRING(circulation,ChangeCPRDevice), ""] call ACEFUNC(interaction,showMouseHint);
     [LLSTRING(UseBVM_Start), 1.5, _medic] call ACEFUNC(common,displayTextStructured);
 
     [{
@@ -76,8 +132,9 @@ GVAR(BVM_timeOut) = true;
 
             [] call ACEFUNC(interaction,hideMouseHint);
 
-            [GVAR(CPRCancel_EscapeID), "keydown"] call CBA_fnc_removeKeyHandler;
-            [GVAR(CPRCancel_MouseID), "keydown"] call CBA_fnc_removeKeyHandler;
+            [GVAR(BVMCancel_EscapeID), "keydown"] call CBA_fnc_removeKeyHandler;
+            [GVAR(BVMCancel_MouseID), "keydown"] call CBA_fnc_removeKeyHandler;
+            [GVAR(BVMDevice_Iterate), "keydown"] call CBA_fnc_removeKeyHandler;
 
             if (_notInVehicle) then {
                 [_medic, "AinvPknlMstpSnonWnonDnon_medicEnd", 2] call ACEFUNC(common,doAnimation);
@@ -96,6 +153,7 @@ GVAR(BVM_timeOut) = true;
             if (_useOxygen) then {
                 _bvmType = format [LLSTRING(Activity_BVM_Oxygenated), _bvmType];
             };
+    
 
             [_patient, "activity", LSTRING(Activity_BVM), [[_medic, false, true] call ACEFUNC(common,getName), _bvmType, totalProvided]] call ACEFUNC(medical_treatment,addToLog);
             [LLSTRING(UseBVM_Cancelled), 1.5, _medic] call ACEFUNC(common,displayTextStructured);

@@ -21,16 +21,26 @@ params ["_medic", "_patient", "_item"];
 
 _patient setVariable [QGVAR(airway_item), "", true];
 _patient setVariable [QGVAR(airway), false, true];
+_patient setVariable [QGVAR(airwayStatus), [0, 0, 0], true];
 _patient call FUNC(handleAirway);
-
-if (_item isEqualTo "Larynxtubus") then {
-    _patient call FUNC(handlePuking);
-};
 
 if !(GVAR(ReusableAirwayItems)) exitWith {};
 
-if (_item isEqualTo "Larynxtubus") then {
-    [_medic, "kat_larynx"] call ACEFUNC(common,addToInventory);
-} else {
-    [_medic, "kat_guedel"] call ACEFUNC(common,addToInventory);
+switch (true) do {
+    case (_item isEqualTo "Larynxtubus"): {
+        [_medic, "kat_larynx"] call ACEFUNC(common,addToInventory);
+    };
+    case (_item isEqualTo "IGEL"): {
+        [_medic, "kat_IGEL"] call ACEFUNC(common,addToInventory);
+    };
+    case (_item isEqualTo "ETT"): {
+        [_medic, "kat_ETT"] call ACEFUNC(common,addToInventory);
+    };
+    case (_item isEqualTo "NPA"): {
+        [_medic, "kat_NPA"] call ACEFUNC(common,addToInventory);
+    };
+    case (_item isEqualTo "Guedeltubes"): {
+        [_medic, "kat_guedel"] call ACEFUNC(common,addToInventory);
+    };
+    default {};
 };

@@ -21,7 +21,8 @@ params ["_medic", "_patient"];
 if (_patient getVariable [QGVAR(overstretch), false]) exitWith {
     [LLSTRING(Hyperextend_already), 1.5, _medic] call ACEFUNC(common,displayTextStructured);
 };
-if !(_patient getVariable [QGVAR(obstruction), false]) exitWith {
+private _obstruction = ((_patient getVariable [QGVAR(obstruction), [0, 0, 0]]) findIf { _x != 0 }) != -1;
+if !(_obstruction) exitWith {
     [LLSTRING(AirwayStatus_noObstruction), 1.5, _medic] call ACEFUNC(common,displayTextStructured);
 };
 

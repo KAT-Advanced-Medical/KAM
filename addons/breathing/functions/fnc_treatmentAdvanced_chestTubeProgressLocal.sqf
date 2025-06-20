@@ -68,7 +68,7 @@ if (_number == _liveTube) exitWith {
         };
     };
 
-    [_patient, "quick_view", LSTRING(ChestTube_log), [[_medic] call ACEFUNC(common,getName), _surgeryString, STRING_BODY_PARTS select 1]] call ACEFUNC(medical_treatment,addToLog);
+    [_patient, "quick_view", LSTRING(ChestTube_log), [[_medic] call ACEFUNC(common,getName), _surgeryString, STRING_BODY_PARTS select 2]] call ACEFUNC(medical_treatment,addToLog);
 
     _liveTube = _liveTube + 0.2;
 

@@ -18,18 +18,40 @@
  * Public: No
  */
 
-params ["_medic", "_patient","_classname", "_usedItem"];
+params ["_medic", "_patient","_classname", "_usedItem", ["_requireClear", true]];
+private _occlusion = ((_patient getVariable [QGVAR(occlusion), [0, 0, 0]]) findIf { _x > 2 }) != -1;
+private _obstruction = ((_patient getVariable [QGVAR(obstruction), [0, 0, 0]]) findIf { _x != 0 }) != -1;
 
-if (_patient getVariable [QGVAR(occluded), false]) exitWith {
+
+if ((_occlusion || (_obstruction && !(_patient getVariable [QGVAR(overstretch), false])) ) && !(_classname in ["NPA"])) exitWith {
     [QGVAR(airwayFeedback), [_medic, LLSTRING(AirwayStatus_NotClearForItem)], _medic] call CBA_fnc_targetEvent;
     [_medic, _usedItem] call ACEFUNC(common,addToInventory);
 };
 
 _patient setVariable [QGVAR(airway), true, true];
-_patient setVariable [QGVAR(obstruction), false, true];
 _patient setVariable [QGVAR(airway_item), _classname, true];
+switch (true) do {
+    case (_usedItem isEqualTo "Larynxtubus"): {
+        _patient setVariable [QGVAR(airwayStatus), [1, 1, 0], true];
+    };
+    case (_usedItem isEqualTo "IGEL"): {
+        _patient setVariable [QGVAR(airwayStatus), [1, 1, 0], true];
+    };
+    case (_usedItem isEqualTo "ETT"): {
+        _patient setVariable [QGVAR(airwayStatus), [1, 1, 1], true];
+        [GVAR(PlaceETT), "keydown"] call CBA_fnc_removeKeyHandler;
+        _patient setVariable [QGVAR(visualizationActive), false, true];
+    };
+    case (_usedItem isEqualTo "NPA"): {
+        _patient setVariable [QGVAR(airwayStatus), [1, 0, 0], true];
+    };
+    case (_usedItem isEqualTo "Guedeltubes"): {
+        _patient setVariable [QGVAR(airwayStatus), [1, 0, 0], true];
+    };
+    default {};
+};
 
-if (_classname isEqualTo "Larynxtubus") then {
+if (_classname in ["Larynxtubus", "IGEL", "ETT"]) then {
     private _currentMonitors = _patient getVariable [QEGVAR(breathing,etco2Monitor), []];
     _currentMonitors pushBack _classname;
     _patient setVariable [QEGVAR(breathing,etco2Monitor), _currentMonitors, true];

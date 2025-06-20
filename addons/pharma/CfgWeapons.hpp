@@ -278,6 +278,39 @@ class CfgWeapons {
             mass = 0.5;
         };
     };
+    class kat_succinylcholine: ACE_ItemCore {
+        scope = 2;
+        displayName = CSTRING(Succinylcholine_displayName);
+        picture = QPATHTOF(ui\icon_succinylcholine.paa);
+        model = "\A3\Structures_F_EPA\Items\Medical\Painkillers_F.p3d";
+        descriptionShort = CSTRING(Succinylcholine_DescShort);
+        ACE_isMedicalItem = 1;
+        class ItemInfo: CBA_MiscItem_ItemInfo {
+            mass = 0.5;
+        };
+    };
+    class kat_rocuronium: ACE_ItemCore {
+        scope = 2;
+        displayName = CSTRING(Rocuronium_displayName);
+        picture = QPATHTOF(ui\icon_rocuronium.paa);
+        model = "\A3\Structures_F_EPA\Items\Medical\Painkillers_F.p3d";
+        descriptionShort = CSTRING(Rocuronium_DescShort);
+        ACE_isMedicalItem = 1;
+        class ItemInfo: CBA_MiscItem_ItemInfo {
+            mass = 0.5;
+        };
+    };
+    class kat_sugammadex: ACE_ItemCore {
+        scope = 2;
+        displayName = CSTRING(Sugammadex_displayName);
+        picture = QPATHTOF(ui\icon_sugammadex.paa);
+        model = "\A3\Structures_F_EPA\Items\Medical\Painkillers_F.p3d";
+        descriptionShort = CSTRING(Sugammadex_DescShort);
+        ACE_isMedicalItem = 1;
+        class ItemInfo: CBA_MiscItem_ItemInfo {
+            mass = 0.5;
+        };
+    };
     class kat_etomidate: ACE_ItemCore {
         scope = 2;
         displayName = CSTRING(Etomidate_displayName);
@@ -306,6 +339,17 @@ class CfgWeapons {
         picture = QPATHTOF(ui\icon_MorphineIV.paa);
         model = "\A3\Structures_F_EPA\Items\Medical\Painkillers_F.p3d";
         descriptionShort = CSTRING(MorphineIV_DescShort);
+        ACE_isMedicalItem = 1;
+        class ItemInfo: CBA_MiscItem_ItemInfo {
+            mass = 0.5;
+        };
+    };
+    class kat_ondansetron: ACE_ItemCore {
+        scope = 2;
+        displayName = CSTRING(Ondansetron_displayName);
+        picture = QPATHTOF(ui\icon_Ondansetron.paa);
+        model = "\A3\Structures_F_EPA\Items\Medical\Painkillers_F.p3d";
+        descriptionShort = CSTRING(Ondansetron_DescShort);
         ACE_isMedicalItem = 1;
         class ItemInfo: CBA_MiscItem_ItemInfo {
             mass = 0.5;
@@ -386,36 +430,6 @@ class CfgWeapons {
     };
     class kat_syringe_lidocaine_10ml_10: kat_syringe_txa_10ml_10 {
         displayName = KATDISPLAYCSTRING(lidocaine,10ml,10);
-    };
-    class kat_syringe_lidocaine_10ml_12: kat_syringe_lidocaine_10ml_10 {
-        displayName = KATDISPLAYCSTRING(lidocaine,10ml,12);
-    };
-    class kat_syringe_lidocaine_10ml_14: kat_syringe_lidocaine_10ml_10 {
-        displayName = KATDISPLAYCSTRING(lidocaine,10ml,14);
-    };
-    class kat_syringe_lidocaine_10ml_16: kat_syringe_lidocaine_10ml_10 {
-        displayName = KATDISPLAYCSTRING(lidocaine,10ml,16);
-    };
-    class kat_syringe_lidocaine_10ml_18: kat_syringe_lidocaine_10ml_10 {
-        displayName = KATDISPLAYCSTRING(lidocaine,10ml,18);
-    };
-    class kat_syringe_lidocaine_10ml_20: kat_syringe_lidocaine_10ml_10 {
-        displayName = KATDISPLAYCSTRING(lidocaine,10ml,20);
-    };
-    class kat_syringe_lidocaine_10ml_22: kat_syringe_lidocaine_10ml_10 {
-        displayName = KATDISPLAYCSTRING(lidocaine,10ml,22);
-    };
-    class kat_syringe_lidocaine_10ml_24: kat_syringe_lidocaine_10ml_10 {
-        displayName = KATDISPLAYCSTRING(lidocaine,10ml,24);
-    };
-    class kat_syringe_lidocaine_10ml_26: kat_syringe_lidocaine_10ml_10 {
-        displayName = KATDISPLAYCSTRING(lidocaine,10ml,26);
-    };
-    class kat_syringe_lidocaine_10ml_28: kat_syringe_lidocaine_10ml_10 {
-        displayName = KATDISPLAYCSTRING(lidocaine,10ml,28);
-    };
-    class kat_syringe_lidocaine_10ml_30: kat_syringe_lidocaine_10ml_10 {
-        displayName = KATDISPLAYCSTRING(lidocaine,10ml,30);
     };
     class kat_syringe_ketamine_10ml_10: kat_syringe_txa_10ml_10 {
         displayName = KATDISPLAYCSTRING(ketamine,10ml,10);
@@ -519,266 +533,41 @@ class CfgWeapons {
     class kat_syringe_txa_5ml_10: kat_syringe_txa_10ml_10 {
         displayName = KATDISPLAYCSTRING(txa,5ml,10);
     };
-    class kat_syringe_txa_5ml_12: kat_syringe_txa_5ml_10 {
-        displayName = KATDISPLAYCSTRING(txa,5ml,12);
-    };
-    class kat_syringe_txa_5ml_14: kat_syringe_txa_5ml_10 {
-        displayName = KATDISPLAYCSTRING(txa,5ml,14);
-    };
-    class kat_syringe_txa_5ml_16: kat_syringe_txa_5ml_10 {
-        displayName = KATDISPLAYCSTRING(txa,5ml,16);
-    };
-    class kat_syringe_txa_5ml_18: kat_syringe_txa_5ml_10 {
-        displayName = KATDISPLAYCSTRING(txa,5ml,18);
-    };
     class kat_syringe_txa_5ml_20: kat_syringe_txa_5ml_10 {
         displayName = KATDISPLAYCSTRING(txa,5ml,20);
-    };
-    class kat_syringe_txa_5ml_22: kat_syringe_txa_5ml_10 {
-        displayName = KATDISPLAYCSTRING(txa,5ml,22);
-    };
-    class kat_syringe_txa_5ml_24: kat_syringe_txa_5ml_10 {
-        displayName = KATDISPLAYCSTRING(txa,5ml,24);
-    };
-    class kat_syringe_txa_5ml_26: kat_syringe_txa_5ml_10 {
-        displayName = KATDISPLAYCSTRING(txa,5ml,26);
-    };
-    class kat_syringe_txa_5ml_28: kat_syringe_txa_5ml_10 {
-        displayName = KATDISPLAYCSTRING(txa,5ml,28);
-    };
-    class kat_syringe_txa_5ml_30: kat_syringe_txa_5ml_10 {
-        displayName = KATDISPLAYCSTRING(txa,5ml,30);
     };
     class kat_syringe_eaca_5ml_10: kat_syringe_txa_5ml_10 {
         displayName = KATDISPLAYCSTRING(eaca,5ml,10);
     };
-    class kat_syringe_eaca_5ml_12: kat_syringe_eaca_5ml_10 {
-        displayName = KATDISPLAYCSTRING(eaca,5ml,12);
-    };
-    class kat_syringe_eaca_5ml_14: kat_syringe_eaca_5ml_10 {
-        displayName = KATDISPLAYCSTRING(eaca,5ml,14);
-    };
-    class kat_syringe_eaca_5ml_16: kat_syringe_eaca_5ml_10 {
-        displayName = KATDISPLAYCSTRING(eaca,5ml,16);
-    };
-    class kat_syringe_eaca_5ml_18: kat_syringe_eaca_5ml_10 {
-        displayName = KATDISPLAYCSTRING(eaca,5ml,18);
-    };
     class kat_syringe_eaca_5ml_20: kat_syringe_eaca_5ml_10 {
         displayName = KATDISPLAYCSTRING(eaca,5ml,20);
-    };
-    class kat_syringe_eaca_5ml_22: kat_syringe_eaca_5ml_10 {
-        displayName = KATDISPLAYCSTRING(eaca,5ml,22);
-    };
-    class kat_syringe_eaca_5ml_24: kat_syringe_eaca_5ml_10 {
-        displayName = KATDISPLAYCSTRING(eaca,5ml,24);
-    };
-    class kat_syringe_eaca_5ml_26: kat_syringe_eaca_5ml_10 {
-        displayName = KATDISPLAYCSTRING(eaca,5ml,26);
-    };
-    class kat_syringe_eaca_5ml_28: kat_syringe_eaca_5ml_10 {
-        displayName = KATDISPLAYCSTRING(eaca,5ml,28);
-    };
-    class kat_syringe_eaca_5ml_30: kat_syringe_eaca_5ml_10 {
-        displayName = KATDISPLAYCSTRING(eaca,5ml,30);
-    };
-    class kat_syringe_norepinephrine_5ml_10: kat_syringe_txa_5ml_10 {
-        displayName = KATDISPLAYCSTRING(norepinephrine,5ml,10);
-    };
-    class kat_syringe_norepinephrine_5ml_12: kat_syringe_norepinephrine_5ml_10 {
-        displayName = KATDISPLAYCSTRING(norepinephrine,5ml,12);
-    };
-    class kat_syringe_norepinephrine_5ml_14: kat_syringe_norepinephrine_5ml_10 {
-        displayName = KATDISPLAYCSTRING(norepinephrine,5ml,14);
-    };
-    class kat_syringe_norepinephrine_5ml_16: kat_syringe_norepinephrine_5ml_10 {
-        displayName = KATDISPLAYCSTRING(norepinephrine,5ml,16);
-    };
-    class kat_syringe_norepinephrine_5ml_18: kat_syringe_norepinephrine_5ml_10 {
-        displayName = KATDISPLAYCSTRING(norepinephrine,5ml,18);
-    };
-    class kat_syringe_norepinephrine_5ml_20: kat_syringe_norepinephrine_5ml_10 {
-        displayName = KATDISPLAYCSTRING(norepinephrine,5ml,20);
-    };
-    class kat_syringe_norepinephrine_5ml_22: kat_syringe_norepinephrine_5ml_10 {
-        displayName = KATDISPLAYCSTRING(norepinephrine,5ml,22);
-    };
-    class kat_syringe_norepinephrine_5ml_24: kat_syringe_norepinephrine_5ml_10 {
-        displayName = KATDISPLAYCSTRING(norepinephrine,5ml,24);
-    };
-    class kat_syringe_norepinephrine_5ml_26: kat_syringe_norepinephrine_5ml_10 {
-        displayName = KATDISPLAYCSTRING(norepinephrine,5ml,26);
-    };
-    class kat_syringe_norepinephrine_5ml_28: kat_syringe_norepinephrine_5ml_10 {
-        displayName = KATDISPLAYCSTRING(norepinephrine,5ml,28);
-    };
-    class kat_syringe_norepinephrine_5ml_30: kat_syringe_norepinephrine_5ml_10 {
-        displayName = KATDISPLAYCSTRING(norepinephrine,5ml,30);
     };
     class kat_syringe_phenylephrine_5ml_10: kat_syringe_txa_5ml_10 {
         displayName = KATDISPLAYCSTRING(phenylephrine,5ml,10);
     };
-    class kat_syringe_phenylephrine_5ml_12: kat_syringe_phenylephrine_5ml_10 {
-        displayName = KATDISPLAYCSTRING(phenylephrine,5ml,12);
-    };
-    class kat_syringe_phenylephrine_5ml_14: kat_syringe_phenylephrine_5ml_10 {
-        displayName = KATDISPLAYCSTRING(phenylephrine,5ml,14);
-    };
-    class kat_syringe_phenylephrine_5ml_16: kat_syringe_phenylephrine_5ml_10 {
-        displayName = KATDISPLAYCSTRING(phenylephrine,5ml,16);
-    };
-    class kat_syringe_phenylephrine_5ml_18: kat_syringe_phenylephrine_5ml_10 {
-        displayName = KATDISPLAYCSTRING(phenylephrine,5ml,18);
-    };
     class kat_syringe_phenylephrine_5ml_20: kat_syringe_phenylephrine_5ml_10 {
         displayName = KATDISPLAYCSTRING(phenylephrine,5ml,20);
-    };
-    class kat_syringe_phenylephrine_5ml_22: kat_syringe_phenylephrine_5ml_10 {
-        displayName = KATDISPLAYCSTRING(phenylephrine,5ml,22);
-    };
-    class kat_syringe_phenylephrine_5ml_24: kat_syringe_phenylephrine_5ml_10 {
-        displayName = KATDISPLAYCSTRING(phenylephrine,5ml,24);
-    };
-    class kat_syringe_phenylephrine_5ml_26: kat_syringe_phenylephrine_5ml_10 {
-        displayName = KATDISPLAYCSTRING(phenylephrine,5ml,26);
-    };
-    class kat_syringe_phenylephrine_5ml_28: kat_syringe_phenylephrine_5ml_10 {
-        displayName = KATDISPLAYCSTRING(phenylephrine,5ml,28);
     };
     class kat_syringe_phenylephrine_5ml_30: kat_syringe_phenylephrine_5ml_10 {
         displayName = KATDISPLAYCSTRING(phenylephrine,5ml,30);
     };
-    class kat_syringe_nitroglycerin_5ml_10: kat_syringe_txa_5ml_10 {
-        displayName = KATDISPLAYCSTRING(nitroglycerin,5ml,10);
-    };
-    class kat_syringe_nitroglycerin_5ml_12: kat_syringe_nitroglycerin_5ml_10 {
-        displayName = KATDISPLAYCSTRING(nitroglycerin,5ml,12);
-    };
-    class kat_syringe_nitroglycerin_5ml_14: kat_syringe_nitroglycerin_5ml_10 {
-        displayName = KATDISPLAYCSTRING(nitroglycerin,5ml,14);
-    };
-    class kat_syringe_nitroglycerin_5ml_16: kat_syringe_nitroglycerin_5ml_10 {
-        displayName = KATDISPLAYCSTRING(nitroglycerin,5ml,16);
-    };
-    class kat_syringe_nitroglycerin_5ml_18: kat_syringe_nitroglycerin_5ml_10 {
-        displayName = KATDISPLAYCSTRING(nitroglycerin,5ml,18);
-    };
-    class kat_syringe_nitroglycerin_5ml_20: kat_syringe_nitroglycerin_5ml_10 {
-        displayName = KATDISPLAYCSTRING(nitroglycerin,5ml,20);
-    };
-    class kat_syringe_nitroglycerin_5ml_22: kat_syringe_nitroglycerin_5ml_10 {
-        displayName = KATDISPLAYCSTRING(nitroglycerin,5ml,22);
-    };
-    class kat_syringe_nitroglycerin_5ml_24: kat_syringe_nitroglycerin_5ml_10 {
-        displayName = KATDISPLAYCSTRING(nitroglycerin,5ml,24);
-    };
-    class kat_syringe_nitroglycerin_5ml_26: kat_syringe_nitroglycerin_5ml_10 {
-        displayName = KATDISPLAYCSTRING(nitroglycerin,5ml,26);
-    };
-    class kat_syringe_nitroglycerin_5ml_28: kat_syringe_nitroglycerin_5ml_10 {
-        displayName = KATDISPLAYCSTRING(nitroglycerin,5ml,28);
-    };
-    class kat_syringe_nitroglycerin_5ml_30: kat_syringe_nitroglycerin_5ml_10 {
-        displayName = KATDISPLAYCSTRING(nitroglycerin,5ml,30);
-    };
     class kat_syringe_amiodarone_5ml_10: kat_syringe_txa_5ml_10 {
         displayName = KATDISPLAYCSTRING(amiodarone,5ml,10);
-    };
-    class kat_syringe_amiodarone_5ml_12: kat_syringe_amiodarone_5ml_10 {
-        displayName = KATDISPLAYCSTRING(amiodarone,5ml,12);
-    };
-    class kat_syringe_amiodarone_5ml_14: kat_syringe_amiodarone_5ml_10 {
-        displayName = KATDISPLAYCSTRING(amiodarone,5ml,14);
-    };
-    class kat_syringe_amiodarone_5ml_16: kat_syringe_amiodarone_5ml_10 {
-        displayName = KATDISPLAYCSTRING(amiodarone,5ml,16);
-    };
-    class kat_syringe_amiodarone_5ml_18: kat_syringe_amiodarone_5ml_10 {
-        displayName = KATDISPLAYCSTRING(amiodarone,5ml,18);
     };
     class kat_syringe_amiodarone_5ml_20: kat_syringe_amiodarone_5ml_10 {
         displayName = KATDISPLAYCSTRING(amiodarone,5ml,20);
     };
-    class kat_syringe_amiodarone_5ml_22: kat_syringe_amiodarone_5ml_10 {
-        displayName = KATDISPLAYCSTRING(amiodarone,5ml,22);
-    };
-    class kat_syringe_amiodarone_5ml_24: kat_syringe_amiodarone_5ml_10 {
-        displayName = KATDISPLAYCSTRING(amiodarone,5ml,24);
-    };
-    class kat_syringe_amiodarone_5ml_26: kat_syringe_amiodarone_5ml_10 {
-        displayName = KATDISPLAYCSTRING(amiodarone,5ml,26);
-    };
-    class kat_syringe_amiodarone_5ml_28: kat_syringe_amiodarone_5ml_10 {
-        displayName = KATDISPLAYCSTRING(amiodarone,5ml,28);
-    };
     class kat_syringe_amiodarone_5ml_30: kat_syringe_amiodarone_5ml_10 {
         displayName = KATDISPLAYCSTRING(amiodarone,5ml,30);
     };
-    class kat_syringe_alteplase_5ml_10: kat_syringe_txa_5ml_10 {
-        displayName = KATDISPLAYCSTRING(alteplase,5ml,10);
-    };
-    class kat_syringe_alteplase_5ml_12: kat_syringe_alteplase_5ml_10 {
-        displayName = KATDISPLAYCSTRING(alteplase,5ml,12);
-    };
-    class kat_syringe_alteplase_5ml_14: kat_syringe_alteplase_5ml_10 {
-        displayName = KATDISPLAYCSTRING(alteplase,5ml,14);
-    };
-    class kat_syringe_alteplase_5ml_16: kat_syringe_alteplase_5ml_10 {
-        displayName = KATDISPLAYCSTRING(alteplase,5ml,16);
-    };
-    class kat_syringe_alteplase_5ml_18: kat_syringe_alteplase_5ml_10 {
-        displayName = KATDISPLAYCSTRING(alteplase,5ml,18);
-    };
-    class kat_syringe_alteplase_5ml_20: kat_syringe_alteplase_5ml_10 {
-        displayName = KATDISPLAYCSTRING(alteplase,5ml,20);
-    };
-    class kat_syringe_alteplase_5ml_22: kat_syringe_alteplase_5ml_10 {
-        displayName = KATDISPLAYCSTRING(alteplase,5ml,22);
-    };
-    class kat_syringe_alteplase_5ml_24: kat_syringe_alteplase_5ml_10 {
-        displayName = KATDISPLAYCSTRING(alteplase,5ml,24);
-    };
-    class kat_syringe_alteplase_5ml_26: kat_syringe_alteplase_5ml_10 {
-        displayName = KATDISPLAYCSTRING(alteplase,5ml,26);
-    };
-    class kat_syringe_alteplase_5ml_28: kat_syringe_alteplase_5ml_10 {
-        displayName = KATDISPLAYCSTRING(alteplase,5ml,28);
-    };
-    class kat_syringe_alteplase_5ml_30: kat_syringe_alteplase_5ml_10 {
+    class kat_syringe_alteplase_5ml_20: kat_syringe_txa_5ml_10 {
         displayName = KATDISPLAYCSTRING(alteplase,5ml,30);
     };
     class kat_syringe_epinephrineIV_5ml_10: kat_syringe_txa_5ml_10 {
         displayName = KATDISPLAYCSTRING(epinephrineIV,5ml,10);
     };
-    class kat_syringe_epinephrineIV_5ml_12: kat_syringe_epinephrineIV_5ml_10 {
-        displayName = KATDISPLAYCSTRING(epinephrineIV,5ml,12);
-    };
-    class kat_syringe_epinephrineIV_5ml_14: kat_syringe_epinephrineIV_5ml_10 {
-        displayName = KATDISPLAYCSTRING(epinephrineIV,5ml,14);
-    };
-    class kat_syringe_epinephrineIV_5ml_16: kat_syringe_epinephrineIV_5ml_10 {
-        displayName = KATDISPLAYCSTRING(epinephrineIV,5ml,16);
-    };
-    class kat_syringe_epinephrineIV_5ml_18: kat_syringe_epinephrineIV_5ml_10 {
-        displayName = KATDISPLAYCSTRING(epinephrineIV,5ml,18);
-    };
     class kat_syringe_epinephrineIV_5ml_20: kat_syringe_epinephrineIV_5ml_10 {
         displayName = KATDISPLAYCSTRING(epinephrineIV,5ml,20);
-    };
-    class kat_syringe_epinephrineIV_5ml_22: kat_syringe_epinephrineIV_5ml_10 {
-        displayName = KATDISPLAYCSTRING(epinephrineIV,5ml,22);
-    };
-    class kat_syringe_epinephrineIV_5ml_24: kat_syringe_epinephrineIV_5ml_10 {
-        displayName = KATDISPLAYCSTRING(epinephrineIV,5ml,24);
-    };
-    class kat_syringe_epinephrineIV_5ml_26: kat_syringe_epinephrineIV_5ml_10 {
-        displayName = KATDISPLAYCSTRING(epinephrineIV,5ml,26);
-    };
-    class kat_syringe_epinephrineIV_5ml_28: kat_syringe_epinephrineIV_5ml_10 {
-        displayName = KATDISPLAYCSTRING(epinephrineIV,5ml,28);
-    };
-    class kat_syringe_epinephrineIV_5ml_30: kat_syringe_epinephrineIV_5ml_10 {
-        displayName = KATDISPLAYCSTRING(epinephrineIV,5ml,30);
     };
     class kat_syringe_lidocaine_5ml_10: kat_syringe_txa_5ml_10 {
         displayName = KATDISPLAYCSTRING(lidocaine,5ml,10);
@@ -786,29 +575,8 @@ class CfgWeapons {
     class kat_syringe_lidocaine_5ml_12: kat_syringe_lidocaine_5ml_10 {
         displayName = KATDISPLAYCSTRING(lidocaine,5ml,12);
     };
-    class kat_syringe_lidocaine_5ml_14: kat_syringe_lidocaine_5ml_10 {
-        displayName = KATDISPLAYCSTRING(lidocaine,5ml,14);
-    };
-    class kat_syringe_lidocaine_5ml_16: kat_syringe_lidocaine_5ml_10 {
-        displayName = KATDISPLAYCSTRING(lidocaine,5ml,16);
-    };
-    class kat_syringe_lidocaine_5ml_18: kat_syringe_lidocaine_5ml_10 {
-        displayName = KATDISPLAYCSTRING(lidocaine,5ml,18);
-    };
     class kat_syringe_lidocaine_5ml_20: kat_syringe_lidocaine_5ml_10 {
         displayName = KATDISPLAYCSTRING(lidocaine,5ml,20);
-    };
-    class kat_syringe_lidocaine_5ml_22: kat_syringe_lidocaine_5ml_10 {
-        displayName = KATDISPLAYCSTRING(lidocaine,5ml,22);
-    };
-    class kat_syringe_lidocaine_5ml_24: kat_syringe_lidocaine_5ml_10 {
-        displayName = KATDISPLAYCSTRING(lidocaine,5ml,24);
-    };
-    class kat_syringe_lidocaine_5ml_26: kat_syringe_lidocaine_5ml_10 {
-        displayName = KATDISPLAYCSTRING(lidocaine,5ml,26);
-    };
-    class kat_syringe_lidocaine_5ml_28: kat_syringe_lidocaine_5ml_10 {
-        displayName = KATDISPLAYCSTRING(lidocaine,5ml,28);
     };
     class kat_syringe_lidocaine_5ml_30: kat_syringe_lidocaine_5ml_10 {
         displayName = KATDISPLAYCSTRING(lidocaine,5ml,30);
@@ -948,32 +716,8 @@ class CfgWeapons {
     class kat_syringe_flumazenil_5ml_10: kat_syringe_txa_5ml_10 {
         displayName = KATDISPLAYCSTRING(flumazenil,5ml,10);
     };
-    class kat_syringe_flumazenil_5ml_12: kat_syringe_flumazenil_5ml_10 {
-        displayName = KATDISPLAYCSTRING(flumazenil,5ml,12);
-    };
-    class kat_syringe_flumazenil_5ml_14: kat_syringe_flumazenil_5ml_10 {
-        displayName = KATDISPLAYCSTRING(flumazenil,5ml,14);
-    };
-    class kat_syringe_flumazenil_5ml_16: kat_syringe_flumazenil_5ml_10 {
-        displayName = KATDISPLAYCSTRING(flumazenil,5ml,16);
-    };
-    class kat_syringe_flumazenil_5ml_18: kat_syringe_flumazenil_5ml_10 {
-        displayName = KATDISPLAYCSTRING(flumazenil,5ml,18);
-    };
     class kat_syringe_flumazenil_5ml_20: kat_syringe_flumazenil_5ml_10 {
         displayName = KATDISPLAYCSTRING(flumazenil,5ml,20);
-    };
-    class kat_syringe_flumazenil_5ml_22: kat_syringe_flumazenil_5ml_10 {
-        displayName = KATDISPLAYCSTRING(flumazenil,5ml,22);
-    };
-    class kat_syringe_flumazenil_5ml_24: kat_syringe_flumazenil_5ml_10 {
-        displayName = KATDISPLAYCSTRING(flumazenil,5ml,24);
-    };
-    class kat_syringe_flumazenil_5ml_26: kat_syringe_flumazenil_5ml_10 {
-        displayName = KATDISPLAYCSTRING(flumazenil,5ml,26);
-    };
-    class kat_syringe_flumazenil_5ml_28: kat_syringe_flumazenil_5ml_10 {
-        displayName = KATDISPLAYCSTRING(flumazenil,5ml,28);
     };
     class kat_syringe_flumazenil_5ml_30: kat_syringe_flumazenil_5ml_10 {
         displayName = KATDISPLAYCSTRING(flumazenil,5ml,30);
@@ -1011,6 +755,21 @@ class CfgWeapons {
     class kat_syringe_etomidate_5ml_30: kat_syringe_etomidate_5ml_10 {
         displayName = KATDISPLAYCSTRING(etomidate,5ml,30);
     };
+    class kat_syringe_ondansetron_5ml_10: kat_syringe_txa_5ml_10 {
+        displayName = KATDISPLAYCSTRING(ondansetron,5ml,10);
+    };
+    class kat_syringe_ondansetron_5ml_16: kat_syringe_ondansetron_5ml_10 {
+        displayName = KATDISPLAYCSTRING(ondansetron,5ml,16);
+    };
+    class kat_syringe_ondansetron_5ml_20: kat_syringe_ondansetron_5ml_10 {
+        displayName = KATDISPLAYCSTRING(ondansetron,5ml,20);
+    };
+    class kat_syringe_ondansetron_5ml_26: kat_syringe_ondansetron_5ml_10 {
+        displayName = KATDISPLAYCSTRING(ondansetron,5ml,26);
+    };
+    class kat_syringe_ondansetron_5ml_30: kat_syringe_ondansetron_5ml_10 {
+        displayName = KATDISPLAYCSTRING(ondansetron,5ml,30);
+    };
     class kat_syringe_morphineIV_5ml_10: kat_syringe_txa_5ml_10 {
         displayName = KATDISPLAYCSTRING(morphineIV,5ml,10);
     };
@@ -1029,65 +788,14 @@ class CfgWeapons {
     class kat_syringe_atropineIV_5ml_10: kat_syringe_txa_5ml_10 {
         displayName = KATDISPLAYCSTRING(atropineIV,5ml,10);
     };
-    class kat_syringe_atropineIV_5ml_12: kat_syringe_atropineIV_5ml_10 {
-        displayName = KATDISPLAYCSTRING(atropineIV,5ml,12);
-    };
-    class kat_syringe_atropineIV_5ml_14: kat_syringe_atropineIV_5ml_10 {
-        displayName = KATDISPLAYCSTRING(atropineIV,5ml,14);
-    };
-    class kat_syringe_atropineIV_5ml_16: kat_syringe_atropineIV_5ml_10 {
-        displayName = KATDISPLAYCSTRING(atropineIV,5ml,16);
-    };
-    class kat_syringe_atropineIV_5ml_18: kat_syringe_atropineIV_5ml_10 {
-        displayName = KATDISPLAYCSTRING(atropineIV,5ml,18);
-    };
-    class kat_syringe_atropineIV_5ml_20: kat_syringe_atropineIV_5ml_10 {
-        displayName = KATDISPLAYCSTRING(atropineIV,5ml,20);
-    };
-    class kat_syringe_atropineIV_5ml_22: kat_syringe_atropineIV_5ml_10 {
-        displayName = KATDISPLAYCSTRING(atropineIV,5ml,22);
-    };
-    class kat_syringe_atropineIV_5ml_24: kat_syringe_atropineIV_5ml_10 {
-        displayName = KATDISPLAYCSTRING(atropineIV,5ml,24);
-    };
-    class kat_syringe_atropineIV_5ml_26: kat_syringe_atropineIV_5ml_10 {
-        displayName = KATDISPLAYCSTRING(atropineIV,5ml,26);
-    };
-    class kat_syringe_atropineIV_5ml_28: kat_syringe_atropineIV_5ml_10 {
-        displayName = KATDISPLAYCSTRING(atropineIV,5ml,28);
-    };
     class kat_syringe_atropineIV_5ml_30: kat_syringe_atropineIV_5ml_10 {
         displayName = KATDISPLAYCSTRING(atropineIV,5ml,30);
     };
     class kat_syringe_adenosineIV_5ml_10: kat_syringe_txa_5ml_10 {
         displayName = KATDISPLAYCSTRING(adenosineIV,5ml,10);
     };
-    class kat_syringe_adenosineIV_5ml_12: kat_syringe_adenosineIV_5ml_10 {
-        displayName = KATDISPLAYCSTRING(adenosineIV,5ml,12);
-    };
-    class kat_syringe_adenosineIV_5ml_14: kat_syringe_adenosineIV_5ml_10 {
-        displayName = KATDISPLAYCSTRING(adenosineIV,5ml,14);
-    };
-    class kat_syringe_adenosineIV_5ml_16: kat_syringe_adenosineIV_5ml_10 {
-        displayName = KATDISPLAYCSTRING(adenosineIV,5ml,16);
-    };
-    class kat_syringe_adenosineIV_5ml_18: kat_syringe_adenosineIV_5ml_10 {
-        displayName = KATDISPLAYCSTRING(adenosineIV,5ml,18);
-    };
     class kat_syringe_adenosineIV_5ml_20: kat_syringe_adenosineIV_5ml_10 {
         displayName = KATDISPLAYCSTRING(adenosineIV,5ml,20);
-    };
-    class kat_syringe_adenosineIV_5ml_22: kat_syringe_adenosineIV_5ml_10 {
-        displayName = KATDISPLAYCSTRING(adenosineIV,5ml,22);
-    };
-    class kat_syringe_adenosineIV_5ml_24: kat_syringe_adenosineIV_5ml_10 {
-        displayName = KATDISPLAYCSTRING(adenosineIV,5ml,24);
-    };
-    class kat_syringe_adenosineIV_5ml_26: kat_syringe_adenosineIV_5ml_10 {
-        displayName = KATDISPLAYCSTRING(adenosineIV,5ml,26);
-    };
-    class kat_syringe_adenosineIV_5ml_28: kat_syringe_adenosineIV_5ml_10 {
-        displayName = KATDISPLAYCSTRING(adenosineIV,5ml,28);
     };
     class kat_syringe_adenosineIV_5ml_30: kat_syringe_adenosineIV_5ml_10 {
         displayName = KATDISPLAYCSTRING(adenosineIV,5ml,30);
@@ -1099,34 +807,79 @@ class CfgWeapons {
     class kat_syringe_doxapram_5ml_10: kat_syringe_txa_5ml_10 {
         displayName = KATDISPLAYCSTRING(doxapram,5ml,10);
     };
-    class kat_syringe_doxapram_5ml_12: kat_syringe_doxapram_5ml_10 {
-        displayName = KATDISPLAYCSTRING(doxapram,5ml,12);
-    };
-    class kat_syringe_doxapram_5ml_14: kat_syringe_doxapram_5ml_10 {
-        displayName = KATDISPLAYCSTRING(doxapram,5ml,14);
-    };
-    class kat_syringe_doxapram_5ml_16: kat_syringe_doxapram_5ml_10 {
-        displayName = KATDISPLAYCSTRING(doxapram,5ml,16);
-    };
-    class kat_syringe_doxapram_5ml_18: kat_syringe_doxapram_5ml_10 {
-        displayName = KATDISPLAYCSTRING(doxapram,5ml,18);
-    };
     class kat_syringe_doxapram_5ml_20: kat_syringe_doxapram_5ml_10 {
         displayName = KATDISPLAYCSTRING(doxapram,5ml,20);
     };
-    class kat_syringe_doxapram_5ml_22: kat_syringe_doxapram_5ml_10 {
-        displayName = KATDISPLAYCSTRING(doxapram,5ml,22);
-    };
-    class kat_syringe_doxapram_5ml_24: kat_syringe_doxapram_5ml_10 {
-        displayName = KATDISPLAYCSTRING(doxapram,5ml,24);
-    };
-    class kat_syringe_doxapram_5ml_26: kat_syringe_doxapram_5ml_10 {
-        displayName = KATDISPLAYCSTRING(doxapram,5ml,26);
-    };
-    class kat_syringe_doxapram_5ml_28: kat_syringe_doxapram_5ml_10 {
-        displayName = KATDISPLAYCSTRING(doxapram,5ml,28);
-    };
     class kat_syringe_doxapram_5ml_30: kat_syringe_doxapram_5ml_10 {
         displayName = KATDISPLAYCSTRING(doxapram,5ml,30);
+    };
+    class kat_syringe_succinylcholine_5ml_10: kat_syringe_txa_5ml_10 {
+        displayName = KATDISPLAYCSTRING(succinylcholine,5ml,10);
+    };
+    class kat_syringe_succinylcholine_5ml_12: kat_syringe_succinylcholine_5ml_10 {
+        displayName = KATDISPLAYCSTRING(succinylcholine,5ml,12);
+    };
+    class kat_syringe_succinylcholine_5ml_14: kat_syringe_succinylcholine_5ml_10 {
+        displayName = KATDISPLAYCSTRING(succinylcholine,5ml,14);
+    };
+    class kat_syringe_succinylcholine_5ml_16: kat_syringe_succinylcholine_5ml_10 {
+        displayName = KATDISPLAYCSTRING(succinylcholine,5ml,16);
+    };
+    class kat_syringe_succinylcholine_5ml_18: kat_syringe_succinylcholine_5ml_10 {
+        displayName = KATDISPLAYCSTRING(succinylcholine,5ml,18);
+    };
+    class kat_syringe_succinylcholine_5ml_20: kat_syringe_succinylcholine_5ml_10 {
+        displayName = KATDISPLAYCSTRING(succinylcholine,5ml,20);
+    };
+    class kat_syringe_succinylcholine_5ml_22: kat_syringe_succinylcholine_5ml_10 {
+        displayName = KATDISPLAYCSTRING(succinylcholine,5ml,22);
+    };
+    class kat_syringe_succinylcholine_5ml_24: kat_syringe_succinylcholine_5ml_10 {
+        displayName = KATDISPLAYCSTRING(succinylcholine,5ml,24);
+    };
+    class kat_syringe_succinylcholine_5ml_26: kat_syringe_succinylcholine_5ml_10 {
+        displayName = KATDISPLAYCSTRING(succinylcholine,5ml,26);
+    };
+    class kat_syringe_succinylcholine_5ml_28: kat_syringe_succinylcholine_5ml_10 {
+        displayName = KATDISPLAYCSTRING(succinylcholine,5ml,28);
+    };
+    class kat_syringe_succinylcholine_5ml_30: kat_syringe_succinylcholine_5ml_10 {
+        displayName = KATDISPLAYCSTRING(succinylcholine,5ml,30);
+    };
+    class kat_syringe_rocuronium_5ml_10: kat_syringe_txa_5ml_10 {
+        displayName = KATDISPLAYCSTRING(rocuronium,5ml,10);
+    };
+    class kat_syringe_rocuronium_5ml_12: kat_syringe_rocuronium_5ml_10 {
+        displayName = KATDISPLAYCSTRING(rocuronium,5ml,12);
+    };
+    class kat_syringe_rocuronium_5ml_14: kat_syringe_rocuronium_5ml_10 {
+        displayName = KATDISPLAYCSTRING(rocuronium,5ml,14);
+    };
+    class kat_syringe_rocuronium_5ml_16: kat_syringe_rocuronium_5ml_10 {
+        displayName = KATDISPLAYCSTRING(rocuronium,5ml,16);
+    };
+    class kat_syringe_rocuronium_5ml_18: kat_syringe_rocuronium_5ml_10 {
+        displayName = KATDISPLAYCSTRING(rocuronium,5ml,18);
+    };
+    class kat_syringe_rocuronium_5ml_20: kat_syringe_rocuronium_5ml_10 {
+        displayName = KATDISPLAYCSTRING(rocuronium,5ml,20);
+    };
+    class kat_syringe_rocuronium_5ml_22: kat_syringe_rocuronium_5ml_10 {
+        displayName = KATDISPLAYCSTRING(rocuronium,5ml,22);
+    };
+    class kat_syringe_rocuronium_5ml_24: kat_syringe_rocuronium_5ml_10 {
+        displayName = KATDISPLAYCSTRING(rocuronium,5ml,24);
+    };
+    class kat_syringe_rocuronium_5ml_26: kat_syringe_rocuronium_5ml_10 {
+        displayName = KATDISPLAYCSTRING(rocuronium,5ml,26);
+    };
+    class kat_syringe_rocuronium_5ml_28: kat_syringe_rocuronium_5ml_10 {
+        displayName = KATDISPLAYCSTRING(rocuronium,5ml,28);
+    };
+    class kat_syringe_rocuronium_5ml_30: kat_syringe_rocuronium_5ml_10 {
+        displayName = KATDISPLAYCSTRING(rocuronium,5ml,30);
+    };
+    class kat_syringe_sugammadex_5ml_20: kat_syringe_txa_5ml_10 {
+        displayName = KATDISPLAYCSTRING(sugammadex,5ml,20);
     };
 };

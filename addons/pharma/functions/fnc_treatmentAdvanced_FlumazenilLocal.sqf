@@ -16,7 +16,6 @@
  */
 
 params ["_patient"];
-_patient setVariable [QEGVAR(surgery,sedated), false, true];
 private _medications = _patient getVariable [QACEGVAR(medical,medications), []];
 if (_medications findIf {_x isEqualTo "Lorazepam"} != -1) exitWith {
     [{
@@ -37,8 +36,8 @@ if (_medications findIf {_x isEqualTo "Lorazepam"} != -1) exitWith {
                     }, [_patient], 15] call CBA_fnc_waitAndExecute;
                     [_idPFH] call CBA_fnc_removePerFrameHandler;
                 };
-                private _depression = _unit getVariable [QEGVAR(pharma,opioidDepressionFactor)] - 0.08;
-                _patient setVariable [QEGVAR(pharma,opioidDepressionFactor), _depression];
+                private _depression = _unit getVariable [QEGVAR(pharma,opioidDepression)] - 0.08;
+                _patient setVariable [QEGVAR(pharma,opioidDepression), _depression];
         }, 60, [_patient,0]] call CBA_fnc_addPerFrameHandler;
 }, [_patient], 60] call CBA_fnc_waitAndExecute;};
 

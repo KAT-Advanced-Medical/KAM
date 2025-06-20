@@ -18,8 +18,8 @@
 
 params ["_medic", "_patient"];
 
-private _sedated = _patient getVariable [QEGVAR(surgery,sedated), false];
-if (_sedated) exitWith {};
+private _sedated = _patient getVariable [QEGVAR(surgery,sedated), 0];
+if (_sedated > 0.1) exitWith {};
 
 private _bloodPressureH = GET_BLOOD_PRESSURE(_patient) select 1;
 

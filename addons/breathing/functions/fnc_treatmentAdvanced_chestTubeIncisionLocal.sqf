@@ -66,7 +66,7 @@ _patient setVariable [QGVAR(chestTube), _chestTubeArray, true];
 [_patient, false] call ACEFUNC(dragging,setCarryable);
 [_patient, false] call ACEFUNC(dragging,setDraggable);
 
-[_patient, "quick_view", LSTRING(incision_log), [[_medic] call ACEFUNC(common,getName), STRING_BODY_PARTS select 1]] call ACEFUNC(medical_treatment,addToLog);
+[_patient, "quick_view", LSTRING(incision_log), [[_medic] call ACEFUNC(common,getName), STRING_BODY_PARTS select 2]] call ACEFUNC(medical_treatment,addToLog);
 
 [{
     params ["_args", "_idPFH"];
@@ -74,7 +74,7 @@ _patient setVariable [QGVAR(chestTube), _chestTubeArray, true];
 
     private _chestTubeArray = _patient getVariable [QGVAR(chestTube), [0,0]];
     private _liveTube = _chestTubeArray select _side;
-    private _count = [_patient, "Etomidate", true] call ACEFUNC(medical_status,getMedicationCount);
+    private _count = [_patient, "Etomidate", true] call ACEFUNC(medical_status,getMedicationCount) select 1;
 
     private _alive = alive _patient;
 
@@ -90,14 +90,14 @@ _patient setVariable [QGVAR(chestTube), _chestTubeArray, true];
 
     if (((GVAR(ChestTube_ConsciousnessRequirement) in [0,1]) && (!(IS_UNCONSCIOUS(_patient))) && (_count <= 0.2) && (_activeLoadingDose)) || (GVAR(Surgery_ConsciousnessRequirement) == 3 && _count <= 0.2 && (_activeLoadingDose))) exitWith {
         if !(_patient getVariable [QGVAR(etomidate_Pain), false]) then {
-            [_patient, "Pain", 2, 10, 120, 0.6, 40, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0] call ACEFUNC(medical_status,addMedicationAdjustment);
+            [_patient, "Pain", 2, 10, 120, 0.6, 40] call ACEFUNC(medical_status,addMedicationAdjustment);
             _patient setVariable [QGVAR(etomidate_Pain), true]};
         [_patient, true] call ACEFUNC(medical,setUnconscious);
     };
 
     if (GVAR(ChestTube_ConsciousnessRequirement) == 2 && _count <= 0.2 && (_activeLoadingDose)) then {
         if !(_patient getVariable [QGVAR(etomidate_Pain), false]) then {
-            [_patient, "Pain", 2, 10, 120, 0.6, 40, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0] call ACEFUNC(medical_status,addMedicationAdjustment);
+            [_patient, "Pain", 2, 10, 120, 0.6, 40] call ACEFUNC(medical_status,addMedicationAdjustment);
             _patient setVariable [QGVAR(etomidate_Pain), true]
         };
     };

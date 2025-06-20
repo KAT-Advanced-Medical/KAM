@@ -319,6 +319,57 @@ class ACE_Medical_Treatment_Actions {
         condition = QUOTE(_patient call FUNC(canUseBVM) && ((GVAR(locationProvideOxygen) in [ARR_2(2,3)] && _patient call ACEFUNC(medical_treatment,isInMedicalFacility)) || (GVAR(locationProvideOxygen) in [ARR_2(1,3)] && _patient call ACEFUNC(medical_treatment,isInMedicalVehicle))));
         callbackSuccess = QUOTE([ARR_3(_medic,_patient,true)] call EFUNC(airway,handleRecoveryPosition); [ARR_4(_medic,_patient,false,true)] call FUNC(useBVM););
     };
+    class AttachVent {
+        displayName = CSTRING(AttachVent);
+        displayNameProgress = CSTRING(AttachingVent);
+        category = "airway";
+        treatmentLocations = 1;
+        allowedSelections[] = {"Head"};
+        allowSelfTreatment = 0;
+        medicRequired = QGVAR(medLvl_Vent);
+        treatmentTime = 6;
+        consumeItem = 0;
+        items[] = {};
+        condition = QFUNC(canAttachVent);
+        callbackStart = "";
+        callbackSuccess = QFUNC(attachVent);
+        callbackFailure = "";
+        callbackProgress = "";
+        animationPatient = "";
+        animationPatientUnconscious = "";
+        animationPatientUnconsciousExcludeOn[] = {};
+        animationMedic = "";
+        animationMedicProne = "";
+        litter[] = {};
+        icon = QPATHTOF(ui\BVM_ui.paa);
+    };
+    class DetachVent: AttachVent {
+        displayName = CSTRING(DetachVent);
+        displayNameProgress = CSTRING(DetachingVent);
+        medicRequired = QGVAR(medLvl_Vent);
+        treatmentTime = 6;
+        items[] = {};
+        condition = QFUNC(canDetachVent);
+        callbackSuccess = QFUNC(detachVent);
+    };
+    class SpeedUpVent: AttachVent {
+        displayName = CSTRING(IncreaseVent);
+        displayNameProgress = CSTRING(IncreasingVent);
+        medicRequired = QGVAR(medLvl_Vent);
+        treatmentTime = 1;
+        items[] = {};
+        condition = QFUNC(canAdjustRate);
+        callbackSuccess = QUOTE([ARR_2(_patient,-1)] call FUNC(adjustVentRate));
+    };
+    class SlowDownVent: AttachVent {
+        displayName = CSTRING(DecreaseVent);
+        displayNameProgress = CSTRING(DecreasingVent);
+        medicRequired = QGVAR(medLvl_Vent);
+        treatmentTime = 1;
+        items[] = {};
+        condition = QFUNC(canAdjustRate);
+        callbackSuccess = QUOTE([ARR_2(_patient,1)] call FUNC(adjustVentRate));
+    };
     class NasalCannula {
         displayName = CSTRING(NasalCannula_Display);
         displayNameProgress = ECSTRING(airway,action_placing);
@@ -343,7 +394,7 @@ class ACE_Medical_Treatment_Actions {
         animationMedicSelf = "AinvPknlMstpSlayW[wpn]Dnon_medic";
         animationMedicSelfProne = "AinvPpneMstpSlayW[wpn]Dnon_medic";
         litter[] = {};
-        icon = QPATHTOEF(airway,ui\larynx.paa); // TODO update to nasal specific icon
+        icon = QPATHTOF(ui\nasalcannula.paa); // TODO update to nasal specific icon
     };
     class RemoveNasalCannula : NasalCannula {
         displayName = CSTRING(Cancel_NasalCannula);
@@ -386,10 +437,10 @@ class ACE_Medical_Treatment_Actions {
         displayName = CSTRING(Scalpel_Use);
         displayNameProgress = CSTRING(Scalpel_Action);
         category = "surgery";
-        treatmentLocations = QGVAR(surgicalLocation);
+        treatmentLocations = QGVAR(chestTubeLocation);
         allowedSelections[] = {"Chest"};
         allowSelfTreatment = 0;
-        medicRequired = QGVAR(surgicalAction_MedLevel);
+        medicRequired = QGVAR(chestTubeAction_MedLevel);
         treatmentTime = QGVAR(incisionTime);
         items[] = {"kat_scalpel"};
         condition = QUOTE(([ARR_4(_medic,_patient,5,0)] call FUNC(treatmentAdvanced_chestTubeCheck)) && (GVAR(hardcoreBreathingTreatment)));
@@ -404,11 +455,11 @@ class ACE_Medical_Treatment_Actions {
         displayName = CSTRING(Retractor_Use);
         displayNameProgress = CSTRING(Retractor_Action);
         category = "surgery";
-        treatmentLocations = QGVAR(surgicalLocation);
+        treatmentLocations = QGVAR(chestTubeLocation);
         treatmentTime = QGVAR(ChestTubeintermediateTime);
         allowedSelections[] = {"Chest"};
         allowSelfTreatment = 0;
-        medicRequired = QGVAR(surgicalAction_MedLevel);
+        medicRequired = QGVAR(chestTubeAction_MedLevel);
         items[] = {"kat_retractor"};
         consumeItem = 1;
         condition = QUOTE(([ARR_4(_medic,_patient,0.1,0)] call FUNC(treatmentAdvanced_chestTubeCheck)) && (GVAR(hardcoreBreathingTreatment)));
@@ -423,11 +474,11 @@ class ACE_Medical_Treatment_Actions {
         displayName = CSTRING(Clamp_Use);
         displayNameProgress = CSTRING(Clamp_Action);
         category = "surgery";
-        treatmentLocations = QGVAR(surgicalLocation);
+        treatmentLocations = QGVAR(chestTubeLocation);
         treatmentTime = QGVAR(ChestTubeintermediateTime);
         allowedSelections[] = {"Chest"};
         allowSelfTreatment = 0;
-        medicRequired = QGVAR(surgicalAction_MedLevel);
+        medicRequired = QGVAR(chestTubeAction_MedLevel);
         items[] = {"kat_clamp"};
         consumeItem = 1;
         condition = QUOTE(([ARR_4(_medic,_patient,0.3,0)] call FUNC(treatmentAdvanced_chestTubeCheck)) && (GVAR(hardcoreBreathingTreatment)));

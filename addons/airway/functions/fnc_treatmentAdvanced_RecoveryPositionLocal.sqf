@@ -24,18 +24,20 @@ _patient setVariable [QGVAR(overstretch), true, true];
 private _output = LLSTRING(RecoveryPosition_Ready);
 [_output, 2, _medic] call ACEFUNC(common,displayTextStructured);
 
-_patient setVariable [QGVAR(wasOccluded), (_patient getVariable [QGVAR(occluded), false])];
-
-if (GVAR(RecoveryPosition_TimeToDrain) > 0 && _patient getVariable [QGVAR(wasOccluded), false]) then {
-    [{
-        params ["_patient"];
-
-        _patient setVariable [QGVAR(occluded), false, true];
-        _patient setVariable [QGVAR(wasOccluded), false];
-    }, [_patient], (random GVAR(RecoveryPosition_TimeToDrain) max 1)] call CBA_fnc_waitAndExecute;
-} else {
-    _patient setVariable [QGVAR(occluded), false, true];
-    _patient setVariable [QGVAR(wasOccluded), false];
+if (GVAR(RecoveryPosition_TimeToDrain) > 0) then {
+   [{
+    params ["_args", "_idPFH"];
+    _args params ["_unit"];
+    private _occlusionState = _unit getVariable [QGVAR(occlusion), [0, 0, 0]];
+    if (!(alive _unit)) exitWith {
+        [_idPFH] call CBA_fnc_removePerFrameHandler;
+    };
+    private _occlusionState = _unit getVariable [QGVAR(occlusion), [0, 0, 0]];
+    _occlusionState set [0, ((_occlusion select 0) - selectRandom [1, 2]) max 0];
+    _occlusionState set [1, ((_occlusion select 1) - selectRandom [1, 2]) max 0];
+    _occlusionState set [2, ((_occlusion select 2) - selectRandom [1, 2]) max 0];
+    _unit setVariable [QGVAR(occlusion), _occlusionState, true];
+}, GVAR(RecoveryPosition_TimeToDrain), [_unit]] call CBA_fnc_addPerFrameHandler;
 };
 
 [{
@@ -51,5 +53,4 @@ if (GVAR(RecoveryPosition_TimeToDrain) > 0 && _patient getVariable [QGVAR(wasOcc
 
     _patient setVariable [QGVAR(recovery), false, true];
     _patient setVariable [QGVAR(overstretch), false, true];
-    _patient setVariable [QGVAR(occluded), (_patient getVariable [QGVAR(wasOccluded), false]), true];
 }, [_medic, _patient], 3600, {}] call CBA_fnc_waitUntilAndExecute;

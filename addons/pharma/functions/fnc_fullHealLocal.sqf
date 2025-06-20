@@ -61,15 +61,14 @@ _patient setVariable [QGVAR(externalPh), 0, true];
 _patient setVariable [QGVAR(pH), 0, true];
 
 _patient setVariable [QGVAR(opioidFactor), 0, true];
-_patient setVariable [QGVAR(opioidDepressionFactor), 0, true];
+_patient setVariable [QGVAR(opioidDepression), 0, true];
 
 _patient setVariable [QGVAR(kidneyFail), false, true];
 _patient setVariable [QGVAR(kidneyArrest), false, true];
 _patient setVariable [QGVAR(kidneyPressure), false, true];
 _patient setVariable [QGVAR(respiratoryRate), 1, true];
 _patient setVariable [QGVAR(heartContractility), 1, true];
-
-_patient setVariable [QGVAR(activeEtomidateLoadingDose), false, true];
+_patient setVariable [QGVAR(nauseaMult), 1, true];
 
 _patient setVariable [VAR_LOCAL_ANESTHESIA, DEFAULT_LOCAL_ANESTHESIA, true];
 _patient setVariable [QGVAR(activeEtomidateLoadingDose), false, true];

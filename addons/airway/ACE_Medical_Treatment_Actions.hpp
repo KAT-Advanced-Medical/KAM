@@ -1,4 +1,5 @@
 class ACE_Medical_Treatment_Actions {
+    class BasicBandage;
     class Larynxtubus {
         displayName = CSTRING(Larynxtubus_Display);
         displayNameProgress = CSTRING(action_placing);
@@ -9,8 +10,8 @@ class ACE_Medical_Treatment_Actions {
         medicRequired = QGVAR(medLvl_Larynxtubus);
         treatmentTime = QGVAR(Larynxtubus_time);
         items[] = {"kat_larynx"};
-        condition = QUOTE(!([_patient] call ACEFUNC(common,isAwake)) && (missionNamespace getVariable [ARR_2(QQGVAR(enable),true)]) && !(_patient getVariable [ARR_2(QQGVAR(airway_item),'')] == 'Larynxtubus') && !(_patient getVariable [ARR_2(QQGVAR(airway_item),'')] == 'Guedeltubus')  && !([_patient] call FUNC(checkMask)));
-        callbackSuccess = QUOTE([ARR_3(_medic,_patient,(_patient getVariable [ARR_2(QQGVAR(occluded),false)]))] call FUNC(handleRecoveryPosition); [ARR_6(_medic,_patient,_bodyPart,_className,objNull,_usedItem)] call FUNC(treatmentAdvanced_airway););
+        condition = QUOTE(!([_patient] call ACEFUNC(common,isAwake)) && (missionNamespace getVariable [ARR_2(QQGVAR(enable),true)]) && (_patient getVariable [ARR_2(QQGVAR(airway_item),'')] == '')  && !([_patient] call FUNC(checkMask)) && [ARR_4(_medic,_patient,_bodyPart,_className)] call FUNC(airwayPlacementCheck););
+        callbackSuccess = QUOTE([ARR_2(_medic,_patient)] call FUNC(handleRecoveryPosition); [ARR_6(_medic,_patient,_bodyPart,_className,objNull,_usedItem)] call FUNC(treatmentAdvanced_airway););
         callbackFailure = "";
         callbackProgress = "";
         callbackCondition = "useCondition";
@@ -41,7 +42,42 @@ class ACE_Medical_Treatment_Actions {
         treatmentTime = QGVAR(Guedeltubus_time);
         items[] = {"kat_guedel"};
         icon = QPATHTOF(ui\guedel.paa);
-        callbackSuccess = QUOTE([ARR_3(_medic,_patient,(_patient getVariable [ARR_2(QQGVAR(occluded),false)]))] call FUNC(handleRecoveryPosition); [ARR_6(_medic,_patient,_bodyPart,_className,objNull,_usedItem)] call FUNC(treatmentAdvanced_airway););
+        callbackSuccess = QUOTE([ARR_2(_medic,_patient)] call FUNC(handleRecoveryPosition); [ARR_6(_medic,_patient,_bodyPart,_className,objNull,_usedItem)] call FUNC(treatmentAdvanced_airway););
+    };
+    class NPA: Larynxtubus {
+        displayName = CSTRING(NPA_Display);
+        medicRequired = QGVAR(medLvl_NPA);
+        treatmentTime = QGVAR(NPA_time);
+        items[] = {"kat_NPA"};
+        icon = QPATHTOF(ui\npa.paa);
+        callbackSuccess = QUOTE([ARR_2(_medic,_patient)] call FUNC(handleRecoveryPosition); [ARR_6(_medic,_patient,_bodyPart,_className,objNull,_usedItem)] call FUNC(treatmentAdvanced_airway););
+    };
+    class IGEL: Larynxtubus {
+        displayName = CSTRING(IGEL_Display);
+        medicRequired = QGVAR(medLvl_IGEL);
+        treatmentTime = QGVAR(IGEL_time);
+        items[] = {"kat_IGEL"};
+        icon = QPATHTOF(ui\igel.paa);
+        callbackSuccess = QUOTE([ARR_2(_medic,_patient)] call FUNC(handleRecoveryPosition); [ARR_6(_medic,_patient,_bodyPart,_className,objNull,_usedItem)] call FUNC(treatmentAdvanced_airway););
+    };
+    class ETT: Larynxtubus {
+        displayName = CSTRING(ETT_Display);
+        medicRequired = QGVAR(medLvl_ETT);
+        treatmentTime = QGVAR(ETT_time);
+        condition = QUOTE(!([_patient] call ACEFUNC(common,isAwake)) && (missionNamespace getVariable [ARR_2(QQGVAR(enable),true)]) && (_patient getVariable [ARR_2(QQGVAR(isVisualized),false)]) && (_patient getVariable [ARR_2(QQGVAR(airway_item),'')] == '')  && !([_patient] call FUNC(checkMask)));
+        items[] = {"kat_ETT"};
+        icon = QPATHTOF(ui\ETT.paa);
+        callbackSuccess = QUOTE([ARR_6(_medic,_patient,_bodyPart,_className,objNull,_usedItem)] call FUNC(treatmentAdvanced_airway););
+    };
+    class Visualization: Larynxtubus {
+        displayName = CSTRING(Visualization_Display);
+        medicRequired = QGVAR(medLvl_ETT);
+        treatmentTime = QGVAR(Visualization_time);
+        consumeItem = 0;
+        condition = QUOTE(!([_patient] call ACEFUNC(common,isAwake)) && (missionNamespace getVariable [ARR_2(QQGVAR(enable),true)]) && (_patient getVariable [ARR_2(QQGVAR(airway_item),'')] == '')  && !([_patient] call FUNC(checkMask)) && [ARR_4(_medic,_patient,_bodyPart,_className)] call FUNC(airwayPlacementCheck););
+        items[] = {"kat_laryngoscope"};
+        icon = QPATHTOF(ui\Laryngoscope.paa);
+        callbackSuccess = QFUNC(treatmentAdvanced_Visualization);
     };
     class RemoveGuedeltubus: RemoveLarynxtubus {
         displayName = CSTRING(Cancel_Guedeltubus);
@@ -53,16 +89,45 @@ class ACE_Medical_Treatment_Actions {
         condition = QUOTE(!([_patient] call ACEFUNC(common,isAwake)) && (missionNamespace getVariable [ARR_2(QQGVAR(enable),true)]) && (_patient getVariable [ARR_2(QQGVAR(airway_item),'')] == 'Guedeltubus'));
         callbackSuccess = QFUNC(treatmentAdvanced_RemoveAirwayItem);
     };
+    class RemoveETT: RemoveLarynxtubus {
+        displayName = CSTRING(Cancel_ETT);
+        displayNameProgress = CSTRING(action_removing);
+        medicRequired = QGVAR(medLvl_ETT);
+        treatmentTime = QGVAR(ETT_time);
+        items[] = {};
+        icon = QPATHTOF(ui\ETT.paa);
+        condition = QUOTE(!([_patient] call ACEFUNC(common,isAwake)) && (missionNamespace getVariable [ARR_2(QQGVAR(enable),true)]) && (_patient getVariable [ARR_2(QQGVAR(airway_item),'')] == 'ETT'));
+        callbackSuccess = QFUNC(treatmentAdvanced_RemoveAirwayItem);
+    };
+    class RemoveNPA: RemoveLarynxtubus {
+        displayName = CSTRING(Cancel_NPA);
+        displayNameProgress = CSTRING(action_removing);
+        medicRequired = QGVAR(medLvl_NPA);
+        treatmentTime = QGVAR(NPA_time);
+        items[] = {};
+        icon = QPATHTOF(ui\npa.paa);
+        condition = QUOTE(!([_patient] call ACEFUNC(common,isAwake)) && (missionNamespace getVariable [ARR_2(QQGVAR(enable),true)]) && (_patient getVariable [ARR_2(QQGVAR(airway_item),'')] == 'NPA'));
+        callbackSuccess = QFUNC(treatmentAdvanced_RemoveAirwayItem);
+    };
+    class RemoveIGEL: RemoveLarynxtubus {
+        displayName = CSTRING(Cancel_IGEL);
+        displayNameProgress = CSTRING(action_removing);
+        medicRequired = QGVAR(medLvl_IGEL);
+        treatmentTime = QGVAR(IGEL_time);
+        items[] = {};
+        icon = QPATHTOF(ui\igel.paa);
+        condition = QUOTE(!([_patient] call ACEFUNC(common,isAwake)) && (missionNamespace getVariable [ARR_2(QQGVAR(enable),true)]) && (_patient getVariable [ARR_2(QQGVAR(airway_item),'')] == 'IGEL'));
+        callbackSuccess = QFUNC(treatmentAdvanced_RemoveAirwayItem);
+    };
     class Accuvac: Larynxtubus {
         displayName = CSTRING(AccuvacTreatment_displayName);
         treatmentTime = QGVAR(Accuvac_time);
         items[] = {"kat_accuvac"};
-        condition = QUOTE(!([_patient] call ACEFUNC(common,isAwake)) && (missionNamespace getVariable [ARR_2(QQGVAR(enable),true)]) && !(_patient getVariable [ARR_2(QQGVAR(recovery),false)]) && !(_patient getVariable [ARR_2(QQGVAR(airway_item),'')] == 'Larynxtubus') && !([_patient] call FUNC(checkMask)));
+        condition = QUOTE(!([_patient] call ACEFUNC(common,isAwake)) && (missionNamespace getVariable [ARR_2(QQGVAR(enable),true)]) && !(_patient getVariable [ARR_2(QQGVAR(recovery),false)]) && !([_patient] call FUNC(checkMask)));
         icon = QPATHTOF(ui\accuvac.paa);
         consumeItem = 0;
         medicRequired = QGVAR(medLvl_Accuvac);
-        callbackStart = QFUNC(treatmentAdvanced_AccuvacStart);
-        callbackSuccess = QUOTE([ARR_6(_medic,_patient,_bodyPart,'Accuvac','','kat_accuvac')] call FUNC(treatmentAdvanced_accuvac)); //Need to manuelly call fnc due to ACE not providing _itemName when consumeItem == 0
+        callbackSuccess = QUOTE([ARR_6(_medic,_patient,_bodyPart,'Accuvac','','kat_accuvac')] call FUNC(treatmentAdvanced_AccuvacStart)); //Need to manuelly call fnc due to ACE not providing _itemName when consumeItem == 0
         callbackProgress = "";
         sounds[] = {{QPATHTO_R(sounds\accuvac_start.wav),6,1,15}};
     };
@@ -73,7 +138,7 @@ class ACE_Medical_Treatment_Actions {
         icon = QPATHTOF(ui\suction.paa);
         consumeItem = 1;
         medicRequired = QGVAR(medLvl_Suction);
-        callbackSuccess = QFUNC(treatmentAdvanced_accuvac);
+        callbackSuccess = QUOTE([ARR_6(_medic,_patient,_bodyPart,'Suction','','kat_suction')] call FUNC(treatmentAdvanced_AccuvacStart));
         sounds[] = {{QPATHTO_R(sounds\manualpump_start.wav),6,1,15}};
     };
     class HyperextendHead: Larynxtubus {
@@ -143,5 +208,74 @@ class ACE_Medical_Treatment_Actions {
         condition = QUOTE((missionNamespace getVariable [ARR_2(QQGVAR(enable),true)]) && !([_patient] call FUNC(checkMask)));
         animationPatientUnconscious = "AinjPpneMstpSnonWrflDnon_rolltoback";
         animationPatientUnconsciousExcludeOn[] = {"ainjppnemstpsnonwrfldnon", "kat_recoveryposition"};
+    };
+    class Secure: CheckPulse {
+        displayName = CSTRING(Surgical_Airway_Use);
+        displayNameProgress = CSTRING(Surgical_Airway_Action);
+        category = "surgery";
+        treatmentLocations = QEGVAR(surgery,surgicalLocationn);
+        allowedSelections[] = {"Neck"};
+        allowSelfTreatment = 0;
+        medicRequired = QEGVAR(surgery,surgicalAction_MedLevel);
+        treatmentTime = QGVAR(cricothyrotomySecureTime);
+        items[] = {"kat_airwayStrap"};
+        consumeItem = 1;
+        condition = QUOTE([ARR_3(_medic,_patient,0.5)] call FUNC(treatmentAdvanced_cricothyrotomyCheck));
+        callbackSuccess = QUOTE([ARR_2(_medic,_patient)] call FUNC(treatmentAdvanced_cricothyrotomy));
+    };
+    class PrepArea: BasicBandage {
+        displayName = CSTRING(Scalpel_Use);
+        displayNameProgress = CSTRING(Scalpel_Action);
+        category = "surgery";
+        treatmentLocations = QEGVAR(surgery,surgicalLocation);
+        allowedSelections[] = {"Neck"};
+        allowSelfTreatment = 0;
+        medicRequired = QEGVAR(surgery,surgicalAction_MedLevel);
+        treatmentTime = QGVAR(incisionTime);
+        items[] = {"kat_scalpel"};
+        condition = QUOTE([ARR_3(_medic,_patient,0.1)] call FUNC(treatmentAdvanced_cricothyrotomyCheck));
+        callbackSuccess = QUOTE([ARR_3(_medic,_patient,0.1)] call FUNC(treatmentAdvanced_cricothyrotomyProgress));
+    };
+    class Guide: BasicBandage {
+        displayName = CSTRING(Guide_Use);
+        displayNameProgress = CSTRING(Guide_Action);
+        category = "surgery";
+        treatmentLocations = QEGVAR(surgery,surgicalLocation);
+        treatmentTime = QGVAR(cricothyrotomyGuideTime);
+        allowedSelections[] = {"Neck"};
+        allowSelfTreatment = 0;
+        medicRequired = QEGVAR(surgery,surgicalAction_MedLevel);
+        items[] = {};
+        consumeItem = 0;
+        condition = QUOTE([ARR_3(_medic,_patient,5)] call FUNC(treatmentAdvanced_cricothyrotomyCheck));
+        callbackSuccess = QUOTE([ARR_2(_medic,_patient)] call FUNC(treatmentAdvanced_cricothyrotomyIncision));
+    };
+    class Place: BasicBandage {
+        displayName = CSTRING(Place_Use);
+        displayNameProgress = CSTRING(Place_Action);
+        category = "surgery";
+        treatmentLocations = QEGVAR(surgery,surgicalLocation);
+        treatmentTime = QGVAR(cricothyrotomyPlaceTime);
+        allowedSelections[] = {"Neck"};
+        allowSelfTreatment = 0;
+        medicRequired = QEGVAR(surgery,surgicalAction_MedLevel);
+        items[] = {"kat_surgAirway"};
+        consumeItem = 1;
+        condition = QUOTE([ARR_3(_medic,_patient,0.3)] call FUNC(treatmentAdvanced_cricothyrotomyCheck));
+        callbackSuccess = QUOTE([ARR_3(_medic,_patient,0.3)] call FUNC(treatmentAdvanced_cricothyrotomyProgress));
+    };
+    class OpenCrike: CheckPulse {
+        displayName = CSTRING(Open_Crike_Kit);
+        displayNameProgress = CSTRING(Open_Crike_Kit_Action);
+        category = "surgery";
+        treatmentLocations = QEGVAR(surgery,surgicalLocationn);
+        allowedSelections[] = {"all"};
+        allowSelfTreatment = 1;
+        medicRequired = QEGVAR(surgery,surgicalAction_MedLevel);
+        treatmentTime = 5;
+        items[] = {"kat_crikeKit"};
+        consumeItem = 1;
+        callbackSuccess = QFUNC(treatmentAdvanced_cricothyrotomyKit);
+        condition = "true";
     };
 };

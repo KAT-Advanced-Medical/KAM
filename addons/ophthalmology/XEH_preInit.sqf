@@ -8,7 +8,7 @@ PREP_RECOMPILE_END;
 
 #define CBA_SETTINGS_CAT LSTRING(cba_name)
 
-#include "initKeybinds.inc.sqf"
 #include "initSettings.inc.sqf"
+#include "initKeybinds.inc.sqf"
 
 ADDON = true;

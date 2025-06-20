@@ -18,7 +18,7 @@ params ["_patient"];
 private _bpAdjust = -30 + floor random ((-15 - -30) + 1);
 [_patient, _bpAdjust, _bpAdjust, "LorazepamOverdose"] call kat_circulation_fnc_updateBloodPressureChange;
 private _hrAdjust = -50 + floor random ((-30 - -50) + 1);
-[_patient, "LorazepamOverdose", 120, 1200, _hrAdjust, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0] call EFUNC(vitals,addMedicationAdjustment);
+[_patient, "LorazepamOverdose", 120, 1200, _hrAdjust] call EFUNC(vitals,addMedicationAdjustment);
 [{
     params ["_patient"];
     private _LorazepamOverdoseTarget = 0;
@@ -43,8 +43,8 @@ private _hrAdjust = -50 + floor random ((-30 - -50) + 1);
                     };
                     [_idPFH] call CBA_fnc_removePerFrameHandler;
                 };
-                private _depression = _unit getVariable [QEGVAR(pharma,opioidDepressionFactor)] + 0.08;
-                _patient setVariable [QEGVAR(pharma,opioidDepressionFactor), _depression];
+                private _depression = _unit getVariable [QEGVAR(pharma,opioidDepression)] + 0.08;
+                _patient setVariable [QEGVAR(pharma,opioidDepression), _depression];
         }, 15, [_patient,0]] call CBA_fnc_addPerFrameHandler;
 }, [_patient], 15] call CBA_fnc_waitAndExecute;
 

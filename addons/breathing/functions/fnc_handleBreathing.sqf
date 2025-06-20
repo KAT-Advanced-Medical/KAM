@@ -24,6 +24,17 @@ _unit setVariable ["kat_O2Breathing_PFH", true];
 if (!local _unit) then {
     [QGVAR(handleBreathing), [_unit], _unit] call CBA_fnc_targetEvent;
 };
+private _occlusionArray = _patient getVariable [QEGVAR(airway,occlusion), [0, 0, 0]];
+private _obstructionArray = _patient getVariable [QEGVAR(airway,obstruction), [0, 0, 0]];
+if ((_patient getVariable [QEGVAR(airway,airway_item), ""]) isEqualTo "NPA") then {
+    _occlusionArray = _occlusionArray select [1,2];
+    _obstructionArray = _obstructionArray select [1,2];
+};
+private _occlusion = (_occlusionArray findIf { _x > 4 }) != -1;
+private _obstruction = (_obstructionArray findIf { _x != 0 }) != -1;
+
+private _catastrophicState = _patient getVariable [QEGVAR(airway,catastrophicAirway), [false, false]];
+private _hasCatastrophicAirway = ((_catastrophicState select 0) || (_catastrophicState select 1));
 
 [{
     params ["_args", "_idPFH"];
@@ -36,17 +47,19 @@ if (!local _unit) then {
     private _airway = true;
     private _breathing = true;
 
-    if ((_unit getVariable [QEGVAR(chemical,airPoisoning), false]) || (_unit getVariable [QGVAR(tensionpneumothorax), [false, false]] select 0) || (_unit getVariable [QGVAR(tensionpneumothorax), [false, false]] select 1) ||(_unit getVariable [QGVAR(hemopneumothorax), [false, false]] select 0) || (_unit getVariable [QGVAR(hemopneumothorax), [false, false]] select 1)) then {
+    if ((_unit getVariable [QEGVAR(chemical,airPoisoning), false]) || (_tension select 0) || (_tension select 1) || (_hemo select 0) || (_hemo select 1)) then {
         _breathing = false;
     };
-
-    if ((_unit getVariable [QEGVAR(airway,occluded), false]) || (_unit getVariable [QEGVAR(airway,obstruction), false])) then {
+    private _noETT = (_patient getVariable [QEGVAR(airway,airway_item), ""] isNotEqualTo "ETT");
+    private _noSurgicalAirway = (_patient getVariable [QEGVAR(airway,airway_item), ""] isNotEqualTo "Surgical_Airway");
+    private _noOverstretch = _patient getVariable [QEGVAR(airway,overstretch), false];
+    if (((((_obstruction && !_noOverstretch) || _occlusion) && _noETT) || _hasCatastrophicAirway) && _noSurgicalAirway) then {
         _airway = false;
     };
 
     private _isAwake = [_unit] call ACEFUNC(common,isAwake);
 
-    private _status = _unit getVariable [QGVAR(airwayStatus), 100];
+    private _spo2 = GET_KAT_SPO2(_patient);
     private _overstretch = _unit getVariable [QEGVAR(airway,overstretch), false];
     private _heartRate = _unit getVariable [QACEGVAR(medical,heartRate), 0];
     private _blockDeath = _unit getVariable [QACEGVAR(medical,deathblocked), false];
@@ -65,7 +78,7 @@ if (!local _unit) then {
     if (GVAR(SpO2_cardiacActive)) then {
         private _ht = _unit getVariable [QEGVAR(circulation,ht), []];
 
-        if (_status <= GVAR(SpO2_cardiacValue)) then {
+        if (_spo2 <= GVAR(SpO2_cardiacValue)) then {
             if ((_ht findIf {_x isEqualTo "hypoxia"}) == -1) then {
                 _ht pushBack "hypoxia";
 
@@ -82,14 +95,14 @@ if (!local _unit) then {
     };
 
     //if lethal SpO2 value is activated and lower the value x, then kill _unit
-    if ((_status <= GVAR(SpO2_dieValue)) && { GVAR(SpO2_dieActive) && { !_blockDeath } }) exitWith {
+    if ((_spo2 <= GVAR(SpO2_dieValue)) && { GVAR(SpO2_dieActive) && { !_blockDeath } }) exitWith {
         [_unit, "terminal_SpO2_death"] call ACEFUNC(medical_status,setDead);
         _unit setVariable ["kat_O2Breathing_PFH", nil];
         [_idPFH] call CBA_fnc_removePerFrameHandler;
     };
 
     //if the _unit has SpO2 equal/over 100, then remove the PFH
-    if (_status >= 100 && {_isAwake && {_breathing && {_pneumothorax == 0}}}) exitWith {
+    if (_spo2 >= 100 && {_isAwake && {_breathing && {_pneumothorax == 0}}}) exitWith {
         _unit setVariable [QGVAR(airwayStatus), 100, true];
         _unit setVariable ["kat_O2Breathing_PFH", nil];
         [_idPFH] call CBA_fnc_removePerFrameHandler;
@@ -128,7 +141,7 @@ if (!local _unit) then {
 
                 _output = 0; // SpO2_perfusion is false
             } else {// Obstruction with hyperextended head
-                if (_overstretch && _unit getVariable [QEGVAR(airway,obstruction), false] && !(_unit getVariable [QEGVAR(airway,occlusion), false]) && _heartRate >= 25) exitWith {
+                if (_overstretch && _obstruction && !(_occlusion) && _heartRate >= 25) exitWith {
                     if(_BVMInUse) then {
                         if(_oxygenAssisted) then {
                             _output = 0.5 * _multiplierOxygen;
@@ -156,7 +169,7 @@ if (!local _unit) then {
             };
         };
 
-        _finalOutput = _status + _output;
+        _finalOutput = _spo2 + _output;
 
         if (_finalOutput > 100) then {
             _finalOutput = 100;
@@ -181,7 +194,7 @@ if (!local _unit) then {
             };
         };
 
-        _finalOutput = _status + _output;
+        _finalOutput = _spo2 + _output;
 
         if (_finalOutput > 100) then {
             _finalOutput = 100;
@@ -224,6 +237,27 @@ if (!local _unit) then {
                     _unit setVariable [QGVAR(PneumoBreathCooldownOn), false, true];
                 },
                 [_unit], 30] call CBA_fnc_waitAndExecute;
+            };
+        };
+        if (_occlusion) then {
+            if (!(_unit getVariable [QACEGVAR(medical,inCardiacArrest), false]) && !(_unit getVariable [QGVAR(CoughCooldownOn), false])) then {
+                _unit setVariable [QGVAR(CoughCooldownOn), true, true];
+                _occlusionArray set [0, ((_occlusionArray select 0) - 0.25) max 0];
+                _occlusionArray set [1, ((_occlusionArray select 1) - 0.25) max 0];
+                _occlusionArray set [2, ((_occlusionArray select 2) - 0.25) max 0];
+                _unit setVariable [QGVAR(occlusion), _occlusionArray, true];
+                private _sound = selectRandom [
+                        QPATHTOF_SOUND(sounds\puking1.wav),
+                        QPATHTOF_SOUND(sounds\puking2.wav),
+                        QPATHTOF_SOUND(sounds\puking3.wav)
+                ];
+                playSound3D [_sound, _unit, false, getPosASL _unit, 8, 1, 15];
+
+                [{
+                    params["_unit"];
+                    _unit setVariable [QGVAR(CoughCooldownOn), false, true];
+                },
+                [_unit], 5] call CBA_fnc_waitAndExecute;
             };
         };
     };

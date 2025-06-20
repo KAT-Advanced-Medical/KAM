@@ -32,11 +32,14 @@ params ["_unit", "_chanceIncrease", "_side"];
 
             private _pneumothoraxState = _unit getVariable [QGVAR(pneumothorax), [0, 0]];
             private _tensionState = _unit getVariable [QGVAR(tensionpneumothorax), [false, false]];
-            private _breathing = !(_unit getVariable [QEGVAR(airway,occluded), false]) && !(_unit getVariable [QEGVAR(airway,obstruction), false]) && ((GET_BREATHING_RATE(_unit) > 5) || (_unit getVariable [QEGVAR(breathing,BVMInUse), false]));
+            private _hemoState = _unit getVariable [QGVAR(hemopneumothorax), [false, false]];
+            private _occlusion = ((_unit getVariable [QEGVAR(airway,occlusion), [0, 0, 0]]) findIf { _x > 4 }) != -1;
+            private _obstruction = ((_unit getVariable [QEGVAR(airway,obstruction), [0, 0, 0]]) findIf { _x != 0 }) != -1;
+            private _breathing = !(_obstruction) && !(_occlusion) && ((GET_BREATHING_RATE(_unit) > 5) || (_unit getVariable [QEGVAR(breathing,BVMInUse), false]));
             (_unit getVariable [QEGVAR(breathing,BVMInUse), false]);
                 if (_pneumothoraxState select _side > 0) then {
                     // If patient is dead, treated, or already deteriorated to advanced pneumothorax, kill the PFH
-                    if (_unit getVariable [QGVAR(hemopneumothorax), [false, false] select _side] ||
+                    if ((_hemoState select _side) ||
                         (_tensionState select _side) ||
                         !(alive _unit) ||
                         (_pneumothoraxState select _side isEqualTo 0)) exitWith {
@@ -75,13 +78,13 @@ params ["_unit", "_chanceIncrease", "_side"];
                         if (_ptxTarget > 16) exitWith {
                             [_idPFH] call CBA_fnc_removePerFrameHandler;
                         };
-                        private _surface = (_patient getVariable [QEGVAR(breathing,lungSurfaceArea), 400]);
-                        private _pneumothoraxAmount = _patient getVariable [QGVAR(pneumothoraxSurfaceArea), [0, 0]] select _side;
+                        private _surface = (_unit getVariable [QEGVAR(breathing,lungSurfaceArea), 400]);
+                        private _pneumothoraxAmount = _unit getVariable [QGVAR(pneumothoraxSurfaceArea), [0, 0]] select _side;
                             if (_surface > 150) then {
                                 private _surfaceArea = _surface - 10;
                                 private _pneumothoraxAmount = _pneumothoraxAmount + 10;
-                                _patient setVariable [QEGVAR(breathing,lungSurfaceArea), _surfaceArea];
-                                _patient setVariable [QGVAR(pneumothoraxSurfaceArea), _pneumothoraxAmount];
+                                _unit setVariable [QEGVAR(breathing,lungSurfaceArea), _surfaceArea];
+                                _unit setVariable [QGVAR(pneumothoraxSurfaceArea), _pneumothoraxAmount];
                             };
                         _pneumothoraxState set [_side, _ptxTarget];
                         _unit setVariable [QGVAR(pneumothorax), _pneumothoraxState, true];

@@ -98,6 +98,7 @@ class ACE_Medical_Injuries {
                 GVAR(eviscerationHit) = QFUNC(woundsHandlerEviscerationHit);
                 EGVAR(breathing,pulmoHit) = QEFUNC(breathing,woundsHandlerPulmoHit);
                 GVAR(pelvicHit) = QFUNC(woundsHandlerPelvicHit);
+                EGVAR(airway,airwayHit) = QEFUNC(airway,handleAirwayHit);
             };
 
             class Avulsion {
@@ -136,6 +137,7 @@ class ACE_Medical_Injuries {
             selectionSpecific = 0;
             class woundHandlers: woundHandlers {
                 GVAR(eviscerationHit) = QFUNC(woundsHandlerEviscerationHit);
+                EGVAR(airway,airwayHit) = QEFUNC(airway,handleAirwayHit);
             };
             class Avulsion {
                 weighting[] = {{1.5, 1}, {1.1, 0}};
@@ -169,6 +171,7 @@ class ACE_Medical_Injuries {
                 EGVAR(breathing,pulmoHit) = QEFUNC(breathing,woundsHandlerPulmoHit);
                 GVAR(jointHit) = QFUNC(woundsHandlerJoints);
                 GVAR(pelvicHit) = QFUNC(woundsHandlerPelvicHit);
+                EGVAR(airway,airwayHit) = QEFUNC(airway,handleAirwayHit);
             };
             class Avulsion {
                 weighting[] = {{1, 1}, {0.8, 0}};
@@ -198,6 +201,7 @@ class ACE_Medical_Injuries {
                 EGVAR(breathing,pulmoHit) = QEFUNC(breathing,woundsHandlerPulmoHit);
                 GVAR(jointHit) = QFUNC(woundsHandlerJoints);
                 GVAR(pelvicHit) = QFUNC(woundsHandlerPelvicHit);
+                EGVAR(airway,airwayHit) = QEFUNC(airway,handleAirwayHit);
             };
             class Avulsion {
                 weighting[] = {{1.5, 1}, {1.1, 0}};

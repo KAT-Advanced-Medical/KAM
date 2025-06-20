@@ -4519,6 +4519,51 @@
         <Key ID="STR_KAT_Pharma_SyringeDisplay_morphineIV_5ml_30">
             <English>5ml Syringe / 5mg(100kg) Morphine</English>
         </Key>
+        <Key ID="STR_KAT_Pharma_Push_ondansetron_5ml_10">
+            <English>Push 3mg Ondansetron</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_Pushing_ondansetron_5ml_10">
+            <English>Pushing 3mg Ondansetron</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_SyringeDisplay_ondansetron_5ml_10">
+            <English>5ml Syringe / 3mg(60kg) Ondansetron</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_Push_ondansetron_5ml_16">
+            <English>Push 3.5mg Ondansetron</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_Pushing_ondansetron_5ml_16">
+            <English>Pushing 3.5mg Ondansetron</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_SyringeDisplay_ondansetron_5ml_16">
+            <English>5ml Syringe / 3.5mg(70kg) Ondansetron</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_Push_ondansetron_5ml_20">
+            <English>Push 4mg Ondansetron</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_Pushing_ondansetron_5ml_20">
+            <English>Pushing 4mg Ondansetron</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_SyringeDisplay_ondansetron_5ml_20">
+            <English>5ml Syringe / 4mg(80kg) Ondansetron</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_Push_ondansetron_5ml_26">
+            <English>Push 4.5mg Ondansetron</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_Pushing_ondansetron_5ml_26">
+            <English>Pushing 4.5mg Ondansetron</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_SyringeDisplay_ondansetron_5ml_26">
+            <English>5ml Syringe / 4.5mg(90kg) Ondansetron</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_Push_ondansetron_5ml_30">
+            <English>Push 5mg Ondansetron</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_Pushing_ondansetron_5ml_30">
+            <English>Pushing 5mg Ondansetron</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_SyringeDisplay_ondansetron_5ml_30">
+            <English>5ml Syringe / 5mg(100kg) Ondansetron</English>
+        </Key>
         <Key ID="STR_KAT_Pharma_Push_morphineIV_10ml_10">
             <English>Inject 3mg Morphine</English>
         </Key>
@@ -5601,6 +5646,264 @@
         </Key>
         <Key ID="STR_KAT_Pharma_SyringeDisplay_salineIV_5ml_30">
             <English>5ml Syringe / Saline_Flush Syringe</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_SubCategory_Ondansetron">
+            <English>Ondansetron Settings</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_Ondansetron_DescShort">
+            <English>Ondansetron, For relief of nausea</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_Ondansetron_displayName">
+            <English>Ondansetron</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_medLvl_Ondansetron">
+            <English>Medical level required for Ondansetron</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_treatmentTime_Ondansetron">
+            <English>Treatment time for Ondansetron</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_Push_succinylcholine_5ml_10">
+            <English>Push 90mg Succinylcholine</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_Pushing_succinylcholine_5ml_10">
+            <English>Pushing 90mg Succinylcholine</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_SyringeDisplay_succinylcholine_5ml_10">
+            <English>5ml Syringe / 90mg(60kg) Succinylcholine</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_Push_succinylcholine_5ml_12">
+            <English>Push 96mg Succinylcholine</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_Pushing_succinylcholine_5ml_12">
+            <English>Pushing 96mg Succinylcholine</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_SyringeDisplay_succinylcholine_5ml_12">
+            <English>5ml Syringe / 96mg(64kg) Succinylcholine</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_Push_succinylcholine_5ml_14">
+            <English>Push 102mg Succinylcholine</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_Pushing_succinylcholine_5ml_14">
+            <English>Pushing 102mg Succinylcholine</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_SyringeDisplay_succinylcholine_5ml_14">
+            <English>5ml Syringe / 102mg(68kg) Succinylcholine</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_Push_succinylcholine_5ml_16">
+            <English>Push 108mg Succinylcholine</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_Pushing_succinylcholine_5ml_16">
+            <English>Pushing 108mg Succinylcholine</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_SyringeDisplay_succinylcholine_5ml_16">
+            <English>5ml Syringe / 108mg(72kg) Succinylcholine</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_Push_succinylcholine_5ml_18">
+            <English>Push 114mg Succinylcholine</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_Pushing_succinylcholine_5ml_18">
+            <English>Pushing 114mg Succinylcholine</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_SyringeDisplay_succinylcholine_5ml_18">
+            <English>5ml Syringe / 114mg(76kg) Succinylcholine</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_Push_succinylcholine_5ml_20">
+            <English>Push 120mg Succinylcholine</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_Pushing_succinylcholine_5ml_20">
+            <English>Pushing 120mg Succinylcholine</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_SyringeDisplay_succinylcholine_5ml_20">
+            <English>5ml Syringe / 120mg(80kg) Succinylcholine</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_Push_succinylcholine_5ml_22">
+            <English>Push 126mg Succinylcholine</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_Pushing_succinylcholine_5ml_22">
+            <English>Pushing 126mg Succinylcholine</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_SyringeDisplay_succinylcholine_5ml_22">
+            <English>5ml Syringe / 126mg(84kg) Succinylcholine</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_Push_succinylcholine_5ml_24">
+            <English>Push 132mg Succinylcholine</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_Pushing_succinylcholine_5ml_24">
+            <English>Pushing 132mg Succinylcholine</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_SyringeDisplay_succinylcholine_5ml_24">
+            <English>5ml Syringe / 132mg(88kg) Succinylcholine</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_Push_succinylcholine_5ml_26">
+            <English>Push 138mg Succinylcholine</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_Pushing_succinylcholine_5ml_26">
+            <English>Pushing 138mg Succinylcholine</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_SyringeDisplay_succinylcholine_5ml_26">
+            <English>5ml Syringe / 138mg(92kg) Succinylcholine</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_Push_succinylcholine_5ml_28">
+            <English>Push 144mg Succinylcholine</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_Pushing_succinylcholine_5ml_28">
+            <English>Pushing 144mg Succinylcholine</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_SyringeDisplay_succinylcholine_5ml_28">
+            <English>5ml Syringe / 144mg(96kg) Succinylcholine</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_Push_succinylcholine_5ml_30">
+            <English>Push 150mg Succinylcholine</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_Pushing_succinylcholine_5ml_30">
+            <English>Pushing 150mg Succinylcholine</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_SyringeDisplay_succinylcholine_5ml_30">
+            <English>5ml Syringe / 150mg(100kg) Succinylcholine</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_SubCategory_Succinylcholine">
+            <English>Succinylcholine Settings</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_Succinylcholine_DescShort">
+            <English>Succinylcholine, For RSI</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_Succinylcholine_displayName">
+            <English>Succinylcholine</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_medLvl_Succinylcholine">
+            <English>Medical level required for Succinylcholine</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_Push_sugammadex_5ml_20">
+            <English>Push 400mg Sugammadex</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_Pushing_sugammadex_5ml_20">
+            <English>Pushing 400mg Sugammadex</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_SyringeDisplay_sugammadex_5ml_20">
+            <English>5ml Syringe / 400mg Sugammadex</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_Sugammadex_DescShort">
+            <English>Sugammadex, For reversal of Rocuronium</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_Sugammadex_displayName">
+            <English>Sugammadex</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_Push_rocuronium_5ml_10">
+            <English>Push 90mg Rocuronium</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_Pushing_rocuronium_5ml_10">
+            <English>Pushing 90mg Rocuronium</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_SyringeDisplay_rocuronium_5ml_10">
+            <English>5ml Syringe / 90mg(60kg) Rocuronium</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_Push_rocuronium_5ml_12">
+            <English>Push 96mg Rocuronium</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_Pushing_rocuronium_5ml_12">
+            <English>Pushing 96mg Rocuronium</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_SyringeDisplay_rocuronium_5ml_12">
+            <English>5ml Syringe / 96mg(64kg) Rocuronium</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_Push_rocuronium_5ml_14">
+            <English>Push 102mg Rocuronium</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_Pushing_rocuronium_5ml_14">
+            <English>Pushing 102mg Rocuronium</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_SyringeDisplay_rocuronium_5ml_14">
+            <English>5ml Syringe / 102mg(68kg) Rocuronium</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_Push_rocuronium_5ml_16">
+            <English>Push 108mg Rocuronium</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_Pushing_rocuronium_5ml_16">
+            <English>Pushing 108mg Rocuronium</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_SyringeDisplay_rocuronium_5ml_16">
+            <English>5ml Syringe / 108mg(72kg) Rocuronium</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_Push_rocuronium_5ml_18">
+            <English>Push 114mg Rocuronium</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_Pushing_rocuronium_5ml_18">
+            <English>Pushing 114mg Rocuronium</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_SyringeDisplay_rocuronium_5ml_18">
+            <English>5ml Syringe / 114mg(76kg) Rocuronium</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_Push_rocuronium_5ml_20">
+            <English>Push 120mg Rocuronium</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_Pushing_rocuronium_5ml_20">
+            <English>Pushing 120mg Rocuronium</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_SyringeDisplay_rocuronium_5ml_20">
+            <English>5ml Syringe / 120mg(80kg) Rocuronium</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_Push_rocuronium_5ml_22">
+            <English>Push 126mg Rocuronium</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_Pushing_rocuronium_5ml_22">
+            <English>Pushing 126mg Rocuronium</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_SyringeDisplay_rocuronium_5ml_22">
+            <English>5ml Syringe / 126mg(84kg) Rocuronium</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_Push_rocuronium_5ml_24">
+            <English>Push 132mg Rocuronium</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_Pushing_rocuronium_5ml_24">
+            <English>Pushing 132mg Rocuronium</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_SyringeDisplay_rocuronium_5ml_24">
+            <English>5ml Syringe / 132mg(88kg) Rocuronium</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_Push_rocuronium_5ml_26">
+            <English>Push 138mg Rocuronium</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_Pushing_rocuronium_5ml_26">
+            <English>Pushing 138mg Rocuronium</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_SyringeDisplay_rocuronium_5ml_26">
+            <English>5ml Syringe / 138mg(92kg) Rocuronium</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_Push_rocuronium_5ml_28">
+            <English>Push 144mg Rocuronium</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_Pushing_rocuronium_5ml_28">
+            <English>Pushing 144mg Rocuronium</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_SyringeDisplay_rocuronium_5ml_28">
+            <English>5ml Syringe / 144mg(96kg) Rocuronium</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_Push_rocuronium_5ml_30">
+            <English>Push 150mg Rocuronium</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_Pushing_rocuronium_5ml_30">
+            <English>Pushing 150mg Rocuronium</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_SyringeDisplay_rocuronium_5ml_30">
+            <English>5ml Syringe / 150mg(100kg) Rocuronium</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_SubCategory_Rocuronium">
+            <English>Rocuronium/Sugammadex Settings</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_Rocuronium_DescShort">
+            <English>Rocuronium, For RSI</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_Rocuronium_displayName">
+            <English>Rocuronium</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_medLvl_Rocuronium">
+            <English>Medical level required for Rocuronium/Sugammadex</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_treatmentTime_IV">
+            <English>Treatment time for AMS IV Medications</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_treatmentTime_IM">
+            <English>Treatment time for AMS IM Medications</English>
         </Key>
     </Package>
 </Project>

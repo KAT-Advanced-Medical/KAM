@@ -29,13 +29,8 @@ if ((count _parts) >= 2) then {
         ["5ml", "30"]
     ];
 };
+private _timeInSystem = linearConversion [22, 30, (_parts select -1), 60, 300];
 if (_isMatch) then {
-    _patient setVariable [QEGVAR(surgery,sedated), true, true];
+    [_patient, "Ketamine", 10, _timeInSystem, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, "true"] call EFUNC(vitals,addMedicationAdjustment);
 [_patient, true] call ACEFUNC(medical,setUnconscious);
-
-[{ 
-    params ["_patient"];
-    _patient setVariable [QEGVAR(surgery,sedated), false, true]; 
-}, [_patient], 30] call CBA_fnc_waitAndExecute;
-
 };

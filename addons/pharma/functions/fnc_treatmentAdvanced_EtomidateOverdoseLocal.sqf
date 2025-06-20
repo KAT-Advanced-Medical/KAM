@@ -24,7 +24,7 @@ switch (_randomNumber) do {
             [_patient, _bpAdjust, _bpAdjust, "EtomidateOverdose"] call EFUNC(circulation,updateBloodPressureChange);        
         }, [_patient], 120] call CBA_fnc_waitAndExecute;
         private _hrAdjust = -40 + floor random ((-20 - -40) + 1);
-        [_patient, "BRADYCARDIA", 120, 1200, _hrAdjust, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0] call EFUNC(vitals,addMedicationAdjustment);
+        [_patient, "BRADYCARDIA", 120, 1200, _hrAdjust] call EFUNC(vitals,addMedicationAdjustment);
         [{
         params ["_patient"];
         [{
@@ -54,8 +54,8 @@ switch (_randomNumber) do {
                     };
                     [_idPFH] call CBA_fnc_removePerFrameHandler;
                 };
-                private _depression = _unit getVariable [QEGVAR(pharma,opioidDepressionFactor)] + 0.08;
-                _patient setVariable [QEGVAR(pharma,opioidDepressionFactor), _depression];
+                private _depression = _unit getVariable [QEGVAR(pharma,opioidDepression)] + 0.08;
+                _patient setVariable [QEGVAR(pharma,opioidDepression), _depression];
                 }, 30, [_patient,0]] call CBA_fnc_addPerFrameHandler;
         }, [_patient], 30] call CBA_fnc_waitAndExecute;
     };
@@ -65,7 +65,7 @@ switch (_randomNumber) do {
             [_patient, _bpAdjust, _bpAdjust, "EtomidateOverdose"] call EFUNC(circulation,updateBloodPressureChange);        
         }, [_patient], 120] call CBA_fnc_waitAndExecute;
         private _hrAdjust = 20 + floor random ((40 - 20) + 1);
-        [_patient, "TACHYCARDIA", 120, 1200, _hrAdjust, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0] call EFUNC(vitals,addMedicationAdjustment);
+        [_patient, "TACHYCARDIA", 120, 1200, _hrAdjust] call EFUNC(vitals,addMedicationAdjustment);
         [{
         params ["_patient"];
         [{
@@ -95,8 +95,8 @@ switch (_randomNumber) do {
                     };
                     [_idPFH] call CBA_fnc_removePerFrameHandler;
                 };
-                private _depression = _unit getVariable [QEGVAR(pharma,opioidDepressionFactor)] + 0.08;
-                _patient setVariable [QEGVAR(pharma,opioidDepressionFactor), _depression];
+                private _depression = _unit getVariable [QEGVAR(pharma,opioidDepression)] + 0.08;
+                _patient setVariable [QEGVAR(pharma,opioidDepression), _depression];
                 }, 30, [_patient,0]] call CBA_fnc_addPerFrameHandler;
         }, [_patient], 30] call CBA_fnc_waitAndExecute;
     };
@@ -106,7 +106,7 @@ switch (_randomNumber) do {
             [_patient, _bpAdjust, _bpAdjust, "EtomidateOverdose"] call EFUNC(circulation,updateBloodPressureChange);        
         }, [_patient], 120] call CBA_fnc_waitAndExecute;
         private _hrAdjust = 20 + floor random ((40 - 20) + 1);
-        [_patient, "TACHYCARDIA", 120, 1200, _hrAdjust, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0] call EFUNC(vitals,addMedicationAdjustment);
+        [_patient, "TACHYCARDIA", 120, 1200, _hrAdjust] call EFUNC(vitals,addMedicationAdjustment);
         [{
         params ["_patient"];
         [{
@@ -131,8 +131,8 @@ switch (_randomNumber) do {
                     };
                     [_idPFH] call CBA_fnc_removePerFrameHandler;
                 };
-                private _depression = _unit getVariable [QEGVAR(pharma,opioidDepressionFactor)] + 0.08;
-                _patient setVariable [QEGVAR(pharma,opioidDepressionFactor), _depression];
+                private _depression = _unit getVariable [QEGVAR(pharma,opioidDepression)] + 0.08;
+                _patient setVariable [QEGVAR(pharma,opioidDepression), _depression];
                 private _rr = _patient getVariable [QEGVAR(breathing,respiratoryRateMultiplier), 1] - 0.06;
                 _patient setVariable [QEGVAR(breathing,respiratoryRateMultiplier), _rr];
                 }, 30, [_patient,0]] call CBA_fnc_addPerFrameHandler;
@@ -144,7 +144,7 @@ switch (_randomNumber) do {
             [_patient, _bpAdjust, _bpAdjust, "EtomidateOverdose"] call EFUNC(circulation,updateBloodPressureChange);        
         }, [_patient], 120] call CBA_fnc_waitAndExecute;
         private _hrAdjust = -40 + floor random ((-20 - -40) + 1);
-        [_patient, "BRADYCARDIA", 120, 1200, _hrAdjust, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0] call EFUNC(vitals,addMedicationAdjustment);
+        [_patient, "BRADYCARDIA", 120, 1200, _hrAdjust] call EFUNC(vitals,addMedicationAdjustment);
         [{
         params ["_patient"];
 
@@ -169,8 +169,8 @@ switch (_randomNumber) do {
                     };
                     [_idPFH] call CBA_fnc_removePerFrameHandler;
                 };
-                private _depression = _unit getVariable [QEGVAR(pharma,opioidDepressionFactor)] + 0.08;
-                _patient setVariable [QEGVAR(pharma,opioidDepressionFactor), _depression];
+                private _depression = _unit getVariable [QEGVAR(pharma,opioidDepression)] + 0.08;
+                _patient setVariable [QEGVAR(pharma,opioidDepression), _depression];
                 private _rr = _patient getVariable [QEGVAR(breathing,respiratoryRateMultiplier), 1] - 0.06;
                 _patient setVariable [QEGVAR(breathing,respiratoryRateMultiplier), _rr];
                 }, 30, [_patient,0]] call CBA_fnc_addPerFrameHandler;

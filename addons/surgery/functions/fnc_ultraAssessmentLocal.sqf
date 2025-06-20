@@ -23,10 +23,14 @@ private _airway = LSTRING(Ultra_Airway_Normal);
 private _cardiac = LSTRING(Ultra_Airway_Normal);
 private _thorasic = LSTRING(Ultra_Airway_Normal);
 private _thorasicRight = LSTRING(Ultra_Airway_Normal);
+private _occlusion = ((_patient getVariable [QEGVAR(airway,occlusion), [0, 0, 0]]) findIf { _x > 2 }) != -1;
+private _obstruction = ((_patient getVariable [QEGVAR(airway,obstruction), [0, 0, 0]]) findIf { _x != 0 }) != -1;
+private _catastrophicState = _patient getVariable [QEGVAR(airway,catastrophicAirway), [false, false]];
+private _hasCatastrophicAirway = (_catastrophicState select 0) || (_catastrophicState select 1);
 
 _patient setVariable [QGVAR(imaging), true, true];
 
-if ((_patient getVariable [QEGVAR(airway,occluded), false]) || (_patient getVariable [QEGVAR(airway,obstruction), false])) then {
+if ((_occlusion) || (_obstruction) || (_hasCatastrophicAirway)) then {
     _airway = LSTRING(Ultra_Airway_Compromise);
 };
 

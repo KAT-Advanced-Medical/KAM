@@ -25,7 +25,7 @@ private _ctrlKingLT = _ctrlGroup controlsGroupCtrl IDC_BODY_HEAD_KINGLT;
 private _airwayItem = _target getVariable [QGVAR(airway_item), ""];
 
 if (_airwayItem isNotEqualTo "") then {
-    if (_airwayItem isEqualTo "Larynxtubus") then {
+    if (_airwayItem in ["Larynxtubus", "IGEL", "ETT", "Surgical_Airway"]) then {
         _ctrlGuedelTube ctrlShow false;
         _ctrlKingLT ctrlShow true;
     } else {

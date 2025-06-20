@@ -21,8 +21,8 @@ params ["_unit", "_chanceIncrease", "_side", ["_deteriorated", false]];
 
 // Retrieve current state for the specified side
 private _pneumothoraxState = _unit getVariable [QGVAR(pneumothorax), [0, 0]];
-private _hemo = (_unit getVariable [QGVAR(hemopneumothorax), [false, false]]) select _side;
-private _tension = (_unit getVariable [QGVAR(tensionpneumothorax), [false, false]]) select _side;
+private _hemoState = (_unit getVariable [QGVAR(hemopneumothorax), [false, false]]) select _side;
+private _tensionState = (_unit getVariable [QGVAR(tensionpneumothorax), [false, false]]) select _side;
 if ((floor (random 100) < (GVAR(advPtxChance) + _chanceIncrease) || _deteriorated) && !(_hemo || _tension)) then {
     [_unit, 0.7] call ACEFUNC(medical_status,adjustPainLevel);
 

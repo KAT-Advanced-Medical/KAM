@@ -9,6 +9,15 @@
     true
 ] call CBA_fnc_addSetting;
 
+[
+    QGVAR(CatastrophicAirwaysEnable),
+    "CHECKBOX",
+    [LLSTRING(SETTING_ENABLE_Catastrophic),LLSTRING(SETTING_ENABLE_Catastrophic_DESC)],
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_AirwayInjury)],
+    [false],
+    true
+] call CBA_fnc_addSetting;
+
 // Settable action time for CheckAirway
 [
     QGVAR(CheckAirway_time),
@@ -21,21 +30,121 @@
 
 // airway Injuries probability obstruction
 [
-    QGVAR(probability_obstruction),
+    QGVAR(airwayObstructionChance),
     "SLIDER",
     [LLSTRING(SETTING_obstruction),LLSTRING(SETTING_obstruction_DESC)],
-    [CBA_SETTINGS_CAT, ELSTRING(GUI,SubCategory_Basic)],
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_AirwayInjury)],
     [0, 100, 15, 0],
+    true
+] call CBA_fnc_addSetting;
+
+[
+    QGVAR(airwayObstructionDamageThreshold),
+    "SLIDER",
+    [LLSTRING(SETTING_obstructionDamageThreshold),LLSTRING(SETTING_obstructionDamageThreshold_DESC)],
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_AirwayInjury)],
+    [0, 1, 0.2, 2],
+    true
+] call CBA_fnc_addSetting;
+
+[
+    QGVAR(airwayObstructionDamageThreshold_TakenDamage),
+    "CHECKBOX",
+    [LLSTRING(SETTING_ObstructionDamageThreshold_DamageTaken), LLSTRING(SETTING_ObstructionDamageThreshold_DamageTaken_DESCRIPTION)],
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_AirwayInjury)],
+    [true],
     true
 ] call CBA_fnc_addSetting;
 
 // airway Injuries probability occluded
 [
-    QGVAR(probability_occluded),
+    QGVAR(airwayOcclusionChance),
     "SLIDER",
     [LLSTRING(SETTING_occluded),LLSTRING(SETTING_occluded_DESC)],
-    [CBA_SETTINGS_CAT, ELSTRING(GUI,SubCategory_Basic)],
-    [0, 100, 10, 0],
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_AirwayInjury)],
+    [0, 100, 15, 0],
+    true
+] call CBA_fnc_addSetting;
+
+[
+    QGVAR(airwayOcclusionDamageThreshold),
+    "SLIDER",
+    [LLSTRING(SETTING_occlusionDamageThreshold),LLSTRING(SETTING_occlusionDamageThreshold_DESC)],
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_AirwayInjury)],
+    [0, 1, 0.1, 2],
+    true
+] call CBA_fnc_addSetting;
+
+[
+    QGVAR(airwayOcclusionDamageThreshold_TakenDamage),
+    "CHECKBOX",
+    [LLSTRING(SETTING_OcclusionDamageThreshold_DamageTaken), LLSTRING(SETTING_OcclusionDamageThreshold_DamageTaken_DESCRIPTION)],
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_AirwayInjury)],
+    [true],
+    true
+] call CBA_fnc_addSetting;
+
+[
+    QGVAR(airwayPukeChance),
+    "SLIDER",
+    [LLSTRING(SETTING_pukeChance),LLSTRING(SETTING_pukeChance_DESC)],
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_AirwayInjury)],
+    [0, 100, 15, 0],
+    true
+] call CBA_fnc_addSetting;
+
+[
+    QGVAR(catastrophicAirwayChance),
+    "SLIDER",
+    [LLSTRING(SETTING_catastrophicAirwayChance),LLSTRING(SETTING_catastrophicAirwayChance_DESC)],
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_AirwayInjury)],
+    [0, 100, 2, 0],
+    true
+] call CBA_fnc_addSetting;
+
+[
+    QGVAR(catastrophicAirwayDamageThreshold),
+    "SLIDER",
+    [LLSTRING(SETTING_catastrophicAirwayDamageThreshold),LLSTRING(SETTING_catastrophicAirwayDamageThreshold_DESC)],
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_AirwayInjury)],
+    [0, 3, 0.3, 2],
+    true
+] call CBA_fnc_addSetting;
+
+[
+    QGVAR(catastrophicAirwayDamageThreshold_TakenDamage),
+    "CHECKBOX",
+    [LLSTRING(SETTING_catastrophicAirwayDamageThreshold_DamageTaken), LLSTRING(SETTING_catastrophicAirwayDamageThreshold_DamageTaken_DESCRIPTION)],
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_AirwayInjury)],
+    [true],
+    true
+] call CBA_fnc_addSetting;
+
+[
+    QGVAR(deterioratingAirways_chance),
+    "SLIDER",
+    [LLSTRING(SETTING_deterioratingAirways_chance), LLSTRING(SETTING_deterioratingAirways_chance_DESC)],
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_AirwayInjury)],
+    [0, 100, 25, 0],
+    true
+] call CBA_fnc_addSetting;
+
+//Deteriorating Airways countdown
+[
+    QGVAR(deterioratingAirways_interval),
+    "SLIDER",
+    [LLSTRING(SETTING_deterioratingAirways_interval), LLSTRING(SETTING_deterioratingAirways_interval_Desc)],
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_AirwayInjury)],
+    [1, 1200, 30, 0],
+    true
+] call CBA_fnc_addSetting;
+
+[
+    QGVAR(airwayCollapse_Timer),
+    "SLIDER",
+    [LLSTRING(SETTING_airwayCollapse),LLSTRING(SETTING_airwayCollapse_DESC)],
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_AirwayInjury)],
+    [1, 1200, 180, 0],
     true
 ] call CBA_fnc_addSetting;
 
@@ -44,20 +153,11 @@
     QGVAR(occlusion_repeatTimer),
     "SLIDER",
     LLSTRING(SETTING_occlusion_repeatTimer),
-    [CBA_SETTINGS_CAT, ELSTRING(GUI,SubCategory_Basic)],
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_AirwayInjury)],
     [1, 1200, 60, 0],
     true
 ] call CBA_fnc_addSetting;
 
-// Set period during which patient cannot get another occlusion after last occlusion was cleared, disabled if 0
-[
-    QGVAR(occlusion_cooldownPeriod),
-    "SLIDER",
-    LLSTRING(SETTING_occlusion_cooldownPeriod),
-    [CBA_SETTINGS_CAT, ELSTRING(GUI,SubCategory_Basic)],
-    [0, 60, 6, 1],
-    true
-] call CBA_fnc_addSetting;
 
 // Succes for headturning
 [
@@ -129,6 +229,33 @@
     true
 ] call CBA_fnc_addSetting;
 
+[
+    QGVAR(medLvl_NPA),
+    "LIST",
+    [LLSTRING(ALLOW_NPA),LLSTRING(ALLOW_NPA_DESC)],
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_Items)],
+    [[0, 1, 2], ["STR_ACE_Medical_Treatment_Anyone", "STR_ACE_Medical_Treatment_Medics", "STR_ACE_Medical_Treatment_Doctors"], 0],
+    true
+] call CBA_fnc_addSetting;
+
+[
+    QGVAR(medLvl_IGEL),
+    "LIST",
+    [LLSTRING(ALLOW_IGEL),LLSTRING(ALLOW_IGEL_DESC)],
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_Items)],
+    [[0, 1, 2], ["STR_ACE_Medical_Treatment_Anyone", "STR_ACE_Medical_Treatment_Medics", "STR_ACE_Medical_Treatment_Doctors"], 0],
+    true
+] call CBA_fnc_addSetting;
+
+[
+    QGVAR(medLvl_ETT),
+    "LIST",
+    [LLSTRING(ALLOW_ETT),LLSTRING(ALLOW_ETT_DESC)],
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_Items)],
+    [[0, 1, 2], ["STR_ACE_Medical_Treatment_Anyone", "STR_ACE_Medical_Treatment_Medics", "STR_ACE_Medical_Treatment_Doctors"], 0],
+    true
+] call CBA_fnc_addSetting;
+
 //Settable list for using Accuvac per medical class
 [
     QGVAR(medLvl_Accuvac),
@@ -191,6 +318,24 @@
 
 // Settable action time for Guedeltubus
 [
+    QGVAR(IGEL_time),
+    "SLIDER",
+    [LLSTRING(TIME_IGEL),LLSTRING(TIME_IGEL_DESC)],
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_Items)],
+    [1, 20, 6, 0],
+    true
+] call CBA_fnc_addSetting;
+
+[
+    QGVAR(NPA_time),
+    "SLIDER",
+    [LLSTRING(TIME_NPA),LLSTRING(TIME_NPA_DESC)],
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_Items)],
+    [1, 20, 6, 0],
+    true
+] call CBA_fnc_addSetting;
+
+[
     QGVAR(Guedeltubus_time),
     "SLIDER",
     [LLSTRING(TIME_GUEDELTUBUS),LLSTRING(TIME_GUEDELTUBUS_DESC)],
@@ -198,6 +343,25 @@
     [1, 20, 6, 0],
     true
 ] call CBA_fnc_addSetting;
+
+[
+    QGVAR(ETT_time),
+    "SLIDER",
+    [LLSTRING(TIME_ETT),LLSTRING(TIME_ETT_DESC)],
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_Items)],
+    [1, 15, 6, 0],
+    true
+] call CBA_fnc_addSetting;
+
+[
+    QGVAR(Visualization_time),
+    "SLIDER",
+    [LLSTRING(TIME_Visualization),LLSTRING(TIME_Visualization_DESC)],
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_Items)],
+    [1, 20, 6, 0],
+    true
+] call CBA_fnc_addSetting;
+
 
 // Enable reuasble Larynxtubus & Guedeltubus
 [
@@ -257,3 +421,105 @@
     [true],
     true
 ] call CBA_fnc_addSetting;
+
+[
+    QGVAR(probability_suction),
+    "SLIDER",
+    [LLSTRING(SUCCES_SUCTION),LLSTRING(SUCCES_SUCTION_DESC)],
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_Suction)],
+    [1, 100, 50, 0],
+    true
+] call CBA_fnc_addSetting;
+
+// Settable action time for Head turning
+[
+    QGVAR(Suction_Interval),
+    "SLIDER",
+    [LLSTRING(SETTING_SUCTION_Interval), LLSTRING(SETTING_SUCTION_Interval_DESC)],
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_Suction)],
+    [7, 30, 7, 0],
+    true
+] call CBA_fnc_addSetting;
+
+[
+    QGVAR(probability_visualization),
+    "SLIDER",
+    [LLSTRING(SUCCES_visualization),LLSTRING(SUCCES_visualization_DESC)],
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_Items)],
+    [1, 100, 50, 0],
+    true
+] call CBA_fnc_addSetting;
+
+// Settable action time for Head turning
+[
+    QGVAR(visualization_Interval),
+    "SLIDER",
+    [LLSTRING(SETTING_visualization_Interval), LLSTRING(SETTING_visualization_Interval_DESC)],
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_Items)],
+    [1, 30, 7, 0],
+    true
+] call CBA_fnc_addSetting;
+
+[
+    QGVAR(CrikeAction_MedLevel),
+    "LIST",
+    LLSTRING(Crike_ACTION_MEDLEVEL),
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_Crike)],
+    [[0, 1, 2], ["STR_ACE_Medical_Treatment_Anyone", "STR_ACE_Medical_Treatment_Medics", "STR_ACE_Medical_Treatment_Doctors"], 2],
+    true
+] call CBA_fnc_addSetting;
+
+[
+    QGVAR(CrikeLocation),
+    "LIST",
+    LLSTRING(Crike_LOCATION),
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_Crike)],
+    [[0,1,2,3],["STR_ACE_Common_Anywhere", "STR_ACE_Common_Vehicle", "STR_ACE_Medical_Treatment_MedicalFacilities", "STR_ACE_Medical_Treatment_VehiclesAndFacilities"],3],
+    true
+] call CBA_fnc_addSetting;
+
+[
+    QGVAR(hardcoreCrike),
+    "CHECKBOX",
+    [LLSTRING(hardcoreCrike),LLSTRING(hardcoreCrike_DESC)],
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_Crike)],
+    [false],
+    true
+] call CBA_fnc_addSetting;
+
+[
+    QGVAR(cricothyrotomyGuideTime),
+    "SLIDER",
+    [LLSTRING(INTERMEDIATE_TIMER)],
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_Crike)],
+    [0,100,8,0],
+    true
+] call CBA_fnc_addSetting;
+
+[
+    QGVAR(incisionTime),
+    "SLIDER",
+    LLSTRING(INCISION_TIMER),
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_Crike)],
+    [0,100,10,0],
+    true
+] call CBA_fnc_addSetting;
+
+[
+    QGVAR(cricothyrotomyPlaceTime),
+    "SLIDER",
+    LLSTRING(OPEN_TIMER),
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_Crike)],
+    [0,100,15,0],
+    true
+] call CBA_fnc_addSetting;
+
+[
+    QGVAR(cricothyrotomySecureTime),
+    "SLIDER",
+    [LLSTRING(SECURE_TIMER)],
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_Crike)],
+    [0,100,8,0],
+    true
+] call CBA_fnc_addSetting;
+

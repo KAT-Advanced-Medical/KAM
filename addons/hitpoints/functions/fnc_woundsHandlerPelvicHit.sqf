@@ -16,7 +16,7 @@
  * None
  *
  * Example:
- * [cursorTarget, [1, "Body", 2], "bullet", "B_556x45_Ball"] call kat_breathing_fnc_woundsHandlerPelvicHit
+ * [cursorTarget, [1, "Body", 2], "bullet", "B_556x45_Ball"] call kat_hitpoints_fnc_woundsHandlerPelvicHit
  *
  * Public: No
  */

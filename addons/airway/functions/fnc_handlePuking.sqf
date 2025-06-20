@@ -18,29 +18,70 @@
 params ["_unit"];
 
 //Other mods can utilise KAT_Occlusion_Exclusion variable to prevent occlusions from happening
-if ((_unit getVariable ["kat_pukeActive_PFH", false]) || !(GVAR(enable)) || (_unit getVariable ["KAT_Occlusion_Exclusion", false])) exitWith {};
-_unit setVariable ["kat_pukeActive_PFH", true];
-
-[{
-    params ["_args", "_idPFH"];
-    _args params ["_unit"];
-
+if ((_unit getVariable ["kat_pukeActive_PFH", false]) || !(GVAR(enable))) exitWith {};
+    
     private _isUnconscious = _unit getVariable ["ACE_isUnconscious", false];
-    private _recovery = _unit getVariable [QGVAR(recovery), false];
-
-    if ((!(alive _unit)) || !_isUnconscious || (_unit getVariable [QGVAR(airway_item), ""] isEqualTo "Larynxtubus") || _recovery) exitWith {
-        [_idPFH] call CBA_fnc_removePerFrameHandler;
+    private _alive = alive _unit;
+    if !(_alive || _isUnconscious) exitWith {
         _unit setVariable ["kat_pukeActive_PFH", nil];
     };
+    
+    private _nauseaMult = _unit getVariable [QEGVAR(pharma,nauseaMult), 1];
+    
+    if (_nauseaMult > 1000) then {
+        _nauseaMult = 1
+    };
+    private _delay = (GVAR(occlusion_repeatTimer) / _nauseaMult) * random [0.8, 1, 1.3];
+    [{
+        params ["_unit"];
+        if (random (100) <= GVAR(airwayPukeChance)) then {
+        private _occlusionState = _unit getVariable [QGVAR(occlusion), [0, 0, 0]];
+        private _usedItem = _unit getVariable [QGVAR(airway_item), ""];
+        switch (true) do {
+            case (_usedItem isEqualTo "Larynxtubus"): {
+                _occlusionState set [1, ((_occlusionState select 1) + floor random [1, 2, 6]) min 6];
+            };
+            case (_usedItem isEqualTo "IGEL"): {
+                _occlusionState set [0, ((_occlusionState select 0) + floor random [1, 3, 6]) min 6];
+                _occlusionState set [1, ((_occlusionState select 1) + floor random [1, 2, 4]) min 6];
+            };
+            case (_usedItem isEqualTo "ETT"): {
+                _occlusionState set [0, ((_occlusionState select 0) + floor random [1, 3, 6]) min 6];
+                _occlusionState set [1, ((_occlusionState select 1) + floor random [1, 2, 4]) min 6];
+            };
+            case (_usedItem isEqualTo "NPA"): {
+                _occlusionState set [0, ((_occlusionState select 0) + floor random [1, 3, 6]) min 6];
+                _occlusionState set [1, ((_occlusionState select 1) + floor random [1, 2, 4]) min 6];
+                _occlusionState set [2, ((_occlusionState select 2) + floor random [1, 1, 3]) min 6];
+            };
+            case (_usedItem isEqualTo "Guedeltubes"): {
+                _occlusionState set [0, ((_occlusionState select 0) + floor random [1, 3, 6]) min 6];
+                _occlusionState set [1, ((_occlusionState select 1) + floor random [1, 2, 4]) min 6];
+                _occlusionState set [2, ((_occlusionState select 2) + floor random [1, 1, 3]) min 6];
+            };
+        default {
+            _occlusionState set [0, ((_occlusionState select 0) + floor random [1, 3, 6]) min 6];
+            _occlusionState set [1, ((_occlusionState select 1) + floor random [1, 2, 4]) min 6];
+            _occlusionState set [2, ((_occlusionState select 2) + floor random [1, 1, 3]) min 6];
+        };
+        };
+        _unit setVariable [QGVAR(occlusion), _occlusionState, true];
+        _unit setVariable [QGVAR(hasPuked), true, true];
+        for "_i" from 0 to 2 do {
+            [_unit, _i] call FUNC(airwayPFH);
+        };
 
-    if (GVAR(occlusion_cooldownPeriod) > 0 && {(_unit getVariable [QGVAR(clearedTime), 0] > 0) && ((_unit getVariable [QGVAR(clearedTime), 0]) + GVAR(occlusion_cooldownPeriod)) > CBA_missionTime}) exitWith {};
-
-    if (random(100) <= GVAR(probability_occluded)) then {
-        if !(_unit getVariable [QGVAR(occluded), false]) then {
-            _unit setVariable [QGVAR(occluded), true, true];
-            if (GVAR(checkbox_puking_sound)) then {
-                playSound3D [selectRandom [QPATHTOF_SOUND(sounds\puking1.wav),QPATHTOF_SOUND(sounds\puking2.wav),QPATHTOF_SOUND(sounds\puking3.wav)], _unit, false, getPosASL _unit, 8, 1, 15];
+        if (GVAR(checkbox_puking_sound)) then {
+            private _sound = selectRandom [
+                QPATHTOF_SOUND(sounds\puking1.wav),
+                QPATHTOF_SOUND(sounds\puking2.wav),
+                QPATHTOF_SOUND(sounds\puking3.wav)
+            ];
+            TRACE_3("Puke",_sound, _unit, (getPosASL _unit));
+            playSound3D [_sound, _unit, false, getPosASL _unit, 8, 1, 15];
             };
         };
-    };
-}, GVAR(occlusion_repeatTimer), [_unit]] call CBA_fnc_addPerFrameHandler;
+        [_unit] call FUNC(handlePuking);
+    }, [_unit], _delay] call CBA_fnc_waitAndExecute;
+
+

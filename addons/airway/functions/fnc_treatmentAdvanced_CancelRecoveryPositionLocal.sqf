@@ -21,17 +21,11 @@ params ["_medic", "_patient", ["_delayed", false]];
 
 _patient setVariable [QGVAR(recovery), false, true];
 _patient setVariable [QGVAR(overstretch), false, true];
-_patient setVariable [QGVAR(occluded), (_patient getVariable [QGVAR(wasOccluded), false]), true];
-_patient call FUNC(handlePuking);
 
 private _output = LLSTRING(RecoveryPosition_Cancel);
 
-if (_delayed) then {
-    [{
-        params ["_medic", "_output"];
+[{
+    params ["_medic", "_output"];
 
-        [_output, 1.5, _medic] call ACEFUNC(common,displayTextStructured);
-    }, [_medic, _output], 2.5] call CBA_fnc_waitAndExecute;
-} else {
     [_output, 1.5, _medic] call ACEFUNC(common,displayTextStructured);
-};
+}, [_medic, _output], 2.5] call CBA_fnc_waitAndExecute;

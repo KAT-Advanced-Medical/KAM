@@ -45,6 +45,10 @@ class ACE_ADDON(Medical_Treatment) {
         weightDoseMax = 30; //100kg
         //maximum dose before medication effects are reduced
         maximumEffectiveDose = 30;
+        //multiplier to nausea
+        nauseaMult = 0;
+        //is this drug a sedation drug
+        sedation = "false";
 
 
         class Epinephrine {
@@ -85,11 +89,12 @@ class ACE_ADDON(Medical_Treatment) {
             timeInSystem = 300;
             timeTillMaxEffect = 60;
             dose = 1;
-            maxDose = 20;
-            maxDoseDeviation = 10;
+            maxDose = 2;
+            maxDoseDeviation = 1;
             incompatibleMedication[] = {};
             viscosityChange = -0;
-            maximumEffectiveDose = 20;
+            maximumEffectiveDose = 2;
+            nauseaMult = 0.2;
         };
         class MorphineIV {
             painReduce = 0.8;
@@ -423,6 +428,7 @@ class ACE_ADDON(Medical_Treatment) {
             onOverDose = "";
             opioidEffect = 0.2;
             maximumEffectiveDose = 10;
+            nauseaMult = 0.2;
         };
         class Caffeine {
             painReduce = 0;
@@ -468,6 +474,51 @@ class ACE_ADDON(Medical_Treatment) {
             maxRelief = 0.6;
             maximumEffectiveDose = 30;
         };
+        class Ondansetron {
+            painReduce = 0.0;
+            hrIncreaseLow[] = {0, 0};
+            hrIncreaseNormal[] = {0, 0};
+            hrIncreaseHigh[] = {0, 0};
+            timeInSystem = 300;
+            timeTillMaxEffect = 15;
+            dose = 1;
+            viscosityChange = -0;
+            maximumEffectiveDose = 2;
+            nauseaMult = -0.4;
+        };
+        class Succinylcholine {
+            painReduce = 0.0;
+            hrIncreaseLow[] = {15, 20};
+            hrIncreaseNormal[] = {10, 20};
+            hrIncreaseHigh[] = {10, 20};
+            timeInSystem = 60;
+            timeTillMaxEffect = 5;
+            dose = 1;
+            viscosityChange = -0;
+            maximumEffectiveDose = 2;
+        };
+        class Rocuronium {
+            painReduce = 0.0;
+            hrIncreaseLow[] = {0, 0};
+            hrIncreaseNormal[] = {0, 0};
+            hrIncreaseHigh[] = {0, 0};
+            timeInSystem = 240;
+            timeTillMaxEffect = 20;
+            dose = 1;
+            viscosityChange = -0;
+            maximumEffectiveDose = 2;
+        };
+        class Sugammadex  {
+            painReduce = 0.0;
+            hrIncreaseLow[] = {0, 0};
+            hrIncreaseNormal[] = {0, 0};
+            hrIncreaseHigh[] = {0, 0};
+            timeInSystem = 60;
+            timeTillMaxEffect = 15;
+            dose = 1;
+            viscosityChange = -0;
+            maximumEffectiveDose = 2;
+        };
         class syringe_TXA_5ml {
             painReduce = 0;
             hrIncreaseLow[] = {-2, -5};
@@ -510,7 +561,7 @@ class ACE_ADDON(Medical_Treatment) {
             timeTillMaxEffect = 10;
             dose = 1;
             alphaFactor = -0.1;
-            contractility = 0.3;
+            contractility = 0.9;
             maximumEffectiveDose = 30;
         };
         class syringe_Phenylephrine_5ml {
@@ -538,12 +589,13 @@ class ACE_ADDON(Medical_Treatment) {
             viscosityChange = -10;
             opioidRelief = 1.2;
             opioidEffect = 0.11;
-            opioidDepression = 0.11;
-            respiratoryRate = -0.1;
-            contractility = -0.1;
+            opioidDepression = 0.2;
+            respiratoryRate = -0.2;
+            contractility = -0.2;
             weightBased = "true";
             weightDose = 20;
             maximumEffectiveDose = 30;
+            nauseaMult = 0.4;
         };
         class syringe_Ketamine_5ml {
             painReduce = 0.5;
@@ -554,8 +606,8 @@ class ACE_ADDON(Medical_Treatment) {
             timeTillMaxEffect = 15;
             dose = 1;
             viscosityChange = 10;
-            opioidEffect = 0.9;
-            opioidDepression = 0.9;
+            opioidEffect = 0.09;
+            opioidDepression = 0.09;
             respiratoryRate = 0.1;
             contractility = 0.1;
             weightBased = "true";
@@ -563,6 +615,7 @@ class ACE_ADDON(Medical_Treatment) {
             weightDoseMin = 10;
             weightDoseMax = 20;
             maximumEffectiveDose = 30;
+            nauseaMult = 0.3;
         };
         class syringe_Nalbuphine_5ml {
             painReduce = 0.5;
@@ -579,6 +632,7 @@ class ACE_ADDON(Medical_Treatment) {
             weightBased = "true";
             weightDose = 20;
             maximumEffectiveDose = 30;
+            nauseaMult = 0.3;
         };
         class syringe_AtropineIV_5ml {
             painReduce = 0;
@@ -671,6 +725,7 @@ class ACE_ADDON(Medical_Treatment) {
             weightBased = "true";
             weightDose = 20;
             maximumEffectiveDose = 30;
+            nauseaMult = 0.3;
         };
         class syringe_AdenosineIV_5ml {
             painReduce = 0;
@@ -691,10 +746,58 @@ class ACE_ADDON(Medical_Treatment) {
             timeInSystem = 180;
             timeTillMaxEffect = 15;
             dose = 1; 
-            respiratoryRate = 0.10;
+            respiratoryRate = 0.40;
             maximumEffectiveDose = 30;
         };
-        class syringe_Alteplase_5ml_30 {
+        class syringe_Ondansetron_5ml {
+            painReduce = 0.0;
+            hrIncreaseLow[] = {0, 0};
+            hrIncreaseNormal[] = {0, 0};
+            hrIncreaseHigh[] = {0, 0};
+            timeInSystem = 300;
+            timeTillMaxEffect = 15;
+            dose = 1;
+            viscosityChange = -0;
+            nauseaMult = -0.7;
+            weightBased = "true";
+            weightDose = 20;
+            maximumEffectiveDose = 30;
+        };
+        class syringe_Succinylcholine_5ml {
+            painReduce = 0.0;
+            hrIncreaseLow[] = {15, 20};
+            hrIncreaseNormal[] = {10, 20};
+            hrIncreaseHigh[] = {10, 20};
+            timeInSystem = 60;
+            timeTillMaxEffect = 5;
+            dose = 1;
+            weightBased = "true";
+            weightDose = 20;
+            maximumEffectiveDose = 30;
+        };
+        class syringe_Rocuronium_5ml {
+            painReduce = 0.0;
+            hrIncreaseLow[] = {0, 0};
+            hrIncreaseNormal[] = {0, 0};
+            hrIncreaseHigh[] = {0, 0};
+            timeInSystem = 240;
+            timeTillMaxEffect = 20;
+            dose = 1;
+            weightBased = "true";
+            weightDose = 20;
+            maximumEffectiveDose = 30;
+        };
+        class syringe_Sugammadex_5ml_20  {
+            painReduce = 0.0;
+            hrIncreaseLow[] = {0, 0};
+            hrIncreaseNormal[] = {0, 0};
+            hrIncreaseHigh[] = {0, 0};
+            timeInSystem = 60;
+            timeTillMaxEffect = 15;
+            dose = 1;
+            maximumEffectiveDose = 30;
+        };
+        class syringe_Alteplase_5ml_20 {
             painReduce = 0;
             hrIncreaseLow[] = {-4, -10};
             hrIncreaseNormal[] = {-5, -15};
@@ -725,6 +828,7 @@ class ACE_ADDON(Medical_Treatment) {
             weightBased = "true";
             weightDose = 20;
             maximumEffectiveDose = 30;
+            nauseaMult = 0.3;
         };
         class syringe_Ketamine_10ml {
             painReduce = 0.6;
@@ -741,6 +845,7 @@ class ACE_ADDON(Medical_Treatment) {
             weightBased = "true";
             weightDose = 20;
             maximumEffectiveDose = 30;
+            nauseaMult = 0.3;
         };
         class syringe_Nalbuphine_10ml {
             painReduce = 0.5;
@@ -756,6 +861,7 @@ class ACE_ADDON(Medical_Treatment) {
             weightBased = "true";
             weightDose = 20;
             maximumEffectiveDose = 30;
+            nauseaMult = 0.3;
         };
         class syringe_Lidocaine_10ml {
             painReduce = 0;
@@ -781,6 +887,7 @@ class ACE_ADDON(Medical_Treatment) {
             weightBased = "true";
             weightDose = 20;
             maximumEffectiveDose = 30;
+            nauseaMult = 0.3;
         };
         class syringe_TXA {
             maxDose = 40;
@@ -893,6 +1000,30 @@ class ACE_ADDON(Medical_Treatment) {
         class syringe_Doxapram {
             maxDose = 30;
             maxDoseDeviation = 20;
+            incompatibleMedication[] = {};
+            onOverDose = "";
+        };
+        class syringe_Ondansetron {
+            maxDose = 30;
+            maxDoseDeviation = 20;
+            incompatibleMedication[] = {};
+            onOverDose = "";
+        };
+        class syringe_Succinylcholine {
+            maxDose = 30;
+            maxDoseDeviation = 10;
+            incompatibleMedication[] = {};
+            onOverDose = "";
+        };
+        class syringe_Rocuronium {
+            maxDose = 30;
+            maxDoseDeviation = 10;
+            incompatibleMedication[] = {};
+            onOverDose = "";
+        };
+        class syringe_Sugammadex  {
+            maxDose = 30;
+            maxDoseDeviation = 10;
             incompatibleMedication[] = {};
             onOverDose = "";
         };
