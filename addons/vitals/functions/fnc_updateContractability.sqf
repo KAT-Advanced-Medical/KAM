@@ -19,5 +19,4 @@
  */
 
 params ["_unit", "_contractilityAdjustment", "_deltaT", "_syncValue"];
-
 _unit setVariable [QEGVAR(pharma,heartContractility), _contractilityAdjustment, _syncValue];

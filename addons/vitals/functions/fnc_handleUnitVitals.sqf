@@ -93,8 +93,9 @@ private _alphaFactorAdjustment = 0;
 private _opioidAdjustment = 0;
 private _opioidEffectAdjustment = 0;
 private _opioidDepressionAdjustment = 0;
-private _contractilityAdjustment = 0;
-private _nauseaMultAdjustment = 0;
+private _respiratoryRateAdjustment = 1;
+private _contractilityAdjustment = 1;
+private _nauseaMultAdjustment = 1;
 private _sedationAdjustment = 0;
 private _paralysisAdjustment = 0;
 private _adjustments = _unit getVariable [VAR_MEDICATIONS,[]];
@@ -129,6 +130,7 @@ if (_adjustments isNotEqualTo []) then {
         _syncValues = true;
     };
 };
+
 [_unit, _painSupressAdjustment, _deltaT, _syncValues] call ACEFUNC(medical_vitals,updatePainSuppress); //Leave alone
 [_unit, _peripheralResistanceAdjustment, _deltaT, _syncValues] call ACEFUNC(medical_vitals,updatePeripheralResistance);
 [_unit, _opioidAdjustment, _deltaT, _syncValues] call FUNC(updateOpioidRelief);

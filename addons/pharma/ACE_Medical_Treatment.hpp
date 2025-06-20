@@ -46,7 +46,7 @@ class ACE_ADDON(Medical_Treatment) {
         //maximum dose before medication effects are reduced
         maximumEffectiveDose = 30;
         //multiplier to nausea
-        nauseaMult = 1;
+        nauseaMult = 0;
         //is this drug a sedation drug
         sedation = "false";
 
@@ -94,7 +94,7 @@ class ACE_ADDON(Medical_Treatment) {
             incompatibleMedication[] = {};
             viscosityChange = -0;
             maximumEffectiveDose = 2;
-            nauseaMult = 1.2;
+            nauseaMult = 0.2;
         };
         class MorphineIV {
             painReduce = 0.8;
@@ -746,7 +746,7 @@ class ACE_ADDON(Medical_Treatment) {
             timeInSystem = 180;
             timeTillMaxEffect = 15;
             dose = 1; 
-            respiratoryRate = 0.10;
+            respiratoryRate = 0.40;
             maximumEffectiveDose = 30;
         };
         class syringe_Ondansetron_5ml {
