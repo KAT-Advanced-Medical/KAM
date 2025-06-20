@@ -51,13 +51,11 @@ if (!(GVAR(enable)) || (_unit getVariable ["KAT_Occlusion_Exclusion", false])) e
                         if (floor (random 100) < 25) then {
                             _occlusionState set [selectRandom [((_level + 1) min 2), ((_level - 1) max 0)], (_occlusionTarget min 6)];
                         };
-                        _occlusionState set [_level, _occlusionTarget];
+                        _occlusionState set [_level, (_occlusionTarget min 6)];
                         _unit setVariable [QGVAR(occlusion), _occlusionState, true]; };
                     } else {
                         _occlusionTarget = ((_occlusionState select _level) - 0.5);
-                        _occlusionState set [0, (_occlusionTarget min 6)];
-                        _occlusionState set [1, (_occlusionTarget min 6)];
-                        _occlusionState set [2, (_occlusionTarget min 6)];
+                        _occlusionState set [_level, (_occlusionTarget min 6)];
                         _unit setVariable [QGVAR(occlusion), _occlusionState, true];
 
                     };
