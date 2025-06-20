@@ -31,9 +31,6 @@ if ((_unit getVariable ["kat_pukeActive_PFH", false]) || !(GVAR(enable))) exitWi
         _nauseaMult = abs log _nauseaMult;
         _nauseaMult = _nauseaMult max 0.1;
     };
-    if (_unit getVariable [QGVAR(airway_item), ""] in ["Larynxtubus", "ETT"]) then {
-        _nauseaMult = _nauseaMult / 4
-    };
     if (_nauseaMult > 1000) then {
         _nauseaMult = 1
     };
