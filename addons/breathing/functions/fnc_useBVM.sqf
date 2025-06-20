@@ -153,6 +153,7 @@ GVAR(BVM_timeOut) = true;
             if (_useOxygen) then {
                 _bvmType = format [LLSTRING(Activity_BVM_Oxygenated), _bvmType];
             };
+    
 
             [_patient, "activity", LSTRING(Activity_BVM), [[_medic, false, true] call ACEFUNC(common,getName), _bvmType, totalProvided]] call ACEFUNC(medical_treatment,addToLog);
             [LLSTRING(UseBVM_Cancelled), 1.5, _medic] call ACEFUNC(common,displayTextStructured);
