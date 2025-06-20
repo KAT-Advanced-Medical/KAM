@@ -77,14 +77,8 @@ if (GVAR(hardcoreCrike)) then {
     if ((!_alive) || (_cricothyrotomy == 0) || (_cricothyrotomy == 1)) exitWith {
         [_idPFH] call CBA_fnc_removePerFrameHandler;
     };
-    if (GVAR(AMSEnabled)) then {
-        _activeLoadingDose = _patient getVariable [QEGVAR(pharma,activeEtomidateLoadingDose), false];
-    } else {
-        _activeLoadingDose = true;
-    };
-
     if (!(IS_UNCONSCIOUS(_patient))) exitWith {
-            [_patient, "Pain", 2, 10, 120, 0.8, 40, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0] call ACEFUNC(medical_status,addMedicationAdjustment);
+            [_patient, "Pain", 2, 10, 120, 0.8, 40] call ACEFUNC(medical_status,addMedicationAdjustment);
         [_patient, true] call ACEFUNC(medical,setUnconscious);
     };
 }, 5, [_patient]] call CBA_fnc_addPerFrameHandler;

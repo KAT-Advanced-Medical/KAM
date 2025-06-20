@@ -18,7 +18,7 @@ params ["_patient"];
 private _hrValue = [-20, -25, -30, -35, -40, -45, 20, 25, 30, 35, 40, 45];
 private _hrAdjust = selectRandom _hrValue;
 
-[_patient, "NitroglycerinOverdose", 30, 1200, _hrAdjust, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0] call EFUNC(vitals,addMedicationAdjustment);
+[_patient, "NitroglycerinOverdose", 30, 1200, _hrAdjust] call EFUNC(vitals,addMedicationAdjustment);
 if (random 3 < 1) then {
     private _randomValue = [3, 4];
     private _randomRhythm = selectRandom _randomValue;

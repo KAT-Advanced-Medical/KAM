@@ -24,7 +24,7 @@ switch (_randomNumber) do {
             [_patient, _bpAdjust, _bpAdjust, "EtomidateOverdose"] call EFUNC(circulation,updateBloodPressureChange);        
         }, [_patient], 120] call CBA_fnc_waitAndExecute;
         private _hrAdjust = -40 + floor random ((-20 - -40) + 1);
-        [_patient, "BRADYCARDIA", 120, 1200, _hrAdjust, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0] call EFUNC(vitals,addMedicationAdjustment);
+        [_patient, "BRADYCARDIA", 120, 1200, _hrAdjust] call EFUNC(vitals,addMedicationAdjustment);
         [{
         params ["_patient"];
         [{
@@ -65,7 +65,7 @@ switch (_randomNumber) do {
             [_patient, _bpAdjust, _bpAdjust, "EtomidateOverdose"] call EFUNC(circulation,updateBloodPressureChange);        
         }, [_patient], 120] call CBA_fnc_waitAndExecute;
         private _hrAdjust = 20 + floor random ((40 - 20) + 1);
-        [_patient, "TACHYCARDIA", 120, 1200, _hrAdjust, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0] call EFUNC(vitals,addMedicationAdjustment);
+        [_patient, "TACHYCARDIA", 120, 1200, _hrAdjust] call EFUNC(vitals,addMedicationAdjustment);
         [{
         params ["_patient"];
         [{
@@ -106,7 +106,7 @@ switch (_randomNumber) do {
             [_patient, _bpAdjust, _bpAdjust, "EtomidateOverdose"] call EFUNC(circulation,updateBloodPressureChange);        
         }, [_patient], 120] call CBA_fnc_waitAndExecute;
         private _hrAdjust = 20 + floor random ((40 - 20) + 1);
-        [_patient, "TACHYCARDIA", 120, 1200, _hrAdjust, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0] call EFUNC(vitals,addMedicationAdjustment);
+        [_patient, "TACHYCARDIA", 120, 1200, _hrAdjust] call EFUNC(vitals,addMedicationAdjustment);
         [{
         params ["_patient"];
         [{
@@ -144,7 +144,7 @@ switch (_randomNumber) do {
             [_patient, _bpAdjust, _bpAdjust, "EtomidateOverdose"] call EFUNC(circulation,updateBloodPressureChange);        
         }, [_patient], 120] call CBA_fnc_waitAndExecute;
         private _hrAdjust = -40 + floor random ((-20 - -40) + 1);
-        [_patient, "BRADYCARDIA", 120, 1200, _hrAdjust, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0] call EFUNC(vitals,addMedicationAdjustment);
+        [_patient, "BRADYCARDIA", 120, 1200, _hrAdjust] call EFUNC(vitals,addMedicationAdjustment);
         [{
         params ["_patient"];
 

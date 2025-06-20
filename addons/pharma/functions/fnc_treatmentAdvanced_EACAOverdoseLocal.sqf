@@ -17,7 +17,7 @@
  */
 params ["_patient"];
 
-[_patient, "EACAOverdose", 1, 900, 0, 0, -0.5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0] call EFUNC(vitals,addMedicationAdjustment);
+[_patient, "EACAOverdose", 1, 900, 0, 0, -0.5] call EFUNC(vitals,addMedicationAdjustment);
 [{
     params ["_patient"];
     [{

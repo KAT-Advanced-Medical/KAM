@@ -21,7 +21,7 @@ TRACE_1("fullHealLocal",_patient);
 _patient setVariable [QGVAR(airway_item), "", true];
 _patient setVariable [QGVAR(airway), false, true];
 _patient setVariable [QGVAR(clearedTime), 0, true];
-_patient setVariable [QGVAR(surgicalAirway), false, true];
+_patient setVariable [QGVAR(cricothyrotomy), 0, true];
 _patient setVariable [QGVAR(catastrophicAirway), [false, false], true];
 _patient setVariable [QGVAR(obstruction), [0, 0, 0], true];
 _patient setVariable [QGVAR(occlusion), [0, 0, 0], true];

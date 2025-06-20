@@ -121,9 +121,9 @@ class ACE_Medical_Treatment_Actions {
     };
     class Accuvac: Larynxtubus {
         displayName = CSTRING(AccuvacTreatment_displayName);
-        treatmentTime = 7;
+        treatmentTime = QGVAR(Accuvac_time);
         items[] = {"kat_accuvac"};
-        condition = QUOTE(!([_patient] call ACEFUNC(common,isAwake)) && (missionNamespace getVariable [ARR_2(QQGVAR(enable),true)]) && !(_patient getVariable [ARR_2(QQGVAR(recovery),false)]) && !(_patient getVariable [ARR_2(QQGVAR(airway_item),'')] == 'Larynxtubus') && !([_patient] call FUNC(checkMask)));
+        condition = QUOTE(!([_patient] call ACEFUNC(common,isAwake)) && (missionNamespace getVariable [ARR_2(QQGVAR(enable),true)]) && !(_patient getVariable [ARR_2(QQGVAR(recovery),false)]) && !([_patient] call FUNC(checkMask)));
         icon = QPATHTOF(ui\accuvac.paa);
         consumeItem = 0;
         medicRequired = QGVAR(medLvl_Accuvac);
@@ -133,7 +133,7 @@ class ACE_Medical_Treatment_Actions {
     };
     class Suction: Accuvac {
         displayName = CSTRING(SuctionTreatment_displayName);
-        treatmentTime = 6;
+        treatmentTime = QGVAR(Suction_time);
         items[] = {"kat_suction"};
         icon = QPATHTOF(ui\suction.paa);
         consumeItem = 1;
@@ -209,7 +209,7 @@ class ACE_Medical_Treatment_Actions {
         animationPatientUnconscious = "AinjPpneMstpSnonWrflDnon_rolltoback";
         animationPatientUnconsciousExcludeOn[] = {"ainjppnemstpsnonwrfldnon", "kat_recoveryposition"};
     };
-    class Crike: CheckPulse {
+    class Secure: CheckPulse {
         displayName = CSTRING(Surgical_Airway_Use);
         displayNameProgress = CSTRING(Surgical_Airway_Action);
         category = "surgery";
@@ -217,13 +217,13 @@ class ACE_Medical_Treatment_Actions {
         allowedSelections[] = {"Neck"};
         allowSelfTreatment = 0;
         medicRequired = QEGVAR(surgery,surgicalAction_MedLevel);
-        treatmentTime = QGVAR(openTime);
-        items[] = {"kat_aatKit"};
+        treatmentTime = QGVAR(cricothyrotomySecureTime);
+        items[] = {"kat_airwayStrap"};
         consumeItem = 1;
         condition = QUOTE([ARR_3(_medic,_patient,0.5)] call FUNC(treatmentAdvanced_cricothyrotomyCheck));
         callbackSuccess = QUOTE([ARR_2(_medic,_patient)] call FUNC(treatmentAdvanced_cricothyrotomy));
     };
-    class Incision: BasicBandage {
+    class PrepArea: BasicBandage {
         displayName = CSTRING(Scalpel_Use);
         displayNameProgress = CSTRING(Scalpel_Action);
         category = "surgery";
@@ -233,35 +233,49 @@ class ACE_Medical_Treatment_Actions {
         medicRequired = QEGVAR(surgery,surgicalAction_MedLevel);
         treatmentTime = QGVAR(incisionTime);
         items[] = {"kat_scalpel"};
-        condition = QUOTE([ARR_3(_medic,_patient,5)] call FUNC(treatmentAdvanced_cricothyrotomyCheck));
-        callbackSuccess = QUOTE([ARR_2(_medic,_patient)] call FUNC(treatmentAdvanced_cricothyrotomyIncision));
-    };
-    class Spread: BasicBandage {
-        displayName = CSTRING(Retractor_Use);
-        displayNameProgress = CSTRING(Retractor_Action);
-        category = "surgery";
-        treatmentLocations = QEGVAR(surgery,surgicalLocation);
-        treatmentTime = QGVAR(cricothyrotomyintermediateTime);
-        allowedSelections[] = {"Neck"};
-        allowSelfTreatment = 0;
-        medicRequired = QEGVAR(surgery,surgicalAction_MedLevel);
-        items[] = {"kat_retractor"};
-        consumeItem = 1;
         condition = QUOTE([ARR_3(_medic,_patient,0.1)] call FUNC(treatmentAdvanced_cricothyrotomyCheck));
         callbackSuccess = QUOTE([ARR_3(_medic,_patient,0.1)] call FUNC(treatmentAdvanced_cricothyrotomyProgress));
     };
-    class Clamp: BasicBandage {
-        displayName = CSTRING(Clamp_Use);
-        displayNameProgress = CSTRING(Clamp_Action);
+    class Guide: BasicBandage {
+        displayName = CSTRING(Guide_Use);
+        displayNameProgress = CSTRING(Guide_Action);
         category = "surgery";
         treatmentLocations = QEGVAR(surgery,surgicalLocation);
-        treatmentTime = QGVAR(cricothyrotomyintermediateTime);
+        treatmentTime = QGVAR(cricothyrotomyGuideTime);
         allowedSelections[] = {"Neck"};
         allowSelfTreatment = 0;
         medicRequired = QEGVAR(surgery,surgicalAction_MedLevel);
-        items[] = {"kat_clamp"};
+        items[] = {};
+        consumeItem = 0;
+        condition = QUOTE([ARR_3(_medic,_patient,5)] call FUNC(treatmentAdvanced_cricothyrotomyCheck));
+        callbackSuccess = QUOTE([ARR_2(_medic,_patient)] call FUNC(treatmentAdvanced_cricothyrotomyIncision));
+    };
+    class Place: BasicBandage {
+        displayName = CSTRING(Place_Use);
+        displayNameProgress = CSTRING(Place_Action);
+        category = "surgery";
+        treatmentLocations = QEGVAR(surgery,surgicalLocation);
+        treatmentTime = QGVAR(cricothyrotomyPlaceTime);
+        allowedSelections[] = {"Neck"};
+        allowSelfTreatment = 0;
+        medicRequired = QEGVAR(surgery,surgicalAction_MedLevel);
+        items[] = {"kat_surgAirway"};
         consumeItem = 1;
         condition = QUOTE([ARR_3(_medic,_patient,0.3)] call FUNC(treatmentAdvanced_cricothyrotomyCheck));
         callbackSuccess = QUOTE([ARR_3(_medic,_patient,0.3)] call FUNC(treatmentAdvanced_cricothyrotomyProgress));
+    };
+    class OpenCrike: CheckPulse {
+        displayName = CSTRING(Open_Crike_Kit);
+        displayNameProgress = CSTRING(Open_Crike_Kit_Action);
+        category = "surgery";
+        treatmentLocations = QEGVAR(surgery,surgicalLocationn);
+        allowedSelections[] = {"all"};
+        allowSelfTreatment = 1;
+        medicRequired = QEGVAR(surgery,surgicalAction_MedLevel);
+        treatmentTime = 5;
+        items[] = {"kat_crikeKit"};
+        consumeItem = 1;
+        callbackSuccess = QFUNC(treatmentAdvanced_cricothyrotomyKit);
+        condition = "true";
     };
 };

@@ -22,8 +22,7 @@
  */
 
 params ["_unit", "_level"];
-if ((_unit getVariable ["kat_pukeActive_PFH", false]) || !(GVAR(enable)) || (_unit getVariable ["KAT_Occlusion_Exclusion", false])) exitWith {};
-_unit setVariable ["kat_occlusion_PFH", true];
+if (!(GVAR(enable)) || (_unit getVariable ["KAT_Occlusion_Exclusion", false])) exitWith {};
 
 [{
     params ["_unit", "_level"];
@@ -36,12 +35,14 @@ _unit setVariable ["kat_occlusion_PFH", true];
             _args params ["_unit", "_level"];
             private _occlusionState = _unit getVariable [QGVAR(occlusion), [0, 0, 0]];
                 if ((_occlusionState select _level) > 0) then {
-                    if !(alive _unit) exitWith {
+                    private _isUnconscious = _unit getVariable ["ACE_isUnconscious", false];
+                    private _alive = alive _unit;
+                    if !(_alive || ((_occlusionState select _level) == 0)) exitWith {
                         [_idPFH] call CBA_fnc_removePerFrameHandler;
                         _unit setVariable ["kat_occlusion_PFH", nil];
                     };
-                    private _occlusionMitigation = _unit getVariable [QGVAR(occlusionMitigation), [false, false, false]] select _level;
-                    if ((floor (random 100) < GVAR(deterioratingAirways_chance)) && !(_occlusionMitigation)) then {
+                    if (_isUnconscious) then {
+                        if (floor (random 100) < GVAR(deterioratingAirways_chance)) then {
                         _occlusionTarget = ((_occlusionState select _level) + 1);
                         if (_occlusionTarget > 6) then {
                             _occlusionState set [_level - 1 max 0, ((_occlusionState select (_level- 1 max 0)) + 1)];
@@ -51,7 +52,14 @@ _unit setVariable ["kat_occlusion_PFH", true];
                             _occlusionState set [selectRandom [((_level + 1) min 2), ((_level - 1) max 0)], (_occlusionTarget min 6)];
                         };
                         _occlusionState set [_level, _occlusionTarget];
+                        _unit setVariable [QGVAR(occlusion), _occlusionState, true]; };
+                    } else {
+                        _occlusionTarget = ((_occlusionState select _level) - 0.5);
+                        _occlusionState set [0, (_occlusionTarget min 6)];
+                        _occlusionState set [1, (_occlusionTarget min 6)];
+                        _occlusionState set [2, (_occlusionTarget min 6)];
                         _unit setVariable [QGVAR(occlusion), _occlusionState, true];
+
                     };
                 };
         }, (GVAR(deterioratingAirways_interval) * random [0.8, 1, 1.3]), [_unit, _level]] call CBA_fnc_addPerFrameHandler;

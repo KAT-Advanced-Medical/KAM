@@ -108,22 +108,6 @@ GVAR(suction_timeOut) = true;
 
                 GVAR(suction_timeOut) = false;
                 GVAR(suction_attempts) = GVAR(suction_attempts) + 1;
-                if (_usedItem isEqualTo "kat_suction") then {
-                    private _suctionSound = playSound3D [QPATHTOF_SOUND(sounds\manualpump_suction.wav), _patient, false, getPosASL _patient, 6, 1, 15];
-                    [{}, {
-                    params ["_suctionSound"];
-                    stopSound _suctionSound;
-                    }, [_suctionSound], 7.5] call CBA_fnc_waitUntilAndExecute;
-                    } else {
-                    private _suctionSound = playSound3D [QPATHTOF_SOUND(sounds\accuvac_suction.wav), _patient, false, getPosASL _patient, 6, 1, 15];
-                    [{}, {
-                    params ["_suctionSound"];
-
-                    stopSound _suctionSound;
-                    }, [_suctionSound], 5.7] call CBA_fnc_waitUntilAndExecute;
-                    };
-
-
                 if (((_patient getVariable [QGVAR(occlusion), [0, 0, 0]]) findIf { _x > 1 }) != -1) then {
                     if(random 100 < GVAR(probability_suction)) then {
                         private _occlusionState = _patient getVariable [QGVAR(occlusion), [0, 0, 0]];

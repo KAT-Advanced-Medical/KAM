@@ -50,7 +50,7 @@ switch (true) do {
             if ((floor (random 100) < GVAR(airwayOcclusionChance)) && (_engineDamage > (GVAR(airwayOcclusionDamageThreshold) + _occlusionChanceIncrease))) then {
                 private _level = selectRandom [0, 1];
                 private _occlusion = _unit getVariable [QGVAR(occlusion), [0, 0, 0]];
-                _occlusion set [_level, (((_occlusion select _level) + 1) min 6)];
+                _occlusion set [_level, (((_occlusion select _level) + random 3) min 6)];
                 _unit setVariable [QGVAR(occlusion), _occlusion, true];
                 [_unit, _level] call FUNC(airwayPFH);
                 };
@@ -59,21 +59,19 @@ switch (true) do {
                 private _obstruction = _unit getVariable [QGVAR(obstruction), [0, 0, 0]];
                 _obstruction set [_level, (((_obstruction select _level) + 1) min 2)];
                 _unit setVariable [QGVAR(obstruction), _obstruction, true];
-                [_unit, true] call ACEFUNC(medical,setUnconscious);
                 };
             if ((floor (random 100) < GVAR(catastrophicAirwayChance)) && (_engineDamage > (GVAR(catastrophicAirwayDamageThreshold + _catastrophicAirwayChanceIncrease))) && GVAR(CatastrophicAirwaysEnable)) then {
                 private _level = selectRandom [0, 1];
                 private _catastrophic =  _unit getVariable [QGVAR(catastrophicAirway), [false, false]];
                 _catastrophic set [_level, true];
                 _unit setVariable [QGVAR(catastrophicAirway), _catastrophic, true];
-                [_unit, true] call ACEFUNC(medical,setUnconscious);
                 };
             };
         case (_bodyPart == "Neck"): {
             if ((floor (random 100) < GVAR(airwayOcclusionChance)) && (_engineDamage > (GVAR(airwayOcclusionDamageThreshold + _occlusionChanceIncrease)))) then {
                 private _level = selectRandom [1, 2];
                 private _occlusion = _unit getVariable [QGVAR(occlusion), [0, 0, 0]];
-                _occlusion set [_level, (((_occlusion select _level) + 1) min 2)];
+                _occlusion set [_level, (((_occlusion select _level) random 3) min 2)];
                 _unit setVariable [QGVAR(occlusion), _occlusion, true];
                 [_unit, _level] call FUNC(airwayPFH);
                 };
@@ -82,7 +80,6 @@ switch (true) do {
                 private _obstruction = _unit getVariable [QGVAR(obstruction), [0, 0, 0]];
                 _obstruction set [_level, (((_obstruction select _level) + 1) min 2)];
                 _unit setVariable [QGVAR(obstruction), _obstruction, true];
-                [_unit, true] call ACEFUNC(medical,setUnconscious);
                 };
             };
         default {};

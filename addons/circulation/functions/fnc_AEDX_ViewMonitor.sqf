@@ -313,7 +313,7 @@ GVAR(PulseRateReady) = true;
     private _hasEtco2Monitor = (GVAR(AEDX_MonitorTarget) getVariable [QEGVAR(breathing,etco2Monitor),[]] isNotEqualTo []); //check for etco2 monitoring apparatus
     private _etco2 = GET_ETCO2(GVAR(AEDX_MonitorTarget));
     private _breathrate = GET_BREATHING_RATE(GVAR(AEDX_MonitorTarget));
-
+    systemChat str _etco2;
     if (_hasEtco2Monitor) then {
         ctrlShow [IDC_DISPLAY_RR_DEFAULT, false];
         ctrlShow [IDC_DISPLAY_RR, true];

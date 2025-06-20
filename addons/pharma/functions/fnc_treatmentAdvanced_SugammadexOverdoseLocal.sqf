@@ -16,4 +16,4 @@
  */
 params ["_patient"];
 private _hrAdjust = -50 + floor random ((-30 - -50) + 1);
-[_patient, "SugammadexOverdose", 60, 300, _hrAdjust, 0, 0, 0.3, 0, 0.3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0.4] call EFUNC(vitals,addMedicationAdjustment);
+[_patient, "SugammadexOverdose", 60, 300, _hrAdjust, 0, 0, 0, 0.3] call EFUNC(vitals,addMedicationAdjustment);

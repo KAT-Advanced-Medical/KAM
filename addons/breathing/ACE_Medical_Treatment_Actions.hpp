@@ -319,7 +319,7 @@ class ACE_Medical_Treatment_Actions {
         condition = QUOTE(_patient call FUNC(canUseBVM) && ((GVAR(locationProvideOxygen) in [ARR_2(2,3)] && _patient call ACEFUNC(medical_treatment,isInMedicalFacility)) || (GVAR(locationProvideOxygen) in [ARR_2(1,3)] && _patient call ACEFUNC(medical_treatment,isInMedicalVehicle))));
         callbackSuccess = QUOTE([ARR_3(_medic,_patient,true)] call EFUNC(airway,handleRecoveryPosition); [ARR_4(_medic,_patient,false,true)] call FUNC(useBVM););
     };
-    class AttachBVM {
+    /*class AttachBVM {
         displayName = CSTRING(AttachBVM);
         displayNameProgress = "";
         category = "airway";
@@ -358,7 +358,7 @@ class ACE_Medical_Treatment_Actions {
         condition = QUOTE(_patient call FUNC(canUseAttachedBVM));
         callbackSuccess = QUOTE([ARR_3(_medic,_patient,true)] call EFUNC(airway,handleRecoveryPosition); [ARR_2(_medic,_patient)] call FUNC(useBVM););
         icon = QPATHTOF(ui\BVM_ui.paa);
-    };
+    };*/
     class NasalCannula {
         displayName = CSTRING(NasalCannula_Display);
         displayNameProgress = ECSTRING(airway,action_placing);

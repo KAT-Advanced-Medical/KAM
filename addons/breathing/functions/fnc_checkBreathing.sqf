@@ -37,10 +37,10 @@ if ((_patient getVariable [QEGVAR(airway,airway_item), ""]) isEqualTo "NPA") the
     _occlusionArray = _occlusionArray select [1,2];
     _obstructionArray = _obstructionArray select [1,2];
 };
-private _occlusion = (_occlusionArray findIf { _x == 6 }) != -1;
+private _occlusion = (_occlusionArray findIf { _x > 4 }) != -1;
 private _obstruction = (_obstructionArray findIf { _x != 0 }) != -1;
 
-private _catastrophicState = _patient getVariable [QGVAR(catastrophicAirway), [false, false]];
+private _catastrophicState = _patient getVariable [QEGVAR(airway,catastrophicAirway), [false, false]];
 private _hasCatastrophicAirway = ((_catastrophicState select 0) || (_catastrophicState select 1));
 
 private _respiratoryDepth = _patient getVariable [QEGVAR(vitals,respiratoryDepth), 10];
@@ -85,7 +85,8 @@ if ((_unit getVariable [QEGVAR(chemical,airPoisoning), false]) || (_tension sele
     _breathing = false;
 };
 private _noETT = (_patient getVariable [QEGVAR(airway,airway_item), ""] isNotEqualTo "ETT");
-if (((_obstruction || _occlusion) && _noETT) || _hasCatastrophicAirway) then {
+private _noSurgicalAirway = (_patient getVariable [QEGVAR(airway,airway_item), ""] isNotEqualTo "Surgical_Airway");
+if ((((_obstruction || _occlusion) && _noETT) || _hasCatastrophicAirway) && _noSurgicalAirway) then {
     _airway = false;
 };
 

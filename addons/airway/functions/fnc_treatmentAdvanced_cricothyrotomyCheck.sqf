@@ -1,7 +1,7 @@
 #include "..\script_component.hpp"
 /*
  * Author: Mazinski, Cplhardcore
- * Local call to check if a patient has a chest Tube
+ * Local call to check if a patient has a active crike
  *
  * Arguments:
  * 0: Medic <OBJECT>
@@ -20,7 +20,6 @@
 
 params ["_medic", "_patient", "_number"];
 private _cricothyrotomy = _patient getVariable [QGVAR(cricothyrotomy), 0];
-
 if ((_number == 5) && (_cricothyrotomy == 0)) exitWith {true};
 if ((_number != 5) && (_cricothyrotomy >= 0.1) && (_cricothyrotomy <= 0.7)) exitWith {true};
 

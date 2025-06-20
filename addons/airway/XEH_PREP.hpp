@@ -28,6 +28,7 @@ PREP(treatmentAdvanced_cricothyrotomy);
 PREP(treatmentAdvanced_cricothyrotomyCheck);
 PREP(treatmentAdvanced_cricothyrotomyIncision);
 PREP(treatmentAdvanced_cricothyrotomyIncisionLocal);
+PREP(treatmentAdvanced_cricothyrotomyKit);
 PREP(treatmentAdvanced_cricothyrotomyLocal);
 PREP(treatmentAdvanced_cricothyrotomyProgress);
 PREP(treatmentAdvanced_cricothyrotomyProgressLocal);

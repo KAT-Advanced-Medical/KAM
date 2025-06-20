@@ -60,7 +60,7 @@ private _localAnesthesia = (_patient getVariable [QEGVAR(pharma,localAnesthesia)
 if (_number == _cricothyrotomy) exitWith {
     switch (_entry) do {
         case (0.1):{
-            _surgeryString = LSTRING(SPREAD);
+            _surgeryString = LSTRING(Incision);
         };
         case (0.3):{
             _surgeryString = LSTRING(PLACED);

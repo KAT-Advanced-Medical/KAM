@@ -2249,10 +2249,10 @@
             <English>Time between Visualization attempts</English>
         </Key>
         <Key ID="STR_KAT_Airway_ChestTube_log">
-            <English>%1 %2 the incision</English>
+            <English>%1 %2</English>
         </Key>
         <Key ID="STR_KAT_Airway_incision_log">
-            <English>%1 made a neck incision</English>
+            <English>%1 Prepared the Neck</English>
         </Key>
         <Key ID="STR_KAT_Airway_chest_tube_fail">
             <English>Surgical Airway Action Failed</English>
@@ -2263,16 +2263,16 @@
         <Key ID="STR_KAT_Airway_Scalpel_Action">
             <English>Performing Incision</English>
         </Key>
-        <Key ID="STR_KAT_Airway_Retractor_Use">
-            <English>Expand Incision</English>
+        <Key ID="STR_KAT_Airway_Guide_Use">
+            <English>Prep Area</English>
         </Key>
-        <Key ID="STR_KAT_Airway_Retractor_Action">
-            <English>Expanding</English>
+        <Key ID="STR_KAT_Airway_Guide_Action">
+            <English>Preparing Area</English>
         </Key>
-        <Key ID="STR_KAT_Airway_Clamp_Use">
+        <Key ID="STR_KAT_Airway_Place_Use">
             <English>Place Surgical Airway</English>
         </Key>
-        <Key ID="STR_KAT_Airway_Clamp_Action">
+        <Key ID="STR_KAT_Airway_Place_Action">
             <English>Placing Surgical Airway</English>
         </Key>
         <Key ID="STR_KAT_Airway_Surgical_Airway_Use">
@@ -2281,11 +2281,11 @@
         <Key ID="STR_KAT_Airway_Surgical_Airway_Action">
             <English>Securing Surgical Airway </English>
         </Key>
-        <Key ID="STR_KAT_Airway_SPREAD">
-            <English>Spread</English>
+        <Key ID="STR_KAT_Airway_Incision">
+            <English>Made an Incision</English>
         </Key>
         <Key ID="STR_KAT_Airway_PLACED">
-            <English>Placed</English>
+            <English>Placed A Surgical Airway</English>
         </Key>
         <Key ID="STR_KAT_Airway_crike_LOCATION">
             <English>Locations to perform a cricothyrotomy</English>
@@ -2294,16 +2294,16 @@
             <English>Allow Cricothyrotomy</English>
         </Key>
         <Key ID="STR_KAT_Airway_INTERMEDIATE_TIMER">
-            <English>Time to perform cricothyrotomy intermediate actions</English>
-        </Key>
-        <Key ID="STR_KAT_Airway_INTERMEDIATE_TIMER_DESC">
-            <English>Sets how long it takes to perform intermediate cricothyrotomy actions such as expanding and placement</English>
+            <English>Time to Prep for a Cricothyrotomy</English>
         </Key>
         <Key ID="STR_KAT_Airway_OPEN_TIMER">
-            <English>cricothyrotomy Placement Time</English>
+            <English>Cricothyrotomy Placement Time</English>
         </Key>
         <Key ID="STR_KAT_Airway_SURGICAL_TIMER">
-            <English>cricothyrotomy Action Time</English>
+            <English>Cricothyrotomy Action Time</English>
+        </Key>
+        <Key ID="STR_KAT_Airway_SECURE_TIMER">
+            <English>Cricothyrotomy Secure Time</English>
         </Key>
         <Key ID="STR_KAT_Airway_INCISION_TIMER">
             <English>Perform Incision Time</English>
@@ -2316,6 +2316,45 @@
         </Key>
         <Key ID="STR_KAT_Airway_cricothyrotomy_fail">
             <English>Cricothyrotomy Failed</English>
+        </Key>
+        <Key ID="STR_KAT_Airway_CrikeKit_DESC_Short">
+            <English>A Cricothyrotomy Kit cotains all implements to preform one Cricothyrotomy</English>
+        </Key>
+        <Key ID="STR_KAT_Airway_CrikeKit_Display">
+            <English>Cricothyrotomy Kit</English>
+        </Key>
+        <Key ID="STR_KAT_Airway_SurgAirway_DESC_Short">
+            <English>Surgical Airway</English>
+        </Key>
+        <Key ID="STR_KAT_Airway_SurgAirway_Display">
+            <English>Surgical Airway</English>
+        </Key>
+        <Key ID="STR_KAT_Airway_Surgical_Airway_Display">
+            <English>Surgical Airway</English>
+        </Key>
+        <Key ID="STR_KAT_Airway_AirwayStrap_DESC_Short">
+            <English>Used to secure a Surgical Airway</English>
+        </Key>
+        <Key ID="STR_KAT_Airway_AirwayStrap_Display">
+            <English>Surgical Airway Strap</English>
+        </Key>
+        <Key ID="STR_KAT_Airway_open_crike_kit">
+            <English>Open Cricothyrotomy Kit</English>
+        </Key>
+        <Key ID="STR_KAT_Airway_open_crike_kit_Action">
+            <English>Opening Cricothyrotomy Kit</English>
+        </Key>
+        <Key ID="STR_KAT_Airway_Catastrophic_Display">
+            <English>Catastrophic Airway Damage</English>
+        </Key>
+        <Key ID="STR_KAT_Airway_BloodVomitAirway_Display">
+            <English>Bloody Mouth w/ Vomit</English>
+        </Key>
+        <Key ID="STR_KAT_Airway_BloodAirway_Display">
+            <English>Bloody Mouth</English>
+        </Key>
+        <Key ID="STR_KAT_Airway_TraumaticObstruction_Display">
+            <English>Traumatic Obstruction</English>
         </Key>
     </Package>
 </Project>

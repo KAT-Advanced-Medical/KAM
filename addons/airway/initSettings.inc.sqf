@@ -488,16 +488,25 @@
 ] call CBA_fnc_addSetting;
 
 [
-    QGVAR(CrikeintermediateTime),
+    QGVAR(cricothyrotomySecureTime),
     "SLIDER",
-    [LLSTRING(INTERMEDIATE_TIMER), LLSTRING(INTERMEDIATE_TIMER_DESC)],
+    [LLSTRING(SECURE_TIMER)],
     [CBA_SETTINGS_CAT, ELSTRING(GUI,SubCategory_Basic)],
     [0,100,8,0],
     true
 ] call CBA_fnc_addSetting;
 
 [
-    QGVAR(openTime),
+    QGVAR(cricothyrotomyGuideTime),
+    "SLIDER",
+    [LLSTRING(INTERMEDIATE_TIMER)],
+    [CBA_SETTINGS_CAT, ELSTRING(GUI,SubCategory_Basic)],
+    [0,100,8,0],
+    true
+] call CBA_fnc_addSetting;
+
+[
+    QGVAR(cricothyrotomyPlaceTime),
     "SLIDER",
     LLSTRING(OPEN_TIMER),
     [CBA_SETTINGS_CAT, ELSTRING(GUI,SubCategory_Basic)],

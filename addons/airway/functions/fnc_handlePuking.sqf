@@ -1,4 +1,3 @@
-#define DEBUG_MODE_FULL
 #include "..\script_component.hpp"
 /*
  * Author: Katalam, edited by MiszczuZPolski
@@ -23,7 +22,7 @@ if ((_unit getVariable ["kat_pukeActive_PFH", false]) || !(GVAR(enable))) exitWi
     
     private _isUnconscious = _unit getVariable ["ACE_isUnconscious", false];
     private _alive = alive _unit;
-    if !(_alive && _isUnconscious) exitWith {
+    if !(_alive || _isUnconscious) exitWith {
         _unit setVariable ["kat_pukeActive_PFH", nil];
     };
     
@@ -39,7 +38,6 @@ if ((_unit getVariable ["kat_pukeActive_PFH", false]) || !(GVAR(enable))) exitWi
         _nauseaMult = 1
     };
     private _delay = (GVAR(occlusion_repeatTimer) / _nauseaMult) * random [0.8, 1, 1.3];
-    TRACE_3("PukeDelay",_delay,_nauseaMult,GVAR(occlusion_repeatTimer));
     [{
         params ["_unit"];
         if (random (100) <= GVAR(airwayPukeChance)) then {
@@ -78,8 +76,6 @@ if ((_unit getVariable ["kat_pukeActive_PFH", false]) || !(GVAR(enable))) exitWi
         for "_i" from 0 to 2 do {
             [_unit, _i] call FUNC(airwayPFH);
         };
-
-        _unit setVariable [QGVAR(occlusion), _occlusionState, true];
 
         if (GVAR(checkbox_puking_sound)) then {
             private _sound = selectRandom [

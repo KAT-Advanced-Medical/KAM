@@ -93,4 +93,37 @@ class CfgWeapons {
             mass = 0.5;
         };
     };
+    class kat_crikeKit: ACE_ItemCore {
+        scope = 2;
+        author = "Katalam";
+        displayName= CSTRING(CrikeKit_Display);
+        descriptionShort =  CSTRING(CrikeKit_Desc_Short);
+        picture = QPATHTOF(ui\CrikeKit.paa);
+        ACE_isMedicalItem = 1;
+        class ItemInfo: CBA_MiscItem_ItemInfo {
+            mass = 2.5;
+        };
+    };
+    class kat_surgAirway: ACE_ItemCore {
+        scope = 1;
+        author = "Katalam";
+        displayName= CSTRING(SurgAirway_Display);
+        descriptionShort =  CSTRING(SurgAirway_Desc_Short);
+        picture = QPATHTOF(ui\SurgAirway.paa);
+        ACE_isMedicalItem = 1;
+        class ItemInfo: CBA_MiscItem_ItemInfo {
+            mass = 0.5;
+        };
+    };
+    class kat_airwayStrap: ACE_ItemCore {
+        scope = 1;
+        author = "Katalam";
+        displayName= CSTRING(AirwayStrap_Display);
+        descriptionShort =  CSTRING(AirwayStrap_Desc_Short);
+        picture = QPATHTOF(ui\AirwayStrap.paa);
+        ACE_isMedicalItem = 1;
+        class ItemInfo: CBA_MiscItem_ItemInfo {
+            mass = 0.5;
+        };
+    };
 };
