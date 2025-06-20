@@ -557,12 +557,13 @@ class ACE_ADDON(Medical_Treatment) {
             hrIncreaseLow[] = {10, 15};
             hrIncreaseNormal[] = {10, 20};
             hrIncreaseHigh[] = {10, 20};
-            timeInSystem = 120;
-            timeTillMaxEffect = 10;
+            timeInSystem = 180;
+            timeTillMaxEffect = 20;
             dose = 1;
             alphaFactor = -0.1;
             contractility = 0.9;
             maximumEffectiveDose = 30;
+            respiratoryRate = 0.2;
         };
         class syringe_Phenylephrine_5ml {
             painReduce = 0;
@@ -608,7 +609,7 @@ class ACE_ADDON(Medical_Treatment) {
             viscosityChange = 10;
             opioidEffect = 0.09;
             opioidDepression = 0.09;
-            respiratoryRate = 0.1;
+            respiratoryRate = 0.2;
             contractility = 0.1;
             weightBased = "true";
             weightDose = 15;
