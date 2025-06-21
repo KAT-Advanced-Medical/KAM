@@ -455,7 +455,7 @@ class ACE_Medical_Treatment_Actions {
         allowedSelections[] = {"Chest", "Neck", "LeftArm", "RightArm", "UpperLeftLeg", "UpperRightLeg"};
         treatmentTime = QGVAR(treatmentTime_ApplyIV);
         items[] = {};
-        condition = QFUNC(removeIV);
+        condition = QFUNC(removeIVCheck);
         callbackSuccess = QFUNC(retrieveIV);
         sounds[] = {};
     };

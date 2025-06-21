@@ -48,6 +48,14 @@ class ACEGVAR(medical_gui,BodyImage): RscControlsGroupNoScrollbars {
             idc = IDC_BODY_HEAD_KINGLT;
             text = QPATHTOF(data\body_image\head_kinglt.paa);
         };
+        class Head_NPA: Head_GuedelTube {
+            idc = IDC_BODY_HEAD_NPA;
+            text = QPATHTOF(data\body_image\NPA.paa);
+        };
+        class Neck_CRIKE: Head_GuedelTube {
+            idc = IDC_BODY_NECK_CRIKE;
+            text = QPATHTOF(data\body_image\Crike.paa);
+        };
         class Head_NasalCannula: Torso_ChestSeal {
             idc = IDC_BODY_HEAD_NASAL;
             text = QPATHTOF(data\body_image\head_nasalcannula.paa);
@@ -113,6 +121,22 @@ class ACEGVAR(medical_gui,BodyImage): RscControlsGroupNoScrollbars {
             text = QPATHTOF(data\body_image\torso_woundPack_vacuum.paa);
             colorText[] = {1, 1, 1, 1};
         };
+        class RightArm_IO: Torso_IO {
+            idc = IDC_BODY_RIGHTARM_IO;
+            text = QPATHTOF(data\body_image\EZIOURA.paa);
+        };
+        class LeftArm_IO: RightArm_IO {
+            idc = IDC_BODY_LEFTARM_IO;
+            text = QPATHTOF(data\body_image\EZIOULA.paa);
+        };
+        class RightLeg_IO: RightArm_IO {
+            idc = IDC_BODY_RIGHTLEG_IO;
+            text = QPATHTOF(data\body_image\EZIOLRL.paa);
+        };
+        class LeftLeg_IO: RightArm_IO {
+            idc = IDC_BODY_LEFTLEG_IO;
+            text = QPATHTOF(data\body_image\EZIOLLL.paa);
+        };
         class RightArm_IV: Torso_IO {
             idc = IDC_BODY_RIGHTARM_IV;
             text = QPATHTOF(data\body_image\rightarm_iv.paa);
@@ -128,6 +152,10 @@ class ACEGVAR(medical_gui,BodyImage): RscControlsGroupNoScrollbars {
         class LeftLeg_IV: RightArm_IV {
             idc = IDC_BODY_LEFTLEG_IV;
             text = QPATHTOF(data\body_image\leftleg_iv.paa);
+        };
+        class Neck_EJV: RightArm_IV {
+            idc = IDC_BODY_NECK_EJV;
+            text = QPATHTOF(data\body_image\EJV.paa);
         };
         class Head: Background {
             idc = IDC_BODY_HEAD;
