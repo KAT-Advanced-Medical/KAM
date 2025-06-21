@@ -1033,7 +1033,7 @@
             <French>Casques d'oxygène disponibles</French>
             <Italian>Elmetto per ossigeno disponibile</Italian>
             <German>Verfügbare Sauerstoffhelme</German>
-            <Japanese>利用可能な酸素供給ヘルメット</Japanese>
+            <Japanese>酸素供給可能なヘルメット</Japanese>
             <Chinese>可用氧氣頭盔</Chinese>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_AVAIL_OXYHELMET_DISC">
@@ -1051,7 +1051,7 @@
             <French>Masques à oxygène disponibles</French>
             <Italian>Maschera per ossigeno disponibile</Italian>
             <German>Verfügbare Sauerstoffmasken</German>
-            <Japanese>利用可能な酸素供給マスク</Japanese>
+            <Japanese>酸素供給可能なマスク</Japanese>
             <Chinese>可用氧氣面罩</Chinese>
             <Chinesesimp>可用氧气面罩</Chinesesimp>
         </Key>
@@ -1232,6 +1232,14 @@
             <Chinese>設定當連接能夠監測ETCo2的裝置時，醫務人員是否可以在生命體徵監視器中查看患者的ETCo2和呼吸率</Chinese>
             <Chinesesimp>设定当连接能够监测ETCo2的装置时，医务人员是否可以在生命体征监视器中查看患者的ETCo2和呼吸率</Chinesesimp>
             <Dutch>Activeert het zien van ETCo2 en ademhalingstempo op de vitale waarden monitor wanneer een apparaat die ETCo2 kan monitoren is aangesloten</Dutch>
+        </Key>
+        <Key ID="STR_KAT_Breathing_SETTING_enableEverythingOxymask">
+            <English>Ignore oxygen equipment list</English>
+            <Japanese>酸素機器リストを無視</Japanese>
+        </Key>
+        <Key ID="STR_KAT_Breathing_SETTING_enableEverythingOxymask_DESC">
+            <English>Ignore the available oxygen equipment list and make all helmets and goggles can act as oxygen masks</English>
+            <Japanese>酸素供給可能な装備のリストを無視し、すべてのヘルメットとゴーグルを酸素マスクとして機能させます</Japanese>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_HPTX_BleedAmount">
             <English>Hemopneumothorax internal bleeding amount</English>

@@ -39,6 +39,16 @@
     true
 ] call CBA_fnc_addSetting;
 
+//Ignore oxygen equipment list
+[
+    QGVAR(enableEverythingOxymask),
+    "CHECKBOX",
+    [LLSTRING(SETTING_enableEverythingOxymask),LLSTRING(SETTING_enableEverythingOxymask_DESC)],
+    [CBA_SETTINGS_CAT, ELSTRING(GUI,SubCategory_Basic)],
+    [false],
+    true
+] call CBA_fnc_addSetting;
+
 //Enable Check Breathing medical action
 [
     QGVAR(enableCheckBreathing),
