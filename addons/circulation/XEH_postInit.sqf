@@ -40,3 +40,4 @@ GVAR(AEDX_MonitorTarget) = objNull;
 
 [QGVAR(placeAED_initAction), LINKFUNC(placeAED_PickUpAction)] call CBA_fnc_addEventHandler;
 [QEGVAR(misc,handleRespawn), LINKFUNC(handleRespawn)] call CBA_fnc_addEventHandler;
+[QACEGVAR(medical_gui,updateInjuryListPart), LINKFUNC(gui_updateInjuryListPart)] call CBA_fnc_addEventHandler;

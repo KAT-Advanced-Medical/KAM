@@ -49,6 +49,7 @@ PREP(generateDefaultHeartRate);
 PREP(getBloodPressure);
 PREP(getCardiacArrestHeartRate);
 PREP(gui_updateBodyImage);
+PREP(gui_updateInjuryListPart);
 PREP(handleCardiacArrest);
 PREP(handleRespawn);
 PREP(handleTreatment);

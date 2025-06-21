@@ -3900,5 +3900,11 @@
         <Key ID="STR_KAT_Circulation_DetachingLucas">
             <English>Detaching LUCAS</English>
         </Key>
+        <Key ID="STR_KAT_Circulation_LucasActive">
+            <English>LUCAS Active</English>
+        </Key>
+        <Key ID="STR_KAT_Circulation_LucasInactive">
+            <English>LUCAS Inactive</English>
+        </Key>
     </Package>
 </Project>
