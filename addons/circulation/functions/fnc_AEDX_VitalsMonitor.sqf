@@ -78,8 +78,12 @@ if (_patient getVariable ["kat_AEDXPatient_PFH", -1] isEqualTo -1) then {
                     _bp = _patient getVariable [QGVAR(StoredBloodPressure), [0,0]];
                 };
             } else {
-                _hr = _pr;
-
+                if (GVAR(AEDX_MonitorTarget) getVariable [QGVAR(attachedLucasState), false]) then {
+                    _hr = 100 // fake heart rate because patient is dead and off state machine
+                } else {
+                    _hr = _pr;
+                };
+                
                 if (GVAR(AED_X_VitalsMonitor_BloodPressureInterval) isEqualTo 0) then {
                     _bp = _patient getVariable [QACEGVAR(medical,bloodPressure), [0,0]];
                 } else {

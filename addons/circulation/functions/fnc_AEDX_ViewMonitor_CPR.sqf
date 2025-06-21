@@ -217,7 +217,11 @@ private _dlg = uiNamespace getVariable ["KAT_Circulation_AEDX_Monitor_Display", 
             _rhythmHR = GVAR(AEDX_MonitorTarget_Title) getVariable [QACEGVAR(medical,heartRate), 0];
         };
 
-        _hr = random [100, 100 + _rhythmHR / 2, _rhythmHR];
+        if (GVAR(AEDX_MonitorTarget) getVariable [QGVAR(attachedLucasState), false]) then {
+            _hr = 100 // fake heart rate because patient is dead and off state machine
+        } else {
+            _hr = random [100, 100 + _rhythmHR / 2, _rhythmHR];
+        };
 
         if (GVAR(AED_X_VitalsMonitor_BloodPressureInterval) > 0) then {
             _bp = GVAR(AEDX_MonitorTarget_Title) getVariable [QGVAR(StoredBloodPressure), [0,0]];

@@ -17,7 +17,7 @@ PREP(handleUnitVitals);
 PREP(hasStableVitals);
 PREP(init);
 PREP(returnFatigue);
-PREP(updateContractability);
+PREP(updateContractility);
 PREP(updateNauseaMult);
 PREP(updateOpioidDepression);
 PREP(updateOpioidEffect);

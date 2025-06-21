@@ -3867,5 +3867,38 @@
         <Key ID="STR_KAT_Circulation_Transfusing_Norepinephrine_Infusion">
             <English>Transfusing Norepinephrine Infusion...</English>
         </Key>
+        <Key ID="STR_KAT_Circulation_ALLOW_Lucas">
+            <English>Allow LUCAS</English>
+        </Key>
+        <Key ID="STR_KAT_Circulation_training_level_lucas">
+            <English>Medical Level to attach or detach LUCAS</English>
+        </Key>
+        <Key ID="STR_KAT_Circulation_LUCAS_Display">
+            <English>LUCAS</English>
+        </Key>
+        <Key ID="STR_KAT_Circulation_TurnOnLUCAS">
+            <English>Turn On LUCAS</English>
+        </Key>
+        <Key ID="STR_KAT_Circulation_TurnOnLUCAS_action">
+            <English>Turning On LUCAS</English>
+        </Key>
+        <Key ID="STR_KAT_Circulation_TurnOffLUCAS">
+            <English>Turn Off LUCAS</English>
+        </Key>
+        <Key ID="STR_KAT_Circulation_TurnOffLUCAS_action">
+            <English>Turning Off LUCAS</English>
+        </Key>
+        <Key ID="STR_KAT_Circulation_AttachLucas">
+            <English>Attach LUCAS</English>
+        </Key>
+        <Key ID="STR_KAT_Circulation_AttachingLucas">
+            <English>Attaching LUCAS</English>
+        </Key>
+        <Key ID="STR_KAT_Circulation_DetachLucas">
+            <English>Detach LUCAS</English>
+        </Key>
+        <Key ID="STR_KAT_Circulation_DetachingLucas">
+            <English>Detaching LUCAS</English>
+        </Key>
     </Package>
 </Project>
