@@ -248,14 +248,17 @@ GVAR(PulseRateReady) = true;
 
         private _rhythmHR = 0;
 
-        if(GVAR(AEDX_MonitorTarget) getVariable [QGVAR(cardiacArrestType), 0] > 0) then {
+        if (GVAR(AEDX_MonitorTarget) getVariable [QGVAR(cardiacArrestType), 0] > 0) then {
             _rhythmHR = GVAR(AEDX_MonitorTarget) call FUNC(getCardiacArrestHeartRate);
         } else {
             _rhythmHR = GVAR(AEDX_MonitorTarget) getVariable [QACEGVAR(medical,heartRate), 0];
         };
 
-        _hr = random [100, 100 + _rhythmHR / 2, _rhythmHR];
-
+        if (GVAR(AEDX_MonitorTarget) getVariable [QGVAR(attachedLucasState), false]) then {
+            _hr = 100 // fake heart rate because patient is dead and off state machine
+        } else {
+            _hr = random [100, 100 + _rhythmHR / 2, _rhythmHR];
+        };
         if (GVAR(AED_X_VitalsMonitor_BloodPressureInterval) > 0) then {
             _bp = GVAR(AEDX_MonitorTarget) getVariable [QGVAR(StoredBloodPressure), [0,0]];
         } else {
@@ -313,7 +316,6 @@ GVAR(PulseRateReady) = true;
     private _hasEtco2Monitor = (GVAR(AEDX_MonitorTarget) getVariable [QEGVAR(breathing,etco2Monitor),[]] isNotEqualTo []); //check for etco2 monitoring apparatus
     private _etco2 = GET_ETCO2(GVAR(AEDX_MonitorTarget));
     private _breathrate = GET_BREATHING_RATE(GVAR(AEDX_MonitorTarget));
-    systemChat str _etco2;
     if (_hasEtco2Monitor) then {
         ctrlShow [IDC_DISPLAY_RR_DEFAULT, false];
         ctrlShow [IDC_DISPLAY_RR, true];

@@ -101,6 +101,11 @@ private _fnc_advRhythm = {
 } forEach (_patient getVariable [QACEGVAR(medical,medications), []]);
 
 switch (_reviveObject) do {
+    case "LUCAS": {
+        if (GVAR(enable_CPR_Chances)) then {
+        _chance = linearConversion [BLOOD_VOLUME_CLASS_4_HEMORRHAGE, BLOOD_VOLUME_CLASS_2_HEMORRHAGE, GET_BLOOD_VOLUME_LITERS(_patient), 0.1, 0.2, true];
+        };
+    };
     case "CPR": {
         if (GVAR(enable_CPR_Chances)) then {
             switch (_medic getVariable [QACEGVAR(medical,medicClass),0]) do {
@@ -163,7 +168,37 @@ if !(GVAR(enable_CPR_Chances)) then {
         };
     };
 } else {
-    if (_epiBoost isEqualTo 1.5) then {
+    if (_reviveObject in ["LUCAS"]) then {
+        if (_epiBoost isEqualTo 1.5) then {
+        _chance = _chance + (2 ^ _CPRcount);
+
+        _CPRcount = _CPRcount + 0.01;
+        _patient setVariable [QGVAR(cprCount), _CPRcount, true];
+    };
+
+    if (_patient getVariable [QGVAR(cardiacArrestType), 0] in [4,3] && _randomAmi > 2) then {
+        _chance = _chance + _amiBoost;
+    };
+
+    _chance = _chance / _nitroEffect;
+
+    if (_random <= _chance) then {
+        if (GVAR(AdvRhythm)) then {
+            if (_patient getVariable [QGVAR(cardiacArrestType), 0] != 0) then {
+                [_patient, true] call _fnc_advRhythm;
+            };
+        } else {
+            [QACEGVAR(medical,CPRSucceeded), _patient] call CBA_fnc_localEvent;
+        };
+        _patient setVariable [QGVAR(cprCount), 2, true];
+    } else {
+        _CPRcount = _CPRcount + 0.01;
+        _patient setVariable [QGVAR(cprCount), _CPRcount, true];
+    };
+
+    } else {
+        
+        if (_epiBoost isEqualTo 1.5) then {
         _chance = _chance + (2 ^ _CPRcount);
 
         _CPRcount = _CPRcount + 1;
@@ -188,5 +223,6 @@ if !(GVAR(enable_CPR_Chances)) then {
     } else {
         _CPRcount = _CPRcount + 1;
         _patient setVariable [QGVAR(cprCount), _CPRcount, true];
+    };
     };
 };

@@ -41,5 +41,7 @@ _patient setVariable [QGVAR(ABGmenuShow), false];
 _patient setVariable [QGVAR(ht), [], true];
 _patient setVariable [QGVAR(effusion), 0, true];
 
+_patient setVariable [QGVAR(attachedLucas), false, true];
+_patient setVariable [QGVAR(attachedLucasState), false, true];
 [_patient, true] call FUNC(updateInternalBleeding);
 

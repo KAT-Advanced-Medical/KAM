@@ -296,4 +296,55 @@ class ACE_Medical_Treatment_Actions {
         animationPatientUnconscious = "";
         animationPatientUnconsciousExcludeOn[] = {"ainjppnemstpsnonwrfldnon"};
     };
+    class AttachLucas {
+        displayName = CSTRING(AttachLucas);
+        displayNameProgress = CSTRING(AttachingLucas);
+        category = "advanced";
+        treatmentLocations = 1;
+        allowedSelections[] = {"Chest"};
+        allowSelfTreatment = 0;
+        medicRequired = QGVAR(medLvl_Lucas);
+        treatmentTime = 6;
+        consumeItem = 0;
+        items[] = {};
+        condition = QFUNC(canAttachLucas);
+        callbackStart = "";
+        callbackSuccess = QFUNC(attachLucas);
+        callbackFailure = "";
+        callbackProgress = "";
+        animationPatient = "";
+        animationPatientUnconscious = "";
+        animationPatientUnconsciousExcludeOn[] = {};
+        animationMedic = "";
+        animationMedicProne = "";
+        litter[] = {};
+        icon = QPATHTOF(ui\BVM_ui.paa);
+    };
+    class DetachLucas: AttachLucas {
+        displayName = CSTRING(DetachLucas);
+        displayNameProgress = CSTRING(DetachingLucas);
+        medicRequired = QGVAR(medLvl_Lucas);
+        treatmentTime = 6;
+        items[] = {};
+        condition = QFUNC(canDetachLucas);
+        callbackSuccess = QFUNC(detachLucas);
+    };
+    class EnableLucas: AttachLucas {
+        displayName = CSTRING(TurnOnLUCAS);
+        displayNameProgress = CSTRING(TurnOnLUCAS_action);
+        medicRequired = QGVAR(medLvl_Lucas);
+        treatmentTime = 1;
+        items[] = {};
+        condition = QUOTE([ARR_2(_patient,false)] call FUNC(lucasStateCondition));
+        callbackSuccess = QUOTE([ARR_2(_patient,true)] call FUNC(lucasState));
+    };
+    class DisableLucas: AttachLucas {
+        displayName = CSTRING(TurnOffLUCAS);
+        displayNameProgress = CSTRING(TurnOnLUCAS_action);
+        medicRequired = QGVAR(medLvl_Lucas);
+        treatmentTime = 1;
+        items[] = {};
+        condition = QUOTE([ARR_2(_patient,true)] call FUNC(lucasStateCondition));
+        callbackSuccess = QUOTE([ARR_2(_patient,false)] call FUNC(lucasState));
+    };
 };

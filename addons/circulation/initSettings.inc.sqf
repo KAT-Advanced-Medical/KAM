@@ -155,6 +155,15 @@
     true
 ] call CBA_fnc_addSetting;
 
+[
+    QGVAR(medLvl_Lucas),
+    "LIST",
+    [LLSTRING(ALLOW_Lucas),LLSTRING(TRAINING_LEVEL_Lucas)],
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_AED)],
+    [[0, 1, 2], ["STR_ACE_Medical_Treatment_Anyone", "STR_ACE_Medical_Treatment_Medics", "STR_ACE_Medical_Treatment_Doctors"], 0],
+    true
+] call CBA_fnc_addSetting;
+
 // Sets time required to attach AED-X monitor
 [
     QGVAR(AEDX_VitalsMonitor_AttachTime),
