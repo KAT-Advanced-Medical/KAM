@@ -188,7 +188,7 @@ switch (_usedItem) do {
                     _ht pushBack "hemo";
                     };
                 if (_unit getVariable [QEGVAR(circulation,cardiacArrestType), 0] == 0) then {
-                            [QACEGVAR(medical,FatalVitals), _unit] call CBA_fnc_localEvent;
+                    [QACEGVAR(medical,FatalVitals), _unit] call CBA_fnc_localEvent;
                 };
                 _pneumothoraxState set [_side, 16];
                 _unit setVariable [QGVAR(pneumothorax), _pneumothoraxState, true];
@@ -204,7 +204,7 @@ switch (_usedItem) do {
             };
         } else {
         _IVarray set [_partIndex, 14];
-        _IVrate set [_partIndex, 1.8];
+        _IVrate set [_partIndex, 0.8];
         _patient setVariable [QGVAR(IV), _IVarray, true];
         _patient setVariable [QGVAR(IVrate), _IVrate, true];
         [_patient, "activity", LSTRING(iv_log), [[_medic] call ACEFUNC(common,getName), "EJV"]] call ACEFUNC(medical_treatment,addToLog);

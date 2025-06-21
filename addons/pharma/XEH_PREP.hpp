@@ -26,6 +26,7 @@ PREP(prepareInfusion);
 PREP(prepareSyringe);
 PREP(removeIV);
 PREP(removeIVBag);
+PREP(removeIVCheck);
 PREP(retrieveIV);
 PREP(salineCheck);
 PREP(tourniquetRemove);

@@ -24,6 +24,7 @@ private _ctrlIVRightArm = _ctrlGroup controlsGroupCtrl IDC_BODY_RIGHTARM_IV;
 private _ctrlIVLeftLeg = _ctrlGroup controlsGroupCtrl IDC_BODY_LEFTLEG_IV;
 private _ctrlIVRightLeg = _ctrlGroup controlsGroupCtrl IDC_BODY_RIGHTLEG_IV;
 private _ctrlIO = _ctrlGroup controlsGroupCtrl IDC_BODY_TORSO_IO;
+private _ctrlEJV = _ctrlGroup controlsGroupCtrl IDC_BODY_NECK_EJV;
 
 private _IVArray = _target getVariable [QGVAR(IV), [0,0,0,0,0,0,0,0,0,0,0,0]];
 private _indicesToCheck = [4, 6, 9, 11];
@@ -48,3 +49,10 @@ if ((_IVArray select 2) isEqualTo 1) then {
 } else {
     _ctrlIO ctrlShow false;
 };
+
+if ((_IVArray select 1) > 10) then {
+    _ctrlEJV ctrlShow true;
+} else {
+    _ctrlEJV ctrlShow false;
+};
+
