@@ -121,7 +121,7 @@ if (!isNil {_unit getVariable [QACEGVAR(medical,ivBags),[]]}) then {
                 case(_type == "Blood"): { 
                     _ECB = _ECB + _bagChange / 2; 
                     _ECP = _ECP + _bagChange / 2; 
-                    _lossVolumeChange = _lossVolumeChange + (_bagChange / ML_TO_LITERS); 
+                    _lossVolumeChange = _lossVolumeChange + (_bagChange / 2000); 
                 };
                 case(_type == "PackedRBC"): {
                     private _plasma = (_fluidVolume select 1);
