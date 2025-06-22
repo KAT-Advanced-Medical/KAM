@@ -20,11 +20,11 @@
 
 params ["_medic", "_patient", "_bodyPart"];
 
-private _removeIV = [_medic, _patient, _bodyPart] call FUNC(removeIV);
+private _removeIV = [_medic, _patient, _bodyPart] call FUNC(removeIVCheck);
 private _ivType = [_patient, _bodyPart] call FUNC(checkIVType); 
 private _return = false;
 
-if (_removeIV && _ivType != 3) then {
+if (_removeIV && !(_ivType in [3, 8, 11])) then {
     _return = true;
 } else {
     _return = false;

@@ -58,14 +58,14 @@ if !(ACEGVAR(medical_treatment,advancedMedication)) exitWith {
 TRACE_1("Running treatmentMedicationLocal with Advanced configuration for",_patient);
 
 private _partIndex = ALL_BODY_PARTS find toLower _bodyPart;
-
+private _IVarray = _patient getVariable [QGVAR(IV), [0,0,0,0,0,0,0,0,0,0,0,0]];
 // Handle IV blockage
-if ([7,8,9] find (_IVarray select _partIndex) == -1) exitWith {
+if ([7,8,9] find (_IVarray select _partIndex) != -1) exitWith {
     private _occludedMedications = _patient getVariable [QACEGVAR(medical,occludedMedications), []];
-    _occludedMedications pushBack [_partIndex, _classname];
+    _occludedMedications pushBack [_partIndex, _classname, _patient];
     _patient setVariable [QACEGVAR(medical,occludedMedications), _occludedMedications, true];
 };
-private _tourniquets = GET_TOURNIQUETS(_unit);
+private _tourniquets = GET_TOURNIQUETS(_patient);
 private _occlusionMap = [
     [4, [4, 5]],
     [5, [5]],
@@ -89,9 +89,9 @@ private _isOccluded =
     && !( ((_IVarray select _partIndex isEqualTo 13) && _hasValidSuffix) 
     || (_className in _subDermalMeds));
 if (_isOccluded) exitWith {
-    TRACE_1("Medication injection site is occluded by tourniquet", _partIndex);
+    TRACE_3("Medication injection site is occluded by tourniquet", _partIndex,_classname,_patient);
     private _occludedMedications = _patient getVariable [QACEGVAR(medical,occludedMedications), []];
-    _occludedMedications pushBack [_partIndex, _classname];
+    _occludedMedications pushBack [_partIndex, _classname, _patient];
     _patient setVariable [QACEGVAR(medical,occludedMedications), _occludedMedications, true];
 };
 

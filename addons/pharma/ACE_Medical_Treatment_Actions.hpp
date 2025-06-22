@@ -10,7 +10,7 @@ class ACE_Medical_Treatment_Actions {
     class CPR;
 
     class BloodIV: BasicBandage {
-        allowedSelections[] = {"Chest", "LeftArm", "RightArm", "UpperLeftLeg", "UpperRightLeg", "Neck"};
+        allowedSelections[] = {"Chest", "LeftArm", "RightArm", "UpperLeftLeg", "UpperRightLeg", "UpperLeftArm", "UpperRightArm", "LeftLeg", "RightLeg", "Neck"};
         medicRequired = QUOTE(ace_medical_treatment_medicIV);
         condition = QUOTE(!(GVAR(RequireInsIV)) || FUNC(removeIV));
         callbackSuccess = "[_medic, _patient, _bodyPart, _className, _itemUser, _usedItem] call ace_medical_treatment_fnc_ivBag; [_patient, -800, 16, _className] call kat_pharma_fnc_fluid;";
@@ -168,7 +168,7 @@ class ACE_Medical_Treatment_Actions {
     };
     class EACA: Carbonate {
         displayName = CSTRING(Take_EACA);
-        allowedSelections[] =  {"Chest", "Body", "LeftArm", "RightArm", "UpperLeftArm", "UpperRightArm", "UpperLeftLeg", "UpperRightLeg", "LeftLeg", "RightLeg"};
+        allowedSelections[] =  {"Neck", "Chest", "Body", "LeftArm", "RightArm", "UpperLeftArm", "UpperRightArm", "UpperLeftLeg", "UpperRightLeg", "LeftLeg", "RightLeg"};
         allowSelfTreatment = 1;
         medicRequired = QGVAR(medLvl_EACA);
         treatmentTime = QGVAR(treatmentTime_EACA);
@@ -199,7 +199,7 @@ class ACE_Medical_Treatment_Actions {
     };
     class SalineFlush: Carbonate {
         displayName = CSTRING(Saline_Flush);
-        allowedSelections[] = {"LeftArm", "RightArm", "UpperLeftLeg", "UpperRightLeg"};
+        allowedSelections[] = {"Chest", "LeftArm", "RightArm", "UpperLeftLeg", "UpperRightLeg", "UpperLeftArm", "UpperRightArm", "LeftLeg", "RightLeg", "Neck"};
         allowSelfTreatment = 1;
         medicRequired = QGVAR(medLvl_SalineFlush);
         treatmentTime = QGVAR(treatmentTime_SalineFlush);
@@ -210,7 +210,7 @@ class ACE_Medical_Treatment_Actions {
     };
     class SyringeSalineFlush: Carbonate {
         displayName = CSTRING(Saline_Flush);
-        allowedSelections[] = {"Chest", "LeftArm", "RightArm", "UpperLeftLeg", "UpperRightLeg"};
+        allowedSelections[] = {"Neck", "Chest", "LeftArm", "RightArm", "UpperLeftArm", "UpperRightArm", "UpperLeftLeg", "UpperRightLeg", "LeftLeg", "RightLeg"};
         allowSelfTreatment = 1;
         medicRequired = QGVAR(medLvl_SalineFlush);
         treatmentTime = QGVAR(treatmentTime_SalineFlush);
@@ -222,7 +222,7 @@ class ACE_Medical_Treatment_Actions {
     class Inspect: Carbonate {
         displayName = CSTRING(Inspect_Catheter);
         category = "examine";
-        allowedSelections[] = {"LeftArm", "RightArm", "UpperLeftLeg", "UpperRightLeg"};
+        allowedSelections[] = {"Neck", "Chest", "LeftArm", "RightArm", "UpperLeftArm", "UpperRightArm", "UpperLeftLeg", "UpperRightLeg", "LeftLeg", "RightLeg"};
         allowSelfTreatment = 1;
         medicRequired = 1;
         treatmentTime = 2;
@@ -522,14 +522,14 @@ class ACE_Medical_Treatment_Actions {
     class CheckCoag: CheckPulse {
         displayName = CSTRING(CheckCoag_DisplayName);
         displayNameProgress = CSTRING(CheckCoag_DisplayNameProgress);
-        allowedSelections[] = {"LeftArm", "RightArm"};
+        allowedSelections[] = {"LeftArm", "RightArm", "UpperLeftLeg", "UpperRightLeg"};
         treatmentLocations = QGVAR(CheckCoag_Location);
         medicRequired = QGVAR(CheckCoag_MedLevel);
         treatmentTime = QGVAR(CheckCoag_TreatmentTime);
         category = "examine";
         consumeItem = 0;
         items[] = {"kat_coag_sense"};
-        condition = "";
+        condition = QFUNC(removeIVCheck);
         callbackProgress = "";
         callbackStart = "";
         callbackFailure = "";
@@ -539,7 +539,7 @@ class ACE_Medical_Treatment_Actions {
     class syringe_EACA_5ml_10: Carbonate {
         displayName = KATPUSHCSTRING(eaca,5ml,10);
         displayNameProgress = KATPUSHINGCSTRING(eaca,5ml,10);
-        allowedSelections[] = {"Chest", "LeftArm", "RightArm", "UpperLeftLeg", "UpperRightLeg", "Neck"};
+        allowedSelections[] = {"Neck", "Chest", "LeftArm", "RightArm", "UpperLeftArm", "UpperRightArm", "UpperLeftLeg", "UpperRightLeg", "LeftLeg", "RightLeg"};
         allowSelfTreatment = 1;
         medicRequired = QGVAR(medLvl_EACA);
         treatmentTime = QGVAR(treatmentTime_IV);
