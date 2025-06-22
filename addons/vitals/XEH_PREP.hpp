@@ -9,7 +9,6 @@ PREP(getDefaultStrokeVolume);
 PREP(getStrokeVolume);
 PREP(handleCardiacFunction);
 PREP(handleOxygenFunction);
-PREP(handlePoisoning);
 PREP(handleRespawn);
 PREP(handleSimpleVitals);
 PREP(handleTemperatureFunction);
