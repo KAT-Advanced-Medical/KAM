@@ -1,3 +1,4 @@
+PREP(effectAirways);
 PREP(effectBreathingWheeze);
 PREP(effectCoughing);
 PREP(effectEyeBlink);
