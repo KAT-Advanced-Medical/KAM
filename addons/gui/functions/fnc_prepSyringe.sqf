@@ -1,3 +1,4 @@
+#define DEBUG_MODE_FULL
 #include "..\script_component.hpp"
 /*
  * Author: Cplhardcore
@@ -16,7 +17,7 @@
  */
 private _player = ACE_player;
 TRACE_1("prepSyringe",_player);
-private _requiredMedicalLevel = missionNameSpace getVariable [QEGVAR(pharma,medLvl_PrepSyringe), 2];
+private _requiredMedicalLevel = missionNamespace getVariable [QEGVAR(pharma,medLvl_PrepSyringe), 2];
 private _playerMedicalLevel = [_player, _requiredMedicalLevel] call ACEFUNC(common,isMedic);
 TRACE_3("prepSyringe",_player,_requiredMedicalLevel,_playerMedicalLevel);
 if !(_playerMedicalLevel) exitWith {};
@@ -53,19 +54,43 @@ if (_doseType != 4) then {
             }, 
             {TRACE_3("prepSyringe3",_medicationType,_syringeType,_doseType);}, format [LLSTRING(Preparing_Syringe), _syringeDisplayName], {true}, ["isNotInside"] ] call ACEFUNC(common,progressBar);
 } else {
-    private _syringeClassName = format ["kat_%1Infusion", _medicationType];
-    private _syringeDisplayName = getText (configFile >> "CfgWeapons" >> _syringeClassName >> "displayName");
-    private _hasSyringe = isClass (configFile >> "CfgWeapons" >> _syringeClassName);
-    if (!_hasSyringe) exitWith {
-        hint format [LLSTRING(No_Syringe_Available), _medicationType, _syringeType, _doseType];
-        [{hint ""}, [], 5] call CBA_fnc_waitAndExecute;
+    if (_syringeType == "salineiv") then {
+        _syringeClassName = format ["kat_%1Infusion", _medicationType];
+        _size = "250";
+        private _syringeDisplayName = getText (configFile >> "CfgWeapons" >> _syringeClassName >> "displayName");
+        private _hasSyringe = isClass (configFile >> "CfgWeapons" >> _syringeClassName);
+        TRACE_3("prepSyringe4",_medicationType,_syringeClassName,_size);
+        if (!_hasSyringe) exitWith {
+            hint format [LLSTRING(No_Syringe_Available), _medicationType, _syringeType, _doseType];
+            [{hint ""}, [], 5] call CBA_fnc_waitAndExecute;
+        };
+        [EGVAR(pharma,prepTime_PrepInfusion), 
+            [_player, _medicationType, _syringeClassName, _size],
+            {
+                params["_args"];
+                _args params ["_player", "_medicationType", "_syringeClassName", "_size"];
+                TRACE_3("prepSyringe5",_medicationType,_syringeClassName,_size);
+                [_player, _medicationType, _syringeClassName, _size] call EFUNC(pharma,prepareInfusion);
+                }, 
+                {}, format [LLSTRING(Preparing_Syringe), _syringeDisplayName] ] call ACEFUNC(common,progressBar);
+    } else {
+        _syringeClassName = format ["kat_%1Infusion100", _medicationType];
+        _size = "100";
+        private _syringeDisplayName = getText (configFile >> "CfgWeapons" >> _syringeClassName >> "displayName");
+        private _hasSyringe = isClass (configFile >> "CfgWeapons" >> _syringeClassName);
+        TRACE_3("prepSyringe4",_medicationType,_syringeClassName,_size);
+        if (!_hasSyringe) exitWith {
+            hint format [LLSTRING(No_Syringe_Available), _medicationType, _syringeType, _doseType];
+            [{hint ""}, [], 5] call CBA_fnc_waitAndExecute;
+        };
+        [EGVAR(pharma,prepTime_PrepInfusion), 
+            [_player, _medicationType, _syringeClassName, _size],
+            {
+                params["_args"];
+                _args params ["_player", "_medicationType", "_syringeClassName", "_size"];
+                TRACE_3("prepSyringe5",_medicationType,_syringeClassName,_size);
+                [_player, _medicationType, _syringeClassName, _size] call EFUNC(pharma,prepareInfusion);
+                }, 
+                {}, format [LLSTRING(Preparing_Syringe), _syringeDisplayName] ] call ACEFUNC(common,progressBar);
     };
-    [EGVAR(pharma,prepTime_PrepInfusion), 
-        [_medicationType, _syringeType, _doseType],
-        {
-            params["_args"];
-            _args params ["_medicationType", "_syringeType", "_doseType"];
-            [_player, _medicationType, _syringeType, _doseType] call EFUNC(pharma,prepareInfusion);
-            }, 
-            {}, format [LLSTRING(Preparing_Syringe), _syringeDisplayName] ] call ACEFUNC(common,progressBar);
-}
+};

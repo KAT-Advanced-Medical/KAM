@@ -60,6 +60,9 @@ _syringeListBox ctrlAddEventHandler ["LBSelChanged", {
     private _salineIVWhitelist = [
         "kat_epinephrineIV", "kat_morphineIV", "kat_etomidate", "kat_doxapram", "kat_norepinephrine", "kat_nitroglycerin"
     ];
+    private _salineIV100Whitelist = [
+        "kat_epinephrineIV", "kat_morphineIV", "kat_etomidate", "kat_doxapram", "kat_norepinephrine", "kat_nitroglycerin"
+    ];
     private _5mlWhitelist = [
         "kat_amiodarone", "kat_atropine", "kat_EACA", "kat_epinephrineIV",
         "kat_etomidate", "kat_fentanyl", "kat_flumazenil", "kat_ketamine",
@@ -82,6 +85,7 @@ _syringeListBox ctrlAddEventHandler ["LBSelChanged", {
 
         private _valid = switch (_selectedSyringe) do {
             case "salineiv": { _medItem in _salineIVWhitelist };
+            case "salineiv100": { _medItem in _salineIV100Whitelist };
             case "5ml":      { _medItem in _5mlWhitelist };
             case "10ml":     { _medItem in _10mlWhitelist };
             default { false };

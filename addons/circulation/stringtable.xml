@@ -3753,6 +3753,9 @@
         <Key ID="STR_KAT_Circulation_Morphine_Infusion">
             <English>Morphine Infusion IV (250ml)</English>
         </Key>
+        <Key ID="STR_KAT_Circulation_Morphine_Infusion100">
+            <English>Morphine Infusion IV (100ml)</English>
+        </Key>
         <Key ID="STR_KAT_Circulation_Morphine_Infusion_Desc_Short">
             <English>Morphine Infusion IV, for management of pain</English>
         </Key>
@@ -3761,6 +3764,9 @@
         </Key>
         <Key ID="STR_KAT_Circulation_Epinephrine_Infusion">
             <English>Epinephrine Infusion IV (250ml)</English>
+        </Key>
+        <Key ID="STR_KAT_Circulation_Epinephrine_Infusion100">
+            <English>Epinephrine Infusion IV (100ml)</English>
         </Key>
         <Key ID="STR_KAT_Circulation_Epinephrine_Infusion_Desc_Short">
             <English>Epinephrine Infusion IV, for management of blood pressure</English>
@@ -3771,11 +3777,32 @@
         <Key ID="STR_KAT_Circulation_Etomidate_Infusion">
             <English>Etomidate Infusion IV (250ml)</English>
         </Key>
+        <Key ID="STR_KAT_Circulation_Etomidate100_Infusion">
+            <English>Etomidate Infusion IV (100ml)</English>
+        </Key>
         <Key ID="STR_KAT_Circulation_Etomidate_Infusion_Desc_Short">
             <English>Etomidate Infusion IV, for management of pain and sedation during surgery</English>
         </Key>
         <Key ID="STR_KAT_Circulation_Etomidate_Infusion_Desc_Use">
             <English>A Infusion of Etomidate and Saline introduced into the blood system through an IV.</English>
+        </Key>
+        <Key ID="STR_KAT_Circulation_Actions_MorphineIVInfusion100">
+            <English>Transfuse Morphine Infusion (100ml)</English>
+        </Key>
+        <Key ID="STR_KAT_Circulation_Transfusing_Morphine_Infusion100">
+            <English>Transfusing Morphine Infusion (100ml)...</English>
+        </Key>
+        <Key ID="STR_KAT_Circulation_Actions_EpinephrineInfusion100">
+            <English>Transfuse Epinephrine Infusion (100ml)</English>
+        </Key>
+        <Key ID="STR_KAT_Circulation_Transfusing_Epinephrine_Infusion100">
+            <English>Transfusing Epinephrine Infusion (100ml)...</English>
+        </Key>
+        <Key ID="STR_KAT_Circulation_Actions_EtomidateInfusion100">
+            <English>Transfuse Etomidate Infusion (100ml)</English>
+        </Key>
+        <Key ID="STR_KAT_Circulation_Transfusing_Etomidate_Infusion100">
+            <English>Transfusing Etomidate Infusion (100ml)...</English>
         </Key>
         <Key ID="STR_KAT_Circulation_Actions_MorphineIVInfusion">
             <English>Transfuse Morphine Infusion</English>
@@ -3825,6 +3852,9 @@
         <Key ID="STR_KAT_Circulation_Doxapram_Infusion">
             <English>Doxapram Infusion IV (250ml)</English>
         </Key>
+        <Key ID="STR_KAT_Circulation_Doxapram100_Infusion">
+            <English>Doxapram Infusion IV (100ml)</English>
+        </Key>
         <Key ID="STR_KAT_Circulation_Doxapram_Infusion_Desc_Short">
             <English>Doxapram Infusion IV, for management of respiratory issues</English>
         </Key>
@@ -3837,8 +3867,17 @@
         <Key ID="STR_KAT_Circulation_Transfusing_Doxapram_Infusion">
             <English>Transfusing Doxapram Infusion...</English>
         </Key>
+        <Key ID="STR_KAT_Circulation_Actions_DoxapramInfusion100">
+            <English>Transfuse Doxapram Infusion (100ml)</English>
+        </Key>
+        <Key ID="STR_KAT_Circulation_Transfusing_Doxapram_Infusion100">
+            <English>Transfusing Doxapram Infusion (100ml)...</English>
+        </Key>
         <Key ID="STR_KAT_Circulation_Nitroglycerin_Infusion">
             <English>Nitroglycerin Infusion IV (250ml)</English>
+        </Key>
+        <Key ID="STR_KAT_Circulation_Nitroglycerin100_Infusion">
+            <English>Nitroglycerin Infusion IV (100ml)</English>
         </Key>
         <Key ID="STR_KAT_Circulation_Nitroglycerin_Infusion_Desc_Short">
             <English>Nitroglycerin Infusion IV, for management of blood pressure</English>
@@ -3852,8 +3891,17 @@
         <Key ID="STR_KAT_Circulation_Transfusing_Nitroglycerin_Infusion">
             <English>Transfusing Nitroglycerin Infusion...</English>
         </Key>
+        <Key ID="STR_KAT_Circulation_Actions_NitroglycerinInfusion100">
+            <English>Transfuse Nitroglycerin Infusion (100ml)</English>
+        </Key>
+        <Key ID="STR_KAT_Circulation_Transfusing_Nitroglycerin_Infusion100">
+            <English>Transfusing Nitroglycerin Infusion (100ml)...</English>
+        </Key>
         <Key ID="STR_KAT_Circulation_Norepinephrine_Infusion">
             <English>Norepinephrine Infusion IV (250ml)</English>
+        </Key>
+        <Key ID="STR_KAT_Circulation_Norepinephrine100_Infusion">
+            <English>Norepinephrine Infusion IV (100ml)</English>
         </Key>
         <Key ID="STR_KAT_Circulation_Norepinephrine_Infusion_Desc_Short">
             <English>Norepinephrine Infusion IV, for management of blood pressure</English>
@@ -3866,6 +3914,12 @@
         </Key>
         <Key ID="STR_KAT_Circulation_Transfusing_Norepinephrine_Infusion">
             <English>Transfusing Norepinephrine Infusion...</English>
+        </Key>
+        <Key ID="STR_KAT_Circulation_Actions_NorepinephrineInfusion100">
+            <English>Transfuse Norepinephrine Infusion (100ml)</English>
+        </Key>
+        <Key ID="STR_KAT_Circulation_Transfusing_Norepinephrine_Infusion100">
+            <English>Transfusing Norepinephrine Infusion (100ml)t...</English>
         </Key>
         <Key ID="STR_KAT_Circulation_ALLOW_Lucas">
             <English>Allow LUCAS</English>
@@ -3905,6 +3959,12 @@
         </Key>
         <Key ID="STR_KAT_Circulation_LucasInactive">
             <English>LUCAS Inactive</English>
+        </Key>
+        <Key ID="STR_KAT_Circulation_salineIV_100">
+            <English>Saline IV (100ml)</English>
+        </Key>
+        <Key ID="STR_KAT_Circulation_Action_SalineIV100">
+            <English>Give Saline IV (100ml)</English>
         </Key>
     </Package>
 </Project>

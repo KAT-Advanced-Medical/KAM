@@ -49,6 +49,7 @@ class ACE_ADDON(Medical_Treatment) {
         nauseaMult = 0;
         //is this drug a sedation drug
         sedation = "false";
+        paralysis = "false";
 
 
         class Epinephrine {
@@ -775,6 +776,7 @@ class ACE_ADDON(Medical_Treatment) {
             weightBased = "true";
             weightDose = 20;
             maximumEffectiveDose = 30;
+            paralysis = "true";
         };
         class syringe_Rocuronium_5ml {
             painReduce = 0.0;
@@ -787,6 +789,7 @@ class ACE_ADDON(Medical_Treatment) {
             weightBased = "true";
             weightDose = 20;
             maximumEffectiveDose = 30;
+            paralysis = "true";
         };
         class syringe_Sugammadex_5ml_20  {
             painReduce = 0.0;
