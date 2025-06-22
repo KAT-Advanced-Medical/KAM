@@ -19,8 +19,6 @@
  
 params ["_target", "_className", "_incompatibleMedication"];
 TRACE_3("onMedicationUsage",_target,_className,_incompatibleMedication);
-
-if (GVAR(AMS_Enabled)) then {
     if !(_className in ["CWMP", "Painkillers", "Penthrox", "Carbonate", "BubbleWrap", "Caffeine", "Pervitin", "Naloxone"]) then {
         _medicationName = format ["syringe_%1", _className];
         private _defaultConfig    = configFile >> QUOTE(ACE_ADDON(Medical_Treatment)) >> "Medication";
@@ -85,7 +83,7 @@ if (GVAR(AMS_Enabled)) then {
         } forEach _incompatibleMedication;
     };
 
-} else {
+/*} else {
     private _defaultConfig    = configFile >> QUOTE(ACE_ADDON(Medical_Treatment)) >> "Medication";
     private _medicationConfig = _defaultConfig >> _classname;
     private _maxDose          = GET_NUMBER(_medicationConfig >> "maxDose",getNumber (_defaultConfig >> "maxDose"));
@@ -112,4 +110,4 @@ if (GVAR(AMS_Enabled)) then {
         if (_inSystem > _xLimit) then {
             [_target, _classname, _inSystem, _xLimit, _xMed] call FUNC(overDose);
         };
-    } forEach _incompatibleMedication;}
+    } forEach _incompatibleMedication;}*/

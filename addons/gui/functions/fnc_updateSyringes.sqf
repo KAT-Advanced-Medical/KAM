@@ -14,7 +14,6 @@
  *
  * Public: No
  */
-if !(EGVAR(pharma,AMS_Enabled)) exitWith {};
 disableSerialization;
 
 [{private _syringes = [

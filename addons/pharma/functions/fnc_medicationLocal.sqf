@@ -98,7 +98,6 @@ if (_isOccluded) exitWith {
 // Get adjustment attributes for used medication
 
 // Get and calculate medication modifiers
-if (GVAR(AMS_Enabled)) then {
     private _defaultConfig = configFile >> QUOTE(ACE_ADDON(Medical_Treatment)) >> "Medication";
     private _medicationConfig = _defaultConfig >> _classname;
     if (!isClass _medicationConfig) then {
@@ -245,6 +244,10 @@ if (GVAR(AMS_Enabled)) then {
         [format ["kat_pharma_%1Local", toLower _medicationName], [_patient, _dose], _patient] call CBA_fnc_targetEvent;
         };
 
+        if (_medicationName in ["Rocuronium","Succinylcholine"]) then {
+        [format ["kat_pharma_%1Local", toLower _medicationName], [_patient, _dose, _timeTillMaxEffect, _timeInSystem], _patient] call CBA_fnc_targetEvent;
+        };
+
         if (_medicationName in ["Ketamine","Atropine","Adenosine","Alteplase","Lidocaine"]) then {
         [format ["kat_pharma_%1Local", toLower _medicationName], [_patient, _bodyPart, _classname], _patient] call CBA_fnc_targetEvent;
         };
@@ -262,7 +265,7 @@ if (GVAR(AMS_Enabled)) then {
         };
     };
     
-} else {
+/*
     private _defaultConfig = configFile >> QUOTE(ACE_ADDON(Medical_Treatment)) >> "Medication";
     private _medicationConfig = _defaultConfig >> _classname;
     _painReduce             = GET_NUMBER(_medicationConfig >> "painReduce",getNumber (_defaultConfig >> "painReduce"));
@@ -308,7 +311,7 @@ if (GVAR(AMS_Enabled)) then {
     if (_className in ["Fentanyl","Morphine","Nalbuphine"]) then {
     [format ["kat_pharma_%1Local", toLower _className], [_patient, _bodyPart, _opioidRelief], _patient] call CBA_fnc_targetEvent;
     };
-};
+};*/
 private _TXAmedications = ["syringe_TXA_5ml_10", "syringe_TXA_10ml_10", "TXAAuto"];
     if (_classname in _TXAmedications) then {
         TRACE_1("TXADose",_patient);

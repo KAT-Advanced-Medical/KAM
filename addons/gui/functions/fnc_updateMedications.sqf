@@ -15,7 +15,6 @@
  * Public: No
  */
 
-if !(EGVAR(pharma,AMS_Enabled)) exitWith {};
 disableSerialization;
 
 private _syringeListBox = findDisplay 38580 displayCtrl 71303;

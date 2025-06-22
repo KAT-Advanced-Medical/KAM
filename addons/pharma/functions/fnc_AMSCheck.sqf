@@ -12,7 +12,7 @@
  * Public: No
  */
 private _medicationsRequireInsIV = GVAR(MedicationsRequireInsIV);
-private _amsEnabled = GVAR(AMS_Enabled);
+private _amsEnabled = true;
 private _removeIV = FUNC(removeIV);
     
-[false, true] select ((! _medicationsRequireInsIV || _removeIV) && ! _amsEnabled);
+[false, true] select ((!_medicationsRequireInsIV || _removeIV));

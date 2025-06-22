@@ -17,10 +17,9 @@
  */
 
 params ["_unit", "_className", "_dose", "_limit",  "_incompatibleMedication"];
-if (GVAR(AMS_Enabled)) then {
-        [format ["kat_pharma_%1OverdoseLocal", toLower _className], [_patient], _patient] call CBA_fnc_targetEvent;
-    }
-else {
+[format ["kat_pharma_%1OverdoseLocal", toLower _className], [_patient], _patient] call CBA_fnc_targetEvent;
+
+/*else {
 private _defaultConfig = configFile >> QUOTE(ACE_ADDON(Medical_Treatment)) >> "Medication";
 private _medicationConfig = (configFile >> "ace_medical_treatment" >> _classname);
 private _onOverDose = getText (_medicationConfig >> "onOverDose");
@@ -46,4 +45,4 @@ private _onOverDose = getText (_medicationConfig >> "onOverDose");
     missionNamespace getVariable _onOverDose
     };
 
-    [_unit, _classname, _dose, _limit, _incompatibleMed] call _onOverDose};
+    [_unit, _classname, _dose, _limit, _incompatibleMed] call _onOverDose};*/

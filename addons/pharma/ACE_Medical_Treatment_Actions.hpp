@@ -166,7 +166,7 @@ class ACE_Medical_Treatment_Actions {
         callbackSuccess = QFUNC(treatmentAdvanced_Naloxone);
         sounds[] = {};
     };
-    class EACA: Carbonate {
+    /*class EACA: Carbonate {
         displayName = CSTRING(Take_EACA);
         allowedSelections[] =  {"Neck", "Chest", "Body", "LeftArm", "RightArm", "UpperLeftArm", "UpperRightArm", "UpperLeftLeg", "UpperRightLeg", "LeftLeg", "RightLeg"};
         allowSelfTreatment = 1;
@@ -185,7 +185,7 @@ class ACE_Medical_Treatment_Actions {
         items[] = {"kat_TXA"};
         callbackSuccess = QFUNC(medication);
         sounds[] = {};
-    };
+    };*/
     class TXAAuto: Morphine {
         displayName = CSTRING(Take_TXAAuto);
         displayNameProgress = CSTRING(Using);
@@ -233,7 +233,7 @@ class ACE_Medical_Treatment_Actions {
         animationMedicProne = "";
         sounds[] = {};
     };
-    class Norepinephrine: EACA {
+    /*class Norepinephrine: EACA {
         displayName = CSTRING(Take_Norep);
         allowSelfTreatment = 1;
         medicRequired = QGVAR(medLvl_Norepinephrine);
@@ -251,7 +251,7 @@ class ACE_Medical_Treatment_Actions {
         items[] = {"kat_phenylephrine"};
         callbackSuccess = QFUNC(medication);
         sounds[] = {};
-    };
+    };*/
     class PhenylephrineAuto: Morphine {
         displayName = CSTRING(Take_Phenyl_Auto);
         displayNameProgress = CSTRING(Using);
@@ -263,7 +263,7 @@ class ACE_Medical_Treatment_Actions {
         callbackSuccess = QFUNC(medication);
         sounds[] = {};
     };
-    class Nitroglycerin: EACA {
+    /*class Nitroglycerin: EACA {
         displayName = CSTRING(Take_Nitro);
         allowSelfTreatment = 1;
         medicRequired = QGVAR(medLvl_Nitroglicerin);
@@ -289,7 +289,7 @@ class ACE_Medical_Treatment_Actions {
         items[] = {"kat_lidocaine"};
         callbackSuccess = QFUNC(medication);
         sounds[] = {};
-    };
+    };*/
     class Atropine: Morphine {
         displayName = CSTRING(Take_Atropine);
         displayNameProgress = CSTRING(Using);
@@ -302,7 +302,7 @@ class ACE_Medical_Treatment_Actions {
         callbackSuccess = QFUNC(medication);
         sounds[] = {};
     };
-    class AtropineIV: EACA {
+    /*class AtropineIV: EACA {
         displayName = CSTRING(Take_AtropineIV);
         allowSelfTreatment = 1;
         medicRequired = QGVAR(medLvl_AtropineIV);
@@ -355,7 +355,7 @@ class ACE_Medical_Treatment_Actions {
         items[] = {"kat_adenosineIV"};
         callbackSuccess = QFUNC(medication);
         sounds[] = {};
-    };
+    };*/
     class Reorientation: Carbonate {
         displayName = CSTRING(Take_Reorient);
         displayNameProgress = CSTRING(Reorienting);
@@ -460,7 +460,7 @@ class ACE_Medical_Treatment_Actions {
         callbackSuccess = QFUNC(retrieveIV);
         sounds[] = {};
     };
-    class Etomidate: EACA {
+    /*class Etomidate: EACA {
         displayName = CSTRING(Etomidate_Use);
         category = "surgery";
         treatmentLocations = 0;
@@ -502,7 +502,7 @@ class ACE_Medical_Treatment_Actions {
         items[] = {"kat_epinephrineIV"};
         callbackSuccess = QFUNC(medication);
         sounds[] = {};
-    };
+    };*/
     class Dialysis: BasicBandage {
         displayName = CSTRING(Dialysis_DisplayName);
         displayNameProgress = CSTRING(Dialysis_DisplayNameProgress);
