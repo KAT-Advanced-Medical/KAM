@@ -1,3 +1,4 @@
+#define DEBUG_MODE_FULL
 #include "..\script_component.hpp"
 /*
  * Author: Katalam, modified by Cplhardcore
@@ -18,10 +19,14 @@
  *
  * Public: No
  */
-params ["_player", "_medicationType", "_infusionType", "_doseType"];
-private _infusionClassName = format ["kat_%1Infusion", _medicationType];
-private _baseInfusion = format ["ace_%1_250", _infusionType];
-_player removeItem "ace_salineIV_250";
+
+params ["_player", "_medicationType", "_infusionClassName", "_size"];
+TRACE_1("Size",_size);
+if (_size == "100") then {
+    _player removeItem "kat_salineIV100";
+} else {
+    _player removeItem "ace_salineIV_250";
+};
 _katClassName = "kat_" + _medicationType;
 _player removeItem _katClassName;
 _player addItem _infusionClassName;

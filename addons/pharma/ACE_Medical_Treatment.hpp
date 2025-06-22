@@ -49,6 +49,7 @@ class ACE_ADDON(Medical_Treatment) {
         nauseaMult = 0;
         //is this drug a sedation drug
         sedation = "false";
+        paralysis = "false";
 
 
         class Epinephrine {

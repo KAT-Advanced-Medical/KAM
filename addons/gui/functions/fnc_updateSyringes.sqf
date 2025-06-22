@@ -20,7 +20,8 @@ disableSerialization;
 [{private _syringes = [
     "kat_10ml_syringe", 
     "kat_5ml_syringe",
-    "ACE_salineIV_250"
+    "ACE_salineIV_250",
+    "kat_salineIV100"
 ];
 
 private _syringesFound = {

@@ -19,7 +19,6 @@
 
 params ["_target"];
 
-// Get tourniquets, damage, and blood loss for target
 private _IV = _target getVariable [QEGVAR(pharma,IV), [0,0,0,0,0,0,0,0,0,0,0,0]];
 private _ivFlow = _target getVariable [QEGVAR(pharma,IVflow), [0,0,0,0,0,0,0,0,0,0,0,0]];
 private _ivRate = _target getVariable [QEGVAR(pharma,IVincomingFlowAmount), [0,0,0,0,0,0,0,0,0,0,0,0]];
@@ -34,15 +33,34 @@ if (_ivMenuShow) then {
 };
 
 {
-    _x params ["_coverIDC", "_titleIDC", "_typeIDC", "_valueIDC", "_rateIDC", "_buttonIDCArray", "_bodyPartN"];
+    _x params ["_coverIDC", "_titleIDC", "_typeIDC", "_valueIDC", "_rateIDC", "_buttonIDCArray", "_idxA", "_idxB"];
 
-    private _activeIV = _IV select _bodyPartN;
-    private _activeFlow = _ivFlow select _bodyPartN;
-    private _activeRate = _ivRate select _bodyPartN;
-
-    if !(_ivMenuShow) then {
-        _activeIV = -1;
+    if (isNil "_idxB") then {
+    _idxB = _idxA;
     };
+
+    private _ivA = _IV select _idxA;
+    private _ivB = _IV select _idxB;
+    private _flowA = _ivFlow select _idxA;
+    private _flowB = _ivFlow select _idxB;
+    private _rateA = _ivRate select _idxA;
+    private _rateB = _ivRate select _idxB;
+    private _activeIV = -1;
+    private _activeFlow = 0;
+    private _activeRate = 0;
+
+    if (_ivMenuShow) then {
+        if (_ivA > 0) then {
+            _activeIV = _ivA;
+            _activeFlow = _flowA;
+            _activeRate = _rateA;
+        } else {
+            _activeIV = _ivB;
+            _activeFlow = _flowB;
+            _activeRate = _rateB;
+        };
+    };
+
 
     switch (true) do {
         case (_activeIV == 0): {
@@ -139,8 +157,8 @@ if (_ivMenuShow) then {
 } forEach [
     [IDC_IV_FLOW_HEADCOVER, IDC_IV_FLOW_HEADTITLE, IDC_IV_FLOW_HEADTYPE, IDC_IV_FLOW_HEADIV_VALUE, IDC_IV_FLOW_HEADIVRATE, [IDC_IV_FLOW_HEADSUBTRACTFULL, IDC_IV_FLOW_HEADSUBTRACT, IDC_IV_FLOW_HEADADD, IDC_IV_FLOW_HEADADDFULL], 1],
     [IDC_IV_FLOW_CHESTCOVER, IDC_IV_FLOW_CHESTTITLE, IDC_IV_FLOW_CHESTTYPE, IDC_IV_FLOW_CHESTTEST, IDC_IV_FLOW_CHESTIVRATE, [IDC_IV_FLOW_CHESTSUBTRACTFULL, IDC_IV_FLOW_CHESTSUBTRACT, IDC_IV_FLOW_CHESTADD, IDC_IV_FLOW_CHESTADDFULL], 2],
-    [IDC_IV_FLOW_LARMCOVER, IDC_IV_FLOW_LARMTITLE, IDC_IV_FLOW_LARMTYPE, IDC_IV_FLOW_LARMIVVALUE, IDC_IV_FLOW_LARMIVRATE, [IDC_IV_FLOW_LARMSUBTRACTFULL, IDC_IV_FLOW_LARMSUBTRACT, IDC_IV_FLOW_LARMADD, IDC_IV_FLOW_LARMADDFULL], 4],
-    [IDC_IV_FLOW_RARMCOVER, IDC_IV_FLOW_RARMTITLE, IDC_IV_FLOW_RARMTYPE, IDC_IV_FLOW_RARMIVVALUE, IDC_IV_FLOW_RARMIVRATE, [IDC_IV_FLOW_RARMSUBTRACTFULL, IDC_IV_FLOW_RARMSUBTRACT, IDC_IV_FLOW_RARMADD, IDC_IV_FLOW_RARMADDFULL], 6],
-    [IDC_IV_FLOW_LLEGCOVER, IDC_IV_FLOW_LLEGTITLE, IDC_IV_FLOW_LLEGTYPE, IDC_IV_FLOW_LLEGIVVALUE, IDC_IV_FLOW_LLEGIVRATE, [IDC_IV_FLOW_LLEGSUBTRACTFULL, IDC_IV_FLOW_LLEGSUBTRACT, IDC_IV_FLOW_LLEGADD, IDC_IV_FLOW_LLEGADDFULL], 9],
-    [IDC_IV_FLOW_RLEGCOVER, IDC_IV_FLOW_RLEGTITLE, IDC_IV_FLOW_RLEGTYPE, IDC_IV_FLOW_RLEGIVVALUE, IDC_IV_FLOW_RLEGIVRATE, [IDC_IV_FLOW_RLEGSUBTRACTFULL, IDC_IV_FLOW_RLEGSUBTRACT, IDC_IV_FLOW_RLEGADD, IDC_IV_FLOW_RLEGADDFULL], 11]
+    [IDC_IV_FLOW_LARMCOVER, IDC_IV_FLOW_LARMTITLE, IDC_IV_FLOW_LARMTYPE, IDC_IV_FLOW_LARMIVVALUE, IDC_IV_FLOW_LARMIVRATE, [IDC_IV_FLOW_LARMSUBTRACTFULL, IDC_IV_FLOW_LARMSUBTRACT, IDC_IV_FLOW_LARMADD, IDC_IV_FLOW_LARMADDFULL], 4, 5],
+    [IDC_IV_FLOW_RARMCOVER, IDC_IV_FLOW_RARMTITLE, IDC_IV_FLOW_RARMTYPE, IDC_IV_FLOW_RARMIVVALUE, IDC_IV_FLOW_RARMIVRATE, [IDC_IV_FLOW_RARMSUBTRACTFULL, IDC_IV_FLOW_RARMSUBTRACT, IDC_IV_FLOW_RARMADD, IDC_IV_FLOW_RARMADDFULL], 6, 7],
+    [IDC_IV_FLOW_LLEGCOVER, IDC_IV_FLOW_LLEGTITLE, IDC_IV_FLOW_LLEGTYPE, IDC_IV_FLOW_LLEGIVVALUE, IDC_IV_FLOW_LLEGIVRATE, [IDC_IV_FLOW_LLEGSUBTRACTFULL, IDC_IV_FLOW_LLEGSUBTRACT, IDC_IV_FLOW_LLEGADD, IDC_IV_FLOW_LLEGADDFULL], 8, 9],
+    [IDC_IV_FLOW_RLEGCOVER, IDC_IV_FLOW_RLEGTITLE, IDC_IV_FLOW_RLEGTYPE, IDC_IV_FLOW_RLEGIVVALUE, IDC_IV_FLOW_RLEGIVRATE, [IDC_IV_FLOW_RLEGSUBTRACTFULL, IDC_IV_FLOW_RLEGSUBTRACT, IDC_IV_FLOW_RLEGADD, IDC_IV_FLOW_RLEGADDFULL], 10, 11]
 ];

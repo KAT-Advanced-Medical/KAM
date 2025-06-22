@@ -38,6 +38,21 @@ if(GVAR(IVreuse)) then {
 _IVarray set [_partIndex, 0];
 _patient setVariable [QGVAR(IV), _IVarray, true];
 
+private _ivFlow = _target getVariable [QGVAR(pIVFlow), [0,0,0,0,0,0,0,0,0,0,0,0]];
+
+private _pairs = [[4,5], [6,7], [8,9], [10,11]];
+private _affectedPair = _pairs findIf { _partIndex in _x };
+
+if (_affectedPair != -1) then {
+    {
+        _ivFlow set [_x, 0];
+    } forEach (_pairs select _affectedPair);
+} else {
+    _ivFlow set [_partIndex, 0];
+};
+
+_target setVariable [QGVAR(IVFlow), _ivFlow, true];
+
 private _totalIvVolume = 0;
 private _saline = 0;
 private _blood = 0;

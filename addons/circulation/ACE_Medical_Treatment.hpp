@@ -40,6 +40,12 @@ class ACE_Medical_Treatment {
         respiratoryRate = 0;
         //multiplier to contractility
         contractility = 0;
+        //multiplier to nausea
+        nauseaMult = 0;
+        //is this drug a sedation drug
+        sedation = "false";
+        paralysis = "false";
+
 
         incompatibleMedication[] = {};
 
@@ -78,7 +84,9 @@ class ACE_Medical_Treatment {
         class SalineIV_250: SalineIV {
             volume = 250;
         };
-
+        class SalineIV100: SalineIV {
+            volume = 100;
+        };
         class BloodIV_O: BloodIV {
             volume = 1000;
             bloodType = "O";
@@ -227,13 +235,13 @@ class ACE_Medical_Treatment {
             type = "PackedRBC";
         };
         class Morphine_IVInfusion: SalineIV_250 {
-            painReduce = 0.8;
+            painReduce = 0.2;
             hrIncreaseLow[] = {-2, -4};
             hrIncreaseNormal[] = {-3, -6};
             hrIncreaseHigh[] = {-3, -9};
             timeInSystem = 15;
             timeTillMaxEffect = 3;
-            dose = 0.2;
+            dose = 1;
             viscosityChange = -3;
             opioidRelief = 1.1;
             respiratoryRate = -0.1;
@@ -248,7 +256,7 @@ class ACE_Medical_Treatment {
             hrIncreaseHigh[] = {7, 15};
             timeInSystem = 10;
             timeTillMaxEffect = 3;
-            dose = 0.1;
+            dose = 1;
             alphaFactor = -0.05;
             volume = 250;
             rateCoef = 1.3;
@@ -263,7 +271,7 @@ class ACE_Medical_Treatment {
             hrIncreaseHigh[] = {-8, -15};
             timeInSystem = 7;
             timeTillMaxEffect = 1;
-            dose = 0.1;
+            dose = 1;
             viscosityChange = 0;
             volume = 250;
             rateCoef = 1.3;
@@ -277,7 +285,7 @@ class ACE_Medical_Treatment {
             hrIncreaseHigh[] = {5, 12};
             timeInSystem = 10;
             timeTillMaxEffect = 2;
-            dose = 0.1;
+            dose = 1;
             respiratoryRate = 0.1;
             volume = 250;
             rateCoef = 1.3;
@@ -291,7 +299,7 @@ class ACE_Medical_Treatment {
             hrIncreaseHigh[] = {5, 12};
             timeInSystem = 10;
             timeTillMaxEffect = 2;
-            dose = 0.2;
+            dose = 1;
             volume = 250;
             rateCoef = 1.3;
             alphaFactor = 0.1;
@@ -307,8 +315,97 @@ class ACE_Medical_Treatment {
             hrIncreaseHigh[] = {5, 12};
             timeInSystem = 10;
             timeTillMaxEffect = 2;
-            dose = 0.2;
+            dose = 1;
             volume = 250;
+            rateCoef = 1.3;
+            alphaFactor = -0.1;
+            viscosityChange = 10;
+            type = "Norepinephrine_IVInfusion";
+            incompatibleMedication[] = {};
+        };
+        class Morphine_IVInfusion100: SalineIV_250 {
+            painReduce = 0.2;
+            hrIncreaseLow[] = {-2, -4};
+            hrIncreaseNormal[] = {-3, -6};
+            hrIncreaseHigh[] = {-3, -9};
+            timeInSystem = 15;
+            timeTillMaxEffect = 3;
+            dose = 1;
+            viscosityChange = -3;
+            opioidRelief = 1.1;
+            respiratoryRate = -0.1;
+            volume = 100;
+            rateCoef = 1.3;
+            type = "Morphine_IVInfusion";
+        };
+        class Epinephrine_IVInfusion100: SalineIV_250 {
+            painReduce = 0;
+            hrIncreaseLow[] = {1, 10};
+            hrIncreaseNormal[] = {3, 15};
+            hrIncreaseHigh[] = {7, 15};
+            timeInSystem = 10;
+            timeTillMaxEffect = 3;
+            dose = 1;
+            alphaFactor = -0.05;
+            volume = 100;
+            rateCoef = 1.3;
+            contractility = 0.2;
+            type = "Epinephrine_IVInfusion";
+            incompatibleMedication[] = {};
+        };
+        class Etomidate_IVInfusion100: SalineIV_250 {
+            painReduce = 0.2;
+            hrIncreaseLow[] = {-3, -7};
+            hrIncreaseNormal[] = {-5, -11};
+            hrIncreaseHigh[] = {-8, -15};
+            timeInSystem = 7;
+            timeTillMaxEffect = 1;
+            dose = 1;
+            viscosityChange = 0;
+            volume = 100;
+            rateCoef = 1.3;
+            type = "Etomidate_IVInfusion";
+            incompatibleMedication[] = {};
+        };
+        class Doxapram_IVInfusion100: SalineIV_250 {
+            painReduce = 0;
+            hrIncreaseLow[] = {3, 6};
+            hrIncreaseNormal[] = {5, 9};
+            hrIncreaseHigh[] = {5, 12};
+            timeInSystem = 10;
+            timeTillMaxEffect = 2;
+            dose = 1;
+            respiratoryRate = 0.1;
+            volume = 100;
+            rateCoef = 1.3;
+            type = "Doxapram_IVInfusion";
+            incompatibleMedication[] = {};
+        };
+        class Nitroglycerin_IVInfusion100: SalineIV_250 {
+            painReduce = 0;
+            hrIncreaseLow[] = {3, 6};
+            hrIncreaseNormal[] = {5, 9};
+            hrIncreaseHigh[] = {5, 12};
+            timeInSystem = 10;
+            timeTillMaxEffect = 2;
+            dose = 1;
+            volume = 100;
+            rateCoef = 1.3;
+            alphaFactor = 0.1;
+            viscosityChange = -10;
+            contractility = -0.05;
+            type = "Nitroglycerin_IVInfusion";
+            incompatibleMedication[] = {};
+        };
+        class Norepinephrine_IVInfusion100: SalineIV_250 {
+            painReduce = 0;
+            hrIncreaseLow[] = {3, 6};
+            hrIncreaseNormal[] = {5, 9};
+            hrIncreaseHigh[] = {5, 12};
+            timeInSystem = 10;
+            timeTillMaxEffect = 2;
+            dose = 1;
+            volume = 100;
             rateCoef = 1.3;
             alphaFactor = -0.1;
             viscosityChange = 10;

@@ -198,6 +198,72 @@ class CfgWeapons {
             mass = 2.5;
         };
     };
+    class kat_MorphineIVInfusion100: ACE_salineIV_250 {
+        scope = 1;
+        author = "Cplhardcore";
+        displayName = CSTRING(Morphine_Infusion100);
+        descriptionShort = CSTRING(Morphine_Infusion_Desc_Short);
+        descriptionUse = CSTRING(Morphine_Infusion_Desc_Use);
+        ACE_isMedicalItem = 1;
+        class ItemInfo: CBA_MiscItem_ItemInfo {
+            mass = 1;
+        };
+    };
+    class kat_EpinephrineIVInfusion100: ACE_salineIV_250 {
+        scope = 1;
+        author = "Cplhardcore";
+        displayName = CSTRING(Epinephrine_Infusion100);
+        descriptionShort = CSTRING(Epinephrine_Infusion_Desc_Short);
+        descriptionUse = CSTRING(Epinephrine_Infusion_Desc_Use);
+        ACE_isMedicalItem = 1;
+        class ItemInfo: CBA_MiscItem_ItemInfo {
+            mass = 1;
+        };
+    };
+    class kat_EtomidateInfusion100: ACE_salineIV_250 {
+        scope = 1;
+        author = "Cplhardcore";
+        displayName = CSTRING(Etomidate100_Infusion);
+        descriptionShort = CSTRING(Etomidate_Infusion_Desc_Short);
+        descriptionUse = CSTRING(Etomidate_Infusion_Desc_Use);
+        ACE_isMedicalItem = 1;
+        class ItemInfo: CBA_MiscItem_ItemInfo {
+            mass = 1;
+        };
+    };
+    class kat_DoxapramInfusion100: ACE_salineIV_250 {
+        scope = 1;
+        author = "Cplhardcore";
+        displayName = CSTRING(Doxapram100_Infusion);
+        descriptionShort = CSTRING(Doxapram_Infusion_Desc_Short);
+        descriptionUse = CSTRING(Doxapram_Infusion_Desc_Use);
+        ACE_isMedicalItem = 1;
+        class ItemInfo: CBA_MiscItem_ItemInfo {
+            mass = 1;
+        };
+    };
+    class kat_NitroglycerinInfusion100: ACE_salineIV_250 {
+        scope = 1;
+        author = "Cplhardcore";
+        displayName = CSTRING(Nitroglycerin100_Infusion);
+        descriptionShort = CSTRING(Nitroglycerin_Infusion_Desc_Short);
+        descriptionUse = CSTRING(Nitroglycerin_Infusion_Desc_Use);
+        ACE_isMedicalItem = 1;
+        class ItemInfo: CBA_MiscItem_ItemInfo {
+            mass = 1;
+        };
+    };
+    class kat_NorepinephrineInfusion100: ACE_salineIV_250 {
+        scope = 1;
+        author = "Cplhardcore";
+        displayName = CSTRING(Norepinephrine100_Infusion);
+        descriptionShort = CSTRING(Norepinephrine_Infusion_Desc_Short);
+        descriptionUse = CSTRING(Norepinephrine_Infusion_Desc_Use);
+        ACE_isMedicalItem = 1;
+        class ItemInfo: CBA_MiscItem_ItemInfo {
+            mass = 1;
+        };
+    };
     class kat_PackedRBCIV_500: ACE_bloodIV_500 {
         scope = 2;
         author = "Cplhardcore";
@@ -218,6 +284,15 @@ class CfgWeapons {
         ACE_isMedicalItem = 1;
         class ItemInfo: CBA_MiscItem_ItemInfo {
             mass = 2.5;
+        };
+    };
+    class kat_salineIV100: ACE_salineIV_250 {
+        scope = 2;
+        author = "Cplhardcore";
+        displayName = CSTRING(salineIV_100);
+        ACE_isMedicalItem = 1;
+        class ItemInfo: CBA_MiscItem_ItemInfo {
+            mass = 1;
         };
     };
     class KAT_Empty_bloodIV_500: ACE_bloodIV
