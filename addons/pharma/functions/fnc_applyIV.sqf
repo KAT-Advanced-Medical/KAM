@@ -179,27 +179,34 @@ switch (_usedItem) do {
         if (random 100 < (GVAR(IVFailures) * 4)) then {
             [_patient, [0.4, 0.5, 0.7] select (floor random 3)] call ACEFUNC(medical_status,adjustPainLevel);
             if (random 100 < 20) then {
-                if (floor (random 100) < GVAR(hptxChance)) then {
-                _hemoState set [_side, true];
-                _unit setVariable [QGVAR(hemopneumothorax), _hemoState, true];
+                if (QEGVAR(breathing,advPtxEnable)) then {
+                    if (floor (random 100) < GVAR(hptxChance)) then {
+                    private _side = selectRandom [0, 1];
+                    _hemoState set [_side, true];
+                    _patient setVariable [QEGVAR(breathing,hemopneumothorax), _hemoState, true];
 
-                private _ht = _unit getVariable [QEGVAR(circulation,ht), []];
+                    private _ht = _patient getVariable [QEGVAR(circulation,ht), []];
                     if ((_ht findIf {_x isEqualTo "hemo"}) == -1) then {
                     _ht pushBack "hemo";
                     };
-                if (_unit getVariable [QEGVAR(circulation,cardiacArrestType), 0] == 0) then {
-                    [QACEGVAR(medical,FatalVitals), _unit] call CBA_fnc_localEvent;
+                    if (_patient getVariable [QEGVAR(circulation,cardiacArrestType), 0] == 0) then {
+                    [QACEGVAR(medical,FatalVitals), _patient] call CBA_fnc_localEvent;
+                    };
+                    if !(_patient getVariable [QEGVAR(breathing,activeChestSeal), [false, false]] select _side) then {
+                        _pneumothoraxState set [_side, 16];
+                        _patient setVariable [QEGVAR(breathing,pneumothorax), _pneumothoraxState, true];
+                    };
+                    [_patient] call EFUNC(circulation,updateInternalBleeding);
+                    } else {
+                    _tensionState set [_side, true];
+                    _patient setVariable [QEGVAR(breathing,tensionpneumothorax), _tensionState, true];
+
+                    if !(_patient getVariable [QEGVAR(breathing,activeChestSeal), [false, false]] select _side) then {
+                        _pneumothoraxState set [_side, 16];
+                        _patient setVariable [QEGVAR(breathing,pneumothorax), _pneumothoraxState, true];
+                    };
                 };
-                _pneumothoraxState set [_side, 16];
-                _unit setVariable [QGVAR(pneumothorax), _pneumothoraxState, true];
 
-                [_unit] call EFUNC(circulation,updateInternalBleeding);
-                } else {
-                _tensionState set [_side, true];
-                _unit setVariable [QGVAR(tensionpneumothorax), _tensionState, true];
-
-                _pneumothoraxState set [_side, 16];
-                _unit setVariable [QGVAR(pneumothorax), _pneumothoraxState, true];
                 };      
             };
         } else {
