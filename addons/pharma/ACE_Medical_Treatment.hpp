@@ -133,7 +133,7 @@ class ACE_ADDON(Medical_Treatment) {
             timeInSystem = 360;
             timeTillMaxEffect = 15;
             dose = 1;
-            maxDose = 2;
+            maxDose = 20;
             maxDoseDeviation = 2;
             incompatibleMedication[] = {};
             viscosityChange = 0;
@@ -166,9 +166,9 @@ class ACE_ADDON(Medical_Treatment) {
         };
          class TXAAuto {
             painReduce = 0;
-            hrIncreaseLow[] = {0, 0};
-            hrIncreaseNormal[] = {0, 0};
-            hrIncreaseHigh[] = {0, 0};
+            hrIncreaseLow[] = {-2, -7};
+            hrIncreaseNormal[] = {-2, -7};
+            hrIncreaseHigh[] = {-2, -7};
             timeInSystem = 90;
             timeTillMaxEffect = 5;
             dose = 1;
@@ -313,7 +313,8 @@ class ACE_ADDON(Medical_Treatment) {
             hrIncreaseHigh[] = {-5, -17};
             timeInSystem = 420;
             timeTillMaxEffect = 60;
-            maxDose = 5;
+            dose = 1;
+            maxDose = 50;
             incompatibleMedication[] = {};
             onOverDose = "";
             maxRelief = 0.5;
@@ -326,7 +327,7 @@ class ACE_ADDON(Medical_Treatment) {
             timeInSystem = 120;
             timeTillMaxEffect = 30;
             dose = 1;
-            maxDose = 4;
+            maxDose = 40;
             incompatibleMedication[]= {};
             viscosityChange = 0;
             onOverDose = "";
