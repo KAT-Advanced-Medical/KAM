@@ -49,9 +49,11 @@ private _arrayModified = false;
 
 if (((_patient getVariable [QEGVAR(pharma,IV), [0,0,0,0,0,0,0,0,0,0,0,0]]) select _partIndex) isNotEqualTo 3) then {
     {
-        _x params ["_bodyPartN", "_medication"];
+        _x params ["_bodyPartN", "_medication", "_unit"];
 
-        if (_partIndex == _bodyPartN) then {
+        private _isStillOccluded = [_unit, _bodyPartN] call FUNC(occlusionCheck);
+        TRACE_1("delayed medication call after tourniquet removal",_isStillOccluded);
+        if (!_isStillOccluded) then {
             TRACE_1("delayed medication call after tourniquet removal",_x);
             [QEGVAR(pharma,medicationLocal), [_patient, _bodyPart, _medication], _patient] call CBA_fnc_targetEvent;
             _occludedMedications set [_forEachIndex, []];
