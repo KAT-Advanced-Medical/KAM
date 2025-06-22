@@ -44,7 +44,7 @@ private _catastrophicState = _patient getVariable [QEGVAR(airway,catastrophicAir
 private _hasCatastrophicAirway = ((_catastrophicState select 0) || (_catastrophicState select 1));
 
 private _respiratoryDepth = _patient getVariable [QEGVAR(vitals,respiratoryDepth), 10];
-if ((_respiratoryDepth < 8.5) || (_patient getVariable [QEGVAR(chemical,airPoisoning), false])) then {
+if (_respiratoryDepth < 8.5) then {
     _breathing = LLSTRING(breathing_isShallow);
     _breathing_log = LLSTRING(breathing_shallow);
 };
@@ -81,7 +81,7 @@ _output_log = format ["%1%2, %3", _breathing_log, _breath, _breathRate];
 private _airway = true;
 private _breathing = true;
 private _paralysis = _unit getVariable [QGVAR(paralysis), 0] > 0.1;
-if ((_unit getVariable [QEGVAR(chemical,airPoisoning), false]) || (_tension select 0) || (_tension select 1) || (_hemo select 0) || (_hemo select 1) || _paralysis) then {
+if ((_tension select 0) || (_tension select 1) || (_hemo select 0) || (_hemo select 1) || _paralysis) then {
     _breathing = false;
 };
 private _noETT = (_patient getVariable [QEGVAR(airway,airway_item), ""] isNotEqualTo "ETT");

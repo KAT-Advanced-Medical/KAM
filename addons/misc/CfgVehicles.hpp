@@ -80,10 +80,6 @@ class CfgVehicles {
     class kat_miscSupplyCrate: ACE_medicalSupplyCrate {
         displayName = CSTRING(miscSupplyCrate_display);
         class TransportItems {
-            //chemical
-            MACRO_ADDITEM(kat_gasmaskFilter,15);
-            MACRO_ADDITEM(kat_sealant,15);
-            MACRO_ADDITEM(KAT_ChemicalDetector,15);
             //misc.FAK
             MACRO_ADDITEM(kat_IFAK,15);
             MACRO_ADDITEM(kat_AFAK,15);

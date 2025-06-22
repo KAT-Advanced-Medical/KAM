@@ -15,6 +15,7 @@ PREP(createTamponade);
 PREP(detachPersonalOxygen);
 PREP(detachVent);
 PREP(fullHealLocal);
+PREP(getList);
 PREP(gui_updateBodyImage);
 PREP(gui_updateInjuryListPart);
 PREP(gui_updateInjuryListWounds);

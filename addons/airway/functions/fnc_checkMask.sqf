@@ -17,7 +17,7 @@
 
 params ["_patient"];
 
-if ((goggles _patient in (missionNamespace getVariable [QEGVAR(chemical,availGasmaskList), []])) || (goggles _patient in (missionNamespace getVariable [QEGVAR(breathing,availOxyMaskList), []]))) exitWith {
+if ((goggles _patient in (missionNamespace getVariable [QEGVAR(breathing,availOxyMaskList), []]))) exitWith {
     true
 };
 

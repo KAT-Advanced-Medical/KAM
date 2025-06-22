@@ -194,7 +194,7 @@ private _fio2 = switch (true) do {
         [0, DEFAULT_FIO2] select ((_unit getVariable [QEGVAR(airway,recovery), false]) || (_unit getVariable [QEGVAR(airway,overstretch), false])) 
     };
     case ((_respiratoryRate == 0) && (EGVAR(breathing,SpO2_perfusion))): { 0 };
-    case ((_unit getVariable [QEGVAR(chemical,airPoisoning), false]) || (_unit getVariable [QEGVAR(breathing,tensionpneumothorax), [false, false]] select 0) || (_unit getVariable [QEGVAR(breathing,tensionpneumothorax), [false, false]] select 1) ||(_unit getVariable [QEGVAR(breathing,hemopneumothorax), [false, false]] select 0) || (_unit getVariable [QEGVAR(breathing,hemopneumothorax), [false, false]] select 1)): { 0 };
+    case ((_unit getVariable [QEGVAR(breathing,tensionpneumothorax), [false, false]] select 0) || (_unit getVariable [QEGVAR(breathing,tensionpneumothorax), [false, false]] select 1) ||(_unit getVariable [QEGVAR(breathing,hemopneumothorax), [false, false]] select 0) || (_unit getVariable [QEGVAR(breathing,hemopneumothorax), [false, false]] select 1)): { 0 };
     case (_unit getVariable [QEGVAR(breathing,oxygenMaskActive), false]): { 0.95 };
     case (_unit getVariable [QEGVAR(breathing,oxygenTankConnected), false]): { 1 };
     case (_unit getVariable [QEGVAR(breathing,attachedVent), false]): { 1 };

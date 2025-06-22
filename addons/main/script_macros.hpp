@@ -372,10 +372,6 @@
 #define VAR_PP QEGVAR(feedback,ppEffect)
 #define GET_PP(unit) (unit getVariable [VAR_PP, 0])
 
-#define IS_AIRPOISONED(unit) (unit getVariable [QEGVAR(chemical,airPoisoning), false])
-#define IN_TEARGAS(unit) (unit getVariable [QEGVAR(chemical,CSGas), 0])
-
-
 #define KAT_DEFAULT_HEART_RATE(unit) (_unit getVariable [QEGVAR(circulation,defaultHeartRate), 80])
 
 //Ophthalmology

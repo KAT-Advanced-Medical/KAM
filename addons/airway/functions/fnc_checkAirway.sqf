@@ -134,16 +134,6 @@ switch (true) do {
 if ((((_patient getVariable [QGVAR(occlusion), [0, 0, 0]]) findIf { _x != 0 }) != -1) && (((_patient getVariable [QGVAR(obstruction), [0, 0, 0]]) findIf { _x != 0 }) != -1) && GVAR(autoTriage)) then {_patient setVariable [QACEGVAR(medical,triageLevel), 0, true]};
 
 
-
-if (_patient getVariable [QEGVAR(chemical,airPoisoning), false]) exitWith {
-    _hintAirwayStatus = LLSTRING(AirwayStatus_Poison);
-
-    [_hintAirwayStatus, _hintSize, _medic, _hintWidth] call ACEFUNC(common,displayTextStructured);
-    [_patient, "quick_view", LSTRING(checkAirway_log)] call EFUNC(circulation,removeLog);
-    [_patient, "quick_view", LSTRING(checkAirway_poisonLog)] call EFUNC(circulation,removeLog);
-    [_patient, "quick_view", LSTRING(checkAirway_poisonLog), [[_medic] call ACEFUNC(common,getName)]] call ACEFUNC(medical_treatment,addToLog);
-};
-
 [_hintAirwayStatus, _hintSize, _medic, _hintWidth] call ACEFUNC(common,displayTextStructured);
 
 [_patient, "quick_view", LSTRING(checkAirway_log)] call EFUNC(circulation,removeLog);

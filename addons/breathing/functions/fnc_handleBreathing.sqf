@@ -47,7 +47,7 @@ private _hasCatastrophicAirway = ((_catastrophicState select 0) || (_catastrophi
     private _airway = true;
     private _breathing = true;
 
-    if ((_unit getVariable [QEGVAR(chemical,airPoisoning), false]) || (_tension select 0) || (_tension select 1) || (_hemo select 0) || (_hemo select 1)) then {
+    if ((_tension select 0) || (_tension select 1) || (_hemo select 0) || (_hemo select 1)) then {
         _breathing = false;
     };
     private _noETT = (_patient getVariable [QEGVAR(airway,airway_item), ""] isNotEqualTo "ETT");
