@@ -555,5 +555,41 @@
         <Key ID="STR_KAT_Hitpoints_removalTimeIsraeli_DisplayName">
             <English>Israeli Bandage Removal Time</English>
         </Key>
+        <Key ID="STR_KAT_Hitpoints_Apply_HastyTourniquet">
+            <English>Apply Hasty Tourniquet</English>
+        </Key>
+        <Key ID="STR_KAT_Hitpoints_Applying_HastyTourniquet">
+            <English>Applying Hasty Tourniquet...</English>
+        </Key>
+        <Key ID="STR_KAT_Hitpoints_Apply_DelibrateTourniquet">
+            <English>Apply Delibrate Tourniquet</English>
+        </Key>
+        <Key ID="STR_KAT_Hitpoints_Applying_DelibrateTourniquet">
+            <English>Applying Delibrate Tourniquet...</English>
+        </Key>
+        <Key ID="STR_KAT_Hitpoints_TreatmentTimeDelibrateTourniquet_Description">
+            <English>Time, in seconds, required to apply a Delibrate tourniquet.</English>
+        </Key>
+        <Key ID="STR_KAT_Hitpoints_TreatmentTimeDelibrateTourniquet_DisplayName">
+            <English>Delibrate Tourniquet Treatment Time</English>
+        </Key>
+        <Key ID="STR_KAT_Hitpoints_TreatmentTimeHastyTourniquet_Description">
+            <English>Time, in seconds, required to apply a Hasty tourniquet.</English>
+        </Key>
+        <Key ID="STR_KAT_Hitpoints_TreatmentTimeHastyTourniquet_DisplayName">
+            <English>Hasty Tourniquet Treatment Time</English>
+        </Key>
+        <Key ID="STR_KAT_Hitpoints_TreatmentTimeTrainedHastyTourniquet_Description">
+            <English>Time, in seconds, required for a unit exceeding required training level to apply a Hasty tourniquet.</English>
+        </Key>
+        <Key ID="STR_KAT_Hitpoints_TreatmentTimeTrainedHastyTourniquet_DisplayName">
+            <English>Skilled Hasty Tourniquet Treatment Time</English>
+        </Key>
+        <Key ID="STR_KAT_Hitpoints_TreatmentTimeTrainedDelibrateTourniquet_Description">
+            <English>Time, in seconds, required for a unit exceeding required training level to apply a Delibrate tourniquet.</English>
+        </Key>
+        <Key ID="STR_KAT_Hitpoints_TreatmentTimeTrainedDelibrateTourniquet_DisplayName">
+            <English>Skilled Delibrate Tourniquet Treatment Time</English>
+        </Key>
     </Package>
 </Project>

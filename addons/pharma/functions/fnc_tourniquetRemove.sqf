@@ -24,6 +24,7 @@ TRACE_3("tourniquetRemove",_medic,_patient,_bodyPart);
 // Remove tourniquet from body part, exit if no tourniquet applied
 private _partIndex = ALL_BODY_PARTS find toLower _bodyPart;
 private _tourniquets = GET_TOURNIQUETS(_patient);
+private _tourniquetArray = GET_KAT_TOURNIQUETS(_patient);
 
 if (_tourniquets select _partIndex == 0) exitWith {
     if (_medic == ACE_player) then {
@@ -33,6 +34,8 @@ if (_tourniquets select _partIndex == 0) exitWith {
 
 _tourniquets set [_partIndex, 0];
 _patient setVariable [VAR_TOURNIQUET, _tourniquets, true];
+_tourniquetArray set [_partIndex, 0];
+_patient setVariable [VAR_KAT_TOURNIQUET, _tourniquetArray, true];
 
 [_patient] call ACEFUNC(medical_status,updateWoundBloodLoss);
 
@@ -57,7 +60,7 @@ if (_medic call ACEFUNC(common,isPlayer)) then {
 private _occludedMedications = _patient getVariable [QACEGVAR(medical,occludedMedications), []];
 private _arrayModified = false;
 
-if (((_patient getVariable [QGVAR(IV), [0,0,0,0,0,0,0,0,0,0,0,0]]) select _partIndex) isNotEqualTo 7) then {
+if !(((_patient getVariable [QGVAR(IV), [0,0,0,0,0,0,0,0,0,0,0,0]]) select _partIndex) in [7, 8, 9]) then {
     {
         _x params ["_bodyPartN", "_medication", "_unit"];
 

@@ -152,9 +152,6 @@ class ACE_Medical_Treatment_Actions {
         treatmentTime = QGVAR(bindTime);
         items[] = {"kat_Pelvic_Binder"};
     };
-    class ApplyTourniquet: BasicBandage {
-        allowedSelections[] = {"LeftArm", "RightArm", "LeftLeg", "RightLeg", "UpperLeftArm", "UpperRightArm", "UpperLeftLeg", "UpperRightLeg"};
-    };
     class Splint: BasicBandage {
         allowedSelections[] = {"LeftArm", "RightArm", "LeftLeg", "RightLeg", "UpperLeftArm", "UpperRightArm", "UpperLeftLeg", "UpperRightLeg"};
     };
@@ -225,5 +222,24 @@ class ACE_Medical_Treatment_Actions {
         treatmentTime = QGVAR(removalTimeIsraeli);
         condition = QUOTE([ARR_3(_patient,_bodyPart,'Israeli_Bandage')] call FUNC(hasRemovableBandage));
         callbackSuccess = QUOTE([ARR_3(_patient,_bodyPart,'Israeli_Bandage')] call FUNC(removeBandage));
+    };
+    class ApplyTourniquet: BasicBandage {
+        allowedSelections[] = {"LeftArm", "RightArm", "LeftLeg", "RightLeg", "UpperLeftArm", "UpperRightArm", "UpperLeftLeg", "UpperRightLeg"};
+        condition = "false";
+    };
+    class ApplyHastyTourniquet: ApplyTourniquet {
+        displayName = CSTRING(Apply_HastyTourniquet);
+        displayNameProgress = CSTRING(Applying_HastyTourniquet);
+        treatmentTime = QGVAR(treatmentTimeHastyTourniquet);
+        treatmentTimeTrained = QGVAR(treatmentTimeTrainedHastyTourniquet);
+        callbackSuccess = QUOTE([ARR_8(_medic, _patient, _bodyPart, _classname, _itemUser, _usedItem, _createLitter, 1)] call FUNC(tourniquet));
+    };
+    class ApplyDelibrateTourniquet: ApplyTourniquet {
+        displayName = CSTRING(Apply_DelibrateTourniquet);
+        displayNameProgress = CSTRING(Applying_DelibrateTourniquet);
+        treatmentTime = QGVAR(treatmentTimeTrainedDelibrateTourniquet);
+        treatmentTimeTrained = QGVAR(treatmentTimeTrainedDelibrateTourniquet);
+        callbackSuccess = QUOTE([ARR_8(_medic, _patient, _bodyPart, _classname, _itemUser, _usedItem, _createLitter, 2)] call FUNC(tourniquet));
+        allowedUnderwater = 0;
     };
 };

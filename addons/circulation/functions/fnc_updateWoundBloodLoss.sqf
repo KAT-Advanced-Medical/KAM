@@ -19,7 +19,7 @@
 params ["_unit"];
 
 TRACE_1("updateWoundBloodLoss",_unit);
-private _tourniquets = GET_TOURNIQUETS(_unit);
+private _tourniquets = GET_KAT_TOURNIQUETS(_unit);
 private _occlusionMap = [
     [4, [4, 5]],
     [5, [5]],
@@ -41,7 +41,8 @@ private _bodyExternalPartBleeding = [0,0,0,0,0,0,0,0,0,0,0,0];
 
     private _idx = _occlusionMap findIf { _x#0 == _partIndex };
     private _result = if (_idx != -1) then { _occlusionMap select _idx select 1 } else { [] };
-    private _isOccluded = { _tourniquets select _x != 0 } count _result > 0;
+    private _isOccluded = { _tourniquets select _x >= 1 } count _result > 0;
+    private _occlusionLevel = if (_result isNotEqualTo []) then { selectMax (_result apply { _tourniquets select _x }) } else { 1 };
     private _isPressureApplied = _pressureApplied > 0;
     if (!_isOccluded) then {
         private _partBleeding = 0;
@@ -54,16 +55,16 @@ private _bodyExternalPartBleeding = [0,0,0,0,0,0,0,0,0,0,0,0];
             if (_isPressureApplied) then {
                 switch (true) do {
                     case (_suffix == "Minor"): {
-                        _partBleeding = _partBleeding + ((_amountOf * _bleeding) * (_pressureApplied * 1.5));
+                        _partBleeding = _partBleeding + ((_amountOf * _bleeding) * (_pressureApplied * 1.5) * (1 - _occlusionLevel));
                     };
                     case (_suffix == "Medium"): {
-                        _partBleeding = _partBleeding + ((_amountOf * _bleeding) * _pressureApplied);
+                        _partBleeding = _partBleeding + ((_amountOf * _bleeding) * _pressureApplied * (1 - _occlusionLevel));
                     };
                     case (_suffix == "Large"): {
-                        _partBleeding = _partBleeding + ((_amountOf * _bleeding) * (_pressureApplied * 0.7));
+                        _partBleeding = _partBleeding + ((_amountOf * _bleeding) * (_pressureApplied * 0.7) * (1 - _occlusionLevel));
                     };
                     default {
-                        _partBleeding = _partBleeding + ((_amountOf * _bleeding) * _pressureApplied);
+                        _partBleeding = _partBleeding + ((_amountOf * _bleeding) * _pressureApplied * (1 - _occlusionLevel));
                     };
                 };
             } else {

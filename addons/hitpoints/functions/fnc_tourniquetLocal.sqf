@@ -16,14 +16,23 @@
  * Public: No
  */
 
-params ["_patient", "_bodyPart"];
+params ["_patient", "_bodyPart", "_type"];
 TRACE_2("tourniquetLocal %1 %2",_patient,_bodyPart);
 diag_log format ["tourniquetLocal %1 %2", _patient,_bodyPart];
 private _partIndex = ALL_BODY_PARTS find toLowerANSI _bodyPart;
 
 private _tourniquets = GET_TOURNIQUETS(_patient);
+private _tourniquetArray = GET_KAT_TOURNIQUETS(_patient);
+if (_type == 1) then {
+    private _amount = random [0.7, 0.8, 1];
+    _tourniquetArray set [_partIndex, _amount];
+} else {
+    _tourniquetArray set [_partIndex, 2];
+};
+
 _tourniquets set [_partIndex, CBA_missionTime];
 _patient setVariable [VAR_TOURNIQUET, _tourniquets, true];
+_patient setVariable [VAR_KAT_TOURNIQUET, _tourniquetArray, true];
 
 [_patient] call ACEFUNC(medical_status,updateWoundBloodLoss);
 

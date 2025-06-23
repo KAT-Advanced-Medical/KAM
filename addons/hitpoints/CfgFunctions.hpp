@@ -55,6 +55,9 @@ class CfgFunctions {
             class tourniquetLocal {
                 file = QPATHTOF(functions\fnc_tourniquetLocal.sqf);
             };
+            class tourniquet {
+                file = QPATHTOF(functions\fnc_tourniquet.sqf);
+            };
             class hasTourniquetAppliedTo {
                 file = QPATHTOF(functions\fnc_hasTourniquetAppliedTo.sqf);
             };

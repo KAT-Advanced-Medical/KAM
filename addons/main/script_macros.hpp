@@ -207,8 +207,10 @@
 #undef GET_DAMAGE_THRESHOLD
 #define GET_DAMAGE_THRESHOLD(unit)  ((unit getVariable [QACEGVAR(medical,damageThreshold), [ACEGVAR(medical,AIDamageThreshold),ACEGVAR(medical,playerDamageThreshold)] select (isPlayer unit)]) * (GET_OPIOID_FACTOR(unit) + 1))
 
+#define VAR_KAT_TOURNIQUET        QEGVAR(hitpoints,tourniquets)
 #define DEFAULT_TOURNIQUET_VALUES   [0,0,0,0,0,0,0,0,0,0,0,0]
 #define GET_TOURNIQUETS(unit)       (unit getVariable [VAR_TOURNIQUET, DEFAULT_TOURNIQUET_VALUES])
+#define GET_KAT_TOURNIQUETS(unit)       (unit getVariable [VAR_KAT_TOURNIQUET, DEFAULT_TOURNIQUET_VALUES])
 #define GET_SURGICAL_TOURNIQUETS(unit)       (unit getVariable [QEGVAR(surgery,surgicalBlock), DEFAULT_TOURNIQUET_VALUES])
 #define HAS_TOURNIQUET_APPLIED_ON(unit,index) ((GET_TOURNIQUETS(unit) select index) > 0 )
 #define HAS_TOURNIQUET_ACTUAL(unit,index) (((GET_TOURNIQUETS(unit) select index) > 0) && ((GET_SURGICAL_TOURNIQUETS(unit) select index) < 1))

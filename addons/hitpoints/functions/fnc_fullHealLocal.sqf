@@ -49,6 +49,7 @@ _patient setVariable [VAR_BLOOD_VOL, DEFAULT_BLOOD_VOLUME, true];
         [_patient, "ACE_tourniquet"] call ACEFUNC(common,addToInventory);
     };
 } forEach GET_TOURNIQUETS(_patient);
+_patient setVariable [VAR_KAT_TOURNIQUET, DEFAULT_TOURNIQUET_VALUES, true];
 _patient setVariable [VAR_TOURNIQUET, DEFAULT_TOURNIQUET_VALUES, true];
 _patient setVariable [QACEGVAR(medical,occludedMedications), nil, true];
 

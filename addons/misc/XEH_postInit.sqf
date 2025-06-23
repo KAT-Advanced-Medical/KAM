@@ -28,7 +28,7 @@ if (GVAR(incompatibilityWarning)) then {
     call FUNC(incompatibilityWarning);
 };
 
-[QACEGVAR(medical_treatment,tourniquetLocal), LINKFUNC(setTourniquetTime)] call CBA_fnc_addEventHandler;
+[QEGVAR(hitpoints,tourniquetLocal), LINKFUNC(setTourniquetTime)] call CBA_fnc_addEventHandler;
 [QACEGVAR(medical_treatment,tourniquetRemove), LINKFUNC(removeTourniquetTime)] call CBA_fnc_addEventHandler;
 
 ["kat_Armband_Red_Cross_Item", "kat_Armband_Red_Cross_Goggles"] call ACEFUNC(common,registerItemReplacement);

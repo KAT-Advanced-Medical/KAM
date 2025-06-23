@@ -18,6 +18,43 @@
 ] call CBA_fnc_addSetting;
 
 [
+    QGVAR(treatmentTimeHastyTourniquet),
+    "SLIDER",
+    [LSTRING(TreatmentTimeHastyTourniquet_DisplayName), LSTRING(TreatmentTimeHastyTourniquet_Description)],
+    [CBA_SETTINGS_CAT, ELSTRING(GUI,SubCategory_Basic)],
+    [0.1, 60, 7, 1],
+    true
+] call CBA_fnc_addSetting;
+
+[
+    QGVAR(treatmentTimeTrainedHastyTourniquet),
+    "SLIDER",
+    [LSTRING(TreatmentTimeTrainedHastyTourniquet_DisplayName), LSTRING(TreatmentTimeTrainedHastyTourniquet_Description)],
+    [CBA_SETTINGS_CAT, ELSTRING(GUI,SubCategory_Basic)],
+    [0.1, 60, 7, 1],
+    true
+] call CBA_fnc_addSetting;
+
+[
+    QGVAR(treatmentTimeDelibrateTourniquet),
+    "SLIDER",
+    [LSTRING(TreatmentTimeDelibrateTourniquet_DisplayName), LSTRING(TreatmentTimeDelibrateTourniquet_Description)],
+    [CBA_SETTINGS_CAT, ELSTRING(GUI,SubCategory_Basic)],
+    [0.1, 60, 7, 1],
+    true
+] call CBA_fnc_addSetting;
+
+[
+    QGVAR(treatmentTimeTrainedDelibrateTourniquet),
+    "SLIDER",
+    [LSTRING(TreatmentTimeTrainedDelibrateTourniquet_DisplayName), LSTRING(TreatmentTimeTrainedDelibrateTourniquet_Description)],
+    [CBA_SETTINGS_CAT, ELSTRING(GUI,SubCategory_Basic)],
+    [0.1, 60, 7, 1],
+    true
+] call CBA_fnc_addSetting;
+
+
+[
     QGVAR(ArterialChance),
     "SLIDER",
     [LLSTRING(SETTING_ArterialChance), LLSTRING(SETTING_ArterialChance_DESC)],
