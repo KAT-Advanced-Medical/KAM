@@ -54,7 +54,7 @@ GVAR(airwayInjury) = [
 
 GVAR(airwayInjuryColor) = [
     "ColorCorrections",
-    13503,
+    213703,
     [1, 1, 0,  [0, 0, 0, 0],  [1, 1, 1, 1],  [0.2, 0.2, 0.2, 0]]
 ] call _fnc_createEffect;
 

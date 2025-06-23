@@ -60,7 +60,6 @@ if (((_obstruction || _occlusion) || _hasCatastrophicAirway) && _noSurgicalAirwa
 };
 private _airwayState = ((!_airway) || (!_breathing));
 // - Visual effects -----------------------------------------------------------
-
 [!_unconscious, _opioid] call FUNC(effectOpioid);
 
 [
@@ -70,11 +69,11 @@ private _airwayState = ((!_airway) || (!_breathing));
 [!_unconscious, _airwayState] call FUNC(effectAirways);
 private _time = ACE_player getVariable [QGVAR(airwayInjuryColorTime), 0];
 private _intensity = 0;
+private _timeFixed = 0;
 if (_time != 0) then {
-    private _timeFixed = CBA_missionTime - _time;
-    _intensity = linearConversion [0, 40, _timeFixed, 0, 1, true];
+    _timeFixed = CBA_missionTime - _time;
 };
-[!_unconscious, _airwayState, _intensity] call FUNC(effectAirwaysColor);
+[!_unconscious, _airwayState, linearConversion [0, 20, _timeFixed, 0, 1, true]] call FUNC(effectAirwaysColor);
 [!_unconscious, _wheeze, ACE_player] call FUNC(effectBreathingWheeze);
 [!_unconscious, _eyeInjurySeverity] call FUNC(effectEyeInjury);
 [!_unconscious, _eyeInjuries, _manualUpdate] call FUNC(effectHurtEye);

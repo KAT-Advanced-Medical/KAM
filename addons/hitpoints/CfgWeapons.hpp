@@ -131,7 +131,7 @@ class CfgWeapons {
             mass = 0.05;
         };
     };
-    class kat_Burn_Dressing: ACE_ItemCore {
+    /*class kat_Burn_Dressing: ACE_ItemCore {
         scope = 2;
         author = "Cplhardcore";
         displayName = CSTRING(Burn_Dressing_Display);
@@ -143,7 +143,7 @@ class CfgWeapons {
         class ItemInfo: CBA_MiscItem_ItemInfo {
             mass = 0.3;
         };
-    };
+    };*/
     class kat_Ice_Pack: ACE_ItemCore {
         scope = 2;
         author = "Cplhardcore";

@@ -18,15 +18,16 @@
  */
 
 params ["_enable", "_enabled", "_intensity"];
-
+systemChat str _intensity;
 if ((!_enable) || (!_enabled)) exitWith {
-    if (GVAR(airwayInjuryColor)!= -1) then { GVAR(airwayInjuryColor) ppEffectEnable false; };
+    GVAR(airwayInjuryColor) ppEffectEnable false;
     ACE_player setVariable [QGVAR(airwayInjuryColorTime), 0];
 };
 private _time = ACE_player getVariable [QGVAR(airwayInjuryColorTime), 0];
 if (_time == 0) then {
     ACE_player setVariable [QGVAR(airwayInjuryColorTime), CBA_missionTime];
 };
+
 GVAR(airwayInjuryColor) ppEffectEnable true;
 GVAR(airwayInjuryColor) ppEffectAdjust [1, 1, 0, [0, 0, 0, 0],  [1, 1, 1, 1 - _intensity],  [0.2, 0.2, 0.2, 0]];
 GVAR(airwayInjuryColor) ppEffectCommit 1;
