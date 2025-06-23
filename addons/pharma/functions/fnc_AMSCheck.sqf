@@ -13,6 +13,6 @@
  */
 private _medicationsRequireInsIV = GVAR(MedicationsRequireInsIV);
 private _amsEnabled = true;
-private _removeIV = FUNC(removeIV);
+private _removeIV = FUNC(removeIVCheck);
     
 [false, true] select ((!_medicationsRequireInsIV || _removeIV));

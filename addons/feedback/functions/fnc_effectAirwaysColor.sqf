@@ -18,7 +18,6 @@
  */
 
 params ["_enable", "_enabled", "_intensity"];
-systemChat str _intensity;
 if ((!_enable) || (!_enabled)) exitWith {
     GVAR(airwayInjuryColor) ppEffectEnable false;
     ACE_player setVariable [QGVAR(airwayInjuryColorTime), 0];

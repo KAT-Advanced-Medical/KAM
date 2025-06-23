@@ -12,7 +12,7 @@ class ACE_Medical_Treatment_Actions {
     class BloodIV: BasicBandage {
         allowedSelections[] = {"Chest", "LeftArm", "RightArm", "UpperLeftLeg", "UpperRightLeg", "UpperLeftArm", "UpperRightArm", "LeftLeg", "RightLeg", "Neck"};
         medicRequired = QUOTE(ace_medical_treatment_medicIV);
-        condition = QUOTE(!(GVAR(RequireInsIV)) || FUNC(removeIV));
+        condition = QUOTE(!(GVAR(RequireInsIV)) || FUNC(removeIVCheck));
         callbackSuccess = "[_medic, _patient, _bodyPart, _className, _itemUser, _usedItem] call ace_medical_treatment_fnc_ivBag; [_patient, -800, 16, _className] call kat_pharma_fnc_fluid;";
     };
     class BloodIV_500: BloodIV {
