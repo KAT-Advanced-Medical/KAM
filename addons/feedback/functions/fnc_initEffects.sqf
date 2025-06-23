@@ -52,6 +52,12 @@ GVAR(airwayInjury) = [
     [1, 1, 0, [0, 0, 0, 0], [0, 0, 0, 1], [0.33, 0.33, 0.33, 0], [0.55, 0.5, 0, 0, 0, 0, 4]]
 ] call _fnc_createEffect;
 
+GVAR(airwayInjuryColor) = [
+    "ColorCorrections",
+    13503,
+    [1, 1, 0,  [0, 0, 0, 0],  [1, 1, 1, 1],  [0.2, 0.2, 0.2, 0]]
+] call _fnc_createEffect;
+
 // - Eye Injury -----------------------------------------------------------
 GVAR(ppBlurBlink) = [
     "DynamicBlur",

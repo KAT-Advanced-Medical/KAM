@@ -232,6 +232,7 @@ class ACE_Medical_Treatment_Actions {
         displayNameProgress = CSTRING(Applying_HastyTourniquet);
         treatmentTime = QGVAR(treatmentTimeHastyTourniquet);
         treatmentTimeTrained = QGVAR(treatmentTimeTrainedHastyTourniquet);
+        condition = QUOTE(!([ARR_2(_patient,_bodyPart)] call ACEFUNC(medical_treatment,hasTourniquetAppliedTo)) && ([ARR_2(_patient,_bodyPart)] call EFUNC(surgery,hasAdditionalTourniquetAppliedTo)));
         callbackSuccess = QUOTE([ARR_8(_medic, _patient, _bodyPart, _classname, _itemUser, _usedItem, _createLitter, 1)] call FUNC(tourniquet));
     };
     class ApplyDelibrateTourniquet: ApplyTourniquet {
@@ -239,6 +240,7 @@ class ACE_Medical_Treatment_Actions {
         displayNameProgress = CSTRING(Applying_DelibrateTourniquet);
         treatmentTime = QGVAR(treatmentTimeTrainedDelibrateTourniquet);
         treatmentTimeTrained = QGVAR(treatmentTimeTrainedDelibrateTourniquet);
+        condition = QUOTE(!([ARR_2(_patient,_bodyPart)] call ACEFUNC(medical_treatment,hasTourniquetAppliedTo)) && ([ARR_2(_patient,_bodyPart)] call EFUNC(surgery,hasAdditionalTourniquetAppliedTo)));
         callbackSuccess = QUOTE([ARR_8(_medic, _patient, _bodyPart, _classname, _itemUser, _usedItem, _createLitter, 2)] call FUNC(tourniquet));
         allowedUnderwater = 0;
     };

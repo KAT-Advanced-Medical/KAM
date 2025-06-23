@@ -1,9 +1,7 @@
 class ACE_Medical_Treatment_Actions {
     class BasicBandage;
     class CheckPulse;
-    class ApplyTourniquet: BasicBandage {
-        condition = QUOTE(!([ARR_2(_patient,_bodyPart)] call ACEFUNC(medical_treatment,hasTourniquetAppliedTo)) && ([ARR_2(_patient,_bodyPart)] call FUNC(hasAdditionalTourniquetAppliedTo)));
-    };
+    class ApplyTourniquet;
     class RemoveTourniquet: ApplyTourniquet {
         condition = QUOTE(([ARR_2(_patient,_bodyPart)] call ACEFUNC(medical_treatment,hasTourniquetAppliedTo)) && ([ARR_2(_patient,_bodyPart)] call FUNC(hasAdditionalTourniquetAppliedTo)));
     };

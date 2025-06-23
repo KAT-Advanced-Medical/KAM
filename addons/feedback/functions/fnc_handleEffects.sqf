@@ -68,8 +68,14 @@ private _airwayState = ((!_airway) || (!_breathing));
     linearConversion [GVAR(effectLowSpO2), EGVAR(breathing,SpO2_dieValue), _spO2, 0, 1, true]
 ] call FUNC(effectLowSpO2);
 [!_unconscious, _airwayState] call FUNC(effectAirways);
-
-[!_unconscious, _wheeze, ACE_player] call (effectBreathingWheeze);
+private _time = ACE_player getVariable [QGVAR(airwayInjuryColorTime), 0];
+private _intensity = 0;
+if (_time != 0) then {
+    private _timeFixed = CBA_missionTime - _time;
+    _intensity = linearConversion [0, 40, _timeFixed, 0, 1, true];
+};
+[!_unconscious, _airwayState, _intensity] call FUNC(effectAirwaysColor);
+[!_unconscious, _wheeze, ACE_player] call FUNC(effectBreathingWheeze);
 [!_unconscious, _eyeInjurySeverity] call FUNC(effectEyeInjury);
 [!_unconscious, _eyeInjuries, _manualUpdate] call FUNC(effectHurtEye);
 
