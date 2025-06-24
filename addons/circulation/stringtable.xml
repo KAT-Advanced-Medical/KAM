@@ -1161,6 +1161,7 @@
             <German>Blutdruck mit Manschette prüfen</German>
             <Japanese>血圧カフで血圧を確認</Japanese>
             <Chinese>用血壓計量血壓</Chinese>
+            <Dutch>Meet bloeddruk met manchet</Dutch>
         </Key>
         <Key ID="STR_KAT_Circulation_Actions_CheckHRSteth">
             <English>Check HR w/ Stethoscope</English>
@@ -1170,6 +1171,7 @@
             <German>Herzfrequenz mit Stethoskop prüfen</German>
             <Japanese>聴診器で脈拍を確認</Japanese>
             <Chinese>用聽診器檢查心率</Chinese>
+            <Dutch>Meet hartfrequentie met stethoscoop</Dutch>
         </Key>
         <Key ID="STR_KAT_Circulation_Actions_CheckingBloodPressureCuff">
             <English>Checking BP with BP Cuff</English>
@@ -1179,6 +1181,7 @@
             <German>Überprüfung des Blutdruck mittels Manschette</German>
             <Japanese>血圧カフで血圧を確認中</Japanese>
             <Chinese>用血壓計量血壓中</Chinese>
+            <Dutch>Bloeddruk wordt gemeten met manchet</Dutch>
         </Key>
         <Key ID="STR_KAT_Circulation_Actions_CheckingHRSteth">
             <English>Checking HR with Stethoscope</English>
@@ -1188,6 +1191,7 @@
             <German>Überprüfung der HF mittels Stethoskop</German>
             <Japanese>聴診器で脈拍を確認中</Japanese>
             <Chinese>用聽診器檢查心率中</Chinese>
+            <Dutch>Hartfrequentie wordt gemeten met stethoscoop</Dutch>
         </Key>
         <Key ID="STR_KAT_Circulation_Activity_AttachPads">
             <English>%1 attached defibrillator pads (%2)</English>
@@ -1345,6 +1349,7 @@
             <German>Medizinisches Gerät zur genauen Bestimmung des Blutdrucks</German>
             <Japanese>患者の血圧を正確に測定する医療機器</Japanese>
             <Chinese>一種準確測量病人血壓的醫療裝置</Chinese>
+            <Dutch>Een medisch hulpmiddel om de bloeddruk van een patiënt accuraat te meten</Dutch>
         </Key>
         <Key ID="STR_KAT_Circulation_BPCuff_display">
             <English>Blood Pressure Cuff</English>
@@ -1354,6 +1359,7 @@
             <German>Blutdruckmanschette</German>
             <Japanese>血圧カフ</Japanese>
             <Chinese>血壓計</Chinese>
+            <Dutch>Bloeddrukmanchet</Dutch>
         </Key>
         <Key ID="STR_KAT_Circulation_BloodIV_A">
             <English>Blood IV (1000ml) BT: A+</English>
@@ -1807,6 +1813,7 @@
             <German>%1 per Palpitation</German>
             <Japanese>触診による拡張期血圧は %1</Japanese>
             <Chinese>比觸診高 %1</Chinese>
+            <Dutch>%1 per palpitatie</Dutch>
         </Key>
         <Key ID="STR_KAT_Circulation_CPR_MaxChance_Default">
             <English>Max CPR Chance for Default</English>
@@ -1935,6 +1942,7 @@
             <Japanese>モニタリングする装置を変更</Japanese>
             <Chinese>更換監控設備</Chinese>
             <Chinesesimp>更换监控设备</Chinesesimp>
+            <Dutch>Verander monitoringsapparaat</Dutch>
         </Key>
         <Key ID="STR_KAT_Circulation_Check_Bloodpressure_Output_Palp">
             <English>You find a blood pressure of %3 over Palp</English>
@@ -1944,6 +1952,7 @@
             <German>Du misst einen Blutdruck von %3 per Palpitation</German>
             <Japanese>触診で計測した拡張期血圧は %3 でした</Japanese>
             <Chinese>你發現血壓比觸診高 %3</Chinese>
+            <Dutch>Je vindt een bloeddruk van %3 per palpitatie</Dutch>
         </Key>
         <Key ID="STR_KAT_Circulation_Check_Pulse_Output">
             <English>You find a Pulse Rate of %2</English>
@@ -1953,6 +1962,7 @@
             <German>Du misst eine Herzfrequenz von %2</German>
             <Japanese>計測した脈拍は %2 でした</Japanese>
             <Chinese>你發現脈搏率為 %2</Chinese>
+            <Dutch>Je vindt een hartfrequentie van %2</Dutch>
         </Key>
         <Key ID="STR_KAT_Circulation_Defibrillator_Action_CancelCharge">
             <English>Cancel Charge</English>
@@ -2300,6 +2310,7 @@
             <German>%1 PPM</German>
             <Japanese>%1 PPM</Japanese>
             <Chinese>%1 PPM</Chinese>
+            <Dutch>%1 PPM</Dutch>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_AEDStation_AllowInteraction">
             <English>Allow AED/X Station Interaction</English>
@@ -2562,6 +2573,7 @@
             <Italian>Abilità la possibilità di pressione prolungata di H e T durante l'arresto</Italian>
             <German>H&amp;Ts halten Herzstillstand aufrecht</German>
             <Japanese>心停止回復のH&amp;T症状による阻害を有効化</Japanese>
+            <Dutch>H&amp;Ts voorkomen herstel uit hartstilstand</Dutch>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_AdvRhythm_Hardcore_Enable">
             <English>Hardcore Rhythms</English>
@@ -2597,6 +2609,7 @@
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_AdvRhythm_PEAEnabled">
             <English>Enable PEA</English>
+            <Dutch>Zet PEA aan</Dutch>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_AdvRhythm_VTChance">
             <English>VT Chance</English>
@@ -2754,6 +2767,7 @@
             <German>Blutdruckmanschette erlauben</German>
             <Japanese>血圧カフの許可</Japanese>
             <Chinese>允許使用血壓計</Chinese>
+            <Dutch>Bloeddruksmanchet toestaan</Dutch>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_BPCuff_DESC">
             <English>Training Level for use of the BP Cuff</English>
@@ -2763,6 +2777,7 @@
             <German>Ausbildungslevel für Blutdruckmanschette</German>
             <Japanese>血圧カフの使用に必要な医療スキルのレベルを設定します。</Japanese>
             <Chinese>使用血壓計的訓練等級</Chinese>
+            <Dutch>Trainingsniveau dat benodigd is voor het gebruik van een bloeddruksmanchet</Dutch>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_CPR_CHANCES">
             <English>Enable different CPR chances per medical level</English>
@@ -2960,6 +2975,7 @@
             <German>Stethoskop zur Herzfrequenzmessung erlauben</German>
             <Japanese>聴診器による脈拍確認の許可</Japanese>
             <Chinese>允許使用聽診器檢查心率</Chinese>
+            <Dutch>Sta zelfcontrole met stethoscoop toe</Dutch>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_StethHR_DESC">
             <English>Training Level for use of the Stethoscope to measure HR</English>
@@ -2969,6 +2985,7 @@
             <German>Ausbildungslevel zur Herzfrequenzmessung mit Stethoskop</German>
             <Japanese>聴診器による脈拍の測定に必要な医療スキルのレベルを設定します。</Japanese>
             <Chinese>使用聽診器測量心率的訓練等級</Chinese>
+            <Dutch>Benodigd trainingsniveau voor het gebruik van een stethoscoop bij het meten van de hartfrequentie</Dutch>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_Threshold_SpO2Warning">
             <English>AED-X alarm SpO2 threshold</English>
@@ -2995,6 +3012,7 @@
             <Japanese>ABGテストを有効化</Japanese>
             <Chinese>啟用 ABG 測試</Chinese>
             <Chinesesimp>启用ABG测试</Chinesesimp>
+            <Dutch>Sta ABG tests toe</Dutch>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_abg_enable_DESC">
             <English>Enables ABG Testing and ACE Menu Visibility</English>
@@ -3005,6 +3023,7 @@
             <Japanese>ABGテストを有効化しACEメニューに表示します</Japanese>
             <Chinese>啟用 ABG 測試和 ACE 選單可見性</Chinese>
             <Chinesesimp>启用ABG测试和ACE菜单可见性</Chinesesimp>
+            <Dutch>Staat ABG tests toe en maakt deze zichtbaar in ACE menu's</Dutch>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_bloodtype_assign">
             <English>Blood Type Assignment</English>
@@ -3251,6 +3270,7 @@
             <German>Aktiviere Hardcore-Messung von Blutdruck und Puls</German>
             <Japanese>ハードコア脈拍および血圧診断を有効化</Japanese>
             <Chinese>啟用硬核心率和血壓診斷</Chinese>
+            <Dutch>Zet hardcore metingen van hartfrequentie en bloeddruk aan</Dutch>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_hardcoreDiagnose_DESC">
             <English>Makes measuring BP and HR imprecise without tools (Stethoscope or BP cuff)</English>
@@ -3260,6 +3280,7 @@
             <German>Ungenaue Blutdruck- und Pulsmessungen, wenn keine Werkzeuge verwendet werden (Manschette und Stethoskop)</German>
             <Japanese>器具(聴診器または血圧カフ)なしでは脈拍および血圧を正確に測定出来なくします</Japanese>
             <Chinese>在沒有工具（聽診器或血壓計）的情況下，測量血壓和心率會不準確</Chinese>
+            <Dutch>Maakt het meten van hartfrequentie en bloeddruk inaccuraat zonder hulpmiddelen (Stethoscoop of bloeddrukmanchet)</Dutch>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_tamponadeChance">
             <English>Chance for tamponade in penetrating wounds</English>
@@ -3619,6 +3640,7 @@
             <Italian>KAT - ADV Medica: Circolazione</Italian>
             <German>KAT - ADV Medical: Zirkulation</German>
             <Japanese>KAM - 循環器系 (Circulation)</Japanese>
+            <Dutch>KAT - ADV Medical: Circulatie</Dutch>
         </Key>
         <Key ID="STR_KAT_Circulation_crosspanel">
             <English>Blood groups cheat sheet</English>
@@ -3740,6 +3762,7 @@
             <German>Dauer der Blutdruckmessung mit Manschette</German>
             <Japanese>血圧カフによる血圧測定の所要時間</Japanese>
             <Chinese>用血壓計量血壓所需時間</Chinese>
+            <Dutch>Benodigde tijd voor bloeddrukmeting met manchet</Dutch>
         </Key>
         <Key ID="STR_KAT_Circulation_treatmentTime_StethHR">
             <English>Time to measure HR with a Stethoscope</English>
@@ -3749,6 +3772,7 @@
             <German>Dauer der Pulsmessung mit Stethoskop</German>
             <Japanese>聴診器による脈拍測定の所要時間</Japanese>
             <Chinese>用聽診器測量心率所需時間</Chinese>
+            <Dutch>Benodigde tijd voor het meten van hartfrequentie met een stethoscoop</Dutch>
         </Key>
     </Package>
 </Project>

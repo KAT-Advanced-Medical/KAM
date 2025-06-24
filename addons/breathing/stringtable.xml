@@ -112,6 +112,7 @@
             <Japanese>航空機酸素供給機に接続</Japanese>
             <Chinese>連接到飛機氧氣</Chinese>
             <Chinesesimp>连接到飞机氧气</Chinesesimp>
+            <Dutch>Met het zuurstofsysteem van het vliegtuig verbinden</Dutch>
         </Key>
         <Key ID="STR_KAT_Breathing_AttachPersonalOxygenTank">
             <English>Connect Personal Oxygen</English>
@@ -122,6 +123,7 @@
             <Japanese>個人用酸素供給機に接続</Japanese>
             <Chinese>連接個人氧氣</Chinese>
             <Chinesesimp>连接个人氧气</Chinesesimp>
+            <Dutch>Met persoonlijke zuurstoftank verbinden</Dutch>
         </Key>
         <Key ID="STR_KAT_Breathing_BVM_Desc_Short">
             <English>Bag-Valve-Mask, used to assist with breathing of unconscious patients</English>
@@ -196,6 +198,7 @@
             <Japanese>個人用酸素供給機の状態を確認</Japanese>
             <Chinese>檢查個人氧氣狀況</Chinese>
             <Chinesesimp>检查个人氧气状况</Chinesesimp>
+            <Dutch>Persoonlijke zuurstoftank controleren</Dutch>
         </Key>
         <Key ID="STR_KAT_Breathing_Check_Breathing">
             <English>Check Breathing</English>
@@ -540,6 +543,7 @@
             <Japanese>既に酸素供給機に接続済です</Japanese>
             <Chinese>氧氣已連接</Chinese>
             <Chinesesimp>氧气已连接</Chinesesimp>
+            <Dutch>Zuurstof is al verbonden</Dutch>
         </Key>
         <Key ID="STR_KAT_Breathing_PersonalOxygen_Desc_Short">
             <English>Personal oxygen tank for high altitude operations</English>
@@ -550,6 +554,7 @@
             <Japanese>高高度作戦に用いる個人用酸素ボンベ</Japanese>
             <Chinese>用於高空作業的個人氧氣罐</Chinese>
             <Chinesesimp>高空作业用便携式氧气罐</Chinesesimp>
+            <Dutch>Persoonlijke zuurstoftank voor operaties op grote hoogten</Dutch>
         </Key>
         <Key ID="STR_KAT_Breathing_PersonalOxygen_Disconnect">
             <English>Oxygen tank disconnected</English>
@@ -560,6 +565,7 @@
             <Japanese>酸素供給機から切断しました</Japanese>
             <Chinese>氧氣罐斷開</Chinese>
             <Chinesesimp>氧气罐断开</Chinesesimp>
+            <Dutch>Zuurstoftank is afgesloten</Dutch>
         </Key>
         <Key ID="STR_KAT_Breathing_PersonalOxygen_Display">
             <English>Personal Oxygen Tank</English>
@@ -570,6 +576,7 @@
             <Japanese>個人用酸素ボンベ</Japanese>
             <Chinese>個人氧氣罐</Chinese>
             <Chinesesimp>便携式氧气罐</Chinesesimp>
+            <Dutch>Persoonlijke zuurstoftank</Dutch>
         </Key>
         <Key ID="STR_KAT_Breathing_PersonalOxygen_Empty">
             <English>Oxygen Tank Empty</English>
@@ -580,6 +587,7 @@
             <Japanese>酸素ボンベは空です</Japanese>
             <Chinese>氧氣罐空</Chinese>
             <Chinesesimp>氧气罐空</Chinesesimp>
+            <Dutch>Zuurstoftank is leeg</Dutch>
         </Key>
         <Key ID="STR_KAT_Breathing_PersonalOxygen_Remaining">
             <English>Minutes Remaining</English>
@@ -590,6 +598,7 @@
             <Japanese>分残っています</Japanese>
             <Chinese>剩餘分鐘數</Chinese>
             <Chinesesimp>剩余分钟数</Chinesesimp>
+            <Dutch>Overgebleven minuten</Dutch>
         </Key>
         <Key ID="STR_KAT_Breathing_Pneumothorax">
             <English>Pneumothorax</English>
@@ -1002,6 +1011,7 @@
             <Japanese>個人用酸素供給機を切断</Japanese>
             <Chinese>斷開個人氧氣</Chinese>
             <Chinesesimp>断开个人氧气</Chinesesimp>
+            <Dutch>Persoonlijke zuurstoftank afsluiten</Dutch>
         </Key>
         <Key ID="STR_KAT_Breathing_Remove_NasalCannula_Log">
             <English>%1 removed Nasal Cannula</English>
@@ -1026,6 +1036,7 @@
             <Japanese>酸素マスクを取り外す</Japanese>
             <Chinese>取下氧氣面罩</Chinese>
             <Chinesesimp>取下氧气面罩</Chinesesimp>
+            <Dutch>Verwijder zuurstofmasker</Dutch>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_AVAIL_OXYHELMET">
             <English>Available Oxygen Helmets</English>
@@ -1035,6 +1046,7 @@
             <German>Verfügbare Sauerstoffhelme</German>
             <Japanese>利用可能な酸素供給ヘルメット</Japanese>
             <Chinese>可用氧氣頭盔</Chinese>
+            <Dutch>Beschikbare zuurstofhelmen</Dutch>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_AVAIL_OXYHELMET_DISC">
             <English>Sets which helmets can act as oxygen masks</English>
@@ -1044,6 +1056,7 @@
             <German>Legt fest, welche Helme als Sauerstoffhelme benutzt werden können</German>
             <Japanese>酸素マスクとして動作させたいヘルメットを指定します</Japanese>
             <Chinese>設定哪些頭盔可以作為氧氣面罩</Chinese>
+            <Dutch>Bepaald welke helmen als zuurstofmaskers gebruikt kunnen worden</Dutch>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_AVAIL_OXYMASK">
             <English>Available Oxygen Masks</English>
@@ -1054,6 +1067,7 @@
             <Japanese>利用可能な酸素供給マスク</Japanese>
             <Chinese>可用氧氣面罩</Chinese>
             <Chinesesimp>可用氧气面罩</Chinesesimp>
+            <Dutch>Beschikbare zuurstofmaskers</Dutch>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_AVAIL_OXYMASK_DISC">
             <English>Sets which goggles can act as oxygen masks</English>
@@ -1064,6 +1078,7 @@
             <Japanese>酸素マスクとして動作させたいゴーグルを指定します</Japanese>
             <Chinese>設定哪些護目鏡可以作為氧氣面罩</Chinese>
             <Chinesesimp>设置哪些护目镜可以作为氧气面罩</Chinesesimp>
+            <Dutch>Bepaald welke brillen als zuurstofmasker gebruikt kunnen worden</Dutch>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_Allow_NasalCannula">
             <English>Allow Nasal Cannula</English>
@@ -1310,6 +1325,7 @@
             <Japanese>PaCO2を有効化</Japanese>
             <Chinese>啟用PaCO2</Chinese>
             <Chinesesimp>启用PaCO2</Chinesesimp>
+            <Dutch>PaCO2 aanzetten</Dutch>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_PACO2_ENABLE_DESC">
             <English>Enables PaCO2 movement and effects on ph and breathing rate</English>
@@ -1320,6 +1336,7 @@
             <Japanese>phや呼吸速度へ影響を与えるPaCO2(動脈血二酸化炭素分圧)の変動を有効にします</Japanese>
             <Chinese>啟用PaCO2的變化及其對pH值和呼吸速率的影響</Chinese>
             <Chinesesimp>启用PaCO2的变化及其对pH值和呼吸速率的影响</Chinesesimp>
+            <Dutch>Activeert PaCO2 veranderingen en zijn effecten op pH en ademhalingsfrequentie</Dutch>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_PerfusionMultiplier">
             <English>Perfusion multiplier</English>
@@ -1925,6 +1942,7 @@
             <Japanese>"呼吸を確認"を有効化</Japanese>
             <Chinese>啟用檢查呼吸</Chinese>
             <Chinesesimp>启用检查呼吸</Chinesesimp>
+            <Dutch>Ademhalingscheck aanzetten</Dutch>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_enableCheckBreathing_DESC">
             <English>Whether or not Check Breathing medical action is enabled</English>
@@ -1935,6 +1953,7 @@
             <Japanese>呼吸を確認のアクションを可能にするかどうかを設定します</Japanese>
             <Chinese>檢查呼吸醫療動作是否啟用</Chinese>
             <Chinesesimp>检查呼吸医疗动作是否启用</Chinesesimp>
+            <Dutch>Bepaald of de Ademhalingscheck handeling aangezet is</Dutch>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_inspectChest_enable">
             <English>Enable Inspect Chest</English>
@@ -2555,6 +2574,7 @@
             <Japanese>航空機酸素供給機に接続済</Japanese>
             <Chinese>附在飛機氧氣上</Chinese>
             <Chinesesimp>附在飞机氧气上</Chinesesimp>
+            <Dutch>Met vliegtuig zuurstofsyteem verbonden</Dutch>
         </Key>
         <Key ID="STR_KAT_Breathing_aatKit_desc">
             <English>The Advanced Airway Treatment Kit is a single use kit designed to treat advanced airway conditions, like hemopneumothorax</English>
@@ -2650,6 +2670,7 @@
             <German>Sehr flach</German>
             <Japanese>とても浅い</Japanese>
             <Chinese>非常淺</Chinese>
+            <Dutch>Erg oppervlakkig</Dutch>
         </Key>
         <Key ID="STR_KAT_Breathing_breathing_isNormal">
             <English>Patient is breathing normally</English>
@@ -2691,6 +2712,7 @@
             <German>Die Atmung des Patienten ist sehr flach</German>
             <Japanese>患者の呼吸はとても浅い</Japanese>
             <Chinese>病人呼吸非常淺</Chinese>
+            <Dutch>Patients ademhaling is zeer oppervlakkig</Dutch>
         </Key>
         <Key ID="STR_KAT_Breathing_breathing_none">
             <English>Patient is not breathing</English>
@@ -2716,6 +2738,7 @@
             <German>AF: Normal</German>
             <Japanese>呼吸速度: 正常</Japanese>
             <Chinese>呼吸頻率：正常</Chinese>
+            <Dutch>AF: Normaal</Dutch>
         </Key>
         <Key ID="STR_KAT_Breathing_breathing_rrRapid">
             <English>RR: Rapid</English>
@@ -2725,6 +2748,7 @@
             <German>AF: Beschleunigt</German>
             <Japanese>呼吸速度: 速い</Japanese>
             <Chinese>呼吸頻率：快</Chinese>
+            <Dutch>AF: Versnelt</Dutch>
         </Key>
         <Key ID="STR_KAT_Breathing_breathing_rrSlow">
             <English>RR: Slow</English>
@@ -2734,6 +2758,7 @@
             <German>AF: Langsam</German>
             <Japanese>呼吸速度: 遅い</Japanese>
             <Chinese>呼吸頻率：慢</Chinese>
+            <Dutch>AF: Langzaam</Dutch>
         </Key>
         <Key ID="STR_KAT_Breathing_breathing_shallow">
             <English>Shallow</English>
@@ -2757,6 +2782,7 @@
             <Italian>KAT- ADV Medica: Respirazione</Italian>
             <German>KAT - ADV Medical: Atmung</German>
             <Japanese>KAM - 呼吸器系 (Breathing)</Japanese>
+            <Dutch>KAT - ADV Medical: Ademhaling</Dutch>
         </Key>
         <Key ID="STR_KAT_Breathing_chestseal_desc">
             <English>Chest Seal is engineered to treat, seal, and reseal open chest wounds under most circumstances.</English>
