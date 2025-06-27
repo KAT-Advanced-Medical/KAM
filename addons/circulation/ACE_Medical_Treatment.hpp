@@ -236,11 +236,11 @@ class ACE_Medical_Treatment {
         };
         class Morphine_IVInfusion: SalineIV_250 {
             painReduce = 0.2;
-            hrIncreaseLow[] = {-2, -4};
-            hrIncreaseNormal[] = {-3, -6};
-            hrIncreaseHigh[] = {-3, -9};
-            timeInSystem = 15;
-            timeTillMaxEffect = 3;
+            hrIncreaseLow[] = {-1, -3};
+            hrIncreaseNormal[] = {-1, -3};
+            hrIncreaseHigh[] = {-1, -4};
+            timeInSystem = 4;
+            timeTillMaxEffect = 2;
             dose = 1;
             viscosityChange = -3;
             opioidRelief = 1.1;
@@ -251,11 +251,11 @@ class ACE_Medical_Treatment {
         };
         class Epinephrine_IVInfusion: SalineIV_250 {
             painReduce = 0;
-            hrIncreaseLow[] = {1, 10};
-            hrIncreaseNormal[] = {3, 15};
-            hrIncreaseHigh[] = {7, 15};
-            timeInSystem = 10;
-            timeTillMaxEffect = 3;
+            hrIncreaseLow[] = {3, 5};
+            hrIncreaseNormal[] = {3, 6};
+            hrIncreaseHigh[] = {3, 7};
+            timeInSystem = 4;
+            timeTillMaxEffect = 2;
             dose = 1;
             alphaFactor = -0.05;
             volume = 250;
@@ -266,11 +266,11 @@ class ACE_Medical_Treatment {
         };
         class Etomidate_IVInfusion: SalineIV_250 {
             painReduce = 0.2;
-            hrIncreaseLow[] = {-3, -7};
-            hrIncreaseNormal[] = {-5, -11};
-            hrIncreaseHigh[] = {-8, -15};
-            timeInSystem = 7;
-            timeTillMaxEffect = 1;
+            hrIncreaseLow[] = {-1, -3};
+            hrIncreaseNormal[] = {-1, -3};
+            hrIncreaseHigh[] = {-1, -4};
+            timeInSystem = 4;
+            timeTillMaxEffect = 2;
             dose = 1;
             viscosityChange = 0;
             volume = 250;
@@ -280,10 +280,10 @@ class ACE_Medical_Treatment {
         };
         class Doxapram_IVInfusion: SalineIV_250 {
             painReduce = 0;
-            hrIncreaseLow[] = {3, 6};
-            hrIncreaseNormal[] = {5, 9};
-            hrIncreaseHigh[] = {5, 12};
-            timeInSystem = 10;
+            hrIncreaseLow[] = {1, 3};
+            hrIncreaseNormal[] = {1, 3};
+            hrIncreaseHigh[] = {1, 4};
+            timeInSystem = 4;
             timeTillMaxEffect = 2;
             dose = 1;
             respiratoryRate = 0.1;
@@ -294,10 +294,10 @@ class ACE_Medical_Treatment {
         };
         class Nitroglycerin_IVInfusion: SalineIV_250 {
             painReduce = 0;
-            hrIncreaseLow[] = {3, 6};
-            hrIncreaseNormal[] = {5, 9};
-            hrIncreaseHigh[] = {5, 12};
-            timeInSystem = 10;
+            hrIncreaseLow[] = {1, 3};
+            hrIncreaseNormal[] = {1, 3};
+            hrIncreaseHigh[] = {1, 4};
+            timeInSystem = 4;
             timeTillMaxEffect = 2;
             dose = 1;
             volume = 250;
@@ -310,10 +310,10 @@ class ACE_Medical_Treatment {
         };
         class Norepinephrine_IVInfusion: SalineIV_250 {
             painReduce = 0;
-            hrIncreaseLow[] = {3, 6};
-            hrIncreaseNormal[] = {5, 9};
-            hrIncreaseHigh[] = {5, 12};
-            timeInSystem = 10;
+            hrIncreaseLow[] = {1, 3};
+            hrIncreaseNormal[] = {1, 3};
+            hrIncreaseHigh[] = {1, 4};
+            timeInSystem = 4;
             timeTillMaxEffect = 2;
             dose = 1;
             volume = 250;
@@ -325,11 +325,11 @@ class ACE_Medical_Treatment {
         };
         class Morphine_IVInfusion100: SalineIV_250 {
             painReduce = 0.2;
-            hrIncreaseLow[] = {-2, -4};
-            hrIncreaseNormal[] = {-3, -6};
-            hrIncreaseHigh[] = {-3, -9};
-            timeInSystem = 15;
-            timeTillMaxEffect = 3;
+            hrIncreaseLow[] = {-1, -3};
+            hrIncreaseNormal[] = {-1, -3};
+            hrIncreaseHigh[] = {-1, -4};
+            timeInSystem = 4;
+            timeTillMaxEffect = 2;
             dose = 1;
             viscosityChange = -3;
             opioidRelief = 1.1;
@@ -340,11 +340,11 @@ class ACE_Medical_Treatment {
         };
         class Epinephrine_IVInfusion100: SalineIV_250 {
             painReduce = 0;
-            hrIncreaseLow[] = {1, 10};
-            hrIncreaseNormal[] = {3, 15};
-            hrIncreaseHigh[] = {7, 15};
-            timeInSystem = 10;
-            timeTillMaxEffect = 3;
+            hrIncreaseLow[] = {3, 5};
+            hrIncreaseNormal[] = {3, 6};
+            hrIncreaseHigh[] = {3, 7};
+            timeInSystem = 4;
+            timeTillMaxEffect = 2;
             dose = 1;
             alphaFactor = -0.05;
             volume = 100;
@@ -355,11 +355,11 @@ class ACE_Medical_Treatment {
         };
         class Etomidate_IVInfusion100: SalineIV_250 {
             painReduce = 0.2;
-            hrIncreaseLow[] = {-3, -7};
-            hrIncreaseNormal[] = {-5, -11};
-            hrIncreaseHigh[] = {-8, -15};
-            timeInSystem = 7;
-            timeTillMaxEffect = 1;
+            hrIncreaseLow[] = {-1, -3};
+            hrIncreaseNormal[] = {-1, -3};
+            hrIncreaseHigh[] = {-1, -4};
+            timeInSystem = 4;
+            timeTillMaxEffect = 2;
             dose = 1;
             viscosityChange = 0;
             volume = 100;
@@ -369,10 +369,10 @@ class ACE_Medical_Treatment {
         };
         class Doxapram_IVInfusion100: SalineIV_250 {
             painReduce = 0;
-            hrIncreaseLow[] = {3, 6};
-            hrIncreaseNormal[] = {5, 9};
-            hrIncreaseHigh[] = {5, 12};
-            timeInSystem = 10;
+            hrIncreaseLow[] = {1, 3};
+            hrIncreaseNormal[] = {1, 3};
+            hrIncreaseHigh[] = {1, 4};
+            timeInSystem = 4;
             timeTillMaxEffect = 2;
             dose = 1;
             respiratoryRate = 0.1;
@@ -383,10 +383,10 @@ class ACE_Medical_Treatment {
         };
         class Nitroglycerin_IVInfusion100: SalineIV_250 {
             painReduce = 0;
-            hrIncreaseLow[] = {3, 6};
-            hrIncreaseNormal[] = {5, 9};
-            hrIncreaseHigh[] = {5, 12};
-            timeInSystem = 10;
+            hrIncreaseLow[] = {1, 3};
+            hrIncreaseNormal[] = {1, 3};
+            hrIncreaseHigh[] = {1, 4};
+            timeInSystem = 4;
             timeTillMaxEffect = 2;
             dose = 1;
             volume = 100;
@@ -399,10 +399,10 @@ class ACE_Medical_Treatment {
         };
         class Norepinephrine_IVInfusion100: SalineIV_250 {
             painReduce = 0;
-            hrIncreaseLow[] = {3, 6};
-            hrIncreaseNormal[] = {5, 9};
-            hrIncreaseHigh[] = {5, 12};
-            timeInSystem = 10;
+            hrIncreaseLow[] = {1, 3};
+            hrIncreaseNormal[] = {1, 3};
+            hrIncreaseHigh[] = {1, 4};
+            timeInSystem = 4;
             timeTillMaxEffect = 2;
             dose = 1;
             volume = 100;

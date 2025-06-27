@@ -34,7 +34,3 @@ if (_surface > 100) then {
     private _surfaceArea = _surface - 5;
     _patient setVariable [QEGVAR(breathing,lungSurfaceArea), _surfaceArea];
 };
-private _rr = _patient getVariable [QEGVAR(breathing,respiratoryRateMultiplier), 1] + 0.05;
-if (_rr < 1.8) then {
-    _patient setVariable [QEGVAR(breathing,respiratoryRateMultiplier), _rr];
-};

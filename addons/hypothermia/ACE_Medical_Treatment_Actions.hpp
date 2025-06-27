@@ -15,18 +15,18 @@ class ACE_Medical_Treatment_Actions {
         displayName = CSTRING(Apply_Warmer);
         displayNameProgress = CSTRING(perform);
         category = "advanced";
-        allowedSelections[] = {"Chest", "LeftArm", "RightArm", "LeftLeg", "RightLeg"};
+        allowedSelections[] = {"Chest", "LeftArm", "RightArm", "UpperLeftLeg", "UpperRightLeg", "UpperLeftArm", "UpperRightArm", "LeftLeg", "RightLeg", "Neck"};
         medicRequired = QACEGVAR(medical_treatment,medicIV);
         treatmentTime = 10;
         items[] = {"kat_fluidWarmer"};
-        condition = QUOTE(([ARR_3(_medic,_patient,_bodyPart)] call EFUNC(pharma,removeIV)) && !([ARR_2(_patient,_bodyPart)] call FUNC(removeWarmer)) && GVAR(hypothermiaActive));     
+        condition = QUOTE(([ARR_3(_medic,_patient,_bodyPart)] call EFUNC(pharma,removeIVCheck)) && !([ARR_2(_patient,_bodyPart)] call FUNC(removeWarmer)) && GVAR(hypothermiaActive));     
         callbackSuccess = QFUNC(applyFluidWarmer);
     };
     class RemoveFluidWarmer: BasicBandage {
         displayName = CSTRING(Remove_Warmer);
         displayNameProgress = CSTRING(perform);
         category = "advanced";
-        allowedSelections[] = {"Body", "LeftArm", "RightArm", "LeftLeg", "RightLeg"};
+        allowedSelections[] = {"Chest", "LeftArm", "RightArm", "UpperLeftLeg", "UpperRightLeg", "UpperLeftArm", "UpperRightArm", "LeftLeg", "RightLeg", "Neck"};
         medicRequired = QACEGVAR(medical_treatment,medicIV);
         treatmentTime = 10;
         items[] = {};

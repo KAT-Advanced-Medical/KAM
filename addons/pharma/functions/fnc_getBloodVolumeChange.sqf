@@ -81,7 +81,7 @@ if (!isNil {_unit getVariable [QACEGVAR(medical,ivBags),[]]}) then {
             _unit setVariable [QGVAR(IVincomingFlowAmount), _incomingFlowAmount, true];
             private _incomingFlowDifference = (_incomingFlowAmount select _bodyPart) - (10 * _vasoconstriction);
             _totalFlow = 0;
-             {
+            {
                 _totalFlow = _totalFlow + _x;
             } forEach _incomingFlowAmount;
             TRACE_8("IV",_bagChange,_IVrate,_IVflow,_IVarray,_isOccluded,_rateCoef,_flowCalculation,_bodyPart);
