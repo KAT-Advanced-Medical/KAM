@@ -27,7 +27,7 @@ if (!(GVAR(enable)) || (_unit getVariable ["KAT_Occlusion_Exclusion", false])) e
 [{
     params ["_unit", "_level"];
 
-    private _occlusionState = _unit getVariable [QGVAR(occlusion), [0, 0, 0]] select _level; // Default: [0, 0] for both sides
+    private _occlusionState = _unit getVariable [QGVAR(occlusion), [0, 0, 0]] select _level;
     if (_occlusionState > 0) then {
         // Try to deteriorate at set interval
         [{

@@ -29,9 +29,9 @@ private _amiodaroneEffectiveness = 0;
     };
 } forEach _medStack;
 if (_amiodaroneEffectiveness > 0.2) then {
-    _time = random(16) + 16
+    _time = random(12) + 12
 } else {
-    _time = random(8) + 8
+    _time = random(6) + 6
 };
 
 [{ 

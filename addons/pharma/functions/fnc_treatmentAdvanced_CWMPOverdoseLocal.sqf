@@ -55,6 +55,7 @@ if GVAR(kidneyAction) then
 }, 5, [_patient]] call CBA_fnc_addPerFrameHandler;
 [{_hasmed},{
     params ["_patient"];
+    [_patient, "CWMPOverdose", 5, 360, 0, 0, 0, 0, 0, 0, 0, 0, 0, -0.4] call EFUNC(vitals,addMedicationAdjustment);
     [{
     params ["_patient"];
         [{
@@ -65,7 +66,6 @@ if GVAR(kidneyAction) then
             if (!(alive _patient)) exitWith {
                 [_idPFH] call CBA_fnc_removePerFrameHandler;
             };
-                
                 _kidneyTarget = _kidneyTarget + 1;
                 if (_kidneyTarget > 12) exitWith {
                 [_idPFH] call CBA_fnc_removePerFrameHandler;};

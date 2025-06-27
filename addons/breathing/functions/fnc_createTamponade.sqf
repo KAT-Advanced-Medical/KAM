@@ -56,7 +56,6 @@ _unit setVariable [QEGVAR(circulation,effusion), 1, true];
 
                 _unit setVariable [QEGVAR(circulation,effusion), _effusionTarget, true];
                 [_unit, 0.5 * (_effusionTarget / 4)] call ACEFUNC(medical_status,adjustPainLevel); // Adjust pain based on severity
-                [_unit, -10, -10, "cardiac_tension"] call EFUNC(circulation,updateBloodPressureChange); // Emulate low blood pressure and low heart rate caused by tamponade
             };
 
         }, EGVAR(circulation,deterioratingTamponade_interval), [_unit]] call CBA_fnc_addPerFrameHandler;
