@@ -34,7 +34,7 @@ if ((floor (random 100) < (GVAR(advPtxChance) + _chanceIncrease) || _deteriorate
             if ((_ht findIf {_x isEqualTo "hemo"}) == -1) then {
             _ht pushBack "hemo";
             };
-        _pneumothoraxState set [_side, 4];
+        _pneumothoraxState set [_side, 16];
         _unit setVariable [QGVAR(pneumothorax), _pneumothoraxState, true];
 
         [_unit] call EFUNC(circulation,updateInternalBleeding);
@@ -42,7 +42,7 @@ if ((floor (random 100) < (GVAR(advPtxChance) + _chanceIncrease) || _deteriorate
         _tensionState set [_side, true];
         _unit setVariable [QGVAR(tensionpneumothorax), _tensionState, true];
 
-        _pneumothoraxState set [_side, 4];
+        _pneumothoraxState set [_side, 16];
         _unit setVariable [QGVAR(pneumothorax), _pneumothoraxState, true];
     };
 };

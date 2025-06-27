@@ -49,13 +49,13 @@ params ["_unit", "_chanceIncrease", "_side"];
                     if (floor (random 100) < GVAR(deterioratingPneumothorax_chance) && _breathing) then {
                         private _ptxTarget = (_pneumothoraxState select _side) + 1;
                         if (_ptxTarget % 4 == 0) then {
-                            if (GVAR(PneumothoraxArrest)) then {
+                            if ((random 100 < 33) && GVAR(PneumothoraxArrest)) then {
                                 [{
 
                                     params ["_args", "_idPFH"];
                                     _args params ["_unit", "_side"];
 
-                                    if ((_unit getVariable [QGVAR(pneumothorax), [0, 0]] select _side) == 4) then {
+                                    if ((_unit getVariable [QGVAR(pneumothorax), [0, 0]] select _side) % 4 == 0) then {
                                         private _ht = _unit getVariable [QEGVAR(circulation,ht), []];
                                         if ((_ht findIf {_x isEqualTo "tension"}) == -1) then {
                                             _ht pushBack "tension";
@@ -78,18 +78,17 @@ params ["_unit", "_chanceIncrease", "_side"];
                         if (_ptxTarget > 16) exitWith {
                             [_idPFH] call CBA_fnc_removePerFrameHandler;
                         };
-                        private _surface = (_unit getVariable [QEGVAR(breathing,lungSurfaceArea), 400]);
+                        private _surface = (_unit getVariable [QGVAR(lungSurfaceArea), 400]);
                         private _pneumothoraxAmount = _unit getVariable [QGVAR(pneumothoraxSurfaceArea), [0, 0]] select _side;
                             if (_surface > 150) then {
                                 private _surfaceArea = _surface - 10;
                                 private _pneumothoraxAmount = _pneumothoraxAmount + 10;
-                                _unit setVariable [QEGVAR(breathing,lungSurfaceArea), _surfaceArea];
+                                _unit setVariable [QGVAR(lungSurfaceArea), _surfaceArea];
                                 _unit setVariable [QGVAR(pneumothoraxSurfaceArea), _pneumothoraxAmount];
                             };
                         _pneumothoraxState set [_side, _ptxTarget];
                         _unit setVariable [QGVAR(pneumothorax), _pneumothoraxState, true];
                         [_unit, 0.8 * (_ptxTarget / 16)] call ACEFUNC(medical_status,adjustPainLevel);
-                        [_unit, -4, -4, format ["ptx_tension_%1", _side]] call EFUNC(circulation,updateBloodPressureChange);
                     };
                 };
         }, GVAR(deterioratingPneumothorax_interval), [_unit, _chanceIncrease, _side]] call CBA_fnc_addPerFrameHandler;

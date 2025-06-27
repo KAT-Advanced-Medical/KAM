@@ -34,7 +34,6 @@ if ((_patient getVariable [QGVAR(pneumothorax), [0, 0]] select _side > 0) &&
     !(_patient getVariable [QGVAR(hemopneumothorax), [false, false]] select _side) &&
     !((_patient getVariable [QGVAR(tensionPneumothorax), [false, false]]) select _side)) then {
     
-    [_patient, 0, 0, format ["ptx_tension_%1", _side], true] call EFUNC(circulation,updateBloodPressureChange);
     
     if (GVAR(clearChestSealAfterTreatment)) then {
         _activeChestSeal set [_side, false];

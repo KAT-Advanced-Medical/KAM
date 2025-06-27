@@ -15,10 +15,8 @@
  * Public: No
  */
 params ["_patient"];
-private _bpAdjust = -30 + floor random ((-15 - -30) + 1);
-[_patient, _bpAdjust, _bpAdjust, "nalbuphineOverdose"] call kat_circulation_fnc_updateBloodPressureChange;
 private _hrAdjust = -50 + floor random ((-30 - -50) + 1);
-[_patient, "nalbuphineOverdose", 120, 1200, _hrAdjust] call EFUNC(vitals,addMedicationAdjustment);
+[_patient, "nalbuphineOverdose", 30, 1200, _hrAdjust, 0, 0, 0, 0.3, 0, 0, 0.17, -0.3] call EFUNC(vitals,addMedicationAdjustment);
 [{
     params ["_patient"];
     private _nalbuphineOverdoseTarget = 0;

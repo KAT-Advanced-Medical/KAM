@@ -46,7 +46,3 @@ private _surface = (_patient getVariable [QEGVAR(breathing,lungSurfaceArea), 400
 private _surfaceArea = _surface + _pneumothoraxAmount;
 _patient setVariable [QEGVAR(breathing,lungSurfaceArea), _surfaceArea];
 
-
-if (!(_patient getVariable [QGVAR(hemopneumothorax), [false, false]] select _side) && !(_patient getVariable [QGVAR(tensionpneumothorax), [false, false]] select _side)) then {
-    [_patient, 0, 0, format ["ptx_tension_%1", _side], true] call EFUNC(circulation,updateBloodPressureChange);
-};

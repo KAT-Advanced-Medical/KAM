@@ -152,7 +152,22 @@ if (_isOccluded) exitWith {
             _medication = _medication select [0, count _medication - 2];
     };
     private _currentDose = [_patient, _medication] call ACEFUNC(medical_status,getMedicationCount) select 0;
-    private _maximumEffectiveDose = GET_NUMBER(_medicationConfig >> "maximumEffectiveDose",getNumber (_defaultConfig >> "maximumEffectiveDose"));
+    if !(_className in ["CWMP", "Painkillers", "Penthrox", "Carbonate", "BubbleWrap", "Caffeine", "Pervitin", "Naloxone"]) then {
+        private _medicationParts = (_className splitString "_");
+        private _splitMedName = _medicationParts select 1;
+        if ((toUpper (_splitMedName select [count _splitMedName - 2])) isEqualTo "IV") then {
+            _splitMedName = _splitMedName select [0, count _splitMedName - 2];
+        };
+        if ((toUpper (_splitMedName select [count _splitMedName - 4])) isEqualTo "AUTO") then {
+            _splitMedName = _splitMedName select [0, count _splitMedName - 4];
+        };
+        private _medicationMEDName = format ["syringe_%1", _splitMedName];
+        private _doseConfig = _defaultConfig >> _medicationMEDName;
+        systemChat str _medicationConfig;
+        private _maximumEffectiveDose = GET_NUMBER(_doseConfig >> "maximumEffectiveDose",getNumber (_defaultConfig >> "maximumEffectiveDose"));
+    } else {
+        _maximumEffectiveDose = GET_NUMBER(_medicationConfig >> "maximumEffectiveDose",getNumber (_defaultConfig >> "maximumEffectiveDose"));
+    };
     TRACE_4("medicationEffectivness",_currentDose,_medication,_maximumEffectiveDose,_startDose);
     private _doseMult = 1;
         if ((_currentDose + _startDose) > _maximumEffectiveDose) then {
