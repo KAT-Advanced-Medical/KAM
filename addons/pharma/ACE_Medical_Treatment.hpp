@@ -577,8 +577,6 @@ class ACE_ADDON(Medical_Treatment) {
             viscosityChange = 35;
             dose = 1;
             alphaFactor = -0.2;
-            weightBased = "true";
-            weightDose = 20;
             maximumEffectiveDose = 30;
         };
         class syringe_Fentanyl_5ml {
