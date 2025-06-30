@@ -110,7 +110,7 @@ private _timeSeconds = _display displayCtrl 22008;
     if (GVAR(pressureUnit) == 1) then {
         _baro ctrlSetText ([(_altitudeValue call ACEFUNC(weather,calculateBarometricPressure)), 1, 0] call CBA_fnc_formatNumber);
     } else {
-        _baro ctrlSetText ([((_altitudeValue call ACEFUNC(weather,calculateBarometricPressure)) / 1.3), 1, 0] call CBA_fnc_formatNumber);
+        _baro ctrlSetText ([((_altitudeValue call ACEFUNC(weather,calculateBarometricPressure)) * 0.750062), 1, 0] call CBA_fnc_formatNumber);
     };
 
     if (GVAR(temperatureUnit) == 1) then {
