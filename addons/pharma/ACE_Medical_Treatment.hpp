@@ -208,7 +208,7 @@ class ACE_ADDON(Medical_Treatment) {
             alphaFactor = -0.4;
             onOverDose = "";
         };
-        class phenylephrineAuto {
+        class PhenylephrineAuto {
             painReduce = 0;
             hrIncreaseLow[] = {-5, -10};
             hrIncreaseNormal[] = {-5, -10};

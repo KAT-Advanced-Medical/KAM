@@ -95,7 +95,7 @@ _patient setVariable [QGVAR(chestTube), _chestTubeArray, true];
         [_patient, true] call ACEFUNC(medical,setUnconscious);
     };
 
-    if (GVAR(ChestTube_ConsciousnessRequirement) == 2 && _count <= 0.2 && (_activeLoadingDose)) then {
+    if (GVAR(ChestTube_ConsciousnessRequirement) == 2 && _count <= 0.2) then {
         if !(_patient getVariable [QGVAR(etomidate_Pain), false]) then {
             [_patient, "Pain", 2, 10, 120, 0.6, 40] call ACEFUNC(medical_status,addMedicationAdjustment);
             _patient setVariable [QGVAR(etomidate_Pain), true]

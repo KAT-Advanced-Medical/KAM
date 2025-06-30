@@ -16,7 +16,7 @@
  */
 params ["_patient", "_bodyPart", "_classname"];
 private _partIndex = ALL_BODY_PARTS find toLower _bodyPart;
-if (_classname in ["syringe_Lidocaine_10ml_10", "syringe_Lidocaine_5ml_10"]) then {
+if (_classname in ["syringe_Lidocaine_10ml_10", "syringe_Lidocaine_5ml_12"]) then {
     [{
     params ["_patient", "_partIndex"];
         [{
@@ -27,7 +27,7 @@ if (_classname in ["syringe_Lidocaine_10ml_10", "syringe_Lidocaine_5ml_10"]) the
             if (!(alive _patient)) exitWith {
                 [_idPFH] call CBA_fnc_removePerFrameHandler;
             };
-                if (_lidocaineTarget > 16) exitWith {
+                if (_lidocaineTarget > 20) exitWith {
                     [_idPFH] call CBA_fnc_removePerFrameHandler;
                 };
                 private _anesthesiaArray = _patient getVariable [QEGVAR(pharma,localAnesthesia), [0,0,0,0,0,0,0,0,0,0,0,0]];
@@ -35,7 +35,7 @@ if (_classname in ["syringe_Lidocaine_10ml_10", "syringe_Lidocaine_5ml_10"]) the
                 private _localAnesthesia = (_localAnesthesia + 0.05) min 1;
                 _anesthesiaArray set [_partIndex, _localAnesthesia];
                 _patient setVariable [VAR_LOCAL_ANESTHESIA, _anesthesiaArray, true];
-        }, 0.75, [_patient,0,_partIndex]] call CBA_fnc_addPerFrameHandler;
+        }, 0.5, [_patient,0,_partIndex]] call CBA_fnc_addPerFrameHandler;
 }, [_patient,_partIndex], 5] call CBA_fnc_waitAndExecute;
 
 [{
@@ -48,7 +48,7 @@ if (_classname in ["syringe_Lidocaine_10ml_10", "syringe_Lidocaine_5ml_10"]) the
             if (!(alive _patient)) exitWith {
                 [_idPFH] call CBA_fnc_removePerFrameHandler;
             };
-                if (_lidocaineTarget > 16) exitWith {
+                if (_lidocaineTarget > 20) exitWith {
                     [_idPFH] call CBA_fnc_removePerFrameHandler;
                 };
                 private _anesthesiaArray = _patient getVariable [QEGVAR(pharma,localAnesthesia), [0,0,0,0,0,0,0,0,0,0,0,0]];

@@ -62,7 +62,7 @@ GVAR(visualization_timeOut) = true;
 [{
     params ["_medic", "_patient", "_notInVehicle"];
 
-    [LLSTRING(visualization_stop), LLSTRING(visualization_place), ""] call ACEFUNC(interaction,showMouseHint);
+    [LLSTRING(visualization_stop), "", ""] call ACEFUNC(interaction,showMouseHint);
     [LLSTRING(visualization_start), 1.5, _medic] call ACEFUNC(common,displayTextStructured);
 
     [{
@@ -82,6 +82,7 @@ GVAR(visualization_timeOut) = true;
 
             [GVAR(visualizationCancel_EscapeID), "keydown"] call CBA_fnc_removeKeyHandler;
             [GVAR(visualizationCancel_MouseID), "keydown"] call CBA_fnc_removeKeyHandler;
+            [GVAR(PlaceETT), "keydown"] call CBA_fnc_removeKeyHandler;
 
             closeDialog 0;
             [_patient, "activity", LSTRING(Activity_visualization), [[_medic, false, true] call ACEFUNC(common,getName), GVAR(visualization_attempts)]] call ACEFUNC(medical_treatment,addToLog);
@@ -106,8 +107,11 @@ GVAR(visualization_timeOut) = true;
                     
                 if (((_patient getVariable [QGVAR(occlusion), [0, 0, 0]]) findIf { _x < 2 }) != -1) then {
                     if(random 100 < (5 / ((1 -_paralysis) max 0.1))) then {
+                        [] call ACEFUNC(interaction,hideMouseHint);
+                        [LLSTRING(visualization_stop), LLSTRING(visualization_place), ""] call ACEFUNC(interaction,showMouseHint);
                         _patient setVariable [QGVAR(isVisualized), true, true];
-                        [{_patient setVariable [QGVAR(isVisualized), false, true]; }, [_patient], 20] call CBA_fnc_waitAndExecute;
+                        [{params ["_patient"];
+                        _patient setVariable [QGVAR(isVisualized), false, true]; }, [_patient], 20] call CBA_fnc_waitAndExecute;
                         [LLSTRING(visualization_success), 2, _medic] call ACEFUNC(common,displayTextStructured);
                     } else {
                         [LLSTRING(visualization_info), 2, _medic] call ACEFUNC(common,displayTextStructured);

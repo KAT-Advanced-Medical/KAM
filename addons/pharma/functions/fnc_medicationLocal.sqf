@@ -163,7 +163,6 @@ if (_isOccluded) exitWith {
         };
         private _medicationMEDName = format ["syringe_%1", _splitMedName];
         private _doseConfig = _defaultConfig >> _medicationMEDName;
-        systemChat str _medicationConfig;
         private _maximumEffectiveDose = GET_NUMBER(_doseConfig >> "maximumEffectiveDose",getNumber (_defaultConfig >> "maximumEffectiveDose"));
     } else {
         _maximumEffectiveDose = GET_NUMBER(_medicationConfig >> "maximumEffectiveDose",getNumber (_defaultConfig >> "maximumEffectiveDose"));

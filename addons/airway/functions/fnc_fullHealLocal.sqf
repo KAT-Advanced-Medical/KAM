@@ -32,6 +32,8 @@ _patient setVariable [QGVAR(wasOccluded), [0, 0, 0]];
 _patient setVariable [QGVAR(hasPuked), false, true];
 _patient setVariable [QGVAR(airwayStatus), [0, 0, 0], true];
 _patient setVariable [QGVAR(isVisualized), false, true];
+_patient setVariable ["kat_occlusion_PFH", nil];
+_patient setVariable ["kat_pukeActive_PFH", nil];
 [_patient, "blockRadio", "kat_crike", false] call ACEFUNC(common,statusEffect_set);
 [_patient, "blockSpeaking", "kat_crike", false] call ACEFUNC(common,statusEffect_set);
 

@@ -20,12 +20,6 @@ params ["_unit"];
 //Other mods can utilise KAT_Occlusion_Exclusion variable to prevent occlusions from happening
 if ((_unit getVariable ["kat_pukeActive_PFH", false]) || !(GVAR(enable))) exitWith {};
     
-    private _isUnconscious = _unit getVariable ["ACE_isUnconscious", false];
-    private _alive = alive _unit;
-    if !(_alive || _isUnconscious) exitWith {
-        _unit setVariable ["kat_pukeActive_PFH", nil];
-    };
-    
     private _nauseaMult = _unit getVariable [QEGVAR(pharma,nauseaMult), 1];
     
     if (_nauseaMult > 1000) then {
@@ -34,6 +28,11 @@ if ((_unit getVariable ["kat_pukeActive_PFH", false]) || !(GVAR(enable))) exitWi
     private _delay = (GVAR(occlusion_repeatTimer) / _nauseaMult) * random [0.8, 1, 1.3];
     [{
         params ["_unit"];
+        private _isUnconscious = _unit getVariable ["ACE_isUnconscious", false];
+        private _alive = alive _unit;
+        if (!_alive || !_isUnconscious) exitWith {
+            _unit setVariable ["kat_pukeActive_PFH", nil];
+        };
         if (random (100) <= GVAR(airwayPukeChance)) then {
         private _occlusionState = _unit getVariable [QGVAR(occlusion), [0, 0, 0]];
         private _usedItem = _unit getVariable [QGVAR(airway_item), ""];

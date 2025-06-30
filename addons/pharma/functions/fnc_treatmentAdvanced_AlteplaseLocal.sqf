@@ -43,7 +43,9 @@ _patient setVariable [QACEGVAR(medical,medications), _medicationArray, true];
                 if (_AlteplaseTarget > 24) exitWith {
                 [_idPFH] call CBA_fnc_removePerFrameHandler;};
                 private _surfaceArea = (_patient getVariable [QEGVAR(breathing,lungSurfaceArea), 400]) + 5;
-                _patient setVariable [QEGVAR(breathing,lungSurfaceArea), _surfaceArea];
+                if (_surfaceArea < 400) then {
+                    _patient setVariable [QEGVAR(breathing,lungSurfaceArea), _surfaceArea];
+                };
                 private _coagulationFactor = (_patient getVariable [QGVAR(coagulationFactor), 30]);
                 private _factorstoremove = 1;
                 _patient setVariable [QGVAR(coagulationFactor), (_coagulationFactor - _factorstoremove), true];

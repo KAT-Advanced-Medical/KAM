@@ -23,4 +23,9 @@ if (_doseNormalized >_weightNormalized) then {
     _patient setVariable [QGVAR(activeEtomidateLoadingDose), true, true];
     [_patient, "Etomidate", 5, 120, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, "true"] call EFUNC(vitals,addMedicationAdjustment);
     [_patient, true] call ACEFUNC(medical,setUnconscious);
+    [{
+    params ["_patient"]; 
+    _patient setVariable [QGVAR(activeEtomidateLoadingDose), false, true];
+    }, [_patient], 180] call CBA_fnc_waitAndExecute;
+
 };

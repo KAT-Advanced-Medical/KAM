@@ -18,9 +18,8 @@
 params ["_patient"];
 
 private _medicationArray = _patient getVariable [QACEGVAR(medical,medications), []];
-private _medicationDeleted = false;
 private _ht = _patient getVariable [QEGVAR(circulation,ht), []];
-
+if (random 1 < 0.33) then {
 {
     _x params ["_medication"];
     private _lowerMed = toLower _medication;
@@ -32,17 +31,13 @@ private _ht = _patient getVariable [QEGVAR(circulation,ht), []];
         (_lowerMed find "nalbuphine" != -1) ||
         (_lowerMed find "nalbuphineOverdose" != -1)
     ) then {
-        if (random 1 < 0.33) then {
-            _medicationArray deleteAt (_medicationArray find _x);
-            _medicationDeleted = true;
-            _patient setVariable [QEGVAR(pharma,opioidFactor), 1];
-            _ht deleteAt (_ht find "opioidOD");
-            _patient setVariable [QEGVAR(circulation,ht), _ht, true];
-        };
+        _medicationArray deleteAt (_medicationArray find _x);
+        _patient setVariable [QEGVAR(pharma,opioidFactor), 1];
+        _ht deleteAt (_ht find "opioidOD");
+        _patient setVariable [QEGVAR(circulation,ht), _ht, true];
     };
-
-    if (_medicationDeleted) exitWith {};
     
-} forEach _medicationArray;
+    } forEach _medicationArray;
+};
 
 _patient setVariable [QACEGVAR(medical,medications), _medicationArray, true];

@@ -94,6 +94,11 @@ GVAR(suction_timeOut) = true;
 
             [LLSTRING(Suction_cancelled), 1.5, _medic] call ACEFUNC(common,displayTextStructured);
         };
+        if (_usedItem isEqualTo "kat_suction") then {
+            playSound3D [QPATHTOF_SOUND(sounds\manualpump_suction.wav), _patient, false, getPosASL _patient, 6, 1, 15];
+        } else {
+            playSound3D [QPATHTOF_SOUND(sounds\accuvac_suction.wav), _patient, false, getPosASL _patient, 6, 1, 15];
+        };
 
         if !(GVAR(suction_timeOut)) then {
             GVAR(suction_timeOut) = true;
