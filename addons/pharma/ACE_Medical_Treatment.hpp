@@ -521,7 +521,7 @@ class ACE_ADDON(Medical_Treatment) {
             timeTillMaxEffect = 15;
             dose = 1;
             viscosityChange = -0;
-            maximumEffectiveDose = 2;
+            maximumEffectiveDose = 20;
         };
         class syringe_TXA_5ml {
             painReduce = 0;
@@ -781,7 +781,7 @@ class ACE_ADDON(Medical_Treatment) {
             hrIncreaseLow[] = {0, 0};
             hrIncreaseNormal[] = {0, 0};
             hrIncreaseHigh[] = {0, 0};
-            timeInSystem = 240;
+            timeInSystem = 300;
             timeTillMaxEffect = 20;
             dose = 1;
             weightBased = "true";

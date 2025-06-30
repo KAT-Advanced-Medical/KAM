@@ -27,7 +27,6 @@ private _medicationArray = _patient getVariable [QACEGVAR(medical,medications), 
         
     ) then {
         _medicationArray deleteAt (_medicationArray find _x);
-        _medicationDeleted = true;
     };
 } forEach _medicationArray;
 
