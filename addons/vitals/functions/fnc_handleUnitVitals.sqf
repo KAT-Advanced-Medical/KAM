@@ -37,12 +37,12 @@ if (_syncValues) then {
 private _bloodVolume = ([_unit, _deltaT, _syncValues] call EFUNC(pharma,getBloodVolumeChange));
 _unit setVariable [VAR_BLOOD_VOL, _bloodVolume, _syncValues];
 
+// Enviromental Impact (Altitude, Temperature, Pressure)
 private _baroPressure = 760;
 private _temperature = DEFAULT_TEMPERATURE;
 private _altitude = (getPosASL _unit) select 2;
 
 if (EGVAR(vitals,baroPressureEnable)) then {
-    // Enviromental Impact (Altitude, Pressure)
     if (EGVAR(vitals,useACEpressure)) then {
         private _hPa = _altitude call ACEFUNC(weather,calculateBarometricPressure);
         _baroPressure = _hPa * 0.750062;
@@ -52,7 +52,6 @@ if (EGVAR(vitals,baroPressureEnable)) then {
 };
 
 if (EGVAR(hypothermia,hypothermiaActive)) then {
-    // Enviromental Impact (Altitude, Temperature)
     private _altitudeTempImpact = switch (true) do {
         case (_altitude >= 10): { abs(_altitude/153) * -1 }; //For every 1000 meters of elevation gain, temperature decreases by ~6.5 degrees celsius
         case (_altitude <= -1): { -35 max((abs(_altitude/50) * -1) - 17) }; //Average water temperature is 20 degrees celsius. Decreases to 2 degrees celsius at 1000 meters
