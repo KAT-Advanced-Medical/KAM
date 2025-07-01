@@ -72,6 +72,7 @@ if (floor (random 100) < (GVAR(EviscerationChance) + _chanceIncrease)) exitWith 
     TRACE_3("chanceIncrease",_eviscerationLevel,_hasEvisceration,_initialEvisceration);
     switch (true) do {
         case (_hasEvisceration): {
+            [_unit, 1] call ACEFUNC(medical_status,adjustPainLevel);
             private _newEviscerationLevel = (_eviscerationLevel + 1) min 4;
             _unit setVariable [QGVAR(evisceration), _newEviscerationLevel, true];
             if (_newEviscerationLevel < 5) then {
@@ -79,7 +80,7 @@ if (floor (random 100) < (GVAR(EviscerationChance) + _chanceIncrease)) exitWith 
             };
         };
         case (_initialEvisceration): {
-            [_unit, 0.9] call ACEFUNC(medical_status,adjustPainLevel);
+            [_unit, 1] call ACEFUNC(medical_status,adjustPainLevel);
             private _newEviscerationLevel = (_eviscerationLevel + 1) min 4;
             _unit setVariable [QGVAR(evisceration), _newEviscerationLevel, true];
             _unit setVariable [QGVAR(activeWoundPack), 0, true];

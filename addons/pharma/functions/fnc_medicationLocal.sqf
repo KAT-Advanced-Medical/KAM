@@ -116,7 +116,7 @@ if (_isOccluded) exitWith {
     private _currentWeight = _patient getVariable [QEGVAR(vitals,currentWeight), 80];
     private _defaultHeartRate = _patient getVariable [QEGVAR(circulation,defaultHeartRate), 80];
     private _heartRateRatio = GET_HEART_RATE(_patient) / _defaultHeartRate;
-    private _bloodBased = GET_STRING(_medicationConfig >> "bloodBased",getText (_defaultConfig >> "bloodBased"));
+    //private _bloodBased = GET_STRING(_medicationConfig >> "bloodBased",getText (_defaultConfig >> "bloodBased"));
     private _weightBase = GET_STRING(_medicationConfig >> "weightBase",getText (_defaultConfig >> "weightBase"));
     private _weightDose = GET_NUMBER(_medicationConfig >> "weightDose",getNumber (_defaultConfig >> "weightDose"));
     _weightMult = 1;
