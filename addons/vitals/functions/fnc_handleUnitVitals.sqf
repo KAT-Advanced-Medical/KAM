@@ -57,7 +57,6 @@ if (EGVAR(hypothermia,hypothermiaActive)) then {
         case (_altitude <= -1): { -35 max((abs(_altitude/50) * -1) - 17) }; //Average water temperature is 20 degrees celsius. Decreases to 2 degrees celsius at 1000 meters
         default { 0 };
     };
-
     _temperature = [_unit, _altitudeTempImpact, _bloodVolume, _deltaT, _syncValues] call FUNC(handleTemperatureFunction);
 };
 
