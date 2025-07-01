@@ -64,20 +64,20 @@
             <Chinesesimp>将简化的生命体征计算应用于AI单位，这可以帮助节省FPS。</Chinesesimp>
         </Key>
         <Key ID="STR_KAT_Vitals_PRESSURE_ENABLE">
-            <English>Enable baro pressure change with altitude</English>
-            <Japanese>高度による大気圧の変化を有効化</Japanese>
+            <English>Enable barometric pressure change</English>
+            <Japanese>気圧の変化を有効化</Japanese>
         </Key>
         <Key ID="STR_KAT_Vitals_PRESSURE_ENABLE_DESC">
             <English>Enables barometric pressure changes with altitude that affect vitals such as oxygen calculations.</English>
-            <Japanese>酸素の計算などバイタルに影響を与える高度による大気圧の変化を有効化します。</Japanese>
+            <Japanese>酸素の計算などバイタルに影響を与える高度による気圧の変化を有効化します。</Japanese>
         </Key>
         <Key ID="STR_KAT_Vitals_PRESSURE_ACE">
-            <English>Use ACE baro pressure</English>
+            <English>Use ACE barometric pressure</English>
             <Japanese>ACEの大気圧を使用</Japanese>
         </Key>
         <Key ID="STR_KAT_Vitals_PRESSURE_ACE_DESC">
             <English>Use ACE calculation instead of KAM simplified calculation for barometric pressure value. (Require ACE Weather)</English>
-            <Japanese>大気圧の値にKAMによる簡易化された計算ではなく、ACEによる計算を使用します。 (ACE Weather 天候システム が必要です)</Japanese>
+            <Japanese>気圧の値にKAMによる簡易化された計算ではなく、ACEによる計算を使用します。 (ACE Weather 天候システム が必要です)</Japanese>
         </Key>
         <Key ID="STR_KAT_Vitals_basicDiagnostic_Log">
             <English>%1 - %2</English>
