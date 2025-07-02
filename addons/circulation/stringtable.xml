@@ -2609,6 +2609,7 @@
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_AdvRhythm_PEAEnabled">
             <English>Enable PEA</English>
+            <French>Activer le PEA</French>
             <Dutch>Zet PEA aan</Dutch>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_AdvRhythm_VTChance">
