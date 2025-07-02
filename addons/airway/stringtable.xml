@@ -361,6 +361,7 @@
             <Japanese>気道はひどく水膨れしている</Japanese>
             <Chinese>氣道嚴重膨脹</Chinese>
             <Chinesesimp>气道严重膨胀</Chinesesimp>
+            <Dutch>De luchtwegen hebben een sterke blaarvorming</Dutch>
         </Key>
         <Key ID="STR_KAT_Airway_AirwayStatus_mitigatedObstruction">
             <English>Obstruction is temporarily mitigated</English>
@@ -1802,6 +1803,7 @@
             <German>KAT - ADV Medical: Atemwege</German>
             <Japanese>KAM - 気道 (Airway)</Japanese>
             <Czech>KAT - ADV Zdravotní modul: Horní dýchací cesty</Czech>
+            <Dutch>KAT - ADV Medical: Luchtwegen</Dutch>
         </Key>
         <Key ID="STR_KAT_Airway_checkAirway">
             <English>Check Airway</English>
@@ -1839,7 +1841,7 @@
             <Turkish>%1 kontrol edilmiş havayolları: %2, %3</Turkish>
             <Norwegian>%1 sjekket luftveiene: %2, %3</Norwegian>
             <Finnish>%1 tarkistettu hengitystiet, %2, %3</Finnish>
-            <Dutch>%1 Heeft de luchtwegen gecheckt: %2, %3</Dutch>
+            <Dutch>%1 heeft de luchtwegen gecheckt: %2, %3</Dutch>
         </Key>
         <Key ID="STR_KAT_Airway_checkAirway_poisonLog">
             <English>%1 checked airways: Heavily Blistered</English>
@@ -1849,6 +1851,7 @@
             <German>%1 überprüfte die Atemwege: Starke Blasenbildung</German>
             <Japanese>%1 が気道を確認: ひどい水膨れ</Japanese>
             <Chinesesimp>%1 条检查气道: 严重起泡</Chinesesimp>
+            <Dutch>%1 heeft de luchtwegen gecheckt: Ernstige blaarvorming</Dutch>
         </Key>
         <Key ID="STR_KAT_Airway_headTurning_begin">
             <English>Begin Head Turning</English>

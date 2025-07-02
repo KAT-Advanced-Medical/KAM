@@ -1909,6 +1909,7 @@
             <German>KAT - ADV Medical: Sonstiges</German>
             <Japanese>KAM - その他</Japanese>
             <Czech>KAT - ADV Zdravotní modul: Smíšené</Czech>
+            <Dutch>KAT - ADV Medical: Overig</Dutch>
         </Key>
         <Key ID="STR_KAT_Misc_incompatibilityWarning_Desc">
             <English>[KAM WARNING] Incompatible addon(s) that could negatively affect correct functionality detected. KAT - Advanced Medical REWRITE Development Team strongly advises to remove these addons: %1</English>
@@ -1932,6 +1933,7 @@
             <Italian>[KAM] Oggetti vari</Italian>
             <Japanese>[KAM] その他物資箱</Japanese>
             <Czech>[KAM] Smíšené věci</Czech>
+            <Dutch>[KAM] Overige items</Dutch>
         </Key>
     </Package>
 </Project>

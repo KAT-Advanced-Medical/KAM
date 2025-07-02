@@ -1229,6 +1229,7 @@
             <Italian>Compromesso</Italian>
             <German>Kompromittiert</German>
             <Japanese>機能不全</Japanese>
+            <Dutch>Gecomprimeerd</Dutch>
         </Key>
         <Key ID="STR_KAT_Surgery_Ultra_Airway_NoActivity">
             <English>No Activity</English>
@@ -1237,6 +1238,7 @@
             <Italian>Nessuna attività</Italian>
             <German>Keine Aktivität</German>
             <Japanese>活動なし</Japanese>
+            <Dutch>Geen activiteit</Dutch>
         </Key>
         <Key ID="STR_KAT_Surgery_Ultra_Airway_Normal">
             <English>Normal</English>
@@ -1372,6 +1374,7 @@
             <German>Keine Aktivität</German>
             <Japanese>活動なし</Japanese>
             <Chinese>無活動</Chinese>
+            <Dutch>Geen activiteit</Dutch>
         </Key>
         <Key ID="STR_KAT_Surgery_Ultra_Thorasic_PTX">
             <English>Pneumothorax</English>
@@ -1490,6 +1493,7 @@
             <German>KAT - ADV Medical: Chirurgie</German>
             <Japanese>KAM - 外科 (Surgery)</Japanese>
             <Czech>KAT- ADV Zdravotní modul: Operace</Czech>
+            <Dutch>KAT - ADV Medical: Chirurgie</Dutch>
         </Key>
         <Key ID="STR_KAT_Surgery_fracture_check">
             <English>Check Fracture</English>

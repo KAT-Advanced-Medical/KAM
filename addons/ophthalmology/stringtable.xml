@@ -8,6 +8,7 @@
             <German>Ein Augenschild wird zur Behandlung von schweren Augenverletzungen verwendet</German>
             <Japanese>眼球保護帯は重傷となった目の治療に使用します</Japanese>
             <Czech>Kryty očí se používají k léčbě těžkých poranění oka </Czech>
+            <Dutch>Een oogschild wordt gebruikt om ernstig letsel aan het oog te behandelen</Dutch>
         </Key>
         <Key ID="STR_KAT_Ophthalmology_EyeCover_Item">
             <English>Eye Shield</English>
@@ -16,6 +17,7 @@
             <German>Augenschild</German>
             <Japanese>眼球保護帯</Japanese>
             <Czech>Ochrana očí</Czech>
+            <Dutch>Oogschild</Dutch>
         </Key>
         <Key ID="STR_KAT_Ophthalmology_EyeCover_Left">
             <English>Left EyeCover</English>
@@ -24,6 +26,7 @@
             <German>Linkes Augenschild</German>
             <Japanese>左眼球保護帯</Japanese>
             <Czech>Levý Oční Štít</Czech>
+            <Dutch>Linker oogschild</Dutch>
         </Key>
         <Key ID="STR_KAT_Ophthalmology_EyeCover_Right">
             <English>Right EyeCover</English>
@@ -32,6 +35,7 @@
             <German>Rechtes Augenschild</German>
             <Japanese>右眼球保護帯</Japanese>
             <Czech>Pravý Oční štít</Czech>
+            <Dutch>Rechter oogschild</Dutch>
         </Key>
         <Key ID="STR_KAT_Ophthalmology_blink_action">
             <English>Blinking</English>
@@ -40,6 +44,7 @@
             <German>Blinzeln</German>
             <Japanese>まばたき</Japanese>
             <Czech>Mrkání</Czech>
+            <Dutch>Knipperen</Dutch>
         </Key>
         <Key ID="STR_KAT_Ophthalmology_cba_name">
             <English>KAT - ADV Medical: Ophthalmology</English>
@@ -48,6 +53,7 @@
             <German>KAT - ADV Medical: Augenheilkunde</German>
             <Japanese>KAM - 眼科 (Ophthalmology)</Japanese>
             <Czech>KAT - ADV Zdravotní modul: Oftalmologie</Czech>
+            <Dutch>KAT - ADV Medical: Oogheelkunde</Dutch>
         </Key>
         <Key ID="STR_KAT_Ophthalmology_eyeInjuryPresent">
             <English>Eye Injury</English>
@@ -56,6 +62,7 @@
             <German>Augenverletzung</German>
             <Japanese>眼外傷</Japanese>
             <Czech>Oční zranění</Czech>
+            <Dutch>Oogletsel</Dutch>
         </Key>
         <Key ID="STR_KAT_Ophthalmology_eyeshield_action">
             <English>Applying</English>
@@ -64,6 +71,7 @@
             <German>Anwenden</German>
             <Japanese>装着中</Japanese>
             <Czech>Přikládání</Czech>
+            <Dutch>Wordt aangelegd</Dutch>
         </Key>
         <Key ID="STR_KAT_Ophthalmology_eyeshield_display">
             <English>Apply Eye Shield</English>
@@ -72,6 +80,7 @@
             <German>Augenschild anwenden</German>
             <Japanese>眼帯を装着</Japanese>
             <Czech>Přikládání Očního štítu</Czech>
+            <Dutch>Leg oogschild aan</Dutch>
         </Key>
         <Key ID="STR_KAT_Ophthalmology_eyeshield_item">
             <English>Eye Shield</English>
@@ -80,6 +89,7 @@
             <German>Augenschild</German>
             <Japanese>眼帯</Japanese>
             <Czech>Oční štít</Czech>
+            <Dutch>Oogschild</Dutch>
         </Key>
         <Key ID="STR_KAT_Ophthalmology_eyewash_action">
             <English>Washing</English>
@@ -88,6 +98,7 @@
             <German>Spülen</German>
             <Japanese>洗浄中</Japanese>
             <Czech>Umývání</Czech>
+            <Dutch>Wordt gespoelt</Dutch>
         </Key>
         <Key ID="STR_KAT_Ophthalmology_eyewash_display">
             <English>Wash eyes with saline</English>
@@ -96,6 +107,7 @@
             <German>Augen mit Kochsalzlösung spülen</German>
             <Japanese>生理食塩液で目を洗う</Japanese>
             <Czech>Umývání očí se saline</Czech>
+            <Dutch>Ogen met saline spoelen</Dutch>
         </Key>
         <Key ID="STR_KAT_Ophthalmology_eyewash_display_water">
             <English>Wash eyes with water</English>
@@ -104,6 +116,7 @@
             <German>Augen mit Wasser spülen</German>
             <Japanese>水で目を洗う</Japanese>
             <Czech>Umývání očí s vodou</Czech>
+            <Dutch>Ogen met water spoelen</Dutch>
         </Key>
         <Key ID="STR_KAT_Ophthalmology_eyewash_item">
             <English>Eye Wash</English>
@@ -112,6 +125,7 @@
             <German>Augenspülung</German>
             <Japanese>洗眼器</Japanese>
             <Czech>Výplach očí</Czech>
+            <Dutch>Oogspoeling</Dutch>
         </Key>
         <Key ID="STR_KAT_Ophthalmology_eyewasher_desc">
             <English>Eyewash bottles allow an individual to flush the injured area immediately</English>
@@ -120,6 +134,7 @@
             <German>Augenspühlungen ermöglichen das sofortige ausspülen von verletzten Augen</German>
             <Japanese>外傷部をすぐに洗い流すことができる洗眼ボトル</Japanese>
             <Czech>Lahve na výplach očí umožňují okamžité vypláchnutí poraněného místa</Czech>
+            <Dutch>Oogspoelingsflesjes staan onmiddelijke spoeling van de ogen toe</Dutch>
         </Key>
         <Key ID="STR_KAT_Ophthalmology_eyewasher_display">
             <English>Eye Washer</English>
@@ -128,6 +143,7 @@
             <German>Augenspüler</German>
             <Japanese>洗眼器</Japanese>
             <Czech>Umývač očí</Czech>
+            <Dutch>Ogenspoeler</Dutch>
         </Key>
         <Key ID="STR_KAT_Ophthalmology_eyewasher_display_item">
             <English>Wash eyes</English>
@@ -136,6 +152,7 @@
             <German>Augen spülen</German>
             <Japanese>洗眼する</Japanese>
             <Czech>Opláchnutí očí</Czech>
+            <Dutch>Ogen spoelen</Dutch>
         </Key>
         <Key ID="STR_KAT_Ophthalmology_setting_enable">
             <English>Enable eye injuries</English>
@@ -144,6 +161,7 @@
             <German>Aktiviere Augenverletzungen</German>
             <Japanese>眼外傷を有効化</Japanese>
             <Czech>Povolit oční poranění</Czech>
+            <Dutch>Sta oogletsel toe</Dutch>
         </Key>
         <Key ID="STR_KAT_Ophthalmology_setting_eyeShield_medic_required">
             <English>Medic required for eye shield</English>
@@ -152,6 +170,7 @@
             <German>Sanitäter benötigt zur Anwendung des Augenschutzes</German>
             <Japanese>眼帯の許可</Japanese>
             <Czech>Zdravotník je potřeba k přiložení očního štítu</Czech>
+            <Dutch>Medic benodigd voor aanleggen van een oogschild</Dutch>
         </Key>
         <Key ID="STR_KAT_Ophthalmology_setting_eyeShield_treatment_time">
             <English>Treatment time for eye shield</English>
@@ -160,6 +179,7 @@
             <German>Anwendungszeit des Augenschutzes</German>
             <Japanese>眼帯装着の所要時間</Japanese>
             <Czech>Doba ošetření s očním štítem</Czech>
+            <Dutch>Benodigde tijd voor het aanleggen van een oogschild</Dutch>
         </Key>
         <Key ID="STR_KAT_Ophthalmology_setting_eyewash_medic_required">
             <English>Medic required to Eye Wash</English>
@@ -168,6 +188,7 @@
             <German>Sanitäter benötigt zur Augenspülung</German>
             <Japanese>洗眼の許可</Japanese>
             <Czech>Zdravotník je potřeba k opláchnutí očí</Czech>
+            <Dutch>Medic benodigd voor het spoelen van oogen</Dutch>
         </Key>
         <Key ID="STR_KAT_Ophthalmology_setting_eyewash_treatment_time">
             <English>Treatment time of Eye Wash</English>
@@ -176,6 +197,7 @@
             <German>Anwendungszeit der Augenspülung</German>
             <Japanese>洗眼の所要時間</Japanese>
             <Czech>Doba ošetření s opláchnutím očí</Czech>
+            <Dutch>Benodigde tijd voor het spoelen van ogen</Dutch>
         </Key>
         <Key ID="STR_KAT_Ophthalmology_setting_probability_dust">
             <English>Probability to get eye injury</English>
@@ -184,6 +206,7 @@
             <German>Wahrscheinlichkeit einer Augenverletzung</German>
             <Japanese>眼外傷を受ける確率</Japanese>
             <Czech>Šance na oční poranění</Czech>
+            <Dutch>Kans om een oogletsel te verkrijgen</Dutch>
         </Key>
         <Key ID="STR_KAT_Ophthalmology_setting_probability_dust_heavy">
             <English>Probability to get heavy eye injury</English>
@@ -192,6 +215,7 @@
             <German>Wahrscheinlichkeit einer schweren Augenverletzung</German>
             <Japanese>重度の眼外傷を受ける確率</Japanese>
             <Czech>Šance na vážné oční zranění</Czech>
+            <Dutch>Kans om een erstig letsel aan het oog te verkrijgen</Dutch>
         </Key>
         <Key ID="STR_KAT_Ophthalmology_setting_probability_treatment_dust">
             <English>Probability to treat (non-heavy) eye injury with blinking</English>
@@ -200,6 +224,7 @@
             <German>Wahrscheinlichkeit, eine (nicht-schwere) Augenverletzung durch blinzeln zu beseitigen</German>
             <Japanese>まばたきすることによって(重度ではない)眼外傷を治療する確率</Japanese>
             <Czech>Šance na vyléčení (nevážných) očních zranění mrknutím </Czech>
+            <Dutch>Kans om (niet ernstig) oogletsel te behandelen met knipperen</Dutch>
         </Key>
         <Key ID="STR_KAT_Ophthalmology_setting_subcategory_injury">
             <English>Eye injuries</English>
@@ -208,6 +233,7 @@
             <German>Augenverletzungen</German>
             <Japanese>眼外傷</Japanese>
             <Czech>Oční zranění</Czech>
+            <Dutch>Oogletsel</Dutch>
         </Key>
         <Key ID="STR_KAT_Ophthalmology_setting_subcategory_manual_blink">
             <English>Manual blinking</English>
@@ -216,6 +242,7 @@
             <German>Manuelles Blinzeln</German>
             <Japanese>手動でまばたき</Japanese>
             <Czech>Manuální mrknutí</Czech>
+            <Dutch>Handmatig knipperen</Dutch>
         </Key>
     </Package>
 </Project>
