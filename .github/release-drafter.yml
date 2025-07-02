@@ -36,7 +36,7 @@ exclude-labels:
 
 change-template: '- $TITLE (#$NUMBER)'
 template: |
-  _Requires CBA version X.Y.Z or later and Arma 3 version X.Y or later._
+  _Requires CBA version X.Y.Z or later and ACE 3 version X.Y or later._
 
   ## Change Log Summary
 
