@@ -79,7 +79,7 @@
             <Italian>Applica protezione oculare</Italian>
             <German>Augenschild anwenden</German>
             <Japanese>眼帯を装着</Japanese>
-            <Czech>Přikládání Očního štítu</Czech>
+            <Czech>Přiložit Oční štít</Czech>
             <Dutch>Leg oogschild aan</Dutch>
         </Key>
         <Key ID="STR_KAT_Ophthalmology_eyeshield_item">
@@ -106,7 +106,7 @@
             <Italian>Effettua un lavaggio oculare con soluzione salina</Italian>
             <German>Augen mit Kochsalzlösung spülen</German>
             <Japanese>生理食塩液で目を洗う</Japanese>
-            <Czech>Umývání očí se saline</Czech>
+            <Czech>Umývání očí se solným roztokem</Czech>
             <Dutch>Ogen met saline spoelen</Dutch>
         </Key>
         <Key ID="STR_KAT_Ophthalmology_eyewash_display_water">
@@ -115,7 +115,7 @@
             <Italian>Effettua un lavaggio oculare con acqua</Italian>
             <German>Augen mit Wasser spülen</German>
             <Japanese>水で目を洗う</Japanese>
-            <Czech>Umývání očí s vodou</Czech>
+            <Czech>Umývání očí vodou</Czech>
             <Dutch>Ogen met water spoelen</Dutch>
         </Key>
         <Key ID="STR_KAT_Ophthalmology_eyewash_item">
@@ -142,7 +142,7 @@
             <Italian>Lavaocchi</Italian>
             <German>Augenspüler</German>
             <Japanese>洗眼器</Japanese>
-            <Czech>Umývač očí</Czech>
+            <Czech>Vyplachovač očí</Czech>
             <Dutch>Ogenspoeler</Dutch>
         </Key>
         <Key ID="STR_KAT_Ophthalmology_eyewasher_display_item">
