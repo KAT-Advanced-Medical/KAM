@@ -332,7 +332,7 @@
 [
     QGVAR(CPR_OxygenationPeriod),
     "SLIDER",
-    LLSTRING(SETTING_CPR_OxygenationPeriod),
+    [LLSTRING(SETTING_CPR_OxygenationPeriod), LLSTRING(SETTING_CPR_OxygenationPeriod_DESC)],
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_CPR)],
     [0, 3600, 15, 0],
     true

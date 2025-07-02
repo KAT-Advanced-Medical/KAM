@@ -2814,6 +2814,22 @@
             <Finnish>Happisaturaatiojakso</Finnish>
             <Dutch>Oxygenatie periode</Dutch>
         </Key>
+            <Key ID="STR_KAT_Circulation_SETTING_CPR_OxygenationPeriod_DESC">
+            <English>Has no effect.</English>
+            <Czech>Nemá žádný účinek.</Czech>
+            <French>N'a aucun effet.</French>
+            <Spanish>No tiene efecto.</Spanish>
+            <Italian>Non ha effetto.</Italian>
+            <Portuguese>Não tem efeito.</Portuguese>
+            <Russian>Не имеет эффекта.</Russian>
+            <German>Hat keine Auswirkungen.</German>
+            <Korean>효과가 없습니다.</Korean>
+            <Japanese>効果がありません。</Japanese>
+            <Chinese>沒有效果。</Chinese>
+            <Chinesesimp>没有效果。</Chinesesimp>
+            <Finnish>Ei vaikutusta.</Finnish>
+            <Dutch>Heeft geen effect.</Dutch>
+        </Key>
         <Key ID="STR_KAT_Circulation_SETTING_DRAW_BLOODGROUPS">
             <English>Use Bloodgroups for drawing blood?</English>
             <Czech>Použít krevní skupiny pro odebírání krve?</Czech>
