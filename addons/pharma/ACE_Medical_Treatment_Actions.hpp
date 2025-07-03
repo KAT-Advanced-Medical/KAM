@@ -1242,7 +1242,62 @@ class ACE_Medical_Treatment_Actions {
         displayNameProgress = KATPUSHINGCSTRING(phenylephrine,5ml,30);
         items[] = {"kat_syringe_phenylephrine_5ml_30"};
     };
-
+    class syringe_Rocuronium_5ml_10: syringe_EACA_5ml_10 {
+        medicRequired = QGVAR(medLvl_rocuronium);
+        items[] = {"kat_syringe_rocuronium_5ml_10"};
+        displayName = KATPUSHCSTRING(rocuronium,5ml,10);
+        displayNameProgress = KATPUSHINGCSTRING(rocuronium,5ml,10);
+    };
+    class syringe_Rocuronium_5ml_12: syringe_Rocuronium_5ml_10 {
+        items[] = {"kat_syringe_rocuronium_5ml_12"};
+        displayName = KATPUSHCSTRING(rocuronium,5ml,12);
+        displayNameProgress = KATPUSHINGCSTRING(rocuronium,5ml,12);
+    };
+    class syringe_Rocuronium_5ml_14: syringe_Rocuronium_5ml_10 {
+        items[] = {"kat_syringe_rocuronium_5ml_14"};
+        displayName = KATPUSHCSTRING(rocuronium,5ml,14);
+        displayNameProgress = KATPUSHINGCSTRING(rocuronium,5ml,14);
+    };
+    class syringe_Rocuronium_5ml_16: syringe_Rocuronium_5ml_10 {
+        items[] = {"kat_syringe_rocuronium_5ml_16"};
+        displayName = KATPUSHCSTRING(rocuronium,5ml,16);
+        displayNameProgress = KATPUSHINGCSTRING(rocuronium,5ml,16);
+    };
+    class syringe_Rocuronium_5ml_18: syringe_Rocuronium_5ml_10 {
+        items[] = {"kat_syringe_rocuronium_5ml_18"};
+        displayName = KATPUSHCSTRING(rocuronium,5ml,18);
+        displayNameProgress = KATPUSHINGCSTRING(rocuronium,5ml,18);
+    };
+    class syringe_Rocuronium_5ml_20: syringe_Rocuronium_5ml_10 {
+        items[] = {"kat_syringe_rocuronium_5ml_20"};
+        displayName = KATPUSHCSTRING(rocuronium,5ml,20);
+        displayNameProgress = KATPUSHINGCSTRING(rocuronium,5ml,20);
+    };
+    class syringe_Rocuronium_5ml_22: syringe_Rocuronium_5ml_10 {
+        items[] = {"kat_syringe_rocuronium_5ml_22"};
+        displayName = KATPUSHCSTRING(rocuronium,5ml,22);
+        displayNameProgress = KATPUSHINGCSTRING(rocuronium,5ml,22);
+    };
+    class syringe_Rocuronium_5ml_24: syringe_Rocuronium_5ml_10 {
+        items[] = {"kat_syringe_rocuronium_5ml_24"};
+        displayName = KATPUSHCSTRING(rocuronium,5ml,24);
+        displayNameProgress = KATPUSHINGCSTRING(rocuronium,5ml,24);
+    };
+    class syringe_Rocuronium_5ml_26: syringe_Rocuronium_5ml_10 {
+        items[] = {"kat_syringe_rocuronium_5ml_26"};
+        displayName = KATPUSHCSTRING(rocuronium,5ml,26);
+        displayNameProgress = KATPUSHINGCSTRING(rocuronium,5ml,26);
+    };
+    class syringe_Rocuronium_5ml_28: syringe_Rocuronium_5ml_10 {
+        items[] = {"kat_syringe_rocuronium_5ml_28"};
+        displayName = KATPUSHCSTRING(rocuronium,5ml,28);
+        displayNameProgress = KATPUSHINGCSTRING(rocuronium,5ml,28);
+    };
+    class syringe_Rocuronium_5ml_30: syringe_Rocuronium_5ml_10 {
+        items[] = {"kat_syringe_rocuronium_5ml_30"};
+        displayName = KATPUSHCSTRING(rocuronium,5ml,30);
+        displayNameProgress = KATPUSHINGCSTRING(rocuronium,5ml,30);
+    };
     class syringe_Succinylcholine_5ml_10: syringe_EACA_5ml_10 {
         medicRequired = QGVAR(medLvl_succinylcholine);
         items[] = {"kat_syringe_succinylcholine_5ml_10"};

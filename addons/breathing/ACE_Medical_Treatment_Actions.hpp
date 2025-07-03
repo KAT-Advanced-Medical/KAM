@@ -29,7 +29,7 @@ class ACE_Medical_Treatment_Actions {
         displayNameProgress = CSTRING(Check_Breathing_Progress);
         category = "airway";
         allowedSelections[] = {"Head"};
-        allowSelfTreatment = 0;
+        allowSelfTreatment = 1;
         medicRequired = 0;
         treatmentTime = 2;
         condition = QUOTE(GVAR(enableCheckBreathing));
