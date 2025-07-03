@@ -1308,6 +1308,24 @@
             <Finnish>Okkluusiojäähdytyssykli</Finnish>
             <Dutch>Verstoppings afkoelingsperiode</Dutch>
         </Key>
+        <Key ID="STR_KAT_Airway_SETTING_occlusion_cooldownPeriod_DESC">
+            <English>Period in minutes during which patient cannot get another occlusion after last occlusion was cleared. Set to 0 to disable this feature.</English>
+            <Czech>Období v minutách, během kterého pacient nemůže mít další okluzi po odstranění poslední okluze. Nastavte na 0 pro vypnutí této funkce.</Czech>
+            <French>Période en minutes pendant laquelle le patient ne peut pas avoir d'autre occlusion après que la dernière occlusion a été supprimée. Réglez sur 0 pour désactiver cette fonctionnalité.</French>
+            <Spanish>Período en minutos durante el cual el paciente no puede tener otra oclusión después de que se haya eliminado la última oclusión. Establecer en 0 para desactivar esta función.</Spanish>
+            <Italian>Periodo in minuti durante il quale il paziente non può avere un'altra occlusione dopo che l'ultima occlusione è stata eliminata. Impostare su 0 per disabilitare questa funzione.</Italian>
+            <Portuguese>Período em minutos durante o qual o paciente não pode ter outra oclusão após a última oclusão ter sido removida. Definir como 0 para desativar essa funcionalidade.</Portuguese>
+            <Russian>Период в минутах, в течение которого у пациента не может быть другой окклюзии после удаления последней окклюзии. Установите 0, чтобы отключить эту функцию.</Russian>
+            <German>Zeitraum in Minuten, in dem ein Patient keine weitere Okklusion bekommen kann, nachdem die letzte Okklusion beseitigt wurde. Auf 0 setzen, um diese Funktion zu deaktivieren.</German>
+            <Korean>마지막 구토가 제거된 후 환자가 다시 구토할 수 없는 기간(분). 이 기능을 비활성화하려면 0으로 설정하십시오.</Korean>
+            <Japanese>最後の異物が除去された後、患者が次の異物を発症しない期間(分)。この機能を無効にするには0に設定してください。</Japanese>
+            <Chinese>患者在最後一次異物被清除後，不會再次發生異物的時間（分鐘）。設置為0以禁用此功能。</Chinese>
+            <Chinesesimp>患者在最后一次闭塞被清除后，不能再次发生闭塞的时间（分钟）。设置为0以禁用此功能。</Chinesesimp>
+            <Turkish>Hastanın son tıkanıklık temizlendikten sonra başka bir tıkanıklık alamayacağı dakika cinsinden süre. Bu özelliği devre dışı bırakmak için 0'a ayarlayın.</Turkish>
+            <Norwegian>Periode i minutter hvor pasienten ikke kan få en ny okklusjon etter at den siste okklusjonen ble fjernet. Sett til 0 for å deaktivere denne funksjonen.</Norwegian>
+            <Finnish>Aika minuuteissa, jonka aikana potilas ei voi saada uutta tukosta viimeisen tukosten poistamisen jälkeen. Aseta arvoksi 0 poistaaksesi tämän ominaisuuden käytöstä.</Finnish>
+            <Dutch>Periode in minuten waarin de patiënt geen nieuwe verstopping kan krijgen nadat de laatste verstopping is weggenomen. Stel in op 0 om deze functie uit te schakelen.</Dutch>
+        </Key>
         <Key ID="STR_KAT_Airway_SETTING_occlusion_repeatTimer">
             <English>Occlusion repeat timer</English>
             <Czech>Časovač opakovaného ucpání dýchacích cest</Czech>
@@ -1325,6 +1343,42 @@
             <Norwegian>Repetisjonsintervall for Okklusjon</Norwegian>
             <Finnish>Okkluusiotoistoajastin</Finnish>
             <Dutch>Verstoppings herhaling timer</Dutch>
+        </Key>
+        <Key ID="STR_KAT_Airway_SETTING_occlusion_repeatTimer_DESC">
+            <English>Time interval in seconds at which the system checks for new occlusion occurrences in unconscious patients.</English>
+            <Czech>Časový interval v sekundách, ve kterém systém kontroluje nové výskyty okluze u pacientů v bezvědomí.</Czech>
+            <French>Intervalle de temps en secondes auquel le système vérifie les nouvelles occurrences d'occlusion chez les patients inconscients.</French>
+            <Spanish>Intervalo de tiempo en segundos en el que el sistema verifica nuevas ocurrencias de oclusión en pacientes inconscientes.</Spanish>
+            <Italian>Intervallo di tempo in secondi in cui il sistema controlla le nuove occorrenze di occlusione nei pazienti privi di conoscenza.</Italian>
+            <Portuguese>Intervalo de tempo em segundos no qual o sistema verifica novas ocorrências de oclusão em pacientes inconscientes.</Portuguese>
+            <Russian>Временной интервал в секундах, с которым система проверяет новые случаи окклюзии у пациентов без сознания.</Russian>
+            <German>Zeitintervall in Sekunden, in dem das System neue Okklusionsereignisse bei bewusstlosen Patienten überprüft.</German>
+            <Korean>의식불명 환자에게 새로운 구토 발생을 시스템이 확인하는 시간 간격(초).</Korean>
+            <Japanese>意識不明の患者に新しい異物の発生をシステムがチェックする時間間隔（秒）。</Japanese>
+            <Chinese>系統檢查昏迷患者新異物發生的時間間隔（秒）。</Chinese>
+            <Chinesesimp>系统检查昏迷患者新闭塞发生的时间间隔（秒）。</Chinesesimp>
+            <Turkish>Sistemin bilinçsiz hastalarda yeni tıkanıklık oluşumlarını kontrol ettiği saniye cinsinden zaman aralığı.</Turkish>
+            <Norwegian>Tidsintervall i sekunder hvor systemet sjekker for nye okklusjoner hos bevisstløse pasienter.</Norwegian>
+            <Finnish>Aikaväliin sekunteina, jolloin järjestelmä tarkistaa uusia tukostuotoksia tajuttomilla potilailla.</Finnish>
+            <Dutch>Tijdinterval in seconden waarin het systeem controleert op nieuwe verstoppingen bij bewusteloze patiënten.</Dutch>
+        </Key>
+        <Key ID="STR_KAT_Airway_SETTING_puking_sound_DESC">
+            <English>Enable or disable the sound effect when a patient develops airway occlusion (vomiting).</English>
+            <Czech>Povolit nebo zakázat zvukový efekt, když se u pacienta objeví okluze dýchacích cest (zvracení).</Czech>
+            <French>Activer ou désactiver l'effet sonore lorsqu'un patient développe une occlusion des voies respiratoires (vomissements).</French>
+            <Spanish>Habilitar o deshabilitar el efecto de sonido cuando un paciente desarrolla oclusión de las vías respiratorias (vómito).</Spanish>
+            <Italian>Abilita o disabilita l'effetto sonoro quando un paziente sviluppa un'occlusione delle vie aeree (vomito).</Italian>
+            <Portuguese>Habilitar ou desabilitar o efeito sonoro quando um paciente desenvolve oclusão das vias aéreas (vômito).</Portuguese>
+            <Russian>Включить или отключить звуковой эффект, когда у пациента развивается окклюзия дыхательных путей (рвота).</Russian>
+            <German>Aktiviert oder deaktiviert den Soundeffekt, wenn bei einem Patienten eine Atemwegsobstruktion (Erbrechen) auftritt.</German>
+            <Korean>환자에게 기도 폐색(구토)이 발생했을 때의 사운드 효과를 활성화하거나 비활성화합니다.</Korean>
+            <Japanese>患者に気道閉塞（嘔吐）が発生したときの音響効果を有効または無効にします。</Japanese>
+            <Chinese>啟用或禁用患者發生呼吸道阻塞（嘔吐）時的音效。</Chinese>
+            <Chinesesimp>启用或禁用患者发生气道闭塞（呕吐）时的音效。</Chinesesimp>
+            <Turkish>Hastada hava yolu tıkanıklığı (kusma) geliştiğinde ses efektini etkinleştirin veya devre dışı bırakın.</Turkish>
+            <Norwegian>Aktiver eller deaktiver lydeffekten når en pasient utvikler luftveisblokering (oppkast).</Norwegian>
+            <Finnish>Ota käyttöön tai poista käytöstä ääniefekti, kun potilaalle kehittyy hengitysteiden tukkeutuminen (oksentaminen).</Finnish>
+            <Dutch>Schakel het geluidseffect in of uit wanneer een patiënt luchtwegblokkade (braken) ontwikkelt.</Dutch>
         </Key>
         <Key ID="STR_KAT_Airway_SETTING_puking_sound">
             <English>Activate the puking sound?</English>
