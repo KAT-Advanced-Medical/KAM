@@ -27,11 +27,6 @@ private _isMatch = _lastTwo in [
     ["5ml", "28"],
     ["5ml", "30"]
 ];
-
-systemChat str _classname;
-systemChat str _parts;
-systemChat str _lastTwo;
-systemChat str _isMatch;
 if (_isMatch) then {
     private _timeInSystem = linearConversion [22, 30, (parseNumber (_parts select -1)), 60, 300];
     [_patient, "Ketamine", 10, _timeInSystem, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, "true"] call EFUNC(vitals,addMedicationAdjustment);
