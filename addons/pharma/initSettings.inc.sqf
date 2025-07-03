@@ -39,7 +39,7 @@
 [
     QGVAR(IVdropEnable),
     "CHECKBOX",
-    [LLSTRING(IV_DROP_ENABLE)],
+    [LLSTRING(IV_DROP_ENABLE), LLSTRING(IV_DROP_ENABLE_DESC)],
     [CBA_SETTINGS_CAT, ELSTRING(GUI,SubCategory_Basic)],
     [true],
     true
@@ -57,7 +57,7 @@
 [
     QGVAR(IVreuse),
     "CHECKBOX",
-    [LLSTRING(IV_REUSE)],
+    [LLSTRING(IV_REUSE), LLSTRING(IV_REUSE_DESC)],
     [CBA_SETTINGS_CAT, ELSTRING(GUI,SubCategory_Basic)],
     [false],
     true
@@ -76,7 +76,7 @@
 [
     QGVAR(treatmentTime_ApplyIV),
     "SLIDER",
-    [LLSTRING(treatmentTime_ApplyIV)],
+    [LLSTRING(treatmentTime_ApplyIV), LLSTRING(treatmentTime_ApplyIV_DESC)],
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_ApplyIV)],
     [0.1, 10, 7, 1],
     true
@@ -104,7 +104,7 @@
 [
     QGVAR(treatmentTime_ApplyIO),
     "SLIDER",
-    [LLSTRING(treatmentTime_ApplyIO)],
+    [LLSTRING(treatmentTime_ApplyIO), LLSTRING(treatmentTime_ApplyIO_DESC)],
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_ApplyIO)],
     [0.1, 10, 7, 1],
     true
@@ -151,7 +151,7 @@
 [
     QGVAR(reorientationChance),
     "SLIDER",
-    LLSTRING(SETTING_reorientationChance),
+    [LLSTRING(SETTING_reorientationChance), LLSTRING(SETTING_reorientationChance_DESC)],
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_Reorientation)],
     [0, 100, 50, 0],
     true
@@ -179,7 +179,7 @@
 [
     QGVAR(carbonateChance),
     "SLIDER",
-    LLSTRING(SETTING_carbonateChance),
+    [LLSTRING(SETTING_carbonateChance), LLSTRING(SETTING_carbonateChance_DESC)],
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_Carbonate)],
     [0, 100, 100, 0],
     true
@@ -820,7 +820,7 @@
 [
     QGVAR(CheckCoag_MedLevel),
     "LIST",
-    LLSTRING(SETTING_CheckCoag_MedLevel),
+    [LLSTRING(SETTING_CheckCoag_MedLevel), LLSTRING(SETTING_CheckCoag_MedLevel_DESC)],
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_Coag_Sense)],
     [[0, 1, 2], ["STR_ACE_Medical_Treatment_Anyone", "STR_ACE_Medical_Treatment_Medics", "STR_ACE_Medical_Treatment_Doctors"], 0],
     true
@@ -829,7 +829,7 @@
 [
     QGVAR(CheckCoag_Location),
     "LIST",
-    LLSTRING(SETTING_CheckCoag_Location),
+    [LLSTRING(SETTING_CheckCoag_Location), LLSTRING(SETTING_CheckCoag_Location_DESC)],
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_Coag_Sense)],
     [[0,1,2,3],["STR_ACE_Common_Anywhere", "STR_ACE_Common_Vehicle", "STR_ACE_Medical_Treatment_MedicalFacilities", "STR_ACE_Medical_Treatment_VehiclesAndFacilities"],0],
     true
@@ -838,7 +838,7 @@
 [
     QGVAR(CheckCoag_TreatmentTime),
     "TIME",
-    LLSTRING(SETTING_CheckCoag_treatmentTime),
+    [LLSTRING(SETTING_CheckCoag_treatmentTime), LLSTRING(SETTING_CheckCoag_treatmentTime_DESC)],
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_Coag_Sense)],
     [1, 30, 10],
     true
