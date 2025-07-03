@@ -33,15 +33,16 @@ private _breathRate = "RR: ";
 
 private _occlusionArray = _patient getVariable [QEGVAR(airway,occlusion), [0, 0, 0]];
 private _obstructionArray = _patient getVariable [QEGVAR(airway,obstruction), [0, 0, 0]];
+private _catastrophicState = _patient getVariable [QEGVAR(airway,catastrophicAirway), [false, false]];
+private _hasCatastrophicAirway = ((_catastrophicState select 0) || (_catastrophicState select 1));
 if ((_patient getVariable [QEGVAR(airway,airway_item), ""]) isEqualTo "NPA") then {
     _occlusionArray = _occlusionArray select [1,2];
     _obstructionArray = _obstructionArray select [1,2];
+    _hasCatastrophicAirway = _catastrophicState select 1;
 };
 private _occlusion = (_occlusionArray findIf { _x > 4 }) != -1;
 private _obstruction = (_obstructionArray findIf { _x != 0 }) != -1;
 
-private _catastrophicState = _patient getVariable [QEGVAR(airway,catastrophicAirway), [false, false]];
-private _hasCatastrophicAirway = ((_catastrophicState select 0) || (_catastrophicState select 1));
 
 private _respiratoryDepth = _patient getVariable [QEGVAR(vitals,respiratoryDepth), 10];
 if (_respiratoryDepth < 8.5) then {

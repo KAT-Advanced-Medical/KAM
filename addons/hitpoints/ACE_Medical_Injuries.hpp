@@ -12,7 +12,7 @@ class ACE_Medical_Injuries {
         };
         // Occur when an entire structure or part of it is forcibly pulled away, such as the loss of a permanent tooth or an ear lobe. Explosions, gunshots, and animal bites may cause avulsions.
         class Avulsion {
-            bleeding = 0.1;
+            bleeding = 0.07;
             pain = 1.0;
             causeLimping = 1;
         };
@@ -24,7 +24,7 @@ class ACE_Medical_Injuries {
         };
         // Occur when a heavy object falls onto a person, splitting the skin and shattering or tearing underlying structures.
         class Crush {
-            bleeding = 0.05;
+            bleeding = 0.04;
             pain = 0.8;
             causeLimping = 1;
             causeFracture = 1;
@@ -36,19 +36,19 @@ class ACE_Medical_Injuries {
         };
         // Also called tears, these are separating wounds that produce ragged edges. They are produced by a tremendous force against the body, either from an internal source as in childbirth, or from an external source like a punch.
         class Laceration {
-            bleeding = 0.05;
+            bleeding = 0.03;
             pain = 0.2;
         };
         // Also called velocity wounds, they are caused by an object entering the body at a high speed, typically a bullet or small peices of shrapnel.
         class VelocityWound {
-            bleeding = 0.2;
+            bleeding = 0.15;
             pain = 0.9;
             causeLimping = 1;
             causeFracture = 1;
         };
         // Deep, narrow wounds produced by sharp objects such as nails, knives, and broken glass.
         class PunctureWound {
-            bleeding = 0.05;
+            bleeding = 0.03;
             pain = 0.4;
             causeLimping = 1;
         };

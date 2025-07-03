@@ -265,7 +265,7 @@ if (isNil {_unit getVariable [QGVAR(keepPronePFH), nil]}) then {
 
         if (!alive _unit || {_unit != ACE_player} || {!(_unit getVariable [QGVAR(keepProne), false])}) exitWith {
             _pfhID call CBA_fnc_removePerFrameHandler;
-            _unit setVariable [QGVAR(keepPronePFH), nil]; // Clear the tracking variable
+            _unit setVariable [QGVAR(keepPronePFH), nil];
         };
         private _state = animationState _unit;
         TRACE_1("State",_state);

@@ -350,7 +350,7 @@ private _TXAmedications = ["syringe_TXA_5ml_10", "syringe_TXA_10ml_10", "TXAAuto
             params ["_patient"];
             _patient setVariable [QGVAR(TXAWindow), true, true];  
         },
-        [_patient], 180] call CBA_fnc_waitAndExecute; 
+        [_patient], 120] call CBA_fnc_waitAndExecute; 
         [{
             params ["_patient"];
             _patient setVariable [QGVAR(TXAWindow), false, true]; 

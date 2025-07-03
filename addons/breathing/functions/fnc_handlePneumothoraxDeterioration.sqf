@@ -79,12 +79,13 @@ params ["_unit", "_chanceIncrease", "_side"];
                             [_idPFH] call CBA_fnc_removePerFrameHandler;
                         };
                         private _surface = (_unit getVariable [QGVAR(lungSurfaceArea), 400]);
-                        private _pneumothoraxAmount = _unit getVariable [QGVAR(pneumothoraxSurfaceArea), [0, 0]] select _side;
+                        private _pneumothoraxSurfaceArea = _unit getVariable [QGVAR(pneumothoraxSurfaceArea), [0, 0]];
+                        private _pneumothoraxAmount = _pneumothoraxSurfaceArea select _side;
                             if (_surface > 150) then {
                                 private _surfaceArea = _surface - 10;
-                                private _pneumothoraxAmount = _pneumothoraxAmount + 10;
+                                _pneumothoraxSurfaceArea set [_side, _pneumothoraxAmount + 10];
                                 _unit setVariable [QGVAR(lungSurfaceArea), _surfaceArea];
-                                _unit setVariable [QGVAR(pneumothoraxSurfaceArea), _pneumothoraxAmount];
+                                _unit setVariable [QGVAR(pneumothoraxSurfaceArea), _pneumothoraxSurfaceArea];
                             };
                         _pneumothoraxState set [_side, _ptxTarget];
                         _unit setVariable [QGVAR(pneumothorax), _pneumothoraxState, true];

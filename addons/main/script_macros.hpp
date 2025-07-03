@@ -495,7 +495,7 @@
 #define HAS_LIMB_BLEEDING(unit,index) ((GET_BODY_BLEED_RATE(unit) select index) > 0)
 
 #define GET_JOINTS(unit)   (unit getVariable [VAR_JOINTS, DEFAULT_JOINT_VALUES])
-#define GET_LIMB_JOINT(unit,jointindex)   ((unit getVariable [VAR_JOINTS, DEFAULT_JOINT_VALUES]) select _jointindex)
+#define GET_LIMB_JOINT(unit,limbindex)   ((unit getVariable [VAR_JOINTS, DEFAULT_JOINT_VALUES]) select _limbindex)
 
 #undef PRIORITY_HEAD
 #undef PRIORITY_BODY

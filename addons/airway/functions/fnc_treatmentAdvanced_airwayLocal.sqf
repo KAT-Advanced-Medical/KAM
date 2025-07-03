@@ -26,32 +26,33 @@ if ((_occlusion || (_obstruction && !(_patient getVariable [QGVAR(overstretch), 
     [QGVAR(airwayFeedback), [_medic, LLSTRING(AirwayStatus_NotClearForItem)], _medic] call CBA_fnc_targetEvent;
     [_medic, _usedItem] call ACEFUNC(common,addToInventory);
 };
-
+systemChat str _usedItem;
+systemChat str _classname;
 _patient setVariable [QGVAR(airway), true, true];
 _patient setVariable [QGVAR(airway_item), _classname, true];
 switch (true) do {
-    case (_usedItem isEqualTo "Larynxtubus"): {
+    case (_usedItem isEqualTo "kat_larynx"): {
         _patient setVariable [QGVAR(airwayStatus), [1, 1, 0], true];
         private _obstruction = _patient getVariable [QGVAR(obstruction), [0, 0, 0]];
         private _newObstruction = [0, 0, _obstruction select 2];
         _patient setVariable [QGVAR(obstruction), _newObstruction, true];
     };
-    case (_usedItem isEqualTo "IGEL"): {
+    case (_usedItem isEqualTo "kat_IGEL"): {
         _patient setVariable [QGVAR(airwayStatus), [1, 1, 0], true];
         private _obstruction = _patient getVariable [QGVAR(obstruction), [0, 0, 0]];
         private _newObstruction = [0, 0, _obstruction select 2];
         _patient setVariable [QGVAR(obstruction), _newObstruction, true];
     };
-    case (_usedItem isEqualTo "ETT"): {
+    case (_usedItem isEqualTo "kat_ETT"): {
         _patient setVariable [QGVAR(airwayStatus), [1, 1, 1], true];
         _patient setVariable [QGVAR(obstruction), [0, 0, 0], true];
         [GVAR(PlaceETT), "keydown"] call CBA_fnc_removeKeyHandler;
         _patient setVariable [QGVAR(visualizationActive), false, true];
     };
-    case (_usedItem isEqualTo "NPA"): {
+    case (_usedItem isEqualTo "kat_NPA"): {
         _patient setVariable [QGVAR(airwayStatus), [1, 0, 0], true];
     };
-    case (_usedItem isEqualTo "Guedeltubes"): {
+    case (_usedItem isEqualTo "kat_guedel"): {
         _patient setVariable [QGVAR(airwayStatus), [1, 0, 0], true];
         private _obstruction = _patient getVariable [QGVAR(obstruction), [0, 0, 0]];
         private _newObstruction = [0, _obstruction select 1, _obstruction select 2];

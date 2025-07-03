@@ -141,7 +141,6 @@ if (_adjustments isNotEqualTo []) then {
 [_unit, _nauseaMultAdjustment, _deltaT, _syncValues] call FUNC(updateNauseaMult);
 [_unit, _sedationAdjustment, _deltaT, _syncValues] call FUNC(updateSedation);
 [_unit, _paralysisAdjustment, _deltaT, _syncValues] call FUNC(updateParalysis);
-[_unit, POISON_DECREASE, _deltaT, _syncValues] call FUNC(handlePoisoning);
 
 private _aceAnFatigue = 0;
 if (_unit getVariable [QGVAR(fatigueEnabled), false]) then {
