@@ -1309,8 +1309,8 @@
             <Dutch>Verstoppings afkoelingsperiode</Dutch>
         </Key>
         <Key ID="STR_KAT_Airway_SETTING_occlusion_cooldownPeriod_DESC">
-            <English>Period in minutes during which patient cannot get another occlusion after last occlusion was cleared. Set to 0 to disable this feature.</English>
-            <German>Zeitraum in Minuten, in dem ein Patient keine weitere Okklusion bekommen kann, nachdem die letzte Okklusion beseitigt wurde. Auf 0 setzen, um diese Funktion zu deaktivieren.</German>
+            <English>Period in seconds during which patient cannot get another occlusion after last occlusion was cleared. Set to 0 to disable this feature.</English>
+            <German>Zeitraum in Sekunden, in dem ein Patient keine weitere Okklusion bekommen kann, nachdem die letzte Okklusion beseitigt wurde. Auf 0 setzen, um diese Funktion zu deaktivieren.</German>
         </Key>
         <Key ID="STR_KAT_Airway_SETTING_occlusion_repeatTimer">
             <English>Occlusion repeat timer</English>
