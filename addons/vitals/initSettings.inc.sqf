@@ -49,6 +49,6 @@
     "CHECKBOX",
     [LLSTRING(PRESSURE_ACE), LLSTRING(PRESSURE_ACE_DESC)],
     [CBA_SETTINGS_CAT, ELSTRING(GUI,SubCategory_Environment)],
-    [false],
+    [true],
     true
 ] call CBA_fnc_addSetting;
