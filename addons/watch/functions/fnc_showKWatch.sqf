@@ -107,7 +107,7 @@ private _timeSeconds = _display displayCtrl 22008;
         _altitude ctrlSetText ([_altitudeValue, 1, 0] call CBA_fnc_formatNumber);
     };
 
-	if (EGVAR(vitals,useACEpressure)) then {
+    if (EGVAR(vitals,useACEpressure)) then {
         if (GVAR(pressureUnit) == 1) then {
             _baro ctrlSetText ([(_altitudeValue call ACEFUNC(weather,calculateBarometricPressure)), 1, 0] call CBA_fnc_formatNumber);
         } else {
