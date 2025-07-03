@@ -76,7 +76,7 @@ if ((_unit getVariable ["kat_pukeActive_PFH", false]) || !(GVAR(enable))) exitWi
                 QPATHTOF_SOUND(sounds\puking2.wav),
                 QPATHTOF_SOUND(sounds\puking3.wav)
             ];
-            TRACE_3("Puke",_sound, _unit, (getPosASL _unit));
+            TRACE_3("Puke",_sound,_unit,(getPosASL _unit));
             playSound3D [_sound, _unit, false, getPosASL _unit, 8, 1, 15];
             };
         };
