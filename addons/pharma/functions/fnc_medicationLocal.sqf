@@ -143,25 +143,18 @@ if (_isOccluded) exitWith {
         _weightMult = _weightMult * _lc;
         TRACE_2("weightMult",_weightMult,_lc);
     };
-    private _parts = (_classname splitString "_");
-    _medication = _classname;
-    if (count _parts > 3) then {
-        _medication = _parts select 1;
-    };
-    if ((toUpper (_medication select [count _medication- 2])) isEqualTo "IV") then {
-            _medication = _medication select [0, count _medication - 2];
-    };
     private _currentDose = [_patient, _medication] call ACEFUNC(medical_status,getMedicationCount) select 0;
     if !(_className in ["CWMP", "Painkillers", "Penthrox", "Carbonate", "BubbleWrap", "Caffeine", "Pervitin", "Naloxone"]) then {
-        private _medicationParts = (_className splitString "_");
-        private _splitMedName = _medicationParts select 1;
-        if ((toUpper (_splitMedName select [count _splitMedName - 2])) isEqualTo "IV") then {
-            _splitMedName = _splitMedName select [0, count _splitMedName - 2];
+        private _medicationParts = _className splitString "_";
+        private _medicationName = _medicationParts select 1;
+        private _upperMed = toUpper _medicationName;
+        if (_upperMed select [count _upperMed - 4] isEqualTo "AUTO") then {
+            _medicationName = _medicationName select [0, count _medicationName - 4];
         };
-        if ((toUpper (_splitMedName select [count _splitMedName - 4])) isEqualTo "AUTO") then {
-            _splitMedName = _splitMedName select [0, count _splitMedName - 4];
+        if (_upperMed select [count _upperMed - 2] isEqualTo "IV") then {
+            _medicationName = _medicationName select [0, count _medicationName - 2];
         };
-        private _medicationMEDName = format ["syringe_%1", _splitMedName];
+        private _medicationMEDName = format ["syringe_%1", _medicationName];
         private _doseConfig = _defaultConfig >> _medicationMEDName;
         private _maximumEffectiveDose = GET_NUMBER(_doseConfig >> "maximumEffectiveDose",getNumber (_defaultConfig >> "maximumEffectiveDose"));
     } else {
@@ -221,8 +214,12 @@ if (_isOccluded) exitWith {
     TRACE_1("ClassName being processed:",_className);
     TRACE_1("SplitString result for _className:",_medicationParts);
     if (count _medicationParts > 3) then {
-        private _medicationName = _medicationParts select 1;
-        if ((toUpper (_medicationName select [count _medicationName - 2])) isEqualTo "IV") then {
+        _medicationName = _medicationParts select 1;
+        private _upperMed = toUpper _medicationName;
+        if (_upperMed select [count _upperMed - 4] isEqualTo "AUTO") then {
+            _medicationName = _medicationName select [0, count _medicationName - 4];
+        };
+        if (_upperMed select [count _upperMed - 2] isEqualTo "IV") then {
             _medicationName = _medicationName select [0, count _medicationName - 2];
         };
         TRACE_6("adjustments1",_patient,_medicationName,_timeTillMaxEffect,_timeInSystem,_heartRateChange,_painReduce);
@@ -246,10 +243,13 @@ if (_isOccluded) exitWith {
 
     if (count _medicationParts > 3) then {
         _medicationName = _medicationParts select 1;
-        if ((toUpper (_medicationName select [count _medicationName - 2])) isEqualTo "IV") then {
+        private _upperMed = toUpper _medicationName;
+        if (_upperMed select [count _upperMed - 4] isEqualTo "AUTO") then {
+            _medicationName = _medicationName select [0, count _medicationName - 4];
+        };
+        if (_upperMed select [count _upperMed - 2] isEqualTo "IV") then {
             _medicationName = _medicationName select [0, count _medicationName - 2];
         };
-
         if (_medicationName in ["EACA","TXA","Amiodarone","Flumazenil"]) then {
         [format ["kat_pharma_%1Local", toLower _medicationName], [_patient, _bodyPart], _patient] call CBA_fnc_targetEvent;
         };
