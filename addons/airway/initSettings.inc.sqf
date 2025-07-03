@@ -446,7 +446,7 @@
     "SLIDER",
     [LLSTRING(SUCCES_visualization),LLSTRING(SUCCES_visualization_DESC)],
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_Items)],
-    [1, 100, 50, 0],
+    [1, 100, 1, 0],
     true
 ] call CBA_fnc_addSetting;
 

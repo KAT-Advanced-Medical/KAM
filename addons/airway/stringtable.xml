@@ -2224,23 +2224,7 @@
             <English>Success probability for Visualization</English>
         </Key>
         <Key ID="STR_KAT_Airway_SUCCES_Visualization_DESC">
-            <English>Higher, the better the probability of success</English>
-            <Czech>Čím vyšší, tím lepší šance</Czech>
-            <French>Plus élevé, les chances de réussite seront meilleures</French>
-            <Spanish>Cuanto mayor sea, mayor será la probabilidad de éxito</Spanish>
-            <Italian>Più alto è, migliori sono le probabilità di successo</Italian>
-            <Polish>Im wyższa, tym większe prawdopodobieństwo sukcesu</Polish>
-            <Portuguese>Quanto maior, melhor a probabilidade de sucesso</Portuguese>
-            <Russian>Чем выше, тем выше вероятность успеха</Russian>
-            <German>Größer = höhere Chance auf Erfolg</German>
-            <Korean>값이 높을수록 성공 확률이 높음</Korean>
-            <Japanese>高いほど、成功の可能性が高くなります</Japanese>
-            <Chinese>越高，成功的機率越大</Chinese>
-            <Chinesesimp>越高，成功的可能性越大</Chinesesimp>
-            <Turkish>Başarı olasılığı ne kadar yüksekse, o kadar iyi</Turkish>
-            <Norwegian>Jo høyere, desto bedre er sannsynligheten for suksess</Norwegian>
-            <Finnish>Mitä korkeampi, sitä suurempi on onnistumisen todennäköisyys</Finnish>
-            <Dutch>Groter betekent een hogere kans op succes</Dutch>
+            <English>Additional chance for visulization to succeed</English>
         </Key>
         <Key ID="STR_KAT_Airway_SETTING_Visualization_Interval">
             <English>Visualization Interval</English>

@@ -104,9 +104,11 @@ GVAR(visualization_timeOut) = true;
                 GVAR(visualization_timeOut) = false;
                 GVAR(visualization_attempts) = GVAR(visualization_attempts) + 1;
                 private _paralysis = _patient getVariable [QEGVAR(breathing,paralysis), 0];
+                private _occlusions = _patient getVariable [QGVAR(occlusion), [0, 0, 0]];
                     
-                if (((_patient getVariable [QGVAR(occlusion), [0, 0, 0]]) findIf { _x < 2 }) != -1) then {
-                    if(random 100 < (5 / ((1 -_paralysis) max 0.1))) then {
+                if (((_patient getVariable [QGVAR(occlusion), [0, 0, 0]]) findIf { _x < 4 }) != -1) then {
+                    private _difficulty = (((10 - (_occlusions select 0 min 4) - (_occlusions select 1 min 4)) / ((1 -_paralysis) max 0.1)) + (GVAR(visualization_attempts) * 3) + GVAR(probability_visualization));
+                    if (random 100 < _difficulty) then {
                         [] call ACEFUNC(interaction,hideMouseHint);
                         [LLSTRING(visualization_stop), LLSTRING(visualization_place), ""] call ACEFUNC(interaction,showMouseHint);
                         _patient setVariable [QGVAR(isVisualized), true, true];

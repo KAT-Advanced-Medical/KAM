@@ -769,7 +769,7 @@ class ACE_ADDON(Medical_Treatment) {
             hrIncreaseLow[] = {15, 20};
             hrIncreaseNormal[] = {10, 20};
             hrIncreaseHigh[] = {10, 20};
-            timeInSystem = 60;
+            timeInSystem = 120;
             timeTillMaxEffect = 5;
             dose = 1;
             weightBased = "true";
