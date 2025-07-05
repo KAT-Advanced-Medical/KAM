@@ -51,7 +51,7 @@ if (((_patient getVariable [QEGVAR(pharma,IV), [0,0,0,0,0,0,0,0,0,0,0,0]]) selec
     {
         _x params ["_bodyPartN", "_medication", "_unit"];
 
-        private _isStillOccluded = [_unit, _bodyPartN] call FUNC(occlusionCheck);
+        private _isStillOccluded = [_unit, _bodyPartN] call EFUNC(pharma,occlusionCheck);
         TRACE_1("delayed medication call after tourniquet removal",_isStillOccluded);
         if (!_isStillOccluded) then {
             TRACE_1("delayed medication call after tourniquet removal",_x);

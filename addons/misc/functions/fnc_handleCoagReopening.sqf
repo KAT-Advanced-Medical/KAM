@@ -132,7 +132,7 @@ if (random 1 <= _reopeningChance * ACEGVAR(medical_treatment,woundReopenChance))
 
                 // Check if we gained limping from this wound re-opening
                 if ((ACEGVAR(medical,limping) == 1) && {_partIndex > 7}) then {
-                    [_target] call EFUNC(medical_engine,updateDamageEffects);
+                    [_target] call FUNC(updateDamageEffects);
                 };
             };
             TRACE_2("After openWound update", _openWounds,_bandagedWounds);
@@ -185,7 +185,7 @@ if (random 1 <= _reopeningChance * ACEGVAR(medical_treatment,woundReopenChance))
 
                 // Check if we gained limping from this wound re-opening
                 if ((ACEGVAR(medical,limping) == 1) && {_partIndex > 7}) then {
-                    [_target] call EFUNC(medical_engine,updateDamageEffects);
+                    [_target] call FUNC(updateDamageEffects);
                 };
             };
             TRACE_2("After openWound update", _openWounds,_bandagedWounds);

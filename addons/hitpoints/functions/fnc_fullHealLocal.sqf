@@ -66,7 +66,7 @@ _patient setVariable [VAR_FRACTURES, DEFAULT_FRACTURE_VALUES, true];
 [_patient] call ACEFUNC(medical_status,updateWoundBloodLoss);
 
 // Vitals
-_patient setVariable [VAR_HEART_RATE, [_patient] call FUNC(generateDefaultHeartRate), true];
+_patient setVariable [VAR_HEART_RATE, [_patient] call EFUNC(circulation,generateDefaultHeartRate), true];
 _patient setVariable [VAR_BLOOD_PRESS, [80, 120], true];
 _patient setVariable [VAR_PERIPH_RES, DEFAULT_PERIPH_RES, true];
 _patient setVariable [VAR_SPO2, DEFAULT_SPO2, true];

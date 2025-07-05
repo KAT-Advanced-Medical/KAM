@@ -8,7 +8,8 @@ class CfgPatches {
             QGVAR(manageAirway_module),
             QGVAR(bloodType_module),
             QGVAR(cardiacState_module),
-            QGVAR(toggleAIDeath_module)
+            QGVAR(toggleAIDeath_module),
+            QGVAR(takeUnitSnapshot_module),
         };
         weapons[] = {};
         magazines[] = { };

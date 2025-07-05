@@ -29,7 +29,7 @@ if (_partindex == 3) then {
         case (_pelvicFracture == 1): { LSTRING(pelvicFracture_log) };
         default {""};
     };
-    [_patient, "quick_view", _typeLabel] call FUNC(removeLog);
+    [_patient, "quick_view", _typeLabel] call EFUNC(circulation,removeLog);
     [_patient, "quick_view", _typeLabel, [[_medic] call ACEFUNC(common,getName)]] call ACEFUNC(medical_treatment,addToLog);
 } else {
 private _jointArray = GET_JOINTS(_patient);
@@ -83,7 +83,7 @@ private _limbJointStatus = _jointArray select _jointGroupIndex;
         default {};
     };
     if (_typeLabel != "") then {
-        [_patient, "quick_view", LSTRING(JointLog)] call FUNC(removeLog);
+        [_patient, "quick_view", LSTRING(JointLog)] call EFUNC(circulation,removeLog);
         [_patient, "quick_view", LSTRING(JointLog), [[_medic] call ACEFUNC(common,getName), _typeLabel, _joint, _limbLabel]] call ACEFUNC(medical_treatment,addToLog);
     };
 } forEach _limbJointStatus;

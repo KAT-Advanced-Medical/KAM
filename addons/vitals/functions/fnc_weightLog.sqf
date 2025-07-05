@@ -19,5 +19,5 @@
 params ["_medic", "_patient"];
 
 private _weight = _patient getVariable [QGVAR(defaultWeight), 80];
-[_patient, "quick_view", LSTRING(weight_log)] call FUNC(removeLog);
+[_patient, "quick_view", LSTRING(weight_log)] call EFUNC(circulation,removeLog);
 [_patient, "quick_view", LSTRING(weight_log), [[_medic] call ACEFUNC(common,getName), _weight]] call ACEFUNC(medical_treatment,addToLog);

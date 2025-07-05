@@ -361,5 +361,8 @@
             <Finnish>Valitse välitön AI-kuolema</Finnish>
             <Dutch>Schakel onmiddelijke KI / AI dood om</Dutch>
         </Key>
+        <Key ID="STR_KAT_Zeus_takeUnitSnapshot_Module_displayname">
+            <English>Take Unit Snapshot</English>
+        </Key>
     </Package>
 </Project>

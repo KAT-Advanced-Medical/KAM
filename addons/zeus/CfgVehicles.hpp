@@ -41,4 +41,10 @@ class CfgVehicles {
         function = QFUNC(toggleAIDeathModule);
         icon = QPATHTOF(ui\Icon_Module_Zeus_Prevent_AI_Death.paa);
     };
+    class GVAR(takeUnitSnapshot_module): GVAR(baseModule) {
+        curatorCanAttach = 1;
+        displayName = CSTRING(takeUnitSnapshot_Module_displayname);
+        function = QFUNC(takeUnitSnapshot);
+        icon = QACEPATHTOF(medical_gui,data\categories\examine_patient.paa);
+    };
 };

@@ -42,12 +42,12 @@ _patient setVariable [QGVAR(IV),[0,0,0,0,0,0,0,0,0,0,0,0], true];
 if (GVAR(RequireInsIV) && GVAR(IVflowControl)) then {
     _patient setVariable [QGVAR(IVflow), [0,0,0,0,0,0,0,0,0,0,0,0], true];
 } else {
-    _patient setVariable [QGVAR(IVflow), [1,1,1,1,1,1], true];
+    _patient setVariable [QGVAR(IVflow), [1,1,1,1,1,1,1,1,1,1,1,1], true];
 };
 if (GVAR(RequireInsIV)) then {
     _patient setVariable [QGVAR(IVrate), [0,0,0,0,0,0,0,0,0,0,0,0], true];
 } else {
-    _patient setVariable [QGVAR(IVrate), [1,1,1,1,1,1], true];
+    _patient setVariable [QGVAR(IVrate), [1,1,1,1,1,1,1,1,1,1,1,1], true];
 };
 
 _patient setVariable [QGVAR(IVincomingFlowAmount), [0,0,0,0,0,0,0,0,0,0,0,0], true];
