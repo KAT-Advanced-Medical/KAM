@@ -1,4 +1,6 @@
+PREP(deserializeState_module);
 PREP(emptyFunction);
+PREP(serializeState_module);
 PREP(showMessage);
 PREP(takeUnitSnapshot);
 PREP(toggleAIDeathModule);

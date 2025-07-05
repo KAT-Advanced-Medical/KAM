@@ -47,4 +47,16 @@ class CfgVehicles {
         function = QFUNC(takeUnitSnapshot);
         icon = QACEPATHTOF(medical_gui,data\categories\examine_patient.paa);
     };
+    class GVAR(serializeState_module): GVAR(baseModule) {
+        curatorCanAttach = 1;
+        displayName = CSTRING(serializeState_Module_displayname);
+        function = QFUNC(serializeState_module);
+        icon = QACEPATHTOF(medical_gui,data\categories\examine_patient.paa);
+    };
+    class GVAR(deserializeState_module): GVAR(baseModule) {
+        curatorCanAttach = 1;
+        displayName = CSTRING(deserializeState_Module_displayname);
+        function = QFUNC(deserializeState_module);
+        icon = QACEPATHTOF(medical_gui,data\categories\examine_patient.paa);
+    };
 };

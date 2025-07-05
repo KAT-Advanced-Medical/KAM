@@ -60,6 +60,12 @@ class CfgFunctions {
             class setUnconscious {
                 file = QPATHTOF(functions\fnc_setUnconscious.sqf);
             };
+            class serializeState {
+                file = QPATHTOF(functions\fnc_serializeState.sqf);
+            };
+            class deserializeState {
+                file = QPATHTOF(functions\fnc_deserializeState.sqf);
+            };
         };
     };
     class overwrite_dogtags {

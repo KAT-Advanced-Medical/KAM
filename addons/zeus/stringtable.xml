@@ -364,5 +364,14 @@
         <Key ID="STR_KAT_Zeus_takeUnitSnapshot_Module_displayname">
             <English>Take Unit Snapshot</English>
         </Key>
+        <Key ID="STR_KAT_Zeus_serializeState_Module_displayname">
+            <English>Serialize Unit State</English>
+        </Key>
+        <Key ID="STR_KAT_Zeus_deserializeState_Module_displayname">
+            <English>Deserialize Unit State</English>
+        </Key>
+        <Key ID="STR_KAT_Zeus_noJSON">
+            <English>No appropriate state saved, save one using Serialize State</English>
+        </Key>
     </Package>
 </Project>

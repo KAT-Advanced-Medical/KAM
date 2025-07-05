@@ -10,6 +10,8 @@ class CfgPatches {
             QGVAR(cardiacState_module),
             QGVAR(toggleAIDeath_module),
             QGVAR(takeUnitSnapshot_module),
+            QGVAR(serializeState_module),
+            QGVAR(deserializeState_module),
         };
         weapons[] = {};
         magazines[] = { };
