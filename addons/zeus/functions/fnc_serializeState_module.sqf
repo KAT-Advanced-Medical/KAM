@@ -27,13 +27,8 @@ if ((_mouseOver select 0) != "OBJECT") then {
         [ACELSTRING(zeus,OnlyInfantry)] call FUNC(showMessage);
     } else {
         private _json = _unit call EFUNC(misc,serializeState);
-        missionNameSpace setVariable [QGVAR(serializedState), _json, true];
-        {  
-            _x params ["_script"];  
-            "ace" callExtension ["clipboard:append", ["/************************************************************//*" + endl]];
-            "ace" callExtension ["clipboard:append", [_script + endl + endl]];    
-            "ace" callExtension ["clipboard:append", ["/************************************************************/" + endl]];  
-        } forEach (missionNameSpace getVariable [QGVAR(serializedState), ""]);   
+        missionNamespace setVariable [QGVAR(serializedState), _json, true];
+        "ace" callExtension ["clipboard:append", [_json + endl + endl]];    
         "ace" callExtension ["clipboard:complete", []];
         deleteVehicle _logic;
     };
