@@ -9,7 +9,4 @@ PREP_RECOMPILE_END;
 #define CBA_SETTINGS_CAT LSTRING(cba_name)
 #include "initSettings.inc.sqf"
 
-GVAR(ammoCache) = createHashMap;
-GVAR(armorCache) = createHashMap;
-
 ADDON = true;
