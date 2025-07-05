@@ -28,6 +28,13 @@ if ((_mouseOver select 0) != "OBJECT") then {
     } else {
         private _json = _unit call EFUNC(misc,serializeState);
         missionNameSpace setVariable [QGVAR(serializedState), _json, true];
+        {  
+            _x params ["_script"];  
+            "ace" callExtension ["clipboard:append", ["/************************************************************//*" + endl]];
+            "ace" callExtension ["clipboard:append", [_script + endl + endl]];    
+            "ace" callExtension ["clipboard:append", ["/************************************************************/" + endl]];  
+        } forEach (missionNameSpace getVariable [QGVAR(serializedState), ""]);   
+        "ace" callExtension ["clipboard:complete", []];
         deleteVehicle _logic;
     };
 };
