@@ -1,3 +1,4 @@
+#define DEBUG_MODE_FULL
 #include "..\script_component.hpp"
 /*
  * Author: Glowbal, Mazinski
@@ -53,10 +54,10 @@ if IN_CRDC_ARRST(_unit) then {
     private _volumeSupportHR = _defaultHeartRate * _strokeVolumeDifference;
 
     // As HR increases, pressure is taken off decreasing stroke volume. However, this effect decreases at higher heart rates and lower SVs
-    TRACE_8("HR1",_lastCycleHeartRate,_lastCycleCO2,_demandReturn,_strokeVolume,,_strokeVolumeDifference,_volumeSupportHR,_hrTargetAdjustment);
+    TRACE_7("HR1",_lastCycleHeartRate,_lastCycleCO2,_demandReturn,_strokeVolume,_strokeVolumeDifference,_volumeSupportHR,_hrTargetAdjustment);
     // Model HR driven by demandReturn divided by stroke volume with pressure applied by volume shortage. 40 point baseline applied to keep movements more stable
     private _modelHeartRate = 40 + ((_demandReturn / _strokeVolume) * ((0.03507 * _defaultHeartRate) * _defaultHeartRate)) + (_volumeSupportHR - _defaultHeartRate);
-    TRACE_1("HR2",_modelHeartRate);
+    TRACE_5("HR2",_modelHeartRate,_demandReturn,_strokeVolume,_defaultHeartRate,_volumeSupportHR);
     // Actual Heart Rate increases stepwise under the target model
     _actualHeartRate = switch (true) do {
         case (_modelHeartRate > _lastCycleHeartRate): { (_lastCycleHeartRate + (1 * _deltaT)) min _modelHeartRate }; 

@@ -373,5 +373,11 @@
         <Key ID="STR_KAT_Zeus_noJSON">
             <English>No appropriate state saved, save one using Serialize State</English>
         </Key>
+        <Key ID="STR_KAT_Zeus_SerializeString_Module_State">
+            <English>Import Serialized String</English>
+        </Key>
+        <Key ID="STR_KAT_Zeus_toClipboard">
+            <English>Serialized String copied to clipboard</English>
+        </Key>
     </Package>
 </Project>

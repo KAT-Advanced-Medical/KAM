@@ -31,6 +31,7 @@ if ((_mouseOver select 0) != "OBJECT") then {
         "ace" callExtension ["clipboard:append", [_json + endl + endl]];    
         "ace" callExtension ["clipboard:complete", []];
         deleteVehicle _logic;
+        [LSTRING(toClipboard)] call FUNC(showMessage);
     };
 };
 deleteVehicle _logic;

@@ -268,3 +268,50 @@ class GVAR(RscCardiacStateModule): RscDisplayAttributes {
         class ButtonCancel: ButtonCancel {};
     };
 };
+class GVAR(RscSerializeStateModule): RscDisplayAttributes {
+    onLoad = QUOTE([ARR_3('onLoad',_this,QQGVAR(RscSerializeModule))] call FUNC(zeusAttributes));
+    onUnload = QUOTE([ARR_3('onUnload',_this,QQGVAR(RscSerializeModule))] call FUNC(zeusAttributes));
+    class Controls: Controls {
+        class Background: Background {};
+        class Title: Title {};
+        class Content: Content {
+            class Controls {
+                class importSerializeString: RscControlsGroupNoScrollbars {
+                    onSetFocus = QUOTE(_this call FUNC(deserializeState_module));
+                    idc = 28424;
+                    x = 0;
+                    y = 0;
+                    w = QUOTE(W_PART(26));
+                    h = QUOTE(H_PART(4));
+                    class controls {
+                        class Title2: RscText {
+                            idc = -1;
+                            text = CSTRING(SerializeString_Module_State);
+                            toolTip = "";
+                            x = 0;
+                            y = 0;
+                            w = QUOTE(W_PART(10));
+                            h = QUOTE(H_PART(1));
+                            colorBackground[] = {0,0,0,0.5};
+                        };
+                        class SerializeString: RscEdit {
+                            idc = 18112;
+                            canModify = 1;
+                            x = QUOTE(W_PART(10.1));
+                            y = 0;
+                            w = QUOTE(W_PART(15.9));
+                            h = QUOTE(H_PART(1));
+                            style = "0x00 + 0x40 + 0x200";
+                            shadow = 1;
+                            colorBackground[] = {0, 0, 0, 0.7};
+                            text = "";
+                        };
+                    };
+                };
+            };
+        };
+        class ButtonOK: ButtonOK {};
+        class ButtonCancel: ButtonCancel {};
+    };
+};
+

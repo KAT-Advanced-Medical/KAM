@@ -56,7 +56,7 @@ class CfgVehicles {
     class GVAR(deserializeState_module): GVAR(baseModule) {
         curatorCanAttach = 1;
         displayName = CSTRING(deserializeState_Module_displayname);
-        function = QFUNC(deserializeState_module);
+        curatorInfoType = QGVAR(RscSerializeStateModule);
         icon = QACEPATHTOF(medical_gui,data\categories\examine_patient.paa);
     };
 };
