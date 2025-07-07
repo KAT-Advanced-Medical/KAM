@@ -7,6 +7,7 @@ PREP(coagRegen);
 PREP(fluid);
 PREP(fluidLocal);
 PREP(fullHealLocal);
+PREP(generateMedicationEffectivness);
 PREP(getBloodVolumeChange);
 PREP(gui_updateBodyImage);
 PREP(gui_updateInjuryListPart);
