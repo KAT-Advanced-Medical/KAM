@@ -2,6 +2,9 @@ class CfgFunctions {
     class overwrite_ace_medical_damage {
         tag = "ace_medical_damage";
         class ace_medical_damage {
+            class determineIfFatal {
+                file = QPATHTOF(functions\fnc_determineIfFatal.sqf);
+            };
             class handleIncapacitation {
                 file = QPATHTOF(functions\fnc_handleIncapacitation.sqf);
             };

@@ -103,7 +103,7 @@ private _fnc_advRhythm = {
 switch (_reviveObject) do {
     case "LUCAS": {
         if (GVAR(enable_CPR_Chances)) then {
-        _chance = linearConversion [BLOOD_VOLUME_CLASS_4_HEMORRHAGE, BLOOD_VOLUME_CLASS_2_HEMORRHAGE, GET_BLOOD_VOLUME_LITERS(_patient), 0.1, 0.2, true];
+        _chance = linearConversion [BLOOD_VOLUME_CLASS_4_HEMORRHAGE, BLOOD_VOLUME_CLASS_2_HEMORRHAGE, GET_BLOOD_VOLUME_LITERS(_patient), 0.05, 0.1, true];
         };
     };
     case "CPR": {
@@ -177,7 +177,7 @@ if !(GVAR(enable_CPR_Chances)) then {
     };
 
     if (_patient getVariable [QGVAR(cardiacArrestType), 0] in [4,3] && _randomAmi > 2) then {
-        _chance = _chance + _amiBoost;
+        _chance = _chance + (_amiBoost / 10);
     };
 
     _chance = _chance / _nitroEffect;

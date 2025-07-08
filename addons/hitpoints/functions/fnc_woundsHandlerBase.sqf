@@ -43,7 +43,7 @@ private _bodyPartVisParams = [_unit, false, false, false, false]; // params arra
     _bodyPart = toLowerANSI _bodyPart;
     if (_typeOfDamage != "explosive") then {
         if (_bodyPart == "head") then {
-        private _isNeck = (random 1) < 0.1; // 10% chance for neck damage
+        private _isNeck = (random 1) < 0.15; // 10% chance for neck damage
             _bodyPart = ["head", "neck"] select (_isNeck);
         };
     };
