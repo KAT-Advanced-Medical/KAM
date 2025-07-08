@@ -32,12 +32,6 @@ GVAR(AEDX_MonitorTarget) = objNull;
     _unit setVariable [QGVAR(cardiacArrestType), 1, true];
 }] call CBA_fnc_addEventHandler;
 
-[QGVAR(bloodPoisoning), {
-    params ["_unit"];
-
-    [QACEGVAR(medical,FatalVitals), _unit] call CBA_fnc_localEvent;
-}] call CBA_fnc_addEventHandler;
-
 [QGVAR(placeAED_initAction), LINKFUNC(placeAED_PickUpAction)] call CBA_fnc_addEventHandler;
 [QEGVAR(misc,handleRespawn), LINKFUNC(handleRespawn)] call CBA_fnc_addEventHandler;
 [QACEGVAR(medical_gui,updateInjuryListPart), LINKFUNC(gui_updateInjuryListPart)] call CBA_fnc_addEventHandler;
