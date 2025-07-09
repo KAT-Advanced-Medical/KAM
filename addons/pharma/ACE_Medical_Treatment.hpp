@@ -563,7 +563,7 @@ class ACE_ADDON(Medical_Treatment) {
             timeTillMaxEffect = 20;
             dose = 1;
             alphaFactor = -0.1;
-            contractility = 0.9;
+            contractility = 0.7;
             maximumEffectiveDose = 30;
             respiratoryRate = 0.2;
         };

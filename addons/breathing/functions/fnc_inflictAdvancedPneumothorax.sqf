@@ -36,12 +36,18 @@ if ((floor (random 100) < (GVAR(advPtxChance) + _chanceIncrease) || _deteriorate
             };
         _pneumothoraxState set [_side, 16];
         _unit setVariable [QGVAR(pneumothorax), _pneumothoraxState, true];
-
+        private _bronchospasm = _patient getVariable [QGVAR(bronchospasm), 1];
+        if (_bronchospasm > 0.6) then {
+            _patient setVariable [QGVAR(bronchospasm), (_bronchospasm - 0.4), true];
+        };
         [_unit] call EFUNC(circulation,updateInternalBleeding);
     } else {
         _tensionState set [_side, true];
         _unit setVariable [QGVAR(tensionpneumothorax), _tensionState, true];
-
+        private _bronchospasm = _patient getVariable [QGVAR(bronchospasm), 1];
+        if (_bronchospasm > 0.6) then {
+            _patient setVariable [QGVAR(bronchospasm), (_bronchospasm - 0.4), true];
+        };
         _pneumothoraxState set [_side, 16];
         _unit setVariable [QGVAR(pneumothorax), _pneumothoraxState, true];
     };

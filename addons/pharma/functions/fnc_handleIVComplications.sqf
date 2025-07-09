@@ -15,22 +15,29 @@
  *
  * Public: No
  */
- params ["_patient", "_flowDifference"];
+ params ["_patient", "_overLoad"];
+
 
 _trali = _patient getVariable [QEGVAR(breathing,TRALI), 0];
-_trali = _trali + 1;
-if (_trali > 20) then {
+_trali = _trali + (0.1 *_overLoad);
+if (_trali > (20 + random 10)) then {
     private _ht = _patient getVariable [QEGVAR(circulation,ht), []];
     if ((_ht findIf {_x isEqualTo "TRALI"}) == -1) then {
     _ht pushBack "TRALI";
     if (_patient getVariable [QEGVAR(circulation,cardiacArrestType), 0] == 0) then {
         [QACEGVAR(medical,FatalVitals), _patient] call CBA_fnc_localEvent;
     };
-    _patient setVariable [QEGVAR(breathing,TRALI), _trali, true];
-    }
+    };
 };
+_patient setVariable [QEGVAR(breathing,TRALI), _trali, true];
 private _surface = (_patient getVariable [QEGVAR(breathing,lungSurfaceArea), 400]);
 if (_surface > 100) then {
-    private _surfaceArea = _surface - 5;
+    private _surfaceArea = _surface - (1 * _overLoad);
     _patient setVariable [QEGVAR(breathing,lungSurfaceArea), _surfaceArea];
 };
+private _depression = (_patient getVariable [QEGVAR(pharma,opioidDepression), 1]);
+if (_depression > 0.4) then {
+    private _depression = _depression - (0.01 * _overLoad);
+    _patient setVariable [QEGVAR(pharma,opioidDepression), _depression];
+};
+opioidDepression

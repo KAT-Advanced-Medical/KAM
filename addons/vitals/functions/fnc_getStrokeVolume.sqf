@@ -26,9 +26,11 @@ private _bloodVolumeRatio = GET_BLOOD_VOLUME_LITERS(_unit) / DEFAULT_BLOOD_VOLUM
 private _vasoconstriction = GET_VASOCONSTRICTION(_unit);
 private _ptxBase = ((_unit getVariable [QEGVAR(breathing,pneumothorax), [0, 0]]) select 0) + ((_unit getVariable [QEGVAR(breathing,pneumothorax), [0, 0]]) select 1);
 private _tamponadeBase = _unit getVariable [QEGVAR(circulation,effusion), 0];
+private _traliBase = _unit getVariable [QEGVAR(breathing,TRALI), 0];
 private _ptxNormalized = linearConversion [0, 16, _ptxBase, 0, 1.5, true];
 private _tamponadeNormalized = linearConversion [0, 4, _tamponadeBase, 0, 1];
-private _cvp = (_defaultCVP * _heartRateRatio * _bloodVolumeRatio * (1 + _ptxNormalized) * (1 + _tamponadeNormalized));
+private _traliNormalized = linearConversion [0, 30, _traliBase, 0, 1, true];
+private _cvp = (_defaultCVP * _heartRateRatio * _bloodVolumeRatio * (1 + _ptxNormalized) * (1 + _tamponadeNormalized) * (1 + _traliNormalized));
 private _afterload = ((_bloodPressure select 1) / (DEFAULT_BLOOD_PRESSURE select 1)) * _vasoconstriction * _bloodVolumeRatio;
 private _contractility = (_unit getVariable [QEGVAR(pharma,heartContractility), 1]) max 0.2;
 
