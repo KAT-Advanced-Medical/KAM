@@ -45,7 +45,7 @@ if !(_isOccluded) then {
             100 // fake heart rate because patient is dead and off state machine
         };
         case (alive (_patient getVariable [QACEGVAR(medical,CPR_provider), objNull])): {
-            random [100, 110, 120] // fake heart rate because patient is dead and off state machine
+            random [90, 100, 120] // fake heart rate because patient is dead and off state machine
         };
         default { 0 };
     };
