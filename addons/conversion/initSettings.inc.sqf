@@ -70,7 +70,7 @@
     "'kat_stretcher'",
     1,
     {
-        private _array = [_this, "CfgVehicles"] call EFUNC(chemical,getList);
+        private _array = [_this, "CfgVehicles"] call FUNC(getList);
         missionNamespace setVariable [QGVAR(convertVehicles), _array, true];
     },
     true
