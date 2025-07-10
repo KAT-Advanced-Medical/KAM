@@ -33,6 +33,8 @@ PREP(checkBloodPressure);
 PREP(checkBloodPressureCuff);
 PREP(checkBloodPressureCuffLocal);
 PREP(checkBloodPressureLocal);
+PREP(checkCapRefill);
+PREP(checkCapRefillLocal);
 PREP(checkNeck);
 PREP(checkNeckLocal);
 PREP(checkPulse);

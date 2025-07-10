@@ -4003,7 +4003,37 @@
             <English>Checking Neck</English>
         </Key>
         <Key ID="STR_KAT_Circulation_Check_Neck_Output">
-            <English>%1 finds a %2</English>
+            <English>%1 finds %2</English>
+        </Key>
+        <Key ID="STR_KAT_Circulation_CheckCapRefill">
+            <English>Check Capillary Refill</English>
+        </Key>
+        <Key ID="STR_KAT_Circulation_CheckCapRefill_Action">
+            <English>Checking Capillary Refill</English>
+        </Key>
+        <Key ID="STR_KAT_Circulation_Check_capRefill_Output_Normal">
+            <English>You find a Capillary Refill time of ~1.5 seconds</English>
+        </Key>
+        <Key ID="STR_KAT_CirculationCheck_capRefill_Output_NoRefill">
+            <English>You find no Capillary Refill</English>
+        </Key>
+        <Key ID="STR_KAT_Circulation_Check_capRefill_Output_Delayed">
+            <English>You find a Capillary Refill time of ~3 seconds</English>
+        </Key>
+        <Key ID="STR_KAT_Circulation_Check_capRefill_Output_SeverelyDelayed_4">
+            <English>You find a Capillary Refill time of ~5 seconds</English>
+        </Key>
+        <Key ID="STR_KAT_Circulation_Check_capRefill_Output_Normal_log">
+            <English>a Capillary Refill time of ~1.5 seconds</English>
+        </Key>
+        <Key ID="STR_KAT_Circulation_Check_capRefill_Output_NoRefill_log">
+            <English>No Capillary Refill</English>
+        </Key>
+        <Key ID="STR_KAT_Circulation_Check_capRefill_Output_Delayed_log">
+            <English>a Capillary Refill time of ~3 seconds</English>
+        </Key>
+        <Key ID="STR_KAT_Circulation_Check_capRefill_Output_SeverelyDelayed_log">
+            <English>a Capillary Refill time of ~5 seconds</English>
         </Key>
     </Package>
 </Project>

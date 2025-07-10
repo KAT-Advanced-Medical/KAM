@@ -7,6 +7,7 @@
 [QGVAR(checkPulseLocal), LINKFUNC(checkPulseLocal)] call CBA_fnc_addEventHandler;
 [QGVAR(checkPulseStethLocal), LINKFUNC(checkPulseStethLocal)] call CBA_fnc_addEventHandler;
 [QGVAR(checkNeckLocal), LINKFUNC(checkNeckLocal)] call CBA_fnc_addEventHandler;
+[QGVAR(checkCapRefillLocal), LINKFUNC(checkCapRefillLocal)] call CBA_fnc_addEventHandler;
 ["ace_cardiacArrest", LINKFUNC(handleCardiacArrest)] call CBA_fnc_addEventHandler;
 
 GVAR(AEDX_MonitorTarget) = objNull;
