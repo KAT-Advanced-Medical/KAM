@@ -1,4 +1,10 @@
 PREP(BubbleWrap);
+PREP(canCheckDogtag);
+PREP(canStitchFullBody);
+PREP(carryObject);
+PREP(checkArmbandCondition);
+PREP(conditionIV);
+PREP(conditionIVstand);
 PREP(FAK_ammoToArray);
 PREP(FAK_arrayToAmmo);
 PREP(FAK_checkRepack);
