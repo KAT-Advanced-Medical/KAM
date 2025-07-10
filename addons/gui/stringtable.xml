@@ -274,10 +274,10 @@
         </Key>
         <Key ID="STR_KAT_GUI_cba_name">
             <English>KAT - ADV Medical: GUI</English>
-            <Japanese>KAM - GUI</Japanese>
             <French>KAT - ADV Medical : GUI</French>
+            <Italian>KAT - ADV Medica: Interfaccia Grafica</Italian>
             <German>KAT - ADV Medical: GUI</German>
-            <Italian>KAT - ADV Medica: Interfaccia Grafica </Italian>
+            <Japanese>KAM - GUI</Japanese>
         </Key>
     </Package>
 </Project>
