@@ -50,6 +50,7 @@ class ACE_ADDON(Medical_Treatment) {
         //is this drug a sedation drug
         sedation = "false";
         paralysis = "false";
+        bloodBased = "false";
 
 
         class Epinephrine {
@@ -177,6 +178,7 @@ class ACE_ADDON(Medical_Treatment) {
             viscosityChange = 0;
             onOverDose = "";
             maximumEffectiveDose = 20;
+            bloodBased = "true";
         };
         class Norepinephrine {
             painReduce = 0;
@@ -477,6 +479,7 @@ class ACE_ADDON(Medical_Treatment) {
             onOverDose = "";
             maxRelief = 0.6;
             maximumEffectiveDose = 60;
+            bloodBased = "true";
         };
         class Ondansetron {
             painReduce = 0.0;
@@ -532,6 +535,7 @@ class ACE_ADDON(Medical_Treatment) {
             timeTillMaxEffect = 5;
             dose = 1;
             viscosityChange = 0;
+            bloodBased = "true";
         };
         class syringe_TXA_10ml {
             painReduce = 0;
@@ -542,6 +546,7 @@ class ACE_ADDON(Medical_Treatment) {
             timeTillMaxEffect = 20;
             dose = 1;
             viscosityChange = 0;
+            bloodBased = "true";
         };
         class syringe_EACA_5ml {
             painReduce = 0;
@@ -553,6 +558,7 @@ class ACE_ADDON(Medical_Treatment) {
             dose = 1;
             viscosityChange = 0;
             maximumEffectiveDose = 20;
+            bloodBased = "true";
         };
         class syringe_EpinephrineIV_5ml {
             painReduce = 0;
@@ -597,6 +603,7 @@ class ACE_ADDON(Medical_Treatment) {
             weightDose = 20;
             maximumEffectiveDose = 30;
             nauseaMult = 0.4;
+            bloodBased = "true";
         };
         class syringe_Ketamine_5ml {
             painReduce = 0.5;
@@ -617,6 +624,7 @@ class ACE_ADDON(Medical_Treatment) {
             weightDoseMax = 20;
             maximumEffectiveDose = 30;
             nauseaMult = 0.3;
+            bloodBased = "true";
         };
         class syringe_Nalbuphine_5ml {
             painReduce = 0.5;
@@ -634,6 +642,7 @@ class ACE_ADDON(Medical_Treatment) {
             weightDose = 20;
             maximumEffectiveDose = 30;
             nauseaMult = 0.3;
+            bloodBased = "true";
         };
         class syringe_AtropineIV_5ml {
             painReduce = 0;
@@ -658,6 +667,7 @@ class ACE_ADDON(Medical_Treatment) {
             viscosityChange = 0;
             contractility = -0.2;
             maximumEffectiveDose = 30;
+            bloodBased = "true";
         };
         class syringe_Lidocaine_5ml {
             painReduce = 0;
@@ -684,6 +694,7 @@ class ACE_ADDON(Medical_Treatment) {
             weightBased = "true";
             weightDose = 20;
             maximumEffectiveDose = 30;
+            bloodBased = "true";
         };
         class syringe_Flumazenil_5ml {
             painReduce = 0;
@@ -830,6 +841,7 @@ class ACE_ADDON(Medical_Treatment) {
             weightDose = 20;
             maximumEffectiveDose = 30;
             nauseaMult = 0.3;
+            bloodBased = "true";
         };
         class syringe_Ketamine_10ml {
             painReduce = 0.6;
@@ -847,6 +859,7 @@ class ACE_ADDON(Medical_Treatment) {
             weightDose = 20;
             maximumEffectiveDose = 30;
             nauseaMult = 0.3;
+            bloodBased = "true";
         };
         class syringe_Nalbuphine_10ml {
             painReduce = 0.5;
@@ -863,6 +876,7 @@ class ACE_ADDON(Medical_Treatment) {
             weightDose = 20;
             maximumEffectiveDose = 30;
             nauseaMult = 0.3;
+            bloodBased = "true";
         };
         class syringe_Lidocaine_10ml {
             painReduce = 0;

@@ -126,7 +126,7 @@ class ACE_Medical_Treatment_Actions {
         condition = QFUNC(canStabilizeJoint);
         medicRequired = QGVAR(JointCareLevel);
         treatmentTime = QGVAR(stabilizeTime);
-        items[] = {"kat_Elastic_Wrap", "ACE_Splint"};
+        items[] = {"kat_Elastic_Wrap"};
     };
     class Reduce_Joint: BasicBandage {
         displayName = CSTRING(Reduce_Joint);

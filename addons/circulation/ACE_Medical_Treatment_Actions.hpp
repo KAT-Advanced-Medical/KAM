@@ -347,4 +347,16 @@ class ACE_Medical_Treatment_Actions {
         condition = QUOTE([ARR_2(_patient,true)] call FUNC(lucasStateCondition));
         callbackSuccess = QUOTE([ARR_2(_patient,false)] call FUNC(lucasState));
     };
+    class CheckNeck: CheckPulse {
+        displayName = CSTRING(CheckNeck);
+        displayNameProgress = CSTRING(CheckNeck_Action);
+        treatmentTime = 2;
+        allowedSelections[] = {"Neck"};
+        allowSelfTreatment = 1;
+        callbackSuccess = QFUNC(checkNeck);
+        condition = "true";
+        animationPatient = "";
+        animationPatientUnconscious = "AinjPpneMstpSnonWrflDnon_rolltoback";
+        animationPatientUnconsciousExcludeOn[] = {"ainjppnemstpsnonwrfldnon", "kat_recoveryposition"};
+    };
 };
