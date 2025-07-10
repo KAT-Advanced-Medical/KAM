@@ -18,6 +18,15 @@
 ] call CBA_fnc_addSetting;
 
 [
+    QGVAR(enableAutomaticConversion),
+    "CHECKBOX",
+    [LLSTRING(AutomaticCONVERSION), LLSTRING(AutomaticCONVERSION_DESC)],
+    [CBA_SETTINGS_CAT, ELSTRING(GUI,SubCategory_Basic)],
+    [false],
+    true
+] call CBA_fnc_addSetting;
+
+[
     QGVAR(enableTicketConversion),
     "CHECKBOX",
     [LLSTRING(CONVERSION_TICKET_CONVERSION), LLSTRING(CONVERSION_TICKET_CONVERSION_DESC)],
@@ -32,33 +41,6 @@
     [LLSTRING(CONVERSION_TICKET_CONVERSION_GAIN), LLSTRING(CONVERSION_TICKET_CONVERSION_GAIN_DESC)],
     [CBA_SETTINGS_CAT, ELSTRING(GUI,SubCategory_Basic)],
     [0, 10, 3, 0],
-    true
-] call CBA_fnc_addSetting;
-
-[
-    QGVAR(enableLiberationConversion),
-    "CHECKBOX",
-    [LLSTRING(CONVERSION_LIBERATION_CONVERSION), LLSTRING(CONVERSION_LIBERATION_CONVERSION_DESC)],
-    [CBA_SETTINGS_CAT, ELSTRING(GUI,SubCategory_Basic)],
-    [false],
-    true
-] call CBA_fnc_addSetting;
-
-[
-    QGVAR(enableLiberationConversionGain),
-    "SLIDER",
-    [LLSTRING(CONVERSION_LIBERATION_CONVERSION_GAIN), LLSTRING(CONVERSION_LIBERATION_CONVERSION_GAIN_DESC)],
-    [CBA_SETTINGS_CAT, ELSTRING(GUI,SubCategory_Basic)],
-    [0, 100, 50, 0],
-    true
-] call CBA_fnc_addSetting;
-
-[
-    QGVAR(enableLiberationConversionDistance),
-    "SLIDER",
-    [LLSTRING(CONVERSION_LIBERATION_CONVERSION_DISTANCE), LLSTRING(CONVERSION_LIBERATION_CONVERSION_DISTANCE_DESC)],
-    [CBA_SETTINGS_CAT, ELSTRING(GUI,SubCategory_Basic)],
-    [0, 5000, 1000, 0],
     true
 ] call CBA_fnc_addSetting;
 

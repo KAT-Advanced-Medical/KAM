@@ -18,7 +18,7 @@
 
 params ["_unit"];
 
-if (isPlayer _unit || (GET_CONVERT_STATUS(_unit) && LIB_CONVERSION_DISTANCE(_unit))) then {
+if (isPlayer _unit || (GET_CONVERT_STATUS(_unit))) then {
     ACEGVAR(medical_statemachine,fatalInjuriesPlayer) != FATAL_INJURIES_ALWAYS
 } else {
     ACEGVAR(medical_statemachine,fatalInjuriesAI) != FATAL_INJURIES_ALWAYS || {_unit getVariable [QEGVAR(misc,PreventInstantAIDeath), false]}

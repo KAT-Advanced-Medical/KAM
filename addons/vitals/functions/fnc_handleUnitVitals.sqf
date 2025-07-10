@@ -185,27 +185,30 @@ switch (true) do {
     case (IN_CRDC_ARRST(_unit)): {}; // if in cardiac arrest just break now to avoid throwing unneeded events
     case ((_spo2 < EGVAR(breathing,SpO2_cardiacValue)) && EGVAR(breathing,SpO2_cardiacActive)): {
         TRACE_2("SpO2 below Cardiac Value",_unit,_spo2);
-        if ((_unit getVariable [QEGVAR(conversion,convert), false]) && (isPlayer _unit) && LIB_CONVERSION_DISTANCE(_unit)) then {
+        if ((_unit getVariable [QEGVAR(conversion,convert), false]) && (isPlayer _unit) && QEGVAR(conversion,enableAutomaticConversion)) then {
             [QEGVAR(conversion,convertCasualty), _unit] call CBA_fnc_localEvent;
         };
         [QACEGVAR(medical,FatalVitals), _unit] call CBA_fnc_localEvent;
     };
     case ((_bloodVolume + GET_REBOA_VOLUME(_unit)) < BLOOD_VOLUME_CLASS_4_HEMORRHAGE): {
         TRACE_3("Class IV Hemorrhage",_unit,_hemorrhage,_bloodVolume);
-        if ((_unit getVariable [QEGVAR(conversion,convert), false]) && (isPlayer _unit) && LIB_CONVERSION_DISTANCE(_unit)) then {
+        if ((_unit getVariable [QEGVAR(conversion,convert), false]) && (isPlayer _unit) && QEGVAR(conversion,enableAutomaticConversion)) then {
             [QEGVAR(conversion,convertCasualty), _unit] call CBA_fnc_localEvent;
         };
         [QACEGVAR(medical,FatalVitals), _unit] call CBA_fnc_localEvent;
     };
     case (_heartRate < 20 || {(_heartRate - (_aceAnFatigue / 40)) > 220}): {
         TRACE_2("heartRate Fatal",_unit,_heartRate);
-        if ((_unit getVariable [QEGVAR(conversion,convert), false]) && (isPlayer _unit) && LIB_CONVERSION_DISTANCE(_unit)) then {
+        if ((_unit getVariable [QEGVAR(conversion,convert), false]) && (isPlayer _unit) && QEGVAR(conversion,enableAutomaticConversion)) then {
             [QEGVAR(conversion,convertCasualty), _unit] call CBA_fnc_localEvent;
         };
         [QACEGVAR(medical,FatalVitals), _unit] call CBA_fnc_localEvent;
     };
     case (_map < 25 || {_map > 240}): {
         [QACEGVAR(medical,FatalVitals), _unit] call CBA_fnc_localEvent;
+        if ((_unit getVariable [QEGVAR(conversion,convert), false]) && (isPlayer _unit) && QEGVAR(conversion,enableAutomaticConversion)) then {
+            [QEGVAR(conversion,convertCasualty), _unit] call CBA_fnc_localEvent;
+        };
     };
     case (_map < 45 || {_map > 190}): {
         [QACEGVAR(medical,CriticalVitals), _unit] call CBA_fnc_localEvent;

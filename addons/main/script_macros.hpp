@@ -363,8 +363,6 @@
 #define UNIT_CONVERT                   QEGVAR(conversion,convert)
 #define GET_CONVERT_STATUS(unit)       (unit getVariable [UNIT_CONVERT, false])
 
-#define LIB_CONVERSION_DISTANCE(unit)  ([unit] call EFUNC(conversion,libConversionDistance))
-
 // Pharma
 #define VAR_VASOCONSTRICTION           QEGVAR(pharma,alphaAction)
 #define GET_VASOCONSTRICTION(unit)     (unit getVariable [VAR_VASOCONSTRICTION, 1])

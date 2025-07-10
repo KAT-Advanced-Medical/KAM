@@ -17,6 +17,6 @@
 
 params ["_unit"];
 
-if ((!(ACEGVAR(medical_statemachine,AIUnconsciousness))) && (!isPlayer _unit) && LIB_CONVERSION_DISTANCE(_unit)) then {
+if ((!(ACEGVAR(medical_statemachine,AIUnconsciousness))) && (!isPlayer _unit)) then {
     GET_CONVERT_STATUS(_unit) != true
 }

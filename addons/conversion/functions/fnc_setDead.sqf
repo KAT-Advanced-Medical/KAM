@@ -22,7 +22,7 @@ TRACE_4("setDead",_unit,_reason,_source,_instigator);
 // If patient is marked for conversion, send them into arrest rather than killing them if the reason for dying is that they are AI
 private _unitState = [_unit, ACEGVAR(medical,STATE_MACHINE)] call CBA_statemachine_fnc_getCurrentState;
 
-if (GET_CONVERT_STATUS(_unit) && (_reason isEqualTo "CardiacArrest:DeathAI" || _reason isEqualTo "Unconscious:DeathAI") && LIB_CONVERSION_DISTANCE(_unit)) exitWith {
+if (GET_CONVERT_STATUS(_unit) && (_reason isEqualTo "CardiacArrest:DeathAI" || _reason isEqualTo "Unconscious:DeathAI")) exitWith {
     [_unit, ACEGVAR(medical,STATE_MACHINE), _unitState, "CardiacArrest"] call CBA_statemachine_fnc_manualTransition;
 };
 
