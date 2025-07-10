@@ -23,6 +23,7 @@ if ((_trali > (20 + random 10)) && (random 100 < 25)) then {
     private _ht = _patient getVariable [QEGVAR(circulation,ht), []];
     if ((_ht findIf {_x isEqualTo "TRALI"}) == -1) then {
     _ht pushBack "TRALI";
+    _patient setVariable [QEGVAR(circulation,ht), _ht, true];
     if (_patient getVariable [QEGVAR(circulation,cardiacArrestType), 0] == 0) then {
         [QACEGVAR(medical,FatalVitals), _patient] call CBA_fnc_localEvent;
     };
