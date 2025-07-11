@@ -20,9 +20,15 @@ params ["_patient"];
 if !(GVAR(enableTicketConversion)) exitWith { false };
 if !(_patient getVariable [QGVAR(currentConverted), false]) exitWith { false };
 
-if !(_patient call ACEFUNC(medical_treatment,isInMedicalFacility)) exitWith { false };
-if !([_patient] call FUNC(conversionCondition)) exitWith { false };
+if !(_patient call ACEFUNC(medical_treatment,isInMedicalFacility)) exitWith { 
+    systemChat "cantConvertFacility";
+    false };
+if !(_patient call EFUNC(vitals,hasStableVitals)) exitWith { 
+    systemChat "cantConvertVitals";
+    false };
 
-if (GVAR(forceVehicleConversion) && ((isNull objectParent _patient) || !((objectParent _patient) in GVAR(convertVehicles)))) exitWith { false };
-
+if (GVAR(forceVehicleConversion) && ((isNull objectParent _patient) || !((objectParent _patient) in GVAR(convertVehicles)))) exitWith { 
+    systemChat "cantConvertVehicle";
+    false };
+systemChat "canConvert";
 true
