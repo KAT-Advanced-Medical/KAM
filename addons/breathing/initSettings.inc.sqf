@@ -53,7 +53,7 @@
 [
     QGVAR(SpO2_dieValue),
     "SLIDER",
-    LLSTRING(SETTING_SpO2_dieValue),
+    [LLSTRING(SETTING_SpO2_dieValue), LLSTRING(SETTING_SpO2_dieValue_DESC)],
     [CBA_SETTINGS_CAT, ELSTRING(GUI,SubCategory_Basic)],
     [5, 95, 65, 0],
     true
@@ -63,7 +63,7 @@
 [
     QGVAR(SpO2_dieActive),
     "CHECKBOX",
-    LLSTRING(SETTING_SpO2_dieActive),
+    [LLSTRING(SETTING_SpO2_dieActive), LLSTRING(SETTING_SpO2_dieActive_DESC)],
     [CBA_SETTINGS_CAT, ELSTRING(GUI,SubCategory_Basic)],
     [true],
     true
@@ -73,7 +73,7 @@
 [
     QGVAR(SpO2_cardiacValue),
     "SLIDER",
-    LLSTRING(SETTING_SpO2_cardiacValue),
+    [LLSTRING(SETTING_SpO2_cardiacValue), LLSTRING(SETTING_SpO2_cardiacValue_DESC)],
     [CBA_SETTINGS_CAT, ELSTRING(GUI,SubCategory_Basic)],
     [0, 100, 75, 0],
     true
@@ -83,7 +83,7 @@
 [
     QGVAR(SpO2_cardiacActive),
     "CHECKBOX",
-    LLSTRING(SETTING_SpO2_cardiacActive),
+    [LLSTRING(SETTING_SpO2_cardiacActive), LLSTRING(SETTING_SpO2_cardiacActive_DESC)],
     [CBA_SETTINGS_CAT, ELSTRING(GUI,SubCategory_Basic)],
     [false],
     true
@@ -103,7 +103,7 @@
 [
     QGVAR(SpO2_MultiplyPositive),
     "SLIDER",
-    LLSTRING(SETTING_MultiplyPositive),
+    [LLSTRING(SETTING_MultiplyPositive), LLSTRING(SETTING_MultiplyPositive_DESC)],
     [CBA_SETTINGS_CAT, ELSTRING(GUI,SubCategory_Basic)],
     [0, 10, 1, 1],
     true
@@ -113,7 +113,7 @@
 [
     QGVAR(SpO2_MultiplyNegative),
     "SLIDER",
-    LLSTRING(SETTING_MultiplyNegative),
+    [LLSTRING(SETTING_MultiplyNegative), LLSTRING(SETTING_MultiplyNegative_DESC)],
     [CBA_SETTINGS_CAT, ELSTRING(GUI,SubCategory_Basic)],
     [0, 10, 1, 1],
     true
@@ -133,7 +133,7 @@
 [
     QGVAR(SpO2_perfusion),
     "CHECKBOX",
-    LLSTRING(SETTING_SpO2_Perfusion),
+    [LLSTRING(SETTING_SpO2_Perfusion), LLSTRING(SETTING_SpO2_Perfusion_DESC)],
     [CBA_SETTINGS_CAT, ELSTRING(GUI,SubCategory_Basic)],
     [true],
     true
@@ -143,7 +143,7 @@
 [
     QGVAR(SpO2_PerfusionMultiplier),
     "SLIDER",
-    LLSTRING(SETTING_PerfusionMultiplier),
+    [LLSTRING(SETTING_PerfusionMultiplier), LLSTRING(SETTING_PerfusionMultiplier_DESC)],
     [CBA_SETTINGS_CAT, ELSTRING(GUI,SubCategory_Basic)],
     [0, 10, 1, 1],
     true
@@ -202,7 +202,7 @@
 [
     QGVAR(enable_selfChestseal),
     "LIST",
-    LLSTRING(SETTING_SELF_CHESTSEAL),
+    [LLSTRING(SETTING_SELF_CHESTSEAL), LLSTRING(SETTING_SELF_CHESTSEAL_DESC)],
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_Items)],
     [[0, 1], ["STR_ACE_common_No", "STR_ACE_common_Yes"], 1],
     true
@@ -212,7 +212,7 @@
 [
     QGVAR(clearChestSealAfterTreatment),
     "CHECKBOX",
-    LLSTRING(SETTING_clearChestSealAfterTreatment),
+    [LLSTRING(SETTING_clearChestSealAfterTreatment), LLSTRING(SETTING_clearChestSealAfterTreatment_DESC)],
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_Items)],
     [false],
     true
@@ -222,7 +222,7 @@
 [
     QGVAR(PulseOximeter_SpO2Warning),
     "SLIDER",
-    LLSTRING(SETTING_Threshold_SpO2Warning),
+    [LLSTRING(SETTING_Threshold_SpO2Warning), LLSTRING(SETTING_Threshold_SpO2Warning_DESC)],
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_Items)],
     [1, 100, 85, 1],
     true
@@ -233,7 +233,7 @@
 [
     QGVAR(pneumothoraxChance),
     "SLIDER",
-    LLSTRING(SETTING_pneumothorax),
+    [LLSTRING(SETTING_pneumothorax), LLSTRING(SETTING_pneumothorax_DESC)],
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_ThoraxInjuries)],
     [0, 100, 5, 0],
     true
@@ -393,7 +393,7 @@
 [
     QGVAR(inspectChest_enable),
     "LIST",
-    LLSTRING(SETTING_inspectChest_enable),
+    [LLSTRING(SETTING_inspectChest_enable), LLSTRING(SETTING_inspectChest_enable_DESC)],
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_ThoraxInjuries)],
     [[0, 1, 2], [ACELLSTRING(Common,Disabled), LLSTRING(SETTING_inspectChest_enable_simple), ACELLSTRING(Common,Enabled)], 2],
     true
@@ -403,7 +403,7 @@
 [
     QGVAR(inspectChest_medLvl),
     "LIST",
-    LLSTRING(SETTING_inspectChest_medLvl),
+    [LLSTRING(SETTING_inspectChest_medLvl), LLSTRING(SETTING_inspectChest_medLvl_DESC)],
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_ThoraxInjuries)],
     [[0, 1, 2], ["STR_ACE_Medical_Treatment_Anyone", "STR_ACE_Medical_Treatment_Medics", "STR_ACE_Medical_Treatment_Doctors"], 0],
     true
@@ -413,7 +413,7 @@
 [
     QGVAR(inspectChest_time),
     "SLIDER",
-    [LLSTRING(SETTING_inspectChest_time)],
+    [LLSTRING(SETTING_inspectChest_time), LLSTRING(SETTING_inspectChest_time_DESC)],
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_ThoraxInjuries)],
     [1, 60, 6, 1],
     true
@@ -483,7 +483,7 @@
 [
     QGVAR(Etco2_Units),
     "LIST",
-    LLSTRING(SETTING_Select_Etco2_Units),
+    [LLSTRING(SETTING_Select_Etco2_Units), LLSTRING(SETTING_Select_Etco2_Units_DESC)],
     [CBA_SETTINGS_CAT, ELSTRING(GUI,SubCategory_Basic)],
     [[0, 1], ["mmHg", "kPa"], 0],
     true
@@ -547,7 +547,7 @@
 [
     QGVAR(BVMOxygen_Multiplier),
     "SLIDER",
-    LLSTRING(SETTING_BVMOxygen_Multiplier),
+    [LLSTRING(SETTING_BVMOxygen_Multiplier), LLSTRING(SETTING_BVMOxygen_Multiplier_DESC)],
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_Items)],
     [1, 10, 1, 1],
     true

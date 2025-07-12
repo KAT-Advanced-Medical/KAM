@@ -2,7 +2,7 @@
 [
     QGVAR(enable),
     "CHECKBOX",
-    LLSTRING(SETTING_ENABLE),
+    [LLSTRING(SETTING_ENABLE), LLSTRING(SETTING_ENABLE_DESC)],
     [CBA_SETTINGS_CAT, ELSTRING(GUI,SubCategory_Basic)],
     [true],
     true
@@ -32,7 +32,7 @@
 [
     QGVAR(bloodTypeSettingPlayer),
     "LIST",
-    LLSTRING(SETTING_bloodtype_player),
+    [LLSTRING(SETTING_bloodtype_player), LLSTRING(SETTING_bloodtype_player_DESC)],
     [CBA_SETTINGS_CAT, ELSTRING(GUI,SubCategory_Basic)],
     [["A", "A_N", "B", "B_N", "AB", "AB_N", "O", "O_N"], ["A+", "A-", "B+", "B-", "AB+", "AB-", "0+", "0-"], 7],
     2,
@@ -78,7 +78,7 @@
 [
     QGVAR(AED_duringCpr),
     "CHECKBOX",
-    LLSTRING(SETTING_AED_duringCpr),
+    [LLSTRING(SETTING_AED_duringCpr), LLSTRING(SETTING_AED_duringCpr_DESC)],
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_AED)],
     [true],
     true
@@ -89,7 +89,7 @@
 [
     QGVAR(AED_X_MaxChance),
     "SLIDER",
-    LLSTRING(AED_X_MaxChance),
+    [LLSTRING(AED_X_MaxChance), LLSTRING(AED_X_MaxChance_DESC)],
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_AED)],
     [1, 100, 90, 0],
     true
@@ -99,7 +99,7 @@
 [
     QGVAR(AED_X_MinChance),
     "SLIDER",
-    LLSTRING(AED_X_MinChance),
+    [LLSTRING(AED_X_MinChance), LLSTRING(AED_X_MinChance_DESC)],
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_AED)],
     [1, 100, 50, 0],
     true
@@ -109,7 +109,7 @@
 [
     QGVAR(AED_MaxChance),
     "SLIDER",
-    LLSTRING(AED_MaxChance),
+    [LLSTRING(AED_MaxChance), LLSTRING(AED_MaxChance_DESC)],
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_AED)],
     [1, 100, 80, 0],
     true
@@ -119,7 +119,7 @@
 [
     QGVAR(AED_MinChance),
     "SLIDER",
-    LLSTRING(AED_MinChance),
+    [LLSTRING(AED_MinChance), LLSTRING(AED_MinChance_DESC)],
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_AED)],
     [1, 100, 45, 0],
     true
@@ -159,7 +159,7 @@
 [
     QGVAR(AEDX_VitalsMonitor_AttachTime),
     "SLIDER",
-    LLSTRING(SETTING_AEDX_VitalsMonitor_AttachTime),
+    [LLSTRING(SETTING_AEDX_VitalsMonitor_AttachTime), LLSTRING(SETTING_AEDX_VitalsMonitor_AttachTime_DESC)],
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_AED)],
     [1, 60, 6, 1],
     true
@@ -169,7 +169,7 @@
 [
     QGVAR(AEDX_VitalsMonitor_DetachTime),
     "SLIDER",
-    LLSTRING(SETTING_AEDX_VitalsMonitor_DetachTime),
+    [LLSTRING(SETTING_AEDX_VitalsMonitor_DetachTime), LLSTRING(SETTING_AEDX_VitalsMonitor_DetachTime_DESC)],
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_AED)],
     [1, 60, 3, 1],
     true
@@ -179,7 +179,7 @@
 [
     QGVAR(DefibrillatorPads_AttachTime),
     "SLIDER",
-    LLSTRING(SETTING_DefibrillatorPads_AttachTime),
+    [LLSTRING(SETTING_DefibrillatorPads_AttachTime), LLSTRING(SETTING_DefibrillatorPads_AttachTime_DESC)],
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_AED)],
     [1, 60, 6, 1],
     true
@@ -189,7 +189,7 @@
 [
     QGVAR(DefibrillatorPads_DetachTime),
     "SLIDER",
-    LLSTRING(SETTING_DefibrillatorPads_DetachTime),
+    [LLSTRING(SETTING_DefibrillatorPads_DetachTime), LLSTRING(SETTING_DefibrillatorPads_DetachTime_DESC)],
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_AED)],
     [1, 60, 3, 1],
     true
@@ -199,7 +199,7 @@
 [
     QGVAR(Defibrillator_DistanceLimit),
     "SLIDER",
-    LLSTRING(SETTING_Defibrillator_DistanceLimit),
+    [LLSTRING(SETTING_Defibrillator_DistanceLimit), LLSTRING(SETTING_Defibrillator_DistanceLimit_DESC)],
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_AED)],
     [2, 15, 6, 0],
     true
@@ -209,7 +209,7 @@
 [
     QGVAR(AED_X_VitalsMonitor_SoundsSelect),
     "LIST",
-    [LLSTRING(SETTING_AED_X_VitalsMonitor_SoundsSelect)],
+    [LLSTRING(SETTING_AED_X_VitalsMonitor_SoundsSelect), LLSTRING(SETTING_AED_X_VitalsMonitor_SoundsSelect_DESC)],
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_AED)],
     [[0, 1], [LLSTRING(SETTING_AED_X_VitalsMonitor_SoundsSelect_Original), LLSTRING(SETTING_AED_X_VitalsMonitor_SoundsSelect_Default)], 1],
     true
@@ -219,7 +219,7 @@
 [
     QGVAR(AED_X_Monitor_SpO2Warning),
     "SLIDER",
-    LLSTRING(SETTING_Threshold_SpO2Warning),
+    [LLSTRING(SETTING_Threshold_SpO2Warning), LLSTRING(SETTING_Threshold_SpO2Warning_DESC)],
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_AED)],
     [1, 100, 85, 1],
     true
@@ -232,7 +232,7 @@
 [
     QGVAR(AED_X_VitalsMonitor_BloodPressureInterval),
     "LIST",
-    [LLSTRING(SETTING_AED_X_VitalsMonitor_BloodPressureInterval)],
+    [LLSTRING(SETTING_AED_X_VitalsMonitor_BloodPressureInterval), LLSTRING(SETTING_AED_X_VitalsMonitor_BloodPressureInterval_DESC)],
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_AED)],
     [[0, 1, 2], [LLSTRING(SETTING_AED_X_VitalsMonitor_BloodPressureInterval_AutomaticInstant), LLSTRING(SETTING_AED_X_VitalsMonitor_BloodPressureInterval_Automatic), LLSTRING(SETTING_AED_X_VitalsMonitor_BloodPressureInterval_Manual)], 0],
     true
@@ -242,7 +242,7 @@
 [
     QGVAR(AED_X_VitalsMonitor_BloodPressureInterval_Time),
     "SLIDER",
-    [LLSTRING(SETTING_AED_X_VitalsMonitor_BloodPressureInterval_Time)],
+    [LLSTRING(SETTING_AED_X_VitalsMonitor_BloodPressureInterval_Time), LLSTRING(SETTING_AED_X_VitalsMonitor_BloodPressureInterval_Time_DESC)],
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_AED)],
     [30, 300, 30, 0],
     true
@@ -252,7 +252,7 @@
 [
     QGVAR(enable_CPR_Chances),
     "CHECKBOX",
-    LLSTRING(SETTING_CPR_CHANCES),
+    [LLSTRING(SETTING_CPR_CHANCES), LLSTRING(SETTING_CPR_CHANCES_DESC)],
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_CPR)],
     [true],
     true
@@ -262,7 +262,7 @@
 [
     QGVAR(CPR_MaxChance_Doctor),
     "SLIDER",
-    LLSTRING(CPR_MaxChance_Doctor),
+    [LLSTRING(CPR_MaxChance_Doctor), LLSTRING(CPR_MaxChance_Doctor_DESC)],
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_CPR)],
     [0,100,40,0],
     true
@@ -272,7 +272,7 @@
 [
     QGVAR(CPR_MinChance_Doctor),
     "SLIDER",
-    LLSTRING(CPR_MinChance_Doctor),
+    [LLSTRING(CPR_MinChance_Doctor), LLSTRING(CPR_MinChance_Doctor_DESC)],
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_CPR)],
     [0,100,20,0],
     true
@@ -282,7 +282,7 @@
 [
     QGVAR(CPR_MaxChance_RegularMedic),
     "SLIDER",
-    LLSTRING(CPR_MaxChance_RegularMedic),
+    [LLSTRING(CPR_MaxChance_RegularMedic), LLSTRING(CPR_MaxChance_RegularMedic_DESC)],
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_CPR)],
     [0,100,30,0],
     true
@@ -292,7 +292,7 @@
 [
     QGVAR(CPR_MinChance_RegularMedic),
     "SLIDER",
-    LLSTRING(CPR_MinChance_RegularMedic),
+    [LLSTRING(CPR_MinChance_RegularMedic), LLSTRING(CPR_MinChance_RegularMedic_DESC)],
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_CPR)],
     [0,100,15,0],
     true
@@ -302,7 +302,7 @@
 [
     QGVAR(CPR_MaxChance_Default),
     "SLIDER",
-    LLSTRING(CPR_MaxChance_Default),
+    [LLSTRING(CPR_MaxChance_Default), LLSTRING(CPR_MaxChance_Default_DESC)],
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_CPR)],
     [0,100,20,0],
     true
@@ -312,7 +312,7 @@
 [
     QGVAR(CPR_MinChance_Default),
     "SLIDER",
-    LLSTRING(CPR_MinChance_Default),
+    [LLSTRING(CPR_MinChance_Default), LLSTRING(CPR_MinChance_Default_DESC)],
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_CPR)],
     [0,100,10,0],
     true
@@ -322,7 +322,7 @@
 [
     QGVAR(CPR_ChanceInterval),
     "SLIDER",
-    LLSTRING(SETTING_CPR_ChanceInterval),
+    [LLSTRING(SETTING_CPR_ChanceInterval), LLSTRING(SETTING_CPR_ChanceInterval_DESC)],
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_CPR)],
     [1 , 3600, 15, 0],
     true
@@ -332,7 +332,7 @@
 [
     QGVAR(AdvRhythm),
     "CHECKBOX",
-    LLSTRING(SETTING_AdvRhythm_Enable),
+    [LLSTRING(SETTING_AdvRhythm_Enable), LLSTRING(SETTING_AdvRhythm_Enable_DESC)],
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_AdvRhythms)],
     [true],
     true,
@@ -344,7 +344,7 @@
 [
     QGVAR(AdvRhythm_canDeteriorate),
     "CHECKBOX",
-    LLSTRING(SETTING_AdvRhythm_canDeteriorate),
+    [LLSTRING(SETTING_AdvRhythm_canDeteriorate), LLSTRING(SETTING_AdvRhythm_canDeteriorate_DESC)],
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_AdvRhythms)],
     [true],
     true
@@ -585,7 +585,7 @@
 [
     QGVAR(treatmentTime_BPCuff),
     "SLIDER",
-    [LLSTRING(treatmentTime_BPCuff)],
+    [LLSTRING(treatmentTime_BPCuff), LLSTRING(treatmentTime_BPCuff_DESC)],
     [CBA_SETTINGS_CAT, ELSTRING(GUI,SubCategory_Basic)],
     [0.1, 30, 12, 1],
     true
@@ -603,7 +603,7 @@
 [
     QGVAR(treatmentTime_StethHR),
     "SLIDER",
-    [LLSTRING(treatmentTime_StethHR)],
+    [LLSTRING(treatmentTime_StethHR), LLSTRING(treatmentTime_StethHR_DESC)],
     [CBA_SETTINGS_CAT, ELSTRING(GUI,SubCategory_Basic)],
     [0.1, 30, 8, 1],
     true
