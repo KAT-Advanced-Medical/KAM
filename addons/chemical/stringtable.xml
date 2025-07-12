@@ -680,7 +680,7 @@
             <Dutch>Uithoudingsvermogenverlies bij gebruik van een gasmasker inschakelen</Dutch>
         </Key>
         <Key ID="STR_KAT_Chemical_SETTING_gasMaskStaminaLoss_DESC">
-            <English>If you wear a gasmask you will loose stamina more quickly</English>
+            <English>If you wear a gasmask you will lose stamina more quickly</English>
             <German>Wenn man eine Gasmaske trägt, verliert man mehr Ausdauer</German>
         </Key>
         <Key ID="STR_KAT_Chemical_SETTING_infectionTime">
