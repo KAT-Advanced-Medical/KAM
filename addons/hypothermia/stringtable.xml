@@ -416,5 +416,9 @@
             <Chinesesimp>患者感觉温暖</Chinesesimp>
             <Dutch>Patiënt voelt warm aan</Dutch>
         </Key>
+        <Key ID="STR_KAT_Hypothermia_ENABLE_HYPOTHERMIA_DESC">
+            <English>Enables the hypothermia system</English>
+            <German>Aktiviert das Hypothermie-System</German>
+        </Key>
     </Package>
 </Project>
