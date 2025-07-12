@@ -328,16 +328,6 @@
     true
 ] call CBA_fnc_addSetting;
 
-// Sets oxygenation period length after CPR has stopped
-[
-    QGVAR(CPR_OxygenationPeriod),
-    "SLIDER",
-    [LLSTRING(SETTING_CPR_OxygenationPeriod), LLSTRING(SETTING_CPR_OxygenationPeriod_DESC)],
-    [CBA_SETTINGS_CAT, LSTRING(SubCategory_CPR)],
-    [0, 3600, 15, 0],
-    true
-] call CBA_fnc_addSetting;
-
 //Advanced Rhythms
 [
     QGVAR(AdvRhythm),
