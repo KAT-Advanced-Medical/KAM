@@ -679,6 +679,10 @@
             <Chinese>啟用使用防毒面具時的體力流失</Chinese>
             <Dutch>Uithoudingsvermogenverlies bij gebruik van een gasmasker inschakelen</Dutch>
         </Key>
+        <Key ID="STR_KAT_Chemical_SETTING_gasMaskStaminaLoss_DESC">
+            <English>If you wear a gasmask you will lose stamina more quickly</English>
+            <German>Wenn man eine Gasmaske trägt, verliert man mehr Ausdauer</German>
+        </Key>
         <Key ID="STR_KAT_Chemical_SETTING_infectionTime">
             <English>Time until infection</English>
             <Czech>Čas do infekce</Czech>
