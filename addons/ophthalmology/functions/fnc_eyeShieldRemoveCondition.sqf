@@ -14,7 +14,7 @@
 
 params ["_medic", "_patient"];
 
-if ((_patient hmd == "kat_eyecovers_left") || (_patient hmd == "kat_eyecovers_right")) exitWith {
+if ((hmd _patient == "kat_eyecovers_left") || (hmd _patient == "kat_eyecovers_right")) exitWith {
     true
 };
 
