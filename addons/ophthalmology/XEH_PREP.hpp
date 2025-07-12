@@ -6,6 +6,7 @@ PREP(handleDustInjury);
 PREP(handleExplosion);
 PREP(handleRespawn);
 PREP(init);
+PREP(severeEyeInjuryPFH);
 PREP(treatmentAdvanced_eyeShield);
 PREP(treatmentAdvanced_eyeShieldLocal);
 PREP(treatmentAdvanced_eyeShieldRemove);
