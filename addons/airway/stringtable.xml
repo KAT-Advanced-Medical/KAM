@@ -1308,6 +1308,10 @@
             <Finnish>Okkluusiojäähdytyssykli</Finnish>
             <Dutch>Verstoppings afkoelingsperiode</Dutch>
         </Key>
+        <Key ID="STR_KAT_Airway_SETTING_occlusion_cooldownPeriod_DESC">
+            <English>Period in seconds during which patient cannot get another occlusion after last occlusion was cleared. Set to 0 to disable this feature.</English>
+            <German>Zeitraum in Sekunden, in dem ein Patient keine weitere Okklusion bekommen kann, nachdem die letzte Okklusion beseitigt wurde. Auf 0 setzen, um diese Funktion zu deaktivieren.</German>
+        </Key>
         <Key ID="STR_KAT_Airway_SETTING_occlusion_repeatTimer">
             <English>Occlusion repeat timer</English>
             <Czech>Časovač opakovaného ucpání dýchacích cest</Czech>
@@ -1325,6 +1329,14 @@
             <Norwegian>Repetisjonsintervall for Okklusjon</Norwegian>
             <Finnish>Okkluusiotoistoajastin</Finnish>
             <Dutch>Verstoppings herhaling timer</Dutch>
+        </Key>
+        <Key ID="STR_KAT_Airway_SETTING_occlusion_repeatTimer_DESC">
+            <English>Time interval in seconds at which the system checks for new occlusion occurrences in unconscious patients.</English>
+            <German>Zeitintervall in Sekunden, in dem das System neue Okklusionsereignisse bei bewusstlosen Patienten überprüft.</German>
+        </Key>
+        <Key ID="STR_KAT_Airway_SETTING_puking_sound_DESC">
+            <English>Enable or disable the sound effect when a patient develops airway occlusion (vomiting).</English>
+            <German>Aktiviert oder deaktiviert den Soundeffekt, wenn bei einem Patienten eine Atemwegsobstruktion (Erbrechen) auftritt.</German>
         </Key>
         <Key ID="STR_KAT_Airway_SETTING_puking_sound">
             <English>Activate the puking sound?</English>
