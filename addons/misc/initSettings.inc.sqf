@@ -3,7 +3,7 @@
 [
     QGVAR(enable),
     "CHECKBOX",
-    LLSTRING(SETTING_ENABLE),
+    [LLSTRING(SETTING_ENABLE), LLSTRING(SETTING_ENABLE_DESC)],
     [CBA_SETTINGS_CAT, ELSTRING(GUI,SubCategory_Basic)],
     [true],
     true
@@ -22,7 +22,7 @@
 [
     QGVAR(treatmentTimeDetachTourniquet),
     "SLIDER",
-    [LLSTRING(SETTING_treatmentTimeDetachTourniquet)],
+    [LLSTRING(SETTING_treatmentTimeDetachTourniquet), LLSTRING(SETTING_treatmentTimeDetachTourniquet_DESC)],
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_Tourniquet)],
     [1, 60, 7, 1],
     true
@@ -31,7 +31,7 @@
 [
     QGVAR(tourniquetEffects_Enable),
     "CHECKBOX",
-    [LLSTRING(SETTING_tourniquetEffects_Enable)],
+    [LLSTRING(SETTING_tourniquetEffects_Enable), LLSTRING(SETTING_tourniquetEffects_Enable_DESC)],
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_Tourniquet)],
     [true],
     true
@@ -40,7 +40,7 @@
 [
     QGVAR(tourniquetEffects_PositiveMultiplier),
     "SLIDER",
-    [LLSTRING(SETTING_tourniquetEffects_PositiveMultiplier)],
+    [LLSTRING(SETTING_tourniquetEffects_PositiveMultiplier), LLSTRING(SETTING_tourniquetEffects_PositiveMultiplier_DESC)],
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_Tourniquet)],
     [0.1, 10, 1, 1],
     true
@@ -49,7 +49,7 @@
 [
     QGVAR(tourniquetEffects_NegativeMultiplier),
     "SLIDER",
-    [LLSTRING(SETTING_tourniquetEffects_NegativeMultiplier)],
+    [LLSTRING(SETTING_tourniquetEffects_NegativeMultiplier), LLSTRING(SETTING_tourniquetEffects_NegativeMultiplier_DESC)],
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_Tourniquet)],
     [0.1, 10, 1, 1],
     true
@@ -190,7 +190,7 @@
 [
     QGVAR(IFAK_RemoveWhenEmpty),
     "CHECKBOX",
-    LLSTRING(SETTING_FAK_RemoveWhenEmpty),
+    [LLSTRING(SETTING_FAK_RemoveWhenEmpty), LLSTRING(SETTING_FAK_RemoveWhenEmpty_DESC)],
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_IFAK)],
     [true],
     true
@@ -294,7 +294,7 @@
 [
     QGVAR(AFAK_RemoveWhenEmpty),
     "CHECKBOX",
-    LLSTRING(SETTING_FAK_RemoveWhenEmpty),
+    [LLSTRING(SETTING_FAK_RemoveWhenEmpty), LLSTRING(SETTING_FAK_RemoveWhenEmpty_DESC)],
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_AFAK)],
     [true],
     true
@@ -430,7 +430,7 @@
 [
     QGVAR(MFAK_RemoveWhenEmpty),
     "CHECKBOX",
-    LLSTRING(SETTING_FAK_RemoveWhenEmpty),
+    [LLSTRING(SETTING_FAK_RemoveWhenEmpty), LLSTRING(SETTING_FAK_RemoveWhenEmpty_DESC)],
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_MFAK)],
     [true],
     true
