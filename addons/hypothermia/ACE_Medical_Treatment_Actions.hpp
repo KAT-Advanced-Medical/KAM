@@ -42,4 +42,26 @@ class ACE_Medical_Treatment_Actions {
         condition = QUOTE(GVAR(hypothermiaActive));
         callbackSuccess = QFUNC(checkTemperature);
     };
+    class ApplySpaceBlanket: BasicBandage {
+        displayName = CSTRING(Apply_SpaceBlanket);
+        displayNameProgress = CSTRING(perform);
+        category = "advanced";
+        allowedSelections[] = {"Chest"};
+        medicRequired = 0;
+        treatmentTime = 15;
+        items[] = {"kat_spaceBlanket"};
+        condition = QUOTE(!([ARR_2(_patient,_bodyPart)] call FUNC(removeBlanket)) && GVAR(hypothermiaActive)); 
+        callbackSuccess = QFUNC(applySpaceBlanket);
+    };
+    class RemoveSpaceBlanket: BasicBandage {
+        displayName = CSTRING(Remove_SpaceBlanket);
+        displayNameProgress = CSTRING(perform);
+        category = "advanced";
+        allowedSelections[] = {"Chest"};
+        medicRequired = 0;
+        treatmentTime = 7;
+        items[] = {};
+        condition = QUOTE([ARR_2(_patient,_bodyPart)] call FUNC(removeBlanket) && GVAR(hypothermiaActive));
+        callbackSuccess = QFUNC(removeSpaceBlanket);
+    };
 };

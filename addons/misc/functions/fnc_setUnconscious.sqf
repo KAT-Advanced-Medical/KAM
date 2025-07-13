@@ -50,7 +50,7 @@ if (_knockOut) then {
             KAT_forceWakeup = true;
             [{
                 params [["_unit", objNull]];
-                if ((alive _unit) && {_unit call EFUNC(vitals,hasStableVitals)}) then {
+                if ((alive _unit) && {_unit call EFUNC(vitals,hasStableVitals)} && !(GET_CONVERT_STATUS(_unit))) then {
                     [QACEGVAR(medical,WakeUp), _unit] call CBA_fnc_localEvent;
                     KAT_forceWakeup = false;
                 } else {

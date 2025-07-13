@@ -24,4 +24,15 @@ class CfgWeapons {
             mass = 1;
         }; 
     };
+    class kat_spaceBlanket: ACE_ItemCore {
+        scope = 2;
+        displayName = CSTRING(spaceBlanket_displayName);
+        picture = QPATHTOF(ui\spaceBlanket.paa);
+        model = "\A3\Structures_F_EPA\Items\Medical\HeatPack_F.p3d";
+        descriptionShort = CSTRING(spaceBlanket_DescShort);
+        ACE_isMedicalItem = 1;
+        class ItemInfo: CBA_MiscItem_ItemInfo {
+            mass = 0.5;
+        }; 
+    };
 };

@@ -25,6 +25,6 @@ private _bloodPressure = GET_BLOOD_PRESSURE(_unit);
 _bloodPressure params ["_bloodPressureL", "_bloodPressureH"];
 private _map = _bloodPressureL + (0.3333333333 * (_bloodPressureH - _bloodPressureL));
 
-if ((floor (random 100) < ((linearConversion [60, 93, _map, 0, GVAR(carbonateChance), true]) min (linearConversion [93, 120, _map, GVAR(carbonateChance), 0, true]))) && {[_patient] call EFUNC(vitals,hasStableVitals)}) then {
+if ((floor (random 100) < ((linearConversion [60, 93, _map, 0, GVAR(carbonateChance), true]) min (linearConversion [93, 120, _map, GVAR(carbonateChance), 0, true]))) && {[_patient] call EFUNC(vitals,hasStableVitals)} && !(GET_CONVERT_STATUS(_unit))) then {
     [_patient, false] call ACEFUNC(medical,setUnconscious);
 };
