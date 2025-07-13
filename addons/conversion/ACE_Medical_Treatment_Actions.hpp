@@ -9,8 +9,7 @@ class ACE_Medical_Treatment_Actions {
         treatmentLocations = QGVAR(manualConversionLocation);
         treatmentTime = QGVAR(manualConversionTime);
         allowedSelections[] = {"All"};
-        allowSelfTreatment = 1;
-        items[] = {};
+        allowSelfTreatment = 0;
         callbackSuccess = QFUNC(manualConversion);
     };
 };
