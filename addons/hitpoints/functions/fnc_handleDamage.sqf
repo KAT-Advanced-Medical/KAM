@@ -211,7 +211,7 @@ if (_context == 2) then {
         [_damageLeftLeg select 0,    PRIORITY_LEFT_LEG,   _damageLeftLeg select 1,    "LeftLeg"],
         [_damageRightLeg select 0,   PRIORITY_RIGHT_LEG,  _damageRightLeg select 1,   "RightLeg"],
         [_damageUpperLeftLeg select 0,    PRIORITY_UPPER_LEFT_LEG,   _damageUpperLeftLeg select 1,    "UpperLeftLeg"],
-        [_damageUpperRightLeg select 0,   PRIORITY_UPPER_RIGHT_ARM,  _damageUpperRightLeg select 1,   "UpperRightLeg"],
+        [_damageUpperRightLeg select 0,   PRIORITY_UPPER_RIGHT_LEG,  _damageUpperRightLeg select 1,   "UpperRightLeg"],
         [_damageStructural select 0, PRIORITY_STRUCTURAL, _damageStructural select 1, "#structural"]
     ];
     TRACE_2("incoming",_allDamages,_damageStructural);
