@@ -32,12 +32,12 @@ if (_classname in ["PackedRBCIV_500", "PackedRBCIV_250"]) then {
         private _coagFactorMax = missionNamespace getVariable [QGVAR(coagulation_factor_limit), 60];
          private _factor = _patient getVariable [QGVAR(coagulationFactor), 30];
         private _final2 = (_factor + _coagulation) min _coagFactorMax;
-        _patient setVariable [QGVAR(coagulationFactor), (_final2), true];
+        _patient setVariable [QGVAR(coagulationFactor), _final2, true];
     };
     } else {
         private _coagFactorMax = missionNamespace getVariable [QGVAR(coagulation_factor_limit), 60];
         private _factor = _patient getVariable [QGVAR(coagulationFactor), 30];
         private _final2 = (_factor + _coagulation) min _coagFactorMax;
 
-        _patient setVariable [QGVAR(coagulationFactor), (_final2), true];
+        _patient setVariable [QGVAR(coagulationFactor), _final2, true];
     };

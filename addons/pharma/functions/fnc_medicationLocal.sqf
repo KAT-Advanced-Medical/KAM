@@ -56,7 +56,17 @@ if !(ACEGVAR(medical_treatment,advancedMedication)) exitWith {
     };
 };
 TRACE_1("Running treatmentMedicationLocal with Advanced configuration for",_patient);
-
+if (_classname in ["CWMP", "Painkillers", "Penthrox", "BubbleWrap", "Caffeine", "Pervitin"]) then {
+    private _occlusionArray = _patient getVariable [QEGVAR(airway,occlusion), [0, 0, 0]];
+    private _obstructionArray = _patient getVariable [QEGVAR(airway,obstruction), [0, 0, 0]];
+    private _catastrophicState = _patient getVariable [QEGVAR(airway,catastrophicAirway), [false, false]];
+    private _hasCatastrophicAirway = ((_catastrophicState select 0) || (_catastrophicState select 1));
+    private _occlusion = (_occlusionArray findIf { _x > 2 }) != -1;
+    private _obstruction = (_obstructionArray findIf { _x != 0 }) != -1;
+    if ((((_obstruction || _occlusion)) || _hasCatastrophicAirway)) exitwith {
+        TRACE_3("Medication injection site is occluded by tourniquet", _partIndex,_classname,_patient);
+    };
+};
 private _partIndex = ALL_BODY_PARTS find toLower _bodyPart;
 private _IVarray = _patient getVariable [QGVAR(IV), [0,0,0,0,0,0,0,0,0,0,0,0]];
 // Handle IV blockage
@@ -82,12 +92,12 @@ private _result = if (_idx != -1) then { _occlusionMap select _idx select 1 } el
 private _subDermalMeds = [
     "syringe_Lidocaine_10ml_10"
 ];
-private _medParts = _className splitString "_";
+private _medParts = _classname splitString "_";
 private _hasValidSuffix = count _medParts > 2 && { _medParts select 2 isEqualTo "5ml" };
 private _isOccluded = 
     ({ _tourniquets select _x != 0 } count _result > 0) 
     && !( ((_IVarray select _partIndex isEqualTo 13) && _hasValidSuffix) 
-    || (_className in _subDermalMeds));
+    || (_classname in _subDermalMeds));
 if (_isOccluded) exitWith {
     TRACE_3("Medication injection site is occluded by tourniquet", _partIndex,_classname,_patient);
     private _occludedMedications = _patient getVariable [QACEGVAR(medical,occludedMedications), []];
@@ -144,8 +154,8 @@ if (_isOccluded) exitWith {
         TRACE_2("weightMult",_weightMult,_lc);
     };
     private _currentDose = [_patient, _medication] call ACEFUNC(medical_status,getMedicationCount) select 0;
-    if !(_className in ["CWMP", "Painkillers", "Penthrox", "Carbonate", "BubbleWrap", "Caffeine", "Pervitin", "Naloxone"]) then {
-        private _medicationParts = _className splitString "_";
+    if !(_classname in ["CWMP", "Painkillers", "Penthrox", "Carbonate", "BubbleWrap", "Caffeine", "Pervitin", "Naloxone"]) then {
+        private _medicationParts = _classname splitString "_";
         private _medicationName = _medicationParts select 1;
         private _upperMed = toUpper _medicationName;
         if (_upperMed select [count _upperMed - 4] isEqualTo "AUTO") then {
@@ -217,9 +227,9 @@ if (_isOccluded) exitWith {
             _painReduce = _painReduce / 4;
         };
     };
-    private _medicationParts = (_className splitString "_");
-    TRACE_1("ClassName being processed:",_className);
-    TRACE_1("SplitString result for _className:",_medicationParts);
+    private _medicationParts = (_classname splitString "_");
+    TRACE_1("ClassName being processed:",_classname);
+    TRACE_1("SplitString result for _classname:",_medicationParts);
     if (count _medicationParts > 3) then {
         _medicationName = _medicationParts select 1;
         private _upperMed = toUpper _medicationName;
@@ -234,17 +244,17 @@ if (_isOccluded) exitWith {
         [_patient, _medicationName, _timeTillMaxEffect, _timeInSystem, _heartRateChange, _painReduce, _viscosityChange, _dose, _alphaFactor, _opioidRelief, _opioidEffect, _opioidDepression, _respiratoryRate, _contractility, _nauseaMult, _sedation, _paralysis] call EFUNC(vitals,addMedicationAdjustment);
         [_patient, _medicationName, _incompatibleMedication] call FUNC(onMedicationUsage);
     } else {
-        if (_className in ["TXAAuto", "PhenylephrineAuto"]) then {
-            private _medicationName = _className select [0, count _className - 4];
-            TRACE_6("adjustments1",_patient,_className,_timeTillMaxEffect,_timeInSystem,_heartRateChange,_painReduce);
+        if (_classname in ["TXAAuto", "PhenylephrineAuto"]) then {
+            private _medicationName = _classname select [0, count _classname - 4];
+            TRACE_6("adjustments1",_patient,_classname,_timeTillMaxEffect,_timeInSystem,_heartRateChange,_painReduce);
             TRACE_7("adjustments2",_viscosityChange,_dose,_alphaFactor,_opioidRelief,_opioidEffect,_opioidDepression,_respiratoryRate);
             [_patient, _medicationName, _timeTillMaxEffect, _timeInSystem, _heartRateChange, _painReduce, _viscosityChange, _dose, _alphaFactor, _opioidRelief, _opioidEffect, _opioidDepression, _respiratoryRate, _contractility, _nauseaMult, _sedation, _paralysis] call EFUNC(vitals,addMedicationAdjustment);
             [_patient, _medicationName, _incompatibleMedication] call FUNC(onMedicationUsage);
         } else {
-            TRACE_6("adjustments1",_patient,_className,_timeTillMaxEffect,_timeInSystem,_heartRateChange,_painReduce);
+            TRACE_6("adjustments1",_patient,_classname,_timeTillMaxEffect,_timeInSystem,_heartRateChange,_painReduce);
             TRACE_7("adjustments2",_viscosityChange,_dose,_alphaFactor,_opioidRelief,_opioidEffect,_opioidDepression,_respiratoryRate);
-            [_patient, _className, _timeTillMaxEffect, _timeInSystem, _heartRateChange, _painReduce, _viscosityChange, _dose, _alphaFactor, _opioidRelief, _opioidEffect, _opioidDepression, _respiratoryRate, _contractility, _nauseaMult, _sedation, _paralysis] call EFUNC(vitals,addMedicationAdjustment);
-            [_patient, _className, _incompatibleMedication] call FUNC(onMedicationUsage);
+            [_patient, _classname, _timeTillMaxEffect, _timeInSystem, _heartRateChange, _painReduce, _viscosityChange, _dose, _alphaFactor, _opioidRelief, _opioidEffect, _opioidDepression, _respiratoryRate, _contractility, _nauseaMult, _sedation, _paralysis] call EFUNC(vitals,addMedicationAdjustment);
+            [_patient, _classname, _incompatibleMedication] call FUNC(onMedicationUsage);
         };
     };
 
@@ -277,12 +287,12 @@ if (_isOccluded) exitWith {
         [format ["kat_pharma_%1Local", toLower _medicationName], [_patient, _bodyPart, _opioidRelief], _patient] call CBA_fnc_targetEvent;
         };
     } else {
-        if (_className in ["Lorazepam","Ketamine","EACA","TXA","Atropine","Amiodarone","Flumazenil","Lidocaine", "TXAAuto"]) then {
-        [format ["kat_pharma_%1Local", toLower _className], [_patient, _bodyPart, _classname], _patient] call CBA_fnc_targetEvent;
+        if (_classname in ["Lorazepam","Ketamine","EACA","TXA","Atropine","Amiodarone","Flumazenil","Lidocaine", "TXAAuto"]) then {
+        [format ["kat_pharma_%1Local", toLower _classname], [_patient, _bodyPart, _classname], _patient] call CBA_fnc_targetEvent;
         };
 
-        if (_className in ["Fentanyl","Morphine","Nalbuphine"]) then {
-        [format ["kat_pharma_%1Local", toLower _className], [_patient, _bodyPart, _opioidRelief], _patient] call CBA_fnc_targetEvent;
+        if (_classname in ["Fentanyl","Morphine","Nalbuphine"]) then {
+        [format ["kat_pharma_%1Local", toLower _classname], [_patient, _bodyPart, _opioidRelief], _patient] call CBA_fnc_targetEvent;
         };
     };
     
@@ -322,24 +332,24 @@ if (_isOccluded) exitWith {
     };
     TRACE_6("adjustments1",_patient,_medicationName,_timeTillMaxEffect,_timeInSystem,_heartRateChange,_painReduce);
     TRACE_7("adjustments2",_viscosityChange,_dose,_alphaFactor,_opioidRelief,_opioidEffect,_opioidDepression,_respiratoryRate);
-    [_patient, _className, _timeTillMaxEffect, _timeInSystem, _heartRateChange, _painReduce, _viscosityChange, _dose, _alphaFactor, _opioidRelief, _opioidEffect, _opioidDepression, _respiratoryRate, _contractility, _nauseaMult, _sedation] call EFUNC(vitals,addMedicationAdjustment);
-    [_patient, _className, _incompatibleMedication] call FUNC(onMedicationUsage);
+    [_patient, _classname, _timeTillMaxEffect, _timeInSystem, _heartRateChange, _painReduce, _viscosityChange, _dose, _alphaFactor, _opioidRelief, _opioidEffect, _opioidDepression, _respiratoryRate, _contractility, _nauseaMult, _sedation] call EFUNC(vitals,addMedicationAdjustment);
+    [_patient, _classname, _incompatibleMedication] call FUNC(onMedicationUsage);
 
-    if (_className in ["Lorazepam","Ketamine","EACA","TXA","TXAAuto","Atropine","Amiodarone","Flumazenil","Lidocaine"]) then {
-        [format ["kat_pharma_%1Local", toLower _className], [_patient, _bodyPart, _classname], _patient] call CBA_fnc_targetEvent;
+    if (_classname in ["Lorazepam","Ketamine","EACA","TXA","TXAAuto","Atropine","Amiodarone","Flumazenil","Lidocaine"]) then {
+        [format ["kat_pharma_%1Local", toLower _classname], [_patient, _bodyPart, _classname], _patient] call CBA_fnc_targetEvent;
     };
 
-    if (_className in ["Fentanyl","Morphine","Nalbuphine"]) then {
-    [format ["kat_pharma_%1Local", toLower _className], [_patient, _bodyPart, _opioidRelief], _patient] call CBA_fnc_targetEvent;
+    if (_classname in ["Fentanyl","Morphine","Nalbuphine"]) then {
+    [format ["kat_pharma_%1Local", toLower _classname], [_patient, _bodyPart, _opioidRelief], _patient] call CBA_fnc_targetEvent;
     };
 };*/
 private _TXAmedications = ["syringe_TXA_5ml_10", "syringe_TXA_10ml_10", "TXAAuto"];
     if (_classname in _TXAmedications) then {
         TRACE_1("TXADose",_patient);
-        if (_className in ["TXAAuto"]) then {
-            _medicationName = _className select [0, count _className - 4];
+        if (_classname in ["TXAAuto"]) then {
+            _medicationName = _classname select [0, count _classname - 4];
         };
-        private _medicationParts = (_className splitString "_");
+        private _medicationParts = (_classname splitString "_");
         if (count _medicationParts > 3) then {
                 _medicationName = _medicationParts select 1;
         };
