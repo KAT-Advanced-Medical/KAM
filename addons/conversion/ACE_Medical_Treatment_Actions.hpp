@@ -12,4 +12,17 @@ class ACE_Medical_Treatment_Actions {
         allowSelfTreatment = 0;
         callbackSuccess = QFUNC(manualConversion);
     };
+    class ConvertPatientTickets: CheckPulse {
+        displayName = CSTRING(TicketConversion);
+        displayNameProgress = CSTRING(converting);
+        category = "examine";
+        condition = QFUNC(ticketConversionCondition);
+        medicRequired = QGVAR(manualConversionLevel);
+        treatmentLocations = 2;
+        treatmentTime = QGVAR(manualConversionTime);
+        allowedSelections[] = {"All"};
+        allowSelfTreatment = 1;
+        items[] = {};
+        callbackSuccess = QFUNC(ticketConversion);
+    };
 };

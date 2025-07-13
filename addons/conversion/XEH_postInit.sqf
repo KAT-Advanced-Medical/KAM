@@ -6,7 +6,7 @@
 
 [QGVAR(convertCasualty), {
     private _type = typeOf player; 
-    private _group = createGroup [(side player), true]; 
+    private _group = createGroup [(side group player), true]; 
     private _previousUnit = player;
     private _setName = name _previousUnit;
     private _loadout = [player] call CBA_fnc_getLoadout;
@@ -28,7 +28,7 @@
 
 [QGVAR(unitTransfer), {
     params ["_previousUnit"];
-    private _group2 = createGroup [(side _previousUnit), true]; 
+    private _group2 = createGroup [(side group _previousUnit), true]; 
     [_previousUnit] join _group2;
     _group2 setGroupOwner 2;
     [_previousUnit, true] call ACEFUNC(medical,setUnconscious);
