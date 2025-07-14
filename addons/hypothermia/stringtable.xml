@@ -413,5 +413,17 @@
             <Chinesesimp>患者感觉温暖</Chinesesimp>
             <Dutch>Patiënt voelt warm aan</Dutch>
         </Key>
+        <Key ID="STR_KAT_Hypothermia_spaceblanket_DescShort">
+            <English>Thin mylar blanket, acts as an effective insulator</English>
+        </Key>
+        <Key ID="STR_KAT_Hypothermia_spaceblanket_displayName">
+            <English>Space Blanket</English>
+        </Key>
+        <Key ID="STR_KAT_Hypothermia_apply_spaceblanket">
+            <English>Wrap w/ Space Blanket</English>
+        </Key>
+        <Key ID="STR_KAT_Hypothermia_remove_spaceblanket">
+            <English>Remove Space Blanket</English>
+        </Key>
     </Package>
 </Project>

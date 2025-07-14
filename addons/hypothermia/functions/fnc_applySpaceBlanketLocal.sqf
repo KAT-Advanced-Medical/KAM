@@ -19,3 +19,7 @@
 params ["_medic", "_patient", "_bodyPart"];
 
 _patient setVariable [QGVAR(spaceBlanket), true, true];
+if (GET_BLOOD_VOLUME_LITERS(_patient) > 4) then {
+    private _impact = (_patient getVariable [QGVAR(warmingImpact), 0]);
+    _patient setVariable [QGVAR(warmingImpact), _impact + 300, true];
+};

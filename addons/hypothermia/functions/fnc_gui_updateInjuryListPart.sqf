@@ -27,5 +27,5 @@ if ((_target getVariable [QGVAR(handWarmer), [0,0,0,0,0,0,0,0,0,0,0,0]] select _
     _entries pushBack [LLSTRING(HandWarmer_displayName), [0.35, 0.72, 0.82, 1]];
 };
 if (_target getVariable [QGVAR(spaceBlanket), false]) then {
-    _entries pushBack [LLSTRING(SpaceBlanketApplied), [0.35, 0.72, 0.82, 1]];
+    _entries pushBack [LLSTRING(spaceblanket_displayname), [0.35, 0.72, 0.82, 1]];
 };

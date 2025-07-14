@@ -46,9 +46,9 @@ class ACE_Medical_Treatment_Actions {
         displayName = CSTRING(Apply_SpaceBlanket);
         displayNameProgress = CSTRING(perform);
         category = "advanced";
-        allowedSelections[] = {"Chest"};
+        allowedSelections[] = {"All"};
         medicRequired = 0;
-        treatmentTime = 15;
+        treatmentTime = 10;
         items[] = {"kat_spaceBlanket"};
         condition = QUOTE(!([ARR_2(_patient,_bodyPart)] call FUNC(removeBlanket)) && GVAR(hypothermiaActive)); 
         callbackSuccess = QFUNC(applySpaceBlanket);
@@ -57,9 +57,9 @@ class ACE_Medical_Treatment_Actions {
         displayName = CSTRING(Remove_SpaceBlanket);
         displayNameProgress = CSTRING(perform);
         category = "advanced";
-        allowedSelections[] = {"Chest"};
+        allowedSelections[] = {"All"};
         medicRequired = 0;
-        treatmentTime = 7;
+        treatmentTime = 4;
         items[] = {};
         condition = QUOTE([ARR_2(_patient,_bodyPart)] call FUNC(removeBlanket) && GVAR(hypothermiaActive));
         callbackSuccess = QFUNC(removeSpaceBlanket);

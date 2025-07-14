@@ -5,6 +5,6 @@
 [QGVAR(removeFluidWarmer), LINKFUNC(removeFluidWarmerLocal)] call CBA_fnc_addEventHandler;
 [QGVAR(applySpaceBlanket), LINKFUNC(applySpaceBlanketLocal)] call CBA_fnc_addEventHandler;
 [QGVAR(removeSpaceBlanket), LINKFUNC(removeSpaceBlanketLocal)] call CBA_fnc_addEventHandler;
-
+[QACEGVAR(medical_gui,updateInjuryListPart), LINKFUNC(gui_updateInjuryListPart)] call CBA_fnc_addEventHandler;
 [QEGVAR(misc,handleRespawn), LINKFUNC(handleRespawn)] call CBA_fnc_addEventHandler;
 [QACEGVAR(medical_treatment,fullHealLocalMod), LINKFUNC(fullHealLocal)] call CBA_fnc_addEventHandler;
