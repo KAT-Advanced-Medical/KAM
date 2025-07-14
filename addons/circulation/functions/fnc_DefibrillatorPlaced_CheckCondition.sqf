@@ -55,4 +55,4 @@ switch (_check) do {
     };
 };
 
-_condition && {!(_patient getVariable [QEGVAR(airway,recovery), false]) && (isNull objectParent _patient) && {["",_patient] call ACEFUNC(medical_treatment,canCPR)}};
+_condition && {!(_patient getVariable [QEGVAR(airway,recovery), false]) && (isNull objectParent _patient)};
