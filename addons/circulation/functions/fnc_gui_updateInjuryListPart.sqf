@@ -20,7 +20,13 @@
 
 params ["_ctrl", "_target", "_selectionN", "_entries"];
 
-
+//if (_target getVariable [QGVAR(CPR_provider), false] != objNull) then {
+    //_entries pushBack [format [LLSTRING(CPRActive), ([(_target getVariable [QGVAR(CPR_provider), false]), false, true] call ACEFUNC(common,getName)), (_patient getVariable [QGVAR(CPR_time), "0:00"])], [0.3, 0.8, 0.8, 1]];
+//};
+if ((_target getVariable [QGVAR(Defibrillator_Provider), [-1,-1,-1]] select 2) isEqualTo 'kat_X_AED') then {
+    private _status = _patient getVariable [QGVAR(AED_X_VitalsStatus), ""];
+    _entries pushBack [_status, [0.3, 0.8, 0.8, 1]];
+};
 if ((_target getVariable [QGVAR(attachedLucasState), false] == true) && (_target getVariable [QGVAR(attachedLucas), false]) && (_selectionN isEqualTo 2)) then {
     _entries pushBack [LLSTRING(LucasActive), [0.3, 0.8, 0.8, 1]];
 };

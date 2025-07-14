@@ -49,7 +49,9 @@ if (_target getVariable [QGVAR(pulseoximeter), false] && _selectionN in [2,3]) t
         _entries pushBack [LLSTRING(Pulseoximeter), [0.3, 0.8, 0.8, 1]];
     };
 };
-
+/*/if (_target getVariable [QGVAR(BVM_provider), false] != objNull) then {
+    _entries pushBack [format [LLSTRING(BVMActive), ([(_target getVariable [QGVAR(BVM_provider), false]), false, true] call ACEFUNC(common,getName)), (_target getVariable [QGVAR(BVM_amount), 0])], [0.3, 0.8, 0.8, 1]];
+};*/
 if (_target getVariable [QGVAR(nasalCannula), false] && _selectionN isEqualTo 0) then {
     _entries pushBack [LLSTRING(NasalCannula_Display), [0.3, 0.8, 0.8, 1]];
 };

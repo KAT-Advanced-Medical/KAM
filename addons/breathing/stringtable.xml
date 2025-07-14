@@ -3439,5 +3439,8 @@
         <Key ID="STR_KAT_Breathing_ventRate">
             <English>Ventilator Rate is %1 Breaths Per Minute</English>
         </Key>
+        <Key ID="STR_KAT_Breathing_BVM_Active">
+            <English>%1 BVM (%2) </English>
+        </Key>
     </Package>
 </Project>

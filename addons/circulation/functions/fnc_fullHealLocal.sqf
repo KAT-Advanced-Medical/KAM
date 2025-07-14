@@ -19,6 +19,7 @@ params ["_patient"];
 TRACE_1("fullHealLocal",_patient);
 
 _patient setVariable [QGVAR(cprCount), 2, true];
+_patient setVariable [QGVAR(CPR_time), "0:00", true];
 _patient setVariable [QGVAR(heartRestart), false, true];
 _patient setVariable [QGVAR(cardiacArrestType), 0, true];
 

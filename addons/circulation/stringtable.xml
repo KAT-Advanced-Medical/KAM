@@ -3966,5 +3966,8 @@
         <Key ID="STR_KAT_Circulation_Action_SalineIV100">
             <English>Give Saline IV (100ml)</English>
         </Key>
+        <Key ID="STR_KAT_Circulation_CPR_Active">
+            <English>%1 CPR (%2) </English>
+        </Key>
     </Package>
 </Project>

@@ -25,7 +25,7 @@
 params ["_medic", "_patient", ["_pocket", false], ["_useOxygen", false], ["_oxygenOrigin", 0]];
 
 _patient setVariable [QGVAR(BVMInUse), true, true];
-
+_patient setVariable [QGVAR(BVM_provider), _medic, true];
 GVAR(BVMTarget) = _patient;
 
 GVAR(BVMCancel_EscapeID) = [0x01, [false, false, false], {
@@ -99,7 +99,7 @@ if (dialog) then { // If another dialog is open (medical menu) close it
 };
 
 private _notInVehicle = isNull objectParent _medic;
-totalProvided = 1;
+_totalProvided = 1;
 GVAR(BVM_loop) = false;
 
 if (_notInVehicle) then {
@@ -155,7 +155,7 @@ GVAR(BVM_timeOut) = true;
             };
     
 
-            [_patient, "activity", LSTRING(Activity_BVM), [[_medic, false, true] call ACEFUNC(common,getName), _bvmType, totalProvided]] call ACEFUNC(medical_treatment,addToLog);
+            [_patient, "activity", LSTRING(Activity_BVM), [[_medic, false, true] call ACEFUNC(common,getName), _bvmType, _totalProvided]] call ACEFUNC(medical_treatment,addToLog);
             [LLSTRING(UseBVM_Cancelled), 1.5, _medic] call ACEFUNC(common,displayTextStructured);
         };
 
@@ -249,7 +249,8 @@ GVAR(BVM_timeOut) = true;
             }, {}, [_patient], 5,
             {
                 GVAR(BVM_timeOut) = false;
-                totalProvided = totalProvided + 1;
+                _totalProvided = _totalProvided + 1;
+                _patient setVariable [QGVAR(BVM_amount), _totalProvided, true];
             }] call CBA_fnc_waitUntilAndExecute;
         };
 
