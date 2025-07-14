@@ -21,8 +21,21 @@ class ACE_Medical_Treatment_Actions {
         treatmentLocations = 2;
         treatmentTime = QGVAR(manualConversionTime);
         allowedSelections[] = {"All"};
-        allowSelfTreatment = 1;
+        allowSelfTreatment = 0;
         items[] = {};
         callbackSuccess = QFUNC(ticketConversion);
+    };
+    class ConvertPatientFacility: CheckPulse {
+        displayName = CSTRING(TicketConversion);
+        displayNameProgress = CSTRING(converting);
+        category = "examine";
+        condition = QFUNC(facilityConversionCondition);
+        medicRequired = QGVAR(manualConversionLevel);
+        treatmentLocations = 2;
+        treatmentTime = QGVAR(manualConversionTime);
+        allowedSelections[] = {"All"};
+        allowSelfTreatment = 0;
+        items[] = {};
+        callbackSuccess = QFUNC(facilityConversion);
     };
 };

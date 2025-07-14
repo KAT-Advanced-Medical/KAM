@@ -2,6 +2,8 @@ PREP(KATConditionExecutionDeath);
 PREP(KATConditionSecondChance);
 PREP(conversionCheck);
 PREP(conversionCondition);
+PREP(facilityConversion);
+PREP(facilityConversionCondition);
 PREP(fullHealLocal);
 PREP(getList);
 PREP(gui_updateInjuryListPart);
