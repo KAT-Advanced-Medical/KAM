@@ -419,6 +419,7 @@
         <Key ID="STR_KAT_Hypothermia_ENABLE_HYPOTHERMIA_DESC">
             <English>Enables the hypothermia system</English>
             <German>Aktiviert das Hypothermie-System</German>
+            <Japanese>低体温症システムを有効化します</Japanese>
         </Key>
     </Package>
 </Project>
