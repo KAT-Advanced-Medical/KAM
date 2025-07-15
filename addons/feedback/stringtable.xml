@@ -10,6 +10,7 @@
             <Japanese>ケタミン、フェンタニル、ペルビチンなどでオピオイドの効果を有効にします</Japanese>
             <Chinese>啟用 K他命(氯胺酮)、芬太尼、冰毒(甲基苯丙胺) 等 鴉片類藥物的作用</Chinese>
             <Chinesesimp>使阿片类药物对氯胺酮、芬太尼和帕维汀产生作用</Chinesesimp>
+            <Dutch>Maakt het mogelijk om opioid-effecten te verkrijgen bij het gebruik van ketamine, fentanyl en pervitin</Dutch>
         </Key>
         <Key ID="STR_KAT_Feedback_SETTING_OpioidEffect_display">
             <English>Enable opioid effect</English>
@@ -20,6 +21,7 @@
             <Japanese>オピオイド効果を有効化</Japanese>
             <Chinese>啟用鴉片類藥物效果</Chinese>
             <Chinesesimp>启用阿片类药物作用</Chinesesimp>
+            <Dutch>Zet opioid-effecten aan</Dutch>
         </Key>
         <Key ID="STR_KAT_Feedback_SETTING_lowSpO2_DESC">
             <English>Lets you change the SpO2 Value at which you get the Flashing warning indicator and stamina loss effect</English>
@@ -36,6 +38,7 @@
             <Chinese>允許您更改在 閃爍警告指示 和 耐力損失效果 發生的SpO2值</Chinese>
             <Chinesesimp>允许您更改SpO2警告值，在该值下，您将获得闪烁警告指示器和耐力损失效果</Chinesesimp>
             <Finnish>Voit muuttaa SpO2-arvoa, jolla saat vilkkuvan varoituksen ja kestävyyden heikkenemisen</Finnish>
+            <Dutch>Defineert de SpO2 waarde waarbij uithoudingsproblemen ontstaan en er een visueel pulseren effect getoond wordt</Dutch>
         </Key>
         <Key ID="STR_KAT_Feedback_SETTING_lowSpO2_display">
             <English>Low SpO2 warning level</English>
@@ -52,12 +55,15 @@
             <Chinese>警告 SpO2 過低</Chinese>
             <Chinesesimp>低SpO2警告级别</Chinesesimp>
             <Finnish>Matala SpO2-varoitustaso</Finnish>
+            <Dutch>Waarschuwingswaarde voor SpO2</Dutch>
         </Key>
         <Key ID="STR_KAT_Feedback_cba_name">
             <English>KAT - ADV Medical: Feedback</English>
-            <Japanese>KAM - フィードバック</Japanese>
             <French>KAT - ADV Medical : Retour d'expérience</French>
+            <Italian>KAT - ADV Medica: Riscontro</Italian>
             <German>KAT - ADV Medical: Feedback</German>
+            <Japanese>KAM - フィードバック</Japanese>
+            <Dutch>KAT - ADV Medical: Feedback</Dutch>
         </Key>
     </Package>
 </Project>

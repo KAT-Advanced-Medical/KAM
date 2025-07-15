@@ -1725,6 +1725,7 @@
             <Czech>Povolit efekty turniketu</Czech>
             <French>Activer les effets du garrot</French>
             <Spanish>Habilitar efectos de torniquete</Spanish>
+            <Italian>Abilita gli effetti del Laccio Emostatico</Italian>
             <Portuguese>Habilitar efeitos de torniquete</Portuguese>
             <Russian>Включить эффект наложения жгута</Russian>
             <German>Erlaube Tourniquet Effekte</German>
@@ -1738,6 +1739,7 @@
             <Czech>Negativní násobitel efektů turniketu</Czech>
             <French>Multiplicateur négatif des effets du garrot</French>
             <Spanish>Multiplicador negativo de los efectos del torniquete</Spanish>
+            <Italian>Moltiplicatore degli effetti negativi del Laccio Emostatico</Italian>
             <Portuguese>Multiplicador negativo de efeitos de torniquete</Portuguese>
             <Russian>Отрицательный множитель эффекта жгута</Russian>
             <German>Tourniquet Effekt negativer Multiplikator</German>
@@ -1752,6 +1754,7 @@
             <Czech>Pozitivní násobitel efektů turniketu</Czech>
             <French>Multiplicateur positif des effets du garrot</French>
             <Spanish>Multiplicador positivo de los efectos del torniquete</Spanish>
+            <Italian>Moltiplicatore degli effetti positivi del Laccio Emostatico</Italian>
             <Portuguese>Multiplicador positivo de efeitos de torniquete</Portuguese>
             <Russian>Положительный множитель эффекта жгута</Russian>
             <German>Tourniquet Effekt positiver Multiplikator</German>
@@ -1859,6 +1862,7 @@
             <Czech>Nastavení turniketu</Czech>
             <French>Paramètres du garrot</French>
             <Spanish>Configuración del torniquete</Spanish>
+            <Italian>Impostazioni Laccio Emostatico</Italian>
             <Portuguese>Configurações de torniquete</Portuguese>
             <Russian>Настройки жгута</Russian>
             <German>Tourniquet Einstellungen</German>
@@ -1898,15 +1902,13 @@
             <Finnish>[KAM] Yleiset kohteet</Finnish>
             <Dutch>[KAM] Algemene items</Dutch>
         </Key>
-        <Key ID="STR_KAT_Misc_miscSupplyCrate_display">
-            <English>[KAM] Misc Items</English>
-            <Japanese>[KAM] その他物資箱</Japanese>
-        </Key>
         <Key ID="STR_KAT_Misc_cba_name">
             <English>KAT - ADV Medical: Misc</English>
-            <Japanese>KAM - その他</Japanese>
             <French>KAT - ADV Medical : Divers</French>
+            <Italian>KAT- ADV Medica: Vari</Italian>
             <German>KAT - ADV Medical: Sonstiges</German>
+            <Japanese>KAM - その他</Japanese>
+            <Dutch>KAT - ADV Medical: Overig</Dutch>
         </Key>
         <Key ID="STR_KAT_Misc_incompatibilityWarning_Desc">
             <English>[KAM WARNING] Incompatible addon(s) that could negatively affect correct functionality detected. KAT - Advanced Medical REWRITE Development Team strongly advises to remove these addons: %1</English>
@@ -1924,6 +1926,37 @@
             <Chinesesimp>[KAM警告]检测到可能对正确功能产生负面影响的不兼容插件。KAT-高级医疗重写开发团队强烈建议删除这些插件：%1</Chinesesimp>
             <Finnish>[KAM WARNING] Havaittiin yhteensopimattomia lisäosia, jotka voivat vaikuttaa oikeaan toimintaan. KAT - Advanced Medical REWRITE -kehitystiimi suosittelee näiden lisäosien poistamista: %1</Finnish>
             <Dutch>[KAM WAARSCHUWING] Onverenigbare mods die de ervaring negatief kunnen beïnvloeden gedetecteerd. KAT - Advanced Medical REWRITE development team raadt je sterk aan om de volgende mods te verwijderen: %1</Dutch>
+        </Key>
+        <Key ID="STR_KAT_Misc_miscSupplyCrate_display">
+            <English>[KAM] Misc Items</English>
+            <Italian>[KAM] Oggetti vari</Italian>
+            <Japanese>[KAM] その他物資箱</Japanese>
+            <French>[KAM] Objets divers</French>
+            <Dutch>[KAM] Overige items</Dutch>
+        </Key>
+        <Key ID="STR_KAT_Misc_SETTING_ENABLE_DESC">
+            <English>Enables the KAT Misc medical system features (e.g. IV-Stands)</English>
+            <German>Aktiviert die KAT Misc Medizinsystem-Funktionen (z.B. IV-Ständer)</German>
+        </Key>
+        <Key ID="STR_KAT_Misc_SETTING_treatmentTimeDetachTourniquet_DESC">
+            <English>Time required to detach a tourniquet from a patient</English>
+            <German>Benötigte Zeit zum Entfernen eines Tourniquets vom Patienten</German>
+        </Key>
+        <Key ID="STR_KAT_Misc_SETTING_tourniquetEffects_Enable_DESC">
+            <English>Enables tourniquet effects on patient health and stamina</English>
+            <German>Aktiviert Tourniquet-Effekte auf Patientengesundheit und Ausdauer</German>
+        </Key>
+        <Key ID="STR_KAT_Misc_SETTING_tourniquetEffects_PositiveMultiplier_DESC">
+            <English>Multiplier for positive tourniquet effects</English>
+            <German>Multiplikator für positive Tourniquet-Effekte</German>
+        </Key>
+        <Key ID="STR_KAT_Misc_SETTING_tourniquetEffects_NegativeMultiplier_DESC">
+            <English>Multiplier for negative tourniquet effects</English>
+            <German>Multiplikator für negative Tourniquet-Effekte</German>
+        </Key>
+        <Key ID="STR_KAT_Misc_SETTING_FAK_RemoveWhenEmpty_DESC">
+            <English>Automatically removes first aid kits from inventory when they become empty</English>
+            <German>Entfernt automatisch Erste-Hilfe-Kästen aus dem Inventar, wenn sie leer werden</German>
         </Key>
     </Package>
 </Project>
