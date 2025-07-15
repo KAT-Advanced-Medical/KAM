@@ -17,7 +17,6 @@ PREP(canWrapJoint);
 PREP(canWrapSplint);
 PREP(canWrapWound);
 PREP(checkJoints);
-PREP(checkLimb);
 PREP(determineIfFatal);
 PREP(fullHealLocal);
 PREP(fullHealMod);

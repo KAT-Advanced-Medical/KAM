@@ -38,8 +38,10 @@ if (_selectionN isEqualTo 3) then {
 _target setVariable [QGVAR(gui_updateInjuryList_eviscEntries), _eviscEntry];
 
 private _wounds = GET_OPEN_WOUNDS(_target);
+private _bodyPart = ALL_BODY_PARTS select _selectionN;
 private _partWounds = _wounds getOrDefault [_bodyPart, []];
 private _internalBleedAmount = 0;
+
 {
     _x params ["_woundClassID", "_amountOf"];
     private _classIndex = _woundClassID / 10;
@@ -54,9 +56,9 @@ private _sizeLabel = "";
 TRACE_1("checkLimb2",_internalBleedAmount);
 if (_internalBleedAmount > 0) then {
     _sizeLabel = switch (true) do {
-        case (_internalBleedAmount < 0.1): { localize LSTRING(InternalBleeding_Minor) };
-        case (_internalBleedAmount < 3): { localize LSTRING(InternalBleeding_Medium) };
-        case (_internalBleedAmount < 6): { localize LSTRING(InternalBleeding_Large) };
+        case (_internalBleedAmount < 1): { localize LSTRING(InternalBleeding_Minor) };
+        case (_internalBleedAmount < 5): { localize LSTRING(InternalBleeding_Medium) };
+        case (_internalBleedAmount < 10): { localize LSTRING(InternalBleeding_Large) };
         default {};
     };
     _entries pushBack [_sizeLabel, [0.8, 0.76, 0.9, 1]];
