@@ -682,6 +682,7 @@
         <Key ID="STR_KAT_Chemical_SETTING_gasMaskStaminaLoss_DESC">
             <English>If you wear a gasmask you will lose stamina more quickly</English>
             <German>Wenn man eine Gasmaske trägt, verliert man mehr Ausdauer</German>
+            <Japanese>ガスマスクを着用するとスタミナがより早く失われます</Japanese>
         </Key>
         <Key ID="STR_KAT_Chemical_SETTING_infectionTime">
             <English>Time until infection</English>
