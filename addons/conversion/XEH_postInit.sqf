@@ -9,6 +9,7 @@
     private _group = createGroup [(side group player), true]; 
     private _previousUnit = player;
     private _setName = name _previousUnit;
+    systemChat str name _previousUnit;
     private _loadout = [player] call CBA_fnc_getLoadout;
     private _unit = _group createUnit [_type, [0,0,0], [], 0, "NONE"];
     [player, _loadout] call CBA_fnc_setLoadout;
@@ -35,10 +36,10 @@
 }] call CBA_fnc_addEventHandler;
 
 [QGVAR(respawnTimer), {
-    params ["_time"];
+    params ["_time", "_unit"];
     private _currentRespawnTime = playerRespawnTime;
     setPlayerRespawnTime _time;
-    _currentUnit = player;
+    _currentUnit = _unit;
 
     [{
         params ["_currentUnit"];

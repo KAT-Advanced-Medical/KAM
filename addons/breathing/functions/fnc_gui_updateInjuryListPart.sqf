@@ -53,8 +53,7 @@ if (_target getVariable [QGVAR(pulseoximeter), false] && _selectionN in [4,6]) t
     };
 };
 if (_target getVariable [QGVAR(BVMInUse), false]) then {
-    private _amount = _target getVariable [QGVAR(BVM_amount), 0];
-    _entries pushBack [format ["%1 (%2)", LLSTRING(Actions_BVM), _amount], [0.3, 0.8, 0.8, 1]];
+    _entries pushBack [format ["%1", LLSTRING(Actions_BVM)], [0.3, 0.8, 0.8, 1]];
 };
 if (_target getVariable [QGVAR(nasalCannula), false] && _selectionN isEqualTo 0) then {
     _entries pushBack [LLSTRING(NasalCannula_Display), [0.3, 0.8, 0.8, 1]];

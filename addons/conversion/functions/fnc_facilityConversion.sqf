@@ -19,7 +19,7 @@ params ["_medic", "_patient"];
 
 if (GVAR(enableSpectatorRespawn)) then {
     if (lifeState (_patient getVariable [QGVAR(associatedPlayer), objNull]) isEqualTo "DEAD-RESPAWN") then {
-        [QGVAR(respawnTimer), 0] call CBA_fnc_localEvent;
+        [QGVAR(respawnTimer), [0, _patient], _patient] call CBA_fnc_targetEvent;
     };
 };
 

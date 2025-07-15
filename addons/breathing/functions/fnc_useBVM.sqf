@@ -249,7 +249,6 @@ GVAR(BVM_timeOut) = true;
             {
                 GVAR(BVM_timeOut) = false;
                 _totalProvided = _totalProvided + 1;
-                _patient setVariable [QGVAR(BVM_amount), _totalProvided, true];
             }] call CBA_fnc_waitUntilAndExecute;
         };
 
