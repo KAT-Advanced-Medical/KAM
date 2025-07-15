@@ -361,6 +361,7 @@
             <Japanese>気道はひどく水膨れしている</Japanese>
             <Chinese>氣道嚴重膨脹</Chinese>
             <Chinesesimp>气道严重膨胀</Chinesesimp>
+            <Dutch>De luchtwegen hebben een sterke blaarvorming</Dutch>
         </Key>
         <Key ID="STR_KAT_Airway_AirwayStatus_mitigatedObstruction">
             <English>Obstruction is temporarily mitigated</English>
@@ -1307,6 +1308,10 @@
             <Finnish>Okkluusiojäähdytyssykli</Finnish>
             <Dutch>Verstoppings afkoelingsperiode</Dutch>
         </Key>
+        <Key ID="STR_KAT_Airway_SETTING_occlusion_cooldownPeriod_DESC">
+            <English>Period in seconds during which patient cannot get another occlusion after last occlusion was cleared. Set to 0 to disable this feature.</English>
+            <German>Zeitraum in Sekunden, in dem ein Patient keine weitere Okklusion bekommen kann, nachdem die letzte Okklusion beseitigt wurde. Auf 0 setzen, um diese Funktion zu deaktivieren.</German>
+        </Key>
         <Key ID="STR_KAT_Airway_SETTING_occlusion_repeatTimer">
             <English>Occlusion repeat timer</English>
             <Czech>Časovač opakovaného ucpání dýchacích cest</Czech>
@@ -1324,6 +1329,14 @@
             <Norwegian>Repetisjonsintervall for Okklusjon</Norwegian>
             <Finnish>Okkluusiotoistoajastin</Finnish>
             <Dutch>Verstoppings herhaling timer</Dutch>
+        </Key>
+        <Key ID="STR_KAT_Airway_SETTING_occlusion_repeatTimer_DESC">
+            <English>Time interval in seconds at which the system checks for new occlusion occurrences in unconscious patients.</English>
+            <German>Zeitintervall in Sekunden, in dem das System neue Okklusionsereignisse bei bewusstlosen Patienten überprüft.</German>
+        </Key>
+        <Key ID="STR_KAT_Airway_SETTING_puking_sound_DESC">
+            <English>Enable or disable the sound effect when a patient develops airway occlusion (vomiting).</English>
+            <German>Aktiviert oder deaktiviert den Soundeffekt, wenn bei einem Patienten eine Atemwegsobstruktion (Erbrechen) auftritt.</German>
         </Key>
         <Key ID="STR_KAT_Airway_SETTING_puking_sound">
             <English>Activate the puking sound?</English>
@@ -1801,6 +1814,7 @@
             <Italian>KAT - ADV Medicale: Vie Aeree</Italian>
             <German>KAT - ADV Medical: Atemwege</German>
             <Japanese>KAM - 気道 (Airway)</Japanese>
+            <Dutch>KAT - ADV Medical: Luchtwegen</Dutch>
         </Key>
         <Key ID="STR_KAT_Airway_checkAirway">
             <English>Check Airway</English>
@@ -1838,7 +1852,7 @@
             <Turkish>%1 kontrol edilmiş havayolları: %2, %3</Turkish>
             <Norwegian>%1 sjekket luftveiene: %2, %3</Norwegian>
             <Finnish>%1 tarkistettu hengitystiet, %2, %3</Finnish>
-            <Dutch>%1 Heeft de luchtwegen gecheckt: %2, %3</Dutch>
+            <Dutch>%1 heeft de luchtwegen gecheckt: %2, %3</Dutch>
         </Key>
         <Key ID="STR_KAT_Airway_checkAirway_poisonLog">
             <English>%1 checked airways: Heavily Blistered</English>
@@ -1848,6 +1862,7 @@
             <German>%1 überprüfte die Atemwege: Starke Blasenbildung</German>
             <Japanese>%1 が気道を確認: ひどい水膨れ</Japanese>
             <Chinesesimp>%1 条检查气道: 严重起泡</Chinesesimp>
+            <Dutch>%1 heeft de luchtwegen gecheckt: Ernstige blaarvorming</Dutch>
         </Key>
         <Key ID="STR_KAT_Airway_headTurning_begin">
             <English>Begin Head Turning</English>
