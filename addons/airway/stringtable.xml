@@ -1311,6 +1311,7 @@
         <Key ID="STR_KAT_Airway_SETTING_occlusion_cooldownPeriod_DESC">
             <English>Period in seconds during which patient cannot get another occlusion after last occlusion was cleared. Set to 0 to disable this feature.</English>
             <German>Zeitraum in Sekunden, in dem ein Patient keine weitere Okklusion bekommen kann, nachdem die letzte Okklusion beseitigt wurde. Auf 0 setzen, um diese Funktion zu deaktivieren.</German>
+            <Japanese>患者の気道異物が解消された後、再度気道異物が発生しない期間(秒)。 0に設定で無効化。</Japanese>
         </Key>
         <Key ID="STR_KAT_Airway_SETTING_occlusion_repeatTimer">
             <English>Occlusion repeat timer</English>
@@ -1333,10 +1334,12 @@
         <Key ID="STR_KAT_Airway_SETTING_occlusion_repeatTimer_DESC">
             <English>Time interval in seconds at which the system checks for new occlusion occurrences in unconscious patients.</English>
             <German>Zeitintervall in Sekunden, in dem das System neue Okklusionsereignisse bei bewusstlosen Patienten überprüft.</German>
+            <Japanese>意識不明の患者の新たな気道異物の発生をシステムがチェックする間隔(秒)。</Japanese>
         </Key>
         <Key ID="STR_KAT_Airway_SETTING_puking_sound_DESC">
             <English>Enable or disable the sound effect when a patient develops airway occlusion (vomiting).</English>
             <German>Aktiviert oder deaktiviert den Soundeffekt, wenn bei einem Patienten eine Atemwegsobstruktion (Erbrechen) auftritt.</German>
+            <Japanese>患者に気道異物(嘔吐)が発生した場合のサウンド効果を有効化または無効化します。</Japanese>
         </Key>
         <Key ID="STR_KAT_Airway_SETTING_puking_sound">
             <English>Activate the puking sound?</English>
