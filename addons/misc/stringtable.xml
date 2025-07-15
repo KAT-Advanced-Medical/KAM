@@ -1937,26 +1937,32 @@
         <Key ID="STR_KAT_Misc_SETTING_ENABLE_DESC">
             <English>Enables the KAT Misc medical system features (e.g. IV-Stands)</English>
             <German>Aktiviert die KAT Misc Medizinsystem-Funktionen (z.B. IV-Ständer)</German>
+            <Japanese>KAT その他の医療システム機能を有効化します (例: IVスタンド)</Japanese>
         </Key>
         <Key ID="STR_KAT_Misc_SETTING_treatmentTimeDetachTourniquet_DESC">
             <English>Time required to detach a tourniquet from a patient</English>
             <German>Benötigte Zeit zum Entfernen eines Tourniquets vom Patienten</German>
+            <Japanese>患者から止血帯を外すのにかかる時間</Japanese>
         </Key>
         <Key ID="STR_KAT_Misc_SETTING_tourniquetEffects_Enable_DESC">
             <English>Enables tourniquet effects on patient health and stamina</English>
             <German>Aktiviert Tourniquet-Effekte auf Patientengesundheit und Ausdauer</German>
+            <Japanese>患者の体力とスタミナに対する止血帯の影響を有効化します</Japanese>
         </Key>
         <Key ID="STR_KAT_Misc_SETTING_tourniquetEffects_PositiveMultiplier_DESC">
             <English>Multiplier for positive tourniquet effects</English>
             <German>Multiplikator für positive Tourniquet-Effekte</German>
+            <Japanese>止血帯のプラス効果の乗数</Japanese>
         </Key>
         <Key ID="STR_KAT_Misc_SETTING_tourniquetEffects_NegativeMultiplier_DESC">
             <English>Multiplier for negative tourniquet effects</English>
             <German>Multiplikator für negative Tourniquet-Effekte</German>
+            <Japanese>止血帯のマイナス効果の乗数</Japanese>
         </Key>
         <Key ID="STR_KAT_Misc_SETTING_FAK_RemoveWhenEmpty_DESC">
             <English>Automatically removes first aid kits from inventory when they become empty</English>
             <German>Entfernt automatisch Erste-Hilfe-Kästen aus dem Inventar, wenn sie leer werden</German>
+            <Japanese>応急処置キット(FAK)が空になった場合、自動的にインベントリから削除します</Japanese>
         </Key>
     </Package>
 </Project>
