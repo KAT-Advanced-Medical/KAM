@@ -10,6 +10,7 @@
             <Japanese>時計のタイマーを15秒増やす</Japanese>
             <Chinese>計時器增加 15 秒</Chinese>
             <Chinesesimp>添加15秒观看计时器</Chinesesimp>
+            <Dutch>Voeg 15 seconden toe aan de timer</Dutch>
         </Key>
         <Key ID="STR_KAT_Watch_CavminDescription">
             <English>Watch with Vital Monitoring Capabilities. Garry Owen!</English>
@@ -20,6 +21,7 @@
             <Japanese>カーミン キャバルリー・リミテッド。 バイタル監視機能を持った腕時計。 ギャリー・オーウェン!(Garry Owen!)</Japanese>
             <Chinese>具有生命體徵監測功能的腕錶。Garry Owen!</Chinese>
             <Chinesesimp>使用重要监控功能观看。加里·欧文！</Chinesesimp>
+            <Dutch>Horloge met vitale waarden monitoringscapaciteit. Garry Owen!</Dutch>
         </Key>
         <Key ID="STR_KAT_Watch_CavminDisplayName">
             <English>Katmin Cavalry Limited</English>
@@ -30,6 +32,7 @@
             <Japanese>Katmin Cavalry Limited</Japanese>
             <Chinese>Katmin Cavalry Limited</Chinese>
             <Chinesesimp>Katmin 骑兵限量</Chinesesimp>
+            <Dutch>Katmin Cavalry Limited</Dutch>
         </Key>
         <Key ID="STR_KAT_Watch_KatminDescription">
             <English>Watch with Vital Monitoring Capabilities</English>
@@ -53,7 +56,7 @@
             <Japanese>Katmin K500</Japanese>
             <Chinese>Katmin K500</Chinese>
             <Chinesesimp>Katmin K500</Chinesesimp>
-            <Dutch>Katmin k500</Dutch>
+            <Dutch>Katmin K500</Dutch>
         </Key>
         <Key ID="STR_KAT_Watch_RangerDescription">
             <English>Watch with Vital Monitoring Capabilities. Sua Sponte.</English>
@@ -64,6 +67,7 @@
             <Japanese>カーミン K12モデルR。 バイタル監視機能を持った腕時計。 自らの意思で。(Sua Sponte)</Japanese>
             <Chinese>具有生命監測功能的腕錶。Sua Sponte。</Chinese>
             <Chinesesimp>使用重要监控功能观看。Sua Sponte。</Chinesesimp>
+            <Dutch>Horloge met vitale waarden monitoringscapaciteit. Sua Sponte.</Dutch>
         </Key>
         <Key ID="STR_KAT_Watch_RangerDisplayName">
             <English>Katmin K12 Model R</English>
@@ -74,6 +78,7 @@
             <Japanese>Katmin K12 Model R</Japanese>
             <Chinese>Katmin K12 R 型</Chinese>
             <Chinesesimp>Katmin K12 R型</Chinesesimp>
+            <Dutch>Katmin K12 Model R</Dutch>
         </Key>
         <Key ID="STR_KAT_Watch_SETTING_AltitudeForm">
             <English>Select altitude form</English>
@@ -225,6 +230,7 @@
             <Italian>Inaccuratezza della misurazione dei parametri vitali dell'orologio</Italian>
             <German>Ungenauigkeit der Uhren-Vitalwerte</German>
             <Japanese>腕時計バイタルの不正確性</Japanese>
+            <Dutch>Inaccuraatheid van vitale waarden gemeten via horloge</Dutch>
         </Key>
         <Key ID="STR_KAT_Watch_SETTING__WatchInaccuracy_Desc">
             <English>Enables watch inaccuracy when reading patient vitals</English>
@@ -232,6 +238,7 @@
             <Italian>Abilita l'inaccuratezza dell'orologio quando vengono letti i parametri vitali di un paziente</Italian>
             <German>Aktiviert Ungenauigkeit der Vitalwerte der Uhren</German>
             <Japanese>腕時計が患者のバイタルを不正確に読み取るようになります。</Japanese>
+            <Dutch>Staat inaccuraatheid bij metingen van vitale waarden door horloges toe</Dutch>
         </Key>
         <Key ID="STR_KAT_Watch_STSDescription">
             <English>Watch with Vital Monitoring Capabilities. So Others May Live.</English>
@@ -242,6 +249,7 @@
             <Japanese>カーミン ジャンプ・スタンダード。 バイタル監視機能を持った腕時計。 他人の命の為に。(So Others May Live)</Japanese>
             <Chinese>具有生命體徵監測功能的腕錶。以便其他人能夠活下去。</Chinese>
             <Chinesesimp>使用重要监控功能观看。所以其他人可以活下去。</Chinesesimp>
+            <Dutch>Horloge met vitale waarden monitoringscapaciteit. Zodat anderen kunnen leven.</Dutch>
         </Key>
         <Key ID="STR_KAT_Watch_STSDisplayName">
             <English>Katmin Jump Standard</English>
@@ -251,6 +259,7 @@
             <German>Katmin Jump Standard</German>
             <Japanese>Katmin Jump Standard</Japanese>
             <Chinesesimp>Katmin 跳跃标准</Chinesesimp>
+            <Dutch>Katmin Jump Standard</Dutch>
         </Key>
         <Key ID="STR_KAT_Watch_ShowKATWatch_Setting">
             <English>Show KATMIN Watch</English>
@@ -261,6 +270,7 @@
             <Japanese>Katmin腕時計を表示</Japanese>
             <Chinese>顯示 KATMIN 腕錶</Chinese>
             <Chinesesimp>显示KATMIN手表</Chinesesimp>
+            <Dutch>Toon KATMIN horloge</Dutch>
         </Key>
         <Key ID="STR_KAT_Watch_StartStopTimer_Setting">
             <English>Start and Stop Watch Timer</English>
@@ -271,6 +281,7 @@
             <Japanese>時計のタイマーを開始および停止</Japanese>
             <Chinese>啟動、停止計時器</Chinese>
             <Chinesesimp>启动和停止手表定时器</Chinesesimp>
+            <Dutch>Timer starten/stoppen</Dutch>
         </Key>
         <Key ID="STR_KAT_Watch_SubtractTimer_Setting">
             <English>Subtract 15 Seconds from Watch Timer</English>
@@ -281,6 +292,7 @@
             <Japanese>時計のタイマーを15秒減らす</Japanese>
             <Chinese>計時器減去 15 秒</Chinese>
             <Chinesesimp>从手表计时器中减去15秒</Chinesesimp>
+            <Dutch>15 seconden van timer afhalen</Dutch>
         </Key>
         <Key ID="STR_KAT_Watch_TimeModifier_Settings">
             <English>Time Modifier (K500/Model R)</English>
@@ -290,6 +302,7 @@
             <German>Zeitmodifikator (K500/Model R)</German>
             <Japanese>盤面/指針の表示切り替え (K500/Model R)</Japanese>
             <Chinese>時間調整器 (K500/Model R)</Chinese>
+            <Dutch>Tijdmodificator (K500/Model R)</Dutch>
         </Key>
         <Key ID="STR_KAT_Watch_cba_name">
             <English>KAT - ADV Medical: Watch</English>
@@ -297,6 +310,7 @@
             <Italian>KAT - ADV Medica: Orologi</Italian>
             <German>KAT - ADV Medical: Uhren</German>
             <Japanese>KAM - 腕時計 (Watch)</Japanese>
+            <Dutch>KAT - ADV Medical: Horloges</Dutch>
         </Key>
         <Key ID="STR_KAT_Watch_descentFT">
             <English>%1ft/s</English>
@@ -307,6 +321,7 @@
             <Japanese>%1ft/s</Japanese>
             <Chinese>%1 ft/s</Chinese>
             <Chinesesimp>%1 ft/s</Chinesesimp>
+            <Dutch>%1ft/s</Dutch>
         </Key>
         <Key ID="STR_KAT_Watch_descentM">
             <English>%1m/s</English>
@@ -317,6 +332,7 @@
             <Japanese>%1m/s</Japanese>
             <Chinese>%1 m/s</Chinese>
             <Chinesesimp>%1 m/s</Chinesesimp>
+            <Dutch>%1m/s</Dutch>
         </Key>
     </Package>
 </Project>
