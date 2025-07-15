@@ -24,6 +24,7 @@ if (_activeChestSeal select _side) then {
     private _hemopneumothorax = _patient getVariable [QGVAR(hemopneumothorax), [false, false]];
     _hemopneumothorax set [_side, false];
     _patient setVariable [QGVAR(hemopneumothorax), _hemopneumothorax, true];
+    [_patient, 0, _side] call FUNC(handlePneumothoraxTreatment);
 };
 
 private _ht = _patient getVariable [QEGVAR(circulation,ht), []];

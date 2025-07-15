@@ -3442,5 +3442,11 @@
         <Key ID="STR_KAT_Breathing_Actions_BVM">
             <English>BVM</English>
         </Key>
+        <Key ID="STR_KAT_Breathing_ChestSealLoopTime">
+            <English>Chest Seal Reduction Time</English>
+        </Key>
+        <Key ID="STR_KAT_Breathing_ChestSealLoopTime_desc">
+            <English>Time it takes per loop of the chest seal treatment</English>
+        </Key>
     </Package>
 </Project>

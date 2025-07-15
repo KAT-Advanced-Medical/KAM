@@ -65,6 +65,7 @@ if (_activeChestSeal select _side) then {
     private _tensionPneumothorax = _patient getVariable [QGVAR(tensionPneumothorax), [false, false]];
     _tensionPneumothorax set [_side, false];
     _patient setVariable [QGVAR(tensionPneumothorax), _tensionPneumothorax, true];
+    [_patient, 0, _side] call FUNC(handlePneumothoraxTreatment);
     private _ht = _patient getVariable [QEGVAR(circulation,ht), []];
     _ht deleteAt (_ht find "tension");
     _ht deleteAt (_ht find "hemo");

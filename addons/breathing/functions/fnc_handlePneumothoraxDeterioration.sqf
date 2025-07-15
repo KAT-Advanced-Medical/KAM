@@ -35,8 +35,16 @@ params ["_unit", "_chanceIncrease", "_side"];
             private _hemoState = _unit getVariable [QGVAR(hemopneumothorax), [false, false]];
             private _occlusion = ((_unit getVariable [QEGVAR(airway,occlusion), [0, 0, 0]]) findIf { _x > 4 }) != -1;
             private _obstruction = ((_unit getVariable [QEGVAR(airway,obstruction), [0, 0, 0]]) findIf { _x != 0 }) != -1;
+            if (GVAR(baroPressureEnable)) then {
+                if (GVAR(useACEpressure)) then {
+                private _hPa = _altitude call ACEFUNC(weather,calculateBarometricPressure);
+                _baroPressure = _hPa * 0.750062;
+            } else {
+                _baroPressure = 760 * exp((-(_altitude)) / 8400);
+                };
+            };
+
             private _breathing = !(_obstruction) && !(_occlusion) && ((GET_BREATHING_RATE(_unit) > 5) || (_unit getVariable [QEGVAR(breathing,BVMInUse), false]));
-            (_unit getVariable [QEGVAR(breathing,BVMInUse), false]);
                 if (_pneumothoraxState select _side > 0) then {
                     // If patient is dead, treated, or already deteriorated to advanced pneumothorax, kill the PFH
                     if ((_hemoState select _side) ||
@@ -78,6 +86,19 @@ params ["_unit", "_chanceIncrease", "_side"];
                         if (_ptxTarget > 16) exitWith {
                             [_idPFH] call CBA_fnc_removePerFrameHandler;
                         };
+                        private _baroMult = 1;
+                        if (GVAR(baroPressureEnable)) then {
+                            if (GVAR(useACEpressure)) then {
+                            private _hPa = _altitude call ACEFUNC(weather,calculateBarometricPressure);
+                            private _baroPressure = _hPa * 0.750062;
+                        } else {
+                            private _baroPressure = 760 * exp((-(_altitude)) / 8400);
+                            };
+                            private _defaultBaroPressure = 760 * exp((-(0)) / 8400);
+                            _baroMult = _defaultBaroPressure / _baroPressure;
+                        };
+                        private _delay = (GVAR(deterioratingPneumothorax_interval) * _baroMult) * random [0.8, 1, 1.3];
+                        [_idPFH, _delay] call CBA_fnc_setPerFrameHandlerDelay;
                         private _surface = (_unit getVariable [QGVAR(lungSurfaceArea), 400]);
                         private _pneumothoraxSurfaceArea = _unit getVariable [QGVAR(pneumothoraxSurfaceArea), [0, 0]];
                         private _pneumothoraxAmount = _pneumothoraxSurfaceArea select _side;

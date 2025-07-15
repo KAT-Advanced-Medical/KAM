@@ -22,6 +22,7 @@ PREP(gui_updateInjuryListWounds);
 PREP(handleBreathing);
 PREP(handleBreathingConditions);
 PREP(handlePneumothoraxDeterioration);
+PREP(handlePneumothoraxTreatment);
 PREP(handleRespawn);
 PREP(hasBVM);
 PREP(hasOxygenTank);

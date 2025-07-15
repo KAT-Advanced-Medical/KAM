@@ -38,11 +38,6 @@ private _pneumothorax = _patient getVariable [QGVAR(pneumothorax), [0, 0]];
 private _pneumothoraxAmount = _patient getVariable [QGVAR(pneumothoraxSurfaceArea), [0, 0]] select _side;
 
 _deepPenetratingInjury set [_side, false];
-_pneumothorax set [_side, 0];
+[_unit, 0, _side] call FUNC(handlePneumothoraxTreatment);
 
 _patient setVariable [QGVAR(deepPenetratingInjury), _deepPenetratingInjury, true];
-_patient setVariable [QGVAR(pneumothorax), _pneumothorax, true];
-private _surface = (_patient getVariable [QEGVAR(breathing,lungSurfaceArea), 400]);
-private _surfaceArea = _surface + _pneumothoraxAmount;
-_patient setVariable [QEGVAR(breathing,lungSurfaceArea), _surfaceArea];
-

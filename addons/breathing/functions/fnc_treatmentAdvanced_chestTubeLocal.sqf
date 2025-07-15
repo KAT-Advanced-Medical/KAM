@@ -35,6 +35,7 @@ if (_liveChestTube == 0.5)  exitWith {
     private _tensionPneumothorax = _patient getVariable [QGVAR(tensionPneumothorax), [false, false]];
     _tensionPneumothorax set [_side, false];
     _patient setVariable [QGVAR(tensionPneumothorax), _tensionPneumothorax, true];
+    [_patient, 0, _side] call FUNC(handlePneumothoraxTreatment);
     };
     [_patient, true] call ACEFUNC(dragging,setCarryable);
     [_patient, true] call ACEFUNC(dragging,setDraggable);

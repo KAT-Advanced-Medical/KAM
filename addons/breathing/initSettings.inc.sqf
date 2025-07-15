@@ -218,6 +218,15 @@
     true
 ] call CBA_fnc_addSetting;
 
+[
+    QGVAR(chestSealTreatmentLoopTime),
+    "SLIDER",
+    [LLSTRING(ChestSealLoopTime), LLSTRING(ChestSealLoopTime_desc)],
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_Items)],
+    [1, 120, 30, 1],
+    true
+] call CBA_fnc_addSetting;
+
 // Sets SpO2 level threshold for audible warning
 [
     QGVAR(PulseOximeter_SpO2Warning),
