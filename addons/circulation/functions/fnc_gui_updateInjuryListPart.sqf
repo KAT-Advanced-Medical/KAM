@@ -27,7 +27,7 @@ if (_target getVariable [QGVAR(activeCPR), false]) then {
     private _time = format ["%1:%2", [_minutes, 2] call CBA_fnc_formatNumber, [_seconds, 2] call CBA_fnc_formatNumber];
     _entries pushBack [format ["%1 (%2)", ACELLSTRING(medical_treatment,Actions_CPR), _time], [0.3, 0.8, 0.8, 1]];
 };
-if (_target getVariable [QGVAR(AED_X_VitalsMonitor_Connected), false] || _target getVariable [QGVAR(DefibrillatorPads_Connected), false]) then {
+if ((_target getVariable [QGVAR(AED_X_VitalsMonitor_Connected), false] || _target getVariable [QGVAR(DefibrillatorPads_Connected), false]) && !(GVAR(hardcoreAED))) then {
     private _entry = _target getVariable [QGVAR(AED_X_VitalsStatus), ""];
     _entries pushBack [_entry, [1, 1, 1, 1]];
 };

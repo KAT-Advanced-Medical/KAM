@@ -3936,5 +3936,11 @@
         <Key ID="STR_KAT_Circulation_CPR_Active">
             <English>%1 CPR (%2) </English>
         </Key>
+        <Key ID="STR_KAT_Circulation_SETTING_hardcoreAED">
+            <English>Enable Hardcore AED-X</English>
+        </Key>
+        <Key ID="STR_KAT_Circulation_SETTING_hardcoreAED_desc">
+            <English>Hides the vitals monitor from the medical menu, only allowing the manual monitor</English>
+        </Key>
     </Package>
 </Project>
