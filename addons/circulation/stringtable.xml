@@ -3798,22 +3798,22 @@
         <Key ID="STR_KAT_Circulation_SETTING_AEDX_VitalsMonitor_AttachTime_DESC">
             <English>Time required to attach AED-X vitals monitor to patient</English>
             <German>Benötigte Zeit zum Anbringen des AED-X Vitalmonitors am Patienten</German>
-            <Japanese>AED-Xバイタルモニターを患者へ取り付けるのに掛かる時間</Japanese>
+            <Japanese>AED-Xバイタルモニターを患者へ取り付けるのにかかる時間</Japanese>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_AEDX_VitalsMonitor_DetachTime_DESC">
             <English>Time required to detach AED-X vitals monitor from patient</English>
             <German>Benötigte Zeit zum Entfernen des AED-X Vitalmonitors vom Patienten</German>
-            <Japanese>AED-Xバイタルモニターを患者から取り外すのに掛かる時間</Japanese>
+            <Japanese>AED-Xバイタルモニターを患者から取り外すのにかかる時間</Japanese>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_DefibrillatorPads_AttachTime_DESC">
             <English>Time required to attach defibrillator pads to patient</English>
             <German>Benötigte Zeit zum Anbringen der Defibrillator-Pads am Patienten</German>
-            <Japanese>除細動パッドを患者へ取り付けるのに掛かる時間</Japanese>
+            <Japanese>除細動パッドを患者へ取り付けるのにかかる時間</Japanese>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_DefibrillatorPads_DetachTime_DESC">
             <English>Time required to detach defibrillator pads from patient</English>
             <German>Benötigte Zeit zum Entfernen der Defibrillator-Pads vom Patienten</German>
-            <Japanese>除細動パッドを患者から取り外すのに掛かる時間</Japanese>
+            <Japanese>除細動パッドを患者から取り外すのにかかる時間</Japanese>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_Defibrillator_DistanceLimit_DESC">
             <English>Maximum distance between defibrillator and patient for operation</English>
@@ -3898,12 +3898,12 @@
         <Key ID="STR_KAT_Circulation_treatmentTime_BPCuff_DESC">
             <English>Time required to measure blood pressure with blood pressure cuff</English>
             <German>Benötigte Zeit zur Blutdruckmessung mit der Blutdruckmanschette</German>
-            <Japanese>血圧カフで血圧を測定するのに掛かる時間</Japanese>
+            <Japanese>血圧カフで血圧を測定するのにかかる時間</Japanese>
         </Key>
         <Key ID="STR_KAT_Circulation_treatmentTime_StethHR_DESC">
             <English>Time required to measure heart rate with stethoscope</English>
             <German>Benötigte Zeit zur Pulsmessung mit dem Stethoskop</German>
-            <Japanese>聴診器で心拍数を測定するのに掛かる時間</Japanese>
+            <Japanese>聴診器で心拍数を測定するのにかかる時間</Japanese>
         </Key>
     </Package>
 </Project>

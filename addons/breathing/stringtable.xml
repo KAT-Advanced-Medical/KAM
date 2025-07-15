@@ -1293,7 +1293,7 @@
             <Russian>Отрицательный множитель SpO2</Russian>
             <German>SpO2 negativer Multiplikator</German>
             <Korean>SpO2의 감소 배율</Korean>
-            <Japanese>負のSpO2乗数</Japanese>
+            <Japanese>SpO2の負の乗数</Japanese>
             <Chinese>SpO2負向乘數</Chinese>
             <Chinesesimp>SpO2值负乘数</Chinesesimp>
             <Finnish>SpO2 negatiivinen kerroin</Finnish>
@@ -1310,7 +1310,7 @@
             <Russian>Положительный множитель SpO2</Russian>
             <German>SpO2 positiver Multiplikator</German>
             <Korean>SpO2의 회복 배율</Korean>
-            <Japanese>正のSpO2乗数</Japanese>
+            <Japanese>SpO2の正の乗数</Japanese>
             <Chinese>SpO2正向乘數</Chinese>
             <Chinesesimp>SpO2值正乘数</Chinesesimp>
             <Finnish>SpO2-positiivinen kerroin</Finnish>
@@ -3304,12 +3304,12 @@
         <Key ID="STR_KAT_Breathing_SETTING_MultiplyPositive_DESC">
             <English>Multiplier for positive SpO2 changes during breathing</English>
             <German>Multiplikator für positive SpO2-Änderungen beim Atmen</German>
-            <Japanese>適切な呼吸によって変化するSpO2の正の乗数</Japanese>
+            <Japanese>適切な呼吸によって変化するSpO2のプラス効果の乗数</Japanese>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_MultiplyNegative_DESC">
             <English>Multiplier for negative SpO2 changes when not breathing properly</English>
             <German>Multiplikator für negative SpO2-Änderungen bei unzureichender Atmung</German>
-            <Japanese>呼吸が適切ではない場合に変化するSpO2の負の乗数</Japanese>
+            <Japanese>呼吸が適切ではない場合に変化するSpO2のマイナス効果の乗数</Japanese>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_SpO2_Perfusion_DESC">
             <English>Controls whether SpO2 falls during cardiac arrest</English>
