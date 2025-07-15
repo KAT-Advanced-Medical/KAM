@@ -40,7 +40,7 @@
 [
     QGVAR(maskStaminaLoss),
     "CHECKBOX",
-    [LLSTRING(SETTING_gasMaskStaminaLoss)],
+    [LLSTRING(SETTING_gasMaskStaminaLoss),LLSTRING(SETTING_gasMaskStaminaLoss_DESC)],
     CBA_SETTINGS_CAT,
     [false],
     true

@@ -43,7 +43,7 @@
 [
     QGVAR(occlusion_repeatTimer),
     "SLIDER",
-    LLSTRING(SETTING_occlusion_repeatTimer),
+    [LLSTRING(SETTING_occlusion_repeatTimer), LLSTRING(SETTING_occlusion_repeatTimer_DESC)],
     [CBA_SETTINGS_CAT, ELSTRING(GUI,SubCategory_Basic)],
     [1, 1200, 60, 0],
     true
@@ -53,7 +53,7 @@
 [
     QGVAR(occlusion_cooldownPeriod),
     "SLIDER",
-    LLSTRING(SETTING_occlusion_cooldownPeriod),
+    [LLSTRING(SETTING_occlusion_cooldownPeriod), LLSTRING(SETTING_occlusion_cooldownPeriod_DESC)],
     [CBA_SETTINGS_CAT, ELSTRING(GUI,SubCategory_Basic)],
     [0, 60, 6, 1],
     true
@@ -94,7 +94,7 @@
 [
     QGVAR(checkbox_puking_sound),
     "CHECKBOX",
-    LLSTRING(SETTING_puking_sound),
+    [LLSTRING(SETTING_puking_sound), LLSTRING(SETTING_puking_sound_DESC)],
     [CBA_SETTINGS_CAT, ELSTRING(GUI,SubCategory_Basic)],
     [true],
     true
