@@ -44,7 +44,7 @@ GVAR(CPRDevice_Iterate) = [0xF1, [false, false, false], {
     GVAR(CPRTarget) setVariable [QGVAR(deviceCode), _deviceCode, true];
     true
 }, "keydown", "", false, 0] call CBA_fnc_addKeyHandler;
-
+_patient setVariable [QGVAR(activeCPR), true, true];
 private _CPRStartTime = CBA_missionTime + 2.5;
 
 ACEGVAR(medical_gui,pendingReopen) = false; // Prevent medical menu from reopening
@@ -121,11 +121,18 @@ if (_notInVehicle) then {
         private _medicCondition = (!(alive _medic) || IS_UNCONSCIOUS(_medic) || _medic isEqualTo objNull);
         private _vehicleCondition = (objectParent _medic isNotEqualTo objectParent _patient);
         private _distanceCondition = (_patient distance2D _medic > ACEGVAR(medical_gui,maxDistance));
+        private _CPRTime = CBA_missionTime - _CPRStartTime;
+        private _minutes = floor (_CPRTime / 60);
+        private _seconds = floor (_CPRTime % 60);
+        private _time = format ["%1:%2", [_minutes, 2] call CBA_fnc_formatNumber, [_seconds, 2] call CBA_fnc_formatNumber];
+        _patient setVariable [QGVAR(CPR_time), _CPRStartTime, true];
 
         if (_patientCondition || _medicCondition || (_patient getVariable [QACEGVAR(medical,CPR_provider), objNull]) isEqualTo objNull || !(_medic getVariable [QGVAR(isPerformingCPR), false]) || dialog || {(!_notInVehicle && _vehicleCondition) || {(_notInVehicle && _distanceCondition)}}) exitWith { // Stop CPR
             [_idPFH] call CBA_fnc_removePerFrameHandler;
 
             _medic setVariable [QGVAR(isPerformingCPR), false, true];
+            _patient setVariable [QGVAR(activeCPR), false, true];
+            _patient setVariable [QGVAR(CPR_time), 0, true];
 
             if (_patient getVariable [QACEGVAR(medical,CPR_provider), objNull] isNotEqualTo objNull) then {
                 _patient setVariable [QACEGVAR(medical,CPR_provider), objNull, true];
@@ -139,13 +146,6 @@ if (_notInVehicle) then {
             if (_notInVehicle) then {
                 [_medic, "AinvPknlMstpSnonWnonDnon_medicEnd", 2] call ACEFUNC(common,doAnimation);
             };
-
-            // Format time to minutes:seconds
-            private _CPRTime = CBA_missionTime - _CPRStartTime;
-            private _minutes = floor (_CPRTime / 60);
-            private _seconds = floor (_CPRTime % 60);
-            private _time = format ["%1:%2", [_minutes, 2] call CBA_fnc_formatNumber, [_seconds, 2] call CBA_fnc_formatNumber];
-
             [_patient, "activity", LSTRING(Activity_CPR), [[_medic, false, true] call ACEFUNC(common,getName), _time]] call ACEFUNC(medical_treatment,addToLog);
 
             if (CPRStartTime <= CBA_missionTime - 18) then {

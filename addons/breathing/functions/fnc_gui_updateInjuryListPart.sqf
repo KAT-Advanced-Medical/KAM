@@ -44,12 +44,18 @@ if (GVAR(showCyanosis) && _selectionN in [0,2,3]) then {
     };
 };
 
-if (_target getVariable [QGVAR(pulseoximeter), false] && _selectionN in [2,3]) then {
-    if((_target getVariable [QGVAR(PulseOximeter_Attached), [0,0]] select (_selectionN - 2)) > 0) then {
+if (_target getVariable [QGVAR(pulseoximeter), false] && _selectionN in [4,6]) then {
+    if ((_target getVariable [QGVAR(PulseOximeter_Attached), [0,0]] select 0) > 0) then {
+        _entries pushBack [LLSTRING(Pulseoximeter), [0.3, 0.8, 0.8, 1]];
+    };
+    if ((_target getVariable [QGVAR(PulseOximeter_Attached), [0,0]] select 1) > 0) then {
         _entries pushBack [LLSTRING(Pulseoximeter), [0.3, 0.8, 0.8, 1]];
     };
 };
-
+if (_target getVariable [QGVAR(BVMInUse), false]) then {
+    private _amount = _target getVariable [QGVAR(BVM_amount), 0];
+    _entries pushBack [format ["%1 (%2)", LLSTRING(Actions_BVM), _amount], [0.3, 0.8, 0.8, 1]];
+};
 if (_target getVariable [QGVAR(nasalCannula), false] && _selectionN isEqualTo 0) then {
     _entries pushBack [LLSTRING(NasalCannula_Display), [0.3, 0.8, 0.8, 1]];
 };

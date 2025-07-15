@@ -19,8 +19,18 @@
  */
 
 params ["_ctrl", "_target", "_selectionN", "_entries"];
-
-
+if (_target getVariable [QGVAR(activeCPR), false]) then {
+    private _CPRStartTime = _target getVariable [QGVAR(CPR_time), 0];
+    private _CPRTime = CBA_missionTime - _CPRStartTime;
+    private _minutes = floor (_CPRTime / 60);
+    private _seconds = floor (_CPRTime % 60);
+    private _time = format ["%1:%2", [_minutes, 2] call CBA_fnc_formatNumber, [_seconds, 2] call CBA_fnc_formatNumber];
+    _entries pushBack [format ["%1 (%2)", ACELLSTRING(medical_treatment,Actions_CPR), _time], [0.3, 0.8, 0.8, 1]];
+};
+if ((_target getVariable [QGVAR(AED_X_VitalsMonitor_Connected), false] || _target getVariable [QGVAR(DefibrillatorPads_Connected), false]) && !(GVAR(hardcoreAED))) then {
+    private _entry = _target getVariable [QGVAR(AED_X_VitalsStatus), ""];
+    _entries pushBack [_entry, [1, 1, 1, 1]];
+};
 if ((_target getVariable [QGVAR(attachedLucasState), false] == true) && (_target getVariable [QGVAR(attachedLucas), false]) && (_selectionN isEqualTo 2)) then {
     _entries pushBack [LLSTRING(LucasActive), [0.3, 0.8, 0.8, 1]];
 };

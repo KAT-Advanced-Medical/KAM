@@ -165,18 +165,6 @@ class ACE_Medical_Treatment_Actions {
     class Diagnose: BasicBandage {
         allowedSelections[] = {"Head", "Chest"};
     };
-    class CheckLimb: CheckPulse {
-        displayName = CSTRING(Check_Limb);
-        displayNameProgress = CSTRING(Check_Limb_Progress);
-        category = "examine";
-        condition = "true";
-        allowedSelections[] = {"All"};
-        allowSelfTreatment = 1;
-        medicRequired = 0;
-        treatmentTime = 5;
-        items[] = {};
-        callbackSuccess = QFUNC(checkLimb);
-    };
     class CheckJoints: CheckPulse {
         displayName = CSTRING(Check_Joints);
         displayNameProgress = CSTRING(Check_Joints_Progress);

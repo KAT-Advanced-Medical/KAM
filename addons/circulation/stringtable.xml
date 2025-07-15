@@ -3471,18 +3471,7 @@
             <Dutch>AED-X: HR %1 BD: %2/%3 SpO2: %4</Dutch>
         </Key>
         <Key ID="STR_KAT_Circulation_VitalsMonitor_StatusLog_HasEtco2Monitor">
-            <English>AED-X: HR: %1 BP: %2/%3 SpO2: %4  ETCo2: %5 Breaths/min: %6</English>
-            <Czech>AED-X: SF: %1 TK: %2/%3 SpO2: %4  ETCo2: %5 Dechů/min: %6</Czech>
-            <French>AED-X: HR: %1 BP: %2/%3 SpO2: %4  ETCo2: %5 Respirations/min: %6</French>
-            <Spanish>DEA-X: RC: %1 PS: %2/%3 SpO2: %4  ETCo2: %5 Respiraciones/min: %6</Spanish>
-            <Italian>DAE-X: FC: %1 PS: %2/%3 SpO2: %4 ETCo2: %5 Respiri/min: %6</Italian>
-            <Portuguese>DEA-X: FC: %1 PA: %2/%3 SpO2: %4 ETCo2: %5 Respirações/min: %6</Portuguese>
-            <Russian>AED-X: ЧСС: %1 АД: %2/%3 SpO2: %4  ETCo2: %5 Вдохи/мин: %6</Russian>
-            <German>AED-X: HR: %1 BP: %2/%3 SpO2: %4  ETCo2: %5 Br/min: %6</German>
-            <Japanese>AED-X: 心拍: %1 血圧: %2/%3 SpO2: %4 ETCo2: %5 呼吸数/分: %6</Japanese>
-            <Chinese>AED-X：心率：%1 血壓：%2/%3 SpO2：%4 ETCo2：%5 呼吸/分：%6</Chinese>
-            <Chinesesimp>AED-X: 心率(HR): %1 血压(BP):%2/%3血氧饱和度(SpO2):%4呼气末二氧化碳浓度(ETCo2):%5呼吸/分钟：%6</Chinesesimp>
-            <Dutch>AED-X: HR %1 BD: %2/%3 SpO2: %4 ETCo2: %5 Ademhalingen/min: %6</Dutch>
+            <English>AED-X: HR: %1 BP: %2/%3 SpO2: %4 ETCo2: %5 RR: %6</English>
         </Key>
         <Key ID="STR_KAT_Circulation_VitalsMonitor_VMActive_StatusLog">
             <English>AED-X: PR: %1 BP: %2/%3 SpO2: %4</English>
@@ -3501,18 +3490,7 @@
             <Dutch>AED-X: PR %1 BD: %2/%3 SpO2: %4</Dutch>
         </Key>
         <Key ID="STR_KAT_Circulation_VitalsMonitor_VMActive_StatusLog_HasEtco2Monitor">
-            <English>AED-X: PR: %1 BP: %2/%3 SpO2: %4 ETCo2: %5 Breaths/min: %6</English>
-            <Czech>AED-X: PF: %1 TK: %2/%3 SpO2: %4 ETCo2: %5 Dechů/min: %6</Czech>
-            <French>AED-X: PR: %1 BP: %2/%3 SpO2: %4 ETCo2: %5 Respirations/min: %6</French>
-            <Spanish>DEA-X: RC: %1 PS: %2/%3 SpO2: %4 ETCo2: %5 Respiraciones/min: %6</Spanish>
-            <Italian>DAE-X: FC: %1 PS: %2/%3 SpO2: %4 ETCo2: %5 Respiri/min: %6</Italian>
-            <Portuguese>DEA-X: FP: %1 PA: %2/%3 SpO2: %4 ETCo2: %5 Respirações/min: %6</Portuguese>
-            <Russian>AED-X: ЧСС: %1 АД: %2/%3 SpO2: %4 ETCo2: %5 Вдохи/мин: %6</Russian>
-            <German>AED-X: PR: %1 BP: %2/%3 SpO2: %4 ETCo2: %5 Br/min: %6</German>
-            <Japanese>AED-X: 脈拍: %1 血圧: %2/%3 SpO2: %4 ETCo2: %5 呼吸数/分: %6</Japanese>
-            <Chinese>AED-X：脈搏：%1 血壓：%2/%3 SpO2：%4 ETCo2：%5 呼吸/分：%6</Chinese>
-            <Chinesesimp>AED-X: 脉搏(PR): %1 血压(BP):%2/%3血氧饱和度(SpO2):%4呼气末二氧化碳浓度(ETCo2):%5呼吸/分钟：%6</Chinesesimp>
-            <Dutch>AED-X: PR %1 BD: %2/%3 SpO2: %4 ETCo2: %5 Ademhalingen/min: %6</Dutch>
+            <English>AED-X: PR: %1 BP: %2/%3 SpO2: %4 ETCo2: %5 RR: %6</English>
         </Key>
         <Key ID="STR_KAT_Circulation_VitalsMonitor_VMInactive_StatusLog">
             <English>AED-X: HR: %1 BP: --/-- SpO2: ---</English>
@@ -3532,18 +3510,7 @@
             <Dutch>AED-X: HR %1 BD: --/-- SpO2: ---</Dutch>
         </Key>
         <Key ID="STR_KAT_Circulation_VitalsMonitor_VMInactive_StatusLog_HasEtco2Monitor">
-            <English>AED-X: HR: %1 BP: --/-- SpO2: --- ETCo2: %2 Breaths/min: %3</English>
-            <Czech>AED-X: SF: %1 TK: --/-- SpO2: --- ETCo2: %2 Dechů/min: %3</Czech>
-            <French>AED-X: HR: %1 BP: --/-- SpO2: --- ETCo2: %2 Respirations/min: %3</French>
-            <Spanish>DEA-X: RC: %1 PS: --/-- SpO2: --- ETCo2: %2 Respiraciones/min: %3</Spanish>
-            <Italian>DAE-X: FC: %1 PS: --/-- SpO2: --- ETCo2: %2 Respiri/min: %3</Italian>
-            <Portuguese>DEA-X: FC: %1 PA: --/-- SpO2: --- ETCo2: %2 Respirações/min: %3</Portuguese>
-            <Russian>AED-X: ЧСС: %1 АД: --/-- SpO2: --- ETCo2: %2 Вдохи/мин: %3</Russian>
-            <German>AED-X: HR: %1 BP: -/- SpO2: - ETCo2: %2 Br/min: %3</German>
-            <Japanese>AED-X: 心拍: %1 血圧: --/-- SpO2: --- ETCo2: %2 呼吸数/分: %3</Japanese>
-            <Chinese>AED-X：心率：%1 血壓：--/-- SpO2：--- ETCo2：%2 呼吸/分：%3</Chinese>
-            <Chinesesimp>AED-X: 心率(HR): %1 血压(BP):--/--血氧饱和度(SpO2):---呼气末二氧化碳浓度(ETCo2):%2呼吸/分钟：%3</Chinesesimp>
-            <Dutch>AED-X: HR %1 BD: --/-- SpO2: --- ETCo2: %2 Ademhalingen/min: %3</Dutch>
+            <English>AED-X: HR: %1 BP: --/-- SpO2: --- ETCo2: %2 RR: %3</English>
         </Key>
         <Key ID="STR_KAT_Circulation_X_Desc">
             <English>Used to monitor vitals and resuscitate patients</English>
@@ -3965,6 +3932,15 @@
         </Key>
         <Key ID="STR_KAT_Circulation_Action_SalineIV100">
             <English>Give Saline IV (100ml)</English>
+        </Key>
+        <Key ID="STR_KAT_Circulation_CPR_Active">
+            <English>%1 CPR (%2) </English>
+        </Key>
+        <Key ID="STR_KAT_Circulation_SETTING_hardcoreAED">
+            <English>Enable Hardcore AED-X</English>
+        </Key>
+        <Key ID="STR_KAT_Circulation_SETTING_hardcoreAED_desc">
+            <English>Hides the vitals monitor from the medical menu, only allowing the manual monitor</English>
         </Key>
     </Package>
 </Project>

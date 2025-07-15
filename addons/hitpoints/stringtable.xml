@@ -267,23 +267,17 @@
         <Key ID="STR_KAT_Hitpoints_Burn_Dressing_Progress">
             <English>Applying Burn Dressing</English>
         </Key>
-        <Key ID="STR_KAT_Hitpoints_InternalBleedingLog">
-            <English>%1 found %2 internal bleeding on %3</English>
-        </Key>
-        <Key ID="STR_KAT_Hitpoints_InternalBleeding">
-            <English>You found %1 internal bleeding on %2</English>
-        </Key>
         <Key ID="STR_KAT_Hitpoints_InternalBleeding_Minor">
-            <English>Light</English>
+            <English>Light Bruising</English>
         </Key>
         <Key ID="STR_KAT_Hitpoints_InternalBleeding_Medium">
-            <English>Medium</English>
+            <English>Medium Bruising</English>
         </Key>
         <Key ID="STR_KAT_Hitpoints_InternalBleeding_Large">
-            <English>Heavy</English>
+            <English>Heavy Bruising</English>
         </Key>
         <Key ID="STR_KAT_Hitpoints_InternalBleeding_None">
-            <English>No</English>
+            <English>No Bruising</English>
         </Key>
         <Key ID="STR_KAT_Hitpoints_Check_Limb">
             <English>Check Body</English>

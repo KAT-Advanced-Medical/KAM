@@ -84,6 +84,15 @@
     true
 ] call CBA_fnc_addSetting;
 
+[
+    QGVAR(hardcoreAED),
+    "CHECKBOX",
+    [LLSTRING(SETTING_hardcoreAED), LLSTRING(hardcoreAED_Desc)],
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_AED)],
+    [true],
+    true
+] call CBA_fnc_addSetting;
+
 
 //Max Succes chance for AED-X
 [

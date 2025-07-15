@@ -35,26 +35,12 @@ if (_patient getVariable ["kat_AEDXPatient_PFH", -1] isEqualTo -1) then {
         if ((!(_patient getVariable [QGVAR(DefibrillatorPads_Connected), false]) && !(_patient getVariable [QGVAR(AED_X_VitalsMonitor_Connected), false])) || _patient isEqualTo objNull) exitWith {
             [_idPFH] call CBA_fnc_removePerFrameHandler;
             _patient setVariable ["kat_AEDXPatient_PFH", nil, true];
-            [_patient, "quick_view", LSTRING(VitalsMonitor_StatusLog)] call FUNC(removeLog);
-            [_patient, "quick_view", LSTRING(VitalsMonitor_VMInactive_StatusLog)] call FUNC(removeLog);
-            [_patient, "quick_view", LSTRING(VitalsMonitor_VMActive_StatusLog)] call FUNC(removeLog);
-
-            [_patient, "quick_view", LSTRING(VitalsMonitor_StatusLog_HasEtco2Monitor)] call FUNC(removeLog);
-            [_patient, "quick_view", LSTRING(VitalsMonitor_VMInactive_StatusLog_HasEtco2Monitor)] call FUNC(removeLog);
-            [_patient, "quick_view", LSTRING(VitalsMonitor_VMActive_StatusLog_HasEtco2Monitor)] call FUNC(removeLog);
         };
 
         //No Values for your Monitor atm
         if (_patient getVariable [QGVAR(DefibrillatorInUse), false]) exitWith {};
 
         // Clear previous log entry before adding new one
-        [_patient, "quick_view", LSTRING(VitalsMonitor_StatusLog)] call FUNC(removeLog);
-        [_patient, "quick_view", LSTRING(VitalsMonitor_VMInactive_StatusLog)] call FUNC(removeLog);
-        [_patient, "quick_view", LSTRING(VitalsMonitor_VMActive_StatusLog)] call FUNC(removeLog);
-
-        [_patient, "quick_view", LSTRING(VitalsMonitor_StatusLog_HasEtco2Monitor)] call FUNC(removeLog);
-        [_patient, "quick_view", LSTRING(VitalsMonitor_VMInactive_StatusLog_HasEtco2Monitor)] call FUNC(removeLog);
-        [_patient, "quick_view", LSTRING(VitalsMonitor_VMActive_StatusLog_HasEtco2Monitor)] call FUNC(removeLog);
 
         private _partIndex = ((_patient getVariable [QGVAR(AED_X_VitalsMonitor_Provider), [objNull, -1, 3]]) select 2);
         private _tourniquetApplied = HAS_TOURNIQUET_APPLIED_ON(_patient,_partIndex);
@@ -66,8 +52,8 @@ if (_patient getVariable ["kat_AEDXPatient_PFH", -1] isEqualTo -1) then {
         private _etco2 = 0;
         private _breathrate = 0;
 
-        private _hasEtco2Monitor = ["_HasEtco2Monitor",""] select (_patient getVariable [QEGVAR(breathing,etco2Monitor),[]] isEqualTo []); //check for etco2 monitoring apparatus
-        _hasEtco2Monitor = ["",_hasEtco2Monitor] select (EGVAR(breathing,Etco2_Enabled)); //check etco2 monitoring is enabled
+        private _hasEtco2Monitor = (_patient getVariable [QEGVAR(breathing,etco2Monitor),[]] isNotEqualTo []); //check for etco2 monitoring apparatus
+        _hasEtco2Monitor = [false, _hasEtco2Monitor] select (EGVAR(breathing,Etco2_Enabled)); //check etco2 monitoring is enabled
 
         if !(_patient getVariable [QGVAR(heartRestart), false]) then {
             _pr = _patient getVariable [QACEGVAR(medical,heartRate), 0];
@@ -101,19 +87,28 @@ if (_patient getVariable ["kat_AEDXPatient_PFH", -1] isEqualTo -1) then {
         
         private _etco2 = GET_ETCO2(_patient);
         private _breathrate = GET_BREATHING_RATE(_patient);
-
-        // List vitals depending on if AED pads and vitals monitoring (pressure cuff + pulse oximeter) is connected
-        if (_patient getVariable [QGVAR(AED_X_VitalsMonitor_Connected), false] && _patient getVariable [QGVAR(DefibrillatorPads_Connected), false]) then {
-            // heart rate, systolic / diastolic, spO2, etco2, respiratory rate
-            [_patient, "quick_view", LSTRING(VitalsMonitor_StatusLog)+_hasEtco2Monitor, [round(_hr), round(_bp select 1), round(_bp select 0), round(_spO2), round(_etco2), round(_breathrate)]] call ACEFUNC(medical_treatment,addToLog);
-        } else {
-            if (_patient getVariable [QGVAR(DefibrillatorPads_Connected), false]) then {
-                [_patient, "quick_view", LSTRING(VitalsMonitor_VMInactive_StatusLog)+_hasEtco2Monitor, [round(_hr), round(_etco2), round(_breathrate)]] call ACEFUNC(medical_treatment,addToLog);
-            } else {
-                [_patient, "quick_view", LSTRING(VitalsMonitor_VMActive_StatusLog)+_hasEtco2Monitor, [round(_pr), round(_bp select 1), round(_bp select 0), round(_spO2), round(_etco2), round(_breathrate)]] call ACEFUNC(medical_treatment,addToLog);
+        private _status = "";
+        switch (true) do {
+            case (_patient getVariable [QGVAR(AED_X_VitalsMonitor_Connected), false] && _patient getVariable [QGVAR(DefibrillatorPads_Connected), false] && _hasEtco2Monitor): {
+                _status = format [LLSTRING(VitalsMonitor_StatusLog_hasEtco2Monitor), round(_hr), round(_bp select 1), round(_bp select 0), round(_spO2), round(_etco2), round(_breathrate)];
+            };
+            case (_patient getVariable [QGVAR(AED_X_VitalsMonitor_Connected), false] && _patient getVariable [QGVAR(DefibrillatorPads_Connected), false]): {
+                _status = format [LLSTRING(VitalsMonitor_StatusLog), round(_hr), round(_bp select 1), round(_bp select 0), round(_spO2)];
+            };
+            case (_patient getVariable [QGVAR(DefibrillatorPads_Connected), false] && _hasEtco2Monitor): {
+                _status = format [LLSTRING(VitalsMonitor_VMInactive_StatusLog_hasEtco2Monitor), round(_hr), round(_etco2), round(_breathrate)];
+            };
+            case (_patient getVariable [QGVAR(DefibrillatorPads_Connected), false]): {
+                _status = format [LLSTRING(VitalsMonitor_VMInactive_StatusLog), round(_hr)];
+            };
+            case (_patient getVariable [QGVAR(AED_X_VitalsMonitor_Connected), false] && _hasEtco2Monitor): {
+                _status = format [LLSTRING(VitalsMonitor_VMActive_StatusLog_hasEtco2Monitor), round(_pr), round(_bp select 1), round(_bp select 0), round(_spO2), round(_etco2), round(_breathrate)];
+            };
+            case (_patient getVariable [QGVAR(AED_X_VitalsMonitor_Connected), false]): {
+                _status = format [LLSTRING(VitalsMonitor_VMActive_StatusLog),round(_pr), round(_bp select 1), round(_bp select 0), round(_spO2)];
             };
         };
-
+        _patient setVariable [QGVAR(AED_X_VitalsStatus), _status, true];
         if (_patient getVariable [QGVAR(AED_X_VitalsMonitor_Connected), false] && GVAR(BPInterval)) then { // Store new BP
             if !(_tourniquetApplied) then {
                 _patient setVariable [QGVAR(StoredBloodPressure), (_patient getVariable [QACEGVAR(medical,bloodPressure), [0,0]]), true];
