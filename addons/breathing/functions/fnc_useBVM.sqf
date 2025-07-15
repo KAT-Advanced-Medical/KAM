@@ -25,7 +25,6 @@
 params ["_medic", "_patient", ["_pocket", false], ["_useOxygen", false], ["_oxygenOrigin", 0]];
 
 _patient setVariable [QGVAR(BVMInUse), true, true];
-_patient setVariable [QGVAR(BVM_provider), _medic, true];
 GVAR(BVMTarget) = _patient;
 
 GVAR(BVMCancel_EscapeID) = [0x01, [false, false, false], {

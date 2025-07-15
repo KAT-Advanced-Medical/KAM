@@ -17,7 +17,6 @@
  */
 
 params ["_patient", "_bodyPart"];
-
-if((_patient getVariable [QGVAR(PulseOximeter_Attached), [0,0]] select (ALL_BODY_PARTS find toLower _bodyPart)-4 > 0) || (_patient getVariable [QGVAR(PulseOximeter_Attached), [0,0]] select (ALL_BODY_PARTS find toLower _bodyPart)-6 > 0)) exitWith {true};
-
+if (((_patient getVariable [QGVAR(PulseOximeter_Attached), [0,0]] select 0) > 0) && ((ALL_BODY_PARTS find toLower _bodyPart) == 4)) exitWith {true};
+if (((_patient getVariable [QGVAR(PulseOximeter_Attached), [0,0]] select 1) > 0) && ((ALL_BODY_PARTS find toLower _bodyPart) == 6)) exitWith {true};
 false
