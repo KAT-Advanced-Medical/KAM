@@ -107,21 +107,21 @@
             <English>Connect to Aircraft Oxygen</English>
             <Czech>Připojit ke Kyslíku Letounu</Czech>
             <French>Connexion à l'oxygène de l'aéronef</French>
+            <Italian>Connetti alla riserva di Ossigeno del Velivolo</Italian>
+            <German>Mit Luftfahrzeug-Sauerstofftank verbinden</German>
             <Japanese>航空機酸素供給機に接続</Japanese>
             <Chinese>連接到飛機氧氣</Chinese>
             <Chinesesimp>连接到飞机氧气</Chinesesimp>
-            <German>Mit Luftfahrzeug-Sauerstofftank verbinden</German>
-            <Italian>Connetti alla riserva di Ossigeno del Velivolo</Italian>
         </Key>
         <Key ID="STR_KAT_Breathing_AttachPersonalOxygenTank">
             <English>Connect Personal Oxygen</English>
             <Czech>Připojit Osobní Kyslíkovou Lahev</Czech>
             <French>Connecter de l'oxygène personnel</French>
+            <Italian>Connetti alla riserva di Ossigeno Personale</Italian>
+            <German>Mit persönlichem Sauerstofftank verbinden</German>
             <Japanese>個人用酸素供給機に接続</Japanese>
             <Chinese>連接個人氧氣</Chinese>
             <Chinesesimp>连接个人氧气</Chinesesimp>
-            <German>Mit persönlichem Sauerstofftank verbinden</German>
-            <Italian>Connetti alla riserva di Ossigeno Personale</Italian>
         </Key>
         <Key ID="STR_KAT_Breathing_BVM_Desc_Short">
             <English>Bag-Valve-Mask, used to assist with breathing of unconscious patients</English>
@@ -165,11 +165,11 @@
             <Italian>Rimuovere la cannula nasale</Italian>
             <Portuguese>Remover Cânula Nasal</Portuguese>
             <Russian>Удалить Назальную Канюлю</Russian>
+            <German>Nasenkanüle entfernen</German>
             <Japanese>鼻カニューレを取り除く</Japanese>
             <Chinese>移除鼻導管</Chinese>
             <Chinesesimp>移除鼻导管</Chinesesimp>
             <Dutch>Verwijder nasale canule</Dutch>
-            <German>Nasenkanüle entfernen</German>
         </Key>
         <Key ID="STR_KAT_Breathing_CheckBreathing_Log">
             <English>%1 checked breathing: %2</English>
@@ -191,11 +191,11 @@
             <English>Check Personal Oxygen Status</English>
             <Czech>Zkontrolovat stav Osobní Kyslikové Lahve</Czech>
             <French>Vérifier l'état de l'oxygène personnel</French>
+            <Italian>Controlla lo Stato della riserva personale di Ossigen</Italian>
+            <German>Sauerstofftankstatus prüfen</German>
             <Japanese>個人用酸素供給機の状態を確認</Japanese>
             <Chinese>檢查個人氧氣狀況</Chinese>
             <Chinesesimp>检查个人氧气状况</Chinesesimp>
-            <German>Sauerstofftankstatus prüfen</German>
-            <Italian>Controlla lo Stato della riserva personale di Ossigen</Italian>
         </Key>
         <Key ID="STR_KAT_Breathing_Check_Breathing">
             <English>Check Breathing</English>
@@ -475,11 +475,11 @@
             <Italian>La cannula nasale può essere inserita nelle narici di un paziente e collegata a un monitor dei parametri vitali per registrare il livello di ETCo2 e la frequenza respiratoria del paziente.</Italian>
             <Portuguese>A Cânula Nasal pode ser inserida nas narinas de um paciente e conectada ao monitor de sinais vitais para mensurar o nível de ETCo2 e a frequência respiratória.</Portuguese>
             <Russian>Назальная канюля может быть вставлена в ноздри пациента и подключена к монитору жизненно важных функций для регистрации уровня ETCo2 у пациента и частоты дыхания.</Russian>
+            <German>Die Nasenkanüle kann in die Nase des Patienten eingeführt werden und mit einem Vitalmonitor verbunden werden, um die Atemfrequenz und ETCo2 zu messen.</German>
             <Japanese>鼻カニューレを患者の鼻孔に挿入し、バイタルモニターに接続することで、患者の呼気終末二酸化炭素(ETCo2)レベルと呼吸数を記録することができます。</Japanese>
             <Chinese>鼻導管可插入病人鼻孔，並連接到生命體徵監測器，以記錄病人的呼氣末期二氧化碳 (ETCo2) 水平和呼吸率。</Chinese>
             <Chinesesimp>鼻导管可以插入患者的鼻孔并连接到生命体征监测仪，以记录患者的ETCo2水平和呼吸频率。</Chinesesimp>
             <Dutch>De nasale canule kan in de neusgaten van de patiënt aangebracht worden en verbonden aan een vitale waarden monitor om de ETCo2 waarden en het ademhalingstempo van de patiënt te monitoren</Dutch>
-            <German>Die Nasenkanüle kann in die Nase des Patienten eingeführt werden und mit einem Vitalmonitor verbunden werden, um die Atemfrequenz und ETCo2 zu messen.</German>
         </Key>
         <Key ID="STR_KAT_Breathing_NasalCannula_Display">
             <English>Nasal Cannula</English>
@@ -489,11 +489,11 @@
             <Italian>Cannula nasale</Italian>
             <Portuguese>Cânula Nasal</Portuguese>
             <Russian>Назальная Канюля</Russian>
+            <German>Nasenkanüle</German>
             <Japanese>鼻カニューレ</Japanese>
             <Chinese>鼻導管</Chinese>
             <Chinesesimp>鼻插管</Chinesesimp>
             <Dutch>Nasale canule</Dutch>
-            <German>Nasenkanüle</German>
         </Key>
         <Key ID="STR_KAT_Breathing_PNEUMOTHORAX_DAMAGE_THRESHOLD">
             <English>Pneumothorax Damage Threshold</English>
@@ -535,67 +535,68 @@
             <English>Oxygen already connected</English>
             <Czech>Kyslík je již připojen</Czech>
             <French>Oxygène déjà connecté</French>
+            <Italian>Ossigeno già connesso</Italian>
+            <German>Sauerstoff ist bereits verbunden</German>
             <Japanese>既に酸素供給機に接続済です</Japanese>
             <Chinese>氧氣已連接</Chinese>
             <Chinesesimp>氧气已连接</Chinesesimp>
-            <German>Sauerstoff ist bereits verbunden</German>
-            <Italian>Ossigeno già connesso</Italian>
         </Key>
         <Key ID="STR_KAT_Breathing_PersonalOxygen_Desc_Short">
             <English>Personal oxygen tank for high altitude operations</English>
             <Czech>Osobní Kyslíková Lahev pro operace ve vysokých nadmořských výškách</Czech>
             <French>Réservoir d'oxygène personnel pour les opérations en haute altitude</French>
+            <Italian>Serbatoio di Ossigeno personale per operazioni ad alta quota</Italian>
+            <German>Persönlicher Sauerstofftank für Operationen in großer Höhe</German>
             <Japanese>高高度作戦に用いる個人用酸素ボンベ</Japanese>
             <Chinese>用於高空作業的個人氧氣罐</Chinese>
             <Chinesesimp>高空作业用便携式氧气罐</Chinesesimp>
-            <German>Persönlicher Sauerstofftank für Operationen in großer Höhe</German>
-            <Italian>Serbatoio di Ossigeno personale per operazioni ad alta quota</Italian>
         </Key>
         <Key ID="STR_KAT_Breathing_PersonalOxygen_Disconnect">
             <English>Oxygen tank disconnected</English>
             <Czech>Kyslíková Lahev odpojena</Czech>
             <French>Réservoir d'oxygène déconnecté</French>
+            <Italian>Serbatoio di Ossigeno disconnesso</Italian>
+            <German>Sauerstofftank wurde abgeklemmt</German>
             <Japanese>酸素供給機から切断しました</Japanese>
             <Chinese>氧氣罐斷開</Chinese>
             <Chinesesimp>氧气罐断开</Chinesesimp>
-            <German>Sauerstofftank wurde abgeklemmt</German>
-            <Italian>Serbatoio di Ossigeno disconnesso</Italian>
         </Key>
         <Key ID="STR_KAT_Breathing_PersonalOxygen_Display">
             <English>Personal Oxygen Tank</English>
             <Czech>Osobní Kyslíková Lahev</Czech>
             <French>Réservoir d'oxygène personnel</French>
+            <Italian>Serbatoio di Ossigeno personale</Italian>
+            <German>Persönlicher Sauerstofftank</German>
             <Japanese>個人用酸素ボンベ</Japanese>
             <Chinese>個人氧氣罐</Chinese>
             <Chinesesimp>便携式氧气罐</Chinesesimp>
-            <German>Persönlicher Sauerstofftank</German>
-            <Italian>Serbatoio di Ossigeno personale</Italian>
         </Key>
         <Key ID="STR_KAT_Breathing_PersonalOxygen_Empty">
             <English>Oxygen Tank Empty</English>
             <Czech>Kyslíková Lahev je prázdná</Czech>
             <French>Réservoir d'oxygène vide</French>
+            <Italian>Serbatoio di Ossigeno vuoto</Italian>
+            <German>Sauerstofftank leer</German>
             <Japanese>酸素ボンベは空です</Japanese>
             <Chinese>氧氣罐空</Chinese>
             <Chinesesimp>氧气罐空</Chinesesimp>
-            <German>Sauerstofftank leer</German>
-            <Italian>Serbatoio di Ossigeno vuoto</Italian>
         </Key>
         <Key ID="STR_KAT_Breathing_PersonalOxygen_Remaining">
             <English>Minutes Remaining</English>
             <Czech>Zbývající minuty</Czech>
             <French>Minutes restantes</French>
+            <Italian>Minuti rimasti</Italian>
+            <German>Minuten übrig</German>
             <Japanese>分残っています</Japanese>
             <Chinese>剩餘分鐘數</Chinese>
             <Chinesesimp>剩余分钟数</Chinesesimp>
-            <German>Minuten übrig</German>
-            <Italian>Minuti rimasti</Italian>
         </Key>
         <Key ID="STR_KAT_Breathing_Pneumothorax">
             <English>Pneumothorax</English>
             <Czech>Pneumotorax</Czech>
             <French>Pneumothorax (PTX)</French>
             <Spanish>Neumotórax</Spanish>
+            <Italian>Pneumotorace</Italian>
             <Portuguese>Pneumotórax</Portuguese>
             <Russian>Пневмоторакс (PTX)</Russian>
             <German>Pneumothorax</German>
@@ -603,7 +604,6 @@
             <Japanese>気胸(PTX)</Japanese>
             <Finnish>Pneumotoraksi</Finnish>
             <Dutch>Pneumothorax</Dutch>
-            <Italian>Pneumotorace</Italian>
         </Key>
         <Key ID="STR_KAT_Breathing_Pneumothorax_short">
             <English>PTX</English>
@@ -849,11 +849,11 @@
             <French>Utilisé pour vérifier le rythme cardiaque et la SpO2</French>
             <Spanish>Utilizado para analizar el pulso sanguíneo y el SpO2</Spanish>
             <Italian>Utilizzato per leggere la frequenza del polso e il valore SpO2</Italian>
+            <German>Misst Pulsfrequenz und SpO2</German>
             <Japanese>脈拍数とSpO2を読み取るのに使用</Japanese>
             <Chinese>用於讀取脈搏率和SpO2</Chinese>
             <Chinesesimp>用于读取脉搏率和SpO2</Chinesesimp>
             <Dutch>Wordt gebruikt om polsslag en SpO2 te meten</Dutch>
-            <German>Misst Pulsfrequenz und SpO2</German>
         </Key>
         <Key ID="STR_KAT_Breathing_Pulseoximeter_Display">
             <English>Attach Pulse Oximeter</English>
@@ -997,11 +997,11 @@
             <English>Disconnect Personal Oxygen</English>
             <Czech>Odpojit Osobní Kyslíkovou Lahev</Czech>
             <French>Déconnexion de l'oxygène personnel</French>
+            <Italian>Disconnetti Riserva personale di Ossigeno</Italian>
+            <German>Persönlichen Sauerstofftank abklemmen</German>
             <Japanese>個人用酸素供給機を切断</Japanese>
             <Chinese>斷開個人氧氣</Chinese>
             <Chinesesimp>断开个人氧气</Chinesesimp>
-            <German>Persönlichen Sauerstofftank abklemmen</German>
-            <Italian>Disconnetti Riserva personale di Ossigeno</Italian>
         </Key>
         <Key ID="STR_KAT_Breathing_Remove_NasalCannula_Log">
             <English>%1 removed Nasal Cannula</English>
@@ -1011,59 +1011,59 @@
             <Italian>%1 ha rimosso la cannula nasale</Italian>
             <Portuguese>%1 removeu a Cânula Nasal</Portuguese>
             <Russian>%1 удалил Назальную Канюлю</Russian>
+            <German>%1 hat die Nasenkanüle entfernt</German>
             <Japanese>鼻カニューレを取り除いた</Japanese>
             <Chinese>%1 移除了鼻導管</Chinese>
             <Chinesesimp>%1个已移除的鼻导管</Chinesesimp>
             <Dutch>%1 verwijderde nasale canule</Dutch>
-            <German>%1 hat die Nasenkanüle entfernt</German>
         </Key>
         <Key ID="STR_KAT_Breathing_Remove_OxyMask">
             <English>Remove Oxygen Mask</English>
             <Czech>Odebrat Kyslíkovou Masku</Czech>
             <French>Retirer le masque à oxygène</French>
+            <Italian>Rimuovi maschera per Ossigeno</Italian>
+            <German>Sauerstoffmaske entfernen</German>
             <Japanese>酸素マスクを取り外す</Japanese>
             <Chinese>取下氧氣面罩</Chinese>
             <Chinesesimp>取下氧气面罩</Chinesesimp>
-            <German>Sauerstoffmaske entfernen</German>
-            <Italian>Rimuovi maschera per Ossigeno</Italian>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_AVAIL_OXYHELMET">
             <English>Available Oxygen Helmets</English>
             <Czech>Dostupné Kyslíkové Helmy</Czech>
             <French>Casques d'oxygène disponibles</French>
+            <Italian>Elmetto per ossigeno disponibile</Italian>
+            <German>Verfügbare Sauerstoffhelme</German>
             <Japanese>利用可能な酸素供給ヘルメット</Japanese>
             <Chinese>可用氧氣頭盔</Chinese>
-            <German>Verfügbare Sauerstoffhelme</German>
-            <Italian>Elmetto per ossigeno disponibile</Italian>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_AVAIL_OXYHELMET_DISC">
             <English>Sets which helmets can act as oxygen masks</English>
             <Czech>Nastavuje, které helmy mohou fungovat jako kyslíkové masky</Czech>
             <French>Spécifiez le casque que vous souhaitez utiliser comme masque à oxygène.</French>
+            <Italian>Imposta quale elmetto può funzionare come maschera per ossigeno</Italian>
+            <German>Legt fest, welche Helme als Sauerstoffhelme benutzt werden können</German>
             <Japanese>酸素マスクとして動作させたいヘルメットを指定します</Japanese>
             <Chinese>設定哪些頭盔可以作為氧氣面罩</Chinese>
-            <German>Legt fest, welche Helme als Sauerstoffhelme benutzt werden können</German>
-            <Italian>Imposta quale elmetto può funzionare come maschera per ossigeno</Italian>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_AVAIL_OXYMASK">
             <English>Available Oxygen Masks</English>
             <Czech>Dostupné Kyslíkové Masky</Czech>
             <French>Masques à oxygène disponibles</French>
+            <Italian>Maschera per ossigeno disponibile</Italian>
+            <German>Verfügbare Sauerstoffmasken</German>
             <Japanese>利用可能な酸素供給マスク</Japanese>
             <Chinese>可用氧氣面罩</Chinese>
             <Chinesesimp>可用氧气面罩</Chinesesimp>
-            <German>Verfügbare Sauerstoffmasken</German>
-            <Italian>Maschera per ossigeno disponibile</Italian>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_AVAIL_OXYMASK_DISC">
             <English>Sets which goggles can act as oxygen masks</English>
             <Czech>Nastavuje, které brýle mohou fungovat jako kyslíkové masky</Czech>
             <French>Spécifiez les masques que vous souhaitez utiliser comme masque à oxygène.</French>
+            <Italian>Imposta quali occhiali possono funzionare come maschera per ossigeno</Italian>
+            <German>Legt fest, welche Brillen als Sauerstoffmaske verwendet werden können</German>
             <Japanese>酸素マスクとして動作させたいゴーグルを指定します</Japanese>
             <Chinese>設定哪些護目鏡可以作為氧氣面罩</Chinese>
             <Chinesesimp>设置哪些护目镜可以作为氧气面罩</Chinesesimp>
-            <German>Legt fest, welche Brillen als Sauerstoffmaske verwendet werden können</German>
-            <Italian>Imposta quali occhiali possono funzionare come maschera per ossigeno</Italian>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_Allow_NasalCannula">
             <English>Allow Nasal Cannula</English>
@@ -1073,11 +1073,11 @@
             <Italian>Consentire l'uso della cannula nasale</Italian>
             <Portuguese>Permitir Cânula Nasal</Portuguese>
             <Russian>Разрешить использование Назальной Канюли</Russian>
+            <German>Nasenkanüle erlauben</German>
             <Japanese>鼻カニューレの許可</Japanese>
             <Chinese>允許使用鼻導管</Chinese>
             <Chinesesimp>允许使用鼻导管</Chinesesimp>
             <Dutch>Sta nasale canule toe</Dutch>
-            <German>Nasenkanüle erlauben</German>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_Allow_NasalCannula_Desc">
             <English>Training level required to insert a Nasal Cannula</English>
@@ -1087,11 +1087,11 @@
             <Italian>Livello di formazione richiesto per inserire una cannula nasal</Italian>
             <Portuguese>Nível de treinamento necessário para inserir uma Cânula Nasal</Portuguese>
             <Russian>Уровень подготовки, необходимый для установки Назальной Канюли</Russian>
+            <German>Ausbildungslevel, um die Nasenkanüle zu verwenden</German>
             <Japanese>鼻カニューレの挿入に必要な医療スキルのレベルを設定します。</Japanese>
             <Chinese>插入鼻導管所需的訓練等級</Chinese>
             <Chinesesimp>插入鼻导管所需的训练等级</Chinesesimp>
             <Dutch>Trainingsniveau benodigd voor het inbrengen van een nasale canule</Dutch>
-            <German>Ausbildungslevel, um die Nasenkanüle zu verwenden</German>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_BVMOxygen_Multiplier">
             <English>BVM Oxygen Effectiveness Multiplier</English>
@@ -1213,11 +1213,11 @@
             <Italian>Abilitare il monitoraggio ETCo2</Italian>
             <Portuguese>Habilitar monitoramento de ETCo2</Portuguese>
             <Russian>Включить мониторинг ETCo2</Russian>
+            <German>ETCo2-Überwachung aktivieren</German>
             <Japanese>ETCo2モニタリングを有効化</Japanese>
             <Chinese>啟用ETCo2監測</Chinese>
             <Chinesesimp>启用ETCo2监测</Chinesesimp>
             <Dutch>Activeer ETCo2 monitor</Dutch>
-            <German>ETCo2-Überwachung aktivieren</German>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_Enable_Etco2_Desc">
             <English>Sets if medics can view a patient's ETCo2 and Respiratory Rate in the Vitals Monitor when a device capable of monitoring ETCo2 is connected</English>
@@ -1227,11 +1227,11 @@
             <Italian>Imposta se i medici possono visualizzare l'ETCo2 e la frequenza respiratoria del paziente nel monitor dei parametri vitali quando è connesso un dispositivo in grado di monitorare l'ETCo2</Italian>
             <Portuguese>Define se um médico pode ver o ETCo2 e a Frequência Respiratória no Monitor de Sinais Vitais quando um dispositivo capaz de monitorar ETCo2 estiver conectado</Portuguese>
             <Russian>Определяет, могут ли медики видеть ETCo2 пациента и частоту дыхания на мониторе жизненно важных показателей, когда подключено устройство, способное контролировать ETCo2</Russian>
+            <German>Legt fest, ob Sanitäter die Atemfrequenz und ETCo2 über einen Vitalmonitor überwachen können, wenn Überwachungssysteme angeschlossen sind</German>
             <Japanese>呼気終末二酸化炭素(ETCo2)をモニタリングできるデバイスが接続されている場合に、衛生兵がバイタルモニターで患者のETCo2と呼吸数を表示できるかどうかを設定します。</Japanese>
             <Chinese>設定當連接能夠監測ETCo2的裝置時，醫務人員是否可以在生命體徵監視器中查看患者的ETCo2和呼吸率</Chinese>
             <Chinesesimp>设定当连接能够监测ETCo2的装置时，医务人员是否可以在生命体征监视器中查看患者的ETCo2和呼吸率</Chinesesimp>
             <Dutch>Activeert het zien van ETCo2 en ademhalingstempo op de vitale waarden monitor wanneer een apparaat die ETCo2 kan monitoren is aangesloten</Dutch>
-            <German>Legt fest, ob Sanitäter die Atemfrequenz und ETCo2 über einen Vitalmonitor überwachen können, wenn Überwachungssysteme angeschlossen sind</German>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_HPTX_BleedAmount">
             <English>Hemopneumothorax internal bleeding amount</English>
@@ -1306,20 +1306,20 @@
             <Czech>Povolit PaCO2</Czech>
             <French>Activation de la PaCO2</French>
             <Italian>Abilitare PaCO2</Italian>
+            <German>PaCO2 aktivieren</German>
             <Japanese>PaCO2を有効化</Japanese>
             <Chinese>啟用PaCO2</Chinese>
             <Chinesesimp>启用PaCO2</Chinesesimp>
-            <German>PaCO2 aktivieren</German>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_PACO2_ENABLE_DESC">
             <English>Enables PaCO2 movement and effects on ph and breathing rate</English>
             <Czech>Povoluje hodnoty PaCO2 a efekt na ph a frekvenci dechu</Czech>
             <French>Permet le déplacement de la PaCO2 et les effets sur le pH et la fréquence respiratoire</French>
             <Italian>Abilita il movimento di PaCO2 e gli effetti su pH e frequenza respiratoria</Italian>
+            <German>Aktiviert PaCO2-Änderungen und die Effekte auf pH und Atemfrequenz</German>
             <Japanese>phや呼吸速度へ影響を与えるPaCO2(動脈血二酸化炭素分圧)の変動を有効にします</Japanese>
             <Chinese>啟用PaCO2的變化及其對pH值和呼吸速率的影響</Chinese>
             <Chinesesimp>启用PaCO2的变化及其对pH值和呼吸速率的影响</Chinesesimp>
-            <German>Aktiviert PaCO2-Änderungen und die Effekte auf pH und Atemfrequenz</German>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_PerfusionMultiplier">
             <English>Perfusion multiplier</English>
@@ -1378,11 +1378,11 @@
             <Italian>Abilitare l'arresto del pneumotorace</Italian>
             <Portuguese>Habilitar Parada por Pneumotórax</Portuguese>
             <Russian>Включить остановку сердца</Russian>
+            <German>Aktiviere Pneumothorax-Herzstillstand</German>
             <Japanese>気胸による心停止を有効化</Japanese>
             <Chinese>啟用氣胸心跳驟停</Chinese>
             <Chinesesimp>启用气胸抑制</Chinesesimp>
             <Dutch>Sta pneumothorax hartstilstand toe</Dutch>
-            <German>Aktiviere Pneumothorax-Herzstillstand</German>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_PneumothoraxArrest_DESCRIPTION">
             <English>Enables a chance for cardiac arrest following pneumothorax</English>
@@ -1392,11 +1392,11 @@
             <Italian>Abilita una probabilità di arresto cardiaco a seguito di pneumotorace</Italian>
             <Portuguese>Habilita uma chance de parada cardíaca após o pneumotórax</Portuguese>
             <Russian>Увеличивает вероятность остановки сердца после Пневмоторакса</Russian>
+            <German>Aktiviert die Wahrscheinlichkeit für einen Herzstillstand nach Pneumothorax</German>
             <Japanese>気胸発生に付随して心停止となる可能性を有効にします</Japanese>
             <Chinese>啟用氣胸後發生心跳停止的機率</Chinese>
             <Chinesesimp>气胸后有可能发生心脏骤停</Chinesesimp>
             <Dutch>Staat de kans op een hartstilstand na een pneumothorax toe</Dutch>
-            <German>Aktiviert die Wahrscheinlichkeit für einen Herzstillstand nach Pneumothorax</German>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_PneumothoraxDamageThreshold_DamageTaken">
             <English>Increase pneumothorax chance based on damage</English>
@@ -1541,11 +1541,11 @@
             <Italian>Unità desiderate per il monitoraggio ETCo2</Italian>
             <Portuguese>Unidades desejadas para monitoramento de ETCo2</Portuguese>
             <Russian>Необходимые устройства для мониторинга ETCo2</Russian>
+            <German>Bevorzugte Einheit des ETCo2</German>
             <Japanese>ETCo2モニタリングに必要なユニット</Japanese>
             <Chinese>ETCo2監測所需的單位</Chinese>
             <Chinesesimp>ETCo2监测所需的单位</Chinesesimp>
             <Dutch>Geprefereerde eenheden voor ETCo2 monitoren</Dutch>
-            <German>Bevorzugte Einheit des ETCo2</German>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_SpO2_Perfusion">
             <English>Enable cardiac arrest SpO2 reduction</English>
@@ -1572,11 +1572,11 @@
             <Italian>Attivare il valore SpO2 arresto cardiaco</Italian>
             <Portuguese>Ativar parada cardíaca por valor de SpO2</Portuguese>
             <Russian>Активируйте значение SpO2 при остановке сердца</Russian>
+            <German>Aktiviere Herzstillstand durch SpO2</German>
             <Japanese>SpO2値による心停止を有効化</Japanese>
             <Chinese>激活心跳停止SpO2值</Chinese>
             <Chinesesimp>激活心脏骤停的SpO2值</Chinesesimp>
             <Dutch>Activeer hartstilstand SpO2 waarde</Dutch>
-            <German>Aktiviere Herzstillstand durch SpO2</German>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_SpO2_cardiacValue">
             <English>Cardiac arrest SpO2 value</English>
@@ -1586,11 +1586,11 @@
             <Italian>Valore SpO2 arresto cardiaco</Italian>
             <Portuguese>Valor de SpO2 para parada cardíaca</Portuguese>
             <Russian>Значение SpO2 при остановке сердца</Russian>
+            <German>SpO2 für Herzstillstand</German>
             <Japanese>心停止に至るSpO2値</Japanese>
             <Chinese>心跳停止SpO2值</Chinese>
             <Chinesesimp>心脏骤停SpO2值</Chinesesimp>
             <Dutch>Hartstilstand SpO2 waarde</Dutch>
-            <German>SpO2 für Herzstillstand</German>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_SpO2_dieActive">
             <English>Activate lethal SpO2 value</English>
@@ -1755,11 +1755,11 @@
             <Italian>Tempo per la cannula nasale</Italian>
             <Portuguese>Tempo para Cânula Nasal</Portuguese>
             <Russian>Время для введения Назальной Канюли</Russian>
+            <German>Anwendungszeit der Nasenkanüle</German>
             <Japanese>鼻カニューレの所要時間</Japanese>
             <Chinese>鼻導管所需時間</Chinese>
             <Chinesesimp>鼻导管所需时间</Chinesesimp>
             <Dutch>Tijd voor het inbrengen van een nasale canule</Dutch>
-            <German>Anwendungszeit der Nasenkanüle</German>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_Time_NasalCannula_Desc">
             <English>How long it will take to insert a Nasal Cannula</English>
@@ -1769,11 +1769,11 @@
             <Italian>Quanto tempo ci vorrà per inserire una cannula nasale</Italian>
             <Portuguese>Quanto tempo levará para inserir uma Cânula Nasal</Portuguese>
             <Russian>Сколько времени потребуется, чтобы вставить Назальную Канюлю</Russian>
+            <German>Wie lange es dauert, um die Nasenkanüle anzuwenden</German>
             <Japanese>鼻カニューレの挿入にかかる時間を設定します</Japanese>
             <Chinese>插入鼻導管需要多長時間</Chinese>
             <Chinesesimp>插入鼻导管需要多长时间</Chinesesimp>
             <Dutch>Hoelang het gaat duren om een nasale canule in te brengen</Dutch>
-            <German>Wie lange es dauert, um die Nasenkanüle anzuwenden</German>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_arrestPneumothorax_interval">
             <English>Deteriorating pneumothorax arrest interval</English>
@@ -1783,11 +1783,11 @@
             <Italian>Intervallo di arresto del pneumotorace in deterioramento</Italian>
             <Portuguese>Intervalo de parada por pneumotórax deteriorado</Portuguese>
             <Russian>Ухудшение Пневмоторакса после остановки</Russian>
+            <German>Intervall für die Berechnung von Herzstillstand durch PTX</German>
             <Japanese>気胸による心停止への悪化の間隔</Japanese>
             <Chinese>惡化性氣胸驟停間隔</Chinese>
             <Chinesesimp>气胸停止间隔恶化</Chinesesimp>
             <Dutch>Pneumothorax verslechterings hartstilstand interval</Dutch>
-            <German>Intervall für die Berechnung von Herzstillstand durch PTX</German>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_arrestPneumothorax_interval_Desc">
             <English>After each interval a chance will be rolled whether or not a pneumothorax will result in cardiac arrest</English>
@@ -1797,11 +1797,11 @@
             <Italian>Dopo ogni intervallo, verrà calcolata una probabilità che un pneumotorace porti a un arresto cardiaco</Italian>
             <Portuguese>Após cada intervalo, será calculado se o pneumotórax vai resultar em uma parada cardíaca</Portuguese>
             <Russian>После каждого перерыва будет оцениваться вероятность того, приведет ли Пневмоторакс к остановке сердца или нет</Russian>
+            <German>Nach jedem Ablauf der Zeit wird per Zufall bestimmt, ob der Pneumothorax einen Herzstillstand auslöst</German>
             <Japanese>各間隔の後に気胸が心停止につながるかどうかがロールされます</Japanese>
             <Chinese>每個間隔後，將計算氣胸是否導致心跳停止的機率</Chinese>
             <Chinesesimp>每间隔一次，就会有概率判断气胸是否会导致心脏骤停</Chinesesimp>
             <Dutch>na elke interval wordt er een kansrol uitgevoerd die bepaald of een pneumothorax leidt tot een hartstilstand</Dutch>
-            <German>Nach jedem Ablauf der Zeit wird per Zufall bestimmt, ob der Pneumothorax einen Herzstillstand auslöst</German>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_clearChestSealAfterTreatment">
             <English>Clear Chest Seal after treatment</English>
@@ -1921,20 +1921,20 @@
             <Czech>Povolit Kontrolu Dýchání</Czech>
             <French>Activer le contrôle de la respiration</French>
             <Italian>Abilitare il controllo della respirazione</Italian>
+            <German>Atmung überprüfen aktivieren</German>
             <Japanese>"呼吸を確認"を有効化</Japanese>
             <Chinese>啟用檢查呼吸</Chinese>
             <Chinesesimp>启用检查呼吸</Chinesesimp>
-            <German>Atmung überprüfen aktivieren</German>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_enableCheckBreathing_DESC">
             <English>Whether or not Check Breathing medical action is enabled</English>
             <Czech>Zda je či není povolena Kontrola Dýchání</Czech>
             <French>Si "Contrôle de la respiration" est activée ou non</French>
             <Italian>Se l'azione medica di controllo della respirazione è abilitata o meno</Italian>
+            <German>Ändert, ob die Aktion "Atmung überprüfen" verfügbar ist</German>
             <Japanese>呼吸を確認のアクションを可能にするかどうかを設定します</Japanese>
             <Chinese>檢查呼吸醫療動作是否啟用</Chinese>
             <Chinesesimp>检查呼吸医疗动作是否启用</Chinesesimp>
-            <German>Ändert, ob die Aktion "Atmung überprüfen" verfügbar ist</German>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_inspectChest_enable">
             <English>Enable Inspect Chest</English>
@@ -2550,11 +2550,11 @@
             <English>Attached to Aircraft Oxygen</English>
             <Czech>Připojeno ke Kyslíku Letounu</Czech>
             <French>Attaché à l'oxygène de l'aéronef</French>
+            <Italian>Collegato alla riserva d'Ossigeno del velivolo</Italian>
+            <German>Mit Luftfahrzeug-Sauerstoff verbunden</German>
             <Japanese>航空機酸素供給機に接続済</Japanese>
             <Chinese>附在飛機氧氣上</Chinese>
             <Chinesesimp>附在飞机氧气上</Chinesesimp>
-            <German>Mit Luftfahrzeug-Sauerstoff verbunden</German>
-            <Italian>Collegato alla riserva d'Ossigeno del velivolo</Italian>
         </Key>
         <Key ID="STR_KAT_Breathing_aatKit_desc">
             <English>The Advanced Airway Treatment Kit is a single use kit designed to treat advanced airway conditions, like hemopneumothorax</English>
@@ -2645,10 +2645,10 @@
             <English>Very Shallow</English>
             <Czech>Velmi mělký</Czech>
             <French>Très superficielle</French>
+            <Italian>Molto Debole</Italian>
+            <German>Sehr flach</German>
             <Japanese>とても浅い</Japanese>
             <Chinese>非常淺</Chinese>
-            <German>Sehr flach</German>
-            <Italian>Molto Debole</Italian>
         </Key>
         <Key ID="STR_KAT_Breathing_breathing_isNormal">
             <English>Patient is breathing normally</English>
@@ -2686,10 +2686,10 @@
             <English>Patient's breathing is very shallow</English>
             <Czech>Pacientův dech je velmi mělký</Czech>
             <French>La respiration du patient est très superficielle</French>
+            <Italian>La respirazione del paziente è molto debole</Italian>
+            <German>Die Atmung des Patienten ist sehr flach</German>
             <Japanese>患者の呼吸はとても浅い</Japanese>
             <Chinese>病人呼吸非常淺</Chinese>
-            <German>Die Atmung des Patienten ist sehr flach</German>
-            <Italian>La respirazione del paziente è molto debole</Italian>
         </Key>
         <Key ID="STR_KAT_Breathing_breathing_none">
             <English>Patient is not breathing</English>
@@ -2711,28 +2711,28 @@
         <Key ID="STR_KAT_Breathing_breathing_rrNormal">
             <English>RR: Normal</English>
             <French>RR : Normal</French>
+            <Italian>RR: Normale</Italian>
+            <German>AF: Normal</German>
             <Japanese>呼吸速度: 正常</Japanese>
             <Chinese>呼吸頻率：正常</Chinese>
-            <German>AF: Normal</German>
-            <Italian>RR: Normale</Italian>
         </Key>
         <Key ID="STR_KAT_Breathing_breathing_rrRapid">
             <English>RR: Rapid</English>
             <Czech>DF: Rychlá</Czech>
             <French>RR : Rapide</French>
+            <Italian>RR: Rapido</Italian>
+            <German>AF: Beschleunigt</German>
             <Japanese>呼吸速度: 速い</Japanese>
             <Chinese>呼吸頻率：快</Chinese>
-            <German>AF: Beschleunigt</German>
-            <Italian>RR: Rapido</Italian>
         </Key>
         <Key ID="STR_KAT_Breathing_breathing_rrSlow">
             <English>RR: Slow</English>
             <Czech>DF: Pomalá</Czech>
             <French>RR : Lent</French>
+            <Italian>RR: Lento</Italian>
+            <German>AF: Langsam</German>
             <Japanese>呼吸速度: 遅い</Japanese>
             <Chinese>呼吸頻率：慢</Chinese>
-            <German>AF: Langsam</German>
-            <Italian>RR: Lento</Italian>
         </Key>
         <Key ID="STR_KAT_Breathing_breathing_shallow">
             <English>Shallow</English>
@@ -2752,10 +2752,10 @@
         </Key>
         <Key ID="STR_KAT_Breathing_cba_name">
             <English>KAT - ADV Medical: Breathing</English>
-            <Japanese>KAM - 呼吸器系 (Breathing)</Japanese>
             <French>KAT - ADV Medical : Respiration</French>
-            <German>KAT - ADV Medical: Atmung</German>
             <Italian>KAT- ADV Medica: Respirazione</Italian>
+            <German>KAT - ADV Medical: Atmung</German>
+            <Japanese>KAM - 呼吸器系 (Breathing)</Japanese>
         </Key>
         <Key ID="STR_KAT_Breathing_chestseal_desc">
             <English>Chest Seal is engineered to treat, seal, and reseal open chest wounds under most circumstances.</English>

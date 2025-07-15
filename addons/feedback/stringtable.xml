@@ -55,10 +55,10 @@
         </Key>
         <Key ID="STR_KAT_Feedback_cba_name">
             <English>KAT - ADV Medical: Feedback</English>
-            <Japanese>KAM - フィードバック</Japanese>
             <French>KAT - ADV Medical : Retour d'expérience</French>
+            <Italian>KAT - ADV Medica: Riscontro</Italian>
             <German>KAT - ADV Medical: Feedback</German>
-            <Italian>KAT - ADV Medica: Riscontro </Italian>
+            <Japanese>KAM - フィードバック</Japanese>
         </Key>
         <Key ID="STR_KAT_Feedback_SETTING_effectOverdose_display">
             <English>Enable Overdose effects</English>

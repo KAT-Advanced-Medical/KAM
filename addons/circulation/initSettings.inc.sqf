@@ -408,6 +408,16 @@
     true
 ] call CBA_fnc_addSetting;
 
+// Sets if PEA is enabled or disabled
+[
+    QGVAR(AdvRhythm_PEAEnabled),
+    "CHECKBOX",
+    LLSTRING(SETTING_AdvRhythm_PEAEnabled),
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_AdvRhythms)],
+    [false],
+    true
+] call CBA_fnc_addSetting;
+
 // Sets chance for Pulseless Electrical Activity / Asystole
 [
     QGVAR(AdvRhythm_PEAEnabled),

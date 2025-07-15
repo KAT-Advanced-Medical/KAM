@@ -1157,37 +1157,37 @@
             <English>Check BP with BP Cuff</English>
             <Czech>Zkontrolovat tlak krve s TK Manžetou</Czech>
             <French>Brassard pour vérifier la tension artérielle.</French>
+            <Italian>Controllare la pressione sanguigna con il bracciale PS</Italian>
+            <German>Blutdruck mit Manschette prüfen</German>
             <Japanese>血圧カフで血圧を確認</Japanese>
             <Chinese>用血壓計量血壓</Chinese>
-            <German>Blutdruck mit Manschette prüfen</German>
-            <Italian>Controllare la pressione sanguigna con il bracciale PS</Italian>
         </Key>
         <Key ID="STR_KAT_Circulation_Actions_CheckHRSteth">
             <English>Check HR w/ Stethoscope</English>
             <Czech>Zkontrolovat SF pomocí Stetoskopu</Czech>
             <French>Vérifier le pouls à l'aide d'un stéthoscope.</French>
+            <Italian>Controlla la frequenza cardiaca con lo stetoscopio</Italian>
+            <German>Herzfrequenz mit Stethoskop prüfen</German>
             <Japanese>聴診器で脈拍を確認</Japanese>
             <Chinese>用聽診器檢查心率</Chinese>
-            <German>Herzfrequenz mit Stethoskop prüfen</German>
-            <Italian>Controlla la frequenza cardiaca con lo stetoscopio</Italian>
         </Key>
         <Key ID="STR_KAT_Circulation_Actions_CheckingBloodPressureCuff">
             <English>Checking BP with BP Cuff</English>
             <Czech>Kontroluji TK s TK Manžetou</Czech>
             <French>Contrôler la tension artérielle à l'aide d'un brassard</French>
+            <Italian>Controllo della pressione sanguigna con il bracciale PS in corso</Italian>
+            <German>Überprüfung des Blutdruck mittels Manschette</German>
             <Japanese>血圧カフで血圧を確認中</Japanese>
             <Chinese>用血壓計量血壓中</Chinese>
-            <German>Überprüfung des Blutdruck mittels Manschette</German>
-            <Italian>Controllo della pressione sanguigna con il bracciale PS in corso</Italian>
         </Key>
         <Key ID="STR_KAT_Circulation_Actions_CheckingHRSteth">
             <English>Checking HR with Stethoscope</English>
             <Czech>Kontroluji SF pomocí Stetoskopu</Czech>
             <French>Vérification du pouls à l'aide d'un stéthoscope.</French>
+            <Italian>Controllo della frequenza cardiaca con lo stetoscopio in corso</Italian>
+            <German>Überprüfung der HF mittels Stethoskop</German>
             <Japanese>聴診器で脈拍を確認中</Japanese>
             <Chinese>用聽診器檢查心率中</Chinese>
-            <German>Überprüfung der HF mittels Stethoskop</German>
-            <Italian>Controllo della frequenza cardiaca con lo stetoscopio in corso</Italian>
         </Key>
         <Key ID="STR_KAT_Circulation_Activity_AttachPads">
             <English>%1 attached defibrillator pads (%2)</English>
@@ -1341,19 +1341,19 @@
             <English>A medical device to accurately determine a patients blood pressure</English>
             <Czech>Zdravotnické zařízení pro přesné určení krevního tlaku pacienta</Czech>
             <French>Dispositif médical permettant de déterminer avec précision la tension artérielle d'un patient</French>
+            <Italian>Un dispositivo medico per misurare in maniera accurata la pressione sanguinea del paziente</Italian>
+            <German>Medizinisches Gerät zur genauen Bestimmung des Blutdrucks</German>
             <Japanese>患者の血圧を正確に測定する医療機器</Japanese>
             <Chinese>一種準確測量病人血壓的醫療裝置</Chinese>
-            <German>Medizinisches Gerät zur genauen Bestimmung des Blutdrucks</German>
-            <Italian>Un dispositivo medico per misurare in maniera accurata la pressione sanguinea del paziente</Italian>
         </Key>
         <Key ID="STR_KAT_Circulation_BPCuff_display">
             <English>Blood Pressure Cuff</English>
             <Czech>TK Manžeta</Czech>
             <French>Brassard de pression artérielle</French>
+            <Italian>Bracciale PS</Italian>
+            <German>Blutdruckmanschette</German>
             <Japanese>血圧カフ</Japanese>
             <Chinese>血壓計</Chinese>
-            <German>Blutdruckmanschette</German>
-            <Italian>Bracciale PS</Italian>
         </Key>
         <Key ID="STR_KAT_Circulation_BloodIV_A">
             <English>Blood IV (1000ml) BT: A+</English>
@@ -1803,10 +1803,10 @@
             <English>%1 over Palp</English>
             <Czech>%1 nad palpační hodnotou</Czech>
             <French>%1 au-dessus de la valeur de palpation</French>
+            <Italian>%1 su Palp</Italian>
+            <German>%1 per Palpitation</German>
             <Japanese>触診による拡張期血圧は %1</Japanese>
             <Chinese>比觸診高 %1</Chinese>
-            <German>%1 per Palpitation</German>
-            <Italian>%1 su Palp</Italian>
         </Key>
         <Key ID="STR_KAT_Circulation_CPR_MaxChance_Default">
             <English>Max CPR Chance for Default</English>
@@ -1930,29 +1930,29 @@
             <English>Change Monitoring Device</English>
             <Czech>Změnit monitorovací zařízení</Czech>
             <French>Changer le dispositif de surveillance</French>
+            <Italian>Cambia dispositivo di monitoraggio</Italian>
             <German>Überwachungsgerät ändern</German>
             <Japanese>モニタリングする装置を変更</Japanese>
             <Chinese>更換監控設備</Chinese>
             <Chinesesimp>更换监控设备</Chinesesimp>
-            <Italian>Cambia dispositivo di monitoraggio</Italian>
         </Key>
         <Key ID="STR_KAT_Circulation_Check_Bloodpressure_Output_Palp">
             <English>You find a blood pressure of %3 over Palp</English>
             <Czech>Naměřil jsi krevní tlak %3 nad palpační hodnotou</Czech>
             <French>Vous avez mesuré la tension artérielle %3 au-dessus de la palpation</French>
+            <Italian>Misuri una pressione sanguinea di %3 su Palp</Italian>
+            <German>Du misst einen Blutdruck von %3 per Palpitation</German>
             <Japanese>触診で計測した拡張期血圧は %3 でした</Japanese>
             <Chinese>你發現血壓比觸診高 %3</Chinese>
-            <German>Du misst einen Blutdruck von %3 per Palpitation</German>
-            <Italian>Misuri una pressione sanguinea di %3 su Palp</Italian>
         </Key>
         <Key ID="STR_KAT_Circulation_Check_Pulse_Output">
             <English>You find a Pulse Rate of %2</English>
             <Czech>Zjistil jsi pulzní frekvenci %2</Czech>
             <French>Vous trouvez un pouls de %2</French>
+            <Italian>Misuri una frequenza cardiaca di %2</Italian>
+            <German>Du misst eine Herzfrequenz von %2</German>
             <Japanese>計測した脈拍は %2 でした</Japanese>
             <Chinese>你發現脈搏率為 %2</Chinese>
-            <German>Du misst eine Herzfrequenz von %2</German>
-            <Italian>Misuri una frequenza cardiaca di %2</Italian>
         </Key>
         <Key ID="STR_KAT_Circulation_Defibrillator_Action_CancelCharge">
             <English>Cancel Charge</English>
@@ -2296,10 +2296,10 @@
             <English>%1 PPM</English>
             <Czech>%1 PPM</Czech>
             <French>%1 PPM</French>
+            <Italian>%1 PPM</Italian>
+            <German>%1 PPM</German>
             <Japanese>%1 PPM</Japanese>
             <Chinese>%1 PPM</Chinese>
-            <German>%1 PPM</German>
-            <Italian>%1 PPM</Italian>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_AEDStation_AllowInteraction">
             <English>Allow AED/X Station Interaction</English>
@@ -2559,9 +2559,9 @@
             <English>Enable H-and-T Holding in Arrest</English>
             <Czech>Povolit H&amp;T udržování v zástavě</Czech>
             <French>Activer le maintien en arrêt H et T</French>
-            <Japanese>心停止回復のH&amp;T症状による阻害を有効化</Japanese>
-            <German>H&amp;Ts halten Herzstillstand aufrecht</German>
             <Italian>Abilità la possibilità di pressione prolungata di H e T durante l'arresto</Italian>
+            <German>H&amp;Ts halten Herzstillstand aufrecht</German>
+            <Japanese>心停止回復のH&amp;T症状による阻害を有効化</Japanese>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_AdvRhythm_Hardcore_Enable">
             <English>Hardcore Rhythms</English>
@@ -2750,19 +2750,19 @@
             <English>Allow BP Cuff</English>
             <Czech>Povolit TK Manžetu</Czech>
             <French>Autoriser le brassard de tension artérielle</French>
+            <Italian>Abilità il bracciale della pressione sanguigna</Italian>
+            <German>Blutdruckmanschette erlauben</German>
             <Japanese>血圧カフの許可</Japanese>
             <Chinese>允許使用血壓計</Chinese>
-            <German>Blutdruckmanschette erlauben</German>
-            <Italian>Abilità il bracciale della pressione sanguigna</Italian>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_BPCuff_DESC">
             <English>Training Level for use of the BP Cuff</English>
             <Czech>Úroveň zdravotnického výcviku pro použití TK Manžety</Czech>
             <French>Niveau de formation médicale pour l'utilisation des brassards</French>
+            <Italian>Livello di addestramento per l'utilizzo del bracciale della pressione sanguigna</Italian>
+            <German>Ausbildungslevel für Blutdruckmanschette</German>
             <Japanese>血圧カフの使用に必要な医療スキルのレベルを設定します。</Japanese>
             <Chinese>使用血壓計的訓練等級</Chinese>
-            <German>Ausbildungslevel für Blutdruckmanschette</German>
-            <Italian>Livello di addestramento per l'utilizzo del bracciale della pressione sanguigna</Italian>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_CPR_CHANCES">
             <English>Enable different CPR chances per medical level</English>
@@ -2956,19 +2956,19 @@
             <English>Allow Stethoscope HR check</English>
             <Czech>Povolit kontrolu SF Stetoskopem</Czech>
             <French>Autorisation de prendre le pouls via un stéthoscope.</French>
+            <Italian>Permetti il controllo della Frequenza Cardiaca con lo Stetoscopio</Italian>
+            <German>Stethoskop zur Herzfrequenzmessung erlauben</German>
             <Japanese>聴診器による脈拍確認の許可</Japanese>
             <Chinese>允許使用聽診器檢查心率</Chinese>
-            <German>Stethoskop zur Herzfrequenzmessung erlauben</German>
-            <Italian>Permetti il controllo della Frequenza Cardiaca con lo Stetoscopio</Italian>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_StethHR_DESC">
             <English>Training Level for use of the Stethoscope to measure HR</English>
             <Czech>Úroveň zdravotnického výcviku pro měření SF Stetoskopem</Czech>
             <French>Définit le niveau de compétences médicales requis pour mesurer le pouls à l'aide d'un stéthoscope.</French>
+            <Italian>Livello di addestramento per il controllo della Frequenza Cardiaca con lo Stetoscopio</Italian>
+            <German>Ausbildungslevel zur Herzfrequenzmessung mit Stethoskop</German>
             <Japanese>聴診器による脈拍の測定に必要な医療スキルのレベルを設定します。</Japanese>
             <Chinese>使用聽診器測量心率的訓練等級</Chinese>
-            <German>Ausbildungslevel zur Herzfrequenzmessung mit Stethoskop</German>
-            <Italian>Livello di addestramento per il controllo della Frequenza Cardiaca con lo Stetoscopio</Italian>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_Threshold_SpO2Warning">
             <English>AED-X alarm SpO2 threshold</English>
@@ -2990,21 +2990,21 @@
             <English>Enable ABG Testing</English>
             <Czech>Povolit ABG Testování</Czech>
             <French>Activer le test ABG</French>
+            <Italian>Abilita test ABG</Italian>
             <German>ABG-Tests aktivieren</German>
             <Japanese>ABGテストを有効化</Japanese>
             <Chinese>啟用 ABG 測試</Chinese>
             <Chinesesimp>启用ABG测试</Chinesesimp>
-            <Italian>Abilita test ABG</Italian>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_abg_enable_DESC">
             <English>Enables ABG Testing and ACE Menu Visibility</English>
             <Czech>Povoluje ABG Testování a zobrazení ACE Menu</Czech>
             <French>Permet le test ABG et la visibilité du menu ACE</French>
+            <Italian>Abilità test ABG e visibilità menù ACE</Italian>
             <German>Ermöglicht ABG-Tests und Sichtbarkeit des ACE-Menüs</German>
             <Japanese>ABGテストを有効化しACEメニューに表示します</Japanese>
             <Chinese>啟用 ABG 測試和 ACE 選單可見性</Chinese>
             <Chinesesimp>启用ABG测试和ACE菜单可见性</Chinesesimp>
-            <Italian>Abilità test ABG e visibilità menù ACE</Italian>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_bloodtype_assign">
             <English>Blood Type Assignment</English>
@@ -3247,19 +3247,19 @@
             <English>Enable Hardcore HR and BP Diagnose</English>
             <Czech>Povolit hardcore diagnostiku SF a TK</Czech>
             <French>Diagnostic approfondi de la HR et de la BP</French>
+            <Italian>Abilità la modalità estrema per il controllo della PS e della FC</Italian>
+            <German>Aktiviere Hardcore-Messung von Blutdruck und Puls</German>
             <Japanese>ハードコア脈拍および血圧診断を有効化</Japanese>
             <Chinese>啟用硬核心率和血壓診斷</Chinese>
-            <German>Aktiviere Hardcore-Messung von Blutdruck und Puls</German>
-            <Italian>Abilità la modalità estrema per il controllo della PS e della FC</Italian>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_hardcoreDiagnose_DESC">
             <English>Makes measuring BP and HR imprecise without tools (Stethoscope or BP cuff)</English>
             <Czech>Znemožňuje přesné měření SF a TK bez nástrojů (Stetoskop nebo TK Manžeta)</Czech>
             <French>Rend impossible la mesure précise du pouls et de la tension artérielle sans instrument (stéthoscope ou brassard).</French>
+            <Italian>Rendi imprecise le misurazioni della PS e della FC senza l'utilizzo di dispositivi (Stetoscopio o bracciale PS)</Italian>
+            <German>Ungenaue Blutdruck- und Pulsmessungen, wenn keine Werkzeuge verwendet werden (Manschette und Stethoskop)</German>
             <Japanese>器具(聴診器または血圧カフ)なしでは脈拍および血圧を正確に測定出来なくします</Japanese>
             <Chinese>在沒有工具（聽診器或血壓計）的情況下，測量血壓和心率會不準確</Chinese>
-            <German>Ungenaue Blutdruck- und Pulsmessungen, wenn keine Werkzeuge verwendet werden (Manschette und Stethoskop)</German>
-            <Italian>Rendi imprecise le misurazioni della PS e della FC senza l'utilizzo di dispositivi (Stetoscopio o bracciale PS)</Italian>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_tamponadeChance">
             <English>Chance for tamponade in penetrating wounds</English>
@@ -3582,10 +3582,10 @@
         </Key>
         <Key ID="STR_KAT_Circulation_cba_name">
             <English>KAT - ADV Medical: Circulation</English>
-            <Japanese>KAM - 循環器系 (Circulation)</Japanese>
             <French>KAT - ADV Medical : Circulation</French>
-            <German>KAT - ADV Medical: Zirkulation</German>
             <Italian>KAT - ADV Medica: Circolazione</Italian>
+            <German>KAT - ADV Medical: Zirkulation</German>
+            <Japanese>KAM - 循環器系 (Circulation)</Japanese>
         </Key>
         <Key ID="STR_KAT_Circulation_crosspanel">
             <English>Blood groups cheat sheet</English>
@@ -3703,19 +3703,19 @@
             <English>Time to measure BP with BP Cuff</English>
             <Czech>Čas vyšetření TK pomocí TK Manžety</Czech>
             <French>Temps pour mesurer la tension via le brassard</French>
+            <Italian>Tempo per la misurarazione la Pressione Sanguinea con il bracciale della pressione sanguigna</Italian>
+            <German>Dauer der Blutdruckmessung mit Manschette</German>
             <Japanese>血圧カフによる血圧測定の所要時間</Japanese>
             <Chinese>用血壓計量血壓所需時間</Chinese>
-            <German>Dauer der Blutdruckmessung mit Manschette</German>
-            <Italian>Tempo per la misurarazione la Pressione Sanguinea con il bracciale della pressione sanguigna</Italian>
         </Key>
         <Key ID="STR_KAT_Circulation_treatmentTime_StethHR">
             <English>Time to measure HR with a Stethoscope</English>
             <Czech>Čas měření SF Stetoskopem</Czech>
             <French>Temps pour mesurer le pouls via un stéthoscope</French>
+            <Italian>Tempo per la misurazione della Frequenza Cardiaca con lo Stetoscopio</Italian>
+            <German>Dauer der Pulsmessung mit Stethoskop</German>
             <Japanese>聴診器による脈拍測定の所要時間</Japanese>
             <Chinese>用聽診器測量心率所需時間</Chinese>
-            <German>Dauer der Pulsmessung mit Stethoskop</German>
-            <Italian>Tempo per la misurazione della Frequenza Cardiaca con lo Stetoscopio</Italian>
         </Key>
         <Key ID="STR_KAT_Circulation_Morphine_Infusion">
             <English>Morphine Infusion IV (250ml)</English>
