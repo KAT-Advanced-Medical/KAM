@@ -410,6 +410,14 @@
             <Finnish>Myrkyllinen kaasu (taso 1)</Finnish>
             <Dutch>Gifgas (Level 1)</Dutch>
         </Key>
+        <Key ID="STR_KAT_Chemical_Lvl2_Gas">
+            <English>Blister agent (Level 2)</English>
+            <Polish>środek parzący ( Poziom 2)</Polish>
+        </Key>
+         <Key ID="STR_KAT_Chemical_Lvl3_Gas">
+            <English>Nerve Agent (Level 3)</English>
+            <Polish>środek paralityczno-drgawkowy ( Poziom 3)</Polish>
+        </Key>
         <Key ID="STR_KAT_Chemical_M43_DisplayName_1x">
             <English>M43 BZ LGB</English>
             <Czech>M43 BZ LGB</Czech>
@@ -574,6 +582,27 @@
             <Finnish>Hyväksytyt kaasunaamarit</Finnish>
             <Dutch>Geaccepteerde gasmaskers</Dutch>
         </Key>
+        <Key ID="STR_KAT_Chemical_SETTING_AVAIL_BACKPACK">
+            <English>Accepted backpacks SCBA</English>
+            <Polish>Dozwolone plecaki AODO</Polish>
+        </Key>
+        <Key ID="STR_KAT_Chemical_SETTING_AVAIL_SUITS">
+            <English>Accepted cbrn suits</English>
+            <Czech>Povolené plynové masky</Czech>
+            <French>Masques à gaz acceptés</French>
+            <Spanish>Máscaras de gas aceptadas</Spanish>
+            <Italian>Maschere antigas accettate</Italian>
+            <Polish>Dozwolone stoje abc</Polish>
+            <Portuguese>Permitir máscaras de gás</Portuguese>
+            <Russian>Разрешенные противогазы</Russian>
+            <German>Akzeptierte Gasmasken</German>
+            <Korean>방독면 허용</Korean>
+            <Japanese>認証済みのガスマスク</Japanese>
+            <Chinese>可使用的防毒面具</Chinese>
+            <Chinesesimp>被接受的防毒面具</Chinesesimp>
+            <Finnish>Hyväksytyt kaasunaamarit</Finnish>
+            <Dutch>Geaccepteerde gasmaskers</Dutch>
+        </Key>
         <Key ID="STR_KAT_Chemical_SETTING_AVAIL_GASMASK_DISC">
             <English>Enter here the classname of the masks that should work with the system.</English>
             <Czech>Zde vložte "classname" plynových masek, které mají spolupracovat s tímto systémem.</Czech>
@@ -590,6 +619,14 @@
             <Chinesesimp>在此处输入应与系统配合使用的掩码的类名。</Chinesesimp>
             <Finnish>Anna niiden maskien luokan nimet, joiden pitäisi toimia järjestelmän kanssa</Finnish>
             <Dutch>Voer hier de classnames toe van gasmaskers die zouden moeten werken met het systeem.</Dutch>
+        </Key>
+        <Key ID="STR_KAT_Chemical_SETTING_AVAIL_BACKPACK_DISC">
+            <English>Enter here the classname of the backpack(scba) that should work with the system.</English>
+            <Polish>Wpisz classname plecaka, (aodo) ktory ma dzialc z systemem</Polish>
+        </Key>
+        <Key ID="STR_KAT_Chemical_SETTING_AVAIL_SUITS_DISC">
+            <English>Enter here the classname of the suits that should work with the system.</English>
+            <Polish>Wpisz classname strojów, ktore mają dzialac z systemem</Polish>
         </Key>
         <Key ID="STR_KAT_Chemical_SETTING_GASMASK_DURABILITY">
             <English>Gas masks durability</English>
@@ -783,6 +820,14 @@
             <Chinesesimp>有毒气体</Chinesesimp>
             <Finnish>Myrkyllinen kaasu</Finnish>
             <Dutch>Gifgas</Dutch>
+        </Key>
+        <Key ID="STR_KAT_Chemical_BlisterAgent_MFDNAME">
+            <English>Blister Agent</English>
+            <Polish>Środek parzący</Polish>
+        </Key>
+        <Key ID="STR_KAT_Chemical_BlisterAgent_DisplayName">
+            <English>82mm Blister Agent Gas Round</English>
+            <Polish>Pocisk środka parzacego kal.82mm</Polish>
         </Key>
         <Key ID="STR_KAT_Chemical_TriWire_Gas_Desc">
             <English>Type: Tripwire gas - Sprays a poisonous gas when triggered.&lt;br /&gt;Rounds: 1&lt;br /&gt;Used on: Ground</English>

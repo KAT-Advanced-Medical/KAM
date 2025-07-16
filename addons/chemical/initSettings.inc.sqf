@@ -14,6 +14,34 @@
 ] call CBA_fnc_addSetting;
 
 [
+    QGVAR(availBackpack),
+    "EDITBOX",
+    [LLSTRING(SETTING_AVAIL_BACKPACK), LLSTRING(SETTING_AVAIL_BACKPACK_DISC)],
+    CBA_SETTINGS_CAT,
+    "'B_SCBA_01_F', 'B_CombinationUnitRespirator_01_F'",
+    1,
+    {
+        private _array = [_this, "CfgVehicles"] call FUNC(getList);
+        missionNamespace setVariable [QGVAR(availBackpackList), _array, true];
+    },
+    true
+] call CBA_fnc_addSetting;
+
+[
+    QGVAR(availSuits),
+    "EDITBOX",
+    [LLSTRING(SETTING_AVAIL_SUITS), LLSTRING(SETTING_AVAIL_SUITS_DISC)],
+    CBA_SETTINGS_CAT,
+    "'U_C_CBRN_Suit_01_Blue_F', 'U_B_CBRN_Suit_01_MTP_F', 'U_B_CBRN_Suit_01_Tropic_F', 'U_C_CBRN_Suit_01_White_F', 'U_B_CBRN_Suit_01_Wdl_F', 'U_I_CBRN_Suit_01_AAF_F', 'U_I_E_CBRN_Suit_01_EAF_F'",
+    1,
+    {
+        private _array = [_this, "CfgWeapons"] call FUNC(getList);
+        missionNamespace setVariable [QGVAR(availSuitsList), _array, true];
+    },
+    true
+] call CBA_fnc_addSetting;
+
+[
     QGVAR(gasmask_durability),
     "TIME",
     [LLSTRING(SETTING_GASMASK_DURABILITY), LLSTRING(SETTING_GASMASK_DURABILITY_DISC)],

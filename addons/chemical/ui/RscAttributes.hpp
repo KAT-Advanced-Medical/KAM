@@ -83,6 +83,12 @@ class GVAR(kat_RscAtributeRadius): RscControlsGroupNoScrollbars {
                     text = CSTRING(Lvl1_Gas);
                     default = 1;
                 };
+                class type2 {
+                    text = CSTRING(Lvl2_Gas);
+                };
+                class type3 {
+                    text = CSTRING(Lvl3_Gas);
+                };
             };
         };
         class Title6: Title1 {

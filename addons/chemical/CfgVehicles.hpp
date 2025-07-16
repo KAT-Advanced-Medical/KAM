@@ -154,6 +154,14 @@ class CfgVehicles {
                         value = 1;
                         default = 1;
                     };
+                    class BlisterAgent {
+                        name = CSTRING(Lvl2_Gas);
+                        value = 2;
+                    };
+                    class NerveAgent {
+                        name = CSTRING(Lvl3_Gas);
+                        value = 3;
+                    };
                 };
             };
             class IsSealable

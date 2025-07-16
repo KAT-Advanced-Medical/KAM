@@ -104,6 +104,26 @@ GVAR(gasSources) = createHashMap;
         _source setVariable [QGVAR(sealable), true, true];
     };
 
+    //Create all needed Particle effects
+    private _particleObjectAmount = (_radius / 10) max 1;
+    private _particleObjects = [];
+    private _particleSource;
+
+    for "_i" from 0 to _particleObjectAmount do {
+        _particleSource = "#particlesource" createVehicle _sourcePos;
+        _particleSource setParticleClass QGVAR(Toxic_Gas_Particles);
+
+        if (_i == 0) then {
+            _particleSource setParticleCircle [1, [0,0,0]];
+        } else {
+            _particleSource setParticleCircle [_i * 10, [0,0,0]];
+        };
+
+        _particleObjects pushBack _particleSource;
+    };
+
+    _gasLogic setVariable [QGVAR(particleObjects), _particleObjects, true];
+
     GVAR(gasSources) set [_hashedKey, [_gasLogic, _radius, _gasLevel, _condition, _conditionArgs]];
 }] call CBA_fnc_addEventHandler;
 
@@ -116,6 +136,12 @@ GVAR(gasSources) = createHashMap;
     };
 
     (GVAR(gasSources) deleteAt _hashedKey) params [["_gasLogic", objNull]];
+
+    // Delete all particle objects for this zone, if there are some
+    private _particleObjects = _gasLogic getVariable [QGVAR(particleObjects), []];
+    {
+        deleteVehicle _x;
+    } forEach _particleObjects;
 
     detach _gasLogic;
     deleteVehicle _gasLogic;
