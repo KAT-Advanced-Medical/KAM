@@ -152,7 +152,7 @@
 [
     QGVAR(occlusion_repeatTimer),
     "SLIDER",
-    LLSTRING(SETTING_occlusion_repeatTimer),
+    [LLSTRING(SETTING_occlusion_repeatTimer), LLSTRING(SETTING_occlusion_repeatTimer_desc)],
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_AirwayInjury)],
     [1, 1200, 60, 0],
     true

@@ -1279,22 +1279,10 @@
             <Dutch>Verstoppings afkoelingsperiode</Dutch>
         </Key>
         <Key ID="STR_KAT_Airway_SETTING_occlusion_repeatTimer">
-            <English>Occlusion repeat timer</English>
-            <Czech>Časovač opakovaného ucpání dýchacích cest</Czech>
-            <French>Temps de répétition des occlusions</French>
-            <Spanish>Tiempo de repetición de las oclusiones</Spanish>
-            <Italian>Tempo di ripetizione per l'occlusione</Italian>
-            <Polish>Czas powtarzania zablokowania</Polish>
-            <Portuguese>Temporizador de repetição de oclusão</Portuguese>
-            <Russian>Таймер повторения окклюзии</Russian>
-            <German>Zeitfenster zum Wiedereintritt einer Okklusion</German>
-            <Korean>구토 반복 타이머</Korean>
-            <Japanese>異物再発までの時間</Japanese>
-            <Chinese>異物復發的時間</Chinese>
-            <Chinesesimp>气道异物再发冷却时间</Chinesesimp>
-            <Norwegian>Repetisjonsintervall for Okklusjon</Norwegian>
-            <Finnish>Okkluusiotoistoajastin</Finnish>
-            <Dutch>Verstoppings herhaling timer</Dutch>
+            <English>Puke repeat timer</English>
+        </Key>
+        <Key ID="STR_KAT_Airway_SETTING_occlusion_repeatTimer_desc">
+            <English>time it takes for the puke system to loop once</English>
         </Key>
         <Key ID="STR_KAT_Airway_SETTING_puking_sound">
             <English>Activate the puking sound?</English>
