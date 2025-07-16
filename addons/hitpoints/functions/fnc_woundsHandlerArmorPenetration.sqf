@@ -27,7 +27,6 @@
 
 params ["_unit", "_allDamages", "_typeOfDamage", "_ammo"];
 TRACE_4("woundsHandlerArmorPenetration",_unit,_allDamages,_typeOfDamage,_ammo);
-
 // See (https://community.bistudio.com/wiki/CfgAmmo_Config_Reference#caliber),
 // _penFactor is ammo "caliber" * RHA penetrability, armor plates according to BI are just made of RHAe material
 (_ammo call FUNC(getAmmoData)) params ["_hit", "_penFactor", "_typicalSpeed"];

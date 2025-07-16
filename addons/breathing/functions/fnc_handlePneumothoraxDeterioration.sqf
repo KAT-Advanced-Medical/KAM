@@ -55,7 +55,7 @@ params ["_unit", "_chanceIncrease", "_side"];
                     if (floor (random 100) < GVAR(deterioratingPneumothorax_chance) && _breathing) then {
                         private _ptxTarget = (_pneumothoraxState select _side) + 1;
                         if (_ptxTarget % 4 == 0) then {
-                            if ((random 100 < 33) && GVAR(PneumothoraxArrest)) then {
+                            if ((random 100 < 30) && GVAR(PneumothoraxArrest)) then {
                                 [{
 
                                     params ["_args", "_idPFH"];
