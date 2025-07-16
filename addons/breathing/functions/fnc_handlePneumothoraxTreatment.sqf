@@ -36,7 +36,7 @@ params ["_unit", "_chanceIncrease", "_side"];
             private _occlusion = ((_unit getVariable [QEGVAR(airway,occlusion), [0, 0, 0]]) findIf { _x > 4 }) != -1;
             private _obstruction = ((_unit getVariable [QEGVAR(airway,obstruction), [0, 0, 0]]) findIf { _x != 0 }) != -1;
             private _breathing = !(_obstruction) && !(_occlusion) && ((GET_BREATHING_RATE(_unit) > 5) || (_unit getVariable [QEGVAR(breathing,BVMInUse), false]));
-                if (_pneumothoraxState select _side == 0) then {
+                if (_pneumothoraxState select _side != 0) then {
                     // If patient is dead, treated, or already deteriorated to advanced pneumothorax, kill the PFH
                     if ((_hemoState select _side) ||
                         (_tensionState select _side) ||
@@ -44,7 +44,7 @@ params ["_unit", "_chanceIncrease", "_side"];
                         [_idPFH] call CBA_fnc_removePerFrameHandler;
                     };
 
-                    if ((floor (random 100) < 50) && _breathing) then {
+                    if (true/*(floor (random 100) < 50) && _breathing */) then {
                         private _ptxTarget = (_pneumothoraxState select _side) - 1;
                         if (_ptxTarget < 0) exitWith {
                             [_idPFH] call CBA_fnc_removePerFrameHandler;
