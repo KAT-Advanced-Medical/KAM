@@ -44,7 +44,7 @@ params ["_unit", "_chanceIncrease", "_side"];
                         [_idPFH] call CBA_fnc_removePerFrameHandler;
                     };
 
-                    if (true/*(floor (random 100) < 50) && _breathing */) then {
+                    if ((floor (random 100) < 50) && _breathing) then {
                         private _ptxTarget = (_pneumothoraxState select _side) - 1;
                         if (_ptxTarget < 0) exitWith {
                             [_idPFH] call CBA_fnc_removePerFrameHandler;
