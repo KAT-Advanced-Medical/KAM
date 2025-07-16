@@ -223,6 +223,14 @@ class ACE_Medical_Treatment_Actions {
         condition = QUOTE(!([ARR_2(_patient,_bodyPart)] call ACEFUNC(medical_treatment,hasTourniquetAppliedTo)) && ([ARR_2(_patient,_bodyPart)] call EFUNC(surgery,hasAdditionalTourniquetAppliedTo)));
         callbackSuccess = QUOTE([ARR_8(_medic, _patient, _bodyPart, _classname, _itemUser, _usedItem, _createLitter, 1)] call FUNC(tourniquet));
     };
+    class ConvertHastyTourniquet: ApplyTourniquet {
+        displayName = CSTRING(Convert_HastyTourniquet);
+        displayNameProgress = CSTRING(Converting_HastyTourniquet);
+        treatmentTime = QGVAR(treatmentTimeHastyTourniquet);
+        treatmentTimeTrained = QGVAR(treatmentTimeTrainedHastyTourniquet);
+        condition = QUOTE([ARR_2(_patient,_bodyPart)] call FUNC(convertTourniquetCheck));
+        callbackSuccess = QUOTE([ARR_8(_medic, _patient, _bodyPart, _classname, _itemUser, _usedItem, _createLitter, 2)] call FUNC(convertTourniquet));
+    };
     class ApplyDelibrateTourniquet: ApplyTourniquet {
         displayName = CSTRING(Apply_DelibrateTourniquet);
         displayNameProgress = CSTRING(Applying_DelibrateTourniquet);

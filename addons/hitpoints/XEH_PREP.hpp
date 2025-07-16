@@ -17,6 +17,8 @@ PREP(canWrapJoint);
 PREP(canWrapSplint);
 PREP(canWrapWound);
 PREP(checkJoints);
+PREP(convertTourniquet);
+PREP(convertTourniquetCheck);
 PREP(determineIfFatal);
 PREP(fullHealLocal);
 PREP(fullHealMod);

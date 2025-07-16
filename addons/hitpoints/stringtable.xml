@@ -550,11 +550,11 @@
             <English>Israeli Bandage Removal Time</English>
         </Key>
         <Key ID="STR_KAT_Hitpoints_Apply_HastyTourniquet">
-            <English>Apply Hasty Tourniquet</English>
+           <English>Apply Hasty Tourniquet</English>
         </Key>
         <Key ID="STR_KAT_Hitpoints_Applying_HastyTourniquet">
             <English>Applying Hasty Tourniquet...</English>
-        </Key>
+        </Key> 
         <Key ID="STR_KAT_Hitpoints_Apply_DelibrateTourniquet">
             <English>Apply Delibrate Tourniquet</English>
         </Key>
@@ -585,5 +585,14 @@
         <Key ID="STR_KAT_Hitpoints_TreatmentTimeTrainedDelibrateTourniquet_DisplayName">
             <English>Skilled Delibrate Tourniquet Treatment Time</English>
         </Key>
+        <Key ID="STR_KAT_Hitpoints_Convert_HastyTourniquet">
+           <English>Convert Hasty Tourniquet</English>
+        </Key>
+        <Key ID="STR_KAT_Hitpoints_Converting_HastyTourniquet">
+            <English>Converting Hasty Tourniquet...</English>
+        </Key>
+        <Key ID="STR_KAT_Hitpoints_Activity_convertedTourniquet">
+            <English>%1 converted a Tourniquet</English>
+        </Key> 
     </Package>
 </Project>

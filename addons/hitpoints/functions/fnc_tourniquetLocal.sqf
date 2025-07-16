@@ -24,10 +24,10 @@ private _partIndex = ALL_BODY_PARTS find toLowerANSI _bodyPart;
 private _tourniquets = GET_TOURNIQUETS(_patient);
 private _tourniquetArray = GET_KAT_TOURNIQUETS(_patient);
 if (_type == 1) then {
-    private _amount = random [0.7, 0.8, 1];
+    private _amount = random [0.7, 0.8, 0.95];
     _tourniquetArray set [_partIndex, _amount];
 } else {
-    _tourniquetArray set [_partIndex, 2];
+    _tourniquetArray set [_partIndex, 1];
 };
 
 _tourniquets set [_partIndex, CBA_missionTime];
