@@ -127,6 +127,47 @@ GVAR(gasSources) = createHashMap;
     GVAR(gasSources) set [_hashedKey, [_gasLogic, _radius, _gasLevel, _condition, _conditionArgs]];
 }] call CBA_fnc_addEventHandler;
 
+[QGVAR(applyBurnDamage), {
+    params ["_unit", "_source"];
+
+    private _timebetween = missionNamespace getVariable [QGVAR(burnTime), 15];
+    private _burnKey = format ["KAT_BurnStart_%1", _source];
+    private _lastDamageKey = format ["KAT_BurnLastDamage_%1", _source];
+
+    private _now = time;
+
+    // save start time if dosent exists
+    private _startTime = _unit getVariable [_burnKey, -1];
+    if (_startTime == -1) then {
+        _startTime = _now;
+        _unit setVariable [_burnKey, _startTime];
+    };
+
+    // calculate time since start
+    private _lastDamageTime = _unit getVariable [_lastDamageKey, -_timebetween]; // -_timebetween to ensure first damage is applied
+
+    if ((_now - _lastDamageTime) >= _timebetween) then {
+        _unit setVariable [_lastDamageKey, _now];
+
+        // if dosent have mask on give damage on face
+        private _masks = missionNamespace getVariable [QGVAR(availGasmaskList), []];
+        if (!(goggles _unit in _masks)&&{_unit getVariable [QGVAR(gasmask_durability), 10] > 0}) then {
+            if random 1 < 0.5 then {
+            [_unit, 0.2, "head", "burn"] call ace_medical_fnc_addDamageToUnit;
+        };
+        };
+
+        //if dosent have suit on give damage on body
+        private _suits = missionNamespace getVariable [QGVAR(availSuitsList), []];
+        if !(uniform _unit in _suits) then {
+            private _bodyParts = ["body", "leftarm", "rightarm", "leftleg", "rightleg"];
+            private _randomPart = selectRandom _bodyParts;
+            [_unit, 0.2, _randomPart, "burn"] call ace_medical_fnc_addDamageToUnit;
+        };
+    };
+}] call CBA_fnc_addEventHandler;
+
+
 [QGVAR(removeGasSource), {
     params ["_key"];
     private _hashedKey = hashValue _key;

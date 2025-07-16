@@ -1,10 +1,13 @@
 #include "..\script_component.hpp"
 /*
- * Author: MiszczuZPolski
- * Handles various objects on fire and determines if units close to objects deserve to get burned.
+ * Author: MiszczuZPolski, kolmipilot
+ * Handles poisoning of units in chemical-contaminated areas.
+ * Handles poisoning units in chemical-contaminated areas.
  *
  * Arguments:
- * None
+ * 0: Unit to poison <OBJECT>
+ * 1: Gas level <NUMBER>
+ * 2: Infected Object (source of gas) <OBJECT>
  *
  * Return Value:
  * None
@@ -87,12 +90,14 @@ if (_newTime <= 0) then {
     };
 
     _unit setVariable [QGVAR(airPoisoning), true, true];
-//Damage and burns
+    //Damage and burns
     switch (_gasLevel) do {
-        case "0": { };
-        case "1": { };
-        case "2": { };
-        case "3": { };
+        case 0: { };  //cs gas, none
+        case 1: { };  //pulmonary damage
+        case 2: {     //burns, if dont mask on face, if dont cbrn suit on body
+            [QGVAR(applyBurnDamage), [_unit, _infectedObject], _unit] call CBA_fnc_targetEvent;
+            };  
+        case 3: { };  //some nerve agent symphtoms
         default { };
     };
 };

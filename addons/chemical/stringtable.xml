@@ -737,6 +737,10 @@
             <Finnish>Aikaa tartunnan saamiseen</Finnish>
             <Dutch>Tijd tot infectie</Dutch>
         </Key>
+        <Key ID="STR_KAT_Chemical_SETTING_burnTime">
+            <English>Time until next burn damage</English>
+            <Polish>Czas przed następnym popażeniem</Polish>
+        </Key>
         <Key ID="STR_KAT_Chemical_SETTING_infectionTime_DESC">
             <English>Time you can stand in the gas before you get infected or need a gas mask.</English>
             <Czech>Čas po který můžete stát v plynu bez infikování se či potřeby plynové masky</Czech>
@@ -753,6 +757,10 @@
             <Chinesesimp>在感染或需要防毒面具之前，你可以站在毒气中。</Chinesesimp>
             <Finnish>Aika, jonka voit seistä kaasussa, ennen kuin sinulla on vaikutusta tai tarvitset kaasunaamaria</Finnish>
             <Dutch>Tijd dat je in gas kan staan voordat je geïnfecteerd raakt of een gasmasker nodig hebt</Dutch>
+        </Key>
+        <Key ID="STR_KAT_Chemical_SETTING_burnTime_DESC">
+            <English>Time beetwen each burn damage</English>
+            <Polish>Ustala ile czasu minie zanim gracz dostanie następne obrażenia popażenia chemicznego</Polish>
         </Key>
         <Key ID="STR_KAT_Chemical_SETTING_showPoisoning">
             <English>Show Poisoning</English>

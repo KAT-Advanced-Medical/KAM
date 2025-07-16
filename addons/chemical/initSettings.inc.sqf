@@ -94,6 +94,16 @@
     true
 ] call CBA_fnc_addSetting;
 
+// Time before next chem burn
+[
+    QGVAR(burnTime),
+    "TIME",
+    [LLSTRING(SETTING_burnTime), LLSTRING(SETTING_burnTime_DESC)],
+    CBA_SETTINGS_CAT,
+    [0, 120, 15],
+    true
+] call CBA_fnc_addSetting;
+
 // Shows poisioning image
 [
     QGVAR(showPoisoning),
