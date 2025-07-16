@@ -4,13 +4,12 @@
  *
  * Arguments:
  * 0: Player <OBJECT>
- * 1: Target <OBJECT>
  *
  * Return Value:
  * Bool
  *
  * Example:
- * [player, cursorTarget] call kat_chemical_fnc_hasGasmask;
+ * [player] call kat_chemical_fnc_hasDetector;
  *
  * Public: No
 */
