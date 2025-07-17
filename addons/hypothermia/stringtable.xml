@@ -425,5 +425,8 @@
         <Key ID="STR_KAT_Hypothermia_remove_spaceblanket">
             <English>Remove Space Blanket</English>
         </Key>
+        <Key ID="STR_KAT_Hypothermia_thermalBlanket_FallOff">
+            <English>Your Thermal Blanket Fell off</English>
+        </Key>
     </Package>
 </Project>
