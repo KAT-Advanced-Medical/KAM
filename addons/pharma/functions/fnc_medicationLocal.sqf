@@ -178,7 +178,7 @@ if (_isOccluded) exitWith {
         };
     private _routeMult = 1;
         if ((_IVarray select _partIndex) in [1, 13]) then {
-            _routeMult = 0.8;
+            _routeMult = random [0.7, 0.8, 1];
         };
     private _unitMedEffectivness = _patient getVariable [QGVAR(medicationEffectivness), 1];
     private _drugMult = (((GET_BLOOD_VOLUME_LITERS(_patient) / DEFAULT_BLOOD_VOLUME) * (_heartRateRatio) * ((GET_BODY_FLUID_ECB(_patient)/GET_BODY_FLUID_ECP(_patient)) / (DEFAULT_ECB/DEFAULT_ECP)) max 0.2) min 2.5) * _weightMult * _doseMult * _unitMedEffectivness * _routeMult;
