@@ -5927,6 +5927,9 @@
             <English>Treatment time for Fentanyl Patches</English>
         </Key>
         <Key ID="STR_KAT_Pharma_fentpatch_MEDdisplay">
+            <English>Fentanyl Patch</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_fentpatchFull_MEDdisplay">
             <English>Fentanyl Patch (Full)</English>
         </Key>
         <Key ID="STR_KAT_Pharma_fentpatchPartial_MEDdisplay">

@@ -36,10 +36,12 @@ if (_IVactual > 0) then {
 };
 
 private _fentPatchArray = _target getVariable [VAR_FENT_PATCH, [0,0,0,0,0,0,0,0,0,0,0,0]];
-if ((_fentPatchArray select _selectionN > 0)) then {
-    switch (true) do {
+private _hasPatch = _fentPatchArray findIf { _x > 0 } != -1;
+if (_hasPatch) then {
+    if ((_fentPatchArray select _selectionN > 0)) then {
+        switch (true) do {
         case (_fentPatchArray select _selectionN > 0.8): {
-            _entries pushBack [LLSTRING(FentPatch_MEDDisplay), [1, 1, 1, 1]];
+            _entries pushBack [LLSTRING(FentPatchFull_MEDDisplay), [1, 1, 1, 1]];
         };
         case (_fentPatchArray select _selectionN > 0.5): {
             _entries pushBack [LLSTRING(FentPatchPartial_MEDDisplay), [1, 1, 1, 1]];
@@ -48,7 +50,11 @@ if ((_fentPatchArray select _selectionN > 0)) then {
             _entries pushBack [LLSTRING(FentPatchWeak_MEDDisplay), [1, 1, 1, 1]];
         };
         case (_fentPatchArray select _selectionN > 0.1): {
-            _entries pushBack [LLSTRING(FentPatchNearlyOut_MEDDisplay), [1, 1, 1, 1]];
+            _entries pushBack [LLSTRING(FentPatchWeak_MEDDisplay), [1, 1, 1, 1]];
         };
+        };
+    } else {
+        _entries pushBack [LLSTRING(FentPatch_MEDDisplay), [1, 1, 1, 1]];
     };
 };
+
