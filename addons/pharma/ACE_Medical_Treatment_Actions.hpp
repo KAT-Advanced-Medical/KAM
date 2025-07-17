@@ -1416,4 +1416,29 @@ class ACE_Medical_Treatment_Actions {
         condition = QUOTE([ARR_4(_player,_patient,_bodyPart,'Ringers Lactate')] call FUNC(ivBagCheck));
         callbackSuccess = QUOTE([ARR_4(_player,_patient,_bodyPart,'Ringers Lactate')] call FUNC(removeIVBag));
     };
+    class ApplyFentPatch: Morphine {
+        displayName = CSTRING(Apply_FentPatch);
+        displayNameProgress = CSTRING(Applying_FentPatch);
+        medicRequired = QGVAR(medLvl_ApplyFentPatch);
+        treatmentTime = QGVAR(treatmentTime_ApplyFentPatch);
+        allowSelfTreatment = 1;
+        category = "advanced";
+        allowedSelections[] = {"Chest", "Neck", "LeftArm", "RightArm", "UpperLeftLeg", "UpperRightLeg", "UpperLeftArm", "UpperRightArm", "LeftLeg", "RightLeg"};
+        items[] = {"kat_FentPatch"};
+        condition = QUOTE(!([ARR_3(_player,_patient,_bodyPart)] call FUNC(FentanylPatchCheck)));
+        callbackSuccess = QUOTE(([ARR_3(_player,_patient,_bodyPart)] call FUNC(FentanylPatch)));
+        sounds[] = {};
+    };
+    class RemoveFentPatch: ApplyFentPatch {
+        displayName = CSTRING(Remove_FentPatch);
+        displayNameProgress = CSTRING(Removing_FentPatch);
+        category = "advanced";
+        allowedSelections[] = {"Chest", "Neck", "LeftArm", "RightArm", "UpperLeftLeg", "UpperRightLeg", "UpperLeftArm", "UpperRightArm", "LeftLeg", "RightLeg"};
+        treatmentTime = QGVAR(treatmentTime_ApplyFentPatch);
+        medicRequired = 0;
+        items[] = {};
+        condition = QUOTE(([ARR_3(_player,_patient,_bodyPart)] call FUNC(FentanylPatchCheck)));
+        callbackSuccess = QUOTE(([ARR_3(_player,_patient,_bodyPart)] call FUNC(RemoveFentanylPatch)));
+        sounds[] = {};
+    };
 };

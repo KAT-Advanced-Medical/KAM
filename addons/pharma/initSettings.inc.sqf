@@ -840,6 +840,24 @@
     true
 ] call CBA_Settings_fnc_init;
 
+[
+    QGVAR(medLvl_ApplyFentPatch),
+    "LIST",
+    [LLSTRING(medLvl_ApplyFentPatch)],
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_Fentanyl)],
+    [[0, 1, 2], [ACELSTRING(medical_treatment,Anyone), ACELSTRING(medical_treatment,Medics), ACELSTRING(medical_treatment,Doctors)], 0],
+    true
+] call CBA_Settings_fnc_init;
+
+[
+    QGVAR(treatmentTime_ApplyFentPatch),
+    "SLIDER",
+    [LLSTRING(treatmentTime_ApplyFentPatch)],
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_Fentanyl)],
+    [0.1, 10, 7, 1],
+    true
+] call CBA_Settings_fnc_init;
+
 //Nalbuphine Settings Category
 [
     QGVAR(medLvl_Nalbuphine),

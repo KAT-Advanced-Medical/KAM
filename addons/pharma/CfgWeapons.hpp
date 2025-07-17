@@ -399,6 +399,17 @@ class CfgWeapons {
             mass = 1;
         };
     };
+    class kat_FentPatch: ACE_ItemCore {
+        scope = 1;
+        displayName = CSTRING(FentPatch_Display);
+        picture = QPATHTOF(ui\icon_fentPatch.paa);
+        model = "\A3\Structures_F_EPA\Items\Medical\Painkillers_F.p3d";
+        descriptionShort = "";
+        ACE_isMedicalItem = 1;
+        class ItemInfo: CBA_MiscItem_ItemInfo {
+            mass = 0.25;
+        };
+    };
     class kat_syringe_txa_10ml_10: ACE_ItemCore {
         scope = 1;
         displayName = KATDISPLAYCSTRING(txa,10ml,10);
@@ -407,7 +418,7 @@ class CfgWeapons {
         descriptionShort = "";
         ACE_isMedicalItem = 1;
         class ItemInfo: CBA_MiscItem_ItemInfo {
-            mass = 1;
+            mass = 0.75;
         };
     };
     class kat_syringe_txa_10ml_20: kat_syringe_txa_10ml_10 {

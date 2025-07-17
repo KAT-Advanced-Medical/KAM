@@ -370,6 +370,10 @@
 #define VAR_LOCAL_ANESTHESIA            QEGVAR(pharma,localAnesthesia)
 #define GET_LOCAL_ANESTHESIA(unit,partindex)      ((unit getVariable [VAR_LOCAL_ANESTHESIA, DEFAULT_LOCAL_ANESTHESIA]) select _partindex)
 
+#define VAR_FENT_PATCH                      QEGVAR(pharma,fentanylPatch)
+#define GET_FENT_PATCH(unit,partindex)      ((unit getVariable [VAR_FENT_PATCH, [0,0,0,0,0,0,0,0,0,0,0,0]]) select _partindex)
+#define HAS_FENT_PATCH(unit,partindex)      ((GET_FENT_PATCH(unit,partindex)) > 0 )
+
 //Surgery
 #define STRING_BODY_PARTS ["head", "neck", "chest", "body", "left arm", "upper left arm", "right arm", "upper right arm", "left leg", "upper leftleg", "right leg", "upper right leg"]
 #define GET_REBOA_VOLUME(unit)         ([unit] call EFUNC(surgery,reboaVolume))

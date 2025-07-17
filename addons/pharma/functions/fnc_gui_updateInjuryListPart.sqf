@@ -34,3 +34,8 @@ if (_IVactual > 0) then {
         default {};
         };
 };
+
+private _fentPatchArray = _patient getVariable [VAR_FENT_PATCH, [0,0,0,0,0,0,0,0,0,0,0,0]];
+{
+    if (_x > 1) exitWith { _entries pushBack [format [LLSTRING(FentPatch_Display), (ALL_BODY_PARTS select _selectionN)], [1, 1, 1, 1]]; };
+} forEach _fentPatchArray;

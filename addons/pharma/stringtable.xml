@@ -5905,5 +5905,29 @@
         <Key ID="STR_KAT_Pharma_treatmentTime_IM">
             <English>Treatment time for AMS IM Medications</English>
         </Key>
+        <Key ID="STR_KAT_Pharma_fentpatch_display">
+            <English>Fentanyl Patch</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_apply_fentpatch">
+            <English>Apply Fentanyl Patch</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_applying_fentpatch">
+            <English>Applying Fentanyl Patch...</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_remove_fentpatch">
+            <English>Remove Fentanyl Patch</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_removing_fentpatch">
+            <English>Removing Fentanyl Patch...</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_medLvl_applyfentpatch">
+            <English>Medical level required for Fentanyl Patches</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_treatmentTime_applyfentpatch">
+            <English>Treatment time for Fentanyl Patches</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_fentpatch_MEDdisplay">
+            <English>Fentanyl Patch (%1)</English>
+        </Key>
     </Package>
 </Project>
