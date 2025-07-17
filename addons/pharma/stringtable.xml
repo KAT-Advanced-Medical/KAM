@@ -5927,7 +5927,16 @@
             <English>Treatment time for Fentanyl Patches</English>
         </Key>
         <Key ID="STR_KAT_Pharma_fentpatch_MEDdisplay">
-            <English>Fentanyl Patch (%1)</English>
+            <English>Fentanyl Patch (Full)</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_fentpatchPartial_MEDdisplay">
+            <English>Fentanyl Patch (Partial)</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_fentpatchWeak_MEDdisplay">
+            <English>Fentanyl Patch (Nearly Depleted)</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_fentpatchNearlyOut_MEDdisplay">
+            <English>Fentanyl Patch (Depleted)</English>
         </Key>
     </Package>
 </Project>

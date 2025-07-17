@@ -16,7 +16,7 @@
  * Public: No
  */
 
-params ["medic", "_patient", "_bodyPart"];
+params ["_medic", "_patient", "_bodyPart"];
 private _partIndex = ALL_BODY_PARTS find _bodyPart;
 private _fentPatch = _patient getVariable [VAR_FENT_PATCH, [0,0,0,0,0,0,0,0,0,0,0,0]];
 _fentPatch set [_partIndex, 0];

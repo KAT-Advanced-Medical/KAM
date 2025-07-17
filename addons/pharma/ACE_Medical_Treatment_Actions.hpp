@@ -1424,9 +1424,9 @@ class ACE_Medical_Treatment_Actions {
         allowSelfTreatment = 1;
         category = "advanced";
         allowedSelections[] = {"Chest", "Neck", "LeftArm", "RightArm", "UpperLeftLeg", "UpperRightLeg", "UpperLeftArm", "UpperRightArm", "LeftLeg", "RightLeg"};
-        items[] = {"kat_FentPatch"};
-        condition = QUOTE(!([ARR_3(_player,_patient,_bodyPart)] call FUNC(FentanylPatchCheck)));
-        callbackSuccess = QUOTE(([ARR_3(_player,_patient,_bodyPart)] call FUNC(FentanylPatch)));
+        items[] = {"kat_fentPatch"};
+        condition = QUOTE(!([ARR_3(_player,_patient,_bodyPart)] call FUNC(treatmentAdvanced_FentanylPatchCheck)));
+        callbackSuccess = QUOTE(([ARR_3(_player,_patient,_bodyPart)] call FUNC(treatmentAdvanced_FentanylPatch)));
         sounds[] = {};
     };
     class RemoveFentPatch: ApplyFentPatch {
@@ -1437,8 +1437,8 @@ class ACE_Medical_Treatment_Actions {
         treatmentTime = QGVAR(treatmentTime_ApplyFentPatch);
         medicRequired = 0;
         items[] = {};
-        condition = QUOTE(([ARR_3(_player,_patient,_bodyPart)] call FUNC(FentanylPatchCheck)));
-        callbackSuccess = QUOTE(([ARR_3(_player,_patient,_bodyPart)] call FUNC(RemoveFentanylPatch)));
+        condition = QUOTE(([ARR_3(_player,_patient,_bodyPart)] call FUNC(treatmentAdvanced_FentanylPatchCheck)));
+        callbackSuccess = QUOTE(([ARR_3(_player,_patient,_bodyPart)] call FUNC(treatmentAdvanced_RemoveFentanylPatch)));
         sounds[] = {};
     };
 };

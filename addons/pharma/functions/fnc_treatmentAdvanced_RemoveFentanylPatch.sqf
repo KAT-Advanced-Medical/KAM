@@ -16,5 +16,5 @@
  * Public: No
  */
 
-params ["medic", "_patient", "_bodyPart"];
+params ["_medic", "_patient", "_bodyPart"];
 [QGVAR(removeFentanylPatchLocal), [_medic, _patient, _bodyPart], _patient] call CBA_fnc_targetEvent;

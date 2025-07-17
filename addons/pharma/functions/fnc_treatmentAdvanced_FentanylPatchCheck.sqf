@@ -16,11 +16,15 @@
  * Public: No
  */
 
-params ["medic", "_patient", "_bodyPart"];
-private _fentPatchArray = _patient getVariable [VAR_FENT_PATCH, [0,0,0,0,0,0,0,0,0,0,0,0]];
-private _fentPatch = false;
-{
-    if (_x > 0) exitWith { _fentPatch = true; };
-} forEach _fentPatchArray;
+params ["_medic", "_patient", "_bodyPart"];
 
-_fentPatch
+private _partIndex = ALL_BODY_PARTS find toLower _bodyPart;
+private _fentPatchArray = _patient getVariable [VAR_FENT_PATCH, [0,0,0,0,0,0,0,0,0,0,0,0]];
+private _fentActual = _fentPatchArray select _partIndex;
+private _return = false;
+
+if (_fentActual > 0) then {
+    _return = true;
+};
+
+_return

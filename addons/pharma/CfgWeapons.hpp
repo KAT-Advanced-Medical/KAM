@@ -399,8 +399,8 @@ class CfgWeapons {
             mass = 1;
         };
     };
-    class kat_FentPatch: ACE_ItemCore {
-        scope = 1;
+    class kat_fentPatch: ACE_ItemCore {
+        scope = 2;
         displayName = CSTRING(FentPatch_Display);
         picture = QPATHTOF(ui\icon_fentPatch.paa);
         model = "\A3\Structures_F_EPA\Items\Medical\Painkillers_F.p3d";
