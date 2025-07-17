@@ -130,6 +130,7 @@ if ((IN_CRDC_ARRST(_unit)) || _airway || _paralysis) then {
 } else {
     // Ventilatory Demand comes from Heart Rate with increase demand from PaCO2 levels
     private _contractility = (_unit getVariable [QEGVAR(pharma,heartContractility), 1]) max 0.2;
+    private _contractilityMult = linearConversion [0.2, 1.8, _contractility, 0.5, 1.5, true];
     _demandVentilation = (((((_actualHeartRate / _contractility) * HEART_RATE_CO2_MULTIPLIER) / _anerobicPressure) + ((_previousCyclePaco2 - DEFAULT_PACO2) * 200)) max MINIMUM_VENTILATION);
 
     // Respiratory Rate is supressed by Opioids 
