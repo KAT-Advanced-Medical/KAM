@@ -17,6 +17,8 @@
 params ["_unit"];
 
 if !(goggles _unit in (missionNamespace getVariable [QGVAR(availGasmaskList), []])) exitWith {};
+if (backpack _unit in (missionNamespace getVariable [QGVAR(availBackpackList), []])) exitWith {};
+
 
 // Get the maximum time the gas mask filter can last (from settings)
 private _maxTime = missionNamespace getVariable [QGVAR(gasmask_durability), 60]; // Max durability in seconds

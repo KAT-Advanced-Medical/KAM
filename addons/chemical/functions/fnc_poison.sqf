@@ -35,7 +35,7 @@ if !(isDamageAllowed _unit && {_unit getVariable [QACEGVAR(medical,allowDamage),
     TRACE_1("unit is invulnerable",_unit);
 };
 
-if ((_gasLevel == 1)&&(goggles _unit in (missionNamespace getVariable [QGVAR(availGasmaskList), []])) && {_unit getVariable [QGVAR(gasmask_durability), 10] > 0}) exitWith {
+if (((_gasLevel == 0)||(_gasLevel == 1))&&(goggles _unit in (missionNamespace getVariable [QGVAR(availGasmaskList), []])) && {_unit getVariable [QGVAR(gasmask_durability), 10] > 0}) exitWith {
     TRACE_1("unit has gas mask",_unit);
     [QGVAR(handleGasMaskDur), _unit, _unit] call CBA_fnc_targetEvent;
 };
@@ -43,7 +43,7 @@ if (((uniform _unit in (missionNamespace getVariable [QGVAR(availSuitsList), []]
     TRACE_1("unit has gas mask, and suit",_unit);
     [QGVAR(handleGasMaskDur), _unit, _unit] call CBA_fnc_targetEvent;
 };
-if (((uniform _unit in (missionNamespace getVariable [QGVAR(availSuitsList), []])))&&((backpack _unit in (missionNamespace getVariable [QGVAR(availBackpackList), []])))&&(_gasLevel == 3)&&(goggles _unit in (missionNamespace getVariable [QGVAR(availGasmaskList), []])) && {_unit getVariable [QGVAR(gasmask_durability), 10] > 0}) exitWith {
+if (((uniform _unit in (missionNamespace getVariable [QGVAR(availSuitsList), []])))&&((backpack _unit in (missionNamespace getVariable [QGVAR(availBackpackList), []])))&&(_gasLevel == 3)&&(goggles _unit in (missionNamespace getVariable [QGVAR(availGasmaskList), []]))) exitWith {
     TRACE_1("unit has gas mask, and backpack, and suit",_unit);
     [QGVAR(handleGasMaskDur), _unit, _unit] call CBA_fnc_targetEvent;
 };

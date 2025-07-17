@@ -1,3 +1,4 @@
+#define DEBUG_MODE_FULL
 #include "..\script_component.hpp"
 /*
  * Author: Garth 'L-H' de Wet
@@ -48,6 +49,7 @@ private _exposure = _display displayCtrl 18805;
     };
 
     private _intensity = _unit getVariable [QGVAR(areaIntensity), 0];
+    private _gaslevel = _unit getVariable [QGVAR(areaLevel), 0];
 
     if ((_unit getVariable [QGVAR(detectorEnabled), false])) then {
 
@@ -55,8 +57,18 @@ private _exposure = _display displayCtrl 18805;
         private _minute = floor ((dayTime - _hour) * 60);
     
         _time ctrlSetText (format ["%1:%2", [_hour, 2] call CBA_fnc_formatNumber, [_minute, 2] call CBA_fnc_formatNumber]);
-
+        TRACE_1("KAT_ChemicalDetector: exposurelvl",_intensity);
         _exposure ctrlSetText (_intensity toFixed 2);
+        _color = [0, 0, 0, 0];
+        if(_intensity > 0) then {
+        switch (_gaslevel) do {
+            case 0: {_color = [0, 1, 0, 0.6];};
+            case 1: {_color = [1, 1, 0, 0.6];};
+            case 2: {_color = [1, 0.5, 0, 0.6];};
+            case 3: {_color = [1, 0, 0, 0.6];};
+        };
+        };
+        _exposure ctrlSetBackgroundColor _color;
 
         _unit setVariable [QGVAR(areaIntensity), _intensity, true];
     } else {

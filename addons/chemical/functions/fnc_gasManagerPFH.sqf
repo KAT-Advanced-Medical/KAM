@@ -52,6 +52,7 @@
         private _intensity = 1 - (_distance / _radius);
 
         _x setVariable [QGVAR(areaIntensity), _intensity, true];
+        _x setVariable [QGVAR(areaLevel), _gasLevel, true];
 
         [QGVAR(poison), [_x, _gasLevel, _infectedObject], _x] call CBA_fnc_targetEvent;
 

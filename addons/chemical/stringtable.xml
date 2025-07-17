@@ -394,21 +394,8 @@
             <Dutch>Traangas (level 0)</Dutch>
         </Key>
         <Key ID="STR_KAT_Chemical_Lvl1_Gas">
-            <English>Toxic gas (Level 1)</English>
-            <Czech>Toxický plyn (Úroveň 1)</Czech>
-            <French>Gaz toxique (Niveau 1)</French>
-            <Spanish>Gas toxico (Nivel 1)</Spanish>
-            <Italian>Gas Lacrimogeno (Livello 1)</Italian>
-            <Polish>Toksyczny gaz ( Poziom 1)</Polish>
-            <Portuguese>Gás tóxico (Nível 1)</Portuguese>
-            <Russian>Токсичный газ (уровень 1)</Russian>
-            <German>Senfgas (Level 1)</German>
-            <Korean>유독가스 (레벨 1)</Korean>
-            <Japanese>有毒ガス (レベル 1)</Japanese>
-            <Chinese>有毒氣體（1級）</Chinese>
-            <Chinesesimp>有毒气体（1级）</Chinesesimp>
-            <Finnish>Myrkyllinen kaasu (taso 1)</Finnish>
-            <Dutch>Gifgas (Level 1)</Dutch>
+            <English>Choking agent (Level 1)</English>
+            <Polish>Srodek duszący ( Poziom 1)</Polish>
         </Key>
         <Key ID="STR_KAT_Chemical_Lvl2_Gas">
             <English>Blister agent (Level 2)</English>
