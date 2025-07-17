@@ -20,4 +20,4 @@ params ["_medic", "_patient"];
 
 _patient setVariable [QGVAR(spaceBlanket), false, true];
 private _impact = (_patient getVariable [QGVAR(warmingImpact), 0]);
-_patient setVariable [QGVAR(warmingImpact), _impact - 300, true];
+_patient setVariable [QGVAR(warmingImpact), (_impact - 300), true];

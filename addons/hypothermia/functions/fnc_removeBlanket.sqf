@@ -16,8 +16,6 @@
  * Public: No
  */
 params ["_patient", "_bodyPart"];
-if !(IS_UNCONSCIOUS(_patient)) exitWith { false };
-if !(_patient getVariable [QGVAR(currentConverted), false]) exitWith { false };
 private _spaceBlanket = _patient getVariable [QGVAR(spaceBlanket), false];
 
 _spaceBlanket
