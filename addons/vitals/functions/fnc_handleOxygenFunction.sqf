@@ -128,8 +128,9 @@ if ((IN_CRDC_ARRST(_unit)) || _airway || _paralysis) then {
     _respiratoryDepth = [0, 10] select ((_unit getVariable [QEGVAR(breathing,BVMInUse), false]) || (_unit getVariable [QEGVAR(breathing,attachedVent), false]));
     _actualVentilation = 1;
 } else {
-    // Ventilatory Demand comes from Heart Rate with increase demand from PaCO2 levels 
-    _demandVentilation = ((((_actualHeartRate * HEART_RATE_CO2_MULTIPLIER) / _anerobicPressure) + ((_previousCyclePaco2 - DEFAULT_PACO2) * 200)) max MINIMUM_VENTILATION);
+    // Ventilatory Demand comes from Heart Rate with increase demand from PaCO2 levels
+    private _contractility = (_unit getVariable [QEGVAR(pharma,heartContractility), 1]) max 0.2;
+    _demandVentilation = (((((_actualHeartRate / _contractility) * HEART_RATE_CO2_MULTIPLIER) / _anerobicPressure) + ((_previousCyclePaco2 - DEFAULT_PACO2) * 200)) max MINIMUM_VENTILATION);
 
     // Respiratory Rate is supressed by Opioids 
     
