@@ -54,7 +54,7 @@ if ((_IVArray select 2) isEqualTo 1) then {
     _ctrlIO ctrlShow false;
 };
 
-if ((_IVArray select 1) > 10) then {
+if ((_IVArray select 1) == 14) then {
     _ctrlEJV ctrlShow true;
 } else {
     _ctrlEJV ctrlShow false;
