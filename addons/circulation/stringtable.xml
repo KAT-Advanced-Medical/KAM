@@ -619,6 +619,10 @@
             <Finnish>Suurin mahdollisuus menestyä AUD:lle</Finnish>
             <Dutch>Maximale succeskans voor AED</Dutch>
         </Key>
+        <Key ID="STR_KAT_Circulation_AED_MaxChance_DESC">
+            <English>Maximum success chance for standard AED defibrillation</English>
+            <German>Maximale Erfolgswahrscheinlichkeit für Standard-AED Defibrillation</German>
+        </Key>
         <Key ID="STR_KAT_Circulation_AED_MinChance">
             <English>Min Success chance for AED</English>
             <Czech>Min šance úspěchu pro AED</Czech>
@@ -635,6 +639,10 @@
             <Chinesesimp>AED的最小成功概率</Chinesesimp>
             <Finnish>AUD:n onnistumisen minimimahdollisuus</Finnish>
             <Dutch>Minimale succeskans voor AED</Dutch>
+        </Key>
+        <Key ID="STR_KAT_Circulation_AED_MinChance_DESC">
+            <English>Minimum success chance for standard AED defibrillation</English>
+            <German>Minimale Erfolgswahrscheinlichkeit für Standard-AED Defibrillation</German>
         </Key>
         <Key ID="STR_KAT_Circulation_AED_X">
             <English>AED-X</English>
@@ -668,6 +676,10 @@
             <Finnish>Suurin mahdollisuus menestyä AUD-X:lle</Finnish>
             <Dutch>Maximale succeskans voor AED-X</Dutch>
         </Key>
+        <Key ID="STR_KAT_Circulation_AED_X_MaxChance_DESC">
+            <English>Maximum success chance for AED-X defibrillation</English>
+            <German>Maximale Erfolgswahrscheinlichkeit für AED-X Defibrillation</German>
+        </Key>
         <Key ID="STR_KAT_Circulation_AED_X_MinChance">
             <English>Min Success chance for AED-X</English>
             <Czech>Min šance úspěchu pro AED-X</Czech>
@@ -684,6 +696,10 @@
             <Chinesesimp>AED-X的最小成功概率</Chinesesimp>
             <Finnish>Minimi mahdollisuus onnistua AUD-X:lle</Finnish>
             <Dutch>Minimale succeskans voor AED-X</Dutch>
+        </Key>
+        <Key ID="STR_KAT_Circulation_AED_X_MinChance_DESC">
+            <English>Minimum success chance for AED-X defibrillation</English>
+            <German>Minimale Erfolgswahrscheinlichkeit für AED-X Defibrillation</German>
         </Key>
         <Key ID="STR_KAT_Circulation_ALLOW_AED">
             <English>Allow AED</English>
@@ -1832,6 +1848,10 @@
             <Finnish>Suurin mahdollisuus menestyä oletussotilailla, jotka suorittavat elvytystoimia</Finnish>
             <Dutch>Maximale succeskans van CPR voor standaard</Dutch>
         </Key>
+        <Key ID="STR_KAT_Circulation_CPR_MaxChance_Default_DESC">
+            <English>Maximum CPR success chance for untrained personnel</English>
+            <German>Maximale CPR-Erfolgschance für unausgebildetes Personal</German>
+        </Key>
         <Key ID="STR_KAT_Circulation_CPR_MaxChance_Doctor">
             <English>Max CPR Chance for Doctors</English>
             <Czech>Max šance úspěchu resuscitace pro Doktory</Czech>
@@ -1848,6 +1868,10 @@
             <Chinesesimp>医生的最大心肺复苏几率</Chinesesimp>
             <Finnish>Suurin CPR onnistumisen mahdollisuus lääkäreille</Finnish>
             <Dutch>Maximale succeskans van CPR voor doktoren</Dutch>
+        </Key>
+        <Key ID="STR_KAT_Circulation_CPR_MaxChance_Doctor_DESC">
+            <English>Maximum CPR success chance for doctors</English>
+            <German>Maximale CPR-Erfolgschance für Ärzte</German>
         </Key>
         <Key ID="STR_KAT_Circulation_CPR_MaxChance_RegularMedic">
             <English>Max CPR Chance for Regular medics</English>
@@ -1866,6 +1890,10 @@
             <Finnish>Suurin mahdollisuus menestyä elvytystä suorittaville taistelulääkäreille</Finnish>
             <Dutch>Maximale succeskans van CPR voor reguliere medici</Dutch>
         </Key>
+        <Key ID="STR_KAT_Circulation_CPR_MaxChance_RegularMedic_DESC">
+            <English>Maximum CPR success chance for regular medics</English>
+            <German>Maximale CPR-Erfolgschance für reguläre Sanitäter</German>
+        </Key>
         <Key ID="STR_KAT_Circulation_CPR_MinChance_Default">
             <English>Min CPR Chance for Default</English>
             <Czech>Min šance úspěchu resuscitace pro Základní</Czech>
@@ -1882,6 +1910,10 @@
             <Chinesesimp>默认的最小心肺复苏几率</Chinesesimp>
             <Finnish>Pienin mahdollisuus menestyä elvytystoiminnassa oletussotilaana</Finnish>
             <Dutch>Minimale succeskans van CPR voor standaard</Dutch>
+        </Key>
+        <Key ID="STR_KAT_Circulation_CPR_MinChance_Default_DESC">
+            <English>Minimum CPR success chance for untrained personnel</English>
+            <German>Minimale CPR-Erfolgschance für unausgebildetes Personal</German>
         </Key>
         <Key ID="STR_KAT_Circulation_CPR_MinChance_Doctor">
             <English>Min CPR Chance for Doctors</English>
@@ -1900,6 +1932,10 @@
             <Finnish>Pienin mahdollisuus menestyä elvytyksen suorittamisessa lääkärinä</Finnish>
             <Dutch>Minimale succeskans van CPR voor doktoren</Dutch>
         </Key>
+        <Key ID="STR_KAT_Circulation_CPR_MinChance_Doctor_DESC">
+            <English>Minimum CPR success chance for doctors</English>
+            <German>Minimale CPR-Erfolgschance für Ärzte</German>
+        </Key>
         <Key ID="STR_KAT_Circulation_CPR_MinChance_RegularMedic">
             <English>Min CPR Chance for Regular medics</English>
             <Czech>Min šance úspěchu resuscitace Zdravotníky</Czech>
@@ -1916,6 +1952,10 @@
             <Chinesesimp>军医的最小心肺复苏几率</Chinesesimp>
             <Finnish>Pienin mahdollisuus menestyä elvytystyössä taistelulääkärinä</Finnish>
             <Dutch>Minimale succeskans van CPR voor reguliere medici</Dutch>
+        </Key>
+        <Key ID="STR_KAT_Circulation_CPR_MinChance_RegularMedic_DESC">
+            <English>Minimum CPR success chance for regular medics</English>
+            <German>Minimale CPR-Erfolgschance für reguläre Sanitäter</German>
         </Key>
         <Key ID="STR_KAT_Circulation_CancelCPR">
             <English>CPR Cancelled</English>
@@ -2358,6 +2398,10 @@
             <Finnish>Kuinka kauan AUD-X-terveysmonitorin kiinnittäminen kestää</Finnish>
             <Dutch>Benodigde tijd om AED-X vitale waarden monitor aan te sluiten</Dutch>
         </Key>
+        <Key ID="STR_KAT_Circulation_SETTING_AEDX_VitalsMonitor_AttachTime_DESC">
+            <English>Time required to attach AED-X vitals monitor to patient</English>
+            <German>Benötigte Zeit zum Anbringen des AED-X Vitalmonitors am Patienten</German>
+        </Key>
         <Key ID="STR_KAT_Circulation_SETTING_AEDX_VitalsMonitor_DetachTime">
             <English>Detach AED-X Vitals Monitor Time</English>
             <Czech>Čas k odpojení AED-X monitorování životních funkcí</Czech>
@@ -2373,6 +2417,10 @@
             <Chinesesimp>分离AED-X生命体征监护仪时间</Chinesesimp>
             <Finnish>Kuinka kauan AUD-X-terveysmonitorin irrottaminen kestää</Finnish>
             <Dutch>Benodigde tijd om AED-X vitale waarden monitor los te koppelen</Dutch>
+        </Key>
+        <Key ID="STR_KAT_Circulation_SETTING_AEDX_VitalsMonitor_DetachTime_DESC">
+            <English>Time required to detach AED-X vitals monitor from patient</English>
+            <German>Benötigte Zeit zum Entfernen des AED-X Vitalmonitors vom Patienten</German>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_AED_X_VitalsMonitor_BloodPressureInterval">
             <English>AED-X Vitals Monitor BP Measurement Interval</English>
@@ -2422,6 +2470,10 @@
             <Finnish>Automaattinen (välitön)</Finnish>
             <Dutch>Automatisch direct</Dutch>
         </Key>
+        <Key ID="STR_KAT_Circulation_SETTING_AED_X_VitalsMonitor_BloodPressureInterval_DESC">
+            <English>Controls how blood pressure is measured on AED-X monitor</English>
+            <German>Kontrolliert, wie der Blutdruck am AED-X Monitor gemessen wird</German>
+        </Key>
         <Key ID="STR_KAT_Circulation_SETTING_AED_X_VitalsMonitor_BloodPressureInterval_Manual">
             <English>Manual</English>
             <Czech>Manuální</Czech>
@@ -2454,6 +2506,10 @@
             <Finnish>AUD-X terveysmittarin verenpaineen mittausvälin aika</Finnish>
             <Dutch>Tijd van de AED-X vitale waarde monitor BD metingsinterval</Dutch>
         </Key>
+        <Key ID="STR_KAT_Circulation_SETTING_AED_X_VitalsMonitor_BloodPressureInterval_Time_DESC">
+            <English>Time interval for automatic blood pressure measurements</English>
+            <German>Zeitintervall für automatische Blutdruckmessungen</German>
+        </Key>
         <Key ID="STR_KAT_Circulation_SETTING_AED_X_VitalsMonitor_SoundsSelect">
             <English>AED-X Vitals Monitor Sounds</English>
             <Czech>Zvuky monitoru životních funkcí AED-X</Czech>
@@ -2469,6 +2525,10 @@
             <Chinesesimp>AED-X生命体征监测仪声音</Chinesesimp>
             <Finnish>AUD-X terveysmonitorin ääni</Finnish>
             <Dutch>Geluiden van de AED-X vitale waarde monitor</Dutch>
+        </Key>
+        <Key ID="STR_KAT_Circulation_SETTING_AED_X_VitalsMonitor_SoundsSelect_DESC">
+            <English>Selects which sound set to use for AED-X vitals monitor</English>
+            <German>Wählt aus, welcher Soundsatz für den AED-X Vitalmonitor verwendet wird</German>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_AED_X_VitalsMonitor_SoundsSelect_Default">
             <English>Default</English>
@@ -2515,6 +2575,10 @@
             <Chinese>允許在 CPR 期間應用 AED 電極片</Chinese>
             <Chinesesimp>允许在心肺复苏期间使用AED垫</Chinesesimp>
             <Dutch>Sta het plaatsen van AED pads tijdens CPR toe</Dutch>
+        </Key>
+        <Key ID="STR_KAT_Circulation_SETTING_AED_duringCpr_DESC">
+            <English>Allows AED pads to be applied while CPR is being performed</English>
+            <German>Ermöglicht das Anbringen von AED-Pads während der Wiederbelebung</German>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_AdvRhythm_AED_ROSC_Chance">
             <English>ROSC After AED Chance</English>
@@ -2565,6 +2629,10 @@
             <Turkish>Gelişmiş Ritim etkinleştirildi mi?</Turkish>
             <Finnish>Edistyneet sykerytmit aktivoitu?</Finnish>
             <Dutch>Geadvanceerde hartritmes actief?</Dutch>
+        </Key>
+        <Key ID="STR_KAT_Circulation_SETTING_AdvRhythm_Enable_DESC">
+            <English>Enables advanced cardiac arrest rhythms system</English>
+            <German>Aktiviert das erweiterte Herzrhythmus-System bei Herzstillstand</German>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_AdvRhythm_HTHold">
             <English>Enable H-and-T Holding in Arrest</English>
@@ -2659,6 +2727,10 @@
             <Chinesesimp>心律是否可能恶化</Chinesesimp>
             <Finnish>voivatko ne pahentua?</Finnish>
             <Dutch>Kan verslechteren</Dutch>
+        </Key>
+        <Key ID="STR_KAT_Circulation_SETTING_AdvRhythm_canDeteriorate_DESC">
+            <English>Allows cardiac arrest rhythms to deteriorate over time</English>
+            <German>Ermöglicht es Herzrhythmen, sich im Laufe der Zeit zu verschlechtern</German>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_AdvRhythm_deteriorateAfterTreatment">
             <English>Deteriorate After Treatment</English>
@@ -2798,6 +2870,10 @@
             <Finnish>Salli erilaiset onnistumismahdollisuudet elvytyksen suorittamiseen lääketieteellisen koulutustason perusteella</Finnish>
             <Dutch>Schakel verschillende CPR kansen op basis van medisch niveau in</Dutch>
         </Key>
+        <Key ID="STR_KAT_Circulation_SETTING_CPR_CHANCES_DESC">
+            <English>Enables different CPR success chances based on medical training level</English>
+            <German>Aktiviert verschiedene CPR-Erfolgschancen basierend auf medizinischer Ausbildung</German>
+        </Key>
         <Key ID="STR_KAT_Circulation_SETTING_CPR_ChanceInterval">
             <English>CPR Chance Interval</English>
             <Czech>Interval šance KPR</Czech>
@@ -2813,6 +2889,14 @@
             <Chinesesimp>心肺复苏概率间隔</Chinesesimp>
             <Finnish>Elvytyksen onnistumislaskelmien välinen aika</Finnish>
             <Dutch>CPR kans interval</Dutch>
+        </Key>
+        <Key ID="STR_KAT_Circulation_SETTING_CPR_ChanceInterval_DESC">
+            <English>Interval at which CPR success chance is rolled</English>
+            <German>Intervall, in dem die CPR-Erfolgschance gewürfelt wird</German>
+        </Key>
+        <Key ID="STR_KAT_Circulation_SETTING_CPR_OxygenationPeriod_DESC">
+            <English>Duration of oxygenation effect after CPR has stopped</English>
+            <German>Dauer des Sauerstoffeffekts nach dem Ende der CPR</German>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_DRAW_BLOODGROUPS">
             <English>Use Bloodgroups for drawing blood?</English>
@@ -2848,6 +2932,10 @@
             <Finnish>Kuinka kauan defibrillaattorityynyjen kiinnittäminen kestää</Finnish>
             <Dutch>Benodigde tijd op defibrillator pads aan te brengen</Dutch>
         </Key>
+        <Key ID="STR_KAT_Circulation_SETTING_DefibrillatorPads_AttachTime_DESC">
+            <English>Time required to attach defibrillator pads to patient</English>
+            <German>Benötigte Zeit zum Anbringen der Defibrillator-Pads am Patienten</German>
+        </Key>
         <Key ID="STR_KAT_Circulation_SETTING_DefibrillatorPads_DetachTime">
             <English>Detach Defibrillator Pads Time</English>
             <Czech>Čas k odpojení Elektrod defibrilátoru</Czech>
@@ -2864,6 +2952,10 @@
             <Finnish>Kuinka kauan defibrillaattorityynyjen irrottaminen kestää</Finnish>
             <Dutch>Benodigde tijd om defibrillator pads te verwijderen</Dutch>
         </Key>
+        <Key ID="STR_KAT_Circulation_SETTING_DefibrillatorPads_DetachTime_DESC">
+            <English>Time required to detach defibrillator pads from patient</English>
+            <German>Benötigte Zeit zum Entfernen der Defibrillator-Pads vom Patienten</German>
+        </Key>
         <Key ID="STR_KAT_Circulation_SETTING_Defibrillator_DistanceLimit">
             <English>Distance limit for defibrillators in meters</English>
             <Czech>Limit vzdálenosti elektrod v metrech</Czech>
@@ -2879,6 +2971,10 @@
             <Chinesesimp>除颤器的距离限制（单位：米）</Chinesesimp>
             <Finnish>Defibrillaattorien etäisyysraja metreinä</Finnish>
             <Dutch>Afstandslimiet voor defibrillators in meters</Dutch>
+        </Key>
+        <Key ID="STR_KAT_Circulation_SETTING_Defibrillator_DistanceLimit_DESC">
+            <English>Maximum distance between defibrillator and patient for operation</English>
+            <German>Maximale Entfernung zwischen Defibrillator und Patient für den Betrieb</German>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_ENABLE">
             <English>ACE-Circulation activated?</English>
@@ -2897,6 +2993,10 @@
             <Turkish>ACE-Sirkülasyon etkinleştirildi mi?</Turkish>
             <Finnish>ACE-Kierto aktivoitu?</Finnish>
             <Dutch>ACE-Circulatie actief?</Dutch>
+        </Key>
+        <Key ID="STR_KAT_Circulation_SETTING_ENABLE_DESC">
+            <English>Enables the KAT Circulation medical system</English>
+            <German>Aktiviert das KAT Kreislauf-Medizinsystem</German>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_MINIMUM_SAFE_DRAW">
             <English>Minimum blood volume for donor (liters)</English>
@@ -2987,6 +3087,10 @@
             <Chinesesimp>AED-X报警SpO2阈值</Chinesesimp>
             <Finnish>SpO2-taso, joka laukaisee AUD-X-hälytyksen</Finnish>
             <Dutch>Drempelwaarde voor AED-X alarm van SpO2</Dutch>
+        </Key>
+        <Key ID="STR_KAT_Circulation_SETTING_Threshold_SpO2Warning_DESC">
+            <English>SpO2 level at which the monitor starts warning</English>
+            <German>SpO2-Wert, bei dem der Monitor zu warnen beginnt</German>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_abg_enable">
             <English>Enable ABG Testing</English>
@@ -3196,6 +3300,10 @@
             <Turkish>Kan Grubu</Turkish>
             <Finnish>Veriryhmä</Finnish>
             <Dutch>Bloedgroep</Dutch>
+        </Key>
+        <Key ID="STR_KAT_Circulation_SETTING_bloodtype_player_DESC">
+            <English>Sets your preferred blood type for multiplayer</English>
+            <German>Legt Ihre bevorzugte Blutgruppe für Multiplayer fest</German>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_bloodtype_random_weighted">
             <English>Weighted Randomizer</English>
@@ -3749,6 +3857,10 @@
             <Chinese>用血壓計量血壓所需時間</Chinese>
             <Dutch>Benodigde tijd voor bloeddrukmeting met manchet</Dutch>
         </Key>
+        <Key ID="STR_KAT_Circulation_treatmentTime_BPCuff_DESC">
+            <English>Time required to measure blood pressure with blood pressure cuff</English>
+            <German>Benötigte Zeit zur Blutdruckmessung mit der Blutdruckmanschette</German>
+        </Key>
         <Key ID="STR_KAT_Circulation_treatmentTime_StethHR">
             <English>Time to measure HR with a Stethoscope</English>
             <Czech>Čas měření SF Stetoskopem</Czech>
@@ -3758,118 +3870,6 @@
             <Japanese>聴診器による脈拍測定の所要時間</Japanese>
             <Chinese>用聽診器測量心率所需時間</Chinese>
             <Dutch>Benodigde tijd voor het meten van hartfrequentie met een stethoscoop</Dutch>
-        </Key>
-        <Key ID="STR_KAT_Circulation_SETTING_ENABLE_DESC">
-            <English>Enables the KAT Circulation medical system</English>
-            <German>Aktiviert das KAT Kreislauf-Medizinsystem</German>
-        </Key>
-        <Key ID="STR_KAT_Circulation_SETTING_bloodtype_player_DESC">
-            <English>Sets your preferred blood type for multiplayer</English>
-            <German>Legt Ihre bevorzugte Blutgruppe für Multiplayer fest</German>
-        </Key>
-        <Key ID="STR_KAT_Circulation_SETTING_AED_duringCpr_DESC">
-            <English>Allows AED pads to be applied while CPR is being performed</English>
-            <German>Ermöglicht das Anbringen von AED-Pads während der Wiederbelebung</German>
-        </Key>
-        <Key ID="STR_KAT_Circulation_AED_X_MaxChance_DESC">
-            <English>Maximum success chance for AED-X defibrillation</English>
-            <German>Maximale Erfolgswahrscheinlichkeit für AED-X Defibrillation</German>
-        </Key>
-        <Key ID="STR_KAT_Circulation_AED_X_MinChance_DESC">
-            <English>Minimum success chance for AED-X defibrillation</English>
-            <German>Minimale Erfolgswahrscheinlichkeit für AED-X Defibrillation</German>
-        </Key>
-        <Key ID="STR_KAT_Circulation_AED_MaxChance_DESC">
-            <English>Maximum success chance for standard AED defibrillation</English>
-            <German>Maximale Erfolgswahrscheinlichkeit für Standard-AED Defibrillation</German>
-        </Key>
-        <Key ID="STR_KAT_Circulation_AED_MinChance_DESC">
-            <English>Minimum success chance for standard AED defibrillation</English>
-            <German>Minimale Erfolgswahrscheinlichkeit für Standard-AED Defibrillation</German>
-        </Key>
-        <Key ID="STR_KAT_Circulation_SETTING_AEDX_VitalsMonitor_AttachTime_DESC">
-            <English>Time required to attach AED-X vitals monitor to patient</English>
-            <German>Benötigte Zeit zum Anbringen des AED-X Vitalmonitors am Patienten</German>
-        </Key>
-        <Key ID="STR_KAT_Circulation_SETTING_AEDX_VitalsMonitor_DetachTime_DESC">
-            <English>Time required to detach AED-X vitals monitor from patient</English>
-            <German>Benötigte Zeit zum Entfernen des AED-X Vitalmonitors vom Patienten</German>
-        </Key>
-        <Key ID="STR_KAT_Circulation_SETTING_DefibrillatorPads_AttachTime_DESC">
-            <English>Time required to attach defibrillator pads to patient</English>
-            <German>Benötigte Zeit zum Anbringen der Defibrillator-Pads am Patienten</German>
-        </Key>
-        <Key ID="STR_KAT_Circulation_SETTING_DefibrillatorPads_DetachTime_DESC">
-            <English>Time required to detach defibrillator pads from patient</English>
-            <German>Benötigte Zeit zum Entfernen der Defibrillator-Pads vom Patienten</German>
-        </Key>
-        <Key ID="STR_KAT_Circulation_SETTING_Defibrillator_DistanceLimit_DESC">
-            <English>Maximum distance between defibrillator and patient for operation</English>
-            <German>Maximale Entfernung zwischen Defibrillator und Patient für den Betrieb</German>
-        </Key>
-        <Key ID="STR_KAT_Circulation_SETTING_AED_X_VitalsMonitor_SoundsSelect_DESC">
-            <English>Selects which sound set to use for AED-X vitals monitor</English>
-            <German>Wählt aus, welcher Soundsatz für den AED-X Vitalmonitor verwendet wird</German>
-        </Key>
-        <Key ID="STR_KAT_Circulation_SETTING_Threshold_SpO2Warning_DESC">
-            <English>SpO2 level at which the monitor starts warning</English>
-            <German>SpO2-Wert, bei dem der Monitor zu warnen beginnt</German>
-        </Key>
-        <Key ID="STR_KAT_Circulation_SETTING_AED_X_VitalsMonitor_BloodPressureInterval_DESC">
-            <English>Controls how blood pressure is measured on AED-X monitor</English>
-            <German>Kontrolliert, wie der Blutdruck am AED-X Monitor gemessen wird</German>
-        </Key>
-        <Key ID="STR_KAT_Circulation_SETTING_AED_X_VitalsMonitor_BloodPressureInterval_Time_DESC">
-            <English>Time interval for automatic blood pressure measurements</English>
-            <German>Zeitintervall für automatische Blutdruckmessungen</German>
-        </Key>
-        <Key ID="STR_KAT_Circulation_SETTING_CPR_CHANCES_DESC">
-            <English>Enables different CPR success chances based on medical training level</English>
-            <German>Aktiviert verschiedene CPR-Erfolgschancen basierend auf medizinischer Ausbildung</German>
-        </Key>
-        <Key ID="STR_KAT_Circulation_CPR_MaxChance_Doctor_DESC">
-            <English>Maximum CPR success chance for doctors</English>
-            <German>Maximale CPR-Erfolgschance für Ärzte</German>
-        </Key>
-        <Key ID="STR_KAT_Circulation_CPR_MinChance_Doctor_DESC">
-            <English>Minimum CPR success chance for doctors</English>
-            <German>Minimale CPR-Erfolgschance für Ärzte</German>
-        </Key>
-        <Key ID="STR_KAT_Circulation_CPR_MaxChance_RegularMedic_DESC">
-            <English>Maximum CPR success chance for regular medics</English>
-            <German>Maximale CPR-Erfolgschance für reguläre Sanitäter</German>
-        </Key>
-        <Key ID="STR_KAT_Circulation_CPR_MinChance_RegularMedic_DESC">
-            <English>Minimum CPR success chance for regular medics</English>
-            <German>Minimale CPR-Erfolgschance für reguläre Sanitäter</German>
-        </Key>
-        <Key ID="STR_KAT_Circulation_CPR_MaxChance_Default_DESC">
-            <English>Maximum CPR success chance for untrained personnel</English>
-            <German>Maximale CPR-Erfolgschance für unausgebildetes Personal</German>
-        </Key>
-        <Key ID="STR_KAT_Circulation_CPR_MinChance_Default_DESC">
-            <English>Minimum CPR success chance for untrained personnel</English>
-            <German>Minimale CPR-Erfolgschance für unausgebildetes Personal</German>
-        </Key>
-        <Key ID="STR_KAT_Circulation_SETTING_CPR_ChanceInterval_DESC">
-            <English>Interval at which CPR success chance is rolled</English>
-            <German>Intervall, in dem die CPR-Erfolgschance gewürfelt wird</German>
-        </Key>
-        <Key ID="STR_KAT_Circulation_SETTING_CPR_OxygenationPeriod_DESC">
-            <English>Duration of oxygenation effect after CPR has stopped</English>
-            <German>Dauer des Sauerstoffeffekts nach dem Ende der CPR</German>
-        </Key>
-        <Key ID="STR_KAT_Circulation_SETTING_AdvRhythm_Enable_DESC">
-            <English>Enables advanced cardiac arrest rhythms system</English>
-            <German>Aktiviert das erweiterte Herzrhythmus-System bei Herzstillstand</German>
-        </Key>
-        <Key ID="STR_KAT_Circulation_SETTING_AdvRhythm_canDeteriorate_DESC">
-            <English>Allows cardiac arrest rhythms to deteriorate over time</English>
-            <German>Ermöglicht es Herzrhythmen, sich im Laufe der Zeit zu verschlechtern</German>
-        </Key>
-        <Key ID="STR_KAT_Circulation_treatmentTime_BPCuff_DESC">
-            <English>Time required to measure blood pressure with blood pressure cuff</English>
-            <German>Benötigte Zeit zur Blutdruckmessung mit der Blutdruckmanschette</German>
         </Key>
         <Key ID="STR_KAT_Circulation_treatmentTime_StethHR_DESC">
             <English>Time required to measure heart rate with stethoscope</English>

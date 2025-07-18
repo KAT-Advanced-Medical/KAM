@@ -157,4 +157,16 @@ class CfgSounds {
         };
         titles[] = {};
     };
+    class GVAR(lowoxwarning_short)
+    {
+        name = QGVAR(lowoxwarning_short);
+        sound[] = {QPATHTOF(audio\lowoxwarning_short.ogg), 1.5, 1, 50};
+        titles[]={};
+    };
+    class GVAR(lowoxwarning)
+    {
+        name = QGVAR(lowoxwarning);
+        sound[] = {QPATHTOF(audio\lowoxwarning.ogg), 1.5, 1, 50};
+        titles[]={};
+    };
 };

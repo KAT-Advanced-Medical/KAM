@@ -66,6 +66,44 @@ class CfgVehicles {
                         icon = QPATHTOF(ui\kat_chemicalDet_icon.paa);
                     };
                 };
+                class KAT_SCBAcontrols {
+                    displayName = CSTRING(Scbacontrols_menu);
+                    icon = QPATHTOF(ui\Scba_icon.paa);
+                    exceptions[] = {"isNotSwimming"};
+
+                    class KAT_Scbacontrols_Enable {
+                        displayName = CSTRING(EnableSCBA);
+                        condition = QUOTE(([_player] call FUNC(hasSCBA)) && !(_player getVariable [ARR_2(QQGVAR(SCBAEnabled),false)]));
+                        exceptions[] = {"isNotSwimming"};
+                        statement = QUOTE([_player] call FUNC(enableSCBA));
+                        showDisabled = 0;
+                        icon = QPATHTOF(ui\Scba_icon.paa);
+                    };
+                    class KAT_Scbacontrols_Disable {
+                        displayName = CSTRING(DisableSCBA);
+                        condition = QUOTE(([_player] call FUNC(hasSCBA)) && (_player getVariable [ARR_2(QQGVAR(SCBAEnabled),false)]));
+                        exceptions[] = {"isNotSwimming"};
+                        statement = QUOTE([_player] call FUNC(disableSCBA));
+                        showDisabled = 0;
+                        icon = QPATHTOF(ui\Scba_icon.paa);
+                    };
+                    class KAT_Scbacontrols_Check {
+                        displayName = CSTRING(CheckSCBA);
+                        condition = QUOTE([_player] call FUNC(hasSCBA));
+                        exceptions[] = {"isNotSwimming"};
+                        statement = QUOTE([_player] call FUNC(checkSCBA));
+                        showDisabled = 0;
+                        icon = QPATHTOF(ui\Scba_icon.paa);
+                    };
+                    class KAT_Scbacontrols_Recharge {
+                        displayName = CSTRING(RechargeSCBA);
+                        condition = QUOTE(([_player] call FUNC(hasSCBA)) && !(_player getVariable [ARR_2(QQGVAR(SCBAEnabled),false)]));
+                        exceptions[] = {"isNotSwimming"};
+                        statement = QUOTE([_player] call FUNC(enableChemDetector));
+                        showDisabled = 0;
+                        icon = QPATHTOF(ui\Scba_icon.paa);
+                    };
+                };
             };
         };
     };

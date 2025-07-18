@@ -22,10 +22,45 @@ Lethal. Causes respiratory symptoms and severe burn injuries.
 Lethal and highly dangerous. Can penetrate standard filters. Causes breathing difficulties and cardiac issues.  
 **Counter:** CBRN suit, gas mask, and SCBA (Self-Contained Breathing Apparatus).
 
+## Chemical Detector
+
+Adds a chemical detector. You first need to enable the detector. 
+
+The chemical detector displays the actual time on the left and the zone intensity on the right. The color of the display depends on the zone tier:
+
+- **Transparency:** No gas  
+- **Green:** CS gas  
+- **Yellow:** Pulmonary agent  
+- **Orange:** Blister agent  
+- **Red:** Nerve agent  
+
 ## Counters
 
 All countermeasures can be configured in **Addons Settings > KAT Chemical**.
 
+### Gas mask
+
+Gas mask configured in addons settings provides protection for tier 1,2,3 agents. It also cooperate with SCBA to protect against tier 4 agent. Gas mask provide protection only when filter is durable, or oxygen is provided by SCBA. the filter wears out with use.
+
+### SCBA
+
+SCBA - Self-Contained Breathing Apparatus. When turned on provides fresh air.
+
+In this section i will use oxygen and air interchangeably.
+To work you first need to enable SCBA under ace self inetraction menu > kat equipment. To enable you need to wear gas mask.
+You can check remaining oxygen under this same menu.
+Capacity and working time can be set under addons settings menu. 
+Capacity is expressed in remaining usage time.
+When oxygen is provided there is small O2 icon i your botoom-left screen corner. Based on color of icon you can know about remaining capacity. When the icon is yellow you have 5 minutes of oxygen left, when red you have 1 minute of oxygen left. When icon isnt visible there is no oxygen provided.
+You can change cylinders under ace menu. - TODO
+
+## Hoses segments and filters visibility
+
+When you have vannila/contact dlc equipment, when you turned on scba there will be autoamtic script which enables visbility of hose segments. Support equipemnt: SCUBA, Combat unit respirator, APR Nato, Regulator Facepiece.
+
+## Mask overley
+
+SOON, there will be mask overlay for vanilla/contact dlc masks overlay if enabled
 ## Medicine
 
 All types of poisoning can be treated with **Atropine**.

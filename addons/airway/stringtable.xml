@@ -1334,10 +1334,6 @@
             <English>Time interval in seconds at which the system checks for new occlusion occurrences in unconscious patients.</English>
             <German>Zeitintervall in Sekunden, in dem das System neue Okklusionsereignisse bei bewusstlosen Patienten überprüft.</German>
         </Key>
-        <Key ID="STR_KAT_Airway_SETTING_puking_sound_DESC">
-            <English>Enable or disable the sound effect when a patient develops airway occlusion (vomiting).</English>
-            <German>Aktiviert oder deaktiviert den Soundeffekt, wenn bei einem Patienten eine Atemwegsobstruktion (Erbrechen) auftritt.</German>
-        </Key>
         <Key ID="STR_KAT_Airway_SETTING_puking_sound">
             <English>Activate the puking sound?</English>
             <Czech>Aktivovat zvuk zvracení?</Czech>
@@ -1356,6 +1352,10 @@
             <Norwegian>Aktiver lyd for oppkast?</Norwegian>
             <Finnish>Ota oksennusääni käyttöön?</Finnish>
             <Dutch>Braakgeluiden activeren?</Dutch>
+        </Key>
+        <Key ID="STR_KAT_Airway_SETTING_puking_sound_DESC">
+            <English>Enable or disable the sound effect when a patient develops airway occlusion (vomiting).</English>
+            <German>Aktiviert oder deaktiviert den Soundeffekt, wenn bei einem Patienten eine Atemwegsobstruktion (Erbrechen) auftritt.</German>
         </Key>
         <Key ID="STR_KAT_Airway_SUCCES_HEADTURNING">
             <English>Success probability for head-turning</English>

@@ -47,6 +47,15 @@ class RscTitles
                 w = QUOTE(FRAME_W(25));
                 h = QUOTE(FRAME_H(25));
             };
+            class Background: RscText
+            {
+                idc = 18802;
+                x = QUOTE(SAFEZONE_X_RIGHTEDGE - FRAME_W(25) - FRAME_W(6.5));
+                y = QUOTE(SAFEZONE_Y_LOWEDGE - FRAME_H(7.3));
+                w = QUOTE(FRAME_W(9.8));
+                h = QUOTE(FRAME_H(5));
+                colorBackground[] = {0, 0, 0, 0.6}; // półprzezroczyste tło
+            };
             class KatChemTime: RscText
             {
                 idc = 18804;

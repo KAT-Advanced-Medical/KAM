@@ -17,7 +17,7 @@
 params ["_unit"];
 
 if !(goggles _unit in (missionNamespace getVariable [QGVAR(availGasmaskList), []])) exitWith {};
-if (backpack _unit in (missionNamespace getVariable [QGVAR(availBackpackList), []])) exitWith {};
+if (backpack _unit in (missionNamespace getVariable [QGVAR(availBackpackList), []]) && (_unit getVariable [QGVAR(SCBAEnabled), false])) exitWith {};
 
 
 // Get the maximum time the gas mask filter can last (from settings)

@@ -69,6 +69,9 @@
             <Finnish>Tarkista kaasunaamarin kestävyys</Finnish>
             <Dutch>Check levensduur Gasmasker</Dutch>
         </Key>
+        <Key ID="STR_KAT_Chemical_CheckSCBA">
+            <English>Check remaring air</English>
+        </Key>
         <Key ID="STR_KAT_Chemical_ChemicalDetectorDescription">
             <English>Used to detect KAT toxic chemicals</English>
             <Czech>Používá se k detekování toxických chemikálií KAT</Czech>
@@ -124,6 +127,9 @@
             <Chinesesimp>禁用警告音</Chinesesimp>
             <Dutch>Waarschuwingstoon uitschakelen</Dutch>
         </Key>
+        <Key ID="STR_KAT_Chemical_DisableSCBA">
+            <English>Disable air</English>
+        </Key>
         <Key ID="STR_KAT_Chemical_EnableDetector">
             <English>Turn On Detector</English>
             <Czech>Zapnout detektor</Czech>
@@ -145,6 +151,9 @@
             <Chinese>啟用警告音</Chinese>
             <Chinesesimp>启用警告音</Chinesesimp>
             <Dutch>Waarschuwingstoon inschakelen</Dutch>
+        </Key>
+        <Key ID="STR_KAT_Chemical_EnableSCBA">
+            <English>Enable air</English>
         </Key>
         <Key ID="STR_KAT_Chemical_GasBox_Displayname">
             <English>[ACE] 82mm Gas Rounds Box</English>
@@ -401,7 +410,7 @@
             <English>Blister agent (Level 2)</English>
             <Polish>środek parzący ( Poziom 2)</Polish>
         </Key>
-         <Key ID="STR_KAT_Chemical_Lvl3_Gas">
+        <Key ID="STR_KAT_Chemical_Lvl3_Gas">
             <English>Nerve Agent (Level 3)</English>
             <Polish>środek paralityczno-drgawkowy ( Poziom 3)</Polish>
         </Key>
@@ -552,6 +561,17 @@
             <Chinesesimp>戴上防毒面具</Chinesesimp>
             <Dutch>Zet gasmasker op</Dutch>
         </Key>
+        <Key ID="STR_KAT_Chemical_RechargeSCBA">
+            <English>Recharge SCBA</English>
+        </Key>
+        <Key ID="STR_KAT_Chemical_SETTING_AVAIL_BACKPACK">
+            <English>Accepted backpacks SCBA</English>
+            <Polish>Dozwolone plecaki AODO</Polish>
+        </Key>
+        <Key ID="STR_KAT_Chemical_SETTING_AVAIL_BACKPACK_DISC">
+            <English>Enter here the classname of the backpack(scba) that should work with the system.</English>
+            <Polish>Wpisz classname plecaka, (aodo) ktory ma dzialc z systemem</Polish>
+        </Key>
         <Key ID="STR_KAT_Chemical_SETTING_AVAIL_GASMASK">
             <English>Accepted gas masks</English>
             <Czech>Povolené plynové masky</Czech>
@@ -559,27 +579,6 @@
             <Spanish>Máscaras de gas aceptadas</Spanish>
             <Italian>Maschere antigas accettate</Italian>
             <Polish>Dozwolone maski gazowe</Polish>
-            <Portuguese>Permitir máscaras de gás</Portuguese>
-            <Russian>Разрешенные противогазы</Russian>
-            <German>Akzeptierte Gasmasken</German>
-            <Korean>방독면 허용</Korean>
-            <Japanese>認証済みのガスマスク</Japanese>
-            <Chinese>可使用的防毒面具</Chinese>
-            <Chinesesimp>被接受的防毒面具</Chinesesimp>
-            <Finnish>Hyväksytyt kaasunaamarit</Finnish>
-            <Dutch>Geaccepteerde gasmaskers</Dutch>
-        </Key>
-        <Key ID="STR_KAT_Chemical_SETTING_AVAIL_BACKPACK">
-            <English>Accepted backpacks SCBA</English>
-            <Polish>Dozwolone plecaki AODO</Polish>
-        </Key>
-        <Key ID="STR_KAT_Chemical_SETTING_AVAIL_SUITS">
-            <English>Accepted cbrn suits</English>
-            <Czech>Povolené plynové masky</Czech>
-            <French>Masques à gaz acceptés</French>
-            <Spanish>Máscaras de gas aceptadas</Spanish>
-            <Italian>Maschere antigas accettate</Italian>
-            <Polish>Dozwolone stoje abc</Polish>
             <Portuguese>Permitir máscaras de gás</Portuguese>
             <Russian>Разрешенные противогазы</Russian>
             <German>Akzeptierte Gasmasken</German>
@@ -607,9 +606,22 @@
             <Finnish>Anna niiden maskien luokan nimet, joiden pitäisi toimia järjestelmän kanssa</Finnish>
             <Dutch>Voer hier de classnames toe van gasmaskers die zouden moeten werken met het systeem.</Dutch>
         </Key>
-        <Key ID="STR_KAT_Chemical_SETTING_AVAIL_BACKPACK_DISC">
-            <English>Enter here the classname of the backpack(scba) that should work with the system.</English>
-            <Polish>Wpisz classname plecaka, (aodo) ktory ma dzialc z systemem</Polish>
+        <Key ID="STR_KAT_Chemical_SETTING_AVAIL_SUITS">
+            <English>Accepted cbrn suits</English>
+            <Czech>Povolené plynové masky</Czech>
+            <French>Masques à gaz acceptés</French>
+            <Spanish>Máscaras de gas aceptadas</Spanish>
+            <Italian>Maschere antigas accettate</Italian>
+            <Polish>Dozwolone stoje abc</Polish>
+            <Portuguese>Permitir máscaras de gás</Portuguese>
+            <Russian>Разрешенные противогазы</Russian>
+            <German>Akzeptierte Gasmasken</German>
+            <Korean>방독면 허용</Korean>
+            <Japanese>認証済みのガスマスク</Japanese>
+            <Chinese>可使用的防毒面具</Chinese>
+            <Chinesesimp>被接受的防毒面具</Chinesesimp>
+            <Finnish>Hyväksytyt kaasunaamarit</Finnish>
+            <Dutch>Geaccepteerde gasmaskers</Dutch>
         </Key>
         <Key ID="STR_KAT_Chemical_SETTING_AVAIL_SUITS_DISC">
             <English>Enter here the classname of the suits that should work with the system.</English>
@@ -648,6 +660,22 @@
             <Chinesesimp>确定戴防毒面具在毒气中站立多长时间而不会感染。</Chinesesimp>
             <Finnish>Määrittää, kuinka kauan voit seistä kaasussa kaasunaamarin kanssa vaikuttamatta siihen</Finnish>
             <Dutch>Bepaald hoelang je in gas kan staan zonder dat je geïnfecteerd raakt.</Dutch>
+        </Key>
+        <Key ID="STR_KAT_Chemical_SETTING_SCBA_MAX_OXYGEN_TIME">
+            <English>Maximum oxygen time</English>
+            <Polish>Maksymalny czas dzialania butli z tlenem</Polish>
+        </Key>
+        <Key ID="STR_KAT_Chemical_SETTING_SCBA_MAX_OXYGEN_TIME_DESC">
+            <English>Determines how long SCBA will provide oxygen/fresh air</English>
+            <Polish>Ustala jak długo AODO będzie dostarczało powietrze</Polish>
+        </Key>
+        <Key ID="STR_KAT_Chemical_SETTING_burnTime">
+            <English>Time until next burn damage</English>
+            <Polish>Czas przed następnym popażeniem</Polish>
+        </Key>
+        <Key ID="STR_KAT_Chemical_SETTING_burnTime_DESC">
+            <English>Time beetwen each burn damage</English>
+            <Polish>Ustala ile czasu minie zanim gracz dostanie następne obrażenia popażenia chemicznego</Polish>
         </Key>
         <Key ID="STR_KAT_Chemical_SETTING_dropWeaponChance">
             <English>Drop Weapon Chance</English>
@@ -724,10 +752,6 @@
             <Finnish>Aikaa tartunnan saamiseen</Finnish>
             <Dutch>Tijd tot infectie</Dutch>
         </Key>
-        <Key ID="STR_KAT_Chemical_SETTING_burnTime">
-            <English>Time until next burn damage</English>
-            <Polish>Czas przed następnym popażeniem</Polish>
-        </Key>
         <Key ID="STR_KAT_Chemical_SETTING_infectionTime_DESC">
             <English>Time you can stand in the gas before you get infected or need a gas mask.</English>
             <Czech>Čas po který můžete stát v plynu bez infikování se či potřeby plynové masky</Czech>
@@ -744,10 +768,6 @@
             <Chinesesimp>在感染或需要防毒面具之前，你可以站在毒气中。</Chinesesimp>
             <Finnish>Aika, jonka voit seistä kaasussa, ennen kuin sinulla on vaikutusta tai tarvitset kaasunaamaria</Finnish>
             <Dutch>Tijd dat je in gas kan staan voordat je geïnfecteerd raakt of een gasmasker nodig hebt</Dutch>
-        </Key>
-        <Key ID="STR_KAT_Chemical_SETTING_burnTime_DESC">
-            <English>Time beetwen each burn damage</English>
-            <Polish>Ustala ile czasu minie zanim gracz dostanie następne obrażenia popażenia chemicznego</Polish>
         </Key>
         <Key ID="STR_KAT_Chemical_SETTING_showPoisoning">
             <English>Show Poisoning</English>
@@ -770,6 +790,18 @@
             <Chinese>確定醫療選單中是否顯示中毒</Chinese>
             <Chinesesimp>确定医疗菜单中是否显示中毒</Chinesesimp>
             <Dutch>Bepaald of intoxicaties zichtbaar zijn in het medische menu</Dutch>
+        </Key>
+        <Key ID="STR_KAT_Chemical_Scbacontrols_menu">
+            <English>SCBA</English>
+            <Czech>SCBA</Czech>
+            <French>SCBA</French>
+            <Italian>SCBA</Italian>
+            <Polish>AODO</Polish>
+            <German>SCBA</German>
+            <Japanese>SCBA</Japanese>
+            <Chinese>SCBA</Chinese>
+            <Chinesesimp>SCBA</Chinesesimp>
+            <Dutch>SCBA</Dutch>
         </Key>
         <Key ID="STR_KAT_Chemical_TakeOffGasMask">
             <English>Take off gas mask</English>
@@ -815,14 +847,6 @@
             <Chinesesimp>有毒气体</Chinesesimp>
             <Finnish>Myrkyllinen kaasu</Finnish>
             <Dutch>Gifgas</Dutch>
-        </Key>
-        <Key ID="STR_KAT_Chemical_BlisterAgent_MFDNAME">
-            <English>Blister Agent</English>
-            <Polish>Środek parzący</Polish>
-        </Key>
-        <Key ID="STR_KAT_Chemical_BlisterAgent_DisplayName">
-            <English>82mm Blister Agent Gas Round</English>
-            <Polish>Pocisk środka parzacego kal.82mm</Polish>
         </Key>
         <Key ID="STR_KAT_Chemical_TriWire_Gas_Desc">
             <English>Type: Tripwire gas - Sprays a poisonous gas when triggered.&lt;br /&gt;Rounds: 1&lt;br /&gt;Used on: Ground</English>

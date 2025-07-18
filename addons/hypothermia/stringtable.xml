@@ -61,6 +61,10 @@
             <Chinesesimp>启用低温</Chinesesimp>
             <Dutch>Schakel hypothermie in</Dutch>
         </Key>
+        <Key ID="STR_KAT_Hypothermia_ENABLE_HYPOTHERMIA_DESC">
+            <English>Enables the hypothermia system</English>
+            <German>Aktiviert das Hypothermie-System</German>
+        </Key>
         <Key ID="STR_KAT_Hypothermia_FluidWarmer_DescShort">
             <English>Provides heating to IV fluids. Must be placed on an already existing line</English>
             <Czech>Poskytuje ohřev infuzních tekutin. Musí být umístěn na již existující hadici.</Czech>
@@ -415,10 +419,6 @@
             <Chinese>患者感到溫暖</Chinese>
             <Chinesesimp>患者感觉温暖</Chinesesimp>
             <Dutch>Patiënt voelt warm aan</Dutch>
-        </Key>
-        <Key ID="STR_KAT_Hypothermia_ENABLE_HYPOTHERMIA_DESC">
-            <English>Enables the hypothermia system</English>
-            <German>Aktiviert das Hypothermie-System</German>
         </Key>
     </Package>
 </Project>

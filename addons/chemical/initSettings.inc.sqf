@@ -4,7 +4,7 @@
     "EDITBOX",
     [LLSTRING(SETTING_AVAIL_GASMASK), LLSTRING(SETTING_AVAIL_GASMASK_DISC)],
     CBA_SETTINGS_CAT,
-    "'G_AirPurifyingRespirator_01_F', 'kat_mask_M50', 'kat_mask_M04'",
+    "'G_AirPurifyingRespirator_01_F', 'G_AirPurifyingRespirator_01_nofilter_F', 'kat_mask_M50', 'kat_mask_M04' 'G_AirPurifyingRespirator_02_black_F', 'G_AirPurifyingRespirator_02_olive_F', 'G_AirPurifyingRespirator_02_sand_F', 'G_RegulatorMask_F'",
     1,
     {
         private _array = [_this, "CfgGlasses"] call FUNC(getList);
@@ -47,6 +47,25 @@
     [LLSTRING(SETTING_GASMASK_DURABILITY), LLSTRING(SETTING_GASMASK_DURABILITY_DISC)],
     CBA_SETTINGS_CAT,
     [1, 3600, 900],
+    true
+] call CBA_fnc_addSetting;
+
+// SCBA Oxygen Time
+[
+    QGVAR(SCBA_maxOxygenTime),
+    "TIME",
+    [LLSTRING(SETTING_SCBA_MAX_OXYGEN_TIME), LLSTRING(SETTING_SCBA_MAX_OXYGEN_TIME_DESC)],
+    CBA_SETTINGS_CAT,
+    [1, 7200, 1800],
+    true
+] call CBA_fnc_addSetting;
+//time before unit get infected
+[
+    QGVAR(infectionTime),
+    "TIME",
+    [LLSTRING(SETTING_infectionTime), LLSTRING(SETTING_infectionTime_DESC)],
+    CBA_SETTINGS_CAT,
+    [0, 3600, 60],
     true
 ] call CBA_fnc_addSetting;
 

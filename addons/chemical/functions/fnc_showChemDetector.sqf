@@ -2,7 +2,7 @@
 #include "..\script_component.hpp"
 /*
  * Author: Garth 'L-H' de Wet
- * Modified: Mazinski
+ * Modified: Mazinski, kolmipilot
  * Displays the JCAD on screen.
  *
  * Arguments:
@@ -29,10 +29,11 @@ private _display = uiNamespace getVariable ["KAT_ChemicalDetector", displayNull]
 private _background = _display displayCtrl 18801;
 private _time = _display displayCtrl 18804;
 private _exposure = _display displayCtrl 18805;
+private _screenLevel = _display displayCtrl 18802;
 
 [{
     _this params ["_args", "_pfhID"];
-    _args params ["_unit", "_time", "_exposure"];
+    _args params ["_unit", "_time", "_exposure", "_screenLevel"];
 
     if !(GVAR(ChemDetectorActive)) exitWith {
         _pfhID call CBA_fnc_removePerFrameHandler;
@@ -68,7 +69,7 @@ private _exposure = _display displayCtrl 18805;
             case 3: {_color = [1, 0, 0, 0.6];};
         };
         };
-        _exposure ctrlSetBackgroundColor _color;
+        _screenLevel ctrlSetBackgroundColor _color;
 
         _unit setVariable [QGVAR(areaIntensity), _intensity, true];
     } else {
@@ -79,5 +80,6 @@ private _exposure = _display displayCtrl 18805;
 }, 1, [
     _unit,
     _time,
-    _exposure
+    _exposure,
+    _screenLevel
 ]] call CBA_fnc_addPerFrameHandler;
