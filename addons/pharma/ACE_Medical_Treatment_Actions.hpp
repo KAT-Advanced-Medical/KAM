@@ -1426,7 +1426,7 @@ class ACE_Medical_Treatment_Actions {
         allowedSelections[] = {"Chest", "Neck", "LeftArm", "RightArm", "UpperLeftLeg", "UpperRightLeg", "UpperLeftArm", "UpperRightArm", "LeftLeg", "RightLeg"};
         items[] = {"kat_fentPatch"};
         condition = QUOTE(!([ARR_3(_player,_patient,_bodyPart)] call FUNC(treatmentAdvanced_FentanylPatchCheck)));
-        callbackSuccess = QUOTE(([ARR_3(_player,_patient,_bodyPart)] call FUNC(treatmentAdvanced_FentanylPatch)));
+        callbackSuccess = QFUNC(treatmentAdvanced_FentanylPatch);
         sounds[] = {};
     };
     class RemoveFentPatch: ApplyFentPatch {
@@ -1438,7 +1438,7 @@ class ACE_Medical_Treatment_Actions {
         medicRequired = 0;
         items[] = {};
         condition = QUOTE(([ARR_3(_player,_patient,_bodyPart)] call FUNC(treatmentAdvanced_FentanylPatchCheck)));
-        callbackSuccess = QUOTE(([ARR_3(_player,_patient,_bodyPart)] call FUNC(treatmentAdvanced_RemoveFentanylPatch)));
+        callbackSuccess = QFUNC(treatmentAdvanced_RemoveFentanylPatch);
         sounds[] = {};
     };
 };
