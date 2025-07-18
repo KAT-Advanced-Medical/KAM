@@ -81,25 +81,13 @@ if (((backpack _unit == "B_SCBA_01_F") || (backpack _unit == "B_CombinationUnitR
 
     if (!(_backpack getVariable [QGVAR(SCBA_5min_warning), false]) && {_reserve < 300 && _reserve >= 30 }) then {
         _backpack setVariable [QGVAR(SCBA_5min_warning), true];
-        private _proxy = "building" createVehicle position _unit;
-        _proxy attachTo [_unit, [0, 0, 0.5], "Head"];
-        [QGVAR(playTone), [_proxy, QGVAR(lowoxwarning_short)], _proxy] call CBA_fnc_targetEvent;
+        [QGVAR(playTone), [_unit, QGVAR(lowoxwarning_short)], _unit] call CBA_fnc_targetEvent;
         (uiNamespace getVariable [QGVAR(SCBA_o2), ctrlNull]) ctrlSetStructuredText parseText "<t color='#ffa500' align='left' valign='top' size='1.2'>O²</t>";
-        [{
-            detach _this;
-            deleteVehicle _this;
-        }, _proxy, 2] call CBA_fnc_waitAndExecute;
     };
     if (!(_backpack getVariable [QGVAR(1min_warning), false]) && {_reserve < 30}) then {
         _backpack setVariable [QGVAR(1min_warning), true];
-        private _proxy = "building" createVehicle position _unit;
-        _proxy attachTo [_unit, [0, 0, 0.5], "Head"];
-       [QGVAR(playTone), [_proxy, QGVAR(lowoxwarning)], _proxy] call CBA_fnc_targetEvent;
+       [QGVAR(playTone), [_unit, QGVAR(lowoxwarning)], _unit] call CBA_fnc_targetEvent;
         (uiNamespace getVariable [QGVAR(SCBA_o2), ctrlNull]) ctrlSetStructuredText parseText "<t color='#ff0000' align='left' valign='top' size='1.2'>O²</t>";
-        [{
-            detach _this;
-            deleteVehicle _this;
-        }, _proxy, 15] call CBA_fnc_waitAndExecute;
     };
 
     _args set [2, CBA_missionTime];
