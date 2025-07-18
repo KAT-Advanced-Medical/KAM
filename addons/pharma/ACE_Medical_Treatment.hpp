@@ -574,13 +574,13 @@ class ACE_ADDON(Medical_Treatment) {
             hrIncreaseHigh[] = {2, 10};
             timeInSystem = 180;
             timeTillMaxEffect = 15;
-            viscosityChange = 35;
+            viscosityChange = 10;
             dose = 1;
             alphaFactor = -0.2;
             maximumEffectiveDose = 30;
         };
         class syringe_Fentanyl_5ml {
-            painReduce = 0.6;
+            painReduce = 1;
             hrIncreaseLow[] = {-5, -10};
             hrIncreaseNormal[] = {-10, -15};
             hrIncreaseHigh[] = {-10, -15};
@@ -599,7 +599,7 @@ class ACE_ADDON(Medical_Treatment) {
             nauseaMult = 0.4;
         };
         class syringe_Ketamine_5ml {
-            painReduce = 0.5;
+            painReduce = 0.8;
             hrIncreaseLow[] = {5, 20};
             hrIncreaseNormal[] = {10, 20};
             hrIncreaseHigh[] = {5, 20};
@@ -619,7 +619,7 @@ class ACE_ADDON(Medical_Treatment) {
             nauseaMult = 0.3;
         };
         class syringe_Nalbuphine_5ml {
-            painReduce = 0.5;
+            painReduce = 0.6;
             hrIncreaseLow[] = {-5, 0};
             hrIncreaseNormal[] = {-10, -5};
             hrIncreaseHigh[] = {-15, -5};
@@ -713,12 +713,12 @@ class ACE_ADDON(Medical_Treatment) {
             maximumEffectiveDose = 30;
         };
         class syringe_MorphineIV_5ml {
-            painReduce = 0.6;
+            painReduce = 0.7;
             hrIncreaseLow[] = {-5, -15};
             hrIncreaseNormal[] = {-5, -20};
             hrIncreaseHigh[] = {-5, -20};
             timeInSystem = 600;
-            timeTillMaxEffect = 30;
+            timeTillMaxEffect = 15;
             dose = 1;
             viscosityChange = -7;
             opioidRelief = 1.1;
@@ -813,7 +813,7 @@ class ACE_ADDON(Medical_Treatment) {
             maximumEffectiveDose = 30;
         };
         class syringe_Fentanyl_10ml {
-            painReduce = 0.6;
+            painReduce = 1;
             hrIncreaseLow[] = {-5, -10};
             hrIncreaseNormal[] = {-10, -15};
             hrIncreaseHigh[] = {-10, -15};
@@ -832,7 +832,7 @@ class ACE_ADDON(Medical_Treatment) {
             nauseaMult = 0.3;
         };
         class syringe_Ketamine_10ml {
-            painReduce = 0.6;
+            painReduce = 0.8;
             hrIncreaseLow[] = {5, 20};
             hrIncreaseNormal[] = {10, 25};
             hrIncreaseHigh[] = {5, 25};
@@ -849,12 +849,12 @@ class ACE_ADDON(Medical_Treatment) {
             nauseaMult = 0.3;
         };
         class syringe_Nalbuphine_10ml {
-            painReduce = 0.5;
+            painReduce = 0.6;
             hrIncreaseLow[] = {-5, 0};
             hrIncreaseNormal[] = {-10, -5};
             hrIncreaseHigh[] = {-15, -5};
             timeInSystem = 300;
-            timeTillMaxEffect = 45;
+            timeTillMaxEffect = 60;
             dose = 1;
             viscosityChange = -5;
             opioidRelief = 1.1;
@@ -875,11 +875,11 @@ class ACE_ADDON(Medical_Treatment) {
             maximumEffectiveDose = 30;
         };
         class syringe_MorphineIV_10ml {
-            painReduce = 0.6;
+            painReduce = 0.7;
             hrIncreaseLow[] = {-5, -15};
             hrIncreaseNormal[] = {-5, -20};
             hrIncreaseHigh[] = {-5, -20};
-            timeInSystem = 600;
+            timeInSystem = 300;
             timeTillMaxEffect = 30;
             dose = 1;
             viscosityChange = -10;
