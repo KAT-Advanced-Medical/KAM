@@ -2,6 +2,12 @@
 
 Chemical warfare system featuring various types of toxic agents.
 
+## Modules
+
+Modules are availbe in zeus and eden.
+WARNING: When you want to remove zone, remove module unit, DO NOT REMOVE HELPER (unit in empty side)
+if you delete helper, particles will stay in zone.
+
 ## Agents
 
 There are four main types of agents:

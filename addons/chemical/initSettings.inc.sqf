@@ -56,7 +56,7 @@
     "TIME",
     [LLSTRING(SETTING_SCBA_MAX_OXYGEN_TIME), LLSTRING(SETTING_SCBA_MAX_OXYGEN_TIME_DESC)],
     CBA_SETTINGS_CAT,
-    [1, 7200, 1800],
+    [1, 14400, 3600],
     true
 ] call CBA_fnc_addSetting;
 //time before unit get infected
@@ -130,5 +130,24 @@
     [LLSTRING(SETTING_showPoisoning), LLSTRING(SETTING_showPoisoning_DESC)],
     CBA_SETTINGS_CAT,
     [true],
+    true
+] call CBA_fnc_addSetting;
+
+//use particles?
+[
+    QGVAR(useParticles),
+    "CHECKBOX",
+    [LLSTRING(SETTING_useParticles), LLSTRING(SETTING_useParticles_DESC)],
+    CBA_SETTINGS_CAT,
+    [true],
+    true
+] call CBA_fnc_addSetting;
+//Custom colors for gas particles
+[
+    QGVAR(customColors),
+    "CHECKBOX",
+    [LLSTRING(SETTING_customColors), LLSTRING(SETTING_customColors_DESC)],
+    CBA_SETTINGS_CAT,
+    [false],
     true
 ] call CBA_fnc_addSetting;

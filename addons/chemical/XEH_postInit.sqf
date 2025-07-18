@@ -103,27 +103,32 @@ GVAR(gasSources) = createHashMap;
         [_jipID, _source] call CBA_fnc_removeGlobalEventJIP;
         _source setVariable [QGVAR(sealable), true, true];
     };
+    if (missionNamespace getVariable [QGVAR(useParticles), false]==true) then{
+        //Create all needed Particle effects
+        private _particleObjectAmount = (_radius / 10) max 1;
+        private _particleObjects = [];
+        private _particleSource;
 
-    //Create all needed Particle effects
-    private _particleObjectAmount = (_radius / 10) max 1;
-    private _particleObjects = [];
-    private _particleSource;
+        for "_i" from 0 to _particleObjectAmount do {
+            private _tier = _gasLevel;
+            if (missionNamespace getVariable [QGVAR(customColors), false]==false) then {
+                _tier = "d";
+            };
+            _particleSource = "#particlesource" createVehicle _sourcePos;
+            private _particleClassName = format ["kat_chemical_Toxic_Gas_Particles_%1", _tier];
+            _particleSource setParticleClass _particleClassName;
 
-    for "_i" from 0 to _particleObjectAmount do {
-        _particleSource = "#particlesource" createVehicle _sourcePos;
-        _particleSource setParticleClass QGVAR(Toxic_Gas_Particles);
+            if (_i == 0) then {
+                _particleSource setParticleCircle [1, [0,0,0]];
+            } else {
+                _particleSource setParticleCircle [_i * 10, [0,0,0]];
+            };
 
-        if (_i == 0) then {
-            _particleSource setParticleCircle [1, [0,0,0]];
-        } else {
-            _particleSource setParticleCircle [_i * 10, [0,0,0]];
+            _particleObjects pushBack _particleSource;
         };
 
-        _particleObjects pushBack _particleSource;
+        _gasLogic setVariable [QGVAR(particleObjects), _particleObjects, true];
     };
-
-    _gasLogic setVariable [QGVAR(particleObjects), _particleObjects, true];
-
     GVAR(gasSources) set [_hashedKey, [_gasLogic, _radius, _gasLevel, _condition, _conditionArgs]];
 }] call CBA_fnc_addEventHandler;
 
@@ -152,7 +157,7 @@ GVAR(gasSources) = createHashMap;
         // if dosent have mask on give damage on face
         private _masks = missionNamespace getVariable [QGVAR(availGasmaskList), []];
         if (!(goggles _unit in _masks)&&{_unit getVariable [QGVAR(gasmask_durability), 10] > 0}) then {
-            if random 1 < 0.5 then {
+            if (random 1 < 0.5) then {
             [_unit, 0.2, "head", "burn"] call ace_medical_fnc_addDamageToUnit;
         };
         };

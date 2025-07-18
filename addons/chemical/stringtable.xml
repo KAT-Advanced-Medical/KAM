@@ -780,6 +780,12 @@
             <Chinesesimp>显示中毒</Chinesesimp>
             <Dutch>Intoxicaties tonen</Dutch>
         </Key>
+        <Key ID="STR_KAT_Chemical_SETTING_customColors">
+            <English>Use custom colors for each gas tier</English>
+        </Key>
+        <Key ID="STR_KAT_Chemical_SETTING_useParticles">
+            <English>Use particle effects for gas zone</English>
+        </Key>
         <Key ID="STR_KAT_Chemical_SETTING_showPoisoning_DESC">
             <English>Determines if poisoning and intoxication is shown in the medical menu</English>
             <Czech>Určuje, zda otrava a intoxikace budou zobrazovány ve zdravotnické tabulce</Czech>
@@ -790,6 +796,12 @@
             <Chinese>確定醫療選單中是否顯示中毒</Chinese>
             <Chinesesimp>确定医疗菜单中是否显示中毒</Chinesesimp>
             <Dutch>Bepaald of intoxicaties zichtbaar zijn in het medische menu</Dutch>
+        </Key>
+        <Key ID="STR_KAT_Chemical_SETTING_customColors_DESC">
+            <English>Determines if gas particles will have custom color for each, or every gas tier will have same color</English>
+        </Key>
+        <Key ID="STR_KAT_Chemical_SETTING_useParticles_DESC">
+            <English>Determines if particle effest will be used for gas zone</English>
         </Key>
         <Key ID="STR_KAT_Chemical_Scbacontrols_menu">
             <English>SCBA</English>

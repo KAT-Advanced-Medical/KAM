@@ -63,7 +63,8 @@ class CfgCloudlets {
         position[] = {0,0,0};
     };
 
-    class GVAR(Toxic_Gas_Particles): Default {
+    //default parameters for toxic gas particles, save for soon
+    class GVAR(Toxic_Gas_Particles_d): Default {
         interval = 0.01;
         circleRadius = 0;
         circleVelocity[] = {0,0,0};
@@ -91,6 +92,218 @@ class CfgCloudlets {
             {0.671, 0.765, 0.184,0.1},
             {0.671, 0.765, 0.184,0}
         };
+        animationSpeed[] = {0.5,0.3};
+        randomDirectionPeriod = 1;
+        randomDirectionIntensity = 0.04;
+        onTimerScript = "";
+        beforeDestroyScript = "";
+        lifeTimeVar = 10;
+        positionVar[] = {0,0,0};
+        moveVelocityVar[] = {0.5,0,0.5};
+        rotationVelocityVar = 10;
+        sizeVar = 0;
+        colorVar[] = {0,0,0,0.35};
+        randomDirectionPeriodVar = 0;
+        randomDirectionIntensityVar = 0;
+        coreIntensity = 0;
+        coreDistance = 0;
+        damageTime = 0;
+        damageType = "";
+        angle = 0;
+        position[] = {0,0,0};
+        onSurface = 1;
+        surfaceOffset = 0;
+        bounceOnSurface = 0;
+        ignoreWind = 1;
+    };
+
+    class GVAR(Toxic_Gas_Particles_0): Default {
+        interval = 0.01;
+        circleRadius = 0;
+        circleVelocity[] = {0,0,0};
+        particleFSNtieth = 16;
+        particleFSIndex = 7;
+        particleFSFrameCount = 16;
+        particleFSLoop = 1;
+        angleVar = 1;
+        particleShape = "\A3\data_f\ParticleEffects\Universal\Universal.p3d";
+        particleType = "Billboard";
+        timerPeriod = 1;
+        lifeTime = 20;
+        moveVelocity[] = {0,0,0};
+        rotationVelocity = 1;
+        weight = 100;
+        volume = 1;
+        rubbing = 0.01;
+        size[] = {0.1,2,0};
+        color[] =
+        {
+            {0.3,0.3,0.3,0},
+            {0.4,0.4,0.4,0.2},
+            {0.371, 0.465, 0.044,0.3},
+            {0.471, 0.565, 0.084,0.2},
+            {0.671, 0.765, 0.184,0.1},
+            {0.671, 0.765, 0.184,0}
+        };
+        animationSpeed[] = {0.5,0.3};
+        randomDirectionPeriod = 1;
+        randomDirectionIntensity = 0.04;
+        onTimerScript = "";
+        beforeDestroyScript = "";
+        lifeTimeVar = 10;
+        positionVar[] = {0,0,0};
+        moveVelocityVar[] = {0.5,0,0.5};
+        rotationVelocityVar = 10;
+        sizeVar = 0;
+        colorVar[] = {0,0,0,0.35};
+        randomDirectionPeriodVar = 0;
+        randomDirectionIntensityVar = 0;
+        coreIntensity = 0;
+        coreDistance = 0;
+        damageTime = 0;
+        damageType = "";
+        angle = 0;
+        position[] = {0,0,0};
+        onSurface = 1;
+        surfaceOffset = 0;
+        bounceOnSurface = 0;
+        ignoreWind = 1;
+    };
+    
+    class GVAR(Toxic_Gas_Particles_1): Default {
+        interval = 0.01;
+        circleRadius = 0;
+        circleVelocity[] = {0,0,0};
+        particleFSNtieth = 16;
+        particleFSIndex = 7;
+        particleFSFrameCount = 16;
+        particleFSLoop = 1;
+        angleVar = 1;
+        particleShape = "\A3\data_f\ParticleEffects\Universal\Universal.p3d";
+        particleType = "Billboard";
+        timerPeriod = 1;
+        lifeTime = 20;
+        moveVelocity[] = {0,0,0};
+        rotationVelocity = 1;
+        weight = 100;
+        volume = 1;
+        rubbing = 0.01;
+        size[] = {0.1,2,0};
+        color[] =
+        {
+            {0.4, 0.4, 0.1, 0.1},
+            {0.55, 0.55, 0.15, 0.3},
+            {0.7, 0.75, 0.1, 0.3},
+            {0.8, 0.8, 0.15, 0.2},
+            {0.9, 0.85, 0.2, 0.1},
+            {0.9, 0.85, 0.2, 0} 
+        };
+        animationSpeed[] = {0.5,0.3};
+        randomDirectionPeriod = 1;
+        randomDirectionIntensity = 0.04;
+        onTimerScript = "";
+        beforeDestroyScript = "";
+        lifeTimeVar = 10;
+        positionVar[] = {0,0,0};
+        moveVelocityVar[] = {0.5,0,0.5};
+        rotationVelocityVar = 10;
+        sizeVar = 0;
+        colorVar[] = {0,0,0,0.35};
+        randomDirectionPeriodVar = 0;
+        randomDirectionIntensityVar = 0;
+        coreIntensity = 0;
+        coreDistance = 0;
+        damageTime = 0;
+        damageType = "";
+        angle = 0;
+        position[] = {0,0,0};
+        onSurface = 1;
+        surfaceOffset = 0;
+        bounceOnSurface = 0;
+        ignoreWind = 1;
+    };
+    class GVAR(Toxic_Gas_Particles_2): Default {
+        interval = 0.01;
+        circleRadius = 0;
+        circleVelocity[] = {0,0,0};
+        particleFSNtieth = 16;
+        particleFSIndex = 7;
+        particleFSFrameCount = 16;
+        particleFSLoop = 1;
+        angleVar = 1;
+        particleShape = "\A3\data_f\ParticleEffects\Universal\Universal.p3d";
+        particleType = "Billboard";
+        timerPeriod = 1;
+        lifeTime = 20;
+        moveVelocity[] = {0,0,0};
+        rotationVelocity = 1;
+        weight = 100;
+        volume = 1;
+        rubbing = 0.01;
+        size[] = {0.1,2,0};
+        color[] =
+        {
+            {0.45, 0.35, 0.05, 0},
+            {0.65, 0.45, 0.05, 0.2},
+            {0.85, 0.55, 0.05, 0.3},
+            {0.95, 0.65, 0.1, 0.2},
+            {1.0, 0.75, 0.2, 0.1},
+            {1.0, 0.75, 0.2, 0}
+        };
+
+        animationSpeed[] = {0.5,0.3};
+        randomDirectionPeriod = 1;
+        randomDirectionIntensity = 0.04;
+        onTimerScript = "";
+        beforeDestroyScript = "";
+        lifeTimeVar = 10;
+        positionVar[] = {0,0,0};
+        moveVelocityVar[] = {0.5,0,0.5};
+        rotationVelocityVar = 10;
+        sizeVar = 0;
+        colorVar[] = {0,0,0,0.35};
+        randomDirectionPeriodVar = 0;
+        randomDirectionIntensityVar = 0;
+        coreIntensity = 0;
+        coreDistance = 0;
+        damageTime = 0;
+        damageType = "";
+        angle = 0;
+        position[] = {0,0,0};
+        onSurface = 1;
+        surfaceOffset = 0;
+        bounceOnSurface = 0;
+        ignoreWind = 1;
+    };
+    class GVAR(Toxic_Gas_Particles_3): Default {
+        interval = 0.01;
+        circleRadius = 0;
+        circleVelocity[] = {0,0,0};
+        particleFSNtieth = 16;
+        particleFSIndex = 7;
+        particleFSFrameCount = 16;
+        particleFSLoop = 1;
+        angleVar = 1;
+        particleShape = "\A3\data_f\ParticleEffects\Universal\Universal.p3d";
+        particleType = "Billboard";
+        timerPeriod = 1;
+        lifeTime = 20;
+        moveVelocity[] = {0,0,0};
+        rotationVelocity = 1;
+        weight = 100;
+        volume = 1;
+        rubbing = 0.01;
+        size[] = {0.1,2,0};
+        color[] =
+        {
+            {0.4, 0.05, 0.05, 0},
+            {0.6, 0.1, 0.1, 0.2},
+            {0.75, 0.05, 0.05, 0.3},
+            {0.85, 0.1, 0.1, 0.2},
+            {1.0, 0.1, 0.1, 0.1},
+            {1.0, 0.1, 0.1, 0}
+        };
+
         animationSpeed[] = {0.5,0.3};
         randomDirectionPeriod = 1;
         randomDirectionIntensity = 0.04;
