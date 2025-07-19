@@ -243,8 +243,8 @@ class ACE_Medical_Treatment {
             timeTillMaxEffect = 2;
             dose = 1;
             viscosityChange = -3;
-            opioidRelief = 1.1;
-            respiratoryRate = -0.1;
+            opioidRelief = 1.05;
+            respiratoryRate = -0.05;
             volume = 250;
             rateCoef = 1.3;
             type = "Morphine_IVInfusion";
@@ -260,7 +260,7 @@ class ACE_Medical_Treatment {
             alphaFactor = -0.05;
             volume = 250;
             rateCoef = 1.3;
-            contractility = 0.2;
+            contractility = 0.1;
             type = "Epinephrine_IVInfusion";
             incompatibleMedication[] = {};
         };
@@ -287,6 +287,7 @@ class ACE_Medical_Treatment {
             timeTillMaxEffect = 2;
             dose = 1;
             respiratoryRate = 0.1;
+            opioidDepression = -0.05;
             volume = 250;
             rateCoef = 1.3;
             type = "Doxapram_IVInfusion";
@@ -302,8 +303,8 @@ class ACE_Medical_Treatment {
             dose = 1;
             volume = 250;
             rateCoef = 1.3;
-            alphaFactor = 0.1;
-            viscosityChange = -10;
+            alphaFactor = 0.05;
+            viscosityChange = -2;
             contractility = -0.05;
             type = "Nitroglycerin_IVInfusion";
             incompatibleMedication[] = {};
@@ -319,7 +320,7 @@ class ACE_Medical_Treatment {
             volume = 250;
             rateCoef = 1.3;
             alphaFactor = -0.1;
-            viscosityChange = 10;
+            viscosityChange = 4;
             type = "Norepinephrine_IVInfusion";
             incompatibleMedication[] = {};
         };
@@ -332,8 +333,8 @@ class ACE_Medical_Treatment {
             timeTillMaxEffect = 2;
             dose = 1;
             viscosityChange = -3;
-            opioidRelief = 1.1;
-            respiratoryRate = -0.1;
+            opioidRelief = 1.05;
+            respiratoryRate = -0.05;
             volume = 100;
             rateCoef = 1.3;
             type = "Morphine_IVInfusion";
@@ -349,7 +350,7 @@ class ACE_Medical_Treatment {
             alphaFactor = -0.05;
             volume = 100;
             rateCoef = 1.3;
-            contractility = 0.2;
+            contractility = 0.1;
             type = "Epinephrine_IVInfusion";
             incompatibleMedication[] = {};
         };
@@ -376,6 +377,7 @@ class ACE_Medical_Treatment {
             timeTillMaxEffect = 2;
             dose = 1;
             respiratoryRate = 0.1;
+            opioidDepression = -0.05;
             volume = 100;
             rateCoef = 1.3;
             type = "Doxapram_IVInfusion";
@@ -392,7 +394,7 @@ class ACE_Medical_Treatment {
             volume = 100;
             rateCoef = 1.3;
             alphaFactor = 0.1;
-            viscosityChange = -10;
+            viscosityChange = -2;
             contractility = -0.05;
             type = "Nitroglycerin_IVInfusion";
             incompatibleMedication[] = {};
@@ -408,7 +410,7 @@ class ACE_Medical_Treatment {
             volume = 100;
             rateCoef = 1.3;
             alphaFactor = -0.1;
-            viscosityChange = 10;
+            viscosityChange = 4;
             type = "Norepinephrine_IVInfusion";
             incompatibleMedication[] = {};
         };
