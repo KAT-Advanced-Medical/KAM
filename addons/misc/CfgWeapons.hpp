@@ -81,7 +81,7 @@ class CfgWeapons {
         picture = QPATHTOF(ui\IFAK.paa);
         ACE_isMedicalItem = 1;
         class ItemInfo: CBA_MiscItem_ItemInfo {
-            mass = 15;
+            mass = 20;
         };
     };
 
@@ -91,7 +91,7 @@ class CfgWeapons {
         editorPreview = QPATHTOF(ui\AFAK.paa);
         picture = QPATHTOF(ui\AFAK.paa);
         class ItemInfo: CBA_MiscItem_ItemInfo {
-            mass = 25;
+            mass = 40;
         };
     };
 
@@ -101,7 +101,7 @@ class CfgWeapons {
         editorPreview = QPATHTOF(ui\MFAK.paa);
         picture = QPATHTOF(ui\MFAK.paa);
         class ItemInfo: CBA_MiscItem_ItemInfo {
-            mass = 50;
+            mass = 100;
         };
     };
     class kat_MEDPACK: kat_IFAK {

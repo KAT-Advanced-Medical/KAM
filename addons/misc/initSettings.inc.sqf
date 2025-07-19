@@ -248,7 +248,7 @@
     "EDITBOX",
     [LLSTRING(SETTING_SecondSlot_Item), LLSTRING(SETTING_ItemSlot_DESC)],
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_IFAK)],
-    "[['ACE_packingBandage', 5], ['ACE_quikclot', 5]]",
+    "[['kat_Israeli_Bandage', 4], ['kat_ETD', 2]], ['kat_Hemostatic_Injector', 2], ['kat_Adhesive_Bandage', 5]]",
     1,
     {
         private _string = missionNamespace getVariable [QGVAR(IFAKSecondSlotItem), []];
@@ -264,7 +264,7 @@
     "EDITBOX",
     [LLSTRING(SETTING_ThirdSlot_Item), LLSTRING(SETTING_ItemSlot_DESC)],
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_IFAK)],
-    "[['kat_Painkiller', 1]]",
+    "[['kat_Painkiller', 1], ['kat_TXAAuto', 1], ['kat_phenylephrineAuto', 1], ['kat_fentPatch', 1]]",
     1,
     {
         private _string = missionNamespace getVariable [QGVAR(IFAKThirdSlotItem), []];
@@ -280,7 +280,7 @@
     "EDITBOX",
     [LLSTRING(SETTING_FourthSlot_Item), LLSTRING(SETTING_ItemSlot_DESC)],
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_IFAK)],
-    "[['kat_chestSeal', 1]]",
+    "[['kat_chestSeal', 1], ['kat_ncdKit', 1], ['kat_guedel', 1], ['kat_NPA', 1]]",
     1,
     {
         private _string = missionNamespace getVariable [QGVAR(IFAKFourthSlotItem), []];
