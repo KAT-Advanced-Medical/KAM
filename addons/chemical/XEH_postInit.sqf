@@ -60,7 +60,9 @@ GVAR(gasSources) = createHashMap;
         ["_key", ""],
         ["_condition", {true}, [{}]],
         ["_conditionArgs", []],
-        ["_isSealable", false]
+        ["_isSealable", false],
+        ["_UseParticles", true],
+        ["_UseCustomParticles", true]
     ];
 
     private _isObject = _source isEqualType objNull;
@@ -103,7 +105,8 @@ GVAR(gasSources) = createHashMap;
         [_jipID, _source] call CBA_fnc_removeGlobalEventJIP;
         _source setVariable [QGVAR(sealable), true, true];
     };
-    if (missionNamespace getVariable [QGVAR(useParticles), false]==true) then{
+
+    if (_UseParticles) then{
         //Create all needed Particle effects
         private _particleObjectAmount = (_radius / 10) max 1;
         private _particleObjects = [];
@@ -111,7 +114,7 @@ GVAR(gasSources) = createHashMap;
 
         for "_i" from 0 to _particleObjectAmount do {
             private _tier = _gasLevel;
-            if (missionNamespace getVariable [QGVAR(customColors), false]==false) then {
+            if (!_UseCustomParticles) then {
                 _tier = "d";
             };
             _particleSource = "#particlesource" createVehicle _sourcePos;
@@ -129,7 +132,7 @@ GVAR(gasSources) = createHashMap;
 
         _gasLogic setVariable [QGVAR(particleObjects), _particleObjects, true];
     };
-    GVAR(gasSources) set [_hashedKey, [_gasLogic, _radius, _gasLevel, _condition, _conditionArgs]];
+    GVAR(gasSources) set [_hashedKey, [_gasLogic, _radius, _gasLevel, _condition, _conditionArgs, _UseParticles, _UseCustomParticles]];
 }] call CBA_fnc_addEventHandler;
 
 [QGVAR(applyBurnDamage), {
@@ -158,7 +161,7 @@ GVAR(gasSources) = createHashMap;
         private _masks = missionNamespace getVariable [QGVAR(availGasmaskList), []];
         if (!(goggles _unit in _masks)&&{_unit getVariable [QGVAR(gasmask_durability), 10] > 0}) then {
             if (random 1 < 0.5) then {
-            [_unit, 0.2, "head", "burn"] call ace_medical_fnc_addDamageToUnit;
+            [_unit, 0.2, "head", "chemburn"] call ace_medical_fnc_addDamageToUnit;
         };
         };
 
@@ -167,11 +170,18 @@ GVAR(gasSources) = createHashMap;
         if !(uniform _unit in _suits) then {
             private _bodyParts = ["body", "leftarm", "rightarm", "leftleg", "rightleg"];
             private _randomPart = selectRandom _bodyParts;
-            [_unit, 0.2, _randomPart, "burn"] call ace_medical_fnc_addDamageToUnit;
+            [_unit, 0.2, _randomPart, "chemburn"] call ace_medical_fnc_addDamageToUnit;
         };
     };
 }] call CBA_fnc_addEventHandler;
 
+_airsupplylist = missionNamespace getVariable [QGVAR(availAirSupplyList), []];
+{
+    [_x, "initPost",{
+    (_this select 0) call FUNC(airSupply);
+    }, false, [], true]call CBA_fnc_addClassEventHandler;
+    
+} forEach _airsupplylist;
 
 [QGVAR(removeGasSource), {
     params ["_key"];

@@ -9,4 +9,13 @@ class ACE_Medical_Treatment_Actions {
         condition = QUOTE([ARR_2(_player,_patient)] call FUNC(canPutGasMask));
         icon = QPATHTOF(ui\Gasmask_icon.paa);
     };
+    class EnableSCBA: Diagnose {
+        displayName = CSTRING(EnableSCBA);
+        displayNameProgress = CSTRING(EnableSCBA_progress);
+        allowedSelections[] = {"Head"};
+        allowSelfTreatment = 0;
+        callbackSuccess = QFUNC(giveUnitSCBA);
+        condition = QUOTE(([_patient] call FUNC(hasSCBA)) && !(_patient getVariable [ARR_2(QQGVAR(SCBAEnabled),false)]));
+        icon = QPATHTOF(ui\Scba_icon.paa);
+    };
 };

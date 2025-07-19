@@ -95,14 +95,6 @@ class CfgVehicles {
                         showDisabled = 0;
                         icon = QPATHTOF(ui\Scba_icon.paa);
                     };
-                    class KAT_Scbacontrols_Recharge {
-                        displayName = CSTRING(RechargeSCBA);
-                        condition = QUOTE(([_player] call FUNC(hasSCBA)) && !(_player getVariable [ARR_2(QQGVAR(SCBAEnabled),false)]));
-                        exceptions[] = {"isNotSwimming"};
-                        statement = QUOTE([_player] call FUNC(enableChemDetector));
-                        showDisabled = 0;
-                        icon = QPATHTOF(ui\Scba_icon.paa);
-                    };
                 };
             };
         };
@@ -208,6 +200,20 @@ class CfgVehicles {
                 toolTip = CSTRING(UI_sealable_tooltip);
                 typeName = "BOOL";
                 defaultValue = 0;
+            };
+            class UseParticles
+            {
+                displayName = CSTRING(UI_UseParticles);
+                toolTip = CSTRING(UI_UseParticles_tooltip);
+                typeName = "BOOL";
+                defaultValue = 1;
+            };
+            class UseCustomParticles
+            {
+                displayName = CSTRING(UI_UseCustomParticles);
+                toolTip = CSTRING(UI_UseCustomParticles_tooltip);
+                typeName = "BOOL";
+                defaultValue = 1;
             };
         };
 

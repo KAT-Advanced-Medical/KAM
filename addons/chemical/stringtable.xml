@@ -153,7 +153,10 @@
             <Dutch>Waarschuwingstoon inschakelen</Dutch>
         </Key>
         <Key ID="STR_KAT_Chemical_EnableSCBA">
-            <English>Enable air</English>
+            <English>Enable SCBA</English>
+        </Key>
+        <Key ID="STR_KAT_Chemical_EnableSCBA_progress">
+            <English>Enabling SCBA...</English>
         </Key>
         <Key ID="STR_KAT_Chemical_GasBox_Displayname">
             <English>[ACE] 82mm Gas Rounds Box</English>
@@ -568,9 +571,17 @@
             <English>Accepted backpacks SCBA</English>
             <Polish>Dozwolone plecaki AODO</Polish>
         </Key>
+        <Key ID="STR_KAT_Chemical_SETTING_AVAIL_AIRSUPPLY">
+            <English>Classnames of objects that will be oxygen source</English>
+            <Polish>Classname obiektów które beda źródlem tlenu</Polish>
+        </Key>
         <Key ID="STR_KAT_Chemical_SETTING_AVAIL_BACKPACK_DISC">
             <English>Enter here the classname of the backpack(scba) that should work with the system.</English>
             <Polish>Wpisz classname plecaka, (aodo) ktory ma dzialc z systemem</Polish>
+        </Key>
+        <Key ID="STR_KAT_Chemical_SETTING_AVAIL_AIRSUPPLY_DISC">
+            <English>Enter here the classname of the objects that will have ace interaction to recharge your SCBA</English>
+            <Polish>Wpisz classname objektów, które będą miały interakcje ace aby uzupełnić twoje AODO</Polish>
         </Key>
         <Key ID="STR_KAT_Chemical_SETTING_AVAIL_GASMASK">
             <English>Accepted gas masks</English>
@@ -780,12 +791,6 @@
             <Chinesesimp>显示中毒</Chinesesimp>
             <Dutch>Intoxicaties tonen</Dutch>
         </Key>
-        <Key ID="STR_KAT_Chemical_SETTING_customColors">
-            <English>Use custom colors for each gas tier</English>
-        </Key>
-        <Key ID="STR_KAT_Chemical_SETTING_useParticles">
-            <English>Use particle effects for gas zone</English>
-        </Key>
         <Key ID="STR_KAT_Chemical_SETTING_showPoisoning_DESC">
             <English>Determines if poisoning and intoxication is shown in the medical menu</English>
             <Czech>Určuje, zda otrava a intoxikace budou zobrazovány ve zdravotnické tabulce</Czech>
@@ -796,12 +801,6 @@
             <Chinese>確定醫療選單中是否顯示中毒</Chinese>
             <Chinesesimp>确定医疗菜单中是否显示中毒</Chinesesimp>
             <Dutch>Bepaald of intoxicaties zichtbaar zijn in het medische menu</Dutch>
-        </Key>
-        <Key ID="STR_KAT_Chemical_SETTING_customColors_DESC">
-            <English>Determines if gas particles will have custom color for each, or every gas tier will have same color</English>
-        </Key>
-        <Key ID="STR_KAT_Chemical_SETTING_useParticles_DESC">
-            <English>Determines if particle effest will be used for gas zone</English>
         </Key>
         <Key ID="STR_KAT_Chemical_Scbacontrols_menu">
             <English>SCBA</English>
@@ -945,6 +944,18 @@
             <Finnish>Onko se suljettavissa?</Finnish>
             <Dutch>Is dichtbaar?</Dutch>
         </Key>
+        <Key ID="STR_KAT_Chemical_UI_UseParticles">
+            <English>Use particles</English>
+        </Key>
+        <Key ID="STR_KAT_Chemical_UI_UseParticles_tooltip">
+            <English>Determines if particle effest will be used for gas zone</English>
+        </Key>
+        <Key ID="STR_KAT_Chemical_UI_UseCustomParticles">
+            <English>Use colorful particles</English>
+        </Key>
+        <Key ID="STR_KAT_Chemical_UI_UseCustomParticles_tooltip">
+            <English>Determines if custom colors will be used for particle effest</English>
+        </Key>
         <Key ID="STR_KAT_Chemical_UI_sealable_tooltip">
             <English>ONLY WORKS IF LOGIC IS SYNCED WITH AN OBJECT!</English>
             <Czech>FUNGUJE POUZE POKUD JE LOGIKA SPOJENA S OBJEKTEM!</Czech>
@@ -1071,6 +1082,18 @@
             <Chinesesimp>密封剂，用于在有毒物质泄漏时密封物体</Chinesesimp>
             <Finnish>Tiiviste, jota käytetään esineiden tiivistämiseen, kun myrkyllistä ainetta vuotaa ulos</Finnish>
             <Dutch>Afdichtmiddel dat gebruikt wordt om een object te dichten wanneer er bijvoorbeeld een giftige stof lekt</Dutch>
+        </Key>
+        <Key ID="STR_ace_medical_damage_ChemicalBurn_Minor">
+            <Original>Minor Chemical Burn</Original>
+            <English>Minor Chemical Burn</English>
+        </Key>
+        <Key ID="STR_ace_medical_damage_ChemicalBurn_Medium">
+            <Original>Medium Chemical Burn</Original>
+            <English>Medium Chemical Burn</English>
+        </Key>
+        <Key ID="STR_ace_medical_damage_ChemicalBurn_Large">
+            <Original>Large Chemical Burn</Original>
+            <English>Large Chemical Burn</English>
         </Key>
     </Package>
 </Project>

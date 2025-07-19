@@ -1,0 +1,20 @@
+#include "..\script_component.hpp"
+/*
+ * Author: kolmipilot
+ *
+ * Arguments:
+ * 0: Player <Player>
+ * 1: Target <OBJECT>
+ *
+ * Return Value:
+ * NONE
+ *
+ * Example:
+ * [player, cursorTarget] call kat_chemical_fnc_giveUnitSCBA;
+ *
+ * Public: No
+*/
+
+params ["_medic", "_patient"];
+
+[_patient] call FUNC(enableSCBA);

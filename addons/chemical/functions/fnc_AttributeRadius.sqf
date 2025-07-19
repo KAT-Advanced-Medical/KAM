@@ -21,6 +21,8 @@ private _logic = missionNamespace getVariable ["BIS_fnc_initCuratorAttributes_ta
 _control ctrlRemoveAllEventHandlers "SetFocus";
 
 private _sealCheckBox = _display displayCtrl 1613;
+private _particlesCheckBox = _display displayCtrl 1615;
+private _particlescolorsCheckBox = _display displayCtrl 1618;
 private _sealText = _display displayCtrl 1614;
 private _placeText = _display displayCtrl 1616;
 // Specific onLoad stuff
@@ -31,10 +33,10 @@ if !(isNull attachedTo _logic) then {
 } else {
     _sealCheckBox ctrlShow false;
     _sealText ctrlShow false;
-    _placetext ctrlSetText LLSTRING(GasModule_createContaminatedZone);
+    _placeText ctrlSetText LLSTRING(GasModule_createContaminatedZone);
 };
 
-private _gasTypeCombo = _display displayCtrl 1615;
+private _gasTypeCombo = _display displayCtrl 1617;
 private _maxEdit = _control controlsGroupCtrl 1611;
 
 _maxEdit ctrlSetText "100";
@@ -62,6 +64,18 @@ private _fnc_onCheckChange = {
     private _canBeSealed = cbChecked(_display displayCtrl 1613);
     _display setVariable [QGVAR(ui_sealable),_canBeSealed];
 };
+private _fnc_onCheckChange = {
+    params ["_particlesCheckBox"];
+    _display = ctrlParent _particlesCheckBox;
+    private _UseParticles = cbChecked(_display displayCtrl 1615);
+    _display setVariable [QGVAR(ui_UseParticles),_UseParticles];
+};
+private _fnc_onCheckChange = {
+    params ["_particlescolorsCheckBox"];
+    _display = ctrlParent _particlescolorsCheckBox;
+    private _UseColorParticles = cbChecked(_display displayCtrl 1618);
+    _display setVariable [QGVAR(ui_UseCustomParticles),_UseColorParticles];
+};
 
 private _fnc_onLBSelChange = {
     params ["_gasTypeCombo"];
@@ -73,6 +87,10 @@ private _fnc_onLBSelChange = {
 [_display] call _fnc_onKeyUp;
 [_sealCheckBox] call _fnc_onCheckChange;
 [_gasTypeCombo] call _fnc_onCheckChange;
+[_particlesCheckBox] call _fnc_onCheckChange;
+[_particlescolorsCheckBox] call _fnc_onCheckChange;
 _display displayAddEventHandler ["KeyUp", _fnc_onKeyUp];
 _sealCheckBox ctrlAddEventHandler ["CheckedChanged", _fnc_onCheckChange];
+_particlesCheckBox ctrlAddEventHandler ["CheckedChanged", _fnc_onCheckChange];
+_particlescolorsCheckBox ctrlAddEventHandler ["CheckedChanged", _fnc_onCheckChange];
 _gasTypeCombo ctrlAddEventHandler ["LBSelChanged", _fnc_onLBSelChange];

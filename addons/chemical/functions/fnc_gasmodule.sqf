@@ -21,6 +21,8 @@ params ["_logic", "_units", "_activated"];
 private _radius = _logic getVariable ["Radius", 20];
 private _gasLevel = _logic getVariable ["GAS_type", 1];
 private _isSealable = _logic getVariable ["IsSealable", false];
+private _UseParticles = _logic getVariable ["UseParticles", true];
+private _UseCustomParticles = _logic getVariable ["UseCustomParticles", true];
 
 if (count _units == 0) then {_units pushBack _logic;};
 
@@ -28,7 +30,7 @@ if (!_activated) exitWith {};
 if (isServer) then {
 
     [{
-        params ["_logic", "_radius", "_gasLevel", "_isSealable", "_units"];
+        params ["_logic", "_radius", "_gasLevel", "_isSealable", "_units", "_UseParticles", "_UseCustomParticles"];
 
         {
             [QGVAR(addGasSource), [_x, _radius, _gasLevel, _x, {
@@ -40,10 +42,10 @@ if (isServer) then {
                 };
 
                 CBA_missionTime < _endTime // return
-            }, [CBA_missionTime + 1e10, _logic], _isSealable]] call CBA_fnc_serverEvent;
+            }, [CBA_missionTime + 1e10, _logic], _isSealable, _UseParticles, _UseCustomParticles]] call CBA_fnc_serverEvent;
 
         } forEach _units;
 
-    }, [_logic, _radius, _gasLevel, _isSealable, _units], 1] call CBA_fnc_waitAndExecute;
+    }, [_logic, _radius, _gasLevel, _isSealable, _units, _UseParticles, _UseCustomParticles], 1] call CBA_fnc_waitAndExecute;
 
 };

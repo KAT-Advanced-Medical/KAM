@@ -7,6 +7,7 @@ Chemical warfare system featuring various types of toxic agents.
 Modules are availbe in zeus and eden.
 WARNING: When you want to remove zone, remove module unit, DO NOT REMOVE HELPER (unit in empty side)
 if you delete helper, particles will stay in zone.
+You can configure in module it will have particle effects or not. Also if particle efects color will be same for every gas tier or custom for each one.
 
 ## Agents
 
@@ -58,7 +59,7 @@ You can check remaining oxygen under this same menu.
 Capacity and working time can be set under addons settings menu. 
 Capacity is expressed in remaining usage time.
 When oxygen is provided there is small O2 icon i your botoom-left screen corner. Based on color of icon you can know about remaining capacity. When the icon is yellow you have 5 minutes of oxygen left, when red you have 1 minute of oxygen left. When icon isnt visible there is no oxygen provided.
-You can change cylinders under ace menu. - TODO
+You can recharge your scuba, by ace interaction at configured objects, default it is scuba cylinder from vanila/contact dlc.
 
 ## Hoses segments and filters visibility
 

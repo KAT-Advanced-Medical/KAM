@@ -30,7 +30,7 @@ class GVAR(kat_RscAtributeRadius): RscControlsGroupNoScrollbars {
     x = 0;
     y = 0;
     w = QUOTE(W_PART(26));
-    h = QUOTE(H_PART(6.5));
+    h = QUOTE(H_PART(8));
     class controls {
         class Title1: RscText {
             idc = 16109;
@@ -53,25 +53,53 @@ class GVAR(kat_RscAtributeRadius): RscControlsGroupNoScrollbars {
             idc = 1614;
             text = CSTRING(UI_sealable);
             toolTip = "";
-            y = QUOTE(H_PART(2.2));
+            y = QUOTE(H_PART(1.2));
         };
         class canSealed: RscCheckBox {
             idc = 1613;
             x = QUOTE(W_PART(10.1));
-            y = QUOTE(H_PART(2.2));
+            y = QUOTE(H_PART(1.2));
             w = QUOTE(W_PART(1));
             h = QUOTE(H_PART(1));
         };
         class Title4: Title1 {
+            idc = 1622;
+            text = CSTRING(UI_UseParticles);
+            toolTip = "";
+            y = QUOTE(H_PART(2.4));
+        };
+        class UseParticles: RscCheckBox {
+            idc = 1615;
+            checked = 1;
+            x = QUOTE(W_PART(10.1));
+            y = QUOTE(H_PART(2.4));
+            w = QUOTE(W_PART(1));
+            h = QUOTE(H_PART(1));
+        };
+        class Title8: Title1 {
+            idc = 1619;
+            text = CSTRING(UI_UseCustomParticles);
+            toolTip = "";
+            y = QUOTE(H_PART(3.6));
+        };
+        class UseParticlescolors: RscCheckBox {
+            idc = 1618;
+            checked = 1;
+            x = QUOTE(W_PART(10.1));
+            y = QUOTE(H_PART(3.6));
+            w = QUOTE(W_PART(1));
+            h = QUOTE(H_PART(1));
+        };
+        class Title5: Title1 {
             idc = -1;
             text = CSTRING(UI_selectGas);
             toolTip = "";
-            y = QUOTE(H_PART(3.3));
+            y = QUOTE(H_PART(4.8));
         };
         class gasType: RscCombo {
-            idc = 1615;
+            idc = 1617;
             x = QUOTE(W_PART(10.1));
-            y = QUOTE(H_PART(3.3));
+            y = QUOTE(H_PART(4.8));
             w = QUOTE(W_PART(10));
             h = QUOTE(H_PART(1));
             colorBackground[] = {0, 0, 0, 0.7};
@@ -91,18 +119,18 @@ class GVAR(kat_RscAtributeRadius): RscControlsGroupNoScrollbars {
                 };
             };
         };
-        class Title6: Title1 {
+        class Title7: Title1 {
             idc = 1616;
             text = CSTRING(GasModule_createContaminatedZone);
             toolTip = "";
-            y = QUOTE(H_PART(4.4));
+            y = QUOTE(H_PART(6));
             w = QUOTE(W_PART(25));
         };
-        class Title5: Title1 {
+        class Title6: Title1 {
             idc = -1;
             text = CSTRING(GasModule_placeModuleOnObject);
             toolTip = "";
-            y = QUOTE(H_PART(5.5));
+            y = QUOTE(H_PART(7.1));
             w = QUOTE(W_PART(25));
         };
     };

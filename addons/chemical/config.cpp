@@ -63,4 +63,5 @@ class CfgPatches {
 #include "ui\RscAttributes.hpp"
 #include "RscTitles.hpp"
 #include "ACE_Medical_Treatment_Actions.hpp"
+#include "ACE_Medical_Injuries.hpp"
 #include "CfgGlasses.hpp"

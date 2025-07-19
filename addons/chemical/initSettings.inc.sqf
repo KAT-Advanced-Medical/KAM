@@ -42,6 +42,20 @@
 ] call CBA_fnc_addSetting;
 
 [
+    QGVAR(availAirSupply),
+    "EDITBOX",
+    [LLSTRING(SETTING_AVAIL_AIRSUPPLY), LLSTRING(SETTING_AVAIL_AIRSUPPLY_DISC)],
+    CBA_SETTINGS_CAT,
+    "'SCBACylinder_01_F', 'SCBACylinder_01_CUR_F'",
+    1,
+    {
+        private _array = [_this, "CfgVehicles"] call FUNC(getList);
+        missionNamespace setVariable [QGVAR(availAirSupplyList), _array, true];
+    },
+    true
+] call CBA_fnc_addSetting;
+
+[
     QGVAR(gasmask_durability),
     "TIME",
     [LLSTRING(SETTING_GASMASK_DURABILITY), LLSTRING(SETTING_GASMASK_DURABILITY_DISC)],
@@ -130,24 +144,5 @@
     [LLSTRING(SETTING_showPoisoning), LLSTRING(SETTING_showPoisoning_DESC)],
     CBA_SETTINGS_CAT,
     [true],
-    true
-] call CBA_fnc_addSetting;
-
-//use particles?
-[
-    QGVAR(useParticles),
-    "CHECKBOX",
-    [LLSTRING(SETTING_useParticles), LLSTRING(SETTING_useParticles_DESC)],
-    CBA_SETTINGS_CAT,
-    [true],
-    true
-] call CBA_fnc_addSetting;
-//Custom colors for gas particles
-[
-    QGVAR(customColors),
-    "CHECKBOX",
-    [LLSTRING(SETTING_customColors), LLSTRING(SETTING_customColors_DESC)],
-    CBA_SETTINGS_CAT,
-    [false],
     true
 ] call CBA_fnc_addSetting;
