@@ -55,15 +55,15 @@ class ACE_ADDON(Medical_Treatment) {
         class Epinephrine {
             painReduce = 0;
             hrIncreaseLow[] = {5, 20};
-            hrIncreaseNormal[] = {5, 25};
-            hrIncreaseHigh[] = {5, 20};
+            hrIncreaseNormal[] = {5, 20};
+            hrIncreaseHigh[] = {5, 15};
             timeInSystem = 120;
             timeTillMaxEffect = 10;
             dose = 1;
             maxDose = 60;
             maxDoseDeviation = 40;
             incompatibleMedication[] = {};
-            alphaFactor = -0.1;
+            alphaFactor = -0.05;
             onOverDose = "";
             maximumEffectiveDose = 40;
         };
@@ -91,7 +91,7 @@ class ACE_ADDON(Medical_Treatment) {
             timeTillMaxEffect = 60;
             dose = 1;
             maxDose = 20;
-            maxDoseDeviation = 1;
+            maxDoseDeviation = 10;
             incompatibleMedication[] = {};
             viscosityChange = -0;
             maximumEffectiveDose = 20;
@@ -322,7 +322,7 @@ class ACE_ADDON(Medical_Treatment) {
         };
         class Atropine {
             painReduce = 0;
-            hrIncreaseLow[] = {20, 40};
+            hrIncreaseLow[] = {10, 20};
             hrIncreaseNormal[] = {10, 25};
             hrIncreaseHigh[] = {5, 15};
             timeInSystem = 120;
@@ -528,7 +528,7 @@ class ACE_ADDON(Medical_Treatment) {
             hrIncreaseLow[] = {-2, -5};
             hrIncreaseNormal[] = {-2, -5};
             hrIncreaseHigh[] = {-2, -5};
-            timeInSystem = 120;
+            timeInSystem = 180;
             timeTillMaxEffect = 5;
             dose = 1;
             viscosityChange = 0;
@@ -563,7 +563,7 @@ class ACE_ADDON(Medical_Treatment) {
             timeTillMaxEffect = 20;
             dose = 1;
             alphaFactor = -0.1;
-            contractility = 0.9;
+            contractility = 0.7;
             maximumEffectiveDose = 30;
             respiratoryRate = 0.2;
         };
@@ -576,7 +576,7 @@ class ACE_ADDON(Medical_Treatment) {
             timeTillMaxEffect = 15;
             viscosityChange = 10;
             dose = 1;
-            alphaFactor = -0.2;
+            alphaFactor = -0.3;
             maximumEffectiveDose = 30;
         };
         class syringe_Fentanyl_5ml {
@@ -637,8 +637,8 @@ class ACE_ADDON(Medical_Treatment) {
         };
         class syringe_AtropineIV_5ml {
             painReduce = 0;
-            hrIncreaseLow[] = {5, 20};
-            hrIncreaseNormal[] = {5, 15};
+            hrIncreaseLow[] = {5, 25};
+            hrIncreaseNormal[] = {5, 20};
             hrIncreaseHigh[] = {5, 10};
             timeInSystem = 120;
             timeTillMaxEffect = 30;
@@ -731,8 +731,8 @@ class ACE_ADDON(Medical_Treatment) {
         class syringe_AdenosineIV_5ml {
             painReduce = 0;
             hrIncreaseLow[] = {-3, -10};
-            hrIncreaseNormal[] = {-5, -10};
-            hrIncreaseHigh[] = {-5, -15};
+            hrIncreaseNormal[] = {-7, -15};
+            hrIncreaseHigh[] = {-7, -20};
             timeInSystem = 180;
             timeTillMaxEffect = 15;
             dose = 1;
@@ -748,6 +748,7 @@ class ACE_ADDON(Medical_Treatment) {
             timeTillMaxEffect = 15;
             dose = 1; 
             respiratoryRate = 0.40;
+            opioidDepression = -0.25;
             maximumEffectiveDose = 30;
         };
         class syringe_Ondansetron_5ml {
