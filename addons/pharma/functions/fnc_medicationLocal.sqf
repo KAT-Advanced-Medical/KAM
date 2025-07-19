@@ -161,6 +161,8 @@ if (_isOccluded) exitWith {
         _maximumEffectiveDose = GET_NUMBER(_medicationConfig >> "maximumEffectiveDose",getNumber (_defaultConfig >> "maximumEffectiveDose"));
     };
     TRACE_4("medicationEffectivness",_currentDose,_medication,_maximumEffectiveDose,_startDose);
+    private _unitMedEffectivness = _patient getVariable [QGVAR(medicationEffectivness), 1];
+    private _maximumEffectiveDose = _maximumEffectiveDose * _unitMedEffectivness;
     private _doseMult = 1;
         if ((_currentDose + _startDose) > _maximumEffectiveDose) then {
             private _excess = (_currentDose + _startDose) - _maximumEffectiveDose;
@@ -180,7 +182,6 @@ if (_isOccluded) exitWith {
         if ((_IVarray select _partIndex) in [1, 13]) then {
             _routeMult = random [0.7, 0.8, 1];
         };
-    private _unitMedEffectivness = _patient getVariable [QGVAR(medicationEffectivness), 1];
     private _drugMult = (((GET_BLOOD_VOLUME_LITERS(_patient) / DEFAULT_BLOOD_VOLUME) * (_heartRateRatio) * ((GET_BODY_FLUID_ECB(_patient)/GET_BODY_FLUID_ECP(_patient)) / (DEFAULT_ECB/DEFAULT_ECP)) max 0.2) min 2.5) * _weightMult * _doseMult * _unitMedEffectivness * _routeMult;
     TRACE_5("_drugMult",_patient,_defaultHeartRate,_heartRateRatio,(GET_BLOOD_VOLUME_LITERS(_patient) / DEFAULT_BLOOD_VOLUME),_drugMult);
     _painReduce             = GET_NUMBER(_medicationConfig >> "painReduce",getNumber (_defaultConfig >> "painReduce")) * _drugMult;
