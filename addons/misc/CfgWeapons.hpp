@@ -107,8 +107,8 @@ class CfgWeapons {
     class kat_MEDPACK: kat_IFAK {
         displayName = CSTRING(MEDPACK_Display);
         descriptionShort = CSTRING(MEDPACK_DESC);
-        editorPreview = QPATHTOF(ui\MFAK.paa);
-        picture = QPATHTOF(ui\MFAK.paa);
+        editorPreview = QPATHTOF(ui\MedicationCase.paa);
+        picture = QPATHTOF(ui\MedicationCase.paa);
         class ItemInfo: CBA_MiscItem_ItemInfo {
             mass = 25;
         };

@@ -1403,7 +1403,7 @@ class CfgVehicles {
                     statement = QUOTE([ARR_4(_player,'kat_MEDPACK_Magazine',2,0)] call FUNC(FAK_unpack));
                     exceptions[] = {"isNotSwimming", "isNotInside", "isNotSitting"};
                     showDisabled = 0;
-                    icon = QPATHTOF(ui\MFAK.paa);
+                    icon = QPATHTOF(ui\MedicationCase.paa);
 
                     class MEDPACKInfo {
                         displayName = CSTRING(FAK_DisplayItems);
@@ -1411,7 +1411,7 @@ class CfgVehicles {
                         statement = QUOTE([ARR_2(_player,2)] call FUNC(FAK_displayContent));
                         exceptions[] = {"isNotSwimming", "isNotInside", "isNotSitting"};
                         showDisabled = 0;
-                        icon = QPATHTOF(ui\MFAK_DisplayItems.paa);
+                        icon = QPATHTOF(ui\MedicationCase.paa);
                     };
 
                     class Slot1 {
@@ -1420,7 +1420,7 @@ class CfgVehicles {
                         statement = QUOTE([ARR_4(_player,'kat_MEDPACK_Magazine',2,1)] call FUNC(FAK_unpack));
                         exceptions[] = {"isNotSwimming", "isNotInside", "isNotSitting"};
                         showDisabled = 0;
-                        icon = QPATHTOF(ui\MFAK.paa);
+                        icon = QPATHTOF(ui\MedicationCase.paa);
                     };
 
                     class Slot1_Repack {
@@ -1429,7 +1429,7 @@ class CfgVehicles {
                         statement = QUOTE([ARR_4(_player,'kat_MEDPACK_Magazine',2,1)] call FUNC(FAK_repack));
                         exceptions[] = {"isNotSwimming", "isNotInside", "isNotSitting"};
                         showDisabled = 0;
-                        icon = QPATHTOF(ui\MFAK_Repack.paa);
+                        icon = QPATHTOF(ui\MedicationCase.paa);
                     };
 
                     class Slot2: Slot1 {
