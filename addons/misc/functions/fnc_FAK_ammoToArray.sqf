@@ -31,6 +31,10 @@ switch (_type) do {
     case 1: { // AFAK
         _start = 2;
         _divider = 32;
+    };
+    case 2: { // MEDPACK
+        _start = 0;
+        _divider = 128;
     }; 
     default {}; // MFAK
 };

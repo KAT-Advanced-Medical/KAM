@@ -30,6 +30,7 @@ private _nline = "<br/>";
 private _itemColor = "";
 private _slotColor = "";
 private _slotNameArray = missionNamespace getVariable [QGVAR(FAKSlotNames), []];
+private _MEDslotNameArray = missionNamespace getVariable [QGVAR(MEDPACKSlotNames), []];
 private _slotName = "";
 
 private _fnc_arrayToHexCode = {
@@ -62,6 +63,11 @@ switch (_fakType) do {
         _slotColor = [(missionNamespace getVariable [QGVAR(AFAK_Slot_Color), []])] call _fnc_arrayToHexCode;
         _itemColor = [(missionNamespace getVariable [QGVAR(AFAK_Item_Color), []])] call _fnc_arrayToHexCode;
     };
+    case 2: { 
+        _fakContent = missionNamespace getVariable [QGVAR(MEDPACKContents), []];
+        _slotColor = [(missionNamespace getVariable [QGVAR(MEDPACK_Slot_Color), []])] call _fnc_arrayToHexCode;
+        _itemColor = [(missionNamespace getVariable [QGVAR(MEDPACK_Item_Color), []])] call _fnc_arrayToHexCode;
+    };
     default { 
         _fakContent = missionNamespace getVariable [QGVAR(MFAKContents), []];
         _slotColor = [(missionNamespace getVariable [QGVAR(MFAK_Slot_Color), []])] call _fnc_arrayToHexCode;
@@ -83,15 +89,31 @@ switch (_fakType) do {
     } forEach _x; // for each item & number in slot x
 
     _slot = _slot + 1;
-    switch (_slot) do {
-        case 1: { _slotName = _slotNameArray select 0; };
-        case 2: { _slotName = _slotNameArray select 1; };
-        case 3: { _slotName = _slotNameArray select 2; };
-        case 4: { _slotName = _slotNameArray select 3; };
-        case 5: { _slotName = _slotNameArray select 4; };
-        case 6: { _slotName = _slotNameArray select 5; };
-        case 7: { _slotName = _slotNameArray select 6; };
-        case 8: { _slotName = _slotNameArray select 7; };
+    switch (_fakType) do {
+        case 2: { 
+            switch (_slot) do {
+            case 1: { _slotName = _MEDslotNameArray select 0; };
+            case 2: { _slotName = _MEDslotNameArray select 1; };
+            case 3: { _slotName = _MEDslotNameArray select 2; };
+            case 4: { _slotName = _MEDslotNameArray select 3; };
+            case 5: { _slotName = _MEDslotNameArray select 4; };
+            case 6: { _slotName = _MEDslotNameArray select 5; };
+            case 7: { _slotName = _MEDslotNameArray select 6; };
+            case 8: { _slotName = _MEDslotNameArray select 7; };
+            };
+        };
+        default {
+            switch (_slot) do {
+            case 1: { _slotName = _slotNameArray select 0; };
+            case 2: { _slotName = _slotNameArray select 1; };
+            case 3: { _slotName = _slotNameArray select 2; };
+            case 4: { _slotName = _slotNameArray select 3; };
+            case 5: { _slotName = _slotNameArray select 4; };
+            case 6: { _slotName = _slotNameArray select 5; };
+            case 7: { _slotName = _slotNameArray select 6; };
+            case 8: { _slotName = _slotNameArray select 7; };
+            };
+        };
     };
 
     if (_slot > 1) then {_firstnline = _nline};

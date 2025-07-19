@@ -88,6 +88,7 @@ private _requiredItems = [];
 switch (_type) do {
     case 0: {_requiredItems = missionNamespace getVariable [QGVAR(IFAKContents), []];}; // IFAK
     case 1: {_requiredItems = missionNamespace getVariable [QGVAR(AFAKContents), []];}; // AFAK
+    case 2: {_requiredItems = missionNamespace getVariable [QGVAR(MEDPACKContents), []];}; // MEDPACK
     default {_requiredItems = missionNamespace getVariable [QGVAR(MFAKContents), []];}; // MFAK
 };
 
