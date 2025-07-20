@@ -688,6 +688,12 @@
             <English>Time beetwen each burn damage</English>
             <Polish>Ustala ile czasu minie zanim gracz dostanie następne obrażenia popażenia chemicznego</Polish>
         </Key>
+        <Key ID="STR_KAT_Chemical_SETTING_vxCycleTime">
+            <English>Time until next vx cycle</English>
+        </Key>
+        <Key ID="STR_KAT_Chemical_SETTING_vxCycleTime_DESC">
+            <English>Time beetwen each vx damage handler cycle</English>
+        </Key>
         <Key ID="STR_KAT_Chemical_SETTING_dropWeaponChance">
             <English>Drop Weapon Chance</English>
             <Czech>Šance na upuštění zbraně</Czech>

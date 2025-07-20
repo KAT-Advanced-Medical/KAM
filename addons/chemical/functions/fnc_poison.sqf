@@ -97,7 +97,9 @@ if (_newTime <= 0) then {
         case 2: {     //burns, if dont mask on face, if dont cbrn suit on body
             [QGVAR(applyBurnDamage), [_unit, _infectedObject], _unit] call CBA_fnc_targetEvent;
             };  
-        case 3: { };  //some nerve agent symphtoms
+        case 3: {
+            [QGVAR(EHVX), [_unit], _unit] call CBA_fnc_targetEvent;
+            };  //some nerve agent symphtoms
         default { };
     };
 };

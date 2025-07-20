@@ -175,6 +175,12 @@ GVAR(gasSources) = createHashMap;
     };
 }] call CBA_fnc_addEventHandler;
 
+[QGVAR(EHVX), {
+    params ["_unit"];
+    if(_unit getVariable [QGVAR(VXPoisoned), false]) exitWith {};
+    _unit call FUNC(handleVX);
+}] call CBA_fnc_addEventHandler;
+
 _inventoryEH = [
     "loadout", {
     params ["_player"];

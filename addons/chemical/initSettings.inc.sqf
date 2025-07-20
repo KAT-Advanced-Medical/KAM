@@ -136,6 +136,15 @@
     [0, 120, 15],
     true
 ] call CBA_fnc_addSetting;
+// Time before next vx cycle
+[
+    QGVAR(vxCycleTime),
+    "TIME",
+    [LLSTRING(SETTING_vxCycleTime), LLSTRING(SETTING_vxCycleTime_DESC)],
+    CBA_SETTINGS_CAT,
+    [0, 480, 40],
+    true
+] call CBA_fnc_addSetting;
 
 // Shows poisioning image
 [

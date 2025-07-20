@@ -26,7 +26,7 @@ Lethal. Causes respiratory symptoms and severe burn injuries.
 **Counter:** Sealed CBRN suit and gas mask.
 
 **Tier 4: Nerve Agent**  
-Lethal and highly dangerous. Can penetrate standard filters. Causes breathing difficulties and cardiac issues.  
+Lethal and highly dangerous. Can penetrate standard filters. The gas infection triggers a loop, the subsequent stages of which cause increasingly greater damage, starting with pain, progressing to respiratory failure, and ending with death. The time between each cycle can be configured in the add-on settings.
 **Counter:** CBRN suit, gas mask, and SCBA (Self-Contained Breathing Apparatus).
 
 ## Chemical Detector
@@ -59,7 +59,7 @@ You can check remaining oxygen under this same menu.
 Capacity and working time can be set under addons settings menu. 
 Capacity is expressed in remaining usage time.
 When oxygen is provided there is small O2 icon i your botoom-left screen corner. Based on color of icon you can know about remaining capacity. When the icon is yellow you have 5 minutes of oxygen left, when red you have 1 minute of oxygen left. When icon isnt visible there is no oxygen provided.
-You can recharge your scuba, by ace interaction at configured objects, default it is scuba cylinder from vanila/contact dlc.
+You can recharge your scuba, by ace interaction at configured objects, default it is scuba cylinder from vanilla/contact dlc.
 
 ## Hoses segments and filters visibility
 
@@ -67,7 +67,8 @@ When you have vannila/contact dlc equipment, when you turned on scba there will 
 
 ## Mask overley
 
-SOON, there will be mask overlay for vanilla/contact dlc masks overlay if enabled
+Gas maks overlays can be configured in addons settings. Vanilla gas mask have build in overlay, but kam add them glass effect.
+
 ## Medicine
 
 All types of poisoning can be treated with **Atropine**.
