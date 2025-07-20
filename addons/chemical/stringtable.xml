@@ -565,7 +565,7 @@
             <Dutch>Zet gasmasker op</Dutch>
         </Key>
         <Key ID="STR_KAT_Chemical_RechargeSCBA">
-            <English>Recharge SCBA</English>
+            <English>Recharge your SCBA</English>
         </Key>
         <Key ID="STR_KAT_Chemical_SETTING_AVAIL_BACKPACK">
             <English>Accepted backpacks SCBA</English>
@@ -791,6 +791,9 @@
             <Chinesesimp>显示中毒</Chinesesimp>
             <Dutch>Intoxicaties tonen</Dutch>
         </Key>
+        <Key ID="STR_KAT_Chemical_SETTING_showOverlay">
+            <English>Show mask overlay</English>
+        </Key>
         <Key ID="STR_KAT_Chemical_SETTING_showPoisoning_DESC">
             <English>Determines if poisoning and intoxication is shown in the medical menu</English>
             <Czech>Určuje, zda otrava a intoxikace budou zobrazovány ve zdravotnické tabulce</Czech>
@@ -801,6 +804,15 @@
             <Chinese>確定醫療選單中是否顯示中毒</Chinese>
             <Chinesesimp>确定医疗菜单中是否显示中毒</Chinesesimp>
             <Dutch>Bepaald of intoxicaties zichtbaar zijn in het medische menu</Dutch>
+        </Key>
+        <Key ID="STR_KAT_Chemical_SETTING_showOverlay_DESC">
+            <English>Determines if gas mask overylay will be dsiplayed</English>
+        </Key>
+         <Key ID="STR_KAT_Chemical_SETTING_showGlassOverlay">
+            <English>Show mask glass effect overlay</English>
+        </Key>
+        <Key ID="STR_KAT_Chemical_SETTING_showGlassOverlay_DESC">
+            <English>Determines if gas mask glass effect overylay will be dsiplayed</English>
         </Key>
         <Key ID="STR_KAT_Chemical_Scbacontrols_menu">
             <English>SCBA</English>

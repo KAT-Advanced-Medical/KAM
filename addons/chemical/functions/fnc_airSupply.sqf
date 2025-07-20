@@ -19,11 +19,9 @@
 
 params ["_supply"];
 
-_supply setVariable ["BIN_deconshower_disableAction", true];
-TRACE_1("AirSupply called",_supply);
 private _action = [
     "AirSupply_recharge",
-    "Recharge your SCBA",
+    CSTRING(RechargeSCBA),
     "",{
     params ["_target", "_player", "_params"];
     [FUNC(rechargeSCBA), [_player], _player] call CBA_fnc_targetEvent;},

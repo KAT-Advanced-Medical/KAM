@@ -146,3 +146,23 @@
     [true],
     true
 ] call CBA_fnc_addSetting;
+
+//mask overlay
+[
+    QGVAR(showOverlay),
+    "CHECKBOX",
+    [LLSTRING(SETTING_showOverlay), LLSTRING(SETTING_showOverlay_DESC)],
+    CBA_SETTINGS_CAT,
+    [true],
+    true
+] call CBA_fnc_addSetting;
+
+//mask glass overlay
+[
+    QGVAR(showGlassOverlay),
+    "CHECKBOX",
+    [LLSTRING(SETTING_showGlassOverlay), LLSTRING(SETTING_showGlassOverlay_DESC)],
+    CBA_SETTINGS_CAT,
+    [true],
+    true
+] call CBA_fnc_addSetting;

@@ -175,6 +175,13 @@ GVAR(gasSources) = createHashMap;
     };
 }] call CBA_fnc_addEventHandler;
 
+_inventoryEH = [
+    "loadout", {
+    params ["_player"];
+    _player call FUNC(maskOverlay);
+    }
+] call CBA_fnc_addPlayerEventHandler;
+
 _airsupplylist = missionNamespace getVariable [QGVAR(availAirSupplyList), []];
 {
     [_x, "initPost",{

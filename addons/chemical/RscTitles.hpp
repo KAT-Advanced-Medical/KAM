@@ -27,6 +27,29 @@
 
 class RscTitles
 {
+    class KAT_GasmaskOverlay {
+        idd = -1;
+        duration = 10e10;
+        fadeIn = 0;
+        fadeOut = 0;
+        name = "KAT_GasmaskOverlay";
+        onLoad = "uiNamespace setVariable ['CBRN_GasmaskOverlay', _this select 0];";
+        onUnload = "uiNamespace setVariable ['CBRN_GasmaskOverlay', displayNull];";
+        class controls {
+            class KAT_GasmaskOverlay_Picture: RscPicture {
+                idc = 18836;
+                text = "x\kat\addons\chemical\UI\gas_over.paa";
+                x = QUOTE(safeZoneX);
+                y = QUOTE(safeZoneY);
+                w = QUOTE(safeZoneW);
+                h = QUOTE(safeZoneH);
+                style = 48; // ST_PICTURE
+                colorBackground[] = {0, 0, 0, 0};
+                colorText[] = {1, 1, 1, 1};
+            };
+        };
+    };
+
     class KAT_ChemicalDetector
     {
         idd = 18835;
