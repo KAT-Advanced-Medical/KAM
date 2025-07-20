@@ -37,8 +37,30 @@ class RscTitles
         onUnload = "uiNamespace setVariable ['CBRN_GasmaskOverlay', displayNull];";
         class controls {
             class KAT_GasmaskOverlay_Picture: RscPicture {
-                idc = 18836;
-                text = "x\kat\addons\chemical\UI\gas_over.paa";
+                idc = -1;
+                text = "x\kat\addons\chemical\UI\overlay_style_m50.paa";
+                x = QUOTE(safeZoneX);
+                y = QUOTE(safeZoneY);
+                w = QUOTE(safeZoneW);
+                h = QUOTE(safeZoneH);
+                style = 48; // ST_PICTURE
+                colorBackground[] = {0, 0, 0, 0};
+                colorText[] = {1, 1, 1, 1};
+            };
+        };
+    };
+    class KAT_GasmaskOverlay_m04 {
+        idd = -1;
+        duration = 10e10;
+        fadeIn = 0;
+        fadeOut = 0;
+        name = "KAT_GasmaskOverlay";
+        onLoad = "uiNamespace setVariable ['CBRN_GasmaskOverlay', _this select 0];";
+        onUnload = "uiNamespace setVariable ['CBRN_GasmaskOverlay', displayNull];";
+        class controls {
+            class KAT_GasmaskOverlay_Picture: RscPicture {
+                idc = -1;
+                text = "x\kat\addons\chemical\UI\m04_overlay_ca.paa";
                 x = QUOTE(safeZoneX);
                 y = QUOTE(safeZoneY);
                 w = QUOTE(safeZoneW);
