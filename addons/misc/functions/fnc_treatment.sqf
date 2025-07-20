@@ -32,8 +32,10 @@ if !(call ACEFUNC(medical_treatment,canTreat)) exitWith {false};
 private _config = configFile >> "ace_medical_treatment_actions" >> _classname;
 
 // Get treatment time from config, exit if treatment time is zero
-private _treatmentTime = if (isText (_config >> "treatmentTime")) then {
-    GET_FUNCTION(_treatmentTime,_config >> "treatmentTime");
+private _medicRequiredLevel = GET_NUMBER_ENTRY(_config >> "medicRequired");
+private _treatmentTimeConfig = ["treatmentTime", "treatmentTimeTrained"] select (([_medic, (_medicRequiredLevel + 1)] call FUNC(isMedic)) && {!isNull (_config >> "treatmentTimeTrained")});
+private _treatmentTime = if (isText (_config >> _treatmentTimeConfig)) then {
+    GET_FUNCTION(_treatmentTime,_config >> _treatmentTimeConfig);
 
     if (_treatmentTime isEqualType {}) then {
         _treatmentTime = call _treatmentTime;
@@ -41,7 +43,7 @@ private _treatmentTime = if (isText (_config >> "treatmentTime")) then {
 
     _treatmentTime
 } else {
-    getNumber (_config >> "treatmentTime");
+    getNumber (_config >> _treatmentTimeConfig);
 };
 
 if (_treatmentTime == 0) exitWith {false};
