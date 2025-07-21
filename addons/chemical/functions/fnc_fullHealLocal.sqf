@@ -24,3 +24,4 @@ _patient setVariable [QGVAR(airPoisoning), false, true];
 _patient setVariable [QGVAR(infectionTime), missionNamespace getVariable [QGVAR(infectionTime), 60], true];
 _patient setVariable [QGVAR(infectionArray), [], true];
 _patient setVariable [QGVAR(CoughCooldown), false, true];
+_patient setVariable [QGVAR(VXPoisoned), false, true];

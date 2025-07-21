@@ -72,4 +72,5 @@ _timebetween = missionNamespace getVariable [QGVAR(vxCycleTime), 40];
 
         sleep _timebetween;
     };
+    _unit setVariable [QGVAR(VXPoisoned), false, true];
 };
