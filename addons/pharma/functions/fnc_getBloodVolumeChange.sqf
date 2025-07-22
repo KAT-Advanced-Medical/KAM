@@ -33,10 +33,11 @@ private _lossVolumeChange = (-_deltaT * ((_bloodLoss + _internalBleeding * (GET_
 private _enableFluidShift = EGVAR(vitals,enableFluidShift);
 private _fluidVolume = GET_BODY_FLUID(_unit);
 TRACE_3("gbvc",_internalBleeding,_bloodLoss,_heartRate);
-_fluidVolume params ["_ECB","_ECP","_SRBC","_ISP","_fullVolume"];
+_fluidVolume params ["_ECB","_ECP","_SRBC","_ISP","_fullVolume", "_platelets"];
 
 _ECP = (_ECP + (_lossVolumeChange * LITERS_TO_ML) / 2) max 100;
 _ECB = (_ECB + (_lossVolumeChange * LITERS_TO_ML) / 2) max 100;
+_platelets = (_platelets + ((_lossVolumeChange * LITERS_TO_ML) / 10)) max 0;
 
 if (!isNil {_unit getVariable [QACEGVAR(medical,ivBags),[]]}) then {
     private _bloodBags = _unit getVariable [QACEGVAR(medical,ivBags), []];
@@ -54,7 +55,7 @@ if (!isNil {_unit getVariable [QACEGVAR(medical,ivBags),[]]}) then {
     private _fluidHeat = 0;
 
     _bloodBags = _bloodBags apply {
-        _x params ["_bagVolumeRemaining", "_type", "_bodyPart", "_treatment", "_rateCoef", "_item"];
+        _x params ["_bagVolumeRemaining", "_type", "_bodyPart", "_treatment", "_rateCoef", "_item", "_plateletAmount"];
 
         private _tourniquets = GET_TOURNIQUETS(_unit);
         private _occlusionMap = [
@@ -98,6 +99,7 @@ if (!isNil {_unit getVariable [QACEGVAR(medical,ivBags),[]]}) then {
             };
 
             // Plasma adds to ECP. Saline splits between the ECP and ISP. Blood adds to ECB
+            _platelets = (_platelets + (_plateletAmount * _bagChange)) max 0;
             switch (true) do {
                 case(_type == "Plasma"): { _ECP = _ECP + _bagChange; _lossVolumeChange = _lossVolumeChange + (_bagChange / ML_TO_LITERS); };
                 case(_type == "Saline"): { 
@@ -264,6 +266,6 @@ if (_enableFluidShift) then {
     };
 };
 
-_unit setVariable [QEGVAR(circulation,bodyFluid), [_ECB, _ECP, _SRBC, _ISP, (_ECP + _ECB)], _syncValues];
+_unit setVariable [QEGVAR(circulation,bodyFluid), [_ECB, _ECP, _SRBC, _ISP, (_ECP + _ECB), _platelets], _syncValues];
 TRACE_3("bloodLoss",_ECB,_ECP,(_ECP + _ECB));
 ((_lossVolumeChange + GET_BLOOD_VOLUME_LITERS(_unit)) max 0.01)

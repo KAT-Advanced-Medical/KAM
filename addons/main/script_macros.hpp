@@ -305,7 +305,8 @@
 #define DEFAULT_ECP 3300
 #define DEFAULT_SRBC 500
 #define DEFAULT_ISP 10000
-#define DEFAULT_BODY_FLUID [2700, 3300, 500, 10000, 6000]
+#define DEFAULT_PLATELETS 600
+#define DEFAULT_BODY_FLUID [2700, 3300, 500, 10000, 6000, 600]
 
 #define DEFAULT_BLOOD_PRESSURE [80, 120]
 
@@ -318,9 +319,8 @@
 #define OXYGEN_PERCENTAGE_FATAL 75
 
 // Breathing
-#define VAR_SURFACE_AREA(unit)          (unit getVariable [QEGVAR(breathing,lungSurfaceArea), 400])
-#define GET_KAT_SURFACE_AREA(unit)      (VAR_SURFACE_AREA(unit) - (((unit getVariable [QEGVAR(breathing,pneumothorax), [0, 0]] select 0) * 40) + ((unit getVariable [QEGVAR(breathing,pneumothorax), [0, 0]] select 1) * 40)))
-
+#define VAR_SURFACE_AREA                QEGVAR(breathing,lungSurfaceArea)
+#define GET_KAT_SURFACE_AREA(unit)      (unit getVariable [VAR_SURFACE_AREA, 400])
 
 #define VAR_BLOOD_GAS                  QEGVAR(circulation,bloodGas)
 #define VAR_BREATHING_RATE             QEGVAR(breathing,breathRate)
@@ -346,6 +346,7 @@
 #define GET_BODY_FLUID_ECP(unit)       ((unit getVariable [VAR_BODY_FLUID, DEFAULT_BODY_FLUID]) select 1)
 #define GET_BODY_FLUID_SRBC(unit)      ((unit getVariable [VAR_BODY_FLUID, DEFAULT_BODY_FLUID]) select 2)
 #define GET_BODY_FLUID_ISP(unit)       ((unit getVariable [VAR_BODY_FLUID, DEFAULT_BODY_FLUID]) select 3)
+#define GET_BODY_FLUID_PLATELETS(unit) ((unit getVariable [VAR_BODY_FLUID, DEFAULT_BODY_FLUID]) select 5)
 
 
 #define GET_BLOOD_VOLUME_LITERS(unit)  ((GET_BODY_FLUID(unit) select 4) / 1000)
