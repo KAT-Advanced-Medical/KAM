@@ -137,7 +137,20 @@ GVAR(gasSources) = createHashMap;
 
 [QGVAR(applyBurnDamage), {
     params ["_unit", "_source"];
-
+    private _masks = missionNamespace getVariable [QGVAR(availGasmaskList), []];
+    private _suits = missionNamespace getVariable [QGVAR(availSuitsList), []];
+    if(missionNamespace getVariable [QGVAR(enableDecontamination), false]) then {
+        if(!((goggles _unit in _masks)&&{_unit getVariable [QGVAR(gasmask_durability), 10] > 0})) then {
+            _unit setVariable [QGVAR(contaminatedHead), true, true];
+        };
+        if(!(uniform _unit in _suits)) then {
+            _unit setVariable [QGVAR(contaminatedBody), true, true];
+        };
+        if(!(_unit getVariable [QGVAR(Contaminated), false])) then {
+            _unit call FUNC(contaimatedEh);
+        };
+        
+    }else{
     private _timebetween = missionNamespace getVariable [QGVAR(burnTime), 15];
     private _burnKey = format ["KAT_BurnStart_%1", _source];
     private _lastDamageKey = format ["KAT_BurnLastDamage_%1", _source];
@@ -173,6 +186,7 @@ GVAR(gasSources) = createHashMap;
             [_unit, 0.2, _randomPart, "chemburn"] call ace_medical_fnc_addDamageToUnit;
         };
     };
+    };
 }] call CBA_fnc_addEventHandler;
 
 [QGVAR(EHVX), {
@@ -180,6 +194,7 @@ GVAR(gasSources) = createHashMap;
     if(_unit getVariable [QGVAR(VXPoisoned), false]) exitWith {};
     _unit call FUNC(handleVX);
 }] call CBA_fnc_addEventHandler;
+
 
 _inventoryEH = [
     "loadout", {

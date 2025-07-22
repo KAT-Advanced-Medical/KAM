@@ -155,6 +155,12 @@
         <Key ID="STR_KAT_Chemical_EnableSCBA">
             <English>Enable SCBA</English>
         </Key>
+        <Key ID="STR_KAT_Chemical_Decontaimeate">
+            <English>Use Decon kit</English>
+        </Key>
+        <Key ID="STR_KAT_Chemical_Decontaimeate_progress">
+            <English>Using Decon kit...</English>
+        </Key>
         <Key ID="STR_KAT_Chemical_EnableSCBA_progress">
             <English>Enabling SCBA...</English>
         </Key>
@@ -796,6 +802,12 @@
             <Chinese>顯示中毒</Chinese>
             <Chinesesimp>显示中毒</Chinesesimp>
             <Dutch>Intoxicaties tonen</Dutch>
+        </Key>
+        <Key ID="STR_KAT_Chemical_SETTING_enableDecontamination">
+            <English>Enable Decontamination</English>
+        </Key>
+        <Key ID="STR_KAT_Chemical_SETTING_enableDecontamination_DESC">
+            <English>When this setting is applied, when you are contaminated by blister ageny, you need to decontaminate yourself to stop geeting burn damages</English>
         </Key>
         <Key ID="STR_KAT_Chemical_SETTING_showOverlay">
             <English>Show mask overlay</English>

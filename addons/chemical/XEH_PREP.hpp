@@ -46,3 +46,5 @@ PREP(rechargeSCBA);
 PREP(airSupply);
 PREP(maskOverlay);
 PREP(handleVX);
+PREP(contaimatedEh);
+PREP(healdecon);

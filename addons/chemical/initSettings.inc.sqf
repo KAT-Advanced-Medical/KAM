@@ -156,6 +156,16 @@
     true
 ] call CBA_fnc_addSetting;
 
+// enable decontamination
+[
+    QGVAR(enableDecontamination),
+    "CHECKBOX",
+    [LLSTRING(SETTING_enableDecontamination), LLSTRING(SETTING_enableDecontamination_DESC)],
+    CBA_SETTINGS_CAT,
+    [true],
+    true
+] call CBA_fnc_addSetting;
+
 //mask overlay
 [
     QGVAR(showOverlay),

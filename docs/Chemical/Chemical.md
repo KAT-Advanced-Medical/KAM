@@ -22,7 +22,7 @@ Lethal. Causes coughing and respiratory symptoms.
 **Counter:** Gas mask.
 
 **Tier 3: Blister Agent**  
-Lethal. Causes respiratory symptoms and severe burn injuries.  
+Lethal. Causes respiratory symptoms and severe burn injuries. When contamination is enabled you will take damage until you use decon kit.  
 **Counter:** Sealed CBRN suit and gas mask.
 
 **Tier 4: Nerve Agent**  
@@ -72,3 +72,5 @@ Gas maks overlays can be configured in addons settings. Vanilla gas mask have bu
 ## Medicine
 
 All types of poisoning can be treated with **Atropine**.
+
+To decontaminate yourself you need any ace saline, and the interaction is available under advanced tab.
