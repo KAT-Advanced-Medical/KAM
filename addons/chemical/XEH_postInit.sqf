@@ -132,7 +132,7 @@ GVAR(gasSources) = createHashMap;
 
         _gasLogic setVariable [QGVAR(particleObjects), _particleObjects, true];
     };
-    GVAR(gasSources) set [_hashedKey, [_gasLogic, _radius, _gasLevel, _condition, _conditionArgs, _UseParticles, _UseCustomParticles]];
+    GVAR(gasSources) set [_hashedKey, [_gasLogic, _radius, _gasLevel, _condition, _conditionArgs, _isSealable]];
 }] call CBA_fnc_addEventHandler;
 
 [QGVAR(applyBurnDamage), {

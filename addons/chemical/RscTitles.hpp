@@ -99,7 +99,7 @@ class RscTitles
                 y = QUOTE(SAFEZONE_Y_LOWEDGE - FRAME_H(7.3));
                 w = QUOTE(FRAME_W(9.8));
                 h = QUOTE(FRAME_H(5));
-                colorBackground[] = {0, 0, 0, 0.6}; // półprzezroczyste tło
+                colorBackground[] = {0, 0, 0, 0};
             };
             class KatChemTime: RscText
             {

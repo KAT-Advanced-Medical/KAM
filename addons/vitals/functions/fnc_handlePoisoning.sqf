@@ -1,4 +1,3 @@
-#define DEBUG_MODE_FULL
 #include "..\script_component.hpp"
 /*
  * Author: MiszczuZPolski
@@ -27,7 +26,6 @@ _unit setVariable [QEGVAR(chemical,CSGas), (_currentCS - (_poisonAdjustment * _d
 
 private _inZone = false;
 private _distance = 0;
-
 {
     _y params ["_gasLogic", "_radius", "_gasLevel", "_condition", "_conditionArgs", "_isSealable"];
     TRACE_2("gasVitalsPFH loop",_x,_y);
@@ -37,10 +35,10 @@ private _distance = 0;
     if (_distance < _radius) then {
         _inZone = true;
     };
-} forEach GVAR(gasSources);
+} forEach EGVAR(chemical,gasSources);
 
 if !(_inZone) then {
-    _unit setVariable [QGVAR(areaIntensity), 0, true];
+    _unit setVariable [QEGVAR(chemical,areaIntensity), 0, true];
 };
 
 private _infectionArray = _unit getVariable [QEGVAR(chemical,infectionArray), []];

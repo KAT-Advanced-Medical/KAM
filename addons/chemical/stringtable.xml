@@ -893,20 +893,6 @@
         </Key>
         <Key ID="STR_KAT_Chemical_ToxicGas_MFDNAME">
             <English>Choking agent</English>
-            <Czech>Toxický plyn</Czech>
-            <French>Gaz toxique</French>
-            <Spanish>Gas toxico</Spanish>
-            <Italian>Gas tossico</Italian>
-            <Polish>Toksyczny gaz</Polish>
-            <Portuguese>Gás tóxico</Portuguese>
-            <Russian>Токсичный газ</Russian>
-            <German>Senfgas (Giftgas)</German>
-            <Korean>유독가스</Korean>
-            <Japanese>有毒ガス</Japanese>
-            <Chinese>有毒氣體</Chinese>
-            <Chinesesimp>有毒气体</Chinesesimp>
-            <Finnish>Myrkyllinen kaasu</Finnish>
-            <Dutch>Gifgas</Dutch>
         </Key>
         <Key ID="STR_KAT_Chemical_TriWire_Gas_Desc">
             <English>Type: Tripwire gas - Sprays a poisonous gas when triggered.&lt;br /&gt;Rounds: 1&lt;br /&gt;Used on: Ground</English>
