@@ -22,6 +22,8 @@ params ["_posX","_posY","_posZ"];
 private _smoke = "KAT_GASTrip_SmokeEffect" createVehicle [_posX,_posY,_posZ];
 hideObjectGlobal _smoke;
 [_smoke, 0, ["ACE_MainActions", "ACTION"]] call ACEFUNC(interact_menu,removeActionFromObject);
+private _particleffects = missionNamespace getVariable [QGVAR(showParticles), true];
+private _customcolors = missionNamespace getVariable [QGVAR(customColors), true];
 
 if (isServer) then {
     private _timeToLive = 10;
@@ -37,6 +39,6 @@ if (isServer) then {
         };
 
         CBA_missionTime < _endTime // return
-    }, [CBA_missionTime + _timeToLive, _smoke]]] call CBA_fnc_serverEvent;
+    }, [CBA_missionTime + _timeToLive, _smoke], false, _particleffects, _customcolors]] call CBA_fnc_serverEvent;
 };
 

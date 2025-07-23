@@ -1,7 +1,7 @@
 #include "..\script_component.hpp"
 /*
 * Author: DiGii
-*
+* Modified: kolmipilot
 * Arguments:
 * 0: Object <Object>
 * 1: None
@@ -34,11 +34,13 @@ private _configClass = (configFile >> "CfgAmmo" >> _ammo);
 private _lifetime = [_configClass, "KAT_lifetime", 60] call BIS_fnc_returnConfigEntry;
 private _radius = [_configClass, "KAT_radius", 10] call BIS_fnc_returnConfigEntry;
 private _gasLevel = [_configClass, "KAT_toxicLvL", 1] call BIS_fnc_returnConfigEntry;
+private _particleffects = missionNamespace getVariable [QGVAR(showParticles), true];
+private _customcolors = missionNamespace getVariable [QGVAR(customColors), true];
 
 [{
     params ["_args", "_handler"];
     _args params ["_projectile", "_gasInfo"];
-    _gasInfo params ["_lifetime", "_radius", "_gasLeveL"];
+    _gasInfo params ["_lifetime", "_radius", "_gasLeveL", "_particleffects", "_customcolors"];
 
     if (isNull _projectile || {!alive _projectile}) exitWith {
         [_handler] call CBA_fnc_removePerFrameHandler;
@@ -48,6 +50,6 @@ private _gasLevel = [_configClass, "KAT_toxicLvL", 1] call BIS_fnc_returnConfigE
         params ["_endTime"];
 
         CBA_missionTime < _endTime // return
-    }, [CBA_missionTime + _lifetime]]] call CBA_fnc_serverEvent;
+    }, [CBA_missionTime + _lifetime], false, _particleffects, _customcolors]] call CBA_fnc_serverEvent;
 
-}, 0, [_projectile, [_lifetime, _radius, _gasLevel]]] call CBA_fnc_addPerFrameHandler;
+}, 0, [_projectile, [_lifetime, _radius, _gasLevel, _particleffects, _customcolors]]] call CBA_fnc_addPerFrameHandler;

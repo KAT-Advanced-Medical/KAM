@@ -264,7 +264,7 @@ class CfgVehicles {
 
         class Turrets: Turrets {
             class MainTurret: MainTurret {
-                magazines[] += {"KAT_5Rnd_82mm_Mo_Type0_AI","KAT_5Rnd_82mm_Mo_Type0_AI","KAT_5Rnd_82mm_Mo_Type0_AI","KAT_5Rnd_82mm_Mo_Type0_AI","KAT_3Rnd_82mm_Mo_TypeCS_AI","KAT_3Rnd_82mm_Mo_TypeCS_AI","KAT_3Rnd_82mm_Mo_TypeCS_AI"};
+                magazines[] += {"KAT_5Rnd_82mm_Mo_Type0_AI","KAT_5Rnd_82mm_Mo_Type0_AI","KAT_5Rnd_82mm_Mo_Type0_AI","KAT_5Rnd_82mm_Mo_Type0_AI","KAT_3Rnd_82mm_Mo_TypeCS_AI","KAT_3Rnd_82mm_Mo_TypeCS_AI","KAT_3Rnd_82mm_Mo_TypeCS_AI", "KAT_5Rnd_82mm_Mo_Type2_AI", "KAT_5Rnd_82mm_Mo_Type2_AI", "KAT_5Rnd_82mm_Mo_Type2_AI", "KAT_5Rnd_82mm_Mo_Type2_AI", "KAT_5Rnd_82mm_Mo_Type3_AI", "KAT_5Rnd_82mm_Mo_Type3_AI", "KAT_5Rnd_82mm_Mo_Type3_AI", "KAT_5Rnd_82mm_Mo_Type3_AI"};
             };
         };
     };
@@ -277,6 +277,8 @@ class CfgVehicles {
         class TransportMagazines {
             MACRO_ADDMAGAZINE(KAT_1Rnd_82mm_Mo_Type0,8);
             MACRO_ADDMAGAZINE(KAT_1Rnd_82mm_Mo_TypeCS,8);
+            MACRO_ADDMAGAZINE(KAT_1Rnd_82mm_Mo_Type2,8);
+            MACRO_ADDMAGAZINE(KAT_1Rnd_82mm_Mo_Type3,8);
         };
     };
     class ACE_Box_82mm_Mo_Gas: ACE_Box_82mm_Mo_HE {
@@ -284,6 +286,7 @@ class CfgVehicles {
         class TransportMagazines {
             MACRO_ADDMAGAZINE(KAT_1Rnd_82mm_Mo_Type0,8);
             MACRO_ADDMAGAZINE(KAT_1Rnd_82mm_Mo_TypeCS,8);
+            MACRO_ADDMAGAZINE(KAT_1Rnd_82mm_Mo_Type3,8);
         };
     };
 

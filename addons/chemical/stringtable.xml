@@ -1,6 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Project name="KAT">
     <Package name="Chemical">
+        <Key ID="STR_KAT_Chemical_BLU80_DisplayName_1x">
+            <English>BLU-80/B</English>
+        </Key>
+        <Key ID="STR_KAT_Chemical_BLU80_ShortName_1x">
+            <English>BLU-80/B</English>
+        </Key>
+        <Key ID="STR_KAT_Chemical_BLU80_desc">
+            <English>glide bomb with a radar altimeter fuze intended to disperse the binary generated nerve agent VX</English>
+        </Key>
+        <Key ID="STR_KAT_Chemical_Blistergas_DisplayName">
+            <English>82mm Blister Agent Round</English>
+        </Key>
+        <Key ID="STR_KAT_Chemical_Blistergas_MFDNAME">
+            <English>Blister Agent</English>
+        </Key>
         <Key ID="STR_KAT_Chemical_CSGas_DisplayName">
             <English>82mm CS-Gas Round</English>
             <Czech>82mm Granát s CS-Plynem</Czech>
@@ -116,6 +131,12 @@
             <Chinesesimp>关闭</Chinesesimp>
             <Dutch>UIT</Dutch>
         </Key>
+        <Key ID="STR_KAT_Chemical_Decontaimeate">
+            <English>Use Decon kit</English>
+        </Key>
+        <Key ID="STR_KAT_Chemical_Decontaimeate_progress">
+            <English>Using Decon kit...</English>
+        </Key>
         <Key ID="STR_KAT_Chemical_DisableDetectorSound">
             <English>Disable Warning Tone</English>
             <Czech>Vypnout tón varování</Czech>
@@ -154,12 +175,6 @@
         </Key>
         <Key ID="STR_KAT_Chemical_EnableSCBA">
             <English>Enable SCBA</English>
-        </Key>
-        <Key ID="STR_KAT_Chemical_Decontaimeate">
-            <English>Use Decon kit</English>
-        </Key>
-        <Key ID="STR_KAT_Chemical_Decontaimeate_progress">
-            <English>Using Decon kit...</English>
         </Key>
         <Key ID="STR_KAT_Chemical_EnableSCBA_progress">
             <English>Enabling SCBA...</English>
@@ -559,6 +574,12 @@
             <Finnish>M7A3 CS -kaasukranaatti on ei-tappava kyynelkaasukranaatti, joka koskettaa limakalvoja ja silmiä vakavasti.</Finnish>
             <Dutch>The M7A3 CS gasgranaat is een niet-dodelijke traangasgranaat dat op contact een ernstig brandend gevoel in het slijmvlies en de ogen creëerd.</Dutch>
         </Key>
+        <Key ID="STR_KAT_Chemical_Nervegas_DisplayName">
+            <English>82mm Nerve Agent Round</English>
+        </Key>
+        <Key ID="STR_KAT_Chemical_Nervegas_MFDNAME">
+            <English>Nerve Agent</English>
+        </Key>
         <Key ID="STR_KAT_Chemical_PutOnGasMask">
             <English>Put on gas mask</English>
             <Czech>Nasadit Plynovou Masku</Czech>
@@ -573,21 +594,21 @@
         <Key ID="STR_KAT_Chemical_RechargeSCBA">
             <English>Recharge your SCBA</English>
         </Key>
-        <Key ID="STR_KAT_Chemical_SETTING_AVAIL_BACKPACK">
-            <English>Accepted backpacks SCBA</English>
-            <Polish>Dozwolone plecaki AODO</Polish>
-        </Key>
         <Key ID="STR_KAT_Chemical_SETTING_AVAIL_AIRSUPPLY">
             <English>Classnames of objects that will be oxygen source</English>
             <Polish>Classname obiektów które beda źródlem tlenu</Polish>
         </Key>
-        <Key ID="STR_KAT_Chemical_SETTING_AVAIL_BACKPACK_DISC">
-            <English>Enter here the classname of the backpack(scba) that should work with the system.</English>
-            <Polish>Wpisz classname plecaka, (aodo) ktory ma dzialc z systemem</Polish>
-        </Key>
         <Key ID="STR_KAT_Chemical_SETTING_AVAIL_AIRSUPPLY_DISC">
             <English>Enter here the classname of the objects that will have ace interaction to recharge your SCBA</English>
             <Polish>Wpisz classname objektów, które będą miały interakcje ace aby uzupełnić twoje AODO</Polish>
+        </Key>
+        <Key ID="STR_KAT_Chemical_SETTING_AVAIL_BACKPACK">
+            <English>Accepted backpacks SCBA</English>
+            <Polish>Dozwolone plecaki AODO</Polish>
+        </Key>
+        <Key ID="STR_KAT_Chemical_SETTING_AVAIL_BACKPACK_DISC">
+            <English>Enter here the classname of the backpack(scba) that should work with the system.</English>
+            <Polish>Wpisz classname plecaka, (aodo) ktory ma dzialc z systemem</Polish>
         </Key>
         <Key ID="STR_KAT_Chemical_SETTING_AVAIL_GASMASK">
             <English>Accepted gas masks</English>
@@ -694,11 +715,11 @@
             <English>Time beetwen each burn damage</English>
             <Polish>Ustala ile czasu minie zanim gracz dostanie następne obrażenia popażenia chemicznego</Polish>
         </Key>
-        <Key ID="STR_KAT_Chemical_SETTING_vxCycleTime">
-            <English>Time until next vx cycle</English>
+        <Key ID="STR_KAT_Chemical_SETTING_customColors">
+            <English>Use custom colors for ammo particle effects</English>
         </Key>
-        <Key ID="STR_KAT_Chemical_SETTING_vxCycleTime_DESC">
-            <English>Time beetwen each vx damage handler cycle</English>
+        <Key ID="STR_KAT_Chemical_SETTING_customColors_DESC">
+            <English>Use custom colors for ammo particle effects</English>
         </Key>
         <Key ID="STR_KAT_Chemical_SETTING_dropWeaponChance">
             <English>Drop Weapon Chance</English>
@@ -721,6 +742,12 @@
             <Chinese>確定在催淚瓦斯中丟下武器的機率</Chinese>
             <Chinesesimp>确定在催泪瓦斯中投掷武器的几率</Chinesesimp>
             <Dutch>Bepaald de kans om je wapen te laten vallen terwijl je wordt blootgesteld aan traangas</Dutch>
+        </Key>
+        <Key ID="STR_KAT_Chemical_SETTING_enableDecontamination">
+            <English>Enable Decontamination</English>
+        </Key>
+        <Key ID="STR_KAT_Chemical_SETTING_enableDecontamination_DESC">
+            <English>When this setting is applied, when you are contaminated by blister ageny, you need to decontaminate yourself to stop geeting burn damages</English>
         </Key>
         <Key ID="STR_KAT_Chemical_SETTING_gasMaskSoundVolume">
             <English>Gas Mask Sound Volume</English>
@@ -792,6 +819,24 @@
             <Finnish>Aika, jonka voit seistä kaasussa, ennen kuin sinulla on vaikutusta tai tarvitset kaasunaamaria</Finnish>
             <Dutch>Tijd dat je in gas kan staan voordat je geïnfecteerd raakt of een gasmasker nodig hebt</Dutch>
         </Key>
+        <Key ID="STR_KAT_Chemical_SETTING_showGlassOverlay">
+            <English>Show mask glass effect overlay</English>
+        </Key>
+        <Key ID="STR_KAT_Chemical_SETTING_showGlassOverlay_DESC">
+            <English>Determines if gas mask glass effect overylay will be dsiplayed</English>
+        </Key>
+        <Key ID="STR_KAT_Chemical_SETTING_showOverlay">
+            <English>Show mask overlay</English>
+        </Key>
+        <Key ID="STR_KAT_Chemical_SETTING_showOverlay_DESC">
+            <English>Determines if gas mask overylay will be dsiplayed</English>
+        </Key>
+        <Key ID="STR_KAT_Chemical_SETTING_showParticles">
+            <English>Use particle effects for ammo</English>
+        </Key>
+        <Key ID="STR_KAT_Chemical_SETTING_showParticles_DESC">
+            <English>Use particle effects for ammo</English>
+        </Key>
         <Key ID="STR_KAT_Chemical_SETTING_showPoisoning">
             <English>Show Poisoning</English>
             <Czech>Zobrazit otravu</Czech>
@@ -802,15 +847,6 @@
             <Chinese>顯示中毒</Chinese>
             <Chinesesimp>显示中毒</Chinesesimp>
             <Dutch>Intoxicaties tonen</Dutch>
-        </Key>
-        <Key ID="STR_KAT_Chemical_SETTING_enableDecontamination">
-            <English>Enable Decontamination</English>
-        </Key>
-        <Key ID="STR_KAT_Chemical_SETTING_enableDecontamination_DESC">
-            <English>When this setting is applied, when you are contaminated by blister ageny, you need to decontaminate yourself to stop geeting burn damages</English>
-        </Key>
-        <Key ID="STR_KAT_Chemical_SETTING_showOverlay">
-            <English>Show mask overlay</English>
         </Key>
         <Key ID="STR_KAT_Chemical_SETTING_showPoisoning_DESC">
             <English>Determines if poisoning and intoxication is shown in the medical menu</English>
@@ -823,14 +859,11 @@
             <Chinesesimp>确定医疗菜单中是否显示中毒</Chinesesimp>
             <Dutch>Bepaald of intoxicaties zichtbaar zijn in het medische menu</Dutch>
         </Key>
-        <Key ID="STR_KAT_Chemical_SETTING_showOverlay_DESC">
-            <English>Determines if gas mask overylay will be dsiplayed</English>
+        <Key ID="STR_KAT_Chemical_SETTING_vxCycleTime">
+            <English>Time until next vx cycle</English>
         </Key>
-         <Key ID="STR_KAT_Chemical_SETTING_showGlassOverlay">
-            <English>Show mask glass effect overlay</English>
-        </Key>
-        <Key ID="STR_KAT_Chemical_SETTING_showGlassOverlay_DESC">
-            <English>Determines if gas mask glass effect overylay will be dsiplayed</English>
+        <Key ID="STR_KAT_Chemical_SETTING_vxCycleTime_DESC">
+            <English>Time beetwen each vx damage handler cycle</English>
         </Key>
         <Key ID="STR_KAT_Chemical_Scbacontrols_menu">
             <English>SCBA</English>
@@ -856,24 +889,10 @@
             <Dutch>Gasmasker afzetten</Dutch>
         </Key>
         <Key ID="STR_KAT_Chemical_ToxicGas_DisplayName">
-            <English>82mm Toxic Gas Round</English>
-            <Czech>82mm Granát s Toxickým Plynem</Czech>
-            <French>Cartouche de 82mm de gaz toxique</French>
-            <Spanish>Ronda de 82mm de gas toxico</Spanish>
-            <Italian>Colpo 82mm di gas tossico</Italian>
-            <Polish>Pocisk gazu toksycznego kal.82mm</Polish>
-            <Portuguese>Cartucho de gás tóxico de 82mm</Portuguese>
-            <Russian>Снаряд с токсичным газом диаметром 82 мм</Russian>
-            <German>[CSW] 82mm Senfgas Mörser Granate</German>
-            <Korean>[CSW] 82mm 유독가스탄</Korean>
-            <Japanese>[CSW] 82mm 有毒ガス弾</Japanese>
-            <Chinese>82毫米有毒氣體彈藥</Chinese>
-            <Chinesesimp>82mm圆形有毒气体</Chinesesimp>
-            <Finnish>82 mm myrkyllinen kaasulaastikuori</Finnish>
-            <Dutch>82mm Gifgasgranaat</Dutch>
+            <English>82mm Choking agent Round</English>
         </Key>
         <Key ID="STR_KAT_Chemical_ToxicGas_MFDNAME">
-            <English>Toxic gas</English>
+            <English>Choking agent</English>
             <Czech>Toxický plyn</Czech>
             <French>Gaz toxique</French>
             <Spanish>Gas toxico</Spanish>
@@ -922,6 +941,18 @@
             <Chinesesimp>Tripwire毒气</Chinesesimp>
             <Finnish>Kaasun ja kranaatin laukaisulanka</Finnish>
             <Dutch>Gas struikeldraad</Dutch>
+        </Key>
+        <Key ID="STR_KAT_Chemical_UI_UseCustomParticles">
+            <English>Use colorful particles</English>
+        </Key>
+        <Key ID="STR_KAT_Chemical_UI_UseCustomParticles_tooltip">
+            <English>Determines if custom colors will be used for particle effest</English>
+        </Key>
+        <Key ID="STR_KAT_Chemical_UI_UseParticles">
+            <English>Use particles</English>
+        </Key>
+        <Key ID="STR_KAT_Chemical_UI_UseParticles_tooltip">
+            <English>Determines if particle effest will be used for gas zone</English>
         </Key>
         <Key ID="STR_KAT_Chemical_UI_gasType">
             <English>Gas Type:</English>
@@ -973,18 +1004,6 @@
             <Chinesesimp>可密封吗？</Chinesesimp>
             <Finnish>Onko se suljettavissa?</Finnish>
             <Dutch>Is dichtbaar?</Dutch>
-        </Key>
-        <Key ID="STR_KAT_Chemical_UI_UseParticles">
-            <English>Use particles</English>
-        </Key>
-        <Key ID="STR_KAT_Chemical_UI_UseParticles_tooltip">
-            <English>Determines if particle effest will be used for gas zone</English>
-        </Key>
-        <Key ID="STR_KAT_Chemical_UI_UseCustomParticles">
-            <English>Use colorful particles</English>
-        </Key>
-        <Key ID="STR_KAT_Chemical_UI_UseCustomParticles_tooltip">
-            <English>Determines if custom colors will be used for particle effest</English>
         </Key>
         <Key ID="STR_KAT_Chemical_UI_sealable_tooltip">
             <English>ONLY WORKS IF LOGIC IS SYNCED WITH AN OBJECT!</English>
@@ -1113,17 +1132,17 @@
             <Finnish>Tiiviste, jota käytetään esineiden tiivistämiseen, kun myrkyllistä ainetta vuotaa ulos</Finnish>
             <Dutch>Afdichtmiddel dat gebruikt wordt om een object te dichten wanneer er bijvoorbeeld een giftige stof lekt</Dutch>
         </Key>
-        <Key ID="STR_ace_medical_damage_ChemicalBurn_Minor">
-            <Original>Minor Chemical Burn</Original>
-            <English>Minor Chemical Burn</English>
+        <Key ID="STR_ace_medical_damage_ChemicalBurn_Large">
+            <Original>Large Chemical Burn</Original>
+            <English>Large Chemical Burn</English>
         </Key>
         <Key ID="STR_ace_medical_damage_ChemicalBurn_Medium">
             <Original>Medium Chemical Burn</Original>
             <English>Medium Chemical Burn</English>
         </Key>
-        <Key ID="STR_ace_medical_damage_ChemicalBurn_Large">
-            <Original>Large Chemical Burn</Original>
-            <English>Large Chemical Burn</English>
+        <Key ID="STR_ace_medical_damage_ChemicalBurn_Minor">
+            <Original>Minor Chemical Burn</Original>
+            <English>Minor Chemical Burn</English>
         </Key>
     </Package>
 </Project>

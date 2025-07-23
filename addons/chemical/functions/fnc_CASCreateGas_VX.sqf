@@ -9,7 +9,7 @@
 * NONE
 *
 * Example:
-* [getPos player] call kat_chemical_fnc_CASCreateGas;
+* [getPos player] call kat_chemical_fnc_CASCreateGas_VX;
 *
 * Public: No
 *
@@ -23,9 +23,9 @@ private _particleEffects = missionNamespace getVariable [QGVAR(showParticles), t
 private _customColors = missionNamespace getVariable [QGVAR(customColors), true];
 
 if (isServer) then {
-    private _radius = 15;
+    private _radius = 100;
     private _timeToLive = 240;
-    private _gasLevel = 1;
+    private _gasLevel = 3;
     private _endTime = CBA_missionTime + _timeToLive;
 
     [{

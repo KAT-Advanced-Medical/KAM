@@ -16,7 +16,8 @@ class CfgPatches {
             "KAT_M7A3",
             "KAT_CAS_M43_Bomb",
             "KAT_CAS_R_80mm_GAS_POD",
-            "KAT_ChemicalDetector"
+            "KAT_ChemicalDetector",
+            "KAT_CAS_BLU80_Bomb"
         };
         ammo[] = {
             "KAT_Gas_TripWireMine_Ammo",
@@ -24,10 +25,13 @@ class CfgPatches {
             "KAT_GASTrip_SmokeEffect",
             "KAT_CAS_M43_Ammo",
             "KAT_CAS_M43_Ammo_sub",
+            "KAT_CAS_BLU80_Ammo",
+            "KAT_VX_Submunition",
             "KAT_CAS_R_80mm_GAS_AMMO"
         };
         magazines[] = {
-            "KAT_CAS_M43_Mag"
+            "KAT_CAS_M43_Mag",
+            "KAT_CAS_BLU80_Mag"
         };
         requiredAddons[] = {
             "kat_main",

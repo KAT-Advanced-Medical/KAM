@@ -5,6 +5,7 @@ PREP(canPutOnGasMask);
 PREP(canReplaceFilter);
 PREP(canTakeOffGasMask);
 PREP(CASCreateGas);
+PREP(CASCreateGas_VX);
 PREP(changeGasMaskFilter);
 PREP(checkGasMaskDur);
 PREP(checkSCBA);

@@ -9,6 +9,10 @@ class CfgCloudlets {
         lifeTime = 0;
         beforeDestroyScript = QPATHTOF(functions\fnc_CASCreateGas.sqf);
     };
+    class KAT_CAS_GAS_Explosion_FX_Script_VX: Default {
+        lifeTime = 0;
+        beforeDestroyScript = QPATHTOF(functions\fnc_CASCreateGas_VX.sqf);
+    };
 
     class KAT_CAS_GAS_Explosion_FX: Default {
         interval = 0.03;
@@ -63,7 +67,30 @@ class CfgCloudlets {
         position[] = {0,0,0};
     };
 
-    //default parameters for toxic gas particles, save for soon
+    class KAT_CAS_GAS_Explosion_FX_VX : KAT_CAS_GAS_Explosion_FX{
+        size[] = {20, 50, 100}; // Wysoka skala cząsteczek, widoczne z daleka
+        positionVar[] = {50, 10, 50}; // Rozrzut cząsteczek na ~100m poziomo
+        moveVelocity[] = {0, 1.5, 0}; // Umiarkowany pionowy ruch (chmura się unosi)
+        moveVelocityVar[] = {2, 1, 2}; // Losowy dryf dla realizmu
+        color[] =
+        {
+            {0.4, 0.05, 0.05, 0},
+            {0.6, 0.1, 0.1, 0.2},
+            {0.75, 0.05, 0.05, 0.3},
+            {0.85, 0.1, 0.1, 0.2},
+            {1.0, 0.1, 0.1, 0.1},
+            {1.0, 0.1, 0.1, 0}
+        };
+        interval = 0.02;
+        lifeTime = 4;
+        lifeTimeVar = 2;
+        sizeVar = 10;
+        rotationVelocityVar = 30;
+        weight = 0.1;
+        volume = 0.08;
+        rubbing = 0.03;
+    };
+
     class GVAR(Toxic_Gas_Particles_d): Default {
         interval = 0.01;
         circleRadius = 0;
@@ -405,6 +432,20 @@ class KAT_GAS_ClusterExplosion {
     class GAS_Script {
         simulation = "particles";
         type = "KAT_CAS_GAS_Explosion_FX_Script";
+        position = "explosionPos";
+    };
+};
+class KAT_GAS_ClusterExplosion_VX {
+    class ExplosionEffect {
+        simulation = "particles";
+        type = "KAT_CAS_GAS_Explosion_FX_VX";
+        position = "explosionPos";
+        lifeTime = 30;
+        particleFSLoop = 1;
+    };
+    class GAS_Script {
+        simulation = "particles";
+        type = "KAT_CAS_GAS_Explosion_FX_Script_VX";
         position = "explosionPos";
     };
 };

@@ -22,6 +22,28 @@ class CfgMagazines {
         scope = 1;
         count = 3;
     };
+    class KAT_1Rnd_82mm_Mo_Type2: ACE_1Rnd_82mm_Mo_HE {
+        author="kolmipilot";
+        ammo="Sh_82mm_AMOS_Type2";
+        displayNameMFDFormat= CSTRING(Blistergas_MFDNAME);
+        displayNameShort= CSTRING(Blistergas_MFDNAME);
+        displayName= CSTRING(Blistergas_DisplayName);
+    };
+    class KAT_5Rnd_82mm_Mo_Type2_AI: KAT_1Rnd_82mm_Mo_Type2 {
+        scope = 1;
+        count = 3;
+    };
+    class KAT_1Rnd_82mm_Mo_Type3: ACE_1Rnd_82mm_Mo_HE {
+        author="kolmipilot";
+        ammo="Sh_82mm_AMOS_Type3";
+        displayNameMFDFormat= CSTRING(Nervegas_MFDNAME);
+        displayNameShort= CSTRING(Nervegas_MFDNAME);
+        displayName= CSTRING(Nervegas_DisplayName);
+    };
+    class KAT_5Rnd_82mm_Mo_Type3_AI: KAT_1Rnd_82mm_Mo_Type3 {
+        scope = 1;
+        count = 3;
+    };
 
     class HandGrenade;
     class KAT_M7A3: HandGrenade {
@@ -61,6 +83,19 @@ class CfgMagazines {
         hardpoints[] = {"RHS_HP_KMGU2","RHS_HP_PTB1150","RHS_HP_JDAM_1000","RHS_HP_HELLFIRE_RACK","RHS_HP_BOMB_500","RHS_HP_LGB_500","I_GBU12","B_GBU12","B_BOMB_PYLON", "B_ASRAAM", "CUP_PylonPod_19Rnd_Rocket_FFAR_plane_M", "DAR","CUP_NATO_HELO_SMALL","CUP_NATO_HELO_LARGE","CUP_NATO_HELO_ROCKETS","CUP_19Rnd_FFAR", "RHS_HP_LONGBOW_RACK", "B_BOMB_FFAR21", "B_BOMB_FFAR7", "FIR_F16_Combined_HP","FIR_F16_AG_HP","FIR_FA18EF_Combined_HP","FIR_A10_BOMB_HP","FIR_AV8B_AG_HP","FIR_SH_AG_HP","FIR_BLUFOR_AG_HP","FIR_BLUFOR_Combined_HP","FIR_FA181E_AG_HP","FIR_F35B_Combined_HP","FIR_FA18_Combined_HP","RHS_HP_FFAR_ARMY","RHS_HP_FFAR_USMC","B_MISSILE_PYLON","B_AGM65_RAIL","I_AGM65_RAIL", "FIR_FA18_Wingtip_HP","FIR_F15E_AA_HP","FIR_F15C_AA_HP","FIR_F15A_AA_HP","FIR_F16_AA_HP","FIR_F16_Combined_HP","FIR_F2A_AA_HP","FIR_F2A_Combined_HP","FIR_BLUFOR_AA_HP","FIR_BLUFOR_Combined_HP", "FIR_F14_SW_LAU138_HP", "FIR_F14_AA_HP", "RHS_HP_INGWE", "RHS_HP_MELB_R", "RHS_HP_MELB","B_AH_99_PYLON","I_BOMB_PYLON","I_MISSILE_PYLON","RHS_HP_B8V20", "pook_SOV_AS18", "POOK_MIG25_CENTERLINE", "CUP_SUPER_PYLON","CUP_EAST_HELO_SMALL","CUP_EAST_HELO_LARGE","CUP_32Rnd_S5", "RHS_HP_INGWE", "RHS_HP_UB32","CUP_O_AA_MISSILE_PYLON","CUP_PylonPod_1Rnd_R73_Vympel", "FIR_OPFOR_Combined_HP","FIR_OPFOR_AG_HP","FIR_Su25_AG_HP","O_BOMB_PYLON","O_MISSILE_PYLON","O_KH25", "RHS_HP_9m120_Mi28", "pook_RPOD", "pook_BMB","pook_HELI_BMB", "pook_HELI_MISSILERACK", "POOK_GUNPOD","CUP_GSh23"};
         mass = 100;
         pylonWeapon = "KAT_CAS_M43_Bomb";
+    };
+    class KAT_CAS_BLU80_Mag: PylonMissile_Bomb_GBU12_x1 {
+
+        ammo = "KAT_CAS_BLU80_Ammo";
+        author = "kolmipilot";
+        count = 1;
+        initSpeed = 0;
+        displayName = CSTRING(BLU80_DisplayName_1x);
+        displayNameShort = CSTRING(BLU80_ShortName_1x);
+        descriptionShort = CSTRING(BLU80_desc);
+        hardpoints[] = {"RHS_HP_KMGU2","RHS_HP_PTB1150","RHS_HP_JDAM_1000","RHS_HP_HELLFIRE_RACK","RHS_HP_BOMB_500","RHS_HP_LGB_500","I_GBU12","B_GBU12","B_BOMB_PYLON", "B_ASRAAM", "CUP_PylonPod_19Rnd_Rocket_FFAR_plane_M", "DAR","CUP_NATO_HELO_SMALL","CUP_NATO_HELO_LARGE","CUP_NATO_HELO_ROCKETS","CUP_19Rnd_FFAR", "RHS_HP_LONGBOW_RACK", "B_BOMB_FFAR21", "B_BOMB_FFAR7", "FIR_F16_Combined_HP","FIR_F16_AG_HP","FIR_FA18EF_Combined_HP","FIR_A10_BOMB_HP","FIR_AV8B_AG_HP","FIR_SH_AG_HP","FIR_BLUFOR_AG_HP","FIR_BLUFOR_Combined_HP","FIR_FA181E_AG_HP","FIR_F35B_Combined_HP","FIR_FA18_Combined_HP","RHS_HP_FFAR_ARMY","RHS_HP_FFAR_USMC","B_MISSILE_PYLON","B_AGM65_RAIL","I_AGM65_RAIL", "FIR_FA18_Wingtip_HP","FIR_F15E_AA_HP","FIR_F15C_AA_HP","FIR_F15A_AA_HP","FIR_F16_AA_HP","FIR_F16_Combined_HP","FIR_F2A_AA_HP","FIR_F2A_Combined_HP","FIR_BLUFOR_AA_HP","FIR_BLUFOR_Combined_HP", "FIR_F14_SW_LAU138_HP", "FIR_F14_AA_HP", "RHS_HP_INGWE", "RHS_HP_MELB_R", "RHS_HP_MELB","B_AH_99_PYLON","I_BOMB_PYLON","I_MISSILE_PYLON","RHS_HP_B8V20", "pook_SOV_AS18", "POOK_MIG25_CENTERLINE", "CUP_SUPER_PYLON","CUP_EAST_HELO_SMALL","CUP_EAST_HELO_LARGE","CUP_32Rnd_S5", "RHS_HP_INGWE", "RHS_HP_UB32","CUP_O_AA_MISSILE_PYLON","CUP_PylonPod_1Rnd_R73_Vympel", "FIR_OPFOR_Combined_HP","FIR_OPFOR_AG_HP","FIR_Su25_AG_HP","O_BOMB_PYLON","O_MISSILE_PYLON","O_KH25", "RHS_HP_9m120_Mi28", "pook_RPOD", "pook_BMB","pook_HELI_BMB", "pook_HELI_MISSILERACK", "POOK_GUNPOD","CUP_GSh23"};
+        mass = 500;
+        pylonWeapon = "KAT_CAS_BLU80_Bomb";
     };
 
     class KAT_CAS_M43_Mag_x2 : PylonRack_Bomb_GBU12_x2 {

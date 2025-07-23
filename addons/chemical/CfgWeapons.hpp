@@ -42,12 +42,14 @@ class CfgWeapons {
     class mortar_82mm: CannonCore {
         magazines[] += {
             "KAT_5Rnd_82mm_Mo_Type0_AI",
-            "KAT_3Rnd_82mm_Mo_TypeCS_AI"
+            "KAT_3Rnd_82mm_Mo_TypeCS_AI",
+            "KAT_5Rnd_82mm_Mo_Type2_AI",
+            "KAT_5Rnd_82mm_Mo_Type3_AI"
         };
     };
 
     class ACE_mortar_82mm: mortar_82mm {
-        magazines[] = {"ACE_1Rnd_82mm_Mo_HE","ACE_1Rnd_82mm_Mo_Smoke","ACE_1Rnd_82mm_Mo_Illum","ACE_1Rnd_82mm_Mo_HE_Guided","ACE_1Rnd_82mm_Mo_HE_LaserGuided", "KAT_1Rnd_82mm_Mo_Type0", "KAT_1Rnd_82mm_Mo_TypeCS"};
+        magazines[] = {"ACE_1Rnd_82mm_Mo_HE","ACE_1Rnd_82mm_Mo_Smoke","ACE_1Rnd_82mm_Mo_Illum","ACE_1Rnd_82mm_Mo_HE_Guided","ACE_1Rnd_82mm_Mo_HE_LaserGuided", "KAT_1Rnd_82mm_Mo_Type0", "KAT_1Rnd_82mm_Mo_TypeCS", "KAT_1Rnd_82mm_Mo_Type2", "KAT_1Rnd_82mm_Mo_Type3"};
     };
 
     class GrenadeLauncher;
@@ -86,6 +88,22 @@ class CfgWeapons {
         minRange = 150;
         minRangeProbab = 0.6;
         magazines[] = {"KAT_CAS_M43_Mag","KAT_CAS_M43_Mag_x2"};
+        maxControlRange = 8000;
+        weaponLockDelay = 3;
+        weaponLockSystem = 4;
+    };
+    class KAT_CAS_BLU80_Bomb: weapon_GBU12Launcher {
+        author = "kolmipilot";
+        canLock = 2;
+        scope=2;
+        displayName = "BLU-80/B";
+        maxRange = 5000;
+        maxRangeProbab = 0.8;
+        midRange = 2000;
+        midRangeProbab = 0.85;
+        minRange = 150;
+        minRangeProbab = 0.6;
+        magazines[] = {"KAT_CAS_BLU80_Mag"};
         maxControlRange = 8000;
         weaponLockDelay = 3;
         weaponLockSystem = 4;

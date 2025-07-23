@@ -185,3 +185,23 @@
     [true],
     true
 ] call CBA_fnc_addSetting;
+
+//particle effects for ammo
+[
+    QGVAR(showParticles),
+    "CHECKBOX",
+    [LLSTRING(SETTING_showParticles), LLSTRING(SETTING_showParticles_DESC)],
+    CBA_SETTINGS_CAT,
+    [true],
+    true
+] call CBA_fnc_addSetting;
+
+//custom colors for ammo    
+[
+    QGVAR(customColors),
+    "CHECKBOX",
+    [LLSTRING(SETTING_customColors), LLSTRING(SETTING_customColors_DESC)],
+    CBA_SETTINGS_CAT,
+    [true],
+    true
+] call CBA_fnc_addSetting;

@@ -27,6 +27,18 @@ class CfgAmmo {
         KAT_radius = 10;
         KAT_toxicLvL = 0; //cs
     };
+    class Sh_82mm_AMOS_Type2: Sh_82mm_AMOS_Type0 {
+        KAT_projectile = 1;
+        KAT_lifetime = 60;
+        KAT_radius = 10;
+        KAT_toxicLvL = 2; //cs
+    };
+    class Sh_82mm_AMOS_Type3: Sh_82mm_AMOS_Type0 {
+        KAT_projectile = 1;
+        KAT_lifetime = 60;
+        KAT_radius = 10;
+        KAT_toxicLvL = 3; //cs
+    };
 
     class SmokeShell;
     class KAT_G_M7A3: SmokeShell {
@@ -121,6 +133,56 @@ class CfgAmmo {
         indirectHitRange = 0;
         explosionEffects = "KAT_GAS_ClusterExplosion";
     };
+
+    class KAT_CAS_BLU80_Ammo: BombCluster_01_Ammo_F  {
+        aiAmmoUsageFlags = 64 + 128 + 512;
+        allowAgainstInfantry = 1;
+        autoSeekTarget = 1;
+        canLock = 1;
+        cameraViewAvailable = 1;
+        CraterEffects = "BombCrater";
+        CraterWaterEffects = "ImpactEffectsWaterExplosion";
+        cost = 2000;
+        explosionTime = 2;
+        explosionForceCoef = 5;
+        explosive = 0.95;
+        ExplosionEffects = "BombExplosion";
+        flightProfiles[] = {"LoalAltitude"};
+        hit = 0;
+        indirectHit = 0;
+        indirectHitRange = 0;
+        irLock = 0;
+        laserLock = 0;
+        lightColor[] = {1, 0.2, 0, 1};
+        maneuvrability = 16;
+        model = "\A3\Weapons_F\Ammo\Bomb_01_fly_F";
+        nvLock = 1;
+        simulation = "shotMissile";
+        soundFly[] = {"A3\Sounds_F\arsenal\weapons\launchers\RPG32\Fly_RPG32.wss",1,1,500};
+        weaponLockSystem = 4;
+        weaponType = "Default";
+        timeToLive = 30;
+        triggerDistance = 250;
+        triggerSpeedCoef[] = {0.8,1};
+        submunitionAmmo = "KAT_VX_Submunition";
+        submunitionConeType[] = { "random", 1 };
+        submunitionInitSpeed = 5;
+
+        class CamShakeExplode {
+            power = 5;
+            duration = 1;
+            frequency = 5;
+            distance = 100;
+        };
+    };
+
+    class KAT_VX_Submunition: Mo_cluster_Bomb_01_F {
+        hit = 0;
+        indirectHit = 0;
+        indirectHitRange = 0;
+        explosionEffects = "KAT_GAS_ClusterExplosion_VX";
+    };
+
 
     class R_80mm_HE;
     class KAT_CAS_R_80mm_GAS_AMMO: R_80mm_HE {
