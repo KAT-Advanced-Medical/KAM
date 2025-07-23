@@ -29,6 +29,11 @@ Lethal. Causes respiratory symptoms and severe burn injuries. When contamination
 Lethal and highly dangerous. Can penetrate standard filters. The gas infection triggers a loop, the subsequent stages of which cause increasingly greater damage, starting with pain, progressing to respiratory failure, and ending with death. The time between each cycle can be configured in the add-on settings.
 **Counter:** CBRN suit, gas mask, and SCBA (Self-Contained Breathing Apparatus).
 
+## Weapons
+
+**BLU-80/B**
+Bomb with chemical payload, after explode creates 100m vx zone.
+
 ## Chemical Detector
 
 Adds a chemical detector. You first need to enable the detector. 
