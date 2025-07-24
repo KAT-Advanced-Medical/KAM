@@ -1119,15 +1119,12 @@
             <Dutch>Afdichtmiddel dat gebruikt wordt om een object te dichten wanneer er bijvoorbeeld een giftige stof lekt</Dutch>
         </Key>
         <Key ID="STR_ace_medical_damage_ChemicalBurn_Large">
-            <Original>Large Chemical Burn</Original>
             <English>Large Chemical Burn</English>
         </Key>
         <Key ID="STR_ace_medical_damage_ChemicalBurn_Medium">
-            <Original>Medium Chemical Burn</Original>
             <English>Medium Chemical Burn</English>
         </Key>
         <Key ID="STR_ace_medical_damage_ChemicalBurn_Minor">
-            <Original>Minor Chemical Burn</Original>
             <English>Minor Chemical Burn</English>
         </Key>
     </Package>

@@ -34,6 +34,13 @@ Lethal and highly dangerous. Can penetrate standard filters. The gas infection t
 **BLU-80/B**
 Bomb with chemical payload, after explode creates 100m vx zone.
 
+**82mm mortar shells**
+Each tier has own mortar shells, after ground touch creates 10m gas zone.
+
+**particle effects**
+ammunitions particle effects can be configured in addons settings.
+
+
 ## Chemical Detector
 
 Adds a chemical detector. You first need to enable the detector. 
