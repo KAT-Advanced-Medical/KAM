@@ -42,5 +42,5 @@ if (goggles _unit in (missionNamespace getVariable [QGVAR(availGasmaskList), []]
     };
 } else {
     "KAT_UI_GasmaskOverlay" cutText ["", "PLAIN"];
-    "KAT_UI_GasmaskOverlay_glass" cutText ["", "PLAIN"];	
+    "KAT_UI_GasmaskOverlay_glass" cutText ["", "PLAIN"];
 };
