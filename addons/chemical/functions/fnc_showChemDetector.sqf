@@ -59,13 +59,13 @@ private _screenLevel = _display displayCtrl 18802;
         _time ctrlSetText (format ["%1:%2", [_hour, 2] call CBA_fnc_formatNumber, [_minute, 2] call CBA_fnc_formatNumber]);
         TRACE_1("KAT_ChemicalDetector: exposurelvl",_intensity);
         _exposure ctrlSetText (_intensity toFixed 2);
-        _color = [0, 0, 0, 0];
+        _color = [0.459, 0.561, 0.482, 1];
         if(_intensity > 0) then {
         switch (_gaslevel) do {
-            case 0: {_color = [0, 1, 0, 0.6];};
-            case 1: {_color = [1, 1, 0, 0.6];};
-            case 2: {_color = [1, 0.5, 0, 0.6];};
-            case 3: {_color = [1, 0, 0, 0.6];};
+            case 0: {_color = [0, 1, 0, 1];};
+            case 1: {_color = [1, 1, 0, 1];};
+            case 2: {_color = [1, 0.5, 0, 1];};
+            case 3: {_color = [1, 0, 0, 1];};
         };
         };
         _screenLevel ctrlSetBackgroundColor _color;

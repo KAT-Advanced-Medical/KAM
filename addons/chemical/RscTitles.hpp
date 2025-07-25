@@ -82,16 +82,7 @@ class RscTitles
         duration = 10e10;
         onLoad = "uiNamespace setVariable ['KAT_ChemicalDetector', _this select 0];";
         class controls
-        {
-            class KatChemIcon: RscPicture
-            {
-                idc = 18801;
-                text = "\x\kat\addons\chemical\UI\kat_chemicalDet.paa";
-                x = QUOTE(SAFEZONE_X_RIGHTEDGE - FRAME_W(25) - FRAME_W(15));
-                y = QUOTE(SAFEZONE_Y_LOWEDGE - FRAME_H(25));
-                w = QUOTE(FRAME_W(25));
-                h = QUOTE(FRAME_H(25));
-            };
+        {   
             class Background: RscText
             {
                 idc = 18802;
@@ -99,7 +90,16 @@ class RscTitles
                 y = QUOTE(SAFEZONE_Y_LOWEDGE - FRAME_H(7.3));
                 w = QUOTE(FRAME_W(9.8));
                 h = QUOTE(FRAME_H(5));
-                colorBackground[] = {0, 0, 0, 0};
+                colorBackground[] = {0.459, 0.561, 0.482, 1};
+            };
+            class KatChemIcon: RscPicture
+            {
+                idc = 18801;
+                text = "\x\kat\addons\chemical\UI\kat_chemicalDet";
+                x = QUOTE(SAFEZONE_X_RIGHTEDGE - FRAME_W(25) - FRAME_W(15));
+                y = QUOTE(SAFEZONE_Y_LOWEDGE - FRAME_H(25));
+                w = QUOTE(FRAME_W(25));
+                h = QUOTE(FRAME_H(25));
             };
             class KatChemTime: RscText
             {
