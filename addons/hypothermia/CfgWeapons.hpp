@@ -32,7 +32,7 @@ class CfgWeapons {
         descriptionShort = CSTRING(spaceBlanket_DescShort);
         ACE_isMedicalItem = 1;
         class ItemInfo: CBA_MiscItem_ItemInfo {
-            mass = 0.5;
+            mass = 1;
         }; 
     };
 };
