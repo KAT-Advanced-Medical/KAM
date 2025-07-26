@@ -81,8 +81,22 @@ When you have vannila/contact dlc equipment, when you turned on scba there will 
 
 Gas maks overlays can be configured in addons settings. Vanilla gas mask have build in overlay, but kam add them glass effect.
 
-## Medicine
+## Healing
+
+### How to heal chemical infection
+
+First you need to evacuate patient from gas zone, or give him enough protection.
+Next, if gas is blister agent you need to decontaminate patient.
+Push patient Atropine.
+Heal symptoms.
+
+IMPORTANT
+In Vx Intoxiaction time is really important. In deafault settings first 80 seconds, are non-lethal sympgtoms, but every next cycle will give much more lethal damage, ending on about 5 minut asystoly, and death.
+
+### Medicine
 
 All types of poisoning can be treated with **Atropine**.
+
+### Decontamiation
 
 To decontaminate yourself you need any ace saline, and the interaction is available under advanced tab.

@@ -717,9 +717,11 @@
         </Key>
         <Key ID="STR_KAT_Chemical_SETTING_customColors">
             <English>Use custom colors for ammo particle effects</English>
+            <Polish>Użyj osobnych kolorów dla efektów amunicji</Polish>
         </Key>
         <Key ID="STR_KAT_Chemical_SETTING_customColors_DESC">
             <English>Use custom colors for ammo particle effects</English>
+            <Polish>Użyj inwidualnych kolorów dla efektów cząsteczkowych amunicji</Polish>
         </Key>
         <Key ID="STR_KAT_Chemical_SETTING_dropWeaponChance">
             <English>Drop Weapon Chance</English>
@@ -821,21 +823,27 @@
         </Key>
         <Key ID="STR_KAT_Chemical_SETTING_showGlassOverlay">
             <English>Show mask glass effect overlay</English>
+            <Polish>Wyświetl efekt szyby maski</Polish>
         </Key>
         <Key ID="STR_KAT_Chemical_SETTING_showGlassOverlay_DESC">
             <English>Determines if gas mask glass effect overylay will be dsiplayed</English>
+            <Polish>Ustala czy nakładka efektu szyby maski gazowej będzie wyświetlana</Polish>
         </Key>
         <Key ID="STR_KAT_Chemical_SETTING_showOverlay">
             <English>Show mask overlay</English>
+            <Polish>Wyświetl nakładke maski p.gaz</Polish>
         </Key>
         <Key ID="STR_KAT_Chemical_SETTING_showOverlay_DESC">
             <English>Determines if gas mask overylay will be dsiplayed</English>
+            <Polish>Ustala czy nakładka maski gazowej będzie wyświetlana</Polish>
         </Key>
         <Key ID="STR_KAT_Chemical_SETTING_showParticles">
             <English>Use particle effects for ammo</English>
+            <Polish>Użyj efektów cząsteczkowych dla amunicji</Polish>
         </Key>
         <Key ID="STR_KAT_Chemical_SETTING_showParticles_DESC">
             <English>Use particle effects for ammo</English>
+            <Polish>Użyj efektów cząsteczkowych dla amunicji</Polish>
         </Key>
         <Key ID="STR_KAT_Chemical_SETTING_showPoisoning">
             <English>Show Poisoning</English>
@@ -861,21 +869,15 @@
         </Key>
         <Key ID="STR_KAT_Chemical_SETTING_vxCycleTime">
             <English>Time until next vx cycle</English>
+            <Polish>Czas przed następnym cyklem VX</Polish>
         </Key>
         <Key ID="STR_KAT_Chemical_SETTING_vxCycleTime_DESC">
             <English>Time beetwen each vx damage handler cycle</English>
+            <Polish>Czas pomiędzy następnym cyklem obrażeń od VX</Polish>
         </Key>
         <Key ID="STR_KAT_Chemical_Scbacontrols_menu">
             <English>SCBA</English>
-            <Czech>SCBA</Czech>
-            <French>SCBA</French>
-            <Italian>SCBA</Italian>
             <Polish>AODO</Polish>
-            <German>SCBA</German>
-            <Japanese>SCBA</Japanese>
-            <Chinese>SCBA</Chinese>
-            <Chinesesimp>SCBA</Chinesesimp>
-            <Dutch>SCBA</Dutch>
         </Key>
         <Key ID="STR_KAT_Chemical_TakeOffGasMask">
             <English>Take off gas mask</English>
@@ -890,9 +892,11 @@
         </Key>
         <Key ID="STR_KAT_Chemical_ToxicGas_DisplayName">
             <English>82mm Choking agent Round</English>
+            <Polish>82mm amunicja z Środekiem duszący</Polish>
         </Key>
         <Key ID="STR_KAT_Chemical_ToxicGas_MFDNAME">
             <English>Choking agent</English>
+            <Polish>Środek duszący</Polish>
         </Key>
         <Key ID="STR_KAT_Chemical_TriWire_Gas_Desc">
             <English>Type: Tripwire gas - Sprays a poisonous gas when triggered.&lt;br /&gt;Rounds: 1&lt;br /&gt;Used on: Ground</English>
@@ -930,15 +934,19 @@
         </Key>
         <Key ID="STR_KAT_Chemical_UI_UseCustomParticles">
             <English>Use colorful particles</English>
+            <Polish>Użyj kolorowych cząsteczek</Polish>
         </Key>
         <Key ID="STR_KAT_Chemical_UI_UseCustomParticles_tooltip">
             <English>Determines if custom colors will be used for particle effest</English>
+            <Polish>Ustala czy cząsteczki będą miały inwidualne kolory</Polish>
         </Key>
         <Key ID="STR_KAT_Chemical_UI_UseParticles">
             <English>Use particles</English>
+            <Polish>Użyj cząsteczek</Polish>
         </Key>
         <Key ID="STR_KAT_Chemical_UI_UseParticles_tooltip">
-            <English>Determines if particle effest will be used for gas zone</English>
+            <English>Determines if particle effects will be used for gas zone</English>
+            <Polish>Ustala czy efekty cząsteczkowe będą używane dla strefy gazu</Polish>
         </Key>
         <Key ID="STR_KAT_Chemical_UI_gasType">
             <English>Gas Type:</English>
@@ -1120,12 +1128,15 @@
         </Key>
         <Key ID="STR_ace_medical_damage_ChemicalBurn_Large">
             <English>Large Chemical Burn</English>
+            <Polish>Duże popażenie chemiczne</Polish>
         </Key>
         <Key ID="STR_ace_medical_damage_ChemicalBurn_Medium">
             <English>Medium Chemical Burn</English>
+            <Polish>Średnie popażenie chemiczne</Polish>
         </Key>
         <Key ID="STR_ace_medical_damage_ChemicalBurn_Minor">
             <English>Minor Chemical Burn</English>
+            <Polish>Małe popażenie chemiczne</Polish>
         </Key>
     </Package>
 </Project>

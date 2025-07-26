@@ -34,6 +34,7 @@ _timebetween = missionNamespace getVariable [QGVAR(vxCycleTime), 40];
                 _unit setFatigue 1;
             };
             case 2: {
+                // Add bradycardia
                 [_unit, true] call ace_medical_fnc_setUnconscious;
                 _unit setFatigue 1;
                 [_unit, 0.5] call ace_medical_fnc_adjustPainLevel;
@@ -43,28 +44,31 @@ _timebetween = missionNamespace getVariable [QGVAR(vxCycleTime), 40];
                 _unit setVariable ["kat_airway_obstruction", true, true];
                 _unit setFatigue 1;
                 [_unit, true] call ace_medical_fnc_setUnconscious;
-                _unit setVariable ["kat_breathing_pneumothorax", 1, true];
-                [_unit, 0.5] call ace_medical_status_fnc_adjustPainLevel;
                 [_unit] call kat_breathing_fnc_handleBreathing;
             };
             case 4: {
                 _unit setVariable ["kat_airway_occluded", true, true];
+                _unit setVariable [QEGVAR(circulation,cardiacArrestType), 4, true];
+                ["ace_medical_FatalVitals", [_unit], _unit] call CBA_fnc_targetEvent;
                 [_unit, true] call ace_medical_fnc_setUnconscious;
-                _unit setVariable ["kat_breathing_tensionpneumothorax", true, true];
-                [_unit, 0.7] call ace_medical_status_fnc_adjustPainLevel;
                 [_unit] call kat_breathing_fnc_handleBreathing;
             };
             case 5: {
-                _unit setVariable ["kat_airway_occluded", true, true];
-                _unit setVariable ["kat_breathing_hemopneumothorax", true, true];
-                [_unit, 0.7] call ace_medical_status_fnc_adjustPainLevel;
-                [_unit] call kat_breathing_fnc_handleBreathing;
+                _unit setVariable [QEGVAR(circulation,cardiacArrestType), 3, true];
+                ["ace_medical_FatalVitals", [_unit], _unit] call CBA_fnc_targetEvent;
             };
             case 6: {
-                _unit setDamage 1;
+                
+            };
+            case 7: {
+                
+            };
+            case 8: {
+                _unit setVariable [QEGVAR(circulation,cardiacArrestType), 1, true];
+                ["ace_medical_FatalVitals", [_unit], _unit] call CBA_fnc_targetEvent;
             };
             default {
-                if (_cycle > 6) then {
+                if (_cycle > 9) then {
                     _unit setDamage 1;
                 };
             };
