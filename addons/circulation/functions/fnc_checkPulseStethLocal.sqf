@@ -19,7 +19,7 @@
 
 params ["_medic", "_patient", "_bodyPart"];
 
-private _tourniquets = GET_TOURNIQUETS(_unit);
+private _tourniquets = GET_TOURNIQUETS(_patient);
 private _occlusionMap = [
     [4, [4, 5]],
     [5, [5]],

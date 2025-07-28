@@ -108,6 +108,10 @@ params ["_unit", "_chanceIncrease", "_side"];
                             };
                         _pneumothoraxState set [_side, _ptxTarget];
                         _unit setVariable [QGVAR(pneumothorax), _pneumothoraxState, true];
+                        private _bronchospasm = _patient getVariable [QGVAR(bronchospasm), 1];
+                        if (_bronchospasm > 0.4) then {
+                            _patient setVariable [QGVAR(bronchospasm), (_bronchospasm - 0.02), true];
+                        };
                         [_unit, 0.8 * (_ptxTarget / 16)] call ACEFUNC(medical_status,adjustPainLevel);
                     };
                 };

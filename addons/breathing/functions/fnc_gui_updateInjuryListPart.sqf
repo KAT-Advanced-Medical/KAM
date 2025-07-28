@@ -20,7 +20,7 @@
 
 params ["_ctrl", "_target", "_selectionN", "_entries"];
 
-if (GVAR(showCyanosis) && _selectionN in [0,2,3]) then {
+if (GVAR(showCyanosis) && _selectionN in [0,4,6,8,10]) then {
     private _spO2 = 0;
 
     if (alive _target) then {

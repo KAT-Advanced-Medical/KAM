@@ -28,8 +28,6 @@ params ["_patient"];
             if (!(alive _patient)) exitWith {
                 [_idPFH] call CBA_fnc_removePerFrameHandler;
             };
-
-                _EACAOverdoseTarget = _EACAOverdoseTarget + 1;
                 if (_EACAOverdoseTarget > 12) exitWith {
                     if (random(100) < 25) then {
                     [{

@@ -6,6 +6,8 @@
 [QGVAR(checkBloodPressureCuffLocal), LINKFUNC(checkBloodPressureCuffLocal)] call CBA_fnc_addEventHandler;
 [QGVAR(checkPulseLocal), LINKFUNC(checkPulseLocal)] call CBA_fnc_addEventHandler;
 [QGVAR(checkPulseStethLocal), LINKFUNC(checkPulseStethLocal)] call CBA_fnc_addEventHandler;
+[QGVAR(checkNeckLocal), LINKFUNC(checkNeckLocal)] call CBA_fnc_addEventHandler;
+[QGVAR(checkCapRefillLocal), LINKFUNC(checkCapRefillLocal)] call CBA_fnc_addEventHandler;
 ["ace_cardiacArrest", LINKFUNC(handleCardiacArrest)] call CBA_fnc_addEventHandler;
 
 GVAR(AEDX_MonitorTarget) = objNull;
@@ -30,12 +32,6 @@ GVAR(AEDX_MonitorTarget) = objNull;
 
     [QACEGVAR(medical,FatalVitals), _unit] call CBA_fnc_localEvent;
     _unit setVariable [QGVAR(cardiacArrestType), 1, true];
-}] call CBA_fnc_addEventHandler;
-
-[QGVAR(bloodPoisoning), {
-    params ["_unit"];
-
-    [QACEGVAR(medical,FatalVitals), _unit] call CBA_fnc_localEvent;
 }] call CBA_fnc_addEventHandler;
 
 [QGVAR(placeAED_initAction), LINKFUNC(placeAED_PickUpAction)] call CBA_fnc_addEventHandler;
