@@ -135,9 +135,10 @@ private _attachedVent = _unit getVariable [QEGVAR(breathing,attachedVent), false
 private _attachedVentGUI = _unit getVariable [QEGVAR(breathing,attachedVentGUI), false];
 private _paralysis = _unit getVariable [QEGVAR(breathing,paralysis), 0];
 private _ventRate = _unit getVariable [QEGVAR(breathing,ventRate), 2];
+private _trali = _unit getVariable [QEGVAR(breathing,TRALI), 0];
 
 diag_log format [
-    "[Respiratory] AirwayStatus: %1 | Pneumothorax: %2 | PneumothoraxSurfaceArea: %3 | Hemopneumothorax: %4 | TensionPneumothorax: %5 | ActiveChestSeal: %6 | DeepPenetratingInjury: %7 | ETCO2Monitor: %8 | BreathRate: %9 | NasalCannula: %10 | LungSurfaceArea: %11 | ChestTube: %12 | AttachedVent: %13 | AttachedVentGUI: %14 | Paralysis: %15 | VentRate: %16",
+    "[Respiratory] AirwayStatus: %1 | Pneumothorax: %2 | PneumothoraxSurfaceArea: %3 | Hemopneumothorax: %4 | TensionPneumothorax: %5 | ActiveChestSeal: %6 | DeepPenetratingInjury: %7 | ETCO2Monitor: %8 | BreathRate: %9 | NasalCannula: %10 | LungSurfaceArea: %11 | ChestTube: %12 | AttachedVent: %13 | AttachedVentGUI: %14 | Paralysis: %15 | VentRate: %16 | TRALI: %17",
     _airwayStatus,
     _pneumothorax,
     _pneumothoraxSurfaceArea,
@@ -153,7 +154,8 @@ diag_log format [
     _attachedVent,
     _attachedVentGUI,
     _paralysis,
-    _ventRate
+    _ventRate,
+    _trali
 ];
 private _cprCount = _unit getVariable [QEGVAR(circulation,cprCount), 2];
 private _heartRestart = _unit getVariable [QEGVAR(circulation,heartRestart), false];

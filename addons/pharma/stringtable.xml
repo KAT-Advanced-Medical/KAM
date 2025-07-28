@@ -5171,13 +5171,13 @@
             <English>5ml Syringe / 40mg(Sedation) Ketamine</English>
         </Key>
         <Key ID="STR_KAT_Pharma_Push_ketamine_5ml_26">
-            <English>Push 160mg(Anesthesia) Ketamine</English>
+            <English>Push 60mg(Anesthesia) Ketamine</English>
         </Key>
         <Key ID="STR_KAT_Pharma_Pushing_ketamine_5ml_26">
-            <English>Pushing 160mg(Anesthesia) Ketamine</English>
+            <English>Pushing 60mg(Anesthesia) Ketamine</English>
         </Key>
         <Key ID="STR_KAT_Pharma_SyringeDisplay_ketamine_5ml_26">
-            <English>5ml Syringe / 160mg(Anesthesia) Ketamine</English>
+            <English>5ml Syringe / 60mg(Anesthesia) Ketamine</English>
         </Key>
         <Key ID="STR_KAT_Pharma_Push_ketamine_5ml_28">
             <English>Push 80mg(Anesthesia) Ketamine</English>
@@ -5189,13 +5189,13 @@
             <English>5ml Syringe / 80mg(Anesthesia) Ketamine</English>
         </Key>
         <Key ID="STR_KAT_Pharma_Push_ketamine_5ml_30">
-            <English>Push 60mg(Anesthesia) Ketamine</English>
+            <English>Push 100mg(Anesthesia) Ketamine</English>
         </Key>
         <Key ID="STR_KAT_Pharma_Pushing_ketamine_5ml_30">
-            <English>Pushing 60mg(Anesthesia) Ketamine</English>
+            <English>Pushing 100mg(Anesthesia) Ketamine</English>
         </Key>
         <Key ID="STR_KAT_Pharma_SyringeDisplay_ketamine_5ml_30">
-            <English>5ml Syringe / 60mg(Anesthesia) Ketamine</English>
+            <English>5ml Syringe / 100mg(Anesthesia) Ketamine</English>
         </Key>
         <Key ID="STR_KAT_Pharma_Push_eaca_5ml_10">
             <English>Push 7.5mg EACA</English>

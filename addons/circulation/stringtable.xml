@@ -3942,5 +3942,74 @@
         <Key ID="STR_KAT_Circulation_hardcoreAED_desc">
             <English>Hides the vitals monitor from the medical menu, only allowing the manual monitor</English>
         </Key>
+        <Key ID="STR_KAT_Circulation_Check_Neck_Output_1">
+            <English>You find a Slightly Distended Jugular vein</English>
+        </Key>
+        <Key ID="STR_KAT_Circulation_Check_Neck_Output_2">
+            <English>You find a Very Distended Jugular vein</English>
+        </Key>
+        <Key ID="STR_KAT_Circulation_Check_Neck_Output_3">
+            <English>You find a normal Jugular vein</English>
+        </Key>
+        <Key ID="STR_KAT_Circulation_Check_Neck_Output_4">
+            <English>You find a normal Trachea</English>
+        </Key>
+        <Key ID="STR_KAT_Circulation_Check_Neck_Output_5">
+            <English>You find Tracheal Deviation</English>
+        </Key>
+        <Key ID="STR_KAT_Circulation_Check_Neck_Output_1_log">
+            <English>Slightly Distended Jugular vein</English>
+        </Key>
+        <Key ID="STR_KAT_Circulation_Check_Neck_Output_2_log">
+            <English>Very Distended Jugular vein</English>
+        </Key>
+        <Key ID="STR_KAT_Circulation_Check_Neck_Output_3_log">
+            <English>Normal Jugular Vein</English>
+        </Key>
+        <Key ID="STR_KAT_Circulation_Check_Neck_Output_4_log">
+            <English>%1 finds a normal Trachea</English>
+        </Key>
+        <Key ID="STR_KAT_Circulation_Check_Neck_Output_5_log">
+            <English>%1 finds Tracheal Deviation</English>
+        </Key>
+        <Key ID="STR_KAT_Circulation_CheckNeck">
+            <English>Check Neck</English>
+        </Key>
+        <Key ID="STR_KAT_Circulation_CheckNeck_Action">
+            <English>Checking Neck</English>
+        </Key>
+        <Key ID="STR_KAT_Circulation_Check_Neck_Output">
+            <English>%1 finds %2</English>
+        </Key>
+        <Key ID="STR_KAT_Circulation_CheckCapRefill">
+            <English>Check Capillary Refill</English>
+        </Key>
+        <Key ID="STR_KAT_Circulation_CheckCapRefill_Action">
+            <English>Checking Capillary Refill</English>
+        </Key>
+        <Key ID="STR_KAT_Circulation_Check_capRefill_Output_Normal">
+            <English>You find a Capillary Refill time of ~1.5 seconds</English>
+        </Key>
+        <Key ID="STR_KAT_CirculationCheck_capRefill_Output_NoRefill">
+            <English>You find no Capillary Refill</English>
+        </Key>
+        <Key ID="STR_KAT_Circulation_Check_capRefill_Output_Delayed">
+            <English>You find a Capillary Refill time of ~3 seconds</English>
+        </Key>
+        <Key ID="STR_KAT_Circulation_Check_capRefill_Output_SeverelyDelayed_4">
+            <English>You find a Capillary Refill time of ~5 seconds</English>
+        </Key>
+        <Key ID="STR_KAT_Circulation_Check_capRefill_Output_Normal_log">
+            <English>a Capillary Refill time of ~1.5 seconds</English>
+        </Key>
+        <Key ID="STR_KAT_Circulation_Check_capRefill_Output_NoRefill_log">
+            <English>No Capillary Refill</English>
+        </Key>
+        <Key ID="STR_KAT_Circulation_Check_capRefill_Output_Delayed_log">
+            <English>a Capillary Refill time of ~3 seconds</English>
+        </Key>
+        <Key ID="STR_KAT_Circulation_Check_capRefill_Output_SeverelyDelayed_log">
+            <English>a Capillary Refill time of ~5 seconds</English>
+        </Key>
     </Package>
 </Project>

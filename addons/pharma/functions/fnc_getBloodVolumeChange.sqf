@@ -72,7 +72,7 @@ if (!isNil {_unit getVariable [QACEGVAR(medical,ivBags),[]]}) then {
         private _idx = _occlusionMap findIf { _x#0 == _bodyPart };
         private _result = if (_idx != -1) then { _occlusionMap select _idx select 1 } else { [] };
         private _isOccluded = ({ _tourniquets select _x != 0 } count _result > 0) && (_IVarray select _bodyPart isNotEqualTo 13);
-        if ((!_isOccluded) && ([7,8,9] find (_IVarray select _bodyPart) == -1)) then {
+        if ((!_isOccluded) && ([7,8,9,15] find (_IVarray select _bodyPart) == -1)) then {
             if (_type in ["Blood", "Saline", "Plasma", "Ringers Lactate", "PackedRBC"]) then {
             private _IVflow = _unit getVariable [QGVAR(IVflow), [0,0,0,0,0,0,0,0,0,0,0,0]];
             private _IVrate = _unit getVariable [QGVAR(IVrate), [0,0,0,0,0,0,0,0,0,0,0,0]];
@@ -88,7 +88,7 @@ if (!isNil {_unit getVariable [QACEGVAR(medical,ivBags),[]]}) then {
             TRACE_8("IV",_bagChange,_IVrate,_IVflow,_IVarray,_isOccluded,_rateCoef,_flowCalculation,_bodyPart);
             TRACE_2("IV2",_bagVolumeRemaining,_incomingFlowAmount);
             if ((GVAR(IVComplications)) && ((((_incomingFlowAmount select _bodyPart) max 0.01) / ((_IVrate select _bodyPart) max 0.01)) > (10 * _vasoconstriction)) && ((random 100) < 20)) then {[_unit, _bodyPart, _incomingFlowDifference] call FUNC(handleLimbIVComplications)};
-
+            if ((GVAR(IVComplications)) && (_totalFlow > (25 * _vasoconstriction))) then {[_unit, (_totalFlow - (25 * _vasoconstriction))] call FUNC(handleIVComplications)};
             if (_hypothermia) then {
                 // If fluid warmers are on the line, fluids are "warmed" and added to the warmer. If there is no fluid warmer on the line, the fluids stayed cooled
                 if (_fluidWarmer select _bodyPart == 1) then {
@@ -154,7 +154,14 @@ if (!isNil {_unit getVariable [QACEGVAR(medical,ivBags),[]]}) then {
             _unit setVariable [QGVAR(IVincomingFlowAmount), _incomingFlowAmount, true];
             private _defaultHeartRate = _unit getVariable [QEGVAR(circulation,defaultHeartRate), 80];
             private _heartRateRatio = GET_HEART_RATE(_patient) / _defaultHeartRate;
-            private _drugMult = ((((GET_BLOOD_VOLUME_LITERS(_patient))/ DEFAULT_BLOOD_VOLUME) * (_heartRateRatio) * ((GET_BODY_FLUID_ECB(_patient)/GET_BODY_FLUID_ECP(_patient)) / (DEFAULT_ECB/DEFAULT_ECP)) max 0.2) min 2.5);
+            private _bloodBased = GET_STRING(_ivConfig >> "bloodBased",getText (_defaultConfig >> "bloodBased"));
+            private _hemocrit = 1;
+            if (_bloodBased == "true") then {
+                _hemocrit = (GET_BODY_FLUID_ECB(_patient)/GET_BODY_FLUID_ECP(_patient)) / (DEFAULT_ECB/DEFAULT_ECP)
+            } else {
+                _hemocrit = (GET_BODY_FLUID_ECP(_patient)/GET_BODY_FLUID_ECB(_patient)) / (DEFAULT_ECP/DEFAULT_ECB)
+            };
+            private _drugMult = (((((GET_BLOOD_VOLUME_LITERS(_patient))/ DEFAULT_BLOOD_VOLUME) * (_heartRateRatio) * _hemocrit) max 0.2) min 2.5);
             private _defaultConfig = configFile >> QUOTE(ACE_ADDON(Medical_Treatment)) >> "IV";
             private _ivConfig = _defaultConfig >> _type;
             private _painReduce             = (GET_NUMBER(_ivConfig >> "painReduce",getNumber (_defaultConfig >> "painReduce")) * _medicationMult) * _drugMult;
