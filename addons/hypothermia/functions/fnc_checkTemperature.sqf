@@ -20,7 +20,7 @@ params ["_medic", "_patient"];
 private _unitTemperature = _patient getVariable [QGVAR(unitTemperature), 37];
 
 switch (true) do {
-    case (!(alive _patient)) : { [LLSTRING(temperature_dead), 1.5, _medic] call ACEFUNC(common,displayTextStructured); };
+    case (_unitTemperature < 22) : { [LLSTRING(temperature_dead), 1.5, _medic] call ACEFUNC(common,displayTextStructured); };
     case (_unitTemperature < 29) : { [LLSTRING(temperature_cold), 1.5, _medic] call ACEFUNC(common,displayTextStructured); };
     case (_unitTemperature < 32) : { [LLSTRING(temperature_cool), 1.5, _medic] call ACEFUNC(common,displayTextStructured); };
     case (_unitTemperature < 36) : { [LLSTRING(temperature_mild), 1.5, _medic] call ACEFUNC(common,displayTextStructured); };

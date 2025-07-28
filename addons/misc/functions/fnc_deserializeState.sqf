@@ -180,7 +180,6 @@ private _state = [_json] call CBA_fnc_parseJSON;
 
 [VAR_LOCAL_ANESTHESIA, DEFAULT_LOCAL_ANESTHESIA],
 [QEGVAR(pharma,activeEtomidateLoadingDose), false],
-[QEGVAR(pharma,coagulationFactor), 30],
 [QEGVAR(surgery,fractures), [0,0,0,0,0,0,0,0,0,0,0,0]],
 [QEGVAR(surgery,lidocaine), false],
 [QEGVAR(surgery,etomidate), false],

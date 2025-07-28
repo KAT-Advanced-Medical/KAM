@@ -41,7 +41,7 @@ if GVAR(kidneyAction) then
     if (!(alive _patient)) exitWith {
         [_idPFH] call CBA_fnc_removePerFrameHandler;
         };
-        private _medStack = [_patient, false] call ACEFUNC(medical_treatment,getAllMedicationCount);
+        private _medStack = [_patient, false] call ACEFUNC(medical_status,getAllMedicationCount);
         private _medIndex = _medStack find "CWMP";
         private _hasMed = false;
 

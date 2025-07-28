@@ -24,7 +24,7 @@ private _cricothyrotomy = _patient getVariable [QGVAR(cricothyrotomy), 0];
 private _surgeryString = "";
 private _number = _entry;
 
-private _medStack = _patient call ACEFUNC(medical_treatment,getAllMedicationCount);
+private _medStack = _patient call ACEFUNC(medical_status,getAllMedicationCount);
 private _medsToCheck = ["fentanyl", "ketamine", "nalbuphine", "morphine"];
 private _fentanylEffectiveness = 0;
 private _ketamineEffectiveness = 0;

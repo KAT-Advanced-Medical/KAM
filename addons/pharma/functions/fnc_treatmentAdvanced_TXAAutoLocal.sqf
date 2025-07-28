@@ -18,7 +18,7 @@
 
 params ["_patient", "_bodyPart"];
 private _partIndex = ALL_BODY_PARTS find toLower _bodyPart;
-private _medStack = [_patient, false] call ACEFUNC(medical_treatment,getAllMedicationCount);
+private _medStack = [_patient, false] call ACEFUNC(medical_status,getAllMedicationCount);
 private _medsToCheck = ["TXA"];
 private _txaEffectiveness = 0;
 {

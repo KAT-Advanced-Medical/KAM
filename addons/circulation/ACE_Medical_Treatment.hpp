@@ -4,6 +4,8 @@ class ACE_Medical_Treatment {
         ratio[] = {};
         type = "Blood";
         rateCoef = 1;
+        //Platelets per ML
+        platelets = 0;
         // How much does the pain get reduced?
         painReduce = 0;
         // How much will the heart rate be increased when the HR is low (below 55)? {minIncrease, maxIncrease}
@@ -53,6 +55,7 @@ class ACE_Medical_Treatment {
             volume = 1000;
             ratio[] = {"Plasma", 1};
             rateCoef = 0.9;
+            platelets = 0.075;
         };
         class BloodIV_500: BloodIV {
             volume = 500;
@@ -65,6 +68,7 @@ class ACE_Medical_Treatment {
             ratio[] = {"Blood", 1};
             type = "Plasma";
             rateCoef = 1;
+            platelets = 0.1;
         };
         class PlasmaIV_500: PlasmaIV {
             volume = 500;
@@ -77,6 +81,7 @@ class ACE_Medical_Treatment {
             type = "Saline";
             ratio[] = {};
             rateCoef = 1.3;
+            platelets = 0;
         };
         class SalineIV_500: SalineIV {
             volume = 500;
@@ -213,6 +218,7 @@ class ACE_Medical_Treatment {
             volume = 1000;
             rateCoef = 1.3;
             type = "Ringers Lactate";
+            platelets = 0;
         };
         class RingersLactateIV_500: RingersLactateIV {
             volume = 500;
@@ -228,6 +234,7 @@ class ACE_Medical_Treatment {
             volume = 500;
             rateCoef = 0.7;
             type = "PackedRBC";
+            platelets = 0.2;
         };
         class PackedRBCIV_250: PackedRBCIV_500 {
             volume = 250;

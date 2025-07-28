@@ -241,7 +241,6 @@ private _nauseaMult = _unit getVariable [QEGVAR(pharma,nauseaMult), 1];
 
 private _localAnesthesia = _unit getVariable [VAR_LOCAL_ANESTHESIA, DEFAULT_LOCAL_ANESTHESIA];
 private _activeEtomidateLoadingDose = _unit getVariable [QEGVAR(pharma,activeEtomidateLoadingDose), false];
-private _coagulationFactor = _unit getVariable [QEGVAR(pharma,coagulationFactor), 30];
 
 diag_log format [
     "[IV/Pharma] AlphaAction: %1 | IV: %2 | IVflow: %3 | IVrate: %4 | IVincomingFlowAmount: %5 | IVpfh: %6 | Active: %7 | IVPharma_PFH: %8 | IVmenuActive: %9 | ExternalPh: %10 | pH: %11 | OpioidFactor: %12 | OpioidDepression: %13 | KidneyFail: %14 | KidneyArrest: %15 | KidneyPressure: %16 | RespiratoryRate: %17 | HeartContractility: %18 | NauseaMult: %19 | LocalAnesthesia: %20 | ActiveEtomidateLoadingDose: %21 | CoagulationFactor: %22",

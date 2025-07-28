@@ -36,11 +36,11 @@ if !(GVAR(coagulation)) exitWith {};
     if (GET_BLOOD_VOLUME_LITERS(_unit) < GVAR(coagulation_requireBV)) exitWith {}; // Blood volume check
     if ((GET_HEART_RATE(_unit) < 20) && GVAR(coagulation_requireHR)) exitWith {}; // Has pulse & require setting
 
-    private _currentCoagFactors = _unit getVariable [QGVAR(coagulationFactor), 30];
+    private _currentCoagFactors = GET_BODY_FLUID_PLATELETS(_unit);
     private _savedCoagFactors = _unit getVariable [QGVAR(coagulationSavedFactors), (_unit getVariable [QGVAR(coagulationFactor), 30])];
     private _limitRegenCoagFactors = missionNamespace getVariable [QGVAR(coagulation_factor_count), 30];
     private _cooldownON = _unit getVariable [QGVAR(coagulationRegenCooldown), false];
-    private _medStack = [_patient, false] call ACEFUNC(medical_treatment,getAllMedicationCount);
+    private _medStack = [_patient, false] call ACEFUNC(medical_status,getAllMedicationCount);
     private _medsToCheck = ["TXA", "EACA"];
     private _eacaEffectiveness = 0;
     private _txaEffectiveness = 0;
@@ -79,7 +79,7 @@ if !(GVAR(coagulation)) exitWith {};
 
     if (_currentCoagFactors > _limitRegenCoagFactors && !(_cooldownON)) exitWith {
 
-        if ((_countTXA > 0 || _countTXAiV51 > 0 || _countTXAiV53 > 0 || _countTXAiM101 > 0 || _countTXAiM103 > 0) || (_countEACA > 0 || _countEACAIV51 > 0 || _countEACAIV53 > 0)) exitWith {}; // If TXA or EACA is in system don't remove factor
+        if (_txaEffectiveness > 0 || _eacaEffectiveness > 0) exitWith {}; // If TXA or EACA is in system don't remove factor
 
         _unit setVariable [QGVAR(coagulationFactor), (_currentCoagFactors - 1), true];
         _unit setVariable [QGVAR(coagulationSavedFactors), (_currentCoagFactors - 1), true];

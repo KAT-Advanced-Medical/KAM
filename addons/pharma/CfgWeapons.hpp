@@ -571,7 +571,7 @@ class CfgWeapons {
     class kat_syringe_amiodarone_5ml_30: kat_syringe_amiodarone_5ml_10 {
         displayName = KATDISPLAYCSTRING(amiodarone,5ml,30);
     };
-    class kat_syringe_alteplase_5ml_20: kat_syringe_txa_5ml_10 {
+    class kat_syringe_alteplase_5ml_30: kat_syringe_txa_5ml_10 {
         displayName = KATDISPLAYCSTRING(alteplase,5ml,30);
     };
     class kat_syringe_epinephrineIV_5ml_10: kat_syringe_txa_5ml_10 {

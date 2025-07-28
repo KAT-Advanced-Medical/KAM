@@ -3870,13 +3870,7 @@
             <Italian>Il Coag-Sense è un sistema di monitoraggio PT/INR che può misurare l'efficienza della coagulazione del sangue.</Italian>
         </Key>
         <Key ID="STR_KAT_Pharma_Coag_Sense_Log">
-            <English>Coag-Sense concludes: %1</English>
-            <Japanese>Coag-Senseの結果: %1</Japanese>
-            <Spanish>Coag-Sense concluye: %1</Spanish>
-            <Portuguese>Medidor de Coagulação conlui: %1</Portuguese>
-            <Dutch>Coag-Sense concludeerd: %1</Dutch>
-            <French>Le Coag-Sense a conclu : %1</French>
-            <Italian>Coag-Sense conclude: %1</Italian>
+            <English>Coag-Sense concludes: Patient has an INR of %1</English>
         </Key>
         <Key ID="STR_KAT_Pharma_CheckCoag_DisplayName">
             <English>Measure PT/INR</English>
@@ -5645,7 +5639,7 @@
             <English>5ml Syringe / 80mg Alteplase</English>
         </Key>
         <Key ID="STR_KAT_Pharma_SyringeDisplay_salineIV_5ml_30">
-            <English>5ml Syringe / Saline_Flush Syringe</English>
+            <English>5ml Syringe / Saline Flush Syringe</English>
         </Key>
         <Key ID="STR_KAT_Pharma_SubCategory_Ondansetron">
             <English>Ondansetron Settings</English>

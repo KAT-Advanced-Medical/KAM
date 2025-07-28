@@ -21,7 +21,7 @@ params ["_patient", "_bodyPart"];
 private _partIndex = ALL_BODY_PARTS find toLower _bodyPart;
 private _IVarray = _patient getVariable [QGVAR(IV), [0,0,0,0,0,0,0,0,0,0,0,0]];
 private _IVactual = _IVarray select _partIndex;
-private _medStack = [_patient, false] call ACEFUNC(medical_treatment,getAllMedicationCount);
+private _medStack = [_patient, false] call ACEFUNC(medical_status,getAllMedicationCount);
 private _medsToCheck = ["EACA"];
 private _eacaEffectiveness = 0;
 {

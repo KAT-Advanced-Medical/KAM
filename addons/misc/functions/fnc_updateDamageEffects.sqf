@@ -41,7 +41,7 @@ if (isNil {_unit getVariable [QGVAR(painMedPFH), nil]}) then {
             _unit setVariable [QGVAR(painMedPFH), nil]; // Clear the tracking variable
         };
 
-        private _medStack = _unit call ACEFUNC(medical_treatment,getAllMedicationCount);
+        private _medStack = _unit call ACEFUNC(medical_status,getAllMedicationCount);
         private _fentanylEffectiveness = 0;
         private _ketamineEffectiveness = 0;
         private _nalbuphineEffectiveness = 0;

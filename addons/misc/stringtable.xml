@@ -424,17 +424,6 @@
         <Key ID="STR_KAT_Misc_SubCategory_MEDPACK">
             <English>Medication Case</English>
         </Key>
-        <Key ID="STR_KAT_Misc_SubCategory_AFAK">
-            <English>(AFAK) Advanced First Aid Kit</English>
-            <German>(AFAK) Erweitertes Erste Hilfe Kit</German>
-            <Spanish>(BPAA) Botiquín de primeros auxilios avanzado</Spanish>
-            <Japanese>(AFAK) 高等応急処置キット</Japanese>
-            <French>(AFAK) Trousse de secours avancée</French>
-            <Finnish>(AFAK) Edistyksellinen ensiapulaukku</Finnish>
-            <Russian>(AFAK) Усовершенствованная аптечка первой помощи</Russian>
-            <Portuguese>(KPSA) Kit de Primeiros Socorros Avançado</Portuguese>
-            <Dutch>(AFAK) Geadvanceerde Eerste hulpkit</Dutch>
-        </Key>
         <Key ID="STR_KAT_Misc_BloodGroupPatch_B_N">
             <English>Blood Group Patch B-</English>
             <Czech>Nášivka krevní skupiny B-</Czech>

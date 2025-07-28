@@ -29,7 +29,7 @@ TRACE_3("correctedMAP",_correctedMap,_map,_bloodPressure);
 private _flowMap = linearConversion [14.3333, 174.3333, _map, 0.05, 2, true];
 TRACE_1("flowMAP",_flowMap);
 private _heartRate = GET_HEART_RATE(_unit);
-private _lossVolumeChange = (-_deltaT * ((_bloodLoss + _internalBleeding * (GET_HEART_RATE(_unit) / (_unit getVariable [QEGVAR(circulation,defaultHeartRate), 80])) * _correctedMap) / GET_VASOCONSTRICTION(_unit)));
+private _lossVolumeChange = (-_deltaT * ((_bloodLoss + _internalBleeding * (GET_HEART_RATE(_unit) / (_unit getVariable [QEGVAR(circulation,defaultHeartRate), 80])) * _correctedMap * ((GET_BODY_FLUID_ECP(_unit)/GET_BODY_FLUID_ECB(_unit)) / (DEFAULT_ECP/DEFAULT_ECB))) / GET_VASOCONSTRICTION(_unit)));
 private _enableFluidShift = EGVAR(vitals,enableFluidShift);
 private _fluidVolume = GET_BODY_FLUID(_unit);
 TRACE_3("gbvc",_internalBleeding,_bloodLoss,_heartRate);
@@ -99,9 +99,10 @@ if (!isNil {_unit getVariable [QACEGVAR(medical,ivBags),[]]}) then {
             };
 
             // Plasma adds to ECP. Saline splits between the ECP and ISP. Blood adds to ECB
-            _platelets = (_platelets + (_plateletAmount * _bagChange)) max 0;
             switch (true) do {
-                case(_type == "Plasma"): { _ECP = _ECP + _bagChange; _lossVolumeChange = _lossVolumeChange + (_bagChange / ML_TO_LITERS); };
+                case(_type == "Plasma"): {
+                    _ECP = _ECP + _bagChange; _lossVolumeChange = _lossVolumeChange + (_bagChange / ML_TO_LITERS); 
+                    _platelets = (_platelets + (_plateletAmount * _bagChange)) max 0;};
                 case(_type == "Saline"): { 
                     if (_enableFluidShift) then {
                         _ECP = _ECP + _bagChange / 2; 
@@ -110,6 +111,7 @@ if (!isNil {_unit getVariable [QACEGVAR(medical,ivBags),[]]}) then {
                     } else {
                         { _ECP = _ECP + _bagChange; _lossVolumeChange = _lossVolumeChange + (_bagChange / ML_TO_LITERS); };
                     };
+                    _platelets = (_platelets + (_plateletAmount * _bagChange)) max 0;
                 };
                 case(_type == "Ringers Lactate"): {
                     if (_enableFluidShift) then {
@@ -119,19 +121,26 @@ if (!isNil {_unit getVariable [QACEGVAR(medical,ivBags),[]]}) then {
                     } else {
                         { _ECP = _ECP + _bagChange; _lossVolumeChange = _lossVolumeChange + (_bagChange / ML_TO_LITERS); };
                     };
+                    _platelets = (_platelets + (_plateletAmount * _bagChange)) max 0;
                 };
                 case(_type == "Blood"): { 
                     _ECB = _ECB + _bagChange / 2; 
                     _ECP = _ECP + _bagChange / 2; 
-                    _lossVolumeChange = _lossVolumeChange + (_bagChange / 2000); 
+                    _lossVolumeChange = _lossVolumeChange + (_bagChange / 2000);
+                    _platelets = (_platelets + (_plateletAmount * _bagChange)) max 0; 
                 };
                 case(_type == "PackedRBC"): {
                     private _plasma = (_fluidVolume select 1);
+                    private _ph = GET_PH(_patient);
+                    if ((_plasma <= 2000) && (_ph > 6.5) && (_ph < 8)) then {
+                        _platelets = (_platelets + (_plateletAmount * _bagChange)) max 0;
+                    };
                     if (_plasma <= 2000) then {
-                        _ECB = _ECB + _bagChange; 
-                        _lossVolumeChange = _lossVolumeChange + (_bagChange / ML_TO_LITERS); 
+                        _ECB = _ECB + (_bagChange * 1.5); 
+                        _lossVolumeChange = _lossVolumeChange + ((_bagChange * 1.5) / ML_TO_LITERS); 
                     } else {
-                        _ECP = _ECP + _bagChange; _lossVolumeChange = _lossVolumeChange + (_bagChange / ML_TO_LITERS);
+                        _ECP = _ECP + _bagChange; 
+                        _lossVolumeChange = _lossVolumeChange + (_bagChange / ML_TO_LITERS);
                     };
                 };
             };

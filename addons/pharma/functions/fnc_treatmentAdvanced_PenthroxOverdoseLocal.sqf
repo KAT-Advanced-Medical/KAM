@@ -53,7 +53,7 @@ params ["_patient"];
     if (!(alive _patient)) exitWith {
         [_idPFH] call CBA_fnc_removePerFrameHandler;
         };
-        private _medStack = [_patient, false] call ACEFUNC(medical_treatment,getAllMedicationCount);
+        private _medStack = [_patient, false] call ACEFUNC(medical_status,getAllMedicationCount);
         private _medIndex = _medStack find "Penthrox";
         private _hasMed = false;
 

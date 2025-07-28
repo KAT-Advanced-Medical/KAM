@@ -37,12 +37,13 @@ private _partIndex = ALL_BODY_PARTS find toLowerANSI _bodyPart;
 private _defaultConfig = configFile >> QUOTE(ACE_ADDON(Medical_Treatment)) >> "IV";
 private _ivConfig = _defaultConfig >> _treatment;
 
-private _volume   = GET_NUMBER(_ivConfig >> "volume",getNumber (_defaultConfig >> "volume"));
-private _type     = GET_STRING(_ivConfig >> "type",getText (_defaultConfig >> "type"));
-private _rateCoef = GET_NUMBER(_ivConfig >> "rateCoef",getNumber (_defaultConfig >> "rateCoef"));
+private _volume    = GET_NUMBER(_ivConfig >> "volume",getNumber (_defaultConfig >> "volume"));
+private _type      = GET_STRING(_ivConfig >> "type",getText (_defaultConfig >> "type"));
+private _rateCoef  = GET_NUMBER(_ivConfig >> "rateCoef",getNumber (_defaultConfig >> "rateCoef"));
+private _platelets = GET_NUMBER(_ivConfig >> "platelets",getNumber (_defaultConfig >> "platelets"));
 
 // Add IV bag to patient's ivBags array
 TRACE_6("IVBAGLOCAL",_volume,_type,_partIndex,_treatment,_rateCoef,_item);
 private _ivBags = _patient getVariable [QACEGVAR(medical,ivBags), []];
-_ivBags pushBack [_volume, _type, _partIndex, _treatment, _rateCoef, _item];
+_ivBags pushBack [_volume, _type, _partIndex, _treatment, _rateCoef, _item, _platelets];
 _patient setVariable [QACEGVAR(medical,ivBags), _ivBags, true];

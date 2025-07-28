@@ -23,7 +23,7 @@ if (GVAR(chestTube_ConsciousnessRequirement) == 1 && !(IS_UNCONSCIOUS(_patient))
     private _output = LLSTRING(chest_tube_fail);
     [_output, 1.5, _medic] call ACEFUNC(common,displayTextStructured);
 };
-private _medStack = _patient call ACEFUNC(medical_treatment,getAllMedicationCount);
+private _medStack = _patient call ACEFUNC(medical_status,getAllMedicationCount);
 private _medsToCheck = ["fentanyl", "ketamine", "nalbuphine", "morphine"];
 private _fentanylEffectiveness = 0;
 private _ketamineEffectiveness = 0;

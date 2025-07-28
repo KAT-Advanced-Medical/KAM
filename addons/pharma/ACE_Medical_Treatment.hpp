@@ -799,7 +799,7 @@ class ACE_ADDON(Medical_Treatment) {
             dose = 1;
             maximumEffectiveDose = 30;
         };
-        class syringe_Alteplase_5ml_20 {
+        class syringe_Alteplase_5ml_30 {
             painReduce = 0;
             hrIncreaseLow[] = {-4, -10};
             hrIncreaseNormal[] = {-5, -15};
@@ -807,7 +807,7 @@ class ACE_ADDON(Medical_Treatment) {
             timeInSystem = 180;
             timeTillMaxEffect = 30;
             dose = 1;
-            maxDose = 30;
+            maxDose = 40;
             maxDoseDeviation = 10;
             incompatibleMedication[] = {};
             viscosityChange = 0;

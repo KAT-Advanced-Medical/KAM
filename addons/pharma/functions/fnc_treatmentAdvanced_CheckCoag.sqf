@@ -18,20 +18,28 @@
 
 params ["_medic", "_patient"];
 
-private _coagFactors = _patient getVariable [QGVAR(coagulationFactor), 30];
-private _missionCoagFactors = missionNamespace getVariable [QGVAR(coagulation_factor_count), 30];
-private _slowINR = (_missionCoagFactors / 100) * 75;
-private _shighINR = (_missionCoagFactors / 100) * 125;
-private _hlowINR = (_missionCoagFactors / 100) * 50;
-private _hhighINR = (_missionCoagFactors / 100) * 150;
-private _output = "";
-
-switch (true) do {
-    case (_coagFactors < _slowINR && _coagFactors > _hlowINR): { _output = LLSTRING(CheckCoag_slightly_lowINR)};
-    case (_coagFactors > _shighINR && _coagFactors < _hhighINR): { _output = LLSTRING(CheckCoag_slightly_aboveINR)};
-    case (_coagFactors <= _hlowINR): { _output = LLSTRING(CheckCoag_highly_lowINR)};
-    case (_coagFactors >= _hhighINR): { _output = LLSTRING(CheckCoag_highly_aboveINR)};
-    default { _output = LLSTRING(CheckCoag_normalINR)};
+private _woundClotDelayMult = 1;
+private _medStack = [_patient, false] call ACEFUNC(medical_status,getAllMedicationCount);
+private _medsToCheck = ["Alteplase", "CWMP"];
+private _alteplaseEffectiveness = 0;
+private _cwmpEffectiveness = 0;
+{
+    private _medName = toLower (_x select 0);
+    private _effectiveness = _x select 2;
+    if ("alteplase" in _medName) then {
+        _alteplaseEffectiveness = _alteplaseEffectiveness max _effectiveness;
+    };
+    if ("cwmp" in _medName) then {
+        _cwmpEffectiveness = _cwmpEffectiveness max _effectiveness;
+    };
+} forEach _medStack;
+private _cwmpFixedEffectiveness = linearConversion [0, 1, _cwmpEffectiveness, 1, 1.3];
+private _alteplaseFixedEffectiveness = linearConversion [0, 1, _alteplaseEffectiveness, 1, 10];
+private _coagulationFactor = GET_BODY_FLUID_PLATELETS(_patient);
+private _hypothermiaDelay = 1;
+if (EGVAR(hypothermia,hypothermiaActive)) then {
+    _hypothermiaDelay = linearConversion [35, 17, (_patient getVariable [QEGVAR(hypothermia,unitTemperature), 37]), 1, 3, true];
 };
+private _woundClotDelayMult = (round (((1 * _alteplaseFixedEffectiveness * (600/_coagulationFactor) * _cwmpFixedEffectiveness * _hypothermiaDelay) min 10) * 10)) / 10;
 
-[_patient, "quick_view", LLSTRING(Coag_Sense_Log), [_output]] call ACEFUNC(medical_treatment,addToLog);
+[_patient, "quick_view", LLSTRING(Coag_Sense_Log), [_woundClotDelayMult]] call ACEFUNC(medical_treatment,addToLog);

@@ -61,8 +61,7 @@ class ACE_Medical_Injuries {
         // wound that is caused by Non-Penetrative Blasts, cannot be bandaged externally.
         class InternalBleeding {
             bleeding = 0.02;
-            pain = 0.8;
-            causeLimping = 1;
+            pain = 0.4;
             causeFracture = 1;
         };
         class Evisceration {

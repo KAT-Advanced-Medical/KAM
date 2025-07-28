@@ -78,7 +78,8 @@ switch (_usedItem) do {
         _IVrate set [_partIndex, 0.4];
         _patient setVariable [QGVAR(IV), _IVarray, true];
         _patient setVariable [QGVAR(IVrate), _IVrate, true];
-        private _medStack = _patient call ACEFUNC(medical_treatment,getAllMedicationCount);
+        private _medStack = _patient call ACEFUNC(medical_status,getAllMedicationCount);
+        systemchat str _medStack;
         private _medsToCheck = ["fentanyl", "ketamine", "nalbuphine", "morphine"];
         private _fentanylEffectiveness = 0;
         private _ketamineEffectiveness = 0;
@@ -129,7 +130,7 @@ switch (_usedItem) do {
         _IVrate set [_partIndex, 0.4];
         _patient setVariable [QGVAR(IV), _IVarray, true];
         _patient setVariable [QGVAR(IVrate), _IVrate, true];
-        private _medStack = _patient call ACEFUNC(medical_treatment,getAllMedicationCount);
+        private _medStack = _patient call ACEFUNC(medical_status,getAllMedicationCount);
         private _medsToCheck = ["fentanyl", "ketamine", "nalbuphine", "morphine"];
         private _fentanylEffectiveness = 0;
         private _ketamineEffectiveness = 0;

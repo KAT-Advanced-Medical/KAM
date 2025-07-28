@@ -597,9 +597,9 @@ class ACE_Medical_Treatment_Actions {
         displayName = KATPUSHCSTRING(adenosineIV,5ml,30);
         displayNameProgress = KATPUSHINGCSTRING(adenosineIV,5ml,30);
     };
-    class syringe_Alteplase_5ml_20: syringe_EACA_5ml_10 {
+    class syringe_Alteplase_5ml_30: syringe_EACA_5ml_10 {
         medicRequired = QGVAR(medLvl_alteplase);
-        items[] = {"kat_syringe_alteplase_5ml_3"};
+        items[] = {"kat_syringe_alteplase_5ml_30"};
         displayName = KATPUSHCSTRING(alteplase,5ml,30);
         displayNameProgress = KATPUSHINGCSTRING(alteplase,5ml,30);
     };

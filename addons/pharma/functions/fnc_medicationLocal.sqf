@@ -117,7 +117,7 @@ if (_isOccluded) exitWith {
     private _defaultHeartRate = _patient getVariable [QEGVAR(circulation,defaultHeartRate), 80];
     private _heartRateRatio = GET_HEART_RATE(_patient) / _defaultHeartRate;
     //private _bloodBased = GET_STRING(_medicationConfig >> "bloodBased",getText (_defaultConfig >> "bloodBased"));
-    private _weightBase = GET_STRING(_medicationConfig >> "weightBase",getText (_defaultConfig >> "weightBase"));
+    private _weightBase = GET_STRING(_medicationConfig >> "weightBased",getText (_defaultConfig >> "weightBased"));
     private _weightDose = GET_NUMBER(_medicationConfig >> "weightDose",getNumber (_defaultConfig >> "weightDose"));
     _weightMult = 1;
     if (_weightBase == "true") then {
@@ -198,7 +198,7 @@ if (_isOccluded) exitWith {
     _hrIncreaseHigh         = GET_ARRAY(_medicationConfig >> "hrIncreaseHigh",getArray (_defaultConfig >> "hrIncreaseHigh"));
     _incompatibleMedication = GET_ARRAY(_medicationConfig >> "incompatibleMedication",getArray (_defaultConfig >> "incompatibleMedication"));
     _maxRelief              = GET_NUMBER(_medicationConfig >> "maxRelief",getNumber (_defaultConfig >> "maxRelief"));
-    _dose                   = GET_NUMBER(_medicationConfig >> "dose",getNumber (_defaultConfig >> "dose")) * _drugMult * _startDose;
+    _dose                   = GET_NUMBER(_medicationConfig >> "dose",getNumber (_defaultConfig >> "dose")) * (_drugMult / _doseMult) * _startDose;
     _contractility          = GET_NUMBER(_medicationConfig >> "contractility",getNumber (_defaultConfig >> "contractility")) * _drugMult;
     _nauseaMult             = GET_NUMBER(_medicationConfig >> "nauseaMult",getNumber (_defaultConfig >> "nauseaMult")) * _drugMult;
     _sedation               = GET_STRING(_medicationConfig >> "sedation",getText (_defaultConfig >> "sedation"));

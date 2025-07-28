@@ -248,7 +248,7 @@
     "EDITBOX",
     [LLSTRING(SETTING_SecondSlot_Item), LLSTRING(SETTING_ItemSlot_DESC)],
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_IFAK)],
-    "[['kat_Israeli_Bandage', 4], ['kat_ETD', 2]], ['kat_Hemostatic_Injector', 2], ['kat_Adhesive_Bandage', 5]]",
+    "[['ACE_tourniquet', 2]]",
     1,
     {
         private _string = missionNamespace getVariable [QGVAR(IFAKSecondSlotItem), []];
