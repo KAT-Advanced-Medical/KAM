@@ -1286,6 +1286,7 @@
             <Norwegian>Felleskapet kalt "Keko" hadde en tilleggsfunksjon for AFK-spillere. De ble gjort bevisstløse slik at andre kunne dra dem bort. Dette utløste muligheter for luftveisproblemer. Denne strengen forhindrer at det skjer når de blir bevisstløse av det AFK-tillegget.</Norwegian>
             <Finnish>Yhteisössä nimeltä keko oli lisäosa ei-aktiivisille pelaajille. He putosivat tajuttomaksi, jotta muut voisivat vetää heidät pois. Tämä aiheutti hengitysvaikeuksia. Tämä koodi estää tämän tapahtumisen, kun he menettävät tajuntansa tämän lisäosan takia.</Finnish>
             <Dutch>De community met de naam keko had een addon voor AFK spelers. Ze werden in een bewusteloze staat gebracht zodat anderen ze konder wegslepen. Dit veroorzaakte kansen voor luchtwegproblemen. Deze streng voorkomt dit wanneer ze door de addon bewusteloos worden gemaakt.</Dutch>
+            <Hungarian>Egy Keko nevű közösség készített egy AFK játékosokat kezelő modot. Ez a mod eszméletlenné tette a játékost, hogy mások el tudják vonszolni őt. Ez azonban légúti problémák esélyét is kiválthatta. Ez a string (beállítás) megakadályozza, hogy ilyen légúti problémák jelentkezzenek, amikor a játékos az AFK mod miatt kerül eszméletlen állapotba.</Hungarian>
         </Key>
         <Key ID="STR_KAT_Airway_SETTING_obstruction">
             <English>Probability for an obstructed airway</English>
@@ -1305,6 +1306,7 @@
             <Norwegian>Sannsynligheten for blokkert luftvei</Norwegian>
             <Finnish>Tukkeutuneiden hengitysteiden todennäköisyys</Finnish>
             <Dutch>Kans op geblokkeerde luchtweg</Dutch>
+            <Hungarian>Az akadályozott légút valószínűsége</Hungarian>
         </Key>
         <Key ID="STR_KAT_Airway_SETTING_obstruction_DESC">
             <English>Probability for an obstructed airway in percentage that gets rolled every: \n- Falling unconscious \n- Removing KingLT / Guedel Tube</English>
@@ -1322,6 +1324,7 @@
             <Norwegian>Sannsynlighet for en blokkert luftvei i prosent som oppstår hver gang det skjer: \n- Bevisstløshet \n- Fjerning av Larynkstube / Guedel Tube</Norwegian>
             <Finnish>Tukkeutuneen hengitysteiden todennäköisyys prosentteina, joka pyörii joka kerta:\n- Putoaminen tajuttomuuteen poistaminen / Guedel putki</Finnish>
             <Dutch>Kans op geblokkeerde luchtweg in een percentage die gerold wordt elke: \n- Bewusteloos raken \n- KingLT / Guedel verwijderen</Dutch>
+            <Hungarian>Az akadályozott légút valószínűsége százalékban, amely dobásra kerül minden alkalommal: \n– Eszméletvesztéskor, \n– KingLT és / Guedel-tubus eltávolításakor</Hungarian>
         </Key>
         <Key ID="STR_KAT_Airway_SETTING_occluded">
             <English>Probability for airway occluding</English>
@@ -1341,6 +1344,7 @@
             <Norwegian>Sannsynlighet for at luftveien blir blokkert</Norwegian>
             <Finnish>Todennäköisyys hengitysteiden tukkeutumiseen</Finnish>
             <Dutch>Kans op een luchtwegverstopping</Dutch>
+            <Hungarian>A légút elzáródásának valószínűsége</Hungarian>
         </Key>
         <Key ID="STR_KAT_Airway_SETTING_occluded_DESC">
             <English>Probability for an occlusion in percentage that gets rolled Setting:[Occlusion repeat timer] (default every 60s)</English>
@@ -1358,6 +1362,7 @@
             <Norwegian>Sannsynligheten for en okklusjon i prosent som blir rullet i innstillingen for [Okklusjons repetisjonsintervall] (standard hver 60 sekunder).</Norwegian>
             <Finnish>Tukosten todennäköisyys prosentteina joka on satunnaisesti laskettu Asetukset: [Okkluusiotoistoajastin] (oletusarvo on kuusikymmentä sekuntia)</Finnish>
             <Dutch>Kans op een luchtwegverstopping in een percentage die gerold wordt elke Instelling:[Verstopping herhaling timer] (standaard elke 60 seconden)</Dutch>
+            <Hungarian>Az elzáródás valószínűsége százalékban, amely dobásra kerül a következő gyakorisággal: [Elzáródás ismétlődési ideje] (alapértelmezés szerint 60 másodpercenként)</Hungarian>
         </Key>
         <Key ID="STR_KAT_Airway_SETTING_occlusion_cooldownPeriod">
             <English>Occlusion Cooldown Period</English>
@@ -1375,10 +1380,12 @@
             <Norwegian>Avkjølingsperiode for okklusjon</Norwegian>
             <Finnish>Okkluusiojäähdytyssykli</Finnish>
             <Dutch>Verstoppings afkoelingsperiode</Dutch>
+            <Hungarian>Elzáródás újraindulási idő</Hungarian>
         </Key>
         <Key ID="STR_KAT_Airway_SETTING_occlusion_cooldownPeriod_DESC">
             <English>Period in seconds during which patient cannot get another occlusion after last occlusion was cleared. Set to 0 to disable this feature.</English>
             <German>Zeitraum in Sekunden, in dem ein Patient keine weitere Okklusion bekommen kann, nachdem die letzte Okklusion beseitigt wurde. Auf 0 setzen, um diese Funktion zu deaktivieren.</German>
+            <Hungarian>Az az időtartam másodpercben, amíg az ápolt nem kaphat újabb elzáródást az utolsó elzáródás megszűnése után. 0-ra állítva a funkció ki van kapcsolva.</Hungarian>
         </Key>
         <Key ID="STR_KAT_Airway_SETTING_occlusion_repeatTimer">
             <English>Occlusion repeat timer</English>
@@ -1397,14 +1404,17 @@
             <Norwegian>Repetisjonsintervall for Okklusjon</Norwegian>
             <Finnish>Okkluusiotoistoajastin</Finnish>
             <Dutch>Verstoppings herhaling timer</Dutch>
+            <Hungarian>Elzáródás ismétlődési időzítő</Hungarian>
         </Key>
         <Key ID="STR_KAT_Airway_SETTING_occlusion_repeatTimer_DESC">
             <English>Time interval in seconds at which the system checks for new occlusion occurrences in unconscious patients.</English>
             <German>Zeitintervall in Sekunden, in dem das System neue Okklusionsereignisse bei bewusstlosen Patienten überprüft.</German>
+            <Hungarian>Az az időköz másodpercben, amely alatt a rendszer ellenőrzi az új elzáródások előfordulását eszméletlen ápoltoknál.</Hungarian>
         </Key>
         <Key ID="STR_KAT_Airway_SETTING_puking_sound_DESC">
             <English>Enable or disable the sound effect when a patient develops airway occlusion (vomiting).</English>
             <German>Aktiviert oder deaktiviert den Soundeffekt, wenn bei einem Patienten eine Atemwegsobstruktion (Erbrechen) auftritt.</German>
+            <Hungarian>Be- vagy kikapcsolja a hanghatást, amikor az ápoltnál légúti elzáródás (hányás) lép fel.</Hungarian>
         </Key>
         <Key ID="STR_KAT_Airway_SETTING_puking_sound">
             <English>Activate the puking sound?</English>
@@ -1424,6 +1434,7 @@
             <Norwegian>Aktiver lyd for oppkast?</Norwegian>
             <Finnish>Ota oksennusääni käyttöön?</Finnish>
             <Dutch>Braakgeluiden activeren?</Dutch>
+            <Hungarian>Hányás hangjának aktiválása?</Hungarian>
         </Key>
         <Key ID="STR_KAT_Airway_SUCCES_HEADTURNING">
             <English>Success probability for head-turning</English>
@@ -1443,6 +1454,7 @@
             <Norwegian>sannsynligheten for sukksess ved vending av hode</Norwegian>
             <Finnish>onnistumisen todennäköisyys pään kääntämisessä</Finnish>
             <Dutch>Succeskans voor hoofddraaiing</Dutch>
+            <Hungarian>A fejfordítás sikerességének valószínűsége</Hungarian>
         </Key>
         <Key ID="STR_KAT_Airway_SUCCES_HEADTURNING_DESC">
             <English>Higher, the better the probability of success</English>
@@ -1462,6 +1474,7 @@
             <Norwegian>Jo høyere, desto bedre er sannsynligheten for suksess</Norwegian>
             <Finnish>Mitä korkeampi, sitä suurempi on onnistumisen todennäköisyys</Finnish>
             <Dutch>Groter betekent een hogere kans op succes</Dutch>
+            <Hungarian>Minél magasabb, annál jobb a siker valószínűsége.</Hungarian>
         </Key>
         <Key ID="STR_KAT_Airway_SubCategory_Items">
             <English>Airway items Settings</English>
@@ -1480,6 +1493,7 @@
             <Norwegian>Instillinger for luftveis gjennstander</Norwegian>
             <Finnish>henkitorven laitteen asetukset</Finnish>
             <Dutch>Instelling voor luchtwegmiddelen</Dutch>
+            <Hungarian>Légúti eszközök beállításai</Hungarian>
         </Key>
         <Key ID="STR_KAT_Airway_SubCategory_RecoveryPositionHyperextend">
             <English>Recovery Position + Head Hyperextend Settings</English>
@@ -1496,6 +1510,7 @@
             <Norwegian>Instillinger for stabil sideleie og Hyperforlengelse av hodet</Norwegian>
             <Finnish>Palautusasento + pään ylivenytysasetukset</Finnish>
             <Dutch>Stabiele zijliggings- en hoofd overstrekkings opties</Dutch>
+            <Hungarian>Stabil oldalfekvés és fej hyperextenzió beállításai</Hungarian>
         </Key>
         <Key ID="STR_KAT_Airway_SubCategory_Suction">
             <English>Suction devices Settings</English>
@@ -1511,6 +1526,7 @@
             <Chinesesimp>抽吸装置设置</Chinesesimp>
             <Finnish>Imulaitteen asetukset</Finnish>
             <Dutch>Suctie apparaten instellingen</Dutch>
+            <Hungarian>Szívókészülékek beállításai</Hungarian>
         </Key>
         <Key ID="STR_KAT_Airway_SuctionTreatment_displayName">
             <English>Airway Suction (Manual)</English>
@@ -1526,6 +1542,7 @@
             <Chinesesimp>气道吸气（手动）</Chinesesimp>
             <Finnish>Ilmateiden imu (manuaalinen)</Finnish>
             <Dutch>Handmatige luchtweg suctie</Dutch>
+            <Hungarian>(Kézi) váladékszívó</Hungarian>
         </Key>
         <Key ID="STR_KAT_Airway_Suction_Desc_Short">
             <English>Manual Suction Pump is a medical suction device for airway suction manually. This is an alternative to electrical devices.</English>
@@ -1541,6 +1558,7 @@
             <Chinesesimp>手动抽吸泵是一种用于手动气道抽吸的医用抽吸装置。这是电气设备的替代品。</Chinesesimp>
             <Finnish>Manuaalinen imupumppu on lääketieteellinen imulaite hengitysteiden manuaaliseen imemiseen. tämä on vaihtoehto sähkölaitteille</Finnish>
             <Dutch>De handmatige suctiepomp is een apparaat om handmatig de luchtwegen af te zuigen. Dit is een alternatief voor electrische apparaten</Dutch>
+            <Hungarian>A kézi váladékszívó orvosi eszköz, amely kézi működtetéssel végzi a légúti szívást. Alternatívája az elektromos készülékeknek.</Hungarian>
         </Key>
         <Key ID="STR_KAT_Airway_Suction_Display">
             <English>Manual Suction Pump</English>
@@ -1556,6 +1574,7 @@
             <Chinesesimp>手动抽吸泵</Chinesesimp>
             <Finnish>Manuaalinen imupumppu</Finnish>
             <Dutch>Handmatige suctiepomp</Dutch>
+            <Hungarian>Kézi váladékszívó</Hungarian>
         </Key>
         <Key ID="STR_KAT_Airway_Suction_Log">
             <English>%1 did a medical suction using a %2</English>
@@ -1570,6 +1589,7 @@
             <Chinese>%1 使用 %2 進行了醫療抽吸</Chinese>
             <Chinesesimp>%1 使用 %2 进行了医用抽吸</Chinesesimp>
             <Dutch>%1 voerde een medische suctie uit met een %2</Dutch>
+            <Hungarian>%1 %2-vel végzett légúti leszívást.</Hungarian>
         </Key>
         <Key ID="STR_KAT_Airway_Suction_Reuse">
             <English>Reusable Manual Suction Pump</English>
@@ -1585,6 +1605,7 @@
             <Chinesesimp>可重复使用的手动抽吸泵</Chinesesimp>
             <Finnish>Uudelleenkäytettävä manuaalinen imupumppu</Finnish>
             <Dutch>Herbruikbare handmatige suctiepomp</Dutch>
+            <Hungarian>Újrahasználható kézi váladékszívó</Hungarian>
         </Key>
         <Key ID="STR_KAT_Airway_Suction_Reuse_DESC">
             <English>Regain the Manual Suction Pump after use</English>
@@ -1600,6 +1621,7 @@
             <Chinesesimp>使用后重新启动手动抽吸泵</Chinesesimp>
             <Finnish>Ota manuaalinen imupumppu takaisin käytön jälkeen</Finnish>
             <Dutch>Krijg de handmatige suctiepomp terug na gebruik</Dutch>
+            <Hungarian>A kézi váladékszívó visszaszerzése használat után</Hungarian>
         </Key>
         <Key ID="STR_KAT_Airway_TIME_ACCUVAC">
             <English>Time for ACCUVAC</English>
@@ -1619,6 +1641,7 @@
             <Norwegian>Tid for ACCUVAC</Norwegian>
             <Finnish>ACCUVACin aika</Finnish>
             <Dutch>Behandelstijd van een ACCUVAC</Dutch>
+            <Hungarian>Idő az ACCUVAC használatához</Hungarian>
         </Key>
         <Key ID="STR_KAT_Airway_TIME_ACCUVAC_DESC">
             <English>How long it will take to use ACCUVAC</English>
@@ -1638,6 +1661,7 @@
             <Norwegian>Hvor lang tid vil det ta å bruke ACCUVAC</Norwegian>
             <Finnish>Kuinka kauan ACCUVACin käyttö kestää</Finnish>
             <Dutch>Hoe lang het gaat duren om de ACCUVAC te gebruiken</Dutch>
+            <Hungarian>Szükséges idő az ACCUVAC használatához</Hungarian>
         </Key>
         <Key ID="STR_KAT_Airway_TIME_CHECKAIRWAY">
             <English>Time to check Airway</English>
@@ -1657,6 +1681,7 @@
             <Norwegian>Tid for å sjekke luftveiene</Norwegian>
             <Finnish>Kuinka kauan hengitysteiden tarkistaminen kestää</Finnish>
             <Dutch>Tijd voor de controle van de luchtwegen</Dutch>
+            <Hungarian>Idő a légút ellenőrzéséhez</Hungarian>
         </Key>
         <Key ID="STR_KAT_Airway_TIME_CHECKAIRWAY_DESC">
             <English>How long it will take to check Airway</English>
@@ -1676,6 +1701,7 @@
             <Norwegian>Hvor lang tid det vil ta å sjekke luftveiene</Norwegian>
             <Finnish>Kuinka kauan hengitysteiden tarkistaminen kestää</Finnish>
             <Dutch>Hoe lang het gaat duren om de luchtwegen te checken</Dutch>
+            <Hungarian>Mennyi időbe telik a légút ellenőrzése</Hungarian>
         </Key>
         <Key ID="STR_KAT_Airway_TIME_GUEDELTUBUS">
             <English>Time for Geudeltubus</English>
@@ -1695,6 +1721,7 @@
             <Norwegian>Tid for Guedeltubus</Norwegian>
             <Finnish>Guedel-putken aika</Finnish>
             <Dutch>Intubatietijd voor Guedel-tube</Dutch>
+            <Hungarian>Idő a Guedeltubus behelyezésére</Hungarian>
         </Key>
         <Key ID="STR_KAT_Airway_TIME_GUEDELTUBUS_DESC">
             <English>How long it will take to use Guedeltubus</English>
@@ -1714,6 +1741,7 @@
             <Norwegian>Hvor lang tid vil det ta å bruke Guedeltubus</Norwegian>
             <Finnish>Kuinka kauan Guedel-putken asettaminen vie</Finnish>
             <Dutch>Hoe lang het gaat duren om een Guedel-tube in te brengen</Dutch>
+            <Hungarian>Szükséges idő a Guedel-tubus behelyezésére</Hungarian>
         </Key>
         <Key ID="STR_KAT_Airway_TIME_LARYNXTUBUS">
             <English>Time for Larynxtubus</English>
@@ -1733,6 +1761,7 @@
             <Norwegian>Tid for Larynxtubus</Norwegian>
             <Finnish>Kurkunpään putkiaika</Finnish>
             <Dutch>Tijd voor het gebruik van een King LT</Dutch>
+            <Hungarian>Idő a King LT behelyezésére</Hungarian>
         </Key>
         <Key ID="STR_KAT_Airway_TIME_LARYNXTUBUS_DESC">
             <English>How long it will take to use Larynxtubus</English>
@@ -1752,6 +1781,7 @@
             <Norwegian>Hvor lang tid vil det ta å bruke Larynxtubus</Norwegian>
             <Finnish>Kuinka kauan kurkunpään putken asettaminen vie</Finnish>
             <Dutch>Hoe lang het gaat duren voor het gebruik van een King LT</Dutch>
+            <Hungarian>Szükséges idő a King LT behelyezésére</Hungarian>
         </Key>
         <Key ID="STR_KAT_Airway_TIME_SUCTION">
             <English>Time for Manual Suction Pump</English>
@@ -1767,6 +1797,7 @@
             <Chinesesimp>手吸泵所需时间</Chinesesimp>
             <Finnish>aika manuaaliselle imupumpulle</Finnish>
             <Dutch>Behandelstijd van een handmatige suctiepomp</Dutch>
+            <Hungarian>Idő a kézi váladékszívó használatához</Hungarian>
         </Key>
         <Key ID="STR_KAT_Airway_TIME_SUCTION_DESC">
             <English>How long it will take to use Manual Suction Pump</English>
@@ -1782,6 +1813,7 @@
             <Chinesesimp>使用手吸泵需要多长时间</Chinesesimp>
             <Finnish>Kuinka kauan manuaalisen imupumpun käyttö kestää</Finnish>
             <Dutch>Hoe lang het gaat duren om een handmatige suctiepomp te gebruiken</Dutch>
+            <Hungarian>Szükséges idő a kézi váladékszívó használatához</Hungarian>
         </Key>
         <Key ID="STR_KAT_Airway_Vomit_Display">
             <English>Vomit (Small)</English>
@@ -1801,6 +1833,7 @@
             <Norwegian>Oppkast (Litt)</Norwegian>
             <Finnish>oksentaa (pieni)</Finnish>
             <Dutch>Braaksel (klein)</Dutch>
+            <Hungarian>Hányás (kicsi)</Hungarian>
         </Key>
         <Key ID="STR_KAT_Airway_action_checking">
             <English>Checking Airway</English>
@@ -1820,6 +1853,7 @@
             <Norwegian>Sjekker luftveien</Norwegian>
             <Finnish>Hengitysteiden tarkastus</Finnish>
             <Dutch>Luchtweg controleren</Dutch>
+            <Hungarian>Légút ellenőrzése</Hungarian>
         </Key>
         <Key ID="STR_KAT_Airway_action_placing">
             <English>Placing</English>
@@ -1839,6 +1873,7 @@
             <Norwegian>Plasserer</Norwegian>
             <Finnish>Sijoittaminen</Finnish>
             <Dutch>Plaatsen</Dutch>
+            <Hungarian>Helyezés</Hungarian>
         </Key>
         <Key ID="STR_KAT_Airway_action_removing">
             <English>Removing</English>
@@ -1856,6 +1891,7 @@
             <Norwegian>Fjerner</Norwegian>
             <Finnish>Poistaminen</Finnish>
             <Dutch>Verwijderen</Dutch>
+            <Hungarian>Eltávolítás</Hungarian>
         </Key>
         <Key ID="STR_KAT_Airway_airway_log">
             <English>%1 inserted a %2</English>
@@ -1875,6 +1911,7 @@
             <Norwegian>%1 satte inn en %2.</Norwegian>
             <Finnish>%1 lisäsi a %2</Finnish>
             <Dutch>%1 heeft een %2 ingebracht</Dutch>
+            <Hungarian>%1 behelyezett egy %2-t</Hungarian>
         </Key>
         <Key ID="STR_KAT_Airway_cba_name">
             <English>KAT - ADV Medical: Airway</English>
@@ -1883,6 +1920,7 @@
             <German>KAT - ADV Medical: Atemwege</German>
             <Japanese>KAM - 気道 (Airway)</Japanese>
             <Dutch>KAT - ADV Medical: Luchtwegen</Dutch>
+            <Hungarian>KAT - ADV Orvosi modul: Légút</Hungarian>
         </Key>
         <Key ID="STR_KAT_Airway_checkAirway">
             <English>Check Airway</English>
@@ -1902,6 +1940,7 @@
             <Norwegian>Sjekk lufveier</Norwegian>
             <Finnish>Tarkista hengitystiet</Finnish>
             <Dutch>Check luchtwegen</Dutch>
+            <Hungarian>Légút ellenőrzése</Hungarian>
         </Key>
         <Key ID="STR_KAT_Airway_checkAirway_log">
             <English>%1 checked airways: %2, %3</English>
@@ -1921,6 +1960,7 @@
             <Norwegian>%1 sjekket luftveiene: %2, %3</Norwegian>
             <Finnish>%1 tarkistettu hengitystiet, %2, %3</Finnish>
             <Dutch>%1 heeft de luchtwegen gecheckt: %2, %3</Dutch>
+            <Hungarian>%1 ellenőrizte a légutat: %2, %3</Hungarian>
         </Key>
         <Key ID="STR_KAT_Airway_checkAirway_poisonLog">
             <English>%1 checked airways: Heavily Blistered</English>
@@ -1931,6 +1971,7 @@
             <Japanese>%1 が気道を確認: ひどい水膨れ</Japanese>
             <Chinesesimp>%1 条检查气道: 严重起泡</Chinesesimp>
             <Dutch>%1 heeft de luchtwegen gecheckt: Ernstige blaarvorming</Dutch>
+            <Hungarian>%1 ellenőrizte a légutat: erősen hólyagos</Hungarian>
         </Key>
         <Key ID="STR_KAT_Airway_headTurning_begin">
             <English>Begin Head Turning</English>
@@ -1948,6 +1989,7 @@
             <Norwegian>Begynn vending av hode</Norwegian>
             <Finnish>Aloita potilaan pään kääntäminen</Finnish>
             <Dutch>Begin hoofddraaiing</Dutch>
+            <Hungarian>Fejfordítás megkezdése</Hungarian>
         </Key>
         <Key ID="STR_KAT_Airway_headTurning_cancelled">
             <English>Head turning cancelled</English>
@@ -1965,6 +2007,7 @@
             <Norwegian>vewnding av hode ble avbrutt</Norwegian>
             <Finnish>pään kääntäminen peruttu</Finnish>
             <Dutch>Hoofddraaiing gestopt</Dutch>
+            <Hungarian>Fejforgatás befejezve</Hungarian>
         </Key>
         <Key ID="STR_KAT_Airway_headTurning_info">
             <English>Head turn performed, airways are still not clear</English>
@@ -1984,6 +2027,7 @@
             <Norwegian>vending av hode er utført, luftveiene er fortsatt ikke frie</Norwegian>
             <Finnish>Pään käännös suoritettu, hengitystiet vielä epäselvät</Finnish>
             <Dutch>Hoofddraaiing uitgevoerd, luchtwegen zij nog niet vrij</Dutch>
+            <Hungarian>Fejfordítás végrehajtva, a légutak továbbra sem tiszták.</Hungarian>
         </Key>
         <Key ID="STR_KAT_Airway_headTurning_start">
             <English>Head Turning Started</English>
@@ -2000,6 +2044,7 @@
             <Norwegian>Startet vending av hode</Norwegian>
             <Finnish>pään kääntyminen alkoi</Finnish>
             <Dutch>Hoofddraaiing gestart</Dutch>
+            <Hungarian>Fejfordítás megkezdve</Hungarian>
         </Key>
         <Key ID="STR_KAT_Airway_headTurning_stop">
             <English>Stop head turning</English>
@@ -2017,6 +2062,7 @@
             <Norwegian>Stop vending av hode</Norwegian>
             <Finnish>Lopeta potilaan pään kääntäminen</Finnish>
             <Dutch>Stop de hoofddraaiing</Dutch>
+            <Hungarian>Fejfordítás leállítása</Hungarian>
         </Key>
         <Key ID="STR_KAT_Airway_headTurning_success">
             <English>Occlusion removed</English>
@@ -2036,6 +2082,7 @@
             <Norwegian>Okklusjonen er fjernet</Norwegian>
             <Finnish>Likaantuminen poistettu</Finnish>
             <Dutch>Verstopping verwijderd</Dutch>
+            <Hungarian>Elzáródás megszüntetve</Hungarian>
         </Key>
     </Package>
 </Project>
