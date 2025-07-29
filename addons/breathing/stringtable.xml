@@ -17,6 +17,7 @@
             <Chinesesimp>高级气胸几率</Chinesesimp>
             <Finnish>Mahdollisuus pitkälle edenneelle ilmarintalle</Finnish>
             <Dutch>Kans op een geadvanceerde pneumothorax</Dutch>
+            <Hungarian>Progresszív pneumothorax esélye</Hungarian>
         </Key>
         <Key ID="STR_KAT_Breathing_ADVANCED_PTX_OPTION">
             <English>Enable Advanced Pneumothoraxes</English>
@@ -34,6 +35,7 @@
             <Chinesesimp>启用高级气胸</Chinesesimp>
             <Finnish>Ota käyttöön edistyneet ilmarintakehät</Finnish>
             <Dutch>Sta geadvanceerde pneumothoraxen toe</Dutch>
+            <Hungarian>Progresszív pneumothoraxok engedélyezése</Hungarian>
         </Key>
         <Key ID="STR_KAT_Breathing_ALLOW_CHESTSEAL">
             <English>Allow Chest Seal</English>
@@ -52,6 +54,7 @@
             <Turkish>Chest Seal'a izin ver</Turkish>
             <Finnish>Salli rintatiiviste</Finnish>
             <Dutch>Sta chest seal toe</Dutch>
+            <Hungarian>Mellkasi szelep engedélyezése</Hungarian>
         </Key>
         <Key ID="STR_KAT_Breathing_ALLOW_PULSEOXIMETER">
             <English>Allow Pulseoximeter</English>
@@ -70,6 +73,7 @@
             <Turkish>Nabız Oksimetresine izin ver</Turkish>
             <Finnish>Salli pulssioksimetri</Finnish>
             <Dutch>Sta pulsoximeter toe</Dutch>
+            <Hungarian>Pulzoximéter engedélyezése</Hungarian>
         </Key>
         <Key ID="STR_KAT_Breathing_Activity_BVM">
             <English>%1 used %2 (x%3)</English>
@@ -86,6 +90,7 @@
             <Chinesesimp>%1已使用%2（x%3）</Chinesesimp>
             <Finnish>%1 käytetty %2 (x%3)</Finnish>
             <Dutch>%1 gebruikte %2 (x%3)</Dutch>
+            <Hungarian>%1 használta a %2-t (x%3)</Hungarian>
         </Key>
         <Key ID="STR_KAT_Breathing_Activity_BVM_Oxygenated">
             <English>%1 (Oxygenated)</English>
@@ -102,6 +107,7 @@
             <Chinesesimp>%1（含氧）</Chinesesimp>
             <Finnish>%1 (Kyllästetty hapella)</Finnish>
             <Dutch>%1 (zuurstofrijk)</Dutch>
+            <Hungarian>%1 (oxigenizált)</Hungarian>
         </Key>
         <Key ID="STR_KAT_Breathing_AttachOxygenVehicle">
             <English>Connect to Aircraft Oxygen</English>
@@ -113,6 +119,7 @@
             <Chinese>連接到飛機氧氣</Chinese>
             <Chinesesimp>连接到飞机氧气</Chinesesimp>
             <Dutch>Met het zuurstofsysteem van het vliegtuig verbinden</Dutch>
+            <Hungarian>Csatlakozás a repülőgép oxigénrendszeréhez</Hungarian>
         </Key>
         <Key ID="STR_KAT_Breathing_AttachPersonalOxygenTank">
             <English>Connect Personal Oxygen</English>
@@ -124,6 +131,7 @@
             <Chinese>連接個人氧氣</Chinese>
             <Chinesesimp>连接个人氧气</Chinesesimp>
             <Dutch>Met persoonlijke zuurstoftank verbinden</Dutch>
+            <Hungarian>Személyes oxigén csatlakoztatása</Hungarian>
         </Key>
         <Key ID="STR_KAT_Breathing_BVM_Desc_Short">
             <English>Bag-Valve-Mask, used to assist with breathing of unconscious patients</English>
@@ -141,6 +149,7 @@
             <Chinesesimp>袋阀面罩，用于帮助昏迷患者呼吸</Chinesesimp>
             <Finnish>Pussi-venttiili-naamari, käytetään auttamaan tajuttomien potilaiden hengittämisessä</Finnish>
             <Dutch>Bag-Valve-Mask of een zakventielmasker wordt gebruikt voor het ondersteunen van de ademhaling van bewusteloze personen</Dutch>
+            <Hungarian>Ambu ballon (BVM), az eszméletlen ápolt légzésének segítésére használatos.</Hungarian>
         </Key>
         <Key ID="STR_KAT_Breathing_BVM_Display">
             <English>BVM</English>
@@ -158,6 +167,7 @@
             <Chinesesimp>BVM</Chinesesimp>
             <Finnish>BVM</Finnish>
             <Dutch>BVM</Dutch>
+            <Hungarian>Ambu ballon (BVM)</Hungarian>
         </Key>
         <Key ID="STR_KAT_Breathing_Cancel_NasalCannula">
             <English>Remove Nasal Cannula</English>
@@ -172,6 +182,7 @@
             <Chinese>移除鼻導管</Chinese>
             <Chinesesimp>移除鼻导管</Chinesesimp>
             <Dutch>Verwijder nasale canule</Dutch>
+            <Hungarian>Orrkanül eltávolítása</Hungarian>
         </Key>
         <Key ID="STR_KAT_Breathing_CheckBreathing_Log">
             <English>%1 checked breathing: %2</English>
@@ -188,6 +199,7 @@
             <Chinesesimp>%1检查呼吸：%2</Chinesesimp>
             <Finnish>%1 tarkistettu hengitys: %2</Finnish>
             <Dutch>%1 controleerde ademhaling: %2</Dutch>
+            <Hungarian>%1 ellenőrizte a légzést: %2</Hungarian>
         </Key>
         <Key ID="STR_KAT_Breathing_CheckPersonalOxygenTank">
             <English>Check Personal Oxygen Status</English>
@@ -199,6 +211,7 @@
             <Chinese>檢查個人氧氣狀況</Chinese>
             <Chinesesimp>检查个人氧气状况</Chinesesimp>
             <Dutch>Persoonlijke zuurstoftank controleren</Dutch>
+            <Hungarian>Személyes oxigén állapotának ellenőrzése</Hungarian>
         </Key>
         <Key ID="STR_KAT_Breathing_Check_Breathing">
             <English>Check Breathing</English>
@@ -215,6 +228,7 @@
             <Chinesesimp>检查呼吸</Chinesesimp>
             <Finnish>Tarkista potilaan hengitys</Finnish>
             <Dutch>Check ademhaling</Dutch>
+            <Hungarian>Légzés ellenőrzése</Hungarian>
         </Key>
         <Key ID="STR_KAT_Breathing_Check_Breathing_Progress">
             <English>Checking Breathing</English>
@@ -231,6 +245,7 @@
             <Chinesesimp>检查呼吸中</Chinesesimp>
             <Finnish>Potilaan hengityksen tarkistaminen</Finnish>
             <Dutch>Ademhaling controleren</Dutch>
+            <Hungarian>Légzés ellenőrzése folyamatban</Hungarian>
         </Key>
         <Key ID="STR_KAT_Breathing_ChestSealApplied">
             <English>Chest Seal Applied</English>
@@ -247,6 +262,7 @@
             <Chinesesimp>胸部密封已应用</Chinesesimp>
             <Finnish>Rintatiiviste on kiinnitetty</Finnish>
             <Dutch>Chest seal aangebracht</Dutch>
+            <Hungarian>Mellkasi szelep felhelyezve</Hungarian>
         </Key>
         <Key ID="STR_KAT_Breathing_CyanosisStatus_Mild">
             <English>Mild Cyanosis</English>
@@ -265,6 +281,7 @@
             <Turkish>Orta derece Siyanoz</Turkish>
             <Finnish>Keskivaikea syanoosi</Finnish>
             <Dutch>Milde cyanose</Dutch>
+            <Hungarian>Mérsékelt cianózis</Hungarian>
         </Key>
         <Key ID="STR_KAT_Breathing_CyanosisStatus_Severe">
             <English>Severe Cyanosis</English>
@@ -283,6 +300,7 @@
             <Turkish>Şiddetli Siyanoz</Turkish>
             <Finnish>Vaikea syanoosi</Finnish>
             <Dutch>Zware cyanose</Dutch>
+            <Hungarian>Súlyos cianózis</Hungarian>
         </Key>
         <Key ID="STR_KAT_Breathing_CyanosisStatus_Slight">
             <English>Slight Cyanosis</English>
@@ -301,6 +319,7 @@
             <Turkish>Hafif Siyanoz</Turkish>
             <Finnish>Lievä syanoosi</Finnish>
             <Dutch>Lichte cyanose</Dutch>
+            <Hungarian>Enyhe cianózis</Hungarian>
         </Key>
         <Key ID="STR_KAT_Breathing_DESCRIPTION_ADVANCED_PTX_CHANCE_OPTION">
             <English>The percentage chance that determines whether a fully deteriorated pneumothorax will deteriorate into an advanced pneumothorax, this is rolled continuously as set in pneumothorax deterioration interval.</English>
@@ -316,6 +335,7 @@
             <Chinesesimp>决定完全恶化的气胸是否恶化为晚期（高级）气胸的概率。这是按照气胸恶化的间隔设定的每个时机持续计算的。</Chinesesimp>
             <Finnish>Prosenttiosuus mahdollisuus, joka määrittää, kehittyykö täysin heikentynyt ilmarinta pitkälle edenneeksi ilmarintaksi. Tämä lasketaan jatkuvasti pneumotoraksin etenemisajan mukaan.</Finnish>
             <Dutch>De kans in procenten, dat bepaalt of een pneumothorax zich doorontwikkeld naar een geadvanceerde pneumothorax. Dit wordt doorlopend gerold op basis van de pneumothorax verslechterings interval</Dutch>
+            <Hungarian>Az a százalékos esély, amely meghatározza, hogy egy teljesen romlott pneumothorax előrehaladott pneumothoraxba romlik-e, ez folyamatosan kerül kisorsolásra, a pneumothorax romlásának intervallumában meghatározottak szerint.</Hungarian>
         </Key>
         <Key ID="STR_KAT_Breathing_DESCRIPTION_ADVANCED_PTX_OPTION">
             <English>Enables advanced pneumothoraxes - hemopneumothorax and tensionpneumothorax</English>
@@ -333,6 +353,7 @@
             <Chinesesimp>启用高级气胸 - 血气胸和张力性气胸</Chinesesimp>
             <Finnish>Mahdollistaa pitkälle edenneen pneumotoraksin - hemopneumotoraksin ja jännitysilmarinta</Finnish>
             <Dutch>Staat geadvanceerde pneumothoraxen - hemopneumothorax en spanningspneumothorax - toe</Dutch>
+            <Hungarian>Lehetővé teszi a progresszív pneumothoraxok - hemopneumothorax és feszültségi pneumothorax - kialakulását.</Hungarian>
         </Key>
         <Key ID="STR_KAT_Breathing_DESCRIPTION_HEMOPNEUMOTHORAX_CHANCE_OPTION">
             <English>Sets the chance for hemopneumothorax. Also sets the chance for tenstion pneumothorax (60% Hemo = 40% Tension)</English>
@@ -350,6 +371,7 @@
             <Chinesesimp>设定血气胸的几率。同时设定张力性气胸的几率（60％血气胸= 40％张力性气胸）。</Chinesesimp>
             <Finnish>Asettaa hemopneumotoraksin mahdollisuuden. Asettaa myös jännittyneen pneumotoraksin mahdollisuuden. (60% hemo = 40% jännitystä)</Finnish>
             <Dutch>Legt de kans op een hemopneumothorax vast. Legt ook de kans voor spanningspneumothorax vast. (60% Hemo = 40% spanning)</Dutch>
+            <Hungarian>Beállítja a hemopneumothorax kialakulásának esélyét. Beállítja a tenziós pneumothorax kialakulásának esélyét is (60% Hemo = 40% Tension).</Hungarian>
         </Key>
         <Key ID="STR_KAT_Breathing_DESCRIPTION_STABLE_SPO2">
             <English>After reaching more than selected value (default 85), only then patient can get conscious</English>
@@ -368,6 +390,7 @@
             <Turkish>Seçilen değerden (varsayılan 85) daha fazlasına ulaştıktan sonra, ancak o zaman hasta bilincini geri kazanabilir</Turkish>
             <Finnish>Vasta sitten, kun valittu arvo (oletusarvo 85) on saavutettu, potilas voi herätä</Finnish>
             <Dutch>Alleen na het bereiken van meer dan deze waarde (standaard 85) kan een patiënt zijn bewustzijn terug krijgen</Dutch>
+            <Hungarian>A kiválasztott érték (alapértelmezés szerint 85) túllépése után az ápolt csak akkor térhet magához.</Hungarian>
         </Key>
         <Key ID="STR_KAT_Breathing_DeepPenetratingInjury">
             <English>Deep Penetrating Injury</English>
@@ -384,6 +407,7 @@
             <Chinesesimp>深穿透伤</Chinesesimp>
             <Finnish>Syvä tunkeutuva vamma</Finnish>
             <Dutch>Diep penetrerende wond</Dutch>
+            <Hungarian>Mély mellkasi perforáló sérülés</Hungarian>
         </Key>
         <Key ID="STR_KAT_Breathing_HEMOPNEUMOTHORAX_CHANCE_OPTION">
             <English>Hemopneumothorax Chance</English>
@@ -401,6 +425,7 @@
             <Chinesesimp>血气胸几率</Chinesesimp>
             <Finnish>Hemopneumotoraksin mahdollisuus</Finnish>
             <Dutch>Hemopneumothorax kans</Dutch>
+            <Hungarian>Hemopneumothorax esélye</Hungarian>
         </Key>
         <Key ID="STR_KAT_Breathing_HEMOPNEUMOTHORAX_TREATMENT_LEVEL">
             <English>Hemothorax / Tension Pnuemothorax Treament Minimum Level</English>
@@ -419,6 +444,7 @@
             <Turkish>Hemotoraks / Gerilim Pnömotoraks Tedavisi Minimum Seviye</Turkish>
             <Finnish>Hemopneumotoraksi / jännitysilmarinta hoidon vähimmäistaso</Finnish>
             <Dutch>Hemopneumothorax / spanningspneumothorax minimum behandelingsniveau</Dutch>
+            <Hungarian>Hemothorax / tenziós pneumothorax kezeléséhez szükséges minimális szint</Hungarian>
         </Key>
         <Key ID="STR_KAT_Breathing_HEMOPNEUMOTHORAX_TREATMENT_LEVEL_DESCRIPTION">
             <English>The minimum medical level required for someone to be able to perform the Needle Decompression and Drain Fluids treatment actions, used to treat Hemothorax or Tension Pneumothorax.</English>
@@ -437,6 +463,7 @@
             <Turkish>Hemotoraks veya Tansiyon Pnömotoraksı tedavi etmek için kullanılan İğne Dekompresyonu ve Boşaltma Sıvıları tedavi eylemlerini gerçekleştirebilmek için gerekli minimum tıbbi seviye.</Turkish>
             <Finnish>Vähimmäiskoulutustaso, joka vaaditaan, jotta joku pystyy suorittamaan neulan dekompression ja nesteenpoiston, jota käytetään hemothoraksin tai jännitysilmarintain hoitoon</Finnish>
             <Dutch>Het minimaal benodigde trainingsniveau voor het uitvoeren van de naalddecompressie- en vloeistof afvoerende handelingen, benodigd om een hemo- en spanningspneumothorax te behandelen</Dutch>
+            <Hungarian>A hemothorax vagy tenziós pneumothorax kezelésére alkalmazott tűdekompressziós és folyadékleeresztési beavatkozások elvégzéséhez szükséges minimális orvosi szint.</Hungarian>
         </Key>
         <Key ID="STR_KAT_Breathing_Hemopneumothorax">
             <English>Hemopneumothorax</English>
@@ -453,6 +480,7 @@
             <Chinesesimp>血气胸</Chinesesimp>
             <Finnish>hemopneumotoraksi</Finnish>
             <Dutch>Hemopneumothorax</Dutch>
+            <Hungarian>Hemopneumothorax</Hungarian>
         </Key>
         <Key ID="STR_KAT_Breathing_Hemopneumothorax_short">
             <English>HPTX</English>
@@ -469,6 +497,7 @@
             <Chinesesimp>HPTX</Chinesesimp>
             <Finnish>HPT</Finnish>
             <Dutch>HPTX</Dutch>
+            <Hungarian>HPTX</Hungarian>
         </Key>
         <Key ID="STR_KAT_Breathing_NasalCannula_Desc_Short">
             <English>The Nasal Cannula can be inserted into a patient's nostrils and connected to a vitals monitor to record a patient's ETCo2 level and respiratory rate.</English>
@@ -483,6 +512,7 @@
             <Chinese>鼻導管可插入病人鼻孔，並連接到生命體徵監測器，以記錄病人的呼氣末期二氧化碳 (ETCo2) 水平和呼吸率。</Chinese>
             <Chinesesimp>鼻导管可以插入患者的鼻孔并连接到生命体征监测仪，以记录患者的ETCo2水平和呼吸频率。</Chinesesimp>
             <Dutch>De nasale canule kan in de neusgaten van de patiënt aangebracht worden en verbonden aan een vitale waarden monitor om de ETCo2 waarden en het ademhalingstempo van de patiënt te monitoren</Dutch>
+            <Hungarian>Az orrkanül behelyezhető az ápolt orrlyukaiba, és csatlakoztatható egy élettani monitorhoz, amely rögzíti az ápolt ETCo2-szintjét és légzésszámát.</Hungarian>
         </Key>
         <Key ID="STR_KAT_Breathing_NasalCannula_Display">
             <English>Nasal Cannula</English>
@@ -497,6 +527,7 @@
             <Chinese>鼻導管</Chinese>
             <Chinesesimp>鼻插管</Chinesesimp>
             <Dutch>Nasale canule</Dutch>
+            <Hungarian>Orrkanül</Hungarian>
         </Key>
         <Key ID="STR_KAT_Breathing_PNEUMOTHORAX_DAMAGE_THRESHOLD">
             <English>Pneumothorax Damage Threshold</English>
@@ -515,6 +546,7 @@
             <Turkish>Pnömotoraks Hasar Eşiği</Turkish>
             <Finnish>Vaurioiden taso, joka vaaditaan ilmarintakehän kehittymiseen</Finnish>
             <Dutch>Pneumothorax schade drempelwaarde</Dutch>
+            <Hungarian>Pneumothorax károsodási küszöbérték</Hungarian>
         </Key>
         <Key ID="STR_KAT_Breathing_PNEUMOTHORAX_DAMAGE_THRESHOLD_DESCRIPTION">
             <English>The amount of damage in a single impact, on a scale of 0 to 1, that needs to occur before there is a chance of pneumothorax. Lower values means that pneumothorax is more likely to occurr. Setting the value very low, or to zero, may cause unexpected behavior or pneumothorax from unexpected injuries.</English>
@@ -533,6 +565,7 @@
             <Turkish>Pnömotoraks olasılığı olmadan önce meydana gelmesi gereken, 0 ila 1 ölçeğinde tek bir darbede hasar miktarı. Daha düşük değerler, pnömotoraksın oluşma olasılığının daha yüksek olduğu anlamına gelir. Değerin çok düşük veya sıfır olarak ayarlanması, beklenmedik yaralanmalardan kaynaklanan beklenmedik davranışlara veya pnömotoraksa neden olabilir.</Turkish>
             <Finnish>Yhden osuman vaurion määrä asteikolla 0-1, jonka täytyy tapahtua ennen kuin ilmarinta on mahdollista. Pienemmät arvot tarkoittavat, että ilmarinta on todennäköisempää. Arvon asettaminen erittäin alhaiseksi tai arvoon 0 voi aiheuttaa odottamatonta käyttäytymistä tai ilmarintaa epätavallisten vammojen vuoksi.</Finnish>
             <Dutch>De hoeveelheid schade van een enkele impact, op een schaal van 0 tot 1, dat benodigd is voordat een pneumothorax gerold wordt. Lagere waarden kan leiden tot meer pneumothoraxen. Als deze instelling laag of zelfs op 0 staat, kan dit leiden tot raar gedrag of pneumothoraxen van onverwachte wonden</Dutch>
+            <Hungarian>Egyetlen ütés okozta sérülés mértéke 0 és 1 közötti skálán, amelynek bekövetkezése esetén pneumothorax alakulhat ki. Az alacsonyabb értékek azt jelentik, hogy a pneumothorax kialakulásának valószínűsége nagyobb. Az érték nagyon alacsonyra vagy nullára állítása váratlan viselkedést vagy váratlan sérülésekből származó pneumothoraxot okozhat.</Hungarian>
         </Key>
         <Key ID="STR_KAT_Breathing_PersonalOxygen_Affirm">
             <English>Oxygen already connected</English>
@@ -544,6 +577,7 @@
             <Chinese>氧氣已連接</Chinese>
             <Chinesesimp>氧气已连接</Chinesesimp>
             <Dutch>Zuurstof is al verbonden</Dutch>
+            <Hungarian>Az oxigén már csatlakoztatva van.</Hungarian>
         </Key>
         <Key ID="STR_KAT_Breathing_PersonalOxygen_Desc_Short">
             <English>Personal oxygen tank for high altitude operations</English>
@@ -555,6 +589,7 @@
             <Chinese>用於高空作業的個人氧氣罐</Chinese>
             <Chinesesimp>高空作业用便携式氧气罐</Chinesesimp>
             <Dutch>Persoonlijke zuurstoftank voor operaties op grote hoogten</Dutch>
+            <Hungarian>Személyes oxigéntartály magaslati műveletekhez</Hungarian>
         </Key>
         <Key ID="STR_KAT_Breathing_PersonalOxygen_Disconnect">
             <English>Oxygen tank disconnected</English>
@@ -566,6 +601,7 @@
             <Chinese>氧氣罐斷開</Chinese>
             <Chinesesimp>氧气罐断开</Chinesesimp>
             <Dutch>Zuurstoftank is afgesloten</Dutch>
+            <Hungarian>Oxigéntartály leválasztva</Hungarian>
         </Key>
         <Key ID="STR_KAT_Breathing_PersonalOxygen_Display">
             <English>Personal Oxygen Tank</English>
@@ -577,6 +613,7 @@
             <Chinese>個人氧氣罐</Chinese>
             <Chinesesimp>便携式氧气罐</Chinesesimp>
             <Dutch>Persoonlijke zuurstoftank</Dutch>
+            <Hungarian>Személyes oxigéntartály</Hungarian>
         </Key>
         <Key ID="STR_KAT_Breathing_PersonalOxygen_Empty">
             <English>Oxygen Tank Empty</English>
@@ -588,6 +625,7 @@
             <Chinese>氧氣罐空</Chinese>
             <Chinesesimp>氧气罐空</Chinesesimp>
             <Dutch>Zuurstoftank is leeg</Dutch>
+            <Hungarian>Oxigéntartály üres</Hungarian>
         </Key>
         <Key ID="STR_KAT_Breathing_PersonalOxygen_Remaining">
             <English>Minutes Remaining</English>
@@ -599,6 +637,7 @@
             <Chinese>剩餘分鐘數</Chinese>
             <Chinesesimp>剩余分钟数</Chinesesimp>
             <Dutch>Overgebleven minuten</Dutch>
+            <Hungarian>Hátralévő percek</Hungarian>
         </Key>
         <Key ID="STR_KAT_Breathing_Pneumothorax">
             <English>Pneumothorax</English>
@@ -613,6 +652,7 @@
             <Japanese>気胸(PTX)</Japanese>
             <Finnish>Pneumotoraksi</Finnish>
             <Dutch>Pneumothorax</Dutch>
+            <Hungarian>Pneumothorax</Hungarian>
         </Key>
         <Key ID="STR_KAT_Breathing_Pneumothorax_short">
             <English>PTX</English>
@@ -629,6 +669,7 @@
             <Chinesesimp>PTX</Chinesesimp>
             <Finnish>PTK</Finnish>
             <Dutch>PTX</Dutch>
+            <Hungarian>PTX</Hungarian>
         </Key>
         <Key ID="STR_KAT_Breathing_PocketBVM_Desc_Short">
             <English>Compact version of the Bag-Valve-Mask</English>
@@ -646,6 +687,7 @@
             <Chinesesimp>紧凑型袋式阀面罩</Chinesesimp>
             <Finnish>Pussi-venttiili-naamari kompakti versio</Finnish>
             <Dutch>Compacte versie van de BVM</Dutch>
+            <Hungarian>A Lélegeztető ballon kompakt változata</Hungarian>
         </Key>
         <Key ID="STR_KAT_Breathing_PocketBVM_Display">
             <English>Pocket BVM</English>
@@ -663,6 +705,7 @@
             <Chinesesimp>便携式BVM</Chinesesimp>
             <Finnish>Kannettava BVM</Finnish>
             <Dutch>Zak BVM</Dutch>
+            <Hungarian>Zsebbambu</Hungarian>
         </Key>
         <Key ID="STR_KAT_Breathing_PortableOxygenTankDisconnected_Empty">
             <English>Oxygen tank disconnected (empty)</English>
@@ -680,6 +723,7 @@
             <Chinesesimp>氧气罐断开（空）</Chinesesimp>
             <Finnish>Happisäiliö irrotettu (se on tyhjä)</Finnish>
             <Dutch>Zuurstoftank losgekoppeld (leeg)</Dutch>
+            <Hungarian>Az oxigéntartály nincs csatlakoztatva (üres)</Hungarian>
         </Key>
         <Key ID="STR_KAT_Breathing_PortableOxygenTank_150_Desc_Short">
             <English>Portable Oxygen Tank, containing 150L of oxygen. Connect to BVM to further assist with breathing of critical patients.</English>
@@ -697,6 +741,7 @@
             <Chinesesimp>便携式氧气罐，含150L氧气。连接BVM以进一步协助危重患者的呼吸。</Chinesesimp>
             <Finnish>Kannettava happisäiliö, joka sisältää 150 litraa happea. Yhdistä BVM:ään auttaaksesi kriittisten potilaiden hengittämisessä.</Finnish>
             <Dutch>Draagbare zuurstoftank, bevat 150L van zuurstof. Helpt met het beademen van kritieke patiënten wanneer verbonden aan een BVM</Dutch>
+            <Hungarian>Hordozható oxigéntartály, 150 liter oxigént tartalmaz. Csatlakoztassa a BVM-hez, hogy tovább segítse a kritikus állapotú betegek légzését.</Hungarian>
         </Key>
         <Key ID="STR_KAT_Breathing_PortableOxygenTank_150_Display">
             <English>Portable Oxygen Tank (150L)</English>
@@ -714,6 +759,7 @@
             <Chinesesimp>便携式氧气罐（150L）</Chinesesimp>
             <Finnish>Kannettava happisäiliö (150L)</Finnish>
             <Dutch>Draagbare zuurstoftank (150L)</Dutch>
+            <Hungarian>Hordozható oxigéntartály (150 l)</Hungarian>
         </Key>
         <Key ID="STR_KAT_Breathing_PortableOxygenTank_150_Empty_Display">
             <English>Empty Portable Oxygen Tank (150L)</English>
@@ -731,6 +777,7 @@
             <Chinesesimp>空便携式氧气罐（150L）</Chinesesimp>
             <Finnish>Tyhjä kannettava happisäiliö (150L)</Finnish>
             <Dutch>Lege draagbare zuurstoftank (150L)</Dutch>
+            <Hungarian>Üres hordozható oxigéntartály (150 l)</Hungarian>
         </Key>
         <Key ID="STR_KAT_Breathing_PortableOxygenTank_300_Desc_Short">
             <English>Portable Oxygen Tank, containing 300L of oxygen. Connect to BVM to further assist with breathing of critical patients.</English>
@@ -748,6 +795,7 @@
             <Chinesesimp>便携式氧气罐，含300L氧气。连接BVM以进一步协助危重患者的呼吸。</Chinesesimp>
             <Finnish>Kannettava happisäiliö, joka sisältää 300 litraa happea. Yhdistä BVM:ään auttaaksesi kriittisten potilaiden hengittämisessä.</Finnish>
             <Dutch>Draagbare zuurstoftank, bevat 300L van zuurstof. Helpt met het beademen van kritieke patiënten wanneer verbonden aan een BVM</Dutch>
+            <Hungarian>Hordozható oxigéntartály, 300 liter oxigént tartalmaz. Csatlakoztassa a BVM-hez, hogy tovább segítse a kritikus állapotú betegek légzését.</Hungarian>
         </Key>
         <Key ID="STR_KAT_Breathing_PortableOxygenTank_300_Display">
             <English>Portable Oxygen Tank (300L)</English>
@@ -765,6 +813,7 @@
             <Chinesesimp>便携式氧气罐（300L）</Chinesesimp>
             <Finnish>Kannettava happisäiliö (300L)</Finnish>
             <Dutch>Draagbare zuurstoftank (300L)</Dutch>
+            <Hungarian>Hordozható oxigéntartály (300 l)</Hungarian>
         </Key>
         <Key ID="STR_KAT_Breathing_PortableOxygenTank_300_Empty_Display">
             <English>Empty Portable Oxygen Tank (300L)</English>
@@ -782,6 +831,7 @@
             <Chinesesimp>空便携式氧气罐（300L）</Chinesesimp>
             <Finnish>Tyhjä kannettava happisäiliö (300L)</Finnish>
             <Dutch>Lege draagbare zuurstoftank (300L)</Dutch>
+            <Hungarian>Hordozható oxigéntartály (300 l)</Hungarian>
         </Key>
         <Key ID="STR_KAT_Breathing_PortableOxygenTank_Empty_Desc_Short">
             <English>Empty Portable Oxygen Tank, refill at a medical vehicle or facility</English>
@@ -799,6 +849,7 @@
             <Chinesesimp>清空便携式氧气罐，在医疗车辆或设施处重新充装</Chinesesimp>
             <Finnish>Tyhjennä kannettava happisäiliö, täytä lääketieteellisessä ajoneuvossa tai laitoksessa.</Finnish>
             <Dutch>Lege draagbare zuurstoftank, hervul bij een medisch voertuig of -gebouw</Dutch>
+            <Hungarian>Üres hordozható oxigéntartály, újratölthető orvosi járműben vagy létesítményben</Hungarian>
         </Key>
         <Key ID="STR_KAT_Breathing_PulseOximeter_Action_addSound">
             <English>Enable Pulse Oximeter Alarm</English>
@@ -816,6 +867,7 @@
             <Chinesesimp>启用脉搏血氧仪报警</Chinesesimp>
             <Finnish>Ota pulssioksimetrin hälytys käyttöön</Finnish>
             <Dutch>Zet pulsoximeter alarm aan</Dutch>
+            <Hungarian>Pulzoximéter riasztás engedélyezése</Hungarian>
         </Key>
         <Key ID="STR_KAT_Breathing_PulseOximeter_Action_removeSound">
             <English>Disable Pulse Oximeter Alarm</English>
@@ -833,6 +885,7 @@
             <Chinesesimp>关闭脉搏血氧仪报警</Chinesesimp>
             <Finnish>Poista pulssioksimetrin hälytys käytöstä</Finnish>
             <Dutch>Zet pulsoximeter alarm uit</Dutch>
+            <Hungarian>Pulzoximéter riasztás kikapcsolása</Hungarian>
         </Key>
         <Key ID="STR_KAT_Breathing_Pulseoximeter">
             <English>Pulse Oximeter</English>
@@ -851,6 +904,7 @@
             <Turkish>Nabız Oksimetresi</Turkish>
             <Finnish>Pulssioksimetri</Finnish>
             <Dutch>Pulsoximeter</Dutch>
+            <Hungarian>Szati</Hungarian>
         </Key>
         <Key ID="STR_KAT_Breathing_Pulseoximeter_Desc_Short">
             <English>Used to read pulse rate and SpO2</English>
@@ -863,6 +917,7 @@
             <Chinese>用於讀取脈搏率和SpO2</Chinese>
             <Chinesesimp>用于读取脉搏率和SpO2</Chinesesimp>
             <Dutch>Wordt gebruikt om polsslag en SpO2 te meten</Dutch>
+            <Hungarian>A pulzusszám és a SpO2 mérésére szolgál.</Hungarian>
         </Key>
         <Key ID="STR_KAT_Breathing_Pulseoximeter_Display">
             <English>Attach Pulse Oximeter</English>
@@ -881,6 +936,7 @@
             <Turkish>Nabız Oksimetresini Takın&gt;</Turkish>
             <Finnish>Kiinnitä pulssioksimetri</Finnish>
             <Dutch>Plaats pulsoximeter</Dutch>
+            <Hungarian>Csatlakoztassa a pulzoximétert</Hungarian>
         </Key>
         <Key ID="STR_KAT_Breathing_Pulseoximeter_Display_Remove">
             <English>Remove Pulse Oximeter</English>
@@ -899,6 +955,7 @@
             <Turkish>Nabız Oksimetresini Çıkarın</Turkish>
             <Finnish>Irrota pulssioksimetri</Finnish>
             <Dutch>Verwijder pulsoximeter</Dutch>
+            <Hungarian>Pulzus-oximéter eltávolítása</Hungarian>
         </Key>
         <Key ID="STR_KAT_Breathing_RefillPortableOxygenTank_150">
             <English>Refill Portable Oxygen Tank (150L)</English>
@@ -916,6 +973,7 @@
             <Chinesesimp>补充便携式氧气罐（150L）</Chinesesimp>
             <Finnish>Täytä kannettava happisäiliö (150L)</Finnish>
             <Dutch>Hervul draagbare zuurstoftank (150L)</Dutch>
+            <Hungarian>Hordozható oxigéntartály utántöltése (150 l)</Hungarian>
         </Key>
         <Key ID="STR_KAT_Breathing_RefillPortableOxygenTank_300">
             <English>Refill Portable Oxygen Tank (300L)</English>
@@ -933,6 +991,7 @@
             <Chinesesimp>补充便携式氧气罐（300L）</Chinesesimp>
             <Finnish>Täytä kannettava happisäiliö (300L)</Finnish>
             <Dutch>Hervul draagbare zuurstoftank (300L)</Dutch>
+            <Hungarian>Hordozható oxigéntartály utántöltése (300 l)</Hungarian>
         </Key>
         <Key ID="STR_KAT_Breathing_RefillPortableOxygenTank_Cancel">
             <English>Oxygen Tank Refill Cancelled</English>
@@ -950,6 +1009,7 @@
             <Chinesesimp>氧气罐加注已取消</Chinesesimp>
             <Finnish>Happisäiliön täyttö peruttu</Finnish>
             <Dutch>Zuurstoftank bijvulling stopgezet</Dutch>
+            <Hungarian>Oxigéntartály feltöltése megszakítva</Hungarian>
         </Key>
         <Key ID="STR_KAT_Breathing_RefillPortableOxygenTank_Complete">
             <English>Oxygen Tank Refill Complete</English>
@@ -967,6 +1027,7 @@
             <Chinesesimp>氧气罐加注完成</Chinesesimp>
             <Finnish>Happisäiliö on täynnä</Finnish>
             <Dutch>Zuurstoftank bijgevuld</Dutch>
+            <Hungarian>Oxigéntartály feltöltése befejezve</Hungarian>
         </Key>
         <Key ID="STR_KAT_Breathing_RefillPortableOxygenTank_Progress">
             <English>Refilling Portable Oxygen Tank</English>
@@ -984,6 +1045,7 @@
             <Chinesesimp>重新填充便携式氧气罐</Chinesesimp>
             <Finnish>Kannettavan happisäiliön täyttö</Finnish>
             <Dutch>Bijvullen van draagbare zuurstoftank</Dutch>
+            <Hungarian>Hordozható oxigéntartály újratöltése</Hungarian>
         </Key>
         <Key ID="STR_KAT_Breathing_RefillPortableOxygenTanks">
             <English>Refill Portable Oxygen Tank</English>
@@ -1001,6 +1063,7 @@
             <Chinesesimp>重新填充便携式氧气罐</Chinesesimp>
             <Finnish>Täytä kannettava happisäiliö</Finnish>
             <Dutch>Hervul draagbare zuurstoftank</Dutch>
+            <Hungarian>Hordozható oxigéntartály utántöltése</Hungarian>
         </Key>
         <Key ID="STR_KAT_Breathing_RemovePersonalOxygenTank">
             <English>Disconnect Personal Oxygen</English>
@@ -1012,6 +1075,7 @@
             <Chinese>斷開個人氧氣</Chinese>
             <Chinesesimp>断开个人氧气</Chinesesimp>
             <Dutch>Persoonlijke zuurstoftank afsluiten</Dutch>
+            <Hungarian>Személyes oxigénellátás leválasztása</Hungarian>
         </Key>
         <Key ID="STR_KAT_Breathing_Remove_NasalCannula_Log">
             <English>%1 removed Nasal Cannula</English>
@@ -1026,6 +1090,7 @@
             <Chinese>%1 移除了鼻導管</Chinese>
             <Chinesesimp>%1个已移除的鼻导管</Chinesesimp>
             <Dutch>%1 verwijderde nasale canule</Dutch>
+            <Hungarian>%1 eltávolította az orrkanült</Hungarian>
         </Key>
         <Key ID="STR_KAT_Breathing_Remove_OxyMask">
             <English>Remove Oxygen Mask</English>
@@ -1037,6 +1102,7 @@
             <Chinese>取下氧氣面罩</Chinese>
             <Chinesesimp>取下氧气面罩</Chinesesimp>
             <Dutch>Verwijder zuurstofmasker</Dutch>
+            <Hungarian>Oxigénmaszk eltávolítása</Hungarian>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_AVAIL_OXYHELMET">
             <English>Available Oxygen Helmets</English>
@@ -1047,6 +1113,7 @@
             <Japanese>利用可能な酸素供給ヘルメット</Japanese>
             <Chinese>可用氧氣頭盔</Chinese>
             <Dutch>Beschikbare zuurstofhelmen</Dutch>
+            <Hungarian>Elérhető oxigénmaszkok(helmets)</Hungarian>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_AVAIL_OXYHELMET_DISC">
             <English>Sets which helmets can act as oxygen masks</English>
@@ -1057,6 +1124,7 @@
             <Japanese>酸素マスクとして動作させたいヘルメットを指定します</Japanese>
             <Chinese>設定哪些頭盔可以作為氧氣面罩</Chinese>
             <Dutch>Bepaald welke helmen als zuurstofmaskers gebruikt kunnen worden</Dutch>
+            <Hungarian>Beállítja mely (helmet-ek) használhatók oxigénmaszkokként</Hungarian>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_AVAIL_OXYMASK">
             <English>Available Oxygen Masks</English>
@@ -1068,6 +1136,7 @@
             <Chinese>可用氧氣面罩</Chinese>
             <Chinesesimp>可用氧气面罩</Chinesesimp>
             <Dutch>Beschikbare zuurstofmaskers</Dutch>
+            <Hungarian>Elérhető oxigénmaszkok</Hungarian>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_AVAIL_OXYMASK_DISC">
             <English>Sets which goggles can act as oxygen masks</English>
@@ -1079,6 +1148,7 @@
             <Chinese>設定哪些護目鏡可以作為氧氣面罩</Chinese>
             <Chinesesimp>设置哪些护目镜可以作为氧气面罩</Chinesesimp>
             <Dutch>Bepaald welke brillen als zuurstofmasker gebruikt kunnen worden</Dutch>
+            <Hungarian>Beállítja mely (googles) használhatók oxigénmaszkokként</Hungarian>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_Allow_NasalCannula">
             <English>Allow Nasal Cannula</English>
@@ -1093,6 +1163,7 @@
             <Chinese>允許使用鼻導管</Chinese>
             <Chinesesimp>允许使用鼻导管</Chinesesimp>
             <Dutch>Sta nasale canule toe</Dutch>
+            <Hungarian>Orrkanül használatának engedélyezése</Hungarian>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_Allow_NasalCannula_Desc">
             <English>Training level required to insert a Nasal Cannula</English>
@@ -1107,6 +1178,7 @@
             <Chinese>插入鼻導管所需的訓練等級</Chinese>
             <Chinesesimp>插入鼻导管所需的训练等级</Chinesesimp>
             <Dutch>Trainingsniveau benodigd voor het inbrengen van een nasale canule</Dutch>
+            <Hungarian>Az orrkanül behelyezéséhez szükséges képzési szint</Hungarian>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_BVMOxygen_Multiplier">
             <English>BVM Oxygen Effectiveness Multiplier</English>
@@ -1123,6 +1195,7 @@
             <Chinesesimp>BVM氧气效率倍增器</Chinesesimp>
             <Finnish>BVM happitehokkuuskerroin</Finnish>
             <Dutch>BVM zuurstof effectiviteits vermenigvuldiger</Dutch>
+            <Hungarian>BVM oxigénhatékonyság-szorzó</Hungarian>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_BVM_MedLvl">
             <English>Allow BVM</English>
@@ -1140,6 +1213,7 @@
             <Chinesesimp>允许BVM</Chinesesimp>
             <Finnish>Salli BVM</Finnish>
             <Dutch>Sta BVM toe</Dutch>
+            <Hungarian>BVM engedélyezése</Hungarian>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_BVM_MedLvl_DESC">
             <English>Sets required medical level to use BVM</English>
@@ -1157,6 +1231,7 @@
             <Chinesesimp>设置使用BVM所需的医疗级别</Chinesesimp>
             <Finnish>Asettaa BVM:n käyttöön vaadittavan lääketieteellisen koulutustason</Finnish>
             <Dutch>Bepaalt het medische trainingsniveau benodigd voor BVM gebruik</Dutch>
+            <Hungarian>A BVM használatához szükséges orvosi szint beállítása</Hungarian>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_BVM_Oxygen_MedLvl">
             <English>Allow BVM with oxygen</English>
@@ -1174,6 +1249,7 @@
             <Chinesesimp>允许BVM与氧气混合</Chinesesimp>
             <Finnish>Salli BVM hapen kanssa</Finnish>
             <Dutch>Sta BVM met zuurstof toe</Dutch>
+            <Hungarian>Oxigén ellátású BVM engedélyezése</Hungarian>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_BVM_Oxygen_MedLvl_DESC">
             <English>Sets required medical level to use BVM with oxygen</English>
@@ -1191,6 +1267,7 @@
             <Chinesesimp>设定使用BVM和氧气所需的医疗水平</Chinesesimp>
             <Finnish>Asettaa lääketieteellisen koulutustason, joka vaaditaan BVM:n käyttöön hapen kanssa</Finnish>
             <Dutch>Bepaald het medische trainingsniveau benodigt voor het gebruik van een BVM met zuurstof</Dutch>
+            <Hungarian>Meghatározza az oxigénnel ellátott BVM használatához szükséges orvosi szintet.</Hungarian>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_ENABLE">
             <English>Activate Breathing Module</English>
@@ -1205,6 +1282,7 @@
             <Chinese>啟動呼吸模組</Chinese>
             <Chinesesimp>启用呼吸模块</Chinesesimp>
             <Dutch>Activeer ademhalingsmodule</Dutch>
+            <Hungarian>Lélegzési modul aktiválása</Hungarian>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_ENABLE_DESC">
             <English>Sets if SPO2 simulation and according functionality like Pneumothorax and \nAirway: occlusion &amp; obstruction (SPO2 reduction will be deactivated) should be activated</English>
@@ -1219,6 +1297,7 @@
             <Chinese>設定是否啟動SpO2模擬以及相應的功能，例如氣胸和氣道：阻塞和梗阻（SpO2降低功能將被停用）。</Chinese>
             <Chinesesimp>如果SPO2模拟和相应的功能，如气胸和\nAirway：闭塞和阻塞（SPO2减少将被停用）应被激活，则设置</Chinesesimp>
             <Dutch>Activeert SpO2 simulatie omtrend pneumothorax en luchtwegen: verstopping en obstructie (SpO2 reductie wordt gedeactiveerd)</Dutch>
+            <Hungarian>Beállítja, hogy az SPO2 szimuláció és a kapcsolódó funkciók, mint például a pneumothorax és a légúti elzáródás és obstrukció (az SPO2 csökkentés deaktiválásra kerül) aktiválódjanak-e.</Hungarian>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_Enable_Etco2">
             <English>Enable ETCo2 Monitoring</English>
@@ -1233,6 +1312,7 @@
             <Chinese>啟用ETCo2監測</Chinese>
             <Chinesesimp>启用ETCo2监测</Chinesesimp>
             <Dutch>Activeer ETCo2 monitor</Dutch>
+            <Hungarian>ETCo2-monitorozás engedélyezése</Hungarian>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_Enable_Etco2_Desc">
             <English>Sets if medics can view a patient's ETCo2 and Respiratory Rate in the Vitals Monitor when a device capable of monitoring ETCo2 is connected</English>
@@ -1247,6 +1327,7 @@
             <Chinese>設定當連接能夠監測ETCo2的裝置時，醫務人員是否可以在生命體徵監視器中查看患者的ETCo2和呼吸率</Chinese>
             <Chinesesimp>设定当连接能够监测ETCo2的装置时，医务人员是否可以在生命体征监视器中查看患者的ETCo2和呼吸率</Chinesesimp>
             <Dutch>Activeert het zien van ETCo2 en ademhalingstempo op de vitale waarden monitor wanneer een apparaat die ETCo2 kan monitoren is aangesloten</Dutch>
+            <Hungarian>Beállítja, hogy az orvosok láthassák-e a beteg ETCo2-értékét és légzésszámát a Vitals Monitoron, ha egy ETCo2-értékeket mérő eszköz csatlakozik a készülékhez.</Hungarian>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_HPTX_BleedAmount">
             <English>Hemopneumothorax internal bleeding amount</English>
@@ -1264,6 +1345,7 @@
             <Chinesesimp>血气胸内出血量</Chinesesimp>
             <Finnish>Hemopneumotoraksista tulevan sisäisen verenvuodon määrä</Finnish>
             <Dutch>Hemopneumothorax interne bloedingshoeveelheid</Dutch>
+            <Hungarian>Hemopneumothorax belső vérzés mennyisége</Hungarian>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_HPTX_BleedAmount_DESC">
             <English>Sets amount of internal bleeding that is applied while suffering from hemopneumothorax</English>
@@ -1281,6 +1363,7 @@
             <Chinesesimp>设定血气胸时应用的内出血量</Chinesesimp>
             <Finnish>Määrittää hemopneumotoraksista johtuvan sisäisen verenvuodon määrän</Finnish>
             <Dutch>Defineert de hoeveelheid bloedverlies dat wordt verloren wanneer een patiënt een hemopneumothorax heeft</Dutch>
+            <Hungarian>Beállítja a hemopneumothorax esetén alkalmazott belső vérzés mértékét.</Hungarian>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_MultiplyNegative">
             <English>SpO2 negative multiplier</English>
@@ -1298,6 +1381,7 @@
             <Chinesesimp>SpO2值负乘数</Chinesesimp>
             <Finnish>SpO2 negatiivinen kerroin</Finnish>
             <Dutch>SpO2 negatieve vermenigvuldiger</Dutch>
+            <Hungarian>SpO2 negatív szorzó</Hungarian>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_MultiplyPositive">
             <English>SpO2 positive multiplier</English>
@@ -1315,6 +1399,7 @@
             <Chinesesimp>SpO2值正乘数</Chinesesimp>
             <Finnish>SpO2-positiivinen kerroin</Finnish>
             <Dutch>SpO2 positieve vermenigvuldiger</Dutch>
+            <Hungarian>SpO2 pozitív szorzó</Hungarian>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_PACO2_ENABLE">
             <English>Enable PaCO2</English>
@@ -1326,6 +1411,7 @@
             <Chinese>啟用PaCO2</Chinese>
             <Chinesesimp>启用PaCO2</Chinesesimp>
             <Dutch>PaCO2 aanzetten</Dutch>
+            <Hungarian>PaCO2 engedélyezése</Hungarian>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_PACO2_ENABLE_DESC">
             <English>Enables PaCO2 movement and effects on ph and breathing rate</English>
@@ -1337,6 +1423,7 @@
             <Chinese>啟用PaCO2的變化及其對pH值和呼吸速率的影響</Chinese>
             <Chinesesimp>启用PaCO2的变化及其对pH值和呼吸速率的影响</Chinesesimp>
             <Dutch>Activeert PaCO2 veranderingen en zijn effecten op pH en ademhalingsfrequentie</Dutch>
+            <Hungarian>Lehetővé teszi a PaCO2 mozgását és hatását a pH-értékre és a légzésszámra.</Hungarian>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_PerfusionMultiplier">
             <English>Perfusion multiplier</English>
@@ -1354,6 +1441,7 @@
             <Chinesesimp>灌注乘数</Chinesesimp>
             <Finnish>Perfuusiokerroin</Finnish>
             <Dutch>Perfusie vermenigvuldiger</Dutch>
+            <Hungarian>Perfúziós szorzó</Hungarian>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_PneumothoraxAlwaysVisible">
             <English>Pneumothorax always visible</English>
@@ -1370,6 +1458,7 @@
             <Chinesesimp>气胸始终可见</Chinesesimp>
             <Finnish>Pneumothorax on aina näkyvissä</Finnish>
             <Dutch>Pneumothorax altijd zichtbaar</Dutch>
+            <Hungarian>A pneumothorax mindig látható</Hungarian>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_PneumothoraxAlwaysVisible_DESCRIPTION">
             <English>Sets if pneumothorax should always be visible in the medical menu as an injury instead of requiring diagnosis (1x pneumothorax)</English>
@@ -1386,6 +1475,7 @@
             <Chinesesimp>设置气胸是否应始终作为损伤出现在医疗菜单中，而不需要诊断（1x气胸）</Chinesesimp>
             <Finnish>Määrittää, näkyykö ilmarinta aina lääkärille vammana diagnoosin vaatimisen sijaan (1x ilmarinta)</Finnish>
             <Dutch>Defineert of een pneumothorax altijd zichbaar is in het medische menu als een wond, zonder dat deze een diagnose vereist (1x pneumothorax)</Dutch>
+            <Hungarian>Beállítja, hogy a pneumothorax mindig látható legyen-e az orvosi menüben sérülésként, ahelyett, hogy diagnózist igényelne (1x pneumothorax).</Hungarian>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_PneumothoraxArrest">
             <English>Enable Pneumothorax Arrest</English>
@@ -1400,6 +1490,7 @@
             <Chinese>啟用氣胸心跳驟停</Chinese>
             <Chinesesimp>启用气胸抑制</Chinesesimp>
             <Dutch>Sta pneumothorax hartstilstand toe</Dutch>
+            <Hungarian>Pneumothorax miatti szívmegállás engedélyezése</Hungarian>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_PneumothoraxArrest_DESCRIPTION">
             <English>Enables a chance for cardiac arrest following pneumothorax</English>
@@ -1414,6 +1505,7 @@
             <Chinese>啟用氣胸後發生心跳停止的機率</Chinese>
             <Chinesesimp>气胸后有可能发生心脏骤停</Chinesesimp>
             <Dutch>Staat de kans op een hartstilstand na een pneumothorax toe</Dutch>
+            <Hungarian>Lehetővé teszi a pneumothorax utáni szívmegállás kialakulását.</Hungarian>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_PneumothoraxDamageThreshold_DamageTaken">
             <English>Increase pneumothorax chance based on damage</English>
@@ -1430,6 +1522,7 @@
             <Chinesesimp>根据损伤增加气胸的概率</Chinesesimp>
             <Finnish>Lisää pneumotoraksin mahdollisuutta vaurion perusteella</Finnish>
             <Dutch>Verhoogt pneumothorax kans op basis van schade</Dutch>
+            <Hungarian>A sérülés alapján megnövekedett pneumothorax kockázat</Hungarian>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_PneumothoraxDamageThreshold_DamageTaken_DESCRIPTION">
             <English>Increase chance of a pneumothorax and advanced pneumothorax occurring based on damage taken if over the pneumothorax damage threshold</English>
@@ -1446,6 +1539,7 @@
             <Chinesesimp>如果超过气胸损伤阈值，则根据所受损伤增加气胸和晚期气胸发生的概率</Chinesesimp>
             <Finnish>Lisää ilmarintakehän ja pitkälle edenneen ilmarinnan esiintymisen todennäköisyyttä tehdyn vaurion perusteella, jos vaurio on suurempi kuin ilmarintakehän kehittymiseen vaadittava vähimmäisvaurio.</Finnish>
             <Dutch>Verhoogt de kans op een (geadvanceerde) pneumothorax wanneer de schade hoger is dan de drempelwaarde</Dutch>
+            <Hungarian>A pneumothorax és a súlyos pneumothorax előfordulásának esélye nő, ha a pneumothorax károsodási küszöbértékét túllépik.</Hungarian>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_PocketBVM_MedLvl">
             <English>Allow Pocket BVM</English>
@@ -1463,6 +1557,7 @@
             <Chinesesimp>允许便携式BVM</Chinesesimp>
             <Finnish>Salli kannettava BVM</Finnish>
             <Dutch>Sta zak BVM toe</Dutch>
+            <Hungarian>Zsebbambu engedélyezése</Hungarian>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_PocketBVM_MedLvl_DESC">
             <English>Sets required medical level to use Pocket BVM</English>
@@ -1480,6 +1575,7 @@
             <Chinesesimp>设置使用Pocket BVM所需的医疗级别</Chinesesimp>
             <Finnish>Asettaa kannettavan BVM:n käyttöön vaaditun lääketieteellisen koulutustason</Finnish>
             <Dutch>Bepaalt het medische trainingsniveau benodigd voor zak BVM gebruik</Dutch>
+            <Hungarian>A zsebbambu (Pocket BVM) használatához szükséges orvosi szint beállítása</Hungarian>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_PortableOxygenTank_RefillTime">
             <English>Portable Oxygen Tank Base Refill Time</English>
@@ -1497,6 +1593,7 @@
             <Chinesesimp>便携式氧气罐底座加注时间</Chinesesimp>
             <Finnish>Kannettava happisäiliö vähimmäistäyttöaika</Finnish>
             <Dutch>Draagbare zuurstoftank hervullings tijd</Dutch>
+            <Hungarian>Hordozható oxigéntartály alap újratöltési ideje</Hungarian>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_PortableOxygenTank_RefillTime_DESC">
             <English>Sets time required to refill Oxygen Tank (150L)</English>
@@ -1514,6 +1611,7 @@
             <Chinesesimp>设置重新填充氧气罐（150L）所需的时间</Chinesesimp>
             <Finnish>Asettaa happisäiliön (150L) täyttämiseen tarvittavan ajan</Finnish>
             <Dutch>Bepaalt de benodigde tijd om een zuurstoftank bij te vullen (150L)</Dutch>
+            <Hungarian>Beállítja az oxigéntartály (150 l) újratöltéséhez szükséges időt.</Hungarian>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_SELF_CHESTSEAL">
             <English>Allow Chest Seal self treatment</English>
@@ -1531,6 +1629,7 @@
             <Chinesesimp>允许自我施用临时气胸密封贴</Chinesesimp>
             <Finnish>Salli rintatiivisteen käyttö itsellesi</Finnish>
             <Dutch>Sta chest seal zelfbehandeling toe</Dutch>
+            <Hungarian>Engedélyezze a mellkasi szelep önkezelését</Hungarian>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_STABLE_SPO2">
             <English>Stable SpO2 value to gain consciousness</English>
@@ -1549,6 +1648,7 @@
             <Turkish>Bilinç kazanmak için gerekli SpO2 değeri</Turkish>
             <Finnish>SpO2-taso, joka vaaditaan tajunnan palauttamiseksi</Finnish>
             <Dutch>Stabiele SpO2 waarde om bewustzijn te verkrijgen</Dutch>
+            <Hungarian>Stabil SpO2-érték az eszmélet visszatéréséhez</Hungarian>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_Select_Etco2_Units">
             <English>Desired units for ETCo2 Monitoring</English>
@@ -1563,6 +1663,7 @@
             <Chinese>ETCo2監測所需的單位</Chinese>
             <Chinesesimp>ETCo2监测所需的单位</Chinesesimp>
             <Dutch>Geprefereerde eenheden voor ETCo2 monitoren</Dutch>
+            <Hungarian>ETCo2-monitorozáshoz kívánt egységek</Hungarian>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_SpO2_Perfusion">
             <English>Enable cardiac arrest SpO2 reduction</English>
@@ -1580,6 +1681,7 @@
             <Chinesesimp>心脏骤停时减少SpO2的下降</Chinesesimp>
             <Finnish>Ota käyttöön sydämenpysähdyksen SpO2-vähennys</Finnish>
             <Dutch>Activeer SpO2 verlies tijdens hartstilstand</Dutch>
+            <Hungarian>Szívmegállás SpO2 csökkenés engedélyezése</Hungarian>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_SpO2_cardiacActive">
             <English>Activate cardiac arrest SpO2 value</English>
@@ -1594,6 +1696,7 @@
             <Chinese>激活心跳停止SpO2值</Chinese>
             <Chinesesimp>激活心脏骤停的SpO2值</Chinesesimp>
             <Dutch>Activeer hartstilstand SpO2 waarde</Dutch>
+            <Hungarian>Aktiválja a szívmegállás SpO2 értékét</Hungarian>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_SpO2_cardiacValue">
             <English>Cardiac arrest SpO2 value</English>
@@ -1608,6 +1711,7 @@
             <Chinese>心跳停止SpO2值</Chinese>
             <Chinesesimp>心脏骤停SpO2值</Chinesesimp>
             <Dutch>Hartstilstand SpO2 waarde</Dutch>
+            <Hungarian>Szívmegállás SpO2 érték</Hungarian>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_SpO2_dieActive">
             <English>Activate lethal SpO2 value</English>
@@ -1626,6 +1730,7 @@
             <Turkish>Ölümcül SpO2 değerini etkinleştir</Turkish>
             <Finnish>Aktivoi tappava SpO2-arvo</Finnish>
             <Dutch>Activeer dodelijke SpO2 waarde</Dutch>
+            <Hungarian>Halálos SpO2 érték aktiválása</Hungarian>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_SpO2_dieValue">
             <English>Lethal SpO2 value</English>
@@ -1644,6 +1749,7 @@
             <Turkish>Ölümcül SpO2 değeri</Turkish>
             <Finnish>Tappava SpO2-arvo</Finnish>
             <Dutch>Dodelijke SpO2 waarde</Dutch>
+            <Hungarian>Halálos SpO2 érték</Hungarian>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_SpO2_unconscious">
             <English>Unconscious SpO2 value</English>
@@ -1662,6 +1768,7 @@
             <Turkish>Bilinçsiz SpO2 değeri</Turkish>
             <Finnish>SpO2-arvo, joka tekee potilaan tajuttomaksi</Finnish>
             <Dutch>SpO2 drempelwaarde voor verlies van bewustzijn</Dutch>
+            <Hungarian>Tudatvesztéses SpO2 érték</Hungarian>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_SpO2_unconscious_Desc">
             <English>SpO2 value that will cause unconscious when dropped below that value</English>
@@ -1680,6 +1787,7 @@
             <Turkish>Bu değerin altına düştüğünde bilinç kaybına neden olacak SpO2 değeri</Turkish>
             <Finnish>SpO2-arvo, joka saavuttaessaan aiheuttaa tajuttomuuden</Finnish>
             <Dutch>De SpO2 waarde waaronder je het bewustzijn verliest</Dutch>
+            <Hungarian>Az a SpO2 érték, amelynek alá esve eszméletvesztés következik be.</Hungarian>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_Stamina_Loss_SPO2_DESC">
             <English>Makes you lose stamina if you are under 90% SpO2 (default value)</English>
@@ -1697,6 +1805,7 @@
             <Chinesesimp>如果SpO2低于90%（默认值），会让你失去耐力</Chinesesimp>
             <Finnish>Menettää kestävyyden, jos olet alle tietyn SpO2-tason (oletusarvo on 90 %)</Finnish>
             <Dutch>Zorgt ervoor dat je stamina verliest als je onder 90% SpO2 zit (standaard waarde)</Dutch>
+            <Hungarian>Ha az SpO2 értéke 90% alatt van (alapértelmezett érték), akkor csökken az állóképessége.</Hungarian>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_Stamina_Loss_SPO2_display">
             <English>Enable Stamina loss on low SpO2</English>
@@ -1714,6 +1823,7 @@
             <Chinesesimp>在低SpO2时启用耐力损失</Chinesesimp>
             <Finnish>Ota kestävyyden menetys käyttöön alhaisilla SpO2-tasoilla</Finnish>
             <Dutch>Sta stamina verlies op laag SpO2 toe</Dutch>
+            <Hungarian>Engedélyezze az állóképesség csökkenését alacsony SpO2 esetén</Hungarian>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_TensionHemothoraxAlwaysVisible">
             <English>Tension pneumothorax and hemothorax always visible</English>
@@ -1730,6 +1840,7 @@
             <Chinesesimp>设置张力性气胸和血气胸是否应始终作为损伤出现在医疗菜单中，而不需要诊断（1x张力性气胸/1x血气胸）</Chinesesimp>
             <Finnish>Jännitysilmarinta ja hemothorax ovat aina näkyvissä</Finnish>
             <Dutch>Spannings- en hemopneumothorax altijd zichtbaar</Dutch>
+            <Hungarian>Tenziós pneumothorax és hemothorax mindig látható</Hungarian>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_TensionHemothoraxAlwaysVisible_DESCRIPTION">
             <English>Sets if tension pneumothorax and hemopneumothorax should always be visible in the medical menu as an injury instead of requiring diagnosis (1x tensionpneumothorax/1x hemopneumothorax)</English>
@@ -1746,6 +1857,7 @@
             <Chinesesimp>设置张力性气胸和血气胸是否应始终作为损伤出现在医疗菜单中，而不需要诊断</Chinesesimp>
             <Finnish>Määrittää, pitäisikö jännityspneumotoraksin ja hemopneumotoraksin aina näkyä lääkärille vammana diagnoosin vaatimisen sijaan (1x jännitysilmarinta tai hemopneumotoraksi)</Finnish>
             <Dutch>Defineert of spannings- en hemopneumothoraxen altijd zichtbaar zijn in het medische menu als een wond, zonder dat deze een diagnose vereist (1x spanningspneumothorax / 1x hemopneumothorax)</Dutch>
+            <Hungarian>Beállítja, hogy a tenziós pneumothorax és a hemopneumothorax mindig sérülésként jelenjen-e meg az orvosi menüben, ahelyett, hogy diagnózist igényelne (1x tenziós pneumothorax/1x hemopneumothorax).</Hungarian>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_Threshold_SpO2Warning">
             <English>Pulse Oximeter Alarm SpO2 Threshold</English>
@@ -1763,6 +1875,7 @@
             <Chinesesimp>脉搏血氧仪报警SpO2阈值</Chinesesimp>
             <Finnish>SpO2-taso, joka laukaisee pulssioksimetrin hälytyksen</Finnish>
             <Dutch>Pulsoximeter alarm SpO2 drempelwaarde</Dutch>
+            <Hungarian>Pulzoximéter riasztás SpO2 küszöbérték</Hungarian>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_Time_NasalCannula">
             <English>Time for Nasal Cannula</English>
@@ -1777,6 +1890,7 @@
             <Chinese>鼻導管所需時間</Chinese>
             <Chinesesimp>鼻导管所需时间</Chinesesimp>
             <Dutch>Tijd voor het inbrengen van een nasale canule</Dutch>
+            <Hungarian>Orrkanül használatának ideje</Hungarian>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_Time_NasalCannula_Desc">
             <English>How long it will take to insert a Nasal Cannula</English>
@@ -1791,6 +1905,7 @@
             <Chinese>插入鼻導管需要多長時間</Chinese>
             <Chinesesimp>插入鼻导管需要多长时间</Chinesesimp>
             <Dutch>Hoelang het gaat duren om een nasale canule in te brengen</Dutch>
+            <Hungarian>A szükséges idő egy orrkanül behelyezéséhez</Hungarian>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_arrestPneumothorax_interval">
             <English>Deteriorating pneumothorax arrest interval</English>
@@ -1805,6 +1920,7 @@
             <Chinese>惡化性氣胸驟停間隔</Chinese>
             <Chinesesimp>气胸停止间隔恶化</Chinesesimp>
             <Dutch>Pneumothorax verslechterings hartstilstand interval</Dutch>
+            <Hungarian>Romló pneumothorax szívleállás intervallum</Hungarian>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_arrestPneumothorax_interval_Desc">
             <English>After each interval a chance will be rolled whether or not a pneumothorax will result in cardiac arrest</English>
@@ -1819,6 +1935,7 @@
             <Chinese>每個間隔後，將計算氣胸是否導致心跳停止的機率</Chinese>
             <Chinesesimp>每间隔一次，就会有概率判断气胸是否会导致心脏骤停</Chinesesimp>
             <Dutch>na elke interval wordt er een kansrol uitgevoerd die bepaald of een pneumothorax leidt tot een hartstilstand</Dutch>
+            <Hungarian>Minden intervallum után sorsolással döntik el, hogy a pneumothorax szívmegállást okoz-e.</Hungarian>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_clearChestSealAfterTreatment">
             <English>Clear Chest Seal after treatment</English>
@@ -1835,6 +1952,7 @@
             <Chinesesimp>治疗后移除胸腔密封贴</Chinesesimp>
             <Finnish>Poista rintatiiviste hoidon jälkeen</Finnish>
             <Dutch>Verwijder chest seal na behandeling</Dutch>
+            <Hungarian>A kezelés után távolítsa el a mellkasi szelepet.</Hungarian>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_deepPenetratingInjuryChance">
             <English>Deep Penetrating Injury Chance</English>
@@ -1851,6 +1969,7 @@
             <Chinesesimp>深度穿透伤概率</Chinesesimp>
             <Finnish>Mahdollisuus syvään tunkeutuvaan vammaan</Finnish>
             <Dutch>Kans op diep penetrerende wond.</Dutch>
+            <Hungarian>Mély mellkasi perforáló sérülés esélye</Hungarian>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_deepPenetratingInjuryChance_DESC">
             <English>Chance for deep penetrating injury to appear when pneumothorax damage threshold is passed but no pneumothorax is inflicted</English>
@@ -1867,6 +1986,7 @@
             <Chinesesimp>当超过气胸损伤阈值但未造成气胸时，出现深穿透伤的概率</Chinesesimp>
             <Finnish>Mahdollisuus syvään tunkeutuvaan vammaan syntyy, kun ilmarintakehän vaurioituminen on minimaalista, mutta ilmarintaa ei ole kehittynyt.</Finnish>
             <Dutch>Kans voor het verschijnen van een diep penetrerende wond wanneer de drempelwaarde voor een pneumothorax overschreden wordt maar er geen pneumothorax gerold wordt.</Dutch>
+            <Hungarian>A pneumothorax károsodási küszöbértékének túllépése esetén mély mellkasi perforáló sérülés léphet fel, de pneumothorax nem alakul ki.</Hungarian>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_deterioratingPneumothorax_chance">
             <English>Pneumothorax deterioration chance</English>
@@ -1884,6 +2004,7 @@
             <Chinesesimp>气胸恶化概率</Chinesesimp>
             <Finnish>Pneumotoraksin huononemisen mahdollisuus</Finnish>
             <Dutch>Pneumothorax verslechteringskans</Dutch>
+            <Hungarian>Pneumothorax romlásának esélye</Hungarian>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_deterioratingPneumothorax_chance_DESC">
             <English>Chance for pneumothorax to deteriorate</English>
@@ -1900,6 +2021,7 @@
             <Chinesesimp>气胸恶化的可能性</Chinesesimp>
             <Finnish>Pneumotoraksin mahdollisuus pahentua</Finnish>
             <Dutch>Kans voor een pneumothorax om te verslechteren</Dutch>
+            <Hungarian>A pneumothorax romlásának esélye</Hungarian>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_deterioratingPneumothorax_interval">
             <English>Deteriorating pneumothorax interval</English>
@@ -1916,6 +2038,7 @@
             <Chinesesimp>气胸间隔恶化</Chinesesimp>
             <Finnish>Aika pneumotoraksin pahenemismahdollisuuksien välillä</Finnish>
             <Dutch>Pneumothorax verslechteringsinterval</Dutch>
+            <Hungarian>Rosszabbodó pneumothorax intervallum</Hungarian>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_deterioratingPneumothorax_interval_Desc">
             <English>After each interval a chance will be rolled whether or not the pneumothorax will deteriorate</English>
@@ -1932,6 +2055,7 @@
             <Chinesesimp>每次间隔后，气胸是否会恶化的概率都会被滚动</Chinesesimp>
             <Finnish>Jokaisen ajanjakson jälkeen lasketaan mahdollisuus, paheneeko ilmarinta vai ei</Finnish>
             <Dutch>Na elke interval wordt een nieuwe kansrol uitgevoerd die bepaald of de pneumothorax verslechterd</Dutch>
+            <Hungarian>Minden intervallum után sorsolással dől el, hogy a pneumothorax romlik-e vagy sem.</Hungarian>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_enableCheckBreathing">
             <English>Enable Check Breathing</English>
@@ -1943,6 +2067,7 @@
             <Chinese>啟用檢查呼吸</Chinese>
             <Chinesesimp>启用检查呼吸</Chinesesimp>
             <Dutch>Ademhalingscheck aanzetten</Dutch>
+            <Hungarian>Légzés ellenőrzésének engedélyezése</Hungarian>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_enableCheckBreathing_DESC">
             <English>Whether or not Check Breathing medical action is enabled</English>
@@ -1954,6 +2079,7 @@
             <Chinese>檢查呼吸醫療動作是否啟用</Chinese>
             <Chinesesimp>检查呼吸医疗动作是否启用</Chinesesimp>
             <Dutch>Bepaald of de Ademhalingscheck handeling aangezet is</Dutch>
+            <Hungarian>A (Check Breathing)/=Légzés ellenőrzése orvosi intézkedés engedélyezve van-e vagy sem</Hungarian>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_inspectChest_enable">
             <English>Enable Inspect Chest</English>
@@ -1970,6 +2096,7 @@
             <Chinesesimp>启用胸部检查</Chinesesimp>
             <Finnish>Ota rinnan tarkastus käyttöön</Finnish>
             <Dutch>Sta Thoraxinspectie toe</Dutch>
+            <Hungarian>Mellkas vizsgálatának bekapcsolása</Hungarian>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_inspectChest_enable_simple">
             <English>Simple</English>
@@ -1986,6 +2113,7 @@
             <Chinesesimp>简单</Chinesesimp>
             <Finnish>Yksinkertainen</Finnish>
             <Dutch>Simpel</Dutch>
+            <Hungarian>Egyszerű</Hungarian>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_inspectChest_medLvl">
             <English>Allow Inspecting Chest</English>
@@ -2002,6 +2130,7 @@
             <Chinesesimp>允许检查胸部</Chinesesimp>
             <Finnish>Salli rintatutkimus</Finnish>
             <Dutch>Sta thorax inspectie toe</Dutch>
+            <Hungarian>Mellkas vizsgálatának engedélyezése</Hungarian>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_inspectChest_time">
             <English>Inspect Chest Time</English>
@@ -2018,6 +2147,7 @@
             <Chinesesimp>检查胸部时间</Chinesesimp>
             <Finnish>Kuinka kauan rintakehän tarkastus kestää</Finnish>
             <Dutch>Thorax inspectie tijd</Dutch>
+            <Hungarian>Mellkasvizsgálat ideje</Hungarian>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_locationProvideOxygen">
             <English>Location Provide Oxygen</English>
@@ -2034,6 +2164,7 @@
             <Chinesesimp>位置提供氧气</Chinesesimp>
             <Finnish>Tarjoaako sijainti happea</Finnish>
             <Dutch>Locaties die zuurstof geven</Dutch>
+            <Hungarian>Helyszínek oxigén biztosítással</Hungarian>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_locationProvideOxygen_DESC">
             <English>Sets if medical vehicles/facilites can provide oxygen</English>
@@ -2050,6 +2181,7 @@
             <Chinesesimp>设置医疗车辆/设施是否可以提供氧气</Chinesesimp>
             <Finnish>Määrittää, voivatko lääketieteelliset ajoneuvot tai tilat tarjota happea</Finnish>
             <Dutch>Bepaalt of voertuigen/gebouwen zuurstof kunnen geven</Dutch>
+            <Hungarian>Beállítja, hogy az orvosi járművek/létesítmények tudnak-e oxigént biztosítani.</Hungarian>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_mildValue">
             <English>Mild cyanosis SpO2 value</English>
@@ -2068,6 +2200,7 @@
             <Turkish>Orta derece Siyanoz SpO2 değeri</Turkish>
             <Finnish>Keskivaikean syanoosin laukaiseva SpO2-arvo</Finnish>
             <Dutch>Milde cyanose waarde</Dutch>
+            <Hungarian>Mérsékelt cianózis SpO2 érték</Hungarian>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_mildValue_DESC">
             <English>Mild cyanosis value - default 75 SpO2</English>
@@ -2086,6 +2219,7 @@
             <Turkish>Orta derece Siyanoz değeri - varsayılan 75 SpO2</Turkish>
             <Finnish>Keskivaikean syanoosin laukaiseva SpO2-oletusarvo on 75</Finnish>
             <Dutch>Milde cyanose waarde - standaard 75 SpO2</Dutch>
+            <Hungarian>Mérsékelt cianózis érték - alapértelmezett 75 SpO2</Hungarian>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_pneumothorax">
             <English>Probability for a pneumothorax</English>
@@ -2104,6 +2238,7 @@
             <Turkish>Pnömotoraks olasılığı</Turkish>
             <Finnish>Hemopneumotoraksin mahdollisuus</Finnish>
             <Dutch>Kans op een pneumothorax</Dutch>
+            <Hungarian>Pneumothorax valószínűsége</Hungarian>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_severeValue">
             <English>Severe cyanosis SpO2 value</English>
@@ -2122,6 +2257,7 @@
             <Turkish>Şiddetli Siyanoz SpO2 değeri</Turkish>
             <Finnish>SpO2-arvo, joka laukaisee vakavan syanoosin</Finnish>
             <Dutch>Zware cyanose waarde</Dutch>
+            <Hungarian>Severe cyanosis SpO2 value</Hungarian>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_severeValue_DESC">
             <English>Severe cyanosis value - default 66 SpO2 \nShould be little bit higher than lethal SpO2 value</English>
@@ -2140,6 +2276,7 @@
             <Turkish>Şiddetli Siyanoz değeri - varsayılan 66 SpO2 \nÖlümcül SpO2 değerinden biraz daha yüksek olmalıdır</Turkish>
             <Finnish>Vakavan syanoosin laukaiseva SpO2-oletusarvo on 66. Tämän arvon pitäisi olla hieman korkeampi kuin tappava SpO2-arvo.</Finnish>
             <Dutch>Zware cyanose waarde - standaard 66 SpO2\nZou een klein beetje boven de dodelijke SpO2 waarde moeten zitten</Dutch>
+            <Hungarian>Súlyos cianózis érték - alapértelmezett 66 SpO2 \nKicsit magasabbnak kell lennie, mint a halálos SpO2 érték</Hungarian>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_showCyanosis">
             <English>Show cyanosis</English>
@@ -2156,6 +2293,7 @@
             <Chinesesimp>显示发绀</Chinesesimp>
             <Finnish>Näytä syanoosi</Finnish>
             <Dutch>Toon cyanose</Dutch>
+            <Hungarian>Cianózis megjelenítése</Hungarian>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_showCyanosis_DESC">
             <English>Shows cyanosis of patient in overview tab</English>
@@ -2172,6 +2310,7 @@
             <Chinesesimp>在概览选项卡中显示患者的紫绀</Chinesesimp>
             <Finnish>Näyttää potilaan syanoosin lääketieteellisen yleiskuvan näytössä</Finnish>
             <Dutch>Toont de cyanose van de patiënt op de overzichtspagina</Dutch>
+            <Hungarian>A ápolt cianózisát mutatja az áttekintés fülön</Hungarian>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_slightValue">
             <English>Slight cyanosis SpO2 value</English>
@@ -2190,6 +2329,7 @@
             <Turkish>Hafif Siyanoz SpO2 değeri</Turkish>
             <Finnish>SpO2-arvo, joka laukaisee lievän syanoosin</Finnish>
             <Dutch>Lichte cyanose waarde</Dutch>
+            <Hungarian>Enyhe cianózis SpO2 érték</Hungarian>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_slightValue_DESC">
             <English>Slight cyanosis value - default 90 SpO2</English>
@@ -2208,6 +2348,7 @@
             <Turkish>Hafif Siyanoz değeri - varsayılan 90 SpO2</Turkish>
             <Finnish>SpO2-oletusarvo, joka laukaisee lievän syanoosin, on 90</Finnish>
             <Dutch>Lichte cyanose waarde - standaard 90 SpO2</Dutch>
+            <Hungarian>Enyhe cianózis érték - alapértelmezett 90 SpO2</Hungarian>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_stethoscopeListeningTime">
             <English>Stethoscope Listening Time</English>
@@ -2225,6 +2366,7 @@
             <Chinesesimp>听诊器所需时间</Chinesesimp>
             <Finnish>Stetoskoopin kuunteluaika</Finnish>
             <Dutch>Stethoscoop luister tijd</Dutch>
+            <Hungarian>Stetoszkóp hallgatási idő</Hungarian>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_stethoscopeListeningTime_DESC">
             <English>Sets how long the stethoscope listening period is</English>
@@ -2242,6 +2384,7 @@
             <Chinesesimp>使用听诊器听诊所需时间</Chinesesimp>
             <Finnish>Asettaa kuinka pitkä stetoskoopin kuuntelujakso on</Finnish>
             <Dutch>Bepaald hoelang de stethoscoop luister periode is</Dutch>
+            <Hungarian>Beállítja a sztetoszkóp hallgatási idejét.</Hungarian>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_stethoscopeSoundVolume">
             <English>Stethoscope Sound Volume</English>
@@ -2259,6 +2402,7 @@
             <Chinesesimp>听诊器音量</Chinesesimp>
             <Turkish>Stetoskop Ses Seviyesi</Turkish>
             <Dutch>Stethoscoops geluid volume</Dutch>
+            <Hungarian>Stetoszkóp hangereje</Hungarian>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_stethoscopeSoundVolume_DESC">
             <English>Determines how loud the breathing sounds are when using the stethoscope</English>
@@ -2277,6 +2421,7 @@
             <Turkish>Stetoskop kullanırken toraks seslerinin ne kadar yüksek olduğunu belirler</Turkish>
             <Finnish>Stetoskoopin äänenvoimakkuus</Finnish>
             <Dutch>Bepaald hoe luid de longgeluiden zijn tijdens het luisteren met een stethoscoop</Dutch>
+            <Hungarian>Meghatározza, hogy a sztetoszkóp használata során milyen hangosak a légzéshangok.</Hungarian>
         </Key>
         <Key ID="STR_KAT_Breathing_SetPreferredOxygenTank_150">
             <English>Set Portable Oxygen Tank (150L) as preferred</English>
@@ -2294,6 +2439,7 @@
             <Chinesesimp>首选便携式氧气罐（150L）</Chinesesimp>
             <Finnish>Aseta kannettava happisäiliö (150L) ensisijaiseksi happisäiliöksi</Finnish>
             <Dutch>Defineert de 150L draagbare zuurstoftank als voorkeurstank</Dutch>
+            <Hungarian>Állítsa be a hordozható oxigéntartályt (150 l) preferáltként</Hungarian>
         </Key>
         <Key ID="STR_KAT_Breathing_SetPreferredOxygenTank_300">
             <English>Set Portable Oxygen Tank (300L) as preferred</English>
@@ -2311,6 +2457,7 @@
             <Chinesesimp>首选便携式氧气罐（300L）</Chinesesimp>
             <Finnish>Aseta kannettava happisäiliö (300L) ensisijaiseksi happisäiliöksi</Finnish>
             <Dutch>Defineert de 300L draagbare zuurstoftank als voorkeurstank</Dutch>
+            <Hungarian>Állítsa be a hordozható oxigéntartályt (300 l) preferáltként</Hungarian>
         </Key>
         <Key ID="STR_KAT_Breathing_Stethoscope_desc">
             <English>Allows you to auscultate lung sounds</English>
@@ -2329,6 +2476,7 @@
             <Turkish>Akciğer seslerini dinlemenizi sağlar</Turkish>
             <Finnish>Voit kuunnella keuhkojen ääniä</Finnish>
             <Dutch>Zorgt ervoor dat je de longen kan beluisteren</Dutch>
+            <Hungarian>Lehetővé teszi a tüdőhangok meghallgatását.</Hungarian>
         </Key>
         <Key ID="STR_KAT_Breathing_Stethoscope_display">
             <English>Stethoscope</English>
@@ -2347,6 +2495,7 @@
             <Turkish>Stetoskop</Turkish>
             <Finnish>Stetoskooppi</Finnish>
             <Dutch>Stethoscoop</Dutch>
+            <Hungarian>Stetoszkóp</Hungarian>
         </Key>
         <Key ID="STR_KAT_Breathing_SubCategory_Cyanosis">
             <English>Cyanosis Settings</English>
@@ -2364,6 +2513,7 @@
             <Chinesesimp>紫绀设置</Chinesesimp>
             <Finnish>Syanoosin asetukset</Finnish>
             <Dutch>Cyanose instellingen</Dutch>
+            <Hungarian>Cianózis beállítások</Hungarian>
         </Key>
         <Key ID="STR_KAT_Breathing_SubCategory_Items">
             <English>Breathing items Settings</English>
@@ -2381,6 +2531,7 @@
             <Chinesesimp>呼吸项目设置</Chinesesimp>
             <Finnish>Hengityselinten hoitolaitteiden asetukset</Finnish>
             <Dutch>Ademhalingsitem instellingen</Dutch>
+            <Hungarian>Lélegeztető eszközök beállításai</Hungarian>
         </Key>
         <Key ID="STR_KAT_Breathing_SubCategory_ThoraxInjuries">
             <English>Thorax injuries Settings</English>
@@ -2398,6 +2549,7 @@
             <Chinesesimp>胸部损伤设置</Chinesesimp>
             <Finnish>Asetukset rintakehän vammoihin</Finnish>
             <Dutch>Thoraxverwonding instellingen</Dutch>
+            <Hungarian>Mellkasi sérülések beállításai</Hungarian>
         </Key>
         <Key ID="STR_KAT_Breathing_TRAININGLEVEL_CHESTSEAL">
             <English>Training level required to use a Chest Seal</English>
@@ -2416,6 +2568,7 @@
             <Turkish>Chest Seal kullanmak için gerekli eğitim seviyesi</Turkish>
             <Finnish>Rintatiivisteen käyttämiseen vaadittava koulutustaso</Finnish>
             <Dutch>Trainingsniveau benodigd om een chest seal te gebruiken</Dutch>
+            <Hungarian>A mellkasi szelep használatához szükséges képzési szint</Hungarian>
         </Key>
         <Key ID="STR_KAT_Breathing_TRAININGLEVEL_PULSEOXIMETER">
             <English>Training level required to use a Pulseoximeter</English>
@@ -2434,6 +2587,7 @@
             <Turkish>Nabız Oksimetresi kullanmak için gerekli eğitim seviyesi</Turkish>
             <Finnish>Pulssioksimetrin käyttämiseen vaadittava koulutustaso</Finnish>
             <Dutch>Trainingsniveau benodigd voor het plaatsen van een pulsoximeter</Dutch>
+            <Hungarian>A pulzoximéter használatához szükséges képzési szint</Hungarian>
         </Key>
         <Key ID="STR_KAT_Breathing_UseBVM">
             <English>Use BVM</English>
@@ -2451,6 +2605,7 @@
             <Chinesesimp>使用BVM</Chinesesimp>
             <Finnish>Käytä BVM:ää</Finnish>
             <Dutch>Gebruik BVM</Dutch>
+            <Hungarian>Ambu ballon használata</Hungarian>
         </Key>
         <Key ID="STR_KAT_Breathing_UseBVM_Cancelled">
             <English>Rescue Breaths Cancelled</English>
@@ -2467,6 +2622,7 @@
             <Chinesesimp>救援呼吸被取消</Chinesesimp>
             <Finnish>Pelastushengitykset peruttu</Finnish>
             <Dutch>Beademing is gestopt</Dutch>
+            <Hungarian>Szájon át lélegeztetés megszakítva</Hungarian>
         </Key>
         <Key ID="STR_KAT_Breathing_UseBVM_Oxygen">
             <English>Use BVM with Oxygen</English>
@@ -2483,6 +2639,7 @@
             <Chinesesimp>使用含氧气的BVM</Chinesesimp>
             <Finnish>Käytä BVM:ää hapen kanssa</Finnish>
             <Dutch>Gebruik BVM met zuurstof</Dutch>
+            <Hungarian>Ambu használata oxigénnel</Hungarian>
         </Key>
         <Key ID="STR_KAT_Breathing_UseBVM_PortableOxygen">
             <English>Use BVM with Oxygen Tank</English>
@@ -2500,6 +2657,7 @@
             <Chinesesimp>使用带氧气罐的BVM</Chinesesimp>
             <Finnish>Käytä BVM:ää happisäiliön kanssa</Finnish>
             <Dutch>Gebruik BVM met zuurstoftank</Dutch>
+            <Hungarian>Ambu használata oxigéntartállyal</Hungarian>
         </Key>
         <Key ID="STR_KAT_Breathing_UseBVM_PortableOxygen_Vehicle">
             <English>Use BVM with Oxygen Tank (Vehicle)</English>
@@ -2516,6 +2674,7 @@
             <Chinesesimp>使用带氧气罐的BVM（车辆）</Chinesesimp>
             <Finnish>Käytä BVM:ää ajoneuvon happisäiliön kanssa</Finnish>
             <Dutch>Gebruik BVM met zuurstoftank (voertuig)</Dutch>
+            <Hungarian>Ambu használata oxigéntartállyal (jármű)</Hungarian>
         </Key>
         <Key ID="STR_KAT_Breathing_UseBVM_PutAway">
             <English>Put away BVM</English>
@@ -2532,6 +2691,7 @@
             <Chinesesimp>收起BVM</Chinesesimp>
             <Finnish>Varastoi BVM</Finnish>
             <Dutch>BVM wegleggen</Dutch>
+            <Hungarian>Ambu elrakása</Hungarian>
         </Key>
         <Key ID="STR_KAT_Breathing_UseBVM_Start">
             <English>Rescue Breaths Started</English>
@@ -2547,6 +2707,7 @@
             <Chinesesimp>救援呼吸开始</Chinesesimp>
             <Finnish>Pelastushengitykset alkavat</Finnish>
             <Dutch>Beademing gestart</Dutch>
+            <Hungarian>Szájon át való lélegeztetés megkezdve</Hungarian>
         </Key>
         <Key ID="STR_KAT_Breathing_UsePocketBVM">
             <English>Use Pocket BVM</English>
@@ -2564,6 +2725,7 @@
             <Chinesesimp>使用便携式BVM</Chinesesimp>
             <Finnish>Käytä kannettavaa BVM:ää</Finnish>
             <Dutch>Gebruik zak BVM</Dutch>
+            <Hungarian>Zsebbambu használata</Hungarian>
         </Key>
         <Key ID="STR_KAT_Breathing_VehicleOxygen_Affirm">
             <English>Attached to Aircraft Oxygen</English>
@@ -2575,6 +2737,7 @@
             <Chinese>附在飛機氧氣上</Chinese>
             <Chinesesimp>附在飞机氧气上</Chinesesimp>
             <Dutch>Met vliegtuig zuurstofsyteem verbonden</Dutch>
+            <Hungarian>Csatlakoztatva a légijármű oxigénjéhez</Hungarian>
         </Key>
         <Key ID="STR_KAT_Breathing_aatKit_desc">
             <English>The Advanced Airway Treatment Kit is a single use kit designed to treat advanced airway conditions, like hemopneumothorax</English>
@@ -2593,6 +2756,7 @@
             <Turkish>Gelişmiş Hava Yolu Tedavi Kiti, hemopnömotoraks gibi gelişmiş hava yolu koşullarını tedavi etmek için tasarlanmış tek kullanımlık bir kittir.</Turkish>
             <Finnish>AAT-laite on kertakäyttöinen työkalu, joka on suunniteltu tappavien hengitystiesairauksien, kuten hemopneumotoraksin, hoitoon</Finnish>
             <Dutch>de AAT kit is een eenmalig gebruik kit ontwikkeld voor het behandelen van geadvanceerde luchtwegcondities</Dutch>
+            <Hungarian>Az Advanced Airway Treatment Kit egy egyszer használatos készlet, amelyet súlyos légúti állapotok, például hemopneumothorax kezelésére terveztek.</Hungarian>
         </Key>
         <Key ID="STR_KAT_Breathing_aatKit_display">
             <English>AAT Kit</English>
@@ -2611,6 +2775,7 @@
             <Turkish>AAT Kiti</Turkish>
             <Finnish>AAT-laite</Finnish>
             <Dutch>AAT kit</Dutch>
+            <Hungarian>AAT Kit</Hungarian>
         </Key>
         <Key ID="STR_KAT_Breathing_auscultateLung_display">
             <English>Auscultate Lung Sounds</English>
@@ -2629,6 +2794,7 @@
             <Turkish>Akciğer Seslerini Dinleyin</Turkish>
             <Finnish>Kuuntele keuhkojen ääniä</Finnish>
             <Dutch>Beluister de longen</Dutch>
+            <Hungarian>A tüdő hangjainak meghallgatása</Hungarian>
         </Key>
         <Key ID="STR_KAT_Breathing_breath_mild">
             <English>, slightly fruity</English>
@@ -2645,6 +2811,7 @@
             <Chinesesimp>，略带果香</Chinesesimp>
             <Finnish>, hieman hedelmäinen</Finnish>
             <Dutch>, lichtelijk fruitig</Dutch>
+            <Hungarian>, enyhén gyümölcsös</Hungarian>
         </Key>
         <Key ID="STR_KAT_Breathing_breath_stink">
             <English>, harsh and metallic</English>
@@ -2661,6 +2828,7 @@
             <Chinesesimp>，粗糙的金属质感</Chinesesimp>
             <Finnish>, kova ja metallinen</Finnish>
             <Dutch>, hard en metaalachtig</Dutch>
+            <Hungarian>, éles és fémes</Hungarian>
         </Key>
         <Key ID="STR_KAT_Breathing_breathing_Veryshallow">
             <English>Very Shallow</English>
@@ -2671,6 +2839,7 @@
             <Japanese>とても浅い</Japanese>
             <Chinese>非常淺</Chinese>
             <Dutch>Erg oppervlakkig</Dutch>
+            <Hungarian>Nagyon sekély</Hungarian>
         </Key>
         <Key ID="STR_KAT_Breathing_breathing_isNormal">
             <English>Patient is breathing normally</English>
@@ -2687,6 +2856,7 @@
             <Chinesesimp>患者呼吸正常</Chinesesimp>
             <Finnish>Potilas hengittää normaalisti</Finnish>
             <Dutch>Patiënt ademt normaal</Dutch>
+            <Hungarian>A beteg normálisan lélegzik.</Hungarian>
         </Key>
         <Key ID="STR_KAT_Breathing_breathing_isShallow">
             <English>Patient's breathing is shallow</English>
@@ -2703,6 +2873,7 @@
             <Chinesesimp>患者呼吸微弱</Chinesesimp>
             <Finnish>Potilaan hengitys on pinnallista</Finnish>
             <Dutch>Patiënts ademhaling is oppervlakkig</Dutch>
+            <Hungarian>A beteg légzése sekély.</Hungarian>
         </Key>
         <Key ID="STR_KAT_Breathing_breathing_isVeryShallow">
             <English>Patient's breathing is very shallow</English>
@@ -2713,6 +2884,7 @@
             <Japanese>患者の呼吸はとても浅い</Japanese>
             <Chinese>病人呼吸非常淺</Chinese>
             <Dutch>Patients ademhaling is zeer oppervlakkig</Dutch>
+            <Hungarian>A beteg légzése nagyon sekély.</Hungarian>
         </Key>
         <Key ID="STR_KAT_Breathing_breathing_none">
             <English>Patient is not breathing</English>
@@ -2730,6 +2902,7 @@
             <Chinesesimp>患者没有呼吸</Chinesesimp>
             <Finnish>Potilas ei hengitä</Finnish>
             <Dutch>Patiënt ademt niet</Dutch>
+            <Hungarian>A beteg nem lélegzik.</Hungarian>
         </Key>
         <Key ID="STR_KAT_Breathing_breathing_rrNormal">
             <English>RR: Normal</English>
@@ -2739,6 +2912,7 @@
             <Japanese>呼吸速度: 正常</Japanese>
             <Chinese>呼吸頻率：正常</Chinese>
             <Dutch>AF: Normaal</Dutch>
+            <Hungarian>RR: Normál</Hungarian>
         </Key>
         <Key ID="STR_KAT_Breathing_breathing_rrRapid">
             <English>RR: Rapid</English>
@@ -2749,6 +2923,7 @@
             <Japanese>呼吸速度: 速い</Japanese>
             <Chinese>呼吸頻率：快</Chinese>
             <Dutch>AF: Versnelt</Dutch>
+            <Hungarian>RR: Gyors</Hungarian>
         </Key>
         <Key ID="STR_KAT_Breathing_breathing_rrSlow">
             <English>RR: Slow</English>
@@ -2759,6 +2934,7 @@
             <Japanese>呼吸速度: 遅い</Japanese>
             <Chinese>呼吸頻率：慢</Chinese>
             <Dutch>AF: Langzaam</Dutch>
+            <Hungarian>RR: Lassú</Hungarian>
         </Key>
         <Key ID="STR_KAT_Breathing_breathing_shallow">
             <English>Shallow</English>
@@ -2775,6 +2951,7 @@
             <Chinesesimp>浅</Chinesesimp>
             <Finnish>Matala</Finnish>
             <Dutch>Oppervlakkig</Dutch>
+            <Hungarian>Sekély</Hungarian>
         </Key>
         <Key ID="STR_KAT_Breathing_cba_name">
             <English>KAT - ADV Medical: Breathing</English>
@@ -2783,6 +2960,7 @@
             <German>KAT - ADV Medical: Atmung</German>
             <Japanese>KAM - 呼吸器系 (Breathing)</Japanese>
             <Dutch>KAT - ADV Medical: Ademhaling</Dutch>
+            <Hungarian>KAT - ADV Medical: Légzés</Hungarian>
         </Key>
         <Key ID="STR_KAT_Breathing_chestseal_desc">
             <English>Chest Seal is engineered to treat, seal, and reseal open chest wounds under most circumstances.</English>
@@ -2801,6 +2979,7 @@
             <Turkish>Chest Seal, çoğu durumda açık göğüs yaralarını tedavi etmek, kapatmak ve yeniden kapatmak için tasarlanmıştır.</Turkish>
             <Finnish>Rintatiiviste on suunniteltu käsittelemään, tiivistämään ja uudelleensulkemaan avoimia rintahaavoja useimmissa olosuhteissa</Finnish>
             <Dutch>De chest seal is ontwikkeld om open borstwonden te dichten onder de meeste omstandigheden</Dutch>
+            <Hungarian>A mellkasi szelep úgy lett kialakítva, hogy a legtöbb esetben kezelje, lezárja és újra lezárja a nyitott mellkasi sebeket.</Hungarian>
         </Key>
         <Key ID="STR_KAT_Breathing_chestseal_display">
             <English>Chest Seal</English>
@@ -2819,6 +2998,7 @@
             <Turkish>Chest Seal</Turkish>
             <Finnish>Rintatiiviste</Finnish>
             <Dutch>Chest seal</Dutch>
+            <Hungarian>Mellkasi szelep</Hungarian>
         </Key>
         <Key ID="STR_KAT_Breathing_hemopneumothorax_display">
             <English>Drain Fluid</English>
@@ -2837,6 +3017,7 @@
             <Turkish>Sıvıyı Boşaltın</Turkish>
             <Finnish>Tyhjennä neste</Finnish>
             <Dutch>Vloeistof afvoeren</Dutch>
+            <Hungarian>Folyadék leeresztése</Hungarian>
         </Key>
         <Key ID="STR_KAT_Breathing_hemopneumothorax_mm">
             <English>1x Hemopneumothorax</English>
@@ -2855,6 +3036,7 @@
             <Turkish>1x hemopnömotoraks</Turkish>
             <Finnish>1x hemopneumotoraksi</Finnish>
             <Dutch>1x Hemopneumothorax</Dutch>
+            <Hungarian>1x Hemopneumothorax</Hungarian>
         </Key>
         <Key ID="STR_KAT_Breathing_inspectChest_display">
             <English>Inspect Chest</English>
@@ -2871,6 +3053,7 @@
             <Chinesesimp>检查胸部</Chinesesimp>
             <Finnish>Tutki rintakehä</Finnish>
             <Dutch>Thoraxinspectie</Dutch>
+            <Hungarian>Mellkas vizsgálata</Hungarian>
         </Key>
         <Key ID="STR_KAT_Breathing_inspectChest_internalBleeding">
             <English>Skin is rigid, looks bruised</English>
@@ -2887,6 +3070,7 @@
             <Chinesesimp>皮肤僵硬，看起来有瘀伤</Chinesesimp>
             <Finnish>Iho on jäykkä ja näyttää mustelmalta</Finnish>
             <Dutch>Huid is stijf, ziet er gekneusd uit</Dutch>
+            <Hungarian>A bőr merev, zúzódások látszanak rajta.</Hungarian>
         </Key>
         <Key ID="STR_KAT_Breathing_inspectChest_log">
             <English>%1 inspected chest: %2</English>
@@ -2903,6 +3087,7 @@
             <Chinesesimp>%1个检查胸部：%2</Chinesesimp>
             <Finnish>%1 tarkastettu rintakehä: %2</Finnish>
             <Dutch>%1 inspecteerde thorax:%2</Dutch>
+            <Hungarian>%1 megvizsgálta a mellkast: %2</Hungarian>
         </Key>
         <Key ID="STR_KAT_Breathing_inspectChest_none">
             <English>No chest movement observed</English>
@@ -2919,6 +3104,7 @@
             <Chinesesimp>未观察到胸部运动</Chinesesimp>
             <Finnish>Rintakehän liikettä ei havaittu</Finnish>
             <Dutch>Geen thorax beweging wordt geobserveerd</Dutch>
+            <Hungarian>Mellkasmozgás nem figyelhető meg</Hungarian>
         </Key>
         <Key ID="STR_KAT_Breathing_inspectChest_none_log">
             <English>No chest movement</English>
@@ -2935,6 +3121,7 @@
             <Chinesesimp>胸部无动作</Chinesesimp>
             <Finnish>Ei liikettä rinnassa</Finnish>
             <Dutch>Geen thorax beweging</Dutch>
+            <Hungarian>Nincs mellkasmozgás</Hungarian>
         </Key>
         <Key ID="STR_KAT_Breathing_inspectChest_normal">
             <English>Chest rise and fall observed</English>
@@ -2951,6 +3138,7 @@
             <Chinesesimp>观察胸部起伏</Chinesesimp>
             <Finnish>Rintakehän nousu ja lasku havaittu</Finnish>
             <Dutch>Stijging en daling van thorax worden geobserveerd</Dutch>
+            <Hungarian>Bilaterális mellkasmozgás megfigyelhető</Hungarian>
         </Key>
         <Key ID="STR_KAT_Breathing_inspectChest_progress">
             <English>Inspecting Chest</English>
@@ -2967,6 +3155,7 @@
             <Chinesesimp>检查胸部</Chinesesimp>
             <Finnish>Rintakehän tutkiminen</Finnish>
             <Dutch>Thoraxinspectie</Dutch>
+            <Hungarian>Mellkasvizsgálat</Hungarian>
         </Key>
         <Key ID="STR_KAT_Breathing_inspectChest_simple">
             <English>Symptoms indicate %1</English>
@@ -2983,6 +3172,7 @@
             <Chinesesimp>症状表明%1</Chinesesimp>
             <Finnish>Oireet osoittavat %1</Finnish>
             <Dutch>Symptomen indiceren %1</Dutch>
+            <Hungarian>A tünetek %1-ra utalnak.</Hungarian>
         </Key>
         <Key ID="STR_KAT_Breathing_inspectChest_uneven">
             <English>Chest sides are uneven</English>
@@ -2999,6 +3189,7 @@
             <Chinesesimp>胸部两侧不平</Chinesesimp>
             <Finnish>Rintakehän sivut ovat epätasaiset</Finnish>
             <Dutch>Thoraxzijden zijn oneven</Dutch>
+            <Hungarian>A mellkas oldalai egyenetlenek</Hungarian>
         </Key>
         <Key ID="STR_KAT_Breathing_inspectChest_unevenMovement">
             <English>Uneven chest rise and fall</English>
@@ -3015,6 +3206,7 @@
             <Chinesesimp>胸部起伏不均</Chinesesimp>
             <Finnish>Epätasainen rintakehän nousu ja lasku</Finnish>
             <Dutch>Ongelijkmatige stijging en daling van thorax</Dutch>
+            <Hungarian>Unilaterális mellkasmozgás megfigyelhető</Hungarian>
         </Key>
         <Key ID="STR_KAT_Breathing_inspectChest_uneven_log">
             <English>, chest sides uneven</English>
@@ -3031,6 +3223,7 @@
             <Chinesesimp>胸部两侧不平</Chinesesimp>
             <Finnish>, rintakehän sivut epätasaiset</Finnish>
             <Dutch>, thoraxzijden oneven</Dutch>
+            <Hungarian>, mellkas oldalai egyenetlenek</Hungarian>
         </Key>
         <Key ID="STR_KAT_Breathing_listening_progress">
             <English>Listening</English>
@@ -3049,6 +3242,7 @@
             <Turkish>Dinleme</Turkish>
             <Finnish>Kuunteleminen</Finnish>
             <Dutch>Luisteren</Dutch>
+            <Hungarian>Hallgatás</Hungarian>
         </Key>
         <Key ID="STR_KAT_Breathing_ncdKit_desc">
             <English>The Needle Chest Decompression Kit is a single use kit designed to treat a tensionpneumothorax.</English>
@@ -3066,6 +3260,7 @@
             <Chinesesimp>针刺胸腔减压套件是一次性使用的套件，设计用于治疗张力性气胸。</Chinesesimp>
             <Finnish>Neulan rintakehän dekompressiotyökalu on kertakäyttöinen työkalu, joka on suunniteltu hemopneumotoraksin hoitoon</Finnish>
             <Dutch>De naalddecompressie kit is een eenmaligsgebruik kit voor de behandeling van een spanningspneumothorax</Dutch>
+            <Hungarian>A NCD Kit egy egyszer használatos készlet, amelyet tenziós tüdőgyulladás kezelésére terveztek.</Hungarian>
         </Key>
         <Key ID="STR_KAT_Breathing_ncdKit_display">
             <English>NCD Kit</English>
@@ -3083,6 +3278,7 @@
             <Chinesesimp>NCD套件</Chinesesimp>
             <Finnish>NCD-laite</Finnish>
             <Dutch>ND kit</Dutch>
+            <Hungarian>Dekompressziós tű</Hungarian>
         </Key>
         <Key ID="STR_KAT_Breathing_placing">
             <English>Placing</English>
@@ -3101,6 +3297,7 @@
             <Turkish>Yerleştiriliyor</Turkish>
             <Finnish>Sijoittaminen</Finnish>
             <Dutch>plaatsen</Dutch>
+            <Hungarian>Elhelyezés</Hungarian>
         </Key>
         <Key ID="STR_KAT_Breathing_pneumothorax_mm">
             <English>1x Pneumothorax</English>
@@ -3119,6 +3316,7 @@
             <Turkish>1x Pnömotoraks</Turkish>
             <Finnish>1x Pneumotoraksi</Finnish>
             <Dutch>1x Pneumothorax</Dutch>
+            <Hungarian>1x Pneumothorax</Hungarian>
         </Key>
         <Key ID="STR_KAT_Breathing_pulseoxi_Log">
             <English>Pulse Oximeter: PR: %1 SpO2: %2</English>
@@ -3137,6 +3335,7 @@
             <Turkish>Nabız Oksimetresi: PR: %1 SpO2: %2</Turkish>
             <Finnish>Pulssioksimetri PR:%1 SpO2: %2</Finnish>
             <Dutch>Pulsoximeter: PR: %1 SpO2:%2</Dutch>
+            <Hungarian>Pulzoximéter: PR: %1 SpO2: %2</Hungarian>
         </Key>
         <Key ID="STR_KAT_Breathing_pulseoxi_Log_2">
             <English>%1 connected Pulseoximeter</English>
@@ -3155,6 +3354,7 @@
             <Turkish>%1 bağlı Nabız Ölçer</Turkish>
             <Finnish>%1 kytketty pulssioksimetri</Finnish>
             <Dutch>%1 plaatse pulsoximeter</Dutch>
+            <Hungarian>%1 csatlakoztatta a pulzoximétert</Hungarian>
         </Key>
         <Key ID="STR_KAT_Breathing_remove">
             <English>Removing</English>
@@ -3173,6 +3373,7 @@
             <Turkish>Çıkartılıyor</Turkish>
             <Finnish>Poistaminen</Finnish>
             <Dutch>verwijderen</Dutch>
+            <Hungarian>Eltávolítás</Hungarian>
         </Key>
         <Key ID="STR_KAT_Breathing_showPneumothorax_dupe">
             <English>Show pneumothorax duplicate</English>
@@ -3191,6 +3392,7 @@
             <Turkish>Pnömotoraks kopyasını göster</Turkish>
             <Finnish>Näytä päällekkäiset ilmarintavammat</Finnish>
             <Dutch>pneumothorax duplicaat tonen</Dutch>
+            <Hungarian>Pneumothorax duplikátum megjelenítése</Hungarian>
         </Key>
         <Key ID="STR_KAT_Breathing_showPneumothorax_dupe_DESC">
             <English>Default is disabled. If enabled, units with tension pneumothorax or hemopneumothorax will also have pneumothorax injury displayed in medical menu.</English>
@@ -3209,6 +3411,7 @@
             <Turkish>Varsayılan devre dışıdır. Etkinleştirilirse, tansiyon pnömotorakslı veya hemopnömotorakslı ünitelerde medikal menüde pnömotoraks yaralanması da görüntülenir.</Turkish>
             <Finnish>Oletuksena poissa käytöstä. Jos tämä on käytössä, potilaiden, joilla on jännittynyt pneumotoraksi tai hemopneumotoraksi, myös ilmarintavammat näkyvät lääkärinnäytössä.</Finnish>
             <Dutch>Standaard staat deze optie uit. Wanneer dit aanstaat zal een spanningspneumothorax of een hemopneumothorax ook een pneumothorax tonen in het medische menu.</Dutch>
+            <Hungarian>Alapértelmezés szerint ki van kapcsolva. Ha be van kapcsolva, akkor a tenziós pneumothorax vagy hemopneumothorax esetén az egységeknél a pneumothorax sérülés is megjelenik az orvosi menüben.</Hungarian>
         </Key>
         <Key ID="STR_KAT_Breathing_tensionpneumothoraxNCDKit_display">
             <English>Needle Decompression (NCD Kit)</English>
@@ -3226,6 +3429,7 @@
             <Chinesesimp>胸腔穿刺减压（NCD套件）</Chinesesimp>
             <Finnish>Neulan dekompressio (NCD Kit)</Finnish>
             <Dutch>Naalddecompressie kit (ND kit)</Dutch>
+            <Hungarian>Dekompressziós tű (NCD Kit)</Hungarian>
         </Key>
         <Key ID="STR_KAT_Breathing_tensionpneumothorax_display">
             <English>Needle Decompression</English>
@@ -3244,6 +3448,7 @@
             <Turkish>İğne Dekompresyonu</Turkish>
             <Finnish>Neulan dekompressio</Finnish>
             <Dutch>Naalddecompressie</Dutch>
+            <Hungarian>Tűs dekompresszió</Hungarian>
         </Key>
         <Key ID="STR_KAT_Breathing_tensionpneumothorax_mm">
             <English>1x Tension Pneumothorax</English>
@@ -3262,6 +3467,7 @@
             <Turkish>1x Gerilim Pnömotoraks'ı</Turkish>
             <Finnish>1x jännitysilmarinta</Finnish>
             <Dutch>1x Spanningspneumothorax</Dutch>
+            <Hungarian>1x Tenziós pneumothorax</Hungarian>
         </Key>
         <Key ID="STR_KAT_Breathing_treating">
             <English>Treating</English>
@@ -3280,74 +3486,92 @@
             <Turkish>Tedavi Ediliyor</Turkish>
             <Finnish>Hoito</Finnish>
             <Dutch>Behandelen</Dutch>
+            <Hungarian>Kezelés</Hungarian>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_SpO2_dieValue_DESC">
             <English>Sets the SpO2 value that causes death when reached</English>
             <German>Legt den SpO2-Wert fest, der bei Erreichen den Tod verursacht</German>
+            <Hungarian>Beállítja azt az SpO2 értéket, amelynek elérése halált okoz.</Hungarian>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_SpO2_dieActive_DESC">
             <English>Enables death when SpO2 reaches the lethal value</English>
             <German>Aktiviert den Tod, wenn SpO2 den tödlichen Wert erreicht</German>
+            <Hungarian>A halál bekövetkezését teszi lehetővé, amikor a SpO2 eléri a halálos értéket.</Hungarian>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_SpO2_cardiacValue_DESC">
             <English>Sets the SpO2 value that triggers cardiac arrest</English>
             <German>Legt den SpO2-Wert fest, der einen Herzstillstand auslöst</German>
+            <Hungarian>Beállítja a szívmegállást kiváltó SpO2 értéket.</Hungarian>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_SpO2_cardiacActive_DESC">
             <English>Enables cardiac arrest when SpO2 reaches the cardiac value</English>
             <German>Aktiviert Herzstillstand, wenn SpO2 den Herzwert erreicht</German>
+            <Hungarian>Lehetővé teszi a szívleállást, amikor az SpO2 eléri a szívértékét.(cardiac value)</Hungarian>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_MultiplyPositive_DESC">
             <English>Multiplier for positive SpO2 changes during breathing</English>
             <German>Multiplikator für positive SpO2-Änderungen beim Atmen</German>
+            <Hungarian>A légzés során bekövetkező pozitív SpO2 változások szorzója</Hungarian>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_MultiplyNegative_DESC">
             <English>Multiplier for negative SpO2 changes when not breathing properly</English>
             <German>Multiplikator für negative SpO2-Änderungen bei unzureichender Atmung</German>
+            <Hungarian>Szorzó a negatív SpO2 változásokhoz, ha nem lélegzik megfelelően</Hungarian>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_SpO2_Perfusion_DESC">
             <English>Controls whether SpO2 falls during cardiac arrest</English>
             <German>Kontrolliert, ob SpO2 während eines Herzstillstands fällt</German>
+            <Hungarian>Ellenőrzi, hogy a SpO2 csökken-e szívmegállás esetén</Hungarian>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_PerfusionMultiplier_DESC">
             <English>Multiplier for SpO2 changes during cardiac arrest</English>
             <German>Multiplikator für SpO2-Änderungen während eines Herzstillstands</German>
+            <Hungarian>SpO2 változások szorzója szívmegállás során</Hungarian>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_SELF_CHESTSEAL_DESC">
             <English>Allows players to apply chest seals on themselves</English>
             <German>Ermöglicht es Spielern, sich selbst Thoraxpflaster anzulegen</German>
+            <Hungarian>Lehetővé teszi a játékosok számára, hogy mellkasi szelepet helyezzenek el magukon.</Hungarian>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_clearChestSealAfterTreatment_DESC">
             <English>Removes chest seal from medical menu after pneumothorax treatment</English>
             <German>Entfernt Thoraxpflaster aus dem Medizinmenü nach Pneumothorax-Behandlung</German>
+            <Hungarian>A pneumothorax kezelése után eltávolítja a mellkasi szelepet az orvosi menüből.</Hungarian>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_Threshold_SpO2Warning_DESC">
             <English>SpO2 level at which the pulse oximeter starts warning</English>
             <German>SpO2-Wert, bei dem das Pulsoximeter zu warnen beginnt</German>
+            <Hungarian>Az a SpO2-szint, amelynél a pulzoximéter figyelmeztetést kezd adni</Hungarian>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_pneumothorax_DESC">
             <English>Probability for pneumothorax to occur from thoracic injuries</English>
             <German>Wahrscheinlichkeit für Pneumothorax bei Thoraxverletzungen</German>
+            <Hungarian>A mellkasi sérülésekből eredő pneumothorax kialakulásának valószínűsége</Hungarian>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_inspectChest_enable_DESC">
             <English>Enables the inspect chest action for diagnosing thoracic injuries</English>
             <German>Aktiviert die Brustraumuntersuchung zur Diagnose von Thoraxverletzungen</German>
+            <Hungarian>Lehetővé teszi a mellkas vizsgálatát a mellkasi sérülések diagnosztizálása érdekében.</Hungarian>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_inspectChest_medLvl_DESC">
             <English>Required medical training level to perform chest inspection</English>
             <German>Erforderliche medizinische Ausbildungsstufe für Brustraumuntersuchung</German>
+            <Hungarian>A mellkasvizsgálat elvégzéséhez szükséges orvosi képzettség szintje</Hungarian>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_inspectChest_time_DESC">
             <English>Time required to complete chest inspection</English>
             <German>Benötigte Zeit für die Brustraumuntersuchung</German>
+            <Hungarian>A mellkasvizsgálat elvégzéséhez szükséges idő</Hungarian>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_Select_Etco2_Units_DESC">
             <English>Units for displaying EtCO2 values</English>
             <German>Einheiten für die Anzeige von EtCO2-Werten</German>
+            <Hungarian>Az EtCO2 értékek megjelenítésére szolgáló egységek</Hungarian>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_BVMOxygen_Multiplier_DESC">
             <English>Effectiveness multiplier for BVM when used with oxygen</English>
             <German>Effektivitätsmultiplikator für BVM bei Verwendung mit Sauerstoff</German>
+            <Hungarian>A BVM hatékonyságának szorzója oxigénnel együttes használat esetén</Hungarian>
         </Key>
     </Package>
 </Project>
