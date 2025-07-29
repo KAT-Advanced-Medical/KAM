@@ -45,7 +45,6 @@ if (_isOccluded) then {
     _capRefillOutput = LSTRING(Check_capRefill_Output_NoRefill);
     _logCapRefillOutput = LSTRING(Check_capRefill_Output_NoRefill_log);
 } else {
-    // Adjust capillary refill output based on cardiac output ranges
     switch (true) do {
         case (_cardiacOutput >= (0.95 * _cardiacOutputRatio)): {
             // Normal refill ≤ 2s

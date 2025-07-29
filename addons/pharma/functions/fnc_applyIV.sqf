@@ -79,7 +79,6 @@ switch (_usedItem) do {
         _patient setVariable [QGVAR(IV), _IVarray, true];
         _patient setVariable [QGVAR(IVrate), _IVrate, true];
         private _medStack = _patient call ACEFUNC(medical_status,getAllMedicationCount);
-        systemchat str _medStack;
         private _medsToCheck = ["fentanyl", "ketamine", "nalbuphine", "morphine"];
         private _fentanylEffectiveness = 0;
         private _ketamineEffectiveness = 0;
@@ -177,7 +176,7 @@ switch (_usedItem) do {
         [_patient, "EZ IO"] call ACEFUNC(medical_treatment,addToTriageCard);};
 
     case "kat_EJV": {
-        if (random 100 < (GVAR(IVFailures) * 4)) then {
+        if (random 100 < (GVAR(IVFailures) * 2)) then {
             [_patient, [0.4, 0.5, 0.7] select (floor random 3)] call ACEFUNC(medical_status,adjustPainLevel);
             if (random 100 < 20) then {
                 if (QEGVAR(breathing,advPtxEnable)) then {

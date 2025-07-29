@@ -66,7 +66,6 @@ if (isMultiplayer) then {
     case (98 <= _id && _id <= 99): {_defaultMedEffectivness = 1.05};
     default {_defaultMedEffectivness = 1.00};
     };
-
     } else {
     _defaultMedEffectivness = _playerdefaultMedEffectivness;
     };
