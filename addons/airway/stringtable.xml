@@ -1920,7 +1920,7 @@
             <German>KAT - ADV Medical: Atemwege</German>
             <Japanese>KAM - 気道 (Airway)</Japanese>
             <Dutch>KAT - ADV Medical: Luchtwegen</Dutch>
-            <Hungarian>KAT - ADV Orvosi modul: Légút</Hungarian>
+            <Hungarian>KAT - ADV Medical: Légút</Hungarian>
         </Key>
         <Key ID="STR_KAT_Airway_checkAirway">
             <English>Check Airway</English>
