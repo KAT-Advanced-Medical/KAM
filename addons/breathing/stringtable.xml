@@ -54,7 +54,7 @@
             <Turkish>Chest Seal'a izin ver</Turkish>
             <Finnish>Salli rintatiiviste</Finnish>
             <Dutch>Sta chest seal toe</Dutch>
-            <Hungarian>Mellkasi szelep engedélyezése</Hungarian>
+            <Hungarian>Okkluzív kötszer engedélyezése</Hungarian>
         </Key>
         <Key ID="STR_KAT_Breathing_ALLOW_PULSEOXIMETER">
             <English>Allow Pulseoximeter</English>
@@ -167,7 +167,7 @@
             <Chinesesimp>BVM</Chinesesimp>
             <Finnish>BVM</Finnish>
             <Dutch>BVM</Dutch>
-            <Hungarian>Ambu ballon (BVM)</Hungarian>
+            <Hungarian>Ambu</Hungarian>
         </Key>
         <Key ID="STR_KAT_Breathing_Cancel_NasalCannula">
             <English>Remove Nasal Cannula</English>
@@ -262,7 +262,7 @@
             <Chinesesimp>胸部密封已应用</Chinesesimp>
             <Finnish>Rintatiiviste on kiinnitetty</Finnish>
             <Dutch>Chest seal aangebracht</Dutch>
-            <Hungarian>Mellkasi szelep felhelyezve</Hungarian>
+            <Hungarian>Okkluzív kötszer felhelyezve</Hungarian>
         </Key>
         <Key ID="STR_KAT_Breathing_CyanosisStatus_Mild">
             <English>Mild Cyanosis</English>
@@ -1629,7 +1629,7 @@
             <Chinesesimp>允许自我施用临时气胸密封贴</Chinesesimp>
             <Finnish>Salli rintatiivisteen käyttö itsellesi</Finnish>
             <Dutch>Sta chest seal zelfbehandeling toe</Dutch>
-            <Hungarian>Engedélyezze a mellkasi szelep önkezelését</Hungarian>
+            <Hungarian>Engedélyezze a okkluzív kötszer önfelrakását</Hungarian>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_STABLE_SPO2">
             <English>Stable SpO2 value to gain consciousness</English>
@@ -1952,7 +1952,7 @@
             <Chinesesimp>治疗后移除胸腔密封贴</Chinesesimp>
             <Finnish>Poista rintatiiviste hoidon jälkeen</Finnish>
             <Dutch>Verwijder chest seal na behandeling</Dutch>
-            <Hungarian>A kezelés után távolítsa el a mellkasi szelepet.</Hungarian>
+            <Hungarian>A kezelés után távolítsa el az okkluzív kötszert.</Hungarian>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_deepPenetratingInjuryChance">
             <English>Deep Penetrating Injury Chance</English>
@@ -2568,7 +2568,7 @@
             <Turkish>Chest Seal kullanmak için gerekli eğitim seviyesi</Turkish>
             <Finnish>Rintatiivisteen käyttämiseen vaadittava koulutustaso</Finnish>
             <Dutch>Trainingsniveau benodigd om een chest seal te gebruiken</Dutch>
-            <Hungarian>A mellkasi szelep használatához szükséges képzési szint</Hungarian>
+            <Hungarian>Az okkluzív kötszer használatához szükséges képzési szint</Hungarian>
         </Key>
         <Key ID="STR_KAT_Breathing_TRAININGLEVEL_PULSEOXIMETER">
             <English>Training level required to use a Pulseoximeter</English>
@@ -2979,7 +2979,7 @@
             <Turkish>Chest Seal, çoğu durumda açık göğüs yaralarını tedavi etmek, kapatmak ve yeniden kapatmak için tasarlanmıştır.</Turkish>
             <Finnish>Rintatiiviste on suunniteltu käsittelemään, tiivistämään ja uudelleensulkemaan avoimia rintahaavoja useimmissa olosuhteissa</Finnish>
             <Dutch>De chest seal is ontwikkeld om open borstwonden te dichten onder de meeste omstandigheden</Dutch>
-            <Hungarian>A mellkasi szelep úgy lett kialakítva, hogy a legtöbb esetben kezelje, lezárja és újra lezárja a nyitott mellkasi sebeket.</Hungarian>
+            <Hungarian>Az okkluzív kötszer úgy lett kialakítva, hogy a legtöbb esetben kezelje, lezárja és újra lezárja a nyitott mellkasi sebeket.</Hungarian>
         </Key>
         <Key ID="STR_KAT_Breathing_chestseal_display">
             <English>Chest Seal</English>
@@ -3531,12 +3531,12 @@
         <Key ID="STR_KAT_Breathing_SETTING_SELF_CHESTSEAL_DESC">
             <English>Allows players to apply chest seals on themselves</English>
             <German>Ermöglicht es Spielern, sich selbst Thoraxpflaster anzulegen</German>
-            <Hungarian>Lehetővé teszi a játékosok számára, hogy mellkasi szelepet helyezzenek el magukon.</Hungarian>
+            <Hungarian>Lehetővé teszi a játékosok számára, hogy okkluzív kötszert helyezzenek fel magukra.</Hungarian>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_clearChestSealAfterTreatment_DESC">
             <English>Removes chest seal from medical menu after pneumothorax treatment</English>
             <German>Entfernt Thoraxpflaster aus dem Medizinmenü nach Pneumothorax-Behandlung</German>
-            <Hungarian>A pneumothorax kezelése után eltávolítja a mellkasi szelepet az orvosi menüből.</Hungarian>
+            <Hungarian>A pneumothorax kezelése után eltávolítja az okkluzív kötszert az orvosi menüből.</Hungarian>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_Threshold_SpO2Warning_DESC">
             <English>SpO2 level at which the pulse oximeter starts warning</English>
