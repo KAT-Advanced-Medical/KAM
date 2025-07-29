@@ -33,12 +33,12 @@ if !(GVAR(coagulation)) exitWith {};
         [_idPFH] call CBA_fnc_removePerFrameHandler;
     };
 
-    if (GET_BLOOD_VOLUME_LITERS(_unit) < GVAR(coagulation_requireBV)) exitWith {}; // Blood volume check
+    private _bv = GET_BLOOD_VOLUME_LITERS(_unit);
+    if (_bv < GVAR(coagulation_requireBV)) exitWith {}; // Blood volume check
     if ((GET_HEART_RATE(_unit) < 20) && GVAR(coagulation_requireHR)) exitWith {}; // Has pulse & require setting
-
+    private _bodyFluid = GET_BODY_FLUID(_unit);
     private _currentCoagFactors = GET_BODY_FLUID_PLATELETS(_unit);
-    private _savedCoagFactors = _unit getVariable [QGVAR(coagulationSavedFactors), (_unit getVariable [QGVAR(coagulationFactor), 30])];
-    private _limitRegenCoagFactors = missionNamespace getVariable [QGVAR(coagulation_factor_count), 30];
+    private _savedCoagFactors = _unit getVariable [QGVAR(coagulationSavedFactors), GET_BODY_FLUID_PLATELETS(_unit)];
     private _cooldownON = _unit getVariable [QGVAR(coagulationRegenCooldown), false];
     private _medStack = [_patient, false] call ACEFUNC(medical_status,getAllMedicationCount);
     private _medsToCheck = ["TXA", "EACA"];
@@ -54,34 +54,41 @@ if !(GVAR(coagulation)) exitWith {};
             _eacaEffectiveness = _eacaEffectiveness max _effectiveness;
         };
     } forEach _medStack;
-    private _ammountToAdd = 1;
 
     if (_currentCoagFactors < _savedCoagFactors) exitWith {
         [{
             params["_unit"];
-            _unit setVariable [QGVAR(coagulationSavedFactors), _unit getVariable [QGVAR(coagulationFactor), 30], true];
+            _unit setVariable [QGVAR(coagulationSavedFactors), GET_BODY_FLUID_PLATELETS(_unit), true];
         },
         [_unit], ((missionNamespace getVariable [QGVAR(coagulation_factor_regenerate_time), 150]) / 2)] call CBA_fnc_waitAndExecute; // Block regen PFH instance from happening
     };
 
-    if (_currentCoagFactors == _savedCoagFactors && _currentCoagFactors < _limitRegenCoagFactors) exitWith {
+    if (_currentCoagFactors == _savedCoagFactors && _currentCoagFactors < 600) exitWith {
+        private _baseRegen = 2.5;
+        private _medBoost = 0;
 
-        if (__eacaEffectiveness > 0.3 || _txaEffectiveness > 0.3) then { // If TXA or EACA are in system add more factors
-            if (_eacaEffectiveness > 0.3 && _txaEffectiveness > 0.3) exitWith {
-                _ammountToAdd = 4;
-            };
-            _ammountToAdd = 2;
+        if (_eacaEffectiveness > 0.1) then {
+            _medBoost = _medBoost + (5 * (1 - exp(-2 * _eacaEffectiveness)));
+        };
+        if (_txaEffectiveness > 0.1) then {
+            _medBoost = _medBoost + (5 * (1 - exp(-2 * _txaEffectiveness)));
         };
 
-        _unit setVariable [QGVAR(coagulationFactor), (_currentCoagFactors + _ammountToAdd), true];
-        _unit setVariable [QGVAR(coagulationSavedFactors), (_currentCoagFactors + _ammountToAdd), true];
-    };
+        private _pain = GET_PAIN(_unit);
+        private _painBoost = linearConversion [0, 1, _pain, 0, 5, true];
+        private _factorDeficit = 600 - _currentCoagFactors;
+        private _reboundMultiplier = 1 + (1 - exp(-3 * (_factorDeficit / 600)));
+        private _regenAmount = ((_baseRegen + _medBoost + _injuryBoost + _painBoost) * _reboundMultiplier) min _factorDeficit;
+        _bodyFluid set [5, _currentCoagFactors + _regenAmount];
+        _unit setVariable [VAR_BODY_FLUID, _bodyFluid, true];
+        _unit setVariable [QGVAR(coagulationSavedFactors), _currentCoagFactors + _regenAmount, true];
+    };  
 
-    if (_currentCoagFactors > _limitRegenCoagFactors && !(_cooldownON)) exitWith {
+    if (_currentCoagFactors > 600 && !(_cooldownON)) exitWith {
 
         if (_txaEffectiveness > 0 || _eacaEffectiveness > 0) exitWith {}; // If TXA or EACA is in system don't remove factor
-
-        _unit setVariable [QGVAR(coagulationFactor), (_currentCoagFactors - 1), true];
+        _bodyFluid set [5, (_currentCoagFactors - 1)];
+        _unit setVariable [VAR_BODY_FLUID, _bodyFluid, true];
         _unit setVariable [QGVAR(coagulationSavedFactors), (_currentCoagFactors - 1), true];
         _unit setVariable [QGVAR(coagulationRegenCooldown), true, true];
 

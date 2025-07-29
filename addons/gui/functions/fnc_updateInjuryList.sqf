@@ -214,7 +214,7 @@ if (_totalIvVolume > 0) then {
 };
 
 // Indicate the amount of pain the unit is in
-if (_target call ACEFUNC(common,isAwake)) then {
+if (_target call ACEFUNC(common,isAwake) && ((_target == ACE_Player) || {!isPlayer _target}))  then {
     private _pain = GET_PAIN_PERCEIVED(_target);
     if (_pain > 0) then {
         private _painText = switch (true) do {

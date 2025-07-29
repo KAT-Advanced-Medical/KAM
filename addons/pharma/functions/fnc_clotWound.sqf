@@ -28,7 +28,7 @@ private _fnc_clotWound = {
             private _category = _woundClassID % 10;
             private _suffix = ["Minor", "Medium", "Large"] select _category;
             private _classIndex = _woundClassID / 10;
-            private _className = ACEGVAR(medical_damage,woundClassNames) select _classIndex;
+            private _classname = ACEGVAR(medical_damage,woundClassNames) select _classIndex;
             private _selectionName = localize format [LSTRING(%1), _bodyPart];
             private _logString = LSTRING(coagulation_Bandaged);
             private _woundClotTime = 0;
@@ -56,10 +56,11 @@ private _fnc_clotWound = {
             private _alteplaseFixedEffectiveness = linearConversion [0, 1, _alteplaseEffectiveness, 1, 10];
             private _coagulationFactor = GET_BODY_FLUID_PLATELETS(_unit);
             private _hypothermiaDelay = 1;
-            if (QEGVAR(hypothermia,hypothermiaActive)) then {
-                _hypothermiaDelay = linearConversion [35, 27, (_unit getVariable [QEGVAR(hypothermia,unitTemperature), 37]), 1, 3, true];
+            if (EGVAR(hypothermia,hypothermiaActive)) then {
+                _hypothermiaDelay = linearConversion [35, 30, (_unit getVariable [QEGVAR(hypothermia,unitTemperature), 37]), 1, 3, true];
             };
-            private _woundClotDelayMult = (1 * _alteplaseFixedEffectiveness * (600/_coagulationFactor) * _cwmpFixedEffectiveness * _hypothermiaDelay) min 10;
+            if (EGVAR(hypothermia,hypothermiaActive) && (_unit getVariable [QEGVAR(hypothermia,unitTemperature), 37]) < 30) exitWith {};
+            private _woundClotDelayMult = (1 * _alteplaseFixedEffectiveness * (600/_coagulationFactor) * _cwmpFixedEffectiveness * _hypothermiaDelay * GET_VASOCONSTRICTION(_unit)) min 10;
 
             switch (_suffix) do {
                 case "Minor": {
@@ -153,14 +154,19 @@ private _fnc_clotWound = {
                     if !(missionNamespace getVariable [QGVAR(coagulation_allow_LargeWounds), true]) then { continue; };
                 };
             };
-
+            _factorCountToRemove = ceil (_factorCountToRemove * (1 + ((_amountOf * _bleeding) * 0.5)));
             if (_amountOf * _bleeding > 0) exitWith {
 
-                if ((_eacaEffectiveness > 0.3 || _txaEffectiveness > 0.3)) then {
+               if ((_eacaEffectiveness > 0.3 || _txaEffectiveness > 0.3)) then {
                     _logString = LSTRING(coagulation_Bandaged_TXA);
+
+                    if (_eacaEffectiveness > 0.3 && _txaEffectiveness > 0.3) exitWith { // If TXA & EACA are in system at same time use EACA bandage
+                        _woundClotTime = round ((_woundClotTime / 3) * 2);
+                        _bandageToUse = _bandageToUse + "EACA";
+                    };
+
                     _bandageToUse = _bandageToUse + "TXA";
                 };
-
                 [{
                     params["_unit", "_bodyPart", "_selectionName", "_bandageToUse", "_logString", "_factorCountToRemove"];
 

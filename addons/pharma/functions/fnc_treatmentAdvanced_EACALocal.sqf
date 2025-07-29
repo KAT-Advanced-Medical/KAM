@@ -38,7 +38,7 @@ private _cycleTime = missionNamespace getVariable [QGVAR(bandageCycleTime_EACA),
 if (_IVactual > 1) then {
     private _randomNumber = random 100;
 
-    if (_IVactual != 14) exitWith {
+    if (_IVactual in [2, 3, 4]) exitWith {
         if (_randomNumber < GVAR(blockChance)) then {
             [{
                 params ["_patient", "_IVarray", "_partIndex", "_IVactual"];
@@ -57,7 +57,7 @@ if (_IVactual > 1) then {
 
 if (!(GVAR(coagulation)) || GVAR(coagulation_allow_EACA_script)) then {
     if ([7,8,9] find _IVactual == -1) then {
-        if (_eacaEffectiveness > 0.3) && (!_allowStack) exitWith {};
+        if (_eacaEffectiveness < 0.3) && (!_allowStack) exitWith {};
 
         [{
             params ["_args", "_idPFH"];
