@@ -47,10 +47,10 @@ if !(GVAR(coagulation)) exitWith {};
     {
         private _medName = toLower (_x select 0);
         private _effectiveness = _x select 2;
-        if ("TXA" in _medName) then {
+        if ("txa" in _medName) then {
             _txaEffectiveness = _txaEffectiveness max _effectiveness;
         };
-        if ("EACA" in _medName) then {
+        if ("eaca" in _medName) then {
             _eacaEffectiveness = _eacaEffectiveness max _effectiveness;
         };
     } forEach _medStack;
@@ -64,6 +64,7 @@ if !(GVAR(coagulation)) exitWith {};
     };
 
     if (_currentCoagFactors == _savedCoagFactors && _currentCoagFactors < 600) exitWith {
+        private _bodyFluid = GET_BODY_FLUID(_unit);
         private _baseRegen = 2.5;
         private _medBoost = 0;
 
@@ -73,21 +74,21 @@ if !(GVAR(coagulation)) exitWith {};
         if (_txaEffectiveness > 0.1) then {
             _medBoost = _medBoost + (5 * (1 - exp(-2 * _txaEffectiveness)));
         };
-
         private _pain = GET_PAIN(_unit);
-        private _painBoost = linearConversion [0, 1, _pain, 0, 5, true];
+        private _painBoost = linearConversion [0, 1, _pain, 0.01, 5, true];
         private _factorDeficit = 600 - _currentCoagFactors;
         private _reboundMultiplier = 1 + (1 - exp(-3 * (_factorDeficit / 600)));
-        private _regenAmount = ((_baseRegen + _medBoost + _injuryBoost + _painBoost) * _reboundMultiplier) min _factorDeficit;
-        _bodyFluid set [5, _currentCoagFactors + _regenAmount];
+        private _regenAmount = ((_baseRegen + _medBoost + _painBoost) * _reboundMultiplier) min _factorDeficit;
+        private _totalAmount = _currentCoagFactors + _regenAmount;
+        _bodyFluid set [5, _totalAmount];
         _unit setVariable [VAR_BODY_FLUID, _bodyFluid, true];
         _unit setVariable [QGVAR(coagulationSavedFactors), _currentCoagFactors + _regenAmount, true];
     };  
 
-    if (_currentCoagFactors > 600 && !(_cooldownON)) exitWith {
+    if (_currentCoagFactors > 700 && !(_cooldownON)) exitWith {
 
         if (_txaEffectiveness > 0 || _eacaEffectiveness > 0) exitWith {}; // If TXA or EACA is in system don't remove factor
-        _bodyFluid set [5, (_currentCoagFactors - 1)];
+        _bodyFluid set [5, (_currentCoagFactors - 5)];
         _unit setVariable [VAR_BODY_FLUID, _bodyFluid, true];
         _unit setVariable [QGVAR(coagulationSavedFactors), (_currentCoagFactors - 1), true];
         _unit setVariable [QGVAR(coagulationRegenCooldown), true, true];

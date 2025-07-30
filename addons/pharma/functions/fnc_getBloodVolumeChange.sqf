@@ -33,7 +33,7 @@ private _lossVolumeChange = (-_deltaT * ((_bloodLoss + _internalBleeding * (GET_
 private _enableFluidShift = EGVAR(vitals,enableFluidShift);
 private _fluidVolume = GET_BODY_FLUID(_unit);
 TRACE_3("gbvc",_internalBleeding,_bloodLoss,_heartRate);
-_fluidVolume params ["_ECB","_ECP","_SRBC","_ISP","_fullVolume", "_platelets"];
+_fluidVolume params ["_ECB","_ECP","_SRBC","_ISP","_fullVolume","_platelets"];
 
 _ECP = (_ECP + (_lossVolumeChange * LITERS_TO_ML) / 2) max 100;
 _ECB = (_ECB + (_lossVolumeChange * LITERS_TO_ML) / 2) max 100;
@@ -98,7 +98,7 @@ if (!isNil {_unit getVariable [QACEGVAR(medical,ivBags),[]]}) then {
                 };
             };
 
-            // Plasma adds to ECP. Saline splits between the ECP and ISP. Blood adds to ECB
+            // Plasma adds to ECP. Saline splits between the ECP and ISP. Blood adds to ECB/ECP
             switch (true) do {
                 case(_type == "Plasma"): {
                     _ECP = _ECP + _bagChange; _lossVolumeChange = _lossVolumeChange + (_bagChange / ML_TO_LITERS); 
@@ -131,11 +131,11 @@ if (!isNil {_unit getVariable [QACEGVAR(medical,ivBags),[]]}) then {
                 };
                 case(_type == "PackedRBC"): {
                     private _plasma = (_fluidVolume select 1);
-                    private _ph = GET_PH(_patient);
-                    if ((_plasma <= 2000) && (_ph > 6.5) && (_ph < 8)) then {
+                    private _ph = GET_PH(_unit);
+                    if ((_plasma >= 2000) && (_ph > 6.8) && (_ph < 8)) then {
                         _platelets = (_platelets + (_plateletAmount * _bagChange)) max 0;
                     };
-                    if (_plasma <= 2000) then {
+                    if (_plasma >= 2000) then {
                         _ECB = _ECB + (_bagChange * 1.5); 
                         _lossVolumeChange = _lossVolumeChange + ((_bagChange * 1.5) / ML_TO_LITERS); 
                     } else {
@@ -220,7 +220,7 @@ if (!isNil {_unit getVariable [QACEGVAR(medical,ivBags),[]]}) then {
     if (_bagVolumeRemaining < 0.01) then {
             []
         } else {
-            [_bagVolumeRemaining, _type, _bodyPart, _treatment, _rateCoef, _item]
+            [_bagVolumeRemaining, _type, _bodyPart, _treatment, _rateCoef, _item, _plateletAmount]
     };
     };
     _bloodBags = _bloodBags - [[]]; // remove empty bags

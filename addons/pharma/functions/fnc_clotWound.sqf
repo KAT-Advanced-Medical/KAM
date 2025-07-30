@@ -24,7 +24,7 @@ private _fnc_clotWound = {
 
         {
             _x params ["_woundClassID", "_amountOf", "_bleeding", "_damage"];
-
+            systemChat "clotting wound";
             private _category = _woundClassID % 10;
             private _suffix = ["Minor", "Medium", "Large"] select _category;
             private _classIndex = _woundClassID / 10;
@@ -175,8 +175,10 @@ private _fnc_clotWound = {
                     private _openWounds = GET_OPEN_WOUNDS(_unit);
                     private _openWoundsOnPart = _openWounds getOrDefault [_bodyPart, []];
                     private _woundIndex = _openWoundsOnPart findIf {(_x select 1) > 0 && (_x select 2) > 0};
-
-                    if (_coagulationFactor <= 0) exitWith {};
+                    systemChat str _coagulationFactor;
+                    if (_coagulationFactor <= 0) exitWith {
+                        systemChat "No Factors";
+                    };
                     if (_woundIndex == -1) exitWith {};
                     if ([_unit, _bodyPart] call ACEFUNC(medical_treatment,hasTourniquetAppliedTo) && missionNamespace getVariable [QGVAR(coagulation_tourniquetBlock), true]) exitWith {};
                     _bodyFluid set [5, (_coagulationFactor - _factorCountToRemove)];
