@@ -46,8 +46,8 @@ _patient setVariable [QACEGVAR(medical,medications), _medicationArray, true];
                 if (_surfaceArea < 400) then {
                     _patient setVariable [QEGVAR(breathing,lungSurfaceArea), _surfaceArea];
                 };
-                private _coagulationFactor = (_patient getVariable [QGVAR(coagulationFactor), 30]);
-                private _factorstoremove = 1;
-                _patient setVariable [QGVAR(coagulationFactor), (_coagulationFactor - _factorstoremove), true];
+                private _bloodlevels = GET_BODY_FLUID(_patient);
+                _bloodlevels set [5, (_bloodlevels select 5) - 5];
+                _patient setVariable [QEGVAR(circulation,bodyFluid), _bloodlevels, true];
         }, 10, [_patient,0]] call CBA_fnc_addPerFrameHandler;
 }, [_patient], 15] call CBA_fnc_waitAndExecute;

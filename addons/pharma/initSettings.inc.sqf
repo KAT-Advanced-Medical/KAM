@@ -354,14 +354,6 @@
     true
 ] call CBA_Settings_fnc_init;
 
-[
-    QGVAR(treatmentTime_Lorazepam),
-    "SLIDER",
-    [LLSTRING(treatmentTime_Lorazepam)],
-    [CBA_SETTINGS_CAT, LSTRING(SubCategory_Lorazepam)],
-    [0.1, 10, 2, 1],
-    true
-] call CBA_Settings_fnc_init;
 
 //Etomidate Settings Category
 [
@@ -370,15 +362,6 @@
     [LLSTRING(medLvl_Etomidate)],
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_Etomidate)],
     [[0, 1, 2], [ACELSTRING(medical_treatment,Anyone), ACELSTRING(medical_treatment,Medics), ACELSTRING(medical_treatment,Doctors)], 0],
-    true
-] call CBA_Settings_fnc_init;
-
-[
-    QGVAR(treatmentTime_Etomidate),
-    "SLIDER",
-    [LLSTRING(treatmentTime_Etomidate)],
-    [CBA_SETTINGS_CAT, LSTRING(SubCategory_Etomidate)],
-    [0.1, 10, 2, 1],
     true
 ] call CBA_Settings_fnc_init;
 
@@ -392,14 +375,6 @@
     true
 ] call CBA_Settings_fnc_init;
 
-[
-    QGVAR(treatmentTime_Flumazenil),
-    "SLIDER",
-    [LLSTRING(treatmentTime_Flumazenil)],
-    [CBA_SETTINGS_CAT, LSTRING(SubCategory_Flumazenil)],
-    [0.1, 10, 2, 1],
-    true
-] call CBA_Settings_fnc_init;
 
 // Naloxone Settings Category
 [
@@ -496,7 +471,6 @@
     true
 ] call CBA_Settings_fnc_init;
 
-
 [
     QGVAR(medLvl_TXAIM),
     "LIST",
@@ -506,14 +480,6 @@
     true
 ] call CBA_Settings_fnc_init;
 
-[
-    QGVAR(treatmentTime_TXAIM),
-    "SLIDER",
-    [LLSTRING(treatmentTime_TXAIM)],
-    [CBA_SETTINGS_CAT, LSTRING(SubCategory_TXA)],
-    [0.1, 10, 7, 1],
-    true
-] call CBA_Settings_fnc_init;
 
 [
     QGVAR(medLvl_TXAAuto),
@@ -552,14 +518,6 @@
     true
 ] call CBA_Settings_fnc_init;
 
-[
-    QGVAR(treatmentTime_EpinephrineIV),
-    "SLIDER",
-    [LLSTRING(treatmentTime_EpinephrineIV)],
-    [CBA_SETTINGS_CAT, LSTRING(SubCategory_EpinephrineIV)],
-    [0.1, 10, 7, 1],
-    true
-] call CBA_Settings_fnc_init;
 
 // Norepinephrine Settings Category
 [
@@ -571,14 +529,6 @@
     true
 ] call CBA_Settings_fnc_init;
 
-[
-    QGVAR(treatmentTime_Norepinephrine),
-    "SLIDER",
-    [LLSTRING(treatmentTime_Norepinephrine)],
-    [CBA_SETTINGS_CAT, LSTRING(SubCategory_Norepinephrine)],
-    [0.1, 10, 7, 1],
-    true
-] call CBA_Settings_fnc_init;
 
 // Phenylephrine Settings Category
 [
@@ -587,15 +537,6 @@
     [LLSTRING(medLvl_Phenylephrine)],
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_Phenylephrine)],
     [[0, 1, 2], [ACELSTRING(medical_treatment,Anyone), ACELSTRING(medical_treatment,Medics), ACELSTRING(medical_treatment,Doctors)], 0],
-    true
-] call CBA_Settings_fnc_init;
-
-[
-    QGVAR(treatmentTime_Phenylephrine),
-    "SLIDER",
-    [LLSTRING(treatmentTime_Phenylephrine)],
-    [CBA_SETTINGS_CAT, LSTRING(SubCategory_Phenylephrine)],
-    [0.1, 10, 7, 1],
     true
 ] call CBA_Settings_fnc_init;
 
@@ -609,14 +550,6 @@
     true
 ] call CBA_Settings_fnc_init;
 
-[
-    QGVAR(treatmentTime_Nitroglycerin),
-    "SLIDER",
-    [LLSTRING(treatmentTime_Nitroglycerin)],
-    [CBA_SETTINGS_CAT, LSTRING(SubCategory_Nitroglycerin)],
-    [0.1, 10, 7, 1],
-    true
-] call CBA_Settings_fnc_init;
 
 // Amiodarone Settings Category
 [
@@ -628,14 +561,6 @@
     true
 ] call CBA_Settings_fnc_init;
 
-[
-    QGVAR(treatmentTime_Amiodarone),
-    "SLIDER",
-    [LLSTRING(treatmentTime_Amiodarone)],
-    [CBA_SETTINGS_CAT, LSTRING(SubCategory_Amiodarone)],
-    [0.1, 10, 7, 1],
-    true
-] call CBA_Settings_fnc_init;
 
 // Lidocaine Settings Category
 [
@@ -647,14 +572,6 @@
     true
 ] call CBA_Settings_fnc_init;
 
-[
-    QGVAR(treatmentTime_Lidocaine),
-    "SLIDER",
-    [LLSTRING(treatmentTime_Lidocaine)],
-    [CBA_SETTINGS_CAT, LSTRING(SubCategory_Lidocaine)],
-    [0.1, 10, 7, 1],
-    true
-] call CBA_Settings_fnc_init;
 
 [
     QGVAR(medLvl_LidocaineIM),
@@ -662,15 +579,6 @@
     [LLSTRING(medLvl_LidocaineIM)],
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_Lidocaine)],
     [[0, 1, 2], [ACELSTRING(medical_treatment,Anyone), ACELSTRING(medical_treatment,Medics), ACELSTRING(medical_treatment,Doctors)], 0],
-    true
-] call CBA_Settings_fnc_init;
-
-[
-    QGVAR(treatmentTime_LidocaineIM),
-    "SLIDER",
-    [LLSTRING(treatmentTime_LidocaineIM)],
-    [CBA_SETTINGS_CAT, LSTRING(SubCategory_Lidocaine)],
-    [0.1, 10, 7, 1],
     true
 ] call CBA_Settings_fnc_init;
 
@@ -739,14 +647,6 @@
     true
 ] call CBA_Settings_fnc_init;
 
-[
-    QGVAR(treatmentTime_EACA),
-    "SLIDER",
-    [LLSTRING(treatmentTime_EACA)],
-    [CBA_SETTINGS_CAT, LSTRING(SubCategory_EACA)],
-    [0.1, 10, 7, 1],
-    true
-] call CBA_Settings_fnc_init;
 
 [
     QGVAR(eacaClearTrauma),
@@ -776,14 +676,6 @@
     true
 ] call CBA_Settings_fnc_init;
 
-[
-    QGVAR(treatmentTime_Ketamine),
-    "SLIDER",
-    [LLSTRING(treatmentTime_Ketamine)],
-    [CBA_SETTINGS_CAT, LSTRING(SubCategory_Ketamine)],
-    [0.1, 10, 7, 1],
-    true
-] call CBA_Settings_fnc_init;
 
 [
     QGVAR(medLvl_KetamineIM),
@@ -794,14 +686,6 @@
     true
 ] call CBA_Settings_fnc_init;
 
-[
-    QGVAR(treatmentTime_KetamineIM),
-    "SLIDER",
-    [LLSTRING(treatmentTime_KetamineIM)],
-    [CBA_SETTINGS_CAT, LSTRING(SubCategory_Ketamine)],
-    [0.1, 10, 7, 1],
-    true
-] call CBA_Settings_fnc_init;
 
 //Fentanyl Settings Category
 [
@@ -813,14 +697,6 @@
     true
 ] call CBA_Settings_fnc_init;
 
-[
-    QGVAR(treatmentTime_Fentanyl),
-    "SLIDER",
-    [LLSTRING(treatmentTime_Fentanyl)],
-    [CBA_SETTINGS_CAT, LSTRING(SubCategory_Fentanyl)],
-    [0.1, 10, 7, 1],
-    true
-] call CBA_Settings_fnc_init;
 
 [
     QGVAR(medLvl_FentanylIM),
@@ -831,14 +707,6 @@
     true
 ] call CBA_Settings_fnc_init;
 
-[
-    QGVAR(treatmentTime_FentanylIM),
-    "SLIDER",
-    [LLSTRING(treatmentTime_FentanylIM)],
-    [CBA_SETTINGS_CAT, LSTRING(SubCategory_Fentanyl)],
-    [0.1, 10, 7, 1],
-    true
-] call CBA_Settings_fnc_init;
 
 [
     QGVAR(medLvl_ApplyFentPatch),
@@ -869,15 +737,6 @@
 ] call CBA_Settings_fnc_init;
 
 [
-    QGVAR(treatmentTime_Nalbuphine),
-    "SLIDER",
-    [LLSTRING(treatmentTime_Nalbuphine)],
-    [CBA_SETTINGS_CAT, LSTRING(SubCategory_Nalbuphine)],
-    [0.1, 10, 7, 1],
-    true
-] call CBA_Settings_fnc_init;
-
-[
     QGVAR(medLvl_NalbuphineIM),
     "LIST",
     [LLSTRING(medLvl_NalbuphineIM)],
@@ -886,14 +745,6 @@
     true
 ] call CBA_Settings_fnc_init;
 
-[
-    QGVAR(treatmentTime_NalbuphineIM),
-    "SLIDER",
-    [LLSTRING(treatmentTime_NalbuphineIM)],
-    [CBA_SETTINGS_CAT, LSTRING(SubCategory_Nalbuphine)],
-    [0.1, 10, 7, 1],
-    true
-] call CBA_Settings_fnc_init;
 
 // Penthrox Settings Category
 [
@@ -1086,7 +937,7 @@
     "TIME",
     [LLSTRING(SETTING_Coagulation_Factor_Regenerate_Time), LLSTRING(SETTING_Coagulation_Factor_Regenerate_Time_DESC)],
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_Coagulation)],
-    [1, 900, 150],
+    [1, 120, 30],
     true
 ] call CBA_Settings_fnc_init;
 
@@ -1156,29 +1007,11 @@
 ] call CBA_Settings_fnc_init;
 
 [
-    QGVAR(treatmentTime_morphineIM),
-    "SLIDER",
-    [LLSTRING(treatmentTime_MorphineIM)],
-    [CBA_SETTINGS_CAT, LSTRING(SubCategory_Morphine)],
-    [0.1, 10, 7, 1],
-    true
-] call CBA_Settings_fnc_init;
-
-[
     QGVAR(medLvl_morphineIV),
     "LIST",
     [LLSTRING(medLvl_MorphineIV)],
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_Morphine)],
     [[0, 1, 2], [ACELSTRING(medical_treatment,Anyone), ACELSTRING(medical_treatment,Medics), ACELSTRING(medical_treatment,Doctors)], 0],
-    true
-] call CBA_Settings_fnc_init;
-
-[
-    QGVAR(treatmentTime_morphineIV),
-    "SLIDER",
-    [LLSTRING(treatmentTime_MorphineIV)],
-    [CBA_SETTINGS_CAT, LSTRING(SubCategory_Morphine)],
-    [0.1, 10, 7, 1],
     true
 ] call CBA_Settings_fnc_init;
 
@@ -1191,14 +1024,6 @@
     true
 ] call CBA_Settings_fnc_init;
 
-[
-    QGVAR(treatmentTime_adenosineIV),
-    "SLIDER",
-    [LLSTRING(treatmentTime_adenosineIV)],
-    [CBA_SETTINGS_CAT, LSTRING(SubCategory_AdenosineIV)],
-    [0.1, 10, 7, 1],
-    true
-] call CBA_Settings_fnc_init;
 
 [
     QGVAR(medLvl_Alteplase),

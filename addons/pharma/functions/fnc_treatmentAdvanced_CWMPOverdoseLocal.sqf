@@ -69,9 +69,9 @@ if GVAR(kidneyAction) then
                 _kidneyTarget = _kidneyTarget + 1;
                 if (_kidneyTarget > 12) exitWith {
                 [_idPFH] call CBA_fnc_removePerFrameHandler;};
-                private _coagulationFactor = (_patient getVariable [QGVAR(coagulationFactor), 30]);
-                private _factorstoremove = 1;
-                _patient setVariable [QGVAR(coagulationFactor), (_coagulationFactor - _factorstoremove), true];
+                private _bloodlevels = GET_BODY_FLUID(_patient);
+                _bloodlevels set [5, (_bloodlevels select 5) - 5];
+                _patient setVariable [QEGVAR(circulation,bodyFluid), _bloodlevels, true];
         }, 15, [_patient,0]] call CBA_fnc_addPerFrameHandler;
     }, [_patient], 15] call CBA_fnc_waitAndExecute;
 }, [_patient]] call CBA_fnc_waitUntilAndExecute;
