@@ -3990,13 +3990,13 @@
         <Key ID="STR_KAT_Circulation_Check_capRefill_Output_Normal">
             <English>You find a Capillary Refill time of ~1.5 seconds</English>
         </Key>
-        <Key ID="STR_KAT_CirculationCheck_capRefill_Output_NoRefill">
+        <Key ID="STR_KAT_Circulation_Check_capRefill_Output_NoRefill">
             <English>You find no Capillary Refill</English>
         </Key>
         <Key ID="STR_KAT_Circulation_Check_capRefill_Output_Delayed">
             <English>You find a Capillary Refill time of ~3 seconds</English>
         </Key>
-        <Key ID="STR_KAT_Circulation_Check_capRefill_Output_SeverelyDelayed_4">
+        <Key ID="STR_KAT_Circulation_Check_capRefill_Output_SeverelyDelayed">
             <English>You find a Capillary Refill time of ~5 seconds</English>
         </Key>
         <Key ID="STR_KAT_Circulation_Check_capRefill_Output_Normal_log">
