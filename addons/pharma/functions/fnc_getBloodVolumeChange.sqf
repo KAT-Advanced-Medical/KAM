@@ -110,7 +110,8 @@ if (!isNil {_unit getVariable [QACEGVAR(medical,ivBags),[]]}) then {
                                 [_idPFH] call CBA_fnc_removePerFrameHandler;
                             };
                             private _bloodlevels = GET_BODY_FLUID(_unit);
-                            _bloodlevels set [0, (_bloodlevels select 0) - 2];
+                            _bloodlevels set [0, (_bloodlevels select 0) - 5];
+                            _bloodlevels set [1, (_bloodlevels select 1) + 5];
                             _bloodlevels set [5, (_bloodlevels select 5) - 2];
                             _unit setVariable [QEGVAR(circulation,bodyFluid), _bloodlevels, true];
                         }, 1, [_unit]] call CBA_fnc_addPerFrameHandler;
@@ -120,7 +121,7 @@ if (!isNil {_unit getVariable [QACEGVAR(medical,ivBags),[]]}) then {
             };
             // Plasma adds to ECP. Saline splits between the ECP and ISP. Blood adds to ECB/ECP
             private _ph = _unit getVariable [QGVAR(externalPh), 0];
-            private _ph = (_ph + (_phChange * _bagChange)) max 0;
+            private _ph = (_ph + (_phChange * _bagChange));
             _unit setVariable [QGVAR(externalPh), _ph];
             switch (true) do {
                 case(_type == "Plasma"): {
