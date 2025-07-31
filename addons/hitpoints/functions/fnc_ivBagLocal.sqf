@@ -41,9 +41,10 @@ private _volume    = GET_NUMBER(_ivConfig >> "volume",getNumber (_defaultConfig 
 private _type      = GET_STRING(_ivConfig >> "type",getText (_defaultConfig >> "type"));
 private _rateCoef  = GET_NUMBER(_ivConfig >> "rateCoef",getNumber (_defaultConfig >> "rateCoef"));
 private _platelets = GET_NUMBER(_ivConfig >> "platelets",getNumber (_defaultConfig >> "platelets"));
+private _ph = GET_NUMBER(_ivConfig >> "ph",getNumber (_defaultConfig >> "ph"));
 
 // Add IV bag to patient's ivBags array
 TRACE_6("IVBAGLOCAL",_volume,_type,_partIndex,_treatment,_rateCoef,_item);
 private _ivBags = _patient getVariable [QACEGVAR(medical,ivBags), []];
-_ivBags pushBack [_volume, _type, _partIndex, _treatment, _rateCoef, _item, _platelets];
+_ivBags pushBack [_volume, _type, _partIndex, _treatment, _rateCoef, _item, _platelets, _ph];
 _patient setVariable [QACEGVAR(medical,ivBags), _ivBags, true];

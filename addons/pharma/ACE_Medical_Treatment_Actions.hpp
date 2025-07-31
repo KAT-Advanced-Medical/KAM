@@ -13,61 +13,61 @@ class ACE_Medical_Treatment_Actions {
         allowedSelections[] = {"Chest", "LeftArm", "RightArm", "UpperLeftLeg", "UpperRightLeg", "UpperLeftArm", "UpperRightArm", "LeftLeg", "RightLeg", "Neck"};
         medicRequired = QUOTE(ace_medical_treatment_medicIV);
         condition = QUOTE(!(GVAR(RequireInsIV)) || FUNC(removeIVCheck));
-        callbackSuccess = "[_medic, _patient, _bodyPart, _className, _itemUser, _usedItem] call ace_medical_treatment_fnc_ivBag; [_patient, -800, 16, _className] call kat_pharma_fnc_fluid;";
+        callbackSuccess = "[_medic, _patient, _bodyPart, _className, _itemUser, _usedItem] call ace_medical_treatment_fnc_ivBag;";
     };
     class BloodIV_500: BloodIV {
-        callbackSuccess = "[_medic, _patient, _bodyPart, _className, _itemUser, _usedItem] call ace_medical_treatment_fnc_ivBag; [_patient, -400, 8, _className] call kat_pharma_fnc_fluid;";
+        callbackSuccess = "[_medic, _patient, _bodyPart, _className, _itemUser, _usedItem] call ace_medical_treatment_fnc_ivBag;";
     };
     class BloodIV_250: BloodIV {
-        callbackSuccess = "[_medic, _patient, _bodyPart, _className, _itemUser, _usedItem] call ace_medical_treatment_fnc_ivBag; [_patient, -200, 4, _className] call kat_pharma_fnc_fluid;";
+        callbackSuccess = "[_medic, _patient, _bodyPart, _className, _itemUser, _usedItem] call ace_medical_treatment_fnc_ivBag;";
     };
     class SalineIV: BloodIV {
-        callbackSuccess = "[_medic, _patient, _bodyPart, _className, _itemUser, _usedItem] call ace_medical_treatment_fnc_ivBag; [_patient, 750, 0, _className] call kat_pharma_fnc_fluid;";
+        callbackSuccess = "[_medic, _patient, _bodyPart, _className, _itemUser, _usedItem] call ace_medical_treatment_fnc_ivBag;";
     };
     class SalineIV_500: SalineIV {
-        callbackSuccess = "[_medic, _patient, _bodyPart, _className, _itemUser, _usedItem] call ace_medical_treatment_fnc_ivBag; [_patient, 350, 0, _className] call kat_pharma_fnc_fluid;";
+        callbackSuccess = "[_medic, _patient, _bodyPart, _className, _itemUser, _usedItem] call ace_medical_treatment_fnc_ivBag;";
     };
     class SalineIV_250: SalineIV {
-        callbackSuccess = "[_medic, _patient, _bodyPart, _className, _itemUser, _usedItem] call ace_medical_treatment_fnc_ivBag; [_patient, 150, 0, _className] call kat_pharma_fnc_fluid;";
+        callbackSuccess = "[_medic, _patient, _bodyPart, _className, _itemUser, _usedItem] call ace_medical_treatment_fnc_ivBag;";
     };
     class PlasmaIV: BloodIV {
-        callbackSuccess = "[_medic, _patient, _bodyPart, _className, _itemUser, _usedItem] call ace_medical_treatment_fnc_ivBag; [_patient, -500, 20, _className] call kat_pharma_fnc_fluid;";
+        callbackSuccess = "[_medic, _patient, _bodyPart, _className, _itemUser, _usedItem] call ace_medical_treatment_fnc_ivBag;";
     };
     class PlasmaIV_500: PlasmaIV {
-        callbackSuccess = "[_medic, _patient, _bodyPart, _className, _itemUser, _usedItem] call ace_medical_treatment_fnc_ivBag; [_patient, -250, 10, _className] call kat_pharma_fnc_fluid;";
+        callbackSuccess = "[_medic, _patient, _bodyPart, _className, _itemUser, _usedItem] call ace_medical_treatment_fnc_ivBag;";
     };
     class PlasmaIV_250: PlasmaIV {
-        callbackSuccess = "[_medic, _patient, _bodyPart, _className, _itemUser, _usedItem] call ace_medical_treatment_fnc_ivBag; [_patient, -100, 5, _className] call kat_pharma_fnc_fluid;";
+        callbackSuccess = "[_medic, _patient, _bodyPart, _className, _itemUser, _usedItem] call ace_medical_treatment_fnc_ivBag;";
     };
     class PackedRBCIV_500: BloodIV {
         displayName = CSTRING(Actions_Packed_RBC_500);
         items[] = {"kat_PackedRBCIV_500"};
         displayNameProgress = CSTRING(Transfusing_Packed_RBC);
-        callbackSuccess = "[_medic, _patient, _bodyPart, _className, _itemUser, _usedItem] call ace_medical_treatment_fnc_ivBag; [_patient, -400, 16, _className] call kat_pharma_fnc_fluid;";
+        callbackSuccess = "[_medic, _patient, _bodyPart, _className, _itemUser, _usedItem] call ace_medical_treatment_fnc_ivBag;";
     };
     class PackedRBCIV_250: BloodIV {
         displayName = CSTRING(Actions_Packed_RBC_250);
         items[] = {"kat_PackedRBCIV_250"};
         displayNameProgress = CSTRING(Transfusing_Packed_RBC);
-        callbackSuccess = "[_medic, _patient, _bodyPart, _className, _itemUser, _usedItem] call ace_medical_treatment_fnc_ivBag; [_patient, -200, 8, _className] call kat_pharma_fnc_fluid;";
+        callbackSuccess = "[_medic, _patient, _bodyPart, _className, _itemUser, _usedItem] call ace_medical_treatment_fnc_ivBag;";
     };
     class RingersLactateIV: SalineIV {
         displayName = CSTRING(Actions_Ringers_Lactate);
         items[] = {"kat_RingersLactateIV"};
         displayNameProgress = CSTRING(Transfusing_Ringers_Lactate);
-        callbackSuccess = "[_medic, _patient, _bodyPart, _className, _itemUser, _usedItem] call ace_medical_treatment_fnc_ivBag; [_patient, -200, 0, _className] call kat_pharma_fnc_fluid;";
+        callbackSuccess = "[_medic, _patient, _bodyPart, _className, _itemUser, _usedItem] call ace_medical_treatment_fnc_ivBag;";
     };
     class RingersLactateIV_500: SalineIV {
         displayName = CSTRING(Actions_Ringers_Lactate_500);
         items[] = {"kat_RingersLactateIV_500"};
         displayNameProgress = CSTRING(Transfusing_Ringers_Lactate);
-        callbackSuccess = "[_medic, _patient, _bodyPart, _className, _itemUser, _usedItem] call ace_medical_treatment_fnc_ivBag; [_patient, -100, 0, _className] call kat_pharma_fnc_fluid;";
+        callbackSuccess = "[_medic, _patient, _bodyPart, _className, _itemUser, _usedItem] call ace_medical_treatment_fnc_ivBag;";
     };
     class RingersLactateIV_250: SalineIV {
         displayName = CSTRING(Actions_Ringers_Lactate_250);
         items[] = {"kat_RingersLactateIV_250"};
         displayNameProgress = CSTRING(Transfusing_Ringers_Lactate);
-        callbackSuccess = "[_medic, _patient, _bodyPart, _className, _itemUser, _usedItem] call ace_medical_treatment_fnc_ivBag; [_patient, -50, 0, _className] call kat_pharma_fnc_fluid;";
+        callbackSuccess = "[_medic, _patient, _bodyPart, _className, _itemUser, _usedItem] call ace_medical_treatment_fnc_ivBag;";
     };
     class Epinephrine: Morphine {
         callbackSuccess = QFUNC(medication);

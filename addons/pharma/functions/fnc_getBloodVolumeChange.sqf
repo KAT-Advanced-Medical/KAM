@@ -55,7 +55,7 @@ if (!isNil {_unit getVariable [QACEGVAR(medical,ivBags),[]]}) then {
     private _fluidHeat = 0;
 
     _bloodBags = _bloodBags apply {
-        _x params ["_bagVolumeRemaining", "_type", "_bodyPart", "_treatment", "_rateCoef", "_item", "_plateletAmount"];
+        _x params ["_bagVolumeRemaining", "_type", "_bodyPart", "_treatment", "_rateCoef", "_item", "_plateletAmount", "_phChange"];
 
         private _tourniquets = GET_TOURNIQUETS(_unit);
         private _occlusionMap = [
@@ -97,12 +97,36 @@ if (!isNil {_unit getVariable [QACEGVAR(medical,ivBags),[]]}) then {
                     _incomingVolumeChange set [_bodyPart, ((_incomingVolumeChange select _bodyPart) - _bagChange)];
                 };
             };
-
+            if (_type == "Blood") then {
+                if !([_unit, _item] call EFUNC(circulation,compatible)) then {
+                    [_unit, "BloodPoisoning", 10, 60] call EFUNC(vitals,addMedicationAdjustment);
+                    if ((_unit getVariable ["kat_hemolysisPFH", -1]) isEqualTo -1) then {
+                        private _hemolysisPFH = [{
+                            params ["_args", "_idPFH"];
+                            _args params ["_unit"];
+                            private _medCount = [_unit, "BloodPoisoning"] call ACEFUNC(medical_status,getMedicationCount) select 0;
+                            if ((_medCount == 0) || !(alive _unit)) exitWith {
+                                _unit setVariable ["kat_hemolysisPFH", nil, true];
+                                [_idPFH] call CBA_fnc_removePerFrameHandler;
+                            };
+                            private _bloodlevels = GET_BODY_FLUID(_unit);
+                            _bloodlevels set [0, (_bloodlevels select 0) - 2];
+                            _bloodlevels set [5, (_bloodlevels select 5) - 2];
+                            _unit setVariable [QEGVAR(circulation,bodyFluid), _bloodlevels, true];
+                        }, 1, [_unit]] call CBA_fnc_addPerFrameHandler;
+                        _unit setVariable ["kat_hemolysisPFH", _hemolysisPFH, true];
+                    };
+                };
+            };
             // Plasma adds to ECP. Saline splits between the ECP and ISP. Blood adds to ECB/ECP
+            private _ph = _unit getVariable [QGVAR(externalPh), 0];
+            private _ph = (_ph + (_phChange * _bagChange)) max 0;
+            _unit setVariable [QGVAR(externalPh), _ph];
             switch (true) do {
                 case(_type == "Plasma"): {
                     _ECP = _ECP + _bagChange; _lossVolumeChange = _lossVolumeChange + (_bagChange / ML_TO_LITERS); 
                     _platelets = (_platelets + (_plateletAmount * _bagChange)) max 0;};
+                    
                 case(_type == "Saline"): { 
                     if (_enableFluidShift) then {
                         _ECP = _ECP + _bagChange / 2; 
@@ -153,17 +177,17 @@ if (!isNil {_unit getVariable [QACEGVAR(medical,ivBags),[]]}) then {
             _incomingFlowAmount set [_bodyPart, ((_incomingFlowAmount select _bodyPart) + _bagChange)];
             _unit setVariable [QGVAR(IVincomingFlowAmount), _incomingFlowAmount, true];
             private _defaultHeartRate = _unit getVariable [QEGVAR(circulation,defaultHeartRate), 80];
-            private _heartRateRatio = GET_HEART_RATE(_patient) / _defaultHeartRate;
+            private _heartRateRatio = GET_HEART_RATE(_unit) / _defaultHeartRate;
             private _bloodBased = GET_STRING(_ivConfig >> "bloodBased",getText (_defaultConfig >> "bloodBased"));
             private _hemocrit = 1;
             if (_bloodBased == "true") then {
-                _hemocrit = (GET_BODY_FLUID_ECB(_patient)/GET_BODY_FLUID_ECP(_patient)) / (DEFAULT_ECB/DEFAULT_ECP)
+                _hemocrit = (GET_BODY_FLUID_ECB(_unit)/GET_BODY_FLUID_ECP(_unit)) / (DEFAULT_ECB/DEFAULT_ECP)
             } else {
-                _hemocrit = (GET_BODY_FLUID_ECP(_patient)/GET_BODY_FLUID_ECB(_patient)) / (DEFAULT_ECP/DEFAULT_ECB)
+                _hemocrit = (GET_BODY_FLUID_ECP(_unit)/GET_BODY_FLUID_ECB(_unit)) / (DEFAULT_ECP/DEFAULT_ECB)
             };
-            private _drugMult = (((((GET_BLOOD_VOLUME_LITERS(_patient))/ DEFAULT_BLOOD_VOLUME) * (_heartRateRatio) * _hemocrit) max 0.2) min 2.5);
+            private _drugMult = (((((GET_BLOOD_VOLUME_LITERS(_unit))/ DEFAULT_BLOOD_VOLUME) * (_heartRateRatio) * _hemocrit) max 0.2) min 2.5);
             private _defaultConfig = configFile >> QUOTE(ACE_ADDON(Medical_Treatment)) >> "IV";
-            private _ivConfig = _defaultConfig >> _type;
+            private _ivConfig = _defaultConfig >> _treatment;
             private _painReduce             = (GET_NUMBER(_ivConfig >> "painReduce",getNumber (_defaultConfig >> "painReduce")) * _medicationMult) * _drugMult;
             private _timeInSystem           = (GET_NUMBER(_ivConfig >> "timeInSystem",getNumber (_defaultConfig >> "timeInSystem")) * _medicationMult) * _drugMult;
             private _timeTillMaxEffect      = (GET_NUMBER(_ivConfig >> "timeTillMaxEffect",getNumber (_defaultConfig >> "timeTillMaxEffect")) * _medicationMult) * _drugMult;
@@ -207,7 +231,9 @@ if (!isNil {_unit getVariable [QACEGVAR(medical,ivBags),[]]}) then {
                     _incomingVolumeChange set [_bodyPart, ((_incomingVolumeChange select _bodyPart) - _bagChange)];
                 };
             };
-            
+            private _ph = _unit getVariable [QGVAR(externalPh), 0];
+            private _ph = (_ph + (_phChange * _bagChange)) max 0;
+            _unit setVariable [QGVAR(externalPh), _ph];
             if (_enableFluidShift) then {
                 _ECP = _ECP + _bagChange / 2; 
                 _ISP = _ISP + _bagChange / 2; 
@@ -220,7 +246,7 @@ if (!isNil {_unit getVariable [QACEGVAR(medical,ivBags),[]]}) then {
     if (_bagVolumeRemaining < 0.01) then {
             []
         } else {
-            [_bagVolumeRemaining, _type, _bodyPart, _treatment, _rateCoef, _item, _plateletAmount]
+            [_bagVolumeRemaining, _type, _bodyPart, _treatment, _rateCoef, _item, _plateletAmount, _phChange]
     };
     };
     _bloodBags = _bloodBags - [[]]; // remove empty bags

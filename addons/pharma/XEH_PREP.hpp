@@ -4,8 +4,6 @@ PREP(checkIV);
 PREP(checkIVType);
 PREP(clotWound);
 PREP(coagRegen);
-PREP(fluid);
-PREP(fluidLocal);
 PREP(fullHealLocal);
 PREP(generateMedicationEffectivness);
 PREP(getBloodVolumeChange);

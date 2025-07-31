@@ -15,7 +15,6 @@
 [QGVAR(dialysisLocal), LINKFUNC(treatmentAdvanced_DialysisLocal)] call CBA_fnc_addEventHandler;
 [QGVAR(flumazenilLocal), LINKFUNC(treatmentAdvanced_FlumazenilLocal)] call CBA_fnc_addEventHandler;
 [QGVAR(lorazepamLocal), LINKFUNC(treatmentAdvanced_LorazepamLocal)] call CBA_fnc_addEventHandler;
-[QGVAR(fluidLocal), LINKFUNC(fluidLocal)] call CBA_fnc_addEventHandler;
 [QGVAR(flushLocal), LINKFUNC(treatmentAdvanced_FlushLocal)] call CBA_fnc_addEventHandler;
 [QGVAR(pervitinLocal), LINKFUNC(treatmentAdvanced_PervitinLocal)] call CBA_fnc_addEventHandler;
 [QGVAR(pervitinPP), LINKFUNC(pervitinPP)] call CBA_fnc_addEventHandler;
@@ -57,9 +56,6 @@
 [QGVAR(phenylephrineOverdoseLocal), LINKFUNC(treatmentAdvanced_PhenylephrineOverdoseLocal)] call CBA_fnc_addEventHandler;
 [QGVAR(pervitinOverdoseLocal), LINKFUNC(treatmentAdvanced_PervitinOverdoseLocal)] call CBA_fnc_addEventHandler;
 [QGVAR(txaOverdoseLocal), LINKFUNC(treatmentAdvanced_TXAOverdoseLocal)] call CBA_fnc_addEventHandler;
-
-["kat_fluid", LINKFUNC(fluid)] call CBA_fnc_addEventHandler;
-
 
 [QEGVAR(misc,handleRespawn), LINKFUNC(handleRespawn)] call CBA_fnc_addEventHandler;
 

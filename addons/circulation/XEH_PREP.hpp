@@ -67,7 +67,6 @@ PREP(placeAED);
 PREP(placeAED_PickUpAction);
 PREP(removeLog);
 PREP(showBloodGas);
-PREP(treatmentAdvanced_IV);
 PREP(updateBloodPressureChange);
 PREP(updateHeartRate);
 PREP(updateInternalBleeding);
