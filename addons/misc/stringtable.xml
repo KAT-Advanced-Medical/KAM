@@ -2023,5 +2023,29 @@
         <Key ID="STR_KAT_Misc_MEDPACK_Slot_8_Repack">
             <English>Repack Miscellaneous Section</English>
         </Key>
+        <Key ID="STR_KAT_Misc_SETTING_MEDPACKFirstSlot_Item">
+            <English>Syringe Section Items &amp; Quantity</English>
+        </Key>
+        <Key ID="STR_KAT_Misc_SETTING_MEDPACKSecondSlot_Item">
+            <English>IV/IO Section Items &amp; Quantity</English>
+        </Key>
+        <Key ID="STR_KAT_Misc_SETTING_MEDPACKThirdSlot_Item">
+            <English>Trauma Med Section Items &amp; Quantity</English>
+        </Key>
+        <Key ID="STR_KAT_Misc_SETTING_MEDPACKFourthSlot_Item">
+            <English>Cardiac Med Section Items &amp; Quantity</English>
+        </Key>
+        <Key ID="STR_KAT_Misc_SETTING_MEDPACKFifthSlot_Item">
+            <English>Surgery Med Section Items &amp; Quantity</English>
+        </Key>
+        <Key ID="STR_KAT_Misc_SETTING_MEDPACKSixthSlot_Item">
+            <English>Pain Med Section Items &amp; Quantity</English>
+        </Key>
+        <Key ID="STR_KAT_Misc_SETTING_MEDPACKSeventhSlot_Item">
+            <English>Fluid Section Items &amp; Quantity</English>
+        </Key>
+        <Key ID="STR_KAT_Misc_SETTING_MEDPACKEighthSlot_Item">
+            <English>Miscellaneous Section Items &amp; Quantity</English>
+        </Key>
     </Package>
 </Project>
