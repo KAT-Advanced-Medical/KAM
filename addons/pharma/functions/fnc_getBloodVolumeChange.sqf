@@ -251,7 +251,6 @@ if (!isNil {_unit getVariable [QACEGVAR(medical,ivBags),[]]}) then {
     };
     };
     _bloodBags = _bloodBags - [[]]; // remove empty bags
-
     if (_bloodBags isEqualTo []) then {
         _unit setVariable [QACEGVAR(medical,ivBags), nil, true]; // no bags left - clear variable (always globaly sync this)
     } else {
@@ -271,7 +270,7 @@ if (!isNil {_unit getVariable [QACEGVAR(medical,ivBags),[]]}) then {
         };
     };
 };
-
+_unit setVariable [QGVAR(IVincomingFlowAmount), [0,0,0,0,0,0,0,0,0,0,0,0], true];
 private _SRBCChange = 0;
 
 if (_enableFluidShift) then {
