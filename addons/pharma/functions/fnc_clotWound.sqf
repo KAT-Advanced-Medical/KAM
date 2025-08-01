@@ -175,9 +175,7 @@ private _fnc_clotWound = {
                     private _openWounds = GET_OPEN_WOUNDS(_unit);
                     private _openWoundsOnPart = _openWounds getOrDefault [_bodyPart, []];
                     private _woundIndex = _openWoundsOnPart findIf {(_x select 1) > 0 && (_x select 2) > 0};
-                    systemChat str _coagulationFactor;
                     if (_coagulationFactor <= 0) exitWith {
-                        systemChat "No Factors";
                     };
                     if (_woundIndex == -1) exitWith {};
                     if ([_unit, _bodyPart] call ACEFUNC(medical_treatment,hasTourniquetAppliedTo) && missionNamespace getVariable [QGVAR(coagulation_tourniquetBlock), true]) exitWith {};
