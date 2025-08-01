@@ -19,7 +19,7 @@
 params ["_medic", "_patient", "_bodyPart"];
 private _partIndex = ALL_BODY_PARTS find _bodyPart;
 private _fentPatch = _patient getVariable [VAR_FENT_PATCH, [0,0,0,0,0,0,0,0,0,0,0,0]];
-[_patient, "Fentanyl", 0, 15, 0, 0.5] call EFUNC(vitals,addMedicationAdjustment);
+[_patient, "Fentanyl", 0, 30, 0, 0.5] call EFUNC(vitals,addMedicationAdjustment);
 _fentPatch set [_partIndex, 1];
 _patient setVariable [VAR_FENT_PATCH, _fentPatch, true];
 [{
