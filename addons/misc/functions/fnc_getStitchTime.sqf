@@ -24,7 +24,7 @@ private _unstitchableTypes = ["ETD", "Israeli_Bandage"];
 private _bandagedWounds = GET_BANDAGED_WOUNDS(_patient) getOrDefault [_bodyPart, []];
 private _clottedWounds  = GET_COAGED_WOUNDS(_patient) getOrDefault [_bodyPart, []];
 private _wrappedWounds = GET_WRAPPED_WOUNDS(_patient) getOrDefault [_bodyPart, []];
-private _startingAmountOf = 0;
+private _amountOf = 0;
 
 private _stitchableWounds = _bandagedWounds select {
     _x params ["_woundClassID", "_amountOfWounds", "_bleedingRate", "", "_type"];
