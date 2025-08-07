@@ -99,4 +99,4 @@ All types of poisoning can be treated with **Atropine**.
 
 ### Decontamiation
 
-To decontaminate yourself you need any ace saline, and the interaction is available under advanced tab.
+To decontaminate yourself you need decon kit in inventory, and the interaction is available under advanced tab.

@@ -28,6 +28,20 @@ class CfgWeapons {
         };
     };
 
+    class kat_deconkit : ACE_ItemCore {
+        scope = 2;
+        author = "kolmipilot";
+        displayName = CSTRING(deconkitItem);
+        model = "\a3\Props_F_Enoch\Military\Decontamination\DeconKit_01_F.p3d";
+        picture = QPATHTOF(ui\deconkit_icon.paa);
+        descriptionShort = CSTRING(deconkitItem_desc);
+        descriptionUse = CSTRING(deconkitItem_desc);
+        ACE_isMedicalItem = 1;
+        class ItemInfo: CBA_MiscItem_ItemInfo {
+            mass = 1;
+        };
+    };
+
     class ItemWatch;
     class KAT_ChemicalDetector: ItemWatch {
         ACE_hideItemType = "Watch";

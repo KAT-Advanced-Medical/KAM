@@ -17,7 +17,8 @@ class CfgPatches {
             "KAT_CAS_M43_Bomb",
             "KAT_CAS_R_80mm_GAS_POD",
             "KAT_ChemicalDetector",
-            "KAT_CAS_BLU80_Bomb"
+            "KAT_CAS_BLU80_Bomb",
+            "kat_deconkit"
         };
         ammo[] = {
             "KAT_Gas_TripWireMine_Ammo",

@@ -1109,6 +1109,14 @@
             <Finnish>Tiivisteputki</Finnish>
             <Dutch>Afdichtmiddel buis</Dutch>
         </Key>
+        <Key ID="STR_KAT_Chemical_deconkitItem">
+            <English>Decontamination Kit</English>
+            <Polish>Zestaw dekontaminacyjny</Polish>
+        </Key>
+        <Key ID="STR_KAT_Chemical_deconkitItem_desc">
+            <English>Decontamination kit, allows you to get rid of contamination from the skin</English>
+            <Polish>Zestaw do dekontaminacji, pozwala pozbyc się skażenia ze skóry</Polish>
+        </Key>
         <Key ID="STR_KAT_Chemical_sealantItem_desc">
             <English>Sealant which is used to seal objects when e.g. a toxic substance leaks out</English>
             <Czech>Hmota používaná k utěsnění objektů např. při úniku toxických substancí</Czech>
