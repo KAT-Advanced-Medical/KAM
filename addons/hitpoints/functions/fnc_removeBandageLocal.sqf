@@ -39,14 +39,20 @@ private _openWoundsOnPart = _openWounds getOrDefault [_bodypart, []];
 
         private _selectedInjury = _openWoundsOnPart select _injuryIndex;
         _selectedInjury params ["_selClassID", "_selAmount", "_selBleeding", "_selDamage"];
-
+        
         private _wounds = _bandagedWounds getOrDefault [_bodypart, []];
         private _indexToRemove = -1;
-
+        private _removedAmount = 0; // store how much we remove
+        
         {
             _x params ["_id", "_amountOf", "", "", "_oldBandage"];
             if (_id == _classID && {_oldBandage == _bandage}) exitWith {
-                private _newAmount = 0 max (_amountOf - 1);
+                private _reduction = [2, 4] select (_bandage == "ETD");
+                _newAmount = 0 max (_amountOf - _reduction);
+        
+                // store actual removed amount
+                _removedAmount = _amountOf - _newAmount;
+        
                 if (_newAmount == 0) then {
                     _indexToRemove = _forEachIndex;
                 } else {
@@ -54,7 +60,7 @@ private _openWoundsOnPart = _openWounds getOrDefault [_bodypart, []];
                 };
             };
         } forEach _wounds;
-
+        
         if (_indexToRemove != -1) then {
             _wounds deleteAt _indexToRemove;
             if (_wounds isEqualTo []) then {
@@ -63,9 +69,8 @@ private _openWoundsOnPart = _openWounds getOrDefault [_bodypart, []];
                 _bandagedWounds set [_bodypart, _wounds];
             };
         };
-
-        _selectedInjury set [1, _selAmount + 1];
-
+        _selectedInjury set [1, _selAmount + _removedAmount];
+        
         _patient setVariable [VAR_BANDAGED_WOUNDS, _bandagedWounds, true];
         _patient setVariable [VAR_OPEN_WOUNDS, _openWounds, true];
 
