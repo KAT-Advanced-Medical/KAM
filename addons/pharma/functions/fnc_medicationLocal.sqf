@@ -273,10 +273,12 @@ if (_isOccluded) exitWith {
         if (_upperMed select [count _upperMed - 2] isEqualTo "IV") then {
             _medicationName = _medicationName select [0, count _medicationName - 2];
         };
-        if (_medicationName in ["EACA","TXA","Amiodarone","Flumazenil"]) then {
+        if (_medicationName in ["TXA","Amiodarone","Flumazenil"]) then {
         [format ["kat_pharma_%1Local", toLower _medicationName], [_patient, _bodyPart], _patient] call CBA_fnc_targetEvent;
         };
-
+        if (_medicationName in ["EACA"]) then {
+        [format ["kat_pharma_%1Local", toLower _medicationName], [_patient, _bodyPart, _timeTillMaxEffect, _timeInSystem], _patient] call CBA_fnc_targetEvent;
+        };
         if (_medicationName in ["Lorazepam","Etomidate","Rocuronium","Sugammadex","Succinylcholine"]) then {
         [format ["kat_pharma_%1Local", toLower _medicationName], [_patient, _dose], _patient] call CBA_fnc_targetEvent;
         };

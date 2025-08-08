@@ -20,11 +20,10 @@ params ["_unit"];
 if !(GVAR(coagulation)) exitWith {};
 
 private _fnc_clotWound = {
-    params ["_unit", "_bodyPart", "_wounds", "_eacaEffectiveness", "_txaEffectiveness"];
+    params ["_unit", "_bodyPart", "_wounds", "_txaEffectiveness"];
 
         {
             _x params ["_woundClassID", "_amountOf", "_bleeding", "_damage"];
-            systemChat "clotting wound";
             private _category = _woundClassID % 10;
             private _suffix = ["Minor", "Medium", "Large"] select _category;
             private _classIndex = _woundClassID / 10;
@@ -45,10 +44,10 @@ private _fnc_clotWound = {
             {
                 private _medName = toLower (_x select 0);
                 private _effectiveness = _x select 2;
-                if ("Alteplase" in _medName) then {
+                if ("alteplase" in _medName) then {
                     _alteplaseEffectiveness = _alteplaseEffectiveness max _effectiveness;
                 };
-                if ("CWMP" in _medName) then {
+                if ("cwmp" in _medName) then {
                     _cwmpEffectiveness = _cwmpEffectiveness max _effectiveness;
                 };
             } forEach _medStack;
@@ -157,14 +156,8 @@ private _fnc_clotWound = {
             _factorCountToRemove = ceil (_factorCountToRemove * (1 + ((_amountOf * _bleeding) * 0.5)));
             if (_amountOf * _bleeding > 0) exitWith {
 
-               if ((_eacaEffectiveness > 0.3 || _txaEffectiveness > 0.3)) then {
+                if (_txaEffectiveness > 0.2) then {
                     _logString = LSTRING(coagulation_Bandaged_TXA);
-
-                    if (_eacaEffectiveness > 0.3 && _txaEffectiveness > 0.3) exitWith { // If TXA & EACA are in system at same time use EACA bandage
-                        _woundClotTime = round ((_woundClotTime / 3) * 2);
-                        _bandageToUse = _bandageToUse + "EACA";
-                    };
-
                     _bandageToUse = _bandageToUse + "TXA";
                 };
                 [{
@@ -175,8 +168,7 @@ private _fnc_clotWound = {
                     private _openWounds = GET_OPEN_WOUNDS(_unit);
                     private _openWoundsOnPart = _openWounds getOrDefault [_bodyPart, []];
                     private _woundIndex = _openWoundsOnPart findIf {(_x select 1) > 0 && (_x select 2) > 0};
-                    if (_coagulationFactor <= 0) exitWith {
-                    };
+                    if (_coagulationFactor <= 0) exitWith {};
                     if (_woundIndex == -1) exitWith {};
                     if ([_unit, _bodyPart] call ACEFUNC(medical_treatment,hasTourniquetAppliedTo) && missionNamespace getVariable [QGVAR(coagulation_tourniquetBlock), true]) exitWith {};
                     _bodyFluid set [5, (_coagulationFactor - _factorCountToRemove)];
@@ -213,16 +205,12 @@ private _fnc_clotWound = {
     private _coagulationFactor = GET_BODY_FLUID_PLATELETS(_unit);
     private _medStack = [_patient, false] call ACEFUNC(medical_status,getAllMedicationCount);
     private _medsToCheck = ["TXA", "EACA"];
-    private _eacaEffectiveness = 0;
     private _txaEffectiveness = 0;
     {
         private _medName = toLower (_x select 0);
         private _effectiveness = _x select 2;
-        if ("TXA" in _medName) then {
+        if ("txa" in _medName) then {
             _txaEffectiveness = _txaEffectiveness max _effectiveness;
-        };
-        if ("EACA" in _medName) then {
-            _eacaEffectiveness = _eacaEffectiveness max _effectiveness;
         };
     } forEach _medStack;
     private _hasWoundToBandageArray = [];
@@ -264,12 +252,8 @@ private _fnc_clotWound = {
             };
         } forEach (_openWounds get _x); // Sets array that specifies if there is a open wound that coag can bandage in body part (here for performance so that the fnc does not get called every time)
 
-        if (!(GVAR(coagulation_on_all_Bodyparts)) && true in _hasWoundToBandageArray) exitWith { // Check if coag should be present on all body party simultaneously, if not use this exitWith to block next interiation of forEach
-            [_unit, _x, _openWounds get _x, _eacaEffectiveness, _txaEffectiveness] call _fnc_clotWound;
-        };
-
         if (true in _hasWoundToBandageArray) then { // Check if there is a wound to bandage for coag, if not loop through next interiation of forEach
-            [_unit, _x, _openWounds get _x, _eacaEffectiveness, _txaEffectiveness] call _fnc_clotWound;
+            [_unit, _x, _openWounds get _x, _txaEffectiveness] call _fnc_clotWound;
         };
     } forEach _shuffledKeys;
 }, missionNamespace getVariable [QGVAR(coagulation_time), 5], [_unit, _fnc_clotWound]] call CBA_fnc_addPerFrameHandler;

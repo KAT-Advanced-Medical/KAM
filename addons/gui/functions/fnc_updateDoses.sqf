@@ -39,11 +39,7 @@ _medListBox ctrlAddEventHandler ["LBSelChanged", {
             private _medParts = _capturedMedItem splitString "_";
             private _medBaseName = _medParts select -1;
             switch (true) do {
-                case (_syringeType == "salineIV"): {
-                    private _index = _doseListBox lbAdd LLSTRING(Infusion);
-                    _doseListBox lbSetValue [_index, 4];
-                };
-                case (_syringeType == "salineIV100"): {
+                case (_syringeType in ["salineIV100", "salineIV"]): {
                     private _index = _doseListBox lbAdd LLSTRING(Infusion);
                     _doseListBox lbSetValue [_index, 4];
                 };
@@ -51,10 +47,11 @@ _medListBox ctrlAddEventHandler ["LBSelChanged", {
                     private _doseLevels = [10, 12, 14, 16, 18, 20, 22, 24, 26, 28, 30];
 
                     {
-                    private _stringtableKey = format ["STR_KAT_Pharma_SyringeDisplay_%1_%2_%3", _medBaseName, _syringeType, _x];
-                    private _localizedText = localize _stringtableKey;
+                    private _testClass = format ["kat_syringe_%1_%2_%3", _medBaseName, _syringeType, _x];
 
-                    if (_localizedText != _stringtableKey && {_localizedText != ""}) then {
+                    if (isClass(configFile >> "CfgWeapons" >> _testClass)) then {
+                        private _stringtableKey = format ["STR_KAT_Pharma_SyringeDisplay_%1_%2_%3", _medBaseName, _syringeType, _x];
+                        private _localizedText = localize _stringtableKey;
                         private _doseText = (_localizedText splitString " ") select 3;
                         private _index = _doseListBox lbAdd _doseText;
                         _doseListBox lbSetValue [_index, _x];

@@ -26,7 +26,7 @@ private _txaEffectiveness = 0;
 {
     private _medName = toLower (_x select 0);
     private _effectiveness = _x select 2;
-    if ("TXA" in _medName) then {
+    if ("txa" in _medName) then {
         _txaEffectiveness = _txaEffectiveness max _effectiveness;
     };
 } forEach _medStack;

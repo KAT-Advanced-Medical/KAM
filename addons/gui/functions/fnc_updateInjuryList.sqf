@@ -372,8 +372,46 @@ private _fnc_processWounds = {
     } forEach (_wounds getOrDefault [ALL_BODY_PARTS select _selectionN, []]);
 };
 
+private _fnc_processCoagWounds = {
+    params ["_wounds", "_format", "_color"];
+
+    private _aggregatedWounds = createHashMap;
+
+    {
+        _x params ["_woundClassID", "_amountOf"];
+
+        if (_amountOf > 0) then {
+            private _existing = _aggregatedWounds getOrDefault [_woundClassID, 0];
+            _aggregatedWounds set [_woundClassID, _existing + _amountOf];
+        };
+    } forEach (_wounds getOrDefault [ALL_BODY_PARTS select _selectionN, []]);
+
+    {
+        private _woundClassID = _x;
+        private _amountOf = _y;
+
+        private _classIndex = _woundClassID / 10;
+        private _category   = _woundClassID % 10;
+
+        private _className = ACEGVAR(medical_damage,woundClassNames) select _classIndex;
+        if (_className in ["InternalBleeding", "Evisceration"]) exitWith {};
+
+        private _suffix = ["Minor", "Medium", "Large"] select _category;
+        private _woundName = localize format [LSTRING(%1_%2), _className, _suffix];
+
+        private _woundDescription = if (_amountOf >= 1) then {
+            format ["%1x %2", ceil _amountOf, _woundName]
+        } else {
+            format [localize ACELSTRING(medical_gui,PartialX), _woundName]
+        };
+
+        _woundEntries pushBack [format [_format, _woundDescription], _color];
+
+    } forEach _aggregatedWounds;
+};
+
 [GET_OPEN_WOUNDS(_target), "%1", [1, 1, 1, 1]] call _fnc_processWounds;
-[GET_COAGED_WOUNDS(_target), "[C] %1", [0.88, 0.7, 0.65, 1]] call _fnc_processWounds;
+[GET_COAGED_WOUNDS(_target), "[C] %1", [0.88, 0.7, 0.65, 1]] call _fnc_processCoagWounds;
 [GET_WRAPPED_WOUNDS(_target), "[W] %1", [0.88, 0.7, 0.65, 1]] call _fnc_processWounds;
 [GET_BANDAGED_WOUNDS(_target), "[B] %1", [0.88, 0.7, 0.65, 1]] call _fnc_processWounds;
 [GET_STITCHED_WOUNDS(_target), "[S] %1", [0.7, 0.7, 0.7, 1]] call _fnc_processWounds;

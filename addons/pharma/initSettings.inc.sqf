@@ -795,14 +795,6 @@
     true
 ] call CBA_Settings_fnc_init;
 
-[
-    QGVAR(coagulation_on_all_Bodyparts),
-    "CHECKBOX",
-    [LLSTRING(SETTING_Coagulation_on_all_Bodyparts), LLSTRING(SETTING_Coagulation_on_all_Bodyparts_DESC)],
-    [CBA_SETTINGS_CAT, LSTRING(SubCategory_Coagulation)],
-    [true],
-    true
-] call CBA_Settings_fnc_init;
 
 [
     QGVAR(coagulation_tourniquetBlock),

@@ -61,26 +61,15 @@ TRACE_5("configs",_bandage,_className,_reopeningChance,_reopeningMinDelay,_reope
 
 private _bandagedWounds = GET_COAGED_WOUNDS(_target);
 
-private _exist = false;
-{
-    _x params ["_id", "_amountOf", "", "", "_oldBandage"];
-    if ((_id == _classID) && (_oldBandage == _bandage)) exitWith {
-        _x set [1, _amountOf + _impact];
-        TRACE_2("adding to existing bandagedWound",_id,_part);
-        _exist = true;
-    };
-} forEach (_bandagedWounds getOrDefault [_part, []]);
-
-if (!_exist) then {
+if (_isNew) then {
     TRACE_2("adding new bandagedWound",_classID,_part);
     private _bandagedInjury = +_injury;
     _bandagedInjury set [1, _impact];
     _bandagedInjury set [4, _bandage];
+    _bandagedInjury set [5, CBA_missionTime];
     (_bandagedWounds getOrDefault [_part, [], true]) pushBack _bandagedInjury;
+    _target setVariable [VAR_COAGED_WOUNDS, _bandagedWounds, true];
 };
-
-
-_target setVariable [VAR_COAGED_WOUNDS, _bandagedWounds, true];
 
 // _reopeningChance = 1;
 // _reopeningMinDelay = 5;
@@ -98,11 +87,11 @@ if (random 1 <= _reopeningChance * ACEGVAR(medical_treatment,woundReopenChance))
         private _woundsOnPart = _openWounds getOrDefault [_part, []];
         if (count _woundsOnPart - 1 < _injuryIndex) exitWith { TRACE_2("index bounds",_injuryIndex,count _woundsOnPart); };
 
-        _injury params ["_classID"];
+        _injury params ["_classID", "", "", "", "", "_time"];
 
         private _selectedInjury = _woundsOnPart select _injuryIndex;
-        _selectedInjury params ["_selClassID", "_selAmount", "", "_selDamage"];
-        if (_selClassID == _classID) then { // matching the IDs
+        _selectedInjury params ["_selClassID", "_selAmount", "", "_selDamage", "", "_selTime"];
+        if ((_selClassID == _classID) && (_selTime == _time)) then { // matching the IDs
             private _bandagedWounds = GET_COAGED_WOUNDS(_target);
             private _exist = false;
             {
@@ -151,11 +140,11 @@ if (random 1 <= _reopeningChance * ACEGVAR(medical_treatment,woundReopenChance))
         private _woundsOnPart = _openWounds getOrDefault [_part, []];
         if (count _woundsOnPart - 1 < _injuryIndex) exitWith { TRACE_2("index bounds",_injuryIndex,count _woundsOnPart); };
 
-        _injury params ["_classID"];
+        _injury params ["_classID", "", "", "", "", "_time"];
 
         private _selectedInjury = _woundsOnPart select _injuryIndex;
-        _selectedInjury params ["_selClassID", "_selAmount", "", "_selDamage"];
-        if (_selClassID == _classID) then { // matching the IDs
+        _selectedInjury params ["_selClassID", "_selAmount", "", "_selDamage", "", "_selTime"];
+        if ((_selClassID == _classID) && (_selTime == _time)) then { // matching the IDs
             private _bandagedWounds = GET_BANDAGED_WOUNDS(_target);
             private _exist = false;
             {

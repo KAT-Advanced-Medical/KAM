@@ -16,21 +16,12 @@
  * Public: No
  */
 
-params ["_patient", "_bodyPart"];
+params ["_patient", "_bodyPart", "_timeTillMaxEffect", "_timeInSystem"];
 
 private _partIndex = ALL_BODY_PARTS find toLower _bodyPart;
 private _IVarray = _patient getVariable [QGVAR(IV), [0,0,0,0,0,0,0,0,0,0,0,0]];
 private _IVactual = _IVarray select _partIndex;
-private _medStack = [_patient, false] call ACEFUNC(medical_status,getAllMedicationCount);
-private _medsToCheck = ["EACA"];
-private _eacaEffectiveness = 0;
-{
-    private _medName = toLower (_x select 0);
-    private _effectiveness = _x select 2;
-    if ("EACA" in _medName) then {
-        _eacaEffectiveness = _eacaEffectiveness max _effectiveness;
-    };
-} forEach _medStack;
+private _eacaEffectiveness = [_patient, "EACA", true] call ACEFUNC(medical_status,getMedicationCount) select 1;
 private _allowStack = missionNamespace getVariable [QGVAR(allowStackScript_EACA), true];
 private _keepRunning = missionNamespace getVariable [QGVAR(keepScriptRunning_EACA), false];
 private _cycleTime = missionNamespace getVariable [QGVAR(bandageCycleTime_EACA), 5];
@@ -55,13 +46,128 @@ if (_IVactual > 1) then {
     _patient setVariable [QGVAR(IV), _IVarray, true];
 };
 
+
+private _fnc_eacaClot = {
+    params ["_patient", "_bodyPart", "_id", "_amount", "_bleeding", "_damage", "_delay", "_oldBandage"];
+    [{
+    params ["_patient", "_bodyPart", "_id", "_amount", "_bleeding", "_damage", "_oldBandage", "_newBandage"];
+    private _coagWoundsLive = GET_COAGED_WOUNDS(_patient);
+    private _currentWounds  = _coagWoundsLive getOrDefault [_bodyPart, []];
+    private _minorIndex = -1;
+    private _minorWound = -1;
+    {
+        _x params ["_idW", "_amount", "_bleeding", "_damage", "_bandage", "_time"];
+        if ((_bandage isEqualTo _oldBandage) && (_idW isEqualTo _id)) exitWith {
+            _minorIndex = _forEachIndex;
+            _minorWound = _x;
+        };
+    } forEach _currentWounds;
+
+    if (_minorIndex == -1) exitWith {};
+    _minorWound params ["_id", "_amount", "_bleeding", "_damage", "_bandage", "_time"];
+    systemChat str _minorIndex;
+    _currentWounds deleteAt _minorIndex;
+    private _newWound = [_id, _amount, _bleeding, _damage, _newBandage, CBA_missionTime];
+    _currentWounds pushBack _newWound;
+    _coagWoundsLive set [_bodyPart, _currentWounds];
+    _patient setVariable [VAR_COAGED_WOUNDS, _coagWoundsLive, true];
+    
+    private _impact = _amount;
+    private _woundIndex = count _currentWounds - 1;
+    private _finalWound = _currentWounds select _woundIndex;
+    [_patient, _impact, _bodyPart, _woundIndex, _finalWound, _newBandage, false] call EFUNC(misc,handleCoagReopening);
+    }, [_patient, _bodyPart, _id, _amount, _bleeding, _damage, _oldBandage, _newBandage], _delay] call CBA_fnc_waitAndExecute;
+};
+
+
+if (GVAR(coagulation)) then {
+    if (([7,8,9] find _IVactual) == -1) then {
+        [{
+            params ["_args", "_idPFH"];
+            _args params ["_patient", "_timeInSystem", "_fnc_eacaClot"];
+
+            if !(alive _patient) exitWith {
+                [_idPFH] call CBA_fnc_removePerFrameHandler;
+            };
+
+            private _random = random [6.4, 6.8, 7.2];
+            private _ph     = GET_PH(_patient);
+
+            if (_random <= _ph) then {
+                private _coagWounds       = GET_COAGED_WOUNDS(_patient);
+                private _pulse            = _patient getVariable [VAR_HEART_RATE, 80];
+
+                if (_coagWounds isEqualTo createHashMap) exitWith {};
+                if (GET_BLOOD_VOLUME_LITERS(_patient) < GVAR(coagulation_requireBV)) exitWith {};
+                if ((_pulse < 20) && {GVAR(coagulation_requireHR)}) exitWith {};
+
+                {
+                    private _bodyPart = _x;
+
+                    // Skip if tourniquet applied and blocking is enabled
+                    if (([_patient, _bodyPart] call ACEFUNC(medical_treatment,hasTourniquetAppliedTo))
+                        && { missionNamespace getVariable [QGVAR(coagulation_tourniquetBlock), true] }) then {
+                        continue;
+                    };
+
+                    private _wounds = _coagWounds getOrDefault [_bodyPart, []];
+
+                    {
+                        _x params ["_id", "_amount", "_bleeding", "_damage", "_bandage", "_time"];
+                        switch (true) do {
+                            case (_bandage isEqualTo "BloodClotMinor"): {
+                                private _delay = random [30, 45, 60];
+                                private _newBandage = "BloodClotMinorEACA";
+                                    [_patient, _bodyPart, _id, _amount, _bleeding, _damage, _delay, _bandage, _newBandage] call _fnc_eacaClot;
+                            };
+                            case (_bandage isEqualTo "BloodClotMedium"): {
+                                private _delay = random [60, 90, 120];
+                                private _newBandage = "BloodClotMediumEACA";
+                                    [_patient, _bodyPart, _id, _amount, _bleeding, _damage, _delay, _bandage, _newBandage] call _fnc_eacaClot;
+                            };
+                            case (_bandage isEqualTo "BloodClotLarge"): {
+                                private _delay = random [90, 120, 160];
+                                private _newBandage = "BloodClotLargeEACA";
+                                    [_patient, _bodyPart, _id, _amount, _bleeding, _damage, _delay, _bandage, _newBandage] call _fnc_eacaClot;
+                            };
+                            case (_bandage isEqualTo "BloodClotMinorTXA"): {
+                                private _delay = random [20, 35, 60];
+                                private _newBandage = "BloodClotMinorEACA";
+                                    [_patient, _bodyPart, _id, _amount, _bleeding, _damage, _delay, _bandage, _newBandage] call _fnc_eacaClot;
+                            };
+                            case (_bandage isEqualTo "BloodClotMediumTXA"): {
+                                private _delay = random [45, 60, 90];
+                                private _newBandage = "BloodClotMediumEACA";
+                                    [_patient, _bodyPart, _id, _amount, _bleeding, _damage, _delay, _bandage, _newBandage] call _fnc_eacaClot;
+                            };
+                            case (_bandage isEqualTo "BloodClotLargeTXA"): {
+                                private _delay = random [60, 90, 120];
+                                private _newBandage = "BloodClotLargeEACA";
+                                    [_patient, _bodyPart, _id, _amount, _bleeding, _damage, _delay, _bandage, _newBandage] call _fnc_eacaClot;
+                            };
+                            default {};
+                        };
+                    } forEach _wounds;
+
+                } forEach (keys _coagWounds);
+            };
+            [{
+                params ["_patient", "_idPFH"];
+                [_idPFH] call CBA_fnc_removePerFrameHandler;
+            }, [_patient, _idPFH], _timeInSystem] call CBA_fnc_waitAndExecute;
+
+        }, 10, [_patient, _timeInSystem, _fnc_eacaClot]] call CBA_fnc_addPerFrameHandler;
+    };
+};
+
+
 if (!(GVAR(coagulation)) || GVAR(coagulation_allow_EACA_script)) then {
     if ([7,8,9] find _IVactual == -1) then {
         if (_eacaEffectiveness < 0.3) && (!_allowStack) exitWith {};
 
         [{
             params ["_args", "_idPFH"];
-            _args params ["_patient", "_keepRunning"];
+            _args params ["_patient", "_keepRunning", "_timeInSystem"];
 
             private _alive = alive _patient;
             private _exit = true;
@@ -77,8 +183,8 @@ if (!(GVAR(coagulation)) || GVAR(coagulation_allow_EACA_script)) then {
                 {
                     _x params ["_targetBodyPart"];
 
-                    private _bandagedWounds = GET_BANDAGED_WOUNDS(_patient);
-                    private _bandagedWoundsOnPart = _bandagedWounds getOrDefault [_targetBodyPart, []];
+                    private _coagWounds = GET_BANDAGED_WOUNDS(_patient);
+                    private _bandagedWoundsOnPart = _coagWounds getOrDefault [_targetBodyPart, []];
 
                     if (_bandagedWoundsOnPart isEqualTo [] || [_patient,_x] call ACEFUNC(medical_treatment,hasTourniquetAppliedTo)) then {
                         continue;
@@ -106,9 +212,9 @@ if (!(GVAR(coagulation)) || GVAR(coagulation_allow_EACA_script)) then {
                         _patient setVariable [VAR_STITCHED_WOUNDS, _stitchedWounds, true];
 
                         _bandagedWoundsOnPart deleteAt _index;
-                        _bandagedWounds set [_targetBodyPart, _bandagedWoundsOnPart];
+                        _coagWounds set [_targetBodyPart, _bandagedWoundsOnPart];
 
-                        _patient setVariable [VAR_BANDAGED_WOUNDS, _bandagedWounds, true];
+                        _patient setVariable [VAR_BANDAGED_WOUNDS, _coagWounds, true];
 
                         private _partIndex = ALL_BODY_PARTS find _targetBodyPart;
                         private _bodyPartDamage = _patient getVariable [QACEGVAR(medical,bodyPartDamage), []];
@@ -130,12 +236,12 @@ if (!(GVAR(coagulation)) || GVAR(coagulation_allow_EACA_script)) then {
                 params ["_patient", "_idPFH"];
                 [_idPFH] call CBA_fnc_removePerFrameHandler;
             },
-            [_patient, _idPFH], 300] call CBA_fnc_waitAndExecute;
+            [_patient, _idPFH], _timeInSystem] call CBA_fnc_waitAndExecute;
 
             if (_exit && !(_keepRunning)) exitWith {
                 [_idPFH] call CBA_fnc_removePerFrameHandler;
             };
 
-        }, _cycleTime,[_patient, _keepRunning]] call CBA_fnc_addPerFrameHandler;
+        }, _cycleTime,[_patient, _keepRunning, _timeInSystem]] call CBA_fnc_addPerFrameHandler;
     };
 };

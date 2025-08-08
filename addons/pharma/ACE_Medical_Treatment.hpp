@@ -913,7 +913,7 @@ class ACE_ADDON(Medical_Treatment) {
             maximumEffectiveDose = 20;
         };
         class syringe_EACA {
-            maxDose = 40;
+            maxDose = 30;
             maxDoseDeviation = 10;
             incompatibleMedication[] = {};
             onOverDose = "";
