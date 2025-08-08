@@ -26,11 +26,10 @@ private _noJog = false;
 private _noThrow = false;
 private _keepProne = false;
 private _holsterWeapon = false;
-private _hasPainMed = false;
+private _hasPainMed = _unit getVariable [QGVAR(UDEhasPainMed), false];
 private _aimFracture = 0;
 private _armJointArray = GET_JOINTS(_unit) select [0, 2];
 private _legJointArray = GET_JOINTS(_unit) select [2, 2];
-// First, check if the unit already has a PFH stored
 if (isNil {_unit getVariable [QGVAR(painMedPFH), nil]}) then {
     private _pfhID = [{
         _this params ["_args", "_pfhID"];
@@ -38,7 +37,7 @@ if (isNil {_unit getVariable [QGVAR(painMedPFH), nil]}) then {
 
         if (!alive _unit || {_unit != ACE_player}) exitWith {
             _pfhID call CBA_fnc_removePerFrameHandler;
-            _unit setVariable [QGVAR(painMedPFH), nil]; // Clear the tracking variable
+            _unit setVariable [QGVAR(painMedPFH), nil];
         };
 
         private _medStack = _unit call ACEFUNC(medical_status,getAllMedicationCount);
@@ -70,8 +69,9 @@ if (isNil {_unit getVariable [QGVAR(painMedPFH), nil]}) then {
             _nalbuphineEffectiveness >= 0.6 ||
             _morphineEffectiveness >= 0.6
         );
+        _unit setVariable [QGVAR(UDEhasPainMed), _hasPainMed];
         [_unit] call FUNC(updateDamageEffects);
-    }, 15, [_unit]] call CBA_fnc_addPerFrameHandler;
+    }, 10, [_unit]] call CBA_fnc_addPerFrameHandler;
     _unit setVariable [QGVAR(painMedPFH), _pfhID];
 };
 if (ACEGVAR(medical,fractures) > 0) then {
@@ -126,7 +126,6 @@ _unit setVariable [QACEGVAR(medical_engine,aimFracture), _aimFracture, false]; /
 if (!_isLimping && {ACEGVAR(medical,limping) > 0}) then {
     private _openWounds = GET_OPEN_WOUNDS(_unit);
 
-    // Want a copy of combined arrays to prevent wound mixing
     private _legWounds = (_openWounds getOrDefault ["leftleg", []])
         + (_openWounds getOrDefault ["upperleftleg", []])
         + (_openWounds getOrDefault ["rightleg", []])

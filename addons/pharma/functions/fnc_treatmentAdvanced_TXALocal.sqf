@@ -80,7 +80,8 @@ if (!(GVAR(coagulation)) || GVAR(coagulation_allow_TXA_script)) then {
                     private _openWounds = GET_OPEN_WOUNDS(_patient);
                     private _openWoundsOnPart = _openWounds getOrDefault [_targetBodyPart, []];
 
-                    if (_openWoundsOnPart isEqualTo [] || [_patient,_x] call ACEFUNC(medical_treatment,hasTourniquetAppliedTo)) then {
+                    private _bodyPartN = ALL_BODY_PARTS find _x;
+                    if (_openWoundsOnPart isEqualTo [] || [_patient,_bodyPartN] call EFUNC(pharma,occlusionCheck)) then {
                         continue;
                     };
 

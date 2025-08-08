@@ -37,8 +37,8 @@ private _tourniquetPFH = [{
     private _tourniquet_LegNecrosis = _unit getVariable [QGVAR(Tourniquet_LegNecrosis), 0];
 
     private _activeTourniquets = GET_TOURNIQUETS(_unit);
-    private _armTourniquets = (_activeTourniquets select 2) + (_activeTourniquets select 3);
-    private _legTourniquets = (_activeTourniquets select 4) + (_activeTourniquets select 5);
+    private _armTourniquets = (_activeTourniquets select 4) + (_activeTourniquets select 5) + (_activeTourniquets select 6) + (_activeTourniquets select 7);
+    private _legTourniquets = (_activeTourniquets select 8) + (_activeTourniquets select 9) + (_activeTourniquets select 10) + (_activeTourniquets select 11);
     
     if (_armTourniquets > 1) then {
         _tourniquet_ArmNecrosis = _tourniquet_ArmNecrosis + (0.16 * GVAR(tourniquetEffects_PositiveMultiplier));

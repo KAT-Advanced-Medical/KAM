@@ -170,7 +170,8 @@ private _fnc_clotWound = {
                     private _woundIndex = _openWoundsOnPart findIf {(_x select 1) > 0 && (_x select 2) > 0};
                     if (_coagulationFactor <= 0) exitWith {};
                     if (_woundIndex == -1) exitWith {};
-                    if ([_unit, _bodyPart] call ACEFUNC(medical_treatment,hasTourniquetAppliedTo) && missionNamespace getVariable [QGVAR(coagulation_tourniquetBlock), true]) exitWith {};
+                    private _bodyPartN = ALL_BODY_PARTS find _bodyPart;
+                    if ([_unit,_bodyPartN] call EFUNC(pharma,occlusionCheck) && missionNamespace getVariable [QGVAR(coagulation_tourniquetBlock), true]) exitWith {};
                     _bodyFluid set [5, (_coagulationFactor - _factorCountToRemove)];
                     _unit setVariable [VAR_BODY_FLUID, _bodyFluid, true];
                     [QACEGVAR(medical_treatment,bandageLocal), [_unit, _bodyPart, _bandageToUse, 1], _unit] call CBA_fnc_targetEvent;
@@ -223,7 +224,8 @@ private _fnc_clotWound = {
     private _shuffledKeys = keys _openWounds call BIS_fnc_arrayShuffle; // Shuffel Keys to switch bodypart after each bandage for on_all_Bodyparts setting
 
     {
-        if ([_unit, _x] call ACEFUNC(medical_treatment,hasTourniquetAppliedTo) && missionNamespace getVariable [QGVAR(coagulation_tourniquetBlock), true]) then { // Check for tourniqet
+        private _bodyPartN = ALL_BODY_PARTS find _x;
+        if ([_unit,_bodyPartN] call EFUNC(pharma,occlusionCheck) && missionNamespace getVariable [QGVAR(coagulation_tourniquetBlock), true]) then { // Check for tourniqet
             continue;
         };
 

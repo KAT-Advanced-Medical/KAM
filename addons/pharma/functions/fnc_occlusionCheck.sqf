@@ -32,5 +32,5 @@ private _occlusionMap = [
 ];
 private _idx = _occlusionMap findIf { _x#0 == _bodyPartN };
 private _result = if (_idx != -1) then { _occlusionMap select _idx select 1 } else { [] };
-private _isOccluded = ({ _tourniquets select _x != 0 } count _result > 0) && (_IVarray select _bodyPartN isNotEqualTo 13);
+private _isOccluded = ({ _tourniquets select _x != 0 } count _result > 0);
 _isOccluded

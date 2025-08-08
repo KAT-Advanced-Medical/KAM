@@ -105,7 +105,8 @@ if (GVAR(coagulation)) then {
                     private _bodyPart = _x;
 
                     // Skip if tourniquet applied and blocking is enabled
-                    if (([_patient, _bodyPart] call ACEFUNC(medical_treatment,hasTourniquetAppliedTo))
+                    private _bodyPartN = ALL_BODY_PARTS find _x;
+                    if ([_patient,_bodyPartN] call EFUNC(pharma,occlusionCheck)
                         && { missionNamespace getVariable [QGVAR(coagulation_tourniquetBlock), true] }) then {
                         continue;
                     };
@@ -185,8 +186,8 @@ if (!(GVAR(coagulation)) || GVAR(coagulation_allow_EACA_script)) then {
 
                     private _coagWounds = GET_BANDAGED_WOUNDS(_patient);
                     private _bandagedWoundsOnPart = _coagWounds getOrDefault [_targetBodyPart, []];
-
-                    if (_bandagedWoundsOnPart isEqualTo [] || [_patient,_x] call ACEFUNC(medical_treatment,hasTourniquetAppliedTo)) then {
+                    private _bodyPartN = ALL_BODY_PARTS find _x;
+                    if (_bandagedWoundsOnPart isEqualTo [] || [_patient,_bodyPartN] call EFUNC(pharma,occlusionCheck)) then {
                         continue;
                     };
 
