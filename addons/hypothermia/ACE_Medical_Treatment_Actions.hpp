@@ -42,6 +42,16 @@ class ACE_Medical_Treatment_Actions {
         condition = QUOTE(GVAR(hypothermiaActive));
         callbackSuccess = QFUNC(checkTemperature);
     };
+    class CheckTemperatureThermo: CheckPulse {
+        displayName = CSTRING(Check_TemperatureThermo);
+        displayNameProgress = CSTRING(Check_TemperatureThermo_Progress);
+        category = "examine";
+        allowedSelections[] = {"UpperLeftArm", "UpperRightArm", "UpperLeftLeg", "UpperRightLeg"};
+        treatmentTime = 10;
+        items[] = {"kat_thermometer"};
+        condition = QUOTE(GVAR(hypothermiaActive));
+        callbackSuccess = QFUNC(checkTemperatureThermo);
+    };
     class ApplySpaceBlanket: BasicBandage {
         displayName = CSTRING(Apply_SpaceBlanket);
         displayNameProgress = CSTRING(perform);

@@ -4,6 +4,7 @@ PREP(applySpaceBlanket);
 PREP(applySpaceBlanketLocal);
 PREP(checkHandWarmers);
 PREP(checkTemperature);
+PREP(checkTemperatureThermo);
 PREP(fullHealLocal);
 PREP(gui_updateInjuryListPart);
 PREP(handleRespawn);

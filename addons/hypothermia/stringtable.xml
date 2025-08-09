@@ -428,5 +428,20 @@
         <Key ID="STR_KAT_Hypothermia_thermalBlanket_FallOff">
             <English>Your Thermal Blanket Fell off</English>
         </Key>
+        <Key ID="STR_KAT_Hypothermia_Check_TemperatureThermo">
+            <English>Check Thermometer Temperature</English>
+        </Key>
+        <Key ID="STR_KAT_Hypothermia_Check_TemperatureThermo_Progress">
+            <English>Checking Temperature</English>
+        </Key>
+        <Key ID="STR_KAT_Hypothermia_Thermometer_DescShort">
+            <English>Small, multi use Thermometer</English>
+        </Key>
+        <Key ID="STR_KAT_Hypothermia_Thermometer_displayName">
+            <English>Thermometer</English>
+        </Key>
+        <Key ID="STR_KAT_Hypothermia_Thermometer_log">
+            <English>%1 has a Temperature of %2</English>
+        </Key>
     </Package>
 </Project>
