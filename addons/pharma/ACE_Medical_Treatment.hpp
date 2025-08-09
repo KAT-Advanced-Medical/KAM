@@ -52,7 +52,6 @@ class ACE_ADDON(Medical_Treatment) {
         paralysis = "false";
         bloodBased = "false";
 
-
         class Epinephrine {
             painReduce = 0;
             hrIncreaseLow[] = {5, 20};

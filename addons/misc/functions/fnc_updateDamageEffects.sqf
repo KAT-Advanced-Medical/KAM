@@ -26,54 +26,9 @@ private _noJog = false;
 private _noThrow = false;
 private _keepProne = false;
 private _holsterWeapon = false;
-private _hasPainMed = _unit getVariable [QGVAR(UDEhasPainMed), false];
 private _aimFracture = 0;
 private _armJointArray = GET_JOINTS(_unit) select [0, 2];
 private _legJointArray = GET_JOINTS(_unit) select [2, 2];
-if (isNil {_unit getVariable [QGVAR(painMedPFH), nil]}) then {
-    private _pfhID = [{
-        _this params ["_args", "_pfhID"];
-        _args params ["_unit"];
-
-        if (!alive _unit || {_unit != ACE_player}) exitWith {
-            _pfhID call CBA_fnc_removePerFrameHandler;
-            _unit setVariable [QGVAR(painMedPFH), nil];
-        };
-
-        private _medStack = _unit call ACEFUNC(medical_status,getAllMedicationCount);
-        private _fentanylEffectiveness = 0;
-        private _ketamineEffectiveness = 0;
-        private _nalbuphineEffectiveness = 0;
-        private _morphineEffectiveness = 0;
-
-        {
-            private _medName = toLower (_x select 0);
-            private _effectiveness = _x select 2;
-            if ("fentanyl" in _medName) then {
-                _fentanylEffectiveness = _fentanylEffectiveness max _effectiveness;
-            };
-            if ("ketamine" in _medName) then {
-                _ketamineEffectiveness = _ketamineEffectiveness max _effectiveness;
-            };
-            if ("nalbuphine" in _medName) then {
-                _nalbuphineEffectiveness = _nalbuphineEffectiveness max _effectiveness;
-            };
-            if ("morphine" in _medName) then {
-                _morphineEffectiveness = _morphineEffectiveness max _effectiveness;
-            };
-        } forEach _medStack;
-
-        private _hasPainMed = (
-            _fentanylEffectiveness >= 0.6 ||
-            _ketamineEffectiveness >= 0.6 ||
-            _nalbuphineEffectiveness >= 0.6 ||
-            _morphineEffectiveness >= 0.6
-        );
-        _unit setVariable [QGVAR(UDEhasPainMed), _hasPainMed];
-        [_unit] call FUNC(updateDamageEffects);
-    }, 10, [_unit]] call CBA_fnc_addPerFrameHandler;
-    _unit setVariable [QGVAR(painMedPFH), _pfhID];
-};
 if (ACEGVAR(medical,fractures) > 0) then {
     private _fractures = GET_FRACTURES(_unit);
     TRACE_1("",_fractures);
@@ -91,9 +46,9 @@ if (ACEGVAR(medical,fractures) > 0) then {
         // Block sprint / force walking based on fracture setting and leg splint status
         _hasLegSplint = (_fractures select 8) in [-1, -2, -3] || (_fractures select 9) in [-1, -2, -3] || (_fractures select 10) in [-1, -2, -3] || (_fractures select 11) in [-1, -2, -3];
         if (ACEGVAR(medical,fractures) == 2) then {
-            _noSprint = _hasLegSplint && !_hasPainMed;
+            _noSprint = _hasLegSplint;
         } else {
-            _noJog = _hasLegSplint && !_hasPainMed;
+            _noJog = _hasLegSplint;
         };
 
         if ((_fractures select 4) in [-1, -2]) then { _aimFracture = _aimFracture + 2; };
@@ -193,12 +148,13 @@ private _hasLegStrainInjury = _legJointArray findIf {_x findIf {_x in [2, 5, 8]}
 private _hasArmDislocationInjury = _armJointArray findIf {_x findIf {_x == 3} != -1} != -1;
 private _hasArmJointInjury = _armJointArray findIf {_x findIf {_x != 0} != -1} != -1;
 TRACE_7("HasInjury",_hasLegSprainInjury,_hasLegStrainInjury,_hasLegDislocationInjury,_hasArmDislocationInjury,_hasArmJointInjury,_legJointArray,_armJointArray);
+
+
 if (_hasLegStrainInjury) then {
     _noSprint = true;
 };
 
-
-if (_hasLegStrainInjury && (random 100 > 50) && !_hasPainMed) then {
+if (_hasLegStrainInjury && (random 100 > 50)) then {
     _noSprint = true;
     _noJog = true;
 };
@@ -207,7 +163,7 @@ if (_hasLegSprainInjury) then {
     _noSprint = true;
 };
 
-if (_hasLegSprainInjury && (random 100 > 50) && !_hasPainMed) then {
+if (_hasLegSprainInjury && (random 100 > 50)) then {
     _noSprint = true;
     _noJog = true;
     _isLimping = true;
@@ -221,21 +177,16 @@ if (_hasLegDislocationInjury) then {
     _keepProne = true;
 };
 
-if (_hasLegJointInjury && !_hasPainMed) then {
+if (_hasLegJointInjury) then {
+    _noSprint = true;
+    _noJog = true;
+};
+
+if (_hasLegJointInjury && (random 100 > 50)) then {
     _noSprint = true;
     _noJog = true;
     _isLimping = true;
 };
-
-if (_hasLegJointInjury && (random 100 > 50) && _hasPainMed) then {
-    _noSprint = true;
-    _noJog = true;
-};
-
-if (_hasLegJointInjury && _hasPainMed) then {
-    _noSprint = true;
-};
-
 
 if (_hasArmDislocationInjury) then {
     _noThrow = true;

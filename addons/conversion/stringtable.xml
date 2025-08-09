@@ -80,13 +80,28 @@
             <English>Perform Initial Conversion</English>
         </Key>
         <Key ID="STR_KAT_Conversion_converting">
-            <English>Converting</English>
+            <English>Converting...</English>
         </Key>
         <Key ID="STR_KAT_Conversion_AutomaticCONVERSION">
             <English>Enable Automatic Conversion</English>
         </Key>
         <Key ID="STR_KAT_Conversion_AutomaticCONVERSION_DESC">
             <English>Enable Automatic Conversion upon receiving fatal vitals (Bleeding at lost fatal, large hits to vital organs, ETC)</English>
+        </Key>
+        <Key ID="STR_KAT_CONVERSION_REQUIREMENTS">
+            <English>Rear Area Conversion Settings</English>
+        </Key>
+        <Key ID="STR_KAT_CONVERSION_REQUIREMENTS_DESC">
+            <English>Changes what is required to convert a casualty back into tickets at a medical facility</English>
+        </Key>
+        <Key ID="STR_KAT_CONVERSION_REQUIREMENTS_0">
+            <English>Nothing</English>
+        </Key>
+        <Key ID="STR_KAT_CONVERSION_REQUIREMENTS_1">
+            <English>Stable Vitals</English>
+        </Key>
+        <Key ID="STR_KAT_CONVERSION_REQUIREMENTS_2">
+            <English>Stable Vitals + No joint Injuries or fractures</English>
         </Key>
     </Package>
 </Project>

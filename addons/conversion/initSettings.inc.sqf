@@ -40,7 +40,7 @@
     "SLIDER",
     [LLSTRING(CONVERSION_TICKET_CONVERSION_GAIN), LLSTRING(CONVERSION_TICKET_CONVERSION_GAIN_DESC)],
     [CBA_SETTINGS_CAT, ELSTRING(GUI,SubCategory_Basic)],
-    [0, 10, 3, 0],
+    [0, 10, 1, 0],
     true
 ] call CBA_fnc_addSetting;
 
@@ -75,6 +75,16 @@
     },
     true
 ] call CBA_fnc_addSetting;
+
+[
+    QGVAR(conversionRequirements),
+    "LIST",
+    [LLSTRING(CONVERSION_REQUIREMENTS), LLSTRING(CONVERSION_REQUIREMENTS_DESC)],
+    [CBA_SETTINGS_CAT, ELSTRING(GUI,SubCategory_Basic)],
+    [[0, 1, 2], [LLSTRING(CONVERSION_REQUIREMENTS_0), LLSTRING(CONVERSION_REQUIREMENTS_1), LLSTRING(CONVERSION_REQUIREMENTS_2)], 1],
+    true
+] call CBA_fnc_addSetting;
+
 
 [
     QGVAR(allowManualConversion),

@@ -30,6 +30,7 @@ PREP(getStitchTimeFullBody);
 PREP(groupID);
 PREP(handleBandageOpening);
 PREP(handleCoagReopening);
+PREP(handleEffects);
 PREP(handleRespawn);
 PREP(handleTourniquetEffects);
 PREP(handleUnconscious);

@@ -20,5 +20,5 @@ if !(GVAR(enableTicketConversion)) exitWith { false };
 if !(_patient getVariable [QGVAR(currentConverted), false]) exitWith { false };
 
 if !(_patient call ACEFUNC(medical_treatment,isInMedicalFacility)) exitWith { false };
-if !(_patient call EFUNC(vitals,hasStableVitals)) exitWith { false };
+if !(_patient call FUNC(conversionCondition)) exitWith { false };
 true

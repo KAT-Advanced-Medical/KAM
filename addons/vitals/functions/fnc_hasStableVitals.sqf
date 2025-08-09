@@ -34,7 +34,11 @@ private _map = _bloodPressureL + (0.3333333333 * (_bloodPressureH - _bloodPressu
 if (_map < 60 || _map > 120) exitWith { false };
 
 private _heartRate = GET_HEART_RATE(_unit);
-if (_heartRate < 40) exitWith { false };
+private _defaultHeartRate = _unit getVariable [QEGVAR(circulation,defaultHeartRate), 80];
+if (_heartRate < (_defaultHeartRate - 35) || _heartRate > (_defaultHeartRate + 35)) exitWith { false };
+
+private _unitTemperature = _unit getVariable [QGVAR(unitTemperature), 37];
+if (_unitTemperature < 34) exitWith { false };
 
 private _o2 = GET_KAT_SPO2(_unit);
 if (_o2 < EGVAR(breathing,Stable_spo2)) exitWith { false };

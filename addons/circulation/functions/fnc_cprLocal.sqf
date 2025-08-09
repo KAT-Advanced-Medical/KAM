@@ -95,7 +95,7 @@ private _fnc_advRhythm = {
         };
         case "Nitroglycerin":
         {
-            _nitroEffect = (_nitroEffect + (1 * (_dose / 10)));
+            _nitroEffect = (_nitroEffect + (1 * _dose));
         };
     };
 } forEach (_patient getVariable [QACEGVAR(medical,medications), []]);

@@ -82,4 +82,12 @@ class CfgFunctions {
             };
         };
     };
+    class overwrite_medical_feedback {
+        tag = "ace_medical_feedback";
+        class ace_medical_feedback {
+            class handleEffects {
+                file = QPATHTOF(functions\fnc_handleEffects.sqf);
+            };
+        };
+    };
 };
