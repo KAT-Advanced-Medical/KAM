@@ -18,10 +18,11 @@
  *
  * Public: No
  */
+params ["_medic", "_patient", "_bodyPart", "_bandage"];
+_bodyPart = toLowerANSI _bodyPart;
 
 private _wounds = (GET_OPEN_WOUNDS(_patient)) getOrDefault [_bodyPart, []];
 private _canBandage = false;
-
 if ((_bandage == "BasicBandage") isEqualTo (ACEGVAR(medical_treatment,advancedBandages) != 0)) exitWith {false};
 
 {
