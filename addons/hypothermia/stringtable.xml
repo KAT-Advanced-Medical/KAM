@@ -441,7 +441,7 @@
             <English>Thermometer</English>
         </Key>
         <Key ID="STR_KAT_Hypothermia_Thermometer_log">
-            <English>%1 has a Temperature of %2</English>
+            <English>%1 has a Temperature of %2°c</English>
         </Key>
     </Package>
 </Project>
