@@ -3,7 +3,7 @@ class CfgWeapons {
     class CBA_MiscItem_ItemInfo;
 
     class kat_scalpel: ACE_ItemCore {
-        scope = 2;
+        scope = 1;
         displayName = CSTRING(Scalpel_displayName);
         picture = QPATHTOF(ui\scalpel.paa);
         model = "\A3\Structures_F_EPA\Items\Medical\Painkillers_F.p3d";
@@ -14,7 +14,7 @@ class CfgWeapons {
         };
     };
     class kat_retractor: ACE_ItemCore {
-        scope = 2;
+        scope = 1;
         displayName = CSTRING(Retractor_displayName);
         picture = QPATHTOF(ui\retractor.paa);
         model = "\A3\Structures_F_EPA\Items\Medical\Painkillers_F.p3d";
@@ -25,7 +25,7 @@ class CfgWeapons {
         };
     };
     class kat_clamp: ACE_ItemCore {
-        scope = 2;
+        scope = 1;
         displayName = CSTRING(Clamp_displayName);
         picture = QPATHTOF(ui\clamp.paa);
         model = "\A3\Structures_F_EPA\Items\Medical\Painkillers_F.p3d";
@@ -36,7 +36,7 @@ class CfgWeapons {
         };
     };
     class kat_plate: ACE_ItemCore {
-        scope = 2;
+        scope = 1;
         displayName = CSTRING(Plate_Display);
         picture = QPATHTOF(ui\plate.paa);
         model = "\A3\Structures_F_EPA\Items\Medical\Painkillers_F.p3d";
