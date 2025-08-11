@@ -209,13 +209,13 @@ class ACE_Medical_Treatment_Actions {
         sounds[] = {};
     };
     class SyringeSalineFlush: Carbonate {
-        displayName = CSTRING(Saline_Flush);
+        displayName = CSTRING(Saline_Flush);    
         allowedSelections[] = {"Neck", "Chest", "LeftArm", "RightArm", "UpperLeftArm", "UpperRightArm", "UpperLeftLeg", "UpperRightLeg", "LeftLeg", "RightLeg"};
         allowSelfTreatment = 1;
         medicRequired = QGVAR(medLvl_SalineFlush);
         treatmentTime = QGVAR(treatmentTime_SalineFlush);
         items[] = {"kat_syringe_salineIV_5ml_30"};
-        condition = QUOTE(_patient getVariable [ARR_2(QQGVAR(IVplaced),true)]);
+        condition = QUOTE((_patient getVariable [ARR_2(QQGVAR(IVplaced),true)]) && FUNC(salineCheck));
         callbackSuccess = QFUNC(treatmentAdvanced_Flush);
         sounds[] = {};
     };

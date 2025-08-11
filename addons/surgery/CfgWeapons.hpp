@@ -76,4 +76,15 @@ class CfgWeapons {
             mass = 1;
         };
     };
+    class kat_fractureKit: ACE_ItemCore {
+        scope = 2;
+        author = "Katalam";
+        displayName= CSTRING(fractureKit_Display);
+        descriptionShort =  CSTRING(fractureKit_Desc_Short);
+        picture = QPATHTOF(ui\fractureKit.paa);
+        ACE_isMedicalItem = 1;
+        class ItemInfo: CBA_MiscItem_ItemInfo {
+            mass = 2;
+        };
+    };
 };

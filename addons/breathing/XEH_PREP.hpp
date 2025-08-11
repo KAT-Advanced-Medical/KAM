@@ -38,6 +38,7 @@ PREP(treatmentAdvanced_chestTube);
 PREP(treatmentAdvanced_chestTubeCheck);
 PREP(treatmentAdvanced_chestTubeIncision);
 PREP(treatmentAdvanced_chestTubeIncisionLocal);
+PREP(treatmentAdvanced_chestTubeKit);
 PREP(treatmentAdvanced_chestTubeLocal);
 PREP(treatmentAdvanced_chestTubeProgress);
 PREP(treatmentAdvanced_chestTubeProgressLocal);

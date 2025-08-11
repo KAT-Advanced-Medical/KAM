@@ -3448,5 +3448,14 @@
         <Key ID="STR_KAT_Breathing_ChestSealLoopTime_desc">
             <English>Time it takes per loop of the chest seal treatment</English>
         </Key>
+        <Key ID="STR_KAT_Breathing_open_chestTube_kit">
+            <English>Open Chest Tube Kit</English>
+        </Key>
+        <Key ID="STR_KAT_Breathing_open_chestTube_kit_Action">
+            <English>Opening Chest Tube Kit</English>
+        </Key>
+        <Key ID="STR_KAT_Breathing_chestTube_display">
+            <English>Chest Tube</English>
+        </Key>
     </Package>
 </Project>

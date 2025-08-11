@@ -414,25 +414,6 @@ class ACE_Medical_Treatment_Actions {
         condition = QUOTE(_patient call EFUNC(airway,checkMask));
         callbackSuccess = QFUNC(removeOxygenMask);
     };
-    class ChestTube: CheckPulse {
-        displayName = CSTRING(Chest_Tube_Use);
-        displayNameProgress = CSTRING(Chest_Tube_Action);
-        category = "surgery";
-        treatmentLocations = QGVAR(chestTubeLocation);
-        allowedSelections[] = {"Chest"};
-        allowSelfTreatment = 0;
-        medicRequired = QGVAR(chestTubeAction_MedLevel);
-        treatmentTime = QGVAR(openTime);
-        items[] = {"kat_aatKit"};
-        consumeItem = 1;
-        condition = QUOTE(([ARR_4(_medic,_patient,0.5,0)] call FUNC(treatmentAdvanced_chestTubeCheck)) && (GVAR(hardcoreBreathingTreatment)));
-        callbackSuccess = QUOTE([ARR_3(_medic,_patient,0)] call FUNC(treatmentAdvanced_chestTube));
-    };
-    class RightChestTube: ChestTube {
-        displayName = CSTRING(Chest_TubeRight_Use);
-        condition = QUOTE(([ARR_4(_medic,_patient,0.5,1)] call FUNC(treatmentAdvanced_chestTubeCheck)) && (GVAR(hardcoreBreathingTreatment)));
-        callbackSuccess = QUOTE([ARR_3(_medic,_patient,1)] call FUNC(treatmentAdvanced_chestTube));
-    };
     class Incision: BasicBandage {
         displayName = CSTRING(Scalpel_Use);
         displayNameProgress = CSTRING(Scalpel_Action);
@@ -488,5 +469,38 @@ class ACE_Medical_Treatment_Actions {
         displayName = CSTRING(ClampRight_Use);
         condition = QUOTE(([ARR_4(_medic,_patient,0.3,1)] call FUNC(treatmentAdvanced_chestTubeCheck)) && (GVAR(hardcoreBreathingTreatment)));
         callbackSuccess = QUOTE([ARR_4(_medic,_patient,0.3,1)] call FUNC(treatmentAdvanced_chestTubeProgress));
+    };
+    class ChestTube: CheckPulse {
+        displayName = CSTRING(Chest_Tube_Use);
+        displayNameProgress = CSTRING(Chest_Tube_Action);
+        category = "surgery";
+        treatmentLocations = QGVAR(chestTubeLocation);
+        allowedSelections[] = {"Chest"};
+        allowSelfTreatment = 0;
+        medicRequired = QGVAR(chestTubeAction_MedLevel);
+        treatmentTime = QGVAR(openTime);
+        items[] = {"kat_chestTube"};
+        consumeItem = 1;
+        condition = QUOTE(([ARR_4(_medic,_patient,0.5,0)] call FUNC(treatmentAdvanced_chestTubeCheck)) && (GVAR(hardcoreBreathingTreatment)));
+        callbackSuccess = QUOTE([ARR_3(_medic,_patient,0)] call FUNC(treatmentAdvanced_chestTube));
+    };
+    class RightChestTube: ChestTube {
+        displayName = CSTRING(Chest_TubeRight_Use);
+        condition = QUOTE(([ARR_4(_medic,_patient,0.5,1)] call FUNC(treatmentAdvanced_chestTubeCheck)) && (GVAR(hardcoreBreathingTreatment)));
+        callbackSuccess = QUOTE([ARR_3(_medic,_patient,1)] call FUNC(treatmentAdvanced_chestTube));
+    };
+    class OpenchestTube: CheckPulse {
+        displayName = CSTRING(Open_chestTube_Kit);
+        displayNameProgress = CSTRING(Open_chestTube_Kit_Action);
+        category = "surgery";
+        treatmentLocations = QGVAR(chestTubeLocation);
+        allowedSelections[] = {"Chest"};
+        allowSelfTreatment = 1;
+        medicRequired = QGVAR(chestTubeAction_MedLevel);
+        treatmentTime = 5;
+        items[] = {"kat_aatKit"};
+        consumeItem = 1;
+        callbackSuccess = QFUNC(treatmentAdvanced_chestTubeKit);
+        condition = "true";
     };
 };

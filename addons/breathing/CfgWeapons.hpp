@@ -40,6 +40,18 @@ class CfgWeapons {
             mass = 1;
         };
     };
+    class kat_chestTube: ACE_ItemCore {
+        scope = 1;
+        scopeCurator = 1;
+        scopeArsenal = 1;
+        author = "Katalam";
+        displayName = CSTRING(chesttube_display);
+        picture = QPATHTOF(ui\chestTube.paa);
+        ACE_isMedicalItem = 1;
+        class ItemInfo: CBA_MiscItem_ItemInfo {
+            mass = 1;
+        };
+    };
     class kat_aatKit: ACE_ItemCore {
         scope = 2;
         scopeCurator = 2;

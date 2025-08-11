@@ -56,7 +56,7 @@ class ACE_Medical_Treatment_Actions {
         treatmentTime = QGVAR(intermediateTime);
         items[] = {"kat_retractor"};
         condition = QUOTE([ARR_4(_medic,_patient,_bodyPart,2.1)] call FUNC(openReductionCheck));
-        consumeItem = 0;
+        consumeItem = 1;
         callbackSuccess = QUOTE([ARR_4(_medic,_patient,_bodyPart,2.1)] call FUNC(openReductionProgress));
     };
     class Incision: BasicBandage {
@@ -83,7 +83,7 @@ class ACE_Medical_Treatment_Actions {
         treatmentTime = QGVAR(intermediateTime);
         items[] = {"kat_clamp"};
         condition = QUOTE([ARR_4(_medic,_patient,_bodyPart,3.3)] call FUNC(openReductionCheck));
-        consumeItem = 0;
+        consumeItem = 1;
         callbackSuccess = QUOTE([ARR_4(_medic,_patient,_bodyPart,3.3)] call FUNC(openReductionProgress));
     };
     class Irrigate: BasicBandage {
@@ -109,7 +109,7 @@ class ACE_Medical_Treatment_Actions {
         medicRequired = QGVAR(surgicalAction_MedLevel);
         treatmentTime = QGVAR(openTime);
         items[] = {"ACE_surgicalKit"};
-        consumeItem = 1;
+        consumeItem = 0;
         condition = QUOTE(([ARR_4(_medic,_patient,_bodyPart,2)] call FUNC(openReductionCheck)) && (GVAR(enable_fracture)));
         callbackSuccess = QUOTE([ARR_4(_medic,_patient,_bodyPart,true)] call FUNC(openReduction));
     };
@@ -198,5 +198,19 @@ class ACE_Medical_Treatment_Actions {
         condition = QUOTE(_patient getVariable [ARR_2(QQGVAR(imaging),false)]);
         consumeItem = 0;
         callbackSuccess = QFUNC(pericardialTap);
+    };
+    class OpenFractureKit: CheckPulse {
+        displayName = CSTRING(Open_Fracture_Kit);
+        displayNameProgress = CSTRING(Open_Fracture_Kit_Action);
+        category = "surgery";
+        treatmentLocations = QGVAR(surgicalLocation);
+        allowedSelections[] = {"All"};
+        allowSelfTreatment = 1;
+        medicRequired = QGVAR(surgicalAction_MedLevel);
+        treatmentTime = 5;
+        items[] = {"kat_fractureKit"};
+        consumeItem = 1;
+        callbackSuccess = QFUNC(fractureKit);
+        condition = "true";
     };
 };

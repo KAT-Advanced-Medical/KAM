@@ -54,7 +54,7 @@ if (_hasExternalBleeding) then {
             // Give a qualitative description of the rate of bleeding
             private _cardiacOutput = [_target] call EFUNC(vitals,getCardiacOutput);
             private _bleedRate = GET_BLOOD_LOSS(_target);
-            private _bleedRateKO = BLOOD_LOSS_KNOCK_OUT_THRESHOLD * (_cardiacOutput max 0.05);
+            private _bleedRateKO = BLOOD_LOSS_KNOCK_OUT_THRESHOLD * (_cardiacOutput max 0.1);
             // Use nonzero minimum cardiac output to prevent all bleeding showing as massive during cardiac arrest
             switch (true) do {
                 case (_bleedRate < _bleedRateKO * BLEED_RATE_SLOW): {
@@ -76,7 +76,7 @@ if (_hasExternalBleeding) then {
             if (HAS_LIMB_BLEEDING(_target,_selectionN)) then {
                 private _cardiacOutput = [_target] call EFUNC(vitals,getCardiacOutput);
                 private _bleedRate = GET_BODY_PART_RATE(_target,_selectionN);
-                private _bleedRateKO = BLOOD_LOSS_KNOCK_OUT_THRESHOLD * (_cardiacOutput max 0.05);
+                private _bleedRateKO = BLOOD_LOSS_KNOCK_OUT_THRESHOLD * (_cardiacOutput max 0.1);
                 // Use nonzero minimum cardiac output to prevent all bleeding showing as massive during cardiac arrest
                 switch (true) do {
                     case (_bleedRate < (_bleedRateKO * BLEED_RATE_SLOW * 2)): {

@@ -1626,5 +1626,17 @@
             <Finnish>%1 %2 murtuma %3</Finnish>
             <Dutch>%1 %2 de breuk op %3</Dutch>
         </Key>
+        <Key ID="STR_KAT_Surgery_open_Fracture_kit">
+            <English>Open Fracture Kit</English>
+        </Key>
+        <Key ID="STR_KAT_Surgery_open_Fracture_kit_Action">
+            <English>Opening Fracture Kit</English>
+        </Key>
+        <Key ID="STR_KAT_Surgery_fractureKit_Display">
+            <English>Fracture Kit</English>
+        </Key>
+        <Key ID="STR_KAT_Surgery_fractureKit_Desc_Short">
+            <English>Contains equipment for Fracture Care</English>
+        </Key>
     </Package>
 </Project>
