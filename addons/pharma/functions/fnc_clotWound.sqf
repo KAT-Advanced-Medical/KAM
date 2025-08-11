@@ -60,7 +60,7 @@ private _fnc_clotWound = {
             };
             if (EGVAR(hypothermia,hypothermiaActive) && (_unit getVariable [QEGVAR(hypothermia,unitTemperature), 37]) < 30) exitWith {};
             private _woundClotDelayMult = (1 * _alteplaseFixedEffectiveness * (600/_coagulationFactor) * _cwmpFixedEffectiveness * _hypothermiaDelay * GET_VASOCONSTRICTION(_unit)) min 10;
-
+            if (_woundClotDelayMult > 6) exitWith {};
             switch (_suffix) do {
                 case "Minor": {
                     switch (true) do {
@@ -198,6 +198,7 @@ private _fnc_clotWound = {
     };
 
     if (!(GVAR(coagulation_allowOnAI)) && ACE_Player != _unit) exitWith { // Check allowOnAI setting to save performance
+    if (!(GVAR(coagulation_allowOnAI)) && (ACE_player != _unit)) exitWith {
         [_idPFH] call CBA_fnc_removePerFrameHandler;
     };
 

@@ -17,8 +17,6 @@
  */
 
 params ["_patient", "_bodyPart", "_type"];
-TRACE_2("tourniquetLocal %1 %2",_patient,_bodyPart);
-diag_log format ["tourniquetLocal %1 %2", _patient,_bodyPart];
 private _partIndex = ALL_BODY_PARTS find toLowerANSI _bodyPart;
 
 private _tourniquets = GET_TOURNIQUETS(_patient);
