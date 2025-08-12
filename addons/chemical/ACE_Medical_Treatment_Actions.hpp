@@ -22,7 +22,7 @@ class ACE_Medical_Treatment_Actions {
     class Decontaminate: BasicBandage {
         displayName = CSTRING(Decontaimeate);
         displayNameProgress = CSTRING(Decontaimeate_progress);
-        allowedSelections[] = {"Head", "LeftArm", "RightArm", "LeftLeg", "RightLeg", "Body"};
+        allowedSelections[] = {"All"};
         allowSelfTreatment = 1;
         category = "advanced";
         callbackSuccess = QFUNC(healdecon);
