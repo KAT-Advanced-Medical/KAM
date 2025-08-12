@@ -1134,15 +1134,15 @@
             <Finnish>Tiiviste, jota käytetään esineiden tiivistämiseen, kun myrkyllistä ainetta vuotaa ulos</Finnish>
             <Dutch>Afdichtmiddel dat gebruikt wordt om een object te dichten wanneer er bijvoorbeeld een giftige stof lekt</Dutch>
         </Key>
-        <Key ID="STR_ace_medical_damage_ChemicalBurn_Large">
+        <Key ID="STR_ACE_Medical_Damage_ChemicalBurn_Large">
             <English>Large Chemical Burn</English>
             <Polish>Duże popażenie chemiczne</Polish>
         </Key>
-        <Key ID="STR_ace_medical_damage_ChemicalBurn_Medium">
+        <Key ID="STR_ACE_Medical_Damage_ChemicalBurn_Medium">
             <English>Medium Chemical Burn</English>
             <Polish>Średnie popażenie chemiczne</Polish>
         </Key>
-        <Key ID="STR_ace_medical_damage_ChemicalBurn_Minor">
+        <Key ID="STR_ACE_Medical_Damage_ChemicalBurn_Minor">
             <English>Minor Chemical Burn</English>
             <Polish>Małe popażenie chemiczne</Polish>
         </Key>
