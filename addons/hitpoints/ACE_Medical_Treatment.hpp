@@ -2265,7 +2265,7 @@ class ACE_Medical_Treatment {
                 effectiveness = 2;
             };
             class AvulsionLarge: Avulsion {
-                effectiveness = 1;
+                effectiveness = 2;
             };
 
             class Contusion: Abrasion {
@@ -2339,7 +2339,7 @@ class ACE_Medical_Treatment {
                 effectiveness = 2;
             };
             class VelocityWoundLarge: VelocityWound {
-                effectiveness = 1;
+                effectiveness = 2;
             };
 
             class PunctureWound: Abrasion {
@@ -2386,19 +2386,6 @@ class ACE_Medical_Treatment {
             };
             class ThermalBurnLarge: ThermalBurn {
                 effectiveness = 0;
-            };
-            class Evisceration: Abrasion {
-                effectiveness = 1;
-                reopeningChance = 0.8;
-                reopeningMinDelay = 600;
-                reopeningMaxDelay = 1800;
-            };
-            class EviscerationMinor: Evisceration {
-            };
-            class EviscerationMedium: Evisceration {
-            };
-            class EviscerationLarge: Evisceration {
-                effectiveness = 2;
             };
         };
         class Adhesive_Bandage: FieldDressing {
@@ -2515,15 +2502,15 @@ class ACE_Medical_Treatment {
 
             class PunctureWound: Abrasion {
                 effectiveness = 0;
-                reopeningChance = 0.5;
-                reopeningMinDelay = 60;
-                reopeningMaxDelay = 120;
+                reopeningChance = 0.2;
+                reopeningMinDelay = 600;
+                reopeningMaxDelay = 1200;
             };
             class PunctureWoundMinor: PunctureWound {
-                effectiveness = 0;
+                effectiveness = 1;
             };
             class PunctureWoundMedium: PunctureWound {
-                effectiveness = 0;
+                effectiveness = 1;
             };
             class PunctureWoundLarge: PunctureWound {
                 effectiveness = 0;
