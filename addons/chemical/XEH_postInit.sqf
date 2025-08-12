@@ -61,8 +61,8 @@ GVAR(gasSources) = createHashMap;
         ["_condition", {true}, [{}]],
         ["_conditionArgs", []],
         ["_isSealable", false],
-        ["_UseParticles", true],
-        ["_UseCustomParticles", true]
+        ["_useParticles", true],
+        ["_useCustomParticles", true]
     ];
 
     private _isObject = _source isEqualType objNull;
@@ -106,7 +106,7 @@ GVAR(gasSources) = createHashMap;
         _source setVariable [QGVAR(sealable), true, true];
     };
 
-    if (_UseParticles) then{
+    if (_useParticles) then{
         //Create all needed Particle effects
         private _particleObjectAmount = (_radius / 10) max 1;
         private _particleObjects = [];
@@ -114,7 +114,7 @@ GVAR(gasSources) = createHashMap;
 
         for "_i" from 0 to _particleObjectAmount do {
             private _tier = _gasLevel;
-            if (!_UseCustomParticles) then {
+            if (!_useCustomParticles) then {
                 _tier = "d";
             };
             _particleSource = "#particlesource" createVehicle _sourcePos;
@@ -196,12 +196,12 @@ GVAR(gasSources) = createHashMap;
 }] call CBA_fnc_addEventHandler;
 
 
-_inventoryEH = [
-    "loadout", {
-    params ["_player"];
-    _player call FUNC(maskOverlay);
+[
+    "ace_glassesChanged", {
+    params ["_unit", "_glassesClass"];
+    _unit call FUNC(maskOverlay);
     }
-] call CBA_fnc_addPlayerEventHandler;
+] call CBA_fnc_addEventHandler;;
 
 _airsupplylist = missionNamespace getVariable [QGVAR(availAirSupplyList), []];
 {

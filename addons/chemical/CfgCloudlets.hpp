@@ -68,10 +68,10 @@ class CfgCloudlets {
     };
 
     class KAT_CAS_GAS_Explosion_FX_VX : KAT_CAS_GAS_Explosion_FX{
-        size[] = {20, 50, 100}; // Wysoka skala cząsteczek, widoczne z daleka
-        positionVar[] = {50, 10, 50}; // Rozrzut cząsteczek na ~100m poziomo
-        moveVelocity[] = {0, 1.5, 0}; // Umiarkowany pionowy ruch (chmura się unosi)
-        moveVelocityVar[] = {2, 1, 2}; // Losowy dryf dla realizmu
+        size[] = {20, 50, 100};
+        positionVar[] = {50, 10, 50};
+        moveVelocity[] = {0, 1.5, 0};
+        moveVelocityVar[] = {2, 1, 2};
         color[] =
         {
             {0.4, 0.05, 0.05, 0},

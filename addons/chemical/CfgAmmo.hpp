@@ -31,13 +31,13 @@ class CfgAmmo {
         KAT_projectile = 1;
         KAT_lifetime = 60;
         KAT_radius = 10;
-        KAT_toxicLvL = 2; //cs
+        KAT_toxicLvL = 2; //blister
     };
     class Sh_82mm_AMOS_Type3: Sh_82mm_AMOS_Type0 {
         KAT_projectile = 1;
         KAT_lifetime = 60;
         KAT_radius = 10;
-        KAT_toxicLvL = 3; //cs
+        KAT_toxicLvL = 3; //nerve
     };
 
     class SmokeShell;
