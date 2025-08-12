@@ -18,9 +18,8 @@
  * Public: No
  */
 
-params ["", "_patient", "_bodyPart"];
+params ["", "_patient"];
 if (_patient call ACEFUNC(common,isSwimming)) exitWith {false};
-private _partIndex = ALL_BODY_PARTS find _bodyPart;
 private _canBindPelvis = false;
 private _pelvicFracture = _unit getVariable [QGVAR(pelvicFracture), 0];
 if (_pelvicFracture > 0) then {
