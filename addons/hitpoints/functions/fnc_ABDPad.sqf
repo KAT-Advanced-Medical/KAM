@@ -15,12 +15,11 @@
  * Public: No
  */
 
-_this set [7, _this param [7, 1]]; // set bandage effectiveness coefficient
 [QACEGVAR(medical_treatment,bandaged), _this] call CBA_fnc_localEvent;
 
-params ["_medic", "_patient", "_bodyPart", "_classname", "", "", "", "_bandageEffectiveness"];
+params ["_medic", "_patient", "_bodyPart", "_classname"];
 
 [_patient, "activity", ACELSTRING(medical_treatment,Activity_bandagedPatient), [[_medic, false, true] call ACEFUNC(common,getName)]] call ACEFUNC(medical_treatment,addToLog);
-[_patient, _bodyPart, _classname, _bandageEffectiveness] call EFUNC(misc,bandageLocal);
+[_patient, _bodyPart, _classname] call EFUNC(misc,bandageLocal);
 
 [_patient, _bodyPart] call FUNC(ABDPadLocal);
