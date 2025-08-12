@@ -196,8 +196,7 @@ private _fnc_clotWound = {
     if !(_alive) exitWith {
         [_idPFH] call CBA_fnc_removePerFrameHandler;
     };
-
-    if (!(GVAR(coagulation_allowOnAI)) && ACE_Player != _unit) exitWith { // Check allowOnAI setting to save performance
+    // Check allowOnAI setting to save performance
     if (!(GVAR(coagulation_allowOnAI)) && (ACE_player != _unit)) exitWith {
         [_idPFH] call CBA_fnc_removePerFrameHandler;
     };
