@@ -45,5 +45,5 @@ private _timeBetween = missionNamespace getVariable [QGVAR(burnTime), 15];
 
         sleep _timebetween;
     };
-    _unit setVariable [QGVAR(VXPoisoned), false, true];
+    _unit setVariable [QGVAR(Contaminated), false, true];
 };
