@@ -131,7 +131,7 @@ private _bodyPartVisParams = [_unit, false, false, false, false]; // params arra
        if (_bodyPart in ["head", "body", "neck", "chest"] && {_woundDamage > PENETRATION_THRESHOLD}) then {
             _criticalDamage = true;
         };
-        if ([_unit, _bodyPartNToAdd, _bodyPartDamage, _woundDamage] call ACEFUNC(medical_damage,determineIfFatal)) then {
+        if ([_unit, _bodyPartNToAdd, _bodyPartDamage, _woundDamage] call FUNC(determineIfFatal)) then {
             if (!isPlayer _unit || {random 1 < ACEGVAR(medical,deathChance)}) then {
                 TRACE_1("determineIfFatal returned true",_woundDamage);
                 [QACEGVAR(medical,FatalInjury), _unit] call CBA_fnc_localEvent;

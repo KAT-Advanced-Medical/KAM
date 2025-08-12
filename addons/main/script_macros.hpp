@@ -578,4 +578,7 @@
     class HitRightFoot: HitLeftLeg {\
         name = "RightFoot";\
     }
-
+#undef FATAL_SUM_DAMAGE_WEIBULL_K
+#undef FATAL_SUM_DAMAGE_WEIBULL_L
+#define FATAL_SUM_DAMAGE_WEIBULL_K ACEGVAR(medical,const_fatalSumDamageWeibull_K)
+#define FATAL_SUM_DAMAGE_WEIBULL_L ACEGVAR(medical,const_fatalSumDamageWeibull_L)
