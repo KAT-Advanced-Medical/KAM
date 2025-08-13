@@ -159,6 +159,7 @@ private _fnc_clotWound = {
                 if (_txaEffectiveness > 0.2) then {
                     _logString = LSTRING(coagulation_Bandaged_TXA);
                     _bandageToUse = _bandageToUse + "TXA";
+                    _factorCountToRemove = _factorCountToRemove * 0.5
                 };
                 [{
                     params["_unit", "_bodyPart", "_selectionName", "_bandageToUse", "_logString", "_factorCountToRemove"];

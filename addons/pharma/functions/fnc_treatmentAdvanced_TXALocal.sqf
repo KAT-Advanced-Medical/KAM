@@ -126,19 +126,19 @@ if (GVAR(coagulation)) then {
                         _x params ["_id", "_amount", "_bleeding", "_damage", "_bandage", "_time"];
                         switch (true) do {
                             case (_bandage isEqualTo "BloodClotMinor"): {
-                                private _delay = random [30, 45, 60];
+                                private _delay = random [10, 15, 20];
                                 private _newBandage = "BloodClotMinorTXA";
                                 private _factorCountToRemove = random [6, 11, 15];
                                 [_patient, _bodyPart, _id, _amount, _bleeding, _damage, _delay, _bandage, _newBandage, _factorCountToRemove] call _fnc_txaClot;
                             };
                             case (_bandage isEqualTo "BloodClotMedium"): {
-                                private _delay = random [60, 90, 120];
+                                private _delay = random [15, 23, 45];
                                 private _newBandage = "BloodClotMediumTXA";
                                 private _factorCountToRemove = random [12, 18, 25];
                                 [_patient, _bodyPart, _id, _amount, _bleeding, _damage, _delay, _bandage, _newBandage, _factorCountToRemove] call _fnc_txaClot;
                             };
                             case (_bandage isEqualTo "BloodClotLarge"): {
-                                private _delay = random [90, 120, 160];
+                                private _delay = random [20, 40, 60];
                                 private _newBandage = "BloodClotLargeTXA";
                                 private _factorCountToRemove = random [16, 23, 30];
                                 [_patient, _bodyPart, _id, _amount, _bleeding, _damage, _delay, _bandage, _newBandage, _factorCountToRemove] call _fnc_txaClot;
