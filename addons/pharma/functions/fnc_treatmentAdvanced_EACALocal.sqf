@@ -51,6 +51,7 @@ private _fnc_eacaClot = {
     params ["_patient", "_bodyPart", "_id", "_amount", "_bleeding", "_damage", "_delay", "_oldBandage"];
     [{
     params ["_patient", "_bodyPart", "_id", "_amount", "_bleeding", "_damage", "_oldBandage", "_newBandage"];
+    if !(alive _patient) exitWith {};
     private _coagWoundsLive = GET_COAGED_WOUNDS(_patient);
     private _currentWounds  = _coagWoundsLive getOrDefault [_bodyPart, []];
     private _minorIndex = -1;
@@ -65,7 +66,6 @@ private _fnc_eacaClot = {
 
     if (_minorIndex == -1) exitWith {};
     _minorWound params ["_id", "_amount", "_bleeding", "_damage", "_bandage", "_time"];
-    systemChat str _minorIndex;
     _currentWounds deleteAt _minorIndex;
     private _newWound = [_id, _amount, _bleeding, _damage, _newBandage, CBA_missionTime];
     _currentWounds pushBack _newWound;

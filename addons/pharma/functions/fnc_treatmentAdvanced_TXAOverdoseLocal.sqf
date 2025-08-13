@@ -32,11 +32,10 @@ params ["_patient"];
                     [{
                         params ["_args", "_idPFH"];
                         _args params ["_patient"];
-                        private _ht = _patient getVariable [QEGVAR(circulation,ht), []];
 
-                            if (_patient getVariable [QEGVAR(circulation,cardiacArrestType), 0] == 0) then {
-                                [QACEGVAR(medical,FatalVitals), _patient] call CBA_fnc_localEvent;
-                            };
+                        if (_patient getVariable [QEGVAR(circulation,cardiacArrestType), 0] == 0) then {
+                            [QACEGVAR(medical,FatalVitals), _patient] call CBA_fnc_localEvent;
+                        };
                     }, [_patient], 15] call CBA_fnc_waitAndExecute;
                     };
                     [_idPFH] call CBA_fnc_removePerFrameHandler;
@@ -50,6 +49,6 @@ params ["_patient"];
                 private _bloodlevels = GET_BODY_FLUID(_patient);
                 _bloodlevels set [5, (_bloodlevels select 5) - 20];
                 _patient setVariable [QEGVAR(circulation,bodyFluid), _bloodlevels, true];
-                if ((random 10000) < 1) then {_patient setDamage 1;};
+                if ((random 10000) < 1) then {_patient setDamage 1};
         }, 15, [_patient,_TXAOverdoseTarget]] call CBA_fnc_addPerFrameHandler;
 }, [_patient], 15] call CBA_fnc_waitAndExecute;

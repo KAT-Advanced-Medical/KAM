@@ -16,7 +16,7 @@
  * Public: No
  */
 
-params ["_patient", "_bodyPart"];
+params ["_patient", "_bodyPart", "_timeTillMaxEffect", "_timeInSystem"];
 private _partIndex = ALL_BODY_PARTS find toLower _bodyPart;
 private _IVarray = _patient getVariable [QGVAR(IV), [0,0,0,0,0,0,0,0,0,0,0,0]];
 private _IVactual = _IVarray select _partIndex;
@@ -54,6 +54,109 @@ if (_IVactual > 1) then {
     _patient setVariable [QGVAR(IV), _IVarray, true];
 };
 
+private _fnc_txaClot = {
+    params ["_patient", "_bodyPart", "_id", "_amount", "_bleeding", "_damage", "_delay", "_oldBandage", "_newBandage", "_factorCountToRemove"];
+    [{
+    params ["_patient", "_bodyPart", "_id", "_amount", "_bleeding", "_damage", "_oldBandage", "_newBandage", "_factorCountToRemove"];
+    if !(alive _patient) exitWith {};
+    private _eacaAmount = [_patient, "EACA", true] call ACEFUNC(medical_status,getMedicationCount) select 1;
+    if (_eacaAmount > 0.1) exitWith {};
+    private _coagWoundsLive = GET_COAGED_WOUNDS(_patient);
+    private _currentWounds  = _coagWoundsLive getOrDefault [_bodyPart, []];
+    private _minorIndex = -1;
+    private _minorWound = -1;
+    {
+        _x params ["_idW", "_amount", "_bleeding", "_damage", "_bandage", "_time"];
+        if ((_bandage isEqualTo _oldBandage) && (_idW isEqualTo _id)) exitWith {
+            _minorIndex = _forEachIndex;
+            _minorWound = _x;
+        };
+    } forEach _currentWounds;
+
+    if (_minorIndex == -1) exitWith {};
+    _minorWound params ["_id", "_amount", "_bleeding", "_damage", "_bandage", "_time"];
+    _currentWounds deleteAt _minorIndex;
+    private _newWound = [_id, _amount, _bleeding, _damage, _newBandage, CBA_missionTime];
+    _currentWounds pushBack _newWound;
+    _coagWoundsLive set [_bodyPart, _currentWounds];
+    _patient setVariable [VAR_COAGED_WOUNDS, _coagWoundsLive, true];
+    private _bodyFluid = GET_BODY_FLUID(_patient);
+    private _coagulationFactor = GET_BODY_FLUID_PLATELETS(_patient);
+    if (_coagulationFactor <= 0) exitWith {};
+    _bodyFluid set [5, (_coagulationFactor - _factorCountToRemove)];
+    _patient setVariable [VAR_BODY_FLUID, _bodyFluid, true];
+    private _impact = _amount;
+    private _woundIndex = count _currentWounds - 1;
+    private _finalWound = _currentWounds select _woundIndex;
+    [_patient, _impact, _bodyPart, _woundIndex, _finalWound, _newBandage, false] call EFUNC(misc,handleCoagReopening);
+    }, [_patient, _bodyPart, _id, _amount, _bleeding, _damage, _oldBandage, _newBandage,_factorCountToRemove], _delay] call CBA_fnc_waitAndExecute;
+};
+
+
+if (GVAR(coagulation)) then {
+    if (([7,8,9] find _IVactual) == -1) then {
+        [{
+            params ["_args", "_idPFH"];
+            _args params ["_patient", "_timeInSystem", "_fnc_txaClot"];
+
+            if !(alive _patient) exitWith {
+                [_idPFH] call CBA_fnc_removePerFrameHandler;
+            };
+            private _eacaAmount = [_patient, "EACA", true] call ACEFUNC(medical_status,getMedicationCount) select 1;
+            if (_eacaAmount > 0.1) exitWith {
+                [_idPFH] call CBA_fnc_removePerFrameHandler;
+            };
+
+
+            private _random = random [6.4, 6.8, 7.2];
+            private _ph     = GET_PH(_patient);
+
+            if (_random <= _ph) then {
+                private _coagWounds       = GET_COAGED_WOUNDS(_patient);
+                private _pulse            = _patient getVariable [VAR_HEART_RATE, 80];
+                private _coagulationFactor = GET_BODY_FLUID_PLATELETS(_patient);
+                if (_coagWounds isEqualTo createHashMap) exitWith {};
+                if (GET_BLOOD_VOLUME_LITERS(_patient) < GVAR(coagulation_requireBV)) exitWith {};
+                if ((_pulse < 20) && {GVAR(coagulation_requireHR)}) exitWith {};
+                if (_coagulationFactor <= 0) exitWith {};
+                {
+                    private _bodyPart = _x;
+                    private _wounds = _coagWounds getOrDefault [_bodyPart, []];
+                    {
+                        _x params ["_id", "_amount", "_bleeding", "_damage", "_bandage", "_time"];
+                        switch (true) do {
+                            case (_bandage isEqualTo "BloodClotMinor"): {
+                                private _delay = random [30, 45, 60];
+                                private _newBandage = "BloodClotMinorTXA";
+                                private _factorCountToRemove = random [6, 11, 15];
+                                [_patient, _bodyPart, _id, _amount, _bleeding, _damage, _delay, _bandage, _newBandage, _factorCountToRemove] call _fnc_txaClot;
+                            };
+                            case (_bandage isEqualTo "BloodClotMedium"): {
+                                private _delay = random [60, 90, 120];
+                                private _newBandage = "BloodClotMediumTXA";
+                                private _factorCountToRemove = random [12, 18, 25];
+                                [_patient, _bodyPart, _id, _amount, _bleeding, _damage, _delay, _bandage, _newBandage, _factorCountToRemove] call _fnc_txaClot;
+                            };
+                            case (_bandage isEqualTo "BloodClotLarge"): {
+                                private _delay = random [90, 120, 160];
+                                private _newBandage = "BloodClotLargeTXA";
+                                private _factorCountToRemove = random [16, 23, 30];
+                                [_patient, _bodyPart, _id, _amount, _bleeding, _damage, _delay, _bandage, _newBandage, _factorCountToRemove] call _fnc_txaClot;
+                            };
+                            default {};
+                        };
+                    } forEach _wounds;
+
+                } forEach (keys _coagWounds);
+            };
+            [{
+                params ["_patient", "_idPFH"];
+                [_idPFH] call CBA_fnc_removePerFrameHandler;
+            }, [_patient, _idPFH], _timeInSystem] call CBA_fnc_waitAndExecute;
+
+        }, 10, [_patient, _timeInSystem, _fnc_txaClot]] call CBA_fnc_addPerFrameHandler;
+    };
+};
 if (!(GVAR(coagulation)) || GVAR(coagulation_allow_TXA_script)) then {
 
     if ([7,8,9] find _IVactual == -1) then {
@@ -62,7 +165,7 @@ if (!(GVAR(coagulation)) || GVAR(coagulation_allow_TXA_script)) then {
 
         [{
             params ["_args", "_idPFH"];
-            _args params ["_patient", "_keepRunning"];
+            _args params ["_patient", "_keepRunning", "_timeInSystem"];
 
             private _alive = alive _patient;
             private _exit = true;
@@ -98,12 +201,12 @@ if (!(GVAR(coagulation)) || GVAR(coagulation_allow_TXA_script)) then {
                 params["_patient", "_idPFH"];
                 [_idPFH] call CBA_fnc_removePerFrameHandler;
             },
-            [_patient, _idPFH], 300] call CBA_fnc_waitAndExecute;
+            [_patient, _idPFH], _timeInSystem] call CBA_fnc_waitAndExecute;
 
             if (_exit && !(_keepRunning)) exitWith {
                 [_idPFH] call CBA_fnc_removePerFrameHandler;
             };
 
-        }, _cycleTime, [_patient, _keepRunning]] call CBA_fnc_addPerFrameHandler;
+        }, _cycleTime, [_patient, _keepRunning, _timeInSystem]] call CBA_fnc_addPerFrameHandler;
     };
 };
