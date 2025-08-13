@@ -49,7 +49,7 @@ class CfgWeapons {
         picture = QPATHTOF(ui\chestTube.paa);
         ACE_isMedicalItem = 1;
         class ItemInfo: CBA_MiscItem_ItemInfo {
-            mass = 1;
+            mass = 0.5;
         };
     };
     class kat_aatKit: ACE_ItemCore {
@@ -65,7 +65,7 @@ class CfgWeapons {
         hiddenSelectionsTextures[] = {QPATHTOF(models\AAT_Kit\AAT_ca.paa)};
         ACE_isMedicalItem = 1;
         class ItemInfo: CBA_MiscItem_ItemInfo {
-            mass = 5;
+            mass = 2.5;
         };
     };
     class kat_ncdKit: ACE_ItemCore {

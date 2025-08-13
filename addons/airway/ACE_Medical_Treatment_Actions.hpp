@@ -233,6 +233,7 @@ class ACE_Medical_Treatment_Actions {
         medicRequired = QGVAR(CrikeAction_MedLevel);
         treatmentTime = QGVAR(incisionTime);
         items[] = {"kat_scalpel"};
+        consumeItem = 1;
         condition = QUOTE([ARR_3(_medic,_patient,0.1)] call FUNC(treatmentAdvanced_cricothyrotomyCheck));
         callbackSuccess = QUOTE([ARR_3(_medic,_patient,0.1)] call FUNC(treatmentAdvanced_cricothyrotomyProgress));
     };
@@ -245,7 +246,7 @@ class ACE_Medical_Treatment_Actions {
         allowedSelections[] = {"Neck"};
         allowSelfTreatment = 0;
         medicRequired = QGVAR(CrikeAction_MedLevel);
-        items[] = {};
+        items[] = {"kat_surgAirway"};
         consumeItem = 0;
         condition = QUOTE([ARR_3(_medic,_patient,5)] call FUNC(treatmentAdvanced_cricothyrotomyCheck));
         callbackSuccess = QUOTE([ARR_2(_medic,_patient)] call FUNC(treatmentAdvanced_cricothyrotomyIncision));
