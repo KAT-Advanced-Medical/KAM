@@ -17,7 +17,7 @@
 
 params ["_unit"];
 
-if (_unit getVariable [QGVAR(Contaminated), false] && !(alive _unit)) exitWith {};
+if (_unit getVariable [QGVAR(Contaminated), false] && {!alive _unit}) exitWith {};
 
 private _timeBetween = missionNamespace getVariable [QGVAR(burnTime), 15];
 
