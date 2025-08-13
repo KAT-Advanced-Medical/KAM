@@ -153,7 +153,7 @@ private _fnc_clotWound = {
                     if !(missionNamespace getVariable [QGVAR(coagulation_allow_LargeWounds), true]) then { continue; };
                 };
             };
-            _factorCountToRemove = ceil (_factorCountToRemove * (1 + ((_amountOf * _bleeding) * 0.5)));
+            _factorCountToRemove = ceil (_factorCountToRemove * (1 + ( _bleeding * 0.5)));
             if (_amountOf * _bleeding > 0) exitWith {
 
                 if (_txaEffectiveness > 0.2) then {
