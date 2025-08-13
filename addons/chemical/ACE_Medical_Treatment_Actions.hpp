@@ -27,7 +27,7 @@ class ACE_Medical_Treatment_Actions {
         category = "advanced";
         callbackSuccess = QFUNC(healdecon);
         condition = QUOTE((_patient getVariable [ARR_2(QQGVAR(Contaminated),false)]));
-        icon = QPATHTOF(ui\Scba_icon.paa);
+        icon = QPATHTOF(ui\deconkit_icon.paa);
         items[] = {"kat_deconkit"};
         consumeItem = 1;
         treatmentTime = 20;

@@ -147,6 +147,7 @@ GVAR(gasSources) = createHashMap;
             _unit setVariable [QGVAR(contaminatedBody), true, true];
         };
         if(!(_unit getVariable [QGVAR(Contaminated), false])) then {
+            _unit setVariable [QGVAR(Contaminated), true, true];
             _unit call FUNC(contaminatedEH);
         };
         
