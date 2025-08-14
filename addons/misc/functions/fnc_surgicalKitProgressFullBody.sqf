@@ -111,11 +111,11 @@ _patient setVariable [VAR_STITCHED_WOUNDS, _stitchedWounds, true];
 
 if (ACEGVAR(medical_treatment,clearTrauma) == 1) then {
     private _partIndex = ALL_BODY_PARTS find _bodyPart;
-    TRACE_2("clearTrauma - clearing trauma after stitching", _bodyPart, _treatedWound);
+    TRACE_2("clearTrauma - clearing trauma after stitching",_bodyPart,_treatedWound);
     private _bodyPartDamage = GET_BODYPART_DAMAGE(_patient);
     _bodyPartDamage set [_partIndex, (_bodyPartDamage select _partIndex) - (_treatedDamageOf * _treatedAmountOf)];
     _patient setVariable [QEGVAR(medical,bodyPartDamage), _bodyPartDamage, true];
-    TRACE_2("clearTrauma - healed damage", _bodyPart, _treatedDamageOf);
+    TRACE_2("clearTrauma - healed damage",_bodyPart,_treatedDamageOf);
 
     switch (_bodyPart) do {
         case "head":     { [_patient, true, false, false, false] call ACEFUNC(medical_engine,updateBodyPartVisuals); };
@@ -131,7 +131,7 @@ if (
     && {_patient getVariable [QACEGVAR(medical,isLimping), false]}
     && _bodyPart in ["leftleg", "rightleg", "upperleftleg", "upperrightleg"]
 ) then {
-    TRACE_3("Updating damage effects", _patient, _bodyPart, local _patient);
+    TRACE_3("Updating damage effects",_patient,_bodyPart,local _patient);
     [QACEGVAR(medical_engine,updateDamageEffects), _patient, _patient] call CBA_fnc_targetEvent;
 };
 

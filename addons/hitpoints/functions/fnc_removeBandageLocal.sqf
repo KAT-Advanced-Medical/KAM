@@ -34,7 +34,7 @@ private _openWoundsOnPart = _openWounds getOrDefault [_bodypart, []];
         } forEach _openWoundsOnPart;
 
         if (_injuryIndex == -1) exitWith {
-            TRACE_1("Matching open wound not found for classID", _classID);
+            TRACE_1("Matching open wound not found for classID",_classID);
         };
 
         private _selectedInjury = _openWoundsOnPart select _injuryIndex;
@@ -86,6 +86,6 @@ private _openWoundsOnPart = _openWounds getOrDefault [_bodypart, []];
             [_patient] call EFUNC(misc,updateDamageEffects);
         };
 
-        TRACE_2("Forced reopening complete", _classID, _type);
+        TRACE_2("Forced reopening complete",_classID,_type);
     };
 } forEach _wounds;

@@ -52,7 +52,7 @@ private _wrappedAny = false;
             _oldBandage + "_wrapped"
         ];
 
-        TRACE_2("Wound Before/After Wrap", _x, _newEntry);
+        TRACE_2("Wound Before/After Wrap",_x,_newEntry);
 
         _bandagedWoundsOnPart set [_forEachIndex, _newEntry];
         _bandagedWounds set [_bodyPart, _bandagedWoundsOnPart];

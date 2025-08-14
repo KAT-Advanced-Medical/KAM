@@ -124,7 +124,7 @@ if (random 1 <= _reopeningChance * ACEGVAR(medical_treatment,woundReopenChance))
                     [_target] call FUNC(updateDamageEffects);
                 };
             };
-            TRACE_2("After openWound update", _openWounds,_bandagedWounds);
+            TRACE_2("After openWound update",_openWounds,_bandagedWounds);
         } else {
             TRACE_3("no match",_selectedInjury,_classID,_part);
         };
@@ -177,7 +177,7 @@ if (random 1 <= _reopeningChance * ACEGVAR(medical_treatment,woundReopenChance))
                     [_target] call FUNC(updateDamageEffects);
                 };
             };
-            TRACE_2("After openWound update", _openWounds,_bandagedWounds);
+            TRACE_2("After openWound update",_openWounds,_bandagedWounds);
         } else {
             TRACE_3("no match",_selectedInjury,_classID,_part);
         };

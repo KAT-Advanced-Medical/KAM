@@ -27,7 +27,7 @@ _patient setVariable [VAR_FENT_PATCH, _fentPatch, true];
         [{
             params ["_args", "_idPFH"];
             _args params ["_patient", "_partIndex"];
-            if (!(alive _patient) || !(HAS_FENT_PATCH(_patient,_partIndex))) exitWith {
+            if !((alive _patient) || (HAS_FENT_PATCH(_patient,_partIndex))) exitWith {
                 [_idPFH] call CBA_fnc_removePerFrameHandler;
             };
             private _fentPatch = _patient getVariable [VAR_FENT_PATCH, [0,0,0,0,0,0,0,0,0,0,0,0]];

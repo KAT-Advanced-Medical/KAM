@@ -21,7 +21,7 @@ params ["_medic", "_patient", "_bodyPart"];
 private _bandagedWounds = GET_BANDAGED_WOUNDS(_patient);
 private _wrappedWounds = _patient getVariable [VAR_WRAPPED_WOUNDS, createHashMap];
 private _wounds = _bandagedWounds getOrDefault [_bodyPart, []];
-TRACE_1("WrapAllWounds1", _wounds);
+TRACE_1("WrapAllWounds1",_wounds);
 
 private _includedTypes = ["Compressed_Gauze", "fourByfour_Gauze", "Burn_Dressing", "Hemostatic_Gauze"];
 private _wrappedAny = false;
@@ -38,7 +38,7 @@ private _newWrappedWounds = _wrappedWounds getOrDefault [_bodyPart, []];
         private _newBandage = _bandage + "_wrapped";
         private _newWound = [_newClassID, _amount, _bleeding, _damage, _newBandage];
 
-        TRACE_2("Wound Before/After Wrap", _x, _newWound);
+        TRACE_2("Wound Before/After Wrap",_x,_newWound);
 
         // Add to wrapped wounds
         _newWrappedWounds pushBack _newWound;

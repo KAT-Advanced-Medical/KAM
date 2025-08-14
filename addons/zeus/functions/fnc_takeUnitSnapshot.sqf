@@ -245,7 +245,7 @@ private _localAnesthesia = _unit getVariable [VAR_LOCAL_ANESTHESIA, DEFAULT_LOCA
 private _activeEtomidateLoadingDose = _unit getVariable [QEGVAR(pharma,activeEtomidateLoadingDose), false];
 
 diag_log format [
-    "[IV/Pharma] AlphaAction: %1 | IV: %2 | IVflow: %3 | IVrate: %4 | IVincomingFlowAmount: %5 | IVpfh: %6 | Active: %7 | IVPharma_PFH: %8 | IVmenuActive: %9 | ExternalPh: %10 | pH: %11 | OpioidFactor: %12 | OpioidDepression: %13 | KidneyFail: %14 | KidneyArrest: %15 | KidneyPressure: %16 | RespiratoryRate: %17 | HeartContractility: %18 | NauseaMult: %19 | LocalAnesthesia: %20 | ActiveEtomidateLoadingDose: %21 | CoagulationFactor: %22",
+    "[IV/Pharma] AlphaAction: %1 | IV: %2 | IVflow: %3 | IVrate: %4 | IVincomingFlowAmount: %5 | IVpfh: %6 | Active: %7 | IVPharma_PFH: %8 | IVmenuActive: %9 | ExternalPh: %10 | pH: %11 | OpioidFactor: %12 | OpioidDepression: %13 | KidneyFail: %14 | KidneyArrest: %15 | KidneyPressure: %16 | RespiratoryRate: %17 | HeartContractility: %18 | NauseaMult: %19 | LocalAnesthesia: %20 | ActiveEtomidateLoadingDose: %21",
     _alphaAction,
     _IV,
     _IVflow,
@@ -266,8 +266,7 @@ diag_log format [
     _heartContractility,
     _nauseaMult,
     _localAnesthesia,
-    _activeEtomidateLoadingDose,
-    _coagulationFactor
+    _activeEtomidateLoadingDose
 ];
 private _fractures = _unit getVariable [QEGVAR(surgery,fractures), [0,0,0,0,0,0,0,0,0,0,0,0]];
 private _lidocaine = _unit getVariable [QEGVAR(surgery,lidocaine), false];

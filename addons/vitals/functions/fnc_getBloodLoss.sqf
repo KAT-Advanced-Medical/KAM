@@ -30,6 +30,6 @@ TRACE_4("GBL",_woundBleeding,_cardiacOutputFixed,_resistance,_bloodLoss);
 
 private _eventArgs = [_unit, _bloodLoss]; // Pass by reference
 
-[QGVAR(getBloodLoss), _eventArgs] call CBA_fnc_localEvent;
+[QACEGVAR(medical_status,getBloodLoss), _eventArgs] call CBA_fnc_localEvent;
 
 _eventArgs select 1 // return

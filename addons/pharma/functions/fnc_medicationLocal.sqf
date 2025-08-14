@@ -63,8 +63,8 @@ if (_classname in ["CWMP", "Painkillers", "Penthrox", "BubbleWrap", "Caffeine", 
     private _hasCatastrophicAirway = ((_catastrophicState select 0) || (_catastrophicState select 1));
     private _occlusion = (_occlusionArray findIf { _x > 2 }) != -1;
     private _obstruction = (_obstructionArray findIf { _x != 0 }) != -1;
-    if ((((_obstruction || _occlusion)) || _hasCatastrophicAirway)) exitwith {
-        TRACE_3("Medication injection site is occluded by tourniquet", _partIndex,_classname,_patient);
+    if ((((_obstruction || _occlusion)) || _hasCatastrophicAirway)) exitWith {
+        TRACE_3("Medication injection site is occluded by tourniquet",_partIndex,_classname,_patient);
     };
 };
 private _partIndex = ALL_BODY_PARTS find toLower _bodyPart;
@@ -99,7 +99,7 @@ private _isOccluded =
     && !( ((_IVarray select _partIndex isEqualTo 13) && _hasValidSuffix) 
     || (_classname in _subDermalMeds));
 if (_isOccluded) exitWith {
-    TRACE_3("Medication injection site is occluded by tourniquet", _partIndex,_classname,_patient);
+    TRACE_3("Medication injection site is occluded by tourniquet",_partIndex,_classname,_patient);
     private _occludedMedications = _patient getVariable [QACEGVAR(medical,occludedMedications), []];
     _occludedMedications pushBack [_partIndex, _classname, _patient];
     _patient setVariable [QACEGVAR(medical,occludedMedications), _occludedMedications, true];
