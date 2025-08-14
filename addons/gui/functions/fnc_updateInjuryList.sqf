@@ -44,7 +44,7 @@ private _hasExternalBleeding = false;
 } forEach (keys _wounds);
 
 // Indicate if unit is bleeding at all
-if (_hasExternalBleeding) then {
+if (_hasExternalBleeding && (IS_BLEEDING(_target))) then {
     switch (GVAR(showBleeding)) do {
         case 1: {
         //  Just show whether the unit is bleeding at all
@@ -54,7 +54,7 @@ if (_hasExternalBleeding) then {
             // Give a qualitative description of the rate of bleeding
             private _cardiacOutput = [_target] call EFUNC(vitals,getCardiacOutput);
             private _bleedRate = GET_BLOOD_LOSS(_target);
-            private _bleedRateKO = BLOOD_LOSS_KNOCK_OUT_THRESHOLD * (_cardiacOutput max 0.1);
+            private _bleedRateKO = BLOOD_LOSS_KNOCK_OUT_THRESHOLD * (_cardiacOutput max 0.15);
             // Use nonzero minimum cardiac output to prevent all bleeding showing as massive during cardiac arrest
             switch (true) do {
                 case ((_bleedRate * 4) < _bleedRateKO * BLEED_RATE_SLOW): {
@@ -76,7 +76,7 @@ if (_hasExternalBleeding) then {
             if (HAS_LIMB_BLEEDING(_target,_selectionN)) then {
                 private _cardiacOutput = [_target] call EFUNC(vitals,getCardiacOutput);
                 private _bleedRate = GET_BODY_PART_RATE(_target,_selectionN);
-                private _bleedRateKO = BLOOD_LOSS_KNOCK_OUT_THRESHOLD * (_cardiacOutput max 0.1);
+                private _bleedRateKO = BLOOD_LOSS_KNOCK_OUT_THRESHOLD * (_cardiacOutput max 0.15);
                 // Use nonzero minimum cardiac output to prevent all bleeding showing as massive during cardiac arrest
                 switch (true) do {
                     case (_bleedRate < (_bleedRateKO * BLEED_RATE_SLOW * 2)): {
