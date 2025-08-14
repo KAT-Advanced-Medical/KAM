@@ -22,7 +22,7 @@
  */
 
 // This gets close to vanilla values on FMJ ammo
-#define DAMAGE_SCALING_FACTOR 10
+#define DAMAGE_SCALING_FACTOR 7.5
 #define UNSCALED_BASE_ARMOR 2
 
 params ["_unit", "_allDamages", "_typeOfDamage", "_ammo"];
