@@ -593,6 +593,12 @@
         </Key>
         <Key ID="STR_KAT_Hitpoints_Activity_convertedTourniquet">
             <English>%1 converted a Tourniquet</English>
-        </Key> 
+        </Key>
+        <Key ID="STR_KAT_Hitpoints_armorEffectivness_Description">
+            <English>Armor Effectivness Multiplier</English>
+        </Key>
+        <Key ID="STR_KAT_Hitpoints_armorEffectivness_DisplayName">
+            <English>How effective armor is, higher is stronger</English>
+        </Key>
     </Package>
 </Project>

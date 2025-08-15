@@ -68,9 +68,9 @@ TRACE_1("gotArmorThickness",_armorThickness);
 private _impactSpeed = (_realDamage/_hit) * (_typicalSpeed max 1);
 
 private _penDepth = _penFactor * _impactSpeed;
-
+private _effectivness = QGVAR(armorEffectivness);
 // Max damage is the config value, go down from there based on armor penetration
-private _finalDamage = (_hit * ((_penDepth/_armorThickness) min 1)) / DAMAGE_SCALING_FACTOR;
+private _finalDamage = (_hit * ((_penDepth/_armorThickness) min 1)) / (DAMAGE_SCALING_FACTOR * _effectivness);
 _damageData set [0, _finalDamage];
 
 TRACE_3("Armor penetration handled, passing damage",_finalDamage,_damageData,_allDamages);

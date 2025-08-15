@@ -52,7 +52,7 @@ private _bodyExternalPartBleeding = [0,0,0,0,0,0,0,0,0,0,0,0];
             private _category   = _woundClassID % 10;
             private _suffix = ["Minor", "Medium", "Large"] select _category;
             private _className = ACEGVAR(medical_damage,woundClassNames) select _classIndex;
-            if (_isPressureApplied) then {
+            if (_isPressureApplied || (_occlusionLevel > 0)) then {
                 switch (true) do {
                     case (_suffix == "Minor"): {
                         _partBleeding = _partBleeding + ((_amountOf * _bleeding) * (_pressureApplied * 1.5) * (1 - _occlusionLevel));
