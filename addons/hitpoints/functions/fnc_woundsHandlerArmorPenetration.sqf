@@ -25,6 +25,7 @@
 #define DAMAGE_SCALING_FACTOR 5
 #define UNSCALED_BASE_ARMOR 2
 
+if (!ACEGVAR(medical,alternateArmorPenetration)) exitWith {_this};
 params ["_unit", "_allDamages", "_typeOfDamage", "_ammo"];
 TRACE_4("woundsHandlerArmorPenetration",_unit,_allDamages,_typeOfDamage,_ammo);
 // See (https://community.bistudio.com/wiki/CfgAmmo_Config_Reference#caliber),
@@ -68,7 +69,7 @@ TRACE_1("gotArmorThickness",_armorThickness);
 private _impactSpeed = (_realDamage/_hit) * (_typicalSpeed max 1);
 
 private _penDepth = _penFactor * _impactSpeed;
-private _effectivness = QGVAR(armorEffectivness);
+private _effectivness = GVAR(armorEffectivness);
 // Max damage is the config value, go down from there based on armor penetration
 private _finalDamage = (_hit * ((_penDepth/_armorThickness) min 1)) / (DAMAGE_SCALING_FACTOR * _effectivness);
 _damageData set [0, _finalDamage];

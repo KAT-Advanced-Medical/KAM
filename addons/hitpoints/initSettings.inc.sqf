@@ -2,8 +2,8 @@
     QGVAR(armorEffectivness),
     "SLIDER",
     [LSTRING(armorEffectivness_DisplayName), LSTRING(armorEffectivness_Description)],
-    [CBA_SETTINGS_CAT, ELSTRING(GUI,SubCategory_Basic)],
-    [0.5, 2, 1, 0.1],
+    [CBA_SETTINGS_CAT, LSTRING(Subcatagory_Armor)],
+    [0.5, 2, 1, 1],
     true
 ] call CBA_fnc_addSetting;
 
