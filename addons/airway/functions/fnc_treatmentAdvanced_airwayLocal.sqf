@@ -26,8 +26,6 @@ if ((_occlusion || (_obstruction && !(_patient getVariable [QGVAR(overstretch), 
     [QGVAR(airwayFeedback), [_medic, LLSTRING(AirwayStatus_NotClearForItem)], _medic] call CBA_fnc_targetEvent;
     [_medic, _usedItem] call ACEFUNC(common,addToInventory);
 };
-systemChat str _usedItem;
-systemChat str _classname;
 _patient setVariable [QGVAR(airway), true, true];
 _patient setVariable [QGVAR(airway_item), _classname, true];
 switch (true) do {

@@ -21,7 +21,6 @@
 
 params ["_target", "_bodyPart", "_actionData"];
 private _partIndex = ALL_BODY_PARTS find _bodyPart;
-systemChat str _partIndex;
 private _bloodLossOnBodyPart = 0;
 
 // Add all bleeding from wounds on selection
