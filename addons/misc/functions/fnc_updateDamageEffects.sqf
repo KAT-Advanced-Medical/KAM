@@ -34,7 +34,6 @@ if (ACEGVAR(medical,fractures) > 0) then {
     TRACE_1("",_fractures);
     if ((_fractures select 8) == 1 || (_fractures select 9) == 1 || (_fractures select 10) == 1 || (_fractures select 11) == 1) then {
         TRACE_1("limping because of fracture",_fractures);
-        diag_log format ["limping because of fracture %1",_fractures];
         _isLimping = true;
     };
     if ((_fractures select 4) == 1) then { _aimFracture = _aimFracture + 4; };

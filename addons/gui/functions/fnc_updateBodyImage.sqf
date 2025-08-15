@@ -33,7 +33,7 @@ private _surgicalBlock = GET_SURGICAL_TOURNIQUETS(_target);
         _x params ["_woundClassID", "_amountOf", "_bleeding"];
         private _classIndex = _woundClassID / 10;
         private _className = ACEGVAR(medical_damage,woundClassNames) select _classIndex;
-        if (_className in ["InternalBleeding"]) then {} else {
+        if !(_className in ["InternalBleeding"]) then {
             _bodyPartBloodLoss set [_partIndex, (_bodyPartBloodLoss select _partIndex) + (_bleeding * _amountOf)];
         };
     } forEach _y;

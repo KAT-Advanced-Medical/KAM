@@ -31,11 +31,15 @@ private _hasExternalBleeding = false;
     {
         private _woundClassID = _x select 0;
         private _amountOf     = _x select 1;
+        private _bleeding     = _x select 2;
 
         private _classIndex = _woundClassID / 10;
         private _className  = ACEGVAR(medical_damage,woundClassNames) select _classIndex;
-
-        if (_amountOf > 0 && {_className != "InternalBleeding"}) exitWith {
+        if (
+            _amountOf > 0 
+            && {_className != "InternalBleeding"} 
+            && {_bleeding > 0}
+        ) exitWith {
             _hasExternalBleeding = true;
         };
     } forEach _woundList;
@@ -316,8 +320,13 @@ if (ACEGVAR(medical_gui,showDamageEntry)) then {
 
 // Indicate if a tourniquet is applied
 if (HAS_TOURNIQUET_ACTUAL(_target,_selectionN)) then {
-    _entries pushBack [format ["%1 [%2]", localize ACELSTRING(medical_gui,Status_Tourniquet_Applied), _target getVariable [QEGVAR(circulation,tourniquetTime), [0,0,0,0,0,0,0,0,0,0,0,0]] select _selectionN], [0.77, 0.51, 0.08, 1]];
+    if ((GET_KAT_TOURNIQUETS(_target) select _selectionN) >= 1) then {
+        _entries pushBack [format ["%1 [%2]", localize ACELSTRING(medical_gui,Status_Tourniquet_Applied), _target getVariable [QEGVAR(circulation,tourniquetTime), [0,0,0,0,0,0,0,0,0,0,0,0]] select _selectionN], [0.77, 0.51, 0.08, 1]];
+    } else {
+        _entries pushBack [format ["[H] %1 [%2]", localize ACELSTRING(medical_gui,Status_Tourniquet_Applied), _target getVariable [QEGVAR(circulation,tourniquetTime), [0,0,0,0,0,0,0,0,0,0,0,0]] select _selectionN], [0.77, 0.51, 0.08, 1]];
+    };
 };
+    
 
 private _warmerPlaced = _target getVariable [QEGVAR(hypothermia,fluidWarmer), [0,0,0,0,0,0,0,0,0,0,0,0]];
 
