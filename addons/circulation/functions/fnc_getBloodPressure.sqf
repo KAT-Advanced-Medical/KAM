@@ -18,10 +18,10 @@
  */
 
 // Value is taken because with cardic output and resistance at default values, it will put blood pressure High at 120.
-#define MODIFIER_BP_HIGH    1.2766
+#define MODIFIER_BP_HIGH    10.58824
 
 // Value is taken because with cardic output and resistance at default values, it will put blood pressure Low at 80.
-#define MODIFIER_BP_LOW     0.85106
+#define MODIFIER_BP_LOW     7.05882
 
 params ["_unit"];
 

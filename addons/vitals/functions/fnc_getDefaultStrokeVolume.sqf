@@ -21,7 +21,7 @@ private _strokeVolume = 0.095;
 private _bloodPressure = [80, 120];
 
 private _fillPortion = 1 - exp (-3 * 1);
-private _edv = _fillPortion * _defaultCVP * 1.4 * _strokeVolume;
+private _edv = _fillPortion * _defaultCVP * 0.25 * _strokeVolume;
 
 private _esv = (0.5 * _strokeVolume);
 
