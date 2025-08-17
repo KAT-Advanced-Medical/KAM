@@ -55,7 +55,6 @@ PREP(woundsHandlerArmorPenetration);
 PREP(woundsHandlerBase);
 PREP(woundsHandlerBurning);
 PREP(woundsHandlerEviscerationHit);
-PREP(woundsHandlerExplosion);
 PREP(woundsHandlerJoints);
 PREP(woundsHandlerPelvicHit);
 PREP(woundsHandlerVehiclehit);

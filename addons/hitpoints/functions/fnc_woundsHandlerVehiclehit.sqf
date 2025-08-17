@@ -29,7 +29,7 @@ private _damageToApply = (abs (_allDamages select 0 select 0));
 private _damageMap = createHashMap;
 private _bodyPart = "";
 private _allBodyParts = ALL_BODY_PARTS; // micro-optimization here and above, don't recreate this array every time
-
+TRACE_1("Vehicle explosion handled, passing damage",_damageToApply);
 // hitpoints are randomized, more damage means more wounds in different body parts
 // use a hashmap so we only create one entry in _newDamages per body part
 for "_i" from 1 to (_damageToApply * 6) do {
@@ -42,5 +42,5 @@ private _newDamages = [];
     _newDamages pushBack [_damageMap get _x, _x, _damageToApply];
 } forEach (keys _damageMap); // micro-optimization again, two 'get's is still faster than iterating over a hashmap
 
-TRACE_1("Vehicle explosion handled, passing damage",_newDamages);
+TRACE_2("Vehicle explosion handled, passing damage",_newDamages,_damageMap);
 [_unit, _newDamages, _typeOfDamage] //return

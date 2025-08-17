@@ -160,7 +160,6 @@ class ACE_Medical_Injuries {
             thresholds[] = {{20, 15}, {8, 7}, {2, 3}, {1.2, 2}, {0.4, 1}, {0,0}};
             selectionSpecific = 0;
             class woundHandlers: woundHandlers {
-                ACEGVAR(medical_damage,woundsHandlerExplosion) = QACEFUNC(medical_damage,woundsHandlerExplosion);
                 GVAR(eviscerationHit) = QFUNC(woundsHandlerEviscerationHit);
                 EGVAR(breathing,pulmoHit) = QEFUNC(breathing,woundsHandlerPulmoHit);
                 GVAR(jointHit) = QFUNC(woundsHandlerJoints);
@@ -219,12 +218,34 @@ class ACE_Medical_Injuries {
                 sizeMultiplier = 1;
             };
         };
-        class vehiclehit: explosive {
+        class vehiclehit {
             // vehicle explosions are usually caused by explosive damage and should behave similarly
             thresholds[] = {{6, 3}, {4.5, 2}, {2, 2}, {0.8, 1}, {0.2, 1}, {0, 0}};
             class woundHandlers: woundHandlers {
-                ACEGVAR(medical_damage,woundsHandlerVehiclehit) = QACEFUNC(medical_damage,woundsHandlerVehiclehit);
+                ACEGVAR(medical_damage,woundsHandlerVehiclehit) = QFUNC(woundsHandlerVehiclehit);
+                GVAR(eviscerationHit) = QFUNC(woundsHandlerEviscerationHit);
+                EGVAR(breathing,pulmoHit) = QEFUNC(breathing,woundsHandlerPulmoHit);
+                GVAR(jointHit) = QFUNC(woundsHandlerJoints);
                 GVAR(pelvicHit) = QFUNC(woundsHandlerPelvicHit);
+                EGVAR(airway,airwayHit) = QEFUNC(airway,handleAirwayHit);
+            };
+            class Avulsion {
+                weighting[] = {{1, 1}, {0.8, 0}};
+            };
+            class Cut {
+                weighting[] = {{1.5, 1}, {0.35, 1}, {0, 0}};
+            };
+            class Laceration {
+                weighting[] = {{1.5, 1}, {0.35, 1}, {0, 0}};
+            };
+            class Contusion {
+                weighting[] = {{1, 2}, {0.35, 1}};
+                sizeMultiplier = 2;
+                painMultiplier = 0.9;
+            };
+            class InternalBleeding {
+                weighting[] = {{1, 1}, {0.8, 0}};
+                sizeMultiplier = 0.5;
             };
         };
         class vehiclecrash {

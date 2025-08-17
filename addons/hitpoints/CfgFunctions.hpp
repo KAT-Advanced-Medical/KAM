@@ -11,9 +11,6 @@ class CfgFunctions {
             class woundsHandlerBase {
                 file = QPATHTOF(functions\fnc_woundsHandlerBase.sqf);
             };
-            class woundsHandlerExplosion {
-                file = QPATHTOF(functions\fnc_woundsHandlerExplosion.sqf);
-            };
             class woundsHandlerVehiclehit {
                 file = QPATHTOF(functions\fnc_woundsHandlerVehiclehit.sqf);
             };
