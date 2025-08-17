@@ -11,6 +11,7 @@
             <Chinese>啟用 K他命(氯胺酮)、芬太尼、冰毒(甲基苯丙胺) 等 鴉片類藥物的作用</Chinese>
             <Chinesesimp>使阿片类药物对氯胺酮、芬太尼和帕维汀产生作用</Chinesesimp>
             <Dutch>Maakt het mogelijk om opioid-effecten te verkrijgen bij het gebruik van ketamine, fentanyl en pervitin</Dutch>
+            <Hungarian>Lehetővé teszi az opioidok hatását a ketaminra, a fentanilra és a pervitinre.</Hungarian>
         </Key>
         <Key ID="STR_KAT_Feedback_SETTING_OpioidEffect_display">
             <English>Enable opioid effect</English>
@@ -22,6 +23,7 @@
             <Chinese>啟用鴉片類藥物效果</Chinese>
             <Chinesesimp>启用阿片类药物作用</Chinesesimp>
             <Dutch>Zet opioid-effecten aan</Dutch>
+            <Hungarian>Opioid hatás engedélyezése</Hungarian>
         </Key>
         <Key ID="STR_KAT_Feedback_SETTING_lowSpO2_DESC">
             <English>Lets you change the SpO2 Value at which you get the Flashing warning indicator and stamina loss effect</English>
@@ -39,6 +41,7 @@
             <Chinesesimp>允许您更改SpO2警告值，在该值下，您将获得闪烁警告指示器和耐力损失效果</Chinesesimp>
             <Finnish>Voit muuttaa SpO2-arvoa, jolla saat vilkkuvan varoituksen ja kestävyyden heikkenemisen</Finnish>
             <Dutch>Defineert de SpO2 waarde waarbij uithoudingsproblemen ontstaan en er een visueel pulseren effect getoond wordt</Dutch>
+            <Hungarian>Lehetővé teszi a SpO2 érték megváltoztatását, amelynél a villogó figyelmeztető jelzőfény és az állóképesség-vesztés hatása megjelenik.</Hungarian>
         </Key>
         <Key ID="STR_KAT_Feedback_SETTING_lowSpO2_display">
             <English>Low SpO2 warning level</English>
@@ -56,6 +59,7 @@
             <Chinesesimp>低SpO2警告级别</Chinesesimp>
             <Finnish>Matala SpO2-varoitustaso</Finnish>
             <Dutch>Waarschuwingswaarde voor SpO2</Dutch>
+            <Hungarian>Alacsony SpO2 figyelmeztető szint</Hungarian>
         </Key>
         <Key ID="STR_KAT_Feedback_cba_name">
             <English>KAT - ADV Medical: Feedback</English>
@@ -64,6 +68,7 @@
             <German>KAT - ADV Medical: Feedback</German>
             <Japanese>KAM - フィードバック</Japanese>
             <Dutch>KAT - ADV Medical: Feedback</Dutch>
+            <Hungarian>KAT - ADV Medical: Visszajelzés</Hungarian>
         </Key>
     </Package>
 </Project>
