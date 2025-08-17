@@ -808,7 +808,7 @@
             <Norwegian>Pasientens hode er allerede hyperforlenget</Norwegian>
             <Finnish>Potilaan pää on jo yli ojentunut</Finnish>
             <Dutch>Patiënts hoofd is al overstrekt</Dutch>
-            <Hungarian>Az ápolt feje már hyperextenzióban van</Hungarian>
+            <Hungarian>A beteg feje már hyperextenzióban van</Hungarian>
         </Key>
         <Key ID="STR_KAT_Airway_Hyperextend_displayName">
             <English>Hyperextending Head</English>
@@ -1246,7 +1246,7 @@
             <Norwegian>Maks nødvendig tid en pasient må være i stabilt sideleie for å bli kvitt okklusjonen.</Norwegian>
             <Finnish>Enimmäisaika, joka tarvitaan potilaan puhdistamiseen toipumisasennossa</Finnish>
             <Dutch>Maximale tijd die nodig is om een patiënt in de stabiele zijligging te ontdoen van een verstopping.</Dutch>
-            <Hungarian>Maximális idő, amíg az ápolt stabil oldalfekvésben lehet az elzáródás kiürítéséhez.</Hungarian>
+            <Hungarian>Maximális idő, amíg a beteg stabil oldalfekvésben lehet az elzáródás kiürítéséhez.</Hungarian>
         </Key>
         <Key ID="STR_KAT_Airway_SETTING_RecoveryPosition_Time_DESC">
             <English>How long it will take to establish recovery position</English>
@@ -1385,7 +1385,7 @@
         <Key ID="STR_KAT_Airway_SETTING_occlusion_cooldownPeriod_DESC">
             <English>Period in seconds during which patient cannot get another occlusion after last occlusion was cleared. Set to 0 to disable this feature.</English>
             <German>Zeitraum in Sekunden, in dem ein Patient keine weitere Okklusion bekommen kann, nachdem die letzte Okklusion beseitigt wurde. Auf 0 setzen, um diese Funktion zu deaktivieren.</German>
-            <Hungarian>Az az időtartam másodpercben, amíg az ápolt nem kaphat újabb elzáródást az utolsó elzáródás megszűnése után. 0-ra állítva a funkció ki van kapcsolva.</Hungarian>
+            <Hungarian>Az az időtartam másodpercben, amíg a beteg nem kaphat újabb elzáródást az utolsó elzáródás megszűnése után. 0-ra állítva a funkció ki van kapcsolva.</Hungarian>
         </Key>
         <Key ID="STR_KAT_Airway_SETTING_occlusion_repeatTimer">
             <English>Occlusion repeat timer</English>
@@ -1409,12 +1409,12 @@
         <Key ID="STR_KAT_Airway_SETTING_occlusion_repeatTimer_DESC">
             <English>Time interval in seconds at which the system checks for new occlusion occurrences in unconscious patients.</English>
             <German>Zeitintervall in Sekunden, in dem das System neue Okklusionsereignisse bei bewusstlosen Patienten überprüft.</German>
-            <Hungarian>Az az időköz másodpercben, amely alatt a rendszer ellenőrzi az új elzáródások előfordulását eszméletlen ápoltoknál.</Hungarian>
+            <Hungarian>Az az időköz másodpercben, amely alatt a rendszer ellenőrzi az új elzáródások előfordulását eszméletlen betegeknél.</Hungarian>
         </Key>
         <Key ID="STR_KAT_Airway_SETTING_puking_sound_DESC">
             <English>Enable or disable the sound effect when a patient develops airway occlusion (vomiting).</English>
             <German>Aktiviert oder deaktiviert den Soundeffekt, wenn bei einem Patienten eine Atemwegsobstruktion (Erbrechen) auftritt.</German>
-            <Hungarian>Be- vagy kikapcsolja a hanghatást, amikor az ápoltnál légúti elzáródás (hányás) lép fel.</Hungarian>
+            <Hungarian>Be- vagy kikapcsolja a hanghatást, amikor a betegnél légúti elzáródás (hányás) lép fel.</Hungarian>
         </Key>
         <Key ID="STR_KAT_Airway_SETTING_puking_sound">
             <English>Activate the puking sound?</English>
