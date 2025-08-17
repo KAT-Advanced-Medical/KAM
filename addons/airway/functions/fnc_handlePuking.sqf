@@ -31,7 +31,7 @@ _unit setVariable ["kat_pukeActive_PFH", true];
     if (!_alive || !_isUnconscious) exitWith {
         _unit setVariable ["kat_pukeActive_PFH", nil];
     };
-    if (random (100) <= GVAR(airwayPukeChance)) then {
+    if ((random (100) <= GVAR(airwayPukeChance)) || (_unit getVariable [QEGVAR(brain,ICP),15] > 25)) then {
         private _occlusionState = _unit getVariable [QGVAR(occlusion), [0, 0, 0]];
         private _usedItem = _unit getVariable [QGVAR(airway_item), ""];
         switch (true) do {

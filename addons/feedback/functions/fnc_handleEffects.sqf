@@ -21,6 +21,7 @@ if (ACEGVAR(common,OldIsCamera) || {!alive ACE_player}) exitWith {
     [false]    call FUNC(effectLowSpO2);
     [false]    call FUNC(effectHurtEye);
     [false]    call FUNC(effectEyeInjury);
+    [false]    call FUNC(effectLossCMR);
 };
 
 BEGIN_COUNTER(handleEffects);
@@ -33,6 +34,7 @@ private _wheeze = ((ACE_player getVariable [QEGVAR(breathing,pneumothorax), [0, 
   (ACE_player getVariable [QEGVAR(breathing,tensionpneumothorax), [false, false]] select 0) || (ACE_player getVariable [QEGVAR(breathing,tensionpneumothorax), [false, false]] select 1) ||(ACE_player getVariable [QEGVAR(breathing,hemopneumothorax), [false, false]] select 0) || (ACE_player getVariable [QEGVAR(breathing,hemopneumothorax), [false, false]] select 1));
 private _eyeInjurySeverity        = GET_DUST_INJURY(ACE_player);
 private _eyeInjuries        = GET_EYE_INJURIES(ACE_player);
+private _cmr             = GET_CMR(ACE_player);
 
 private _occlusionArray = ACE_player getVariable [QEGVAR(airway,occlusion), [0, 0, 0]];
 private _obstructionArray = ACE_player getVariable [QEGVAR(airway,obstruction), [0, 0, 0]];
@@ -77,5 +79,7 @@ if (_time != 0) then {
 [!_unconscious, _wheeze, ACE_player] call FUNC(effectBreathingWheeze);
 [!_unconscious, _eyeInjurySeverity] call FUNC(effectEyeInjury);
 [!_unconscious, _eyeInjuries, _manualUpdate] call FUNC(effectHurtEye);
+
+[!_unconscious, _cmr] call FUNC(effectLossCMR);
 
 END_COUNTER(handleEffects);

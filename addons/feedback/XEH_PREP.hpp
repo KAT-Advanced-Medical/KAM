@@ -6,6 +6,7 @@ PREP(effectEyeBlink);
 PREP(effectEyeInjury);
 PREP(effectHurtEye);
 PREP(effectLowSpO2);
+PREP(effectLossCMR);
 PREP(effectOpioid);
 PREP(effectTearHaze);
 PREP(handleEffects);

@@ -64,3 +64,9 @@ GVAR(ppBlurBlink) = [
     213706,
     [1]
 ] call _fnc_createEffect;
+// - Low CMR (brain addon) ---------------------------------------------
+GVAR(minorLossCMR) = [
+    "DynamicBlur",
+    213702,
+    [0]
+] call _fnc_createEffect;

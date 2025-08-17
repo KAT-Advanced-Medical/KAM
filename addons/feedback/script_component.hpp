@@ -24,3 +24,5 @@
 
 #define FX_COUGH_FADE_IN   0.3
 #define FX_COUGH_FADE_OUT  0.7
+#define FX_MINOR_CMR_FADE_IN  0.5
+#define FX_MINOR_CMR_FADE_OUT  1.8
