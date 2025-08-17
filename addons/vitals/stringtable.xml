@@ -11,6 +11,7 @@
             <Chinese>啟用基本生命體徵套件</Chinese>
             <Chinesesimp>启用基本生命体征套件</Chinesesimp>
             <Dutch>Sta eenvoudige vitalen waarden kits toe</Dutch>
+            <Hungarian>Basic Vitals Kit engedélyezése</Hungarian>
         </Key>
         <Key ID="STR_KAT_Vitals_BASIC_DIAGNOSTIC_TIME">
             <English>Basic Vitals Kit Time</English>
@@ -22,6 +23,7 @@
             <Chinese>基本生命體徵套件時間</Chinese>
             <Chinesesimp>基本生命体征套件时间</Chinesesimp>
             <Dutch>Behandelingstijd voor het gebruik van eenvoudige vitale waarden kits</Dutch>
+            <Hungarian>Basic Vitals Kit idő</Hungarian>
         </Key>
         <Key ID="STR_KAT_Vitals_BasicDiagnostic_Output">
             <English>HR: %1, BP: %2/%3, RR: %4</English>
@@ -33,6 +35,7 @@
             <Chinese>心率：％1，血壓：％2／％3，呼吸頻率：％4</Chinese>
             <Chinesesimp>心率：％1，血压：％2／％3，呼吸频率：％4</Chinesesimp>
             <Dutch>HF: %1, BD: %2/%3, AF: %4</Dutch>
+            <Hungarian>HR: %1, BP: %2/%3, RR: %4</Hungarian>
         </Key>
         <Key ID="STR_KAT_Vitals_FLUID_SHIFT">
             <English>Enable Patient Fluid Shift</English>
@@ -44,6 +47,7 @@
             <Chinese>啟用患者體液轉移</Chinese>
             <Chinesesimp>启用患者体液转移</Chinesesimp>
             <Dutch>Sta vloeistoffenverschuivingen in patiënten toe</Dutch>
+            <Hungarian>Beteg folyadékeltolódás engedélyezése</Hungarian>
         </Key>
         <Key ID="STR_KAT_Vitals_SIMPLEMED_ENABLE">
             <English>Activate AI Simple Medical</English>
@@ -56,6 +60,7 @@
             <Chinese>啟用AI簡易醫療</Chinese>
             <Chinesesimp>启用AI简易医疗</Chinesesimp>
             <Dutch>Activeer AI/KI versimpeld medisch</Dutch>
+            <Hungarian>Aktiválja az AI egyszerű orvosi működését</Hungarian>
         </Key>
         <Key ID="STR_KAT_Vitals_SIMPLEMED_ENABLE_DESC">
             <English>Apply simplified vital calculations to the AI unit. Which can be useful for saving FPS.</English>
@@ -67,6 +72,7 @@
             <Chinese>將簡化的生命體徵計算應用於AI單位，這可以幫助節省FPS。</Chinese>
             <Chinesesimp>将简化的生命体征计算应用于AI单位，这可以帮助节省FPS。</Chinesesimp>
             <Dutch>Versimpelt de vitale-waardensimulatie voor KI-eenheden. Dit kan helpen bij het besparen op FPS</Dutch>
+            <Hungarian>Egyszerűsített vitalitási számításokat alkalmaz az AI egységre. Ez hasznos lehet az FPS megtakarításához.</Hungarian>
         </Key>
         <Key ID="STR_KAT_Vitals_basicDiagnostic_Log">
             <English>%1 - %2</English>
@@ -76,6 +82,7 @@
             <German>%1 - %2</German>
             <Japanese>%1 - %2</Japanese>
             <Dutch>%1 - %2</Dutch>
+            <Hungarian>%1 - %2</Hungarian>
         </Key>
         <Key ID="STR_KAT_Vitals_basicDiagnostic_description">
             <English>Vitals Kit which returns HR, BP, and RR</English>
@@ -87,6 +94,7 @@
             <Chinese>可測量心率（HR）、血壓（BP）和呼吸頻率（RR）等生命體徵的診斷套件</Chinese>
             <Chinesesimp>可测量心率（HR）、血压（BP）和呼吸频率（RR）等生命体征的诊断套件</Chinesesimp>
             <Dutch>Vitale waarden kit dat bloeddruk en hart- en ademfrequentie meet</Dutch>
+            <Hungarian>Vitals Kit, amely visszaadja a pulzusszámot, vérnyomást és légzésszámot</Hungarian>
         </Key>
         <Key ID="STR_KAT_Vitals_basicDiagnostic_display">
             <English>Basic Vitals Kit</English>
@@ -98,6 +106,7 @@
             <Chinese>基本生命體徵套件</Chinese>
             <Chinesesimp>基本生命体征套件</Chinesesimp>
             <Dutch>Eenvoudige vitalen waarden kit</Dutch>
+            <Hungarian>Basic Vitals Kit</Hungarian>
         </Key>
         <Key ID="STR_KAT_Vitals_basicDiagnostic_progress">
             <English>Assessing Patient...</English>
@@ -109,6 +118,7 @@
             <Chinese>正在評估患者...</Chinese>
             <Chinesesimp>正在评估患者...</Chinesesimp>
             <Dutch>Patiënt wordt onderzocht...</Dutch>
+            <Hungarian>A beteg állapotának felmérése...</Hungarian>
         </Key>
         <Key ID="STR_KAT_Vitals_basicDiagnostic_use">
             <English>Use Basic Vitals Kit</English>
@@ -120,6 +130,7 @@
             <Chinese>使用基本生命體徵套件</Chinese>
             <Chinesesimp>使用基本生命体征套件</Chinesesimp>
             <Dutch>Vitale waarden kit gebruiken</Dutch>
+            <Hungarian>Használja az Basic Vitals Kit-et</Hungarian>
         </Key>
         <Key ID="STR_KAT_Vitals_cba_name">
             <English>KAT - ADV Medical: Vitals</English>
@@ -128,6 +139,7 @@
             <German>KAT - ADV Medical: Vitalwerte</German>
             <Japanese>KAM - バイタル</Japanese>
             <Dutch>KAT - ADV Medical: Vitals</Dutch>
+            <Hungarian>KAT - ADV Medical: Életjelek</Hungarian>
         </Key>
     </Package>
 </Project>
