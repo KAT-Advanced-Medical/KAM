@@ -17,6 +17,7 @@
             <Chinesesimp>82毫米CS燃气轮</Chinesesimp>
             <Finnish>82mm CS-kaasulaastikuori</Finnish>
             <Dutch>82mm CS-Gasgranaat</Dutch>
+            <Hungarian>82 mm-es CS-gáz töltet</Hungarian>
         </Key>
         <Key ID="STR_KAT_Chemical_CSGas_MFDNAME">
             <English>CS-Gas</English>
@@ -34,6 +35,7 @@
             <Chinesesimp>CS毒气</Chinesesimp>
             <Finnish>CS-kaasu</Finnish>
             <Dutch>CS-Gas</Dutch>
+            <Hungarian>CS-gáz</Hungarian>
         </Key>
         <Key ID="STR_KAT_Chemical_ChangeGasMaskFilter">
             <English>Replace gas mask filter</English>
@@ -51,6 +53,7 @@
             <Chinesesimp>更换防毒面具过滤器</Chinesesimp>
             <Finnish>Vaihda kaasunaamarin suodatin</Finnish>
             <Dutch>Vervang het filter van de gasmasker</Dutch>
+            <Hungarian>Gázmaszk szűrőjének kicserélése</Hungarian>
         </Key>
         <Key ID="STR_KAT_Chemical_CheckGasMaskDurability">
             <English>Check gas mask durability</English>
@@ -68,6 +71,7 @@
             <Chinesesimp>检查防毒面具的耐用性</Chinesesimp>
             <Finnish>Tarkista kaasunaamarin kestävyys</Finnish>
             <Dutch>Check levensduur Gasmasker</Dutch>
+            <Hungarian>A gázmaszk élettartamának ellenőrzése</Hungarian>
         </Key>
         <Key ID="STR_KAT_Chemical_ChemicalDetectorDescription">
             <English>Used to detect KAT toxic chemicals</English>
@@ -79,6 +83,7 @@
             <Chinese>用於偵測 KAT 有毒化學物質</Chinese>
             <Chinesesimp>用于检测KAT有毒化学物质</Chinesesimp>
             <Dutch>Wordt gebruikt om giftige KAT chemicaliën te detecteren</Dutch>
+            <Hungarian>KAT mérgező vegyi anyagok kimutatására használják</Hungarian>
         </Key>
         <Key ID="STR_KAT_Chemical_ChemicalDetectorDisplayName">
             <English>JCAD Chemical Detector</English>
@@ -90,6 +95,7 @@
             <Chinese>JCAD 化學偵測器</Chinese>
             <Chinesesimp>JCAD化学检测仪</Chinesesimp>
             <Dutch>JCAD Chemische detector</Dutch>
+            <Hungarian>JCAD Vegyi detektor</Hungarian>
         </Key>
         <Key ID="STR_KAT_Chemical_ChemicalDetector_Menu">
             <English>JCAD</English>
@@ -101,6 +107,7 @@
             <Chinese>JCAD</Chinese>
             <Chinesesimp>JCAD</Chinesesimp>
             <Dutch>JCAD</Dutch>
+            <Hungarian>JCAD</Hungarian>
         </Key>
         <Key ID="STR_KAT_Chemical_ChemicalDetector_Off">
             <English>OFF</English>
@@ -112,6 +119,7 @@
             <Chinese>關閉</Chinese>
             <Chinesesimp>关闭</Chinesesimp>
             <Dutch>UIT</Dutch>
+            <Hungarian>OFF</Hungarian>
         </Key>
         <Key ID="STR_KAT_Chemical_DisableDetectorSound">
             <English>Disable Warning Tone</English>
@@ -123,6 +131,7 @@
             <Chinese>停用警告音</Chinese>
             <Chinesesimp>禁用警告音</Chinesesimp>
             <Dutch>Waarschuwingstoon uitschakelen</Dutch>
+            <Hungarian>Disable Warning Tone</Hungarian>
         </Key>
         <Key ID="STR_KAT_Chemical_EnableDetector">
             <English>Turn On Detector</English>
@@ -134,6 +143,7 @@
             <Chinese>打開探測器</Chinese>
             <Chinesesimp>打开探测器</Chinesesimp>
             <Dutch>Detector aanzetten</Dutch>
+            <Hungarian>Turn On Detector</Hungarian>
         </Key>
         <Key ID="STR_KAT_Chemical_EnableDetectorSound">
             <English>Enable Warning Tone</English>
@@ -145,6 +155,7 @@
             <Chinese>啟用警告音</Chinese>
             <Chinesesimp>启用警告音</Chinesesimp>
             <Dutch>Waarschuwingstoon inschakelen</Dutch>
+            <Hungarian>Enable Warning Tone</Hungarian>
         </Key>
         <Key ID="STR_KAT_Chemical_GasBox_Displayname">
             <English>[ACE] 82mm Gas Rounds Box</English>
@@ -162,6 +173,7 @@
             <Chinesesimp>[ACE]82毫米燃气轮箱</Chinesesimp>
             <Finnish>[ACE] 82mm kaasulaastin kuorilaatikko</Finnish>
             <Dutch>[ACE] 82mm Gasgranatenkist</Dutch>
+            <Hungarian>[ACE] 82 mm-es gáztöltetek doboza</Hungarian>
         </Key>
         <Key ID="STR_KAT_Chemical_GasFilterItem">
             <English>Gas mask filter</English>
@@ -179,6 +191,7 @@
             <Chinesesimp>防毒面具过滤器</Chinesesimp>
             <Finnish>Kaasunaamariin suodatin</Finnish>
             <Dutch>Gasmasker filter</Dutch>
+            <Hungarian>Gázmaszk szűrő</Hungarian>
         </Key>
         <Key ID="STR_KAT_Chemical_GasFilterItem_desc">
             <English>Replacement filter for gas mask</English>
@@ -196,6 +209,7 @@
             <Chinesesimp>更换防毒面具过滤器</Chinesesimp>
             <Finnish>Vaihtosuodatin kaasunaamariin</Finnish>
             <Dutch>Vervangend filter voor gasmaskers</Dutch>
+            <Hungarian>Csere szűrő gázmaszkhoz</Hungarian>
         </Key>
         <Key ID="STR_KAT_Chemical_GasModule_Displayname">
             <English>Create contaminated area / object</English>
@@ -213,6 +227,7 @@
             <Chinesesimp>创建污染区域/物体</Chinesesimp>
             <Finnish>Saastuta alue/esine</Finnish>
             <Dutch>Creëer gecontamineerd gebied / object</Dutch>
+            <Hungarian>Kontaminált terület/tárgy létrehozása</Hungarian>
         </Key>
         <Key ID="STR_KAT_Chemical_GasModule_SealLeak">
             <English>Seal leak</English>
@@ -230,6 +245,7 @@
             <Chinesesimp>密封泄漏</Chinesesimp>
             <Finnish>Tuki vuoto</Finnish>
             <Dutch>Dicht lek</Dutch>
+            <Hungarian>Tömítés szivárgás</Hungarian>
         </Key>
         <Key ID="STR_KAT_Chemical_GasModule_createContaminatedObject">
             <English>You are about to create a contaminated Object.</English>
@@ -247,6 +263,7 @@
             <Chinesesimp>您将创建一个受污染的对象。</Chinesesimp>
             <Finnish>Olet saastuttamassa esineen.</Finnish>
             <Dutch>Je staat op het punt een gecontamineerd object te creëeren.</Dutch>
+            <Hungarian>Ön egy kontaminált Objektumot készül létrehozni.</Hungarian>
         </Key>
         <Key ID="STR_KAT_Chemical_GasModule_createContaminatedZone">
             <English>You are about to create a contaminated Zone.</English>
@@ -264,6 +281,7 @@
             <Chinesesimp>您将创建一个污染区。</Chinesesimp>
             <Finnish>Olet saastuttamassa alueen.</Finnish>
             <Dutch>Je staat op het punt om een gecontamineerd gebied te creëeren.</Dutch>
+            <Hungarian>Ön egy kontaminált Területet készül létrehozni.</Hungarian>
         </Key>
         <Key ID="STR_KAT_Chemical_GasModule_description">
             <English>Radius around the module which is filled with gas.</English>
@@ -281,6 +299,7 @@
             <Chinesesimp>充满毒气的模块周围的半径。</Chinesesimp>
             <Finnish>Kaasulla täytetyn alueen ympärillä oleva säde</Finnish>
             <Dutch>Radius om de module dat gevuld is met gas.</Dutch>
+            <Hungarian>A modul körüli sugár, amely gázzal van kitöltve.</Hungarian>
         </Key>
         <Key ID="STR_KAT_Chemical_GasModule_max_radius_dcs">
             <English>The Maximum Range is a range around the Minimal Range where the gas is less lethal and you have a longer chance of survival.(distance from module to outer ring)</English>
@@ -298,6 +317,7 @@
             <Chinesesimp>最大射程是最小射程附近的一个范围，在这个范围内，毒气的致命性较低，你有更长的生存机会。（模块到外环的距离）</Chinesesimp>
             <Finnish>Maksimietäisyys on vähimmäisalue, jossa kaasu on vähemmän tappava ja sinulla on pidempi mahdollisuus selviytyä. (etäisyys moduulista ulkorenkaaseen)</Finnish>
             <Dutch>Het maximaal bereik is het bereik om het minimale bereik waar het gas minder dodelijk is, en je een langere overlevings hebt. (afstand van module tot buitenste ring)</Dutch>
+            <Hungarian>A maximális hatótávolság a minimális hatótávolság körüli tartomány, ahol a gáz kevésbé halálos, és nagyobb az esély a túlélésre (a modul és a külső gyűrű közötti távolság).</Hungarian>
         </Key>
         <Key ID="STR_KAT_Chemical_GasModule_placeModuleOnObject">
             <English>To create a contaminated object place the module on a empty object.</English>
@@ -315,6 +335,7 @@
             <Chinesesimp>要创建受污染的对象，请将模块放置在空对象上。</Chinesesimp>
             <Finnish>Luodaksesi saastuneen objektin aseta moduuli tyhjälle objektille.</Finnish>
             <Dutch>Om een gecontamineerd object te creëeren, moet je de module op een leeg object plaatsen.</Dutch>
+            <Hungarian>Kontaminált objektum létrehozásához helyezze a modult egy üres objektumra.</Hungarian>
         </Key>
         <Key ID="STR_KAT_Chemical_HydraGas_DisplayName">
             <English>Hydra GAS 19x</English>
@@ -332,6 +353,7 @@
             <Chinesesimp>九头蛇毒气 19x</Chinesesimp>
             <Finnish>Hydra KAASU 19x</Finnish>
             <Dutch>Hydra GAS 19x</Dutch>
+            <Hungarian>Hydra GAS 19x</Hungarian>
         </Key>
         <Key ID="STR_KAT_Chemical_HydraGas_ShortName">
             <English>70mm GAS</English>
@@ -349,6 +371,7 @@
             <Chinesesimp>70mm毒气</Chinesesimp>
             <Finnish>70mm KAASU</Finnish>
             <Dutch>70mm GAS</Dutch>
+            <Hungarian>70mm GAS</Hungarian>
         </Key>
         <Key ID="STR_KAT_Chemical_HydraGas_desc">
             <English>Unguided rockets with Toxic-gas warhead.</English>
@@ -366,6 +389,7 @@
             <Chinesesimp>装有有毒气体弹头的非制导火箭。</Chinesesimp>
             <Finnish>Ohjaamattomat raketit, joissa on myrkyllinen kaasukärje</Finnish>
             <Dutch>Ongestuurde rakketen met een gifgas kop.</Dutch>
+            <Hungarian>Nem irányított rakéták mérgező gázzal töltött robbanófejjel.</Hungarian>
         </Key>
         <Key ID="STR_KAT_Chemical_Intoxication">
             <English>Intoxication</English>
@@ -383,6 +407,7 @@
             <Chinesesimp>中毒</Chinesesimp>
             <Finnish>Päihtymys</Finnish>
             <Dutch>Intoxicatie</Dutch>
+            <Hungarian>Intoxikáció</Hungarian>
         </Key>
         <Key ID="STR_KAT_Chemical_Lvl0_Gas">
             <English>Tear gas (Level 0)</English>
@@ -392,6 +417,7 @@
             <German>Tränengas (Level 0)</German>
             <Japanese>催涙ガス (レベル 0)</Japanese>
             <Dutch>Traangas (level 0)</Dutch>
+            <Hungarian>Könnygáz (0. szint)</Hungarian>
         </Key>
         <Key ID="STR_KAT_Chemical_Lvl1_Gas">
             <English>Toxic gas (Level 1)</English>
@@ -409,6 +435,7 @@
             <Chinesesimp>有毒气体（1级）</Chinesesimp>
             <Finnish>Myrkyllinen kaasu (taso 1)</Finnish>
             <Dutch>Gifgas (Level 1)</Dutch>
+            <Hungarian>Mérgező gáz (1. szint)</Hungarian>
         </Key>
         <Key ID="STR_KAT_Chemical_M43_DisplayName_1x">
             <English>M43 BZ LGB</English>
@@ -426,6 +453,7 @@
             <Chinesesimp>M43 BZ LGB</Chinesesimp>
             <Finnish>M43 BZ LGB</Finnish>
             <Dutch>M43 BZ LGB</Dutch>
+            <Hungarian>M43 BZ LGB</Hungarian>
         </Key>
         <Key ID="STR_KAT_Chemical_M43_DisplayName_2x">
             <English>2x M43 BZ LGB</English>
@@ -443,6 +471,7 @@
             <Chinesesimp>2x M43 BZ轻型卡车</Chinesesimp>
             <Finnish>2x M43 BZ LGB</Finnish>
             <Dutch>2x M43 BZ LGB</Dutch>
+            <Hungarian>2x M43 BZ LGB</Hungarian>
         </Key>
         <Key ID="STR_KAT_Chemical_M43_ShortName_1x">
             <English>M43 BZ LGB</English>
@@ -460,6 +489,7 @@
             <Chinesesimp>M43 BZ LGB</Chinesesimp>
             <Finnish>M43 BZ LGB</Finnish>
             <Dutch>M43 BZ LGB</Dutch>
+            <Hungarian>M43 BZ LGB</Hungarian>
         </Key>
         <Key ID="STR_KAT_Chemical_M43_ShortName_2x">
             <English>2x M43 BZ LGB</English>
@@ -477,6 +507,7 @@
             <Chinesesimp>2x M43 BZ轻型卡车</Chinesesimp>
             <Finnish>2x M43 BZ LGB</Finnish>
             <Dutch>2x M43 BZ LGB</Dutch>
+            <Hungarian>2x M43 BZ LGB</Hungarian>
         </Key>
         <Key ID="STR_KAT_Chemical_M43_desc">
             <English>Laser Guided Cluster Bomb with a chemical gas payload.</English>
@@ -494,6 +525,7 @@
             <Chinesesimp>带有化学毒气有效载荷的激光制导集束炸弹。</Chinesesimp>
             <Finnish>Laserohjattu rypälepommi kemiallisen kaasun hyötykuormalla</Finnish>
             <Dutch>Laser gestuurde clusterbom met een chemisch gas als lading.</Dutch>
+            <Hungarian>Lézervezérelt kazettás bomba kémiai gáz töltettel.</Hungarian>
         </Key>
         <Key ID="STR_KAT_Chemical_M7A3_CSGrenade_DisplayName">
             <English>M7A3 Riot CS gas grenade</English>
@@ -511,6 +543,7 @@
             <Chinesesimp>M7A3防暴CS瓦斯手榴弹</Chinesesimp>
             <Finnish>M7A3 CS kaasukranaatti</Finnish>
             <Dutch>M7A3 CS Traangasgranaat</Dutch>
+            <Hungarian>M7A3 Riot CS gázgránát</Hungarian>
         </Key>
         <Key ID="STR_KAT_Chemical_M7A3_CSGrenade_ShortName">
             <English>M7A3</English>
@@ -528,6 +561,7 @@
             <Chinesesimp>M7A3</Chinesesimp>
             <Finnish>M7A3</Finnish>
             <Dutch>M7A3</Dutch>
+            <Hungarian>M7A3</Hungarian>
         </Key>
         <Key ID="STR_KAT_Chemical_M7A3_DcsShort">
             <English>The M7A3 CS gas grenade is a non-lethal tear gas grenade that causes severe burning of the mucous membranes and eyes on contact.</English>
@@ -545,6 +579,7 @@
             <Chinesesimp>M7A3 CS毒气手榴弹是一种非致命性催泪瓦斯手榴弹，接触后会严重灼伤粘膜和眼睛。</Chinesesimp>
             <Finnish>M7A3 CS -kaasukranaatti on ei-tappava kyynelkaasukranaatti, joka koskettaa limakalvoja ja silmiä vakavasti.</Finnish>
             <Dutch>The M7A3 CS gasgranaat is een niet-dodelijke traangasgranaat dat op contact een ernstig brandend gevoel in het slijmvlies en de ogen creëerd.</Dutch>
+            <Hungarian>Az M7A3 CS gázgránát egy nem halálos könnygázgránát, amely érintkezéskor súlyos égési sérüléseket okoz a nyálkahártyákon és a szemeken.</Hungarian>
         </Key>
         <Key ID="STR_KAT_Chemical_PutOnGasMask">
             <English>Put on gas mask</English>
@@ -556,6 +591,7 @@
             <Chinese>戴上防毒面具</Chinese>
             <Chinesesimp>戴上防毒面具</Chinesesimp>
             <Dutch>Zet gasmasker op</Dutch>
+            <Hungarian>Gázmaszk felvétele</Hungarian>
         </Key>
         <Key ID="STR_KAT_Chemical_SETTING_AVAIL_GASMASK">
             <English>Accepted gas masks</English>
@@ -573,6 +609,7 @@
             <Chinesesimp>被接受的防毒面具</Chinesesimp>
             <Finnish>Hyväksytyt kaasunaamarit</Finnish>
             <Dutch>Geaccepteerde gasmaskers</Dutch>
+            <Hungarian>Elfogadott gázmaszkok</Hungarian>
         </Key>
         <Key ID="STR_KAT_Chemical_SETTING_AVAIL_GASMASK_DISC">
             <English>Enter here the classname of the masks that should work with the system.</English>
@@ -590,6 +627,7 @@
             <Chinesesimp>在此处输入应与系统配合使用的掩码的类名。</Chinesesimp>
             <Finnish>Anna niiden maskien luokan nimet, joiden pitäisi toimia järjestelmän kanssa</Finnish>
             <Dutch>Voer hier de classnames toe van gasmaskers die zouden moeten werken met het systeem.</Dutch>
+            <Hungarian>Írja be ide azoknak a maszkoknak az osztálynevét, amelyeknek a rendszerrel működniük kell.</Hungarian>
         </Key>
         <Key ID="STR_KAT_Chemical_SETTING_GASMASK_DURABILITY">
             <English>Gas masks durability</English>
@@ -607,6 +645,7 @@
             <Chinesesimp>防毒面具耐用性</Chinesesimp>
             <Finnish>Kaasunaamarien kestävyys</Finnish>
             <Dutch>Levensduur van gasmaskers</Dutch>
+            <Hungarian>Gázmaszkok tartóssága</Hungarian>
         </Key>
         <Key ID="STR_KAT_Chemical_SETTING_GASMASK_DURABILITY_DISC">
             <English>Determines how long you can stand in the gas with a gas mask without getting infected.</English>
@@ -624,6 +663,7 @@
             <Chinesesimp>确定戴防毒面具在毒气中站立多长时间而不会感染。</Chinesesimp>
             <Finnish>Määrittää, kuinka kauan voit seistä kaasussa kaasunaamarin kanssa vaikuttamatta siihen</Finnish>
             <Dutch>Bepaald hoelang je in gas kan staan zonder dat je geïnfecteerd raakt.</Dutch>
+            <Hungarian>Meghatározza, hogy mennyi ideig állhat gázmaszkban a gázban anélkül, hogy megfertőződne.</Hungarian>
         </Key>
         <Key ID="STR_KAT_Chemical_SETTING_dropWeaponChance">
             <English>Drop Weapon Chance</English>
@@ -635,6 +675,7 @@
             <Chinese>丟下武器機會</Chinese>
             <Chinesesimp>投掷武器机会</Chinesesimp>
             <Dutch>Kans om wapen te laten vallen</Dutch>
+            <Hungarian>Fegyver elejtésének esélye</Hungarian>
         </Key>
         <Key ID="STR_KAT_Chemical_SETTING_dropWeaponChance_DESC">
             <English>Determines chance for dropping weapon while in tear gas</English>
@@ -646,6 +687,7 @@
             <Chinese>確定在催淚瓦斯中丟下武器的機率</Chinese>
             <Chinesesimp>确定在催泪瓦斯中投掷武器的几率</Chinesesimp>
             <Dutch>Bepaald de kans om je wapen te laten vallen terwijl je wordt blootgesteld aan traangas</Dutch>
+            <Hungarian>Meghatározza a könnygáz hatására a fegyver elejtésének esélyét.</Hungarian>
         </Key>
         <Key ID="STR_KAT_Chemical_SETTING_gasMaskSoundVolume">
             <English>Gas Mask Sound Volume</English>
@@ -657,6 +699,7 @@
             <Chinese>防毒面具音量</Chinese>
             <Chinesesimp>防毒面具音量</Chinesesimp>
             <Dutch>Volume van gasmasker</Dutch>
+            <Hungarian>Gázmaszk hangereje</Hungarian>
         </Key>
         <Key ID="STR_KAT_Chemical_SETTING_gasMaskSoundVolume_DESC">
             <English>Determines how loud the breathing sounds are when using the gas mask</English>
@@ -668,6 +711,7 @@
             <Chinese>確定使用防毒面具時呼吸聲的音量</Chinese>
             <Chinesesimp>确定使用防毒面具时呼吸声的音量</Chinesesimp>
             <Dutch>Bepaald hoe luid de ademhalingsgeluiden zijn terwijl er een gasmasker gebruikt wordt</Dutch>
+            <Hungarian>Meghatározza, hogy a gázmaszk használata során milyen hangosak a légzés hangjai.</Hungarian>
         </Key>
         <Key ID="STR_KAT_Chemical_SETTING_gasMaskStaminaLoss">
             <English>Enable Stamina Loss when using Gas Mask</English>
@@ -678,10 +722,12 @@
             <Japanese>ガスマスク使用時のスタミナ減少を有効化</Japanese>
             <Chinese>啟用使用防毒面具時的體力流失</Chinese>
             <Dutch>Uithoudingsvermogenverlies bij gebruik van een gasmasker inschakelen</Dutch>
+            <Hungarian>Gázmaszk használata esetén engedélyezze az állóképesség csökkenését</Hungarian>
         </Key>
         <Key ID="STR_KAT_Chemical_SETTING_gasMaskStaminaLoss_DESC">
             <English>If you wear a gasmask you will lose stamina more quickly</English>
             <German>Wenn man eine Gasmaske trägt, verliert man mehr Ausdauer</German>
+            <Hungarian>Ha gázmaszkot viselsz, gyorsabban fogsz kifogyni az energiádból.</Hungarian>
         </Key>
         <Key ID="STR_KAT_Chemical_SETTING_infectionTime">
             <English>Time until infection</English>
@@ -699,6 +745,7 @@
             <Chinesesimp>感染前的时间</Chinesesimp>
             <Finnish>Aikaa tartunnan saamiseen</Finnish>
             <Dutch>Tijd tot infectie</Dutch>
+            <Hungarian>A fertőzésig eltelő idő</Hungarian>
         </Key>
         <Key ID="STR_KAT_Chemical_SETTING_infectionTime_DESC">
             <English>Time you can stand in the gas before you get infected or need a gas mask.</English>
@@ -716,6 +763,7 @@
             <Chinesesimp>在感染或需要防毒面具之前，你可以站在毒气中。</Chinesesimp>
             <Finnish>Aika, jonka voit seistä kaasussa, ennen kuin sinulla on vaikutusta tai tarvitset kaasunaamaria</Finnish>
             <Dutch>Tijd dat je in gas kan staan voordat je geïnfecteerd raakt of een gasmasker nodig hebt</Dutch>
+            <Hungarian>Az az idő, ameddig a gázban maradhat, mielőtt megfertőződne vagy gázmaszkra lenne szüksége.</Hungarian>
         </Key>
         <Key ID="STR_KAT_Chemical_SETTING_showPoisoning">
             <English>Show Poisoning</English>
@@ -727,6 +775,7 @@
             <Chinese>顯示中毒</Chinese>
             <Chinesesimp>显示中毒</Chinesesimp>
             <Dutch>Intoxicaties tonen</Dutch>
+            <Hungarian>Mérgezés állapotának megjelenítése</Hungarian>
         </Key>
         <Key ID="STR_KAT_Chemical_SETTING_showPoisoning_DESC">
             <English>Determines if poisoning and intoxication is shown in the medical menu</English>
@@ -738,6 +787,7 @@
             <Chinese>確定醫療選單中是否顯示中毒</Chinese>
             <Chinesesimp>确定医疗菜单中是否显示中毒</Chinesesimp>
             <Dutch>Bepaald of intoxicaties zichtbaar zijn in het medische menu</Dutch>
+            <Hungarian>Meghatározza, hogy a mérgezés és az intoxikáció megjelenik-e az orvosi menüben</Hungarian>
         </Key>
         <Key ID="STR_KAT_Chemical_TakeOffGasMask">
             <English>Take off gas mask</English>
@@ -749,6 +799,7 @@
             <Chinese>摘下防毒面具</Chinese>
             <Chinesesimp>摘下防毒面具</Chinesesimp>
             <Dutch>Gasmasker afzetten</Dutch>
+            <Hungarian>Gázmaszk levétele</Hungarian>
         </Key>
         <Key ID="STR_KAT_Chemical_ToxicGas_DisplayName">
             <English>82mm Toxic Gas Round</English>
@@ -766,6 +817,7 @@
             <Chinesesimp>82mm圆形有毒气体</Chinesesimp>
             <Finnish>82 mm myrkyllinen kaasulaastikuori</Finnish>
             <Dutch>82mm Gifgasgranaat</Dutch>
+            <Hungarian>82 mm-es mérgező gázgránát</Hungarian>
         </Key>
         <Key ID="STR_KAT_Chemical_ToxicGas_MFDNAME">
             <English>Toxic gas</English>
@@ -783,6 +835,7 @@
             <Chinesesimp>有毒气体</Chinesesimp>
             <Finnish>Myrkyllinen kaasu</Finnish>
             <Dutch>Gifgas</Dutch>
+            <Hungarian>Mérgező gáz</Hungarian>
         </Key>
         <Key ID="STR_KAT_Chemical_TriWire_Gas_Desc">
             <English>Type: Tripwire gas - Sprays a poisonous gas when triggered.&lt;br /&gt;Rounds: 1&lt;br /&gt;Used on: Ground</English>
@@ -800,6 +853,7 @@
             <Chinesesimp>类型：三线制气体-触发时喷出有毒气体&lt;br/&gt;轮次：1&lt;br/&gt;用于：地面</Chinesesimp>
             <Finnish>Tyyppi: kaasu-käsikranaatin laukaisulanka - suihkuttaa myrkyllistä kaasua laukaisussa &lt;br/&gt;Laukut: 1 &lt;br/&gt;Käytetty: maassa</Finnish>
             <Dutch>Type: Gas struikeldraad - Sproeit een giftig gas wanneer geactiveerd.&lt;br/&gt;Ladingen: 1&lt;br/&gt;Gebruik op: De grond</Dutch>
+            <Hungarian>Típus: Botlódrót gáz - Kioldáskor mérgező gázt bocsát ki.&lt;br /&gt;Lövedékek: 1&lt;br /&gt;Használható: Talajon</Hungarian>
         </Key>
         <Key ID="STR_KAT_Chemical_TriWire_Gas_Name">
             <English>Tripwire Gas</English>
@@ -817,6 +871,7 @@
             <Chinesesimp>Tripwire毒气</Chinesesimp>
             <Finnish>Kaasun ja kranaatin laukaisulanka</Finnish>
             <Dutch>Gas struikeldraad</Dutch>
+            <Hungarian>Botlódrót gáz</Hungarian>
         </Key>
         <Key ID="STR_KAT_Chemical_UI_gasType">
             <English>Gas Type:</English>
@@ -834,6 +889,7 @@
             <Chinesesimp>毒气类型：</Chinesesimp>
             <Finnish>Kaasutyyppi</Finnish>
             <Dutch>Gas type:</Dutch>
+            <Hungarian>Gáz típus:</Hungarian>
         </Key>
         <Key ID="STR_KAT_Chemical_UI_max_range">
             <English>Maximum Range.</English>
@@ -851,6 +907,7 @@
             <Chinesesimp>最大范围。</Chinesesimp>
             <Finnish>Suurin kantama</Finnish>
             <Dutch>Maximaal bereik.</Dutch>
+            <Hungarian>Maximális hatótávolság.</Hungarian>
         </Key>
         <Key ID="STR_KAT_Chemical_UI_sealable">
             <English>Is sealable?</English>
@@ -868,6 +925,7 @@
             <Chinesesimp>可密封吗？</Chinesesimp>
             <Finnish>Onko se suljettavissa?</Finnish>
             <Dutch>Is dichtbaar?</Dutch>
+            <Hungarian>Lezárható?</Hungarian>
         </Key>
         <Key ID="STR_KAT_Chemical_UI_sealable_tooltip">
             <English>ONLY WORKS IF LOGIC IS SYNCED WITH AN OBJECT!</English>
@@ -885,6 +943,7 @@
             <Chinesesimp>只有当逻辑与对象同步时才有效！</Chinesesimp>
             <Finnish>TOIMII VAIN JOS LOGIIKKA SYNKRONOIDAAN OBJEKTIN KANSSA!</Finnish>
             <Dutch>WERKT ALLEEN ALS LOGICA GESYNCHRONISEERD IS MET EEN OBJECT!</Dutch>
+            <Hungarian>CSAK AKKOR MŰKÖDIK, HA A LOGIKA SZINKRONIZÁLVA VAN EGY OBJEKTTEL!</Hungarian>
         </Key>
         <Key ID="STR_KAT_Chemical_UI_selectGas">
             <English>Select Gas:</English>
@@ -902,6 +961,7 @@
             <Chinesesimp>选择毒气：</Chinesesimp>
             <Finnish>Valitse Kaasu</Finnish>
             <Dutch>Selecteer gas:</Dutch>
+            <Hungarian>Gáz kiválasztása:</Hungarian>
         </Key>
         <Key ID="STR_KAT_Chemical_cba_name">
             <English>KAT - ADV Medical: Chemical</English>
@@ -910,6 +970,7 @@
             <German>KAT - ADV Medical: Chemie</German>
             <Japanese>KAM - 化学戦 (Chemical)</Japanese>
             <Dutch>KAT - ADV Medical: Chemisch</Dutch>
+            <Hungarian>KAT - ADV Medical: Vegyianyag</Hungarian>
         </Key>
         <Key ID="STR_KAT_Chemical_giveGasMask_action">
             <English>Put on gas mask</English>
@@ -927,6 +988,7 @@
             <Chinesesimp>戴上防毒面具</Chinesesimp>
             <Finnish>Laita kaasunaamari päälle</Finnish>
             <Dutch>Doe gasmasker op</Dutch>
+            <Hungarian>Gázmaszk felvétele</Hungarian>
         </Key>
         <Key ID="STR_KAT_Chemical_giveGasMask_progress">
             <English>Put on gas mask...</English>
@@ -944,6 +1006,7 @@
             <Chinesesimp>戴上防毒面具…</Chinesesimp>
             <Finnish>Kaasunaamari on laitettu päähän</Finnish>
             <Dutch>Gasmasker wordt opgezet...</Dutch>
+            <Hungarian>Gázmaszk felvétele...</Hungarian>
         </Key>
         <Key ID="STR_KAT_Chemical_sealLeak">
             <English>Seal leak</English>
@@ -961,6 +1024,7 @@
             <Chinesesimp>密封泄漏</Chinesesimp>
             <Finnish>Tiivisteen vuoto</Finnish>
             <Dutch>Dicht lek</Dutch>
+            <Hungarian>Tömítés szivárgás</Hungarian>
         </Key>
         <Key ID="STR_KAT_Chemical_sealantItem">
             <English>Sealant tube</English>
@@ -978,6 +1042,7 @@
             <Chinesesimp>密封胶管</Chinesesimp>
             <Finnish>Tiivisteputki</Finnish>
             <Dutch>Afdichtmiddel buis</Dutch>
+            <Hungarian>Tömítőanyag tubus</Hungarian>
         </Key>
         <Key ID="STR_KAT_Chemical_sealantItem_desc">
             <English>Sealant which is used to seal objects when e.g. a toxic substance leaks out</English>
@@ -995,6 +1060,7 @@
             <Chinesesimp>密封剂，用于在有毒物质泄漏时密封物体</Chinesesimp>
             <Finnish>Tiiviste, jota käytetään esineiden tiivistämiseen, kun myrkyllistä ainetta vuotaa ulos</Finnish>
             <Dutch>Afdichtmiddel dat gebruikt wordt om een object te dichten wanneer er bijvoorbeeld een giftige stof lekt</Dutch>
+            <Hungarian>Tömítőanyag, amelyet tárgyak tömítésére használnak, például ha mérgező anyag szivárog ki.</Hungarian>
         </Key>
     </Package>
 </Project>
