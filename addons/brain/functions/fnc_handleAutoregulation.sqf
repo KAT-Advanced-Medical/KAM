@@ -21,26 +21,27 @@ if (!local _unit) then {
     [QGVAR(handleAutoregulation), [_unit], _unit] call CBA_fnc_targetEvent;
 };
 
-if (!GVAR(enable) || _unit getVariable [QGVAR(autoregulationPFH),false]) exitWith {
-    true
-};
+if !(GVAR(enable) || (isNil QGVAR(autoregulationPFH))) exitWith {};
 
-[{
+private _newPFH = [{
     params ["_args", "_idPFH"];
     _args params ["_unit"];
     if !(alive _unit) exitWith {
-        _unit setVariable [QGVAR(autoregulationPFH),false,true];
+        _unit setVariable [QGVAR(autoregulationPFH),nil,true];
         [_idPFH] call CBA_fnc_removePerFrameHandler;
     };
 
-    GET_BLOOD_PRESSURE(_unit) params ["_systolic","_diastolic"];
-    private _MAP = _diastolic + ((_systolic-_diastolic)/3);
+    private _bloodPressure = [_unit] call EFUNC(circulation,getBloodPressure);
+    _bloodPressure params ["_bloodPressureL", "_bloodPressureH"];
+    private _map = _bloodPressureL + (0.3333333333 * (_bloodPressureH - _bloodPressureL));
 
     private _CVR = _unit getVariable [QGVAR(CVR),0.1];
-    private _ICP = 20 max (_unit getVariable [QGVAR(ICP),10]);
+    private _ICP = 5 max (_unit getVariable [QGVAR(ICP),15]);
 
-    // calculate cerebral blood flow and autoregulation
-    private _targetCBF = 800; //TODO change this value depending on blood oxygen saturation
+    private _paCO2 = GET_PACO2(_unit);
+    private _paCO2Factor = 1 + (0.03 * (_paCO2 - 40));
+    _paCO2Factor = 0 max _paCO2Factor; // prevent negative values
+    private _targetCBF = 800 * (97/GET_KAT_SPO2(_unit)) * _paCO2Factor; //TODO change this value depending on blood oxygen saturation
     
     private _targetCVR = (_MAP-20)/_targetCBF;
     _targetCVR = (0.0375 max _targetCVR)  min 0.17875; //Clamp CVR between two values:
@@ -56,12 +57,11 @@ if (!GVAR(enable) || _unit getVariable [QGVAR(autoregulationPFH),false]) exitWit
 
     private _CBF = round (_CPP/_newCVR);
     private _CPR = (_CBF/800 * 100) min 200;
-    _CPR = _CPR * (GET_SPO2(_unit)/100);
+    _CPR = _CPR * (GET_KAT_SPO2(_unit)/100);
 
     _unit setVariable [QGVAR(CVR),_newCVR,true];
     _unit setVariable [QGVAR(CBF),_CBF,true];
     _unit setVariable [QGVAR(CPR),_CPR,true];
 
 }, 3, [_unit]] call CBA_fnc_addPerFrameHandler;
-
-true;
+_unit setVariable [QGVAR(autoregulationPFH),_newPFH,true];

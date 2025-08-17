@@ -52,7 +52,7 @@ if (floor (random 100) <= _concussionChance) then {
 		};
 
 		// Increase ICP to a base level depending on damage taken
-		private _ICP = _unit getVariable [QGVAR(ICP),10];
+		private _ICP = _unit getVariable [QGVAR(ICP),15];
 		private _ICPincrease = linearConversion [0, 1,_damage,1,3,true];
 		_unit setVariable [QGVAR(ICP),_ICP+_damage,true];
 

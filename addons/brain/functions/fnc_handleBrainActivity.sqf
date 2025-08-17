@@ -19,15 +19,13 @@
     [QGVAR(handleBrainActivity), [_unit], _unit] call CBA_fnc_targetEvent;
 };
 
-if (!GVAR(enable) || _unit getVariable [QGVAR(activityPFH),false]) exitWith {
-    true
-};
+if !(GVAR(enable) || (isNil QGVAR(activityPFH))) exitWith {};
 
-[{
+private _newPFH = [{
     params ["_args", "_idPFH"];
     _args params ["_unit"];
     if !(alive _unit) exitWith {
-        _unit setVariable [QGVAR(activityPFH),false,true];
+        _unit setVariable [QGVAR(activityPFH),nil,true];
         [_idPFH] call CBA_fnc_removePerFrameHandler;
     };
 
@@ -69,16 +67,15 @@ if (!GVAR(enable) || _unit getVariable [QGVAR(activityPFH),false]) exitWith {
 		
 		//Reduce ICP if no longer swelling
 		private _hasSaline = [_unit] call FUNC(findSaline);
-		private _hasMaxBlood = (GET_SIMPLE_BLOOD_VOLUME(_unit) >= 6); // Workaround for not being able to overfill with fluids (no saline ivs can be started if no blood loss)
 		private _icpReduction = [GVAR(ICPreduction),GVAR(ICPreduction)*GVAR(ICPreductionMult)] select _hasSaline; // Multiply ICP reduction if saline present
 		private _newICP = _ICP - _icpReduction;
 		// Set "floors" for ICP, preventing ICP from returning to normal levels without saline
-		if (!(_hasSaline || _hasMaxblood) ) then {
+		if (!_hasSaline) then {
 			switch (true) do {
-				case (ICP >= 45): {
+				case (_ICP >= 45): {
 					_newICP = 45 max _newICP;
 				};
-				case (ICP >= 38): {
+				case (_ICP >= 38): {
 					_newICP = 38 max _newICP;
 				};
 				default { //Prevent ICP from returning to normal without saline
@@ -105,7 +102,8 @@ if (!GVAR(enable) || _unit getVariable [QGVAR(activityPFH),false]) exitWith {
 			};
 		} forEach (_unit getVariable [QACEGVAR(medical,medications), []]);
 
-		[_unit, "BRADYCARDIA", 120, 1200, -40, 0, 0] call ACEFUNC(medical_status,addMedicationAdjustment);
+		private _hrAdjust = -30 + floor random ((-10 - -30) + 1);
+        [_unit, "BRADYCARDIA", 60, 1200, _hrAdjust] call EFUNC(vitals,addMedicationAdjustment);
 	};
 
 	//Cause LOC if CMR becomes too low
@@ -114,5 +112,4 @@ if (!GVAR(enable) || _unit getVariable [QGVAR(activityPFH),false]) exitWith {
 		[QACEGVAR(medical,CriticalVitals), _unit] call CBA_fnc_localEvent;
 	};
 }, 15, [_unit]] call CBA_fnc_addPerFrameHandler;
-
-true;
+_unit setVariable [QGVAR(activityPFH),_newPFH,true];

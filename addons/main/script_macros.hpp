@@ -349,6 +349,7 @@
 #define VAR_BREATHING_RATE             QEGVAR(breathing,breathRate)
 
 #define GET_BLOOD_GAS(unit)            (unit getVariable [VAR_BLOOD_GAS, DEFAULT_BLOOD_GAS])
+#define GET_PACO2(unit)                 ((unit getVariable [VAR_BLOOD_GAS, DEFAULT_BLOOD_GAS]) select 0)
 #define GET_PAO2(unit)                 ((unit getVariable [VAR_BLOOD_GAS, DEFAULT_BLOOD_GAS]) select 1)
 #define GET_KAT_SPO2(unit)             (((unit getVariable [VAR_BLOOD_GAS, DEFAULT_BLOOD_GAS]) select 2) * 100)
 #define GET_PH(unit)                   ((unit getVariable [VAR_BLOOD_GAS, DEFAULT_BLOOD_GAS]) select 4)
