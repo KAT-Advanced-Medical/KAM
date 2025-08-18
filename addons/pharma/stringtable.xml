@@ -18,6 +18,7 @@
             <Turkish>Amiodaron</Turkish>
             <Finnish>Amiodaroni</Finnish>
             <Dutch>Amiodaron</Dutch>
+            <Hungarian>Amiodaron</Hungarian>
         </Key>
         <Key ID="STR_KAT_Pharma_Amiodarone_DescShort">
             <English>Used to combat cardiac arrest</English>
@@ -36,6 +37,7 @@
             <Turkish>Kalp durmasıyla mücadele için kullanılır</Turkish>
             <Finnish>Käytetään sydämenpysähdyksen torjuntaan</Finnish>
             <Dutch>Wordt gebruikt om hartstilstand te bestrijden</Dutch>
+            <Hungarian>Szívleállás kezelésére használják</Hungarian>
         </Key>
         <Key ID="STR_KAT_Pharma_Apply_IO_45">
             <English>Establish FAST IO</English>
@@ -54,6 +56,7 @@
             <Turkish>HIZLI IO kurun</Turkish>
             <Finnish>Perusta FAST IO</Finnish>
             <Dutch>Leg FAST IO aan</Dutch>
+            <Hungarian>FAST IO felhelyezése</Hungarian>
         </Key>
         <Key ID="STR_KAT_Pharma_Apply_IV_16">
             <English>Establish 16g IV</English>
@@ -72,6 +75,7 @@
             <Turkish>16g IV oluşturun</Turkish>
             <Finnish>Aseta 16g IV</Finnish>
             <Dutch>Leg 16g IV aan</Dutch>
+            <Hungarian>16g branül bekötése</Hungarian>
         </Key>
         <Key ID="STR_KAT_Pharma_Applying_IO">
             <English>Establishing IO</English>
@@ -90,6 +94,7 @@
             <Turkish>IO'nun kurulması</Turkish>
             <Finnish>IO:n perustaminen</Finnish>
             <Dutch>IO wordt aangelegd</Dutch>
+            <Hungarian>IO hozzáférés létrehozása folyamatban</Hungarian>
         </Key>
         <Key ID="STR_KAT_Pharma_Applying_IV">
             <English>Establishing IV/IO</English>
@@ -108,6 +113,7 @@
             <Turkish>IV/IO'nun kurulması</Turkish>
             <Finnish>IV/IO:n perustaminen</Finnish>
             <Dutch>IV/IO wordt aangelegd</Dutch>
+            <Hungarian>IV/IO hozzáférés létrehozása folyamatban</Hungarian>
         </Key>
         <Key ID="STR_KAT_Pharma_Atropine_Box_Display">
             <English>Atropine Autoinjector</English>
@@ -126,6 +132,7 @@
             <Turkish>Atropin</Turkish>
             <Finnish>Atropiini</Finnish>
             <Dutch>Atropine autoinjector</Dutch>
+            <Hungarian>Atropin autoinjector</Hungarian>
         </Key>
         <Key ID="STR_KAT_Pharma_Atropine_DescShort">
             <English>Used to treat chemical exposure</English>
@@ -144,6 +151,7 @@
             <Turkish>Bradikardi tedavisinde kullanılır</Turkish>
             <Finnish>Käytetään bradykardian hoitoon</Finnish>
             <Dutch>Wordt gebruikt om chemische blootstelling en bradycardie te behandelen</Dutch>
+            <Hungarian>Kémiai kitettség kezelésére használják</Hungarian>
         </Key>
         <Key ID="STR_KAT_Pharma_Caffeine_Bottle_DescShort">
             <English>Stimulates the central nervous system and energizes</English>
@@ -157,6 +165,7 @@
             <Chinese>刺激中樞神經系統並使其充滿活力</Chinese>
             <Chinesesimp>刺激中枢神经系统并使其充满活力</Chinesesimp>
             <Dutch>Stimuleert het centraal zenuwstelsel en geeft energie</Dutch>
+            <Hungarian>Serkenti a központi idegrendszert és energiával tölti fel a szervezetet.</Hungarian>
         </Key>
         <Key ID="STR_KAT_Pharma_Caffeine_Bottle_Display">
             <English>Caffeine bottle</English>
@@ -174,6 +183,7 @@
             <Chinesesimp>咖啡因瓶</Chinesesimp>
             <Finnish>Kofeiinipullo</Finnish>
             <Dutch>Caffeïne doosje</Dutch>
+            <Hungarian>Koffein palack</Hungarian>
         </Key>
         <Key ID="STR_KAT_Pharma_Carbonate_Box_Display">
             <English>Ammonium Carbonate</English>
@@ -192,6 +202,7 @@
             <Turkish>Amonyum karbonat</Turkish>
             <Finnish>Ammoniumkarbonaatti</Finnish>
             <Dutch>Ammoniumcarbonaat</Dutch>
+            <Hungarian>Ammónium-karbonát</Hungarian>
         </Key>
         <Key ID="STR_KAT_Pharma_Carbonate_DescShort">
             <English>Used to restore consciousness</English>
@@ -210,6 +221,7 @@
             <Turkish>Bilinci geri yüklemek için kullanılır</Turkish>
             <Finnish>Käytetään tajunnan palauttamiseen</Finnish>
             <Dutch>Wordt gebruikt om bewustzijn te herstellen</Dutch>
+            <Hungarian>Az eszmélet helyreállítására használják</Hungarian>
         </Key>
         <Key ID="STR_KAT_Pharma_CheckCoag_DisplayName">
             <English>Measure PT/INR</English>
@@ -223,6 +235,7 @@
             <Chinese>測量 PT/INR</Chinese>
             <Chinesesimp>测量PT/INR</Chinesesimp>
             <Dutch>Meet PT-INR</Dutch>
+            <Hungarian>PT/INR mérése</Hungarian>
         </Key>
         <Key ID="STR_KAT_Pharma_CheckCoag_DisplayNameProgress">
             <English>Taking Blood Sample,</English>
@@ -236,6 +249,7 @@
             <Chinese>略低於正常INR</Chinese>
             <Chinesesimp>采集血液样本，</Chinesesimp>
             <Dutch>Bloedstaal wordt genomen</Dutch>
+            <Hungarian>Vérminta vétele folyamatban</Hungarian>
         </Key>
         <Key ID="STR_KAT_Pharma_CheckCoag_highly_aboveINR">
             <English>Very high INR</English>
@@ -249,6 +263,7 @@
             <Chinese>INR 非常高</Chinese>
             <Chinesesimp>INR非常高</Chinesesimp>
             <Dutch>Zeer hoog INR</Dutch>
+            <Hungarian>Nagyon magas INR</Hungarian>
         </Key>
         <Key ID="STR_KAT_Pharma_CheckCoag_highly_lowINR">
             <English>Very Low INR</English>
@@ -262,6 +277,7 @@
             <Chinese>INR 非常低</Chinese>
             <Chinesesimp>INR非常低</Chinesesimp>
             <Dutch>Zeer laag INR</Dutch>
+            <Hungarian>Nagyon alacsony INR</Hungarian>
         </Key>
         <Key ID="STR_KAT_Pharma_CheckCoag_normalINR">
             <English>Normal INR</English>
@@ -275,6 +291,7 @@
             <Chinese>正常 INR</Chinese>
             <Chinesesimp>正常INR</Chinesesimp>
             <Dutch>Normaal INR</Dutch>
+            <Hungarian>Normális INR</Hungarian>
         </Key>
         <Key ID="STR_KAT_Pharma_CheckCoag_slightly_aboveINR">
             <English>Sligtly Above normal INR</English>
@@ -288,6 +305,7 @@
             <Chinese>略高於正常 INR</Chinese>
             <Chinesesimp>略高于正常INR</Chinesesimp>
             <Dutch>Lichtelijk boven normaal INR</Dutch>
+            <Hungarian>Kissé a normális INR felett</Hungarian>
         </Key>
         <Key ID="STR_KAT_Pharma_CheckCoag_slightly_lowINR">
             <English>Slightly Below Normal INR</English>
@@ -301,6 +319,7 @@
             <Chinese>略低於正常 INR</Chinese>
             <Chinesesimp>略低于正常INR</Chinesesimp>
             <Dutch>Lichtelijk onder normaal INR</Dutch>
+            <Hungarian>Kissé a normális INR alatt</Hungarian>
         </Key>
         <Key ID="STR_KAT_Pharma_Coag_Sense_Display">
             <English>Coag-Sense</English>
@@ -314,6 +333,7 @@
             <Chinese>凝血酶原監測系統(Coag-Sense)</Chinese>
             <Chinesesimp>凝血酶原监测系统(Coag-Sense)</Chinesesimp>
             <Dutch>Coag-Sense</Dutch>
+            <Hungarian>Coag-Sense</Hungarian>
         </Key>
         <Key ID="STR_KAT_Pharma_Coag_Sense_Display_DESC">
             <English>The Coag-Sense is a PT/INR monitoring system that can measure the efficiency of your blood clotting</English>
@@ -327,6 +347,7 @@
             <Chinese>Coag-Sense 是一種 PT/INR 監測系統，可以測量您的凝血效率</Chinese>
             <Chinesesimp>Coag-Sense是一种PT/INR监测系统，可以测量您的凝血效率</Chinesesimp>
             <Dutch>De Coag-Sense is een PT-INR monitoringssysteem dat de effectiviteit van jouw wondstolling kan bepalen</Dutch>
+            <Hungarian>A Coag-Sense egy PT/INR monitorozó rendszer, amely képes mérni a vér alvadási hatékonyságát.</Hungarian>
         </Key>
         <Key ID="STR_KAT_Pharma_Coag_Sense_Log">
             <English>Coag-Sense concludes: %1</English>
@@ -340,6 +361,7 @@
             <Chinese>Coag-Sense 得出結論：%1</Chinese>
             <Chinesesimp>Coag-Sense得出结论：%1</Chinesesimp>
             <Dutch>Coag-Sense concludeerd: %1</Dutch>
+            <Hungarian>Coag-Sense következtetése: %1</Hungarian>
         </Key>
         <Key ID="STR_KAT_Pharma_Dialysis_DisplayName">
             <English>Perform Dialysis</English>
@@ -357,6 +379,7 @@
             <Chinesesimp>进行透析</Chinesesimp>
             <Finnish>Suorita dialyysi</Finnish>
             <Dutch>Voer dialyse uit</Dutch>
+            <Hungarian>Dialízis elvégzése</Hungarian>
         </Key>
         <Key ID="STR_KAT_Pharma_Dialysis_DisplayNameProgress">
             <English>Performing</English>
@@ -374,6 +397,7 @@
             <Chinesesimp>表演</Chinesesimp>
             <Finnish>esiintymässä</Finnish>
             <Dutch>Wordt uitgevoerd</Dutch>
+            <Hungarian>Végrehajtás folyamatban</Hungarian>
         </Key>
         <Key ID="STR_KAT_Pharma_EACA_DescShort">
             <English>Encourages clot formation</English>
@@ -391,6 +415,7 @@
             <Chinesesimp>促进凝块形成</Chinesesimp>
             <Finnish>Edistää hyytymien muodostumista</Finnish>
             <Dutch>Bevorderd bloedstolling</Dutch>
+            <Hungarian>Véralvadás serkentő</Hungarian>
         </Key>
         <Key ID="STR_KAT_Pharma_EACA_Display">
             <English>EACA</English>
@@ -408,6 +433,7 @@
             <Chinesesimp>EACA</Chinesesimp>
             <Finnish>EACA</Finnish>
             <Dutch>EACA</Dutch>
+            <Hungarian>E-aminokapronsav (EACA)</Hungarian>
         </Key>
         <Key ID="STR_KAT_Pharma_EpinephrineIV_DescShort">
             <English>IV Epinephrine</English>
@@ -420,6 +446,7 @@
             <Chinese>IV 腎上腺素</Chinese>
             <Chinesesimp>IV肾上腺素</Chinesesimp>
             <Dutch>IV Adrenaline</Dutch>
+            <Hungarian>IV epinefrin</Hungarian>
         </Key>
         <Key ID="STR_KAT_Pharma_EpinephrineIV_displayName">
             <English>IV Epinephrine</English>
@@ -432,6 +459,7 @@
             <Chinese>IV 腎上腺素</Chinese>
             <Chinesesimp>IV肾上腺素</Chinesesimp>
             <Dutch>IV Adrenaline</Dutch>
+            <Hungarian>IV epinefrin</Hungarian>
         </Key>
         <Key ID="STR_KAT_Pharma_Etomidate_DescShort">
             <English>General Anesthetic</English>
@@ -449,6 +477,7 @@
             <Chinesesimp>全身麻醉</Chinesesimp>
             <Finnish>Yleinen anestesia</Finnish>
             <Dutch>Algemeen anestheticum</Dutch>
+            <Hungarian>Általános érzéstelenítő</Hungarian>
         </Key>
         <Key ID="STR_KAT_Pharma_Etomidate_DescUse">
             <English>Used as a general anesthetic for surgical procedures</English>
@@ -466,6 +495,7 @@
             <Chinesesimp>用作外科手术的全身麻醉剂</Chinesesimp>
             <Finnish>Käytetään yleisanestesiana kirurgisissa toimenpiteissä</Finnish>
             <Dutch>Wordt gebruikt als algemeen anestheticum voor chirurgische procedures</Dutch>
+            <Hungarian>Sebészeti beavatkozásoknál általános érzéstelenítőként használják</Hungarian>
         </Key>
         <Key ID="STR_KAT_Pharma_Etomidate_Use">
             <English>Push Etomidate</English>
@@ -483,6 +513,7 @@
             <Chinesesimp>推注依托咪酯</Chinesesimp>
             <Finnish>Työnnä etomidaattia</Finnish>
             <Dutch>Injecteer Etomidaat</Dutch>
+            <Hungarian>Etomidát beadása</Hungarian>
         </Key>
         <Key ID="STR_KAT_Pharma_Etomidate_displayName">
             <English>Etomidate</English>
@@ -500,6 +531,7 @@
             <Chinesesimp>依托咪酯</Chinesesimp>
             <Finnish>Etomidaatti</Finnish>
             <Dutch>Etomidaat</Dutch>
+            <Hungarian>Etomidát</Hungarian>
         </Key>
         <Key ID="STR_KAT_Pharma_Fentanyl_Box_Display">
             <English>Fentanyl</English>
@@ -517,6 +549,7 @@
             <Chinesesimp>芬太尼</Chinesesimp>
             <Finnish>fentanyyli</Finnish>
             <Dutch>Fentanyl</Dutch>
+            <Hungarian>Fentanil</Hungarian>
         </Key>
         <Key ID="STR_KAT_Pharma_Fentanyl_DescShort">
             <English>Opioid analgesic, used to suppress severe pain</English>
@@ -530,6 +563,7 @@
             <Chinese>阿片類鎮痛藥，用於抑制劇烈疼痛</Chinese>
             <Chinesesimp>阿片类镇痛药，用于抑制剧烈疼痛</Chinesesimp>
             <Dutch>Opïode analgeticum, wordt gebruikt om ernstige pijn te onderdrukken</Dutch>
+            <Hungarian>Opioid fájdalomcsillapító, súlyos fájdalom csillapítására használják</Hungarian>
         </Key>
         <Key ID="STR_KAT_Pharma_Flumazenil_DescShort">
             <English>Counter to Lorazepam</English>
@@ -547,6 +581,7 @@
             <Chinesesimp>用于对抗劳拉西泮</Chinesesimp>
             <Finnish>Loratsepaamin vastainen</Finnish>
             <Dutch>Antagonist van Lorazepam</Dutch>
+            <Hungarian>Lorazepam ellenszere</Hungarian>
         </Key>
         <Key ID="STR_KAT_Pharma_Flumazenil_DescUse">
             <English>Used to bring patients out of sedation</English>
@@ -564,6 +599,7 @@
             <Chinesesimp>用于使患者脱离镇静状态</Chinesesimp>
             <Finnish>Käytetään potilaiden poistamiseen sedaatiosta</Finnish>
             <Dutch>Wordt gebruikt om patiënten uit sedatie te halen</Dutch>
+            <Hungarian>A beteget a szedációból való ébresztésre használják</Hungarian>
         </Key>
         <Key ID="STR_KAT_Pharma_Flumazenil_Use">
             <English>Push Flumazenil</English>
@@ -581,6 +617,7 @@
             <Chinesesimp>推注氟马西尼</Chinesesimp>
             <Finnish>Paina flumatseniiliä</Finnish>
             <Dutch>Injecteer Flumazenil</Dutch>
+            <Hungarian>Flumazenil beadása</Hungarian>
         </Key>
         <Key ID="STR_KAT_Pharma_Flumazenil_displayName">
             <English>Flumazenil</English>
@@ -598,6 +635,7 @@
             <Chinesesimp>氟马西尼</Chinesesimp>
             <Finnish>Flumatseniili</Finnish>
             <Dutch>Flumazenil</Dutch>
+            <Hungarian>Flumazenil</Hungarian>
         </Key>
         <Key ID="STR_KAT_Pharma_Give_CWMP">
             <English>Use CWMP</English>
@@ -611,6 +649,7 @@
             <Chinese>使用 CWMP*(戰鬥藥物)</Chinese>
             <Chinesesimp>使用 CWMP*(战斗药物)</Chinesesimp>
             <Dutch>Gebruik CWMP</Dutch>
+            <Hungarian>Harctéri sebesült gyógyszercsomag</Hungarian>
         </Key>
         <Key ID="STR_KAT_Pharma_IO_45_Display">
             <English>FAST IO</English>
@@ -629,6 +668,7 @@
             <Turkish>FAST IO</Turkish>
             <Finnish>FAST IO</Finnish>
             <Dutch>FAST IO</Dutch>
+            <Hungarian>FAST IO</Hungarian>
         </Key>
         <Key ID="STR_KAT_Pharma_IO_DescShort">
             <English>Intraosseous Needle</English>
@@ -647,6 +687,7 @@
             <Turkish>Ağrıyı bastırmak için kullanılır</Turkish>
             <Finnish>Luonsisäinen neula</Finnish>
             <Dutch>Intraossale canule</Dutch>
+            <Hungarian>Intraossealis tű</Hungarian>
         </Key>
         <Key ID="STR_KAT_Pharma_IV_16_Display">
             <English>16g IV</English>
@@ -665,6 +706,7 @@
             <Turkish>16g IV</Turkish>
             <Finnish>16g IV</Finnish>
             <Dutch>16g IV</Dutch>
+            <Hungarian>16g branül</Hungarian>
         </Key>
         <Key ID="STR_KAT_Pharma_IV_DROP">
             <English>IV/IO drop time</English>
@@ -682,6 +724,7 @@
             <Chinesesimp>IV/IO 脱落时间</Chinesesimp>
             <Finnish>IV/IO pudotusaika</Finnish>
             <Dutch>IV/IO uitvaltijd</Dutch>
+            <Hungarian>IV/IO ejtési idő</Hungarian>
         </Key>
         <Key ID="STR_KAT_Pharma_IV_DROP_ENABLE">
             <English>Enables IV/IO drop times</English>
@@ -700,6 +743,7 @@
             <Turkish>IV/IO bırakma sürelerini etkinleştir</Turkish>
             <Finnish>Mahdollistaa IV/IO-pudotusajat</Finnish>
             <Dutch>Schakel IV/IO uitvaltijd in</Dutch>
+            <Hungarian>IV/IO ejtés engedélyezése</Hungarian>
         </Key>
         <Key ID="STR_KAT_Pharma_IV_DROP_TIME_DESC">
             <English>Changes the time at which IVs/IOs fall out of a patient</English>
@@ -718,6 +762,7 @@
             <Turkish>IV'lerin/IO'ların bir hastadan düştüğü zamanı değiştirir</Turkish>
             <Finnish>Muuttaa aikaa, jolloin IVs/IO</Finnish>
             <Dutch>Veranderd de benodigde uitvaltijd voor IV's/IO's</Dutch>
+            <Hungarian>Módosítja azt az időzítést, amikor az intravénás/intraósi kanülök kiesnek a betegből.</Hungarian>
         </Key>
         <Key ID="STR_KAT_Pharma_IV_DescShort">
             <English>Intravenous Needle</English>
@@ -736,6 +781,7 @@
             <Turkish>Ağrıyı bastırmak için kullanılır</Turkish>
             <Finnish>Laskimonsisäinen neula</Finnish>
             <Dutch>intraveneuze canule</Dutch>
+            <Hungarian>Intravénás tű</Hungarian>
         </Key>
         <Key ID="STR_KAT_Pharma_IV_REUSE">
             <English>Sets if IV/IO needles are reusable</English>
@@ -754,6 +800,7 @@
             <Turkish>IV/IO iğnelerinin yeniden kullanılabilir olup olmadığını ayarlar</Turkish>
             <Finnish>Asettaa, jos IV/IO-neulat ovat uudelleenkäytettäviä</Finnish>
             <Dutch>Bepaald of IV/IO naalden herbruikbaar zijn</Dutch>
+            <Hungarian>Beállítja, hogy az IV/IO tűk újrafelhasználhatók-e</Hungarian>
         </Key>
         <Key ID="STR_KAT_Pharma_IVblock_clear">
             <English>Patient's IV is clear</English>
@@ -771,6 +818,7 @@
             <Chinesesimp>患者的IV是干净的</Chinesesimp>
             <Finnish>Potilaan IV on selvä</Finnish>
             <Dutch>Patiënt's IV is niet geblokkeerd</Dutch>
+            <Hungarian>A beteg branülje tiszta.</Hungarian>
         </Key>
         <Key ID="STR_KAT_Pharma_IVblock_closed">
             <English>Patient's IV is blocked</English>
@@ -788,6 +836,7 @@
             <Chinesesimp>患者的IV受到阻塞</Chinesesimp>
             <Finnish>Potilaan IV on tukossa</Finnish>
             <Dutch>Patiënt's IV is geblokkeerd</Dutch>
+            <Hungarian>A beteg branülje elzáródott</Hungarian>
         </Key>
         <Key ID="STR_KAT_Pharma_Inspect_Catheter">
             <English>Inspect Catheter</English>
@@ -805,6 +854,7 @@
             <Chinesesimp>检查导管</Chinesesimp>
             <Finnish>Tarkista katetri</Finnish>
             <Dutch>Inspecteer canule</Dutch>
+            <Hungarian>Branül ellenőrzése</Hungarian>
         </Key>
         <Key ID="STR_KAT_Pharma_Ketamine_Box_Display">
             <English>Ketamine</English>
@@ -822,6 +872,7 @@
             <Chinesesimp>氯胺酮</Chinesesimp>
             <Finnish>Ketamiini</Finnish>
             <Dutch>Ketamine</Dutch>
+            <Hungarian>Ketamin</Hungarian>
         </Key>
         <Key ID="STR_KAT_Pharma_Ketamine_DescShort">
             <English>Dissociative anesthetics, used to suppress severe pain</English>
@@ -834,6 +885,7 @@
             <Chinese>解離性麻醉劑，用於抑制劇烈疼痛</Chinese>
             <Chinesesimp>解离性麻醉剂，用于抑制剧烈疼痛</Chinesesimp>
             <Dutch>Dissociatieve anestheticum, wordt gebruikt om ernstige pijn te onderdrukken</Dutch>
+            <Hungarian>Diszociatív érzéstelenítők, súlyos fájdalom csillapítására használják</Hungarian>
         </Key>
         <Key ID="STR_KAT_Pharma_Lidocaine_Box_Display">
             <English>Lidocaine</English>
@@ -852,6 +904,7 @@
             <Turkish>Lidokain</Turkish>
             <Finnish>Lidokaiini</Finnish>
             <Dutch>Lidocaïne</Dutch>
+            <Hungarian>Lidokain</Hungarian>
         </Key>
         <Key ID="STR_KAT_Pharma_Lidocaine_DescShort">
             <English>Used to combat cardiac arrest</English>
@@ -870,6 +923,7 @@
             <Turkish>Kalp durmasıyla mücadele için kullanılır</Turkish>
             <Finnish>Käytetään sydämenpysähdyksen torjuntaan</Finnish>
             <Dutch>Wordt gebruikt om hartstilstand te bestrijden</Dutch>
+            <Hungarian>Szívmegállás kezelésére használják</Hungarian>
         </Key>
         <Key ID="STR_KAT_Pharma_Lorazepam_DescShort">
             <English>Sedtation medication</English>
@@ -887,6 +941,7 @@
             <Chinesesimp>镇静药物</Chinesesimp>
             <Finnish>Rauhoittava lääkitys</Finnish>
             <Dutch>Sedatiemiddel</Dutch>
+            <Hungarian>Nyugtató gyógyszer</Hungarian>
         </Key>
         <Key ID="STR_KAT_Pharma_Lorazepam_DescUse">
             <English>Used to sedate patients and prepare them for surgery</English>
@@ -904,6 +959,7 @@
             <Chinesesimp>用于镇静患者并为手术做好准备</Chinesesimp>
             <Finnish>Käytetään potilaiden rauhoittamiseen ja valmistelemiseen leikkausta varten</Finnish>
             <Dutch>Wordt gebruikt om patiënten te sederen en ze voor te bereiden voor een operatie</Dutch>
+            <Hungarian>A betegek nyugtatására és a műtétre való felkészítésére használják.</Hungarian>
         </Key>
         <Key ID="STR_KAT_Pharma_Lorazepam_Use">
             <English>Push Lorazepam</English>
@@ -921,6 +977,7 @@
             <Chinesesimp>推注劳拉西泮</Chinesesimp>
             <Finnish>Paina loratsepaamia</Finnish>
             <Dutch>Injecteer Lorazepam</Dutch>
+            <Hungarian>Lorazepam beadása</Hungarian>
         </Key>
         <Key ID="STR_KAT_Pharma_Lorazepam_displayName">
             <English>Lorazepam</English>
@@ -938,6 +995,7 @@
             <Chinesesimp>劳拉西泮</Chinesesimp>
             <Finnish>Loratsepaami</Finnish>
             <Dutch>Lorazepam</Dutch>
+            <Hungarian>Lorazepam</Hungarian>
         </Key>
         <Key ID="STR_KAT_Pharma_Nalbuphine_Box_Display">
             <English>Nalbuphine</English>
@@ -955,6 +1013,7 @@
             <Chinesesimp>纳布啡</Chinesesimp>
             <Finnish>Nalbufiini</Finnish>
             <Dutch>Nalbufine</Dutch>
+            <Hungarian>Nalbufin</Hungarian>
         </Key>
         <Key ID="STR_KAT_Pharma_Nalbuphine_DescShort">
             <English>Opioid analgesic, used to suppress moderate pain</English>
@@ -968,6 +1027,7 @@
             <Chinese>阿片類鎮痛藥，用於抑制中度疼痛</Chinese>
             <Chinesesimp>阿片类镇痛药，用于抑制中度疼痛</Chinesesimp>
             <Dutch>Opïode analgeticum, wordt gebruikt om matige pijn te onderdrukken</Dutch>
+            <Hungarian>Opioid fájdalomcsillapító, közepes fájdalom enyhítésére használják.</Hungarian>
         </Key>
         <Key ID="STR_KAT_Pharma_Naloxone_Box_Display">
             <English>Naloxone</English>
@@ -986,6 +1046,7 @@
             <Turkish>Nalokson</Turkish>
             <Finnish>naloksoni</Finnish>
             <Dutch>Naloxone</Dutch>
+            <Hungarian>Naloxon</Hungarian>
         </Key>
         <Key ID="STR_KAT_Pharma_Naloxone_DescShort">
             <English>Used to reverse opioid overdoses</English>
@@ -1004,6 +1065,7 @@
             <Turkish>Opioid aşırı dozlarını tersine çevirmek için kullanılır</Turkish>
             <Finnish>Käytetään opioidien yliannostusten kumoamiseen</Finnish>
             <Dutch>Wordt gebruikt om opïode overdossisen tegen te gaan</Dutch>
+            <Hungarian>Opioid túladagolás visszafordítására használják</Hungarian>
         </Key>
         <Key ID="STR_KAT_Pharma_Nitro_Box_Display">
             <English>Nitroglycerin</English>
@@ -1022,6 +1084,7 @@
             <Turkish>Nitrogliserin</Turkish>
             <Finnish>Nitroglyseriini</Finnish>
             <Dutch>Nitroglycerine</Dutch>
+            <Hungarian>Glicerin-trinitrát</Hungarian>
         </Key>
         <Key ID="STR_KAT_Pharma_Nitro_DescShort">
             <English>Used to lower blood pressure</English>
@@ -1040,6 +1103,7 @@
             <Turkish>Kan basıncını düşürmek için kullanılır</Turkish>
             <Finnish>Käytetään alentamaan verenpainetta</Finnish>
             <Dutch>Wordt gebruikt om de bloeddruk te laten dalen</Dutch>
+            <Hungarian>A vérnyomás csökkentésére használják.</Hungarian>
         </Key>
         <Key ID="STR_KAT_Pharma_Norep_Box_Display">
             <English>Norepinephrine</English>
@@ -1058,6 +1122,7 @@
             <Turkish>Norepinefrin</Turkish>
             <Finnish>Norepinefriini</Finnish>
             <Dutch>Noradrenaline</Dutch>
+            <Hungarian>Noradrenalin</Hungarian>
         </Key>
         <Key ID="STR_KAT_Pharma_Norep_DescShort">
             <English>Used to raise blood pressure</English>
@@ -1076,6 +1141,7 @@
             <Turkish>Kan basıncını yükseltmek için kullanılır</Turkish>
             <Finnish>Käytetään verenpaineen nostamiseen</Finnish>
             <Dutch>Wordt gebruikt om de bloeddruk te verhogen</Dutch>
+            <Hungarian>A vérnyomás emelésére használják.</Hungarian>
         </Key>
         <Key ID="STR_KAT_Pharma_Painkillers_Box_Display">
             <English>Combat Pill Pack</English>
@@ -1089,6 +1155,7 @@
             <Chinese>戰鬥止痛藥 (PainKiller)</Chinese>
             <Chinesesimp>战斗药丸包</Chinesesimp>
             <Dutch>Gevechtspillendoosje</Dutch>
+            <Hungarian>Harctéri gyógyszercsomag</Hungarian>
         </Key>
         <Key ID="STR_KAT_Pharma_Painkillers_DescShort">
             <English>Combat Wound Medication Pill Pack&lt;br/&gt;Used to suppress minor pain and relieve blood incompatibility symptoms</English>
@@ -1101,6 +1168,7 @@
             <Chinese>戰鬥傷口藥物藥丸包&lt;br/&gt;用於抑制輕微疼痛和緩解血液不相容症狀</Chinese>
             <Chinesesimp>战斗伤口药物药丸包&lt;br/&gt;用于抑制轻微疼痛和缓解血液不相容症状</Chinesesimp>
             <Dutch>Gevechts wond medicatie pil pak&lt;br/&gt;Wordt gebruikt om milde pijn en bloed incompatibiliteit op te lossen</Dutch>
+            <Hungarian>Harci sebek kezelésére szolgáló gyógyszercsomag&lt;br/&gt;Kisebb fájdalmak enyhítésére és vérkompatibilitási tünetek enyhítésére szolgál.</Hungarian>
         </Key>
         <Key ID="STR_KAT_Pharma_Penthrox_DescShort">
             <English>Volatile anesthetic, used to suppress moderate pain</English>
@@ -1113,6 +1181,7 @@
             <Chinese>揮發性麻醉劑，用於減輕中度疼痛</Chinese>
             <Chinesesimp>挥发性麻醉剂，用于抑制中度疼痛</Chinesesimp>
             <Dutch>volatiel anestheticum, wordt gebruik om stevige pijn te onderdrukken</Dutch>
+            <Hungarian>Illékony érzéstelenítő, közepes fájdalom csillapítására használják.</Hungarian>
         </Key>
         <Key ID="STR_KAT_Pharma_Penthrox_Display">
             <English>Penthrox Inhaler</English>
@@ -1129,6 +1198,7 @@
             <Chinesesimp>Penthrox吸入器</Chinesesimp>
             <Finnish>Penthrox inhalaattori</Finnish>
             <Dutch>Penthrox inhalator</Dutch>
+            <Hungarian>Penthrox inhalátor</Hungarian>
         </Key>
         <Key ID="STR_KAT_Pharma_Pervitin_Capsule_DescShort">
             <English>Performance enhancing drug, used to suppress moderate pain</English>
@@ -1142,6 +1212,7 @@
             <Chinese>性能增強藥物，用於抑制中度疼痛</Chinese>
             <Chinesesimp>性能增强药物，用于抑制中度疼痛</Chinesesimp>
             <Dutch>Prestatieverhogend medicijn, wordt gebruikt om matige pijn te onderdrukken</Dutch>
+            <Hungarian>Teljesítményfokozó gyógyszer, mérsékelt fájdalom csillapítására használják.</Hungarian>
         </Key>
         <Key ID="STR_KAT_Pharma_Pervitin_Capsule_Display">
             <English>Pervitin capsule</English>
@@ -1159,6 +1230,7 @@
             <Chinesesimp>柏飞汀(Pervitin)胶囊</Chinesesimp>
             <Finnish>Pervitiini kapseli</Finnish>
             <Dutch>Pervitin capsule</Dutch>
+            <Hungarian>Pervitin kapszula</Hungarian>
         </Key>
         <Key ID="STR_KAT_Pharma_Pervitin_chrom">
             <English>You start to see everything twice.</English>
@@ -1176,6 +1248,7 @@
             <Chinesesimp>你开始看到一切两次。</Chinesesimp>
             <Finnish>Alat nähdä kaiken kahdesti.</Finnish>
             <Dutch>Je begint met alles dubbelzien</Dutch>
+            <Hungarian>Minden kettősen látsz.</Hungarian>
         </Key>
         <Key ID="STR_KAT_Pharma_Pervitin_chrom2">
             <English>You start to twitch...</English>
@@ -1193,6 +1266,7 @@
             <Chinesesimp>你开始抽搐。。。</Chinesesimp>
             <Finnish>Alkaa nykimään</Finnish>
             <Dutch>Je begint te trillen</Dutch>
+            <Hungarian>Elkezdesz remegni...</Hungarian>
         </Key>
         <Key ID="STR_KAT_Pharma_Pervitin_chrom3">
             <English>Your head starts to clear up and you stop twitching...</English>
@@ -1210,6 +1284,7 @@
             <Chinesesimp>你的头开始清醒，不再抽搐。。。</Chinesesimp>
             <Finnish>Pääsi alkaa selkiytyä ja lopetat nykimisen</Finnish>
             <Dutch>Je hoofd begint zich op te helderen, en je stopt met trillen</Dutch>
+            <Hungarian>A fejed kezd kitisztulni, és abbahagyod a rángatózást...</Hungarian>
         </Key>
         <Key ID="STR_KAT_Pharma_Pervitin_end">
             <English>You start to feel normal again</English>
@@ -1227,6 +1302,7 @@
             <Chinesesimp>你又开始感觉正常了</Chinesesimp>
             <Finnish>Alkaa taas tuntua normaalilta</Finnish>
             <Dutch>Je begint je weer normaal te voelen</Dutch>
+            <Hungarian>Kezdesz újra normálisan érezni magad.</Hungarian>
         </Key>
         <Key ID="STR_KAT_Pharma_Pervitin_mid">
             <English>You begin to lose your breath...</English>
@@ -1244,6 +1320,7 @@
             <Chinesesimp>你开始喘不过气来。。。</Chinesesimp>
             <Finnish>Alkaa menettää hengitystä...</Finnish>
             <Dutch>Je begint je adem te verliezen...</Dutch>
+            <Hungarian>Elkezdesz kifogyni a levegőből...</Hungarian>
         </Key>
         <Key ID="STR_KAT_Pharma_Pervitin_mid2">
             <English>You gain a sudden rush!</English>
@@ -1261,6 +1338,7 @@
             <Chinesesimp>你突然冲动起来！</Chinesesimp>
             <Finnish>Saat äkillisen kiireen!</Finnish>
             <Dutch>Je krijgt een spontane boost!</Dutch>
+            <Hungarian>Hirtelen lendületet kapsz!</Hungarian>
         </Key>
         <Key ID="STR_KAT_Pharma_Pervitin_mid3">
             <English>You gain another rush!</English>
@@ -1278,6 +1356,7 @@
             <Chinesesimp>你获得了另一个冲刺！</Chinesesimp>
             <Finnish>Saat uuden kiireen!</Finnish>
             <Dutch>Je krijgt nog een boost!</Dutch>
+            <Hungarian>Újabb lendületet kapsz!</Hungarian>
         </Key>
         <Key ID="STR_KAT_Pharma_Pervitin_mid4">
             <English>The exhaustion starts to settle in...</English>
@@ -1295,6 +1374,7 @@
             <Chinesesimp>疲惫开始消退。。。</Chinesesimp>
             <Finnish>Väsymys alkaa laskeutua...</Finnish>
             <Dutch>Je begint in te zakken</Dutch>
+            <Hungarian>A kimerültség kezd begyökerezni...</Hungarian>
         </Key>
         <Key ID="STR_KAT_Pharma_Pervitin_start">
             <English>The pervitin makes you feel awake and full of endless POWER</English>
@@ -1312,6 +1392,7 @@
             <Chinesesimp>柏飞汀(Pervitin)让你感到清醒，充满无尽的力量</Chinesesimp>
             <Finnish>Pervitiini saa sinut tuntemaan olosi hereille ja täynnä loputonta VOIMAA</Finnish>
             <Dutch>De Pervitin geeft je een wakker gevoel vol met oneinde ENERGIE</Dutch>
+            <Hungarian>A pervitin ébren tart és végtelen ERŐVEL tölt el</Hungarian>
         </Key>
         <Key ID="STR_KAT_Pharma_PhenylAuto_Box_Display">
             <English>Phenylephrine Autoinjector</English>
@@ -1326,6 +1407,7 @@
             <Chinese>去氧腎上腺素自動注射器 (Phenylephrine)</Chinese>
             <Chinesesimp>苯肾上腺素自动注射器</Chinesesimp>
             <Dutch>Fenylefrine autoinjector</Dutch>
+            <Hungarian>Fenilefrin autoinjector</Hungarian>
         </Key>
         <Key ID="STR_KAT_Pharma_PhenylAuto_DescShort">
             <English>Used to raise blood pressure</English>
@@ -1337,6 +1419,7 @@
             <Chinese>用於升高血壓</Chinese>
             <Chinesesimp>用于提高血压</Chinesesimp>
             <Dutch>Wordt gebruikt om de bloeddruk te laten stijgen</Dutch>
+            <Hungarian>A vérnyomás emelésére használják</Hungarian>
         </Key>
         <Key ID="STR_KAT_Pharma_Phenyl_Box_Display">
             <English>Phenylephrine</English>
@@ -1355,6 +1438,7 @@
             <Turkish>Fenilefrin</Turkish>
             <Finnish>Fenyyliefriini</Finnish>
             <Dutch>Fenylefrine</Dutch>
+            <Hungarian>Fenilefrin</Hungarian>
         </Key>
         <Key ID="STR_KAT_Pharma_Phenyl_DescShort">
             <English>Used to raise blood pressure</English>
@@ -1373,6 +1457,7 @@
             <Turkish>Kan basıncını yükseltmek için kullanılır</Turkish>
             <Finnish>Käytetään verenpaineen nostamiseen</Finnish>
             <Dutch>Wordt gebruikt om de bloeddruk te verhogen</Dutch>
+            <Hungarian>A vérnyomás emelésére használják</Hungarian>
         </Key>
         <Key ID="STR_KAT_Pharma_Pushing">
             <English>Pushing</English>
@@ -1391,6 +1476,7 @@
             <Turkish>Kullanılıyor</Turkish>
             <Finnish>Työntää</Finnish>
             <Dutch>Wordt geïnjecteerd</Dutch>
+            <Hungarian>Beadás</Hungarian>
         </Key>
         <Key ID="STR_KAT_Pharma_Remove_IV">
             <English>Remove IV/IO</English>
@@ -1409,6 +1495,7 @@
             <Turkish>IV/IO'yu kaldır</Turkish>
             <Finnish>Poista IV/IO</Finnish>
             <Dutch>Verwijder IV/IO</Dutch>
+            <Hungarian>IV/IO leszedése</Hungarian>
         </Key>
         <Key ID="STR_KAT_Pharma_Removing_IV">
             <English>Removing IV/IO</English>
@@ -1427,6 +1514,7 @@
             <Turkish>Kaldırma</Turkish>
             <Finnish>IV/IO poisto</Finnish>
             <Dutch>IV/IO wordt verwijderd</Dutch>
+            <Hungarian>IV/IO leszedése folyamatban</Hungarian>
         </Key>
         <Key ID="STR_KAT_Pharma_Reorienting">
             <English>Reorienting</English>
@@ -1445,6 +1533,7 @@
             <Turkish>Yeniden yönlendirme</Turkish>
             <Finnish>Suuntaa uudelleen</Finnish>
             <Dutch>Aan het heroriënteren</Dutch>
+            <Hungarian>Újraorientálás</Hungarian>
         </Key>
         <Key ID="STR_KAT_Pharma_ReorientingSuccess">
             <English>Patient woke up with a hard hit!</English>
@@ -1463,6 +1552,7 @@
             <Turkish>Hasta sert bir vuruşla uyandı!</Turkish>
             <Finnish>Potilas heräsi kovalla iskulla!</Finnish>
             <Dutch>Patiënt werd wakker na een harde klap!</Dutch>
+            <Hungarian>Felébredt, kapott egy nagyot!</Hungarian>
         </Key>
         <Key ID="STR_KAT_Pharma_Reorienting_Info">
             <English>You hit the cheek, but patient still asleep!</English>
@@ -1481,6 +1571,7 @@
             <Turkish>Yanağına vurdun ama hasta hala uyuyor!</Turkish>
             <Finnish>Lyöt poskelle, mutta potilas nukkuu edelleen!</Finnish>
             <Dutch>Je hebt de wang geraakt, maar de patiënt slaapt nog!</Dutch>
+            <Hungarian>Megcsaptad, de nem ébredt fel!</Hungarian>
         </Key>
         <Key ID="STR_KAT_Pharma_SETTING_Allow_Reorientation">
             <English>Allow reorientation</English>
@@ -1499,6 +1590,7 @@
             <Turkish>Yeniden yönlendirmeye izin ver</Turkish>
             <Finnish>Salli suunnanmuutos</Finnish>
             <Dutch>Trainingsniveau voor heroriëntatie</Dutch>
+            <Hungarian>Újraorientáció engedélyezése</Hungarian>
         </Key>
         <Key ID="STR_KAT_Pharma_SETTING_Allow_Reorientation_DESC">
             <English>Medical level required for reorientation</English>
@@ -1517,6 +1609,7 @@
             <Turkish>Yeniden oryantasyon için gerekli tıbbi seviye</Turkish>
             <Finnish>Uudelleensuuntautumiseen vaadittava lääketieteellinen koulutustaso</Finnish>
             <Dutch>Benodigd trainingsniveau voor heroriëntatie</Dutch>
+            <Hungarian>Milyen képzettségi szint kell az újraorientáláshoz?</Hungarian>
         </Key>
         <Key ID="STR_KAT_Pharma_SETTING_Block_Chance">
             <English>IV Block Chance</English>
@@ -1534,6 +1627,7 @@
             <Chinesesimp>IV 阻塞几率</Chinesesimp>
             <Finnish>Mahdollisuus estää IV:t</Finnish>
             <Dutch>IV blokkade kans</Dutch>
+            <Hungarian>A branül elzáródásának esélye</Hungarian>
         </Key>
         <Key ID="STR_KAT_Pharma_SETTING_Block_Chance_DESC">
             <English>Chance of IV blockage due to medication pushes without saline flush</English>
@@ -1551,6 +1645,7 @@
             <Chinesesimp>由于没有盐水协助的药物注射导致 IV 阻塞的机会</Chinesesimp>
             <Finnish>IV-tukoksen mahdollisuus lääkityksen painamisesta ilman suolaliuosta</Finnish>
             <Dutch>Kans voor blokkade van IV's door medicaties zonder salinespoeling</Dutch>
+            <Hungarian>Esély a branül elzáródására gyógyszeradagolás miatt, ha nincs sóoldatos átöblítés</Hungarian>
         </Key>
         <Key ID="STR_KAT_Pharma_SETTING_CheckCoag_Location">
             <English>Locations Coag-Sense</English>
@@ -1564,6 +1659,7 @@
             <Chinese>Coag-Sense 地點</Chinese>
             <Chinesesimp>Coag-Sense地点</Chinesesimp>
             <Dutch>Locaties voor gebruik Coag-Sense</Dutch>
+            <Hungarian>Coag-Sense helyek</Hungarian>
         </Key>
         <Key ID="STR_KAT_Pharma_SETTING_CheckCoag_MedLevel">
             <English>Medical level required for Coag-Sense</English>
@@ -1577,6 +1673,7 @@
             <Chinese>Coag-Sense 需要的醫療等級</Chinese>
             <Chinesesimp>Coag-Sense所需的医疗水平</Chinesesimp>
             <Dutch>Vereist medisch niveau voor gebruik Coag-Sense</Dutch>
+            <Hungarian>A Coag-Sense használatához szükséges képzettségi szint</Hungarian>
         </Key>
         <Key ID="STR_KAT_Pharma_SETTING_CheckCoag_treatmentTime">
             <English>Treatment time for measuring PT/INR</English>
@@ -1590,6 +1687,7 @@
             <Chinese>PT/INR 測量的治療時間</Chinese>
             <Chinesesimp>PT/INR测量的治疗时间</Chinesesimp>
             <Dutch>Onderzoekstijd voor bepalen PT-INR</Dutch>
+            <Hungarian>A PT/INR mérésének ideje</Hungarian>
         </Key>
         <Key ID="STR_KAT_Pharma_SETTING_Coagulation">
             <English>Enable Coagulation</English>
@@ -1607,6 +1705,7 @@
             <Chinesesimp>启用凝血</Chinesesimp>
             <Finnish>Ota koagulaatio käyttöön</Finnish>
             <Dutch>Schakel coagulatie in</Dutch>
+            <Hungarian>Véralvadás engedélyezése</Hungarian>
         </Key>
         <Key ID="STR_KAT_Pharma_SETTING_Coagulation_DESC">
             <English>Enables advanced coagulation features and modifies TXA and EACA behaviour accordingly.</English>
@@ -1624,6 +1723,7 @@
             <Chinesesimp>启用高级凝血功能，并相应地修改血栓素(TXA)和EACA行为。</Chinesesimp>
             <Finnish>Ottaa käyttöön edistyneet koagulaatioominaisuudet ja muuttaa TXA- ja EACA-käyttäytymistä vastaavasti</Finnish>
             <Dutch>Schakelt geadvanceerde coagulatie functies in, en veranderd het gedrag van TXA en EACA naar behoren</Dutch>
+            <Hungarian>Engedélyezi a fejlett koagulációs funkciókat, és ennek megfelelően módosítja a TXA és az EACA viselkedését.</Hungarian>
         </Key>
         <Key ID="STR_KAT_Pharma_SETTING_Coagulation_FactorCount">
             <English>Coagulation Factors</English>
@@ -1636,6 +1736,7 @@
             <Chinese>凝血因子</Chinese>
             <Chinesesimp>凝血因子</Chinesesimp>
             <Dutch>Stollingsfactoren</Dutch>
+            <Hungarian>Koagulációs faktorok</Hungarian>
         </Key>
         <Key ID="STR_KAT_Pharma_SETTING_Coagulation_FactorCount_DESC">
             <English>The amount of coagulation factors that get set on unit spawn &amp; be kept as limit for factor regeneration</English>
@@ -1648,6 +1749,7 @@
             <Chinese>單位菌種上設定的凝血因子數量應作為因子再生的限制</Chinese>
             <Chinesesimp>单位菌种上设定的凝血因子数量应作为因子再生的限制</Chinesesimp>
             <Dutch>De hoeveelheid stollingsfactoren dat een eenheid krijgt op spawn en als limiet wordt gebruik voor hergeneratie</Dutch>
+            <Hungarian>A véralvadási faktorok mennyisége, ami az egység spawnjakor beállításra kerül, és ez marad a maximum a faktor regenerációhoz</Hungarian>
         </Key>
         <Key ID="STR_KAT_Pharma_SETTING_Coagulation_Factor_Regenerate_Time">
             <English>Coagulation Factor Regeneration Cycle</English>
@@ -1660,6 +1762,7 @@
             <Chinese>凝血因子再生循環</Chinese>
             <Chinesesimp>凝血因子再生循环</Chinesesimp>
             <Dutch>Stollingsfactor hergeneratiecyclus</Dutch>
+            <Hungarian>Koagulációs faktor regenerációs ciklus</Hungarian>
         </Key>
         <Key ID="STR_KAT_Pharma_SETTING_Coagulation_Factor_Regenerate_Time_DESC">
             <English>The time between coagulation factor regeneration checks. Will add +1 factor on successful check. Uses Setting: "Coagulation Factors" as limit.\n Note: If the limit is exceeded, this time will be used and then remove -1 factor until Setting: "Coagulation Factors" is reached. Tipp: TXA or EACA stop losing factors\nRequirements for regeneration to work:\n- No wound being clotted in the last cycle check from this setting\n- Setting: "Require Heart Rate"\n- Setting: "Required Blood Volume"</English>
@@ -1672,6 +1775,7 @@
             <Chinese>凝血因子再生檢查之間的時間。成功檢查後將新增 +1 個因素。使用設定：「凝血因子」為限值。\n注意：如果超過限制，將使用此時間，然後刪除 -1 因子，直到達到設定：「凝血因子」。提示：血栓素(TXA)或 EACA 停止丟失因子\n再生工作的要求：\n-在此設定下的最後一個週期檢查中沒有傷口凝結\n-設定：「要求心率」\n-設定：「所需血容量」</Chinese>
             <Chinesesimp>凝血因子再生检查之间的时间。成功检查后将添加+1个因素。使用设置：“凝血因子”为限值。\n注意：如果超过限制，将使用此时间，然后删除-1因子，直到达到设置：“凝血因子”。提示：血栓素(TXA)或EACA停止丢失因子\n再生工作的要求：\n-在此设置下的最后一个周期检查中没有伤口凝结\n-设置：“要求心率”\n-设定：“所需血容量”</Chinesesimp>
             <Dutch>De tijd tussen stollingsfactor hergeneratie checks. Geeft +1 factor op een succesvolle check. Gebruikt instelling: "Stollingsfactoren" als limiet. \n Wees alert: als het limiet overschreden is, dan zal na deze check 1 factor verwijderd worden (-1 factoren) tot het limiet weer bereikt is. Tip: TXA en EACA stoppen het verlies van factoren.\nVereisten voor hergeneratie:\n- Geen wond gestold in de laaste cyclus van deze instelling,\n- Instelling: "Vereist hartslag"\n- "Benodigd bloedvolume"</Dutch>
+            <Hungarian>A véralvadási faktorok regenerálódásának ellenőrzése közötti idő. Sikeres ellenőrzés esetén +1 faktort ad hozzá. A „Véralvadási faktorok” beállítást használja határértéknek. Megjegyzés: Ha a határértéket túllépik, akkor ezt az időt használja, majd -1 faktort von le, amíg el nem éri a „Véralvadási faktorok” beállítást. Tipp: TXA vagy EACA megállítja a faktorok elvesztését\nA regeneráció működésének feltételei:\n- Az utolsó ciklus ellenőrzése során nem volt vérrögképződés ebben a beállításban\n- Beállítás: „Szívfrekvencia szükséges”\n- Beállítás: „Szükséges vérmennyiség”</Hungarian>
         </Key>
         <Key ID="STR_KAT_Pharma_SETTING_Coagulation_Time">
             <English>Clotting Cycle Time</English>
@@ -1684,6 +1788,7 @@
             <Chinese>凝血週期時間</Chinese>
             <Chinesesimp>凝血周期时间</Chinesesimp>
             <Dutch>Stollingscyclustijd</Dutch>
+            <Hungarian>Véralvadási ciklus időtartama</Hungarian>
         </Key>
         <Key ID="STR_KAT_Pharma_SETTING_Coagulation_Time_Clotting_DESC">
             <English>This time gets divided by 2, randomized &amp; added with the same value devided by 2.\nFor example, if the value was set to 10s this would be one possible varriation: (random (10 / 2)) + (10 / 2) = 8s</English>
@@ -1696,6 +1801,7 @@
             <Chinese>此時間除以 2，隨機化並加上除以 2 的相同值。\n例如，如果該值設定為 10 秒，則可能出現一種變化： (random (10 / 2)) + (10 / 2) = 8 秒</Chinese>
             <Chinesesimp>此时间除以2，随机化并加上除以2的相同值。\n例如，如果该值设置为10秒，则可能出现一种变化： (random (10 / 2)) + (10 / 2) = 8s</Chinesesimp>
             <Dutch>Deze tijd wordt door 2 gedeeld, gerandomiseerd en dan met dezelfde waarde gedeeld door 2 opgeteld. \nBijvoorbeeld: als deze waarde op 10 seconden ingesteld staat dan is één mogelijke variatie:(random(10/2))+(10/2) = 8s</Dutch>
+            <Hungarian>Ez az idő 2-vel osztva, véletlenszerűen kiválasztva és ugyanazzal az értékkel összeadva, amelyet 2-vel osztottunk. Például, ha az érték 10 másodpercre lett beállítva, ez lenne az egyik lehetséges variáció: (random (10 / 2)) + (10 / 2) = 8s</Hungarian>
         </Key>
         <Key ID="STR_KAT_Pharma_SETTING_Coagulation_Time_DESC">
             <English>The time between each wound clotting cycle that start wound clotting. (low number may cause lag)</English>
@@ -1708,6 +1814,7 @@
             <Chinese>開始傷口凝血的每個傷口凝血週期之間的時間。（數字低可能會導致延遲）</Chinese>
             <Chinesesimp>开始伤口凝血的每个伤口凝血周期之间的时间。（数字低可能会导致滞后）</Chinesesimp>
             <Dutch>De hoeveelheid tijd tussen elke wondstollingscyclus. (een laag nummer kan leiden tot lag)</Dutch>
+            <Hungarian>A seb alvadási ciklusok közötti idő, amely elindítja a seb alvadását. (alacsony szám lagott okozhat)</Hungarian>
         </Key>
         <Key ID="STR_KAT_Pharma_SETTING_Coagulation_Time_Large">
             <English>Large Wounds Clotting Time</English>
@@ -1720,6 +1827,7 @@
             <Chinese>大傷口凝血時間</Chinese>
             <Chinesesimp>大伤口凝血时间</Chinesesimp>
             <Dutch>Grote wonden stollingstijd</Dutch>
+            <Hungarian>Nagy sebek alvadási ideje</Hungarian>
         </Key>
         <Key ID="STR_KAT_Pharma_SETTING_Coagulation_Time_Medium">
             <English>Medium Wounds Clotting Time</English>
@@ -1732,6 +1840,7 @@
             <Chinese>中等傷口凝血時間</Chinese>
             <Chinesesimp>中等伤口凝血时间</Chinesesimp>
             <Dutch>Middelgrote wonden stollingstijd</Dutch>
+            <Hungarian>Közepes sebek alvadási ideje</Hungarian>
         </Key>
         <Key ID="STR_KAT_Pharma_SETTING_Coagulation_Time_Minor">
             <English>Minor Wounds Clotting Time</English>
@@ -1744,6 +1853,7 @@
             <Chinese>輕傷凝血時間</Chinese>
             <Chinesesimp>轻伤凝血时间</Chinesesimp>
             <Dutch>Kleine wonden stollingstijd</Dutch>
+            <Hungarian>Kisebb sebek alvadási ideje</Hungarian>
         </Key>
         <Key ID="STR_KAT_Pharma_SETTING_Coagulation_allowOnAI">
             <English>Affect AI</English>
@@ -1756,6 +1866,7 @@
             <Chinese>影響 AI</Chinese>
             <Chinesesimp>影响AI</Chinesesimp>
             <Dutch>Beïnvloed AI/KI</Dutch>
+            <Hungarian>Befolyásolja az AI-t</Hungarian>
         </Key>
         <Key ID="STR_KAT_Pharma_SETTING_Coagulation_allowOnAI_DESC">
             <English>Allow coagulation to affect AI units.\nEvery other value will still be required if turned on. (May cause lag if many AI is present)</English>
@@ -1768,6 +1879,7 @@
             <Chinese>允許凝固影響 AI 單位。\n如果開啟，仍需要其他值。（如果存在許多 AI，可能會導致延遲）</Chinese>
             <Chinesesimp>允许凝固影响AI单位。\n如果打开，仍需要其他值。（如果存在许多AI，可能会导致延迟）</Chinesesimp>
             <Dutch>Laat coagulatie AI/KI beïnvloeden.\nElke andere waarde wordt ook voor AI/KI gecheckt wanneer dit aanstaat. (Kan prestatieproblemen opleveren als er veel AI's/KI's aanwezig zijn.)</Dutch>
+            <Hungarian>Engedélyezi a koaguláció hatását az AI egységekre. Ha be van kapcsolva, minden más érték továbbra is szükséges. (Sok AI jelenléte esetén lagot okozhat.)</Hungarian>
         </Key>
         <Key ID="STR_KAT_Pharma_SETTING_Coagulation_allow_EACA_script">
             <English>Allow Additional EACA Stiching</English>
@@ -1780,6 +1892,7 @@
             <Chinese>允許進行額外的 EACA 縫合</Chinese>
             <Chinesesimp>允许进行额外的EACA缝合</Chinesesimp>
             <Dutch>Sta additionele EACA hechtingen toe</Dutch>
+            <Hungarian>További EACA-sebvarrás engedélyezése</Hungarian>
         </Key>
         <Key ID="STR_KAT_Pharma_SETTING_Coagulation_allow_EACA_script_DESC">
             <English>If enabled EACA will keep all functionality and start stitching bandaged wounds</English>
@@ -1792,6 +1905,7 @@
             <Chinese>如果啟用，EACA 將保留所有功能並開始縫合繃帶傷口</Chinese>
             <Chinesesimp>如果启用，EACA将保留所有功能并开始缝合绷带伤口</Chinesesimp>
             <Dutch>EACA houdt zijn functionaliteit en zal wonden hechten wanneer deze instelling actief is.</Dutch>
+            <Hungarian>Ha engedélyezve van, az EACA megtartja minden funkcióját, és elkezdi varrni a bekötözött sebeket.</Hungarian>
         </Key>
         <Key ID="STR_KAT_Pharma_SETTING_Coagulation_allow_LargeWounds">
             <English>Affect Large Wounds</English>
@@ -1804,6 +1918,7 @@
             <Chinese>影響大傷口</Chinese>
             <Chinesesimp>影响大伤口</Chinesesimp>
             <Dutch>Beïnvloed grote wonden</Dutch>
+            <Hungarian>Hatás nagy sebekre</Hungarian>
         </Key>
         <Key ID="STR_KAT_Pharma_SETTING_Coagulation_allow_LargeWounds_DESC">
             <English>Allow coagulation to affect large wounds when clotting</English>
@@ -1816,6 +1931,7 @@
             <Chinese>凝血時允許凝血影響大傷口</Chinese>
             <Chinesesimp>凝血时允许凝血影响大伤口</Chinesesimp>
             <Dutch>Staat toe dat coagulatie grote wonden beïnvloed tijdens het stollen</Dutch>
+            <Hungarian>Hagyja, hogy a véralvadás hatással legyen a nagy sebekre, amikor a vér alvad.</Hungarian>
         </Key>
         <Key ID="STR_KAT_Pharma_SETTING_Coagulation_allow_MediumWounds">
             <English>Affect Medium Wounds</English>
@@ -1828,6 +1944,7 @@
             <Chinese>影響中度傷口</Chinese>
             <Chinesesimp>影响中度伤口</Chinesesimp>
             <Dutch>Beïnvloed middelgrote wonden</Dutch>
+            <Hungarian>Hatás közepes sebekre</Hungarian>
         </Key>
         <Key ID="STR_KAT_Pharma_SETTING_Coagulation_allow_MediumWounds_DESC">
             <English>Allow coagulation to affect medium wounds when clotting</English>
@@ -1840,6 +1957,7 @@
             <Chinese>凝血時允許凝血影響中度傷口</Chinese>
             <Chinesesimp>凝血时允许凝血影响中度伤口</Chinesesimp>
             <Dutch>Staat toe dat coagulatie middelgrote wonden beïnvloed tijdens het stollen</Dutch>
+            <Hungarian>Hagyja, hogy a véralvadás hatással legyen a közepes sebekre, amikor a vér alvad.</Hungarian>
         </Key>
         <Key ID="STR_KAT_Pharma_SETTING_Coagulation_allow_MinorWounds">
             <English>Affect Minor Wounds</English>
@@ -1852,6 +1970,7 @@
             <Chinese>影響輕微傷口</Chinese>
             <Chinesesimp>影响轻微伤口</Chinesesimp>
             <Dutch>Beïnvloed kleine wonden</Dutch>
+            <Hungarian>Hatás a kisebb sebekre</Hungarian>
         </Key>
         <Key ID="STR_KAT_Pharma_SETTING_Coagulation_allow_MinorWounds_DESC">
             <English>Allow coagulation to affect minor wounds when clotting</English>
@@ -1864,6 +1983,7 @@
             <Chinese>凝血時允許凝血影響輕微傷口</Chinese>
             <Chinesesimp>凝血时允许凝血影响轻微伤口</Chinesesimp>
             <Dutch>Staat toe dat coagulatie kleine wonden beïnvloed tijdens het stollen</Dutch>
+            <Hungarian>Hagyja, hogy a véralvadás hatással legyen a kis sebekre, amikor a vér alvad.</Hungarian>
         </Key>
         <Key ID="STR_KAT_Pharma_SETTING_Coagulation_allow_TXA_script">
             <English>Allow Additional TXA Bandaging</English>
@@ -1876,6 +1996,7 @@
             <Chinese>允許額外的血栓素(TXA)包紮</Chinese>
             <Chinesesimp>允许额外的血栓素(TXA)包扎</Chinesesimp>
             <Dutch>Sta additionele TXA dichtingen toe</Dutch>
+            <Hungarian>További TXA kötözés engedélyezése</Hungarian>
         </Key>
         <Key ID="STR_KAT_Pharma_SETTING_Coagulation_allow_TXA_script_DESC">
             <English>If enabled TXA will keep all functionality and start bandaging wounds itself</English>
@@ -1888,6 +2009,7 @@
             <Chinese>如果啟用，血栓素(TXA)將保持所有功能並開始自行包紮傷口</Chinese>
             <Chinesesimp>如果启用，血栓素(TXA)将保持所有功能并开始自行包扎伤口</Chinesesimp>
             <Dutch>TXA houdt zijn functionaliteit en zal wonden dichten wanneer deze instelling actief is.</Dutch>
+            <Hungarian>Ha engedélyezve van, a TXA megőrzi az összes funkcióját, és elkezdi magát kötözni a sebeket.</Hungarian>
         </Key>
         <Key ID="STR_KAT_Pharma_SETTING_Coagulation_allow_clot_text">
             <English>Allow Clots To Be Shown in Menu</English>
@@ -1900,6 +2022,7 @@
             <Chinese>允許在選單中顯示凝塊</Chinese>
             <Chinesesimp>允许在菜单中显示凝块</Chinesesimp>
             <Dutch>Sta toe dat stollingen worden weergeven in het menu</Dutch>
+            <Hungarian>Lehetővé teszi az alvadó sebek megjelenítését a menüben</Hungarian>
         </Key>
         <Key ID="STR_KAT_Pharma_SETTING_Coagulation_allow_clot_text_DESC">
             <English>If enabled, when coagulation is bandaging a wound it will add a interaction log to the medical menu.</English>
@@ -1912,6 +2035,7 @@
             <Chinese>如果啟用，當凝固包紮傷口時，它將在醫療選單中新增一個互動日誌。</Chinese>
             <Chinesesimp>如果启用，当凝固包扎伤口时，它将在医疗菜单中添加一个交互日志。</Chinesesimp>
             <Dutch>Wanneer dit is ingeschakeld is worden gestolde wonden toegevoegd aan de interactie log van het medisch menu.</Dutch>
+            <Hungarian>Ha engedélyezve van, amikor a Coagulation(véralvadás) bekötöz egy sebet, egy interakciós napló kerül a orvosi menübe.</Hungarian>
         </Key>
         <Key ID="STR_KAT_Pharma_SETTING_Coagulation_on_all_Bodyparts">
             <English>Simultaneous Bodypart Coagulation</English>
@@ -1924,6 +2048,7 @@
             <Chinese>同時進行身體部位凝血</Chinese>
             <Chinesesimp>同时进行身体部位凝血</Chinesesimp>
             <Dutch>Gelijktijdige coagulatie</Dutch>
+            <Hungarian>Több testrész egyszerre történő alvadása</Hungarian>
         </Key>
         <Key ID="STR_KAT_Pharma_SETTING_Coagulation_on_all_Bodyparts_DESC">
             <English>If enabled each bodypart will be treated simultaneously by coagulation.\nMeaning if you have a wound on the head and body they will both be treated in the same coagulation cycle.</English>
@@ -1936,6 +2061,8 @@
             <Chinese>如果啟用，每個身體部位將同時接受凝血治療。\n也就是說，如果你的頭部和身體都有傷口，它們都會在相同的凝血週期中接受治療。</Chinese>
             <Chinesesimp>如果启用，每个身体部位将同时接受凝血治疗。\n也就是说，如果你的头部和身体都有伤口，它们都会在相同的凝血周期中接受治疗。</Chinesesimp>
             <Dutch>Als dit ingeschakeld is, zal elk lichaamsdeel tegelijkertijd behandeld worden door coagulatie. \nWat betekent dat als je een wond aan je arm en been hebt, dat deze in dezelfde coagulatiecyclus behandeld worden</Dutch>
+            <Hungarian>Ha engedélyezve van, minden testtájat egyszerre kezel a Coagulation(véralvadás).
+Ez azt jelenti, hogy ha van seb a fejen és a testen, mindkettőt ugyanabban az alvadási ciklusban kezel.</Hungarian>
         </Key>
         <Key ID="STR_KAT_Pharma_SETTING_Coagulation_requireBV">
             <English>Required Blood Volume</English>
@@ -1948,6 +2075,7 @@
             <Chinese>所需血容量</Chinese>
             <Chinesesimp>所需血容量</Chinesesimp>
             <Dutch>Benodigd bloedvolume</Dutch>
+            <Hungarian>Szükséges vérmennyiség</Hungarian>
         </Key>
         <Key ID="STR_KAT_Pharma_SETTING_Coagulation_requireBV_DESC">
             <English>Minimum volume of blood required for coagulation to work</English>
@@ -1960,6 +2088,7 @@
             <Chinese>凝血所需的最小血容量</Chinese>
             <Chinesesimp>凝血所需的最小血容量</Chinesesimp>
             <Dutch>Het minimale bloedvolume dat vereist is voor coagulatie om te werken</Dutch>
+            <Hungarian>A véralvadáshoz szükséges minimális vérmennyiség</Hungarian>
         </Key>
         <Key ID="STR_KAT_Pharma_SETTING_Coagulation_requireHR">
             <English>Require Heart Rate</English>
@@ -1972,6 +2101,7 @@
             <Chinese>要求心率</Chinese>
             <Chinesesimp>要求心率</Chinesesimp>
             <Dutch>Vereist hartslag</Dutch>
+            <Hungarian>Szívritmus szükséges</Hungarian>
         </Key>
         <Key ID="STR_KAT_Pharma_SETTING_Coagulation_requireHR_DESC">
             <English>Should coagulation require a heart rate above 20BPM? (Doing CPR will keep HR above 20BPM)</English>
@@ -1984,6 +2114,7 @@
             <Chinese>凝血需要心率超過 20 BPM 嗎？（做心肺復甦術將使心率保持在 20 BPM 以上）</Chinese>
             <Chinesesimp>凝血需要心率超过20BPM吗？（做心肺复苏术将使心率保持在20BPM以上）</Chinesesimp>
             <Dutch>Is een hartslag van meer dan 20SPM benodigt voor coagulatie? (Het uitvoeren van CPR houdt de hartslag boven 20SPM)</Dutch>
+            <Hungarian>A véralvadáshoz 20 BPM feletti pulzusszámra van szükség? (A CPR végzése 20 BPM feletti pulzusszámot biztosít.)</Hungarian>
         </Key>
         <Key ID="STR_KAT_Pharma_SETTING_Coagulation_tourniquetBlock">
             <English>Tournique Blocks Blood Clotting</English>
@@ -1996,6 +2127,7 @@
             <Chinese>止血帶阻斷凝血</Chinese>
             <Chinesesimp>止血带阻断凝血</Chinesesimp>
             <Dutch>Tourniquets blokkeren wondstolling</Dutch>
+            <Hungarian>A turnikét gátolja a vér alvadását</Hungarian>
         </Key>
         <Key ID="STR_KAT_Pharma_SETTING_Coagulation_tourniquetBlock_DESC">
             <English>If enabled a applied tourniquet will stop wounds from being closed from coagulation on that bodypart</English>
@@ -2008,6 +2140,7 @@
             <Chinese>如果啟用止血帶，可以防止傷口因身體部位的凝血而閉合</Chinese>
             <Chinesesimp>如果启用止血带，可以防止伤口因身体部位的凝血而闭合</Chinesesimp>
             <Dutch>Tourniquets voorkomen dat wonden op hetzelfde ledemaat dichtgemaakt worden door coagulatie wanneer deze instelling actief is</Dutch>
+            <Hungarian>Ha engedélyezve van, az alkalmazott érszorító megakadályozza, hogy a sebek az adott testrészen koagulációval záródjanak be.</Hungarian>
         </Key>
         <Key ID="STR_KAT_Pharma_SETTING_EACA_Trauma">
             <English>EACA Clears Trauma</English>
@@ -2022,6 +2155,7 @@
             <Chinese>EACA 清除創傷</Chinese>
             <Chinesesimp>EACA清除创伤</Chinesesimp>
             <Dutch>EACA verwijderd trauma</Dutch>
+            <Hungarian>EACA megszünteti a traumát</Hungarian>
         </Key>
         <Key ID="STR_KAT_Pharma_SETTING_EACA_Trauma_Desc">
             <English>Allows Trauma to be cleared by EACA in addition to stitching</English>
@@ -2036,6 +2170,7 @@
             <Chinese>除了縫合外，EACA 還可以清除創傷</Chinese>
             <Chinesesimp>除了缝合外，EACA还可以清除创伤</Chinesesimp>
             <Dutch>Staat toe dat EACA trauma verwijderd, als additie van hechten</Dutch>
+            <Hungarian>Lehetővé teszi a trauma EACA általi tisztítását a varrás mellett</Hungarian>
         </Key>
         <Key ID="STR_KAT_Pharma_SETTING_IV_FLOW_CONTROL">
             <English>Enable IV/IO Flow Control</English>
@@ -2047,6 +2182,7 @@
             <Chinese>啟用IV/IO流量控制</Chinese>
             <Chinesesimp>启用IV/IO流量控制</Chinesesimp>
             <Dutch>Sta IV/IO Loopsnelheidscontrole toe</Dutch>
+            <Hungarian>IV/IO áramlásszabályozás engedélyezése</Hungarian>
         </Key>
         <Key ID="STR_KAT_Pharma_SETTING_IV_FLOW_CONTROL_DESC">
             <English>Enables the IV/IO flow control menu which gives the medic fine control over the volume running through the active line</English>
@@ -2058,6 +2194,7 @@
             <Chinese>啟用IV/IO流量控制選單，使醫務人員能夠精細控制通過活動線路的音量</Chinese>
             <Chinesesimp>启用IV/IO流量控制菜单，使医务人员能够精细控制通过活动线路的音量</Chinesesimp>
             <Dutch>Activeert het IV/IO loopsnelheidscontrole menu wat het medisch personeel fijne controle geeft over de loopsnelheid in de active lijn</Dutch>
+            <Hungarian>Engedélyezi az IV/IO áramlásszabályozó menüt, amely lehetővé teszi az orvos számára, hogy pontosan szabályozza az aktív vonalon átfolyó folyadék mennyiségét.</Hungarian>
         </Key>
         <Key ID="STR_KAT_Pharma_SETTING_Kidney_Action">
             <English>Kidney damage/failure</English>
@@ -2075,6 +2212,7 @@
             <Chinesesimp>肾损伤/衰竭</Chinesesimp>
             <Finnish>Munuaisvaurio/munuaisten vajaatoiminta</Finnish>
             <Dutch>Nierschade/-falen</Dutch>
+            <Hungarian>Veseelégtelenség/károsodás</Hungarian>
         </Key>
         <Key ID="STR_KAT_Pharma_SETTING_Kidney_Action_DESC">
             <English>Enables kidney damage caused by overuse of saline</English>
@@ -2092,6 +2230,7 @@
             <Chinesesimp>启用因过度使用生理盐水而造成的肾脏损害</Chinesesimp>
             <Finnish>Mahdollistaa suolaliuoksen liiallisen käytön aiheuttaman munuaisvaurion</Finnish>
             <Dutch>Schakelt nierschade veroorzaakt door overgebruik van saline in</Dutch>
+            <Hungarian>A sóoldat túlzott használata által okozott veseelégtelenséget elősegíti.</Hungarian>
         </Key>
         <Key ID="STR_KAT_Pharma_SETTING_Max_Stack">
             <English>Maximum Fluid Bag Stack</English>
@@ -2109,6 +2248,7 @@
             <Chinesesimp>注射液堆叠上限</Chinesesimp>
             <Finnish>Suurin nestepussipino</Finnish>
             <Dutch>Maximale vloeistofzak stapel</Dutch>
+            <Hungarian>Maximális folyadéktartály-halom</Hungarian>
         </Key>
         <Key ID="STR_KAT_Pharma_SETTING_Max_Stack_DESC">
             <English>The maximum amount of fluid bags that can be stacked to increase IV flow rate</English>
@@ -2126,6 +2266,7 @@
             <Chinesesimp>可堆叠的最大液体袋量以增加 IV 流速</Chinesesimp>
             <Finnish>Suurin määrä nestepusseja, jotka voidaan pinota IV-virtausnopeuden lisäämiseksi</Finnish>
             <Dutch>De maximale hoeveelheid vloeistofzakken die gestapeld kunnen worden om de IV vloeisnelheid te verhogen</Dutch>
+            <Hungarian>Az intravénás áramlási sebesség növelése érdekében egymásra rakható folyadéktartályok maximális száma</Hungarian>
         </Key>
         <Key ID="STR_KAT_Pharma_SETTING_PervitinSpeed_DESC">
             <English>The animation speed that gets set in Stage 1 of Pervitin. (1 = normal, 2 = twice)</English>
@@ -2143,6 +2284,7 @@
             <Chinesesimp>在柏飞汀(Pervitin)的第一阶段中设置的动画速度。（1=正常，2=两次）</Chinesesimp>
             <Finnish>Animaationopeus, joka asetetaan pervitiinin vaiheessa 1. (1 = normaali, 2 = kahdesti)</Finnish>
             <Dutch>Animatiesnelheid van fase 1 van pervitin. (1 = normaal, 2 = dubbel)</Dutch>
+            <Hungarian>Az animáció sebessége, amely a Pervitin 1. szakaszában kerül beállításra. (1 = normál, 2 = kétszeres)</Hungarian>
         </Key>
         <Key ID="STR_KAT_Pharma_SETTING_PervitinSpeed_displayName">
             <English>Pervitin Speed Boost</English>
@@ -2160,6 +2302,7 @@
             <Chinesesimp>柏飞汀(Pervitin)速度提升</Chinesesimp>
             <Finnish>Pervitiini nopeuden lisääminen</Finnish>
             <Dutch>Pervitin snelheidsboost</Dutch>
+            <Hungarian>Pervitin Speed Boost</Hungarian>
         </Key>
         <Key ID="STR_KAT_Pharma_SETTING_REQUIRE_INS_IV">
             <English>Fluid Require inserted IV/IO</English>
@@ -2174,6 +2317,7 @@
             <Chinese>注射需要插入IV/IO</Chinese>
             <Chinesesimp>推注需要插入IV/IO</Chinesesimp>
             <Dutch>Vloeistoffen vereisen een aangelegde IV/IO</Dutch>
+            <Hungarian>Csak felhelyezett IV/IO esetén adható folyadék</Hungarian>
         </Key>
         <Key ID="STR_KAT_Pharma_SETTING_REQUIRE_INS_IV_BLOOD_DRAW">
             <English>Blood Drawing Require IV/IO</English>
@@ -2188,6 +2332,7 @@
             <Chinese>抽血需要插入IV/IO</Chinese>
             <Chinesesimp>抽血需要插入IV/IO</Chinesesimp>
             <Dutch>Bloedoptrekken vereist IV/IO</Dutch>
+            <Hungarian>Csak felhelyezett IV/IO esetén végezhető vérvétel</Hungarian>
         </Key>
         <Key ID="STR_KAT_Pharma_SETTING_REQUIRE_INS_IV_BLOOD_DRAW_DESC">
             <English>Default false. If true, you will need to insert IV/IO first before being able to draw blood from someone. \nIf false, you can draw without it.</English>
@@ -2202,6 +2347,8 @@
             <Chinese>默認值為false。如果是真的，你需要先插入靜脈注射/IO，然後才能從某人身上抽血。\n如果是假的，你可以不用它畫畫。</Chinese>
             <Chinesesimp>默认值为false。如果是真的，你需要先插入静脉注射/IO，然后才能从某人身上抽血。\n如果是假的，你可以不用它画画。</Chinesesimp>
             <Dutch>Standaard vals. Wanneer waar moet er eerst een IV/IO toegediend worden voordat je bloed kan optrekken. \nWanneer vals is dit niet vereist.</Dutch>
+            <Hungarian>Alapértelmezett: false. Ha true, először IV/IO-t kell felhelyezni, mielőtt vért tudna venni valakitől.
+Ha false, vérvétel IV/IO nélkül is lehetséges.</Hungarian>
         </Key>
         <Key ID="STR_KAT_Pharma_SETTING_REQUIRE_INS_IV_DESC">
             <English>Default false. If true, you will need to insert IV/IO first before being able to give someone saline/blood/plasma. \nIf false, it retains standard ACE behaviour for using saline/blood/plasma.</English>
@@ -2220,6 +2367,8 @@
             <Turkish>VDefault false. Doğruysa, birine salin/kan/plazma vermeden önce IV/IO eklemeniz gerekir. \nYanlışsa, salin/kan/plazma kullanımı için standart ACE davranışını korur.</Turkish>
             <Finnish>Oletusarvo epätosi. Jos totta, sinun on lisättävä IV/IO ensin, ennen kuin voit antaa jollekulle suolaliuosta/verta/plasmaa \nJos väärin, se säilyttää normaalin ACE-käyttäytymisen suolaliuoksen/veren/plasman käytössä.</Finnish>
             <Dutch>Standaard vals. Wanneer waar moet er eerst een IV/IO aangelegd worden voordat je vloeistoffen kan toedienen.\nWanneer vals, wordt standaard ACE gedrag gebruikt voor vloeistoffen</Dutch>
+            <Hungarian>Alapértelmezett: false. Ha true, először IV/IO-t kell felhelyezni, mielőtt valakinek sóoldatot, vért vagy plazmát adhatna.
+Ha false, az ACE alapértelmezett viselkedése érvényes a sóoldat, vér és plazma használatára.</Hungarian>
         </Key>
         <Key ID="STR_KAT_Pharma_SETTING_REQUIRE_INS_IV_Medications">
             <English>Medications Require IV/IO</English>
@@ -2237,6 +2386,7 @@
             <Chinesesimp>药物需要通过IV/IO注射</Chinesesimp>
             <Finnish>Lääkkeet vaativat IV/IO:n</Finnish>
             <Dutch>Medicaties vereisen IV/IO</Dutch>
+            <Hungarian>A gyógyszerek IV/IO adagolást igényelnek.</Hungarian>
         </Key>
         <Key ID="STR_KAT_Pharma_SETTING_REQUIRE_INS_IV_Medications_DESC">
             <English>Default false. If true, you will need to insert IV/IO first before being able to give someone medications. \nIf false, you can give them without it.</English>
@@ -2254,6 +2404,8 @@
             <Chinesesimp>默认假。 如果为真，您将需要先建立 IV/IO, 然后才能给某人注射药。 \n如果为假, 您可以在没有IV/IO的情况下注射药物他们。</Chinesesimp>
             <Finnish>Oletusarvo epätosi. Jos totta, sinun on lisättävä IV/IO ensin, ennen kuin voit antaa jollekin lääkkeitä. \nJos vääriä, voit antaa ne ilman sitä.</Finnish>
             <Dutch>Standaard vals. Wanneer waar moet er eerst een IV/IO aangelegd worden voordat medicatie toegedient kan worden. \nWanneer vals kunnen medicijnen gegeven worden zonder IV/IO</Dutch>
+            <Hungarian>Alapértelmezett: false. Ha true, először IV/IO-t kell felhelyezni, mielőtt gyógyszert adhatna valakinek.
+Ha false, gyógyszert IV/IO nélkül is adhat.</Hungarian>
         </Key>
         <Key ID="STR_KAT_Pharma_SETTING_Reorientation_Enable">
             <English>Reorientation enabled?</English>
@@ -2272,6 +2424,7 @@
             <Turkish>Yeniden yönlendirme etkin mi?</Turkish>
             <Finnish>Uudelleensuuntaus käytössä?</Finnish>
             <Dutch>Heroriëntatie ingeschakeld?</Dutch>
+            <Hungarian>Újraorientáció engedélyezve?</Hungarian>
         </Key>
         <Key ID="STR_KAT_Pharma_SETTING_Reorientation_Enable_DESC">
             <English>Enables reorientation</English>
@@ -2290,6 +2443,7 @@
             <Turkish>Yeniden yönlendirmeyi etkinleştirir</Turkish>
             <Finnish>Mahdollistaa suunnanmuutoksen</Finnish>
             <Dutch>Schakelt heroriëntatie in</Dutch>
+            <Hungarian>Lehetővé teszi az újraorientációt</Hungarian>
         </Key>
         <Key ID="STR_KAT_Pharma_SETTING_Reorientation_Slap">
             <English>Reorientation slap sound</English>
@@ -2308,6 +2462,7 @@
             <Turkish>Yönlendirme tokat sesi</Turkish>
             <Finnish>Lyöksytysääni potilaan suunnan muuttamiseen</Finnish>
             <Dutch>Heroriëntatie klapgeluid</Dutch>
+            <Hungarian>Újraorientálódás pofon hang</Hungarian>
         </Key>
         <Key ID="STR_KAT_Pharma_SETTING_Reorientation_Slap_DESC">
             <English>Enables slap sound for reorientation</English>
@@ -2326,6 +2481,7 @@
             <Turkish>Yeniden yönlendirme için tokat sesini etkinleştirir</Turkish>
             <Finnish>Sallii iskuäänen uudelleensuuntaamista varten</Finnish>
             <Dutch>Schakelt het klapgeluid in voor heroriëntatie</Dutch>
+            <Hungarian>Engedélyezi a pofon hangját a reorientációhoz</Hungarian>
         </Key>
         <Key ID="STR_KAT_Pharma_SETTING_Weapon_Sway_Pervitin">
             <English>Enable Weapon Sway</English>
@@ -2343,6 +2499,7 @@
             <Chinesesimp>启用武器摇摆</Chinesesimp>
             <Finnish>Ota aseen heiluminen käyttöön</Finnish>
             <Dutch>Schakel wapenbeweging in</Dutch>
+            <Hungarian>Enable Weapon Sway</Hungarian>
         </Key>
         <Key ID="STR_KAT_Pharma_SETTING_Weapon_Sway_Pervitin_DESC">
             <English>Enables if pervitin should influance your weapon sway</English>
@@ -2360,6 +2517,7 @@
             <Chinesesimp>启用柏飞汀(Pervitin)影响您的武器摆动</Chinesesimp>
             <Finnish>Mahdollistaa pervitiinin vaikutuksen aseen heilumiseen.</Finnish>
             <Dutch>Bepaald of pervitin invloed heeft op wapenbewegingen</Dutch>
+            <Hungarian>Enables if pervitin should influance your weapon sway</Hungarian>
         </Key>
         <Key ID="STR_KAT_Pharma_SETTING_allowStackScript_EACA">
             <English>Allow Stacking</English>
@@ -2373,6 +2531,7 @@
             <Chinese>允許堆疊</Chinese>
             <Chinesesimp>允许堆叠</Chinesesimp>
             <Dutch>Sta stapelen toe</Dutch>
+            <Hungarian>Halmozás engedélyezése</Hungarian>
         </Key>
         <Key ID="STR_KAT_Pharma_SETTING_allowStackScript_EACA_DESC">
             <English>If enabled EACA will be stackable and double its efficiency</English>
@@ -2386,6 +2545,7 @@
             <Chinese>如果啟用，EACA 將可堆疊，效率提高一倍</Chinese>
             <Chinesesimp>如果启用，EACA将可堆叠，效率提高一倍</Chinesesimp>
             <Dutch>Staat het stapelen van EACA toe wanneer ingeschakeld, wat leidt tot een verdubbeling van de effectiviteit</Dutch>
+            <Hungarian>Ha engedélyezve van, az EACA egymásra halmozható lesz, és kétszeresére növeli hatékonyságát.</Hungarian>
         </Key>
         <Key ID="STR_KAT_Pharma_SETTING_allowStackScript_TXA">
             <English>Allow Stacking</English>
@@ -2398,6 +2558,7 @@
             <Chinese>允許堆疊</Chinese>
             <Chinesesimp>允许堆叠</Chinesesimp>
             <Dutch>Sta stapelen toe</Dutch>
+            <Hungarian>Halmozás engedélyezése</Hungarian>
         </Key>
         <Key ID="STR_KAT_Pharma_SETTING_allowStackScript_TXA_DESC">
             <English>If enabled TXA will be stackable and double it's efficiency</English>
@@ -2410,6 +2571,7 @@
             <Chinese>如果啟用血栓素(TXA)，它將是可堆疊的，效率提高一倍</Chinese>
             <Chinesesimp>如果启用血栓素(TXA)，它将是可堆叠的，效率提高一倍</Chinesesimp>
             <Dutch>Wanneer ingeschakeld: sta het stapelen van TXA toe, wat de effectiviteit verdubbeld)</Dutch>
+            <Hungarian>Ha engedélyezve van, a TXA egymásra rakható lesz, és kétszeresére növeli a hatékonyságát.</Hungarian>
         </Key>
         <Key ID="STR_KAT_Pharma_SETTING_bandageCycleTime_EACA">
             <English>EACA Cycle Time</English>
@@ -2423,6 +2585,7 @@
             <Chinese>EACA 循環時間</Chinese>
             <Chinesesimp>EACA循环时间</Chinesesimp>
             <Dutch>EACA cyclustimer</Dutch>
+            <Hungarian>EACA ciklusidő</Hungarian>
         </Key>
         <Key ID="STR_KAT_Pharma_SETTING_bandageCycleTime_EACA_DESC">
             <English>The time it takes for EACA to close a stich a wound</English>
@@ -2436,6 +2599,7 @@
             <Chinese>EACA 閉合傷口所需的時間</Chinese>
             <Chinesesimp>EACA闭合伤口所需的时间</Chinesesimp>
             <Dutch>Hoe lang het duurt voor EACA om een wond te hechten</Dutch>
+            <Hungarian>Az EACA által egy seb varrásának lezárásához szükséges idő</Hungarian>
         </Key>
         <Key ID="STR_KAT_Pharma_SETTING_bandageCycleTime_TXA">
             <English>TXA Cycle Time</English>
@@ -2448,6 +2612,7 @@
             <Chinese>血栓素(TXA)循環時間</Chinese>
             <Chinesesimp>血栓素(TXA)循环时间</Chinesesimp>
             <Dutch>TXA cyclustijd</Dutch>
+            <Hungarian>TXA ciklusidő</Hungarian>
         </Key>
         <Key ID="STR_KAT_Pharma_SETTING_bandageCycleTime_TXA_DESC">
             <English>The time it takes for TXA to close a wound</English>
@@ -2460,6 +2625,7 @@
             <Chinese>血栓素(TXA)閉合傷口所需的時間</Chinese>
             <Chinesesimp>血栓素(TXA)闭合伤口所需的时间</Chinesesimp>
             <Dutch>Hoe lang het duurt voordat TXA een wond dicht</Dutch>
+            <Hungarian>Az idő, amely alatt a TXA bezár egy sebet</Hungarian>
         </Key>
         <Key ID="STR_KAT_Pharma_SETTING_carbonateChance">
             <English>Maximum Carbonate Success Chance</English>
@@ -2477,6 +2643,7 @@
             <Chinesesimp>成功使用碳酸盐的几率</Chinesesimp>
             <Finnish>Suurin karbonaatin onnistumismahdollisuus</Finnish>
             <Dutch>Maximale succeskans van carbonaat</Dutch>
+            <Hungarian>Maximális karbonát siker esélye</Hungarian>
         </Key>
         <Key ID="STR_KAT_Pharma_SETTING_coagulation_Factor_Limit">
             <English>Coagulation Factor Limit</English>
@@ -2489,6 +2656,7 @@
             <Chinese>凝血因子限值</Chinese>
             <Chinesesimp>凝血因子限值</Chinesesimp>
             <Dutch>Stollingsfactor limiet</Dutch>
+            <Hungarian>Alvadási faktor határérték</Hungarian>
         </Key>
         <Key ID="STR_KAT_Pharma_SETTING_coagulation_Factor_Limit_DESC">
             <English>The limit for how many coagulation factors can be present inside a units body at once. Meaning if you administer plasma this is the maximum attainable value.</English>
@@ -2501,6 +2669,7 @@
             <Chinese>一個單位體內同時存在多少凝血因子的限制。這意味著，如果你服用血漿，這是可達到的最大值。</Chinese>
             <Chinesesimp>一个单位体内同时存在多少凝血因子的限制。这意味着，如果你服用血浆，这是可达到的最大值。</Chinesesimp>
             <Dutch>Het limiet voor hoeveel stollingsfactoren er in een eenheids lichaam tegelijkertijd aanwezig kan zijn. Wat betekent dat dit de waarde is waar zelfs plasma geen extra factoren meer toevoegd</Dutch>
+            <Hungarian>Az a határérték, hogy hány véralvadási faktor lehet egyszerre jelen egy egységben. Ez azt jelenti, hogy plazma beadása esetén ez a maximálisan elérhető érték.</Hungarian>
         </Key>
         <Key ID="STR_KAT_Pharma_SETTING_ivCheckLimbDamage">
             <English>IV Check limb damage</English>
@@ -2518,6 +2687,7 @@
             <Chinesesimp>IV 检查肢体损伤</Chinesesimp>
             <Finnish>IV tarkista raajan vauriot</Finnish>
             <Dutch>IV checkt voor ledemaatschade</Dutch>
+            <Hungarian>IV Ellenőrizze a végtagok sérüléseit</Hungarian>
         </Key>
         <Key ID="STR_KAT_Pharma_SETTING_ivCheckLimbDamage_DESC">
             <English>Whether or not you can apply the IV to the too damaged limb. In default, this is disabled.</English>
@@ -2535,6 +2705,7 @@
             <Chinesesimp>是否可以将 IV 应用于受损的肢体。 默认情况下，这是禁用的。</Chinesesimp>
             <Finnish>Voitko laittaa IV vaurioituneeseen raajaan vai et. Tämä on oletuksena pois käytöstä.</Finnish>
             <Dutch>Of je wel of niet een IV kan plaatsen op een te beschadigd ledemaat. standaard staat dit uit.</Dutch>
+            <Hungarian>Hogy alkalmazható-e az infúzió a túlzottan sérült végtagra. Alapértelmezés szerint ez le van tiltva.</Hungarian>
         </Key>
         <Key ID="STR_KAT_Pharma_SETTING_keepScriptRunning_EACA">
             <English>Keep Stiching Until Out Of System</English>
@@ -2548,6 +2719,7 @@
             <Chinese>繼續攪拌，直到系統崩潰</Chinese>
             <Chinesesimp>继续搅拌，直到系统崩溃</Chinesesimp>
             <Dutch>Blijf hechten tot uit systeem</Dutch>
+            <Hungarian>Folytassa a varrást, amíg ki nem kerül a rendszerből.</Hungarian>
         </Key>
         <Key ID="STR_KAT_Pharma_SETTING_keepScriptRunning_EACA_DESC">
             <English>If enabled EACA will keep stichinng until it's out of your system\nIf disabled EACA will stop working after stiching the last bandaged wound it can find</English>
@@ -2561,6 +2733,7 @@
             <Chinese>如果啟用，EACA 將繼續縫合，直到它脫離您的系統\n如果禁用，EACA 在縫合它能找到的最後一個繃帶傷口後將停止工作</Chinese>
             <Chinesesimp>如果启用，EACA将继续缝合，直到它脱离您的系统\n如果禁用，EACA在缝合它能找到的最后一个绷带伤口后将停止工作</Chinesesimp>
             <Dutch>Als dit ingeschakeld is, EACA blijft hechten tot het uit je systeem is.\nEACA zal stoppen na de laatste hechtbare wond die hij kan vinden wanneer uitgeschakeld</Dutch>
+            <Hungarian>Ha engedélyezve van, az EACA addig folytatja a varrást, amíg az összes sebet el nem látja. Ha letiltva van, az EACA az utolsó megtalált seb varrása után leáll.</Hungarian>
         </Key>
         <Key ID="STR_KAT_Pharma_SETTING_keepScriptRunning_TXA">
             <English>Keep Bandaging Until Out Of System</English>
@@ -2573,6 +2746,7 @@
             <Chinese>保持包紮，直到脫離系統</Chinese>
             <Chinesesimp>保持包扎，直到脱离系统</Chinesesimp>
             <Dutch>Blijf verbinden tot uit het systeem</Dutch>
+            <Hungarian>Addig kötözzön be, amíg ki nem jön a szervezetből.</Hungarian>
         </Key>
         <Key ID="STR_KAT_Pharma_SETTING_keepScriptRunning_TXA_DESC">
             <English>If enabled TXA will keep bandaging until it's out of your system\nIf disabled TXA will stop working after bandaging the last wound it can find</English>
@@ -2585,6 +2759,7 @@
             <Chinese>如果啟用，血栓素(TXA)將繼續包紮，直到它離開您的系統\n如果禁用，血栓素(TXA)在包紮最後一個傷口後將停止工作</Chinese>
             <Chinesesimp>如果启用，血栓素(TXA)将继续包扎，直到它离开您的系统\n如果禁用，血栓素(TXA)在包扎最后一个伤口后将停止工作</Chinesesimp>
             <Dutch>Wanneer ingeschakeld: TXA blijft verbinden tot het uit jouw systeem is.\nWanneer uitgeschakeld: TXA Stopt met werken wanneer alle wonden gedicht zijn.</Dutch>
+            <Hungarian>Ha engedélyezve van, a TXA addig folytatja a kötözést, amíg az összes sebet ellátja a rendszerben. Ha letiltva van, a TXA az utolsó seb kötözése után leáll.</Hungarian>
         </Key>
         <Key ID="STR_KAT_Pharma_SETTING_medLvl_Penthrox">
             <English>Medical level required for Penthrox Inhaler</English>
@@ -2601,6 +2776,7 @@
             <Chinesesimp>Penthrox吸入器所需的医疗水平</Chinesesimp>
             <Finnish>Lääketieteellinen koulutustaso vaatii penthrox-inhalaattorin</Finnish>
             <Dutch>Medisch niveau benodigd voor het gebruik van Penthrox inhalators</Dutch>
+            <Hungarian>A Penthrox inhalátor használatához szükséges képzettségi szint</Hungarian>
         </Key>
         <Key ID="STR_KAT_Pharma_SETTING_reorientationChance">
             <English>Maximum Reorientation Success Chance</English>
@@ -2618,6 +2794,7 @@
             <Chinesesimp>成功进行恢复体态的几率</Chinesesimp>
             <Finnish>Suurin mahdollisuus uudelleenorientoitumiseen</Finnish>
             <Dutch>Maximale heroriëntatie succeskans</Dutch>
+            <Hungarian>Maximális újraorientálási siker esélye</Hungarian>
         </Key>
         <Key ID="STR_KAT_Pharma_SETTING_staminaMedication">
             <English>Medication Modifies Stamina</English>
@@ -2634,6 +2811,7 @@
             <Chinesesimp>药物可以改善体力</Chinesesimp>
             <Finnish>Lääkitys muuttaa kestävyyttä</Finnish>
             <Dutch>Medicatie heeft invloed op uithoudingsvermogen</Dutch>
+            <Hungarian>A gyógyszerek módosítják az állóképességet</Hungarian>
         </Key>
         <Key ID="STR_KAT_Pharma_SETTING_staminaMedication_DESC">
             <English>Allow certain medications to modify (vanilla/advanced fatigue) stamina as a side effect</English>
@@ -2650,6 +2828,7 @@
             <Chinesesimp>允许某些药物改变（香草/重度疲劳）耐力作为副作用</Chinesesimp>
             <Finnish>Salli tiettyjen lääkkeiden muuttaa kestävyyttä (vanilja/edistynyt väsymys) sivuvaikutuksena</Finnish>
             <Dutch>Bepaald of sommige medicijnen het uithoudingsvermogen (vanilla/geadvanceerde uitputting) beïnvloeden als een bijwerking</Dutch>
+            <Hungarian>Lehetővé teszi bizonyos gyógyszereknek, hogy mellékhatásként módosítsák az állóképességet (vanilla/advanced fatigue)</Hungarian>
         </Key>
         <Key ID="STR_KAT_Pharma_SETTING_treatmentTime_Penthrox">
             <English>Treatment time for Penthrox Inhaler</English>
@@ -2666,6 +2845,7 @@
             <Chinesesimp>Penthrox吸入器的治疗时间</Chinesesimp>
             <Finnish>Penthrox-inhalaattorin hoitoaika</Finnish>
             <Dutch>Behandeltijd van Penthrox inhalators</Dutch>
+            <Hungarian>A Penthrox inhalátor kezelési ideje</Hungarian>
         </Key>
         <Key ID="STR_KAT_Pharma_Saline_Flush">
             <English>Saline Flush</English>
@@ -2683,6 +2863,7 @@
             <Chinesesimp>用生理盐水冲洗</Chinesesimp>
             <Finnish>suolainen flunssa</Finnish>
             <Dutch>Salinespoeling</Dutch>
+            <Hungarian>Sóoldatos öblítés</Hungarian>
         </Key>
         <Key ID="STR_KAT_Pharma_SubCategory_Amiodarone">
             <English>Amiodarone Settings</English>
@@ -2700,6 +2881,7 @@
             <Chinesesimp>胺碘酮设置</Chinesesimp>
             <Finnish>Amiodaronin asetukset</Finnish>
             <Dutch>Amiodaron instellingen</Dutch>
+            <Hungarian>Amiodaron beállítások</Hungarian>
         </Key>
         <Key ID="STR_KAT_Pharma_SubCategory_ApplyIO">
             <English>IO Settings</English>
@@ -2717,6 +2899,7 @@
             <Chinesesimp>IO设置</Chinesesimp>
             <Finnish>IO-asetukset</Finnish>
             <Dutch>IO instellingen</Dutch>
+            <Hungarian>IO beállítások</Hungarian>
         </Key>
         <Key ID="STR_KAT_Pharma_SubCategory_ApplyIV">
             <English>IV Settings</English>
@@ -2734,6 +2917,7 @@
             <Chinesesimp>IV设置</Chinesesimp>
             <Finnish>IV asetukset</Finnish>
             <Dutch>IV instellingen</Dutch>
+            <Hungarian>IV beállítások</Hungarian>
         </Key>
         <Key ID="STR_KAT_Pharma_SubCategory_Atropine">
             <English>Atropine Settings</English>
@@ -2751,6 +2935,7 @@
             <Chinesesimp>阿托品设置</Chinesesimp>
             <Finnish>Atropiiniasetukset</Finnish>
             <Dutch>Atropine instellingen</Dutch>
+            <Hungarian>Atropin beállítások</Hungarian>
         </Key>
         <Key ID="STR_KAT_Pharma_SubCategory_Basic">
             <English>Basic Settings</English>
@@ -2768,6 +2953,7 @@
             <Chinesesimp>基础设置</Chinesesimp>
             <Finnish>Perus asetukset</Finnish>
             <Dutch>Basis instellingen</Dutch>
+            <Hungarian>Alapbeállítások</Hungarian>
         </Key>
         <Key ID="STR_KAT_Pharma_SubCategory_CWMP">
             <English>CWMP Settings</English>
@@ -2776,6 +2962,7 @@
             <German>CWMP Einstellungen</German>
             <Japanese>戦闘傷病治療薬(CWMP)設定</Japanese>
             <Dutch>CWMP Instellingen</Dutch>
+            <Hungarian>CWMP beállítások</Hungarian>
         </Key>
         <Key ID="STR_KAT_Pharma_SubCategory_Caffeine">
             <English>Caffeine Settings</English>
@@ -2793,6 +2980,7 @@
             <Chinesesimp>咖啡因设置</Chinesesimp>
             <Finnish>Kofeiiniasetukset</Finnish>
             <Dutch>Caffeïne instellingen</Dutch>
+            <Hungarian>Koffein beállítások</Hungarian>
         </Key>
         <Key ID="STR_KAT_Pharma_SubCategory_Carbonate">
             <English>Carbonate Settings</English>
@@ -2810,6 +2998,7 @@
             <Chinesesimp>碳酸盐设置</Chinesesimp>
             <Finnish>Karbonaattiasetukset</Finnish>
             <Dutch>Carbonaat instellingen</Dutch>
+            <Hungarian>Karbonát beállítások</Hungarian>
         </Key>
         <Key ID="STR_KAT_Pharma_SubCategory_Coag_Sense">
             <English>Coag-Sense Settings</English>
@@ -2823,6 +3012,7 @@
             <Chinese>Coag-Sense 設定</Chinese>
             <Chinesesimp>Coag-Sense设置</Chinesesimp>
             <Dutch>Coag-Sense instellingen</Dutch>
+            <Hungarian>Coag-Sense beállítások</Hungarian>
         </Key>
         <Key ID="STR_KAT_Pharma_SubCategory_Coagulation">
             <English>Coagulation Settings</English>
@@ -2836,6 +3026,7 @@
             <Chinese>凝固設定</Chinese>
             <Chinesesimp>凝固设置</Chinesesimp>
             <Dutch>Coagulatie instellingen</Dutch>
+            <Hungarian>Alvadási beállítások</Hungarian>
         </Key>
         <Key ID="STR_KAT_Pharma_SubCategory_EACA">
             <English>EACA Settings</English>
@@ -2853,6 +3044,7 @@
             <Chinesesimp>EACA设置</Chinesesimp>
             <Finnish>EACA-asetukset</Finnish>
             <Dutch>EACA instellingen</Dutch>
+            <Hungarian>EACA beállítások</Hungarian>
         </Key>
         <Key ID="STR_KAT_Pharma_SubCategory_EpinephrineIV">
             <English>IV Epinephrine Settings</English>
@@ -2865,6 +3057,7 @@
             <Chinese>四腎上腺素設定</Chinese>
             <Chinesesimp>四肾上腺素设置</Chinesesimp>
             <Dutch>IV Adrenaline Instellingen</Dutch>
+            <Hungarian>IV epinefrin beállítások</Hungarian>
         </Key>
         <Key ID="STR_KAT_Pharma_SubCategory_Etomidate">
             <English>Etomidate Settings</English>
@@ -2882,6 +3075,7 @@
             <Chinesesimp>依托咪酯设置</Chinesesimp>
             <Finnish>Etomidatin asetukset</Finnish>
             <Dutch>Etomidaat instellingen</Dutch>
+            <Hungarian>Etomidát beállítások</Hungarian>
         </Key>
         <Key ID="STR_KAT_Pharma_SubCategory_Fentanyl">
             <English>Fentanyl Settings</English>
@@ -2899,6 +3093,7 @@
             <Chinesesimp>芬太尼设置</Chinesesimp>
             <Finnish>Fentanyyliasetukset</Finnish>
             <Dutch>Fentanyl instellingen</Dutch>
+            <Hungarian>Fentanil beállítások</Hungarian>
         </Key>
         <Key ID="STR_KAT_Pharma_SubCategory_Flumazenil">
             <English>Flumazenil Settings</English>
@@ -2916,6 +3111,7 @@
             <Chinesesimp>氟马西尼设置</Chinesesimp>
             <Finnish>Flumazenilin asetukset</Finnish>
             <Dutch>Flumazenil instellingen</Dutch>
+            <Hungarian>Flumazenil beállítások</Hungarian>
         </Key>
         <Key ID="STR_KAT_Pharma_SubCategory_Ketamine">
             <English>Ketamine Settings</English>
@@ -2933,6 +3129,7 @@
             <Chinesesimp>氯胺酮设置</Chinesesimp>
             <Finnish>Ketamiinin asetukset</Finnish>
             <Dutch>Ketamine instellingen</Dutch>
+            <Hungarian>Ketamin beállítások</Hungarian>
         </Key>
         <Key ID="STR_KAT_Pharma_SubCategory_Lidocaine">
             <English>Lidocaine Settings</English>
@@ -2950,6 +3147,7 @@
             <Chinesesimp>利多卡因设置</Chinesesimp>
             <Finnish>Lidokaiiniasetukset</Finnish>
             <Dutch>Lidocaïne instellingen</Dutch>
+            <Hungarian>Lidokain beállítások</Hungarian>
         </Key>
         <Key ID="STR_KAT_Pharma_SubCategory_Lorazepam">
             <English>Lorazepam Settings</English>
@@ -2967,6 +3165,7 @@
             <Chinesesimp>劳拉西泮设置</Chinesesimp>
             <Finnish>Loratsepamin asetukset</Finnish>
             <Dutch>Lorazepam instellingen</Dutch>
+            <Hungarian>Lorazepam beállítások</Hungarian>
         </Key>
         <Key ID="STR_KAT_Pharma_SubCategory_Nalbuphine">
             <English>Nalbuphine Settings</English>
@@ -2984,6 +3183,7 @@
             <Chinesesimp>纳布啡设置</Chinesesimp>
             <Finnish>Nalbuphine-asetukset</Finnish>
             <Dutch>Nalbufine instellingen</Dutch>
+            <Hungarian>Nalbufin beállítások</Hungarian>
         </Key>
         <Key ID="STR_KAT_Pharma_SubCategory_Naloxone">
             <English>Naloxone Settings</English>
@@ -3001,6 +3201,7 @@
             <Chinesesimp>纳洛酮设置</Chinesesimp>
             <Finnish>Naloksonin asetukset</Finnish>
             <Dutch>Naloxone instellingen</Dutch>
+            <Hungarian>Naloxon beállítások</Hungarian>
         </Key>
         <Key ID="STR_KAT_Pharma_SubCategory_Nitroglycerin">
             <English>Nitroglycerin Settings</English>
@@ -3018,6 +3219,7 @@
             <Chinesesimp>硝酸甘油设置</Chinesesimp>
             <Finnish>Nitroglyseriiniasetukset</Finnish>
             <Dutch>Nitroglycerine instellingen</Dutch>
+            <Hungarian>Glicerin-trinitrát beállítások</Hungarian>
         </Key>
         <Key ID="STR_KAT_Pharma_SubCategory_Norepinephrine">
             <English>Norepinephrine Settings</English>
@@ -3035,6 +3237,7 @@
             <Chinesesimp>去甲肾上腺素设置</Chinesesimp>
             <Finnish>Norepinefriinin asetukset</Finnish>
             <Dutch>Noradrenaline instellingen</Dutch>
+            <Hungarian>Noradrenalin beállítások</Hungarian>
         </Key>
         <Key ID="STR_KAT_Pharma_SubCategory_Penthrox">
             <English>Penthrox Inhaler Settings</English>
@@ -3051,6 +3254,7 @@
             <Chinesesimp>Penthrox吸入器设置</Chinesesimp>
             <Finnish>Penthrox-inhalaattorin asetukset</Finnish>
             <Dutch>Penthrox inhalator instellingen</Dutch>
+            <Hungarian>Penthrox inhalátor beállítások</Hungarian>
         </Key>
         <Key ID="STR_KAT_Pharma_SubCategory_Pervitin">
             <English>Pervitin Settings</English>
@@ -3068,6 +3272,7 @@
             <Chinesesimp>柏飞汀(Pervitin)设置</Chinesesimp>
             <Finnish>Pervitiinin asetukset</Finnish>
             <Dutch>Pervitin instellingen</Dutch>
+            <Hungarian>Pervitin beállítások</Hungarian>
         </Key>
         <Key ID="STR_KAT_Pharma_SubCategory_Phenylephrine">
             <English>Phenylephrine Settings</English>
@@ -3085,6 +3290,7 @@
             <Chinesesimp>苯肾上腺素设置</Chinesesimp>
             <Finnish>Fenyyliefriinin asetukset</Finnish>
             <Dutch>Fenylefrine instellingen</Dutch>
+            <Hungarian>Fenilefrin beállítások</Hungarian>
         </Key>
         <Key ID="STR_KAT_Pharma_SubCategory_Reorientation">
             <English>Reorientation Settings</English>
@@ -3102,6 +3308,7 @@
             <Chinesesimp>刺激患者设置</Chinesesimp>
             <Finnish>Uudelleensuuntausasetukset</Finnish>
             <Dutch>Heroriëntatie instellingen</Dutch>
+            <Hungarian>Újraorientációs beállítások</Hungarian>
         </Key>
         <Key ID="STR_KAT_Pharma_SubCategory_TXA">
             <English>TXA Settings</English>
@@ -3119,6 +3326,7 @@
             <Chinesesimp>血栓素设置</Chinesesimp>
             <Finnish>TXA-asetukset</Finnish>
             <Dutch>TXA instellingen</Dutch>
+            <Hungarian>TXA beállítások</Hungarian>
         </Key>
         <Key ID="STR_KAT_Pharma_TXA_Box_Display">
             <English>TXA</English>
@@ -3137,6 +3345,7 @@
             <Turkish>TXA</Turkish>
             <Finnish>TXA</Finnish>
             <Dutch>TXA</Dutch>
+            <Hungarian>Tranexámsav (TXA)</Hungarian>
         </Key>
         <Key ID="STR_KAT_Pharma_TXA_DescShort">
             <English>Encourages clot formation</English>
@@ -3155,6 +3364,7 @@
             <Turkish>Pıhtı oluşumunu teşvik eder</Turkish>
             <Finnish>Edistää verihyytymien muodostumista</Finnish>
             <Dutch>Bevorderd bloedstolling</Dutch>
+            <Hungarian>A véralvadás kialakulását elősegíti</Hungarian>
         </Key>
         <Key ID="STR_KAT_Pharma_Take_Amiodarone">
             <English>Push Amiodarone</English>
@@ -3173,6 +3383,7 @@
             <Turkish>Amiodaron'u itin</Turkish>
             <Finnish>Työnnä amiodaria</Finnish>
             <Dutch>Injecteer Amiodaron</Dutch>
+            <Hungarian>Amiodaron beadása</Hungarian>
         </Key>
         <Key ID="STR_KAT_Pharma_Take_Atropine">
             <English>Inject Atropine</English>
@@ -3191,6 +3402,7 @@
             <Turkish>Atropin itin</Turkish>
             <Finnish>Työnnä atropiinia</Finnish>
             <Dutch>Injecteer Atropine</Dutch>
+            <Hungarian>Atropin befecskendezése</Hungarian>
         </Key>
         <Key ID="STR_KAT_Pharma_Take_Caffeine">
             <English>Take Caffeine</English>
@@ -3208,6 +3420,7 @@
             <Chinesesimp>服用 咖啡因</Chinesesimp>
             <Finnish>Ota kofeiinia</Finnish>
             <Dutch>Neem Caffeïne</Dutch>
+            <Hungarian>Koffein beszedése</Hungarian>
         </Key>
         <Key ID="STR_KAT_Pharma_Take_Carbonate">
             <English>Use Carbonate</English>
@@ -3226,6 +3439,7 @@
             <Turkish>Karbonat kullanın</Turkish>
             <Finnish>Käytä karbonaattia</Finnish>
             <Dutch>Gebruik carbonaat</Dutch>
+            <Hungarian>Karbonát használata</Hungarian>
         </Key>
         <Key ID="STR_KAT_Pharma_Take_EACA">
             <English>Push EACA</English>
@@ -3243,6 +3457,7 @@
             <Chinesesimp>推注EACA</Chinesesimp>
             <Finnish>Paina EACA</Finnish>
             <Dutch>Injecteer EACA</Dutch>
+            <Hungarian>EACA beadása</Hungarian>
         </Key>
         <Key ID="STR_KAT_Pharma_Take_Epi">
             <English>Push Epinephrine</English>
@@ -3255,6 +3470,7 @@
             <Chinese>注射腎上腺素</Chinese>
             <Chinesesimp>推肾上腺素</Chinesesimp>
             <Dutch>Injecteer IV Adrenaline</Dutch>
+            <Hungarian>Epinefrin beadása</Hungarian>
         </Key>
         <Key ID="STR_KAT_Pharma_Take_Fentanyl">
             <English>Push Fentanyl</English>
@@ -3272,6 +3488,7 @@
             <Chinesesimp>推注芬太尼</Chinesesimp>
             <Finnish>Työnnä fentanyyliä</Finnish>
             <Dutch>Injecteer Fentanyl</Dutch>
+            <Hungarian>Fentanil beadása</Hungarian>
         </Key>
         <Key ID="STR_KAT_Pharma_Take_Ketamine">
             <English>Push Ketamine</English>
@@ -3289,6 +3506,7 @@
             <Chinesesimp>推注氯胺酮</Chinesesimp>
             <Finnish>Paina ketamiinia</Finnish>
             <Dutch>Injecteer Ketamine</Dutch>
+            <Hungarian>Ketamin beadása</Hungarian>
         </Key>
         <Key ID="STR_KAT_Pharma_Take_Lidocaine">
             <English>Push Lidocaine</English>
@@ -3307,6 +3525,7 @@
             <Turkish>Push Lidokain</Turkish>
             <Finnish>Paina lidokaiinia</Finnish>
             <Dutch>Injecteer Lidocaïne</Dutch>
+            <Hungarian>Lidokain beadása</Hungarian>
         </Key>
         <Key ID="STR_KAT_Pharma_Take_Nalbuphine">
             <English>Push Nalbuphine</English>
@@ -3324,6 +3543,7 @@
             <Chinesesimp>推注纳布啡</Chinesesimp>
             <Finnish>Paina nalbufiinia</Finnish>
             <Dutch>Injecteer Nalbufine</Dutch>
+            <Hungarian>Nalbufin beadása</Hungarian>
         </Key>
         <Key ID="STR_KAT_Pharma_Take_Naloxone">
             <English>Use Naloxone</English>
@@ -3342,6 +3562,7 @@
             <Turkish>Nalokson kullanın</Turkish>
             <Finnish>Käytä naloksonia</Finnish>
             <Dutch>Gebruik Naloxone</Dutch>
+            <Hungarian>Naloxon használata</Hungarian>
         </Key>
         <Key ID="STR_KAT_Pharma_Take_Nitro">
             <English>Push Nitroglycerin</English>
@@ -3360,6 +3581,7 @@
             <Turkish>Nitrogliserin itin</Turkish>
             <Finnish>Paina nitroglyseriiniä</Finnish>
             <Dutch>Injecteer Nitroglycerine</Dutch>
+            <Hungarian>Glicerin-trinitrát beadása</Hungarian>
         </Key>
         <Key ID="STR_KAT_Pharma_Take_Norep">
             <English>Push Norepinephrine</English>
@@ -3378,6 +3600,7 @@
             <Turkish>Norepinefrin itin</Turkish>
             <Finnish>Työnnä norepinefriiniä</Finnish>
             <Dutch>Injecteer Noradrenaline</Dutch>
+            <Hungarian>Noradrenalin beadása</Hungarian>
         </Key>
         <Key ID="STR_KAT_Pharma_Take_Pervitin">
             <English>Take Pervitin</English>
@@ -3395,6 +3618,7 @@
             <Chinesesimp>使用 柏飞丁</Chinesesimp>
             <Finnish>Ota pervitiini</Finnish>
             <Dutch>Neem Pervitin</Dutch>
+            <Hungarian>Pervitin beszedése</Hungarian>
         </Key>
         <Key ID="STR_KAT_Pharma_Take_Phenyl">
             <English>Push Phenylephrine</English>
@@ -3413,6 +3637,7 @@
             <Turkish>Fenilefrin itin</Turkish>
             <Finnish>Työnnä fenyyliefriiniä</Finnish>
             <Dutch>Injecteer Fenylefrine (IV)</Dutch>
+            <Hungarian>Fenilefrin beadása</Hungarian>
         </Key>
         <Key ID="STR_KAT_Pharma_Take_Phenyl_Auto">
             <English>Inject Phenylephrine</English>
@@ -3430,6 +3655,7 @@
             <Chinesesimp>推注苯肾上腺素</Chinesesimp>
             <Turkish>Fenilefrin itin</Turkish>
             <Dutch>Injecteer Fenylefrine</Dutch>
+            <Hungarian>Fenilefrin befecskendezése</Hungarian>
         </Key>
         <Key ID="STR_KAT_Pharma_Take_Reorient">
             <English>Reorient Patient</English>
@@ -3447,6 +3673,7 @@
             <Chinesesimp>刺激患者</Chinesesimp>
             <Finnish>Suuntaa potilas uudelleen</Finnish>
             <Dutch>Heroriënteer patiënt</Dutch>
+            <Hungarian>A beteg újraorientálása</Hungarian>
         </Key>
         <Key ID="STR_KAT_Pharma_Take_TXA">
             <English>Push TXA</English>
@@ -3465,6 +3692,7 @@
             <Turkish>TXA'yı itin</Turkish>
             <Finnish>Paina TXA</Finnish>
             <Dutch>Injecteer TXA</Dutch>
+            <Hungarian>TXA beadása</Hungarian>
         </Key>
         <Key ID="STR_KAT_Pharma_Use_Penthrox">
             <English>Use Penthrox Inhaler</English>
@@ -3481,6 +3709,7 @@
             <Chinesesimp>使用“绿哨”吸入式止痛药物</Chinesesimp>
             <Finnish>Käytä penthrox-inhalaattoria</Finnish>
             <Dutch>Gebruik Penthrox inhalator</Dutch>
+            <Hungarian>Penthrox inhalátor használata</Hungarian>
         </Key>
         <Key ID="STR_KAT_Pharma_Using">
             <English>Using</English>
@@ -3499,6 +3728,7 @@
             <Turkish>Kullanılıyor</Turkish>
             <Finnish>Käyttämällä</Finnish>
             <Dutch>Wordt gebruikt</Dutch>
+            <Hungarian>Használata folyamatban</Hungarian>
         </Key>
         <Key ID="STR_KAT_Pharma_body">
             <English>Torso</English>
@@ -3516,6 +3746,7 @@
             <Chinesesimp>躯干</Chinesesimp>
             <Turkish>Gövde</Turkish>
             <Dutch>Torso</Dutch>
+            <Hungarian>Törzs</Hungarian>
         </Key>
         <Key ID="STR_KAT_Pharma_cba_name">
             <English>KAT - ADV Medical: Pharmacy</English>
@@ -3524,6 +3755,7 @@
             <German>KAT - ADV Medical: Medikamente</German>
             <Japanese>KAM - 薬学 (Pharmacy)</Japanese>
             <Dutch>KAT - ADV Medical: Farmaceutica</Dutch>
+            <Hungarian>KAT - ADV Medical: Gyógyszerészet</Hungarian>
         </Key>
         <Key ID="STR_KAT_Pharma_coagulation_Bandaged">
             <English>Blood clotting temporarily closed a wound on %1</English>
@@ -3537,6 +3769,7 @@
             <Chinese>凝血暫時閉合了 %1 的傷口</Chinese>
             <Chinesesimp>凝血暂时闭合了%1的伤口</Chinesesimp>
             <Dutch>Wondstolling heeft een wond op %1 tijdelijk gedicht</Dutch>
+            <Hungarian>A vér alvadása ideiglenesen bezárta a sebet %1--nek / -nak</Hungarian>
         </Key>
         <Key ID="STR_KAT_Pharma_coagulation_Bandaged_TXA">
             <English>Blood clotting permanently closed a wound on %1</English>
@@ -3550,6 +3783,7 @@
             <Chinese>凝血永久閉合了 %1 的傷口</Chinese>
             <Chinesesimp>凝血永久闭合了%1的伤口</Chinesesimp>
             <Dutch>Wondstolling heeft een wond op %1 permanent gedicht</Dutch>
+            <Hungarian>A vér alvadása véglegesen bezárta a sebet %1-nek / -nak</Hungarian>
         </Key>
         <Key ID="STR_KAT_Pharma_dialysis_log">
             <English>%1 performed dialysis</English>
@@ -3567,6 +3801,7 @@
             <Chinesesimp>%1 进行了透析</Chinesesimp>
             <Finnish>%1 suoritettu dialyysi</Finnish>
             <Dutch>%1 heeft een dialyse uitgevoerd</Dutch>
+            <Hungarian>%1 dialízist végzett</Hungarian>
         </Key>
         <Key ID="STR_KAT_Pharma_flush_log">
             <English>%1 performed a saline flush</English>
@@ -3583,6 +3818,7 @@
             <Chinesesimp>%1 进行了盐水冲洗</Chinesesimp>
             <Finnish>%1 suoritti suolaliuoksen huuhtelun</Finnish>
             <Dutch>%1 voerde een salinespoeling uit</Dutch>
+            <Hungarian>%1 sóoldattal öblített</Hungarian>
         </Key>
         <Key ID="STR_KAT_Pharma_head">
             <English>Head</English>
@@ -3600,6 +3836,7 @@
             <Chinesesimp>头部</Chinesesimp>
             <Turkish>Kafa</Turkish>
             <Dutch>Hoofd</Dutch>
+            <Hungarian>Fej</Hungarian>
         </Key>
         <Key ID="STR_KAT_Pharma_inject_log">
             <English>%1 injected %2</English>
@@ -3618,6 +3855,7 @@
             <Turkish>% 1,% 2 eklendi</Turkish>
             <Finnish>%1 pistetään %2</Finnish>
             <Dutch>%1 injecteerde %2</Dutch>
+            <Hungarian>%1 befecskendezett %2-t</Hungarian>
         </Key>
         <Key ID="STR_KAT_Pharma_iv_log">
             <English>%1 established a %2</English>
@@ -3636,6 +3874,7 @@
             <Turkish>% 1,% 2 eklendi</Turkish>
             <Finnish>%1 perusti %2</Finnish>
             <Dutch>%1 heeft een %2 aangelegd</Dutch>
+            <Hungarian>%1 felhelyezett egy %2-t</Hungarian>
         </Key>
         <Key ID="STR_KAT_Pharma_leftarm">
             <English>Left Arm</English>
@@ -3653,6 +3892,7 @@
             <Chinesesimp>左臂</Chinesesimp>
             <Turkish>Sol Kol</Turkish>
             <Dutch>Linkerarm</Dutch>
+            <Hungarian>Bal kar</Hungarian>
         </Key>
         <Key ID="STR_KAT_Pharma_leftleg">
             <English>Left Leg</English>
@@ -3670,6 +3910,7 @@
             <Chinesesimp>左腿</Chinesesimp>
             <Turkish>Sol Bacak</Turkish>
             <Dutch>Linkerbeen</Dutch>
+            <Hungarian>Bal láb</Hungarian>
         </Key>
         <Key ID="STR_KAT_Pharma_medLvl_Amiodarone">
             <English>Medical level required for Amiodarone</English>
@@ -3687,6 +3928,7 @@
             <Chinesesimp>胺碘酮所需的医疗水平</Chinesesimp>
             <Finnish>Amiodaronille vaadittu lääketieteellinen koulutustaso</Finnish>
             <Dutch>Medisch niveau benodigd voor het gebruik van Amiodaron</Dutch>
+            <Hungarian>Az amiodaron alkalmazásához szükséges képzettségi szint</Hungarian>
         </Key>
         <Key ID="STR_KAT_Pharma_medLvl_ApplyIO">
             <English>Allow applying IO</English>
@@ -3704,6 +3946,7 @@
             <Chinesesimp>允许使用IO</Chinesesimp>
             <Finnish>Salli IO:n käyttö</Finnish>
             <Dutch>IO plaatsing niveau</Dutch>
+            <Hungarian>IO alkalmazásának engedélyezése</Hungarian>
         </Key>
         <Key ID="STR_KAT_Pharma_medLvl_ApplyIO_Desc">
             <English>Changes what medical level is required to set IOs</English>
@@ -3721,6 +3964,7 @@
             <Chinesesimp>更改设置 IO 所需的医疗级别</Chinesesimp>
             <Finnish>Muuttaa IO:iden asettamiseen vaadittavaa lääketieteellistä tasoa</Finnish>
             <Dutch>Bepaald welk medisch niveau benodigd is om IO's aan te kunnen leggen</Dutch>
+            <Hungarian>Megváltoztatja, hogy milyen képzettségi szint szükséges az IO-k felhelyezéséhez</Hungarian>
         </Key>
         <Key ID="STR_KAT_Pharma_medLvl_ApplyIV">
             <English>Allow applying IV</English>
@@ -3738,6 +3982,7 @@
             <Chinesesimp>允许使用IV</Chinesesimp>
             <Finnish>Salli hakeminen IV</Finnish>
             <Dutch>IV plaatsing niveau</Dutch>
+            <Hungarian>IV alkalmazásának engedélyezése</Hungarian>
         </Key>
         <Key ID="STR_KAT_Pharma_medLvl_ApplyIV_Desc">
             <English>Changes what medical level is required to set IVs</English>
@@ -3756,6 +4001,7 @@
             <Turkish>IV'leri'ları ayarlamak için gereken tıbbi düzeyi değiştirir</Turkish>
             <Finnish>Muuttaa, mitä lääketieteen koulutustasoa tarvitaan IV:n lisäämiseen</Finnish>
             <Dutch>Bepaald welk medisch niveau benodigd is om IV's aan te kunnen leggen</Dutch>
+            <Hungarian>Megváltoztatja, hogy milyen képzettségi szint szükséges az intravénás infúziók felhelyezéséhez</Hungarian>
         </Key>
         <Key ID="STR_KAT_Pharma_medLvl_Atropine">
             <English>Medical level required for Atropine</English>
@@ -3773,6 +4019,7 @@
             <Chinesesimp>阿托品所需的医疗水平</Chinesesimp>
             <Finnish>Atropiinia varten vaadittava lääketieteellinen koulutustaso</Finnish>
             <Dutch>Medisch niveau benodigd voor het gebruik van Atropine</Dutch>
+            <Hungarian>Az atropin alkalmazásához szükséges képzettségi szint</Hungarian>
         </Key>
         <Key ID="STR_KAT_Pharma_medLvl_CWMP">
             <English>Allow using CWMP</English>
@@ -3781,6 +4028,7 @@
             <German>Erlaube die Verwendung von CWMP</German>
             <Japanese>戦闘傷病治療薬(CWMP)の許可</Japanese>
             <Dutch>Sta gebruik van CWMP toe</Dutch>
+            <Hungarian>CWMP használatának engedélyezése</Hungarian>
         </Key>
         <Key ID="STR_KAT_Pharma_medLvl_Caffeine">
             <English>Allow using Caffeine</English>
@@ -3789,6 +4037,7 @@
             <German>Erlaube die Verwendung von Koffein</German>
             <Japanese>カフェインの許可</Japanese>
             <Dutch>Sta gebruik van caffeine toe</Dutch>
+            <Hungarian>Koffein használatának engedélyezése</Hungarian>
         </Key>
         <Key ID="STR_KAT_Pharma_medLvl_Carbonate">
             <English>Allow using Carbonate</English>
@@ -3806,6 +4055,7 @@
             <Chinesesimp>允许使用碳酸盐</Chinesesimp>
             <Finnish>Salli karbonaatin käyttö</Finnish>
             <Dutch>Sta gebruik van carbonaat toe</Dutch>
+            <Hungarian>Karbonát használatának engedélyezése</Hungarian>
         </Key>
         <Key ID="STR_KAT_Pharma_medLvl_EACA">
             <English>Medical level required for EACA</English>
@@ -3823,6 +4073,7 @@
             <Chinesesimp>EACA所需的医疗水平</Chinesesimp>
             <Finnish>Lääketieteellinen koulutustaso vaaditaan EACA:lle</Finnish>
             <Dutch>Medisch niveau benodigd voor het gebruik van EACA</Dutch>
+            <Hungarian>Az EACA alkalmazásához szükséges képzettségi szint</Hungarian>
         </Key>
         <Key ID="STR_KAT_Pharma_medLvl_EpinephrineIV">
             <English>Medical level required for IV Epinephrine</English>
@@ -3835,6 +4086,7 @@
             <Chinese>靜脈注射腎上腺素需要的醫療等級</Chinese>
             <Chinesesimp>静脉注射肾上腺素所需的医疗水平</Chinesesimp>
             <Dutch>Vereist medisch niveau voor gebruik van IV Adrenaline</Dutch>
+            <Hungarian>Az intravénás epinefrin alkalmazásához szükséges képzettségi szint</Hungarian>
         </Key>
         <Key ID="STR_KAT_Pharma_medLvl_Etomidate">
             <English>Medical level required for Etomidate</English>
@@ -3852,6 +4104,7 @@
             <Chinesesimp>依托咪酯所需的医疗水平</Chinesesimp>
             <Finnish>Etomidaatille vaadittava lääketieteellisen hoidon taso</Finnish>
             <Dutch>Medisch niveau benodigd voor het gebruik van Etomidaat</Dutch>
+            <Hungarian>Az etomidát alkalmazásához szükséges képzettségi szint</Hungarian>
         </Key>
         <Key ID="STR_KAT_Pharma_medLvl_Fentanyl">
             <English>Medical level required for Fentanyl</English>
@@ -3869,6 +4122,7 @@
             <Chinesesimp>芬太尼所需的医疗水平</Chinesesimp>
             <Finnish>Fentanyylille vaadittu lääketieteellinen koulutustaso</Finnish>
             <Dutch>Medisch niveau benodigd voor het gebruik van Fentanyl</Dutch>
+            <Hungarian>Az etomidát alkalmazásához szükséges képzettségi szint</Hungarian>
         </Key>
         <Key ID="STR_KAT_Pharma_medLvl_Flumazenil">
             <English>Medical level required for Flumazenil</English>
@@ -3886,6 +4140,7 @@
             <Chinesesimp>氟马西尼所需的医疗水平</Chinesesimp>
             <Finnish>Flumatseniilin edellyttämä lääketieteellinen koulutustaso</Finnish>
             <Dutch>Medisch niveau benodigd voor het gebruik van Flumazenil</Dutch>
+            <Hungarian>Az flumazenil alkalmazásához szükséges képzettségi szint</Hungarian>
         </Key>
         <Key ID="STR_KAT_Pharma_medLvl_Ketamine">
             <English>Medical level required for Ketamine</English>
@@ -3903,6 +4158,7 @@
             <Chinesesimp>氯胺酮所需的医疗水平</Chinesesimp>
             <Finnish>Lääketieteellinen koulutustaso vaaditaan ketamiinille</Finnish>
             <Dutch>Medisch niveau benodigd voor het gebruik van Ketamine</Dutch>
+            <Hungarian>Az ketamin alkalmazásához szükséges képzettségi szint</Hungarian>
         </Key>
         <Key ID="STR_KAT_Pharma_medLvl_Lidocaine">
             <English>Medical level required for Lidocaine</English>
@@ -3920,6 +4176,7 @@
             <Chinesesimp>利多卡因所需的医疗水平</Chinesesimp>
             <Finnish>Lääketieteellinen koulutustaso vaaditaan lidokaiinin käyttöön</Finnish>
             <Dutch>Medisch niveau benodigd voor het gebruik van Lidocaïne</Dutch>
+            <Hungarian>Az lidokain alkalmazásához szükséges képzettségi szint</Hungarian>
         </Key>
         <Key ID="STR_KAT_Pharma_medLvl_Lorazepam">
             <English>Medical level required for Lorazepam</English>
@@ -3937,6 +4194,7 @@
             <Chinesesimp>劳拉西泮所需的医疗水平</Chinesesimp>
             <Finnish>Lääketieteellinen koulutustaso vaaditaan loratsepaamia varten</Finnish>
             <Dutch>Medisch niveau benodigd voor het gebruik van Lorazepam</Dutch>
+            <Hungarian>Az lorazepam alkalmazásához szükséges képzettségi szint</Hungarian>
         </Key>
         <Key ID="STR_KAT_Pharma_medLvl_Nalbuphine">
             <English>Medical level required for Nalbuphine</English>
@@ -3954,6 +4212,7 @@
             <Chinesesimp>纳布啡所需的医疗水平</Chinesesimp>
             <Finnish>Lääketieteellinen koulutustaso vaaditaan nalbufiinille</Finnish>
             <Dutch>Medisch niveau benodigd voor het gebruik van Nalbufine</Dutch>
+            <Hungarian>Az nalbufin alkalmazásához szükséges képzettségi szint</Hungarian>
         </Key>
         <Key ID="STR_KAT_Pharma_medLvl_Naloxone">
             <English>Medical level required for Naloxone</English>
@@ -3971,6 +4230,7 @@
             <Chinesesimp>纳洛酮所需的医疗水平</Chinesesimp>
             <Finnish>Naloksonille vaaditaan lääketieteen koulutustaso</Finnish>
             <Dutch>Medisch niveau benodigd voor gebruik van Naloxone</Dutch>
+            <Hungarian>Az naloxon alkalmazásához szükséges képzettségi szint</Hungarian>
         </Key>
         <Key ID="STR_KAT_Pharma_medLvl_Nitroglycerin">
             <English>Medical level required for Nitroglycerin</English>
@@ -3988,6 +4248,7 @@
             <Chinesesimp>硝酸甘油所需的医疗水平</Chinesesimp>
             <Finnish>Nitroglyseriinille vaadittu lääketieteellinen koulutustaso</Finnish>
             <Dutch>Medisch niveau benodigd voor het gebruik van Nitroglycerine</Dutch>
+            <Hungarian>Az glicerin-trinitrát alkalmazásához szükséges képzettségi szint</Hungarian>
         </Key>
         <Key ID="STR_KAT_Pharma_medLvl_Norepinephrine">
             <English>Medical level required for Norepinephrine</English>
@@ -4005,6 +4266,7 @@
             <Chinesesimp>去甲肾上腺素所需的医疗水平</Chinesesimp>
             <Finnish>Norepinefriinin käytön edellyttämä lääketieteellinen taso</Finnish>
             <Dutch>Medisch niveau benodigd voor het gebruik van Noradrenaline</Dutch>
+            <Hungarian>A noradrenalin alkalmazásához szükséges képzettségi szint</Hungarian>
         </Key>
         <Key ID="STR_KAT_Pharma_medLvl_Pervitin">
             <English>Medical level required for Pervitin</English>
@@ -4022,6 +4284,7 @@
             <Chinesesimp>柏飞汀(Pervitin)所需的医疗水平</Chinesesimp>
             <Finnish>Pervitiini vaatii lääketieteellisen koulutustason</Finnish>
             <Dutch>Medisch niveau benodigd voor het gebruik van Pervitin</Dutch>
+            <Hungarian>A pervitin alkalmazásához szükséges képzettségi szint</Hungarian>
         </Key>
         <Key ID="STR_KAT_Pharma_medLvl_Phenylephrine">
             <English>Medical level required for Phenylephrine</English>
@@ -4039,6 +4302,7 @@
             <Chinesesimp>苯肾上腺素所需的医疗水平</Chinesesimp>
             <Finnish>Lääketieteellinen taso vaaditaan fenyyliefriinille</Finnish>
             <Dutch>Medisch niveau benodigd voor het gebruik van Fenylefrine</Dutch>
+            <Hungarian>A fenilefrin alkalmazásához szükséges képzettségi szint</Hungarian>
         </Key>
         <Key ID="STR_KAT_Pharma_medLvl_TXA">
             <English>Medical level required for TXA</English>
@@ -4056,6 +4320,7 @@
             <Chinesesimp>血栓素(TXA)所需的医疗水平</Chinesesimp>
             <Finnish>Lääketieteellinen koulutustaso vaaditaan TXA:n käyttöön</Finnish>
             <Dutch>Medisch niveau benodigd voor het gebruik van TXA</Dutch>
+            <Hungarian>A TXA alkalmazásához szükséges képzettségi szint</Hungarian>
         </Key>
         <Key ID="STR_KAT_Pharma_pharmaSupplyCrate_displayName">
             <English>[KAM] Medicines crate</English>
@@ -4073,6 +4338,7 @@
             <Chinesesimp>[KAM]药品箱</Chinesesimp>
             <Finnish>[KAM] Lääkelaatikko</Finnish>
             <Dutch>[KAM] Medijnenkrat</Dutch>
+            <Hungarian>[KAM] Gyógyszerláda</Hungarian>
         </Key>
         <Key ID="STR_KAT_Pharma_push_log">
             <English>%1 pushed %2</English>
@@ -4091,6 +4357,7 @@
             <Turkish>% 1,% 2 eklendi</Turkish>
             <Finnish>%1 työnnettiin %2</Finnish>
             <Dutch>%1 injecteerde %2</Dutch>
+            <Hungarian>%1 beadott %2-t</Hungarian>
         </Key>
         <Key ID="STR_KAT_Pharma_rightarm">
             <English>Right Arm</English>
@@ -4108,6 +4375,7 @@
             <Chinesesimp>右臂</Chinesesimp>
             <Turkish>Sağ Kol</Turkish>
             <Dutch>Rechterarm</Dutch>
+            <Hungarian>Jobb kar</Hungarian>
         </Key>
         <Key ID="STR_KAT_Pharma_rightleg">
             <English>Right Leg</English>
@@ -4125,6 +4393,7 @@
             <Chinesesimp>右腿</Chinesesimp>
             <Turkish>Sağ Bacak</Turkish>
             <Dutch>Rechterbeen</Dutch>
+            <Hungarian>Jobb láb</Hungarian>
         </Key>
         <Key ID="STR_KAT_Pharma_treatmentTime_Amiodarone">
             <English>Treatment time for Amiodarone</English>
@@ -4142,6 +4411,7 @@
             <Chinesesimp>胺碘酮的治疗时间</Chinesesimp>
             <Finnish>Amiodaronin hoitoaika</Finnish>
             <Dutch>Behandeltijd van Amiodaron</Dutch>
+            <Hungarian>Az amiodaron kezelési ideje</Hungarian>
         </Key>
         <Key ID="STR_KAT_Pharma_treatmentTime_ApplyIO">
             <English>Time to establish IOs</English>
@@ -4160,6 +4430,7 @@
             <Turkish>IO'ları oluşturma zamanı</Turkish>
             <Finnish>Aika luoda IO:t</Finnish>
             <Dutch>Aanbrengtijd voor IO's</Dutch>
+            <Hungarian>IO felhelyezés ideje</Hungarian>
         </Key>
         <Key ID="STR_KAT_Pharma_treatmentTime_ApplyIV">
             <English>Time to establish IVs</English>
@@ -4178,6 +4449,7 @@
             <Turkish>IV'ler oluşturma zamanı</Turkish>
             <Finnish>IV lisäämiseen tarvittava aika</Finnish>
             <Dutch>Aanbrengtijd voor IV's</Dutch>
+            <Hungarian>IV felhelyezésének ideje</Hungarian>
         </Key>
         <Key ID="STR_KAT_Pharma_treatmentTime_Atropine">
             <English>Treatment time for Atropine</English>
@@ -4195,6 +4467,7 @@
             <Chinesesimp>阿托品的治疗时间</Chinesesimp>
             <Finnish>Atropiinin hoitoaika</Finnish>
             <Dutch>Behandeltijd van Atropine</Dutch>
+            <Hungarian>Az atropin kezelési ideje</Hungarian>
         </Key>
         <Key ID="STR_KAT_Pharma_treatmentTime_CWMP">
             <English>Treatment time for CWMP</English>
@@ -4203,6 +4476,7 @@
             <German>Anwendungszeit für CWMP</German>
             <Japanese>戦闘傷病治療薬(CWMP)の所要時間</Japanese>
             <Dutch>Behandelingstijd voor gebruik van CWMP</Dutch>
+            <Hungarian>A CWMP kezelési ideje</Hungarian>
         </Key>
         <Key ID="STR_KAT_Pharma_treatmentTime_Caffeine">
             <English>Treatment time for Caffeine</English>
@@ -4211,6 +4485,7 @@
             <German>Anwendungszeit für Koffein</German>
             <Japanese>カフェインの所要時間</Japanese>
             <Dutch>Behandelingstijd voor gebruik van caffeine</Dutch>
+            <Hungarian>A koffein kezelési ideje</Hungarian>
         </Key>
         <Key ID="STR_KAT_Pharma_treatmentTime_Carbonate">
             <English>Treatment time for Carbonate</English>
@@ -4228,6 +4503,7 @@
             <Chinesesimp>碳酸盐的治疗时间</Chinesesimp>
             <Finnish>Karbonaatin käsittelyaika</Finnish>
             <Dutch>Behandeltijd van carbonaat</Dutch>
+            <Hungarian>A karbonát kezelési ideje</Hungarian>
         </Key>
         <Key ID="STR_KAT_Pharma_treatmentTime_EACA">
             <English>Treatment time for EACA</English>
@@ -4245,6 +4521,7 @@
             <Chinesesimp>EACA的治疗时间</Chinesesimp>
             <Finnish>Hoitoaika EACA:lle</Finnish>
             <Dutch>Behandeltijd van EACA</Dutch>
+            <Hungarian>Az EACA kezelési ideje</Hungarian>
         </Key>
         <Key ID="STR_KAT_Pharma_treatmentTime_EpinephrineIV">
             <English>Treatment time for IV Epinephrine</English>
@@ -4257,6 +4534,7 @@
             <Chinese>靜脈注射腎上腺素的治療時間</Chinese>
             <Chinesesimp>静脉注射肾上腺素的治疗时间</Chinesesimp>
             <Dutch>Toedieningstijd voor IV Adrenaline</Dutch>
+            <Hungarian>Az IV epinefrin kezelési ideje</Hungarian>
         </Key>
         <Key ID="STR_KAT_Pharma_treatmentTime_Etomidate">
             <English>Treatment time for Etomidate</English>
@@ -4274,6 +4552,7 @@
             <Chinesesimp>依托咪酯的治疗时间</Chinesesimp>
             <Finnish>Etomidatin hoitoaika</Finnish>
             <Dutch>Behandeltijd van Etomidaat</Dutch>
+            <Hungarian>Az etomidát kezelési ideje</Hungarian>
         </Key>
         <Key ID="STR_KAT_Pharma_treatmentTime_Fentanyl">
             <English>Treatment time for Fentanyl</English>
@@ -4291,6 +4570,7 @@
             <Chinesesimp>芬太尼的治疗时间</Chinesesimp>
             <Finnish>Fentanyylin hoitoaika</Finnish>
             <Dutch>Behandeltijd van Fentanyl</Dutch>
+            <Hungarian>A fentanil kezelési ideje</Hungarian>
         </Key>
         <Key ID="STR_KAT_Pharma_treatmentTime_Flumazenil">
             <English>Treatment time for Flumazenil</English>
@@ -4308,6 +4588,7 @@
             <Chinesesimp>氟马西尼的治疗时间</Chinesesimp>
             <Finnish>Flumatseniilin hoitoaika</Finnish>
             <Dutch>Behandeltijd van Flumazenil</Dutch>
+            <Hungarian>A flumazenil kezelési ideje</Hungarian>
         </Key>
         <Key ID="STR_KAT_Pharma_treatmentTime_Ketamine">
             <English>Treatment time for Ketamine</English>
@@ -4325,6 +4606,7 @@
             <Chinesesimp>氯胺酮的治疗时间</Chinesesimp>
             <Finnish>Ketamiinin hoitoaika</Finnish>
             <Dutch>Behandeltijd van Ketamine</Dutch>
+            <Hungarian>A ketamin kezelési ideje</Hungarian>
         </Key>
         <Key ID="STR_KAT_Pharma_treatmentTime_Lidocaine">
             <English>Treatment time for Lidocaine</English>
@@ -4342,6 +4624,7 @@
             <Chinesesimp>利多卡因的治疗时间</Chinesesimp>
             <Finnish>Lidokaiinin hoitoaika</Finnish>
             <Dutch>Behandeltijd van Lidocaïne</Dutch>
+            <Hungarian>A lidokain kezelési ideje</Hungarian>
         </Key>
         <Key ID="STR_KAT_Pharma_treatmentTime_Lorazepam">
             <English>Treatment time for Lorazepam</English>
@@ -4359,6 +4642,7 @@
             <Chinesesimp>劳拉西泮的治疗时间</Chinesesimp>
             <Finnish>Loratsepaamin hoitoaika</Finnish>
             <Dutch>Behandeltijd van Lorazepam</Dutch>
+            <Hungarian>A lorazepam kezelési ideje</Hungarian>
         </Key>
         <Key ID="STR_KAT_Pharma_treatmentTime_Nalbuphine">
             <English>Treatment time for Nalbuphine</English>
@@ -4376,6 +4660,7 @@
             <Chinesesimp>纳布啡的治疗时间</Chinesesimp>
             <Finnish>Nalbufiinin hoitoaika</Finnish>
             <Dutch>Behandeltijd van Nalbufine</Dutch>
+            <Hungarian>A nalbufin kezelési ideje</Hungarian>
         </Key>
         <Key ID="STR_KAT_Pharma_treatmentTime_Naloxone">
             <English>Treatment time for Naloxone</English>
@@ -4393,6 +4678,7 @@
             <Chinesesimp>纳洛酮的治疗时间</Chinesesimp>
             <Finnish>Naloksonin hoitoaika</Finnish>
             <Dutch>Behandeltijd van Naloxone</Dutch>
+            <Hungarian>A naloxon kezelési ideje</Hungarian>
         </Key>
         <Key ID="STR_KAT_Pharma_treatmentTime_Nitroglycerin">
             <English>Treatment time for Nitroglycerin</English>
@@ -4410,6 +4696,7 @@
             <Chinesesimp>硝酸甘油的治疗时间</Chinesesimp>
             <Finnish>Nitroglyseriinin hoitoaika</Finnish>
             <Dutch>Behandeltijd van Nitroglycerine</Dutch>
+            <Hungarian>A glicerin-trinitrát kezelési ideje</Hungarian>
         </Key>
         <Key ID="STR_KAT_Pharma_treatmentTime_Norepinephrine">
             <English>Treatment time for Norepinephrine</English>
@@ -4427,6 +4714,7 @@
             <Chinesesimp>去甲肾上腺素的治疗时间</Chinesesimp>
             <Finnish>Hoitoaika norepinefriinille</Finnish>
             <Dutch>Behandeltijd van Noradrenaline</Dutch>
+            <Hungarian>A noradrenalin kezelési ideje</Hungarian>
         </Key>
         <Key ID="STR_KAT_Pharma_treatmentTime_Pervitin">
             <English>Treatment time for Pervitin</English>
@@ -4444,6 +4732,7 @@
             <Chinesesimp>柏飞汀(Pervitin)的治疗时间</Chinesesimp>
             <Finnish>Pervitiinin hoitoaika</Finnish>
             <Dutch>Behandeltijd van Pervitin</Dutch>
+            <Hungarian>A pervitin kezelési ideje</Hungarian>
         </Key>
         <Key ID="STR_KAT_Pharma_treatmentTime_Phenylephrine">
             <English>Treatment time for Phenylephrine</English>
@@ -4461,6 +4750,7 @@
             <Chinesesimp>苯肾上腺素的治疗时间</Chinesesimp>
             <Finnish>Käsittelyaika fenyylille</Finnish>
             <Dutch>Behandeltijd van Fenylefrine</Dutch>
+            <Hungarian>A fenilefrin kezelési ideje</Hungarian>
         </Key>
         <Key ID="STR_KAT_Pharma_treatmentTime_Reorientation">
             <English>Treatment time for reorientation</English>
@@ -4478,6 +4768,7 @@
             <Chinesesimp>恢复体态的治疗时间</Chinesesimp>
             <Finnish>Hoitoaika uudelleensuuntautumiseen</Finnish>
             <Dutch>Behandelingstijd voor heroriëntatie</Dutch>
+            <Hungarian>Az reorientáció kezelési ideje</Hungarian>
         </Key>
         <Key ID="STR_KAT_Pharma_treatmentTime_TXA">
             <English>Treatment time for TXA</English>
@@ -4495,6 +4786,7 @@
             <Chinesesimp>血栓素(TXA)的治疗时间</Chinesesimp>
             <Finnish>TXA:n hoitoaika</Finnish>
             <Dutch>Behandeltijd van TXA</Dutch>
+            <Hungarian>A TXA kezelési ideje</Hungarian>
         </Key>
         <Key ID="STR_KAT_Pharma_use_log">
             <English>%1 used %2</English>
@@ -4513,6 +4805,7 @@
             <Turkish>% 1,% 2 eklendi</Turkish>
             <Finnish>%1 käytetty %2</Finnish>
             <Dutch>%1 gebruikte %2</Dutch>
+            <Hungarian>%1 használt %2-t</Hungarian>
         </Key>
     </Package>
 </Project>
