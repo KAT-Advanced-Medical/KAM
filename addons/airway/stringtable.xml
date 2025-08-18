@@ -734,7 +734,7 @@
             <Chinese>%1 讓 %2 頭部後仰</Chinese>
             <Chinesesimp>%1 头部过度伸展 %2</Chinesesimp>
             <Dutch>%1 overstrekte %2s hoofd</Dutch>
-            <Hungarian>%1 %2 másodpercig a fejét hyperextenzióban tartotta</Hungarian>
+            <Hungarian>%1 %2 fejét hyperextenzióban tartotta</Hungarian>
         </Key>
         <Key ID="STR_KAT_Airway_Hyperextend_Ready">
             <English>Head hyperextended successfully</English>
