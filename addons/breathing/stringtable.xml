@@ -149,7 +149,7 @@
             <Chinesesimp>袋阀面罩，用于帮助昏迷患者呼吸</Chinesesimp>
             <Finnish>Pussi-venttiili-naamari, käytetään auttamaan tajuttomien potilaiden hengittämisessä</Finnish>
             <Dutch>Bag-Valve-Mask of een zakventielmasker wordt gebruikt voor het ondersteunen van de ademhaling van bewusteloze personen</Dutch>
-            <Hungarian>Ambu ballon (BVM), az eszméletlen ápolt légzésének segítésére használatos.</Hungarian>
+            <Hungarian>Ambu ballon (BVM), az eszméletlen beteg légzésének segítésére használatos.</Hungarian>
         </Key>
         <Key ID="STR_KAT_Breathing_BVM_Display">
             <English>BVM</English>
@@ -390,7 +390,7 @@
             <Turkish>Seçilen değerden (varsayılan 85) daha fazlasına ulaştıktan sonra, ancak o zaman hasta bilincini geri kazanabilir</Turkish>
             <Finnish>Vasta sitten, kun valittu arvo (oletusarvo 85) on saavutettu, potilas voi herätä</Finnish>
             <Dutch>Alleen na het bereiken van meer dan deze waarde (standaard 85) kan een patiënt zijn bewustzijn terug krijgen</Dutch>
-            <Hungarian>A kiválasztott érték (alapértelmezés szerint 85) túllépése után az ápolt csak akkor térhet magához.</Hungarian>
+            <Hungarian>A kiválasztott érték (alapértelmezés szerint 85) túllépése után az beteg csak akkor térhet magához.</Hungarian>
         </Key>
         <Key ID="STR_KAT_Breathing_DeepPenetratingInjury">
             <English>Deep Penetrating Injury</English>
@@ -512,7 +512,7 @@
             <Chinese>鼻導管可插入病人鼻孔，並連接到生命體徵監測器，以記錄病人的呼氣末期二氧化碳 (ETCo2) 水平和呼吸率。</Chinese>
             <Chinesesimp>鼻导管可以插入患者的鼻孔并连接到生命体征监测仪，以记录患者的ETCo2水平和呼吸频率。</Chinesesimp>
             <Dutch>De nasale canule kan in de neusgaten van de patiënt aangebracht worden en verbonden aan een vitale waarden monitor om de ETCo2 waarden en het ademhalingstempo van de patiënt te monitoren</Dutch>
-            <Hungarian>Az orrkanül behelyezhető az ápolt orrlyukaiba, és csatlakoztatható egy élettani monitorhoz, amely rögzíti az ápolt ETCo2-szintjét és légzésszámát.</Hungarian>
+            <Hungarian>Az orrkanül behelyezhető az beteg orrlyukaiba, és csatlakoztatható egy monitorhoz, amely rögzíti az beteg ETCo2-szintjét és légzésszámát.</Hungarian>
         </Key>
         <Key ID="STR_KAT_Breathing_NasalCannula_Display">
             <English>Nasal Cannula</English>
@@ -2310,7 +2310,7 @@
             <Chinesesimp>在概览选项卡中显示患者的紫绀</Chinesesimp>
             <Finnish>Näyttää potilaan syanoosin lääketieteellisen yleiskuvan näytössä</Finnish>
             <Dutch>Toont de cyanose van de patiënt op de overzichtspagina</Dutch>
-            <Hungarian>A ápolt cianózisát mutatja az áttekintés fülön</Hungarian>
+            <Hungarian>A beteg cianózisát mutatja az áttekintés fülön</Hungarian>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_slightValue">
             <English>Slight cyanosis SpO2 value</English>
