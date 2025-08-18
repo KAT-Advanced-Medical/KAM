@@ -2062,7 +2062,7 @@
             <Chinesesimp>如果启用，每个身体部位将同时接受凝血治疗。\n也就是说，如果你的头部和身体都有伤口，它们都会在相同的凝血周期中接受治疗。</Chinesesimp>
             <Dutch>Als dit ingeschakeld is, zal elk lichaamsdeel tegelijkertijd behandeld worden door coagulatie. \nWat betekent dat als je een wond aan je arm en been hebt, dat deze in dezelfde coagulatiecyclus behandeld worden</Dutch>
             <Hungarian>Ha engedélyezve van, minden testtájat egyszerre kezel a Coagulation(véralvadás).
-Ez azt jelenti, hogy ha van seb a fejen és a testen, mindkettőt ugyanabban az alvadási ciklusban kezel.</Hungarian>
+            Ez azt jelenti, hogy ha van seb a fejen és a testen, mindkettőt ugyanabban az alvadási ciklusban kezel.</Hungarian>
         </Key>
         <Key ID="STR_KAT_Pharma_SETTING_Coagulation_requireBV">
             <English>Required Blood Volume</English>
@@ -2348,7 +2348,7 @@ Ez azt jelenti, hogy ha van seb a fejen és a testen, mindkettőt ugyanabban az 
             <Chinesesimp>默认值为false。如果是真的，你需要先插入静脉注射/IO，然后才能从某人身上抽血。\n如果是假的，你可以不用它画画。</Chinesesimp>
             <Dutch>Standaard vals. Wanneer waar moet er eerst een IV/IO toegediend worden voordat je bloed kan optrekken. \nWanneer vals is dit niet vereist.</Dutch>
             <Hungarian>Alapértelmezett: false. Ha true, először IV/IO-t kell felhelyezni, mielőtt vért tudna venni valakitől.
-Ha false, vérvétel IV/IO nélkül is lehetséges.</Hungarian>
+            Ha false, vérvétel IV/IO nélkül is lehetséges.</Hungarian>
         </Key>
         <Key ID="STR_KAT_Pharma_SETTING_REQUIRE_INS_IV_DESC">
             <English>Default false. If true, you will need to insert IV/IO first before being able to give someone saline/blood/plasma. \nIf false, it retains standard ACE behaviour for using saline/blood/plasma.</English>
@@ -2368,7 +2368,7 @@ Ha false, vérvétel IV/IO nélkül is lehetséges.</Hungarian>
             <Finnish>Oletusarvo epätosi. Jos totta, sinun on lisättävä IV/IO ensin, ennen kuin voit antaa jollekulle suolaliuosta/verta/plasmaa \nJos väärin, se säilyttää normaalin ACE-käyttäytymisen suolaliuoksen/veren/plasman käytössä.</Finnish>
             <Dutch>Standaard vals. Wanneer waar moet er eerst een IV/IO aangelegd worden voordat je vloeistoffen kan toedienen.\nWanneer vals, wordt standaard ACE gedrag gebruikt voor vloeistoffen</Dutch>
             <Hungarian>Alapértelmezett: false. Ha true, először IV/IO-t kell felhelyezni, mielőtt valakinek sóoldatot, vért vagy plazmát adhatna.
-Ha false, az ACE alapértelmezett viselkedése érvényes a sóoldat, vér és plazma használatára.</Hungarian>
+            Ha false, az ACE alapértelmezett viselkedése érvényes a sóoldat, vér és plazma használatára.</Hungarian>
         </Key>
         <Key ID="STR_KAT_Pharma_SETTING_REQUIRE_INS_IV_Medications">
             <English>Medications Require IV/IO</English>
@@ -2405,7 +2405,7 @@ Ha false, az ACE alapértelmezett viselkedése érvényes a sóoldat, vér és p
             <Finnish>Oletusarvo epätosi. Jos totta, sinun on lisättävä IV/IO ensin, ennen kuin voit antaa jollekin lääkkeitä. \nJos vääriä, voit antaa ne ilman sitä.</Finnish>
             <Dutch>Standaard vals. Wanneer waar moet er eerst een IV/IO aangelegd worden voordat medicatie toegedient kan worden. \nWanneer vals kunnen medicijnen gegeven worden zonder IV/IO</Dutch>
             <Hungarian>Alapértelmezett: false. Ha true, először IV/IO-t kell felhelyezni, mielőtt gyógyszert adhatna valakinek.
-Ha false, gyógyszert IV/IO nélkül is adhat.</Hungarian>
+            Ha false, gyógyszert IV/IO nélkül is adhat.</Hungarian>
         </Key>
         <Key ID="STR_KAT_Pharma_SETTING_Reorientation_Enable">
             <English>Reorientation enabled?</English>
