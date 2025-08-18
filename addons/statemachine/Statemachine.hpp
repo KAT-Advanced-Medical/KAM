@@ -40,6 +40,68 @@ class KAT_StateMachine {
             events[] = {QACEGVAR(medical,FatalInjury)};
         };
     };
+    class Dazed {
+        onState = QUOTE(call FUNC(handleStateDazed));
+        onStateEntered = QUOTE(call FUNC(enteredStateDazed));
+        onStateLeaving = QUOTE(call FUNC(leftStateDazed));
+        class FullHeal {
+            targetState = "Default";
+            events[] = {QACEGVAR(medical,FullHeal)};
+        };
+        class WakeUp {
+            targetState = "Injured";
+            condition = QEFUNC(vitals,hasStableVitals);
+            events[] = {QACEGVAR(medical,WakeUp)};
+            onTransition = QUOTE([ARR_2(_this,false)] call ACEFUNC(medical_status,setUnconsciousState));
+        };
+        class DazedStop {
+            targetState = "Unconscious";
+            condition = QUOTE([ARR_2(_this,false)]call FUNC(conditionDazedShift));
+        };
+        class CriticalInjuryOrVitals {
+            targetState = "Unconscious";
+            events[] = {QACEGVAR(medical,CriticalInjury), QACEGVAR(medical,CriticalVitals), QACEGVAR(medical,knockOut)};
+        };
+        class FatalTransitions {
+            targetState = "CardiacArrest";
+            events[] = {QACEGVAR(medical,FatalVitals), QACEGVAR(medical,Bleedout)};
+        };
+        class FatalInjury {
+            targetState = "FatalInjury";
+            events[] = {QACEGVAR(medical,FatalInjury)};
+        };
+    };
+    class CNR {
+        onState = QUOTE(call FUNC(handleStateCNR));
+        onStateEntered = QUOTE(call FUNC(enteredStateCNR));
+        onStateLeaving = QUOTE(call FUNC(leftStateCNR));
+        class FullHeal {
+            targetState = "Default";
+            events[] = {QACEGVAR(medical,FullHeal)};
+        };
+        class WakeUp {
+            targetState = "Injured";
+            condition = QEFUNC(vitals,hasStableVitals);
+            events[] = {QACEGVAR(medical,WakeUp)};
+            onTransition = QUOTE([ARR_2(_this,false)] call ACEFUNC(medical_status,setUnconsciousState));
+        };
+        class DazedStop {
+            targetState = "Dazed";
+            condition = QUOTE([ARR_2(_this,false)]call FUNC(conditionDazedShift));
+        };
+        class CriticalInjuryOrVitals {
+            targetState = "Unconscious";
+            events[] = {QACEGVAR(medical,CriticalInjury), QACEGVAR(medical,CriticalVitals), QACEGVAR(medical,knockOut)};
+        };
+        class FatalTransitions {
+            targetState = "CardiacArrest";
+            events[] = {QACEGVAR(medical,FatalVitals), QACEGVAR(medical,Bleedout)};
+        };
+        class FatalInjury {
+            targetState = "FatalInjury";
+            events[] = {QACEGVAR(medical,FatalInjury)};
+        };
+    };
     class Unconscious {
         onState = QACEFUNC(medical_statemachine,handleStateUnconscious);
         onStateEntered = QACEFUNC(medical_statemachine,enteredStateUnconscious);
@@ -49,7 +111,7 @@ class KAT_StateMachine {
         };
         class WakeUp {
             targetState = "Injured";
-            condition = QACEFUNC(medical_status,hasStableVitals);
+            condition = QEFUNC(vitals,hasStableVitals);
             events[] = {QACEGVAR(medical,WakeUp)};
             onTransition = QUOTE([ARR_2(_this,false)] call ACEFUNC(medical_status,setUnconsciousState));
         };
@@ -74,7 +136,7 @@ class KAT_StateMachine {
         class SecondChance {
             events[] = {QACEGVAR(medical,FatalInjuryInstantTransition)};
             targetState = "CardiacArrest";
-            condition = QACEFUNC(medical_statemachine,conditionSecondChance);
+            condition = QUOTE(call EFUNC(conversion,conversionKATConditionSecondChance));
             onTransition = QACEFUNC(medical_statemachine,transitionSecondChance);
         };
         class Death {
@@ -90,7 +152,7 @@ class KAT_StateMachine {
             // If an AI unit reanimates, they will immediately die upon entering unconsciousness if AI Unconsciousness is disabled
             // As a result, we immediately kill the AI unit since cardiac arrest is effectively useless for it
             targetState = "Dead";
-            condition = QUOTE(!ACEGVAR(medical_statemachine,AIUnconsciousness) && {!isPlayer _this});
+            condition = QUOTE(call EFUNC(conversion,conversionCheck));
         };
         class Timeout {
             targetState = "Dead";
@@ -102,7 +164,7 @@ class KAT_StateMachine {
         };
         class Execution {
             targetState = "Dead";
-            condition = QACEFUNC(medical_statemachine,conditionExecutionDeath);
+            condition = QUOTE(call EFUNC(conversion,KATConditionExecutionDeath));
             events[] = {QACEGVAR(medical,FatalInjury)};
         };
         class Bleedout {
