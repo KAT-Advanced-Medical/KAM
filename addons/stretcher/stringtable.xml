@@ -18,6 +18,7 @@
             <Turkish>Sedyeyi Takın</Turkish>
             <Finnish>Kiinnitä paarit</Finnish>
             <Dutch>Brancard bevestigen</Dutch>
+            <Hungarian>Hordágy rögzítése</Hungarian>
         </Key>
         <Key ID="STR_KAT_Stretcher_DeployHeliStretcher">
             <English>Deploy Stretcher</English>
@@ -31,6 +32,7 @@
             <Chinese>展開擔架</Chinese>
             <Chinesesimp>展开担架</Chinesesimp>
             <Dutch>Ontplooi brancard</Dutch>
+            <Hungarian>Hordágy elővétele</Hungarian>
         </Key>
         <Key ID="STR_KAT_Stretcher_DetachHeliStretcher">
             <English>Detach Stretcher</English>
@@ -44,6 +46,7 @@
             <Chinese>釋放擔架</Chinese>
             <Chinesesimp>分离担架</Chinesesimp>
             <Dutch>Maak brancard los</Dutch>
+            <Hungarian>Hordágy leválasztása</Hungarian>
         </Key>
         <Key ID="STR_KAT_Stretcher_Helistretcher_Desc">
             <English>Allows you to attach a Stretcher to a helicopter (Double click)</English>
@@ -62,6 +65,7 @@
             <Turkish>Helikoptere sedye takmanızı sağlar(Çift tıklama)</Turkish>
             <Finnish>Mahdollistaa paareiden kiinnittämisen helikopteriin (klikkaa kahdesti)</Finnish>
             <Dutch>Staat je toe om een brancard aan een heli te bevestigen (dubbel klik)</Dutch>
+            <Hungarian>Lehetővé teszi, hogy hordágyat rögzítsen egy helikopterhez (dupla kattintás)</Hungarian>
         </Key>
         <Key ID="STR_KAT_Stretcher_Helistretcher_Display">
             <English>Attachable Helistretcher</English>
@@ -80,6 +84,7 @@
             <Turkish>Helitakılabilir sedye</Turkish>
             <Finnish>Kiinnitettävä paarit helikoptereille</Finnish>
             <Dutch>Bevestigbare helibrancard</Dutch>
+            <Hungarian>Rögzíthető Helistretcher</Hungarian>
         </Key>
         <Key ID="STR_KAT_Stretcher_KAT_HeliStretcher">
             <English>KAT Helistretcher</English>
@@ -92,6 +97,7 @@
             <Chinese>KAT 直升機擔架</Chinese>
             <Chinesesimp>KAT Helistretcher</Chinesesimp>
             <Dutch>KAT helibrancard</Dutch>
+            <Hungarian>KAT helistretcher</Hungarian>
         </Key>
         <Key ID="STR_KAT_Stretcher_LowerHeliStretcher">
             <English>Lower Stretcher</English>
@@ -110,6 +116,7 @@
             <Turkish>Alt Sedye</Turkish>
             <Finnish>Laske paarit</Finnish>
             <Dutch>Laat de brancard zakken</Dutch>
+            <Hungarian>Hordágy leengedése</Hungarian>
         </Key>
         <Key ID="STR_KAT_Stretcher_PackIntoBackpack">
             <English>Pack into backpack</English>
@@ -123,6 +130,7 @@
             <Chinese>裝進背包</Chinese>
             <Chinesesimp>装进背包</Chinesesimp>
             <Dutch>Verpak naar een rugzak</Dutch>
+            <Hungarian>Hátizsákba pakolás</Hungarian>
         </Key>
         <Key ID="STR_KAT_Stretcher_PackIntoBag">
             <English>Pack into bag</English>
@@ -136,6 +144,7 @@
             <Chinese>打包到包裡</Chinese>
             <Chinesesimp>装进袋子里</Chinesesimp>
             <Dutch>Verpak naar een tas</Dutch>
+            <Hungarian>Táskába pakolás</Hungarian>
         </Key>
         <Key ID="STR_KAT_Stretcher_PickupStretcher_progressBar">
             <English>Packing Stretcher...</English>
@@ -149,6 +158,7 @@
             <Chinese>正在打包擔架...</Chinese>
             <Chinesesimp>正在打包担架...</Chinesesimp>
             <Dutch>Brancard wordt verpakt</Dutch>
+            <Hungarian>Hordágy csomagolása...</Hungarian>
         </Key>
         <Key ID="STR_KAT_Stretcher_PlaceStretcher_progressBar">
             <English>Placing Stretcher...</English>
@@ -162,6 +172,7 @@
             <Chinese>正在放置擔架...</Chinese>
             <Chinesesimp>正在放置担架...</Chinesesimp>
             <Dutch>Brancard wordt geplaatst</Dutch>
+            <Hungarian>Hordágy elhelyezése...</Hungarian>
         </Key>
         <Key ID="STR_KAT_Stretcher_RaiseHeliStretcher">
             <English>Raise Stretcher</English>
@@ -180,6 +191,7 @@
             <Turkish>Kaldırma Sedyesi</Turkish>
             <Finnish>Nosta paarit</Finnish>
             <Dutch>Til de brancard op</Dutch>
+            <Hungarian>Hordágy emelése</Hungarian>
         </Key>
         <Key ID="STR_KAT_Stretcher_RetractHeliStretcher">
             <English>Retract Stretcher</English>
@@ -193,6 +205,7 @@
             <Chinese>收回擔架</Chinese>
             <Chinesesimp>缩回担架</Chinesesimp>
             <Dutch>Trek brancard terug</Dutch>
+            <Hungarian>Hordágy összecsukása</Hungarian>
         </Key>
         <Key ID="STR_KAT_Stretcher_StretcherPacked_Display">
             <English>Stretcher (Packed)</English>
@@ -211,6 +224,7 @@
             <Turkish>Sedye (Paketli)</Turkish>
             <Finnish>Paarit (pakattu)</Finnish>
             <Dutch>Brancard (verpakt)</Dutch>
+            <Hungarian>Hordágy (csomagolt)</Hungarian>
         </Key>
         <Key ID="STR_KAT_Stretcher_Stretcher_Display">
             <English>Stretcher</English>
@@ -229,6 +243,7 @@
             <Turkish>Sedye</Turkish>
             <Finnish>Paarit</Finnish>
             <Dutch>Brancard</Dutch>
+            <Hungarian>Hordágy</Hungarian>
         </Key>
         <Key ID="STR_KAT_Stretcher_UnpackStretcher">
             <English>Deploy Stretcher</English>
@@ -242,6 +257,7 @@
             <Chinese>部屬擔架</Chinese>
             <Chinesesimp>展开担架</Chinesesimp>
             <Dutch>Ontplooi brancard</Dutch>
+            <Hungarian>Hordágy elővétele</Hungarian>
         </Key>
     </Package>
 </Project>
