@@ -220,7 +220,7 @@ class ACE_Medical_Injuries {
         };
         class vehiclehit {
             // vehicle explosions are usually caused by explosive damage and should behave similarly
-            thresholds[] = {{6, 3}, {4.5, 2}, {2, 2}, {0.8, 1}, {0.2, 1}, {0, 0}};
+            thresholds[] = {{6, 4}, {4.5, 3}, {2, 2}, {0.8, 1}, {0.2, 1}, {0, 0}};
             selectionSpecific = 0;
             class woundHandlers: woundHandlers {
                 ACEGVAR(medical_damage,woundsHandlerVehiclehit) = QFUNC(woundsHandlerVehiclehit);
@@ -234,6 +234,12 @@ class ACE_Medical_Injuries {
                 weighting[] = {{1, 1}, {0.8, 0}};
             };
             class Cut {
+                weighting[] = {{1.5, 1}, {0.35, 1}, {0, 0}};
+            };
+            class VelocityWound {
+                weighting[] = {{1.5, 1}, {0.35, 1}, {0, 0}};
+            };
+            class PunctureWound {
                 weighting[] = {{1.5, 1}, {0.35, 1}, {0, 0}};
             };
             class Laceration {
