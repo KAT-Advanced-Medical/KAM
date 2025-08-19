@@ -93,7 +93,7 @@ class ACE_Medical_Treatment_Actions {
         condition = QFUNC(canWrapWound);
         treatmentTime = QFUNC(getWrapTime);
         callbackSuccess = QFUNC(wrapWound);
-        items[] = {"kat_Compressed_Gauze"};
+        items[] = {"kat_Roller_Gauze"};
     };
     class Ice_Pack: BasicBandage {
         displayName = CSTRING(Ice_Pack);
