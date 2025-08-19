@@ -36,5 +36,7 @@ private _numFractures = 0;
 	};
 } forEach [
 	HITPOINT_INDEX_LLEG,
-	HITPOINT_INDEX_RLEG];
+	HITPOINT_INDEX_ULLEG,
+	HITPOINT_INDEX_RLEG,
+	HITPOINT_INDEX_URLEG];
 _numFractures

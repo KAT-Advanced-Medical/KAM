@@ -6,7 +6,7 @@ params[
 	["_isMedic", false, [false]]
 ];
 
-_hr = [_patient] call FUNC(getHeartRate);
+_hr = GET_HEART_RATE(_patient);
 if(_hr == 0) exitWith {
 	[LSTRING(Shared,Heart_Rate_None)] call FUNC(cachedLocalisationCall)
 };
