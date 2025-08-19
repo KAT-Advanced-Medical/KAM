@@ -1,4 +1,4 @@
-#include "function_macros.hpp"
+#include "..\script_component.hpp"
 
 params[
     "_patient"

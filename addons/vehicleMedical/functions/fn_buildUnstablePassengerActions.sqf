@@ -1,4 +1,4 @@
-#include "function_macros.hpp"
+#include "..\script_component.hpp"
 /*
  * Author: esteldunedain, with minor changes by M3ales
  * Builds an array of actions, one for each passenger, with their name as the display.

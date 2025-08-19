@@ -1,4 +1,4 @@
-#include "function_macros.hpp"
+#include "..\script_component.hpp"
 /*
  * Author: M3ales
  * Builds a set of subactions for a given passenger, listing their afflictions.

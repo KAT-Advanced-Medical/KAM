@@ -1,4 +1,4 @@
-#include "function_macros.hpp"
+#include "..\script_component.hpp"
 params["_id", "_params", "_code"];
 
 if(!(_id isEqualType "")) exitWith {
