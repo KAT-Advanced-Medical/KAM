@@ -594,3 +594,19 @@
 #undef BLOOD_LOSS_TOTAL_COLORS
 #define BLOOD_LOSS_RED_THRESHOLD 0.5
 #define BLOOD_LOSS_TOTAL_COLORS 10
+
+#define CONCAT(a,b) a##b
+#define LSTR(module,name) CONCAT(STR_MIRA_AVM_,CONCAT(module,CONCAT(_,name)))
+#define ICON_PATH(name) ADDON##\ui\##name##.paa
+
+#define LOG_BASE(level,msg) diag_log text format[QUOTE(ADDON[level]: %1), msg]
+#define LOG(msg) LOG_BASE(DEBUG, LOG_FILENUMBER(msg))
+#define LOGF_1(msg,arg0) LOG(format[ARR_2(msg,arg0)])
+#define LOGF_2(msg,arg0,arg1) LOG(format[ARR_3(msg,arg0,arg1)])
+#define LOGF_3(msg,arg0,arg1,arg2) LOG(format[ARR_4(msg,arg0,arg1,arg2)])
+#define LOG_ERROR(msg) LOG_BASE(ERR,LOG_FILENUMBER(msg))
+#define LOG_ERRORF_1(msg,arg0) LOG_ERROR(format[ARR_2(msg,arg0)])
+#define LOG_ERRORF_2(msg,arg0,arg1) LOG_ERROR(format[ARR_3(msg,arg0,arg1)])
+#define LOG_FILENUMBER(msg) format [ARR_4('%1 at %2:%3',msg,__FILE__,__LINE__ + 1)]
+#define NOTMEDIC_LOWHR_THRESHOLD 50
+#define NOTMEDIC_LOWBP_THRESHOLD 90

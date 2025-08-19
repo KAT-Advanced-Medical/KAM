@@ -1,0 +1,872 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project name="MIRA_AVM">
+    <Package name="Interaction">
+        <Key ID="STR_MIRA_AVM_Interaction_Medical">
+            <Original>Medical</Original>
+            <Chinesesimp>医疗</Chinesesimp>
+            <Italian>Medico</Italian>
+            <French>Médical</French>
+            <Spanish>Médico</Spanish>
+        </Key>
+        <Key ID="STR_MIRA_AVM_Interaction_Stable">
+            <Original>Stable</Original>
+            <Chinesesimp>伤势稳定</Chinesesimp>
+            <Italian>Stabile</Italian>
+            <French>Stable</French>
+            <Spanish>Estable</Spanish>
+        </Key>
+        <Key ID="STR_MIRA_AVM_Interaction_Unstable">
+            <Original>Unstable</Original>
+            <Chinesesimp>需要救治</Chinesesimp>
+            <Italian>Instabile</Italian>
+            <French>Instable</French>
+            <Spanish>Inestable</Spanish>
+        </Key>
+        <Key ID="STR_MIRA_AVM_Interaction_Incapacitated">
+            <Original>Incapacitated</Original>
+            <Italian>Inabile</Italian>
+            <French>Invalide</French>
+            <Spanish>Incapacitado</Spanish>
+        </Key>
+    </Package>
+    <Package name="Shared">
+        <Key ID="STR_MIRA_AVM_Shared_Confirm">
+            <Original>Confirm</Original>
+        </Key>
+        <Key ID="STR_MIRA_AVM_Shared_Heart_Rate_None">
+            <Original>None</Original>
+            <Chinesesimp>无</Chinesesimp>
+            <Italian>Nessuno</Italian>
+            <French>Aucun</French>
+            <Spanish>Ninguno</Spanish>
+        </Key>
+        <Key ID="STR_MIRA_AVM_Shared_Not_Medic_Heart_Rate_Low">
+            <Original>Weak</Original>
+            <Chinesesimp>微弱</Chinesesimp>
+            <Italian>Debole</Italian>
+            <French>Faible</French>
+            <Spanish>Débil</Spanish>
+        </Key>
+        <Key ID="STR_MIRA_AVM_Shared_Not_Medic_Blood_Pressure_Low">
+            <Original>Low</Original>
+            <Chinesesimp>低</Chinesesimp>
+            <Italian>Basso</Italian>
+            <French>Bas</French>
+            <Spanish>Bajo</Spanish>
+        </Key>
+    </Package>
+    <Package name="Incapacitated">
+        <Key ID="STR_MIRA_AVM_Incapacitated_Unload_All">
+            <Original>Unload All Patients</Original>
+            <Italian>Scarica Tutti i Pazienti</Italian>
+            <French>Décharge tous les patients</French>
+            <Spanish>Descargar todos los pacientes</Spanish>
+        </Key>
+        <Key ID="STR_MIRA_AVM_Incapacitated_Unload">
+            <Original>Unload Patient</Original>
+            <Italian>Scarica Paziente</Italian>
+            <French>Décharge le patient</French>
+            <Spanish>Descargar paciente</Spanish>
+        </Key>
+        <Key ID="STR_MIRA_AVM_Incapacitated_Unload_Force">
+            <Original>Force Unload</Original>
+            <Italian>Forza Scaricamento</Italian>
+            <French>Décharge forcé </French>
+            <Spanish>Forzar descarga</Spanish>
+        </Key>
+    </Package>
+    <Package name="Unstable">
+        <Key ID="STR_MIRA_AVM_Unstable_Dead">
+            <Original>Deceased</Original>
+            <Chinesesimp>已阵亡</Chinesesimp>
+            <Italian>Deceduto</Italian>
+            <French>Décédé</French>
+            <Spanish>Fallecido</Spanish>
+        </Key>
+        <Key ID="STR_MIRA_AVM_Unstable_Dead_Warning">
+            <Original>You are viewing %1, who is currently deceased.</Original>
+            <Chinesesimp>%1 已经阵亡。</Chinesesimp>
+            <Italian>Stai visualizzando %1, che è attualmente deceduto.</Italian>
+            <French>Vous regardez %1, qui est actuellement décédé.</French>
+            <Spanish>Estás viendo %1, quien esta actualmente fallecido.</Spanish>
+        </Key>
+        <Key ID="STR_MIRA_AVM_Unstable_Cardiac_Arrest">
+            <Original>Cardiac Arrest</Original>
+            <Chinesesimp>心搏停止</Chinesesimp>
+            <Italian>Arresto Cardiaco</Italian>
+            <French>Arrêt cardiaque</French>
+            <Spanish>Paro cardiaco</Spanish>
+        </Key>
+        <Key ID="STR_MIRA_AVM_Unstable_Bleeding">
+            <Original>Bleeding</Original>
+            <Chinesesimp>正在流血</Chinesesimp>
+            <Italian>Sanguinamento</Italian>
+            <French>Saignement</French>
+            <Spanish>Sangrado</Spanish>
+        </Key>
+        <Key ID="STR_MIRA_AVM_Unstable_Low_Heart_Rate">
+            <Original>Heart Rate (%1)</Original>
+            <Chinesesimp>心率 (%1)</Chinesesimp>
+            <Italian>Frequenza Cardiaca (%1)</Italian>
+            <French>Fréquence cardiaque (%1)</French>
+            <Spanish>Ritmo Cardiaco (%1)</Spanish>
+        </Key>
+        <Key ID="STR_MIRA_AVM_Unstable_Low_Blood_Pressure">
+            <Original>Blood Pressure (%1)</Original>
+            <Chinesesimp>血压 (%1)</Chinesesimp>
+            <Italian>Pressione Sanguigna (%1)</Italian>
+            <French>Pression artérielle (%1)</French>
+            <Spanish>Presión sanguínea</Spanish>
+        </Key>
+        <Key ID="STR_MIRA_AVM_Unstable_Low_Blood_Pressure_With_IV">
+            <Original>Blood Pressure (%1) [%2ml]</Original>
+            <Chinesesimp>血压 (%1) [%2ml]</Chinesesimp>
+            <Italian>Pressione Sanguigna (%1) [%2ml]</Italian>
+            <French>Tension artérielle (%1) [%2ml]</French>
+            <Spanish>Presión arterial (%1) [%2ml]</Spanish>
+        </Key>
+        <Key ID="STR_MIRA_AVM_Unstable_Unconscious">
+            <Original>Unconscious</Original>
+            <Chinesesimp>昏迷</Chinesesimp>
+            <Italian>Incosciente</Italian>
+            <French>Inconscient</French>
+            <Spanish>Inconsciente</Spanish>
+        </Key>
+        <Key ID="STR_MIRA_AVM_Unstable_Leg_Fractures">
+            <Original>Leg Fractures (%1)</Original>
+            <Chinesesimp>腿部骨折 (%1)</Chinesesimp>
+            <Italian>Gambe Fratturate (%1)</Italian>
+            <French>Jambes Fracturées (%1)</French>
+            <Spanish>Fracturas de pierna (%1)</Spanish>
+        </Key>
+        <Key ID="STR_MIRA_AVM_Unstable_Splinted_Leg_Fractures">
+            <Original>Splinted Leg Fractures (%1)</Original>
+            <Chinesesimp>已固定的腿部骨折 (%1)</Chinesesimp>
+            <Italian>Fratture gambe Steccate (%1)</Italian>
+            <French>Fractures de jambe avec attelle (%1)</French>
+            <Spanish>Fracturas de pierna entablilladas (%1)</Spanish>
+        </Key>
+        <Key ID="STR_MIRA_AVM_Unstable_Splinted_Leg_Fractures_Error">
+            <Original>Splinted Leg Fractures (Error Fetching Amount)</Original>
+            <Chinesesimp>已固定的腿部骨折 (无法获取伤口数量)</Chinesesimp>
+            <Italian>Fratture gamba Steccate (Errore Recupero Valore)</Italian>
+            <French>Fractures de la jambe avec attelle (Erreur de récupération valeur)</French>
+            <Spanish>Fracturas de pierna entablilladas (Error de recuperación del valor)</Spanish>
+        </Key>
+        <Key ID="STR_MIRA_AVM_Unstable_Dogtags_Take">
+            <Original>Take Dogtags</Original>
+            <Italian>Prendi Piastrine</Italian>
+            <French>Prenez les plaques d'identité</French>
+            <Spanish>Llevar placas de identificación</Spanish>
+        </Key>
+        <Key ID="STR_MIRA_AVM_Unstable_Dogtags_Already_Taken">
+            <Original>Dogtags Missing</Original>
+            <Italian>Piastrine Mancanti</Italian>
+            <French>Plaques d'identité manquantes</French>
+            <Spanish>Faltan placas de identificación</Spanish>
+        </Key>
+        <Container name="KAT">
+            <Key ID="STR_MIRA_AVM_Unstable_KAT_SpO2">
+                <Original>SpO2 (%1%2)</Original>
+                <Italian>SpO2 (%1%2)</Italian>
+                <French>SpO2 (%1%2)</French>
+                <Spanish>SpO2 (%1%2)</Spanish>
+            </Key>
+            <Key ID="STR_MIRA_AVM_Unstable_KAT_Pneumothorax">
+                <Original>Pneumothorax</Original>
+                <Italian>Pneumotorace</Italian>
+                <French>Pneumothorax</French>
+                <Spanish>Neumotórax</Spanish>
+            </Key>
+            <Key ID="STR_MIRA_AVM_Unstable_KAT_Hemopneumothorax">
+                <Original>Hemopneumothorax</Original>
+                <Italian>Emopneumotorace</Italian>
+                <French>Hémopneumothorax</French>
+                <Spanish>Hemoneumotórax</Spanish>
+            </Key>
+            <Key ID="STR_MIRA_AVM_Unstable_KAT_Tension_Pneumothorax">
+                <Original>Tension Pneumothorax</Original>
+                <Italian>Pneumotorace Iperteso</Italian>
+                <French>Pneumothorax compressif</French>
+                <Spanish>Tensión neumotoraxica</Spanish>
+            </Key>
+            <Key ID="STR_MIRA_AVM_Unstable_KAT_Multiple_Pneumothorax">
+                <Original>Pneumothoraces</Original>
+                <Italian>Pneumotoraci</Italian>
+                <French>Pneumothorax</French>
+                <Spanish>Neumotórax</Spanish>
+            </Key>
+            <Key ID="STR_MIRA_AVM_Unstable_KAT_Airway_Occluded">
+                <Original>Airway Occluded</Original>
+                <Italian>Vie Aeree Occluse</Italian>
+                <French>Occlusion de voies respiratoires</French>
+                <Spanish>Vía respiratoria ocluida</Spanish>
+            </Key>
+            <Key ID="STR_MIRA_AVM_Unstable_KAT_Airway_Obstructed">
+                <Original>Airway Obstructed</Original>
+                <Italian>Vie Aeree Ostruite</Italian>
+                <French>Voies respiratoires obstruées</French>
+                <Spanish>Vías respiratoria obstruidas</Spanish>
+            </Key>
+            <Key ID="STR_MIRA_AVM_Unstable_KAT_Airway_Blocked">
+                <Original>Airway Blocked</Original>
+                <Italian>Vie Aeree Bloccate</Italian>
+                <French>Voies respiratoires bloquées</French>
+                <Spanish>Vía respiratoria bloqueada</Spanish>
+            </Key>
+        </Container>
+    </Package>
+    <Package name="Stable">
+        <Key ID="STR_MIRA_AVM_Stable_Bandage">
+            <Original>Bandage (%1)</Original>
+            <Chinesesimp>包扎 (%1)</Chinesesimp>
+            <Italian>Bendaggio (%1)</Italian>
+            <French>Bandage (%1)</French>
+            <Spanish>Vendaje (%1)</Spanish>
+        </Key>
+        <Key ID="STR_MIRA_AVM_Stable_Stitch">
+            <Original>Stitch (%1)</Original>
+            <Chinesesimp>缝合 (%1)</Chinesesimp>
+            <Italian>Sutura (%1)</Italian>
+            <French>Suture (%1)</French>
+            <Spanish>Sutura (%1)</Spanish>
+        </Key>
+        <Key ID="STR_MIRA_AVM_Stable_Low_Heart_Rate">
+            <Original>Heart Rate (%1)</Original>
+            <Chinesesimp>心率 (%1)</Chinesesimp>
+            <Italian>Frequenza Cardiaca (%1)</Italian>
+            <French>Fréquence cardiaque (%1)</French>
+            <Spanish>Frecuencia cardíaca (%1)</Spanish>
+        </Key>
+        <Key ID="STR_MIRA_AVM_Stable_Low_Blood_Pressure">
+            <Original>Blood Pressure (%1)</Original>
+            <Chinesesimp>血压 (%1)</Chinesesimp>
+            <Italian>Pressione Sanguigna (%1)</Italian>
+            <French>Tension artérielle (%1)</French>
+            <Spanish>Presión arterial (%1)</Spanish>
+        </Key>
+        <Key ID="STR_MIRA_AVM_Stable_Low_Blood_Pressure_With_IV">
+            <Original>Blood Pressure (%1) [%2ml]</Original>
+            <Chinesesimp>血压 (%1) [%2ml]</Chinesesimp>
+            <Italian>Pressione Sanguigna (%1) [%2ml]</Italian>
+            <French>Tension artérielle (%1) [%2ml]</French>
+            <Spanish>Presión arterial (%1) [%2ml]</Spanish>
+        </Key>
+        <Key ID="STR_MIRA_AVM_Stable_Arm_Fractures">
+            <Original>Fractures (%1)</Original>
+            <Chinesesimp>骨折 (%1)</Chinesesimp>
+            <Italian>Fratture (%1)</Italian>
+            <French>Fractures (%1)</French>
+            <Spanish>Fracturas (%1)</Spanish>
+        </Key>
+        <Key ID="STR_MIRA_AVM_Stable_Arm_Fractures_Error">
+            <Original>Fractures (Error Fetching Amount)</Original>
+            <Chinesesimp>骨折 (无法获取伤口数量)</Chinesesimp>
+            <Italian>Fratture (Errore Recupero Valore)</Italian>
+            <French>Fractures (Erreur de récupération valeur)</French>
+            <Spanish>Fracturas (Error de recuperación de valor)</Spanish>
+        </Key>
+        <Key ID="STR_MIRA_AVM_Stable_Splinted_Fractures">
+            <Original>Splinted Fractures (%1)</Original>
+            <Chinesesimp>已固定的骨折 (%1)</Chinesesimp>
+            <Italian>Fratture Steccate (%1)</Italian>
+            <French>Fractures attelles (%1)</French>
+            <Spanish>Fracturas entablilladas (%1)</Spanish>
+        </Key>
+        <Key ID="STR_MIRA_AVM_Stable_Splinted_Fractures_Error">
+            <Original>Splinted Fractures (Error Fetching Amount)</Original>
+            <Chinesesimp>已固定的骨折 (无法获取伤口数量)</Chinesesimp>
+            <Italian>Fratture Steccate (Errore Recupero Valore)</Italian>
+            <French>Fractures attelles (Erreur de récupération valeur)</French>
+            <Spanish>Fracturas entablilladas (Error de recuperación de valor)</Spanish>
+        </Key>
+        <Key ID="STR_MIRA_AVM_Stable_Tourniquets">
+            <Original>Tourniquets (%1)</Original>
+            <Chinesesimp>止血带 (%1)</Chinesesimp>
+            <Italian>Laccio Emostatico (%1)</Italian>
+            <French>Garrots (%1)</French>
+            <Spanish>Torniquetes (%1)</Spanish>
+        </Key>
+    </Package>
+    <Package name="Settings">
+        <Key ID="STR_MIRA_AVM_Settings_Addon_Name">
+            <Original>ACE Vehicle Medical</Original>
+            <Italian>ACE Veicolo Medico</Italian>
+            <French>ACE Véhicule Médical</French>
+            <Spanish>ACE vehículo médico</Spanish>
+        </Key>
+        <Container name="General">
+            <Key ID="STR_MIRA_AVM_Settings_General_Category">
+                <Original>General</Original>
+                <Italian>Generale</Italian>
+                <French>Général</French>
+                <Spanish>General</Spanish>
+            </Key>
+            <Key ID="STR_MIRA_AVM_Settings_General_Version">
+                <Original>Version: %1</Original>
+                <Italian>Versione: %1</Italian>
+                <French>Vérsion: %1</French>
+                <Spanish>Versión: %1</Spanish>
+            </Key>
+            <Key ID="STR_MIRA_AVM_Settings_General_Version_Tooltip">
+                <Original>Installed Version of AVM</Original>
+                <Italian>Versione Installata di AVM</Italian>
+                <French>Version installée d'AVM</French>
+                <Spanish>Versión instalada de AVM</Spanish>
+            </Key>
+            <Key ID="STR_MIRA_AVM_Settings_General_Enable">
+                <Original>Enable AVM</Original>
+                <Italian>Abilita AVM</Italian>
+                <French>Activer AVM</French>
+                <Spanish>Habilitar AVM</Spanish>
+            </Key>
+            <Key ID="STR_MIRA_AVM_Settings_General_Enable_Tooltip">
+                <Original>Show or hide all ACE Vehicle Medical actions</Original>
+                <Italian>Mostra o nascondi tutte le azioni mediche del veicolo ACE</Italian>
+                <French>Afficher ou masquer toutes les actions médicales du véhicule ACE</French>
+                <Spanish>Mostrar u ocultar todas las acciones médicas de vehículos de ACE</Spanish>
+            </Key>
+            <Key ID="STR_MIRA_AVM_Settings_General_Warn_Selecting_Dead">
+                <Original>Warn when selecting deceased</Original>
+                <Italian>Avvisa quando si seleziona un deceduto</Italian>
+                <French>Avertir lors de la sélection d'un décedé</French>
+                <Spanish>Advertir al seleccionar difunto</Spanish>
+            </Key>
+            <Key ID="STR_MIRA_AVM_Settings_General_Warn_Selecting_Dead_Tooltip">
+                <Original>Display a popup and play a click sound when you view someone who is dead (Rare)</Original>
+                <Italian>Visualizza un popup e riproduci un clic quando vedi qualcuno che è morto (Raro)</Italian>
+                <French>Affichez une fenêtre contextuelle et jouez un clic lorsque vous voyez quelqu'un qui est mort (Rare)</French>
+                <Spanish>Muestre una notificación y reproduzca un sonido de clic cuando vea a alguien que está muerto (raro)</Spanish>
+            </Key>
+            <Key ID="STR_MIRA_AVM_Settings_General_Cache_Interval">
+                <Original>Cache Lifetime</Original>
+                <Italian>Durata della cache</Italian>
+                <French>Durée du cache</French>
+                <Spanish>Duración de la caché</Spanish>
+            </Key>
+            <Key ID="STR_MIRA_AVM_Settings_General_Cache_Interval_Tooltip">
+                <Original>The speed at which AVM updates in seconds, a lower value will provide more accurate updates, while a higher value will be more performant but be less accurate.</Original>
+                <Italian>La velocità con cui AVM si aggiorna in secondi, un valore più basso fornirà aggiornamenti più accurati, mentre un valore più alto sarà più performante ma meno accurato.</Italian>
+                <French>La vitesse à laquelle AVM se met à jour en secondes, une valeur inférieure fournira des mises à jour plus précises, tandis qu'une valeur plus élevée fonctionnera mieux mais moins précise.</French>
+                <Spanish>La velocidad a la que AVM se actualiza en segundos, un valor más bajo proporcionará actualizaciones más precisas, mientras que un valor más alto será más eficaz pero menos preciso.</Spanish>
+            </Key>
+        </Container>
+        <Container name="Incapacitated">
+            <Key ID="STR_MIRA_AVM_Settings_Incapacitated_Category">
+                <Original>Incapacitated</Original>
+                <Italian>Invalido</Italian>
+                <French>Invalide</French>
+                <Spanish>Incapacitado</Spanish>
+            </Key>
+            <Key ID="STR_MIRA_AVM_Settings_Incapacitated_Enable">
+                <Original>Enable Incapacitated</Original>
+                <Italian>Abilita Invalido</Italian>
+                <French>Activer Invalide</French>
+                <Spanish>Habilitar incapacitado</Spanish>
+            </Key>
+            <Key ID="STR_MIRA_AVM_Settings_Incapacitated_Enable_Tooltip">
+                <Original>Display incapacitated list</Original>
+                <Italian>Mostra lista degli inabili</Italian>
+                <French>Afficher la liste des invalides</French>
+                <Spanish>Mostrar lista de incapacitados</Spanish>
+            </Key>
+            <Key ID="STR_MIRA_AVM_Settings_Incapacitated_Show_Count">
+                <Original>Display Number of Incapacitated</Original>
+                <Italian>Mostra il numero degli inabili</Italian>
+                <French>Afficher le nombre des invalides</French>
+                <Spanish>Mostrar número de discapacitados</Spanish>
+            </Key>
+            <Key ID="STR_MIRA_AVM_Settings_Incapacitated_Show_Count_Tooltip">
+                <Original>Display the number of incapacitated units on the action</Original>
+                <Italian>Mostra il numero di unità inabili nell'azione</Italian>
+                <French>Affiche le nombre d'unités invalides dans l'action</French>
+                <Spanish>Muestra el número de unidades incapacitadas en la acción.</Spanish>
+            </Key>
+            <Key ID="STR_MIRA_AVM_Settings_Incapacitated_Allow_Unload_All">
+                <Original>Allow Unload All</Original>
+                <Italian>Abilita Scarica Tutti</Italian>
+                <French>Activer Décharger tous</French>
+                <Spanish>Permitir descargar todo</Spanish>
+            </Key>
+            <Key ID="STR_MIRA_AVM_Settings_Incapacitated_Allow_Unload_All_Tooltip">
+                <Original>Allow multiple units to be unloaded simeltaneously</Original>
+                <Italian>Consentire a più unità di essere scaricate contemporaneamente</Italian>
+                <French>Autoriser le déchargement de plusieurs unités en même temps</French>
+                <Spanish>Permitir que se descarguen varias unidades simultáneamente</Spanish>
+            </Key>
+        </Container>
+        <Container name="Unstable">
+            <Key ID="STR_MIRA_AVM_Settings_Unstable_Category">
+                <Original>Unstable</Original>
+                <Italian>Instabile</Italian>
+                <French>Instable</French>
+                <Spanish>Inestable</Spanish>
+            </Key>
+            <Key ID="STR_MIRA_AVM_Settings_Unstable_Enable">
+                <Original>Enable Unstable</Original>
+                <Italian>Abilita Instabile</Italian>
+                <French>Activer Instable</French>
+                <Spanish>Habilitar inestable</Spanish>
+            </Key>
+            <Key ID="STR_MIRA_AVM_Settings_Unstable_Enable_Tooltip">
+                <Original>Unstable list will be shown</Original>
+                <Italian>Verrà mostrato un elenco degli instabili</Italian>
+                <French>Une liste d'instable s'affichera</French>
+                <Spanish>Se mostrará una lista inestable</Spanish>
+            </Key>
+            <Key ID="STR_MIRA_AVM_Settings_Unstable_Show_Count">
+                <Original>Show Number of Unstable</Original>
+                <Italian>Mostra numero degli instabili</Italian>
+                <French>Afficher le nombre d'instables</French>
+                <Spanish>Mostrar número de inestables</Spanish>
+            </Key>
+            <Key ID="STR_MIRA_AVM_Settings_Unstable_Show_Count_Tooltip">
+                <Original>Display the number of unstable units on the root action</Original>
+                <Italian>Visualizza il numero di unità instabili sul root action</Italian>
+                <French>Affiche le nombre des unités instables sur l'action root</French>
+                <Spanish>Muestra el número de unidades inestables en la acción raíz.</Spanish>
+            </Key>
+            <Key ID="STR_MIRA_AVM_Settings_Unstable_Track_Cardiac_Arrest">
+                <Original>Track Cardiac Arrest</Original>
+                <Italian>Controlla Arresto Cardiaco</Italian>
+                <French>Vérifier Arrêt Cardiaque</French>
+                <Spanish>Seguimiento del paro cardíaco</Spanish>
+            </Key>
+            <Key ID="STR_MIRA_AVM_Settings_Unstable_Track_Cardiac_Arrest_Tooltip">
+                <Original>Cardiac Arrest will be monitored and reported by AVM</Original>
+                <Italian>L'arresto cardiaco sarà monitorato e segnalato da AVM</Italian>
+                <French>L'arrêt cardiaque sera surveillé et signalé par AVM</French>
+                <Spanish>El paro cardíaco será monitoreado e informado por AVM</Spanish>
+            </Key>
+            <Key ID="STR_MIRA_AVM_Settings_Unstable_Track_Bleeding">
+                <Original>Track Bleeding</Original>
+                <Italian>Controlla Sanguinamento</Italian>
+                <French>Vérifier les saignements</French>
+                <Spanish>Comprobar si hai perdida de sangre</Spanish>
+            </Key>
+            <Key ID="STR_MIRA_AVM_Settings_Unstable_Track_Bleeding_Tooltip">
+                <Original>Bleeding will be monitored and reported by AVM</Original>
+                <Italian>Il Sanguinamento sarà monitorato e segnalato da AVM</Italian>
+                <French>Les saignements seront surveillés et signalés par AVM</French>
+                <Spanish>Seguimiento de sangrado</Spanish>
+            </Key>
+            <Key ID="STR_MIRA_AVM_Settings_Unstable_Track_Unconscious">
+                <Original>Track Unconscious</Original>
+                <Italian>Controlla Incoscienza </Italian>
+                <French>Vérifier l'inconscience</French>
+                <Spanish>Comprobar si el paciente es inconsciente</Spanish>
+            </Key>
+            <Key ID="STR_MIRA_AVM_Settings_Unstable_Track_Unconscious_Tooltip">
+                <Original>Consciousness will be monitored and reported by AVM</Original>
+                <Italian>Incoscienza sarà monitorata e segnalata da AVM</Italian>
+                <French>L'inconscience sera surveillée et signalée par AVM</French>
+                <Spanish>La conciencia será monitoreada e informada por AVM</Spanish>
+            </Key>
+            <Key ID="STR_MIRA_AVM_Settings_Unstable_Track_Low_Blood_Pressure">
+                <Original>Track Low Blood Pressure</Original>
+                <Italian>Controlla Pressione Saguigna Bassa</Italian>
+                <French>Vérifier l'hypotension artérielle</French>
+                <Spanish>Verificar de la presión arterial baja</Spanish>
+            </Key>
+            <Key ID="STR_MIRA_AVM_Settings_Unstable_Track_Low_Blood_Pressure_Tooltip">
+                <Original>Low blood pressure will be monitored and reported by AVM</Original>
+                <Italian>Pressione sanguigna sarà monitorata e segnalata da AVM</Italian>
+                <French>La pression artérielle sera surveillée et signalée par AVM</French>
+                <Spanish>La presión arterial baja será monitoreada e informada por AVM</Spanish>
+            </Key>
+            <Key ID="STR_MIRA_AVM_Settings_Unstable_Low_Blood_Pressure_Threshold">
+                <Original>Low Blood Pressure Threshold</Original>
+                <Italian>Soglia Pressione sanguigna Bassa</Italian>
+                <French>Seuil de pression artérielle basse</French>
+                <Spanish>Umbral de presión arterial baja</Spanish>
+            </Key>
+            <Key ID="STR_MIRA_AVM_Settings_Unstable_Low_Blood_Pressure_Threshold_Tooltip">
+                <Original>Value below which a given patient will have 'low' blood pressure</Original>
+                <Italian>Valore al di sotto del quale un paziente avrà una pressione sanguigna "bassa"</Italian>
+                <French>Valeur en dessous de laquelle un patient aura une tension artérielle "basse"</French>
+                <Spanish>Valor por debajo del cual un paciente determinado tendrá presión arterial 'baja'</Spanish>
+            </Key>
+            <Key ID="STR_MIRA_AVM_Settings_Unstable_Track_IV">
+                <Original>Track IVs</Original>
+                <Italian>Controlla IV</Italian>
+                <French>Vérifier IV</French>
+                <Spanish>Verificar IVs</Spanish>
+            </Key>
+            <Key ID="STR_MIRA_AVM_Settings_Unstable_Track_IV_Tooltip">
+                <Original>Total volume of IVs is displayed</Original>
+                <Italian>Viene mostrato il volume totale delle IV </Italian>
+                <French>Le volume total des IV est affiché</French>
+                <Spanish>Se muestra el volumen total de IV</Spanish>
+            </Key>
+            <Key ID="STR_MIRA_AVM_Settings_Unstable_Track_Low_Heart_Rate">
+                <Original>Track Low Heart Rate</Original>
+                <Italian>Controlla Frequenza Cardiaca</Italian>
+                <French>Vérifier la fréquence cardiaque</French>
+                <Spanish>Verificar de frecuencia cardíaca baja</Spanish>
+            </Key>
+            <Key ID="STR_MIRA_AVM_Settings_Unstable_Track_Low_Heart_Rate_Tooltip">
+                <Original>Low heart rate will be monitored and reported by AVM</Original>
+                <Italian>Frequenza Cardiaca sarà monitorata e segnalata da AVM</Italian>
+                <French>La fréquence cardiaque sera surveillée et signalée par AVM</French>
+                <Spanish>AVM controlará y notificará la frecuencia cardíaca baja</Spanish>
+            </Key>
+            <Key ID="STR_MIRA_AVM_Settings_Unstable_Low_Heart_Rate_Threshold">
+                <Original>Low Heart Rate Threshold</Original>
+                <Italian>Soglia Frequenza Cardiaca Bassa</Italian>
+                <French>Seuil de fréquence cardiaque basse</French>
+                <Spanish>Umbral de frecuencia cardíaca baja</Spanish>
+            </Key>
+            <Key ID="STR_MIRA_AVM_Settings_Unstable_Low_Heart_Rate_Threshold_Tooltip">
+                <Original>Value below which a given patient will have 'low' heart rate</Original>
+                <Italian>Valore al di sotto del quale un paziente avrà una frequenza cardiaca "bassa"</Italian>
+                <French>Valeur en dessous de laquelle un patient aura une fréquence cardiaque "basse"</French>
+                <Spanish>Valor por debajo del cual un paciente determinado tendrá una frecuencia cardíaca 'baja'</Spanish>
+            </Key>
+            <Key ID="STR_MIRA_AVM_Settings_Unstable_Track_Leg_Fractures">
+                <Original>Track Leg Fractures</Original>
+                <Italian>Controlla Fratture Gamba</Italian>
+                <French>Vérifier les fractures de la jambe</French>
+                <Spanish>Verificar fracturas de pierna</Spanish>
+            </Key>
+            <Key ID="STR_MIRA_AVM_Settings_Unstable_Track_Leg_Fractures_Tooltip">
+                <Original>Leg Fractures will be monitored and reported as unstable by AVM</Original>
+                <Italian>Fratture gamba saranno monitorate e segnalate da AVM</Italian>
+                <French>Les fractures de la jambe seront surveillées et signalées par AVM</French>
+                <Spanish>Las fracturas de pierna serán monitoreadas e informadas por AVM</Spanish>
+            </Key>
+            <Key ID="STR_MIRA_AVM_Settings_Unstable_Track_Leg_Splints">
+                <Original>Track Leg Splints</Original>
+                <Italian>Controlla Steccature Gamba</Italian>
+                <French>Vérifier l'attelle de jambe</French>
+                <Spanish>Verificar las férulas para las piernas</Spanish>
+            </Key>
+            <Key ID="STR_MIRA_AVM_Settings_Unstable_Track_Leg_Splints_Tooltip">
+                <Original>Splinted Leg Fractures will be reported in the unstable category by AVM</Original>
+                <Italian>Steccature Gamba saranno monitorate e segnalate da AVM</Italian>
+                <French>Les attelles de jambe seront surveillées et signalées par AVM</French>
+                <Spanish>Las fracturas entablilladas se informarán en la categoría inestable por AVM</Spanish>
+            </Key>
+            <Key ID="STR_MIRA_AVM_Settings_Unstable_Track_Dead">
+                <Original>Track Deaceased</Original>
+                <Italian>Controlla Deceduti</Italian>
+                <French>Vérifier Décédé</French>
+                <Spanish>Verifica Fallecido</Spanish>
+            </Key>
+            <Key ID="STR_MIRA_AVM_Settings_Unstable_Track_Dead_Tooltip">
+                <Original>Dead members will be reported in the unstable category by AVM</Original>
+                <Italian>I membri deceduti verranno segnalati nella categoria instabile da AVM</Italian>
+                <French>Les membres décédés seront signalés dans la catégorie instable par AVM</French>
+                <Spanish>Los miembros muertos serán reportados en la categoría inestable por AVM</Spanish>
+            </Key>
+            <Key ID="STR_MIRA_AVM_Settings_Unstable_Take_Dogtags">
+                <Original>Track Dogtags</Original>
+                <Italian>Controlla Piastrine</Italian>
+                <French>Vérifier les plaquettes d'identification</French>
+                <Spanish>Verifica de placas de identificación</Spanish>
+            </Key>
+            <Key ID="STR_MIRA_AVM_Settings_Unstable_Take_Dogtags_Tooltip">
+                <Original>Adds an action to take dogtags off unconscious or dead units.</Original>
+                <Italian>Aggiunge un'azione per rimuovere le piastrine dalle unità prive di sensi o morte.</Italian>
+                <French>Ajoute une action pour retirer les plaquettes des unités inconscientes ou mortes.</French>
+                <Spanish>Agrega una acción para quitar las placas de identificación de las unidades inconscientes o muertas.</Spanish>
+            </Key>
+            <Key ID="STR_MIRA_AVM_Settings_Unstable_Take_Dogtags_Dead_Only">
+                <Original>Take Dogtags from Deceased Only</Original>
+                <Italian>Prendi Piastrine solo da personale deceduto</Italian>
+                <French>Prendre des plaquettes uniquement sur du personnel décédé</French>
+                <Spanish>Tome las etiquetas de identificación de los fallecidos solamente</Spanish>
+            </Key>
+            <Key ID="STR_MIRA_AVM_Settings_Unstable_Take_Dogtags_Dead_Only_Tooltip">
+                <Original>Only allows you to take dogtags off deceased units, requires Track Dogtags to be on to work.</Original>
+                <Italian>Ti permette solo di togliere le piastrine dal personale deceduto, richiede che Track Dogtags sia attivo per funzionare.</Italian>
+                <French>Il vous permet uniquement de retirer les plaques d'identification du personnel décédé, nécessite que les plaques d'identification soient actives pour fonctionner.</French>
+                <Spanish>Solo le permite llevar placas de identificación de unidades fallecidas, requiere que las placas de identificación de seguimiento funcionen.</Spanish>
+            </Key>
+            <Key ID="STR_MIRA_AVM_Settings_Unstable_Allow_Unload">
+                <Original>Enable Unload</Original>
+            </Key>
+            <Key ID="STR_MIRA_AVM_Settings_Unstable_Allow_Unload_Tooltip">
+                <Original>Adds an action to unload unconscious or dead units.</Original>
+            </Key>
+        </Container>
+        <Container name="Unstable_KAT">
+            <Key ID="STR_MIRA_AVM_Settings_Unstable_KAT_Track_SpO2">
+                <Original>Track KAM SpO2</Original>
+                <Italian>Controlla KAM SpO2</Italian>
+                <French>Vérifiez KAM SpO2</French>
+                <Spanish>Seguimiento de KAM SpO2</Spanish>
+            </Key>
+            <Key ID="STR_MIRA_AVM_Settings_Unstable_KAT_Track_SpO2_Tooltip">
+                <Original>KAT Advanced Medical SpO2 will be monitored and reported by AVM</Original>
+                <Italian>KAT Advanced Medical SpO2 sarà monitorata e segnalata da AVM</Italian>
+                <French>KAT Advanced Medical SpO2 sera surveillé et signalé par AVM</French>
+                <Spanish>AVM controlará y notificará KAT Advanced Medical SpO2</Spanish>
+            </Key>
+            <Key ID="STR_MIRA_AVM_Settings_Unstable_KAT_Track_Pneumothorax">
+                <Original>Track KAM Pneumothroax</Original>
+                <Italian>Controlla KAM Pneumotorace</Italian>
+                <French>Vérifier le pneumothorax KAM</French>
+                <Spanish>Seguimiento de neumotórax KAM</Spanish>
+            </Key>
+            <Key ID="STR_MIRA_AVM_Settings_Unstable_KAT_Track_Pneumothorax_Tooltip">
+                <Original>Pneumothorax, Hemopneumothroax, and Tension Pneumothorax will be monitored and reported by AVM</Original>
+                <Italian>Pneumotorace, Emopneumotorace e Pneumotorace iperteso saranno monitorati e segnalati da AVM</Italian>
+                <French>Le pneumothorax, l'hémopneumothorax et le pneumothorax compressif seront surveillés et signalés par AVM</French>
+                <Spanish>El neumotórax, el hemoneumotroax y el neumotórax a tensión serán monitoreados e informados por AVM</Spanish>
+            </Key>
+            <Key ID="STR_MIRA_AVM_Settings_Unstable_KAT_Track_Blocked_Airways">
+                <Original>Track KAM Blocked Airways</Original>
+                <Italian>Controlla KAM Vie Aeree Bloccate</Italian>
+                <French>Vérifiez les voies respiratoires bloquées par KAM</French>
+                <Spanish>Seguimiento de las vías respiratorias bloqueadas por KAM</Spanish>
+            </Key>
+            <Key ID="STR_MIRA_AVM_Settings_Unstable_KAT_Track_Blocked_Airways_Tooltip">
+                <Original>Airway Obstruction and Occlusion will be monitored and reported by AVM</Original>
+                <Italian>Les voies respiratoires obstruées et en occlusion seront surveillées et signalées par AVM</Italian>
+                <French>Vérifiez les voies respiratoires bloquées par KAM</French>
+                <Spanish>La obstrucción y oclusión de las vías respiratorias será monitoreada e informada por AVM</Spanish>
+            </Key>
+        </Container>
+        <Container name="Stable">
+            <Key ID="STR_MIRA_AVM_Settings_Stable_Category">
+                <Original>Stable</Original>
+                <Italian>Stabile</Italian>
+                <French>Stable</French>
+                <Spanish>Estable</Spanish>
+            </Key>
+            <Key ID="STR_MIRA_AVM_Settings_Stable_Enable">
+                <Original>Enable Stable List</Original>
+                <Italian>Abilita Lista Stabile</Italian>
+                <French>Activer la liste stable</French>
+                <Spanish>Se mostrará una lista estable</Spanish>
+            </Key>
+            <Key ID="STR_MIRA_AVM_Settings_Stable_Enable_Tooltip">
+                <Original>Stable list will be shown</Original>
+                <Italian>Verrà mostrato un elenco stabile</Italian>
+                <French>S'affichera une liste stable</French>
+                <Spanish>Se le mostrará una lista de pacientes estables</Spanish>
+            </Key>
+            <Key ID="STR_MIRA_AVM_Settings_Stable_Show_Count">
+                <Original>Show Number of Stable</Original>
+                <Italian>Mostra numero di stabili</Italian>
+                <French>Afficher le nombre de stables</French>
+                <Spanish>Mostrar número de estable</Spanish>
+            </Key>
+            <Key ID="STR_MIRA_AVM_Settings_Stable_Show_Count_Tooltip">
+                <Original>Display the number of stable units on the root action</Original>
+                <Italian>Visualizza il numero di unità stabili sul root action</Italian>
+                <French>Affiche le nombre d'unités stables sur le root action</French>
+                <Spanish>Muestra el número de unidades estables en la acción raíz.</Spanish>
+            </Key>
+            <Key ID="STR_MIRA_AVM_Settings_Stable_Track_Open_Wounds">
+                <Original>Track Open Wounds</Original>
+                <Italian>Controlla ferite aperte</Italian>
+                <French>Vérifier les plaies ouvertes</French>
+                <Spanish>Seguimiento de heridas abiertas</Spanish>
+            </Key>
+            <Key ID="STR_MIRA_AVM_Settings_Stable_Track_Open_Wounds_Tooltip">
+                <Original>Open wounds that need to be bandaged will be monitored and reported by AVM</Original>
+                <Italian>Le ferite aperte che devono essere fasciate saranno monitorate e segnalate da AVM</Italian>
+                <French>Les plaies ouvertes qui doivent être bandées seront surveillées et signalées par AVM</French>
+                <Spanish>Las heridas abiertas que necesitan vendajes serán monitoreadas e informadas por AVM</Spanish>
+            </Key>
+            <Key ID="STR_MIRA_AVM_Settings_Stable_Track_Stitchable_Wounds">
+                <Original>Track Stitchable Wounds</Original>
+                <Italian>Controlla ferite suturabili</Italian>
+                <French>Vérifier les plaies suturables</French>
+                <Spanish>Seguimiento de heridas cosibles</Spanish>
+            </Key>
+            <Key ID="STR_MIRA_AVM_Settings_Stable_Track_Stitchable_Wounds_Tooltip">
+                <Original>Stitchable body parts will be monitored and reported by AVM</Original>
+                <Italian>Le parti del corpo suturabili saranno monitorate e segnalate da AVM</Italian>
+                <French>Les parties du corps suturables seront surveillées et signalées par AVM</French>
+                <Spanish>Las partes del cuerpo que se pueden coser serán monitoreadas e informadas por AVM</Spanish>
+            </Key>
+
+            <Key ID="STR_MIRA_AVM_Settings_Stable_Track_Low_Blood_Pressure">
+                <Original>Track Low Blood Pressure</Original>
+                <Italian>Controlla Pressione Saguigna Bassa</Italian>
+                <French>Vérifier l'hypotension artérielle</French>
+                <Spanish>Seguimiento de la presión arterial baja</Spanish>
+            </Key>
+            <Key ID="STR_MIRA_AVM_Settings_Stable_Track_Low_Blood_Pressure_Tooltip">
+                <Original>Low blood pressure will be monitored and reported by AVM</Original>
+                <Italian>Pressione Sanguigna Bassa sarà monitorata e segnalata da AVM</Italian>
+                <French>L'hypotension artérielle sera surveillé et signalé par AVM</French>
+                <Spanish>La presión arterial baja será monitoreada e informada por AVM</Spanish>
+            </Key>
+            <Key ID="STR_MIRA_AVM_Settings_Stable_Track_IV">
+                <Original>Track IVs</Original>
+                <Italian>Controlla IV</Italian>
+                <French>Vérifier IV</French>
+                <Spanish>Verificar IVs</Spanish>
+            </Key>
+            <Key ID="STR_MIRA_AVM_Settings_Stable_Track_IV_Tooltip">
+                <Original>IV total volume will be displayed</Original>
+                <Italian>Sarà mostrato il Volume Totale IV </Italian>
+                <French>Le volume total IV sera affiché</French>
+                <Spanish>Se mostrará el volumen total IV</Spanish>
+            </Key>
+            <Key ID="STR_MIRA_AVM_Settings_Stable_Low_Blood_Pressure_Threshold">
+                <Original>Low Blood Pressure Threshold</Original>
+                <Italian>Soglia Pressione Sanguigna Bassa</Italian>
+                <French>Seuil de pression artérielle basse</French>
+                <Spanish>Umbral de presión arterial baja</Spanish>
+            </Key>
+            <Key ID="STR_MIRA_AVM_Settings_Stable_Low_Blood_Pressure_Threshold_Tooltip">
+                <Original>Value below which a given patient will have 'low' blood pressure</Original>
+                <Italian>Valore al di sotto del quale un paziente avrà una pressione sanguigna "bassa"</Italian>
+                <French>Valeur en dessous de laquelle un patient aura une tension artérielle "basse"</French>
+                <Spanish>Valor por debajo del cual un paciente determinado tendrá presión arterial 'baja'</Spanish>
+            </Key>
+            <Key ID="STR_MIRA_AVM_Settings_Stable_Track_Low_Heart_Rate">
+                <Original>Track Low Heart Rate</Original>
+                <Italian>Controlla Ritmo Cardiaco Basso</Italian>
+                <French>Vérifier la faible fréquence cardiaque</French>
+                <Spanish>Seguimiento de frecuencia cardíaca baja</Spanish>
+            </Key>
+            <Key ID="STR_MIRA_AVM_Settings_Stable_Track_Low_Heart_Rate_Tooltip">
+                <Original>Low heart rate will be monitored and reported by AVM</Original>
+                <Italian>Ritmo Cardiaco Basso sarà monitorato e segnalato da AVM</Italian>
+                <French>La faible fréquence cardiaque sera surveillée et signalée par AVM</French>
+                <Spanish>AVM controlará y notificará la frecuencia cardíaca baja</Spanish>
+            </Key>
+            <Key ID="STR_MIRA_AVM_Settings_Stable_Low_Heart_Rate_Threshold">
+                <Original>Low Heart Rate Threshold</Original>
+                <Italian>Soglia Ritmo Cardiaco Basso</Italian>
+                <French>Seuil de fréquence cardiaque basse</French>
+                <Spanish>Umbral de frecuencia cardíaca baja</Spanish>
+            </Key>
+            <Key ID="STR_MIRA_AVM_Settings_Stable_Low_Heart_Rate_Threshold_Tooltip">
+                <Original>Value below which a given patient will have 'low' heart rate</Original>
+                <Italian>Valore al di sotto del quale un paziente avrà una frequenza cardiaca "bassa"</Italian>
+                <French>Valeur en dessous de laquelle un patient aura une fréquence cardiaque "basse"</French>
+                <Spanish>Valor por debajo del cual un paciente determinado tendrá una frecuencia cardíaca 'baja'</Spanish>
+            </Key>
+            <Key ID="STR_MIRA_AVM_Settings_Stable_Track_Arm_Fractures">
+                <Original>Track Arm Fractures</Original>
+                <Italian>Controlla Fratture Braccia</Italian>
+                <French>Vérifier les bras cassés</French>
+                <Spanish>Seguimiento de fracturas de brazo</Spanish>
+            </Key>
+            <Key ID="STR_MIRA_AVM_Settings_Stable_Track_Arm_Fractures_Tooltip">
+                <Original>Arm Fractures will be monitored and reported as stable by AVM</Original>
+                <Italian>Fratture Braccia sarà monitorata e segnalata come stabile da AVM</Italian>
+                <French>Les fractures du bras seront surveillées et signalées comme stables par AVM</French>
+                <Spanish>Las fracturas de brazo serán monitoreadas e informadas como estables por AVM</Spanish>
+            </Key>
+            <Key ID="STR_MIRA_AVM_Settings_Stable_Track_Arm_Splints">
+                <Original>Track Arm Splints</Original>
+                <Italian>Controlla Steccature Braccia</Italian>
+                <French>Vérifier l'attelle de bras</French>
+                <Spanish>Férulas para brazo de seguimiento</Spanish>
+            </Key>
+            <Key ID="STR_MIRA_AVM_Settings_Stable_Track_Arm_Splints_Tooltip">
+                <Original>Splinted Arm Fractures will be reported in the stable category by AVM</Original>
+                <Italian>Steccatture Braccia sarà monitorata e segnalata come stabile da AVM</Italian>
+                <French>L'attelle de bras sera surveillée et signalée comme stable par AVM</French>
+                <Spanish>Las fracturas de brazo entablillado se informarán en la categoría estable por AVM</Spanish>
+            </Key>
+            <Key ID="STR_MIRA_AVM_Settings_Stable_Track_Tourniquets">
+                <Original>Track Tourniquets</Original>
+                <Italian>Controlla Laccio Emostatico</Italian>
+                <French>Vérifier le garrot</French>
+                <Spanish>Torniquetes de pista</Spanish>
+            </Key>
+            <Key ID="STR_MIRA_AVM_Settings_Stable_Track_Tourniquets_Tooltip">
+                <Original>Tourniquets will be reported in the stable category by AVM</Original>
+                <Italian>Laccio Emostatico sarà segnalato come categoria stabile da AVM</Italian>
+                <French>Le garrot sera signalé comme une catégorie stable par AVM</French>
+                <Spanish>Los torniquetes serán reportados en la categoría estable por AVM.</Spanish>
+            </Key>
+        </Container>
+        <Container name="Vehicles">
+            <Key ID="STR_MIRA_AVM_Settings_Vehicles_Category">
+                <Original>Vehicles</Original>
+                <Italian>Veicolo</Italian>
+                <French>Véhicule</French>
+                <Spanish>Vehículos</Spanish>
+            </Key>
+            <Key ID="STR_MIRA_AVM_Settings_Vehicles_Car">
+                <Original>Enable on Car</Original>
+                <Italian>Abilita su Auto</Italian>
+                <French>Activer sur voiture</French>
+                <Spanish>Habilitar en automóviles</Spanish>
+            </Key>
+            <Key ID="STR_MIRA_AVM_Settings_Vehicles_Car_Tooltip">
+                <Original>AVM is enabled for Cars</Original>
+                <Italian>AVM é abilitato su Auto</Italian>
+                <French>AVM est activé sur voiture</French>
+                <Spanish>AVM está habilitado para automóviles</Spanish>
+            </Key>
+            <Key ID="STR_MIRA_AVM_Settings_Vehicles_Helicopter">
+                <Original>Enable on Helicopter</Original>
+                <Italian>Abilita su Elicottero</Italian>
+                <French>Activer sur l'hélicoptère</French>
+                <Spanish>Habilitar en helicóptero</Spanish>
+            </Key>
+            <Key ID="STR_MIRA_AVM_Settings_Vehicles_Helicopter_Tooltip">
+                <Original>AVM is enabled for Helicopters</Original>
+                <Italian>AVM é abilitato su Elicottero</Italian>
+                <French>AVM est activé sur l'hélicoptère</French>
+                <Spanish>AVM está habilitado para helicópteros</Spanish>
+            </Key>
+            <Key ID="STR_MIRA_AVM_Settings_Vehicles_Plane">
+                <Original>Enable on Plane</Original>
+                <Italian>Abilita su Aereo</Italian>
+                <French>Activer dans l'avion</French>
+                <Spanish>Habilitar en avión</Spanish>
+            </Key>
+            <Key ID="STR_MIRA_AVM_Settings_Vehicles_Plane_Tooltip">
+                <Original>AVM is enabled for Planes</Original>
+                <Italian>AVM é abilitato su Aereo</Italian>
+                <French>AVM est activé sur l'avion</French>
+                <Spanish>AVM está habilitado para aviones</Spanish>
+            </Key>
+            <Key ID="STR_MIRA_AVM_Settings_Vehicles_Ship">
+                <Original>Enable on Ship</Original>
+                <Italian>Abilita su Nave</Italian>
+                <French>Activer sur le navire</French>
+                <Spanish>Habilitar en el barco</Spanish>
+            </Key>
+            <Key ID="STR_MIRA_AVM_Settings_Vehicles_Ship_Tooltip">
+                <Original>AVM is enabled for Ships</Original>
+                <Italian>AVM é abilitato su Nave</Italian>
+                <French>AVM est activé sur le navire</French>
+                <Spanish>AVM está habilitado para barcos</Spanish>
+            </Key>
+            <Key ID="STR_MIRA_AVM_Settings_Vehicles_Tank">
+                <Original>Enable on Tank</Original>
+                <Italian>Abilita su Carro</Italian>
+                <French>Activer sur Char</French>
+                <Spanish>Habilitar en el tanque</Spanish>
+            </Key>
+            <Key ID="STR_MIRA_AVM_Settings_Vehicles_Tank_Tooltip">
+                <Original>AVM is enabled for Tanks</Original>
+                <Italian>AVM é abilitato su Carro</Italian>
+                <French>AVM est activé sur Char</French>
+                <Spanish>AVM está habilitado para tanques</Spanish>
+            </Key>
+        </Container>
+        <Container name="Integrations">
+            <Key ID="STR_MIRA_AVM_Settings_Integrations_Category">
+                <Original>Integrations</Original>
+                <Italian>Integrazioni</Italian>
+                <French>Intégrations</French>
+                <Spanish>Integraciones</Spanish>
+            </Key>
+            <Key ID="STR_MIRA_AVM_Settings_Integrations_Enable_KAT">
+                <Original>Enable KAM Integration</Original>
+                <Italian>Abilita Integrazioni KAM</Italian>
+                <French>Activer les intégrations KAM</French>
+                <Spanish>Habilitar la integración de KAM</Spanish>
+            </Key>
+            <Key ID="STR_MIRA_AVM_Settings_Integrations_Enable_KAT_Tooltip">
+                <Original>AVM will show KAT Medical specific actions</Original>
+                <Italian>AVM mostrerà le azioni specifiche della KAT Medical</Italian>
+                <French>AVM montrera les actions spécifiques de KAT Medical</French>
+                <Spanish>AVM mostrará acciones específicas de KAT Medical</Spanish>
+            </Key>
+        </Container>
+    </Package>
+</Project>
