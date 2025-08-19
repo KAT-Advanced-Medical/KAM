@@ -26,7 +26,7 @@ if !(_typeOfDamage in ACEGVAR(medical_damage,damageTypeDetails)) then {
 };
 
 ACEGVAR(medical_damage,damageTypeDetails) get _typeOfDamage params ["_thresholds", "_selectionSpecific", "", "_damageWoundDetails"];
-
+TRACE_3("damageType",_thresholds,_selectionSpecific,_damageWoundDetails);
 // Administration for open wounds and ids
 private _openWounds = GET_OPEN_WOUNDS(_unit);
 

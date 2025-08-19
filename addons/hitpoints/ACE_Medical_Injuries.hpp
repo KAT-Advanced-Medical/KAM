@@ -221,6 +221,7 @@ class ACE_Medical_Injuries {
         class vehiclehit {
             // vehicle explosions are usually caused by explosive damage and should behave similarly
             thresholds[] = {{6, 3}, {4.5, 2}, {2, 2}, {0.8, 1}, {0.2, 1}, {0, 0}};
+            selectionSpecific = 0;
             class woundHandlers: woundHandlers {
                 ACEGVAR(medical_damage,woundsHandlerVehiclehit) = QFUNC(woundsHandlerVehiclehit);
                 GVAR(eviscerationHit) = QFUNC(woundsHandlerEviscerationHit);
