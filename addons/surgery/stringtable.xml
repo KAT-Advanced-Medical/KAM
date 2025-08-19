@@ -17,6 +17,7 @@
             <Chinesesimp>启用高级骨折</Chinesesimp>
             <Finnish>Mahdollistaa pitkälle edenneet murtumat</Finnish>
             <Dutch>Activeert geadvanceerde breuken</Dutch>
+            <Hungarian>Összetett töréstípusok engedélyezése</Hungarian>
         </Key>
         <Key ID="STR_KAT_Surgery_CLAMPED">
             <English>clamped</English>
@@ -34,6 +35,7 @@
             <Chinesesimp>夹紧</Chinesesimp>
             <Finnish>Kiinnitetty</Finnish>
             <Dutch>Vastgeklemd</Dutch>
+            <Hungarian>összeszorítva</Hungarian>
         </Key>
         <Key ID="STR_KAT_Surgery_CLOSED_LOCATION">
             <English>Locations Closed Reduction</English>
@@ -51,6 +53,7 @@
             <Chinesesimp>封闭复位的位置</Chinesesimp>
             <Finnish>Suljettujen paikkojen vähennys</Finnish>
             <Dutch>Locaties waar een gesloten reductie uitgevoerd kan worden</Dutch>
+            <Hungarian>Zárt törésredukció helyei</Hungarian>
         </Key>
         <Key ID="STR_KAT_Surgery_CLOSED_REDUCTION_FAIL">
             <English>Closed reduction fail chance</English>
@@ -68,6 +71,7 @@
             <Chinesesimp>封闭式减少失败几率</Chinesesimp>
             <Finnish>Suljettu vähennys epäonnistuu</Finnish>
             <Dutch>Kans dat een gesloten reductie faalt</Dutch>
+            <Hungarian>Zárt törésredukció sikertelenségi esélye</Hungarian>
         </Key>
         <Key ID="STR_KAT_Surgery_CLOSED_REDUCTION_FAIL_DESC">
             <English>Chance that closed reduction will fail. Default value 10%</English>
@@ -85,6 +89,7 @@
             <Chinesesimp>封闭式缩减失败的可能性。默认值10%</Chinesesimp>
             <Finnish>Mahdollisuus, että suljettu vähennys epäonnistuu. Oletusarvo 10 %</Finnish>
             <Dutch>Kans dat een gesloten reductie faalt. Standaard waarde is 10%</Dutch>
+            <Hungarian>A zárt törésredukció sikertelenségének esélye. Alapértelmezett érték: 10 %</Hungarian>
         </Key>
         <Key ID="STR_KAT_Surgery_CLOSED_REDUCTION_MEDLEVEL">
             <English>Allow Closed Reduction</English>
@@ -102,6 +107,7 @@
             <Chinesesimp>闭合复位所需的医疗水平</Chinesesimp>
             <Finnish>Salli suljettu pienennys</Finnish>
             <Dutch>Benodigde training om een gesloten reductie uit te voeren</Dutch>
+            <Hungarian>Zárt törésredukció engedélyezése</Hungarian>
         </Key>
         <Key ID="STR_KAT_Surgery_CLOSED_TIMER">
             <English>Closed Reduction Time</English>
@@ -119,6 +125,7 @@
             <Chinesesimp>执行封闭伤口的时间</Chinesesimp>
             <Finnish>Suljettu vähennysaika</Finnish>
             <Dutch>Benodigde tijd om een gesloten reductie uit te voeren</Dutch>
+            <Hungarian>Zárt törésredukció ideje</Hungarian>
         </Key>
         <Key ID="STR_KAT_Surgery_COMMINUTED_FRACTURE">
             <English>Comminuted Fracture</English>
@@ -136,6 +143,7 @@
             <Chinesesimp>粉碎性骨折</Chinesesimp>
             <Finnish>Hienonnettu murtuma</Finnish>
             <Dutch>Verbrijzeld fractuur</Dutch>
+            <Hungarian>Töredékes törés</Hungarian>
         </Key>
         <Key ID="STR_KAT_Surgery_COMPOUND_FRACTURE">
             <English>Compound Fracture</English>
@@ -153,6 +161,7 @@
             <Chinesesimp>复合性骨折</Chinesesimp>
             <Finnish>Avomurtuma</Finnish>
             <Dutch>Open fractuur</Dutch>
+            <Hungarian>Nyílt törés</Hungarian>
         </Key>
         <Key ID="STR_KAT_Surgery_COMPOUND_FRACTURE_CHANCE">
             <English>Compound fracture chance</English>
@@ -170,6 +179,7 @@
             <Chinesesimp>复合骨折机率</Chinesesimp>
             <Finnish>Yhdistelmämurtuman mahdollisuus</Finnish>
             <Dutch>Waarschijnlijkheid van een open fractuur</Dutch>
+            <Hungarian>Nyílt törés esélye</Hungarian>
         </Key>
         <Key ID="STR_KAT_Surgery_COMPOUND_FRACTURE_CHANCE_DESC">
             <English>Sets the chance for compound fractures. Also sets the chance for comminuted fractures (60% Compound = 40% Comminuted)</English>
@@ -187,6 +197,7 @@
             <Chinesesimp>设置复合骨折的几率,同时设置粉碎骨折的几率 (60% 复合 = 40% 粉碎)</Chinesesimp>
             <Finnish>Asettaa yhdistelmämurtumien mahdollisuuden. Asettaa myös murtumien mahdollisuuden (60 % yhdiste = 40 % hienonnettu)</Finnish>
             <Dutch>Bepaald de kans voor open botbreuken. Bepaald ook de kans op een verbrijzeld fractuur vast (60% open = 40% verbrijzeld)</Dutch>
+            <Hungarian>Beállítja a nyílt törések esélyét. Ugyanakkor beállítja a töredékes törések esélyét is (60 % nyílt = 40 % töredékes).</Hungarian>
         </Key>
         <Key ID="STR_KAT_Surgery_Clamp_Action">
             <English>Clamping</English>
@@ -204,6 +215,7 @@
             <Chinesesimp>夹紧中</Chinesesimp>
             <Finnish>Kiinnitys</Finnish>
             <Dutch>Vast klemmen</Dutch>
+            <Hungarian>Összeszorítás</Hungarian>
         </Key>
         <Key ID="STR_KAT_Surgery_Clamp_DescShort">
             <English>Used to clamp comminuted fractures</English>
@@ -221,6 +233,7 @@
             <Chinesesimp>用于夹紧粉碎性骨折</Chinesesimp>
             <Finnish>Käytetään murtumien kiinnittämiseen</Finnish>
             <Dutch>Wordt gebruikt om verbrijzelde fracturen vast te klemmen</Dutch>
+            <Hungarian>Töredékes törések rögzítésére használható</Hungarian>
         </Key>
         <Key ID="STR_KAT_Surgery_Clamp_Use">
             <English>Clamp Fracture</English>
@@ -238,6 +251,7 @@
             <Chinesesimp>夹紧骨折</Chinesesimp>
             <Finnish>Puristimen murtuma</Finnish>
             <Dutch>Klem fractuur vast</Dutch>
+            <Hungarian>Törés rögzítése</Hungarian>
         </Key>
         <Key ID="STR_KAT_Surgery_Clamp_displayName">
             <English>Clamp</English>
@@ -255,6 +269,7 @@
             <Chinesesimp>夹钳</Chinesesimp>
             <Finnish>Puristin</Finnish>
             <Dutch>Klem</Dutch>
+            <Hungarian>Fogó</Hungarian>
         </Key>
         <Key ID="STR_KAT_Surgery_EXPOSED">
             <English>exposed</English>
@@ -272,6 +287,7 @@
             <Chinesesimp>暴露</Chinesesimp>
             <Finnish>paljastettu</Finnish>
             <Dutch>Vrijgelegd</Dutch>
+            <Hungarian>feltárt</Hungarian>
         </Key>
         <Key ID="STR_KAT_Surgery_FRACTURE_CHECK_MEDLEVEL">
             <English>Allow Check Fracture</English>
@@ -289,6 +305,7 @@
             <Chinesesimp>检查骨折所需的医疗水平</Chinesesimp>
             <Finnish>Salli murtuman tarkistaminen</Finnish>
             <Dutch>Benodigde training om een fractuur te controleren</Dutch>
+            <Hungarian>Törés ellenőrzés engedélyezése</Hungarian>
         </Key>
         <Key ID="STR_KAT_Surgery_FRACTURE_CHECK_TIMER">
             <English>Fracture Check Time</English>
@@ -306,6 +323,7 @@
             <Chinesesimp>骨折检查时间</Chinesesimp>
             <Finnish>Murtuman tarkistusaika</Finnish>
             <Dutch>Benodigde tijd om een fractuur te controleren</Dutch>
+            <Hungarian>Törésellenőrzés ideje</Hungarian>
         </Key>
         <Key ID="STR_KAT_Surgery_INCISION_TIMER">
             <English>Perform Incision Time</English>
@@ -323,6 +341,7 @@
             <Chinesesimp>进行切口的时间</Chinesesimp>
             <Finnish>Suorita viiltoaika</Finnish>
             <Dutch>Benodigde tijd om een incisie te maken</Dutch>
+            <Hungarian>Metszés végrehajtásának ideje</Hungarian>
         </Key>
         <Key ID="STR_KAT_Surgery_INTERMEDIATE_TIMER">
             <English>Time to perform intermediate actions</English>
@@ -340,6 +359,7 @@
             <Chinesesimp>进行中间操作的时间</Chinesesimp>
             <Finnish>Aika suorittaa välitoimia</Finnish>
             <Dutch>Benodigde tijd om tussenliggende acties uit te voeren</Dutch>
+            <Hungarian>Köztes lépések végrehajtásának ideje</Hungarian>
         </Key>
         <Key ID="STR_KAT_Surgery_INTERMEDIATE_TIMER_DESC">
             <English>Sets how long it takes to perform intermediate surgical actions such as exposing and irrigation</English>
@@ -357,6 +377,7 @@
             <Chinesesimp>设置执行手术中间操作（例如暴露和冲洗）所需的时间</Chinesesimp>
             <Finnish>Asettaa, kuinka kauan kirurgisten välitoimenpiteiden, kuten valotuksen ja kastelun, suorittaminen kestää</Finnish>
             <Dutch>Bepaald hoe lang het doet om tussentijdse chirurgische acties uit te voeren, zoals het vrijleggen en irrigeren van een fractuur</Dutch>
+            <Hungarian>Beállítja, mennyi ideig tart a köztes sebészeti lépések végrehajtása, például a feltárás és öblítés</Hungarian>
         </Key>
         <Key ID="STR_KAT_Surgery_IRRIGATED">
             <English>irrigated</English>
@@ -374,6 +395,7 @@
             <Chinesesimp>已冲洗</Chinesesimp>
             <Finnish>Kasteltu</Finnish>
             <Dutch>Geïrrigeerd</Dutch>
+            <Hungarian>öblített</Hungarian>
         </Key>
         <Key ID="STR_KAT_Surgery_Irrigate_Action">
             <English>Irrigating</English>
@@ -391,6 +413,7 @@
             <Chinesesimp>冲洗中</Chinesesimp>
             <Finnish>Kastelu</Finnish>
             <Dutch>Irrigeren</Dutch>
+            <Hungarian>Öblítés alatt</Hungarian>
         </Key>
         <Key ID="STR_KAT_Surgery_Irrigate_Use">
             <English>Irrigate Wound</English>
@@ -408,6 +431,7 @@
             <Chinesesimp>冲洗伤口</Chinesesimp>
             <Finnish>Huuhtele haava</Finnish>
             <Dutch>Irrigeer wond</Dutch>
+            <Hungarian>Seb öblítése</Hungarian>
         </Key>
         <Key ID="STR_KAT_Surgery_NPWT_ACTION_MEDLEVEL">
             <English>Allow NPWT</English>
@@ -422,6 +446,7 @@
             <Chinese>NPWT需要的醫療等級</Chinese>
             <Chinesesimp>NPWT所需的医疗水平</Chinesesimp>
             <Dutch>Benodigde training voor het gebruik van een vacuümverband</Dutch>
+            <Hungarian>NPWT engedélyezése (Negatív nyomású sebkezelés)</Hungarian>
         </Key>
         <Key ID="STR_KAT_Surgery_NPWT_LOCATION">
             <English>Locations NPWT</English>
@@ -436,6 +461,7 @@
             <Chinese>NPWT的使用位置</Chinese>
             <Chinesesimp>NPWT的使用位置</Chinesesimp>
             <Dutch>Locaties waar een vacuümverband aangelegd kan worden</Dutch>
+            <Hungarian>NPWT helyei</Hungarian>
         </Key>
         <Key ID="STR_KAT_Surgery_OPEN_TIMER">
             <English>Open Reduction Time</English>
@@ -453,6 +479,7 @@
             <Chinesesimp>执行开放伤口的时间</Chinesesimp>
             <Finnish>Avoin vähennysaika</Finnish>
             <Dutch>Benodigde tijd om een open reductie uit te voeren</Dutch>
+            <Hungarian>Nyílt törésredukció ideje</Hungarian>
         </Key>
         <Key ID="STR_KAT_Surgery_PERICARDIALTAP_ACTION_MEDLEVEL">
             <English>Allow Pericardial Tap</English>
@@ -465,6 +492,7 @@
             <Chinese>心包穿刺術需要的醫療等級</Chinese>
             <Chinesesimp>心包穿刺术所需的医疗水平</Chinesesimp>
             <Dutch>Benodigde training voor pericardiale drainage</Dutch>
+            <Hungarian>Perikardiocentézis engedélyezése</Hungarian>
         </Key>
         <Key ID="STR_KAT_Surgery_PERICARDIALTAP_LOCATION">
             <English>Locations for Pericardial Tap</English>
@@ -477,6 +505,7 @@
             <Chinese>心包穿刺術的使用位置</Chinese>
             <Chinesesimp>心包穿刺术的使用位置</Chinesesimp>
             <Dutch>Locaties waar een pericardiale drainage uitgevoerd kan worden</Dutch>
+            <Hungarian>Perikardiocentézis helyei</Hungarian>
         </Key>
         <Key ID="STR_KAT_Surgery_PERICARDIALTAP_TIMER">
             <English>Time to perform Pericardial Tap</English>
@@ -489,6 +518,7 @@
             <Chinese>執行心包穿刺術的時間</Chinese>
             <Chinesesimp>执行心包穿刺术的时间</Chinesesimp>
             <Dutch>Benodigde tijd om een pericard drainage uit te voeren</Dutch>
+            <Hungarian>Perikardiocentézis végrehajtásának ideje</Hungarian>
         </Key>
         <Key ID="STR_KAT_Surgery_PERICARDIALTAP_TIMER_DESC">
             <English>Sets how long it takes to perform a Pericardial Tap</English>
@@ -501,6 +531,7 @@
             <Chinese>設置執行心包穿刺術所需的時間</Chinese>
             <Chinesesimp>设置执行心包穿刺术所需的时间</Chinesesimp>
             <Dutch>Bepaald hoe lang het uitvoeren van een pericard drainage duurt</Dutch>
+            <Hungarian>Beállítja, mennyi ideig tart a perikardiocentézis végrehajtása</Hungarian>
         </Key>
         <Key ID="STR_KAT_Surgery_Pericardial_Tap_Action">
             <English>Performing</English>
@@ -515,6 +546,7 @@
             <Chinese>實施中</Chinese>
             <Chinesesimp>操作中</Chinesesimp>
             <Dutch>Wordt uitgevoerd</Dutch>
+            <Hungarian>Végrehajtás alatt</Hungarian>
         </Key>
         <Key ID="STR_KAT_Surgery_Pericardial_Tap_Log">
             <English>%1 performed a pericardial tap</English>
@@ -529,6 +561,7 @@
             <Chinese>%1 進行了心包穿刺術</Chinese>
             <Chinesesimp>%1 对患者进行了心包穿刺</Chinesesimp>
             <Dutch>%1 heeft een pericard drainage uitgevoerd</Dutch>
+            <Hungarian>%1 perikardiocentézist végzett</Hungarian>
         </Key>
         <Key ID="STR_KAT_Surgery_Pericardial_Tap_Use">
             <English>Pericardial Tap</English>
@@ -543,6 +576,7 @@
             <Chinese>心包穿刺術</Chinese>
             <Chinesesimp>心包穿刺</Chinesesimp>
             <Dutch>Pericard drainage</Dutch>
+            <Hungarian>Perikardiocentézis</Hungarian>
         </Key>
         <Key ID="STR_KAT_Surgery_Plate_DescShort">
             <English>Used to complete all complex fracture types</English>
@@ -560,6 +594,7 @@
             <Chinesesimp>用于完成所有复杂骨折类型</Chinesesimp>
             <Finnish>Käytetään viimeistelemään kaikki monimutkaiset fraktit</Finnish>
             <Dutch>Wordt gebruikt om alle complexe fracturen te voltooien</Dutch>
+            <Hungarian>Minden összetett töréstípus befejezésére használható</Hungarian>
         </Key>
         <Key ID="STR_KAT_Surgery_Plate_Display">
             <English>Bone Plate</English>
@@ -577,6 +612,7 @@
             <Chinesesimp>骨板</Chinesesimp>
             <Finnish>Luulevy</Finnish>
             <Dutch>Botplaat</Dutch>
+            <Hungarian>Csontlemez</Hungarian>
         </Key>
         <Key ID="STR_KAT_Surgery_REBOA_ACTION_MEDLEVEL">
             <English>Allow REBOA</English>
@@ -589,6 +625,7 @@
             <Chinese>REBOA需要的醫療等級</Chinese>
             <Chinesesimp>REBOA所需的医疗水平</Chinesesimp>
             <Dutch>Benodigde Training om een REBOA toe te dienen</Dutch>
+            <Hungarian>REBOA engedélyezése</Hungarian>
         </Key>
         <Key ID="STR_KAT_Surgery_REBOA_LOCATION">
             <English>Locations for REBOA</English>
@@ -601,6 +638,7 @@
             <Chinese>REBOA的使用位置</Chinese>
             <Chinesesimp>REBOA的使用位置</Chinesesimp>
             <Dutch>Locaties waar een REBOA toegediend kan worden</Dutch>
+            <Hungarian>REBOA helyei</Hungarian>
         </Key>
         <Key ID="STR_KAT_Surgery_REBOA_TIMER">
             <English>Time to perform REBOA actions</English>
@@ -613,6 +651,7 @@
             <Chinese>執行REBOA操作的時間</Chinese>
             <Chinesesimp>执行REBOA操作的时间</Chinesesimp>
             <Dutch>Benodigde tijd om REBOA acties uit te voeren</Dutch>
+            <Hungarian>REBOA műveletek végrehajtásának ideje</Hungarian>
         </Key>
         <Key ID="STR_KAT_Surgery_REBOA_TIMER_DESC">
             <English>Sets how long it takes to perform REBOA actions (Placing, Advancing, Removing)</English>
@@ -625,6 +664,7 @@
             <Chinese>設置執行REBOA操作（放置、推進、移除）所需的時間</Chinese>
             <Chinesesimp>设置执行REBOA操作（放置、推进、移除）所需的时间</Chinesesimp>
             <Dutch>Bepaald hoe lang het duurt om REBOA acties uit te voeren (Plaatsen, doorvoeren en verwijderen)</Dutch>
+            <Hungarian>Beállítja, mennyi ideig tart a REBOA műveletek végrehajtása (behelyezés, továbbvezetés, eltávolítás)</Hungarian>
         </Key>
         <Key ID="STR_KAT_Surgery_Reboa_Action">
             <English>Placing</English>
@@ -639,6 +679,7 @@
             <Chinese>放置中</Chinese>
             <Chinesesimp>放置</Chinesesimp>
             <Dutch>Wordt geplaatst</Dutch>
+            <Hungarian>Behelyezés</Hungarian>
         </Key>
         <Key ID="STR_KAT_Surgery_Reboa_Deep_Action">
             <English>Advancing</English>
@@ -653,6 +694,7 @@
             <Chinese>推進中</Chinese>
             <Chinesesimp>推进中</Chinesesimp>
             <Dutch>Wordt opgevoerd</Dutch>
+            <Hungarian>Továbbvezetés</Hungarian>
         </Key>
         <Key ID="STR_KAT_Surgery_Reboa_Deep_Use">
             <English>Advance REBOA Unit</English>
@@ -667,6 +709,7 @@
             <Chinese>進階REBOA設備</Chinese>
             <Chinesesimp>高级REBOA单元</Chinesesimp>
             <Dutch>Voer REBOA eenheid op</Dutch>
+            <Hungarian>REBOA katéter továbbvezetése</Hungarian>
         </Key>
         <Key ID="STR_KAT_Surgery_Reboa_DescShort">
             <English>Used to block the aorta and prevent bleeding below the heart</English>
@@ -681,6 +724,7 @@
             <Chinese>用於阻斷主動脈，防止心臟以下的出血</Chinese>
             <Chinesesimp>用于阻断主动脉，防止心脏以下出血</Chinesesimp>
             <Dutch>Wordt gebruikt om de aorta te blokkeren, en bloedingen onder het hart te stelpen</Dutch>
+            <Hungarian>Az aorta elzárására és a szív alatti vérzés megakadályozására használható</Hungarian>
         </Key>
         <Key ID="STR_KAT_Surgery_Reboa_DisplayName">
             <English>REBOA Unit</English>
@@ -695,6 +739,7 @@
             <Chinese>REBOA 設備</Chinese>
             <Chinesesimp>REBOA单元</Chinesesimp>
             <Dutch>ROBOA eenheid</Dutch>
+            <Hungarian>REBOA katéter</Hungarian>
         </Key>
         <Key ID="STR_KAT_Surgery_Reboa_Remove_Action">
             <English>Removing</English>
@@ -709,6 +754,7 @@
             <Chinese>移除中</Chinese>
             <Chinesesimp>移除中</Chinesesimp>
             <Dutch>Wordt verwijderd</Dutch>
+            <Hungarian>Eltávolítás</Hungarian>
         </Key>
         <Key ID="STR_KAT_Surgery_Reboa_Remove_Use">
             <English>Remove REBOA Unit</English>
@@ -723,6 +769,7 @@
             <Chinese>移除 REBOA 設備</Chinese>
             <Chinesesimp>拆除REBOA装置</Chinesesimp>
             <Dutch>Verwijder REBOA eenheid</Dutch>
+            <Hungarian>REBOA katéter eltávolítása</Hungarian>
         </Key>
         <Key ID="STR_KAT_Surgery_Reboa_Status">
             <English>REBOA</English>
@@ -737,6 +784,7 @@
             <Chinese>REBOA</Chinese>
             <Chinesesimp>雷博亚</Chinesesimp>
             <Dutch>REBOA</Dutch>
+            <Hungarian>REBOA</Hungarian>
         </Key>
         <Key ID="STR_KAT_Surgery_Reboa_Use">
             <English>Place REBOA Unit</English>
@@ -751,6 +799,7 @@
             <Chinese>放置 REBOA 設備</Chinese>
             <Chinesesimp>放置REBOA单元</Chinesesimp>
             <Dutch>Plaats REBOA eenheid</Dutch>
+            <Hungarian>REBOA katéter behelyezése</Hungarian>
         </Key>
         <Key ID="STR_KAT_Surgery_Reset_Surgery">
             <English>Close Incision</English>
@@ -763,6 +812,7 @@
             <Chinese>封閉切口</Chinese>
             <Chinesesimp>闭合切口</Chinesesimp>
             <Dutch>Sluit incisie</Dutch>
+            <Hungarian>Metszés zárása</Hungarian>
         </Key>
         <Key ID="STR_KAT_Surgery_Retractor_Action">
             <English>Exposing</English>
@@ -780,6 +830,7 @@
             <Chinesesimp>暴露</Chinesesimp>
             <Finnish>Paljastaminen</Finnish>
             <Dutch>Vrijleggen</Dutch>
+            <Hungarian>Feltárás alatt</Hungarian>
         </Key>
         <Key ID="STR_KAT_Surgery_Retractor_DescShort">
             <English>Used to expand and expose fractures</English>
@@ -797,6 +848,7 @@
             <Chinesesimp>用于扩大和暴露骨折创面</Chinesesimp>
             <Finnish>Käytetään murtumien laajentamiseen ja paljastamiseen</Finnish>
             <Dutch>Wordt gebruikt om incisies te spreiden en fracturen vrij te leggen</Dutch>
+            <Hungarian>Törés feltárására és szétnyitására használható</Hungarian>
         </Key>
         <Key ID="STR_KAT_Surgery_Retractor_Use">
             <English>Expose Fracture</English>
@@ -814,6 +866,7 @@
             <Chinesesimp>暴露骨折</Chinesesimp>
             <Finnish>Paljasta murtuma</Finnish>
             <Dutch>Leg fractuur vrij</Dutch>
+            <Hungarian>Törés feltárása</Hungarian>
         </Key>
         <Key ID="STR_KAT_Surgery_Retractor_displayName">
             <English>Retractor</English>
@@ -831,6 +884,7 @@
             <Chinesesimp>扩张器</Chinesesimp>
             <Finnish>Kelauslaite</Finnish>
             <Dutch>Retractor</Dutch>
+            <Hungarian>Feszítő</Hungarian>
         </Key>
         <Key ID="STR_KAT_Surgery_SETTING_Anesthesia">
             <English>Surgery Anesthesia</English>
@@ -847,6 +901,7 @@
             <Chinesesimp>手术在麻醉下进行</Chinesesimp>
             <Finnish>Leikkauksen anestesia</Finnish>
             <Dutch>Operatie met anesthesie</Dutch>
+            <Hungarian>Műtéti altatás</Hungarian>
         </Key>
         <Key ID="STR_KAT_Surgery_SETTING_Causes_Unconsciousness">
             <English>Surgery Causes Unconsciousness</English>
@@ -863,6 +918,7 @@
             <Chinesesimp>手术导致意识丧失</Chinesesimp>
             <Finnish>Leikkaus aiheuttaa tajuttomuuden</Finnish>
             <Dutch>Operatie veroorzaakt bewustijnsverlies</Dutch>
+            <Hungarian>A műtét eszméletvesztést okoz</Hungarian>
         </Key>
         <Key ID="STR_KAT_Surgery_SETTING_ConsciousnessRequirement">
             <English>Surgery Consciousness Controls</English>
@@ -879,6 +935,7 @@
             <Chinesesimp>手术意识控制</Chinesesimp>
             <Finnish>Kirurginen tajunta</Finnish>
             <Dutch>Operatie bewustzijninstellingen</Dutch>
+            <Hungarian>Műtéti tudatállapotok</Hungarian>
         </Key>
         <Key ID="STR_KAT_Surgery_SETTING_ConsciousnessRequirement_DESC">
             <English>Surgery Causes Unconsciousness: Surgery without anesthesia and sedation results in unconsciousness from CA. \nUnconsciousness Required for Surgery: Surgery requires patient to be unconscious. \nNo Unconsciousness from Surgery: Surgery doesn't induce unconsciousness, causes pain. \nSurgery Anesthesia: Patient stays awake during surgery if given Etomidate, if not they will go into CA.</English>
@@ -895,6 +952,7 @@
             <Chinesesimp>手术导致意识丧失：未进行麻醉和镇静的手术会导致因心搏停止而意识丧失。\n手术需要意识丧失：手术需要患者处于无意识状态。\n手术不会导致意识丧失：手术不会引起意识丧失，但会引起疼痛。\n手术麻醉：如果给予依托咪酯，患者在手术期间会保持清醒；如果没有，他们将进入心搏停止状态。</Chinesesimp>
             <Finnish>Leikkaus aiheuttaa tajuttomuuden: leikkaus ilman anestesiaa ja sedaatiota johtaa tajuttomuuteen sydämenpysähdyksestä. \nLeikkaukseen tarvitaan tajuttomuus: leikkaus ei aiheuta tajuttomuutta, aiheuttaa kipua. \nLeikkauksen anestesia: Potilas pysyy hereillä leikkauksen aikana, jos hänelle annetaan etomidaattia, jos ei, hän menettää sydämenpysähdyksen.</Finnish>
             <Dutch>Operatie veroorzaakt bewustzijnsverlies: Operaties zonder anesthesie en sedatie lijdt tot bewustzijnsverlies door hartstilstand. \n Bewusteloosheid benodigd voor operatie: Operaties vereisen dat de patiënt bewusteloos is. \n Geen bewustzijnsverlies door operaties: Operaties lijden niet tot bewustzijnsverlies, maar veroorzaken pijn. \n Operatie met anesthesie: Patiënt blijft wakker tijdens de operatie als etomidaat gegeven is, anders lijdt de operatie tot een hartstilstand.</Dutch>
+            <Hungarian>Surgery Causes Unconsciousness: Surgery without anesthesia and sedation results in unconsciousness from CA. \nUnconsciousness Required for Surgery: Surgery requires patient to be unconscious. \nNo Unconsciousness from Surgery: Surgery doesn't induce unconsciousness, causes pain. \nSurgery Anesthesia: Patient stays awake during surgery if given Etomidate, if not they will go into CA.</Hungarian>
         </Key>
         <Key ID="STR_KAT_Surgery_SETTING_NPWTTime">
             <English>Apply NPWT Dressing Time</English>
@@ -912,6 +970,7 @@
             <Chinesesimp>应用NPWT敷料时间</Chinesesimp>
             <Finnish>Levitä NPWT-sidos tu</Finnish>
             <Dutch>Benodigde tijd om een vacuümverband aan te leggen</Dutch>
+            <Hungarian>NPWT kötszer felhelyezésének ideje</Hungarian>
         </Key>
         <Key ID="STR_KAT_Surgery_SETTING_No_Unconsciousness">
             <English>No Unconsciousness from Surgery</English>
@@ -928,6 +987,7 @@
             <Chinesesimp>手术期间不会失去意识</Chinesesimp>
             <Finnish>Ei tajuttomuutta leikkauksesta</Finnish>
             <Dutch>Geen Bewustzijnsverlies door operaties</Dutch>
+            <Hungarian>A műtét nem okoz eszméletvesztést</Hungarian>
         </Key>
         <Key ID="STR_KAT_Surgery_SETTING_SELF_CHECKFRACTURE">
             <English>Allow self check fracture</English>
@@ -945,6 +1005,7 @@
             <Chinesesimp>允许自行检查骨折</Chinesesimp>
             <Finnish>Salli itsetarkastuksen murtuma</Finnish>
             <Dutch>Sta zelfcontrole van fracturen toe</Dutch>
+            <Hungarian>Engedélyezze, hogy megnézhesd, van-e törésed.</Hungarian>
         </Key>
         <Key ID="STR_KAT_Surgery_SETTING_Unconsciousness_Required">
             <English>Unconsciousness Required for Surgery</English>
@@ -961,6 +1022,7 @@
             <Chinesesimp>手术需要昏迷</Chinesesimp>
             <Finnish>Leikkaukseen tarvitaan tajuttomuus</Finnish>
             <Dutch>Bewusteloosheid</Dutch>
+            <Hungarian>A műtéthez szükséges eszméletvesztés</Hungarian>
         </Key>
         <Key ID="STR_KAT_Surgery_SIMPLE_FRACTURE">
             <English>Simple Fracture</English>
@@ -978,6 +1040,7 @@
             <Chinesesimp>简单骨折</Chinesesimp>
             <Finnish>Yksinkertainen murtuma</Finnish>
             <Dutch>Simpel fractuur</Dutch>
+            <Hungarian>Egyszerű törés</Hungarian>
         </Key>
         <Key ID="STR_KAT_Surgery_SIMPLE_FRACTURE_CHANCE">
             <English>Simple fracture chance</English>
@@ -995,6 +1058,7 @@
             <Chinesesimp>简单骨折机率</Chinesesimp>
             <Finnish>Yksinkertainen murtuman mahdollisuus</Finnish>
             <Dutch>Kans op een simpel fractuur</Dutch>
+            <Hungarian>Egyszerű törés esélye</Hungarian>
         </Key>
         <Key ID="STR_KAT_Surgery_SIMPLE_FRACTURE_CHANCE_DESC">
             <English>Sets the chance for simple fractures. Also sets the chance for complex fractures (60% Simple = 40% Complex)</English>
@@ -1012,6 +1076,7 @@
             <Chinesesimp>设置简单骨折的机率,同时设置了复合骨折的机率 (60% 简单 = 40% 复杂)</Chinesesimp>
             <Finnish>Asettaa mahdollisuuden yksinkertaisiin murtumiin. Asettaa myös mahdollisuuden monimutkaisiin murtumiin (60 % yksinkertainen = 40 % monimutkainen)</Finnish>
             <Dutch>Bepaald de kans voor simpele fracturen. Bepaald ook de kans voor geadvanceerde fracturen (60% simpel = 40% geadvanceerd).</Dutch>
+            <Hungarian>Beállítja az egyszerű törések valószínűségét. Beállítja a komplex törések valószínűségét is (60% egyszerű = 40% komplex).</Hungarian>
         </Key>
         <Key ID="STR_KAT_Surgery_SURGICAL_ACTION_MEDLEVEL">
             <English>Allow Surgery</English>
@@ -1029,6 +1094,7 @@
             <Chinesesimp>手术所需的医疗水平</Chinesesimp>
             <Finnish>Salli leikkaus</Finnish>
             <Dutch>Benodigde training om chirurgische acties uit te voeren</Dutch>
+            <Hungarian>Műtéti beavatkozás engedélyezése</Hungarian>
         </Key>
         <Key ID="STR_KAT_Surgery_SURGICAL_LOCATION">
             <English>Locations Surgery</English>
@@ -1046,6 +1112,7 @@
             <Chinesesimp>切开复位/手术的地点</Chinesesimp>
             <Finnish>Paikkakirurgia</Finnish>
             <Dutch>Locaties waar chirurgische acties uitgevoerd kan worden</Dutch>
+            <Hungarian>Műtéti helyszínek</Hungarian>
         </Key>
         <Key ID="STR_KAT_Surgery_Scalpel_DescShort">
             <English>Used for creating incisions</English>
@@ -1063,6 +1130,7 @@
             <Chinesesimp>用于创建切口和伤口清创</Chinesesimp>
             <Finnish>Käytetään viiltojen tekemiseen</Finnish>
             <Dutch>Wordt gebruikt om incisies te maken</Dutch>
+            <Hungarian>Bemetszések készítésére használják</Hungarian>
         </Key>
         <Key ID="STR_KAT_Surgery_Scalpel_Use">
             <English>Perform Incision</English>
@@ -1080,6 +1148,7 @@
             <Chinesesimp>创建切口</Chinesesimp>
             <Finnish>Suorita viilto</Finnish>
             <Dutch>Maak incisie</Dutch>
+            <Hungarian>Metszés végzése</Hungarian>
         </Key>
         <Key ID="STR_KAT_Surgery_Scalpel_displayName">
             <English>Scalpel</English>
@@ -1097,6 +1166,7 @@
             <Chinesesimp>手术刀</Chinesesimp>
             <Finnish>Skalpelli</Finnish>
             <Dutch>Scalpel</Dutch>
+            <Hungarian>Szike</Hungarian>
         </Key>
         <Key ID="STR_KAT_Surgery_SubCategory_Fractures">
             <English>Fractures Settings</English>
@@ -1114,6 +1184,7 @@
             <Chinesesimp>骨折设置</Chinesesimp>
             <Finnish>Murtumien asetukset</Finnish>
             <Dutch>Instellingen voor fracturen</Dutch>
+            <Hungarian>Fraktúra beállítások</Hungarian>
         </Key>
         <Key ID="STR_KAT_Surgery_SubCategory_NPWT">
             <English>Dressing Vacuum (NPWT) Settings</English>
@@ -1128,6 +1199,7 @@
             <Chinese>負壓傷口治療（NPWT）設定</Chinese>
             <Chinesesimp>负压伤口治疗（NPWT）设置</Chinesesimp>
             <Dutch>Vacuümverband instellingen</Dutch>
+            <Hungarian>Vákuumkötés (NPWT) beállításai</Hungarian>
         </Key>
         <Key ID="STR_KAT_Surgery_SubCategory_SurgicalActions">
             <English>Surgical actions Settings</English>
@@ -1145,6 +1217,7 @@
             <Chinesesimp>手术操作设置</Chinesesimp>
             <Finnish>Kirurgisten toimien asetukset</Finnish>
             <Dutch>Instellingen voor chirurgische acties</Dutch>
+            <Hungarian>Sebészeti beavatkozások beállításai</Hungarian>
         </Key>
         <Key ID="STR_KAT_Surgery_ULTRASOUND_ACTION_MEDLEVEL">
             <English>Allow Ultrasound</English>
@@ -1157,6 +1230,7 @@
             <Chinese>超音波檢查需要的醫療等級</Chinese>
             <Chinesesimp>超声检查所需的医疗水平</Chinesesimp>
             <Dutch>Benodigde training voor gebruik mobiele echograaf</Dutch>
+            <Hungarian>Ultrahang engedélyezése</Hungarian>
         </Key>
         <Key ID="STR_KAT_Surgery_ULTRASOUND_LOCATION">
             <English>Locations for Ultrasound</English>
@@ -1169,6 +1243,7 @@
             <Chinese>超音波檢查的使用位置</Chinese>
             <Chinesesimp>超声检查的使用位置</Chinesesimp>
             <Dutch>Locaties waar een mobiele echograaf gebruikt kan worden</Dutch>
+            <Hungarian>Ultrahangvizsgálat helyszínei</Hungarian>
         </Key>
         <Key ID="STR_KAT_Surgery_ULTRASOUND_TIMER">
             <English>Time to perform Ultrasound actions</English>
@@ -1181,6 +1256,7 @@
             <Chinese>執行 超音波 檢查的時間</Chinese>
             <Chinesesimp>执行超声检查的时间</Chinesesimp>
             <Dutch>Benodigde tijd voor het gebruik van een mobiele echograaf</Dutch>
+            <Hungarian>Ultrahangos beavatkozások elvégzésének ideje</Hungarian>
         </Key>
         <Key ID="STR_KAT_Surgery_ULTRASOUND_TIMER_DESC">
             <English>Sets how long it takes to perform an ultrasound exam</English>
@@ -1193,6 +1269,7 @@
             <Chinese>設置執行 超音波 檢查所需的時間</Chinese>
             <Chinesesimp>设置执行超声检查所需的时间</Chinesesimp>
             <Dutch>Bepaald hoe lang het gebruik van een mobiele echograaf duurt</Dutch>
+            <Hungarian>Beállítja, hogy mennyi időbe telik egy ultrahangvizsgálat elvégzése.</Hungarian>
         </Key>
         <Key ID="STR_KAT_Surgery_Ultra_Action">
             <English>Assessing</English>
@@ -1207,6 +1284,7 @@
             <Chinese>評估中</Chinese>
             <Chinesesimp>评估中</Chinesesimp>
             <Dutch>Aan het evalueren</Dutch>
+            <Hungarian>Elemzés</Hungarian>
         </Key>
         <Key ID="STR_KAT_Surgery_Ultra_Airway">
             <English>Airway Status: %1</English>
@@ -1221,6 +1299,7 @@
             <Chinese>氣道狀態：%1</Chinese>
             <Chinesesimp>气道状态：%1</Chinesesimp>
             <Dutch>Luchtwegstatus: %1</Dutch>
+            <Hungarian>Légúti állapot: %1</Hungarian>
         </Key>
         <Key ID="STR_KAT_Surgery_Ultra_Airway_Compromise">
             <English>Compromised</English>
@@ -1230,6 +1309,7 @@
             <German>Kompromittiert</German>
             <Japanese>機能不全</Japanese>
             <Dutch>Gecomprimeerd</Dutch>
+            <Hungarian>Veszélyeztetett</Hungarian>
         </Key>
         <Key ID="STR_KAT_Surgery_Ultra_Airway_NoActivity">
             <English>No Activity</English>
@@ -1239,6 +1319,7 @@
             <German>Keine Aktivität</German>
             <Japanese>活動なし</Japanese>
             <Dutch>Geen activiteit</Dutch>
+            <Hungarian>Nincs tevékenység</Hungarian>
         </Key>
         <Key ID="STR_KAT_Surgery_Ultra_Airway_Normal">
             <English>Normal</English>
@@ -1253,6 +1334,7 @@
             <Chinese>正常</Chinese>
             <Chinesesimp>正常</Chinesesimp>
             <Dutch>Normaal</Dutch>
+            <Hungarian>Normális</Hungarian>
         </Key>
         <Key ID="STR_KAT_Surgery_Ultra_Cardiac">
             <English>Cardiac Status: %1</English>
@@ -1267,6 +1349,7 @@
             <Chinese>心臟狀態：%1</Chinese>
             <Chinesesimp>心脏状态：%1</Chinesesimp>
             <Dutch>Cardiale status: %1</Dutch>
+            <Hungarian>Szívállapot: %1</Hungarian>
         </Key>
         <Key ID="STR_KAT_Surgery_Ultra_Cardiac_Shockable">
             <English>Arrest - Shockable</English>
@@ -1281,6 +1364,7 @@
             <Chinese>心臟驟停 - 可電擊</Chinese>
             <Chinesesimp>心脏骤停 - 可电击</Chinesesimp>
             <Dutch>Hartstilstand - Schokbaar</Dutch>
+            <Hungarian>Arrest - Shockable</Hungarian>
         </Key>
         <Key ID="STR_KAT_Surgery_Ultra_Cardiac_Tamponade">
             <English>Tamponade</English>
@@ -1295,6 +1379,7 @@
             <Chinese>心包填塞</Chinese>
             <Chinesesimp>心包填塞</Chinesesimp>
             <Dutch>Harttamponade</Dutch>
+            <Hungarian>Tamponád</Hungarian>
         </Key>
         <Key ID="STR_KAT_Surgery_Ultra_Cardiac_Unshockable">
             <English>Arrest - Not Shockable</English>
@@ -1309,6 +1394,7 @@
             <Chinese>心臟驟停 - 不可電擊</Chinese>
             <Chinesesimp>心脏骤停 - 不可电击</Chinesesimp>
             <Dutch>Hartstilstand - Niet schokbaar</Dutch>
+            <Hungarian>Arrest - Not Shockable</Hungarian>
         </Key>
         <Key ID="STR_KAT_Surgery_Ultra_DescShort">
             <English>Used to assess internal injuries</English>
@@ -1323,6 +1409,7 @@
             <Chinese>用於評估內部損傷</Chinese>
             <Chinesesimp>用于评估内部损伤</Chinesesimp>
             <Dutch>Wordt gebruikt om interne verwondingen te evalueren</Dutch>
+            <Hungarian>Belső sérülések értékelésére használják</Hungarian>
         </Key>
         <Key ID="STR_KAT_Surgery_Ultra_DisplayName">
             <English>Handheld Ultrasound</English>
@@ -1337,6 +1424,7 @@
             <Chinese>手持式超音波</Chinese>
             <Chinesesimp>手持式超声</Chinesesimp>
             <Dutch>Mobiele echograaf</Dutch>
+            <Hungarian>Kézi ultrahang</Hungarian>
         </Key>
         <Key ID="STR_KAT_Surgery_Ultra_Thorasic">
             <English>Lung Status: %1</English>
@@ -1351,6 +1439,7 @@
             <Chinese>肺部狀態：%1</Chinese>
             <Chinesesimp>肺部状态：%1</Chinesesimp>
             <Dutch>Longstatus: %1</Dutch>
+            <Hungarian>Tüdőállapot: %1</Hungarian>
         </Key>
         <Key ID="STR_KAT_Surgery_Ultra_Thorasic_Hemo">
             <English>Hemopneumothorax</English>
@@ -1365,6 +1454,7 @@
             <Chinese>血氣胸</Chinese>
             <Chinesesimp>血气胸</Chinesesimp>
             <Dutch>Hemopneumothorax</Dutch>
+            <Hungarian>Hemopneumothorax</Hungarian>
         </Key>
         <Key ID="STR_KAT_Surgery_Ultra_Thorasic_NoActivity">
             <English>No Activity</English>
@@ -1375,6 +1465,7 @@
             <Japanese>活動なし</Japanese>
             <Chinese>無活動</Chinese>
             <Dutch>Geen activiteit</Dutch>
+            <Hungarian>Nincs tevékenység</Hungarian>
         </Key>
         <Key ID="STR_KAT_Surgery_Ultra_Thorasic_PTX">
             <English>Pneumothorax</English>
@@ -1389,6 +1480,7 @@
             <Chinese>氣胸</Chinese>
             <Chinesesimp>气胸</Chinesesimp>
             <Dutch>Pneumothorax</Dutch>
+            <Hungarian>Pneumothorax</Hungarian>
         </Key>
         <Key ID="STR_KAT_Surgery_Ultra_Thorasic_Tension">
             <English>Tension Pneumothorax</English>
@@ -1403,6 +1495,7 @@
             <Chinese>張力性氣胸</Chinese>
             <Chinesesimp>张力性气胸</Chinesesimp>
             <Dutch>Tensiepneumothorax</Dutch>
+            <Hungarian>Tenziós Pneumothorax</Hungarian>
         </Key>
         <Key ID="STR_KAT_Surgery_Ultra_Use">
             <English>Conduct Ultrasound Assessment</English>
@@ -1417,6 +1510,7 @@
             <Chinese>進行超音波評估</Chinese>
             <Chinesesimp>进行超声评估</Chinesesimp>
             <Dutch>Voer echo evaluatie uit</Dutch>
+            <Hungarian>Ultrahangos vizsgálat elvégzése</Hungarian>
         </Key>
         <Key ID="STR_KAT_Surgery_Vacuum_Action">
             <English>Applying</English>
@@ -1434,6 +1528,7 @@
             <Chinesesimp>施用中</Chinesesimp>
             <Finnish>Hakeminen</Finnish>
             <Dutch>Wordt aangelegd</Dutch>
+            <Hungarian>Felhelyezés</Hungarian>
         </Key>
         <Key ID="STR_KAT_Surgery_Vacuum_DescShort">
             <English>Used to completely dress and seal wounds</English>
@@ -1451,6 +1546,7 @@
             <Chinesesimp>用于完全包扎和密封伤口</Chinesesimp>
             <Finnish>Käytetään haavojen täydelliseen pukemiseen ja sulkemiseen</Finnish>
             <Dutch>Wordt gebruikt om alle wonden te dichten en verbinden</Dutch>
+            <Hungarian>Sebek teljes körű kötésére és lezárására használják</Hungarian>
         </Key>
         <Key ID="STR_KAT_Surgery_Vacuum_Use">
             <English>Apply Vacuum Dressing</English>
@@ -1468,6 +1564,7 @@
             <Chinesesimp>施用 NPWT 敷料</Chinesesimp>
             <Finnish>Levitä NPWT-sidosta</Finnish>
             <Dutch>Vacuümverband aanleggen</Dutch>
+            <Hungarian>Vákuumkötés felhelyezése</Hungarian>
         </Key>
         <Key ID="STR_KAT_Surgery_Vacuum_displayName">
             <English>Dressing Vacuum (NPWT)</English>
@@ -1485,6 +1582,7 @@
             <Chinesesimp>NPWT 敷料</Chinesesimp>
             <Finnish>Pukeutumistyhjiö</Finnish>
             <Dutch>Vacuümverband (NPWT)</Dutch>
+            <Hungarian>Vákuumkötés (NPWT)</Hungarian>
         </Key>
         <Key ID="STR_KAT_Surgery_cba_name">
             <English>KAT - ADV Medical: Surgery</English>
@@ -1493,6 +1591,7 @@
             <German>KAT - ADV Medical: Chirurgie</German>
             <Japanese>KAM - 外科 (Surgery)</Japanese>
             <Dutch>KAT - ADV Medical: Chirurgie</Dutch>
+            <Hungarian>KAT - ADV Medical: Sebészet</Hungarian>
         </Key>
         <Key ID="STR_KAT_Surgery_fracture_check">
             <English>Check Fracture</English>
@@ -1510,6 +1609,7 @@
             <Chinesesimp>检查骨折</Chinesesimp>
             <Finnish>Tarkista murtuma</Finnish>
             <Dutch>Check fractuur</Dutch>
+            <Hungarian>Törés vizsgálata</Hungarian>
         </Key>
         <Key ID="STR_KAT_Surgery_fracture_checking">
             <English>Checking</English>
@@ -1527,6 +1627,7 @@
             <Chinesesimp>检查中</Chinesesimp>
             <Finnish>Tarkistetaan</Finnish>
             <Dutch>Checking</Dutch>
+            <Hungarian>Vizsgál</Hungarian>
         </Key>
         <Key ID="STR_KAT_Surgery_fracture_closed">
             <English>Perform Closed Reduction</English>
@@ -1544,6 +1645,7 @@
             <Chinesesimp>封闭复位</Chinesesimp>
             <Finnish>Suorita suljettu pienennys</Finnish>
             <Dutch>Voer gesloten reductie uit</Dutch>
+            <Hungarian>Zárt törésredukció végrehajtása</Hungarian>
         </Key>
         <Key ID="STR_KAT_Surgery_fracture_fail">
             <English>Surgical Action Failed</English>
@@ -1561,6 +1663,7 @@
             <Chinesesimp>手术失败</Chinesesimp>
             <Finnish>Kirurginen toimenpide: epäonnistunut</Finnish>
             <Dutch>Chirurgische actie is gefaald</Dutch>
+            <Hungarian>Sebészeti beavatkozás sikertelen</Hungarian>
         </Key>
         <Key ID="STR_KAT_Surgery_fracture_log">
             <English>%1 present on %2</English>
@@ -1578,6 +1681,7 @@
             <Chinesesimp>%1 存在于 %2</Chinesesimp>
             <Finnish>%1 läsnä %2</Finnish>
             <Dutch>%1 aanwezig op %2</Dutch>
+            <Hungarian>%1 jelen van %2-n</Hungarian>
         </Key>
         <Key ID="STR_KAT_Surgery_fracture_open">
             <English>Perform Open Reduction</English>
@@ -1595,6 +1699,7 @@
             <Chinesesimp>开放复位</Chinesesimp>
             <Finnish>Suorita avoin pienennys</Finnish>
             <Dutch>Voer open reductie uit</Dutch>
+            <Hungarian>Nyílt törésredukció végrehajtása</Hungarian>
         </Key>
         <Key ID="STR_KAT_Surgery_incision_log">
             <English>%1 made an incision on the %2</English>
@@ -1612,6 +1717,7 @@
             <Chinesesimp>%1 在 %2 上做了一个切口</Chinesesimp>
             <Finnish>%1 teki viillon %2</Finnish>
             <Dutch>%1 heeft een incisie gemaakt op %2</Dutch>
+            <Hungarian>%1 bemetszést végzett a(z) %2-n</Hungarian>
         </Key>
         <Key ID="STR_KAT_Surgery_perform">
             <English>Performing</English>
@@ -1629,6 +1735,7 @@
             <Chinesesimp>透析中</Chinesesimp>
             <Finnish>Suorietaan</Finnish>
             <Dutch>Wordt uitgevoerd</Dutch>
+            <Hungarian>Végrehajtás alatt</Hungarian>
         </Key>
         <Key ID="STR_KAT_Surgery_surgeryToolbox">
             <English>[KAM] Surgery Box</English>
@@ -1646,6 +1753,7 @@
             <Chinesesimp>[KAM]手术箱</Chinesesimp>
             <Finnish>[KAM] Leikkauslaatikko</Finnish>
             <Dutch>[KAM] Chirurgiedoos</Dutch>
+            <Hungarian>[KAM] Sebészeti doboz</Hungarian>
         </Key>
         <Key ID="STR_KAT_Surgery_surgery_log">
             <English>%1 %2 the fracture on the %3</English>
@@ -1663,6 +1771,7 @@
             <Chinesesimp>在 %3 上有一处 %1 %2</Chinesesimp>
             <Finnish>%1 %2 murtuma %3</Finnish>
             <Dutch>%1 %2 de breuk op %3</Dutch>
+            <Hungarian>%1 elvégezte a(z) %2 törést a(z) %3-on</Hungarian>
         </Key>
     </Package>
 </Project>
