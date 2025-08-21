@@ -932,7 +932,7 @@ class ACE_Medical_Menu {
             colorBackgroundActive[] = {1, 1, 1, 0.4};
             colorBackgroundDisabled[] = {0, 0, 0, 0};
             colorBorder[] = {0,0,0,0};
-            onButtonClick = QUOTE([] call FUNC(openSyringeMenu));
+            onButtonClick = QUOTE([false] call FUNC(openSyringeMenu));
             class Attributes {
                 align = "Right";
                 valign = "bottom";

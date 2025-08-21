@@ -116,7 +116,7 @@ if (ACEGVAR(medical_gui,target) == ACE_player) then {
 
 private _syringeMenuStatus = ACEGVAR(medical_gui,target) getVariable ["kat_SyringeMenu", false];
 if (_syringeMenuStatus) then {
-    [] call FUNC(openSyringeMenu);
+    [true] call FUNC(openSyringeMenu);
 } else {
     [] call FUNC(closeSyringeMenu);
 };
