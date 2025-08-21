@@ -35,6 +35,7 @@ private _wheeze = ((ACE_player getVariable [QEGVAR(breathing,pneumothorax), [0, 
 private _eyeInjurySeverity        = GET_DUST_INJURY(ACE_player);
 private _eyeInjuries        = GET_EYE_INJURIES(ACE_player);
 private _cmr             = GET_CMR(ACE_player);
+private _icp          = GET_ICP(ACE_player);
 
 private _occlusionArray = ACE_player getVariable [QEGVAR(airway,occlusion), [0, 0, 0]];
 private _obstructionArray = ACE_player getVariable [QEGVAR(airway,obstruction), [0, 0, 0]];
@@ -81,5 +82,6 @@ if (_time != 0) then {
 [!_unconscious, _eyeInjuries, _manualUpdate] call FUNC(effectHurtEye);
 
 [!_unconscious, _cmr] call FUNC(effectLossCMR);
+[!_unconscious, _icp] call FUNC(effectICP);
 
 END_COUNTER(handleEffects);
