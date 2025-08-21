@@ -14,6 +14,9 @@
  *
  * Public: No
  */
+ private _requiredMedicalLevel = missionNamespace getVariable [QEGVAR(pharma,medLvl_PrepSyringe), 2];
+private _isMedic = [ACE_player, _requiredMedicalLevel] call ACEFUNC(common,isMedic);
+if !(_isMedic) exitWith {};
 disableSerialization;
 
 [{private _syringes = [
