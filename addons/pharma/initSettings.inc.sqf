@@ -540,6 +540,25 @@
     true
 ] call CBA_Settings_fnc_init;
 
+[
+    QGVAR(medLvl_PhenylephrineAuto),
+    "LIST",
+    [LLSTRING(medLvl_PhenylephrineAuto)],
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_Phenylephrine)],
+    [[0, 1, 2], [ACELSTRING(medical_treatment,Anyone), ACELSTRING(medical_treatment,Medics), ACELSTRING(medical_treatment,Doctors)], 0],
+    true
+] call CBA_Settings_fnc_init;
+
+[
+    QGVAR(treatmentTime_PhenylephrineAuto),
+    "SLIDER",
+    [LLSTRING(treatmentTime_PhenylephrineAuto)],
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_Phenylephrine)],
+    [0.1, 10, 7, 1],
+    true
+] call CBA_Settings_fnc_init;
+
+
 // Nitroglycerin Settings Category
 [
     QGVAR(medLvl_Nitroglycerin),

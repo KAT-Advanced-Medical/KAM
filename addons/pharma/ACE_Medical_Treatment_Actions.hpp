@@ -259,7 +259,8 @@ class ACE_Medical_Treatment_Actions {
         allowSelfTreatment = 1;
         items[] = {"kat_phenylephrineAuto"};
         condition = "";
-        treatmentTime = 5;
+        medicRequired = QGVAR(medLvl_PhenylephrineAuto);
+        treatmentTime = QGVAR(treatmentTime_PhenylephrineAuto);
         callbackSuccess = QFUNC(medication);
         sounds[] = {};
     };

@@ -5935,5 +5935,11 @@
         <Key ID="STR_KAT_Pharma_fentpatchNearlyOut_MEDdisplay">
             <English>Fentanyl Patch (Depleted)</English>
         </Key>
+        <Key ID="STR_KAT_Pharma_medLvl_PhenylephrineAuto">
+            <English>Med lvl req for Phenylephrine Autoinjector</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_treatmentTime_PhenylephrineAuto">
+            <English>Treatment time for Phenylephrine Autoinjector</English>
+        </Key>
     </Package>
 </Project>
