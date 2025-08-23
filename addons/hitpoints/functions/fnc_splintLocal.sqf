@@ -33,7 +33,7 @@ _patient setVariable [VAR_FRACTURES, _fractures, true];
     TRACE_3("handleSplintFalloff2",_patient,_partIndex,_fractures);
     if (_fractures select _partIndex == -1) then {
         _fractures set [_partIndex, 1];
-        _patient setVariable [ace_medical_fractures, _fractures, true];
+        _patient setVariable [VAR_FRACTURES, _fractures, true];
         [_patient] call EFUNC(misc,updateDamageEffects);
         [LSTRING(SplintFellOff), 1.5, _patient] call ACEFUNC(common,displayTextStructured);
     }
