@@ -72,7 +72,7 @@ if (floor (random 100) <= _concussionChance) then {
 				[_idPFH] call CBA_fnc_removePerFrameHandler;
 			};
 
-			private _ICP = _unit getVariable [QGVAR(ICP),10];
+			private _ICP = _unit getVariable [QGVAR(ICP),15];
 			
 			//Kill the concussion once ICP reaches the limit for the concussion's severity
 			if (_ICP >= (20+_maxICPIncrease)) exitWith {

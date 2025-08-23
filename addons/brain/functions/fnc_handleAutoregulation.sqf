@@ -41,7 +41,7 @@ private _newPFH = [{
     private _paCO2 = GET_PACO2(_unit);
     private _paCO2Factor = 1 + (0.03 * (_paCO2 - 40));
     _paCO2Factor = 0 max _paCO2Factor; // prevent negative values
-    private _targetCBF = 800 * (97/GET_KAT_SPO2(_unit)) * _paCO2Factor; //TODO change this value depending on blood oxygen saturation
+    private _targetCBF = 800 * (97/GET_KAT_SPO2(_unit)) * _paCO2Factor;
     
     private _targetCVR = (_MAP-20)/_targetCBF;
     _targetCVR = (0.0375 max _targetCVR)  min 0.17875; //Clamp CVR between two values:
