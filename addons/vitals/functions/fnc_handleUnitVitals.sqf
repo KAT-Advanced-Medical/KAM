@@ -43,8 +43,8 @@ private _baroPressure = 760;
 private _temperature = DEFAULT_TEMPERATURE;
 private _altitude = (getPosASL _unit) select 2;
 
-if (GVAR(baroPressureEnable)) then {
-    if (GVAR(useACEpressure)) then {
+if (EGVAR(hypothermia,baroPressureEnable)) then {
+    if (EGVAR(hypothermia,useACEpressure)) then {
         private _hPa = _altitude call ACEFUNC(weather,calculateBarometricPressure);
         _baroPressure = _hPa * 0.750062;
     } else {

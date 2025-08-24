@@ -34,21 +34,3 @@
     [0.1, 60, 15, 1],
     true
 ] call CBA_fnc_addSetting;
-
-[
-    QGVAR(baroPressureEnable),
-    "CHECKBOX",
-    [LLSTRING(PRESSURE_ENABLE), LLSTRING(PRESSURE_ENABLE_DESC)],
-    [CBA_SETTINGS_CAT, ELSTRING(GUI,SubCategory_Basic)],
-    [true],
-    true
-] call CBA_fnc_addSetting;
-
-[
-    QGVAR(useACEpressure),
-    "CHECKBOX",
-    [LLSTRING(PRESSURE_ACE), LLSTRING(PRESSURE_ACE_DESC)],
-    [CBA_SETTINGS_CAT, ELSTRING(GUI,SubCategory_Basic)],
-    [true],
-    true
-] call CBA_fnc_addSetting;

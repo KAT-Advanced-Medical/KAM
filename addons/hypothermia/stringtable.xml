@@ -443,5 +443,21 @@
         <Key ID="STR_KAT_Hypothermia_Thermometer_log">
             <English>%1 has a Temperature of %2°c</English>
         </Key>
+        <Key ID="STR_KAT_Hypothermia_PRESSURE_ENABLE">
+            <English>Enable barometric pressure change</English>
+            <Japanese>気圧の変化を有効化</Japanese>
+        </Key>
+        <Key ID="STR_KAT_Hypothermia_PRESSURE_ENABLE_DESC">
+            <English>Enables barometric pressure changes with altitude that affect Vitals such as oxygen calculations.</English>
+            <Japanese>酸素の計算などバイタルに影響を与える高度による気圧の変化を有効化します。</Japanese>
+        </Key>
+        <Key ID="STR_KAT_Hypothermia_PRESSURE_ACE">
+            <English>Use ACE barometric pressure</English>
+            <Japanese>ACEの大気圧を使用</Japanese>
+        </Key>
+        <Key ID="STR_KAT_Hypothermia_PRESSURE_ACE_DESC">
+            <English>Use ACE calculation instead of KAM simplified calculation for barometric pressure value. (Requires ACE Weather)</English>
+            <Japanese>気圧の値にKAMによる簡易化された計算ではなく、ACEによる計算を使用します。 (ACE Weather 天候システム が必要です)</Japanese>
+        </Key>
     </Package>
 </Project>

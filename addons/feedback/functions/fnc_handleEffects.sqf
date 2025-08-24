@@ -62,7 +62,7 @@ private _airwayState = ((!_airway) || (!_breathing));
 
 [
     !_unconscious,
-    linearConversion [97, EGVAR(breathing,SpO2_dieValue), _spO2, 0, 1, true]
+    linearConversion [90, EGVAR(breathing,SpO2_dieValue), _spO2, 0, 1, true]
 ] call FUNC(effectLowSpO2);
 [!_unconscious, _airwayState] call FUNC(effectAirways);
 private _time = ACE_player getVariable [QGVAR(airwayInjuryColorTime), 0];

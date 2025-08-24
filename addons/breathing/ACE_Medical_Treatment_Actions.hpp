@@ -222,7 +222,7 @@ class ACE_Medical_Treatment_Actions {
         treatmentLocations = 0;
         allowedSelections[] = {"Chest"};
         allowSelfTreatment = 0;
-        medicRequired = QGVAR(medLvl_hemopneumothoraxTreatment);
+        medicRequired = QGVAR(medLvl_tensionpneumothoraxTreatment);
         treatmentTime = 7;
         items[] = {"kat_ncdKit"};
         condition = "true";
