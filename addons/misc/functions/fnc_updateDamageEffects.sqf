@@ -56,21 +56,21 @@ if (ACEGVAR(medical,fractures) > 0) then {
         if ((_fractures select 7) in [-1, -2]) then { _aimFracture = _aimFracture + 2; };
     };
 };
-if (GVAR(CatastrophicEnable)) then {
+if (EGVAR(hitpoints,JointChance) > 0) then {
     {
-        {if (_x in [1, 4, 7]) then {_aimFracture = _aimFracture + 1;};} forEach _x;
+        {if (_x in [1, 4, 7]) then {_aimFracture = _aimFracture + 1};} forEach _x;
     } forEach _armJointArray;
 
     {
-        {if (_x in [2, 5, 8]) then {_aimFracture = _aimFracture + 3;};} forEach _x;
+        {if (_x in [2, 5, 8]) then {_aimFracture = _aimFracture + 3};} forEach _x;
     } forEach _armJointArray;
 
     {
-        {if (_x in [3, 6]) then {_aimFracture = _aimFracture + 6;};} forEach _x;
+        {if (_x in [3, 6]) then {_aimFracture = _aimFracture + 6};} forEach _x;
     } forEach _armJointArray;
 
     {
-        {if (_x == 9) then {_aimFracture = _aimFracture + 3;};} forEach _x;
+        {if (_x == 9) then {_aimFracture = _aimFracture + 3};} forEach _x;
     } forEach _armJointArray;
 
 };

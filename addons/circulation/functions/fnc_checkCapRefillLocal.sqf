@@ -18,7 +18,6 @@
  */
 
 params ["_medic", "_patient", "_bodyPart"];
-
 private _tourniquets = GET_TOURNIQUETS(_patient);
 private _occlusionMap = [
     [4, [4, 5]],
@@ -39,7 +38,8 @@ private _isOccluded = { _tourniquets select _x != 0 } count _result > 0;
 private _capRefillOutput = LSTRING(Check_capRefill_Output_Normal);
 private _logCapRefillOutput = LSTRING(Check_capRefill_Output_Normal_log);
 private _cardiacOutput = _patient call EFUNC(vitals,getCardiacOutput);
-private _defaultCardiacOutput = ([_patient] call EFUNC(vitals,getDefaultStrokeVolume) * _heartRate) / 60;
+private _strokeVolume = _patient call EFUNC(vitals,getDefaultStrokeVolume);
+private _defaultCardiacOutput = (_strokeVolume * _heartRate) / 60;
 private _cardiacOutputRatio = _cardiacOutput/_defaultCardiacOutput;
 if (_isOccluded) then {
     _capRefillOutput = LSTRING(Check_capRefill_Output_NoRefill);

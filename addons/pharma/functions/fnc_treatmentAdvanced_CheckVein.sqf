@@ -24,9 +24,7 @@ params ["_medic", "_patient", "_bodypart"];
  private _IVactual = _IVarray select _partIndex;
 
  if (_IVactual == 9) then {
-    hint str LLSTRING(CheckVein_VeinBlown);
-    [{hint "";}, [], 10] call CBA_fnc_waitAndExecute;
+    [QACEGVAR(common,displayTextStructured), [[LSTRING(CheckVein_VeinBlown)], 1.5, _medic], _medic] call CBA_fnc_targetEvent;
 } else {
-    hint str LLSTRING(CheckVein_VeinFine);
-    [{hint "";}, [], 10] call CBA_fnc_waitAndExecute;
+    [QACEGVAR(common,displayTextStructured), [[LSTRING(CheckVein_VeinFine)], 1.5, _medic], _medic] call CBA_fnc_targetEvent;
 };
