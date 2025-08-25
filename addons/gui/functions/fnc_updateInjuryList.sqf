@@ -300,7 +300,7 @@ if (ACEGVAR(medical_gui,showDamageEntry)) then {
             };
 
         };
-        _bodyPartDamage = (_bodyPartDamage / _damageThreshold) min 1;
+        _bodyPartDamage = (_bodyPartDamage / (0.01 max _damageThreshold)) min 1;
         switch (true) do {
             case (_bodyPartDamage isEqualTo 1): {
                 _entries pushBack [localize ACELSTRING(medical_gui,traumaSustained4), [_bodyPartDamage] call ACEFUNC(medical_gui,damageToRGBA)];
