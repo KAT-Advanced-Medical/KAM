@@ -56,16 +56,16 @@ private _bodyExternalPartBleeding = [0,0,0,0,0,0,0,0,0,0,0,0];
             if (_isPressureApplied || (_occlusionLevel > 0)) then {
                 switch (true) do {
                     case (_suffix == "Minor"): {
-                        _partBleeding = _partBleeding + ((_amountOf * _bleeding) * (_pressureApplied * 1.5) * (1 - _occlusionLevel));
+                        _partBleeding = _partBleeding + ((_amountOf * _bleeding) * (1 - (_pressureApplied * 1.5)) * (1 - _occlusionLevel));
                     };
                     case (_suffix == "Medium"): {
-                        _partBleeding = _partBleeding + ((_amountOf * _bleeding) * _pressureApplied * (1 - _occlusionLevel));
+                        _partBleeding = _partBleeding + ((_amountOf * _bleeding) * (1 - _pressureApplied) * (1 - _occlusionLevel));
                     };
                     case (_suffix == "Large"): {
-                        _partBleeding = _partBleeding + ((_amountOf * _bleeding) * (_pressureApplied * 0.7) * (1 - _occlusionLevel));
+                        _partBleeding = _partBleeding + ((_amountOf * _bleeding) * (1 - (_pressureApplied * 0.7)) * (1 - _occlusionLevel));
                     };
                     default {
-                        _partBleeding = _partBleeding + ((_amountOf * _bleeding) * _pressureApplied * (1 - _occlusionLevel));
+                        _partBleeding = _partBleeding + ((_amountOf * _bleeding) * (1 - _pressureApplied) * (1 - _occlusionLevel));
                     };
                 };
             } else {
