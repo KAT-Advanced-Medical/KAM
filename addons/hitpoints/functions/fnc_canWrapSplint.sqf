@@ -20,7 +20,7 @@
 
 params ["", "_patient", "_bodyPart"];
 if (_patient call ACEFUNC(common,isSwimming)) exitWith {false};
-
+if (ACEGVAR(medical,fractures) in [0, 1]) exitWith {false};
 private _partIndex = ALL_BODY_PARTS find toLowerANSI _bodyPart;
 
 (GET_FRACTURES(_patient) select _partIndex) == -1

@@ -402,7 +402,7 @@
             <English>Select Upper Right Leg</English>
         </Key>
         <Key ID="STR_KAT_GUI_Status_SplintWrapped">
-            <English>Splint Wrapped</English>
+            <English>[Wrapped] Splinted</English>
         </Key>
         <Key ID="STR_KAT_GUI_Abrasion">
             <English>Scrape</English>
