@@ -36,5 +36,9 @@ if (_amiodaroneEffectiveness > 0.2) then {
 
 [{ 
     params ["_patient", "_cardiacRhythm"];
-    _patient setVariable [QEGVAR(circulation,cardiacArrestType), _cardiacRhythm];
+    if ((random 1000) < 1) then {
+        _patient setVariable [QEGVAR(circulation,cardiacArrestType), 0, true];
+    } else {
+        _patient setVariable [QEGVAR(circulation,cardiacArrestType), _cardiacRhythm, true];
+    };
 }, [_patient, _cardiacRhythm], _time] call CBA_fnc_waitAndExecute;
