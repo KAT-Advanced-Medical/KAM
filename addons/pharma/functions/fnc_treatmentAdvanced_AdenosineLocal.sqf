@@ -36,7 +36,7 @@ if (_amiodaroneEffectiveness > 0.2) then {
 
 [{ 
     params ["_patient", "_cardiacRhythm"];
-    if ((random 1000) < 1) then {
+    if (((random 1000) < 1) && (_cardiacRhythm > 2))  then {
         _patient setVariable [QEGVAR(circulation,cardiacArrestType), 0, true];
     } else {
         _patient setVariable [QEGVAR(circulation,cardiacArrestType), _cardiacRhythm, true];
