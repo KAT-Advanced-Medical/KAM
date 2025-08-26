@@ -83,13 +83,13 @@ if (_hasExternalBleeding && (IS_BLEEDING(_target))) then {
                 private _bleedRateKO = BLOOD_LOSS_KNOCK_OUT_THRESHOLD * (_cardiacOutput max 0.05);
                 // Use nonzero minimum cardiac output to prevent all bleeding showing as massive during cardiac arrest
                 switch (true) do {
-                    case (_bleedRate < (_bleedRateKO * BLEED_RATE_SLOW * 2)): {
+                    case (_bleedRate < (_bleedRateKO * BLEED_RATE_SLOW * 8)): {
                         _entries pushBack [localize ACELSTRING(medical_gui,Bleed_Rate1), [1, 1, 0, 1]];
                     };
-                    case (_bleedRate < (_bleedRateKO * BLEED_RATE_MODERATE * 2)): {
+                    case (_bleedRate < (_bleedRateKO * BLEED_RATE_MODERATE * 8)): {
                         _entries pushBack [localize ACELSTRING(medical_gui,Bleed_Rate2), [1, 0.67, 0, 1]];
                     };
-                    case (_bleedRate < (_bleedRateKO * BLEED_RATE_SEVERE * 2)): {
+                    case (_bleedRate < (_bleedRateKO * BLEED_RATE_SEVERE * 8)): {
                         _entries pushBack [localize ACELSTRING(medical_gui,Bleed_Rate3), [1, 0.33, 0, 1]];
                     };
                     default {

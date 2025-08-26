@@ -75,8 +75,6 @@ if (_activeChestSeal select _side) then {
 if ((_patient getVariable [QGVAR(pneumothorax), [0, 0]] select _side > 0) &&
     !(_patient getVariable [QGVAR(hemopneumothorax), [false, false]] select _side) &&
     !((_patient getVariable [QGVAR(tensionPneumothorax), [false, false]]) select _side)) then {
-    
-    
     if (GVAR(clearChestSealAfterTreatment)) then {
         _activeChestSeal set [_side, false];
         _patient setVariable [QGVAR(activeChestSeal), _activeChestSeal, true];

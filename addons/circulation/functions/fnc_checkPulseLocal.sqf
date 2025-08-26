@@ -38,14 +38,14 @@ private _isOccluded = { _tourniquets select _x != 0 } count _result > 0;
 
 if !(_isOccluded) then {
     _heartRate = switch (true) do {
+        case (alive _patient): {
+            GET_HEART_RATE(_patient)
+        };
         case ((_patient getVariable [QGVAR(attachedLucasState), false])): {
             100 // fake heart rate because patient is dead and off state machine
         };
-        case ((_patient getVariable [QACEGVAR(medical,CPR_provider), objNull])): {
+        case (alive (_patient getVariable [QACEGVAR(medical,CPR_provider), objNull])): {
             random [90, 100, 120] // fake heart rate because patient is dead and off state machine
-        };
-        case (alive _patient): {
-            GET_HEART_RATE(_patient)
         };
         default { 0 };
     };

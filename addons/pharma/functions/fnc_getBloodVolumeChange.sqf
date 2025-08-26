@@ -32,7 +32,7 @@ private _heartRate = GET_HEART_RATE(_unit);
 private _lossVolumeChange = (-_deltaT * ((_bloodLoss + _internalBleeding * (GET_HEART_RATE(_unit) / (_unit getVariable [QEGVAR(circulation,defaultHeartRate), 80])) * _correctedMap * ((GET_BODY_FLUID_ECP(_unit)/GET_BODY_FLUID_ECB(_unit)) / (DEFAULT_ECP/DEFAULT_ECB))) / GET_VASOCONSTRICTION(_unit)));
 private _enableFluidShift = EGVAR(vitals,enableFluidShift);
 private _fluidVolume = GET_BODY_FLUID(_unit);
-TRACE_3("gbvc",_internalBleeding,_bloodLoss,_heartRate);
+TRACE_4("gbvc",_internalBleeding,_bloodLoss,_heartRate,_lossVolumeChange);
 _fluidVolume params ["_ECB","_ECP","_SRBC","_ISP","_fullVolume","_platelets"];
 
 _ECP = (_ECP + (_lossVolumeChange * LITERS_TO_ML) / 2) max 100;

@@ -72,7 +72,7 @@ if (floor (random 100) >= GVAR(deepPenetratingInjuryChance)) exitWith {_this};
 
 _deepPenetratingInjury set [_side, true];
 _unit setVariable [QGVAR(deepPenetratingInjury), _deepPenetratingInjury, true];
-_activeChestSeal set [_side, true];
+_activeChestSeal set [_side, false];
 _unit setVariable [QGVAR(activeChestSeal), _activeChestSeal, true];
 
 // Check for tamponade

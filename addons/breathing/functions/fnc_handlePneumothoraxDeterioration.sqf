@@ -35,8 +35,9 @@ params ["_unit", "_chanceIncrease", "_side"];
             private _hemoState = _unit getVariable [QGVAR(hemopneumothorax), [false, false]];
             private _occlusion = ((_unit getVariable [QEGVAR(airway,occlusion), [0, 0, 0]]) findIf { _x > 4 }) != -1;
             private _obstruction = ((_unit getVariable [QEGVAR(airway,obstruction), [0, 0, 0]]) findIf { _x != 0 }) != -1;
-            if (GVAR(baroPressureEnable)) then {
-                if (GVAR(useACEpressure)) then {
+            private _activeChestSeal = (_unit getVariable [QGVAR(activeChestSeal), [false, false]]) select _side;
+            if (EGVAR(hypothermia,baroPressureEnable)) then {
+                if (EGVAR(hypothermia,useACEpressure)) then {
                 private _hPa = _altitude call ACEFUNC(weather,calculateBarometricPressure);
                 _baroPressure = _hPa * 0.750062;
             } else {
@@ -48,8 +49,9 @@ params ["_unit", "_chanceIncrease", "_side"];
                 if (_pneumothoraxState select _side > 0) then {
                     // If patient is dead, treated, or already deteriorated to advanced pneumothorax, kill the PFH
                     if (!(alive _unit) ||
-                        (_pneumothoraxState select _side isEqualTo 0)) exitWith {
+                        (_pneumothoraxState select _side isEqualTo 0) || (_activeChestSeal)) exitWith {
                         [_idPFH] call CBA_fnc_removePerFrameHandler;
+                        systemChat "removing PTX"
                     };
 
                     if (floor (random 100) < GVAR(deterioratingPneumothorax_chance) && _breathing) then {

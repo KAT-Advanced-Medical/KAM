@@ -42,7 +42,7 @@ private _bodyExternalPartBleeding = [0,0,0,0,0,0,0,0,0,0,0,0];
     private _idx = _occlusionMap findIf { _x#0 == _partIndex };
     private _result = if (_idx != -1) then { _occlusionMap select _idx select 1 } else { [] };
     private _isOccluded = { _tourniquets select _x >= 1 } count _result > 0;
-    private _occlusionLevel = if (_result isNotEqualTo []) then { selectMax (_result apply { _tourniquets select _x }) } else { 1 };
+    private _occlusionLevel = if (_result isNotEqualTo []) then { selectMax (_result apply { _tourniquets select _x }) } else { 0 };
     private _isPressureApplied = _pressureApplied > 0;
     if (!_isOccluded) then {
         private _partBleeding = 0;
@@ -52,6 +52,7 @@ private _bodyExternalPartBleeding = [0,0,0,0,0,0,0,0,0,0,0,0];
             private _category   = _woundClassID % 10;
             private _suffix = ["Minor", "Medium", "Large"] select _category;
             private _className = ACEGVAR(medical_damage,woundClassNames) select _classIndex;
+            TRACE_5("updateWoundBloodLoss1",_isPressureApplied,_occlusionLevel,_amountOf,_bleeding,_pressureApplied);
             if (_isPressureApplied || (_occlusionLevel > 0)) then {
                 switch (true) do {
                     case (_suffix == "Minor"): {

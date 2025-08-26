@@ -25,7 +25,6 @@ private _resistance = _unit getVariable [VAR_PERIPH_RES, DEFAULT_PERIPH_RES]; //
 private _cardiacOutputFixed = (_cardiacOutput max CARDIAC_OUTPUT_MIN);
 // even if heart stops blood will still flow slowly (gravity)
 private _bloodLoss = (_woundBleeding * _cardiacOutputFixed * (DEFAULT_PERIPH_RES / _resistance) * ACEGVAR(medical,bleedingCoefficient));
-private _bloodLoss = _bloodLoss / 5;
 TRACE_4("GBL",_woundBleeding,_cardiacOutputFixed,_resistance,_bloodLoss);
 
 private _eventArgs = [_unit, _bloodLoss]; // Pass by reference

@@ -56,8 +56,8 @@ private _sizeLabel = "";
 TRACE_1("checkLimb2",_internalBleedAmount);
 if (_internalBleedAmount > 0) then {
     _sizeLabel = switch (true) do {
-        case (_internalBleedAmount < 1): { localize LSTRING(InternalBleeding_Minor) };
-        case (_internalBleedAmount < 5): { localize LSTRING(InternalBleeding_Medium) };
+        case (_internalBleedAmount < 3): { localize LSTRING(InternalBleeding_Minor) };
+        case (_internalBleedAmount < 6): { localize LSTRING(InternalBleeding_Medium) };
         case (_internalBleedAmount < 10): { localize LSTRING(InternalBleeding_Large) };
         default {};
     };

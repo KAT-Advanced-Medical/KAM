@@ -22,6 +22,6 @@ private _index = ALL_BODY_PARTS find toLowerANSI _bodyPart;
 _hasCovertableTQ = false;
 if (_index >= 0) then {
     private _tqValue = (_unit getVariable [VAR_KAT_TOURNIQUET, [0,0,0,0,0,0,0,0,0,0,0,0]] select _index);
-    _hasCovertableTQ = (_tqValue > 0.3 && _tqValue < 1);
+    _hasCovertableTQ = (_tqValue > 0.1 && _tqValue < 1);
 };
 _hasCovertableTQ
