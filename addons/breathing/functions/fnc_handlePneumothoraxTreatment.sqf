@@ -39,7 +39,6 @@ params ["_unit", "_chanceIncrease", "_side"];
                         (_tensionState select _side) ||
                         !(alive _unit)) exitWith {
                         [_idPFH] call CBA_fnc_removePerFrameHandler;
-                        systemChat "removing PFH"
                     };
 
                     if ((floor (random 100) < 50)) then {

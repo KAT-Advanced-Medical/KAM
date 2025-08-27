@@ -51,7 +51,6 @@ params ["_unit", "_chanceIncrease", "_side"];
                     if (!(alive _unit) ||
                         (_pneumothoraxState select _side isEqualTo 0) || (_activeChestSeal)) exitWith {
                         [_idPFH] call CBA_fnc_removePerFrameHandler;
-                        systemChat "removing PTX"
                     };
 
                     if (floor (random 100) < GVAR(deterioratingPneumothorax_chance) && _breathing) then {
