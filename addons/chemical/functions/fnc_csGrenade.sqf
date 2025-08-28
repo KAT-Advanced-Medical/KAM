@@ -78,7 +78,15 @@ if (isServer) then {
     private _radius = 6;
     private _gasLevel = 0;
 
-    [QGVAR(addGasSource), [_projectile, _radius, _gasLevel, _projectile, {
+    [{
+        params ["_args", "_pfhID"];
+        _args params ["_projectile", "_radius", "_gasLevel", "_endTime"];
+
+        if (isNull _projectile) exitWith {
+            [_pfhID] call CBA_fnc_removePerFrameHandler;
+        };
+
+        [QGVAR(addGasSource), [_projectile, _radius, _gasLevel, _projectile, {
         params ["_endTime", "_projectile"];
 
         // If incendiary no longer exists, exit
@@ -90,7 +98,10 @@ if (isServer) then {
         private _position = position _projectile;
 
         CBA_missionTime < _endTime // return
-    }, [CBA_missionTime + _timeToLive, _projectile]]] call CBA_fnc_serverEvent;
+    }, [CBA_missionTime + _timeToLive, _projectile], false, false, false]] call CBA_fnc_serverEvent;
+
+        [_pfhID] call CBA_fnc_removePerFrameHandler;
+    }, 0, [_projectile, _radius, _gasLevel, _endTime]] call CBA_fnc_addPerFrameHandler;
 };
 
 [{deleteVehicle _this}, _particleSource, _timeToLive] call CBA_fnc_waitAndExecute;
