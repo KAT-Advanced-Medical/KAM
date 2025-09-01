@@ -17,11 +17,14 @@
  */
 
 params ["_medic", "_patient", "_bodyPart"];
-private _fentPatchArray = _patient getVariable [VAR_FENT_PATCH, [0,0,0,0,0,0,0,0,0,0,0,0]];
-private _return = true;
 
-if ((selectMax _fentPatchArray) > 0) then {
-    _return = false;
+private _partIndex = ALL_BODY_PARTS find toLower _bodyPart;
+private _fentPatchArray = _patient getVariable [VAR_FENT_PATCH, [0,0,0,0,0,0,0,0,0,0,0,0]];
+private _fentActual = _fentPatchArray select _partIndex;
+private _return = false;
+
+if (_fentActual > 0) then {
+    _return = true;
 };
 
 _return

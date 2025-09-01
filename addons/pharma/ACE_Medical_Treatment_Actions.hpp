@@ -1438,7 +1438,7 @@ class ACE_Medical_Treatment_Actions {
         treatmentTime = QGVAR(treatmentTime_ApplyFentPatch);
         medicRequired = 0;
         items[] = {};
-        condition = QUOTE(([ARR_3(_player,_patient,_bodyPart)] call FUNC(treatmentAdvanced_FentanylPatchCheck)));
+        condition = QUOTE(([ARR_3(_player,_patient,_bodyPart)] call FUNC(treatmentAdvanced_FentanylPatchRemoveCheck)));
         callbackSuccess = QFUNC(treatmentAdvanced_RemoveFentanylPatch);
         sounds[] = {};
     };
