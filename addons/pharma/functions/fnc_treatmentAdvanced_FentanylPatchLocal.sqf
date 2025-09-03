@@ -36,7 +36,7 @@ _patient setVariable [VAR_FENT_PATCH, _fentPatch, true];
             _patient setVariable [VAR_FENT_PATCH, _fentPatch, true];
             private _painAdjust = linearConversion [0.6, 0, _fentPatchIndex, 1, 0.01, true];
             private _painSuppress = _patient getVariable [QACEGVAR(medical,painSuppress), 0];
-            private _painSupressAdjustment = (0.6 - _painSuppress) max 0 min _painAdjust;
+            private _painSupressAdjustment = ((0.6 - _painSuppress) max 0) min _painAdjust;
             _patient setVariable [QACEGVAR(medical,painSuppress), 0 max _painSupressAdjustment, true];
             [_patient, "Fentanyl", 0, 3, 0, 0, 0, 3, 0, 1.05, 0.08, 0.1, -0.08, 0, 0.15] call EFUNC(vitals,addMedicationAdjustment);
         }, 2, [_patient,_partIndex]] call CBA_fnc_addPerFrameHandler;

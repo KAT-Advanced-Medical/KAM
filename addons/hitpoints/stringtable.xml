@@ -603,5 +603,8 @@
         <Key ID="STR_KAT_Hitpoints_Subcatagory_Armor">
             <English>Armor</English>
         </Key>
+        <Key ID="STR_KAT_Hitpoints_jointInjuryGUI">
+            <English>Inflamed Joint</English>
+        </Key>
     </Package>
 </Project>

@@ -565,6 +565,7 @@ class ACE_Medical_Treatment_Actions {
         items[] = {"kat_syringe_txa_10ml_10"};
         callbackSuccess = QFUNC(medication);
         removeFromInteractions = "true";
+        sounds[] = {};
     };
     class syringe_TXA_10ml_20: syringe_TXA_10ml_10 {
         displayName = KATPUSHCSTRING(txa,10ml,20);

@@ -18,10 +18,5 @@
 
 params ["_medic", "_patient", "_bodyPart"];
 private _fentPatchArray = _patient getVariable [VAR_FENT_PATCH, [0,0,0,0,0,0,0,0,0,0,0,0]];
-private _return = true;
-
-if ((selectMax _fentPatchArray) > 0) then {
-    _return = false;
-};
-
+private _return = _fentPatchArray findIf { _x > 0 } > -1;
 _return
