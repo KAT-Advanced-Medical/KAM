@@ -3772,22 +3772,22 @@
             <English>Transfusing Etomidate Infusion (100ml)...</English>
         </Key>
         <Key ID="STR_KAT_Circulation_Actions_MorphineIVInfusion">
-            <English>Transfuse Morphine Infusion</English>
+            <English>Transfuse Morphine Infusion (100ml)</English>
         </Key>
         <Key ID="STR_KAT_Circulation_Transfusing_Morphine_Infusion">
-            <English>Transfusing Morphine Infusion...</English>
+            <English>Transfusing Morphine Infusion (250ml)...</English>
         </Key>
         <Key ID="STR_KAT_Circulation_Actions_EpinephrineInfusion">
-            <English>Transfuse Epinephrine Infusion</English>
+            <English>Transfuse Epinephrine Infusion (250ml)</English>
         </Key>
         <Key ID="STR_KAT_Circulation_Transfusing_Epinephrine_Infusion">
-            <English>Transfusing Epinephrine Infusion...</English>
+            <English>Transfusing Epinephrine Infusion (250ml)...</English>
         </Key>
         <Key ID="STR_KAT_Circulation_Actions_EtomidateInfusion">
-            <English>Transfuse Etomidate Infusion</English>
+            <English>Transfuse Etomidate Infusion (250ml) </English>
         </Key>
         <Key ID="STR_KAT_Circulation_Transfusing_Etomidate_Infusion">
-            <English>Transfusing Etomidate Infusion...</English>
+            <English>Transfusing Etomidate Infusion (250ml)...</English>
         </Key>
         <Key ID="STR_KAT_Circulation_Ringers_Lactate_IV">
             <English>Ringers Lactate IV (1000ml)</English>
@@ -3829,10 +3829,10 @@
             <English>A Infusion of Doxapram and Saline introduced into the blood system through an IV.</English>
         </Key>
         <Key ID="STR_KAT_Circulation_Actions_DoxapramInfusion">
-            <English>Transfuse Doxapram Infusion</English>
+            <English>Transfuse Doxapram Infusion (250ml)</English>
         </Key>
         <Key ID="STR_KAT_Circulation_Transfusing_Doxapram_Infusion">
-            <English>Transfusing Doxapram Infusion...</English>
+            <English>Transfusing Doxapram Infusion (250ml)...</English>
         </Key>
         <Key ID="STR_KAT_Circulation_Actions_DoxapramInfusion100">
             <English>Transfuse Doxapram Infusion (100ml)</English>
@@ -3853,10 +3853,10 @@
             <English>A Infusion of Nitroglycerin and Saline introduced into the blood system through an IV.</English>
         </Key>
         <Key ID="STR_KAT_Circulation_Actions_NitroglycerinInfusion">
-            <English>Transfuse Nitroglycerin Infusion</English>
+            <English>Transfuse Nitroglycerin Infusion (250ml)</English>
         </Key>
         <Key ID="STR_KAT_Circulation_Transfusing_Nitroglycerin_Infusion">
-            <English>Transfusing Nitroglycerin Infusion...</English>
+            <English>Transfusing Nitroglycerin Infusion (250ml)...</English>
         </Key>
         <Key ID="STR_KAT_Circulation_Actions_NitroglycerinInfusion100">
             <English>Transfuse Nitroglycerin Infusion (100ml)</English>
@@ -3877,10 +3877,10 @@
             <English>A Infusion of Norepinephrine and Saline introduced into the blood system through an IV.</English>
         </Key>
         <Key ID="STR_KAT_Circulation_Actions_NorepinephrineInfusion">
-            <English>Transfuse Norepinephrine Infusion</English>
+            <English>Transfuse Norepinephrine Infusion (250ml)</English>
         </Key>
         <Key ID="STR_KAT_Circulation_Transfusing_Norepinephrine_Infusion">
-            <English>Transfusing Norepinephrine Infusion...</English>
+            <English>Transfusing Norepinephrine Infusion (250ml)...</English>
         </Key>
         <Key ID="STR_KAT_Circulation_Actions_NorepinephrineInfusion100">
             <English>Transfuse Norepinephrine Infusion (100ml)</English>
@@ -3955,7 +3955,7 @@
             <English>You find a normal Trachea</English>
         </Key>
         <Key ID="STR_KAT_Circulation_Check_Neck_Output_5">
-            <English>You find Tracheal Deviation</English>
+            <English>You find Significant Tracheal Deviation</English>
         </Key>
         <Key ID="STR_KAT_Circulation_Check_Neck_Output_1_log">
             <English>Slightly Distended Jugular vein</English>
@@ -3970,7 +3970,7 @@
             <English>%1 finds a normal Trachea</English>
         </Key>
         <Key ID="STR_KAT_Circulation_Check_Neck_Output_5_log">
-            <English>%1 finds Tracheal Deviation</English>
+            <English>%1 finds Significant Tracheal Deviation</English>
         </Key>
         <Key ID="STR_KAT_Circulation_CheckNeck">
             <English>Check Neck</English>

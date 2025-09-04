@@ -1424,7 +1424,7 @@ class ACE_Medical_Treatment_Actions {
         medicRequired = QGVAR(medLvl_ApplyFentPatch);
         treatmentTime = QGVAR(treatmentTime_ApplyFentPatch);
         allowSelfTreatment = 1;
-        category = "advanced";
+        category = "medication";
         allowedSelections[] = {"Chest", "Neck", "LeftArm", "RightArm", "UpperLeftLeg", "UpperRightLeg", "UpperLeftArm", "UpperRightArm", "LeftLeg", "RightLeg"};
         items[] = {"kat_fentPatch"};
         condition = QUOTE(!([ARR_3(_player,_patient,_bodyPart)] call FUNC(treatmentAdvanced_FentanylPatchCheck)));
@@ -1434,7 +1434,7 @@ class ACE_Medical_Treatment_Actions {
     class RemoveFentPatch: ApplyFentPatch {
         displayName = CSTRING(Remove_FentPatch);
         displayNameProgress = CSTRING(Removing_FentPatch);
-        category = "advanced";
+        category = "medication";
         allowedSelections[] = {"Chest", "Neck", "LeftArm", "RightArm", "UpperLeftLeg", "UpperRightLeg", "UpperLeftArm", "UpperRightArm", "LeftLeg", "RightLeg"};
         treatmentTime = QGVAR(treatmentTime_ApplyFentPatch);
         medicRequired = 0;
