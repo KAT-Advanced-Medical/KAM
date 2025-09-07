@@ -1,4 +1,4 @@
-# KAT Medical
+# KAM - REDUX
 
 <p align="center">
     <img src="https://raw.githubusercontent.com/Tomcat-SG/KAM/master/logo.jpg">
