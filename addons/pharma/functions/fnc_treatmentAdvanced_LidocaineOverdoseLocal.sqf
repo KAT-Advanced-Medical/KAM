@@ -15,7 +15,7 @@
  * Public: No
  */
 params ["_patient"];
-private _hrAdjust = -40 + floor random ((-40 - -40) + 1);
+private _hrAdjust = -20 + floor random ((-20 - -20) + 1);
 [_patient, "LidocaineOD", 30, 1200, _hrAdjust, 0, 0, 0, 0.2] call EFUNC(vitals,addMedicationAdjustment);
 [{
     params ["_patient"];
