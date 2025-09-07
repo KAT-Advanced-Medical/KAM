@@ -63,7 +63,7 @@ if (random 100 < GVAR(closedReductionFailChance)) exitWith {
 };
 
 _activeFracture set [_part, -3];
-private _delay = (random [120, 200, 240]);
+private _delay = (random [60, 100, 180]);
 [{
     params ["_patient", "_activeFracture"];
     _activeFracture set [_part, 0];
@@ -74,6 +74,5 @@ _fractureArray set [_part, 0];
 
 _patient setVariable [QGVAR(fractures), _fractureArray, true];
 _patient setVariable [VAR_FRACTURES, _activeFracture, true];
-_patient setVariable [QACEGVAR(medical,isLimping), false, true];
 [_patient, "blockSprint", QACEGVAR(medical,fracture), false] call ACEFUNC(common,statusEffect_set);
-[_patient] call ACEFUNC(medical_engine,updateDamageEffects);
+[_patient] call EFUNC(misc,updateDamageEffects);
