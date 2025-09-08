@@ -62,10 +62,17 @@ private _occlusion = (_occlusionArray findIf { _x > 4 }) != -1;
 private _obstruction = (_obstructionArray findIf { _x != 0 }) != -1;
 
 private _airway = true;
-private _noETT = (_patient getVariable [QEGVAR(airway,airway_item), ""] isNotEqualTo "ETT");
-private _noSurgicalAirway = (_patient getVariable [QEGVAR(airway,airway_item), ""] isNotEqualTo "Surgical_Airway");
-private _noOverstretch = _patient getVariable [QEGVAR(airway,overstretch), false];
-if (((((_obstruction && !_noOverstretch) || _occlusion) && _noETT) || _hasCatastrophicAirway) && _noSurgicalAirway) then {
+private _airwayItem = _unit getVariable [QEGVAR(airway,airway_item), ""];
+private _noETT = (_airwayItem isNotEqualTo "ETT");
+private _noSurgicalAirway = (_airwayItem isNotEqualTo "Surgical_Airway");
+private _noOverstretch = _unit getVariable [QEGVAR(airway,overstretch), false];
+if ((_obstruction && !_noOverstretch) && _noSurgicalAirway && _noETT) then {
+    _airway = false;
+};
+if ((_occlusion && _noETT) && _noSurgicalAirway) then {
+    _airway = false;
+};
+if (_hasCatastrophicAirway && _noSurgicalAirway) then {
     _airway = false;
 };
 private _airwayResistance = 1;
@@ -76,17 +83,9 @@ if (selectMax (_occlusionArray) > 0) then {
     private _occlusion = selectMax (_occlusionArray);
     _airwayResistance = linearConversion [0, 6, _occlusion, 1, 0.2, true];
 };
-private _airwayO2TransferMultiplier = 1;
-if (selectMax (_occlusionArray) > 0) then {
-    private _occlusion = selectMax (_occlusionArray);
-    _airwayO2TransferMultiplier = linearConversion [0, 6, _occlusion, 1, 0.2, true];
-};
-if (selectMax (_obstructionArray) > 0) then {
-    _airwayO2TransferMultiplier = 0.5;
-};
 private _paralysis = (_unit getVariable [QEGVAR(breathing,paralysis), 0] > 0.1);
 private _existingPFH = _unit getVariable [QGVAR(airwayMonitorPFH), -1];
-if ((_existingPFH isEqualTo -1) && (IN_CRDC_ARRST(_unit) || _airway || _paralysis)) then {
+if ((_existingPFH isEqualTo -1) && (!_airway || _paralysis)) then {
     private _pfhID = [
     {
         params ["_args", "_idPFH"];
@@ -105,13 +104,13 @@ if ((_existingPFH isEqualTo -1) && (IN_CRDC_ARRST(_unit) || _airway || _paralysi
         private _catastrophicState = _unit getVariable [QEGVAR(airway,catastrophicAirway), [false, false]];
         private _hasCatastrophicAirway = ((_catastrophicState select 0) || (_catastrophicState select 1));
 
-        private _airway = false;
+        private _airway = true;
         if ((((_obstruction || _occlusion) && _noETT) || _hasCatastrophicAirway) && _noSurgicalAirway) then {
-            private _airway = true;
+            private _airway = false;
         };
 
         private _paralysis = (_unit getVariable [QEGVAR(breathing,paralysis), 0] > 0.1);
-        private _condition = IN_CRDC_ARRST(_unit) || _airway || _paralysis;
+        private _condition = (_airway || _paralysis);
         if (_condition) then {
             _elapsed = _elapsed + 1;
             _args set [1, _elapsed];
@@ -157,7 +156,7 @@ if ((IN_CRDC_ARRST(_unit)) || !_airway || _paralysis) then {
     // Ventilatory Demand comes from Heart Rate with increase demand from PaCO2 levels
     private _contractility = (_unit getVariable [QEGVAR(pharma,heartContractility), 1]) max 0.2;
     private _contractilityMult = linearConversion [0.2, 1.8, _contractility, 0.5, 1.5, true];
-    _demandVentilation = (((((_actualHeartRate / _contractility) * HEART_RATE_CO2_MULTIPLIER) / _anerobicPressure) + ((_previousCyclePaco2 - DEFAULT_PACO2) * 200)) max MINIMUM_VENTILATION);
+    _demandVentilation = (((((_actualHeartRate / _contractilityMult) * HEART_RATE_CO2_MULTIPLIER) / _anerobicPressure) + ((_previousCyclePaco2 - DEFAULT_PACO2) * 200)) max MINIMUM_VENTILATION);
 
     // Respiratory Rate is supressed by Opioids 
     
@@ -236,8 +235,6 @@ private _o2Sat = ((_pao2 max 1)^2.7 / ((25 - (((_pH / DEFAULT_PH) - 1) * 150))^2
 
 if (_unit getVariable [QEGVAR(airway,overstretch), false]) then {
     _o2Sat = _o2Sat * 0.95;
-} else {
-    _o2Sat = _o2Sat * _airwayO2TransferMultiplier;
 };
 TRACE_3("o22",_o2Sat,((_pao2 max 1)^2.7 / ((25 - (((_pH / DEFAULT_PH) - 1) * 150))^2.7 + _pao2^2.7)),_ecbFactor);
 _unit setVariable [QEGVAR(breathing,breathRate), (_respiratoryRate max 0), _syncValues];

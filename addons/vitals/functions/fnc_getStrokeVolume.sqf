@@ -1,3 +1,4 @@
+#define DEBUG_MODE_FULL
 #include "..\script_component.hpp"
 /*
  * Author: Cplhardcore
@@ -40,7 +41,7 @@ private _edv = _fillPortion * _cvp * 0.25 * _strokeVolume;
 
 private _esv = (_afterload/_contractility) * (0.5 * _strokeVolume);
 
-private _strokeVol = (_edv - _esv) max 0;
+private _strokeVol = (_edv - _esv) max 0.001;
 private _strokeVol = _strokeVol min 0.15;
 TRACE_7("strokeVolume",_edv,_strokeVol,_esv,_cvp,_heartRate,_fillTime,_bloodVolumeRatio);
 _strokeVol

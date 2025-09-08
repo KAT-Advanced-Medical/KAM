@@ -228,6 +228,7 @@ class ACE_Medical_Treatment_Actions {
         displayNameProgress = CSTRING(Converting_HastyTourniquet);
         treatmentTime = QGVAR(treatmentTimeHastyTourniquet);
         treatmentTimeTrained = QGVAR(treatmentTimeTrainedHastyTourniquet);
+        items[] = {};
         condition = QUOTE([ARR_2(_patient,_bodyPart)] call FUNC(convertTourniquetCheck));
         callbackSuccess = QUOTE([ARR_8(_medic,_patient,_bodyPart,_classname,_itemUser,_usedItem,_createLitter,2)] call FUNC(convertTourniquet));
     };

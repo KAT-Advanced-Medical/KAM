@@ -92,6 +92,20 @@ if (!_isLimping && {ACEGVAR(medical,limping) > 0}) then {
             + (_bandagedWounds getOrDefault ["upperleftleg", []])
             + (_bandagedWounds getOrDefault ["rightleg", []])
             + (_bandagedWounds getOrDefault ["upperrightleg", []]);
+
+        private _wrappedWounds = GET_WRAPPED_WOUNDS(_unit);
+        _legWounds = _legWounds
+            + (_wrappedWounds getOrDefault ["leftleg", []])
+            + (_wrappedWounds getOrDefault ["upperleftleg", []])
+            + (_wrappedWounds getOrDefault ["rightleg", []])
+            + (_wrappedWounds getOrDefault ["upperrightleg", []]);
+
+        private _coagWounds = GET_COAGED_WOUNDS(_unit);
+        _legWounds = _legWounds
+            + (_coagWounds getOrDefault ["leftleg", []])
+            + (_coagWounds getOrDefault ["upperleftleg", []])
+            + (_coagWounds getOrDefault ["rightleg", []])
+            + (_coagWounds getOrDefault ["upperrightleg", []]);
     };
 
     {

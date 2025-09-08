@@ -348,7 +348,7 @@ class ACE_ADDON(Medical_Treatment) {
             incompatibleMedication[]= {};
             viscosityChange = 0;
             onOverDose = "";
-            contractility = -0.5;
+            contractility = -0.4;
         };
         class Lidocaine {
             painReduce = 0.2;
@@ -363,7 +363,7 @@ class ACE_ADDON(Medical_Treatment) {
             incompatibleMedication[]= {};
             onOverDose = "";
             maxRelief = 0.6;
-            contractility = -0.4;
+            contractility = -0.2;
         };
         class EACA {
             painReduce = 0;
@@ -568,7 +568,7 @@ class ACE_ADDON(Medical_Treatment) {
             timeTillMaxEffect = 20;
             dose = 1;
             alphaFactor = -0.1;
-            contractility = 0.7;
+            contractility = 0.5;
             maximumEffectiveDose = 30;
             respiratoryRate = 0.2;
         };

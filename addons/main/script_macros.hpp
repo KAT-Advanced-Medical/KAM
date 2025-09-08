@@ -212,7 +212,7 @@
 #define GET_PAIN_PERCEIVED(unit)    (0 max ((GET_PAIN(unit) - GET_PAIN_SUPPRESS(unit)) min 1))
 
 #undef GET_DAMAGE_THRESHOLD
-#define GET_DAMAGE_THRESHOLD(unit)  ((unit getVariable [QACEGVAR(medical,damageThreshold), [ACEGVAR(medical,AIDamageThreshold),ACEGVAR(medical,playerDamageThreshold)] select (isPlayer unit)]) * (GET_OPIOID_FACTOR(unit) + 1))
+#define GET_DAMAGE_THRESHOLD(unit)  ((unit getVariable [QACEGVAR(medical,damageThreshold), [ACEGVAR(medical,AIDamageThreshold),ACEGVAR(medical,playerDamageThreshold)] select ((isPlayer unit) || (GET_CONVERT_STATUS(unit)))]) * (GET_OPIOID_FACTOR(unit) + 1))
 
 #define VAR_KAT_TOURNIQUET        QEGVAR(hitpoints,tourniquets)
 #define DEFAULT_TOURNIQUET_VALUES   [0,0,0,0,0,0,0,0,0,0,0,0]

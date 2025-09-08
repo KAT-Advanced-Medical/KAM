@@ -32,7 +32,6 @@ private _hrAdjust = -20 + floor random ((-20 - -20) + 1);
                     [{
                         params ["_args", "_idPFH"];
                         _args params ["_patient"];
-                        private _ht = _patient getVariable [QEGVAR(circulation,ht), []];
                         if (_patient getVariable [QEGVAR(circulation,cardiacArrestType), 0] == 0) then {
                                 [QACEGVAR(medical,FatalVitals), _patient] call CBA_fnc_localEvent;
                         };

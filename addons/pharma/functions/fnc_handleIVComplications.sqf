@@ -32,7 +32,7 @@ if ((_trali > (20 + random 10)) && (random 100 < 25)) then {
 _patient setVariable [QEGVAR(breathing,TRALI), _trali, true];
 private _surface = (_patient getVariable [QEGVAR(breathing,lungSurfaceArea), 400]);
 if (_surface > 100) then {
-    private _surfaceArea = _surface - (3 * _overLoad);
+    private _surfaceArea = _surface - (2 * _overLoad);
     _patient setVariable [QEGVAR(breathing,lungSurfaceArea), _surfaceArea];
 };
 private _depression = (_patient getVariable [QEGVAR(pharma,opioidDepression), 1]);
