@@ -61,7 +61,7 @@ if ((_unit getVariable [QEGVAR(airway,airway_item), ""]) isEqualTo "NPA") then {
 private _occlusion = (_occlusionArray findIf { _x > 4 }) != -1;
 private _obstruction = (_obstructionArray findIf { _x != 0 }) != -1;
 
-private _airway = false;
+private _airway = true;
 private _noETT = (_patient getVariable [QEGVAR(airway,airway_item), ""] isNotEqualTo "ETT");
 private _noSurgicalAirway = (_patient getVariable [QEGVAR(airway,airway_item), ""] isNotEqualTo "Surgical_Airway");
 private _noOverstretch = _patient getVariable [QEGVAR(airway,overstretch), false];
@@ -107,7 +107,7 @@ if ((_existingPFH isEqualTo -1) && (IN_CRDC_ARRST(_unit) || _airway || _paralysi
 
         private _airway = false;
         if ((((_obstruction || _occlusion) && _noETT) || _hasCatastrophicAirway) && _noSurgicalAirway) then {
-            _airway = true;
+            private _airway = true;
         };
 
         private _paralysis = (_unit getVariable [QEGVAR(breathing,paralysis), 0] > 0.1);
@@ -130,23 +130,29 @@ if ((_existingPFH isEqualTo -1) && (IN_CRDC_ARRST(_unit) || _airway || _paralysi
     ] call CBA_fnc_addPerFrameHandler;
     _unit setVariable [QGVAR(airwayMonitorPFH), _pfhID];
 };
-if ((IN_CRDC_ARRST(_unit)) || _airway || _paralysis) then { 
+if ((IN_CRDC_ARRST(_unit)) || !_airway || _paralysis) then { 
     // When in arrest, there should be no effecive breaths but still a minimum O2 demand. Zero O2 demand would mean a dead patient. Actual ventilation is 1 to prevent issues in the gas tension functions
     _demandVentilation = MINIMUM_VENTILATION;
     _respiratoryDepression = 1;
-    switch (true) do {
-        case (_unit getVariable [QEGVAR(breathing,BVMInUse), false]): {
+    if (_airway) then {
+        switch (true) do {
+            case (_unit getVariable [QEGVAR(breathing,BVMInUse), false]): {
             _respiratoryRate = 20;
-        };
-        case (_unit getVariable [QEGVAR(breathing,attachedVent), false]): {
+            };
+            case (_unit getVariable [QEGVAR(breathing,attachedVent), false]): {
             _respiratoryRate = (60 / (_unit getVariable [QEGVAR(breathing,ventRate), 2]));
-        };
-        default {
+            };
+            default {
             _respiratoryRate = 0;
+            };
         };
-    };
-    _respiratoryDepth = [0, 10] select ((_unit getVariable [QEGVAR(breathing,BVMInUse), false]) || (_unit getVariable [QEGVAR(breathing,attachedVent), false]));
-    _actualVentilation = (1 * _airwayResistance * _bronchospasm) max 0.2;
+        _respiratoryDepth = [0, 10] select ((_unit getVariable [QEGVAR(breathing,BVMInUse), false]) || (_unit getVariable [QEGVAR(breathing,attachedVent), false]));
+        _actualVentilation = (1 * _airwayResistance * _bronchospasm) max 0.2;
+    } else {
+        _respiratoryRate = 0;
+        _actualVentilation = 0.2;
+        _respiratoryDepth = 0;
+    };  
 } else {
     // Ventilatory Demand comes from Heart Rate with increase demand from PaCO2 levels
     private _contractility = (_unit getVariable [QEGVAR(pharma,heartContractility), 1]) max 0.2;
