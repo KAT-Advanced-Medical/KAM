@@ -33,7 +33,7 @@ private _tamponadeNormalized = linearConversion [0, 4, _tamponadeBase, 0, 0.5];
 private _traliNormalized = linearConversion [0, 30, _traliBase, 0, 0.5, true];
 private _cvp = (_defaultCVP * _heartRateRatio * _bloodVolumeRatio * (1 + (_ptxNormalized + _tamponadeNormalized + _traliNormalized)));
 private _afterload = ((_bloodPressure select 1) / (DEFAULT_BLOOD_PRESSURE select 1)) * _vasoconstriction * _bloodVolumeRatio;
-private _contractility = (_unit getVariable [QEGVAR(pharma,heartContractility), 1]) max 0.2;
+private _contractility = (_unit getVariable [QEGVAR(pharma,heartContractility), 1]) max 0.5;
 
 private _fillTime = _defaultHeartRate / (_heartRate max 0.05);
 private _fillPortion = 1 - exp (-3 * _fillTime);
