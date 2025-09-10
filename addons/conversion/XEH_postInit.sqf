@@ -15,6 +15,7 @@
 
     _previousUnit setVariable [QEGVAR(vitals,simpleMedical), false, true];
     _previousUnit setVariable [QGVAR(currentConverted), true, true];
+    _previousUnit setVariable [QACEGVAR(medical_statemachine,AIUnconsciousness), true, true];
 
     selectPlayer _unit; 
 

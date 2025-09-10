@@ -18,5 +18,5 @@
 params ["_unit"];
 
 if ((!(ACEGVAR(medical_statemachine,AIUnconsciousness))) && (!isPlayer _unit)) then {
-    GET_CONVERT_STATUS(_unit) != true
+    GET_CONVERT_STATUS(_unit) != true;
 }
