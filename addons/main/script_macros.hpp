@@ -503,6 +503,7 @@
 
 #define VAR_APPLIEDPRESSURE   QEGVAR(hitpoints,appliedPressure)
 #define GET_APPLIEDPRESSURE(unit)   (unit getVariable [VAR_APPLIEDPRESSURE, DEFAULT_APPLIEDPRESSURE_VALUES])
+#define GET_APPLIEDPRESSURE_ON(unit,index) (GET_APPLIEDPRESSURE(unit) select index)
 #define HAS_APPLIEDPRESSURE_ON(unit,index) ((GET_APPLIEDPRESSURE(unit) select index) > 0)
 
 #define VAR_BODY_BLEED_RATE   QEGVAR(hitpoints,limbBleedRate)

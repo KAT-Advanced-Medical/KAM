@@ -31,6 +31,7 @@ private _fnc_clotWound = {
             private _selectionName = localize format [LSTRING(%1), _bodyPart];
             private _logString = LSTRING(coagulation_Bandaged);
             private _woundClotTime = 0;
+            private _chance = 0;
             private _bandageToUse = "";
             private _coagulation_time_minor = missionNamespace getVariable [QGVAR(coagulation_time_minor), 15];
             private _coagulation_time_medium = missionNamespace getVariable [QGVAR(coagulation_time_medium), 30];
@@ -68,26 +69,31 @@ private _fnc_clotWound = {
                             _woundClotTime = round ((random (_coagulation_time_minor / 2)) + _coagulation_time_minor / 2) * _woundClotDelayMult * random [0.6, 0.8, 0.9];
                             _bandageToUse = "BloodClotMinor";
                             _factorCountToRemove = round (random [5, 9, 15]);
+                            _chance = 70;
                         };
                         case (_classname in ["Laceration", "PunctureWound"]): {
                             _woundClotTime = round ((random (_coagulation_time_minor / 2)) + _coagulation_time_minor / 2) * _woundClotDelayMult;
                            _bandageToUse = "BloodClotMinor";
                             _factorCountToRemove = round (random [8, 16, 25]);
+                            _chance = 60;
                         };
                         case (_classname in ["VelocityWound", "Avulsion"]): {
                             _woundClotTime = round ((random (_coagulation_time_minor/ 2)) + _coagulation_time_minor / 2) * _woundClotDelayMult * random [1.1, 1.4, 1.8];
                             _bandageToUse = "BloodClotMinor";
                             _factorCountToRemove = round (random [15, 19, 30]);
+                            _chance = 50;
                         };
                         case (_classname in ["InternalBleeding", "Evisceration"]): {
                             _woundClotTime = round ((random (_coagulation_time_minor / 2)) + _coagulation_time_minor / 2) * _woundClotDelayMult;
                             _bandageToUse = "BloodClotMinor";
                             _factorCountToRemove = round (random [8, 14, 20]);
+                            _chance = 70;
                         };
                         default {
                             _woundClotTime = round ((random (_coagulation_time_minor / 2)) + _coagulation_time_minor / 2) * _woundClotDelayMult;
                             _bandageToUse = "BloodClotMinor";
                             _factorCountToRemove = round (random [8, 14, 20]);
+                            _chance = 80;
                         };
                     };
                     if !(missionNamespace getVariable [QGVAR(coagulation_allow_MinorWounds), true]) then { continue; };
@@ -98,26 +104,31 @@ private _fnc_clotWound = {
                             _woundClotTime = round ((random (_coagulation_time_medium / 2)) + _coagulation_time_medium / 2) * _woundClotDelayMult * random [0.6, 0.8, 0.9];
                             _bandageToUse = "BloodClotMedium";
                             _factorCountToRemove = round (random [10, 15, 25]);
+                            _chance = 60;
                         };
                         case (_classname in ["Laceration", "PunctureWound"]): {
                             _woundClotTime = round ((random (_coagulation_time_medium / 2)) + _coagulation_time_medium / 2) * _woundClotDelayMult;
                            _bandageToUse = "BloodClotMedium";
                             _factorCountToRemove = round (random [18, 26, 35]);
+                            _chance = 40;
                         };
                         case (_classname in ["VelocityWound", "Avulsion"]): {
                             _woundClotTime = round ((random (_coagulation_time_medium/ 2)) + _coagulation_time_medium / 2) * _woundClotDelayMult * random [1.1, 1.4, 1.8];
                             _bandageToUse = "BloodClotMedium";
                             _factorCountToRemove = round (random [22, 29, 40]);
+                            _chance = 30;
                         };
                         case (_classname in ["InternalBleeding", "Evisceration"]): {
                             _woundClotTime = round ((random (_coagulation_time_medium / 2)) + _coagulation_time_medium / 2) * _woundClotDelayMult;
                             _bandageToUse = "BloodClotMedium";
                             _factorCountToRemove = round (random [14, 21, 30]);
+                            _chance = 60;
                         };
                         default {
                             _woundClotTime = round ((random (_coagulation_time_medium / 2)) + _coagulation_time_medium / 2) * _woundClotDelayMult;
                             _bandageToUse = "BloodClotMedium";
                             _factorCountToRemove = round (random [14, 21, 30]);
+                            _chance = 60;
                         };
                     };
                     if !(missionNamespace getVariable [QGVAR(coagulation_allow_MediumWounds), true]) then { continue; };
@@ -128,26 +139,31 @@ private _fnc_clotWound = {
                             _woundClotTime = round ((random (_coagulation_time_large / 2)) + _coagulation_time_large / 2) * _woundClotDelayMult * random [0.6, 0.8, 0.9];
                             _bandageToUse = "BloodClotLarge";
                             _factorCountToRemove = round (random [15, 23, 35]);
+                            _chance = 50;
                         };
                         case (_classname in ["Laceration", "PunctureWound"]): {
                             _woundClotTime = round ((random (_coagulation_time_large / 2)) + _coagulation_time_large / 2) * _woundClotDelayMult;
                            _bandageToUse = "BloodClotLarge";
                             _factorCountToRemove = round (random [24, 32, 45]);
+                            _chance = 25;
                         };
                         case (_classname in ["VelocityWound", "Avulsion"]): {
                             _woundClotTime = round ((random (_coagulation_time_large/ 2)) + _coagulation_time_large / 2) * _woundClotDelayMult * random [1.1, 1.4, 1.8];
                             _bandageToUse = "BloodClotLarge";
                             _factorCountToRemove = round (random [35, 41, 50]);
+                            _chance = 15;
                         };
                         case (_classname in ["InternalBleeding", "Evisceration"]): {
                             _woundClotTime = round ((random (_coagulation_time_large / 2)) + _coagulation_time_large / 2) * _woundClotDelayMult;
                             _bandageToUse = "BloodClotLarge";
                             _factorCountToRemove = round (random [22, 31, 40]);
+                            _chance = 60;
                         };
                         default {
                             _woundClotTime = round ((random (_coagulation_time_large / 2)) + _coagulation_time_large / 2) * _woundClotDelayMult;
                             _bandageToUse = "BloodClotLarge";
                             _factorCountToRemove = round (random [22, 31, 40]);
+                            _chance = 60;
                         };
                     };
                     if !(missionNamespace getVariable [QGVAR(coagulation_allow_LargeWounds), true]) then { continue; };
@@ -162,16 +178,22 @@ private _fnc_clotWound = {
                     _factorCountToRemove = _factorCountToRemove * 0.5
                 };
                 [{
-                    params["_unit", "_bodyPart", "_selectionName", "_bandageToUse", "_logString", "_factorCountToRemove"];
+                    params["_unit", "_bodyPart", "_selectionName", "_bandageToUse", "_logString", "_factorCountToRemove", "_chance", "_txaEffectiveness"];
 
                     private _bodyFluid = GET_BODY_FLUID(_unit);
                     private _coagulationFactor = GET_BODY_FLUID_PLATELETS(_unit);
                     private _openWounds = GET_OPEN_WOUNDS(_unit);
                     private _openWoundsOnPart = _openWounds getOrDefault [_bodyPart, []];
                     private _woundIndex = _openWoundsOnPart findIf {(_x select 1) > 0 && (_x select 2) > 0};
+                    private _bodyPartN = ALL_BODY_PARTS find _bodyPart;
+                    private _txaMult = linearConversion [0, 1, _txaEffectiveness, 1, 1.5];
+                    private _chance = _chance * _txaMult;
+                    if (HAS_APPLIEDPRESSURE_ON(_unit,_bodyPartN)) then {
+                        _chance = _chance * 1.5;
+                    };
+                    if (floor (random 100) > _chance) exitWith {};
                     if (_coagulationFactor <= 0) exitWith {};
                     if (_woundIndex == -1) exitWith {};
-                    private _bodyPartN = ALL_BODY_PARTS find _bodyPart;
                     if ([_unit,_bodyPartN] call EFUNC(pharma,occlusionCheck) && missionNamespace getVariable [QGVAR(coagulation_tourniquetBlock), true]) exitWith {};
                     _bodyFluid set [5, (_coagulationFactor - _factorCountToRemove)];
                     _unit setVariable [VAR_BODY_FLUID, _bodyFluid, true];
@@ -183,7 +205,7 @@ private _fnc_clotWound = {
                         [_unit, "activity", _logString, [(toLower _selectionName)]] call ACEFUNC(medical_treatment,addToLog);
                     };
                 },
-                [_unit, _bodyPart, _selectionName, _bandageToUse, _logString, _factorCountToRemove], _woundClotTime] call CBA_fnc_waitAndExecute;
+                [_unit, _bodyPart, _selectionName, _bandageToUse, _logString, _factorCountToRemove, _chance, _txaEffectiveness], _woundClotTime] call CBA_fnc_waitAndExecute;
             };
         } forEach _wounds;
 };
