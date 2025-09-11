@@ -29,7 +29,7 @@ if ((_map < 70 || _map > 110) && (QGVAR(conversionRequirements) > 0)) exitWith {
 
 private _heartRate = GET_HEART_RATE(_unit);
 private _defaultHeartRate = _unit getVariable [QEGVAR(circulation,defaultHeartRate), 80];
-if ((_heartRate < (_defaultHeartRate - 15) || _heartRate > (_defaultHeartRate + 15)) && (QGVAR(conversionRequirements) > 0)) exitWith { false };
+if ((_heartRate < (_defaultHeartRate - 25) || _heartRate > (_defaultHeartRate + 25)) && (QGVAR(conversionRequirements) > 0)) exitWith { false };
 
 private _o2 = GET_KAT_SPO2(_unit);
 if ((_o2 < EGVAR(breathing,Stable_spo2)) && (QGVAR(conversionRequirements) > 0)) exitWith { false };
