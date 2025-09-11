@@ -66,12 +66,14 @@ if (random 100 < GVAR(closedReductionFailChance)) exitWith {
     private _delay = (random [120, 200, 240]) * _delayMult;
     if (_delay > 15) then {
         _activeFracture set [_part, -3];
+        _fractureArray set [_part, 0];
         [{
-            params ["_patient", "_activeFracture"];
+            params ["_patient", "_activeFracture", "_part"];
             _activeFracture set [_part, 0];
-            [_patient] call EFUNC(misc,updateDamageEffects);
             _patient setVariable [VAR_FRACTURES, _activeFracture, true];
-        }, [_patient, _activeFracture], _delay] call CBA_fnc_waitAndExecute;
+            [_patient] call EFUNC(misc,updateDamageEffects);
+        }, [_patient, _activeFracture, _part], _delay] call CBA_fnc_waitAndExecute;
+        _patient setVariable [QGVAR(fractures), _fractureArray, true];
         _patient setVariable [VAR_FRACTURES, _activeFracture, true];
         [_patient, "blockSprint", QACEGVAR(medical,fracture), false] call ACEFUNC(common,statusEffect_set);
         [_patient] call EFUNC(misc,updateDamageEffects);
@@ -81,6 +83,8 @@ if (random 100 < GVAR(closedReductionFailChance)) exitWith {
 
     } else {
         _activeFracture set [_part, 0];
+        _fractureArray set [_part, 0];
+        _patient setVariable [QGVAR(fractures), _fractureArray, true];
         _patient setVariable [VAR_FRACTURES, _activeFracture, true];
         [_patient, "blockSprint", QACEGVAR(medical,fracture), false] call ACEFUNC(common,statusEffect_set);
         [_patient] call EFUNC(misc,updateDamageEffects);

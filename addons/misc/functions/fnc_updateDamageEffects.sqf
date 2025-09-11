@@ -50,10 +50,10 @@ if (ACEGVAR(medical,fractures) > 0) then {
             _noJog = _hasLegSplint;
         };
 
-        if ((_fractures select 4) in [-1, -2]) then { _aimFracture = _aimFracture + 2; };
-        if ((_fractures select 5) in [-1, -2]) then { _aimFracture = _aimFracture + 2; };
-        if ((_fractures select 6) in [-1, -2]) then { _aimFracture = _aimFracture + 2; };
-        if ((_fractures select 7) in [-1, -2]) then { _aimFracture = _aimFracture + 2; };
+        if ((_fractures select 4) in [-1, -2, -3]) then { _aimFracture = _aimFracture + 2; };
+        if ((_fractures select 5) in [-1, -2, -3]) then { _aimFracture = _aimFracture + 2; };
+        if ((_fractures select 6) in [-1, -2, -3]) then { _aimFracture = _aimFracture + 2; };
+        if ((_fractures select 7) in [-1, -2, -3]) then { _aimFracture = _aimFracture + 2; };
     };
 };
 if (EGVAR(hitpoints,JointChance) > 0) then {
