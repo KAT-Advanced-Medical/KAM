@@ -2047,5 +2047,11 @@
         <Key ID="STR_KAT_Misc_SETTING_MEDPACKEighthSlot_Item">
             <English>Miscellaneous Section Items &amp; Quantity</English>
         </Key>
+        <Key ID="STR_KAT_Misc_SETTING_PainInTreatment">
+            <English>Pain Effects Treatment Time</English>
+        </Key>
+        <Key ID="STR_KAT_Misc_SETTING_PainInTreatment_DESC">
+            <English>Turns on a penalty if the unit doing the treatment is in pain, up to 2x the normal time</English>
+        </Key>
     </Package>
 </Project>

@@ -46,6 +46,12 @@ private _treatmentTime = if (isText (_config >> "treatmentTime")) then {
 
 if (_treatmentTime == 0) exitWith {false};
 
+if (GVAR(usePainInTreatment)) then {
+    private _pain = GET_PAIN_PERCEIVED(_medic);
+    private _treatMult = linearConversion [0, 1, _pain, 1, 2];
+    _treatmentTime = _treatmentTime * _treatMult;
+};
+
 // Consume one of the treatment items if needed
 // Store item user so that used item can be returned on failure
 private _userAndItem = if (GET_NUMBER_ENTRY(_config >> "consumeItem") == 1) then {
