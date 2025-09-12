@@ -209,7 +209,7 @@ if (EGVAR(pharma,kidneyAction)) then {
 };
 // Fractional Oxygen when breathing normal air is 0.21, 1 when breathing 100% Oxygen, and 0 when no air is being brought into the lungs
 private _fio2 = switch (true) do {
-    case (_airway): { 
+    case (!_airway): { 
         [0, DEFAULT_FIO2] select ((_unit getVariable [QEGVAR(airway,recovery), false]) || (_unit getVariable [QEGVAR(airway,overstretch), false])) 
     };
     case ((_respiratoryRate == 0) && (EGVAR(breathing,SpO2_perfusion))): { 0 };
