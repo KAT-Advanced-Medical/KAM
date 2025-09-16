@@ -101,21 +101,25 @@ if (!isNil {_unit getVariable [QACEGVAR(medical,ivBags),[]]}) then {
                 };
             };
             if (_type == "Blood") then {
-                if !([_unit, _item] call EFUNC(circulation,compatible)) then {
-                    [_unit, "BloodPoisoning", 10, 60] call EFUNC(vitals,addMedicationAdjustment);
-                    if ((_unit getVariable ["kat_hemolysisPFH", -1]) isEqualTo -1) then {
+                if (!([_unit, _item] call EFUNC(circulation,compatible)) && (_bagChange > 1)) then {
+                    private _medCount = [_unit, "BloodPoisoning"] call ACEFUNC(medical_status,getMedicationCount) select 1;
+                    if (_medCount < 0.05) then {
+                        [_unit, "BloodPoisoning", 0, 30, 0, 0, 0, 0, 0, 0, 0, 0.2, 0.3, 0, 0, false, false, true] call EFUNC(vitals,addMedicationAdjustment);
+                    };
+                    private _hasPFH = _unit getVariable ["kat_hemolysisPFH", -1] isNotEqualTo -1;
+                    if !(_hasPFH) then {
                         private _hemolysisPFH = [{
                             params ["_args", "_idPFH"];
                             _args params ["_unit"];
-                            private _medCount = [_unit, "BloodPoisoning"] call ACEFUNC(medical_status,getMedicationCount) select 0;
+                            private _medCount = [_unit, "BloodPoisoning"] call ACEFUNC(medical_status,getMedicationCount) select 1;
                             if ((_medCount == 0) || !(alive _unit)) exitWith {
                                 _unit setVariable ["kat_hemolysisPFH", nil, true];
                                 [_idPFH] call CBA_fnc_removePerFrameHandler;
                             };
                             private _bloodlevels = GET_BODY_FLUID(_unit);
-                            _bloodlevels set [0, (_bloodlevels select 0) - 5];
-                            _bloodlevels set [1, (_bloodlevels select 1) + 5];
-                            _bloodlevels set [5, (_bloodlevels select 5) - 2];
+                            _bloodlevels set [0, (_bloodlevels select 0) - 8];
+                            _bloodlevels set [1, (_bloodlevels select 1) + 8];
+                            _bloodlevels set [5, (_bloodlevels select 5) - 3];
                             _unit setVariable [QEGVAR(circulation,bodyFluid), _bloodlevels, true];
                         }, 1, [_unit]] call CBA_fnc_addPerFrameHandler;
                         _unit setVariable ["kat_hemolysisPFH", _hemolysisPFH, true];

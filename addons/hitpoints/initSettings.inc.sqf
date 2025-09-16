@@ -8,11 +8,11 @@
 ] call CBA_fnc_addSetting;
 
 [
-    QGVAR(checkLimbTime),
-    "SLIDER",
-    [LLSTRING(SETTING_checkLimbTime), LLSTRING(SETTING_checkLimbTime_DESC)],
+    QGVAR(longTermBandages),
+    "CHECKBOX",
+    [LLSTRING(SETTING_longTermBandages), LLSTRING(SETTING_longTermBandages_DESC)],
     [CBA_SETTINGS_CAT, ELSTRING(GUI,SubCategory_Basic)],
-    [4, 20, 8, 1],
+    [false],
     true
 ] call CBA_fnc_addSetting;
 

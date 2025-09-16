@@ -19,7 +19,7 @@
 params ["_player", "_target"];
 
 private _warmers = _target getVariable [QGVAR(handWarmers), [0,0,0,0,0,0,0,0,0,0,0,0]];
-_warmers params ["_head", "_body", "_larm", "_rarm", "_lleg", "_rleg"];
+_warmers params ["_head", "_neck", "_chest", "_body", "_larm", "_ularm", "_rarm", "_urarm", "_lleg", "_ulleg", "_rleg", "_urleg"];
 
 if (_player == _target) exitWith {
     if (({_x == 0} count _warmers) == 6) exitWith {
