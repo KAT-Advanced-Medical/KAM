@@ -21,11 +21,17 @@ _unit setVariable [QGVAR(VXPoisoned), true, true];
 _unit setVariable [QGVAR(VXPoisonedCycle), 0, true];
 _timebetween = missionNamespace getVariable [QGVAR(vxCycleTime), 40];
 
-[_unit, _timebetween] spawn {
-    params ["_unit", "_timebetween"];
 
-    while {alive _unit && (_unit getVariable [QGVAR(VXPoisoned), false]) && (_unit getVariable [QGVAR(airPoisoning), false])} do {
-        private _cycle = (_unit getVariable [QGVAR(VXPoisonedCycle), 0]) + 1;
+[{
+    params ["_args", "_pfhID"];
+    _args params ["_unit"];
+
+    if(!(alive _unit && (_unit getVariable [QGVAR(VXPoisoned), false]) && (_unit getVariable [QGVAR(airPoisoning), false]))) then {
+        [_pfhID] call CBA_fnc_removePerFrameHandler;
+    };
+
+
+    private _cycle = (_unit getVariable [QGVAR(VXPoisonedCycle), 0]) + 1;
         _unit setVariable [QGVAR(VXPoisonedCycle), _cycle, true];
 
         switch (_cycle) do {
@@ -40,12 +46,12 @@ _timebetween = missionNamespace getVariable [QGVAR(vxCycleTime), 40];
                 [_unit, 0.5] call ace_medical_fnc_adjustPainLevel;
             };
             case 3: {
-                _unit setVariable ["kat_airway_occluded", true, true];
-                _unit setVariable ["kat_airway_obstruction", true, true];
+                _unit setVariable [QEGVAR(airway,occluded), true, true];
+                _unit setVariable [QEGVAR(airway,obstruction), true, true];
                 _unit setFatigue 1;
             };
             case 4: {
-                _unit setVariable ["kat_airway_occluded", true, true];
+                _unit setVariable [QEGVAR(airway,occluded), true, true];
                 ["ace_medical_FatalVitals", [_unit], _unit] call CBA_fnc_targetEvent;
                 _unit setVariable [QEGVAR(circulation,cardiacArrestType), 4, true];
             };
@@ -69,8 +75,4 @@ _timebetween = missionNamespace getVariable [QGVAR(vxCycleTime), 40];
                 };
             };
         };
-
-        sleep _timebetween;
-    };
-    _unit setVariable [QGVAR(VXPoisoned), false, true];
-};
+}, _timebetween, [_unit]] call CBA_fnc_addPerFrameHandler;

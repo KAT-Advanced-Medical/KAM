@@ -232,5 +232,7 @@ _airsupplylist = missionNamespace getVariable [QGVAR(availAirSupplyList), []];
     deleteVehicle _gasLogic;
 }] call CBA_fnc_addEventHandler;
 
+[QGVAR(enableSCBA), LINKFUNC(enableSCBA)] call CBA_fnc_addEventHandler;
+
 [LINKFUNC(gasManagerPFH), GAS_MANAGER_PFH_DELAY, []] call CBA_fnc_addPerFrameHandler;
 

@@ -17,4 +17,4 @@
 
 params ["_medic", "_patient"];
 
-[_patient] call FUNC(enableSCBA);
+[QGVAR(enableSCBA), [_patient], _patient] call CBA_fnc_targetEvent;

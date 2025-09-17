@@ -61,8 +61,8 @@ if (((backpack _unit == "B_SCBA_01_F") || (backpack _unit == "B_CombinationUnitR
         ctrlDelete (uiNamespace getVariable [QGVAR(SCBA_o2), ctrlNull]);
     };
 
-    if (!(_oldBackpack isEqualTo _backpack)) then {
-        systemChat format ["Connected to new oxygen tank with %1%2 reaming air!", round ((_curOxygen/_SCBA_maxOxygenTime) * 100), "%"];
+    if (_oldBackpack isNotEqualTo _backpack) then {
+        [["Connected to new oxygen tank with %1%2 reaming air!", round ((_curOxygen/_SCBA_maxOxygenTime) * 100), "%"], 2, _unit] call ACEFUNC(common,displayTextStructured);
         _oldBackpack setVariable [QGVAR(SCBA_oxygen), (_oldBackpack getVariable [QGVAR(SCBA_oxygen), _SCBA_maxOxygenTime]), true];
         private _color = "ffffff";
         if (_curOxygen <= 300) then {

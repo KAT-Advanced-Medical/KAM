@@ -1,5 +1,4 @@
 #include "..\script_component.hpp"
-#define DEBUG_MODE_FULL
 /*
  * Author: kolmipilot
  *
