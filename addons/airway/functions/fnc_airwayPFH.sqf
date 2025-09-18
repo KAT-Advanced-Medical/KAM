@@ -55,7 +55,6 @@ if (!(GVAR(enable)) || (_unit getVariable ["KAT_Occlusion_Exclusion", false])) e
                         _occlusionTarget = ((_occlusionState select _level) - 0.5);
                         _occlusionState set [_level, (_occlusionTarget min 6)];
                         _unit setVariable [QGVAR(occlusion), _occlusionState, true];
-
                     };
         }, (GVAR(deterioratingAirways_interval) * random [0.8, 1, 1.3]), [_unit, _level]] call CBA_fnc_addPerFrameHandler;
     };

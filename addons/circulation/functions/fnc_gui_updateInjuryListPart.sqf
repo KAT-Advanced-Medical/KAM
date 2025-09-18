@@ -29,7 +29,11 @@ if (_target getVariable [QGVAR(activeCPR), false]) then {
 };
 if ((_target getVariable [QGVAR(AED_X_VitalsMonitor_Connected), false] || _target getVariable [QGVAR(DefibrillatorPads_Connected), false]) && !(GVAR(hardcoreAED))) then {
     private _entry = _target getVariable [QGVAR(AED_X_VitalsStatus), ""];
-    _entries pushBack [_entry, [1, 1, 1, 1]];
+    if (_target getVariable [QGVAR(cardiacArrestType), 0] > 0) then {
+        _entries pushBack [_entry, [1, 0, 0, 1]];
+    } else {
+        _entries pushBack [_entry, [1, 1, 1, 1]];
+    };   
 };
 if ((_target getVariable [QGVAR(attachedLucasState), false] == true) && (_target getVariable [QGVAR(attachedLucas), false]) && (_selectionN isEqualTo 2)) then {
     _entries pushBack [LLSTRING(LucasActive), [0.3, 0.8, 0.8, 1]];
