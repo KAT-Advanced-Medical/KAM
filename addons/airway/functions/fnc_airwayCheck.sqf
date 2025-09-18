@@ -22,10 +22,10 @@
  */
 
 params ["_unit"];
-private _airwayStatus = _unit getVariable [QGVAR(airway,airwayStatus), [0, 0, 0]];
-private _occlusionArray = +(_unit getVariable [QGVAR(airway,occlusion), [0, 0, 0]]);
-private _obstructionArray = +(_unit getVariable [QGVAR(airway,obstruction), [0, 0, 0]]);
-private _catastrophicState = (_unit getVariable [QGVAR(airway,catastrophicAirway), [false, false]]);
+private _airwayStatus = _unit getVariable [QGVAR(airwayStatus), [0, 0, 0]];
+private _occlusionArray = _unit getVariable [QGVAR(occlusion), [0, 0, 0]];
+private _obstructionArray = _unit getVariable [QGVAR(obstruction), [0, 0, 0]];
+private _catastrophicState = _unit getVariable [QGVAR(catastrophicAirway), [false, false]];
 private _hasCatastrophicAirway = ((_catastrophicState select 0) || (_catastrophicState select 1));
 /*for "_i" from 0 to 2 do {
     if ((_airwayStatus select _i) > 0) then {

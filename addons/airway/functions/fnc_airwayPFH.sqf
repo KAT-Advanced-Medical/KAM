@@ -35,6 +35,7 @@ if (!(GVAR(enable)) || (_unit getVariable ["KAT_Occlusion_Exclusion", false])) e
             _args params ["_unit", "_level"];
                     private _isUnconscious = _unit getVariable ["ACE_isUnconscious", false];
                     private _alive = alive _unit;
+                    private _occlusionState = _unit getVariable [QGVAR(occlusion), [0, 0, 0]];
                     if !(_alive || ((_occlusionState select _level) == 0)) exitWith {
                         [_idPFH] call CBA_fnc_removePerFrameHandler;
                         _unit setVariable ["kat_occlusion_PFH", nil];
@@ -50,10 +51,12 @@ if (!(GVAR(enable)) || (_unit getVariable ["KAT_Occlusion_Exclusion", false])) e
                             _occlusionState set [selectRandom [((_level + 1) min 2), ((_level - 1) max 0)], (_occlusionTarget min 6)];
                         };
                         _occlusionState set [_level, (_occlusionTarget min 6)];
+                        TRACE_1("occlusion1",_occlusionState);
                         _unit setVariable [QGVAR(occlusion), _occlusionState, true]; };
                     } else {
                         _occlusionTarget = ((_occlusionState select _level) - 0.5);
                         _occlusionState set [_level, (_occlusionTarget min 6)];
+                        TRACE_1("occlusion2",_occlusionState);
                         _unit setVariable [QGVAR(occlusion), _occlusionState, true];
                     };
         }, (GVAR(deterioratingAirways_interval) * random [0.8, 1, 1.3]), [_unit, _level]] call CBA_fnc_addPerFrameHandler;
