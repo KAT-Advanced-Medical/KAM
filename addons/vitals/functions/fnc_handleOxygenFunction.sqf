@@ -44,14 +44,6 @@ private _previousCyclePaco2 = (_bloodGas select 0);
 private _previousCyclePao2 = (_bloodGas select 1);
 private _bronchospasm = _unit getVariable [QEGVAR(breathing,bronchospasm), 1];
 private _airway = HAS_AIRWAY(_unit);
-private _airwayResistance = 1;
-if (selectMax (_obstructionArray) > 0) then {
-    _airwayResistance = 0.2;
-};
-if (selectMax (_occlusionArray) > 0) then {
-    private _occlusion = selectMax (_occlusionArray);
-    _airwayResistance = linearConversion [0, 6, _occlusion, 1, 0.2, true];
-};
 private _paralysis = (_unit getVariable [QEGVAR(breathing,paralysis), 0] > 0.1);
 private _existingPFH = _unit getVariable [QGVAR(airwayMonitorPFH), -1];
 if ((_existingPFH isEqualTo -1) && (!_airway || _paralysis)) then {
@@ -122,20 +114,20 @@ if ((IN_CRDC_ARRST(_unit)) || !_airway || _paralysis) then {
     if (_previousCyclePaco2 > 50) then { _respiratoryRate = (_respiratoryRate + ((_previousCyclePaco2 - 50) * 0.2)) min MAXIMUM_RR};
 
     _tidalVolume = _baseTidalVolume;
-    if (_respiratoryRate > 20) then {
+    if (_respiratoryRate > 25) then {
     private _excessRR = _respiratoryRate - 25;
-    private _scaleFactor = 1 - (0.03 * _excessRR);  // reduces ~3% per breath over 25
-    _tidalVolume = _baseTidalVolume * (_scaleFactor max 0.5); // never drops below 50% of base
+    private _scaleFactor = 1 - (0.035 * _excessRR);  // reduces ~3% per breath over 25
+    _tidalVolume = _baseTidalVolume * (_scaleFactor max 0.3); // never drops below 50% of base
     };
 
     _respiratoryDepth = _baseRespiratoryDepth;
-    if (_respiratoryRate > 20) then {
+    if (_respiratoryRate > 25) then {
     private _excessRR = _respiratoryRate - 25;
-    private _scaleFactor = 1 - (0.03 * _excessRR);  // reduces ~3% per breath over 25
-    _respiratoryDepth = [(_baseRespiratoryDepth * (_scaleFactor max 0.5)), 10] select (_unit getVariable [QEGVAR(breathing,BVMInUse), false]); // never drops below 50% of base
+    private _scaleFactor = 1 - (0.05 * _excessRR);  // reduces ~3% per breath over 25
+    _respiratoryDepth = _baseRespiratoryDepth * (_scaleFactor max 0.3); // never drops below 50% of base
     };
     // Obstructed airway reduces effective ventilation
-    _actualVentilation = (_tidalVolume * _respiratoryRate) * _airwayResistance * _bronchospasm;
+    _actualVentilation = (_tidalVolume * _respiratoryRate) * _bronchospasm;
 };
 private _paco2 = 40;
 
