@@ -31,7 +31,7 @@ _unit setVariable ["kat_pukeActive_PFH", true];
     
     private _isUnconscious = _unit getVariable ["ACE_isUnconscious", false];
     private _alive = alive _unit;
-    if (!_alive || !_isUnconscious) exitWith {
+    if !(_alive || _isUnconscious) exitWith {
         _unit setVariable ["kat_pukeActive_PFH", nil];
         [_idPFH] call CBA_fnc_removePerFrameHandler;
     };
