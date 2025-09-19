@@ -20,4 +20,4 @@ params ["_medic", "_patient"];
 private _unitTemperature = ceil (_patient getVariable [QGVAR(unitTemperature), 37]);
 
 [_patient, "quick_view", LSTRING(Thermometer_log)] call EFUNC(circulation,removeLog);
-[_patient, "quick_view", LSTRING(Thermometer_log), [[_medic, false, true] call ACEFUNC(common,getName), _unitTemperature]] call ACEFUNC(medical_treatment,addToLog);
+[_patient, "quick_view", LSTRING(Thermometer_log), [[_patient, false, true] call ACEFUNC(common,getName), _unitTemperature]] call ACEFUNC(medical_treatment,addToLog);

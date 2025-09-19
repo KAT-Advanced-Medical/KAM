@@ -21,6 +21,7 @@ if !(GVAR(enable)) exitWith {};
 [QGVAR(cricothyrotomyIncision), LINKFUNC(treatmentAdvanced_cricothyrotomyIncisionLocal)] call CBA_fnc_addEventHandler;
 [QGVAR(cricothyrotomyProgress), LINKFUNC(treatmentAdvanced_cricothyrotomyProgressLocal)] call CBA_fnc_addEventHandler;
 [QGVAR(cricothyrotomy), LINKFUNC(treatmentAdvanced_cricothyrotomyLocal)] call CBA_fnc_addEventHandler;
+[QGVAR(capnoPFH), LINKFUNC(capnographyPFH)] call CBA_fnc_addEventHandler;
 ["ace_unconscious", {
     params ["_unit", "_state"];
     if !(_state) exitWith {

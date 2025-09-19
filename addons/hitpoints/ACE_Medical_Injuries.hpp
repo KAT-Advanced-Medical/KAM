@@ -152,7 +152,6 @@ class ACE_Medical_Injuries {
             };
             class InternalBleeding {
                 weighting[] = {{0.7, 2}, {0.35, 1}, {0.35, 0}};
-                sizeMultiplier = 0.6;
             };
         };
         class explosive {
@@ -182,7 +181,6 @@ class ACE_Medical_Injuries {
             };
             class InternalBleeding {
                 weighting[] = {{1, 1}, {0.8, 0}};
-                sizeMultiplier = 0.5;
             };
         };
         class shell {
@@ -215,7 +213,6 @@ class ACE_Medical_Injuries {
             };
             class InternalBleeding {
                 weighting[] = {{1.5, 1}, {1.1, 1}, {0.7, 0}};
-                sizeMultiplier = 1;
             };
         };
         class vehiclehit {
@@ -252,7 +249,6 @@ class ACE_Medical_Injuries {
             };
             class InternalBleeding {
                 weighting[] = {{1, 1}, {0.8, 0}};
-                sizeMultiplier = 0.5;
             };
         };
         class vehiclecrash {

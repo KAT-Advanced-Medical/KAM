@@ -606,5 +606,11 @@
         <Key ID="STR_KAT_Hitpoints_jointInjuryGUI">
             <English>Inflamed Joint</English>
         </Key>
+        <Key ID="STR_KAT_Hitpoints_SETTING_longTermBandages">
+            <English>Long Term Bandages</English>
+        </Key>
+        <Key ID="STR_KAT_Hitpoints_SETTING_longTermBandages_DESC">
+            <English>Greatly increases the time it takes for a wrapped bandage to fall off. Balanced around persistant missions where a stich kit is not often used</English>
+        </Key>
     </Package>
 </Project>

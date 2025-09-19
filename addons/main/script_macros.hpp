@@ -595,3 +595,5 @@
 #undef BLOOD_LOSS_TOTAL_COLORS
 #define BLOOD_LOSS_RED_THRESHOLD 0.5
 #define BLOOD_LOSS_TOTAL_COLORS 10
+
+#define HAS_AIRWAY(unit)  (unit call EFUNC(airway,airwayCheck))

@@ -359,7 +359,7 @@ class ACE_Medical_Treatment_Actions {
         treatmentTime = 1;
         items[] = {};
         condition = QFUNC(canAdjustRate);
-        callbackSuccess = QUOTE([ARR_2(_patient,-1)] call FUNC(adjustVentRate));
+        callbackSuccess = QUOTE([ARR_3(_medic,_patient,-1)] call FUNC(adjustVentRate));
     };
     class SlowDownVent: AttachVent {
         displayName = CSTRING(DecreaseVent);
@@ -368,7 +368,7 @@ class ACE_Medical_Treatment_Actions {
         treatmentTime = 1;
         items[] = {};
         condition = QFUNC(canAdjustRate);
-        callbackSuccess = QUOTE([ARR_2(_patient,1)] call FUNC(adjustVentRate));
+        callbackSuccess = QUOTE([ARR_3(_medic,_patient,1)] call FUNC(adjustVentRate));
     };
     class NasalCannula {
         displayName = CSTRING(NasalCannula_Display);

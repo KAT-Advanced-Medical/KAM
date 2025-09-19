@@ -86,7 +86,10 @@ _target setVariable [VAR_WRAPPED_WOUNDS, _bandagedWounds, true];
 // _reopeningMinDelay = 5;
 // _reopeningMaxDelay = 6;
 private _delay = ((_reopeningMinDelay + random (_reopeningMaxDelay - _reopeningMinDelay)) * (1 - _bleeding));
-TRACE_1("",_reopeningChance);
+if (EGVAR(hitpoints,longTermBandages)) then {
+    _delay = _delay * random [3, 6, 10];
+};
+TRACE_2("delay",_reopeningChance,_delay);
 // Check if we are ever going to reopen this
 if (random 1 <= _reopeningChance * ACEGVAR(medical_treatment,woundReopenChance)) then {
     TRACE_1("Will open",_delay);
@@ -99,10 +102,10 @@ if (random 1 <= _reopeningChance * ACEGVAR(medical_treatment,woundReopenChance))
         if (count _woundsOnPart - 1 < _injuryIndex) exitWith { TRACE_2("index bounds",_injuryIndex,count _woundsOnPart); };
 
         _injury params ["_classID"];
-
+        private _fixedClassID = floor _classID;
         private _selectedInjury = _woundsOnPart select _injuryIndex;
         _selectedInjury params ["_selClassID", "_selAmount", "", "_selDamage"];
-        if (_selClassID == _classID) then { // matching the IDs
+        if (_selClassID == _fixedClassID) then { // matching the IDs
             private _bandagedWounds = GET_WRAPPED_WOUNDS(_target);
             private _exist = false;
             {

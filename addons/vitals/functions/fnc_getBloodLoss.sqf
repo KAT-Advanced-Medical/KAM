@@ -23,8 +23,9 @@ if (_woundBleeding == 0) exitWith {0};
 private _cardiacOutput = [_unit] call FUNC(getCardiacOutput);
 private _resistance = _unit getVariable [VAR_PERIPH_RES, DEFAULT_PERIPH_RES]; // can use value directly since this is sum of default and adjustments
 private _cardiacOutputFixed = (_cardiacOutput max CARDIAC_OUTPUT_MIN);
+private _alphaAction = GET_VASOCONSTRICTION(_unit);
 // even if heart stops blood will still flow slowly (gravity)
-private _bloodLoss = (_woundBleeding * _cardiacOutputFixed * (DEFAULT_PERIPH_RES / _resistance) * ACEGVAR(medical,bleedingCoefficient));
+private _bloodLoss = (_woundBleeding * _cardiacOutputFixed * (DEFAULT_PERIPH_RES / _resistance) * ACEGVAR(medical,bleedingCoefficient) * _alphaAction);
 TRACE_4("GBL",_woundBleeding,_cardiacOutputFixed,_resistance,_bloodLoss);
 
 private _eventArgs = [_unit, _bloodLoss]; // Pass by reference

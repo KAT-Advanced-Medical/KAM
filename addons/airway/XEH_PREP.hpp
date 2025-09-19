@@ -1,5 +1,7 @@
+PREP(airwayCheck);
 PREP(airwayPFH);
 PREP(airwayPlacementCheck);
+PREP(capnographyPFH);
 PREP(checkAirway);
 PREP(checkMask);
 PREP(checkRecovery);
