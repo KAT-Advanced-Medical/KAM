@@ -138,6 +138,7 @@ if (EGVAR(breathing,paco2Active)) then {
 // Generated ETCO2 quadratic. Ensures ETCO2 moves with Respiratory Rate and is constantly below PaCO2 
 if (IN_CRDC_ARRST(_unit)) then {
     if (alive (_unit getVariable [QACEGVAR(medical,CPR_provider), objNull])) then {
+        // CPR is ongoing
         _etco2 = (15 + (_paco2 / 40) - (((_unit getVariable [QACEGVAR(medical_statemachine,cardiacArrestTimeLeft), 1]) max 1) / (ACEGVAR(medical_statemachine,cardiacArrestTime)) * 10)) max 1;
     } else {
         _etco2 = 0;

@@ -39,7 +39,15 @@ if (_target getVariable [QGVAR(airway), false] && _selectionN isEqualTo 1) then 
         _entries pushBack [localize _text, [0.1, 1, 1, 1]];
     };
 };
-
+private _airways = ["Larynxtubus", "IGEL", "ETT"];
+private _monitor  = _target getVariable [QEGVAR(breathing,etco2Monitor), []];
+private _hasCapno = (_airways findIf { _x in _monitor }) != -1;
+if (_hasCapno && _selectionN isEqualTo 0 && QGVAR(capnographEnable)) then {
+    private _entry = _target getVariable [QGVAR(capnoStatus), ""];
+    private _color = _target getVariable [QGVAR(capnoColor), [1,1,1,1]];
+    _entries pushBack [_entry, _color];
+};
+    
 
 if (((_target getVariable [QGVAR(catastrophicAirway), [false, false]] select 1) || (_target getVariable [QGVAR(catastrophicAirway), [false, false]] select 1)) && (_selectionN isEqualTo 0)) then {
     private _text = LSTRING(Catastrophic_Display);
@@ -67,14 +75,6 @@ if ((_target getVariable [QGVAR(AED_X_VitalsMonitor_Connected), false] || _targe
         _entries pushBack [_entry, [1, 1, 1, 1]];
     };   
 };
-private _airways = ["Larynxtubus", "IGEL", "ETT"];
-private _monitor  = _target getVariable [QEGVAR(breathing,etco2Monitor), []];
-private _hasCapno = (_airways findIf { _x in _monitor }) != -1;
-if (_hasCapno && _selectionN isEqualTo 0) then {
-    private _entry = _target getVariable [QGVAR(capnoStatus), ""];
-    private _color = _target getVariable [QGVAR(capnoColor), [1,1,1,1]];
-    _entries pushBack [_entry, _color];
-};
-    
+
 
 

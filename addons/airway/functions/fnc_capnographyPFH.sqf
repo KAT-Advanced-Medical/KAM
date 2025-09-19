@@ -45,11 +45,11 @@ params ["_unit"];
     };
     case (_etco2 > 40): {
         _color = LLSTRING(capnographyYellow);
-        _rgb = [0,1,0,1];
+        _rgb = [1,1,0,1];
     };
     case (_etco2 > 50): {
         _color = LLSTRING(capnographyOrange);
-        _rgb = [1,1,0,1];
+        _rgb = [1,0.647,0,1];
     };
     case (_etco2 > 60): {
         _color = LLSTRING(capnographyRed);
@@ -57,7 +57,7 @@ params ["_unit"];
     };
     default {
         _color = LLSTRING(capnographyGreen);
-        _rgb = [0,1,1,1];
+        _rgb = [0,1,0,1];
     };
     };
     private _entry = format [LLSTRING(capnographyStatus), _color];
