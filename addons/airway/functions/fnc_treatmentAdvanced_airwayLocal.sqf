@@ -63,7 +63,7 @@ if (_classname in ["Larynxtubus", "IGEL", "ETT"]) then {
     private _currentMonitors = _patient getVariable [QEGVAR(breathing,etco2Monitor), []];
     _currentMonitors pushBack _classname;
     _patient setVariable [QEGVAR(breathing,etco2Monitor), _currentMonitors, true];
-    if (QGVAR(capnographEnable)) then {
+    if (GVAR(capnographEnable)) then {
         [QGVAR(capnoPFH), [_patient], _patient] call CBA_fnc_targetEvent;
     };
 };

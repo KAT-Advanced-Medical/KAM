@@ -2352,5 +2352,11 @@
         <Key ID="STR_KAT_Airway_capnographyStatus">
             <English>Capnograph: %1</English>
         </Key>
+        <Key ID="STR_KAT_Airway_SETTING_ENABLE_capnograph">
+            <English>Enable Capnography</English>
+        </Key>
+        <Key ID="STR_KAT_Airway_SETTING_ENABLE_capnograph_DESC">
+            <English>Enables Capnography, allowing for an approximate reading of ETCo2 with a placed SGA/ETT</English>
+        </Key>
     </Package>
 </Project>

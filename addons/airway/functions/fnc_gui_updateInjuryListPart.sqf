@@ -42,7 +42,7 @@ if (_target getVariable [QGVAR(airway), false] && _selectionN isEqualTo 1) then 
 private _airways = ["Larynxtubus", "IGEL", "ETT"];
 private _monitor  = _target getVariable [QEGVAR(breathing,etco2Monitor), []];
 private _hasCapno = (_airways findIf { _x in _monitor }) != -1;
-if (_hasCapno && _selectionN isEqualTo 0 && QGVAR(capnographEnable)) then {
+if (_hasCapno && _selectionN isEqualTo 0 && GVAR(capnographEnable)) then {
     private _entry = _target getVariable [QGVAR(capnoStatus), ""];
     private _color = _target getVariable [QGVAR(capnoColor), [1,1,1,1]];
     _entries pushBack [_entry, _color];
