@@ -360,7 +360,7 @@
 #define GET_BLOOD_VOLUME_ML(unit)      (GET_BODY_FLUID(unit) select 4)
 #define GET_SIMPLE_BLOOD_VOLUME(unit)  (unit getVariable [VAR_BLOOD_VOL, DEFAULT_BLOOD_VOLUME])
 
-#define REDUCE_TOTAL_BLOOD_VOLUME(unit,volume) (unit setVariable [VAR_BODY_FLUID, [(GET_BODY_FLUID(unit) select 0) - (volume / 2), (GET_BODY_FLUID(unit) select 1) - (volume / 2), (GET_BODY_FLUID(unit) select 2), (GET_BODY_FLUID(unit) select 3), (GET_BODY_FLUID(unit) select 4) - volume], true])
+#define REDUCE_TOTAL_BLOOD_VOLUME(unit,volume) (unit setVariable [VAR_BODY_FLUID, [(GET_BODY_FLUID(unit) select 0) - (volume / 2), (GET_BODY_FLUID(unit) select 1) - (volume / 2), (GET_BODY_FLUID(unit) select 2), (GET_BODY_FLUID(unit) select 3), ((GET_BODY_FLUID(unit) select 4) - volume), (GET_BODY_FLUID(unit) select 5)], true])
 
 #undef GET_BLOOD_PRESSURE
 #define GET_BLOOD_PRESSURE(unit)       ([unit] call EFUNC(circulation,getBloodPressure))

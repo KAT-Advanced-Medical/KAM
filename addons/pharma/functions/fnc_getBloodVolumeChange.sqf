@@ -90,7 +90,7 @@ if (!isNil {_unit getVariable [QACEGVAR(medical,ivBags),[]]}) then {
             } forEach _incomingFlowAmount;
             TRACE_8("IV",_bagChange,_IVrate,_IVflow,_IVarray,_isOccluded,_rateCoef,_flowCalculation,_bodyPart);
             TRACE_2("IV2",_bagVolumeRemaining,_incomingFlowAmount);
-            if ((GVAR(IVComplications)) && ((((_incomingFlowAmount select _bodyPart) max 0.01) / ((_IVrate select _bodyPart) max 0.01)) > (7 * _vasoconstriction)) && ((random 100) < 20)) then {[_unit, _bodyPart, _incomingFlowDifference] call FUNC(handleLimbIVComplications)};
+            if ((GVAR(LimbIVComplications)) && ((((_incomingFlowAmount select _bodyPart) max 0.01) / ((_IVrate select _bodyPart) max 0.01)) > (7 * _vasoconstriction)) && ((random 100) < 20)) then {[_unit, _bodyPart, _incomingFlowDifference] call FUNC(handleLimbIVComplications)};
             if ((GVAR(IVComplications)) && (_totalFlow > (25 * _vasoconstriction))) then {[_unit, (_totalFlow - (25 * _vasoconstriction))] call FUNC(handleIVComplications)};
             if (_hypothermia) then {
                 // If fluid warmers are on the line, fluids are "warmed" and added to the warmer. If there is no fluid warmer on the line, the fluids stayed cooled
@@ -100,11 +100,11 @@ if (!isNil {_unit getVariable [QACEGVAR(medical,ivBags),[]]}) then {
                     _incomingVolumeChange set [_bodyPart, ((_incomingVolumeChange select _bodyPart) - _bagChange)];
                 };
             };
-            if (_type == "Blood") then {
-                if (!([_unit, _item] call EFUNC(circulation,compatible)) && (_bagChange > 1)) then {
+            if ((_type == "Blood") && (_bagChange > 1)) then {
+                if !([_unit, _treatment] call EFUNC(circulation,compatible)) then {
                     private _medCount = [_unit, "BloodPoisoning"] call ACEFUNC(medical_status,getMedicationCount) select 1;
                     if (_medCount < 0.05) then {
-                        [_unit, "BloodPoisoning", 0, 30, 0, 0, 0, 0, 0, 0, 0, 0.2, 0.3, 0, 0, false, false, true] call EFUNC(vitals,addMedicationAdjustment);
+                        [_unit, "BloodPoisoning", 0, 30, 0, 0, 0, 0, 0, 0, 0, 0.2, 0.3, 0, 0, "false", "false", "true"] call EFUNC(vitals,addMedicationAdjustment);
                     };
                     private _hasPFH = _unit getVariable ["kat_hemolysisPFH", -1] isNotEqualTo -1;
                     if !(_hasPFH) then {
@@ -113,13 +113,13 @@ if (!isNil {_unit getVariable [QACEGVAR(medical,ivBags),[]]}) then {
                             _args params ["_unit"];
                             private _medCount = [_unit, "BloodPoisoning"] call ACEFUNC(medical_status,getMedicationCount) select 1;
                             if ((_medCount == 0) || !(alive _unit)) exitWith {
-                                _unit setVariable ["kat_hemolysisPFH", nil, true];
+                                _unit setVariable ["kat_hemolysisPFH", -1, true];
                                 [_idPFH] call CBA_fnc_removePerFrameHandler;
                             };
                             private _bloodlevels = GET_BODY_FLUID(_unit);
-                            _bloodlevels set [0, (_bloodlevels select 0) - 8];
-                            _bloodlevels set [1, (_bloodlevels select 1) + 8];
-                            _bloodlevels set [5, (_bloodlevels select 5) - 3];
+                            _bloodlevels set [0, ((_bloodlevels select 0) - 8) max 0];
+                            _bloodlevels set [1, ((_bloodlevels select 1) + 8) max 0];
+                            _bloodlevels set [5, ((_bloodlevels select 5) - 3) max 0];
                             _unit setVariable [QEGVAR(circulation,bodyFluid), _bloodlevels, true];
                         }, 1, [_unit]] call CBA_fnc_addPerFrameHandler;
                         _unit setVariable ["kat_hemolysisPFH", _hemolysisPFH, true];

@@ -34,7 +34,14 @@ if ((_heartRate < (_defaultHeartRate - 25) || _heartRate > (_defaultHeartRate + 
 private _o2 = GET_KAT_SPO2(_unit);
 if ((_o2 < EGVAR(breathing,Stable_spo2)) && (QGVAR(conversionRequirements) > 0)) exitWith { false };
 
-private _fractures = _unit getVariable [QEGVAR(surgery,fractures), [0,0,0,0,0,0]];
+private _ptx = _unit getVariable [QEGVAR(breathing,pneumothorax), [0, 0]];
+if (((selectMax _ptx) > 0) && (QGVAR(conversionRequirements) > 0)) exitWith { false };
+
+private _hemopneumothorax = _unit getVariable [QEGVAR(breathing,hemopneumothorax), [false, false]];
+private _tensionpneumothorax = _unit getVariable [QEGVAR(breathing,tensionpneumothorax), [false, false]];
+if (((_tensionpneumothorax select 0) || (_tensionpneumothorax select 1) || (_hemopneumothorax select 0) || (_hemopneumothorax select 1)) && (QGVAR(conversionRequirements) > 0)) exitWith { false };
+
+private _fractures = _unit getVariable [QEGVAR(surgery,fractures), [0,0,0,0,0,0,0,0,0,0,0,0]];
 if ((({_x == 0} count _fractures) != 6) && (QGVAR(conversionRequirements) > 1)) exitWith { false };
 
 private _unitTemperature = _unit getVariable [QGVAR(unitTemperature), 37];

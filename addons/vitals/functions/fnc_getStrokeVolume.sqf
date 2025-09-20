@@ -19,7 +19,6 @@ params ["_unit"];
 private _defaultCVP = 6;
 private _strokeVolume = 0.095;
 private _heartRate = GET_HEART_RATE(_unit);
-private _bloodPressure = _unit getVariable [VAR_BLOOD_PRESS, DEFAULT_BLOOD_PRESSURE];
 private _defaultHeartRate = _unit getVariable [QEGVAR(circulation,defaultHeartRate), 80];
 private _heartRateRatio = GET_HEART_RATE(_unit) / _defaultHeartRate;
 private _bloodVolumeRatio = GET_BLOOD_VOLUME_LITERS(_unit) / DEFAULT_BLOOD_VOLUME;

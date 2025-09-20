@@ -56,15 +56,10 @@ if !(ACEGVAR(medical_treatment,advancedMedication)) exitWith {
     };
 };
 TRACE_1("Running treatmentMedicationLocal with Advanced configuration for",_patient);
-if (_classname in ["CWMP", "Painkillers", "Penthrox", "BubbleWrap", "Caffeine", "Pervitin"]) then {
-    private _occlusionArray = _patient getVariable [QEGVAR(airway,occlusion), [0, 0, 0]];
-    private _obstructionArray = _patient getVariable [QEGVAR(airway,obstruction), [0, 0, 0]];
-    private _catastrophicState = _patient getVariable [QEGVAR(airway,catastrophicAirway), [false, false]];
-    private _hasCatastrophicAirway = ((_catastrophicState select 0) || (_catastrophicState select 1));
-    private _occlusion = (_occlusionArray findIf { _x > 2 }) != -1;
-    private _obstruction = (_obstructionArray findIf { _x != 0 }) != -1;
-    if ((((_obstruction || _occlusion)) || _hasCatastrophicAirway)) exitWith {
-        TRACE_3("Medication injection site is occluded by tourniquet",_partIndex,_classname,_patient);
+if (_classname in ["CWMP", "Painkillers", "Penthrox", "Caffeine", "Pervitin"]) then {
+    private _airway = HAS_AIRWAY(_patient);
+    if !(_airway) exitWith {
+        TRACE_1("Medication  is occluded by airway",_airway);
     };
 };
 private _partIndex = ALL_BODY_PARTS find toLower _bodyPart;
@@ -123,31 +118,23 @@ if (_isOccluded) exitWith {
     if (count _parts > 3) then {
         _startDose = parseNumber (_parts select -1);
     };
-    private _currentWeight = _patient getVariable [QEGVAR(vitals,currentWeight), 80];
     private _defaultHeartRate = _patient getVariable [QEGVAR(circulation,defaultHeartRate), 80];
     private _heartRateRatio = GET_HEART_RATE(_patient) / _defaultHeartRate;
     private _bloodBased = GET_STRING(_medicationConfig >> "bloodBased",getText (_defaultConfig >> "bloodBased"));
-    private _weightBase = GET_STRING(_medicationConfig >> "weightBase",getText (_defaultConfig >> "weightBase"));
+    private _weightBase = GET_STRING(_medicationConfig >> "weightBased",getText (_defaultConfig >> "weightBased"));
     private _weightDose = GET_NUMBER(_medicationConfig >> "weightDose",getNumber (_defaultConfig >> "weightDose"));
     _weightMult = 1;
     if (_weightBase == "true") then {
-        private _defaultWeight = _patient getVariable [QEGVAR(circulation,defaultWeight), 80];
+        private _defaultWeight = _patient getVariable [QEGVAR(vitals,currentWeight), 80];
         private _weightFixed = linearConversion [60, 100, _defaultWeight, 10, 30, true];
-        _weightDoseFixed = _weightDose;
+        private _weightDoseFixed = _startDose;
+
         if (_weightDose != 20) then {
             private _weightDoseMin = GET_NUMBER(_medicationConfig >> "weightDoseMin",getNumber (_defaultConfig >> "weightDoseMin"));
             private _weightDoseMax = GET_NUMBER(_medicationConfig >> "weightDoseMax",getNumber (_defaultConfig >> "weightDoseMax"));
-            _weightDoseFixed = linearConversion [_weightDoseMin, _weightDoseMax, _weightDose, 10, 30, true];
+            _weightDoseFixed = linearConversion [_weightDoseMin, _weightDoseMax, _startDose, 10, 30, true];
         };
-        _weightMult = (_weightFixed/_weightDoseFixed);
-        private _distance = abs (_weightMult - 1);
-        if (_weightMult < 1) then {
-            private _divisor = linearConversion [0, 1, _distance, 1.0, 1.7, true];
-            _weightMult = _weightMult / _divisor;
-        } else {
-            private _multiplier = linearConversion [0, 1, _distance, 1.0, 1.7, true];
-            _weightMult = _weightMult * _multiplier;
-        };
+        private _weightMult = (_weightDoseFixed/_weightFixed);
     } else {
         private _lc = linearConversion [10, 30, _startDose, 0.5, 1.5, true];
         _weightMult = _weightMult * _lc;
@@ -179,15 +166,6 @@ if (_isOccluded) exitWith {
             private _reductionFactor = linearConversion [0, _maximumEffectiveDose, _excess, 1.0, 0.1, true];
             _doseMult = _doseMult * _reductionFactor;
         };
-    
-    private _distance = abs (_weightMult - 1);
-        if (_weightMult < 1) then {
-            private _divisor = linearConversion [0, 1, _distance, 1.0, 1.7, true];
-            _weightMult = _weightMult / _divisor;
-        } else {
-            private _multiplier = linearConversion [0, 1, _distance, 1.0, 1.7, true];
-            _weightMult = _weightMult * _multiplier;
-        };
     private _routeMult = 1;
         if ((_IVarray select _partIndex) in [1, 13]) then {
             _routeMult = random [0.7, 0.8, 1];
@@ -199,8 +177,8 @@ if (_isOccluded) exitWith {
             _hemocrit = (GET_BODY_FLUID_ECP(_patient)/GET_BODY_FLUID_ECB(_patient)) / (DEFAULT_ECP/DEFAULT_ECB)
         };
     private _unitMedEffectivness = _patient getVariable [QGVAR(medicationEffectivness), 1];
-    private _drugMult = ((((GET_BLOOD_VOLUME_LITERS(_patient) / DEFAULT_BLOOD_VOLUME) * (_heartRateRatio) * _hemocrit) max 0.2) min 2.5) * _weightMult * _doseMult * _unitMedEffectivness * _routeMult;
-    TRACE_5("_drugMult",_patient,_defaultHeartRate,_heartRateRatio,(GET_BLOOD_VOLUME_LITERS(_patient) / DEFAULT_BLOOD_VOLUME),_drugMult);
+    private _drugMult = ((((GET_BLOOD_VOLUME_LITERS(_patient) / DEFAULT_BLOOD_VOLUME) * (_heartRateRatio) * _hemocrit) max 0.2) min 2) * _weightMult * _doseMult * _unitMedEffectivness * _routeMult;
+    TRACE_8("_drugMult",_patient,_defaultHeartRate,_heartRateRatio,(GET_BLOOD_VOLUME_LITERS(_patient) / DEFAULT_BLOOD_VOLUME),_drugMult,_weightMult,_doseMult,_unitMedEffectivness);
     _painReduce             = GET_NUMBER(_medicationConfig >> "painReduce",getNumber (_defaultConfig >> "painReduce")) * _drugMult;
     _timeInSystem           = GET_NUMBER(_medicationConfig >> "timeInSystem",getNumber (_defaultConfig >> "timeInSystem")) * _drugMult;
     _timeTillMaxEffect      = GET_NUMBER(_medicationConfig >> "timeTillMaxEffect",getNumber (_defaultConfig >> "timeTillMaxEffect")) * _heartRateRatio;
@@ -279,7 +257,7 @@ if (_isOccluded) exitWith {
         if (_medicationName in ["EACA"]) then {
         [format ["kat_pharma_%1Local", toLower _medicationName], [_patient, _bodyPart, _timeTillMaxEffect, _timeInSystem], _patient] call CBA_fnc_targetEvent;
         };
-        if (_medicationName in ["Lorazepam","Etomidate","Rocuronium","Sugammadex","Succinylcholine"]) then {
+        if (_medicationName in ["Lorazepam","Etomidate","Sugammadex"]) then {
         [format ["kat_pharma_%1Local", toLower _medicationName], [_patient, _dose], _patient] call CBA_fnc_targetEvent;
         };
 

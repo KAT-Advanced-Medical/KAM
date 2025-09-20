@@ -47,7 +47,7 @@ private _hrAdjust = -50 + floor random ((-30 - -50) + 1);
                 if (_medications findIf {_x isEqualTo "naloxone"} != -1) exitWith {
                     [_idPFH] call CBA_fnc_removePerFrameHandler;
                 };
-                private _depression = _unit getVariable [QEGVAR(pharma,opioidDepression)] + 0.08;
-                _patient setVariable [QEGVAR(pharma,opioidDepression), _depression];
+                private _depression = (_patient getVariable [QEGVAR(pharma,opioidDepression)]) + 0.08;
+                _patient setVariable [QEGVAR(pharma,opioidDepression), _depression, true];
         }, 10, [_patient,0]] call CBA_fnc_addPerFrameHandler;
 }, [_patient], 10] call CBA_fnc_waitAndExecute;

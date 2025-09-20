@@ -17,6 +17,7 @@
  */
 
 params ["_unit", "_className", "_dose", "_limit",  "_incompatibleMedication"];
+TRACE_2("overDose",_className,_patient);
 [format ["kat_pharma_%1OverdoseLocal", toLower _className], [_patient], _patient] call CBA_fnc_targetEvent;
 
 /*else {

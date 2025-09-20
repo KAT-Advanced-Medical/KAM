@@ -3463,5 +3463,8 @@
         <Key ID="STR_KAT_Breathing_chestTube_display">
             <English>Chest Tube</English>
         </Key>
+        <Key ID="STR_KAT_Breathing_auscultateHeart_display">
+            <English>Auscultate Heart Sounds</English>
+        </Key>
     </Package>
 </Project>

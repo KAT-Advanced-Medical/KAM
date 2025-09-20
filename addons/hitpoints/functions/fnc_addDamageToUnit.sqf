@@ -46,7 +46,7 @@ if (!_overrideInvuln && {!((isDamageAllowed _unit) && {_unit getVariable [QACEGV
 };
 
 // Extension is case sensitive and expects this format (different from ALL_BODY_PARTS)
-_bodyPart = ["Head", "Neck", "Chest", "Body", "LeftArm", "LeftUpperArm", "RightArm", "RightUpperArm", "LeftLeg", "LeftUpperLeg", "RightLeg", "RightUpperLeg"] select _bodyPartIndex;
+_bodyPart = ["Head", "Neck", "Chest", "Body", "LeftArm", "UpperLeftArm", "RightArm", "UpperRightArm", "LeftLeg", "UpperLeftLeg", "RightLeg", "UpperRightLeg"] select _bodyPartIndex;
 
 if (!isNull _instigator) then {
     _unit setVariable [QACEGVAR(medical,lastDamageSource), _instigator];

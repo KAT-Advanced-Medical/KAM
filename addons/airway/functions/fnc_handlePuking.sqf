@@ -31,46 +31,21 @@ _unit setVariable ["kat_pukeActive_PFH", true];
     
     private _isUnconscious = _unit getVariable ["ACE_isUnconscious", false];
     private _alive = alive _unit;
-    if !(_alive || _isUnconscious) exitWith {
-        _unit setVariable ["kat_pukeActive_PFH", nil];
+    if (!_alive || !_isUnconscious || !(_unit getVariable ["kat_pukeActive_PFH", false])) exitWith {
+        _unit setVariable ["kat_pukeActive_PFH", false];
         [_idPFH] call CBA_fnc_removePerFrameHandler;
     };
     if (random (100) <= GVAR(airwayPukeChance)) then {
         private _occlusionState = _unit getVariable [QGVAR(occlusion), [0, 0, 0]];
-        private _usedItem = _unit getVariable [QGVAR(airway_item), ""];
-        switch (true) do {
-            case (_usedItem isEqualTo "Larynxtubus"): {
-                _occlusionState set [0, ((_occlusionState select 0) + floor random [1, 1, 3]) min 6];
-                _occlusionState set [1, ((_occlusionState select 1) + floor random [1, 1, 3]) min 6];
-                _occlusionState set [2, ((_occlusionState select 2) + floor random [1, 1, 3]) min 6];
-            };
-            case (_usedItem isEqualTo "IGEL"): {
-                _occlusionState set [0, ((_occlusionState select 0) + floor random [1, 3, 6]) min 6];
-                _occlusionState set [1, ((_occlusionState select 1) + floor random [1, 2, 4]) min 6];
-                _occlusionState set [2, ((_occlusionState select 2) + floor random [1, 1, 3]) min 6];
-            };
-            case (_usedItem isEqualTo "ETT"): {
-                _occlusionState set [0, ((_occlusionState select 0) + floor random [1, 3, 6]) min 6];
-                _occlusionState set [1, ((_occlusionState select 1) + floor random [1, 2, 4]) min 6];
-            };
-            case (_usedItem isEqualTo "NPA"): {
-                _occlusionState set [0, ((_occlusionState select 0) + floor random [1, 3, 6]) min 6];
-                _occlusionState set [1, ((_occlusionState select 1) + floor random [1, 2, 4]) min 6];
-                _occlusionState set [2, ((_occlusionState select 2) + floor random [1, 1, 3]) min 6];
-            };
-            case (_usedItem isEqualTo "Guedeltubes"): {
-                _occlusionState set [0, ((_occlusionState select 0) + floor random [1, 3, 6]) min 6];
-                _occlusionState set [1, ((_occlusionState select 1) + floor random [1, 2, 4]) min 6];
-                _occlusionState set [2, ((_occlusionState select 2) + floor random [1, 1, 3]) min 6];
-            };
-            default {
-            _occlusionState set [0, ((_occlusionState select 0) + floor random [1, 5, 6]) min 6];
-            _occlusionState set [1, ((_occlusionState select 1) + floor random [1, 4, 5]) min 6];
-            _occlusionState set [2, ((_occlusionState select 2) + floor random [1, 3, 4]) min 6];
-            };
-        };
+        private _volume = (_unit getVariable [QGVAR(stomachVolume), 5]) max 2;
+        private _mitigation = _unit getVariable [QGVAR(occlusionMitigation), [0, 0, 0]];
+        _occlusionState set [0, ((_occlusionState select 0) + floor (_volume * 1.5 * (1 - (_mitigation select 0)))) min 10];
+        _occlusionState set [1, ((_occlusionState select 1) + floor (_volume * (1 - (_mitigation select 1)))) min 10];
+        _occlusionState set [2, ((_occlusionState select 2) + floor (_volume * 0.7 * (1 - (_mitigation select 1)))) min 10];
         _unit setVariable [QGVAR(occlusion), _occlusionState, true];
+        _unit setVariable [QGVAR(stomachVolume), ((_volume - 1) max 1), true];
         _unit setVariable [QGVAR(hasPuked), true, true];
+        TRACE_1("occlusion",_occlusionState);
         for "_i" from 0 to 2 do {
             [_unit, _i] call FUNC(airwayPFH);
         };
@@ -79,7 +54,7 @@ _unit setVariable ["kat_pukeActive_PFH", true];
             _nauseaMult = 1
         };
         private _nauseaMult = (_nauseaMult min 6) max 0.1;
-        private _delay = ((GVAR(occlusion_repeatTimer) / _nauseaMult) * random [0.8, 1, 1.3]) max 15;
+        private _delay = ((GVAR(occlusion_repeatTimer) / _nauseaMult) * random [0.8, 1, 1.3]) max 5;
         [_idPFH, _delay] call CBA_fnc_setPerFrameHandlerDelay;
         if (GVAR(checkbox_puking_sound)) then {
             private _sound = selectRandom [

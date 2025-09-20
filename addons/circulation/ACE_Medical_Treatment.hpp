@@ -59,6 +59,8 @@ class ACE_Medical_Treatment {
             rateCoef = 0.9;
             platelets = 0.075;
             ph = -0.8;
+            bloodType = "O_N";
+            compatibility[] = {"O", "O_N", "A", "A_N", "B","B_N", "AB", "AB_N"};
         };
         class BloodIV_500: BloodIV {
             volume = 500;

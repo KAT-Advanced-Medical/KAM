@@ -28,7 +28,7 @@ _syringeListBox ctrlAddEventHandler ["LBSelChanged", {
         "kat_lidocaine", "kat_lorazepam", "kat_nalbuphine", "kat_nitroglycerin",
         "kat_norepinephrine", "kat_phenylephrine", "kat_TXA", "kat_morphineIV",
         "kat_adenosineIV", "kat_alteplase", "kat_doxapram", "ACE_salineIV_250", "kat_ondansetron",
-        "kat_rocuronium", "kat_succinylcholine", "kat_sugammadex"
+        "kat_rocuronium", "kat_succinylcholine", "kat_sugammadex", "kat_salineIV100"
     ];
 
     private _inventory = (items player) + (magazines player);

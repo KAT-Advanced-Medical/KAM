@@ -20,5 +20,5 @@ params ["_unit"];
 [{
     params ["_unit"];
 
-    _unit setVariable [QGVAR(StoredBloodPressure), (_unit getVariable [QACEGVAR(medical,bloodPressure), [0,0]]), true];
+    _unit setVariable [QGVAR(StoredBloodPressure), [_unit] call FUNC(getBloodPressure), true];
 }, [_unit], 1] call CBA_fnc_waitAndExecute;

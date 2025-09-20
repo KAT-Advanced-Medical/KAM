@@ -1039,5 +1039,11 @@
             <Japanese>出血状態の表示</Japanese>
             <Chinesesimp>显示流血速度</Chinesesimp>
         </Key>
+        <Key ID="STR_KAT_GUI_localPain_Description">
+            <English>Display if the patient has pain, if enabled pain will only be shown to the player experiencing it</English>
+        </Key>
+        <Key ID="STR_KAT_GUI_localPain_DisplayName">
+            <English>Local Pain Display</English>
+        </Key>
     </Package>
 </Project>

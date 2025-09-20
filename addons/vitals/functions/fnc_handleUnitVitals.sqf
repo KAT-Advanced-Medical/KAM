@@ -66,7 +66,7 @@ private _hemorrhage = switch (true) do {
     case (_bloodVolume < BLOOD_VOLUME_CLASS_4_HEMORRHAGE): { 4 };
     case (_bloodVolume < BLOOD_VOLUME_CLASS_3_HEMORRHAGE): { 3 };
     case (_bloodVolume < BLOOD_VOLUME_CLASS_2_HEMORRHAGE): { 2 };
-    case (_bloodVolume < BLOOD_VOLUME_CLASS_1_HEMORRHAGE): { 1 };
+    case (_bloodVolume < 5.950): { 1 };
     default {0};
 };
 
@@ -117,7 +117,7 @@ if (_adjustments isNotEqualTo []) then {
             _deleted = true;
             _adjustments set [_forEachIndex, objNull];
         } else {
-            if (_linear) then {
+            if (_linear == "true") then {
                 _effectRatio = 1;
             } else {
                 _effectRatio = (((_timeInSystem / _timeTillMaxEffect) ^ 2) min 1) * (_maxTimeInSystem - _timeInSystem) / _maxTimeInSystem;
