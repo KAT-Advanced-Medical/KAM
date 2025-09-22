@@ -277,7 +277,7 @@
             <Dutch>Normaal INR</Dutch>
         </Key>
         <Key ID="STR_KAT_Pharma_CheckCoag_slightly_aboveINR">
-            <English>Sligtly Above normal INR</English>
+            <English>Slightly Above normal INR</English>
             <Czech>INR mírně nad normálem</Czech>
             <French>légèrement supérieur à l'INR normal</French>
             <Spanish>ligeramente por encima de INR normal</Spanish>
@@ -872,7 +872,7 @@
             <Dutch>Wordt gebruikt om hartstilstand te bestrijden</Dutch>
         </Key>
         <Key ID="STR_KAT_Pharma_Lorazepam_DescShort">
-            <English>Sedtation medication</English>
+            <English>Sedation medication</English>
             <Czech>Sedativa</Czech>
             <French>Médicament de sédation</French>
             <Spanish>Fármaco sedante</Spanish>
