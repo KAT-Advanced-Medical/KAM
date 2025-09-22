@@ -3179,7 +3179,7 @@
             <Dutch>Bloedgroepen eigen lijst</Dutch>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_bloodtype_custom_list_DESC">
-            <English>Sets blood types that will be assigned to players based on their SteamID \nBlood types are seperated by a comma (","), list should contain a total of 10 blood types</English>
+            <English>Sets blood types that will be assigned to players based on their SteamID \nBlood types are separated by a comma (","), list should contain a total of 10 blood types</English>
             <Czech>Nastavuje krevní skupiny které budou přiřazeny hráčům podle jejich SteamID \nKrevní Skupiny jsou oddělené čárkou (","), seznam by měl obsahovat celkem 10 Krevních Skupin</Czech>
             <French>Attribue les groupes sanguins pouvant être attribués aux joueurs en se basant sur leur SteamID \nLes groupes sanguins sont séparés par des virgules (","), la liste devrait contenir un total de 10 groupes sanguins.</French>
             <Spanish>Fija el tipo de sangre con el que aparecen los jugadores en base a su Steam ID \nLos tipos de sangre son separados por comas (","), la lista debe contener 10 tipos de sangre en total</Spanish>
