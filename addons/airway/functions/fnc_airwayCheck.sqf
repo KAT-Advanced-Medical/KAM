@@ -40,7 +40,7 @@ if ((_unit getVariable [QEGVAR(airway,airway_item), ""]) isEqualTo "NPA") then {
     _obstructionArray = _obstructionArray select [1,2];
     _hasCatastrophicAirway = _catastrophicState select 1;
 };
-private _occlusion = (_occlusionArray findIf { _x > 5 }) != -1;
+private _occlusion = (_occlusionArray findIf { _x > 4 }) != -1;
 private _obstruction = (_obstructionArray findIf { _x != 0 }) != -1;
 private _airway = true;
 private _airwayItem = _unit getVariable [QEGVAR(airway,airway_item), ""];

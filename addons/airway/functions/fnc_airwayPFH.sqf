@@ -51,7 +51,7 @@ if (!(GVAR(enable)) || {_unit getVariable ["KAT_Occlusion_Exclusion", false]}) e
             if (floor (random 100) < GVAR(deterioratingAirways_chance)) then {
                 private _occlusionTarget = (_occlusionState select _level) + selectRandom [1, 2, 3];
 
-                if (_occlusionTarget > 15) then {
+                if (_occlusionTarget > 10) then {
                     // Spread to neighbors if maxed out
                     private _mitigation = _unit getVariable [QGVAR(occlusionMitigation), [0, 0, 0]];
                     private _spreadTargets = switch (_level) do {
