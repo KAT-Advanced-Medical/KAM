@@ -117,7 +117,7 @@ class ACEGVAR(medical_gui,BodyImage): RscControlsGroupNoScrollbars {
             colorText[] = {1, 1, 1, 1};
         };
         class Torso_WoundPack_Vacuum: Torso_ChestSeal {
-            idc = IDC_BODY_TORSO_WOUNDPACK_VACUUM  ;
+            idc = IDC_BODY_TORSO_WOUNDPACK_VACUUM;
             text = QPATHTOF(data\body_image\torso_woundPack_vacuum.paa);
             colorText[] = {1, 1, 1, 1};
         };

@@ -61,9 +61,7 @@ if (random 100 < GVAR(closedReductionFailChance)) exitWith {
     private _output = LLSTRING(fracture_fail);
     [_output, 1.5, _medic] call ACEFUNC(common,displayTextStructured);
 };
-
-    private _delayMult = missionNamespace getVariable [QGVAR(penaltyMult),0.5];
-    private _delay = (random [120, 200, 240]) * _delayMult;
+    private _delay = (random [120, 200, 240]) * GVAR(penaltyMult);
     if (_delay > 15) then {
         _activeFracture set [_part, -3];
         _fractureArray set [_part, 0];

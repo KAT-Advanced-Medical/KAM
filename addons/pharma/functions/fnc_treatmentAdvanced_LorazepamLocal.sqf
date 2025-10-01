@@ -24,7 +24,7 @@ if (_random <= 1) then {
     [_patient, "BRADYCARDIA", 120, 1200, _hrAdjust] call EFUNC(vitals,addMedicationAdjustment);
 };
 private _currentWeight = _patient getVariable [QEGVAR(vitals,currentWeight), 80];
-private _doseNormalized = linearConversion [0, 30, _dose, 10, 30, true];
+private _doseNormalized = linearConversion [10, 30, _dose, 15, 35, true];
 private _weightNormalized = linearConversion [60, 100, _currentWeight, 10, 30, true];
 if (_doseNormalized > _weightNormalized) then {
     [_patient, "Lorazepam", 10, 600, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, "true"] call EFUNC(vitals,addMedicationAdjustment);

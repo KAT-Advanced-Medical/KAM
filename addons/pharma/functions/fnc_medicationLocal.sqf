@@ -181,7 +181,7 @@ if (_isOccluded) exitWith {
     TRACE_8("_drugMult",_patient,_defaultHeartRate,_heartRateRatio,(GET_BLOOD_VOLUME_LITERS(_patient) / DEFAULT_BLOOD_VOLUME),_drugMult,_weightMult,_doseMult,_unitMedEffectivness);
     _painReduce             = GET_NUMBER(_medicationConfig >> "painReduce",getNumber (_defaultConfig >> "painReduce")) * _drugMult;
     _timeInSystem           = GET_NUMBER(_medicationConfig >> "timeInSystem",getNumber (_defaultConfig >> "timeInSystem")) * _drugMult;
-    _timeTillMaxEffect      = GET_NUMBER(_medicationConfig >> "timeTillMaxEffect",getNumber (_defaultConfig >> "timeTillMaxEffect")) * _heartRateRatio;
+    _timeTillMaxEffect      = GET_NUMBER(_medicationConfig >> "timeTillMaxEffect",getNumber (_defaultConfig >> "timeTillMaxEffect")) * _drugMult * (2 - _routeMult);
     _viscosityChange        = GET_NUMBER(_medicationConfig >> "viscosityChange",getNumber (_defaultConfig >> "viscosityChange")) * _drugMult;
     _alphaFactor            = GET_NUMBER(_medicationConfig >> "alphaFactor",getNumber (_defaultConfig >> "alphaFactor")) * _drugMult;
     _opioidRelief           = GET_NUMBER(_medicationConfig >> "opioidRelief",getNumber (_defaultConfig >> "opioidRelief")) * _drugMult;
@@ -251,13 +251,13 @@ if (_isOccluded) exitWith {
         if (_upperMed select [count _upperMed - 2] isEqualTo "IV") then {
             _medicationName = _medicationName select [0, count _medicationName - 2];
         };
-        if (_medicationName in ["TXA","Amiodarone","Flumazenil"]) then {
+        if (_medicationName in ["TXA","Amiodarone"]) then {
         [format ["kat_pharma_%1Local", toLower _medicationName], [_patient, _bodyPart], _patient] call CBA_fnc_targetEvent;
         };
         if (_medicationName in ["EACA"]) then {
         [format ["kat_pharma_%1Local", toLower _medicationName], [_patient, _bodyPart, _timeTillMaxEffect, _timeInSystem], _patient] call CBA_fnc_targetEvent;
         };
-        if (_medicationName in ["Lorazepam","Etomidate","Sugammadex"]) then {
+        if (_medicationName in ["Lorazepam","Etomidate","Sugammadex","Flumazenil"]) then {
         [format ["kat_pharma_%1Local", toLower _medicationName], [_patient, _dose], _patient] call CBA_fnc_targetEvent;
         };
 
