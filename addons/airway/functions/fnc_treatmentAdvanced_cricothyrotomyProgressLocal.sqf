@@ -89,8 +89,8 @@ if (_entry == 0.1) then {
     }, 5, [_patient]] call CBA_fnc_addPerFrameHandler;
 
 if (GVAR(hardcoreCrike)) then {
-    [_unit, "blockRadio", "kat_crike", true] call ACEFUNC(common,statusEffect_set);
-    [_unit, "blockSpeaking", "kat_crike", true] call ACEFUNC(common,statusEffect_set);
+    [_patient, "blockRadio", "kat_crike", true] call ACEFUNC(common,statusEffect_set);
+    [_patient, "blockSpeaking", "kat_crike", true] call ACEFUNC(common,statusEffect_set);
 };
 };
 

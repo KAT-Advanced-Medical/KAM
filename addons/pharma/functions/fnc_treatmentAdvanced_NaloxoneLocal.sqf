@@ -25,14 +25,14 @@ if (random 1 < 0.33) then {
     private _lowerMed = toLower _medication;
     if (
         (_lowerMed find "morphine" != -1) ||
-        (_lowerMed find "morphineOverdose" != -1) ||
+        (_lowerMed find "morphineoverdose" != -1) ||
         (_lowerMed find "fentanyl" != -1) ||
-        (_lowerMed find "fentanylOverdose" != -1) ||
+        (_lowerMed find "fentanyloverdose" != -1) ||
         (_lowerMed find "nalbuphine" != -1) ||
-        (_lowerMed find "nalbuphineOverdose" != -1)
+        (_lowerMed find "nalbuphineoverdose" != -1)
     ) then {
         _medicationArray deleteAt (_medicationArray find _x);
-        _patient setVariable [QEGVAR(pharma,opioidFactor), 1];
+        _patient setVariable [QEGVAR(pharma,opioidFactor), 1, true];
         _ht deleteAt (_ht find "opioidOD");
         _patient setVariable [QEGVAR(circulation,ht), _ht, true];
     };

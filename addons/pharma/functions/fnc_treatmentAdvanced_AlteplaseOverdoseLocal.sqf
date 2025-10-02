@@ -27,11 +27,11 @@ private _hrAdjust = 10 + floor random ((25 - 10) + 1);
             };
                 _AlteplaseTarget = _AlteplaseTarget + 1;
                 _args set [1, _AlteplaseTarget];
-                if (_AlteplaseTarget > 36) exitWith {
+                if (_AlteplaseTarget > 100) exitWith {
                 [_idPFH] call CBA_fnc_removePerFrameHandler;};
                 private _bloodlevels = GET_BODY_FLUID(_patient);
-                _bloodlevels set [0, (_bloodlevels select 0) - 20];
-                _bloodlevels set [5, (_bloodlevels select 5) - 10];
+                _bloodlevels set [0, ((_bloodlevels select 0) - 5) max 0];
+                _bloodlevels set [5, ((_bloodlevels select 5) - 10) max 0];
                 _patient setVariable [QEGVAR(circulation,bodyFluid), _bloodlevels, true];
-        }, 15, [_patient, 0]] call CBA_fnc_addPerFrameHandler;
+        }, 5, [_patient, 0]] call CBA_fnc_addPerFrameHandler;
 }, [_patient], 15] call CBA_fnc_waitAndExecute;

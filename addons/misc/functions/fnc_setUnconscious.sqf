@@ -65,7 +65,9 @@ if (_knockOut) then {
 
     [QACEGVAR(medical,knockOut), _unit] call CBA_fnc_localEvent;
 } else {
-    [QACEGVAR(medical,WakeUp), _unit] call CBA_fnc_localEvent;
+    if !(GET_CONVERT_STATUS(_unit)) then {
+        [QACEGVAR(medical,WakeUp), _unit] call CBA_fnc_localEvent;
+    };
 };
 
 true

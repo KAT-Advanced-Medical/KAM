@@ -38,9 +38,9 @@ private _occludedFlushed = false;
 if (HAS_TOURNIQUET_APPLIED_ON(_patient,_partIndex)) exitWith {};
 
 {
-    _x params ["_bodyPartN", "_medication", "_unit"];
+    _x params ["_bodyPartN", "_medication", "_patient"];
 
-        private _isStillOccluded = [_unit, _bodyPartN] call FUNC(occlusionCheck);
+        private _isStillOccluded = [_patient, _bodyPartN] call FUNC(occlusionCheck);
         TRACE_1("delayed medication call after tourniquet removal",_isStillOccluded);
     if (!_isStillOccluded) then {
         [QGVAR(medicationLocal), [_patient, _bodyPart, _medication], _patient] call CBA_fnc_targetEvent;

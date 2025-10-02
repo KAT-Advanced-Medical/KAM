@@ -87,9 +87,73 @@ private _bodyPartVisParams = [_unit, false, false, false, false]; // params arra
             WARNING_4("No valid wound types %1-%2-%3-%4",_damage,_dmgPerWound,_typeOfDamage,_bodyPart);
             continue
         };
-        if (_woundTypeToAdd == "InternalBleeding" && !(GVAR(InternalBleedingEnable))) then {
-            _woundTypeToAdd = "Avulsion";
-            continue
+        if (_woundTypeToAdd in ["Avulsion", "Velocity Wound", "Contusion"] && (random 100 < GVAR(InternalBleedingChance)) && (GVAR(InternalBleedingEnable))) then {
+            private _woundTypeToAdd = "InternalBleeding";
+            ACEGVAR(medical_damage,woundDetails) get _woundTypeToAdd params ["","_injuryBleedingRate","_injuryPain","_causeLimping","_causeFracture"];
+            private _woundClassIDToAdd = ACEGVAR(medical_damage,woundClassNames) find _woundTypeToAdd;
+            TRACE_2("wounds",_woundTypeToAdd,_woundClassIDToAdd);
+            // Add a bit of random variance to wounds
+            private _woundDamage = _dmgPerWound * _dmgMultiplier * random [0.3, 0.5, 0.7] ;
+
+            _bodyPartDamage set [_bodyPartNToAdd, (_bodyPartDamage select _bodyPartNToAdd) + _woundDamage];
+
+            // Anything above this value is guaranteed worst wound possible
+            private _worstDamage = 2;
+
+            #define LARGE_WOUND_THRESHOLD 0.5
+            // Config specifies bleeding and pain for worst possible wound
+            // Worse wound correlates to higher damage, damage is not capped at 1
+            private _woundSize = linearConversion [0.1, _worstDamage, _woundDamage * _sizeMultiplier, LARGE_WOUND_THRESHOLD^3, 1, true];
+
+            private _pain = _woundSize * _painMultiplier * _injuryPain;
+            _painLevel = _painLevel + _pain;
+
+            _arterialRate = 1;
+            if (random 100 < GVAR(ArterialChance)) then {
+                _arterialRate  = random [1.1, 1.3, 1.6];
+            };
+            _bleeding = (_woundSize * _bleedMultiplier * _injuryBleedingRate) * _arterialRate;
+            TRACE_6("BleedingRate",_bleeding,_woundSize,_bleedMultiplier,_injuryBleedingRate,_arterialRate,GVAR(ArterialChance));
+            // large wounds are > LARGE_WOUND_THRESHOLD
+            // medium is > LARGE_WOUND_THRESHOLD^2
+            // minor is > LARGE_WOUND_THRESHOLD^3
+            private _category = 0  max (2 - floor (ln _woundSize / ln LARGE_WOUND_THRESHOLD)) min 2;
+
+            private _classComplex = 10 * _woundClassIDToAdd + _category;
+
+            // Create a new injury. Format [0:classComplex, 1:amountOf, 2:bleedingRate, 3:woundDamage]
+            private _injury = [_classComplex, 1, _bleeding, _woundDamage];
+
+            #ifdef DEBUG_MODE_FULL
+            diag_log format["%1, damage: %2, peneration: %3, bleeding: %4, pain: %5", _bodyPart, _woundDamage toFixed 2, _woundDamage > PENETRATION_THRESHOLD, _bleeding toFixed 3, _pain toFixed 3];
+            systemChat format["%1, damage: %2, peneration: %3, bleeding: %4, pain: %5", _bodyPart, _woundDamage toFixed 2, _woundDamage > PENETRATION_THRESHOLD, _bleeding toFixed 3, _pain toFixed 3];
+            #endif
+
+            // if possible merge into existing wounds
+            private _createNewWound = true;
+            private _existingWounds = _openWounds getOrDefault [_bodyPart, [], true];
+            {
+                _x params ["_classID", "_oldAmountOf", "_oldBleeding", "_oldDamage"];
+                if (
+                        (_classComplex == _classID) &&
+                        {(_bodyPart isNotEqualTo "") || {(_woundDamage < PENETRATION_THRESHOLD) isEqualTo (_oldDamage < PENETRATION_THRESHOLD)}} && 
+                        {(_bodyPartNToAdd > 7) || {!_causeLimping} || {(_woundDamage <= LIMPING_DAMAGE_THRESHOLD) isEqualTo (_oldDamage <= LIMPING_DAMAGE_THRESHOLD)}} // ensure limping damage is stacked correctly
+                        ) exitWith {
+                    TRACE_2("merging with existing wound",_injury,_x);
+                    private _newAmountOf = _oldAmountOf + 1;
+                    _x set [1, _newAmountOf];
+                    private _newBleeding = (_oldAmountOf * _oldBleeding + _bleeding) / _newAmountOf;
+                    _x set [2, _newBleeding];
+                    private _newDamage = (_oldAmountOf * _oldDamage + _woundDamage) / _newAmountOf;
+                    _x set [3, _newDamage];
+                    _createNewWound = false;
+                };
+            } forEach _existingWounds;
+
+            if (_createNewWound) then {
+                TRACE_1("adding new wound",_injury);
+                _existingWounds pushBack _injury;
+            };
         };
         ACEGVAR(medical_damage,woundDetails) get _woundTypeToAdd params ["","_injuryBleedingRate","_injuryPain","_causeLimping","_causeFracture"];
         private _woundClassIDToAdd = ACEGVAR(medical_damage,woundClassNames) find _woundTypeToAdd;
@@ -101,9 +165,9 @@ private _bodyPartVisParams = [_unit, false, false, false, false]; // params arra
         _bodyPartVisParams set [[1,1,1,2,2,2,3,3,3,4,4,4] select _bodyPartNToAdd, true]; // Mark the body part index needs updating
 
         // Anything above this value is guaranteed worst wound possible
-        private _worstDamage = 2;
-
-        #define LARGE_WOUND_THRESHOLD 0.5
+        private _worstDamage = 6;
+        #undef LARGE_WOUND_THRESHOLD
+        #define LARGE_WOUND_THRESHOLD 0.75
 
         // Config specifies bleeding and pain for worst possible wound
         // Worse wound correlates to higher damage, damage is not capped at 1
@@ -116,7 +180,7 @@ private _bodyPartVisParams = [_unit, false, false, false, false]; // params arra
         if (random 100 < GVAR(ArterialChance)) then {
             _arterialRate  = random [1.1, 1.3, 1.6];
             };
-        _bleeding = (_woundSize * _bleedMultiplier * _injuryBleedingRate) * _arterialRate;
+        _bleeding = (_woundSize * _bleedMultiplier * _injuryBleedingRate) * _arterialRate * random [0.8, 1, 1.2];;
         TRACE_6("BleedingRate",_bleeding,_woundSize,_bleedMultiplier,_injuryBleedingRate,_arterialRate,GVAR(ArterialChance));
         // large wounds are > LARGE_WOUND_THRESHOLD
         // medium is > LARGE_WOUND_THRESHOLD^2

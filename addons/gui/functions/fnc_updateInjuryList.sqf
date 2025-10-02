@@ -79,6 +79,7 @@ if (_hasExternalBleeding && (IS_BLEEDING(_target))) then {
             // Give a qualitative description of the rate of bleeding on a limb by limb basis
             if (HAS_LIMB_BLEEDING(_target,_selectionN)) then {
                 private _cardiacOutput = [_target] call EFUNC(vitals,getCardiacOutput);
+
                 private _bleedRate = GET_BODY_PART_RATE(_target,_selectionN);
                 private _bleedRateKO = BLOOD_LOSS_KNOCK_OUT_THRESHOLD * (_cardiacOutput max 0.05);
                 // Use nonzero minimum cardiac output to prevent all bleeding showing as massive during cardiac arrest
@@ -219,22 +220,42 @@ if (_totalIvVolume > 0) then {
 
 // Indicate the amount of pain the unit is in
 if (_target call ACEFUNC(common,isAwake) && ((_target == ACE_Player) || {!isPlayer _target}))  then {
-    private _pain = GET_PAIN_PERCEIVED(_target);
-    if (_pain > 0) then {
-        private _painText = switch (true) do {
-            case (_pain > PAIN_UNCONSCIOUS): {
-                ACELSTRING(medical_treatment,Status_SeverePain);
+    if (GVAR(localPain) && ((_target == ACE_Player) || {!isPlayer _target})) then {
+        private _pain = GET_PAIN_PERCEIVED(_target);
+            if (_pain > 0) then {
+            private _painText = switch (true) do {
+                case (_pain > PAIN_UNCONSCIOUS): {
+                    ACELSTRING(medical_treatment,Status_SeverePain);
+                };
+                case (_pain > (PAIN_UNCONSCIOUS / 5)): {
+                    ACELSTRING(medical_treatment,Status_Pain);
+                };
+                default {
+                    ACELSTRING(medical_treatment,Status_MildPain);
+                };
             };
-            case (_pain > (PAIN_UNCONSCIOUS / 5)): {
-                ACELSTRING(medical_treatment,Status_Pain);
-            };
-            default {
-                ACELSTRING(medical_treatment,Status_MildPain);
-            };
+            _entries pushBack [localize _painText, [1, 1, 1, 1]];
+        } else {
+            if (ACEGVAR(medical_gui,showInactiveStatuses)) then {_entries pushBack [localize ACELSTRING(medical_treatment,Status_NoPain), _nonissueColor];};
         };
-        _entries pushBack [localize _painText, [1, 1, 1, 1]];
     } else {
-        if (ACEGVAR(medical_gui,showInactiveStatuses)) then {_entries pushBack [localize ACELSTRING(medical_treatment,Status_NoPain), _nonissueColor];};
+        private _pain = GET_PAIN_PERCEIVED(_target);
+            if (_pain > 0) then {
+            private _painText = switch (true) do {
+                case (_pain > PAIN_UNCONSCIOUS): {
+                    ACELSTRING(medical_treatment,Status_SeverePain);
+                };
+                case (_pain > (PAIN_UNCONSCIOUS / 5)): {
+                    ACELSTRING(medical_treatment,Status_Pain);
+                };
+                default {
+                    ACELSTRING(medical_treatment,Status_MildPain);
+                };
+            };
+            _entries pushBack [localize _painText, [1, 1, 1, 1]];
+        } else {
+            if (ACEGVAR(medical_gui,showInactiveStatuses)) then {_entries pushBack [localize ACELSTRING(medical_treatment,Status_NoPain), _nonissueColor];};
+        };
     };
 };
 

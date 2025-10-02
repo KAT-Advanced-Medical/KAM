@@ -78,7 +78,7 @@ class CfgWeapons {
         picture = QPATHTOF(ui\ndcKit.paa);
         ACE_isMedicalItem = 1;
         class ItemInfo: CBA_MiscItem_ItemInfo {
-            mass = 2;
+            mass = 1;
         };
     };
     class kat_stethoscope: ACE_ItemCore {
@@ -91,7 +91,7 @@ class CfgWeapons {
         picture = QPATHTOF(ui\steth.paa);
         ACE_isMedicalItem = 1;
         class ItemInfo: CBA_MiscItem_ItemInfo {
-            mass = 6;
+            mass = 4;
         };
     };
 
@@ -105,7 +105,7 @@ class CfgWeapons {
         picture = QPATHTOF(ui\BVM.paa);
         ACE_isMedicalItem = 1;
         class ItemInfo: CBA_MiscItem_ItemInfo {
-            mass = 8;
+            mass = 6;
         };
     };
     class kat_pocketBVM: ACE_ItemCore {

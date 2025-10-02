@@ -106,7 +106,7 @@ if (
         private _ammoCfg = configFile >> "CfgAmmo" >> _ammo;
         GET_NUMBER(_ammoCfg >> "explosive",0) > 0 ||
         {GET_NUMBER(_ammoCfg >> "indirectHit",0) > 0} ||
-        (_newDamage > 0.25)
+        (_newDamage > 0.25 && !(_ammo isKindOf "BulletBase"))
     }
 ) exitWith {
     private _newDamage = _newDamage * 3;

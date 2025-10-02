@@ -71,7 +71,7 @@ if (_patient getVariable ["kat_AEDXPatient_PFH", -1] isEqualTo -1) then {
                 };
                 
                 if (GVAR(AED_X_VitalsMonitor_BloodPressureInterval) isEqualTo 0) then {
-                    _bp = _patient getVariable [QACEGVAR(medical,bloodPressure), [0,0]];
+                    _bp = _patient call FUNC(getBloodPressure);
                 } else {
                     _bp = _patient getVariable [QGVAR(StoredBloodPressure), [0,0]];
                 };
@@ -111,7 +111,7 @@ if (_patient getVariable ["kat_AEDXPatient_PFH", -1] isEqualTo -1) then {
         _patient setVariable [QGVAR(AED_X_VitalsStatus), _status, true];
         if (_patient getVariable [QGVAR(AED_X_VitalsMonitor_Connected), false] && GVAR(BPInterval)) then { // Store new BP
             if !(_tourniquetApplied) then {
-                _patient setVariable [QGVAR(StoredBloodPressure), (_patient getVariable [QACEGVAR(medical,bloodPressure), [0,0]]), true];
+                _patient setVariable [QGVAR(StoredBloodPressure), [_patient] call FUNC(getBloodPressure), true];
             } else {
                 _patient setVariable [QGVAR(StoredBloodPressure), [0,0], true];
             };

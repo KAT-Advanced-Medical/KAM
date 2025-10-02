@@ -117,7 +117,7 @@ if (_adjustments isNotEqualTo []) then {
             _deleted = true;
             _adjustments set [_forEachIndex, objNull];
         } else {
-            if (_linear) then {
+            if (_linear == "true") then {
                 _effectRatio = 1;
             } else {
                 _effectRatio = (((_timeInSystem / _timeTillMaxEffect) ^ 2) min 1) * (_maxTimeInSystem - _timeInSystem) / _maxTimeInSystem;

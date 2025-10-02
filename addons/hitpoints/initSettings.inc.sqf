@@ -80,6 +80,14 @@
     true
 ] call CBA_fnc_addSetting;
 
+[
+    QGVAR(InternalBleedingChance),
+    "SLIDER",
+    [LLSTRING(SETTING_InternalBleedingChance), LLSTRING(SETTING_InternalBleedingChance_DESC)],
+    [CBA_SETTINGS_CAT, LSTRING(Subcatagory_Catastrophic_Injuries)],
+    [0, 100, 10, 0],
+    true
+] call CBA_fnc_addSetting;
 
 [
     QGVAR(CatastrophicEnable),

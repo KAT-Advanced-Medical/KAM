@@ -32,19 +32,19 @@ params ["_patient"];
             };
                 if (_PenthroxOverdoseTarget > 6) exitWith {
                     [{
+                        params ["_patient"];
                         if (random 25 < 1) then {
                         private _randomValue = [3, 4];
                         private _randomRhythm = selectRandom _randomValue;
-                        _patient setVariable [QEGVAR(circulation,cardiacArrestType), _randomRhythm];
+                        _patient setVariable [QEGVAR(circulation,cardiacArrestType), _randomRhythm, true];
                         };
                     }, [_patient], 20] call CBA_fnc_waitAndExecute;
                     [_idPFH] call CBA_fnc_removePerFrameHandler;
                 };
                 private _surfaceArea = (_patient getVariable [QGVAR(lungSurfaceArea), 400]) - 5;
-                _patient setVariable [QGVAR(lungSurfaceArea), _surfaceArea];
+                _patient setVariable [QGVAR(lungSurfaceArea), _surfaceArea, true];
                 private _respRate = _patient getVariable [VAR_BREATHING_RATE, 15];
                 _patient setVariable [VAR_BREATHING_RATE, (_respRate + 1), true];
-                if ((random 1000) < 1) then {_patient setDamage 1;};
         }, 20, [_patient,0]] call CBA_fnc_addPerFrameHandler;
 }, [_patient], 20] call CBA_fnc_waitAndExecute;
 [{
@@ -79,7 +79,7 @@ params ["_patient"];
                     [_idPFH] call CBA_fnc_removePerFrameHandler;
                 };
                 private _surfaceArea = (_patient getVariable [QGVAR(lungSurfaceArea), 400]) + 5;
-                _patient setVariable [QGVAR(lungSurfaceArea), _surfaceArea];
+                _patient setVariable [QGVAR(lungSurfaceArea), _surfaceArea, true];
         }, 60, [_patient,_PenthroxOverdoseTarget]] call CBA_fnc_addPerFrameHandler;
 }, [_patient], 150] call CBA_fnc_waitUntilAndExecute;
 

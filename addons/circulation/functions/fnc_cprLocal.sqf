@@ -83,7 +83,7 @@ private _fnc_advRhythm = {
     {
         case "Epinephrine":
         {
-            _epiBoost = _epiBoost + (1.1 * (_dose / 10));
+            _epiBoost = _epiBoost + (1.25 * (_dose / 10));
         };
         case "Lidocaine":
         {
@@ -169,7 +169,7 @@ if !(GVAR(enable_CPR_Chances)) then {
     };
 } else {
     if (_reviveObject in ["LUCAS"]) then {
-        if (_epiBoost isEqualTo 1.5) then {
+        if (_epiBoost > 1.5) then {
         _chance = _chance + (2 ^ _CPRcount);
 
         _CPRcount = _CPRcount + 0.01;
@@ -198,7 +198,7 @@ if !(GVAR(enable_CPR_Chances)) then {
 
     } else {
         
-        if (_epiBoost isEqualTo 1.5) then {
+        if (_epiBoost > 1.5) then {
         _chance = _chance + (2 ^ _CPRcount);
 
         _CPRcount = _CPRcount + 1;

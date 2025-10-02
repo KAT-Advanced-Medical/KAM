@@ -51,6 +51,7 @@ class ACE_Medical_Treatment_Actions {
         icon = QPATHTOF(ui\Abdominal_Pad.paa);
         items[] = {"kat_Abdominal_Pad"};
         allowedSelections[] = {"Body"};
+        condition = "true";
         callbackSuccess = QFUNC(ABDPad);
         treatmentTime = 8;
     };
@@ -93,6 +94,15 @@ class ACE_Medical_Treatment_Actions {
         condition = QFUNC(canWrapWound);
         treatmentTime = QFUNC(getWrapTime);
         callbackSuccess = QFUNC(wrapWound);
+        items[] = {"kat_Roller_Gauze"};
+    };
+    class Roller_GauzeCoag: BasicBandage {
+        displayName = CSTRING(Roller_GauzeCoag);
+        displayNameProgress = CSTRING(Roller_GauzeCoag_Progress);
+        icon = QPATHTOF(ui\Roller_Gauze.paa);
+        condition = QFUNC(canWrapWoundCoag);
+        treatmentTime = QFUNC(getWrapTimeCoag);
+        callbackSuccess = QFUNC(wrapWoundCoag);
         items[] = {"kat_Roller_Gauze"};
     };
     class Ice_Pack: BasicBandage {

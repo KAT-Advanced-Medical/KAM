@@ -51,6 +51,7 @@ class ACE_ADDON(Medical_Treatment) {
         sedation = "false";
         paralysis = "false";
         bloodBased = "false";
+        linear = "false";
 
         class Epinephrine {
             painReduce = 0;
@@ -966,6 +967,7 @@ class ACE_ADDON(Medical_Treatment) {
             incompatibleMedication[] = {};
             onOverDose = "";
             maximumEffectiveDose = 30;
+            weightBased = "true";
         };
         class syringe_Flumazenil {
             maxDose = 40;
@@ -980,6 +982,7 @@ class ACE_ADDON(Medical_Treatment) {
             incompatibleMedication[] = {};
             onOverDose = "";
             maximumEffectiveDose = 30;
+            weightBased = "true";
         };
         class syringe_Lidocaine {
             maxDose = 60;
@@ -994,6 +997,7 @@ class ACE_ADDON(Medical_Treatment) {
             incompatibleMedication[] = {};
             onOverDose = "";
             maximumEffectiveDose = 30;
+            weightBased = "true";
         };
         class syringe_Ketamine {
             maxDose = 40;
@@ -1001,6 +1005,7 @@ class ACE_ADDON(Medical_Treatment) {
             incompatibleMedication[] = {};
             onOverDose = "";
             maximumEffectiveDose = 30;
+            weightBased = "true";
         };
         class syringe_Nalbuphine {
             maxDose = 40;
@@ -1008,6 +1013,7 @@ class ACE_ADDON(Medical_Treatment) {
             incompatibleMedication[] = {};
             onOverDose = "";
             maximumEffectiveDose = 30;
+            weightBased = "true";
         };
         class syringe_Morphine {
             maxDose = 30;
@@ -1015,6 +1021,7 @@ class ACE_ADDON(Medical_Treatment) {
             incompatibleMedication[] = {};
             onOverDose = "";
             maximumEffectiveDose = 30;
+            weightBased = "true";
         };
         class syringe_Adenosine {
             maxDose = 60;
@@ -1043,6 +1050,7 @@ class ACE_ADDON(Medical_Treatment) {
             incompatibleMedication[] = {};
             onOverDose = "";
             maximumEffectiveDose = 30;
+            weightBased = "true";
         };
         class syringe_Succinylcholine {
             maxDose = 30;
@@ -1050,6 +1058,7 @@ class ACE_ADDON(Medical_Treatment) {
             incompatibleMedication[] = {};
             onOverDose = "";
             maximumEffectiveDose = 30;
+            weightBased = "true";
         };
         class syringe_Rocuronium {
             maxDose = 30;
@@ -1057,6 +1066,7 @@ class ACE_ADDON(Medical_Treatment) {
             incompatibleMedication[] = {};
             onOverDose = "";
             maximumEffectiveDose = 30;
+            weightBased = "true";
         };
         class syringe_Sugammadex  {
             maxDose = 30;

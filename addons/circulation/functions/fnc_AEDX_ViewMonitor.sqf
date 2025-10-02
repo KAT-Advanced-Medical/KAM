@@ -262,7 +262,7 @@ GVAR(PulseRateReady) = true;
         if (GVAR(AED_X_VitalsMonitor_BloodPressureInterval) > 0) then {
             _bp = GVAR(AEDX_MonitorTarget) getVariable [QGVAR(StoredBloodPressure), [0,0]];
         } else {
-            _bp = GVAR(AEDX_MonitorTarget) getVariable [QACEGVAR(medical,bloodPressure), [0,0]];
+            _bp = GVAR(AEDX_MonitorTarget) call FUNC(getBloodPressure);
         };
     } else {
         if !(GVAR(AEDX_MonitorTarget) getVariable [QGVAR(heartRestart), false]) then {
@@ -278,7 +278,7 @@ GVAR(PulseRateReady) = true;
                 if (GVAR(AED_X_VitalsMonitor_BloodPressureInterval) > 0) then {
                     _bp = GVAR(AEDX_MonitorTarget) getVariable [QGVAR(StoredBloodPressure), [0,0]];
                 } else {
-                    _bp = GVAR(AEDX_MonitorTarget) getVariable [QACEGVAR(medical,bloodPressure), [0,0]];
+                    _bp = GVAR(AEDX_MonitorTarget) call FUNC(getBloodPressure);
                 };
             };
         };

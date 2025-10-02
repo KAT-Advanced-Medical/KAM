@@ -27,17 +27,17 @@ private _output = LLSTRING(RecoveryPosition_Ready);
 if (GVAR(RecoveryPosition_TimeToDrain) > 0) then {
    [{
     params ["_args", "_idPFH"];
-    _args params ["_unit"];
-    private _occlusionState = _unit getVariable [QGVAR(occlusion), [0, 0, 0]];
-    if (!(alive _unit)) exitWith {
+    _args params ["_patient"];
+    private _occlusionState = _patient getVariable [QGVAR(occlusion), [0, 0, 0]];
+    if (!(alive _patient)) exitWith {
         [_idPFH] call CBA_fnc_removePerFrameHandler;
     };
-    private _occlusionState = _unit getVariable [QGVAR(occlusion), [0, 0, 0]];
-    _occlusionState set [0, ((_occlusion select 0) - selectRandom [1, 2]) max 0];
-    _occlusionState set [1, ((_occlusion select 1) - selectRandom [1, 2]) max 0];
-    _occlusionState set [2, ((_occlusion select 2) - selectRandom [1, 2]) max 0];
-    _unit setVariable [QGVAR(occlusion), _occlusionState, true];
-}, GVAR(RecoveryPosition_TimeToDrain), [_unit]] call CBA_fnc_addPerFrameHandler;
+    private _occlusionState = _patient getVariable [QGVAR(occlusion), [0, 0, 0]];
+    _occlusionState set [0, ((_occlusionState select 0) - selectRandom [1, 2]) max 0];
+    _occlusionState set [1, ((_occlusionState select 1) - selectRandom [1, 2]) max 0];
+    _occlusionState set [2, ((_occlusionState select 2) - selectRandom [1, 2]) max 0];
+    _patient setVariable [QGVAR(occlusion), _occlusionState, true];
+}, GVAR(RecoveryPosition_TimeToDrain), [_patient]] call CBA_fnc_addPerFrameHandler;
 };
 
 [{
