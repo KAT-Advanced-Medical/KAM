@@ -48,7 +48,7 @@ if (_doseNormalized > _weightNormalized) then {
                         }, [_patient], 15] call CBA_fnc_waitAndExecute;
                         [_idPFH] call CBA_fnc_removePerFrameHandler;
                     };
-                    private _depression = _patient getVariable [QEGVAR(pharma,opioidDepression)] - 0.08;
+                    private _depression = (_patient getVariable [QEGVAR(pharma,opioidDepression), 0]) - 0.08;
                     _patient setVariable [QEGVAR(pharma,opioidDepression), _depression, true];
             }, 10, [_patient,0]] call CBA_fnc_addPerFrameHandler;
     }, [_patient], 10] call CBA_fnc_waitAndExecute;};

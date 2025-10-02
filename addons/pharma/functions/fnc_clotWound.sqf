@@ -178,17 +178,17 @@ private _fnc_clotWound = {
                     _factorCountToRemove = _factorCountToRemove * 0.5
                 };
                 [{
-                    params["_unit", "_bodyPart", "_selectionName", "_bandageToUse", "_logString", "_factorCountToRemove", "_chance", "_txaEffectiveness"];
+                    params["_unit", "_bodyPart", "_selectionName", "_bandageToUse", "_logString", "_factorCountToRemove", "_chance", "_txaEffectiveness", "_woundClassID"];
 
                     private _bodyFluid = GET_BODY_FLUID(_unit);
                     private _coagulationFactor = GET_BODY_FLUID_PLATELETS(_unit);
                     if (_coagulationFactor <= 0) exitWith {};
                     private _bodyPartN = ALL_BODY_PARTS find _bodyPart;
-                    private _woundIndex = _openWoundsOnPart findIf {(_x select 1) > 0 && (_x select 2) > 0};
-                    if (_woundIndex == -1) exitWith {};
                     if ([_unit,_bodyPartN] call EFUNC(pharma,occlusionCheck) && GVAR(coagulation_tourniquetBlock)) exitWith {};
                     private _openWounds = GET_OPEN_WOUNDS(_unit);
                     private _openWoundsOnPart = _openWounds getOrDefault [_bodyPart, []];
+                    private _woundIndex = _openWoundsOnPart findIf {(_x select 1) > 0 && (_x select 2) > 0};
+                    if (_woundIndex == -1) exitWith {};
                     private _txaMult = linearConversion [0, 1, _txaEffectiveness, 1, 1.5];
                     private _chance = _chance * _txaMult;
                     if (HAS_APPLIEDPRESSURE_ON(_unit,_bodyPartN) && GVAR(pressureInfluenceCoag)) then {
@@ -208,7 +208,7 @@ private _fnc_clotWound = {
                         [_unit, "activity", _logString, [(toLower _selectionName)]] call ACEFUNC(medical_treatment,addToLog);
                     };
                 },
-                [_unit, _bodyPart, _selectionName, _bandageToUse, _logString, _factorCountToRemove, _chance, _txaEffectiveness], _woundClotTime] call CBA_fnc_waitAndExecute;
+                [_unit, _bodyPart, _selectionName, _bandageToUse, _logString, _factorCountToRemove, _chance, _txaEffectiveness, _woundClassID], _woundClotTime] call CBA_fnc_waitAndExecute;
             };
         } forEach _wounds;
 };
@@ -230,7 +230,7 @@ private _fnc_clotWound = {
     private _openWounds = _unit getVariable [VAR_OPEN_WOUNDS, createHashMap];
     private _pulse = _unit getVariable [VAR_HEART_RATE, 80];
     private _coagulationFactor = GET_BODY_FLUID_PLATELETS(_unit);
-    private _txaEffectiveness = [_patient, "TXA"] call ACEFUNC(medical_status,getMedicationCount) select 1;
+    private _txaEffectiveness = [_unit, "TXA"] call ACEFUNC(medical_status,getMedicationCount) select 1;
     private _hasWoundToBandageArray = [];
 
     if (_openWounds isEqualTo createHashMap) exitWith {}; // Exit when hashmap not initialized (Will not work when hashmap is set, cause ace only changes value of "woundCount" to 0)

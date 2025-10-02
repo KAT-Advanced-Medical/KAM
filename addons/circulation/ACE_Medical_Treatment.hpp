@@ -47,7 +47,6 @@ class ACE_Medical_Treatment {
         //is this drug a sedation drug
         sedation = "false";
         paralysis = "false";
-        bloodBased = "false";
         ph = 0;
 
 
@@ -292,7 +291,6 @@ class ACE_Medical_Treatment {
             rateCoef = 1.3;
             type = "Etomidate_IVInfusion";
             incompatibleMedication[] = {};
-            bloodBased = "true";
         };
         class Doxapram_IVInfusion: SalineIV_250 {
             painReduce = 0;
@@ -383,7 +381,6 @@ class ACE_Medical_Treatment {
             rateCoef = 1.3;
             type = "Etomidate_IVInfusion";
             incompatibleMedication[] = {};
-            bloodBased = "true";
         };
         class Doxapram_IVInfusion100: SalineIV_250 {
             painReduce = 0;

@@ -40,7 +40,7 @@ private _hrAdjust = -20 + floor random ((-20 - -20) + 1);
                     [_idPFH] call CBA_fnc_removePerFrameHandler;
                 };
                 private _medications = _patient getVariable [QACEGVAR(medical,medications), []];
-                private _depression = _patient getVariable [QEGVAR(pharma,opioidDepression)] + 0.08;
+                private _depression = (_patient getVariable [QEGVAR(pharma,opioidDepression), 0]) + 0.08;
                 _patient setVariable [QEGVAR(pharma,opioidDepression), _depression, true];
         }, 30, [_patient,0]] call CBA_fnc_addPerFrameHandler;
 }, [_patient], 30] call CBA_fnc_waitAndExecute;

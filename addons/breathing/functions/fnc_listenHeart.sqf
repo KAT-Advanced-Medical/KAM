@@ -83,4 +83,4 @@ variantDelay = 0;
             };
         };
     };
-}, 0, [_medic,_patient,_volume,_side]] call CBA_fnc_addPerFrameHandler;
+}, 0, [_medic,_patient,_volume]] call CBA_fnc_addPerFrameHandler;

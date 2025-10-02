@@ -22,7 +22,7 @@ params ["_medic", "_patient", "_bodyPart"];
 TRACE_1("checkLimb1",_bodyPart);
 private _partIndex = ALL_BODY_PARTS find _bodyPart;
 if (_partindex == 3) then {
-    private _pelvicFracture = _unit getVariable [QGVAR(pelvicFracture), 0];
+    private _pelvicFracture = _patient getVariable [QGVAR(pelvicFracture), 0];
     _typeLabel = switch (true) do {
         case (_pelvicFracture == -1): { LSTRING(stabilizedPelvicFracture_log) };
         case (_pelvicFracture == 0): { LSTRING(noPelvicFracture_log) };

@@ -19,7 +19,6 @@ PREP(getList);
 PREP(gui_updateBodyImage);
 PREP(gui_updateInjuryListPart);
 PREP(gui_updateInjuryListWounds);
-PREP(handleBreathing);
 PREP(handleBreathingConditions);
 PREP(handlePneumothoraxDeterioration);
 PREP(handlePneumothoraxTreatment);

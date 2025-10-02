@@ -32,6 +32,7 @@ params ["_patient"];
             };
                 if (_PenthroxOverdoseTarget > 6) exitWith {
                     [{
+                        params ["_patient"];
                         if (random 25 < 1) then {
                         private _randomValue = [3, 4];
                         private _randomRhythm = selectRandom _randomValue;
@@ -44,7 +45,6 @@ params ["_patient"];
                 _patient setVariable [QGVAR(lungSurfaceArea), _surfaceArea, true];
                 private _respRate = _patient getVariable [VAR_BREATHING_RATE, 15];
                 _patient setVariable [VAR_BREATHING_RATE, (_respRate + 1), true];
-                if ((random 1000) < 1) then {_patient setDamage 1;};
         }, 20, [_patient,0]] call CBA_fnc_addPerFrameHandler;
 }, [_patient], 20] call CBA_fnc_waitAndExecute;
 [{

@@ -36,15 +36,6 @@ params ["_unit", "_chanceIncrease", "_side"];
             private _occlusion = ((_unit getVariable [QEGVAR(airway,occlusion), [0, 0, 0]]) findIf { _x > 4 }) != -1;
             private _obstruction = ((_unit getVariable [QEGVAR(airway,obstruction), [0, 0, 0]]) findIf { _x != 0 }) != -1;
             private _activeChestSeal = (_unit getVariable [QGVAR(activeChestSeal), [false, false]]) select _side;
-            if (EGVAR(hypothermia,baroPressureEnable)) then {
-                if (EGVAR(hypothermia,useACEpressure)) then {
-                private _hPa = _altitude call ACEFUNC(weather,calculateBarometricPressure);
-                _baroPressure = _hPa * 0.750062;
-            } else {
-                _baroPressure = 760 * exp((-(_altitude)) / 8400);
-                };
-            };
-
             private _breathing = !(_obstruction) && !(_occlusion) && ((GET_BREATHING_RATE(_unit) > 5) || (_unit getVariable [QEGVAR(breathing,BVMInUse), false]));
                 if (_pneumothoraxState select _side > 0) then {
                     // If patient is dead, treated, or already deteriorated to advanced pneumothorax, kill the PFH
@@ -86,15 +77,19 @@ params ["_unit", "_chanceIncrease", "_side"];
                             [_idPFH] call CBA_fnc_removePerFrameHandler;
                         };
                         private _baroMult = 1;
-                        if (GVAR(baroPressureEnable)) then {
-                            if (GVAR(useACEpressure)) then {
+                        if (EGVAR(hypothermia,baroPressureEnable)) then {
+                            private _altitude = (getPosASL _unit) select 2;
+                            if (EGVAR(hypothermia,useACEpressure)) then {
                             private _hPa = _altitude call ACEFUNC(weather,calculateBarometricPressure);
                             private _baroPressure = _hPa * 0.750062;
+                            private _defaulthPa = 0 call ACEFUNC(weather,calculateBarometricPressure);
+                            private _defaultbaroPressure = _defaulthPa * 0.750062;
+                            _baroMult = _baroPressure / _defaultbaroPressure;
                         } else {
                             private _baroPressure = 760 * exp((-(_altitude)) / 8400);
-                            };
                             private _defaultBaroPressure = 760 * exp((-(0)) / 8400);
-                            _baroMult = _defaultBaroPressure / _baroPressure;
+                            _baroMult = _baroPressure / _defaultBaroPressure;
+                            };
                         };
                         private _delay = (GVAR(deterioratingPneumothorax_interval) * _baroMult) * random [0.8, 1, 1.3];
                         [_idPFH, _delay] call CBA_fnc_setPerFrameHandlerDelay;

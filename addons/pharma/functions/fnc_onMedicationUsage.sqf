@@ -31,7 +31,7 @@ TRACE_3("onMedicationUsage",_target,_className,_incompatibleMedication);
             private _currentWeight = _target getVariable [QEGVAR(vitals,currentWeight), 80];
             _maxDoseMult = linearConversion [60, 100, _currentWeight, 0.6, 1.4, true];
         };
-        private _unitMedEffectivness = _patient getVariable [QGVAR(medicationEffectivness), 1];
+        private _unitMedEffectivness = _target getVariable [QGVAR(medicationEffectivness), 1];
         private _maxDoseFixed = _maxDose * _maxDoseMult * _unitMedEffectivness;
         TRACE_2("onMedUsage1",_maxDoseFixed,_medicationName);
 
@@ -47,7 +47,7 @@ TRACE_3("onMedicationUsage",_target,_className,_incompatibleMedication);
             private _limit = _maxDoseFixed + (floor random _maxDoseDeviation);
             if (_currentDose > _limit) then {
                 TRACE_1("exceeded max dose",_currentDose);
-                [_target, _className, _currentDose, _limit, _incompatibleMed] call FUNC(overDose);
+                [_target, _className, _currentDose, _limit, _incompatibleMedication] call FUNC(overDose);
             };
             {
             _x params ["_xMed", "_xLimit"];

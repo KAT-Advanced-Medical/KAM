@@ -53,14 +53,18 @@ params ["_unit", "_chanceIncrease", "_side"];
                         };
                         private _baroMult = 1;
                         if (EGVAR(hypothermia,baroPressureEnable)) then {
+                            private _altitude = (getPosASL _unit) select 2;
                             if (EGVAR(hypothermia,useACEpressure)) then {
                             private _hPa = _altitude call ACEFUNC(weather,calculateBarometricPressure);
                             private _baroPressure = _hPa * 0.750062;
-                        } else {
+                            private _defaulthPa = 0 call ACEFUNC(weather,calculateBarometricPressure);
+                            private _defaultbaroPressure = _defaulthPa * 0.750062;
+                            _baroMult = _baroPressure / _defaultBaroPressure;
+                            } else {
                             private _baroPressure = 760 * exp((-(_altitude)) / 8400);
-                            };
                             private _defaultBaroPressure = 760 * exp((-(0)) / 8400);
                             _baroMult = _baroPressure / _defaultBaroPressure;
+                            };
                         };
                         private _delay = (GVAR(chestSealTreatmentLoopTime) * _baroMult) * random [0.8, 1, 1.3];
                         private _surface = (_unit getVariable [QGVAR(lungSurfaceArea), 400]);

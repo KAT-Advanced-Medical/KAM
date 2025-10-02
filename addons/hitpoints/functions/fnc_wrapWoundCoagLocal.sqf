@@ -34,7 +34,7 @@ private _newWrappedWounds = _wrappedWounds getOrDefault [_bodyPart, []];
     private _classIndex = _id / 10;
      private _className = ACEGVAR(medical_damage,woundClassNames) select _classIndex;
 
-    if (("BloodClot" in _bandage) && !(_className == "InternalBleeding")) then {
+    if (("BloodClot" in _bandage) && (_className != "InternalBleeding")) then {
         // Create wrapped wound
         private _newClassID = _id + 0.01;
         private _newBandage = _bandage + "_wrapped";

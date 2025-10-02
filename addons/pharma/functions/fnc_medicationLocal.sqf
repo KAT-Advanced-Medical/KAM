@@ -140,10 +140,11 @@ if (_isOccluded) exitWith {
         _weightMult = _weightMult * _lc;
         TRACE_2("weightMult",_weightMult,_lc);
     };
-    private _currentDose = [_patient, _medication] call ACEFUNC(medical_status,getMedicationCount) select 0;
+    private _medicationParts = _classname splitString "_";
+    private _medicationName = _medicationParts select 1;
+    private _maximumEffectiveDose = 40;
+    private _currentDose = [_patient, _medicationName] call ACEFUNC(medical_status,getMedicationCount) select 0;
     if !(_classname in ["CWMP", "Painkillers", "Penthrox", "Carbonate", "BubbleWrap", "Caffeine", "Pervitin", "Naloxone"]) then {
-        private _medicationParts = _classname splitString "_";
-        private _medicationName = _medicationParts select 1;
         private _upperMed = toUpper _medicationName;
         if (_upperMed select [count _upperMed - 4] isEqualTo "AUTO") then {
             _medicationName = _medicationName select [0, count _medicationName - 4];
@@ -153,11 +154,11 @@ if (_isOccluded) exitWith {
         };
         private _medicationMEDName = format ["syringe_%1", _medicationName];
         private _doseConfig = _defaultConfig >> _medicationMEDName;
-        private _maximumEffectiveDose = GET_NUMBER(_doseConfig >> "maximumEffectiveDose",getNumber (_defaultConfig >> "maximumEffectiveDose"));
+        _maximumEffectiveDose = GET_NUMBER(_doseConfig >> "maximumEffectiveDose",getNumber (_defaultConfig >> "maximumEffectiveDose"));
     } else {
         _maximumEffectiveDose = GET_NUMBER(_medicationConfig >> "maximumEffectiveDose",getNumber (_defaultConfig >> "maximumEffectiveDose"));
     };
-    TRACE_4("medicationEffectivness",_currentDose,_medication,_maximumEffectiveDose,_startDose);
+    TRACE_4("medicationEffectivness",_currentDose,_medicationName,_maximumEffectiveDose,_startDose);
     private _unitMedEffectivness = _patient getVariable [QGVAR(medicationEffectivness), 1];
     private _maximumEffectiveDose = _maximumEffectiveDose * _unitMedEffectivness;
     private _doseMult = 1;

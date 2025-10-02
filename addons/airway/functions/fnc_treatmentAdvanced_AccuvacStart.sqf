@@ -140,7 +140,7 @@ GVAR(suction_timeOut) = true;
                 GVAR(loopSuction) = true;
             }] call CBA_fnc_waitUntilAndExecute;
         };
-    }, 0, [_medic, _patient, _notInVehicle, _usedItem]] call CBA_fnc_addPerFrameHandler;
+    }, 0, [_medic, _patient, _notInVehicle]] call CBA_fnc_addPerFrameHandler;
 
     [{GVAR(suction_timeOut) = false;}, [], 1] call CBA_fnc_waitAndExecute;
 }, [_medic, _patient, _notInVehicle, _usedItem], 2] call CBA_fnc_waitAndExecute;
