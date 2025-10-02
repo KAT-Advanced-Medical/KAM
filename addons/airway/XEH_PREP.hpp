@@ -15,6 +15,7 @@ PREP(handleAwakePuking);
 PREP(handlePuking);
 PREP(handleRecoveryPosition);
 PREP(handleRespawn);
+PREP(handleUncon);
 PREP(init);
 PREP(startHeadTurning);
 PREP(treatmentAdvanced_AccuvacStart);

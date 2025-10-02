@@ -23,13 +23,14 @@ params ["_unit"];
     params ["_unit"];
     private _isUnconscious = _unit getVariable ["ACE_isUnconscious", false];
     private _alive = alive _unit;
-    if (!_alive || _isUnconscious) exitWith {};
+    private _occlusion = _unit getVariable [QGVAR(occlusion), [0, 0, 0]];
+    if (!_alive || _isUnconscious || ((selectMax _occlusion)  == 0)) exitWith {};
     _unit setVariable [QGVAR(occlusion), [0, 0, 0], true];
     _unit setVariable [QGVAR(hasExternallyPuked), true, true];
     [{
         params ["_unit"];
         _unit setVariable [QGVAR(hasExternallyPuked), false, true];
-    }, [_unit], 30] call CBA_fnc_waitAndExecute;
+    }, [_unit], 60] call CBA_fnc_waitAndExecute;
     private _sound = selectRandom [
         QPATHTOF_SOUND(sounds\puking1.wav),
         QPATHTOF_SOUND(sounds\puking2.wav),
@@ -37,5 +38,5 @@ params ["_unit"];
     ];
     TRACE_3("Puke",_sound,_unit,(getPosASL _unit));
     playSound3D [_sound, _unit, false, getPosASL _unit, 8, 1, 15];
-}, [_unit], 10] call CBA_fnc_waitAndExecute;
+}, [_unit], 3] call CBA_fnc_waitAndExecute;
 

@@ -66,7 +66,7 @@ if ((((_target getVariable [QGVAR(obstruction), [0, 0, 0]]) findIf { _x != 0 }) 
     private _text = LSTRING(TraumaticObstruction_Display);
     _entries pushBack [localize _text, [0.1, 1, 1, 1]];
 };
-if (_target getVariable [QGVAR(hasExternallyPuked), true]) then{
+if (_target getVariable [QGVAR(hasExternallyPuked), true] && (_selectionN in [0, 1, 2])) then{
     private _text = LSTRING(HasExternallyPuked);
     _entries pushBack [localize _text, [0.1, 1, 1, 1]];
 };
