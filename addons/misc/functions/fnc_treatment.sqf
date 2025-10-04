@@ -26,7 +26,7 @@ params ["_medic", "_patient", "_bodyPart", "_classname", "_extraArgs"];
 if (uiNamespace getVariable [QACEGVAR(interact_menu,cursorMenuOpened), false]) exitWith {
     [ACEFUNC(medical_treatment,treatment), _this] call CBA_fnc_execNextFrame;
 };
-
+private _isInZeus = !isNull findDisplay 312;
 if !(call ACEFUNC(medical_treatment,canTreat)) exitWith {false};
 
 private _config = configFile >> "ace_medical_treatment_actions" >> _classname;
@@ -45,7 +45,9 @@ private _treatmentTime = if (isText (_config >> "treatmentTime")) then {
 };
 
 if (_treatmentTime == 0) exitWith {false};
-
+if (_isInZeus) then {
+    _treatmentTime = 1;
+};
 if (GVAR(usePainInTreatment)) then {
     private _pain = GET_PAIN_PERCEIVED(_medic);
     private _treatMult = linearConversion [0, 1, _pain, 1, 2];
@@ -80,8 +82,6 @@ if (alive _patient) then {
 //Old Ace Ending here
 
 _userAndItem params ["_itemUser", "_usedItem", "_createLitter"];
-
-private _isInZeus = !isNull findDisplay 312;
 
 if (_medic isNotEqualTo player || {!_isInZeus}) then {
     // Get treatment animation for the medic
