@@ -20,10 +20,6 @@
 
 params ["_target"];
 
-// Check if the data was already created
-private _dogTagData = _target getVariable QACEGVAR(dogtags,dogtagData);
-if (!isNil "_dogTagData") exitWith {_dogTagData};
-
 // Create dog tag data once for the unit: nickname, code (eg. 135-13-900) and blood type
 private _targetName = [_target, false, true] call ACEFUNC(common,getName);
 private _targetBlood = _target call EFUNC(circulation,bloodType);
