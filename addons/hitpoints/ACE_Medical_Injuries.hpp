@@ -32,16 +32,16 @@ class ACE_Medical_Injuries {
         // Slicing wounds made with a sharp instrument, leaving even edges. They may be as minimal as a paper cut or as significant as a surgical incision.
         class Cut {
             bleeding = 0.01;
-            pain = 0.1;
+            pain = 0.2;
         };
         // Also called tears, these are separating wounds that produce ragged edges. They are produced by a tremendous force against the body, either from an internal source as in childbirth, or from an external source like a punch.
         class Laceration {
             bleeding = 0.03;
-            pain = 0.2;
+            pain = 0.3;
         };
         // Also called velocity wounds, they are caused by an object entering the body at a high speed, typically a bullet or small peices of shrapnel.
         class VelocityWound {
-            bleeding = 0.15;
+            bleeding = 0.12;
             pain = 0.9;
             causeLimping = 1;
             causeFracture = 1;
@@ -49,7 +49,7 @@ class ACE_Medical_Injuries {
         // Deep, narrow wounds produced by sharp objects such as nails, knives, and broken glass.
         class PunctureWound {
             bleeding = 0.03;
-            pain = 0.4;
+            pain = 0.5;
             causeLimping = 1;
         };
         // Pain wound that is caused by making or being in contact with heat
@@ -61,8 +61,7 @@ class ACE_Medical_Injuries {
         // wound that is caused by Non-Penetrative Blasts, cannot be bandaged externally.
         class InternalBleeding {
             bleeding = 0.02;
-            pain = 0.4;
-            causeFracture = 1;
+            pain = 0.1;
         };
     };
 
@@ -85,7 +84,7 @@ class ACE_Medical_Injuries {
 
         class bullet {
             // bullets only create multiple wounds when the damage is very high
-            thresholds[] = {{20, 10}, {10, 6}, {4.5, 2}, {3, 1}, {0, 1}};
+            thresholds[] = {{20, 8}, {18, 6}, {15, 5},  {12, 4}, {10, 3}, {8, 2}, {5, 1}, {0, 1}};
             selectionSpecific = 1;
             class woundHandlers: woundHandlers {
                 GVAR(eviscerationHit) = QFUNC(woundsHandlerEviscerationHit);
@@ -120,10 +119,6 @@ class ACE_Medical_Injuries {
                 // velocity wounds will tend to be medium or large
                 sizeMultiplier = 0.9;
             };
-            class InternalBleeding {
-                weighting[] = {{1.7, 1}, {1.1, 1}, {0.7, 0}};
-                sizeMultiplier = 0.5;
-            };
         };
         class grenade {
             // at low damage numbers, chance to create no wounds - makes it a bit more random instead of consistently covering people in bruises
@@ -150,10 +145,6 @@ class ACE_Medical_Injuries {
                 sizeMultiplier = 2;
                 painMultiplier = 0.9;
             };
-            class InternalBleeding {
-                weighting[] = {{0.7, 2}, {0.35, 1}, {0.35, 0}};
-                sizeMultiplier = 0.6;
-            };
         };
         class explosive {
             // explosives create more and smaller wounds than grenades
@@ -179,10 +170,6 @@ class ACE_Medical_Injuries {
                 weighting[] = {{1, 2}, {0.35, 1}};
                 sizeMultiplier = 2;
                 painMultiplier = 0.9;
-            };
-            class InternalBleeding {
-                weighting[] = {{1, 1}, {0.8, 0}};
-                sizeMultiplier = 0.5;
             };
         };
         class shell {
@@ -213,14 +200,11 @@ class ACE_Medical_Injuries {
                 sizeMultiplier = 2;
                 painMultiplier = 0.9;
             };
-            class InternalBleeding {
-                weighting[] = {{1.5, 1}, {1.1, 1}, {0.7, 0}};
-                sizeMultiplier = 1;
-            };
         };
         class vehiclehit {
             // vehicle explosions are usually caused by explosive damage and should behave similarly
-            thresholds[] = {{6, 3}, {4.5, 2}, {2, 2}, {0.8, 1}, {0.2, 1}, {0, 0}};
+            thresholds[] = {{6, 4}, {4.5, 3}, {2, 2}, {0.8, 1}, {0.2, 1}, {0, 0}};
+            selectionSpecific = 0;
             class woundHandlers: woundHandlers {
                 ACEGVAR(medical_damage,woundsHandlerVehiclehit) = QFUNC(woundsHandlerVehiclehit);
                 GVAR(eviscerationHit) = QFUNC(woundsHandlerEviscerationHit);
@@ -235,6 +219,12 @@ class ACE_Medical_Injuries {
             class Cut {
                 weighting[] = {{1.5, 1}, {0.35, 1}, {0, 0}};
             };
+            class VelocityWound {
+                weighting[] = {{1.5, 1}, {0.35, 1}, {0, 0}};
+            };
+            class PunctureWound {
+                weighting[] = {{1.5, 1}, {0.35, 1}, {0, 0}};
+            };
             class Laceration {
                 weighting[] = {{1.5, 1}, {0.35, 1}, {0, 0}};
             };
@@ -242,10 +232,6 @@ class ACE_Medical_Injuries {
                 weighting[] = {{1, 2}, {0.35, 1}};
                 sizeMultiplier = 2;
                 painMultiplier = 0.9;
-            };
-            class InternalBleeding {
-                weighting[] = {{1, 1}, {0.8, 0}};
-                sizeMultiplier = 0.5;
             };
         };
         class vehiclecrash {
@@ -334,10 +320,6 @@ class ACE_Medical_Injuries {
             };
             class Cut {
                 weighting[] = {{0.1, 1}, {0.1, 0}};
-            };
-            class InternalBleeding {
-                weighting[] = {{0.1, 1}, {0.1, 0}};
-                sizeMultiplier = 0.3;
             };
         };
         class stab {

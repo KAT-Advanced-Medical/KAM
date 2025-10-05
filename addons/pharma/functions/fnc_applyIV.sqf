@@ -101,6 +101,7 @@ switch (_usedItem) do {
                 _morphineEffectiveness = _morphineEffectiveness max _effectiveness;
             };
         } forEach _medStack;
+        _painLevel = [0.6, 0.7, 0.8] select (floor random 3);
         if (
             _fentanylEffectiveness <= 0.8 &&
             _ketamineEffectiveness <= 0.8 &&
@@ -108,7 +109,6 @@ switch (_usedItem) do {
             _morphineEffectiveness <= 0.8 &&
             _localAnesthesia <= 0.8
         ) then {
-            _painLevel = [0.6, 0.7, 0.8] select (floor random 3);
             [_patient, _painLevel] call ACEFUNC(medical_status,adjustPainLevel);
         };
         [{
@@ -152,6 +152,7 @@ switch (_usedItem) do {
                 _morphineEffectiveness = _morphineEffectiveness max _effectiveness;
             };
         } forEach _medStack;
+        _painLevel = [0.6, 0.7, 0.8] select (floor random 3);
         if (
             _fentanylEffectiveness <= 0.8 &&
             _ketamineEffectiveness <= 0.8 &&
@@ -159,7 +160,6 @@ switch (_usedItem) do {
             _morphineEffectiveness <= 0.8 &&
             _localAnesthesia <= 0.8
         ) then {
-            _painLevel = [0.6, 0.7, 0.8] select (floor random 3);
             [_patient, _painLevel] call ACEFUNC(medical_status,adjustPainLevel);
         };
         [{
@@ -179,9 +179,12 @@ switch (_usedItem) do {
         if (random 100 < (GVAR(IVFailures) * 2)) then {
             [_patient, [0.4, 0.5, 0.7] select (floor random 3)] call ACEFUNC(medical_status,adjustPainLevel);
             if (random 100 < 20) then {
-                if (QEGVAR(breathing,advPtxEnable)) then {
-                    if (floor (random 100) < GVAR(hptxChance)) then {
+                if (EGVAR(breathing,advPtxEnable)) then {
+                    private _pneumothoraxState = _patient getVariable [QGVAR(pneumothorax), [0, 0]];
+                    private _tensionState = _patient getVariable [QGVAR(tensionpneumothorax), [false, false]];
+                    private _hemoState = _patient getVariable [QGVAR(hemopneumothorax), [false, false]];
                     private _side = selectRandom [0, 1];
+                    if (floor (random 100) < GVAR(hptxChance)) then {
                     _hemoState set [_side, true];
                     _patient setVariable [QEGVAR(breathing,hemopneumothorax), _hemoState, true];
 

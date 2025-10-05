@@ -31,5 +31,5 @@ _katClassName = "kat_" + _medicationType;
 _player removeItem _katClassName;
 _player addItem _infusionClassName;
 private _infusionDisplayName = getText (configFile >> "CfgWeapons" >> _infusionClassName >> "displayName");
-hint format [LELSTRING(GUI,Prepared_Infusion), _infusionDisplayName];
-[{hint ""}, [], 5] call CBA_fnc_waitAndExecute;
+private _name = format [LELSTRING(GUI,Prepared_Infusion), _infusionDisplayName];
+[_name, 2, _player, 10] call ACEFUNC(common,displayTextStructured);

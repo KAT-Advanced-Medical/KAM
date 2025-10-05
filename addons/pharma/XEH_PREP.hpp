@@ -61,6 +61,7 @@ PREP(treatmentAdvanced_FentanylOverdoseLocal);
 PREP(treatmentAdvanced_FentanylPatch);
 PREP(treatmentAdvanced_FentanylPatchCheck);
 PREP(treatmentAdvanced_FentanylPatchLocal);
+PREP(treatmentAdvanced_FentanylPatchRemoveCheck);
 PREP(treatmentAdvanced_FlumazenilLocal);
 PREP(treatmentAdvanced_FlumazenilOverdoseLocal);
 PREP(treatmentAdvanced_Flush);

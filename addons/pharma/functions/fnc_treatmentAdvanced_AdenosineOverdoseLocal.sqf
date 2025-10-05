@@ -39,7 +39,7 @@ params ["_patient"];
                     [_idPFH] call CBA_fnc_removePerFrameHandler;
                 };
                 private _surfaceArea = (_patient getVariable [QEGVAR(breathing,lungSurfaceArea), 400]) - 10;
-                _patient setVariable [QEGVAR(breathing,lungSurfaceArea), _surfaceArea];
+                _patient setVariable [QEGVAR(breathing,lungSurfaceArea), _surfaceArea, true];
         }, 15, [_patient, 0]] call CBA_fnc_addPerFrameHandler;
 }, _patient, 15] call CBA_fnc_waitAndExecute;
 [{
@@ -77,7 +77,7 @@ params ["_patient"];
                     [_idPFH] call CBA_fnc_removePerFrameHandler;
                 };
                 private _surfaceArea = (_patient getVariable [QEGVAR(breathing,lungSurfaceArea), 400]) + 10;
-                _patient setVariable [QEGVAR(breathing,lungSurfaceArea), _surfaceArea];
+                _patient setVariable [QEGVAR(breathing,lungSurfaceArea), _surfaceArea, true];
         }, 10, [_patient,0]] call CBA_fnc_addPerFrameHandler;
     }, [_patient], 10] call CBA_fnc_waitAndExecute;
 }, [_patient]] call CBA_fnc_waitUntilAndExecute;

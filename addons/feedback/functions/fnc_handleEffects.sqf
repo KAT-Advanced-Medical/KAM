@@ -47,10 +47,8 @@ private _catastrophicState = ACE_player getVariable [QEGVAR(airway,catastrophicA
 private _hasCatastrophicAirway = ((_catastrophicState select 0) || (_catastrophicState select 1));
 private _airway = true;
 private _breathing = true;
-private _tension = ACE_player getVariable [QEGVAR(breathing,tensionpneumothorax), [false, false]];
-private _hemo = ACE_player getVariable [QEGVAR(breathing,hemopneumothorax), [false, false]];
 private _paralysis = ACE_player getVariable [QEGVAR(breathing,paralysis), 0] > 0.1;
-if ((_tension select 0) || (_tension select 1) || (_hemo select 0) || (_hemo select 1) || _paralysis) then {
+if (_paralysis) then {
     _breathing = false;
 };
 private _noSurgicalAirway = (ACE_player getVariable [QEGVAR(airway,airway_item), ""] isNotEqualTo "Surgical_Airway");
@@ -64,7 +62,7 @@ private _airwayState = ((!_airway) || (!_breathing));
 
 [
     !_unconscious,
-    linearConversion [GVAR(effectLowSpO2), EGVAR(breathing,SpO2_dieValue), _spO2, 0, 1, true]
+    linearConversion [90, EGVAR(breathing,SpO2_dieValue), _spO2, 0, 1, true]
 ] call FUNC(effectLowSpO2);
 [!_unconscious, _airwayState] call FUNC(effectAirways);
 private _time = ACE_player getVariable [QGVAR(airwayInjuryColorTime), 0];

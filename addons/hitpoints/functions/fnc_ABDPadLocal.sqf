@@ -26,11 +26,12 @@ if (_newEviscerationLevel == 0) then {
 
 
 [{
+    params ["_patient","_bodyPart"];
 private _bandagedWounds = GET_BANDAGED_WOUNDS(_patient);
 private _bandagedWoundsOnPart = _bandagedWounds get _bodyPart;
 TRACE_1("WrapAllWounds1",_bandagedWoundsOnPart);
 
-private _includedTypes = ["Compressed_Gauze", "Abdominal_Pad"];
+private _includedTypes = ["Compressed_Gauze", "Abdominal_Pad", "fourByfour_Gauze"];
 
 private _wrappedAny = false;
 
@@ -61,9 +62,11 @@ private _wrappedAny = false;
         private _woundIndex = _forEachIndex;
         private _wound = _newEntry;
         private _bandage = _oldBandage + "_wrapped";
+        private _patient = GVAR(ABDpatient);
+        private _bodyPart = GVAR(ABDbodyPart);
 
-        TRACE_6("WrapWound",_patient,_impact,_bodyPart,_woundIndex,_wound,_bandage);
-        [_patient, _impact, _bodyPart, _woundIndex, _wound, _bandage, false] call ACEFUNC(medical_treatment,handleBandageOpening);
+        TRACE_6("WrapWound",patient,_impact,bodyPart,_woundIndex,_wound,_bandage);
+        [patient, _impact, bodyPart, _woundIndex, _wound, _bandage, false] call ACEFUNC(medical_treatment,handleBandageOpening);
 
         _wrappedAny = true;
     };

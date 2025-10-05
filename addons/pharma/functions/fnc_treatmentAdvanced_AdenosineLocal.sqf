@@ -28,6 +28,7 @@ private _amiodaroneEffectiveness = 0;
         _amiodaroneEffectiveness = _amiodaroneEffectiveness max _effectiveness;
     };
 } forEach _medStack;
+_time = 1;
 if (_amiodaroneEffectiveness > 0.2) then {
     _time = random(12) + 12
 } else {
@@ -36,5 +37,9 @@ if (_amiodaroneEffectiveness > 0.2) then {
 
 [{ 
     params ["_patient", "_cardiacRhythm"];
-    _patient setVariable [QEGVAR(circulation,cardiacArrestType), _cardiacRhythm];
+    if (((random 1000) < 1) && (_cardiacRhythm > 2))  then {
+        _patient setVariable [QEGVAR(circulation,cardiacArrestType), 0, true];
+    } else {
+        _patient setVariable [QEGVAR(circulation,cardiacArrestType), _cardiacRhythm, true];
+    };
 }, [_patient, _cardiacRhythm], _time] call CBA_fnc_waitAndExecute;

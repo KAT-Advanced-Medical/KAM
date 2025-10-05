@@ -42,5 +42,6 @@ private _newDamages = [];
     _newDamages pushBack [_damageMap get _x, _x, _damageToApply];
 } forEach (keys _damageMap); // micro-optimization again, two 'get's is still faster than iterating over a hashmap
 
-TRACE_2("Vehicle explosion handled, passing damage",_newDamages,_damageMap);
-[_unit, _newDamages, _typeOfDamage] //return
+TRACE_1("Vehicle explosion handled, passing damage",_newDamages);
+_this set [1, _newDamages];
+_this

@@ -14,7 +14,11 @@
  *
  * Public: No
  */
-[] call FUNC(updateSyringes);
+params ["_isForced"];
+private _requiredMedicalLevel = missionNamespace getVariable [QEGVAR(pharma,medLvl_PrepSyringe), 2];
+private _isMedic = [ACE_player, _requiredMedicalLevel] call ACEFUNC(common,isMedic);
+if (_isMedic || _isForced) then {
+    [] call FUNC(updateSyringes);
 [{[] call FUNC(updateMedications);}, [], 0.1] call CBA_fnc_waitAndExecute;
 [{[] call FUNC(updateDoses);}, [], 0.1] call CBA_fnc_waitAndExecute;
 [{ACEGVAR(medical_gui,target) setVariable ["kat_SyringeMenu", true, true];
@@ -22,3 +26,4 @@ ctrlShow [71300, true];
 ctrlShow [71301, true];
 ctrlShow [71311, true];
 ctrlShow [71310, false];}, []] call CBA_fnc_execNextFrame;
+};

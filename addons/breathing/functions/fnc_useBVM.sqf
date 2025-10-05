@@ -98,9 +98,8 @@ if (dialog) then { // If another dialog is open (medical menu) close it
 };
 
 private _notInVehicle = isNull objectParent _medic;
-_totalProvided = 1;
 GVAR(BVM_loop) = false;
-
+totalProvided = 1;
 if (_notInVehicle) then {
     [_medic, "AinvPknlMstpSnonWnonDnon_AinvPknlMstpSnonWnonDnon_medic", 1] call ACEFUNC(common,doAnimation);
     GVAR(BVM_loop) = true;
@@ -154,7 +153,7 @@ GVAR(BVM_timeOut) = true;
             };
     
 
-            [_patient, "activity", LSTRING(Activity_BVM), [[_medic, false, true] call ACEFUNC(common,getName), _bvmType, _totalProvided]] call ACEFUNC(medical_treatment,addToLog);
+            [_patient, "activity", LSTRING(Activity_BVM), [[_medic, false, true] call ACEFUNC(common,getName), _bvmType, totalProvided]] call ACEFUNC(medical_treatment,addToLog);
             [LLSTRING(UseBVM_Cancelled), 1.5, _medic] call ACEFUNC(common,displayTextStructured);
         };
 
@@ -175,7 +174,7 @@ GVAR(BVM_timeOut) = true;
                                 };
                             } forEach magazinesAmmo _medic;
 
-                            if (count _heldPreferredTanks > 0) then {
+                            if (_heldPreferredTanks isNotEqualTo []) then {
                                 _carriedTanks = _heldPreferredTanks;
                             };
                         } else {
@@ -186,7 +185,7 @@ GVAR(BVM_timeOut) = true;
                             } forEach magazinesAmmo _medic;
                         };
 
-                        if (count _carriedTanks > 0) then {
+                        if (_carriedTanks isNotEqualTo []) then {
                             _patient setVariable [QGVAR(oxygenTankConnected), true, true];
 
                             private _tank = _carriedTanks select - 1;
@@ -215,7 +214,7 @@ GVAR(BVM_timeOut) = true;
                             };
                         } forEach (magazinesAmmoCargo _vehicle);
 
-                        if (count _oxygenTanks > 0) then {
+                        if (_oxygenTanks isNotEqualTo []) then {
                             _patient setVariable [QGVAR(oxygenTankConnected), true, true];
 
                             private _tank = _oxygenTanks select - 1;
@@ -248,7 +247,6 @@ GVAR(BVM_timeOut) = true;
             }, {}, [_patient], 5,
             {
                 GVAR(BVM_timeOut) = false;
-                _totalProvided = _totalProvided + 1;
             }] call CBA_fnc_waitUntilAndExecute;
         };
 
@@ -261,6 +259,7 @@ GVAR(BVM_timeOut) = true;
                 !(_patient getVariable [QGVAR(BVMInUse), false]);
             }, {}, [_patient], 9, {
                 GVAR(BVM_loop) = true;
+                totalProvided = totalProvided + 1;
             }] call CBA_fnc_waitUntilAndExecute;
         };
     }, 0, [_medic, _patient, _pocket, _useOxygen, _oxygenOrigin, _notInVehicle]] call CBA_fnc_addPerFrameHandler;

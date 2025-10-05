@@ -18,7 +18,7 @@
  *
  * Public: No
  */
-
+params ["", "_patient", "_bodyPart"];
 private _wounds = (GET_OPEN_WOUNDS(_patient)) getOrDefault [_bodyPart, []];
 private _canBandage = false;
 

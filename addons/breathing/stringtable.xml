@@ -418,7 +418,7 @@
             <Dutch>Hemopneumothorax / spanningspneumothorax minimum behandelingsniveau</Dutch>
         </Key>
         <Key ID="STR_KAT_Breathing_HEMOPNEUMOTHORAX_TREATMENT_LEVEL_DESCRIPTION">
-            <English>The minimum medical level required for someone to be able to perform the Needle Decompression and Drain Fluids treatment actions, used to treat Hemothorax or Tension Pneumothorax.</English>
+            <English>The minimum medical level required for someone to be able to perform the Needle Decompression and Drain Fluids treatment actions (With an AAT kit), used to treat Hemothorax or Tension Pneumothorax.</English>
             <Czech>Minimální úroveň zdravotnického výcviku potřebná k tomu, aby někdo mohl provést ošetření Dekompresní Jehlou, která je součástí AAT Sady a používá se k léčbě hemotoraxu či tenzního pneumotoraxu.</Czech>
             <French>Niveau médical minimum requis pour utiliser une aiguille de décompression et effectuer une aspiration des fluides, pour traiter un hémopneumothorax ou un pneumothorax sous tension</French>
             <Spanish>El nivel médico mínimo requerido para que alguien pueda usar un AAT Kit, que se utiliza para tratar un hemotórax/neumotórax a tensión</Spanish>
@@ -434,6 +434,12 @@
             <Turkish>Hemotoraks veya Tansiyon Pnömotoraksı tedavi etmek için kullanılan İğne Dekompresyonu ve Boşaltma Sıvıları tedavi eylemlerini gerçekleştirebilmek için gerekli minimum tıbbi seviye.</Turkish>
             <Finnish>Vähimmäiskoulutustaso, joka vaaditaan, jotta joku pystyy suorittamaan neulan dekompression ja nesteenpoiston, jota käytetään hemothoraksin tai jännitysilmarintain hoitoon</Finnish>
             <Dutch>Het minimaal benodigde trainingsniveau voor het uitvoeren van de naalddecompressie- en vloeistof afvoerende handelingen, benodigd om een hemo- en spanningspneumothorax te behandelen</Dutch>
+        </Key>
+        <Key ID="STR_KAT_Breathing_TENSIONPNEUMOTHORAX_TREATMENT_LEVEL">
+            <English>Medical level to use a NCD kit</English>
+        </Key>
+        <Key ID="STR_KAT_Breathing_TENSIONPNEUMOTHORAX_TREATMENT_LEVEL_DESCRIPTION">
+            <English>The minimum medical level required for someone to be able to perform the Needle Decompression (NCD) treatment actions, used to treat Tension Pneumothorax.</English>
         </Key>
         <Key ID="STR_KAT_Breathing_Hemopneumothorax">
             <English>Hemopneumothorax</English>
@@ -3456,6 +3462,9 @@
         </Key>
         <Key ID="STR_KAT_Breathing_chestTube_display">
             <English>Chest Tube</English>
+        </Key>
+        <Key ID="STR_KAT_Breathing_auscultateHeart_display">
+            <English>Auscultate Heart Sounds</English>
         </Key>
     </Package>
 </Project>

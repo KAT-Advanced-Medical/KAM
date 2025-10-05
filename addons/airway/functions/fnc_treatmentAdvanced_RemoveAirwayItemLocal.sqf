@@ -18,10 +18,17 @@
  */
 
 params ["_medic", "_patient", "_item"];
-
+private _occlusion = _patient getVariable [QGVAR(occlusion), [0, 0, 0]];
+private _total = 0; { _total = _total + _x } forEach _occlusion;
+private _airwayVomit = floor (_total/3);
+for "_i" from 0 to 2 do {
+    _occlusion set [_i, _airwayVomit];
+};
+_patient setVariable [QGVAR(occlusion), _occlusion, true];
 _patient setVariable [QGVAR(airway_item), "", true];
 _patient setVariable [QGVAR(airway), false, true];
 _patient setVariable [QGVAR(airwayStatus), [0, 0, 0], true];
+_patient setVariable [QGVAR(occlusionMitigation), [0, 0, 0], true];
 _patient call FUNC(handleAirway);
 
 if !(GVAR(ReusableAirwayItems)) exitWith {};

@@ -33,7 +33,7 @@ if (_syncValues) then {
 
 //Get Blood Loss and Blood Volume from previous cycle
 private _bloodVolume = GET_SIMPLE_BLOOD_VOLUME(_unit);
-private _woundBloodLoss = GET_WOUND_BLEEDING(_unit);
+private _woundBloodLoss = GET_BLOOD_LOSS(_unit);
 
 private _bloodVolume = _bloodVolume - (_woundBloodLoss / 100);
 _unit setVariable [VAR_BLOOD_VOL, _bloodVolume, _syncValues];

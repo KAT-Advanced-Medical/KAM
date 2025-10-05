@@ -210,6 +210,17 @@
 ] call CBA_fnc_addSetting;
 
 //Settable list for using Larynxtubus per medical class
+
+[
+    QGVAR(capnographEnable),
+    "CHECKBOX",
+    [LLSTRING(SETTING_ENABLE_capnograph),LLSTRING(SETTING_ENABLE_capnograph_DESC)],
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_Items)],
+    [true],
+    true
+] call CBA_fnc_addSetting;
+
+
 [
     QGVAR(medLvl_Larynxtubus),
     "LIST",

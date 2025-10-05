@@ -51,6 +51,7 @@ class ACE_Medical_Treatment_Actions {
         icon = QPATHTOF(ui\Abdominal_Pad.paa);
         items[] = {"kat_Abdominal_Pad"};
         allowedSelections[] = {"Body"};
+        condition = "true";
         callbackSuccess = QFUNC(ABDPad);
         treatmentTime = 8;
     };
@@ -93,7 +94,16 @@ class ACE_Medical_Treatment_Actions {
         condition = QFUNC(canWrapWound);
         treatmentTime = QFUNC(getWrapTime);
         callbackSuccess = QFUNC(wrapWound);
-        items[] = {"kat_Compressed_Gauze"};
+        items[] = {"kat_Roller_Gauze"};
+    };
+    class Roller_GauzeCoag: BasicBandage {
+        displayName = CSTRING(Roller_GauzeCoag);
+        displayNameProgress = CSTRING(Roller_GauzeCoag_Progress);
+        icon = QPATHTOF(ui\Roller_Gauze.paa);
+        condition = QFUNC(canWrapWoundCoag);
+        treatmentTime = QFUNC(getWrapTimeCoag);
+        callbackSuccess = QFUNC(wrapWoundCoag);
+        items[] = {"kat_Roller_Gauze"};
     };
     class Ice_Pack: BasicBandage {
         displayName = CSTRING(Ice_Pack);
@@ -228,6 +238,7 @@ class ACE_Medical_Treatment_Actions {
         displayNameProgress = CSTRING(Converting_HastyTourniquet);
         treatmentTime = QGVAR(treatmentTimeHastyTourniquet);
         treatmentTimeTrained = QGVAR(treatmentTimeTrainedHastyTourniquet);
+        items[] = {};
         condition = QUOTE([ARR_2(_patient,_bodyPart)] call FUNC(convertTourniquetCheck));
         callbackSuccess = QUOTE([ARR_8(_medic,_patient,_bodyPart,_classname,_itemUser,_usedItem,_createLitter,2)] call FUNC(convertTourniquet));
     };

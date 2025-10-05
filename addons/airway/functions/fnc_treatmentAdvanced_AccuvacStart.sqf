@@ -116,9 +116,9 @@ GVAR(suction_timeOut) = true;
                 if (((_patient getVariable [QGVAR(occlusion), [0, 0, 0]]) findIf { _x > 1 }) != -1) then {
                     if(random 100 < GVAR(probability_suction)) then {
                         private _occlusionState = _patient getVariable [QGVAR(occlusion), [0, 0, 0]];
-                            _occlusionState set [0, ((_occlusionState select 0) - selectRandom [1, 2]) max 0];
-                            _occlusionState set [1, ((_occlusionState select 1) - selectRandom [1, 2]) max 0];
-                            _occlusionState set [2, ((_occlusionState select 2) - selectRandom [1, 2]) max 0];
+                            _occlusionState set [0, ((_occlusionState select 0) - selectRandom [1, 2, 3]) max 0];
+                            _occlusionState set [1, ((_occlusionState select 1) - selectRandom [1, 2, 3]) max 0];
+                            _occlusionState set [2, ((_occlusionState select 2) - selectRandom [1, 2, 3]) max 0];
                             _patient setVariable [QGVAR(occlusion), _occlusionState, true];
                         [LLSTRING(suction_info), 2, _medic] call ACEFUNC(common,displayTextStructured);
                     } else {
@@ -140,7 +140,7 @@ GVAR(suction_timeOut) = true;
                 GVAR(loopSuction) = true;
             }] call CBA_fnc_waitUntilAndExecute;
         };
-    }, 0, [_medic, _patient, _notInVehicle, _usedItem]] call CBA_fnc_addPerFrameHandler;
+    }, 0, [_medic, _patient, _notInVehicle]] call CBA_fnc_addPerFrameHandler;
 
     [{GVAR(suction_timeOut) = false;}, [], 1] call CBA_fnc_waitAndExecute;
 }, [_medic, _patient, _notInVehicle, _usedItem], 2] call CBA_fnc_waitAndExecute;

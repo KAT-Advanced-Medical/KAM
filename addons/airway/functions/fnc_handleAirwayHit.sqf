@@ -24,7 +24,7 @@
 params ["_unit", "_allDamages"];
 (_allDamages select 0) params ["_engineDamage", "_bodyPart"]; // selection-specific
 
-if !(GVAR(AirwayEnable)) exitWith {
+if !(GVAR(enable)) exitWith {
     TRACE_1("NotEnable",_bodyPart);
     _this
 };

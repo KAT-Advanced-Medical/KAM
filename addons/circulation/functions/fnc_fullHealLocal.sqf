@@ -33,6 +33,7 @@ _patient setVariable [QGVAR(OxygenationPeriod), 0, true];
 
 _patient setVariable [QGVAR(tourniquetTime), [0,0,0,0,0,0,0,0,0,0,0,0]];
 _patient setVariable [QGVAR(defaultHeartRate), [_patient] call FUNC(generateDefaultHeartRate), true];
+_patient setVariable [QGVAR(bloodtype), [_patient, _patient, true] call FUNC(generateBloodType), true];
 
 // PaCO2, PaO2, O2 Sat, HCO3, pH, ETCO2
 _patient setVariable [QGVAR(bloodGas), DEFAULT_BLOOD_GAS, true];

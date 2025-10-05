@@ -20,6 +20,15 @@
 ] call CBA_fnc_addSetting;
 
 [
+    QGVAR(usePainInTreatment),
+    "CHECKBOX",
+    [LLSTRING(SETTING_PainInTreatment), LLSTRING(SETTING_PainInTreatment_DESC)],
+    [CBA_SETTINGS_CAT, ELSTRING(GUI,SubCategory_Basic)],
+    [false],
+    true
+] call CBA_fnc_addSetting;
+
+[
     QGVAR(treatmentTimeDetachTourniquet),
     "SLIDER",
     [LLSTRING(SETTING_treatmentTimeDetachTourniquet)],

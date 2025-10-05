@@ -51,8 +51,8 @@ switch (_randomNumber) do {
                     };
                     [_idPFH] call CBA_fnc_removePerFrameHandler;
                 };
-                private _depression = _unit getVariable [QEGVAR(pharma,opioidDepression)] + 0.08;
-                _patient setVariable [QEGVAR(pharma,opioidDepression), _depression];
+                private _depression = (_patient getVariable [QEGVAR(pharma,opioidDepression), 0]) + 0.08;
+                _patient setVariable [QEGVAR(pharma,opioidDepression), _depression, true];
                 }, 30, [_patient,0]] call CBA_fnc_addPerFrameHandler;
         }, [_patient], 30] call CBA_fnc_waitAndExecute;
     };
@@ -89,8 +89,8 @@ switch (_randomNumber) do {
                     };
                     [_idPFH] call CBA_fnc_removePerFrameHandler;
                 };
-                private _depression = _unit getVariable [QEGVAR(pharma,opioidDepression)] + 0.08;
-                _patient setVariable [QEGVAR(pharma,opioidDepression), _depression];
+                private _depression = (_patient getVariable [QEGVAR(pharma,opioidDepression), 0]) + 0.08;
+                _patient setVariable [QEGVAR(pharma,opioidDepression), _depression, true];
                 }, 30, [_patient,0]] call CBA_fnc_addPerFrameHandler;
         }, [_patient], 30] call CBA_fnc_waitAndExecute;
     };
@@ -122,10 +122,10 @@ switch (_randomNumber) do {
                     };
                     [_idPFH] call CBA_fnc_removePerFrameHandler;
                 };
-                private _depression = _unit getVariable [QEGVAR(pharma,opioidDepression)] + 0.08;
-                _patient setVariable [QEGVAR(pharma,opioidDepression), _depression];
-                private _rr = _patient getVariable [QEGVAR(breathing,respiratoryRateMultiplier), 1] - 0.06;
-                _patient setVariable [QEGVAR(breathing,respiratoryRateMultiplier), _rr];
+                private _depression = (_patient getVariable [QEGVAR(pharma,opioidDepression), 0]) + 0.08;
+                _patient setVariable [QEGVAR(pharma,opioidDepression), _depression, true];
+                private _rr = (_patient getVariable [QEGVAR(breathing,respiratoryRateMultiplier), 1]) - 0.06;
+                _patient setVariable [QEGVAR(breathing,respiratoryRateMultiplier), _rr, true];
                 }, 30, [_patient,0]] call CBA_fnc_addPerFrameHandler;
         }, [_patient], 30] call CBA_fnc_waitAndExecute;
     };
@@ -157,15 +157,15 @@ switch (_randomNumber) do {
                     };
                     [_idPFH] call CBA_fnc_removePerFrameHandler;
                 };
-                private _depression = _unit getVariable [QEGVAR(pharma,opioidDepression)] + 0.08;
-                _patient setVariable [QEGVAR(pharma,opioidDepression), _depression];
-                private _rr = _patient getVariable [QEGVAR(breathing,respiratoryRateMultiplier), 1] - 0.06;
-                _patient setVariable [QEGVAR(breathing,respiratoryRateMultiplier), _rr];
+                private _depression = (_patient getVariable [QEGVAR(pharma,opioidDepression), 0]) + 0.08;
+                _patient setVariable [QEGVAR(pharma,opioidDepression), _depression, true];
+                private _rr = (_patient getVariable [QEGVAR(breathing,respiratoryRateMultiplier), 1]) - 0.06;
+                _patient setVariable [QEGVAR(breathing,respiratoryRateMultiplier), _rr, true];
                 }, 30, [_patient,0]] call CBA_fnc_addPerFrameHandler;
         }, [_patient], 30] call CBA_fnc_waitAndExecute;
     };
 };
-if QEGVAR(feedback,effectOverdose) then
+if (EGVAR(feedback,effectOverdose)) then
     {
     PP_wetD = ppEffectCreate ["WetDistortion",300];
     PP_wetD ppEffectEnable true;

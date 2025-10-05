@@ -39,7 +39,7 @@ _medListBox ctrlAddEventHandler ["LBSelChanged", {
             private _medParts = _capturedMedItem splitString "_";
             private _medBaseName = _medParts select -1;
             switch (true) do {
-                case (_syringeType in ["salineIV100", "salineIV"]): {
+                case (_syringeType in ["salineiv100", "salineiv"]): {
                     private _index = _doseListBox lbAdd LLSTRING(Infusion);
                     _doseListBox lbSetValue [_index, 4];
                 };

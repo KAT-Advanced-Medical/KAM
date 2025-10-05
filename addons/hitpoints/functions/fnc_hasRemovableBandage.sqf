@@ -17,7 +17,7 @@
  */
 
 params ["_unit", "_bodyPart", "_bandageType"];
-private _bandagedWounds = GET_BANDAGED_WOUNDS(_patient);
+private _bandagedWounds = GET_BANDAGED_WOUNDS(_unit);
 private _bandagedWoundsOnPart = _bandagedWounds getOrDefault [_bodyPart, []];
 
 private _hasRemovableBandage = false;

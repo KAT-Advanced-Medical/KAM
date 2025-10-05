@@ -259,7 +259,8 @@ class ACE_Medical_Treatment_Actions {
         allowSelfTreatment = 1;
         items[] = {"kat_phenylephrineAuto"};
         condition = "";
-        treatmentTime = 5;
+        medicRequired = QGVAR(medLvl_PhenylephrineAuto);
+        treatmentTime = QGVAR(treatmentTime_PhenylephrineAuto);
         callbackSuccess = QFUNC(medication);
         sounds[] = {};
     };
@@ -564,6 +565,7 @@ class ACE_Medical_Treatment_Actions {
         items[] = {"kat_syringe_txa_10ml_10"};
         callbackSuccess = QFUNC(medication);
         removeFromInteractions = "true";
+        sounds[] = {};
     };
     class syringe_TXA_10ml_20: syringe_TXA_10ml_10 {
         displayName = KATPUSHCSTRING(txa,10ml,20);
@@ -1422,7 +1424,7 @@ class ACE_Medical_Treatment_Actions {
         medicRequired = QGVAR(medLvl_ApplyFentPatch);
         treatmentTime = QGVAR(treatmentTime_ApplyFentPatch);
         allowSelfTreatment = 1;
-        category = "advanced";
+        category = "medication";
         allowedSelections[] = {"Chest", "Neck", "LeftArm", "RightArm", "UpperLeftLeg", "UpperRightLeg", "UpperLeftArm", "UpperRightArm", "LeftLeg", "RightLeg"};
         items[] = {"kat_fentPatch"};
         condition = QUOTE(!([ARR_3(_player,_patient,_bodyPart)] call FUNC(treatmentAdvanced_FentanylPatchCheck)));
@@ -1432,12 +1434,12 @@ class ACE_Medical_Treatment_Actions {
     class RemoveFentPatch: ApplyFentPatch {
         displayName = CSTRING(Remove_FentPatch);
         displayNameProgress = CSTRING(Removing_FentPatch);
-        category = "advanced";
+        category = "medication";
         allowedSelections[] = {"Chest", "Neck", "LeftArm", "RightArm", "UpperLeftLeg", "UpperRightLeg", "UpperLeftArm", "UpperRightArm", "LeftLeg", "RightLeg"};
         treatmentTime = QGVAR(treatmentTime_ApplyFentPatch);
         medicRequired = 0;
         items[] = {};
-        condition = QUOTE(([ARR_3(_player,_patient,_bodyPart)] call FUNC(treatmentAdvanced_FentanylPatchCheck)));
+        condition = QUOTE(([ARR_3(_player,_patient,_bodyPart)] call FUNC(treatmentAdvanced_FentanylPatchRemoveCheck)));
         callbackSuccess = QFUNC(treatmentAdvanced_RemoveFentanylPatch);
         sounds[] = {};
     };

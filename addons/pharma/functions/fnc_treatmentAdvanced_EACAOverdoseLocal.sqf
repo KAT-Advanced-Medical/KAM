@@ -43,10 +43,10 @@ params ["_patient"];
                 private _surface = (_patient getVariable [QEGVAR(breathing,lungSurfaceArea), 400]);
                 if (_surface > 150) then {
                     private _surfaceArea = _surface - 10;
-                    _patient setVariable [QEGVAR(breathing,lungSurfaceArea), _surfaceArea];
+                    _patient setVariable [QEGVAR(breathing,lungSurfaceArea), _surfaceArea, true];;
                     };
                 private _bloodlevels = GET_BODY_FLUID(_patient);
-                _bloodlevels set [5, (_bloodlevels select 5) - 20];
+                _bloodlevels set [5, ((_bloodlevels select 5) - 20) max 0];
                 _patient setVariable [QEGVAR(circulation,bodyFluid), _bloodlevels, true];
                 if ((random 10000) < 1) then {_patient setDamage 1;};
         }, 15, [_patient, 0]] call CBA_fnc_addPerFrameHandler;

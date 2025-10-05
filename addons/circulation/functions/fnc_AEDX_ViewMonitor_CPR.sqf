@@ -226,7 +226,7 @@ private _dlg = uiNamespace getVariable ["KAT_Circulation_AEDX_Monitor_Display", 
         if (GVAR(AED_X_VitalsMonitor_BloodPressureInterval) > 0) then {
             _bp = GVAR(AEDX_MonitorTarget_Title) getVariable [QGVAR(StoredBloodPressure), [0,0]];
         } else {
-            _bp = GVAR(AEDX_MonitorTarget_Title) getVariable [QACEGVAR(medical,bloodPressure), [0,0]];
+            _bp = GVAR(AEDX_MonitorTarget_Title) call FUNC(getBloodPressure);
         };
     } else {
         if !(GVAR(AEDX_MonitorTarget_Title) getVariable [QGVAR(heartRestart), false]) then {
@@ -242,7 +242,7 @@ private _dlg = uiNamespace getVariable ["KAT_Circulation_AEDX_Monitor_Display", 
                 if (GVAR(AED_X_VitalsMonitor_BloodPressureInterval) > 0) then {
                     _bp = GVAR(AEDX_MonitorTarget_Title) getVariable [QGVAR(StoredBloodPressure), [0,0]];
                 } else {
-                    _bp = GVAR(AEDX_MonitorTarget_Title) getVariable [QACEGVAR(medical,bloodPressure), [0,0]];
+                    _bp = GVAR(AEDX_MonitorTarget_Title) call FUNC(getBloodPressure);
                 };
             };
         };

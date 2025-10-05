@@ -16,7 +16,8 @@
  */
 
 params ["_unit"];
-
+_result = false;
 if ((!(ACEGVAR(medical_statemachine,AIUnconsciousness))) && (!isPlayer _unit)) then {
-    GET_CONVERT_STATUS(_unit) != true
-}
+    _result = GET_CONVERT_STATUS(_unit) != true;
+};
+_result

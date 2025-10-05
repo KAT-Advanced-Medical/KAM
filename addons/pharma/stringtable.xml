@@ -4213,7 +4213,13 @@
             <English>IV Complications</English>
         </Key>
         <Key ID="STR_KAT_Pharma_IVComplications_Desc">
-            <English>Enables failures to place IVs and negative effects when overpushing fluids</English>
+            <English>Enables negative effects when overpushing fluids</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_LimbIVComplications">
+            <English>Limb IV Complications</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_LimbIVComplications_Desc">
+            <English>Enables failure to place IVs</English>
         </Key>
         <Key ID="STR_KAT_Pharma_IVFailures">
             <English>IV Failure Rate</English>
@@ -5934,6 +5940,36 @@
         </Key>
         <Key ID="STR_KAT_Pharma_fentpatchNearlyOut_MEDdisplay">
             <English>Fentanyl Patch (Depleted)</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_medLvl_PhenylephrineAuto">
+            <English>Med lvl req for Phenylephrine Autoinjector</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_treatmentTime_PhenylephrineAuto">
+            <English>Treatment time for Phenylephrine Autoinjector</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_SETTING_Coagulation_pressureInfluenceCoag">
+            <English>Pressure Affect Clots</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_SETTING_Coagulation_pressureInfluenceCoag_DESC">
+            <English>If enabled, applying pressure to that bodypart increases the chance of a clot forming</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_SETTING_Coagulation_chance_MinorWounds">
+            <English>Chance to clot Minor Wounds</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_SETTING_Coagulation_chance_MinorWounds_DESC">
+            <English>Base chance for a Minor wound to clot</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_SETTING_Coagulation_chance_MediumWounds">
+            <English>Chance to clot Medium Wounds</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_SETTING_Coagulation_chance_MediumWounds_DESC">
+            <English>Base chance for a Medium wound to clot</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_SETTING_Coagulation_chance_LargeWounds">
+            <English>Chance to clot Large Wounds</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_SETTING_Coagulation_chance_LargeWounds_DESC">
+            <English>Base chance for a Large wound to clot</English>
         </Key>
     </Package>
 </Project>

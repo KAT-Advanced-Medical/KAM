@@ -402,7 +402,7 @@
             <English>Select Upper Right Leg</English>
         </Key>
         <Key ID="STR_KAT_GUI_Status_SplintWrapped">
-            <English>Splint Wrapped</English>
+            <English>[Wrapped] Splinted</English>
         </Key>
         <Key ID="STR_KAT_GUI_Abrasion">
             <English>Scrape</English>
@@ -1038,6 +1038,12 @@
             <Korean>출혈 상태 표시</Korean>
             <Japanese>出血状態の表示</Japanese>
             <Chinesesimp>显示流血速度</Chinesesimp>
+        </Key>
+        <Key ID="STR_KAT_GUI_localPain_Description">
+            <English>Display if the patient has pain, if enabled pain will only be shown to the player experiencing it</English>
+        </Key>
+        <Key ID="STR_KAT_GUI_localPain_DisplayName">
+            <English>Local Pain Display</English>
         </Key>
     </Package>
 </Project>

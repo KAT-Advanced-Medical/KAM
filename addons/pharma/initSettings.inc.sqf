@@ -189,6 +189,15 @@
 ] call CBA_Settings_fnc_init;
 
 [
+    QGVAR(LimbIVComplications),
+    "CHECKBOX",
+    [LLSTRING(LimbIVComplications), LLSTRING(LimbIVComplications_Desc)],
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_ApplyIV)],
+    [false],
+    true
+] call CBA_Settings_fnc_init;
+
+[
     QGVAR(IVFailures),
     "SLIDER",
     [LLSTRING(IVFailures), LLSTRING(IVFailures_Desc)],
@@ -540,6 +549,25 @@
     true
 ] call CBA_Settings_fnc_init;
 
+[
+    QGVAR(medLvl_PhenylephrineAuto),
+    "LIST",
+    [LLSTRING(medLvl_PhenylephrineAuto)],
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_Phenylephrine)],
+    [[0, 1, 2], [ACELSTRING(medical_treatment,Anyone), ACELSTRING(medical_treatment,Medics), ACELSTRING(medical_treatment,Doctors)], 0],
+    true
+] call CBA_Settings_fnc_init;
+
+[
+    QGVAR(treatmentTime_PhenylephrineAuto),
+    "SLIDER",
+    [LLSTRING(treatmentTime_PhenylephrineAuto)],
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_Phenylephrine)],
+    [0.1, 10, 7, 1],
+    true
+] call CBA_Settings_fnc_init;
+
+
 // Nitroglycerin Settings Category
 [
     QGVAR(medLvl_Nitroglycerin),
@@ -806,6 +834,15 @@
 ] call CBA_Settings_fnc_init;
 
 [
+    QGVAR(pressureInfluenceCoag),
+    "CHECKBOX",
+    [LLSTRING(SETTING_Coagulation_pressureInfluenceCoag), LLSTRING(SETTING_Coagulation_pressureInfluenceCoag_DESC)],
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_Coagulation)],
+    [false],
+    true
+] call CBA_Settings_fnc_init;
+
+[
     QGVAR(coagulation_allow_clot_text),
     "CHECKBOX",
     [LLSTRING(SETTING_Coagulation_allow_clot_text), LLSTRING(SETTING_Coagulation_allow_clot_text_DESC)],
@@ -842,11 +879,40 @@
 ] call CBA_Settings_fnc_init;
 
 [
+    QGVAR(coagulation_time),
+    "TIME",
+    [LLSTRING(SETTING_Coagulation_Time), LLSTRING(SETTING_Coagulation_Time_DESC)],
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_Coagulation)],
+    [1, 300, 10],
+    true,
+    {},
+    true
+] call CBA_Settings_fnc_init;
+
+[
     QGVAR(coagulation_allow_MinorWounds),
     "CHECKBOX",
     [LLSTRING(SETTING_Coagulation_allow_MinorWounds), LLSTRING(SETTING_Coagulation_allow_MinorWounds_DESC)],
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_Coagulation)],
     [true],
+    true
+] call CBA_Settings_fnc_init;
+
+[
+    QGVAR(coagulation_chance_MinorWounds),
+    "SLIDER",
+    [LLSTRING(SETTING_Coagulation_chance_MinorWounds), LLSTRING(SETTING_Coagulation_chance_MinorWounds_DESC)],
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_Coagulation)],
+    [10, 100, 75, 0],
+    true
+] call CBA_Settings_fnc_init;
+
+[
+    QGVAR(coagulation_time_minor),
+    "TIME",
+    [LLSTRING(SETTING_Coagulation_Time_Minor), LLSTRING(SETTING_Coagulation_Time_Clotting_DESC)],
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_Coagulation)],
+    [0, 300, 15],
     true
 ] call CBA_Settings_fnc_init;
 
@@ -860,6 +926,24 @@
 ] call CBA_Settings_fnc_init;
 
 [
+    QGVAR(coagulation_chance_MediumWounds),
+    "SLIDER",
+    [LLSTRING(SETTING_Coagulation_chance_MediumWounds), LLSTRING(SETTING_Coagulation_chance_MediumWounds_DESC)],
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_Coagulation)],
+    [10, 100, 55, 0],
+    true
+] call CBA_Settings_fnc_init;
+
+[
+    QGVAR(coagulation_time_medium),
+    "TIME",
+    [LLSTRING(SETTING_Coagulation_Time_Medium), LLSTRING(SETTING_Coagulation_Time_Clotting_DESC)],
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_Coagulation)],
+    [0, 300, 30],
+    true
+] call CBA_Settings_fnc_init;
+
+[
     QGVAR(coagulation_allow_LargeWounds),
     "CHECKBOX",
     [LLSTRING(SETTING_Coagulation_allow_LargeWounds), LLSTRING(SETTING_Coagulation_allow_LargeWounds_DESC)],
@@ -867,6 +951,25 @@
     [true],
     true
 ] call CBA_Settings_fnc_init;
+
+[
+    QGVAR(coagulation_chance_LargeWounds),
+    "SLIDER",
+    [LLSTRING(SETTING_Coagulation_chance_LargeWounds), LLSTRING(SETTING_Coagulation_chance_LargeWounds_DESC)],
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_Coagulation)],
+    [10, 100, 35, 0],
+    true
+] call CBA_Settings_fnc_init;
+
+[
+    QGVAR(coagulation_time_large),
+    "TIME",
+    [LLSTRING(SETTING_Coagulation_Time_Large), LLSTRING(SETTING_Coagulation_Time_Clotting_DESC)],
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_Coagulation)],
+    [0, 300, 45],
+    true
+] call CBA_Settings_fnc_init;
+
 
 [
     QGVAR(coagulation_requireHR),
@@ -883,44 +986,6 @@
     [LLSTRING(SETTING_Coagulation_requireBV), LLSTRING(SETTING_Coagulation_requireBV_DESC)],
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_Coagulation)],
     [0, 6.0, 3.6, 1],
-    true
-] call CBA_Settings_fnc_init;
-
-[
-    QGVAR(coagulation_time),
-    "TIME",
-    [LLSTRING(SETTING_Coagulation_Time), LLSTRING(SETTING_Coagulation_Time_DESC)],
-    [CBA_SETTINGS_CAT, LSTRING(SubCategory_Coagulation)],
-    [1, 300, 10],
-    true,
-    {},
-    true
-] call CBA_Settings_fnc_init;
-
-[
-    QGVAR(coagulation_time_minor),
-    "TIME",
-    [LLSTRING(SETTING_Coagulation_Time_Minor), LLSTRING(SETTING_Coagulation_Time_Clotting_DESC)],
-    [CBA_SETTINGS_CAT, LSTRING(SubCategory_Coagulation)],
-    [0, 300, 15],
-    true
-] call CBA_Settings_fnc_init;
-
-[
-    QGVAR(coagulation_time_medium),
-    "TIME",
-    [LLSTRING(SETTING_Coagulation_Time_Medium), LLSTRING(SETTING_Coagulation_Time_Clotting_DESC)],
-    [CBA_SETTINGS_CAT, LSTRING(SubCategory_Coagulation)],
-    [0, 300, 30],
-    true
-] call CBA_Settings_fnc_init;
-
-[
-    QGVAR(coagulation_time_large),
-    "TIME",
-    [LLSTRING(SETTING_Coagulation_Time_Large), LLSTRING(SETTING_Coagulation_Time_Clotting_DESC)],
-    [CBA_SETTINGS_CAT, LSTRING(SubCategory_Coagulation)],
-    [0, 300, 45],
     true
 ] call CBA_Settings_fnc_init;
 

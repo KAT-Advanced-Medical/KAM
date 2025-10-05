@@ -45,8 +45,9 @@
                 [objNull, _patient, _bodypart] call EFUNC(pharma,retrieveIV);
 
                 [{
+                    params ["_patient", "_IVarray", "_partIndex"];
                     _IVarray set [_partIndex, 0]; _patient setVariable [QGVAR(IV), _IVarray, true];
-                }, [_patient], 180] call CBA_fnc_waitAndExecute;
+                }, [_patient, _IVarray, _partIndex], 180] call CBA_fnc_waitAndExecute;
             };
         };
         case ((_incomingFlowDifference < 7) && (_incomingFlowDifference >= 4)): {
@@ -61,8 +62,9 @@
                 [objNull, _patient, _bodypart] call EFUNC(pharma,retrieveIV);
 
                 [{
+                    params ["_patient", "_IVarray", "_partIndex"];
                     _IVarray set [_partIndex, 0]; _patient setVariable [QGVAR(IV), _IVarray, true];
-                }, [_patient], 180] call CBA_fnc_waitAndExecute;
+                }, [_patient, _IVarray, _partIndex], 180] call CBA_fnc_waitAndExecute;
             };
         };
         case (_incomingFlowDifference >= 7): {
@@ -74,8 +76,9 @@
             [objNull, _patient, _bodypart] call EFUNC(pharma,retrieveIV);
 
             [{
+                params ["_patient", "_IVarray", "_partIndex"];
                 _IVarray set [_partIndex, 0]; _patient setVariable [QGVAR(IV), _IVarray, true];
-            }, [_patient], 180] call CBA_fnc_waitAndExecute;
+            }, [_patient, _IVarray, _partIndex], 180] call CBA_fnc_waitAndExecute;
         };
     };
 };

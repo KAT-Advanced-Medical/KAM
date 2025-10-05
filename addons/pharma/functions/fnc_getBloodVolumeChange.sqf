@@ -32,7 +32,7 @@ private _heartRate = GET_HEART_RATE(_unit);
 private _lossVolumeChange = (-_deltaT * ((_bloodLoss + _internalBleeding * (GET_HEART_RATE(_unit) / (_unit getVariable [QEGVAR(circulation,defaultHeartRate), 80])) * _correctedMap * ((GET_BODY_FLUID_ECP(_unit)/GET_BODY_FLUID_ECB(_unit)) / (DEFAULT_ECP/DEFAULT_ECB))) / GET_VASOCONSTRICTION(_unit)));
 private _enableFluidShift = EGVAR(vitals,enableFluidShift);
 private _fluidVolume = GET_BODY_FLUID(_unit);
-TRACE_3("gbvc",_internalBleeding,_bloodLoss,_heartRate);
+TRACE_4("gbvc",_internalBleeding,_bloodLoss,_heartRate,_lossVolumeChange);
 _fluidVolume params ["_ECB","_ECP","_SRBC","_ISP","_fullVolume","_platelets"];
 
 _ECP = (_ECP + (_lossVolumeChange * LITERS_TO_ML) / 2) max 100;
@@ -77,17 +77,20 @@ if (!isNil {_unit getVariable [QACEGVAR(medical,ivBags),[]]}) then {
             private _IVflow = _unit getVariable [QGVAR(IVflow), [0,0,0,0,0,0,0,0,0,0,0,0]];
             private _IVrate = _unit getVariable [QGVAR(IVrate), [0,0,0,0,0,0,0,0,0,0,0,0]];
             private _bagChange = (_flowCalculation * (_IVflow select _bodyPart) * (_IVrate select _bodyPart) * _rateCoef) min _bagVolumeRemaining; // absolute value of the change in miliLiters
+            if ((_IVarray select _bodyPart) in [2,3,4,10,11,12]) then {
+                _bagChange = _bagChange * _vasoconstriction
+            };
             _bagVolumeRemaining = _bagVolumeRemaining - _bagChange;
             _incomingFlowAmount set [_bodyPart, ((_incomingFlowAmount select _bodyPart) + _bagChange)];
             _unit setVariable [QGVAR(IVincomingFlowAmount), _incomingFlowAmount, true];
-            private _incomingFlowDifference = (_incomingFlowAmount select _bodyPart) - (10 * _vasoconstriction);
+            private _incomingFlowDifference = (_incomingFlowAmount select _bodyPart) - (7 * _vasoconstriction);
             _totalFlow = 0;
             {
                 _totalFlow = _totalFlow + _x;
             } forEach _incomingFlowAmount;
             TRACE_8("IV",_bagChange,_IVrate,_IVflow,_IVarray,_isOccluded,_rateCoef,_flowCalculation,_bodyPart);
             TRACE_2("IV2",_bagVolumeRemaining,_incomingFlowAmount);
-            if ((GVAR(IVComplications)) && ((((_incomingFlowAmount select _bodyPart) max 0.01) / ((_IVrate select _bodyPart) max 0.01)) > (10 * _vasoconstriction)) && ((random 100) < 20)) then {[_unit, _bodyPart, _incomingFlowDifference] call FUNC(handleLimbIVComplications)};
+            if ((GVAR(LimbIVComplications)) && ((((_incomingFlowAmount select _bodyPart) max 0.01) / ((_IVrate select _bodyPart) max 0.01)) > (7 * _vasoconstriction)) && ((random 100) < 20)) then {[_unit, _bodyPart, _incomingFlowDifference] call FUNC(handleLimbIVComplications)};
             if ((GVAR(IVComplications)) && (_totalFlow > (25 * _vasoconstriction))) then {[_unit, (_totalFlow - (25 * _vasoconstriction))] call FUNC(handleIVComplications)};
             if (_hypothermia) then {
                 // If fluid warmers are on the line, fluids are "warmed" and added to the warmer. If there is no fluid warmer on the line, the fluids stayed cooled
@@ -97,22 +100,26 @@ if (!isNil {_unit getVariable [QACEGVAR(medical,ivBags),[]]}) then {
                     _incomingVolumeChange set [_bodyPart, ((_incomingVolumeChange select _bodyPart) - _bagChange)];
                 };
             };
-            if (_type == "Blood") then {
-                if !([_unit, _item] call EFUNC(circulation,compatible)) then {
-                    [_unit, "BloodPoisoning", 10, 60] call EFUNC(vitals,addMedicationAdjustment);
-                    if ((_unit getVariable ["kat_hemolysisPFH", -1]) isEqualTo -1) then {
+            if ((_type == "Blood") && (_bagChange > 1)) then {
+                if !([_unit, _treatment] call EFUNC(circulation,compatible)) then {
+                    private _medCount = [_unit, "BloodPoisoning"] call ACEFUNC(medical_status,getMedicationCount) select 1;
+                    if (_medCount < 0.05) then {
+                        [_unit, "BloodPoisoning", 0, 30, 0, 0, 0, 0, 0, 0, 0, 0.2, 0.3, 0, 0, "false", "false", "true"] call EFUNC(vitals,addMedicationAdjustment);
+                    };
+                    private _hasPFH = _unit getVariable ["kat_hemolysisPFH", -1] isNotEqualTo -1;
+                    if !(_hasPFH) then {
                         private _hemolysisPFH = [{
                             params ["_args", "_idPFH"];
                             _args params ["_unit"];
-                            private _medCount = [_unit, "BloodPoisoning"] call ACEFUNC(medical_status,getMedicationCount) select 0;
+                            private _medCount = [_unit, "BloodPoisoning"] call ACEFUNC(medical_status,getMedicationCount) select 1;
                             if ((_medCount == 0) || !(alive _unit)) exitWith {
-                                _unit setVariable ["kat_hemolysisPFH", nil, true];
+                                _unit setVariable ["kat_hemolysisPFH", -1, true];
                                 [_idPFH] call CBA_fnc_removePerFrameHandler;
                             };
                             private _bloodlevels = GET_BODY_FLUID(_unit);
-                            _bloodlevels set [0, (_bloodlevels select 0) - 5];
-                            _bloodlevels set [1, (_bloodlevels select 1) + 5];
-                            _bloodlevels set [5, (_bloodlevels select 5) - 2];
+                            _bloodlevels set [0, ((_bloodlevels select 0) - 8) max 0];
+                            _bloodlevels set [1, ((_bloodlevels select 1) + 8) max 0];
+                            _bloodlevels set [5, ((_bloodlevels select 5) - 3) max 0];
                             _unit setVariable [QEGVAR(circulation,bodyFluid), _bloodlevels, true];
                         }, 1, [_unit]] call CBA_fnc_addPerFrameHandler;
                         _unit setVariable ["kat_hemolysisPFH", _hemolysisPFH, true];
@@ -179,13 +186,8 @@ if (!isNil {_unit getVariable [QACEGVAR(medical,ivBags),[]]}) then {
             _unit setVariable [QGVAR(IVincomingFlowAmount), _incomingFlowAmount, true];
             private _defaultHeartRate = _unit getVariable [QEGVAR(circulation,defaultHeartRate), 80];
             private _heartRateRatio = GET_HEART_RATE(_unit) / _defaultHeartRate;
-            private _bloodBased = GET_STRING(_ivConfig >> "bloodBased",getText (_defaultConfig >> "bloodBased"));
             private _hemocrit = 1;
-            if (_bloodBased == "true") then {
-                _hemocrit = (GET_BODY_FLUID_ECB(_unit)/GET_BODY_FLUID_ECP(_unit)) / (DEFAULT_ECB/DEFAULT_ECP)
-            } else {
-                _hemocrit = (GET_BODY_FLUID_ECP(_unit)/GET_BODY_FLUID_ECB(_unit)) / (DEFAULT_ECP/DEFAULT_ECB)
-            };
+            private _hemocrit = (GET_BODY_FLUID_ECP(_unit)/GET_BODY_FLUID_ECB(_unit)) / (DEFAULT_ECP/DEFAULT_ECB);
             private _drugMult = (((((GET_BLOOD_VOLUME_LITERS(_unit))/ DEFAULT_BLOOD_VOLUME) * (_heartRateRatio) * _hemocrit) max 0.2) min 2.5);
             private _defaultConfig = configFile >> QUOTE(ACE_ADDON(Medical_Treatment)) >> "IV";
             private _ivConfig = _defaultConfig >> _treatment;
@@ -270,7 +272,6 @@ if (!isNil {_unit getVariable [QACEGVAR(medical,ivBags),[]]}) then {
         };
     };
 };
-_unit setVariable [QGVAR(IVincomingFlowAmount), [0,0,0,0,0,0,0,0,0,0,0,0], true];
 private _SRBCChange = 0;
 
 if (_enableFluidShift) then {

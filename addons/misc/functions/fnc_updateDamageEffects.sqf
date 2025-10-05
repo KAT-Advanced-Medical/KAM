@@ -50,27 +50,27 @@ if (ACEGVAR(medical,fractures) > 0) then {
             _noJog = _hasLegSplint;
         };
 
-        if ((_fractures select 4) in [-1, -2]) then { _aimFracture = _aimFracture + 2; };
-        if ((_fractures select 5) in [-1, -2]) then { _aimFracture = _aimFracture + 2; };
-        if ((_fractures select 6) in [-1, -2]) then { _aimFracture = _aimFracture + 2; };
-        if ((_fractures select 7) in [-1, -2]) then { _aimFracture = _aimFracture + 2; };
+        if ((_fractures select 4) in [-1, -2, -3]) then { _aimFracture = _aimFracture + 2; };
+        if ((_fractures select 5) in [-1, -2, -3]) then { _aimFracture = _aimFracture + 2; };
+        if ((_fractures select 6) in [-1, -2, -3]) then { _aimFracture = _aimFracture + 2; };
+        if ((_fractures select 7) in [-1, -2, -3]) then { _aimFracture = _aimFracture + 2; };
     };
 };
-if (GVAR(CatastrophicEnable)) then {
+if (EGVAR(hitpoints,JointChance) > 0) then {
     {
-        {if (_x in [1, 4, 7]) then {_aimFracture = _aimFracture + 1;};} forEach _x;
+        {if (_x in [1, 4, 7]) then {_aimFracture = _aimFracture + 1};} forEach _x;
     } forEach _armJointArray;
 
     {
-        {if (_x in [2, 5, 8]) then {_aimFracture = _aimFracture + 3;};} forEach _x;
+        {if (_x in [2, 5, 8]) then {_aimFracture = _aimFracture + 3};} forEach _x;
     } forEach _armJointArray;
 
     {
-        {if (_x in [3, 6]) then {_aimFracture = _aimFracture + 6;};} forEach _x;
+        {if (_x in [3, 6]) then {_aimFracture = _aimFracture + 6};} forEach _x;
     } forEach _armJointArray;
 
     {
-        {if (_x == 9) then {_aimFracture = _aimFracture + 3;};} forEach _x;
+        {if (_x == 9) then {_aimFracture = _aimFracture + 3};} forEach _x;
     } forEach _armJointArray;
 
 };
@@ -92,6 +92,20 @@ if (!_isLimping && {ACEGVAR(medical,limping) > 0}) then {
             + (_bandagedWounds getOrDefault ["upperleftleg", []])
             + (_bandagedWounds getOrDefault ["rightleg", []])
             + (_bandagedWounds getOrDefault ["upperrightleg", []]);
+
+        private _wrappedWounds = GET_WRAPPED_WOUNDS(_unit);
+        _legWounds = _legWounds
+            + (_wrappedWounds getOrDefault ["leftleg", []])
+            + (_wrappedWounds getOrDefault ["upperleftleg", []])
+            + (_wrappedWounds getOrDefault ["rightleg", []])
+            + (_wrappedWounds getOrDefault ["upperrightleg", []]);
+
+        private _coagWounds = GET_COAGED_WOUNDS(_unit);
+        _legWounds = _legWounds
+            + (_coagWounds getOrDefault ["leftleg", []])
+            + (_coagWounds getOrDefault ["upperleftleg", []])
+            + (_coagWounds getOrDefault ["rightleg", []])
+            + (_coagWounds getOrDefault ["upperrightleg", []]);
     };
 
     {

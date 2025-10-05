@@ -30,7 +30,7 @@ if (_target getVariable [QGVAR(DefibrillatorPads_Connected), false]) then {
 };
 
 if (_target getVariable [QGVAR(AED_X_VitalsMonitor_Connected), false]) then {
-    if (((_target getVariable [QGVAR(AED_X_VitalsMonitor_Provider), [objNull, -1, 3]]) select 2) isEqualTo 3) then {
+    if (((_target getVariable [QGVAR(AED_X_VitalsMonitor_Provider), [objNull, -1, 3]]) select 2) isEqualTo 7) then {
         _ctrlAEDVitalsMonitorRight ctrlShow true;
         _ctrlAEDVitalsMonitorLeft ctrlShow false;
     } else {

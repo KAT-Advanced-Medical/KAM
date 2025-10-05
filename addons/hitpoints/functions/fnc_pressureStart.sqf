@@ -45,7 +45,9 @@ if (_notInVehicle) then {
     loopPressure = true;
 };
 
-[{if (_notInVehicle) then {
+[{
+    params ["_medic", "_notInVehicle"];
+    if (_notInVehicle) then {
     [_medic, "Acts_TreatingWounded_loop", 1] call ACEFUNC(common,doAnimation);
     loopPressure = true;
 };}, [_medic, _notInVehicle], 3] call CBA_fnc_waitAndExecute;

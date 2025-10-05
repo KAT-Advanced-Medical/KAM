@@ -1638,5 +1638,11 @@
         <Key ID="STR_KAT_Surgery_fractureKit_Desc_Short">
             <English>Contains equipment for Fracture Care</English>
         </Key>
+        <Key ID="STR_KAT_Surgery_PENALTY_MULT_DISPLAY">
+            <English>Time Delay for full repair</English>
+        </Key>
+        <Key ID="STR_KAT_Surgery_PENALTY_MULT_DESC">
+            <English>Multiplier for the delay (120-200 seconds) before a fracture is fully healed after surgery (no limping), 0 to disable</English>
+        </Key>
     </Package>
 </Project>

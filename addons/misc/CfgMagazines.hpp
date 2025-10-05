@@ -70,8 +70,7 @@ class CfgMagazines {
         author = "Miss Heda/Cplhardcore";
         displayName = CSTRING(MEDPACK_Display);
         descriptionShort = CSTRING(MEDPACK_DESC);
-        picture = QPATHTOF(ui\MEDPACK.paa);
-
+        picture = QPATHTOF(ui\MedicationCase.paa);
         ammo = "";
         count = 255;
         initSpeed = 0;

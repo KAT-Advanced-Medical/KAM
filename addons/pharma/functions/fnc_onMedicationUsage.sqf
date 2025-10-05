@@ -25,11 +25,15 @@ TRACE_3("onMedicationUsage",_target,_className,_incompatibleMedication);
         private _medicationConfig = _defaultConfig >> _medicationName;
         TRACE_1("onMedicationUsage2",_medicationConfig);
         private _maxDose = GET_NUMBER(_medicationConfig >> "maxDose",getNumber (_defaultConfig >> "maxDose"));
-        private _currentWeight = _target getVariable [QEGVAR(vitals,currentWeight), 80];
-        private _maxDoseMult = linearConversion [60, 100, _currentWeight, 0.7, 1.3, true];
-        private _unitMedEffectivness = _patient getVariable [QGVAR(medicationEffectivness), 1];
+        private _weightBase = GET_STRING(_medicationConfig >> "weightBased",getText (_defaultConfig >> "weightBased"));
+        private _maxDoseMult = 1;
+        if (_weightBase == "true") then {
+            private _currentWeight = _target getVariable [QEGVAR(vitals,currentWeight), 80];
+            _maxDoseMult = linearConversion [60, 100, _currentWeight, 0.6, 1.4, true];
+        };
+        private _unitMedEffectivness = _target getVariable [QGVAR(medicationEffectivness), 1];
         private _maxDoseFixed = _maxDose * _maxDoseMult * _unitMedEffectivness;
-        TRACE_2("onMedUsage1",_maxDose,_medicationName);
+        TRACE_2("onMedUsage1",_maxDoseFixed,_medicationName);
 
         if (_maxDoseFixed > 0) then {
             private _maxDoseDeviation = GET_NUMBER(_medicationConfig >> "maxDoseDeviation",getNumber (_defaultConfig >> "maxDoseDeviation"));
@@ -43,13 +47,13 @@ TRACE_3("onMedicationUsage",_target,_className,_incompatibleMedication);
             private _limit = _maxDoseFixed + (floor random _maxDoseDeviation);
             if (_currentDose > _limit) then {
                 TRACE_1("exceeded max dose",_currentDose);
-                [_target, _medicationName, _currentDose, _limit, _incompatibleMed] call FUNC(overDose);
+                [_target, _className, _currentDose, _limit, _incompatibleMedication] call FUNC(overDose);
             };
             {
             _x params ["_xMed", "_xLimit"];
             private _inSystem = ([_target, _xMed] call ACEFUNC(medical_status,getMedicationCount)) select 0;
             if (_inSystem > _xLimit) then {
-                [_target, _medicationName, _inSystem, _xLimit, _xMed] call FUNC(overDose);
+                [_target, _className, _inSystem, _xLimit, _xMed] call FUNC(overDose);
                 };
             } forEach _incompatibleMedication;
             };

@@ -31,7 +31,7 @@ if !(GVAR(CatastrophicEnable) && _fixedBodyPart == "body") exitWith {
 if (_engineDamage < GVAR(EviscerationDamageThreshold)) exitWith {
     TRACE_1("NotEnoughDamage",_engineDamage);
     _this};
-
+TRACE_1("EnoughDamage",_engineDamage);
 private _chanceIncrease = 0;
 if (GVAR(EviscerationDamageThreshold_TakenDamage)) then {
     _chanceIncrease = linearConversion [GVAR(EviscerationDamageThreshold), 3, _engineDamage, 0, 30, true];
