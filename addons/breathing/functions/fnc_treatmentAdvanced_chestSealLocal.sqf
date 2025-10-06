@@ -22,7 +22,9 @@ private _activeChestSeal = _patient getVariable [QGVAR(activeChestSeal), [false,
 _activeChestSeal set [_side, true];
 _patient setVariable [QGVAR(activeChestSeal), _activeChestSeal, true];
 private _deepPenetratingInjury = _patient getVariable [QGVAR(deepPenetratingInjury), [false, false]];
+systemChat str _deepPenetratingInjury;
 _deepPenetratingInjury set [_side, false];
+systemChat str _deepPenetratingInjury;
+_patient setVariable [QGVAR(deepPenetratingInjury), _deepPenetratingInjury, true];
 [_patient, 0, _side] call FUNC(handlePneumothoraxTreatment);
 
-_patient setVariable [QGVAR(deepPenetratingInjury), _deepPenetratingInjury, true];

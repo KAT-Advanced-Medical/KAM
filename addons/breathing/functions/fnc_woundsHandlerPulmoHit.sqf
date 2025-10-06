@@ -48,15 +48,15 @@ if (floor (random 100) < (GVAR(pneumothoraxChance) + _chanceIncrease)) then {
         _unit setVariable [QGVAR(pneumothorax), _pneumothoraxState, true];
         _deepPenetratingInjury set [_side, true];
         _unit setVariable [QGVAR(deepPenetratingInjury), _deepPenetratingInjury, true];
-        _activeChestSeal set [_side, true];
+        _activeChestSeal set [_side, false];
         _unit setVariable [QGVAR(activeChestSeal), _activeChestSeal, true];
 
         [_unit, _chanceIncrease, _side] call FUNC(handlePneumothoraxDeterioration);
     } else {
         if (_tensionState select _side) then {
-            _pneumothoraxState set [_side, 16];
+            _pneumothoraxState set [_side, ((_pneumothoraxState select _side) + 4)];
             _unit setVariable [QGVAR(pneumothorax), _pneumothoraxState, true];
-            _activeChestSeal set [_side, true];
+            _activeChestSeal set [_side, false];
             _unit setVariable [QGVAR(activeChestSeal), _activeChestSeal, true];
         } else {
             if (GVAR(advPtxEnable)) then {
