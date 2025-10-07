@@ -1,5 +1,3 @@
-#include "config_macros.hpp"
-
 class CfgPatches {
 	class ADDON
 	{
