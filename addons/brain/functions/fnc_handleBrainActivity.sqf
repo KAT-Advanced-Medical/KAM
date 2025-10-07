@@ -48,8 +48,11 @@ private _newPFH = [{
 	private _deoxygenatedTicks = _unit getVariable [QGVAR(deoxygenatedTicks),0];
 	_deoxygenatedTicks = [_deoxygenatedTicks + 1,_deoxygenatedTicks - 2] select (rO2 < GVAR(necrosisThreshold));
 	_deoxygenatedTicks = (0 max _dexoxygenation) min GVAR(necrosisTicks);
-	if 	(_deoxygenatedTicks == GVAR(necrosisThreshold)) then {
+	if (_deoxygenatedTicks == GVAR(necrosisThreshold)) then {
 		_necrosis = (_necrosis + GVAR(necrosisIncrease)) min 100;
+		if (_necrosis > random [75, 85, 100]) then {
+			_unit setDamage 1;
+		};
 		//TODO kill unit when this gets too high
 	};
 

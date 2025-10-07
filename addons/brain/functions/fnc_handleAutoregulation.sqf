@@ -50,7 +50,7 @@ private _newPFH = [{
 
     private _newCVR = (((_CVR+_targetCVR ) / 2) + _targetCVR) / 2; // interpolate CVR to target value
 
-    private _CPP = _MAP-_ICP max 0; 
+    private _CPP = _MAP -_ICP max 0; 
     if (_CPP > 200) then { // Simulate autoregulation breakthrough (too large CPP causes spike in CBF)
         _newCVR = 0.1;
     };
