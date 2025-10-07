@@ -34,29 +34,7 @@ private _wheeze = ((ACE_player getVariable [QEGVAR(breathing,pneumothorax), [0, 
 private _eyeInjurySeverity        = GET_DUST_INJURY(ACE_player);
 private _eyeInjuries        = GET_EYE_INJURIES(ACE_player);
 
-private _occlusionArray = ACE_player getVariable [QEGVAR(airway,occlusion), [0, 0, 0]];
-private _obstructionArray = ACE_player getVariable [QEGVAR(airway,obstruction), [0, 0, 0]];
-if ((ACE_player getVariable [QEGVAR(airway,airway_item), ""]) isEqualTo "NPA") then {
-    _occlusionArray = _occlusionArray select [1,2];
-    _obstructionArray = _obstructionArray select [1,2];
-};
-private _occlusion = (_occlusionArray findIf { _x > 4 }) != -1;
-private _obstruction = (_obstructionArray findIf { _x != 0 }) != -1;
-private _airwayState = false;
-private _catastrophicState = ACE_player getVariable [QEGVAR(airway,catastrophicAirway), [false, false]];
-private _hasCatastrophicAirway = ((_catastrophicState select 0) || (_catastrophicState select 1));
-private _airway = true;
-private _breathing = true;
-private _paralysis = ACE_player getVariable [QEGVAR(breathing,paralysis), 0] > 0.1;
-if (_paralysis) then {
-    _breathing = false;
-};
-private _noSurgicalAirway = (ACE_player getVariable [QEGVAR(airway,airway_item), ""] isNotEqualTo "Surgical_Airway");
-private _noOverstretch = ACE_player getVariable [QEGVAR(airway,overstretch), false];
-if (((_obstruction || _occlusion) || _hasCatastrophicAirway) && _noSurgicalAirway) then {
-    _airway = false;
-};
-private _airwayState = ((!_airway) || (!_breathing));
+private _airwayState = HAS_AIRWAY(ACE_player);
 // - Visual effects -----------------------------------------------------------
 [!_unconscious, _opioid] call FUNC(effectOpioid);
 
