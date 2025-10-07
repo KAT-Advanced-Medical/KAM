@@ -42,7 +42,6 @@ _modifierFunc = {
 	private _bleeding = GVAR(Unstable_TrackBleeding) && [_patient] call FUNC(isBleeding);
 	private _sleepy = GVAR(Unstable_TrackUnconscious) && [_patient] call FUNC(isUnconscious);
 	private _cardiac = GVAR(Unstable_TrackCardiacArrest) && [_patient] call FUNC(isCardiacArrest);
-	private _legFractures = GVAR(Unstable_TrackLegFractures) && [_patient] call FUNC(hasLegFractures);
 	private _dead = GVAR(Unstable_TrackDead) && !alive _patient;
 	//KAT Priority
 	private _kat_pneumothorax = false;

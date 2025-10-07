@@ -189,40 +189,6 @@ if (_isUncon) then {
 	_actions pushBack [_action, [], _patient];
 };
 
-// Fractures (Legs)
-if(GVAR(Unstable_TrackLegFractures) && [_patient] call FUNC(hasLegFractures)) then {
-	LOGF_1("'%1' has leg fractures", _patient);
-	private _numLegFractures = [_patient] call FUNC(getNumberOfLegFractures);
-	private _fracturesMessage =  format[[LSTRING(Unstable,Leg_Fractures)] call FUNC(cachedLocalisationCall), _numLegFractures];
-	if(_numLegFractures == 0) then {
-		LOG_ERROR("Found no fractures despite fractures being non default");
-		_fracturesMessage = "Leg Fractures (Error Fetching Amount)"
-	};
-	private _action = ["MIRA_Fractures", _fracturesMessage, QUOTE(ICON_PATH(fracture)), {
-			params ["_target", "_player", "_parameters"];
-			_parameters params ["_patient"];
-			[_patient] call FUNC(openMedicalMenu);
-		}, {true}, {}, [_patient]] call ace_interact_menu_fnc_createAction;
-	_actions pushBack [_action, [], _patient];
-};
-
-// Splinted Fractures (Legs)
-if(GVAR(Unstable_TrackLegSplints) && [_patient, true] call FUNC(hasLegFractures)) then {
-	LOGF_1("'%1' has splinted leg fractures", _patient);
-	private _numLegFractures = [_patient, true] call FUNC(getNumberOfLegFractures);
-	private _fracturesMessage =  format[[LSTRING(Unstable,Splinted_Leg_Fractures)] call FUNC(cachedLocalisationCall), _numLegFractures];
-	if(_numLegFractures == 0) then {
-		LOG_ERROR("Found no fractures despite fractures being non default");
-		_fracturesMessage = [LSTRING(Unstable,Splinted_Leg_Fractures_Error)] call FUNC(cachedLocalisationCall);
-	};
-	private _action = ["MIRA_Splinted_Fractures", _fracturesMessage, QUOTE(ICON_PATH(splint)), {
-			params ["_target", "_player", "_parameters"];
-			_parameters params ["_patient"];
-			[_patient] call FUNC(openMedicalMenu);
-		}, {true}, {}, [_patient]] call ace_interact_menu_fnc_createAction;
-	_actions pushBack [_action, [], _patient];
-};
-
 // Unload Action
 if(GVAR(Unstable_AllowUnload)) then {
 	if (_isUncon || _isDead) then {

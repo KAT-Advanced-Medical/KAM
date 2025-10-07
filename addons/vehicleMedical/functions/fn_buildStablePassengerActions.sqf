@@ -41,8 +41,8 @@ _modifierFunc = {
 	
 	private _result = "";
 	// bandage > stitch  > lowhr > lowbp > fractures > tourniquets
-	private _tourniquet = GVAR(Stable_TrackTourniquets) && [_patient] call FUNC(hasTourniquets);
-	private _fractures = GVAR(Stable_TrackFractures) && [_patient] call FUNC(hasFractures);
+	private _tourniquet = GVAR(Stable_TrackTourniquets) && ((selectMax GET_TOURNIQUETS(_patient)) > 0);
+	private _fractures = GVAR(Stable_TrackFractures) && ((selectMax GET_FRACTURES(_patient)) > 0);
 	private _isMedic = _player call FUNC(isMedic);
 	private _lowBP = GVAR(Stable_TrackLowBP) && [_patient, _isMedic] call FUNC(hasLowBP);
 	private _lowHR = GVAR(Stable_TrackLowHR) && [_patient, _isMedic] call FUNC(hasLowHR);

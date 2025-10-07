@@ -86,9 +86,9 @@ if(_hasLowBP) then {
 };
 
 // Fractures
-if(GVAR(Stable_TrackFractures) && [_patient] call FUNC(hasFractures)) then {
+if(GVAR(Stable_TrackFractures) && ((selectMax GET_FRACTURES(_patient)) > 0)) then {
 	LOGF_1("'%1' has fractures", _patient);
-	private _numFractures = [_patient] call FUNC(getNumberOfFractures);
+	private _numFractures = { _x != 0 } count GET_FRACTURES(_patient);
 	private _fracturesMessage =  format[[LSTRING(Stable,Arm_Fractures)] call FUNC(cachedLocalisationCall), _numFractures];
 	if(_numFractures == 0) then {
 		LOG_ERROR("Found no fractures despite fractures being non default");
@@ -104,9 +104,9 @@ if(GVAR(Stable_TrackFractures) && [_patient] call FUNC(hasFractures)) then {
 
 
 // Splinted Fractures
-if(GVAR(Stable_TrackSplints) && [_patient, true] call FUNC(hasFractures)) then {
+if(GVAR(Stable_TrackSplints) && (({ _x in [-1, -2, -3] } count (GET_FRACTURES(_patient))) > 0)) then {
 	LOGF_1("'%1' has splinted fractures", _patient);
-	private _numFractures = [_patient, true] call FUNC(getNumberOfFractures);
+	private _numFractures = { _x in [-1, -2, -3] } count (GET_FRACTURES(_patient));
 	private _fracturesMessage =  format[[LSTRING(Stable,Splinted_Fractures)] call FUNC(cachedLocalisationCall), _numFractures];
 	if(_numFractures == 0) then {
 		LOG_ERROR("Found no fractures despite fractures being non default");
@@ -121,10 +121,10 @@ if(GVAR(Stable_TrackSplints) && [_patient, true] call FUNC(hasFractures)) then {
 };
 
 // Tourniquets
-private _tourniquets = GVAR(Stable_TrackTourniquets) && [_patient] call FUNC(hasTourniquets);
+private _tourniquets = GVAR(Stable_TrackTourniquets) && ((selectMax GET_TOURNIQUETS(_patient)) > 0);
 if(_tourniquets) then {
 	LOGF_1("'%1' has tourniquets", _tourniquets);
-	private _amount = [_patient] call FUNC(getNumberOfTourniquets);
+	private _amount = { _x != 0 } count GET_TOURNIQUETS(_patient);
 	private _action = ["MIRA_Tourniquets", format[[LSTRING(Stable,Tourniquets)] call FUNC(cachedLocalisationCall), _amount], QUOTE(ICON_PATH(tourniquet)), {
 			params ["_target", "_player", "_parameters"];
 			_parameters params ["_patient"];

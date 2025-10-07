@@ -30,6 +30,26 @@ private _numFractures = 0;
 				};
 			};
 		};
+		case -2: {
+			if(_splintedOnly) then {
+				if(ace_medical_fractures in [2,3]) then {
+					_numFractures = _numFractures + 1;
+				}
+				else {
+					// Splinted, fracture healed automagically
+				};
+			};
+		};
+		case -3: {
+			if(_splintedOnly) then {
+				if(ace_medical_fractures in [2,3]) then {
+					_numFractures = _numFractures + 1;
+				}
+				else {
+					// Splinted, fracture healed automagically
+				};
+			};
+		};
 		default {
 			LOG_ERRORF_1("Unknown Fracture State '%1'", _fracture);
 		};
