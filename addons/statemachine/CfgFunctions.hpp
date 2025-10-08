@@ -5,6 +5,12 @@ class CfgFunctions {
             class localityChangedEH {
                 file = QPATHTOF(functions\fnc_localityChangedEH.sqf);
             };
+            class enteredStateCardiacArrest {
+                file = QPATHTOF(functions\fnc_enteredStateCardiacArrest.sqf);
+            };
+            class handleStateCardiacArrest {
+                file = QPATHTOF(functions\fnc_handleStateCardiacArrest.sqf);
+            };
         };
     };
 };
