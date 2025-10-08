@@ -217,7 +217,13 @@ if (_totalIvVolume > 0) then {
 } else {
     _entries pushBack [localize ACELSTRING(medical_treatment,Status_NoIv), _nonissueColor];
 };
-
+if ((_target getVariable [QEGVAR(pharma,pressureBag), [0,0,0,0,0,0,0,0,0,0,0,0]] select _selectionN) > 0) then {
+    if ((_target getVariable [QEGVAR(pharma,pressureBag), [0,0,0,0,0,0,0,0,0,0,0,0]] select _selectionN) == 1) then {
+        _entries pushBack [localize ELSTRING(pharma,IVPressureBag), [1, 1, 1, 1]];
+    } else {
+        _entries pushBack [localize ELSTRING(pharma,IVSqueezed), [1, 1, 1, 1]];
+    };
+};
 // Indicate the amount of pain the unit is in
 if (_target call ACEFUNC(common,isAwake) && ((_target == ACE_Player) || {!isPlayer _target}))  then {
     if (GVAR(localPain) && ((_target == ACE_Player) || {!isPlayer _target})) then {

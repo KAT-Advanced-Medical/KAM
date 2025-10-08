@@ -5971,5 +5971,44 @@
         <Key ID="STR_KAT_Pharma_SETTING_Coagulation_chance_LargeWounds_DESC">
             <English>Base chance for a Large wound to clot</English>
         </Key>
+        <Key ID="STR_KAT_Pharma_ManualPressure_progress">
+            <English>Squeezing Fluid Bag</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_ManualPressure_displayName">
+            <English>Squeeze Fluid Bag</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_Pressure_already">
+            <English>Pressure Already Applied</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_Pressure_Ready">
+            <English>Started Squeezing Fluid Bag</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_Pressure_Cancel">
+            <English>Stopped Squeezing Fluid Bag</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_IVSqueezed">
+            <English>IV Bag Squeezed</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_IVPressureBag">
+            <English>Pressure Bag Applied</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_apply_pressurebag">
+            <English>Apply Pressure Bag</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_applying_pressurebag">
+            <English>Applying Pressure Bag</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_remove_pressurebag">
+            <English>Remove Pressure Bag</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_removing_pressurebag">
+            <English>Removing Pressure Bag</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_pressureBag_displayName">
+            <English>Pressure Bag</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_pressureBag_DescShort">
+            <English>Pressure Bag, increases flow rate of fluid bags when attached</English>
+        </Key>
     </Package>
 </Project>

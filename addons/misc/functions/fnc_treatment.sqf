@@ -54,6 +54,13 @@ if (GVAR(usePainInTreatment)) then {
     _treatmentTime = _treatmentTime * _treatMult;
 };
 
+if (_medic getVariable [QEGVAR(airway,overstretching), false]) then {
+    _treatmentTime = _treatmentTime + 3;
+};
+if (_medic getVariable [QEGVAR(pharma,pressureIVApplied), false]) then {
+    _treatmentTime = _treatmentTime + 3;
+};
+
 // Consume one of the treatment items if needed
 // Store item user so that used item can be returned on failure
 private _userAndItem = if (GET_NUMBER_ENTRY(_config >> "consumeItem") == 1) then {
