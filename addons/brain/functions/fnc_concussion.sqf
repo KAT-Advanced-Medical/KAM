@@ -57,7 +57,7 @@ if (floor (random 100) <= _concussionChance) then {
 		_unit setVariable [QGVAR(ICP),_ICP+_damage,true];
 
 		// Set up PFH
-		if !(_currentSeverity isEqualTo 0) then { //Delete the existing concussion PFH if it exists
+		if (_currentSeverity isNotEqualTo 0) then { //Delete the existing concussion PFH if it exists
 			private _existingPFH = _unit getVariable [QGVAR(concussionPFH),0];
 			[_existingPFH] call CBA_fnc_removePerFrameHandler;
 		};

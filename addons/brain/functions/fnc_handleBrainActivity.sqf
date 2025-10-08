@@ -53,7 +53,6 @@ private _newPFH = [{
 		if (_necrosis > random [75, 85, 100]) then {
 			_unit setDamage 1;
 		};
-		//TODO kill unit when this gets too high
 	};
 
 	private _reversibleDamage = _unit getVariable [QGVAR(reversibleDamage),0];
@@ -95,7 +94,7 @@ private _newPFH = [{
 
 	//Chance to cause bradycardia if ICP is too high
 	if (_ICP >= GVAR(ICPbradycardiaThreshold)) then {
-		if !(floor (random 100) <= GVAR(ICPbradycardiaChance)) exitWith {};
+		if (floor (random 100) >= GVAR(ICPbradycardiaChance)) exitWith {};
 		
 		scopeName "causeBradycardia";
 		{ //Prevent adding bradycardia if it already exists
@@ -111,7 +110,7 @@ private _newPFH = [{
 
 	//Cause LOC if CMR becomes too low
 	if (_CMR <= GVAR(CMRunconsciousThreshold) && !(_unit getVariable ["ACE_isUnconscious",false])) then {
-		if (!(floor (random 100) <= GVAR(CMRunconsciousChance)) && (_CMR >= GVAR(stableCMR))) exitWith {};
+		if ((floor (random 100) >= GVAR(CMRunconsciousChance)) && (_CMR >= GVAR(stableCMR))) exitWith {};
 		[QACEGVAR(medical,CriticalVitals), _unit] call CBA_fnc_localEvent;
 	};
 }, 15, [_unit]] call CBA_fnc_addPerFrameHandler;
