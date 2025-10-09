@@ -90,10 +90,22 @@ if (!isNil {_unit getVariable [QACEGVAR(medical,ivBags),[]]}) then {
             } forEach _incomingFlowAmount;
             TRACE_8("IV",_bagChange,_IVrate,_IVflow,_IVarray,_isOccluded,_rateCoef,_flowCalculation,_bodyPart);
             TRACE_2("IV2",_bagVolumeRemaining,_incomingFlowAmount);
-            if ((GVAR(LimbIVComplications)) && ((((_incomingFlowAmount select _bodyPart) max 0.01) / ((_IVrate select _bodyPart) max 0.01)) > (7 * _vasoconstriction)) && ((random 100) < 20)) then {
-                private _incomingFlowDifference = (_incomingFlowAmount select _bodyPart) - (7 * _vasoconstriction);
+            if ((GVAR(LimbIVComplications)) && ((((_incomingFlowAmount select _bodyPart) max 0.01) / ((_IVrate select _bodyPart) max 0.01)) > (7 * ((2 - _vasoconstriction) max 0.2))) && ((random 100) < 20)) then {
+                private _incomingFlowDifference = (_incomingFlowAmount select _bodyPart) - (7 * ((2 - _vasoconstriction) max 0.2));
                 [_unit, _bodyPart, _incomingFlowDifference] call FUNC(handleLimbIVComplications)};
-            if ((GVAR(IVComplications)) && (_totalFlow > (25 * _vasoconstriction))) then {[_unit, (_totalFlow - (25 * _vasoconstriction))] call FUNC(handleIVComplications)};
+            if (GVAR(IVComplications)) then {
+                private _hr = GET_HEART_RATE(_unit);
+                private _bp = GET_BLOOD_PRESSURE(_unit) select 0;
+                private _lungCondition = (_unit getVariable [QEGVAR(breathing,lungSurfaceArea), 400]);
+                private _riskCoef = 1;
+                if (_hr < 50) then {_riskCoef = _riskCoef * (linearConversion [50, 30, _hr, 1, 1.5, true])};
+                if (_bp < 90) then {_riskCoef = _riskCoef * (linearConversion [90, 50, _bp, 1, 1.5, true])};
+                if (_lungCondition < 350) then {_riskCoef = _riskCoef * (linearConversion [350, 150, _lungCondition, 1, 1.5, true])};
+                private _maxSafeFlow = (25 * ((2 - _vasoconstriction) max 0.2)) / _riskCoef;
+                if (_totalFlow > _maxSafeFlow) then {
+                    [_unit, (_totalFlow - _maxSafeFlow)] call FUNC(handleIVComplications)
+                    };
+                };
             if (_hypothermia) then {
                 // If fluid warmers are on the line, fluids are "warmed" and added to the warmer. If there is no fluid warmer on the line, the fluids stayed cooled
                 if (_fluidWarmer select _bodyPart == 1) then {
