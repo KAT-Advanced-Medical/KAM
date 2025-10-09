@@ -43,9 +43,6 @@ if (!isNil {_unit getVariable [QACEGVAR(medical,ivBags),[]]}) then {
     private _flowCalculation = (ACEGVAR(medical,ivFlowRate) * _deltaT * 3.16);
     private _hypothermia = EGVAR(hypothermia,hypothermiaActive);
     private _vasoconstriction = GET_VASOCONSTRICTION(_unit);
-    if ((GET_HEART_RATE(_unit) < 20)) then {
-        _flowCalculation = _flowCalculation * 0.2;
-    };
     private _incomingFlowAmount = [0,0,0,0,0,0,0,0,0,0,0,0];
     private _incomingVolumeChange = [0,0,0,0,0,0,0,0,0,0,0,0];
     private _fluidWarmer = _unit getVariable [QEGVAR(hypothermia,fluidWarmer), [0,0,0,0,0,0,0,0,0,0,0,0]];
@@ -74,8 +71,11 @@ if (!isNil {_unit getVariable [QACEGVAR(medical,ivBags),[]]}) then {
             private _IVflow = _unit getVariable [QGVAR(IVflow), [0,0,0,0,0,0,0,0,0,0,0,0]];
             private _IVrate = _unit getVariable [QGVAR(IVrate), [0,0,0,0,0,0,0,0,0,0,0,0]];
             private _pressureBag = _unit getVariable [QGVAR(pressureBag), [0,0,0,0,0,0,0,0,0,0,0,0]];
-            if ((GET_HEART_RATE(_unit) < 20) && ((_pressureBag select _bodyPart) > 0)) then {
-                _flowCalculation = _flowCalculation / 0.2;
+            if ((GET_HEART_RATE(_unit) < 20) && ((_IVarray select _bodyPart) != 14) && ((_pressureBag select _bodyPart) == 0)) then {
+                _flowCalculation = _flowCalculation * 0.2;
+            };
+            if ((_unit getVariable [QACEGVAR(medical,CPR_provider), objNull]) != objNull) then {
+                _flowCalculation = _flowCalculation * 0.6;
             };
             private _bagChange = (_flowCalculation * (_IVflow select _bodyPart) * (_IVrate select _bodyPart) * (1 + (_pressureBag select _bodyPart)) * _rateCoef) min _bagVolumeRemaining; // absolute value of the change in miliLiters
             if ((_IVarray select _bodyPart) in [2,3,4,10,11,12]) then {
