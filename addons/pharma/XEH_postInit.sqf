@@ -57,8 +57,8 @@
 [QGVAR(pervitinOverdoseLocal), LINKFUNC(treatmentAdvanced_PervitinOverdoseLocal)] call CBA_fnc_addEventHandler;
 [QGVAR(txaOverdoseLocal), LINKFUNC(treatmentAdvanced_TXAOverdoseLocal)] call CBA_fnc_addEventHandler;
 
-[QGVAR(applyPressureBag), LINKFUNC(applyPressureBagLocal)] call CBA_fnc_addEventHandler;
-[QGVAR(removePressureBag), LINKFUNC(removePressureBagLocal)] call CBA_fnc_addEventHandler;
+[QGVAR(applyPressureBag), LINKFUNC(treatmentAdvanced_applyPressureBagLocal)] call CBA_fnc_addEventHandler;
+[QGVAR(removePressureBag), LINKFUNC(treatmentAdvanced_removePressureBagLocal)] call CBA_fnc_addEventHandler;
 
 [QEGVAR(misc,handleRespawn), LINKFUNC(handleRespawn)] call CBA_fnc_addEventHandler;
 
