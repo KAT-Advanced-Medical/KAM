@@ -32,19 +32,25 @@ _medic setVariable [QGVAR(pressureIVApplied), true, true];
 [LLSTRING(Pressure_Ready), 1.5, _medic, 11] call ACEFUNC(common,displayTextStructured);
 
 [{
-    params ["_medic", "_patient"];
-    (_patient distance2D _medic) > 5;
+    params ["_medic", "_patient", "_partIndex"];
+    private _pressureBag = _patient getVariable [QGVAR(pressureBag), [0,0,0,0,0,0,0,0,0,0,0,0]];
+    private _bodyPart = ALL_BODY_PARTS select _partIndex;
+    (((_patient distance2D _medic) > 5) || ((_pressureBag select _partIndex) == 1) || !([_medic, _patient, _bodyPart] call FUNC(hasIVBag)));
 }, {
     params ["_medic", "_patient", "_partIndex"];
     private _pressureBag = _patient getVariable [QGVAR(pressureBag), [0,0,0,0,0,0,0,0,0,0,0,0]];
-    _pressureBag set [_partIndex, 0];
+    if ((_pressureBag select _partIndex) != 1) then {
+        _pressureBag set [_partIndex, 0];
+    };
     _patient setVariable [QGVAR(pressureBag), _pressureBag, true];
     _medic setVariable [QGVAR(pressureIVApplied), false, true];
     [LLSTRING(Pressure_Cancel), 1.5, _medic] call ACEFUNC(common,displayTextStructured);
 }, [_medic, _patient, _partIndex], 3600, {
     params ["_medic", "_patient", "_partIndex"];
     private _pressureBag = _patient getVariable [QGVAR(pressureBag), [0,0,0,0,0,0,0,0,0,0,0,0]];
-    _pressureBag set [_partIndex, 0];
+    if ((_pressureBag select _partIndex) != 1) then {
+        _pressureBag set [_partIndex, 0];
+    };
     _patient setVariable [QGVAR(pressureBag), _pressureBag, true];
     _medic setVariable [QGVAR(pressureIVApplied), false, true];
     [LLSTRING(Pressure_Cancel), 1.5, _medic] call ACEFUNC(common,displayTextStructured);

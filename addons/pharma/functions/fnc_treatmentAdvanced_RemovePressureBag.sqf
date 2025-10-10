@@ -17,4 +17,4 @@
  */
 
 params ["_medic", "_patient", "_bodyPart"];
-[QGVAR(removePressureBagLocal), [_medic, _patient, _bodyPart], _patient] call CBA_fnc_targetEvent;
+[QGVAR(removePressureBag), [_medic, _patient, _bodyPart], _patient] call CBA_fnc_targetEvent;
