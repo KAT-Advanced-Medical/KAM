@@ -48,21 +48,21 @@ if (_treatmentTime == 0) exitWith {false};
 if (_isInZeus) then {
     _treatmentTime = 1;
 };
-if (GVAR(usePainInTreatment)) then {
+if (GVAR(treatmentModifiers)) then {
     private _pain = GET_PAIN_PERCEIVED(_medic);
     private _treatMult = linearConversion [0, 1, _pain, 1, 2];
     _treatmentTime = _treatmentTime * _treatMult;
 };
 
-if (_medic getVariable [QEGVAR(airway,overstretching), false]) then {
+if ((_medic getVariable [QEGVAR(airway,overstretching), false]) && (GVAR(treatmentModifiers))) then {
     _treatmentTime = _treatmentTime + 3;
 };
 
-if (_medic getVariable [QEGVAR(pharma,pressureIVApplied), false]) then {
+if ((_medic getVariable [QEGVAR(pharma,pressureIVApplied), false]) && (GVAR(treatmentModifiers))) then {
     _treatmentTime = _treatmentTime + 3;
 };
 
-if ((selectMax ((_medic getVariable [VAR_FRACTURES, DEFAULT_FRACTURE_VALUES]) select [4, 4])) != 0) then {
+if (((selectMax ((_medic getVariable [VAR_FRACTURES, DEFAULT_FRACTURE_VALUES]) select [4, 4])) != 0) && (GVAR(treatmentModifiers))) then {
     _treatmentTime = _treatmentTime * 1.25;
 };
 // Consume one of the treatment items if needed
