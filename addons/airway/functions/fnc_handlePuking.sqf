@@ -50,11 +50,11 @@ _unit setVariable ["kat_pukeActive_PFH", true];
             [_unit, _i] call FUNC(airwayPFH);
         };
         private _nauseaMult = _unit getVariable [QEGVAR(pharma,nauseaMult), 1];
-        if (_nauseaMult > 1000) then {
+        if (_nauseaMult > 100) then {
             _nauseaMult = 1
         };
         private _nauseaMult = (_nauseaMult min 6) max 0.1;
-        private _delay = ((GVAR(occlusion_repeatTimer) / _nauseaMult) * random [0.8, 1, 1.3]) max 5;
+        private _delay = ((GVAR(occlusion_repeatTimer) / _nauseaMult) * random [0.8, 1, 1.3]) max 10;
         [_idPFH, _delay] call CBA_fnc_setPerFrameHandlerDelay;
         if (GVAR(checkbox_puking_sound)) then {
             private _sound = selectRandom [

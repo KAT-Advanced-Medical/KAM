@@ -23,6 +23,7 @@ private _airway = LSTRING(Ultra_Airway_Normal);
 private _cardiac = LSTRING(Ultra_Airway_Normal);
 private _thorasic = LSTRING(Ultra_Airway_Normal);
 private _thorasicRight = LSTRING(Ultra_Airway_Normal);
+private _lungStatus = LSTRING(Ultra_Airway_Normal);
 private _occlusion = ((_patient getVariable [QEGVAR(airway,occlusion), [0, 0, 0]]) findIf { _x > 2 }) != -1;
 private _obstruction = ((_patient getVariable [QEGVAR(airway,obstruction), [0, 0, 0]]) findIf { _x != 0 }) != -1;
 private _catastrophicState = _patient getVariable [QEGVAR(airway,catastrophicAirway), [false, false]];
@@ -78,6 +79,24 @@ switch (_patient getVariable [QEGVAR(circulation,cardiacArrestType), 0]) do {
         _cardiac = LSTRING(Ultra_Airway_Normal);
     };
 };
+private _lungVolume = GET_KAT_SURFACE_AREA(_patient);
+switch (true) do {
+    case (_lungVolume < 350): {
+        _cardiac = LSTRING(Ultra_Lung_Status_1);
+    };
+    case (_lungVolume < 300): {
+        _cardiac = LSTRING(Ultra_Lung_Status_2);
+    };
+    case (_lungVolume < 250): {
+        _cardiac = LSTRING(Ultra_Lung_Status_3);
+    };
+    case (_lungVolume < 200): {
+        _cardiac = LSTRING(Ultra_Lung_Status_4);
+    };
+    default {
+        _cardiac = LSTRING(Ultra_Lung_Status_0);
+    };
+};
 
 if (_patient getVariable [QEGVAR(circulation,effusion), 0] > 0) then {
     _cardiac = LSTRING(Ultra_Cardiac_Tamponade);
@@ -90,7 +109,15 @@ if !(alive _patient) then {
     _airway = LSTRING(Ultra_Airway_NoActivity);
 };
 
+[_patient, "quick_view", LSTRING(Ultra_Airway)] call EFUNC(circulation,removeLog);
+[_patient, "quick_view", LSTRING(Ultra_Cardiac)] call EFUNC(circulation,removeLog);
+[_patient, "quick_view", LSTRING(Ultra_Thorasic)] call EFUNC(circulation,removeLog);
+[_patient, "quick_view", LSTRING(Ultra_ThorasicRight)] call EFUNC(circulation,removeLog);
+[_patient, "quick_view", LSTRING(Ultra_LungStatus)] call EFUNC(circulation,removeLog);
+
+
 [_patient, "quick_view", LSTRING(Ultra_Airway), [_airway]] call ACEFUNC(medical_treatment,addToLog);
 [_patient, "quick_view", LSTRING(Ultra_Cardiac), [_cardiac]] call ACEFUNC(medical_treatment,addToLog);
 [_patient, "quick_view", LSTRING(Ultra_Thorasic), [_thorasic]] call ACEFUNC(medical_treatment,addToLog);
 [_patient, "quick_view", LSTRING(Ultra_ThorasicRight), [_thorasicRight]] call ACEFUNC(medical_treatment,addToLog);
+[_patient, "quick_view", LSTRING(Ultra_LungStatus), [_lungStatus]] call ACEFUNC(medical_treatment,addToLog);
