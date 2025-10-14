@@ -230,6 +230,7 @@
             <Italian>Inaccuratezza della misurazione dei parametri vitali dell'orologio</Italian>
             <German>Ungenauigkeit der Uhren-Vitalwerte</German>
             <Japanese>腕時計バイタルの不正確性</Japanese>
+            <Czech>Nepřesnost ukazatelů vitálních funkcí hodinek</Czech>
             <Dutch>Inaccuraatheid van vitale waarden gemeten via horloge</Dutch>
         </Key>
         <Key ID="STR_KAT_Watch_SETTING__WatchInaccuracy_Desc">
@@ -238,6 +239,7 @@
             <Italian>Abilita l'inaccuratezza dell'orologio quando vengono letti i parametri vitali di un paziente</Italian>
             <German>Aktiviert Ungenauigkeit der Vitalwerte der Uhren</German>
             <Japanese>腕時計が患者のバイタルを不正確に読み取るようになります。</Japanese>
+            <Czech>Umožňuje nepřesnost hodinek při čtení životních funkcí pacienta</Czech>
             <Dutch>Staat inaccuraatheid bij metingen van vitale waarden door horloges toe</Dutch>
         </Key>
         <Key ID="STR_KAT_Watch_STSDescription">
@@ -310,6 +312,7 @@
             <Italian>KAT - ADV Medica: Orologi</Italian>
             <German>KAT - ADV Medical: Uhren</German>
             <Japanese>KAM - 腕時計 (Watch)</Japanese>
+            <Czech>KAT - ADV Zdravotní modul: Hodinky</Czech>
             <Dutch>KAT - ADV Medical: Horloges</Dutch>
         </Key>
         <Key ID="STR_KAT_Watch_descentFT">
