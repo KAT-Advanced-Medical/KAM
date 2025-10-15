@@ -227,7 +227,7 @@
         <Key ID="STR_KAT_Pharma_CheckCoag_DisplayNameProgress">
             <English>Taking Blood Sample,</English>
             <Czech>Odebírání vzorku krve</Czech>
-            <French>Prélè¨vement de sang,</French>
+            <French>Prélèvement de sang,</French>
             <Spanish>Tomar muestra de sangre,</Spanish>
             <Italian>Prelievo campione di sangue,</Italian>
             <Portuguese>Coletando amostra sanguínea,</Portuguese>
@@ -856,7 +856,7 @@
         <Key ID="STR_KAT_Pharma_Lidocaine_DescShort">
             <English>Used to combat cardiac arrest</English>
             <Czech>Používá se k léčení srdeční zástavy</Czech>
-            <French>Antiarythmique utilisé pour combattre les formes choquables arrêt cardiaque.</French>
+            <French>Utilisé pour combattre l'arrêt cardiaque</French>
             <Spanish>Se utiliza para combatir un paro cardiaco</Spanish>
             <Italian>Usato per combattere l'arresto cardiaco</Italian>
             <Polish>Używany do zwalczania zatrzymania akcji serca</Polish>
