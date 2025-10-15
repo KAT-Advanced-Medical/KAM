@@ -1937,26 +1937,32 @@
         <Key ID="STR_KAT_Misc_SETTING_ENABLE_DESC">
             <English>Enables the KAT Misc medical system features (e.g. IV-Stands)</English>
             <German>Aktiviert die KAT Misc Medizinsystem-Funktionen (z.B. IV-Ständer)</German>
+            <French>Active les fonctionnalités du système médical KAT Misc (par exemple, les supports pour perfusions intraveineuses).</French>
         </Key>
         <Key ID="STR_KAT_Misc_SETTING_treatmentTimeDetachTourniquet_DESC">
             <English>Time required to detach a tourniquet from a patient</English>
             <German>Benötigte Zeit zum Entfernen eines Tourniquets vom Patienten</German>
+            <French>Temps nécessaire pour retirer un garrot d'un patient</French>
         </Key>
         <Key ID="STR_KAT_Misc_SETTING_tourniquetEffects_Enable_DESC">
             <English>Enables tourniquet effects on patient health and stamina</English>
             <German>Aktiviert Tourniquet-Effekte auf Patientengesundheit und Ausdauer</German>
+            <French>Active les effets du garrot sur la santé et l'endurance du patient.</French>
         </Key>
         <Key ID="STR_KAT_Misc_SETTING_tourniquetEffects_PositiveMultiplier_DESC">
             <English>Multiplier for positive tourniquet effects</English>
             <German>Multiplikator für positive Tourniquet-Effekte</German>
+            <French>Multiplicateur pour les effets positifs du garrot</French>
         </Key>
         <Key ID="STR_KAT_Misc_SETTING_tourniquetEffects_NegativeMultiplier_DESC">
             <English>Multiplier for negative tourniquet effects</English>
             <German>Multiplikator für negative Tourniquet-Effekte</German>
+            <French>Multiplicateur pour les effets négatifs du garrot</French>
         </Key>
         <Key ID="STR_KAT_Misc_SETTING_FAK_RemoveWhenEmpty_DESC">
             <English>Automatically removes first aid kits from inventory when they become empty</English>
             <German>Entfernt automatisch Erste-Hilfe-Kästen aus dem Inventar, wenn sie leer werden</German>
+            <French>Supprime automatiquement les trousses de premiers secours de l'inventaire lorsqu'elles sont vides.</French>
         </Key>
     </Package>
 </Project>

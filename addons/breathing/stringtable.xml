@@ -3284,70 +3284,87 @@
         <Key ID="STR_KAT_Breathing_SETTING_SpO2_dieValue_DESC">
             <English>Sets the SpO2 value that causes death when reached</English>
             <German>Legt den SpO2-Wert fest, der bei Erreichen den Tod verursacht</German>
+            <French>Définit la valeur SpO2 qui entraîne la mort lorsqu'elle est atteinte.</French>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_SpO2_dieActive_DESC">
             <English>Enables death when SpO2 reaches the lethal value</English>
             <German>Aktiviert den Tod, wenn SpO2 den tödlichen Wert erreicht</German>
+            <French>Active la mort lorsque la SpO2 atteint la valeur létale</French>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_SpO2_cardiacValue_DESC">
             <English>Sets the SpO2 value that triggers cardiac arrest</English>
             <German>Legt den SpO2-Wert fest, der einen Herzstillstand auslöst</German>
+            <French>Définit la valeur SpO2 qui déclenche un arrêt cardiaque.</French>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_SpO2_cardiacActive_DESC">
             <English>Enables cardiac arrest when SpO2 reaches the cardiac value</English>
             <German>Aktiviert Herzstillstand, wenn SpO2 den Herzwert erreicht</German>
+            <French>Active l'arrêt cardiaque lorsque la SpO2 atteint la valeur cardiaque</French>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_MultiplyPositive_DESC">
             <English>Multiplier for positive SpO2 changes during breathing</English>
             <German>Multiplikator für positive SpO2-Änderungen beim Atmen</German>
+            <French>Multiplicateur pour les variations positives de la SpO2 pendant la respiration</French>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_MultiplyNegative_DESC">
             <English>Multiplier for negative SpO2 changes when not breathing properly</English>
             <German>Multiplikator für negative SpO2-Änderungen bei unzureichender Atmung</German>
+            <French>Multiplicateur pour les variations négatives de SpO2 en cas de respiration insuffisante</French>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_SpO2_Perfusion_DESC">
             <English>Controls whether SpO2 falls during cardiac arrest</English>
             <German>Kontrolliert, ob SpO2 während eines Herzstillstands fällt</German>
+            <French>Contrôle si la SpO2 chute pendant un arrêt cardiaque</French>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_PerfusionMultiplier_DESC">
             <English>Multiplier for SpO2 changes during cardiac arrest</English>
             <German>Multiplikator für SpO2-Änderungen während eines Herzstillstands</German>
+            <French>Multiplicateur pour les variations de SpO2 pendant un arrêt cardiaque</French>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_SELF_CHESTSEAL_DESC">
             <English>Allows players to apply chest seals on themselves</English>
             <German>Ermöglicht es Spielern, sich selbst Thoraxpflaster anzulegen</German>
+            <French>Permet aux joueurs d'appliquer eux-mêmes des pansements occlusifs sur leur poitrine.</French>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_clearChestSealAfterTreatment_DESC">
             <English>Removes chest seal from medical menu after pneumothorax treatment</English>
             <German>Entfernt Thoraxpflaster aus dem Medizinmenü nach Pneumothorax-Behandlung</German>
+            <French>Retire le pansement occlusif thoracique du menu médical après le traitement du pneumothorax.</French>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_Threshold_SpO2Warning_DESC">
             <English>SpO2 level at which the pulse oximeter starts warning</English>
             <German>SpO2-Wert, bei dem das Pulsoximeter zu warnen beginnt</German>
+            <French>Niveau de SpO2 auquel l'oxymètre de pouls commence à émettre un avertissement</French>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_pneumothorax_DESC">
             <English>Probability for pneumothorax to occur from thoracic injuries</English>
             <German>Wahrscheinlichkeit für Pneumothorax bei Thoraxverletzungen</German>
+            <French>Probabilité d'apparition d'un pneumothorax à la suite d'une blessure thoracique</French>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_inspectChest_enable_DESC">
             <English>Enables the inspect chest action for diagnosing thoracic injuries</English>
             <German>Aktiviert die Brustraumuntersuchung zur Diagnose von Thoraxverletzungen</German>
+            <French>Permet l'action d'inspection thoracique pour diagnostiquer les blessures thoraciques.</French>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_inspectChest_medLvl_DESC">
             <English>Required medical training level to perform chest inspection</English>
             <German>Erforderliche medizinische Ausbildungsstufe für Brustraumuntersuchung</German>
+            <French>Niveau de formation médicale requis pour effectuer un examen thoracique</French>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_inspectChest_time_DESC">
             <English>Time required to complete chest inspection</English>
             <German>Benötigte Zeit für die Brustraumuntersuchung</German>
+            <French>Temps nécessaire pour effectuer l'inspection thoracique</French>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_Select_Etco2_Units_DESC">
             <English>Units for displaying EtCO2 values</English>
             <German>Einheiten für die Anzeige von EtCO2-Werten</German>
+            <French>Unités d'affichage des valeurs d'EtCO2</French>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_BVMOxygen_Multiplier_DESC">
             <English>Effectiveness multiplier for BVM when used with oxygen</English>
             <German>Effektivitätsmultiplikator für BVM bei Verwendung mit Sauerstoff</German>
+            <French>Multiplicateur d'efficacité pour le BVM lorsqu'il est utilisé avec de l'oxygène</French>
         </Key>
     </Package>
 </Project>
