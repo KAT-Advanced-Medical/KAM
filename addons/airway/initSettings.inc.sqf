@@ -94,6 +94,15 @@
 ] call CBA_fnc_addSetting;
 
 [
+    QGVAR(minPukeTime),
+    "SLIDER",
+    [LLSTRING(SETTING_minPukeTime),LLSTRING(SETTING_minPukeTime_DESC)],
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_AirwayInjury)],
+    [10, 1200, 30, 0],
+    true
+] call CBA_fnc_addSetting;
+
+[
     QGVAR(catastrophicAirwayChance),
     "SLIDER",
     [LLSTRING(SETTING_catastrophicAirwayChance),LLSTRING(SETTING_catastrophicAirwayChance_DESC)],
@@ -304,6 +313,15 @@
     [LLSTRING(TIME_SUCTION),LLSTRING(TIME_SUCTION_DESC)],
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_Suction)],
     [1, 30, 12, 0],
+    true
+] call CBA_fnc_addSetting;
+
+[
+    QGVAR(SuctionEffectiveness),
+    "SLIDER",
+    [LLSTRING(SuctionEffectiveness),LLSTRING(SuctionEffectiveness_DESC)],
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_Suction)],
+    [1, 4, 1, 0],
     true
 ] call CBA_fnc_addSetting;
 

@@ -91,7 +91,7 @@ private _state = [] call CBA_fnc_createNamespace;
 [QEGVAR(circulation,tourniquetTime), [0,0,0,0,0,0,0,0,0,0,0,0]],
 [QEGVAR(circulation,defaultHeartRate), 80],
 [QEGVAR(circulation,bloodGas), DEFAULT_BLOOD_GAS],
-[QEGVAR(circulation,testedBloodGas), [0,0,0,0,0,0,0,0,0,0,0,0]],
+[QEGVAR(circulation,testedBloodGas), [0,0,0,0,0,0]],
 [QEGVAR(circulation,ABGmenuShow), false],
 [QEGVAR(circulation,ht), []],
 [QEGVAR(circulation,effusion), 0],

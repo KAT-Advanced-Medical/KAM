@@ -3852,28 +3852,16 @@
             <English>Upper Right Leg</English>
         </Key>
         <Key ID="STR_KAT_Pharma_Coag_Sense_Display">
-            <English>Coag-Sense</English>
-            <Japanese>Coag-Sense</Japanese>
-            <Spanish>Coag-Sense</Spanish>
-            <Portuguese>Medidor de Coagulação</Portuguese>
-            <Dutch>Coag-Sense</Dutch>
-            <French>Coag-Sense</French>
-            <Italian>Coag-Sense</Italian>
+            <English>Portable Blood Tester</English>
         </Key>
         <Key ID="STR_KAT_Pharma_Coag_Sense_Display_DESC">
-            <English>The Coag-Sense is a PT/INR monitoring system that can measure the efficiency of your blood clotting</English>
-            <Japanese>Coag-Senseは血液凝固の効率を測定できる PT/INR モニタリングシステムです。</Japanese>
-            <Spanish>El Coag-Sense es un sistema de monitorización PT/INR que puede medir la eficiencia de su coagulación sanguínea</Spanish>
-            <Portuguese>O Medidor de Coagulação é um sistema de monitoramento PT/INR que pode mensurar a eficiência da sua coagulação sanguínea</Portuguese>
-            <Dutch>De Coag-Sense is een PT-INR monitoringssysteem dat de effectiviteit van jouw wondstolling kan bepalen</Dutch>
-            <French>Le Coag-Sense est un système de surveillance PT/INR qui permet de mesurer l'efficacité de la coagulation sanguine</French>
-            <Italian>Il Coag-Sense è un sistema di monitoraggio PT/INR che può misurare l'efficienza della coagulazione del sangue.</Italian>
+            <English>The Portable Blood Tester is a blood monitoring system that can both measure the efficiency of your blood clotting and your ABG</English>
         </Key>
         <Key ID="STR_KAT_Pharma_Coag_Sense_Log">
-            <English>Coag-Sense concludes: Patient has an INR of %1</English>
+            <English>Blood Tester concludes: Patient has an INR of %1</English>
         </Key>
         <Key ID="STR_KAT_Pharma_CheckCoag_DisplayName">
-            <English>Measure PT/INR</English>
+            <English>Take Blood Sample</English>
             <Japanese>PT/INRを測定する</Japanese>
             <Spanish>Medir PT/INR</Spanish>
             <Portuguese>Medir PT/INR</Portuguese>
@@ -5908,7 +5896,7 @@
         <Key ID="STR_KAT_Pharma_fentpatch_display">
             <English>Fentanyl Patch</English>
         </Key>
-        <Key ID="STR_KAT_Pharma_apply_fentpatch">
+        <Key ID="STR_KAT_Pharma_Apply_FentPatch">
             <English>Apply Fentanyl Patch</English>
         </Key>
         <Key ID="STR_KAT_Pharma_applying_fentpatch">
@@ -6009,6 +5997,9 @@
         </Key>
         <Key ID="STR_KAT_Pharma_pressureBag_DescShort">
             <English>Pressure Bag, increases flow rate of fluid bags when attached</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_ABG_Log">
+            <English>Results: %1</English>
         </Key>
     </Package>
 </Project>

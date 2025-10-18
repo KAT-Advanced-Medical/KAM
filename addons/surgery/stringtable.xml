@@ -1644,7 +1644,7 @@
         <Key ID="STR_KAT_Surgery_PENALTY_MULT_DESC">
             <English>Multiplier for the delay (120-200 seconds) before a fracture is fully healed after surgery (no limping), 0 to disable</English>
         </Key>
-        <Key ID="STR_KAT_Surgery_Ultra_Lung_Status">
+        <Key ID="STR_KAT_Surgery_Ultra_lungstatus">
             <English>Lung Volume Status: %1</English>
         </Key>
         <Key ID="STR_KAT_Surgery_Ultra_Lung_Status_0">

@@ -225,43 +225,24 @@ if ((_target getVariable [QEGVAR(pharma,pressureBag), [0,0,0,0,0,0,0,0,0,0,0,0]]
     };
 };
 // Indicate the amount of pain the unit is in
-if (_target call ACEFUNC(common,isAwake) && ((_target == ACE_Player) || {!isPlayer _target}))  then {
-    if (GVAR(localPain) && ((_target == ACE_Player) || {!isPlayer _target})) then {
-        private _pain = GET_PAIN_PERCEIVED(_target);
-            if (_pain > 0) then {
-            private _painText = switch (true) do {
-                case (_pain > PAIN_UNCONSCIOUS): {
-                    ACELSTRING(medical_treatment,Status_SeverePain);
-                };
-                case (_pain > (PAIN_UNCONSCIOUS / 5)): {
-                    ACELSTRING(medical_treatment,Status_Pain);
-                };
-                default {
-                    ACELSTRING(medical_treatment,Status_MildPain);
-                };
-            };
-            _entries pushBack [localize _painText, [1, 1, 1, 1]];
-        } else {
-            if (ACEGVAR(medical_gui,showInactiveStatuses)) then {_entries pushBack [localize ACELSTRING(medical_treatment,Status_NoPain), _nonissueColor];};
+// Indicate the amount of pain the unit is in
+if (_target call ACEFUNC(common,isAwake)) then {
+    private _pain = GET_PAIN_PERCEIVED(_target);
+    if (_pain > 0) then {
+    private _painText = switch (true) do {
+        case (_pain > PAIN_UNCONSCIOUS): {
+            ACELSTRING(medical_treatment,Status_SeverePain);
         };
+        case (_pain > (PAIN_UNCONSCIOUS / 5)): {
+            ACELSTRING(medical_treatment,Status_Pain);
+        };
+        default {
+            ACELSTRING(medical_treatment,Status_MildPain);
+        };
+    };
+    _entries pushBack [localize _painText, [1, 1, 1, 1]];
     } else {
-        private _pain = GET_PAIN_PERCEIVED(_target);
-            if (_pain > 0) then {
-            private _painText = switch (true) do {
-                case (_pain > PAIN_UNCONSCIOUS): {
-                    ACELSTRING(medical_treatment,Status_SeverePain);
-                };
-                case (_pain > (PAIN_UNCONSCIOUS / 5)): {
-                    ACELSTRING(medical_treatment,Status_Pain);
-                };
-                default {
-                    ACELSTRING(medical_treatment,Status_MildPain);
-                };
-            };
-            _entries pushBack [localize _painText, [1, 1, 1, 1]];
-        } else {
-            if (ACEGVAR(medical_gui,showInactiveStatuses)) then {_entries pushBack [localize ACELSTRING(medical_treatment,Status_NoPain), _nonissueColor];};
-        };
+        if (ACEGVAR(medical_gui,showInactiveStatuses)) then {_entries pushBack [localize ACELSTRING(medical_treatment,Status_NoPain), _nonissueColor];};
     };
 };
 

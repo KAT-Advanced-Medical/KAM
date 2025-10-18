@@ -28,9 +28,10 @@ if (_noSurgicalAirway) then {
     _patient setVariable [QGVAR(airway), false, true];
     _patient setVariable [QGVAR(clearedTime), 0, true];
     _patient setVariable [QGVAR(cricothyrotomy), 0, true];
-    _patient setVariable [QGVAR(occlusionMitigation), [0, 0, 0], true];
+    
 };
 _patient call FUNC(handleAwakePuking);
+_patient setVariable [QGVAR(occlusionMitigation), [0, 0, 0], true];
 _patient setVariable [QGVAR(obstruction), [0, 0, 0], true];
 _patient setVariable [QGVAR(overstretch), false, true];
 _patient setVariable [QGVAR(recovery), false, true];

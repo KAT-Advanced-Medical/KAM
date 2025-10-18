@@ -82,19 +82,19 @@ switch (_patient getVariable [QEGVAR(circulation,cardiacArrestType), 0]) do {
 private _lungVolume = GET_KAT_SURFACE_AREA(_patient);
 switch (true) do {
     case (_lungVolume < 350): {
-        _cardiac = LSTRING(Ultra_Lung_Status_1);
+        _lungStatus = LSTRING(Ultra_Lung_Status_1);
     };
     case (_lungVolume < 300): {
-        _cardiac = LSTRING(Ultra_Lung_Status_2);
+        _lungStatus = LSTRING(Ultra_Lung_Status_2);
     };
     case (_lungVolume < 250): {
-        _cardiac = LSTRING(Ultra_Lung_Status_3);
+        _lungStatus = LSTRING(Ultra_Lung_Status_3);
     };
     case (_lungVolume < 200): {
-        _cardiac = LSTRING(Ultra_Lung_Status_4);
+        _lungStatus = LSTRING(Ultra_Lung_Status_4);
     };
     default {
-        _cardiac = LSTRING(Ultra_Lung_Status_0);
+        _lungStatus = LSTRING(Ultra_Lung_Status_0);
     };
 };
 

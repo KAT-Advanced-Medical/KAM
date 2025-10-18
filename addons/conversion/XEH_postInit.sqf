@@ -14,7 +14,7 @@
     [player, _loadout] call CBA_fnc_setLoadout;
 
     _previousUnit setVariable [QEGVAR(vitals,simpleMedical), false, true];
-    _previousUnit setVariable [QGVAR(currentConverted), true, true];
+    _previousUnit setVariable [QGVAR(currentlyConverted), true, true];
     _previousUnit setVariable [QACEGVAR(medical_statemachine,AIUnconsciousness), true, true];
 
     selectPlayer _unit; 

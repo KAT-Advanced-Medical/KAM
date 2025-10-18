@@ -35,9 +35,12 @@ _unit setVariable ["kat_pukeActive_PFH", true];
         _unit setVariable ["kat_pukeActive_PFH", false];
         [_idPFH] call CBA_fnc_removePerFrameHandler;
     };
-    if (random (100) <= GVAR(airwayPukeChance)) then {
+    private _nauseaMult = _unit getVariable [QEGVAR(pharma,nauseaMult), 1];
+    private _nauseaMult = (_nauseaMult min 6) max 0.1;
+    private _nauseaChance = linearConversion [1, 6, _nauseaMult, 1, 3, true];
+    if ((random 100) <= (GVAR(airwayPukeChance) * _nauseaChance)) then {
         private _occlusionState = _unit getVariable [QGVAR(occlusion), [0, 0, 0]];
-        private _volume = (_unit getVariable [QGVAR(stomachVolume), 5]) max 2;
+        private _volume = (_unit getVariable [QGVAR(stomachVolume), 5]) max 1;
         private _mitigation = _unit getVariable [QGVAR(occlusionMitigation), [0, 0, 0]];
         _occlusionState set [0, ((_occlusionState select 0) + floor (_volume * 1.5 * (1 - (_mitigation select 0)))) min 10];
         _occlusionState set [1, ((_occlusionState select 1) + floor (_volume * (1 - (_mitigation select 1)))) min 10];
@@ -46,15 +49,7 @@ _unit setVariable ["kat_pukeActive_PFH", true];
         _unit setVariable [QGVAR(stomachVolume), ((_volume - 1) max 1), true];
         _unit setVariable [QGVAR(hasPuked), true, true];
         TRACE_1("occlusion",_occlusionState);
-        for "_i" from 0 to 2 do {
-            [_unit, _i] call FUNC(airwayPFH);
-        };
-        private _nauseaMult = _unit getVariable [QEGVAR(pharma,nauseaMult), 1];
-        if (_nauseaMult > 100) then {
-            _nauseaMult = 1
-        };
-        private _nauseaMult = (_nauseaMult min 6) max 0.1;
-        private _delay = ((GVAR(occlusion_repeatTimer) / _nauseaMult) * random [0.8, 1, 1.3]) max 10;
+        private _delay = ((GVAR(occlusion_repeatTimer) / _nauseaMult) * random [0.8, 1, 1.3]) max GVAR(minPukeTime);
         [_idPFH, _delay] call CBA_fnc_setPerFrameHandlerDelay;
         if (GVAR(checkbox_puking_sound)) then {
             private _sound = selectRandom [

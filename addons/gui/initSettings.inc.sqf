@@ -10,14 +10,14 @@
 ] call CBA_fnc_addSetting;
 
 // Label left and right in medical menu
-[
-    QGVAR(localPain),
-    "CHECKBOX",
-    [LSTRING(localPain_DisplayName), LSTRING(localPain_Description)],
-    [CBA_SETTINGS_CAT, LSTRING(SubCategory_Basic)],
-    [false],
-    true
-] call CBA_fnc_addSetting;
+//[
+//    QGVAR(localPain),
+//    "CHECKBOX",
+//    [LSTRING(localPain_DisplayName), LSTRING(localPain_Description)],
+//    [CBA_SETTINGS_CAT, LSTRING(SubCategory_Basic)],
+//    [false],
+//    true
+//] call CBA_fnc_addSetting;
 
 [
     QGVAR(showPatientSideLabels),
