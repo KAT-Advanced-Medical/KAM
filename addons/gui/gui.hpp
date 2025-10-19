@@ -1,10 +1,8 @@
 class RscText;
 class RscStructuredText;
 class RscButton;
-class RscPicture;
 class RscListBox;
 class RscActivePicture;
-class RscButtonMenu;
 class RscControlsGroup;
 class RscControlsGroupNoScrollbars;
 class RscCombo;
