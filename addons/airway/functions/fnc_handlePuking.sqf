@@ -22,6 +22,7 @@ params ["_unit"];
 if ((_unit getVariable ["kat_pukeActive_PFH", false]) || !(GVAR(enable)) || (_unit getVariable ["KAT_Occlusion_Exclusion", false])) exitWith {};
 _unit setVariable ["kat_pukeActive_PFH", true];
 
+if (_unit getVariable [QEGVAR(vitals,simpleMedical), false]) exitWith {};
 
 [{
     params ["_unit"];
@@ -50,6 +51,7 @@ _unit setVariable ["kat_pukeActive_PFH", true];
         _unit setVariable [QGVAR(hasPuked), true, true];
         TRACE_1("occlusion",_occlusionState);
         private _delay = ((GVAR(occlusion_repeatTimer) / _nauseaMult) * random [0.8, 1, 1.3]) max GVAR(minPukeTime);
+        [_unit] call FUNC(airwayDeterioration);
         [_idPFH, _delay] call CBA_fnc_setPerFrameHandlerDelay;
         if (GVAR(checkbox_puking_sound)) then {
             private _sound = selectRandom [
@@ -64,6 +66,6 @@ _unit setVariable ["kat_pukeActive_PFH", true];
     }, GVAR(occlusion_repeatTimer), [_unit]] call CBA_fnc_addPerFrameHandler;
 
 
-}, [_unit], (10 * random [0.5, 1, 2])] call CBA_fnc_waitAndExecute;
+}, [_unit], (15 * random [0.7, 1, 1.5])] call CBA_fnc_waitAndExecute;
 
 

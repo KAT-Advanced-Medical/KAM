@@ -22,7 +22,7 @@
 
 params ["_medic", "_patient", "_bodyPart", "_classname", "", "_usedItem"];
 
-if !(((_patient getVariable [QGVAR(occlusion), [0, 0, 0]]) findIf { _x != 0 }) != -1) exitWith {
+if (((_patient getVariable [QGVAR(occlusion), [0, 0, 0]]) findIf { _x != 0 }) == -1) exitWith {
     private _output = LLSTRING(Accuvac_NA);
     [_output, 1.5, _medic] call ACEFUNC(common,displayTextStructured);
     if (_usedItem isEqualTo "kat_suction" && GVAR(Suction_reuse)) then {

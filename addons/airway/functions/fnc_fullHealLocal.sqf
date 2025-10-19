@@ -37,6 +37,7 @@ _patient setVariable [QGVAR(isVisualized), false, true];
 _patient setVariable [QGVAR(overstretching), false, true];
 _patient setVariable ["kat_occlusion_PFH", false, true];
 _patient setVariable ["kat_pukeActive_PFH", false, true];
+_patient setVariable ["KAT_DeteriorationPFH", false, true];
 [_patient, "blockRadio", "kat_crike", false] call ACEFUNC(common,statusEffect_set);
 [_patient, "blockSpeaking", "kat_crike", false] call ACEFUNC(common,statusEffect_set);
 
