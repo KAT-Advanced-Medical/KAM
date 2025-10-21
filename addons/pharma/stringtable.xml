@@ -5300,13 +5300,13 @@
             <English>5ml Syringe / 100mg Lidocaine</English>
         </Key>
         <Key ID="STR_KAT_Pharma_Push_lidocaine_10ml_10">
-            <English>Inject 40mg Lidocaine</English>
+            <English>Inject 40mg Lidocaine (SubQ)</English>
         </Key>
         <Key ID="STR_KAT_Pharma_Pushing_lidocaine_10ml_10">
-            <English>Injecting 40mg Lidocaine</English>
+            <English>Injecting 40mg Lidocaine (SubQ)</English>
         </Key>
         <Key ID="STR_KAT_Pharma_SyringeDisplay_lidocaine_10ml_10">
-            <English>10ml Syringe / 40mg Lidocaine</English>
+            <English>10ml Syringe / 40mg(SubQ) Lidocaine</English>
         </Key>
         <Key ID="STR_KAT_Pharma_Push_lorazepam_5ml_10">
             <English>Push 1mg Lorazepam</English>
