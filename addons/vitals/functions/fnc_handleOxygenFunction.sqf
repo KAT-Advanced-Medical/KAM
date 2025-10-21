@@ -64,7 +64,7 @@ if ((_existingPFH isEqualTo -1) && (!_airway || _paralysis)) then {
                 _unit setVariable [QGVAR(airwayMonitorPFH), -1];
             };
         } else {
-            [_idPfh] call CBA_fnc_removePerFrameHandler;
+            [_idPFH] call CBA_fnc_removePerFrameHandler;
             _unit setVariable [QGVAR(airwayMonitorPFH), -1];
         };
     },
@@ -90,7 +90,7 @@ if ((IN_CRDC_ARRST(_unit)) || !_airway || _paralysis) then {
             };
         };
         _respiratoryDepth = [0, 10] select ((_unit getVariable [QEGVAR(breathing,BVMInUse), false]) || (_unit getVariable [QEGVAR(breathing,attachedVent), false]));
-        private _baseTidalVolume = GET_KAT_SURFACE_AREA(_unit) * (_respiratoryDepth / 10);
+        private _baseTidalVolume = ((GET_KAT_SURFACE_AREA(_unit) * (_respiratoryDepth / 10)) min 0.8) max 0.2;;
         _actualVentilation = (_baseTidalVolume * _respiratoryRate) max 1;
     } else {
         _respiratoryRate = 0;
@@ -108,10 +108,12 @@ if ((IN_CRDC_ARRST(_unit)) || !_airway || _paralysis) then {
     private _baseRespiratoryDepth = ((DEFAULT_RESPIRATORY_DEPTH) - (_opioidDepression / 1.5));
     private _baseTidalVolume = GET_KAT_SURFACE_AREA(_unit) * (_baseRespiratoryDepth / 10);
 
-    _respiratoryRate = [(((_demandVentilation / _baseTidalVolume) * _respiratoryRateMult) min MAXIMUM_RR), 20] select (_unit getVariable [QEGVAR(breathing,BVMInUse), false]);
+    _respiratoryRate = (((_demandVentilation / _baseTidalVolume) * _respiratoryRateMult) min MAXIMUM_RR);
     
     // If respiratory rate is low due to PaCO2, it starts increasing faster to compensate
     if (_previousCyclePaco2 > 50) then { _respiratoryRate = (_respiratoryRate + ((_previousCyclePaco2 - 50) * 0.2)) min MAXIMUM_RR};
+
+    _respiratoryRate = [_respiratoryRate, 20] select (_unit getVariable [QEGVAR(breathing,BVMInUse), false]);
 
     _tidalVolume = _baseTidalVolume;
     if (_respiratoryRate > 25) then {
@@ -127,6 +129,7 @@ if ((IN_CRDC_ARRST(_unit)) || !_airway || _paralysis) then {
     _respiratoryDepth = _baseRespiratoryDepth * (_scaleFactor max 0.3); // never drops below 50% of base
     };
     // Obstructed airway reduces effective ventilation
+    _respiratoryDepth = [_respiratoryDepth, 10] select (_unit getVariable [QEGVAR(breathing,BVMInUse), false]);
     _actualVentilation = (_tidalVolume * _respiratoryRate) * _bronchospasm;
 };
 private _paco2 = 40;
@@ -166,7 +169,7 @@ private _fio2 = switch (true) do {
     case (_unit getVariable [QEGVAR(breathing,oxygenMaskActive), false]): { 0.95 };
     case (_unit getVariable [QEGVAR(breathing,oxygenTankConnected), false]): { 1 };
     case (_unit getVariable [QEGVAR(breathing,attachedVent), false]): { 1 };
-    case ((_unit getVariable [QEGVAR(breathing,nasalCannula), false]) && IN_MED_VEHICLE(_unit)): { 0.95 };
+    case ((_unit getVariable [QEGVAR(breathing,nasalCannula), false]) && ((IN_MED_FACILITY(_unit)) || (IN_MED_VEHICLE(_unit)))): { 0.95 };
     default { DEFAULT_FIO2 };
 };
 
