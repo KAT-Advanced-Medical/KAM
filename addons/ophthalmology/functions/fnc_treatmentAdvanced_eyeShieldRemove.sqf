@@ -14,4 +14,4 @@
 
 params ["_medic", "_patient"];
 
-[QGVAR(eyeShield), [_medic, _patient], _patient] call CBA_fnc_targetEvent;
+[QGVAR(eyeShieldRemove), [_medic, _patient], _patient] call CBA_fnc_targetEvent;
