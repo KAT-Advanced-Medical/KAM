@@ -29,7 +29,7 @@ if (_noSurgicalAirway) then {
     _patient setVariable [QGVAR(cricothyrotomy), 0, true];
     private _item = _patient getVariable [QGVAR(airway_item), ""];
     private _currentMonitors = _patient getVariable [QEGVAR(breathing,etco2Monitor), []];
-    _currentMonitors deleteAt (_currentMonitors find "Larynxtubus");
+    _currentMonitors deleteAt (_currentMonitors find _item);
     _patient setVariable [QEGVAR(breathing,etco2Monitor), _currentMonitors, true];
     _patient setVariable [QGVAR(airway_item), "", true];
 };
