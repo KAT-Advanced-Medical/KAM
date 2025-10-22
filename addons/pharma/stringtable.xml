@@ -4357,13 +4357,6 @@
         <Key ID="STR_KAT_Pharma_receivingNorepinephrineIVInfusionVolume">
             <English>Receiving Norepinephrine Infusion [%1ml]</English>
         </Key>
-        <Key ID="STR_KAT_Pharma_medLvl_CWMP">
-            <English>Allow using CWMP</English>
-            <French>Autoriser l'utilisation du CWMP</French>
-            <Japanese>戦闘傷病治療薬(CWMP)の許可</Japanese>
-            <German>Erlaube die Verwendung von CWMP</German>
-            <Italian>Consenti l'uso dei CWMP</Italian>
-        </Key>
         <Key ID="STR_KAT_Pharma_RemovingSalineIV_Progress">
             <English>Removing Saline IV bags</English>
         </Key>
