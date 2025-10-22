@@ -345,7 +345,7 @@
             <English>Perform Dialysis</English>
             <Czech>Provést dialýzu</Czech>
             <French>Effectuer une dialyse</French>
-            <Spanish>Efectuar dialisis</Spanish>
+            <Spanish>Efectuar diálisis</Spanish>
             <Italian>Esegui Dialisi</Italian>
             <Polish>Przeprowadź Dializę</Polish>
             <Portuguese>Realizar Diálise</Portuguese>
@@ -960,7 +960,7 @@
             <English>Opioid analgesic, used to suppress moderate pain</English>
             <Czech>Opioidní analgetikum, používané k potlačení střední bolesti</Czech>
             <French>Analgésique opioïde, utilisé pour supprimer les douleurs modérées</French>
-            <Spanish>Analgésico opioide, utilizado para suprimir el dolor moderador</Spanish>
+            <Spanish>Analgésico opioide, utilizado para suprimir el dolor moderado</Spanish>
             <Italian>Analgesico oppioide, usato per sopprimere il dolore moderato</Italian>
             <Polish>Opioidowy środek przeciwbólowy, stosowany do tłumienia umiarkowanego bólu</Polish>
             <German>Opioid-Analgetikum zur Unterdrückung mäßiger Schmerzen</German>
@@ -3560,7 +3560,7 @@
             <English>%1 performed dialysis</English>
             <Czech>%1 provedl dialýzu</Czech>
             <French>%1 a effectué une dialyse</French>
-            <Spanish>%1 realizó una dialisis</Spanish>
+            <Spanish>%1 realizó una diálisis</Spanish>
             <Italian>%1 ha eseguito la dialisi</Italian>
             <Polish>%1 przeprowadził dializę</Polish>
             <Portuguese>%1 realizou diálise</Portuguese>
