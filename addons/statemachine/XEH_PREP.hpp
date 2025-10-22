@@ -1,2 +1,1 @@
 PREP(handleCardiacArrestState);
-PREP(init);

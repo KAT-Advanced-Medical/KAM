@@ -19,29 +19,23 @@ params ["_medic", "_patient"];
 
 private _eyeInjuries = _patient getVariable [QGVAR(eyeInjuries), [1, 1]];
 
-// Show the overlay
 "KAT_EyeShield" cutRsc ["KAT_EyeShield", "PLAIN", 0, true];
 
 private _fnc_applyEyeCover = {
     params ["_patient", "_eyeDisplay", "_shieldItem"];
 
-    // Handle NVGs properly
     private _nvg = hmd _patient;
     if (_nvg != "") then {
         _patient unlinkItem _nvg;
         _patient addItem _nvg;
     };
 
-    // Apply the eye cover
     _patient linkItem _shieldItem;
 
-    // Display overlay for correct eye
     private _display = uiNamespace getVariable ["KAT_EyeShield", displayNull];
     private _eyeCtrl = _display displayCtrl _eyeDisplay;
     _eyeCtrl ctrlShow true;
     _eyeCtrl ctrlCommit 0;
-
-    // Start healing PFH
     [{
         params ["_args", "_pfhID"];
         _args params ["_patient", "_shieldItem"];
@@ -70,7 +64,7 @@ private _fnc_applyEyeCover = {
             _eyeCtrl ctrlCommit 0;
 
             private _eyeInjury = _patient getVariable [QGVAR(eyeInjuries), [1, 1]];
-            _eyeInjury set [_eyeIndex, (_eyeInjury select _eyeIndex) + 0.002];
+            _eyeInjury set [_eyeIndex, ((_eyeInjury select _eyeIndex) + 0.002) min 1];
             _patient setVariable [QGVAR(eyeInjuries), _eyeInjury, true];
         } else {
             "KAT_EyeShield" cutText ["", "PLAIN", 0, true];

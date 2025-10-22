@@ -36,7 +36,7 @@ class RscTitles
         fadeIn=0;
         fadeOut=1;
         duration = 10e10;
-        onLoad = "uiNamespace setVariable ['KAT_EyeShield', _this select 0];";
+        onLoad = QUOTE(uiNamespace setVariable [ARR_2(QQGVAR(eyeShield),(_this select 0))]);
         class controls
         {
             class EyeShieldRight: RscPicture
