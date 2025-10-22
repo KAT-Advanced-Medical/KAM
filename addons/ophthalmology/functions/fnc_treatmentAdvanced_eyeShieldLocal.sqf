@@ -19,28 +19,30 @@ params ["_medic", "_patient"];
 
 private _eyeInjuries = _patient getVariable [QGVAR(eyeInjuries), [1, 1]];
 
-"KAT_EyeShield" cutRsc ["KAT_EyeShield", "PLAIN", 0, true];
-
+// Show the overlay
 private _fnc_applyEyeCover = {
     params ["_patient", "_eyeDisplay", "_shieldItem"];
 
+    // Handle NVGs properly
     private _nvg = hmd _patient;
     if (_nvg != "") then {
         _patient unlinkItem _nvg;
         _patient addItem _nvg;
     };
 
+    // Create a local layer for this client only
+    private _layer = ["KAT_EyeShield"] call BIS_fnc_rscLayer;
+    _layer cutRsc ["KAT_EyeShield", "PLAIN", 0, true];
+
+    // Apply the eye cover item
     _patient linkItem _shieldItem;
 
-    private _display = uiNamespace getVariable ["KAT_EyeShield", displayNull];
-    private _eyeCtrl = _display displayCtrl _eyeDisplay;
-    _eyeCtrl ctrlShow true;
-    _eyeCtrl ctrlCommit 0;
+    // Start healing PFH (runs locally)
     [{
         params ["_args", "_pfhID"];
-        _args params ["_patient", "_shieldItem"];
+        _args params ["_patient", "_shieldItem", "_layer"];
 
-        private _display = uiNamespace getVariable ["KAT_EyeShield", displayNull];
+        private _display = uiNamespace getVariable [QGVAR(eyeShield), displayNull];
         if (isNull _display) exitWith {
             [_pfhID] call CBA_fnc_removePerFrameHandler;
         };
@@ -64,14 +66,15 @@ private _fnc_applyEyeCover = {
             _eyeCtrl ctrlCommit 0;
 
             private _eyeInjury = _patient getVariable [QGVAR(eyeInjuries), [1, 1]];
-            _eyeInjury set [_eyeIndex, ((_eyeInjury select _eyeIndex) + 0.002) min 1];
+            _eyeInjury set [_eyeIndex, (_eyeInjury select _eyeIndex) + 0.002];
             _patient setVariable [QGVAR(eyeInjuries), _eyeInjury, true];
         } else {
-            "KAT_EyeShield" cutText ["", "PLAIN", 0, true];
+            _layer cutText ["", "PLAIN", 0, true];
             [_pfhID] call CBA_fnc_removePerFrameHandler;
         };
-    }, 1, [_patient, _shieldItem]] call CBA_fnc_addPerFrameHandler;
+    }, 1, [_patient, _shieldItem, _layer]] call CBA_fnc_addPerFrameHandler;
 };
+
 if ((_eyeInjuries select 0) == 0) then {
     [_patient, IDC_LEFT_EYE_CONTROL, "kat_eyecovers_left"] call _fnc_applyEyeCover;
 } else {
