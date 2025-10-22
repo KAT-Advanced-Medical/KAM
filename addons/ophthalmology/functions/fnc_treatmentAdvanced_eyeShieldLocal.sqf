@@ -14,54 +14,76 @@
  
 params ["_medic", "_patient"];
 
-private _eyeInjuries = _patient getVariable [QGVAR(eyeInjuries), [1, 1]];
-
 #define IDC_LEFT_EYE_CONTROL 17103
 #define IDC_RIGHT_EYE_CONTROL 17102
 
+private _eyeInjuries = _patient getVariable [QGVAR(eyeInjuries), [1, 1]];
+
+// Show the overlay
 "KAT_EyeShield" cutRsc ["KAT_EyeShield", "PLAIN", 0, true];
 
-
 private _fnc_applyEyeCover = {
-    params ["_patient", "_shieldItem", "_eyeDisplay"];
+    params ["_patient", "_eyeDisplay", "_shieldItem"];
 
-    // If patient has NVGs on, move them to the patient's inventory
-    if (hmd _patient != "") then {
-        _patient addItem (hmd _patient);
+    // Handle NVGs properly
+    private _nvg = hmd _patient;
+    if (_nvg != "") then {
+        _patient unlinkItem _nvg;
+        _patient addItem _nvg;
     };
 
-    private _display = uiNamespace getVariable ["KAT_EyeShield", displayNull];
-    private _activeEye = _display displayCtrl _eyeDisplay;
-
+    // Apply the eye cover
     _patient linkItem _shieldItem;
-    
-    _activeEye ctrlShow true;
-    _activeEye ctrlCommit 0;
 
-    // Approximately 8 minutes to fully re-heal a damaged eye using the eyeshield
+    // Display overlay for correct eye
+    private _display = uiNamespace getVariable ["KAT_EyeShield", displayNull];
+    private _eyeCtrl = _display displayCtrl _eyeDisplay;
+    _eyeCtrl ctrlShow true;
+    _eyeCtrl ctrlCommit 0;
+
+    // Start healing PFH
     [{
         params ["_args", "_pfhID"];
-        _args params ["_patient", "_activeEye", "_shieldItem"];
-    
-        if ((hmd _patient) != _shieldItem) exitWith {
-            _pfhID call CBA_fnc_removePerFrameHandler;
-            "KAT_EyeShield" cutText ["","PLAIN",0,true];
+        _args params ["_patient", "_shieldItem"];
+
+        private _display = uiNamespace getVariable ["KAT_EyeShield", displayNull];
+        if (isNull _display) exitWith {
+            [_pfhID] call CBA_fnc_removePerFrameHandler;
         };
-    
-        private _eyeInjury = _patient getVariable [QGVAR(eyeInjuries), [1, 1]];
-        _patient setVariable [QGVAR(eyeInjuries), [(((_eyeInjury select 0) + 0.002) min 1), (_eyeInjury select 1)], true];
-    }, 1, [
-        _patient,
-        _activeEye,
-        _shieldItem
-    ]] call CBA_fnc_addPerFrameHandler;
+
+        private _eyeIndex = -1;
+        private _eyeCtrl = controlNull;
+
+        switch (hmd _patient) do {
+            case "kat_eyecovers_left": {
+                _eyeIndex = 0;
+                _eyeCtrl = _display displayCtrl IDC_LEFT_EYE_CONTROL;
+            };
+            case "kat_eyecovers_right": {
+                _eyeIndex = 1;
+                _eyeCtrl = _display displayCtrl IDC_RIGHT_EYE_CONTROL;
+            };
+        };
+
+        if (_eyeIndex >= 0) then {
+            _eyeCtrl ctrlShow true;
+            _eyeCtrl ctrlCommit 0;
+
+            private _eyeInjury = _patient getVariable [QGVAR(eyeInjuries), [1, 1]];
+            _eyeInjury set [_eyeIndex, (_eyeInjury select _eyeIndex) + 0.002];
+            _patient setVariable [QGVAR(eyeInjuries), _eyeInjury, true];
+        } else {
+            "KAT_EyeShield" cutText ["", "PLAIN", 0, true];
+            [_pfhID] call CBA_fnc_removePerFrameHandler;
+        };
+    }, 1, [_patient, _shieldItem]] call CBA_fnc_addPerFrameHandler;
+};
+if ((_eyeInjuries select 0) == 0) then {
+    [_patient, IDC_LEFT_EYE_CONTROL, "kat_eyecovers_left"] call _fnc_applyEyeCover;
+} else {
+    [_patient, IDC_RIGHT_EYE_CONTROL, "kat_eyecovers_right"] call _fnc_applyEyeCover;
 };
 
-if ((_eyeInjuries select 0) == 0) then {
-    [_patient, "kat_eyecovers_left", IDC_LEFT_EYE_CONTROL] call _fnc_applyEyeCover;
-} else {
-    [_patient, "kat_eyecovers_right", IDC_RIGHT_EYE_CONTROL] call _fnc_applyEyeCover;
-};
 
 [_patient, LLSTRING(eyeshield_item)] call ACEFUNC(medical_treatment,addToTriageCard);
 [_patient, "activity", ACELSTRING(medical_treatment,Activity_usedItem), [[_medic] call ACEFUNC(common,getName), LLSTRING(eyeshield_item)]] call ACEFUNC(medical_treatment,addToLog);
