@@ -1337,6 +1337,7 @@
             <Chinese>用於升高血壓</Chinese>
             <Chinesesimp>用于提高血压</Chinesesimp>
             <Dutch>Wordt gebruikt om de bloeddruk te laten stijgen</Dutch>
+            <Spanish>Usado para elevar la presión arterial</Spanish>
         </Key>
         <Key ID="STR_KAT_Pharma_Phenyl_Box_Display">
             <English>Phenylephrine</English>
@@ -2047,6 +2048,7 @@
             <Chinese>啟用IV/IO流量控制</Chinese>
             <Chinesesimp>启用IV/IO流量控制</Chinesesimp>
             <Dutch>Sta IV/IO Loopsnelheidscontrole toe</Dutch>
+            <Spanish>Habilitar el control de flujo IV/IO</Spanish>
         </Key>
         <Key ID="STR_KAT_Pharma_SETTING_IV_FLOW_CONTROL_DESC">
             <English>Enables the IV/IO flow control menu which gives the medic fine control over the volume running through the active line</English>
@@ -2058,6 +2060,7 @@
             <Chinese>啟用IV/IO流量控制選單，使醫務人員能夠精細控制通過活動線路的音量</Chinese>
             <Chinesesimp>启用IV/IO流量控制菜单，使医务人员能够精细控制通过活动线路的音量</Chinesesimp>
             <Dutch>Activeert het IV/IO loopsnelheidscontrole menu wat het medisch personeel fijne controle geeft over de loopsnelheid in de active lijn</Dutch>
+            <Spanish>Habilita el menú de control de flujo IV/IO, que permite al sanitario un control preciso sobre el volumen que circula por la vía activa</Spanish>
         </Key>
         <Key ID="STR_KAT_Pharma_SETTING_Kidney_Action">
             <English>Kidney damage/failure</English>
@@ -2776,6 +2779,7 @@
             <German>CWMP Einstellungen</German>
             <Japanese>戦闘傷病治療薬(CWMP)設定</Japanese>
             <Dutch>CWMP Instellingen</Dutch>
+            <Spanish>Opciones de CWMP</Spanish>
         </Key>
         <Key ID="STR_KAT_Pharma_SubCategory_Caffeine">
             <English>Caffeine Settings</English>
@@ -3524,6 +3528,7 @@
             <German>KAT - ADV Medical: Medikamente</German>
             <Japanese>KAM - 薬学 (Pharmacy)</Japanese>
             <Dutch>KAT - ADV Medical: Farmaceutica</Dutch>
+            <Spanish>KAT - ADV Medical: Farmacia</Spanish>
         </Key>
         <Key ID="STR_KAT_Pharma_coagulation_Bandaged">
             <English>Blood clotting temporarily closed a wound on %1</English>
@@ -3781,6 +3786,7 @@
             <German>Erlaube die Verwendung von CWMP</German>
             <Japanese>戦闘傷病治療薬(CWMP)の許可</Japanese>
             <Dutch>Sta gebruik van CWMP toe</Dutch>
+            <Spanish>Permitir el uso de CWMP</Spanish>
         </Key>
         <Key ID="STR_KAT_Pharma_medLvl_Caffeine">
             <English>Allow using Caffeine</English>
@@ -3789,6 +3795,7 @@
             <German>Erlaube die Verwendung von Koffein</German>
             <Japanese>カフェインの許可</Japanese>
             <Dutch>Sta gebruik van caffeine toe</Dutch>
+            <Spanish>Permitir el uso de Cafeína</Spanish>
         </Key>
         <Key ID="STR_KAT_Pharma_medLvl_Carbonate">
             <English>Allow using Carbonate</English>
@@ -4203,6 +4210,7 @@
             <German>Anwendungszeit für CWMP</German>
             <Japanese>戦闘傷病治療薬(CWMP)の所要時間</Japanese>
             <Dutch>Behandelingstijd voor gebruik van CWMP</Dutch>
+            <Spanish>Tiempo de tratamiento para CWMP</Spanish>
         </Key>
         <Key ID="STR_KAT_Pharma_treatmentTime_Caffeine">
             <English>Treatment time for Caffeine</English>
@@ -4211,6 +4219,7 @@
             <German>Anwendungszeit für Koffein</German>
             <Japanese>カフェインの所要時間</Japanese>
             <Dutch>Behandelingstijd voor gebruik van caffeine</Dutch>
+            <Spanish>Tiempo de tratamiento para Cafeína</Spanish>
         </Key>
         <Key ID="STR_KAT_Pharma_treatmentTime_Carbonate">
             <English>Treatment time for Carbonate</English>
