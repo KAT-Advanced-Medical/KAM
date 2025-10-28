@@ -101,6 +101,11 @@ switch (_selectionN) do {
     };
     default {};
 };
+private _pressureArray = GET_APPLIEDPRESSURE(_target);
+if ((_pressureArray select _selectionN) > 0) then {
+    _entries pushBack [LLSTRING(pressure_GUI), [1, 0, 0, 1]];
+};
+
 if (_hasInjury) then {
     _entries pushBack [LLSTRING(jointInjuryGUI), [1, 0, 0, 1]];
 };

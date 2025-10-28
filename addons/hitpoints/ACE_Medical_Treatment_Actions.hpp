@@ -201,9 +201,16 @@ class ACE_Medical_Treatment_Actions {
         callbackProgress = "";
         callbackFailure = "";
         callbackSuccess = QFUNC(pressureStart);
-        condition = QFUNC(canBandage);
+        condition = QUOTE([ARR_3(_medic,_patient,_bodyPart)] call FUNC(canSoftcorePressure));
         animationPatientUnconscious = "AinjPpneMstpSnonWrflDnon_rolltoback";
         animationPatientUnconsciousExcludeOn[] = {"ainjppnemstpsnonwrfldnon"};
+    };
+    class ApplySoftcorePressure: ApplyPressure {
+        displayName = CSTRING(ApplyPressure);
+        displayNameProgress = CSTRING(ApplyPressure);
+        treatmentTime = 3;
+        callbackSuccess = QFUNC(manualPressure);
+        condition = QUOTE(!([ARR_3(_medic,_patient,_bodyPart)] call FUNC(canSoftcorePressure)));
     };
     class RemoveETD: BasicBandage {
         displayName = CSTRING(Remove_ETD);
