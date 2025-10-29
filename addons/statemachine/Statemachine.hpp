@@ -11,7 +11,6 @@ class ACE_Medical_StateMachine {
         };
     };
     class CardiacArrest {
-        onStateEntered = QUOTE(call FUNC(handleCardiacArrestState));
         class DeathAI {
             condition = QUOTE(call EFUNC(conversion,conversionCheck));
         };
