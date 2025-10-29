@@ -44,6 +44,9 @@ if IN_CRDC_ARRST(_unit) then {
     private _defaultstrokeVolume = [_unit] call FUNC(getDefaultStrokeVolume);
     // Adjustments and Pain Levels are taken off of last cycle HR to prevent any spiraling vitials
     private _lastCycleHeartRate = GET_HEART_RATE(_unit) - _hrTargetAdjustment - (10 * _painLevel) - (_aceAnFatigue * 40);
+    if (GET_HEART_RATE(_unit) == 0) then {
+        _lastCycleHeartRate = 40;
+    };
     private _lastCycleCO2 = _lastCycleHeartRate * HEART_RATE_CO2_MULTIPLIER;
     private _defaultHeartRate = _unit getVariable [QEGVAR(circulation,defaultHeartRate), 80];
     private _demandReturn = _lastCycleCO2 / CO2_TO_DEMAND_DIVISOR;

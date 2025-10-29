@@ -1,1 +1,1 @@
-PREP(handleCardiacArrestState);
+PREP(handleStateCardiacArrest);

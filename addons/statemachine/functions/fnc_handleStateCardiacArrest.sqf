@@ -29,8 +29,8 @@
      _unit setVariable [QACEGVAR(medical_statemachine,cardiacArrestTimeLastUpdate), CBA_missionTime];
      private _recieveingCPR = alive (_unit getVariable [QACEGVAR(medical,CPR_provider), objNull]);
      private _timeLeft = _unit getVariable [QACEGVAR(medical_statemachine,cardiacArrestTimeLeft), -1];
-     private _hypothermia = linearConversion [20, 37, (_unit getVariable [QEGVAR(hypothermia,unitTemperature), 37]), 0.2, 1, true];
-     TRACE_3("cardiac arrest life tick",_unit,_recieveingCPR,_timeDiff);
+     private _hypothermia = linearConversion [20, 35, (_unit getVariable [QEGVAR(hypothermia,unitTemperature), 37]), 0.2, 1, true];
+     TRACE_5("cardiac arrest life tick",_unit,_recieveingCPR,_timeLeft,_hypothermia,_timeDiff);
      if (_recieveingCPR) then { _timeDiff = _timeDiff * 0.5; }; // if being cpr'ed, then time decrease is reduced.
      _timeLeft = _timeLeft - (_timeDiff * _hypothermia); // if patient is hypothermic, then time decrease is reduced, regardless of CPR
      _unit setVariable [QACEGVAR(medical_statemachine,cardiacArrestTimeLeft), _timeLeft];
