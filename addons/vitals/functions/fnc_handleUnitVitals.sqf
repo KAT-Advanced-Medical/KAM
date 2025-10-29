@@ -216,13 +216,13 @@ switch (true) do {
         };
         [QACEGVAR(medical,FatalVitals), _unit] call CBA_fnc_localEvent;
     };
-    case (_map < 25 || {_map > 240}): {
+    case (_map > 240): {
         [QACEGVAR(medical,FatalVitals), _unit] call CBA_fnc_localEvent;
         if ((_unit getVariable [QEGVAR(conversion,convert), false]) && (isPlayer _unit) && EGVAR(conversion,enableAutomaticConversion)) then {
             [QEGVAR(conversion,convertCasualty), _unit] call CBA_fnc_localEvent;
         };
     };
-    case (_map < 45 || {_map > 190}): {
+    case (_map > 190): {
         [QACEGVAR(medical,CriticalVitals), _unit] call CBA_fnc_localEvent;
     };
     case (_spo2 < EGVAR(breathing,SpO2_unconscious)): {
