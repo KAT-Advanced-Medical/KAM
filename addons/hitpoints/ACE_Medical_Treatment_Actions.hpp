@@ -212,6 +212,13 @@ class ACE_Medical_Treatment_Actions {
         callbackSuccess = QFUNC(manualPressure);
         condition = QUOTE(!([ARR_3(_medic,_patient,_bodyPart)] call FUNC(canSoftcorePressure)));
     };
+    class StopPressure: ApplyPressure {
+        displayName = CSTRING(StopPressure);
+        displayNameProgress = CSTRING(StopPressure);
+        treatmentTime = 1;
+        callbackSuccess = QFUNC(manualPressureStop);
+        condition = QFUNC(manualPressureStopCondition);
+    };
     class RemoveETD: BasicBandage {
         displayName = CSTRING(Remove_ETD);
         displayNameProgress = CSTRING(Removing_ETD);

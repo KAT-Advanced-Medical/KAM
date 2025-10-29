@@ -630,13 +630,13 @@
         <Key ID="STR_KAT_Hitpoints_setting_hardcorepressure_desc">
             <English>Causes pressure to take up all actions, rather then just a time penalty</English>
         </Key>
-        <Key ID="STR_KAT_Hitpoints_SETTING_pressure_already">
+        <Key ID="STR_KAT_Hitpoints_pressure_already">
             <English>Someone is already applying pressure</English>
         </Key>
-        <Key ID="STR_KAT_Hitpoints_SETTING_pressure_ready">
+        <Key ID="STR_KAT_Hitpoints_pressure_ready">
             <English>Started Applying Pressure</English>
         </Key>
-        <Key ID="STR_KAT_Hitpoints_SETTING_pressure_cancel">
+        <Key ID="STR_KAT_Hitpoints_pressure_cancel">
             <English>Stopped Applying Pressure</English>
         </Key>
         <Key ID="STR_KAT_Hitpoints_pressure_GUI">

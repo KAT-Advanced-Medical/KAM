@@ -20,6 +20,11 @@ params ["_medic", "_patient", "_bodyPart"];
 
 private _canPressure = false;
 if ((GVAR(hardcorePressure)) && ([_medic, _patient, _bodyPart] call FUNC(canBandage))) then{
-    _canPressure = true;
+    if (!(GVAR(hardcorePressure)) && (_medic != _patient)) then {
+        _canPressure = true;
+    };
+    if (GVAR(hardcorePressure)) then {
+        _canPressure = true;
+    };
 };
 _canPressure

@@ -43,6 +43,8 @@ PREP(init);
 PREP(initUnit);
 PREP(ivBagLocal);
 PREP(manualPressure);
+PREP(manualPressureStop);
+PREP(manualPressureStopCondition);
 PREP(onKeyDown);
 PREP(pressureStart);
 PREP(reduceJoint);
