@@ -133,9 +133,9 @@ switch (_reviveObject) do {
 
 if (_reviveObject in ["AED", "AEDX"]) exitWith {
     _chance = _chance + (_amiBoost + (1 max _lidoBoost) * _epiBoost) / _nitroEffect;
-
     private _patientState = _patient getVariable [QGVAR(cardiacArrestType), 0];
-
+    private _AEDeffectivness = (_patient getVariable [QGVAR(AEDEffectiveness), 1]) max 0.5;
+    _chance = _chance * _AEDeffectivness;
     if (GVAR(AdvRhythm)) then {
         if (_patientState > 2) then {
             if (_random <= _chance) then {

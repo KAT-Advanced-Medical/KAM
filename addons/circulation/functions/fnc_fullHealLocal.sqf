@@ -46,5 +46,7 @@ _patient setVariable [QGVAR(effusion), 0, true];
 
 _patient setVariable [QGVAR(attachedLucas), false, true];
 _patient setVariable [QGVAR(attachedLucasState), false, true];
+_patient setVariable [QGVAR(heartRestart), false, true];
+_patient setVariable [QGVAR(AEDEffectiveness), 1, true];
 [_patient, true] call FUNC(updateInternalBleeding);
 
