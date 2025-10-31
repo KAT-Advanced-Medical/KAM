@@ -516,6 +516,10 @@
 #define GET_JOINTS(unit)   (unit getVariable [VAR_JOINTS, DEFAULT_JOINT_VALUES])
 #define GET_LIMB_JOINT(unit,limbindex)   ((unit getVariable [VAR_JOINTS, DEFAULT_JOINT_VALUES]) select _limbindex)
 
+
+#define INTERNAL_BLEEDING_RATE(unit,index) ([unit, index] call EFUNC(hitpoints,internalBleedingRate))
+#define PART_BLEEDING_RATE(unit,index) ([unit, index] call EFUNC(hitpoints,partBleedingRate))
+
 #undef PRIORITY_HEAD
 #undef PRIORITY_BODY
 #undef PRIORITY_LEFT_ARM

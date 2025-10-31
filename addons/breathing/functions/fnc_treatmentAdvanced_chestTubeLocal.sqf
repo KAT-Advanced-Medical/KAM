@@ -23,7 +23,7 @@ private _liveChestTube = _chestTubeArray select _side;
 
 
 if (_liveChestTube == 0.5)  exitWith {
-    _liveChestTube = 0;
+    _liveChestTube = 1;
 
     _chestTubeArray set [_side, _liveChestTube];
     _patient setVariable [QGVAR(chestTube), _chestTubeArray, true];

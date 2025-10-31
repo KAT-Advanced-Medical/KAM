@@ -62,13 +62,13 @@ private _ptxEntry = [];
 
 private _pneumothoraxState = _target getVariable [QGVAR(pneumothorax), [0, 0]];
 private _tensionState = _target getVariable [QGVAR(tensionpneumothorax), [false, false]];
-private _hemoState = _target getVariable [QGVAR(hemopneumothorax), [false, false]];
+private _hemoState = _target getVariable [QGVAR(hemopneumothorax), [0, 0]];
 
 if (_selectionN isEqualTo 2) then {
     private _tensionhemothorax = false;
 
     if (!(GVAR(showPneumothorax_dupe))) then {
-        if ((_hemoState select 0 || _hemoState select 1) || (_tensionState select 0 || _tensionState select 1)) then {
+        if (((_hemoState select 0) > 0)|| ((_hemoState select 1) > 0) || (_tensionState select 0 || _tensionState select 1)) then {
             _tensionhemothorax = true;
         };
     };
@@ -90,7 +90,7 @@ if (_selectionN isEqualTo 2) then {
         };
 
         if (GVAR(TensionHemothoraxAlwaysVisible)) then {
-            if (_hemoState select _side) then {
+            if ((_hemoState select _side) > 0) then {
                 _ptxEntry pushBack [LLSTRING(hemopneumothorax_mm), [1,1,1,1]];
             };
 
