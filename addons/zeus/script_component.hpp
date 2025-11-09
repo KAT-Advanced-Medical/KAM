@@ -1,5 +1,5 @@
 #define COMPONENT zeus
-#define COMPONENT_BEAUTIFIED KAT - ZEUS
+#define COMPONENT_BEAUTIFIED ZEUS
 #include "\x\kat\addons\main\script_mod.hpp"
 
 // #define DEBUG_MODE_FULL

@@ -21,4 +21,4 @@ if (_medic isEqualTo _patient) then {
     [_medic, "Gear", 1] call ACEFUNC(common,doGesture);
 };
 
-[{_this call FUNC(displayGasMaskDur)}, [_patient], 1] call CBA_fnc_waitAndExecute;
+[{call FUNC(displayGasMaskDur)}, [_patient], 1] call CBA_fnc_waitAndExecute;

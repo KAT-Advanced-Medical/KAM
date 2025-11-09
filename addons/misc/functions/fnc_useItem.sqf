@@ -21,12 +21,17 @@
 params ["_medic", "_patient", "_items"];
 
 if (_medic isEqualTo player && {!isNull findDisplay 312}) exitWith {
-    [_medic, _items select 0]
+    [_medic, _items select 0, false]
 };
 
 scopeName "Main";
 
-private _sharedUseOrder = [[_patient, _medic], [_medic, _patient], [_medic]] select ACEGVAR(medical_treatment,allowSharedEquipment);
+private _sharedUseOrder = [[_patient, _medic],
+    [_medic, _patient],
+    [_medic],
+    ([[_patient, _medic],[_medic, _patient]] select ([_medic] call ACEFUNC(medical_treatment,isMedic)))
+] select ACEGVAR(medical_treatment,allowSharedEquipment);
+
 private _useOrder = [];
 
 private _vehicle = objectParent _medic;
@@ -82,10 +87,10 @@ if (GVAR(allowSharedVehicleEquipment) > 0 && _vehicleCondition) then {
         _originItems = [_origin, 2] call ACEFUNC(common,uniqueItems); // Magazine
         {
             if (_x in _originItems) then {
-                private _magsStart = count magazines _unit;
+                private _magsStart = count magazines _origin;
                 [_origin, _x] call ACEFUNC(common,adjustMagazineAmmo);
-                 private _magsEnd = count magazines _unit;
-                [_unit, _x, (_magsEnd < _magsStart)] breakOut "Main";
+                private _magsEnd = count magazines _origin;
+                [_origin, _x, (_magsEnd < _magsStart)] breakOut "Main";
             };
         } forEach _items;
     } else { // Remove vehicle item

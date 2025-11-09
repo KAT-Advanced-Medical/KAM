@@ -1,284 +1,284 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Project name="KAT">
     <Package name="GUI">
-        <Key ID="STR_KAT_GUI_SubCategory_Basic">
-            <English>Basic Settings</English>
-            <Polish>Podstawowe Ustawienia</Polish>
-            <Italian>Impostazioni base</Italian>
-            <Czech>Základní nastavení</Czech>
-            <French>Paramètres basiques</French>
-            <Korean>일반 설정</Korean>
-            <German>Grundeinstellungen</German>
-            <Chinesesimp>基础设置</Chinesesimp>
-            <Japanese>基本設定</Japanese>
-            <Spanish>Parámetros básicos</Spanish>
-            <Portuguese>Configurações básicas</Portuguese>
-            <Finnish>Perus asetukset</Finnish>
-            <Russian>Основные настройки</Russian>
-            <Chinese>基础设置</Chinese>
-            <Dutch>Basisinstellingen</Dutch>
+        <Key ID="STR_KAT_GUI_ABGTitle">
+            <English>ABG Results</English>
+            <Czech>ABG Výsledky</Czech>
+            <French>Résultats de l'ABG</French>
+            <Spanish>Resultados ABG</Spanish>
+            <Italian>Risultati ABG</Italian>
+            <German>ABG-Ergebnisse</German>
+            <Japanese>ABG 結果</Japanese>
+            <Chinese>ABG 結果</Chinese>
+            <Chinesesimp>ABG结果</Chinesesimp>
+            <Dutch>ABG resultaten</Dutch>
+        </Key>
+        <Key ID="STR_KAT_GUI_BGBlank">
+            <English>--.-</English>
+            <Czech>--.-</Czech>
+            <French>--.-</French>
+            <Spanish>--.-</Spanish>
+            <Italian>--.-</Italian>
+            <German>--.-</German>
+            <Japanese>--.-</Japanese>
+            <Chinesesimp>--.-</Chinesesimp>
+            <Dutch>--.-</Dutch>
+        </Key>
+        <Key ID="STR_KAT_GUI_ChestCover">
+            <English>CHEST - NO LINE</English>
+            <Czech>HRUDNÍK - BEZ LINIE</Czech>
+            <French>POITRINE - PAS DE LIGNES</French>
+            <Spanish>TORSO - SIN LINEA</Spanish>
+            <Italian>TORACE - SENZA LINEA</Italian>
+            <German>BRUST - KEIN ZUGANG</German>
+            <Japanese>胸部 - ライン無し</Japanese>
+            <Chinese>胸部 - 無線</Chinese>
+            <Chinesesimp>胸部--无线路</Chinesesimp>
+            <Dutch>TORSO - GEEN LIJN</Dutch>
+        </Key>
+        <Key ID="STR_KAT_GUI_ChestTitle">
+            <English>Chest</English>
+            <Czech>Hrudník</Czech>
+            <French>Torse</French>
+            <Spanish>Torso</Spanish>
+            <Italian>Torace</Italian>
+            <German>Brust</German>
+            <Japanese>胸部</Japanese>
+            <Chinese>胸部</Chinese>
+            <Chinesesimp>胸部</Chinesesimp>
+            <Dutch>Torso</Dutch>
+        </Key>
+        <Key ID="STR_KAT_GUI_HeadCover">
+            <English>HEAD - NO LINE</English>
+            <Czech>HLAVA - BEZ LINIE</Czech>
+            <French>TETE - PAS DE LIGNES</French>
+            <Spanish>CABEZA - SIN LINEA</Spanish>
+            <Italian>TESTA - SENZA LINEA</Italian>
+            <German>KOPF - KEIN ZUGANG</German>
+            <Japanese>頭部 - ライン無し</Japanese>
+            <Chinese>頭部 - 無線</Chinese>
+            <Chinesesimp>头部-无线路</Chinesesimp>
+            <Dutch>HOOFD - GEEN LIJN</Dutch>
+        </Key>
+        <Key ID="STR_KAT_GUI_HeadTitle">
+            <English>Head</English>
+            <Czech>Hlava</Czech>
+            <French>Tête</French>
+            <Spanish>Cabeza</Spanish>
+            <Italian>Testa</Italian>
+            <German>Kopf</German>
+            <Japanese>頭部</Japanese>
+            <Chinese>頭部</Chinese>
+            <Chinesesimp>Head</Chinesesimp>
+            <Dutch>Hoofd</Dutch>
+        </Key>
+        <Key ID="STR_KAT_GUI_IVFlowTitle">
+            <English>IV Flow Control</English>
+            <Czech>Řízení průtoku IV</Czech>
+            <French>Fonctionnement du flux IV</French>
+            <Spanish>Control de Flujo IV</Spanish>
+            <Italian>Controllo del flusso IV</Italian>
+            <German>IV-Flusskontrolle</German>
+            <Japanese>IV流量操作</Japanese>
+            <Chinese>IV輸液流速控制</Chinese>
+            <Chinesesimp>IV 流量控制</Chinesesimp>
+            <Dutch>IV-Stroomregeling</Dutch>
+        </Key>
+        <Key ID="STR_KAT_GUI_IVValue">
+            <English>0.0</English>
+            <Czech>0.0</Czech>
+            <French>0.0</French>
+            <Spanish>0.0</Spanish>
+            <Italian>0.0</Italian>
+            <German>0.0</German>
+            <Japanese>0.0</Japanese>
+            <Chinesesimp>0</Chinesesimp>
+            <Dutch>0.0</Dutch>
+        </Key>
+        <Key ID="STR_KAT_GUI_LArmCover">
+            <English>LEFT ARM - NO LINE</English>
+            <Czech>LEVÁ RUKA - BEZ LINIE</Czech>
+            <French>BRAS GAUCHE - PAS DE LIGNES</French>
+            <Spanish>BRAZO IZQUIERDO - SIN LINEA</Spanish>
+            <Italian>BRACCIO SINISTRO - SENZA LINEA</Italian>
+            <German>LINKER ARM – KEIN ZUGANG</German>
+            <Japanese>左腕 - ライン無し</Japanese>
+            <Chinese>左臂 - 無線</Chinese>
+            <Chinesesimp>左臂--无线路</Chinesesimp>
+            <Dutch>LINKERARM - GEEN LIJN</Dutch>
+        </Key>
+        <Key ID="STR_KAT_GUI_LArmTitle">
+            <English>LA</English>
+            <Czech>LR</Czech>
+            <French>BG</French>
+            <Spanish>BI</Spanish>
+            <Italian>BS</Italian>
+            <German>LA</German>
+            <Japanese>左腕</Japanese>
+            <Chinese>左臂</Chinese>
+            <Chinesesimp>左臂</Chinesesimp>
+            <Dutch>LA</Dutch>
+        </Key>
+        <Key ID="STR_KAT_GUI_LLegCover">
+            <English>LEFT LEG - NO LINE</English>
+            <Czech>LEVÁ NOHA - BEZ LINIE</Czech>
+            <French>JAMBE GAUCHE - PAS DE LIGNES</French>
+            <Spanish>PIERNA IZQUIERDA - SIN LINEA</Spanish>
+            <Italian>GAMBA SINISTRA - SENZA LINEA</Italian>
+            <German>LINKES BEIN – KEIN ZUGANG</German>
+            <Japanese>左脚 - ライン無し</Japanese>
+            <Chinese>左腳 - 無線</Chinese>
+            <Chinesesimp>左腿--无线路</Chinesesimp>
+            <Dutch>LINKERBEEN - GEEN LIJN</Dutch>
+        </Key>
+        <Key ID="STR_KAT_GUI_LLegTitle">
+            <English>LL</English>
+            <Czech>LN</Czech>
+            <French>JG</French>
+            <Spanish>PI</Spanish>
+            <Italian>GS</Italian>
+            <German>LB</German>
+            <Japanese>左脚</Japanese>
+            <Chinese>左腳</Chinese>
+            <Chinesesimp>左脚</Chinesesimp>
+            <Dutch>LB</Dutch>
+        </Key>
+        <Key ID="STR_KAT_GUI_RArmCover">
+            <English>RIGHT ARM - NO LINE</English>
+            <Czech>PRAVÁ RUKA - BEZ LINIE</Czech>
+            <French>BRAS DROIT - PAS DE LIGNES</French>
+            <Spanish>BRAZO DERECHO - SIN LINEA</Spanish>
+            <Italian>BRACCIO DESTRO - SENZA LINEA</Italian>
+            <German>RECHTER ARM – KEIN ZUGANG</German>
+            <Japanese>右腕 - ライン無し</Japanese>
+            <Chinese>右臂 - 無線</Chinese>
+            <Chinesesimp>右臂--无线路</Chinesesimp>
+            <Dutch>RECHTERARM - GEEN LIJN</Dutch>
+        </Key>
+        <Key ID="STR_KAT_GUI_RArmTitle">
+            <English>RA</English>
+            <Czech>PR</Czech>
+            <French>BD</French>
+            <Spanish>BD</Spanish>
+            <Italian>BD</Italian>
+            <German>RA</German>
+            <Japanese>右腕</Japanese>
+            <Chinese>右臂</Chinese>
+            <Chinesesimp>右臂</Chinesesimp>
+            <Dutch>RA</Dutch>
+        </Key>
+        <Key ID="STR_KAT_GUI_RLegCover">
+            <English>RIGHT LEG - NO LINE</English>
+            <Czech>PRAVÁ NOHA - BEZ LINIE</Czech>
+            <French>JAMBE DROITE - PAS DE LIGNES</French>
+            <Spanish>PIERNA DERECHA - SIN LINEA</Spanish>
+            <Italian>GAMBA DESTRA - SENZA LINEA</Italian>
+            <German>RECHTES BEIN – KEIN ZUGANG</German>
+            <Japanese>右脚 - ライン無し</Japanese>
+            <Chinese>右腳 - 無線</Chinese>
+            <Chinesesimp>右腿--无线路</Chinesesimp>
+            <Dutch>RECHTERBEEN - GEEN LIJN</Dutch>
+        </Key>
+        <Key ID="STR_KAT_GUI_RLegTitle">
+            <English>RL</English>
+            <Czech>PN</Czech>
+            <French>JD</French>
+            <Spanish>PD</Spanish>
+            <Italian>GB</Italian>
+            <German>RB</German>
+            <Japanese>右脚</Japanese>
+            <Chinese>右腳</Chinese>
+            <Chinesesimp>右脚</Chinesesimp>
+            <Dutch>RB</Dutch>
         </Key>
         <Key ID="STR_KAT_GUI_SETTING_ColoredLogs">
             <English>Colored activitylogs (AED-X/Pulseoximeter)</English>
-            <German>Bunte Activitylogs (AED-X/Pulseoximeter)</German>
-            <Polish>Kolorowe logi aktywności (AED-X/Pulsoksymetr)</Polish>
-            <Spanish>Registros de actividad de color (DEA-X/Oximetro)</Spanish>
-            <Chinese>彩色活动记录(AED-X/脉冲氧饱和度仪)</Chinese>
-            <Chinesesimp>允许彩色活动记录(AED-X/脉搏血氧仪)</Chinesesimp>
             <Czech>Barevné protokoly aktivit (AED-X / Pulseoximeter)</Czech>
-            <Korean>컬러 활동 기록 (AED-X / 맥박 측정기)</Korean>
             <French>Registres d'activité colorés (AED-X/Pulseoximeter)</French>
-            <Turkish>Renkli aktivite günlükleri (AED-X / Pulseoximeter)</Turkish>
+            <Spanish>Registros de actividad de color (DEA-X/Oximetro)</Spanish>
             <Italian>Logs di attività colorati (AED-X/Pulsossimetro)</Italian>
+            <Polish>Kolorowe logi aktywności (AED-X/Pulsoksymetr)</Polish>
+            <Portuguese>Registros de atividade coloridos (DEA-X\Oxímetro)</Portuguese>
             <Russian>Цветные журналы активности (AED-X/пульсоксиметр)</Russian>
+            <German>Bunte Activitylogs (AED-X/Pulseoximeter)</German>
+            <Korean>컬러 활동 기록 (AED-X / 맥박 측정기)</Korean>
             <Japanese>色付きの活動ログ (AED-X / パルスオキシメーター)</Japanese>
-            <Portuguese>Registros de atividade colorizados (DEA-X\Oxímetro)</Portuguese>
+            <Chinese>彩色活動記錄(AED-X/脈搏血氧儀)</Chinese>
+            <Chinesesimp>彩色活动记录(AED-X/脉冲氧饱和度仪)</Chinesesimp>
+            <Turkish>Renkli aktivite günlükleri (AED-X / Pulseoximeter)</Turkish>
             <Finnish>Värilliset aktiivisuuslokit (AUD-X/pulssioksimetri)</Finnish>
             <Dutch>Gekleurde activiteitslogs (AED-X/Pulseoximeter)</Dutch>
         </Key>
         <Key ID="STR_KAT_GUI_SETTING_ColoredLogs_DESC">
             <English>Colors the Activitylogs of AED-X or Pulseoximeter red, if any value is critical</English>
-            <German>Färbt die Activitylogs von AED-X oder Pulsoximeter rot, wenn ein Wert kritisch ist</German>
-            <Polish>Zabarwia logi AED-X lub pulsoksymetru na czerwono, jeśli jakaś wartość jest krytyczna</Polish>
-            <Spanish>Marca los registros de actividad del DEA-X o del Oximetro en rojo, si algún valor es crítico</Spanish>
-            <Chinese>将AED-X或Pulseoximeter的Activitylogs染成红色，如果任何值是临界值。</Chinese>
-            <Chinesesimp>若任何生命处于危险中(处于临界值以下),则将AED-X或脉搏血氧仪的数值显示为红色</Chinesesimp>
             <Czech>Pokud je nějaká hodnota kritická, vybarví Activitylogy AED-X nebo Pulseoximeter červeně</Czech>
-            <Korean>중요한 값이있는 경우 AED-X 또는 맥박산소측정기의 활동 로그를 빨간색으로 표시합니다.</Korean>
             <French>Colore les registres d'activité de l'AED-X ou de l'oxymètre de pouls en rouge, si une valeur est critique</French>
-            <Turkish>Herhangi bir değer kritikse, AED-X veya Pulseoximeter Activitylog'larını kırmızı renklendirir</Turkish>
-            <Italian>Colora gli Logs di attività di AED-X o il rosso del pulsossimetro, se un valore è critico</Italian>
+            <Spanish>Marca los registros de actividad del DEA-X o del Oximetro en rojo, si algún valor es crítico</Spanish>
+            <Italian>Se un valore è critico, colora i log di attività di AED-X o del pulsossimetro di rosso</Italian>
+            <Polish>Zabarwia logi AED-X lub pulsoksymetru na czerwono, jeśli jakaś wartość jest krytyczna</Polish>
+            <Portuguese>Coloriza os registros de atividade em vermelho se algum valor for crítico.</Portuguese>
             <Russian>Окрашивает журналы активности AED-X или пульсоксиметра в красный цвет, если какое-либо значение является критическим.</Russian>
-            <Japanese>重大値の場合、AED-Xやパルスオキシメーターの活動ログを赤色にします</Japanese>
-            <Portuguese>Exibe os registros de atividade em vermelhos se algum valor for crítico</Portuguese>
-            <Finnish>Lisää punaista väriä AUD-X:n tai pulssioksimetrin aktiivisuuslokeihin, jos jokin arvo on tappava</Finnish>
-            <Dutch>Kleurt de activiteitlog van de AED-X of de Pulsoximeter rood, wanneer een waarde kritiek is</Dutch>
-        </Key>
-        <Key ID="STR_KAT_GUI_Status_NoIv">
-            <English>No pushed fluids</English>
-            <Chinesesimp>无法进行输液</Chinesesimp>
-            <Korean>주입된 액체 없음</Korean>
-            <Japanese>点滴中の輸液なし</Japanese>
-            <German>Keine verabreichten Flüssigkeiten</German>
-            <French>Pas de fluides administrés</French>
-            <Portuguese>Sem fluídos injetados</Portuguese>
-            <Spanish>No se administraron fluidos</Spanish>
-            <Finnish>Ei lisätty nesteitä</Finnish>
-            <Russian>Никаких переливаний</Russian>
-            <Dutch>Geen toegediende vloeistoffen</Dutch>
-            <Italian>Nessun fluido somministrato</Italian>
-        </Key>
-        <Key ID="STR_KAT_GUI_SETTING_overlayBodyPart">
-            <English>Overlay Selected Body Part</English>
-            <Chinesesimp>突出显示选定的身体部位</Chinesesimp>
-            <Korean>선택한 신체 부위 오버레이</Korean>
-            <Japanese>選択した身体部位のオーバーレイ表示</Japanese>
-            <German>Ausgewähltes Körperteil überlagern</German>
-            <French>Afficher la partie du corps sélectionnée</French>
-            <Portuguese>Sobrepor parte do corpo selecionada</Portuguese>
-            <Spanish>Resaltar parte del cuerpo seleccionada</Spanish>
-            <Finnish>Korosta valittu kehon osa</Finnish>
-            <Russian>Показать выбранную часть тела</Russian>
-            <Dutch>Omtrekking geselecteerd lichaamsdeel</Dutch>
-            <Italian>Visualizza la parte del corpo selezionata</Italian>
+            <German>Färbt die Activitylogs von AED-X oder Pulsoximeter rot, wenn ein Wert kritisch ist</German>
+            <Korean>중요한 값이있는 경우 AED-X 또는 맥박산소측정기의 활동 로그를 빨간색으로 표시합니다.</Korean>
+            <Japanese>重要な値の場合、AED-Xやパルスオキシメーターの活動ログを赤色にします。</Japanese>
+            <Chinese>當AED-X或脈搏血氧儀的任何數值達到危急值時，活動記錄將以紅色顯示。</Chinese>
+            <Chinesesimp>若任何数据处于危险中(处于临界值以下),将AED-X或脉搏血氧仪的数值显示为红色</Chinesesimp>
+            <Turkish>Herhangi bir değer kritikse, AED-X veya Pulseoximeter Activitylog'larını kırmızı renklendirir</Turkish>
+            <Finnish>Värjää AED-X:n tai pulssioksimetrin toimintalokit punaisiksi, jos jokin arvo on kriittinen.</Finnish>
+            <Dutch>Kleurt de activiteitslogs van de AED-X of de pulsoximeter rood als een waarde kritiek is.</Dutch>
         </Key>
         <Key ID="STR_KAT_GUI_SETTING_showPatientSideLabels">
             <English>Label Patient Sides</English>
-            <Chinesesimp>查看患者标签</Chinesesimp>
+            <Czech>Označit strany pacienta</Czech>
+            <French>Libéler les côtés du patient</French>
+            <Spanish>Señalar lados del paciente</Spanish>
+            <Italian>Etichettare i lati del paziente</Italian>
+            <Portuguese>Mostrar etiquetas laterias do paciente</Portuguese>
+            <Russian>Маркировка сторон пациента</Russian>
+            <German>Beschriftung der Patientenseiten</German>
             <Korean>환자 측면에 라벨 붙이기</Korean>
             <Japanese>患者の向きのラベル表示</Japanese>
-            <German>Beschriftung der Patientenseiten</German>
-            <French>Libéler les côtés du patient</French>
-            <Portuguese>Mostrar etiquetas laterias do paciente</Portuguese>
-            <Spanish>Señalar lados del paciente</Spanish>
+            <Chinese>患者方向標籤</Chinese>
+            <Chinesesimp>查看患者标签</Chinesesimp>
             <Finnish>Merkitse potilaan sivut</Finnish>
-            <Russian>Маркировка сторон пациента</Russian>
             <Dutch>Label zijden van patiënt</Dutch>
-            <Italian>Etichettare i lati del paziente</Italian>
         </Key>
-        <Key ID="STR_KAT_GUI_HeadCover">
-            <English>HEAD - NO LINE</English>
-            <Dutch>HOOFD - GEEN LIJN</Dutch>
-            <Spanish>CABEZA - SIN LINEA</Spanish>
-            <Japanese>頭部 - ライン無し</Japanese>
-            <Italian>TESTA - SENZA LINEA</Italian>
-            <French>TETE - PAS DE LIGNES</French>
-        </Key>
-        <Key ID="STR_KAT_GUI_ChestCover">
-            <English>CHEST - NO LINE</English>
-            <Dutch>TORSO - GEEN LIJN</Dutch>
-            <Spanish>TORSO - SIN LINEA</Spanish>
-            <Japanese>胸部 - ライン無し</Japanese>
-            <Italian>TORACE - SENZA LINEA</Italian>
-            <French>POITRINE - PAS DE LIGNES</French>
-        </Key>
-        <Key ID="STR_KAT_GUI_RArmCover">
-            <English>RIGHT ARM - NO LINE</English>
-            <Dutch>RECHTERARM - GEEN LIJN</Dutch>
-            <Spanish>BRAZO DERECHO - SIN LINEA</Spanish>
-            <Japanese>右腕 - ライン無し</Japanese>
-            <Italian>BRACCIO DESTRO - SENZA LINEA</Italian>
-            <French>BRAS DROIT - PAS DE LIGNES</French>
-        </Key>
-        <Key ID="STR_KAT_GUI_LArmCover">
-            <English>LEFT ARM - NO LINE</English>
-            <Dutch>LINKERARM - GEEN LIJN</Dutch>
-            <Spanish>BRAZO IZQUIERDO - SIN LINEA</Spanish>
-            <Japanese>左腕 - ライン無し</Japanese>
-            <Italian>BRACCIO SINISTRO - SENZA LINEA</Italian>
-            <French>BRAS GAUCHE - PAS DE LIGNES</French>
-        </Key>
-        <Key ID="STR_KAT_GUI_RLegCover">
-            <English>RIGHT LEG - NO LINE</English>
-            <Dutch>RECHTERBEEN - GEEN LIJN</Dutch>
-            <Spanish>PIERNA DERECHA - SIN LINEA</Spanish>
-            <Japanese>右脚 - ライン無し</Japanese>
-            <Italian>GAMBA DESTRA - SENZA LINEA</Italian>
-            <French>JAMBE DROITE - PAS DE LIGNES</French>
-        </Key>
-        <Key ID="STR_KAT_GUI_LLegCover">
-            <English>LEFT LEG - NO LINE</English>
-            <Dutch>LINKERBEEN - GEEN LIJN</Dutch>
-            <Spanish>PIERNA IZQUIERDA - SIN LINEA</Spanish>
-            <Japanese>左脚 - ライン無し</Japanese>
-            <Italian>GAMBA SINISTRA - SENZA LINEA</Italian>
-            <French>JAMBE GAUCHE - PAS DE LIGNES</French>
-        </Key>
-        <Key ID="STR_KAT_GUI_IVFlowTitle">
-            <English>IV Flow Control</English>
-            <Dutch>IV-Stroomregeling</Dutch>
-            <Spanish>Control de Flujo IV</Spanish>
-            <Japanese>IV流量操作</Japanese>
-            <Italian>Controllo del flusso IV</Italian>
-            <French>Fonctionnement du flux IV</French>
-        </Key>
-        <Key ID="STR_KAT_GUI_ABGTitle">
-            <English>ABG Results</English>
-            <Dutch>ABG resultaten</Dutch>
-            <Spanish>Resultados ABG</Spanish>
-            <Japanese>ABG 結果</Japanese>
-            <Italian>Risultati ABG</Italian>
-            <French>Résultats de l'ABG</French>
-        </Key>
-        <Key ID="STR_KAT_GUI_IVValue">
-            <English>0.0</English>
-            <Dutch>0.0</Dutch>
-            <Spanish>0.0</Spanish>
-            <Japanese>0.0</Japanese>
-            <Italian>0.0</Italian>
-            <French>0.0</French>
-        </Key>
-        <Key ID="STR_KAT_GUI_HeadTitle">
-            <English>Head</English>
-            <Dutch>Hoofd</Dutch>
-            <Spanish>Cabeza</Spanish>
-            <Japanese>頭部</Japanese>
-            <Italian>Testa</Italian>
-            <French>Tête</French>
-        </Key>
-        <Key ID="STR_KAT_GUI_HeadType">
-            <English>IV</English>
-            <Dutch>IV</Dutch>
-            <Spanish>IV</Spanish>
-            <Japanese>IV</Japanese>
-            <Italian>IV</Italian>
-            <French>IV</French>
-        </Key>
-        <Key ID="STR_KAT_GUI_ChestTitle">
-            <English>Chest</English>
-            <Dutch>Torso</Dutch>
-            <Spanish>Torso</Spanish>
-            <Japanese>胸部</Japanese>
-            <Italian>Torace</Italian>
-            <French>Torse</French>
-        </Key>
-        <Key ID="STR_KAT_GUI_ChestType">
-            <English>IV</English>
-            <Dutch>IV</Dutch>
-            <Spanish>IV</Spanish>
-            <Japanese>IV</Japanese>
-            <Italian>IV</Italian>
-            <French>IV</French>
-        </Key>
-        <Key ID="STR_KAT_GUI_LArmTitle">
-            <English>LA</English>
-            <Dutch>LA</Dutch>
-            <Spanish>BI</Spanish>
-            <Japanese>左腕</Japanese>
-            <Italian>BS</Italian>
-            <French>BG</French>
-        </Key>
-        <Key ID="STR_KAT_GUI_LArmType">
-            <English>IV</English>
-            <Dutch>IV</Dutch>
-            <Spanish>IV</Spanish>
-            <Japanese>IV</Japanese>
-            <Italian>IV</Italian>
-            <French>IV</French>
-        </Key>
-        <Key ID="STR_KAT_GUI_RArmTitle">
-            <English>RA</English>
-            <Dutch>RA</Dutch>
-            <Spanish>BD</Spanish>
-            <Japanese>右腕</Japanese>
-            <Italian>BD</Italian>
-            <French>BD</French>
-        </Key>
-        <Key ID="STR_KAT_GUI_RArmType">
-            <English>IV</English>
-            <Dutch>IV</Dutch>
-            <Spanish>IV</Spanish>
-            <Japanese>IV</Japanese>
-            <Italian>IV</Italian>
-            <French>IV</French>
-        </Key>
-        <Key ID="STR_KAT_GUI_LLegTitle">
-            <English>LL</English>
-            <Dutch>LB</Dutch>
-            <Spanish>PI</Spanish>
-            <Japanese>左脚</Japanese>
-            <Italian>GS</Italian>
-            <French>JG</French>
-        </Key>
-        <Key ID="STR_KAT_GUI_LLegType">
-            <English>IV</English>
-            <Dutch>IV</Dutch>
-            <Spanish>IV</Spanish>
-            <Japanese>IV</Japanese>
-            <Italian>IV</Italian>
-            <French>IV</French>
-        </Key>
-        <Key ID="STR_KAT_GUI_RLegTitle">
-            <English>RL</English>
-            <Dutch>RB</Dutch>
-            <Spanish>PD</Spanish>
-            <Japanese>右脚</Japanese>
-            <Italian>GB</Italian>
-            <French>JD</French>
-        </Key>
-        <Key ID="STR_KAT_GUI_RLegType">
-            <English>IV</English>
-            <Dutch>IV</Dutch>
-            <Spanish>IV</Spanish>
-            <Japanese>IV</Japanese>
-            <Italian>IV</Italian>
-            <French>IV</French>
-        </Key>
-        <Key ID="STR_KAT_GUI_BGBlank">
-            <English>--.-</English>
-            <Dutch>--.-</Dutch>
-            <Spanish>--.-</Spanish>
-            <Japanese>--.-</Japanese>
-            <Italian>--.-</Italian>
-            <French>--.-</French>
+        <Key ID="STR_KAT_GUI_SubCategory_Basic">
+            <English>Basic Settings</English>
+            <Czech>Základní nastavení</Czech>
+            <French>Paramètres basiques</French>
+            <Spanish>Parámetros básicos</Spanish>
+            <Italian>Impostazioni base</Italian>
+            <Polish>Podstawowe Ustawienia</Polish>
+            <Portuguese>Configurações básicas</Portuguese>
+            <Russian>Основные настройки</Russian>
+            <German>Grundeinstellungen</German>
+            <Korean>일반 설정</Korean>
+            <Japanese>基本設定</Japanese>
+            <Chinese>基本設定</Chinese>
+            <Chinesesimp>基础设置</Chinesesimp>
+            <Finnish>Perus asetukset</Finnish>
+            <Dutch>Basisinstellingen</Dutch>
         </Key>
         <Key ID="STR_KAT_GUI_TestReset">
             <English>Reset</English>
-            <Dutch>Reset</Dutch>
-            <Spanish>Restaurar</Spanish>
-            <Japanese>リセット</Japanese>
-            <Italian>Ripristina</Italian>
+            <Czech>Reset</Czech>
             <French>Réinitialiser</French>
+            <Spanish>Restaurar</Spanish>
+            <Italian>Ripristina</Italian>
+            <German>Reset</German>
+            <Japanese>リセット</Japanese>
+            <Chinese>重置</Chinese>
+            <Chinesesimp>重置</Chinesesimp>
+            <Dutch>Reset</Dutch>
+        </Key>
+        <Key ID="STR_KAT_GUI_cba_name">
+            <English>KAT - ADV Medical: GUI</English>
+            <French>KAT - ADV Medical : GUI</French>
+            <Italian>KAT - ADV Medica: Interfaccia Grafica</Italian>
+            <German>KAT - ADV Medical: GUI</German>
+            <Japanese>KAM - GUI</Japanese>
+            <Dutch>KAT - ADV Medical: GUI</Dutch>
         </Key>
     </Package>
 </Project>

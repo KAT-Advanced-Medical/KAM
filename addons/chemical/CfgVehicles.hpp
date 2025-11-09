@@ -40,7 +40,7 @@ class CfgVehicles {
                     displayName = CSTRING(ChemicalDetector_Menu);
                     icon = QPATHTOF(ui\kat_chemicalDet_icon.paa);
                     exceptions[] = {"isNotSwimming"};
-                    
+
                     class KAT_ChemicalDetector_Enable {
                         displayName = CSTRING(EnableDetector);
                         condition = QUOTE(([_player] call FUNC(hasDetector)) && !(_player getVariable [ARR_2(QQGVAR(detectorEnabled),false)]));
@@ -136,7 +136,7 @@ class CfgVehicles {
             class Radius
             {
                 displayName = CSTRING(UI_max_range);
-                tooltip = CSTRING(GasModule_min_radius_dcs);
+                tooltip = CSTRING(GasModule_max_radius_dcs);
                 typeName = "NUMBER";
                 defaultValue = 20;
             };
@@ -145,15 +145,15 @@ class CfgVehicles {
                 displayName = CSTRING(UI_gasType);
                 typeName = "NUMBER";
                 class values {
+                    class TearGas {
+                        name = CSTRING(Lvl0_Gas);
+                        value = 0;
+                    };
                     class ToxicGas {
-                        name = CSTRING(LvL1_Gas);
+                        name = CSTRING(Lvl1_Gas);
                         value = 1;
                         default = 1;
                     };
-                   /* class csgas {
-                        name = "CS-Gas (Level 2)";
-                        value = "CS";
-                    };*/
                 };
             };
             class IsSealable
@@ -222,7 +222,7 @@ class CfgVehicles {
         class TransportMagazines;
     };
     class ACE_Box_82mm_Mo_Combo: ACE_Box_82mm_Mo_HE {
-        class TransportMagazines: TransportMagazines {
+        class TransportMagazines {
             MACRO_ADDMAGAZINE(KAT_1Rnd_82mm_Mo_Type0,8);
             MACRO_ADDMAGAZINE(KAT_1Rnd_82mm_Mo_TypeCS,8);
         };

@@ -96,8 +96,7 @@ class CfgWeapons {
     class kat_bloodIV_AB_N_250: kat_bloodIV_O_250 {
         displayName = CSTRING(BloodIV_AB_250_N);
     };
-    class KAT_Empty_bloodIV_500: ACE_bloodIV
-    {
+    class KAT_Empty_bloodIV_500: ACE_bloodIV {
         displayName = CSTRING(FieldBloodTK500_Display);
         descriptionShort = CSTRING(FieldBloodTK_Desc);
         picture = QPATHTOF(ui\bloodIV_empty_ca.paa);
@@ -108,8 +107,7 @@ class CfgWeapons {
             mass = 2;
         };
     };
-    class KAT_Empty_bloodIV_250: ACE_bloodIV
-    {
+    class KAT_Empty_bloodIV_250: ACE_bloodIV {
         displayName = CSTRING(FieldBloodTK250_Display);
         descriptionShort = CSTRING(FieldBloodTK_Desc);
         picture = QPATHTOF(ui\bloodIV_empty_ca.paa);
@@ -153,6 +151,17 @@ class CfgWeapons {
         mapSize = 0.034;
         class ItemInfo: CBA_MiscItem_ItemInfo {
             mass = 0.1;
+        };
+    };
+    class kat_BPCuff: ACE_ItemCore {
+        scope = 2;
+        author = "Cplhardcore";
+        displayName = CSTRING(BPCuff_display);
+        descriptionShort = CSTRING(BPCuff_desc);
+        picture = QPATHTOF(ui\BPCuff.paa);
+        icon = "";
+        class ItemInfo: CBA_MiscItem_ItemInfo {
+            mass = 8;
         };
     };
     class KAT_bloodSample: ACE_ItemCore {

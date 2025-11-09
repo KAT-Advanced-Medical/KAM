@@ -39,7 +39,7 @@ private _fnc_getActions = {
                     _x,
                     format [LLSTRING(Apply_Arterial_Test), _patient],
                     "",
-                    {_this call FUNC(attachBloodGas)},
+                    {call FUNC(attachBloodGas)},
                     {true},
                     {},
                     []

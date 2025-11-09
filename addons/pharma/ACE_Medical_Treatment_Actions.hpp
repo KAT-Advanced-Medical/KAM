@@ -44,6 +44,8 @@ class ACE_Medical_Treatment_Actions {
         displayName = CSTRING(Give_CWMP);
         displayNameProgress = CSTRING(Using);
         allowedSelections[] = {"Head"};
+        medicRequired = QGVAR(medLvl_CWMP);
+        treatmentTime = QGVAR(treatmentTime_CWMP);
         items[] = {"kat_Painkiller"};
         condition = QUOTE(!(_patient getVariable [ARR_2(QQEGVAR(airway,recovery),false)]));
         callbackSuccess = QFUNC(treatmentAdvanced_CWMP);
@@ -51,7 +53,7 @@ class ACE_Medical_Treatment_Actions {
         animationPatient = "";
         animationPatientUnconscious = "AinjPpneMstpSnonWrflDnon_rolltoback";
         animationPatientUnconsciousExcludeOn[] = {"ainjppnemstpsnonwrfldnon","kat_recoveryposition"};
-        sounds[] = {{QPATHTO_R(sounds\take_painkillers.wav),5,1,15}};
+        sounds[] = {{QPATHTO_R(sounds\take_CWMP.ogg),5,1,15}};
         litter[] = {};
     };
     class Carbonate: Morphine {
@@ -68,7 +70,7 @@ class ACE_Medical_Treatment_Actions {
         animationPatient = "";
         animationPatientUnconscious = "AinjPpneMstpSnonWrflDnon_rolltoback";
         animationPatientUnconsciousExcludeOn[] = {"ainjppnemstpsnonwrfldnon","kat_recoveryposition"};
-        sounds[] = {{QPATHTO_R(sounds\take_painkillers.wav),5,1,15}};
+        sounds[] = {{QPATHTO_R(sounds\use_carbonate.ogg),5,1,15}};
         litter[] = {};
     };
     class Pervitin: Morphine {
@@ -84,7 +86,7 @@ class ACE_Medical_Treatment_Actions {
         animationPatient = "";
         animationPatientUnconscious = "AinjPpneMstpSnonWrflDnon_rolltoback";
         animationPatientUnconsciousExcludeOn[] = {"ainjppnemstpsnonwrfldnon","kat_recoveryposition"};
-        sounds[] = {{QPATHTO_R(sounds\take_painkillers.wav),5,1,15}};
+        sounds[] = {{QPATHTO_R(sounds\take_painkillers.ogg),5,1,15}};
         litter[] = {};
     };
     class Caffeine: Morphine {
@@ -92,14 +94,15 @@ class ACE_Medical_Treatment_Actions {
         displayNameProgress = CSTRING(Using);
         allowedSelections[] = {"Head"};
         allowSelfTreatment = 1;
-        treatmentTime = 5;
+        medicRequired = QGVAR(medLvl_Caffeine);
+        treatmentTime = QGVAR(treatmentTime_Caffeine);
         items[] = {"kat_Caffeine"};
         condition = QUOTE(!(_patient getVariable [ARR_2(QQEGVAR(airway,recovery),false)]));
         callbackSuccess = QFUNC(treatmentAdvanced_Caffeine);
         animationPatient = "";
         animationPatientUnconscious = "AinjPpneMstpSnonWrflDnon_rolltoback";
         animationPatientUnconsciousExcludeOn[] = {"ainjppnemstpsnonwrfldnon","kat_recoveryposition"};
-        sounds[] = {{QPATHTO_R(sounds\take_painkillers.wav),5,1,15}};
+        sounds[] = {{QPATHTO_R(sounds\take_painkillers.ogg),5,1,15}};
         litter[] = {};
     };
     class Penthrox: Morphine {
@@ -118,7 +121,7 @@ class ACE_Medical_Treatment_Actions {
         animationMedicProne = "";
         animationMedicSelf = "";
         animationMedicSelfProne = "";
-        sounds[] = {{QPATHTO_R(sounds\use_penthrox.wav),2,1,7}};
+        sounds[] = {{QPATHTO_R(sounds\use_penthrox.ogg),2,1,7}};
         litter[] = {};
     };
     class Naloxone: Carbonate {

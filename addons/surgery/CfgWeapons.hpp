@@ -11,7 +11,7 @@ class CfgWeapons {
         ACE_isMedicalItem = 1;
         class ItemInfo: CBA_MiscItem_ItemInfo {
             mass = 0.2;
-        }; 
+        };
     };
     class kat_retractor: ACE_ItemCore {
         scope = 2;
@@ -22,7 +22,7 @@ class CfgWeapons {
         ACE_isMedicalItem = 1;
         class ItemInfo: CBA_MiscItem_ItemInfo {
             mass = 0.5;
-        }; 
+        };
     };
     class kat_clamp: ACE_ItemCore {
         scope = 2;
@@ -33,7 +33,7 @@ class CfgWeapons {
         ACE_isMedicalItem = 1;
         class ItemInfo: CBA_MiscItem_ItemInfo {
             mass = 0.5;
-        }; 
+        };
     };
     class kat_plate: ACE_ItemCore {
         scope = 2;
@@ -44,7 +44,7 @@ class CfgWeapons {
         ACE_isMedicalItem = 1;
         class ItemInfo: CBA_MiscItem_ItemInfo {
             mass = 0.3;
-        }; 
+        };
     };
     class kat_vacuum: ACE_ItemCore {
         scope = 2;
@@ -59,7 +59,7 @@ class CfgWeapons {
     };
     class kat_ultrasound: ACE_ItemCore {
         scope = 2;
-        displayName = CSTRING(Ultra_DescShort); //Not an error - it has the same description as display name
+        displayName = CSTRING(Ultra_DisplayName);
         picture = QPATHTOF(ui\ultra.paa);
         model = "\A3\Props_F_Exp_A\Military\Equipment\Tablet_02_F.p3d";
         descriptionShort = CSTRING(Ultra_DescShort);
@@ -69,9 +69,8 @@ class CfgWeapons {
     };
     class kat_reboa: ACE_ItemCore {
         scope = 2;
-        displayName = CSTRING(Reboa_DescShort); //Not an error - it has the same description as display name
+        displayName = CSTRING(Reboa_DisplayName);
         picture = QPATHTOF(ui\reboa.paa);
-        model = "\A3\Structures_F_Heli\Items\Electronics\HDMICable_01_F.p3d";
         descriptionShort = CSTRING(Reboa_DescShort);
         class ItemInfo: CBA_MiscItem_ItemInfo {
             mass = 1;

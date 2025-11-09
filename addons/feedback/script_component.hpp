@@ -1,5 +1,5 @@
 #define COMPONENT feedback
-#define COMPONENT_BEAUTIFIED KAT - Feedback
+#define COMPONENT_BEAUTIFIED Feedback
 #include "\x\kat\addons\main\script_mod.hpp"
 
 // #define DEBUG_MODE_FULL

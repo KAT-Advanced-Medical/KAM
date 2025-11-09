@@ -42,7 +42,9 @@ TRACE_1("clearConditionCaches: tourniquetRemove",_nearPlayers);
 
 // Add tourniquet item to medic or patient
 if (_medic call ACEFUNC(common,isPlayer)) then {
-    private _receiver = [_patient, _medic, _medic] select ACEGVAR(medical_treatment,allowSharedEquipment);
+    private _allowSharedEquipment = ACEGVAR(medical_treatment,allowSharedEquipment);
+    if (_allowSharedEquipment == 3) then { _allowSharedEquipment = [0, 1] select ([_medic] call ACEFUNC(medical_treatment,isMedic)) };
+    private _receiver = [_patient, _medic, _medic] select _allowSharedEquipment;
     [_receiver, "ACE_tourniquet"] call ACEFUNC(common,addToInventory);
 } else {
     // If the medic is AI, only return tourniquet if enabled
@@ -55,7 +57,7 @@ if (_medic call ACEFUNC(common,isPlayer)) then {
 private _occludedMedications = _patient getVariable [QACEGVAR(medical,occludedMedications), []];
 private _arrayModified = false;
 
-if !(((_patient getVariable [QGVAR(IV), [0,0,0,0,0,0]]) select _partIndex) isEqualTo 3) then {
+if (((_patient getVariable [QGVAR(IV), [0,0,0,0,0,0]]) select _partIndex) isNotEqualTo 3) then {
     {
         _x params ["_bodyPartN", "_medication"];
 

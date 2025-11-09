@@ -24,5 +24,6 @@ switch (true) do {
     case (_unitTemperature < 29) : { [LLSTRING(temperature_cold), 1.5, _medic] call ACEFUNC(common,displayTextStructured); };
     case (_unitTemperature < 32) : { [LLSTRING(temperature_cool), 1.5, _medic] call ACEFUNC(common,displayTextStructured); };
     case (_unitTemperature < 36) : { [LLSTRING(temperature_mild), 1.5, _medic] call ACEFUNC(common,displayTextStructured); };
-    default {[LLSTRING(temperature_warm), 1.5, _medic] call ACEFUNC(common,displayTextStructured); };
+    case (_unitTemperature < 38) : { [LLSTRING(temperature_warm), 1.5, _medic] call ACEFUNC(common,displayTextStructured); };
+    default {[LLSTRING(temperature_hot), 1.5, _medic] call ACEFUNC(common,displayTextStructured); };
 };
