@@ -24,5 +24,5 @@ if (_unit getVariable [QGVAR(loadout), nil] isEqualType "") exitWith {
 private _loadout = _unit getVariable QGVAR(loadout);
   format ["%1: %2", _groupID, _loadout];
 };
-private _loadout = getText (configFile >> "CfgVehicles" >> typeOf _unit >> "displayName");
+private _loadout = getText (configOf _unit >> "displayName");
 format ["%1: %2", _groupID, _loadout];

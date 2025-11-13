@@ -25,7 +25,7 @@ private _foundIncompatibleAddons = [];
     //Here is the Wiki page with current list: https://github.com/Tomcat-SG/KAM/wiki/Incompatible-addons
 }; } forEach ["KATMEDICALSTATIC","kat_evac","KATMEDICALsteth","adv_aceCPR","aceP_main"];
 
-if ((count _foundIncompatibleAddons) > 0) then {
+if (_foundIncompatibleAddons isNotEqualTo []) then {
     diag_log format [LLSTRING(incompatibilityWarning_Desc), _foundIncompatibleAddons];
     private _text = format [LLSTRING(incompatibilityWarning_Desc), _foundIncompatibleAddons];
     if (hasInterface) then {

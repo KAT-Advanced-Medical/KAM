@@ -277,7 +277,7 @@
             <Dutch>Normaal INR</Dutch>
         </Key>
         <Key ID="STR_KAT_Pharma_CheckCoag_slightly_aboveINR">
-            <English>Sligtly Above normal INR</English>
+            <English>Slightly Above normal INR</English>
             <Czech>INR mírně nad normálem</Czech>
             <French>légèrement supérieur à l'INR normal</French>
             <Spanish>ligeramente por encima de INR normal</Spanish>
@@ -345,7 +345,7 @@
             <English>Perform Dialysis</English>
             <Czech>Provést dialýzu</Czech>
             <French>Effectuer une dialyse</French>
-            <Spanish>Efectuar dialisis</Spanish>
+            <Spanish>Efectuar diálisis</Spanish>
             <Italian>Esegui Dialisi</Italian>
             <Polish>Przeprowadź Dializę</Polish>
             <Portuguese>Realizar Diálise</Portuguese>
@@ -872,7 +872,7 @@
             <Dutch>Wordt gebruikt om hartstilstand te bestrijden</Dutch>
         </Key>
         <Key ID="STR_KAT_Pharma_Lorazepam_DescShort">
-            <English>Sedtation medication</English>
+            <English>Sedation medication</English>
             <Czech>Sedativa</Czech>
             <French>Médicament de sédation</French>
             <Spanish>Fármaco sedante</Spanish>
@@ -960,7 +960,7 @@
             <English>Opioid analgesic, used to suppress moderate pain</English>
             <Czech>Opioidní analgetikum, používané k potlačení střední bolesti</Czech>
             <French>Analgésique opioïde, utilisé pour supprimer les douleurs modérées</French>
-            <Spanish>Analgésico opioide, utilizado para suprimir el dolor moderador</Spanish>
+            <Spanish>Analgésico opioide, utilizado para suprimir el dolor moderado</Spanish>
             <Italian>Analgesico oppioide, usato per sopprimere il dolore moderato</Italian>
             <Polish>Opioidowy środek przeciwbólowy, stosowany do tłumienia umiarkowanego bólu</Polish>
             <German>Opioid-Analgetikum zur Unterdrückung mäßiger Schmerzen</German>
@@ -1337,6 +1337,7 @@
             <Chinese>用於升高血壓</Chinese>
             <Chinesesimp>用于提高血压</Chinesesimp>
             <Dutch>Wordt gebruikt om de bloeddruk te laten stijgen</Dutch>
+            <Spanish>Usado para elevar la presión arterial</Spanish>
         </Key>
         <Key ID="STR_KAT_Pharma_Phenyl_Box_Display">
             <English>Phenylephrine</English>
@@ -2047,6 +2048,7 @@
             <Chinese>啟用IV/IO流量控制</Chinese>
             <Chinesesimp>启用IV/IO流量控制</Chinesesimp>
             <Dutch>Sta IV/IO Loopsnelheidscontrole toe</Dutch>
+            <Spanish>Habilitar el control de flujo IV/IO</Spanish>
         </Key>
         <Key ID="STR_KAT_Pharma_SETTING_IV_FLOW_CONTROL_DESC">
             <English>Enables the IV/IO flow control menu which gives the medic fine control over the volume running through the active line</English>
@@ -2058,6 +2060,7 @@
             <Chinese>啟用IV/IO流量控制選單，使醫務人員能夠精細控制通過活動線路的音量</Chinese>
             <Chinesesimp>启用IV/IO流量控制菜单，使医务人员能够精细控制通过活动线路的音量</Chinesesimp>
             <Dutch>Activeert het IV/IO loopsnelheidscontrole menu wat het medisch personeel fijne controle geeft over de loopsnelheid in de active lijn</Dutch>
+            <Spanish>Habilita el menú de control de flujo IV/IO, que permite al sanitario un control preciso sobre el volumen que circula por la vía activa</Spanish>
         </Key>
         <Key ID="STR_KAT_Pharma_SETTING_Kidney_Action">
             <English>Kidney damage/failure</English>
@@ -2345,7 +2348,7 @@
             <Dutch>Schakel wapenbeweging in</Dutch>
         </Key>
         <Key ID="STR_KAT_Pharma_SETTING_Weapon_Sway_Pervitin_DESC">
-            <English>Enables if pervitin should influance your weapon sway</English>
+            <English>Enables if pervitin should influence your weapon sway</English>
             <Czech>Povoluje, zda pervitin ovlivní Vaše houpání zbraně</Czech>
             <French>Définie si la pervitine influance l'oscillation de l'arme</French>
             <Spanish>Habilita si la pervitina afecta al balanceo del arma</Spanish>
@@ -2776,6 +2779,7 @@
             <German>CWMP Einstellungen</German>
             <Japanese>戦闘傷病治療薬(CWMP)設定</Japanese>
             <Dutch>CWMP Instellingen</Dutch>
+            <Spanish>Opciones de CWMP</Spanish>
         </Key>
         <Key ID="STR_KAT_Pharma_SubCategory_Caffeine">
             <English>Caffeine Settings</English>
@@ -3524,6 +3528,7 @@
             <German>KAT - ADV Medical: Medikamente</German>
             <Japanese>KAM - 薬学 (Pharmacy)</Japanese>
             <Dutch>KAT - ADV Medical: Farmaceutica</Dutch>
+            <Spanish>KAT - ADV Medical: Farmacia</Spanish>
         </Key>
         <Key ID="STR_KAT_Pharma_coagulation_Bandaged">
             <English>Blood clotting temporarily closed a wound on %1</English>
@@ -3555,7 +3560,7 @@
             <English>%1 performed dialysis</English>
             <Czech>%1 provedl dialýzu</Czech>
             <French>%1 a effectué une dialyse</French>
-            <Spanish>%1 realizó una dialisis</Spanish>
+            <Spanish>%1 realizó una diálisis</Spanish>
             <Italian>%1 ha eseguito la dialisi</Italian>
             <Polish>%1 przeprowadził dializę</Polish>
             <Portuguese>%1 realizou diálise</Portuguese>
@@ -3781,6 +3786,7 @@
             <German>Erlaube die Verwendung von CWMP</German>
             <Japanese>戦闘傷病治療薬(CWMP)の許可</Japanese>
             <Dutch>Sta gebruik van CWMP toe</Dutch>
+            <Spanish>Permitir el uso de CWMP</Spanish>
         </Key>
         <Key ID="STR_KAT_Pharma_medLvl_Caffeine">
             <English>Allow using Caffeine</English>
@@ -3789,6 +3795,7 @@
             <German>Erlaube die Verwendung von Koffein</German>
             <Japanese>カフェインの許可</Japanese>
             <Dutch>Sta gebruik van caffeine toe</Dutch>
+            <Spanish>Permitir el uso de Cafeína</Spanish>
         </Key>
         <Key ID="STR_KAT_Pharma_medLvl_Carbonate">
             <English>Allow using Carbonate</English>
@@ -4203,6 +4210,7 @@
             <German>Anwendungszeit für CWMP</German>
             <Japanese>戦闘傷病治療薬(CWMP)の所要時間</Japanese>
             <Dutch>Behandelingstijd voor gebruik van CWMP</Dutch>
+            <Spanish>Tiempo de tratamiento para CWMP</Spanish>
         </Key>
         <Key ID="STR_KAT_Pharma_treatmentTime_Caffeine">
             <English>Treatment time for Caffeine</English>
@@ -4211,6 +4219,7 @@
             <German>Anwendungszeit für Koffein</German>
             <Japanese>カフェインの所要時間</Japanese>
             <Dutch>Behandelingstijd voor gebruik van caffeine</Dutch>
+            <Spanish>Tiempo de tratamiento para Cafeína</Spanish>
         </Key>
         <Key ID="STR_KAT_Pharma_treatmentTime_Carbonate">
             <English>Treatment time for Carbonate</English>
@@ -4513,6 +4522,42 @@
             <Turkish>% 1,% 2 eklendi</Turkish>
             <Finnish>%1 käytetty %2</Finnish>
             <Dutch>%1 gebruikte %2</Dutch>
+        </Key>
+        <Key ID="STR_KAT_Pharma_IV_DROP_ENABLE_DESC">
+            <English>Enable IV drop time simulation</English>
+            <German>IV-Tropfzeitensimulation aktivieren</German>
+        </Key>
+        <Key ID="STR_KAT_Pharma_IV_REUSE_DESC">
+            <English>Allow reuse of IV Equipment</English>
+            <German>Wiederverwendung von IV Ausrüstung erlauben</German>
+        </Key>
+        <Key ID="STR_KAT_Pharma_SETTING_reorientationChance_DESC">
+            <English>Chance for successful reorientation</English>
+            <German>Chance für erfolgreiche Neuorientierung</German>
+        </Key>
+        <Key ID="STR_KAT_Pharma_SETTING_carbonateChance_DESC">
+            <English>Chance for successful carbonate treatment</English>
+            <German>Chance für erfolgreiche Carbonat-Behandlung</German>
+        </Key>
+        <Key ID="STR_KAT_Pharma_SETTING_CheckCoag_MedLevel_DESC">
+            <English>Medical level required to check coagulation</English>
+            <German>Erforderlicher medizinischer Level für Gerinnungsprüfung</German>
+        </Key>
+        <Key ID="STR_KAT_Pharma_SETTING_CheckCoag_Location_DESC">
+            <English>Locations where coagulation can be checked</English>
+            <German>Orte, an denen die Gerinnung überprüft werden kann</German>
+        </Key>
+        <Key ID="STR_KAT_Pharma_SETTING_CheckCoag_treatmentTime_DESC">
+            <English>Time required to check coagulation</English>
+            <German>Zeit für die Gerinnungsprüfung</German>
+        </Key>
+        <Key ID="STR_KAT_Pharma_treatmenttime_applyiv_desc">
+            <English>Time required to establish an IV.</English>
+            <German>Benötigte Zeit um einen IV-Zugang zu legen.</German>
+        </Key>
+        <Key ID="STR_KAT_Pharma_treatmenttime_applyio_desc">
+            <English>Time required to establish an IO.</English>
+            <German>Benötigte Zeit um einen IO-Zugang zu legen.</German>
         </Key>
     </Package>
 </Project>

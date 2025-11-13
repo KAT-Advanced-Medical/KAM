@@ -58,7 +58,7 @@ if (_usedItem isEqualTo "kat_IV_16") then {
     if (!_ivMenu && _ivFlowControl) then {
         [_patient] call EFUNC(gui,handleIVShow);
     };
-    private _medStack = _patient call ACEFUNC(medical_treatment,getAllMedicationCount);
+    private _medStack = _patient call ACEFUNC(medical_status,getAllMedicationCount);
     private _medsToCheck = ["fentanyl", "ketamine", "nalbuphine", "morphine", "lidocaine"];
     private _fentanylEffectiveness = 0;
     private _ketamineEffectiveness = 0;
