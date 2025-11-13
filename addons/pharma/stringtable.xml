@@ -4523,5 +4523,41 @@
             <Finnish>%1 käytetty %2</Finnish>
             <Dutch>%1 gebruikte %2</Dutch>
         </Key>
+        <Key ID="STR_KAT_Pharma_IV_DROP_ENABLE_DESC">
+            <English>Enable IV drop time simulation</English>
+            <German>IV-Tropfzeitensimulation aktivieren</German>
+        </Key>
+        <Key ID="STR_KAT_Pharma_IV_REUSE_DESC">
+            <English>Allow reuse of IV Equipment</English>
+            <German>Wiederverwendung von IV Ausrüstung erlauben</German>
+        </Key>
+        <Key ID="STR_KAT_Pharma_SETTING_reorientationChance_DESC">
+            <English>Chance for successful reorientation</English>
+            <German>Chance für erfolgreiche Neuorientierung</German>
+        </Key>
+        <Key ID="STR_KAT_Pharma_SETTING_carbonateChance_DESC">
+            <English>Chance for successful carbonate treatment</English>
+            <German>Chance für erfolgreiche Carbonat-Behandlung</German>
+        </Key>
+        <Key ID="STR_KAT_Pharma_SETTING_CheckCoag_MedLevel_DESC">
+            <English>Medical level required to check coagulation</English>
+            <German>Erforderlicher medizinischer Level für Gerinnungsprüfung</German>
+        </Key>
+        <Key ID="STR_KAT_Pharma_SETTING_CheckCoag_Location_DESC">
+            <English>Locations where coagulation can be checked</English>
+            <German>Orte, an denen die Gerinnung überprüft werden kann</German>
+        </Key>
+        <Key ID="STR_KAT_Pharma_SETTING_CheckCoag_treatmentTime_DESC">
+            <English>Time required to check coagulation</English>
+            <German>Zeit für die Gerinnungsprüfung</German>
+        </Key>
+        <Key ID="STR_KAT_Pharma_treatmenttime_applyiv_desc">
+            <English>Time required to establish an IV.</English>
+            <German>Benötigte Zeit um einen IV-Zugang zu legen.</German>
+        </Key>
+        <Key ID="STR_KAT_Pharma_treatmenttime_applyio_desc">
+            <English>Time required to establish an IO.</English>
+            <German>Benötigte Zeit um einen IO-Zugang zu legen.</German>
+        </Key>
     </Package>
 </Project>
