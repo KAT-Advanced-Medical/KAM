@@ -4519,7 +4519,7 @@
             <German>IV-Tropfzeitensimulation aktivieren</German>
         </Key>
         <Key ID="STR_KAT_Pharma_IV_REUSE_DESC">
-            <English>Allow reuse of IV Equipement</English>
+            <English>Allow reuse of IV Equipment</English>
             <German>Wiederverwendung von IV Ausrüstung erlauben</German>
         </Key>
         <Key ID="STR_KAT_Pharma_SETTING_reorientationChance_DESC">
