@@ -79,6 +79,7 @@
             <Chinese>用於偵測 KAT 有毒化學物質</Chinese>
             <Chinesesimp>用于检测KAT有毒化学物质</Chinesesimp>
             <Dutch>Wordt gebruikt om giftige KAT chemicaliën te detecteren</Dutch>
+            <Spanish>Se utiliza para detectar químicos tóxicos KAT</Spanish>
         </Key>
         <Key ID="STR_KAT_Chemical_ChemicalDetectorDisplayName">
             <English>JCAD Chemical Detector</English>
@@ -90,6 +91,7 @@
             <Chinese>JCAD 化學偵測器</Chinese>
             <Chinesesimp>JCAD化学检测仪</Chinesesimp>
             <Dutch>JCAD Chemische detector</Dutch>
+            <Spanish>Detector Químico JCAD</Spanish>
         </Key>
         <Key ID="STR_KAT_Chemical_ChemicalDetector_Menu">
             <English>JCAD</English>
@@ -101,6 +103,7 @@
             <Chinese>JCAD</Chinese>
             <Chinesesimp>JCAD</Chinesesimp>
             <Dutch>JCAD</Dutch>
+            <Spanish>JCAD</Spanish>
         </Key>
         <Key ID="STR_KAT_Chemical_ChemicalDetector_Off">
             <English>OFF</English>
@@ -112,6 +115,7 @@
             <Chinese>關閉</Chinese>
             <Chinesesimp>关闭</Chinesesimp>
             <Dutch>UIT</Dutch>
+            <Spanish>OFF</Spanish>
         </Key>
         <Key ID="STR_KAT_Chemical_DisableDetectorSound">
             <English>Disable Warning Tone</English>
@@ -123,6 +127,7 @@
             <Chinese>停用警告音</Chinese>
             <Chinesesimp>禁用警告音</Chinesesimp>
             <Dutch>Waarschuwingstoon uitschakelen</Dutch>
+            <Spanish>Desactivar Tono de Advertencia</Spanish>
         </Key>
         <Key ID="STR_KAT_Chemical_EnableDetector">
             <English>Turn On Detector</English>
@@ -134,6 +139,7 @@
             <Chinese>打開探測器</Chinese>
             <Chinesesimp>打开探测器</Chinesesimp>
             <Dutch>Detector aanzetten</Dutch>
+            <Spanish>Encender Detector</Spanish>
         </Key>
         <Key ID="STR_KAT_Chemical_EnableDetectorSound">
             <English>Enable Warning Tone</English>
@@ -145,6 +151,7 @@
             <Chinese>啟用警告音</Chinese>
             <Chinesesimp>启用警告音</Chinesesimp>
             <Dutch>Waarschuwingstoon inschakelen</Dutch>
+            <Spanish>Activar Tono de Advertencia</Spanish>
         </Key>
         <Key ID="STR_KAT_Chemical_GasBox_Displayname">
             <English>[ACE] 82mm Gas Rounds Box</English>
@@ -392,6 +399,7 @@
             <German>Tränengas (Level 0)</German>
             <Japanese>催涙ガス (レベル 0)</Japanese>
             <Dutch>Traangas (level 0)</Dutch>
+            <Spanish>Gas lacrimógeno (Nivel 0)</Spanish>
         </Key>
         <Key ID="STR_KAT_Chemical_Lvl1_Gas">
             <English>Toxic gas (Level 1)</English>
@@ -556,6 +564,7 @@
             <Chinese>戴上防毒面具</Chinese>
             <Chinesesimp>戴上防毒面具</Chinesesimp>
             <Dutch>Zet gasmasker op</Dutch>
+            <Spanish>Colocarse la máscara antigás</Spanish>
         </Key>
         <Key ID="STR_KAT_Chemical_SETTING_AVAIL_GASMASK">
             <English>Accepted gas masks</English>
@@ -635,6 +644,7 @@
             <Chinese>丟下武器機會</Chinese>
             <Chinesesimp>投掷武器机会</Chinesesimp>
             <Dutch>Kans om wapen te laten vallen</Dutch>
+            <Spanish>Probabilidad de Soltar el Arma</Spanish>
         </Key>
         <Key ID="STR_KAT_Chemical_SETTING_dropWeaponChance_DESC">
             <English>Determines chance for dropping weapon while in tear gas</English>
@@ -646,6 +656,7 @@
             <Chinese>確定在催淚瓦斯中丟下武器的機率</Chinese>
             <Chinesesimp>确定在催泪瓦斯中投掷武器的几率</Chinesesimp>
             <Dutch>Bepaald de kans om je wapen te laten vallen terwijl je wordt blootgesteld aan traangas</Dutch>
+            <Spanish>Determina la probabilidad de soltar el arma mientras está expuesto a gas lacrimógeno</Spanish>
         </Key>
         <Key ID="STR_KAT_Chemical_SETTING_gasMaskSoundVolume">
             <English>Gas Mask Sound Volume</English>
@@ -657,6 +668,7 @@
             <Chinese>防毒面具音量</Chinese>
             <Chinesesimp>防毒面具音量</Chinesesimp>
             <Dutch>Volume van gasmasker</Dutch>
+            <Spanish>Volumen del sonido con la máscara antigás</Spanish>
         </Key>
         <Key ID="STR_KAT_Chemical_SETTING_gasMaskSoundVolume_DESC">
             <English>Determines how loud the breathing sounds are when using the gas mask</English>
@@ -668,6 +680,7 @@
             <Chinese>確定使用防毒面具時呼吸聲的音量</Chinese>
             <Chinesesimp>确定使用防毒面具时呼吸声的音量</Chinesesimp>
             <Dutch>Bepaald hoe luid de ademhalingsgeluiden zijn terwijl er een gasmasker gebruikt wordt</Dutch>
+            <Spanish>Determina qué tan fuertes son los sonidos de respiración al usar la máscara antigás</Spanish>
         </Key>
         <Key ID="STR_KAT_Chemical_SETTING_gasMaskStaminaLoss">
             <English>Enable Stamina Loss when using Gas Mask</English>
@@ -678,11 +691,14 @@
             <Japanese>ガスマスク使用時のスタミナ減少を有効化</Japanese>
             <Chinese>啟用使用防毒面具時的體力流失</Chinese>
             <Dutch>Uithoudingsvermogenverlies bij gebruik van een gasmasker inschakelen</Dutch>
+            <Spanish>Activar Cansancio al usar la Máscara Antigás</Spanish>
         </Key>
         <Key ID="STR_KAT_Chemical_SETTING_gasMaskStaminaLoss_DESC">
             <English>If you wear a gasmask you will lose stamina more quickly</English>
             <German>Wenn man eine Gasmaske trägt, verliert man mehr Ausdauer</German>
             <French>Si vous portez un masque à gaz, vous perdrez plus rapidement votre endurance.</French>
+            <Japanese>ガスマスクを着用するとスタミナがより早く失われます</Japanese>
+            <Spanish>Si llevas máscara antigás perderás resistencia más rápidamente</Spanish>
         </Key>
         <Key ID="STR_KAT_Chemical_SETTING_infectionTime">
             <English>Time until infection</English>
@@ -728,6 +744,7 @@
             <Chinese>顯示中毒</Chinese>
             <Chinesesimp>显示中毒</Chinesesimp>
             <Dutch>Intoxicaties tonen</Dutch>
+            <Spanish>Mostrar Envenenamiento</Spanish>
         </Key>
         <Key ID="STR_KAT_Chemical_SETTING_showPoisoning_DESC">
             <English>Determines if poisoning and intoxication is shown in the medical menu</English>
@@ -739,6 +756,7 @@
             <Chinese>確定醫療選單中是否顯示中毒</Chinese>
             <Chinesesimp>确定医疗菜单中是否显示中毒</Chinesesimp>
             <Dutch>Bepaald of intoxicaties zichtbaar zijn in het medische menu</Dutch>
+            <Spanish>Determina si el envenenamiento e intoxicación se muestran en el menú médico</Spanish>
         </Key>
         <Key ID="STR_KAT_Chemical_TakeOffGasMask">
             <English>Take off gas mask</English>
@@ -750,6 +768,7 @@
             <Chinese>摘下防毒面具</Chinese>
             <Chinesesimp>摘下防毒面具</Chinesesimp>
             <Dutch>Gasmasker afzetten</Dutch>
+            <Spanish>Quitarse la máscara antigás</Spanish>
         </Key>
         <Key ID="STR_KAT_Chemical_ToxicGas_DisplayName">
             <English>82mm Toxic Gas Round</English>
@@ -911,6 +930,7 @@
             <German>KAT - ADV Medical: Chemie</German>
             <Japanese>KAM - 化学戦 (Chemical)</Japanese>
             <Dutch>KAT - ADV Medical: Chemisch</Dutch>
+            <Spanish>KAT - ADV Medical: Química</Spanish>
         </Key>
         <Key ID="STR_KAT_Chemical_giveGasMask_action">
             <English>Put on gas mask</English>

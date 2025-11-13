@@ -1909,6 +1909,7 @@
             <German>KAT - ADV Medical: Sonstiges</German>
             <Japanese>KAM - その他</Japanese>
             <Dutch>KAT - ADV Medical: Overig</Dutch>
+            <Spanish>KAT - ADV Medical: Varios</Spanish>
         </Key>
         <Key ID="STR_KAT_Misc_incompatibilityWarning_Desc">
             <English>[KAM WARNING] Incompatible addon(s) that could negatively affect correct functionality detected. KAT - Advanced Medical REWRITE Development Team strongly advises to remove these addons: %1</English>
@@ -1933,36 +1934,49 @@
             <Japanese>[KAM] その他物資箱</Japanese>
             <French>[KAM] Objets divers</French>
             <Dutch>[KAM] Overige items</Dutch>
+            <Spanish>[KAM] Objetos Variados</Spanish>
         </Key>
         <Key ID="STR_KAT_Misc_SETTING_ENABLE_DESC">
             <English>Enables the KAT Misc medical system features (e.g. IV-Stands)</English>
             <German>Aktiviert die KAT Misc Medizinsystem-Funktionen (z.B. IV-Ständer)</German>
             <French>Active les fonctionnalités du système médical KAT Misc (par exemple, les supports pour perfusions intraveineuses).</French>
+            <Japanese>KAT その他の医療システム機能を有効化します (例: IVスタンド)</Japanese>
+            <Spanish>Activa las funciones médicas diversas del sistema KAT (por ejemplo, soportes para sueros)</Spanish>
         </Key>
         <Key ID="STR_KAT_Misc_SETTING_treatmentTimeDetachTourniquet_DESC">
             <English>Time required to detach a tourniquet from a patient</English>
             <German>Benötigte Zeit zum Entfernen eines Tourniquets vom Patienten</German>
             <French>Temps nécessaire pour retirer un garrot d'un patient</French>
+            <Japanese>患者から止血帯を外すのにかかる時間</Japanese>
+            <Spanish>Tiempo necesario para retirar un torniquete de un paciente</Spanish>
         </Key>
         <Key ID="STR_KAT_Misc_SETTING_tourniquetEffects_Enable_DESC">
             <English>Enables tourniquet effects on patient health and stamina</English>
             <German>Aktiviert Tourniquet-Effekte auf Patientengesundheit und Ausdauer</German>
             <French>Active les effets du garrot sur la santé et l'endurance du patient.</French>
+            <Japanese>患者の体力とスタミナに対する止血帯の影響を有効化します</Japanese>
+            <Spanish>Activa los efectos del torniquete sobre la salud y la resistencia del paciente</Spanish>
         </Key>
         <Key ID="STR_KAT_Misc_SETTING_tourniquetEffects_PositiveMultiplier_DESC">
             <English>Multiplier for positive tourniquet effects</English>
             <German>Multiplikator für positive Tourniquet-Effekte</German>
             <French>Multiplicateur pour les effets positifs du garrot</French>
+            <Japanese>止血帯のプラス効果の乗数</Japanese>
+            <Spanish>Multiplicador para los efectos positivos del torniquete</Spanish>
         </Key>
         <Key ID="STR_KAT_Misc_SETTING_tourniquetEffects_NegativeMultiplier_DESC">
             <English>Multiplier for negative tourniquet effects</English>
             <German>Multiplikator für negative Tourniquet-Effekte</German>
             <French>Multiplicateur pour les effets négatifs du garrot</French>
+            <Japanese>止血帯のマイナス効果の乗数</Japanese>
+            <Spanish>Multiplicador para los efectos negativos del torniquete</Spanish>
         </Key>
         <Key ID="STR_KAT_Misc_SETTING_FAK_RemoveWhenEmpty_DESC">
             <English>Automatically removes first aid kits from inventory when they become empty</English>
             <German>Entfernt automatisch Erste-Hilfe-Kästen aus dem Inventar, wenn sie leer werden</German>
             <French>Supprime automatiquement les trousses de premiers secours de l'inventaire lorsqu'elles sont vides.</French>
+            <Japanese>応急処置キット(FAK)が空になった場合、自動的にインベントリから削除します</Japanese>
+            <Spanish>Elimina automáticamente los botiquines del inventario cuando se vacían</Spanish>
         </Key>
     </Package>
 </Project>

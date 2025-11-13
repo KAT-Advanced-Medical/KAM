@@ -63,6 +63,59 @@ class CfgCloudlets {
         position[] = {0,0,0};
     };
 
+    class GVAR(Toxic_Gas_Particles): Default {
+        interval = 0.01;
+        circleRadius = 0;
+        circleVelocity[] = {0,0,0};
+        particleFSNtieth = 16;
+        particleFSIndex = 7;
+        particleFSFrameCount = 16;
+        particleFSLoop = 1;
+        angleVar = 1;
+        particleShape = "\A3\data_f\ParticleEffects\Universal\Universal.p3d";
+        particleType = "Billboard";
+        timerPeriod = 1;
+        lifeTime = 20;
+        moveVelocity[] = {0,0,0};
+        rotationVelocity = 1;
+        weight = 100;
+        volume = 1;
+        rubbing = 0.01;
+        size[] = {0.1,2,0};
+        color[] =
+        {
+            {0.3,0.3,0.3,0},
+            {0.4,0.4,0.4,0.2},
+            {0.371, 0.465, 0.044,0.3},
+            {0.471, 0.565, 0.084,0.2},
+            {0.671, 0.765, 0.184,0.1},
+            {0.671, 0.765, 0.184,0}
+        };
+        animationSpeed[] = {0.5,0.3};
+        randomDirectionPeriod = 1;
+        randomDirectionIntensity = 0.04;
+        onTimerScript = "";
+        beforeDestroyScript = "";
+        lifeTimeVar = 10;
+        positionVar[] = {0,0,0};
+        moveVelocityVar[] = {0.5,0,0.5};
+        rotationVelocityVar = 10;
+        sizeVar = 0;
+        colorVar[] = {0,0,0,0.35};
+        randomDirectionPeriodVar = 0;
+        randomDirectionIntensityVar = 0;
+        coreIntensity = 0;
+        coreDistance = 0;
+        damageTime = 0;
+        damageType = "";
+        angle = 0;
+        position[] = {0,0,0};
+        onSurface = 1;
+        surfaceOffset = 0;
+        bounceOnSurface = 0;
+        ignoreWind = 1;
+    };
+
     class KAT_CAS_GAS_FX: Default {
         interval = 0.03;
         circleRadius = 0;

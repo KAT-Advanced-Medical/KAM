@@ -26,6 +26,12 @@
     if !(_conditionArgs call _condition) then {
         TRACE_2("condition no longer valid, deleting",_x,_y);
 
+        // Delete all particle objects for this zone, if there are some
+        private _particleObjects = _gasLogic getVariable [QGVAR(particleObjects), []];
+        {
+            deleteVehicle _x;
+        } forEach _particleObjects;
+
         detach _gasLogic;
         deleteVehicle _gasLogic;
 

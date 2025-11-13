@@ -362,6 +362,7 @@
             <Chinese>氣道嚴重膨脹</Chinese>
             <Chinesesimp>气道严重膨胀</Chinesesimp>
             <Dutch>De luchtwegen hebben een sterke blaarvorming</Dutch>
+            <Spanish>Las vías respiratorias están gravemente ampolladas</Spanish>
         </Key>
         <Key ID="STR_KAT_Airway_AirwayStatus_mitigatedObstruction">
             <English>Obstruction is temporarily mitigated</English>
@@ -1312,6 +1313,8 @@
             <English>Period in seconds during which patient cannot get another occlusion after last occlusion was cleared. Set to 0 to disable this feature.</English>
             <German>Zeitraum in Sekunden, in dem ein Patient keine weitere Okklusion bekommen kann, nachdem die letzte Okklusion beseitigt wurde. Auf 0 setzen, um diese Funktion zu deaktivieren.</German>
             <French>Période en secondes pendant laquelle le patient ne peut pas obtenir une autre occlusion après que la dernière occlusion a été effacée. Réglez sur 0 pour désactiver cette fonction.</French>
+            <Japanese>患者の気道異物が解消された後、再度気道異物が発生しない期間(秒)。 0に設定で無効化。</Japanese>
+            <Spanish>Período en segundos durante el cual el paciente no puede recibir otra oclusión después de que la última haya sido eliminada. Establecer a 0 para desactivar esta función.</Spanish>
         </Key>
         <Key ID="STR_KAT_Airway_SETTING_occlusion_repeatTimer">
             <English>Occlusion repeat timer</English>
@@ -1335,11 +1338,15 @@
             <English>Time interval in seconds at which the system checks for new occlusion occurrences in unconscious patients.</English>
             <German>Zeitintervall in Sekunden, in dem das System neue Okklusionsereignisse bei bewusstlosen Patienten überprüft.</German>
             <French>Intervalle de temps en secondes pendant lequel le système vérifie l'apparition de nouvelles occlusions chez les patients inconscients.</French>
+            <Japanese>意識不明の患者の新たな気道異物の発生をシステムがチェックする間隔(秒)。</Japanese>
+            <Spanish>Intervalo de tiempo en segundos en el que el sistema verifica la aparición de nuevas oclusiones en pacientes inconscientes.</Spanish>
         </Key>
         <Key ID="STR_KAT_Airway_SETTING_puking_sound_DESC">
             <English>Enable or disable the sound effect when a patient develops airway occlusion (vomiting).</English>
             <German>Aktiviert oder deaktiviert den Soundeffekt, wenn bei einem Patienten eine Atemwegsobstruktion (Erbrechen) auftritt.</German>
             <French>Activer ou désactiver l'effet sonore lorsqu'un patient développe une occlusion des voies respiratoires (vomissements).</French>
+            <Japanese>患者に気道異物(嘔吐)が発生した場合のサウンド効果を有効化または無効化します。</Japanese>
+            <Spanish>Activar o desactivar el efecto de sonido cuando un paciente presenta una obstrucción de las vías respiratorias (vomitando).</Spanish>
         </Key>
         <Key ID="STR_KAT_Airway_SETTING_puking_sound">
             <English>Activate the puking sound?</English>
@@ -1818,6 +1825,7 @@
             <German>KAT - ADV Medical: Atemwege</German>
             <Japanese>KAM - 気道 (Airway)</Japanese>
             <Dutch>KAT - ADV Medical: Luchtwegen</Dutch>
+            <Spanish>KAT - ADV Medical: Vías aéreas</Spanish>
         </Key>
         <Key ID="STR_KAT_Airway_checkAirway">
             <English>Check Airway</English>
@@ -1866,6 +1874,7 @@
             <Japanese>%1 が気道を確認: ひどい水膨れ</Japanese>
             <Chinesesimp>%1 条检查气道: 严重起泡</Chinesesimp>
             <Dutch>%1 heeft de luchtwegen gecheckt: Ernstige blaarvorming</Dutch>
+            <Spanish>%1 comprobó las vías respiratorias: gravemente ampolladas.</Spanish>
         </Key>
         <Key ID="STR_KAT_Airway_headTurning_begin">
             <English>Begin Head Turning</English>

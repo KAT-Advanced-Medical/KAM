@@ -28,12 +28,12 @@ private _ropes = _target getVariable [QGVAR(ropes), []];
 
     private _rope = _ropes select 0;
     ropeUnwound _rope;
-}, 
+},
 {
     params ["_target", "_stretcher", "_ropes"];
 
     private _crew = crew _stretcher;
-    if (count _crew > 0) then {
+    if (_crew isNotEqualTo []) then {
         {
             _x leaveVehicle _stretcher;
             moveOut _x;

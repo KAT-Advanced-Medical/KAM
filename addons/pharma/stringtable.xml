@@ -345,7 +345,7 @@
             <English>Perform Dialysis</English>
             <Czech>Provést dialýzu</Czech>
             <French>Effectuer une dialyse</French>
-            <Spanish>Efectuar dialisis</Spanish>
+            <Spanish>Efectuar diálisis</Spanish>
             <Italian>Esegui Dialisi</Italian>
             <Polish>Przeprowadź Dializę</Polish>
             <Portuguese>Realizar Diálise</Portuguese>
@@ -960,7 +960,7 @@
             <English>Opioid analgesic, used to suppress moderate pain</English>
             <Czech>Opioidní analgetikum, používané k potlačení střední bolesti</Czech>
             <French>Analgésique opioïde, utilisé pour supprimer les douleurs modérées</French>
-            <Spanish>Analgésico opioide, utilizado para suprimir el dolor moderador</Spanish>
+            <Spanish>Analgésico opioide, utilizado para suprimir el dolor moderado</Spanish>
             <Italian>Analgesico oppioide, usato per sopprimere il dolore moderato</Italian>
             <Polish>Opioidowy środek przeciwbólowy, stosowany do tłumienia umiarkowanego bólu</Polish>
             <German>Opioid-Analgetikum zur Unterdrückung mäßiger Schmerzen</German>
@@ -1337,6 +1337,7 @@
             <Chinese>用於升高血壓</Chinese>
             <Chinesesimp>用于提高血压</Chinesesimp>
             <Dutch>Wordt gebruikt om de bloeddruk te laten stijgen</Dutch>
+            <Spanish>Usado para elevar la presión arterial</Spanish>
         </Key>
         <Key ID="STR_KAT_Pharma_Phenyl_Box_Display">
             <English>Phenylephrine</English>
@@ -2047,6 +2048,7 @@
             <Chinese>啟用IV/IO流量控制</Chinese>
             <Chinesesimp>启用IV/IO流量控制</Chinesesimp>
             <Dutch>Sta IV/IO Loopsnelheidscontrole toe</Dutch>
+            <Spanish>Habilitar el control de flujo IV/IO</Spanish>
         </Key>
         <Key ID="STR_KAT_Pharma_SETTING_IV_FLOW_CONTROL_DESC">
             <English>Enables the IV/IO flow control menu which gives the medic fine control over the volume running through the active line</English>
@@ -2058,6 +2060,7 @@
             <Chinese>啟用IV/IO流量控制選單，使醫務人員能夠精細控制通過活動線路的音量</Chinese>
             <Chinesesimp>启用IV/IO流量控制菜单，使医务人员能够精细控制通过活动线路的音量</Chinesesimp>
             <Dutch>Activeert het IV/IO loopsnelheidscontrole menu wat het medisch personeel fijne controle geeft over de loopsnelheid in de active lijn</Dutch>
+            <Spanish>Habilita el menú de control de flujo IV/IO, que permite al sanitario un control preciso sobre el volumen que circula por la vía activa</Spanish>
         </Key>
         <Key ID="STR_KAT_Pharma_SETTING_Kidney_Action">
             <English>Kidney damage/failure</English>
@@ -2432,7 +2435,7 @@
             <Italian>Il tempo che impiega EACA per suturare una ferita.</Italian>
             <Portuguese>O intervalo entre suturas do EACA</Portuguese>
             <German>Die Zeit, die EACA benötigt, um einen Stich oder eine Wunde zu schließen</German>
-            <Japanese>EACAが創傷を縫合するのに掛かる時間</Japanese>
+            <Japanese>EACAが創傷を縫合するのにかかる時間</Japanese>
             <Chinese>EACA 閉合傷口所需的時間</Chinese>
             <Chinesesimp>EACA闭合伤口所需的时间</Chinesesimp>
             <Dutch>Hoe lang het duurt voor EACA om een wond te hechten</Dutch>
@@ -2456,7 +2459,7 @@
             <Spanish>El tiempo que tarda el ATX en cerrar una herida</Spanish>
             <Italian>Il tempo necessario affinché TXA chiuda una ferita</Italian>
             <German>Die Zeit, die TXA benötigt, um eine Wunde zu schließen</German>
-            <Japanese>TXAが創傷を塞ぐのに掛かる時間</Japanese>
+            <Japanese>TXAが創傷を塞ぐのにかかる時間</Japanese>
             <Chinese>血栓素(TXA)閉合傷口所需的時間</Chinese>
             <Chinesesimp>血栓素(TXA)闭合伤口所需的时间</Chinesesimp>
             <Dutch>Hoe lang het duurt voordat TXA een wond dicht</Dutch>
@@ -2472,7 +2475,7 @@
             <Russian>Максимальный шанс успеха Карбоната</Russian>
             <German>Chance für den erfolgreichen Einsatz von Carbonat</German>
             <Korean>탄산암모늄 사용으로 성공할 확률</Korean>
-            <Japanese>炭酸アンモニウムを使用した際の覚醒成功率</Japanese>
+            <Japanese>炭酸アンモニウムの最大成功率</Japanese>
             <Chinese>成功使用碳酸鹽的機率</Chinese>
             <Chinesesimp>成功使用碳酸盐的几率</Chinesesimp>
             <Finnish>Suurin karbonaatin onnistumismahdollisuus</Finnish>
@@ -2613,7 +2616,7 @@
             <Russian>Максимальный шанс на успех переориентации</Russian>
             <German>Chance für eine erfolgreiche Umorientierung</German>
             <Korean>뺨 때리기가 성공할 확률</Korean>
-            <Japanese>患者を刺激した際の覚醒成功率</Japanese>
+            <Japanese>患者を刺激の最大成功率</Japanese>
             <Chinese>成功進行恢復體態的機率</Chinese>
             <Chinesesimp>成功进行恢复体态的几率</Chinesesimp>
             <Finnish>Suurin mahdollisuus uudelleenorientoitumiseen</Finnish>
@@ -2776,6 +2779,7 @@
             <German>CWMP Einstellungen</German>
             <Japanese>戦闘傷病治療薬(CWMP)設定</Japanese>
             <Dutch>CWMP Instellingen</Dutch>
+            <Spanish>Opciones de CWMP</Spanish>
         </Key>
         <Key ID="STR_KAT_Pharma_SubCategory_Caffeine">
             <English>Caffeine Settings</English>
@@ -2861,7 +2865,7 @@
             <Spanish>Ajustes de Epinefrina IV</Spanish>
             <Italian>Impostazioni Epinefrina IV</Italian>
             <German>IV-Epinephrine-Einstellungen</German>
-            <Japanese>EACAが創傷を縫合するのに掛かる時間</Japanese>
+            <Japanese>EACAが創傷を縫合するのにかかる時間</Japanese>
             <Chinese>四腎上腺素設定</Chinese>
             <Chinesesimp>四肾上腺素设置</Chinesesimp>
             <Dutch>IV Adrenaline Instellingen</Dutch>
@@ -3524,6 +3528,7 @@
             <German>KAT - ADV Medical: Medikamente</German>
             <Japanese>KAM - 薬学 (Pharmacy)</Japanese>
             <Dutch>KAT - ADV Medical: Farmaceutica</Dutch>
+            <Spanish>KAT - ADV Medical: Farmacia</Spanish>
         </Key>
         <Key ID="STR_KAT_Pharma_coagulation_Bandaged">
             <English>Blood clotting temporarily closed a wound on %1</English>
@@ -3555,7 +3560,7 @@
             <English>%1 performed dialysis</English>
             <Czech>%1 provedl dialýzu</Czech>
             <French>%1 a effectué une dialyse</French>
-            <Spanish>%1 realizó una dialisis</Spanish>
+            <Spanish>%1 realizó una diálisis</Spanish>
             <Italian>%1 ha eseguito la dialisi</Italian>
             <Polish>%1 przeprowadził dializę</Polish>
             <Portuguese>%1 realizou diálise</Portuguese>
@@ -3781,6 +3786,7 @@
             <German>Erlaube die Verwendung von CWMP</German>
             <Japanese>戦闘傷病治療薬(CWMP)の許可</Japanese>
             <Dutch>Sta gebruik van CWMP toe</Dutch>
+            <Spanish>Permitir el uso de CWMP</Spanish>
         </Key>
         <Key ID="STR_KAT_Pharma_medLvl_Caffeine">
             <English>Allow using Caffeine</English>
@@ -3789,6 +3795,7 @@
             <German>Erlaube die Verwendung von Koffein</German>
             <Japanese>カフェインの許可</Japanese>
             <Dutch>Sta gebruik van caffeine toe</Dutch>
+            <Spanish>Permitir el uso de Cafeína</Spanish>
         </Key>
         <Key ID="STR_KAT_Pharma_medLvl_Carbonate">
             <English>Allow using Carbonate</English>
@@ -4203,6 +4210,7 @@
             <German>Anwendungszeit für CWMP</German>
             <Japanese>戦闘傷病治療薬(CWMP)の所要時間</Japanese>
             <Dutch>Behandelingstijd voor gebruik van CWMP</Dutch>
+            <Spanish>Tiempo de tratamiento para CWMP</Spanish>
         </Key>
         <Key ID="STR_KAT_Pharma_treatmentTime_Caffeine">
             <English>Treatment time for Caffeine</English>
@@ -4211,6 +4219,7 @@
             <German>Anwendungszeit für Koffein</German>
             <Japanese>カフェインの所要時間</Japanese>
             <Dutch>Behandelingstijd voor gebruik van caffeine</Dutch>
+            <Spanish>Tiempo de tratamiento para Cafeína</Spanish>
         </Key>
         <Key ID="STR_KAT_Pharma_treatmentTime_Carbonate">
             <English>Treatment time for Carbonate</English>
@@ -4513,6 +4522,51 @@
             <Turkish>% 1,% 2 eklendi</Turkish>
             <Finnish>%1 käytetty %2</Finnish>
             <Dutch>%1 gebruikte %2</Dutch>
+        </Key>
+        <Key ID="STR_KAT_Pharma_IV_DROP_ENABLE_DESC">
+            <English>Enable IV drop time simulation</English>
+            <German>IV-Tropfzeitensimulation aktivieren</German>
+            <Japanese>IVが自然に脱落するようになる機能を有効化します</Japanese>
+        </Key>
+        <Key ID="STR_KAT_Pharma_IV_REUSE_DESC">
+            <English>Allow reuse of IV Equipment</English>
+            <German>Wiederverwendung von IV Ausrüstung erlauben</German>
+            <Japanese>IV装備品の再使用を許可します</Japanese>
+        </Key>
+        <Key ID="STR_KAT_Pharma_SETTING_reorientationChance_DESC">
+            <English>Chance for successful reorientation</English>
+            <German>Chance für erfolgreiche Neuorientierung</German>
+            <Japanese>患者を刺激した際の成功確率</Japanese>
+        </Key>
+        <Key ID="STR_KAT_Pharma_SETTING_carbonateChance_DESC">
+            <English>Chance for successful carbonate treatment</English>
+            <German>Chance für erfolgreiche Carbonat-Behandlung</German>
+            <Japanese>炭酸アンモニウムでの治療の成功確率</Japanese>
+        </Key>
+        <Key ID="STR_KAT_Pharma_SETTING_CheckCoag_MedLevel_DESC">
+            <English>Medical level required to check coagulation</English>
+            <German>Erforderlicher medizinischer Level für Gerinnungsprüfung</German>
+            <Japanese>凝固の検査が可能になる場所を設定します</Japanese>
+        </Key>
+        <Key ID="STR_KAT_Pharma_SETTING_CheckCoag_Location_DESC">
+            <English>Locations where coagulation can be checked</English>
+            <German>Orte, an denen die Gerinnung überprüft werden kann</German>
+            <Japanese>凝固の検査が可能になる場所を設定します</Japanese>
+        </Key>
+        <Key ID="STR_KAT_Pharma_SETTING_CheckCoag_treatmentTime_DESC">
+            <English>Time required to check coagulation</English>
+            <German>Zeit für die Gerinnungsprüfung</German>
+            <Japanese>凝固の検査に掛かる時間</Japanese>
+        </Key>
+        <Key ID="STR_KAT_Pharma_treatmenttime_applyiv_desc">
+            <English>Time required to establish an IV.</English>
+            <German>Benötigte Zeit um einen IV-Zugang zu legen.</German>
+            <Japanese>IVの刺入に掛かる時間</Japanese>
+        </Key>
+        <Key ID="STR_KAT_Pharma_treatmenttime_applyio_desc">
+            <English>Time required to establish an IO.</English>
+            <German>Benötigte Zeit um einen IO-Zugang zu legen.</German>
+            <Japanese>IOの刺入に掛かる時間</Japanese>
         </Key>
     </Package>
 </Project>
