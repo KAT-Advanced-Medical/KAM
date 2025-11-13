@@ -630,7 +630,7 @@
             <Russian>Минимальный шанс успеха для AED</Russian>
             <German>Minimale Erfolgschance für den AED</German>
             <Korean>자동심장충격기의 최소 성공 확률</Korean>
-            <Japanese>AEDの最低成功確率</Japanese>
+            <Japanese>AEDの最低成功率</Japanese>
             <Chinese>AED 的最小成功機率</Chinese>
             <Chinesesimp>AED的最小成功概率</Chinesesimp>
             <Finnish>AUD:n onnistumisen minimimahdollisuus</Finnish>
@@ -679,7 +679,7 @@
             <Russian>Минимальный шанс успеха для AED-X</Russian>
             <German>Minimale Erfolgschance für den AED-X</German>
             <Korean>X-시리즈 자동심장충격기의 최소 성공 확률</Korean>
-            <Japanese>AED-Xの最低成功確率</Japanese>
+            <Japanese>AED-Xの最低成功率</Japanese>
             <Chinese>AED-X 的最小成功機率</Chinese>
             <Chinesesimp>AED-X的最小成功概率</Chinesesimp>
             <Finnish>Minimi mahdollisuus onnistua AUD-X:lle</Finnish>
@@ -1833,7 +1833,7 @@
             <Russian>Максимальный шанс СЛР по умолчанию</Russian>
             <German>Maximale Standard HLW-Erfolgsrate</German>
             <Korean>일반병의 최대 CPR 확률</Korean>
-            <Japanese>一般兵の最高CPR成功率</Japanese>
+            <Japanese>一般兵のCPR最高成功率</Japanese>
             <Chinese>預設的最大 CPR 機率</Chinese>
             <Chinesesimp>默认的最大心肺复苏几率</Chinesesimp>
             <Finnish>Suurin mahdollisuus menestyä oletussotilailla, jotka suorittavat elvytystoimia</Finnish>
@@ -1850,7 +1850,7 @@
             <Russian>Максимальный шанс СЛР для врачей</Russian>
             <German>Maximale HLW-Erfolgsrate für Ärzte</German>
             <Korean>군의관의 최대 CPR 확률</Korean>
-            <Japanese>医師の最高CPR成功率</Japanese>
+            <Japanese>医師のCPR最高成功率</Japanese>
             <Chinese>醫生的最大 CPR 機率</Chinese>
             <Chinesesimp>医生的最大心肺复苏几率</Chinesesimp>
             <Finnish>Suurin CPR onnistumisen mahdollisuus lääkäreille</Finnish>
@@ -1867,7 +1867,7 @@
             <Russian>Максимальный шанс СЛР для обычных медиков</Russian>
             <German>Maximale HLW-Erfolgsrate für reguläre Sanitäter</German>
             <Korean>의무병의 최대 CPR 확률</Korean>
-            <Japanese>衛生兵の最高CPR成功率</Japanese>
+            <Japanese>衛生兵のCPR最高成功率</Japanese>
             <Chinese>醫療兵的最大 CPR 機率</Chinese>
             <Chinesesimp>军医的最大心肺复苏几率</Chinesesimp>
             <Finnish>Suurin mahdollisuus menestyä elvytystä suorittaville taistelulääkäreille</Finnish>
@@ -1884,7 +1884,7 @@
             <Russian>Минимальный шанс СЛР по умолчанию</Russian>
             <German>Minimale Standard HLW-Erfolgsrate</German>
             <Korean>일반병의 최소 CPR 확률</Korean>
-            <Japanese>一般兵の最低CPR成功率</Japanese>
+            <Japanese>一般兵のCPR最低成功率</Japanese>
             <Chinese>預設的最小 CPR 復甦機率</Chinese>
             <Chinesesimp>默认的最小心肺复苏几率</Chinesesimp>
             <Finnish>Pienin mahdollisuus menestyä elvytystoiminnassa oletussotilaana</Finnish>
@@ -1901,7 +1901,7 @@
             <Russian>Минимальный шанс СЛР для врачей</Russian>
             <German>Minimale HLW-Erfolgsrate für Ärzte</German>
             <Korean>군의관의 최소 CPR 확률</Korean>
-            <Japanese>医師の最低CPR成功率</Japanese>
+            <Japanese>医師のCPR最低成功率</Japanese>
             <Chinese>醫生的最小 CPR 機率</Chinese>
             <Chinesesimp>医生的最小心肺复苏几率</Chinesesimp>
             <Finnish>Pienin mahdollisuus menestyä elvytyksen suorittamisessa lääkärinä</Finnish>
@@ -1918,7 +1918,7 @@
             <Russian>Минимальный шанс СЛР для обычных медиков</Russian>
             <German>Minimale HLW-Erfolgsrate für reguläre Sanitäter</German>
             <Korean>의무병의 최소 CPR 확률</Korean>
-            <Japanese>衛生兵の最低CPR成功率</Japanese>
+            <Japanese>衛生兵のCPR最低成功率</Japanese>
             <Chinese>醫務人員的最小 CPR 機率</Chinese>
             <Chinesesimp>军医的最小心肺复苏几率</Chinesesimp>
             <Finnish>Pienin mahdollisuus menestyä elvytystyössä taistelulääkärinä</Finnish>
@@ -2623,6 +2623,7 @@
             <English>Enable PEA</English>
             <French>Activer le PEA</French>
             <Dutch>Zet PEA aan</Dutch>
+            <Japanese>無脈性電気活動(PEA)を有効化</Japanese>
             <Spanish>Activar PEA</Spanish>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_AdvRhythm_VTChance">
@@ -3786,141 +3787,169 @@
         <Key ID="STR_KAT_Circulation_SETTING_ENABLE_DESC">
             <English>Enables the KAT Circulation medical system</English>
             <German>Aktiviert das KAT Kreislauf-Medizinsystem</German>
+            <Japanese>KAT 循環器系 医療システムを有効にします</Japanese>
             <Spanish>Activa el sistema médico de circulación KAT</Spanish>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_bloodtype_player_DESC">
             <English>Sets your preferred blood type for multiplayer</English>
             <German>Legt Ihre bevorzugte Blutgruppe für Multiplayer fest</German>
+            <Japanese>マルチプレイヤーで使用する血液型を設定します</Japanese>
             <Spanish>Establece tu tipo de sangre preferido para multijugador</Spanish>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_AED_duringCpr_DESC">
             <English>Allows AED pads to be applied while CPR is being performed</English>
             <German>Ermöglicht das Anbringen von AED-Pads während der Wiederbelebung</German>
+            <Japanese>CPR中にAEDパッドを装着できるようにします</Japanese>
             <Spanish>Permite aplicar los electrodos del DEA mientras se realiza la RCP</Spanish>
         </Key>
         <Key ID="STR_KAT_Circulation_AED_X_MaxChance_DESC">
             <English>Maximum success chance for AED-X defibrillation</English>
             <German>Maximale Erfolgswahrscheinlichkeit für AED-X Defibrillation</German>
+            <Japanese>AED-X除細動の最高成功率</Japanese>
             <Spanish>Probabilidad máxima de éxito de la desfibrilación con AED-X</Spanish>
         </Key>
         <Key ID="STR_KAT_Circulation_AED_X_MinChance_DESC">
             <English>Minimum success chance for AED-X defibrillation</English>
             <German>Minimale Erfolgswahrscheinlichkeit für AED-X Defibrillation</German>
+            <Japanese>AED-X除細動の最低成功率</Japanese>
             <Spanish>Probabilidad mínima de éxito de la desfibrilación con AED-X</Spanish>
         </Key>
         <Key ID="STR_KAT_Circulation_AED_MaxChance_DESC">
             <English>Maximum success chance for standard AED defibrillation</English>
             <German>Maximale Erfolgswahrscheinlichkeit für Standard-AED Defibrillation</German>
+            <Japanese>標準AED除細動の最高成功率</Japanese>
             <Spanish>Probabilidad máxima de éxito de la desfibrilación con DEA estándar</Spanish>
         </Key>
         <Key ID="STR_KAT_Circulation_AED_MinChance_DESC">
             <English>Minimum success chance for standard AED defibrillation</English>
             <German>Minimale Erfolgswahrscheinlichkeit für Standard-AED Defibrillation</German>
+            <Japanese>標準AED除細動の最低成功率</Japanese>
             <Spanish>Probabilidad mínima de éxito de la desfibrilación con DEA estándar</Spanish>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_AEDX_VitalsMonitor_AttachTime_DESC">
             <English>Time required to attach AED-X vitals monitor to patient</English>
             <German>Benötigte Zeit zum Anbringen des AED-X Vitalmonitors am Patienten</German>
+            <Japanese>AED-Xバイタルモニターを患者へ取り付けるのにかかる時間</Japanese>
             <Spanish>Tiempo necesario para conectar el monitor de signos vitales AED-X al paciente</Spanish>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_AEDX_VitalsMonitor_DetachTime_DESC">
             <English>Time required to detach AED-X vitals monitor from patient</English>
             <German>Benötigte Zeit zum Entfernen des AED-X Vitalmonitors vom Patienten</German>
+            <Japanese>AED-Xバイタルモニターを患者から取り外すのにかかる時間</Japanese>
             <Spanish>Tiempo necesario para desconectar el monitor de signos vitales AED-X del paciente</Spanish>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_DefibrillatorPads_AttachTime_DESC">
             <English>Time required to attach defibrillator pads to patient</English>
             <German>Benötigte Zeit zum Anbringen der Defibrillator-Pads am Patienten</German>
+            <Japanese>除細動パッドを患者へ取り付けるのにかかる時間</Japanese>
             <Spanish>Tiempo necesario para colocar los electrodos del desfibrilador en el paciente</Spanish>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_DefibrillatorPads_DetachTime_DESC">
             <English>Time required to detach defibrillator pads from patient</English>
             <German>Benötigte Zeit zum Entfernen der Defibrillator-Pads vom Patienten</German>
+            <Japanese>除細動パッドを患者から取り外すのにかかる時間</Japanese>
             <Spanish>Tiempo necesario para retirar los electrodos del desfibrilador del paciente</Spanish>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_Defibrillator_DistanceLimit_DESC">
             <English>Maximum distance between defibrillator and patient for operation</English>
             <German>Maximale Entfernung zwischen Defibrillator und Patient für den Betrieb</German>
+            <Japanese>患者と除細動器の操作が可能な最大距離</Japanese>
             <Spanish>Distancia máxima entre el desfibrilador y el paciente para su funcionamiento</Spanish>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_AED_X_VitalsMonitor_SoundsSelect_DESC">
             <English>Selects which sound set to use for AED-X vitals monitor</English>
             <German>Wählt aus, welcher Soundsatz für den AED-X Vitalmonitor verwendet wird</German>
+            <Japanese>AED-Xバイタルモニターで使用するサウンドセットを選択します</Japanese>
             <Spanish>Selecciona qué conjunto de sonidos usar para el monitor de signos vitales AED-X</Spanish>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_Threshold_SpO2Warning_DESC">
             <English>SpO2 level at which the monitor starts warning</English>
             <German>SpO2-Wert, bei dem der Monitor zu warnen beginnt</German>
+            <Japanese>モニターが警告を開始するSpO2の値</Japanese>
             <Spanish>Nivel de SpO2 en el que el monitor comienza a advertir.</Spanish>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_AED_X_VitalsMonitor_BloodPressureInterval_DESC">
             <English>Controls how blood pressure is measured on AED-X monitor</English>
             <German>Kontrolliert, wie der Blutdruck am AED-X Monitor gemessen wird</German>
+            <Japanese>AED-Xモニターでの血圧測定方法を制御します</Japanese>
             <Spanish>Controla cómo se mide la presión arterial en el monitor AED-X</Spanish>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_AED_X_VitalsMonitor_BloodPressureInterval_Time_DESC">
             <English>Time interval for automatic blood pressure measurements</English>
             <German>Zeitintervall für automatische Blutdruckmessungen</German>
+            <Japanese>自動血圧測定の間隔</Japanese>
             <Spanish>Intervalo de tiempo para las mediciones automáticas de presión arterial</Spanish>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_CPR_CHANCES_DESC">
             <English>Enables different CPR success chances based on medical training level</English>
             <German>Aktiviert verschiedene CPR-Erfolgschancen basierend auf medizinischer Ausbildung</German>
+            <Japanese>医療スキルのレベルに基づいて異なるCPR成功率を有効化します</Japanese>
             <Spanish>Activa distintas probabilidades de éxito de la RCP según el nivel de formación médica</Spanish>
         </Key>
         <Key ID="STR_KAT_Circulation_CPR_MaxChance_Doctor_DESC">
             <English>Maximum CPR success chance for doctors</English>
             <German>Maximale CPR-Erfolgschance für Ärzte</German>
+            <Japanese>医師のCPR最大成功率</Japanese>
             <Spanish>Probabilidad máxima de éxito de la RCP para médicos</Spanish>
         </Key>
         <Key ID="STR_KAT_Circulation_CPR_MinChance_Doctor_DESC">
             <English>Minimum CPR success chance for doctors</English>
             <German>Minimale CPR-Erfolgschance für Ärzte</German>
+            <Japanese>医師のCPR最小成功率</Japanese>
             <Spanish>Probabilidad mínima de éxito de la RCP para médicos</Spanish>
         </Key>
         <Key ID="STR_KAT_Circulation_CPR_MaxChance_RegularMedic_DESC">
             <English>Maximum CPR success chance for regular medics</English>
             <German>Maximale CPR-Erfolgschance für reguläre Sanitäter</German>
+            <Japanese>標準的な衛生兵のCPR最大成功率</Japanese>
             <Spanish>Probabilidad máxima de éxito de la RCP para personal médico estándar</Spanish>
         </Key>
         <Key ID="STR_KAT_Circulation_CPR_MinChance_RegularMedic_DESC">
             <English>Minimum CPR success chance for regular medics</English>
             <German>Minimale CPR-Erfolgschance für reguläre Sanitäter</German>
+            <Japanese>標準的な衛生兵のCPR最小成功率</Japanese>
             <Spanish>Probabilidad mínima de éxito de la RCP para personal médico estándar</Spanish>
         </Key>
         <Key ID="STR_KAT_Circulation_CPR_MaxChance_Default_DESC">
             <English>Maximum CPR success chance for untrained personnel</English>
             <German>Maximale CPR-Erfolgschance für unausgebildetes Personal</German>
+            <Japanese>訓練を受けていない人員のCPR最大成功率</Japanese>
             <Spanish>Probabilidad máxima de éxito de la RCP para personal no capacitado</Spanish>
         </Key>
         <Key ID="STR_KAT_Circulation_CPR_MinChance_Default_DESC">
             <English>Minimum CPR success chance for untrained personnel</English>
             <German>Minimale CPR-Erfolgschance für unausgebildetes Personal</German>
+            <Japanese>訓練を受けていない人員のCPR最小成功率</Japanese>
             <Spanish>Probabilidad mínima de éxito de la RCP para personal no capacitado</Spanish>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_CPR_ChanceInterval_DESC">
             <English>Interval at which CPR success chance is rolled</English>
             <German>Intervall, in dem die CPR-Erfolgschance gewürfelt wird</German>
+            <Japanese>CPR成功率をロールする間隔</Japanese>
             <Spanish>Intervalo en el que se calcula la probabilidad de éxito de la RCP</Spanish>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_AdvRhythm_Enable_DESC">
             <English>Enables advanced cardiac arrest rhythms system</English>
             <German>Aktiviert das erweiterte Herzrhythmus-System bei Herzstillstand</German>
+            <Japanese>高度な心停止と調律のシステムを有効化します</Japanese>
             <Spanish>Activa el sistema avanzado de ritmos de paro cardíaco</Spanish>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_AdvRhythm_canDeteriorate_DESC">
             <English>Allows cardiac arrest rhythms to deteriorate over time</English>
             <German>Ermöglicht es Herzrhythmen, sich im Laufe der Zeit zu verschlechtern</German>
+            <Japanese>心停止状態の調律が時間の経過とともに悪化するのを許可します</Japanese>
             <Spanish>Permite que los ritmos de paro cardíaco se deterioren con el tiempo</Spanish>
         </Key>
         <Key ID="STR_KAT_Circulation_treatmentTime_BPCuff_DESC">
             <English>Time required to measure blood pressure with blood pressure cuff</English>
             <German>Benötigte Zeit zur Blutdruckmessung mit der Blutdruckmanschette</German>
+            <Japanese>血圧カフで血圧を測定するのにかかる時間</Japanese>
             <Spanish>Tiempo necesario para medir la presión arterial con el manguito de presión</Spanish>
         </Key>
         <Key ID="STR_KAT_Circulation_treatmentTime_StethHR_DESC">
             <English>Time required to measure heart rate with stethoscope</English>
             <German>Benötigte Zeit zur Pulsmessung mit dem Stethoskop</German>
+            <Japanese>聴診器で心拍数を測定するのにかかる時間</Japanese>
             <Spanish>Tiempo necesario para medir la frecuencia cardíaca con el estetoscopio</Spanish>
         </Key>
     </Package>
