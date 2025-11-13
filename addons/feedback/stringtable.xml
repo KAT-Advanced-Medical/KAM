@@ -11,6 +11,7 @@
             <Chinese>啟用 K他命(氯胺酮)、芬太尼、冰毒(甲基苯丙胺) 等 鴉片類藥物的作用</Chinese>
             <Chinesesimp>使阿片类药物对氯胺酮、芬太尼和帕维汀产生作用</Chinesesimp>
             <Dutch>Maakt het mogelijk om opioid-effecten te verkrijgen bij het gebruik van ketamine, fentanyl en pervitin</Dutch>
+            <Spanish>Activa el efecto de los opioides sobre ketamina, fentanilo y pervitina</Spanish>
         </Key>
         <Key ID="STR_KAT_Feedback_SETTING_OpioidEffect_display">
             <English>Enable opioid effect</English>
@@ -22,6 +23,7 @@
             <Chinese>啟用鴉片類藥物效果</Chinese>
             <Chinesesimp>启用阿片类药物作用</Chinesesimp>
             <Dutch>Zet opioid-effecten aan</Dutch>
+            <Spanish>Activar efecto de opioides</Spanish>
         </Key>
         <Key ID="STR_KAT_Feedback_SETTING_lowSpO2_DESC">
             <English>Lets you change the SpO2 Value at which you get the Flashing warning indicator and stamina loss effect</English>
@@ -64,6 +66,7 @@
             <German>KAT - ADV Medical: Feedback</German>
             <Japanese>KAM - フィードバック</Japanese>
             <Dutch>KAT - ADV Medical: Feedback</Dutch>
+            <Spanish>KAT - ADV Medical: Feedback</Spanish>
         </Key>
     </Package>
 </Project>
