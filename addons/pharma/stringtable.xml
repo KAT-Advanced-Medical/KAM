@@ -4542,11 +4542,11 @@
             <English>Time required to check coagulation</English>
             <German>Zeit für die Gerinnungsprüfung</German>
         </Key>
-        <Key ID="str_kat_pharma_treatmenttime_applyiv_desc">
+        <Key ID="STR_KAT_Pharma_treatmenttime_applyiv_desc">
             <English>Time required to establish an IV.</English>
             <German>Benötigte Zeit um einen IV-Zugang zu legen.</German>
         </Key>
-        <Key ID="str_kat_pharma_treatmenttime_applyio_desc">
+        <Key ID="STR_KAT_Pharma_treatmenttime_applyio_desc">
             <English>Time required to establish an IO.</English>
             <German>Benötigte Zeit um einen IO-Zugang zu legen.</German>
         </Key>
