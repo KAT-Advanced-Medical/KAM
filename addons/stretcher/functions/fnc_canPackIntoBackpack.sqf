@@ -17,4 +17,4 @@
 
 params ["_target"];
 
-[true, false] select ((count crew _target > 0) || !(isNull attachedTo _target))
+[true, false] select ((crew _target isNotEqualTo []) || !(isNull attachedTo _target))

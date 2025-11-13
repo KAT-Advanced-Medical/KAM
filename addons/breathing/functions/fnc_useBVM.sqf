@@ -118,7 +118,7 @@ GVAR(BVM_timeOut) = true;
                                 };
                             } forEach magazinesAmmo _medic;
 
-                            if (count _heldPreferredTanks > 0) then {
+                            if (_heldPreferredTanks isNotEqualTo []) then {
                                 _carriedTanks = _heldPreferredTanks;
                             };
                         } else {
@@ -129,7 +129,7 @@ GVAR(BVM_timeOut) = true;
                             } forEach magazinesAmmo _medic;
                         };
 
-                        if (count _carriedTanks > 0) then {
+                        if (_carriedTanks isNotEqualTo []) then {
                             _patient setVariable [QGVAR(oxygenTankConnected), true, true];
 
                             private _tank = _carriedTanks select - 1;
@@ -158,7 +158,7 @@ GVAR(BVM_timeOut) = true;
                             };
                         } forEach (magazinesAmmoCargo _vehicle);
 
-                        if (count _oxygenTanks > 0) then {
+                        if (_oxygenTanks isNotEqualTo []) then {
                             _patient setVariable [QGVAR(oxygenTankConnected), true, true];
 
                             private _tank = _oxygenTanks select - 1;
