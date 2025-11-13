@@ -3928,12 +3928,6 @@
             <Japanese>CPR成功率をロールする間隔</Japanese>
             <Spanish>Intervalo en el que se calcula la probabilidad de éxito de la RCP</Spanish>
         </Key>
-        <Key ID="STR_KAT_Circulation_SETTING_CPR_OxygenationPeriod_DESC">
-            <English>Duration of oxygenation effect after CPR has stopped</English>
-            <German>Dauer des Sauerstoffeffekts nach dem Ende der CPR</German>
-            <Spanish>Duración del efecto de oxigenación después de que la RCP ha finalizado</Spanish>
-            <Japanese>CPR停止後の酸素化効果の持続時間</Japanese>
-        </Key>
         <Key ID="STR_KAT_Circulation_SETTING_AdvRhythm_Enable_DESC">
             <English>Enables advanced cardiac arrest rhythms system</English>
             <German>Aktiviert das erweiterte Herzrhythmus-System bei Herzstillstand</German>
