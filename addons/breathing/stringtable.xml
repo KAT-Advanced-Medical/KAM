@@ -3310,102 +3310,119 @@
         <Key ID="STR_KAT_Breathing_SETTING_SpO2_dieValue_DESC">
             <English>Sets the SpO2 value that causes death when reached</English>
             <German>Legt den SpO2-Wert fest, der bei Erreichen den Tod verursacht</German>
+            <French>Définit la valeur SpO2 qui entraîne la mort lorsqu'elle est atteinte.</French>
             <Japanese>到達すると死に至るSpO2値を設定します。</Japanese>
             <Spanish>Establece el valor de SpO2 que provoca la muerte al alcanzarse</Spanish>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_SpO2_dieActive_DESC">
             <English>Enables death when SpO2 reaches the lethal value</English>
             <German>Aktiviert den Tod, wenn SpO2 den tödlichen Wert erreicht</German>
+            <French>Active la mort lorsque la SpO2 atteint la valeur létale</French>
             <Japanese>SpO2が致死値に達した場合に死に至るようにします。</Japanese>
             <Spanish>Activa la muerte cuando la SpO2 alcanza el valor letal</Spanish>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_SpO2_cardiacValue_DESC">
             <English>Sets the SpO2 value that triggers cardiac arrest</English>
             <German>Legt den SpO2-Wert fest, der einen Herzstillstand auslöst</German>
+            <French>Définit la valeur SpO2 qui déclenche un arrêt cardiaque.</French>
             <Japanese>到達すると心停止を引き起こすSpO2値を設定します。</Japanese>
             <Spanish>Establece el valor de SpO2 que desencadena un paro cardíaco</Spanish>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_SpO2_cardiacActive_DESC">
             <English>Enables cardiac arrest when SpO2 reaches the cardiac value</English>
             <German>Aktiviert Herzstillstand, wenn SpO2 den Herzwert erreicht</German>
+            <French>Active l'arrêt cardiaque lorsque la SpO2 atteint la valeur cardiaque</French>
             <Japanese>SpO2が心停止値に達した場合に心停止に至るようにします。</Japanese>
             <Spanish>Activa el paro cardíaco cuando la SpO2 alcanza el valor cardíaco</Spanish>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_MultiplyPositive_DESC">
             <English>Multiplier for positive SpO2 changes during breathing</English>
             <German>Multiplikator für positive SpO2-Änderungen beim Atmen</German>
+            <French>Multiplicateur pour les variations positives de la SpO2 pendant la respiration</French>
             <Japanese>適切な呼吸によって変化するSpO2のプラス効果の乗数</Japanese>
             <Spanish>Multiplicador para los aumentos positivos de SpO2 durante la respiración</Spanish>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_MultiplyNegative_DESC">
             <English>Multiplier for negative SpO2 changes when not breathing properly</English>
             <German>Multiplikator für negative SpO2-Änderungen bei unzureichender Atmung</German>
+            <French>Multiplicateur pour les variations négatives de SpO2 en cas de respiration insuffisante</French>
             <Japanese>呼吸が適切ではない場合に変化するSpO2のマイナス効果の乗数</Japanese>
             <Spanish>Multiplicador para los descensos de SpO2 cuando la respiración es inadecuada</Spanish>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_SpO2_Perfusion_DESC">
             <English>Controls whether SpO2 falls during cardiac arrest</English>
             <German>Kontrolliert, ob SpO2 während eines Herzstillstands fällt</German>
+            <French>Contrôle si la SpO2 chute pendant un arrêt cardiaque</French>
             <Japanese>心停止によってSpO2が低下するかどうかを制御します。</Japanese>
             <Spanish>Controla si la SpO2 disminuye durante un paro cardíaco</Spanish>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_PerfusionMultiplier_DESC">
             <English>Multiplier for SpO2 changes during cardiac arrest</English>
             <German>Multiplikator für SpO2-Änderungen während eines Herzstillstands</German>
+            <French>Multiplicateur pour les variations de SpO2 pendant un arrêt cardiaque</French>
             <Japanese>心停止によって変化するSpO2の乗数</Japanese>
             <Spanish>Multiplicador para los cambios de SpO2 durante un paro cardíaco</Spanish>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_SELF_CHESTSEAL_DESC">
             <English>Allows players to apply chest seals on themselves</English>
             <German>Ermöglicht es Spielern, sich selbst Thoraxpflaster anzulegen</German>
+            <French>Permet aux joueurs d'appliquer eux-mêmes des pansements occlusifs sur leur poitrine.</French>
             <Japanese>プレイヤーが自分でチェストシールを貼ることを可能にします。</Japanese>
             <Spanish>Permite a los jugadores aplicar sellos torácicos sobre sí mismos</Spanish>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_clearChestSealAfterTreatment_DESC">
             <English>Removes chest seal from medical menu after pneumothorax treatment</English>
             <German>Entfernt Thoraxpflaster aus dem Medizinmenü nach Pneumothorax-Behandlung</German>
+            <French>Retire le pansement occlusif thoracique du menu médical après le traitement du pneumothorax.</French>
             <Japanese>気胸の治療後、医療メニューからチェストシールを除去します。</Japanese>
             <Spanish>Elimina el sello torácico del menú médico después del tratamiento de un neumotórax</Spanish>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_Threshold_SpO2Warning_DESC">
             <English>SpO2 level at which the pulse oximeter starts warning</English>
             <German>SpO2-Wert, bei dem das Pulsoximeter zu warnen beginnt</German>
+            <French>Niveau de SpO2 auquel l'oxymètre de pouls commence à émettre un avertissement</French>
             <Japanese>パルスオキシメーターが警告を開始するSpO2の値</Japanese>
             <Spanish>Nivel de SpO2 en el que el pulsioxímetro comienza a advertir</Spanish>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_pneumothorax_DESC">
             <English>Probability for pneumothorax to occur from thoracic injuries</English>
             <German>Wahrscheinlichkeit für Pneumothorax bei Thoraxverletzungen</German>
+            <French>Probabilité d'apparition d'un pneumothorax à la suite d'une blessure thoracique</French>
             <Japanese>胸部の負傷による気胸の発生確率</Japanese>
             <Spanish>Probabilidad de que ocurra un neumotórax a partir de lesiones torácicas</Spanish>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_inspectChest_enable_DESC">
             <English>Enables the inspect chest action for diagnosing thoracic injuries</English>
             <German>Aktiviert die Brustraumuntersuchung zur Diagnose von Thoraxverletzungen</German>
+            <French>Permet l'action d'inspection thoracique pour diagnostiquer les blessures thoraciques.</French>
             <Japanese>胸腔損傷の診断に必要な胸部検査を有効化します</Japanese>
             <Spanish>Activa la acción de inspeccionar el pecho para diagnosticar lesiones torácicas</Spanish>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_inspectChest_medLvl_DESC">
             <English>Required medical training level to perform chest inspection</English>
             <German>Erforderliche medizinische Ausbildungsstufe für Brustraumuntersuchung</German>
+            <French>Niveau de formation médicale requis pour effectuer un examen thoracique</French>
             <Japanese>胸部検査の使用に必要な医療スキルのレベルを設定します。</Japanese>
             <Spanish>Nivel de formación médica requerido para realizar la inspección del pecho</Spanish>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_inspectChest_time_DESC">
             <English>Time required to complete chest inspection</English>
             <German>Benötigte Zeit für die Brustraumuntersuchung</German>
+            <French>Temps nécessaire pour effectuer l'inspection thoracique</French>
             <Japanese>胸部検査の完了にかかる時間</Japanese>
             <Spanish>Tiempo necesario para completar la inspección del pecho</Spanish>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_Select_Etco2_Units_DESC">
             <English>Units for displaying EtCO2 values</English>
             <German>Einheiten für die Anzeige von EtCO2-Werten</German>
+            <French>Unités d'affichage des valeurs d'EtCO2</French>
             <Japanese>EtCO2値の表示単位</Japanese>
             <Spanish>Unidades para mostrar los valores de EtCO2</Spanish>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_BVMOxygen_Multiplier_DESC">
             <English>Effectiveness multiplier for BVM when used with oxygen</English>
             <German>Effektivitätsmultiplikator für BVM bei Verwendung mit Sauerstoff</German>
+            <French>Multiplicateur d'efficacité pour le BVM lorsqu'il est utilisé avec de l'oxygène</French>
             <Japanese>酸素ボンベと併用する場合のBVMの有効性の乗数</Japanese>
             <Spanish>Multiplicador de efectividad del BVM cuando se usa con oxígeno</Spanish>
         </Key>
