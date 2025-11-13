@@ -2475,7 +2475,7 @@
             <Russian>Максимальный шанс успеха Карбоната</Russian>
             <German>Chance für den erfolgreichen Einsatz von Carbonat</German>
             <Korean>탄산암모늄 사용으로 성공할 확률</Korean>
-            <Japanese>炭酸アンモニウムを使用した際の覚醒成功率</Japanese>
+            <Japanese>炭酸アンモニウムの最大成功率</Japanese>
             <Chinese>成功使用碳酸鹽的機率</Chinese>
             <Chinesesimp>成功使用碳酸盐的几率</Chinesesimp>
             <Finnish>Suurin karbonaatin onnistumismahdollisuus</Finnish>
@@ -2616,7 +2616,7 @@
             <Russian>Максимальный шанс на успех переориентации</Russian>
             <German>Chance für eine erfolgreiche Umorientierung</German>
             <Korean>뺨 때리기가 성공할 확률</Korean>
-            <Japanese>患者を刺激した際の覚醒成功率</Japanese>
+            <Japanese>患者を刺激の最大成功率</Japanese>
             <Chinese>成功進行恢復體態的機率</Chinese>
             <Chinesesimp>成功进行恢复体态的几率</Chinesesimp>
             <Finnish>Suurin mahdollisuus uudelleenorientoitumiseen</Finnish>
@@ -4526,38 +4526,47 @@
         <Key ID="STR_KAT_Pharma_IV_DROP_ENABLE_DESC">
             <English>Enable IV drop time simulation</English>
             <German>IV-Tropfzeitensimulation aktivieren</German>
+            <Japanese>IVが自然に脱落するようになる機能を有効化します</Japanese>
         </Key>
         <Key ID="STR_KAT_Pharma_IV_REUSE_DESC">
             <English>Allow reuse of IV Equipment</English>
             <German>Wiederverwendung von IV Ausrüstung erlauben</German>
+            <Japanese>IV装備品の再使用を許可します</Japanese>
         </Key>
         <Key ID="STR_KAT_Pharma_SETTING_reorientationChance_DESC">
             <English>Chance for successful reorientation</English>
             <German>Chance für erfolgreiche Neuorientierung</German>
+            <Japanese>患者を刺激した際の成功確率</Japanese>
         </Key>
         <Key ID="STR_KAT_Pharma_SETTING_carbonateChance_DESC">
             <English>Chance for successful carbonate treatment</English>
             <German>Chance für erfolgreiche Carbonat-Behandlung</German>
+            <Japanese>炭酸アンモニウムでの治療の成功確率</Japanese>
         </Key>
         <Key ID="STR_KAT_Pharma_SETTING_CheckCoag_MedLevel_DESC">
             <English>Medical level required to check coagulation</English>
             <German>Erforderlicher medizinischer Level für Gerinnungsprüfung</German>
+            <Japanese>凝固の検査が可能になる場所を設定します</Japanese>
         </Key>
         <Key ID="STR_KAT_Pharma_SETTING_CheckCoag_Location_DESC">
             <English>Locations where coagulation can be checked</English>
             <German>Orte, an denen die Gerinnung überprüft werden kann</German>
+            <Japanese>凝固の検査が可能になる場所を設定します</Japanese>
         </Key>
         <Key ID="STR_KAT_Pharma_SETTING_CheckCoag_treatmentTime_DESC">
             <English>Time required to check coagulation</English>
             <German>Zeit für die Gerinnungsprüfung</German>
+            <Japanese>凝固の検査に掛かる時間</Japanese>
         </Key>
         <Key ID="STR_KAT_Pharma_treatmenttime_applyiv_desc">
             <English>Time required to establish an IV.</English>
             <German>Benötigte Zeit um einen IV-Zugang zu legen.</German>
+            <Japanese>IVの刺入に掛かる時間</Japanese>
         </Key>
         <Key ID="STR_KAT_Pharma_treatmenttime_applyio_desc">
             <English>Time required to establish an IO.</English>
             <German>Benötigte Zeit um einen IO-Zugang zu legen.</German>
+            <Japanese>IOの刺入に掛かる時間</Japanese>
         </Key>
     </Package>
 </Project>
