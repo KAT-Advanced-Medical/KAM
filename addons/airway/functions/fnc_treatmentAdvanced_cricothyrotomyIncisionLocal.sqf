@@ -24,9 +24,6 @@ private _cricothyrotomy = _patient getVariable [QGVAR(cricothyrotomy), 0];
 _cricothyrotomy = _cricothyrotomy + 0.1;
 _patient setVariable [QGVAR(cricothyrotomy), _cricothyrotomy, true];
 
-
-
-
 [_patient, false] call ACEFUNC(dragging,setCarryable);
 [_patient, false] call ACEFUNC(dragging,setDraggable);
 
