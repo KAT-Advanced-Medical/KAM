@@ -309,7 +309,7 @@ class ACE_Medical_Treatment_Actions {
         animationMedic = "";
         animationMedicProne = "";
         litter[] = {};
-        icon = QPATHTOF(ui\BVM_ui.paa);
+        icon = QPATHTOEF(breathing,ui\BVM_ui.paa);
     };
     class DetachLucas: AttachLucas {
         displayName = CSTRING(DetachLucas);
