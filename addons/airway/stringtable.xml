@@ -2379,5 +2379,14 @@
         <Key ID="STR_KAT_Airway_SuctionEffectiveness_DESC">
             <English>Multiplier to how effective suction is at clearing the airway</English>
         </Key>
+        <Key ID="STR_KAT_Airway_reset_crike">
+            <English>Close Neck Incision</English>
+        </Key>
+        <Key ID="STR_KAT_Airway_reset_crike_action">
+            <English>Closing Incision</English>
+        </Key>
+        <Key ID="STR_KAT_Airway_closedcrike">
+            <English>Closed Neck Incision</English>
+        </Key>
     </Package>
 </Project>

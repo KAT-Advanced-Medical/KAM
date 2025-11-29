@@ -59,6 +59,9 @@ if (_number == _liveFracture) exitWith {
         case (3.3):{
             _surgeryString = LSTRING(CLAMPED);
         };
+        case (2.5):{
+            _surgeryString = LSTRING(PLATED);
+        };
     };
 
     [_patient, "quick_view", LSTRING(surgery_log), [[_medic] call ACEFUNC(common,getName), _surgeryString, STRING_BODY_PARTS select _part]] call ACEFUNC(medical_treatment,addToLog);

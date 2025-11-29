@@ -341,6 +341,32 @@ private _warmerPlaced = _target getVariable [QEGVAR(hypothermia,fluidWarmer), [0
 if (_warmerPlaced select _selectionN == 1) then {
     _entries pushBack [LELSTRING(hypothermia,LineWarmer), [1, 0.75, 0.18, 1]];
 };
+private _wounds = GET_OPEN_WOUNDS(_target);
+private _bodyPart = ALL_BODY_PARTS select _selectionN;
+private _partWounds = _wounds getOrDefault [_bodyPart, []];
+private _internalBleedAmount = 0;
+
+{
+    _x params ["_woundClassID", "_amountOf"];
+    private _classIndex = _woundClassID / 10;
+    private _category   = _woundClassID % 10;
+    private _className = ACEGVAR(medical_damage,woundClassNames) select _classIndex;
+    TRACE_1("checkLimb4",_className);
+    if (_className isEqualTo "InternalBleeding") then {
+        _internalBleedAmount = _internalBleedAmount + _category;
+    };
+} forEach _partWounds;
+private _sizeLabel = "";
+TRACE_1("checkLimb2",_internalBleedAmount);
+if (_internalBleedAmount > 0) then {
+    _sizeLabel = switch (true) do {
+        case (_internalBleedAmount < 3): { localize ELSTRING(hitpoints,InternalBleeding_Minor) };
+        case (_internalBleedAmount < 6): { localize ELSTRING(hitpoints,InternalBleeding_Medium) };
+        case (_internalBleedAmount < 10): { localize ELSTRING(hitpoints,InternalBleeding_Large) };
+        default {};
+    };
+    _entries pushBack [_sizeLabel, [0.8, 0.76, 0.9, 1]];
+};
 
 // Indicate current body part fracture status
 switch (GET_FRACTURES(_target) select _selectionN) do {

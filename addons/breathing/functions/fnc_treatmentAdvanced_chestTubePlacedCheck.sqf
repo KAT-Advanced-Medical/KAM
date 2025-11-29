@@ -21,8 +21,6 @@
 params ["_medic", "_patient", "_number", "_side"];
 private _chestTubeArray = _patient getVariable [QGVAR(chestTube), [0,0]];
 private _liveChestTube = _chestTubeArray select _side;
-
-if ((_number == 5) && (_liveChestTube == 0)) exitWith {true};
-if ((_number != 5) && (_liveChestTube > 0) && (_liveChestTube < 1)) exitWith {true};
+if (_number == _liveChestTube) exitWith {true};
 
 false

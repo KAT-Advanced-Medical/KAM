@@ -62,9 +62,7 @@ if (floor (random 100) < (GVAR(pneumothoraxChance) + _chanceIncrease)) then {
             _activeChestSeal set [_side, false];
             _unit setVariable [QGVAR(activeChestSeal), _activeChestSeal, true];
         } else {
-            if (GVAR(advPtxEnable)) then {
-                [_unit, _chanceIncrease,  _side] call FUNC(inflictAdvancedPneumothorax);
-            };
+            [_unit, _chanceIncrease,  _side] call FUNC(inflictAdvancedPneumothorax);
         };
     };
 };

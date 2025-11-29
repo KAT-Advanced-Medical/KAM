@@ -22,3 +22,4 @@ params ["_medic", "_patient"];
 [_medic, "kat_scalpel"] call ACEFUNC(common,addToInventory);
 [_medic, "kat_airwayStrap"] call ACEFUNC(common,addToInventory);
 [_medic, "kat_surgAirway"] call ACEFUNC(common,addToInventory);
+[_medic, "kat_stitchKit"] call ACEFUNC(common,addToInventory);

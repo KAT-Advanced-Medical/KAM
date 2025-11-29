@@ -22,17 +22,17 @@ private _chestTubeArray = _patient getVariable [QGVAR(chestTube), [0,0]];
 private _liveChestTube = _chestTubeArray select _side;
 
 
-if (_liveChestTube == 0.5)  exitWith {
+if (_liveChestTube == 0.7)  exitWith {
     _liveChestTube = 1;
 
     _chestTubeArray set [_side, _liveChestTube];
     _patient setVariable [QGVAR(chestTube), _chestTubeArray, true];
+    [_patient, _side] call FUNC(handleHemothoraxTreatment);
     private _activeChestSeal = _patient getVariable [QGVAR(activeChestSeal), [false, false]];
     if (_activeChestSeal select _side) then {
     private _tensionPneumothorax = _patient getVariable [QGVAR(tensionPneumothorax), [false, false]];
     _tensionPneumothorax set [_side, false];
     _patient setVariable [QGVAR(tensionPneumothorax), _tensionPneumothorax, true];
-    [_patient, _side] call FUNC(handleHemothoraxTreatment);
     [_patient, 0, _side] call FUNC(handlePneumothoraxTreatment);
     };
     [_patient, true] call ACEFUNC(dragging,setCarryable);

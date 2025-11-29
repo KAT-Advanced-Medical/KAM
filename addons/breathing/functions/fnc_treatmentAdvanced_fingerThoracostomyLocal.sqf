@@ -57,6 +57,14 @@ if (random 100 <= 20) exitWith {
     private _surfaceArea = _surface - 60;
     _patient setVariable [QEGVAR(breathing,lungSurfaceArea), _surfaceArea];
 };
+private _hemopneumothorax = _patient getVariable [QGVAR(hemopneumothorax), [0, 0]];
+_hemopneumothorax set [_side, (((_hemopneumothorax select _side) - 0.4) max 0)];
+_patient setVariable [QGVAR(hemopneumothorax), _hemopneumothorax, true];
+private _ht = _patient getVariable [QEGVAR(circulation,ht), []];
+if ((_hemopneumothorax select _side) == 0) then {
+    _ht deleteAt (_ht find "hemo");
+};
+_patient setVariable [QEGVAR(circulation,ht), _ht, true];
 private _activeChestSeal = _patient getVariable [QGVAR(activeChestSeal), [false, false]];
 if (_activeChestSeal select _side) then {
     private _hemopneumothorax = _patient getVariable [QGVAR(hemopneumothorax), [0, 0]];
@@ -68,9 +76,6 @@ if (_activeChestSeal select _side) then {
     [_patient, 0, _side] call FUNC(handlePneumothoraxTreatment);
     private _ht = _patient getVariable [QEGVAR(circulation,ht), []];
     _ht deleteAt (_ht find "tension");
-    if ((_hemopneumothorax select _side) == 0) then {
-        _ht deleteAt (_ht find "hemo");
-    };
     _patient setVariable [QEGVAR(circulation,ht), _ht, true];
 };
 

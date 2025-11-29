@@ -21,6 +21,7 @@
 params ["_medic", "_patient", "_number"];
 private _cricothyrotomy = _patient getVariable [QGVAR(cricothyrotomy), 0];
 if ((_number == 5) && (_cricothyrotomy == 0)) exitWith {true};
+if ((_number == 0.9) && (_cricothyrotomy > 0) && (_cricothyrotomy < 1)) exitWith {true};
 if ((_number != 5) && (_cricothyrotomy >= 0.1) && (_cricothyrotomy <= 0.7)) exitWith {true};
 
 false

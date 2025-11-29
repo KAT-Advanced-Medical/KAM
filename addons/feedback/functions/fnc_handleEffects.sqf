@@ -40,12 +40,12 @@ private _tR = _tensionPneumo select 1;
 private _hL = _hemoPneumo select 0;
 private _hR = _hemoPneumo select 1;
 private _wheeze = (
-    _pL > 0 ||
-    _pR > 0 ||
+    _pL > 0.2 ||
+    _pR > 0.2 ||
     _tL ||
     _tR ||
-    _hL > 0 ||
-    _hR > 0 ||
+    _hL > 0.2 ||
+    _hR > 0.2 ||
     _lungSurface < 350
 );
 private _eyeInjurySeverity        = GET_DUST_INJURY(ACE_player);

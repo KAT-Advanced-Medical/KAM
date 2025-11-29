@@ -1,3 +1,4 @@
+#define DEBUG_MODE_FULL
 #include "..\script_component.hpp"
 /*
  * Author: Blue
@@ -36,33 +37,6 @@ if (_selectionN isEqualTo 3) then {
 };
 
 _target setVariable [QGVAR(gui_updateInjuryList_eviscEntries), _eviscEntry];
-
-private _wounds = GET_OPEN_WOUNDS(_target);
-private _bodyPart = ALL_BODY_PARTS select _selectionN;
-private _partWounds = _wounds getOrDefault [_bodyPart, []];
-private _internalBleedAmount = 0;
-
-{
-    _x params ["_woundClassID", "_amountOf"];
-    private _classIndex = _woundClassID / 10;
-    private _category   = _woundClassID % 10;
-    private _className = ACEGVAR(medical_damage,woundClassNames) select _classIndex;
-    TRACE_1("checkLimb4",_className);
-    if (_className isEqualTo "InternalBleeding") then {
-        _internalBleedAmount = _internalBleedAmount + _category;
-    };
-} forEach _partWounds;
-private _sizeLabel = "";
-TRACE_1("checkLimb2",_internalBleedAmount);
-if (_internalBleedAmount > 0) then {
-    _sizeLabel = switch (true) do {
-        case (_internalBleedAmount < 2): { localize LSTRING(InternalBleeding_Minor) };
-        case (_internalBleedAmount < 4): { localize LSTRING(InternalBleeding_Medium) };
-        case (_internalBleedAmount < 6): { localize LSTRING(InternalBleeding_Large) };
-        default {};
-    };
-    _entries pushBack [_sizeLabel, [0.8, 0.76, 0.9, 1]];
-};
 
 private _jointArray = GET_JOINTS(_target);
 _hasInjury = false;

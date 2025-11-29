@@ -332,21 +332,7 @@
             <Dutch>Staat geadvanceerde pneumothoraxen - hemopneumothorax en spanningspneumothorax - toe</Dutch>
         </Key>
         <Key ID="STR_KAT_Breathing_DESCRIPTION_HEMOPNEUMOTHORAX_CHANCE_OPTION">
-            <English>Sets the chance for hemopneumothorax. Also sets the chance for tenstion pneumothorax (60% Hemo = 40% Tension)</English>
-            <Czech>Nastavuje šanci hemopneumotoraxu. Zároveň nastavuje šanci tenzního pneumotoraxu (60% Hemo = 40% Tenzní)</Czech>
-            <French>Règle la chance d'avoir un hémopneumothorax. Règle également la chance d'un pneumothorax sous tension (60% Hémo = 40% Tension)</French>
-            <Spanish>Fija la probabilidad para Hemotórax y para Neumotórax a tensión (60% Hemo = 40% Tensión)</Spanish>
-            <Italian>Imposta la probabilità per l'emopneumotorace. Imposta inoltre la probabilità per pneumotorace da tensione. (60% Emopn. =  40% Pneum. tensione)</Italian>
-            <Polish>Ustawia szansę na krwiaka opłucnej. \nPonadto ustawia szansę dla odmy prężnej (60% Krwiak = 40% Prężna)</Polish>
-            <Portuguese>Define a chance de hemotórax. Também define a chance de pneumotórax hipertensivo (60% Hemo = 40% Hipertensivo)</Portuguese>
-            <Russian>Определяет вероятность развития гемопневмоторакса. Также определяет вероятность развития напряженного пневмоторакса (60% Гемо = 40% напряжения)</Russian>
-            <German>Legt die Wahrscheinlichkeit für einen Hämatopneumothorax fest. Legt auch die Wahrscheinlichkeit auf einen Spannungspneumothorax fest(60 % Hämo = 40 % Spannungspneu</German>
-            <Korean>혈기흉의 확률을 설정합니다. 또한 긴장성 기흉의 확률을 설정합니다. (혈기흉 60% = 긴장성 기흉 40%)</Korean>
-            <Japanese>血気胸の発生確率を設定します。緊張性気胸の発生確率も設定します (60% 血気胸 = 40% 緊張性)</Japanese>
-            <Chinese>設定血氣胸的機率。同時設定張力性氣胸的機率（60％血氣胸= 40％張力性氣胸）。</Chinese>
-            <Chinesesimp>设定血气胸的几率。同时设定张力性气胸的几率（60％血气胸= 40％张力性气胸）。</Chinesesimp>
-            <Finnish>Asettaa hemopneumotoraksin mahdollisuuden. Asettaa myös jännittyneen pneumotoraksin mahdollisuuden. (60% hemo = 40% jännitystä)</Finnish>
-            <Dutch>Legt de kans op een hemopneumothorax vast. Legt ook de kans voor spanningspneumothorax vast. (60% Hemo = 40% spanning)</Dutch>
+            <English>Sets the chance for hemopneumothorax to develop, seperate from Pnuemothorax chances</English>
         </Key>
         <Key ID="STR_KAT_Breathing_DESCRIPTION_STABLE_SPO2">
             <English>After reaching more than selected value (default 85), only then patient can get conscious</English>
@@ -3229,7 +3215,7 @@
             <English>Allow Finger Thoracostomies</English>
         </Key>
         <Key ID="STR_KAT_Breathing_ChestTube_log">
-            <English>%1 %2 the incision</English>
+            <English>%1 %2 the Chest Tube</English>
         </Key>
         <Key ID="STR_KAT_Breathing_incision_log">
             <English>%1 made an chest incision</English>
@@ -3278,6 +3264,9 @@
         </Key>
         <Key ID="STR_KAT_Breathing_PREPARED">
             <English>Prepared</English>
+        </Key>
+        <Key ID="STR_KAT_Breathing_PLACED">
+            <English>Placed</English>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_ConsciousnessRequirement">
             <English>Chest Tube Consciousness Controls</English>
@@ -3478,6 +3467,9 @@
         <Key ID="STR_KAT_Breathing_Left_PartialChestTube_5">
             <English>Left Chest Tube Prepped</English>
         </Key>
+        <Key ID="STR_KAT_Breathing_Left_PartialChestTube_7">
+            <English>Left Chest Tube Placed</English>
+        </Key>
         <Key ID="STR_KAT_Breathing_Right_ChestTube">
             <English>Right Chest Tube</English>
         </Key>
@@ -3489,6 +3481,9 @@
         </Key>
         <Key ID="STR_KAT_Breathing_Right_PartialChestTube_5">
             <English>Right Chest Tube Prepped</English>
+        </Key>
+        <Key ID="STR_KAT_Breathing_Right_PartialChestTube_7">
+            <English>Right Chest Tube Placed</English>
         </Key>
         <Key ID="STR_KAT_Breathing_LeftSide">
             <English>Left Side</English>
@@ -3537,6 +3532,33 @@
         </Key>
         <Key ID="STR_KAT_Breathing_Chest_TubeCheck_Action">
             <English>Checking Chest Tube</English>
+        </Key>
+        <Key ID="STR_KAT_Breathing_secure_chest_tube_use">
+            <English>Secure Left Side Chest Tube</English>
+        </Key>
+        <Key ID="STR_KAT_Breathing_secure_chest_tube_action">
+            <English>Securing Chest Tube</English>
+        </Key>
+        <Key ID="STR_KAT_Breathing_securechest_tuberight_use">
+            <English>Secure Right Side Chest Tube</English>
+        </Key>
+        <Key ID="STR_KAT_Breathing_reset_chesttube">
+            <English>Close Left Side Chest Tube Incision</English>
+        </Key>
+        <Key ID="STR_KAT_Breathing_reset_chesttube_action">
+            <English>Closing Chest Tube Incision</English>
+        </Key>
+        <Key ID="STR_KAT_Breathing_rightreset_chesttube">
+            <English>Close Right Side Chest Tube Incision</English>
+        </Key>
+        <Key ID="STR_KAT_Breathing_closedincision">
+            <English>Closed Chest Tube Incision</English>
+        </Key>
+        <Key ID="STR_KAT_Breathing_chestTubeDrainAmount">
+            <English>Chest Tube Drain Amount</English>
+        </Key>
+        <Key ID="STR_KAT_Breathing_chestTubeDrainAmount_desc">
+            <English>How much, In mLs, a Chest Tube drains per 5 seconds</English>
         </Key>
     </Package>
 </Project>

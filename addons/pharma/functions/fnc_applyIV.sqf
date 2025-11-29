@@ -179,7 +179,6 @@ switch (_usedItem) do {
         if (random 100 < (GVAR(IVFailures) * 2)) then {
             [_patient, [0.4, 0.5, 0.7] select (floor random 3)] call ACEFUNC(medical_status,adjustPainLevel);
             if (random 100 < 20) then {
-                if (EGVAR(breathing,advPtxEnable)) then {
                     private _pneumothoraxState = _patient getVariable [QGVAR(pneumothorax), [0, 0]];
                     private _tensionState = _patient getVariable [QGVAR(tensionpneumothorax), [false, false]];
                     private _hemoState = _patient getVariable [QGVAR(hemopneumothorax), [false, false]];
@@ -199,8 +198,7 @@ switch (_usedItem) do {
                         if (_patient getVariable [QEGVAR(circulation,cardiacArrestType), 0] == 0) then {
                         [QACEGVAR(medical,FatalVitals), _patient] call CBA_fnc_localEvent;
                         };  
-                    };
-                };      
+                    };     
             };
         } else {
         _IVarray set [_partIndex, 14];

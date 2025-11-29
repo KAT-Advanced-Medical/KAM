@@ -44,6 +44,7 @@ PREP(treatmentAdvanced_chestTubeIncision);
 PREP(treatmentAdvanced_chestTubeIncisionLocal);
 PREP(treatmentAdvanced_chestTubeKit);
 PREP(treatmentAdvanced_chestTubeLocal);
+PREP(treatmentAdvanced_chestTubePlacedCheck);
 PREP(treatmentAdvanced_chestTubeProgress);
 PREP(treatmentAdvanced_chestTubeProgressLocal);
 PREP(treatmentAdvanced_fingerThoracostomy);

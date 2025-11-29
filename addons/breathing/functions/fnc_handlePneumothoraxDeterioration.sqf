@@ -47,26 +47,13 @@ params ["_unit", "_side"];
                             if ((random 100 < 30) && GVAR(PneumothoraxArrest)) then {
                                 [{
 
-                                    params ["_args", "_idPFH"];
-                                    _args params ["_unit", "_side"];
-
-                                    if (((_unit getVariable [QGVAR(pneumothorax), [0, 0]] select _side) % 4) == 0) then {
-                                        private _ht = _unit getVariable [QEGVAR(circulation,ht), []];
-                                        if ((_ht findIf {_x isEqualTo "tension"}) == -1) then {
-                                            _ht pushBack "tension";
-
-                                            if (_unit getVariable [QEGVAR(circulation,cardiacArrestType), 0] == 0) then {
-                                                [QACEGVAR(medical,FatalVitals), _unit] call CBA_fnc_localEvent;
-                                            };
-                                            _unit setVariable [QEGVAR(circulation,ht), _ht, true];
-                                        };
+                                    params ["_unit"];
+                                    if (_unit getVariable [QEGVAR(circulation,cardiacArrestType), 0] == 0) then {
+                                        [QACEGVAR(medical,FatalVitals), _unit] call CBA_fnc_localEvent;
                                     };
-                                }, [_unit, _side], GVAR(arrestPneumothorax_interval)] call CBA_fnc_waitAndExecute;
+                                }, [_unit], GVAR(arrestPneumothorax_interval)] call CBA_fnc_waitAndExecute;
                             };
-
-                            if (GVAR(advPtxEnable)) then {
-                                [_unit, _side, true] call FUNC(inflictAdvancedPneumothorax);
-                            };
+                            [_unit, _side, true] call FUNC(inflictAdvancedPneumothorax);
                             
                         };
                         if (_ptxTarget > 16) exitWith {

@@ -25,7 +25,7 @@ private _fractureArray = _patient getVariable [QGVAR(fractures), [0,0,0,0,0,0,0,
 private _liveFracture = _fractureArray select _part;
 
 if (_exit) exitWith {
-    if (_liveFracture < 2.5) then {
+    if (_liveFracture < 2.7) then {
         _liveFracture = 2;
     } else {
         _liveFracture = 3;
@@ -38,7 +38,7 @@ if (_exit) exitWith {
     [_patient, true] call ACEFUNC(dragging,setDraggable);
 };
 
-if ((_liveFracture == 2.5) || (_liveFracture == 3.5)) exitWith {
+if ((_liveFracture == 2.7) || (_liveFracture == 3.7)) exitWith {
     _liveFracture = 0;
     private _delayMult = missionNamespace getVariable [QGVAR(penaltyMult),0.5];
     private _delay = (random [120, 200, 240]) * _delayMult;

@@ -57,7 +57,13 @@ private _localAnesthesia = (_patient getVariable [QEGVAR(pharma,localAnesthesia)
     ) then {
         [_patient, [0.7, 0.8, 0.9] select (floor random 3)] call ACEFUNC(medical_status,adjustPainLevel);
     };
-
+if (_number == 0.9) exitWith {
+    _surgeryString = LSTRING(ClosedIncision);
+    [_patient, "quick_view", LSTRING(ChestTube_log), [[_medic] call ACEFUNC(common,getName), _surgeryString, STRING_BODY_PARTS select 2]] call ACEFUNC(medical_treatment,addToLog);
+    _chestTubeArray set [_side, 0];
+    _patient setVariable [QGVAR(chestTube), _chestTubeArray, true];
+    _patient setVariable [QGVAR(cricothyrotomy), 0, true];
+};
 if (_number == _liveTube) exitWith {
     switch (_entry) do {
         case (0.1):{
@@ -65,6 +71,9 @@ if (_number == _liveTube) exitWith {
         };
         case (0.3):{
             _surgeryString = LSTRING(PREPARED);
+        };
+        case (0.5):{
+            _surgeryString = LSTRING(PLACED);
         };
     };
 

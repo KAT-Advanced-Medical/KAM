@@ -36,19 +36,19 @@ if ((_occlusion) || (_obstruction) || (_hasCatastrophicAirway)) then {
 };
 
 //Reads Thorasic Condition
-if (_patient getVariable [QEGVAR(breathing,pneumothorax), [0, 0]] select 0 > 0) then {
+if (_patient getVariable [QEGVAR(breathing,pneumothorax), [0, 0]] select 0 > 0.2) then {
     _thorasic = LSTRING(Ultra_Thorasic_PTX);
 };
 
-if (_patient getVariable [QEGVAR(breathing,pneumothorax), [0, 0]] select 1 > 0) then {
+if (_patient getVariable [QEGVAR(breathing,pneumothorax), [0, 0]] select 1 > 0.2) then {
     _thorasicRight = LSTRING(Ultra_Thorasic_Right_PTX);
 };
 
-if (_patient getVariable [QEGVAR(breathing,hemopneumothorax), [false, false]] select 0) then {
+if (_patient getVariable [QEGVAR(breathing,hemopneumothorax), [0, 0]] select 1 > 0.2) then {
     _thorasic = LSTRING(Ultra_Thorasic_Hemo);
 };
 
-if (_patient getVariable [QEGVAR(breathing,hemopneumothorax), [false, false]] select 1) then {
+if (_patient getVariable [QEGVAR(breathing,hemopneumothorax), [0, 0]] select 1 > 0.2) then {
     _thorasicRight = LSTRING(Ultra_Thorasic_Right_Hemo);
 };
 

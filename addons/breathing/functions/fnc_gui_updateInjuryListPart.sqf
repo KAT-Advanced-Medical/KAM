@@ -70,6 +70,9 @@ if (((_target getVariable [QGVAR(chestTube), [0, 0]] select 0) > 0) && _selectio
         case 0.5: {
             _entries pushBack [LLSTRING(Left_PartialChestTube_5), [0.3, 0.8, 0.8, 1]];
         };
+        case 0.7: {
+            _entries pushBack [LLSTRING(Left_PartialChestTube_7), [0.3, 0.8, 0.8, 1]];
+        };
         default {
             _entries pushBack [LLSTRING(Left_ChestTube), [0.3, 0.8, 0.8, 1]];
         };
@@ -87,6 +90,9 @@ if (((_target getVariable [QGVAR(chestTube), [0, 0]] select 1) > 0) && _selectio
         };
         case 0.5: {
             _entries pushBack [LLSTRING(Right_PartialChestTube_5), [0.3, 0.8, 0.8, 1]];
+        };
+        case 0.7: {
+            _entries pushBack [LLSTRING(Right_PartialChestTube_7), [0.3, 0.8, 0.8, 1]];
         };
         default {
             _entries pushBack [LLSTRING(Right_ChestTube), [0.3, 0.8, 0.8, 1]];
