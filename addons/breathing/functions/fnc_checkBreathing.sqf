@@ -64,13 +64,13 @@ if ([_medic] call ACEFUNC(common,isMedic)) then {
 _output = format ["%1%2, %3", _breathing ,_breath, _breathRate];
 _output_log = format ["%1%2, %3", _breathing_log, _breath, _breathRate];
 
-private _breathing = true;
+private _isbreathing = true;
 private _paralysis = _patient getVariable [QGVAR(paralysis), 0] > 0.1;
 if ((_rawRR < 1) || _paralysis) then {
-    _breathing = false;
+    _isbreathing = false;
 };
 private _airway = HAS_AIRWAY(_patient);
-if (_hr == 0 || !(alive _patient) || !_airway || !_breathing || _rr == 0) then {
+if (_hr == 0 || !(alive _patient) || !_airway || !_isbreathing || _rr == 0) then {
     _output = LLSTRING(breathing_none);
     _output_log = ACELSTRING(medical_treatment,Check_Pulse_None);
 };

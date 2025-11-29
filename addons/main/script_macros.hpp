@@ -289,6 +289,7 @@
 #define MOA_TO_RAD(d) ((d) * 0.00029088) // Conversion factor: PI / 10800
 
 #define QPATHTOF_SOUND(var1) QUOTE(PATHTOF2_SYS(PREFIX,COMPONENT,var1))
+#define QEPATHTOF_SOUND(var1,var2) QUOTE(PATHTOF2_SYS(PREFIX,var1,var2))
 #define QQPATHTOF_SOUND(var1) QUOTE(QPATHTOF_SOUND(var1))
 
 #include "script_debug.hpp"
@@ -327,7 +328,7 @@
 
 // Breathing
 #define VAR_SURFACE_AREA                QEGVAR(breathing,lungSurfaceArea)
-#define GET_KAT_SURFACE_AREA(unit)      (unit getVariable [VAR_SURFACE_AREA, 400])
+#define GET_KAT_SURFACE_AREA(unit)      ((unit getVariable [VAR_SURFACE_AREA, 400]) - (((unit getVariable [QEGVAR(breathing,pneumothorax), [0, 0]] select 0) + (unit getVariable [QEGVAR(breathing,pneumothorax), [0, 0]] select 1)) * 20) + (((unit getVariable [QEGVAR(breathing,hemopneumothorax), [0, 0]] select 0) + (unit getVariable [QEGVAR(breathing,hemopneumothorax), [0, 0]] select 1)) * 60))
 
 #define VAR_BLOOD_GAS                  QEGVAR(circulation,bloodGas)
 #define VAR_BREATHING_RATE             QEGVAR(breathing,breathRate)

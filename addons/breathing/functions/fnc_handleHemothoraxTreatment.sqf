@@ -16,26 +16,47 @@
  * Public: No
  */
 
-params ["_unit", "_chanceIncrease", "_side"];
+params ["_unit", "_side"];
 
 [{
-    params ["_unit", "_chanceIncrease", "_side"];
+    params ["_unit", "_side"];
 
-    private _pneumothoraxState = _unit getVariable [QGVAR(pneumothorax), [0, 0]]; // Default: [0, 0] for both sides
+    private _hemo = _unit getVariable [QGVAR(hemopneumothorax), [0, 0]];
+    private _currentVol = _hemo select _side;
 
-    if ((_pneumothoraxState select _side > 0)) then {
-        // Try to deteriorate at set interval
-        [{
-
-            params ["_args", "_idPFH"];
-            _args params ["_unit", "_side"];
-            private _hemoState = _unit getVariable [QGVAR(hemopneumothorax), [0, 0]];
-            // If patient is dead, treated, or already deteriorated to advanced pneumothorax, kill the PFH
-            if (!(alive _unit) || (_hemoState select _side == 0)) exitWith {
-                [_idPFH] call CBA_fnc_removePerFrameHandler;
-            };
-            _hemoState set [_side, ((_hemoState select _side) - (0.1 * GVAR(ChestTubeDrainAmount)))];
-            _unit setVariable [QGVAR(hemopneumothorax), _hemoState, true];
-        }, GVAR(chestTubeDrainTime), [_unit, _side]] call CBA_fnc_addPerFrameHandler;
+    if (_currentVol <= 0) exitWith {};
+    private _ht = _unit getVariable [QEGVAR(circulation,ht), []];
+    if !("hemo" in _ht) then {
+        _ht pushBack "hemo";
+        _unit setVariable [QEGVAR(circulation,ht), _ht, true];
     };
-}, [_unit, _chanceIncrease, _side], GVAR(chestTubeDrainTime)] call CBA_fnc_waitAndExecute;
+    [{
+        params ["_args", "_idPFH"];
+        _args params ["_unit", "_side"];
+
+        private _hemo = _unit getVariable [QGVAR(hemopneumothorax), [0, 0]];
+        private _drain = _unit getVariable [QGVAR(drainRate), [0, 0]];
+        private _val = _hemo select _side;
+        if (!alive _unit || (_val <= 0 && {INTERNAL_BLEEDING_RATE(_unit,2) == 0})) exitWith {
+            [_idPFH] call CBA_fnc_removePerFrameHandler;
+            _drain set [_side, 0];
+            _unit setVariable [QGVAR(drainRate), _drain, true];
+            private _ht = _unit getVariable [QEGVAR(circulation,ht), []];
+            _ht deleteAt (_ht find "hemo");
+            _unit setVariable [QEGVAR(circulation,ht), _ht, true];
+        };
+        private _suctionEnabled = _unit getVariable [QGVAR(chestTubeSuction), false];  
+        private _baseDrain = GVAR(chestTubeDrainAmount) * 0.01;
+        private _pressureFactor = linearConversion [0, 1, _val, 0.4, 1.2, true];
+        private _drainAmount = _baseDrain * _pressureFactor;
+        private _newVal = _val - _drainAmount;
+        if (_newVal < 0.02) then { _newVal = 0; };
+        _hemo set [_side, _newVal];
+        _unit setVariable [QGVAR(hemopneumothorax), _hemo, true];
+        _drain set [_side, _drainAmount];
+        _unit setVariable [QGVAR(drainRate), _drain, true];
+
+    }, (GVAR(chestTubeDrainTime) * random [0.8, 1, 1.2]), [_unit, _side]] call CBA_fnc_addPerFrameHandler;
+
+}, 
+[_unit, _side], (GVAR(chestTubeDrainTime) * random [0.8, 1, 1.2])] call CBA_fnc_waitAndExecute;

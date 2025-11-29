@@ -58,6 +58,42 @@ if (_target getVariable [QGVAR(attachedVentGUI), false] && _selectionN isEqualTo
     _entries pushBack [LLSTRING(Vent_Display), [0.3, 0.8, 0.8, 1]];
 };
 
+if (((_target getVariable [QGVAR(chestTube), [0, 0]] select 0) > 0) && _selectionN isEqualTo 2) then {
+    _leftChest = (_target getVariable [QGVAR(chestTube), [0, 0]] select 0);
+    switch (_leftChest) do {
+        case 0.1: {
+            _entries pushBack [LLSTRING(Left_PartialChestTube_1), [0.3, 0.8, 0.8, 1]];
+        };
+        case 0.3: {
+            _entries pushBack [LLSTRING(Left_PartialChestTube_3), [0.3, 0.8, 0.8, 1]];
+        };
+        case 0.5: {
+            _entries pushBack [LLSTRING(Left_PartialChestTube_5), [0.3, 0.8, 0.8, 1]];
+        };
+        default {
+            _entries pushBack [LLSTRING(Left_ChestTube), [0.3, 0.8, 0.8, 1]];
+        };
+    };  
+};
+
+if (((_target getVariable [QGVAR(chestTube), [0, 0]] select 1) > 0) && _selectionN isEqualTo 2) then {
+    private _rightChest = (_target getVariable [QGVAR(chestTube), [0, 0]] select 1);
+    switch (_rightChest) do {
+        case 0.1: {
+            _entries pushBack [LLSTRING(Right_PartialChestTube_1), [0.3, 0.8, 0.8, 1]];
+        };
+        case 0.3: {
+            _entries pushBack [LLSTRING(Right_PartialChestTube_3), [0.3, 0.8, 0.8, 1]];
+        };
+        case 0.5: {
+            _entries pushBack [LLSTRING(Right_PartialChestTube_5), [0.3, 0.8, 0.8, 1]];
+        };
+        default {
+            _entries pushBack [LLSTRING(Right_ChestTube), [0.3, 0.8, 0.8, 1]];
+        };
+    };  
+};
+
 private _ptxEntry = [];
 
 private _pneumothoraxState = _target getVariable [QGVAR(pneumothorax), [0, 0]];

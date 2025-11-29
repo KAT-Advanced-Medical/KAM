@@ -33,7 +33,7 @@ private _ropes = _target getVariable [QGVAR(ropes), []];
     params ["_target", "_stretcher", "_ropes"];
 
     private _crew = crew _stretcher;
-    if (count _crew > 0) then {
+    if (_crew isNotEqualTo []) then {
         {
             _x leaveVehicle _stretcher;
             moveOut _x;

@@ -3466,5 +3466,77 @@
         <Key ID="STR_KAT_Breathing_auscultateHeart_display">
             <English>Auscultate Heart Sounds</English>
         </Key>
+        <Key ID="STR_KAT_Breathing_Left_ChestTube">
+            <English>Left Chest Tube</English>
+        </Key>
+        <Key ID="STR_KAT_Breathing_Left_PartialChestTube_1">
+            <English>Left Incision</English>
+        </Key>
+        <Key ID="STR_KAT_Breathing_Left_PartialChestTube_3">
+            <English>Left Incision Spread</English>
+        </Key>
+        <Key ID="STR_KAT_Breathing_Left_PartialChestTube_5">
+            <English>Left Chest Tube Prepped</English>
+        </Key>
+        <Key ID="STR_KAT_Breathing_Right_ChestTube">
+            <English>Right Chest Tube</English>
+        </Key>
+        <Key ID="STR_KAT_Breathing_Right_PartialChestTube_1">
+            <English>Right Incision</English>
+        </Key>
+        <Key ID="STR_KAT_Breathing_Right_PartialChestTube_3">
+            <English>Right Incision Spread</English>
+        </Key>
+        <Key ID="STR_KAT_Breathing_Right_PartialChestTube_5">
+            <English>Right Chest Tube Prepped</English>
+        </Key>
+        <Key ID="STR_KAT_Breathing_LeftSide">
+            <English>Left Side</English>
+        </Key>
+        <Key ID="STR_KAT_Breathing_RightSide">
+            <English>Right Side</English>
+        </Key>
+        <Key ID="STR_KAT_Breathing_CheckChestTube_Log">
+            <English>%1 checked %2 Chest tube: %3</English>
+        </Key>
+        <Key ID="STR_KAT_Breathing_chestTubeStatus_HeavyDrain_short">
+            <English>Heavy Drainage Flow</English>
+        </Key>
+        <Key ID="STR_KAT_Breathing_chestTubeStatus_NormalDrain_short">
+            <English>Normal Drainage Flow</English>
+        </Key>
+        <Key ID="STR_KAT_Breathing_chestTubeStatus_SlowDrain_short">
+            <English>Slow Drainage Flow</English>
+        </Key>
+        <Key ID="STR_KAT_Breathing_chestTubeStatus_MinimalDrain_short">
+            <English>Minimal Drainage Flow</English>
+        </Key>
+        <Key ID="STR_KAT_Breathing_chestTubeStatus_ClearDry_short">
+            <English>Clear and Dry</English>
+        </Key>
+        <Key ID="STR_KAT_Breathing_chestTubeStatus_HeavyDrain">
+            <English>Chest tube: Heavy Drainage Flow</English>
+        </Key>
+        <Key ID="STR_KAT_Breathing_chestTubeStatus_NormalDrain">
+            <English>Chest tube: Normal Drainage Flow</English>
+        </Key>
+        <Key ID="STR_KAT_Breathing_chestTubeStatus_SlowDrain">
+            <English>Chest tube: Slow Drainage Flow</English>
+        </Key>
+        <Key ID="STR_KAT_Breathing_chestTubeStatus_MinimalDrain">
+            <English>Chest tube: Minimal Drainage Flow</English>
+        </Key>
+        <Key ID="STR_KAT_Breathing_chestTubeStatus_ClearDry">
+            <English>Chest tube: Clear and Dry</English>
+        </Key>
+        <Key ID="STR_KAT_Breathing_Chest_TubeCheck_Use">
+            <English>Check Left Side Chest Tube</English>
+        </Key>
+        <Key ID="STR_KAT_Breathing_Chest_TubeCheckRight_Use">
+            <English>Check Right Side Chest Tube</English>
+        </Key>
+        <Key ID="STR_KAT_Breathing_Chest_TubeCheck_Action">
+            <English>Checking Chest Tube</English>
+        </Key>
     </Package>
 </Project>

@@ -72,7 +72,6 @@ if (_unit getVariable [QEGVAR(vitals,simpleMedical), false]) exitWith {};
                 _occlusionState set [_a, (_occA - _delta) min 10 max 0];
                 _occlusionState set [_b, (_occB + _delta) min 10 max 0];
             } forEach [0, 1];
-            TRACE_1("occlusion oral-upper-lower directional diffusion", _occlusionState);
             _unit setVariable [QGVAR(occlusion), _occlusionState, true];
         } else {
             _unit call FUNC(handleAwakePuking);

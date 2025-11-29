@@ -36,12 +36,14 @@ if (GVAR(pneumothoraxDamageThreshold_TakenDamage)) then {
 };
 private _side = selectRandom [0, 1];
 // Damage threshold passed & pneumothorax given
+if (floor (random 100) < (GVAR(hptxChance) + _chanceIncrease)) then {
+    [_unit, _side] call FUNC(handleHemothoraxDeterioration);
+};
 if (floor (random 100) < (GVAR(pneumothoraxChance) + _chanceIncrease)) then {
     private _pneumothoraxState = _unit getVariable [QGVAR(pneumothorax), [0, 0]];
     private _deepPenetratingInjury = _unit getVariable [QGVAR(deepPenetratingInjury), [false, false]];
     private _activeChestSeal = _unit getVariable [QGVAR(activeChestSeal), [false, false]];
     private _tensionState = _unit getVariable [QGVAR(tensionpneumothorax), [false, false]];
-    
 
     if ((_pneumothoraxState select _side) isEqualTo 0 && !(_tensionState select _side)) then { 
         [_unit, 0.2] call ACEFUNC(medical_status,adjustPainLevel);

@@ -248,6 +248,7 @@
     true
 ] call CBA_fnc_addSetting;
 
+
 // % Chance of Hemopneumothorax and Tension Pneumothorax happening when a Pneumothorax happens
 [
     QGVAR(advPtxChance),

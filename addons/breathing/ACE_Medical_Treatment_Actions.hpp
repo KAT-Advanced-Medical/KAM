@@ -442,7 +442,7 @@ class ACE_Medical_Treatment_Actions {
         condition = QUOTE(([ARR_4(_medic,_patient,5,0)] call FUNC(treatmentAdvanced_chestTubeCheck)) && (GVAR(hardcoreBreathingTreatment)));
         callbackSuccess = QUOTE([ARR_3(_medic,_patient,0)] call FUNC(treatmentAdvanced_chestTubeIncision));
     };
-    class RightIncision: CTIncision {
+    class RightCTIncision: CTIncision {
         displayName = CSTRING(ScalpelRight_Use);
         condition = QUOTE(([ARR_4(_medic,_patient,5,1)] call FUNC(treatmentAdvanced_chestTubeCheck)) && (GVAR(hardcoreBreathingTreatment)));
         callbackSuccess = QUOTE([ARR_3(_medic,_patient,1)] call FUNC(treatmentAdvanced_chestTubeIncision));
@@ -461,7 +461,7 @@ class ACE_Medical_Treatment_Actions {
         condition = QUOTE(([ARR_4(_medic,_patient,0.1,0)] call FUNC(treatmentAdvanced_chestTubeCheck)) && (GVAR(hardcoreBreathingTreatment)));
         callbackSuccess = QUOTE([ARR_4(_medic,_patient,0.1,0)] call FUNC(treatmentAdvanced_chestTubeProgress));
     };
-    class RightSpread: CTSpread {
+    class RightCTSpread: CTSpread {
         displayName = CSTRING(RetractorRight_Use);
         condition = QUOTE(([ARR_4(_medic,_patient,0.1,1)] call FUNC(treatmentAdvanced_chestTubeCheck)) && (GVAR(hardcoreBreathingTreatment)));
         callbackSuccess = QUOTE([ARR_4(_medic,_patient,0.1,1)] call FUNC(treatmentAdvanced_chestTubeProgress));
@@ -480,7 +480,7 @@ class ACE_Medical_Treatment_Actions {
         condition = QUOTE(([ARR_4(_medic,_patient,0.3,0)] call FUNC(treatmentAdvanced_chestTubeCheck)) && (GVAR(hardcoreBreathingTreatment)));
         callbackSuccess = QUOTE([ARR_4(_medic,_patient,0.3,0)] call FUNC(treatmentAdvanced_chestTubeProgress));
     };
-    class RightClamp: CTClamp {
+    class RightCTClamp: CTClamp {
         displayName = CSTRING(ClampRight_Use);
         condition = QUOTE(([ARR_4(_medic,_patient,0.3,1)] call FUNC(treatmentAdvanced_chestTubeCheck)) && (GVAR(hardcoreBreathingTreatment)));
         callbackSuccess = QUOTE([ARR_4(_medic,_patient,0.3,1)] call FUNC(treatmentAdvanced_chestTubeProgress));
@@ -517,5 +517,24 @@ class ACE_Medical_Treatment_Actions {
         consumeItem = 1;
         callbackSuccess = QFUNC(treatmentAdvanced_chestTubeKit);
         condition = "true";
+    };
+    class ChestTubeCheck: CheckPulse {
+        displayName = CSTRING(Chest_TubeCheck_Use);
+        displayNameProgress = CSTRING(Chest_TubeCheck_Action);
+        category = "surgery";
+        treatmentLocations = 0;
+        allowedSelections[] = {"Chest"};
+        allowSelfTreatment = 0;
+        medicRequired = QGVAR(chestTubeAction_MedLevel);
+        treatmentTime = 4;
+        items[] = {};
+        consumeItem = 0;
+        condition = QUOTE(([ARR_4(_medic,_patient,1,0)] call FUNC(treatmentAdvanced_chestTubeCheck)) && (GVAR(hardcoreBreathingTreatment)));
+        callbackSuccess = QUOTE([ARR_3(_medic,_patient,0)] call FUNC(checkChestTube));
+    };
+    class RightChestTubeCheck: ChestTube {
+        displayName = CSTRING(Chest_TubeCheckRight_Use);
+        condition = QUOTE(([ARR_4(_medic,_patient,1,1)] call FUNC(treatmentAdvanced_chestTubeCheck)) && (GVAR(hardcoreBreathingTreatment)));
+        callbackSuccess = QUOTE([ARR_3(_medic,_patient,1)] call FUNC(checkChestTube));
     };
 };

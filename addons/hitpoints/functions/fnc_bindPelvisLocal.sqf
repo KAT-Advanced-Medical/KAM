@@ -54,7 +54,7 @@ if (
     [_patient, [0.6, 0.7, 0.8] select (floor random 3)] call ACEFUNC(medical_status,adjustPainLevel);
 };
 
-playSound3D [QPATHTOF_SOUND(sounds\reduction.wav), _patient, false, getPosASL _patient, 8, 1, 15];
+playSound3D [QEPATHTOF_SOUND(surgery,sounds\reduction.wav), _patient, false, getPosASL _patient, 8, 1, 15];
 
 private _pelvicFracture = _patient getVariable [QGVAR(pelvicFracture), 0];
 if (_pelvicFracture > 0) then {

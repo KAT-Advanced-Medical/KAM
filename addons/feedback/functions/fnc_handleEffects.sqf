@@ -29,7 +29,25 @@ BEGIN_COUNTER(handleEffects);
 private _opioid          = GET_PP(ACE_player);
 private _spO2             = GET_KAT_SPO2(ACE_player);
 private _unconscious      = IS_UNCONSCIOUS(ACE_player);
-private _wheeze = ((((ACE_player getVariable [QEGVAR(breathing,pneumothorax), [0, 0]] select 0 > 0) || (ACE_player getVariable [QEGVAR(breathing,pneumothorax), [0, 0]] select 1 > 0) || (ACE_player getVariable [QEGVAR(breathing,tensionpneumothorax), [false, false]] select 0) || (ACE_player getVariable [QEGVAR(breathing,tensionpneumothorax), [false, false]] select 1) ||(ACE_player getVariable [QEGVAR(breathing,hemopneumothorax), [false, false]] select 0) || (ACE_player getVariable [QEGVAR(breathing,hemopneumothorax), [false, false]] select 1))) || ((ACE_player getVariable [QEGVAR(breathing,lungSurfaceArea), 400]) < 350));
+private _pneumo          = ACE_player getVariable [QEGVAR(breathing,pneumothorax), [0,0]];
+private _tensionPneumo   = ACE_player getVariable [QEGVAR(breathing,tensionpneumothorax), [false,false]];
+private _hemoPneumo      = ACE_player getVariable [QEGVAR(breathing,hemopneumothorax), [0,0]];
+private _lungSurface     = ACE_player getVariable [QEGVAR(breathing,lungSurfaceArea), 400];
+private _pL = _pneumo select 0;
+private _pR = _pneumo select 1;
+private _tL = _tensionPneumo select 0;
+private _tR = _tensionPneumo select 1;
+private _hL = _hemoPneumo select 0;
+private _hR = _hemoPneumo select 1;
+private _wheeze = (
+    _pL > 0 ||
+    _pR > 0 ||
+    _tL ||
+    _tR ||
+    _hL > 0 ||
+    _hR > 0 ||
+    _lungSurface < 350
+);
 private _eyeInjurySeverity        = GET_DUST_INJURY(ACE_player);
 private _eyeInjuries        = GET_EYE_INJURIES(ACE_player);
 

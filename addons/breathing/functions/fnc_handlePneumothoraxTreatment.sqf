@@ -63,15 +63,6 @@ params ["_unit", "_chanceIncrease", "_side"];
                             };
                         };
                         private _delay = (GVAR(chestSealTreatmentLoopTime) * _baroMult) * random [0.8, 1, 1.3];
-                        private _surface = (_unit getVariable [QGVAR(lungSurfaceArea), 400]);
-                        private _pneumothoraxSurfaceArea = _unit getVariable [QGVAR(pneumothoraxSurfaceArea), [0, 0]];
-                        private _pneumothoraxAmount = _pneumothoraxSurfaceArea select _side;
-                            if (_surface > 150) then {
-                                private _surfaceArea = _surface + 10;
-                                _pneumothoraxSurfaceArea set [_side, _pneumothoraxAmount - 10];
-                                _unit setVariable [QGVAR(lungSurfaceArea), _surfaceArea];
-                                _unit setVariable [QGVAR(pneumothoraxSurfaceArea), _pneumothoraxSurfaceArea];
-                            };
                         _pneumothoraxState set [_side, _ptxTarget];
                         _unit setVariable [QGVAR(pneumothorax), _pneumothoraxState, true];
                     };

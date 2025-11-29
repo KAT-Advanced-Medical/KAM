@@ -37,7 +37,7 @@ private _limbIndices = [
 
 private _limb = _limbIndices select {_x#0 == toLower _bodyPart};
 
-if (count _limb > 0) then {
+if (_limb isNotEqualTo []) then {
     {
         if ((_IVarray select _x) > 0) exitWith {_return = true};
     } forEach (_limb#0#1);
