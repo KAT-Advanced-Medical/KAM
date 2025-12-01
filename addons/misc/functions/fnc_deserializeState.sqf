@@ -102,7 +102,7 @@ private _state = [_json] call CBA_fnc_parseJSON;
 [QEGVAR(airway,isVisualized), false],
 [QEGVAR(breathing,airwayStatus), 100],
 [QEGVAR(breathing,pneumothorax), [0, 0]],
-[QEGVAR(breathing,hemopneumothorax), [false, false]],
+[QEGVAR(breathing,hemopneumothorax), [0, 0]],
 [QEGVAR(breathing,tensionpneumothorax), [false, false]],
 [QEGVAR(breathing,activeChestSeal), [false, false]],
 [QEGVAR(breathing,deepPenetratingInjury), [false, false]],

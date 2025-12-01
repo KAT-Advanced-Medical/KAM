@@ -343,7 +343,7 @@
 #define VAR_RESPIRATORY_DEPTH           QEGVAR(vitals,respiratoryDepth)
 #define GET_KAT_RESPIRATORY_DEPTH(unit)      (unit getVariable [QEGVAR(vitals,respiratoryDepth), 10])
 
-#define HAS_LUNG_INJURY(unit)  ((_unit getVariable [QEGVAR(breathing,pneumothorax), [0, 0]] select 0 > 0) || (_unit getVariable [QEGVAR(breathing,pneumothorax), [0, 0]] select 1 > 0) || (_unit getVariable [QEGVAR(breathing,tensionpneumothorax), [false, false]] select 0) || (_unit getVariable [QEGVAR(breathing,tensionpneumothorax), [false, false]] select 1) ||(_unit getVariable [QEGVAR(breathing,hemopneumothorax), [false, false]] select 0) || (_unit getVariable [QEGVAR(breathing,hemopneumothorax), [false, false]] select 1));
+#define HAS_LUNG_INJURY(unit)  ((_unit getVariable [QEGVAR(breathing,pneumothorax), [0, 0]] select 0 > 0) || (_unit getVariable [QEGVAR(breathing,pneumothorax), [0, 0]] select 1 > 0) || (_unit getVariable [QEGVAR(breathing,tensionpneumothorax), [false, false]] select 0) || (_unit getVariable [QEGVAR(breathing,tensionpneumothorax), [false, false]] select 1) || ((_unit getVariable [QEGVAR(breathing,hemopneumothorax), [0, 0]] select 0) > 0) || ((_unit getVariable [QEGVAR(breathing,hemopneumothorax), [0, 0]] select 1) > 0));
 
 
 // Circulation

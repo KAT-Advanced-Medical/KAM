@@ -37,9 +37,9 @@ if ((_o2 < EGVAR(breathing,Stable_spo2)) && (GVAR(conversionRequirements) > 0)) 
 private _ptx = _unit getVariable [QEGVAR(breathing,pneumothorax), [0, 0]];
 if (((selectMax _ptx) > 0) && (GVAR(conversionRequirements) > 0)) exitWith { false };
 
-private _hemopneumothorax = _unit getVariable [QEGVAR(breathing,hemopneumothorax), [false, false]];
+private _hemopneumothorax = _unit getVariable [QEGVAR(breathing,hemopneumothorax), [0, 0]];
 private _tensionpneumothorax = _unit getVariable [QEGVAR(breathing,tensionpneumothorax), [false, false]];
-if (((_tensionpneumothorax select 0) || (_tensionpneumothorax select 1) || (_hemopneumothorax select 0) || (_hemopneumothorax select 1)) && (GVAR(conversionRequirements) > 0)) exitWith { false };
+if (((_tensionpneumothorax select 0) || (_tensionpneumothorax select 1) || ((_hemopneumothorax select 0) > 0.3) || ((_hemopneumothorax select 1) > 0.3)) && (GVAR(conversionRequirements) > 0)) exitWith { false };
 
 private _fractures = _unit getVariable [QEGVAR(surgery,fractures), [0,0,0,0,0,0,0,0,0,0,0,0]];
 if ((({_x == 0} count _fractures) != 6) && (GVAR(conversionRequirements) > 1)) exitWith { false };

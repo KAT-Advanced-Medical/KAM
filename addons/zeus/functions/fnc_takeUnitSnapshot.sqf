@@ -126,7 +126,7 @@ diag_log format [
 private _airwayStatus = _unit getVariable [QEGVAR(breathing,airwayStatus), 100];
 private _pneumothorax = _unit getVariable [QEGVAR(breathing,pneumothorax), [0, 0]];
 private _pneumothoraxSurfaceArea = _unit getVariable [QEGVAR(breathing,pneumothoraxSurfaceArea), [0, 0]];
-private _hemopneumothorax = _unit getVariable [QEGVAR(breathing,hemopneumothorax), [false, false]];
+private _hemopneumothorax = _unit getVariable [QEGVAR(breathing,hemopneumothorax), [0, 0]];
 private _tensionpneumothorax = _unit getVariable [QEGVAR(breathing,tensionpneumothorax), [false, false]];
 private _activeChestSeal = _unit getVariable [QEGVAR(breathing,activeChestSeal), [false, false]];
 private _deepPenetratingInjury = _unit getVariable [QEGVAR(breathing,deepPenetratingInjury), [false, false]];

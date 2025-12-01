@@ -23,6 +23,7 @@ _patient setVariable [QGVAR(CPR_time), 0, true];
 _patient setVariable [QGVAR(activeCPR), false, true];
 _patient setVariable [QGVAR(heartRestart), false, true];
 _patient setVariable [QGVAR(cardiacArrestType), 0, true];
+_patient setVariable [QGVAR(refractoryCA), false, true];
 _patient setVariable [QGVAR(AED_X_VitalsStatus), "", true];
 _patient setVariable [VAR_BLOODPRESSURE_CHANGE, nil, true];
 

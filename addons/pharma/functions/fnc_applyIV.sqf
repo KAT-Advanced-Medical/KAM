@@ -181,7 +181,6 @@ switch (_usedItem) do {
             if (random 100 < 20) then {
                     private _pneumothoraxState = _patient getVariable [QGVAR(pneumothorax), [0, 0]];
                     private _tensionState = _patient getVariable [QGVAR(tensionpneumothorax), [false, false]];
-                    private _hemoState = _patient getVariable [QGVAR(hemopneumothorax), [false, false]];
                     private _side = selectRandom [0, 1];
                     if (floor (random 100) < GVAR(tptxChance)) then {
                         _tensionState set [_side, true];
