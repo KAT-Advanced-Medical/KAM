@@ -1674,5 +1674,11 @@
         <Key ID="STR_KAT_Surgery_plated">
             <English>Plated</English>
         </Key>
+        <Key ID="STR_KAT_Surgery_Incision">
+            <English>Incision Made</English>
+        </Key>
+        <Key ID="STR_KAT_Surgery_Status_Error">
+            <English>If you are reading this, something broke</English>
+        </Key>
     </Package>
 </Project>
