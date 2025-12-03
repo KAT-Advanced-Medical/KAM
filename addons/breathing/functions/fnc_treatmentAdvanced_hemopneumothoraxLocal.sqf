@@ -21,8 +21,8 @@ params ["_medic", "_patient", "_side"];
 
 private _activeChestSeal = _patient getVariable [QGVAR(activeChestSeal), [false, false]];
 if (_activeChestSeal select _side) then {
-    private _hemopneumothorax = _patient getVariable [QGVAR(hemopneumothorax), [false, false]];
-    _hemopneumothorax set [_side, false];
+    private _hemopneumothorax = _patient getVariable [QGVAR(hemopneumothorax), [0, 0]];
+    _hemopneumothorax set [_side, 0];
     _patient setVariable [QGVAR(hemopneumothorax), _hemopneumothorax, true];
     [_patient, 0, _side] call FUNC(handlePneumothoraxTreatment);
 };
@@ -33,13 +33,11 @@ private _ht = _patient getVariable [QEGVAR(circulation,ht), []];
 _patient setVariable [QEGVAR(circulation,ht), _ht, true];
 
 private _pneumothorax = _patient getVariable [QGVAR(pneumothorax), [0, 0]];
-private _hemopneumothorax = _patient getVariable [QGVAR(hemopneumothorax), [false, false]];
+private _hemopneumothorax = _patient getVariable [QGVAR(hemopneumothorax), [0, 0]];
 
-if ((_patient getVariable [QGVAR(pneumothorax), [0, 0]] select _side > 0) &&
-    !(_patient getVariable [QGVAR(hemopneumothorax), [false, false]] select _side) &&
+if ((_patient getVariable [QGVAR(pneumothorax), [0, 0]] select _side == 0) &&
+    ((_patient getVariable [QGVAR(hemopneumothorax), [0, 0]] select _side) == 0) &&
     !((_patient getVariable [QGVAR(tensionPneumothorax), [false, false]]) select _side)) then {
-    
-    
     if (GVAR(clearChestSealAfterTreatment)) then {
         _activeChestSeal set [_side, false];
         _patient setVariable [QGVAR(activeChestSeal), _activeChestSeal, true];

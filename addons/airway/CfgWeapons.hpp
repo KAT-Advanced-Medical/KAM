@@ -11,7 +11,7 @@ class CfgWeapons {
         model = QPATHTOF(models\larynx_tube\tube.p3d);
         ACE_isMedicalItem = 1;
         class ItemInfo: CBA_MiscItem_ItemInfo {
-            mass = 0.5;
+            mass = 1.5;
         };
     };
     class kat_guedel: ACE_ItemCore {
@@ -23,7 +23,7 @@ class CfgWeapons {
         model = QPATHTOF(models\guedel\guedel.p3d);
         ACE_isMedicalItem = 1;
         class ItemInfo: CBA_MiscItem_ItemInfo {
-            mass = 0.5;
+            mass = 1;
         };
     };
     class kat_NPA: ACE_ItemCore {
@@ -45,7 +45,7 @@ class CfgWeapons {
         picture = QPATHTOF(ui\igel.paa);
         ACE_isMedicalItem = 1;
         class ItemInfo: CBA_MiscItem_ItemInfo {
-            mass = 0.5;
+            mass = 1;
         };
     };
     class kat_laryngoscope: ACE_ItemCore {
@@ -79,7 +79,7 @@ class CfgWeapons {
         model = QPATHTOF(models\accuvac\accuvac.p3d);
         ACE_isMedicalItem = 1;
         class ItemInfo: CBA_MiscItem_ItemInfo {
-            mass = 7;
+            mass = 30;
         };
     };
     class kat_suction: ACE_ItemCore {
@@ -90,7 +90,7 @@ class CfgWeapons {
         picture = QPATHTOF(ui\suction_normal.paa);
         ACE_isMedicalItem = 1;
         class ItemInfo: CBA_MiscItem_ItemInfo {
-            mass = 0.5;
+            mass = 2;
         };
     };
     class kat_crikeKit: ACE_ItemCore {

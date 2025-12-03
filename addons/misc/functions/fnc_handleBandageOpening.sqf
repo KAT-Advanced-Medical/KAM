@@ -76,6 +76,7 @@ if (!_exist) then {
     private _bandagedInjury = +_injury;
     _bandagedInjury set [1, _impact];
     _bandagedInjury set [4, _bandage];
+    _bandagedInjury set [5, _injuryIndex];
     (_bandagedWounds getOrDefault [_part, [], true]) pushBack _bandagedInjury;
 };
 

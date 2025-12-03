@@ -22,4 +22,5 @@ private _hrAdjust = selectRandom _hrValue;
 if (random 3 < 1) then {
     private _randomValue = [3, 4];
     private _randomRhythm = selectRandom _randomValue;
-    _patient setVariable [QEGVAR(circulation,cardiacArrestType), _randomRhythm];};
+    _patient setVariable [QEGVAR(circulation,cardiacArrestType), _randomRhythm, true];
+};

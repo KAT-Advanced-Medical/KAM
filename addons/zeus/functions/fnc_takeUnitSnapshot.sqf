@@ -60,14 +60,20 @@ private _vasoconstriction = _unit getVariable [VAR_VASOCONSTRICTION, 1];
 
 
 diag_log format [
-    "[Vitals/Wounds] Pain: %1 | BloodVol: %2 | Tourniquet: %3 | OccludedMedications: %4 | OpenWounds: %5 | BandagedWounds: %6 | StitchedWounds: %7 | IsLimping: %8 | Fractures: %9 | HeartRate: %10 | BloodPress: %11 | PeriphRes: %12 | SpO2: %13 | OxygenDemand: %14 | IVBags: %15 | BodypartDamage: %16 | Hemorrhage: %17 | InPain: %18 | PainSupp: %19 | Medications: %20 | TriageCard: %21 | Vasoconstrictiion: %22 | WrappedWounds: %23 | CoagWounds: %24",
+    "[Wounds] OpenWounds: %1 | BandagedWounds: %2 | StitchedWounds: %3 | WrappedWounds: %4 | CoagWounds: %5",
+    _openWounds,
+    _bandagedWounds,
+    _stitchedWounds,
+    _wrappedWounds,
+    _coagWounds
+];
+
+diag_log format [
+    "[Vitals] Pain: %1 | BloodVol: %2 | Tourniquet: %3 | OccludedMedications: %4 | IsLimping: %5 | Fractures: %6 | HeartRate: %7 | BloodPress: %8 | PeriphRes: %9 | SpO2: %10 | OxygenDemand: %11 | IVBags: %12 | BodypartDamage: %13 | Hemorrhage: %14 | InPain: %15 | PainSupp: %16 | Medications: %17 | TriageCard: %18 | Vasoconstriction: %19",
     _pain,
     _bloodVol,
     _tourniquet,
     _occludedMedications,
-    _openWounds,
-    _bandagedWounds,
-    _stitchedWounds,
     _isLimping,
     _fractures,
     _heartRate,
@@ -82,9 +88,7 @@ diag_log format [
     _painSupp,
     _medications,
     _triageCard,
-    _vasoconstriction,
-    _wrappedWounds,
-    _coagWounds
+    _vasoconstriction
 ];
 
 
@@ -122,7 +126,7 @@ diag_log format [
 private _airwayStatus = _unit getVariable [QEGVAR(breathing,airwayStatus), 100];
 private _pneumothorax = _unit getVariable [QEGVAR(breathing,pneumothorax), [0, 0]];
 private _pneumothoraxSurfaceArea = _unit getVariable [QEGVAR(breathing,pneumothoraxSurfaceArea), [0, 0]];
-private _hemopneumothorax = _unit getVariable [QEGVAR(breathing,hemopneumothorax), [false, false]];
+private _hemopneumothorax = _unit getVariable [QEGVAR(breathing,hemopneumothorax), [0, 0]];
 private _tensionpneumothorax = _unit getVariable [QEGVAR(breathing,tensionpneumothorax), [false, false]];
 private _activeChestSeal = _unit getVariable [QEGVAR(breathing,activeChestSeal), [false, false]];
 private _deepPenetratingInjury = _unit getVariable [QEGVAR(breathing,deepPenetratingInjury), [false, false]];
@@ -172,7 +176,7 @@ private _tourniquetTime = _unit getVariable [QEGVAR(circulation,tourniquetTime),
 private _defaultHeartRate = _unit getVariable [QEGVAR(circulation,defaultHeartRate), 80];
 
 private _bloodGas = _unit getVariable [QEGVAR(circulation,bloodGas), DEFAULT_BLOOD_GAS];
-private _testedBloodGas = _unit getVariable [QEGVAR(circulation,testedBloodGas), [0,0,0,0,0,0,0,0,0,0,0,0]];
+private _testedBloodGas = _unit getVariable [QEGVAR(circulation,testedBloodGas), [0,0,0,0,0,0]];
 
 private _ABGmenuShow = _unit getVariable [QEGVAR(circulation,ABGmenuShow), false];
 
@@ -293,6 +297,11 @@ diag_log format [
     "[Vitals] Respiratory Depth: %1 Current Weight: %2",
     _respiratorydepth,
     _currentWeight
+];
+private _currentVersion = QUOTE(VERSION_STR);
+diag_log format [
+    "[Version] Current Version: %1",
+    _currentVersion
 ];
 
 deleteVehicle _logic;

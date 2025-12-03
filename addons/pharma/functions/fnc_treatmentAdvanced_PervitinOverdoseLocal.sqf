@@ -31,7 +31,7 @@ switch (_randomNumber) do {
         [_patient, "TACHYCARDIA", 120, 1200, _hrAdjust] call EFUNC(vitals,addMedicationAdjustment);
         private _randomValue = [3, 4];
         private _randomRhythm = selectRandom _randomValue;
-        _patient setVariable [QEGVAR(circulation,cardiacArrestType), _randomRhythm];
+        _patient setVariable [QEGVAR(circulation,cardiacArrestType), _randomRhythm, true];
     };
     case 3: {
         private _bpAdjust = 20 + floor random ((35 - 20) + 1);
@@ -40,13 +40,13 @@ switch (_randomNumber) do {
         [_patient, "TACHYCARDIA", 120, 1200, _hrAdjust] call EFUNC(vitals,addMedicationAdjustment);
         private _randomValue = [3, 4];
         private _randomRhythm = selectRandom _randomValue;
-        _patient setVariable [QEGVAR(circulation,cardiacArrestType), _randomRhythm];
+        _patient setVariable [QEGVAR(circulation,cardiacArrestType), _randomRhythm, true];
     };
     case 4: {
         private _bpAdjust = 20 + floor random ((35 - 20) + 1);
         [_patient, _bpAdjust, _bpAdjust, "PervitinOverdose"] call EFUNC(circulation,updateBloodPressureChange);
         private _hrAdjust = 30 + floor random ((50 - 30) + 1);
         [_patient, "TACHYCARDIA", 120, 1200, _hrAdjust] call EFUNC(vitals,addMedicationAdjustment);
-        _patient setVariable [QEGVAR(circulation,cardiacArrestType), 0];
+        _patient setVariable [QEGVAR(circulation,cardiacArrestType), 0, true];
     };
 };

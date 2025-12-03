@@ -156,7 +156,6 @@ private _fnc_onConfirm = {
         [_unit] call EFUNC(breathing,handlePneumothoraxDeterioration);
     };
 
-    [_unit] call EFUNC(circulation,updateInternalBleeding);
 };
 
 _display displayAddEventHandler ["Unload", _fnc_onUnload];

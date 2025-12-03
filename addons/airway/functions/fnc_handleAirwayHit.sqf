@@ -23,8 +23,8 @@
 
 params ["_unit", "_allDamages"];
 (_allDamages select 0) params ["_engineDamage", "_bodyPart"]; // selection-specific
-
-if !(GVAR(AirwayEnable)) exitWith {
+if (_unit getVariable [QEGVAR(vitals,simpleMedical), false]) exitWith {};
+if !(GVAR(enable)) exitWith {
     TRACE_1("NotEnable",_bodyPart);
     _this
 };
@@ -52,7 +52,6 @@ switch (true) do {
                 private _occlusion = _unit getVariable [QGVAR(occlusion), [0, 0, 0]];
                 _occlusion set [_level, (((_occlusion select _level) + random 3) min 6)];
                 _unit setVariable [QGVAR(occlusion), _occlusion, true];
-                [_unit, _level] call FUNC(airwayPFH);
                 };
             if ((floor (random 100) < GVAR(airwayObstructionChance)) && (_engineDamage > (GVAR(airwayObstructionDamageThreshold + _obstructionChanceIncrease)))) then {
                 private _level = selectRandom [0, 1];
@@ -73,7 +72,6 @@ switch (true) do {
                 private _occlusion = _unit getVariable [QGVAR(occlusion), [0, 0, 0]];
                 _occlusion set [_level, (((_occlusion select _level) random 3) min 2)];
                 _unit setVariable [QGVAR(occlusion), _occlusion, true];
-                [_unit, _level] call FUNC(airwayPFH);
                 };
             if ((floor (random 100) < GVAR(airwayObstructionChance)) && (_engineDamage > (GVAR(airwayObstructionDamageThreshold + _obstructionChanceIncrease)))) then {
                 private _level = selectRandom [1, 2];

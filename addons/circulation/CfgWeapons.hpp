@@ -382,7 +382,7 @@ class CfgWeapons {
         picture = QPATHTOF(ui\BPCuff.paa);
         icon = "";
         class ItemInfo: CBA_MiscItem_ItemInfo {
-            mass = 8;
+            mass = 6;
         };
     };
     KAT_bloodSample_ITEM(KAT_bloodSample,1);

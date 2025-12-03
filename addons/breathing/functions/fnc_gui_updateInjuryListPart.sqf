@@ -22,11 +22,7 @@ params ["_ctrl", "_target", "_selectionN", "_entries"];
 
 if (GVAR(showCyanosis) && _selectionN in [0,4,6,8,10]) then {
     private _spO2 = 0;
-
-    if (alive _target) then {
-        _spO2 = GET_KAT_SPO2(_target);
-    };
-
+    _spO2 = GET_KAT_SPO2(_target);
     if (_spO2 <= GVAR(slightValue) || HAS_TOURNIQUET_APPLIED_ON(_target,_selectionN)) then {
         private _cyanosisArr = switch (true) do {
             case (HAS_TOURNIQUET_APPLIED_ON(_target,_selectionN));
@@ -62,17 +58,59 @@ if (_target getVariable [QGVAR(attachedVentGUI), false] && _selectionN isEqualTo
     _entries pushBack [LLSTRING(Vent_Display), [0.3, 0.8, 0.8, 1]];
 };
 
+if (((_target getVariable [QGVAR(chestTube), [0, 0]] select 0) > 0) && _selectionN isEqualTo 2) then {
+    _leftChest = (_target getVariable [QGVAR(chestTube), [0, 0]] select 0);
+    switch (_leftChest) do {
+        case 0.1: {
+            _entries pushBack [LLSTRING(Left_PartialChestTube_1), [0.3, 0.8, 0.8, 1]];
+        };
+        case 0.3: {
+            _entries pushBack [LLSTRING(Left_PartialChestTube_3), [0.3, 0.8, 0.8, 1]];
+        };
+        case 0.5: {
+            _entries pushBack [LLSTRING(Left_PartialChestTube_5), [0.3, 0.8, 0.8, 1]];
+        };
+        case 0.7: {
+            _entries pushBack [LLSTRING(Left_PartialChestTube_7), [0.3, 0.8, 0.8, 1]];
+        };
+        default {
+            _entries pushBack [LLSTRING(Left_ChestTube), [0.3, 0.8, 0.8, 1]];
+        };
+    };  
+};
+
+if (((_target getVariable [QGVAR(chestTube), [0, 0]] select 1) > 0) && _selectionN isEqualTo 2) then {
+    private _rightChest = (_target getVariable [QGVAR(chestTube), [0, 0]] select 1);
+    switch (_rightChest) do {
+        case 0.1: {
+            _entries pushBack [LLSTRING(Right_PartialChestTube_1), [0.3, 0.8, 0.8, 1]];
+        };
+        case 0.3: {
+            _entries pushBack [LLSTRING(Right_PartialChestTube_3), [0.3, 0.8, 0.8, 1]];
+        };
+        case 0.5: {
+            _entries pushBack [LLSTRING(Right_PartialChestTube_5), [0.3, 0.8, 0.8, 1]];
+        };
+        case 0.7: {
+            _entries pushBack [LLSTRING(Right_PartialChestTube_7), [0.3, 0.8, 0.8, 1]];
+        };
+        default {
+            _entries pushBack [LLSTRING(Right_ChestTube), [0.3, 0.8, 0.8, 1]];
+        };
+    };  
+};
+
 private _ptxEntry = [];
 
 private _pneumothoraxState = _target getVariable [QGVAR(pneumothorax), [0, 0]];
 private _tensionState = _target getVariable [QGVAR(tensionpneumothorax), [false, false]];
-private _hemoState = _target getVariable [QGVAR(hemopneumothorax), [false, false]];
+private _hemoState = _target getVariable [QGVAR(hemopneumothorax), [0, 0]];
 
 if (_selectionN isEqualTo 2) then {
     private _tensionhemothorax = false;
 
     if (!(GVAR(showPneumothorax_dupe))) then {
-        if ((_hemoState select 0 || _hemoState select 1) || (_tensionState select 0 || _tensionState select 1)) then {
+        if (((_hemoState select 0) > 0)|| ((_hemoState select 1) > 0) || (_tensionState select 0 || _tensionState select 1)) then {
             _tensionhemothorax = true;
         };
     };
@@ -94,7 +132,7 @@ if (_selectionN isEqualTo 2) then {
         };
 
         if (GVAR(TensionHemothoraxAlwaysVisible)) then {
-            if (_hemoState select _side) then {
+            if ((_hemoState select _side) > 0) then {
                 _ptxEntry pushBack [LLSTRING(hemopneumothorax_mm), [1,1,1,1]];
             };
 

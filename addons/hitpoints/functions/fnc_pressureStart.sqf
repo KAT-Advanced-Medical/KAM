@@ -45,7 +45,9 @@ if (_notInVehicle) then {
     loopPressure = true;
 };
 
-[{if (_notInVehicle) then {
+[{
+    params ["_medic", "_notInVehicle"];
+    if (_notInVehicle) then {
     [_medic, "Acts_TreatingWounded_loop", 1] call ACEFUNC(common,doAnimation);
     loopPressure = true;
 };}, [_medic, _notInVehicle], 3] call CBA_fnc_waitAndExecute;
@@ -88,6 +90,7 @@ if (_notInVehicle) then {
             private _appliedPressure = GET_APPLIEDPRESSURE(_patient);
             _appliedPressure set [_part, 0];
             _patient setVariable [VAR_APPLIEDPRESSURE, _appliedPressure, true];
+            _medic setVariable [QGVAR(pressureApplied), [-1, _patient], true];
             [_patient] call ACEFUNC(medical_status,updateWoundBloodLoss);
             TRACE_1("Pressure1",_appliedPressure);
             [LLSTRING(CancelPressure), 1.5, _medic] call ACEFUNC(common,displayTextStructured);
@@ -123,6 +126,7 @@ if (_notInVehicle) then {
         [_patient] call ACEFUNC(medical_status,updateWoundBloodLoss);
         _appliedPressure set [_part, _randomPressureAmmount];
         _patient setVariable [VAR_APPLIEDPRESSURE, _appliedPressure, true];
+        _medic setVariable [QGVAR(pressureApplied), [-1, _patient], true];
         TRACE_2("Pressure3",_appliedPressure,_randomPressureAmmount);
     }, 5, [_medic, _patient, _bodypart]] call CBA_fnc_addPerFrameHandler;
 }, [_medic, _patient, _bodypart], 0.2] call CBA_fnc_waitAndExecute;

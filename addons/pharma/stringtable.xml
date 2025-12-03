@@ -3852,28 +3852,16 @@
             <English>Upper Right Leg</English>
         </Key>
         <Key ID="STR_KAT_Pharma_Coag_Sense_Display">
-            <English>Coag-Sense</English>
-            <Japanese>Coag-Sense</Japanese>
-            <Spanish>Coag-Sense</Spanish>
-            <Portuguese>Medidor de Coagulação</Portuguese>
-            <Dutch>Coag-Sense</Dutch>
-            <French>Coag-Sense</French>
-            <Italian>Coag-Sense</Italian>
+            <English>Portable Blood Tester</English>
         </Key>
         <Key ID="STR_KAT_Pharma_Coag_Sense_Display_DESC">
-            <English>The Coag-Sense is a PT/INR monitoring system that can measure the efficiency of your blood clotting</English>
-            <Japanese>Coag-Senseは血液凝固の効率を測定できる PT/INR モニタリングシステムです。</Japanese>
-            <Spanish>El Coag-Sense es un sistema de monitorización PT/INR que puede medir la eficiencia de su coagulación sanguínea</Spanish>
-            <Portuguese>O Medidor de Coagulação é um sistema de monitoramento PT/INR que pode mensurar a eficiência da sua coagulação sanguínea</Portuguese>
-            <Dutch>De Coag-Sense is een PT-INR monitoringssysteem dat de effectiviteit van jouw wondstolling kan bepalen</Dutch>
-            <French>Le Coag-Sense est un système de surveillance PT/INR qui permet de mesurer l'efficacité de la coagulation sanguine</French>
-            <Italian>Il Coag-Sense è un sistema di monitoraggio PT/INR che può misurare l'efficienza della coagulazione del sangue.</Italian>
+            <English>The Portable Blood Tester is a blood monitoring system that can both measure the efficiency of your blood clotting and your ABG</English>
         </Key>
         <Key ID="STR_KAT_Pharma_Coag_Sense_Log">
-            <English>Coag-Sense concludes: Patient has an INR of %1</English>
+            <English>Blood Tester concludes: Patient has an INR of %1</English>
         </Key>
         <Key ID="STR_KAT_Pharma_CheckCoag_DisplayName">
-            <English>Measure PT/INR</English>
+            <English>Take Blood Sample</English>
             <Japanese>PT/INRを測定する</Japanese>
             <Spanish>Medir PT/INR</Spanish>
             <Portuguese>Medir PT/INR</Portuguese>
@@ -3913,12 +3901,19 @@
             <German>Anwendungszeit für Koffein</German>
             <Japanese>カフェインの所要時間</Japanese>
         </Key>
+        <Key ID="STR_KAT_Pharma_medLvl_CWMP">
+            <English>Allow using CWMP</English>
+            <French>Autoriser l'utilisation du CWMP</French>
+            <Italian>Consenti l'uso dei CWMP</Italian>
+            <German>Erlaube die Verwendung von CWMP</German>
+            <Japanese>戦闘傷病治療薬(CWMP)の許可</Japanese>
+        </Key>
         <Key ID="STR_KAT_Pharma_medLvl_Caffeine">
             <English>Allow using Caffeine</English>
             <French>Autoriser l'utilisation de la caféine</French>
-            <Japanese>カフェインの許可</Japanese>
-            <German>Erlaube die Verwendung von Koffein</German>
             <Italian>Consenti l'uso della caffeina</Italian>
+            <German>Erlaube die Verwendung von Koffein</German>
+            <Japanese>カフェインの許可</Japanese>
         </Key>
         <Key ID="STR_KAT_Pharma_CheckCoag_slightly_aboveINR">
             <English>Sligtly Above normal INR</English>
@@ -4213,7 +4208,13 @@
             <English>IV Complications</English>
         </Key>
         <Key ID="STR_KAT_Pharma_IVComplications_Desc">
-            <English>Enables failures to place IVs and negative effects when overpushing fluids</English>
+            <English>Enables negative effects when overpushing fluids</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_LimbIVComplications">
+            <English>Limb IV Complications</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_LimbIVComplications_Desc">
+            <English>Enables failure to place IVs</English>
         </Key>
         <Key ID="STR_KAT_Pharma_IVFailures">
             <English>IV Failure Rate</English>
@@ -4355,13 +4356,6 @@
         </Key>
         <Key ID="STR_KAT_Pharma_receivingNorepinephrineIVInfusionVolume">
             <English>Receiving Norepinephrine Infusion [%1ml]</English>
-        </Key>
-        <Key ID="STR_KAT_Pharma_medLvl_CWMP">
-            <English>Allow using CWMP</English>
-            <French>Autoriser l'utilisation du CWMP</French>
-            <Japanese>戦闘傷病治療薬(CWMP)の許可</Japanese>
-            <German>Erlaube die Verwendung von CWMP</German>
-            <Italian>Consenti l'uso dei CWMP</Italian>
         </Key>
         <Key ID="STR_KAT_Pharma_RemovingSalineIV_Progress">
             <English>Removing Saline IV bags</English>
@@ -5306,13 +5300,13 @@
             <English>5ml Syringe / 100mg Lidocaine</English>
         </Key>
         <Key ID="STR_KAT_Pharma_Push_lidocaine_10ml_10">
-            <English>Inject 40mg Lidocaine</English>
+            <English>Inject 40mg Lidocaine (SubQ)</English>
         </Key>
         <Key ID="STR_KAT_Pharma_Pushing_lidocaine_10ml_10">
-            <English>Injecting 40mg Lidocaine</English>
+            <English>Injecting 40mg Lidocaine (SubQ)</English>
         </Key>
         <Key ID="STR_KAT_Pharma_SyringeDisplay_lidocaine_10ml_10">
-            <English>10ml Syringe / 40mg Lidocaine</English>
+            <English>10ml Syringe / 40mg(SubQ) Lidocaine</English>
         </Key>
         <Key ID="STR_KAT_Pharma_Push_lorazepam_5ml_10">
             <English>Push 1mg Lorazepam</English>
@@ -5902,7 +5896,7 @@
         <Key ID="STR_KAT_Pharma_fentpatch_display">
             <English>Fentanyl Patch</English>
         </Key>
-        <Key ID="STR_KAT_Pharma_apply_fentpatch">
+        <Key ID="STR_KAT_Pharma_Apply_FentPatch">
             <English>Apply Fentanyl Patch</English>
         </Key>
         <Key ID="STR_KAT_Pharma_applying_fentpatch">
@@ -5934,6 +5928,78 @@
         </Key>
         <Key ID="STR_KAT_Pharma_fentpatchNearlyOut_MEDdisplay">
             <English>Fentanyl Patch (Depleted)</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_medLvl_PhenylephrineAuto">
+            <English>Med lvl req for Phenylephrine Autoinjector</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_treatmentTime_PhenylephrineAuto">
+            <English>Treatment time for Phenylephrine Autoinjector</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_SETTING_Coagulation_pressureInfluenceCoag">
+            <English>Pressure Affect Clots</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_SETTING_Coagulation_pressureInfluenceCoag_DESC">
+            <English>If enabled, applying pressure to that bodypart increases the chance of a clot forming</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_SETTING_Coagulation_chance_MinorWounds">
+            <English>Chance to clot Minor Wounds</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_SETTING_Coagulation_chance_MinorWounds_DESC">
+            <English>Base chance for a Minor wound to clot</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_SETTING_Coagulation_chance_MediumWounds">
+            <English>Chance to clot Medium Wounds</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_SETTING_Coagulation_chance_MediumWounds_DESC">
+            <English>Base chance for a Medium wound to clot</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_SETTING_Coagulation_chance_LargeWounds">
+            <English>Chance to clot Large Wounds</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_SETTING_Coagulation_chance_LargeWounds_DESC">
+            <English>Base chance for a Large wound to clot</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_ManualPressure_progress">
+            <English>Squeezing Fluid Bag</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_ManualPressure_displayName">
+            <English>Squeeze Fluid Bag</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_Pressure_already">
+            <English>Pressure Already Applied</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_Pressure_Ready">
+            <English>Started Squeezing Fluid Bag</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_Pressure_Cancel">
+            <English>Stopped Squeezing Fluid Bag</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_IVSqueezed">
+            <English>IV Bag Squeezed</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_IVPressureBag">
+            <English>Pressure Bag Applied</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_apply_pressurebag">
+            <English>Apply Pressure Bag</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_applying_pressurebag">
+            <English>Applying Pressure Bag</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_remove_pressurebag">
+            <English>Remove Pressure Bag</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_removing_pressurebag">
+            <English>Removing Pressure Bag</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_pressureBag_displayName">
+            <English>Pressure Bag</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_pressureBag_DescShort">
+            <English>Pressure Bag, increases flow rate of fluid bags when attached</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_ABG_Log">
+            <English>Results: %1</English>
         </Key>
     </Package>
 </Project>

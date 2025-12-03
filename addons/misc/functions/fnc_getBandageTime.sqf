@@ -69,15 +69,15 @@ TRACE_1("bandageTime1",_bandageTime);
 
 switch (true) do {
         case (_bandage in ["Israeli_Bandage"]): {
-            _bandageTime = _bandageTime * 1.25;
+            _bandageTime = _bandageTime * 0.9;
             TRACE_1("bandageTime4",_bandageTime);
         };
         case (_bandage in ["ETD"]): {
-            _bandageTime = _bandageTime * 1.50;
+            _bandageTime = _bandageTime;
             TRACE_1("bandageTime4",_bandageTime);
         };
         case (_bandage in ["Hemostatic_Gauze", "Compressed_Gauze", "fourByfour_Gauze", "Burn_Dressing"]): {
-            _bandageTime = _bandageTime * 0.8;
+            _bandageTime = _bandageTime * 0.75;
             TRACE_1("bandageTime4",_bandageTime);
         };
         case (_bandage == "Adhesive_Bandage"): {
@@ -102,6 +102,17 @@ TRACE_1("bandageTime2",_bandageTime);
 if (_medic == _patient) then {
     _bandageTime = _bandageTime * BANDAGE_TIME_MOD_SELF;
 };
+switch (true) do {
+        case (_bandage in ["Israeli_Bandage"]): {
+            _bandageTime = _bandageTime max 6;
+            TRACE_1("bandageTime4",_bandageTime);
+        };
+        case (_bandage in ["ETD"]): {
+            _bandageTime = _bandageTime max 12;
+            TRACE_1("bandageTime4",_bandageTime);
+        };
+        default {_bandageTime = _bandageTime};
+    };
 
 TRACE_2("bandageTime5",_bandageTime,_woundCount);
 // Nobody can bandage instantly

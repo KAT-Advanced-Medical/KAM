@@ -20,6 +20,15 @@
 ] call CBA_fnc_addSetting;
 
 [
+    QGVAR(treatmentModifiers),
+    "CHECKBOX",
+    [LLSTRING(SETTING_treatmentModifiers), LLSTRING(SETTING_treatmentModifiers_DESC)],
+    [CBA_SETTINGS_CAT, ELSTRING(GUI,SubCategory_Basic)],
+    [false],
+    true
+] call CBA_fnc_addSetting;
+
+[
     QGVAR(treatmentTimeDetachTourniquet),
     "SLIDER",
     [LLSTRING(SETTING_treatmentTimeDetachTourniquet)],

@@ -32,7 +32,7 @@ private _allBodyParts = ALL_BODY_PARTS; // micro-optimization here and above, do
 TRACE_1("Vehicle explosion handled, passing damage",_damageToApply);
 // hitpoints are randomized, more damage means more wounds in different body parts
 // use a hashmap so we only create one entry in _newDamages per body part
-for "_i" from 1 to (_damageToApply * 6) do {
+for "_i" from 1 to (_damageToApply * 12) do {
     _bodyPart = selectRandom _allBodyParts;
     _damageMap set [_bodyPart, (_damageMap getOrDefault [_bodyPart, 0]) + _damageToApply];
 };
@@ -42,5 +42,6 @@ private _newDamages = [];
     _newDamages pushBack [_damageMap get _x, _x, _damageToApply];
 } forEach (keys _damageMap); // micro-optimization again, two 'get's is still faster than iterating over a hashmap
 
-TRACE_2("Vehicle explosion handled, passing damage",_newDamages,_damageMap);
-[_unit, _newDamages, _typeOfDamage] //return
+TRACE_1("Vehicle explosion handled, passing damage",_newDamages);
+_this set [1, _newDamages];
+_this

@@ -23,7 +23,7 @@ private _playerdefaultWeight = _unit getVariable [QGVAR(currentWeight), _default
 
 if (isMultiplayer) then {
     private _id = parseNumber (getPlayerUID _unit select [15, 2]);
-       switch (true) do {
+        switch (true) do {
     case (0  <= _id && _id <= 2):   { _defaultWeight = 92 };
     case (3  <= _id && _id <= 4):   { _defaultWeight = 69 };
     case (5  <= _id && _id <= 6):   { _defaultWeight = 87 };

@@ -47,6 +47,7 @@ PREP(slingArmband);
 PREP(stitchWound);
 PREP(stopCarryingPrompt);
 PREP(stringToArray);
+PREP(surgicalKitProgress);
 PREP(surgicalKitProgressFullBody);
 PREP(switchMagItems);
 PREP(treatment);

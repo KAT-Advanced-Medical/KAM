@@ -15,7 +15,7 @@
  * Public: No
  */
 params ["_patient"];
-private _hrAdjust = -40 + floor random ((-40 - -40) + 1);
+private _hrAdjust = -20 + floor random ((-20 - -20) + 1);
 [_patient, "LidocaineOD", 30, 1200, _hrAdjust, 0, 0, 0, 0.2] call EFUNC(vitals,addMedicationAdjustment);
 [{
     params ["_patient"];
@@ -32,7 +32,6 @@ private _hrAdjust = -40 + floor random ((-40 - -40) + 1);
                     [{
                         params ["_args", "_idPFH"];
                         _args params ["_patient"];
-                        private _ht = _patient getVariable [QEGVAR(circulation,ht), []];
                         if (_patient getVariable [QEGVAR(circulation,cardiacArrestType), 0] == 0) then {
                                 [QACEGVAR(medical,FatalVitals), _patient] call CBA_fnc_localEvent;
                         };
@@ -41,7 +40,7 @@ private _hrAdjust = -40 + floor random ((-40 - -40) + 1);
                     [_idPFH] call CBA_fnc_removePerFrameHandler;
                 };
                 private _medications = _patient getVariable [QACEGVAR(medical,medications), []];
-                private _depression = _unit getVariable [QEGVAR(pharma,opioidDepression)] + 0.08;
-                _patient setVariable [QEGVAR(pharma,opioidDepression), _depression];
+                private _depression = (_patient getVariable [QEGVAR(pharma,opioidDepression), 0]) + 0.08;
+                _patient setVariable [QEGVAR(pharma,opioidDepression), _depression, true];
         }, 30, [_patient,0]] call CBA_fnc_addPerFrameHandler;
 }, [_patient], 30] call CBA_fnc_waitAndExecute;

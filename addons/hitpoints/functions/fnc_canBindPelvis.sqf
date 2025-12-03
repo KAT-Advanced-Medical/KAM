@@ -21,7 +21,7 @@
 params ["", "_patient"];
 if (_patient call ACEFUNC(common,isSwimming)) exitWith {false};
 private _canBindPelvis = false;
-private _pelvicFracture = _unit getVariable [QGVAR(pelvicFracture), 0];
+private _pelvicFracture = _patient getVariable [QGVAR(pelvicFracture), 0];
 if (_pelvicFracture > 0) then {
     _canBindPelvis = true;
 };

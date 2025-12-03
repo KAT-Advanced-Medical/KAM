@@ -7,7 +7,7 @@ class ACE_Medical_Treatment_Actions {
         condition = QUOTE(GVAR(hypothermiaActive));
         treatmentLocations = 0;
         treatmentTime = 5;
-        allowedSelections[] = {"LeftArm","RightArm","Body","LeftLeg","RightLeg", "Chest", "UpperLeftArm", "UpperRightArm", "UpperLeftLeg", "UpperRightLeg"};
+        allowedSelections[] = {"LeftArm", "RightArm", "LeftLeg","RightLeg", "Body"};
         items[] = {"kat_handWarmer"};
         callbackSuccess = QFUNC(useHandWarmer);
     };

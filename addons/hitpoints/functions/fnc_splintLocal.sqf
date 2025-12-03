@@ -26,18 +26,18 @@ private _fractures = GET_FRACTURES(_patient);
 TRACE_2("handleSplintFalloff1",_partIndex,_fractures);
 _fractures set [_partIndex, -1];
 _patient setVariable [VAR_FRACTURES, _fractures, true];
-
+private _delay = random [60, 120, 180];
 [{
     params ["_patient", "_partIndex"];
     private _fractures = GET_FRACTURES(_patient);
     TRACE_3("handleSplintFalloff2",_patient,_partIndex,_fractures);
     if (_fractures select _partIndex == -1) then {
         _fractures set [_partIndex, 1];
-        _patient setVariable [ace_medical_fractures, _fractures, true];
+        _patient setVariable [VAR_FRACTURES, _fractures, true];
         [_patient] call EFUNC(misc,updateDamageEffects);
         [LSTRING(SplintFellOff), 1.5, _patient] call ACEFUNC(common,displayTextStructured);
     }
-}, [_patient, _partIndex], 180] call CBA_fnc_waitAndExecute;
+}, [_patient, _partIndex], _delay] call CBA_fnc_waitAndExecute;
 
 TRACE_2("splintFalloff",_patient,_bodyPart);
 

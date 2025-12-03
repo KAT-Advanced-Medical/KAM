@@ -81,6 +81,14 @@ private _surgicalBlock = GET_SURGICAL_TOURNIQUETS(_target);
                     _ctrlBone ctrlShow false;
                 };
             };
+            case -3: {
+                if (ACEGVAR(medical,fractures) in [2, 3]) then {
+                    _ctrlBone ctrlShow true;
+                    _ctrlBone ctrlSetTextColor [1, 0, 1, 1];
+                } else {
+                    _ctrlBone ctrlShow false;
+                };
+            };
         };
     };
 

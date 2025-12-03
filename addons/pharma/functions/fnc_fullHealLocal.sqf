@@ -54,7 +54,8 @@ _patient setVariable [QGVAR(IVincomingFlowAmount), [0,0,0,0,0,0,0,0,0,0,0,0], tr
 _patient setVariable [QGVAR(IVpfh), [0,0,0,0,0,0,0,0,0,0,0,0], true];
 _patient setVariable [QGVAR(active), false, true];
 _patient setVariable [QGVAR(IVPharma_PFH), nil, true];
-
+_patient setVariable [QGVAR(pressureBag), [0,0,0,0,0,0,0,0,0,0,0,0], true];
+_patient setVariable [QGVAR(pressureIVApplied), false, true];
 _patient setVariable [QGVAR(IVmenuActive), false, true];
 
 _patient setVariable [QGVAR(externalPh), 0, true];

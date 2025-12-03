@@ -54,7 +54,7 @@ class CfgWeapons {
         descriptionShort = CSTRING(IO_DescShort);
         ACE_isMedicalItem = 1;
         class ItemInfo: CBA_MiscItem_ItemInfo {
-            mass = 1.5;
+            mass = 1;
         };
     };
     class kat_EJV: ACE_ItemCore {
@@ -65,8 +65,19 @@ class CfgWeapons {
         descriptionShort = CSTRING(EJV_DescShort);
         ACE_isMedicalItem = 1;
         class ItemInfo: CBA_MiscItem_ItemInfo {
-            mass = 1;
+            mass = 2;
         };
+    };
+    class kat_pressureBag: ACE_ItemCore {
+        scope = 2;
+        displayName = CSTRING(pressureBag_displayName);
+        picture = QPATHTOF(ui\pressureBag.paa);
+         model = "\A3\Structures_F_EPA\Items\Medical\Painkillers_F.p3d";
+        descriptionShort = CSTRING(pressureBag_DescShort);
+        ACE_isMedicalItem = 1;
+        class ItemInfo: CBA_MiscItem_ItemInfo {
+            mass = 1;
+        }; 
     };
     class kat_10ml_syringe: ACE_ItemCore {
         scope = 2;
@@ -109,7 +120,7 @@ class CfgWeapons {
         descriptionShort = CSTRING(EACA_DescShort);
         ACE_isMedicalItem = 1;
         class ItemInfo: CBA_MiscItem_ItemInfo {
-            mass = 0.2;
+            mass = 0.5;
         };
     };
     class kat_TXA: ACE_ItemCore {
@@ -396,12 +407,12 @@ class CfgWeapons {
         descriptionShort = CSTRING(Coag_Sense_Display_DESC);
         ACE_isMedicalItem = 1;
         class ItemInfo: CBA_MiscItem_ItemInfo {
-            mass = 1;
+            mass = 15;
         };
     };
     class kat_fentPatch: ACE_ItemCore {
         scope = 2;
-        displayName = CSTRING(FentPatch_Display);
+        displayName = CSTRING(fentpatch_MEDdisplay);
         picture = QPATHTOF(ui\icon_fentPatch.paa);
         model = "\A3\Structures_F_EPA\Items\Medical\Painkillers_F.p3d";
         descriptionShort = "";

@@ -1,10 +1,8 @@
 class RscText;
 class RscStructuredText;
 class RscButton;
-class RscPicture;
 class RscListBox;
 class RscActivePicture;
-class RscButtonMenu;
 class RscControlsGroup;
 class RscControlsGroupNoScrollbars;
 class RscCombo;
@@ -117,7 +115,7 @@ class ACEGVAR(medical_gui,BodyImage): RscControlsGroupNoScrollbars {
             colorText[] = {1, 1, 1, 1};
         };
         class Torso_WoundPack_Vacuum: Torso_ChestSeal {
-            idc = IDC_BODY_TORSO_WOUNDPACK_VACUUM  ;
+            idc = IDC_BODY_TORSO_WOUNDPACK_VACUUM;
             text = QPATHTOF(data\body_image\torso_woundPack_vacuum.paa);
             colorText[] = {1, 1, 1, 1};
         };
@@ -932,7 +930,7 @@ class ACE_Medical_Menu {
             colorBackgroundActive[] = {1, 1, 1, 0.4};
             colorBackgroundDisabled[] = {0, 0, 0, 0};
             colorBorder[] = {0,0,0,0};
-            onButtonClick = QUOTE([] call FUNC(openSyringeMenu));
+            onButtonClick = QUOTE([false] call FUNC(openSyringeMenu));
             class Attributes {
                 align = "Right";
                 valign = "bottom";

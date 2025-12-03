@@ -23,7 +23,7 @@ params ["_medic", "_patient", "_bodyPart", "_number"];
 private _part = ALL_BODY_PARTS find toLower _bodyPart;
 private _activeFracture = GET_FRACTURES(_patient);
 
-if (_number == 5 && (_activeFracture select _part) > 0) exitWith {true};
+if (_number == 5 && (_activeFracture select _part) != 0) exitWith {true};
 
 private _fractureArray = _patient getVariable [QGVAR(fractures), [0,0,0,0,0,0,0,0,0,0,0,0]];
 private _liveFracture = _fractureArray select _part;

@@ -1,3 +1,4 @@
+#define DEBUG_MODE_FULL
 #include "..\script_component.hpp"
 /*
  * Author: Blue
@@ -37,29 +38,48 @@ if (_selectionN isEqualTo 3) then {
 
 _target setVariable [QGVAR(gui_updateInjuryList_eviscEntries), _eviscEntry];
 
-private _wounds = GET_OPEN_WOUNDS(_target);
-private _bodyPart = ALL_BODY_PARTS select _selectionN;
-private _partWounds = _wounds getOrDefault [_bodyPart, []];
-private _internalBleedAmount = 0;
+private _jointArray = GET_JOINTS(_target);
+_hasInjury = false;
+switch (_selectionN) do {
+    case 4: {
+        private _arr = _jointArray select 0;
+        _hasInjury = ((_arr select 0) > 0) || ((_arr select 1) > 0);
+    };
+    case 5: {
+        private _arr = _jointArray select 0;
+        _hasInjury = ((_arr select 1) > 0) || ((_arr select 2) > 0);
+    };
+    case 6: {
+        private _arr = _jointArray select 1;
+        _hasInjury = ((_arr select 0) > 0) || ((_arr select 1) > 0);
+    };
+    case 7: {
+        private _arr = _jointArray select 1;
+        _hasInjury = ((_arr select 1) > 0) || ((_arr select 2) > 0);
+    };
+    case 8: {
+        private _arr = _jointArray select 2;
+        _hasInjury = ((_arr select 0) > 0) || ((_arr select 1) > 0);
+    };
+    case 9: {
+        private _arr = _jointArray select 2;
+        _hasInjury = ((_arr select 1) > 0) || ((_arr select 2) > 0);
+    };
+    case 10: {
+        private _arr = _jointArray select 3;
+        _hasInjury = ((_arr select 0) > 0) || ((_arr select 1) > 0);
+    };
+    case 11: {
+        private _arr = _jointArray select 3;
+        _hasInjury = ((_arr select 1) > 0) || ((_arr select 2) > 0);
+    };
+    default {};
+};
+private _pressureArray = GET_APPLIEDPRESSURE(_target);
+if ((_pressureArray select _selectionN) > 0) then {
+    _entries pushBack [LLSTRING(pressure_GUI), [0.1, 1, 1, 1]];
+};
 
-{
-    _x params ["_woundClassID", "_amountOf"];
-    private _classIndex = _woundClassID / 10;
-    private _category   = _woundClassID % 10;
-    private _className = ACEGVAR(medical_damage,woundClassNames) select _classIndex;
-    TRACE_1("checkLimb4",_className);
-    if (_className isEqualTo "InternalBleeding") then {
-        _internalBleedAmount = _internalBleedAmount + _category;
-    };
-} forEach _partWounds;
-private _sizeLabel = "";
-TRACE_1("checkLimb2",_internalBleedAmount);
-if (_internalBleedAmount > 0) then {
-    _sizeLabel = switch (true) do {
-        case (_internalBleedAmount < 1): { localize LSTRING(InternalBleeding_Minor) };
-        case (_internalBleedAmount < 5): { localize LSTRING(InternalBleeding_Medium) };
-        case (_internalBleedAmount < 10): { localize LSTRING(InternalBleeding_Large) };
-        default {};
-    };
-    _entries pushBack [_sizeLabel, [0.8, 0.76, 0.9, 1]];
+if (_hasInjury) then {
+    _entries pushBack [LLSTRING(jointInjuryGUI), [1, 0, 0, 1]];
 };

@@ -20,13 +20,10 @@
 
 params ["_target"];
 
-// Check if the data was already created
-private _dogTagData = _target getVariable QACEGVAR(dogtags,dogtagData);
-if (!isNil "_dogTagData") exitWith {_dogTagData};
-
 // Create dog tag data once for the unit: nickname, code (eg. 135-13-900) and blood type
 private _targetName = [_target, false, true] call ACEFUNC(common,getName);
 private _targetBlood = _target call EFUNC(circulation,bloodType);
+private _targetWeight = _target getVariable [QEGVAR(vitals,currentWeight), 80];
 
 switch (_targetBlood) do {
     case "O": {_targetBlood = "0+"};
@@ -42,7 +39,7 @@ switch (_targetBlood) do {
 private _dogTagData = [
     _targetName,
     _targetBlood, //EDIT by Katalam switch name to target objective //EDIT 2 changed called function, old: ace_dogtags_fnc_bloodType //EDIT 3 working solution for added rhesus factor
-    _target getVariable [QEGVAR(vitals,defaultWeight), 80]
+    _targetWeight
 ];
 // Store it
 _target setVariable [QACEGVAR(dogtags,dogtagData), _dogTagData, true];

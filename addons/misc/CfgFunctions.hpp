@@ -51,7 +51,9 @@ class CfgFunctions {
             class getStitchTime {
                 file = QPATHTOF(functions\fnc_getStitchTime.sqf);
             };
-
+            class surgicalKitProgress {
+                file = QPATHTOF(functions\fnc_surgicalKitProgress.sqf);
+            };
         };
     };
     class ace_medical {

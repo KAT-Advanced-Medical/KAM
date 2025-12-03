@@ -32,6 +32,7 @@ if (_patient getVariable [QACEGVAR(medical,CPR_provider), objNull] != objNull) t
 
 _patient setVariable [QGVAR(heartRestart), true, true];
 _patient setVariable [QGVAR(RhythmAnalyzed), false, true];
+[QGVAR(AEDused), _patient] call CBA_fnc_localEvent;
 
 [{
     params ["_patient"];

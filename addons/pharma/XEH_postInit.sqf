@@ -57,14 +57,14 @@
 [QGVAR(pervitinOverdoseLocal), LINKFUNC(treatmentAdvanced_PervitinOverdoseLocal)] call CBA_fnc_addEventHandler;
 [QGVAR(txaOverdoseLocal), LINKFUNC(treatmentAdvanced_TXAOverdoseLocal)] call CBA_fnc_addEventHandler;
 
+[QGVAR(applyPressureBag), LINKFUNC(treatmentAdvanced_applyPressureBagLocal)] call CBA_fnc_addEventHandler;
+[QGVAR(removePressureBag), LINKFUNC(treatmentAdvanced_removePressureBagLocal)] call CBA_fnc_addEventHandler;
+
 [QEGVAR(misc,handleRespawn), LINKFUNC(handleRespawn)] call CBA_fnc_addEventHandler;
 
 [QACEGVAR(medical_gui,updateInjuryListPart), LINKFUNC(gui_updateInjuryListPart)] call CBA_fnc_addEventHandler;
 [QACEGVAR(medical_gui,updateBodyImage), LINKFUNC(gui_updateBodyImage)] call CBA_fnc_addEventHandler;
 [QACEGVAR(medical_treatment,fullHealLocalMod), LINKFUNC(fullHealLocal)] call CBA_fnc_addEventHandler;
-[QACEGVAR(medical_status,getBloodLoss), {
-    _this set [1, _this#1 * (_this#0 getVariable [QGVAR(alphaAction), 1])];
-}] call CBA_fnc_addEventHandler;
 
 ["ace_treatmentSucceded", {
     params ["_medic", "_patient", "_bodyPart", "_classname"];

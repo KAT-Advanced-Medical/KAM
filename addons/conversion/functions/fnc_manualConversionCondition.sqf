@@ -18,6 +18,7 @@
 params ["_medic", "_patient"];
 
 if !(IS_UNCONSCIOUS(_patient)) exitWith { false };
+if !(isPlayer _patient) exitWith { false };
 if !(GVAR(allowManualConversion)) exitWith { false };
-if (_patient getVariable [QGVAR(currentConverted), false]) exitWith { false };
+if (_patient getVariable [QGVAR(currentlyConverted), false]) exitWith { false };
 true

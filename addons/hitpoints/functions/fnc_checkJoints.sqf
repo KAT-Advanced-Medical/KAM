@@ -22,15 +22,17 @@ params ["_medic", "_patient", "_bodyPart"];
 TRACE_1("checkLimb1",_bodyPart);
 private _partIndex = ALL_BODY_PARTS find _bodyPart;
 if (_partindex == 3) then {
-    private _pelvicFracture = _unit getVariable [QGVAR(pelvicFracture), 0];
+    private _pelvicFracture = _patient getVariable [QGVAR(pelvicFracture), 0];
     _typeLabel = switch (true) do {
         case (_pelvicFracture == -1): { LSTRING(stabilizedPelvicFracture_log) };
         case (_pelvicFracture == 0): { LSTRING(noPelvicFracture_log) };
         case (_pelvicFracture == 1): { LSTRING(pelvicFracture_log) };
         default {""};
     };
-    [_patient, "quick_view", _typeLabel] call EFUNC(circulation,removeLog);
-    [_patient, "quick_view", _typeLabel, [[_medic] call ACEFUNC(common,getName)]] call ACEFUNC(medical_treatment,addToLog);
+    if (_typeLabel != "") then {
+        [_patient, "quick_view", _typeLabel] call EFUNC(circulation,removeLog);
+        [_patient, "quick_view", _typeLabel, [[_medic] call ACEFUNC(common,getName)]] call ACEFUNC(medical_treatment,addToLog);
+    };
 } else {
 private _jointArray = GET_JOINTS(_patient);
 private _jointGroupIndex = switch (true) do {
@@ -82,12 +84,12 @@ private _limbJointStatus = _jointArray select _jointGroupIndex;
         case ((_jointGroupIndex in [2, 3]) && (_forEachIndex == 2)): { localize LSTRING(JointInjury_Ankle) };
         default {};
     };
-    if (_typeLabel != "") then {
+    if ((_typeLabel != "") && (GVAR(JointChance) > 0)) then {
         [_patient, "quick_view", LSTRING(JointLog)] call EFUNC(circulation,removeLog);
         [_patient, "quick_view", LSTRING(JointLog), [[_medic] call ACEFUNC(common,getName), _typeLabel, _joint, _limbLabel]] call ACEFUNC(medical_treatment,addToLog);
     };
-} forEach _limbJointStatus;
-}
+    } forEach _limbJointStatus;
+};
 
 
 

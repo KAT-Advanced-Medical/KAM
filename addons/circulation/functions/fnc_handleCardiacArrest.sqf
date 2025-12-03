@@ -51,6 +51,9 @@ if (_initial) then {
         } else {
             _cardiacArrestType = 3;
         };
+        if (floor (random 100) < 20) then {
+            _unit setVariable [QGVAR(refractoryCA), true, true];
+        };
     };
 
     if ((count(_unit getVariable [QGVAR(ht), []])) != 0) then {
@@ -119,6 +122,9 @@ if (GVAR(AdvRhythm_canDeteriorate)) then {
                     if (_unit getVariable [QGVAR(cardiacArrestType), 0] isEqualTo 4) then {
                         _unit setVariable [QGVAR(cardiacArrestType), 3, true];
                         [_unit, nil, false] call FUNC(handleCardiacArrest);
+                        if (floor (random 100) < 10) then {
+                            _unit setVariable [QGVAR(refractoryCA), true, true];
+                        };
                     };
                 } else {
                     [_unit, nil, false] call FUNC(handleCardiacArrest);

@@ -35,15 +35,15 @@ private _occludedFlushed = false;
 
 [_patient, "activity", LLSTRING(flush_log), [[_medic] call ACEFUNC(common,getName)]] call ACEFUNC(medical_treatment,addToLog);
 
-if (HAS_TOURNIQUET_APPLIED_ON(_patient,_partIndex)) exitWith {};
+if ([_patient, _partIndex] call FUNC(occlusionCheck)) exitWith {};
 
 {
-    _x params ["_bodyPartN", "_medication", "_unit"];
+    _x params ["_bodyPartN", "_medication", "_patient"];
 
-        private _isStillOccluded = [_unit, _bodyPartN] call FUNC(occlusionCheck);
+        private _isStillOccluded = [_patient, _bodyPartN] call FUNC(occlusionCheck);
         TRACE_1("delayed medication call after tourniquet removal",_isStillOccluded);
     if (!_isStillOccluded) then {
-        [QGVAR(medicationLocal), [_patient, _bodyPart, _medication], _patient] call CBA_fnc_targetEvent;
+        [QGVAR(medicationLocal), [_patient, _bodyPart, _medication, true], _patient] call CBA_fnc_targetEvent;
 
         _occludedMedications set [_forEachIndex, []];
         _occludedFlushed = true;

@@ -47,20 +47,20 @@ if (_hasPatch) then {
     if ((_fentPatchArray select _selectionN > 0)) then {
         switch (true) do {
         case (_fentPatchArray select _selectionN > 0.8): {
-            _entries pushBack [LLSTRING(FentPatchFull_MEDDisplay), [1, 1, 1, 1]];
+            _entries pushBack [LLSTRING(FentPatchFull_MEDDisplay), [0.73, 0.24, 0.11, 1]];
         };
         case (_fentPatchArray select _selectionN > 0.5): {
-            _entries pushBack [LLSTRING(FentPatchPartial_MEDDisplay), [1, 1, 1, 1]];
+            _entries pushBack [LLSTRING(FentPatchPartial_MEDDisplay), [0.73, 0.24, 0.11, 1]];
         };
         case (_fentPatchArray select _selectionN > 0.3): {
-            _entries pushBack [LLSTRING(FentPatchWeak_MEDDisplay), [1, 1, 1, 1]];
+            _entries pushBack [LLSTRING(FentPatchWeak_MEDDisplay), [0.73, 0.24, 0.11, 1]];
         };
         case (_fentPatchArray select _selectionN > 0.1): {
-            _entries pushBack [LLSTRING(FentPatchWeak_MEDDisplay), [1, 1, 1, 1]];
+            _entries pushBack [LLSTRING(FentPatchWeak_MEDDisplay), [0.73, 0.24, 0.11, 1]];
         };
         };
     } else {
-        _entries pushBack [LLSTRING(FentPatch_MEDDisplay), [1, 1, 1, 1]];
+        _entries pushBack [LLSTRING(FentPatch_MEDDisplay), [0.73, 0.24, 0.11, 1]];
     };
 };
 

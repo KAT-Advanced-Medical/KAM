@@ -61,19 +61,32 @@ if (random 100 < GVAR(closedReductionFailChance)) exitWith {
     private _output = LLSTRING(fracture_fail);
     [_output, 1.5, _medic] call ACEFUNC(common,displayTextStructured);
 };
+    private _delay = (random [120, 200, 240]) * GVAR(penaltyMult);
+    if (_delay > 15) then {
+        _activeFracture set [_part, -3];
+        _fractureArray set [_part, 0];
+        [{
+            params ["_patient", "_activeFracture", "_part"];
+            _activeFracture set [_part, 0];
+            _patient setVariable [VAR_FRACTURES, _activeFracture, true];
+            [_patient] call EFUNC(misc,updateDamageEffects);
+        }, [_patient, _activeFracture, _part], _delay] call CBA_fnc_waitAndExecute;
+        _patient setVariable [QGVAR(fractures), _fractureArray, true];
+        _patient setVariable [VAR_FRACTURES, _activeFracture, true];
+        [_patient, "blockSprint", QACEGVAR(medical,fracture), false] call ACEFUNC(common,statusEffect_set);
+        [_patient] call EFUNC(misc,updateDamageEffects);
 
-_activeFracture set [_part, -3];
-private _delay = (random [120, 200, 240]);
-[{
-    params ["_patient", "_activeFracture"];
-    _activeFracture set [_part, 0];
-    [_patient] call EFUNC(misc,updateDamageEffects);
-    _patient setVariable [VAR_FRACTURES, _activeFracture, true];
-}, [_patient, _activeFracture], _delay] call CBA_fnc_waitAndExecute;
-_fractureArray set [_part, 0];
+        [_patient, true] call ACEFUNC(dragging,setCarryable);
+        [_patient, true] call ACEFUNC(dragging,setDraggable);
 
-_patient setVariable [QGVAR(fractures), _fractureArray, true];
-_patient setVariable [VAR_FRACTURES, _activeFracture, true];
-_patient setVariable [QACEGVAR(medical,isLimping), false, true];
-[_patient, "blockSprint", QACEGVAR(medical,fracture), false] call ACEFUNC(common,statusEffect_set);
-[_patient] call ACEFUNC(medical_engine,updateDamageEffects);
+    } else {
+        _activeFracture set [_part, 0];
+        _fractureArray set [_part, 0];
+        _patient setVariable [QGVAR(fractures), _fractureArray, true];
+        _patient setVariable [VAR_FRACTURES, _activeFracture, true];
+        [_patient, "blockSprint", QACEGVAR(medical,fracture), false] call ACEFUNC(common,statusEffect_set);
+        [_patient] call EFUNC(misc,updateDamageEffects);
+
+        [_patient, true] call ACEFUNC(dragging,setCarryable);
+        [_patient, true] call ACEFUNC(dragging,setDraggable);
+    };

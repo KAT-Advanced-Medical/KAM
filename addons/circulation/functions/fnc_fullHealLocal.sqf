@@ -23,6 +23,7 @@ _patient setVariable [QGVAR(CPR_time), 0, true];
 _patient setVariable [QGVAR(activeCPR), false, true];
 _patient setVariable [QGVAR(heartRestart), false, true];
 _patient setVariable [QGVAR(cardiacArrestType), 0, true];
+_patient setVariable [QGVAR(refractoryCA), false, true];
 _patient setVariable [QGVAR(AED_X_VitalsStatus), "", true];
 _patient setVariable [VAR_BLOODPRESSURE_CHANGE, nil, true];
 
@@ -33,10 +34,11 @@ _patient setVariable [QGVAR(OxygenationPeriod), 0, true];
 
 _patient setVariable [QGVAR(tourniquetTime), [0,0,0,0,0,0,0,0,0,0,0,0]];
 _patient setVariable [QGVAR(defaultHeartRate), [_patient] call FUNC(generateDefaultHeartRate), true];
+_patient setVariable [QGVAR(bloodtype), [_patient, _patient, true] call FUNC(generateBloodType), true];
 
 // PaCO2, PaO2, O2 Sat, HCO3, pH, ETCO2
 _patient setVariable [QGVAR(bloodGas), DEFAULT_BLOOD_GAS, true];
-_patient setVariable [QGVAR(testedBloodGas), [0,0,0,0,0,0,0,0,0,0,0,0], true];
+_patient setVariable [QGVAR(testedBloodGas), [0,0,0,0,0,0], true];
 
 _patient setVariable [QGVAR(ABGmenuShow), false];
 
@@ -45,5 +47,6 @@ _patient setVariable [QGVAR(effusion), 0, true];
 
 _patient setVariable [QGVAR(attachedLucas), false, true];
 _patient setVariable [QGVAR(attachedLucasState), false, true];
-[_patient, true] call FUNC(updateInternalBleeding);
+_patient setVariable [QGVAR(heartRestart), false, true];
+_patient setVariable [QGVAR(AEDEffectiveness), 1, true];
 

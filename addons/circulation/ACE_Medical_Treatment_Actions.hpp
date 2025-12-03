@@ -92,15 +92,6 @@ class ACE_Medical_Treatment_Actions {
         animationPatientUnconscious = "AinjPpneMstpSnonWrflDnon_rolltoback";
         animationPatientUnconsciousExcludeOn[] = {"ainjppnemstpsnonwrfldnon", "kat_recoveryposition"};
     };
-    class DrawArterial: KAT_DrawBlood250 {
-        displayName = CSTRING(DrawArterial_Action_Use);
-        displayNameProgress = CSTRING(DrawBlood_Action_Progress);
-        treatmentTime = 10;
-        condition = QUOTE(GVAR(abgEnable));
-        callbackSuccess = QFUNC(drawArterial);
-        items[] = {"kat_IV_16"};
-    };
-
     #include "Blood_Medical.hpp"
 
     class AnalyzeRhythm: CheckPulse {
@@ -318,7 +309,7 @@ class ACE_Medical_Treatment_Actions {
         animationMedic = "";
         animationMedicProne = "";
         litter[] = {};
-        icon = QPATHTOF(ui\BVM_ui.paa);
+        icon = QPATHTOEF(breathing,ui\BVM_ui.paa);
     };
     class DetachLucas: AttachLucas {
         displayName = CSTRING(DetachLucas);

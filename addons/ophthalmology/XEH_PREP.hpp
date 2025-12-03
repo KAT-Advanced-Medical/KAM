@@ -1,4 +1,5 @@
 PREP(eyeShieldCondition);
+PREP(eyeShieldRemoveCondition);
 PREP(fullHealLocal);
 PREP(gui_updateInjuryListPart);
 PREP(handleDustInjury);
@@ -6,4 +7,7 @@ PREP(handleExplosion);
 PREP(handleRespawn);
 PREP(init);
 PREP(treatmentAdvanced_eyeShield);
+PREP(treatmentAdvanced_eyeShieldLocal);
+PREP(treatmentAdvanced_eyeShieldRemove);
+PREP(treatmentAdvanced_eyeShieldRemoveLocal);
 PREP(treatmentAdvanced_eyewash);

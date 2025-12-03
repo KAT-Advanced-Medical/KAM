@@ -26,7 +26,7 @@ params ["_medic", "_patient", "_bodyPart", "_classname", "_extraArgs"];
 if (uiNamespace getVariable [QACEGVAR(interact_menu,cursorMenuOpened), false]) exitWith {
     [ACEFUNC(medical_treatment,treatment), _this] call CBA_fnc_execNextFrame;
 };
-
+private _isInZeus = !isNull findDisplay 312;
 if !(call ACEFUNC(medical_treatment,canTreat)) exitWith {false};
 
 private _config = configFile >> "ace_medical_treatment_actions" >> _classname;
@@ -45,7 +45,26 @@ private _treatmentTime = if (isText (_config >> "treatmentTime")) then {
 };
 
 if (_treatmentTime == 0) exitWith {false};
+if (_isInZeus) then {
+    _treatmentTime = 1;
+};
+if (GVAR(treatmentModifiers)) then {
+    private _pain = GET_PAIN_PERCEIVED(_medic);
+    private _treatMult = linearConversion [0, 1, _pain, 1, 2];
+    _treatmentTime = _treatmentTime * _treatMult;
+};
 
+if ((_medic getVariable [QEGVAR(airway,overstretching), false]) && (GVAR(treatmentModifiers))) then {
+    _treatmentTime = _treatmentTime + 3;
+};
+
+if ((_medic getVariable [QEGVAR(pharma,pressureIVApplied), false]) && (GVAR(treatmentModifiers))) then {
+    _treatmentTime = _treatmentTime + 3;
+};
+
+if (((selectMax ((_medic getVariable [VAR_FRACTURES, DEFAULT_FRACTURE_VALUES]) select [4, 4])) != 0) && (GVAR(treatmentModifiers))) then {
+    _treatmentTime = _treatmentTime * 1.25;
+};
 // Consume one of the treatment items if needed
 // Store item user so that used item can be returned on failure
 private _userAndItem = if (GET_NUMBER_ENTRY(_config >> "consumeItem") == 1) then {
@@ -74,8 +93,6 @@ if (alive _patient) then {
 //Old Ace Ending here
 
 _userAndItem params ["_itemUser", "_usedItem", "_createLitter"];
-
-private _isInZeus = !isNull findDisplay 312;
 
 if (_medic isNotEqualTo player || {!_isInZeus}) then {
     // Get treatment animation for the medic
@@ -158,7 +175,7 @@ if (_medic isNotEqualTo player || {!_isInZeus}) then {
 
     // Play a random treatment sound globally if defined
     // Don't attempt to play if sounds array is empty
-    if (isArray (_config >> "sounds") && count getArray (_config >> "sounds") != 0) then {
+    if (isArray (_config >> "sounds") && (getArray (_config >> "sounds") isNotEqualTo [])) then {
         selectRandom getArray (_config >> "sounds") params ["_file", ["_volume", 1], ["_pitch", 1], ["_distance", 10]];
         GVAR(TreatmentSound) = playSound3D [_file, objNull, false, getPosASL _medic, _volume, _pitch, _distance];
 

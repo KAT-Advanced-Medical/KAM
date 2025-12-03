@@ -16,8 +16,8 @@
  */
 params ["_patient", "_dose", "_timeTillMaxEffect", "_timeInSystem"];
 private _currentWeight = _patient getVariable [QEGVAR(vitals,currentWeight), 80];
-private _doseNormalized = linearConversion [0, 40, _dose, 10, 30, true];
+private _doseNormalized = linearConversion [10, 30, _dose, 15, 35, true];
 private _weightNormalized = linearConversion [60, 100, _currentWeight, 10, 30, true];
-if (_doseNormalized >_weightNormalized) then {
+if (_doseNormalized > _weightNormalized) then {
     [_patient, "Succinylcholine", _timeTillMaxEffect, _timeInSystem, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, "false", "true"] call EFUNC(vitals,addMedicationAdjustment);
 };

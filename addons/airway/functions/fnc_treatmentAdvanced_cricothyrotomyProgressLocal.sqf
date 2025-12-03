@@ -56,21 +56,10 @@ private _localAnesthesia = (_patient getVariable [QEGVAR(pharma,localAnesthesia)
     ) then {
         [_patient, [0.7, 0.8, 0.9] select (floor random 3)] call ACEFUNC(medical_status,adjustPainLevel);
     };
-
-if (_number == _cricothyrotomy) exitWith {
-    switch (_entry) do {
-        case (0.1):{
-            _surgeryString = LSTRING(Incision);
-        };
-        case (0.3):{
-            _surgeryString = LSTRING(PLACED);
-        };
-    };
-
+if (_number == 0.9) exitWith {
+    _surgeryString = LSTRING(ClosedCrike);
     [_patient, "quick_view", LSTRING(ChestTube_log), [[_medic] call ACEFUNC(common,getName), _surgeryString, STRING_BODY_PARTS select 1]] call ACEFUNC(medical_treatment,addToLog);
-
-    _cricothyrotomy = _cricothyrotomy + 0.2;
-    _patient setVariable [QGVAR(cricothyrotomy), _cricothyrotomy, true];
+    _patient setVariable [QGVAR(cricothyrotomy), 0, true];
 };
 if (_entry == 0.1) then {
     [{
@@ -88,13 +77,27 @@ if (_entry == 0.1) then {
         };
     }, 5, [_patient]] call CBA_fnc_addPerFrameHandler;
 
-if (GVAR(hardcoreCrike)) then {
-    [_unit, "blockRadio", "kat_crike", true] call ACEFUNC(common,statusEffect_set);
-    [_unit, "blockSpeaking", "kat_crike", true] call ACEFUNC(common,statusEffect_set);
-};
+    if (GVAR(hardcoreCrike)) then {
+    [_patient, "blockRadio", "kat_crike", true] call ACEFUNC(common,statusEffect_set);
+    [_patient, "blockSpeaking", "kat_crike", true] call ACEFUNC(common,statusEffect_set);
+    };
 };
 
+if (_number == _cricothyrotomy) exitWith {
+    switch (_entry) do {
+        case (0.1):{
+            _surgeryString = LSTRING(Incision);
+        };
+        case (0.3):{
+            _surgeryString = LSTRING(PLACED);
+        };
+    };
 
+    [_patient, "quick_view", LSTRING(ChestTube_log), [[_medic] call ACEFUNC(common,getName), _surgeryString, STRING_BODY_PARTS select 1]] call ACEFUNC(medical_treatment,addToLog);
+
+    _cricothyrotomy = _cricothyrotomy + 0.2;
+    _patient setVariable [QGVAR(cricothyrotomy), _cricothyrotomy, true];
+};
 
 private _output = LLSTRING(cricothyrotomy_fail);
 [_output, 1.5, _medic] call ACEFUNC(common,displayTextStructured);

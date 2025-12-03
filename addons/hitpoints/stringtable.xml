@@ -174,6 +174,12 @@
         <Key ID="STR_KAT_Hitpoints_Roller_Gauze_Progress">
             <English>Wrapping Wounds</English>
         </Key>
+        <Key ID="STR_KAT_Hitpoints_Roller_GauzeCoag">
+            <English>Wrap Coagulated Wounds (Gauze)</English>
+        </Key>
+        <Key ID="STR_KAT_Hitpoints_Roller_GauzeCoag_Progress">
+            <English>Wrapping Coagulated Wounds</English>
+        </Key>
         <Key ID="STR_KAT_Hitpoints_Abdominal_Pad_Desc_Short">
             <English>Abdominal Pad for Extremely Large Wounds On the Torso</English>
         </Key>
@@ -520,10 +526,16 @@
             <English>%1 did not find a Pelvic Fracture</English>
         </Key>
         <Key ID="STR_KAT_Hitpoints_SETTING_InternalBleedingEnable">
-            <English>Internal Bleeding</English>
+            <English>Enable Internal Bleeding</English>
         </Key>
         <Key ID="STR_KAT_Hitpoints_SETTING_InternalBleedingEnable_DESC">
             <English>Turns on internal bleeding as a wound type</English>
+        </Key>
+        <Key ID="STR_KAT_Hitpoints_SETTING_InternalBleedingChance">
+            <English>Chance Internal Bleeding</English>
+        </Key>
+        <Key ID="STR_KAT_Hitpoints_SETTING_InternalBleedingChance_DESC">
+            <English>Percentage for a wound to have underlying internal bleeding</English>
         </Key>
         <Key ID="STR_KAT_Hitpoints_Remove_Israeli">
             <English>Remove Israeli Bandage</English>
@@ -602,6 +614,33 @@
         </Key>
         <Key ID="STR_KAT_Hitpoints_Subcatagory_Armor">
             <English>Armor</English>
+        </Key>
+        <Key ID="STR_KAT_Hitpoints_jointInjuryGUI">
+            <English>Inflamed Joint</English>
+        </Key>
+        <Key ID="STR_KAT_Hitpoints_SETTING_longTermBandages">
+            <English>Long Term Bandages</English>
+        </Key>
+        <Key ID="STR_KAT_Hitpoints_SETTING_longTermBandages_DESC">
+            <English>Greatly increases the time it takes for a wrapped bandage to fall off. Balanced around persistant missions where a stich kit is not often used</English>
+        </Key>
+        <Key ID="STR_KAT_Hitpoints_setting_hardcorepressure">
+            <English>Hardcore Pressure</English>
+        </Key>
+        <Key ID="STR_KAT_Hitpoints_setting_hardcorepressure_desc">
+            <English>Causes pressure to take up all actions, rather then just a time penalty</English>
+        </Key>
+        <Key ID="STR_KAT_Hitpoints_pressure_already">
+            <English>Someone is already applying pressure</English>
+        </Key>
+        <Key ID="STR_KAT_Hitpoints_pressure_ready">
+            <English>Started Applying Pressure</English>
+        </Key>
+        <Key ID="STR_KAT_Hitpoints_pressure_cancel">
+            <English>Stopped Applying Pressure</English>
+        </Key>
+        <Key ID="STR_KAT_Hitpoints_pressure_GUI">
+            <English>Pressure Applied</English>
         </Key>
     </Package>
 </Project>

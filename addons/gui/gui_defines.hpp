@@ -221,7 +221,7 @@
 #define IDC_TEST_PH          71206
 #define IDC_TEST_RESET          71207
 #define IDC_TEST_SHOWBUTTON          71208
-#define IDC_ABG_BACKGROUND           71299         
+#define IDC_ABG_BACKGROUND           71299
 #define IDC_SYRINGE_TITLE           71300
 #define IDC_SYRINGE_BACKGROUND           71301
 #define IDC_SYRINGE_TYPE_TITLE           71302

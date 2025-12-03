@@ -7,6 +7,7 @@ PREP(checkTemperature);
 PREP(checkTemperatureThermo);
 PREP(fullHealLocal);
 PREP(gui_updateInjuryListPart);
+PREP(handWarmersCheck);
 PREP(handleRespawn);
 PREP(init);
 PREP(removeBlanket);

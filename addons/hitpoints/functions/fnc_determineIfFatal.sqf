@@ -53,11 +53,11 @@ if (ACEGVAR(medical,fatalDamageSource) in [1, 2]) then {
     private _vitalDamage = ((_headDamage - _headThreshold) max 0) + ((_bodyDamage - _bodyThreshold) max 0);
 
     // Sum of trauma to the limbs can also be fatal (shock) but this should take much more damage at default (5x as much)
-    if ([false, !isPlayer _unit, true] select ACEGVAR(medical,useLimbDamage)) then {
+    if ([false, (!(isPlayer _unit) && {!(GET_CONVERT_STATUS(_unit))}), true] select ACEGVAR(medical,useLimbDamage)) then {
         private _limbThreshold = ACEGVAR(medical,limbDamageThreshold) * _damageThreshold;
         {
             _vitalDamage = _vitalDamage + ((_x - _limbThreshold) max 0);
-        } forEach _bodyPartDamage select [2];
+        } forEach (_bodyPartDamage select [2]);
     };
 
     private _chanceFatal = 1 - exp -((_vitalDamage/FATAL_SUM_DAMAGE_WEIBULL_L)^FATAL_SUM_DAMAGE_WEIBULL_K);

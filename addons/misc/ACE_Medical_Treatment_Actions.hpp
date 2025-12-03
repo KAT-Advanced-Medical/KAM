@@ -1,6 +1,5 @@
 class ACE_Medical_Treatment_Actions {
     class SalineIV;
-    class BasicBandage;
     class SurgicalKit;
     class ApplyTourniquet;
     class SalineIV_Stand: SalineIV {

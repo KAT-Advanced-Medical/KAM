@@ -17,6 +17,6 @@
  */
 
 params ["_medic", "_patient"];
-if (!(_patient call ACEFUNC(common,isAwake)) && (IN_MED_VEHICLE(_patient)) && !(_patient getVariable [QGVAR(attachedLucas), false])) exitWith {true};
+if (!(_patient call ACEFUNC(common,isAwake)) && ((IN_MED_VEHICLE(_patient)) || (IN_MED_FACILITY(_patient))) && !(_patient getVariable [QGVAR(attachedLucas), false])) exitWith {true};
 false
 

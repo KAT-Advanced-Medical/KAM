@@ -54,6 +54,15 @@
 ] call CBA_fnc_addSetting;
 
 [
+    QGVAR(penaltyMult),
+    "SLIDER",
+    [LLSTRING(PENALTY_MULT_DISPLAY),LLSTRING(PENALTY_MULT_DESC)],
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_Fractures)],
+    [0,4,0.5,1],
+    true
+] call CBA_fnc_addSetting;
+
+[
     QGVAR(closedTime),
     "SLIDER",
     LLSTRING(CLOSED_TIMER),

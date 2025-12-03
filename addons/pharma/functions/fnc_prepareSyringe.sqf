@@ -26,6 +26,6 @@ _katClassName = "kat_" + _medicationType;
 _player removeItem _katClassName;
 _player addItem _syringeClassName;
 private _syringeDisplayName = getText (configFile >> "CfgWeapons" >> _syringeClassName >> "displayName");
-hint format [LELSTRING(GUI,Prepared_Syringe), _syringeDisplayName];
+private _name = format [LELSTRING(GUI,Prepared_Syringe), _syringeDisplayName];
+[_name, 2, _player, 10] call ACEFUNC(common,displayTextStructured);
 [ACEFUNC(medical_gui,openMenu), ACEGVAR(medical_gui,target)] call CBA_fnc_execNextFrame;
-[{hint ""}, [], GVAR(prepTime_PrepSyringe)] call CBA_fnc_waitAndExecute;

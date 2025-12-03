@@ -64,6 +64,12 @@
             <German>Augenschild anwenden</German>
             <Japanese>眼帯を装着</Japanese>
         </Key>
+        <Key ID="STR_KAT_Ophthalmology_eyeshieldremove_action">
+            <English>Remove Eye Shield</English>
+        </Key>
+        <Key ID="STR_KAT_Ophthalmology_eyeshieldremove_progress">
+            <English>Removing Eye Shield</English>
+        </Key>
         <Key ID="STR_KAT_Ophthalmology_eyeshield_item">
             <English>Eye Shield</English>
             <French>Protection oculaire</French>

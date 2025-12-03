@@ -2328,11 +2328,65 @@
         <Key ID="STR_KAT_Airway_TraumaticObstruction_Display">
             <English>Traumatic Obstruction</English>
         </Key>
+        <Key ID="STR_KAT_Airway_HasExternallyPuked">
+            <English>Vomited</English>
+        </Key>
         <Key ID="STR_KAT_Airway_SubCategory_Crike">
             <English>Cricothyrotomy Settings</English>
         </Key>
         <Key ID="STR_KAT_Airway_SubCategory_AirwayInjury">
             <English>Airway Injury Settings</English>
+        </Key>
+        <Key ID="STR_KAT_Airway_capnographyYellow">
+            <English>Yellow</English>
+        </Key>
+        <Key ID="STR_KAT_Airway_capnographyGreen">
+            <English>Green</English>
+        </Key>
+        <Key ID="STR_KAT_Airway_capnographyOrange">
+            <English>Orange</English>
+        </Key>
+        <Key ID="STR_KAT_Airway_capnographyRed">
+            <English>Red</English>
+        </Key>
+        <Key ID="STR_KAT_Airway_capnographyWhite">
+            <English>White</English>
+        </Key>
+        <Key ID="STR_KAT_Airway_capnographyStatus">
+            <English>Capnograph: %1</English>
+        </Key>
+        <Key ID="STR_KAT_Airway_SETTING_ENABLE_capnograph">
+            <English>Enable Capnography</English>
+        </Key>
+        <Key ID="STR_KAT_Airway_SETTING_ENABLE_capnograph_DESC">
+            <English>Enables Capnography, allowing for an approximate reading of ETCo2 with a placed SGA/ETT</English>
+        </Key>
+        <Key ID="STR_KAT_Airway_SETTING_minPukeTime">
+            <English>Minimal Puke Timer</English>
+        </Key>
+        <Key ID="STR_KAT_Airway_SETTING_minPukeTime_DESC">
+            <English>Minimal time in seconds for a unit to puke after all modifiers are applied</English>
+        </Key>
+        <Key ID="STR_KAT_Airway_SETTING_minOcclusionTime">
+            <English>Minimal Occlusion Timer</English>
+        </Key>
+        <Key ID="STR_KAT_Airway_SETTING_minOcclusionTime_DESC">
+            <English>Minimal time in seconds for a unit to Occlude after all modifiers are applied</English>
+        </Key>
+        <Key ID="STR_KAT_Airway_SuctionEffectiveness">
+            <English>Suction Effectiveness</English>
+        </Key>
+        <Key ID="STR_KAT_Airway_SuctionEffectiveness_DESC">
+            <English>Multiplier to how effective suction is at clearing the airway</English>
+        </Key>
+        <Key ID="STR_KAT_Airway_reset_crike">
+            <English>Close Neck Incision</English>
+        </Key>
+        <Key ID="STR_KAT_Airway_reset_crike_action">
+            <English>Closing Incision</English>
+        </Key>
+        <Key ID="STR_KAT_Airway_closedcrike">
+            <English>Closed Neck Incision</English>
         </Key>
     </Package>
 </Project>

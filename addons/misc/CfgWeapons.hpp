@@ -110,7 +110,7 @@ class CfgWeapons {
         editorPreview = QPATHTOF(ui\MedicationCase.paa);
         picture = QPATHTOF(ui\MedicationCase.paa);
         class ItemInfo: CBA_MiscItem_ItemInfo {
-            mass = 25;
+            mass = 40;
         };
     };
 };

@@ -29,7 +29,7 @@ private _largestTank = 0;
 
 { 
     if (_x select 1 > ((_availableTanks select _largestTank) select 1)) then { 
-        _largestTank = _y; 
+        _largestTank = _forEachIndex; 
     }; 
 } forEach _availableTanks;
 

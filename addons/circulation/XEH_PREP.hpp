@@ -69,6 +69,5 @@ PREP(removeLog);
 PREP(showBloodGas);
 PREP(updateBloodPressureChange);
 PREP(updateHeartRate);
-PREP(updateInternalBleeding);
 PREP(updateWoundBloodLoss);
 PREP(wrongBloodTreatment);

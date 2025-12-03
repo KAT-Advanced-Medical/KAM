@@ -133,7 +133,6 @@ switch (true) do {
 
 if ((((_patient getVariable [QGVAR(occlusion), [0, 0, 0]]) findIf { _x != 0 }) != -1) && (((_patient getVariable [QGVAR(obstruction), [0, 0, 0]]) findIf { _x != 0 }) != -1) && GVAR(autoTriage)) then {_patient setVariable [QACEGVAR(medical,triageLevel), 0, true]};
 
-
 [_hintAirwayStatus, _hintSize, _medic, _hintWidth] call ACEFUNC(common,displayTextStructured);
 
 [_patient, "quick_view", LSTRING(checkAirway_log)] call EFUNC(circulation,removeLog);

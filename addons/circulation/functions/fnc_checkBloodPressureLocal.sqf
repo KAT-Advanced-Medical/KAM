@@ -20,7 +20,7 @@
 params ["_medic", "_patient", "_bodyPart"];
 
 private _bloodPressure = [0, 0];
-private _tourniquets = GET_TOURNIQUETS(_unit);
+private _tourniquets = GET_TOURNIQUETS(_patient);
 private _occlusionMap = [
     [4, [4, 5]],
     [5, [5]],
@@ -49,7 +49,7 @@ if (_bloodPressureLow > 40) then {
     if (_medic call ACEFUNC(medical_treatment,isMedic)) then {
         if (GVAR(hardcoreDiagnose)) then {
             _bloodPressureOutput = LSTRING(Check_Bloodpressure_Output_Palp);
-            _logOutput = format [LLSTRING(Bloodpressure_Output_Palp), (round (_bloodPressureLow / 10) * 10) + ([10, -10] select (random 1 > 0.5))];
+            _logOutput = format [LLSTRING(Bloodpressure_Output_Palp), (round (_bloodPressureLow / 10) * 10) + ([5, -5] select (random 1 > 0.5))];
         } else {
             _bloodPressureOutput = ACELSTRING(medical_treatment,Check_Bloodpressure_Output_1);
             _logOutput = format ["%1/%2", round _bloodPressureHigh, round _bloodPressureLow];

@@ -19,7 +19,7 @@
  */
 
 params ["_medic", "_patient","_classname", "_usedItem", ["_requireClear", true]];
-private _occlusion = ((_patient getVariable [QGVAR(occlusion), [0, 0, 0]]) findIf { _x > 2 }) != -1;
+private _occlusion = ((_patient getVariable [QGVAR(occlusion), [0, 0, 0]]) findIf { _x > 3 }) != -1;
 private _obstruction = ((_patient getVariable [QGVAR(obstruction), [0, 0, 0]]) findIf { _x != 0 }) != -1;
 
 if ((_occlusion || (_obstruction && !(_patient getVariable [QGVAR(overstretch), false])) ) && !(_classname in ["NPA"])) exitWith {
@@ -30,19 +30,21 @@ _patient setVariable [QGVAR(airway), true, true];
 _patient setVariable [QGVAR(airway_item), _classname, true];
 switch (true) do {
     case (_usedItem isEqualTo "kat_larynx"): {
-        _patient setVariable [QGVAR(airwayStatus), [1, 1, 0], true];
+        _patient setVariable [QGVAR(airwayStatus), [2, 2, 0], true];
+        _patient setVariable [QGVAR(occlusionMitigation), [0.7, 0.7, 0.7], true];
         private _obstruction = _patient getVariable [QGVAR(obstruction), [0, 0, 0]];
         private _newObstruction = [0, 0, _obstruction select 2];
         _patient setVariable [QGVAR(obstruction), _newObstruction, true];
     };
     case (_usedItem isEqualTo "kat_IGEL"): {
-        _patient setVariable [QGVAR(airwayStatus), [1, 1, 0], true];
+        _patient setVariable [QGVAR(airwayStatus), [2, 2, 0], true];
+        _patient setVariable [QGVAR(occlusionMitigation), [0, 0, 1], true];
         private _obstruction = _patient getVariable [QGVAR(obstruction), [0, 0, 0]];
         private _newObstruction = [0, 0, _obstruction select 2];
         _patient setVariable [QGVAR(obstruction), _newObstruction, true];
     };
     case (_usedItem isEqualTo "kat_ETT"): {
-        _patient setVariable [QGVAR(airwayStatus), [1, 1, 1], true];
+        _patient setVariable [QGVAR(airwayStatus), [2, 2, 2], true];
         _patient setVariable [QGVAR(obstruction), [0, 0, 0], true];
         [GVAR(PlaceETT), "keydown"] call CBA_fnc_removeKeyHandler;
         _patient setVariable [QGVAR(visualizationActive), false, true];
@@ -63,7 +65,9 @@ if (_classname in ["Larynxtubus", "IGEL", "ETT"]) then {
     private _currentMonitors = _patient getVariable [QEGVAR(breathing,etco2Monitor), []];
     _currentMonitors pushBack _classname;
     _patient setVariable [QEGVAR(breathing,etco2Monitor), _currentMonitors, true];
+    if (GVAR(capnographEnable)) then {
+        [QGVAR(capnoPFH), [_patient], _patient] call CBA_fnc_targetEvent;
+    };
 };
-
 [_patient, _usedItem] call ACEFUNC(medical_treatment,addToTriageCard);
 [_patient, "activity", LSTRING(airway_log), [[_medic] call ACEFUNC(common,getName), getText (configFile >> "CfgWeapons" >> _usedItem >> "displayName")]] call ACEFUNC(medical_treatment,addToLog);

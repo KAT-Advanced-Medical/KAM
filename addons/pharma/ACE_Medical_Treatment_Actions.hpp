@@ -199,7 +199,7 @@ class ACE_Medical_Treatment_Actions {
     };
     class SalineFlush: Carbonate {
         displayName = CSTRING(Saline_Flush);
-        allowedSelections[] = {"Chest", "LeftArm", "RightArm", "UpperLeftLeg", "UpperRightLeg", "UpperLeftArm", "UpperRightArm", "LeftLeg", "RightLeg", "Neck"};
+        allowedSelections[] = {"Neck", "Chest", "LeftArm", "RightArm", "UpperLeftLeg", "UpperRightLeg", "UpperLeftArm", "UpperRightArm", "LeftLeg", "RightLeg", "Neck"};
         allowSelfTreatment = 1;
         medicRequired = QGVAR(medLvl_SalineFlush);
         treatmentTime = QGVAR(treatmentTime_SalineFlush);
@@ -215,7 +215,7 @@ class ACE_Medical_Treatment_Actions {
         medicRequired = QGVAR(medLvl_SalineFlush);
         treatmentTime = QGVAR(treatmentTime_SalineFlush);
         items[] = {"kat_syringe_salineIV_5ml_30"};
-        condition = QUOTE((_patient getVariable [ARR_2(QQGVAR(IVplaced),true)]) && FUNC(salineCheck));
+        condition = QUOTE(_patient getVariable [ARR_2(QQGVAR(IVplaced),true)]);
         callbackSuccess = QFUNC(treatmentAdvanced_Flush);
         sounds[] = {};
     };
@@ -232,6 +232,40 @@ class ACE_Medical_Treatment_Actions {
         animationMedic = "";
         animationMedicProne = "";
         sounds[] = {};
+    };
+    class ManualPressureBag: BasicBandage {
+        displayName = CSTRING(ManualPressure_displayName);
+        displayNameProgress = CSTRING(ManualPressure_progress);
+        allowedSelections[] = {"Neck", "Chest", "LeftArm", "RightArm", "UpperLeftArm", "UpperRightArm", "UpperLeftLeg", "UpperRightLeg", "LeftLeg", "RightLeg"};
+        category = "advanced";
+        treatmentTime = 1;
+        medicRequired = 0;
+        items[] = {};
+        icon = "";
+        condition = QUOTE(([ARR_3(_player,_patient,_bodyPart)] call FUNC(hasIVbag)));
+        callbackSuccess = QFUNC(treatmentAdvanced_ManualBagPressure);
+    };
+    class ApplyPressureBag: BasicBandage {
+        displayName = CSTRING(Apply_PressureBag);
+        displayNameProgress = CSTRING(Applying_PressureBag);
+        category = "advanced";
+        allowedSelections[] = {"Chest", "LeftArm", "RightArm", "UpperLeftLeg", "UpperRightLeg", "UpperLeftArm", "UpperRightArm", "LeftLeg", "RightLeg", "Neck"};
+        medicRequired = QACEGVAR(medical_treatment,medicIV);
+        treatmentTime = 6;
+        items[] = {"kat_pressureBag"};
+        condition = QUOTE(([ARR_3(_player,_patient,_bodyPart)] call FUNC(removeIV)) && !([ARR_2(_patient,_bodyPart)] call FUNC(removePressure)));  
+        callbackSuccess = QFUNC(treatmentAdvanced_applyPressureBag);
+    };
+    class RemovePressureBag: BasicBandage {
+        displayName = CSTRING(Remove_PressureBag);
+        displayNameProgress = CSTRING(Removing_PressureBag);
+        category = "advanced";
+        allowedSelections[] = {"Chest", "LeftArm", "RightArm", "UpperLeftLeg", "UpperRightLeg", "UpperLeftArm", "UpperRightArm", "LeftLeg", "RightLeg", "Neck"};
+        medicRequired = QACEGVAR(medical_treatment,medicIV);
+        treatmentTime = 6;
+        items[] = {};
+        condition = QUOTE([ARR_2(_patient,_bodyPart)] call FUNC(removePressure));
+        callbackSuccess = QFUNC(treatmentAdvanced_RemovePressureBag);
     };
     /*class Norepinephrine: EACA {
         displayName = CSTRING(Take_Norep);
@@ -259,7 +293,8 @@ class ACE_Medical_Treatment_Actions {
         allowSelfTreatment = 1;
         items[] = {"kat_phenylephrineAuto"};
         condition = "";
-        treatmentTime = 5;
+        medicRequired = QGVAR(medLvl_PhenylephrineAuto);
+        treatmentTime = QGVAR(treatmentTime_PhenylephrineAuto);
         callbackSuccess = QFUNC(medication);
         sounds[] = {};
     };
@@ -506,7 +541,7 @@ class ACE_Medical_Treatment_Actions {
     class Dialysis: BasicBandage {
         displayName = CSTRING(Dialysis_DisplayName);
         displayNameProgress = CSTRING(Dialysis_DisplayNameProgress);
-        icon = QPATHTOF(ui\icon_aedx.paa);
+        icon = QPATHTOEF(circulation,ui\icon_aedx.paa);
         category = "surgery";
         consumeItem = 0;
         items[] = {};
@@ -564,6 +599,7 @@ class ACE_Medical_Treatment_Actions {
         items[] = {"kat_syringe_txa_10ml_10"};
         callbackSuccess = QFUNC(medication);
         removeFromInteractions = "true";
+        sounds[] = {};
     };
     class syringe_TXA_10ml_20: syringe_TXA_10ml_10 {
         displayName = KATPUSHCSTRING(txa,10ml,20);
@@ -1422,7 +1458,7 @@ class ACE_Medical_Treatment_Actions {
         medicRequired = QGVAR(medLvl_ApplyFentPatch);
         treatmentTime = QGVAR(treatmentTime_ApplyFentPatch);
         allowSelfTreatment = 1;
-        category = "advanced";
+        category = "medication";
         allowedSelections[] = {"Chest", "Neck", "LeftArm", "RightArm", "UpperLeftLeg", "UpperRightLeg", "UpperLeftArm", "UpperRightArm", "LeftLeg", "RightLeg"};
         items[] = {"kat_fentPatch"};
         condition = QUOTE(!([ARR_3(_player,_patient,_bodyPart)] call FUNC(treatmentAdvanced_FentanylPatchCheck)));
@@ -1432,12 +1468,12 @@ class ACE_Medical_Treatment_Actions {
     class RemoveFentPatch: ApplyFentPatch {
         displayName = CSTRING(Remove_FentPatch);
         displayNameProgress = CSTRING(Removing_FentPatch);
-        category = "advanced";
+        category = "medication";
         allowedSelections[] = {"Chest", "Neck", "LeftArm", "RightArm", "UpperLeftLeg", "UpperRightLeg", "UpperLeftArm", "UpperRightArm", "LeftLeg", "RightLeg"};
         treatmentTime = QGVAR(treatmentTime_ApplyFentPatch);
         medicRequired = 0;
         items[] = {};
-        condition = QUOTE(([ARR_3(_player,_patient,_bodyPart)] call FUNC(treatmentAdvanced_FentanylPatchCheck)));
+        condition = QUOTE(([ARR_3(_player,_patient,_bodyPart)] call FUNC(treatmentAdvanced_FentanylPatchRemoveCheck)));
         callbackSuccess = QFUNC(treatmentAdvanced_RemoveFentanylPatch);
         sounds[] = {};
     };

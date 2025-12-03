@@ -26,6 +26,9 @@ if (_cricothyrotomy == 0.5)  exitWith {
     _patient setVariable [QGVAR(cricothyrotomy), _cricothyrotomy, true];
     _patient setVariable [QGVAR(airway_item), "Surgical_Airway", true];
     _patient setVariable [QGVAR(airway), true, true];
+    private _currentMonitors = _patient getVariable [QEGVAR(breathing,etco2Monitor), []];
+    _currentMonitors pushBack "Surgical_Airway";
+    _patient setVariable [QEGVAR(breathing,etco2Monitor), _currentMonitors, true];
     [_patient, true] call ACEFUNC(dragging,setCarryable);
     [_patient, true] call ACEFUNC(dragging,setDraggable);
 };

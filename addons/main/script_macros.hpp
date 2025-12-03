@@ -212,7 +212,7 @@
 #define GET_PAIN_PERCEIVED(unit)    (0 max ((GET_PAIN(unit) - GET_PAIN_SUPPRESS(unit)) min 1))
 
 #undef GET_DAMAGE_THRESHOLD
-#define GET_DAMAGE_THRESHOLD(unit)  ((unit getVariable [QACEGVAR(medical,damageThreshold), [ACEGVAR(medical,AIDamageThreshold),ACEGVAR(medical,playerDamageThreshold)] select (isPlayer unit)]) * (GET_OPIOID_FACTOR(unit) + 1))
+#define GET_DAMAGE_THRESHOLD(unit)  ((unit getVariable [QACEGVAR(medical,damageThreshold), [ACEGVAR(medical,AIDamageThreshold),ACEGVAR(medical,playerDamageThreshold)] select ((isPlayer unit) || (GET_CONVERT_STATUS(unit)))]) * (GET_OPIOID_FACTOR(unit) + 1))
 
 #define VAR_KAT_TOURNIQUET        QEGVAR(hitpoints,tourniquets)
 #define DEFAULT_TOURNIQUET_VALUES   [0,0,0,0,0,0,0,0,0,0,0,0]
@@ -289,6 +289,7 @@
 #define MOA_TO_RAD(d) ((d) * 0.00029088) // Conversion factor: PI / 10800
 
 #define QPATHTOF_SOUND(var1) QUOTE(PATHTOF2_SYS(PREFIX,COMPONENT,var1))
+#define QEPATHTOF_SOUND(var1,var2) QUOTE(PATHTOF2_SYS(PREFIX,var1,var2))
 #define QQPATHTOF_SOUND(var1) QUOTE(QPATHTOF_SOUND(var1))
 
 #include "script_debug.hpp"
@@ -343,7 +344,7 @@
 
 // Breathing
 #define VAR_SURFACE_AREA                QEGVAR(breathing,lungSurfaceArea)
-#define GET_KAT_SURFACE_AREA(unit)      (unit getVariable [VAR_SURFACE_AREA, 400])
+#define GET_KAT_SURFACE_AREA(unit)      ((unit getVariable [VAR_SURFACE_AREA, 400]) - (((unit getVariable [QEGVAR(breathing,pneumothorax), [0, 0]] select 0) + (unit getVariable [QEGVAR(breathing,pneumothorax), [0, 0]] select 1)) * 20) + (((unit getVariable [QEGVAR(breathing,hemopneumothorax), [0, 0]] select 0) + (unit getVariable [QEGVAR(breathing,hemopneumothorax), [0, 0]] select 1)) * 60))
 
 #define VAR_BLOOD_GAS                  QEGVAR(circulation,bloodGas)
 #define VAR_BREATHING_RATE             QEGVAR(breathing,breathRate)
@@ -358,6 +359,8 @@
 
 #define VAR_RESPIRATORY_DEPTH           QEGVAR(vitals,respiratoryDepth)
 #define GET_KAT_RESPIRATORY_DEPTH(unit)      (unit getVariable [QEGVAR(vitals,respiratoryDepth), 10])
+
+#define HAS_LUNG_INJURY(unit)  ((_unit getVariable [QEGVAR(breathing,pneumothorax), [0, 0]] select 0 > 0) || (_unit getVariable [QEGVAR(breathing,pneumothorax), [0, 0]] select 1 > 0) || (_unit getVariable [QEGVAR(breathing,tensionpneumothorax), [false, false]] select 0) || (_unit getVariable [QEGVAR(breathing,tensionpneumothorax), [false, false]] select 1) || ((_unit getVariable [QEGVAR(breathing,hemopneumothorax), [0, 0]] select 0) > 0) || ((_unit getVariable [QEGVAR(breathing,hemopneumothorax), [0, 0]] select 1) > 0));
 
 
 // Circulation
@@ -377,7 +380,7 @@
 #define GET_BLOOD_VOLUME_ML(unit)      (GET_BODY_FLUID(unit) select 4)
 #define GET_SIMPLE_BLOOD_VOLUME(unit)  (unit getVariable [VAR_BLOOD_VOL, DEFAULT_BLOOD_VOLUME])
 
-#define REDUCE_TOTAL_BLOOD_VOLUME(unit,volume) (unit setVariable [VAR_BODY_FLUID, [(GET_BODY_FLUID(unit) select 0) - (volume / 2), (GET_BODY_FLUID(unit) select 1) - (volume / 2), (GET_BODY_FLUID(unit) select 2), (GET_BODY_FLUID(unit) select 3), (GET_BODY_FLUID(unit) select 4) - volume], true])
+#define REDUCE_TOTAL_BLOOD_VOLUME(unit,volume) (unit setVariable [VAR_BODY_FLUID, [(GET_BODY_FLUID(unit) select 0) - (volume / 2), (GET_BODY_FLUID(unit) select 1) - (volume / 2), (GET_BODY_FLUID(unit) select 2), (GET_BODY_FLUID(unit) select 3), ((GET_BODY_FLUID(unit) select 4) - volume), (GET_BODY_FLUID(unit) select 5)], true])
 
 #undef GET_BLOOD_PRESSURE
 #define GET_BLOOD_PRESSURE(unit)       ([unit] call EFUNC(circulation,getBloodPressure))
@@ -523,6 +526,7 @@
 
 #define VAR_APPLIEDPRESSURE   QEGVAR(hitpoints,appliedPressure)
 #define GET_APPLIEDPRESSURE(unit)   (unit getVariable [VAR_APPLIEDPRESSURE, DEFAULT_APPLIEDPRESSURE_VALUES])
+#define GET_APPLIEDPRESSURE_ON(unit,index) (GET_APPLIEDPRESSURE(unit) select index)
 #define HAS_APPLIEDPRESSURE_ON(unit,index) ((GET_APPLIEDPRESSURE(unit) select index) > 0)
 
 #define VAR_BODY_BLEED_RATE   QEGVAR(hitpoints,limbBleedRate)
@@ -532,6 +536,10 @@
 
 #define GET_JOINTS(unit)   (unit getVariable [VAR_JOINTS, DEFAULT_JOINT_VALUES])
 #define GET_LIMB_JOINT(unit,limbindex)   ((unit getVariable [VAR_JOINTS, DEFAULT_JOINT_VALUES]) select _limbindex)
+
+
+#define INTERNAL_BLEEDING_RATE(unit,index) ([unit, index] call EFUNC(hitpoints,internalBleedingRate))
+#define PART_BLEEDING_RATE(unit,index) ([unit, index] call EFUNC(hitpoints,partBleedingRate))
 
 #undef PRIORITY_HEAD
 #undef PRIORITY_BODY
@@ -614,3 +622,5 @@
 #undef BLOOD_LOSS_TOTAL_COLORS
 #define BLOOD_LOSS_RED_THRESHOLD 0.5
 #define BLOOD_LOSS_TOTAL_COLORS 10
+
+#define HAS_AIRWAY(unit)  (unit call EFUNC(airway,airwayCheck))

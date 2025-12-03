@@ -17,6 +17,6 @@
  */
 
 params ["_medic", "_patient"];
-if (!(_patient call ACEFUNC(common,isAwake)) && (IN_MED_VEHICLE(_patient)) && !(_patient getVariable [QGVAR(oxygenMaskActive), false]) && !(_patient getVariable [QGVAR(attachedVent), false]) && (_patient getVariable [QEGVAR(airway,airway_item), ""] in ["Larynxtubus", "IGEL", "Surgical_Airway", "ETT"])) exitWith {true};
+if (!(_patient call ACEFUNC(common,isAwake)) && ((IN_MED_VEHICLE(_patient)) || (IN_MED_FACILITY(_patient))) && !(_patient getVariable [QGVAR(oxygenMaskActive), false]) && !(_patient getVariable [QGVAR(attachedVent), false]) && (_patient getVariable [QEGVAR(airway,airway_item), ""] in ["Larynxtubus", "IGEL", "Surgical_Airway", "ETT"])) exitWith {true};
 false
 
