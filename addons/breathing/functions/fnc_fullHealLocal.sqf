@@ -37,6 +37,9 @@ _patient setVariable [QGVAR(ventRate), 2, true];
 _patient setVariable [QGVAR(BVM_amount), 0, true];
 _patient setVariable [QGVAR(BVM_provider), 0, true];
 _patient setVariable [QGVAR(bronchospasm), 1, true];
+_patient setVariable [QGVAR(cushingTimer), 0, true];
+_patient setVariable [QGVAR(cheynePhase), 0, true];
+
 
 if (ACEGVAR(advanced_fatigue,enabled)) then {
     ["kat_LSDF"] call ACEFUNC(advanced_fatigue,removeDutyFactor);

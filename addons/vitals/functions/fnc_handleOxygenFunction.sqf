@@ -107,11 +107,85 @@ if ((IN_CRDC_ARRST(_unit)) || !_airway || _paralysis) then {
     
     private _baseRespiratoryDepth = ((DEFAULT_RESPIRATORY_DEPTH) - (_opioidDepression / 1.5));
     private _baseTidalVolume = GET_KAT_SURFACE_AREA(_unit) * (_baseRespiratoryDepth / 10);
+    private _icp = GET_ICP(_unit);
+    private _cardiacOutput = [_unit] call FUNC(getCardiacOutput);
+    private _tidalVolume = 0;
+    private _cheynePhase = (_unit getVariable [QEGVAR(breathing,cheynePhase), 0]);
+    private _cushingTimer = (_unit getVariable [QEGVAR(breathing,cushingTimer), 0]);
 
+    _cheynePhase = _cheynePhase + _deltaT;
+    _unit setVariable [QEGVAR(breathing,cheynePhase), _cheynePhase, true];
+
+    _cushingTimer = _cushingTimer - _deltaT;
+    _unit setVariable [QEGVAR(breathing,cushingTimer), _cushingTimer, true];
+    private _patternApplied = false;
+    if (!_patternApplied && _cardiacOutput < 3.5) then {
+
+        private _omega = (2 * pi) / 60;
+        private _env = 0.5 * (1 + sin(_omega * _cheynePhase)); // 0..1
+
+        private _cheyneRateMin = 2;
+        private _cheyneRateMax = (MAXIMUM_RR * 1.6) min 60;
+
+        private _cheyneDepthMin = (_baseRespiratoryDepth * 0.05);
+        private _cheyneDepthMax = (_baseRespiratoryDepth * 1.6);
+
+        private _cs_rate  = _cheyneRateMin + (_env * (_cheyneRateMax - _cheyneRateMin));
+        private _cs_depth = _cheyneDepthMin + (_env * (_cheyneDepthMax - _cheyneDepthMin));
+
+        // apnea phase
+        if (_env < 0.15) then {
+            _respiratoryRate  = 0;
+            _respiratoryDepth = 0;
+            _tidalVolume      = 0;
+            _actualVentilation = 1;
+        } else {
+            _respiratoryRate  = _cs_rate  * _respiratoryRateMult;
+            _respiratoryDepth = _cs_depth;
+            _tidalVolume      = GET_KAT_SURFACE_AREA(_unit) * (_respiratoryDepth / 10);
+            _actualVentilation = (_tidalVolume * _respiratoryRate) * _bronchospasm;
+        };
+
+        _patternApplied = true;
+    };
+    if (!_patternApplied && (_icp > 25)) then {
+
+        if (_cushingTimer <= 0) then {
+
+            private _r = random 1;
+            private _nextPause = -(12 * (log (_r max 0.0001)));
+            private _pauseDur  = 2 + (random 4);
+
+            _cushingTimer = _nextPause + _pauseDur;
+            _unit setVariable [QEGVAR(breathing,cushingTimer), _cushingTimer, true];
+
+            _respiratoryRate = 0;
+            _respiratoryDepth = 0;
+            _tidalVolume = 0;
+            _actualVentilation = 1;
+
+        } else {
+            if (_cushingTimer < 2) then {
+                _respiratoryRate = 6;
+                _respiratoryDepth = _baseRespiratoryDepth * 2.0;
+            } else {
+                _respiratoryRate = 6;
+                _respiratoryDepth = _baseRespiratoryDepth * 1.3;
+            };
+
+            _tidalVolume = GET_KAT_SURFACE_AREA(_unit) * (_respiratoryDepth / 10);
+            _actualVentilation = (_tidalVolume * _respiratoryRate) * _bronchospasm;
+        };
+
+        _patternApplied = true;
+    };
+
+
+    if (!_patternApplied) then {
     _respiratoryRate = (((_demandVentilation / _baseTidalVolume) * _respiratoryRateMult) min MAXIMUM_RR);
     
     // If respiratory rate is low due to PaCO2, it starts increasing faster to compensate
-    if (_previousCyclePaco2 > 50) then { _respiratoryRate = (_respiratoryRate + ((_previousCyclePaco2 - 50) * 0.2)) min MAXIMUM_RR};
+    if (!_patternApplied && (_previousCyclePaco2 > 50)) then { _respiratoryRate = (_respiratoryRate + ((_previousCyclePaco2 - 50) * 0.2)) min MAXIMUM_RR};
 
     _respiratoryRate = [_respiratoryRate, 20] select (_unit getVariable [QEGVAR(breathing,BVMInUse), false]);
 
@@ -131,6 +205,7 @@ if ((IN_CRDC_ARRST(_unit)) || !_airway || _paralysis) then {
     // Obstructed airway reduces effective ventilation
     _respiratoryDepth = [_respiratoryDepth, 10] select (_unit getVariable [QEGVAR(breathing,BVMInUse), false]);
     _actualVentilation = (_tidalVolume * _respiratoryRate) * _bronchospasm;
+    };
 };
 private _paco2 = 40;
 
@@ -183,7 +258,6 @@ TRACE_5("o2",_pao2,DEFAULT_ECB,((GET_BODY_FLUID(_unit) select 0) max 500),_deman
 private _arrestPerfusion = [1, (1 * EGVAR(breathing,SpO2_PerfusionMultiplier))] select ((IN_CRDC_ARRST(_unit)) && (EGVAR(breathing,SpO2_perfusion)));
 // PaO2 moves in controlled steps to prevent hard movements when Ventilation Demand spikes
 _pao2 = if (_previousCyclePao2 != _pao2) then { ([ (_previousCyclePao2 - ((PAO2_MAX_CHANGE * EGVAR(breathing,SpO2_MultiplyNegative) * _arrestPerfusion) * _deltaT)) , (_previousCyclePao2 + ((PAO2_MAX_CHANGE * EGVAR(breathing,SpO2_MultiplyPositive)) * _deltaT))] select ((_previousCyclePao2 - _pao2) < 0)) } else { _pao2 };
-
 // Oxy-Hemo Dissociation Curve, driven by PaO2 with shaping done by pH 
 private _o2Sat = ((_pao2 max 1)^2.7 / ((25 - (((_pH / DEFAULT_PH) - 1) * 150))^2.7 + _pao2^2.7)) min 0.999;
 
