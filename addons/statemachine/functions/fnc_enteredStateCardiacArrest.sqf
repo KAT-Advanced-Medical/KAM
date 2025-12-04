@@ -22,7 +22,7 @@ if (isNull _unit || {!isNil {_unit getVariable QACEGVAR(medical,causeOfDeath)}})
 };
 
 // 10% possible variance in cardiac arrest time
-private _time = QACEGVAR(medical_statemachine,cardiacArrestTime);
+private _time = ACEGVAR(medical_statemachine,cardiacArrestTime);
 _time = _time + _time * random [-0.1, 0, 0.1];
 
 _unit setVariable [QACEGVAR(medical_statemachine,cardiacArrestTimeLeft), _time];

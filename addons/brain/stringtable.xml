@@ -1,8 +1,50 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Project name="KAT">
     <Package name="Brain">
+        <Key ID="STR_KAT_Brain_cba_Name">
+            <English>KAT - ADV Medical: Brain</English>
+        </Key>
         <Key ID="STR_KAT_Brain_SETTING_enable">
             <English>Enable Brain Simulation</English>
+        </Key>
+        <Key ID="STR_KAT_Brain_setting_icpreduction">
+            <English>ICP Reduction Amount</English>
+        </Key>
+        <Key ID="STR_KAT_Brain_setting_icpreductionMult">
+            <English>ICP Reduction Multiplier</English>
+        </Key>
+        <Key ID="STR_KAT_Brain_setting_cmrunconsciousthreshold">
+            <English>CMR Uncon Threshold</English>
+        </Key>
+        <Key ID="STR_KAT_Brain_setting_stableCMR">
+            <English>Stable CMR</English>
+        </Key>
+        <Key ID="STR_KAT_Brain_setting_concussionchance">
+            <English>Concussion Chance</English>
+        </Key>
+        <Key ID="STR_KAT_Brain_setting_icpbradycardiathreshold">
+            <English>ICP Bradycardia Threshold</English>
+        </Key>
+        <Key ID="STR_KAT_Brain_setting_icpbradycardiachance">
+            <English>ICP Bradycardia Chance</English>
+        </Key>
+        <Key ID="STR_KAT_Brain_subcategory_concussions">
+            <English>Concussions</English>
+        </Key>
+        <Key ID="STR_KAT_Brain_setting_reversibledamageloss">
+            <English>Enable Brain Simulation</English>
+        </Key>
+        <Key ID="STR_KAT_Brain_subcategory_braindeath">
+            <English>Brain Death</English>
+        </Key>
+        <Key ID="STR_KAT_Brain_setting_necrosisticks">
+            <English>Tissue Necrosis Ticks</English>
+        </Key>
+        <Key ID="STR_KAT_Brain_setting_necrosisthreshold">
+            <English>Necrosis Threshold</English>
+        </Key>
+        <Key ID="STR_KAT_Brain_setting_necrosisincrease">
+            <English>Necrosis Increase Amount</English>
         </Key>
     </Package>
 </Project>

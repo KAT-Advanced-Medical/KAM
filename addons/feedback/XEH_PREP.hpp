@@ -1,11 +1,12 @@
 PREP(effectAirways);
 PREP(effectAirwaysColor);
 PREP(effectBreathingWheeze);
+PREP(effectConcussion);
 PREP(effectEyeBlink);
 PREP(effectEyeInjury);
 PREP(effectHurtEye);
-PREP(effectLowSpO2);
 PREP(effectLossCMR);
+PREP(effectLowSpO2);
 PREP(effectOpioid);
 PREP(effectTearHaze);
 PREP(handleEffects);

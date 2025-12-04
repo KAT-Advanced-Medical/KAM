@@ -19,7 +19,7 @@
 params ["_enable", "_cmr"];
 
 if !GVAR(enableBrainEffect) exitWith {};
-if ((!_enable) || {_cmr > 200}) exitWith {
+if ((!_enable) || {_cmr > 90}) exitWith {
     if (GVAR(minorLossCMR) != -1) then { GVAR(minorLossCMR) ppEffectEnable false; };
 };
 if (GVAR(minorLossCMR) != -1) then { GVAR(minorLossCMR) ppEffectEnable true; };

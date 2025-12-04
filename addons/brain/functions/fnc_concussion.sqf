@@ -19,12 +19,10 @@
  *
  * Public: No
  */
-
- params ["_unit", "_allDamages", "", "_ammo"];
-_allDamages select 0 params ["_damage", "_bodyPart"];
-
-if (!(GVAR(enable)) || !(_bodyPart isEqualTo "Head")) exitWith {};
-
+params ["_unit", "_damage", "_ammo"];
+if (_unit getVariable [QEGVAR(vitals,simpleMedical), false]) exitWith {};
+// Ignore non-head hits outside this script
+if (_damage <= 0) exitWith {};
 // Increase the chance based on how much damage was received 
 private _chanceIncrease = linearConversion [0,1,_damage,5,30,true];
 // Increase the chance of concussions depending on the damage type
@@ -35,59 +33,32 @@ if (_ammo in ["vehiclehit","explosive","shell","vehiclecrash"]) then {
 
 private _concussionChance = (GVAR(concussionChance) + _chanceIncrease) * _chanceMultiplier;
 if (floor (random 100) <= _concussionChance) then {
-	private _currentSeverity = _unit getVariable [QGVAR(concussionSeverity),0];
-	if (_damage > _currentSeverity) then { //Replace the current concussion with the more severe one
-		// Add instantaneous effects from concussions
-		if (_damage > GVAR(necrosisImpactDamage)) then { // Cause instant necrosis if threshold is surpassed
-			private _necrosis = _unit getVariable [QGVAR(necrosis),0];
-			private _newNecrosis = linearConversion [0, 1,_damage,0,7,true]; //Increase tissue necrosis by 7% max on impact
-			if (_newNecrosis > _necrosis) then { // Prevent reverting existing necrosis levels
-				_unit setVariable [QGVAR(necrosis),_newNecrosis,true]; 
-			};
-		};
-		if (_damage > GVAR(tissueImpactDamage)) then { // Cause reversible tissue damage if threshold is surpassed
-			private _reversibleDamage = _unit getVariable [QGVAR(reversibleDamage),0];
-			_reversibleDamage = _reversibleDamage + (linearConversion [0,1,_damage,0,25,true]); //Increase reversible damage by max 25% on impact
-			_unit setVariable [QGVAR(reversibleDamage),_reversibleDamage,true];
-		};
+    private _concussion = _unit getVariable [QGVAR(concussion), 0];
+    private _edema      = _unit getVariable [QGVAR(edema), 0];
+    private _bleeding   = _unit getVariable [QGVAR(bleeding), 0];
+    private _necrosis   = _unit getVariable [QGVAR(necrosis), 0];
 
-		// Increase ICP to a base level depending on damage taken
-		private _ICP = _unit getVariable [QGVAR(ICP),15];
-		private _ICPincrease = linearConversion [0, 1,_damage,1,3,true];
-		_unit setVariable [QGVAR(ICP),_ICP+_damage,true];
+    private _base = random [0.1, 0.2, 0.4];
+    private _impactFactor = linearConversion [0, 1, _damage, 0.2, 0.8, true];
+    private _newConcussion = (_base + _impactFactor) min 1;
 
-		// Set up PFH
-		if (_currentSeverity isNotEqualTo 0) then { //Delete the existing concussion PFH if it exists
-			private _existingPFH = _unit getVariable [QGVAR(concussionPFH),0];
-			[_existingPFH] call CBA_fnc_removePerFrameHandler;
-		};
+    private _newEdema = _edema + linearConversion [0,1,_damage,0,0.25,true];
 
-		private _maxICPIncrease = linearConversion [0,1,_damage,0,40];
-		private _newPFH = [{
-			params ["_args", "_idPFH"];
-			_args params ["_unit","_severity","_maxICPIncrease"];
-			if !(alive _unit) exitWith {
-				_unit setVariable [QGVAR(concussionPFH),0,true];
-				_unit setVariable [QGVAR(concussionSeverity),0,true];
-				[_idPFH] call CBA_fnc_removePerFrameHandler;
-			};
+    if (_damage > 0.6 || {_ammo in ["vehiclehit","explosive","shell","vehiclecrash"]}) then {
+        private _newBleed = random [0,0.1,0.25];
+        _bleeding = (_bleeding + _newBleed) min 1;
+    };
 
-			private _ICP = _unit getVariable [QGVAR(ICP),15];
-			
-			//Kill the concussion once ICP reaches the limit for the concussion's severity
-			if (_ICP >= (20+_maxICPIncrease)) exitWith {
-				_unit setVariable [QGVAR(concussionPFH),0,true];
-				_unit setVariable [QGVAR(concussionSeverity),0,true];
-				[_idPFH] call CBA_fnc_removePerFrameHandler;
-			};
-			
-			private _ICPincrease = linearConversion [0,1,_severity,0,2,true];
-			_unit setVariable [QGVAR(ICP),_ICP+_ICPincrease,true]; //Increase ICP by concussion severity
+    if (_damage > 1.85) then {
+        _necrosis = (_necrosis + random [1,3,5]) min 5;
+    };
 
-		}, 10, [_unit,_damage,_maxICPIncrease]] call CBA_fnc_addPerFrameHandler;
-		
-		_unit setVariable [QGVAR(concussionPFH),_newPFH,true];
-		_unit setVariable [QGVAR(concussionSeverity),_damage,true];
-	}
-	
+    _unit setVariable [QGVAR(concussion), _newConcussion, true];
+    _unit setVariable [QGVAR(edema),      _newEdema,     true];
+    _unit setVariable [QGVAR(bleeding),   _bleeding,     true];
+    _unit setVariable [QGVAR(necrosis),   _necrosis,     true];
+
+    if (isNil {_unit getVariable QGVAR(concussionPFH)}) then {
+        [_unit] call FUNC(concussionPFH);
+    };
 };

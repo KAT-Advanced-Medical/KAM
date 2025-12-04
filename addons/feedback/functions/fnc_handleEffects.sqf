@@ -22,6 +22,7 @@ if (ACEGVAR(common,OldIsCamera) || {!alive ACE_player}) exitWith {
     [false]    call FUNC(effectHurtEye);
     [false]    call FUNC(effectEyeInjury);
     [false]    call FUNC(effectLossCMR);
+    [false]    call FUNC(effectConcussion);
 };
 
 BEGIN_COUNTER(handleEffects);
@@ -52,6 +53,7 @@ private _wheeze = (
 private _eyeInjurySeverity        = GET_DUST_INJURY(ACE_player);
 private _eyeInjuries        = GET_EYE_INJURIES(ACE_player);
 private _cmr             = GET_CMR(ACE_player);
+private _concussion            = GET_CONCUSSION(ACE_player);
 
 private _airwayState = HAS_AIRWAY(ACE_player);
 // - Visual effects -----------------------------------------------------------
@@ -74,5 +76,6 @@ if (_time != 0) then {
 [!_unconscious, _eyeInjuries, _manualUpdate] call FUNC(effectHurtEye);
 
 [!_unconscious, _cmr] call FUNC(effectLossCMR);
+[!_unconscious, _concussion] call FUNC(effectConcussion);
 
 END_COUNTER(handleEffects);

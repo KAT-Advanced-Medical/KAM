@@ -333,6 +333,7 @@
 #define VAR_ICP                 QEGVAR(brain,ICP) // Intracranial Pressure
 #define VAR_CPR                 QEGVAR(brain,CPR) // Cerebral Perfusion Rate
 #define VAR_RO2                 QEGVAR(brain,rO2) // Brain O2 saturation
+#define VAR_CONCUSSION          QEGVAR(brain,concussion) 
 
 
 #define GET_CMR(unit)                  (unit getVariable [VAR_CMR, 100])
@@ -341,6 +342,7 @@
 #define GET_ICP(unit)                  (unit getVariable [VAR_ICP, 15])
 #define GET_CPR(unit)                  (unit getVariable [VAR_CPR, 100])
 #define GET_RO2(unit)                  (unit getVariable [VAR_RO2, 80])
+#define GET_CONCUSSION(unit)           (unit getVariable [VAR_CONCUSSION, 0])
 
 // Breathing
 #define VAR_SURFACE_AREA                QEGVAR(breathing,lungSurfaceArea)

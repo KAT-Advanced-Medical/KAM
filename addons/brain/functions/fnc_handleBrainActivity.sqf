@@ -14,7 +14,8 @@
  *
  * Public: No
  */
-
+params ["_unit"];
+if (_unit getVariable [QEGVAR(vitals,simpleMedical), false]) exitWith {};
  if (!local _unit) then {
     [QGVAR(handleBrainActivity), [_unit], _unit] call CBA_fnc_targetEvent;
 };
@@ -46,9 +47,10 @@ private _newPFH = [{
 	//Calculate tissue necrosis and brain death
 	private _necrosis = _unit getVariable [QGVAR(necrosis),0];
 	private _deoxygenatedTicks = _unit getVariable [QGVAR(deoxygenatedTicks),0];
-	_deoxygenatedTicks = [_deoxygenatedTicks + 1,_deoxygenatedTicks - 2] select (rO2 < GVAR(necrosisThreshold));
-	_deoxygenatedTicks = (0 max _dexoxygenation) min GVAR(necrosisTicks);
-	if (_deoxygenatedTicks == GVAR(necrosisThreshold)) then {
+	_deoxygenatedTicks = [_deoxygenatedTicks + 0.25, _deoxygenatedTicks - 0.5] select (_rO2 > GVAR(necrosisThreshold));
+	_deoxygenatedTicks = (_deoxygenatedTicks max 0) min 100;
+	_unit setVariable [QGVAR(deoxygenatedTicks),_deoxygenatedTicks,true];
+	if (_deoxygenatedTicks >= GVAR(necrosisTicks)) then {
 		_necrosis = (_necrosis + GVAR(necrosisIncrease)) min 100;
 		if (_necrosis > random [75, 85, 100]) then {
 			_unit setDamage 1;
@@ -68,11 +70,12 @@ private _newPFH = [{
 	if (_unit getVariable [QGVAR(concussionPFH),0] isEqualTo 0) then {
 		
 		//Reduce ICP if no longer swelling
-		private _hasSaline = [_unit] call FUNC(findSaline);
-		private _icpReduction = [GVAR(ICPreduction),GVAR(ICPreduction)*GVAR(ICPreductionMult)] select _hasSaline; // Multiply ICP reduction if saline present
+		private _salineFlow = _unit getVariable [QGVAR(salineFlow), 0];
+		private _icpReduction = GVAR(ICPreduction) * _salineFlow * GVAR(ICPreductionMult);
 		private _newICP = _ICP - _icpReduction;
+		private _hasSaline = [_unit] call FUNC(findSaline);
 		// Set "floors" for ICP, preventing ICP from returning to normal levels without saline
-		if (!_hasSaline) then {
+		if (_salineFlow == 0 && !_hasSaline) then {
 			switch (true) do {
 				case (_ICP >= 45): {
 					_newICP = 45 max _newICP;
@@ -80,16 +83,19 @@ private _newPFH = [{
 				case (_ICP >= 38): {
 					_newICP = 38 max _newICP;
 				};
-				default { //Prevent ICP from returning to normal without saline
+				case (_ICP >= 25): {
 					_newICP = 25 max _newICP;
+				};
+				default { //Prevent ICP from returning to normal without saline
+					_newICP = 15 max _newICP;
 				};
 			};
 		};
 		_newICP = 15 max _newICP;
 		_unit setVariable [QGVAR(ICP),_newICP,true];
-
+		_reversibleDamageDiff = ((_reversibleDamage - GVAR(reversibleDamageLoss)) max 0) min 100;
 		//Reduce reversible tissue damage
-		_unit setVariable [QGVAR(reversibleDamage),_reversibleDamage-GVAR(reversibleDamageLoss),true];
+		_unit setVariable [QGVAR(reversibleDamage),_reversibleDamageDiff,true];
 	};
 
 	//Chance to cause bradycardia if ICP is too high
@@ -113,5 +119,5 @@ private _newPFH = [{
 		if ((floor (random 100) >= GVAR(CMRunconsciousChance)) && (_CMR >= GVAR(stableCMR))) exitWith {};
 		[QACEGVAR(medical,CriticalVitals), _unit] call CBA_fnc_localEvent;
 	};
-}, 15, [_unit]] call CBA_fnc_addPerFrameHandler;
+}, 5, [_unit]] call CBA_fnc_addPerFrameHandler;
 _unit setVariable [QGVAR(activityPFH),_newPFH,true];

@@ -40,68 +40,6 @@ class KAT_StateMachine {
             events[] = {QACEGVAR(medical,FatalInjury)};
         };
     };
-    class Dazed {
-        onState = QUOTE(call FUNC(handleStateDazed));
-        onStateEntered = QUOTE(call FUNC(enteredStateDazed));
-        onStateLeaving = QUOTE(call FUNC(leftStateDazed));
-        class FullHeal {
-            targetState = "Default";
-            events[] = {QACEGVAR(medical,FullHeal)};
-        };
-        class WakeUp {
-            targetState = "Injured";
-            condition = QEFUNC(vitals,hasStableVitals);
-            events[] = {QACEGVAR(medical,WakeUp)};
-            onTransition = QUOTE([ARR_2(_this,false)] call ACEFUNC(medical_status,setUnconsciousState));
-        };
-        class DazedStop {
-            targetState = "Unconscious";
-            condition = QUOTE([ARR_2(_this,false)]call FUNC(conditionDazedShift));
-        };
-        class CriticalInjuryOrVitals {
-            targetState = "Unconscious";
-            events[] = {QACEGVAR(medical,CriticalInjury), QACEGVAR(medical,CriticalVitals), QACEGVAR(medical,knockOut)};
-        };
-        class FatalTransitions {
-            targetState = "CardiacArrest";
-            events[] = {QACEGVAR(medical,FatalVitals), QACEGVAR(medical,Bleedout)};
-        };
-        class FatalInjury {
-            targetState = "FatalInjury";
-            events[] = {QACEGVAR(medical,FatalInjury)};
-        };
-    };
-    class CNR {
-        onState = QUOTE(call FUNC(handleStateCNR));
-        onStateEntered = QUOTE(call FUNC(enteredStateCNR));
-        onStateLeaving = QUOTE(call FUNC(leftStateCNR));
-        class FullHeal {
-            targetState = "Default";
-            events[] = {QACEGVAR(medical,FullHeal)};
-        };
-        class WakeUp {
-            targetState = "Injured";
-            condition = QEFUNC(vitals,hasStableVitals);
-            events[] = {QACEGVAR(medical,WakeUp)};
-            onTransition = QUOTE([ARR_2(_this,false)] call ACEFUNC(medical_status,setUnconsciousState));
-        };
-        class DazedStop {
-            targetState = "Dazed";
-            condition = QUOTE([ARR_2(_this,false)]call FUNC(conditionDazedShift));
-        };
-        class CriticalInjuryOrVitals {
-            targetState = "Unconscious";
-            events[] = {QACEGVAR(medical,CriticalInjury), QACEGVAR(medical,CriticalVitals), QACEGVAR(medical,knockOut)};
-        };
-        class FatalTransitions {
-            targetState = "CardiacArrest";
-            events[] = {QACEGVAR(medical,FatalVitals), QACEGVAR(medical,Bleedout)};
-        };
-        class FatalInjury {
-            targetState = "FatalInjury";
-            events[] = {QACEGVAR(medical,FatalInjury)};
-        };
-    };
     class Unconscious {
         onState = QACEFUNC(medical_statemachine,handleStateUnconscious);
         onStateEntered = QACEFUNC(medical_statemachine,enteredStateUnconscious);
@@ -122,11 +60,6 @@ class KAT_StateMachine {
         class FatalInjury {
             targetState = "FatalInjury";
             events[] = {QACEGVAR(medical,FatalInjury)};
-        };
-        class EnterSeizure {
-            targetState = "Seizure";
-            condition = QUOTE((GVAR(enableSeizure))); // wrapped to allow cba to read code  //TODO also check brain sim is on
-            events[] = {QEGVAR(brain,enterSeizure)};
         };
     };
     class FatalInjury {
@@ -171,22 +104,6 @@ class KAT_StateMachine {
             targetState = "Dead";
             condition = QUOTE((ACEGVAR(medical_statemachine,cardiacArrestBleedoutEnabled))); // wrap to ensure cba uses this as code and not a direct variable
             events[] = {QACEGVAR(medical,Bleedout)};
-        };
-    };
-    class Seizure {
-        onStateEntered = QFUNC(enteredStateSeizure);
-        onState = QFUNC(handleStateSeizure);
-        class ExitSeizure {
-            targetState = "Unconscious";
-            events[] = {QEGVAR(brain,exitSeizure)};
-        };
-        class FatalTransitions {
-            targetState = "CardiacArrest";
-            events[] = {QACEGVAR(medical,FatalVitals), QACEGVAR(medical,Bleedout)};
-        };
-        class FatalInjury {
-            targetState = "FatalInjury";
-            events[] = {QACEGVAR(medical,FatalInjury)};
         };
     };
     class Dead {

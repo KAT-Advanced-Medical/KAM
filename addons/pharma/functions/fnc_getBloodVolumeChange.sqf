@@ -157,6 +157,7 @@ if (!isNil {_unit getVariable [QACEGVAR(medical,ivBags),[]]}) then {
                     } else {
                         { _ECP = _ECP + _bagChange; _lossVolumeChange = _lossVolumeChange + (_bagChange / ML_TO_LITERS); };
                     };
+                    _unit setVariable [QEGVAR(brain,salineFlow), _bagChange];
                     _platelets = (_platelets + (_plateletAmount * _bagChange)) max 0;
                 };
                 case(_type == "Ringers Lactate"): {

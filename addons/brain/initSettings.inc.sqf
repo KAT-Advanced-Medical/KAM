@@ -90,26 +90,6 @@
     true
 ] call CBA_Settings_fnc_init;
 
-// Minimum impact damage required to cause healable tissue damage upon receiving a concussion
-[
-	QGVAR(tissueImpactDamage),
-    "SLIDER",
-    [LLSTRING(SETTING_tissueImpactDamage)],
-    [CBA_SETTINGS_CAT, LSTRING(SubCategory_Concussions)],
-    [0, 2, 0.3, 1],
-    true
-] call CBA_Settings_fnc_init;
-
-// Minimum impact damage required to cause instant tissue necrosis upon receiving a concussion
-[
-	QGVAR(necrosisImpactDamage),
-    "SLIDER",
-    [LLSTRING(SETTING_necrosisImpactDamage)],
-    [CBA_SETTINGS_CAT, LSTRING(SubCategory_Concussions)],
-    [0, 2, 0.8, 1],
-    true
-] call CBA_Settings_fnc_init;
-
 //How much reversible damage will decrease by every tick
 [
 	QGVAR(reversibleDamageLoss),

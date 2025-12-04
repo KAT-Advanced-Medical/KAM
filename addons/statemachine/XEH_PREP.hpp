@@ -1,4 +1,3 @@
-PREP(enteredStateSeizure);
-PREP(handleStateSeizure);
+PREP(enteredStateCardiacArrest);
+PREP(handleStateCardiacArrest);
 PREP(localityChangedEH);
-PREP(setSeizureState);

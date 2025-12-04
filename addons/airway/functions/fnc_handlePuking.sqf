@@ -39,7 +39,7 @@ if (_unit getVariable [QEGVAR(vitals,simpleMedical), false]) exitWith {};
     private _nauseaMult = _unit getVariable [QEGVAR(pharma,nauseaMult), 1];
     private _nauseaMult = (_nauseaMult min 6) max 0.1;
     private _icp = _unit getVariable [QEGVAR(brain,ICP),15];
-    private _icpChance = linearConversion [15, 30, _icp, 1, 3, true];
+    private _icpChance = linearConversion [15, 60, _icp, 1, 3, true];
     private _nauseaChance = linearConversion [1, 6, _nauseaMult, 1, 3, true];
     if ((random 100) <= (GVAR(airwayPukeChance) * (_nauseaChance + _icpChance))) then {
         private _occlusionState = _unit getVariable [QGVAR(occlusion), [0, 0, 0]];
