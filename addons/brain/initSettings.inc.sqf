@@ -1,4 +1,3 @@
-#define CBA_SETTINGS_CAT "KAT - ADV Medical: Brain Injuries"
 
 //Enable traumatic brain injuries
 [

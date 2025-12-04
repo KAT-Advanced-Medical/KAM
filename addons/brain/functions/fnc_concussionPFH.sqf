@@ -49,7 +49,6 @@ private _pfh = [{
         _edema = (_edema - 0.005) max 0;
     };
     _concussion = (_concussion - 0.002) max 0;
-    systemChat format ["concussionICP %1, %2, %3, %4", _targetICP, _ICP, _edema, _bleeding];
     _unit setVariable [QGVAR(edema), _edema, true];
     _unit setVariable [QGVAR(ICP), _ICP, true];
     _unit setVariable [QGVAR(necrosis), _necrosis, true];

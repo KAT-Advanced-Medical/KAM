@@ -49,8 +49,17 @@ if (floor (random 100) <= _concussionChance) then {
         _bleeding = (_bleeding + _newBleed) min 1;
     };
 
-    if (_damage > 1.85) then {
+    if (_damage > 3) then {
         _necrosis = (_necrosis + random [1,3,5]) min 5;
+    };
+
+    if (_damage > 5) then {
+        _necrosis = (_necrosis + random [1,6,12]) min 12;
+        _unit setUnconscious false;
+        [{
+            params ["_unit"];
+            _unit setUnconscious false;
+        }, [_unit], 3] call CBA_fnc_waitAndExecute;
     };
 
     _unit setVariable [QGVAR(concussion), _newConcussion, true];
