@@ -3560,5 +3560,17 @@
         <Key ID="STR_KAT_Breathing_chestTubeDrainAmount_desc">
             <English>How much, In mLs, a Chest Tube drains per 5 seconds</English>
         </Key>
+        <Key ID="STR_KAT_Breathing_breathing_isCheyne">
+            <English>Patient's breathing shows signs of Cheyne-Stokes</English>
+        </Key>
+        <Key ID="STR_KAT_Breathing_breathing_isIrreg">
+            <English>Patient's breathing is Irregular</English>
+        </Key>
+        <Key ID="STR_KAT_Breathing_breathing_isBiots">
+            <English>Patient's breathing is agonal and slow</English>
+        </Key>
+        <Key ID="STR_KAT_Breathing_breathing_isAgonal">
+            <English>Patient's breathing is agonal and slow</English>
+        </Key>
     </Package>
 </Project>

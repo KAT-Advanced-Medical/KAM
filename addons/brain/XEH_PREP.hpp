@@ -4,5 +4,6 @@ PREP(findSaline);
 PREP(fullHealLocal);
 PREP(handleAutoregulation);
 PREP(handleBrainActivity);
+PREP(handleEarRinging);
 PREP(handleRespawn);
 PREP(init);

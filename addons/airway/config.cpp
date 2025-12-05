@@ -46,3 +46,4 @@ class CfgPatches {
 #include "CfgWeapons.hpp"
 #include "CfgVehicles.hpp"
 #include "ACE_Medical_Treatment_Actions.hpp"
+#include "CfgSounds.hpp"

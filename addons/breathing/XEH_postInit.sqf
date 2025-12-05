@@ -16,6 +16,11 @@
     _unit say3D [QGVAR(pneumothoraxcough), 15];
 }] call CBA_fnc_addEventHandler;
 
+[QGVAR(playGasp), {
+    params ["_unit"];
+    _unit say3D [QGVAR(breathingGasp), 15];
+}] call CBA_fnc_addEventHandler;
+
 [QGVAR(playRespiratorTone), {
     params ["_unit"];
     _unit say3D [QGVAR(respiratorTone), 10];

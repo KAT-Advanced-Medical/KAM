@@ -36,26 +36,25 @@ if (GVAR(ppConcussion) != -1) then {
 };
 
 // Scale the severity
-systemChat str _concussionSeverity;
-private _ppMult = linearConversion [0, 10, _concussionSeverity, 1, 3, true];
+private _ppMult = linearConversion [0, 1, _concussionSeverity, 1, 8, true];
 
 // Apply the concussion visual effect
 GVAR(ppConcussion) ppEffectAdjust [
     0.51,
     0.2,
     0.2,
-    1 * _ppMult,
-    1 * _ppMult,
-    1 * _ppMult,
-    1 * _ppMult,
-    0.05 * _ppMult,
-    0.01 * _ppMult,
-    0.05 * _ppMult,
-    0.01 * _ppMult,
-    0.1 * _ppMult,
-    0.1 * _ppMult,
-    0.2 * _ppMult,
-    0.2 * _ppMult
+    1,
+    1,
+    1,
+    1,
+    0.05 * (_ppMult * random [0.6, 1, 1.4]),
+    0.01 * (_ppMult * random [0.6, 1, 1.4]),
+    0.05 * (_ppMult * random [0.6, 1, 1.4]),
+    0.01 * (_ppMult * random [0.6, 1, 1.4]),
+    0,
+    0,
+    0,
+    0
 ];
 
 GVAR(ppConcussion) ppEffectCommit 1;

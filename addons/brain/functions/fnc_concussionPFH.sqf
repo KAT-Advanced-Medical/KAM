@@ -53,6 +53,8 @@ private _pfh = [{
     _unit setVariable [QGVAR(ICP), _ICP, true];
     _unit setVariable [QGVAR(necrosis), _necrosis, true];
     _unit setVariable [QGVAR(concussion), _concussion, true];
+    private _earRinging = linearConversion [0, 1, _concussion, 0, 20, true];
+    GVAR(concussionRinging) = _earRinging;
     _unit setVariable [QGVAR(reversibleDamage),_reversibleDamage,true];
     if ((_edema == 0) && (_concussion == 0) && (_bleeding == 0) && (_ICP <= 20) && (_reversibleDamage == 0)) then {
         _unit setVariable [QGVAR(concussionPFH), nil];

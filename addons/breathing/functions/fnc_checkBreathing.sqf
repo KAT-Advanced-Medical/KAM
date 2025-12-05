@@ -22,10 +22,12 @@ params ["_medic", "_patient"];
 private _ph = GET_PH(_patient);
 private _hr = GET_HEART_RATE(_patient);
 private _rawRR = GET_BREATHING_RATE(_patient);
+private _icp = GET_ICP(_patient);
+private _cardiacOutput = [_patient] call EFUNC(vitals,getCardiacOutput);
 private _rr = round _rawRR;
 private _output = "";
 private _output_log = "";
-
+private _height = 1.5;
 private _breathing = LLSTRING(breathing_isNormal);
 private _breathing_log = localize ACELSTRING(medical_treatment,Check_Pulse_Normal);
 private _breath = "";
@@ -60,9 +62,31 @@ if ([_medic] call ACEFUNC(common,isMedic)) then {
         default { _breathRate = LLSTRING(breathing_rrNormal); };
     };
 };
-
 _output = format ["%1%2, %3", _breathing ,_breath, _breathRate];
 _output_log = format ["%1%2, %3", _breathing_log, _breath, _breathRate];
+private _breathingState = _patient getVariable [QEGVAR(vitals,breathingState), 0];
+switch (_breathingState) do {
+    case 1: {
+        _breathing_alt = LLSTRING(breathing_isCheyne);
+        _output = format ["%1%2, %3, %4", _breathing ,_breath, _breathRate, _breathing_alt];
+        _height = 3;
+    };
+    case 2: {
+        _breathing_alt = LLSTRING(breathing_isIrreg);
+        _output = format ["%1%2, %3, %4", _breathing ,_breath, _breathRate, _breathing_alt];
+        _height = 3;
+    };
+    case 3: {
+        _breathing_alt = LLSTRING(breathing_isBiots);
+        _output = format ["%1%2, %3, %4", _breathing ,_breath, _breathRate, _breathing_alt];
+        _height = 3;
+    };
+    case 4: {
+        _breathing_alt = LLSTRING(breathing_isAgonal);
+        _output = format ["%1%2, %3, %4", _breathing ,_breath, _breathRate, _breathing_alt];
+        _height = 3;
+    };
+};
 
 private _isbreathing = true;
 private _paralysis = _patient getVariable [QGVAR(paralysis), 0] > 0.1;
@@ -75,7 +99,7 @@ if (_hr == 0 || !(alive _patient) || !_airway || !_isbreathing || _rr == 0) then
     _output_log = ACELSTRING(medical_treatment,Check_Pulse_None);
 };
 
-[_output, 1.5, _medic] call ACEFUNC(common,displayTextStructured);
+[_output, _height, _medic] call ACEFUNC(common,displayTextStructured);
 
 [_patient, "quick_view", LSTRING(CheckBreathing_Log)] call EFUNC(circulation,removeLog);
 [_patient, "quick_view", LSTRING(CheckBreathing_Log), [[_medic] call ACEFUNC(common,getName), _output_log]] call ACEFUNC(medical_treatment,addToLog);

@@ -1,5 +1,6 @@
 PREP(effectAirways);
 PREP(effectAirwaysColor);
+PREP(effectBreathingGasp);
 PREP(effectBreathingWheeze);
 PREP(effectConcussion);
 PREP(effectEyeBlink);

@@ -72,3 +72,4 @@ class CfgPatches {
 #include "ACE_Medical_Treatment_Actions.hpp"
 #include "ui\CrossPanel_Dialog.hpp"
 #include "ui\AEDX_Monitor_Dialog.hpp"
+#include "CfgSounds.hpp"
