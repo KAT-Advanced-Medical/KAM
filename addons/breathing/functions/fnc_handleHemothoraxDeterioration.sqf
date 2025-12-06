@@ -26,7 +26,7 @@ private _fnc_createInternalBleeding = {
     private _woundClassIDToAdd = ACEGVAR(medical_damage,woundClassNames) find _woundTypeToAdd;
     private _injuryBleedingRate = random [0.01, 0.015, 0.02];
     private _bleedMultiplier = random [0.8, 1, 1.2];
-    private _woundSize = selectRandom [1, 1, 1, 2, 2, 3];
+    private _woundSize = selectRandom [0, 0, 0, 1, 1, 2];
     private _bleeding = _woundSize * _bleedMultiplier * _injuryBleedingRate;
     private _classComplex = 10 * _woundClassIDToAdd + _woundSize;
     // Create a new injury. Format [0:classComplex, 1:amountOf, 2:bleedingRate, 3:woundDamage]
@@ -35,6 +35,7 @@ private _fnc_createInternalBleeding = {
     _existingWounds pushBack _injury;
     _unit setVariable [VAR_OPEN_WOUNDS, _openWounds, true];
     _unit setVariable [VAR_BODYPART_DAMAGE, _bodyPartDamage, true];
+    [_unit] call ACEFUNC(medical_status,updateWoundBloodLoss);
 };
 if (_initial) then {
     private _amount = floor random [1, 3, 5];

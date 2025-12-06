@@ -50,8 +50,6 @@ if ((_target getVariable [QGVAR(fractures), [0,0,0,0,0,0,0,0,0,0,0,0]]) select _
         case 3.7: {
             _entries pushBack [LLSTRING(Plated), [0.3, 0.8, 0.8, 1]];
         };
-        default {
-            _entries pushBack [LLSTRING(Status_Error), [0.3, 0.8, 0.8, 1]];
-        };
+        default {};
     }; 
 };

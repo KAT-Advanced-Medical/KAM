@@ -57,10 +57,10 @@ private _fnc_clotWound = {
             private _coagulationFactor = GET_BODY_FLUID_PLATELETS(_unit);
             private _hypothermiaDelay = 1;
             if (EGVAR(hypothermia,hypothermiaActive)) then {
-                _hypothermiaDelay = linearConversion [35, 30, (_unit getVariable [QEGVAR(hypothermia,unitTemperature), 37]), 1, 3, true];
+                _hypothermiaDelay = linearConversion [35, 30, (_unit getVariable [QEGVAR(hypothermia,unitTemperature), 37]), 1, 4, true];
             };
             if (EGVAR(hypothermia,hypothermiaActive) && (_unit getVariable [QEGVAR(hypothermia,unitTemperature), 37]) < 30) exitWith {};
-            private _woundClotDelayMult = (1 * _alteplaseFixedEffectiveness * (600/_coagulationFactor) * _cwmpFixedEffectiveness * _hypothermiaDelay * GET_VASOCONSTRICTION(_unit)) min 10;
+            private _woundClotDelayMult = (1 * (_alteplaseFixedEffectiveness + (600/_coagulationFactor) + _cwmpFixedEffectiveness + _hypothermiaDelay + GET_VASOCONSTRICTION(_unit))) min 10;
             if (_woundClotDelayMult > 6) exitWith {};
             switch (_suffix) do {
                 case "Minor": {

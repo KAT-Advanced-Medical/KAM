@@ -63,6 +63,10 @@ class ACE_Medical_Injuries {
             bleeding = 0.01;
             pain = 0.1;
         };
+        class Incision {
+            bleeding = 0.2;
+            pain = 0.8;
+        };
     };
 
     class damageTypes {

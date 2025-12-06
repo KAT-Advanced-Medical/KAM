@@ -124,6 +124,21 @@ if (ACEGVAR(medical_treatment,clearTrauma) == 1) then {
         case "rightarm": { [_patient, false, false, true, false] call ACEFUNC(medical_engine,updateBodyPartVisuals); };
         default          { [_patient, false, false, false, true] call ACEFUNC(medical_engine,updateBodyPartVisuals); };
     };
+} else {
+    private _partIndex = ALL_BODY_PARTS find _bodyPart;
+    TRACE_2("clearTrauma - clearing trauma after stitching",_bodyPart,_treatedWound);
+    private _bodyPartDamage = GET_BODYPART_DAMAGE(_patient);
+    _bodyPartDamage set [_partIndex, (_bodyPartDamage select _partIndex) - ((_treatedDamageOf * _treatedAmountOf) * 0.5)];
+    _patient setVariable [QEGVAR(medical,bodyPartDamage), _bodyPartDamage, true];
+    TRACE_2("clearTrauma - healed damage",_bodyPart,_treatedDamageOf);
+
+    switch (_bodyPart) do {
+        case "head":     { [_patient, true, false, false, false] call ACEFUNC(medical_engine,updateBodyPartVisuals); };
+        case "body":     { [_patient, false, true, false, false] call ACEFUNC(medical_engine,updateBodyPartVisuals); };
+        case "leftarm";
+        case "rightarm": { [_patient, false, false, true, false] call ACEFUNC(medical_engine,updateBodyPartVisuals); };
+        default          { [_patient, false, false, false, true] call ACEFUNC(medical_engine,updateBodyPartVisuals); };
+    };
 };
 
 if (
