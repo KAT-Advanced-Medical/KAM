@@ -68,18 +68,13 @@ GVAR(ppBlurBlink) = [
 // - Low CMR (brain addon) ---------------------------------------------
 GVAR(minorLossCMR) = [
     "DynamicBlur",
-    213711,
+    213712,
     [0]
 ] call _fnc_createEffect;
 
-GVAR(ppICPSpike) = [
-    "DynamicBlur",
-    213713,
-    [0]
-] call _fnc_createEffect;
 
 GVAR(ppConcussion) = [
     "WetDistortion",
-    213712,
+    213711,
     [0.51,0.2,0.2,1,1,1,1,0.05,0.01,0.05,0.01,0.1,0.1,0.2,0.2]
 ] call _fnc_createEffect;

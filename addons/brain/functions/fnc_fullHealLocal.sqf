@@ -38,5 +38,5 @@ _patient setVariable [QGVAR(bleeding),0,true];
 _patient setVariable [QGVAR(autoregulationPFH), [_patient] call FUNC(handleAutoregulation),true];
 _patient setVariable [QGVAR(activityPFH), [_patient] call FUNC(handleBrainActivity),true];
 
-_patient setVariable [QGVAR(concussionPFH),0,true];
+_patient setVariable [QGVAR(concussionPFH),nil,true];
 _patient setVariable [QGVAR(concussion),0,true];

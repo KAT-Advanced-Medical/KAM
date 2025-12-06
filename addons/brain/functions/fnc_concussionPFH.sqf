@@ -26,6 +26,7 @@ private _pfh = [{
     _args params ["_unit"];
     if (!alive _unit) exitWith {
         [_pfhID] call CBA_fnc_removePerFrameHandler;
+        _unit setVariable [QGVAR(concussionPFH), nil];
     };
     private _edema    = _unit getVariable [QGVAR(edema),0];
     private _bleeding = _unit getVariable [QGVAR(bleeding),0];

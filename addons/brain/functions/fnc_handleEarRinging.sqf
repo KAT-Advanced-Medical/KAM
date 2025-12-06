@@ -28,10 +28,10 @@ if (_concussion > 0) then {
     private _concussion = ACE_player getVariable [QEGVAR(brain,concussion), 0];
     switch (true) do {
         case (_concusssion > 0.5): {
-            playSoundUI ["ACE_Combat_Deafness_Heavy", _effectsVolume];
+            playSoundUI [["ACE_Combat_Deafness_Heavy", "ACE_Combat_Deafness_Heavy_NoRing"] select ACEGVAR(hearing,disableEarRinging), _effectsVolume];
         };
         default {
-            playSoundUI ["ACE_Combat_Deafness_Medium", _effectsVolume];
+            playSoundUI [["ACE_Combat_Deafness_Medium", "ACE_Combat_Deafness_Medium_NoRing"] select ACEGVAR(hearing,disableEarRinging), _effectsVolume];
         };
     };
 };

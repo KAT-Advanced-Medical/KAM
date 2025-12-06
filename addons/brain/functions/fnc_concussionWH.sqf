@@ -19,19 +19,18 @@
  *
  * Public: No
  */
-params ["_unit", "_allDamages", "_ammo"];
+params ["_unit", "_allDamages", "_typeOfDamage"];
 if (_unit getVariable [QEGVAR(vitals,simpleMedical), false]) exitWith {};
 (_allDamages select 0) params ["_damage", "_bodyPart"]; // selection-specific
-
-if (_bodyPart == "head") exitWith {};
+if !(GVAR(enable) && _bodyPart == "head") exitWith {_this};
 if (_unit getVariable [QEGVAR(vitals,simpleMedical), false]) exitWith {};
 if (_damage <= 0) exitWith {};
 // Increase the chance based on how much damage was received 
 private _chanceIncrease = linearConversion [0,1,_damage,5,30,true];
 // Increase the chance of concussions depending on the damage type
 private _chanceMultiplier = 1;
-if (_ammo in ["vehiclehit","explosive","shell","vehiclecrash"]) then {
-	_chanceMultiplier = linearConversion [0,3,(["vehiclehit","explosive","shell","vehiclecrash"] find _ammo),1.2,2,true];
+if (_typeOfDamage in ["vehiclehit","explosive","shell","vehiclecrash"]) then {
+	_chanceMultiplier = linearConversion [0,3,(["vehiclehit","explosive","shell","vehiclecrash"] find _typeOfDamage),1.2,2,true];
 };
 
 private _concussionChance = (GVAR(concussionChance) + _chanceIncrease) * _chanceMultiplier;
@@ -41,13 +40,13 @@ if (floor (random 100) <= _concussionChance) then {
     private _bleeding   = _unit getVariable [QGVAR(bleeding), 0];
     private _necrosis   = _unit getVariable [QGVAR(necrosis), 0];
 
-    private _base = random [0.1, 0.2, 0.4];
-    private _impactFactor = linearConversion [0, 1, _damage, 0.2, 0.8, true];
+    private _base = random [0.05, 0.1, 0.2];
+    private _impactFactor = linearConversion [0, 6, _damage, 0.1, 0.8, true];
     private _newConcussion = (_base + _impactFactor) min 1;
 
     private _newEdema = _edema + linearConversion [0,1,_damage,0,0.25,true];
 
-    if (_damage > 0.6 || {_ammo in ["vehiclehit","explosive","shell","vehiclecrash"]}) then {
+    if (_damage > 0.6 || {_typeOfDamage in ["vehiclehit","explosive","shell","vehiclecrash"]}) then {
         private _newBleed = random [0,0.1,0.25];
         _bleeding = (_bleeding + _newBleed) min 1;
     };
@@ -58,10 +57,12 @@ if (floor (random 100) <= _concussionChance) then {
 
     if (_damage > 5) then {
         _necrosis = (_necrosis + random [1,6,12]) min 12;
-        _unit setUnconscious false;
+        _unit setUnconscious true;
         [{
             params ["_unit"];
-            _unit setUnconscious false;
+            if !(IS_UNCONSCIOUS(_unit)) then {
+                _unit setUnconscious false;
+            };
         }, [_unit], 3] call CBA_fnc_waitAndExecute;
     };
 
@@ -74,3 +75,5 @@ if (floor (random 100) <= _concussionChance) then {
         [_unit] call FUNC(concussionPFH);
     };
 };
+
+_this
