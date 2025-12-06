@@ -206,7 +206,7 @@ if ((IN_CRDC_ARRST(_unit)) || !_airway || _paralysis) then {
             _respiratoryDepth = _baseRespiratoryDepth * (0.2 + random 1.2);
             _tidalVolume = GET_KAT_SURFACE_AREA(_unit) * (_respiratoryDepth / 10);
             _actualVentilation = (_tidalVolume * _respiratoryRate) * _bronchospasm;
-            playSound3D [QPATHTOF_SOUND(audio\gasp.ogg), _unit, false, getPosASL _unit, 6, 1, 12];
+            playSound3D [QPATHTOF_SOUND(audio\gasp.ogg), _unit, false, getPosASL _unit, 6, 1, 8];
         };
 
         _patternApplied = true;
@@ -240,7 +240,7 @@ if ((IN_CRDC_ARRST(_unit)) || !_airway || _paralysis) then {
                 _respiratoryDepth = _baseRespiratoryDepth * (2.0 + random 1.0);
                 _tidalVolume = GET_KAT_SURFACE_AREA(_unit) * (_respiratoryDepth / 10);
                 _actualVentilation = (_tidalVolume * _respiratoryRate) * _bronchospasm;
-                playSound3D [QPATHTOF_SOUND(audio\gasp.ogg), _unit, false, getPosASL _unit, 6, 1, 12];
+                playSound3D [QPATHTOF_SOUND(audio\gasp.ogg), _unit, false, getPosASL _unit, 6, 1, 8];
             } else {
                 _respiratoryRate = 0;
                 _respiratoryDepth = 0;
