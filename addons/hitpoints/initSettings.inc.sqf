@@ -76,7 +76,7 @@
     "SLIDER",
     [LLSTRING(SETTING_EffectDamageThreshold), LLSTRING(SETTING_EffectDamageThreshold_DESC)],
     [CBA_SETTINGS_CAT, ELSTRING(GUI,SubCategory_Basic)],
-    [0, 30, 10, 1],
+    [1, 40, 15, 1],
     true
 ] call CBA_fnc_addSetting;
 

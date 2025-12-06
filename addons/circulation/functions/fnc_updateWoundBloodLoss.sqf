@@ -20,6 +20,7 @@ params ["_unit"];
 
 TRACE_1("updateWoundBloodLoss",_unit);
 private _tourniquets = GET_KAT_TOURNIQUETS(_unit);
+private _damage = GET_BODYPART_DAMAGE(_unit);
 private _occlusionMap = [
     [4, [4, 5]],
     [5, [5]],
@@ -43,6 +44,10 @@ private _bodyExternalPartBleeding = [0,0,0,0,0,0,0,0,0,0,0,0];
     private _result = if (_idx != -1) then { _occlusionMap select _idx select 1 } else { [] };
     private _isOccluded = { _tourniquets select _x >= 1 } count _result > 0;
     private _occlusionLevel = if (_result isNotEqualTo []) then { selectMax (_result apply { _tourniquets select _x }) } else { 0 };
+
+    private _resultDamage = if (_idx != -1) then { _occlusionMap select _idx select 1 } else { [] };
+    private _damagedLevel = if (_resultDamage isNotEqualTo []) then { selectMax (_resultDamage apply { _damage select _x }) } else { 0 };
+    private _damageFixed = linearConversion [0, 40, _damagedLevel, 0, 1, true];
     private _isPressureApplied = _pressureApplied > 0;
     if (!_isOccluded) then {
         private _partBleeding = 0;
@@ -56,16 +61,16 @@ private _bodyExternalPartBleeding = [0,0,0,0,0,0,0,0,0,0,0,0];
             if (_isPressureApplied || (_occlusionLevel > 0)) then {
                 switch (true) do {
                     case (_suffix == "Minor"): {
-                        _partBleeding = _partBleeding + ((_amountOf * _bleeding) * (1 - (_pressureApplied * 1.5)) * (1 - _occlusionLevel));
+                        _partBleeding = _partBleeding + ((_amountOf * _bleeding) * (1 - (_pressureApplied * 1.5)) * (1 - _occlusionLevel) * (1 - _damageFixed));
                     };
                     case (_suffix == "Medium"): {
-                        _partBleeding = _partBleeding + ((_amountOf * _bleeding) * (1 - _pressureApplied) * (1 - _occlusionLevel));
+                        _partBleeding = _partBleeding + ((_amountOf * _bleeding) * (1 - _pressureApplied) * (1 - _occlusionLevel) * (1 - _damageFixed));
                     };
                     case (_suffix == "Large"): {
-                        _partBleeding = _partBleeding + ((_amountOf * _bleeding) * (1 - (_pressureApplied * 0.7)) * (1 - _occlusionLevel));
+                        _partBleeding = _partBleeding + ((_amountOf * _bleeding) * (1 - (_pressureApplied * 0.7)) * (1 - _occlusionLevel) * (1 - _damageFixed));
                     };
                     default {
-                        _partBleeding = _partBleeding + ((_amountOf * _bleeding) * (1 - _pressureApplied) * (1 - _occlusionLevel));
+                        _partBleeding = _partBleeding + ((_amountOf * _bleeding) * (1 - _pressureApplied) * (1 - _occlusionLevel) * (1 - _damageFixed));
                     };
                 };
             } else {
@@ -90,10 +95,6 @@ if (selectMax _bodyPartBleeding == 0) exitWith {
 _bodyPartBleeding params ["_headBleeding","_neckBleeding", "_chestBleeding", "_bodyBleeding", "_leftArmBleeding","_leftUpperArmBleeding", "_rightArmBleeding","_rightUpperArmBleeding", "_leftLegBleeding","_leftUpperLegBleeding", "_rightLegBleeding", "_rightUpperLegBleeding"];
 private _bodyBleedingRate = ((_headBleeding min 0.9) + (_neckBleeding min 0.9) + (_chestBleeding min 1.0) + (_bodyBleeding min 1.0)) min 1.0;
 private _limbBleedingRate = ((_leftArmBleeding min 0.3) + (_leftUpperArmBleeding min 0.3) + (_rightArmBleeding min 0.3) + (_rightUpperArmBleeding min 0.3) + (_leftLegBleeding min 0.5) + (_leftUpperLegBleeding min 0.5) + (_rightLegBleeding min 0.5) + (_rightUpperLegBleeding min 0.5)) min 1.0;
-
-
-// limb bleeding is scaled down based on the amount of body bleeding
-_limbBleedingRate = _limbBleedingRate * ((1 - _bodyBleedingRate) min 0.5);
 
 TRACE_3("updateWoundBloodLoss-bleeding",_unit,_bodyBleedingRate,_limbBleedingRate);
 _unit setVariable [VAR_WOUND_BLEEDING, _bodyBleedingRate + _limbBleedingRate, true];
