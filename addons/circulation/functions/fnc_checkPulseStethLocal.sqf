@@ -25,7 +25,7 @@ private _isDamaged = [_patient,_bodyPartN] call EFUNC(hitpoints,damageCheck);
 
 private _heartRate = 0;
 
-if !(_isOccluded && _isDamaged) then {
+if (!_isOccluded && !_isDamaged) then {
     _heartRate = switch (true) do {
         case (alive _patient): {
             GET_HEART_RATE(_patient)

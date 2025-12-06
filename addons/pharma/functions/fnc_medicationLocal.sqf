@@ -93,17 +93,17 @@ private _isOccluded =
     ({ _tourniquets select _x != 0 } count _result > 0) 
     && !( ((_IVarray select _partIndex isEqualTo 13) && _hasValidSuffix) 
     || (_classname in _subDermalMeds));
-if (_isOccluded) exitWith {
-    TRACE_3("Medication injection site is occluded by tourniquet",_partIndex,_classname,_patient);
-    private _occludedMedications = _patient getVariable [QACEGVAR(medical,occludedMedications), []];
-    _occludedMedications pushBack [_partIndex, _classname, _patient];
-    _patient setVariable [QACEGVAR(medical,occludedMedications), _occludedMedications, true];
-};
 private _isDamaged = [_patient,_partIndex] call EFUNC(hitpoints,damageCheck);
 private _isTooDamaged = 
     ((_isDamaged) && !(_classname in _subDermalMeds));
 if (_isTooDamaged) exitWith {
     TRACE_3("Medication injection site is too damaged",_partIndex,_classname,_patient);
+};
+if (_isOccluded) exitWith {
+    TRACE_3("Medication injection site is occluded by tourniquet",_partIndex,_classname,_patient);
+    private _occludedMedications = _patient getVariable [QACEGVAR(medical,occludedMedications), []];
+    _occludedMedications pushBack [_partIndex, _classname, _patient];
+    _patient setVariable [QACEGVAR(medical,occludedMedications), _occludedMedications, true];
 };
 private _isInCA = _patient getVariable [QACEGVAR(medical,inCardiacArrest), false];
 if (_isInCA && ((_IVarray select _partIndex) in [2,3,4,10,11,12]) && !_isFlushed) exitWith {

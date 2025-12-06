@@ -45,7 +45,7 @@ if (_patient getVariable ["kat_AEDXPatient_PFH", -1] isEqualTo -1) then {
         private _partIndex = ((_patient getVariable [QGVAR(AED_X_VitalsMonitor_Provider), [objNull, -1, 3]]) select 2);
         private _tourniquetApplied = HAS_TOURNIQUET_APPLIED_ON(_patient,_partIndex);
         private _isOccluded = [_patient,_partIndex] call EFUNC(pharma,occlusionCheck);
-
+        private _isDamaged = [_patient,_partIndex] call EFUNC(hitpoints,damageCheck);
         private _hr = 0;
         private _pr = 0;
         private _bp = [0,0];
@@ -79,13 +79,14 @@ if (_patient getVariable ["kat_AEDXPatient_PFH", -1] isEqualTo -1) then {
             };
         };
 
-        if (_isOccluded) then {
+        if (_isOccluded || _isDamaged) then {
             _bp = [0,0];
             _pr = 0;
         };
         private _partIndex2 = ((_patient getVariable [QGVAR(AED_X_VitalsMonitor_Provider), [-1, -1, -1]]) select 2) - 1;
+        private _isSPO2Damaged = [_patient,_partIndex2] call EFUNC(hitpoints,damageCheck);
         private _isSPO2Occluded = [_patient,_partIndex2] call EFUNC(pharma,occlusionCheck);
-        if !(_isSPO2Occluded) then {
+        if (_isSPO2Occluded || _isSPO2Damaged) then {
             _spO2 = GET_KAT_SPO2(_patient);
         };
         

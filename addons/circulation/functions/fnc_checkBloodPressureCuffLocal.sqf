@@ -26,7 +26,7 @@ private _isOccluded = [_patient,_bodyPartN] call EFUNC(pharma,occlusionCheck);
 private _isDamaged = [_patient,_bodyPartN] call EFUNC(hitpoints,damageCheck);
 
 
-if (alive _patient && !((_isOccluded) && (_isDamaged))) then {
+if (alive _patient && (!_isOccluded && !_isDamaged)) then {
     _bloodPressure = [_patient] call FUNC(getBloodPressure);
 };
 

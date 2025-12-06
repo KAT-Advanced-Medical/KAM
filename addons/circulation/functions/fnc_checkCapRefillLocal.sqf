@@ -29,7 +29,7 @@ private _strokeVolume = _patient call EFUNC(vitals,getDefaultStrokeVolume);
 private _heartRate = GET_HEART_RATE(_patient);
 private _defaultCardiacOutput = (_strokeVolume * _heartRate) / 60;
 private _cardiacOutputRatio = _cardiacOutput/_defaultCardiacOutput;
-if (((_isOccluded) || (_isDamaged))) then {
+if (!_isOccluded && !_isDamaged) then {
     _capRefillOutput = LSTRING(Check_capRefill_Output_NoRefill);
     _logCapRefillOutput = LSTRING(Check_capRefill_Output_NoRefill_log);
 } else {
