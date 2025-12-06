@@ -67,7 +67,7 @@ private _newPFH = [{
 
 	private _ICP = _unit getVariable [QGVAR(ICP),15];
 	
-	if (isNil {_unit getVariable [QGVAR(concussionPFH), nil]}) then {
+	if (_unit getVariable [QGVAR(isSwelling), false]) then {
 		
 		//Reduce ICP if no longer swelling
 		private _salineFlow = (_unit getVariable [QGVAR(salineFlow), 0]) / 5;

@@ -32,6 +32,7 @@ _patient setVariable [QGVAR(mapHighTicks),0,true];
 _patient setVariable [QGVAR(autoregFatigue),0,true];
 _patient setVariable [QGVAR(edema),0,true];
 _patient setVariable [QGVAR(bleeding),0,true];
+_patient setVariable [QGVAR(isSwelling),false,true];
 
 
 //TODO fix these PFHs so that they dont create duplicates when a player is healed

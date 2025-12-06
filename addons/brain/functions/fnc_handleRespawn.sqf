@@ -38,3 +38,4 @@ _unit setVariable [QEGVAR(brain,concussionPFH),nil,true];
 _unit setVariable [QEGVAR(brain,concussion),0,true];
 _unit setVariable [QGVAR(edema),0,true];
 _unit setVariable [QGVAR(bleeding),0,true];
+_unit setVariable [QGVAR(isSwelling),false,true];

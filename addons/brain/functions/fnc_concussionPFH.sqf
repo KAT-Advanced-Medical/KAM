@@ -29,6 +29,7 @@ private _pfh = [{
         _unit setVariable [QGVAR(concussionPFH), nil];
     };
     private _edema    = _unit getVariable [QGVAR(edema),0];
+    private _oldEdema    = _unit getVariable [QGVAR(edema),0];
     private _bleeding = _unit getVariable [QGVAR(bleeding),0];
     private _ICP      = _unit getVariable [QGVAR(ICP),15];
     private _necrosis = _unit getVariable [QGVAR(necrosis),0];
@@ -38,16 +39,21 @@ private _pfh = [{
         _edema = (_edema + 0.01) min _concussion; // slow swelling
     };
     private _targetICP = 15 + (_edema * 10) + (_bleeding * 20);
-    _ICP = _ICP + ((_targetICP - _ICP) * 0.2);
+    _ICP = _ICP + ((_targetICP - _ICP) * 0.025);
     if (_ICP > 35) then {
         _necrosis = _necrosis + ((_ICP - 25) * 0.002) min 1;
     };
     if (_ICP > 20) then {
         _concussion = (_concussion + 0.01) min 1;
-        _reversibleDamage = _reversibleDamage + ((_ICP - 25) * 0.02) min 1;
+        _reversibleDamage = _reversibleDamage + ((_ICP - 20) * 0.02) min 1;
     };
-    if (_edema > 0 && {_ICP < 18}) then {
+    if (_edema > 0 && {_ICP < 20}) then {
         _edema = (_edema - 0.005) max 0;
+    };
+    if (_edema > _oldEdema) then {
+        _unit setVariable [QGVAR(isSwelling), true, true];
+    } else {
+        _unit setVariable [QGVAR(isSwelling), false, true];
     };
     _concussion = (_concussion - 0.002) max 0;
     _unit setVariable [QGVAR(edema), _edema, true];
