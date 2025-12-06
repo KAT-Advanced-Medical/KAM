@@ -98,7 +98,24 @@ if ((IN_CRDC_ARRST(_unit)) || !_airway || _paralysis) then {
         _respiratoryDepth = 0;
     };  
 } else {
-    // Ventilatory Demand comes from Heart Rate with increase demand from PaCO2 levels
+    if (_unit getVariable [QEGVAR(breathing,BVMInUse), false]) then {
+        _respiratoryRate  = 20;
+        _respiratoryDepth = 12;
+        private _baseTidalVolume = (((GET_KAT_SURFACE_AREA(_unit) * (_respiratoryDepth / 10)) min 0.8) max 0.2);
+        _tidalVolume = _baseTidalVolume;
+        _actualVentilation = (_tidalVolume * _respiratoryRate) * _bronchospasm;
+        _patternApplied = true;
+    };
+
+    if (_unit getVariable [QEGVAR(breathing,attachedVent), false]) then {
+        _respiratoryRate = (60 / (_unit getVariable [QEGVAR(breathing,ventRate), 5])) max 1;
+        _respiratoryDepth = 12;
+        private _baseTidalVolume = (((GET_KAT_SURFACE_AREA(_unit) * (_respiratoryDepth / 10)) min 0.8) max 0.2);
+        _tidalVolume = _baseTidalVolume;
+        _actualVentilation = (_tidalVolume * _respiratoryRate) * _bronchospasm;
+        _patternApplied = true;
+    };
+
     private _contractility = (_unit getVariable [QEGVAR(pharma,heartContractility), 1]) max 0.2;
     private _contractilityMult = linearConversion [0.2, 1.8, _contractility, 0.5, 1.5, true];
     _demandVentilation = (((((_actualHeartRate / _contractilityMult) * HEART_RATE_CO2_MULTIPLIER) / _anerobicPressure) + ((_previousCyclePaco2 - DEFAULT_PACO2) * 200)) max MINIMUM_VENTILATION);
@@ -137,49 +154,8 @@ if ((IN_CRDC_ARRST(_unit)) || !_airway || _paralysis) then {
     };
 
     if (!_patternApplied && (_icp >= 32) && (_icp < 38)) then {
-        private _t = CBA_missionTime;
-        private _frequency = 1/120;          // 1 Hz = one full sine wave per second
-        private _amplitude = 5;          // peak is +5, trough is -5
-        private _phase = 0;              // no phase shift
-
-        private _value = (sin ((_t * _frequency * 360) + _phase)) * _amplitude;
-        private _env = linearConversion [-5, 5, _value, 0, 2, true];
-        private _rate = 15;
-        private _depth = 10;
-        switch (true) do {
-            case ((_env >= 0) && (_env < 0.25)): {
-                _rate = floor random [12, 15, 18];
-                _depth = floor random [5, 6, 8];
-            };
-            case ((_env >= 0.25) && (_env < 0.5)): {
-                _rate = floor random [8, 10, 12];
-                _depth = floor random [14, 17, 20];
-            };
-            case ((_env >= 0.5) && (_env < 0.75)): {
-                _rate = floor random [17, 21, 25];
-                _depth = floor random [5, 6, 8];
-            };
-            case ((_env >= 0.75) && (_env < 1)): {
-                _rate = floor random [8, 10, 12];
-                _depth = floor random [5, 6, 8];
-            };
-            case ((_env >= 1) && (_env < 1.25)): {
-                _rate = floor random [8, 10, 12];
-                _depth = floor random [14, 17, 20];
-            };
-            case ((_env >= 1.25) && (_env < 1.5)): {
-                _rate = floor random [27, 31, 36];
-                _depth = floor random [13, 15, 19];
-            };
-            case ((_env >= 1.5) && (_env < 1.75)): {
-                _rate = floor random [21, 38, 36];
-                _depth = floor random [5, 6, 8];
-            };
-            default {
-                _rate = floor random [12, 15, 18];
-                _depth = floor random [11, 17, 23];
-            };
-        };
+        private _rate = floor random [5, 15, 35];
+        private _depth = floor random [3, 10, 25];
 
         if ((random 1) < 0.10) then {
             _respiratoryRate = 0;
@@ -277,6 +253,7 @@ if ((IN_CRDC_ARRST(_unit)) || !_airway || _paralysis) then {
         };
     };
     if (!_patternApplied) then {
+    _unit setVariable [QGVAR(breathingState), 0, true];
     _respiratoryRate = (((_demandVentilation / _baseTidalVolume) * _respiratoryRateMult) min MAXIMUM_RR);
 
     if (!_patternApplied && (_previousCyclePaco2 > 50)) then { _respiratoryRate = (_respiratoryRate + ((_previousCyclePaco2 - 50) * 0.2)) min MAXIMUM_RR};
