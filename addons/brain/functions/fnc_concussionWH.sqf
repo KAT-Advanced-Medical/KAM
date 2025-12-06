@@ -44,7 +44,7 @@ if (floor (random 100) <= _concussionChance) then {
     private _impactFactor = linearConversion [0, 6, _damage, 0.1, 0.8, true];
     private _newConcussion = (_base + _impactFactor) min 1;
 
-    private _newEdema = _edema + linearConversion [0,1,_damage,0,0.25,true];
+    private _newEdema = _edema + linearConversion [0,6,_damage,0,0.25,true];
 
     if (_damage > 0.6 || {_typeOfDamage in ["vehiclehit","explosive","shell","vehiclecrash"]}) then {
         private _newBleed = random [0,0.1,0.25];
@@ -57,13 +57,6 @@ if (floor (random 100) <= _concussionChance) then {
 
     if (_damage > 5) then {
         _necrosis = (_necrosis + random [1,6,12]) min 12;
-        _unit setUnconscious true;
-        [{
-            params ["_unit"];
-            if !(IS_UNCONSCIOUS(_unit)) then {
-                _unit setUnconscious false;
-            };
-        }, [_unit], 3] call CBA_fnc_waitAndExecute;
     };
 
     _unit setVariable [QGVAR(concussion), _newConcussion, true];

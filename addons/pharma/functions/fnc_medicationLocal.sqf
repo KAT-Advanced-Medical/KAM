@@ -99,12 +99,18 @@ if (_isOccluded) exitWith {
     _occludedMedications pushBack [_partIndex, _classname, _patient];
     _patient setVariable [QACEGVAR(medical,occludedMedications), _occludedMedications, true];
 };
+private _isDamaged = [_patient,_partIndex] call EFUNC(hitpoints,damageCheck);
+private _isTooDamaged = 
+    ((_isDamaged) && !(_classname in _subDermalMeds));
+if (_isTooDamaged) exitWith {
+    TRACE_3("Medication injection site is too damaged",_partIndex,_classname,_patient);
+};
 private _isInCA = _patient getVariable [QACEGVAR(medical,inCardiacArrest), false];
 if (_isInCA && ((_IVarray select _partIndex) in [2,3,4,10,11,12]) && !_isFlushed) exitWith {
     TRACE_3("Medication injection site is occluded by CA",_partIndex,_classname,_patient);
-    private _occludedMedications = _patient getVariable [QACEGVAR(medical,occludedMedications), []];
-    _occludedMedications pushBack [_partIndex, _classname, _patient];
-    _patient setVariable [QACEGVAR(medical,occludedMedications), _occludedMedications, true];
+    private _occludedCAMedications = _patient getVariable [QGVAR(occludedCAMedications), []];
+    _occludedCAMedications pushBack [_partIndex, _classname, _patient];
+    _patient setVariable [QGVAR(occludedCAMedications), _occludedCAMedications, true];
 };
 
 // Get adjustment attributes for used medication

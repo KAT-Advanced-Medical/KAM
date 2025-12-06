@@ -642,5 +642,11 @@
         <Key ID="STR_KAT_Hitpoints_pressure_GUI">
             <English>Pressure Applied</English>
         </Key>
+        <Key ID="STR_KAT_Hitpoints_SETTING_EffectDamageThreshold">
+            <English>Damage Effect threshold</English>
+        </Key>
+        <Key ID="STR_KAT_Hitpoints_SETTING_EffectDamageThreshold_DESC">
+            <English>When damage is above this level, certain actions/treatments will fail and IV fluids will not flow</English>
+        </Key>
     </Package>
 </Project>

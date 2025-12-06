@@ -53,8 +53,7 @@ private _wheeze = (
 private _eyeInjurySeverity        = GET_DUST_INJURY(ACE_player);
 private _eyeInjuries        = GET_EYE_INJURIES(ACE_player);
 private _cmr             = GET_CMR(ACE_player);
-private _concussion = ACE_player getVariable [QEGVAR(brain,concussion), 0];
-[!_unconscious, _concussion] call FUNC(effectConcussion);
+[!_unconscious] call FUNC(effectConcussion);
 private _airwayState = HAS_AIRWAY(ACE_player);
 // - Visual effects -----------------------------------------------------------
 [!_unconscious, _opioid] call FUNC(effectOpioid);

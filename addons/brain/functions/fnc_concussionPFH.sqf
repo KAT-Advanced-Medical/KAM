@@ -35,7 +35,7 @@ private _pfh = [{
     private _reversibleDamage = _unit getVariable [QGVAR(reversibleDamage),0];
     private _concussion = _unit getVariable [QGVAR(concussion),0];
     if (_edema < 0.7) then {
-        _edema = _edema + 0.01; // slow swelling
+        _edema = (_edema + 0.01) min _concussion; // slow swelling
     };
     private _targetICP = 15 + (_edema * 10) + (_bleeding * 20);
     _ICP = _ICP + ((_targetICP - _ICP) * 0.2);
@@ -57,7 +57,7 @@ private _pfh = [{
     private _earRinging = linearConversion [0, 1, _concussion, 0, 20, true];
     GVAR(concussionRinging) = _earRinging;
     _unit setVariable [QGVAR(reversibleDamage),_reversibleDamage,true];
-    if ((_edema == 0) && (_concussion == 0) && (_bleeding == 0) && (_ICP <= 20) && (_reversibleDamage == 0)) then {
+    if ((_edema == 0) && (_concussion == 0) && (_ICP <= 20) && (_reversibleDamage == 0)) then {
         _unit setVariable [QGVAR(concussionPFH), nil];
         [_pfhID] call CBA_fnc_removePerFrameHandler;
     };

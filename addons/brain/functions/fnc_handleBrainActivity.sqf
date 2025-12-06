@@ -67,10 +67,10 @@ private _newPFH = [{
 
 	private _ICP = _unit getVariable [QGVAR(ICP),15];
 	
-	if (_unit getVariable [QGVAR(concussionPFH),0] isEqualTo 0) then {
+	if (isNil {_unit getVariable [QGVAR(concussionPFH), nil]}) then {
 		
 		//Reduce ICP if no longer swelling
-		private _salineFlow = _unit getVariable [QGVAR(salineFlow), 0];
+		private _salineFlow = (_unit getVariable [QGVAR(salineFlow), 0]) / 5;
 		private _icpReduction = GVAR(ICPreduction) * _salineFlow * GVAR(ICPreductionMult);
 		private _newICP = _ICP - _icpReduction;
 		private _hasSaline = [_unit] call FUNC(findSaline);
@@ -96,6 +96,8 @@ private _newPFH = [{
 		_reversibleDamageDiff = ((_reversibleDamage - GVAR(reversibleDamageLoss)) max 0) min 100;
 		//Reduce reversible tissue damage
 		_unit setVariable [QGVAR(reversibleDamage),_reversibleDamageDiff,true];
+	} else {
+		systemChat  format ["%1", _unit];
 	};
 
 	//Chance to cause bradycardia if ICP is too high

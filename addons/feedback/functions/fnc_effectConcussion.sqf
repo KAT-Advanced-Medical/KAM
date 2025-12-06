@@ -20,9 +20,9 @@ params ["_enable", "_concussionSeverity"];
 
 // Early exit if system is disabled
 if (!GVAR(enableBrainEffect)) exitWith {};
-
+private _concussion = ACE_player getVariable [QEGVAR(brain,concussion), 0];
 // Disable effect if switched off or severity is zero
-if (!_enable || (_concussionSeverity <= 0)) exitWith {
+if (!_enable || (_concussion <= 0)) exitWith {
     if (GVAR(ppConcussion) != -1) then {
         GVAR(ppConcussion) ppEffectEnable false;
         GVAR(ppConcussion) ppEffectAdjust [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
@@ -36,7 +36,8 @@ if (GVAR(ppConcussion) != -1) then {
 };
 
 // Scale the severity
-private _ppMult = linearConversion [0, 1, _concussionSeverity, 1, 8, true];
+
+private _ppMult = linearConversion [0, 1, _concussion, 1, 8, true];
 
 // Apply the concussion visual effect
 GVAR(ppConcussion) ppEffectAdjust [
