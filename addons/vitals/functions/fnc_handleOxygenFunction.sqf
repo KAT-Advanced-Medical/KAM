@@ -98,6 +98,20 @@ if ((IN_CRDC_ARRST(_unit)) || !_airway || _paralysis) then {
         _respiratoryDepth = 0;
     };  
 } else {
+    
+
+    private _contractility = (_unit getVariable [QEGVAR(pharma,heartContractility), 1]) max 0.2;
+    private _contractilityMult = linearConversion [0.2, 1.8, _contractility, 0.5, 1.5, true];
+    _demandVentilation = (((((_actualHeartRate / _contractilityMult) * HEART_RATE_CO2_MULTIPLIER) / _anerobicPressure) + ((_previousCyclePaco2 - DEFAULT_PACO2) * 200)) max MINIMUM_VENTILATION);
+
+    // Respiratory Rate is supressed by Opioids 
+    
+    private _baseRespiratoryDepth = ((DEFAULT_RESPIRATORY_DEPTH) - (_opioidDepression / 1.5));
+    private _baseTidalVolume = GET_KAT_SURFACE_AREA(_unit) * (_baseRespiratoryDepth / 10);
+    private _icp = GET_ICP(_unit);
+    private _cardiacOutput = [_unit] call FUNC(getCardiacOutput);
+    private _tidalVolume = 0;
+    private _patternApplied = false;
     if (_unit getVariable [QEGVAR(breathing,BVMInUse), false]) then {
         _respiratoryRate  = 20;
         _respiratoryDepth = 12;
@@ -115,19 +129,6 @@ if ((IN_CRDC_ARRST(_unit)) || !_airway || _paralysis) then {
         _actualVentilation = (_tidalVolume * _respiratoryRate) * _bronchospasm;
         _patternApplied = true;
     };
-
-    private _contractility = (_unit getVariable [QEGVAR(pharma,heartContractility), 1]) max 0.2;
-    private _contractilityMult = linearConversion [0.2, 1.8, _contractility, 0.5, 1.5, true];
-    _demandVentilation = (((((_actualHeartRate / _contractilityMult) * HEART_RATE_CO2_MULTIPLIER) / _anerobicPressure) + ((_previousCyclePaco2 - DEFAULT_PACO2) * 200)) max MINIMUM_VENTILATION);
-
-    // Respiratory Rate is supressed by Opioids 
-    
-    private _baseRespiratoryDepth = ((DEFAULT_RESPIRATORY_DEPTH) - (_opioidDepression / 1.5));
-    private _baseTidalVolume = GET_KAT_SURFACE_AREA(_unit) * (_baseRespiratoryDepth / 10);
-    private _icp = GET_ICP(_unit);
-    private _cardiacOutput = [_unit] call FUNC(getCardiacOutput);
-    private _tidalVolume = 0;
-    private _patternApplied = false;
     if (!_patternApplied && (_icp >= 20) && (_icp < 32)) then {
         private _t = CBA_missionTime;
         private _frequency = 1/120;          // 1 Hz = one full sine wave per second
