@@ -230,6 +230,7 @@ if ((IN_CRDC_ARRST(_unit)) || !_airway || _paralysis) then {
             _respiratoryDepth = _baseRespiratoryDepth * (0.2 + random 1.2);
             _tidalVolume = GET_KAT_SURFACE_AREA(_unit) * (_respiratoryDepth / 10);
             _actualVentilation = (_tidalVolume * _respiratoryRate) * _bronchospasm;
+            playSound3D [QPATHTOF_SOUND(audio\gasp.ogg), _unit, false, getPosASL _unit, 6, 1, 12];
         };
 
         _patternApplied = true;
@@ -241,7 +242,7 @@ if ((IN_CRDC_ARRST(_unit)) || !_airway || _paralysis) then {
         private _timer = _unit getVariable [QEGVAR(breathing,agonalTimer), 0];
 
         _timer = _timer - _deltaT;
-
+        _unit setVariable [QEGVAR(breathing,agonalTimer), _timer, true];
         if (_timer <= 0) then {
             private _pause = 5 + random 15;
             private _gaspDur = 1.5 + random 1.0;
@@ -259,7 +260,7 @@ if ((IN_CRDC_ARRST(_unit)) || !_airway || _paralysis) then {
         else
         {
             if (_timer < 2.0) then {
-                _respiratoryRate = 2;
+                _respiratoryRate = 1;
                 _respiratoryDepth = _baseRespiratoryDepth * (2.0 + random 1.0);
                 _tidalVolume = GET_KAT_SURFACE_AREA(_unit) * (_respiratoryDepth / 10);
                 _actualVentilation = (_tidalVolume * _respiratoryRate) * _bronchospasm;

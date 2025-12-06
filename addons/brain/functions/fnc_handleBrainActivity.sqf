@@ -67,7 +67,7 @@ private _newPFH = [{
 
 	private _ICP = _unit getVariable [QGVAR(ICP),15];
 	
-	if (_unit getVariable [QGVAR(isSwelling), false]) then {
+	if !(_unit getVariable [QGVAR(isSwelling), false]) then {
 		
 		//Reduce ICP if no longer swelling
 		private _salineFlow = (_unit getVariable [QGVAR(salineFlow), 0]) / 5;
@@ -96,8 +96,6 @@ private _newPFH = [{
 		_reversibleDamageDiff = ((_reversibleDamage - GVAR(reversibleDamageLoss)) max 0) min 100;
 		//Reduce reversible tissue damage
 		_unit setVariable [QGVAR(reversibleDamage),_reversibleDamageDiff,true];
-	} else {
-		systemChat  format ["%1", _unit];
 	};
 
 	//Chance to cause bradycardia if ICP is too high
