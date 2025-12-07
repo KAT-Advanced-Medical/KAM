@@ -116,7 +116,8 @@ private _newPFH = [{
 
 	//Cause LOC if CMR becomes too low
 	if (_CMR <= GVAR(CMRunconsciousThreshold) && !(_unit getVariable ["ACE_isUnconscious",false])) then {
-		if ((floor (random 100) >= GVAR(CMRunconsciousChance)) && (_CMR >= GVAR(stableCMR))) exitWith {};
+		private _CMRunconIncrease = linearConversion [0, GVAR(CMRunconsciousThreshold), _CMR, 50, 0, true];
+		if (((floor (random 100) + _CMRunconIncrease)  >= GVAR(CMRunconsciousChance)) && (_CMR >= GVAR(stableCMR))) exitWith {};
 		[QACEGVAR(medical,CriticalVitals), _unit] call CBA_fnc_localEvent;
 	};
 }, 5, [_unit]] call CBA_fnc_addPerFrameHandler;
