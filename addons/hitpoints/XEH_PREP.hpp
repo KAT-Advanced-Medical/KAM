@@ -21,6 +21,7 @@ PREP(canWrapWoundCoag);
 PREP(checkJoints);
 PREP(convertTourniquet);
 PREP(convertTourniquetCheck);
+PREP(convertTourniquetTime);
 PREP(damageCheck);
 PREP(determineIfFatal);
 PREP(fullHealLocal);
