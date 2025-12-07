@@ -33,5 +33,5 @@ if (!(_unit getVariable [QEGVAR(breathing,PneumoBreathCooldownOn), false])) then
         params["_unit"];
         _unit setVariable [QEGVAR(breathing,PneumoBreathCooldownOn), false, true];
     },
-    [_unit], 20] call CBA_fnc_waitAndExecute;
+    [_unit], 10] call CBA_fnc_waitAndExecute;
 };

@@ -1,6 +1,6 @@
 #define COMPONENT zeus
 #define COMPONENT_BEAUTIFIED ZEUS
-#include "\x\kat\addons\main\script_mod.hpp"
+
 
 // #define DEBUG_MODE_FULL
 // #define DISABLE_COMPILE_CACHE
@@ -15,6 +15,7 @@
 #endif
 
 #include "\x\kat\addons\main\script_macros.hpp"
+#include "\x\kat\addons\main\script_mod.hpp"
 
 // UI grid
 #define SIZEX ((safeZoneW / safeZoneH) min 1.2)

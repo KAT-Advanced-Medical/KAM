@@ -16,7 +16,7 @@
  */
 
 params ["_unit"];
-
+if (_unit getVariable [QEGVAR(vitals,simpleMedical), false]) exitWith {};
 //Other mods can utilise KAT_Obstruction_Exclussion variable to prevent obstructions from happening
 if !(GVAR(enable)) exitWith {};
 if (random(100) < GVAR(airwayObstructionChance)) then {

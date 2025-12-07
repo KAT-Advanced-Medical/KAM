@@ -131,7 +131,7 @@ if (_adjustments isNotEqualTo []) then {
             if (_opioidDepression != 0) then {_opioidDepressionAdjustment = _opioidAdjustment + _opioidDepression * _effectRatio; };
             if (_respiratoryRate != 0) then {_respiratoryRateAdjustment = _respiratoryRateAdjustment + _respiratoryRate * _effectRatio; };
             if (_contractility != 0) then {_contractilityAdjustment = _contractilityAdjustment + _contractility * _effectRatio; };
-            if (_nauseaMult != 0) then {_nauseaMultAdjustment = (_nauseaMultAdjustment + _nauseaMult * _effectRatio) max 0.1; };
+            if (_nauseaMult != 0) then {_nauseaMultAdjustment = (_nauseaMultAdjustment + (_nauseaMult * _effectRatio)) max 0.1; };
             if (_sedation == "true") then {_sedationAdjustment = (_sedationAdjustment + (1 * _effectRatio)) min 1; };
             if (_paralysis == "true") then {_paralysisAdjustment = (_paralysisAdjustment + (1 * _effectRatio)) min 1; };
         };

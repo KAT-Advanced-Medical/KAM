@@ -24,7 +24,7 @@
 // 0.6 = basic medication morph. pain suppr., 0.8 = adv. medication morph. pain suppr., 0.35 = adv. medication painkillers. pain suppr.
 #define PAINKILLERS_PAIN_SUPPRESSION 0.2625
 
-params ["_patient", "_bodyPart", "_classname"];
+params ["_patient", "_bodyPart", "_classname", ["_isFlushed", false]];
 TRACE_3("medicationLocal",_patient,_bodyPart,_classname);
 
 // Medication has no effects on dead units
@@ -93,11 +93,24 @@ private _isOccluded =
     ({ _tourniquets select _x != 0 } count _result > 0) 
     && !( ((_IVarray select _partIndex isEqualTo 13) && _hasValidSuffix) 
     || (_classname in _subDermalMeds));
+private _isDamaged = [_patient,_partIndex] call EFUNC(hitpoints,damageCheck);
+private _isTooDamaged = 
+    ((_isDamaged) && !(_classname in _subDermalMeds));
+if (_isTooDamaged) exitWith {
+    TRACE_3("Medication injection site is too damaged",_partIndex,_classname,_patient);
+};
 if (_isOccluded) exitWith {
     TRACE_3("Medication injection site is occluded by tourniquet",_partIndex,_classname,_patient);
     private _occludedMedications = _patient getVariable [QACEGVAR(medical,occludedMedications), []];
     _occludedMedications pushBack [_partIndex, _classname, _patient];
     _patient setVariable [QACEGVAR(medical,occludedMedications), _occludedMedications, true];
+};
+private _isInCA = _patient getVariable [QACEGVAR(medical,inCardiacArrest), false];
+if (_isInCA && ((_IVarray select _partIndex) in [2,3,4,10,11,12]) && !_isFlushed) exitWith {
+    TRACE_3("Medication injection site is occluded by CA",_partIndex,_classname,_patient);
+    private _occludedCAMedications = _patient getVariable [QGVAR(occludedCAMedications), []];
+    _occludedCAMedications pushBack [_partIndex, _classname, _patient];
+    _patient setVariable [QGVAR(occludedCAMedications), _occludedCAMedications, true];
 };
 
 // Get adjustment attributes for used medication
@@ -118,8 +131,6 @@ if (_isOccluded) exitWith {
     if (count _parts > 3) then {
         _startDose = parseNumber (_parts select -1);
     };
-    private _defaultHeartRate = _patient getVariable [QEGVAR(circulation,defaultHeartRate), 80];
-    private _heartRateRatio = GET_HEART_RATE(_patient) / _defaultHeartRate;
     private _bloodBased = GET_STRING(_medicationConfig >> "bloodBased",getText (_defaultConfig >> "bloodBased"));
     private _weightBase = GET_STRING(_medicationConfig >> "weightBased",getText (_defaultConfig >> "weightBased"));
     private _weightDose = GET_NUMBER(_medicationConfig >> "weightDose",getNumber (_defaultConfig >> "weightDose"));
@@ -178,8 +189,8 @@ if (_isOccluded) exitWith {
             _hemocrit = (GET_BODY_FLUID_ECP(_patient)/GET_BODY_FLUID_ECB(_patient)) / (DEFAULT_ECP/DEFAULT_ECB)
         };
     private _unitMedEffectivness = _patient getVariable [QGVAR(medicationEffectivness), 1];
-    private _drugMult = ((((GET_BLOOD_VOLUME_LITERS(_patient) / DEFAULT_BLOOD_VOLUME) * (_heartRateRatio) * _hemocrit) max 0.2) min 2) * _weightMult * _doseMult * _unitMedEffectivness * _routeMult;
-    TRACE_8("_drugMult",_patient,_defaultHeartRate,_heartRateRatio,(GET_BLOOD_VOLUME_LITERS(_patient) / DEFAULT_BLOOD_VOLUME),_drugMult,_weightMult,_doseMult,_unitMedEffectivness);
+    private _drugMult = ((((GET_BLOOD_VOLUME_LITERS(_patient) / DEFAULT_BLOOD_VOLUME) * _hemocrit) max 0.2) min 2) * _weightMult * _doseMult * _unitMedEffectivness * _routeMult;
+    TRACE_7("_drugMult",_patient,_defaultHeartRate,(GET_BLOOD_VOLUME_LITERS(_patient) / DEFAULT_BLOOD_VOLUME),_drugMult,_weightMult,_doseMult,_unitMedEffectivness);
     _painReduce             = GET_NUMBER(_medicationConfig >> "painReduce",getNumber (_defaultConfig >> "painReduce")) * _drugMult;
     _timeInSystem           = GET_NUMBER(_medicationConfig >> "timeInSystem",getNumber (_defaultConfig >> "timeInSystem")) * _drugMult;
     _timeTillMaxEffect      = GET_NUMBER(_medicationConfig >> "timeTillMaxEffect",getNumber (_defaultConfig >> "timeTillMaxEffect")) * _drugMult * (2 - _routeMult);

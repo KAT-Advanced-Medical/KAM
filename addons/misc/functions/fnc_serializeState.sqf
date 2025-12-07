@@ -27,8 +27,6 @@ private _state = [] call CBA_fnc_createNamespace;
     [VAR_HEART_RATE, DEFAULT_HEART_RATE],
     [VAR_BLOOD_PRESS, [80, 120]],
     [VAR_PERIPH_RES, DEFAULT_PERIPH_RES],
-    // State transition should handle this
-    // [VAR_CRDC_ARRST, false],
     [VAR_HEMORRHAGE, 0],
     [VAR_PAIN, 0],
     [VAR_IN_PAIN, false],
@@ -37,8 +35,6 @@ private _state = [] call CBA_fnc_createNamespace;
     [VAR_BANDAGED_WOUNDS, createHashMap],
     [VAR_STITCHED_WOUNDS, createHashMap],
     [VAR_FRACTURES, DEFAULT_FRACTURE_VALUES],
-    // State transition should handle this
-    // [VAR_UNCON, false],
     [VAR_TOURNIQUET, DEFAULT_TOURNIQUET_VALUES],
     [QACEGVAR(medical,occludedMedications), nil],
     [QACEGVAR(medical,ivBags), nil],
@@ -67,8 +63,7 @@ private _state = [] call CBA_fnc_createNamespace;
 [QEGVAR(airway,isVisualized), false],
 [QEGVAR(breathing,airwayStatus), 100],
 [QEGVAR(breathing,pneumothorax), [0, 0]],
-[QEGVAR(breathing,pneumothoraxSurfaceArea), [0, 0]],
-[QEGVAR(breathing,hemopneumothorax), [false, false]],
+[QEGVAR(breathing,hemopneumothorax), [0, 0]],
 [QEGVAR(breathing,tensionpneumothorax), [false, false]],
 [QEGVAR(breathing,activeChestSeal), [false, false]],
 [QEGVAR(breathing,deepPenetratingInjury), [false, false]],
@@ -91,7 +86,7 @@ private _state = [] call CBA_fnc_createNamespace;
 [QEGVAR(circulation,tourniquetTime), [0,0,0,0,0,0,0,0,0,0,0,0]],
 [QEGVAR(circulation,defaultHeartRate), 80],
 [QEGVAR(circulation,bloodGas), DEFAULT_BLOOD_GAS],
-[QEGVAR(circulation,testedBloodGas), [0,0,0,0,0,0,0,0,0,0,0,0]],
+[QEGVAR(circulation,testedBloodGas), [0,0,0,0,0,0]],
 [QEGVAR(circulation,ABGmenuShow), false],
 [QEGVAR(circulation,ht), []],
 [QEGVAR(circulation,effusion), 0],
@@ -151,6 +146,7 @@ _state setVariable [VAR_MEDICATIONS, _medications];
 
 // Medical statemachine state
 private _currentState = [_unit, ACEGVAR(medical,STATE_MACHINE)] call CBA_statemachine_fnc_getCurrentState;
+if (_currentState == "Dazed") then { _currentState = "Unconscious"; };
 _state setVariable [QACEGVAR(medical,statemachineState), _currentState];
 
 // Serialize & return

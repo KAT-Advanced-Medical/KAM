@@ -36,11 +36,11 @@ private _tourniquetPFH = [{
     private _tourniquet_ArmNecrosis = _unit getVariable [QGVAR(Tourniquet_ArmNecrosis), 0];
     private _tourniquet_LegNecrosis = _unit getVariable [QGVAR(Tourniquet_LegNecrosis), 0];
 
-    private _activeTourniquets = GET_TOURNIQUETS(_unit);
+    private _activeTourniquets = GET_KAT_TOURNIQUETS(_unit);
     private _armTourniquets = (_activeTourniquets select 4) + (_activeTourniquets select 5) + (_activeTourniquets select 6) + (_activeTourniquets select 7);
     private _legTourniquets = (_activeTourniquets select 8) + (_activeTourniquets select 9) + (_activeTourniquets select 10) + (_activeTourniquets select 11);
     
-    if (_armTourniquets > 1) then {
+    if (_armTourniquets > 0) then {
         _tourniquet_ArmNecrosis = _tourniquet_ArmNecrosis + (0.16 * GVAR(tourniquetEffects_PositiveMultiplier));
         if (_tourniquet_ArmNecrosis >= 100) then {
             _tourniquet_ArmNecrosis = 100;
@@ -53,7 +53,7 @@ private _tourniquetPFH = [{
         };
     };
 
-    if (_legTourniquets > 1) then {
+    if (_legTourniquets > 0) then {
         _tourniquet_LegNecrosis = _tourniquet_LegNecrosis + (0.16 * GVAR(tourniquetEffects_PositiveMultiplier));
 
         if (_tourniquet_LegNecrosis >= 100) then {

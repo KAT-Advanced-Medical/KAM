@@ -22,6 +22,7 @@ params ["_unit"];
 if ((_unit getVariable ["kat_pukeActive_PFH", false]) || !(GVAR(enable)) || (_unit getVariable ["KAT_Occlusion_Exclusion", false])) exitWith {};
 _unit setVariable ["kat_pukeActive_PFH", true];
 
+if (_unit getVariable [QEGVAR(vitals,simpleMedical), false]) exitWith {};
 
 [{
     params ["_unit"];
@@ -35,9 +36,14 @@ _unit setVariable ["kat_pukeActive_PFH", true];
         _unit setVariable ["kat_pukeActive_PFH", false];
         [_idPFH] call CBA_fnc_removePerFrameHandler;
     };
-    if (random (100) <= GVAR(airwayPukeChance)) then {
+    private _nauseaMult = _unit getVariable [QEGVAR(pharma,nauseaMult), 1];
+    private _nauseaMult = (_nauseaMult min 6) max 0.1;
+    private _icp = _unit getVariable [QEGVAR(brain,ICP),15];
+    private _icpChance = linearConversion [15, 60, _icp, 1, 3, true];
+    private _nauseaChance = linearConversion [1, 6, _nauseaMult, 1, 3, true];
+    if ((random 100) <= (GVAR(airwayPukeChance) * (_nauseaChance + _icpChance))) then {
         private _occlusionState = _unit getVariable [QGVAR(occlusion), [0, 0, 0]];
-        private _volume = (_unit getVariable [QGVAR(stomachVolume), 5]) max 2;
+        private _volume = (_unit getVariable [QGVAR(stomachVolume), 5]) max 1;
         private _mitigation = _unit getVariable [QGVAR(occlusionMitigation), [0, 0, 0]];
         _occlusionState set [0, ((_occlusionState select 0) + floor (_volume * 1.5 * (1 - (_mitigation select 0)))) min 10];
         _occlusionState set [1, ((_occlusionState select 1) + floor (_volume * (1 - (_mitigation select 1)))) min 10];
@@ -46,15 +52,8 @@ _unit setVariable ["kat_pukeActive_PFH", true];
         _unit setVariable [QGVAR(stomachVolume), ((_volume - 1) max 1), true];
         _unit setVariable [QGVAR(hasPuked), true, true];
         TRACE_1("occlusion",_occlusionState);
-        for "_i" from 0 to 2 do {
-            [_unit, _i] call FUNC(airwayPFH);
-        };
-        private _nauseaMult = _unit getVariable [QEGVAR(pharma,nauseaMult), 1];
-        if (_nauseaMult > 1000) then {
-            _nauseaMult = 1
-        };
-        private _nauseaMult = (_nauseaMult min 6) max 0.1;
-        private _delay = ((GVAR(occlusion_repeatTimer) / _nauseaMult) * random [0.8, 1, 1.3]) max 5;
+        private _delay = ((GVAR(occlusion_repeatTimer) / _nauseaMult) * random [0.8, 1, 1.3]) max GVAR(minPukeTime);
+        [_unit] call FUNC(airwayDeterioration);
         [_idPFH, _delay] call CBA_fnc_setPerFrameHandlerDelay;
         if (GVAR(checkbox_puking_sound)) then {
             private _sound = selectRandom [
@@ -69,6 +68,6 @@ _unit setVariable ["kat_pukeActive_PFH", true];
     }, GVAR(occlusion_repeatTimer), [_unit]] call CBA_fnc_addPerFrameHandler;
 
 
-}, [_unit], (10 * random [0.5, 1, 2])] call CBA_fnc_waitAndExecute;
+}, [_unit], (15 * random [0.7, 1, 1.5])] call CBA_fnc_waitAndExecute;
 
 

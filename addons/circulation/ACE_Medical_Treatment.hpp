@@ -55,7 +55,7 @@ class ACE_Medical_Treatment {
         class BloodIV {
             volume = 1000;
             ratio[] = {"Plasma", 1};
-            rateCoef = 0.9;
+            rateCoef = 0.6;
             platelets = 0.075;
             ph = -0.8;
             bloodType = "O_N";
@@ -84,7 +84,7 @@ class ACE_Medical_Treatment {
             volume = 1000;
             type = "Saline";
             ratio[] = {};
-            rateCoef = 1.3;
+            rateCoef = 1.4;
             platelets = 0;
             ph = 0.7;
         };
@@ -221,31 +221,31 @@ class ACE_Medical_Treatment {
         };
         class RingersLactateIV: SalineIV {
             volume = 1000;
-            rateCoef = 1.3;
+            rateCoef = 1.4;
             type = "Ringers Lactate";
             platelets = 0;
             ph = -0.2;
         };
         class RingersLactateIV_500: RingersLactateIV {
             volume = 500;
-            rateCoef = 1.3;
+            rateCoef = 1.4;
             type = "Ringers Lactate";
         };
         class RingersLactateIV_250: RingersLactateIV {
             volume = 250;
-            rateCoef = 1.3;
+            rateCoef = 1.4;
             type = "Ringers Lactate";
         };
         class PackedRBCIV_500: BloodIV {
             volume = 500;
-            rateCoef = 0.7;
+            rateCoef = 0.4;
             type = "PackedRBC";
             platelets = 0.2;
             ph = -0.4;
         };
         class PackedRBCIV_250: PackedRBCIV_500 {
             volume = 250;
-            rateCoef = 0.7;
+            rateCoef = 0.4;
             type = "PackedRBC";
         };
         class Morphine_IVInfusion: SalineIV_250 {
@@ -260,7 +260,7 @@ class ACE_Medical_Treatment {
             opioidRelief = 1.05;
             respiratoryRate = -0.05;
             volume = 250;
-            rateCoef = 1.3;
+            rateCoef = 1.4;
             type = "Morphine_IVInfusion";
         };
         class Epinephrine_IVInfusion: SalineIV_250 {
@@ -273,7 +273,7 @@ class ACE_Medical_Treatment {
             dose = 2.5;
             alphaFactor = -0.05;
             volume = 250;
-            rateCoef = 1.3;
+            rateCoef = 1.4;
             contractility = 0.1;
             type = "Epinephrine_IVInfusion";
             incompatibleMedication[] = {};
@@ -288,7 +288,7 @@ class ACE_Medical_Treatment {
             dose = 2.5;
             viscosityChange = 0;
             volume = 250;
-            rateCoef = 1.3;
+            rateCoef = 1.4;
             type = "Etomidate_IVInfusion";
             incompatibleMedication[] = {};
         };
@@ -303,7 +303,7 @@ class ACE_Medical_Treatment {
             respiratoryRate = 0.1;
             opioidDepression = -0.05;
             volume = 250;
-            rateCoef = 1.3;
+            rateCoef = 1.4;
             type = "Doxapram_IVInfusion";
             incompatibleMedication[] = {};
         };
@@ -316,7 +316,7 @@ class ACE_Medical_Treatment {
             timeTillMaxEffect = 1;
             dose = 2.5;
             volume = 250;
-            rateCoef = 1.3;
+            rateCoef = 1.4;
             alphaFactor = 0.05;
             viscosityChange = -2;
             contractility = -0.05;
@@ -332,7 +332,7 @@ class ACE_Medical_Treatment {
             timeTillMaxEffect = 1;
             dose = 2.5;
             volume = 250;
-            rateCoef = 1.3;
+            rateCoef = 1.4;
             alphaFactor = -0.1;
             viscosityChange = 4;
             type = "Norepinephrine_IVInfusion";
@@ -350,7 +350,7 @@ class ACE_Medical_Treatment {
             opioidRelief = 1.05;
             respiratoryRate = -0.05;
             volume = 100;
-            rateCoef = 1.3;
+            rateCoef = 1.4;
             type = "Morphine_IVInfusion";
         };
         class Epinephrine_IVInfusion100: SalineIV_250 {
@@ -363,7 +363,7 @@ class ACE_Medical_Treatment {
             dose = 2.5;
             alphaFactor = -0.05;
             volume = 100;
-            rateCoef = 1.3;
+            rateCoef = 1.4;
             contractility = 0.1;
             type = "Epinephrine_IVInfusion";
             incompatibleMedication[] = {};
@@ -378,7 +378,7 @@ class ACE_Medical_Treatment {
             dose = 2.5;
             viscosityChange = 0;
             volume = 100;
-            rateCoef = 1.3;
+            rateCoef = 1.4;
             type = "Etomidate_IVInfusion";
             incompatibleMedication[] = {};
         };
@@ -393,7 +393,7 @@ class ACE_Medical_Treatment {
             respiratoryRate = 0.1;
             opioidDepression = -0.05;
             volume = 100;
-            rateCoef = 1.3;
+            rateCoef = 1.4;
             type = "Doxapram_IVInfusion";
             incompatibleMedication[] = {};
         };
@@ -406,7 +406,7 @@ class ACE_Medical_Treatment {
             timeTillMaxEffect = 1;
             dose = 2.5;
             volume = 100;
-            rateCoef = 1.3;
+            rateCoef = 1.4;
             alphaFactor = 0.1;
             viscosityChange = -2;
             contractility = -0.05;
@@ -422,7 +422,7 @@ class ACE_Medical_Treatment {
             timeTillMaxEffect = 1;
             dose = 2.5;
             volume = 100;
-            rateCoef = 1.3;
+            rateCoef = 1.4;
             alphaFactor = -0.1;
             viscosityChange = 4;
             type = "Norepinephrine_IVInfusion";

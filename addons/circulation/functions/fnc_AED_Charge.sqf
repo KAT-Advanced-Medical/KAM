@@ -43,11 +43,11 @@ playSound3D [QPATHTOF_SOUND(sounds\charging.wav), _soundSource, false, getPosASL
                 playSound3D [QPATHTOF_SOUND(sounds\bump.wav), _patient, false, getPosASL _patient, 6, 1, 15];
 
                 [{ // Prompt to analyze again
-                    params ["_soundSource"];
+                    params ["_soundSource", "_patient"];
 
                     if (_patient getVariable [QGVAR(DefibrillatorInUse), false] || _patient getVariable [QGVAR(AED_X_VitalsMonitor_Connected), false]) exitWith {};
                     playSound3D [QPATHTOF_SOUND(sounds\pushanalyze.wav), _soundSource, false, getPosASL _soundSource, 6, 1, 15];
-                }, [_soundSource], 2] call CBA_fnc_waitAndExecute;
+                }, [_soundSource, _patient], 2] call CBA_fnc_waitAndExecute;
             } else { // Defibrillator disarmed
                 playSound3D [QPATHTOF_SOUND(sounds\3beep.wav), _soundSource, false, getPosASL _soundSource, 6, 1, 15];
             };

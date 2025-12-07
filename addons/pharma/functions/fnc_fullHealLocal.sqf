@@ -54,7 +54,8 @@ _patient setVariable [QGVAR(IVincomingFlowAmount), [0,0,0,0,0,0,0,0,0,0,0,0], tr
 _patient setVariable [QGVAR(IVpfh), [0,0,0,0,0,0,0,0,0,0,0,0], true];
 _patient setVariable [QGVAR(active), false, true];
 _patient setVariable [QGVAR(IVPharma_PFH), nil, true];
-
+_patient setVariable [QGVAR(pressureBag), [0,0,0,0,0,0,0,0,0,0,0,0], true];
+_patient setVariable [QGVAR(pressureIVApplied), false, true];
 _patient setVariable [QGVAR(IVmenuActive), false, true];
 
 _patient setVariable [QGVAR(externalPh), 0, true];
@@ -70,7 +71,7 @@ _patient setVariable [QGVAR(respiratoryRate), 1, true];
 _patient setVariable [QGVAR(heartContractility), 1, true];
 _patient setVariable [QGVAR(nauseaMult), 1, true];
 _patient setVariable [QGVAR(medicationEffectivness), [_patient] call FUNC(generateMedicationEffectivness), true];
-
+_patient setVariable [QGVAR(occludedMedications), [], true];
 _patient setVariable [VAR_LOCAL_ANESTHESIA, DEFAULT_LOCAL_ANESTHESIA, true];
 _patient setVariable [QGVAR(activeEtomidateLoadingDose), false, true];
 

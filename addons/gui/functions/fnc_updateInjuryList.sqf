@@ -217,45 +217,32 @@ if (_totalIvVolume > 0) then {
 } else {
     _entries pushBack [localize ACELSTRING(medical_treatment,Status_NoIv), _nonissueColor];
 };
-
-// Indicate the amount of pain the unit is in
-if (_target call ACEFUNC(common,isAwake) && ((_target == ACE_Player) || {!isPlayer _target}))  then {
-    if (GVAR(localPain) && ((_target == ACE_Player) || {!isPlayer _target})) then {
-        private _pain = GET_PAIN_PERCEIVED(_target);
-            if (_pain > 0) then {
-            private _painText = switch (true) do {
-                case (_pain > PAIN_UNCONSCIOUS): {
-                    ACELSTRING(medical_treatment,Status_SeverePain);
-                };
-                case (_pain > (PAIN_UNCONSCIOUS / 5)): {
-                    ACELSTRING(medical_treatment,Status_Pain);
-                };
-                default {
-                    ACELSTRING(medical_treatment,Status_MildPain);
-                };
-            };
-            _entries pushBack [localize _painText, [1, 1, 1, 1]];
-        } else {
-            if (ACEGVAR(medical_gui,showInactiveStatuses)) then {_entries pushBack [localize ACELSTRING(medical_treatment,Status_NoPain), _nonissueColor];};
-        };
+if ((_target getVariable [QEGVAR(pharma,pressureBag), [0,0,0,0,0,0,0,0,0,0,0,0]] select _selectionN) > 0) then {
+    if ((_target getVariable [QEGVAR(pharma,pressureBag), [0,0,0,0,0,0,0,0,0,0,0,0]] select _selectionN) == 1) then {
+        _entries pushBack [localize ELSTRING(pharma,IVPressureBag), [1, 1, 1, 1]];
     } else {
-        private _pain = GET_PAIN_PERCEIVED(_target);
-            if (_pain > 0) then {
-            private _painText = switch (true) do {
-                case (_pain > PAIN_UNCONSCIOUS): {
-                    ACELSTRING(medical_treatment,Status_SeverePain);
-                };
-                case (_pain > (PAIN_UNCONSCIOUS / 5)): {
-                    ACELSTRING(medical_treatment,Status_Pain);
-                };
-                default {
-                    ACELSTRING(medical_treatment,Status_MildPain);
-                };
-            };
-            _entries pushBack [localize _painText, [1, 1, 1, 1]];
-        } else {
-            if (ACEGVAR(medical_gui,showInactiveStatuses)) then {_entries pushBack [localize ACELSTRING(medical_treatment,Status_NoPain), _nonissueColor];};
+        _entries pushBack [localize ELSTRING(pharma,IVSqueezed), [1, 1, 1, 1]];
+    };
+};
+// Indicate the amount of pain the unit is in
+// Indicate the amount of pain the unit is in
+if (_target call ACEFUNC(common,isAwake)) then {
+    private _pain = GET_PAIN_PERCEIVED(_target);
+    if (_pain > 0) then {
+    private _painText = switch (true) do {
+        case (_pain > PAIN_UNCONSCIOUS): {
+            ACELSTRING(medical_treatment,Status_SeverePain);
         };
+        case (_pain > (PAIN_UNCONSCIOUS / 5)): {
+            ACELSTRING(medical_treatment,Status_Pain);
+        };
+        default {
+            ACELSTRING(medical_treatment,Status_MildPain);
+        };
+    };
+    _entries pushBack [localize _painText, [1, 1, 1, 1]];
+    } else {
+        if (ACEGVAR(medical_gui,showInactiveStatuses)) then {_entries pushBack [localize ACELSTRING(medical_treatment,Status_NoPain), _nonissueColor];};
     };
 };
 
@@ -353,6 +340,32 @@ private _warmerPlaced = _target getVariable [QEGVAR(hypothermia,fluidWarmer), [0
 
 if (_warmerPlaced select _selectionN == 1) then {
     _entries pushBack [LELSTRING(hypothermia,LineWarmer), [1, 0.75, 0.18, 1]];
+};
+private _wounds = GET_OPEN_WOUNDS(_target);
+private _bodyPart = ALL_BODY_PARTS select _selectionN;
+private _partWounds = _wounds getOrDefault [_bodyPart, []];
+private _internalBleedAmount = 0;
+
+{
+    _x params ["_woundClassID", "_amountOf"];
+    private _classIndex = _woundClassID / 10;
+    private _category   = _woundClassID % 10;
+    private _className = ACEGVAR(medical_damage,woundClassNames) select _classIndex;
+    TRACE_1("checkLimb4",_className);
+    if (_className isEqualTo "InternalBleeding") then {
+        _internalBleedAmount = _internalBleedAmount + _category;
+    };
+} forEach _partWounds;
+private _sizeLabel = "";
+TRACE_1("checkLimb2",_internalBleedAmount);
+if (_internalBleedAmount > 0) then {
+    _sizeLabel = switch (true) do {
+        case (_internalBleedAmount < 3): { localize ELSTRING(hitpoints,InternalBleeding_Minor) };
+        case (_internalBleedAmount < 6): { localize ELSTRING(hitpoints,InternalBleeding_Medium) };
+        case (_internalBleedAmount < 10): { localize ELSTRING(hitpoints,InternalBleeding_Large) };
+        default {};
+    };
+    _entries pushBack [_sizeLabel, [0.8, 0.76, 0.9, 1]];
 };
 
 // Indicate current body part fracture status

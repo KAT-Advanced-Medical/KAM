@@ -201,9 +201,23 @@ class ACE_Medical_Treatment_Actions {
         callbackProgress = "";
         callbackFailure = "";
         callbackSuccess = QFUNC(pressureStart);
-        condition = QFUNC(canBandage);
+        condition = QUOTE([ARR_3(_medic,_patient,_bodyPart)] call FUNC(canSoftcorePressure));
         animationPatientUnconscious = "AinjPpneMstpSnonWrflDnon_rolltoback";
         animationPatientUnconsciousExcludeOn[] = {"ainjppnemstpsnonwrfldnon"};
+    };
+    class ApplySoftcorePressure: ApplyPressure {
+        displayName = CSTRING(ApplyPressure);
+        displayNameProgress = CSTRING(ApplyPressure);
+        treatmentTime = 3;
+        callbackSuccess = QFUNC(manualPressure);
+        condition = QUOTE(!([ARR_3(_medic,_patient,_bodyPart)] call FUNC(canSoftcorePressure)));
+    };
+    class StopPressure: ApplyPressure {
+        displayName = CSTRING(StopPressure);
+        displayNameProgress = CSTRING(StopPressure);
+        treatmentTime = 1;
+        callbackSuccess = QFUNC(manualPressureStop);
+        condition = QFUNC(manualPressureStopCondition);
     };
     class RemoveETD: BasicBandage {
         displayName = CSTRING(Remove_ETD);
@@ -236,8 +250,8 @@ class ACE_Medical_Treatment_Actions {
     class ConvertHastyTourniquet: ApplyTourniquet {
         displayName = CSTRING(Convert_HastyTourniquet);
         displayNameProgress = CSTRING(Converting_HastyTourniquet);
-        treatmentTime = QGVAR(treatmentTimeHastyTourniquet);
-        treatmentTimeTrained = QGVAR(treatmentTimeTrainedHastyTourniquet);
+        treatmentTime = QUOTE(0 call FUNC(convertTourniquetTime));
+        treatmentTimeTrained = QUOTE(1 call FUNC(convertTourniquetTime));
         items[] = {};
         condition = QUOTE([ARR_2(_patient,_bodyPart)] call FUNC(convertTourniquetCheck));
         callbackSuccess = QUOTE([ARR_8(_medic,_patient,_bodyPart,_classname,_itemUser,_usedItem,_createLitter,2)] call FUNC(convertTourniquet));

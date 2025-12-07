@@ -753,16 +753,7 @@
             <Dutch>Plaats REBOA eenheid</Dutch>
         </Key>
         <Key ID="STR_KAT_Surgery_Reset_Surgery">
-            <English>Close Incision</English>
-            <Czech>Uzavřít řez</Czech>
-            <French>Fermer l'incision</French>
-            <Spanish>Cerrar Incisión</Spanish>
-            <Italian>Chiudere incisione</Italian>
-            <German>Schnitt schließen</German>
-            <Japanese>切開口を閉じる</Japanese>
-            <Chinese>封閉切口</Chinese>
-            <Chinesesimp>闭合切口</Chinesesimp>
-            <Dutch>Sluit incisie</Dutch>
+            <English>Reset Surgery</English>
         </Key>
         <Key ID="STR_KAT_Surgery_Retractor_Action">
             <English>Exposing</English>
@@ -1643,6 +1634,51 @@
         </Key>
         <Key ID="STR_KAT_Surgery_PENALTY_MULT_DESC">
             <English>Multiplier for the delay (120-200 seconds) before a fracture is fully healed after surgery (no limping), 0 to disable</English>
+        </Key>
+        <Key ID="STR_KAT_Surgery_Ultra_lungstatus">
+            <English>Lung Volume Status: %1</English>
+        </Key>
+        <Key ID="STR_KAT_Surgery_Ultra_Lung_Status_0">
+            <English>Normal</English>
+        </Key>
+        <Key ID="STR_KAT_Surgery_Ultra_Lung_Status_1">
+            <English>Slight Volume Loss</English>
+        </Key>
+        <Key ID="STR_KAT_Surgery_Ultra_Lung_Status_2">
+            <English>Moderate Volume Loss</English>
+        </Key>
+        <Key ID="STR_KAT_Surgery_Ultra_Lung_Status_3">
+            <English>Significant Volume Loss</English>
+        </Key>
+        <Key ID="STR_KAT_Surgery_Ultra_Lung_Status_4">
+            <English>Catastrophic Volume Loss</English>
+        </Key>
+        <Key ID="STR_KAT_Surgery_stitchKit_Display">
+            <English>Suture Kit</English>
+        </Key>
+        <Key ID="STR_KAT_Surgery_stitchKit_desc_short">
+            <English>Contains equipment to close one surgical wound</English>
+        </Key>
+        <Key ID="STR_KAT_Surgery_fracture_close">
+            <English>Close Incision</English>
+            <Czech>Uzavřít řez</Czech>
+            <French>Fermer l'incision</French>
+            <Spanish>Cerrar Incisión</Spanish>
+            <Italian>Chiudere incisione</Italian>
+            <German>Schnitt schließen</German>
+            <Japanese>切開口を閉じる</Japanese>
+            <Chinese>封閉切口</Chinese>
+            <Chinesesimp>闭合切口</Chinesesimp>
+            <Dutch>Sluit incisie</Dutch>
+        </Key>
+        <Key ID="STR_KAT_Surgery_plated">
+            <English>Plated</English>
+        </Key>
+        <Key ID="STR_KAT_Surgery_Incision">
+            <English>Incision Made</English>
+        </Key>
+        <Key ID="STR_KAT_Surgery_Status_Error">
+            <English>If you are reading this, something broke</English>
         </Key>
     </Package>
 </Project>

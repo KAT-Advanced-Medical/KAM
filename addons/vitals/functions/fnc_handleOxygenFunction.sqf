@@ -64,7 +64,7 @@ if ((_existingPFH isEqualTo -1) && (!_airway || _paralysis)) then {
                 _unit setVariable [QGVAR(airwayMonitorPFH), -1];
             };
         } else {
-            [_idPfh] call CBA_fnc_removePerFrameHandler;
+            [_idPFH] call CBA_fnc_removePerFrameHandler;
             _unit setVariable [QGVAR(airwayMonitorPFH), -1];
         };
     },
@@ -90,7 +90,7 @@ if ((IN_CRDC_ARRST(_unit)) || !_airway || _paralysis) then {
             };
         };
         _respiratoryDepth = [0, 10] select ((_unit getVariable [QEGVAR(breathing,BVMInUse), false]) || (_unit getVariable [QEGVAR(breathing,attachedVent), false]));
-        private _baseTidalVolume = GET_KAT_SURFACE_AREA(_unit) * (_respiratoryDepth / 10);
+        private _baseTidalVolume = ((GET_KAT_SURFACE_AREA(_unit) * (_respiratoryDepth / 10)) min 0.8) max 0.2;;
         _actualVentilation = (_baseTidalVolume * _respiratoryRate) max 1;
     } else {
         _respiratoryRate = 0;
@@ -98,7 +98,8 @@ if ((IN_CRDC_ARRST(_unit)) || !_airway || _paralysis) then {
         _respiratoryDepth = 0;
     };  
 } else {
-    // Ventilatory Demand comes from Heart Rate with increase demand from PaCO2 levels
+    
+
     private _contractility = (_unit getVariable [QEGVAR(pharma,heartContractility), 1]) max 0.2;
     private _contractilityMult = linearConversion [0.2, 1.8, _contractility, 0.5, 1.5, true];
     _demandVentilation = (((((_actualHeartRate / _contractilityMult) * HEART_RATE_CO2_MULTIPLIER) / _anerobicPressure) + ((_previousCyclePaco2 - DEFAULT_PACO2) * 200)) max MINIMUM_VENTILATION);
@@ -107,11 +108,158 @@ if ((IN_CRDC_ARRST(_unit)) || !_airway || _paralysis) then {
     
     private _baseRespiratoryDepth = ((DEFAULT_RESPIRATORY_DEPTH) - (_opioidDepression / 1.5));
     private _baseTidalVolume = GET_KAT_SURFACE_AREA(_unit) * (_baseRespiratoryDepth / 10);
+    private _icp = GET_ICP(_unit);
+    private _cardiacOutput = [_unit] call FUNC(getCardiacOutput);
+    private _tidalVolume = 0;
+    private _patternApplied = false;
+    if (_unit getVariable [QEGVAR(breathing,BVMInUse), false]) then {
+        _respiratoryRate  = 20;
+        _respiratoryDepth = 12;
+        private _baseTidalVolume = (((GET_KAT_SURFACE_AREA(_unit) * (_respiratoryDepth / 10)) min 0.8) max 0.2);
+        _tidalVolume = _baseTidalVolume;
+        _actualVentilation = (_tidalVolume * _respiratoryRate) * _bronchospasm;
+        _patternApplied = true;
+    };
 
-    _respiratoryRate = [(((_demandVentilation / _baseTidalVolume)) min MAXIMUM_RR) * _respiratoryRateMult, 20] select (_unit getVariable [QEGVAR(breathing,BVMInUse), false]);
-    
-    // If respiratory rate is low due to PaCO2, it starts increasing faster to compensate
-    if (_previousCyclePaco2 > 50) then { _respiratoryRate = (_respiratoryRate + ((_previousCyclePaco2 - 50) * 0.2)) min MAXIMUM_RR};
+    if (_unit getVariable [QEGVAR(breathing,attachedVent), false]) then {
+        _respiratoryRate = (60 / (_unit getVariable [QEGVAR(breathing,ventRate), 5])) max 1;
+        _respiratoryDepth = 12;
+        private _baseTidalVolume = (((GET_KAT_SURFACE_AREA(_unit) * (_respiratoryDepth / 10)) min 0.8) max 0.2);
+        _tidalVolume = _baseTidalVolume;
+        _actualVentilation = (_tidalVolume * _respiratoryRate) * _bronchospasm;
+        _patternApplied = true;
+    };
+    if (!_patternApplied && (_icp >= 20) && (_icp < 32)) then {
+        private _t = CBA_missionTime;
+        private _frequency = 1/120;          // 1 Hz = one full sine wave per second
+        private _amplitude = 5;          // peak is +5, trough is -5
+        private _phase = 0;              // no phase shift
+
+        private _value = (sin ((_t * _frequency * 360) + _phase)) * _amplitude;
+        private _env = linearConversion [-5, 5, _value, 0, 2, true];
+        if (_env < 0.15) then {
+            _respiratoryRate  = 0;
+            _respiratoryDepth = 0;
+            _tidalVolume      = 0;
+            _actualVentilation = 1;
+            _patternApplied = true;
+        } else {
+            _respiratoryRate  = 15 * _env;
+            _respiratoryDepth = 10 * _env;
+            _tidalVolume      = GET_KAT_SURFACE_AREA(_unit) * (_respiratoryDepth / 10);
+            _actualVentilation = (_tidalVolume * _respiratoryRate) * _bronchospasm;
+            _patternApplied = true;
+        };
+
+        _unit setVariable [QGVAR(breathingState), 1, true];
+    };
+
+    if (!_patternApplied && (_icp >= 32) && (_icp < 38)) then {
+        private _rate = floor random [5, 15, 35];
+        private _depth = floor random [3, 10, 25];
+
+        if ((random 1) < 0.10) then {
+            _respiratoryRate = 0;
+            _respiratoryDepth = 0;
+            _tidalVolume = 0;
+            _actualVentilation = 1;
+        } else {
+            _respiratoryRate = _rate;
+            _respiratoryDepth = _depth;
+            _tidalVolume = GET_KAT_SURFACE_AREA(_unit) * (_respiratoryDepth / 10);
+            _actualVentilation = (_tidalVolume * _respiratoryRate) * _bronchospasm;
+        };
+
+        _patternApplied = true;
+        _unit setVariable [QGVAR(breathingState), 2, true];
+    };
+
+    if (!_patternApplied && (_icp >= 38) && (_icp < 45)) then {
+
+        private _timer = _unit getVariable [QEGVAR(breathing,biotTimer), 0];
+        private _state = _unit getVariable [QEGVAR(breathing,biotState), "breath"];
+
+        _timer = _timer - _deltaT;
+
+        if (_timer <= 0) then {
+
+            if (_state == "breath") then {
+                _state = "apnea";
+                _timer = 1 + random 3;
+            } else {
+                _state = "breath";
+                _timer = 2 + random 3;
+            };
+
+            _unit setVariable [QEGVAR(breathing,biotState), _state, true];
+            _unit setVariable [QEGVAR(breathing,biotTimer), _timer, true];
+        } else {
+            _unit setVariable [QEGVAR(breathing,biotTimer), _timer, true];
+        };
+
+        if (_state == "apnea") then {
+            _respiratoryRate = 0;
+            _respiratoryDepth = 0;
+            _tidalVolume = 0;
+            _actualVentilation = 1;
+        } else {
+            _respiratoryRate = 4 + floor (random 4);
+            _respiratoryDepth = _baseRespiratoryDepth * (0.2 + random 1.2);
+            _tidalVolume = GET_KAT_SURFACE_AREA(_unit) * (_respiratoryDepth / 10);
+            _actualVentilation = (_tidalVolume * _respiratoryRate) * _bronchospasm;
+            playSound3D [QPATHTOF_SOUND(audio\gasp.ogg), _unit, false, getPosASL _unit, 6, 1, 8];
+        };
+
+        _patternApplied = true;
+        _unit setVariable [QGVAR(breathingState), 3, true];
+    };
+
+    if (!_patternApplied && (_icp >= 45)) then {
+
+        private _timer = _unit getVariable [QEGVAR(breathing,agonalTimer), 0];
+
+        _timer = _timer - _deltaT;
+        _unit setVariable [QEGVAR(breathing,agonalTimer), _timer, true];
+        if (_timer <= 0) then {
+            private _pause = 5 + random 15;
+            private _gaspDur = 1.5 + random 1.0;
+
+            _timer = _pause + _gaspDur;
+            _unit setVariable [QEGVAR(breathing,agonalTimer), _timer, true];
+
+            _respiratoryRate = 0;
+            _respiratoryDepth = 0;
+            _tidalVolume = 0;
+            _actualVentilation = 1;
+
+            _patternApplied = true;
+        }
+        else
+        {
+            if (_timer < 2.0) then {
+                _respiratoryRate = 1;
+                _respiratoryDepth = _baseRespiratoryDepth * (2.0 + random 1.0);
+                _tidalVolume = GET_KAT_SURFACE_AREA(_unit) * (_respiratoryDepth / 10);
+                _actualVentilation = (_tidalVolume * _respiratoryRate) * _bronchospasm;
+                playSound3D [QPATHTOF_SOUND(audio\gasp.ogg), _unit, false, getPosASL _unit, 6, 1, 8];
+            } else {
+                _respiratoryRate = 0;
+                _respiratoryDepth = 0;
+                _tidalVolume = 0;
+                _actualVentilation = 1;
+            };
+
+            _patternApplied = true;
+            _unit setVariable [QGVAR(breathingState), 4, true];
+        };
+    };
+    if (!_patternApplied) then {
+    _unit setVariable [QGVAR(breathingState), 0, true];
+    _respiratoryRate = (((_demandVentilation / _baseTidalVolume) * _respiratoryRateMult) min MAXIMUM_RR);
+
+    if (!_patternApplied && (_previousCyclePaco2 > 50)) then { _respiratoryRate = (_respiratoryRate + ((_previousCyclePaco2 - 50) * 0.2)) min MAXIMUM_RR};
+
+    _respiratoryRate = [_respiratoryRate, 20] select (_unit getVariable [QEGVAR(breathing,BVMInUse), false]);
 
     _tidalVolume = _baseTidalVolume;
     if (_respiratoryRate > 25) then {
@@ -126,8 +274,9 @@ if ((IN_CRDC_ARRST(_unit)) || !_airway || _paralysis) then {
     private _scaleFactor = 1 - (0.05 * _excessRR);  // reduces ~3% per breath over 25
     _respiratoryDepth = _baseRespiratoryDepth * (_scaleFactor max 0.3); // never drops below 50% of base
     };
-    // Obstructed airway reduces effective ventilation
+    _respiratoryDepth = [_respiratoryDepth, 10] select (_unit getVariable [QEGVAR(breathing,BVMInUse), false]);
     _actualVentilation = (_tidalVolume * _respiratoryRate) * _bronchospasm;
+    };
 };
 private _paco2 = 40;
 
@@ -166,7 +315,7 @@ private _fio2 = switch (true) do {
     case (_unit getVariable [QEGVAR(breathing,oxygenMaskActive), false]): { 0.95 };
     case (_unit getVariable [QEGVAR(breathing,oxygenTankConnected), false]): { 1 };
     case (_unit getVariable [QEGVAR(breathing,attachedVent), false]): { 1 };
-    case ((_unit getVariable [QEGVAR(breathing,nasalCannula), false]) && IN_MED_VEHICLE(_unit)): { 0.95 };
+    case ((_unit getVariable [QEGVAR(breathing,nasalCannula), false]) && ((IN_MED_FACILITY(_unit)) || (IN_MED_VEHICLE(_unit)))): { 0.95 };
     default { DEFAULT_FIO2 };
 };
 
@@ -180,7 +329,6 @@ TRACE_5("o2",_pao2,DEFAULT_ECB,((GET_BODY_FLUID(_unit) select 0) max 500),_deman
 private _arrestPerfusion = [1, (1 * EGVAR(breathing,SpO2_PerfusionMultiplier))] select ((IN_CRDC_ARRST(_unit)) && (EGVAR(breathing,SpO2_perfusion)));
 // PaO2 moves in controlled steps to prevent hard movements when Ventilation Demand spikes
 _pao2 = if (_previousCyclePao2 != _pao2) then { ([ (_previousCyclePao2 - ((PAO2_MAX_CHANGE * EGVAR(breathing,SpO2_MultiplyNegative) * _arrestPerfusion) * _deltaT)) , (_previousCyclePao2 + ((PAO2_MAX_CHANGE * EGVAR(breathing,SpO2_MultiplyPositive)) * _deltaT))] select ((_previousCyclePao2 - _pao2) < 0)) } else { _pao2 };
-
 // Oxy-Hemo Dissociation Curve, driven by PaO2 with shaping done by pH 
 private _o2Sat = ((_pao2 max 1)^2.7 / ((25 - (((_pH / DEFAULT_PH) - 1) * 150))^2.7 + _pao2^2.7)) min 0.999;
 
@@ -189,6 +337,7 @@ if (_unit getVariable [QEGVAR(airway,overstretch), false]) then {
 };
 TRACE_2("o22",_o2Sat,((_pao2 max 1)^2.7 / ((25 - (((_pH / DEFAULT_PH) - 1) * 150))^2.7 + _pao2^2.7)));
 _unit setVariable [QEGVAR(breathing,breathRate), (_respiratoryRate max 0), _syncValues];
+_unit setVariable [VAR_RESPIRATORY_DEPTH, (_respiratoryDepth max 0), _syncValues];
 _unit setVariable [VAR_BLOOD_GAS, [_paco2, _pao2, _o2Sat, 24, _pH, _etco2], _syncValues];
 
 _o2Sat * 100

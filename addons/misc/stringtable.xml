@@ -1936,14 +1936,6 @@
         </Key>
          <Key ID="STR_KAT_Misc_MEDPACK_Display">
             <English>Medication Case</English>
-            <Spanish>Kit individual de primeros auxilios</Spanish>
-            <German>Individuelles Erste Hilfe Kit (IFAK)</German>
-            <Japanese>個人用応急処置キット (IFAK)</Japanese>
-            <French>Trousse individuelle du combattant</French>
-            <Finnish>Yksilöllinen ensiapulaukku</Finnish>
-            <Russian>Индивидуальная аптечка первой помощи</Russian>
-            <Portuguese>Kit de Primeiros Socorros Individual</Portuguese>
-            <Dutch>Individuele Eerste hulpskit</Dutch>
         </Key>
         <Key ID="STR_KAT_Misc_MEDPACK_DESC">
             <English>The Medication Case can be unpacked to provide useful Medications, Syringes, and IV/IO's</English>
@@ -2047,11 +2039,11 @@
         <Key ID="STR_KAT_Misc_SETTING_MEDPACKEighthSlot_Item">
             <English>Miscellaneous Section Items &amp; Quantity</English>
         </Key>
-        <Key ID="STR_KAT_Misc_SETTING_PainInTreatment">
-            <English>Pain Effects Treatment Time</English>
+        <Key ID="STR_KAT_Misc_SETTING_treatmentModifiers">
+            <English>Injured Treatment Time Modifiers</English>
         </Key>
-        <Key ID="STR_KAT_Misc_SETTING_PainInTreatment_DESC">
-            <English>Turns on a penalty if the unit doing the treatment is in pain, up to 2x the normal time</English>
+        <Key ID="STR_KAT_Misc_SETTING_treatmentModifiers_DESC">
+            <English>Adds modifiers to treatment time if the medic is injured or providing continuous aid (Hyperextension or squeezing IV bag)</English>
         </Key>
     </Package>
 </Project>

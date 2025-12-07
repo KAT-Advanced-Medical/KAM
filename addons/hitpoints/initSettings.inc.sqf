@@ -72,6 +72,15 @@
 ] call CBA_fnc_addSetting;
 
 [
+    QGVAR(damageEffectThreshold),
+    "SLIDER",
+    [LLSTRING(SETTING_EffectDamageThreshold), LLSTRING(SETTING_EffectDamageThreshold_DESC)],
+    [CBA_SETTINGS_CAT, ELSTRING(GUI,SubCategory_Basic)],
+    [1, 40, 15, 1],
+    true
+] call CBA_fnc_addSetting;
+
+[
     QGVAR(InternalBleedingEnable),
     "CHECKBOX",
     [LLSTRING(SETTING_InternalBleedingEnable), LLSTRING(SETTING_InternalBleedingEnable_DESC)],
@@ -243,3 +252,12 @@
     [2, 16, 6, 1],
     true
 ] call CBA_fnc_addSetting;
+
+[
+    QGVAR(hardcorePressure),
+    "CHECKBOX",
+    [LLSTRING(SETTING_hardcorePressure), LLSTRING(SETTING_hardcorePressure_DESC)],
+    [CBA_SETTINGS_CAT, ELSTRING(GUI,SubCategory_Basic)],
+    [false],
+    true
+] call CBA_Settings_fnc_init;

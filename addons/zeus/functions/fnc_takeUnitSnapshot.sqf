@@ -126,7 +126,7 @@ diag_log format [
 private _airwayStatus = _unit getVariable [QEGVAR(breathing,airwayStatus), 100];
 private _pneumothorax = _unit getVariable [QEGVAR(breathing,pneumothorax), [0, 0]];
 private _pneumothoraxSurfaceArea = _unit getVariable [QEGVAR(breathing,pneumothoraxSurfaceArea), [0, 0]];
-private _hemopneumothorax = _unit getVariable [QEGVAR(breathing,hemopneumothorax), [false, false]];
+private _hemopneumothorax = _unit getVariable [QEGVAR(breathing,hemopneumothorax), [0, 0]];
 private _tensionpneumothorax = _unit getVariable [QEGVAR(breathing,tensionpneumothorax), [false, false]];
 private _activeChestSeal = _unit getVariable [QEGVAR(breathing,activeChestSeal), [false, false]];
 private _deepPenetratingInjury = _unit getVariable [QEGVAR(breathing,deepPenetratingInjury), [false, false]];
@@ -176,7 +176,7 @@ private _tourniquetTime = _unit getVariable [QEGVAR(circulation,tourniquetTime),
 private _defaultHeartRate = _unit getVariable [QEGVAR(circulation,defaultHeartRate), 80];
 
 private _bloodGas = _unit getVariable [QEGVAR(circulation,bloodGas), DEFAULT_BLOOD_GAS];
-private _testedBloodGas = _unit getVariable [QEGVAR(circulation,testedBloodGas), [0,0,0,0,0,0,0,0,0,0,0,0]];
+private _testedBloodGas = _unit getVariable [QEGVAR(circulation,testedBloodGas), [0,0,0,0,0,0]];
 
 private _ABGmenuShow = _unit getVariable [QEGVAR(circulation,ABGmenuShow), false];
 
@@ -297,6 +297,11 @@ diag_log format [
     "[Vitals] Respiratory Depth: %1 Current Weight: %2",
     _respiratorydepth,
     _currentWeight
+];
+private _currentVersion = QUOTE(VERSION_STR);
+diag_log format [
+    "[Version] Current Version: %1",
+    _currentVersion
 ];
 
 deleteVehicle _logic;

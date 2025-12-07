@@ -66,5 +66,11 @@
         <Key ID="STR_KAT_Feedback_SETTING_effectOverdose_DESC">
             <English>Enables Overdose effects on certain medications</English>
         </Key>
+        <Key ID="STR_KAT_Feedback_SETTING_braineffect_display">
+            <English>Enable Brain Injury Effects</English>
+        </Key>
+        <Key ID="STR_KAT_Feedback_SETTING_braineffect_DESC">
+            <English>Enables Brain Injury Effects</English>
+        </Key>
     </Package>
 </Project>

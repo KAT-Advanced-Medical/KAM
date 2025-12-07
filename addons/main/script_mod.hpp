@@ -1,9 +1,15 @@
 // COMPONENT should be defined in the script_component.hpp and included BEFORE this hpp
-
+#undef MAINPREFIX
 #define MAINPREFIX x
 #define PREFIX kat
 
 #include "script_version.hpp"
+
+#undef VERSION
+#undef VERSION_STR
+#undef VERSION_AR
+
+#undef VERSION_CONFIG
 
 #define VERSION     MAJOR.MINOR
 #define VERSION_STR MAJOR.MINOR.PATCH

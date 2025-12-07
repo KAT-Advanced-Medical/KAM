@@ -17,7 +17,7 @@ class CfgSounds {
   };
   class GVAR(suction) {
       name = QGVAR(suction);
-      sound[] = {QPATHTOF_SOUND(sounds\suction.wav), "db + 2", 1, 15};
+      sound[] = {QPATHTOF_SOUND(sounds\accuvac_suction.wav), "db + 2", 1, 15};
       titles[]    = {};
   };
 };

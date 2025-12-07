@@ -44,7 +44,8 @@ if (_patient getVariable ["kat_AEDXPatient_PFH", -1] isEqualTo -1) then {
 
         private _partIndex = ((_patient getVariable [QGVAR(AED_X_VitalsMonitor_Provider), [objNull, -1, 3]]) select 2);
         private _tourniquetApplied = HAS_TOURNIQUET_APPLIED_ON(_patient,_partIndex);
-
+        private _isOccluded = [_patient,_partIndex] call EFUNC(pharma,occlusionCheck);
+        private _isDamaged = [_patient,_partIndex] call EFUNC(hitpoints,damageCheck);
         private _hr = 0;
         private _pr = 0;
         private _bp = [0,0];
@@ -78,10 +79,14 @@ if (_patient getVariable ["kat_AEDXPatient_PFH", -1] isEqualTo -1) then {
             };
         };
 
-        if (_tourniquetApplied) then {
+        if (_isOccluded || _isDamaged) then {
             _bp = [0,0];
             _pr = 0;
-        } else {
+        };
+        private _partIndex2 = ((_patient getVariable [QGVAR(AED_X_VitalsMonitor_Provider), [-1, -1, -1]]) select 2) - 1;
+        private _isSPO2Damaged = [_patient,_partIndex2] call EFUNC(hitpoints,damageCheck);
+        private _isSPO2Occluded = [_patient,_partIndex2] call EFUNC(pharma,occlusionCheck);
+        if (_isSPO2Occluded || _isSPO2Damaged) then {
             _spO2 = GET_KAT_SPO2(_patient);
         };
         
@@ -110,7 +115,7 @@ if (_patient getVariable ["kat_AEDXPatient_PFH", -1] isEqualTo -1) then {
         };
         _patient setVariable [QGVAR(AED_X_VitalsStatus), _status, true];
         if (_patient getVariable [QGVAR(AED_X_VitalsMonitor_Connected), false] && GVAR(BPInterval)) then { // Store new BP
-            if !(_tourniquetApplied) then {
+            if !(_isOccluded) then {
                 _patient setVariable [QGVAR(StoredBloodPressure), [_patient] call FUNC(getBloodPressure), true];
             } else {
                 _patient setVariable [QGVAR(StoredBloodPressure), [0,0], true];
@@ -284,14 +289,14 @@ if (_patient getVariable [QGVAR(AED_X_VitalsMonitor_Connected), false] && {(_pat
             [_idPFH] call CBA_fnc_removePerFrameHandler;
         };
 
-        private _partIndex = ((_patient getVariable [QGVAR(AED_X_VitalsMonitor_Provider), [-1, -1, -1]]) select 2);
-        private _tourniquetApplied = HAS_TOURNIQUET_APPLIED_ON(_patient,_partIndex);
+        private _partIndex = ((_patient getVariable [QGVAR(AED_X_VitalsMonitor_Provider), [-1, -1, -1]]) select 2) - 1;
+        private _isOccluded = [_patient,_partIndex] call EFUNC(pharma,occlusionCheck);
 
         if (_patient getVariable [QGVAR(DefibrillatorInUse), false] || !(_patient getVariable [QGVAR(AED_X_VitalsMonitor_VolumePatient), false])) then {
         } else {
             private _hr = _patient getVariable [QACEGVAR(medical,heartRate), 80];
             private _spO2 = GET_KAT_SPO2(_patient);
-            if (_spO2 < GVAR(AED_X_Monitor_SpO2Warning) || _tourniquetApplied) then {
+            if (_spO2 < GVAR(AED_X_Monitor_SpO2Warning) || _isOccluded) then {
                 playSound3D [QPATHTOF_SOUND(sounds\spo2warning.wav), _soundSource, false, getPosASL _soundSource, 5, 1, 15];
             };
         };

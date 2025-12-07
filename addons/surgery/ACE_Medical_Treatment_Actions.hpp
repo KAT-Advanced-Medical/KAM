@@ -42,8 +42,8 @@ class ACE_Medical_Treatment_Actions {
         treatmentTime = QGVAR(openTime);
         items[] = {"kat_plate"};
         consumeItem = 1;
-        condition = QUOTE([ARR_4(_medic,_patient,_bodyPart,3.5)] call FUNC(openReductionCheck));
-        callbackSuccess = QUOTE([ARR_4(_medic,_patient,_bodyPart,false)] call FUNC(openReduction));
+        condition = QUOTE([ARR_4(_medic,_patient,_bodyPart,2.5)] call FUNC(openReductionCheck));
+        callbackSuccess = QUOTE([ARR_4(_medic,_patient,_bodyPart,2.5)] call FUNC(openReductionProgress));
     };
     class Expose: BasicBandage {
         displayName = CSTRING(Retractor_Use);
@@ -95,9 +95,23 @@ class ACE_Medical_Treatment_Actions {
         allowSelfTreatment = 0;
         medicRequired = QGVAR(surgicalAction_MedLevel);
         treatmentTime = QGVAR(intermediateTime);
-        items[] = {"ACE_salineIV_250"};
+        items[] = {"ACE_salineIV_250", "kat_salineIV_100"};
         condition = QUOTE([ARR_4(_medic,_patient,_bodyPart,2.3)] call FUNC(openReductionCheck));
         callbackSuccess = QUOTE([ARR_4(_medic,_patient,_bodyPart,2.3)] call FUNC(openReductionProgress));
+    };
+    class CloseIncision: CheckFracture {
+        displayName = CSTRING(fracture_Close);
+        displayNameProgress = CSTRING(perform);
+        category = "surgery";
+        treatmentLocations = QGVAR(surgicalLocation);
+        allowedSelections[] = {"LeftArm", "RightArm", "LeftLeg", "RightLeg", "UpperLeftArm", "UpperRightArm", "UpperLeftLeg", "UpperRightLeg"};
+        allowSelfTreatment = 0;
+        medicRequired = QGVAR(surgicalAction_MedLevel);
+        treatmentTime = QGVAR(openTime);
+        items[] = {"kat_stitchKit"};
+        consumeItem = 1;
+        condition = QUOTE([ARR_4(_medic,_patient,_bodyPart,2.7)] call FUNC(openReductionCheck));
+        callbackSuccess = QUOTE([ARR_4(_medic,_patient,_bodyPart,false)] call FUNC(openReduction));
     };
     class ResetSurgery: CheckFracture {
         displayName = CSTRING(Reset_Surgery);
@@ -108,7 +122,7 @@ class ACE_Medical_Treatment_Actions {
         allowSelfTreatment = 0;
         medicRequired = QGVAR(surgicalAction_MedLevel);
         treatmentTime = QGVAR(openTime);
-        items[] = {"ACE_surgicalKit"};
+        items[] = {"kat_stitchKit"};
         consumeItem = 0;
         condition = QUOTE(([ARR_4(_medic,_patient,_bodyPart,2)] call FUNC(openReductionCheck)) && (GVAR(enable_fracture)));
         callbackSuccess = QUOTE([ARR_4(_medic,_patient,_bodyPart,true)] call FUNC(openReduction));

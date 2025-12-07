@@ -12,7 +12,7 @@ class CfgSounds {
     };
     class GVAR(NoShock) {
         name = QGVAR(NoShock);
-        sound[] = {QPATHTOF_SOUND(sounds\noshock.wav), "db + 2", 1, 15};
+        sound[] = {QPATHTOF_SOUND(sounds\noshockadvised.wav), "db + 2", 1, 15};
         titles[]    = {};
     };
 };

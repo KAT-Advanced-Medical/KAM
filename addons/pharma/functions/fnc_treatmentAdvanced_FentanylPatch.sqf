@@ -21,4 +21,4 @@ params ["_medic", "_patient", "_bodyPart", "_classname", "", "_usedItem"];
 [QGVAR(fentanylPatchLocal), [_medic, _patient, _bodyPart], _patient] call CBA_fnc_targetEvent;
 
 [_patient, _classname] call ACEFUNC(medical_treatment,addToTriageCard);
-[_patient, "activity", ACELSTRING(medical_treatment,Activity_usedItem), [[_medic] call ACEFUNC(common,getName), _classname]] call ACEFUNC(medical_treatment,addToLog);
+[_patient, "activity", ACELSTRING(medical_treatment,Activity_usedItem), [[_medic] call ACEFUNC(common,getName), LSTRING(fentpatch_display)]] call ACEFUNC(medical_treatment,addToLog);

@@ -20,6 +20,6 @@
 
 params ["_ctrl", "_target", "_selectionN", "_entries"];
 
-if (_target getVariable [QGVAR(currentConverted), false] && GVAR(enableConversionMessage)) then {
+if (_target getVariable [QGVAR(currentlyConverted), false] && GVAR(enableConversionMessage)) then {
     _entries pushBack [LLSTRING(ConversionText), [0.35, 0.72, 0.82, 1]];
 };

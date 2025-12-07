@@ -43,3 +43,13 @@ if (EGVAR(hypothermia,hypothermiaActive)) then {
 private _woundClotDelayMult = (round (((1 * _alteplaseFixedEffectiveness * (600/_coagulationFactor) * _cwmpFixedEffectiveness * _hypothermiaDelay) min 10) * 10)) / 10;
 
 [_patient, "quick_view", LLSTRING(Coag_Sense_Log), [_woundClotDelayMult]] call ACEFUNC(medical_treatment,addToLog);
+if (GVAR(abgEnable)) then {
+    private _bloodGasArray = GET_BLOOD_GAS(_patient);
+    _bloodGasArray params ["_paCO2", "_paO2", "_spO2", "_hCO3", "_pH", "_etCO2"];
+    private _patientName = [_patient] call ACEFUNC(common,getName);
+    private _output = format ["Patient: %1, PaCO2: %2, PaO2: %3, SpO2: %4, HCO3: %5, pH: %6", _patientName, _paCO2 toFixed 2, _paO2 toFixed 2, _spO2 toFixed 2, _hCO3 toFixed 2, _pH toFixed 2];
+    [_output, 3, _medic] call ACEFUNC(common,displayTextStructured);
+    [_patient, "quick_view", _output, [_medic]] call ACEFUNC(medical_treatment,addToLog);
+    _patient setVariable [QEGVAR(circulation,testedBloodGas), _bloodGasArray, true];
+
+};

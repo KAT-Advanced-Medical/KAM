@@ -22,7 +22,7 @@
 
 params ["_medic", "_patient", "_bodyPart", "_classname", "", "_usedItem"];
 
-if !(((_patient getVariable [QGVAR(occlusion), [0, 0, 0]]) findIf { _x != 0 }) != -1) exitWith {
+if (((_patient getVariable [QGVAR(occlusion), [0, 0, 0]]) findIf { _x != 0 }) == -1) exitWith {
     private _output = LLSTRING(Accuvac_NA);
     [_output, 1.5, _medic] call ACEFUNC(common,displayTextStructured);
     if (_usedItem isEqualTo "kat_suction" && GVAR(Suction_reuse)) then {
@@ -62,7 +62,7 @@ if (_notInVehicle) then {
 GVAR(suction_timeOut) = true;
 
 [{
-    params ["_medic", "_patient", "_notInVehicle"];
+    params ["_medic", "_patient", "_notInVehicle", "_usedItem"];
 
     [LLSTRING(suction_stop), "", ""] call ACEFUNC(interaction,showMouseHint);
     [LLSTRING(suction_start), 1.5, _medic] call ACEFUNC(common,displayTextStructured);
@@ -94,11 +94,6 @@ GVAR(suction_timeOut) = true;
 
             [LLSTRING(Suction_cancelled), 1.5, _medic] call ACEFUNC(common,displayTextStructured);
         };
-        if (_usedItem isEqualTo "kat_suction") then {
-            playSound3D [QPATHTOF_SOUND(sounds\manualpump_suction.wav), _patient, false, getPosASL _patient, 6, 1, 15];
-        } else {
-            playSound3D [QPATHTOF_SOUND(sounds\accuvac_suction.wav), _patient, false, getPosASL _patient, 6, 1, 15];
-        };
 
         if !(GVAR(suction_timeOut)) then {
             GVAR(suction_timeOut) = true;
@@ -116,16 +111,27 @@ GVAR(suction_timeOut) = true;
                 if (((_patient getVariable [QGVAR(occlusion), [0, 0, 0]]) findIf { _x > 1 }) != -1) then {
                     if(random 100 < GVAR(probability_suction)) then {
                         private _occlusionState = _patient getVariable [QGVAR(occlusion), [0, 0, 0]];
-                            _occlusionState set [0, ((_occlusionState select 0) - selectRandom [1, 2, 3]) max 0];
-                            _occlusionState set [1, ((_occlusionState select 1) - selectRandom [1, 2, 3]) max 0];
-                            _occlusionState set [2, ((_occlusionState select 2) - selectRandom [1, 2, 3]) max 0];
+                            private _reduction = floor (selectRandom [1, 2, 3] * GVAR(SuctionEffectiveness));
+                            _occlusionState set [0, (((_occlusionState select 0) - _reduction) max 0)];
+                            _occlusionState set [1, (((_occlusionState select 1) - _reduction) max 0)];
+                            _occlusionState set [2, (((_occlusionState select 2) - _reduction) max 0)];
                             _patient setVariable [QGVAR(occlusion), _occlusionState, true];
                         [LLSTRING(suction_info), 2, _medic] call ACEFUNC(common,displayTextStructured);
                     } else {
                         [LLSTRING(suction_info), 2, _medic] call ACEFUNC(common,displayTextStructured);
                     };
+                    if (_usedItem isEqualTo "kat_suction") then {
+                        _soundID = playSound3D [QPATHTOF_SOUND(sounds\manualpump_suction.wav), _patient, false, getPosASL _patient, 6, 1, 15];
+                    } else {
+                        _soundID = playSound3D [QPATHTOF_SOUND(sounds\accuvac_suction.wav), _patient, false, getPosASL _patient, 6, 1, 15];
+                    };
                 } else {
                     [LLSTRING(suction_success), 1.5, _medic] call ACEFUNC(common,displayTextStructured);
+                    if (_usedItem isEqualTo "kat_suction") then {
+                            _soundID = playSound3D [QPATHTOF_SOUND(sounds\manualpump_start.wav), _patient, false, getPosASL _patient, 6, 1, 15];
+                        } else {
+                            _soundID = playSound3D [QPATHTOF_SOUND(sounds\accuvac_start.wav), _patient, false, getPosASL _patient, 6, 1, 15];
+                        };
                 };
 
             }] call CBA_fnc_waitUntilAndExecute;
@@ -140,7 +146,7 @@ GVAR(suction_timeOut) = true;
                 GVAR(loopSuction) = true;
             }] call CBA_fnc_waitUntilAndExecute;
         };
-    }, 0, [_medic, _patient, _notInVehicle]] call CBA_fnc_addPerFrameHandler;
+    }, 0, [_medic, _patient, _notInVehicle, _usedItem]] call CBA_fnc_addPerFrameHandler;
 
     [{GVAR(suction_timeOut) = false;}, [], 1] call CBA_fnc_waitAndExecute;
 }, [_medic, _patient, _notInVehicle, _usedItem], 2] call CBA_fnc_waitAndExecute;

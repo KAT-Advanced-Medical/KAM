@@ -19,8 +19,8 @@ params ["_unit"];
 [{
     params ["_args", "_idPFH"];
     _args params ["_unit"];
-    playSound3D [QPATHTOF_SOUND(sounds\lucas.ogg), _unit, false, getPosASL _unit, 8, 1, 15];
-    private _inVehicle =  IN_MED_VEHICLE(_unit);
+    playSound3D [QPATHTOF_SOUND(sounds\lucas.ogg), _unit, false, getPosASL _unit, 6, 1, 8];
+    private _inVehicle =  ((IN_MED_VEHICLE(_unit)) || (IN_MED_FACILITY(_unit)));
     private _attachedLucas = _unit getVariable [QGVAR(attachedLucas), false];
     private _state = _unit getVariable [QGVAR(attachedLucasState), false];
     [_unit, _unit, "LUCAS"] call FUNC(cprLocal);

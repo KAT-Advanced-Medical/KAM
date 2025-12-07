@@ -21,7 +21,7 @@ params ["_medic", "_patient"];
 private _message = LLSTRING(inspectChest_normal);
 private _messageLog = LLSTRING(inspectChest_normal);
 private _tension = _patient getVariable [QGVAR(tensionpneumothorax), [false, false]];
-private _hemo = _patient getVariable [QGVAR(hemopneumothorax), [false, false]];
+private _hemo = _patient getVariable [QGVAR(hemopneumothorax), [0, 0]];
 private _hasPneumothorax = (_patient getVariable [QGVAR(pneumothorax), [0, 0]] select 0 > 0 || _patient getVariable [QGVAR(pneumothorax), [0, 0]] select 1 > 0 || (_tension select 0) || (_tension select 1) || (_hemo select 0) || (_hemo select 1));
 private _airwayClear = HAS_AIRWAY(_patient);
 private _simpleSetting = (GVAR(inspectChest_enable) == 1);
@@ -40,7 +40,7 @@ if (GET_BREATHING_RATE(_patient) isEqualTo 0) then {
             private _type = LLSTRING(Pneumothorax);
             private _type_log = LLSTRING(Pneumothorax_short);
 
-            if ((_patient getVariable [QGVAR(hemopneumothorax), [false, false]] select 0) || (_patient getVariable [QGVAR(hemopneumothorax), [false, false]] select 1)) then {
+            if (((_patient getVariable [QGVAR(hemopneumothorax), [0, 0]] select 0) > 0) || ((_patient getVariable [QGVAR(hemopneumothorax), [0, 0]] select 1) > 0)) then {
                 _type = LLSTRING(Hemopneumothorax);
                 _type_log = LLSTRING(Hemopneumothorax_short);
             };
@@ -55,11 +55,8 @@ if (GET_BREATHING_RATE(_patient) isEqualTo 0) then {
 } else {
     if (_hasPneumothorax && _airwayClear) then {
         private _tension = _patient getVariable [QGVAR(tensionpneumothorax), [false, false]];
-        private _hemo = _patient getVariable [QGVAR(hemopneumothorax), [false, false]];
-        if ((_tension select 0) || (_tension select 1) || (_hemo select 0) || (_hemo select 1)) then {
-            _message = LLSTRING(inspectChest_none);
-            _messageLog = LLSTRING(inspectChest_none_log);
-        } else {
+        private _hemo = _patient getVariable [QGVAR(hemopneumothorax), [0, 0]];
+        if ((_tension select 0) || (_tension select 1) || ((_hemo select 0) > 0) || ((_hemo select 1) > 0)) then {
             _message = LLSTRING(inspectChest_unevenMovement);
             _messageLog = LLSTRING(inspectChest_unevenMovement);
         };
@@ -69,7 +66,7 @@ if (GET_BREATHING_RATE(_patient) isEqualTo 0) then {
             private _type = LLSTRING(Pneumothorax);
             private _type_log = LLSTRING(Pneumothorax_short);
 
-            if ((_patient getVariable [QGVAR(hemopneumothorax), [false, false]] select 0) || (_patient getVariable [QGVAR(hemopneumothorax), [false, false]] select 1)) then {
+            if (((_patient getVariable [QGVAR(hemopneumothorax), [0, 0]] select 0) > 0) || ((_patient getVariable [QGVAR(hemopneumothorax), [0, 0]] select 1) > 0)) then {
                 _hintSize = 2.5;
                 _type = LLSTRING(Hemopneumothorax);
                 _type_log = LLSTRING(Hemopneumothorax_short);
@@ -92,7 +89,7 @@ if (GET_BREATHING_RATE(_patient) isEqualTo 0) then {
 [_patient, "quick_view", LSTRING(inspectChest_log)] call EFUNC(circulation,removeLog);
 [_patient, "quick_view", LSTRING(inspectChest_log), [[_medic] call ACEFUNC(common,getName), _messageLog]] call ACEFUNC(medical_treatment,addToLog);
 
-if (((_patient getVariable [QGVAR(hemopneumothorax), [false, false]] select 0) || (_patient getVariable [QGVAR(hemopneumothorax), [false, false]] select 1)) && {!_simpleSetting}) then {
+if ((((_patient getVariable [QGVAR(hemopneumothorax), [0, 0]] select 0) > 0) || ((_patient getVariable [QGVAR(hemopneumothorax), [0, 0]] select 1) > 0)) && {!_simpleSetting}) then {
     _message = format ["%1<br />%2", _message, LLSTRING(inspectChest_internalBleeding)];
     [_patient, "quick_view", LSTRING(inspectChest_log), [[_medic] call ACEFUNC(common,getName), LLSTRING(inspectChest_internalBleeding)]] call ACEFUNC(medical_treatment,addToLog);
 };

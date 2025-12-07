@@ -94,6 +94,11 @@ _patient setVariable [VAR_HEMORRHAGE, 0, true];
 _patient setVariable [VAR_IN_PAIN, false, true];
 _patient setVariable [VAR_PAIN_SUPP, 0, true];
 
+
+//pressure
+_patient setVariable [QGVAR(pressureApplied), [-1, objNull], true];
+_patient setVariable [VAR_APPLIEDPRESSURE, DEFAULT_APPLIEDPRESSURE_VALUES, true];
+
 // Medication
 _patient setVariable [VAR_MEDICATIONS, [], true];
 

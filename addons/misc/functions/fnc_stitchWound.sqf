@@ -95,6 +95,8 @@ if (_stitchedIndex == -1) then {
 // Clear trauma if enabled
 if (GVAR(clearTrauma) == 1) then {
     [_patient, _bodyPart, -(_treatedDamageOf * _treatedAmountOf)] call ACEFUNC(medical_treatment,addTrauma);
+} else {
+    [_patient, _bodyPart, -((_treatedDamageOf * _treatedAmountOf) * 0.5)] call ACEFUNC(medical_treatment,addTrauma);
 };
 
 // Save updated wound data

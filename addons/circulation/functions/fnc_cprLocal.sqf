@@ -87,11 +87,11 @@ private _fnc_advRhythm = {
         };
         case "Lidocaine":
         {
-            _lidoBoost = _lidoBoost + (6 * (_dose / 10));
+            _lidoBoost = _lidoBoost + (4 * (_dose / 10));
         };
         case "Amiodarone":
         {
-            _amiBoost = _amiBoost + ((random [6,10,16]) * (_dose / 10));
+            _amiBoost = _amiBoost + ((random [4,8,14]) * (_dose / 10));
         };
         case "Nitroglycerin":
         {
@@ -132,10 +132,13 @@ switch (_reviveObject) do {
 };
 
 if (_reviveObject in ["AED", "AEDX"]) exitWith {
+    if (_patient getVariable [QGVAR(cardiacArrestType), 0] in [4,3] && (_patient getVariable [QGVAR(refractoryCA), false])) then {
+        _chance = _chance / 4;
+    };
     _chance = _chance + (_amiBoost + (1 max _lidoBoost) * _epiBoost) / _nitroEffect;
-
     private _patientState = _patient getVariable [QGVAR(cardiacArrestType), 0];
-
+    private _AEDeffectivness = (_patient getVariable [QGVAR(AEDEffectiveness), 1]) max 0.5;
+    _chance = _chance * _AEDeffectivness;
     if (GVAR(AdvRhythm)) then {
         if (_patientState > 2) then {
             if (_random <= _chance) then {
@@ -178,6 +181,10 @@ if !(GVAR(enable_CPR_Chances)) then {
 
     if (_patient getVariable [QGVAR(cardiacArrestType), 0] in [4,3] && _randomAmi > 2) then {
         _chance = _chance + (_amiBoost / 10);
+    };
+
+    if (_patient getVariable [QGVAR(cardiacArrestType), 0] in [4,3] && (_patient getVariable [QGVAR(refractoryCA), false])) then {
+        _chance = _chance / 4;
     };
 
     _chance = _chance / _nitroEffect;

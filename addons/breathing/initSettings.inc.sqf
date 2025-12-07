@@ -248,6 +248,7 @@
     true
 ] call CBA_fnc_addSetting;
 
+
 // % Chance of Hemopneumothorax and Tension Pneumothorax happening when a Pneumothorax happens
 [
     QGVAR(advPtxChance),
@@ -602,15 +603,6 @@
 ] call CBA_fnc_addSetting;
 
 [
-    QGVAR(hardcoreBreathingTreatment),
-    "CHECKBOX",
-    [LLSTRING(SETTING_hardcoreBreathingTreatment),LLSTRING(SETTING_hardcoreBreathingTreatment_DESC)],
-    [CBA_SETTINGS_CAT, LSTRING(SubCategory_ThoraxInjuries)],
-    [true],
-    true
-] call CBA_fnc_addSetting;
-
-[
     QGVAR(incisionTime),
     "SLIDER",
     LLSTRING(INCISION_TIMER),
@@ -665,6 +657,15 @@
     [LLSTRING(SETTING_ConsciousnessRequirement), LLSTRING(SETTING_ConsciousnessRequirement_DESC)],
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_ThoraxInjuries)],
     [[0, 1, 2, 3], [LLSTRING(SETTING_Causes_Unconsciousness), LLSTRING(SETTING_Unconsciousness_Required), LLSTRING(SETTING_No_Unconsciousness), LLSTRING(SETTING_Anesthesia)], 0],
+    true
+] call CBA_fnc_addSetting;
+
+[
+    QGVAR(chestTubeDrainAmount),
+    "SLIDER",
+    [LLSTRING(chestTubeDrainAmount), LLSTRING(chestTubeDrainAmount_Desc)],
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_ThoraxInjuries)],
+    [0,100,15,0],
     true
 ] call CBA_fnc_addSetting;
 

@@ -279,4 +279,18 @@ class ACE_Medical_Treatment_Actions {
         callbackSuccess = QFUNC(treatmentAdvanced_cricothyrotomyKit);
         condition = "true";
     };
+    class ResetCrike: BasicBandage {
+        displayName = CSTRING(Reset_Crike);
+        displayNameProgress = CSTRING(Reset_Crike_action);
+        category = "surgery";
+        treatmentLocations = QGVAR(CrikeLocation);
+        treatmentTime = QGVAR(cricothyrotomyPlaceTime);
+        allowedSelections[] = {"Neck"};
+        allowSelfTreatment = 0;
+        medicRequired = QGVAR(CrikeAction_MedLevel);
+        items[] = {"kat_stitchKit"};
+        consumeItem = 1;
+        condition = QUOTE([ARR_3(_medic,_patient,0.9)] call FUNC(treatmentAdvanced_cricothyrotomyCheck));
+        callbackSuccess = QUOTE([ARR_3(_medic,_patient,0.9)] call FUNC(treatmentAdvanced_cricothyrotomyProgress));
+    };
 };

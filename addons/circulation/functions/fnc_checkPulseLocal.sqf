@@ -20,23 +20,12 @@
 params ["_medic", "_patient", "_bodyPart"];
 
 private _heartRate = 0;
-private _tourniquets = GET_TOURNIQUETS(_patient);
-private _occlusionMap = [
-    [4, [4, 5]],
-    [5, [5]],
-    [6, [6, 7]],
-    [7, [7]],
-    [8, [8, 9, 3]],
-    [9, [9, 3]],
-    [10, [10, 11, 3]],
-    [11, [11, 3]]
-];
-private _part = ALL_BODY_PARTS find toLower _bodyPart;
-private _idx = _occlusionMap findIf { _x#0 == _part };
-private _result = if (_idx != -1) then { _occlusionMap select _idx select 1 } else { [] };
-private _isOccluded = { _tourniquets select _x != 0 } count _result > 0;
+private _bodyPartN = ALL_BODY_PARTS find _bodyPart;
+private _isOccluded = [_patient,_bodyPartN] call EFUNC(pharma,occlusionCheck);
+private _isDamaged = [_patient,_bodyPartN] call EFUNC(hitpoints,damageCheck);
 
-if !(_isOccluded) then {
+
+if (!_isOccluded && !_isDamaged) then {
     _heartRate = switch (true) do {
         case (alive _patient): {
             GET_HEART_RATE(_patient)

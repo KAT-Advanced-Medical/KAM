@@ -289,6 +289,7 @@
 #define MOA_TO_RAD(d) ((d) * 0.00029088) // Conversion factor: PI / 10800
 
 #define QPATHTOF_SOUND(var1) QUOTE(PATHTOF2_SYS(PREFIX,COMPONENT,var1))
+#define QEPATHTOF_SOUND(var1,var2) QUOTE(PATHTOF2_SYS(PREFIX,var1,var2))
 #define QQPATHTOF_SOUND(var1) QUOTE(QPATHTOF_SOUND(var1))
 
 #include "script_debug.hpp"
@@ -325,14 +326,33 @@
 #define OXYGEN_PERCENTAGE_ARREST 80
 #define OXYGEN_PERCENTAGE_FATAL 75
 
+// Brain
+#define VAR_CMR                 QEGVAR(brain,CMR) // Cerebral Metabolic Rate (%)
+#define VAR_CBF                 QEGVAR(brain,CBF) // Cerebral Blood Flow
+#define VAR_CVR                 QEGVAR(brain,CVR) // Cerebral Vascular Resistance
+#define VAR_ICP                 QEGVAR(brain,ICP) // Intracranial Pressure
+#define VAR_CPR                 QEGVAR(brain,CPR) // Cerebral Perfusion Rate
+#define VAR_RO2                 QEGVAR(brain,rO2) // Brain O2 saturation
+#define VAR_CONCUSSION          QEGVAR(brain,concussion) 
+
+
+#define GET_CMR(unit)                  (unit getVariable [VAR_CMR, 100])
+#define GET_CBF(unit)                  (unit getVariable [VAR_CBF, 800])
+#define GET_CVR(unit)                  (unit getVariable [VAR_CVR, 0.1])
+#define GET_ICP(unit)                  (unit getVariable [VAR_ICP, 15])
+#define GET_CPR(unit)                  (unit getVariable [VAR_CPR, 100])
+#define GET_RO2(unit)                  (unit getVariable [VAR_RO2, 80])
+#define GET_CONCUSSION(unit)           (unit getVariable [VAR_CONCUSSION, 0])
+
 // Breathing
 #define VAR_SURFACE_AREA                QEGVAR(breathing,lungSurfaceArea)
-#define GET_KAT_SURFACE_AREA(unit)      (unit getVariable [VAR_SURFACE_AREA, 400])
+#define GET_KAT_SURFACE_AREA(unit)      ((unit getVariable [VAR_SURFACE_AREA, 400]) - (((unit getVariable [QEGVAR(breathing,pneumothorax), [0, 0]] select 0) + (unit getVariable [QEGVAR(breathing,pneumothorax), [0, 0]] select 1)) * 20) + (((unit getVariable [QEGVAR(breathing,hemopneumothorax), [0, 0]] select 0) + (unit getVariable [QEGVAR(breathing,hemopneumothorax), [0, 0]] select 1)) * 60))
 
 #define VAR_BLOOD_GAS                  QEGVAR(circulation,bloodGas)
 #define VAR_BREATHING_RATE             QEGVAR(breathing,breathRate)
 
 #define GET_BLOOD_GAS(unit)            (unit getVariable [VAR_BLOOD_GAS, DEFAULT_BLOOD_GAS])
+#define GET_PACO2(unit)                 ((unit getVariable [VAR_BLOOD_GAS, DEFAULT_BLOOD_GAS]) select 0)
 #define GET_PAO2(unit)                 ((unit getVariable [VAR_BLOOD_GAS, DEFAULT_BLOOD_GAS]) select 1)
 #define GET_KAT_SPO2(unit)             (((unit getVariable [VAR_BLOOD_GAS, DEFAULT_BLOOD_GAS]) select 2) * 100)
 #define GET_PH(unit)                   ((unit getVariable [VAR_BLOOD_GAS, DEFAULT_BLOOD_GAS]) select 4)
@@ -341,6 +361,8 @@
 
 #define VAR_RESPIRATORY_DEPTH           QEGVAR(vitals,respiratoryDepth)
 #define GET_KAT_RESPIRATORY_DEPTH(unit)      (unit getVariable [QEGVAR(vitals,respiratoryDepth), 10])
+
+#define HAS_LUNG_INJURY(unit)  ((_unit getVariable [QEGVAR(breathing,pneumothorax), [0, 0]] select 0 > 0) || (_unit getVariable [QEGVAR(breathing,pneumothorax), [0, 0]] select 1 > 0) || (_unit getVariable [QEGVAR(breathing,tensionpneumothorax), [false, false]] select 0) || (_unit getVariable [QEGVAR(breathing,tensionpneumothorax), [false, false]] select 1) || ((_unit getVariable [QEGVAR(breathing,hemopneumothorax), [0, 0]] select 0) > 0) || ((_unit getVariable [QEGVAR(breathing,hemopneumothorax), [0, 0]] select 1) > 0));
 
 
 // Circulation
@@ -381,6 +403,9 @@
 #define VAR_FENT_PATCH                      QEGVAR(pharma,fentanylPatch)
 #define GET_FENT_PATCH(unit,partindex)      ((unit getVariable [VAR_FENT_PATCH, [0,0,0,0,0,0,0,0,0,0,0,0]]) select _partindex)
 #define HAS_FENT_PATCH(unit,partindex)      ((GET_FENT_PATCH(unit,partindex)) > 0 )
+// Statemachine
+#define VAR_SEIZURE                    QEGVAR(statemachine,inSeizure)
+#define IN_SEIZURE(unit)                     (unit getVariable [VAR_SEIZURE, false])
 
 //Surgery
 #define STRING_BODY_PARTS ["head", "neck", "chest", "body", "left arm", "upper left arm", "right arm", "upper right arm", "left leg", "upper leftleg", "right leg", "upper right leg"]
@@ -513,6 +538,10 @@
 
 #define GET_JOINTS(unit)   (unit getVariable [VAR_JOINTS, DEFAULT_JOINT_VALUES])
 #define GET_LIMB_JOINT(unit,limbindex)   ((unit getVariable [VAR_JOINTS, DEFAULT_JOINT_VALUES]) select _limbindex)
+
+
+#define INTERNAL_BLEEDING_RATE(unit,index) ([unit, index] call EFUNC(hitpoints,internalBleedingRate))
+#define PART_BLEEDING_RATE(unit,index) ([unit, index] call EFUNC(hitpoints,partBleedingRate))
 
 #undef PRIORITY_HEAD
 #undef PRIORITY_BODY
