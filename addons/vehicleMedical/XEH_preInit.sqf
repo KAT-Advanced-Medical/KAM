@@ -29,12 +29,8 @@ private _unstableCategory = [LOC(Settings,Addon_Name), LOC(Settings_Unstable,Cat
 [QUOTE(GVAR(Unstable_TrackBleeding)), "CHECKBOX", [LOC(Settings_Unstable,Track_Bleeding), LOC(Settings_Unstable,Track_Bleeding_Tooltip)], _unstableCategory, true, 0, {}] call CBA_fnc_addSetting;
 [QUOTE(GVAR(Unstable_TrackUnconscious)), "CHECKBOX", [LOC(Settings_Unstable,Track_Unconscious), LOC(Settings_Unstable,Track_Unconscious_Tooltip)] ,_unstableCategory, true, 0, {}] call CBA_fnc_addSetting;
 [QUOTE(GVAR(Unstable_TrackLowBP)), "CHECKBOX", [LOC(Settings_Unstable,Track_Low_Blood_Pressure), LOC(Settings_Unstable,Track_Low_Blood_Pressure_Tooltip)], _unstableCategory, true, 0, {}] call CBA_fnc_addSetting;
-[QUOTE(GVAR(Unstable_ThresholdLowBP)), "SLIDER", [LOC(Settings_Unstable,Low_Blood_Pressure_Threshold), LOC(Settings_Unstable,Low_Blood_Pressure_Threshold_Tooltip)], _unstableCategory, [1, 120, 80, 0], 0, {}] call CBA_fnc_addSetting;
-[QUOTE(GVAR(Unstable_TrackIV)), "CHECKBOX", [LOC(Settings_Unstable,Track_IV), LOC(Settings_Unstable,Track_IV_Tooltip)], _unstableCategory, true, 0, {}] call CBA_fnc_addSetting;
 [QUOTE(GVAR(Unstable_TrackLowHR)), "CHECKBOX", [LOC(Settings_Unstable,Track_Low_Heart_Rate), LOC(Settings_Unstable,Track_Low_Heart_Rate_Tooltip)], _unstableCategory, true, 0, {}] call CBA_fnc_addSetting;
-[QUOTE(GVAR(Unstable_ThresholdLowHR)), "SLIDER", [LOC(Settings_Unstable,Low_Heart_Rate_Threshold), LOC(Settings_Unstable,Low_Heart_Rate_Threshold_Tooltip)], _unstableCategory, [1, 120, 50, 0], 0, {}] call CBA_fnc_addSetting;
-[QUOTE(GVAR(Unstable_TrackLegFractures)), "CHECKBOX", [LOC(Settings_Unstable,Track_Leg_Fractures), LOC(Settings_Unstable,Track_Leg_Fractures_Tooltip)], _unstableCategory, true, 0, {}] call CBA_fnc_addSetting;
-[QUOTE(GVAR(Unstable_TrackLegSplints)), "CHECKBOX", [LOC(Settings_Unstable,Track_Leg_Splints), LOC(Settings_Unstable,Track_Leg_Splints_Tooltip)], _unstableCategory, true, 0, {}] call CBA_fnc_addSetting;
+[QUOTE(GVAR(Unstable_TrackSpO2)), "CHECKBOX", [LOC(Settings_Unstable_KAT,Track_SpO2), LOC(Settings_Unstable_KAT,Track_SpO2_Tooltip)], _unstableCategory, true, 0, {}] call CBA_fnc_addSetting;
 [QUOTE(GVAR(Unstable_TrackDead)), "CHECKBOX", [LOC(Settings_Unstable,Track_Dead), LOC(Settings_Unstable,Track_Dead_Tooltip)], _unstableCategory, true, 0, {}] call CBA_fnc_addSetting;
 [QUOTE(GVAR(Unstable_TakeDogtags)), "CHECKBOX", [LOC(Settings_Unstable,Take_Dogtags), LOC(Settings_Unstable,Take_Dogtags_Tooltip)], _unstableCategory, true, 0, {}] call CBA_fnc_addSetting;
 [QUOTE(GVAR(Unstable_DogtagsDeadOnly)), "CHECKBOX", [LOC(Settings_Unstable,Take_Dogtags_Dead_Only), LOC(Settings_Unstable,Take_Dogtags_Dead_Only_Tooltip)], _unstableCategory, true, 0, {}] call CBA_fnc_addSetting;
@@ -45,12 +41,8 @@ private _stableCategory = [LOC(Settings,Addon_Name), LOC(Settings_Stable,Categor
 [QUOTE(GVAR(EnableStable)), "CHECKBOX", [LOC(Settings_Stable,Enable),LOC(Settings_Stable,Enable_Tooltip)], _stableCategory, true, 0, {}] call CBA_fnc_addSetting;
 [QUOTE(GVAR(Stable_ShowCount)), "CHECKBOX", [LOC(Settings_Stable,Show_Count), LOC(Settings_Stable,Show_Count_Tooltip)], _stableCategory, true, 0, {}] call CBA_fnc_addSetting;
 [QUOTE(GVAR(Stable_TrackNeedsBandage)), "CHECKBOX", [LOC(Settings_Stable,Track_Open_Wounds),LOC(Settings_Stable,Track_Open_Wounds_Tooltip)], _stableCategory, true, 0, {}] call CBA_fnc_addSetting;
-[QUOTE(GVAR(Stable_TrackStitchableWounds)), "CHECKBOX", [LOC(Settings_Stable,Track_Stitchable_Wounds),LOC(Settings_Stable,Track_Stitchable_Wounds_Tooltip)], _stableCategory, true, 0, {}] call CBA_fnc_addSetting;
 [QUOTE(GVAR(Stable_TrackLowBP)), "CHECKBOX", [LOC(Settings_Stable,Track_Low_Blood_Pressure),LOC(Settings_Stable,Track_Low_Blood_Pressure_Tooltip)], _stableCategory, true, 0, {}] call CBA_fnc_addSetting;
-[QUOTE(GVAR(Stable_TrackIV)), "CHECKBOX", [LOC(Settings_Stable,Track_IV),LOC(Settings_Stable,Track_IV_Tooltip)], _stableCategory, true, 0, {}] call CBA_fnc_addSetting;
-[QUOTE(GVAR(Stable_ThresholdLowBP)), "SLIDER", [LOC(Settings_Stable,Low_Blood_Pressure_Threshold),LOC(Settings_Stable,Low_Blood_Pressure_Threshold_Tooltip)], _stableCategory, [1, 120, 80, 0], 0, {}] call CBA_fnc_addSetting;
 [QUOTE(GVAR(Stable_TrackLowHR)), "CHECKBOX", [LOC(Settings_Stable,Track_Low_Heart_Rate),LOC(Settings_Stable,Track_Low_Heart_Rate_Tooltip)], _stableCategory, true, 0, {}] call CBA_fnc_addSetting;
-[QUOTE(GVAR(Stable_ThresholdLowHR)), "SLIDER", [LOC(Settings_Stable,Low_Heart_Rate_Threshold),LOC(Settings_Stable,Low_Heart_Rate_Threshold_Tooltip)], _stableCategory, [1, 120, 50, 0], 0, {}] call CBA_fnc_addSetting;
 [QUOTE(GVAR(Stable_TrackFractures)), "CHECKBOX", [LOC(Settings_Stable,Track_Arm_Fractures),LOC(Settings_Stable,Track_Arm_Fractures_Tooltip)], _stableCategory, true, 0, {}] call CBA_fnc_addSetting;
 [QUOTE(GVAR(Stable_TrackSplints)), "CHECKBOX", [LOC(Settings_Stable,Track_Arm_Splints),LOC(Settings_Stable,Track_Arm_Splints_Tooltip)], _stableCategory, true, 0, {}] call CBA_fnc_addSetting;
 [QUOTE(GVAR(Stable_TrackTourniquets)), "CHECKBOX", [LOC(Settings_Stable,Track_Tourniquets),LOC(Settings_Stable,Track_Tourniquets_Tooltip)], _stableCategory, true, 0, {}] call CBA_fnc_addSetting;
@@ -63,15 +55,6 @@ private _vehicleCategory = [LOC(Settings,Addon_Name), LOC(Settings_Vehicles,Cate
 [QUOTE(GVAR(Vehicles_EnablePlane)), "CHECKBOX", [LOC(Settings_Vehicles,Plane), LOC(Settings_Vehicles,Plane_Tooltip)], _vehicleCategory, true, 0, {}, true] call CBA_fnc_addSetting;
 [QUOTE(GVAR(Vehicles_EnableShip)), "CHECKBOX", [LOC(Settings_Vehicles,Ship), LOC(Settings_Vehicles,Ship_Tooltip)], _vehicleCategory, true, 0, {}, true] call CBA_fnc_addSetting;
 [QUOTE(GVAR(Vehicles_EnableTank)), "CHECKBOX", [LOC(Settings_Vehicles,Tank), LOC(Settings_Vehicles,Tank_Tooltip)], _vehicleCategory, true, 0, {}, true] call CBA_fnc_addSetting;
+[QUOTE(GVAR(Unstable_TrackSpO2)), "CHECKBOX", [LOC(Settings_Unstable_KAT,Track_SpO2), LOC(Settings_Unstable_KAT,Track_SpO2_Tooltip)], _unstableCategory, true, 0, {}] call CBA_fnc_addSetting;
 
-// KAT Integration
-if(GVAR(KATInstalled)) then {
-	[QUOTE(GVAR(EnableSupportKAT)), "CHECKBOX", [LOC(Settings_Integrations,Enable_KAT), LOC(Settings_Integrations,Enable_KAT_Tooltip)], [LOC(Settings,Addon_Name), LOC(Settings_Integrations,Category)], true, 0, {}] call CBA_fnc_addSetting;
-	[QUOTE(GVAR(Unstable_TrackSpO2)), "CHECKBOX", [LOC(Settings_Unstable_KAT,Track_SpO2), LOC(Settings_Unstable_KAT,Track_SpO2_Tooltip)], _unstableCategory, true, 0, {}] call CBA_fnc_addSetting;
-	[QUOTE(GVAR(Unstable_TrackAllPneumothorax)), "CHECKBOX", [LOC(Settings_Unstable_KAT,Track_Pneumothorax), LOC(Settings_Unstable_KAT,Track_Pneumothorax_Tooltip)], _unstableCategory, true, 0, {}] call CBA_fnc_addSetting;
-	[QUOTE(GVAR(Unstable_TrackAirwayBlocked)), "CHECKBOX", [LOC(Settings_Unstable_KAT,Track_Blocked_Airways), LOC(Settings_Unstable_KAT,Track_Blocked_Airways_Tooltip)], _unstableCategory, true, 0, {}] call CBA_fnc_addSetting;
-} else
-{
-	GVAR(EnableSupportKAT) = false;
-};
 ADDON = true;

@@ -29,7 +29,7 @@ private _isMedic = (_player call ACEFUNC(medical_treatment,isMedic));
 // Dead
 private _isDead = GVAR(Unstable_TrackDead) && !alive _patient;
 if(_isDead) then {
-	private _action = ["MIRA_Dead", [LOC(Unstable,Dead)] call FUNC(cachedLocalisationCall), QUOTE(ICON_PATH(dead)), {
+	private _action = ["MIRA_Dead", [LOC(Unstable,Dead)] call FUNC(cachedLocalisationCall), QPATHTOF(ui\dead.paa), {
 			params ["_target", "_player", "_parameters"];
 			_parameters params ["_patient"];
 			[_patient] call FUNC(openMedicalMenu);
@@ -48,7 +48,7 @@ if(_canTakeDogtag && {(GVAR(Unstable_DogtagsDeadOnly) && !alive _patient) || !GV
 	if(_patient getVariable["ace_dogtags_dogtagTaken", objNull] == _target) then {
 		_taken =  [LOC(Unstable,Dogtags_Already_Taken)] call FUNC(cachedLocalisationCall);
 	};
-	private _action = ["MIRA_Dogtags_Take", _taken, QUOTE(ICON_PATH(dogtags)), {
+	private _action = ["MIRA_Dogtags_Take", _taken, QPATHTOF(ui\dogtags.paa), {
 			params ["_target", "_player", "_parameters"];
 			_parameters params ["_patient"];
 			[_player, _patient] call ace_dogtags_fnc_takeDogtag;
@@ -59,7 +59,7 @@ if(_canTakeDogtag && {(GVAR(Unstable_DogtagsDeadOnly) && !alive _patient) || !GV
 // Cardiac Arrest Action
 private _cardiacArrest = GVAR(Unstable_TrackCardiacArrest) && (_patient getVariable [QEGVAR(circulation,cardiacArrestType), 0] != 0);
 if (_cardiacArrest) then {
-	_action = ["MIRA_Cardiac", [LOC(Unstable,Cardiac_Arrest)] call FUNC(cachedLocalisationCall), QUOTE(ICON_PATH(cardiac_arrest_red)), {
+	_action = ["MIRA_Cardiac", [LOC(Unstable,Cardiac_Arrest)] call FUNC(cachedLocalisationCall), QPATHTOF(ui\cardiac_arrest_red.paa), {
 			params ["_target", "_player", "_parameters"];
 			_parameters params ["_patient"];
 			[_patient] call FUNC(openMedicalMenu);
@@ -71,7 +71,7 @@ if (_cardiacArrest) then {
 
 private _spO2 = GET_KAT_SPO2(_patient);
 if(GVAR(Unstable_TrackSpO2) && _spO2 < 90) then {
-	_action = ["MIRA_KAT_SpO2", format[[LOC(Unstable_KAT,SpO2)] call FUNC(cachedLocalisationCall), round _spO2, "%"], QUOTE(ICON_PATH(kat_spO2_low)), {
+	_action = ["MIRA_KAT_SpO2", format[[LOC(Unstable_KAT,SpO2)] call FUNC(cachedLocalisationCall), round _spO2, "%"], QPATHTOF(ui\kat_spO2_low.paa), {
 		params ["_target", "_player", "_parameters"];
 		_parameters params ["_patient"];
 		[_patient] call FUNC(openMedicalMenu);
@@ -86,9 +86,9 @@ private _isBleeding = GVAR(Unstable_TrackBleeding) && _patient call FUNC(needsBa
 if (_isBleeding) then {
 	//TODO: collect all wounds, and colour icon based on severity, only have red done for now
 	_icon = [
-		QUOTE(ICON_PATH(bleeding_red)),
-		QUOTE(ICON_PATH(bleeding_yellow)),
-		QUOTE(ICON_PATH(bleeding_white))
+		QPATHTOF(ui\bleeding_red.paa),
+		QPATHTOF(ui\bleeding_yellow.paa),
+		QPATHTOF(ui\bleeding_white.paa)
 	] select 0;
 	_action = ["MIRA_Bleeding", [LOC(Unstable,Bleeding)] call FUNC(cachedLocalisationCall), _icon, {
 			params ["_target", "_player", "_parameters"];
@@ -102,7 +102,7 @@ if (_isBleeding) then {
 private _hasLowHR = GVAR(Stable_TrackLowHR) && (GET_HEART_RATE(_patient) < 60);
 if(_hasLowHR) then {
 	private _hr = [_patient, _isMedic] call FUNC(displayHR);
-	private _action = ["MIRA_LowHR", format[[LOC(Stable,Low_Heart_Rate)] call FUNC(cachedLocalisationCall), _hr], QUOTE(ICON_PATH(hr_low)), {
+	private _action = ["MIRA_LowHR", format[[LOC(Stable,Low_Heart_Rate)] call FUNC(cachedLocalisationCall), _hr], QPATHTOF(ui\hr_low.paa), {
 			params ["_target", "_player", "_parameters"];
 			_parameters params ["_patient"];
 			[_patient] call FUNC(openMedicalMenu);
@@ -118,7 +118,7 @@ private _hasLowBP = GVAR(Stable_TrackLowBP) && (_map < 60);
 if(_hasLowBP) then {
 	private _bp = [_patient, _isMedic] call FUNC(displayBP);
 	private _name = format[[LOC(Stable,Low_Blood_Pressure)] call FUNC(cachedLocalisationCall), _bp];
-	private _action = ["MIRA_LowBP", _name, QUOTE(ICON_PATH(bp_low)), {
+	private _action = ["MIRA_LowBP", _name, QPATHTOF(ui\bp_low.paa), {
 			params ["_target", "_player", "_parameters"];
 			_parameters params ["_patient"];
 			[_patient] call FUNC(openMedicalMenu);
@@ -129,7 +129,7 @@ if(_hasLowBP) then {
 // Unconscious Action
 private _isUncon = GVAR(Unstable_TrackUnconscious) && (IS_UNCONSCIOUS(_patient));
 if (_isUncon) then {
-	private _action = ["MIRA_Sleepy", [LOC(Unstable,Unconscious)] call FUNC(cachedLocalisationCall), QUOTE(ICON_PATH(unconscious_white)), {
+	private _action = ["MIRA_Sleepy", [LOC(Unstable,Unconscious)] call FUNC(cachedLocalisationCall), QPATHTOF(ui\unconscious_white.paa), {
 			params ["_target", "_player", "_parameters"];
 			_parameters params ["_patient"];
 			[_patient] call FUNC(openMedicalMenu);
@@ -145,7 +145,7 @@ if(GVAR(Unstable_AllowUnload)) then {
 			private _confirmUnload = [
 				"MIRA_Unload_Confirm",
 				[LOC(Shared,Confirm)] call FUNC(cachedLocalisationCall), 
-				QUOTE(ICON_PATH(unload)), 
+				QPATHTOF(ui\unload.paa), 
 				{
 					params ["_patient", "_player", "_parameters"];
 					[_patient, _player, true] call FUNC(unloadPatient);
@@ -157,7 +157,7 @@ if(GVAR(Unstable_AllowUnload)) then {
 			[[_confirmUnload, [], _patient]]
 		};
 
-		private _action = ["MIRA_Unload", [LOC(Incapacitated,Unload)] call FUNC(cachedLocalisationCall), QUOTE(ICON_PATH(unload)), {
+		private _action = ["MIRA_Unload", [LOC(Incapacitated,Unload)] call FUNC(cachedLocalisationCall), QPATHTOF(ui\unload.paa), {
 				params ["_target", "_player", "_parameters"];
 			}, {true}, _confirmUnloadAction] call ace_interact_menu_fnc_createAction;
 

@@ -30,7 +30,7 @@ private _isMedic = (_player call ACEFUNC(medical_treatment,isMedic));
 private _needsBandage = GVAR(Stable_TrackNeedsBandage) && _patient call FUNC(needsBandage);
 if(_needsBandage) then {
 	private _requiredBandages = [_patient] call FUNC(getNumberOfWoundsToBandage);
-	private _action = ["MIRA_Bandage", format[[LOC(Stable,Bandage)] call FUNC(cachedLocalisationCall), _requiredBandages] , QUOTE(ICON_PATH(bandage)), {
+	private _action = ["MIRA_Bandage", format[[LOC(Stable,Bandage)] call FUNC(cachedLocalisationCall), _requiredBandages] , QPATHTOF(ui\bandage.paa), {
 			params ["_target", "_player", "_parameters"];
 			_parameters params ["_patient"];
 			[_patient] call FUNC(openMedicalMenu);
@@ -42,7 +42,7 @@ if(_needsBandage) then {
 private _stitchWounds = _patient call EFUNC(misc,getFullBodyStitchableWoundTime);
 private _needsStitch = (_stitchWounds > 0);
 if (_needsStitch) then {
-	private _action = ["MIRA_Stitch", format[[LOC(Stable,Stitch)] call FUNC(cachedLocalisationCall), _stitchWounds] , QUOTE(ICON_PATH(stitch)), {
+	private _action = ["MIRA_Stitch", format[[LOC(Stable,Stitch)] call FUNC(cachedLocalisationCall), _stitchWounds] , QPATHTOF(ui\stitch.paa), {
 			params ["_target", "_player", "_parameters"];
 			_parameters params ["_patient"];
 			[_patient] call FUNC(openMedicalMenu);
@@ -54,7 +54,7 @@ if (_needsStitch) then {
 private _hasLowHR = GVAR(Stable_TrackLowHR) && (GET_HEART_RATE(_patient) < 60);
 if(_hasLowHR) then {
 	private _hr = [_patient, _isMedic] call FUNC(displayHR);
-	private _action = ["MIRA_LowHR", format[[LOC(Stable,Low_Heart_Rate)] call FUNC(cachedLocalisationCall), _hr], QUOTE(ICON_PATH(hr_low)), {
+	private _action = ["MIRA_LowHR", format[[LOC(Stable,Low_Heart_Rate)] call FUNC(cachedLocalisationCall), _hr], QPATHTOF(ui\hr_low.paa), {
 			params ["_target", "_player", "_parameters"];
 			_parameters params ["_patient"];
 			[_patient] call FUNC(openMedicalMenu);
@@ -70,7 +70,7 @@ private _hasLowBP = GVAR(Stable_TrackLowBP) && (_map < 60);
 if(_hasLowBP) then {
 	private _bp = [_patient, _isMedic] call FUNC(displayBP);
 	private _name = format[[LOC(Stable,Low_Blood_Pressure)] call FUNC(cachedLocalisationCall), _bp];
-	private _action = ["MIRA_LowBP", _name, QUOTE(ICON_PATH(bp_low)), {
+	private _action = ["MIRA_LowBP", _name, QPATHTOF(ui\bp_low.paa), {
 			params ["_target", "_player", "_parameters"];
 			_parameters params ["_patient"];
 			[_patient] call FUNC(openMedicalMenu);
@@ -85,7 +85,7 @@ if(GVAR(Stable_TrackFractures) && ((selectMax GET_FRACTURES(_patient)) > 0)) the
 	if(_numFractures == 0) then {
 		_fracturesMessage = [LOC(Stable,Arm_Fractures_Error)] call FUNC(cachedLocalisationCall);
 	};
-	private _action = ["MIRA_Fractures", _fracturesMessage, QUOTE(ICON_PATH(fracture)), {
+	private _action = ["MIRA_Fractures", _fracturesMessage, QPATHTOF(ui\fracture.paa), {
 			params ["_target", "_player", "_parameters"];
 			_parameters params ["_patient"];
 			[_patient] call FUNC(openMedicalMenu);
@@ -101,7 +101,7 @@ if(GVAR(Stable_TrackSplints) && (({ _x in [-1, -2, -3] } count (GET_FRACTURES(_p
 	if(_numFractures == 0) then {
 		_fracturesMessage = [LOC(Stable,Splinted_Fractures_Error)] call FUNC(cachedLocalisationCall);
 	};
-	private _action = ["MIRA_Splinted_Fractures", _fracturesMessage, QUOTE(ICON_PATH(splint)), {
+	private _action = ["MIRA_Splinted_Fractures", _fracturesMessage, QPATHTOF(ui\splint.paa), {
 			params ["_target", "_player", "_parameters"];
 			_parameters params ["_patient"];
 			[_patient] call FUNC(openMedicalMenu);
@@ -113,7 +113,7 @@ if(GVAR(Stable_TrackSplints) && (({ _x in [-1, -2, -3] } count (GET_FRACTURES(_p
 private _tourniquets = GVAR(Stable_TrackTourniquets) && ((selectMax GET_TOURNIQUETS(_patient)) > 0);
 if(_tourniquets) then {
 	private _amount = { _x != 0 } count GET_TOURNIQUETS(_patient);
-	private _action = ["MIRA_Tourniquets", format[[LOC(Stable,Tourniquets)] call FUNC(cachedLocalisationCall), _amount], QUOTE(ICON_PATH(tourniquet)), {
+	private _action = ["MIRA_Tourniquets", format[[LOC(Stable,Tourniquets)] call FUNC(cachedLocalisationCall), _amount], QPATHTOF(ui\tourniquet.paa), {
 			params ["_target", "_player", "_parameters"];
 			_parameters params ["_patient"];
 			[_patient] call FUNC(openMedicalMenu);

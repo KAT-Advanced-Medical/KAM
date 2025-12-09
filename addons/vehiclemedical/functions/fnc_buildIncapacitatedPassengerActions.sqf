@@ -20,7 +20,7 @@ private _fnc_forceUnloadAllAction = {
 	private _forceUnload = [
 		"MIRA_UnloadAll_Force",
 		[LOC(Incapacitated,Unload_Force)] call FUNC(cachedLocalisationCall), 
-		QUOTE(ICON_PATH(unload)), 
+		QPATHTOF(ui\unload.paa), 
 		{
 			params ["_vehicle", "_player", "_parameters"];
 			[_vehicle, _player, {true}, true] call FUNC(unloadAllWithCondition);
@@ -35,7 +35,7 @@ private _fnc_forceUnloadAllAction = {
 // Unload All Action
 private _unloadAllAction = ["MIRA_UnloadAll", 
 	[LOC(Incapacitated,Unload_All)] call FUNC(cachedLocalisationCall), 
-	QUOTE(ICON_PATH(unload)), 
+	QPATHTOF(ui\unload.paa), 
 	{
 		params ["_vehicle", "_player", "_parameters"];
 		[_vehicle, _player, {
@@ -89,7 +89,7 @@ _actions pushBack [_unloadAllAction, [], _vehicle];
 							private _forceUnload = [
 								"MIRA_Unload_Force",
 								[LOC(Incapacitated,Unload_Force)] call FUNC(cachedLocalisationCall), 
-								QUOTE(ICON_PATH(unload)), 
+								QPATHTOF(ui\unload.paa), 
 								{
 									params ["_patient", "_player", "_parameters"];
 									[_patient, _player, true] call FUNC(unloadPatient)
@@ -101,7 +101,7 @@ _actions pushBack [_unloadAllAction, [], _vehicle];
 							[[_forceUnload, [], _patient]]
 						};
 
-						private _action = ["MIRA_Unload", [LOC(Incapacitated,Unload)] call FUNC(cachedLocalisationCall), QUOTE(ICON_PATH(unload)), {
+						private _action = ["MIRA_Unload", [LOC(Incapacitated,Unload)] call FUNC(cachedLocalisationCall), QPATHTOF(ui\unload.paa), {
 								params ["_target", "_player", "_parameters"];
 								[_target, _player] call FUNC(unloadPatient);
 							}, {true}, _forceUnloadAction] call ace_interact_menu_fnc_createAction;

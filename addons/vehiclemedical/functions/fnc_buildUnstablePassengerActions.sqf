@@ -52,19 +52,19 @@ _modifierFunc = {
 	//Use ascending order of importance, cardiac > bleeding > unconscious > leg fracture
 	private _result = "";
 	if(_sleepy) then {
-		_result = QUOTE(ICON_PATH(unconscious_white));
+		_result = QPATHTOF(ui\unconscious_white.paa);
 	};
 	if(_bleeding) then {
-		_result = QUOTE(ICON_PATH(bleeding_red));
+		_result = QPATHTOF(ui\bleeding_red.paa);
 	};
 	if(_kat_spO2Low) then {
-		_result = QUOTE(ICON_PATH(kat_spo2_low));
+		_result = QPATHTOF(ui\kat_spo2_low.paa);
 	};
 	if(_cardiac) then {
-		_result = QUOTE(ICON_PATH(cardiac_arrest_red));
+		_result = QPATHTOF(ui\cardiac_arrest_red.paa);
 	};
 	if(_dead) then {
-		_result = QUOTE(ICON_PATH(dead));
+		_result = QPATHTOF(ui\dead.paa);
 	};
 	_actionData set [2, _result];
 };

@@ -53,22 +53,22 @@ _modifierFunc = {
 	private _bandage = GVAR(Stable_TrackNeedsBandage) && [_patient] call FUNC(needsBandage);
 
 	if(_tourniquet) then {
-		_result = QUOTE(ICON_PATH(tourniquet));
+		_result = QPATHTOF(ui\tourniquet.paa);
 	};
 	if(_fractures) then {
-		_result = QUOTE(ICON_PATH(fracture));
+		_result = QPATHTOF(ui\fracture.paa);
 	};
 	if(_lowBP) then {
-		_result = QUOTE(ICON_PATH(bp_low));
+		_result = QPATHTOF(ui\bp_low.paa);
 	};
 	if(_lowHR) then {
-		_result = QUOTE(ICON_PATH(hr_low));
+		_result = QPATHTOF(ui\hr_low.paa);
 	};
 	if(_stitch) then {
-		_result = QUOTE(ICON_PATH(stitch));
+		_result = QPATHTOF(ui\stitch.paa);
 	};
 	if(_bandage) then {
-		_result = QUOTE(ICON_PATH(bandage));
+		_result = QPATHTOF(ui\bandage.paa);
 	};
 
 	if(_result == "") then {
