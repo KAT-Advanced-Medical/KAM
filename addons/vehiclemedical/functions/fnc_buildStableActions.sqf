@@ -24,14 +24,13 @@ _parameters params [
 ];
 
 private _actions = [];
-private _isMedic = _player call FUNC(isMedic);
+private _isMedic = (_player call ACEFUNC(medical_treatment,isMedic));
 
 // Bandagable Wounds Action
 private _needsBandage = GVAR(Stable_TrackNeedsBandage) && _patient call FUNC(needsBandage);
 if(_needsBandage) then {
 	private _requiredBandages = [_patient] call FUNC(getNumberOfWoundsToBandage);
-	LOGF_1("'%1' has unbandadged wounds", _patient);
-	private _action = ["MIRA_Bandage", format[[LSTRING(Stable,Bandage)] call FUNC(cachedLocalisationCall), _requiredBandages] , QUOTE(ICON_PATH(bandage)), {
+	private _action = ["MIRA_Bandage", format[[LOC(Stable,Bandage)] call FUNC(cachedLocalisationCall), _requiredBandages] , QUOTE(ICON_PATH(bandage)), {
 			params ["_target", "_player", "_parameters"];
 			_parameters params ["_patient"];
 			[_patient] call FUNC(openMedicalMenu);
@@ -40,11 +39,10 @@ if(_needsBandage) then {
 };
 
 // Stitchable Wounds Action
-private _stitchWounds = _patient call FUNC(getStitchableWounds);
-private _needsStitch = GVAR(Stable_TrackStitchableWounds) && count _stitchWounds > 0;
+private _stitchWounds = _patient call EFUNC(misc,getFullBodyStitchableWoundTime);
+private _needsStitch = (_stitchWounds > 0);
 if (_needsStitch) then {
-	LOGF_1("'%1' has stitchable wounds", _patient);
-	private _action = ["MIRA_Stitch", format[[LSTRING(Stable,Stitch)] call FUNC(cachedLocalisationCall), count _stitchWounds] , QUOTE(ICON_PATH(stitch)), {
+	private _action = ["MIRA_Stitch", format[[LOC(Stable,Stitch)] call FUNC(cachedLocalisationCall), _stitchWounds] , QUOTE(ICON_PATH(stitch)), {
 			params ["_target", "_player", "_parameters"];
 			_parameters params ["_patient"];
 			[_patient] call FUNC(openMedicalMenu);
@@ -53,11 +51,10 @@ if (_needsStitch) then {
 };
 
 // Low Heartrate Action
-private _hasLowHR = GVAR(Stable_TrackLowHR) && [_patient, _isMedic] call FUNC(hasLowHR);
+private _hasLowHR = GVAR(Stable_TrackLowHR) && (GET_HEART_RATE(_patient) < 60);
 if(_hasLowHR) then {
-	LOGF_1("'%1' has low HR", _patient);
 	private _hr = [_patient, _isMedic] call FUNC(displayHR);
-	private _action = ["MIRA_LowHR", format[[LSTRING(Stable,Low_Heart_Rate)] call FUNC(cachedLocalisationCall), _hr], QUOTE(ICON_PATH(hr_low)), {
+	private _action = ["MIRA_LowHR", format[[LOC(Stable,Low_Heart_Rate)] call FUNC(cachedLocalisationCall), _hr], QUOTE(ICON_PATH(hr_low)), {
 			params ["_target", "_player", "_parameters"];
 			_parameters params ["_patient"];
 			[_patient] call FUNC(openMedicalMenu);
@@ -66,17 +63,13 @@ if(_hasLowHR) then {
 };
 
 // Low Blood Pressure Action
-private _hasLowBP = GVAR(Stable_TrackLowBP) && [_patient, _isMedic] call FUNC(hasLowBP);
+private _bloodPressure = [_patient] call EFUNC(circulation,getBloodPressure);
+_bloodPressure params ["_bloodPressureL", "_bloodPressureH"];
+private _map = _bloodPressureL + (0.3333333333 * (_bloodPressureH - _bloodPressureL));
+private _hasLowBP = GVAR(Stable_TrackLowBP) && (_map < 60);
 if(_hasLowBP) then {
-	LOGF_1("'%1' has low BP", _patient);
 	private _bp = [_patient, _isMedic] call FUNC(displayBP);
-	private _name = format[[LSTRING(Stable,Low_Blood_Pressure)] call FUNC(cachedLocalisationCall), _bp];
-	if(GVAR(Stable_TrackIV)) then {
-		private _iv =  _patient call FUNC(getTotalIV);
-		if(_iv > 0) then {
-			_name = format[[LSTRING(Stable,Low_Blood_Pressure_With_IV)] call FUNC(cachedLocalisationCall), _bp, _iv];
-		};
-	};
+	private _name = format[[LOC(Stable,Low_Blood_Pressure)] call FUNC(cachedLocalisationCall), _bp];
 	private _action = ["MIRA_LowBP", _name, QUOTE(ICON_PATH(bp_low)), {
 			params ["_target", "_player", "_parameters"];
 			_parameters params ["_patient"];
@@ -87,12 +80,10 @@ if(_hasLowBP) then {
 
 // Fractures
 if(GVAR(Stable_TrackFractures) && ((selectMax GET_FRACTURES(_patient)) > 0)) then {
-	LOGF_1("'%1' has fractures", _patient);
 	private _numFractures = { _x != 0 } count GET_FRACTURES(_patient);
-	private _fracturesMessage =  format[[LSTRING(Stable,Arm_Fractures)] call FUNC(cachedLocalisationCall), _numFractures];
+	private _fracturesMessage =  format[[LOC(Stable,Arm_Fractures)] call FUNC(cachedLocalisationCall), _numFractures];
 	if(_numFractures == 0) then {
-		LOG_ERROR("Found no fractures despite fractures being non default");
-		_fracturesMessage = [LSTRING(Stable,Arm_Fractures_Error)] call FUNC(cachedLocalisationCall);
+		_fracturesMessage = [LOC(Stable,Arm_Fractures_Error)] call FUNC(cachedLocalisationCall);
 	};
 	private _action = ["MIRA_Fractures", _fracturesMessage, QUOTE(ICON_PATH(fracture)), {
 			params ["_target", "_player", "_parameters"];
@@ -105,12 +96,10 @@ if(GVAR(Stable_TrackFractures) && ((selectMax GET_FRACTURES(_patient)) > 0)) the
 
 // Splinted Fractures
 if(GVAR(Stable_TrackSplints) && (({ _x in [-1, -2, -3] } count (GET_FRACTURES(_patient))) > 0)) then {
-	LOGF_1("'%1' has splinted fractures", _patient);
 	private _numFractures = { _x in [-1, -2, -3] } count (GET_FRACTURES(_patient));
-	private _fracturesMessage =  format[[LSTRING(Stable,Splinted_Fractures)] call FUNC(cachedLocalisationCall), _numFractures];
+	private _fracturesMessage =  format[[LOC(Stable,Splinted_Fractures)] call FUNC(cachedLocalisationCall), _numFractures];
 	if(_numFractures == 0) then {
-		LOG_ERROR("Found no fractures despite fractures being non default");
-		_fracturesMessage = [LSTRING(Stable,Splinted_Fractures_Error)] call FUNC(cachedLocalisationCall);
+		_fracturesMessage = [LOC(Stable,Splinted_Fractures_Error)] call FUNC(cachedLocalisationCall);
 	};
 	private _action = ["MIRA_Splinted_Fractures", _fracturesMessage, QUOTE(ICON_PATH(splint)), {
 			params ["_target", "_player", "_parameters"];
@@ -123,9 +112,8 @@ if(GVAR(Stable_TrackSplints) && (({ _x in [-1, -2, -3] } count (GET_FRACTURES(_p
 // Tourniquets
 private _tourniquets = GVAR(Stable_TrackTourniquets) && ((selectMax GET_TOURNIQUETS(_patient)) > 0);
 if(_tourniquets) then {
-	LOGF_1("'%1' has tourniquets", _tourniquets);
 	private _amount = { _x != 0 } count GET_TOURNIQUETS(_patient);
-	private _action = ["MIRA_Tourniquets", format[[LSTRING(Stable,Tourniquets)] call FUNC(cachedLocalisationCall), _amount], QUOTE(ICON_PATH(tourniquet)), {
+	private _action = ["MIRA_Tourniquets", format[[LOC(Stable,Tourniquets)] call FUNC(cachedLocalisationCall), _amount], QUOTE(ICON_PATH(tourniquet)), {
 			params ["_target", "_player", "_parameters"];
 			_parameters params ["_patient"];
 			[_patient] call FUNC(openMedicalMenu);

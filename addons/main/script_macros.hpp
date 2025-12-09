@@ -15,9 +15,12 @@
 #define DEFUNC(var1,var2) TRIPLES(DOUBLES(PREFIX,var1),fnc,var2)
 
 #define SIXES(var1,var2,var3,var4,var5,var6) var1##_##var2##_##var3##_##var4##_##var5##_##var6
+#define FOURS(var1,var2,var3,var4) var1##_##var2##_##var3##_##var4##
 #define KATPUSHCSTRING(var1,var2,var3) QUOTE(SIXES($STR,ADDON,Push,var1,var2,var3))
 #define KATPUSHINGCSTRING(var1,var2,var3) QUOTE(SIXES($STR,ADDON,Pushing,var1,var2,var3))
 #define KATDISPLAYCSTRING(var1,var2,var3) QUOTE(SIXES($STR,ADDON,SyringeDisplay,var1,var2,var3))
+#define LOC(var1,var2) QUOTE(TRIPLES(STR,ADDON,DOUBLES(var1,var2)))
+#define ICON_PATH(name) ADDON##\ui\##name##.paa
 
 #undef QFUNC
 #undef QEFUNC
@@ -625,19 +628,6 @@
 #define BLOOD_LOSS_RED_THRESHOLD 0.5
 #define BLOOD_LOSS_TOTAL_COLORS 10
 
-#define CONCAT(a,b) a##b
-#define LSTR(module,name) CONCAT(STR_MIRA_AVM_,CONCAT(module,CONCAT(_,name)))
-#define ICON_PATH(name) ADDON##\ui\##name##.paa
-
-#define LOG_BASE(level,msg) diag_log text format[QUOTE(ADDON[level]: %1), msg]
-#define LOG(msg) LOG_BASE(DEBUG, LOG_FILENUMBER(msg))
-#define LOGF_1(msg,arg0) LOG(format[ARR_2(msg,arg0)])
-#define LOGF_2(msg,arg0,arg1) LOG(format[ARR_3(msg,arg0,arg1)])
-#define LOGF_3(msg,arg0,arg1,arg2) LOG(format[ARR_4(msg,arg0,arg1,arg2)])
-#define LOG_ERROR(msg) LOG_BASE(ERR,LOG_FILENUMBER(msg))
-#define LOG_ERRORF_1(msg,arg0) LOG_ERROR(format[ARR_2(msg,arg0)])
-#define LOG_ERRORF_2(msg,arg0,arg1) LOG_ERROR(format[ARR_3(msg,arg0,arg1)])
-#define LOG_FILENUMBER(msg) format [ARR_4('%1 at %2:%3',msg,__FILE__,__LINE__ + 1)]
 #define NOTMEDIC_LOWHR_THRESHOLD 50
 #define NOTMEDIC_LOWBP_THRESHOLD 90
 

@@ -2,7 +2,6 @@
 params["_vehicle", "_medic", ["_conditionCode", {true}], ["_force", false]];
 
 if(!(_conditionCode isEqualType {})) exitWith {
-	LOGF_1("Provided condition is not code: %1", _conditionCode);
 };
 private _passengers = crew _vehicle;
 {
@@ -12,7 +11,6 @@ private _passengers = crew _vehicle;
 		}
 		else
 		{
-			LOGF_1("Unable to unload %1", _x);
 		};
 	};
 }forEach _passengers;

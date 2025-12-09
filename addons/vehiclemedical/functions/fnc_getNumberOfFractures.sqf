@@ -6,7 +6,7 @@ params[
 	["_splintedOnly", false]
 ];
 
-private _fractures = [_patient] call FUNC(getFractures);
+private _fractures = GET_FRACTURES(_patient);
 private _numFractures = 0;
 {
 	private _fracture = _fractures select _x;
@@ -51,10 +51,13 @@ private _numFractures = 0;
 			};
 		};
 		default {
-			LOG_ERRORF_1("Unknown Fracture State '%1'", _fracture);
 		};
 	};
-} forEach [
+} forEach [ 
+	HITPOINT_INDEX_LARM,
+	HITPOINT_INDEX_ULARM,
+	HITPOINT_INDEX_RARM,
+	HITPOINT_INDEX_URARM,
 	HITPOINT_INDEX_LLEG,
 	HITPOINT_INDEX_ULLEG,
 	HITPOINT_INDEX_RLEG,

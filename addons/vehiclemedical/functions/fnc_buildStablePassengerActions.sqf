@@ -20,7 +20,6 @@
 params["_vehicle", "_player"];
 
 if!(alive _vehicle) exitWith { 
-	LOGF_1("%1 not alive, exiting.", _vehicle);
 	[]
 };
 
@@ -30,7 +29,7 @@ _actions = [];
 _conditions = {
 	params ["", "", "_parameters"];
 	_parameters params ["_unit"];
-	if(!alive _patient) exitWith { false };
+	if(!alive _unit) exitWith { false };
 	_unit call FUNC(isStable);
 };
 
@@ -43,10 +42,14 @@ _modifierFunc = {
 	// bandage > stitch  > lowhr > lowbp > fractures > tourniquets
 	private _tourniquet = GVAR(Stable_TrackTourniquets) && ((selectMax GET_TOURNIQUETS(_patient)) > 0);
 	private _fractures = GVAR(Stable_TrackFractures) && ((selectMax GET_FRACTURES(_patient)) > 0);
-	private _isMedic = _player call FUNC(isMedic);
-	private _lowBP = GVAR(Stable_TrackLowBP) && [_patient, _isMedic] call FUNC(hasLowBP);
-	private _lowHR = GVAR(Stable_TrackLowHR) && [_patient, _isMedic] call FUNC(hasLowHR);
-	private _stitch = GVAR(Stable_TrackStitchableWounds) && count ([_patient] call FUNC(getStitchableWounds)) > 0;
+	private _isMedic = (_player call ACEFUNC(medical_treatment,isMedic));
+	private _bloodPressure = [_patient] call EFUNC(circulation,getBloodPressure);
+	_bloodPressure params ["_bloodPressureL", "_bloodPressureH"];
+	private _map = _bloodPressureL + (0.3333333333 * (_bloodPressureH - _bloodPressureL));
+	private _lowBP = GVAR(Stable_TrackLowBP) && (_map < 60);
+	private _lowHR = GVAR(Stable_TrackLowHR) && (GET_HEART_RATE(_patient) < 60);
+	private _stitchWounds = _patient call EFUNC(misc,getFullBodyStitchableWoundTime);
+	private _stitch = (_stitchWounds > 0);
 	private _bandage = GVAR(Stable_TrackNeedsBandage) && [_patient] call FUNC(needsBandage);
 
 	if(_tourniquet) then {
@@ -70,7 +73,6 @@ _modifierFunc = {
 
 	if(_result == "") then {
 		private _set = format["Tourniquet: %1, Fractures: %2, Low BP: %3, Low HR: %4, Stitch: %5, Bandage: %6, isMedic: %7",_tourniquet,_fractures,_lowBP,_lowHR,_stitch,_bandage,_isMedic];
-		LOG_ERRORF_1("Couldnt find matching icon for stable given set: %1",_set);
 	};
 	_actionData set [2, _result];
 };
@@ -79,7 +81,7 @@ _modifierFunc = {
 {
 	private _unit = _x;
 	//ignore drone pilot(s)
-	if(getText (configFile >> "CfgVehicles" >> typeOf _unit >> "simulation") != "UAVPilot") then {
+	if(getText (configOf _unit >> "simulation") != "UAVPilot") then {
 		//get unit name from ace common to display
 		private _unitName = [_unit] call ace_common_fnc_getName;
 		//icon is blank, defined by modififer func

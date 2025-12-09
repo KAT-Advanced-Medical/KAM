@@ -22,7 +22,7 @@
  */
 
 params ["_unit", "_allDamages"];
-if (_unit getVariable [QEGVAR(vitals,simpleMedical), false]) exitWith {};
+if (_unit getVariable [QEGVAR(vitals,simpleMedical), false]) exitWith {_this};
 (_allDamages select 0) params ["_engineDamage", "_bodyPart"]; // selection-specific
 
 if !(GVAR(enable) && _bodyPart == "chest") exitWith {_this};

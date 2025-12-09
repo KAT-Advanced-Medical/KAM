@@ -3,7 +3,6 @@
 params["_vehicle", "_player"];
 
 if!(alive _vehicle) exitWith { 
-	LOGF_1("%1 not alive, exiting.", _vehicle);
 	[]
 };
 
@@ -20,7 +19,7 @@ private _fnc_forceUnloadAllAction = {
 	params["_patient"];
 	private _forceUnload = [
 		"MIRA_UnloadAll_Force",
-		[LSTRING(Incapacitated,Unload_Force)] call FUNC(cachedLocalisationCall), 
+		[LOC(Incapacitated,Unload_Force)] call FUNC(cachedLocalisationCall), 
 		QUOTE(ICON_PATH(unload)), 
 		{
 			params ["_vehicle", "_player", "_parameters"];
@@ -35,13 +34,13 @@ private _fnc_forceUnloadAllAction = {
 
 // Unload All Action
 private _unloadAllAction = ["MIRA_UnloadAll", 
-	[LSTRING(Incapacitated,Unload_All)] call FUNC(cachedLocalisationCall), 
+	[LOC(Incapacitated,Unload_All)] call FUNC(cachedLocalisationCall), 
 	QUOTE(ICON_PATH(unload)), 
 	{
 		params ["_vehicle", "_player", "_parameters"];
 		[_vehicle, _player, {
 			params["_patient"];
-			_patient != player && ([_patient] call FUNC(isUnconscious) || !(alive _patient))
+			_patient != player && ((IS_UNCONSCIOUS(_patient)) || !(alive _patient))
 		}] call FUNC(unloadAllWithCondition);
 	},
 	{true},
@@ -54,7 +53,7 @@ _actions pushBack [_unloadAllAction, [], _vehicle];
 {
 	private _unit = _x;
 	//ignore drone pilot(s)
-	if(getText (configFile >> "CfgVehicles" >> typeOf _unit >> "simulation") != "UAVPilot") then {
+	if(getText (configOf _unit >> "simulation") != "UAVPilot") then {
 		//get unit name from ace common to display
 		private _unitName = [_unit] call ace_common_fnc_getName;
 		//icon is blank, defined by modififer func
@@ -62,7 +61,7 @@ _actions pushBack [_unloadAllAction, [], _vehicle];
 
 		private _fnc_conditions = {
 			params["_patient", "_player", "_parameters"];
-			!(alive _patient) || _patient call FUNC(isUnconscious)
+			!(alive _patient) || (IS_UNCONSCIOUS(_patient))
 		};
 		private _action = [
 			format["%1", _unit],
@@ -81,15 +80,15 @@ _actions pushBack [_unloadAllAction, [], _vehicle];
 				//probably performance thing, unsure
 				if(ace_interact_menu_selectedTarget isEqualTo _patient) then {
 					private _subActions = [];
-					private _isMedic = _player call FUNC(isMedic);
+					private _isMedic = (_player call ACEFUNC(medical_treatment,isMedic));
 
-					if([_patient] call FUNC(isUnconscious) || !alive _patient) then {
+					if((IS_UNCONSCIOUS(_patient)) || !alive _patient) then {
 						
 						private _forceUnloadAction = { 
 							params["_patient"];
 							private _forceUnload = [
 								"MIRA_Unload_Force",
-								[LSTRING(Incapacitated,Unload_Force)] call FUNC(cachedLocalisationCall), 
+								[LOC(Incapacitated,Unload_Force)] call FUNC(cachedLocalisationCall), 
 								QUOTE(ICON_PATH(unload)), 
 								{
 									params ["_patient", "_player", "_parameters"];
@@ -102,7 +101,7 @@ _actions pushBack [_unloadAllAction, [], _vehicle];
 							[[_forceUnload, [], _patient]]
 						};
 
-						private _action = ["MIRA_Unload", [LSTRING(Incapacitated,Unload)] call FUNC(cachedLocalisationCall), QUOTE(ICON_PATH(unload)), {
+						private _action = ["MIRA_Unload", [LOC(Incapacitated,Unload)] call FUNC(cachedLocalisationCall), QUOTE(ICON_PATH(unload)), {
 								params ["_target", "_player", "_parameters"];
 								[_target, _player] call FUNC(unloadPatient);
 							}, {true}, _forceUnloadAction] call ace_interact_menu_fnc_createAction;

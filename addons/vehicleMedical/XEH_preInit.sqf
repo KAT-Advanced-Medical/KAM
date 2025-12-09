@@ -1,47 +1,16 @@
-#include "functions\function_macros.hpp"
-LOGF_1("[%1] PreInit Begin", QUOTE(ADDON));
+#include "script_component.hpp"
 
-LOGF_1("[%1] PREP Begin", QUOTE(ADDON));
-#include "XEH_PREP.sqf"
-LOGF_1("[%1] PREP Complete", QUOTE(ADDON));
+ADDON = false;
 
-private _version = [] call FUNC(getVersion);
-LOGF_2("%1 at version %2", QUOTE(ADDON), _version);
+PREP_RECOMPILE_START;
+#include "XEH_PREP.hpp"
+PREP_RECOMPILE_END;
 
-// ace_common_getVersion is broken for some patches, we look manually to ensure data is good, probably wont work everywhere.
-getArray(configFile >> "CfgPatches" >> "ace_main" >> "versionAR") params ["_aceMajor", "_aceMinor"];
+#define CBA_SETTINGS_CAT LSTRING(cba_name)
+//#include "initSettings.inc.sqf"
 
-if(_aceMajor >= 3 && _aceMinor >= 13) then {
-	LOG(format["ACE Version is >= 3.13"]);
-	GVAR(aceAfter_313) = true;
-}else{
-	LOG(format["ACE Version is < 3.13"]);
-	GVAR(aceAfter_313) = false;
-};
-
-if(_aceMajor >= 3 && _aceMinor >= 16) then {
-	LOG(format["ACE Version is >= 3.16"]);
-	GVAR(aceAfter_316) = true;
-}else{
-	LOG(format["ACE Version is < 3.16"]);
-	GVAR(aceAfter_316) = false;
-};
-
-// Integrations Search
-LOG("Searching for Integrations");
-
-private _hasKAT = isClass(configFile >> "CfgPatches" >> "kat_main");
-GVAR(KATInstalled) = _hasKAT;
-LOGF_1("Found KAT: %1", _hasKAT);
-
-LOG("Integration Search Complete");
-
-LOGF_1("[%1] CBA Options Begin", QUOTE(ADDON));
-
-#define LOC(module,name) localize LSTRING(module,name)
 // General
 private _generalCategory = [LOC(Settings,Addon_Name), LOC(Settings_General,Category)];
-[QUOTE(GVAR(VERSION)), "CHECKBOX", [format[LOC(Settings_General,Version), _version], LOC(Settings_General,Version_Tooltip)], _generalCategory, false, 0, {}] call CBA_fnc_addSetting;
 [QUOTE(GVAR(EnableAVM)), "CHECKBOX", [LOC(Settings_General,Enable), LOC(Settings_General,Enable_Tooltip)], _generalCategory, true, 0, {}] call CBA_fnc_addSetting;
 [QUOTE(GVAR(WarnViewingDead)), "CHECKBOX", [LOC(Settings_General,Warn_Selecting_Dead)], _generalCategory, true, 0, {}] call CBA_fnc_addSetting;
 [QUOTE(GVAR(CacheInterval)), "SLIDER", [LOC(Settings_General,Cache_Interval), LOC(Settings_General,Cache_Interval_Tooltip)], _generalCategory, [0, 10, 0.4, 1], 0, {}] call CBA_fnc_addSetting;
@@ -49,7 +18,7 @@ private _generalCategory = [LOC(Settings,Addon_Name), LOC(Settings_General,Categ
 // Incapacitated
 private _incapacitatedCategory = [LOC(Settings,Addon_Name), LOC(Settings_Incapacitated,Category)];
 [QUOTE(GVAR(EnableIncapacitated)), "CHECKBOX", [LOC(Settings_Incapacitated,Enable), LOC(Settings_Incapacitated,Enable_Tooltip)], _incapacitatedCategory, false, 0, {}] call CBA_fnc_addSetting;
-[QUOTE(GVAR(Incapacitated_ShowCount)), "CHECKBOX", [format[LOC(Settings_Incapacitated,Show_Count), _version], LOC(Settings_Incapacitated,Show_Count_Tooltip)], _incapacitatedCategory, false, 0, {}] call CBA_fnc_addSetting;
+[QUOTE(GVAR(Incapacitated_ShowCount)), "CHECKBOX", [LOC(Settings_Incapacitated,Show_Count), LOC(Settings_Incapacitated,Show_Count_Tooltip)], _incapacitatedCategory, false, 0, {}] call CBA_fnc_addSetting;
 [QUOTE(GVAR(Incapacitated_CanUnloadAll)), "CHECKBOX", [LOC(Settings_Incapacitated,Allow_Unload_All), LOC(Settings_Incapacitated,Allow_Unload_All_Tooltip)], _incapacitatedCategory, true, 0, {}] call CBA_fnc_addSetting;
 
 // Unstable
@@ -105,7 +74,4 @@ if(GVAR(KATInstalled)) then {
 {
 	GVAR(EnableSupportKAT) = false;
 };
-
-LOGF_1("[%1] CBA Options Complete", QUOTE(ADDON));
-
-LOGF_1("[%1] PreInit Complete", QUOTE(ADDON));
+ADDON = true;

@@ -3,7 +3,7 @@ params["_vehicle"];
 
 private _code = {
 	params["_vehicle"];
-	{ !(alive _x) || _x call FUNC(isUnconscious) } count (crew _vehicle)
+	{ !(alive _x) || IS_UNCONSCIOUS(_x) } count (crew _vehicle)
 };
 
 [QUOTE(GVAR(IncapacitatedCountCache)),[_vehicle],_code] call FUNC(cachedResult);

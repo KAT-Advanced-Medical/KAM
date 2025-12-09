@@ -20,11 +20,11 @@
  * Public: No
  */
 params ["_unit", "_allDamages", "_typeOfDamage"];
-if (_unit getVariable [QEGVAR(vitals,simpleMedical), false]) exitWith {};
+if (_unit getVariable [QEGVAR(vitals,simpleMedical), false]) exitWith {_this};
 (_allDamages select 0) params ["_damage", "_bodyPart"]; // selection-specific
 if !(GVAR(enable) && _bodyPart == "head") exitWith {_this};
-if (_unit getVariable [QEGVAR(vitals,simpleMedical), false]) exitWith {};
-if (_damage <= 0) exitWith {};
+if (_unit getVariable [QEGVAR(vitals,simpleMedical), false]) exitWith {_this};
+if (_damage <= 0) exitWith {_this};
 // Increase the chance based on how much damage was received 
 private _chanceIncrease = linearConversion [0,1,_damage,5,30,true];
 // Increase the chance of concussions depending on the damage type

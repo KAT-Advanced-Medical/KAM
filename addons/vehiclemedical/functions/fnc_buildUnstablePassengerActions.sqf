@@ -20,7 +20,6 @@
 params["_vehicle", "_player"];
 
 if!(alive _vehicle) exitWith { 
-	LOGF_1("%1 not alive, exiting.", _vehicle);
 	[]
 };
 
@@ -39,38 +38,21 @@ _modifierFunc = {
 	params ["_target", "_player", "_parameters", "_actionData"];
 	_parameters params ["_patient"];
 	// Get vars to check
-	private _bleeding = GVAR(Unstable_TrackBleeding) && [_patient] call FUNC(isBleeding);
-	private _sleepy = GVAR(Unstable_TrackUnconscious) && [_patient] call FUNC(isUnconscious);
-	private _cardiac = GVAR(Unstable_TrackCardiacArrest) && [_patient] call FUNC(isCardiacArrest);
+	private _bleeding = GVAR(Unstable_TrackBleeding) && [_patient] call FUNC(needsBandage);
+	private _sleepy = GVAR(Unstable_TrackUnconscious) && (IS_UNCONSCIOUS(_patient));
+	private _cardiac = GVAR(Unstable_TrackCardiacArrest) && (_patient getVariable [QEGVAR(circulation,cardiacArrestType), 0] != 0);
 	private _dead = GVAR(Unstable_TrackDead) && !alive _patient;
-	//KAT Priority
-	private _kat_pneumothorax = false;
-	private _kat_airwayBlocked = false;
 	private _kat_spO2Low = false;
 
 	if(GVAR(EnableSupportKAT)) then {
-		_kat_pneumothorax = GVAR(Unstable_TrackAllPneumothorax) &&
-		([_patient] call FUNC(kat_getPneumothorax) 
-			|| [_patient] call FUNC(kat_getTensionPneumothorax) 
-			|| [_patient] call FUNC(kat_getHemopneumothorax));
-		_kat_airwayBlocked = GVAR(Unstable_TrackAirwayBlocked) && ([_patient] call FUNC(kat_getAirwayObstruction) || [_patient] call FUNC(kat_getAirwayOcclusion));
-		_kat_spO2Low = GVAR(Unstable_TrackSpO2) && ([_patient] call FUNC(kat_getAirwayStatus) < 85);
+		_kat_spO2Low = GVAR(Unstable_TrackSpO2) && (GET_KAT_SPO2(_player) < EGVAR(breathing,Stable_spo2));
 	};
 
 	// Modify the icon (3rd param)
 	//Use ascending order of importance, cardiac > bleeding > unconscious > leg fracture
 	private _result = "";
-	if(_legFractures) then {
-		_result = QUOTE(ICON_PATH(fracture));
-	};
 	if(_sleepy) then {
 		_result = QUOTE(ICON_PATH(unconscious_white));
-	};
-	if(_kat_pneumothorax) then {
-		_result = QUOTE(ICON_PATH(kat_pneumothorax));
-	};
-	if(_kat_airwayBlocked) then {
-		_result = QUOTE(ICON_PATH(kat_airway_blocked));
 	};
 	if(_bleeding) then {
 		_result = QUOTE(ICON_PATH(bleeding_red));
@@ -91,7 +73,7 @@ _modifierFunc = {
 {
 	private _unit = _x;
 	//ignore drone pilot(s)
-	if(getText (configFile >> "CfgVehicles" >> typeOf _unit >> "simulation") != "UAVPilot") then {
+	if(getText (configOf _unit >> "simulation") != "UAVPilot") then {
 		//get unit name from ace common to display
 		private _unitName = [_unit] call ace_common_fnc_getName;
 		//icon is blank, defined by modififer func

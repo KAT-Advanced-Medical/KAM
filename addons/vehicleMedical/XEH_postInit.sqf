@@ -1,4 +1,4 @@
-#include "functions\function_macros.hpp"
+#include "script_component.hpp"
 ["ace_interact_menu_newControllableObject", {
     params ["_type"]; // string of the object's classname
 	private _validTypes = [];
@@ -23,7 +23,7 @@
     private _action = 
 		[
 			"MIRA_Medical",
-			[LSTRING(Interaction,Medical)] call FUNC(cachedLocalisationCall),
+			[LOC(Interaction,Medical)] call FUNC(cachedLocalisationCall),
 			"",
 			{ if(true) exitWith{} },
 			{ GVAR(EnableAVM) }
@@ -32,7 +32,7 @@
 	_action = 
 		[
 			"MIRA_Stable",
-			[LSTRING(Interaction,Stable)] call FUNC(cachedLocalisationCall),
+			[LOC(Interaction,Stable)] call FUNC(cachedLocalisationCall),
 			"",
 			{ },
 			{ 
@@ -57,7 +57,7 @@
 	_action = 
 		[
 			"MIRA_Unstable",
-			[LSTRING(Interaction,Unstable)] call FUNC(cachedLocalisationCall),
+			[LOC(Interaction,Unstable)] call FUNC(cachedLocalisationCall),
 			"",
 			{ }, 
 			{ 
@@ -82,7 +82,7 @@
 	_action = 
 		[
 			"MIRA_Incapacitated",
-			[LSTRING(Interaction,Incapacitated)] call FUNC(cachedLocalisationCall),
+			[LOC(Interaction,Incapacitated)] call FUNC(cachedLocalisationCall),
 			"",
 			{ }, 
 			{ 
@@ -104,7 +104,6 @@
 			}
 		] call ace_interact_menu_fnc_createAction;
     [_type, 1, ["ACE_SelfActions", "MIRA_Medical"], _action, false] call ace_interact_menu_fnc_addActionToClass;
-	LOGF_1("Dynamically added interaction to %1", _type);
 }] call CBA_fnc_addEventHandler;
 
 [QUOTE(GVAR(UnloadPatientForce)), { _this call FUNC(unloadPatientForceHandler) }] call cba_fnc_addEventHandler;

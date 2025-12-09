@@ -1,5 +1,5 @@
-#define COMPONENT MIRA_Vehicle_Medical
-#define COMPONENT_BEAUTIFIED Ace Vehicle Medical
+#define COMPONENT vehiclemedical
+#define COMPONENT_BEAUTIFIED KAT Vehicle Medical
 #include "\x\kat\addons\main\script_mod.hpp"
 #include "\x\kat\addons\gui\gui_defines.hpp"
 

@@ -1,5 +1,4 @@
 #include "..\script_component.hpp"
-#include "medical_macros.hpp"
 
 params[
 	"_patient", 
@@ -8,11 +7,11 @@ params[
 
 _hr = GET_HEART_RATE(_patient);
 if(_hr == 0) exitWith {
-	[LSTRING(Shared,Heart_Rate_None)] call FUNC(cachedLocalisationCall)
+	[LOC(Shared,Heart_Rate_None)] call FUNC(cachedLocalisationCall)
 };
 
 if(_isMedic) exitWith {
 	round _hr
 };
 
-[LSTRING(Shared,Not_Medic_Heart_Rate_Low)] call FUNC(cachedLocalisationCall)
+[LOC(Shared,Not_Medic_Heart_Rate_Low)] call FUNC(cachedLocalisationCall)

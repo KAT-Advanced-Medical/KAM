@@ -1,3 +1,4 @@
+#include "..\script_component.hpp"
 params["_patient", "_medic"];
 
 private _name = [_medic] call ace_common_fnc_getName;
@@ -5,7 +6,7 @@ private _name = [_medic] call ace_common_fnc_getName;
 unassignVehicle _patient;
 [_patient] orderGetIn false;
 _patient action ["Eject", vehicle _patient];
-if (vehicle _patient != _patient) then {
+if (!isNull objectParent _patient) then {
 	moveOut _patient;
 };
 [_patient, false, "ace_common_fnc_loadPerson", side group _patient] call ace_common_fnc_switchToGroupSide;
@@ -13,7 +14,7 @@ if (vehicle _patient != _patient) then {
 [
 	{
 		params ["_patient"];
-		(alive _patient) && {(vehicle _patient) != _patient}
+		(alive _patient) && {!isNull objectParent _patient}
 	},
 	{
 		params ["_patient"];
@@ -27,7 +28,7 @@ if (vehicle _patient != _patient) then {
 		unassignVehicle _patient;
 		[_patient] orderGetIn false;
 		_patient action ["Eject", vehicle _patient];
-		if (vehicle _patient != _patient) then {
+		if (!isNull objectParent _patient) then {
 			moveOut _patient;
 		};
 		[_patient, false, "ace_common_fnc_loadPerson", side group _patient] call ace_common_fnc_switchToGroupSide;

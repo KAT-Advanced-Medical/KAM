@@ -1,3 +1,4 @@
+#include "..\script_component.hpp"
 params["_search"];
 // I'm assuming that I'll never have booleans loaded from stringtable.xml
 private _result = uiNamespace getVariable[_search, false]; 

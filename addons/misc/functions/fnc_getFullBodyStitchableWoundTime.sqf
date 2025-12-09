@@ -11,7 +11,7 @@
  * Stitchable Wounds <HASHMAP>
  *
  * Example:
- * [player] call kat_misc_fnc_getFullBodyStitchableWounds
+ * [player] call kat_misc_fnc_getFullBodyStitchableWoundTime
  *
  * Public: No
  */
