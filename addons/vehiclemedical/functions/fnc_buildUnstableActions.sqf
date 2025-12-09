@@ -85,12 +85,7 @@ private _isBleeding = GVAR(Unstable_TrackBleeding) && _patient call FUNC(needsBa
 //add bleeding action if applicable
 if (_isBleeding) then {
 	//TODO: collect all wounds, and colour icon based on severity, only have red done for now
-	_icon = [
-		QPATHTOF(ui\bleeding_red.paa),
-		QPATHTOF(ui\bleeding_yellow.paa),
-		QPATHTOF(ui\bleeding_white.paa)
-	] select 0;
-	_action = ["MIRA_Bleeding", [LOC(Unstable,Bleeding)] call FUNC(cachedLocalisationCall), _icon, {
+	_action = ["MIRA_Bleeding", [LOC(Unstable,Bleeding)] call FUNC(cachedLocalisationCall), QPATHTOF(ui\bleeding_red.paa), {
 			params ["_target", "_player", "_parameters"];
 			_parameters params ["_patient"];
 			[_patient] call FUNC(openMedicalMenu);
