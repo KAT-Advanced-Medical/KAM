@@ -95,6 +95,7 @@ class ACE_Medical_Injuries {
                 EGVAR(breathing,pulmoHit) = QEFUNC(breathing,woundsHandlerPulmoHit);
                 GVAR(pelvicHit) = QFUNC(woundsHandlerPelvicHit);
                 EGVAR(airway,airwayHit) = QEFUNC(airway,handleAirwayHit);
+                EGVAR(brain,concussion) = QEFUNC(brain,concussionWH);
                 GVAR(armorPenetration) = QFUNC(woundsHandlerArmorPenetration);
             };
 
