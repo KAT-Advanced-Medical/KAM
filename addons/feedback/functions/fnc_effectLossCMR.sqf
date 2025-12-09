@@ -23,7 +23,6 @@ if ((!_enable) || {_cmr > 95}) exitWith {
     if (GVAR(minorLossCMR) != -1) then { GVAR(minorLossCMR) ppEffectEnable false; };
 };
 if (GVAR(minorLossCMR) != -1) then { GVAR(minorLossCMR) ppEffectEnable true; };
-
 // Trigger effect every 2s
 private _showNextTick = missionNamespace getVariable [QGVAR(showBrainNextTick), true];
 GVAR(showBrainNextTick) = !_showNextTick;
@@ -31,7 +30,8 @@ if (_showNextTick) exitWith {};
 
 private _initialAdjust = [];
 private _delayedAdjust = [];
-private _adjustment = 0.75 * linearConversion [95, 0, (95-_cmr), 1, 5, true];
+private _adjust = 95 - _cmr;
+private _adjustment = 0.1 * linearConversion [0, 95, _adjust, 1, 5, true];
 _initialAdjust = [_adjustment];
 _delayedAdjust = [0];
 
