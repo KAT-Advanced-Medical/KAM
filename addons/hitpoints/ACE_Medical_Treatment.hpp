@@ -1532,21 +1532,6 @@ class ACE_Medical_Treatment {
             class ThermalBurnLarge: ThermalBurn {
                 effectiveness = 0;
             };
-            class Evisceration: Abrasion {
-                effectiveness = 0.25;
-                reopeningChance = 0.2;
-                reopeningMinDelay = 180;
-                reopeningMaxDelay = 360;
-            };
-            class EviscerationMinor: Evisceration {
-                effectiveness = 0;
-            };
-            class EviscerationMedium: Evisceration {
-                effectiveness = 0;
-            };
-            class EviscerationLarge: Evisceration {
-                effectiveness = 0.25;
-            };
         };
         class Hemostatic_Gauze: FieldDressing {
             effectiveness = 1;
@@ -1705,21 +1690,6 @@ class ACE_Medical_Treatment {
             class ThermalBurnLarge: ThermalBurn {
                 effectiveness = 0;
             };
-            class Evisceration: Abrasion {
-                effectiveness = 0.0;
-                reopeningChance = 0.8;
-                reopeningMinDelay = 120;
-                reopeningMaxDelay = 180;
-            };
-            class EviscerationMinor: Evisceration {
-                effectiveness = 0;
-            };
-            class EviscerationMedium: Evisceration {
-                effectiveness = 0;
-            };
-            class EviscerationLarge: Evisceration {
-                effectiveness = 0;
-            };
         };
         class Hemostatic_Gauze_wrapped: FieldDressing {
             effectiveness = 1;
@@ -1729,7 +1699,7 @@ class ACE_Medical_Treatment {
 
             class Abrasion {
                 effectiveness = 0.5;
-                reopeningChance = 0.5;
+                reopeningChance = 0.1;
                 reopeningMinDelay = 1200;
                 reopeningMaxDelay = 1800;
             };
@@ -1745,7 +1715,7 @@ class ACE_Medical_Treatment {
 
             class Avulsion: Abrasion {
                 effectiveness = 1;
-                reopeningChance = 0.4;
+                reopeningChance = 0.5;
                 reopeningMinDelay = 1200;
                 reopeningMaxDelay = 1800;
             };
@@ -1877,14 +1847,6 @@ class ACE_Medical_Treatment {
             };
             class ThermalBurnLarge: ThermalBurn {
                 effectiveness = 0;
-            };
-            class Evisceration: Abrasion {
-            };
-            class EviscerationMinor: Evisceration {
-            };
-            class EviscerationMedium: Evisceration {
-            };
-            class EviscerationLarge: Evisceration {
             };
         };
         class ETD: FieldDressing {
@@ -2044,19 +2006,6 @@ class ACE_Medical_Treatment {
             };
             class ThermalBurnLarge: ThermalBurn {
                 effectiveness = 0;
-            };
-            class Evisceration: Abrasion {
-                effectiveness = 2;
-                reopeningChance = 0.8;
-                reopeningMinDelay = 300;
-                reopeningMaxDelay = 900;
-            };
-            class EviscerationMinor: Evisceration {
-            };
-            class EviscerationMedium: Evisceration {
-            };
-            class EviscerationLarge: Evisceration {
-                effectiveness = 2;
             };
         };
         class Israeli_Bandage: FieldDressing {
