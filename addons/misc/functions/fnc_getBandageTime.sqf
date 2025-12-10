@@ -76,8 +76,12 @@ switch (true) do {
             _bandageTime = _bandageTime;
             TRACE_1("bandageTime4",_bandageTime);
         };
-        case (_bandage in ["Hemostatic_Gauze", "Compressed_Gauze", "fourByfour_Gauze", "Burn_Dressing"]): {
+        case (_bandage in ["Compressed_Gauze", "fourByfour_Gauze", "Burn_Dressing"]): {
             _bandageTime = _bandageTime * 0.75;
+            TRACE_1("bandageTime4",_bandageTime);
+        };
+        case (_bandage in ["Hemostatic_Gauze"]): {
+            _bandageTime = _bandageTime * 0.9;
             TRACE_1("bandageTime4",_bandageTime);
         };
         case (_bandage == "Adhesive_Bandage"): {
