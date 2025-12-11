@@ -51,33 +51,24 @@ if (_hasCapno && _selectionN isEqualTo 0 && GVAR(capnographEnable)) then {
 
 if (((_target getVariable [QGVAR(catastrophicAirway), [false, false]] select 1) || (_target getVariable [QGVAR(catastrophicAirway), [false, false]] select 1)) && (_selectionN isEqualTo 0)) then {
     private _text = LSTRING(Catastrophic_Display);
-    _entries pushBack [localize _text, [0.1, 1, 1, 1]];
+    _entries pushBack [localize _text, [1, 0, 0, 1]];
 };
 if ((((_target getVariable [QGVAR(occlusion), [0, 0, 0]]) findIf { _x != 0 }) != -1) && (_selectionN isEqualTo 0) && (_target getVariable [QGVAR(hasPuked), false])) then{
     private _text = LSTRING(BloodVomitAirway_Display);
-    _entries pushBack [localize _text, [0.1, 1, 1, 1]];
+    _entries pushBack [localize _text, [1, 0, 0, 1]];
 } else {
     if ((((_target getVariable [QGVAR(occlusion), [0, 0, 0]]) findIf { _x != 0 }) != -1) && (_selectionN isEqualTo 0)) then {
     private _text = LSTRING(BloodAirway_Display);
-    _entries pushBack [localize _text, [0.1, 1, 1, 1]];
+    _entries pushBack [localize _text, [1, 0, 0, 1]];
     };
 };
 if ((((_target getVariable [QGVAR(obstruction), [0, 0, 0]]) findIf { _x != 0 }) != -1) && (_selectionN isEqualTo 0)) then{
     private _text = LSTRING(TraumaticObstruction_Display);
-    _entries pushBack [localize _text, [0.1, 1, 1, 1]];
+    _entries pushBack [localize _text, [1, 0, 0, 1]];
 };
 if (_target getVariable [QGVAR(hasExternallyPuked), true] && (_selectionN in [0, 1, 2])) then{
     private _text = LSTRING(HasExternallyPuked);
     _entries pushBack [localize _text, [0.1, 1, 1, 1]];
-};
-
-if ((_target getVariable [QGVAR(AED_X_VitalsMonitor_Connected), false] || _target getVariable [QGVAR(DefibrillatorPads_Connected), false]) && !(GVAR(hardcoreAED))) then {
-    private _entry = _target getVariable [QGVAR(AED_X_VitalsStatus), ""];
-    if (_target getVariable [QGVAR(cardiacArrestType), 0] > 0) then {
-        _entries pushBack [_entry, [1, 0, 0, 1]];
-    } else {
-        _entries pushBack [_entry, [1, 1, 1, 1]];
-    };   
 };
 
 
