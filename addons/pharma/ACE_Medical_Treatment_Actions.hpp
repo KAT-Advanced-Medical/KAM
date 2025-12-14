@@ -2,12 +2,9 @@ class ACE_Medical_Treatment_Actions {
      class BasicBandage {
         removeFromInteractions = "false";
     };
-    class FieldDressing;
     class ApplyTourniquet;
-    class RemoveTourniquet;
     class Morphine;
     class CheckPulse;
-    class CPR;
 
     class BloodIV: BasicBandage {
         allowedSelections[] = {"Chest", "LeftArm", "RightArm", "UpperLeftLeg", "UpperRightLeg", "UpperLeftArm", "UpperRightArm", "LeftLeg", "RightLeg", "Neck"};

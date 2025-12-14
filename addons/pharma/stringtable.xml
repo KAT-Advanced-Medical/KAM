@@ -364,7 +364,7 @@
             <Dutch>Wordt gebruikt om hartstilstand te bestrijden</Dutch>
         </Key>
         <Key ID="STR_KAT_Pharma_Amiodarone_Box_Display">
-            <English>Amiodarone</English>
+            <English>Vial: Amiodarone</English>
             <German>Amiodaron</German>
             <Polish>Amiodaron</Polish>
             <French>Amiodarone</French>
@@ -385,7 +385,7 @@
             <English>Used to reverse TXA and EACA overdose</English>
         </Key>
         <Key ID="STR_KAT_Pharma_Alteplase_Display">
-            <English>Alteplase</English>
+            <English>Vial: Alteplase</English>
         </Key>
         <Key ID="STR_KAT_Pharma_Take_Amiodarone">
             <English>Push Amiodarone</English>
@@ -424,7 +424,7 @@
             <Dutch>Wordt gebruikt om hartstilstand te bestrijden</Dutch>
         </Key>
         <Key ID="STR_KAT_Pharma_Lidocaine_Box_Display">
-            <English>Lidocaine</English>
+            <English>Vial: Lidocaine</English>
             <German>Lidocain</German>
             <Polish>Lidokaina</Polish>
             <French>Lidocaïne</French>
@@ -496,7 +496,7 @@
             <Dutch>Atropine autoinjector</Dutch>
         </Key>
         <Key ID="STR_KAT_Pharma_AtropineIV_Display">
-            <English>Atropine IV</English>
+            <English>Vial: Atropine</English>
         </Key>
         <Key ID="STR_KAT_Pharma_Take_Atropine">
             <English>Inject Atropine</English>
@@ -538,7 +538,7 @@
             <Dutch>Bevorderd bloedstolling</Dutch>
         </Key>
         <Key ID="STR_KAT_Pharma_TXA_Box_Display">
-            <English>TXA</English>
+            <English>Vial: TXA</English>
             <German>TXA</German>
             <Polish>TXA</Polish>
             <French>Acide Tranexamique</French>
@@ -592,7 +592,7 @@
             <Dutch>Wordt gebruikt om de bloeddruk te verhogen</Dutch>
         </Key>
         <Key ID="STR_KAT_Pharma_Norep_Box_Display">
-            <English>Norepinephrine</English>
+            <English>Vial: Norepinephrine</English>
             <German>Noradrenalin</German>
             <Polish>Noradrenalina</Polish>
             <French>Noradrénaline</French>
@@ -646,7 +646,7 @@
             <Dutch>Wordt gebruikt om de bloeddruk te verhogen</Dutch>
         </Key>
         <Key ID="STR_KAT_Pharma_Phenyl_Box_Display">
-            <English>Phenylephrine</English>
+            <English>Vial: Phenylephrine</English>
             <German>Phenylephrin</German>
             <Polish>Fenylefryna</Polish>
             <French>Phényléphrine</French>
@@ -733,7 +733,7 @@
             <Dutch>Wordt gebruikt om de bloeddruk te laten dalen</Dutch>
         </Key>
         <Key ID="STR_KAT_Pharma_Nitro_Box_Display">
-            <English>Nitroglycerin</English>
+            <English>Vial: Nitroglycerin</English>
             <German>Nitroglycerin</German>
             <Polish>Nitrogliceryna</Polish>
             <French>Nitroglycérine</French>
@@ -1441,7 +1441,7 @@
             <Dutch>Behandelingstijd voor heroriëntatie</Dutch>
         </Key>
         <Key ID="STR_KAT_Pharma_Etomidate_displayName">
-            <English>Etomidate</English>
+            <English>Vial: Etomidate</English>
             <Chinesesimp>依托咪酯</Chinesesimp>
             <Italian>Etomidato</Italian>
             <Czech>Etomidát</Czech>
@@ -1505,7 +1505,7 @@
             <Dutch>Injecteer Etomidaat</Dutch>
         </Key>
         <Key ID="STR_KAT_Pharma_Lorazepam_displayName">
-            <English>Lorazepam</English>
+            <English>Vial: Lorazepam</English>
             <Chinesesimp>劳拉西泮</Chinesesimp>
             <Italian>Lorazepam</Italian>
             <Czech>Lorazepam</Czech>
@@ -1649,7 +1649,7 @@
             <Dutch>Injecteer Ketamine</Dutch>
         </Key>
         <Key ID="STR_KAT_Pharma_Ketamine_Box_Display">
-            <English>Ketamine</English>
+            <English>Vial: Ketamine</English>
             <Chinesesimp>氯胺酮</Chinesesimp>
             <Italian>Ketamina</Italian>
             <Czech>Ketamin</Czech>
@@ -1689,7 +1689,7 @@
             <Dutch>Injecteer Fentanyl</Dutch>
         </Key>
         <Key ID="STR_KAT_Pharma_Fentanyl_Box_Display">
-            <English>Fentanyl</English>
+            <English>Vial: Fentanyl</English>
             <Chinesesimp>芬太尼</Chinesesimp>
             <Italian>Fentanil</Italian>
             <Czech>Fentanyl</Czech>
@@ -4133,7 +4133,7 @@
             <English>Morphine IV</English>
         </Key>
         <Key ID="STR_KAT_Pharma_MorphineIV_displayName">
-            <English>Morphine IV</English>
+            <English>Vial: Morphine</English>
         </Key>
         <Key ID="STR_KAT_Pharma_medLvl_MorphineIV">
             <English>Medical level required for Morphine IV</English>
@@ -4163,7 +4163,7 @@
             <English>Adenosine IV</English>
         </Key>
         <Key ID="STR_KAT_Pharma_AdenosineIV_displayName">
-            <English>Adenosine IV</English>
+            <English>Vial: Adenosine</English>
         </Key>
         <Key ID="STR_KAT_Pharma_Take_AdenosineIV">
             <English>Push Adenosine IV</English>
@@ -4271,7 +4271,7 @@
             <English>Doxapram Is a Respiratory Stimulant that increases Breathing Rate and Depth</English>
         </Key>
         <Key ID="STR_KAT_Pharma_Doxapram_Display">
-            <English>Doxapram</English>
+            <English>Vial: Doxapram</English>
         </Key>
         <Key ID="STR_KAT_Pharma_Take_Doxapram">
             <English>Push Doxapram</English>
@@ -5642,7 +5642,7 @@
             <English>Ondansetron, For relief of nausea</English>
         </Key>
         <Key ID="STR_KAT_Pharma_Ondansetron_displayName">
-            <English>Ondansetron</English>
+            <English>Vial: Ondansetron</English>
         </Key>
         <Key ID="STR_KAT_Pharma_medLvl_Ondansetron">
             <English>Medical level required for Ondansetron</English>
@@ -5756,7 +5756,7 @@
             <English>Succinylcholine, For RSI</English>
         </Key>
         <Key ID="STR_KAT_Pharma_Succinylcholine_displayName">
-            <English>Succinylcholine</English>
+            <English>Vial: Succinylcholine</English>
         </Key>
         <Key ID="STR_KAT_Pharma_medLvl_Succinylcholine">
             <English>Medical level required for Succinylcholine</English>
@@ -5774,7 +5774,7 @@
             <English>Sugammadex, For reversal of Rocuronium</English>
         </Key>
         <Key ID="STR_KAT_Pharma_Sugammadex_displayName">
-            <English>Sugammadex</English>
+            <English>Vial: Sugammadex</English>
         </Key>
         <Key ID="STR_KAT_Pharma_Push_rocuronium_5ml_10">
             <English>Push 90mg Rocuronium</English>
@@ -5882,7 +5882,7 @@
             <English>Rocuronium, For RSI</English>
         </Key>
         <Key ID="STR_KAT_Pharma_Rocuronium_displayName">
-            <English>Rocuronium</English>
+            <English>Vial: Rocuronium</English>
         </Key>
         <Key ID="STR_KAT_Pharma_medLvl_Rocuronium">
             <English>Medical level required for Rocuronium/Sugammadex</English>
