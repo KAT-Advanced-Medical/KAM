@@ -25,7 +25,7 @@
 
 params ["_unit", "_actualHeartRate", "_anerobicPressure", "_bloodGas", "_temperature", "_baroPressure", "_opioidDepression", "_aceAnFatigue", "_deltaT", "_syncValues"];
 
-#define MAXIMUM_RR 40
+#define MAXIMUM_RR 35
 #define HEART_RATE_CO2_MULTIPLIER 60
 #define MINIMUM_VENTILATION 2000
 #define PACO2_MAX_CHANGE 0.05
@@ -255,26 +255,16 @@ if ((IN_CRDC_ARRST(_unit)) || !_airway || _paralysis) then {
     };
     if (!_patternApplied) then {
     _unit setVariable [QGVAR(breathingState), 0, true];
-    _respiratoryRate = (((_demandVentilation / _baseTidalVolume) * _respiratoryRateMult) min MAXIMUM_RR);
+    _respiratoryRate = (((_demandVentilation / _baseTidalVolume) * _respiratoryRateMult) min (MAXIMUM_RR * _respiratoryRateMult));
 
-    if (!_patternApplied && (_previousCyclePaco2 > 50)) then { _respiratoryRate = (_respiratoryRate + ((_previousCyclePaco2 - 50) * 0.2)) min MAXIMUM_RR};
-
-    _respiratoryRate = [_respiratoryRate, 20] select (_unit getVariable [QEGVAR(breathing,BVMInUse), false]);
+    if (!_patternApplied && (_previousCyclePaco2 > 50)) then { _respiratoryRate = (_respiratoryRate + ((_previousCyclePaco2 - 50) * 0.2)) min (MAXIMUM_RR * _respiratoryRateMult)};
 
     _tidalVolume = _baseTidalVolume;
     if (_respiratoryRate > 25) then {
     private _excessRR = _respiratoryRate - 25;
-    private _scaleFactor = 1 - (0.035 * _excessRR);  // reduces ~3% per breath over 25
-    _tidalVolume = _baseTidalVolume * (_scaleFactor max 0.3); // never drops below 50% of base
+    private _scaleFactor = 1 - (0.025 * _excessRR);  // reduces ~3% per breath over 25
+    _tidalVolume = _baseTidalVolume * (_scaleFactor max 0.4); // never drops below 50% of base
     };
-
-    _respiratoryDepth = _baseRespiratoryDepth;
-    if (_respiratoryRate > 25) then {
-    private _excessRR = _respiratoryRate - 25;
-    private _scaleFactor = 1 - (0.05 * _excessRR);  // reduces ~3% per breath over 25
-    _respiratoryDepth = _baseRespiratoryDepth * (_scaleFactor max 0.3); // never drops below 50% of base
-    };
-    _respiratoryDepth = [_respiratoryDepth, 10] select (_unit getVariable [QEGVAR(breathing,BVMInUse), false]);
     _actualVentilation = (_tidalVolume * _respiratoryRate) * _bronchospasm;
     };
 };

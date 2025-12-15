@@ -904,4 +904,44 @@ class CfgWeapons {
     class kat_syringe_sugammadex_5ml_20: kat_syringe_txa_5ml_10 {
         displayName = KATDISPLAYCSTRING(sugammadex,5ml,20);
     };
+    class kat_syringe_metoprolol_5ml_10: kat_syringe_txa_5ml_10 {
+        displayName = KATDISPLAYCSTRING(metoprolol,5ml,10);
+    };
+    class kat_syringe_metoprolol_5ml_20: kat_syringe_metoprolol_5ml_10 {
+        displayName = KATDISPLAYCSTRING(metoprolol,5ml,20);
+    };
+    class kat_syringe_metoprolol_5ml_30: kat_syringe_metoprolol_5ml_10 {
+        displayName = KATDISPLAYCSTRING(metoprolol,5ml,30);
+    };
+    class kat_syringe_diazepam_5ml_10: kat_syringe_txa_5ml_10 {
+        displayName = KATDISPLAYCSTRING(diazepam,5ml,10);
+    };
+    class kat_syringe_diazepam_5ml_20: kat_syringe_diazepam_5ml_10 {
+        displayName = KATDISPLAYCSTRING(diazepam,5ml,20);
+    };
+    class kat_syringe_diazepam_5ml_30: kat_syringe_diazepam_5ml_10 {
+        displayName = KATDISPLAYCSTRING(diazepam,5ml,30);
+    };
+    class kat_diazepam: ACE_ItemCore {
+        scope = 2;
+        displayName = CSTRING(Diazepam_Box_Display);
+        picture = QPATHTOF(ui\icon_Diazepam.paa);
+        model = "\A3\Structures_F_EPA\Items\Medical\Painkillers_F.p3d";
+        descriptionShort = CSTRING(Diazepam_DescShort);
+        ACE_isMedicalItem = 1;
+        class ItemInfo: CBA_MiscItem_ItemInfo {
+            mass = 0.5;
+        };
+    };
+    class kat_metoprolol: ACE_ItemCore {
+        scope = 2;
+        displayName = CSTRING(Metoprolol_Box_Display);
+        picture = QPATHTOF(ui\icon_Metoprolol.paa);
+        model = "\A3\Structures_F_EPA\Items\Medical\Painkillers_F.p3d";
+        descriptionShort = CSTRING(Metoprolol_DescShort);
+        ACE_isMedicalItem = 1;
+        class ItemInfo: CBA_MiscItem_ItemInfo {
+            mass = 0.5;
+        };
+    };
 };

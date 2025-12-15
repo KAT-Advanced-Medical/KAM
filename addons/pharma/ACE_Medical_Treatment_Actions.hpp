@@ -663,6 +663,22 @@ class ACE_Medical_Treatment_Actions {
         displayName = KATPUSHCSTRING(atropineIV,5ml,30);
         displayNameProgress = KATPUSHINGCSTRING(atropineIV,5ml,30);
     };
+    class syringe_Diazepam_5ml_10: syringe_EACA_5ml_10 {
+        medicRequired = QGVAR(medLvl_diazepam);
+        items[] = {"kat_syringe_diazepam_5ml_10"};
+        displayName = KATPUSHCSTRING(diazepam,5ml,10);
+        displayNameProgress = KATPUSHINGCSTRING(diazepam,5ml,10);
+    };
+    class syringe_Diazepam_5ml_20: syringe_Diazepam_5ml_10 {
+        items[] = {"kat_syringe_diazepam_5ml_20"};
+        displayName = KATPUSHCSTRING(diazepam,5ml,20);
+        displayNameProgress = KATPUSHINGCSTRING(diazepam,5ml,20);
+    };
+    class syringe_Diazepam_5ml_30: syringe_Diazepam_5ml_10 {
+        items[] = {"kat_syringe_diazepam_5ml_30"};
+        displayName = KATPUSHCSTRING(diazepam,5ml,30);
+        displayNameProgress = KATPUSHINGCSTRING(diazepam,5ml,30);
+    };
     class syringe_Doxapram_5ml_10: syringe_EACA_5ml_10 {
         medicRequired = QGVAR(medLvl_doxapram);
         items[] = {"kat_syringe_doxapram_5ml_10"};
@@ -1068,7 +1084,22 @@ class ACE_Medical_Treatment_Actions {
         displayName = KATPUSHCSTRING(lorazepam,5ml,30);
         displayNameProgress = KATPUSHINGCSTRING(lorazepam,5ml,30);
     };
-    
+    class syringe_Metoprolol_5ml_10: syringe_EACA_5ml_10 {
+        medicRequired = QGVAR(medLvl_metoprolol);
+        items[] = {"kat_syringe_metoprolol_5ml_10"};
+        displayName = KATPUSHCSTRING(metoprolol,5ml,10);
+        displayNameProgress = KATPUSHINGCSTRING(metoprolol,5ml,10);
+    };
+    class syringe_Metoprolol_5ml_20: syringe_Metoprolol_5ml_10 {
+        items[] = {"kat_syringe_metoprolol_5ml_20"};
+        displayName = KATPUSHCSTRING(metoprolol,5ml,20);
+        displayNameProgress = KATPUSHINGCSTRING(metoprolol,5ml,20);
+    };
+    class syringe_Metoprolol_5ml_30: syringe_Metoprolol_5ml_10 {
+        items[] = {"kat_syringe_metoprolol_5ml_30"};
+        displayName = KATPUSHCSTRING(metoprolol,5ml,30);
+        displayNameProgress = KATPUSHINGCSTRING(metoprolol,5ml,30);
+    };
     class syringe_MorphineIV_5ml_10: syringe_EACA_5ml_10 {
         medicRequired = QGVAR(medLvl_morphineIV);
         items[] = {"kat_syringe_morphineIV_5ml_10"};

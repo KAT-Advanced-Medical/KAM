@@ -6001,5 +6001,77 @@
         <Key ID="STR_KAT_Pharma_ABG_Log">
             <English>Results: %1</English>
         </Key>
+        <Key ID="STR_KAT_Pharma_Push_metoprolol_5ml_10">
+            <English>Push 5mg Metoprolol</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_Pushing_metoprolol_5ml_10">
+            <English>Pushing 5mg Metoprolol</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_SyringeDisplay_metoprolol_5ml_10">
+            <English>5ml Syringe / 5mg Metoprolol</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_Push_metoprolol_5ml_20">
+            <English>Push 10mg Metoprolol</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_Pushing_metoprolol_5ml_20">
+            <English>Pushing 10mg Metoprolol</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_SyringeDisplay_metoprolol_5ml_20">
+            <English>5ml Syringe / 10mg Metoprolol</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_Push_metoprolol_5ml_30">
+            <English>Push 15mg Metoprolol</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_Pushing_metoprolol_5ml_30">
+            <English>Pushing 15mg Metoprolol</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_SyringeDisplay_metoprolol_5ml_30">
+            <English>5ml Syringe / 15mg Metoprolol</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_Push_diazepam_5ml_10">
+            <English>Push 2mg Diazepam</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_Pushing_diazepam_5ml_10">
+            <English>Pushing 2mg Diazepam</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_SyringeDisplay_diazepam_5ml_10">
+            <English>5ml Syringe / 2mg Diazepam</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_Push_diazepam_5ml_20">
+            <English>Push 5mg Diazepam</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_Pushing_diazepam_5ml_20">
+            <English>Pushing 5mg Diazepam</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_SyringeDisplay_diazepam_5ml_20">
+            <English>5ml Syringe / 5mg Diazepam</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_Push_diazepam_5ml_30">
+            <English>Push 10mg Diazepam</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_Pushing_diazepam_5ml_30">
+            <English>Pushing 10mg Diazepam</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_SyringeDisplay_diazepam_5ml_30">
+            <English>5ml Syringe / 10mg Diazepam</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_Diazepam_Box_Display">
+            <English>Vial: Diazepam</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_Diazepam_DescShort">
+            <English>Used to reduce Respiratory Rate</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_Metoprolol_Box_Display">
+            <English>Vial: Metoprolol</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_Metoprolol_DescShort">
+            <English>Used to reduce heart rate</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_medLvl_Metoprolol">
+            <English>Medical level required for Metoprolol</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_medLvl_Diazepam">
+            <English>Medical level required for Diazepam</English>
+        </Key>
     </Package>
 </Project>

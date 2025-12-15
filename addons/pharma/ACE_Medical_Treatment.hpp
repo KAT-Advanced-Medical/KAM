@@ -810,6 +810,29 @@ class ACE_ADDON(Medical_Treatment) {
             dose = 1;
             maximumEffectiveDose = 30;
         };
+        class syringe_Metoprolol_5ml  {
+            painReduce = 0.0;
+            hrIncreaseLow[] = {-7, -13};
+            hrIncreaseNormal[] = {-10, -17};
+            hrIncreaseHigh[] = {-15, -20};
+            timeInSystem = 300;
+            timeTillMaxEffect = 2;
+            dose = 1;
+            alphaFactor = 0.15;
+            weightDose = 20;
+            maximumEffectiveDose = 30;
+        };
+        class syringe_Diazepam_5ml  {
+            painReduce = 0;
+            hrIncreaseLow[] = {-2, 0};
+            hrIncreaseNormal[] = {-3, -5};
+            hrIncreaseHigh[] = {-5, -8};
+            timeInSystem = 180;
+            timeTillMaxEffect = 5;
+            dose = 1; 
+            respiratoryRate = -0.20;
+            maximumEffectiveDose = 30;
+        };
         class syringe_Alteplase_5ml_30 {
             painReduce = 0;
             hrIncreaseLow[] = {-4, -10};
@@ -1071,6 +1094,20 @@ class ACE_ADDON(Medical_Treatment) {
         class syringe_Sugammadex  {
             maxDose = 30;
             maxDoseDeviation = 10;
+            incompatibleMedication[] = {};
+            onOverDose = "";
+            maximumEffectiveDose = 30;
+        };
+        class syringe_Metoprolol  {
+            maxDose = 30;
+            maxDoseDeviation = 20;
+            incompatibleMedication[] = {};
+            onOverDose = "";
+            maximumEffectiveDose = 30;
+        };
+        class syringe_Diazepam  {
+            maxDose = 30;
+            maxDoseDeviation = 20;
             incompatibleMedication[] = {};
             onOverDose = "";
             maximumEffectiveDose = 30;
