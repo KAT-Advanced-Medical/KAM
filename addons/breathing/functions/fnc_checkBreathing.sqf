@@ -35,7 +35,7 @@ private _breathRate = "RR: ";
 
 
 private _respiratoryDepth = _patient getVariable [QEGVAR(vitals,respiratoryDepth), 10];
-if (_respiratoryDepth < 8.5) then {
+if (_respiratoryDepth < 9) then {
     _breathing = LLSTRING(breathing_isShallow);
     _breathing_log = LLSTRING(breathing_shallow);
 };

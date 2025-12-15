@@ -257,7 +257,7 @@ if ((IN_CRDC_ARRST(_unit)) || !_airway || _paralysis) then {
     _unit setVariable [QGVAR(breathingState), 0, true];
     _respiratoryRate = (((_demandVentilation / _baseTidalVolume) * _respiratoryRateMult) min (MAXIMUM_RR * _respiratoryRateMult));
 
-    if (!_patternApplied && (_previousCyclePaco2 > 50)) then { _respiratoryRate = (_respiratoryRate + ((_previousCyclePaco2 - 50) * 0.2)) min (MAXIMUM_RR * _respiratoryRateMult)};
+    if (!_patternApplied && (_previousCyclePaco2 > 50)) then { _respiratoryRate = (_respiratoryRate + ((_previousCyclePaco2 - 50) * 0.2)) min ((MAXIMUM_RR * _respiratoryRateMult) min 60)};
 
     _tidalVolume = _baseTidalVolume;
     if (_respiratoryRate > 25) then {
