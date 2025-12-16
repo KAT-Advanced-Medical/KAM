@@ -87,6 +87,8 @@ if (_patient getVariable ["kat_AEDXPatient_PFH", -1] isEqualTo -1) then {
         private _isSPO2Damaged = [_patient,_partIndex2] call EFUNC(hitpoints,damageCheck);
         private _isSPO2Occluded = [_patient,_partIndex2] call EFUNC(pharma,occlusionCheck);
         if (_isSPO2Occluded || _isSPO2Damaged) then {
+            _spO2 = 0;
+        } else {
             _spO2 = GET_KAT_SPO2(_patient);
         };
         

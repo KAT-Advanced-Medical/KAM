@@ -219,7 +219,7 @@ class ACE_Medical_Treatment_Actions {
     class Inspect: Carbonate {
         displayName = CSTRING(Inspect_Catheter);
         category = "examine";
-        allowedSelections[] = {"Neck", "Chest", "LeftArm", "RightArm", "UpperLeftArm", "UpperRightArm", "UpperLeftLeg", "UpperRightLeg", "LeftLeg", "RightLeg"};
+        allowedSelections[] = {"Neck", "LeftArm", "RightArm", "UpperLeftLeg", "UpperRightLeg"};
         allowSelfTreatment = 1;
         medicRequired = 1;
         treatmentTime = 2;

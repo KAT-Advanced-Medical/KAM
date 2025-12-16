@@ -811,15 +811,14 @@ class ACE_ADDON(Medical_Treatment) {
             maximumEffectiveDose = 30;
         };
         class syringe_Metoprolol_5ml  {
-            painReduce = 0.0;
-            hrIncreaseLow[] = {-7, -13};
-            hrIncreaseNormal[] = {-10, -17};
-            hrIncreaseHigh[] = {-15, -20};
+            painReduce = 0;
+            hrIncreaseLow[] = {-5, -15};
+            hrIncreaseNormal[] = {-5, -20};
+            hrIncreaseHigh[] = {-5, -20};
             timeInSystem = 300;
-            timeTillMaxEffect = 2;
+            timeTillMaxEffect = 5;
             dose = 1;
-            alphaFactor = 0.15;
-            weightDose = 20;
+            alphaFactor = -0.15;
             maximumEffectiveDose = 30;
         };
         class syringe_Diazepam_5ml  {
