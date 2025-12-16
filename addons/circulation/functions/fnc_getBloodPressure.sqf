@@ -67,8 +67,12 @@ if (count _BPChange > 0) then {
         _changeDiastolic = _changeDiastolic + (_x select 1);
     } forEach _BPChange;
 };
-
-private _systolic = _bloodPressure * MODIFIER_BP_LOW;
-private _diastolic = _bloodPressure * MODIFIER_BP_HIGH;
+private _hr = GET_HEART_RATE(_unit);
+private _baseHR = _unit getVariable [QGVAR(defaultHeartRate), 80];
+private _delta = _hr - _baseHR;
+private _penalty = exp(-(((_delta max 0)^2) / (20^2) + ((_delta min 0)^2) / (30^2)));
+private _bpMult = (0.4 + 0.6 * _penalty) min 1;
+private _systolic = _bloodPressure * MODIFIER_BP_LOW * _bpMult;
+private _diastolic = _bloodPressure * MODIFIER_BP_HIGH * _bpMult;
 TRACE_2("BP2",_diastolic,_systolic);
 [(round(_systolic + _changeSystolic * (_systolic / 80)) max 0), (round(_diastolic + _changeDiastolic * (_diastolic / 120)) max 0)]
