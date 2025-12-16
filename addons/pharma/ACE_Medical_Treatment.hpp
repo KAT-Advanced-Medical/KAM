@@ -811,10 +811,10 @@ class ACE_ADDON(Medical_Treatment) {
             maximumEffectiveDose = 30;
         };
         class syringe_Metoprolol_5ml  {
-            painReduce = 0;
-            hrIncreaseLow[] = {-5, -15};
-            hrIncreaseNormal[] = {-5, -20};
-            hrIncreaseHigh[] = {-5, -20};
+            painReduce = 0.0;
+            hrIncreaseLow[] = {-4, -11};
+            hrIncreaseNormal[] = {-8, -16};
+            hrIncreaseHigh[] = {-12, -20};
             timeInSystem = 300;
             timeTillMaxEffect = 5;
             dose = 1;
@@ -825,7 +825,7 @@ class ACE_ADDON(Medical_Treatment) {
             painReduce = 0;
             hrIncreaseLow[] = {-2, 0};
             hrIncreaseNormal[] = {-3, -5};
-            hrIncreaseHigh[] = {-5, -8};
+            hrIncreaseHigh[] = {-3, -5};
             timeInSystem = 180;
             timeTillMaxEffect = 5;
             dose = 1; 
