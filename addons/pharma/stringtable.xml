@@ -1730,7 +1730,7 @@
             <Dutch>Injecteer Nalbufine</Dutch>
         </Key>
         <Key ID="STR_KAT_Pharma_Nalbuphine_Box_Display">
-            <English>Nalbuphine</English>
+            <English>Vial: Nalbuphine</English>
             <Chinesesimp>纳布啡</Chinesesimp>
             <Italian>Nalbufina (Nubain)</Italian>
             <Czech>Nalbufin</Czech>
@@ -2944,7 +2944,7 @@
             <Dutch>Schakelt geadvanceerde coagulatie functies in, en veranderd het gedrag van TXA en EACA naar behoren</Dutch>
         </Key>
         <Key ID="STR_KAT_Pharma_EACA_Display">
-            <English>EACA</English>
+            <English>Vial: EACA</English>
             <Italian>EACA (Acido aminocaproico Epsilon)</Italian>
             <Czech>EACA</Czech>
             <French>Acide aminocaproïque</French>
@@ -4074,7 +4074,7 @@
             <Italian>Epinefrina IV</Italian>
         </Key>
         <Key ID="STR_KAT_Pharma_EpinephrineIV_displayName">
-            <English>Epinephrine IV</English>
+            <English>Vial: Epinephrine</English>
             <Japanese>アドレナリン静脈注射 (IV)</Japanese>
             <Spanish>Epinefrina IV</Spanish>
             <Dutch>IV Adrenaline</Dutch>
