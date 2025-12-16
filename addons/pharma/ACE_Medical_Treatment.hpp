@@ -829,7 +829,7 @@ class ACE_ADDON(Medical_Treatment) {
             timeInSystem = 180;
             timeTillMaxEffect = 5;
             dose = 1; 
-            respiratoryRate = -0.20;
+            respiratoryRate = -0.25;
             maximumEffectiveDose = 30;
         };
         class syringe_Alteplase_5ml_30 {
@@ -1098,7 +1098,7 @@ class ACE_ADDON(Medical_Treatment) {
             maximumEffectiveDose = 30;
         };
         class syringe_Metoprolol  {
-            maxDose = 30;
+            maxDose = 40;
             maxDoseDeviation = 20;
             incompatibleMedication[] = {};
             onOverDose = "";
