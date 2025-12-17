@@ -180,7 +180,7 @@ if (_isInCA && ((_IVarray select _partIndex) in [2,3,4,10,11,12]) && !_isFlushed
         };
     private _routeMult = 1;
         if ((_IVarray select _partIndex) in [1, 13]) then {
-            _routeMult = random [0.7, 0.8, 1];
+            _routeMult = random [0.7, 0.85, 1];
         };
     private _hemocrit = 1;
         if (_bloodBased == "true") then {
