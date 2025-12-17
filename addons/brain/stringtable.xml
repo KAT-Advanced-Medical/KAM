@@ -46,5 +46,17 @@
         <Key ID="STR_KAT_Brain_setting_necrosisincrease">
             <English>Necrosis Increase Amount</English>
         </Key>
+        <Key ID="STR_KAT_Brain_Check_ICP_Output">
+            <English>%1 found an optic nerve sheath of %2mm</English>
+        </Key>
+        <Key ID="STR_KAT_Brain_Check_ICP_OutputMod">
+            <English>%1 found an optic nerve sheath of %2mm</English>
+        </Key>
+        <Key ID="STR_KAT_Brain_UltraICP_Use">
+            <English>Measure Optic Nerve Sheath</English>
+        </Key>
+        <Key ID="STR_KAT_Brain_UltraICP_Action">
+            <English>Measuring Optic Nerve Sheath</English>
+        </Key>
     </Package>
 </Project>

@@ -5,6 +5,7 @@
 
 [QEGVAR(misc,handleRespawn), LINKFUNC(handleRespawn)] call CBA_fnc_addEventHandler;
 [QACEGVAR(medical_treatment,fullHealLocalMod), LINKFUNC(fullHealLocal)] call CBA_fnc_addEventHandler;
+[QGVAR(icpAssessment), LINKFUNC(icpAssessmentLocal)] call CBA_fnc_addEventHandler;
 
 GVAR(concussionRinging) = 0;
 GVAR(concussionRingingPrior) = 0;

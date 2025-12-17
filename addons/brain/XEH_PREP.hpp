@@ -6,4 +6,6 @@ PREP(handleAutoregulation);
 PREP(handleBrainActivity);
 PREP(handleEarRinging);
 PREP(handleRespawn);
+PREP(icpAssessment);
+PREP(icpAssessmentLocal);
 PREP(init);
