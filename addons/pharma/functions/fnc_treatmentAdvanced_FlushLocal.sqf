@@ -29,7 +29,7 @@ if ([7,8,9] find _IVactual != -1) then {
     };
 _patient setVariable [QGVAR(IV), _IVarray, true];
 
-private _occludedMedications = _patient getVariable [QGVAR(occludedCAMedications), []];
+private _occludedMedications = _patient getVariable [QACEGVAR(medical,occludedMedications), []];
 
 private _occludedFlushed = false;
 
@@ -52,5 +52,5 @@ if ([_patient, _partIndex] call FUNC(occlusionCheck)) exitWith {};
 
 if (_occludedFlushed) then {
     _occludedMedications = _occludedMedications - [[]];
-    _patient setVariable [QGVAR(occludedCAMedications), _occludedMedications, true];
+    _patient setVariable [QACEGVAR(medical,occludedMedications), _occludedMedications, true];
 };

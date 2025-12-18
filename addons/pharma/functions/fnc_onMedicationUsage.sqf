@@ -37,7 +37,10 @@ TRACE_3("onMedicationUsage",_target,_className,_incompatibleMedication);
 
         if (_maxDoseFixed > 0) then {
             private _maxDoseDeviation = GET_NUMBER(_medicationConfig >> "maxDoseDeviation",getNumber (_defaultConfig >> "maxDoseDeviation"));
-            private _currentDose = [_target, _className] call ACEFUNC(medical_status,getMedicationCount) select 0;
+            private _doseArray = [_target, _className] call ACEFUNC(medical_status,getMedicationCount);
+            private _dose = _doseArray select 0;
+            private _doseEffectivness = _doseArray select 1;
+            private _currentDose = _dose * _doseEffectivness;
             TRACE_2("onMedUsage2",_currentDose,_className);
             // Because both {floor random 0} and {floor random 1} return 0
             if (_maxDoseDeviation > 0) then {
@@ -67,7 +70,10 @@ TRACE_3("onMedicationUsage",_target,_className,_incompatibleMedication);
         TRACE_2("onMedUsage1",_maxDoseFixed,_classname);
         if (_maxDoseFixed > 0) then {
         private _maxDoseDeviation = GET_NUMBER(_medicationConfig >> "maxDoseDeviation",getNumber (_defaultConfig >> "maxDoseDeviation"));
-        private _currentDose = [_target, _className] call ACEFUNC(medical_status,getMedicationCount) select 0;
+        private _doseArray = [_target, _className] call ACEFUNC(medical_status,getMedicationCount);
+        private _dose = _doseArray select 0;
+        private _doseEffectivness = _doseArray select 1;
+        private _currentDose = _dose * _doseEffectivness;
         TRACE_2("onMedUsage2",_currentDose,_classname);
         // Because both {floor random 0} and {floor random 1} return 0
         if (_maxDoseDeviation > 0) then {

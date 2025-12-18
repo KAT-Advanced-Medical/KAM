@@ -12,3 +12,9 @@ GVAR(concussionRingingPrior) = 0;
 ["CBA_settingsInitialized", {
     [LINKFUNC(handleEarRinging), 1, false] call CBA_fnc_addPerFrameHandler;
 }] call CBA_fnc_addEventHandler;
+
+["multiplier", {
+    if (ACE_player getVariable [QGVAR(concussion), 0] > 0) then {
+        1 max (1 + ((ACE_player getVariable [QGVAR(concussion), 0]) * 2))
+    } else {1};
+}, QUOTE(ADDON)] call ACEFUNC(common,addSwayFactor);

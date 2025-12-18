@@ -66,9 +66,9 @@ private _partIndex = ALL_BODY_PARTS find toLower _bodyPart;
 private _IVarray = _patient getVariable [QGVAR(IV), [0,0,0,0,0,0,0,0,0,0,0,0]];
 // Handle IV blockage
 if ([7,8,9] find (_IVarray select _partIndex) != -1) exitWith {
-    private _occludedMedications = _patient getVariable [QACEGVAR(medical,occludedMedications), []];
+    private _occludedMedications = _patient getVariable [QGVAR(occludedMedications), []];
     _occludedMedications pushBack [_partIndex, _classname, _patient];
-    _patient setVariable [QACEGVAR(medical,occludedMedications), _occludedMedications, true];
+    _patient setVariable [QGVAR(occludedMedications), _occludedMedications, true];
 };
 private _tourniquets = GET_TOURNIQUETS(_patient);
 private _occlusionMap = [
@@ -105,12 +105,12 @@ if (_isOccluded) exitWith {
     _occludedMedications pushBack [_partIndex, _classname, _patient];
     _patient setVariable [QACEGVAR(medical,occludedMedications), _occludedMedications, true];
 };
-private _isInCA = _patient getVariable [QACEGVAR(medical,inCardiacArrest), false];
+private _isInCA = (_patient getVariable [QACEGVAR(medical,inCardiacArrest), false] && !(alive (_patient getVariable [QACEGVAR(medical,CPR_provider), objNull])));
 if (_isInCA && ((_IVarray select _partIndex) in [2,3,4,10,11,12]) && !_isFlushed) exitWith {
     TRACE_3("Medication injection site is occluded by CA",_partIndex,_classname,_patient);
-    private _occludedCAMedications = _patient getVariable [QGVAR(occludedCAMedications), []];
-    _occludedCAMedications pushBack [_partIndex, _classname, _patient];
-    _patient setVariable [QGVAR(occludedCAMedications), _occludedCAMedications, true];
+    private _occludedMedications = _patient getVariable [QACEGVAR(medical,occludedMedications), []];
+    _occludedMedications pushBack [_partIndex, _classname, _patient];
+    _patient setVariable [QACEGVAR(medical,occludedMedications), _occludedMedications, true];
 };
 
 // Get adjustment attributes for used medication
@@ -189,7 +189,36 @@ if (_isInCA && ((_IVarray select _partIndex) in [2,3,4,10,11,12]) && !_isFlushed
             _hemocrit = (GET_BODY_FLUID_ECP(_patient)/GET_BODY_FLUID_ECB(_patient)) / (DEFAULT_ECP/DEFAULT_ECB)
         };
     private _unitMedEffectivness = _patient getVariable [QGVAR(medicationEffectivness), 1];
-    private _drugMult = ((((GET_BLOOD_VOLUME_LITERS(_patient) / DEFAULT_BLOOD_VOLUME) * _hemocrit) max 0.2) min 2) * _weightMult * _doseMult * _unitMedEffectivness * _routeMult;
+    private _drugMult = 1;
+    if (_classname == "Diazapam") then {
+        private _diazapamMult = 1;
+        private _medStack = _patient call ACEFUNC(medical_status,getAllMedicationCount);
+        private _medsToCheck = ["fentanyl", "ketamine", "nalbuphine", "morphine"];
+        private _fentanylEffectiveness = 0;
+        private _nalbuphineEffectiveness = 0;
+        private _morphineEffectiveness = 0;
+        {
+            private _medName = toLower (_x select 0);
+            private _effectiveness = _x select 2;
+            private _dose = _x select 1;
+            if ("fentanyl" in _medName) then {
+                _fentanylEffectiveness = _fentanylEffectiveness max (_dose * _effectiveness);
+            };
+            if ("nalbuphine" in _medName) then {
+                _nalbuphineEffectiveness = _nalbuphineEffectiveness max (_dose * _effectiveness);
+            };
+            if ("morphine" in _medName) then {
+                _morphineEffectiveness = _morphineEffectiveness max (_dose * _effectiveness);
+            };
+            if ("lorazepam" in _medName) then {
+                _lorazepamEffectiveness = _lorazepamEffectiveness max (_dose * _effectiveness);
+            };
+        } forEach _medStack;
+        private _diazapamMult = linearConversion [0, 90, (_fentanylEffectiveness + _nalbuphineEffectiveness + _morphineEffectiveness * _lorazepamEffectiveness), 1, 4, true];
+        _drugMult = ((((GET_BLOOD_VOLUME_LITERS(_patient) / DEFAULT_BLOOD_VOLUME) * _hemocrit) max 0.2) min 2) * _weightMult * _doseMult * _unitMedEffectivness * _routeMult * _diazapamMult;
+    } else {
+        _drugMult = ((((GET_BLOOD_VOLUME_LITERS(_patient) / DEFAULT_BLOOD_VOLUME) * _hemocrit) max 0.2) min 2) * _weightMult * _doseMult * _unitMedEffectivness * _routeMult;
+    };
     TRACE_7("_drugMult",_patient,_defaultHeartRate,(GET_BLOOD_VOLUME_LITERS(_patient) / DEFAULT_BLOOD_VOLUME),_drugMult,_weightMult,_doseMult,_unitMedEffectivness);
     _painReduce             = GET_NUMBER(_medicationConfig >> "painReduce",getNumber (_defaultConfig >> "painReduce")) * _drugMult;
     _timeInSystem           = GET_NUMBER(_medicationConfig >> "timeInSystem",getNumber (_defaultConfig >> "timeInSystem")) * _drugMult;

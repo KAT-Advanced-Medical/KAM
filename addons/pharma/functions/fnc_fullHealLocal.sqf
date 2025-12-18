@@ -71,7 +71,8 @@ _patient setVariable [QGVAR(respiratoryRate), 1, true];
 _patient setVariable [QGVAR(heartContractility), 1, true];
 _patient setVariable [QGVAR(nauseaMult), 1, true];
 _patient setVariable [QGVAR(medicationEffectivness), [_patient] call FUNC(generateMedicationEffectivness), true];
-_patient setVariable [QGVAR(occludedMedications), [], true];
+_patient setVariable [QGVAR(occludedCAMedications), [], true];
+_patient setVariable [QGVAR(occludedBlockMedications), [], true];
 _patient setVariable [VAR_LOCAL_ANESTHESIA, DEFAULT_LOCAL_ANESTHESIA, true];
 _patient setVariable [QGVAR(activeEtomidateLoadingDose), false, true];
 
