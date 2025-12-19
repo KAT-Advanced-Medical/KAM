@@ -58,5 +58,9 @@
         <Key ID="STR_KAT_Brain_UltraICP_Action">
             <English>Measuring Optic Nerve Sheath</English>
         </Key>
+        <Key ID="STR_KAT_Brain_check_icp_output_log">
+            <English>Measuring Optic Nerve Sheath</English>
+        </Key>
+        
     </Package>
 </Project>

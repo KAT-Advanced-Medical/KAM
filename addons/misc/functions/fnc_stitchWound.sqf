@@ -67,12 +67,25 @@ if (_treatedWound isEqualTo []) then {
 if (_woundIndex == -1) exitWith { false };
 
 // Remove wound from the correct array
-switch (_treatedSource) do {
-    case "bandaged": { _bandagedWoundsOnPart deleteAt _woundIndex };
-    case "wrapped":  { _wrappedWoundsOnPart  deleteAt _woundIndex };
-    case "coag":     { _coagWoundsOnPart     deleteAt _woundIndex };
+private _sourceArray = switch (_treatedSource) do {
+    case "bandaged": { _bandagedWoundsOnPart };
+    case "wrapped":  { _wrappedWoundsOnPart };
+    case "coag":     { _coagWoundsOnPart };
 };
 
+_treatedWound params ["_treatedID", "_treatedAmountOf", "", "_treatedDamageOf"];
+
+// Amount stitched this action
+private _stitchedAmount = _treatedAmountOf min 1;
+
+// Reduce wound amount
+private _remaining = _treatedAmountOf - _stitchedAmount;
+
+if (_remaining <= 0) then {
+    _sourceArray deleteAt _woundIndex;
+} else {
+    _treatedWound set [1, _remaining];
+};
 // Extract wound data
 _treatedWound params ["_treatedID", "_treatedAmountOf", "", "_treatedDamageOf"];
 
@@ -86,10 +99,12 @@ private _stitchedIndex = _stitchedWoundsOnPart findIf {
 };
 
 if (_stitchedIndex == -1) then {
-    _stitchedWoundsOnPart pushBack _treatedWound;
+    private _newStitched = +_treatedWound;
+    _newStitched set [1, _stitchedAmount];
+    _stitchedWoundsOnPart pushBack _newStitched;
 } else {
     private _existingWound = _stitchedWoundsOnPart select _stitchedIndex;
-    _existingWound set [1, (_existingWound select 1) + _treatedAmountOf];
+    _existingWound set [1, (_existingWound select 1) + _stitchedAmount];
 };
 
 // Clear trauma if enabled

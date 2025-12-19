@@ -41,7 +41,7 @@ private _stitchableWounds = createHashMap;
         private _filteredWounds = _y select {
             _x params ["_woundClassID", "_amountOf", "_bleedingRate", "", "_type"];
             !(_type in _unstitchableTypes);
-            _totalAmount = _totalAmount + _amountOf;
+            _totalAmount = _totalAmount + (_amountOf max 1);
         };
 
         if (_filteredWounds isNotEqualTo []) then {
@@ -55,7 +55,7 @@ private _stitchableWounds = createHashMap;
         private _filteredWounds = _y select {
             _x params ["_woundClassID", "_amountOf", "_bleedingRate", "", "_type"];
             !(_type in _unstitchableTypes);
-            _totalAmount = _totalAmount + _amountOf;
+            _totalAmount = _totalAmount + (_amountOf max 1);
         };
 
         if (_filteredWounds isNotEqualTo []) then {
@@ -69,7 +69,7 @@ private _stitchableWounds = createHashMap;
         private _filteredWounds = _y select {
             _x params ["_woundClassID", "_amountOf", "_bleedingRate", "", "_type"];
             !(_type in _unstitchableTypes);
-            _totalAmount = _totalAmount + _amountOf;
+            _totalAmount = _totalAmount + (_amountOf max 1);
         };
 
         if (_filteredWounds isNotEqualTo []) then {

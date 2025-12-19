@@ -31,7 +31,7 @@ private _stitchableWounds = _bandagedWounds select {
     
     private _classIndex = _woundClassID / 10;
     private _className = ACEGVAR(medical_damage,woundClassNames) select _classIndex;
-    _amountOf = _amountOf + _amountOfWounds;
+    _amountOf = _amountOf + (_amountOfWounds max 1);
     !(_type in _unstitchableTypes) && !(_className in ["InternalBleeding", "Evisceration", "Thermal_Burn"]);
 };
 
@@ -40,7 +40,7 @@ private _stitchableClottedWounds = _clottedWounds select {
     
     private _classIndex = _woundClassID / 10;
     private _className = ACEGVAR(medical_damage,woundClassNames) select _classIndex;
-    _amountOf = _amountOf + _amountOfWounds;
+    _amountOf = _amountOf + (_amountOfWounds max 1);
     !(_type in _unstitchableTypes) && !(_className in ["InternalBleeding", "Evisceration", "Thermal_Burn"]);
 };
 
@@ -49,7 +49,7 @@ private _stitchableWrappedWounds = _wrappedWounds select {
     
     private _classIndex = _woundClassID / 10;
     private _className = ACEGVAR(medical_damage,woundClassNames) select _classIndex;
-    _amountOf = _amountOf + _amountOfWounds;
+    _amountOf = _amountOf + (_amountOfWounds max 1);;
     !(_type in _unstitchableTypes) && !(_className in ["InternalBleeding", "Evisceration", "Thermal_Burn"]);
 };
 TRACE_1("AmountOf",_amountOf);

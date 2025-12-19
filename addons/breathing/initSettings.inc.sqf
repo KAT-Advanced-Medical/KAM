@@ -290,14 +290,6 @@
     true
 ] call CBA_fnc_addSetting;
 
-[
-    QGVAR(medLvl_hemopneumothoraxTreatment),
-    "LIST",
-    [LLSTRING(HEMOPNEUMOTHORAX_TREATMENT_LEVEL), LLSTRING(HEMOPNEUMOTHORAX_TREATMENT_LEVEL_DESCRIPTION)],
-    [CBA_SETTINGS_CAT, LSTRING(SubCategory_ThoraxInjuries)],
-    [[0, 1, 2], ["STR_ACE_Medical_Treatment_Anyone", "STR_ACE_Medical_Treatment_Medics", "STR_ACE_Medical_Treatment_Doctors"], 0],
-    true
-] call CBA_fnc_addSetting;
 
 //Damage Threshold for Pneumothorax
 [
@@ -326,16 +318,6 @@
     [LLSTRING(SETTING_deepPenetratingInjuryChance), LLSTRING(SETTING_deepPenetratingInjuryChance_DESC)],
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_ThoraxInjuries)],
     [0, 100, 30, 0, false],
-    true
-] call CBA_fnc_addSetting;
-
-// Sets how much internal bleeding is applied while suffering from hemopneumothorax
-[
-    QGVAR(HPTXBleedAmount),
-    "SLIDER",
-    [LLSTRING(SETTING_HPTX_BleedAmount), LLSTRING(SETTING_HPTX_BleedAmount_DESC)],
-    [CBA_SETTINGS_CAT, LSTRING(SubCategory_ThoraxInjuries)],
-    [0, 1, 0.06, 2],
     true
 ] call CBA_fnc_addSetting;
 

@@ -23,7 +23,7 @@ private _cTStatus = LSTRING(chestTubeStatus_ClearDry_short);
 private _hintWidth = 17;
 private _hintSize = 2;
 switch (true) do {
-        case (_drain > 0.03): {
+        case (_drain > 0.02): {
             _hintWidth = 17;
             _hintcTStatus = LLSTRING(chestTubeStatus_HeavyDrain);
             _cTStatus = LSTRING(chestTubeStatus_HeavyDrain_short);
@@ -33,12 +33,12 @@ switch (true) do {
             _hintcTStatus = LLSTRING(chestTubeStatus_NormalDrain);
             _cTStatus = LSTRING(chestTubeStatus_NormalDrain_short);
         };
-        case (_drain > 0.010): {
+        case (_drain > 0.01): {
             _hintWidth = 17;
             _hintcTStatus = LLSTRING(chestTubeStatus_SlowDrain);
             _cTStatus = LSTRING(chestTubeStatus_SlowDrain_short);
         };
-        case (_drain < 0.010): {
+        case (_drain < 0.01): {
             _hintWidth = 17;
             _hintcTStatus = LLSTRING(chestTubeStatus_MinimalDrain);
             _cTStatus = LSTRING(chestTubeStatus_MinimalDrain_short);

@@ -8,7 +8,7 @@ PREP_RECOMPILE_END;
 
 #define CBA_SETTINGS_CAT "KAT - ADV Medical: Advanced States"
 
-//Enable transitions to seizure state
+/*//Enable transitions to seizure state
 [
     QGVAR(enableSeizure),
     "CHECKBOX",
@@ -36,7 +36,7 @@ PREP_RECOMPILE_END;
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_Seizures)],
     [5, 180, 120, 0],
     true
-] call CBA_Settings_fnc_init;
+] call CBA_Settings_fnc_init;*/
 
 // Overwrite ace statemachine
 ACEGVAR(medical,STATE_MACHINE) = (configFile >> "KAT_StateMachine") call CBA_statemachine_fnc_createFromConfig;
