@@ -37,8 +37,9 @@ _patient setVariable [QGVAR(ventRate), 2, true];
 _patient setVariable [QGVAR(BVM_amount), 0, true];
 _patient setVariable [QGVAR(BVM_provider), 0, true];
 _patient setVariable [QGVAR(bronchospasm), 1, true];
-_patient setVariable [QGVAR(cushingTimer), 0, true];
-_patient setVariable [QGVAR(cheynePhase), 0, true];
+_patient setVariable [QGVAR(biotTimer), 0, true];
+_patient setVariable [QGVAR(biotState), "", true];
+_patient setVariable [QGVAR(agonalTimer), 0, true];
 
 
 if (ACEGVAR(advanced_fatigue,enabled)) then {
