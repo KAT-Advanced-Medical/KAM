@@ -53,11 +53,11 @@ if (((_target getVariable [QGVAR(catastrophicAirway), [false, false]] select 1) 
     private _text = LSTRING(Catastrophic_Display);
     _entries pushBack [localize _text, [1, 0, 0, 1]];
 };
-if ((((_target getVariable [QGVAR(occlusion), [0, 0, 0]]) select 0) != -1) && (_selectionN isEqualTo 0) && (_target getVariable [QGVAR(hasPuked), false])) then{
+if ((((_target getVariable [QGVAR(occlusion), [0, 0, 0]]) select 0) > 0) && (_selectionN isEqualTo 0) && (_target getVariable [QGVAR(hasPuked), false])) then{
     private _text = LSTRING(BloodVomitAirway_Display);
     _entries pushBack [localize _text, [1, 0, 0, 1]];
 } else {
-    if ((((_target getVariable [QGVAR(occlusion), [0, 0, 0]]) select 0) != -1) && (_selectionN isEqualTo 0)) then {
+    if ((((_target getVariable [QGVAR(occlusion), [0, 0, 0]]) select 0) > 0) && (_selectionN isEqualTo 0)) then {
     private _text = LSTRING(BloodAirway_Display);
     _entries pushBack [localize _text, [1, 0, 0, 1]];
     };

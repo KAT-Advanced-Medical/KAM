@@ -35,10 +35,10 @@ if ((_target getVariable [QGVAR(AED_X_VitalsMonitor_Connected), false] || _targe
         _entries pushBack [_entry, [1, 1, 1, 1]];
     };   
 };
-if ((_target getVariable [QGVAR(attachedLucasState), false] == true) && (_target getVariable [QGVAR(attachedLucas), false]) && (_selectionN isEqualTo 2)) then {
+if ((_target getVariable [QGVAR(attachedLucasState), false]) && (_target getVariable [QGVAR(attachedLucas), false]) && (_selectionN isEqualTo 2)) then {
     _entries pushBack [LLSTRING(LucasActive), [0.3, 0.8, 0.8, 1]];
 };
 
-if ((_target getVariable [QGVAR(attachedLucasState), false] == false) && (_target getVariable [QGVAR(attachedLucas), false]) && (_selectionN isEqualTo 2)) then {
+if (!(_target getVariable [QGVAR(attachedLucasState), false]) && (_target getVariable [QGVAR(attachedLucas), false]) && (_selectionN isEqualTo 2)) then {
     _entries pushBack [LLSTRING(LucasInactive), [0.3, 0.8, 0.8, 1]];
 };

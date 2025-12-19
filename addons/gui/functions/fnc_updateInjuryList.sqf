@@ -182,37 +182,37 @@ private _NorepinephrineIVInfusion = 0;
 
 if (_totalIvVolume > 0) then {
     if (_saline > 0) then {
-        _entries pushBack [format [localize ACELSTRING(medical_treatment,receivingSalineIvVolume), floor _saline], [1, 1, 1, 1]];
+        _entries pushBack [format [localize ACELSTRING(medical_treatment,receivingSalineIvVolume), floor _saline], [0.388,0.584,0.933,1]];
     };
     if (_blood > 0) then {
-        _entries pushBack [format [localize ACELSTRING(medical_treatment,receivingBloodIvVolume), floor _blood], [1, 1, 1, 1]];
+        _entries pushBack [format [localize ACELSTRING(medical_treatment,receivingBloodIvVolume), floor _blood], [0.58,0.133,0.133,1]];
     };
     if (_plasma > 0) then {
-        _entries pushBack [format [localize ACELSTRING(medical_treatment,receivingPlasmaIvVolume), floor _plasma], [1, 1, 1, 1]];
+        _entries pushBack [format [localize ACELSTRING(medical_treatment,receivingPlasmaIvVolume), floor _plasma], [0.827,0.686,0.216,1]];
     };
     if (_ringers > 0) then {
-        _entries pushBack [format [localize ELSTRING(pharma,receivingRingers_LactateIvVolume), floor _ringers], [1, 1, 1, 1]];
+        _entries pushBack [format [localize ELSTRING(pharma,receivingRingers_LactateIvVolume), floor _ringers], [0.388,0.584,0.933,1]];
     };
     if (_packedRBC > 0) then {
-        _entries pushBack [format [localize ELSTRING(pharma,receivingPacked_RBCIvVolume), floor _packedRBC], [1, 1, 1, 1]];
+        _entries pushBack [format [localize ELSTRING(pharma,receivingPacked_RBCIvVolume), floor _packedRBC], [0.58,0.133,0.133,1]];
     };
     if (_DoxapramIVInfusion > 0) then {
-        _entries pushBack [format [localize ELSTRING(pharma,receivingDoxapramIVInfusionVolume), floor _DoxapramIVInfusion], [1, 1, 1, 1]];
+        _entries pushBack [format [localize ELSTRING(pharma,receivingDoxapramIVInfusionVolume), floor _DoxapramIVInfusion], [0.878,0.69,1,1]];
     };
     if (_EpinephrineIVInfusion > 0) then {
-        _entries pushBack [format [localize ELSTRING(pharma,receivingEpinephrineIVInfusionVolume), floor _EpinephrineIVInfusion], [1, 1, 1, 1]];
+        _entries pushBack [format [localize ELSTRING(pharma,receivingEpinephrineIVInfusionVolume), floor _EpinephrineIVInfusion], [0.878,0.69,1,1]];
     };
     if (_EtomidateIVInfusion > 0) then {
-        _entries pushBack [format [localize ELSTRING(pharma,receivingEtomidateIVInfusionVolume), floor _EtomidateIVInfusion], [1, 1, 1, 1]];
+        _entries pushBack [format [localize ELSTRING(pharma,receivingEtomidateIVInfusionVolume), floor _EtomidateIVInfusion], [0.878,0.69,1,1]];
     };
     if (_MorphineIVInfusion > 0) then {
-        _entries pushBack [format [localize ELSTRING(pharma,receivingMorphineIVInfusionVolume), floor _MorphineIVInfusion], [1, 1, 1, 1]];
+        _entries pushBack [format [localize ELSTRING(pharma,receivingMorphineIVInfusionVolume), floor _MorphineIVInfusion], [0.878,0.69,1,1]];
     };
     if (_NitroglycerinIVInfusion > 0) then {
-        _entries pushBack [format [localize ELSTRING(pharma,receivingNitroglycerinIVInfusionVolume), floor _NitroglycerinIVInfusion], [1, 1, 1, 1]];
+        _entries pushBack [format [localize ELSTRING(pharma,receivingNitroglycerinIVInfusionVolume), floor _NitroglycerinIVInfusion], [0.878,0.69,1,1]];
     };
     if (_NorepinephrineIVInfusion > 0) then {
-        _entries pushBack [format [localize ELSTRING(pharma,receivingNorepinephrineIVInfusionVolume), floor _NorepinephrineIVInfusion], [1, 1, 1, 1]];
+        _entries pushBack [format [localize ELSTRING(pharma,receivingNorepinephrineIVInfusionVolume), floor _NorepinephrineIVInfusion], [0.878,0.69,1,1]];
     };
 } else {
     _entries pushBack [localize ACELSTRING(medical_treatment,Status_NoIv), _nonissueColor];
