@@ -29,5 +29,6 @@ if ((floor (random 100) < (GVAR(advPtxChance)) || _deteriorated) && !(_tensionSt
     private _ht = _unit getVariable [QEGVAR(circulation,ht), []];
     if ((_ht findIf {_x isEqualTo "tension"}) == -1) then {
     _ht pushBack "tension";
+    _unit setVariable [QEGVAR(circulation,ht), _ht, true];
     };
 };

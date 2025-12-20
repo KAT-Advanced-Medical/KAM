@@ -47,10 +47,8 @@ _unit setVariable [QEGVAR(circulation,effusion), 1, true];
                         if (_unit getVariable [QEGVAR(circulation,cardiacArrestType), 0] == 0) then {
                             [QACEGVAR(medical,FatalVitals), _unit] call CBA_fnc_localEvent;
                         };
-
                         _unit setVariable [QEGVAR(circulation,ht), _ht, true];
                     };
-
                     [_idPFH] call CBA_fnc_removePerFrameHandler;
                 };
 

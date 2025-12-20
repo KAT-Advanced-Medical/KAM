@@ -32,12 +32,13 @@ if (_engineDamage < GVAR(pneumothoraxDamageThreshold) || _unit getVariable ["KAT
 
 private _chanceIncrease = 0;
 if (GVAR(pneumothoraxDamageThreshold_TakenDamage)) then {
-    _chanceIncrease = linearConversion [GVAR(pneumothoraxDamageThreshold), 3, _engineDamage, 0, 30, true];
+    _chanceIncrease = linearConversion [GVAR(pneumothoraxDamageThreshold), 6, _engineDamage, 0, 30, true];
 };
 private _side = selectRandom [0, 1];
 // Damage threshold passed & pneumothorax given
 if (floor (random 100) < (GVAR(hptxChance) + _chanceIncrease)) then {
-    [_unit, _side] call FUNC(handleHemothoraxDeterioration);
+    private _amount = linearConversion [1, 9, _engineDamage, 1, 5, true];
+    [_unit, _side, _amount] call FUNC(handleHemothoraxDeterioration);
 };
 if (floor (random 100) < (GVAR(pneumothoraxChance) + _chanceIncrease)) then {
     private _pneumothoraxState = _unit getVariable [QGVAR(pneumothorax), [0, 0]];

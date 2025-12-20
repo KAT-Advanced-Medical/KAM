@@ -178,7 +178,7 @@ switch (_usedItem) do {
     case "kat_EJV": {
         if (random 100 < (GVAR(IVFailures) * 2)) then {
             [_patient, [0.4, 0.5, 0.7] select (floor random 3)] call ACEFUNC(medical_status,adjustPainLevel);
-            if (random 100 < 20) then {
+            if (random 100 < 5) then {
                     private _pneumothoraxState = _patient getVariable [QGVAR(pneumothorax), [0, 0]];
                     private _tensionState = _patient getVariable [QGVAR(tensionpneumothorax), [false, false]];
                     private _side = selectRandom [0, 1];
@@ -186,24 +186,48 @@ switch (_usedItem) do {
                         _tensionState set [_side, true];
                         _patient setVariable [QEGVAR(breathing,tensionpneumothorax), _tensionState, true];
                         if !(_patient getVariable [QEGVAR(breathing,activeChestSeal), [false, false]] select _side) then {
-                            _pneumothoraxState set [_side, (((_pneumothoraxState select _side) + 1) min 16)];
+                            _pneumothoraxState set [_side, (((_pneumothoraxState select _side) + 2) min 16)];
                             _patient setVariable [QEGVAR(breathing,pneumothorax), _pneumothoraxState, true];
                         };
                         [_patient, _side] call EFUNC(breathing,handlePneumothoraxDeterioration);
                         private _ht = _patient getVariable [QEGVAR(circulation,ht), []];
                         if ((_ht findIf {_x isEqualTo "tension"}) == -1) then {
                             _ht pushBack "tension";
+                            _patient setVariable [QEGVAR(circulation,ht), _ht, true];
                             };
                         if (_patient getVariable [QEGVAR(circulation,cardiacArrestType), 0] == 0) then {
                         [QACEGVAR(medical,FatalVitals), _patient] call CBA_fnc_localEvent;
                         };  
-                    };     
+                    } else {
+                        if !(_patient getVariable [QEGVAR(breathing,activeChestSeal), [false, false]] select _side) then {
+                            _pneumothoraxState set [_side, (((_pneumothoraxState select _side) + 2) min 16)];
+                            _patient setVariable [QEGVAR(breathing,pneumothorax), _pneumothoraxState, true];
+                        };
+                        [_patient, _side] call EFUNC(breathing,handlePneumothoraxDeterioration);
+                    };
             };
         } else {
         _IVarray set [_partIndex, 14];
         _IVrate set [_partIndex, 0.8];
         _patient setVariable [QGVAR(IV), _IVarray, true];
         _patient setVariable [QGVAR(IVrate), _IVrate, true];
+        [{
+            params ["_args", "_idPFH"];
+            _args params ["_patient"];
+            if !((alive _patient) || ((abs (speed _patient) > 9.9) && (isNull objectParent _patient))) exitWith {
+                [_idPFH] call CBA_fnc_removePerFrameHandler;
+                private _IVarray = _patient getVariable [QGVAR(IV), [0,0,0,0,0,0,0,0,0,0,0,0]];
+                private _IVrate = _patient getVariable [QGVAR(IVrate), [0,0,0,0,0,0,0,0,0,0,0,0]];
+                _IVarray set [1, 0];
+                _IVrate set [1, 0];
+                _patient setVariable [QGVAR(IV), _IVarray, true];
+                _patient setVariable [QGVAR(IVrate), _IVrate, true];
+                if (random 100 < 25) then {
+                    private _side = selectRandom [0, 1];
+                    [_patient, _side, 1] call EFUNC(breathing,handleHemothoraxDeterioration);
+                };
+            };
+        }, 1, [_patient]] call CBA_fnc_addPerFrameHandler;
         [_patient, "activity", LSTRING(iv_log), [[_medic] call ACEFUNC(common,getName), "EJV"]] call ACEFUNC(medical_treatment,addToLog);
         [_patient, "EJV"] call ACEFUNC(medical_treatment,addToTriageCard);};};
     default {};
