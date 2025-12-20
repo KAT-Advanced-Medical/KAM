@@ -66,8 +66,7 @@ if (!isNil {_unit getVariable [QACEGVAR(medical,ivBags),[]]}) then {
         private _idx = _occlusionMap findIf { _x#0 == _bodyPart };
         private _result = if (_idx != -1) then { _occlusionMap select _idx select 1 } else { [] };
         private _isOccluded = ({ _tourniquets select _x != 0 } count _result > 0) && (_IVarray select _bodyPart isNotEqualTo 13);
-        private _isDamaged = [_unit,_bodyPart] call EFUNC(hitpoints,damageCheck);
-        if ((!_isOccluded) && (!_isDamaged) && ([7,8,9,15] find (_IVarray select _bodyPart) == -1)) then {
+        if ((!_isOccluded) && ([7,8,9,15] find (_IVarray select _bodyPart) == -1)) then {
             if (_type in ["Blood", "Saline", "Plasma", "Ringers Lactate", "PackedRBC"]) then {
             private _IVflow = _unit getVariable [QGVAR(IVflow), [0,0,0,0,0,0,0,0,0,0,0,0]];
             private _IVrate = _unit getVariable [QGVAR(IVrate), [0,0,0,0,0,0,0,0,0,0,0,0]];
@@ -192,6 +191,15 @@ if (!isNil {_unit getVariable [QACEGVAR(medical,ivBags),[]]}) then {
                     };
                 };
             };
+            
+            private _damageAmount = [_unit,_idx] call EFUNC(hitpoints,damageAmount);
+            if ((_damageAmount > GVAR(ivLeakageThreshold)) && GVAR(ivCheckLimbDamage)) then {
+                _lostFluids = linearConversion [GVAR(ivLeakageThreshold), 50, _damageAmount, 1, 0, true];
+                _ECP = _ECB * _lostFluids;
+                _ECP = _ECP * _lostFluids;
+                _platelets = _platelets * _lostFluids;
+                _ISP = _ISP * _lostFluids;
+            };
         } else {
             private _IVflow = _unit getVariable [QGVAR(IVflow), [0,0,0,0,0,0,0,0,0,0,0,0]];
             private _IVrate = _unit getVariable [QGVAR(IVrate), [0,0,0,0,0,0,0,0,0,0,0,0]];
@@ -259,6 +267,12 @@ if (!isNil {_unit getVariable [QACEGVAR(medical,ivBags),[]]}) then {
                 _lossVolumeChange = _lossVolumeChange + (_bagChange / 2000);
                     } else {
                 { _ECP = _ECP + _bagChange; _lossVolumeChange = _lossVolumeChange + (_bagChange / ML_TO_LITERS); };
+            };
+            private _damageAmount = [_unit,_idx] call EFUNC(hitpoints,damageAmount);
+            if ((_damageAmount > GVAR(ivLeakageThreshold)) && GVAR(ivCheckLimbDamage)) then {
+                _lostFluids = linearConversion [GVAR(ivLeakageThreshold), 50, _damageAmount, 1, 0, true];
+                _ECP = _ECP * _lostFluids;
+                _ISP = _ISP * _lostFluids;
             };
         };
     };

@@ -22,6 +22,7 @@ PREP(checkJoints);
 PREP(convertTourniquet);
 PREP(convertTourniquetCheck);
 PREP(convertTourniquetTime);
+PREP(damageAmount);
 PREP(damageCheck);
 PREP(determineIfFatal);
 PREP(fullHealLocal);

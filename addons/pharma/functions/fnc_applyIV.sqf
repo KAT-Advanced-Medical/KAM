@@ -28,6 +28,11 @@ private _IVactual = _IVarray select _partIndex;
 private _IVpfh = _patient getVariable [QGVAR(IVpfh), [0,0,0,0,0,0,0,0,0,0,0,0]];
 private _IVpfhActual = _IVpfh select _partIndex;
 private _IVrate = _patient getVariable [QGVAR(IVrate), [0,0,0,0,0,0,0,0,0,0,0,0]];
+private _fractureArray = GET_FRACTURES(_patient);
+private _liveFracture = _fractureArray select _partIndex;
+private _damage = GET_BODYPART_DAMAGE(_patient);
+private _bodypartDamage = _damage select _partIndex;
+private _damageFixed = linearConversion [GVAR(ivDamageThreshold), 40, _bodypartDamage, 1, 4, true];
 
 if (_IVpfhActual > 0) then {
     [_IVpfhActual] call CBA_fnc_removePerFrameHandler;
@@ -41,8 +46,17 @@ if (_IVpfhActual > 0) then {
 };
 switch (_usedItem) do {
     case "kat_IV_16": {
+        if (GVAR(ivCheckLimbDamage) && (_bodypartDamage > GVAR(ivDamageThreshold)) && (random 100 < (25 * _damageFixed))) exitWith {
+            [_patient, [0.2, 0.3, 0.4] select (floor random 3)] call ACEFUNC(medical_status,adjustPainLevel);
+            [LLSTRING(failedToPlaceIV), 1.5, _medic] call ACEFUNC(common,displayTextStructured);
+        };
+        if (GVAR(ivCheckLimbDamage) && (_liveFracture != 0) && (random 100 < 33)) exitWith {
+            [_patient, [0.2, 0.3, 0.4] select (floor random 3)] call ACEFUNC(medical_status,adjustPainLevel);
+            [LLSTRING(failedToPlaceIV), 1.5, _medic] call ACEFUNC(common,displayTextStructured);
+        };
         if (random 100 < GVAR(IVFailures)) then {
             [_patient, [0.2, 0.3, 0.4] select (floor random 3)] call ACEFUNC(medical_status,adjustPainLevel);
+            [LLSTRING(failedToPlaceIV), 1.5, _medic] call ACEFUNC(common,displayTextStructured);
         } else {
         _IVarray set [_partIndex, 2];
         _IVrate set [_partIndex, 1];
@@ -52,8 +66,17 @@ switch (_usedItem) do {
         [_patient, "16g IV"] call ACEFUNC(medical_treatment,addToTriageCard);};};
         
     case "kat_IV_14": {
+        if (GVAR(ivCheckLimbDamage) && (_bodypartDamage > GVAR(ivDamageThreshold)) && (random 100 < (25 * _damageFixed))) exitWith {
+            [_patient, [0.2, 0.3, 0.4] select (floor random 3)] call ACEFUNC(medical_status,adjustPainLevel);
+            [LLSTRING(failedToPlaceIV), 1.5, _medic] call ACEFUNC(common,displayTextStructured);
+        };
+        if (GVAR(ivCheckLimbDamage) && (_liveFracture != 0) && (random 100 < 33)) exitWith {
+            [_patient, [0.2, 0.3, 0.4] select (floor random 3)] call ACEFUNC(medical_status,adjustPainLevel);
+            [LLSTRING(failedToPlaceIV), 1.5, _medic] call ACEFUNC(common,displayTextStructured);
+        };
         if (random 100 < GVAR(IVFailures)) then {
             [_patient, [0.2, 0.3, 0.4] select (floor random 3)] call ACEFUNC(medical_status,adjustPainLevel);
+            [LLSTRING(failedToPlaceIV), 1.5, _medic] call ACEFUNC(common,displayTextStructured);
         } else {     
         _IVarray set [_partIndex, 3];
         _IVrate set [_partIndex, 1.5];
@@ -63,8 +86,17 @@ switch (_usedItem) do {
         [_patient, "14g IV"] call ACEFUNC(medical_treatment,addToTriageCard);};};
 
     case "kat_IV_20": {
+        if (GVAR(ivCheckLimbDamage) && (_bodypartDamage > GVAR(ivDamageThreshold)) && (random 100 < (25 * _damageFixed))) exitWith {
+            [_patient, [0.2, 0.3, 0.4] select (floor random 3)] call ACEFUNC(medical_status,adjustPainLevel);
+            [LLSTRING(failedToPlaceIV), 1.5, _medic] call ACEFUNC(common,displayTextStructured);
+        };
+        if (GVAR(ivCheckLimbDamage) && (_liveFracture != 0) && (random 100 < 33)) exitWith {
+            [_patient, [0.2, 0.3, 0.4] select (floor random 3)] call ACEFUNC(medical_status,adjustPainLevel);
+            [LLSTRING(failedToPlaceIV), 1.5, _medic] call ACEFUNC(common,displayTextStructured);
+        };
         if (random 100 < GVAR(IVFailures)) then {
             [_patient, [0.2, 0.3, 0.4] select (floor random 3)] call ACEFUNC(medical_status,adjustPainLevel);
+            [LLSTRING(failedToPlaceIV), 1.5, _medic] call ACEFUNC(common,displayTextStructured);
         } else {      
         _IVarray set [_partIndex, 4];
         _IVrate set [_partIndex, 0.5];
@@ -125,6 +157,14 @@ switch (_usedItem) do {
         [_patient, "FAST IO"] call ACEFUNC(medical_treatment,addToTriageCard);};
 
     case "kat_EZ_IO": {
+        if (GVAR(ivCheckLimbDamage) && (_bodypartDamage > GVAR(ivDamageThreshold)) && (random 100 < (20 * _damageFixed))) exitWith {
+            [_patient, [0.6, 0.7, 0.8] select (floor random 3)] call ACEFUNC(medical_status,adjustPainLevel);
+            [LLSTRING(failedToPlaceIO), 1.5, _medic] call ACEFUNC(common,displayTextStructured);
+        };
+        if (GVAR(ivCheckLimbDamage) && (_liveFracture != 0)) exitWith {
+            [_patient, [0.6, 0.7, 0.8] select (floor random 3)] call ACEFUNC(medical_status,adjustPainLevel);
+            [LLSTRING(failedToPlaceIO), 1.5, _medic] call ACEFUNC(common,displayTextStructured);
+        };
         _IVarray set [_partIndex, 13];
         _IVrate set [_partIndex, 0.4];
         _patient setVariable [QGVAR(IV), _IVarray, true];
@@ -179,7 +219,7 @@ switch (_usedItem) do {
         if (random 100 < (GVAR(IVFailures) * 2)) then {
             [_patient, [0.4, 0.5, 0.7] select (floor random 3)] call ACEFUNC(medical_status,adjustPainLevel);
             if (random 100 < 5) then {
-                    private _pneumothoraxState = _patient getVariable [QGVAR(pneumothorax), [0, 0]];
+                    private _pneumothoraxState = _patient getVariable [QEGVAR(breathing,pneumothorax), [0, 0]];
                     private _tensionState = _patient getVariable [QGVAR(tensionpneumothorax), [false, false]];
                     private _side = selectRandom [0, 1];
                     if (floor (random 100) < GVAR(tptxChance)) then {
@@ -214,7 +254,7 @@ switch (_usedItem) do {
         [{
             params ["_args", "_idPFH"];
             _args params ["_patient"];
-            if !((alive _patient) || ((abs (speed _patient) > 9.9) && (isNull objectParent _patient))) exitWith {
+            if (!alive _patient || (abs (speed _patient) > 9.9 && isNull objectParent _patient)) exitWith {
                 [_idPFH] call CBA_fnc_removePerFrameHandler;
                 private _IVarray = _patient getVariable [QGVAR(IV), [0,0,0,0,0,0,0,0,0,0,0,0]];
                 private _IVrate = _patient getVariable [QGVAR(IVrate), [0,0,0,0,0,0,0,0,0,0,0,0]];
@@ -225,7 +265,7 @@ switch (_usedItem) do {
                 if (random 100 < 25) then {
                     private _side = selectRandom [0, 1];
                     [_patient, _side, 1] call EFUNC(breathing,handleHemothoraxDeterioration);
-                };
+                }
             };
         }, 1, [_patient]] call CBA_fnc_addPerFrameHandler;
         [_patient, "activity", LSTRING(iv_log), [[_medic] call ACEFUNC(common,getName), "EJV"]] call ACEFUNC(medical_treatment,addToLog);

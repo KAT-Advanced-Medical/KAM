@@ -45,9 +45,8 @@ private _bodyExternalPartBleeding = [0,0,0,0,0,0,0,0,0,0,0,0];
     private _isOccluded = { _tourniquets select _x >= 1 } count _result > 0;
     private _occlusionLevel = if (_result isNotEqualTo []) then { selectMax (_result apply { _tourniquets select _x }) } else { 0 };
 
-    private _resultDamage = if (_idx != -1) then { _occlusionMap select _idx select 1 } else { [] };
-    private _damagedLevel = if (_resultDamage isNotEqualTo []) then { selectMax (_resultDamage apply { _damage select _x }) } else { 0 };
-    private _damageFixed = linearConversion [0, 40, _damagedLevel, 0, 1, true];
+    private _damageAmount = [_unit,_idx] call EFUNC(hitpoints,damageAmount);
+    private _damageFixed = linearConversion [0, 40, _damageAmount, 0, 1, true];
     private _isPressureApplied = _pressureApplied > 0;
     if (!_isOccluded) then {
         private _partBleeding = 0;

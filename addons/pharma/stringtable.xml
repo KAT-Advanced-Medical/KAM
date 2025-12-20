@@ -4208,19 +4208,19 @@
             <English>IV Complications</English>
         </Key>
         <Key ID="STR_KAT_Pharma_IVComplications_Desc">
-            <English>Enables negative effects when overpushing fluids</English>
+            <English>Enables whole body negative effects when overpushing fluids</English>
         </Key>
         <Key ID="STR_KAT_Pharma_LimbIVComplications">
             <English>Limb IV Complications</English>
         </Key>
         <Key ID="STR_KAT_Pharma_LimbIVComplications_Desc">
-            <English>Enables failure to place IVs</English>
+            <English>Enables IV complications from overpushing fluids including blown veins and cannulas</English>
         </Key>
         <Key ID="STR_KAT_Pharma_IVFailures">
             <English>IV Failure Rate</English>
         </Key>
         <Key ID="STR_KAT_Pharma_IVFailures_Desc">
-            <English>Chance for a failed IV placement</English>
+            <English>Chance for a failed IV placement without taking damage or fractures into account</English>
         </Key>
         <Key ID="STR_KAT_Pharma_treatmentTime_SalineFlush">
             <English>Time to preform a Saline Flush</English>
@@ -6072,6 +6072,27 @@
         </Key>
         <Key ID="STR_KAT_Pharma_medLvl_Diazepam">
             <English>Medical level required for Diazepam</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_SubCategory_Medications">
+            <English>Medication Settings</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_failedtoplaceiv">
+            <English>Failed to place IV</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_failedtoplaceio">
+            <English>Failed to place IO</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_setting_ivdamagethreshold">
+            <English>IV Damage Threshold</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_setting_ivdamagethreshold_desc">
+            <English>Baseline threshold for a limb to be considered "Too damaged" to place an IV in</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_setting_ivleakagethreshold">
+            <English>IV Leakage Threshold</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_setting_ivleakagethreshold_desc">
+            <English>Threshold for a limb to be considered damaged and cause leakage</English>
         </Key>
     </Package>
 </Project>
