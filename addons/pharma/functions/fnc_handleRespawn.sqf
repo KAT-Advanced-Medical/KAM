@@ -20,80 +20,77 @@ params ["_unit","_dead"];
 
 [_unit] call FUNC(fullHealLocal);
 
-[{
-    params ["_args", "_idPFH"];
-    _args params ["_unit"];
-
-    private _alive = alive _unit;
-
-    if (!_alive) exitWith {
-        [_idPFH] call CBA_fnc_removePerFrameHandler;
-    };
-
-    private _medicationArray = _unit getVariable [QACEGVAR(medical,medications), []];
-    private _action = false;
-
-    {
-        _x params ["_medication"];
-
-        if (_medication in ["Epinephrine", "EpinephrineIV", "Phenylephrine", "Nitroglycerin", "Lidocaine", "Norepinephrine", "syringe_norepinephrine_5ml_1", "syringe_norepinephrine_5ml_2", "syringe_phenylephrine_5ml_1", "syringe_phenylephrine_5ml_2", "syringe_nitroglycerin_5ml_1", "syringe_nitroglycerin_5ml_2", "syringe_epinephrineIV_5ml_1", "syringe_epinephrineIV_5ml_2", "syringe_lidocaine_5ml_1", "syringe_lidocaine_5ml_2","syringe_lidocaine_10ml_1"]) exitWith {
-            _action = true;
-        };
-    } forEach (_medicationArray);
-
-    if !(_action) then {
-        _unit setVariable [QGVAR(alphaAction), 1];
-    };
-}, 180, [_unit]] call CBA_fnc_addPerFrameHandler;
-
 if (GVAR(kidneyAction)) then {
+
     [{
         params ["_args", "_idPFH"];
         _args params ["_unit"];
 
-        private _alive = alive _unit;
-
-        if (!_alive) exitWith {
+        if (!alive _unit) exitWith {
             [_idPFH] call CBA_fnc_removePerFrameHandler;
         };
 
-        private _ph = _unit getVariable [QGVAR(externalPh), 0];
+        private _externalPh = _unit getVariable [QEGVAR(pharma,externalPh), 0];
+        private _bloodPH = (GET_PH(_unit)) max 6.5;
+
+        private _damage = _unit getVariable [QGVAR(kidneyDamage), 0];
         private _kidneyFail = _unit getVariable [QGVAR(kidneyFail), false];
         private _kidneyArrest = _unit getVariable [QGVAR(kidneyArrest), false];
         private _kidneyPressure = _unit getVariable [QGVAR(kidneyPressure), false];
 
-        switch true do {
-            case(_ph == 3000): {
-                if (_ph == 3000) exitWith {
-                    _unit setVariable [QGVAR(kidneyFail), true, true];
-                    _unit setVariable [QGVAR(kidneyArrest), true, true];
-                };
-            };
-            case (_ph >= 2000): {
-                _unit setVariable [QGVAR(kidneyFail), true, true];
+        /*
+            RENAL CLEARANCE OF METABOLIC ACID
+        */
+        if (!_kidneyFail && {_externalPh > 0}) then {
 
-                if !(_kidneyArrest) then {
-                    private _random = random 1;
-        
-                    if (_random >= 0.75) then {
-                        [QACEGVAR(medical,FatalVitals), _unit] call CBA_fnc_localEvent;
-                        _unit setVariable [QGVAR(kidneyArrest), true, true];
-                    };
-                };
-            };
-            case (_ph >= 1000): {
-                _ph = (_ph - 30) max 0;
-                _unit setVariable [QGVAR(externalPh), _ph, true];
-    
-                if !(_kidneyPressure) then {
-                    _unit setVariable [QGVAR(kidneyPressure), true, true];
-                    [_unit, "KIDNEY", 15, 1200, 30, 0, 15] call EFUNC(vitals,addMedicationAdjustment);
-                };
-            };
-            default {
-                _ph = (_ph - 60) max 0;
-                _unit setVariable [QGVAR(externalPh), _ph, true];
+            private _baseClearance = 6; // slower, realistic
+            private _phStress = linearConversion [7.4, 7.1, _bloodPH, 1, 2.2, true];
+            private _damageMult = 1 - _damage;
+
+            private _clearance =
+                _baseClearance
+                * _phStress
+                * _damageMult;
+
+            _externalPh = (_externalPh - _clearance) max 0;
+            _unit setVariable [QEGVAR(pharma,externalPh), _externalPh, true];
+        };
+
+        /*
+            RENAL DAMAGE FROM SUSTAINED ACIDOSIS
+        */
+        if (_bloodPH < 7.25) then {
+
+            private _rate = linearConversion [7.25, 6.9, _bloodPH, 0.0008, 0.01, true];
+            _damage = (_damage + _rate) min 1;
+        };
+
+        /*
+            RENAL FAILURE
+        */
+        if (_damage >= 0.7 && !_kidneyFail) then {
+            _unit setVariable [QGVAR(kidneyFail), true, true];
+        };
+
+        /*
+            FLUID / PRESSURE EFFECTS
+        */
+        if (_kidneyFail && !_kidneyPressure) then {
+            _unit setVariable [QGVAR(kidneyPressure), true, true];
+            [_unit, "KIDNEY", 12, 1200, 25, 0, 12] call EFUNC(vitals,addMedicationAdjustment);
+        };
+
+        /*
+            TERMINAL METABOLIC ACIDOSIS
+        */
+        if (_bloodPH < 6.9 && !_kidneyArrest) then {
+            if (random 1 < 0.35) then {
+                [QACEGVAR(medical,FatalVitals), _unit] call CBA_fnc_localEvent;
+                _unit setVariable [QGVAR(kidneyArrest), true, true];
             };
         };
+
+        _unit setVariable [QGVAR(kidneyDamage), _damage, true];
+
     }, 20, [_unit]] call CBA_fnc_addPerFrameHandler;
 };

@@ -67,6 +67,8 @@ _patient setVariable [QGVAR(opioidDepression), 0, true];
 _patient setVariable [QGVAR(kidneyFail), false, true];
 _patient setVariable [QGVAR(kidneyArrest), false, true];
 _patient setVariable [QGVAR(kidneyPressure), false, true];
+_patient setVariable [QGVAR(kidneyDamage), 0, true];
+_patient setVariable [QGVAR(hemolysisPFH), -1, true];
 _patient setVariable [QGVAR(respiratoryRate), 1, true];
 _patient setVariable [QGVAR(heartContractility), 1, true];
 _patient setVariable [QGVAR(nauseaMult), 1, true];

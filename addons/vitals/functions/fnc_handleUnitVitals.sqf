@@ -106,35 +106,63 @@ private _nauseaMultAdjustment = 1;
 private _sedationAdjustment = 0;
 private _paralysisAdjustment = 0;
 private _effectRatio = 0;
+
 private _adjustments = _unit getVariable [VAR_MEDICATIONS,[]];
+
+private _ph = GET_PH(_unit);
+private _metabolismMult = linearConversion [7.4, 7.0, _ph, 1.0, 0.4, true];
+private _onsetMult = linearConversion [7.4, 7.0, _ph, 1.0, 1.6, true];
+
+_effectiveDose = 1;
+if (_ph < 7.1) then {
+    _effectiveDose = linearConversion [7.1, 6.8, _ph, 1.0, 1.4, true];;
+};
+
 TRACE_1("HUV",_adjustments);
+
 if (_adjustments isNotEqualTo []) then {
     private _deleted = false;
+
     {
-        _x params ["_medication", "_timeAdded", "_timeTillMaxEffect", "_maxTimeInSystem", "_hrAdjust", "_painAdjust", "_flowAdjust", "_dose", "_alphaFactor", "_opioidRelief", "_opioidEffect", "_opioidDepression", "_respiratoryRate", "_contractility", "_nauseaMult", "_sedation", "_paralysis", "_linear"];
+        _x params [
+            "_medication", "_timeAdded", "_timeTillMaxEffect", "_maxTimeInSystem",
+            "_hrAdjust", "_painAdjust", "_flowAdjust", "_dose", "_alphaFactor",
+            "_opioidRelief", "_opioidEffect", "_opioidDepression",
+            "_respiratoryRate", "_contractility", "_nauseaMult",
+            "_sedation", "_paralysis", "_linear"
+        ];
+
+        private _scaledMaxTime = _maxTimeInSystem / _metabolismMult;
+        private _scaledTimeToMax = _timeTillMaxEffect * _onsetMult;
         private _timeInSystem = CBA_missionTime - _timeAdded;
-        if (_timeInSystem >= _maxTimeInSystem) then {
+
+        if (_timeInSystem >= _scaledMaxTime) then {
             _deleted = true;
             _adjustments set [_forEachIndex, objNull];
         } else {
+
             if (_linear == "true") then {
                 _effectRatio = 1;
             } else {
-                _effectRatio = (((_timeInSystem / _timeTillMaxEffect) ^ 2) min 1) * (_maxTimeInSystem - _timeInSystem) / _maxTimeInSystem;
+                _effectRatio =
+                    (((_timeInSystem / _scaledTimeToMax) ^ 2) min 1)
+                    * ((_scaledMaxTime - _timeInSystem) / _scaledMaxTime);
             };
-            if (_hrAdjust != 0) then { _hrTargetAdjustment = _hrTargetAdjustment + _hrAdjust * _effectRatio; };
-            if (_painAdjust != 0) then { _painSupressAdjustment = _painSupressAdjustment + _painAdjust * _effectRatio; };
-            if (_flowAdjust != 0) then { _peripheralResistanceAdjustment = _peripheralResistanceAdjustment + _flowAdjust * _effectRatio; };
-            if (_alphaFactor != 0) then { _alphaFactorAdjustment = _alphaFactorAdjustment + _alphaFactor * _effectRatio; };
-            if (_opioidRelief != 0) then {_opioidAdjustment = _opioidAdjustment + _opioidRelief * _effectRatio; };
-            if (_opioidEffect != 0) then {_opioidEffectAdjustment = _opioidEffectAdjustment + _opioidEffect * _effectRatio; };
-            if (_opioidDepression != 0) then {_opioidDepressionAdjustment = _opioidAdjustment + _opioidDepression * _effectRatio; };
-            if (_respiratoryRate != 0) then {_respiratoryRateAdjustment = _respiratoryRateAdjustment + _respiratoryRate * _effectRatio; };
-            if (_contractility != 0) then {_contractilityAdjustment = _contractilityAdjustment + _contractility * _effectRatio; };
-            if (_nauseaMult != 0) then {_nauseaMultAdjustment = (_nauseaMultAdjustment + (_nauseaMult * _effectRatio)) max 0.1; };
-            if (_sedation == "true") then {_sedationAdjustment = (_sedationAdjustment + (1 * _effectRatio)) min 1; };
-            if (_paralysis == "true") then {_paralysisAdjustment = (_paralysisAdjustment + (1 * _effectRatio)) min 1; };
+
+            if (_hrAdjust != 0) then { _hrTargetAdjustment = _hrTargetAdjustment + _hrAdjust * _effectRatio * _effectiveDose; };
+            if (_painAdjust != 0) then { _painSupressAdjustment = _painSupressAdjustment + _painAdjust * _effectRatio * _effectiveDose; };
+            if (_flowAdjust != 0) then { _peripheralResistanceAdjustment = _peripheralResistanceAdjustment + _flowAdjust * _effectRatio * _effectiveDose; };
+            if (_alphaFactor != 0) then { _alphaFactorAdjustment = _alphaFactorAdjustment + _alphaFactor * _effectRatio * _effectiveDose; };
+            if (_opioidRelief != 0) then { _opioidAdjustment = _opioidAdjustment + _opioidRelief * _effectRatio * _effectiveDose; };
+            if (_opioidEffect != 0) then { _opioidEffectAdjustment = _opioidEffectAdjustment + _opioidEffect * _effectRatio * _effectiveDose; };
+            if (_opioidDepression != 0) then { _opioidDepressionAdjustment = _opioidDepressionAdjustment + _opioidDepression * _effectRatio * _effectiveDose; };
+            if (_respiratoryRate != 0) then { _respiratoryRateAdjustment = _respiratoryRateAdjustment + _respiratoryRate * _effectRatio * _effectiveDose; };
+            if (_contractility != 0) then { _contractilityAdjustment = _contractilityAdjustment + _contractility * _effectRatio * _effectiveDose; };
+            if (_nauseaMult != 0) then { _nauseaMultAdjustment = (_nauseaMultAdjustment + (_nauseaMult * _effectRatio)) max 0.1; };
+            if (_sedation == "true") then { _sedationAdjustment = (_sedationAdjustment + (1 * _effectRatio)) min 1; };
+            if (_paralysis == "true") then { _paralysisAdjustment = (_paralysisAdjustment + (1 * _effectRatio)) min 1; };
         };
+
     } forEach _adjustments;
 
     if (_deleted) then {
@@ -142,6 +170,7 @@ if (_adjustments isNotEqualTo []) then {
         _syncValues = true;
     };
 };
+
 
 [_unit, _painSupressAdjustment, _deltaT, _syncValues] call ACEFUNC(medical_vitals,updatePainSuppress); //Leave alone
 [_unit, _peripheralResistanceAdjustment, _deltaT, _syncValues] call ACEFUNC(medical_vitals,updatePeripheralResistance);
