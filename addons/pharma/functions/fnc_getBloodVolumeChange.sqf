@@ -49,7 +49,7 @@ if (!isNil {_unit getVariable [QACEGVAR(medical,ivBags),[]]}) then {
     private _fluidHeat = 0;
 
     _bloodBags = _bloodBags apply {
-        _x params ["_bagVolumeRemaining", "_type", "_bodyPart", "_treatment", "_rateCoef", "_item", "_plateletAmount", "_phChange"];
+        _x params ["_bagVolumeRemaining", "_type", "_bodyPart", "_treatment", "_rateCoef", "_item", "_plateletAmount", "_phChange", "_caChange"];
 
         private _tourniquets = GET_TOURNIQUETS(_unit);
         private _occlusionMap = [
@@ -142,8 +142,11 @@ if (!isNil {_unit getVariable [QACEGVAR(medical,ivBags),[]]}) then {
             };
             // Plasma adds to ECP. Saline splits between the ECP and ISP. Blood adds to ECB/ECP
             private _ph = _unit getVariable [QGVAR(externalPh), 0];
-            private _ph = (_ph + (_phChange * _bagChange));
+            private _ph = (_ph + (_phChange * (_bagChange/100)));
             _unit setVariable [QGVAR(externalPh), _ph];
+            private _ca = _unit getVariable [QGVAR(externalCa), 0];
+            private _ca = (_ca + (_caChange * (_bagChange/100)));
+            _unit setVariable [QGVAR(externalCa), _ca];
             switch (true) do {
                 case(_type == "Plasma"): {
                     _ECP = _ECP + _bagChange; _lossVolumeChange = _lossVolumeChange + (_bagChange / ML_TO_LITERS); 

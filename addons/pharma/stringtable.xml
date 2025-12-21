@@ -3952,40 +3952,16 @@
             <Italian>INR normale</Italian>
         </Key>
         <Key ID="STR_KAT_Pharma_SubCategory_Coag_Sense">
-            <English>Coag-Sense Settings</English>
-            <Japanese>Coag-Sense設定</Japanese>
-            <Spanish>Ajustes de Coag-Sense</Spanish>
-            <Portuguese>Configuração do Medidor de Coagulação</Portuguese>
-            <Dutch>Coag-Sense instellingen</Dutch>
-            <French>Paramètres du Coag-Sense</French>
-            <Italian>Impostazioni Coag-Sense</Italian>
+            <English>Blood Tester Settings</English>
         </Key>
         <Key ID="STR_KAT_Pharma_SETTING_CheckCoag_MedLevel">
-            <English>Medical level required for Coag-Sense</English>
-            <Japanese>Coag-Senseの許可</Japanese>
-            <Spanish>Nivel médico requerido para Coag-Sense</Spanish>
-            <Portuguese>Nível médico necessário para uso do Medidor de Coagulação</Portuguese>
-            <Dutch>Vereist medisch niveau voor gebruik Coag-Sense</Dutch>
-            <French>Niveau médical requis du Coag-Sense</French>
-            <Italian>Livello medico richiesto per Coag-Sense</Italian>
+            <English>Medical level required for Blood Tester</English>
         </Key>
         <Key ID="STR_KAT_Pharma_SETTING_CheckCoag_Location">
-            <English>Locations Coag-Sense</English>
-            <Japanese>Coag-Senseが使用できる場所</Japanese>
-            <Spanish>Ubicaciones Coag-Sense</Spanish>
-            <Portuguese>Localizações de uso do Medidor de Coagulação</Portuguese>
-            <Dutch>Locaties voor gebruik Coag-Sense</Dutch>
-            <French>Emplacements du Coag-Sense</French>
-            <Italian>Posizioni Coag-Sense</Italian>
+            <English>Locations Blood Tester</English>
         </Key>
         <Key ID="STR_KAT_Pharma_SETTING_CheckCoag_treatmentTime">
-            <English>Treatment time for measuring PT/INR</English>
-            <Japanese>PT/INR測定の所要時間</Japanese>
-            <Spanish>Tiempo de tratamiento para medir PT/INR</Spanish>
-            <Portuguese>Tempo para mensurar PT/INR</Portuguese>
-            <Dutch>Onderzoekstijd voor bepalen PT-INR</Dutch>
-            <French>Temps pour mesurer le PT/INR</French>
-            <Italian>Tempo di trattamento per misurare PT/INR</Italian>
+            <English>Treatment time for taking a blood sample</English>
         </Key>
         <Key ID="STR_KAT_Pharma_SETTING_allowStackScript_EACA">
             <English>Allow Stacking</English>

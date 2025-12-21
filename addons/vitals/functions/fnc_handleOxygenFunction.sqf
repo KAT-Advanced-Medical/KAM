@@ -293,10 +293,13 @@ if (EGVAR(pharma,kidneyAction)) then {
     // Extenal pH impacts from saline is included
     _externalPh = _unit getVariable [QEGVAR(pharma,externalPh), 0];
 
-     private _phConstant = ((-0.00006653 * (_temperature ^ 2)) - (0.03268 * _temperature) + 7.4);
+    private _phConstant = ((-0.00006653 * (_temperature ^ 2)) - (0.03268 * _temperature) + 7.4);
 
     // pH is from the Henderson-Hasselbalch equation
-    _pH = (_phConstant + log(24 / ((0.03 * _paco2)))) - ((_externalPh max 1) / 2000) - ((_aceAnFatigue / 2) / 3);
+    _pH =
+    (_phConstant + log(24 / (0.03 * _paco2)))
+    - (((_externalPh max 0) ^ 1.15) / 60)
+    - ((_aceAnFatigue / 2) / 3);
 };
 // Fractional Oxygen when breathing normal air is 0.21, 1 when breathing 100% Oxygen, and 0 when no air is being brought into the lungs
 private _fio2 = switch (true) do {

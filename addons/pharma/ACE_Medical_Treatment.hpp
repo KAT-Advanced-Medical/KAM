@@ -832,6 +832,51 @@ class ACE_ADDON(Medical_Treatment) {
             respiratoryRate = -0.25;
             maximumEffectiveDose = 30;
         };
+        class syringe_CalciumChloride_5ml {
+            painReduce = 0;
+            hrIncreaseLow[] = {5, 20};
+            hrIncreaseNormal[] = {5, 20};
+            hrIncreaseHigh[] = {5, 15};
+            timeInSystem = 120;
+            timeTillMaxEffect = 10;
+            dose = 1;
+            maxDose = 60;
+            maxDoseDeviation = 40;
+            incompatibleMedication[] = {};
+            alphaFactor = -0.05;
+            onOverDose = "";
+            maximumEffectiveDose = 40;
+        };
+        class syringe_CalciumGluconate_5ml {
+            painReduce = 0;
+            hrIncreaseLow[] = {5, 20};
+            hrIncreaseNormal[] = {5, 20};
+            hrIncreaseHigh[] = {5, 15};
+            timeInSystem = 120;
+            timeTillMaxEffect = 10;
+            dose = 1;
+            maxDose = 60;
+            maxDoseDeviation = 40;
+            incompatibleMedication[] = {};
+            alphaFactor = -0.05;
+            onOverDose = "";
+            maximumEffectiveDose = 40;
+        };
+        class syringe_Bicarbonate_5ml {
+            painReduce = 0;
+            hrIncreaseLow[] = {5, 20};
+            hrIncreaseNormal[] = {5, 20};
+            hrIncreaseHigh[] = {5, 15};
+            timeInSystem = 120;
+            timeTillMaxEffect = 10;
+            dose = 1;
+            maxDose = 60;
+            maxDoseDeviation = 40;
+            incompatibleMedication[] = {};
+            alphaFactor = -0.05;
+            onOverDose = "";
+            maximumEffectiveDose = 40;
+        };
         class syringe_Alteplase_5ml_30 {
             painReduce = 0;
             hrIncreaseLow[] = {-4, -10};
@@ -1105,6 +1150,27 @@ class ACE_ADDON(Medical_Treatment) {
             maximumEffectiveDose = 30;
         };
         class syringe_Diazepam  {
+            maxDose = 30;
+            maxDoseDeviation = 20;
+            incompatibleMedication[] = {};
+            onOverDose = "";
+            maximumEffectiveDose = 30;
+        };
+        class syringe_CalciumGluconate  {
+            maxDose = 30;
+            maxDoseDeviation = 20;
+            incompatibleMedication[] = {};
+            onOverDose = "";
+            maximumEffectiveDose = 30;
+        };
+        class syringe_CalciumChloride  {
+            maxDose = 30;
+            maxDoseDeviation = 20;
+            incompatibleMedication[] = {};
+            onOverDose = "";
+            maximumEffectiveDose = 30;
+        };
+        class syringe_Bicarbonate  {
             maxDose = 30;
             maxDoseDeviation = 20;
             incompatibleMedication[] = {};

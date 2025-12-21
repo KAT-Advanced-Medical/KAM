@@ -23,6 +23,8 @@ _patient setVariable [QGVAR(externalPh), 0, true];
 _patient setVariable [QGVAR(kidneyFail), false, true];
 _patient setVariable [QGVAR(kidneyArrest), false, true];
 _patient setVariable [QGVAR(kidneyPressure), false, true];
+_patient setVariable [QGVAR(serumCalcium), 2.4, true];
+_patient setVariable [QGVAR(externalCa), 0, true];
 
 [_patient, "Dialysis"] call ACEFUNC(medical_treatment,addToTriageCard);
 [_patient, "activity", LSTRING(dialysis_log), [[_medic] call ACEFUNC(common,getName)]] call ACEFUNC(medical_treatment,addToLog);

@@ -35,7 +35,11 @@ if !(GVAR(coagulation)) exitWith {};
 
     private _bv = GET_BLOOD_VOLUME_LITERS(_unit);
     if (_bv < GVAR(coagulation_requireBV)) exitWith {}; // Blood volume check
-    if ((GET_HEART_RATE(_unit) < 20) && GVAR(coagulation_requireHR)) exitWith {}; // Has pulse & require setting
+    if ((GET_HEART_RATE(_unit) < 20) && GVAR(coagulation_requireHR)) exitWith {};
+    private _ph = GET_PH(_unit);
+    private _ca = GET_CA(_unit);
+    if (_ph < 6.9) exitWith {};
+    if (_ca < 1.0) exitWith {};
     private _bodyFluid = GET_BODY_FLUID(_unit);
     private _currentCoagFactors = GET_BODY_FLUID_PLATELETS(_unit);
     private _savedCoagFactors = _unit getVariable [QGVAR(coagulationSavedFactors), GET_BODY_FLUID_PLATELETS(_unit)];
@@ -54,6 +58,19 @@ if !(GVAR(coagulation)) exitWith {};
             _eacaEffectiveness = _eacaEffectiveness max _effectiveness;
         };
     } forEach _medStack;
+    private _calciumRegenMult = linearConversion [
+        1.2, 2.4,        // severe hypocalcemia → normal
+        _calcium,
+        0.3, 1.0,        // up to 70% reduction
+        true
+    ];
+    private _phRegenMult = linearConversion [
+        7.0, 7.4,        // acidosis → normal
+        _ph,
+        0.2, 1.0,        // up to 80% reduction
+        true
+    ];
+
 
     if (_currentCoagFactors < _savedCoagFactors) exitWith {
         [{
@@ -70,7 +87,12 @@ if !(GVAR(coagulation)) exitWith {};
         private _painBoost = linearConversion [0, 1, _pain, 0.01, 5, true];
         private _factorDeficit = 600 - _currentCoagFactors;
         private _reboundMultiplier = 1 + (1 - exp(-3 * (_factorDeficit / 600)));
-        private _regenAmount = ((_baseRegen + _painBoost) * _reboundMultiplier) min _factorDeficit;
+        private _regenAmount = (
+            (_baseRegen + _painBoost) *
+            _reboundMultiplier *
+            _calciumRegenMult *
+            _phRegenMult
+        ) min _factorDeficit;
         private _totalAmount = _currentCoagFactors + _regenAmount;
         _bodyFluid set [5, _totalAmount];
         _unit setVariable [VAR_BODY_FLUID, _bodyFluid, true];
@@ -82,7 +104,11 @@ if !(GVAR(coagulation)) exitWith {};
         if (_txaEffectiveness > 0 || _eacaEffectiveness > 0) exitWith {}; // If TXA or EACA is in system don't remove factor
         private _factorOverflow = (_currentCoagFactors - 600) max 0;
         private _reboundMultiplier = exp(2 * (_factorOverflow / 600)) - 1;
-        _bodyFluid set [5, (_currentCoagFactors - (1 * _reboundMultiplier))];
+        private _alkalosisDecayMult = 1;
+        if (_ph > 7.5) then {
+            _alkalosisDecayMult = linearConversion [7.5, 7.6, _ph, 1.0, 1.5, true];
+        };
+        _bodyFluid set [5, (_currentCoagFactors - ((1 * _reboundMultiplier) * _alkalosisDecayMult))];
         _unit setVariable [VAR_BODY_FLUID, _bodyFluid, true];
         _unit setVariable [QGVAR(coagulationSavedFactors), (_currentCoagFactors - (1 * _reboundMultiplier)), true];
         _unit setVariable [QGVAR(coagulationRegenCooldown), true, true];

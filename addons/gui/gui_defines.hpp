@@ -219,8 +219,10 @@
 #define IDC_TEST_SPO2          71204
 #define IDC_TEST_HCO3          71205
 #define IDC_TEST_PH          71206
-#define IDC_TEST_RESET          71207
+#define IDC_TEST_CA          71207
 #define IDC_TEST_SHOWBUTTON          71208
+#define IDC_TEST_TIME          71209
+#define IDC_TEST_ETCO2          71210
 #define IDC_ABG_BACKGROUND           71299
 #define IDC_SYRINGE_TITLE           71300
 #define IDC_SYRINGE_BACKGROUND           71301

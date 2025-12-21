@@ -48,6 +48,7 @@ class ACE_Medical_Treatment {
         sedation = "false";
         paralysis = "false";
         ph = 0;
+        ca = 0;
 
 
         incompatibleMedication[] = {};
@@ -60,6 +61,7 @@ class ACE_Medical_Treatment {
             ph = -0.8;
             bloodType = "O_N";
             compatibility[] = {"O", "O_N", "A", "A_N", "B","B_N", "AB", "AB_N"};
+            ca = 0.8;
         };
         class BloodIV_500: BloodIV {
             volume = 500;
@@ -72,7 +74,7 @@ class ACE_Medical_Treatment {
             ratio[] = {"Blood", 1};
             type = "Plasma";
             rateCoef = 1;
-            platelets = -0.5;
+            platelets = 0.5;
         };
         class PlasmaIV_500: PlasmaIV {
             volume = 500;
@@ -242,6 +244,7 @@ class ACE_Medical_Treatment {
             type = "PackedRBC";
             platelets = 0.2;
             ph = -0.4;
+            ca = 0.8;
         };
         class PackedRBCIV_250: PackedRBCIV_500 {
             volume = 250;

@@ -117,9 +117,37 @@ _effectiveDose = 1;
 if (_ph < 7.1) then {
     _effectiveDose = linearConversion [7.1, 6.8, _ph, 1.0, 1.4, true];;
 };
-
+private _ph = GET_PH(_unit);
+private _ca = GET_CA(_unit);
+private _phDilationMult = linearConversion [
+    7.4,    // normal
+    7.0,    // severe acidosis
+    _ph,
+    1.0,    // baseline dilation
+    1.5,    // exaggerated dilation
+    true
+];
+private _phVasoMult = linearConversion [
+    7.4,    // normal
+    7.0,    // severe acidosis
+    _ph,
+    1.0,    // full response
+    0.4,    // profound resistance
+    true
+];
+private _calciumVasoMult = linearConversion [
+            2.0,    // hypocalcemia
+            3.0,    // hypercalcemia
+            _ca,
+            0.6,    // poor response
+            1.3,    // exaggerated response
+            true
+];
+private _vasoEffectMult = _phVasoMult * _calciumVasoMult;
+private _vasodilatorMult = _phDilationMult * (1 / _calciumVasoMult);
 TRACE_1("HUV",_adjustments);
-
+_vasoEffectMult = (_vasoEffectMult max 0.25) min 1.5;
+_vasodilatorMult = (_vasodilatorMult max 0.6) min 1.8;
 if (_adjustments isNotEqualTo []) then {
     private _deleted = false;
 
@@ -151,8 +179,10 @@ if (_adjustments isNotEqualTo []) then {
 
             if (_hrAdjust != 0) then { _hrTargetAdjustment = _hrTargetAdjustment + _hrAdjust * _effectRatio * _effectiveDose; };
             if (_painAdjust != 0) then { _painSupressAdjustment = _painSupressAdjustment + _painAdjust * _effectRatio * _effectiveDose; };
-            if (_flowAdjust != 0) then { _peripheralResistanceAdjustment = _peripheralResistanceAdjustment + _flowAdjust * _effectRatio * _effectiveDose; };
-            if (_alphaFactor != 0) then { _alphaFactorAdjustment = _alphaFactorAdjustment + _alphaFactor * _effectRatio * _effectiveDose; };
+            if (_flowAdjust >= 0) then { _peripheralResistanceAdjustment = _peripheralResistanceAdjustment + _flowAdjust * _effectRatio * _effectiveDose * _vasoEffectMult; };
+            if (_alphaFactor >= 0) then { _alphaFactorAdjustment = _alphaFactorAdjustment + _alphaFactor * _effectRatio * _effectiveDose * _vasoEffectMult; };
+            if (_flowAdjust < 0) then { _peripheralResistanceAdjustment = _peripheralResistanceAdjustment + _flowAdjust * _effectRatio * _effectiveDose * _vasodilatorMult; };
+            if (_alphaFactor < 0) then { _alphaFactorAdjustment = _alphaFactorAdjustment + _alphaFactor * _effectRatio * _effectiveDose * _vasodilatorMult; };
             if (_opioidRelief != 0) then { _opioidAdjustment = _opioidAdjustment + _opioidRelief * _effectRatio * _effectiveDose; };
             if (_opioidEffect != 0) then { _opioidEffectAdjustment = _opioidEffectAdjustment + _opioidEffect * _effectRatio * _effectiveDose; };
             if (_opioidDepression != 0) then { _opioidDepressionAdjustment = _opioidDepressionAdjustment + _opioidDepression * _effectRatio * _effectiveDose; };

@@ -60,7 +60,32 @@ private _fnc_clotWound = {
                 _hypothermiaDelay = linearConversion [35, 30, (_unit getVariable [QEGVAR(hypothermia,unitTemperature), 37]), 1, 4, true];
             };
             if (EGVAR(hypothermia,hypothermiaActive) && (_unit getVariable [QEGVAR(hypothermia,unitTemperature), 37]) < 30) exitWith {};
-            private _woundClotDelayMult = (1 * (_alteplaseFixedEffectiveness * ((600/_coagulationFactor) + _hypothermiaDelay) * _cwmpFixedEffectiveness)) min 10;
+            private _ph = GET_PH(_unit);
+            private _ca = GET_CA(_unit);
+            // Calcium effect (low Ca = slower clotting)
+            private _calciumDelayMult = linearConversion [
+                1.2, 2.4,        // severe hypocalcemia → normal
+                _ca,
+                2.0, 1.0,        // up to 2× slower clotting
+                true
+            ];
+            
+            // pH effect (acidosis dominates)
+            private _phDelayMult = linearConversion [
+                7.0, 7.4,        // severe acidosis → normal
+                _ph,
+                3.0, 1.0,        // up to 3× slower clotting
+                true
+            ];
+            if (_ph < 6.9) exitWith {};
+            if (_calcium < 1.0) exitWith {};
+            private _woundClotDelayMult = (
+                _alteplaseFixedEffectiveness *
+                ((600 / _coagulationFactor) + _hypothermiaDelay) *
+                _cwmpFixedEffectiveness *
+                _calciumDelayMult *
+                _phDelayMult
+            ) min 10;
             if (_woundClotDelayMult > 6) exitWith {};
             switch (_suffix) do {
                 case "Minor": {
@@ -193,9 +218,18 @@ private _fnc_clotWound = {
                     private _chance = _chance * _txaMult;
                     if (HAS_APPLIEDPRESSURE_ON(_unit,_bodyPartN) && GVAR(pressureInfluenceCoag)) then {
                         _chance = _chance * 1.25;
-                    } else {
+                    };
+                    if !(GVAR(pressureInfluenceCoag)) then {
                         _chance = _chance * 1.25;
                     };
+                    private _ph = GET_PH(_unit);
+                    private _ca = GET_CA(_unit);
+                    // Calcium improves clot stability
+                    private _calciumChanceMult = linearConversion [1.2, 2.4, _ca, 0.4, 1.0, true];
+
+                    // Acidosis severely reduces success chance
+                    private _phChanceMult = linearConversion [7.0, 7.4, _ph, 0.5, 1.0, true ];
+                    _chance = _chance * _calciumChanceMult * _phChanceMult;
                     if (floor (random 100) > _chance) exitWith {};
                 
                     _bodyFluid set [5, (_coagulationFactor - _factorCountToRemove)];

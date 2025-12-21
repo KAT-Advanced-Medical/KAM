@@ -3,6 +3,7 @@ PREP(closeSyringeMenu);
 PREP(collectActions);
 PREP(displayPatientInformation);
 PREP(dumpBloodGas);
+PREP(getABGElapsedTime);
 PREP(handleABGShow);
 PREP(handleIVAdjust);
 PREP(handleIVShow);
