@@ -944,4 +944,46 @@ class CfgWeapons {
             mass = 0.5;
         };
     };
+    class kat_calciumGluconate: ACE_ItemCore {
+        scope = 2;
+        displayName = CSTRING(kat_CalciumGluconate_Box_Display);
+        picture = QPATHTOF(ui\icon_kat_CalciumGluconate.paa);
+        model = "\A3\Structures_F_EPA\Items\Medical\Painkillers_F.p3d";
+        descriptionShort = CSTRING(kat_CalciumGluconate_DescShort);
+        ACE_isMedicalItem = 1;
+        class ItemInfo: CBA_MiscItem_ItemInfo {
+            mass = 0.5;
+        };
+    };
+    class kat_calciumChloride: ACE_ItemCore {
+        scope = 2;
+        displayName = CSTRING(CalciumChloride_Box_Display);
+        picture = QPATHTOF(ui\icon_CalciumChloride.paa);
+        model = "\A3\Structures_F_EPA\Items\Medical\Painkillers_F.p3d";
+        descriptionShort = CSTRING(CalciumChloride_DescShort);
+        ACE_isMedicalItem = 1;
+        class ItemInfo: CBA_MiscItem_ItemInfo {
+            mass = 0.5;
+        };
+    };
+    class kat_bicarbonate: ACE_ItemCore {
+        scope = 2;
+        displayName = CSTRING(Bicarbonate_Box_Display);
+        picture = QPATHTOF(ui\icon_Bicarbonate.paa);
+        model = "\A3\Structures_F_EPA\Items\Medical\Painkillers_F.p3d";
+        descriptionShort = CSTRING(Bicarbonate_DescShort);
+        ACE_isMedicalItem = 1;
+        class ItemInfo: CBA_MiscItem_ItemInfo {
+            mass = 0.5;
+        };
+    };
+    class kat_syringe_bicarbonate_5ml_20: kat_syringe_txa_5ml_10 {
+        displayName = KATDISPLAYCSTRING(bicarbonate,5ml,20);
+    };
+    class kat_syringe_calciumChloride_5ml_20: kat_syringe_txa_5ml_10 {
+        displayName = KATDISPLAYCSTRING(calciumChloride,5ml,20);
+    };
+    class kat_syringe_calciumGluconate_5ml_20: kat_syringe_txa_5ml_10 {
+        displayName = KATDISPLAYCSTRING(calciumGluconate,5ml,20);
+    };
 };
