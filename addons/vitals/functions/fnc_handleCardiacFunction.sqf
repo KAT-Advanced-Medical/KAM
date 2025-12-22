@@ -1,4 +1,3 @@
-#define DEBUG_MODE_FULL
 #include "..\script_component.hpp"
 /*
  * Author: Glowbal, Mazinski
@@ -24,171 +23,213 @@
 
 params ["_unit", "_hrTargetAdjustment", "_hrTarget", "_bloodVolume", "_aceAnFatigue", "_deltaT", "_syncValue"];
 
-#define BASELINE_CO 0.1172072   // Your targetCO value
-#define MIN_HR 20
-#define MAX_HR 240
-#define HEART_RATE_CO2_MULTIPLIER 60 
-#define CO2_TO_DEMAND_DIVISOR 37894.7367424
-
 private _icp = GET_ICP(_unit);
 private _map = GET_MAP(_unit);
 private _actualHeartRate = _hrTarget;
-private _actualReturn = 0;
 
-if IN_CRDC_ARRST(_unit) then {
-    if (alive (_unit getVariable [QACEGVAR(medical,CPR_provider), objNull])) then {
-        if (_actualHeartRate == 0) then { _syncValue = true }; // always sync on large change
-        _actualHeartRate = random [100, 110, 120];
-    } else {
-        if (_actualHeartRate != 0) then { _syncValue = true }; // always sync on large change
-        _actualHeartRate = 0
-    };
-} else {
-// --- Constants ---
-
-private _defaultHR = _unit getVariable [QEGVAR(circulation,defaultHeartRate), 80];
-private _painLevel = GET_PAIN_PERCEIVED(_unit);
-
-// Remove modifiers from last cycle to avoid spiral
-private _lastHR =
-    GET_HEART_RATE(_unit)
-    - _hrTargetAdjustment
-    - (10 * _painLevel)
-    - (_aceAnFatigue * 40);
-
-if (_unit getVariable [QEGVAR(circulation,heartRestart), false]) then {
-    _lastHR = floor (random [40, 50, 60]);
-};
-
-// --- Metabolic Demand (dimensionless multiplier) ---
-private _co2Production = _lastHR * HEART_RATE_CO2_MULTIPLIER;
-private _metabolicDemand =
-    0.5 * ((_lastHR * HEART_RATE_CO2_MULTIPLIER) / CO2_TO_DEMAND_DIVISOR)
-  + 0.5 * (_aceAnFatigue + _painLevel);
-_metabolicDemand = _metabolicDemand - 0.063;
-_metabolicDemand = _metabolicDemand max 0;
-// --- Target Cardiac Output ---
-private _targetCO = BASELINE_CO * (1 + _metabolicDemand);
-private _map = GET_MAP(_unit);
-
-// Scale target CO down as MAP falls
-private _coScale =
-    linearConversion [80, 50, _map, 1.0, 0.6, true];
-
-_targetCO = BASELINE_CO * _coScale;
-// --- Stroke Volume (your function) ---
-private _strokeVolume = [_unit] call FUNC(getStrokeVolume);
-
-// --- Core physiological relationship ---
-// --- Core physiological relationship (ratio-based) ---
-private _baselineSV = 0.0862038;
-private _baselineHR = _defaultHR;
-
-// HR scales with CO demand and inversely with SV
-private _modelHR =
-    _baselineHR
-    * (_targetCO / BASELINE_CO)
-    * (_baselineSV / (_strokeVolume max 0.02));
-
-// --- Autonomic damping (vagal tone) ---
-_modelHR = (_modelHR * 0.85) + (_defaultHR * 0.15);
-
-// --- Vagal Reflex ---
-private _vagalTone = 0;
-
-// Pain-induced vagal response (vasovagal)
-if (_painLevel > 0.7) then {
-    _vagalTone = linearConversion [0.7, 1.0, _painLevel, 0, 0.35, true];
-};
-
-// Hypoxia-induced vagal bradycardia
-private _spo2 = _unit getVariable [QEGVAR(breathing,SpO2), 100];
-if (_spo2 < 85) then {
-    _vagalTone = _vagalTone max linearConversion [85, 60, _spo2, 0, 0.5, true];
-};
-
-// Apply vagal suppression
-_modelHR = _modelHR * (1 - _vagalTone);
-
-private _shockClass = "NONE";
-
-if (_strokeVolume < 0.06 && _modelHR > 100) then {
-    _shockClass = "COMPENSATED";
-};
-if (_strokeVolume < 0.04 && _modelHR > 130) then {
-    _shockClass = "DECOMPENSATED";
-};
-if (_strokeVolume < 0.025) then {
-    _shockClass = "TERMINAL";
-};
-
-_unit setVariable [QEGVAR(circulation,shockClass), _shockClass];
-
-switch (_shockClass) do {
-    case "COMPENSATED": {
-        // nothing extra
-    };
-    case "DECOMPENSATED": {
-        _modelHR = _modelHR * 1.1; // catecholamine surge
-    };
-    case "TERMINAL": {
-        _modelHR = _modelHR * 0.6; // myocardial failure
-    };
-};
-private _cushing = [_unit] call FUNC(getCushings);
-if (_cushing > 0) then {
-    // Max ~40% HR reduction at full Cushing
-    private _bradyMult = linearConversion [0, 1, _cushing, 1.0, 0.6, true];
-    _modelHR = _modelHR * _bradyMult;
-
-    // Clamp — brainstem reflex bradycardia but not zero
-    _modelHR = _modelHR max 30;
-};
-// --- Physiological limits ---
-_modelHR = _modelHR max MIN_HR min MAX_HR;
-
-private _tachyDuration =
-    _unit getVariable [QEGVAR(circulation,tachyDuration), 0];
-
-if (_modelHR > 140 && _strokeVolume < 0.04) then {
-    _tachyDuration = _tachyDuration + _deltaT;
-} else {
-    _tachyDuration = _tachyDuration max 0 - (2 * _deltaT);
-};
-
-_unit setVariable [QEGVAR(circulation,tachyDuration), _tachyDuration];
-
-// Collapse trigger
-if (_tachyDuration > 30) then {
-    _modelHR = _modelHR * linearConversion [30, 45, _tachyDuration, 1, 0.3, true];
-};
-_modelHR = _lastHR + (((_modelHR - _lastHR) min 5) max -5);
-TRACE_6(
-    "HR_MODEL",
-    _modelHR,
-    _strokeVolume,
-    _targetCO,
-    _metabolicDemand,
-    _lastHR,
-    _defaultHR
+// ================= INPUT TRACE =================
+TRACE_4(
+    "HR_INPUT",
+    GET_HEART_RATE(_unit),
+    _map,
+    _icp,
+    _deltaT
 );
 
-// --- SA-node inertia ---
-_actualHeartRate = switch (true) do {
-    case (_modelHR > _lastHR): { (_lastHR + (1.0 * _deltaT)) min _modelHR };
-    case (_modelHR < _lastHR): { (_lastHR - (1.4 * _deltaT)) max _modelHR };
-    default { _modelHR };
+// ================= CARDIAC ARREST =================
+if IN_CRDC_ARRST(_unit) then {
+    if (alive (_unit getVariable [QACEGVAR(medical,CPR_provider), objNull])) then {
+        if (_actualHeartRate == 0) then { _syncValue = true };
+        _actualHeartRate = random [100, 110, 120];
+    } else {
+        if (_actualHeartRate != 0) then { _syncValue = true };
+        _actualHeartRate = 0;
+    };
+} else {
+
+    #define MAP_SETPOINT 94.7
+    #define MAP_DEADBAND 3
+    #define BARO_KP 0.6
+    #define BARO_KI 0.12
+    #define INTEGRAL_CLAMP 30
+    #define MIN_HR 20
+    #define MAX_HR 220
+
+    private _defaultHR = _unit getVariable [QEGVAR(circulation,defaultHeartRate), 80];
+    private _painLevel = GET_PAIN_PERCEIVED(_unit);
+
+    private _lastHR =
+        GET_HEART_RATE(_unit)
+        - _hrTargetAdjustment
+        - (10 * _painLevel)
+        - (_aceAnFatigue * 40);
+
+    // ================= SV MODEL =================
+    private _baselineSV = 0.0892878;
+    private _strokeVolume = [_unit] call FUNC(getStrokeVolume);
+
+    private _svMemory =
+        _unit getVariable [QEGVAR(circulation,svMemory), _baselineSV];
+
+    private _svTau = 6;
+    _svMemory = _svMemory + ((_strokeVolume - _svMemory) * (_deltaT / _svTau));
+    _unit setVariable [QEGVAR(circulation,svMemory), _svMemory];
+
+    private _effectiveSV = _svMemory max 0.03;
+
+    TRACE_5(
+        "SV_MODEL",
+        _strokeVolume,
+        _svMemory,
+        _effectiveSV,
+        _svTau,
+        _baselineSV
+    );
+
+    // ================= BAROREFLEX CORE =================
+    private _mapError = MAP_SETPOINT - _map;
+    if (abs _mapError < MAP_DEADBAND) then { _mapError = 0 };
+
+    private _mapIntegral =
+        _unit getVariable [QEGVAR(circulation,mapIntegral), 0];
+
+    // --- Integral update ---
+    _mapIntegral = _mapIntegral + (_mapError * _deltaT);
+    
+    // --- Integral leak near setpoint ---
+    if (abs _mapError < MAP_DEADBAND) then {
+        _mapIntegral = _mapIntegral * 0.85;
+    };
+    
+    // Clamp
+    _mapIntegral = (_mapIntegral max -INTEGRAL_CLAMP) min INTEGRAL_CLAMP;
+    _unit setVariable [QEGVAR(circulation,mapIntegral), _mapIntegral];
+
+    private _baroDelta =
+        (BARO_KP * _mapError)
+    + (BARO_KI * _mapIntegral);
+
+    _modelHR = _defaultHR + _baroDelta;
+
+    TRACE_6(
+        "BARO_CORE",
+        _map,
+        _mapError,
+        _mapIntegral,
+        _modelHR,
+        BARO_KP,
+        BARO_KI
+    );
+    // --- Central autonomic command (resting bias) ---
+    private _centralBias = 0;
+    
+    if (
+        _painLevel < 0.05
+        && _aceAnFatigue < 0.05
+        && abs (_effectiveSV - _baselineSV) < 0.003
+    ) then {
+        // Suppress baroreflex when near resting conditions
+        _centralBias = linearConversion [90, 100, _map, 0, 6, true];
+    };
+    
+    _modelHR = _modelHR + _centralBias;
+    
+    TRACE_2("CENTRAL_CMD", _centralBias, _modelHR);
+
+    // ================= VAGAL =================
+    private _vagalTone = 0;
+
+    if (_painLevel > 0.7) then {
+        _vagalTone = linearConversion [0.7, 1.0, _painLevel, 0, 0.35, true];
+    };
+
+    private _spo2 = _unit getVariable [QEGVAR(breathing,SpO2), 100];
+    if (_spo2 < 85) then {
+        _vagalTone = _vagalTone max
+            linearConversion [85, 60, _spo2, 0, 0.5, true];
+    };
+
+    TRACE_3(
+        "VAGAL",
+        _painLevel,
+        _spo2,
+        _vagalTone
+    );
+
+    _modelHR = _modelHR * (1 - _vagalTone);
+
+    // ================= SHOCK =================
+    private _shockClass = "NONE";
+    if (_effectiveSV < 0.06 && _map < 70) then { _shockClass = "COMPENSATED" };
+    if (_effectiveSV < 0.04 && _map < 60) then { _shockClass = "DECOMPENSATED" };
+    if (_effectiveSV < 0.025) then { _shockClass = "TERMINAL" };
+
+    _unit setVariable [QEGVAR(circulation,shockClass), _shockClass];
+
+    TRACE_3(
+        "SHOCK",
+        _shockClass,
+        _effectiveSV,
+        _map
+    );
+
+    switch (_shockClass) do {
+        case "DECOMPENSATED": { _modelHR = _modelHR * 1.1 };
+        case "TERMINAL":     { _modelHR = _modelHR * 0.6 };
+    };
+
+    _modelHR = (_modelHR max MIN_HR) min MAX_HR;
+
+    // ================= SA NODE =================
+    private _hrDelta = _modelHR - _lastHR;
+    private _rate = 1.2 * _deltaT;
+
+    TRACE_4(
+        "SA_NODE",
+        _lastHR,
+        _modelHR,
+        _hrDelta,
+        _rate
+    );
+
+    if (abs _hrDelta < 0.25) then {
+        _actualHeartRate = _lastHR;
+    } else {
+        _actualHeartRate =
+            _lastHR + ((_hrDelta max -_rate) min _rate);
+    };
+
+    // ================= REST LOCK =================
+    if (
+        abs (_map - MAP_SETPOINT) < 2
+        && abs (_effectiveSV - _baselineSV) < 0.003
+        && _painLevel < 0.05
+        && _aceAnFatigue < 0.05
+    ) then {
+        _actualHeartRate = _defaultHR;
+        _mapIntegral = 0;
+        _unit setVariable [QEGVAR(circulation,mapIntegral), 0];
+    
+        TRACE_1("REST_LOCK", _actualHeartRate);
+    };
+
+    // ================= MODIFIERS =================
+    _actualHeartRate =
+        _actualHeartRate
+        + _hrTargetAdjustment
+        + (10 * _painLevel)
+        + (_aceAnFatigue * 40);
+
+    _actualHeartRate = (_actualHeartRate max MIN_HR) min MAX_HR;
 };
 
-// --- Reapply modifiers ---
-_actualHeartRate =
-    _actualHeartRate
-    + _hrTargetAdjustment
-    + (10 * _painLevel)
-    + (_aceAnFatigue * 40);
+// ================= FINAL TRACE =================
+TRACE_3(
+    "HR_FINAL",
+    _actualHeartRate,
+    _map,
+    GET_BLOOD_VOLUME_LITERS(_unit)
+);
 
-// Final clamp
-_actualHeartRate = (_actualHeartRate max MIN_HR) min MAX_HR;
-};
 _unit setVariable [VAR_HEART_RATE, _actualHeartRate, _syncValue];
 _actualHeartRate

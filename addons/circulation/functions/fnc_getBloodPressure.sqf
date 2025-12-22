@@ -18,9 +18,9 @@
  * Public: No
  */
 params ["_unit"];
-#define BASELINE_MAP 93
-#define BASELINE_CO  0.1149384   // L/s
-#define BASELINE_SVR (98.77 / 0.1149384)   // ≈ 860
+#define BASELINE_MAP 94.7
+#define BASELINE_CO  0.0893 // L/s
+#define BASELINE_SVR (94.7 / 0.0893 )  // ≈ 860
 // =======================
 // BASE PHYSIO INPUTS
 // =======================
@@ -62,13 +62,15 @@ private _countOccluded = count _occludedParts;
 // MAP CALCULATION (PRIMARY)
 // =======================
 private _prevMAP = GET_MAP(_unit);
-if (_icp > 0.5 && _prevMAP < 70) then {
-    _resistance = _resistance * linearConversion [0.5, 1.0, _icp, 1.1, 1.4, true];
+if (_icp > 25 && _prevMAP < 70) then {
+    _resistance = _resistance * linearConversion [25, 40, _icp, 1.1, 1.4, true];
 };
 
 private _map =
-    ((_cardiacOutput * BASELINE_SVR * (_resistance/100))
-    / ((_vasoconstriction max 0.4) min 1.8))
+    (_cardiacOutput
+    * BASELINE_SVR
+    * (_resistance / 100)
+    * ((_vasoconstriction max 0.4) min 1.8))
     * (1.07 ^ _countOccluded);
 // =======================
 // CUSHING MAP BOOST

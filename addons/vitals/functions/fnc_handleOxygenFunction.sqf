@@ -1,4 +1,3 @@
-#define DEBUG_MODE_FULL
 #include "..\script_component.hpp"
 /*
  * Author: Mazinski
@@ -99,7 +98,6 @@ if ((IN_CRDC_ARRST(_unit)) || !_airway || _paralysis) then {
         _respiratoryDepth = 0;
     };  
 } else {
-    
 
     private _contractility = (_unit getVariable [QEGVAR(pharma,heartContractility), 1]) max 0.2;
     private _contractilityMult = linearConversion [0.2, 1.8, _contractility, 0.5, 1.5, true];
@@ -292,7 +290,7 @@ if ((IN_CRDC_ARRST(_unit)) || !_airway || _paralysis) then {
     _respiratoryRate  = _respiratoryRate  * _respDrive;
     _respiratoryDepth = _respiratoryDepth * (_respDrive max MINIMUM_DEPTH);
     _actualVentilation = _actualVentilation * _respDrive;
-    TRACE_5("Breathing",_respiratoryDepth,_actualVentilation,_respiratoryRate,_respDrive,_CPP)
+    TRACE_6("Breathing",_respiratoryDepth,_actualVentilation,_respiratoryRate,_respDrive,_CPP,_demandVentilation)
 };
 private _paco2 = 40;
 
