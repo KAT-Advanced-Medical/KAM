@@ -1,3 +1,4 @@
+#define DEBUG_MODE_FULL
 #include "..\script_component.hpp"
 /*
  * Author: Mazinski
@@ -105,10 +106,16 @@ if ((IN_CRDC_ARRST(_unit)) || !_airway || _paralysis) then {
     _demandVentilation = (((((_actualHeartRate / _contractilityMult) * HEART_RATE_CO2_MULTIPLIER) / _anerobicPressure) + ((_previousCyclePaco2 - DEFAULT_PACO2) * 200)) max MINIMUM_VENTILATION);
 
     // Respiratory Rate is supressed by Opioids 
-    
+    private _icp = GET_ICP(_unit);
+    private _map = GET_MAP(_unit);
+    private _CPP = (_map - _icp) max 0;
+    private _cushing = [_unit] call FUNC(getCushings);
+    private _respDrive =
+        linearConversion [80, 20, _CPP, 1.0, 0.1, true];
+    _respDrive = _respDrive * (1 - (_cushing * 0.6));
+    _unit setVariable [QEGVAR(breathing,respDrive), _respDrive];
     private _baseRespiratoryDepth = ((DEFAULT_RESPIRATORY_DEPTH) - (_opioidDepression / 1.5));
     private _baseTidalVolume = GET_KAT_SURFACE_AREA(_unit) * (_baseRespiratoryDepth / 10);
-    private _icp = GET_ICP(_unit);
     private _cardiacOutput = [_unit] call FUNC(getCardiacOutput);
     private _tidalVolume = 0;
     private _patternApplied = false;
@@ -150,7 +157,10 @@ if ((IN_CRDC_ARRST(_unit)) || !_airway || _paralysis) then {
             _actualVentilation = (_tidalVolume * _respiratoryRate) * _bronchospasm;
             _patternApplied = true;
         };
-
+        _respDrive = _respDrive max 0 min 1;
+        _respiratoryRate  = _respiratoryRate  * _respDrive;
+        _respiratoryDepth = _respiratoryDepth * (_respDrive max MINIMUM_DEPTH);
+        _actualVentilation = _actualVentilation * _respDrive;
         _unit setVariable [QGVAR(breathingState), 1, true];
     };
 
@@ -169,7 +179,10 @@ if ((IN_CRDC_ARRST(_unit)) || !_airway || _paralysis) then {
             _tidalVolume = GET_KAT_SURFACE_AREA(_unit) * (_respiratoryDepth / 10);
             _actualVentilation = (_tidalVolume * _respiratoryRate) * _bronchospasm;
         };
-
+        _respDrive = _respDrive max 0 min 1;
+        _respiratoryRate  = _respiratoryRate  * _respDrive;
+        _respiratoryDepth = _respiratoryDepth * (_respDrive max MINIMUM_DEPTH);
+        _actualVentilation = _actualVentilation * _respDrive;
         _patternApplied = true;
         _unit setVariable [QGVAR(breathingState), 2, true];
     };
@@ -209,7 +222,11 @@ if ((IN_CRDC_ARRST(_unit)) || !_airway || _paralysis) then {
             _actualVentilation = (_tidalVolume * _respiratoryRate) * _bronchospasm;
             playSound3D [QPATHTOF_SOUND(audio\gasp.ogg), _unit, false, getPosASL _unit, 6, 1, 8];
         };
-
+        _respDrive = _respDrive max 0 min 1;
+            
+        _respiratoryRate  = _respiratoryRate  * _respDrive;
+        _respiratoryDepth = _respiratoryDepth * (_respDrive max MINIMUM_DEPTH);
+        _actualVentilation = _actualVentilation * _respDrive;
         _patternApplied = true;
         _unit setVariable [QGVAR(breathingState), 3, true];
     };
@@ -231,7 +248,6 @@ if ((IN_CRDC_ARRST(_unit)) || !_airway || _paralysis) then {
             _respiratoryDepth = 0;
             _tidalVolume = 0;
             _actualVentilation = 1;
-
             _patternApplied = true;
         }
         else
@@ -248,7 +264,11 @@ if ((IN_CRDC_ARRST(_unit)) || !_airway || _paralysis) then {
                 _tidalVolume = 0;
                 _actualVentilation = 1;
             };
+            _respDrive = _respDrive max 0 min 1;
 
+            _respiratoryRate  = _respiratoryRate  * _respDrive;
+            _respiratoryDepth = _respiratoryDepth * (_respDrive max MINIMUM_DEPTH);
+            _actualVentilation = _actualVentilation * _respDrive;
             _patternApplied = true;
             _unit setVariable [QGVAR(breathingState), 4, true];
         };
@@ -267,6 +287,12 @@ if ((IN_CRDC_ARRST(_unit)) || !_airway || _paralysis) then {
     };
     _actualVentilation = (_tidalVolume * _respiratoryRate) * _bronchospasm;
     };
+    _respDrive = _respDrive max 0 min 1;
+    // Apply central suppression
+    _respiratoryRate  = _respiratoryRate  * _respDrive;
+    _respiratoryDepth = _respiratoryDepth * (_respDrive max MINIMUM_DEPTH);
+    _actualVentilation = _actualVentilation * _respDrive;
+    TRACE_5("Breathing",_respiratoryDepth,_actualVentilation,_respiratoryRate,_respDrive,_CPP)
 };
 private _paco2 = 40;
 
