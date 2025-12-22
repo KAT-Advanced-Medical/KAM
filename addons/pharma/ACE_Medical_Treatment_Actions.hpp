@@ -663,6 +663,24 @@ class ACE_Medical_Treatment_Actions {
         displayName = KATPUSHCSTRING(atropineIV,5ml,30);
         displayNameProgress = KATPUSHINGCSTRING(atropineIV,5ml,30);
     };
+    class syringe_Bicarbonate_5ml_20: syringe_EACA_5ml_10 {
+        medicRequired = QGVAR(medLvl_bicarbonate);
+        items[] = {"kat_syringe_bicarbonate_5ml_20"};
+        displayName = KATPUSHCSTRING(bicarbonate,5ml,20);
+        displayNameProgress = KATPUSHINGCSTRING(bicarbonate,5ml,20);
+    };
+    class syringe_CalciumChloride_5ml_20: syringe_EACA_5ml_10 {
+        medicRequired = QGVAR(medLvl_CalciumChloride);
+        items[] = {"kat_syringe_calciumChloride_5ml_20"};
+        displayName = KATPUSHCSTRING(CalciumChloride,5ml,20);
+        displayNameProgress = KATPUSHINGCSTRING(CalciumChloride,5ml,20);
+    };
+    class syringe_CalciumGluconate_5ml_20: syringe_EACA_5ml_10 {
+        medicRequired = QGVAR(medLvl_calciumGluconate);
+        items[] = {"kat_syringe_calciumGluconate_5ml_20"};
+        displayName = KATPUSHCSTRING(calciumGluconate,5ml,20);
+        displayNameProgress = KATPUSHINGCSTRING(calciumGluconate,5ml,20);
+    };
     class syringe_Diazepam_5ml_10: syringe_EACA_5ml_10 {
         medicRequired = QGVAR(medLvl_diazepam);
         items[] = {"kat_syringe_diazepam_5ml_10"};

@@ -60,7 +60,7 @@ if !(GVAR(coagulation)) exitWith {};
     } forEach _medStack;
     private _calciumRegenMult = linearConversion [
         1.2, 2.4,        // severe hypocalcemia → normal
-        _calcium,
+        _ca,
         0.3, 1.0,        // up to 70% reduction
         true
     ];

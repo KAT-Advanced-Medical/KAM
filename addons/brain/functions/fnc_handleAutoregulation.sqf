@@ -74,7 +74,7 @@ private _newPFH = [{
 
     private _CBF = round (_CPP / _newCVR);
     private _CPR = (_CBF / 800 * 100) min 200;
-    _CPR = _CPR * (GET_KAT_SPO2(_unit)/100);
+    _CPR = _CPR * (GET_KAT_SPO2(_unit)/98);
     _unit setVariable [QGVAR(CVR),_newCVR,true];
     _unit setVariable [QGVAR(CBF),_CBF,true];
     _unit setVariable [QGVAR(CPR),_CPR,true];

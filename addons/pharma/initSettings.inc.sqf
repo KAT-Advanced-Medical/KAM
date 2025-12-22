@@ -933,6 +933,33 @@
 ] call CBA_Settings_fnc_init;
 
 [
+    QGVAR(medLvl_bicarbonate),
+    "LIST",
+    [LLSTRING(medLvl_bicarbonate)],
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_Medications)],
+    [[0, 1, 2], [ACELSTRING(medical_treatment,Anyone), ACELSTRING(medical_treatment,Medics), ACELSTRING(medical_treatment,Doctors)], 0],
+    true
+] call CBA_Settings_fnc_init;
+
+[
+    QGVAR(medLvl_CalciumChloride),
+    "LIST",
+    [LLSTRING(medLvl_CalciumChloride)],
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_Medications)],
+    [[0, 1, 2], [ACELSTRING(medical_treatment,Anyone), ACELSTRING(medical_treatment,Medics), ACELSTRING(medical_treatment,Doctors)], 0],
+    true
+] call CBA_Settings_fnc_init;
+
+[
+    QGVAR(medLvl_calciumGluconate),
+    "LIST",
+    [LLSTRING(medLvl_calciumGluconate)],
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_Medications)],
+    [[0, 1, 2], [ACELSTRING(medical_treatment,Anyone), ACELSTRING(medical_treatment,Medics), ACELSTRING(medical_treatment,Doctors)], 0],
+    true
+] call CBA_Settings_fnc_init;
+
+[
     QGVAR(medLvl_Diazepam),
     "LIST",
     [LLSTRING(medLvl_Diazepam)],

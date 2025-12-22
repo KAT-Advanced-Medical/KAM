@@ -16,8 +16,9 @@
  */
 
 params ["_target"];
-private _lastTime = _unit getVariable [QEGVAR(circulation,bloodGasTime), 0, true];
+private _lastTime = _target getVariable [QEGVAR(circulation,bloodGasTime), 0, true];
 private _now = CBA_missionTime;
+private _elapsed = _now - _lastTime;
 private _hours = floor (_elapsed / 3600);
 private _minutes = floor ((_elapsed % 3600) / 60);
 private _seconds = floor (_elapsed % 60);

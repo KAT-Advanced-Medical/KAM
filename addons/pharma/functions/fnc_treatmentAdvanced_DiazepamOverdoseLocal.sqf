@@ -20,6 +20,7 @@ private _medStack = _patient call ACEFUNC(medical_status,getAllMedicationCount);
 private _fentanylEffectiveness = 0;
 private _nalbuphineEffectiveness = 0;
 private _morphineEffectiveness = 0;
+private _lorazepamEffectiveness = 0;
 {
     private _medName = toLower (_x select 0);
     private _effectiveness = _x select 2;

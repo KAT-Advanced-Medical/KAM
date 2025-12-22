@@ -69,7 +69,7 @@ if (GVAR(kidneyAction)) then {
         /* =========================
            SHOCK MODEL
         ========================= */
-        private _bvFrac = (_bv / 2300) max 0.3 min 1;
+        private _bvFrac = (_bv / 2700) max 0.3 min 1;
         private _shockIndex = (_hr / (_bvFrac * 100)) max 0.5 min 3;
 
         private _shockAcidLoad = linearConversion [1, 2, _shockIndex, 0, 0.6, true];
@@ -208,17 +208,17 @@ if (GVAR(kidneyAction)) then {
         private _ca = GET_CA(_unit);
         private _damage = _unit getVariable [QGVAR(calciumDamage), 0];
         private _ph = GET_PH(_unit);
-        private _bv = GET_BLOOD_VOLUME_LITERS(_unit);
+        private _bv = GET_BODY_FLUID_ECB(_unit);
         private _hr = GET_HEART_RATE(_unit);
         private _lactate = _unit getVariable [QGVAR(lactate), 1.2];
-        private _bvFrac = (_bv / 6) max 0.3 min 1;
+        private _bvFrac = (_bv / 2700) max 0.3 min 1;
         private _shockIndex = (_hr / (_bvFrac * 100)) max 0.5 min 3;
         private _liverDamage = _unit getVariable [QGVAR(liverDamage), 0];
         private _liverFail   = _unit getVariable [QGVAR(liverFail), false];
         private _bicarb = [_unit, "Bicarbonate"] call ACEFUNC(medical_status,getMedicationCount) select 1;
         private _externalPh = _unit getVariable [QGVAR(externalPh), 0];
-        private _caCl2 = [_unit, "Calcium Chloride"] call ACEFUNC(medical_status,getMedicationCount) select 1;
-        private _caGlu = [_unit, "Calcium Gluconate"] call ACEFUNC(medical_status,getMedicationCount) select 1;
+        private _caCl2 = [_unit, "CalciumChloride"] call ACEFUNC(medical_status,getMedicationCount) select 1;
+        private _caGlu = [_unit, "CalciumGluconate"] call ACEFUNC(medical_status,getMedicationCount) select 1;
         private _txa = [_unit, "TXA"] call ACEFUNC(medical_status,getMedicationCount) select 1;
         private _effectiveCa = _unit getVariable [QGVAR(effectiveCa), GET_CA(_unit)];
         private _bufferFrac = linearConversion [0, 300, _externalPh, 1, 0.15, true];
@@ -390,6 +390,7 @@ if (GVAR(kidneyAction)) then {
                 _arrProb max
                 linearConversion [3.0, 3.6, _effectiveCa, 0.01, 0.1, true];
         };
+        diag_log str _arrProb;
         private _lastArr = _unit getVariable [QGVAR(lastArrhythmia), -1000];
         if (_lastArr > 0 && {CBA_missionTime - _lastArr < 60}) exitWith {};
         if (random 1 < _arrProb) then {
@@ -435,4 +436,3 @@ if (GVAR(kidneyAction)) then {
 
     }, 30, [_unit]] call CBA_fnc_addPerFrameHandler;
 };
-

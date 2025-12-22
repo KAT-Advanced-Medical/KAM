@@ -354,6 +354,7 @@
 #define VAR_BLOOD_GAS                  QEGVAR(circulation,bloodGas)
 #define VAR_BREATHING_RATE             QEGVAR(breathing,breathRate)
 #define VAR_SERUM_CALCUIM              QEGVAR(pharma,serumCalcuim)
+#define VAR_MAP                        QEGVAR(circulation,map)
 
 #define GET_BLOOD_GAS(unit)            (unit getVariable [VAR_BLOOD_GAS, DEFAULT_BLOOD_GAS])
 #define GET_PACO2(unit)                 ((unit getVariable [VAR_BLOOD_GAS, DEFAULT_BLOOD_GAS]) select 0)
@@ -363,6 +364,7 @@
 #define GET_ETCO2(unit)                ((unit getVariable [VAR_BLOOD_GAS, DEFAULT_BLOOD_GAS]) select 5)
 #define GET_CA(unit)                   (unit getVariable [VAR_SERUM_CALCUIM, 2.4])
 #define GET_BREATHING_RATE(unit)       (unit getVariable [VAR_BREATHING_RATE, 15])
+#define GET_MAP(unit)                   (unit getVariable [VAR_MAP, 93])
 
 #define VAR_RESPIRATORY_DEPTH           QEGVAR(vitals,respiratoryDepth)
 #define GET_KAT_RESPIRATORY_DEPTH(unit)      (unit getVariable [QEGVAR(vitals,respiratoryDepth), 10])

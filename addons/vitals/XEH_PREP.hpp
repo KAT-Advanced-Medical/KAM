@@ -5,6 +5,7 @@ PREP(fullHealLocal);
 PREP(generateDefaultWeight);
 PREP(getBloodLoss);
 PREP(getCardiacOutput);
+PREP(getCushings);
 PREP(getDefaultStrokeVolume);
 PREP(getStrokeVolume);
 PREP(handleCardiacFunction);

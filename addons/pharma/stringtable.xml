@@ -6070,5 +6070,59 @@
         <Key ID="STR_KAT_Pharma_setting_ivleakagethreshold_desc">
             <English>Threshold for a limb to be considered damaged and cause leakage</English>
         </Key>
+        <Key ID="STR_KAT_Pharma_medLvl_Bicarbonate">
+            <English>Medical level required for Bicarbonate</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_Bicarbonate_Box_Display">
+            <English>Vial: Bicarbonate</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_Bicarbonate_DescShort">
+            <English>Used to manage Ph</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_Push_Bicarbonate_5ml_20">
+            <English>Push 80 mEq Bicarbonate</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_Pushing_Bicarbonate_5ml_20">
+            <English>Pushing 80 mEq Bicarbonate</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_SyringeDisplay_Bicarbonate_5ml_20">
+            <English>5ml Syringe / 80 mEq Bicarbonate</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_medLvl_CalciumChloride">
+            <English>Medical level required for Calcium Chloride</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_CalciumChloride_Box_Display">
+            <English>Vial: Calcium Chloride</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_CalciumChloride_DescShort">
+            <English>Used to manage calcium</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_Push_CalciumChloride_5ml_20">
+            <English>Push 1g Calcium Chloride</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_Pushing_CalciumChloride_5ml_20">
+            <English>Pushing 1g Calcium Chloride</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_SyringeDisplay_CalciumChloride_5ml_20">
+            <English>5ml Syringe / 1g Calcium Chloride</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_medLvl_calciumGluconate">
+            <English>Medical level required for Calcium Gluconate</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_calciumGluconate_Box_Display">
+            <English>Vial: Calcium Gluconate</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_calciumGluconate_DescShort">
+            <English>Used to manage calcium</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_Push_calciumGluconate_5ml_20">
+            <English>Push 1g Calcium Gluconate</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_Pushing_calciumGluconate_5ml_20">
+            <English>Pushing 1g Calcium Gluconate</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_SyringeDisplay_calciumGluconate_5ml_20">
+            <English>5ml Syringe / 1g Calcium Gluconate</English>
+        </Key>
     </Package>
 </Project>

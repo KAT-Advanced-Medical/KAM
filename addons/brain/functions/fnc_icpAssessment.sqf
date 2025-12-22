@@ -18,5 +18,4 @@
  */
 
 params ["_medic", "_patient", "_bodyPart"];
-diag_Log "icp";
 [QGVAR(icpAssessment), [_medic, _patient, _bodyPart], _patient] call CBA_fnc_targetEvent;
