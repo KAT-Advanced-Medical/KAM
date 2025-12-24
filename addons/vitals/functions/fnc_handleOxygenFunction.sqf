@@ -124,7 +124,7 @@ if ((IN_CRDC_ARRST(_unit)) || !_airway || _paralysis) then {
     private _map = GET_MAP(_unit);
     private _CPP = (_map - _icp) max 0;
 
-    private _respDrive = linearConversion [80, 20, _CPP, 1.0, 0.5, true];
+    private _respDrive = linearConversion [80, 20, _CPP, 1.0, 0.1, true];
     _respDrive = _respDrive * (1 - (_opioidDepression * 0.6));
     _respDrive = _respDrive max 0 min 1;
 
