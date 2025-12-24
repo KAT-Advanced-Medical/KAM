@@ -45,6 +45,7 @@ private _alveolarDemand = 1;
 private _baseTidalVolume = 1;
 private _etco2 = 15;
 private _pao2 = 90;
+private _targetPao2 = 90;
 private _patternApplied = false;
 private _previousCyclePaco2 = (_bloodGas select 0);
 private _previousCyclePao2  = (_bloodGas select 1);
@@ -524,7 +525,8 @@ if (IN_CRDC_ARRST(_unit)) then {
     private _ventFrac = linearConversion [0.3, 1.0, _alveolarVent / (_alveolarDemand max 1), 0.2, 1.0, true];
     _pao2 = (_pALVo2 * _ventFrac) max 1;
 };
-
+private _arrestPerfusion = [1, (1 * EGVAR(breathing,SpO2_PerfusionMultiplier))] select ((IN_CRDC_ARRST(_unit)) && (EGVAR(breathing,SpO2_perfusion)));
+_pao2 = if (_previousCyclePao2 != _pao2) then { ([ (_previousCyclePao2 - ((PAO2_MAX_CHANGE * EGVAR(breathing,SpO2_MultiplyNegative) * _arrestPerfusion) * _deltaT)) , (_previousCyclePao2 + ((PAO2_MAX_CHANGE * EGVAR(breathing,SpO2_MultiplyPositive)) * _deltaT))] select ((_previousCyclePao2 - _pao2) < 0)) } else { _pao2 };
 ///////////////////////////////////////////////////////////////////////////////
 // pH & SATURATION (UNCHANGED)
 ///////////////////////////////////////////////////////////////////////////////
