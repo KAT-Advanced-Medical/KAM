@@ -1,4 +1,3 @@
-#define DEBUG_MODE_FULL
 #include "..\script_component.hpp"
 /*
  * Author: Cplhardcore
@@ -119,6 +118,17 @@ private _effectiveCVP =
     * _effectiveVaso
     * _vrEff;
 private _arterialEffect = linearConversion [0.7, 1.3, _effectiveVaso, 0.85, 1.25, true];
+TRACE_8(
+    "_effectiveCVP",
+    _defaultCVP,
+    _bvComp,
+    _effectiveVaso,
+    _globalVaso,
+    _vasoTone,
+    _fillPortion,
+    _effectiveCVP,
+    _defaultCVP
+);
 // =======================
 // PRELOAD & STARLING
 // =======================
@@ -132,16 +142,41 @@ private _edv = BASELINE_EDV * _preload * _fillPortion;
 
 private _edvNorm = (_edv / BASELINE_EDV) min 1.4 max 0.4;
 
+private _restEDV = BASELINE_EDV * _fillPortion;
+private _edvRel = _edv / _restEDV;
+
 private _starlingGain =
-    (1 / (1 + exp (-6 * (_edvNorm - 1)))) / 0.5;
+    linearConversion
+    [
+        0.7, 1.2,        // relative EDV range
+        _edvRel,
+        0.8, 1.15,      // gain range
+        true
+    ];
 
 _starlingGain = _starlingGain min 1.35;
-
+TRACE_8(
+    "_starlingGain",
+    _starlingGain,
+    _edvNorm,
+    _edv,
+    BASELINE_EDV,
+    _preload,
+    _fillPortion,
+    _effectiveCVP,
+    _defaultCVP
+);
 // =======================
 // AFTERLOAD & ESV
 // =======================
-private _afterload =
-    (1 / (_bloodVolumeRatio max 0.3))
+_afterload =
+    linearConversion
+    [
+        0.6, 1.0,
+        _bloodVolumeRatio,
+        1.2, 1.0,
+        true
+    ]
     * _arterialEffect;
 
 private _effectiveContractility =
@@ -149,7 +184,16 @@ private _effectiveContractility =
 
 private _esv =
     BASELINE_ESV * (_afterload / _effectiveContractility);
-
+TRACE_6(
+    "esv",
+    _afterload,
+    _effectiveContractility,
+    _contractility,
+    _starlingGain,
+    _bloodVolumeRatio,
+    _arterialEffect
+);
+_esv = _esv min (_edv * 0.95);
 // =======================
 // FINAL STROKE VOLUME
 // =======================

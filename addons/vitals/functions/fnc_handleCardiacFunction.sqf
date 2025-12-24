@@ -40,14 +40,14 @@ TRACE_4(
 if IN_CRDC_ARRST(_unit) then {
     if (alive (_unit getVariable [QACEGVAR(medical,CPR_provider), objNull])) then {
         if (_actualHeartRate == 0) then { _syncValue = true };
-        _actualHeartRate = random [100, 110, 120];
+        _actualHeartRate = random [95, 100, 110];
     } else {
         if (_actualHeartRate != 0) then { _syncValue = true };
         _actualHeartRate = 0;
     };
 } else {
-
-    #define MAP_SETPOINT 94.7
+    private _defaultHR = _unit getVariable [QEGVAR(circulation,defaultHeartRate), 80];
+    private _mapSetpoint  = linearConversion [60, 100, _defaultHR, 71, 112, true];
     #define MAP_DEADBAND 3
     #define BARO_KP 0.6
     #define BARO_KI 0.12
@@ -55,8 +55,8 @@ if IN_CRDC_ARRST(_unit) then {
     #define MIN_HR 20
     #define MAX_HR 220
 
-    private _defaultHR = _unit getVariable [QEGVAR(circulation,defaultHeartRate), 80];
-    private _painLevel = GET_PAIN_PERCEIVED(_unit);
+
+    _painLevel = GET_PAIN_PERCEIVED(_unit);
 
     private _lastHR =
         GET_HEART_RATE(_unit)
@@ -65,7 +65,7 @@ if IN_CRDC_ARRST(_unit) then {
         - (_aceAnFatigue * 40);
 
     // ================= SV MODEL =================
-    private _baselineSV = 0.0892878;
+    private _baselineSV = 0.0790542;
     private _strokeVolume = [_unit] call FUNC(getStrokeVolume);
 
     private _svMemory =
@@ -87,7 +87,7 @@ if IN_CRDC_ARRST(_unit) then {
     );
 
     // ================= BAROREFLEX CORE =================
-    private _mapError = MAP_SETPOINT - _map;
+    private _mapError = (_mapSetpoint) - _map;
     if (abs _mapError < MAP_DEADBAND) then { _mapError = 0 };
 
     private _mapIntegral =
@@ -159,7 +159,7 @@ if IN_CRDC_ARRST(_unit) then {
     _modelHR = _modelHR * (1 - _vagalTone);
 
     // ================= SHOCK =================
-    private _shockClass = "NONE";
+    _shockClass = "NONE";
     if (_effectiveSV < 0.06 && _map < 70) then { _shockClass = "COMPENSATED" };
     if (_effectiveSV < 0.04 && _map < 60) then { _shockClass = "DECOMPENSATED" };
     if (_effectiveSV < 0.025) then { _shockClass = "TERMINAL" };
@@ -200,17 +200,25 @@ if IN_CRDC_ARRST(_unit) then {
     };
 
     // ================= REST LOCK =================
-    if (
-        abs (_map - MAP_SETPOINT) < 2
+   if (
+        abs (_map - _mapSetpoint) < 2
         && abs (_effectiveSV - _baselineSV) < 0.003
         && _painLevel < 0.05
         && _aceAnFatigue < 0.05
     ) then {
         _actualHeartRate = _defaultHR;
+    
+        // Hard reset control states
         _mapIntegral = 0;
         _unit setVariable [QEGVAR(circulation,mapIntegral), 0];
     
-        TRACE_1("REST_LOCK", _actualHeartRate);
+        _unit setVariable [QEGVAR(circulation,hrMemory), _defaultHR];
+    
+        TRACE_1("REST_LOCK_HARD", _actualHeartRate);
+    
+        // Skip smoothing entirely
+        _unit setVariable [VAR_HEART_RATE, _actualHeartRate, _syncValue];
+        _actualHeartRate
     };
 
     // ================= MODIFIERS =================
@@ -222,7 +230,27 @@ if IN_CRDC_ARRST(_unit) then {
 
     _actualHeartRate = (_actualHeartRate max MIN_HR) min MAX_HR;
 };
+// ================= HR SMOOTHING =================
+private _hrMem =
+    _unit getVariable [QEGVAR(circulation,hrMemory), _actualHeartRate];
 
+// Time constant (seconds)
+private _hrTau = 3.5;
+
+// Faster response in shock or pain
+if (_shockClass != "NONE" || _painLevel > 0.4) then {
+    _hrTau = 1.8;
+};
+
+// First-order low-pass filter
+_hrMem =
+    _hrMem
+    + ((_actualHeartRate - _hrMem) * (_deltaT / _hrTau));
+
+_unit setVariable [QEGVAR(circulation,hrMemory), _hrMem];
+
+// Replace output
+_actualHeartRate = _hrMem;
 // ================= FINAL TRACE =================
 TRACE_3(
     "HR_FINAL",

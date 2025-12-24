@@ -1,4 +1,3 @@
-#define DEBUG_MODE_FULL
 #include "..\script_component.hpp"
 /*
  * Author: Glowbal
@@ -19,8 +18,8 @@
  */
 params ["_unit"];
 #define BASELINE_MAP 94.7
-#define BASELINE_CO  0.0893 // L/s
-#define BASELINE_SVR (94.7 / 0.0893 )  // ≈ 860
+#define BASELINE_CO  0.0997921 // L/s
+#define BASELINE_SVR (94.7 / 0.0997921 )  // ≈ 860
 // =======================
 // BASE PHYSIO INPUTS
 // =======================
@@ -144,6 +143,6 @@ private _changeDiastolic = 0;
 // FINAL OUTPUT
 // =======================
 [
-    (round (_systolic  + _changeSystolic) max 0),
-    (round (_diastolic + _changeDiastolic) max 0)
+    (round (_diastolic + _changeDiastolic) max 0),
+    (round (_systolic  + _changeSystolic) max 0)
 ]
