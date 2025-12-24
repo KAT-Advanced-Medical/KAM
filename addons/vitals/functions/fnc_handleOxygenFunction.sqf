@@ -32,8 +32,8 @@ params ["_unit", "_actualHeartRate", "_anerobicPressure", "_bloodGas", "_tempera
 #define PAO2_MAX_CHANGE 0.1
 #define DEFAULT_FIO2 0.21
 #define MINIMUM_DEPTH 0.2
-#define BASE_MIN_VENT 4200
-#define DEAD_SPACE_FRAC 0.3
+#define BASE_MIN_VENT 5600
+#define DEAD_SPACE_FRAC 0.22
 #define RESP_Q 0.8
 #define CO_REF 6.267584
 private _respiratoryRate = 0;
@@ -42,7 +42,9 @@ private _respiratoryDepth = 0;
 private _demandVentilation = 0;
 private _actualVentilation = 1;
 private _alveolarVent = 1;
-private _etco2 = 0;
+private _alveolarDemand = 1;
+private _etco2 = 15;
+private _pao2 = 90;
 private _patternApplied = false;
 private _previousCyclePaco2 = (_bloodGas select 0);
 private _previousCyclePao2  = (_bloodGas select 1);
@@ -102,7 +104,7 @@ if ((IN_CRDC_ARRST(_unit)) || !_airway || _paralysis) then {
     private _co = [_unit] call FUNC(getCardiacOutput);
     private _coNorm = linearConversion [0.7, 1.4, _co / CO_REF, 0.85, 1.35, true];
 
-    private _co2Drive = linearConversion [35, 55, _previousCyclePaco2, -800, 2400, true];
+    private _co2Drive = linearConversion [30, 50, _previousCyclePaco2, -1200, 1200, true];
     private _anaerobicDrive = linearConversion [1.0, 1.6, _anerobicPressure, 0, 3000, true];
 
     _demandVentilation =
@@ -356,7 +358,7 @@ if (!_patternApplied) then {
         );
 
         private _targetRR =
-            linearConversion [4000, 14000, _demandVentilation, 12, 28, true];
+            linearConversion [2500, 14000, _demandVentilation, 10, 28, true];
 
         _targetRR = (_targetRR min MAXIMUM_RR) * _respiratoryRateMult;
         _targetRR = _targetRR * (1 - (_opioidDepression * 0.6));
@@ -390,7 +392,8 @@ if (!_patternApplied) then {
             ((DEFAULT_RESPIRATORY_DEPTH - (_opioidDepression / 1.5))
             max MINIMUM_DEPTH)
             * _respDrive;
-
+        private _hypocapniaScale = linearConversion [25, 40, _previousCyclePaco2, 0.7, 1.0, true];
+        _respiratoryDepth = _respiratoryDepth * _hypocapniaScale;
         private _baseVT =
             GET_KAT_SURFACE_AREA(_unit)
             * (_respiratoryDepth / 10);
@@ -450,9 +453,36 @@ private _paco2 = _previousCyclePaco2;
 
 if (EGVAR(breathing,paco2Active)) then {
     private _ventRatio = _alveolarVent / (_alveolarDemand max 1);
-    private _co2Prod = 1 + ((_anerobicPressure - 1) max 0);
+    // --- Consciousness
+    private _unconscious = !alive _unit || (_unit getVariable ["ACE_isUnconscious", false]);
 
-    private _targetPaco2 = DEFAULT_PACO2 * (_co2Prod / _ventRatio);
+    // --- Sedation / opioids (0–1)
+    private _opioid = _unit getVariable [QEGVAR(pharma,opioidDepression), 0];
+
+    // --- Anesthesia proxy (ACE fatigue used as CNS suppression)
+    private _cnsSuppression = (_unit getVariable [QEGVAR(surgery,sedated), 0])
+        max (_opioid);
+
+    // --- Awake baseline
+    private _basal = 1.0;
+
+    // --- CNS suppression scaling
+    private _cnsScale =
+        linearConversion [0, 1, _cnsSuppression, 1.0, 0.65, true];
+
+
+    // --- Unconscious override
+    if (_unconscious) then {
+        _basalCO2Prod = 0.8;
+    };
+    private _basalCO2Prod = _basal * _cnsScale;
+    private _co2Prod =
+    _basalCO2Prod
+    + ((_anerobicPressure - 1) max 0);
+    private _targetPaco2 =
+    DEFAULT_PACO2
+    * (_co2Prod)
+    / ((_alveolarVent / 4200) max 0.3);
     _targetPaco2 = _targetPaco2 max 15 min 120;
 
     private _deltaPaco2 = (_targetPaco2 - _previousCyclePaco2);
@@ -507,7 +537,12 @@ private _pH =
 
 private _p50 = ((25 - (((_pH / DEFAULT_PH) - 1) * 150)) max 15) min 40;
 private _o2Sat = ((_pao2^2.7) / (_p50^2.7 + _pao2^2.7)) min 0.999;
-
+TRACE_4("BREATH_REST",
+    _respiratoryRate,
+    _demandVentilation,
+    _paco2,
+    _pao2
+);
 ///////////////////////////////////////////////////////////////////////////////
 // OUTPUT
 ///////////////////////////////////////////////////////////////////////////////
