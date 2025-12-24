@@ -50,6 +50,7 @@ if (!isNil {_unit getVariable [QACEGVAR(medical,ivBags),[]]}) then {
 
     _bloodBags = _bloodBags apply {
         _x params ["_bagVolumeRemaining", "_type", "_bodyPart", "_treatment", "_rateCoef", "_item", "_plateletAmount", "_phChange", "_caChange"];
+        _x params ["_bagVolumeRemaining", "_type", "_bodyPart", "_treatment", "_rateCoef", "_item", "_plateletAmount", "_phChange", "_caChange", "_bagID"];
 
         private _tourniquets = GET_TOURNIQUETS(_unit);
         private _occlusionMap = [
@@ -67,7 +68,7 @@ if (!isNil {_unit getVariable [QACEGVAR(medical,ivBags),[]]}) then {
         private _result = if (_idx != -1) then { _occlusionMap select _idx select 1 } else { [] };
         private _isOccluded = ({ _tourniquets select _x != 0 } count _result > 0) && (_IVarray select _bodyPart isNotEqualTo 13);
         if ((!_isOccluded) && ([7,8,9,15] find (_IVarray select _bodyPart) == -1)) then {
-            if (_type in ["Blood", "Saline", "Plasma", "Ringers Lactate", "PackedRBC"]) then {
+            if (_type in ["Blood", "Saline", "Plasma", "Ringers Lactate", "PackedRBC", "Hypertonic Saline", "Hextend"]) then {
             private _IVflow = _unit getVariable [QGVAR(IVflow), [0,0,0,0,0,0,0,0,0,0,0,0]];
             private _IVrate = _unit getVariable [QGVAR(IVrate), [0,0,0,0,0,0,0,0,0,0,0,0]];
             private _pressureBag = _unit getVariable [QGVAR(pressureBag), [0,0,0,0,0,0,0,0,0,0,0,0]];
@@ -160,7 +161,8 @@ if (!isNil {_unit getVariable [QACEGVAR(medical,ivBags),[]]}) then {
                     } else {
                         { _ECP = _ECP + _bagChange; _lossVolumeChange = _lossVolumeChange + (_bagChange / ML_TO_LITERS); };
                     };
-                    _unit setVariable [QEGVAR(brain,salineFlow), _bagChange];
+                    private _salineFlow = _unit getVariable [QEGVAR(brain,salineFlow), 0];
+                    _unit setVariable [QEGVAR(brain,salineFlow), _salineFlow + (_deltaFlow * 3), true];
                     _platelets = (_platelets + (_plateletAmount * _bagChange)) max 0;
                 };
                 case(_type == "Ringers Lactate"): {
@@ -193,6 +195,26 @@ if (!isNil {_unit getVariable [QACEGVAR(medical,ivBags),[]]}) then {
                         _lossVolumeChange = _lossVolumeChange + (_bagChange / ML_TO_LITERS);
                     };
                 };
+                case(_type == "Hypertonic Saline"): { 
+                    if (_enableFluidShift) then {
+                        private _shiftVolume = (_bagChange / 1.5);
+                        _shiftVolume = _shiftVolume min _ISP;
+                        _ISP = _ISP - _shiftVolume;
+                        _ECP = _ECP + _shiftVolume;
+                        _ECP = _ECP + (_bagChange - _shiftVolume);
+                    
+                        _lossVolumeChange = _lossVolumeChange + (_bagChange / ML_TO_LITERS);
+                    } else {
+                        { _ECP = _ECP + _bagChange; _lossVolumeChange = _lossVolumeChange + (_bagChange / ML_TO_LITERS); };
+                    };
+                    private _salineFlow = _unit getVariable [QEGVAR(brain,salineFlow), 0];
+                    _unit setVariable [QEGVAR(brain,salineFlow), _salineFlow + (_deltaFlow * 3), true];
+                    _platelets = (_platelets + (_plateletAmount * _bagChange)) max 0;
+                };
+                case(_type == "Hextend"): {
+                    _ECP = _ECP + (_bagChange * 1.5); 
+                    _lossVolumeChange = _lossVolumeChange + (_bagChange / ML_TO_LITERS); 
+                    _platelets = (_platelets + (_plateletAmount * _bagChange)) max 0;};
             };
             
             private _damageAmount = [_unit,_idx] call EFUNC(hitpoints,damageAmount);
@@ -308,38 +330,49 @@ if (!isNil {_unit getVariable [QACEGVAR(medical,ivBags),[]]}) then {
 private _SRBCChange = 0;
 
 if (_enableFluidShift) then {
-    private _shiftValue = 0;
-    private _defaultShift = false;
-
-    _SRBCChange = [0, 0.5] select ((_SRBC > 0) && (_ECB < DEFAULT_ECB));
-    _ECB = _ECB + (_SRBCChange * _deltaT);
-    _SRBC = _SRBC - (_SRBCChange * _deltaT);
-
-    switch (true) do {
-        case (((_ECB + _ECP) > (_ISP * 0.6)) && ((_ECB + _ECP) > 4500)): {
-            // Negative shifts only happen above 4500ml of blood volume, to prevent patients from falling back into arrest/unconsciousness
-            _shiftValue = (1 min ((_ECP + _ECB) - (_ISP * 0.6))) * _deltaT;
-
-            _ECP = _ECP - _shiftValue;
-            _ISP = _ISP + _shiftValue;
-        };
-        case ((_ECB + _ECP) < (_ISP * 0.6)): {
-            _shiftValue = (1 min ((_ISP * 0.6) - (_ECP + _ECB))) *_deltaT;
-
-            if (_shiftValue < 0.1) exitWith { _defaultShift = true; };
-
-            _ECP = _ECP + _shiftValue;
-            _ISP = _ISP - _shiftValue;
-        };
-        default {
-            _defaultShift = true;
-        };
+    private _srbcRate = 0;
+    if ((_SRBC > 0) && (_ECB < DEFAULT_ECB)) then {
+        _srbcRate = linearConversion [
+            DEFAULT_ECB * 0.7,
+            DEFAULT_ECB,
+            _ECB,
+            0.05,
+            0.3,
+            true
+        ];
     };
+    private _srbcShift = _srbcRate min _SRBC;
+    _SRBC = _SRBC - _srbcShift;
+    _ECB  = _ECB  + _srbcShift;
+    private _intravascularVol = _ECB + _ECP;
+    private _targetRatio = 0.6;
 
-    if (_defaultShift) then {
-        _ISP = _ISP + ((((DEFAULT_ISP - _ISP) max -2) min 2) *_deltaT);
-        _SRBC = _SRBC + ((((DEFAULT_SRBC - _SRBC) max -1) min 1) * _deltaT);
+    private _currentRatio =
+        _intravascularVol / ((_ISP max 1));
+    private _drive =
+        (_targetRatio - _currentRatio);
+
+    private _mapCoef =
+        linearConversion [40, 100, _map, 0.3, 1.2, true];
+
+    private _maxRecruit = 1.5;   // ISP → ECP
+    private _maxLeak    = 0.4;   // ECP → ISP (slower)
+
+    private _shiftRate =
+        _drive
+        * _mapCoef
+        * ([_maxLeak, _maxRecruit] select (_drive > 0));
+
+    private _shiftVolume =
+        (_shiftRate * _deltaT)
+        min (_ISP max 0);
+    private _icp = GET_ICP(_unit);
+    if (_icp > 20) then {
+    _shiftVolume = _shiftVolume * 0.7;
     };
+    _ISP = _ISP - _shiftVolume;
+    _ECP = _ECP + _shiftVolume;
+
 };
 
 _unit setVariable [QEGVAR(circulation,bodyFluid), [_ECB, _ECP, _SRBC, _ISP, (_ECP + _ECB), _platelets], _syncValues];

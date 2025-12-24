@@ -151,200 +151,154 @@ if ((IN_CRDC_ARRST(_unit)) || !_airway || _paralysis) then {
         _patternApplied = true;
     };
     if (!_patternApplied && (_icp >= 20) && (_icp < 32)) then {
+        private _t = CBA_missionTime;
+        private _frequency = 1/120;          // 1 Hz = one full sine wave per second
+        private _amplitude = 5;          // peak is +5, trough is -5
+        private _phase = 0;              // no phase shift
 
-        ///////////////////////////////////////////////////////////////////////////
-        // CHEYNE–STOKES: CO2-DELAY DRIVEN (NO TIME BASE)
-        ///////////////////////////////////////////////////////////////////////////
-    
-        // --- CO2 sensing delay (circulatory delay)
-        private _delayTau = linearConversion [20, 32, _icp, 10, 25, true];
-        private _co2Mem = _unit getVariable [QGVAR(csCO2Memory), _previousCyclePaco2];
-    
-        _co2Mem = _co2Mem + ((_previousCyclePaco2 - _co2Mem) * (_deltaT / _delayTau));
-        _unit setVariable [QGVAR(csCO2Memory), _co2Mem];
-    
-        // --- Central controller (overshoot-prone)
-        private _co2Error = _co2Mem - DEFAULT_PACO2;
-    
-        // Gain increases as CPP falls
-        private _csGain = linearConversion [70, 30, _CPP, 0.4, 1.4, true];
-    
-        private _drive = (_co2Error / 10) * _csGain;
-    
-        // --- Clamp drive
-        _drive = _drive max -1.2 min 1.5;
-    
-        if (_drive <= -0.3) then {
-            // Apnea phase
+        private _value = (sin ((_t * _frequency * 360) + _phase)) * _amplitude;
+        private _env = linearConversion [-5, 5, _value, 0, 2, true];
+        if (_env < 0.15) then {
             _respiratoryRate  = 0;
             _respiratoryDepth = 0;
             _tidalVolume      = 0;
             _actualVentilation = 1;
-    
+            _patternApplied = true;
         } else {
-            // Crescendo–decrescendo phase
-            private _env = linearConversion [-0.3, 1.5, _drive, 0.2, 1.8, true];
-    
-            _respiratoryRate  = 14 * _env;
+            _respiratoryRate  = 15 * _env;
             _respiratoryDepth = 10 * _env;
-    
-            _tidalVolume =
-                GET_KAT_SURFACE_AREA(_unit)
-                * (_respiratoryDepth / 10);
-    
-            _actualVentilation =
-                (_tidalVolume * _respiratoryRate)
-                * _bronchospasm;
+            _tidalVolume      = GET_KAT_SURFACE_AREA(_unit) * (_respiratoryDepth / 10);
+            _actualVentilation = (_tidalVolume * _respiratoryRate) * _bronchospasm;
+            _patternApplied = true;
         };
-    
-        // Apply residual central drive suppression
-        _respiratoryRate  = _respiratoryRate  * _respDrive;
-        _respiratoryDepth = _respiratoryDepth * (_respDrive max MINIMUM_DEPTH);
-        _actualVentilation = _actualVentilation * _respDrive;
-    
-        _patternApplied = true;
+
         _unit setVariable [QGVAR(breathingState), 1, true];
     };
 
     if (!_patternApplied && (_icp >= 32) && (_icp < 38)) then {
-        private _rate = floor random [5, 15, 35];
-        private _depth = floor random [3, 10, 25];
-
+        
+        private _timer = _unit getVariable [QGVAR(ataxicTimer), 0];
+        _timer = _timer - _deltaT;
+    
+        if (_timer <= 0) then {
+            // Generate new chaotic pattern
+            _unit setVariable [
+                QGVAR(ataxicRate),
+                floor random [5, 15, 35],
+                true
+            ];
+            _unit setVariable [
+                QGVAR(ataxicDepth),
+                floor random [3, 10, 25],
+                true
+            ];
+    
+            _timer = 3 + random 3;
+        };
+    
+        _unit setVariable [QGVAR(ataxicTimer), _timer, true];
+    
+        private _rate  = _unit getVariable [QGVAR(ataxicRate), 10];
+        private _depth = _unit getVariable [QGVAR(ataxicDepth), 8];
+    
+        // Random apnea event (ataxic pause)
         if ((random 1) < 0.10) then {
+            _respiratoryRate   = 0;
+            _respiratoryDepth  = 0;
+            _tidalVolume       = 0;
+            _actualVentilation = 0;
+        } else {
+            _respiratoryRate  = _rate;
+            _respiratoryDepth = _depth;
+            _tidalVolume =
+                GET_KAT_SURFACE_AREA(_unit) * (_respiratoryDepth / 10);
+    
+            _actualVentilation =
+                (_tidalVolume * _respiratoryRate) * _bronchospasm;
+        };
+    
+        _patternApplied = true;
+        _unit setVariable [QGVAR(breathingState), 2, true];
+    };
+
+    if (!_patternApplied && (_icp >= 38) && (_icp < 45)) then {
+
+        private _timer = _unit getVariable [QGVAR(biotTimer), 0];
+        private _state = _unit getVariable [QGVAR(biotState), "breath"];
+
+        _timer = _timer - _deltaT;
+
+        if (_timer <= 0) then {
+
+            if (_state == "breath") then {
+                _state = "apnea";
+                _timer = 1 + random 3;
+            } else {
+                _state = "breath";
+                _timer = 2 + random 3;
+            };
+
+            _unit setVariable [QGVAR(biotState), _state, true];
+            _unit setVariable [QGVAR(biotTimer), _timer, true];
+        } else {
+            _unit setVariable [QGVAR(biotTimer), _timer, true];
+        };
+
+        if (_state == "apnea") then {
             _respiratoryRate = 0;
             _respiratoryDepth = 0;
             _tidalVolume = 0;
             _actualVentilation = 1;
         } else {
-            _respiratoryRate = _rate;
-            _respiratoryDepth = _depth;
+            _respiratoryRate = 4 + floor (random 4);
+            _respiratoryDepth = _baseRespiratoryDepth * (0.2 + random 1.2);
             _tidalVolume = GET_KAT_SURFACE_AREA(_unit) * (_respiratoryDepth / 10);
             _actualVentilation = (_tidalVolume * _respiratoryRate) * _bronchospasm;
-        };
-        _respDrive = _respDrive max 0 min 1;
-        _respiratoryRate  = _respiratoryRate  * _respDrive;
-        _respiratoryDepth = _respiratoryDepth * (_respDrive max MINIMUM_DEPTH);
-        _actualVentilation = _actualVentilation * _respDrive;
-        _patternApplied = true;
-        _unit setVariable [QGVAR(breathingState), 2, true];
-    };
-
-        if (!_patternApplied && (_icp >= 32) && (_icp < 38)) then {
-
-        ///////////////////////////////////////////////////////////////////////////
-        // BIOT BREATHING — CO2-CHAOTIC (MEDULLARY INSTABILITY)
-        ///////////////////////////////////////////////////////////////////////////
-
-        // --- CO2 instability signal (second derivative proxy)
-        private _co2Vel =
-            (_previousCyclePaco2 - (_unit getVariable [QGVAR(lastPaco2), _previousCyclePaco2]))
-            / (_deltaT max 0.01);
-
-        _unit setVariable [QGVAR(lastPaco2), _previousCyclePaco2];
-
-        private _co2Accel =
-            (_co2Vel - (_unit getVariable [QGVAR(lastPaco2Vel), 0]))
-            / (_deltaT max 0.01);
-
-        _unit setVariable [QGVAR(lastPaco2Vel), _co2Vel];
-
-        // --- Instability grows with ICP and falling CPP
-        private _instability =
-            (abs _co2Accel)
-            * linearConversion [32, 38, _icp, 0.8, 1.8, true]
-            * linearConversion [70, 30, _CPP, 0.7, 1.4, true];
-
-        // --- Apnea threshold
-        if (_instability > 1.2) then {
-
-            // Apnea
-            _respiratoryRate  = 0;
-            _respiratoryDepth = 0;
-            _tidalVolume      = 0;
-            _actualVentilation = 1;
-
-        } else {
-
-            // Erratic breathing (non-periodic)
-            private _env = linearConversion [0, 1.2, _instability, 1.2, 0.3, true];
-
-            _respiratoryRate  = 8  * _env;
-            _respiratoryDepth = 10 * _env;
-
-            _tidalVolume =
-                GET_KAT_SURFACE_AREA(_unit)
-                * (_respiratoryDepth / 10);
-
-            _actualVentilation =
-                (_tidalVolume * _respiratoryRate)
-                * _bronchospasm;
+            playSound3D [QPATHTOF_SOUND(audio\gasp.ogg), _unit, false, getPosASL _unit, 6, 1, 8];
         };
 
-        // Residual central drive
-        _respiratoryRate  = _respiratoryRate  * _respDrive;
-        _respiratoryDepth = _respiratoryDepth * (_respDrive max MINIMUM_DEPTH);
-        _actualVentilation = _actualVentilation * _respDrive;
-
         _patternApplied = true;
-        _unit setVariable [QGVAR(breathingState), 2, true];
+        _unit setVariable [QGVAR(breathingState), 3, true];
     };
 
     if (!_patternApplied && (_icp >= 45)) then {
-        
-        ///////////////////////////////////////////////////////////////////////////
-        // AGONAL RESPIRATION — MEDULLARY HYPOXIA DRIVEN
-        ///////////////////////////////////////////////////////////////////////////
-    
-        // --- Medullary hypoxia index
-        private _medullaO2 =
-            _previousCyclePao2
-            * linearConversion [70, 20, _CPP, 1.0, 0.4, true];
-    
-        private _hypoxiaIndex =
-            linearConversion [30, 10, _medullaO2, 0, 1.5, true];
-    
-        // --- Gasp trigger threshold
-        private _gaspTrigger =
-            _unit getVariable [QGVAR(gaspTrigger), 0];
-    
-        _gaspTrigger = _gaspTrigger + (_hypoxiaIndex * _deltaT);
-        _unit setVariable [QGVAR(gaspTrigger), _gaspTrigger];
-    
-        if (_gaspTrigger >= 1.0) then {
-        
-            // GASP
-            _unit setVariable [QGVAR(gaspTrigger), 0];
-    
-            _respiratoryRate  = 1;
-            _respiratoryDepth = _baseRespiratoryDepth * (2.5 + _hypoxiaIndex);
-    
-            _tidalVolume =
-                GET_KAT_SURFACE_AREA(_unit)
-                * (_respiratoryDepth / 10);
-    
-            _actualVentilation =
-                (_tidalVolume * _respiratoryRate)
-                * _bronchospasm;
-    
-            playSound3D [
-                QPATHTOF_SOUND(audio\gasp.ogg),
-                _unit,
-                false,
-                getPosASL _unit,
-                6, 1, 8
-            ];
-    
-        } else {
-        
-            // Apnea between gasps
-            _respiratoryRate  = 0;
+
+        private _timer = _unit getVariable [QGVAR(agonalTimer), 0];
+
+        _timer = _timer - _deltaT;
+        _unit setVariable [QGVAR(agonalTimer), _timer, true];
+        if (_timer <= 0) then {
+            private _pause = 5 + random 15;
+            private _gaspDur = 1.5 + random 1.0;
+
+            _timer = _pause + _gaspDur;
+            _unit setVariable [QGVAR(agonalTimer), _timer, true];
+
+            _respiratoryRate = 0;
             _respiratoryDepth = 0;
-            _tidalVolume      = 0;
+            _tidalVolume = 0;
             _actualVentilation = 1;
+
+            _patternApplied = true;
+        }
+        else
+        {
+            if (_timer < 2.0) then {
+                _respiratoryRate = 1;
+                _respiratoryDepth = _baseRespiratoryDepth * (2.0 + random 1.0);
+                _tidalVolume = GET_KAT_SURFACE_AREA(_unit) * (_respiratoryDepth / 10);
+                _actualVentilation = (_tidalVolume * _respiratoryRate) * _bronchospasm;
+                playSound3D [QPATHTOF_SOUND(audio\gasp.ogg), _unit, false, getPosASL _unit, 6, 1, 8];
+            } else {
+                _respiratoryRate = 0;
+                _respiratoryDepth = 0;
+                _tidalVolume = 0;
+                _actualVentilation = 1;
+            };
+
+            _patternApplied = true;
+            _unit setVariable [QGVAR(breathingState), 4, true];
         };
-    
-        _patternApplied = true;
-        _unit setVariable [QGVAR(breathingState), 4, true];
     };
 if (!_patternApplied) then {
 

@@ -433,7 +433,7 @@ class ACE_Medical_Treatment {
         };
         class HypertonicSalineIV_500: SalineIV {
             volume = 500;
-            type = "HypertonicSaline";
+            type = "Hypertonic Saline";
             ratio[] = {};
             rateCoef = 1.3;
             platelets = 0;

@@ -153,7 +153,7 @@ private _NorepinephrineIVInfusion = 0;
         case "Plasma": {
             _plasma = _plasma + _volumeRemaining;
         };
-        case "HypertonicSaline": {
+        case "Hypertonic Saline": {
             _hypertonicSaline = _hypertonicSaline + _volumeRemaining;
         };
         case "Hextend": {
@@ -192,7 +192,7 @@ if (_totalIvVolume > 0) then {
     if (_saline > 0) then {
         _entries pushBack [format [localize ACELSTRING(medical_treatment,receivingSalineIvVolume), floor _saline], [0.388,0.584,0.933,1]];
     };
-    if (_saline > 0) then {
+    if (_hypertonicSaline > 0) then {
         _entries pushBack [format [localize ELSTRING(pharma,receivingHypertonic_SalineIvVolume), floor _hypertonicSaline], [0.388,0.584,0.933,1]];
     };
     if (_blood > 0) then {
