@@ -241,7 +241,7 @@ private _bloodPressure = [_unit] call EFUNC(circulation,getBloodPressure);
 _unit setVariable [VAR_BLOOD_PRESS, _bloodPressure, _syncValues];
 
 _bloodPressure params ["_bloodPressureL", "_bloodPressureH"];
-private _map = _bloodPressureL + (0.3333333333 * (_bloodPressureH - _bloodPressureL));
+private _map = GET_MAP(_unit);
 
 // Statements are ordered by most lethal first.
 switch (true) do {

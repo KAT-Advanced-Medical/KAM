@@ -45,7 +45,7 @@ _modifierFunc = {
 	private _isMedic = (_player call ACEFUNC(medical_treatment,isMedic));
 	private _bloodPressure = [_patient] call EFUNC(circulation,getBloodPressure);
 	_bloodPressure params ["_bloodPressureL", "_bloodPressureH"];
-	private _map = _bloodPressureL + (0.3333333333 * (_bloodPressureH - _bloodPressureL));
+	private _map = GET_MAP(_unit);
 	private _lowBP = GVAR(Stable_TrackLowBP) && (_map < 60);
 	private _lowHR = GVAR(Stable_TrackLowHR) && (GET_HEART_RATE(_patient) < 60);
 	private _stitchWounds = _patient call EFUNC(misc,getFullBodyStitchableWoundTime);

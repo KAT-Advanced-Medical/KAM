@@ -47,7 +47,7 @@ if IN_CRDC_ARRST(_unit) then {
     };
 } else {
     private _defaultHR = _unit getVariable [QEGVAR(circulation,defaultHeartRate), 80];
-    private _mapSetpoint  = linearConversion [60, 100, _defaultHR, 71, 112, true];
+    private _mapSetpoint = linearConversion [60, 100, _defaultHR, 83, 103, true];
     #define MAP_DEADBAND 3
     #define BARO_KP 0.6
     #define BARO_KI 0.12
@@ -65,7 +65,7 @@ if IN_CRDC_ARRST(_unit) then {
         - (_aceAnFatigue * 40);
 
     // ================= SV MODEL =================
-    private _baselineSV = 0.0790542;
+    private _baselineSV = 0.0810542;
     private _strokeVolume = [_unit] call FUNC(getStrokeVolume);
 
     private _svMemory =
@@ -85,7 +85,6 @@ if IN_CRDC_ARRST(_unit) then {
         _svTau,
         _baselineSV
     );
-
     // ================= BAROREFLEX CORE =================
     private _mapError = (_mapSetpoint) - _map;
     if (abs _mapError < MAP_DEADBAND) then { _mapError = 0 };

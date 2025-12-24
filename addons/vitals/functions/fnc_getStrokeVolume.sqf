@@ -23,10 +23,12 @@ params ["_unit"];
 #define BASELINE_EF 0.6
 #define BASELINE_EDV (BASELINE_SV / BASELINE_EF)
 #define BASELINE_ESV (BASELINE_EDV - BASELINE_SV)
+#define BASELINE_MAP 93  
 
 // =======================
 // INPUTS
 // =======================
+private _map = GET_MAP(_unit);
 private _defaultCVP = 6;
 private _heartRate = GET_HEART_RATE(_unit);
 private _bloodVolumeRatio = GET_BLOOD_VOLUME_LITERS(_unit) / DEFAULT_BLOOD_VOLUME;
@@ -90,12 +92,12 @@ private _fillPortion = 1 - exp (-3 * _fillTime);
 // =======================
 // VENOUS COMPENSATION
 // =======================
-private _bvComp =
+_bvComp =
     linearConversion
     [
-        0.7, 1.0,
+        0.75, 1.0,
         _bloodVolumeRatio,
-        0.6, 1.0,
+        0.85, 1.0,
         true
     ];
 private _shockClass =
@@ -138,7 +140,10 @@ private _preload =
     min 1.3
     max 0.2;
 
-private _edv = BASELINE_EDV * _preload * _fillPortion;
+private _edv =
+    BASELINE_EDV
+    * _preload
+    * (0.85 + 0.15 * _fillPortion);
 
 private _edvNorm = (_edv / BASELINE_EDV) min 1.4 max 0.4;
 
@@ -169,16 +174,34 @@ TRACE_8(
 // =======================
 // AFTERLOAD & ESV
 // =======================
-_afterload =
+private _mapNorm =
     linearConversion
     [
-        0.6, 1.0,
-        _bloodVolumeRatio,
-        1.2, 1.0,
+        50, 130,     // hypotension → severe HTN
+        _map,
+        0.65, 1.35,  // afterload multiplier
         true
-    ]
-    * _arterialEffect;
-
+    ];
+    private _mapShock = switch (_shockClass) do {
+        case "COMPENSATED":   { 1.1 };
+        case "DECOMPENSATED": { 1.0 };
+        case "TERMINAL":      { 0.8 };
+        default               { 1.0 };
+    };
+_mapNorm =
+    _mapNorm * _mapShock;
+    
+private _vasoAfterload =
+    linearConversion
+    [
+        0.6, 1.4,
+        _effectiveVaso,
+        0.85, 1.25,
+        true
+    ];
+private _afterload =
+    _mapNorm
+    * _vasoAfterload;
 private _effectiveContractility =
     _contractility * _starlingGain;
 

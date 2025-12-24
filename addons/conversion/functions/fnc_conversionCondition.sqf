@@ -24,7 +24,7 @@ if (IN_CRDC_ARRST(_unit) && (GVAR(conversionRequirements) > 0)) exitWith { false
 
 private _bloodPressure = GET_BLOOD_PRESSURE(_unit);
 _bloodPressure params ["_bloodPressureL", "_bloodPressureH"];
-private _map = _bloodPressureL + (0.3333333333 * (_bloodPressureH - _bloodPressureL));
+private _map = GET_MAP(_unit);
 if ((_map < 70 || _map > 110) && (GVAR(conversionRequirements) > 0)) exitWith { false };
 
 private _heartRate = GET_HEART_RATE(_unit);

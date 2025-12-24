@@ -35,7 +35,7 @@ private _newPFH = [{
 
     private _bloodPressure = [_unit] call EFUNC(circulation,getBloodPressure);
     _bloodPressure params ["_bloodPressureL", "_bloodPressureH"];
-    private _map = _bloodPressureL + (0.3333333333 * (_bloodPressureH - _bloodPressureL));
+    private _map = GET_MAP(_unit);
     
     private _mapHighTicks = _unit getVariable [QGVAR(mapHighTicks), 0];
     private _autoregFatigue = _unit getVariable [QGVAR(autoregFatigue), 0];
@@ -80,7 +80,7 @@ private _newPFH = [{
     _unit setVariable [QGVAR(CPR),_CPR,true];
     private _ICP_delta = 0;
     if (_mapHighTicks >= 25) then {
-        private _mapOver = _map - 110;
+        private _mapOver = _map - 120;
         private _durationFactor = ((_mapHighTicks - 25) + 1);
         _ICP_delta = (_mapOver * 0.02) * (_durationFactor);
         private _fatigueIcpAmplify = 1 + ((_autoregFatigue / 100) * 0.25);

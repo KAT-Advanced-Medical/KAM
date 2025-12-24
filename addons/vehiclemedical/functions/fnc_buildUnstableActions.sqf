@@ -108,7 +108,7 @@ if(_hasLowHR) then {
 // Low Blood Pressure Action
 private _bloodPressure = [_patient] call EFUNC(circulation,getBloodPressure);
 _bloodPressure params ["_bloodPressureL", "_bloodPressureH"];
-private _map = _bloodPressureL + (0.3333333333 * (_bloodPressureH - _bloodPressureL));
+private _map = GET_MAP(_unit);
 private _hasLowBP = GVAR(Stable_TrackLowBP) && (_map < 60);
 if(_hasLowBP) then {
 	private _bp = [_patient, _isMedic] call FUNC(displayBP);

@@ -23,7 +23,7 @@ private _bloodLoss = GET_BLOOD_LOSS(_unit);
 private _internalBleeding = GET_INTERNAL_BLEEDING(_unit);
 private _bloodPressure = GET_BLOOD_PRESSURE(_unit);
 _bloodPressure params ["_bloodPressureL", "_bloodPressureH"];
-private _map = _bloodPressureL + (0.3333333333 * (_bloodPressureH - _bloodPressureL));
+private _map = GET_MAP(_unit);
 private _correctedMap = linearConversion [14.3333, 174.3333, _map, 0.05, 2, true];
 TRACE_3("correctedMAP",_correctedMap,_map,_bloodPressure);
 private _heartRate = GET_HEART_RATE(_unit);

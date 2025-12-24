@@ -18,8 +18,8 @@
  */
 params ["_unit"];
 #define BASELINE_MAP 94.7
-#define BASELINE_CO  0.0997921 // L/s
-#define BASELINE_SVR (94.7 / 0.0997921 )  // ≈ 860
+#define BASELINE_CO  0.1054056 // L/s
+#define BASELINE_SVR (94.7 / 0.1054056 )  // ≈ 860
 // =======================
 // BASE PHYSIO INPUTS
 // =======================
