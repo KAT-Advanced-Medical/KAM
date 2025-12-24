@@ -96,7 +96,7 @@ private _svFactor =
     linearConversion [0.03, _baselineSV, _strokeVolume, 0.4, 1.0, true];
 
 // --- Shock / tamponade narrowing
-private _shockClass = _unit getVariable [QEGVAR(circulation,shockClass), "NONE"];
+private _shockClass = _unit getVariable [QEGVAR(vitals,shockClass), "NONE"];
 private _shockPPMult = switch (_shockClass) do {
     case "COMPENSATED":   { 0.9 };
     case "DECOMPENSATED": { 0.7 };

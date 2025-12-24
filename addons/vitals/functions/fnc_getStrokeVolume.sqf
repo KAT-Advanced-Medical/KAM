@@ -101,7 +101,7 @@ _bvComp =
         true
     ];
 private _shockClass =
-    _unit getVariable [QEGVAR(circulation,shockClass), "NONE"];
+    _unit getVariable [QGVAR(shockClass), "NONE"];
 private _globalVaso = GET_VASOCONSTRICTION(_unit);
 private _vasoTone = switch (_shockClass) do {
     case "NONE":          { 1.0 };

@@ -21,6 +21,15 @@ _patient setVariable [QGVAR(simpleMedical), false, true];
 _patient setVariable [QGVAR(respiratoryDepth), DEFAULT_RESPIRATORY_DEPTH, true];
 _patient setVariable [QGVAR(fatigueEnabled), (missionNamespace getVariable [QACEGVAR(advanced_fatigue,enabled), false]), true];
 _patient setVariable [QGVAR(currentWeight), [_patient] call FUNC(generateDefaultWeight), true];
+_patient setVariable [QGVAR(mapIntegral), 0, true];
+_patient setVariable [QGVAR(svMemory), 0.0810542, true];
+_patient setVariable [QGVAR(csCO2Memory), 40, true];
+_patient setVariable [QGVAR(breathingState), 0, true];
+_patient setVariable [QGVAR(lastPaco2), 40, true];
+_patient setVariable [QGVAR(lastPaco2Vel), 0, true];
+_patient setVariable [QGVAR(gaspTrigger), 0, true];
+_patient setVariable [QGVAR(rrMemory), 0, true];
+_patient setVariable [QGVAR(shockClass), "NONE", true];
 
 if (GVAR(enableSimpleMedical)) then {
     _patient setVariable [QGVAR(simpleMedical), true, true];

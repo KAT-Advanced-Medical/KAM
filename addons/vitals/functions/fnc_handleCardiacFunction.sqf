@@ -26,7 +26,8 @@ params ["_unit", "_hrTargetAdjustment", "_hrTarget", "_bloodVolume", "_aceAnFati
 private _icp = GET_ICP(_unit);
 private _map = GET_MAP(_unit);
 private _actualHeartRate = _hrTarget;
-
+private _painLevel = 0;
+private _shockClass = "NONE";
 // ================= INPUT TRACE =================
 TRACE_4(
     "HR_INPUT",
@@ -69,11 +70,11 @@ if IN_CRDC_ARRST(_unit) then {
     private _strokeVolume = [_unit] call FUNC(getStrokeVolume);
 
     private _svMemory =
-        _unit getVariable [QEGVAR(circulation,svMemory), _baselineSV];
+        _unit getVariable [QGVAR(svMemory), _baselineSV];
 
     private _svTau = 6;
     _svMemory = _svMemory + ((_strokeVolume - _svMemory) * (_deltaT / _svTau));
-    _unit setVariable [QEGVAR(circulation,svMemory), _svMemory];
+    _unit setVariable [QGVAR(svMemory), _svMemory];
 
     private _effectiveSV = _svMemory max 0.03;
 
@@ -90,7 +91,7 @@ if IN_CRDC_ARRST(_unit) then {
     if (abs _mapError < MAP_DEADBAND) then { _mapError = 0 };
 
     private _mapIntegral =
-        _unit getVariable [QEGVAR(circulation,mapIntegral), 0];
+        _unit getVariable [QGVAR(mapIntegral), 0];
 
     // --- Integral update ---
     _mapIntegral = _mapIntegral + (_mapError * _deltaT);
@@ -102,7 +103,7 @@ if IN_CRDC_ARRST(_unit) then {
     
     // Clamp
     _mapIntegral = (_mapIntegral max -INTEGRAL_CLAMP) min INTEGRAL_CLAMP;
-    _unit setVariable [QEGVAR(circulation,mapIntegral), _mapIntegral];
+    _unit setVariable [QGVAR(mapIntegral), _mapIntegral];
 
     private _baroDelta =
         (BARO_KP * _mapError)
@@ -142,7 +143,7 @@ if IN_CRDC_ARRST(_unit) then {
         _vagalTone = linearConversion [0.7, 1.0, _painLevel, 0, 0.35, true];
     };
 
-    private _spo2 = _unit getVariable [QEGVAR(breathing,SpO2), 100];
+    private _spo2 = GET_KAT_SPO2(_unit);
     if (_spo2 < 85) then {
         _vagalTone = _vagalTone max
             linearConversion [85, 60, _spo2, 0, 0.5, true];
@@ -163,7 +164,7 @@ if IN_CRDC_ARRST(_unit) then {
     if (_effectiveSV < 0.04 && _map < 60) then { _shockClass = "DECOMPENSATED" };
     if (_effectiveSV < 0.025) then { _shockClass = "TERMINAL" };
 
-    _unit setVariable [QEGVAR(circulation,shockClass), _shockClass];
+    _unit setVariable [QGVAR(shockClass), _shockClass];
 
     TRACE_3(
         "SHOCK",
@@ -209,9 +210,9 @@ if IN_CRDC_ARRST(_unit) then {
     
         // Hard reset control states
         _mapIntegral = 0;
-        _unit setVariable [QEGVAR(circulation,mapIntegral), 0];
+        _unit setVariable [QGVAR(mapIntegral), 0];
     
-        _unit setVariable [QEGVAR(circulation,hrMemory), _defaultHR];
+        _unit setVariable [QGVAR(hrMemory), _defaultHR];
     
         TRACE_1("REST_LOCK_HARD", _actualHeartRate);
     
@@ -231,7 +232,7 @@ if IN_CRDC_ARRST(_unit) then {
 };
 // ================= HR SMOOTHING =================
 private _hrMem =
-    _unit getVariable [QEGVAR(circulation,hrMemory), _actualHeartRate];
+    _unit getVariable [QGVAR(hrMemory), _actualHeartRate];
 
 // Time constant (seconds)
 private _hrTau = 3.5;
@@ -246,7 +247,7 @@ _hrMem =
     _hrMem
     + ((_actualHeartRate - _hrMem) * (_deltaT / _hrTau));
 
-_unit setVariable [QEGVAR(circulation,hrMemory), _hrMem];
+_unit setVariable [QGVAR(hrMemory), _hrMem];
 
 // Replace output
 _actualHeartRate = _hrMem;

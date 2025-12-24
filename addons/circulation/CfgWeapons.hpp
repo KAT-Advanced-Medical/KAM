@@ -21,7 +21,9 @@ class CfgWeapons {
     class ACE_salineIV;
     class ACE_salineIV_500;
     class ACE_salineIV_250;
-
+    class ACE_plasmaIV;
+    class ACE_plasmaIV_500;
+    class ACE_plasmaIV_250;
     class kat_bloodIV_O: ACE_bloodIV {
         displayName = CSTRING(BloodIV_O);
         ACE_isMedicalItem = 1;
@@ -98,6 +100,36 @@ class CfgWeapons {
     };
     class kat_bloodIV_AB_N_250: kat_bloodIV_O_250 {
         displayName = CSTRING(BloodIV_AB_250_N);
+    };
+    class kat_HextendIV: ACE_plasmaIV {
+        scope = 2;
+        author = "Cplhardcore";
+        displayName = CSTRING(Hextend_IV);
+        descriptionShort = CSTRING(Hextend_IV_Desc_Short);
+        ACE_isMedicalItem = 1;
+        class ItemInfo: CBA_MiscItem_ItemInfo {
+            mass = 10;
+        };
+    };
+    class kat_HextendIV_500: ACE_plasmaIV_500 {
+        scope = 2;
+        author = "Cplhardcore";
+        displayName = CSTRING(Hextend_IV_500);
+        descriptionShort = CSTRING(Hextend_IV_Desc_Short);
+        ACE_isMedicalItem = 1;
+        class ItemInfo: CBA_MiscItem_ItemInfo {
+            mass = 5;
+        };
+    };
+    class kat_HextendIV_250: ACE_plasmaIV_250 {
+        scope = 2;
+        author = "Cplhardcore";
+        displayName = CSTRING(Hextend_IV_250);
+        descriptionShort = CSTRING(Hextend_IV_Desc_Short);
+        ACE_isMedicalItem = 1;
+        class ItemInfo: CBA_MiscItem_ItemInfo {
+            mass = 2.5;
+        };
     };
     class kat_RingersLactateIV: ACE_salineIV {
         scope = 2;
@@ -383,6 +415,39 @@ class CfgWeapons {
         icon = "";
         class ItemInfo: CBA_MiscItem_ItemInfo {
             mass = 6;
+        };
+    };
+    class kat_HypertonicSalineIV_500: ACE_salineIV_500 {
+        scope = 2;
+        author = "Cplhardcore";
+        displayName = CSTRING(Hypertonic_Saline_IV_500);
+        descriptionShort = CSTRING(Hypertonic_Saline_IV_Desc_Short);
+        descriptionUse = CSTRING(Hypertonic_Saline_IV_Desc_Use);
+        ACE_isMedicalItem = 1;
+        class ItemInfo: CBA_MiscItem_ItemInfo {
+            mass = 10;
+        };
+    };
+    class kat_HypertonicSalineIV_250: ACE_salineIV_250 {
+        scope = 2;
+        author = "Cplhardcore";
+        displayName = CSTRING(Hypertonic_Saline_IV_250);
+        descriptionShort = CSTRING(Hypertonic_Saline_IV_Desc_Short);
+        descriptionUse = CSTRING(Hypertonic_Saline_IV_Desc_Use);
+        ACE_isMedicalItem = 1;
+        class ItemInfo: CBA_MiscItem_ItemInfo {
+            mass = 5;
+        };
+    };
+    class kat_HypertonicSalineIV_100: ACE_salineIV_250 {
+        scope = 2;
+        author = "Cplhardcore";
+        displayName = CSTRING(Hypertonic_Saline_IV_100);
+        descriptionShort = CSTRING(Hypertonic_Saline_IV_Desc_Short);
+        descriptionUse = CSTRING(Hypertonic_Saline_IV_Desc_Use);
+        ACE_isMedicalItem = 1;
+        class ItemInfo: CBA_MiscItem_ItemInfo {
+            mass = 1;
         };
     };
     KAT_bloodSample_ITEM(KAT_bloodSample,1);

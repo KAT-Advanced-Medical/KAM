@@ -3804,6 +3804,21 @@
         <Key ID="STR_KAT_Circulation_Ringers_Lactate_IV_Desc_Use">
             <English>A medical volume-replenishing agent introduced into the blood system through an IV infusion.</English>
         </Key>
+        <Key ID="STR_KAT_Circulation_Hypertonic_Saline_IV_500">
+            <English>Hypertonic Saline IV (23.4%) (500ml)</English>
+        </Key>
+        <Key ID="STR_KAT_Circulation_Hypertonic_Saline_IV_250">
+            <English>Hypertonic Saline IV (23.4%) (250ml)</English>
+        </Key>
+        <Key ID="STR_KAT_Circulation_Hypertonic_Saline_IV_100">
+            <English>Hypertonic Saline IV (23.4%) (100ml)</English>
+        </Key>
+        <Key ID="STR_KAT_Circulation_Hypertonic_Saline_iv_Desc_Short">
+            <English>Hypertonic Saline, for reducing a patients ICP</English>
+        </Key>
+        <Key ID="STR_KAT_Circulation_Hypertonic_Saline_iv_Desc_Use">
+            <English>A medical volume-replenishing agent introduced into the blood system through an IV infusion.</English>
+        </Key>
         <Key ID="STR_KAT_Circulation_Packed_RBC_IV_250">
             <English>Packed RBC IV (250ml)</English>
         </Key>
@@ -4010,6 +4025,21 @@
         </Key>
         <Key ID="STR_KAT_Circulation_Check_capRefill_Output_SeverelyDelayed_log">
             <English>a Capillary Refill time of ~5 seconds</English>
+        </Key>
+        <Key ID="STR_KAT_Circulation_Hextend_IV">
+            <English>Hextend IV (1000ml)</English>
+        </Key>
+        <Key ID="STR_KAT_Circulation_Hextend_IV_250">
+            <English>Hextend IV (250ml)</English>
+        </Key>
+        <Key ID="STR_KAT_Circulation_Hextend_IV_500">
+            <English>Hextend IV (500ml)</English>
+        </Key>
+        <Key ID="STR_KAT_Circulation_Hextend_IV_Desc_Short">
+            <English>Hextend IV, for restoring a patients fluids</English>
+        </Key>
+        <Key ID="STR_KAT_Circulation_Hextend_IV_Desc_Use">
+            <English>A medical volume-replenishing agent introduced into the blood system through an IV infusion.</English>
         </Key>
     </Package>
 </Project>

@@ -71,7 +71,9 @@ private _newPFH = [{
 		
 		//Reduce ICP if no longer swelling
 		private _salineFlow = (_unit getVariable [QGVAR(salineFlow), 0]) / 5;
-		private _icpReduction = GVAR(ICPreduction) * _salineFlow * GVAR(ICPreductionMult);
+		private _metoprololCount = ([_unit, "Metoprolol", false] call ACEFUNC(medical_status,getMedicationCount)) select 1;
+		private _metoprolol = linearConversion [0, 1, _metoprololCount, 1, 1.5];
+		private _icpReduction = GVAR(ICPreduction) * (1 + _salineFlow) * GVAR(ICPreductionMult) * _metoprolol;
 		private _newICP = _ICP - _icpReduction;
 		private _hasSaline = [_unit] call FUNC(findSaline);
 		// Set "floors" for ICP, preventing ICP from returning to normal levels without saline

@@ -23,7 +23,7 @@ if (_sedated > 0.1) exitWith {};
 
 private _bloodPressure = GET_BLOOD_PRESSURE(_patient);
 _bloodPressure params ["_bloodPressureL", "_bloodPressureH"];
-private _map = GET_MAP(_unit);
+private _map = GET_MAP(_patient);
 
 if ((floor (random 100) < ((linearConversion [60, 93, _map, 0, GVAR(carbonateChance), true]) min (linearConversion [93, 120, _map, GVAR(carbonateChance), 0, true]))) && {[_patient] call EFUNC(vitals,hasStableVitals)} && !(GET_CONVERT_STATUS(_patient))) then {
     [_patient, false] call ACEFUNC(medical,setUnconscious);

@@ -6124,5 +6124,35 @@
         <Key ID="STR_KAT_Pharma_SyringeDisplay_calciumGluconate_5ml_20">
             <English>5ml Syringe / 1g Calcium Gluconate</English>
         </Key>
+        <Key ID="STR_KAT_Pharma_Actions_Hypertonic_Saline_500">
+            <English>Give Hypertonic Saline (500ml)</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_Actions_Hypertonic_Saline_250">
+            <English>Give Hypertonic Saline (250ml)</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_Actions_Hypertonic_Saline_100">
+            <English>Give Hypertonic Saline (100ml)</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_receivingHypertonic_SalineIvVolume">
+            <English>Receiving Hypertonic Saline IV [%1ml]</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_Transfusing_Hypertonic_Saline">
+            <English>Transfusing Hypertonic Saline...</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_Actions_Hextend">
+            <English>Give Hextend (1000ml)</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_Actions_Hextend_500">
+            <English>Give Hextend (500ml)</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_Actions_Hextend_250">
+            <English>Give Hextend (250ml)</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_receivingHextendIvVolume">
+            <English>Receiving Hextend IV [%1ml]</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_Transfusing_Hextend">
+            <English>Transfusing Hextend...</English>
+        </Key>
     </Package>
 </Project>

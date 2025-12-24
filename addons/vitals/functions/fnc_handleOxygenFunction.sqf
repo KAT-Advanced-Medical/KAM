@@ -1,4 +1,3 @@
-#define DEBUG_MODE_FULL
 #include "..\script_component.hpp"
 /*
  * Author: Mazinski
@@ -43,6 +42,7 @@ private _demandVentilation = 0;
 private _actualVentilation = 1;
 private _alveolarVent = 1;
 private _alveolarDemand = 1;
+private _baseTidalVolume = 1;
 private _etco2 = 15;
 private _pao2 = 90;
 private _patternApplied = false;
@@ -124,7 +124,7 @@ if ((IN_CRDC_ARRST(_unit)) || !_airway || _paralysis) then {
     private _map = GET_MAP(_unit);
     private _CPP = (_map - _icp) max 0;
 
-    private _respDrive = linearConversion [80, 20, _CPP, 1.0, 0.1, true];
+    private _respDrive = linearConversion [80, 20, _CPP, 1.0, 0.5, true];
     _respDrive = _respDrive * (1 - (_opioidDepression * 0.6));
     _respDrive = _respDrive max 0 min 1;
 
@@ -135,7 +135,7 @@ if ((IN_CRDC_ARRST(_unit)) || !_airway || _paralysis) then {
     if (_unit getVariable [QEGVAR(breathing,BVMInUse), false]) then {
         _respiratoryRate  = 20;
         _respiratoryDepth = 12;
-        private _baseTidalVolume = (((GET_KAT_SURFACE_AREA(_unit) * (_respiratoryDepth / 10)) min 0.8) max 0.2);
+        _baseTidalVolume = (((GET_KAT_SURFACE_AREA(_unit) * (_respiratoryDepth / 10)) min 0.8) max 0.2);
         _tidalVolume = _baseTidalVolume;
         _actualVentilation = (_tidalVolume * _respiratoryRate) * _bronchospasm;
         _patternApplied = true;
@@ -144,7 +144,7 @@ if ((IN_CRDC_ARRST(_unit)) || !_airway || _paralysis) then {
     if (_unit getVariable [QEGVAR(breathing,attachedVent), false]) then {
         _respiratoryRate = (60 / (_unit getVariable [QEGVAR(breathing,ventRate), 5])) max 1;
         _respiratoryDepth = 12;
-        private _baseTidalVolume = (((GET_KAT_SURFACE_AREA(_unit) * (_respiratoryDepth / 10)) min 0.8) max 0.2);
+        _baseTidalVolume = (((GET_KAT_SURFACE_AREA(_unit) * (_respiratoryDepth / 10)) min 0.8) max 0.2);
         _tidalVolume = _baseTidalVolume;
         _actualVentilation = (_tidalVolume * _respiratoryRate) * _bronchospasm;
         _patternApplied = true;
@@ -157,10 +157,10 @@ if ((IN_CRDC_ARRST(_unit)) || !_airway || _paralysis) then {
     
         // --- CO2 sensing delay (circulatory delay)
         private _delayTau = linearConversion [20, 32, _icp, 10, 25, true];
-        private _co2Mem = _unit getVariable [QEGVAR(breathing,csCO2Memory), _previousCyclePaco2];
+        private _co2Mem = _unit getVariable [QGVAR(csCO2Memory), _previousCyclePaco2];
     
         _co2Mem = _co2Mem + ((_previousCyclePaco2 - _co2Mem) * (_deltaT / _delayTau));
-        _unit setVariable [QEGVAR(breathing,csCO2Memory), _co2Mem];
+        _unit setVariable [QGVAR(csCO2Memory), _co2Mem];
     
         // --- Central controller (overshoot-prone)
         private _co2Error = _co2Mem - DEFAULT_PACO2;
@@ -236,16 +236,16 @@ if ((IN_CRDC_ARRST(_unit)) || !_airway || _paralysis) then {
 
         // --- CO2 instability signal (second derivative proxy)
         private _co2Vel =
-            (_previousCyclePaco2 - (_unit getVariable [QEGVAR(breathing,lastPaco2), _previousCyclePaco2]))
+            (_previousCyclePaco2 - (_unit getVariable [QGVAR(lastPaco2), _previousCyclePaco2]))
             / (_deltaT max 0.01);
 
-        _unit setVariable [QEGVAR(breathing,lastPaco2), _previousCyclePaco2];
+        _unit setVariable [QGVAR(lastPaco2), _previousCyclePaco2];
 
         private _co2Accel =
-            (_co2Vel - (_unit getVariable [QEGVAR(breathing,lastPaco2Vel), 0]))
+            (_co2Vel - (_unit getVariable [QGVAR(lastPaco2Vel), 0]))
             / (_deltaT max 0.01);
 
-        _unit setVariable [QEGVAR(breathing,lastPaco2Vel), _co2Vel];
+        _unit setVariable [QGVAR(lastPaco2Vel), _co2Vel];
 
         // --- Instability grows with ICP and falling CPP
         private _instability =
@@ -304,15 +304,15 @@ if ((IN_CRDC_ARRST(_unit)) || !_airway || _paralysis) then {
     
         // --- Gasp trigger threshold
         private _gaspTrigger =
-            _unit getVariable [QEGVAR(breathing,gaspTrigger), 0];
+            _unit getVariable [QGVAR(gaspTrigger), 0];
     
         _gaspTrigger = _gaspTrigger + (_hypoxiaIndex * _deltaT);
-        _unit setVariable [QEGVAR(breathing,gaspTrigger), _gaspTrigger];
+        _unit setVariable [QGVAR(gaspTrigger), _gaspTrigger];
     
         if (_gaspTrigger >= 1.0) then {
         
             // GASP
-            _unit setVariable [QEGVAR(breathing,gaspTrigger), 0];
+            _unit setVariable [QGVAR(gaspTrigger), 0];
     
             _respiratoryRate  = 1;
             _respiratoryDepth = _baseRespiratoryDepth * (2.5 + _hypoxiaIndex);
@@ -372,9 +372,9 @@ if (!_patternApplied) then {
             _respiratoryRateMult
         );
 
-        private _rrMem = _unit getVariable [QEGVAR(breathing,rrMemory), _targetRR];
+        private _rrMem = _unit getVariable [QGVAR(rrMemory), _targetRR];
         _rrMem = _rrMem + ((_targetRR - _rrMem) * (_deltaT / 2.5));
-        _unit setVariable [QEGVAR(breathing,rrMemory), _rrMem];
+        _unit setVariable [QGVAR(rrMemory), _rrMem];
 
         _respiratoryRate = _rrMem * _respDrive;
 
@@ -505,6 +505,7 @@ private _fio2 = switch (true) do {
     case (_respiratoryRate == 0): { 0 };
     case (_unit getVariable [QEGVAR(breathing,oxygenTankConnected), false]): { 1 };
     case (_unit getVariable [QEGVAR(breathing,attachedVent), false]): { 1 };
+    case (_unit getVariable [QEGVAR(breathing,oxygenMaskActive), false]): { 0.95 };
     case (_unit getVariable [QEGVAR(breathing,oxygenMaskActive), false]): { 0.95 };
     default { DEFAULT_FIO2 };
 };

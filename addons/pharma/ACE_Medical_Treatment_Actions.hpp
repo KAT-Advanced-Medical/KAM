@@ -66,6 +66,42 @@ class ACE_Medical_Treatment_Actions {
         displayNameProgress = CSTRING(Transfusing_Ringers_Lactate);
         callbackSuccess = "[_medic, _patient, _bodyPart, _className, _itemUser, _usedItem] call ace_medical_treatment_fnc_ivBag;";
     };
+    class HypertonicSalineIV_500: SalineIV {
+        displayName = CSTRING(Actions_Hypertonic_Saline_500);
+        items[] = {"kat_HypertonicSalineIV_500"};
+        displayNameProgress = CSTRING(Transfusing_Hypertonic_Saline);
+        callbackSuccess = "[_medic, _patient, _bodyPart, _className, _itemUser, _usedItem] call ace_medical_treatment_fnc_ivBag;";
+    };
+    class HypertonicSalineIV_250: SalineIV {
+        displayName = CSTRING(Actions_Hypertonic_Saline_250);
+        items[] = {"kat_HypertonicSalineIV_250"};
+        displayNameProgress = CSTRING(Transfusing_Hypertonic_Saline);
+        callbackSuccess = "[_medic, _patient, _bodyPart, _className, _itemUser, _usedItem] call ace_medical_treatment_fnc_ivBag;";
+    };
+    class HypertonicSalineIV_100: SalineIV {
+        displayName = CSTRING(Actions_Hypertonic_Saline_100);
+        items[] = {"kat_HypertonicSalineIV_100"};
+        displayNameProgress = CSTRING(Transfusing_Hypertonic_Saline);
+        callbackSuccess = "[_medic, _patient, _bodyPart, _className, _itemUser, _usedItem] call ace_medical_treatment_fnc_ivBag;";
+    };
+    class HextendIV: SalineIV {
+        displayName = CSTRING(Actions_Hextend);
+        items[] = {"kat_HextendIV"};
+        displayNameProgress = CSTRING(Transfusing_Hextend);
+        callbackSuccess = "[_medic, _patient, _bodyPart, _className, _itemUser, _usedItem] call ace_medical_treatment_fnc_ivBag;";
+    };
+    class HextendIV_500: SalineIV {
+        displayName = CSTRING(Actions_Hextend_500);
+        items[] = {"kat_HextendIV_500"};
+        displayNameProgress = CSTRING(Transfusing_Hextend);
+        callbackSuccess = "[_medic, _patient, _bodyPart, _className, _itemUser, _usedItem] call ace_medical_treatment_fnc_ivBag;";
+    };
+    class HextendIV_250: SalineIV {
+        displayName = CSTRING(Actions_Hextend_250);
+        items[] = {"kat_HextendIV_250"};
+        displayNameProgress = CSTRING(Transfusing_Hextend);
+        callbackSuccess = "[_medic, _patient, _bodyPart, _className, _itemUser, _usedItem] call ace_medical_treatment_fnc_ivBag;";
+    };
     class Epinephrine: Morphine {
         callbackSuccess = QFUNC(medication);
     };

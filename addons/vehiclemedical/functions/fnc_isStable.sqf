@@ -24,7 +24,7 @@ params[
 	&& {
 		private _bloodPressure = [_patient] call EFUNC(circulation,getBloodPressure);
 		_bloodPressure params ["_bloodPressureL", "_bloodPressureH"];
-		private _map = GET_MAP(_unit);
+		private _map = GET_MAP(_patient);
 		( GVAR(Stable_TrackLowBP) && (_map < 60))
 		|| { GVAR(Stable_TrackLowHR) && (GET_HEART_RATE(_patient) < 60)}
 		|| { GVAR(Stable_TrackFractures) && ((selectMax GET_FRACTURES(_patient)) > 0)}

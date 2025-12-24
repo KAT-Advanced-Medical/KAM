@@ -128,6 +128,8 @@ if (ACEGVAR(medical_gui,showBloodlossEntry)) then {
 // Show receiving IV volume remaining
 private _totalIvVolume = 0;
 private _saline = 0;
+private _hypertonicSaline = 0;
+private _hextend = 0;
 private _blood = 0;
 private _plasma = 0;
 private _ringers = 0;
@@ -150,6 +152,12 @@ private _NorepinephrineIVInfusion = 0;
         };
         case "Plasma": {
             _plasma = _plasma + _volumeRemaining;
+        };
+        case "HypertonicSaline": {
+            _hypertonicSaline = _hypertonicSaline + _volumeRemaining;
+        };
+        case "Hextend": {
+            _hextend = _hextend + _volumeRemaining;
         };
         case "Ringers Lactate": {
             _ringers = _ringers + _volumeRemaining;
@@ -184,11 +192,17 @@ if (_totalIvVolume > 0) then {
     if (_saline > 0) then {
         _entries pushBack [format [localize ACELSTRING(medical_treatment,receivingSalineIvVolume), floor _saline], [0.388,0.584,0.933,1]];
     };
+    if (_saline > 0) then {
+        _entries pushBack [format [localize ELSTRING(pharma,receivingHypertonic_SalineIvVolume), floor _hypertonicSaline], [0.388,0.584,0.933,1]];
+    };
     if (_blood > 0) then {
         _entries pushBack [format [localize ACELSTRING(medical_treatment,receivingBloodIvVolume), floor _blood], [0.58,0.133,0.133,1]];
     };
     if (_plasma > 0) then {
         _entries pushBack [format [localize ACELSTRING(medical_treatment,receivingPlasmaIvVolume), floor _plasma], [0.827,0.686,0.216,1]];
+    };
+    if (_hextend > 0) then {
+        _entries pushBack [format [localize ELSTRING(pharma,receivingHextendIvVolume), floor _hextend], [0.827,0.686,0.216,1]];
     };
     if (_ringers > 0) then {
         _entries pushBack [format [localize ELSTRING(pharma,receivingRingers_LactateIvVolume), floor _ringers], [0.388,0.584,0.933,1]];

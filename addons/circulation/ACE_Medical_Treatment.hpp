@@ -431,5 +431,33 @@ class ACE_Medical_Treatment {
             type = "Norepinephrine_IVInfusion";
             incompatibleMedication[] = {};
         };
+        class HypertonicSalineIV_500: SalineIV {
+            volume = 500;
+            type = "HypertonicSaline";
+            ratio[] = {};
+            rateCoef = 1.3;
+            platelets = 0;
+            ph = 2.1;
+        };
+        class HypertonicSalineIV_250: HypertonicSalineIV_500 {
+            volume = 250;
+        };
+        class HypertonicSalineIV_100: HypertonicSalineIV_500 {
+            volume = 100;
+        };
+        class HextendIV: PlasmaIV {
+            volume = 1000;
+            type = "Hextend";
+            ratio[] = {};
+            rateCoef = 1.3;
+            platelets = 0;
+            ph = 0.4;
+        };
+        class HextendIV_500: HextendIV {
+            volume = 500;
+        };
+        class HextendIV_250: HextendIV {
+            volume = 250;
+        };
     };
 };
