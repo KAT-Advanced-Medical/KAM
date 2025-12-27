@@ -580,7 +580,7 @@ class ACE_Medical_Treatment_Actions {
         items[] = {};
         medicRequired = 1;
         condition = QFUNC(vehicleCheckDialysis);
-        treatmentTime = 15;
+        treatmentTime = 5;
         callbackProgress = "";
         callbackStart = "";
         callbackFailure = "";
@@ -1533,6 +1533,22 @@ class ACE_Medical_Treatment_Actions {
         consumeItem = 0;
         condition = QUOTE([ARR_4(_player,_patient,_bodyPart,'Ringers Lactate')] call FUNC(ivBagCheck));
         callbackSuccess = QUOTE([ARR_4(_player,_patient,_bodyPart,'Ringers Lactate')] call FUNC(removeIVBag));
+    };
+    class RemoveHextend: RemoveIV {
+        displayName = CSTRING(RemoveHextend);
+        displayNameProgress = CSTRING(RemovingHextendIV_Progress);
+        treatmentTime = QACEGVAR(medical_treatment,treatmentTimeIV);
+        consumeItem = 0;
+        condition = QUOTE([ARR_4(_player,_patient,_bodyPart,'Hextend')] call FUNC(ivBagCheck));
+        callbackSuccess = QUOTE([ARR_4(_player,_patient,_bodyPart,'Hextend')] call FUNC(removeIVBag));
+    };
+    class RemoveHypertonicSaline: RemoveIV {
+        displayName = CSTRING(RemoveHypertonicSaline);
+        displayNameProgress = CSTRING(RemovingHypertonicSalineIV_Progress);
+        treatmentTime = QACEGVAR(medical_treatment,treatmentTimeIV);
+        consumeItem = 0;
+        condition = QUOTE([ARR_4(_player,_patient,_bodyPart,'Hypertonic Saline')] call FUNC(ivBagCheck));
+        callbackSuccess = QUOTE([ARR_4(_player,_patient,_bodyPart,'Hypertonic Saline')] call FUNC(removeIVBag));
     };
     class ApplyFentPatch: Morphine {
         displayName = CSTRING(Apply_FentPatch);

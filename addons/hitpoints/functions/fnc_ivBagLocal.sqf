@@ -1,3 +1,4 @@
+#define DEBUG_MODE_FULL
 #include "..\script_component.hpp"
 /*
  * Author: Glowbal, mharis001, Cplhardcore
@@ -47,6 +48,8 @@ private _uuid = (str CBA_missionTime + str random 1e6); // bag UID
 
 // Add IV bag to patient's ivBags array
 TRACE_6("IVBAGLOCAL",_volume,_type,_partIndex,_treatment,_rateCoef,_item);
+TRACE_4("IVBAGLOCAL1",_ca,_ph,_platelets,_uuid);
 private _ivBags = _patient getVariable [QACEGVAR(medical,ivBags), []];
 _ivBags pushBack [_volume, _type, _partIndex, _treatment, _rateCoef, _item, _platelets, _ph, _ca, _uuid];
+TRACE_1("IVBAGLOCAL2",_ivBags);
 _patient setVariable [QACEGVAR(medical,ivBags), _ivBags, true];

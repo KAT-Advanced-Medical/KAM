@@ -4041,5 +4041,11 @@
         <Key ID="STR_KAT_Circulation_Hextend_IV_Desc_Use">
             <English>A medical volume-replenishing agent introduced into the blood system through an IV infusion.</English>
         </Key>
+        <Key ID="STR_KAT_Circulation_SETTING_refractoryChance">
+            <English>Refractory Cardiac Arrest Chance</English>
+        </Key>
+        <Key ID="STR_KAT_Circulation_SETTING_refractoryChance_DESC">
+            <English>Chance for shockable cardiac arrest to be refractory, causing shocks to be much less effective</English>
+        </Key>
     </Package>
 </Project>

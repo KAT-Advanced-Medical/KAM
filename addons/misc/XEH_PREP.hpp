@@ -39,6 +39,7 @@ PREP(handleUnconscious);
 PREP(handleWrappedReopening);
 PREP(incompatibilityWarning);
 PREP(init);
+PREP(isMedic);
 PREP(removeIVbag);
 PREP(removeTourniquetTime);
 PREP(serializeState);

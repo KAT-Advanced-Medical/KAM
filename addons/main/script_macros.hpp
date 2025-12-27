@@ -127,8 +127,7 @@
 #define FATAL_INJURIES_ALWAYS 0
 #define FATAL_INJURIES_CRDC_ARRST 1
 #define FATAL_INJURIES_NEVER 2
-
-
+     
 #undef PENETRATION_THRESHOLD
 #undef PENETRATION_THRESHOLD_DEFAULT
 #define PENETRATION_THRESHOLD ACEGVAR(medical,const_penetrationThreshold)
@@ -353,7 +352,7 @@
 
 #define VAR_BLOOD_GAS                  QEGVAR(circulation,bloodGas)
 #define VAR_BREATHING_RATE             QEGVAR(breathing,breathRate)
-#define VAR_SERUM_CALCUIM              QEGVAR(pharma,serumCalcuim)
+#define VAR_EFFECTIVE_CALCUIM              QEGVAR(pharma,effectiveCa)
 #define VAR_MAP                        QEGVAR(circulation,map)
 
 #define GET_BLOOD_GAS(unit)            (unit getVariable [VAR_BLOOD_GAS, DEFAULT_BLOOD_GAS])
@@ -362,7 +361,7 @@
 #define GET_KAT_SPO2(unit)             (((unit getVariable [VAR_BLOOD_GAS, DEFAULT_BLOOD_GAS]) select 2) * 100)
 #define GET_PH(unit)                   ((unit getVariable [VAR_BLOOD_GAS, DEFAULT_BLOOD_GAS]) select 4)
 #define GET_ETCO2(unit)                ((unit getVariable [VAR_BLOOD_GAS, DEFAULT_BLOOD_GAS]) select 5)
-#define GET_CA(unit)                   (unit getVariable [VAR_SERUM_CALCUIM, 2.4])
+#define GET_CA(unit)                   (unit getVariable [VAR_EFFECTIVE_CALCUIM, 2.4])
 #define GET_BREATHING_RATE(unit)       (unit getVariable [VAR_BREATHING_RATE, 15])
 #define GET_MAP(unit)                   (unit getVariable [VAR_MAP, 93])
 

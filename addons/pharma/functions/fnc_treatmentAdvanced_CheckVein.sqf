@@ -23,7 +23,7 @@ params ["_medic", "_patient", "_bodypart"];
  private _IVarray = _patient getVariable [QGVAR(IV), [0,0,0,0,0,0,0,0,0,0,0,0]];
  private _IVactual = _IVarray select _partIndex;
 
- if (_IVactual == 9) then {
+ if (_IVactual == 20) then {
     [QACEGVAR(common,displayTextStructured), [[LSTRING(CheckVein_VeinBlown)], 1.5, _medic], _medic] call CBA_fnc_targetEvent;
 } else {
     [QACEGVAR(common,displayTextStructured), [[LSTRING(CheckVein_VeinFine)], 1.5, _medic], _medic] call CBA_fnc_targetEvent;

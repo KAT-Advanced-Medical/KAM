@@ -54,6 +54,9 @@ class CfgFunctions {
             class surgicalKitProgress {
                 file = QPATHTOF(functions\fnc_surgicalKitProgress.sqf);
             };
+            class isMedic {
+                file = QPATHTOF(functions\fnc_isMedic.sqf);
+            };
         };
     };
     class ace_medical {

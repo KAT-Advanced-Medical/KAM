@@ -79,8 +79,19 @@ if !(GVAR(coagulation)) exitWith {};
         },
         [_unit], ((missionNamespace getVariable [QGVAR(coagulation_factor_regenerate_time), 150]) / 2)] call CBA_fnc_waitAndExecute; // Block regen PFH instance from happening
     };
-
-    if (_currentCoagFactors == _savedCoagFactors && _currentCoagFactors < 600) exitWith {
+    private _ph = GET_PH(_unit);
+    private _ca = GET_CA(_unit);
+    private _phMax = if (_ph > 7.5) then {
+        linearConversion [7.55, 7.9, _ph, 1, 0.5, true];
+    } else {
+        linearConversion [7.3, 6.8, _ph, 1, 0.5, true];
+    };
+    private _caMax = if (_ca > 2.6) then {
+        linearConversion [2.6, 3.4, _ca, 1, 0.5, true];
+    } else {
+        linearConversion [2.2, 1.8, _ca, 1, 0.5, true];
+    };
+    if (_currentCoagFactors == _savedCoagFactors && _currentCoagFactors < (600 * (_caMax * _phMax))) exitWith {
         private _bodyFluid = GET_BODY_FLUID(_unit);
         private _baseRegen = 3;
         private _pain = GET_PAIN(_unit);
@@ -99,7 +110,7 @@ if !(GVAR(coagulation)) exitWith {};
         _unit setVariable [QGVAR(coagulationSavedFactors), _currentCoagFactors + _regenAmount, true];
     };  
 
-    if ((_currentCoagFactors > 600) && !(_cooldownON)) exitWith {
+    if ((_currentCoagFactors > (600 * (_caMax * _phMax))) && !(_cooldownON)) exitWith {
 
         if (_txaEffectiveness > 0 || _eacaEffectiveness > 0) exitWith {}; // If TXA or EACA is in system don't remove factor
         private _factorOverflow = (_currentCoagFactors - 600) max 0;

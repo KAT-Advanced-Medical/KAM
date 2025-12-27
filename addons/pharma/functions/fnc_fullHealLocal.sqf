@@ -60,7 +60,6 @@ _patient setVariable [QGVAR(IVmenuActive), false, true];
 
 _patient setVariable [QGVAR(externalPh), 0, true];
 _patient setVariable [QGVAR(pH), 0, true];
-
 _patient setVariable [QGVAR(opioidFactor), 0, true];
 _patient setVariable [QGVAR(opioidDepression), 0, true];
 
@@ -79,9 +78,11 @@ _patient setVariable [VAR_LOCAL_ANESTHESIA, DEFAULT_LOCAL_ANESTHESIA, true];
 _patient setVariable [QGVAR(activeEtomidateLoadingDose), false, true];
 _patient setVariable [QGVAR(serumCalcium), 2.4, true];
 _patient setVariable [QGVAR(calciumDamage), 0, true];
-_patient setVariable [QGVAR(citrateLoad), 0, true];
+_patient setVariable [QGVAR(externalCa), 0, true];
 _patient setVariable [QGVAR(calciumVasoMult), 1, true];
+_patient setVariable [QGVAR(effectiveCalcium), 1, true];
 _patient setVariable [QGVAR(lastArrhythmia), -1000, true];
+_patient setVariable [QGVAR(prevCalcium), 0, true];
 /// Clear Stamina & weapon sway
 if (ACEGVAR(advanced_fatigue,enabled)) then {
     ["kat_PDF"] call ACEFUNC(advanced_fatigue,removeDutyFactor);

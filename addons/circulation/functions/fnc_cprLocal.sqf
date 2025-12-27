@@ -99,7 +99,18 @@ private _fnc_advRhythm = {
         };
     };
 } forEach (_patient getVariable [QACEGVAR(medical,medications), []]);
-
+private _ph = GET_PH(_patient);
+private _ca = GET_CA(_patient);
+private _phChance = if (_ph > 7.5) then {
+    linearConversion [7.55, 7.9, _ph, 1, 0.4, true];
+} else {
+    linearConversion [7.3, 6.8, _ph, 1, 0.1, true];
+};
+private _caChance = if (_ca > 2.6) then {
+    linearConversion [2.6, 3.4, _ca, 1, 0.4, true];
+} else {
+    linearConversion [2.2, 1.8, _ca, 1, 0.2, true];
+};
 switch (_reviveObject) do {
     case "LUCAS": {
         if (GVAR(enable_CPR_Chances)) then {
@@ -137,8 +148,9 @@ if (_reviveObject in ["AED", "AEDX"]) exitWith {
     };
     _chance = _chance + (_amiBoost + (1 max _lidoBoost) * _epiBoost) / _nitroEffect;
     private _patientState = _patient getVariable [QGVAR(cardiacArrestType), 0];
-    private _AEDeffectivness = (_patient getVariable [QGVAR(AEDEffectiveness), 1]) max 0.5;
+    private _AEDeffectivness = (_patient getVariable [QGVAR(AEDEffectiveness), 1]) max 0.2;
     _chance = _chance * _AEDeffectivness;
+    _chance = _chance * _caChance * _phChance;
     if (GVAR(AdvRhythm)) then {
         if (_patientState > 2) then {
             if (_random <= _chance) then {
@@ -174,7 +186,6 @@ if !(GVAR(enable_CPR_Chances)) then {
     if (_reviveObject in ["LUCAS"]) then {
         if (_epiBoost > 1.5) then {
         _chance = _chance + (2 ^ _CPRcount);
-
         _CPRcount = _CPRcount + 0.01;
         _patient setVariable [QGVAR(cprCount), _CPRcount, true];
     };
@@ -186,7 +197,7 @@ if !(GVAR(enable_CPR_Chances)) then {
     if (_patient getVariable [QGVAR(cardiacArrestType), 0] in [4,3] && (_patient getVariable [QGVAR(refractoryCA), false])) then {
         _chance = _chance / 4;
     };
-
+    _chance = _chance * _caChance * _phChance;
     _chance = _chance / _nitroEffect;
 
     if (_random <= _chance) then {

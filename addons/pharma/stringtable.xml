@@ -3323,6 +3323,15 @@
             <Russian>%1 провел диализ</Russian>
             <Dutch>%1 heeft een dialyse uitgevoerd</Dutch>
         </Key>
+        <Key ID="STR_KAT_Pharma_dialysis_Start">
+            <English>%1 Started dialysis</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_dialysis_Finished">
+            <English>Finished dialysis</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_dialysis_Failed">
+            <English>Dialysis Failed</English>
+        </Key>
         <Key ID="STR_KAT_Pharma_pharmaSupplyCrate_displayName">
             <English>[KAM] Medicines crate</English>
             <Polish>[KAM] Skrzynia z lekami</Polish>
@@ -4348,6 +4357,12 @@
         <Key ID="STR_KAT_Pharma_RemovingRingersLactateIV_Progress">
             <English>Removing Ringers Lactate IV bags</English>
         </Key>
+        <Key ID="STR_KAT_Pharma_RemovingHypertonicSalineIV_Progress">
+            <English>Removing Hypertonic Saline IV bags</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_RemovingHextendIV_Progress">
+            <English>Removing Hextend IV bags</English>
+        </Key>
         <Key ID="STR_KAT_Pharma_RemoveSaline">
             <English>Remove Saline IV bags</English>
         </Key>
@@ -4362,6 +4377,12 @@
         </Key>
         <Key ID="STR_KAT_Pharma_RemoveRingersLactate">
             <English>Remove Ringers Lactate IV bags</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_RemoveHypertonicSaline">
+            <English>Remove Hypertonic Saline IV bags</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_RemoveHextend">
+            <English>Remove Hextend IV bags</English>
         </Key>
         <Key ID="STR_KAT_Pharma_Apply_EZ_IO">
             <English>Establish EZ IO</English>
@@ -6153,6 +6174,15 @@
         </Key>
         <Key ID="STR_KAT_Pharma_Transfusing_Hextend">
             <English>Transfusing Hextend...</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_ivSiteCompromised">
+            <English>IV Site Leaking</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_ivSiteBlown">
+            <English>IV Site Blown</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_activeDialysis">
+            <English>Active Dialysis</English>
         </Key>
     </Package>
 </Project>

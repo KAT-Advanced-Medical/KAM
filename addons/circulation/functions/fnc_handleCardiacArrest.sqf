@@ -35,7 +35,8 @@ if !(alive _unit) exitWith {_unit setVariable [QGVAR(cardiacArrestType), 1, true
 if ((_unit getVariable [QGVAR(cardiacArrestType), 0] != 0) && _initial) then {
     _initial = false;
 };
-
+private _ca = GET_CA(_patient);
+private _refractoryAdd = linearConversion [2.4, 1, _ca, 1, 2.5, true];
 if (_initial) then {
     if !(_active) exitWith {};
 
@@ -51,7 +52,7 @@ if (_initial) then {
         } else {
             _cardiacArrestType = 3;
         };
-        if (floor (random 100) < 20) then {
+        if (floor (random 100) < (GVAR(refractoryChance) * _refractoryAdd)) then {
             _unit setVariable [QGVAR(refractoryCA), true, true];
         };
     };
@@ -122,7 +123,7 @@ if (GVAR(AdvRhythm_canDeteriorate)) then {
                     if (_unit getVariable [QGVAR(cardiacArrestType), 0] isEqualTo 4) then {
                         _unit setVariable [QGVAR(cardiacArrestType), 3, true];
                         [_unit, nil, false] call FUNC(handleCardiacArrest);
-                        if (floor (random 100) < 10) then {
+                        if (floor (random 100) < ((GVAR(refractoryChance)/ 2) * _refractoryAdd)) then {
                             _unit setVariable [QGVAR(refractoryCA), true, true];
                         };
                     };

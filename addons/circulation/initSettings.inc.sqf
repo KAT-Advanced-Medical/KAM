@@ -368,6 +368,15 @@
     true
 ] call CBA_fnc_addSetting;
 
+[
+    QGVAR(refractoryChance),
+    "SLIDER",
+    [LLSTRING(SETTING_refractoryChance),LLSTRING(SETTING_refractoryChance_DESC)],
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_AdvRhythms)],
+    [1, 100, 20, 0],
+    true
+] call CBA_fnc_addSetting;
+
 // Sets if cardiac arrest rhythms can deteriorate
 [
     QGVAR(AdvRhythm_canDeteriorate),

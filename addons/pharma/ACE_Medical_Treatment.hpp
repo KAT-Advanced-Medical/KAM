@@ -1157,25 +1157,25 @@ class ACE_ADDON(Medical_Treatment) {
             maximumEffectiveDose = 30;
         };
         class syringe_CalciumGluconate  {
-            maxDose = 30;
-            maxDoseDeviation = 20;
+            maxDose = 120;
+            maxDoseDeviation = 120;
             incompatibleMedication[] = {};
             onOverDose = "";
-            maximumEffectiveDose = 30;
+            maximumEffectiveDose = 120;
         };
         class syringe_CalciumChloride  {
-            maxDose = 30;
-            maxDoseDeviation = 20;
+            maxDose = 120;
+            maxDoseDeviation = 120;
             incompatibleMedication[] = {};
             onOverDose = "";
-            maximumEffectiveDose = 30;
+            maximumEffectiveDose = 120;
         };
         class syringe_Bicarbonate  {
-            maxDose = 30;
-            maxDoseDeviation = 20;
+            maxDose = 120;
+            maxDoseDeviation = 120;
             incompatibleMedication[] = {};
             onOverDose = "";
-            maximumEffectiveDose = 30;
+            maximumEffectiveDose = 120;
         };
     };
 };

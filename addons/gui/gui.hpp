@@ -827,23 +827,6 @@ class ACE_Medical_Menu {
                     shadow = "true";
                 };
             };
-            class ABGTime: RscStructuredText
-            {
-                idc = IDC_TEST_TIME;
-                text = QUOTE([ARR_1(ACEGVAR(medical_gui,target))] call FUNC(getElapsedTime));
-                x = QUOTE(POS_X(29.8));
-                y = QUOTE(POS_Y(0));
-                w = QUOTE(POS_W(4.2));
-                h = QUOTE(POS_H(1));
-                show = 0;
-                colorBackground[] = {0, 0, 0, 0};
-                colorBorder[] = {0,0,0,0};
-                class Attributes {
-                    color = "#E5E5E5";
-                    font = "RobotoCondensed";
-                    shadow = "true";
-                };
-            };
             class PaCO2_Output: RscStructuredText {
                 idc = IDC_TEST_PACO2; // LOOK HERE
                 text = CSTRING(BGBlank);

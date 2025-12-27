@@ -481,16 +481,18 @@ if (IN_CRDC_ARRST(_unit)) then {
 };
 private _arrestPerfusion = [1, (1 * EGVAR(breathing,SpO2_PerfusionMultiplier))] select ((IN_CRDC_ARRST(_unit)) && (EGVAR(breathing,SpO2_perfusion)));
 _pao2 = if (_previousCyclePao2 != _pao2) then { ([ (_previousCyclePao2 - ((PAO2_MAX_CHANGE * EGVAR(breathing,SpO2_MultiplyNegative) * _arrestPerfusion) * _deltaT)) , (_previousCyclePao2 + ((PAO2_MAX_CHANGE * EGVAR(breathing,SpO2_MultiplyPositive)) * _deltaT))] select ((_previousCyclePao2 - _pao2) < 0)) } else { _pao2 };
-///////////////////////////////////////////////////////////////////////////////
-// pH & SATURATION (UNCHANGED)
-///////////////////////////////////////////////////////////////////////////////
-private _phConst = ((-0.00006653 * (_temperature ^ 2)) - (0.03268 * _temperature) + 7.4);
+private _baseConst =
+    7.4 - log(24 / (0.03 * 39.9));
+
+private _phConst =
+    _baseConst - 0.015 * (_temperature - 37);
+    
 private _externalPh = _unit getVariable [QEGVAR(pharma,externalPh), 0];
 
 private _pH =
 (_phConst + log(24 / (0.03 * _paco2)))
-- ((_externalPh max 0) / 60)
-- ((_aceAnFatigue / 2) / 3);
+- ((_externalPh max 0) / 280)
+- ((_aceAnFatigue / 2) / 3);    
 
 private _p50 = ((25 - (((_pH / DEFAULT_PH) - 1) * 150)) max 15) min 40;
 private _o2Sat = ((_pao2^2.7) / (_p50^2.7 + _pao2^2.7)) min 0.999;
@@ -500,9 +502,6 @@ TRACE_4("BREATH_REST",
     _paco2,
     _pao2
 );
-///////////////////////////////////////////////////////////////////////////////
-// OUTPUT
-///////////////////////////////////////////////////////////////////////////////
 _unit setVariable [QEGVAR(breathing,breathRate), _respiratoryRate, _syncValues];
 _unit setVariable [VAR_RESPIRATORY_DEPTH, _respiratoryDepth, _syncValues];
 _unit setVariable [VAR_BLOOD_GAS, [_paco2, _pao2, _o2Sat, 24, _pH, _etco2], _syncValues];

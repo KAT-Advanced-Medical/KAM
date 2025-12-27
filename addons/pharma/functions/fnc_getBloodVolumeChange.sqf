@@ -36,8 +36,7 @@ _fluidVolume params ["_ECB","_ECP","_SRBC","_ISP","_fullVolume","_platelets"];
 _ECP = (_ECP + (_lossVolumeChange * LITERS_TO_ML) / 2) max 100;
 _ECB = (_ECB + (_lossVolumeChange * LITERS_TO_ML) / 2) max 100;
 _platelets = (_platelets + ((_lossVolumeChange * LITERS_TO_ML) / 10)) max 0;
-
-if (!isNil {_unit getVariable [QACEGVAR(medical,ivBags),[]]}) then {
+if (count (_unit getVariable [QACEGVAR(medical,ivBags), []]) > 0) then {
     private _bloodBags = _unit getVariable [QACEGVAR(medical,ivBags), []];
     private _IVarray = _unit getVariable [QGVAR(IV), [0,0,0,0,0,0,0,0,0,0,0,0]];
     private _flowCalculation = (ACEGVAR(medical,ivFlowRate) * _deltaT * 3.16);
@@ -142,11 +141,11 @@ if (!isNil {_unit getVariable [QACEGVAR(medical,ivBags),[]]}) then {
             };
             // Plasma adds to ECP. Saline splits between the ECP and ISP. Blood adds to ECB/ECP
             private _ph = _unit getVariable [QGVAR(externalPh), 0];
-            private _ph = (_ph + (_phChange * (_bagChange/100)));
-            _unit setVariable [QGVAR(externalPh), _ph];
+            private _ph = (_ph + (_phChange * (_bagChange/10)));
+            _unit setVariable [QGVAR(externalPh), _ph, true];
             private _ca = _unit getVariable [QGVAR(externalCa), 0];
-            private _ca = (_ca + (_caChange * (_bagChange/100)));
-            _unit setVariable [QGVAR(externalCa), _ca];
+            private _ca = (_ca + (_caChange * (_bagChange/10)));
+            _unit setVariable [QGVAR(externalCa), _ca, true];
             switch (true) do {
                 case(_type == "Plasma"): {
                     _ECP = _ECP + _bagChange; _lossVolumeChange = _lossVolumeChange + (_bagChange / ML_TO_LITERS); 
@@ -161,7 +160,7 @@ if (!isNil {_unit getVariable [QACEGVAR(medical,ivBags),[]]}) then {
                         { _ECP = _ECP + _bagChange; _lossVolumeChange = _lossVolumeChange + (_bagChange / ML_TO_LITERS); };
                     };
                     private _salineFlow = _unit getVariable [QEGVAR(brain,salineFlow), 0];
-                    _unit setVariable [QEGVAR(brain,salineFlow), _salineFlow + (_deltaFlow * 3), true];
+                    _unit setVariable [QEGVAR(brain,salineFlow), _salineFlow + _bagChange, true];
                     _platelets = (_platelets + (_plateletAmount * _bagChange)) max 0;
                 };
                 case(_type == "Ringers Lactate"): {
@@ -207,7 +206,7 @@ if (!isNil {_unit getVariable [QACEGVAR(medical,ivBags),[]]}) then {
                         { _ECP = _ECP + _bagChange; _lossVolumeChange = _lossVolumeChange + (_bagChange / ML_TO_LITERS); };
                     };
                     private _salineFlow = _unit getVariable [QEGVAR(brain,salineFlow), 0];
-                    _unit setVariable [QEGVAR(brain,salineFlow), _salineFlow + (_deltaFlow * 3), true];
+                    _unit setVariable [QEGVAR(brain,salineFlow), _salineFlow + (_bagChange * 3), true];
                     _platelets = (_platelets + (_plateletAmount * _bagChange)) max 0;
                 };
                 case(_type == "Hextend"): {
@@ -303,7 +302,7 @@ if (!isNil {_unit getVariable [QACEGVAR(medical,ivBags),[]]}) then {
     if (_bagVolumeRemaining < 0.01) then {
             []
         } else {
-            [_bagVolumeRemaining, _type, _bodyPart, _treatment, _rateCoef, _item, _plateletAmount, _phChange]
+            [_bagVolumeRemaining, _type, _bodyPart, _treatment, _rateCoef, _item, _plateletAmount, _phChange, _caChange]
     };
     };
     _bloodBags = _bloodBags - [[]]; // remove empty bags
@@ -325,6 +324,9 @@ if (!isNil {_unit getVariable [QACEGVAR(medical,ivBags),[]]}) then {
             _unit setVariable [QEGVAR(hypothermia,warmingImpact), _totalCooling + _fluidHeat, _syncValues];
         };
     };
+} else {
+    _unit setVariable [QGVAR(IVflow), [0,0,0,0,0,0,0,0,0,0,0,0], true];
+    _unit setVariable [QEGVAR(brain,salineFlow), 0, true];
 };
 private _SRBCChange = 0;
 
