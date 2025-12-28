@@ -302,7 +302,7 @@ if (count (_unit getVariable [QACEGVAR(medical,ivBags), []]) > 0) then {
     if (_bagVolumeRemaining < 0.01) then {
             []
         } else {
-            [_bagVolumeRemaining, _type, _bodyPart, _treatment, _rateCoef, _item, _plateletAmount, _phChange, _caChange]
+            [_bagVolumeRemaining, _type, _bodyPart, _treatment, _rateCoef, _item, _plateletAmount, _phChange, _caChange, _uuid]
     };
     };
     _bloodBags = _bloodBags - [[]]; // remove empty bags
@@ -325,7 +325,7 @@ if (count (_unit getVariable [QACEGVAR(medical,ivBags), []]) > 0) then {
         };
     };
 } else {
-    _unit setVariable [QGVAR(IVflow), [0,0,0,0,0,0,0,0,0,0,0,0], true];
+    _unit setVariable [QGVAR(IVincomingFlowAmount), [0,0,0,0,0,0,0,0,0,0,0,0], true];
     _unit setVariable [QEGVAR(brain,salineFlow), 0, true];
 };
 private _SRBCChange = 0;
