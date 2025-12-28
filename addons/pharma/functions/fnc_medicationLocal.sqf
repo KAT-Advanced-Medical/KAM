@@ -182,6 +182,9 @@ if (_isInCA && ((_IVarray select _partIndex) in [2,3,4,10,11,12]) && !_isFlushed
         if ((_IVarray select _partIndex) in [1, 13]) then {
             _routeMult = random [0.7, 0.85, 1];
         };
+        if ((_IVarray select _partIndex) == 14) then {
+            _routeMult = random [1.1, 1.25, 1.35];
+        };
     private _hemocrit = 1;
         if (_bloodBased == "true") then {
             _hemocrit = (GET_BODY_FLUID_ECB(_patient)/GET_BODY_FLUID_ECP(_patient)) / (DEFAULT_ECB/DEFAULT_ECP)

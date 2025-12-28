@@ -35,7 +35,7 @@ if !(alive _unit) exitWith {_unit setVariable [QGVAR(cardiacArrestType), 1, true
 if ((_unit getVariable [QGVAR(cardiacArrestType), 0] != 0) && _initial) then {
     _initial = false;
 };
-private _ca = GET_CA(_patient);
+private _ca = GET_CA(_unit);
 private _refractoryAdd = linearConversion [2.4, 1, _ca, 1, 2.5, true];
 if (_initial) then {
     if !(_active) exitWith {};

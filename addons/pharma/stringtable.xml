@@ -2818,36 +2818,10 @@
             <Dutch>Patiënt's IV is niet geblokkeerd</Dutch>
         </Key>
         <Key ID="STR_KAT_Pharma_SETTING_Kidney_Action">
-            <English>Kidney damage/failure</English>
-            <Italian>Rene danneggiato/collassato</Italian>
-            <Czech>Poškození/selhání ledvin</Czech>
-            <French>Lésions/Insuffisance rénale</French>
-            <Korean>신장 손상/기능상실</Korean>
-            <German>Nierenschäden/-versagen</German>
-            <Chinesesimp>肾损伤/衰竭</Chinesesimp>
-            <Polish>Uszkodzenie nerek</Polish>
-            <Japanese>腎臓の損傷/機能不全</Japanese>
-            <Spanish>Insuficiencia/Daño Renal</Spanish>
-            <Portuguese>Dano/insuficiência renal</Portuguese>
-            <Finnish>Munuaisvaurio/munuaisten vajaatoiminta</Finnish>
-            <Russian>Повреждение/недостаточность почек</Russian>
-            <Dutch>Nierschade/-falen</Dutch>
+            <English>Enable Ph/ Calcium effects</English>
         </Key>
         <Key ID="STR_KAT_Pharma_SETTING_Kidney_Action_DESC">
-            <English>Enables kidney damage caused by overuse of saline</English>
-            <Italian>Abilita danni renali causati da un overdose di soluzione salina</Italian>
-            <Czech>Umožňuje poškození ledvin způsobené nadužíváním fyziologického roztoku</Czech>
-            <French>Active les lésions rénales causées par une surutilisation de solution saline</French>
-            <Korean>식염수 과다 사용으로 인한 신장 손상 활성화</Korean>
-            <German>Ermöglicht Nierenschäden, die durch übermäßigen Gebrauch von Kochsalzlösung verursacht werden</German>
-            <Chinesesimp>启用因过度使用生理盐水而造成的肾脏损害</Chinesesimp>
-            <Polish>Włącza uszkadzanie nerek spowodowane zbytnim użyciem soli fizjologicznej</Polish>
-            <Japanese>生理食塩水の過剰使用による腎臓の損傷を可能にします</Japanese>
-            <Spanish>Permite el daño de los riñones causado por uso excesivo de salino</Spanish>
-            <Portuguese>Permite dano renal causado pelo uso excessivo de solução salina</Portuguese>
-            <Finnish>Mahdollistaa suolaliuoksen liiallisen käytön aiheuttaman munuaisvaurion</Finnish>
-            <Russian>Предотвращает повреждение почек, вызванное чрезмерным употреблением физиологического раствора</Russian>
-            <Dutch>Schakelt nierschade veroorzaakt door overgebruik van saline in</Dutch>
+            <English>Enables Ph and Calcium loops, requiring management of saline and blood products</English>
         </Key>
         <Key ID="STR_KAT_Pharma_SETTING_Block_Chance">
             <English>IV Block Chance</English>

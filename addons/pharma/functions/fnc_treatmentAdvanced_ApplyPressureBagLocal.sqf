@@ -22,3 +22,20 @@ private _partIndex = ALL_BODY_PARTS find toLower _bodyPart;
 private _pressureBag = _patient getVariable [QGVAR(pressureBag), [0,0,0,0,0,0,0,0,0,0,0,0]];
 _pressureBag set [_partIndex, 1];
 _patient setVariable [QGVAR(pressureBag), _pressureBag, true];
+[{
+    params ["_medic", "_patient", "_partIndex"];
+    private _iv = (_patient getVariable [QGVAR(IV), [0,0,0,0,0,0,0,0,0,0,0,0]]) select _partIndex;
+    (_iv in [0, 15]);
+}, {
+    params ["_medic", "_patient", "_partIndex"];
+    private _pressureBag = _patient getVariable [QGVAR(pressureBag), [0,0,0,0,0,0,0,0,0,0,0,0]];
+    _pressureBag set [_partIndex, 0];
+    _patient setVariable [QGVAR(pressureBag), _pressureBag, true];
+    [_medic, "kat_pressureBag"] call ACEFUNC(common,addToInventory);
+}, [_medic, _patient, _partIndex], 3600, {
+    params ["_medic", "_patient", "_partIndex"];
+    private _pressureBag = _patient getVariable [QGVAR(pressureBag), [0,0,0,0,0,0,0,0,0,0,0,0]];
+    _pressureBag set [_partIndex, 0];
+    _patient setVariable [QGVAR(pressureBag), _pressureBag, true];
+    [_medic, "kat_pressureBag"] call ACEFUNC(common,addToInventory);
+}] call CBA_fnc_waitUntilAndExecute;

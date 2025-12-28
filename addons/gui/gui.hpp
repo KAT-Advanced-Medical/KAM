@@ -1169,7 +1169,15 @@ class RscTitles {
                                 w = QUOTE(POS_W(8.5));
                                 h = QUOTE(POS_H(8.5));
                             };
+                            class Neck: Neck {
+                                w = QUOTE(POS_W(8.5));
+                                h = QUOTE(POS_H(8.5));
+                            };
                             class Torso: Torso {
+                                w = QUOTE(POS_W(8.5));
+                                h = QUOTE(POS_H(8.5));
+                            };
+                            class Chest: Chest {
                                 w = QUOTE(POS_W(8.5));
                                 h = QUOTE(POS_H(8.5));
                             };
@@ -1177,7 +1185,15 @@ class RscTitles {
                                 w = QUOTE(POS_W(8.5));
                                 h = QUOTE(POS_H(8.5));
                             };
+                            class ArmUpperLeft: ArmUpperLeft {
+                                w = QUOTE(POS_W(8.5));
+                                h = QUOTE(POS_H(8.5));
+                            };
                             class ArmRight: ArmRight {
+                                w = QUOTE(POS_W(8.5));
+                                h = QUOTE(POS_H(8.5));
+                            };
+                            class ArmUpperRight: ArmUpperRight {
                                 w = QUOTE(POS_W(8.5));
                                 h = QUOTE(POS_H(8.5));
                             };
@@ -1186,6 +1202,14 @@ class RscTitles {
                                 h = QUOTE(POS_H(8.5));
                             };
                             class LegRight: LegRight {
+                                w = QUOTE(POS_W(8.5));
+                                h = QUOTE(POS_H(8.5));
+                            };
+                            class LegUpperLeft: LegUpperLeft {
+                                w = QUOTE(POS_W(8.5));
+                                h = QUOTE(POS_H(8.5));
+                            };
+                            class LegUpperRight: LegUpperRight {
                                 w = QUOTE(POS_W(8.5));
                                 h = QUOTE(POS_H(8.5));
                             };
@@ -1205,6 +1229,22 @@ class RscTitles {
                                 w = QUOTE(POS_W(8.5));
                                 h = QUOTE(POS_H(8.5));
                             };
+                            class ArmUpperLeftB: ArmUpperLeftB {
+                                w = QUOTE(POS_W(8.5));
+                                h = QUOTE(POS_H(8.5));
+                            };
+                            class ArmUpperRightB: ArmUpperRightB {
+                                w = QUOTE(POS_W(8.5));
+                                h = QUOTE(POS_H(8.5));
+                            };
+                            class LegUpperLeftB: LegUpperLeftB {
+                                w = QUOTE(POS_W(8.5));
+                                h = QUOTE(POS_H(8.5));
+                            };
+                            class LegUpperRightB: LegUpperRightB {
+                                w = QUOTE(POS_W(8.5));
+                                h = QUOTE(POS_H(8.5));
+                            };
                             class ArmLeftT: ArmLeftT {
                                 w = QUOTE(POS_W(8.5));
                                 h = QUOTE(POS_H(8.5));
@@ -1221,7 +1261,31 @@ class RscTitles {
                                 w = QUOTE(POS_W(8.5));
                                 h = QUOTE(POS_H(8.5));
                             };
+                            class ArmUpperLeftT: ArmUpperLeftT {
+                                w = QUOTE(POS_W(8.5));
+                                h = QUOTE(POS_H(8.5));
+                            };
+                            class ArmUpperRightT: ArmUpperRightT {
+                                w = QUOTE(POS_W(8.5));
+                                h = QUOTE(POS_H(8.5));
+                            };
+                            class LegUpperLeftT: LegUpperLeftT {
+                                w = QUOTE(POS_W(8.5));
+                                h = QUOTE(POS_H(8.5));
+                            };
+                            class LegUpperRightT: LegUpperRightT {
+                                w = QUOTE(POS_W(8.5));
+                                h = QUOTE(POS_H(8.5));
+                            };
                             class HeadS: HeadS {
+                                w = QUOTE(POS_W(8.5));
+                                h = QUOTE(POS_H(8.5));
+                            };
+                            class NeckS: NeckS {
+                                w = QUOTE(POS_W(8.5));
+                                h = QUOTE(POS_H(8.5));
+                            };
+                            class ChestS: ChestS {
                                 w = QUOTE(POS_W(8.5));
                                 h = QUOTE(POS_H(8.5));
                             };
@@ -1242,6 +1306,22 @@ class RscTitles {
                                 h = QUOTE(POS_H(8.5));
                             };
                             class LegRightS: LegRightS {
+                                w = QUOTE(POS_W(8.5));
+                                h = QUOTE(POS_H(8.5));
+                            };
+                            class ArmUpperLeftS: ArmUpperLeftS {
+                                w = QUOTE(POS_W(8.5));
+                                h = QUOTE(POS_H(8.5));
+                            };
+                            class ArmUpperRightS: ArmUpperRightS {
+                                w = QUOTE(POS_W(8.5));
+                                h = QUOTE(POS_H(8.5));
+                            };
+                            class LegUpperLeftS: LegUpperLeftS {
+                                w = QUOTE(POS_W(8.5));
+                                h = QUOTE(POS_H(8.5));
+                            };
+                            class LegUpperRightS: LegUpperRightS {
                                 w = QUOTE(POS_W(8.5));
                                 h = QUOTE(POS_H(8.5));
                             };

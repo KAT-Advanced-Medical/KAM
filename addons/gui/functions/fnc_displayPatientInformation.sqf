@@ -42,7 +42,6 @@ if (isNull _display) then {
             if (((getPosATL _target) # 2) < -9) exitWith {}; // handle dragging corpse/clone
             [[ACELSTRING(medical,DistanceToFar), _target call ACEFUNC(common,getName)], 2] call ACEFUNC(common,displayTextStructured);
         };
-
         // Update body image
         private _ctrlBodyImage = _display displayCtrl IDC_BODY_GROUP;
         [_ctrlBodyImage, _target, _selectionN] call FUNC(updateBodyImage);
