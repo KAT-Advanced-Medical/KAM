@@ -53,7 +53,7 @@
 [
 	QGVAR(CMRunconsciousChance),
     "SLIDER",
-    [LLSTRING(SETTING_concussionChance)],
+    [LLSTRING(SETTING_cmrunconsciouschance)],
     [CBA_SETTINGS_CAT, ELSTRING(GUI,SubCategory_Basic)],
     [0, 100, 20, 1],
     true

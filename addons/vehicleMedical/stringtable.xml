@@ -278,10 +278,10 @@
             <Spanish>Torniquetes (%1)</Spanish>
         </Key>
         <Key ID="STR_kat_vehiclemedical_Settings_Addon_Name">
-            <Original>ACE Vehicle Medical</Original>
-            <Italian>ACE Veicolo Medico</Italian>
-            <French>ACE Véhicule Médical</French>
-            <Spanish>ACE vehículo médico</Spanish>
+            <Original>KAT Vehicle Medical</Original>
+            <Italian>KAT Veicolo Medico</Italian>
+            <French>KAT Véhicule Médical</French>
+            <Spanish>KAT vehículo médico</Spanish>
         </Key>
         <Container name="General">
             <Key ID="STR_kat_vehiclemedical_Settings_General_Category">

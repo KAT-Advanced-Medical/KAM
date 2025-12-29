@@ -19,6 +19,9 @@
         <Key ID="STR_KAT_Brain_setting_stableCMR">
             <English>Stable CMR</English>
         </Key>
+        <Key ID="STR_KAT_Brain_setting_cmrunconsciouschance">
+            <English>CMR Uncon Chance</English>
+        </Key>
         <Key ID="STR_KAT_Brain_setting_concussionchance">
             <English>Concussion Chance</English>
         </Key>
@@ -32,7 +35,7 @@
             <English>Concussions</English>
         </Key>
         <Key ID="STR_KAT_Brain_setting_reversibledamageloss">
-            <English>Enable Brain Simulation</English>
+            <English>Reversible Damage Loss</English>
         </Key>
         <Key ID="STR_KAT_Brain_subcategory_braindeath">
             <English>Brain Death</English>
