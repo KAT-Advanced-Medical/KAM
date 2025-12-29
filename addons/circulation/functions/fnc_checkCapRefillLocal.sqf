@@ -25,26 +25,27 @@ private _isDamaged = [_patient,_bodyPartN] call EFUNC(hitpoints,damageCheck);
 private _capRefillOutput = LSTRING(Check_capRefill_Output_Normal);
 private _logCapRefillOutput = LSTRING(Check_capRefill_Output_Normal_log);
 private _cardiacOutput = _patient call EFUNC(vitals,getCardiacOutput);
-private _strokeVolume = _patient call EFUNC(vitals,getDefaultStrokeVolume);
-private _heartRate = GET_HEART_RATE(_patient);
-private _defaultCardiacOutput = (_strokeVolume * _heartRate) / 60;
-private _cardiacOutputRatio = _cardiacOutput/_defaultCardiacOutput;
 if (_isOccluded || _isDamaged) then {
     _capRefillOutput = LSTRING(Check_capRefill_Output_NoRefill);
     _logCapRefillOutput = LSTRING(Check_capRefill_Output_NoRefill_log);
 } else {
     switch (true) do {
-        case (_cardiacOutput >= (0.95 * _cardiacOutputRatio)): {
+        case (_cardiacOutput >= 0.95): {
             // Normal refill ≤ 2s
             _capRefillOutput = LSTRING(Check_capRefill_Output_Normal);
             _logCapRefillOutput = LSTRING(Check_capRefill_Output_Normal_log);
         };
-        case (_cardiacOutput >= (0.80 * _cardiacOutputRatio) && _cardiacOutput < (0.95 * _cardiacOutputRatio)): {
+        case (_cardiacOutput >= 0.75): {
             // Delayed refill ~3-4s
             _capRefillOutput = LSTRING(Check_capRefill_Output_Delayed);
             _logCapRefillOutput = LSTRING(Check_capRefill_Output_Delayed_log);
         };
-        case (_cardiacOutput < (0.80 * _cardiacOutputRatio)): {
+        case (_cardiacOutput >= 0.55): {
+            // Severely delayed refill ≥ 5s
+            _capRefillOutput = LSTRING(Check_capRefill_Output_SeverelyDelayed);
+            _logCapRefillOutput = LSTRING(Check_capRefill_Output_SeverelyDelayed_log);
+        };
+        default {
             // Severely delayed refill ≥ 5s
             _capRefillOutput = LSTRING(Check_capRefill_Output_SeverelyDelayed);
             _logCapRefillOutput = LSTRING(Check_capRefill_Output_SeverelyDelayed_log);

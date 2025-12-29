@@ -29,7 +29,7 @@ class ACE_Medical_Treatment_Actions {
     };
     class ListenToHeart: ListenToLungs {
         displayName = CSTRING(auscultateHeart_display);
-        category = "advanced";
+        category = "Examine";
         callbackStart = QUOTE(_medic setVariable [ARR_3(QQGVAR(usingStethoscope),true,true)]; [ARR_2(_medic,_patient)] call FUNC(listenHeart));
         callbackSuccess = QUOTE(_medic setVariable [ARR_3(QQGVAR(usingStethoscope),false,true)]);
         callbackProgress = "";
