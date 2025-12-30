@@ -6075,13 +6075,13 @@
             <English>Used to manage Ph</English>
         </Key>
         <Key ID="STR_KAT_Pharma_Push_Bicarbonate_5ml_20">
-            <English>Push 80 mEq Bicarbonate</English>
+            <English>Push 80mEq Bicarbonate</English>
         </Key>
         <Key ID="STR_KAT_Pharma_Pushing_Bicarbonate_5ml_20">
-            <English>Pushing 80 mEq Bicarbonate</English>
+            <English>Pushing 80mEq Bicarbonate</English>
         </Key>
         <Key ID="STR_KAT_Pharma_SyringeDisplay_Bicarbonate_5ml_20">
-            <English>5ml Syringe / 80 mEq Bicarbonate</English>
+            <English>5ml Syringe / 80mEq Bicarbonate</English>
         </Key>
         <Key ID="STR_KAT_Pharma_medLvl_CalciumChloride">
             <English>Medical level required for Calcium Chloride</English>

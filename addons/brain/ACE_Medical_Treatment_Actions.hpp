@@ -1,6 +1,6 @@
 class ACE_Medical_Treatment_Actions {
     class BasicBandage;
-    class Ultrasound: BasicBandage {
+    class HeadUltrasound: BasicBandage {
         displayName = CSTRING(UltraICP_Use);
         displayNameProgress = CSTRING(UltraICP_Action);
         category = "examine";

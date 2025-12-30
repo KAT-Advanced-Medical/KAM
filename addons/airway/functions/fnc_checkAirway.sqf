@@ -129,8 +129,10 @@ switch (true) do {
             _hintWidth = 10;
             };
 };
-
-
+[{
+    params ["_medic", "_patient"];
+    [_medic, _patient] call EFUNC(breathing,checkBreathing);
+}, [_medic, _patient], 3] call CBA_fnc_waitAndExecute;
 if ((((_patient getVariable [QGVAR(occlusion), [0, 0, 0]]) findIf { _x != 0 }) != -1) && (((_patient getVariable [QGVAR(obstruction), [0, 0, 0]]) findIf { _x != 0 }) != -1) && GVAR(autoTriage)) then {_patient setVariable [QACEGVAR(medical,triageLevel), 0, true]};
 
 [_hintAirwayStatus, _hintSize, _medic, _hintWidth] call ACEFUNC(common,displayTextStructured);

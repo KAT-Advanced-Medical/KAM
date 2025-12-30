@@ -57,11 +57,13 @@ private _cmr             = GET_CMR(ACE_player);
 private _airwayState = HAS_AIRWAY(ACE_player);
 // - Visual effects -----------------------------------------------------------
 [!_unconscious, _opioid] call FUNC(effectOpioid);
-
+private _spo2Die = EGVAR(breathing,SpO2_dieValue);
 [
     !_unconscious,
-    linearConversion [90, EGVAR(breathing,SpO2_dieValue), _spO2, 0, 1, true]
+    linearConversion [90, _spo2Die, _spO2, 0, 1, true]
 ] call FUNC(effectLowSpO2);
+diag_log str _spo2Die;
+diag_log str _spO2;
 [!_unconscious, !_airwayState] call FUNC(effectAirways);
 private _time = ACE_player getVariable [QGVAR(airwayInjuryColorTime), 0];
 private _intensity = 0;

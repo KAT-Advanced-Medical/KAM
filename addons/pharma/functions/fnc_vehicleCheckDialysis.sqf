@@ -17,13 +17,12 @@
  */
 
 params ["_medic", "_patient"];
-if !(_patient getVariable [QGVAR(dialysisRunning), false]) exitWith { true };
-if (
-    (_patient nearEntities 10) findIf {
+private _isRunning = _patient getVariable [QGVAR(dialysisRunning), false];
+if (!(_isRunning) &&
+    ((_patient nearEntities 10) findIf {
         _x getVariable [QACEGVAR(medical,isMedicalVehicle), false]
-    } > -1
+    } > -1)
 ) exitWith {true };
-if (_patient call ACEFUNC(medical_treatment,isInMedicalFacility)) exitWith { true };
-if (_patient call ACEFUNC(medical_treatment,isInMedicalVehicle)) exitWith { true };
-systemChat "false";
+if (!(_isRunning) && (_patient call ACEFUNC(medical_treatment,isInMedicalFacility))) exitWith { true };
+if (!(_isRunning) && (_patient call ACEFUNC(medical_treatment,isInMedicalVehicle))) exitWith { true };
 false

@@ -28,7 +28,8 @@ _syringeListBox ctrlAddEventHandler ["LBSelChanged", {
         "kat_lidocaine", "kat_lorazepam", "kat_nalbuphine", "kat_nitroglycerin",
         "kat_norepinephrine", "kat_phenylephrine", "kat_TXA", "kat_morphineIV",
         "kat_adenosineIV", "kat_alteplase", "kat_doxapram", "ACE_salineIV_250", "kat_ondansetron",
-        "kat_rocuronium", "kat_succinylcholine", "kat_sugammadex", "kat_salineIV100", "kat_metoprolol", "kat_diazepam"
+        "kat_rocuronium", "kat_succinylcholine", "kat_sugammadex", "kat_salineIV100", "kat_metoprolol", "kat_diazepam",
+        "kat_bicarbonate", "kat_calciumChloride", "kat_calciumGluconate"
     ];
 
     private _inventory = (items player) + (magazines player);
@@ -67,7 +68,7 @@ _syringeListBox ctrlAddEventHandler ["LBSelChanged", {
         "kat_etomidate", "kat_fentanyl", "kat_flumazenil", "kat_ketamine",
         "kat_lidocaine", "kat_lorazepam", "kat_nalbuphine", "kat_phenylephrine", "kat_TXA", "kat_morphineIV",
         "kat_adenosineIV", "kat_atropineIV", "kat_alteplase", "kat_doxapram", "ACE_salineIV_250", "kat_ondansetron",
-        "kat_rocuronium", "kat_succinylcholine", "kat_sugammadex", "kat_metoprolol", "kat_diazepam"
+        "kat_rocuronium", "kat_succinylcholine", "kat_sugammadex", "kat_metoprolol", "kat_diazepam", "kat_bicarbonate", "kat_calciumChloride", "kat_calciumGluconate"
     ];
     private _10mlWhitelist = [
         "kat_fentanyl", "kat_ketamine",

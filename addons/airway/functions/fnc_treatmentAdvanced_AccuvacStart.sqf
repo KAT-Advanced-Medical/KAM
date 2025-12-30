@@ -133,6 +133,7 @@ GVAR(suction_timeOut) = true;
                             _soundID = playSound3D [QPATHTOF_SOUND(sounds\accuvac_start.wav), _patient, false, getPosASL _patient, 6, 1, 15];
                         };
                 };
+                _patient setVariable [QGVAR(clearedTime), CBA_missionTime, true];
 
             }] call CBA_fnc_waitUntilAndExecute;
         };

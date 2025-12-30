@@ -38,7 +38,7 @@ _patient setVariable [QGVAR(RhythmAnalyzed), false, true];
     params ["_patient"];
 
     _patient setVariable [QGVAR(heartRestart), false, true];
-}, [_patient], 4] call CBA_fnc_waitAndExecute;
+}, [_patient], 5] call CBA_fnc_waitAndExecute;
 
 [{
     params ["_patient"];

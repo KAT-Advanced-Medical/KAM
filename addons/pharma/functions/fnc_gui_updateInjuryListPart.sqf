@@ -66,7 +66,7 @@ if (_hasPatch) then {
 };
   
 private _damageAmount = [_target,_selectionN] call EFUNC(hitpoints,damageAmount);
-if ((_damageAmount > GVAR(ivLeakageThreshold)) && GVAR(ivCheckLimbDamage)) then {
+if ((_damageAmount > GVAR(ivLeakageThreshold)) && GVAR(ivCheckLimbDamage) && (_IVactual in [2,3,4,5,6,7,8,9,10,11,12])) then {
     _lostFluids = linearConversion [GVAR(ivLeakageThreshold), 50, _damageAmount, 1, 0, true];
     if (_lostFluids < 0.8) then {
         _entries pushBack [LLSTRING(ivSiteCompromised), [1, 0, 0, 1]];
@@ -74,5 +74,5 @@ if ((_damageAmount > GVAR(ivLeakageThreshold)) && GVAR(ivCheckLimbDamage)) then 
 };
 
 if (_target getVariable [QGVAR(dialysisRunning), false]) then {
-    _entries pushBack [LLSTRING(activeDialysis), [0, 0, 0, 1]];
+    _entries pushBack [LLSTRING(activeDialysis), [1, 1, 1, 1]];
 };
