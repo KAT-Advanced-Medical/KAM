@@ -38,10 +38,11 @@ if (_unit getVariable [QEGVAR(vitals,simpleMedical), false]) exitWith {};
     };
     private _nauseaMult = _unit getVariable [QEGVAR(pharma,nauseaMult), 1];
     private _nauseaMult = (_nauseaMult min 6) max 0.1;
+    private _nauseaDelay = if (_nauseaMult < 1) then {_nauseaMult / 2} else {_nauseaMult};
     private _icp = _unit getVariable [QEGVAR(brain,ICP),15];
     private _icpChance = linearConversion [15, 60, _icp, 1, 2, true];
     private _nauseaChance = linearConversion [0.1, 6, _nauseaMult, 0.1, 2, true];
-    if ((CBA_missionTime - (_unit getVariable [QGVAR(clearedTime), 0])) < 15) exitWith {
+    if ((CBA_missionTime - (_unit getVariable [QGVAR(clearedTime), 0])) < GVAR(cooldownTime)) exitWith {
         [_idPFH, 5] call CBA_fnc_setPerFrameHandlerDelay;
     };
     if ((random 100) <= (GVAR(airwayPukeChance) * (_nauseaChance * _icpChance))) then {
@@ -65,7 +66,7 @@ if (_unit getVariable [QEGVAR(vitals,simpleMedical), false]) exitWith {};
             playSound3D [_sound, _unit, false, getPosASL _unit, 8, 1, 15];
             };
         };
-        private _delay = ((GVAR(occlusion_repeatTimer) / _nauseaMult) * random [0.8, 1, 1.3]) max GVAR(minPukeTime);
+        private _delay = ((GVAR(occlusion_repeatTimer) / _nauseaDelay) * random [0.8, 1, 1.3]) max GVAR(minPukeTime);
         [_unit] call FUNC(airwayDeterioration);
         [_idPFH, _delay] call CBA_fnc_setPerFrameHandlerDelay;
     }, GVAR(occlusion_repeatTimer), [_unit]] call CBA_fnc_addPerFrameHandler;

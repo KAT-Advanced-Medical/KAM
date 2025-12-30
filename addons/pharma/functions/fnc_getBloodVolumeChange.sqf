@@ -140,12 +140,15 @@ if (count (_unit getVariable [QACEGVAR(medical,ivBags), []]) > 0) then {
                 };
             };
             // Plasma adds to ECP. Saline splits between the ECP and ISP. Blood adds to ECB/ECP
-            private _ph = _unit getVariable [QGVAR(externalPh), 0];
-            private _ph = (_ph + (_phChange * (_bagChange/10)));
-            _unit setVariable [QGVAR(externalPh), _ph, true];
-            private _ca = _unit getVariable [QGVAR(externalCa), 0];
-            private _ca = (_ca + (_caChange * (_bagChange/10)));
-            _unit setVariable [QGVAR(externalCa), _ca, true];
+            if GVAR(kidneyAction) then {
+                private _ph = _unit getVariable [QGVAR(externalPh), 0];
+                private _ph = (_ph + (_phChange * (_bagChange/10)));
+                _unit setVariable [QGVAR(externalPh), _ph, true];
+                private _ca = _unit getVariable [QGVAR(externalCa), 0];
+                private _ca = (_ca + (_caChange * (_bagChange/10)));
+                _unit setVariable [QGVAR(externalCa), _ca, true];
+            };
+            
             switch (true) do {
                 case(_type == "Plasma"): {
                     _ECP = _ECP + _bagChange; _lossVolumeChange = _lossVolumeChange + (_bagChange / ML_TO_LITERS); 
@@ -281,9 +284,11 @@ if (count (_unit getVariable [QACEGVAR(medical,ivBags), []]) > 0) then {
                     _incomingVolumeChange set [_bodyPart, ((_incomingVolumeChange select _bodyPart) - _bagChange)];
                 };
             };
-            private _ph = _unit getVariable [QGVAR(externalPh), 0];
-            private _ph = (_ph + (_phChange * _bagChange)) max 0;
-            _unit setVariable [QGVAR(externalPh), _ph];
+            if GVAR(kidneyAction) then {
+                private _ph = _unit getVariable [QGVAR(externalPh), 0];
+                private _ph = (_ph + (_phChange * (_bagChange/10)));
+                _unit setVariable [QGVAR(externalPh), _ph, true];
+            };
             if (_enableFluidShift) then {
                 _ECP = _ECP + _bagChange / 2; 
                 _ISP = _ISP + _bagChange / 2; 

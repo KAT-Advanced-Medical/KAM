@@ -20,8 +20,14 @@
 params ["_medic", "_patient", "_bodyPart"];
 
 if ((ACEGVAR(medical_treatment,consumeSurgicalKit) == 2) && {!([_medic, _patient, ["ACE_suture"]] call ACEFUNC(medical_treatment,hasItem))}) exitWith {false};
+private _unstitchableTypes = ["ETD", "Israeli_Bandage"];
+private _bandaged = GET_BANDAGED_WOUNDS(_patient) getOrDefault [_bodyPart, []];
+private _hasStitchableBandage = (_bandaged findIf {
+    _x params ["", "", "", "", "_type"];
+    !(_type in _unstitchableTypes)
+}) != -1;
 ((
-    (GET_BANDAGED_WOUNDS(_patient) getOrDefault [_bodyPart, []]) isNotEqualTo [] ||
+    (_hasStitchableBandage)||
     (GET_COAGED_WOUNDS(_patient) getOrDefault [_bodyPart, []]) isNotEqualTo [] ||
     (GET_WRAPPED_WOUNDS(_patient) getOrDefault [_bodyPart, []]) isNotEqualTo []
 )) // return

@@ -103,6 +103,15 @@
 ] call CBA_fnc_addSetting;
 
 [
+    QGVAR(cooldownTime),
+    "SLIDER",
+    [LLSTRING(SETTING_occlusion_cooldownPeriod), LLSTRING(SETTING_occlusion_cooldownPeriod_DESC)],
+    [CBA_SETTINGS_CAT, ELSTRING(GUI,SubCategory_Basic)],
+    [0, 60, 6, 1],
+    true
+];
+
+[
     QGVAR(catastrophicAirwayChance),
     "SLIDER",
     [LLSTRING(SETTING_catastrophicAirwayChance),LLSTRING(SETTING_catastrophicAirwayChance_DESC)],

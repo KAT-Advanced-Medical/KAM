@@ -30,23 +30,31 @@ private _coagWounds      = GET_COAGED_WOUNDS(_patient);
 private _stitchedWounds  = GET_STITCHED_WOUNDS(_patient);
 
 // Select wounds on given body part
+private _unstitchableTypes = ["ETD", "Israeli_Bandage"];
 private _bandagedWoundsOnPart = _bandagedWounds getOrDefault [_bodyPart, []];
-private _wrappedWoundsOnPart  = _wrappedWounds getOrDefault [_bodyPart, []];
-private _coagWoundsOnPart     = _coagWounds getOrDefault [_bodyPart, []];
+private _wrappedWoundsOnPart  = _wrappedWounds  getOrDefault [_bodyPart, []];
+private _coagWoundsOnPart     = _coagWounds     getOrDefault [_bodyPart, []];
 
 private _allWounds = [];
-
-// Combine wounds for processing
 {
-    private _woundArray = _x select 0;
-    private _woundSource = _x select 1;
+    _x params ["_woundArray", "_woundSource"];
+
     {
-        _allWounds pushBack [_x, _forEachIndex, _woundSource]; // [wound, index, source]
+        if (
+            _woundSource != "bandaged"
+            || {
+                _x params ["", "", "", "", "_type"];
+                !(_type in _unstitchableTypes)
+            }
+        ) then {
+            _allWounds pushBack [_x, _forEachIndex, _woundSource];
+        };
     } forEach _woundArray;
+
 } forEach [
     [_bandagedWoundsOnPart, "bandaged"],
-    [_wrappedWoundsOnPart, "wrapped"],
-    [_coagWoundsOnPart, "coag"]
+    [_wrappedWoundsOnPart,  "wrapped"],
+    [_coagWoundsOnPart,     "coag"]
 ];
 // Stop treatment if there are no wounds that can be stitched remaining
 if (_allWounds isEqualTo []) exitWith {false};

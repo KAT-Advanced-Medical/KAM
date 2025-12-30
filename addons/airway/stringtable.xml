@@ -1278,6 +1278,13 @@
             <Finnish>Okkluusiojäähdytyssykli</Finnish>
             <Dutch>Verstoppings afkoelingsperiode</Dutch>
         </Key>
+        <Key ID="STR_KAT_Airway_SETTING_occlusion_cooldownPeriod_DESC">
+            <English>Period in seconds during which patient cannot get another occlusion after last occlusion was cleared. Set to 0 to disable this feature.</English>
+            <German>Zeitraum in Sekunden, in dem ein Patient keine weitere Okklusion bekommen kann, nachdem die letzte Okklusion beseitigt wurde. Auf 0 setzen, um diese Funktion zu deaktivieren.</German>
+            <French>Période en secondes pendant laquelle le patient ne peut pas obtenir une autre occlusion après que la dernière occlusion a été effacée. Réglez sur 0 pour désactiver cette fonction.</French>
+            <Japanese>患者の気道異物が解消された後、再度気道異物が発生しない期間(秒)。 0に設定で無効化。</Japanese>
+            <Spanish>Período en segundos durante el cual el paciente no puede recibir otra oclusión después de que la última haya sido eliminada. Establecer a 0 para desactivar esta función.</Spanish>
+        </Key>
         <Key ID="STR_KAT_Airway_SETTING_occlusion_repeatTimer">
             <English>Puke repeat timer</English>
         </Key>
