@@ -285,20 +285,21 @@ private _fnc_clotWound = {
 
             private _category = _woundClassID % 10;
             private _suffix = ["Minor", "Medium", "Large"] select _category;
-
+            private _classIndex = _woundClassID / 10;
+            private _className = ACEGVAR(medical_damage,woundClassNames) select _classIndex;
             switch (_suffix) do {
                 case "Minor": {
-                    if (missionNamespace getVariable [QGVAR(coagulation_allow_MinorWounds), true] && _amountOf * _bleeding > 0) then {
+                    if ((missionNamespace getVariable [QGVAR(coagulation_allow_MinorWounds), true] || (_className isEqualTo "InternalBleeding")) && _amountOf * _bleeding > 0) then {
                         _hasWoundToBandageArray pushBack true;
                     };
                 };
                 case "Medium": {
-                    if (missionNamespace getVariable [QGVAR(coagulation_allow_MediumWounds), true] && _amountOf * _bleeding > 0) then {
+                    if ((missionNamespace getVariable [QGVAR(coagulation_allow_MediumWounds), true] || (_className isEqualTo "InternalBleeding")) && _amountOf * _bleeding > 0) then {
                         _hasWoundToBandageArray pushBack true;
                     };
                 };
                 default {
-                    if (missionNamespace getVariable [QGVAR(coagulation_allow_LargeWounds), true] && _amountOf * _bleeding > 0) then {
+                    if ((missionNamespace getVariable [QGVAR(coagulation_allow_LargeWounds), true] || (_className isEqualTo "InternalBleeding")) && (_amountOf * _bleeding > 0)) then {
                         _hasWoundToBandageArray pushBack true;
                     };
                 };

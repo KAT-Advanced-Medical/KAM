@@ -54,9 +54,6 @@ private _bronchospasm = _unit getVariable [QEGVAR(breathing,bronchospasm), 1];
 private _airway = HAS_AIRWAY(_unit);
 private _paralysis = (_unit getVariable [QEGVAR(breathing,paralysis), 0] > 0.1);
 
-///////////////////////////////////////////////////////////////////////////////
-// AIRWAY FAILURE PFH (UNCHANGED)
-///////////////////////////////////////////////////////////////////////////////
 private _existingPFH = _unit getVariable [QGVAR(airwayMonitorPFH), -1];
 if ((_existingPFH isEqualTo -1) && (!_airway || _paralysis)) then {
     private _pfhID = [{
@@ -80,9 +77,7 @@ if ((_existingPFH isEqualTo -1) && (!_airway || _paralysis)) then {
     _unit setVariable [QGVAR(airwayMonitorPFH), _pfhID];
 };
 
-///////////////////////////////////////////////////////////////////////////////
-// CARDIAC ARREST / NO AIRWAY
-///////////////////////////////////////////////////////////////////////////////
+
 if ((IN_CRDC_ARRST(_unit)) || !_airway || _paralysis) then {
 
     _demandVentilation = MINIMUM_VENTILATION;
@@ -97,10 +92,6 @@ if ((IN_CRDC_ARRST(_unit)) || !_airway || _paralysis) then {
     _actualVentilation = ((_respiratoryDepth / 10) * GET_KAT_SURFACE_AREA(_unit) * _respiratoryRate) max 1;
 
 } else {
-
-///////////////////////////////////////////////////////////////////////////////
-// METABOLIC VENTILATION DEMAND (UNCHANGED STRUCTURE)
-///////////////////////////////////////////////////////////////////////////////
 
     private _co = [_unit] call FUNC(getCardiacOutput);
     private _coNorm = linearConversion [0.7, 1.4, _co / CO_REF, 0.85, 1.35, true];
@@ -117,10 +108,6 @@ if ((IN_CRDC_ARRST(_unit)) || !_airway || _paralysis) then {
     _alveolarDemand =
     _demandVentilation * (1 - DEAD_SPACE_FRAC);
 
-///////////////////////////////////////////////////////////////////////////////
-// CENTRAL DRIVE & OPIOIDS
-///////////////////////////////////////////////////////////////////////////////
-
     private _icp = GET_ICP(_unit);
     private _map = GET_MAP(_unit);
     private _CPP = (_map - _icp) max 0;
@@ -128,10 +115,6 @@ if ((IN_CRDC_ARRST(_unit)) || !_airway || _paralysis) then {
     private _respDrive = linearConversion [80, 20, _CPP, 1.0, 0.1, true];
     _respDrive = _respDrive * (1 - (_opioidDepression * 0.6));
     _respDrive = _respDrive max 0 min 1;
-
-///////////////////////////////////////////////////////////////////////////////
-// NON-NORMAL BREATHING PATTERNS (UNCHANGED)
-///////////////////////////////////////////////////////////////////////////////
 
     if (_unit getVariable [QEGVAR(breathing,BVMInUse), false]) then {
         _respiratoryRate  = 20;
@@ -301,10 +284,6 @@ if ((IN_CRDC_ARRST(_unit)) || !_airway || _paralysis) then {
         };
     };
 if (!_patternApplied) then {
-
-        ///////////////////////////////////////////////////////////////////////////
-        // TRACE: DEMAND → TARGET RR
-        ///////////////////////////////////////////////////////////////////////////
         TRACE_3(
             "BREATH_CTRL_DEMAND",
             _demandVentilation,
@@ -318,9 +297,6 @@ if (!_patternApplied) then {
         _targetRR = (_targetRR min MAXIMUM_RR) * _respiratoryRateMult;
         _targetRR = _targetRR * (1 - (_opioidDepression * 0.6));
 
-        ///////////////////////////////////////////////////////////////////////////
-        // TRACE: TARGET RR
-        ///////////////////////////////////////////////////////////////////////////
         TRACE_2(
             "BREATH_CTRL_TARGET_RR",
             _targetRR,
@@ -332,10 +308,6 @@ if (!_patternApplied) then {
         _unit setVariable [QGVAR(rrMemory), _rrMem];
 
         _respiratoryRate = _rrMem * _respDrive;
-
-        ///////////////////////////////////////////////////////////////////////////
-        // TRACE: RR MEMORY & OUTPUT
-        ///////////////////////////////////////////////////////////////////////////
         TRACE_3(
             "BREATH_CTRL_RR",
             _rrMem,
@@ -352,10 +324,6 @@ if (!_patternApplied) then {
         private _baseVT =
             GET_KAT_SURFACE_AREA(_unit)
             * (_respiratoryDepth / 10);
-
-        ///////////////////////////////////////////////////////////////////////////
-        // TRACE: BASE VT
-        ///////////////////////////////////////////////////////////////////////////
         TRACE_2(
             "BREATH_CTRL_VT_BASE",
             _respiratoryDepth,
@@ -367,10 +335,6 @@ if (!_patternApplied) then {
             private _excess = _respiratoryRate - 22;
             private _vtScale = linearConversion [0, 20, _excess, 1, 0.45, true];
             _baseVT = _baseVT * _vtScale;
-
-            ///////////////////////////////////////////////////////////////////////////
-            // TRACE: VT TACHYPNEA SCALING
-            ///////////////////////////////////////////////////////////////////////////
             TRACE_3(
                 "BREATH_CTRL_VT_SCALE",
                 _respiratoryRate,
@@ -383,10 +347,6 @@ if (!_patternApplied) then {
             (_baseVT * _respiratoryRate)
             * _bronchospasm
             max 1;
-
-        ///////////////////////////////////////////////////////////////////////////
-        // TRACE: ACTUAL VENTILATION
-        ///////////////////////////////////////////////////////////////////////////
         TRACE_3(
             "BREATH_CTRL_VENT",
             _baseVT,
@@ -396,37 +356,19 @@ if (!_patternApplied) then {
     };
 };
 
-///////////////////////////////////////////////////////////////////////////////
-// >>> REALISM FIX: ALVEOLAR VENTILATION
-///////////////////////////////////////////////////////////////////////////////
 _alveolarVent = (_actualVentilation * (1 - DEAD_SPACE_FRAC)) max 1;
-
-///////////////////////////////////////////////////////////////////////////////
-// >>> REALISM FIX: PaCO2 DYNAMICS
-///////////////////////////////////////////////////////////////////////////////
 private _paco2 = _previousCyclePaco2;
 
 if (EGVAR(breathing,paco2Active)) then {
     private _ventRatio = _alveolarVent / (_alveolarDemand max 1);
-    // --- Consciousness
     private _unconscious = !alive _unit || (_unit getVariable ["ACE_isUnconscious", false]);
-
-    // --- Sedation / opioids (0–1)
     private _opioid = _unit getVariable [QEGVAR(pharma,opioidDepression), 0];
-
-    // --- Anesthesia proxy (ACE fatigue used as CNS suppression)
     private _cnsSuppression = (_unit getVariable [QEGVAR(surgery,sedated), 0])
         max (_opioid);
-
-    // --- Awake baseline
     private _basal = 1.0;
 
-    // --- CNS suppression scaling
     private _cnsScale =
         linearConversion [0, 1, _cnsSuppression, 1.0, 0.65, true];
-
-
-    // --- Unconscious override
     if (_unconscious) then {
         _basalCO2Prod = 0.8;
     };
@@ -447,14 +389,6 @@ if (EGVAR(breathing,paco2Active)) then {
     _paco2 = _previousCyclePaco2 + _deltaPaco2;
 };
 
-///////////////////////////////////////////////////////////////////////////////
-// >>> REALISM FIX: ETCO2
-///////////////////////////////////////////////////////////////////////////////
-
-
-///////////////////////////////////////////////////////////////////////////////
-// OXYGENATION
-///////////////////////////////////////////////////////////////////////////////
 private _fio2 = switch (true) do {
     case (!_airway): { 0 };
     case (_respiratoryRate == 0): { 0 };
@@ -465,9 +399,6 @@ private _fio2 = switch (true) do {
     default { DEFAULT_FIO2 };
 };
 
-///////////////////////////////////////////////////////////////////////////////
-// >>> REALISM FIX: ALVEOLAR GAS EQUATION
-///////////////////////////////////////////////////////////////////////////////
 private _pALVo2 =
 (
     (_fio2 * (_baroPressure - 47))
