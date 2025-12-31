@@ -142,10 +142,10 @@ if (count (_unit getVariable [QACEGVAR(medical,ivBags), []]) > 0) then {
             // Plasma adds to ECP. Saline splits between the ECP and ISP. Blood adds to ECB/ECP
             if GVAR(kidneyAction) then {
                 private _ph = _unit getVariable [QGVAR(externalPh), 0];
-                private _ph = (_ph + (_phChange * (_bagChange/10)));
+                private _ph = (_ph + (_phChange * _bagChange));
                 _unit setVariable [QGVAR(externalPh), _ph, true];
                 private _ca = _unit getVariable [QGVAR(externalCa), 0];
-                private _ca = (_ca + (_caChange * (_bagChange/10)));
+                private _ca = (_ca + (_caChange * _bagChange));
                 _unit setVariable [QGVAR(externalCa), _ca, true];
             };
             
@@ -286,7 +286,7 @@ if (count (_unit getVariable [QACEGVAR(medical,ivBags), []]) > 0) then {
             };
             if GVAR(kidneyAction) then {
                 private _ph = _unit getVariable [QGVAR(externalPh), 0];
-                private _ph = (_ph + (_phChange * (_bagChange/10)));
+                private _ph = (_ph + (_phChange * _bagChange));
                 _unit setVariable [QGVAR(externalPh), _ph, true];
             };
             if (_enableFluidShift) then {

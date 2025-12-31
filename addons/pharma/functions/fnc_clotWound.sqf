@@ -264,7 +264,7 @@ private _fnc_clotWound = {
     private _openWounds = _unit getVariable [VAR_OPEN_WOUNDS, createHashMap];
     private _pulse = _unit getVariable [VAR_HEART_RATE, 80];
     private _coagulationFactor = GET_BODY_FLUID_PLATELETS(_unit);
-    private _txaEffectiveness = [_unit, "TXA"] call ACEFUNC(medical_status,getMedicationCount) select 1;
+    private _txaEffectiveness = [_unit, "TXA", false] call ACEFUNC(medical_status,getMedicationCount) select 1;
     private _hasWoundToBandageArray = [];
 
     if (_openWounds isEqualTo createHashMap) exitWith {}; // Exit when hashmap not initialized (Will not work when hashmap is set, cause ace only changes value of "woundCount" to 0)

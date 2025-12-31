@@ -214,11 +214,16 @@ if (_adjustments isNotEqualTo []) then {
 [_unit, _paralysisAdjustment, _deltaT, _syncValues] call FUNC(updateParalysis);
 
 private _aceAnFatigue = 0;
+private _aceAnReserve = 0;
 if (_unit getVariable [QGVAR(fatigueEnabled), false]) then {
     _aceAnFatigue = [_unit] call FUNC(returnFatigue);
 };
 
-private _heartRate = [_unit, _hrTargetAdjustment, 0, _bloodVolume, _aceAnFatigue, _deltaT, _syncValues] call FUNC(handleCardiacFunction);
+if (_unit getVariable [QGVAR(fatigueEnabled), false]) then {
+    _aceAnReserve = [_unit] call FUNC(returnReserve);
+};
+
+private _heartRate = [_unit, _hrTargetAdjustment, 0, _bloodVolume, _aceAnFatigue, _aceAnReserve, _deltaT, _syncValues] call FUNC(handleCardiacFunction);
 
 private _spo2 = 97;
 if (EGVAR(breathing,enable)) then {

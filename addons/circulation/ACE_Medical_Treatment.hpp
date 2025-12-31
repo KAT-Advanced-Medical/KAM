@@ -58,10 +58,10 @@ class ACE_Medical_Treatment {
             ratio[] = {"Plasma", 1};
             rateCoef = 0.6;
             platelets = 0.075;
-            ph = -0.8;
+            ph = 0.0007;
             bloodType = "O_N";
             compatibility[] = {"O", "O_N", "A", "A_N", "B","B_N", "AB", "AB_N"};
-            ca = -0.8;
+            ca = -0.024;
         };
         class BloodIV_500: BloodIV {
             volume = 500;
@@ -75,7 +75,8 @@ class ACE_Medical_Treatment {
             type = "Plasma";
             rateCoef = 1;
             platelets = 0.5;
-            ca = 0;
+            ca = -0.036;
+            ph = -0.001;
         };
         class PlasmaIV_500: PlasmaIV {
             volume = 500;
@@ -89,7 +90,7 @@ class ACE_Medical_Treatment {
             ratio[] = {};
             rateCoef = 1.4;
             platelets = 0;
-            ph = 0.7;
+            ph = 0.0025;
             ca = 0;
         };
         class SalineIV_500: SalineIV {
@@ -228,7 +229,7 @@ class ACE_Medical_Treatment {
             rateCoef = 1.4;
             type = "Ringers Lactate";
             platelets = 0;
-            ph = -0.2;
+            ph = -0.0012;
         };
         class RingersLactateIV_500: RingersLactateIV {
             volume = 500;
@@ -245,8 +246,8 @@ class ACE_Medical_Treatment {
             rateCoef = 0.4;
             type = "PackedRBC";
             platelets = 0.2;
-            ph = -0.4;
-            ca = -0.8;
+            ca = -0.048;
+            ph = 0.0014;
         };
         class PackedRBCIV_250: PackedRBCIV_500 {
             volume = 250;
@@ -439,7 +440,7 @@ class ACE_Medical_Treatment {
             ratio[] = {};
             rateCoef = 1.3;
             platelets = 0;
-            ph = 2.1;
+            ph = 0.0028;
         };
         class HypertonicSalineIV_250: HypertonicSalineIV_500 {
             volume = 250;
@@ -453,7 +454,7 @@ class ACE_Medical_Treatment {
             ratio[] = {};
             rateCoef = 1.3;
             platelets = 0;
-            ph = 0.4;
+            ph = 0.0014;
         };
         class HextendIV_500: HextendIV {
             volume = 500;

@@ -28,7 +28,7 @@ if (ACEGVAR(advanced_fatigue,enabled)) then {
         params ["_patient", "_defaultAnimSpeed"];
 
         if !(alive _patient) exitWith {};
-        ACEGVAR(advanced_fatigue,anReserve) = ACEGVAR(advanced_fatigue,anReserve) + 3000;
+        ACEGVAR(advanced_fatigue,anReserve) = ACEGVAR(advanced_fatigue,anReserve) + 1000;
         ["kat_PDF", 0] call ACEFUNC(advanced_fatigue,addDutyFactor);
         [LLSTRING(Pervitin_start), 2, _patient] call ACEFUNC(common,displayTextStructured);
 
@@ -62,7 +62,7 @@ if (ACEGVAR(advanced_fatigue,enabled)) then {
         params ["_patient"];
 
         if !(alive _patient) exitWith {};
-        ACEGVAR(advanced_fatigue,anReserve) = ACEGVAR(advanced_fatigue,anReserve) + 3000;
+        ACEGVAR(advanced_fatigue,anReserve) = ACEGVAR(advanced_fatigue,anReserve) + 1000;
         ["kat_PDF", 0.4] call ACEFUNC(advanced_fatigue,addDutyFactor);
         [LLSTRING(Pervitin_mid2), 2, _patient] call ACEFUNC(common,displayTextStructured);
     },
@@ -73,7 +73,7 @@ if (ACEGVAR(advanced_fatigue,enabled)) then {
         params ["_patient"];
 
         if !(alive _patient) exitWith {};
-        ACEGVAR(advanced_fatigue,anReserve) = ACEGVAR(advanced_fatigue,anReserve) + 3000;
+        ACEGVAR(advanced_fatigue,anReserve) = ACEGVAR(advanced_fatigue,anReserve) + 1000;
         ["kat_PDF", 0.6] call ACEFUNC(advanced_fatigue,addDutyFactor);
         [LLSTRING(Pervitin_mid3), 2, _patient] call ACEFUNC(common,displayTextStructured);
     },

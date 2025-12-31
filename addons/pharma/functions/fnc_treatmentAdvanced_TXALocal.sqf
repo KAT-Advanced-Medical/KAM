@@ -59,7 +59,7 @@ private _fnc_txaClot = {
     [{
     params ["_patient", "_bodyPart", "_id", "_amount", "_bleeding", "_damage", "_oldBandage", "_newBandage", "_factorCountToRemove"];
     if !(alive _patient) exitWith {};
-    private _eacaAmount = [_patient, "EACA", true] call ACEFUNC(medical_status,getMedicationCount) select 1;
+    private _eacaAmount = [_patient, "EACA",false] call ACEFUNC(medical_status,getMedicationCount) select 1;
     if (_eacaAmount > 0.1) exitWith {};
     private _coagWoundsLive = GET_COAGED_WOUNDS(_patient);
     private _currentWounds  = _coagWoundsLive getOrDefault [_bodyPart, []];
@@ -102,7 +102,7 @@ if (GVAR(coagulation)) then {
             if !(alive _patient) exitWith {
                 [_idPFH] call CBA_fnc_removePerFrameHandler;
             };
-            private _eacaAmount = [_patient, "EACA", true] call ACEFUNC(medical_status,getMedicationCount) select 1;
+            private _eacaAmount = [_patient, "EACA", false] call ACEFUNC(medical_status,getMedicationCount) select 1;
             if (_eacaAmount > 0.1) exitWith {
                 [_idPFH] call CBA_fnc_removePerFrameHandler;
             };

@@ -88,7 +88,7 @@ private _newPFH = [{
         _ICP_delta = (_ICP_delta min 3) max 1;
     };
     private _metoprololCount = ([_unit, "Metoprolol", false] call ACEFUNC(medical_status,getMedicationCount)) select 1;
-	private _metoprolol = linearConversion [0, 1, _metoprololCount, 1, 0.6];
+	private _metoprolol = linearConversion [0, 1, _metoprololCount, 1, 0.6, true];
     private _newICP = (_ICP + _ICP_delta) * _metoprolol;
     _newICP = (5 max _newICP) min 60;
     _unit setVariable [QGVAR(ICP), _newICP, true];

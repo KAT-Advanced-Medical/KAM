@@ -23,7 +23,7 @@ if (ACEGVAR(advanced_fatigue,enabled)) then {
 
     [{
         params ["_patient"];
-        ACEGVAR(advanced_fatigue,anReserve) = ACEGVAR(advanced_fatigue,anReserve) + 1500;
+        ACEGVAR(advanced_fatigue,anReserve) = ACEGVAR(advanced_fatigue,anReserve) + 700;
     },
     [_patient], 2.5] call CBA_fnc_waitAndExecute;
 

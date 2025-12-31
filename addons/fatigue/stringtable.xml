@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project name="KAT">
+    <Package name="Fatigue">
+        <Key ID="STR_KAT_Fatigue_cba_Name">
+            <English>KAT - ADV Medical: Fatigue</English>
+        </Key>
+    </Package>
+</Project>

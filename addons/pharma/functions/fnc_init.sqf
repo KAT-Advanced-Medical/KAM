@@ -30,6 +30,33 @@ if (GVAR(kidneyAction)) then {
         if (!alive _unit) exitWith {
             [_idPFH] call CBA_fnc_removePerFrameHandler;
         };
+
+        private _dt = 15;                       // PFH interval
+        private _maxDeltaPH = 4;                // max externalPh change per tick
+        private _maxDeltaLact = 0.15;           // mmol/L per tick
+        private _maxDeltaCa = 0.05;             // mmol/L per tick
+        private _maxDeltaDmg = 0.0025;           // organ damage per tick
+
+        // --- STATE CACHE ---
+        private _prev = _unit getVariable [QGVAR(prevPhysio), [
+            0,      // externalPh
+            1.2,    // lactate
+            2.4,    // effectiveCa
+            0       // generic damage
+        ]];
+
+        _prev params [
+            "_prevExtPH",
+            "_prevLact",
+            "_prevCa",
+            "_prevDmg"
+        ];
+
+        // --- HELPER ---
+        private _rateLimit = {
+            params ["_new", "_old", "_max"];
+            (_new max (_old - _max)) min (_old + _max)
+        };
         private _externalPh = _unit getVariable [QEGVAR(pharma,externalPh), 0];
         _externalPh = (_externalPh max -300) min 300;
         private _lactate    = _unit getVariable [QGVAR(lactate), 1.2];
@@ -40,7 +67,7 @@ if (GVAR(kidneyAction)) then {
         private _kidneyFail    = _unit getVariable [QGVAR(kidneyFail), false];
         private _kidneyArrest  = _unit getVariable [QGVAR(kidneyArrest), false];
         private _kidneyPressure= _unit getVariable [QGVAR(kidneyPressure), false];
-        private _bicarb = [_unit, "Bicarbonate"] call ACEFUNC(medical_status,getMedicationCount) select 1;
+        private _bicarb = [_unit, "Bicarbonate", false] call ACEFUNC(medical_status,getMedicationCount) select 1;
         private _effectiveCa = _unit getVariable [QGVAR(effectiveCa), 2.4];
         private _bvFrac = (_bv / 2700) max 0.3 min 1;
         private _shockIndex = (_hr / (_bvFrac * 100)) max 0.5 min 3;
@@ -52,7 +79,9 @@ if (GVAR(kidneyAction)) then {
         private _bufferFrac = linearConversion [0, 300, abs _externalPh, 1, 0.15, true];
         _totalShockAcid = _totalShockAcid * _bufferFrac;
         if (_bvFrac > 0.9 && _hr < 110) then { _totalShockAcid = 0 };
-        private _lactateGen = linearConversion [1, 2, _shockIndex, 0.01, 0.04, true];
+        private _lactateGen =
+        linearConversion [1, 2.2, _shockIndex, 0.01, 0.035, true] *
+        linearConversion [2, 6, _lactate, 1.0, 0.4, true];
         _lactateGen = _lactateGen * linearConversion [0.6, 1.0, _bvFrac, 1.6, 1.0, true];
         if (_effectiveCa < 2.1) then {
             _lactateGen = _lactateGen *
@@ -68,13 +97,14 @@ if (GVAR(kidneyAction)) then {
         if (_effectiveCa > 3.0) then { _lactateTarget = 3.0 };
         private _lactateClear =
             linearConversion [_lactateTarget, 6, _lactate, 0.015, 0.0, true] *
-            (1 - _damage);
+            linearConversion [0, 0.8, _damage, 1.0, 0.4, true];
 
         if (_bvFrac > 0.9 && _hr < 110) then {
             _lactateClear = _lactateClear * 1.5;
         };
 
-        _lactate = (_lactate - _lactateClear) max 0.8;
+        _lactate = [_lactate, _prevLact, _maxDeltaLact] call _rateLimit;
+        _lactate = _lactate max 0.8;
         _unit setVariable [QGVAR(lactate), _lactate, true];
         if (!_kidneyFail) then {
             _externalPh = _externalPh + _totalShockAcid;
@@ -103,10 +133,11 @@ if (GVAR(kidneyAction)) then {
             private _clearance =
                 0.125 *
                 linearConversion [7.4, 7.1, GET_PH(_unit), 1, 1.8, true] *
-                (1 - _damage);
+                linearConversion [0, 0.8, _damage, 1.0, 0.4, true];
             private _sign = if (_externalPh == 0) then {1} else {_externalPh / abs _externalPh};
             _externalPh = _externalPh - (_clearance * _sign);
         };
+        _externalPh = [_externalPh, _prevExtPH, _maxDeltaPH] call _rateLimit;
         _externalPh = (_externalPh max -300) min 300;
         _unit setVariable [QEGVAR(pharma,externalPh), _externalPh, true];
         
@@ -127,14 +158,13 @@ if (GVAR(kidneyAction)) then {
         };
 
         if (_effectiveCa > 3.2) then {
-            _damage = (_damage +
-                linearConversion [3.2, 3.8, _effectiveCa, 0.00025, 0.004, true]
-            ) min 1;
+            private _d = (_damage + linearConversion [3.2, 3.8, _effectiveCa, 0.00025, 0.004, true]) min 1;
+            _damage = [_d, _prevDmg, _maxDeltaDmg] call _rateLimit;
+
         };
         if (_effectiveCa > 1.6) then {
-            _damage = (_damage +
-                linearConversion [1.6, 1.1, _effectiveCa, 0.00025, 0.004, true]
-            ) min 1;
+            private _d = (_damage + linearConversion [1.6, 1.1, _effectiveCa, 0.00025, 0.004, true]) min 1;
+            _damage = [_d, _prevDmg, _maxDeltaDmg] call _rateLimit;
         };
 
         if (_damage >= 0.7) then {
@@ -157,6 +187,14 @@ if (GVAR(kidneyAction)) then {
         };
 
         _unit setVariable [QGVAR(kidneyDamage), _damage, true];
+        _unit setVariable [QGVAR(prevPhysio),
+            [
+                _externalPh,
+                _lactate,
+                _effectiveCa,
+                _damage
+            ]
+        ];
     }, 15, [_unit]] call CBA_fnc_addPerFrameHandler;
 };
 
@@ -169,7 +207,32 @@ if (GVAR(kidneyAction)) then {
         if (!alive _unit) exitWith {
             [_idPFH] call CBA_fnc_removePerFrameHandler;
         };
+        private _dt = 15;                       // PFH interval
+        private _maxDeltaPH = 4;                // max externalPh change per tick
+        private _maxDeltaLact = 0.15;           // mmol/L per tick
+        private _maxDeltaCa = 0.05;             // mmol/L per tick
+        private _maxDeltaDmg = 0.0025;           // organ damage per tick
 
+        // --- STATE CACHE ---
+        private _prev = _unit getVariable [QGVAR(prevPhysio), [
+            0,      // externalPh
+            1.2,    // lactate
+            2.4,    // effectiveCa
+            0       // generic damage
+        ]];
+
+        _prev params [
+            "_prevExtPH",
+            "_prevLact",
+            "_prevCa",
+            "_prevDmg"
+        ];
+
+        // --- HELPER ---
+        private _rateLimit = {
+            params ["_new", "_old", "_max"];
+            (_new max (_old - _max)) min (_old + _max)
+        };
         private _ca = _unit getVariable [QGVAR(serumCalcium), 0];
         private _damage = _unit getVariable [QGVAR(calciumDamage), 0];
         private _ph = GET_PH(_unit);
@@ -180,11 +243,11 @@ if (GVAR(kidneyAction)) then {
         private _shockIndex = (_hr / (_bvFrac * 100)) max 0.5 min 3;
         private _liverDamage = _unit getVariable [QGVAR(liverDamage), 0];
         private _liverFail   = _unit getVariable [QGVAR(liverFail), false];
-        private _bicarb = [_unit, "Bicarbonate"] call ACEFUNC(medical_status,getMedicationCount) select 1;
+        private _bicarb = [_unit, "Bicarbonate", false] call ACEFUNC(medical_status,getMedicationCount) select 1;
         private _externalPh = _unit getVariable [QGVAR(externalPh), 0];
-        private _caCl2 = [_unit, "CalciumChloride"] call ACEFUNC(medical_status,getMedicationCount) select 1;
-        private _caGlu = [_unit, "CalciumGluconate"] call ACEFUNC(medical_status,getMedicationCount) select 1;
-        private _txa = [_unit, "TXA"] call ACEFUNC(medical_status,getMedicationCount) select 1;
+        private _caCl2 = [_unit, "CalciumChloride", false] call ACEFUNC(medical_status,getMedicationCount) select 1;
+        private _caGlu = [_unit, "CalciumGluconate", false] call ACEFUNC(medical_status,getMedicationCount) select 1;
+        private _txa = [_unit, "TXA", false] call ACEFUNC(medical_status,getMedicationCount) select 1;
         private _effectiveCa = _unit getVariable [QGVAR(effectiveCa), GET_CA(_unit)];
         private _bufferFrac = linearConversion [0, 300, (abs _externalPh), 1, 0.15, true];
         if (_txa > 0) then {
@@ -285,8 +348,8 @@ if (GVAR(kidneyAction)) then {
     _ca
 );
         if (_caCl2 > 0) then {
-            private _amp = _caCl2 min 1;
-            private _cancel = (_amp * 10) min (abs _externalCa);
+            _amp = _caCl2 min 3;
+            private _cancel = (_amp * 2.5) min (abs _externalCa);
 
             if (_externalCa < 0) then {
                 _externalCa = _externalCa + _cancel;
@@ -327,6 +390,7 @@ if (GVAR(kidneyAction)) then {
                 linearConversion [2.2, 2.6, _ca, 1.0, 0.25, true];
 
         _effectiveCa = _ca + (_ionizedShift * _ionizedGain);
+        _effectiveCa = [_effectiveCa, _prevCa, _maxDeltaCa] call _rateLimit;
         if (!_kidneyFail && {_effectiveCa > 2.4}) then {
             private _renalPerf =
                 linearConversion [1, 1.8, _shockIndex, 1.0, 0.1, true];
@@ -349,7 +413,9 @@ if (GVAR(kidneyAction)) then {
             _ca = _ca + linearConversion [2.45, 2.25, _effectiveCa, 0.000, 0.005, true]
         };
         if (_effectiveCa > 3.0) then {
-            _damage = (_damage + 0.0005) min 1;
+            private _d = (_damage + 0) min 1;
+            _damage = [_d, _prevDmg, _maxDeltaDmg] call _rateLimit;
+
         };
         if (_effectiveCa < 2.1) then {
             private _medCount = [_unit, "CALCIUMCONTRACTILITY"] call ACEFUNC(medical_status,getMedicationCount) select 1;
@@ -453,9 +519,18 @@ if (GVAR(kidneyAction)) then {
             };
         };
         _unit setVariable [QGVAR(serumCalcium), _ca, true];
+        _effectiveCa = _effectiveCa max 0;
         _unit setVariable [QGVAR(effectiveCa), _effectiveCa, true];
         _unit setVariable [QGVAR(calciumDamage), _damage, true];
         _unit setVariable [QGVAR(liverDamage), _liverDamage, true];
+        _unit setVariable [QGVAR(prevPhysio),
+            [
+                _externalPh,
+                _lactate,
+                _effectiveCa,
+                _damage
+            ]
+        ];
 
     }, 15, [_unit]] call CBA_fnc_addPerFrameHandler;
 };

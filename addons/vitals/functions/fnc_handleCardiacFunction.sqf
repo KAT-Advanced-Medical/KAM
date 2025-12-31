@@ -21,13 +21,14 @@
  * Public: No
  */
 
-params ["_unit", "_hrTargetAdjustment", "_hrTarget", "_bloodVolume", "_aceAnFatigue", "_deltaT", "_syncValue"];
+params ["_unit", "_hrTargetAdjustment", "_hrTarget", "_bloodVolume", "_aceAnFatigue", "_aceAnReserve",  "_deltaT", "_syncValue"];
 
 private _icp = GET_ICP(_unit);
 private _map = GET_MAP(_unit);
 private _actualHeartRate = _hrTarget;
 private _painLevel = 0;
 private _shockClass = "NONE";
+private _metabolicDemand = 0;
 // ================= INPUT TRACE =================
 TRACE_4(
     "HR_INPUT",
@@ -55,7 +56,7 @@ if IN_CRDC_ARRST(_unit) then {
     #define INTEGRAL_CLAMP 30
     #define MIN_HR 20
     #define MAX_HR 220
-
+    _metabolicDemand = linearConversion [2200, 0, _aceAnReserve, 0, 1, true];
 
     _painLevel = GET_PAIN_PERCEIVED(_unit);
 
@@ -136,28 +137,38 @@ if IN_CRDC_ARRST(_unit) then {
     
     TRACE_2("CENTRAL_CMD", _centralBias, _modelHR);
 
+    // ================= METABOLIC CENTRAL COMMAND =================
+    private _staminaHRBias =
+        linearConversion [0, 1, _metabolicDemand, 0, 12, true];
+
+    // Central command bypasses baroreflex
+    _modelHR = _modelHR + _staminaHRBias;
+
+    TRACE_2("STAMINA_CMD", _metabolicDemand, _staminaHRBias);
+
     // ================= VAGAL =================
     private _vagalTone = 0;
 
+    // Pain vagal
     if (_painLevel > 0.7) then {
         _vagalTone = linearConversion [0.7, 1.0, _painLevel, 0, 0.35, true];
     };
 
+    // Hypoxia vagal
     private _spo2 = GET_KAT_SPO2(_unit);
     if (_spo2 < 85) then {
         _vagalTone = _vagalTone max
             linearConversion [85, 60, _spo2, 0, 0.5, true];
     };
 
-    TRACE_3(
-        "VAGAL",
-        _painLevel,
-        _spo2,
+    // --- Stamina suppresses vagal tone ---
+    _vagalTone =
         _vagalTone
-    );
+        * linearConversion [0, 1, _metabolicDemand, 1, 0.4, true];
+
+    TRACE_3("VAGAL", _painLevel, _spo2, _vagalTone);
 
     _modelHR = _modelHR * (1 - _vagalTone);
-
     // ================= SHOCK =================
     _shockClass = "NONE";
     if (_effectiveSV < 0.06 && _map < 70) then { _shockClass = "COMPENSATED" };
@@ -182,7 +193,13 @@ if IN_CRDC_ARRST(_unit) then {
 
     // ================= SA NODE =================
     private _hrDelta = _modelHR - _lastHR;
-    private _rate = 1.2 * _deltaT;
+
+    // Exertion accelerates HR response
+    private _rate =
+        (1.2 * _deltaT)
+        * linearConversion [0, 1, _metabolicDemand, 1, 1.6, true];
+
+    TRACE_4("SA_NODE", _lastHR, _modelHR, _hrDelta, _rate);
 
     TRACE_4(
         "SA_NODE",
@@ -236,6 +253,10 @@ private _hrMem =
 
 // Time constant (seconds)
 private _hrTau = 3.5;
+
+_hrTau =
+    _hrTau
+    * linearConversion [0, 1, _metabolicDemand, 1, 1.4, true];
 
 // Faster response in shock or pain
 if (_shockClass != "NONE" || _painLevel > 0.4) then {
