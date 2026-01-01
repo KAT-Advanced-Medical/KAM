@@ -61,7 +61,7 @@ class ACE_Medical_Treatment {
             ph = 0.0007;
             bloodType = "O_N";
             compatibility[] = {"O", "O_N", "A", "A_N", "B","B_N", "AB", "AB_N"};
-            ca = -0.024;
+            ca = -0.06;
         };
         class BloodIV_500: BloodIV {
             volume = 500;
@@ -75,8 +75,8 @@ class ACE_Medical_Treatment {
             type = "Plasma";
             rateCoef = 1;
             platelets = 0.5;
-            ca = -0.036;
-            ph = -0.001;
+            ca = -0.02;
+            ph = -0.013;
         };
         class PlasmaIV_500: PlasmaIV {
             volume = 500;
@@ -90,7 +90,7 @@ class ACE_Medical_Treatment {
             ratio[] = {};
             rateCoef = 1.4;
             platelets = 0;
-            ph = 0.0025;
+            ph = 0.033333;
             ca = 0;
         };
         class SalineIV_500: SalineIV {
@@ -229,7 +229,7 @@ class ACE_Medical_Treatment {
             rateCoef = 1.4;
             type = "Ringers Lactate";
             platelets = 0;
-            ph = -0.0012;
+            ph = -0.015;
         };
         class RingersLactateIV_500: RingersLactateIV {
             volume = 500;
@@ -246,8 +246,8 @@ class ACE_Medical_Treatment {
             rateCoef = 0.4;
             type = "PackedRBC";
             platelets = 0.2;
-            ca = -0.048;
-            ph = 0.0014;
+            ca = -0.01;
+            ph = 0.019;
         };
         class PackedRBCIV_250: PackedRBCIV_500 {
             volume = 250;
@@ -440,7 +440,7 @@ class ACE_Medical_Treatment {
             ratio[] = {};
             rateCoef = 1.3;
             platelets = 0;
-            ph = 0.0028;
+            ph = 0.364;
         };
         class HypertonicSalineIV_250: HypertonicSalineIV_500 {
             volume = 250;
@@ -454,7 +454,7 @@ class ACE_Medical_Treatment {
             ratio[] = {};
             rateCoef = 1.3;
             platelets = 0;
-            ph = 0.0014;
+            ph = 0.018;
         };
         class HextendIV_500: HextendIV {
             volume = 500;

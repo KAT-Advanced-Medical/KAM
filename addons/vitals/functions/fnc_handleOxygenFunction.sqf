@@ -422,7 +422,7 @@ private _externalPh = _unit getVariable [QEGVAR(pharma,externalPh), 0];
 
 private _pH =
 (_phConst + log(24 / (0.03 * _paco2)))
-- ((_externalPh max 0) / 280)
+- (_externalPh / 420)
 - ((_aceAnFatigue / 2) / 3);    
 
 private _p50 = ((25 - (((_pH / DEFAULT_PH) - 1) * 150)) max 15) min 40;
