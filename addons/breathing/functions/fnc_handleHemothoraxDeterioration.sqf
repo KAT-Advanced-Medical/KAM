@@ -35,7 +35,7 @@ private _fnc_createInternalBleeding = {
     _existingWounds pushBack _injury;
     _unit setVariable [VAR_OPEN_WOUNDS, _openWounds, true];
     _unit setVariable [VAR_BODYPART_DAMAGE, _bodyPartDamage, true];
-    [_unit] call ACEFUNC(medical_status,updateWoundBloodLoss);
+    [_unit] call EFUNC(circulation,updateWoundBloodLoss);
 };
 
 for "_i" from 0 to _amount do {
