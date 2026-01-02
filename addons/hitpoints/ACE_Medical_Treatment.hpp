@@ -2060,8 +2060,8 @@ class ACE_Medical_Treatment {
             class Crush: Abrasion {
                 effectiveness = 0.5;
                 reopeningChance = 0.2;
-                reopeningMinDelay = 300;
-                reopeningMaxDelay = 900;
+                reopeningMinDelay = 600;
+                reopeningMaxDelay = 1800;
             };
             class CrushMinor: Crush {
                 effectiveness = 3;
@@ -2076,8 +2076,8 @@ class ACE_Medical_Treatment {
             class Cut: Abrasion {
                 effectiveness = 3;
                 reopeningChance = 0.2;
-                reopeningMinDelay = 300;
-                reopeningMaxDelay = 900;
+                reopeningMinDelay = 600;
+                reopeningMaxDelay = 1800;
             };
             class CutMinor: Cut {
                 effectiveness = 3;
@@ -2092,8 +2092,8 @@ class ACE_Medical_Treatment {
             class Laceration: Abrasion {
                 effectiveness = 3;
                 reopeningChance = 0.3;
-                reopeningMinDelay = 300;
-                reopeningMaxDelay = 900;
+                reopeningMinDelay = 600;
+                reopeningMaxDelay = 1800;
             };
             class LacerationMinor: Laceration {
                 effectiveness = 3;
@@ -2108,8 +2108,8 @@ class ACE_Medical_Treatment {
             class VelocityWound: Abrasion {
                 effectiveness = 1;
                 reopeningChance = 0.3;
-                reopeningMinDelay = 300;
-                reopeningMaxDelay = 900;
+                reopeningMinDelay = 600;
+                reopeningMaxDelay = 1800;
             };
             class VelocityWoundMinor: VelocityWound {
                 effectiveness = 3;
@@ -2124,8 +2124,8 @@ class ACE_Medical_Treatment {
             class PunctureWound: Abrasion {
                 effectiveness = 3;
                 reopeningChance = 0.3;
-                reopeningMinDelay = 300;
-                reopeningMaxDelay = 900;
+                reopeningMinDelay = 600;
+                reopeningMaxDelay = 1800;
             };
             class PunctureWoundMinor: PunctureWound {
                 effectiveness = 3;
@@ -2139,7 +2139,7 @@ class ACE_Medical_Treatment {
             class InternalBleeding: Abrasion {
                 effectiveness = 0;
                 reopeningChance = 0.5;
-                reopeningMinDelay = 900;
+                reopeningMinDelay = 600;
                 reopeningMaxDelay = 1800;
             };
             class InternalBleedingMinor: InternalBleeding {
@@ -2169,8 +2169,8 @@ class ACE_Medical_Treatment {
             class Evisceration: Abrasion {
                 effectiveness = 0;
                 reopeningChance = 0.8;
-                reopeningMinDelay = 300;
-                reopeningMaxDelay = 900;
+                reopeningMinDelay = 600;
+                reopeningMaxDelay = 1800;
             };
             class EviscerationMinor: Evisceration {
             };
