@@ -57,24 +57,22 @@ private _fnc_clotWound = {
             private _coagulationFactor = GET_BODY_FLUID_PLATELETS(_unit);
             private _hypothermiaDelay = 1;
             if (EGVAR(hypothermia,hypothermiaActive)) then {
-                _hypothermiaDelay = linearConversion [35, 30, (_unit getVariable [QEGVAR(hypothermia,unitTemperature), 37]), 1, 4, true];
+                _hypothermiaDelay = linearConversion [35, 30, (_unit getVariable [QEGVAR(hypothermia,unitTemperature), 37]), 1, 2.5, true];
             };
             if (EGVAR(hypothermia,hypothermiaActive) && (_unit getVariable [QEGVAR(hypothermia,unitTemperature), 37]) < 30) exitWith {};
             private _ph = GET_PH(_unit);
             private _ca = GET_CA(_unit);
             // Calcium effect (low Ca = slower clotting)
             private _calciumDelayMult = linearConversion [
-                1.2, 2.4,        // severe hypocalcemia → normal
+                1.2, 2.4,
                 _ca,
                 2.0, 1.0,        // up to 2× slower clotting
                 true
             ];
-            
-            // pH effect (acidosis dominates)
             private _phDelayMult = linearConversion [
-                7.0, 7.4,        // severe acidosis → normal
+                7.0, 7.4,
                 _ph,
-                3.0, 1.0,        // up to 3× slower clotting
+                3.0, 1.0,
                 true
             ];
             if (_ph < 6.9) exitWith {};
@@ -111,7 +109,7 @@ private _fnc_clotWound = {
                         case (_classname in ["InternalBleeding", "Evisceration"]): {
                             _woundClotTime = round ((random (_coagulation_time_minor / 2)) + _coagulation_time_minor / 2) * _woundClotDelayMult;
                             _bandageToUse = "BloodClotMinor";
-                            _factorCountToRemove = round (random [8, 14, 20]);
+                            _factorCountToRemove = round (random [4, 8, 15]);
                             _chance = GVAR(coagulation_chance_MinorWounds) * 1.5;
                         };
                         default {
@@ -146,7 +144,7 @@ private _fnc_clotWound = {
                         case (_classname in ["InternalBleeding", "Evisceration"]): {
                             _woundClotTime = round ((random (_coagulation_time_medium / 2)) + _coagulation_time_medium / 2) * _woundClotDelayMult;
                             _bandageToUse = "BloodClotMedium";
-                            _factorCountToRemove = round (random [14, 21, 30]);
+                            _factorCountToRemove = round (random [8, 15, 21]);
                             _chance = GVAR(coagulation_chance_MediumWounds) * 1.5;
                         };
                         default {
@@ -181,7 +179,7 @@ private _fnc_clotWound = {
                         case (_classname in ["InternalBleeding", "Evisceration"]): {
                             _woundClotTime = round ((random (_coagulation_time_large / 2)) + _coagulation_time_large / 2) * _woundClotDelayMult;
                             _bandageToUse = "BloodClotLarge";
-                            _factorCountToRemove = round (random [22, 31, 40]);
+                            _factorCountToRemove = round (random [14, 25, 33]);
                             _chance = GVAR(coagulation_chance_LargeWounds) * 1.5;
                         };
                         default {
@@ -224,14 +222,10 @@ private _fnc_clotWound = {
                     };
                     private _ph = GET_PH(_unit);
                     private _ca = GET_CA(_unit);
-                    // Calcium improves clot stability
                     private _calciumChanceMult = linearConversion [1.2, 2.4, _ca, 0.4, 1.0, true];
-
-                    // Acidosis severely reduces success chance
                     private _phChanceMult = linearConversion [7.0, 7.4, _ph, 0.5, 1.0, true ];
                     _chance = _chance * _calciumChanceMult * _phChanceMult;
                     if (floor (random 100) > _chance) exitWith {};
-                
                     _bodyFluid set [5, (_coagulationFactor - _factorCountToRemove)];
                     _unit setVariable [VAR_BODY_FLUID, _bodyFluid, true];
                     [QACEGVAR(medical_treatment,bandageLocal), [_unit, _bodyPart, _bandageToUse, 1], _unit] call CBA_fnc_targetEvent;
