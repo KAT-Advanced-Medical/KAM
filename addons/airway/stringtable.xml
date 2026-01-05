@@ -1367,10 +1367,6 @@
             <Finnish>Ota oksennusääni käyttöön?</Finnish>
             <Dutch>Braakgeluiden activeren?</Dutch>
         </Key>
-        <Key ID="STR_KAT_Airway_SETTING_puking_sound_DESC">
-            <English>Enable or disable the sound effect when a patient develops airway occlusion (vomiting).</English>
-            <German>Aktiviert oder deaktiviert den Soundeffekt, wenn bei einem Patienten eine Atemwegsobstruktion (Erbrechen) auftritt.</German>
-        </Key>
         <Key ID="STR_KAT_Airway_SUCCES_HEADTURNING">
             <English>Success probability for head-turning</English>
             <Czech>Pravděpodobnost úspěchu při otáčení hlavy</Czech>

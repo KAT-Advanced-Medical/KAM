@@ -1369,10 +1369,6 @@
             <Finnish>ACE-Sekalaista aktivoitu?</Finnish>
             <Dutch>ACE-Misc geactiveerd?</Dutch>
         </Key>
-        <Key ID="STR_KAT_Misc_SETTING_ENABLE_DESC">
-            <English>Enables the KAT Misc medical system features (e.g. IV-Stands)</English>
-            <German>Aktiviert die KAT Misc Medizinsystem-Funktionen (z.B. IV-Ständer)</German>
-        </Key>
         <Key ID="STR_KAT_Misc_SETTING_EighthSlot_Item">
             <English>Miscellaneous Section Items &amp; Quantity</English>
             <Czech>Sekce Různé - Předměty &amp; Množství</Czech>
@@ -1478,10 +1474,6 @@
             <Chinesesimp>空时删除</Chinesesimp>
             <Finnish>Poista tyhjänä</Finnish>
             <Dutch>Verwijder wanneer leeg</Dutch>
-        </Key>
-        <Key ID="STR_KAT_Misc_SETTING_FAK_RemoveWhenEmpty_DESC">
-            <English>Automatically removes first aid kits from inventory when they become empty</English>
-            <German>Entfernt automatisch Erste-Hilfe-Kästen aus dem Inventar, wenn sie leer werden</German>
         </Key>
         <Key ID="STR_KAT_Misc_SETTING_FAK_SlotColor">
             <English>Hint Section Color</English>
@@ -1742,10 +1734,6 @@
             <Chinesesimp>启用止血带效果</Chinesesimp>
             <Dutch>Schakel tourniquet effecten in</Dutch>
         </Key>
-        <Key ID="STR_KAT_Misc_SETTING_tourniquetEffects_Enable_DESC">
-            <English>Enables tourniquet effects on patient health and stamina</English>
-            <German>Aktiviert Tourniquet-Effekte auf Patientengesundheit und Ausdauer</German>
-        </Key>
         <Key ID="STR_KAT_Misc_SETTING_tourniquetEffects_NegativeMultiplier">
             <English>Tourniquet effects negative multiplier</English>
             <Czech>Negativní násobitel efektů turniketu</Czech>
@@ -1761,10 +1749,6 @@
             <Finnish>Tourniquet-vaikutusten negatiivinen kerroin</Finnish>
             <Dutch>Negatieve multiplicator voor tourniquet effecten</Dutch>
         </Key>
-        <Key ID="STR_KAT_Misc_SETTING_tourniquetEffects_NegativeMultiplier_DESC">
-            <English>Multiplier for negative tourniquet effects</English>
-            <German>Multiplikator für negative Tourniquet-Effekte</German>
-        </Key>
         <Key ID="STR_KAT_Misc_SETTING_tourniquetEffects_PositiveMultiplier">
             <English>Tourniquet effects positive multiplier</English>
             <Czech>Pozitivní násobitel efektů turniketu</Czech>
@@ -1778,10 +1762,6 @@
             <Chinese>止血帶效果正向乘數</Chinese>
             <Chinesesimp>止血带效果正乘数</Chinesesimp>
             <Dutch>Positieve multiplicator voor tourniquet effecten</Dutch>
-        </Key>
-        <Key ID="STR_KAT_Misc_SETTING_tourniquetEffects_PositiveMultiplier_DESC">
-            <English>Multiplier for positive tourniquet effects</English>
-            <German>Multiplikator für positive Tourniquet-Effekte</German>
         </Key>
         <Key ID="STR_KAT_Misc_SETTING_treatmentTimeDetachTourniquet">
             <English>Time to take off tourniquet</English>
@@ -1799,10 +1779,6 @@
             <Chinesesimp>移除止血带的时间</Chinesesimp>
             <Finnish>Aika ottaa kiristysside pois</Finnish>
             <Dutch>Benodigde tijd om een tourniquet af te nemen</Dutch>
-        </Key>
-        <Key ID="STR_KAT_Misc_SETTING_treatmentTimeDetachTourniquet_DESC">
-            <English>Time required to detach a tourniquet from a patient</English>
-            <German>Benötigte Zeit zum Entfernen eines Tourniquets vom Patienten</German>
         </Key>
         <Key ID="STR_KAT_Misc_StoppedCarrying%1">
             <English>Stopped carrying %1</English>
@@ -1954,9 +1930,9 @@
         </Key>
         <Key ID="STR_KAT_Misc_miscSupplyCrate_display">
             <English>[KAM] Misc Items</English>
-            <French>[KAM] Objets divers</French>
             <Italian>[KAM] Oggetti vari</Italian>
             <Japanese>[KAM] その他物資箱</Japanese>
+            <French>[KAM] Objets divers</French>
             <Dutch>[KAM] Overige items</Dutch>
             <Spanish>[KAM] Objetos Variados</Spanish>
         </Key>

@@ -1139,10 +1139,6 @@
             <Finnish>BVM happitehokkuuskerroin</Finnish>
             <Dutch>BVM zuurstof effectiviteits vermenigvuldiger</Dutch>
         </Key>
-        <Key ID="STR_KAT_Breathing_SETTING_BVMOxygen_Multiplier_DESC">
-            <English>Effectiveness multiplier for BVM when used with oxygen</English>
-            <German>Effektivitätsmultiplikator für BVM bei Verwendung mit Sauerstoff</German>
-        </Key>
         <Key ID="STR_KAT_Breathing_SETTING_BVM_MedLvl">
             <English>Allow BVM</English>
             <Czech>Povolit RV</Czech>
@@ -1318,10 +1314,6 @@
             <Finnish>SpO2 negatiivinen kerroin</Finnish>
             <Dutch>SpO2 negatieve vermenigvuldiger</Dutch>
         </Key>
-        <Key ID="STR_KAT_Breathing_SETTING_MultiplyNegative_DESC">
-            <English>Multiplier for negative SpO2 changes when not breathing properly</English>
-            <German>Multiplikator für negative SpO2-Änderungen bei unzureichender Atmung</German>
-        </Key>
         <Key ID="STR_KAT_Breathing_SETTING_MultiplyPositive">
             <English>SpO2 positive multiplier</English>
             <Czech>Pozitivní násobič SpO2</Czech>
@@ -1338,10 +1330,6 @@
             <Chinesesimp>SpO2值正乘数</Chinesesimp>
             <Finnish>SpO2-positiivinen kerroin</Finnish>
             <Dutch>SpO2 positieve vermenigvuldiger</Dutch>
-        </Key>
-        <Key ID="STR_KAT_Breathing_SETTING_MultiplyPositive_DESC">
-            <English>Multiplier for positive SpO2 changes during breathing</English>
-            <German>Multiplikator für positive SpO2-Änderungen beim Atmen</German>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_PACO2_ENABLE">
             <English>Enable PaCO2</English>
@@ -1383,10 +1371,6 @@
             <Chinesesimp>灌注乘数</Chinesesimp>
             <Finnish>Perfuusiokerroin</Finnish>
             <Dutch>Perfusie vermenigvuldiger</Dutch>
-        </Key>
-        <Key ID="STR_KAT_Breathing_SETTING_PerfusionMultiplier_DESC">
-            <English>Multiplier for SpO2 changes during cardiac arrest</English>
-            <German>Multiplikator für SpO2-Änderungen während eines Herzstillstands</German>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_PneumothoraxAlwaysVisible">
             <English>Pneumothorax always visible</English>
@@ -1565,10 +1549,6 @@
             <Finnish>Salli rintatiivisteen käyttö itsellesi</Finnish>
             <Dutch>Sta chest seal zelfbehandeling toe</Dutch>
         </Key>
-        <Key ID="STR_KAT_Breathing_SETTING_SELF_CHESTSEAL_DESC">
-            <English>Allows players to apply chest seals on themselves</English>
-            <German>Ermöglicht es Spielern, sich selbst Thoraxpflaster anzulegen</German>
-        </Key>
         <Key ID="STR_KAT_Breathing_SETTING_STABLE_SPO2">
             <English>Stable SpO2 value to gain consciousness</English>
             <Czech>Stabilní hodnota SpO2 pro získání vědomí</Czech>
@@ -1601,10 +1581,6 @@
             <Chinesesimp>ETCo2监测所需的单位</Chinesesimp>
             <Dutch>Geprefereerde eenheden voor ETCo2 monitoren</Dutch>
         </Key>
-        <Key ID="STR_KAT_Breathing_SETTING_Select_Etco2_Units_DESC">
-            <English>Units for displaying EtCO2 values</English>
-            <German>Einheiten für die Anzeige von EtCO2-Werten</German>
-        </Key>
         <Key ID="STR_KAT_Breathing_SETTING_SpO2_Perfusion">
             <English>Enable cardiac arrest SpO2 reduction</English>
             <Czech>Povolit redukci SpO2 při zástavě srdce</Czech>
@@ -1622,10 +1598,6 @@
             <Finnish>Ota käyttöön sydämenpysähdyksen SpO2-vähennys</Finnish>
             <Dutch>Activeer SpO2 verlies tijdens hartstilstand</Dutch>
         </Key>
-        <Key ID="STR_KAT_Breathing_SETTING_SpO2_Perfusion_DESC">
-            <English>Controls whether SpO2 falls during cardiac arrest</English>
-            <German>Kontrolliert, ob SpO2 während eines Herzstillstands fällt</German>
-        </Key>
         <Key ID="STR_KAT_Breathing_SETTING_SpO2_cardiacActive">
             <English>Activate cardiac arrest SpO2 value</English>
             <Czech>Aktivace hodnoty SpO2 pro srdeční zástavu</Czech>
@@ -1640,10 +1612,6 @@
             <Chinesesimp>激活心脏骤停的SpO2值</Chinesesimp>
             <Dutch>Activeer hartstilstand SpO2 waarde</Dutch>
         </Key>
-        <Key ID="STR_KAT_Breathing_SETTING_SpO2_cardiacActive_DESC">
-            <English>Enables cardiac arrest when SpO2 reaches the cardiac value</English>
-            <German>Aktiviert Herzstillstand, wenn SpO2 den Herzwert erreicht</German>
-        </Key>
         <Key ID="STR_KAT_Breathing_SETTING_SpO2_cardiacValue">
             <English>Cardiac arrest SpO2 value</English>
             <Czech>Hodnota SpO2 pro srdeční zástavu</Czech>
@@ -1657,10 +1625,6 @@
             <Chinese>心跳停止SpO2值</Chinese>
             <Chinesesimp>心脏骤停SpO2值</Chinesesimp>
             <Dutch>Hartstilstand SpO2 waarde</Dutch>
-        </Key>
-        <Key ID="STR_KAT_Breathing_SETTING_SpO2_cardiacValue_DESC">
-            <English>Sets the SpO2 value that triggers cardiac arrest</English>
-            <German>Legt den SpO2-Wert fest, der einen Herzstillstand auslöst</German>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_SpO2_dieActive">
             <English>Activate lethal SpO2 value</English>
@@ -1680,10 +1644,6 @@
             <Finnish>Aktivoi tappava SpO2-arvo</Finnish>
             <Dutch>Activeer dodelijke SpO2 waarde</Dutch>
         </Key>
-        <Key ID="STR_KAT_Breathing_SETTING_SpO2_dieActive_DESC">
-            <English>Enables death when SpO2 reaches the lethal value</English>
-            <German>Aktiviert den Tod, wenn SpO2 den tödlichen Wert erreicht</German>
-        </Key>
         <Key ID="STR_KAT_Breathing_SETTING_SpO2_dieValue">
             <English>Lethal SpO2 value</English>
             <Czech>Smrtelná hodnota SpO2</Czech>
@@ -1701,10 +1661,6 @@
             <Turkish>Ölümcül SpO2 değeri</Turkish>
             <Finnish>Tappava SpO2-arvo</Finnish>
             <Dutch>Dodelijke SpO2 waarde</Dutch>
-        </Key>
-        <Key ID="STR_KAT_Breathing_SETTING_SpO2_dieValue_DESC">
-            <English>Sets the SpO2 value that causes death when reached</English>
-            <German>Legt den SpO2-Wert fest, der bei Erreichen den Tod verursacht</German>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_SpO2_unconscious">
             <English>Unconscious SpO2 value</English>
@@ -1825,10 +1781,6 @@
             <Finnish>SpO2-taso, joka laukaisee pulssioksimetrin hälytyksen</Finnish>
             <Dutch>Pulsoximeter alarm SpO2 drempelwaarde</Dutch>
         </Key>
-        <Key ID="STR_KAT_Breathing_SETTING_Threshold_SpO2Warning_DESC">
-            <English>SpO2 level at which the pulse oximeter starts warning</English>
-            <German>SpO2-Wert, bei dem das Pulsoximeter zu warnen beginnt</German>
-        </Key>
         <Key ID="STR_KAT_Breathing_SETTING_Time_NasalCannula">
             <English>Time for Nasal Cannula</English>
             <Czech>Čas pro Nosní Kanylu</Czech>
@@ -1900,10 +1852,6 @@
             <Chinesesimp>治疗后移除胸腔密封贴</Chinesesimp>
             <Finnish>Poista rintatiiviste hoidon jälkeen</Finnish>
             <Dutch>Verwijder chest seal na behandeling</Dutch>
-        </Key>
-        <Key ID="STR_KAT_Breathing_SETTING_clearChestSealAfterTreatment_DESC">
-            <English>Removes chest seal from medical menu after pneumothorax treatment</English>
-            <German>Entfernt Thoraxpflaster aus dem Medizinmenü nach Pneumothorax-Behandlung</German>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_deepPenetratingInjuryChance">
             <English>Deep Penetrating Injury Chance</English>
@@ -2042,10 +1990,6 @@
             <Finnish>Ota rinnan tarkastus käyttöön</Finnish>
             <Dutch>Sta Thoraxinspectie toe</Dutch>
         </Key>
-        <Key ID="STR_KAT_Breathing_SETTING_inspectChest_enable_DESC">
-            <English>Enables the inspect chest action for diagnosing thoracic injuries</English>
-            <German>Aktiviert die Brustraumuntersuchung zur Diagnose von Thoraxverletzungen</German>
-        </Key>
         <Key ID="STR_KAT_Breathing_SETTING_inspectChest_enable_simple">
             <English>Simple</English>
             <Czech>Jednoduché</Czech>
@@ -2078,10 +2022,6 @@
             <Finnish>Salli rintatutkimus</Finnish>
             <Dutch>Sta thorax inspectie toe</Dutch>
         </Key>
-        <Key ID="STR_KAT_Breathing_SETTING_inspectChest_medLvl_DESC">
-            <English>Required medical training level to perform chest inspection</English>
-            <German>Erforderliche medizinische Ausbildungsstufe für Brustraumuntersuchung</German>
-        </Key>
         <Key ID="STR_KAT_Breathing_SETTING_inspectChest_time">
             <English>Inspect Chest Time</English>
             <Czech>Čas Kontroly Hrudníku</Czech>
@@ -2097,10 +2037,6 @@
             <Chinesesimp>检查胸部时间</Chinesesimp>
             <Finnish>Kuinka kauan rintakehän tarkastus kestää</Finnish>
             <Dutch>Thorax inspectie tijd</Dutch>
-        </Key>
-        <Key ID="STR_KAT_Breathing_SETTING_inspectChest_time_DESC">
-            <English>Time required to complete chest inspection</English>
-            <German>Benötigte Zeit für die Brustraumuntersuchung</German>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_locationProvideOxygen">
             <English>Location Provide Oxygen</English>
@@ -2187,10 +2123,6 @@
             <Turkish>Pnömotoraks olasılığı</Turkish>
             <Finnish>Hemopneumotoraksin mahdollisuus</Finnish>
             <Dutch>Kans op een pneumothorax</Dutch>
-        </Key>
-        <Key ID="STR_KAT_Breathing_SETTING_pneumothorax_DESC">
-            <English>Probability for pneumothorax to occur from thoracic injuries</English>
-            <German>Wahrscheinlichkeit für Pneumothorax bei Thoraxverletzungen</German>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_severeValue">
             <English>Severe cyanosis SpO2 value</English>
