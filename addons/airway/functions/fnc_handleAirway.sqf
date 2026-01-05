@@ -42,16 +42,15 @@ if (random(100) < GVAR(airwayObstructionChance)) then {
 [{
     params ["_unit"];
     !(_unit getVariable ["ACE_isUnconscious", false]);
-}, {}, [_unit], (GVAR(airwayCollapse_Timer)  * random [0.8, 1, 1.3]), {
+}, {}, [_unit], (GVAR(airwayCollapse_Timer)  * random [1.8, 2, 2.3]), {
     params ["_unit"];
     private _isUnconscious = _unit getVariable ["ACE_isUnconscious", false];
     private _airwayStatus = _unit getVariable [QGVAR(airwayStatus), [0, 0, 0]];
     if (_isUnconscious && (_airwayStatus select 1 == 0)) then {
     private _obstruction = _unit getVariable [QGVAR(obstruction), [0, 0, 0]];
-    _obstruction set [1, (((_obstruction select 1) + 1) min 2)];
+    _obstruction set [2, (((_obstruction select 1) + 1) min 2)];
     _unit setVariable [QGVAR(obstruction), _obstruction, true];
     };
 }] call CBA_fnc_waitUntilAndExecute;
-\
 
 

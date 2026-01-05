@@ -28,8 +28,6 @@ private _cardiacOutput = [_unit] call ACEFUNC(medical_status,getCardiacOutput);
 private _bloodLoss = _unit call ACEFUNC(medical_status,getBloodLoss);
 if (_bloodLoss > (ACEGVAR(medical,const_bloodLossKnockOutThreshold) * _cardiacOutput / 2)) exitWith { false };
 
-private _bloodPressure = GET_BLOOD_PRESSURE(_unit);
-_bloodPressure params ["_bloodPressureL", "_bloodPressureH"];
 private _map = GET_MAP(_unit);
 if (_map < 60 || _map > 120) exitWith { false };
 
