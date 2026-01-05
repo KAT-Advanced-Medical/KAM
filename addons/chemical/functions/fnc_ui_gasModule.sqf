@@ -50,6 +50,7 @@ if !(isNull attachedTo _logic) then {
 };
 
 private _fnc_onUnload = {
+    params ["_display"];
     private _logic = GETMVAR(BIS_fnc_initCuratorAttributes_target,objNull);
     if (isNull _logic) exitWith {};
     if !(_display getVariable [QGVAR(Confirmed), false]) then

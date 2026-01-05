@@ -634,7 +634,7 @@
             <Russian>Минимальный шанс успеха для AED</Russian>
             <German>Minimale Erfolgschance für den AED</German>
             <Korean>자동심장충격기의 최소 성공 확률</Korean>
-            <Japanese>AEDの最低成功確率</Japanese>
+            <Japanese>AEDの最低成功率</Japanese>
             <Chinese>AED 的最小成功機率</Chinese>
             <Chinesesimp>AED的最小成功概率</Chinesesimp>
             <Finnish>AUD:n onnistumisen minimimahdollisuus</Finnish>
@@ -691,7 +691,7 @@
             <Russian>Минимальный шанс успеха для AED-X</Russian>
             <German>Minimale Erfolgschance für den AED-X</German>
             <Korean>X-시리즈 자동심장충격기의 최소 성공 확률</Korean>
-            <Japanese>AED-Xの最低成功確率</Japanese>
+            <Japanese>AED-Xの最低成功率</Japanese>
             <Chinese>AED-X 的最小成功機率</Chinese>
             <Chinesesimp>AED-X的最小成功概率</Chinesesimp>
             <Finnish>Minimi mahdollisuus onnistua AUD-X:lle</Finnish>
@@ -1178,6 +1178,7 @@
             <Japanese>血圧カフで血圧を確認</Japanese>
             <Chinese>用血壓計量血壓</Chinese>
             <Dutch>Meet bloeddruk met manchet</Dutch>
+            <Spanish>Comprobar la presión arterial con el manguito de presión</Spanish>
         </Key>
         <Key ID="STR_KAT_Circulation_Actions_CheckHRSteth">
             <English>Check HR w/ Stethoscope</English>
@@ -1188,6 +1189,7 @@
             <Japanese>聴診器で脈拍を確認</Japanese>
             <Chinese>用聽診器檢查心率</Chinese>
             <Dutch>Meet hartfrequentie met stethoscoop</Dutch>
+            <Spanish>Comprobar la frecuencia cardíaca con el estetoscopio</Spanish>
         </Key>
         <Key ID="STR_KAT_Circulation_Actions_CheckingBloodPressureCuff">
             <English>Checking BP with BP Cuff</English>
@@ -1198,6 +1200,7 @@
             <Japanese>血圧カフで血圧を確認中</Japanese>
             <Chinese>用血壓計量血壓中</Chinese>
             <Dutch>Bloeddruk wordt gemeten met manchet</Dutch>
+            <Spanish>Comprobando la presión arterial con el manguito de presión</Spanish>
         </Key>
         <Key ID="STR_KAT_Circulation_Actions_CheckingHRSteth">
             <English>Checking HR with Stethoscope</English>
@@ -1208,6 +1211,7 @@
             <Japanese>聴診器で脈拍を確認中</Japanese>
             <Chinese>用聽診器檢查心率中</Chinese>
             <Dutch>Hartfrequentie wordt gemeten met stethoscoop</Dutch>
+            <Spanish>Comprobando la frecuencia cardíaca con el estetoscopio</Spanish>
         </Key>
         <Key ID="STR_KAT_Circulation_Activity_AttachPads">
             <English>%1 attached defibrillator pads (%2)</English>
@@ -1366,6 +1370,7 @@
             <Japanese>患者の血圧を正確に測定する医療機器</Japanese>
             <Chinese>一種準確測量病人血壓的醫療裝置</Chinese>
             <Dutch>Een medisch hulpmiddel om de bloeddruk van een patiënt accuraat te meten</Dutch>
+            <Spanish>Dispositivo médico para determinar con precisión la presión arterial de un paciente</Spanish>
         </Key>
         <Key ID="STR_KAT_Circulation_BPCuff_display">
             <English>Blood Pressure Cuff</English>
@@ -1376,6 +1381,7 @@
             <Japanese>血圧カフ</Japanese>
             <Chinese>血壓計</Chinese>
             <Dutch>Bloeddrukmanchet</Dutch>
+            <Spanish>Manguito de Presión Arterial</Spanish>
         </Key>
         <Key ID="STR_KAT_Circulation_BloodIV_A">
             <English>Blood IV (1000ml) BT: A+</English>
@@ -1830,6 +1836,7 @@
             <Japanese>触診による拡張期血圧は %1</Japanese>
             <Chinese>比觸診高 %1</Chinese>
             <Dutch>%1 per palpitatie</Dutch>
+            <Spanish>%1 mediante Palpación</Spanish>
         </Key>
         <Key ID="STR_KAT_Circulation_CPR_MaxChance_Default">
             <English>Max CPR Chance for Default</English>
@@ -1842,7 +1849,7 @@
             <Russian>Максимальный шанс СЛР по умолчанию</Russian>
             <German>Maximale Standard HLW-Erfolgsrate</German>
             <Korean>일반병의 최대 CPR 확률</Korean>
-            <Japanese>一般兵の最高CPR成功率</Japanese>
+            <Japanese>一般兵のCPR最高成功率</Japanese>
             <Chinese>預設的最大 CPR 機率</Chinese>
             <Chinesesimp>默认的最大心肺复苏几率</Chinesesimp>
             <Finnish>Suurin mahdollisuus menestyä oletussotilailla, jotka suorittavat elvytystoimia</Finnish>
@@ -1863,7 +1870,7 @@
             <Russian>Максимальный шанс СЛР для врачей</Russian>
             <German>Maximale HLW-Erfolgsrate für Ärzte</German>
             <Korean>군의관의 최대 CPR 확률</Korean>
-            <Japanese>医師の最高CPR成功率</Japanese>
+            <Japanese>医師のCPR最高成功率</Japanese>
             <Chinese>醫生的最大 CPR 機率</Chinese>
             <Chinesesimp>医生的最大心肺复苏几率</Chinesesimp>
             <Finnish>Suurin CPR onnistumisen mahdollisuus lääkäreille</Finnish>
@@ -1884,7 +1891,7 @@
             <Russian>Максимальный шанс СЛР для обычных медиков</Russian>
             <German>Maximale HLW-Erfolgsrate für reguläre Sanitäter</German>
             <Korean>의무병의 최대 CPR 확률</Korean>
-            <Japanese>衛生兵の最高CPR成功率</Japanese>
+            <Japanese>衛生兵のCPR最高成功率</Japanese>
             <Chinese>醫療兵的最大 CPR 機率</Chinese>
             <Chinesesimp>军医的最大心肺复苏几率</Chinesesimp>
             <Finnish>Suurin mahdollisuus menestyä elvytystä suorittaville taistelulääkäreille</Finnish>
@@ -1905,7 +1912,7 @@
             <Russian>Минимальный шанс СЛР по умолчанию</Russian>
             <German>Minimale Standard HLW-Erfolgsrate</German>
             <Korean>일반병의 최소 CPR 확률</Korean>
-            <Japanese>一般兵の最低CPR成功率</Japanese>
+            <Japanese>一般兵のCPR最低成功率</Japanese>
             <Chinese>預設的最小 CPR 復甦機率</Chinese>
             <Chinesesimp>默认的最小心肺复苏几率</Chinesesimp>
             <Finnish>Pienin mahdollisuus menestyä elvytystoiminnassa oletussotilaana</Finnish>
@@ -1926,7 +1933,7 @@
             <Russian>Минимальный шанс СЛР для врачей</Russian>
             <German>Minimale HLW-Erfolgsrate für Ärzte</German>
             <Korean>군의관의 최소 CPR 확률</Korean>
-            <Japanese>医師の最低CPR成功率</Japanese>
+            <Japanese>医師のCPR最低成功率</Japanese>
             <Chinese>醫生的最小 CPR 機率</Chinese>
             <Chinesesimp>医生的最小心肺复苏几率</Chinesesimp>
             <Finnish>Pienin mahdollisuus menestyä elvytyksen suorittamisessa lääkärinä</Finnish>
@@ -1947,7 +1954,7 @@
             <Russian>Минимальный шанс СЛР для обычных медиков</Russian>
             <German>Minimale HLW-Erfolgsrate für reguläre Sanitäter</German>
             <Korean>의무병의 최소 CPR 확률</Korean>
-            <Japanese>衛生兵の最低CPR成功率</Japanese>
+            <Japanese>衛生兵のCPR最低成功率</Japanese>
             <Chinese>醫務人員的最小 CPR 機率</Chinese>
             <Chinesesimp>军医的最小心肺复苏几率</Chinesesimp>
             <Finnish>Pienin mahdollisuus menestyä elvytystyössä taistelulääkärinä</Finnish>
@@ -1983,6 +1990,7 @@
             <Chinese>更換監控設備</Chinese>
             <Chinesesimp>更换监控设备</Chinesesimp>
             <Dutch>Verander monitoringsapparaat</Dutch>
+            <Spanish>Cambiar Dispositivo de Monitorización</Spanish>
         </Key>
         <Key ID="STR_KAT_Circulation_Check_Bloodpressure_Output_Palp">
             <English>You find a blood pressure of %3 over Palp</English>
@@ -1993,6 +2001,7 @@
             <Japanese>触診で計測した拡張期血圧は %3 でした</Japanese>
             <Chinese>你發現血壓比觸診高 %3</Chinese>
             <Dutch>Je vindt een bloeddruk van %3 per palpitatie</Dutch>
+            <Spanish>Se encuentra una presión arterial de %3 mediante Palpación</Spanish>
         </Key>
         <Key ID="STR_KAT_Circulation_Check_Pulse_Output">
             <English>You find a Pulse Rate of %2</English>
@@ -2003,6 +2012,7 @@
             <Japanese>計測した脈拍は %2 でした</Japanese>
             <Chinese>你發現脈搏率為 %2</Chinese>
             <Dutch>Je vindt een hartfrequentie van %2</Dutch>
+            <Spanish>Se encuentra una Frecuencia de Pulso de %2</Spanish>
         </Key>
         <Key ID="STR_KAT_Circulation_Defibrillator_Action_CancelCharge">
             <English>Cancel Charge</English>
@@ -2351,6 +2361,7 @@
             <Japanese>%1 PPM</Japanese>
             <Chinese>%1 PPM</Chinese>
             <Dutch>%1 PPM</Dutch>
+            <Spanish>%1 PPM</Spanish>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_AEDStation_AllowInteraction">
             <English>Allow AED/X Station Interaction</English>
@@ -2642,6 +2653,7 @@
             <German>H&amp;Ts halten Herzstillstand aufrecht</German>
             <Japanese>心停止回復のH&amp;T症状による阻害を有効化</Japanese>
             <Dutch>H&amp;Ts voorkomen herstel uit hartstilstand</Dutch>
+            <Spanish>Activar la Retención de H y T durante el Paro Cardíaco</Spanish>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_AdvRhythm_Hardcore_Enable">
             <English>Hardcore Rhythms</English>
@@ -2679,6 +2691,8 @@
             <English>Enable PEA</English>
             <French>Activer le PEA</French>
             <Dutch>Zet PEA aan</Dutch>
+            <Japanese>無脈性電気活動(PEA)を有効化</Japanese>
+            <Spanish>Activar PEA</Spanish>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_AdvRhythm_VTChance">
             <English>VT Chance</English>
@@ -2841,6 +2855,7 @@
             <Japanese>血圧カフの許可</Japanese>
             <Chinese>允許使用血壓計</Chinese>
             <Dutch>Bloeddruksmanchet toestaan</Dutch>
+            <Spanish>Permitir el uso del Manguito de Presión Arterial</Spanish>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_BPCuff_DESC">
             <English>Training Level for use of the BP Cuff</English>
@@ -2851,6 +2866,7 @@
             <Japanese>血圧カフの使用に必要な医療スキルのレベルを設定します。</Japanese>
             <Chinese>使用血壓計的訓練等級</Chinese>
             <Dutch>Trainingsniveau dat benodigd is voor het gebruik van een bloeddruksmanchet</Dutch>
+            <Spanish>Nivel de Formación requerido para el uso del Manguito de Presión Arterial</Spanish>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_CPR_CHANCES">
             <English>Enable different CPR chances per medical level</English>
@@ -3061,6 +3077,7 @@
             <Japanese>聴診器による脈拍確認の許可</Japanese>
             <Chinese>允許使用聽診器檢查心率</Chinese>
             <Dutch>Sta zelfcontrole met stethoscoop toe</Dutch>
+            <Spanish>Permitir la comprobación de la Frecuencia Cardíaca con el Estetoscopio.</Spanish>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_StethHR_DESC">
             <English>Training Level for use of the Stethoscope to measure HR</English>
@@ -3071,6 +3088,7 @@
             <Japanese>聴診器による脈拍の測定に必要な医療スキルのレベルを設定します。</Japanese>
             <Chinese>使用聽診器測量心率的訓練等級</Chinese>
             <Dutch>Benodigd trainingsniveau voor het gebruik van een stethoscoop bij het meten van de hartfrequentie</Dutch>
+            <Spanish>Nivel de Formación requerido para usar el Estetoscopio para medir la Frecuencia Cardíaca.</Spanish>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_Threshold_SpO2Warning">
             <English>AED-X alarm SpO2 threshold</English>
@@ -3102,6 +3120,7 @@
             <Chinese>啟用 ABG 測試</Chinese>
             <Chinesesimp>启用ABG测试</Chinesesimp>
             <Dutch>Sta ABG tests toe</Dutch>
+            <Spanish>Activar la Prueba ABG</Spanish>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_abg_enable_DESC">
             <English>Enables ABG Testing and ACE Menu Visibility</English>
@@ -3113,6 +3132,7 @@
             <Chinese>啟用 ABG 測試和 ACE 選單可見性</Chinese>
             <Chinesesimp>启用ABG测试和ACE菜单可见性</Chinesesimp>
             <Dutch>Staat ABG tests toe en maakt deze zichtbaar in ACE menu's</Dutch>
+            <Spanish>Activa la Prueba de ABG y la Visibilidad del Menú ACE</Spanish>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_bloodtype_assign">
             <English>Blood Type Assignment</English>
@@ -3267,7 +3287,7 @@
             <Dutch>Bloedgroepen eigen lijst</Dutch>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_bloodtype_custom_list_DESC">
-            <English>Sets blood types that will be assigned to players based on their SteamID \nBlood types are seperated by a comma (","), list should contain a total of 10 blood types</English>
+            <English>Sets blood types that will be assigned to players based on their SteamID \nBlood types are separated by a comma (","), list should contain a total of 10 blood types</English>
             <Czech>Nastavuje krevní skupiny které budou přiřazeny hráčům podle jejich SteamID \nKrevní Skupiny jsou oddělené čárkou (","), seznam by měl obsahovat celkem 10 Krevních Skupin</Czech>
             <French>Attribue les groupes sanguins pouvant être attribués aux joueurs en se basant sur leur SteamID \nLes groupes sanguins sont séparés par des virgules (","), la liste devrait contenir un total de 10 groupes sanguins.</French>
             <Spanish>Fija el tipo de sangre con el que aparecen los jugadores en base a su Steam ID \nLos tipos de sangre son separados por comas (","), la lista debe contener 10 tipos de sangre en total</Spanish>
@@ -3364,6 +3384,7 @@
             <Japanese>ハードコア脈拍および血圧診断を有効化</Japanese>
             <Chinese>啟用硬核心率和血壓診斷</Chinese>
             <Dutch>Zet hardcore metingen van hartfrequentie en bloeddruk aan</Dutch>
+            <Spanish>Habilitar Diagnóstico hardcore de Ritmo Cardíaco y Presión Arterial</Spanish>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_hardcoreDiagnose_DESC">
             <English>Makes measuring BP and HR imprecise without tools (Stethoscope or BP cuff)</English>
@@ -3374,6 +3395,7 @@
             <Japanese>器具(聴診器または血圧カフ)なしでは脈拍および血圧を正確に測定出来なくします</Japanese>
             <Chinese>在沒有工具（聽診器或血壓計）的情況下，測量血壓和心率會不準確</Chinese>
             <Dutch>Maakt het meten van hartfrequentie en bloeddruk inaccuraat zonder hulpmiddelen (Stethoscoop of bloeddrukmanchet)</Dutch>
+            <Spanish>Hace que medir la presión arterial y la frecuencia cardíaca sea impreciso sin herramientas (estetoscopio o manguito de presión)</Spanish>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_tamponadeChance">
             <English>Chance for tamponade in penetrating wounds</English>
@@ -3734,6 +3756,7 @@
             <German>KAT - ADV Medical: Zirkulation</German>
             <Japanese>KAM - 循環器系 (Circulation)</Japanese>
             <Dutch>KAT - ADV Medical: Circulatie</Dutch>
+            <Spanish>KAT - ADV Medical: Circulación</Spanish>
         </Key>
         <Key ID="STR_KAT_Circulation_crosspanel">
             <English>Blood groups cheat sheet</English>
@@ -3856,10 +3879,7 @@
             <Japanese>血圧カフによる血圧測定の所要時間</Japanese>
             <Chinese>用血壓計量血壓所需時間</Chinese>
             <Dutch>Benodigde tijd voor bloeddrukmeting met manchet</Dutch>
-        </Key>
-        <Key ID="STR_KAT_Circulation_treatmentTime_BPCuff_DESC">
-            <English>Time required to measure blood pressure with blood pressure cuff</English>
-            <German>Benötigte Zeit zur Blutdruckmessung mit der Blutdruckmanschette</German>
+            <Spanish>Tiempo necesario para medir la presión arterial con el manguito de presión</Spanish>
         </Key>
         <Key ID="STR_KAT_Circulation_treatmentTime_StethHR">
             <English>Time to measure HR with a Stethoscope</English>
@@ -3870,10 +3890,203 @@
             <Japanese>聴診器による脈拍測定の所要時間</Japanese>
             <Chinese>用聽診器測量心率所需時間</Chinese>
             <Dutch>Benodigde tijd voor het meten van hartfrequentie met een stethoscoop</Dutch>
+            <Spanish>Tiempo necesario para medir la frecuencia cardíaca con el estetoscopio</Spanish>
+        </Key>
+        <Key ID="STR_KAT_Circulation_SETTING_ENABLE_DESC">
+            <English>Enables the KAT Circulation medical system</English>
+            <German>Aktiviert das KAT Kreislauf-Medizinsystem</German>
+            <French>Active le système médical circulatoire KAT</French>
+            <Japanese>KAT 循環器系 医療システムを有効にします</Japanese>
+            <Spanish>Activa el sistema médico de circulación KAT</Spanish>
+        </Key>
+        <Key ID="STR_KAT_Circulation_SETTING_bloodtype_player_DESC">
+            <English>Sets your preferred blood type for multiplayer</English>
+            <German>Legt Ihre bevorzugte Blutgruppe für Multiplayer fest</German>
+            <French>Définissez votre groupe sanguin préféré pour le mode multijoueur.</French>
+            <Japanese>マルチプレイヤーで使用する血液型を設定します</Japanese>
+            <Spanish>Establece tu tipo de sangre preferido para multijugador</Spanish>
+        </Key>
+        <Key ID="STR_KAT_Circulation_SETTING_AED_duringCpr_DESC">
+            <English>Allows AED pads to be applied while CPR is being performed</English>
+            <German>Ermöglicht das Anbringen von AED-Pads während der Wiederbelebung</German>
+            <French>Permet la pose d'électrodes AED pendant la réanimation</French>
+            <Japanese>CPR中にAEDパッドを装着できるようにします</Japanese>
+            <Spanish>Permite aplicar los electrodos del DEA mientras se realiza la RCP</Spanish>
+        </Key>
+        <Key ID="STR_KAT_Circulation_AED_X_MaxChance_DESC">
+            <English>Maximum success chance for AED-X defibrillation</English>
+            <German>Maximale Erfolgswahrscheinlichkeit für AED-X Defibrillation</German>
+            <French>Probabilité maximale de réussite pour la défibrillation AED-X</French>
+            <Japanese>AED-X除細動の最高成功率</Japanese>
+            <Spanish>Probabilidad máxima de éxito de la desfibrilación con AED-X</Spanish>
+        </Key>
+        <Key ID="STR_KAT_Circulation_AED_X_MinChance_DESC">
+            <English>Minimum success chance for AED-X defibrillation</English>
+            <German>Minimale Erfolgswahrscheinlichkeit für AED-X Defibrillation</German>
+            <French>Probabilité minimale de réussite pour la défibrillation AED-X</French>
+            <Japanese>AED-X除細動の最低成功率</Japanese>
+            <Spanish>Probabilidad mínima de éxito de la desfibrilación con AED-X</Spanish>
+        </Key>
+        <Key ID="STR_KAT_Circulation_AED_MaxChance_DESC">
+            <English>Maximum success chance for standard AED defibrillation</English>
+            <German>Maximale Erfolgswahrscheinlichkeit für Standard-AED Defibrillation</German>
+            <French>Probabilité maximale de réussite pour une défibrillation standard à l'aide d'un DAE</French>
+            <Japanese>標準AED除細動の最高成功率</Japanese>
+            <Spanish>Probabilidad máxima de éxito de la desfibrilación con DEA estándar</Spanish>
+        </Key>
+        <Key ID="STR_KAT_Circulation_AED_MinChance_DESC">
+            <English>Minimum success chance for standard AED defibrillation</English>
+            <German>Minimale Erfolgswahrscheinlichkeit für Standard-AED Defibrillation</German>
+            <French>Probabilité minimale de réussite pour une défibrillation standard à l'aide d'un DAE</French>
+            <Japanese>標準AED除細動の最低成功率</Japanese>
+            <Spanish>Probabilidad mínima de éxito de la desfibrilación con DEA estándar</Spanish>
+        </Key>
+        <Key ID="STR_KAT_Circulation_SETTING_AEDX_VitalsMonitor_AttachTime_DESC">
+            <English>Time required to attach AED-X vitals monitor to patient</English>
+            <German>Benötigte Zeit zum Anbringen des AED-X Vitalmonitors am Patienten</German>
+            <French>Temps nécessaire pour connecter le moniteur vital AED-X au patient</French>
+            <Japanese>AED-Xバイタルモニターを患者へ取り付けるのにかかる時間</Japanese>
+            <Spanish>Tiempo necesario para conectar el monitor de signos vitales AED-X al paciente</Spanish>
+        </Key>
+        <Key ID="STR_KAT_Circulation_SETTING_AEDX_VitalsMonitor_DetachTime_DESC">
+            <English>Time required to detach AED-X vitals monitor from patient</English>
+            <German>Benötigte Zeit zum Entfernen des AED-X Vitalmonitors vom Patienten</German>
+            <French>Temps nécessaire pour détacher le moniteur vital AED-X du patient</French>
+            <Japanese>AED-Xバイタルモニターを患者から取り外すのにかかる時間</Japanese>
+            <Spanish>Tiempo necesario para desconectar el monitor de signos vitales AED-X del paciente</Spanish>
+        </Key>
+        <Key ID="STR_KAT_Circulation_SETTING_DefibrillatorPads_AttachTime_DESC">
+            <English>Time required to attach defibrillator pads to patient</English>
+            <German>Benötigte Zeit zum Anbringen der Defibrillator-Pads am Patienten</German>
+            <French>Temps nécessaire pour fixer les électrodes du défibrillateur sur le patient</French>
+            <Japanese>除細動パッドを患者へ取り付けるのにかかる時間</Japanese>
+            <Spanish>Tiempo necesario para colocar los electrodos del desfibrilador en el paciente</Spanish>
+        </Key>
+        <Key ID="STR_KAT_Circulation_SETTING_DefibrillatorPads_DetachTime_DESC">
+            <English>Time required to detach defibrillator pads from patient</English>
+            <German>Benötigte Zeit zum Entfernen der Defibrillator-Pads vom Patienten</German>
+            <French>Temps nécessaire pour détacher les électrodes du défibrillateur du patient</French>
+            <Japanese>除細動パッドを患者から取り外すのにかかる時間</Japanese>
+            <Spanish>Tiempo necesario para retirar los electrodos del desfibrilador del paciente</Spanish>
+        </Key>
+        <Key ID="STR_KAT_Circulation_SETTING_Defibrillator_DistanceLimit_DESC">
+            <English>Maximum distance between defibrillator and patient for operation</English>
+            <German>Maximale Entfernung zwischen Defibrillator und Patient für den Betrieb</German>
+            <French>Distance maximale entre le défibrillateur et le patient pour le fonctionnement</French>
+            <Japanese>患者と除細動器の操作が可能な最大距離</Japanese>
+            <Spanish>Distancia máxima entre el desfibrilador y el paciente para su funcionamiento</Spanish>
+        </Key>
+        <Key ID="STR_KAT_Circulation_SETTING_AED_X_VitalsMonitor_SoundsSelect_DESC">
+            <English>Selects which sound set to use for AED-X vitals monitor</English>
+            <German>Wählt aus, welcher Soundsatz für den AED-X Vitalmonitor verwendet wird</German>
+            <French>Sélectionne le jeu de sons à utiliser pour le moniteur de signes vitaux AED-X.</French>
+            <Japanese>AED-Xバイタルモニターで使用するサウンドセットを選択します</Japanese>
+            <Spanish>Selecciona qué conjunto de sonidos usar para el monitor de signos vitales AED-X</Spanish>
+        </Key>
+        <Key ID="STR_KAT_Circulation_SETTING_Threshold_SpO2Warning_DESC">
+            <English>SpO2 level at which the monitor starts warning</English>
+            <German>SpO2-Wert, bei dem der Monitor zu warnen beginnt</German>
+            <French>Niveau de SpO2 auquel le moniteur commence à émettre un avertissement</French>
+            <Japanese>モニターが警告を開始するSpO2の値</Japanese>
+            <Spanish>Nivel de SpO2 en el que el monitor comienza a advertir.</Spanish>
+        </Key>
+        <Key ID="STR_KAT_Circulation_SETTING_AED_X_VitalsMonitor_BloodPressureInterval_DESC">
+            <English>Controls how blood pressure is measured on AED-X monitor</English>
+            <German>Kontrolliert, wie der Blutdruck am AED-X Monitor gemessen wird</German>
+            <French>Contrôle la manière dont la pression artérielle est mesurée sur le moniteur AED-X.</French>
+            <Japanese>AED-Xモニターでの血圧測定方法を制御します</Japanese>
+            <Spanish>Controla cómo se mide la presión arterial en el monitor AED-X</Spanish>
+        </Key>
+        <Key ID="STR_KAT_Circulation_SETTING_AED_X_VitalsMonitor_BloodPressureInterval_Time_DESC">
+            <English>Time interval for automatic blood pressure measurements</English>
+            <German>Zeitintervall für automatische Blutdruckmessungen</German>
+            <French>Intervalle de temps pour les mesures automatiques de la pression artérielle</French>
+            <Japanese>自動血圧測定の間隔</Japanese>
+            <Spanish>Intervalo de tiempo para las mediciones automáticas de presión arterial</Spanish>
+        </Key>
+        <Key ID="STR_KAT_Circulation_SETTING_CPR_CHANCES_DESC">
+            <English>Enables different CPR success chances based on medical training level</English>
+            <German>Aktiviert verschiedene CPR-Erfolgschancen basierend auf medizinischer Ausbildung</German>
+            <French>Permet différentes chances de réussite de la RCP en fonction du niveau de formation médicale</French>
+            <Japanese>医療スキルのレベルに基づいて異なるCPR成功率を有効化します</Japanese>
+            <Spanish>Activa distintas probabilidades de éxito de la RCP según el nivel de formación médica</Spanish>
+        </Key>
+        <Key ID="STR_KAT_Circulation_CPR_MaxChance_Doctor_DESC">
+            <English>Maximum CPR success chance for doctors</English>
+            <German>Maximale CPR-Erfolgschance für Ärzte</German>
+            <French>Chances maximales de réussite de la RCP pour les médecins</French>
+            <Japanese>医師のCPR最大成功率</Japanese>
+            <Spanish>Probabilidad máxima de éxito de la RCP para médicos</Spanish>
+        </Key>
+        <Key ID="STR_KAT_Circulation_CPR_MinChance_Doctor_DESC">
+            <English>Minimum CPR success chance for doctors</English>
+            <German>Minimale CPR-Erfolgschance für Ärzte</German>
+            <French>Probabilité minimale de réussite d'une RCP pour les médecins</French>
+            <Japanese>医師のCPR最小成功率</Japanese>
+            <Spanish>Probabilidad mínima de éxito de la RCP para médicos</Spanish>
+        </Key>
+        <Key ID="STR_KAT_Circulation_CPR_MaxChance_RegularMedic_DESC">
+            <English>Maximum CPR success chance for regular medics</English>
+            <German>Maximale CPR-Erfolgschance für reguläre Sanitäter</German>
+            <French>Chances maximales de réussite de la RCP pour les ambulanciers réguliers</French>
+            <Japanese>標準的な衛生兵のCPR最大成功率</Japanese>
+            <Spanish>Probabilidad máxima de éxito de la RCP para personal médico estándar</Spanish>
+        </Key>
+        <Key ID="STR_KAT_Circulation_CPR_MinChance_RegularMedic_DESC">
+            <English>Minimum CPR success chance for regular medics</English>
+            <German>Minimale CPR-Erfolgschance für reguläre Sanitäter</German>
+            <French>Chances minimales de réussite de la RCP pour les ambulanciers réguliers</French>
+            <Japanese>標準的な衛生兵のCPR最小成功率</Japanese>
+            <Spanish>Probabilidad mínima de éxito de la RCP para personal médico estándar</Spanish>
+        </Key>
+        <Key ID="STR_KAT_Circulation_CPR_MaxChance_Default_DESC">
+            <English>Maximum CPR success chance for untrained personnel</English>
+            <German>Maximale CPR-Erfolgschance für unausgebildetes Personal</German>
+            <French>Chances maximales de réussite de la RCP pour le personnel non formé</French>
+            <Japanese>訓練を受けていない人員のCPR最大成功率</Japanese>
+            <Spanish>Probabilidad máxima de éxito de la RCP para personal no capacitado</Spanish>
+        </Key>
+        <Key ID="STR_KAT_Circulation_CPR_MinChance_Default_DESC">
+            <English>Minimum CPR success chance for untrained personnel</English>
+            <German>Minimale CPR-Erfolgschance für unausgebildetes Personal</German>
+            <French>Chances minimales de réussite de la RCP pour le personnel non formé</French>
+            <Japanese>訓練を受けていない人員のCPR最小成功率</Japanese>
+            <Spanish>Probabilidad mínima de éxito de la RCP para personal no capacitado</Spanish>
+        </Key>
+        <Key ID="STR_KAT_Circulation_SETTING_CPR_ChanceInterval_DESC">
+            <English>Interval at which CPR success chance is rolled</English>
+            <German>Intervall, in dem die CPR-Erfolgschance gewürfelt wird</German>
+            <French>Intervalle auquel la chance de réussite de la RCP est déterminée</French>  
+            <Japanese>CPR成功率をロールする間隔</Japanese>
+            <Spanish>Intervalo en el que se calcula la probabilidad de éxito de la RCP</Spanish>
+        </Key>
+        <Key ID="STR_KAT_Circulation_SETTING_AdvRhythm_Enable_DESC">
+            <English>Enables advanced cardiac arrest rhythms system</English>
+            <German>Aktiviert das erweiterte Herzrhythmus-System bei Herzstillstand</German>
+            <French>Active le système avancé de rythmes cardiaques en cas d'arrêt cardiaque</French>
+            <Japanese>高度な心停止と調律のシステムを有効化します</Japanese>
+            <Spanish>Activa el sistema avanzado de ritmos de paro cardíaco</Spanish>
+        </Key>
+        <Key ID="STR_KAT_Circulation_SETTING_AdvRhythm_canDeteriorate_DESC">
+            <English>Allows cardiac arrest rhythms to deteriorate over time</English>
+            <German>Ermöglicht es Herzrhythmen, sich im Laufe der Zeit zu verschlechtern</German>
+            <French>Permet aux rythmes cardiaques de se détériorer avec le temps</French>
+            <Japanese>心停止状態の調律が時間の経過とともに悪化するのを許可します</Japanese>
+            <Spanish>Permite que los ritmos de paro cardíaco se deterioren con el tiempo</Spanish>
+        </Key>
+        <Key ID="STR_KAT_Circulation_treatmentTime_BPCuff_DESC">
+            <English>Time required to measure blood pressure with blood pressure cuff</English>
+            <German>Benötigte Zeit zur Blutdruckmessung mit der Blutdruckmanschette</German>
+            <French>Temps nécessaire pour mesurer la tension artérielle à l'aide d'un tensiomètre</French>
+            <Japanese>血圧カフで血圧を測定するのにかかる時間</Japanese>
+            <Spanish>Tiempo necesario para medir la presión arterial con el manguito de presión</Spanish>
         </Key>
         <Key ID="STR_KAT_Circulation_treatmentTime_StethHR_DESC">
             <English>Time required to measure heart rate with stethoscope</English>
             <German>Benötigte Zeit zur Pulsmessung mit dem Stethoskop</German>
+            <French>Temps nécessaire pour mesurer la fréquence cardiaque à l'aide d'un stéthoscope</French>
+            <Japanese>聴診器で心拍数を測定するのにかかる時間</Japanese>
+            <Spanish>Tiempo necesario para medir la frecuencia cardíaca con el estetoscopio</Spanish>
         </Key>
     </Package>
 </Project>
