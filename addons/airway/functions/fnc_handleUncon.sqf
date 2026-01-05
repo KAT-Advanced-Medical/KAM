@@ -49,12 +49,10 @@ _patient setVariable ["kat_pukeActive_PFH", false, true];
         private _isUnconscious   = _patient getVariable ["ACE_isUnconscious", false];
         private _alive           = alive _patient;
         private _stomachVolume  = _patient getVariable [QGVAR(stomachVolume), 5];
-
-        // Exit PFH if dead or occlusion already cleared
         if (!_alive || (_stomachVolume == 5) || _isUnconscious) exitWith {
             [_idPFH] call CBA_fnc_removePerFrameHandler;
         };
         _patient setVariable [QGVAR(stomachVolume), (_stomachVolume + 1), true];
     }, 
-    180, 
+    300, 
     [_patient]] call CBA_fnc_addPerFrameHandler;

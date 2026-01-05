@@ -37,11 +37,13 @@ if (_unit getVariable [QEGVAR(vitals,simpleMedical), false]) exitWith {};
         [_idPFH] call CBA_fnc_removePerFrameHandler;
     };
     private _nauseaMult = _unit getVariable [QEGVAR(pharma,nauseaMult), 1];
+    private _stomachVolume = _unit getVariable [QGVAR(stomachVolume), 5];
     private _nauseaMult = (_nauseaMult min 6) max 0.1;
     private _nauseaDelay = if (_nauseaMult < 1) then {_nauseaMult / 2} else {_nauseaMult};
     private _icp = _unit getVariable [QEGVAR(brain,ICP),15];
     private _icpChance = linearConversion [15, 60, _icp, 1, 2, true];
     private _nauseaChance = linearConversion [0.1, 6, _nauseaMult, 0.1, 2, true];
+    if (_stomachVolume <= 0) exitWith {};
     if ((CBA_missionTime - (_unit getVariable [QGVAR(clearedTime), 0])) < GVAR(cooldownTime)) exitWith {
         [_idPFH, 5] call CBA_fnc_setPerFrameHandlerDelay;
     };
@@ -53,7 +55,7 @@ if (_unit getVariable [QEGVAR(vitals,simpleMedical), false]) exitWith {};
         _occlusionState set [1, ((_occlusionState select 1) + floor (_volume * (1 - (_mitigation select 1)))) min 10];
         _occlusionState set [2, ((_occlusionState select 2) + floor (_volume * 0.7 * (1 - (_mitigation select 1)))) min 10];
         _unit setVariable [QGVAR(occlusion), _occlusionState, true];
-        _unit setVariable [QGVAR(stomachVolume), ((_volume - 1) max 1), true];
+        _unit setVariable [QGVAR(stomachVolume), (_volume - 1), true];
         _unit setVariable [QGVAR(hasPuked), true, true];
         TRACE_1("occlusion",_occlusionState);
         if (GVAR(checkbox_puking_sound)) then {
