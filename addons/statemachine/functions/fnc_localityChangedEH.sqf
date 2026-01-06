@@ -35,13 +35,6 @@ if (_isLocal) then {
             TRACE_1("manually changing state to CardiacArrest",_currentState);
             [_unit, ACEGVAR(medical,STATE_MACHINE), _currentState, "CardiacArrest", {}, "LocalityChange"] call CBA_statemachine_fnc_manualTransition;
         };
-        case (IN_SEIZURE(_unit)): {
-            if (_currentState == "Seizure") exitWith {};
-            _unit setVariable [VAR_SEIZURE, false]; // force reset vars so setSeizureState can run (enteredSeizureState will also be called)
-            _unit setVariable [VAR_UNCON, false];
-            TRACE_1("manually changing state to Seizure",_currentState);
-            [_unit, ACEGVAR(medical,STATE_MACHINE), _currentState, "Seizure", {}, "LocalityChange"] call CBA_statemachine_fnc_manualTransition;
-        };
         case (IS_UNCONSCIOUS(_unit)): {
             if (_currentState == "Unconscious") exitWith {};
             _unit setVariable [VAR_UNCON, false]; // force reset var so ace_medical_status_fnc_setUnconsciousState can run
