@@ -38,7 +38,7 @@ switch (true) do {
             _hintcTStatus = LLSTRING(chestTubeStatus_SlowDrain);
             _cTStatus = LSTRING(chestTubeStatus_SlowDrain_short);
         };
-        case (_drain < 0.01): {
+        case (_drain > 0): {
             _hintWidth = 17;
             _hintcTStatus = LLSTRING(chestTubeStatus_MinimalDrain);
             _cTStatus = LSTRING(chestTubeStatus_MinimalDrain_short);
