@@ -840,7 +840,7 @@ class ACE_ADDON(Medical_Treatment) {
             timeInSystem = 60;
             timeTillMaxEffect = 5;
             dose = 1;
-            alphaFactor = -0.08;
+            alphaFactor = -0.04;
             onOverDose = "";
             maximumEffectiveDose = 40;
         };
@@ -852,7 +852,7 @@ class ACE_ADDON(Medical_Treatment) {
             timeInSystem = 240;
             timeTillMaxEffect = 15;
             dose = 1;
-            alphaFactor = -0.04;
+            alphaFactor = -0.02;
             onOverDose = "";
             maximumEffectiveDose = 40;
         };
@@ -864,7 +864,7 @@ class ACE_ADDON(Medical_Treatment) {
             timeInSystem = 120;
             timeTillMaxEffect = 10;
             dose = 1;
-            alphaFactor = -0.05;
+            alphaFactor = 0.06;
             onOverDose = "";
             maximumEffectiveDose = 40;
         };
