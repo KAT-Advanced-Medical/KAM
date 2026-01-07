@@ -42,7 +42,13 @@ if (_unit getVariable [QEGVAR(vitals,simpleMedical), false]) exitWith {};
     private _nauseaDelay = if (_nauseaMult < 1) then {_nauseaMult / 2} else {_nauseaMult};
     private _icp = _unit getVariable [QEGVAR(brain,ICP),15];
     private _icpChance = linearConversion [15, 60, _icp, 1, 2, true];
-    private _nauseaChance = linearConversion [0.1, 6, _nauseaMult, 0.1, 2, true];
+    private _nauseaChance = 1;
+    if (_nauseaMult <= 1) then {
+        _nauseaChance = linearConversion [1, 6, _nauseaMult, 1, 3, true];
+    } else {
+        _nauseaChance = linearConversion [0.1, 1, _nauseaMult, 0.001, 1, true];
+    };
+    if (_nauseaMult < 0.3) exitWith {};
     if (_stomachVolume <= 0) exitWith {};
     if ((CBA_missionTime - (_unit getVariable [QGVAR(clearedTime), 0])) < GVAR(cooldownTime)) exitWith {
         [_idPFH, 5] call CBA_fnc_setPerFrameHandlerDelay;
