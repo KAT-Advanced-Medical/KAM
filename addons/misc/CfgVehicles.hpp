@@ -174,7 +174,7 @@ class CfgVehicles {
                     condition = QUOTE(_target getVariable [ARR_2('ACE_isUnconscious',false)] && {!(isNull (objectParent _target))} && {isNull (objectParent _player)});
                     statement = QUOTE([ARR_2(_player,_target)] call FUNC(unloadAndCarryPatient));
                     icon = QACEPATHTOF(dragging,UI\icons\person_carry.paa);
-                };     
+                };
                 class KAT_IFAK_Item {
                     displayName = CSTRING(IFAK_Unpack);
                     condition = QUOTE([ARR_4(_target,'kat_IFAK',0,0)] call FUNC(FAK_checkSlot) && !([_target] call ACEFUNC(common,isAwake)));
@@ -459,7 +459,7 @@ class CfgVehicles {
                 };
             };
             class ACE_ArmLeft {
-                class SalineIV;
+                class SalineIV {};
                 class SalineIV_Stand: SalineIV {
                     displayName = CSTRING(Display_IVStand);
                     condition = "[_player, _target, 'hand_l', 'SalineIV_Stand'] call ace_medical_treatment_fnc_canTreatCached";
@@ -477,7 +477,7 @@ class CfgVehicles {
                 };
             };
             class ACE_ArmRight {
-                class SalineIV;
+                class SalineIV {};
                 class SalineIV_Stand: SalineIV {
                     displayName = CSTRING(Display_IVStand);
                     condition = "[_player, _target, 'hand_r', 'SalineIV_Stand'] call ace_medical_treatment_fnc_canTreatCached";
@@ -495,7 +495,7 @@ class CfgVehicles {
                 };
             };
             class ACE_LegLeft {
-                class SalineIV;
+                class SalineIV {};
                 class SalineIV_Stand: SalineIV {
                     displayName = CSTRING(Display_IVStand);
                     condition = "[_player, _target, 'leg_l', 'SalineIV_Stand'] call ace_medical_treatment_fnc_canTreatCached";
@@ -513,7 +513,7 @@ class CfgVehicles {
                 };
             };
             class ACE_LegRight {
-                class SalineIV;
+                class SalineIV {};
                 class SalineIV_Stand: SalineIV {
                     displayName = CSTRING(Display_IVStand);
                     condition = "[_player, _target, 'leg_r', 'SalineIV_Stand'] call ace_medical_treatment_fnc_canTreatCached";
@@ -536,7 +536,7 @@ class CfgVehicles {
                 displayName = CSTRING(Kat_Equipment);
                 icon = QPATHTOF(ui\KAM_Iteraction_Logo.paa);
                 exceptions[] = {"isNotSwimming", "isNotInside", "isNotSitting"};
-                
+
                 class Armband {
                     displayName = CSTRING(Armband_Sling);
                     condition = QUOTE(_player call FUNC(checkArmbandCondition));
@@ -654,7 +654,7 @@ class CfgVehicles {
                             showDisabled = 0;
                             icon = QPATHTOF(ui\ArmbandKat.paa);
                         };
-                    
+
                         class RedCross_NVG {
                             displayName = CSTRING(Armband_Red_Cross_ItemName);
                             condition = QUOTE([ARR_2(_player,'kat_Armband_Red_Cross_NVG')] call ACEFUNC(common,hasItem));
@@ -935,7 +935,7 @@ class CfgVehicles {
                         showDisabled = 0;
                         icon = QPATHTOF(ui\IFAK_DisplayItems.paa);
                     };
-                    
+
                     class Slot1 {
                         displayName = CSTRING(FAK_Slot_1);
                         condition = QUOTE([ARR_4(_player,'kat_IFAK_Magazine',0,1)] call FUNC(FAK_checkSlot));
@@ -1100,7 +1100,7 @@ class CfgVehicles {
                         condition = QUOTE([ARR_4(_player,'kat_AFAK_Magazine',1,3)] call FUNC(FAK_checkSlot));
                         statement = QUOTE([ARR_4(_player,'kat_AFAK_Magazine',1,3)] call FUNC(FAK_unpack));
                     };
-                    
+
                     class Slot3_Repack: Slot1_Repack {
                         displayName = CSTRING(FAK_Slot_3_Repack);
                         condition = QUOTE(!([ARR_4(_player,'kat_AFAK_Magazine',1,3)] call FUNC(FAK_checkSlot)) && [ARR_4(_player,'kat_AFAK_Magazine',1,3)] call FUNC(FAK_checkRepack));
