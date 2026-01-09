@@ -2723,7 +2723,7 @@
             <Korean>250ml 키트의 채혈 시간</Korean>
             <Japanese>250mlキットの採血時間</Japanese>
             <Chinese>250 毫升套件的绘制时间</Chinese>
-            <Chinesesimp>250 mL的抽取时间  </Chinesesimp>
+            <Chinesesimp>250 mL的抽取时间</Chinesesimp>
             <Turkish>250ml Kit için çizim süresi</Turkish>
             <Finnish>Aika, joka kuluu 250 ml:n verta ottamiseen</Finnish>
             <Dutch>Onttrekkingstijd voor 250ml set</Dutch>
@@ -2741,7 +2741,7 @@
             <Korean>500ml 키트의 채혈 시간</Korean>
             <Japanese>500mlキットの採血時間</Japanese>
             <Chinese>500 毫升套件的抽血時間</Chinese>
-            <Chinesesimp>500 mL的抽取时间  </Chinesesimp>
+            <Chinesesimp>500 mL的抽取时间</Chinesesimp>
             <Turkish>500ml Kit için çizim süresi</Turkish>
             <Finnish>Aika, joka kuluu 500 ml:n verta ottamiseen</Finnish>
             <Dutch>Onttrekkingstijd voor 500ml set</Dutch>
@@ -3784,7 +3784,7 @@
             <English>Transfusing Epinephrine Infusion (250ml)...</English>
         </Key>
         <Key ID="STR_KAT_Circulation_Actions_EtomidateInfusion">
-            <English>Transfuse Etomidate Infusion (250ml) </English>
+            <English>Transfuse Etomidate Infusion (250ml)</English>
         </Key>
         <Key ID="STR_KAT_Circulation_Transfusing_Etomidate_Infusion">
             <English>Transfusing Etomidate Infusion (250ml)...</English>
@@ -3949,7 +3949,7 @@
             <English>Give Saline IV (100ml)</English>
         </Key>
         <Key ID="STR_KAT_Circulation_CPR_Active">
-            <English>%1 CPR (%2) </English>
+            <English>%1 CPR (%2)</English>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_hardcoreAED">
             <English>Enable Hardcore AED-X</English>

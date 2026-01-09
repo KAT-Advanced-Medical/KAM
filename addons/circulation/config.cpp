@@ -6,7 +6,7 @@ class CfgPatches {
         requiredVersion = REQUIRED_VERSION;
         units[] = {
             "kat_X_AEDItem",
-            "kat_bloodBankCrate"
+            "kat_AEDItem"
         };
         weapons[] = {
             "kat_bloodIV_O",
@@ -34,9 +34,23 @@ class CfgPatches {
             "kat_bloodIV_AB_250",
             "kat_bloodIV_AB_N_250",
             "kat_X_AED",
+            "kat_AED",
             "kat_crossPanel",
             "KAT_Empty_bloodIV_500",
-            "KAT_Empty_bloodIV_250"
+            "KAT_Empty_bloodIV_250",
+            "kat_HextendIV",
+            "kat_HextendIV_500",
+            "kat_HextendIV_250",
+            "kat_RingersLactateIV",
+            "kat_RingersLactateIV_500",
+            "kat_RingersLactateIV_250",
+            "kat_PackedRBCIV_500",
+            "kat_PackedRBCIV_250",
+            "kat_salineIV100",
+            "kat_BPCuff",
+            "kat_HypertonicSalineIV_500",
+            "kat_HypertonicSalineIV_250",
+            "kat_HypertonicSalineIV_100"
         };
         magazines[] = { };
         requiredAddons[] = {

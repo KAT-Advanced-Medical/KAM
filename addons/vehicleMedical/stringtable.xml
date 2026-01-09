@@ -67,7 +67,7 @@
         <Key ID="STR_kat_vehiclemedical_Incapacitated_Unload_Force">
             <Original>Force Unload</Original>
             <Italian>Forza Scaricamento</Italian>
-            <French>Décharge forcé </French>
+            <French>Décharge forcé</French>
             <Spanish>Forzar descarga</Spanish>
         </Key>
         <Key ID="STR_kat_vehiclemedical_Unstable_Dead">
@@ -438,7 +438,7 @@
             </Key>
             <Key ID="STR_kat_vehiclemedical_Settings_Unstable_Track_Unconscious">
                 <Original>Track Unconscious</Original>
-                <Italian>Controlla Incoscienza </Italian>
+                <Italian>Controlla Incoscienza</Italian>
                 <French>Vérifier l'inconscience</French>
                 <Spanish>Comprobar si el paciente es inconsciente</Spanish>
             </Key>
@@ -480,7 +480,7 @@
             </Key>
             <Key ID="STR_kat_vehiclemedical_Settings_Unstable_Track_IV_Tooltip">
                 <Original>Total volume of IVs is displayed</Original>
-                <Italian>Viene mostrato il volume totale delle IV </Italian>
+                <Italian>Viene mostrato il volume totale delle IV</Italian>
                 <French>Le volume total des IV est affiché</French>
                 <Spanish>Se muestra el volumen total de IV</Spanish>
             </Key>

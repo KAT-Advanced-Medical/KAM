@@ -28,15 +28,17 @@ private _pfh = [{
         [_pfhID] call CBA_fnc_removePerFrameHandler;
         _unit setVariable [QGVAR(concussionPFH), nil];
     };
-    private _edema    = _unit getVariable [QGVAR(edema),0];
-    private _oldEdema    = _unit getVariable [QGVAR(edema),0];
+    private _startEdema    = _unit getVariable [QGVAR(edema),0];
+    private _oldEdema    = _unit getVariable [QGVAR(oldEdema),0];
     private _bleeding = _unit getVariable [QGVAR(bleeding),0];
     private _ICP      = _unit getVariable [QGVAR(ICP),15];
     private _necrosis = _unit getVariable [QGVAR(necrosis),0];
     private _reversibleDamage = _unit getVariable [QGVAR(reversibleDamage),0];
     private _concussion = _unit getVariable [QGVAR(concussion),0];
-    if (_edema < 0.7) then {
-        _edema = (_edema + 0.01) min _concussion; // slow swelling
+    private _edema = 0;
+    _unit setVariable [QGVAR(oldEdema), _startEdema, true];
+    if (_startEdema < 0.7) then {
+        _edema = (_startEdema + 0.01) min _concussion; // slow swelling
     };
     private _targetICP = 15 + (_edema * 10) + (_bleeding * 20);
     _ICP = _ICP + ((_targetICP - _ICP) * 0.025);

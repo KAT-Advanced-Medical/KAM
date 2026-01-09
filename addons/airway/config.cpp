@@ -15,7 +15,12 @@ class CfgPatches {
             "kat_guedel",
             "kat_larynx",
             "kat_suction",
-            "kat_accuvac"
+            "kat_accuvac",
+            "kat_ETT",
+            "kat_laryngoscope",
+            "kat_IGEL",
+            "kat_NPA",
+            "kat_crikeKit"
         };
         magazines[] = {};
         requiredAddons[] = {

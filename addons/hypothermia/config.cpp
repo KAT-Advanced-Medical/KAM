@@ -8,7 +8,9 @@ class CfgPatches {
         };
         weapons[] = {
             "kat_handWarmer",
-            "kat_fluidWarmer"
+            "kat_fluidWarmer",
+            "kat_spaceBlanket",
+            "kat_thermometer"
         };
         magazines[] = { };
         requiredAddons[] = {

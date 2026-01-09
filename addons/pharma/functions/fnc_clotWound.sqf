@@ -121,7 +121,7 @@ private _fnc_clotWound = {
                             _chance = GVAR(coagulation_chance_MinorWounds);
                         };
                     };
-                    if (!(missionNamespace getVariable [QGVAR(coagulation_allow_MinorWounds), true]) && !(_classname == "InternalBleeding")) then { continue; };
+                    if !((missionNamespace getVariable [QGVAR(coagulation_allow_MinorWounds), true]) && (_classname == "InternalBleeding")) then { continue; };
                 };
                 case "Medium": {
                     switch (true) do {
@@ -156,7 +156,7 @@ private _fnc_clotWound = {
                             _chance = GVAR(coagulation_chance_MediumWounds);
                         };
                     };
-                    if (!(missionNamespace getVariable [QGVAR(coagulation_allow_MediumWounds), true]) && !(_classname == "InternalBleeding")) then { continue; };
+                    if !(!(missionNamespace getVariable [QGVAR(coagulation_allow_MediumWounds), true]) && (_classname == "InternalBleeding")) then { continue; };
                 };
                 default {
                     switch (true) do {
@@ -191,7 +191,7 @@ private _fnc_clotWound = {
                             _chance = GVAR(coagulation_chance_LargeWounds);
                         };
                     };
-                    if (!(missionNamespace getVariable [QGVAR(coagulation_allow_LargeWounds), true]) && !(_classname == "InternalBleeding")) then { continue; };
+                    if !((missionNamespace getVariable [QGVAR(coagulation_allow_LargeWounds), true]) && (_classname == "InternalBleeding")) then { continue; };
                 };
             };
             _factorCountToRemove = ceil (_factorCountToRemove * (1 + ( _bleeding * 0.5)));

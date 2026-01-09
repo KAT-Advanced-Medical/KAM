@@ -239,12 +239,13 @@ GVAR(BVM_timeOut) = true;
             };
 
             playSound3D [QPATHTOF_SOUND(audio\squeeze_BVM.ogg), _patient, false, getPosASL _patient, 8, 1, 15];
-
+            private _breathrate = GET_BREATHING_RATE(_patient);
+            private _bvmRate = 60/_breathrate;
             [{ // Squeeze BVM every 5 seconds
                 params ["_patient"];
 
                 !(_patient getVariable [QGVAR(BVMInUse), false]);
-            }, {}, [_patient], 5,
+            }, {}, [_patient], _bvmRate,
             {
                 GVAR(BVM_timeOut) = false;
             }] call CBA_fnc_waitUntilAndExecute;

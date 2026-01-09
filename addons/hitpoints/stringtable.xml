@@ -334,7 +334,7 @@
             <English>Percent chance of an Evisceration happening</English>
         </Key>
         <Key ID="STR_KAT_Hitpoints_Evisceration_DAMAGE_THRESHOLD">
-            <English>Evisceration Damage Threshold </English>
+            <English>Evisceration Damage Threshold</English>
         </Key>
         <Key ID="STR_KAT_Hitpoints_Evisceration_DAMAGE_THRESHOLD_DESC">
             <English>Damage Threshold to cause an Evisceration</English>
@@ -364,7 +364,7 @@
             <English>Percent chance of an Joint Injury happening</English>
         </Key>
         <Key ID="STR_KAT_Hitpoints_Joint_DAMAGE_THRESHOLD">
-            <English>Joint Injury Damage Threshold </English>
+            <English>Joint Injury Damage Threshold</English>
         </Key>
         <Key ID="STR_KAT_Hitpoints_Joint_DAMAGE_THRESHOLD_DESC">
             <English>Damage Threshold to cause a Joint Injury</English>
@@ -499,7 +499,7 @@
             <English>Percent chance of a Pelvic Fracture happening</English>
         </Key>
         <Key ID="STR_KAT_Hitpoints_Pelvic_DAMAGE_THRESHOLD">
-            <English>Pelvic Fracture Damage Threshold </English>
+            <English>Pelvic Fracture Damage Threshold</English>
         </Key>
         <Key ID="STR_KAT_Hitpoints_Pelvic_DAMAGE_THRESHOLD_DESC">
             <English>Damage Threshold to cause an Pelvic Fracture</English>
