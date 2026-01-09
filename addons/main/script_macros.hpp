@@ -135,9 +135,7 @@
 #define FRACTURE_DAMAGE_THRESHOLD ACEGVAR(medical,const_fractureDamageThreshold)
 
 // Minimum cardiac output
-#ifdef CARDIAC_OUTPUT_MIN
 #undef CARDIAC_OUTPUT_MIN
-#endif
 #define CARDIAC_OUTPUT_MIN ACEGVAR(medical,const_minCardiacOutput)
 
 //We have to undef them before redefining
