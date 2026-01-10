@@ -49,8 +49,6 @@ if (GVAR(kidneyAction)) then {
             "_prevCa",
             "_prevDmg"
         ];
-
-        // --- HELPER ---
         private _rateLimit = {
             params ["_new", "_old", "_max"];
             (_new max (_old - _max)) min (_old + _max)
@@ -112,8 +110,61 @@ if (GVAR(kidneyAction)) then {
         };
 
         _externalPh = _externalPh + ((_lactate * 0.0075) * _bufferFrac);
+        private _rr    = _unit getVariable [QEGVAR(breathing,breathRate), 0];
+        private _depth = _unit getVariable [VAR_RESPIRATORY_DEPTH, 0];
+        private _normRR    = 14;
+        private _normDepth = DEFAULT_RESPIRATORY_DEPTH;
+        private _acidRepo    = 1;
+        private _bloodVolume = GET_BLOOD_VOLUME_LITERS(_unit);
+        private _anerobicPressure = (DEFAULT_ANEROBIC_EXCHANGE * (6 / (_bloodVolume max 6))) min 1.2;
+        private _ventRatio =((_rr max 0) * (_depth max 0)) / (_normRR * _normDepth);
+        if (GET_PH(_unit) < 7.3) then {
+            if (_ventRatio > 1.1) then {
+        
+            private _cnsSupp =
+                (_unit getVariable [QEGVAR(surgery,sedated), 0])
+                max (_unit getVariable [QEGVAR(pharma,opioidDepression), 0]);
 
+            private _ventEff =
+                linearConversion [1.1, 3.5, _ventRatio, 0.0, 1.0, true]
+                * linearConversion [0, 1, _cnsSupp, 1.0, 0.4, true];
 
+            private _bufferLimit =
+                linearConversion [0, 300, abs _externalPh, 0.15, 1.0, true];
+            private _respOffgas =
+                0.9
+                * _ventEff
+                * _bufferLimit;
+            private _sign = if (_externalPh == 0) then {0} else {_externalPh / abs _externalPh};
+            private _acidRepo = _unit getVariable [QGVAR(acidRepo), 1.0];
+            
+            private _repoDrain =
+                linearConversion [1.0, 2.5, _ventRatio, 0.0, 0.0125, true]
+                * linearConversion [1.0, 1.2, _anerobicPressure, 0.6, 1.0, true];
+            if (_kidneyFail) then {
+                _repoDrain = _repoDrain * 1.4;
+            };
+            _acidRepo = (_acidRepo - _repoDrain) max 0;
+            _respOffgas = _respOffgas * _acidRepo;
+            _externalPh = _externalPh - (_respOffgas * _sign);
+            private _lactRespClear =
+                0.02 * _ventEff * linearConversion [7.35, 7.55, GET_PH(_unit), 1.0, 0.6, true];
+            _lactate = (_lactate - _lactRespClear) max 0.8;
+
+            TRACE_4(
+                "RESP_OFFGASS",
+                _ventRatio,
+                _ventEff,
+                _respOffgas,
+                _externalPh
+                );
+            };
+        };
+        if (_ventRatio < 1.1 && _anerobicPressure < 1.05) then {
+            _acidRepo = (_acidRepo + 0.015) min 1.0;
+        };
+        
+        _unit setVariable [QGVAR(acidRepo), _acidRepo, true];
         if (_bicarb > 0) then {
             private _bicarbMult = linearConversion [7.3, 6.9, _ph, 0.2, 1.0, true];
             _externalPh = _externalPh - (0.6 * (_bicarb * _bicarbMult));

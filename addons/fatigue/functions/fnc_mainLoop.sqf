@@ -85,11 +85,15 @@ private _muscleFactor = sqrt _muscleIntegrity;
 
 // Calculate available power
 private _stimulantLoad = (_caffeineCount) + (_pervatinCount * 1.5);
+private _stimulantEfficiency = linearConversion [0, 3, _stimulantLoad, 1, 1.35, true];
 private _stimulantMult = linearConversion [0, 3, _stimulantLoad, 1, 0.5, true];
 private _ae1PathwayPowerFatigued = ACEGVAR(advanced_fatigue,ae1PathwayPower) * sqrt (ACEGVAR(advanced_fatigue,ae1Reserve) / AE1_MAXRESERVE) * _oxygen * _muscleFactor;
 private _ae2PathwayPowerFatigued = ACEGVAR(advanced_fatigue,ae2PathwayPower) * sqrt (ACEGVAR(advanced_fatigue,ae2Reserve) / AE2_MAXRESERVE) * _oxygen * _muscleFactor;
 _ae1PathwayPowerFatigued = _ae1PathwayPowerFatigued / _stimulantMult;
 _ae2PathwayPowerFatigued = _ae2PathwayPowerFatigued / _stimulantMult;
+private _acidPowerPenalty = linearConversion [0, 1, ACEGVAR(advanced_fatigue,anFatigue), 1, 0.6, true];
+_ae1PathwayPowerFatigued = _ae1PathwayPowerFatigued * _acidPowerPenalty;
+_ae2PathwayPowerFatigued = _ae2PathwayPowerFatigued * _acidPowerPenalty;
 private _aePathwayPowerFatigued  = _ae1PathwayPowerFatigued + _ae2PathwayPowerFatigued;
 // private _anPathwayPowerFatigued  = ACEGVAR(advanced_fatigue,anPathwayPower) * sqrt (ACEGVAR(advanced_fatigue,anReserve) / AN_MAXRESERVE) * _oxygen * _muscleIntegrity; // not used
 
@@ -97,27 +101,54 @@ private _aePathwayPowerFatigued  = _ae1PathwayPowerFatigued + _ae2PathwayPowerFa
 private _ae1Power = _currentWork min _ae1PathwayPowerFatigued;
 private _ae2Power = (_currentWork - _ae1Power) min _ae2PathwayPowerFatigued;
 private _anPowerRaw = 0 max (_currentWork - _ae1Power - _ae2Power);
-private _anPower = _anPowerRaw * _stimulantMult;
+private _anPower = _anPowerRaw;
 
 // Remove ATP from reserves for current work
 ACEGVAR(advanced_fatigue,ae1Reserve) = 0 max (ACEGVAR(advanced_fatigue,ae1Reserve) - _ae1Power / ACEGVAR(advanced_fatigue,aeWattsPerATP));
 ACEGVAR(advanced_fatigue,ae2Reserve) = 0 max (ACEGVAR(advanced_fatigue,ae2Reserve) - _ae2Power / ACEGVAR(advanced_fatigue,aeWattsPerATP));
-ACEGVAR(advanced_fatigue,anReserve)  = 0 max (ACEGVAR(advanced_fatigue,anReserve)  -  _anPower / ACEGVAR(advanced_fatigue,anWattsPerATP));
+ACEGVAR(advanced_fatigue,anReserve) =
+    0 max (
+        ACEGVAR(advanced_fatigue,anReserve)
+      - (_anPower / ACEGVAR(advanced_fatigue,anWattsPerATP)) / _stimulantEfficiency
+    );
 
-// Acidosis accumulation
-ACEGVAR(advanced_fatigue,anFatigue)  = ACEGVAR(advanced_fatigue,anFatigue) + _anPower * ACEGVAR(advanced_fatigue,maxPowerFatigueRatio) * 1.1 * _stimulantMult;
+private _ltFatigueFactor = linearConversion [0, 0.4, ACEGVAR(advanced_fatigue,muscleDamage), 1, 0.85, true];
+
+private _lactateThreshold = 0.75 * ACEGVAR(advanced_fatigue,VO2MaxPower) * _ltFatigueFactor;
+if (_currentWork > _lactateThreshold) then {
+    private _ltExcess =
+        (_currentWork - _lactateThreshold)
+      / (ACEGVAR(advanced_fatigue,VO2MaxPower) - _lactateThreshold);
+
+    ACEGVAR(advanced_fatigue,anFatigue) =
+        ACEGVAR(advanced_fatigue,anFatigue)
+      + (_ltExcess ^ 2.5)
+      * ACEGVAR(advanced_fatigue,maxPowerFatigueRatio);
+};
+private _clearanceRate = 0.0025 * _oxygen * ACEGVAR(advanced_fatigue,recoveryFactor) * (1 - (_currentWork / ACEGVAR(advanced_fatigue,VO2MaxPower)) max 0);
+
+ACEGVAR(advanced_fatigue,anFatigue) = 0 max (ACEGVAR(advanced_fatigue,anFatigue) - _clearanceRate);
 
 // Aerobic ATP reserve recovery
 ACEGVAR(advanced_fatigue,ae1Reserve) = (ACEGVAR(advanced_fatigue,ae1Reserve) + _oxygen * ACEGVAR(advanced_fatigue,recoveryFactor) * AE1_ATP_RECOVERY * (ACEGVAR(advanced_fatigue,ae1PathwayPower) - _ae1Power) / ACEGVAR(advanced_fatigue,ae1PathwayPower)) min AE1_MAXRESERVE;
 ACEGVAR(advanced_fatigue,ae2Reserve) = (ACEGVAR(advanced_fatigue,ae2Reserve) + _oxygen * ACEGVAR(advanced_fatigue,recoveryFactor) * AE2_ATP_RECOVERY * (ACEGVAR(advanced_fatigue,ae2PathwayPower) - _ae2Power) / ACEGVAR(advanced_fatigue,ae2PathwayPower)) min AE2_MAXRESERVE;
 
-private _aeSurplus = _ae1PathwayPowerFatigued + _ae2PathwayPowerFatigued - _ae1Power - _ae2Power;
+private _aeSurplus = 0 max (_ae1PathwayPowerFatigued + _ae2PathwayPowerFatigued - _ae1Power - _ae2Power);
 
 // Anaerobic ATP reserve recovery
-ACEGVAR(advanced_fatigue,anReserve) = 0 max (ACEGVAR(advanced_fatigue,anReserve) + _aeSurplus / ACEGVAR(advanced_fatigue,VO2MaxPower) * AN_ATP_RECOVERY * ACEGVAR(advanced_fatigue,recoveryFactor) * (ACEGVAR(advanced_fatigue,anFatigue) max linearConversion [AN_MAXRESERVE, 0, ACEGVAR(advanced_fatigue,anReserve), 0, 0.75, true]) ^ 2) min AN_MAXRESERVE; // max linearConversion ensures that if ACEGVAR(advanced_fatigue,anFatigue) is very low, it will still regenerate reserves
-// Acidosis recovery
-ACEGVAR(advanced_fatigue,anFatigue) = 0 max (ACEGVAR(advanced_fatigue,anFatigue) - _aeSurplus * ACEGVAR(advanced_fatigue,maxPowerFatigueRatio) * ACEGVAR(advanced_fatigue,recoveryFactor) * ACEGVAR(advanced_fatigue,anFatigue) ^ 2) min 1;
+private _acidInhibition = linearConversion [0, 1, ACEGVAR(advanced_fatigue,anFatigue), 1, 0.4, true];
+ACEGVAR(advanced_fatigue,anReserve) =
+    0 max (
+        ACEGVAR(advanced_fatigue,anReserve)
+      + _aeSurplus
+      / ACEGVAR(advanced_fatigue,VO2MaxPower)
+      * AN_ATP_RECOVERY
+      * ACEGVAR(advanced_fatigue,recoveryFactor)
+      * _acidInhibition
+      * _stimulantEfficiency
+    ) min AN_MAXRESERVE;
 
+// max linearConversion ensures that if ACEGVAR(advanced_fatigue,anFatigue) is very low, it will still regenerate reserves
 // Calculate a pseudo-perceived fatigue, which is used for effects
 ACEGVAR(advanced_fatigue,aeReservePercentage) = (ACEGVAR(advanced_fatigue,ae1Reserve) / AE1_MAXRESERVE + ACEGVAR(advanced_fatigue,ae2Reserve) / AE2_MAXRESERVE) / 2;
 ACEGVAR(advanced_fatigue,anReservePercentage) = ACEGVAR(advanced_fatigue,anReserve) / AN_MAXRESERVE;
@@ -131,7 +162,7 @@ systemChat format ["---- velocity %1 - respiratoryRate: %2 ----", (vectorMagnitu
 // systemChat format ["---- aePower: %1 ----", _aePathwayPowerFatigued toFixed 1];
 #endif
 
-[ACE_player, _perceivedFatigue, ACEGVAR(advanced_fatigue,anReserve) == 0, _fwdAngle, _sideAngle] call ACEFUNC(advanced_fatigue,handleEffects);
+[ACE_player, _perceivedFatigue, ACEGVAR(advanced_fatigue,anReserve) == 0, _fwdAngle, _sideAngle] call FUNC(handleEffects);
 
 if (ACEGVAR(advanced_fatigue,enableStaminaBarRealized)) then {
     [ACEGVAR(advanced_fatigue,anReserve) / AN_MAXRESERVE] call ACEFUNC(advanced_fatigue,handleStaminaBar);

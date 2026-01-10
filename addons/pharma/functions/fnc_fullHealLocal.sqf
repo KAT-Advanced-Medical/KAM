@@ -84,6 +84,7 @@ _patient setVariable [QGVAR(effectiveCalcium), 1, true];
 _patient setVariable [QGVAR(lastArrhythmia), -1000, true];
 _patient setVariable [QGVAR(prevCalcium), 0, true];
 _patient setVariable [QGVAR(kidneyFailTimer), 0, true];
+_patient setVariable [QGVAR(acidRepo), 1.0, true];
 /// Clear Stamina & weapon sway
 if (ACEGVAR(advanced_fatigue,enabled)) then {
     ["kat_PDF"] call ACEFUNC(advanced_fatigue,removeDutyFactor);
