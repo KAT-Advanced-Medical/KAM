@@ -396,11 +396,11 @@ if (_bvmMode == BVM_MODE_NONE) then {
 
             _unit setVariable [QGVAR(breathingState), 6, true];
         };
-        private _tidalVolume =
+        _tidalVolume =
         (
             GET_KAT_SURFACE_AREA(_unit)
             * (_respiratoryDepth / 10)
-        ) min 1.2 max 0.35;  
+        );  
         _actualVentilation =
             (_tidalVolume * _respiratoryRate)
             * _bronchospasm
