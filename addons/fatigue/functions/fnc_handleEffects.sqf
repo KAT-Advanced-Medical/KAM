@@ -84,7 +84,7 @@ if (!isForcedWalk _unit && _fatigue >= 1) then { // small checks like these are 
 } else {
     if (isForcedWalk _unit && _fatigue < 0.7) then {
         [_unit, "forceWalk", QUOTE(ADDON), false] call ACEFUNC(common,statusEffect_set);
-        [_unit, "blockSprint", QUOTE(ADDON), false] call EFUNC(common,statusEffect_set);
+        [_unit, "blockSprint", QUOTE(ADDON), false] call ACEFUNC(common,statusEffect_set);
     } else {
         // Forward angle is the slope of the terrain, side angle simulates the unevenness/roughness of the terrain
         if (isSprintAllowed _unit && {_fatigue > 0.7 || abs _fwdAngle > 20 || abs _sideAngle > 20}) then {

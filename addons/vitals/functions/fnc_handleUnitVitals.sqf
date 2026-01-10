@@ -232,7 +232,7 @@ if (EGVAR(breathing,enable)) then {
     private _opioidDepression = GET_OPIOID_DEPRESSION(_unit);
     private _anerobicPressure = (DEFAULT_ANEROBIC_EXCHANGE * (6 / (_bloodVolume max 6))) min 1.2;
 
-    _spo2 = [_unit, _heartRate, _anerobicPressure, _bloodGas, _temperature, _baroPressure, _opioidDepression, _aceAnFatigue, _deltaT, _syncValues] call FUNC(handleOxygenFunction);
+    _spo2 = [_unit, _heartRate, _anerobicPressure, _bloodGas, _temperature, _baroPressure, _opioidDepression, _aceAnFatigue, _aceAnReserve, _deltaT, _syncValues] call FUNC(handleOxygenFunction);
 };
 
 private _woundBloodLoss = GET_WOUND_BLEEDING(_unit);

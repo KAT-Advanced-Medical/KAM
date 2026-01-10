@@ -1,3 +1,4 @@
+#define DEBUG_MODE_FULL
 #include "..\script_component.hpp"
 /*
  * Author: Glowbal
@@ -23,7 +24,7 @@ params ["_unit"];
 private _cardiacOutput = [_unit] call EFUNC(vitals,getCardiacOutput);
 private _strokeVolume  = [_unit] call EFUNC(vitals,getStrokeVolume);
 private _heartRate     = GET_HEART_RATE(_unit);
-
+private _exertionSVR = linearConversion [70, 140, _heartRate, 1.0, 0.85, true];
 private _resistance        = _unit getVariable [VAR_PERIPH_RES, DEFAULT_PERIPH_RES];
 private _vasoconstriction  = GET_VASOCONSTRICTION(_unit);
 private _tourniquets       = GET_TOURNIQUETS(_unit);
@@ -58,6 +59,7 @@ private _map =
     (_cardiacOutput
     * BASELINE_SVR
     * (_resistance / 100)
+    * _exertionSVR
     * ((_vasoconstriction max 0.4) min 1.8))
     * (1.07 ^ _countOccluded);
 TRACE_5("BP2", _map, _vasoconstriction, _resistance, BASELINE_SVR, _cardiacOutput);

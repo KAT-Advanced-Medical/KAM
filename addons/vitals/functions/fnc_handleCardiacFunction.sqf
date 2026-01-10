@@ -46,7 +46,7 @@ if IN_CRDC_ARRST(_unit) then {
     #define INTEGRAL_CLAMP 30
     #define MIN_HR 20
     #define MAX_HR 220
-    _metabolicDemand = linearConversion [2200, 0, _aceAnReserve, 0, 1, true];
+    _metabolicDemand = linearConversion [2200, 400, _aceAnReserve, 0, 1, true];
 
     _painLevel = GET_PAIN_PERCEIVED(_unit);
 
@@ -121,7 +121,7 @@ if IN_CRDC_ARRST(_unit) then {
     TRACE_2("CENTRAL_CMD", _centralBias, _modelHR);
 
     private _staminaHRBias =
-        linearConversion [0, 1, _metabolicDemand, 0, 12, true];
+        linearConversion [0, 1, _metabolicDemand, 0, 25, true];
 
     _modelHR = _modelHR + _staminaHRBias;
 

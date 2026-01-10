@@ -1,4 +1,3 @@
-#define DEBUG_MODE_FULL
 #include "..\script_component.hpp"
 /*
  * Author: Mazinski
@@ -24,7 +23,7 @@
  * Public: No
  */
 
-params ["_unit", "_actualHeartRate", "_anerobicPressure", "_bloodGas", "_temperature", "_baroPressure", "_opioidDepression", "_aceAnFatigue", "_deltaT", "_syncValues"];
+params ["_unit", "_actualHeartRate", "_anerobicPressure", "_bloodGas", "_temperature", "_baroPressure", "_opioidDepression", "_aceAnFatigue", "_aceAnReserve", "_deltaT", "_syncValues"];
 
 #define MAXIMUM_RR 35
 #define MINIMUM_VENTILATION 2000
@@ -123,11 +122,12 @@ if (_bvmMode == BVM_MODE_NONE) then {
 
     private _co2Drive = linearConversion [30, 50, _previousCyclePaco2, -1200, 1200, true];
     private _anaerobicDrive = linearConversion [1.0, 1.6, _anerobicPressure, 0, 3000, true];
-
+    private _fatigueDrive = linearConversion [2200, 440, _aceAnReserve, 0, 2400, true];
     _demandVentilation =
         (BASE_MIN_VENT * _coNorm)
         + _co2Drive
-        + _anaerobicDrive;
+        + _anaerobicDrive
+        + _fatigueDrive;
 
     _demandVentilation = _demandVentilation max MINIMUM_VENTILATION;
     if (_paralysis && !_isArrest) then {
@@ -363,16 +363,16 @@ if (_bvmMode == BVM_MODE_NONE) then {
             _unit setVariable [QGVAR(breathingState), 4, true];
         };
     };
-    if (!_patternApplied && (_ph <= 7.3) && (_respFatigue < 1.1)) then {
+    if (!_patternApplied && (_ph <= 7.2) && (_respFatigue < 1.1)) then {
 
         private _kussScale =
-            linearConversion [1.05, 1.2, _anerobicPressure, 0.3, 1.0, true];
+            linearConversion [7.2, 6.8, _ph, 0, 1.0, true];
         _respiratoryRate =
-            linearConversion [0, 1, _kussScale, 18, 32, true];
+            linearConversion [0, 1, _kussScale, 15, 32, true];
 
         _respiratoryDepth =
             _baseRespiratoryDepth
-            * linearConversion [0, 1, _kussScale, 1.8, 3.2, true];
+            * linearConversion [0, 1, _kussScale, 1.5, 3.2, true];
         private _fatigueGain =
             linearConversion [1.5, 3.2, (_respiratoryDepth / DEFAULT_RESPIRATORY_DEPTH), 0.002, 0.01, true]
             * linearConversion [1.0, 1.2, _anerobicPressure, 0.6, 1.0, true];
@@ -478,7 +478,7 @@ if (!_patternApplied) then {
         );
 
         private _targetRR =
-            linearConversion [2500, 14000, _demandVentilation, 10, 28, true];
+            linearConversion [2400, 10500, _demandVentilation, 8, 35, true];
 
         _targetRR = (_targetRR min MAXIMUM_RR) * _respiratoryRateMult;
         _targetRR = _targetRR * (1 - (_opioidDepression * 0.6));
@@ -664,9 +664,12 @@ if (EGVAR(breathing,paco2Active)) then {
         _basalCO2Prod = 0.8;
     };
     _basalCO2Prod = _basal * _cnsScale;
+    private _reserveCO2 =
+    linearConversion [2200, 440, _aceAnReserve, 0, 0.8, true];
     private _co2Prod =
     _basalCO2Prod
-    + ((_anerobicPressure - 1) max 0);
+    + ((_anerobicPressure - 1) max 0)
+    + _reserveCO2;
     _co2Prod = _co2Prod * (1 + (_bvmDyssync * 0.3));
     private _targetPaco2 =
     DEFAULT_PACO2
