@@ -235,7 +235,7 @@ _hrMem =
     + ((_actualHeartRate - _hrMem) * (_deltaT / _hrTau));
 
 _unit setVariable [QGVAR(hrMemory), _hrMem];
-if (_unit getVariable [QGVAR(heartRestart), false]) then {
+if (_unit getVariable [QEGVAR(circulation,heartRestart), false]) then {
     _unit setVariable [QGVAR(hrMemory), 40, true];
     _hrMem = 40;
 };

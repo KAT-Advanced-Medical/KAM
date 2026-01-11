@@ -65,28 +65,60 @@ if ([_medic] call ACEFUNC(common,isMedic)) then {
 _output = format ["%1%2, %3", _breathing ,_breath, _breathRate];
 _output_log = format ["%1%2, %3", _breathing_log, _breath, _breathRate];
 private _breathingState = _patient getVariable [QEGVAR(vitals,breathingState), 0];
-switch (_breathingState) do {
-    case 1: {
-        _breathing_alt = LLSTRING(breathing_isCheyne);
-        _output = format ["%1%2, %3, %4", _breathing ,_breath, _breathRate, _breathing_alt];
-        _height = 3;
-    };
-    case 2: {
-        _breathing_alt = LLSTRING(breathing_isIrreg);
-        _output = format ["%1%2, %3, %4", _breathing ,_breath, _breathRate, _breathing_alt];
-        _height = 3;
-    };
-    case 3: {
-        _breathing_alt = LLSTRING(breathing_isBiots);
-        _output = format ["%1%2, %3, %4", _breathing ,_breath, _breathRate, _breathing_alt];
-        _height = 3;
-    };
-    case 4: {
-        _breathing_alt = LLSTRING(breathing_isAgonal);
-        _output = format ["%1%2, %3, %4", _breathing ,_breath, _breathRate, _breathing_alt];
-        _height = 3;
+if (GVAR(verboseBreathing)) then {
+    switch (_breathingState) do {
+        case 1: {
+            _breathing_alt = LLSTRING(breathing_isCheyne);
+            _output = format ["%1%2, %3, %4", _breathing ,_breath, _breathRate, _breathing_alt];
+            _height = 3;
+        };
+        case 2: {
+            _breathing_alt = LLSTRING(breathing_isIrreg);
+            _output = format ["%1%2, %3, %4", _breathing ,_breath, _breathRate, _breathing_alt];
+            _height = 3;
+        };
+        case 3: {
+            _breathing_alt = LLSTRING(breathing_isBiots);
+            _output = format ["%1%2, %3, %4", _breathing ,_breath, _breathRate, _breathing_alt];
+            _height = 3;
+        };
+        case 4: {
+            _breathing_alt = LLSTRING(breathing_isAgonal);
+            _output = format ["%1%2, %3, %4", _breathing ,_breath, _breathRate, _breathing_alt];
+            _height = 3;
+        };
+        case 5: {
+            _breathing_alt = LLSTRING(breathing_isKussmaul);
+            _output = format ["%1%2, %3, %4", _breathing ,_breath, _breathRate, _breathing_alt];
+            _height = 3;
+        };
+        case 6: {
+            _breathing_alt = LLSTRING(breathing_isKussmaulFailure);
+            _output = format ["%1%2, %3, %4", _breathing ,_breath, _breathRate, _breathing_alt];
+            _height = 3;
+        };
+        case 7: {
+            _breathing_alt = LLSTRING(breathing_isRespFailure1);
+            _output = format ["%1%2, %3, %4", _breathing ,_breath, _breathRate, _breathing_alt];
+            _height = 3;
+        };
+        case 8: {
+            _breathing_alt = LLSTRING(breathing_isRespFailure2);
+            _output = format ["%1%2, %3, %4", _breathing ,_breath, _breathRate, _breathing_alt];
+            _height = 3;
+        };
+        case 9: {
+            _breathing_alt = LLSTRING(breathing_isRespFailure3);
+            _output = format ["%1%2, %3, %4", _breathing ,_breath, _breathRate, _breathing_alt];
+            _height = 3;
+        };
+        default {
+            _output = format ["%1%2, %3", _breathing ,_breath, _breathRate];
+            _height = 3;
+        }
     };
 };
+
 
 private _isbreathing = true;
 private _paralysis = _patient getVariable [QGVAR(paralysis), 0] > 0.1;
