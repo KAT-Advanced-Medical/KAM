@@ -114,10 +114,10 @@ if (GVAR(kidneyAction)) then {
         private _depth = _unit getVariable [VAR_RESPIRATORY_DEPTH, 0];
         private _normRR    = 14;
         private _normDepth = DEFAULT_RESPIRATORY_DEPTH;
-        private _acidRepo    = 1;
+        private _acidRepo = _unit getVariable [QGVAR(acidRepo), 1.0];
         private _bloodVolume = GET_BLOOD_VOLUME_LITERS(_unit);
         private _anerobicPressure = (DEFAULT_ANEROBIC_EXCHANGE * (6 / (_bloodVolume max 6))) min 1.2;
-        private _ventRatio =((_rr max 0) * (_depth max 0)) / (_normRR * _normDepth);
+        private _ventRatio = ((_rr max 0) * (_depth max 0)) / (_normRR * _normDepth);
         if (GET_PH(_unit) < 7.3) then {
             if (_ventRatio > 1.1) then {
         
@@ -136,7 +136,7 @@ if (GVAR(kidneyAction)) then {
                 * _ventEff
                 * _bufferLimit;
             private _sign = if (_externalPh == 0) then {0} else {_externalPh / abs _externalPh};
-            private _acidRepo = _unit getVariable [QGVAR(acidRepo), 1.0];
+            
             
             private _repoDrain =
                 linearConversion [1.0, 2.5, _ventRatio, 0.0, 0.0125, true]
