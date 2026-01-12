@@ -3572,5 +3572,32 @@
         <Key ID="STR_KAT_Breathing_breathing_isAgonal">
             <English>Patient's breathing is agonal and slow</English>
         </Key>
+        <Key ID="STR_KAT_Breathing_breathing_iskussmaulfailure">
+            <English>Patient's breathing shows signs of Kussmaul's and is failing</English>
+        </Key>
+        <Key ID="STR_KAT_Breathing_breathing_iskussmaul">
+            <English>Patient's breathing shows signs of Kussmaul's</English>
+        </Key>
+        <Key ID="STR_KAT_Breathing_breathing_isrespfailure1">
+            <English>Patient's breathing is in the start of respiratory failure</English>
+        </Key>
+        <Key ID="STR_KAT_Breathing_breathing_isrespfailure2">
+            <English>Patient's breathing is in established respiratory failure</English>
+        </Key>
+        <Key ID="STR_KAT_Breathing_breathing_isrespfailure3">
+            <English>Patient's breathing is in complete respiratory failure</English>
+        </Key>
+        <Key ID="STR_KAT_Breathing_SETTING_enableVerboseBreathing">
+            <English>Enable Verbose Check Breathing</English>
+        </Key>
+        <Key ID="STR_KAT_Breathing_SETTING_enableVerboseBreathing_DESC">
+            <English>Whether or not Check Breathing will tell you what the breathing state is exactly</English>
+        </Key>
+        <Key ID="STR_KAT_Breathing_medLvl_VerboseBreathing">
+            <English>Verbose Check Breathing Med Level</English>
+        </Key>
+        <Key ID="STR_KAT_Breathing_medLvl_VerboseBreathing_Desc">
+            <English>Med level for check breathing to tell you what the breathing state is</English>
+        </Key>
     </Package>
 </Project>

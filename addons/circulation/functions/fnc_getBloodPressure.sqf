@@ -1,4 +1,3 @@
-#define DEBUG_MODE_FULL
 #include "..\script_component.hpp"
 /*
  * Author: Glowbal
@@ -61,7 +60,7 @@ private _map =
     * (_resistance / 100)
     * _exertionSVR
     * ((_vasoconstriction max 0.4) min 1.8))
-    * (1.07 ^ _countOccluded);
+    * (1.035 ^ _countOccluded);
 TRACE_5("BP2", _map, _vasoconstriction, _resistance, BASELINE_SVR, _cardiacOutput);
 private _cushing = [_unit] call EFUNC(vitals,getCushings);
 if (_cushing > 0) then {

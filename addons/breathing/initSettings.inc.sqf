@@ -49,6 +49,24 @@
     true
 ] call CBA_fnc_addSetting;
 
+[
+    QGVAR(enableVerboseBreathing),
+    "CHECKBOX",
+    [LLSTRING(SETTING_enableVerboseBreathing),LLSTRING(SETTING_enableVerboseBreathing_DESC)],
+    [CBA_SETTINGS_CAT, ELSTRING(GUI,SubCategory_Basic)],
+    [true],
+    true
+] call CBA_fnc_addSetting;
+
+[
+    QGVAR(medLvl_VerboseBreathing),
+    "LIST",
+    [LLSTRING(medLvl_VerboseBreathing), LLSTRING(medLvl_VerboseBreathing_Desc)],
+    [CBA_SETTINGS_CAT, ELSTRING(GUI,SubCategory_Basic)],
+    [[0, 1, 2], ["STR_ACE_Medical_Treatment_Anyone", "STR_ACE_Medical_Treatment_Medics", "STR_ACE_Medical_Treatment_Doctors"], 0],
+    true
+] call CBA_fnc_addSetting;
+
 // Lethal SpO2 value
 [
     QGVAR(SpO2_dieValue),
