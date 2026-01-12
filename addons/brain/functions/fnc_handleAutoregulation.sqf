@@ -39,7 +39,7 @@ private _newPFH = [{
     
     private _mapHighTicks = _unit getVariable [QGVAR(mapHighTicks), 0];
     private _autoregFatigue = _unit getVariable [QGVAR(autoregFatigue), 0];
-    if (_map > 120) then {
+    if (_map > 130) then {
         _mapHighTicks = _mapHighTicks + 1;
     } else {
         _mapHighTicks = (_mapHighTicks - 1) max 0;
@@ -80,7 +80,7 @@ private _newPFH = [{
     _unit setVariable [QGVAR(CPR),_CPR,true];
     private _ICP_delta = 0;
     if (_mapHighTicks >= 25) then {
-        private _mapOver = _map - 120;
+        private _mapOver = _map - 130;
         private _durationFactor = ((_mapHighTicks - 25) + 1);
         _ICP_delta = (_mapOver * 0.02) * (_durationFactor);
         private _fatigueIcpAmplify = 1 + ((_autoregFatigue / 100) * 0.25);

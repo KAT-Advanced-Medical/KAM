@@ -128,7 +128,7 @@
             <Russian>Изменяет время выпадения IV/IO капельниц у пациента</Russian>
             <Portuguese>Altera o tempo em que IVs/IOs caem de um paciente</Portuguese>
             <Finnish>Muuttaa aikaa, jolloin IVs/IO</Finnish>
-            <Dutch>Veranderd de benodigde uitvaltijd voor IV's/IO's </Dutch>
+            <Dutch>Veranderd de benodigde uitvaltijd voor IV's/IO's</Dutch>
         </Key>
         <Key ID="STR_KAT_Pharma_IV_REUSE">
             <English>Sets if IV/IO needles are reusable</English>
@@ -817,7 +817,7 @@
             <Italian>Hai colpito la guancia, ma il paziente dorme ancora!</Italian>
             <Russian>Вы уларили по щеке, но больной еще спит!</Russian>
             <Japanese>あなたは頬を叩いたが、 患者はまだ眠っている!</Japanese>
-            <Portuguese>Após a bofetada, o paciente continua desacordado! </Portuguese>
+            <Portuguese>Após a bofetada, o paciente continua desacordado!</Portuguese>
             <Finnish>Lyöt poskelle, mutta potilas nukkuu edelleen!</Finnish>
             <Dutch>Je hebt de wang geraakt, maar de patiënt slaapt nog!</Dutch>
         </Key>
@@ -870,7 +870,7 @@
             <Turkish>Kullanılıyor</Turkish>
             <Italian>Iniettando</Italian>
             <Japanese>注入中</Japanese>
-            <Russian>Ввести </Russian>
+            <Russian>Ввести</Russian>
             <Portuguese>Administrando</Portuguese>
             <Finnish>Työntää</Finnish>
             <Dutch>Wordt geïnjecteerd</Dutch>
@@ -1211,7 +1211,7 @@
             <Japanese>デフォルトではfalseです。trueの場合、薬液注射を行う前にIV/IOの刺入が必要になります。 \nfalseの場合は薬品だけで投与可能になります。</Japanese>
             <French>Faux par défaut. Si vrai, il sera nécessaire d'insérer une IV/IO avant de pouvoir donner des médicaments à quelqu'un. \nSi faux, ils pourront être donnés sans</French>
             <Chinesesimp>默认假。 如果为真，您将需要先建立 IV/IO, 然后才能给某人注射药。 \n如果为假, 您可以在没有IV/IO的情况下注射药物他们。</Chinesesimp>
-            <Italian>Falso nel default. Se vero/true, dovrai prima inserire un IV/IO per poter effettuare alcune medicazioni. \nSe falso, potrai dargliele senza IV/IO. </Italian>
+            <Italian>Falso nel default. Se vero/true, dovrai prima inserire un IV/IO per poter effettuare alcune medicazioni. \nSe falso, potrai dargliele senza IV/IO.</Italian>
             <Czech>V základu vypnuto. Pokud zapnuto, budete potřebovat zavést IV/IO jako první, než budete moct někomu dávat léčiva \nPokud vypnuto, tak je můžete dávat bez nich.</Czech>
             <Polish>Domyślnie wyłączone. Jeśli włączone leki będą wymagać założonego IV/IO \nWyłączone pozwoli podać leki bez tego.</Polish>
             <Korean>기본값은 false입니다. true일 경우 누군가에게 약을 주입하기 전에 먼저 주사를 꽂아야 합니다. \nfalse일 경우 주사없이 투약이 가능합니다.</Korean>
@@ -1717,7 +1717,7 @@
             <English>Push Nalbuphine</English>
             <Chinesesimp>推注纳布啡</Chinesesimp>
             <Czech>Aplikovat Nalbufin</Czech>
-            <Italian>Iniettare Nalbufina (Nubain) </Italian>
+            <Italian>Iniettare Nalbufina (Nubain)</Italian>
             <French>Administrer de la nalbuphine</French>
             <Polish>Wstrzyknij Nalbufinę</Polish>
             <Korean>날부핀 투여</Korean>
@@ -1842,7 +1842,7 @@
             <Italian>Tempo di trattamento per il Naloxone</Italian>
             <French>Temps de traitement de la Naloxone</French>
             <Korean>날록손으로 치료하는 시간</Korean>
-            <German>Anwendungszeit für Naloxon </German>
+            <German>Anwendungszeit für Naloxon</German>
             <Japanese>ナロキソンの所要時間</Japanese>
             <Spanish>Tiempo para uso de la Naloxona</Spanish>
             <Portuguese>Tempo de uso de Naloxona</Portuguese>
@@ -2340,7 +2340,7 @@
             <Italian>Livello medico richiesto per Nalbufina (nubain)</Italian>
             <French>Niveau médical requis pour la Nalbuphine</French>
             <Korean>날부핀을 사용하는 데 필요한 의료 레벨 수준 변경</Korean>
-            <German>Benötigter medizinischer Grad, für die Gabe von Nalbuphin </German>
+            <German>Benötigter medizinischer Grad, für die Gabe von Nalbuphin</German>
             <Japanese>ナルブフィンの許可</Japanese>
             <Spanish>Nivel médico requerido para la Nalbufina</Spanish>
             <Portuguese>Nível médico exigido para uso de Nalbufina</Portuguese>
@@ -2501,7 +2501,7 @@
         </Key>
         <Key ID="STR_KAT_Pharma_SubCategory_Pervitin">
             <English>Pervitin Settings</English>
-            <German>Pervitin Einstellungen </German>
+            <German>Pervitin Einstellungen</German>
             <French>Paramètres de la Pervitine</French>
             <Japanese>ペルビチンの設定</Japanese>
             <Korean>페르피틴 설정</Korean>
@@ -3072,7 +3072,7 @@
             <Japanese>身体は元の落ち着きを取り戻した</Japanese>
             <Italian>Inizi a sentirti di nuovo normale</Italian>
             <Portuguese>Você começa a se sentir normal novamente</Portuguese>
-            <Polish>Zaczynasz czuć się normalnie </Polish>
+            <Polish>Zaczynasz czuć się normalnie</Polish>
             <Spanish>Comienzas a sentirte bien de nuevo</Spanish>
             <Czech>Opět se začínáš cítit normálně</Czech>
             <Finnish>Alkaa taas tuntua normaalilta</Finnish>
@@ -3129,7 +3129,7 @@
             <Czech>Začíná se ti vyjasňovat a přestáváš sebou škubat...</Czech>
             <Finnish>Pääsi alkaa selkiytyä ja lopetat nykimisen</Finnish>
             <Russian>Твоя голова начинает проясняться, и ты перестаешь дергаться...</Russian>
-            <Dutch>Je hoofd begint zich op te helderen, en je stopt met trillen </Dutch>
+            <Dutch>Je hoofd begint zich op te helderen, en je stopt met trillen</Dutch>
         </Key>
         <Key ID="STR_KAT_Pharma_Caffeine_Bottle_Display">
             <English>Caffeine bottle</English>
@@ -3531,7 +3531,7 @@
         <Key ID="STR_KAT_Pharma_SETTING_Coagulation_Factor_Regenerate_Time_DESC">
             <English>The time between coagulation factor regeneration checks. Will add +1 factor on successful check. Uses Setting: "Coagulation Factors" as limit.\n Note: If the limit is exceeded, this time will be used and then remove -1 factor until Setting: "Coagulation Factors" is reached. Tipp: TXA or EACA stop losing factors\nRequirements for regeneration to work:\n- No wound being clotted in the last cycle check from this setting\n- Setting: "Require Heart Rate"\n- Setting: "Required Blood Volume"</English>
             <Japanese>凝固因子再生チェックの間隔。チェックに成功すると因子が+1されます。設定 "凝固因子の限界値" を限界値として使用します。 \n注:制限を超えた場合、この時間が経過した後、設定"凝固因子の限界値"に達するまで因子を1つ取り除きます。 \nヒント: TXAまたはEACAは因子の消失を止めます。\n因子再生が機能するための条件: \n-ここで設定されたサイクル時間の最後のチェックで傷口が凝血していないこと \n-設定: "心拍を要求する" \n-設定: "血液量を要求する"</Japanese>
-            <Spanish>Tiempo que transcurre entre cada revisión de la regeneración del factor de coagulación. Añade +1 factor si la revisión ha tenido éxito. Utiliza el ajuste "Factores de Coagulación" como límite.\n Nota: Si el limite es excedido, el tiempo será usado para retirar -1 factor hasta que el ajuste "Factor de Coagulación" se alcance. Consejo: ATX o EACA dejan de perder factores.\n Requisitos para que la regeneración funcione:\n- Ninguna herida coagulada en la última revisión del ciclo de este ajuste.\n- Ajuste: "Requiere Ritmo Cardíaco"\n- Ajuste: "Volumen de Sangre requerido" </Spanish>
+            <Spanish>Tiempo que transcurre entre cada revisión de la regeneración del factor de coagulación. Añade +1 factor si la revisión ha tenido éxito. Utiliza el ajuste "Factores de Coagulación" como límite.\n Nota: Si el limite es excedido, el tiempo será usado para retirar -1 factor hasta que el ajuste "Factor de Coagulación" se alcance. Consejo: ATX o EACA dejan de perder factores.\n Requisitos para que la regeneración funcione:\n- Ninguna herida coagulada en la última revisión del ciclo de este ajuste.\n- Ajuste: "Requiere Ritmo Cardíaco"\n- Ajuste: "Volumen de Sangre requerido"</Spanish>
             <Dutch>De tijd tussen stollingsfactor hergeneratie checks. Geeft +1 factor op een succesvolle check. Gebruikt instelling: "Stollingsfactoren" als limiet. \n Wees alert: als het limiet overschreden is, dan zal na deze check 1 factor verwijderd worden (-1 factoren) tot het limiet weer bereikt is. Tip: TXA en EACA stoppen het verlies van factoren.\nVereisten voor hergeneratie:\n- Geen wond gestold in de laaste cyclus van deze instelling,\n- Instelling: "Vereist hartslag"\n- "Benodigd bloedvolume"</Dutch>
             <French>Le temps entre les vériofications de régénération des facteurs de coagulation. Ajoute +1 facteur en cas de vérification réussie. Utilise le paramètres : "Facteurs de coagulation" comme limite. \nRemarque : si la limite est dépassée, ce temps sera utilisé, puis -1 facteur sera retiré jusqu'à ce que le paramètre : "Facteurs de coagulation" soit atteint. Conseil :TXA ou EACA arrêtent la perte de facteurs.\nConditions nécessaires pour que la régénération fonctionne :\n- Aucune plaie en cours de coagulation au cours du dernier cycle de vérification de ce paramètres.\n- Paramètre : "Fréquence cardiaque requise"\n- Paramètre : "Volume sanguin requis"</French>
             <Italian>Il tempo tra i controlli di rigenerazione dei fattori di coagulazione. Aggiunge +1 fattore in caso di controllo riuscito. Utilizza l'impostazione: "Fattori di coagulazione" come limite.\nNota: se il limite viene superato, questo tempo verrà utilizzato e poi verrà rimosso -1 fattore fino a quando non si raggiunge l'impostazione: "Fattori di coagulazione". Suggerimento: TXA o EACA fermano la perdita di fattori.\nRequisiti affinché la rigenerazione funzioni:\n- Nessuna ferita in corso di coagulazione nell'ultimo ciclo di verifica di questa impostazione.\n- Impostazione: "Frequenza cardiaca richiesta"\n- Impostazione: "Volume sanguigno richiesto"</Italian>
@@ -3661,7 +3661,7 @@
             <Japanese>有効にすると、各部位が同時に凝固処理されます。\nつまり、頭部と胴体に傷がある場合、同じ凝固サイクルで両方が治癒されます。</Japanese>
             <Spanish>Si se permite, cada parte del cuerpo se tratará simultáneamente mediante coagulación. \nEs decir, si tiene una herida en la cabeza y otra en el torso, ambas se tratarán en el mismo ciclo de coagulación.</Spanish>
             <Dutch>Als dit ingeschakeld is, zal elk lichaamsdeel tegelijkertijd behandeld worden door coagulatie. \nWat betekent dat als je een wond aan je arm en been hebt, dat deze in dezelfde coagulatiecyclus behandeld worden</Dutch>
-            <French>Si activé, chaque membre sera affecté simultanément par la coagulation.\nCela signifie que si une plaie est présente sur la tête et le torse, elles seront toutes deux traitées lors du même cycle de coagulation. </French>
+            <French>Si activé, chaque membre sera affecté simultanément par la coagulation.\nCela signifie que si une plaie est présente sur la tête et le torse, elles seront toutes deux traitées lors du même cycle de coagulation.</French>
             <Italian>Se abilitato, ogni parte del corpo sarà trattata simultaneamente dalla coagulazione.\nCiò significa che se hai una ferita sulla testa e sul corpo, entrambe verranno trattate nello stesso ciclo di coagulazione.</Italian>
         </Key>
         <Key ID="STR_KAT_Pharma_SETTING_coagulation_Factor_Limit">
@@ -3853,10 +3853,10 @@
             <Italian>Misura PT/INR</Italian>
         </Key>
         <Key ID="STR_KAT_Pharma_CheckCoag_DisplayNameProgress">
-            <English>Taking Blood Sample, </English>
+            <English>Taking Blood Sample,</English>
             <Japanese>血液サンプルを取得、</Japanese>
-            <Spanish>Tomar muestra de sangre, </Spanish>
-            <Portuguese>Coletando amostra sanguínea, </Portuguese>
+            <Spanish>Tomar muestra de sangre,</Spanish>
+            <Portuguese>Coletando amostra sanguínea,</Portuguese>
             <Dutch>Bloedstaal wordt genomen</Dutch>
             <French>Prélè¨vement de sang,</French>
             <Italian>Prelievo campione di sangue,</Italian>

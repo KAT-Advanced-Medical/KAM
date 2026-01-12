@@ -29,16 +29,6 @@ private _actualHeartRate = _hrTarget;
 private _painLevel = 0;
 private _shockClass = "NONE";
 private _metabolicDemand = 0;
-// ================= INPUT TRACE =================
-TRACE_4(
-    "HR_INPUT",
-    GET_HEART_RATE(_unit),
-    _map,
-    _icp,
-    _deltaT
-);
-
-// ================= CARDIAC ARREST =================
 if IN_CRDC_ARRST(_unit) then {
     if (alive (_unit getVariable [QACEGVAR(medical,CPR_provider), objNull])) then {
         if (_actualHeartRate == 0) then { _syncValue = true };
@@ -56,7 +46,7 @@ if IN_CRDC_ARRST(_unit) then {
     #define INTEGRAL_CLAMP 30
     #define MIN_HR 20
     #define MAX_HR 220
-    _metabolicDemand = linearConversion [2200, 0, _aceAnReserve, 0, 1, true];
+    _metabolicDemand = linearConversion [2200, 400, _aceAnReserve, 0, 1, true];
 
     _painLevel = GET_PAIN_PERCEIVED(_unit);
 
@@ -66,7 +56,6 @@ if IN_CRDC_ARRST(_unit) then {
         - (10 * _painLevel)
         - (_aceAnFatigue * 40);
 
-    // ================= SV MODEL =================
     private _baselineSV = 0.0810542;
     private _strokeVolume = [_unit] call FUNC(getStrokeVolume);
 
@@ -87,22 +76,18 @@ if IN_CRDC_ARRST(_unit) then {
         _svTau,
         _baselineSV
     );
-    // ================= BAROREFLEX CORE =================
     private _mapError = (_mapSetpoint) - _map;
     if (abs _mapError < MAP_DEADBAND) then { _mapError = 0 };
 
     private _mapIntegral =
         _unit getVariable [QGVAR(mapIntegral), 0];
 
-    // --- Integral update ---
     _mapIntegral = _mapIntegral + (_mapError * _deltaT);
     
-    // --- Integral leak near setpoint ---
     if (abs _mapError < MAP_DEADBAND) then {
         _mapIntegral = _mapIntegral * 0.85;
     };
     
-    // Clamp
     _mapIntegral = (_mapIntegral max -INTEGRAL_CLAMP) min INTEGRAL_CLAMP;
     _unit setVariable [QGVAR(mapIntegral), _mapIntegral];
 
@@ -121,7 +106,6 @@ if IN_CRDC_ARRST(_unit) then {
         BARO_KP,
         BARO_KI
     );
-    // --- Central autonomic command (resting bias) ---
     private _centralBias = 0;
     
     if (
@@ -129,7 +113,6 @@ if IN_CRDC_ARRST(_unit) then {
         && _aceAnFatigue < 0.05
         && abs (_effectiveSV - _baselineSV) < 0.003
     ) then {
-        // Suppress baroreflex when near resting conditions
         _centralBias = linearConversion [90, 100, _map, 0, 6, true];
     };
     
@@ -137,31 +120,25 @@ if IN_CRDC_ARRST(_unit) then {
     
     TRACE_2("CENTRAL_CMD", _centralBias, _modelHR);
 
-    // ================= METABOLIC CENTRAL COMMAND =================
     private _staminaHRBias =
-        linearConversion [0, 1, _metabolicDemand, 0, 12, true];
+        linearConversion [0, 1, _metabolicDemand, 0, 25, true];
 
-    // Central command bypasses baroreflex
     _modelHR = _modelHR + _staminaHRBias;
 
     TRACE_2("STAMINA_CMD", _metabolicDemand, _staminaHRBias);
 
-    // ================= VAGAL =================
     private _vagalTone = 0;
 
-    // Pain vagal
     if (_painLevel > 0.7) then {
         _vagalTone = linearConversion [0.7, 1.0, _painLevel, 0, 0.35, true];
     };
 
-    // Hypoxia vagal
     private _spo2 = GET_KAT_SPO2(_unit);
     if (_spo2 < 85) then {
         _vagalTone = _vagalTone max
             linearConversion [85, 60, _spo2, 0, 0.5, true];
     };
 
-    // --- Stamina suppresses vagal tone ---
     _vagalTone =
         _vagalTone
         * linearConversion [0, 1, _metabolicDemand, 1, 0.4, true];
@@ -169,7 +146,6 @@ if IN_CRDC_ARRST(_unit) then {
     TRACE_3("VAGAL", _painLevel, _spo2, _vagalTone);
 
     _modelHR = _modelHR * (1 - _vagalTone);
-    // ================= SHOCK =================
     _shockClass = "NONE";
     if (_effectiveSV < 0.06 && _map < 70) then { _shockClass = "COMPENSATED" };
     if (_effectiveSV < 0.04 && _map < 60) then { _shockClass = "DECOMPENSATED" };
@@ -191,10 +167,8 @@ if IN_CRDC_ARRST(_unit) then {
 
     _modelHR = (_modelHR max MIN_HR) min MAX_HR;
 
-    // ================= SA NODE =================
     private _hrDelta = _modelHR - _lastHR;
 
-    // Exertion accelerates HR response
     private _rate =
         (1.2 * _deltaT)
         * linearConversion [0, 1, _metabolicDemand, 1, 1.6, true];
@@ -215,30 +189,6 @@ if IN_CRDC_ARRST(_unit) then {
         _actualHeartRate =
             _lastHR + ((_hrDelta max -_rate) min _rate);
     };
-
-    // ================= REST LOCK =================
-   if (
-        abs (_map - _mapSetpoint) < 2
-        && abs (_effectiveSV - _baselineSV) < 0.003
-        && _painLevel < 0.05
-        && _aceAnFatigue < 0.05
-    ) then {
-        _actualHeartRate = _defaultHR;
-    
-        // Hard reset control states
-        _mapIntegral = 0;
-        _unit setVariable [QGVAR(mapIntegral), 0];
-    
-        _unit setVariable [QGVAR(hrMemory), _defaultHR];
-    
-        TRACE_1("REST_LOCK_HARD", _actualHeartRate);
-    
-        // Skip smoothing entirely
-        _unit setVariable [VAR_HEART_RATE, _actualHeartRate, _syncValue];
-        _actualHeartRate
-    };
-
-    // ================= MODIFIERS =================
     _actualHeartRate =
         _actualHeartRate
         + _hrTargetAdjustment
@@ -247,36 +197,29 @@ if IN_CRDC_ARRST(_unit) then {
 
     _actualHeartRate = (_actualHeartRate max MIN_HR) min MAX_HR;
 };
-// ================= HR SMOOTHING =================
 private _hrMem =
     _unit getVariable [QGVAR(hrMemory), _actualHeartRate];
 
-// Time constant (seconds)
 private _hrTau = 3.5;
 
 _hrTau =
     _hrTau
     * linearConversion [0, 1, _metabolicDemand, 1, 1.4, true];
 
-// Faster response in shock or pain
 if (_shockClass != "NONE" || _painLevel > 0.4) then {
     _hrTau = 1.8;
 };
 
-// First-order low-pass filter
 _hrMem =
     _hrMem
     + ((_actualHeartRate - _hrMem) * (_deltaT / _hrTau));
 
 _unit setVariable [QGVAR(hrMemory), _hrMem];
-if (_unit getVariable [QGVAR(heartRestart), false]) then {
+if (_unit getVariable [QEGVAR(circulation,heartRestart), false]) then {
     _unit setVariable [QGVAR(hrMemory), 40, true];
     _hrMem = 40;
 };
-
-// Replace output
 _actualHeartRate = _hrMem;
-// ================= FINAL TRACE =================
 TRACE_3(
     "HR_FINAL",
     _actualHeartRate,

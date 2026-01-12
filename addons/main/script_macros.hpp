@@ -149,7 +149,9 @@
 #define FRACTURE_DAMAGE_THRESHOLD ACEGVAR(medical,const_fractureDamageThreshold)
 
 // Minimum cardiac output
+#ifdef CARDIAC_OUTPUT_MIN
 #undef CARDIAC_OUTPUT_MIN
+#endif
 #define CARDIAC_OUTPUT_MIN ACEGVAR(medical,const_minCardiacOutput)
 
 //We have to undef them before redefining
@@ -549,12 +551,27 @@
 #define INTERNAL_BLEEDING_RATE(unit,index) ([unit, index] call EFUNC(hitpoints,internalBleedingRate))
 #define PART_BLEEDING_RATE(unit,index) ([unit, index] call EFUNC(hitpoints,partBleedingRate))
 
+#ifdef PRIORITY_HEAD
 #undef PRIORITY_HEAD
+#endif
+#ifdef PRIORITY_BODY
 #undef PRIORITY_BODY
+#endif
+#ifdef PRIORITY_LEFT_ARM
 #undef PRIORITY_LEFT_ARM
+#endif
+#ifdef PRIORITY_RIGHT_ARM
 #undef PRIORITY_RIGHT_ARM
+#endif
+#ifdef PRIORITY_LEFT_LEG
 #undef PRIORITY_LEFT_LEG
+#endif
+#ifdef PRIORITY_RIGHT_LEG
 #undef PRIORITY_RIGHT_LEG
+#endif
+
+
+
 
 #define PRIORITY_HEAD       4
 #define PRIORITY_NECK       3
@@ -568,8 +585,9 @@
 #define PRIORITY_RIGHT_LEG  (1 + random 1)
 #define PRIORITY_UPPER_LEFT_LEG   (1 + random 1)
 #define PRIORITY_UPPER_RIGHT_LEG  (1 + random 1)
-
+#ifdef ADD_ACE_HITPOINTS
 #undef ADD_ACE_HITPOINTS
+#endif
 #define ADD_ACE_HITPOINTS\
     class HitLeftArm: HitHands {\
         material = -1;\

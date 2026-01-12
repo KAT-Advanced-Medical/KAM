@@ -837,10 +837,10 @@ class ACE_ADDON(Medical_Treatment) {
             hrIncreaseLow[]    = {10, 20};
             hrIncreaseNormal[] = {8, 20};
             hrIncreaseHigh[]   = {5, 15};
-            timeInSystem = 120;
+            timeInSystem = 60;
             timeTillMaxEffect = 5;
             dose = 1;
-            alphaFactor = -0.08;
+            alphaFactor = -0.04;
             onOverDose = "";
             maximumEffectiveDose = 40;
         };
@@ -849,10 +849,10 @@ class ACE_ADDON(Medical_Treatment) {
             hrIncreaseLow[]    = {5, 15};
             hrIncreaseNormal[] = {5, 15};
             hrIncreaseHigh[]   = {3, 10};
-            timeInSystem = 180;
+            timeInSystem = 240;
             timeTillMaxEffect = 15;
             dose = 1;
-            alphaFactor = -0.04;
+            alphaFactor = -0.02;
             onOverDose = "";
             maximumEffectiveDose = 40;
         };
@@ -864,7 +864,7 @@ class ACE_ADDON(Medical_Treatment) {
             timeInSystem = 120;
             timeTillMaxEffect = 10;
             dose = 1;
-            alphaFactor = -0.05;
+            alphaFactor = 0.06;
             onOverDose = "";
             maximumEffectiveDose = 40;
         };

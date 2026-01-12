@@ -19,7 +19,7 @@
  */
 
 params ["_medic", "_patient","_classname", "_usedItem", ["_requireClear", true]];
-private _occlusion = ((_patient getVariable [QGVAR(occlusion), [0, 0, 0]]) findIf { _x > 3 }) != -1;
+private _occlusion = ((_patient getVariable [QGVAR(occlusion), [0, 0, 0]]) findIf { _x > 4 }) != -1;
 private _obstruction = ((_patient getVariable [QGVAR(obstruction), [0, 0, 0]]) findIf { _x != 0 }) != -1;
 
 if ((_occlusion || (_obstruction && !(_patient getVariable [QGVAR(overstretch), false])) ) && !(_classname in ["NPA"])) exitWith {

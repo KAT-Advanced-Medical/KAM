@@ -120,6 +120,42 @@ if (_ivMenuShow) then {
             ctrlSetText [_valueIDC, (_activeFlow toFixed 1)];
             ctrlSetText [_rateIDC, (_activeRate toFixed 1)];
         };
+        case (_activeIV == 10): {
+            ctrlShow [_coverIDC, false];
+            ctrlShow [_titleIDC, true];
+            ctrlShow [_typeIDC, true];
+            ctrlShow [_valueIDC, true];
+            ctrlShow [_rateIDC, true];
+            _buttonIDCArray apply {ctrlShow [_x, true]};
+            _buttonIDCArray apply {ctrlEnable [_x, true]};
+            ctrlSetText [_typeIDC, "16g"];
+            ctrlSetText [_valueIDC, (_activeFlow toFixed 1)];
+            ctrlSetText [_rateIDC, (_activeRate toFixed 1)];
+        };
+        case (_activeIV == 11): {
+            ctrlShow [_coverIDC, false];
+            ctrlShow [_titleIDC, true];
+            ctrlShow [_typeIDC, true];
+            ctrlShow [_valueIDC, true];
+            ctrlShow [_rateIDC, true];
+            _buttonIDCArray apply {ctrlShow [_x, true]};
+            _buttonIDCArray apply {ctrlEnable [_x, true]};
+            ctrlSetText [_typeIDC, "14g"];
+            ctrlSetText [_valueIDC, (_activeFlow toFixed 1)];
+            ctrlSetText [_rateIDC, (_activeRate toFixed 1)];
+        };
+        case (_activeIV == 12): {
+            ctrlShow [_coverIDC, false];
+            ctrlShow [_titleIDC, true];
+            ctrlShow [_typeIDC, true];
+            ctrlShow [_valueIDC, true];
+            ctrlShow [_rateIDC, true];
+            _buttonIDCArray apply {ctrlShow [_x, true]};
+            _buttonIDCArray apply {ctrlEnable [_x, true]};
+            ctrlSetText [_typeIDC, "20g"];
+            ctrlSetText [_valueIDC, (_activeFlow toFixed 1)];
+            ctrlSetText [_rateIDC, (_activeRate toFixed 1)];
+        };
         case (_activeIV == 13): {
             ctrlShow [_coverIDC, false];
             ctrlShow [_titleIDC, true];

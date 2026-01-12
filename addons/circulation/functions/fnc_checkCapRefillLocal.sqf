@@ -21,10 +21,10 @@ params ["_medic", "_patient", "_bodyPart"];
 private _bodyPartN = ALL_BODY_PARTS find _bodyPart;
 private _isOccluded = [_patient,_bodyPartN] call EFUNC(pharma,occlusionCheck);
 private _isDamaged = [_patient,_bodyPartN] call EFUNC(hitpoints,damageCheck);
-
+private _oxygenDelivery = _patient getVariable [QGVAR(oxygenDelivery), 1];
 private _capRefillOutput = LSTRING(Check_capRefill_Output_Normal);
 private _logCapRefillOutput = LSTRING(Check_capRefill_Output_Normal_log);
-private _cardiacOutput = _patient call EFUNC(vitals,getCardiacOutput);
+private _cardiacOutput = ((_patient call EFUNC(vitals,getCardiacOutput)) * _oxygenDelivery);
 if (_isOccluded || _isDamaged) then {
     _capRefillOutput = LSTRING(Check_capRefill_Output_NoRefill);
     _logCapRefillOutput = LSTRING(Check_capRefill_Output_NoRefill_log);

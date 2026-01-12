@@ -212,3 +212,20 @@
 #define VAR_SPO2              QEGVAR(medical,spo2)
 #define DEFAULT_SPO2 97
 #define VAR_OXYGEN_DEMAND     QEGVAR(medical,oxygenDemand)
+
+#define PRIORITY_HEAD       3
+#define PRIORITY_BODY       4
+#define PRIORITY_LEFT_ARM   (1 + random 1)
+#define PRIORITY_RIGHT_ARM  (1 + random 1)
+#define PRIORITY_LEFT_LEG   (1 + random 1)
+#define PRIORITY_RIGHT_LEG  (1 + random 1)
+#define PRIORITY_STRUCTURAL 1
+
+
+#define CARDIAC_OUTPUT_MIN EGVAR(medical,const_minCardiacOutput)
+// don't change, these reflect hard coded engine behaviour
+#define DAMAGED_MIN_THRESHOLD 0.45
+#define LIMPING_MIN_DAMAGE 0.5
+
+#define UNCON_ANIM(var1) DOUBLES(GVAR(uncon_anim),var1)
+#define QUNCON_ANIM(var1) QUOTE(UNCON_ANIM(var1))

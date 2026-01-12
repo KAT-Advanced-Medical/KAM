@@ -167,21 +167,12 @@ if (_hasLegStrainInjury) then {
     _noSprint = true;
 };
 
-if (_hasLegStrainInjury && (random 100 > 50)) then {
-    _noSprint = true;
-    _noJog = true;
-};
 
 if (_hasLegSprainInjury) then {
-    _noSprint = true;
-};
-
-if (_hasLegSprainInjury && (random 100 > 50)) then {
     _noSprint = true;
     _noJog = true;
     _isLimping = true;
 };
-
 
 if (_hasLegDislocationInjury) then {
     _isLimping = true;
@@ -193,12 +184,6 @@ if (_hasLegDislocationInjury) then {
 if (_hasLegJointInjury) then {
     _noSprint = true;
     _noJog = true;
-};
-
-if (_hasLegJointInjury && (random 100 > 50)) then {
-    _noSprint = true;
-    _noJog = true;
-    _isLimping = true;
 };
 
 if (_hasArmDislocationInjury) then {

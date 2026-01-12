@@ -17,7 +17,7 @@
  */
 
 params ["_patient", "_state"];
-private _lucasState = _patient setVariable [QGVAR(attachedLucasState), _state, true];
+_patient setVariable [QGVAR(attachedLucasState), _state, true];
 if (_state) then {
     _patient call FUNC(lucasPFH);
     _patient setVariable [QACEGVAR(medical,CPR_provider), _patient, true];

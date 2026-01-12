@@ -8,6 +8,9 @@ class CfgFunctions {
             class mainLoop {
                 file = QPATHTOF(functions\fnc_mainLoop.sqf);
             };
+            class handleEffects {
+                file = QPATHTOF(functions\fnc_handleEffects.sqf);
+            };
         };
     };
 };

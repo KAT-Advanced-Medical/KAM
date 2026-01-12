@@ -35,10 +35,7 @@ GVAR(visualizationCancel_MouseID) = [0xF0, [false, false, false], {
     GVAR(visualizationTarget) setVariable [QGVAR(visualizationActive), false, true];
 }, "keydown", "", false, 0] call CBA_fnc_addKeyHandler;
 
-GVAR(PlaceETT) = [0xF1, [false, false, false], {
-[GVAR(visualizationSource), GVAR(visualizationTarget), "head", "ETT"] call ACEFUNC(medical_treatment,treatment);
-GVAR(visualizationTarget) setVariable [QGVAR(visualizationActive), false, true];
-}, "keydown", "", false, 0] call CBA_fnc_addKeyHandler;
+
 
 ACEGVAR(medical_gui,pendingReopen) = false; // Prevent medical menu from reopening
 
@@ -109,9 +106,14 @@ GVAR(visualization_timeOut) = true;
                 if (((_patient getVariable [QGVAR(occlusion), [0, 0, 0]]) findIf { _x < 4 }) != -1) then {
                     private _difficulty = (((10 - (_occlusions select 0 min 4) - (_occlusions select 1 min 4)) / ((1 -_paralysis) max 0.1)) + (GVAR(visualization_attempts) * 3) + GVAR(probability_visualization));
                     if (random 100 < _difficulty) then {
+                        
                         [] call ACEFUNC(interaction,hideMouseHint);
                         [LLSTRING(visualization_stop), LLSTRING(visualization_place), ""] call ACEFUNC(interaction,showMouseHint);
                         _patient setVariable [QGVAR(isVisualized), true, true];
+                        GVAR(PlaceETT) = [0xF1, [false, false, false], {
+                        [QGVAR(airwayLocal), [GVAR(visualizationSource), GVAR(visualizationTarget), "ETT", "kat_ETT"], GVAR(visualizationTarget)] call CBA_fnc_targetEvent;
+                        GVAR(visualizationTarget) setVariable [QGVAR(visualizationActive), false, true];
+                        }, "keydown", "", false, 0] call CBA_fnc_addKeyHandler;
                         [{params ["_patient"];
                         _patient setVariable [QGVAR(isVisualized), false, true]; }, [_patient], 20] call CBA_fnc_waitAndExecute;
                         [LLSTRING(visualization_success), 2, _medic] call ACEFUNC(common,displayTextStructured);

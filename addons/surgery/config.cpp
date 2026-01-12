@@ -13,7 +13,9 @@ class CfgPatches {
             "kat_vacuum",
             "kat_plate",
             "kat_ultrasound",
-            "kat_reboa"
+            "kat_reboa",
+            "kat_fractureKit",
+            "kat_stitchKit"
         };
         magazines[] = { };
         requiredAddons[] = {
