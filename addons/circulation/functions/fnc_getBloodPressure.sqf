@@ -23,7 +23,7 @@ params ["_unit"];
 private _cardiacOutput = [_unit] call EFUNC(vitals,getCardiacOutput);
 private _strokeVolume  = [_unit] call EFUNC(vitals,getStrokeVolume);
 private _heartRate     = GET_HEART_RATE(_unit);
-private _exertionSVR = linearConversion [70, 140, _heartRate, 1.0, 0.85, true];
+private _exertionSVR = linearConversion [60, 130, _heartRate, 1.05, 0.75, true];
 private _resistance        = _unit getVariable [VAR_PERIPH_RES, DEFAULT_PERIPH_RES];
 private _vasoconstriction  = GET_VASOCONSTRICTION(_unit);
 private _tourniquets       = GET_TOURNIQUETS(_unit);
@@ -62,6 +62,7 @@ private _map =
     * ((_vasoconstriction max 0.4) min 1.8))
     * (1.035 ^ _countOccluded);
 TRACE_5("BP2", _map, _vasoconstriction, _resistance, BASELINE_SVR, _cardiacOutput);
+_map = _map * 0.95;
 private _cushing = [_unit] call EFUNC(vitals,getCushings);
 if (_cushing > 0) then {
     _map = _map * linearConversion [0, 1, _cushing, 1.0, 1.35, true];
@@ -70,9 +71,9 @@ if (_cushing > 0) then {
 
 _unit setVariable [QGVAR(map), _map];
 TRACE_1("BP3", _map);
-private _basePulsePressure = _map * 0.43;
+private _basePulsePressure = linearConversion [60, 110, _map, 30, 50, true];
 TRACE_1("BP4", _basePulsePressure);
-private _baselineSV = 0.0862038;
+private _baselineSV = 0.068; 
 private _svFactor =
     linearConversion [0.03, _baselineSV, _strokeVolume, 0.4, 1.0, true];
 private _shockClass = _unit getVariable [QEGVAR(vitals,shockClass), "NONE"];
@@ -95,8 +96,8 @@ private _pulsePressure =
     * _cushingPPMult;
 _pulsePressure = _pulsePressure max (_map * 0.15) min (_map * 0.9);
 TRACE_1("BP4", _pulsePressure);
-private _systolic  = _map + (_pulsePressure * 0.5);
-private _diastolic = _map - (_pulsePressure * 0.5);
+private _systolic  = _map + (_pulsePressure * 0.6666667);
+private _diastolic = _map - (_pulsePressure * 0.3333333);
 
 private _BPChange = _unit getVariable [VAR_BLOODPRESSURE_CHANGE, []];
 private _changeSystolic = 0;

@@ -189,26 +189,6 @@ if IN_CRDC_ARRST(_unit) then {
         _actualHeartRate =
             _lastHR + ((_hrDelta max -_rate) min _rate);
     };
-
-   if (
-        abs (_map - _mapSetpoint) < 2
-        && abs (_effectiveSV - _baselineSV) < 0.003
-        && _painLevel < 0.05
-        && _aceAnFatigue < 0.05
-    ) then {
-        _actualHeartRate = _defaultHR;
-    
-        _mapIntegral = 0;
-        _unit setVariable [QGVAR(mapIntegral), 0];
-    
-        _unit setVariable [QGVAR(hrMemory), _defaultHR];
-    
-        TRACE_1("REST_LOCK_HARD", _actualHeartRate);
-    
-        _unit setVariable [VAR_HEART_RATE, _actualHeartRate, _syncValue];
-        _actualHeartRate
-    };
-
     _actualHeartRate =
         _actualHeartRate
         + _hrTargetAdjustment
