@@ -58,10 +58,10 @@ class ACE_Medical_Treatment {
             ratio[] = {"Plasma", 1};
             rateCoef = 0.6;
             platelets = 0.075;
-            ph = 0.0007;
+            ph = 0.010;
             bloodType = "O_N";
             compatibility[] = {"O", "O_N", "A", "A_N", "B","B_N", "AB", "AB_N"};
-            ca = -0.06;
+            ca = -0.012;
         };
         class BloodIV_500: BloodIV {
             volume = 500;
@@ -75,8 +75,8 @@ class ACE_Medical_Treatment {
             type = "Plasma";
             rateCoef = 1;
             platelets = 0.5;
-            ca = -0.02;
-            ph = -0.013;
+            ca = 0.006;
+            ph = 0.006;
         };
         class PlasmaIV_500: PlasmaIV {
             volume = 500;
@@ -90,8 +90,8 @@ class ACE_Medical_Treatment {
             ratio[] = {};
             rateCoef = 1.4;
             platelets = 0;
-            ph = 0.033333;
-            ca = 0;
+            ph = 0.018;
+            ca = 0.004;
         };
         class SalineIV_500: SalineIV {
             volume = 500;
@@ -229,7 +229,8 @@ class ACE_Medical_Treatment {
             rateCoef = 1.4;
             type = "Ringers Lactate";
             platelets = 0;
-            ph = -0.015;
+            ph = -0.012;
+            ca = -0.006;
         };
         class RingersLactateIV_500: RingersLactateIV {
             volume = 500;
@@ -246,8 +247,8 @@ class ACE_Medical_Treatment {
             rateCoef = 0.4;
             type = "PackedRBC";
             platelets = 0.2;
-            ca = -0.01;
-            ph = 0.019;
+            ca = 0.014;
+            ph = 0.028;
         };
         class PackedRBCIV_250: PackedRBCIV_500 {
             volume = 250;
@@ -440,7 +441,8 @@ class ACE_Medical_Treatment {
             ratio[] = {};
             rateCoef = 1.3;
             platelets = 0;
-            ph = 0.364;
+            ph = 0.035;
+            ca = 0.012;
         };
         class HypertonicSalineIV_250: HypertonicSalineIV_500 {
             volume = 250;
@@ -454,7 +456,8 @@ class ACE_Medical_Treatment {
             ratio[] = {};
             rateCoef = 1.3;
             platelets = 0;
-            ph = 0.018;
+            ph = 0.02;
+            ca = 0.01;
         };
         class HextendIV_500: HextendIV {
             volume = 500;
