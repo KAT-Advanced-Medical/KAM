@@ -73,7 +73,6 @@
 
             _IVarray set [_partIndex, 15];
             _patient setVariable [QGVAR(IV), _IVarray, true];
-            [objNull, _patient, _bodypart] call EFUNC(pharma,retrieveIV);
 
             [{
                 params ["_patient", "_IVarray", "_partIndex"];

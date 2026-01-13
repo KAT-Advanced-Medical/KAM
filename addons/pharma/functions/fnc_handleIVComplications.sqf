@@ -35,8 +35,3 @@ if (_surface > 100) then {
     private _surfaceArea = _surface - (2 * _overLoad);
     _patient setVariable [QEGVAR(breathing,lungSurfaceArea), _surfaceArea];
 };
-private _depression = (_patient getVariable [QEGVAR(pharma,opioidDepression), 1]);
-if (_depression > 0.4) then {
-    private _depression = _depression - (0.02 * _overLoad);
-    _patient setVariable [QEGVAR(pharma,opioidDepression), _depression];
-};
