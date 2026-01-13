@@ -125,6 +125,11 @@ if IN_CRDC_ARRST(_unit) then {
 
     _modelHR = _modelHR + _staminaHRBias;
 
+    if (_icp > EGVAR(brain,ICPbradycardiaThreshold)) then {
+        private _ICPbias = linearConversion [EGVAR(brain,ICPbradycardiaThreshold), 60, _icp, -20, -45, true];
+        _modelHR = _modelHR + _ICPbias;
+    };
+    
     TRACE_2("STAMINA_CMD", _metabolicDemand, _staminaHRBias);
 
     private _vagalTone = 0;

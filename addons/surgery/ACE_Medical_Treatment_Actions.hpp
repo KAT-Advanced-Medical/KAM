@@ -208,7 +208,7 @@ class ACE_Medical_Treatment_Actions {
         allowSelfTreatment = 0;
         medicRequired = QGVAR(pericardialtapAction_MedLevel);
         treatmentTime = QGVAR(pericardialtapTime);
-        items[] = {"kat_ultrasound"};
+        items[] = {"kat_10ml_syringe", "kat_5ml_syringe"};
         condition = QUOTE(_patient getVariable [ARR_2(QQGVAR(imaging),false)]);
         consumeItem = 0;
         callbackSuccess = QFUNC(pericardialTap);

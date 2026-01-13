@@ -45,7 +45,7 @@
     "SLIDER",
     [LLSTRING(SETTING_CMRunconsciousThreshold)],
     [CBA_SETTINGS_CAT, ELSTRING(GUI,SubCategory_Basic)],
-    [0, 100, 85, 1],
+    [0, 100, 75, 1],
     true
 ] call CBA_Settings_fnc_init;
 
@@ -65,17 +65,7 @@
     "SLIDER",
     [LLSTRING(SETTING_ICPbradycardiaThreshold)],
     [CBA_SETTINGS_CAT, ELSTRING(GUI,SubCategory_Basic)],
-    [20, 70, 50, 1],
-    true
-] call CBA_Settings_fnc_init;
-
-//Chance of bradycardia occuring
-[
-	QGVAR(ICPbradycardiaChance),
-    "SLIDER",
-    [LLSTRING(SETTING_ICPbradycardiaChance)],
-    [CBA_SETTINGS_CAT, ELSTRING(GUI,SubCategory_Basic)],
-    [0, 100, 15, 1],
+    [20, 40, 25, 1],
     true
 ] call CBA_Settings_fnc_init;
 

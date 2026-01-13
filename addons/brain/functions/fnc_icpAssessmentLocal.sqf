@@ -21,7 +21,7 @@ params ["_medic", "_patient"];
 private _icp = GET_ICP(_patient);
 private _icpMM = 4;
 if (_icp > 20) then {
-    _icp = _icp + (floor random [-5, 0, 10]);
+    _icp = _icp + (floor random [-10, 0, 10]);
     _icpMM = linearConversion [15, 50, _icp, 4, 6.5, true];
     _icpMM = round (_icpMM * 10) / 10;
 };
