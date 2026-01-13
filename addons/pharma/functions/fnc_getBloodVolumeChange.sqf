@@ -335,7 +335,7 @@ if (count (_unit getVariable [QACEGVAR(medical,ivBags), []]) > 0) then {
 };
 private _SRBCChange = 0;
 
-if (_enableFluidShift) then {
+if (_enableFluidShift && ((_ECP + _ECB) > 4600)) then {
     private _srbcRate = 0;
     if ((_SRBC > 0) && (_ECB < DEFAULT_ECB)) then {
         _srbcRate = linearConversion [
