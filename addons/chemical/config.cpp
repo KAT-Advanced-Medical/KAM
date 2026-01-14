@@ -8,12 +8,12 @@ class CfgPatches {
             "kat_sealant_Item",
             "kat_module_gas",
             "kat_module_zeus_gas",
-            "KAT_Gas_TripWireMine"
+            "KAT_Gas_TripWireMine",
+            "kat_gasmaskFilter_Item"
         };
         weapons[] = {
             "kat_sealant",
             "kat_gasmaskFilter",
-            "KAT_M7A3",
             "KAT_CAS_M43_Bomb",
             "KAT_CAS_R_80mm_GAS_POD",
             "KAT_ChemicalDetector"

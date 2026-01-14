@@ -34,6 +34,8 @@ private _durabilityStructuredText = if (_durability >= 0) then {
 
     composeText [_text, [_string, "#808080"] call ACEFUNC(common,stringToColoredText)];
 
+} else {
+    "||||||||||"
 };
 private _picture = QPATHTOF(ui\Gasmask_icon.paa);
 [_durabilityStructuredText, _picture] call ACEFUNC(common,displayTextPicture);

@@ -5,25 +5,25 @@
             <English>Enables opioid effect on ketamine, fentanyl and pervitin</English>
             <Czech>Povolit opioidní efekty ketaminu, fentanylu a pervitinu</Czech>
             <French>Permet un effet opioïde sur la kétamine, le fentanyl et la pervitine</French>
+            <Spanish>Activa el efecto de los opioides sobre ketamina, fentanilo y pervitina</Spanish>
             <Italian>Abilita l'effetto degli oppioidi su ketamina, fentanil e pervitina</Italian>
             <German>Ermöglicht eine Opioidwirkung auf Ketamin, Fentanyl und Pervitin</German>
             <Japanese>ケタミン、フェンタニル、ペルビチンなどでオピオイドの効果を有効にします</Japanese>
             <Chinese>啟用 K他命(氯胺酮)、芬太尼、冰毒(甲基苯丙胺) 等 鴉片類藥物的作用</Chinese>
             <Chinesesimp>使阿片类药物对氯胺酮、芬太尼和帕维汀产生作用</Chinesesimp>
             <Dutch>Maakt het mogelijk om opioid-effecten te verkrijgen bij het gebruik van ketamine, fentanyl en pervitin</Dutch>
-            <Spanish>Activa el efecto de los opioides sobre ketamina, fentanilo y pervitina</Spanish>
         </Key>
         <Key ID="STR_KAT_Feedback_SETTING_OpioidEffect_display">
             <English>Enable opioid effect</English>
             <Czech>Povolit opioidní efekty</Czech>
             <French>Activer l'effet opioïde</French>
+            <Spanish>Activar efecto de opioides</Spanish>
             <Italian>Abilita l'effetto degli oppioidi</Italian>
             <German>Opioidwirkung aktivieren</German>
             <Japanese>オピオイド効果を有効化</Japanese>
             <Chinese>啟用鴉片類藥物效果</Chinese>
             <Chinesesimp>启用阿片类药物作用</Chinesesimp>
             <Dutch>Zet opioid-effecten aan</Dutch>
-            <Spanish>Activar efecto de opioides</Spanish>
         </Key>
         <Key ID="STR_KAT_Feedback_SETTING_lowSpO2_DESC">
             <English>Lets you change the SpO2 Value at which you get the Flashing warning indicator and stamina loss effect</English>
@@ -62,11 +62,11 @@
         <Key ID="STR_KAT_Feedback_cba_name">
             <English>KAT - ADV Medical: Feedback</English>
             <French>KAT - ADV Medical : Retour d'expérience</French>
+            <Spanish>KAT - ADV Medical: Feedback</Spanish>
             <Italian>KAT - ADV Medica: Riscontro</Italian>
             <German>KAT - ADV Medical: Feedback</German>
             <Japanese>KAM - フィードバック</Japanese>
             <Dutch>KAT - ADV Medical: Feedback</Dutch>
-            <Spanish>KAT - ADV Medical: Feedback</Spanish>
         </Key>
     </Package>
 </Project>

@@ -72,7 +72,7 @@ class CfgVehicles {
         maximumLoad = 0;
         transportMaxBackpacks = 0;
         transportMaxMagazines = 64;
-        class TransportItems;
+        class TransportItems {};
         class Turrets {};
         transportSoldier = 1;
         ACEGVAR(cargo,canLoad) = 1;

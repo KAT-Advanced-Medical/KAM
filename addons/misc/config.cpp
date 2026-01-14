@@ -4,8 +4,25 @@ class CfgPatches {
     class ADDON    {
         name = COMPONENT_NAME;
         requiredVersion = REQUIRED_VERSION;
-        units[] = {};
-        weapons[] = {};
+        units[] = {
+            "kat_Armband_Kat_Object",
+            "kat_Armband_Red_Cross_Object",
+            "kat_Armband_Medic_Object",
+            "kat_Armband_Doctor_Object"
+        };
+        weapons[] = {
+            "kat_Armband_Red_Cross_Item",
+            "kat_Armband_Medic_Item",
+            "kat_Armband_Doctor_Item",
+            "kat_Armband_Kat_Item",
+            "kat_IFAK",
+            "kat_AFAK",
+            "kat_MFAK",
+            "kat_Armband_Red_Cross_NVG",
+            "kat_Armband_Medic_NVG",
+            "kat_Armband_Doctor_NVG",
+            "kat_Armband_Kat_NVG"
+        };
         magazines[] = { };
         requiredAddons[] = {
             "kat_main",

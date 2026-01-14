@@ -1,6 +1,5 @@
 class ACE_Medical_Treatment_Actions {
     class BasicBandage;
-    class Morphine;
     class Diagnose;
     class CheckPulse: Diagnose {
         callbackSuccess = QFUNC(checkPulse);

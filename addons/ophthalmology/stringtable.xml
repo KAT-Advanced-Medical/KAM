@@ -4,245 +4,245 @@
         <Key ID="STR_KAT_Ophthalmology_EyeCover_Desc">
             <English>Eye Covers are used to treat heavy injury to the eye</English>
             <French>Les caches-œil sont utilisés pour traiter les lésions graves de l'œil.</French>
+            <Spanish>Las Coberturas Oculares se usan para tratar lesiones graves en el ojo.</Spanish>
             <Italian>Le coperture per occhi sono utilizzate per il trattamento di lesioni gravi all'occhio</Italian>
             <German>Ein Augenschild wird zur Behandlung von schweren Augenverletzungen verwendet</German>
             <Japanese>眼球保護帯は重傷となった目の治療に使用します</Japanese>
             <Dutch>Een oogschild wordt gebruikt om ernstig letsel aan het oog te behandelen</Dutch>
-            <Spanish>Las Coberturas Oculares se usan para tratar lesiones graves en el ojo.</Spanish>
         </Key>
         <Key ID="STR_KAT_Ophthalmology_EyeCover_Item">
             <English>Eye Shield</English>
             <French>Protection oculaire</French>
+            <Spanish>Protector ocular</Spanish>
             <Italian>Protezione oculare</Italian>
             <German>Augenschild</German>
             <Japanese>眼球保護帯</Japanese>
             <Dutch>Oogschild</Dutch>
-            <Spanish>Protector ocular</Spanish>
         </Key>
         <Key ID="STR_KAT_Ophthalmology_EyeCover_Left">
             <English>Left EyeCover</English>
             <French>Œil gauche Couvert</French>
+            <Spanish>Cobertura para el Ojo Izquierdo</Spanish>
             <Italian>Copertura occhio sinistro</Italian>
             <German>Linkes Augenschild</German>
             <Japanese>左眼球保護帯</Japanese>
             <Dutch>Linker oogschild</Dutch>
-            <Spanish>Cobertura para el Ojo Izquierdo</Spanish>
         </Key>
         <Key ID="STR_KAT_Ophthalmology_EyeCover_Right">
             <English>Right EyeCover</English>
             <French>Œil droit Couvert</French>
+            <Spanish>Cobertura para el Ojo Derecho</Spanish>
             <Italian>Copertura occhio destro</Italian>
             <German>Rechtes Augenschild</German>
             <Japanese>右眼球保護帯</Japanese>
             <Dutch>Rechter oogschild</Dutch>
-            <Spanish>Cobertura para el Ojo Derecho</Spanish>
         </Key>
         <Key ID="STR_KAT_Ophthalmology_blink_action">
             <English>Blinking</English>
             <French>Clignotement</French>
+            <Spanish>Parpadeando</Spanish>
             <Italian>Sbattito delle palpebre</Italian>
             <German>Blinzeln</German>
             <Japanese>まばたき</Japanese>
             <Dutch>Knipperen</Dutch>
-            <Spanish>Parpadeando</Spanish>
         </Key>
         <Key ID="STR_KAT_Ophthalmology_cba_name">
             <English>KAT - ADV Medical: Ophthalmology</English>
             <French>KAT - ADV Medical : Ophtalmologie</French>
+            <Spanish>KAT - ADV Medical: Oftalmología</Spanish>
             <Italian>KAT - ADV Medica: Oftalmologia</Italian>
             <German>KAT - ADV Medical: Augenheilkunde</German>
             <Japanese>KAM - 眼科 (Ophthalmology)</Japanese>
             <Dutch>KAT - ADV Medical: Oogheelkunde</Dutch>
-            <Spanish>KAT - ADV Medical: Oftalmología</Spanish>
         </Key>
         <Key ID="STR_KAT_Ophthalmology_eyeInjuryPresent">
             <English>Eye Injury</English>
             <French>Lésions oculaires</French>
+            <Spanish>Lesión ocular.</Spanish>
             <Italian>Ferita all'occhio</Italian>
             <German>Augenverletzung</German>
             <Japanese>眼外傷</Japanese>
             <Dutch>Oogletsel</Dutch>
-            <Spanish>Lesión ocular.</Spanish>
         </Key>
         <Key ID="STR_KAT_Ophthalmology_eyeshield_action">
             <English>Applying</English>
             <French>Application</French>
+            <Spanish>Aplicando</Spanish>
             <Italian>Applicazione</Italian>
             <German>Anwenden</German>
             <Japanese>装着中</Japanese>
             <Dutch>Wordt aangelegd</Dutch>
-            <Spanish>Aplicando</Spanish>
         </Key>
         <Key ID="STR_KAT_Ophthalmology_eyeshield_display">
             <English>Apply Eye Shield</English>
             <French>Appliquer une protection oculaire</French>
+            <Spanish>Aplicar protector ocular</Spanish>
             <Italian>Applica protezione oculare</Italian>
             <German>Augenschild anwenden</German>
             <Japanese>眼帯を装着</Japanese>
             <Dutch>Leg oogschild aan</Dutch>
-            <Spanish>Aplicar protector ocular</Spanish>
         </Key>
         <Key ID="STR_KAT_Ophthalmology_eyeshield_item">
             <English>Eye Shield</English>
             <French>Protection oculaire</French>
+            <Spanish>Protector ocular</Spanish>
             <Italian>Protezione oculare</Italian>
             <German>Augenschild</German>
             <Japanese>眼帯</Japanese>
             <Dutch>Oogschild</Dutch>
-            <Spanish>Protector ocular</Spanish>
         </Key>
         <Key ID="STR_KAT_Ophthalmology_eyewash_action">
             <English>Washing</English>
             <French>Lavage</French>
+            <Spanish>Lavando</Spanish>
             <Italian>Lavaggio</Italian>
             <German>Spülen</German>
             <Japanese>洗浄中</Japanese>
             <Dutch>Wordt gespoelt</Dutch>
-            <Spanish>Lavando</Spanish>
         </Key>
         <Key ID="STR_KAT_Ophthalmology_eyewash_display">
             <English>Wash eyes with saline</English>
             <French>Laver avec du sérum physiologique</French>
+            <Spanish>Lavar los ojos con solución salina</Spanish>
             <Italian>Effettua un lavaggio oculare con soluzione salina</Italian>
             <German>Augen mit Kochsalzlösung spülen</German>
             <Japanese>生理食塩液で目を洗う</Japanese>
             <Dutch>Ogen met saline spoelen</Dutch>
-            <Spanish>Lavar los ojos con solución salina</Spanish>
         </Key>
         <Key ID="STR_KAT_Ophthalmology_eyewash_display_water">
             <English>Wash eyes with water</English>
             <French>Laver les yeux à l'eau</French>
+            <Spanish>Lavar los ojos con agua</Spanish>
             <Italian>Effettua un lavaggio oculare con acqua</Italian>
             <German>Augen mit Wasser spülen</German>
             <Japanese>水で目を洗う</Japanese>
             <Dutch>Ogen met water spoelen</Dutch>
-            <Spanish>Lavar los ojos con agua</Spanish>
         </Key>
         <Key ID="STR_KAT_Ophthalmology_eyewash_item">
             <English>Eye Wash</English>
             <French>Lavage des yeux</French>
+            <Spanish>Lavado ocular</Spanish>
             <Italian>Lavaggio oculare</Italian>
             <German>Augenspülung</German>
             <Japanese>洗眼器</Japanese>
             <Dutch>Oogspoeling</Dutch>
-            <Spanish>Lavado ocular</Spanish>
         </Key>
         <Key ID="STR_KAT_Ophthalmology_eyewasher_desc">
             <English>Eyewash bottles allow an individual to flush the injured area immediately</English>
             <French>Les flacons de rinçage oculaire permettent à une personne de rincer immédiatement la zone blessée.</French>
+            <Spanish>Los frascos de lavado ocular permiten enjuagar inmediatamente la zona lesionada</Spanish>
             <Italian>Le bottiglie di lavaggio oculare permettono all'individuo di sciacquare l'area ferita immediatamente</Italian>
             <German>Augenspühlungen ermöglichen das sofortige ausspülen von verletzten Augen</German>
             <Japanese>外傷部をすぐに洗い流すことができる洗眼ボトル</Japanese>
             <Dutch>Oogspoelingsflesjes staan onmiddelijke spoeling van de ogen toe</Dutch>
-            <Spanish>Los frascos de lavado ocular permiten enjuagar inmediatamente la zona lesionada</Spanish>
         </Key>
         <Key ID="STR_KAT_Ophthalmology_eyewasher_display">
             <English>Eye Washer</English>
             <French>Nettoyant pour les yeux</French>
+            <Spanish>Lavador ocular</Spanish>
             <Italian>Lavaocchi</Italian>
             <German>Augenspüler</German>
             <Japanese>洗眼器</Japanese>
             <Dutch>Ogenspoeler</Dutch>
-            <Spanish>Lavador ocular</Spanish>
         </Key>
         <Key ID="STR_KAT_Ophthalmology_eyewasher_display_item">
             <English>Wash eyes</English>
             <French>Laver les yeux</French>
+            <Spanish>Lavar los ojos</Spanish>
             <Italian>Lava occhi</Italian>
             <German>Augen spülen</German>
             <Japanese>洗眼する</Japanese>
             <Dutch>Ogen spoelen</Dutch>
-            <Spanish>Lavar los ojos</Spanish>
         </Key>
         <Key ID="STR_KAT_Ophthalmology_setting_enable">
             <English>Enable eye injuries</English>
             <French>Autoriser les lésions oculaires</French>
+            <Spanish>Activar lesiones oculares</Spanish>
             <Italian>Abilita lesioni agli occhi</Italian>
             <German>Aktiviere Augenverletzungen</German>
             <Japanese>眼外傷を有効化</Japanese>
             <Dutch>Sta oogletsel toe</Dutch>
-            <Spanish>Activar lesiones oculares</Spanish>
         </Key>
         <Key ID="STR_KAT_Ophthalmology_setting_eyeShield_medic_required">
             <English>Medic required for eye shield</English>
             <French>Médicament nécessaire pour la protection des yeux</French>
+            <Spanish>Se requiere personal médico para aplicar el protector ocular</Spanish>
             <Italian>Medico richiesto per l'utilizzo della protezione oculare</Italian>
             <German>Sanitäter benötigt zur Anwendung des Augenschutzes</German>
             <Japanese>眼帯の許可</Japanese>
             <Dutch>Medic benodigd voor aanleggen van een oogschild</Dutch>
-            <Spanish>Se requiere personal médico para aplicar el protector ocular</Spanish>
         </Key>
         <Key ID="STR_KAT_Ophthalmology_setting_eyeShield_treatment_time">
             <English>Treatment time for eye shield</English>
             <French>Temps de traitement pour lunettes de protection</French>
+            <Spanish>Tiempo de tratamiento para el protector ocular</Spanish>
             <Italian>Tempo di trattamento per la protezione oculare</Italian>
             <German>Anwendungszeit des Augenschutzes</German>
             <Japanese>眼帯装着の所要時間</Japanese>
             <Dutch>Benodigde tijd voor het aanleggen van een oogschild</Dutch>
-            <Spanish>Tiempo de tratamiento para el protector ocular</Spanish>
         </Key>
         <Key ID="STR_KAT_Ophthalmology_setting_eyewash_medic_required">
             <English>Medic required to Eye Wash</English>
             <French>Médicament nécessaire pour le lavage des yeux</French>
+            <Spanish>Se requiere personal médico para el lavado ocular</Spanish>
             <Italian>Medico richiesto per il lavaggio oculare</Italian>
             <German>Sanitäter benötigt zur Augenspülung</German>
             <Japanese>洗眼の許可</Japanese>
             <Dutch>Medic benodigd voor het spoelen van oogen</Dutch>
-            <Spanish>Se requiere personal médico para el lavado ocular</Spanish>
         </Key>
         <Key ID="STR_KAT_Ophthalmology_setting_eyewash_treatment_time">
             <English>Treatment time of Eye Wash</English>
             <French>Durée de traitement du lavage des yeux</French>
+            <Spanish>Tiempo de tratamiento del lavado ocular</Spanish>
             <Italian>Tempo di trattamento per il lavaggio oculare</Italian>
             <German>Anwendungszeit der Augenspülung</German>
             <Japanese>洗眼の所要時間</Japanese>
             <Dutch>Benodigde tijd voor het spoelen van ogen</Dutch>
-            <Spanish>Tiempo de tratamiento del lavado ocular</Spanish>
         </Key>
         <Key ID="STR_KAT_Ophthalmology_setting_probability_dust">
             <English>Probability to get eye injury</English>
             <French>Probabilité de lésions oculaires</French>
+            <Spanish>Probabilidad de sufrir una lesión ocular</Spanish>
             <Italian>Probabilità di subire una lesione oculare</Italian>
             <German>Wahrscheinlichkeit einer Augenverletzung</German>
             <Japanese>眼外傷を受ける確率</Japanese>
             <Dutch>Kans om een oogletsel te verkrijgen</Dutch>
-            <Spanish>Probabilidad de sufrir una lesión ocular</Spanish>
         </Key>
         <Key ID="STR_KAT_Ophthalmology_setting_probability_dust_heavy">
             <English>Probability to get heavy eye injury</English>
             <French>Probabilité de lésions oculaires graves</French>
+            <Spanish>Probabilidad de sufrir una lesión ocular grave</Spanish>
             <Italian>Probabilità di subire una lesione oculare grave</Italian>
             <German>Wahrscheinlichkeit einer schweren Augenverletzung</German>
             <Japanese>重度の眼外傷を受ける確率</Japanese>
             <Dutch>Kans om een erstig letsel aan het oog te verkrijgen</Dutch>
-            <Spanish>Probabilidad de sufrir una lesión ocular grave</Spanish>
         </Key>
         <Key ID="STR_KAT_Ophthalmology_setting_probability_treatment_dust">
             <English>Probability to treat (non-heavy) eye injury with blinking</English>
             <French>Traiter une lésion oculaire en clignant des yeux</French>
+            <Spanish>Probabilidad de tratar una lesión ocular (no grave) mediante el parpadeo</Spanish>
             <Italian>Probabilità di curare una lesione oculare (non grave) sbattendo le palpebre</Italian>
             <German>Wahrscheinlichkeit, eine (nicht-schwere) Augenverletzung durch blinzeln zu beseitigen</German>
             <Japanese>まばたきすることによって(重度ではない)眼外傷を治療する確率</Japanese>
             <Dutch>Kans om (niet ernstig) oogletsel te behandelen met knipperen</Dutch>
-            <Spanish>Probabilidad de tratar una lesión ocular (no grave) mediante el parpadeo</Spanish>
         </Key>
         <Key ID="STR_KAT_Ophthalmology_setting_subcategory_injury">
             <English>Eye injuries</English>
             <French>Lésions oculaires</French>
+            <Spanish>Lesiones oculares</Spanish>
             <Italian>Lesione oculare</Italian>
             <German>Augenverletzungen</German>
             <Japanese>眼外傷</Japanese>
             <Dutch>Oogletsel</Dutch>
-            <Spanish>Lesiones oculares</Spanish>
         </Key>
         <Key ID="STR_KAT_Ophthalmology_setting_subcategory_manual_blink">
             <English>Manual blinking</English>
             <French>Clignotement manuel</French>
+            <Spanish>Parpadeo manual</Spanish>
             <Italian>Sbattimento di palpebre manuale</Italian>
             <German>Manuelles Blinzeln</German>
             <Japanese>手動でまばたき</Japanese>
             <Dutch>Handmatig knipperen</Dutch>
-            <Spanish>Parpadeo manual</Spanish>
         </Key>
     </Package>
 </Project>
