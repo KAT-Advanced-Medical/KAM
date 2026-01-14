@@ -67,8 +67,7 @@ class CfgMagazines {
         class Library {libTextDesc = CSTRING(TriWire_Gas_Desc);};
     };
 
-    class Default;    // External class reference
-    class VehicleMagazine;
+    // External class reference
     class PylonMissile_Bomb_GBU12_x1;
     class PylonRack_Bomb_GBU12_x2;
     class KAT_CAS_M43_Mag: PylonMissile_Bomb_GBU12_x1 {

@@ -13,7 +13,13 @@ class CfgPatches {
             "kat_Pulseoximeter",
             "kat_chestSeal",
             "kat_stethoscope",
-            "kat_nasal"
+            "kat_nasal",
+            "kat_aatKit",
+            "kat_ncdKit",
+            "kat_BVM",
+            "kat_pocketBVM",
+            "kat_oxygenTank_150_Empty",
+            "kat_oxygenTank_300_Empty"
         };
         magazines[] = {};
         requiredAddons[] = {

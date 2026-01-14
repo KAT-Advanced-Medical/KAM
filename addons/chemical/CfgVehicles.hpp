@@ -137,16 +137,7 @@ class CfgVehicles {
     class Logic;
     class Module_F: Logic
     {
-        class AttributesBase
-        {
-            class Default;
-            class Edit;                    // Default edit box (i.e., text input field)
-            class Combo;                // Default combo box (i.e., drop-down menu)
-            class Checkbox;                // Default checkbox (returned value is Boolean)
-            class CheckboxNumber;        // Default checkbox (returned value is Number)
-            class ModuleDescription;    // Module description
-            class Units;
-        };
+        class AttributesBase {};
         class ModuleDescription;
     };
 
@@ -270,9 +261,7 @@ class CfgVehicles {
     };
 
     class Box_NATO_AmmoOrd_F;
-    class ACE_Box_82mm_Mo_HE: Box_NATO_AmmoOrd_F {
-        class TransportMagazines;
-    };
+    class ACE_Box_82mm_Mo_HE: Box_NATO_AmmoOrd_F {};
     class ACE_Box_82mm_Mo_Combo: ACE_Box_82mm_Mo_HE {
         class TransportMagazines {
             MACRO_ADDMAGAZINE(KAT_1Rnd_82mm_Mo_Type0,8);

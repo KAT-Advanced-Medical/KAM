@@ -85,7 +85,6 @@ class CfgAmmo {
         smokeColor[] = {0.671, 0.765, 0.184,1};
     };
 
-    class BombCore;
     //class Bo_GBU12_LGB;
     class BombCluster_01_Ammo_F;
     class KAT_CAS_M43_Ammo: BombCluster_01_Ammo_F {
