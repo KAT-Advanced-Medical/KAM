@@ -50,7 +50,8 @@ class CfgPatches {
             "kat_BPCuff",
             "kat_HypertonicSalineIV_500",
             "kat_HypertonicSalineIV_250",
-            "kat_HypertonicSalineIV_100"
+            "kat_HypertonicSalineIV_100",
+            "kat_PlateletIV100"
         };
         magazines[] = { };
         requiredAddons[] = {

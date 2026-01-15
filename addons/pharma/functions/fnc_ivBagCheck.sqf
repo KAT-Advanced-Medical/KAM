@@ -23,9 +23,15 @@ private _partIndex = ALL_BODY_PARTS find toLowerANSI _bodyPart;
 _ivBags = (_patient getVariable [QACEGVAR(medical,ivBags), []]);
 
 private _hasMatchingIV = _ivBags findIf {
-    (_x select 1) isEqualTo _type &&
+    private _bagType = _x select 1;
+    (
+        (_type isEqualTo "FBTK" && {_bagType in ["FBTK_500", "FBTK_250"]}) ||
+        (_type isNotEqualTo "FBTK" && {_bagType isEqualTo _type})
+    )
+    &&
     (_x select 2) isEqualTo _partIndex
 } != -1;
+
 TRACE_4("hasMatchingIV",_ivBags,_partIndex,_type,_hasMatchingIV);
 
 _hasMatchingIV

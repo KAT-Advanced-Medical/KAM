@@ -66,7 +66,7 @@ if (count (_unit getVariable [QACEGVAR(medical,ivBags), []]) > 0) then {
         private _result = if (_idx != -1) then { _occlusionMap select _idx select 1 } else { [] };
         private _isOccluded = ({ _tourniquets select _x != 0 } count _result > 0) && (_IVarray select _bodyPart isNotEqualTo 13);
         if ((!_isOccluded) && ([7,8,9,15] find (_IVarray select _bodyPart) == -1)) then {
-            if (_type in ["Blood", "Saline", "Plasma", "Ringers Lactate", "PackedRBC", "Hypertonic Saline", "Hextend"]) then {
+            if (_type in ["Blood", "Saline", "Plasma", "Ringers Lactate", "PackedRBC", "Hypertonic Saline", "Hextend", "FBTK_500", "FBTK_250"]) then {
             private _IVflow = _unit getVariable [QGVAR(IVflow), [0,0,0,0,0,0,0,0,0,0,0,0]];
             private _IVrate = _unit getVariable [QGVAR(IVrate), [0,0,0,0,0,0,0,0,0,0,0,0]];
             private _pressureBag = _unit getVariable [QGVAR(pressureBag), [0,0,0,0,0,0,0,0,0,0,0,0]];
@@ -76,7 +76,9 @@ if (count (_unit getVariable [QACEGVAR(medical,ivBags), []]) > 0) then {
             if ((_unit getVariable [QACEGVAR(medical,CPR_provider), objNull]) != objNull) then {
                 _flowCalculation = _flowCalculation * 0.6;
             };
-            private _bagChange = (_flowCalculation * (_IVflow select _bodyPart) * (_IVrate select _bodyPart) * (1 + (_pressureBag select _bodyPart)) * _rateCoef) min _bagVolumeRemaining; // absolute value of the change in miliLiters
+            private _bagChange = 0;
+            if (_type in ["Blood", "Saline", "Plasma", "Ringers Lactate", "PackedRBC", "Hypertonic Saline", "Hextend"]) then {
+            _bagChange = (_flowCalculation * (_IVflow select _bodyPart) * (_IVrate select _bodyPart) * (1 + (_pressureBag select _bodyPart)) * _rateCoef) min _bagVolumeRemaining; // absolute value of the change in miliLiters
             if ((_IVarray select _bodyPart) in [2,3,4,10,11,12]) then {
                 _bagChange = _bagChange * ((2 - _vasoconstriction) max 0.2);
             };
@@ -148,7 +150,12 @@ if (count (_unit getVariable [QACEGVAR(medical,ivBags), []]) > 0) then {
                 private _ca = (_ca + (_caChange * _bagChange));
                 _unit setVariable [QGVAR(externalCa), _ca, true];
             };
-            
+            } else {
+                _bagChange = (_flowCalculation * (_IVrate select _bodyPart) *  _rateCoef); // absolute value of the change in miliLiters
+                if ((_IVarray select _bodyPart) in [2,3,4,10,11,12]) then {
+                    _bagChange = _bagChange * ((2 - _vasoconstriction) max 0.2);
+                };
+            };
             switch (true) do {
                 case(_type == "Plasma"): {
                     _ECP = _ECP + _bagChange; _lossVolumeChange = _lossVolumeChange + (_bagChange / ML_TO_LITERS); 
@@ -214,8 +221,32 @@ if (count (_unit getVariable [QACEGVAR(medical,ivBags), []]) > 0) then {
                 };
                 case(_type == "Hextend"): {
                     _ECP = _ECP + (_bagChange * 1.5); 
-                    _lossVolumeChange = _lossVolumeChange + (_bagChange / ML_TO_LITERS); 
-                    _platelets = (_platelets + (_plateletAmount * _bagChange)) max 0;};
+                    _lossVolumeChange = _lossVolumeChange + ((_bagChange * 1.5) / ML_TO_LITERS); 
+                    _platelets = (_platelets + (_plateletAmount * _bagChange)) max 0;
+                };
+                case(_type == "Platelets"): {
+                    _ECP = _ECP + (_bagChange * 0.5); 
+                    _lossVolumeChange = _lossVolumeChange + ((_bagChange * 0.5) / ML_TO_LITERS); 
+                    _platelets = (_platelets + (_plateletAmount * _bagChange)) max 0;
+                };
+                case(_type == "FBTK_250"): {
+                    if (_bagVolumeRemaining < 250) then {
+                        _bagVolumeRemaining = (_bagVolumeRemaining + _bagChange) min 250;
+                        _ECB = _ECB - _bagChange / 2; 
+                        _ECP = _ECP - _bagChange / 2;
+                        _platelets = _platelets - (0.1 * _bagChange);
+                        _lossVolumeChange = _lossVolumeChange - (_bagChange / ML_TO_LITERS); 
+                    };
+                };
+                case(_type == "FBTK_500"): {
+                    if (_bagVolumeRemaining < 500) then {
+                        _bagVolumeRemaining = (_bagVolumeRemaining + _bagChange) min 500;
+                        _ECB = _ECB - _bagChange / 2; 
+                        _ECP = _ECP - _bagChange / 2;
+                        _platelets = _platelets - (0.1 * _bagChange);
+                        _lossVolumeChange = _lossVolumeChange - (_bagChange / ML_TO_LITERS); 
+                    };
+                };
             };
             
             private _damageAmount = [_unit,_idx] call EFUNC(hitpoints,damageAmount);
@@ -293,8 +324,8 @@ if (count (_unit getVariable [QACEGVAR(medical,ivBags), []]) > 0) then {
                 _ECP = _ECP + _bagChange / 2; 
                 _ISP = _ISP + _bagChange / 2; 
                 _lossVolumeChange = _lossVolumeChange + (_bagChange / 2000);
-                    } else {
-                { _ECP = _ECP + _bagChange; _lossVolumeChange = _lossVolumeChange + (_bagChange / ML_TO_LITERS); };
+            } else {
+                _ECP = _ECP + _bagChange; _lossVolumeChange = _lossVolumeChange + (_bagChange / ML_TO_LITERS);
             };
             private _damageAmount = [_unit,_idx] call EFUNC(hitpoints,damageAmount);
             if ((_damageAmount > GVAR(ivLeakageThreshold)) && GVAR(ivCheckLimbDamage)) then {
@@ -304,7 +335,7 @@ if (count (_unit getVariable [QACEGVAR(medical,ivBags), []]) > 0) then {
             };
         };
     };
-    if (_bagVolumeRemaining < 0.01) then {
+    if ((_bagVolumeRemaining < 0.01) && (_type isNotEqualTo "FBTK")) then {
             []
         } else {
             [_bagVolumeRemaining, _type, _bodyPart, _treatment, _rateCoef, _item, _plateletAmount, _phChange, _caChange, _uuid]

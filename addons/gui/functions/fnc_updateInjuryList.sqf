@@ -140,6 +140,8 @@ private _EtomidateIVInfusion = 0;
 private _DoxapramIVInfusion = 0;
 private _NitroglycerinIVInfusion = 0;
 private _NorepinephrineIVInfusion = 0;
+private _platelets = 0;
+private _fbtk = 0;
 {
     _x params ["_volumeRemaining", "_type", "_partIndex"];
     if (_partIndex == _selectionN) then{
@@ -182,6 +184,15 @@ private _NorepinephrineIVInfusion = 0;
         };
         case "Norepinephrine_IVInfusion": {
             _NorepinephrineIVInfusion = _NorepinephrineIVInfusion + _volumeRemaining;
+        };
+        case "Platelets": {
+            _platelets = _platelets + _volumeRemaining;
+        };
+        case "FBTK_500": {
+            _fbtk = _fbtk + _volumeRemaining;
+        };
+        case "FBTK_250": {
+            _fbtk = _fbtk + _volumeRemaining;
         };
     };
     _totalIvVolume = _totalIvVolume + _volumeRemaining;
@@ -227,6 +238,12 @@ if (_totalIvVolume > 0) then {
     };
     if (_NorepinephrineIVInfusion > 0) then {
         _entries pushBack [format [localize ELSTRING(pharma,receivingNorepinephrineIVInfusionVolume), floor _NorepinephrineIVInfusion], [0.878,0.69,1,1]];
+    };
+    if (_NorepinephrineIVInfusion > 0) then {
+        _entries pushBack [format [localize ELSTRING(pharma,receivingPlateletsVolume), floor _platelets], [0.827,0.686,0.216,1]];
+    };
+    if (_fbtk > 0) then {
+        _entries pushBack [format [localize ELSTRING(pharma,drawingBloodVolume), floor _fbtk], [0.58,0.133,0.133,1]];
     };
 } else {
     _entries pushBack [localize ACELSTRING(medical_treatment,Status_NoIv), _nonissueColor];

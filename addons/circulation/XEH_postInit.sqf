@@ -19,6 +19,8 @@ GVAR(AEDX_MonitorTarget) = objNull;
 
 ["isNotPerformingCPR", {!((_this select 0) getVariable [QGVAR(isPerformingCPR), false])}] call ACEFUNC(common,addCanInteractWithCondition);
 
+["isNotPerformingBVM", {!((_this select 0) getVariable [QEGVAR(breathing,isPerformingBVM), false])}] call ACEFUNC(common,addCanInteractWithCondition);
+
 [QGVAR(handleNearToAED), {
     params ["_unit", "_patient"];
 

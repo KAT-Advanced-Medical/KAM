@@ -60,38 +60,6 @@ class ACE_Medical_Treatment_Actions {
         animationPatientUnconscious = "AinjPpneMstpSnonWrflDnon_rolltoback";
         animationPatientUnconsciousExcludeOn[] = {"ainjppnemstpsnonwrfldnon", "kat_recoveryposition"};
     };
-    class KAT_DrawBlood500: CheckPulse {
-        displayName = CSTRING(DrawBlood500_Action_Use);
-        displayNameProgress = CSTRING(DrawBlood_Action_Progress);
-        treatmentTime = QGVAR(blood_drawTime_500ml);
-        allowedSelections[] = {"LeftArm", "RightArm", "UpperLeftLeg", "UpperRightLeg"};
-        allowSelfTreatment = QGVAR(enable_selfBloodDraw);
-        category = "advanced";
-        medicRequired = 1;
-        consumeItem = 1;
-        callbackSuccess = QUOTE([ARR_3(_medic,_patient,500)] call FUNC(drawBlood));
-        condition = QUOTE([ARR_3(_medic,_patient,500)] call FUNC(canDraw) && (!(EGVAR(pharma,RequireInsIVBloodDraw)) || EFUNC(pharma,removeIVCheck)));
-        items[] = {"KAT_Empty_bloodIV_500"};
-        animationPatient = "";
-        animationPatientUnconscious = "AinjPpneMstpSnonWrflDnon_rolltoback";
-        animationPatientUnconsciousExcludeOn[] = {"ainjppnemstpsnonwrfldnon", "kat_recoveryposition"};
-    };
-    class KAT_DrawBlood250: CheckPulse {
-        displayName = CSTRING(DrawBlood250_Action_Use);
-        displayNameProgress = CSTRING(DrawBlood_Action_Progress);
-        treatmentTime = QGVAR(blood_drawTime_250ml);
-        allowedSelections[] = {"LeftArm", "RightArm", "UpperLeftLeg", "UpperRightLeg"};
-        allowSelfTreatment = QGVAR(enable_selfBloodDraw);
-        category = "advanced";
-        medicRequired = 1;
-        consumeItem = 1;
-        callbackSuccess = QUOTE([ARR_3(_medic,_patient,250)] call FUNC(drawBlood));
-        condition = QUOTE([ARR_3(_medic,_patient,250)] call FUNC(canDraw) && (!(EGVAR(pharma,RequireInsIVBloodDraw)) || EFUNC(pharma,removeIVCheck)));
-        items[] = {"KAT_Empty_bloodIV_250"};
-        animationPatient = "";
-        animationPatientUnconscious = "AinjPpneMstpSnonWrflDnon_rolltoback";
-        animationPatientUnconsciousExcludeOn[] = {"ainjppnemstpsnonwrfldnon", "kat_recoveryposition"};
-    };
     #include "Blood_Medical.hpp"
 
     class AnalyzeRhythm: CheckPulse {

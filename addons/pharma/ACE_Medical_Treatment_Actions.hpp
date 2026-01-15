@@ -1550,6 +1550,14 @@ class ACE_Medical_Treatment_Actions {
         condition = QUOTE([ARR_4(_player,_patient,_bodyPart,'Hypertonic Saline')] call FUNC(ivBagCheck));
         callbackSuccess = QUOTE([ARR_4(_player,_patient,_bodyPart,'Hypertonic Saline')] call FUNC(removeIVBag));
     };
+    class RemoveFBTK: RemoveIV {
+        displayName = CSTRING(RemoveFBTK);
+        displayNameProgress = CSTRING(RemovingFBTK_Progress);
+        treatmentTime = QACEGVAR(medical_treatment,treatmentTimeIV);
+        consumeItem = 0;
+        condition = QUOTE([ARR_4(_player,_patient,_bodyPart,'FBTK')] call FUNC(ivBagCheck));
+        callbackSuccess = QUOTE([ARR_4(_player,_patient,_bodyPart,'FBTK')] call FUNC(removeIVBag));
+    };
     class ApplyFentPatch: Morphine {
         displayName = CSTRING(Apply_FentPatch);
         displayNameProgress = CSTRING(Applying_FentPatch);

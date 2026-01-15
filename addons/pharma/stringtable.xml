@@ -4316,6 +4316,12 @@
         <Key ID="STR_KAT_Pharma_receivingNorepinephrineIVInfusionVolume">
             <English>Receiving Norepinephrine Infusion [%1ml]</English>
         </Key>
+        <Key ID="STR_KAT_Pharma_receivingPlateletsVolume">
+            <English>Receiving Platelets [%1ml]</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_drawingbloodvolume">
+            <English>Drawing Blood [%1ml]</English>
+        </Key>
         <Key ID="STR_KAT_Pharma_RemovingSalineIV_Progress">
             <English>Removing Saline IV bags</English>
         </Key>
@@ -4337,6 +4343,9 @@
         <Key ID="STR_KAT_Pharma_RemovingHextendIV_Progress">
             <English>Removing Hextend IV bags</English>
         </Key>
+        <Key ID="STR_KAT_Pharma_removingfbtk_Progress">
+            <English>Removing FBTK</English>
+        </Key>
         <Key ID="STR_KAT_Pharma_RemoveSaline">
             <English>Remove Saline IV bags</English>
         </Key>
@@ -4357,6 +4366,9 @@
         </Key>
         <Key ID="STR_KAT_Pharma_RemoveHextend">
             <English>Remove Hextend IV bags</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_RemoveFBTK">
+            <English>Remove Filled FBTK</English>
         </Key>
         <Key ID="STR_KAT_Pharma_Apply_EZ_IO">
             <English>Establish EZ IO</English>

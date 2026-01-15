@@ -302,6 +302,15 @@ if (GVAR(kidneyAction)) then {
         private _externalCa = _unit getVariable [QGVAR(externalCa), 0];
         private _kidneyFrac = 1 - _kidneyDamage;
         private _sign = if (_externalCa == 0) then {1} else {_externalCa / abs _externalCa};
+        TRACE_6(
+    "Ca INPUT",
+    _ca,
+    _effectiveCa,
+    _externalCa,
+    _ph,
+    _shockIndex,
+    _kidneyFrac
+);
         _kidneyFrac = _kidneyFrac max 0.15;
         if (_kidneyFail) then {
             _kidneyFrac = _kidneyFrac * 0.35;
@@ -370,45 +379,49 @@ if (GVAR(kidneyAction)) then {
         private _targetCa = 2.4 + linearConversion [-300, 300, _externalCa, -0.6, 0.6, true];
 
         private _caError = _targetCa - _ca;
+        TRACE_3(
+    "Ca TARGET",
+    _targetCa,
+    _caError,
+    _externalCa
+);
         if (_externalCa != 0) then {    
-            private _flux = linearConversion [0, 160, (abs _externalCa), 0.00, 0.15, true];
-            private _bufferSuppression = linearConversion [0, 120, abs _externalCa, 1.0, 0.6, true];
-            _flux = _flux * _bufferSuppression;
-
+                TRACE_3(
+        "ExternalCa PRE",
+        _externalCa,
+        _kidneyFrac,
+        _hepaticFrac
+    );
             private _kidneyFrac = 1 - (_unit getVariable [QGVAR(kidneyDamage), 0]);
             _kidneyFrac = _kidneyFrac max 0.2;
 
-            private _clearanceRate = 0.4 * _kidneyFrac * _hepaticFrac;
+            private _clearanceRate = 0.0025 * _kidneyFrac * _hepaticFrac;
             if (_liverFail) then {
                 _clearanceRate = _clearanceRate * 0.125;
             };
-            _externalCa = _externalCa - (_clearanceRate * _sign);
+            _externalCa = _externalCa - (_clearanceRate * ((_externalCa max -1) min 1));
             _externalCa = (_externalCa max -300) min 300;
 
             _unit setVariable [QGVAR(externalCa), _externalCa, true];
              if (_hepaticFrac > 0.8 && {_externalCa < 5} && (!_kidneyFail)) then {
-                _ca = _ca + 0.005;
+                _ca = _ca + (0.002 * (_externalCa max -1 min 1));
             };
+                TRACE_3(
+        "ExternalCa CLR",
+        _clearanceRate,
+        _externalCa,
+        _liverFail
+    );
         };
         if (_caCl2 > 0) then {
             private _amp = _caCl2 min 3;
-            private _cancel = (_amp * 25) min (abs _externalCa);
-
-            if (_externalCa < 0) then {
-                _externalCa = _externalCa + _cancel;
-            } else {
-                _ca = _ca + (_amp * 0.125);
-            };
+            private _cancel = (_amp * 4);
+            _externalCa = _externalCa + _cancel;
         };
         if (_caGlu > 0) then {
             private _amp = _caGlu min 2;
-            private _cancel = (_amp * 2.5) min (abs _externalCa);
-
-            if (_externalCa < 0) then {
-                _externalCa = _externalCa + _cancel;
-            } else {
-                _ca = _ca + (_amp * 0.02);
-            };
+            private _cancel = (_amp * 0.2);
+            _externalCa = _externalCa + _cancel;
         };
         if (_caCl2 > 0 && {_bvFrac < 0.6}) then {
             if (random 1 < 0.2) then {
@@ -419,35 +432,51 @@ if (GVAR(kidneyAction)) then {
                 ];
             };
         };
-        if (abs _caError > 0.02) then {
-            private _caGain =
-                linearConversion [0.05, 0.4, abs _caError, 0, 1.0, true];
+        private _caError = _targetCa - _ca;
+        private _caGain = 0.15;
+        private _caRate =
+            _caError *
+            _caGain *
+            _kidneyFrac *
+            _hepaticFrac *
+            _bvFrac;
+        _caRate = _caRate max -0.005 min 0.005;
 
-            private _caHomeo =
-                _caGain
-                * (_kidneyFrac max 0.25)
-                * 0.0085;
-            _ca = _ca + (_caHomeo * (_sign * _caError));
-        };
+        _ca = _ca + _caRate;
+
+        TRACE_3(
+            "Ca HOMEOSTASIS",
+            _caError,
+            _caRate,
+            _ca
+        );
         private _ionizedShift = 0;
-        if (_ph < 7.30) then {
-            _ionizedShift = linearConversion [7.30, 7.10, _ph, 0.00, 0.06, true];
+        if (_ph < 7.35) then {
+            _ionizedShift = _ionizedShift +
+                linearConversion [7.35, 7.10, _ph, 0.00, 0.12, true];
         };
         if (_lactate > 4) then {
             _ionizedShift = _ionizedShift +
-                linearConversion [4, 10, _lactate, 0.005, 0.025, true];
+                linearConversion [4, 10, _lactate, 0.00, 0.08, true];
         };
-
         if (_bicarb > 0) then {
             _ionizedShift = _ionizedShift -
-                linearConversion [0, 6, _bicarb, 0.00, 0.04, true];
+                linearConversion [0, 6, _bicarb, 0.00, 0.10, true];
         };
 
-        private _ionizedGain =
-                linearConversion [2.2, 2.6, _ca, 1.0, 0.25, true];
+        _ionizedShift = _ionizedShift max -0.25 min 0.25;
+        _effectiveCa = (_ca + _ionizedShift) max 0;
 
-        _effectiveCa = _ca + (_ionizedShift * _ionizedGain);
-        _effectiveCa = [_effectiveCa, _prevCa, _maxDeltaCa] call _rateLimit;
+        TRACE_4(
+            "IONIZED",
+            _ionizedShift,
+            _ca,
+            _effectiveCa,
+            _ph
+        );
+        private _deltaCa = _effectiveCa - _prevCa;
+        _deltaCa = [_deltaCa, 0, 0.03] call _rateLimit;
+        _effectiveCa = _prevCa + _deltaCa;
         if (_effectiveCa > 2.4) then {
             private _renalPerf =
                 linearConversion [1, 1.8, _shockIndex, 1.0, 0.1, true];
@@ -455,7 +484,7 @@ if (GVAR(kidneyAction)) then {
             private _renalClearance =
                 _renalPerf *
                 _kidneyFrac *
-                linearConversion [2.42, 2.8, _effectiveCa, 0.0, 0.003, true];
+                linearConversion [2.35, 2.9, _effectiveCa, 0.0005, 0.004, true];
             _ca = (_ca - _renalClearance) max 1.5;
         TRACE_4(
             "Renal Ca excretion",
@@ -465,7 +494,7 @@ if (GVAR(kidneyAction)) then {
             _ca
         );
         };
-        private _boneFlux = linearConversion [2.1, 2.4, _effectiveCa, 0.0002, 0, true];
+        private _boneFlux = linearConversion [2.2, 2.6, _effectiveCa, 0.0015, -0.0015, true];
         _ca = _ca + _boneFlux;
 
         if (!_kidneyFail && {_effectiveCa < 2.4}) then {
@@ -590,5 +619,6 @@ if (GVAR(kidneyAction)) then {
 
     }, 5, [_unit]] call CBA_fnc_addPerFrameHandler;
 };
+
 
 

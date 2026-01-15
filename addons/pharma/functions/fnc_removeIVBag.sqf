@@ -30,6 +30,7 @@ private _ringersLactate = 0;
 private _packedRBC = 0;
 private _hextend = 0;
 private _hyperSaline = 0;
+private _fbtk = 0;
 private _totalIvVolume = 0;
 
 // Remove matching bags and collect volumes
@@ -38,9 +39,14 @@ private _newArray = [];
 {
     _x params ["_volumeRemaining", "_ivType", "_ivPartIndex"];
 
-    if (_ivPartIndex == _partIndex && {_ivType isEqualTo _type}) then {
+    if (
+        _ivPartIndex == _partIndex &&
+        (
+            (_type isEqualTo "FBTK" && {_ivType in ["FBTK_500", "FBTK_250"]}) ||
+            (_type isNotEqualTo "FBTK" && {_ivType isEqualTo _type})
+        )
+    ) then {
         _totalIvVolume = _totalIvVolume + _volumeRemaining;
-
         switch (_ivType) do {
             case "Saline": { _saline = _saline + _volumeRemaining; };
             case "Blood": { _blood = _blood + _volumeRemaining; };
@@ -49,6 +55,8 @@ private _newArray = [];
             case "PackedRBC": { _packedRBC = _packedRBC + _volumeRemaining; };
             case "Hextend": { _hextend = _hextend + _volumeRemaining; };
             case "Hypertonic Saline": { _hyperSaline = _hyperSaline + _volumeRemaining; };
+            case "FBTK_500": { _fbtk = _fbtk + _volumeRemaining; };
+            case "FBTK_250": { _fbtk = _fbtk + _volumeRemaining; };
         };
     } else {
         _newArray pushBack _x;
@@ -119,6 +127,25 @@ if (_totalIvVolume >= 1) then {
             case (_hyperSaline >= 750): { _medic addItem "kat_HypertonicSalineIV_500"; _medic addItem "kat_HypertonicSalineIV_250"; };
             case (_hyperSaline >= 500): { _medic addItem "kat_HypertonicSalineIV_500"; };
             case (_hyperSaline >= 250): { _medic addItem "kat_HypertonicSalineIV_250"; };
+        };
+    };
+    if (_fbtk > 240) then {
+
+    private _blood = [_patient] call EFUNC(circulation,bloodType);
+    private _item = "";
+    switch (true) do {
+        case (_fbtk >= 490): {
+            _item = "kat_FBTKbloodIV_" + _blood + "_500";
+        };
+        case (_fbtk >= 240): {
+            _item = "kat_FBTKbloodIV_" + _blood + "_250";
+        };
+        default {
+            _item = "";
+        };
+    };
+    if (_item != "") then {
+        _medic addItem _item;
         };
     };
 };

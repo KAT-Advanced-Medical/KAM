@@ -25,6 +25,7 @@
 params ["_medic", "_patient", ["_pocket", false], ["_useOxygen", false], ["_oxygenOrigin", 0]];
 
 _patient setVariable [QGVAR(BVMInUse), true, true];
+_medic setVariable [QGVAR(isPerformingBVM), true, true];
 GVAR(BVMTarget) = _patient;
 
 GVAR(BVMCancel_EscapeID) = [0x01, [false, false, false], {
@@ -127,7 +128,7 @@ GVAR(BVM_timeOut) = true;
 
             _patient setVariable [QGVAR(BVMInUse), false, true];
             _patient setVariable [QGVAR(oxygenTankConnected), false, true];
-
+            _medic setVariable [QGVAR(isPerformingBVM), false, true];
             [] call ACEFUNC(interaction,hideMouseHint);
 
             [GVAR(BVMCancel_EscapeID), "keydown"] call CBA_fnc_removeKeyHandler;

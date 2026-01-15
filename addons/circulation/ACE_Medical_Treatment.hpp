@@ -57,8 +57,8 @@ class ACE_Medical_Treatment {
             volume = 1000;
             ratio[] = {"Plasma", 1};
             rateCoef = 0.6;
-            platelets = 0.075;
-            ph = 0.010;
+            platelets = 0.025;
+            ph = -0.010;
             bloodType = "O_N";
             compatibility[] = {"O", "O_N", "A", "A_N", "B","B_N", "AB", "AB_N"};
             ca = -0.012;
@@ -74,9 +74,9 @@ class ACE_Medical_Treatment {
             ratio[] = {"Blood", 1};
             type = "Plasma";
             rateCoef = 1;
-            platelets = 0.5;
+            platelets = 0.25;
             ca = 0.006;
-            ph = 0.006;
+            ph = -0.006;
         };
         class PlasmaIV_500: PlasmaIV {
             volume = 500;
@@ -224,12 +224,96 @@ class ACE_Medical_Treatment {
             bloodType = "AB_N";
             compatibility[] = {"AB","AB_N"};
         };
+        class FBTKBloodIV_500: BloodIV_500 {
+            volume = 500;
+            ratio[] = {"Blood", 1};
+            rateCoef = 0.6;
+            platelets = 0.1;
+            ph = 0;
+            bloodType = "O_N";
+            compatibility[] = {"O", "O_N", "A", "A_N", "B","B_N", "AB", "AB_N"};
+            ca = 0;
+        };
+        class FBTKBloodIV_O_500: FBTKBloodIV_500 {
+            bloodType = "O";
+            compatibility[] = {"O", "A", "B", "AB"};
+        };
+        class FBTKBloodIV_O_N_500: FBTKBloodIV_500 {
+            bloodType = "O_N";
+            compatibility[] = {"O", "O_N", "A", "A_N", "B","B_N", "AB", "AB_N"};
+        };
+        class FBTKBloodIV_A_500: FBTKBloodIV_500 {
+            bloodType = "A";
+            compatibility[] = {"A", "AB"};
+        };
+        class FBTKBloodIV_A_N_500: FBTKBloodIV_500 {
+            bloodType = "A_N";
+            compatibility[] = {"A", "A_N", "AB", "AB_N"};
+        };
+        class FBTKBloodIV_B_500: FBTKBloodIV_500 {
+            bloodType = "B";
+            compatibility[] = {"B", "AB"};
+        };
+        class FBTKBloodIV_B_N_500: FBTKBloodIV_500 {
+            bloodType = "B_N";
+            compatibility[] = {"B","B_N", "AB", "AB_N"};
+        };
+        class FBTKBloodIV_AB_500: FBTKBloodIV_500 {
+            bloodType = "AB";
+            compatibility[] = {"AB"};
+        };
+        class FBTKBloodIV_AB_N_500: FBTKBloodIV_500 {
+            bloodType = "AB_N";
+            compatibility[] = {"AB","AB_N"};
+        };
+        class FBTKBloodIV_250: BloodIV_250 {
+            volume = 500;
+            ratio[] = {"Blood", 1};
+            rateCoef = 0.6;
+            platelets = 0.1;
+            ph = 0;
+            bloodType = "O_N";
+            compatibility[] = {"O", "O_N", "A", "A_N", "B","B_N", "AB", "AB_N"};
+            ca = 0;
+        };
+        class FBTKBloodIV_O_250: FBTKBloodIV_250 {
+            bloodType = "O";
+            compatibility[] = {"O", "A", "B", "AB"};
+        };
+        class FBTKBloodIV_O_N_250: FBTKBloodIV_250 {
+            bloodType = "O_N";
+            compatibility[] = {"O", "O_N", "A", "A_N", "B","B_N", "AB", "AB_N"};
+        };
+        class FBTKBloodIV_A_250: FBTKBloodIV_250 {
+            bloodType = "A";
+            compatibility[] = {"A", "AB"};
+        };
+        class FBTKBloodIV_A_N_250: FBTKBloodIV_250 {
+            bloodType = "A_N";
+            compatibility[] = {"A", "A_N", "AB", "AB_N"};
+        };
+        class FBTKBloodIV_B_250: FBTKBloodIV_250 {
+            bloodType = "B";
+            compatibility[] = {"B", "AB"};
+        };
+        class FBTKBloodIV_B_N_250: FBTKBloodIV_250 {
+            bloodType = "B_N";
+            compatibility[] = {"B","B_N", "AB", "AB_N"};
+        };
+        class FBTKBloodIV_AB_250: FBTKBloodIV_250 {
+            bloodType = "AB";
+            compatibility[] = {"AB"};
+        };
+        class FBTKBloodIV_AB_N_250: FBTKBloodIV_250 {
+            bloodType = "AB_N";
+            compatibility[] = {"AB","AB_N"};
+        };
         class RingersLactateIV: SalineIV {
             volume = 1000;
             rateCoef = 1.4;
             type = "Ringers Lactate";
             platelets = 0;
-            ph = -0.012;
+            ph = 0.012;
             ca = -0.006;
         };
         class RingersLactateIV_500: RingersLactateIV {
@@ -246,14 +330,38 @@ class ACE_Medical_Treatment {
             volume = 500;
             rateCoef = 0.4;
             type = "PackedRBC";
-            platelets = 0.2;
-            ca = 0.014;
+            platelets = 0.1;
+            ca = -0.018;
             ph = 0.028;
         };
         class PackedRBCIV_250: PackedRBCIV_500 {
             volume = 250;
             rateCoef = 0.4;
             type = "PackedRBC";
+        };
+        class Platelets_100: BloodIV {
+            volume = 100;
+            rateCoef = 0.8;
+            type = "Platelets";
+            platelets = 2;
+            ca = 0.002;
+            ph = -0.006;
+        };
+        class KAT_DrawBlood500: BloodIV {
+            volume = 1;
+            rateCoef = 1.2;
+            type = "FBTK_500";
+            platelets = 0;
+            ca = 0;
+            ph = 0;
+        };
+        class KAT_DrawBlood250: BloodIV {
+            volume = 1;
+            rateCoef = 1.2;
+            type = "FBTK_250";
+            platelets = 0;
+            ca = 0;
+            ph = 0;
         };
         class Morphine_IVInfusion: SalineIV_250 {
             painReduce = 0.2;

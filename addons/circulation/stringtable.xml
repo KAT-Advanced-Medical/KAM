@@ -4047,5 +4047,110 @@
         <Key ID="STR_KAT_Circulation_SETTING_refractoryChance_DESC">
             <English>Chance for shockable cardiac arrest to be refractory, causing shocks to be much less effective</English>
         </Key>
+        <Key ID="STR_KAT_Circulation_platelet_IV">
+            <English>Platelets (100ml)</English>
+        </Key>
+        <Key ID="STR_KAT_Circulation_Action_PlateletIV100">
+            <English>Give Platelets (100ml)</English>
+        </Key>
+        <Key ID="STR_KAT_Circulation_Platelet_IV_Desc_Short">
+            <English>Concentrated Platelets IV, for restoring a patients Platelets</English>
+        </Key>
+        <Key ID="STR_KAT_Circulation_Action_250_FBTKBloodIV_A">
+            <English>Give FBTK Blood IV (250ml) BT: A+</English>
+        </Key>
+        <Key ID="STR_KAT_Circulation_Action_250_FBTKBloodIV_AB">
+            <English>Give FBTK Blood IV (250ml) BT: AB+</English>
+        </Key>
+        <Key ID="STR_KAT_Circulation_Action_250_FBTKBloodIV_AB_N">
+            <English>Give FBTK Blood IV (250ml) BT: AB-</English>
+        </Key>
+        <Key ID="STR_KAT_Circulation_Action_250_FBTKBloodIV_A_N">
+            <English>Give FBTK Blood IV (250ml) BT: A-</English>
+        </Key>
+        <Key ID="STR_KAT_Circulation_Action_250_FBTKBloodIV_B">
+            <English>Give FBTK Blood IV (250ml) BT: B+</English>
+        </Key>
+        <Key ID="STR_KAT_Circulation_Action_250_FBTKBloodIV_B_N">
+            <English>Give FBTK Blood IV (250ml) BT: B-</English>
+        </Key>
+        <Key ID="STR_KAT_Circulation_Action_250_FBTKBloodIV_O">
+            <English>Give FBTK Blood IV (250ml) BT: 0+</English>
+        </Key>
+        <Key ID="STR_KAT_Circulation_Action_250_FBTKBloodIV_O_N">
+            <English>Give FBTK Blood IV (250ml) BT: 0-</English>
+        </Key>
+        <Key ID="STR_KAT_Circulation_Action_500_FBTKBloodIV_A">
+            <English>Give FBTK Blood IV (500ml) BT: A+</English>
+        </Key>
+        <Key ID="STR_KAT_Circulation_Action_500_FBTKBloodIV_AB">
+            <English>Give FBTK Blood IV (500ml) BT: AB+</English>
+        </Key>
+        <Key ID="STR_KAT_Circulation_Action_500_FBTKBloodIV_AB_N">
+            <English>Give FBTK Blood IV (500ml) BT: AB-</English>
+        </Key>
+        <Key ID="STR_KAT_Circulation_Action_500_FBTKBloodIV_A_N">
+            <English>Give FBTK Blood IV (500ml) BT: A-</English>
+        </Key>
+        <Key ID="STR_KAT_Circulation_Action_500_FBTKBloodIV_B">
+            <English>Give FBTK Blood IV (500ml) BT: B+</English>
+        </Key>
+        <Key ID="STR_KAT_Circulation_Action_500_FBTKBloodIV_B_N">
+            <English>Give FBTK Blood IV (500ml) BT: B-</English>
+        </Key>
+        <Key ID="STR_KAT_Circulation_Action_500_FBTKBloodIV_O">
+            <English>Give FBTK Blood IV (500ml) BT: 0+</English>
+        </Key>
+        <Key ID="STR_KAT_Circulation_Action_500_FBTKBloodIV_O_N">
+            <English>Give FBTK Blood IV (500ml) BT: 0-</English>
+        </Key>
+        <Key ID="STR_KAT_Circulation_FBTKBloodIV_AB_250">
+            <English>FBTK Blood IV (250ml) BT: AB+</English>
+        </Key>
+        <Key ID="STR_KAT_Circulation_FBTKBloodIV_AB_250_N">
+            <English>FBTK Blood IV (250ml) BT: AB-</English>
+        </Key>
+        <Key ID="STR_KAT_Circulation_FBTKBloodIV_AB_500">
+            <English>FBTK Blood IV (500ml) BT: AB+</English>
+        </Key>
+        <Key ID="STR_KAT_Circulation_FBTKBloodIV_AB_500_N">
+            <English>FBTK Blood IV (500ml) BT: AB-</English>
+        </Key>
+        <Key ID="STR_KAT_Circulation_FBTKBloodIV_A_250">
+            <English>FBTK Blood IV (250ml) BT: A+</English>
+        </Key>
+        <Key ID="STR_KAT_Circulation_FBTKBloodIV_A_250_N">
+            <English>FBTK Blood IV (250ml) BT: A-</English>
+        </Key>
+        <Key ID="STR_KAT_Circulation_FBTKBloodIV_A_500">
+            <English>FBTK Blood IV (500ml) BT: A+</English>
+        </Key>
+        <Key ID="STR_KAT_Circulation_FBTKBloodIV_A_500_N">
+            <English>FBTK Blood IV (500ml) BT: A-</English>
+        </Key>
+        <Key ID="STR_KAT_Circulation_FBTKBloodIV_B_250">
+            <English>FBTK Blood IV (250ml) BT: B+</English>
+        </Key>
+        <Key ID="STR_KAT_Circulation_FBTKBloodIV_B_250_N">
+            <English>FBTK Blood IV (250ml) BT: B-</English>
+        </Key>
+        <Key ID="STR_KAT_Circulation_FBTKBloodIV_B_500">
+            <English>FBTK Blood IV (500ml) BT: B+</English>
+        </Key>
+        <Key ID="STR_KAT_Circulation_FBTKBloodIV_B_500_N">
+            <English>FBTK Blood IV (500ml) BT: B-</English>
+        </Key>
+        <Key ID="STR_KAT_Circulation_FBTKBloodIV_O_250">
+            <English>FBTK Blood IV (250ml) BT: 0+</English>
+        </Key>
+        <Key ID="STR_KAT_Circulation_FBTKBloodIV_O_250_N">
+            <English>FBTK Blood IV (250ml) BT: 0-</English>
+        </Key>
+        <Key ID="STR_KAT_Circulation_FBTKBloodIV_O_500">
+            <English>FBTK Blood IV (500ml) BT: 0+</English>
+        </Key>
+        <Key ID="STR_KAT_Circulation_FBTKBloodIV_O_500_N">
+            <English>FBTK Blood IV (500ml) BT: 0-</English>
+        </Key>
     </Package>
 </Project>

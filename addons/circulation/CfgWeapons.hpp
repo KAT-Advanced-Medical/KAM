@@ -101,6 +101,68 @@ class CfgWeapons {
     class kat_bloodIV_AB_N_250: kat_bloodIV_O_250 {
         displayName = CSTRING(BloodIV_AB_250_N);
     };
+    class kat_FBTKbloodIV_O_500: ACE_bloodIV_500 {
+        displayName = CSTRING(FBTKBloodIV_O_500);
+        ACE_isMedicalItem = 1;
+        scope = 1;
+    };
+    class kat_FBTKbloodIV_O_N_500: kat_FBTKbloodIV_O_500 {
+        displayName = CSTRING(FBTKBloodIV_O_500_N);
+    };
+    class kat_FBTKbloodIV_A_500: kat_FBTKbloodIV_O_500 {
+        displayName = CSTRING(FBTKBloodIV_A_500);
+    };
+    class kat_FBTKbloodIV_A_N_500: kat_FBTKbloodIV_O_500 {
+        displayName = CSTRING(BloodIV_A_500_N);
+    };
+    class kat_FBTKbloodIV_B_500: kat_FBTKbloodIV_O_500 {
+        displayName = CSTRING(FBTKBloodIV_B_500);
+    };
+    class kat_FBTKbloodIV_B_N_500: kat_FBTKbloodIV_O_500 {
+        displayName = CSTRING(FBTKBloodIV_B_500_N);
+    };
+    class kat_FBTKbloodIV_AB_500: kat_FBTKbloodIV_O_500 {
+        displayName = CSTRING(FBTKBloodIV_AB_500);
+    };
+    class kat_FBTKbloodIV_AB_N_500: kat_FBTKbloodIV_O_500 {
+        displayName = CSTRING(FBTKBloodIV_AB_500_N);
+    };
+    class kat_FBTKbloodIV_O_250: ACE_bloodIV_250 {
+        displayName = CSTRING(FBTKBloodIV_O_250);
+        ACE_isMedicalItem = 1;
+        scope = 1;
+    };
+    class kat_FBTKbloodIV_O_N_250: kat_FBTKbloodIV_O_250 {
+        displayName = CSTRING(FBTKBloodIV_O_250_N);
+    };
+    class kat_FBTKbloodIV_A_250: kat_FBTKbloodIV_O_250 {
+        displayName = CSTRING(FBTKBloodIV_A_250);
+    };
+    class kat_FBTKbloodIV_A_N_250: kat_FBTKbloodIV_O_250 {
+        displayName = CSTRING(FBTKBloodIV_A_250_N);
+    };
+    class kat_FBTKbloodIV_B_250: kat_FBTKbloodIV_O_250 {
+        displayName = CSTRING(FBTKBloodIV_B_250);
+    };
+    class kat_FBTKbloodIV_B_N_250: kat_FBTKbloodIV_O_250 {
+        displayName = CSTRING(FBTKBloodIV_B_250_N);
+    };
+    class kat_FBTKbloodIV_AB_250: kat_FBTKbloodIV_O_250 {
+        displayName = CSTRING(FBTKBloodIV_AB_250);
+    };
+    class kat_FBTKbloodIV_AB_N_250: kat_FBTKbloodIV_O_250 {
+        displayName = CSTRING(FBTKBloodIV_AB_250_N);
+    };
+    class kat_PlateletIV100: ACE_plasmaIV {
+        scope = 2;
+        author = "Cplhardcore";
+        displayName = CSTRING(Platelet_IV);
+        descriptionShort = CSTRING(Platelet_IV_Desc_Short);
+        ACE_isMedicalItem = 1;
+        class ItemInfo: CBA_MiscItem_ItemInfo {
+            mass = 1;
+        };
+    };
     class kat_HextendIV: ACE_plasmaIV {
         scope = 2;
         author = "Cplhardcore";

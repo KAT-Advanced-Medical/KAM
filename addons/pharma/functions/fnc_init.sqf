@@ -1,4 +1,3 @@
-#define DEBUG_MODE_FULL
 #include "..\script_component.hpp"
 /*
  * Author: Katalam, Miss Heda
@@ -475,13 +474,6 @@ if (GVAR(kidneyAction)) then {
             _ca,
             _effectiveCa,
             _ph
-        );
-
-        TRACE_3(
-            "IONIZED",
-            _ionizedFrac,
-            _ca,
-            _effectiveCa
         );
         private _deltaCa = _effectiveCa - _prevCa;
         _deltaCa = [_deltaCa, 0, 0.03] call _rateLimit;
