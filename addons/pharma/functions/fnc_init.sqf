@@ -377,7 +377,7 @@ if (GVAR(kidneyAction)) then {
         );
 
         
-        private _targetCa = 2.4 + linearConversion [-300, 300, _externalCa, -0.6, 0.6, true];
+        private _targetCa = 2.4 + linearConversion [-300, 300, _externalCa, -0.9, 0.9, true];
 
         private _caError = _targetCa - _ca;
         TRACE_3(
