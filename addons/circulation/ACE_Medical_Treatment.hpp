@@ -57,7 +57,7 @@ class ACE_Medical_Treatment {
             volume = 1000;
             ratio[] = {"Plasma", 1};
             rateCoef = 0.6;
-            platelets = 0.025;
+            platelets = 0.075;
             ph = -0.010;
             bloodType = "O_N";
             compatibility[] = {"O", "O_N", "A", "A_N", "B","B_N", "AB", "AB_N"};
@@ -74,7 +74,7 @@ class ACE_Medical_Treatment {
             ratio[] = {"Blood", 1};
             type = "Plasma";
             rateCoef = 1;
-            platelets = 0.25;
+            platelets = 0.075;
             ca = 0.006;
             ph = -0.006;
         };
