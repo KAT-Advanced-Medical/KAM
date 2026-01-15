@@ -434,14 +434,14 @@ if (GVAR(kidneyAction)) then {
             };
         };
         private _caError = _targetCa - _ca;
-        private _caGain = 0.15;
+        private _caGain = 0.05;
         private _caRate =
             _caError *
             _caGain *
             _kidneyFrac *
             _hepaticFrac *
             _bvFrac;
-        _caRate = _caRate max -0.005 min 0.005;
+        _caRate = _caRate max -0.0005 min 0.0005;
 
         _ca = _ca + _caRate;
 

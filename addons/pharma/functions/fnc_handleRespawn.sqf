@@ -376,7 +376,7 @@ if (GVAR(kidneyAction)) then {
         );
 
         
-        private _targetCa = 2.4 + linearConversion [-300, 300, _externalCa, -0.6, 0.6, true];
+        private _targetCa = 2.4 + linearConversion [-300, 300, _externalCa, -0.9, 0.9, true];
 
         private _caError = _targetCa - _ca;
         TRACE_3(
@@ -433,14 +433,14 @@ if (GVAR(kidneyAction)) then {
             };
         };
         private _caError = _targetCa - _ca;
-        private _caGain = 0.15;
+        private _caGain = 0.05;
         private _caRate =
             _caError *
             _caGain *
             _kidneyFrac *
             _hepaticFrac *
             _bvFrac;
-        _caRate = _caRate max -0.005 min 0.005;
+        _caRate = _caRate max -0.0005 min 0.0005;
 
         _ca = _ca + _caRate;
 
