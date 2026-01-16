@@ -134,6 +134,7 @@ if (GVAR(kidneyAction)) then {
                 0.35
                 * _ventEff
                 * _bufferLimit;
+            _respOffgas = _respOffgas * linearConversion [2, 6, _lactate, 1.0, 0.3, true];
             private _repoDrain =
                 linearConversion [1.0, 2.5, _ventRatio, 0.0, 0.0125, true]
                 * linearConversion [1.0, 1.2, _anerobicPressure, 0.6, 1.0, true];
@@ -220,12 +221,12 @@ if (GVAR(kidneyAction)) then {
         };
 
         if (_damage >= 0.7) then {
-        _kidneyFailTimer = _kidneyFailTimer + 15;
+        _kidneyFailTimer = _kidneyFailTimer + 5;
         } else {
-            _kidneyFailTimer = (_kidneyFailTimer - 5) max 0;
+            _kidneyFailTimer = (_kidneyFailTimer - 2) max 0;
         };
 
-        if (_kidneyFailTimer > 300 && !_kidneyFail) then {
+        if (_kidneyFailTimer > 600 && !_kidneyFail) then {
             _unit setVariable [QGVAR(kidneyFail), true, true];
         };
 
@@ -259,7 +260,7 @@ if (GVAR(kidneyAction)) then {
         if (!alive _unit) exitWith {
             [_idPFH] call CBA_fnc_removePerFrameHandler;
         };
-        private _maxDeltaPH = 4;
+
         private _maxDeltaLact = 0.15;
         private _maxDeltaCa = 0.05;
         private _maxDeltaDmg = 0.0025;
@@ -600,7 +601,8 @@ if (GVAR(kidneyAction)) then {
         if (
             abs _externalCa < 80 &&
             _ph > 7.2 &&
-            _txa == 0
+            !_kidneyFail &&
+            !_liverFail
         ) then {
             _ca = _ca max 2.05;
         };
