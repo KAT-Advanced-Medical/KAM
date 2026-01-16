@@ -163,7 +163,7 @@ if (GVAR(kidneyAction)) then {
         
         _unit setVariable [QGVAR(acidRepo), _acidRepo, true];
         if (_bicarb > 0) then {
-            private _bicarbMult = linearConversion [0, 300, abs _externalPh, 0.1, 1.0, true];
+            private _bicarbMult = linearConversion [0, 300, abs _externalPh, 0.2, 1.0, true];
             _externalPh = _externalPh - (0.6 * (_bicarb * _bicarbMult));
             if (_bvFrac < 0.7) then {
                 _externalPh = _externalPh + (0.3 * (_bicarb * _bicarbMult));
