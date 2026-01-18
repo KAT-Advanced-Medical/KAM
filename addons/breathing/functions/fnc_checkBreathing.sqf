@@ -45,10 +45,10 @@ if (_respiratoryDepth < 7)  then {
     _breathing_log = LLSTRING(breathing_Veryshallow);
 };
 
-if (_ph < 7.2) then {
+if (_ph < 7.3) then {
     _breath = LLSTRING(breath_mild);
 
-    if (_ph < 6.9) then {
+    if (_ph < 7.1) then {
         _breath = LLSTRING(breath_stink);
     };
 };

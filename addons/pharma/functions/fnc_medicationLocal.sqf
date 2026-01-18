@@ -85,7 +85,7 @@ private _occlusionMap = [
 private _idx = _occlusionMap findIf { _x#0 == _partIndex };
 private _result = if (_idx != -1) then { _occlusionMap select _idx select 1 } else { [] };
 private _subDermalMeds = [
-    "syringe_Lidocaine_10ml_10"
+    "syringe_Lidocaine_10ml_10", "syringe_Lidocaine_5ml_10"
 ];
 private _medParts = _classname splitString "_";
 private _hasValidSuffix = count _medParts > 2 && { _medParts select 2 isEqualTo "5ml" };
