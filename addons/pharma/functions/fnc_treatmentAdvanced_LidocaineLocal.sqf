@@ -16,7 +16,7 @@
  */
 params ["_patient", "_bodyPart", "_classname"];
 private _partIndex = ALL_BODY_PARTS find toLower _bodyPart;
-if (_classname in ["syringe_Lidocaine_10ml_10", "syringe_Lidocaine_5ml_12"]) then {
+if (_classname in ["syringe_Lidocaine_10ml_10", "syringe_Lidocaine_5ml_10"]) then {
     [{
     params ["_patient", "_partIndex"];
         [{
