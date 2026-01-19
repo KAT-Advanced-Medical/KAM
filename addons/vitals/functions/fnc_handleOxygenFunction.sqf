@@ -126,7 +126,7 @@ private _coNorm = linearConversion [0.7, 1.4, _co / CO_REF, 0.85, 1.35, true];
 private _co2Error = _previousCyclePaco2 - DEFAULT_PACO2;
 private _co2Gain =
     linearConversion [0, 5, abs _co2Error, 0.3, 1.0, true];
-_co2Drive =
+private _co2Drive =
     (linearConversion [30, 50, _previousCyclePaco2, -1200, 1200, true]) * _co2Gain;
 private _anaerobicDrive = linearConversion [1.0, 1.6, _anerobicPressure, 0, 3000, true];
 private _fatigueDrive = linearConversion [2200, 440, _aceAnReserve, 0, 2400, true];
@@ -153,7 +153,7 @@ private _CPP = (_map - _icp) max 0;
 private _respDrive = linearConversion [80, 20, _CPP, 1.0, 0.1, true];
 _respDrive = _respDrive * (1 - (_opioidDepression * 0.6));
 private _bvmDyssyncPrev = _unit getVariable [QGVAR(bvmDyssync), 0];
-_respDrive = _respDrive + (_bvmDyssyncPrev * 0.4);
+_respDrive = _respDrive + ((_bvmDyssyncPrev min 0.25) * 0.4);
 _respDrive = _respDrive max 0 min 1;
 if (_do2Norm < 0.3) then {
     _respDrive = _respDrive * 0.8;

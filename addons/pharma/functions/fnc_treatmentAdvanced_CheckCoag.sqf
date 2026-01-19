@@ -36,12 +36,33 @@ private _cwmpEffectiveness = 0;
 private _cwmpFixedEffectiveness = linearConversion [0, 1, _cwmpEffectiveness, 1, 1.3];
 private _alteplaseFixedEffectiveness = linearConversion [0, 1, _alteplaseEffectiveness, 1, 10];
 private _coagulationFactor = GET_BODY_FLUID_PLATELETS(_patient);
+private _coagMult = linearConversion [0, 600, _coagulationFactor, 3, 1, true];
 private _hypothermiaDelay = 1;
 if (EGVAR(hypothermia,hypothermiaActive)) then {
     _hypothermiaDelay = linearConversion [35, 17, (_patient getVariable [QEGVAR(hypothermia,unitTemperature), 37]), 1, 3, true];
 };
-private _woundClotDelayMult = (round (((1 * _alteplaseFixedEffectiveness * (600/_coagulationFactor) * _cwmpFixedEffectiveness * _hypothermiaDelay) min 10) * 10)) / 10;
-
+private _ph = GET_PH(_patient);
+private _ca = GET_CA(_patient);
+// Calcium effect (low Ca = slower clotting)
+private _calciumDelayMult = linearConversion [
+    1.2, 2.4,
+    _ca,
+    2.0, 1.0,        // up to 2× slower clotting
+    true
+];
+private _phDelayMult = linearConversion [
+    7.0, 7.4,
+    _ph,
+    3.0, 1.0,
+    true
+];
+private _woundClotDelayMult = (
+                _alteplaseFixedEffectiveness *
+                (_coagMult + _hypothermiaDelay) *
+                _cwmpFixedEffectiveness *
+                _calciumDelayMult *
+                _phDelayMult
+            ) min 10;
 [_patient, "quick_view", LLSTRING(Coag_Sense_Log), [_woundClotDelayMult]] call ACEFUNC(medical_treatment,addToLog);
 if (EGVAR(circulation,abgEnable)) then {
     private _bloodGasArray = GET_BLOOD_GAS(_patient);

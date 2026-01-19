@@ -100,22 +100,6 @@ private _newPFH = [{
 		_unit setVariable [QGVAR(reversibleDamage),_reversibleDamageDiff,true];
 	};
 
-	//Chance to cause bradycardia if ICP is too high
-	if (_ICP >= GVAR(ICPbradycardiaThreshold)) then {
-		if (floor (random 100) >= GVAR(ICPbradycardiaChance)) exitWith {};
-		
-		scopeName "causeBradycardia";
-		{ //Prevent adding bradycardia if it already exists
-			_x params ["_medication"];
-			if (_medication isEqualTo "BRADYCARDIA") exitWith {
-				breakOut "causeBradycardia";
-			};
-		} forEach (_unit getVariable [QACEGVAR(medical,medications), []]);
-
-		private _hrAdjust = -30 + floor random ((-10 - -30) + 1);
-        [_unit, "BRADYCARDIA", 60, 1200, _hrAdjust] call EFUNC(vitals,addMedicationAdjustment);
-	};
-
 	//Cause LOC if CMR becomes too low
 	if (_CMR <= GVAR(CMRunconsciousThreshold) && !(_unit getVariable ["ACE_isUnconscious",false])) then {
 		private _CMRunconIncrease = linearConversion [0, GVAR(CMRunconsciousThreshold), _CMR, 50, 0, true];
