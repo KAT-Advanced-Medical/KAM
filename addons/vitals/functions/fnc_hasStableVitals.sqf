@@ -33,7 +33,7 @@ if (_map < 60 || _map > 120) exitWith { false };
 
 private _heartRate = GET_HEART_RATE(_unit);
 private _defaultHeartRate = _unit getVariable [QEGVAR(circulation,defaultHeartRate), 80];
-if (_heartRate < (_defaultHeartRate - 35) || _heartRate > (_defaultHeartRate + 35)) exitWith { false };
+if (_heartRate < ((_defaultHeartRate - 35) max 40)) exitWith { false };
 
 private _unitTemperature = _unit getVariable [QGVAR(unitTemperature), 37];
 if (_unitTemperature < 34) exitWith { false };
