@@ -835,8 +835,8 @@ class ACE_ADDON(Medical_Treatment) {
         class syringe_CalciumChloride_5ml {
             painReduce = 0;
             hrIncreaseLow[]    = {10, 20};
-            hrIncreaseNormal[] = {8, 20};
-            hrIncreaseHigh[]   = {5, 15};
+            hrIncreaseNormal[] = {8, 15};
+            hrIncreaseHigh[]   = {5, 10};
             timeInSystem = 60;
             timeTillMaxEffect = 5;
             dose = 1;
