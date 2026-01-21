@@ -53,7 +53,7 @@ private _newPFH = [{
 	if (_deoxygenatedTicks >= GVAR(necrosisTicks)) then {
 		_necrosis = (_necrosis + GVAR(necrosisIncrease)) min 100;
 		if (_necrosis > random [75, 85, 100]) then {
-			_unit setDamage 1;
+			[_unit, "Fatal_Brain_Necrosis"] call ACEFUNC(medical_status,setDead);
 		};
 	};
 

@@ -48,6 +48,6 @@ params ["_patient"];
                 private _bloodlevels = GET_BODY_FLUID(_patient);
                 _bloodlevels set [5, ((_bloodlevels select 5) - 20) max 0];
                 _patient setVariable [QEGVAR(circulation,bodyFluid), _bloodlevels, true];
-                if ((random 10000) < 1) then {_patient setDamage 1;};
+                if ((random 10000) < 1) then {[_patient, "EACAOD"] call ACEFUNC(medical_status,setDead);};
         }, 15, [_patient, 0]] call CBA_fnc_addPerFrameHandler;
 }, [_patient], 15] call CBA_fnc_waitAndExecute;
