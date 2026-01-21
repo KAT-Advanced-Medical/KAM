@@ -245,19 +245,10 @@ GVAR(PulseRateReady) = true;
     };
 
     if (GVAR(AEDX_MonitorTarget) getVariable [QACEGVAR(medical,CPR_provider), objNull] isNotEqualTo objNull) then {
-
-        private _rhythmHR = 0;
-
-        if (GVAR(AEDX_MonitorTarget) getVariable [QGVAR(cardiacArrestType), 0] > 0) then {
-            _rhythmHR = GVAR(AEDX_MonitorTarget) call FUNC(getCardiacArrestHeartRate);
-        } else {
-            _rhythmHR = GVAR(AEDX_MonitorTarget) getVariable [QACEGVAR(medical,heartRate), 0];
-        };
-
         if (GVAR(AEDX_MonitorTarget) getVariable [QGVAR(attachedLucasState), false]) then {
             _hr = 100 // fake heart rate because patient is dead and off state machine
         } else {
-            _hr = random [100, 100 + _rhythmHR / 2, _rhythmHR];
+            _hr = random [95, 100, 110];
         };
         if (GVAR(AED_X_VitalsMonitor_BloodPressureInterval) > 0) then {
             _bp = GVAR(AEDX_MonitorTarget) getVariable [QGVAR(StoredBloodPressure), [0,0]];

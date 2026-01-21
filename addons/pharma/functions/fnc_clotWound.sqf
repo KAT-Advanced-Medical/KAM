@@ -52,7 +52,7 @@ private _fnc_clotWound = {
                     _cwmpEffectiveness = _cwmpEffectiveness max _effectiveness;
                 };
             } forEach _medStack;
-            private _cwmpFixedEffectiveness = linearConversion [0, 1, _cwmpEffectiveness, 1, 1.2];
+            private _cwmpFixedEffectiveness = linearConversion [0, 1, _cwmpEffectiveness, 1, 1.1];
             private _alteplaseFixedEffectiveness = linearConversion [0, 1, _alteplaseEffectiveness, 1, 10];
             private _coagulationFactor = GET_BODY_FLUID_PLATELETS(_unit);
             private _hypothermiaDelay = 1;
@@ -85,7 +85,7 @@ private _fnc_clotWound = {
                 _calciumDelayMult *
                 _phDelayMult
             ) min 10;
-            if (_woundClotDelayMult > 6) exitWith {};
+            if (_woundClotDelayMult > 8) exitWith {};
             switch (_suffix) do {
                 case "Minor": {
                     switch (true) do {

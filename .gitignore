@@ -77,6 +77,7 @@ releases/*
 keys/*
 .hemtt/local
 .hemttout
+.hemttprivatekey
 ####
 hemtt.exe
 ArmaScriptCompiler.exe
@@ -84,3 +85,4 @@ ArmaScriptCompiler.exe
 #SQF-VM Server
 .vscode\sqfvm-lsp
 .vscode
+

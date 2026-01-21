@@ -1,3 +1,4 @@
+#define DEBUG_MODE_FULL
 #include "..\script_component.hpp"
 /*
  * Author: Glowbal, Mazinski
@@ -29,7 +30,7 @@ private _actualHeartRate = _hrTarget;
 private _painLevel = 0;
 private _shockClass = "NONE";
 private _metabolicDemand = 0;
-if IN_CRDC_ARRST(_unit) then {
+if (IN_CRDC_ARRST(_unit)) then {
     if (alive (_unit getVariable [QACEGVAR(medical,CPR_provider), objNull])) then {
         if (_actualHeartRate == 0) then { _syncValue = true };
         _actualHeartRate = random [95, 100, 110];
@@ -201,36 +202,33 @@ if IN_CRDC_ARRST(_unit) then {
         + (_aceAnFatigue * 40);
 
     _actualHeartRate = (_actualHeartRate max MIN_HR) min MAX_HR;
-};
-private _hrMem =
+    private _hrMem =
     _unit getVariable [QGVAR(hrMemory), _actualHeartRate];
+    private _hrTau = 3.5;
 
-private _hrTau = 3.5;
-
-_hrTau =
-    _hrTau
-    * linearConversion [0, 1, _metabolicDemand, 1, 1.4, true];
-
-if (_shockClass != "NONE" || _painLevel > 0.4) then {
-    _hrTau = 1.8;
+    _hrTau =
+        _hrTau
+        * linearConversion [0, 1, _metabolicDemand, 1, 1.4, true];
+    if (_shockClass != "NONE" || _painLevel > 0.4) then {
+        _hrTau = 1.8;
+    };
+    _hrMem =
+        _hrMem
+        + ((_actualHeartRate - _hrMem) * (_deltaT / _hrTau));
+    _unit setVariable [QGVAR(hrMemory), _hrMem];
+    if (_unit getVariable [QEGVAR(circulation,heartRestart), false]) then {
+        _hrMem = 70;
+        _unit setVariable [QGVAR(hrMemory), _hrMem, true];
+        
+    };
+    _actualHeartRate = _hrMem;
+    TRACE_3(
+        "HR_FINAL",
+        _actualHeartRate,
+        _map,
+        GET_BLOOD_VOLUME_LITERS(_unit)
+    );
 };
-
-_hrMem =
-    _hrMem
-    + ((_actualHeartRate - _hrMem) * (_deltaT / _hrTau));
-
-_unit setVariable [QGVAR(hrMemory), _hrMem];
-if (_unit getVariable [QEGVAR(circulation,heartRestart), false]) then {
-    _unit setVariable [QGVAR(hrMemory), 40, true];
-    _hrMem = 40;
-};
-_actualHeartRate = _hrMem;
-TRACE_3(
-    "HR_FINAL",
-    _actualHeartRate,
-    _map,
-    GET_BLOOD_VOLUME_LITERS(_unit)
-);
 
 _unit setVariable [VAR_HEART_RATE, _actualHeartRate, _syncValue];
 _actualHeartRate

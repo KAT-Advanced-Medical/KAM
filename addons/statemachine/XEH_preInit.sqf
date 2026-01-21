@@ -38,7 +38,4 @@ PREP_RECOMPILE_END;
     true
 ] call CBA_Settings_fnc_init;*/
 
-// Overwrite ace statemachine
-ACEGVAR(medical,STATE_MACHINE) = (configFile >> "KAT_StateMachine") call CBA_statemachine_fnc_createFromConfig;
-
 ADDON = true;

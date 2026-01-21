@@ -457,7 +457,7 @@ if (!_patternApplied) then {
             _respDrive,
             _opioidDepression
         );
-
+        _unit setVariable [QGVAR(breathingState), 0, true];
         private _targetRR =
             linearConversion [2400, 10500, _demandVentilation, 8, 35, true];
 
@@ -748,9 +748,9 @@ if (IN_CRDC_ARRST(_unit)) then {
         alive (_unit getVariable [QACEGVAR(medical,CPR_provider), objNull]);
     private _perfusion =
         if (_cprActive) then {
-            linearConversion [0.6, 1.2, _coNorm, 0.25, 0.45, true]
+            linearConversion [0.6, 1.2, _coNorm, 0.75, 0.95, true]
         } else {
-            0.05
+            0.75
         };
     _pao2 =
         (_pALVo2 * _perfusion)
@@ -819,28 +819,25 @@ if (IN_CRDC_ARRST(_unit)) then {
         _etco2);
 };
 
-private _arrestPerfusion = [1, (1 * EGVAR(breathing,SpO2_PerfusionMultiplier))] select ((IN_CRDC_ARRST(_unit)) && (EGVAR(breathing,SpO2_perfusion)));
-_pao2 = if (_previousCyclePao2 != _pao2) then { ([ (_previousCyclePao2 - ((PAO2_MAX_CHANGE * EGVAR(breathing,SpO2_MultiplyNegative) * _arrestPerfusion) * _deltaT)) , (_previousCyclePao2 + ((PAO2_MAX_CHANGE * EGVAR(breathing,SpO2_MultiplyPositive)) * _deltaT))] select ((_previousCyclePao2 - _pao2) < 0)) } else { _pao2 };
 TRACE_3("pao21",
         _pao2,_previousCyclePao2,_arrestPerfusion);
 if (_previousCyclePao2 < 55 && _alveolarVent > 3000) then {
-    _pulmonaryShunt = (_pulmonaryShunt + (0.0002 * _deltaT));
+    _pulmonaryShunt = (_pulmonaryShunt + (0.00002 * _deltaT));
 };
 if ((_respiratoryDepth < (DEFAULT_RESPIRATORY_DEPTH * 0.4)) && (_respiratoryRate < 10)) then {
-    _pulmonaryShunt = (_pulmonaryShunt + (0.0002 * _deltaT));
+    _pulmonaryShunt = (_pulmonaryShunt + (0.00002 * _deltaT));
 };
 if (IN_CRDC_ARRST(_unit)) then {
-    _pulmonaryShunt = (_pulmonaryShunt + (0.0006 * _deltaT));
+    _pulmonaryShunt = (_pulmonaryShunt + (0.00006 * _deltaT));
 };
 if (!IN_CRDC_ARRST(_unit) && _alveolarVent > 4000) then {
-    _pulmonaryShunt = ((_pulmonaryShunt - (0.005 * _deltaT)) max 0);
+    _pulmonaryShunt = ((_pulmonaryShunt - (0.0005 * _deltaT)) max 0);
 };
 _pulmonaryShunt = _pulmonaryShunt min 0.6;
-private _shuntEff =
-    linearConversion [0, 0.6, _pulmonaryShunt, 1.0, 0.6, true];
 _pao2 = _pao2 * (1 - _pulmonaryShunt);
 TRACE_2("pao22",
         _pao2,_pulmonaryShunt);
+_pao2 = if (_previousCyclePao2 != _pao2) then { ([ (_previousCyclePao2 - (((PAO2_MAX_CHANGE/10) * EGVAR(breathing,SpO2_MultiplyNegative)) * _deltaT)) , (_previousCyclePao2 + ((PAO2_MAX_CHANGE * EGVAR(breathing,SpO2_MultiplyPositive)) * _deltaT))] select ((_previousCyclePao2 - _pao2) < 0)) } else { _pao2 };
 private _baseConst =
     7.4 - log(24 / (0.03 * 39.9));
 

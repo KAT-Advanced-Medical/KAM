@@ -207,42 +207,32 @@ private _dlg = uiNamespace getVariable ["KAT_Circulation_AEDX_Monitor_Display", 
         (_dlg displayCtrl IDC_DISPLAY_SPO2_TITLE) ctrlSetText "---";
     };
 
-    if (GVAR(AEDX_MonitorTarget_Title) getVariable [QACEGVAR(medical,CPR_provider), objNull] isNotEqualTo objNull) then {
-
-        private _rhythmHR = 0;
-
-        if(GVAR(AEDX_MonitorTarget_Title) getVariable [QGVAR(cardiacArrestType), 0] > 0) then {
-            _rhythmHR = GVAR(AEDX_MonitorTarget_Title) call FUNC(getCardiacArrestHeartRate);
-        } else {
-            _rhythmHR = GVAR(AEDX_MonitorTarget_Title) getVariable [QACEGVAR(medical,heartRate), 0];
-        };
-
+    if (GVAR(AEDX_MonitorTarget) getVariable [QACEGVAR(medical,CPR_provider), objNull] isNotEqualTo objNull) then {
         if (GVAR(AEDX_MonitorTarget) getVariable [QGVAR(attachedLucasState), false]) then {
             _hr = 100 // fake heart rate because patient is dead and off state machine
         } else {
-            _hr = random [100, 100 + _rhythmHR / 2, _rhythmHR];
+            _hr = random [95, 100, 110];
         };
-
         if (GVAR(AED_X_VitalsMonitor_BloodPressureInterval) > 0) then {
-            _bp = GVAR(AEDX_MonitorTarget_Title) getVariable [QGVAR(StoredBloodPressure), [0,0]];
+            _bp = GVAR(AEDX_MonitorTarget) getVariable [QGVAR(StoredBloodPressure), [0,0]];
         } else {
-            _bp = GVAR(AEDX_MonitorTarget_Title) call FUNC(getBloodPressure);
+            _bp = GVAR(AEDX_MonitorTarget) call FUNC(getBloodPressure);
         };
     } else {
-        if !(GVAR(AEDX_MonitorTarget_Title) getVariable [QGVAR(heartRestart), false]) then {
-            if (GVAR(AEDX_MonitorTarget_Title) getVariable [QGVAR(cardiacArrestType), 0] > 0) then {
-                _hr = GVAR(AEDX_MonitorTarget_Title) call FUNC(getCardiacArrestHeartRate);
+        if !(GVAR(AEDX_MonitorTarget) getVariable [QGVAR(heartRestart), false]) then {
+            if (GVAR(AEDX_MonitorTarget) getVariable [QGVAR(cardiacArrestType), 0] > 0) then {
+                _hr = GVAR(AEDX_MonitorTarget) call FUNC(getCardiacArrestHeartRate);
 
                 if (GVAR(AED_X_VitalsMonitor_BloodPressureInterval) > 0) then {
-                    _bp = GVAR(AEDX_MonitorTarget_Title) getVariable [QGVAR(StoredBloodPressure), [0,0]];
+                    _bp = GVAR(AEDX_MonitorTarget) getVariable [QGVAR(StoredBloodPressure), [0,0]];
                 };
             } else {
-                _hr = GVAR(AEDX_MonitorTarget_Title) getVariable [QACEGVAR(medical,heartRate), 0];
+                _hr = GVAR(AEDX_MonitorTarget) getVariable [QACEGVAR(medical,heartRate), 0];
 
                 if (GVAR(AED_X_VitalsMonitor_BloodPressureInterval) > 0) then {
-                    _bp = GVAR(AEDX_MonitorTarget_Title) getVariable [QGVAR(StoredBloodPressure), [0,0]];
+                    _bp = GVAR(AEDX_MonitorTarget) getVariable [QGVAR(StoredBloodPressure), [0,0]];
                 } else {
-                    _bp = GVAR(AEDX_MonitorTarget_Title) call FUNC(getBloodPressure);
+                    _bp = GVAR(AEDX_MonitorTarget) call FUNC(getBloodPressure);
                 };
             };
         };

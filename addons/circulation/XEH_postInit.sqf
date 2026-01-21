@@ -43,18 +43,14 @@ GVAR(AEDX_MonitorTarget) = objNull;
     }, 1, [_unit]] call CBA_fnc_addPerFrameHandler;
 }] call CBA_fnc_addEventHandler;
 
-[QGVAR(AEDused), {
+[QACEGVAR(medical,CPRSucceeded), {
     params ["_unit"];
+    _unit setVariable [QGVAR(refractoryCA), false, true];
     _unit setVariable [QGVAR(heartRestart), true, true];
     [{
         params ["_unit"];
         _unit setVariable [QGVAR(heartRestart), false, true];
     }, [_unit], 5] call CBA_fnc_waitAndExecute;
-}] call CBA_fnc_addEventHandler;
-
-[QACEGVAR(medical,CPRSucceeded), {
-    params ["_unit"];
-    _unit setVariable [QGVAR(refractoryCA), false, true];
 }] call CBA_fnc_addEventHandler;
 
 [QGVAR(incorrectAEDUsage), {
