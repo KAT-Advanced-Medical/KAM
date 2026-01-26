@@ -12,6 +12,7 @@
             <Chinese>計時器增加 15 秒</Chinese>
             <Chinesesimp>添加15秒观看计时器</Chinesesimp>
             <Dutch>Voeg 15 seconden toe aan de timer</Dutch>
+            <Turkish>Saat Zamanlayıcısına 15 Saniye Ekle</Turkish>
         </Key>
         <Key ID="STR_KAT_Watch_CavminDescription">
             <English>Watch with Vital Monitoring Capabilities. Garry Owen!</English>
@@ -24,6 +25,7 @@
             <Chinese>具有生命體徵監測功能的腕錶。Garry Owen!</Chinese>
             <Chinesesimp>使用重要监控功能观看。加里·欧文！</Chinesesimp>
             <Dutch>Horloge met vitale waarden monitoringscapaciteit. Garry Owen!</Dutch>
+            <Turkish>Hayati Bulguları İzleme Özellikli Saat. Garry Owen!</Turkish>
         </Key>
         <Key ID="STR_KAT_Watch_CavminDisplayName">
             <English>Katmin Cavalry Limited</English>
@@ -36,6 +38,7 @@
             <Chinese>Katmin Cavalry Limited</Chinese>
             <Chinesesimp>Katmin 骑兵限量</Chinesesimp>
             <Dutch>Katmin Cavalry Limited</Dutch>
+            <Turkish>Katmin Cavalry Limited</Turkish>
         </Key>
         <Key ID="STR_KAT_Watch_KatminDescription">
             <English>Watch with Vital Monitoring Capabilities</English>
@@ -48,6 +51,7 @@
             <Chinese>具有生命體徵監測功能的腕錶</Chinese>
             <Chinesesimp>具有重要监控功能的手表</Chinesesimp>
             <Dutch>Horloge met ingebouwde vitale waarden monitor</Dutch>
+            <Turkish>Hayati Bulguları İzleme Özellikli Saat</Turkish>
         </Key>
         <Key ID="STR_KAT_Watch_KatminDisplayName">
             <English>Katmin K500</English>
@@ -60,6 +64,7 @@
             <Chinese>Katmin K500</Chinese>
             <Chinesesimp>Katmin K500</Chinesesimp>
             <Dutch>Katmin K500</Dutch>
+            <Turkish>Katmin K500</Turkish>
         </Key>
         <Key ID="STR_KAT_Watch_RangerDescription">
             <English>Watch with Vital Monitoring Capabilities. Sua Sponte.</English>
@@ -72,6 +77,7 @@
             <Chinese>具有生命監測功能的腕錶。Sua Sponte。</Chinese>
             <Chinesesimp>使用重要监控功能观看。Sua Sponte。</Chinesesimp>
             <Dutch>Horloge met vitale waarden monitoringscapaciteit. Sua Sponte.</Dutch>
+            <Turkish>Hayati Bulguları İzleme Özellikli Saat. Sua Sponte.</Turkish>
         </Key>
         <Key ID="STR_KAT_Watch_RangerDisplayName">
             <English>Katmin K12 Model R</English>
@@ -84,6 +90,7 @@
             <Chinese>Katmin K12 R 型</Chinese>
             <Chinesesimp>Katmin K12 R型</Chinesesimp>
             <Dutch>Katmin K12 Model R</Dutch>
+            <Turkish>Katmin K12 Model R</Turkish>
         </Key>
         <Key ID="STR_KAT_Watch_SETTING_AltitudeForm">
             <English>Select altitude form</English>
@@ -96,6 +103,7 @@
             <Chinese>選擇高度單位</Chinese>
             <Chinesesimp>选择高度单位</Chinesesimp>
             <Dutch>Selecteer hoogte vorm</Dutch>
+            <Turkish>İrtifa Birimini Seç</Turkish>
         </Key>
         <Key ID="STR_KAT_Watch_SETTING_AltitudeForm_Desc">
             <English>Selects which altitude unit is used for the KATMIN watch display</English>
@@ -108,6 +116,7 @@
             <Chinese>選擇在KATMIN手錶顯示器上使用的高度單位</Chinese>
             <Chinesesimp>选择用于KATMIN手表显示的高度单位</Chinesesimp>
             <Dutch>Selecteerd welk hoogte eenheid gebruikt wordt voor de KATMIN horloge</Dutch>
+            <Turkish>KATMIN saat ekranında kullanılacak irtifa birimini seçer</Turkish>
         </Key>
         <Key ID="STR_KAT_Watch_SETTING_AltitudeForm_feet">
             <English>Feet</English>
@@ -120,6 +129,7 @@
             <Chinese>英尺</Chinese>
             <Chinesesimp>英尺</Chinesesimp>
             <Dutch>Voet</Dutch>
+            <Turkish>Feet</Turkish>
         </Key>
         <Key ID="STR_KAT_Watch_SETTING_AltitudeForm_meters">
             <English>Meters</English>
@@ -132,6 +142,7 @@
             <Chinese>公尺</Chinese>
             <Chinesesimp>米</Chinesesimp>
             <Dutch>Meters</Dutch>
+            <Turkish>Metre</Turkish>
         </Key>
         <Key ID="STR_KAT_Watch_SETTING_PressureForm">
             <English>Select pressure form</English>
@@ -144,6 +155,7 @@
             <Chinese>選擇壓力單位</Chinese>
             <Chinesesimp>选择压力单位</Chinesesimp>
             <Dutch>Selecteer drukvorm</Dutch>
+            <Turkish>Basınç Birimini Seç</Turkish>
         </Key>
         <Key ID="STR_KAT_Watch_SETTING_PressureForm_Desc">
             <English>Selects which pressure unit is used for the KATMIN watch display</English>
@@ -156,6 +168,7 @@
             <Chinese>選擇在KATMIN手錶顯示的壓力單位</Chinese>
             <Chinesesimp>选择用于KATMIN手表显示的压力单位</Chinesesimp>
             <Dutch>Selecteerd welke drukeenheden gebruikt worden voor de KATMIN horloge</Dutch>
+            <Turkish>KATMIN saat ekranında kullanılacak basınç birimini seçer</Turkish>
         </Key>
         <Key ID="STR_KAT_Watch_SETTING_PressureForm_hPa">
             <English>hPa</English>
@@ -168,6 +181,7 @@
             <Chinese>百帕</Chinese>
             <Chinesesimp>hPa</Chinesesimp>
             <Dutch>hPa</Dutch>
+            <Turkish>hPa</Turkish>
         </Key>
         <Key ID="STR_KAT_Watch_SETTING_PressureForm_mmHg">
             <English>mmHg</English>
@@ -180,6 +194,7 @@
             <Chinese>mmHg</Chinese>
             <Chinesesimp>mmHg</Chinesesimp>
             <Dutch>mmHg</Dutch>
+            <Turkish>mmHg</Turkish>
         </Key>
         <Key ID="STR_KAT_Watch_SETTING_TemperatureForm">
             <English>Select temperature form</English>
@@ -192,6 +207,7 @@
             <Chinese>選擇溫度單位</Chinese>
             <Chinesesimp>选择温度单位</Chinesesimp>
             <Dutch>Selecteer temperatuur vorm</Dutch>
+            <Turkish>Sıcaklık Birimini Seç</Turkish>
         </Key>
         <Key ID="STR_KAT_Watch_SETTING_TemperatureForm_Celsius">
             <English>Celsius</English>
@@ -204,6 +220,7 @@
             <Chinese>攝氏</Chinese>
             <Chinesesimp>摄氏度</Chinesesimp>
             <Dutch>Celsius</Dutch>
+            <Turkish>Celsius</Turkish>
         </Key>
         <Key ID="STR_KAT_Watch_SETTING_TemperatureForm_Desc">
             <English>Selects which temperature unit is used for the KATMIN watch display</English>
@@ -216,6 +233,7 @@
             <Chinese>選擇在KATMIN手錶顯示器上使用的溫度單位</Chinese>
             <Chinesesimp>选择KATMIN手表显示使用的温度单位</Chinesesimp>
             <Dutch>Selecteert welke temperatuur eenheid gebruikt wordt voor de KATMIN horloge</Dutch>
+            <Turkish>KATMIN saat ekranında kullanılacak sıcaklık birimini seçer</Turkish>
         </Key>
         <Key ID="STR_KAT_Watch_SETTING_TemperatureForm_Fahrenheit">
             <English>Fahrenheit</English>
@@ -228,6 +246,7 @@
             <Chinese>華氏</Chinese>
             <Chinesesimp>华氏度</Chinesesimp>
             <Dutch>Fahrenheit</Dutch>
+            <Turkish>Fahrenheit</Turkish>
         </Key>
         <Key ID="STR_KAT_Watch_SETTING_WatchInaccuracy">
             <English>Watch Vitals Inaccuracy</English>
@@ -237,6 +256,7 @@
             <German>Ungenauigkeit der Uhren-Vitalwerte</German>
             <Japanese>腕時計バイタルの不正確性</Japanese>
             <Dutch>Inaccuraatheid van vitale waarden gemeten via horloge</Dutch>
+            <Turkish>Saat Hayati Bulgular Hata Payı</Turkish>
         </Key>
         <Key ID="STR_KAT_Watch_SETTING__WatchInaccuracy_Desc">
             <English>Enables watch inaccuracy when reading patient vitals</English>
@@ -246,6 +266,7 @@
             <German>Aktiviert Ungenauigkeit der Vitalwerte der Uhren</German>
             <Japanese>腕時計が患者のバイタルを不正確に読み取るようになります。</Japanese>
             <Dutch>Staat inaccuraatheid bij metingen van vitale waarden door horloges toe</Dutch>
+            <Turkish>Saatin hasta hayati bulgularını okurken hata payı oluşturmasını etkinleştirir</Turkish>
         </Key>
         <Key ID="STR_KAT_Watch_STSDescription">
             <English>Watch with Vital Monitoring Capabilities. So Others May Live.</English>
@@ -258,6 +279,7 @@
             <Chinese>具有生命體徵監測功能的腕錶。以便其他人能夠活下去。</Chinese>
             <Chinesesimp>使用重要监控功能观看。所以其他人可以活下去。</Chinesesimp>
             <Dutch>Horloge met vitale waarden monitoringscapaciteit. Zodat anderen kunnen leven.</Dutch>
+            <Turkish>Hayati Bulguları İzleme Özellikli Saat. Başkaları Yaşasın Diye!</Turkish>
         </Key>
         <Key ID="STR_KAT_Watch_STSDisplayName">
             <English>Katmin Jump Standard</English>
@@ -269,6 +291,7 @@
             <Japanese>Katmin Jump Standard</Japanese>
             <Chinesesimp>Katmin 跳跃标准</Chinesesimp>
             <Dutch>Katmin Jump Standard</Dutch>
+            <Turkish>Katmin Jump Standard</Turkish>
         </Key>
         <Key ID="STR_KAT_Watch_ShowKATWatch_Setting">
             <English>Show KATMIN Watch</English>
@@ -281,6 +304,7 @@
             <Chinese>顯示 KATMIN 腕錶</Chinese>
             <Chinesesimp>显示KATMIN手表</Chinesesimp>
             <Dutch>Toon KATMIN horloge</Dutch>
+            <Turkish>KATMIN Saatini Göster</Turkish>
         </Key>
         <Key ID="STR_KAT_Watch_StartStopTimer_Setting">
             <English>Start and Stop Watch Timer</English>
@@ -293,6 +317,7 @@
             <Chinese>啟動、停止計時器</Chinese>
             <Chinesesimp>启动和停止手表定时器</Chinesesimp>
             <Dutch>Timer starten/stoppen</Dutch>
+            <Turkish>Saat Zamanlayıcısını Başlat / Durdur</Turkish>
         </Key>
         <Key ID="STR_KAT_Watch_SubtractTimer_Setting">
             <English>Subtract 15 Seconds from Watch Timer</English>
@@ -305,6 +330,7 @@
             <Chinese>計時器減去 15 秒</Chinese>
             <Chinesesimp>从手表计时器中减去15秒</Chinesesimp>
             <Dutch>15 seconden van timer afhalen</Dutch>
+            <Turkish>Saat Zamanlayıcısından 15 Saniye Çıkar</Turkish>
         </Key>
         <Key ID="STR_KAT_Watch_TimeModifier_Settings">
             <English>Time Modifier (K500/Model R)</English>
@@ -316,6 +342,7 @@
             <Japanese>盤面/指針の表示切り替え (K500/Model R)</Japanese>
             <Chinese>時間調整器 (K500/Model R)</Chinese>
             <Dutch>Tijdmodificator (K500/Model R)</Dutch>
+            <Turkish>Zaman Değiştirici (K500/Model R)</Turkish>
         </Key>
         <Key ID="STR_KAT_Watch_cba_name">
             <English>KAT - ADV Medical: Watch</English>
@@ -325,6 +352,7 @@
             <German>KAT - ADV Medical: Uhren</German>
             <Japanese>KAM - 腕時計 (Watch)</Japanese>
             <Dutch>KAT - ADV Medical: Horloges</Dutch>
+            <Turkish>KAT – Gelişmiş Tıp: Saat</Turkish>
         </Key>
         <Key ID="STR_KAT_Watch_descentFT">
             <English>%1ft/s</English>
@@ -337,6 +365,7 @@
             <Chinese>%1 ft/s</Chinese>
             <Chinesesimp>%1 ft/s</Chinesesimp>
             <Dutch>%1ft/s</Dutch>
+            <Turkish>%1 ft/sn</Turkish>
         </Key>
         <Key ID="STR_KAT_Watch_descentM">
             <English>%1m/s</English>
@@ -349,6 +378,7 @@
             <Chinese>%1 m/s</Chinese>
             <Chinesesimp>%1 m/s</Chinesesimp>
             <Dutch>%1m/s</Dutch>
+            <Turkish>%1 m/sn</Turkish>
         </Key>
     </Package>
 </Project>
