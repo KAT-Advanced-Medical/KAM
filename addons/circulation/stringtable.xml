@@ -15,6 +15,7 @@
             <Chinesesimp>AED</Chinesesimp>
             <Finnish>AUD</Finnish>
             <Dutch>AED</Dutch>
+            <Turkish>AED</Turkish>
         </Key>
         <Key ID="STR_KAT_Circulation_AEDStation_Action_PlacePads">
             <English>Station: Place AED Pads</English>
@@ -31,6 +32,7 @@
             <Chinesesimp>固定式 AED：放置 AED 电极片</Chinesesimp>
             <Finnish>Asema: aseta AUD-tyynyt</Finnish>
             <Dutch>Station: Plaats AED pads</Dutch>
+            <Turkish>İstasyon: AED Pedlerini Yerleştir</Turkish>
         </Key>
         <Key ID="STR_KAT_Circulation_AEDVehicle_Action_PlacePads">
             <English>Vehicle: Place AED Pads</English>
@@ -47,6 +49,7 @@
             <Chinesesimp>车辆：放置AED垫</Chinesesimp>
             <Finnish>Ajoneuvo: aseta AUD-tyynyt</Finnish>
             <Dutch>Voertuig: Plaats AED pads</Dutch>
+            <Turkish>Araç: AED Pedlerini Yerleştir</Turkish>
         </Key>
         <Key ID="STR_KAT_Circulation_AEDXStation_Action_ConnectMonitor">
             <English>Station: Connect Vitals Monitor</English>
@@ -63,6 +66,7 @@
             <Chinesesimp>设置AED：连接生命监护仪</Chinesesimp>
             <Finnish>Asema: Liitä kuntomonitori</Finnish>
             <Dutch>Station: Verbind de vitale waarden monitor</Dutch>
+            <Turkish>İstasyon: Vitals Monitor’ü Bağla</Turkish>
         </Key>
         <Key ID="STR_KAT_Circulation_AEDXStation_Action_PlacePads">
             <English>Station: Place AED-X Pads</English>
@@ -79,6 +83,7 @@
             <Chinesesimp>固定式 AED-X：放置 AED-X 电极片</Chinesesimp>
             <Finnish>Asema: aseta AUD-X-tyynyt</Finnish>
             <Dutch>Station: Plaats AED-X pads</Dutch>
+            <Turkish>İstasyon: AED-X Pedlerini Yerleştir</Turkish>
         </Key>
         <Key ID="STR_KAT_Circulation_AEDXVehicle_Action_ConnectMonitor">
             <English>Vehicle: Connect Vitals Monitor</English>
@@ -94,7 +99,7 @@
             <Japanese>車載AED: バイタルモニターの接続</Japanese>
             <Chinese>車載：連接生命監測器</Chinese>
             <Chinesesimp>载具: 生命监护仪</Chinesesimp>
-            <Turkish>Araç: AED-X'i takın</Turkish>
+            <Turkish>Araç: Vitals Monitor’ü Bağla</Turkish>
             <Finnish>Ajoneuvo: Liitä kuntomonitori</Finnish>
             <Dutch>Voertuig: Verbind de vitale waarden monitor</Dutch>
         </Key>
@@ -113,6 +118,7 @@
             <Chinesesimp>车辆：放置AED-X垫</Chinesesimp>
             <Finnish>Ajonuevo: aseta AUD-X-tyynyt</Finnish>
             <Dutch>Voertuig: Plaats AED-X pads</Dutch>
+            <Turkish>Araç: AED-X Pedlerini Yerleştir</Turkish>
         </Key>
         <Key ID="STR_KAT_Circulation_AEDX_Action_ConnectMonitor">
             <English>Connect Vitals Monitor</English>
@@ -129,6 +135,7 @@
             <Chinesesimp>连接监控</Chinesesimp>
             <Finnish>Liitä terveysmonitori</Finnish>
             <Dutch>Verbind de vitale waarden monitor</Dutch>
+            <Turkish>Vitals Monitor’ü Bağla</Turkish>
         </Key>
         <Key ID="STR_KAT_Circulation_AEDX_Action_Connecting_Progress">
             <English>Connecting</English>
@@ -163,6 +170,7 @@
             <Chinesesimp>生命监护仪音频 关闭</Chinesesimp>
             <Finnish>Tärkeän näytön ääni pois päältä</Finnish>
             <Dutch>Vitale waarden monitor UIT</Dutch>
+            <Turkish>Vitals Monitor Sesi KAPALI</Turkish>
         </Key>
         <Key ID="STR_KAT_Circulation_AEDX_Action_DisconnectMonitor">
             <English>Disconnect Vitals Monitor</English>
@@ -178,7 +186,7 @@
             <Japanese>バイタルモニターの切断</Japanese>
             <Chinese>移除監控</Chinese>
             <Chinesesimp>移除监控</Chinesesimp>
-            <Turkish>İzlemeyi kaldır</Turkish>
+            <Turkish>Vitals Monitor Bağlantısını Kes</Turkish>
             <Finnish>irrota terveysmonitori</Finnish>
             <Dutch>Maak vitale waarden monitor los</Dutch>
         </Key>
@@ -215,6 +223,7 @@
             <Chinesesimp>生命监护仪音频 开启</Chinesesimp>
             <Finnish>Terveysmonitorin ääni päällä</Finnish>
             <Dutch>Vitale waarden monitor audio AAN</Dutch>
+            <Turkish>Vitals Monitor Sesi AÇIK</Turkish>
         </Key>
         <Key ID="STR_KAT_Circulation_AEDX_Action_PlacePads">
             <English>Place AED-X Pads</English>
@@ -231,6 +240,7 @@
             <Chinesesimp>放置AED-X电极</Chinesesimp>
             <Finnish>Aseta AUD-X-tyynyt</Finnish>
             <Dutch>Plaats AED-X pads</Dutch>
+            <Turkish>AED-X Pedlerini Yerleştir</Turkish>
         </Key>
         <Key ID="STR_KAT_Circulation_AEDX_Monitor_AED_DISARMED">
             <English>AED DISARMED</English>
@@ -247,6 +257,7 @@
             <Chinesesimp>AED解除</Chinesesimp>
             <Finnish>AED POIS KÄYTÖSTÄ</Finnish>
             <Dutch>AED GEDEACTIVEERD</Dutch>
+            <Turkish>AED DEVRE DIŞI</Turkish>
         </Key>
         <Key ID="STR_KAT_Circulation_AEDX_Monitor_ANALYZINGEKG">
             <English>ANALYZING ECG</English>
@@ -263,6 +274,7 @@
             <Chinesesimp>正在分析心电图</Chinesesimp>
             <Finnish>EKG:N ANALYSOINTI</Finnish>
             <Dutch>ECG-ANALYSE</Dutch>
+            <Turkish>EKG ANALİZ EDİLİYOR</Turkish>
         </Key>
         <Key ID="STR_KAT_Circulation_AEDX_Monitor_CHARGED">
             <English>CHARGED</English>
@@ -279,6 +291,7 @@
             <Chinesesimp>已充电</Chinesesimp>
             <Finnish>LAADUT</Finnish>
             <Dutch>OPGELADEN</Dutch>
+            <Turkish>ŞARJ OLDU</Turkish>
         </Key>
         <Key ID="STR_KAT_Circulation_AEDX_Monitor_CHARGING">
             <English>CHARGING</English>
@@ -295,6 +308,7 @@
             <Chinesesimp>正在充电</Chinesesimp>
             <Finnish>LATAUS</Finnish>
             <Dutch>WORDT GELADEN</Dutch>
+            <Turkish>ŞARJ EDİLİYOR</Turkish>
         </Key>
         <Key ID="STR_KAT_Circulation_AEDX_Monitor_CheckPads">
             <English>Check Pads</English>
@@ -311,6 +325,7 @@
             <Chinesesimp>检查垫片</Chinesesimp>
             <Finnish>Tarkista tyynyt</Finnish>
             <Dutch>Controleer pads</Dutch>
+            <Turkish>Pedleri Kontrol Et</Turkish>
         </Key>
         <Key ID="STR_KAT_Circulation_AEDX_Monitor_DISARMED">
             <English>DISARMED</English>
@@ -327,6 +342,7 @@
             <Chinesesimp>解除</Chinesesimp>
             <Finnish>POIS KÄYTÖSTÄ</Finnish>
             <Dutch>GEDEACTIVEERD</Dutch>
+            <Turkish>DEVRE DIŞI</Turkish>
         </Key>
         <Key ID="STR_KAT_Circulation_AEDX_Monitor_Defibrillator">
             <English>Defibrillator</English>
@@ -342,6 +358,7 @@
             <Chinesesimp>除颤器</Chinesesimp>
             <Finnish>Defibrillaattori</Finnish>
             <Dutch>Defibrillator</Dutch>
+            <Turkish>Defibrilatör</Turkish>
         </Key>
         <Key ID="STR_KAT_Circulation_AEDX_Monitor_DeliveredEnergy">
             <English>Delivered Energy</English>
@@ -358,6 +375,7 @@
             <Chinesesimp>输送能量</Chinesesimp>
             <Finnish>Toimitettu shokki</Finnish>
             <Dutch>Geleverde energie</Dutch>
+            <Turkish>Verilen Enerji</Turkish>
         </Key>
         <Key ID="STR_KAT_Circulation_AEDX_Monitor_ENERGYDELIVERED">
             <English>ENERGY DELIVERED</English>
@@ -374,6 +392,7 @@
             <Chinesesimp>输送的能量</Chinesesimp>
             <Finnish>ISKU TOIMITETTU</Finnish>
             <Dutch>GELEVERDE ENERGIE</Dutch>
+            <Turkish>ENERJİ VERİLDİ</Turkish>
         </Key>
         <Key ID="STR_KAT_Circulation_AEDX_Monitor_HR">
             <English>HR</English>
@@ -390,6 +409,7 @@
             <Chinesesimp>心率(HR)</Chinesesimp>
             <Finnish>HR</Finnish>
             <Dutch>HR</Dutch>
+            <Turkish>HR</Turkish>
         </Key>
         <Key ID="STR_KAT_Circulation_AEDX_Monitor_MeasureBloodPressure">
             <English>Measure Blood Pressure</English>
@@ -406,6 +426,7 @@
             <Chinesesimp>测量血压</Chinesesimp>
             <Finnish>Mittaa verenpaine</Finnish>
             <Dutch>Meet bloeddruk</Dutch>
+            <Turkish>Kan Basıncını Ölç</Turkish>
         </Key>
         <Key ID="STR_KAT_Circulation_AEDX_Monitor_NOSHOCKADVISED">
             <English>NO SHOCK ADVISED</English>
@@ -422,6 +443,7 @@
             <Chinesesimp>不建议电击</Chinesesimp>
             <Finnish>EI SUOSITTELUA SHOCKIA</Finnish>
             <Dutch>SCHOK NIET GEADVISEERD</Dutch>
+            <Turkish>ŞOK ÖNERİLMİYOR</Turkish>
         </Key>
         <Key ID="STR_KAT_Circulation_AEDX_Monitor_PR">
             <English>PR</English>
@@ -438,6 +460,7 @@
             <Chinesesimp>PR</Chinesesimp>
             <Finnish>PR</Finnish>
             <Dutch>PR</Dutch>
+            <Turkish>PR</Turkish>
         </Key>
         <Key ID="STR_KAT_Circulation_AEDX_Monitor_PUSHSHOCK">
             <English>PUSH SHOCK</English>
@@ -454,6 +477,7 @@
             <Chinesesimp>按下电击按钮</Chinesesimp>
             <Finnish>PAINA SHOKKI</Finnish>
             <Dutch>DRUK SCHOK</Dutch>
+            <Turkish>ŞOKU UYGULA</Turkish>
         </Key>
         <Key ID="STR_KAT_Circulation_AEDX_Monitor_PerformCPR">
             <English>Perform CPR</English>
@@ -470,6 +494,7 @@
             <Chinesesimp>执行心肺复苏急救</Chinesesimp>
             <Finnish>Suorita elvytys</Finnish>
             <Dutch>Voer CPR uit</Dutch>
+            <Turkish>CPR Uygula</Turkish>
         </Key>
         <Key ID="STR_KAT_Circulation_AEDX_Monitor_PushAnalyze">
             <English>Push Analyze</English>
@@ -486,6 +511,7 @@
             <Chinesesimp>按下分析按钮</Chinesesimp>
             <Finnish>Paina analysoida</Finnish>
             <Dutch>Druk analyse</Dutch>
+            <Turkish>Analizi Başlat</Turkish>
         </Key>
         <Key ID="STR_KAT_Circulation_AEDX_Monitor_SHOCKADVISED">
             <English>SHOCK ADVISED</English>
@@ -502,6 +528,7 @@
             <Chinesesimp>建议电击</Chinesesimp>
             <Finnish>SOKI SUOSITELLAAN</Finnish>
             <Dutch>SCHOK GEADVISEERD</Dutch>
+            <Turkish>ŞOK ÖNERİLİYOR</Turkish>
         </Key>
         <Key ID="STR_KAT_Circulation_AEDX_Monitor_SelectedEnergy">
             <English>Selected Energy</English>
@@ -517,6 +544,7 @@
             <Chinesesimp>选定能源</Chinesesimp>
             <Finnish>Valittu energia</Finnish>
             <Dutch>Geselecteerde energie</Dutch>
+            <Turkish>Seçilen Enerji</Turkish>
         </Key>
         <Key ID="STR_KAT_Circulation_AEDX_Monitor_StandClear">
             <English>Stand Clear</English>
@@ -533,6 +561,7 @@
             <Chinesesimp>严禁倚靠</Chinesesimp>
             <Finnish>Väistyä</Finnish>
             <Dutch>Afstand houden</Dutch>
+            <Turkish>Uzak Durun</Turkish>
         </Key>
         <Key ID="STR_KAT_Circulation_AEDX_Monitor_ToggleVolume">
             <English>Toggle Volume</English>
@@ -549,6 +578,7 @@
             <Chinesesimp>切换音量</Chinesesimp>
             <Finnish>Vaihda äänenvoimakkuutta</Finnish>
             <Dutch>Geluid omwisselen</Dutch>
+            <Turkish>Sesi Aç/Kapat</Turkish>
         </Key>
         <Key ID="STR_KAT_Circulation_AED_Action_PlacePads">
             <English>Place AED Pads</English>
@@ -565,6 +595,7 @@
             <Chinesesimp>放置DEA电极</Chinesesimp>
             <Finnish>Aseta AUD-tyynyt</Finnish>
             <Dutch>Plaats AED pads</Dutch>
+            <Turkish>AED Pedlerini Yerleştir</Turkish>
         </Key>
         <Key ID="STR_KAT_Circulation_AED_DESCRIPTION">
             <English>Used to resuscitate patients</English>
@@ -580,7 +611,7 @@
             <Japanese>人を蘇生させるために使用される</Japanese>
             <Chinese>用於復甦患者</Chinese>
             <Chinesesimp>使用电击来唤醒患者</Chinesesimp>
-            <Turkish>Oyuncuyu canlandırmak için kullanın</Turkish>
+            <Turkish>Hastaları resüsitasyon yapmak için kullanılır</Turkish>
             <Finnish>Käytetään potilaiden elvyttämiseen.</Finnish>
             <Dutch>Wordt gebruikt om patiënten te reanimeren</Dutch>
         </Key>
@@ -598,7 +629,7 @@
             <Japanese>AED (自動体外式除細動器)</Japanese>
             <Chinese>AED 除顫器</Chinese>
             <Chinesesimp>AED除颤器</Chinesesimp>
-            <Turkish>Otomatik eksternal defibrilatör</Turkish>
+            <Turkish>Otomatik Eksternal Defibrilatör</Turkish>
             <Finnish>Automaattinen ulkoinen defibrillaattori</Finnish>
             <Dutch>Automatische Externe Defibrillator</Dutch>
         </Key>
@@ -618,6 +649,7 @@
             <Chinesesimp>AED的最大成功概率</Chinesesimp>
             <Finnish>Suurin mahdollisuus menestyä AUD:lle</Finnish>
             <Dutch>Maximale succeskans voor AED</Dutch>
+            <Turkish>AED için Maks. Başarı Şansı</Turkish>
         </Key>
         <Key ID="STR_KAT_Circulation_AED_MaxChance_DESC">
             <English>Maximum success chance for standard AED defibrillation</English>
@@ -625,6 +657,7 @@
             <Spanish>Probabilidad máxima de éxito de la desfibrilación con DEA estándar</Spanish>
             <German>Maximale Erfolgswahrscheinlichkeit für Standard-AED Defibrillation</German>
             <Japanese>標準AED除細動の最高成功率</Japanese>
+            <Turkish>Standart AED defibrilasyonu için maksimum başarı şansı</Turkish>
         </Key>
         <Key ID="STR_KAT_Circulation_AED_MinChance">
             <English>Min Success chance for AED</English>
@@ -642,6 +675,7 @@
             <Chinesesimp>AED的最小成功概率</Chinesesimp>
             <Finnish>AUD:n onnistumisen minimimahdollisuus</Finnish>
             <Dutch>Minimale succeskans voor AED</Dutch>
+            <Turkish>AED için Min. Başarı Şansı</Turkish>
         </Key>
         <Key ID="STR_KAT_Circulation_AED_MinChance_DESC">
             <English>Minimum success chance for standard AED defibrillation</English>
@@ -649,6 +683,7 @@
             <Spanish>Probabilidad mínima de éxito de la desfibrilación con DEA estándar</Spanish>
             <German>Minimale Erfolgswahrscheinlichkeit für Standard-AED Defibrillation</German>
             <Japanese>標準AED除細動の最低成功率</Japanese>
+            <Turkish>Standart AED defibrilasyonu için minimum başarı şansı</Turkish>
         </Key>
         <Key ID="STR_KAT_Circulation_AED_X">
             <English>AED-X</English>
@@ -664,6 +699,7 @@
             <Chinesesimp>AED-X</Chinesesimp>
             <Finnish>AUD-X</Finnish>
             <Dutch>AED-X</Dutch>
+            <Turkish>AED-X</Turkish>
         </Key>
         <Key ID="STR_KAT_Circulation_AED_X_MaxChance">
             <English>Max Success chance for AED-X</English>
@@ -681,6 +717,7 @@
             <Chinesesimp>AED-X的最大成功概率</Chinesesimp>
             <Finnish>Suurin mahdollisuus menestyä AUD-X:lle</Finnish>
             <Dutch>Maximale succeskans voor AED-X</Dutch>
+            <Turkish>AED-X için Maks. Başarı Şansı</Turkish>
         </Key>
         <Key ID="STR_KAT_Circulation_AED_X_MaxChance_DESC">
             <English>Maximum success chance for AED-X defibrillation</English>
@@ -688,6 +725,7 @@
             <Spanish>Probabilidad máxima de éxito de la desfibrilación con AED-X</Spanish>
             <German>Maximale Erfolgswahrscheinlichkeit für AED-X Defibrillation</German>
             <Japanese>AED-X除細動の最高成功率</Japanese>
+            <Turkish>AED-X defibrilasyonu için maksimum başarı şansı</Turkish>
         </Key>
         <Key ID="STR_KAT_Circulation_AED_X_MinChance">
             <English>Min Success chance for AED-X</English>
@@ -705,6 +743,7 @@
             <Chinesesimp>AED-X的最小成功概率</Chinesesimp>
             <Finnish>Minimi mahdollisuus onnistua AUD-X:lle</Finnish>
             <Dutch>Minimale succeskans voor AED-X</Dutch>
+            <Turkish>AED-X için Min. Başarı Şansı</Turkish>
         </Key>
         <Key ID="STR_KAT_Circulation_AED_X_MinChance_DESC">
             <English>Minimum success chance for AED-X defibrillation</English>
@@ -712,6 +751,7 @@
             <Spanish>Probabilidad mínima de éxito de la desfibrilación con AED-X</Spanish>
             <German>Minimale Erfolgswahrscheinlichkeit für AED-X Defibrillation</German>
             <Japanese>AED-X除細動の最低成功率</Japanese>
+            <Turkish>AED-X defibrilasyonu için minimum başarı şansı</Turkish>
         </Key>
         <Key ID="STR_KAT_Circulation_ALLOW_AED">
             <English>Allow AED</English>
@@ -1191,6 +1231,7 @@
             <Japanese>血圧カフで血圧を確認</Japanese>
             <Chinese>用血壓計量血壓</Chinese>
             <Dutch>Meet bloeddruk met manchet</Dutch>
+            <Turkish>BP Cuff ile BP Kontrol Et</Turkish>
         </Key>
         <Key ID="STR_KAT_Circulation_Actions_CheckHRSteth">
             <English>Check HR w/ Stethoscope</English>
@@ -1202,6 +1243,7 @@
             <Japanese>聴診器で脈拍を確認</Japanese>
             <Chinese>用聽診器檢查心率</Chinese>
             <Dutch>Meet hartfrequentie met stethoscoop</Dutch>
+            <Turkish>Stethoscope ile HR Kontrol Et</Turkish>
         </Key>
         <Key ID="STR_KAT_Circulation_Actions_CheckingBloodPressureCuff">
             <English>Checking BP with BP Cuff</English>
@@ -1213,6 +1255,7 @@
             <Japanese>血圧カフで血圧を確認中</Japanese>
             <Chinese>用血壓計量血壓中</Chinese>
             <Dutch>Bloeddruk wordt gemeten met manchet</Dutch>
+            <Turkish>BP Cuff ile BP kontrol ediliyor</Turkish>
         </Key>
         <Key ID="STR_KAT_Circulation_Actions_CheckingHRSteth">
             <English>Checking HR with Stethoscope</English>
@@ -1224,6 +1267,7 @@
             <Japanese>聴診器で脈拍を確認中</Japanese>
             <Chinese>用聽診器檢查心率中</Chinese>
             <Dutch>Hartfrequentie wordt gemeten met stethoscoop</Dutch>
+            <Turkish>Stethoscope ile HR kontrol ediliyor</Turkish>
         </Key>
         <Key ID="STR_KAT_Circulation_Activity_AttachPads">
             <English>%1 attached defibrillator pads (%2)</English>
@@ -1240,6 +1284,7 @@
             <Chinesesimp>%1 附加除颤器垫（%2）</Chinesesimp>
             <Finnish>%1 kiinnitetyt defibrillaattorityynyt (%2)</Finnish>
             <Dutch>%1 heeft defibrillator pad geplaatst (%2)</Dutch>
+            <Turkish>%1 defibrilatör pedlerini taktı (%2)</Turkish>
         </Key>
         <Key ID="STR_KAT_Circulation_Activity_CPR">
             <English>%1 performed CPR (%2)</English>
@@ -1256,6 +1301,7 @@
             <Chinesesimp>%1 执行心肺复苏（%2）</Chinesesimp>
             <Finnish>%1 suoritettu elyytys (%2)</Finnish>
             <Dutch>%1 heeft CPR uitgevoerd (%2)</Dutch>
+            <Turkish>%1 CPR uyguladı (%2)</Turkish>
         </Key>
         <Key ID="STR_KAT_Circulation_Activity_ConnectVitalsMonitor">
             <English>%1 connected vitals monitor</English>
@@ -1272,6 +1318,7 @@
             <Chinesesimp>%1 连接的生命体征监测仪</Chinesesimp>
             <Finnish>%1 kytketty terveysmonitori</Finnish>
             <Dutch>%1 heeft een vitale waarden monitor verbonden</Dutch>
+            <Turkish>%1 vitals monitor’ü bağladı</Turkish>
         </Key>
         <Key ID="STR_KAT_Circulation_Activity_DisconnectVitalsMonitor">
             <English>%1 disconnected vitals monitor</English>
@@ -1288,6 +1335,7 @@
             <Chinesesimp>%1 断开的生命体征监测仪</Chinesesimp>
             <Finnish>%1 irrotettu terveysmonitori</Finnish>
             <Dutch>%1 heeft een vitale waarden monitor losgekoppeld</Dutch>
+            <Turkish>%1 vitals monitor bağlantısını kesti</Turkish>
         </Key>
         <Key ID="STR_KAT_Circulation_Activity_RemovePads">
             <English>%1 removed defibrillator pads</English>
@@ -1304,6 +1352,7 @@
             <Chinesesimp>%1 拆下的除颤器垫</Chinesesimp>
             <Finnish>%1 poistettu defibrillaattorityynyt</Finnish>
             <Dutch>%1 heeft defibrillator pads verwijderd</Dutch>
+            <Turkish>%1 defibrilatör pedlerini çıkardı</Turkish>
         </Key>
         <Key ID="STR_KAT_Circulation_Activity_Shock">
             <English>%1 administered shock (%2)</English>
@@ -1320,6 +1369,7 @@
             <Chinesesimp>%1 次电击（%2）</Chinesesimp>
             <Finnish>%1 annettu sokki (%2)</Finnish>
             <Dutch>%1 heeft een schok toegediend (%2)</Dutch>
+            <Turkish>%1 şok uyguladı (%2)</Turkish>
         </Key>
         <Key ID="STR_KAT_Circulation_AnalyzeRhythm">
             <English>Analyze Rhythm</English>
@@ -1336,6 +1386,7 @@
             <Chinesesimp>心率分析</Chinesesimp>
             <Finnish>Analysoi rytmiä</Finnish>
             <Dutch>Analyseer hartritme</Dutch>
+            <Turkish>Ritmi Analiz Et</Turkish>
         </Key>
         <Key ID="STR_KAT_Circulation_Apply_Arterial_Test">
             <English>Apply %1 Test</English>
@@ -1348,6 +1399,7 @@
             <Chinese>進行 %1 測試</Chinese>
             <Chinesesimp>应用 %1 测试</Chinesesimp>
             <Dutch>Voer %1 test uit</Dutch>
+            <Turkish>%1 Testini Uygula</Turkish>
         </Key>
         <Key ID="STR_KAT_Circulation_Arterial_Test">
             <English>ABG Test</English>
@@ -1360,6 +1412,7 @@
             <Chinese>ABG分析</Chinese>
             <Chinesesimp>ABG测试</Chinesesimp>
             <Dutch>ABG test</Dutch>
+            <Turkish>ABG Testi</Turkish>
         </Key>
         <Key ID="STR_KAT_Circulation_Arterial_Test_Action">
             <English>Run ABG Test</English>
@@ -1372,6 +1425,7 @@
             <Chinese>進行ABG分析</Chinese>
             <Chinesesimp>运行ABG测试</Chinesesimp>
             <Dutch>Voer ABG test uit</Dutch>
+            <Turkish>ABG Testini Çalıştır</Turkish>
         </Key>
         <Key ID="STR_KAT_Circulation_BPCuff_desc">
             <English>A medical device to accurately determine a patients blood pressure</English>
@@ -1383,6 +1437,7 @@
             <Japanese>患者の血圧を正確に測定する医療機器</Japanese>
             <Chinese>一種準確測量病人血壓的醫療裝置</Chinese>
             <Dutch>Een medisch hulpmiddel om de bloeddruk van een patiënt accuraat te meten</Dutch>
+            <Turkish>Hastanın kan basıncını doğru şekilde belirleyen tıbbi bir cihaz</Turkish>
         </Key>
         <Key ID="STR_KAT_Circulation_BPCuff_display">
             <English>Blood Pressure Cuff</English>
@@ -1394,6 +1449,7 @@
             <Japanese>血圧カフ</Japanese>
             <Chinese>血壓計</Chinese>
             <Dutch>Bloeddrukmanchet</Dutch>
+            <Turkish>Blood Pressure Cuff</Turkish>
         </Key>
         <Key ID="STR_KAT_Circulation_BloodIV_A">
             <English>Blood IV (1000ml) BT: A+</English>
@@ -1838,6 +1894,7 @@
             <Chinese>%1 血樣</Chinese>
             <Chinesesimp>%1 血液样本</Chinesesimp>
             <Dutch>%1 bloedstaal</Dutch>
+            <Turkish>%1 Kan Örneği</Turkish>
         </Key>
         <Key ID="STR_KAT_Circulation_Bloodpressure_Output_Palp">
             <English>%1 over Palp</English>
@@ -1849,6 +1906,7 @@
             <Japanese>触診による拡張期血圧は %1</Japanese>
             <Chinese>比觸診高 %1</Chinese>
             <Dutch>%1 per palpitatie</Dutch>
+            <Turkish>%1 / Palp</Turkish>
         </Key>
         <Key ID="STR_KAT_Circulation_CPR_MaxChance_Default">
             <English>Max CPR Chance for Default</English>
@@ -1866,6 +1924,7 @@
             <Chinesesimp>默认的最大心肺复苏几率</Chinesesimp>
             <Finnish>Suurin mahdollisuus menestyä oletussotilailla, jotka suorittavat elvytystoimia</Finnish>
             <Dutch>Maximale succeskans van CPR voor standaard</Dutch>
+            <Turkish>Varsayılan Maks. CPR Şansı</Turkish>
         </Key>
         <Key ID="STR_KAT_Circulation_CPR_MaxChance_Default_DESC">
             <English>Maximum CPR success chance for untrained personnel</English>
@@ -1873,6 +1932,7 @@
             <Spanish>Probabilidad máxima de éxito de la RCP para personal no capacitado</Spanish>
             <German>Maximale CPR-Erfolgschance für unausgebildetes Personal</German>
             <Japanese>訓練を受けていない人員のCPR最大成功率</Japanese>
+            <Turkish>Eğitimsiz personel için maksimum CPR başarı şansı</Turkish>
         </Key>
         <Key ID="STR_KAT_Circulation_CPR_MaxChance_Doctor">
             <English>Max CPR Chance for Doctors</English>
@@ -1890,6 +1950,7 @@
             <Chinesesimp>医生的最大心肺复苏几率</Chinesesimp>
             <Finnish>Suurin CPR onnistumisen mahdollisuus lääkäreille</Finnish>
             <Dutch>Maximale succeskans van CPR voor doktoren</Dutch>
+            <Turkish>Doktorlar için Maks. CPR Şansı</Turkish>
         </Key>
         <Key ID="STR_KAT_Circulation_CPR_MaxChance_Doctor_DESC">
             <English>Maximum CPR success chance for doctors</English>
@@ -1897,6 +1958,7 @@
             <Spanish>Probabilidad máxima de éxito de la RCP para médicos</Spanish>
             <German>Maximale CPR-Erfolgschance für Ärzte</German>
             <Japanese>医師のCPR最大成功率</Japanese>
+            <Turkish>Doktorlar için maksimum CPR başarı şansı</Turkish>
         </Key>
         <Key ID="STR_KAT_Circulation_CPR_MaxChance_RegularMedic">
             <English>Max CPR Chance for Regular medics</English>
@@ -1914,6 +1976,8 @@
             <Chinesesimp>军医的最大心肺复苏几率</Chinesesimp>
             <Finnish>Suurin mahdollisuus menestyä elvytystä suorittaville taistelulääkäreille</Finnish>
             <Dutch>Maximale succeskans van CPR voor reguliere medici</Dutch>
+            <Turkish>Normal medikler için Maks. CPR Şansı
+</Turkish>
         </Key>
         <Key ID="STR_KAT_Circulation_CPR_MaxChance_RegularMedic_DESC">
             <English>Maximum CPR success chance for regular medics</English>
@@ -1921,6 +1985,7 @@
             <Spanish>Probabilidad máxima de éxito de la RCP para personal médico estándar</Spanish>
             <German>Maximale CPR-Erfolgschance für reguläre Sanitäter</German>
             <Japanese>標準的な衛生兵のCPR最大成功率</Japanese>
+            <Turkish>Normal medikler için maksimum CPR başarı şansı</Turkish>
         </Key>
         <Key ID="STR_KAT_Circulation_CPR_MinChance_Default">
             <English>Min CPR Chance for Default</English>
@@ -1938,6 +2003,7 @@
             <Chinesesimp>默认的最小心肺复苏几率</Chinesesimp>
             <Finnish>Pienin mahdollisuus menestyä elvytystoiminnassa oletussotilaana</Finnish>
             <Dutch>Minimale succeskans van CPR voor standaard</Dutch>
+            <Turkish>Varsayılan için Min. CPR Şansı</Turkish>
         </Key>
         <Key ID="STR_KAT_Circulation_CPR_MinChance_Default_DESC">
             <English>Minimum CPR success chance for untrained personnel</English>
@@ -1945,6 +2011,7 @@
             <Spanish>Probabilidad mínima de éxito de la RCP para personal no capacitado</Spanish>
             <German>Minimale CPR-Erfolgschance für unausgebildetes Personal</German>
             <Japanese>訓練を受けていない人員のCPR最小成功率</Japanese>
+            <Turkish>Eğitimsiz personel için minimum CPR başarı şansı</Turkish>
         </Key>
         <Key ID="STR_KAT_Circulation_CPR_MinChance_Doctor">
             <English>Min CPR Chance for Doctors</English>
@@ -1962,6 +2029,7 @@
             <Chinesesimp>医生的最小心肺复苏几率</Chinesesimp>
             <Finnish>Pienin mahdollisuus menestyä elvytyksen suorittamisessa lääkärinä</Finnish>
             <Dutch>Minimale succeskans van CPR voor doktoren</Dutch>
+            <Turkish>Doktorlar için Min. CPR Şansı</Turkish>
         </Key>
         <Key ID="STR_KAT_Circulation_CPR_MinChance_Doctor_DESC">
             <English>Minimum CPR success chance for doctors</English>
@@ -1969,6 +2037,7 @@
             <Spanish>Probabilidad mínima de éxito de la RCP para médicos</Spanish>
             <German>Minimale CPR-Erfolgschance für Ärzte</German>
             <Japanese>医師のCPR最小成功率</Japanese>
+            <Turkish>Doktorlar için minimum CPR başarı şansı</Turkish>
         </Key>
         <Key ID="STR_KAT_Circulation_CPR_MinChance_RegularMedic">
             <English>Min CPR Chance for Regular medics</English>
@@ -1986,6 +2055,8 @@
             <Chinesesimp>军医的最小心肺复苏几率</Chinesesimp>
             <Finnish>Pienin mahdollisuus menestyä elvytystyössä taistelulääkärinä</Finnish>
             <Dutch>Minimale succeskans van CPR voor reguliere medici</Dutch>
+            <Turkish>Normal medikler için Min. CPR Şansı
+</Turkish>
         </Key>
         <Key ID="STR_KAT_Circulation_CPR_MinChance_RegularMedic_DESC">
             <English>Minimum CPR success chance for regular medics</English>
@@ -1993,6 +2064,7 @@
             <Spanish>Probabilidad mínima de éxito de la RCP para personal médico estándar</Spanish>
             <German>Minimale CPR-Erfolgschance für reguläre Sanitäter</German>
             <Japanese>標準的な衛生兵のCPR最小成功率</Japanese>
+            <Turkish>Normal medikler için minimum CPR başarı şansı</Turkish>
         </Key>
         <Key ID="STR_KAT_Circulation_CancelCPR">
             <English>CPR Cancelled</English>
@@ -2009,6 +2081,7 @@
             <Chinesesimp>CPR取消</Chinesesimp>
             <Finnish>Elvytys peruttu</Finnish>
             <Dutch>CPR afgebroken</Dutch>
+            <Turkish>CPR İptal Edildi</Turkish>
         </Key>
         <Key ID="STR_KAT_Circulation_ChangeCPRDevice">
             <English>Change Monitoring Device</English>
@@ -2021,6 +2094,7 @@
             <Chinese>更換監控設備</Chinese>
             <Chinesesimp>更换监控设备</Chinesesimp>
             <Dutch>Verander monitoringsapparaat</Dutch>
+            <Turkish>İzleme Cihazını Değiştir</Turkish>
         </Key>
         <Key ID="STR_KAT_Circulation_Check_Bloodpressure_Output_Palp">
             <English>You find a blood pressure of %3 over Palp</English>
@@ -2032,6 +2106,7 @@
             <Japanese>触診で計測した拡張期血圧は %3 でした</Japanese>
             <Chinese>你發現血壓比觸診高 %3</Chinese>
             <Dutch>Je vindt een bloeddruk van %3 per palpitatie</Dutch>
+            <Turkish>%3 / Palp kan basıncı tespit ettin</Turkish>
         </Key>
         <Key ID="STR_KAT_Circulation_Check_Pulse_Output">
             <English>You find a Pulse Rate of %2</English>
@@ -2043,6 +2118,7 @@
             <Japanese>計測した脈拍は %2 でした</Japanese>
             <Chinese>你發現脈搏率為 %2</Chinese>
             <Dutch>Je vindt een hartfrequentie van %2</Dutch>
+            <Turkish>%2 nabız tespit ettin</Turkish>
         </Key>
         <Key ID="STR_KAT_Circulation_Defibrillator_Action_CancelCharge">
             <English>Cancel Charge</English>
@@ -2059,6 +2135,7 @@
             <Chinesesimp>取消充能</Chinesesimp>
             <Finnish>Peruuta sähkölataus</Finnish>
             <Dutch>Annuleer lading</Dutch>
+            <Turkish>Şarjı İptal Et</Turkish>
         </Key>
         <Key ID="STR_KAT_Circulation_Defibrillator_Action_Charge">
             <English>Charge Defibrillator</English>
@@ -2075,6 +2152,7 @@
             <Chinesesimp>除颤器充能</Chinesesimp>
             <Finnish>Lataa defibrillaattori</Finnish>
             <Dutch>Laad defribrillator op</Dutch>
+            <Turkish>Defibrilatörü Şarj Et</Turkish>
         </Key>
         <Key ID="STR_KAT_Circulation_Defibrillator_Action_PlacePads_Progress">
             <English>Placing Defibrillator Pads</English>
@@ -2091,6 +2169,7 @@
             <Chinesesimp>放置除颤器电极</Chinesesimp>
             <Finnish>Defibrillaattorityynyjen asettaminen</Finnish>
             <Dutch>Defibrillatiepads worden geplaatst</Dutch>
+            <Turkish>Defibrilatör Pedleri Yerleştiriliyor</Turkish>
         </Key>
         <Key ID="STR_KAT_Circulation_Defibrillator_Action_RemovePads">
             <English>Remove Defibrillator Pads</English>
@@ -2107,6 +2186,7 @@
             <Chinesesimp>取下除颤器电极</Chinesesimp>
             <Finnish>Poista defibrillaattorityynyt</Finnish>
             <Dutch>Verwijder defibrillatiepads</Dutch>
+            <Turkish>Defibrilatör Pedlerini Çıkar</Turkish>
         </Key>
         <Key ID="STR_KAT_Circulation_Defibrillator_Action_RemovePads_Progress">
             <English>Removing Defibrillator Pads</English>
@@ -2123,6 +2203,7 @@
             <Chinesesimp>正在取下除颤器垫</Chinesesimp>
             <Finnish>Defibrillaattorityynyjen poistaminen</Finnish>
             <Dutch>Defibrillatiepads worden verwijderd</Dutch>
+            <Turkish>Defibrilatör Pedleri Çıkarılıyor</Turkish>
         </Key>
         <Key ID="STR_KAT_Circulation_Defibrillator_Action_Shock">
             <English>Administer Shock</English>
@@ -2139,6 +2220,7 @@
             <Chinesesimp>实施休克</Chinesesimp>
             <Finnish>Anna sokki potilaalle</Finnish>
             <Dutch>Dien schok toe</Dutch>
+            <Turkish>Şok Uygula</Turkish>
         </Key>
         <Key ID="STR_KAT_Circulation_Defibrillator_PatientDisconnected">
             <English>Patient Disconnected</English>
@@ -2155,6 +2237,7 @@
             <Chinesesimp>患者已断开连接</Chinesesimp>
             <Finnish>Potilas on katkaistu</Finnish>
             <Dutch>Patiënt losgekoppeld</Dutch>
+            <Turkish>Hasta Bağlantısı Kesildi</Turkish>
         </Key>
         <Key ID="STR_KAT_Circulation_DogTag">
             <English>Check Dogtags</English>
@@ -2203,6 +2286,7 @@
             <Chinese>抽取動脈血樣本</Chinese>
             <Chinesesimp>抽取动脉血样本</Chinesesimp>
             <Dutch>Neem Arterieel bloedstaal</Dutch>
+            <Turkish>Arteriyel Örnek Al</Turkish>
         </Key>
         <Key ID="STR_KAT_Circulation_DrawBlood250_Action_Use">
             <English>Draw Blood (250ml)</English>
@@ -2381,6 +2465,7 @@
             <Chinesesimp>捡起 AED-X</Chinesesimp>
             <Finnish>Hae AUD-X</Finnish>
             <Dutch>Pak AED-X op</Dutch>
+            <Turkish>AED-X’i Al</Turkish>
         </Key>
         <Key ID="STR_KAT_Circulation_Pulse_Output">
             <English>%1 PPM</English>
@@ -2392,6 +2477,7 @@
             <Japanese>%1 PPM</Japanese>
             <Chinese>%1 PPM</Chinese>
             <Dutch>%1 PPM</Dutch>
+            <Turkish>%1 PPM</Turkish>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_AEDStation_AllowInteraction">
             <English>Allow AED/X Station Interaction</English>
@@ -2408,6 +2494,7 @@
             <Chinesesimp>允许AED/X站交互</Chinesesimp>
             <Finnish>Salli AUD-X-vuorovaikutus aseman kanssa</Finnish>
             <Dutch>Sta AED/X stations interactie toe</Dutch>
+            <Turkish>AED/X İstasyon Etkileşimine İzin Ver</Turkish>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_AEDStation_AllowInteraction_DESCRIPTION">
             <English>Medical level required to pick up placed AED/X station</English>
@@ -2422,6 +2509,7 @@
             <Chinese>撿起已放置的 AED/X 工作站需要的醫療等級</Chinese>
             <Chinesesimp>领取放置的AED/X站所需的医疗水平</Chinesesimp>
             <Dutch>Benodigd medisch niveau om geplaatste AED/X stations op te pakken</Dutch>
+            <Turkish>Yerleştirilmiş AED/X istasyonunu almak için gereken tıbbi seviye</Turkish>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_AEDX_VitalsMonitor_AttachTime">
             <English>Attach AED-X Vitals Monitor Time</English>
@@ -2438,6 +2526,7 @@
             <Chinesesimp>附上AED-X生命体征监测仪时间</Chinesesimp>
             <Finnish>Kuinka kauan AUD-X-terveysmonitorin kiinnittäminen kestää</Finnish>
             <Dutch>Benodigde tijd om AED-X vitale waarden monitor aan te sluiten</Dutch>
+            <Turkish>AED-X Vitals Monitor Bağlama Süresi</Turkish>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_AEDX_VitalsMonitor_AttachTime_DESC">
             <English>Time required to attach AED-X vitals monitor to patient</English>
@@ -2445,6 +2534,7 @@
             <Spanish>Tiempo necesario para conectar el monitor de signos vitales AED-X al paciente</Spanish>
             <German>Benötigte Zeit zum Anbringen des AED-X Vitalmonitors am Patienten</German>
             <Japanese>AED-Xバイタルモニターを患者へ取り付けるのにかかる時間</Japanese>
+            <Turkish>AED-X vitals monitor’ü hastaya bağlamak için gereken süre</Turkish>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_AEDX_VitalsMonitor_DetachTime">
             <English>Detach AED-X Vitals Monitor Time</English>
@@ -2461,6 +2551,7 @@
             <Chinesesimp>分离AED-X生命体征监护仪时间</Chinesesimp>
             <Finnish>Kuinka kauan AUD-X-terveysmonitorin irrottaminen kestää</Finnish>
             <Dutch>Benodigde tijd om AED-X vitale waarden monitor los te koppelen</Dutch>
+            <Turkish>AED-X Vitals Monitor Ayırma Süresi</Turkish>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_AEDX_VitalsMonitor_DetachTime_DESC">
             <English>Time required to detach AED-X vitals monitor from patient</English>
@@ -2468,6 +2559,7 @@
             <Spanish>Tiempo necesario para desconectar el monitor de signos vitales AED-X del paciente</Spanish>
             <German>Benötigte Zeit zum Entfernen des AED-X Vitalmonitors vom Patienten</German>
             <Japanese>AED-Xバイタルモニターを患者から取り外すのにかかる時間</Japanese>
+            <Turkish>AED-X vitals monitor’ü hastadan ayırmak için gereken süre</Turkish>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_AED_X_VitalsMonitor_BloodPressureInterval">
             <English>AED-X Vitals Monitor BP Measurement Interval</English>
@@ -2484,6 +2576,7 @@
             <Chinesesimp>AED-X 生命监护仪 血压测量间隔</Chinesesimp>
             <Finnish>AUD-X terveysmonitorin verenpaineen mittausväli</Finnish>
             <Dutch>AED-X vitale waarden monitor BD metingsinterval</Dutch>
+            <Turkish>AED-X Vitals Monitor BP Ölçüm Aralığı</Turkish>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_AED_X_VitalsMonitor_BloodPressureInterval_Automatic">
             <English>Automatic (Interval)</English>
@@ -2500,6 +2593,7 @@
             <Chinesesimp>自动（间隔）</Chinesesimp>
             <Finnish>Automaattinen (väli)</Finnish>
             <Dutch>Automatisch (interval)</Dutch>
+            <Turkish>Otomatik (Aralıklı)</Turkish>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_AED_X_VitalsMonitor_BloodPressureInterval_AutomaticInstant">
             <English>Automatic Instant</English>
@@ -2516,6 +2610,7 @@
             <Chinesesimp>自动即时</Chinesesimp>
             <Finnish>Automaattinen (välitön)</Finnish>
             <Dutch>Automatisch direct</Dutch>
+            <Turkish>Otomatik Anlık</Turkish>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_AED_X_VitalsMonitor_BloodPressureInterval_DESC">
             <English>Controls how blood pressure is measured on AED-X monitor</English>
@@ -2523,6 +2618,7 @@
             <Spanish>Controla cómo se mide la presión arterial en el monitor AED-X</Spanish>
             <German>Kontrolliert, wie der Blutdruck am AED-X Monitor gemessen wird</German>
             <Japanese>AED-Xモニターでの血圧測定方法を制御します</Japanese>
+            <Turkish>AED-X monitöründe kan basıncının nasıl ölçüleceğini kontrol eder</Turkish>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_AED_X_VitalsMonitor_BloodPressureInterval_Manual">
             <English>Manual</English>
@@ -2539,6 +2635,7 @@
             <Chinesesimp>手册</Chinesesimp>
             <Finnish>Manuaalinen</Finnish>
             <Dutch>Handmatig</Dutch>
+            <Turkish>Manuel</Turkish>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_AED_X_VitalsMonitor_BloodPressureInterval_Time">
             <English>AED-X Vitals Monitor BP Measurement Interval Time</English>
@@ -2555,6 +2652,7 @@
             <Chinesesimp>AED-X生命体征监测仪血压测量间隔时间</Chinesesimp>
             <Finnish>AUD-X terveysmittarin verenpaineen mittausvälin aika</Finnish>
             <Dutch>Tijd van de AED-X vitale waarde monitor BD metingsinterval</Dutch>
+            <Turkish>AED-X Vitals Monitor BP Ölçüm Aralığı Süresi</Turkish>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_AED_X_VitalsMonitor_BloodPressureInterval_Time_DESC">
             <English>Time interval for automatic blood pressure measurements</English>
@@ -2562,6 +2660,7 @@
             <Spanish>Intervalo de tiempo para las mediciones automáticas de presión arterial</Spanish>
             <German>Zeitintervall für automatische Blutdruckmessungen</German>
             <Japanese>自動血圧測定の間隔</Japanese>
+            <Turkish>Otomatik kan basıncı ölçümleri için zaman aralığı</Turkish>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_AED_X_VitalsMonitor_SoundsSelect">
             <English>AED-X Vitals Monitor Sounds</English>
@@ -2578,6 +2677,7 @@
             <Chinesesimp>AED-X生命体征监测仪声音</Chinesesimp>
             <Finnish>AUD-X terveysmonitorin ääni</Finnish>
             <Dutch>Geluiden van de AED-X vitale waarde monitor</Dutch>
+            <Turkish>AED-X Vitals Monitor Sesleri</Turkish>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_AED_X_VitalsMonitor_SoundsSelect_DESC">
             <English>Selects which sound set to use for AED-X vitals monitor</English>
@@ -2585,6 +2685,7 @@
             <Spanish>Selecciona qué conjunto de sonidos usar para el monitor de signos vitales AED-X</Spanish>
             <German>Wählt aus, welcher Soundsatz für den AED-X Vitalmonitor verwendet wird</German>
             <Japanese>AED-Xバイタルモニターで使用するサウンドセットを選択します</Japanese>
+            <Turkish>AED-X vitals monitor için kullanılacak ses setini seçer</Turkish>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_AED_X_VitalsMonitor_SoundsSelect_Default">
             <English>Default</English>
@@ -2601,6 +2702,7 @@
             <Chinesesimp>默认</Chinesesimp>
             <Finnish>Oletus</Finnish>
             <Dutch>Standaard</Dutch>
+            <Turkish>Varsayılan</Turkish>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_AED_X_VitalsMonitor_SoundsSelect_Original">
             <English>Original</English>
@@ -2617,6 +2719,7 @@
             <Chinesesimp>原件</Chinesesimp>
             <Finnish>Alkuperäinen</Finnish>
             <Dutch>Origineel</Dutch>
+            <Turkish>Orijinal</Turkish>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_AED_duringCpr">
             <English>Allow AED pad application during CPR</English>
@@ -2631,6 +2734,7 @@
             <Chinese>允許在 CPR 期間應用 AED 電極片</Chinese>
             <Chinesesimp>允许在心肺复苏期间使用AED垫</Chinesesimp>
             <Dutch>Sta het plaatsen van AED pads tijdens CPR toe</Dutch>
+            <Turkish>CPR sırasında AED pedi uygulamasına izin ver</Turkish>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_AED_duringCpr_DESC">
             <English>Allows AED pads to be applied while CPR is being performed</English>
@@ -2638,6 +2742,7 @@
             <Spanish>Permite aplicar los electrodos del DEA mientras se realiza la RCP</Spanish>
             <German>Ermöglicht das Anbringen von AED-Pads während der Wiederbelebung</German>
             <Japanese>CPR中にAEDパッドを装着できるようにします</Japanese>
+            <Turkish>CPR uygulanırken AED pedlerinin takılmasına izin verir</Turkish>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_AdvRhythm_AED_ROSC_Chance">
             <English>ROSC After AED Chance</English>
@@ -2654,6 +2759,7 @@
             <Chinesesimp>除颤后恢复自主循环概率</Chinesesimp>
             <Finnish>ROSC AUD-mahdollisuuden jälkeen</Finnish>
             <Dutch>Kans voor ROSC na CPR (Terugkeer naar spontane circulatie)</Dutch>
+            <Turkish>AED Sonrası ROSC Şansı</Turkish>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_AdvRhythm_CPR_ROSC_Chance">
             <English>ROSC After CPR Chance</English>
@@ -2670,6 +2776,7 @@
             <Chinesesimp>CPR 后恢复自主循环概率</Chinesesimp>
             <Finnish>ROSC elvytysmahdollisuuden jälkeen</Finnish>
             <Dutch>Kans voor ROSC na CPR (Terugkeer naar spontane circulatie)</Dutch>
+            <Turkish>CPR Sonrası ROSC Şansı</Turkish>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_AdvRhythm_Enable">
             <English>Advanced Rhythms activated?</English>
@@ -2685,7 +2792,7 @@
             <Japanese>高度な心調律を有効化</Japanese>
             <Chinese>進階心律功能已啟用？</Chinese>
             <Chinesesimp>高级心率启用?</Chinesesimp>
-            <Turkish>Gelişmiş Ritim etkinleştirildi mi?</Turkish>
+            <Turkish>Gelişmiş Ritimler etkin mi?</Turkish>
             <Finnish>Edistyneet sykerytmit aktivoitu?</Finnish>
             <Dutch>Geadvanceerde hartritmes actief?</Dutch>
         </Key>
@@ -2695,6 +2802,7 @@
             <Spanish>Activa el sistema avanzado de ritmos de paro cardíaco</Spanish>
             <German>Aktiviert das erweiterte Herzrhythmus-System bei Herzstillstand</German>
             <Japanese>高度な心停止と調律のシステムを有効化します</Japanese>
+            <Turkish>Gelişmiş kardiyak arrest ritimleri sistemini etkinleştirir</Turkish>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_AdvRhythm_HTHold">
             <English>Enable H-and-T Holding in Arrest</English>
@@ -2705,6 +2813,7 @@
             <German>H&amp;Ts halten Herzstillstand aufrecht</German>
             <Japanese>心停止回復のH&amp;T症状による阻害を有効化</Japanese>
             <Dutch>H&amp;Ts voorkomen herstel uit hartstilstand</Dutch>
+            <Turkish>Arrest sırasında H&amp;T sabitlemeyi etkinleştir</Turkish>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_AdvRhythm_Hardcore_Enable">
             <English>Hardcore Rhythms</English>
@@ -2721,6 +2830,7 @@
             <Chinesesimp>困难模式心律</Chinesesimp>
             <Finnish>Vaikeat sydämen rytmit</Finnish>
             <Dutch>Hardcore hartritmen</Dutch>
+            <Turkish>Hardcore Ritimler</Turkish>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_AdvRhythm_PEAChance">
             <English>PEA Chance</English>
@@ -2737,6 +2847,7 @@
             <Chinesesimp>PEA 概率</Chinesesimp>
             <Finnish>Pulssittoman sähköisen toiminnan mahdollisuus</Finnish>
             <Dutch>PEA kans</Dutch>
+            <Turkish>PEA Olasılığı</Turkish>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_AdvRhythm_PEAEnabled">
             <English>Enable PEA</English>
@@ -2744,6 +2855,7 @@
             <Spanish>Activar PEA</Spanish>
             <Japanese>無脈性電気活動(PEA)を有効化</Japanese>
             <Dutch>Zet PEA aan</Dutch>
+            <Turkish>PEA’yı Etkinleştir</Turkish>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_AdvRhythm_VTChance">
             <English>VT Chance</English>
@@ -2760,6 +2872,7 @@
             <Chinesesimp>心室频脉（VT）概率</Chinesesimp>
             <Finnish>Kammiotakykardian mahdollisuus</Finnish>
             <Dutch>VT kans</Dutch>
+            <Turkish>VT Olasılığı</Turkish>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_AdvRhythm_asystoleBloodlossThreshold">
             <English>Asystole blood loss threshold</English>
@@ -2776,6 +2889,7 @@
             <Chinesesimp>心脏停搏失血阈临界值</Chinesesimp>
             <Finnish>Asystolan vuoksi menetettävä veren määrä</Finnish>
             <Dutch>Asystole bloedverlies drempelwaarde</Dutch>
+            <Turkish>Asystole kan kaybı eşiği</Turkish>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_AdvRhythm_canDeteriorate">
             <English>Can Deteriorate</English>
@@ -2792,6 +2906,7 @@
             <Chinesesimp>心律是否可能恶化</Chinesesimp>
             <Finnish>voivatko ne pahentua?</Finnish>
             <Dutch>Kan verslechteren</Dutch>
+            <Turkish>Kötüleşebilir</Turkish>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_AdvRhythm_canDeteriorate_DESC">
             <English>Allows cardiac arrest rhythms to deteriorate over time</English>
@@ -2799,6 +2914,7 @@
             <Spanish>Permite que los ritmos de paro cardíaco se deterioren con el tiempo</Spanish>
             <German>Ermöglicht es Herzrhythmen, sich im Laufe der Zeit zu verschlechtern</German>
             <Japanese>心停止状態の調律が時間の経過とともに悪化するのを許可します</Japanese>
+            <Turkish>Kardiyak arrest ritimlerinin zamanla kötüleşmesine izin verir</Turkish>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_AdvRhythm_deteriorateAfterTreatment">
             <English>Deteriorate After Treatment</English>
@@ -2815,6 +2931,7 @@
             <Chinesesimp>治疗后是否恶化</Chinesesimp>
             <Finnish>Voiko se pahentua hoidon jälkeen?</Finnish>
             <Dutch>Verslechterd na behandeling</Dutch>
+            <Turkish>Tedavi Sonrası Kötüleşme</Turkish>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_AdvRhythm_deteriorateTimeMax">
             <English>Random Deteriorate Time Maximum</English>
@@ -2831,6 +2948,7 @@
             <Chinesesimp>随机恶化最长时间</Chinesesimp>
             <Finnish>Satunnainen huononemisajan maksimiarvo</Finnish>
             <Dutch>Maximale willekeurige tijd voor een verslechtering</Dutch>
+            <Turkish>Rastgele Kötüleşme Süresi Maksimum</Turkish>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_AdvRhythm_deteriorateTimeWeight">
             <English>Random Deteriorate Time Weight</English>
@@ -2847,6 +2965,7 @@
             <Chinesesimp>随机恶化时间权重</Chinesesimp>
             <Finnish>Satunnainen huononemisajan paino</Finnish>
             <Dutch>Tijdsgewicht willekeurige verslechtering</Dutch>
+            <Turkish>Rastgele Kötüleşme Süresi Ağırlığı</Turkish>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_AdvRhythm_hardcoreDeteriorationChance">
             <English>Hardcore Deterioration Chance</English>
@@ -2863,6 +2982,7 @@
             <Chinesesimp>困难模式恶化概率</Chinesesimp>
             <Finnish>Vaikean sydämen rytmin heikkenemismahdollisuus</Finnish>
             <Dutch>Hardcore verslechteringskans</Dutch>
+            <Turkish>Hardcore Kötüleşme Olasılığı</Turkish>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_BLOOD_DRAWTIME_250ML">
             <English>Drawing time for 250ml Kit</English>
@@ -2878,7 +2998,7 @@
             <Japanese>250mlキットの採血時間</Japanese>
             <Chinese>250 毫升套件的绘制时间</Chinese>
             <Chinesesimp>250 mL的抽取时间</Chinesesimp>
-            <Turkish>250ml Kit için çizim süresi</Turkish>
+            <Turkish>250 ml Kit için kan alma süresi</Turkish>
             <Finnish>Aika, joka kuluu 250 ml:n verta ottamiseen</Finnish>
             <Dutch>Onttrekkingstijd voor 250ml set</Dutch>
         </Key>
@@ -2896,7 +3016,7 @@
             <Japanese>500mlキットの採血時間</Japanese>
             <Chinese>500 毫升套件的抽血時間</Chinese>
             <Chinesesimp>500 mL的抽取时间</Chinesesimp>
-            <Turkish>500ml Kit için çizim süresi</Turkish>
+            <Turkish>500 ml Kit için kan alma süresi</Turkish>
             <Finnish>Aika, joka kuluu 500 ml:n verta ottamiseen</Finnish>
             <Dutch>Onttrekkingstijd voor 500ml set</Dutch>
         </Key>
@@ -2910,6 +3030,7 @@
             <Japanese>血圧カフの許可</Japanese>
             <Chinese>允許使用血壓計</Chinese>
             <Dutch>Bloeddruksmanchet toestaan</Dutch>
+            <Turkish>BP Cuff’e İzin Ver</Turkish>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_BPCuff_DESC">
             <English>Training Level for use of the BP Cuff</English>
@@ -2921,6 +3042,7 @@
             <Japanese>血圧カフの使用に必要な医療スキルのレベルを設定します。</Japanese>
             <Chinese>使用血壓計的訓練等級</Chinese>
             <Dutch>Trainingsniveau dat benodigd is voor het gebruik van een bloeddruksmanchet</Dutch>
+            <Turkish>BP Cuff kullanımı için eğitim seviyesi</Turkish>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_CPR_CHANCES">
             <English>Enable different CPR chances per medical level</English>
@@ -2946,6 +3068,7 @@
             <Spanish>Activa distintas probabilidades de éxito de la RCP según el nivel de formación médica</Spanish>
             <German>Aktiviert verschiedene CPR-Erfolgschancen basierend auf medizinischer Ausbildung</German>
             <Japanese>医療スキルのレベルに基づいて異なるCPR成功率を有効化します</Japanese>
+            <Turkish>Tıbbi eğitim seviyesine göre farklı CPR başarı şanslarını etkinleştirir</Turkish>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_CPR_ChanceInterval">
             <English>CPR Chance Interval</English>
@@ -2962,6 +3085,7 @@
             <Chinesesimp>心肺复苏概率间隔</Chinesesimp>
             <Finnish>Elvytyksen onnistumislaskelmien välinen aika</Finnish>
             <Dutch>CPR kans interval</Dutch>
+            <Turkish>CPR Şans Aralığı</Turkish>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_CPR_ChanceInterval_DESC">
             <English>Interval at which CPR success chance is rolled</English>
@@ -2969,6 +3093,7 @@
             <Spanish>Intervalo en el que se calcula la probabilidad de éxito de la RCP</Spanish>
             <German>Intervall, in dem die CPR-Erfolgschance gewürfelt wird</German>
             <Japanese>CPR成功率をロールする間隔</Japanese>
+            <Turkish>CPR başarı şansının hesaplandığı aralık</Turkish>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_DRAW_BLOODGROUPS">
             <English>Use Bloodgroups for drawing blood?</English>
@@ -2984,7 +3109,7 @@
             <Japanese>採血に血液型を使用しますか?</Japanese>
             <Chinese>抽血時是否使用血型？</Chinese>
             <Chinesesimp>抽血时是否使用血型？</Chinesesimp>
-            <Turkish>Kan almak için Kan Grupları kullanılsın mı?</Turkish>
+            <Turkish>Kan alırken kan grupları kullanılsın mı?</Turkish>
             <Finnish>Käytätkö verityyppejä veren ottamiseen?</Finnish>
             <Dutch>Gebruik van bloedgroepen bij bloedonttrekking?</Dutch>
         </Key>
@@ -3003,6 +3128,7 @@
             <Chinesesimp>安装除颤器极板时间</Chinesesimp>
             <Finnish>Kuinka kauan defibrillaattorityynyjen kiinnittäminen kestää</Finnish>
             <Dutch>Benodigde tijd op defibrillator pads aan te brengen</Dutch>
+            <Turkish>Defibrilatör Pedlerini Takma Süresi</Turkish>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_DefibrillatorPads_AttachTime_DESC">
             <English>Time required to attach defibrillator pads to patient</English>
@@ -3010,6 +3136,7 @@
             <Spanish>Tiempo necesario para colocar los electrodos del desfibrilador en el paciente</Spanish>
             <German>Benötigte Zeit zum Anbringen der Defibrillator-Pads am Patienten</German>
             <Japanese>除細動パッドを患者へ取り付けるのにかかる時間</Japanese>
+            <Turkish>Defibrilatör pedlerini hastaya takmak için gereken süre</Turkish>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_DefibrillatorPads_DetachTime">
             <English>Detach Defibrillator Pads Time</English>
@@ -3026,6 +3153,7 @@
             <Chinesesimp>拆下除颤器极板时间</Chinesesimp>
             <Finnish>Kuinka kauan defibrillaattorityynyjen irrottaminen kestää</Finnish>
             <Dutch>Benodigde tijd om defibrillator pads te verwijderen</Dutch>
+            <Turkish>Defibrilatör Pedlerini Çıkarma Süresi</Turkish>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_DefibrillatorPads_DetachTime_DESC">
             <English>Time required to detach defibrillator pads from patient</English>
@@ -3033,6 +3161,7 @@
             <Spanish>Tiempo necesario para retirar los electrodos del desfibrilador del paciente</Spanish>
             <German>Benötigte Zeit zum Entfernen der Defibrillator-Pads vom Patienten</German>
             <Japanese>除細動パッドを患者から取り外すのにかかる時間</Japanese>
+            <Turkish>Defibrilatör pedlerini hastadan çıkarmak için gereken süre</Turkish>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_Defibrillator_DistanceLimit">
             <English>Distance limit for defibrillators in meters</English>
@@ -3049,6 +3178,7 @@
             <Chinesesimp>除颤器的距离限制（单位：米）</Chinesesimp>
             <Finnish>Defibrillaattorien etäisyysraja metreinä</Finnish>
             <Dutch>Afstandslimiet voor defibrillators in meters</Dutch>
+            <Turkish>Defibrilatörler için mesafe sınırı (metre)</Turkish>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_Defibrillator_DistanceLimit_DESC">
             <English>Maximum distance between defibrillator and patient for operation</English>
@@ -3056,6 +3186,7 @@
             <Spanish>Distancia máxima entre el desfibrilador y el paciente para su funcionamiento</Spanish>
             <German>Maximale Entfernung zwischen Defibrillator und Patient für den Betrieb</German>
             <Japanese>患者と除細動器の操作が可能な最大距離</Japanese>
+            <Turkish>Çalışma için defibrilatör ile hasta arasındaki maksimum mesafe</Turkish>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_ENABLE">
             <English>ACE-Circulation activated?</English>
@@ -3081,6 +3212,7 @@
             <Spanish>Activa el sistema médico de circulación KAT</Spanish>
             <German>Aktiviert das KAT Kreislauf-Medizinsystem</German>
             <Japanese>KAT 循環器系 医療システムを有効にします</Japanese>
+            <Turkish>KAT Sirkülasyon tıbbi sistemini etkinleştirir</Turkish>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_MINIMUM_SAFE_DRAW">
             <English>Minimum blood volume for donor (liters)</English>
@@ -3114,7 +3246,7 @@
             <Japanese>採血出来る献血者の血液最低量。0に設定で無視します</Japanese>
             <Chinese>允許供體引流的最小血量，設定為 0 可忽略此設定。</Chinese>
             <Chinesesimp>允许供体引流的最小血量，设置为 0 可忽略此设置。</Chinesesimp>
-            <Turkish>0'a ayarlanmış bu ayarı yok saymak için bir donörün drene etmesine izin verilen minimum kan hacmi</Turkish>
+            <Turkish>Bir donörden alınmasına izin verilen minimum kan hacmi; bu ayarı yok saymak için 0 yapın</Turkish>
             <Finnish>Vähimmäismäärä verta, jolle luovuttaja voidaan tyhjentää, aseta 0, jotta tämä asetus jätetään huomioimatta</Finnish>
             <Dutch>Minimaal benodigd bloedvolume om een donateur te zijn. Om dit te negeren, zet dit op 0.</Dutch>
         </Key>
@@ -3132,7 +3264,7 @@
             <Japanese>自己採血を有効化</Japanese>
             <Chinese>啟用自我抽血</Chinese>
             <Chinesesimp>启用自我抽血</Chinesesimp>
-            <Turkish>Kendi kendine kan alımını etkinleştir</Turkish>
+            <Turkish>Kendi kendine kan almayı etkinleştir</Turkish>
             <Finnish>Salli veren ottaminen itsestäsi</Finnish>
             <Dutch>Sta zelf bloedonttrekking toe</Dutch>
         </Key>
@@ -3146,6 +3278,7 @@
             <Japanese>聴診器による脈拍確認の許可</Japanese>
             <Chinese>允許使用聽診器檢查心率</Chinese>
             <Dutch>Sta zelfcontrole met stethoscoop toe</Dutch>
+            <Turkish>Stethoscope ile HR kontrolüne izin ver</Turkish>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_StethHR_DESC">
             <English>Training Level for use of the Stethoscope to measure HR</English>
@@ -3157,6 +3290,7 @@
             <Japanese>聴診器による脈拍の測定に必要な医療スキルのレベルを設定します。</Japanese>
             <Chinese>使用聽診器測量心率的訓練等級</Chinese>
             <Dutch>Benodigd trainingsniveau voor het gebruik van een stethoscoop bij het meten van de hartfrequentie</Dutch>
+            <Turkish>HR ölçmek için Stethoscope kullanım eğitim seviyesi</Turkish>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_Threshold_SpO2Warning">
             <English>AED-X alarm SpO2 threshold</English>
@@ -3173,6 +3307,7 @@
             <Chinesesimp>AED-X报警SpO2阈值</Chinesesimp>
             <Finnish>SpO2-taso, joka laukaisee AUD-X-hälytyksen</Finnish>
             <Dutch>Drempelwaarde voor AED-X alarm van SpO2</Dutch>
+            <Turkish>AED-X alarm SpO2 eşiği</Turkish>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_Threshold_SpO2Warning_DESC">
             <English>SpO2 level at which the monitor starts warning</English>
@@ -3180,6 +3315,7 @@
             <Spanish>Nivel de SpO2 en el que el monitor comienza a advertir.</Spanish>
             <German>SpO2-Wert, bei dem der Monitor zu warnen beginnt</German>
             <Japanese>モニターが警告を開始するSpO2の値</Japanese>
+            <Turkish>Monitörün uyarı vermeye başladığı SpO2 seviyesi</Turkish>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_abg_enable">
             <English>Enable ABG Testing</English>
@@ -3192,6 +3328,7 @@
             <Chinese>啟用 ABG 測試</Chinese>
             <Chinesesimp>启用ABG测试</Chinesesimp>
             <Dutch>Sta ABG tests toe</Dutch>
+            <Turkish>ABG Testini Etkinleştir</Turkish>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_abg_enable_DESC">
             <English>Enables ABG Testing and ACE Menu Visibility</English>
@@ -3204,6 +3341,7 @@
             <Chinese>啟用 ABG 測試和 ACE 選單可見性</Chinese>
             <Chinesesimp>启用ABG测试和ACE菜单可见性</Chinesesimp>
             <Dutch>Staat ABG tests toe en maakt deze zichtbaar in ACE menu's</Dutch>
+            <Turkish>ABG testini ve ACE menüsünde görünürlüğünü etkinleştirir</Turkish>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_bloodtype_assign">
             <English>Blood Type Assignment</English>
@@ -3221,6 +3359,7 @@
             <Chinesesimp>血型分配</Chinesesimp>
             <Finnish>Veriryhmämääritys</Finnish>
             <Dutch>Bloedtype toewijzing</Dutch>
+            <Turkish>Kan Grubu Ataması</Turkish>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_bloodtype_assign_DESC">
             <English>Sets how players' blood type is assigned: \nPlayer chosen: Player chooses their own blood type \nPlayer chosen (forced): Player chooses their own blood type, but it doesn't change upon respawning \nRandom: Blood type is random each respawn \nRandom (on join): Blood type is random, but doesn't change upon respawning \nSteamID: Blood type is decided based on player's steamID \nSteamID (custom list): Blood type is decided based on player's steamID and custom list</English>
@@ -3238,6 +3377,7 @@
             <Chinesesimp>设置如何分配玩家的血型：\n选择的玩家：玩家选择自己的血型\n选择（强制）的玩家：球员选择自己的血液类型，但在重生时不会改变\n随机：每次重生时血液类型都是随机的\n随机（加入时）：血液类型是随机的，但重生时不会变化\n团队ID：根据玩家的steamID决定血液类型\n团队ID:根据玩家的streamID和自定义列表决定血液类型</Chinesesimp>
             <Finnish>Asettaa kuinka pelaajan veriryhmä määritetään: \nPelaaja valittu: Pelaaja valitsee oman veriryhmänsä \nPelaaja valittu (pakotettu): Pelaaja valitsee oman veriryhmänsä, mutta se ei muutu uudelleensyntyessä. \nSatunnainen: Veriryhmä on satunnainen jokaisen uudelleensyntymisen yhteydessä. \nSatunnainen (pelaajan liittyessä peliin): Veriryhmä on satunnainen, mutta ei muutu uudelleensyntyessä. \nSteamID: Veriryhmä päätetään pelaajan SteamID:n perusteella. \nSteamID (mukautettu lista): Veriryhmä päätetään pelaajan SteamID:n ja mukautetun listan perusteella.</Finnish>
             <Dutch>Bepaald hoe spelers bloedgroep wordt toegewezen: \nSpeler gekozen: Spelers kunnen hun eigen bloedgroep selecteren. \nSpeler gekozen(geforceerd): Spelers kiezen hun eigen bloedgroep, maar dit veranderd niet op respawn. \nWillekeurig: Bloedgroep wordt willekeurig geselecteerd bij elke respawn. \nWillekeurig (bij toetreding): Bloedgroep is willekeurig, maar veranderd niet bij respawn. \nSteamID: Bloedgroep wordt geselecteerd op basis van de Spelers SteamID.\n SteamID (eigen lijst): Bloedgroep wordt geselecteerd op basis van SteamID en de zelf gemaakte lijst.</Dutch>
+            <Turkish>Oyuncuların kan grubunun nasıl atanacağını belirler: \nOyuncu seçer: Oyuncu kendi kan grubunu seçer \nOyuncu seçer (zorunlu): Oyuncu kendi kan grubunu seçer, ancak respawn olduğunda değişmez \nRastgele: Her respawn’da kan grubu rastgele olur \nRastgele (girişte): Kan grubu rastgeledir, ancak respawn olduğunda değişmez \nSteamID: Kan grubu oyuncunun steamID’sine göre belirlenir \nSteamID (özel liste): Kan grubu oyuncunun steamID’sine ve özel listeye göre belirlenir</Turkish>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_bloodtype_assign_player">
             <English>Player chosen</English>
@@ -3255,6 +3395,7 @@
             <Chinesesimp>玩家已选择</Chinesesimp>
             <Finnish>Pelaaja valittu</Finnish>
             <Dutch>Speler gekozen</Dutch>
+            <Turkish>Oyuncu seçer</Turkish>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_bloodtype_assign_player_forced">
             <English>Player chosen (forced)</English>
@@ -3272,6 +3413,7 @@
             <Chinesesimp>玩家选择（强制）</Chinesesimp>
             <Finnish>Valittu pelaaja (pakotettu)</Finnish>
             <Dutch>Speler gekozen (geforceerd)</Dutch>
+            <Turkish>Oyuncu seçer (zorunlu)</Turkish>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_bloodtype_assign_random">
             <English>Random</English>
@@ -3289,6 +3431,7 @@
             <Chinesesimp>随机</Chinesesimp>
             <Finnish>Satunnainen</Finnish>
             <Dutch>Willekeurig</Dutch>
+            <Turkish>Rastgele</Turkish>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_bloodtype_assign_random_onJoin">
             <English>Random (on join)</English>
@@ -3306,6 +3449,7 @@
             <Chinesesimp>随机（加入时）</Chinesesimp>
             <Finnish>Satunnainen (liittyessä)</Finnish>
             <Dutch>Willekeurig (bij toetreding)</Dutch>
+            <Turkish>Rastgele (girişte)</Turkish>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_bloodtype_assign_steamid">
             <English>SteamID</English>
@@ -3322,6 +3466,7 @@
             <Chinesesimp>SteamID</Chinesesimp>
             <Finnish>SteamID</Finnish>
             <Dutch>SteamID</Dutch>
+            <Turkish>SteamID</Turkish>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_bloodtype_assign_steamid_custom">
             <English>SteamID (custom list)</English>
@@ -3339,6 +3484,7 @@
             <Chinesesimp>SteamID（自定义列表）</Chinesesimp>
             <Finnish>SteamID (muokattu luettelo)</Finnish>
             <Dutch>SteamID (Eigen lijst)</Dutch>
+            <Turkish>SteamID (özel liste)</Turkish>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_bloodtype_custom_list">
             <English>Blood Type Custom List</English>
@@ -3356,6 +3502,7 @@
             <Chinesesimp>血型自定义列表</Chinesesimp>
             <Finnish>Mukautettu luettelo verityypeistä</Finnish>
             <Dutch>Bloedgroepen eigen lijst</Dutch>
+            <Turkish>Kan Grubu Özel Listesi</Turkish>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_bloodtype_custom_list_DESC">
             <English>Sets blood types that will be assigned to players based on their SteamID \nBlood types are separated by a comma (","), list should contain a total of 10 blood types</English>
@@ -3373,6 +3520,7 @@
             <Chinesesimp>设置将根据玩家的SteamID分配给他们的血型\n血型以逗号（“，”）分隔，列表应包含总共10种血型</Chinesesimp>
             <Finnish>Asettaa veriryhmät, jotka määritetään pelaajille heidän SteamID:n perusteella. \nVerityypit erotetaan toisistaan merkillä (","). Listalla tulee olla yhteensä 10 veriryhmää.</Finnish>
             <Dutch>Bepaald de bloedgroepen die aan spelers worden gegeven op basis van hun SteamID. \nBloedgroepen zijn gescheiden met een comma(","). De lijst moet 10 verschillende bloedgroepen bevatten</Dutch>
+            <Turkish>SteamID’ye göre oyunculara atanacak kan gruplarını belirler \nKan grupları virgülle (",") ayrılır; listede toplam 10 kan grubu olmalıdır</Turkish>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_bloodtype_player">
             <English>Blood group</English>
@@ -3398,6 +3546,7 @@
             <Spanish>Establece tu tipo de sangre preferido para multijugador</Spanish>
             <German>Legt Ihre bevorzugte Blutgruppe für Multiplayer fest</German>
             <Japanese>マルチプレイヤーで使用する血液型を設定します</Japanese>
+            <Turkish>Multiplayer için tercih ettiğiniz kan grubunu belirler</Turkish>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_bloodtype_random_weighted">
             <English>Weighted Randomizer</English>
@@ -3415,6 +3564,7 @@
             <Chinesesimp>加权随机化器</Chinesesimp>
             <Finnish>Painotettu satunnaistin</Finnish>
             <Dutch>Gewogen randomizer</Dutch>
+            <Turkish>Ağırlıklı Rastgeleleştirici</Turkish>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_bloodtype_random_weighted_DESC">
             <English>Sets if random blood type given will be weighted according to blood type commonness</English>
@@ -3432,6 +3582,7 @@
             <Chinesesimp>设置是否根据血型共性对随机血型进行加权</Chinesesimp>
             <Finnish>Asettaa, painotetaanko satunnaiset veriryhmät palvelimen yleisen veriryhmän mukaan.</Finnish>
             <Dutch>Bepaald of willekeurige bloedgroepen worden gewogen op basis van de algemeenheid van de bloedgroepen</Dutch>
+            <Turkish>Rastgele verilen kan grubunun, kan grubu yaygınlığına göre ağırlıklandırılıp ağırlıklandırılmayacağını belirler</Turkish>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_cardiacArrestBleedRate">
             <English>Cardiac Arrest Bleed Rate</English>
@@ -3448,6 +3599,7 @@
             <Chinesesimp>心脏骤停出血率</Chinesesimp>
             <Finnish>Verenvuoto sydämenpysähdyksen aikana</Finnish>
             <Dutch>Bloedingsnelheid bij hartstilstand</Dutch>
+            <Turkish>Kardiyak Arrest Kanama Hızı</Turkish>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_hardcoreDiagnose">
             <English>Enable Hardcore HR and BP Diagnose</English>
@@ -3459,6 +3611,7 @@
             <Japanese>ハードコア脈拍および血圧診断を有効化</Japanese>
             <Chinese>啟用硬核心率和血壓診斷</Chinese>
             <Dutch>Zet hardcore metingen van hartfrequentie en bloeddruk aan</Dutch>
+            <Turkish>Hardcore HR ve BP Tanısını Etkinleştir</Turkish>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_hardcoreDiagnose_DESC">
             <English>Makes measuring BP and HR imprecise without tools (Stethoscope or BP cuff)</English>
@@ -3470,6 +3623,7 @@
             <Japanese>器具(聴診器または血圧カフ)なしでは脈拍および血圧を正確に測定出来なくします</Japanese>
             <Chinese>在沒有工具（聽診器或血壓計）的情況下，測量血壓和心率會不準確</Chinese>
             <Dutch>Maakt het meten van hartfrequentie en bloeddruk inaccuraat zonder hulpmiddelen (Stethoscoop of bloeddrukmanchet)</Dutch>
+            <Turkish>Araçlar (Stethoscope veya BP cuff) olmadan BP ve HR ölçümünü belirsiz yapar</Turkish>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_tamponadeChance">
             <English>Chance for tamponade in penetrating wounds</English>
@@ -3484,6 +3638,7 @@
             <Chinese>穿透性傷口填塞的可能性</Chinese>
             <Chinesesimp>穿透性伤口填塞的可能性</Chinesesimp>
             <Dutch>Kans voor tamponade door penetrerende wonden</Dutch>
+            <Turkish>Derin Delici Yaralanmalarda tamponad olasılığı</Turkish>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_tamponadeChance_deterioration">
             <English>Tamponade progression chance</English>
@@ -3498,6 +3653,7 @@
             <Chinese>心包填塞進展的機率</Chinese>
             <Chinesesimp>填塞进展概率</Chinesesimp>
             <Dutch>Tamponade progressie kans</Dutch>
+            <Turkish>Tamponad ilerleme olasılığı</Turkish>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_tamponadeInterval">
             <English>Tamponade progression timer</English>
@@ -3512,6 +3668,7 @@
             <Chinese>填塞進度計時器</Chinese>
             <Chinesesimp>填塞进展计时器</Chinesesimp>
             <Dutch>Tamponade progressie timer</Dutch>
+            <Turkish>Tamponad ilerleme zamanlayıcısı</Turkish>
         </Key>
         <Key ID="STR_KAT_Circulation_StartCPR">
             <English>CPR Started</English>
@@ -3527,6 +3684,7 @@
             <Chinesesimp>心肺复苏开始</Chinesesimp>
             <Finnish>Elvytys alkoi</Finnish>
             <Dutch>CPR gestart</Dutch>
+            <Turkish>CPR Başladı</Turkish>
         </Key>
         <Key ID="STR_KAT_Circulation_StopCPR">
             <English>Stop CPR</English>
@@ -3543,6 +3701,7 @@
             <Chinesesimp>停止心肺复苏</Chinesesimp>
             <Finnish>Lopeta elvytys</Finnish>
             <Dutch>Stop CPR</Dutch>
+            <Turkish>CPR’yi Durdur</Turkish>
         </Key>
         <Key ID="STR_KAT_Circulation_SubCategory_AED">
             <English>AED + AED-X Settings</English>
@@ -3560,6 +3719,7 @@
             <Chinesesimp>自动体外除颤器及X系列自动体外除颤器设置</Chinesesimp>
             <Finnish>AUD + AUD-X asetukset</Finnish>
             <Dutch>AED + AED-X instellingen</Dutch>
+            <Turkish>AED + AED-X Ayarları</Turkish>
         </Key>
         <Key ID="STR_KAT_Circulation_SubCategory_AdvRhythms">
             <English>Advanced Rhythms</English>
@@ -3576,6 +3736,7 @@
             <Chinesesimp>高级节奏</Chinesesimp>
             <Finnish>Edistyneet sydämen rytmit</Finnish>
             <Dutch>Geadvanceerde hartritmen</Dutch>
+            <Turkish>Gelişmiş Ritimler</Turkish>
         </Key>
         <Key ID="STR_KAT_Circulation_SubCategory_BloodDraw">
             <English>Blood draw Settings</English>
@@ -3593,6 +3754,7 @@
             <Chinesesimp>抽血设置</Chinesesimp>
             <Finnish>Verenoton asetukset</Finnish>
             <Dutch>Bloedonttrekkings instellingen</Dutch>
+            <Turkish>Kan Alma Ayarları</Turkish>
         </Key>
         <Key ID="STR_KAT_Circulation_SubCategory_CPR">
             <English>CPR Settings</English>
@@ -3610,6 +3772,7 @@
             <Chinesesimp>CPR 设置</Chinesesimp>
             <Finnish>Elvytys asetukset</Finnish>
             <Dutch>CPR instellingen</Dutch>
+            <Turkish>CPR Ayarları</Turkish>
         </Key>
         <Key ID="STR_KAT_Circulation_TRAINING_LEVEL_AED">
             <English>Training level required to use an AED</English>
@@ -3662,6 +3825,7 @@
             <Chinesesimp>查看 生命监护仪</Chinesesimp>
             <Finnish>Näytä monitori</Finnish>
             <Dutch>Kijk op monitor</Dutch>
+            <Turkish>Monitörü Görüntüle</Turkish>
         </Key>
         <Key ID="STR_KAT_Circulation_VitalsMonitor_StatusLog">
             <English>AED-X: HR: %1 BP: %2/%3 SpO2: %4</English>
@@ -3679,6 +3843,7 @@
             <Chinesesimp>AED-X: 心率(HR): %1 血压(BP): %2/%3 血氧饱和度(SpO2): %4</Chinesesimp>
             <Finnish>AUD-X: HR: %1 BP: %2/%3 SpO2: %4</Finnish>
             <Dutch>AED-X: HR %1 BD: %2/%3 SpO2: %4</Dutch>
+            <Turkish>AED-X: HR: %1 BP: %2/%3 SpO₂: %4</Turkish>
         </Key>
         <Key ID="STR_KAT_Circulation_VitalsMonitor_StatusLog_HasEtco2Monitor">
             <English>AED-X: HR: %1 BP: %2/%3 SpO2: %4  ETCo2: %5 Breaths/min: %6</English>
@@ -3693,6 +3858,7 @@
             <Chinese>AED-X：心率：%1 血壓：%2/%3 SpO2：%4 ETCo2：%5 呼吸/分：%6</Chinese>
             <Chinesesimp>AED-X: 心率(HR): %1 血压(BP):%2/%3血氧饱和度(SpO2):%4呼气末二氧化碳浓度(ETCo2):%5呼吸/分钟：%6</Chinesesimp>
             <Dutch>AED-X: HR %1 BD: %2/%3 SpO2: %4 ETCo2: %5 Ademhalingen/min: %6</Dutch>
+            <Turkish>AED-X: HR: %1 BP: %2/%3 SpO₂: %4 ETCO₂: %5 Nefes/dk: %6</Turkish>
         </Key>
         <Key ID="STR_KAT_Circulation_VitalsMonitor_VMActive_StatusLog">
             <English>AED-X: PR: %1 BP: %2/%3 SpO2: %4</English>
@@ -3709,6 +3875,7 @@
             <Chinesesimp>AED-X: 脉搏(PR): %1 血压(BP): %2/%3 血氧饱和度(SpO2): %4</Chinesesimp>
             <Finnish>AUD-X: PR: %1 BP: %2/%3 SpO2: %4</Finnish>
             <Dutch>AED-X: PR %1 BD: %2/%3 SpO2: %4</Dutch>
+            <Turkish>AED-X: PR: %1 BP: %2/%3 SpO₂: %4</Turkish>
         </Key>
         <Key ID="STR_KAT_Circulation_VitalsMonitor_VMActive_StatusLog_HasEtco2Monitor">
             <English>AED-X: PR: %1 BP: %2/%3 SpO2: %4 ETCo2: %5 Breaths/min: %6</English>
@@ -3723,6 +3890,7 @@
             <Chinese>AED-X：脈搏：%1 血壓：%2/%3 SpO2：%4 ETCo2：%5 呼吸/分：%6</Chinese>
             <Chinesesimp>AED-X: 脉搏(PR): %1 血压(BP):%2/%3血氧饱和度(SpO2):%4呼气末二氧化碳浓度(ETCo2):%5呼吸/分钟：%6</Chinesesimp>
             <Dutch>AED-X: PR %1 BD: %2/%3 SpO2: %4 ETCo2: %5 Ademhalingen/min: %6</Dutch>
+            <Turkish>AED-X: PR: %1 BP: %2/%3 SpO₂: %4 ETCO₂: %5 Nefes/dk: %6</Turkish>
         </Key>
         <Key ID="STR_KAT_Circulation_VitalsMonitor_VMInactive_StatusLog">
             <English>AED-X: HR: %1 BP: --/-- SpO2: ---</English>
@@ -3740,6 +3908,7 @@
             <Chinesesimp>AED-X: 心率(HR): %1 血压(BP):--/--血氧饱和度(SpO2):---</Chinesesimp>
             <Finnish>AUD-X: HR: %1 BP: --/-- SpO2: ---</Finnish>
             <Dutch>AED-X: HR %1 BD: --/-- SpO2: ---</Dutch>
+            <Turkish>AED-X: HR: %1 BP: --/-- SpO₂: ---</Turkish>
         </Key>
         <Key ID="STR_KAT_Circulation_VitalsMonitor_VMInactive_StatusLog_HasEtco2Monitor">
             <English>AED-X: HR: %1 BP: --/-- SpO2: --- ETCo2: %2 Breaths/min: %3</English>
@@ -3754,6 +3923,7 @@
             <Chinese>AED-X：心率：%1 血壓：--/-- SpO2：--- ETCo2：%2 呼吸/分：%3</Chinese>
             <Chinesesimp>AED-X: 心率(HR): %1 血压(BP):--/--血氧饱和度(SpO2):---呼气末二氧化碳浓度(ETCo2):%2呼吸/分钟：%3</Chinesesimp>
             <Dutch>AED-X: HR %1 BD: --/-- SpO2: --- ETCo2: %2 Ademhalingen/min: %3</Dutch>
+            <Turkish>AED-X: HR: %1 BP: --/-- SpO₂: --- ETCO₂: %2 Nefes/dk: %3</Turkish>
         </Key>
         <Key ID="STR_KAT_Circulation_X_Desc">
             <English>Used to monitor vitals and resuscitate patients</English>
@@ -3769,7 +3939,7 @@
             <Japanese>バイタルの値を監視し、人を蘇生させるために使用される</Japanese>
             <Chinese>具有生命跡象監測功能，可用於監測生命跡象和進行急救</Chinese>
             <Chinesesimp>具有生命迹象监测功能，可用于监测生命迹象和进行急救</Chinesesimp>
-            <Turkish>Hayati değerleri izlemek ve kişileri canlandırmak için kullanılır</Turkish>
+            <Turkish>Hayati bulguları izlemek ve hastalara resüsitasyon yapmak için kullanılır</Turkish>
             <Finnish>Käytetään elintoimintojen seurantaan ja potilaiden elvyttämiseen</Finnish>
             <Dutch>Wordt gebruikt om de vitale waarden te monitoren en patiënten te reanimeren</Dutch>
         </Key>
@@ -3805,7 +3975,7 @@
             <Japanese>[KAM] 医療用血液バンク</Japanese>
             <Chinese>[KAM] 醫療用血庫</Chinese>
             <Chinesesimp>[KAM] 医用血库</Chinesesimp>
-            <Turkish>[KAM] Tıbbi Kan bankası</Turkish>
+            <Turkish>[KAM] Tıbbi Kan Bankası</Turkish>
             <Finnish>[KAM] Lääketieteellinen veripankki</Finnish>
             <Dutch>[KAM] Medische bloedbank</Dutch>
         </Key>
@@ -3822,6 +3992,7 @@
             <Chinese>%1 檢查了狗牌的血型: %2</Chinese>
             <Chinesesimp>%1 检查狗牌上的血型：%2</Chinesesimp>
             <Dutch>%1 heeft de bloedgroep van het herkeningsplaatje gecontroleerd: %2</Dutch>
+            <Turkish>%1 künye kan grubunu kontrol etti: %2</Turkish>
         </Key>
         <Key ID="STR_KAT_Circulation_cba_name">
             <English>KAT - ADV Medical: Circulation</English>
@@ -3831,6 +4002,7 @@
             <German>KAT - ADV Medical: Zirkulation</German>
             <Japanese>KAM - 循環器系 (Circulation)</Japanese>
             <Dutch>KAT - ADV Medical: Circulatie</Dutch>
+            <Turkish>KAT – Gelişmiş Tıp: Dolaşım</Turkish>
         </Key>
         <Key ID="STR_KAT_Circulation_crosspanel">
             <English>Blood groups cheat sheet</English>
@@ -3864,7 +4036,7 @@
             <Japanese>ドナーと患者の血液の間違った組み合わせは、致命的な結果をもたらす可能性さえあります。</Japanese>
             <Chinese>使用不相容的血包輸血可能會導致病患死亡。</Chinese>
             <Chinesesimp>使用不相容的血包输血可能会导致病患死亡。</Chinesesimp>
-            <Turkish>Verici ve alıcı kanının yanlış bir kombinasyonu ölümcül sonuçlara bile yol açabilir.</Turkish>
+            <Turkish>Donör ve alıcı kanının yanlış kombinasyonu ölümcül sonuçlara bile yol açabilir.</Turkish>
             <Finnish>Luovutetun veren ja vastaanottajan veren väärällä yhdistelmällä voi olla tappavia seurauksia.</Finnish>
             <Dutch>Een verkeerde combinatie van donor- en ontvangersbloed kan zelfs dodelijke gevolgen hebben.</Dutch>
         </Key>
@@ -3919,6 +4091,7 @@
             <Chinesesimp>放置AED-X</Chinesesimp>
             <Finnish>Aseta AUD-X</Finnish>
             <Dutch>Plaats AED-X</Dutch>
+            <Turkish>AED-X Yerleştir</Turkish>
         </Key>
         <Key ID="STR_KAT_Circulation_resultItemName">
             <English>ABG Result</English>
@@ -3931,6 +4104,7 @@
             <Chinese>ABG 結果</Chinese>
             <Chinesesimp>ABG 结果</Chinesesimp>
             <Dutch>ABG resultaat</Dutch>
+            <Turkish>ABG Sonucu</Turkish>
         </Key>
         <Key ID="STR_KAT_Circulation_sampleItemName">
             <English>Blood Sample</English>
@@ -3943,6 +4117,7 @@
             <Chinese>血液樣本</Chinese>
             <Chinesesimp>血液样本</Chinesesimp>
             <Dutch>Bloedstaal</Dutch>
+            <Turkish>Kan Örneği</Turkish>
         </Key>
         <Key ID="STR_KAT_Circulation_treatmentTime_BPCuff">
             <English>Time to measure BP with BP Cuff</English>
@@ -3954,6 +4129,7 @@
             <Japanese>血圧カフによる血圧測定の所要時間</Japanese>
             <Chinese>用血壓計量血壓所需時間</Chinese>
             <Dutch>Benodigde tijd voor bloeddrukmeting met manchet</Dutch>
+            <Turkish>BP Cuff ile BP ölçüm süresi</Turkish>
         </Key>
         <Key ID="STR_KAT_Circulation_treatmentTime_BPCuff_DESC">
             <English>Time required to measure blood pressure with blood pressure cuff</English>
@@ -3961,6 +4137,7 @@
             <Spanish>Tiempo necesario para medir la presión arterial con el manguito de presión</Spanish>
             <German>Benötigte Zeit zur Blutdruckmessung mit der Blutdruckmanschette</German>
             <Japanese>血圧カフで血圧を測定するのにかかる時間</Japanese>
+            <Turkish>Blood pressure cuff ile kan basıncı ölçmek için gereken süre</Turkish>
         </Key>
         <Key ID="STR_KAT_Circulation_treatmentTime_StethHR">
             <English>Time to measure HR with a Stethoscope</English>
@@ -3972,6 +4149,7 @@
             <Japanese>聴診器による脈拍測定の所要時間</Japanese>
             <Chinese>用聽診器測量心率所需時間</Chinese>
             <Dutch>Benodigde tijd voor het meten van hartfrequentie met een stethoscoop</Dutch>
+            <Turkish>Stethoscope ile HR ölçüm süresi</Turkish>
         </Key>
         <Key ID="STR_KAT_Circulation_treatmentTime_StethHR_DESC">
             <English>Time required to measure heart rate with stethoscope</English>
@@ -3979,6 +4157,7 @@
             <Spanish>Tiempo necesario para medir la frecuencia cardíaca con el estetoscopio</Spanish>
             <German>Benötigte Zeit zur Pulsmessung mit dem Stethoskop</German>
             <Japanese>聴診器で心拍数を測定するのにかかる時間</Japanese>
+            <Turkish>Stethoscope ile kalp atım hızını ölçmek için gereken süre</Turkish>
         </Key>
     </Package>
 </Project>
