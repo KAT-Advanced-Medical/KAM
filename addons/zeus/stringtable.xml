@@ -34,6 +34,7 @@
             <Chinesesimp>无脉冲电活动(PEA)</Chinesesimp>
             <Finnish>Pulssiton sähköinen toiminta:</Finnish>
             <Dutch>Polsloze electrische activiteit (PEA)</Dutch>
+            <Turkish>Nabızsız Elektriksel Aktivite (PEA)</Turkish>
         </Key>
         <Key ID="STR_KAT_Zeus_CardiacState_Module_State">
             <English>State:</English>
@@ -49,7 +50,7 @@
             <Japanese>状態:</Japanese>
             <Chinese>狀態：</Chinese>
             <Chinesesimp>状态：</Chinesesimp>
-            <Turkish>Belirtmek:</Turkish>
+            <Turkish>Durum:</Turkish>
             <Finnish>Olotila:</Finnish>
             <Dutch>staat:</Dutch>
         </Key>
@@ -68,6 +69,7 @@
             <Chinesesimp>心室颤动(VF)</Chinesesimp>
             <Finnish>Kammiovärinä:</Finnish>
             <Dutch>Ventriculaire fibrillatie</Dutch>
+            <Turkish>Ventriküler Fibrilasyon</Turkish>
         </Key>
         <Key ID="STR_KAT_Zeus_CardiacState_Module_VT">
             <English>Ventricular Tachycardia</English>
@@ -84,6 +86,7 @@
             <Chinesesimp>室性心动过速(VT)</Chinesesimp>
             <Finnish>Ventrikulaarinen takykardia:</Finnish>
             <Dutch>Ventriculaire tachycardie</Dutch>
+            <Turkish>Ventriküler Taşikardi</Turkish>
         </Key>
         <Key ID="STR_KAT_Zeus_CardiacState_Module_displayname">
             <English>Change Cardiac State</English>
@@ -100,6 +103,7 @@
             <Chinesesimp>改变心脏状态</Chinesesimp>
             <Finnish>Muuta sydämen tilaa</Finnish>
             <Dutch>Verander cardiale staat</Dutch>
+            <Turkish>Kardiyak Durumu Değiştir</Turkish>
         </Key>
         <Key ID="STR_KAT_Zeus_ModuleManageAirway_Hemopneumothorax">
             <English>Hemopneumothorax:</English>
@@ -133,7 +137,7 @@
             <Japanese>気道閉塞:</Japanese>
             <Chinese>氣道阻塞：</Chinese>
             <Chinesesimp>气道闭塞:</Chinesesimp>
-            <Turkish>ACE-Eczacılık etkinleştirildi mi?</Turkish>
+            <Turkish>Hava yolu tıkanıklığı:</Turkish>
             <Finnish>Hengitysteiden tukos:</Finnish>
             <Dutch>Luchtwegobstructie:</Dutch>
         </Key>
@@ -151,7 +155,7 @@
             <Japanese>気道異物:</Japanese>
             <Chinese>气道闭塞:</Chinese>
             <Chinesesimp>气道阻塞：</Chinesesimp>
-            <Turkish>Hava yolu tıkanıklığı:</Turkish>
+            <Turkish>Hava yolu kapanıklığı:</Turkish>
             <Finnish>Hengitysteiden tukos:</Finnish>
             <Dutch>Luchtwegverstopping:</Dutch>
         </Key>
@@ -186,6 +190,7 @@
             <Chinese>氣胸惡化：</Chinese>
             <Chinesesimp>气胸恶化:</Chinesesimp>
             <Dutch>Verslechterende pneumothorax:</Dutch>
+            <Turkish>Pnömotoraks Kötüleşmesi:</Turkish>
         </Key>
         <Key ID="STR_KAT_Zeus_ModuleManageAirway_SpO2Value">
             <English>PaO2 value:</English>
@@ -274,6 +279,7 @@
             <Chinesesimp>单位必须是AI</Chinesesimp>
             <Finnish>Yksikön on oltava AI</Finnish>
             <Dutch>Eenheid moet een KI / AI zijn</Dutch>
+            <Turkish>Birim bir AI olmalıdır</Turkish>
         </Key>
         <Key ID="STR_KAT_Zeus_bloodType_Module_displayname">
             <English>Change blood group / volume</English>
@@ -289,7 +295,7 @@
             <Japanese>血液型/血液量を変更</Japanese>
             <Chinese>更改血型/血液量</Chinese>
             <Chinesesimp>改变血型/血液量:</Chinesesimp>
-            <Turkish>Kan grubunu / hacmini değiştir</Turkish>
+            <Turkish>Kan Grubunu / Hacmini Değiştir</Turkish>
             <Finnish>Muuta verityyppiä/tilavuutta</Finnish>
             <Dutch>Verander bloedgroep / -volume</Dutch>
         </Key>
@@ -307,7 +313,7 @@
             <Japanese>気道の管理</Japanese>
             <Chinese>氣道管理</Chinese>
             <Chinesesimp>气道管理</Chinesesimp>
-            <Turkish>Hava Yollarını Yönet</Turkish>
+            <Turkish>Hava Yolunu Yönet</Turkish>
             <Finnish>Hallitse hengitysteitä</Finnish>
             <Dutch>Manage luchtweg</Dutch>
         </Key>
@@ -325,7 +331,7 @@
             <Japanese>%1%3 (以前は %2%3)</Japanese>
             <Chinese>%1%3 (曾是 %2%3)</Chinese>
             <Chinesesimp>%1%3 (以前是 %2%3)</Chinesesimp>
-            <Turkish>%1%3 (oldu %2%3)</Turkish>
+            <Turkish>%1%3 (önceden %2%3)</Turkish>
             <Finnish>%1%2(oli %2%3)</Finnish>
             <Dutch>%1%3 (was %2%3)</Dutch>
         </Key>
@@ -344,6 +350,7 @@
             <Chinesesimp>AI单位即时死亡 %1</Chinesesimp>
             <Finnish>Välitön AI-kuolema %1 yksikölle</Finnish>
             <Dutch>Onmiddelijke dood voor KI / AI %1 voor eenheid</Dutch>
+            <Turkish>Birim için Anında AI Ölümü: %1</Turkish>
         </Key>
         <Key ID="STR_KAT_Zeus_toggleAIDeath_Module_displayname">
             <English>Toggle Instant AI Death</English>
@@ -360,6 +367,7 @@
             <Chinesesimp>切换AI即时死亡</Chinesesimp>
             <Finnish>Valitse välitön AI-kuolema</Finnish>
             <Dutch>Schakel onmiddelijke KI / AI dood om</Dutch>
+            <Turkish>Anında AI Ölümünü Aç/Kapat</Turkish>
         </Key>
     </Package>
 </Project>
