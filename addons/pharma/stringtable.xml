@@ -1797,8 +1797,7 @@
             <Chinese>此時間除以 2，隨機化並加上除以 2 的相同值。\n例如，如果該值設定為 10 秒，則可能出現一種變化： (random (10 / 2)) + (10 / 2) = 8 秒</Chinese>
             <Chinesesimp>此时间除以2，随机化并加上除以2的相同值。\n例如，如果该值设置为10秒，则可能出现一种变化： (random (10 / 2)) + (10 / 2) = 8s</Chinesesimp>
             <Dutch>Deze tijd wordt door 2 gedeeld, gerandomiseerd en dan met dezelfde waarde gedeeld door 2 opgeteld. \nBijvoorbeeld: als deze waarde op 10 seconden ingesteld staat dan is één mogelijke variatie:(random(10/2))+(10/2) = 8s</Dutch>
-            <Turkish>Bu süre ikiye bölünür, rastgeleleştirilir ve tekrar yarısı eklenir.
-Örnek: 10 sn → (random (10 / 2)) + (10 / 2) = 8 sn</Turkish>
+            <Turkish>Bu süre ikiye bölünür, rastgeleleştirilir ve tekrar yarısı eklenir. Örnek: 10 sn → (random (10 / 2)) + (10 / 2) = 8 sn</Turkish>
         </Key>
         <Key ID="STR_KAT_Pharma_SETTING_Coagulation_Time_DESC">
             <English>The time between each wound clotting cycle that start wound clotting. (low number may cause lag)</English>
@@ -1876,8 +1875,7 @@
             <Chinese>允許凝固影響 AI 單位。\n如果開啟，仍需要其他值。（如果存在許多 AI，可能會導致延遲）</Chinese>
             <Chinesesimp>允许凝固影响AI单位。\n如果打开，仍需要其他值。（如果存在许多AI，可能会导致延迟）</Chinesesimp>
             <Dutch>Laat coagulatie AI/KI beïnvloeden.\nElke andere waarde wordt ook voor AI/KI gecheckt wanneer dit aanstaat. (Kan prestatieproblemen opleveren als er veel AI's/KI's aanwezig zijn.)</Dutch>
-            <Turkish>Koagülasyonun AI birimleri etkilemesine izin verir.
-(Not: Çok sayıda AI varsa gecikmeye yol açabilir)</Turkish>
+            <Turkish>Koagülasyonun AI birimleri etkilemesine izin verir. (Not: Çok sayıda AI varsa gecikmeye yol açabilir)</Turkish>
         </Key>
         <Key ID="STR_KAT_Pharma_SETTING_Coagulation_allow_EACA_script">
             <English>Allow Additional EACA Stiching</English>
@@ -2111,8 +2109,7 @@
             <Chinese>凝血需要心率超過 20 BPM 嗎？（做心肺復甦術將使心率保持在 20 BPM 以上）</Chinese>
             <Chinesesimp>凝血需要心率超过20BPM吗？（做心肺复苏术将使心率保持在20BPM以上）</Chinesesimp>
             <Dutch>Is een hartslag van meer dan 20SPM benodigt voor coagulatie? (Het uitvoeren van CPR houdt de hartslag boven 20SPM)</Dutch>
-            <Turkish>Koagülasyon için kalp atım hızının 20 BPM üzerinde olması gerekir mi?
-(CPR, HR’yi 20 BPM üzerinde tutar)</Turkish>
+            <Turkish>Koagülasyon için kalp atım hızının 20 BPM üzerinde olması gerekir mi? (CPR, HR’yi 20 BPM üzerinde tutar)</Turkish>
         </Key>
         <Key ID="STR_KAT_Pharma_SETTING_Coagulation_tourniquetBlock">
             <English>Tournique Blocks Blood Clotting</English>

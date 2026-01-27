@@ -1976,8 +1976,7 @@
             <Chinesesimp>军医的最大心肺复苏几率</Chinesesimp>
             <Finnish>Suurin mahdollisuus menestyä elvytystä suorittaville taistelulääkäreille</Finnish>
             <Dutch>Maximale succeskans van CPR voor reguliere medici</Dutch>
-            <Turkish>Normal medikler için Maks. CPR Şansı
-</Turkish>
+            <Turkish>Normal medikler için Maks. CPR Şansı</Turkish>
         </Key>
         <Key ID="STR_KAT_Circulation_CPR_MaxChance_RegularMedic_DESC">
             <English>Maximum CPR success chance for regular medics</English>
@@ -2055,8 +2054,7 @@
             <Chinesesimp>军医的最小心肺复苏几率</Chinesesimp>
             <Finnish>Pienin mahdollisuus menestyä elvytystyössä taistelulääkärinä</Finnish>
             <Dutch>Minimale succeskans van CPR voor reguliere medici</Dutch>
-            <Turkish>Normal medikler için Min. CPR Şansı
-</Turkish>
+            <Turkish>Normal medikler için Min. CPR Şansı</Turkish>
         </Key>
         <Key ID="STR_KAT_Circulation_CPR_MinChance_RegularMedic_DESC">
             <English>Minimum CPR success chance for regular medics</English>

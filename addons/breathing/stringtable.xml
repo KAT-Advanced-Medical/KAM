@@ -556,9 +556,7 @@
             <Japanese>一度の負傷で発生する気胸へのダメージ。値が低いほど気胸が発生する可能性が高くなります。\n値を非常に低く設定するか0に設定すると、予期しない動作や予期しない負傷による気胸を引き起こす可能性があります。</Japanese>
             <Chinese>單次撞擊的損傷程度（範圍為 0 到 1）需要達到多少，才會觸發氣胸的機率。數值越低，代表越容易發生氣胸。將數值設定過低或設為零，可能會導致無法預期的行為，或因意外傷害引發氣胸。</Chinese>
             <Chinesesimp>单次撞击的损伤程度（范围为 0 到 1）需要达到多少，才会触发气胸的几率。数值越低，代表越容易发生气胸。将数值设定过低或设为零，可能会导致无法预期的行为，或因意外伤害引发气胸。</Chinesesimp>
-            <Turkish>0 ile 1 arasında bir ölçekte, tek bir darbe sırasında oluşması gereken hasar miktarını ifade eder; bu eşik aşıldığında pnömotoraks oluşma ihtimali ortaya çıkar.
-Daha düşük değerler, pnömotoraksın oluşma olasılığının daha yüksek olduğu anlamına gelir.
-Değerin çok düşük veya 0 olarak ayarlanması, beklenmeyen davranışlara ya da beklenmedik yaralanmalar sonucunda pnömotoraks gelişmesine neden olabilir.</Turkish>
+            <Turkish>0 ile 1 arasında bir ölçekte, tek bir darbe sırasında oluşması gereken hasar miktarını ifade eder; bu eşik aşıldığında pnömotoraks oluşma ihtimali ortaya çıkar. Daha düşük değerler, pnömotoraksın oluşma olasılığının daha yüksek olduğu anlamına gelir. Değerin çok düşük veya 0 olarak ayarlanması, beklenmeyen davranışlara ya da beklenmedik yaralanmalar sonucunda pnömotoraks gelişmesine neden olabilir.</Turkish>
             <Finnish>Yhden osuman vaurion määrä asteikolla 0-1, jonka täytyy tapahtua ennen kuin ilmarinta on mahdollista. Pienemmät arvot tarkoittavat, että ilmarinta on todennäköisempää. Arvon asettaminen erittäin alhaiseksi tai arvoon 0 voi aiheuttaa odottamatonta käyttäytymistä tai ilmarintaa epätavallisten vammojen vuoksi.</Finnish>
             <Dutch>De hoeveelheid schade van een enkele impact, op een schaal van 0 tot 1, dat benodigd is voordat een pneumothorax gerold wordt. Lagere waarden kan leiden tot meer pneumothoraxen. Als deze instelling laag of zelfs op 0 staat, kan dit leiden tot raar gedrag of pneumothoraxen van onverwachte wonden</Dutch>
         </Key>
