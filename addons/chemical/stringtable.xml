@@ -757,11 +757,11 @@
         </Key>
         <Key ID="STR_KAT_Chemical_SETTING_burnTime">
             <English>Time until next burn damage</English>
-            <Polish>Czas przed następnym popażeniem</Polish>
+            <Polish>Czas przed następnym poparzeniem</Polish>
         </Key>
         <Key ID="STR_KAT_Chemical_SETTING_burnTime_DESC">
             <English>Time beetwen each burn damage</English>
-            <Polish>Ustala ile czasu minie zanim gracz dostanie następne obrażenia popażenia chemicznego</Polish>
+            <Polish>Ustala ile czasu minie zanim gracz dostanie następne obrażenia poparzenia chemicznego</Polish>
         </Key>
         <Key ID="STR_KAT_Chemical_SETTING_customColors">
             <English>Use custom colors for ammo particle effects</English>
@@ -1220,15 +1220,15 @@
         </Key>
         <Key ID="STR_ACE_Medical_Damage_ChemicalBurn_Large">
             <English>Large Chemical Burn</English>
-            <Polish>Duże popażenie chemiczne</Polish>
+            <Polish>Duże poparzenie chemiczne</Polish>
         </Key>
         <Key ID="STR_ACE_Medical_Damage_ChemicalBurn_Medium">
             <English>Medium Chemical Burn</English>
-            <Polish>Średnie popażenie chemiczne</Polish>
+            <Polish>Średnie poparzenie chemiczne</Polish>
         </Key>
         <Key ID="STR_ACE_Medical_Damage_ChemicalBurn_Minor">
             <English>Minor Chemical Burn</English>
-            <Polish>Małe popażenie chemiczne</Polish>
+            <Polish>Małe poparzenie chemiczne</Polish>
         </Key>
     </Package>
 </Project>
