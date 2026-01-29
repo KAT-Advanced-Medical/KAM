@@ -71,7 +71,7 @@ You can check remaining oxygen under this same menu.
 Capacity and working time can be set under addons settings menu. 
 Capacity is expressed in remaining usage time.
 When oxygen is provided there is small O2 icon i your botoom-left screen corner. Based on color of icon you can know about remaining capacity. When the icon is yellow you have 5 minutes of oxygen left, when red you have 1 minute of oxygen left. When icon isnt visible there is no oxygen provided.
-You can recharge your scuba, by ace interaction at configured objects, default it is scuba cylinder from vanilla/contact dlc.
+You can recharge your scuba, by ace interaction at configured objects, default it is scba cylinder from vanilla/contact dlc.
 
 ## Hoses segments and filters visibility
 
@@ -91,7 +91,7 @@ Push patient Atropine.
 Heal symptoms.
 
 IMPORTANT
-In Vx Intoxiaction time is really important. In deafault settings first 80 seconds, are non-lethal sympgtoms, but every next cycle will give much more lethal damage, ending on about 5 minut asystoly, and death.
+In Vx Intoxiaction time is really important. In deafault settings first 80 seconds, are non-lethal symptoms, but every next cycle will give much more lethal damage, ending on about 5 minut asystoly, and death.
 
 ### Medicine
 
