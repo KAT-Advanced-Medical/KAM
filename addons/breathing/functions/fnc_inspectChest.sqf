@@ -22,7 +22,7 @@ private _message = LLSTRING(inspectChest_normal);
 private _messageLog = LLSTRING(inspectChest_normal);
 private _tension = _patient getVariable [QGVAR(tensionpneumothorax), [false, false]];
 private _hemo = _patient getVariable [QGVAR(hemopneumothorax), [0, 0]];
-private _hasPneumothorax = (_patient getVariable [QGVAR(pneumothorax), [0, 0]] select 0 > 0 || _patient getVariable [QGVAR(pneumothorax), [0, 0]] select 1 > 0 || (_tension select 0) || (_tension select 1) || (_hemo select 0) || (_hemo select 1));
+private _hasPneumothorax = (_patient getVariable [QGVAR(pneumothorax), [0, 0]] select 0 > 0 || _patient getVariable [QGVAR(pneumothorax), [0, 0]] select 1 > 0 || (_tension select 0) || (_tension select 1) || ((_hemo select 0) > 0) || ((_hemo select 1) > 0));
 private _airwayClear = HAS_AIRWAY(_patient);
 private _simpleSetting = (GVAR(inspectChest_enable) == 1);
 private _hintSize = 1.5;
