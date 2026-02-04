@@ -42,7 +42,7 @@ if (floor (random 100) <= _concussionChance) then {
 
     private _base = random [0.05, 0.1, 0.2];
     private _impactFactor = linearConversion [0, 6, _damage, 0.1, 0.8, true];
-    private _newConcussion = (_base + _impactFactor) min 1;
+    private _newConcussion = _concussion + (_base + _impactFactor) min 1;
 
     private _newEdema = _edema + linearConversion [0,6,_damage,0,0.25,true];
 

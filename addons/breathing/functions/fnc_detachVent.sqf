@@ -20,7 +20,7 @@ params ["_medic", "_patient"];
 _patient setVariable [QGVAR(attachedVent), false, true];
 _patient setVariable [QGVAR(attachedVentGUI), false, true];
 
-_currentMonitors = _patient getVariable [QGVAR(etco2Monitor), []];
+private _currentMonitors = _patient getVariable [QGVAR(etco2Monitor), []];
 _currentMonitors deleteAt (_currentMonitors find "Ventilator");
 
 _patient setVariable [QGVAR(etco2Monitor), _currentMonitors, true];

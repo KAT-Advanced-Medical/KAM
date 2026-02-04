@@ -22,11 +22,7 @@ params ["_medic", "_patient"];
 private _ph = GET_PH(_patient);
 private _hr = GET_HEART_RATE(_patient);
 private _rawRR = GET_BREATHING_RATE(_patient);
-private _icp = GET_ICP(_patient);
-private _cardiacOutput = [_patient] call EFUNC(vitals,getCardiacOutput);
 private _rr = round _rawRR;
-private _output = "";
-private _output_log = "";
 private _height = 1.5;
 private _breathing = LLSTRING(breathing_isNormal);
 private _breathing_log = localize ACELSTRING(medical_treatment,Check_Pulse_Normal);
@@ -69,47 +65,47 @@ private _isMedic = [_medic, GVAR(medLvl_VerboseBreathing)] call ACEFUNC(common,i
 if ((GVAR(enableVerboseBreathing)) && _isMedic)then {
     switch (_breathingState) do {
         case 1: {
-            _breathing_alt = LLSTRING(breathing_isCheyne);
+            private _breathing_alt = LLSTRING(breathing_isCheyne);
             _output = format ["%1%2, %3, %4", _breathing ,_breath, _breathRate, _breathing_alt];
             _height = 3;
         };
         case 2: {
-            _breathing_alt = LLSTRING(breathing_isIrreg);
+            private _breathing_alt = LLSTRING(breathing_isIrreg);
             _output = format ["%1%2, %3, %4", _breathing ,_breath, _breathRate, _breathing_alt];
             _height = 3;
         };
         case 3: {
-            _breathing_alt = LLSTRING(breathing_isBiots);
+            private _breathing_alt = LLSTRING(breathing_isBiots);
             _output = format ["%1%2, %3, %4", _breathing ,_breath, _breathRate, _breathing_alt];
             _height = 3;
         };
         case 4: {
-            _breathing_alt = LLSTRING(breathing_isAgonal);
+            private _breathing_alt = LLSTRING(breathing_isAgonal);
             _output = format ["%1%2, %3, %4", _breathing ,_breath, _breathRate, _breathing_alt];
             _height = 3;
         };
         case 5: {
-            _breathing_alt = LLSTRING(breathing_isKussmaul);
+            private _breathing_alt = LLSTRING(breathing_isKussmaul);
             _output = format ["%1%2, %3, %4", _breathing ,_breath, _breathRate, _breathing_alt];
             _height = 3;
         };
         case 6: {
-            _breathing_alt = LLSTRING(breathing_isKussmaulFailure);
+            private _breathing_alt = LLSTRING(breathing_isKussmaulFailure);
             _output = format ["%1%2, %3, %4", _breathing ,_breath, _breathRate, _breathing_alt];
             _height = 3;
         };
         case 7: {
-            _breathing_alt = LLSTRING(breathing_isRespFailure1);
+            private _breathing_alt = LLSTRING(breathing_isRespFailure1);
             _output = format ["%1%2, %3, %4", _breathing ,_breath, _breathRate, _breathing_alt];
             _height = 3;
         };
         case 8: {
-            _breathing_alt = LLSTRING(breathing_isRespFailure2);
+            private _breathing_alt = LLSTRING(breathing_isRespFailure2);
             _output = format ["%1%2, %3, %4", _breathing ,_breath, _breathRate, _breathing_alt];
             _height = 3;
         };
         case 9: {
-            _breathing_alt = LLSTRING(breathing_isRespFailure3);
+            private _breathing_alt = LLSTRING(breathing_isRespFailure3);
             _output = format ["%1%2, %3, %4", _breathing ,_breath, _breathRate, _breathing_alt];
             _height = 3;
         };

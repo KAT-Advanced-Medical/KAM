@@ -107,9 +107,9 @@ if (GVAR(AdvRhythm_canDeteriorate)) then {
                 };
                 _unit setVariable [QGVAR(cardiacArrestType), _targetType, true];
             },
-            [_unit], _timeToDeteriorate,
+            [_unit, _refractoryAdd], _timeToDeteriorate,
             {
-                params ["_unit"];
+                params ["_unit", "_refractoryAdd"];
 
                 if (((count(_unit getVariable [QGVAR(ht), []])) != 0)) exitWith {};
 

@@ -24,7 +24,6 @@ if (GVAR(chestTube_ConsciousnessRequirement) == 1 && !(IS_UNCONSCIOUS(_patient))
     [_output, 1.5, _medic] call ACEFUNC(common,displayTextStructured);
 };
 private _medStack = _patient call ACEFUNC(medical_status,getAllMedicationCount);
-private _medsToCheck = ["fentanyl", "ketamine", "nalbuphine", "morphine"];
 private _fentanylEffectiveness = 0;
 private _ketamineEffectiveness = 0;
 private _nalbuphineEffectiveness = 0;
@@ -82,7 +81,7 @@ _patient setVariable [QGVAR(chestTube), _chestTubeArray, true];
         [_idPFH] call CBA_fnc_removePerFrameHandler;
         _patient setVariable [QGVAR(etomidate_Pain), false]
     };
-    _activeLoadingDose = _patient getVariable [QEGVAR(pharma,activeEtomidateLoadingDose), false];
+    private _activeLoadingDose = _patient getVariable [QEGVAR(pharma,activeEtomidateLoadingDose), false];
 
     if (((GVAR(ChestTube_ConsciousnessRequirement) in [0,1]) && (!(IS_UNCONSCIOUS(_patient))) && (_count <= 0.2) && (_activeLoadingDose)) || (GVAR(Surgery_ConsciousnessRequirement) == 3 && _count <= 0.2 && (_activeLoadingDose))) exitWith {
         if !(_patient getVariable [QGVAR(etomidate_Pain), false]) then {

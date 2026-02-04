@@ -21,7 +21,7 @@
 
 params ["_medic", "_patient","_classname", "_usedItem"];
 
-_currentMonitors = _patient getVariable [QGVAR(etco2Monitor),[]];
+private _currentMonitors = _patient getVariable [QGVAR(etco2Monitor),[]];
 _currentMonitors pushBack _classname;
 
 _patient setVariable [QGVAR(etco2Monitor), _currentMonitors, true];

@@ -39,7 +39,7 @@
     params ["_time", "_unit"];
     private _currentRespawnTime = playerRespawnTime;
     setPlayerRespawnTime _time;
-    _currentUnit = _unit;
+    private _currentUnit = _unit;
 
     [{
         params ["_currentUnit"];

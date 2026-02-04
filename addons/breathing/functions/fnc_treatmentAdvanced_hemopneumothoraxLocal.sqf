@@ -35,8 +35,8 @@ _patient setVariable [QEGVAR(circulation,ht), _ht, true];
 private _pneumothorax = _patient getVariable [QGVAR(pneumothorax), [0, 0]];
 private _hemopneumothorax = _patient getVariable [QGVAR(hemopneumothorax), [0, 0]];
 
-if ((_patient getVariable [QGVAR(pneumothorax), [0, 0]] select _side == 0) &&
-    ((_patient getVariable [QGVAR(hemopneumothorax), [0, 0]] select _side) == 0) &&
+if (((_pneumothorax select _side) == 0) &&
+    ((_hemopneumothorax select _side) == 0) &&
     !((_patient getVariable [QGVAR(tensionPneumothorax), [false, false]]) select _side)) then {
     if (GVAR(clearChestSealAfterTreatment)) then {
         _activeChestSeal set [_side, false];

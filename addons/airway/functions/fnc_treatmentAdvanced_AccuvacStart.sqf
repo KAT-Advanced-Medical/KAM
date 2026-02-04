@@ -121,17 +121,17 @@ GVAR(suction_timeOut) = true;
                         [LLSTRING(suction_info), 2, _medic] call ACEFUNC(common,displayTextStructured);
                     };
                     if (_usedItem isEqualTo "kat_suction") then {
-                        _soundID = playSound3D [QPATHTOF_SOUND(sounds\manualpump_suction.wav), _patient, false, getPosASL _patient, 6, 1, 15];
+                        playSound3D [QPATHTOF_SOUND(sounds\manualpump_suction.wav), _patient, false, getPosASL _patient, 6, 1, 15];
                     } else {
-                        _soundID = playSound3D [QPATHTOF_SOUND(sounds\accuvac_suction.wav), _patient, false, getPosASL _patient, 6, 1, 15];
+                        playSound3D [QPATHTOF_SOUND(sounds\accuvac_suction.wav), _patient, false, getPosASL _patient, 6, 1, 15];
                     };
                 } else {
                     [LLSTRING(suction_success), 1.5, _medic] call ACEFUNC(common,displayTextStructured);
                     _patient setVariable [QGVAR(hasPuked), false, true];
                     if (_usedItem isEqualTo "kat_suction") then {
-                            _soundID = playSound3D [QPATHTOF_SOUND(sounds\manualpump_start.wav), _patient, false, getPosASL _patient, 6, 1, 15];
+                            playSound3D [QPATHTOF_SOUND(sounds\manualpump_start.wav), _patient, false, getPosASL _patient, 6, 1, 15];
                         } else {
-                            _soundID = playSound3D [QPATHTOF_SOUND(sounds\accuvac_start.wav), _patient, false, getPosASL _patient, 6, 1, 15];
+                            playSound3D [QPATHTOF_SOUND(sounds\accuvac_start.wav), _patient, false, getPosASL _patient, 6, 1, 15];
                         };
                 };
                 _patient setVariable [QGVAR(clearedTime), CBA_missionTime, true];

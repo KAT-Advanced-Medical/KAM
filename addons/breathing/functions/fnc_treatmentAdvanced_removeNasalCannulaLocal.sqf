@@ -19,7 +19,7 @@
 
 params ["_medic", "_patient"];
 
-_currentMonitors = _patient getVariable [QGVAR(etco2Monitor), []];
+private _currentMonitors = _patient getVariable [QGVAR(etco2Monitor), []];
 _currentMonitors deleteAt (_currentMonitors find "NasalCannula");
 
 _patient setVariable [QGVAR(etco2Monitor), _currentMonitors, true];

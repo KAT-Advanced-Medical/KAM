@@ -36,9 +36,9 @@ variantDelay = 0;
     private _tension = ((_patient getVariable [QGVAR(tensionpneumothorax), [false, false]]) select _side) || (((_patient getVariable [QGVAR(pneumothorax), [0,0]]) select _side) > 0);
     private _hemo = (_patient getVariable [QGVAR(hemopneumothorax), [0, 0]]) select _side;
 
-    _breathDelay = _BR/60;
+    private _breathDelay = _BR/60;
 
-    _random = round random 1;
+    private _random = round random 1;
 
     private _type = 3;
 

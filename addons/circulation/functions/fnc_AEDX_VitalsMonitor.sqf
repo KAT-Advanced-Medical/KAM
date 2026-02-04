@@ -43,15 +43,12 @@ if (_patient getVariable ["kat_AEDXPatient_PFH", -1] isEqualTo -1) then {
         // Clear previous log entry before adding new one
 
         private _partIndex = ((_patient getVariable [QGVAR(AED_X_VitalsMonitor_Provider), [objNull, -1, 3]]) select 2);
-        private _tourniquetApplied = HAS_TOURNIQUET_APPLIED_ON(_patient,_partIndex);
         private _isOccluded = [_patient,_partIndex] call EFUNC(pharma,occlusionCheck);
         private _isDamaged = [_patient,_partIndex] call EFUNC(hitpoints,damageCheck);
         private _hr = 0;
         private _pr = 0;
         private _bp = [0,0];
         private _spO2 = 0;
-        private _etco2 = 0;
-        private _breathrate = 0;
 
         private _hasEtco2Monitor = (_patient getVariable [QEGVAR(breathing,etco2Monitor),[]] isNotEqualTo []); //check for etco2 monitoring apparatus
         _hasEtco2Monitor = [false, _hasEtco2Monitor] select (EGVAR(breathing,Etco2_Enabled)); //check etco2 monitoring is enabled
@@ -296,7 +293,6 @@ if (_patient getVariable [QGVAR(AED_X_VitalsMonitor_Connected), false] && {(_pat
 
         if (_patient getVariable [QGVAR(DefibrillatorInUse), false] || !(_patient getVariable [QGVAR(AED_X_VitalsMonitor_VolumePatient), false])) then {
         } else {
-            private _hr = _patient getVariable [QACEGVAR(medical,heartRate), 80];
             private _spO2 = GET_KAT_SPO2(_patient);
             if (_spO2 < GVAR(AED_X_Monitor_SpO2Warning) || _isOccluded) then {
                 playSound3D [QPATHTOF_SOUND(sounds\spo2warning.wav), _soundSource, false, getPosASL _soundSource, 5, 1, 15];

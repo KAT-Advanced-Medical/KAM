@@ -30,8 +30,8 @@ private _fnc_getActions = {
 
         if (_idNumber > 0) then {   
             private _resultSampleMap = missionNamespace getVariable [QEGVAR(circulation,resultSampleMap), []];
-            _resultSampleArray = _resultSampleMap get _idNumber;
-            _resultSampleActual = _resultSampleArray select 1;
+            private _resultSampleArray = _resultSampleMap get _idNumber;
+            private _resultSampleActual = _resultSampleArray select 1;
             private _patient = _resultSampleArray select 0;
 
             _actions pushBack [

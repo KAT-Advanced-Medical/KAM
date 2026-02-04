@@ -22,12 +22,8 @@
 
 params ["_medic", "_patient", "_bodyPart", "_className", "", "_usedItem"];
 
-private _return = false;
 _usedItem = "kat_" + _className;
-
 [_medic, _patient, _bodyPart, _className, objNull, _usedItem] call ACEFUNC(medical_treatment,ivBag);
-
-
 _return = true;
 
 _return

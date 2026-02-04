@@ -95,7 +95,7 @@ private _newPFH = [{
 		};
 		_newICP = 15 max _newICP;
 		_unit setVariable [QGVAR(ICP),_newICP,true];
-		_reversibleDamageDiff = ((_reversibleDamage - GVAR(reversibleDamageLoss)) max 0) min 100;
+		private _reversibleDamageDiff = ((_reversibleDamage - GVAR(reversibleDamageLoss)) max 0) min 100;
 		//Reduce reversible tissue damage
 		_unit setVariable [QGVAR(reversibleDamage),_reversibleDamageDiff,true];
 	};

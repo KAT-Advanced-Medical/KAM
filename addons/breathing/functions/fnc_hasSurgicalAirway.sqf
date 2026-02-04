@@ -18,6 +18,5 @@
 
 params ["_patient"];
 
-_hasSurgical = false;
 _hasSurgical = _patient getVariable [QEGVAR(airway,airway_item), ""] isEqualTo "Surgical_Airway";
 _hasSurgical

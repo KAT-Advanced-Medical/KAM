@@ -94,7 +94,6 @@ _ae2PathwayPowerFatigued = _ae2PathwayPowerFatigued / _stimulantMult;
 private _acidPowerPenalty = linearConversion [0, 1, ACEGVAR(advanced_fatigue,anFatigue), 1, 0.6, true];
 _ae1PathwayPowerFatigued = _ae1PathwayPowerFatigued * _acidPowerPenalty;
 _ae2PathwayPowerFatigued = _ae2PathwayPowerFatigued * _acidPowerPenalty;
-private _aePathwayPowerFatigued  = _ae1PathwayPowerFatigued + _ae2PathwayPowerFatigued;
 // private _anPathwayPowerFatigued  = ACEGVAR(advanced_fatigue,anPathwayPower) * sqrt (ACEGVAR(advanced_fatigue,anReserve) / AN_MAXRESERVE) * _oxygen * _muscleIntegrity; // not used
 
 // Calculate how much power is consumed from each reserve

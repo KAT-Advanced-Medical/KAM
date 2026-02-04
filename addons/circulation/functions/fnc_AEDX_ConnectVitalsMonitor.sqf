@@ -25,7 +25,6 @@ params ["_medic", "_patient", "_bodyPart", "_source", ["_extraArgs",[]], ["_noLo
 _extraArgs params [["_placedAED",objNull]];
 
 private _provider = objNull;
-private _soundSource = _medic;
 
 private _exit = false;
 

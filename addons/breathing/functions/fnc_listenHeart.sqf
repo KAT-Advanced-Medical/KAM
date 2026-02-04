@@ -32,7 +32,7 @@ variantDelay = 0;
     };
     private _tamponade = (_patient getVariable [QEGVAR(circulation,effusion), 0]);
 
-    _heartDelay = _hr/180;
+    private _heartDelay = _hr/180;
 
     if(!(soundPlaying)) then {
         switch (_tamponade) do {

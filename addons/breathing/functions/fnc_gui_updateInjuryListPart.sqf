@@ -21,8 +21,7 @@
 params ["_ctrl", "_target", "_selectionN", "_entries"];
 
 if (GVAR(showCyanosis) && _selectionN in [0,4,6,8,10]) then {
-    private _spO2 = 0;
-    _spO2 = GET_KAT_SPO2(_target);
+    private _spO2 = GET_KAT_SPO2(_target);
     if (_spO2 <= GVAR(slightValue) || HAS_TOURNIQUET_APPLIED_ON(_target,_selectionN)) then {
         private _cyanosisArr = switch (true) do {
             case (HAS_TOURNIQUET_APPLIED_ON(_target,_selectionN));
@@ -59,7 +58,7 @@ if (_target getVariable [QGVAR(attachedVentGUI), false] && _selectionN isEqualTo
 };
 
 if (((_target getVariable [QGVAR(chestTube), [0, 0]] select 0) > 0) && _selectionN isEqualTo 2) then {
-    _leftChest = (_target getVariable [QGVAR(chestTube), [0, 0]] select 0);
+    private _leftChest = (_target getVariable [QGVAR(chestTube), [0, 0]] select 0);
     switch (_leftChest) do {
         case 0.1: {
             _entries pushBack [LLSTRING(Left_PartialChestTube_1), [0.3, 0.8, 0.8, 1]];

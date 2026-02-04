@@ -28,7 +28,6 @@ if (GVAR(RecoveryPosition_TimeToDrain) > 0) then {
    [{
     params ["_args", "_idPFH"];
     _args params ["_patient"];
-    private _occlusionState = _patient getVariable [QGVAR(occlusion), [0, 0, 0]];
     if (!(alive _patient)) exitWith {
         [_idPFH] call CBA_fnc_removePerFrameHandler;
     };
