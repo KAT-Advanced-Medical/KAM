@@ -60,6 +60,9 @@ private _blood = 0;
 private _plasma = 0;
 private _ringersLactate = 0;
 private _packedRBC = 0;
+private _hextend = 0;
+private _hyperSaline = 0;
+private _fbtk = 0;
 private _totalIvVolume = 0;
 
 // Remove matching bags and collect volumes
@@ -68,19 +71,26 @@ private _newArray = [];
 {
     _x params ["_volumeRemaining", "_ivType", "_ivPartIndex"];
 
-    if (_ivPartIndex == _partIndex) then {
+    if (
+        _ivPartIndex == _partIndex &&
+        (
+            (_type isEqualTo "FBTK" && {_ivType in ["FBTK_500", "FBTK_250"]}) ||
+            (_type isNotEqualTo "FBTK" && {_ivType isEqualTo _type})
+        )
+    ) then {
         _totalIvVolume = _totalIvVolume + _volumeRemaining;
-
         switch (_ivType) do {
             case "Saline": { _saline = _saline + _volumeRemaining; };
             case "Blood": { _blood = _blood + _volumeRemaining; };
             case "Plasma": { _plasma = _plasma + _volumeRemaining; };
             case "Ringers Lactate": { _ringersLactate = _ringersLactate + _volumeRemaining; };
             case "PackedRBC": { _packedRBC = _packedRBC + _volumeRemaining; };
+            case "Hextend": { _hextend = _hextend + _volumeRemaining; };
+            case "Hypertonic Saline": { _hyperSaline = _hyperSaline + _volumeRemaining; };
+            case "FBTK_500": { _fbtk = _fbtk + _volumeRemaining; };
+            case "FBTK_250": { _fbtk = _fbtk + _volumeRemaining; };
         };
-    } else {
-        _newArray pushBack _x;
-    };
+    } else {};
 } forEach _ivBags;
 
 if (_totalIvVolume >= 1) then {
@@ -114,7 +124,9 @@ if (_totalIvVolume >= 1) then {
     if (_ringersLactate > 250) then {
         [_ringersLactate, ["kat_RingersLactateIV", "kat_RingersLactateIV_500", "kat_RingersLactateIV_250"]] call _refundIV;
     };
-    
+    if (_hextend > 250) then {
+        [_hextend, ["kat_HextendIV", "kat_HextendIV_500", "kat_HextendIV_250"]] call _refundIV;
+    };
     if (_packedRBC > 250) then {
         switch (true) do {
             case (_packedRBC >= 3000): { for "_i" from 1 to 6 do { _medic addItem "kat_PackedRBCIV_500"; };};
@@ -129,6 +141,41 @@ if (_totalIvVolume >= 1) then {
             case (_packedRBC >= 750): { _medic addItem "kat_PackedRBCIV_500"; _medic addItem "kat_PackedRBCIV_250"; };
             case (_packedRBC >= 500): { _medic addItem "kat_PackedRBCIV_500"; };
             case (_packedRBC >= 250): { _medic addItem "kat_PackedRBCIV_250"; };
+        };
+    };
+    if (_hyperSaline > 250) then {
+        switch (true) do {
+            case (_hyperSaline >= 3000): { for "_i" from 1 to 6 do { _medic addItem "kat_HypertonicSalineIV_500"; };};
+            case (_hyperSaline >= 2750): { for "_i" from 1 to 5 do { _medic addItem "kat_HypertonicSalineIV_500"; }; _medic addItem "kat_HypertonicSalineIV_250";};
+            case (_hyperSaline >= 2500): { for "_i" from 1 to 5 do { _medic addItem "kat_HypertonicSalineIV_500"; };};
+            case (_hyperSaline >= 2250): { for "_i" from 1 to 4 do { _medic addItem "kat_HypertonicSalineIV_500"; }; _medic addItem "kat_HypertonicSalineIV_250";};
+            case (_hyperSaline >= 2000): { for "_i" from 1 to 4 do { _medic addItem "kat_HypertonicSalineIV_500"; };};
+            case (_hyperSaline >= 1750): { for "_i" from 1 to 3 do { _medic addItem "kat_HypertonicSalineIV_500"; }; _medic addItem "kat_HypertonicSalineIV_250";};
+            case (_hyperSaline >= 1500): { for "_i" from 1 to 3 do { _medic addItem "kat_HypertonicSalineIV_500"; };};
+            case (_hyperSaline >= 1250): { for "_i" from 1 to 2 do { _medic addItem "kat_HypertonicSalineIV_500"; }; _medic addItem "kat_HypertonicSalineIV_250";};
+            case (_hyperSaline >= 1000): { for "_i" from 1 to 2 do { _medic addItem "kat_HypertonicSalineIV_500"; }; };
+            case (_hyperSaline >= 750): { _medic addItem "kat_HypertonicSalineIV_500"; _medic addItem "kat_HypertonicSalineIV_250"; };
+            case (_hyperSaline >= 500): { _medic addItem "kat_HypertonicSalineIV_500"; };
+            case (_hyperSaline >= 250): { _medic addItem "kat_HypertonicSalineIV_250"; };
+        };
+    };
+    if (_fbtk > 240) then {
+
+    private _blood = [_patient] call EFUNC(circulation,bloodType);
+    private _item = "";
+    switch (true) do {
+        case (_fbtk >= 490): {
+            _item = "kat_FBTKbloodIV_" + _blood + "_500";
+        };
+        case (_fbtk >= 240): {
+            _item = "kat_FBTKbloodIV_" + _blood + "_250";
+        };
+        default {
+            _item = "";
+        };
+    };
+    if (_item != "") then {
+        _medic addItem _item;
         };
     };
 };
