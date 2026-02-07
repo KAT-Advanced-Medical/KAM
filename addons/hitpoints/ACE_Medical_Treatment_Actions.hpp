@@ -159,7 +159,7 @@ class ACE_Medical_Treatment_Actions {
         condition = QFUNC(canBindPelvis);
         allowSelfTreatment = 0;
         medicRequired = QGVAR(JointCareLevel);
-        treatmentTime = QGVAR(bindTime);
+        treatmentTime = 8;
         items[] = {"kat_Pelvic_Binder"};
     };
     class Splint: BasicBandage {
