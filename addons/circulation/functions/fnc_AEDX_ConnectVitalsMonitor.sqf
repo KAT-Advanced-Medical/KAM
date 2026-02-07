@@ -44,7 +44,6 @@ switch (_source) do {
         if (_exit) exitWith {[LLSTRING(Defibrillator_PatientDisconnected), 1.5, _medic] call ACEFUNC(common,displayTextStructured);};
 
         _provider = _placedDefibrillator;
-        _soundSource = _placedDefibrillator;
 
         _placedDefibrillator setVariable [QGVAR(AED_X_VitalsMonitor_Patient), _patient, true];
 
@@ -70,7 +69,6 @@ switch (_source) do {
     };
     case 2: { // Vehicle
         _provider = objectParent _patient;
-        _soundSource = _patient;
 
         [{ // Disconnect monitoring if patient exits vehicle
             params ["_medic", "_patient", "_provider"];

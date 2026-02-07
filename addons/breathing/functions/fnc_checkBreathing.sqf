@@ -58,8 +58,8 @@ if ([_medic] call ACEFUNC(common,isMedic)) then {
         default { _breathRate = LLSTRING(breathing_rrNormal); };
     };
 };
-_output = format ["%1%2, %3", _breathing ,_breath, _breathRate];
-_output_log = format ["%1%2, %3", _breathing_log, _breath, _breathRate];
+private _output = format ["%1%2, %3", _breathing ,_breath, _breathRate];
+private _output_log = format ["%1%2, %3", _breathing_log, _breath, _breathRate];
 private _breathingState = _patient getVariable [QEGVAR(vitals,breathingState), 0];
 private _isMedic = [_medic, GVAR(medLvl_VerboseBreathing)] call ACEFUNC(common,isMedic);
 if ((GVAR(enableVerboseBreathing)) && _isMedic)then {

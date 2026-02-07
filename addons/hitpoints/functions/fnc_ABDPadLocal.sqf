@@ -66,7 +66,7 @@ private _wrappedAny = false;
         private _bodyPart = GVAR(ABDbodyPart);
 
         TRACE_6("WrapWound",patient,_impact,bodyPart,_woundIndex,_wound,_bandage);
-        [patient, _impact, bodyPart, _woundIndex, _wound, _bandage, false] call ACEFUNC(medical_treatment,handleBandageOpening);
+        [_patient, _impact, _bodyPart, _woundIndex, _wound, _bandage, false] call ACEFUNC(medical_treatment,handleBandageOpening);
 
         _wrappedAny = true;
     };

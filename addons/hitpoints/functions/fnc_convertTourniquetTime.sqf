@@ -18,7 +18,7 @@
 
 params ["_type"];
 
-_tqTime = 1;
+private _tqTime = 1;
 if (_type == 0) then {
     _tqTime = GVAR(treatmentTimeDelibrateTourniquet) - GVAR(treatmentTimeHastyTourniquet);
 } else {

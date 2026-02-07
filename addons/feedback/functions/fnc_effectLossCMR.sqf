@@ -28,12 +28,10 @@ private _showNextTick = missionNamespace getVariable [QGVAR(showBrainNextTick), 
 GVAR(showBrainNextTick) = !_showNextTick;
 if (_showNextTick) exitWith {};
 
-private _initialAdjust = [];
-private _delayedAdjust = [];
 private _adjust = 95 - _cmr;
 private _adjustment = 0.1 * linearConversion [0, 95, _adjust, 1, 5, true];
-_initialAdjust = [_adjustment];
-_delayedAdjust = [0];
+private _initialAdjust = [_adjustment];
+private _delayedAdjust = [0];
 
 GVAR(minorLossCMR) ppEffectAdjust _initialAdjust;
 GVAR(minorLossCMR) ppEffectCommit FX_MINOR_CMR_FADE_IN;

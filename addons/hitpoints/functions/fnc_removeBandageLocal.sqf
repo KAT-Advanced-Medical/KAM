@@ -48,7 +48,7 @@ private _openWoundsOnPart = _openWounds getOrDefault [_bodypart, []];
             _x params ["_id", "_amountOf", "", "", "_oldBandage"];
             if (_id == _classID && {_oldBandage == _bandage}) exitWith {
                 private _reduction = [2, 4] select (_bandage == "ETD");
-                _newAmount = 0 max (_amountOf - _reduction);
+                private _newAmount = 0 max (_amountOf - _reduction);
         
                 // store actual removed amount
                 _removedAmount = _amountOf - _newAmount;

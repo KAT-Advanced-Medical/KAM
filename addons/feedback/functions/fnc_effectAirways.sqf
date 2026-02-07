@@ -29,11 +29,8 @@ private _showNextTick = missionNamespace getVariable [QGVAR(showAirwaysNextTick)
 GVAR(showAirwaysNextTick) = !_showNextTick;
 if (_showNextTick) exitWith {};
 
-private _initialAdjust = [];
-private _delayedAdjust = [];
-
-_initialAdjust = [1, 1, 0, [0, 0, 0, 0.9], [0, 0, 0, 1], [0.33, 0.33, 0.33, 0], [0.55, 0.5, 0, 0, 0, 0, 4]];
-_delayedAdjust = [1, 1, 0, [0, 0, 0, 0.1], [0, 0, 0, 1], [0.33, 0.33, 0.33, 0], [0.55, 0.5, 0, 0, 0, 0, 4]];
+private _initialAdjust = [1, 1, 0, [0, 0, 0, 0.9], [0, 0, 0, 1], [0.33, 0.33, 0.33, 0], [0.55, 0.5, 0, 0, 0, 0, 4]];
+private _delayedAdjust = [1, 1, 0, [0, 0, 0, 0.1], [0, 0, 0, 1], [0.33, 0.33, 0.33, 0], [0.55, 0.5, 0, 0, 0, 0, 4]];
 
 GVAR(airwayInjury) ppEffectAdjust _initialAdjust;
 GVAR(airwayInjury) ppEffectCommit FX_SPO2_FADE_IN;

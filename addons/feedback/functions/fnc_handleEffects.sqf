@@ -64,7 +64,6 @@ private _spo2Die = EGVAR(breathing,SpO2_dieValue);
 ] call FUNC(effectLowSpO2);
 [!_unconscious, !_airwayState] call FUNC(effectAirways);
 private _time = ACE_player getVariable [QGVAR(airwayInjuryColorTime), 0];
-private _intensity = 0;
 private _timeFixed = 0;
 if (_time != 0) then {
     _timeFixed = CBA_missionTime - _time;

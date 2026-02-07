@@ -42,7 +42,7 @@ if (_doseType != 4) then {
         [LLSTRING(No_Syringe_Available), 2, _player, 10] call ACEFUNC(common,displayTextStructured);
     };
     [EGVAR(pharma,prepTime_PrepSyringe), 
-        [_medicationType, _syringeType, _doseType],
+        [_player, _medicationType, _syringeType, _doseType],
         {
             params["_args"];
             _args params ["_medicationType", "_syringeType", "_doseType"];
@@ -52,8 +52,8 @@ if (_doseType != 4) then {
             {TRACE_3("prepSyringe3",_medicationType,_syringeType,_doseType);}, format [LLSTRING(Preparing_Syringe), _syringeDisplayName], {true}, ["isNotInside"] ] call ACEFUNC(common,progressBar);
 } else {
     if (_syringeType == "salineiv") then {
-        _syringeClassName = format ["kat_%1Infusion", _medicationType];
-        _size = "250";
+        private _syringeClassName = format ["kat_%1Infusion", _medicationType];
+        private _size = "250";
         private _syringeDisplayName = getText (configFile >> "CfgWeapons" >> _syringeClassName >> "displayName");
         private _hasSyringe = isClass (configFile >> "CfgWeapons" >> _syringeClassName);
         TRACE_3("prepSyringe4",_medicationType,_syringeClassName,_size);
@@ -70,8 +70,8 @@ if (_doseType != 4) then {
                 }, 
                 {}, format [LLSTRING(Preparing_Syringe), _syringeDisplayName], {true}, ["isNotInside"] ] call ACEFUNC(common,progressBar);
     } else {
-        _syringeClassName = format ["kat_%1Infusion100", _medicationType];
-        _size = "100";
+        private _syringeClassName = format ["kat_%1Infusion100", _medicationType];
+        private _size = "100";
         private _syringeDisplayName = getText (configFile >> "CfgWeapons" >> _syringeClassName >> "displayName");
         private _hasSyringe = isClass (configFile >> "CfgWeapons" >> _syringeClassName);
         TRACE_3("prepSyringe4",_medicationType,_syringeClassName,_size);

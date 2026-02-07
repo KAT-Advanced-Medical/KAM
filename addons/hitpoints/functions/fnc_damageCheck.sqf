@@ -17,7 +17,6 @@
  */
 
 params ["_unit", "_bodyPartN"];
-private _isOccluded = false;
 private _damage = GET_BODYPART_DAMAGE(_unit);
 private _occlusionMap = [
     [4, [4, 5]],

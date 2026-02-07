@@ -22,7 +22,6 @@ params ["_medic", "_patient", "_bodyPart"];
 private _partIndex = ALL_BODY_PARTS find _bodyPart;
 
 private _medStack = _patient call ACEFUNC(medical_status,getAllMedicationCount);
-private _medsToCheck = ["fentanyl", "ketamine", "nalbuphine", "morphine"];
 private _fentanylEffectiveness = 0;
 private _ketamineEffectiveness = 0;
 private _nalbuphineEffectiveness = 0;

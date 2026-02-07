@@ -29,11 +29,8 @@ private _showNextTick = missionNamespace getVariable [QGVAR(showLowSpO2NextTick)
 GVAR(showLowSpO2NextTick) = !_showNextTick;
 if (_showNextTick) exitWith {};
 
-private _initialAdjust = [];
-private _delayedAdjust = [];
-
-_initialAdjust = [1, 1, 0, [0, 0, 0, 0.9], [0, 0, 0, 1], [0.33, 0.33, 0.33, 0], [0.55, 0.5, 0, 0, 0, 0, 4]];
-_delayedAdjust = [1, 1, 0, [0, 0, 0, 0.1], [0, 0, 0, 1], [0.33, 0.33, 0.33, 0], [0.55, 0.5, 0, 0, 0, 0, 4]];
+private _initialAdjust = [1, 1, 0, [0, 0, 0, 0.9], [0, 0, 0, 1], [0.33, 0.33, 0.33, 0], [0.55, 0.5, 0, 0, 0, 0, 4]];
+private _delayedAdjust = [1, 1, 0, [0, 0, 0, 0.1], [0, 0, 0, 1], [0.33, 0.33, 0.33, 0], [0.55, 0.5, 0, 0, 0, 0, 4]];
 
 GVAR(lowSpO2) ppEffectAdjust _initialAdjust;
 GVAR(lowSpO2) ppEffectCommit FX_SPO2_FADE_IN;

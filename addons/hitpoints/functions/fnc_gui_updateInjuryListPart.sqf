@@ -39,7 +39,7 @@ if (_selectionN isEqualTo 3) then {
 _target setVariable [QGVAR(gui_updateInjuryList_eviscEntries), _eviscEntry];
 
 private _jointArray = GET_JOINTS(_target);
-_hasInjury = false;
+private _hasInjury = false;
 switch (_selectionN) do {
     case 4: {
         private _arr = _jointArray select 0;

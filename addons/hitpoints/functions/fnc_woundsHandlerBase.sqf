@@ -108,11 +108,11 @@ private _bodyPartVisParams = [_unit, false, false, false, false]; // params arra
             private _pain = _woundSize * _painMultiplier * _injuryPain;
             _painLevel = _painLevel + _pain;
 
-            _arterialRate = 1;
+            private _arterialRate = 1;
             if (random 100 < GVAR(ArterialChance)) then {
                 _arterialRate  = random [1.1, 1.3, 1.6];
             };
-            _bleeding = (_woundSize * _bleedMultiplier * _injuryBleedingRate) * _arterialRate;
+            private _bleeding = (_woundSize * _bleedMultiplier * _injuryBleedingRate) * _arterialRate;
             TRACE_6("BleedingRate",_bleeding,_woundSize,_bleedMultiplier,_injuryBleedingRate,_arterialRate,GVAR(ArterialChance));
             // large wounds are > LARGE_WOUND_THRESHOLD
             // medium is > LARGE_WOUND_THRESHOLD^2
@@ -176,11 +176,11 @@ private _bodyPartVisParams = [_unit, false, false, false, false]; // params arra
         private _pain = _woundSize * _painMultiplier * _injuryPain;
         _painLevel = _painLevel + _pain;
 
-        _arterialRate = 1;
+        private _arterialRate = 1;
         if (random 100 < GVAR(ArterialChance)) then {
             _arterialRate  = random [1.1, 1.3, 1.6];
             };
-        _bleeding = (_woundSize * _bleedMultiplier * _injuryBleedingRate) * _arterialRate * random [0.8, 1, 1.2];;
+        private _bleeding = (_woundSize * _bleedMultiplier * _injuryBleedingRate) * _arterialRate * random [0.8, 1, 1.2];;
         TRACE_6("BleedingRate",_bleeding,_woundSize,_bleedMultiplier,_injuryBleedingRate,_arterialRate,GVAR(ArterialChance));
         // large wounds are > LARGE_WOUND_THRESHOLD
         // medium is > LARGE_WOUND_THRESHOLD^2

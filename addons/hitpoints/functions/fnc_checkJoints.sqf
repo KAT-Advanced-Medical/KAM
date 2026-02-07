@@ -23,7 +23,7 @@ TRACE_1("checkLimb1",_bodyPart);
 private _partIndex = ALL_BODY_PARTS find _bodyPart;
 if (_partindex == 3) then {
     private _pelvicFracture = _patient getVariable [QGVAR(pelvicFracture), 0];
-    _typeLabel = switch (true) do {
+    private _typeLabel = switch (true) do {
         case (_pelvicFracture == -1): { LSTRING(stabilizedPelvicFracture_log) };
         case (_pelvicFracture == 0): { LSTRING(noPelvicFracture_log) };
         case (_pelvicFracture == 1): { LSTRING(pelvicFracture_log) };
@@ -54,7 +54,7 @@ _patient setVariable [QGVAR(jointCheck), _jointCheck, true];
 private _limbJointStatus = _jointArray select _jointGroupIndex;
 {
     _x params ["_level"];
-    _typeLabel = switch (true) do {
+    private _typeLabel = switch (true) do {
         case (_level == 1): { localize LSTRING(JointInjury_InflamedStrain) };
         case (_level == 2): { localize LSTRING(JointInjury_InflamedSprain) };
         case (_level == 3): { localize LSTRING(JointInjury_Dislocation) };
@@ -68,14 +68,14 @@ private _limbJointStatus = _jointArray select _jointGroupIndex;
         case (_level == 11): { localize LSTRING(JointInjury_WrappedSprain) };
         default {""};
     };
-    _limbLabel = switch (true) do {
+    private _limbLabel = switch (true) do {
         case (_jointGroupIndex == 0): { localize ACELSTRING(medical_gui,LeftArm) };
         case (_jointGroupIndex == 1): { localize ACELSTRING(medical_gui,RightArm) };
         case (_jointGroupIndex == 2): { localize ACELSTRING(medical_gui,LeftLeg) };
         case (_jointGroupIndex == 3): { localize ACELSTRING(medical_gui,RightLeg) };
         default {};
     };
-    _joint = switch (true) do {
+    private _joint = switch (true) do {
         case ((_jointGroupIndex in [0, 1]) && (_forEachIndex == 0)): { localize LSTRING(JointInjury_Shoulder) };
         case ((_jointGroupIndex in [0, 1]) && (_forEachIndex == 1)): { localize LSTRING(JointInjury_Elbow) };
         case ((_jointGroupIndex in [0, 1]) && (_forEachIndex == 2)): { localize LSTRING(JointInjury_Wrist) };
