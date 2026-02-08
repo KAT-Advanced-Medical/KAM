@@ -31,7 +31,6 @@ private _liveFracture = _fractureArray select _part;
 private _surgeryString = "";
 private _number = _entry;
 private _reduce = false;
-private _subReduce = false;
 
 if (_liveFracture > 3) then {
     _liveFracture = _liveFracture - 1;
@@ -39,7 +38,6 @@ if (_liveFracture > 3) then {
 
     if (_number > 3) then {
         _number = _number - 1;
-        _subReduce = true;
     };
 };
 

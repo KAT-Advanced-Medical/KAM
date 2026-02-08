@@ -20,7 +20,7 @@
 params ["_target", "_className", "_incompatibleMedication"];
 TRACE_3("onMedicationUsage",_target,_className,_incompatibleMedication);
     if !(_className in ["CWMP", "Painkillers", "Penthrox", "Carbonate", "BubbleWrap", "Caffeine", "Pervitin", "Naloxone"]) then {
-        _medicationName = format ["syringe_%1", _className];
+        private _medicationName = format ["syringe_%1", _className];
         private _defaultConfig    = configFile >> QUOTE(ACE_ADDON(Medical_Treatment)) >> "Medication";
         private _medicationConfig = _defaultConfig >> _medicationName;
         TRACE_1("onMedicationUsage2",_medicationConfig);

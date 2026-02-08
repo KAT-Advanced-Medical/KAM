@@ -24,7 +24,6 @@ params ["_medic", "_patient", "_bodyPart", "_usedItem"];
 
 private _partIndex = ALL_BODY_PARTS find toLower _bodyPart;
 private _IVarray = _patient getVariable [QGVAR(IV), [0,0,0,0,0,0,0,0,0,0,0,0]];
-private _IVactual = _IVarray select _partIndex;
 private _IVpfh = _patient getVariable [QGVAR(IVpfh), [0,0,0,0,0,0,0,0,0,0,0,0]];
 private _IVpfhActual = _IVpfh select _partIndex;
 private _IVrate = _patient getVariable [QGVAR(IVrate), [0,0,0,0,0,0,0,0,0,0,0,0]];
@@ -111,7 +110,6 @@ switch (_usedItem) do {
         _patient setVariable [QGVAR(IV), _IVarray, true];
         _patient setVariable [QGVAR(IVrate), _IVrate, true];
         private _medStack = _patient call ACEFUNC(medical_status,getAllMedicationCount);
-        private _medsToCheck = ["fentanyl", "ketamine", "nalbuphine", "morphine"];
         private _fentanylEffectiveness = 0;
         private _ketamineEffectiveness = 0;
         private _nalbuphineEffectiveness = 0;
@@ -133,7 +131,7 @@ switch (_usedItem) do {
                 _morphineEffectiveness = _morphineEffectiveness max _effectiveness;
             };
         } forEach _medStack;
-        _painLevel = [0.6, 0.7, 0.8] select (floor random 3);
+        private _painLevel = [0.6, 0.7, 0.8] select (floor random 3);
         if (
             _fentanylEffectiveness <= 0.8 &&
             _ketamineEffectiveness <= 0.8 &&
@@ -149,7 +147,7 @@ switch (_usedItem) do {
             (_localAnesthesia > 0.4);
         }, {
             params ["_patient", "_partIndex", "_painLevel"];
-            _negPainLevel = -1 * _painLevel;
+            private _negPainLevel = -1 * _painLevel;
             [_patient, _negPainLevel] call ACEFUNC(medical_status,adjustPainLevel);
         }, [_patient, _partIndex, _painLevel], 60] call CBA_fnc_waitUntilAndExecute;
 
@@ -170,7 +168,6 @@ switch (_usedItem) do {
         _patient setVariable [QGVAR(IV), _IVarray, true];
         _patient setVariable [QGVAR(IVrate), _IVrate, true];
         private _medStack = _patient call ACEFUNC(medical_status,getAllMedicationCount);
-        private _medsToCheck = ["fentanyl", "ketamine", "nalbuphine", "morphine"];
         private _fentanylEffectiveness = 0;
         private _ketamineEffectiveness = 0;
         private _nalbuphineEffectiveness = 0;
@@ -192,7 +189,7 @@ switch (_usedItem) do {
                 _morphineEffectiveness = _morphineEffectiveness max _effectiveness;
             };
         } forEach _medStack;
-        _painLevel = [0.6, 0.7, 0.8] select (floor random 3);
+        private _painLevel = [0.6, 0.7, 0.8] select (floor random 3);
         if (
             _fentanylEffectiveness <= 0.8 &&
             _ketamineEffectiveness <= 0.8 &&
@@ -208,7 +205,7 @@ switch (_usedItem) do {
             (_localAnesthesia > 0.4);
         }, {
             params ["_patient", "_partIndex", "_painLevel"];
-            _negPainLevel = -1 * _painLevel;
+            private _negPainLevel = -1 * _painLevel;
             [_patient, _negPainLevel] call ACEFUNC(medical_status,adjustPainLevel);
         }, [_patient, _partIndex, _painLevel], 60] call CBA_fnc_waitUntilAndExecute;
 

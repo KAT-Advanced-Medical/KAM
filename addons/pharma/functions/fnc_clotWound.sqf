@@ -37,9 +37,7 @@ private _fnc_clotWound = {
             private _coagulation_time_medium = missionNamespace getVariable [QGVAR(coagulation_time_medium), 30];
             private _coagulation_time_large = missionNamespace getVariable [QGVAR(coagulation_time_large), 45];
             private _factorCountToRemove = 1;
-            private _woundClotDelayMult = 1;
-            private _medStack = [_patient, false] call ACEFUNC(medical_status,getAllMedicationCount);
-            private _medsToCheck = ["Alteplase", "CWMP"];
+            private _medStack = [_unit, false] call ACEFUNC(medical_status,getAllMedicationCount);
             private _alteplaseEffectiveness = 0;
             private _cwmpEffectiveness = 0;
             {
@@ -76,7 +74,7 @@ private _fnc_clotWound = {
                 true
             ];
             if (_ph < 6.9) exitWith {};
-            if (_calcium < 1.0) exitWith {};
+            if (_ca < 1.0) exitWith {};
             private _coagMult = linearConversion [0, 600, _coagulationFactor, 3, 1, true];
             private _woundClotDelayMult = (
                 _alteplaseFixedEffectiveness *

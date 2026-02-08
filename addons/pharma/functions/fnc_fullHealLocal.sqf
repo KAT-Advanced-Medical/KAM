@@ -106,7 +106,7 @@ if (hasInterface) then {
 // Reenable ace fatige animationspeed override
 
 if (!isNil QACEGVAR(advanced_fatigue,setAnimExclusions)) then {
-    _index = ACEGVAR(advanced_fatigue,setAnimExclusions) find "PervitinOverride";
+    private _index = ACEGVAR(advanced_fatigue,setAnimExclusions) find "PervitinOverride";
     if (_index != -1) then {
         ACEGVAR(advanced_fatigue,setAnimExclusions) deleteAt _index;
     };

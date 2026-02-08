@@ -1,4 +1,3 @@
-PREP(AMSCheck);
 PREP(applyIV);
 PREP(checkIV);
 PREP(checkIVType);

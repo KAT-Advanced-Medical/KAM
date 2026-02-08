@@ -92,7 +92,7 @@ private _fillPortion = 1 - exp (-3 * _fillTime);
 // =======================
 // VENOUS COMPENSATION
 // =======================
-_bvComp =
+private _bvComp =
     linearConversion
     [
         0.75, 1.0,
@@ -119,7 +119,6 @@ private _effectiveCVP =
     * _bvComp
     * _effectiveVaso
     * _vrEff;
-private _arterialEffect = linearConversion [0.7, 1.3, _effectiveVaso, 0.85, 1.25, true];
 TRACE_8(
     "_effectiveCVP",
     _defaultCVP,
@@ -144,8 +143,6 @@ private _edv =
     BASELINE_EDV
     * _preload
     * (0.85 + 0.15 * _fillPortion);
-
-private _edvNorm = (_edv / BASELINE_EDV) min 1.4 max 0.4;
 
 private _restEDV = BASELINE_EDV * _fillPortion;
 private _edvRel = _edv / _restEDV;
@@ -207,14 +204,13 @@ private _effectiveContractility =
 
 private _esv =
     BASELINE_ESV * (_afterload / _effectiveContractility);
-TRACE_6(
+TRACE_5(
     "esv",
     _afterload,
     _effectiveContractility,
     _contractility,
     _starlingGain,
-    _bloodVolumeRatio,
-    _arterialEffect
+    _bloodVolumeRatio
 );
 _esv = _esv min (_edv * 0.95);
 // =======================

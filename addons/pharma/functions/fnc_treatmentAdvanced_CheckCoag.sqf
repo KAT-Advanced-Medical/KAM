@@ -18,9 +18,7 @@
 
 params ["_medic", "_patient"];
 
-private _woundClotDelayMult = 1;
 private _medStack = [_patient, false] call ACEFUNC(medical_status,getAllMedicationCount);
-private _medsToCheck = ["Alteplase", "CWMP"];
 private _alteplaseEffectiveness = 0;
 private _cwmpEffectiveness = 0;
 {

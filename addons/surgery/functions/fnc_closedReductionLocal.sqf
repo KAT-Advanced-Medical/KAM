@@ -23,7 +23,6 @@ private _part = ALL_BODY_PARTS find toLower _bodyPart;
 private _activeFracture = GET_FRACTURES(_patient);
 private _fractureArray = _patient getVariable [QGVAR(fractures), [0,0,0,0,0,0,0,0,0,0,0,0]];
 private _medStack = _patient call ACEFUNC(medical_status,getAllMedicationCount);
-private _medsToCheck = ["fentanyl", "ketamine", "nalbuphine", "morphine"];
 private _fentanylEffectiveness = 0;
 private _ketamineEffectiveness = 0;
 private _nalbuphineEffectiveness = 0;

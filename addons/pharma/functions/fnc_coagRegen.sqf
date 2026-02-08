@@ -45,7 +45,6 @@ if !(GVAR(coagulation)) exitWith {};
     private _savedCoagFactors = _unit getVariable [QGVAR(coagulationSavedFactors), GET_BODY_FLUID_PLATELETS(_unit)];
     private _cooldownON = _unit getVariable [QGVAR(coagulationRegenCooldown), false];
     private _medStack = [_unit, false] call ACEFUNC(medical_status,getAllMedicationCount);
-    private _medsToCheck = ["TXA", "EACA"];
     private _eacaEffectiveness = 0;
     private _txaEffectiveness = 0;
     {

@@ -27,7 +27,7 @@ if (_size == "100") then {
 } else {
     _player removeItem "ace_salineIV_250";
 };
-_katClassName = "kat_" + _medicationType;
+private _katClassName = "kat_" + _medicationType;
 _player removeItem _katClassName;
 _player addItem _infusionClassName;
 private _infusionDisplayName = getText (configFile >> "CfgWeapons" >> _infusionClassName >> "displayName");

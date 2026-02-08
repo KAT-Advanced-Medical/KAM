@@ -27,7 +27,6 @@ if (_totalTime - _elapsedTime > ([_patient, _patient, _bodyPart] call FUNC(getSt
 private _bandagedWounds  = GET_BANDAGED_WOUNDS(_patient);
 private _wrappedWounds   = GET_WRAPPED_WOUNDS(_patient);
 private _coagWounds      = GET_COAGED_WOUNDS(_patient);
-private _stitchedWounds  = GET_STITCHED_WOUNDS(_patient);
 
 // Select wounds on given body part
 private _unstitchableTypes = ["ETD", "Israeli_Bandage"];

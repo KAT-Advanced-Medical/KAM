@@ -23,10 +23,10 @@ if!(alive _vehicle) exitWith {
 	[]
 };
 
-_actions = [];
+private _actions = [];
 
 //conditions to display the unit's action
-_conditions = {
+private _conditions = {
 	params ["", "", "_parameters"];
 	_parameters params ["_unit"];
 	if(!alive _unit) exitWith { false };
@@ -34,7 +34,7 @@ _conditions = {
 };
 
 //modify the icon to show the worst 'wound' type
-_modifierFunc = {
+private _modifierFunc = {
 	params ["_target", "_player", "_parameters", "_actionData"];
 	_parameters params ["_patient"];
 	
@@ -42,10 +42,9 @@ _modifierFunc = {
 	// bandage > stitch  > lowhr > lowbp > fractures > tourniquets
 	private _tourniquet = GVAR(Stable_TrackTourniquets) && ((selectMax GET_TOURNIQUETS(_patient)) > 0);
 	private _fractures = GVAR(Stable_TrackFractures) && ((selectMax GET_FRACTURES(_patient)) > 0);
-	private _isMedic = (_player call ACEFUNC(medical_treatment,isMedic));
 	private _bloodPressure = [_patient] call EFUNC(circulation,getBloodPressure);
 	_bloodPressure params ["_bloodPressureL", "_bloodPressureH"];
-	private _map = GET_MAP(_unit);
+	private _map = GET_MAP(_patient);
 	private _lowBP = GVAR(Stable_TrackLowBP) && (_map < 60);
 	private _lowHR = GVAR(Stable_TrackLowHR) && (GET_HEART_RATE(_patient) < 60);
 	private _stitchWounds = _patient call EFUNC(misc,getFullBodyStitchableWoundTime);
@@ -69,10 +68,6 @@ _modifierFunc = {
 	};
 	if(_bandage) then {
 		_result = QPATHTOF(ui\bandage.paa);
-	};
-
-	if(_result == "") then {
-		private _set = format["Tourniquet: %1, Fractures: %2, Low BP: %3, Low HR: %4, Stitch: %5, Bandage: %6, isMedic: %7",_tourniquet,_fractures,_lowBP,_lowHR,_stitch,_bandage,_isMedic];
 	};
 	_actionData set [2, _result];
 };

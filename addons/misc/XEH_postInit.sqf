@@ -55,7 +55,6 @@ call FUNC(FAK_updateContents);
 }, QUOTE(ADDON)] call ACEFUNC(common,addSwayFactor);
 
 ["multiplier", {
-    private _activeTourniquets = GET_TOURNIQUETS(ACE_player);
     if (ACE_player getVariable [QGVAR(Tourniquet_ArmNecrosis), 0] > 0) then {
         1 max (ACE_player getVariable [QGVAR(Tourniquet_ArmNecrosis), 0]) / 10
     } else {1};

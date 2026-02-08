@@ -48,7 +48,7 @@ if (_IVactual > 1) then {
 
 
 private _fnc_eacaClot = {
-    params ["_patient", "_bodyPart", "_id", "_amount", "_bleeding", "_damage", "_delay", "_oldBandage"];
+    params ["_patient", "_bodyPart", "_id", "_amount", "_bleeding", "_damage", "_delay", "_oldBandage", "_newBandage"];
     [{
     params ["_patient", "_bodyPart", "_id", "_amount", "_bleeding", "_damage", "_oldBandage", "_newBandage"];
     if !(alive _patient) exitWith {};

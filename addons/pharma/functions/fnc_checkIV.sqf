@@ -25,10 +25,9 @@ if !(GVAR(ivCheckLimbDamage)) exitWith {
 
 private _bodyPartDamage = _patient getVariable [QACEGVAR(medical,bodyPartDamage), [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]];
 private _compare = ALL_BODY_PARTS find toLower _bodyPart;
-private _final2 = 0;
 private _return = false;
 
-_final2 = _bodyPartDamage select _compare;
+private _final2 = _bodyPartDamage select _compare;
 
 if (_final2 < 7) then {
     _return = true;

@@ -6,7 +6,7 @@ if!(alive _vehicle) exitWith {
 	[]
 };
 
-_modifierFunc = {
+private _modifierFunc = {
 	params ["_target", "_player", "_parameters", "_actionData"];
 	_parameters params ["_patient"];
 	
@@ -82,7 +82,7 @@ _actions pushBack [_unloadAllAction, [], _vehicle];
 					private _subActions = [];
 					private _isMedic = (_player call ACEFUNC(medical_treatment,isMedic));
 
-					if((IS_UNCONSCIOUS(_patient)) || !alive _patient) then {
+					if (((IS_UNCONSCIOUS(_patient)) || !alive _patient) && _isMedic) then {
 						
 						private _forceUnloadAction = { 
 							params["_patient"];

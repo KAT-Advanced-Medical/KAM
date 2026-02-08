@@ -15,7 +15,6 @@
  * Public: No
  */
 params ["_patient"];
-private _diazapamMult = 1;
 private _medStack = _patient call ACEFUNC(medical_status,getAllMedicationCount);
 private _fentanylEffectiveness = 0;
 private _nalbuphineEffectiveness = 0;

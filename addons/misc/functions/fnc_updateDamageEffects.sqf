@@ -25,7 +25,6 @@ private _noSprint = false;
 private _noJog = false;
 private _noThrow = false;
 private _keepProne = false;
-private _holsterWeapon = false;
 private _aimFracture = 0;
 private _armJointArray = GET_JOINTS(_unit) select [0, 2];
 private _legJointArray = GET_JOINTS(_unit) select [2, 2];

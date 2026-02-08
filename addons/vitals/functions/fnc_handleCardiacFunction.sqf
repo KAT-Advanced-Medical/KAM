@@ -96,7 +96,7 @@ if (IN_CRDC_ARRST(_unit)) then {
         (BARO_KP * _mapError)
     + (BARO_KI * _mapIntegral);
 
-    _modelHR = _defaultHR + _baroDelta;
+    private _modelHR = _defaultHR + _baroDelta;
 
     TRACE_6(
         "BARO_CORE",

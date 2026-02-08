@@ -17,7 +17,6 @@ params ["_target"];
 
 #define MAX_LENGTH 50
 
-private _stretcher = _target getVariable [QGVAR(stretcher), objNull];
 private _ropes = _target getVariable [QGVAR(ropes), []];
 
 {

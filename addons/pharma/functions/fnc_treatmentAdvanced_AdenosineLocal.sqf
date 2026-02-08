@@ -19,7 +19,6 @@ if (_classname isEqualTo "ACE_adenosine") exitWith {};
 private _cardiacRhythm = _patient getVariable [QEGVAR(circulation,cardiacArrestType), 0];
 _patient setVariable [QEGVAR(circulation,cardiacArrestType), 1];
 private _medStack = _patient call ACEFUNC(medical_status,getAllMedicationCount);
-private _medsToCheck = ["Amiodarone"];
 private _amiodaroneEffectiveness = 0;
 {
     private _medName = toLower (_x select 0);
@@ -28,7 +27,7 @@ private _amiodaroneEffectiveness = 0;
         _amiodaroneEffectiveness = _amiodaroneEffectiveness max _effectiveness;
     };
 } forEach _medStack;
-_time = 1;
+private _time = 1;
 if (_amiodaroneEffectiveness > 0.2) then {
     _time = random(12) + 12
 } else {

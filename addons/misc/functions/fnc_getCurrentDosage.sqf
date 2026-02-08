@@ -27,11 +27,11 @@ private _medDose = 0;
     if (_xMed == _medication) then {
         private _timeInSystem = CBA_missionTime - _timeAdded;
         // as used in handleUnitVitals, a medication effectiveness will start low, ramp up to timeTillMaxEffect, and then drop off
-        _effectiveness = (((_timeInSystem / _timeTillMaxEffect) ^ 2) min 1) * (_maxTimeInSystem - _timeInSystem) / _maxTimeInSystem;
+        private _effectiveness = (((_timeInSystem / _timeTillMaxEffect) ^ 2) min 1) * (_maxTimeInSystem - _timeInSystem) / _maxTimeInSystem;
         _medDose = _medDose + (_dose * _effectiveness);
+        TRACE_5("getMedicationCount",_target,_medication,_dose,_effectiveness,_medDose);
+
     };
 } forEach (_target getVariable [VAR_MEDICATIONS, []]);
-
-TRACE_5("getMedicationCount",_target,_medication,_dose,_effectiveness,_medDose);
 
 _medDose

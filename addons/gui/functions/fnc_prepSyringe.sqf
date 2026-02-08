@@ -45,7 +45,7 @@ if (_doseType != 4) then {
         [_player, _medicationType, _syringeType, _doseType],
         {
             params["_args"];
-            _args params ["_medicationType", "_syringeType", "_doseType"];
+            _args params ["_player", "_medicationType", "_syringeType", "_doseType"];
             TRACE_3("prepSyringe3",_medicationType,_syringeType,_doseType);
             [_player, _medicationType, _syringeType, _doseType] call EFUNC(pharma,prepareSyringe);
             }, 

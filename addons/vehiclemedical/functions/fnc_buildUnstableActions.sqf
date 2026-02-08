@@ -59,7 +59,7 @@ if(_canTakeDogtag && {(GVAR(Unstable_DogtagsDeadOnly) && !alive _patient) || !GV
 // Cardiac Arrest Action
 private _cardiacArrest = GVAR(Unstable_TrackCardiacArrest) && (_patient getVariable [QEGVAR(circulation,cardiacArrestType), 0] != 0);
 if (_cardiacArrest) then {
-	_action = ["MIRA_Cardiac", [LOC(Unstable,Cardiac_Arrest)] call FUNC(cachedLocalisationCall), QPATHTOF(ui\cardiac_arrest_red.paa), {
+	private _action = ["MIRA_Cardiac", [LOC(Unstable,Cardiac_Arrest)] call FUNC(cachedLocalisationCall), QPATHTOF(ui\cardiac_arrest_red.paa), {
 			params ["_target", "_player", "_parameters"];
 			_parameters params ["_patient"];
 			[_patient] call FUNC(openMedicalMenu);
@@ -71,7 +71,7 @@ if (_cardiacArrest) then {
 
 private _spO2 = GET_KAT_SPO2(_patient);
 if(GVAR(Unstable_TrackSpO2) && _spO2 < 90) then {
-	_action = ["MIRA_KAT_SpO2", format[[LOC(Unstable_KAT,SpO2)] call FUNC(cachedLocalisationCall), round _spO2, "%"], QPATHTOF(ui\kat_spO2_low.paa), {
+	private _action = ["MIRA_KAT_SpO2", format[[LOC(Unstable_KAT,SpO2)] call FUNC(cachedLocalisationCall), round _spO2, "%"], QPATHTOF(ui\kat_spO2_low.paa), {
 		params ["_target", "_player", "_parameters"];
 		_parameters params ["_patient"];
 		[_patient] call FUNC(openMedicalMenu);
@@ -85,7 +85,7 @@ private _isBleeding = GVAR(Unstable_TrackBleeding) && _patient call FUNC(needsBa
 //add bleeding action if applicable
 if (_isBleeding) then {
 	//TODO: collect all wounds, and colour icon based on severity, only have red done for now
-	_action = ["MIRA_Bleeding", [LOC(Unstable,Bleeding)] call FUNC(cachedLocalisationCall), QPATHTOF(ui\bleeding_red.paa), {
+	private _action = ["MIRA_Bleeding", [LOC(Unstable,Bleeding)] call FUNC(cachedLocalisationCall), QPATHTOF(ui\bleeding_red.paa), {
 			params ["_target", "_player", "_parameters"];
 			_parameters params ["_patient"];
 			[_patient] call FUNC(openMedicalMenu);

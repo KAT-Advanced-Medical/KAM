@@ -113,7 +113,7 @@ private _ph = GET_PH(_unit);
 private _metabolismMult = linearConversion [7.4, 7.0, _ph, 1.0, 0.4, true];
 private _onsetMult = linearConversion [7.4, 7.0, _ph, 1.0, 1.6, true];
 
-_effectiveDose = 1;
+private _effectiveDose = 1;
 if (_ph < 7.1) then {
     _effectiveDose = linearConversion [7.1, 6.8, _ph, 1.0, 1.4, true];;
 };
@@ -238,7 +238,7 @@ if (EGVAR(breathing,enable)) then {
 private _woundBloodLoss = GET_WOUND_BLEEDING(_unit);
 
 // Vasoconstriction from Wound Blood Loss and Alpha Adjustment
-_vasoconstriction = 1 + (0.5 * _woundBloodLoss) + _alphaFactorAdjustment;
+private _vasoconstriction = 1 + (0.5 * _woundBloodLoss) + _alphaFactorAdjustment;
 TRACE_3("vasoconstriction",_woundBloodLoss,_alphaFactorAdjustment,_vasoconstriction);
 _unit setVariable [VAR_VASOCONSTRICTION, (1.8 min (0.2 max _vasoconstriction)), _syncValues];
 

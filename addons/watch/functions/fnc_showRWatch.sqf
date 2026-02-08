@@ -25,7 +25,6 @@ if (isNull (uiNamespace getVariable ["KAT_Ranger", displayNull])) exitWith {};
 GVAR(RangerActive) = true;
 
 private _display = uiNamespace getVariable ["KAT_Ranger", displayNull];
-private _background = _display displayCtrl 22800;
 private _minute = _display displayCtrl 22802;
 private _hour = _display displayCtrl 22803;
 private _second = _display displayCtrl 22804;

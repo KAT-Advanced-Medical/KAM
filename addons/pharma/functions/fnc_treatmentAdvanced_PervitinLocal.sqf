@@ -19,7 +19,7 @@
 params ["_patient"];
 
 if (ACE_Player != _patient) exitWith {};
-_defaultAnimSpeed = getAnimSpeedCoef _patient;
+private _defaultAnimSpeed = getAnimSpeedCoef _patient;
 
 /// ACE Fatigue
 if (ACEGVAR(advanced_fatigue,enabled)) then {
@@ -49,7 +49,7 @@ if (ACEGVAR(advanced_fatigue,enabled)) then {
 
         _patient setAnimSpeedCoef _defaultAnimSpeed;
         if (!isNil QACEGVAR(advanced_fatigue,setAnimExclusions)) then {
-            _index = ACEGVAR(advanced_fatigue,setAnimExclusions) find "PervitinOverride";
+            private _index = ACEGVAR(advanced_fatigue,setAnimExclusions) find "PervitinOverride";
             if (_index != -1) then {
                 ACEGVAR(advanced_fatigue,setAnimExclusions) deleteAt _index;
             };

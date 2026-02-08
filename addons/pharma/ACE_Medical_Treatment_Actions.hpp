@@ -206,7 +206,7 @@ class ACE_Medical_Treatment_Actions {
         medicRequired = QGVAR(medLvl_EACA);
         treatmentTime = QGVAR(treatmentTime_EACA);
         items[] = {"kat_EACA"};
-        condition = QUOTE(FUNC(AMSCheck));
+        condition = "true";
         callbackSuccess = QFUNC(medication);
         sounds[] = {};
     };

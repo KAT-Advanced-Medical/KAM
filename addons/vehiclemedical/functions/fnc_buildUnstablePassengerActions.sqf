@@ -26,7 +26,7 @@ if!(alive _vehicle) exitWith {
 private _actions = [];
 
 //conditions to display the unit's action
-_conditions = {
+private _conditions = {
 	params ["", "", "_parameters"];
 	_parameters params ["_patient"];
 	if(!GVAR(Unstable_TrackDead) && !alive _patient) exitWith { false };
@@ -34,7 +34,7 @@ _conditions = {
 };
 
 //modify the icon to show the worst 'wound' type
-_modifierFunc = {
+private _modifierFunc = {
 	params ["_target", "_player", "_parameters", "_actionData"];
 	_parameters params ["_patient"];
 	// Get vars to check

@@ -27,7 +27,7 @@ private _map = GET_MAP(_unit);
 private _correctedMap = linearConversion [14.3333, 174.3333, _map, 0.05, 2, true];
 TRACE_3("correctedMAP",_correctedMap,_map,_bloodPressure);
 private _heartRate = GET_HEART_RATE(_unit);
-private _lossVolumeChange = (-_deltaT * (((_bloodLoss + _internalBleeding) * (GET_HEART_RATE(_unit) / (_unit getVariable [QEGVAR(circulation,defaultHeartRate), 80])) * _correctedMap * (((GET_BODY_FLUID_ECP(_unit)/GET_BODY_FLUID_ECB(_unit)) / (DEFAULT_ECP/DEFAULT_ECB))) min 2) / GET_VASOCONSTRICTION(_unit)));
+private _lossVolumeChange = (-_deltaT * (((_bloodLoss + _internalBleeding) * (_heartRate / (_unit getVariable [QEGVAR(circulation,defaultHeartRate), 80])) * _correctedMap * (((GET_BODY_FLUID_ECP(_unit)/GET_BODY_FLUID_ECB(_unit)) / (DEFAULT_ECP/DEFAULT_ECB))) min 2) / GET_VASOCONSTRICTION(_unit)));
 private _enableFluidShift = EGVAR(vitals,enableFluidShift);
 private _fluidVolume = GET_BODY_FLUID(_unit);
 TRACE_4("gbvc",_internalBleeding,_bloodLoss,_heartRate,_lossVolumeChange);
@@ -85,7 +85,7 @@ if (count (_unit getVariable [QACEGVAR(medical,ivBags), []]) > 0) then {
             _bagVolumeRemaining = _bagVolumeRemaining - _bagChange;
             _incomingFlowAmount set [_bodyPart, ((_incomingFlowAmount select _bodyPart) + _bagChange)];
             _unit setVariable [QGVAR(IVincomingFlowAmount), _incomingFlowAmount, true];
-            _totalFlow = 0;
+            private _totalFlow = 0;
             {
                 _totalFlow = _totalFlow + _x;
             } forEach _incomingFlowAmount;
@@ -251,7 +251,7 @@ if (count (_unit getVariable [QACEGVAR(medical,ivBags), []]) > 0) then {
             
             private _damageAmount = [_unit,_idx] call EFUNC(hitpoints,damageAmount);
             if ((_damageAmount > GVAR(ivLeakageThreshold)) && GVAR(ivCheckLimbDamage)) then {
-                _lostFluids = linearConversion [GVAR(ivLeakageThreshold), 50, _damageAmount, 1, 0, true];
+                private  _lostFluids = linearConversion [GVAR(ivLeakageThreshold), 50, _damageAmount, 1, 0, true];
                 _ECP = _ECB * _lostFluids;
                 _ECP = _ECP * _lostFluids;
                 _platelets = _platelets * _lostFluids;
@@ -267,7 +267,6 @@ if (count (_unit getVariable [QACEGVAR(medical,ivBags), []]) > 0) then {
             _unit setVariable [QGVAR(IVincomingFlowAmount), _incomingFlowAmount, true];
             private _defaultHeartRate = _unit getVariable [QEGVAR(circulation,defaultHeartRate), 80];
             private _heartRateRatio = GET_HEART_RATE(_unit) / _defaultHeartRate;
-            private _hemocrit = 1;
             private _hemocrit = (GET_BODY_FLUID_ECP(_unit)/GET_BODY_FLUID_ECB(_unit)) / (DEFAULT_ECP/DEFAULT_ECB);
             private _drugMult = (((((GET_BLOOD_VOLUME_LITERS(_unit))/ DEFAULT_BLOOD_VOLUME) * (_heartRateRatio) * _hemocrit) max 0.2) min 2.5);
             private _defaultConfig = configFile >> QUOTE(ACE_ADDON(Medical_Treatment)) >> "IV";
@@ -294,7 +293,6 @@ if (count (_unit getVariable [QACEGVAR(medical,ivBags), []]) > 0) then {
             private _heartRateChange = ((_minIncrease + random (_maxIncrease - _minIncrease)) * _medicationMult) * _drugMult;
 
             private _presentPain = GET_PAIN(_unit);
-            private _presentReduce = 0;
             if (_maxRelief > 0) then {
                 if (_presentPain > _maxRelief) then {
                     _painReduce = _painReduce / 4;
@@ -329,7 +327,7 @@ if (count (_unit getVariable [QACEGVAR(medical,ivBags), []]) > 0) then {
             };
             private _damageAmount = [_unit,_idx] call EFUNC(hitpoints,damageAmount);
             if ((_damageAmount > GVAR(ivLeakageThreshold)) && GVAR(ivCheckLimbDamage)) then {
-                _lostFluids = linearConversion [GVAR(ivLeakageThreshold), 50, _damageAmount, 1, 0, true];
+                private _lostFluids = linearConversion [GVAR(ivLeakageThreshold), 50, _damageAmount, 1, 0, true];
                 _ECP = _ECP * _lostFluids;
                 _ISP = _ISP * _lostFluids;
             };
@@ -364,7 +362,6 @@ if (count (_unit getVariable [QACEGVAR(medical,ivBags), []]) > 0) then {
     _unit setVariable [QGVAR(IVincomingFlowAmount), [0,0,0,0,0,0,0,0,0,0,0,0], true];
     _unit setVariable [QEGVAR(brain,salineFlow), 0, true];
 };
-private _SRBCChange = 0;
 
 if (_enableFluidShift && ((_ECP + _ECB) > 4600)) then {
     private _srbcRate = 0;

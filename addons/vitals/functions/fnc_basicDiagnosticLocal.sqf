@@ -23,6 +23,6 @@ private _hr = GET_HEART_RATE(_patient);
 private _rr = GET_BREATHING_RATE(_patient);
 
 _bloodPressure params ["_bloodPressureLow", "_bloodPressureHigh"];
-_logOutput = format [LLSTRING(BasicDiagnostic_Output), _hr, _bloodPressureHigh, _bloodPressureLow, _rr];
+private _logOutput = format [LLSTRING(BasicDiagnostic_Output), _hr, _bloodPressureHigh, _bloodPressureLow, _rr];
 
 [_patient, "quick_view", LSTRING(basicDiagnostic_Log), [_medic call ACEFUNC(common,getName), _logOutput]] call ACEFUNC(medical_treatment,addToLog);

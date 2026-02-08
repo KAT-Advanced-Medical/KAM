@@ -25,9 +25,7 @@ if (isNull (uiNamespace getVariable ["KAT_Cavmin", displayNull])) exitWith {};
 GVAR(CavminActive) = true;
 
 private _display = uiNamespace getVariable ["KAT_Cavmin", displayNull];
-private _background = _display displayCtrl 20800;
 private _compass = _display displayCtrl 20802;
-private _overlay = _display displayCtrl 20803;
 private _time = _display displayCtrl 20804;
 private _hr = _display displayCtrl 20805;
 private _altitude = _display displayCtrl 20806;

@@ -25,7 +25,6 @@ if (isNull (uiNamespace getVariable ["KAT_STS", displayNull])) exitWith {};
 GVAR(STSActive) = true;
 
 private _display = uiNamespace getVariable ["KAT_STS", displayNull];
-private _background = _display displayCtrl 21800;
 private _bigAlt = _display displayCtrl 21802;
 private _smallAlt = _display displayCtrl 21803;
 private _time = _display displayCtrl 21804;

@@ -30,7 +30,7 @@ private _isBleeding = false;
 {
     _x params ["_woundClassID", "_amountOf", "_bleedingRate"];
     private _classIndex = _woundClassID / 10;
-    _className = ACEGVAR(medical_damage,woundClassNames) select _classIndex;
+    private _className = ACEGVAR(medical_damage,woundClassNames) select _classIndex;
     if (_amountOf > 0 && {_bleedingRate > 0} && {!(_className in ["InternalBleeding", "Evisceration"])}) then {
         _isBleeding = true;
         TRACE_4("canStitch - Bleeding from non-allowed wound",_woundClassID,_classIndex,_className,_isBleeding);

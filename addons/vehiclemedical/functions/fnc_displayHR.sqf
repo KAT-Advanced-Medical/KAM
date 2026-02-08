@@ -5,7 +5,7 @@ params[
 	["_isMedic", false, [false]]
 ];
 
-_hr = GET_HEART_RATE(_patient);
+private _hr = GET_HEART_RATE(_patient);
 if(_hr == 0) exitWith {
 	[LOC(Shared,Heart_Rate_None)] call FUNC(cachedLocalisationCall)
 };

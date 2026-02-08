@@ -20,7 +20,7 @@
 params ["_medic", "_patient", "_bodyPart", "_type"];
 
 private _partIndex = ALL_BODY_PARTS find toLowerANSI _bodyPart;
-_ivBags = (_patient getVariable [QACEGVAR(medical,ivBags), []]);
+private _ivBags = (_patient getVariable [QACEGVAR(medical,ivBags), []]);
 
 private _hasMatchingIV = _ivBags findIf {
     private _bagType = _x select 1;

@@ -17,8 +17,6 @@
 
 params ["_vehicle"];
 
-private _type = (typeOf _vehicle);
-
 private _vehicleSeats = fullCrew [_vehicle, ""];
 
 private _actions = [];

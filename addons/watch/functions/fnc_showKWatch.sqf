@@ -25,7 +25,6 @@ if (isNull (uiNamespace getVariable ["KAT_Katmin", displayNull])) exitWith {};
 GVAR(KatminActive) = true;
 
 private _display = uiNamespace getVariable ["KAT_Katmin", displayNull];
-private _background = _display displayCtrl 19800;
 private _compass = _display displayCtrl 19806;
 private _sun = _display displayCtrl 19803;
 private _overcast = _display displayCtrl 19804;

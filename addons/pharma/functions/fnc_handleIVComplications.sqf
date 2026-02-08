@@ -17,7 +17,7 @@
  */
  params ["_patient", "_overLoad"];
 
-_trali = _patient getVariable [QEGVAR(breathing,TRALI), 0];
+private _trali = _patient getVariable [QEGVAR(breathing,TRALI), 0];
 _trali = _trali + (0.1 *_overLoad);
 if ((_trali > (20 + random 10)) && (random 100 < 25)) then {
     private _ht = _patient getVariable [QEGVAR(circulation,ht), []];

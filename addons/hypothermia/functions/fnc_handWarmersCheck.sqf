@@ -17,7 +17,6 @@
  */
 
 params ["_player", "_target"];
-_hasWarmer = false;
 private _warmers = _target getVariable [QGVAR(handWarmers), [0,0,0,0,0,0,0,0,0,0,0,0]];
-_hasWarmer = (selectMax _warmers) > 0;
+private _hasWarmer = (selectMax _warmers) > 0;
 _hasWarmer

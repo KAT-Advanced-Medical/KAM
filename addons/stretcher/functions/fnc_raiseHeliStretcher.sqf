@@ -14,7 +14,6 @@
 
 params ["_target"];
 
-private _stretcher = _target getVariable [QGVAR(stretcher), objNull];
 private _ropes = _target getVariable [QGVAR(ropes), []];
 
 {

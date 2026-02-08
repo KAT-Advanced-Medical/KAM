@@ -19,7 +19,6 @@ private _hrAdjust = -50 + floor random ((-30 - -50) + 1);
 [_patient, "nalbuphineOverdose", 30, 1200, _hrAdjust, 0, 0, 0, 0.3, 0, 0, 0.17, -0.3] call EFUNC(vitals,addMedicationAdjustment);
 [{
     params ["_patient"];
-    private _nalbuphineOverdoseTarget = 0;
         [{
             params ["_args", "_idPFH"];
             _args params ["_patient", "_nalbuphineOverdoseTarget"];

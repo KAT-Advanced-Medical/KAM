@@ -18,8 +18,6 @@
 
 params ["", "_patient"];
 
-private _amount = 0;
-
 private _amount = _patient call FUNC(getFullBodyStitchableWoundTime);
 
 _amount * ACEGVAR(medical_treatment,woundStitchTime);

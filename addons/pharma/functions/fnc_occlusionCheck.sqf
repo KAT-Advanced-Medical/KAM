@@ -17,8 +17,6 @@
  */
 
 params ["_unit", "_bodypartN"];
-private _IVarray = _unit getVariable [QGVAR(IV), [0,0,0,0,0,0,0,0,0,0,0,0]];
-private _isOccluded = false;
 private _tourniquets = GET_TOURNIQUETS(_unit);
 private _occlusionMap = [
     [4, [4, 5]],

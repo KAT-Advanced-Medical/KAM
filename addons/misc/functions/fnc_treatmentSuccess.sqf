@@ -43,7 +43,6 @@ if (!isNil QACEGVAR(advanced_fatigue,setAnimExclusions)) then {
     ACEGVAR(advanced_fatigue,setAnimExclusions) deleteAt (ACEGVAR(advanced_fatigue,setAnimExclusions) find QUOTE(ACE_ADDON(medical_treatment)));
 };
 
-private _callbackCondition = true;
 
 GET_FUNCTION(_callbackCondition,configFile >> QACEGVAR(medical_treatment,actions) >> _classname >> "callbackCondition");
 if (_callbackCondition isEqualType {}) then {

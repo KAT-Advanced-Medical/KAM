@@ -37,16 +37,9 @@ switch (_randomNumber) do {
                     [{
                         params ["_args", "_idPFH"];
                         _args params ["_patient"];
-                        private _ht = _patient getVariable [QEGVAR(circulation,ht), []];
-                        if ((_ht findIf {_x isEqualTo "EtomidateOD"}) == -1) then {
-                            _ht pushBack "EtomidateOD";
-
-                            if (_patient getVariable [QEGVAR(circulation,cardiacArrestType), 0] == 0) then {
-                                [QACEGVAR(medical,FatalVitals), _patient] call CBA_fnc_localEvent;
-                            };
-
-                            _patient setVariable [QEGVAR(circulation,ht), _ht, true];
-                            };
+                        if (_patient getVariable [QEGVAR(circulation,cardiacArrestType), 0] == 0) then {
+                            [QACEGVAR(medical,FatalVitals), _patient] call CBA_fnc_localEvent;
+                        };
                     }, [_patient], 15] call CBA_fnc_waitAndExecute;
                     };
                     [_idPFH] call CBA_fnc_removePerFrameHandler;
@@ -75,16 +68,10 @@ switch (_randomNumber) do {
                     [{
                         params ["_args", "_idPFH"];
                         _args params ["_patient"];
-                        private _ht = _patient getVariable [QEGVAR(circulation,ht), []];
-                        if ((_ht findIf {_x isEqualTo "EtomidateOD"}) == -1) then {
-                            _ht pushBack "EtomidateOD";
 
-                            if (_patient getVariable [QEGVAR(circulation,cardiacArrestType), 0] == 0) then {
-                                [QACEGVAR(medical,FatalVitals), _patient] call CBA_fnc_localEvent;
-                            };
-
-                            _patient setVariable [QEGVAR(circulation,ht), _ht, true];
-                            };
+                        if (_patient getVariable [QEGVAR(circulation,cardiacArrestType), 0] == 0) then {
+                            [QACEGVAR(medical,FatalVitals), _patient] call CBA_fnc_localEvent;
+                        };
                     }, [_patient], 15] call CBA_fnc_waitAndExecute;
                     };
                     [_idPFH] call CBA_fnc_removePerFrameHandler;
@@ -113,11 +100,9 @@ switch (_randomNumber) do {
                     [{
                         params ["_args", "_idPFH"];
                         _args params ["_patient"];
-                        private _ht = _patient getVariable [QEGVAR(circulation,ht), []];
-
-                            if (_patient getVariable [QEGVAR(circulation,cardiacArrestType), 0] == 0) then {
-                                [QACEGVAR(medical,FatalVitals), _patient] call CBA_fnc_localEvent;
-                            };
+                        if (_patient getVariable [QEGVAR(circulation,cardiacArrestType), 0] == 0) then {
+                            [QACEGVAR(medical,FatalVitals), _patient] call CBA_fnc_localEvent;
+                        };
                     }, [_patient], 15] call CBA_fnc_waitAndExecute;
                     };
                     [_idPFH] call CBA_fnc_removePerFrameHandler;

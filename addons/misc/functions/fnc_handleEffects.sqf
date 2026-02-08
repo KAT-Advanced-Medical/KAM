@@ -33,7 +33,6 @@ private _bloodVolume      = GET_BLOOD_VOLUME_LITERS(ACE_player);
 private _unconscious      = IS_UNCONSCIOUS(ACE_player);
 private _heartRate        = GET_HEART_RATE(ACE_player);
 private _pain             = GET_PAIN_PERCEIVED(ACE_player);
-private _wounds = GET_OPEN_WOUNDS(ACE_player);
 private _bleedRates = ACE_player getVariable [VAR_BODY_BLEED_RATE, [0,0,0,0,0,0,0,0,0,0,0,0]];
 private _hasExternalBleeding = (selectMax _bleedRates) > 0;
 // Indicate if unit is bleeding at all

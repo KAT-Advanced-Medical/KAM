@@ -38,9 +38,10 @@ _patient setVariable [QGVAR(dialysisRunning), true, true];
     params ["_patient", "_startVeh"];
     (!alive _patient) || (abs (speed _patient) > 1 && isNull objectParent _patient) || ((vehicle _patient) != _startVeh);
 }, {
+    params ["_patient", "", "_medic"];
     [_patient, "activity", LSTRING(dialysis_Failed), [[_medic] call ACEFUNC(common,getName)]] call ACEFUNC(medical_treatment,addToLog);
-}, [_patient, _startVeh], 300, {
-    params ["_patient"];
+}, [_patient, _startVeh, _medic], 300, {
+    params ["_patient", "", "_medic"];
     _patient setVariable [QACEGVAR(medical,medications), [], true];
     _patient setVariable [QGVAR(externalPh), 0, true];
     _patient setVariable [QGVAR(kidneyFail), false, true];
@@ -49,7 +50,7 @@ _patient setVariable [QGVAR(dialysisRunning), true, true];
     _patient setVariable [QGVAR(serumCalcium), 2.4, true];
     _patient setVariable [QGVAR(externalCa), 0, true];
     _patient setVariable [QGVAR(dialysisRunning), false, true];
-    private _ht = _unit getVariable [QEGVAR(circulation,ht), []];
+    private _ht = _patient getVariable [QEGVAR(circulation,ht), []];
     _ht deleteAt (_ht find "hypercalcemia");
     _ht deleteAt (_ht find "hypocalcemia");
     _patient setVariable [QEGVAR(circulation,ht), _ht, true];

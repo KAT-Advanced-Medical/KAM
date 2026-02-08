@@ -19,7 +19,6 @@ private _hrAdjust = -50 + floor random ((-30 - -50) + 1);
 [_patient, "LorazepamOverdose", 30, 1200, _hrAdjust, 0, 0, 0, 0.2] call EFUNC(vitals,addMedicationAdjustment);
 [{
     params ["_patient"];
-    private _LorazepamOverdoseTarget = 0;
         [{
             params ["_args", "_idPFH"];
             _args params ["_patient", "_LorazepamOverdoseTarget"];
@@ -33,7 +32,6 @@ private _hrAdjust = -50 + floor random ((-30 - -50) + 1);
                     [{
                         params ["_args", "_idPFH"];
                         _args params ["_patient"];
-                        private _ht = _patient getVariable [QEGVAR(circulation,ht), []];
                        if (_patient getVariable [QEGVAR(circulation,cardiacArrestType), 0] == 0) then {
                                 [QACEGVAR(medical,FatalVitals), _patient] call CBA_fnc_localEvent;
                         };

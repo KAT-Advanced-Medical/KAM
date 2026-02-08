@@ -21,7 +21,6 @@ params ["_medic", "_patient", "_bodyPart"];
 
 private _partIndex = ALL_BODY_PARTS find toLower _bodyPart;
 private _IVarray = _patient getVariable [QGVAR(IV), [0,0,0,0,0,0,0,0,0,0,0,0]];
-private _newArray = _patient getVariable [QACEGVAR(medical,ivBags), []];
 private _IVactual = _IVarray select _partIndex;
 
 if(GVAR(IVreuse)) then {
@@ -72,11 +71,7 @@ private _newArray = [];
     _x params ["_volumeRemaining", "_ivType", "_ivPartIndex"];
 
     if (
-        _ivPartIndex == _partIndex &&
-        (
-            (_type isEqualTo "FBTK" && {_ivType in ["FBTK_500", "FBTK_250"]}) ||
-            (_type isNotEqualTo "FBTK" && {_ivType isEqualTo _type})
-        )
+        _ivPartIndex == _partIndex
     ) then {
         _totalIvVolume = _totalIvVolume + _volumeRemaining;
         switch (_ivType) do {

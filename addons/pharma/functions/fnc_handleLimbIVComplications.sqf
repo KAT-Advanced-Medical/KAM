@@ -20,7 +20,6 @@
  params ["_patient", "_partIndex", "_incomingFlowDifference"];
 
  private _IVarray = _patient getVariable [QGVAR(IV), [0,0,0,0,0,0,0,0,0,0,0,0]];
- private _IVactual = _IVarray select _partIndex;
  private _bodyPart = ALL_BODY_PARTS select _partIndex;
  if (_bodypart == "Chest") then {
     [_patient, 0.7] call ACEFUNC(medical_status,adjustPainLevel);

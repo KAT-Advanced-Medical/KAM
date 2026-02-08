@@ -30,7 +30,6 @@ if (GVAR(kidneyAction)) then {
         };
         private _maxDeltaPH = 1;
         private _maxDeltaLact = 0.05;
-        private _maxDeltaCa = 0.02;
         private _maxDeltaDmg = 0.00125;
         private _prev = _unit getVariable [QGVAR(prevRenalPhysio), [
             0,
@@ -260,8 +259,6 @@ if (GVAR(kidneyAction)) then {
             [_idPFH] call CBA_fnc_removePerFrameHandler;
         };
 
-        private _maxDeltaLact = 0.15;
-        private _maxDeltaCa = 0.05;
         private _maxDeltaDmg = 0.0025;
         private _prev = _unit getVariable [QGVAR(prevCalciumPhysio), [
             0,
@@ -297,12 +294,10 @@ if (GVAR(kidneyAction)) then {
         private _caGlu = [_unit, "CalciumGluconate", false] call ACEFUNC(medical_status,getMedicationCount) select 1;
         private _txa = [_unit, "TXA", false] call ACEFUNC(medical_status,getMedicationCount) select 1;
         private _effectiveCa = _unit getVariable [QGVAR(effectiveCa), GET_CA(_unit)];
-        private _bufferFrac = linearConversion [0, 300, (abs _externalPh), 1, 0.15, true];
         private _kidneyFail = _unit getVariable [QGVAR(kidneyFail), false];
         private _kidneyDamage = _unit getVariable [QGVAR(kidneyDamage), 0];
         private _externalCa = _unit getVariable [QGVAR(externalCa), 0];
         private _kidneyFrac = 1 - _kidneyDamage;
-        private _sign = if (_externalCa == 0) then {1} else {_externalCa / abs _externalCa};
         TRACE_6(
     "Ca INPUT",
     _ca,
@@ -378,12 +373,9 @@ if (GVAR(kidneyAction)) then {
 
         
         private _targetCa = 2.4 + linearConversion [-300, 300, _externalCa, -0.9, 0.9, true];
-
-        private _caError = _targetCa - _ca;
-        TRACE_3(
+        TRACE_2(
     "Ca TARGET",
     _targetCa,
-    _caError,
     _externalCa
 );
         if (_externalCa != 0) then {    
@@ -621,6 +613,5 @@ if (GVAR(kidneyAction)) then {
 
     }, 5, [_unit]] call CBA_fnc_addPerFrameHandler;
 };
-
 
 

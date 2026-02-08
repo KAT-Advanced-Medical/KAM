@@ -53,7 +53,6 @@ private _fnc_onUnload = {
 
 private _fnc_sliderMove = {
     params ["_slider","_curBloodVol"];
-    private _idc = ctrlIDC _slider;
     private _logic = GETMVAR(BIS_fnc_initCuratorAttributes_target,objNull);
     private _unit = attachedTo _logic;
     private _curVal = GET_BLOOD_VOLUME_LITERS(_unit);
