@@ -62,7 +62,7 @@ if (GVAR(PneumothoraxAlwaysVisible)) then {
     } else {
         _ctrlLeftChestInjury ctrlShow false;
     };
-    if ((_deepPenetratingInjury select 1) && !(_activeChestSeal select 0)) then {
+    if ((_deepPenetratingInjury select 1) && !(_activeChestSeal select 1)) then {
         _ctrlRightChestInjury ctrlShow true;
     } else {
         _ctrlRightChestInjury ctrlShow false;

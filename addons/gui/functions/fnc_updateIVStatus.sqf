@@ -180,6 +180,15 @@ if (_ivMenuShow) then {
             ctrlSetText [_valueIDC, (_activeFlow toFixed 1)];
             ctrlSetText [_rateIDC, (_activeRate toFixed 1)];
         };
+        case (_activeIV == 15): {
+            ctrlShow [_coverIDC, true];
+            ctrlShow [_titleIDC, false];
+            ctrlShow [_typeIDC, false];
+            ctrlShow [_valueIDC, false];
+            ctrlShow [_rateIDC, false];
+            _buttonIDCArray apply {ctrlShow [_x, false]};
+            _buttonIDCArray apply {ctrlEnable [_x, false]};
+        };
         case (_activeIV == -1): {
             ctrlShow [_coverIDC, false];
             ctrlShow [_titleIDC, false];

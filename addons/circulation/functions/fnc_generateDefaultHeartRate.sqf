@@ -23,7 +23,7 @@ private _playerdefaultHeartRate = _unit getVariable [QGVAR(defaultHeartRate), _d
 
 if (isMultiplayer) then {
     private _id = parseNumber (getPlayerUID _unit select [15, 2]);
-
+    TRACE_1("userID", _id)
     switch(true) do {
         case (0 <= _id && _id <= 5): {_defaultHeartRate = 71};
         case (6 <= _id && _id <= 10): {_defaultHeartRate = 76};

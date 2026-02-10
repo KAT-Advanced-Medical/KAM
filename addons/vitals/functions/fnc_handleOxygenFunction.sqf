@@ -56,6 +56,7 @@ private _respiratoryRateMult = _unit getVariable [QEGVAR(pharma,respiratoryRate)
 private _respiratoryDepth = 0;
 private _actualVentilation = 1;
 private _baseTidalVolume = 1;
+private _pao2 = 90;
 private _ph = GET_PH(_unit);
 private _respFatigue = _unit getVariable [QGVAR(respFatigue), 0];
 private _do2Norm = _unit getVariable [QGVAR(oxygenDelivery), 1];
@@ -735,7 +736,6 @@ TRACE_4("Fio2",
     _baroPressure,
     _paco2
 );
-private _targetPao2 = _pALVo2 * (1 - _pulmonaryShunt);
 if (IN_CRDC_ARRST(_unit)) then {
     private _cprActive =
         alive (_unit getVariable [QACEGVAR(medical,CPR_provider), objNull]);

@@ -239,7 +239,7 @@ if (_totalIvVolume > 0) then {
     if (_NorepinephrineIVInfusion > 0) then {
         _entries pushBack [format [localize ELSTRING(pharma,receivingNorepinephrineIVInfusionVolume), floor _NorepinephrineIVInfusion], [0.878,0.69,1,1]];
     };
-    if (_NorepinephrineIVInfusion > 0) then {
+    if (_platelets > 0) then {
         _entries pushBack [format [localize ELSTRING(pharma,receivingPlateletsVolume), floor _platelets], [0.827,0.686,0.216,1]];
     };
     if (_fbtk > 0) then {
