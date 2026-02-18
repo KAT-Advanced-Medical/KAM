@@ -67,6 +67,8 @@ _patient setVariable [QGVAR(kidneyFail), false, true];
 _patient setVariable [QGVAR(kidneyArrest), false, true];
 _patient setVariable [QGVAR(kidneyPressure), false, true];
 _patient setVariable [QGVAR(kidneyDamage), 0, true];
+_patient setVariable [QGVAR(liverDamage), 0, true];
+_patient setVariable [QGVAR(liverFail),false, true];
 _patient setVariable [QGVAR(hemolysisPFH), -1, true];
 _patient setVariable [QGVAR(respiratoryRate), 1, true];
 _patient setVariable [QGVAR(heartContractility), 1, true];
@@ -80,11 +82,14 @@ _patient setVariable [QGVAR(serumCalcium), 2.4, true];
 _patient setVariable [QGVAR(calciumDamage), 0, true];
 _patient setVariable [QGVAR(externalCa), 0, true];
 _patient setVariable [QGVAR(calciumVasoMult), 1, true];
-_patient setVariable [QGVAR(effectiveCalcium), 1, true];
+_patient setVariable [QGVAR(effectiveCa), 2.4, true];
 _patient setVariable [QGVAR(lastArrhythmia), -1000, true];
 _patient setVariable [QGVAR(prevCalcium), 0, true];
 _patient setVariable [QGVAR(kidneyFailTimer), 0, true];
 _patient setVariable [QGVAR(acidRepo), 1.0, true];
+_patient setVariable [QGVAR(prevRenalPhysio), [0, 1.2, 2.4, 0], true];
+_patient setVariable [QGVAR(prevCalciumPhysio), [0, 1.2, 2.4, 0], true];
+_patient setVariable [QGVAR(lactate), 1.2, true];
 /// Clear Stamina & weapon sway
 if (ACEGVAR(advanced_fatigue,enabled)) then {
     ["kat_PDF"] call ACEFUNC(advanced_fatigue,removeDutyFactor);
