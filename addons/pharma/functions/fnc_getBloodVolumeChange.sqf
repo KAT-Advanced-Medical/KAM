@@ -251,11 +251,12 @@ if (count (_unit getVariable [QACEGVAR(medical,ivBags), []]) > 0) then {
             
             private _damageAmount = [_unit,_idx] call EFUNC(hitpoints,damageAmount);
             if ((_damageAmount > GVAR(ivLeakageThreshold)) && GVAR(ivCheckLimbDamage)) then {
-                private  _lostFluids = linearConversion [GVAR(ivLeakageThreshold), 50, _damageAmount, 1, 0, true];
-                _ECP = _ECB * _lostFluids;
-                _ECP = _ECP * _lostFluids;
-                _platelets = _platelets * _lostFluids;
-                _ISP = _ISP * _lostFluids;
+                private _lostFluids = linearConversion [GVAR(ivLeakageThreshold), 50, _damageAmount, 1, 0, true];
+                private _leakAmount = _bagChange * (1 - _lostFluids);
+                _ECB = _ECB - _leakAmount;
+                _ECP = _ECP - _leakAmount;
+                _platelets = _platelets - _leakAmount;
+                _ISP = _ISP - _leakAmount;
             };
         } else {
             private _IVflow = _unit getVariable [QGVAR(IVflow), [0,0,0,0,0,0,0,0,0,0,0,0]];
@@ -328,8 +329,9 @@ if (count (_unit getVariable [QACEGVAR(medical,ivBags), []]) > 0) then {
             private _damageAmount = [_unit,_idx] call EFUNC(hitpoints,damageAmount);
             if ((_damageAmount > GVAR(ivLeakageThreshold)) && GVAR(ivCheckLimbDamage)) then {
                 private _lostFluids = linearConversion [GVAR(ivLeakageThreshold), 50, _damageAmount, 1, 0, true];
-                _ECP = _ECP * _lostFluids;
-                _ISP = _ISP * _lostFluids;
+                private _leakAmount = _bagChange * (1 - _lostFluids);
+                _ECP = _ECP - _leakAmount;
+                _ISP = _ISP - _leakAmount;
             };
         };
     };
