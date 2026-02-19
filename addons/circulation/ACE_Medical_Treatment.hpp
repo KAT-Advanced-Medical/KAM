@@ -364,7 +364,7 @@ class ACE_Medical_Treatment {
             ph = 0;
         };
         class Morphine_IVInfusion: SalineIV_250 {
-            painReduce = 0.2;
+            painReduce = 0.4;
             hrIncreaseLow[] = {-1, -3};
             hrIncreaseNormal[] = {-1, -3};
             hrIncreaseHigh[] = {-1, -4};
@@ -394,7 +394,7 @@ class ACE_Medical_Treatment {
             incompatibleMedication[] = {};
         };
         class Etomidate_IVInfusion: SalineIV_250 {
-            painReduce = 0.2;
+            painReduce = 0.1;
             hrIncreaseLow[] = {-1, -3};
             hrIncreaseNormal[] = {-1, -3};
             hrIncreaseHigh[] = {-1, -4};
@@ -454,7 +454,7 @@ class ACE_Medical_Treatment {
             incompatibleMedication[] = {};
         };
         class Morphine_IVInfusion100: SalineIV_250 {
-            painReduce = 0.2;
+            painReduce = 0.4;
             hrIncreaseLow[] = {-1, -3};
             hrIncreaseNormal[] = {-1, -3};
             hrIncreaseHigh[] = {-1, -4};
@@ -484,7 +484,7 @@ class ACE_Medical_Treatment {
             incompatibleMedication[] = {};
         };
         class Etomidate_IVInfusion100: SalineIV_250 {
-            painReduce = 0.2;
+            painReduce = 0.1;
             hrIncreaseLow[] = {-1, -3};
             hrIncreaseNormal[] = {-1, -3};
             hrIncreaseHigh[] = {-1, -4};

@@ -54,6 +54,21 @@ _patient setVariable [QGVAR(IVFlow), _ivFlow, true];
 
 private _ivBags = _patient getVariable [QACEGVAR(medical,ivBags), []];
 
+private _remainingBags = [];
+private _removedBags = [];
+
+{
+    _x params ["_volumeRemaining", "_ivType", "_ivPartIndex"];
+
+    if (_ivPartIndex == _partIndex) then {
+        _removedBags pushBack _x;
+    } else {
+        _remainingBags pushBack _x;
+    };
+} forEach _ivBags;
+
+_patient setVariable [QACEGVAR(medical,ivBags), _remainingBags, true];
+
 private _saline = 0;
 private _blood = 0;
 private _plasma = 0;
@@ -65,28 +80,25 @@ private _fbtk = 0;
 private _totalIvVolume = 0;
 
 // Remove matching bags and collect volumes
-private _newArray = [];
 
 {
     _x params ["_volumeRemaining", "_ivType", "_ivPartIndex"];
 
-    if (
-        _ivPartIndex == _partIndex
-    ) then {
-        _totalIvVolume = _totalIvVolume + _volumeRemaining;
-        switch (_ivType) do {
-            case "Saline": { _saline = _saline + _volumeRemaining; };
-            case "Blood": { _blood = _blood + _volumeRemaining; };
-            case "Plasma": { _plasma = _plasma + _volumeRemaining; };
-            case "Ringers Lactate": { _ringersLactate = _ringersLactate + _volumeRemaining; };
-            case "PackedRBC": { _packedRBC = _packedRBC + _volumeRemaining; };
-            case "Hextend": { _hextend = _hextend + _volumeRemaining; };
-            case "Hypertonic Saline": { _hyperSaline = _hyperSaline + _volumeRemaining; };
-            case "FBTK_500": { _fbtk = _fbtk + _volumeRemaining; };
-            case "FBTK_250": { _fbtk = _fbtk + _volumeRemaining; };
-        };
-    } else {};
-} forEach _ivBags;
+    _totalIvVolume = _totalIvVolume + _volumeRemaining;
+
+    switch (_ivType) do {
+        case "Saline": { _saline = _saline + _volumeRemaining; };
+        case "Blood": { _blood = _blood + _volumeRemaining; };
+        case "Plasma": { _plasma = _plasma + _volumeRemaining; };
+        case "Ringers Lactate": { _ringersLactate = _ringersLactate + _volumeRemaining; };
+        case "PackedRBC": { _packedRBC = _packedRBC + _volumeRemaining; };
+        case "Hextend": { _hextend = _hextend + _volumeRemaining; };
+        case "Hypertonic Saline": { _hyperSaline = _hyperSaline + _volumeRemaining; };
+        case "FBTK_500": { _fbtk = _fbtk + _volumeRemaining; };
+        case "FBTK_250": { _fbtk = _fbtk + _volumeRemaining; };
+        default {};
+    };
+} forEach _removedBags;
 
 if (_totalIvVolume >= 1) then {
     private _refundIV = {
@@ -175,4 +187,4 @@ if (_totalIvVolume >= 1) then {
     };
 };
 
-_patient setVariable [QACEGVAR(medical,ivBags), _newArray, true];
+_patient setVariable [QACEGVAR(medical,ivBags), _remainingBags, true];
