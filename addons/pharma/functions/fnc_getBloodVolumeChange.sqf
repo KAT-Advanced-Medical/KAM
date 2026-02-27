@@ -19,15 +19,23 @@
 
 params ["_unit", "_deltaT", "_syncValues"];
 
-private _bloodLoss = GET_BLOOD_LOSS(_unit);
+private _bloodLoss = GET_BODY_BLEED_RATE(_unit);
 private _internalBleeding = GET_INTERNAL_BLEEDING(_unit);
 private _bloodPressure = GET_BLOOD_PRESSURE(_unit);
+private _vasoconstriction = GET_VASOCONSTRICTION(_unit);
+private _ECP = GET_BODY_FLUID_ECP(_unit);
+private _ECB = GET_BODY_FLUID_ECB(_unit);
+private _defaultHR = (_unit getVariable [QEGVAR(circulation,defaultHeartRate), 80]);
 _bloodPressure params ["_bloodPressureL", "_bloodPressureH"];
 private _map = GET_MAP(_unit);
 private _correctedMap = linearConversion [14.3333, 174.3333, _map, 0.05, 2, true];
 TRACE_3("correctedMAP",_correctedMap,_map,_bloodPressure);
 private _heartRate = GET_HEART_RATE(_unit);
-private _lossVolumeChange = (-_deltaT * (((_bloodLoss + _internalBleeding) * (_heartRate / (_unit getVariable [QEGVAR(circulation,defaultHeartRate), 80])) * _correctedMap * (((GET_BODY_FLUID_ECP(_unit)/GET_BODY_FLUID_ECB(_unit)) / (DEFAULT_ECP/DEFAULT_ECB))) min 2) / GET_VASOCONSTRICTION(_unit)));
+
+private _lossVolumeChange = 0;
+{
+    _lossVolumeChange = _lossVolumeChange + (-_deltaT * ((((_bloodLoss select _forEachIndex) + (_internalBleeding select _forEachIndex)) * (_heartRate / _defaultHR) * _correctedMap * (((_ECP/_ECB) / (DEFAULT_ECP/DEFAULT_ECB))) min 2) / (_vasoconstriction select _forEachIndex)));
+} forEach _bloodLoss;
 private _enableFluidShift = EGVAR(vitals,enableFluidShift);
 private _fluidVolume = GET_BODY_FLUID(_unit);
 TRACE_4("gbvc",_internalBleeding,_bloodLoss,_heartRate,_lossVolumeChange);
@@ -80,7 +88,7 @@ if (count (_unit getVariable [QACEGVAR(medical,ivBags), []]) > 0) then {
             if (_type in ["Blood", "Saline", "Plasma", "Ringers Lactate", "PackedRBC", "Hypertonic Saline", "Hextend"]) then {
             _bagChange = (_flowCalculation * (_IVflow select _bodyPart) * (_IVrate select _bodyPart) * (1 + (_pressureBag select _bodyPart)) * _rateCoef) min _bagVolumeRemaining; // absolute value of the change in miliLiters
             if ((_IVarray select _bodyPart) in [2,3,4,10,11,12]) then {
-                _bagChange = _bagChange * ((2 - _vasoconstriction) max 0.2);
+                _bagChange = _bagChange * ((2 - (_vasoconstriction select _bodyPart)) max 0.2);
             };
             _bagVolumeRemaining = _bagVolumeRemaining - _bagChange;
             _incomingFlowAmount set [_bodyPart, ((_incomingFlowAmount select _bodyPart) + _bagChange)];
@@ -91,8 +99,8 @@ if (count (_unit getVariable [QACEGVAR(medical,ivBags), []]) > 0) then {
             } forEach _incomingFlowAmount;
             TRACE_8("IV",_bagChange,_IVrate,_IVflow,_IVarray,_isOccluded,_rateCoef,_flowCalculation,_bodyPart);
             TRACE_2("IV2",_bagVolumeRemaining,_incomingFlowAmount);
-            if ((GVAR(LimbIVComplications)) && ((((_incomingFlowAmount select _bodyPart) max 0.01) / ((_IVrate select _bodyPart) max 0.01)) > (5 * ((2 - _vasoconstriction) max 0.2))) && ((random 100) < 20)) then {
-                private _incomingFlowDifference = (_incomingFlowAmount select _bodyPart) - (5 * ((2 - _vasoconstriction) max 0.2));
+            if ((GVAR(LimbIVComplications)) && ((((_incomingFlowAmount select _bodyPart) max 0.01) / ((_IVrate select _bodyPart) max 0.01)) > (5 * ((2 - (_vasoconstriction select _bodyPart)) max 0.2))) && ((random 100) < 20)) then {
+                private _incomingFlowDifference = (_incomingFlowAmount select _bodyPart) - (5 * ((2 - (_vasoconstriction select _bodyPart)) max 0.2));
                 [_unit, _bodyPart, _incomingFlowDifference] call FUNC(handleLimbIVComplications)};
             if (GVAR(IVComplications)) then {
                 private _hr = GET_HEART_RATE(_unit);
@@ -102,7 +110,7 @@ if (count (_unit getVariable [QACEGVAR(medical,ivBags), []]) > 0) then {
                 if (_hr < 50) then {_riskCoef = _riskCoef * (linearConversion [50, 30, _hr, 1, 1.5, true])};
                 if (_bp < 90) then {_riskCoef = _riskCoef * (linearConversion [90, 50, _bp, 1, 1.5, true])};
                 if (_lungCondition < 350) then {_riskCoef = _riskCoef * (linearConversion [350, 150, _lungCondition, 1, 1.5, true])};
-                private _maxSafeFlow = (20 * ((2 - _vasoconstriction) max 0.2)) / _riskCoef;
+                private _maxSafeFlow = (20 * ((2 - (_vasoconstriction select _bodyPart)) max 0.2)) / _riskCoef;
                 if (_totalFlow > _maxSafeFlow) then {
                     [_unit, (_totalFlow - _maxSafeFlow)] call FUNC(handleIVComplications)
                     };
@@ -153,7 +161,7 @@ if (count (_unit getVariable [QACEGVAR(medical,ivBags), []]) > 0) then {
             } else {
                 _bagChange = (_flowCalculation * (_IVrate select _bodyPart) *  _rateCoef); // absolute value of the change in miliLiters
                 if ((_IVarray select _bodyPart) in [2,3,4,10,11,12]) then {
-                    _bagChange = _bagChange * ((2 - _vasoconstriction) max 0.2);
+                    _bagChange = _bagChange * ((2 - (_vasoconstriction select _bodyPart)) max 0.2);
                 };
             };
             switch (true) do {
