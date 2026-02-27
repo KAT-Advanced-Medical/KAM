@@ -46,7 +46,7 @@ private _state = [] call CBA_fnc_createNamespace;
 [QACEGVAR(medical,isLimping), false],
 [VAR_SPO2, DEFAULT_SPO2],
 [VAR_OXYGEN_DEMAND, 0],
-[VAR_VASOCONSTRICTION, 1],
+[VAR_VASOCONSTRICTION, [1,1,1,1,1,1,1,1,1,1,1,1]],
 [QEGVAR(airway,airway_item), ""],
 [QEGVAR(airway,airway), false],
 [QEGVAR(airway,clearedTime), 0],
@@ -98,7 +98,7 @@ private _state = [] call CBA_fnc_createNamespace;
 [QEGVAR(ophthalmology,eyeInjurySevere), false],
 
 
-[QEGVAR(pharma,alphaAction), 1],
+[QEGVAR(pharma,alphaAction), [1,1,1,1,1,1,1,1,1,1,1,1]],
 
 [QEGVAR(pharma,IV), [0,0,0,0,0,0,0,0,0,0,0,0]],
 [QEGVAR(pharma,IVflow), [0,0,0,0,0,0,0,0,0,0,0,0]],

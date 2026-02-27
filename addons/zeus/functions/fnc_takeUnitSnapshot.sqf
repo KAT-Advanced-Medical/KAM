@@ -56,7 +56,7 @@ private _inPain = _unit getVariable [VAR_IN_PAIN, false];
 private _painSupp = _unit getVariable [VAR_PAIN_SUPP, 0];
 private _medications = _unit getVariable [VAR_MEDICATIONS, []];
 private _triageCard = _unit getVariable [QACEGVAR(medical,triageCard), []];
-private _vasoconstriction = _unit getVariable [VAR_VASOCONSTRICTION, 1];
+private _vasoconstriction = _unit getVariable [VAR_VASOCONSTRICTION, [1,1,1,1,1,1,1,1,1,1,1,1]];
 
 
 diag_log format [
@@ -218,7 +218,7 @@ diag_log format [
     _eyeInjurySevere
 ];
 
-private _alphaAction = _unit getVariable [QEGVAR(pharma,alphaAction), 1];
+private _alphaAction = _unit getVariable [QEGVAR(pharma,alphaAction), [1,1,1,1,1,1,1,1,1,1,1,1]];
 
 private _IV = _unit getVariable [QEGVAR(pharma,IV), [0,0,0,0,0,0,0,0,0,0,0,0]];
 private _IVflow = _unit getVariable [QEGVAR(pharma,IVflow), [0,0,0,0,0,0,0,0,0,0,0,0]];

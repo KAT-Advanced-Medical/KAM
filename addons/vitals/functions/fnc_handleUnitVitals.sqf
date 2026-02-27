@@ -235,12 +235,18 @@ if (EGVAR(breathing,enable)) then {
     _spo2 = [_unit, _heartRate, _anerobicPressure, _bloodGas, _temperature, _baroPressure, _opioidDepression, _aceAnFatigue, _aceAnReserve, _deltaT, _syncValues] call FUNC(handleOxygenFunction);
 };
 
-private _woundBloodLoss = GET_WOUND_BLEEDING(_unit);
-
+private _woundBloodLoss = GET_BODY_BLEED_RATE(_unit);
+private _damage = GET_BODYPART_DAMAGE(_unit);
 // Vasoconstriction from Wound Blood Loss and Alpha Adjustment
-private _vasoconstriction = 1 + (0.5 * _woundBloodLoss) + _alphaFactorAdjustment;
-TRACE_3("vasoconstriction",_woundBloodLoss,_alphaFactorAdjustment,_vasoconstriction);
-_unit setVariable [VAR_VASOCONSTRICTION, (1.8 min (0.2 max _vasoconstriction)), _syncValues];
+private _vasoArray = _unit getVariable [VAR_VASOCONSTRICTION, [1,1,1,1,1,1,1,1,1,1,1,1]];
+{
+    private _limbIndex = _forEachIndex;
+    private _bodyPartDamage = linearConversion [0, 20, (_damage select _limbIndex), 0, 1, true];
+    private _vasoconstriction = 1 + (0.5 * (_woundBloodLoss select _limbIndex)) + _alphaFactorAdjustment + (0.5 * _bodyPartDamage);
+    _vasoArray set [_limbIndex, (1.9 min (0.2 max _vasoconstriction))];
+} forEach _vasoArray;
+
+_unit setVariable [VAR_VASOCONSTRICTION, _vasoArray, _syncValues];
 
 private _bloodPressure = [_unit] call EFUNC(circulation,getBloodPressure);
 _unit setVariable [VAR_BLOOD_PRESS, _bloodPressure, _syncValues];
