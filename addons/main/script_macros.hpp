@@ -404,6 +404,7 @@
 // Pharma
 #define VAR_VASOCONSTRICTION           QEGVAR(pharma,alphaAction)
 #define GET_VASOCONSTRICTION(unit)     (unit getVariable [VAR_VASOCONSTRICTION, [1,1,1,1,1,1,1,1,1,1,1,1]])
+#define GET_LOCAL_VASOCONSTRICTION(unit,partindex)      ((unit getVariable [VAR_LOCAL_ANESTHESIA, [1,1,1,1,1,1,1,1,1,1,1,1]]) select _partindex)
 
 #define VAR_LOCAL_ANESTHESIA            QEGVAR(pharma,localAnesthesia)
 #define GET_LOCAL_ANESTHESIA(unit,partindex)      ((unit getVariable [VAR_LOCAL_ANESTHESIA, DEFAULT_LOCAL_ANESTHESIA]) select _partindex)
