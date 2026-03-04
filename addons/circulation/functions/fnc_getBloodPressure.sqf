@@ -25,7 +25,7 @@ private _strokeVolume  = [_unit] call EFUNC(vitals,getStrokeVolume);
 private _heartRate     = GET_HEART_RATE(_unit);
 private _exertionSVR = linearConversion [60, 130, _heartRate, 1.05, 0.75, true];
 private _resistance        = _unit getVariable [VAR_PERIPH_RES, DEFAULT_PERIPH_RES];
-private _vasoconstriction  = GET_VASOCONSTRICTION(_unit);
+private _vasoconstrictionArray  = GET_VASOCONSTRICTION(_unit);
 private _tourniquets       = GET_TOURNIQUETS(_unit);
 private _icp               = GET_ICP(_unit);
 private _occlusionMap = [
@@ -53,7 +53,13 @@ private _prevMAP = GET_MAP(_unit);
 if (_icp > 25 && _prevMAP < 70) then {
     _resistance = _resistance * linearConversion [25, 40, _icp, 1.1, 1.4, true];
 };
+private _average = 0;
 
+private _vasoconstriction = 0;
+{
+    _vasoconstriction = _vasoconstriction + _x;
+} forEach _vasoconstrictionArray;
+private _vasoconstriction = (_vasoconstriction /12);
 private _map =
     (_cardiacOutput
     * BASELINE_SVR

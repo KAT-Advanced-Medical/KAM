@@ -110,7 +110,12 @@ if (count (_unit getVariable [QACEGVAR(medical,ivBags), []]) > 0) then {
                 if (_hr < 50) then {_riskCoef = _riskCoef * (linearConversion [50, 30, _hr, 1, 1.5, true])};
                 if (_bp < 90) then {_riskCoef = _riskCoef * (linearConversion [90, 50, _bp, 1, 1.5, true])};
                 if (_lungCondition < 350) then {_riskCoef = _riskCoef * (linearConversion [350, 150, _lungCondition, 1, 1.5, true])};
-                private _maxSafeFlow = (20 * ((2 - (_vasoconstriction select _bodyPart)) max 0.2)) / _riskCoef;
+                private _fixedVaso = 0;
+                {
+                    _fixedVaso = _fixedVaso + _x;
+                } forEach _vasoconstriction;
+                private _fixedVaso = (_fixedVaso /12);
+                private _maxSafeFlow = (20 * ((2 - _fixedVaso) max 0.2)) / _riskCoef;
                 if (_totalFlow > _maxSafeFlow) then {
                     [_unit, (_totalFlow - _maxSafeFlow)] call FUNC(handleIVComplications)
                     };

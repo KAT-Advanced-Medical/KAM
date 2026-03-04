@@ -103,6 +103,11 @@ private _bvComp =
 private _shockClass =
     _unit getVariable [QGVAR(shockClass), "NONE"];
 private _globalVaso = GET_VASOCONSTRICTION(_unit);
+private _fixedVaso = 0;
+{
+    _fixedVaso = _fixedVaso + _x;
+} forEach _globalVaso;
+private _fixedVaso = (_fixedVaso /12);
 private _vasoTone = switch (_shockClass) do {
     case "NONE":          { 1.0 };
     case "COMPENSATED":   { 1.2 };   // strong sympathetic response
@@ -111,7 +116,7 @@ private _vasoTone = switch (_shockClass) do {
     default               { 1.0 };
 };
 private _effectiveVaso =
-    _globalVaso * _vasoTone;
+    _fixedVaso * _vasoTone;
 
 _effectiveVaso = _effectiveVaso min 1.4 max 0.6;
 private _effectiveCVP =
