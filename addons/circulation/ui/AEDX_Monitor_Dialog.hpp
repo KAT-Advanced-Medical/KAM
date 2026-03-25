@@ -1,7 +1,4 @@
-class RscLine;
-class RscBackground;
 class RscButton;
-class RscStructuredText;
 
 class GVAR(AEDX_Monitor_Dialog) {
     idd = IDC_AEDX_MONITOR;

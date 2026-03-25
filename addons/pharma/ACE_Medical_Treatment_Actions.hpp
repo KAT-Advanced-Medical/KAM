@@ -1,11 +1,8 @@
 class ACE_Medical_Treatment_Actions {
     class BasicBandage;
-    class FieldDressing;
     class ApplyTourniquet;
-    class RemoveTourniquet;
     class Morphine;
     class CheckPulse;
-    class CPR;
 
     class BloodIV: BasicBandage {
         allowedSelections[] = {"Body", "LeftArm", "RightArm", "LeftLeg", "RightLeg"};
@@ -386,7 +383,7 @@ class ACE_Medical_Treatment_Actions {
     class Dialysis: BasicBandage {
         displayName = CSTRING(Dialysis_DisplayName);
         displayNameProgress = CSTRING(Dialysis_DisplayNameProgress);
-        icon = QPATHTOF(ui\icon_aedx.paa);
+        icon = QPATHTOF(ui\X_Series-Device_W.paa);
         category = "surgery";
         consumeItem = 0;
         items[] = {};

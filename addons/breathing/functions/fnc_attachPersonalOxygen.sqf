@@ -27,10 +27,10 @@ _patient setVariable [QGVAR(oxygenMaskActive), true, true];
 private _availableTanks = (magazinesAmmo [_patient, false]) select {(_x select 0) isEqualTo "kat_personal_oxygen"};
 private _largestTank = 0;
 
-{ 
-    if (_x select 1 > ((_availableTanks select _largestTank) select 1)) then { 
-        _largestTank = _y; 
-    }; 
+{
+    if (_x select 1 > ((_availableTanks select _largestTank) select 1)) then {
+        _largestTank = _forEachIndex;
+    };
 } forEach _availableTanks;
 
 private _largestTankValue = (_availableTanks select _largestTank) select 1;
@@ -52,7 +52,7 @@ _patient setVariable [QGVAR(oxygenMaskStatus), [(_largestTankValue + 1), 1], tru
         _patient call FUNC(detachPersonalOxygen);
         _pfhID call CBA_fnc_removePerFrameHandler;
     };
-    
+
 }, 5, [
     _patient
 ]] call CBA_fnc_addPerFrameHandler;

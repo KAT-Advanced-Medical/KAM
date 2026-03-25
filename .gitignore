@@ -80,6 +80,7 @@ keys/*
 ####
 hemtt.exe
 ArmaScriptCompiler.exe
+.hemttprivatekey
 
 #SQF-VM Server
 .vscode\sqfvm-lsp

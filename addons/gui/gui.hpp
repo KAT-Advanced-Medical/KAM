@@ -1,10 +1,8 @@
 class RscText;
 class RscStructuredText;
 class RscButton;
-class RscPicture;
 class RscListBox;
 class RscActivePicture;
-class RscButtonMenu;
 class RscControlsGroup;
 class RscControlsGroupNoScrollbars;
 
@@ -331,7 +329,7 @@ class ACE_Medical_Menu {
                     shadow = "false";
                 };
             };
-        
+
             class ChestCover: HeadCover {
                 idc = IDC_IV_FLOW_CHESTCOVER;
                 text = CSTRING(ChestCover); // LOOK HERE
