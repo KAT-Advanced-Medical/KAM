@@ -49,3 +49,4 @@ PREP(maskOverlay);
 PREP(handleVX);
 PREP(contaminatedEH);
 PREP(healdecon);
+PREP(gui_updateInjuryListPart);

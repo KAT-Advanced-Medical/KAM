@@ -449,6 +449,9 @@
             <Dutch>Intoxicatie</Dutch>
             <Turkish>Zehirlenme</Turkish>
         </Key>
+        <Key ID="STR_KAT_Chemical_Contamination">
+            <English>Contamination</English>
+        </Key>
         <Key ID="STR_KAT_Chemical_Lvl0_Gas">
             <English>Tear gas (Level 0)</English>
             <Czech>Slzný plyn (Level 0)</Czech>

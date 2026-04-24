@@ -1,7 +1,7 @@
 #include "..\script_component.hpp"
 /*
  * Author: AtrixZockt
- * Updates injury list for given body part for the target.
+ * Updates injury list for all body parts for the target.
  *
  * Arguments:
  * 0: Injury list <CONTROL>
