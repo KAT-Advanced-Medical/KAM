@@ -84,8 +84,8 @@
             <Japanese>気圧の変化を有効化</Japanese>
         </Key>
         <Key ID="STR_KAT_Vitals_PRESSURE_ENABLE_DESC">
-            <English>Enables barometric pressure changes with altitude that affect vitals such as oxygen calculations.</English>
-            <Japanese>酸素の計算などバイタルに影響を与える高度による気圧の変化を有効化します。</Japanese>
+            <English>Enables barometric pressure changes with altitude that affect vitals such as oxygen calculations.\nDisabling this will prevent oxygen deprivation symptoms at high altitudes.</English>
+            <Japanese>酸素の計算などバイタルに影響を与える高度による気圧の変化を有効化します。\n無効化すると、高高度での酸欠症状が発生しなくなります。</Japanese>
         </Key>
         <Key ID="STR_KAT_Vitals_PRESSURE_ACE">
             <English>Use ACE barometric pressure</English>
