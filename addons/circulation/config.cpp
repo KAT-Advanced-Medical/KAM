@@ -6,7 +6,7 @@ class CfgPatches {
         requiredVersion = REQUIRED_VERSION;
         units[] = {
             "kat_X_AEDItem",
-            "kat_bloodBankCrate"
+            "kat_AEDItem"
         };
         weapons[] = {
             "kat_bloodIV_O",
@@ -36,7 +36,11 @@ class CfgPatches {
             "kat_X_AED",
             "kat_crossPanel",
             "KAT_Empty_bloodIV_500",
-            "KAT_Empty_bloodIV_250"
+            "KAT_Empty_bloodIV_250",
+            "kat_AED",
+            "kat_BPCuff",
+            "KAT_bloodSample",
+            "KAT_bloodResult"
         };
         magazines[] = { };
         requiredAddons[] = {
@@ -66,7 +70,6 @@ class CfgPatches {
 #include "CfgFunctions.hpp"
 #include "CfgMoves.hpp"
 #include "CfgEventHandlers.hpp"
-#include "CfgSounds.hpp"
 #include "CfgWeapons.hpp"
 #include "CfgVehicles.hpp"
 #include "ACE_Medical_Treatment.hpp"

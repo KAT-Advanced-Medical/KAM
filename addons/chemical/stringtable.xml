@@ -17,6 +17,7 @@
             <Chinesesimp>82毫米CS燃气轮</Chinesesimp>
             <Finnish>82mm CS-kaasulaastikuori</Finnish>
             <Dutch>82mm CS-Gasgranaat</Dutch>
+            <Turkish>82mm CS Gaz Mermisi</Turkish>
         </Key>
         <Key ID="STR_KAT_Chemical_CSGas_MFDNAME">
             <English>CS-Gas</English>
@@ -34,6 +35,7 @@
             <Chinesesimp>CS毒气</Chinesesimp>
             <Finnish>CS-kaasu</Finnish>
             <Dutch>CS-Gas</Dutch>
+            <Turkish>CS Gazı</Turkish>
         </Key>
         <Key ID="STR_KAT_Chemical_ChangeGasMaskFilter">
             <English>Replace gas mask filter</English>
@@ -51,6 +53,7 @@
             <Chinesesimp>更换防毒面具过滤器</Chinesesimp>
             <Finnish>Vaihda kaasunaamarin suodatin</Finnish>
             <Dutch>Vervang het filter van de gasmasker</Dutch>
+            <Turkish>Gaz maskesi filtresini değiştir</Turkish>
         </Key>
         <Key ID="STR_KAT_Chemical_CheckGasMaskDurability">
             <English>Check gas mask durability</English>
@@ -68,83 +71,98 @@
             <Chinesesimp>检查防毒面具的耐用性</Chinesesimp>
             <Finnish>Tarkista kaasunaamarin kestävyys</Finnish>
             <Dutch>Check levensduur Gasmasker</Dutch>
+            <Turkish>Gaz maskesi dayanıklılığını kontrol et</Turkish>
         </Key>
         <Key ID="STR_KAT_Chemical_ChemicalDetectorDescription">
             <English>Used to detect KAT toxic chemicals</English>
             <Czech>Používá se k detekování toxických chemikálií KAT</Czech>
             <French>Utilisé pour détecter les produits chimiques toxiques KAT</French>
+            <Spanish>Se utiliza para detectar químicos tóxicos KAT</Spanish>
             <Italian>Utilizzato per rilevare sostanze chimiche tossiche KAT</Italian>
             <German>zum Nachweis toxischer KAT-Chemikalien</German>
             <Japanese>KAT毒性化学物質の検出に使用</Japanese>
             <Chinese>用於偵測 KAT 有毒化學物質</Chinese>
             <Chinesesimp>用于检测KAT有毒化学物质</Chinesesimp>
             <Dutch>Wordt gebruikt om giftige KAT chemicaliën te detecteren</Dutch>
+            <Turkish>KAT toksik kimyasallarını tespit etmek için kullanılır</Turkish>
         </Key>
         <Key ID="STR_KAT_Chemical_ChemicalDetectorDisplayName">
             <English>JCAD Chemical Detector</English>
             <Czech>Chemický detektor JCAD</Czech>
             <French>Détecteur de produits chimiques JCAD</French>
+            <Spanish>Detector Químico JCAD</Spanish>
             <Italian>Rilevatore chimico JCAD</Italian>
             <German>JCAD Chemiedetektor</German>
             <Japanese>JCAD 化学剤検知器</Japanese>
             <Chinese>JCAD 化學偵測器</Chinese>
             <Chinesesimp>JCAD化学检测仪</Chinesesimp>
             <Dutch>JCAD Chemische detector</Dutch>
+            <Turkish>KAT toksik kimyasallarını tespit etmek için kullanılır</Turkish>
         </Key>
         <Key ID="STR_KAT_Chemical_ChemicalDetector_Menu">
             <English>JCAD</English>
             <Czech>JCAD</Czech>
             <French>JCAD</French>
+            <Spanish>JCAD</Spanish>
             <Italian>JCAD</Italian>
             <German>JCAD</German>
             <Japanese>JCAD</Japanese>
             <Chinese>JCAD</Chinese>
             <Chinesesimp>JCAD</Chinesesimp>
             <Dutch>JCAD</Dutch>
+            <Turkish>JCAD</Turkish>
         </Key>
         <Key ID="STR_KAT_Chemical_ChemicalDetector_Off">
             <English>OFF</English>
             <Czech>OFF</Czech>
             <French>ÉTEINT</French>
+            <Spanish>OFF</Spanish>
             <Italian>Spento</Italian>
             <German>AUS</German>
             <Japanese>オフ</Japanese>
             <Chinese>關閉</Chinese>
             <Chinesesimp>关闭</Chinesesimp>
             <Dutch>UIT</Dutch>
+            <Turkish>KAPALI</Turkish>
         </Key>
         <Key ID="STR_KAT_Chemical_DisableDetectorSound">
             <English>Disable Warning Tone</English>
             <Czech>Vypnout tón varování</Czech>
             <French>Désactiver les avertissements sonores</French>
+            <Spanish>Desactivar Tono de Advertencia</Spanish>
             <Italian>Disabilita il segnale acustico d'avviso</Italian>
             <German>Warnton ausschalten</German>
             <Japanese>警告音を無効化</Japanese>
             <Chinese>停用警告音</Chinese>
             <Chinesesimp>禁用警告音</Chinesesimp>
             <Dutch>Waarschuwingstoon uitschakelen</Dutch>
+            <Turkish>Uyarı sesini kapat</Turkish>
         </Key>
         <Key ID="STR_KAT_Chemical_EnableDetector">
             <English>Turn On Detector</English>
             <Czech>Zapnout detektor</Czech>
             <French>Mise en marche du détecteur</French>
+            <Spanish>Encender Detector</Spanish>
             <Italian>Attiva il rilevatore</Italian>
             <German>Detektor einschalten</German>
             <Japanese>検知器をつける</Japanese>
             <Chinese>打開探測器</Chinese>
             <Chinesesimp>打开探测器</Chinesesimp>
             <Dutch>Detector aanzetten</Dutch>
+            <Turkish>Dedektörü aç</Turkish>
         </Key>
         <Key ID="STR_KAT_Chemical_EnableDetectorSound">
             <English>Enable Warning Tone</English>
             <Czech>Povolit tón varování</Czech>
             <French>Activer les avertissements sonores</French>
+            <Spanish>Activar Tono de Advertencia</Spanish>
             <Italian>Abilita il segnale acustico d'avviso</Italian>
             <German>Warnton einschalten</German>
             <Japanese>警告音を有効化</Japanese>
             <Chinese>啟用警告音</Chinese>
             <Chinesesimp>启用警告音</Chinesesimp>
             <Dutch>Waarschuwingstoon inschakelen</Dutch>
+            <Turkish>Uyarı sesini aç</Turkish>
         </Key>
         <Key ID="STR_KAT_Chemical_GasBox_Displayname">
             <English>[ACE] 82mm Gas Rounds Box</English>
@@ -162,6 +180,7 @@
             <Chinesesimp>[ACE]82毫米燃气轮箱</Chinesesimp>
             <Finnish>[ACE] 82mm kaasulaastin kuorilaatikko</Finnish>
             <Dutch>[ACE] 82mm Gasgranatenkist</Dutch>
+            <Turkish>[ACE] 82mm Gaz Mermi Kutusu</Turkish>
         </Key>
         <Key ID="STR_KAT_Chemical_GasFilterItem">
             <English>Gas mask filter</English>
@@ -179,6 +198,7 @@
             <Chinesesimp>防毒面具过滤器</Chinesesimp>
             <Finnish>Kaasunaamariin suodatin</Finnish>
             <Dutch>Gasmasker filter</Dutch>
+            <Turkish>Gaz maskesi filtresi</Turkish>
         </Key>
         <Key ID="STR_KAT_Chemical_GasFilterItem_desc">
             <English>Replacement filter for gas mask</English>
@@ -196,6 +216,7 @@
             <Chinesesimp>更换防毒面具过滤器</Chinesesimp>
             <Finnish>Vaihtosuodatin kaasunaamariin</Finnish>
             <Dutch>Vervangend filter voor gasmaskers</Dutch>
+            <Turkish>Gaz maskesi için yedek filtre</Turkish>
         </Key>
         <Key ID="STR_KAT_Chemical_GasModule_Displayname">
             <English>Create contaminated area / object</English>
@@ -213,6 +234,7 @@
             <Chinesesimp>创建污染区域/物体</Chinesesimp>
             <Finnish>Saastuta alue/esine</Finnish>
             <Dutch>Creëer gecontamineerd gebied / object</Dutch>
+            <Turkish>Gaz maskesi için yedek filtre</Turkish>
         </Key>
         <Key ID="STR_KAT_Chemical_GasModule_SealLeak">
             <English>Seal leak</English>
@@ -230,6 +252,7 @@
             <Chinesesimp>密封泄漏</Chinesesimp>
             <Finnish>Tuki vuoto</Finnish>
             <Dutch>Dicht lek</Dutch>
+            <Turkish>Sızıntıyı kapat</Turkish>
         </Key>
         <Key ID="STR_KAT_Chemical_GasModule_createContaminatedObject">
             <English>You are about to create a contaminated Object.</English>
@@ -247,6 +270,7 @@
             <Chinesesimp>您将创建一个受污染的对象。</Chinesesimp>
             <Finnish>Olet saastuttamassa esineen.</Finnish>
             <Dutch>Je staat op het punt een gecontamineerd object te creëeren.</Dutch>
+            <Turkish>Kontamine bir nesne oluşturmak üzeresiniz.</Turkish>
         </Key>
         <Key ID="STR_KAT_Chemical_GasModule_createContaminatedZone">
             <English>You are about to create a contaminated Zone.</English>
@@ -264,6 +288,7 @@
             <Chinesesimp>您将创建一个污染区。</Chinesesimp>
             <Finnish>Olet saastuttamassa alueen.</Finnish>
             <Dutch>Je staat op het punt om een gecontamineerd gebied te creëeren.</Dutch>
+            <Turkish>Kontamine bir bölge oluşturmak üzeresiniz.</Turkish>
         </Key>
         <Key ID="STR_KAT_Chemical_GasModule_description">
             <English>Radius around the module which is filled with gas.</English>
@@ -281,6 +306,7 @@
             <Chinesesimp>充满毒气的模块周围的半径。</Chinesesimp>
             <Finnish>Kaasulla täytetyn alueen ympärillä oleva säde</Finnish>
             <Dutch>Radius om de module dat gevuld is met gas.</Dutch>
+            <Turkish>Modül etrafındaki gazla dolu yarıçap.</Turkish>
         </Key>
         <Key ID="STR_KAT_Chemical_GasModule_max_radius_dcs">
             <English>The Maximum Range is a range around the Minimal Range where the gas is less lethal and you have a longer chance of survival.(distance from module to outer ring)</English>
@@ -298,6 +324,7 @@
             <Chinesesimp>最大射程是最小射程附近的一个范围，在这个范围内，毒气的致命性较低，你有更长的生存机会。（模块到外环的距离）</Chinesesimp>
             <Finnish>Maksimietäisyys on vähimmäisalue, jossa kaasu on vähemmän tappava ja sinulla on pidempi mahdollisuus selviytyä. (etäisyys moduulista ulkorenkaaseen)</Finnish>
             <Dutch>Het maximaal bereik is het bereik om het minimale bereik waar het gas minder dodelijk is, en je een langere overlevings hebt. (afstand van module tot buitenste ring)</Dutch>
+            <Turkish>Maksimum Menzil, minimum menzilin dışındaki, gazın daha az ölümcül olduğu ve hayatta kalma şansının daha yüksek olduğu alandır. (modülden dış halkaya olan mesafe)</Turkish>
         </Key>
         <Key ID="STR_KAT_Chemical_GasModule_placeModuleOnObject">
             <English>To create a contaminated object place the module on a empty object.</English>
@@ -315,6 +342,7 @@
             <Chinesesimp>要创建受污染的对象，请将模块放置在空对象上。</Chinesesimp>
             <Finnish>Luodaksesi saastuneen objektin aseta moduuli tyhjälle objektille.</Finnish>
             <Dutch>Om een gecontamineerd object te creëeren, moet je de module op een leeg object plaatsen.</Dutch>
+            <Turkish>Kontamine bir nesne oluşturmak için modülü boş bir nesnenin üzerine yerleştirin.</Turkish>
         </Key>
         <Key ID="STR_KAT_Chemical_HydraGas_DisplayName">
             <English>Hydra GAS 19x</English>
@@ -332,6 +360,7 @@
             <Chinesesimp>九头蛇毒气 19x</Chinesesimp>
             <Finnish>Hydra KAASU 19x</Finnish>
             <Dutch>Hydra GAS 19x</Dutch>
+            <Turkish>Hydra GAS 19x</Turkish>
         </Key>
         <Key ID="STR_KAT_Chemical_HydraGas_ShortName">
             <English>70mm GAS</English>
@@ -349,6 +378,7 @@
             <Chinesesimp>70mm毒气</Chinesesimp>
             <Finnish>70mm KAASU</Finnish>
             <Dutch>70mm GAS</Dutch>
+            <Turkish>70mm Gaz</Turkish>
         </Key>
         <Key ID="STR_KAT_Chemical_HydraGas_desc">
             <English>Unguided rockets with Toxic-gas warhead.</English>
@@ -366,6 +396,7 @@
             <Chinesesimp>装有有毒气体弹头的非制导火箭。</Chinesesimp>
             <Finnish>Ohjaamattomat raketit, joissa on myrkyllinen kaasukärje</Finnish>
             <Dutch>Ongestuurde rakketen met een gifgas kop.</Dutch>
+            <Turkish>Toksik gaz başlıklı güdümsüz roketler.</Turkish>
         </Key>
         <Key ID="STR_KAT_Chemical_Intoxication">
             <English>Intoxication</English>
@@ -383,15 +414,18 @@
             <Chinesesimp>中毒</Chinesesimp>
             <Finnish>Päihtymys</Finnish>
             <Dutch>Intoxicatie</Dutch>
+            <Turkish>Zehirlenme</Turkish>
         </Key>
         <Key ID="STR_KAT_Chemical_Lvl0_Gas">
             <English>Tear gas (Level 0)</English>
             <Czech>Slzný plyn (Level 0)</Czech>
             <French>Gaz lacrymogène (Niveau 0)</French>
+            <Spanish>Gas lacrimógeno (Nivel 0)</Spanish>
             <Italian>Gas Lacrimogeno (Livello 0)</Italian>
             <German>Tränengas (Level 0)</German>
             <Japanese>催涙ガス (レベル 0)</Japanese>
             <Dutch>Traangas (level 0)</Dutch>
+            <Turkish>Göz yaşartıcı gaz (Seviye 0)</Turkish>
         </Key>
         <Key ID="STR_KAT_Chemical_Lvl1_Gas">
             <English>Toxic gas (Level 1)</English>
@@ -409,6 +443,7 @@
             <Chinesesimp>有毒气体（1级）</Chinesesimp>
             <Finnish>Myrkyllinen kaasu (taso 1)</Finnish>
             <Dutch>Gifgas (Level 1)</Dutch>
+            <Turkish>Toksik Gaz (Seviye 1)</Turkish>
         </Key>
         <Key ID="STR_KAT_Chemical_M43_DisplayName_1x">
             <English>M43 BZ LGB</English>
@@ -426,6 +461,7 @@
             <Chinesesimp>M43 BZ LGB</Chinesesimp>
             <Finnish>M43 BZ LGB</Finnish>
             <Dutch>M43 BZ LGB</Dutch>
+            <Turkish>M43 BZ LGB</Turkish>
         </Key>
         <Key ID="STR_KAT_Chemical_M43_DisplayName_2x">
             <English>2x M43 BZ LGB</English>
@@ -443,6 +479,7 @@
             <Chinesesimp>2x M43 BZ轻型卡车</Chinesesimp>
             <Finnish>2x M43 BZ LGB</Finnish>
             <Dutch>2x M43 BZ LGB</Dutch>
+            <Turkish>2x M43 BZ LGB</Turkish>
         </Key>
         <Key ID="STR_KAT_Chemical_M43_ShortName_1x">
             <English>M43 BZ LGB</English>
@@ -460,6 +497,7 @@
             <Chinesesimp>M43 BZ LGB</Chinesesimp>
             <Finnish>M43 BZ LGB</Finnish>
             <Dutch>M43 BZ LGB</Dutch>
+            <Turkish>M43 BZ LGB</Turkish>
         </Key>
         <Key ID="STR_KAT_Chemical_M43_ShortName_2x">
             <English>2x M43 BZ LGB</English>
@@ -477,6 +515,7 @@
             <Chinesesimp>2x M43 BZ轻型卡车</Chinesesimp>
             <Finnish>2x M43 BZ LGB</Finnish>
             <Dutch>2x M43 BZ LGB</Dutch>
+            <Turkish>2x M43 BZ LGB</Turkish>
         </Key>
         <Key ID="STR_KAT_Chemical_M43_desc">
             <English>Laser Guided Cluster Bomb with a chemical gas payload.</English>
@@ -494,6 +533,7 @@
             <Chinesesimp>带有化学毒气有效载荷的激光制导集束炸弹。</Chinesesimp>
             <Finnish>Laserohjattu rypälepommi kemiallisen kaasun hyötykuormalla</Finnish>
             <Dutch>Laser gestuurde clusterbom met een chemisch gas als lading.</Dutch>
+            <Turkish>Kimyasal gaz yüklü lazer güdümlü misket bombası.</Turkish>
         </Key>
         <Key ID="STR_KAT_Chemical_M7A3_CSGrenade_DisplayName">
             <English>M7A3 Riot CS gas grenade</English>
@@ -511,6 +551,7 @@
             <Chinesesimp>M7A3防暴CS瓦斯手榴弹</Chinesesimp>
             <Finnish>M7A3 CS kaasukranaatti</Finnish>
             <Dutch>M7A3 CS Traangasgranaat</Dutch>
+            <Turkish>M7A3 CS İsyan Kontrol Gaz Bombası</Turkish>
         </Key>
         <Key ID="STR_KAT_Chemical_M7A3_CSGrenade_ShortName">
             <English>M7A3</English>
@@ -528,6 +569,7 @@
             <Chinesesimp>M7A3</Chinesesimp>
             <Finnish>M7A3</Finnish>
             <Dutch>M7A3</Dutch>
+            <Turkish>M7A3</Turkish>
         </Key>
         <Key ID="STR_KAT_Chemical_M7A3_DcsShort">
             <English>The M7A3 CS gas grenade is a non-lethal tear gas grenade that causes severe burning of the mucous membranes and eyes on contact.</English>
@@ -545,17 +587,20 @@
             <Chinesesimp>M7A3 CS毒气手榴弹是一种非致命性催泪瓦斯手榴弹，接触后会严重灼伤粘膜和眼睛。</Chinesesimp>
             <Finnish>M7A3 CS -kaasukranaatti on ei-tappava kyynelkaasukranaatti, joka koskettaa limakalvoja ja silmiä vakavasti.</Finnish>
             <Dutch>The M7A3 CS gasgranaat is een niet-dodelijke traangasgranaat dat op contact een ernstig brandend gevoel in het slijmvlies en de ogen creëerd.</Dutch>
+            <Turkish>M7A3 CS gaz bombası, temas halinde mukozalarda ve gözlerde şiddetli yanmaya neden olan, öldürücü olmayan bir göz yaşartıcı gaz bombasıdır.</Turkish>
         </Key>
         <Key ID="STR_KAT_Chemical_PutOnGasMask">
             <English>Put on gas mask</English>
             <Czech>Nasadit Plynovou Masku</Czech>
             <French>Mettre le masque à gaz</French>
+            <Spanish>Colocarse la máscara antigás</Spanish>
             <Italian>Indossa la maschera antigas</Italian>
             <German>Gasmaske aufsetzen</German>
             <Japanese>ガスマスクを装着</Japanese>
             <Chinese>戴上防毒面具</Chinese>
             <Chinesesimp>戴上防毒面具</Chinesesimp>
             <Dutch>Zet gasmasker op</Dutch>
+            <Turkish>Gaz maskesini tak</Turkish>
         </Key>
         <Key ID="STR_KAT_Chemical_SETTING_AVAIL_GASMASK">
             <English>Accepted gas masks</English>
@@ -573,6 +618,7 @@
             <Chinesesimp>被接受的防毒面具</Chinesesimp>
             <Finnish>Hyväksytyt kaasunaamarit</Finnish>
             <Dutch>Geaccepteerde gasmaskers</Dutch>
+            <Turkish>Kabul edilen gaz maskeleri</Turkish>
         </Key>
         <Key ID="STR_KAT_Chemical_SETTING_AVAIL_GASMASK_DISC">
             <English>Enter here the classname of the masks that should work with the system.</English>
@@ -590,6 +636,7 @@
             <Chinesesimp>在此处输入应与系统配合使用的掩码的类名。</Chinesesimp>
             <Finnish>Anna niiden maskien luokan nimet, joiden pitäisi toimia järjestelmän kanssa</Finnish>
             <Dutch>Voer hier de classnames toe van gasmaskers die zouden moeten werken met het systeem.</Dutch>
+            <Turkish>Sistemle çalışması gereken maskelerin sınıf adlarını buraya girin.</Turkish>
         </Key>
         <Key ID="STR_KAT_Chemical_SETTING_GASMASK_DURABILITY">
             <English>Gas masks durability</English>
@@ -607,6 +654,7 @@
             <Chinesesimp>防毒面具耐用性</Chinesesimp>
             <Finnish>Kaasunaamarien kestävyys</Finnish>
             <Dutch>Levensduur van gasmaskers</Dutch>
+            <Turkish>Gaz maskesi dayanıklılığı</Turkish>
         </Key>
         <Key ID="STR_KAT_Chemical_SETTING_GASMASK_DURABILITY_DISC">
             <English>Determines how long you can stand in the gas with a gas mask without getting infected.</English>
@@ -624,64 +672,79 @@
             <Chinesesimp>确定戴防毒面具在毒气中站立多长时间而不会感染。</Chinesesimp>
             <Finnish>Määrittää, kuinka kauan voit seistä kaasussa kaasunaamarin kanssa vaikuttamatta siihen</Finnish>
             <Dutch>Bepaald hoelang je in gas kan staan zonder dat je geïnfecteerd raakt.</Dutch>
+            <Turkish>Gaz maskesi takılıyken enfekte olmadan gaz içinde ne kadar süre dayanabileceğinizi belirler.</Turkish>
         </Key>
         <Key ID="STR_KAT_Chemical_SETTING_dropWeaponChance">
             <English>Drop Weapon Chance</English>
             <Czech>Šance na upuštění zbraně</Czech>
             <French>Chance de lâcher l'arme</French>
+            <Spanish>Probabilidad de Soltar el Arma</Spanish>
             <Italian>Possibilità di perdere l'arma</Italian>
             <German>Chance, die Waffe unter Tränengas zu verlieren</German>
             <Japanese>武器を落とす確率</Japanese>
             <Chinese>丟下武器機會</Chinese>
             <Chinesesimp>投掷武器机会</Chinesesimp>
             <Dutch>Kans om wapen te laten vallen</Dutch>
+            <Turkish>Silah düşürme ihtimali</Turkish>
         </Key>
         <Key ID="STR_KAT_Chemical_SETTING_dropWeaponChance_DESC">
             <English>Determines chance for dropping weapon while in tear gas</English>
             <Czech>Určuje šanci na upuštění zbraně v přítomnosti slzného plynu</Czech>
             <French>Détermine les chances de lâcher l'arme en cas d'exposition aux gaz lacrymogènes.</French>
+            <Spanish>Determina la probabilidad de soltar el arma mientras está expuesto a gas lacrimógeno</Spanish>
             <Italian>Determina la probabilità di perdere l'arma mentre si è nel gas lacrimogeno</Italian>
             <German>Bestimmt die Wahrscheinlichkeit, die Waffe zu verlieren, während man unter dem Einfluss von Tränengas steht</German>
             <Japanese>催涙ガスの中で武器を落とす確率を定義します</Japanese>
             <Chinese>確定在催淚瓦斯中丟下武器的機率</Chinese>
             <Chinesesimp>确定在催泪瓦斯中投掷武器的几率</Chinesesimp>
             <Dutch>Bepaald de kans om je wapen te laten vallen terwijl je wordt blootgesteld aan traangas</Dutch>
+            <Turkish>Göz yaşartıcı gaz içindeyken silah düşürme olasılığını belirler</Turkish>
         </Key>
         <Key ID="STR_KAT_Chemical_SETTING_gasMaskSoundVolume">
             <English>Gas Mask Sound Volume</English>
             <Czech>Hlasitost zvuků plynové masky</Czech>
             <French>Volume sonore du masque à gaz</French>
+            <Spanish>Volumen del sonido con la máscara antigás</Spanish>
             <Italian>Volume effetti maschera antigas</Italian>
             <German>Lautstärke der Gasmaske</German>
             <Japanese>ガスマスクの音量</Japanese>
             <Chinese>防毒面具音量</Chinese>
             <Chinesesimp>防毒面具音量</Chinesesimp>
             <Dutch>Volume van gasmasker</Dutch>
+            <Turkish>Gaz maskesi ses seviyesi</Turkish>
         </Key>
         <Key ID="STR_KAT_Chemical_SETTING_gasMaskSoundVolume_DESC">
             <English>Determines how loud the breathing sounds are when using the gas mask</English>
             <Czech>Určuje, jak hlasité jsou dýchací zvuky při používání plynové masky</Czech>
             <French>Détermine l'intensité des bruits respiratoires lors de l'utilisation du masque à gaz.</French>
+            <Spanish>Determina qué tan fuertes son los sonidos de respiración al usar la máscara antigás</Spanish>
             <Italian>Determina quanto è alto il volume del respiro mentre si utilizza la maschera antigas</Italian>
             <German>Bestimmt die Lautstärke der Atemgeräusche während des Tragens einer Gasmaske</German>
             <Japanese>ガスマスク使用時の呼吸音の大きさを定義します</Japanese>
             <Chinese>確定使用防毒面具時呼吸聲的音量</Chinese>
             <Chinesesimp>确定使用防毒面具时呼吸声的音量</Chinesesimp>
             <Dutch>Bepaald hoe luid de ademhalingsgeluiden zijn terwijl er een gasmasker gebruikt wordt</Dutch>
+            <Turkish>Gaz maskesi kullanırken nefes seslerinin ne kadar yüksek olacağını belirler</Turkish>
         </Key>
         <Key ID="STR_KAT_Chemical_SETTING_gasMaskStaminaLoss">
             <English>Enable Stamina Loss when using Gas Mask</English>
             <Czech>Povolit ztrátu staminy při použití plynové masky</Czech>
             <French>Perte d'endurance avec l'utilisation du masque à gaz</French>
+            <Spanish>Activar Cansancio al usar la Máscara Antigás</Spanish>
             <Italian>Abilità la perdita di Resistenza mentre si usa la maschera antigas</Italian>
             <German>Ausdauerverlust bei der Nutzung von Gasmasken aktivieren</German>
             <Japanese>ガスマスク使用時のスタミナ減少を有効化</Japanese>
             <Chinese>啟用使用防毒面具時的體力流失</Chinese>
             <Dutch>Uithoudingsvermogenverlies bij gebruik van een gasmasker inschakelen</Dutch>
+            <Turkish>Gaz maskesi kullanırken dayanıklılık kaybını etkinleştir</Turkish>
         </Key>
         <Key ID="STR_KAT_Chemical_SETTING_gasMaskStaminaLoss_DESC">
             <English>If you wear a gasmask you will lose stamina more quickly</English>
+            <French>Si vous portez un masque à gaz, vous perdrez plus rapidement votre endurance.</French>
+            <Spanish>Si llevas máscara antigás perderás resistencia más rápidamente</Spanish>
             <German>Wenn man eine Gasmaske trägt, verliert man mehr Ausdauer</German>
+            <Japanese>ガスマスクを着用するとスタミナがより早く失われます</Japanese>
+            <Turkish>Gaz maskesi kullanırken dayanıklılık kaybını etkinleştir</Turkish>
         </Key>
         <Key ID="STR_KAT_Chemical_SETTING_infectionTime">
             <English>Time until infection</English>
@@ -699,6 +762,7 @@
             <Chinesesimp>感染前的时间</Chinesesimp>
             <Finnish>Aikaa tartunnan saamiseen</Finnish>
             <Dutch>Tijd tot infectie</Dutch>
+            <Turkish>Enfeksiyona kadar geçen süre</Turkish>
         </Key>
         <Key ID="STR_KAT_Chemical_SETTING_infectionTime_DESC">
             <English>Time you can stand in the gas before you get infected or need a gas mask.</English>
@@ -716,39 +780,46 @@
             <Chinesesimp>在感染或需要防毒面具之前，你可以站在毒气中。</Chinesesimp>
             <Finnish>Aika, jonka voit seistä kaasussa, ennen kuin sinulla on vaikutusta tai tarvitset kaasunaamaria</Finnish>
             <Dutch>Tijd dat je in gas kan staan voordat je geïnfecteerd raakt of een gasmasker nodig hebt</Dutch>
+            <Turkish>Enfekte olmadan veya gaz maskesine ihtiyaç duymadan önce gaz içinde kalabileceğiniz süre</Turkish>
         </Key>
         <Key ID="STR_KAT_Chemical_SETTING_showPoisoning">
             <English>Show Poisoning</English>
             <Czech>Zobrazit otravu</Czech>
             <French>Afficher les intoxications</French>
+            <Spanish>Mostrar Envenenamiento</Spanish>
             <Italian>Visualizza avvelenamento</Italian>
             <German>Vergiftungen anzeigen</German>
             <Japanese>中毒状態を表示</Japanese>
             <Chinese>顯示中毒</Chinese>
             <Chinesesimp>显示中毒</Chinesesimp>
             <Dutch>Intoxicaties tonen</Dutch>
+            <Turkish>Zehirlenmeyi göster</Turkish>
         </Key>
         <Key ID="STR_KAT_Chemical_SETTING_showPoisoning_DESC">
             <English>Determines if poisoning and intoxication is shown in the medical menu</English>
             <Czech>Určuje, zda otrava a intoxikace budou zobrazovány ve zdravotnické tabulce</Czech>
             <French>Détermine si l'empoisonnement et l'intoxication sont affichés dans le menu médical</French>
+            <Spanish>Determina si el envenenamiento e intoxicación se muestran en el menú médico</Spanish>
             <Italian>Determina se avvelenamento ed intossicazione sono visualizzati nel menù medico</Italian>
             <German>Bestimmt, ob Vergiftungen im Behandlungsmenü angezeigt werden</German>
             <Japanese>中毒(poisoningとintoxication)状態を医療メニューに表示するかどうかを定義します</Japanese>
             <Chinese>確定醫療選單中是否顯示中毒</Chinese>
             <Chinesesimp>确定医疗菜单中是否显示中毒</Chinesesimp>
             <Dutch>Bepaald of intoxicaties zichtbaar zijn in het medische menu</Dutch>
+            <Turkish>Zehirlenme durumunun medikal menüde gösterilip gösterilmeyeceğini belirler</Turkish>
         </Key>
         <Key ID="STR_KAT_Chemical_TakeOffGasMask">
             <English>Take off gas mask</English>
             <Czech>Sundat Plynovou Masku</Czech>
             <French>Enlever le masque à gaz</French>
+            <Spanish>Quitarse la máscara antigás</Spanish>
             <Italian>Rimuovi maschera antigas</Italian>
             <German>Gasmaske abnehmen</German>
             <Japanese>ガスマスクを外す</Japanese>
             <Chinese>摘下防毒面具</Chinese>
             <Chinesesimp>摘下防毒面具</Chinesesimp>
             <Dutch>Gasmasker afzetten</Dutch>
+            <Turkish>Gaz maskesini çıkar</Turkish>
         </Key>
         <Key ID="STR_KAT_Chemical_ToxicGas_DisplayName">
             <English>82mm Toxic Gas Round</English>
@@ -766,6 +837,7 @@
             <Chinesesimp>82mm圆形有毒气体</Chinesesimp>
             <Finnish>82 mm myrkyllinen kaasulaastikuori</Finnish>
             <Dutch>82mm Gifgasgranaat</Dutch>
+            <Turkish>82mm Toksik Gaz Mermisi</Turkish>
         </Key>
         <Key ID="STR_KAT_Chemical_ToxicGas_MFDNAME">
             <English>Toxic gas</English>
@@ -783,6 +855,7 @@
             <Chinesesimp>有毒气体</Chinesesimp>
             <Finnish>Myrkyllinen kaasu</Finnish>
             <Dutch>Gifgas</Dutch>
+            <Turkish>Toksik gaz</Turkish>
         </Key>
         <Key ID="STR_KAT_Chemical_TriWire_Gas_Desc">
             <English>Type: Tripwire gas - Sprays a poisonous gas when triggered.&lt;br /&gt;Rounds: 1&lt;br /&gt;Used on: Ground</English>
@@ -800,6 +873,7 @@
             <Chinesesimp>类型：三线制气体-触发时喷出有毒气体&lt;br/&gt;轮次：1&lt;br/&gt;用于：地面</Chinesesimp>
             <Finnish>Tyyppi: kaasu-käsikranaatin laukaisulanka - suihkuttaa myrkyllistä kaasua laukaisussa &lt;br/&gt;Laukut: 1 &lt;br/&gt;Käytetty: maassa</Finnish>
             <Dutch>Type: Gas struikeldraad - Sproeit een giftig gas wanneer geactiveerd.&lt;br/&gt;Ladingen: 1&lt;br/&gt;Gebruik op: De grond</Dutch>
+            <Turkish>Tür: Tetik telli gaz – Tetiklendiğinde zehirli gaz yayar.&lt;br /&gt;Mermi: 1&lt;br /&gt;Kullanım: Zemin</Turkish>
         </Key>
         <Key ID="STR_KAT_Chemical_TriWire_Gas_Name">
             <English>Tripwire Gas</English>
@@ -817,6 +891,7 @@
             <Chinesesimp>Tripwire毒气</Chinesesimp>
             <Finnish>Kaasun ja kranaatin laukaisulanka</Finnish>
             <Dutch>Gas struikeldraad</Dutch>
+            <Turkish>Tetik Telli Gaz</Turkish>
         </Key>
         <Key ID="STR_KAT_Chemical_UI_gasType">
             <English>Gas Type:</English>
@@ -834,6 +909,7 @@
             <Chinesesimp>毒气类型：</Chinesesimp>
             <Finnish>Kaasutyyppi</Finnish>
             <Dutch>Gas type:</Dutch>
+            <Turkish>Gaz Türü:</Turkish>
         </Key>
         <Key ID="STR_KAT_Chemical_UI_max_range">
             <English>Maximum Range.</English>
@@ -851,6 +927,7 @@
             <Chinesesimp>最大范围。</Chinesesimp>
             <Finnish>Suurin kantama</Finnish>
             <Dutch>Maximaal bereik.</Dutch>
+            <Turkish>Maksimum Menzil.</Turkish>
         </Key>
         <Key ID="STR_KAT_Chemical_UI_sealable">
             <English>Is sealable?</English>
@@ -868,6 +945,7 @@
             <Chinesesimp>可密封吗？</Chinesesimp>
             <Finnish>Onko se suljettavissa?</Finnish>
             <Dutch>Is dichtbaar?</Dutch>
+            <Turkish>Sızdırmaz mı?</Turkish>
         </Key>
         <Key ID="STR_KAT_Chemical_UI_sealable_tooltip">
             <English>ONLY WORKS IF LOGIC IS SYNCED WITH AN OBJECT!</English>
@@ -885,6 +963,7 @@
             <Chinesesimp>只有当逻辑与对象同步时才有效！</Chinesesimp>
             <Finnish>TOIMII VAIN JOS LOGIIKKA SYNKRONOIDAAN OBJEKTIN KANSSA!</Finnish>
             <Dutch>WERKT ALLEEN ALS LOGICA GESYNCHRONISEERD IS MET EEN OBJECT!</Dutch>
+            <Turkish>Sızdırmaz mı?</Turkish>
         </Key>
         <Key ID="STR_KAT_Chemical_UI_selectGas">
             <English>Select Gas:</English>
@@ -902,14 +981,17 @@
             <Chinesesimp>选择毒气：</Chinesesimp>
             <Finnish>Valitse Kaasu</Finnish>
             <Dutch>Selecteer gas:</Dutch>
+            <Turkish>Gaz seç:</Turkish>
         </Key>
         <Key ID="STR_KAT_Chemical_cba_name">
             <English>KAT - ADV Medical: Chemical</English>
             <French>KAT - ADV Medical : Chimique</French>
+            <Spanish>KAT - ADV Medical: Química</Spanish>
             <Italian>KAT - ADV Medica - Agenti Chimici</Italian>
             <German>KAT - ADV Medical: Chemie</German>
             <Japanese>KAM - 化学戦 (Chemical)</Japanese>
             <Dutch>KAT - ADV Medical: Chemisch</Dutch>
+            <Turkish>KAT – Gelişmiş Tıp: Kimyasal</Turkish>
         </Key>
         <Key ID="STR_KAT_Chemical_giveGasMask_action">
             <English>Put on gas mask</English>
@@ -927,6 +1009,7 @@
             <Chinesesimp>戴上防毒面具</Chinesesimp>
             <Finnish>Laita kaasunaamari päälle</Finnish>
             <Dutch>Doe gasmasker op</Dutch>
+            <Turkish>Gaz maskesini tak</Turkish>
         </Key>
         <Key ID="STR_KAT_Chemical_giveGasMask_progress">
             <English>Put on gas mask...</English>
@@ -944,6 +1027,7 @@
             <Chinesesimp>戴上防毒面具…</Chinesesimp>
             <Finnish>Kaasunaamari on laitettu päähän</Finnish>
             <Dutch>Gasmasker wordt opgezet...</Dutch>
+            <Turkish>Gaz maskesi takılıyor...</Turkish>
         </Key>
         <Key ID="STR_KAT_Chemical_sealLeak">
             <English>Seal leak</English>
@@ -961,6 +1045,7 @@
             <Chinesesimp>密封泄漏</Chinesesimp>
             <Finnish>Tiivisteen vuoto</Finnish>
             <Dutch>Dicht lek</Dutch>
+            <Turkish>Gaz maskesini tak</Turkish>
         </Key>
         <Key ID="STR_KAT_Chemical_sealantItem">
             <English>Sealant tube</English>
@@ -978,6 +1063,7 @@
             <Chinesesimp>密封胶管</Chinesesimp>
             <Finnish>Tiivisteputki</Finnish>
             <Dutch>Afdichtmiddel buis</Dutch>
+            <Turkish>Sızdırmazlık tüpü</Turkish>
         </Key>
         <Key ID="STR_KAT_Chemical_sealantItem_desc">
             <English>Sealant which is used to seal objects when e.g. a toxic substance leaks out</English>
@@ -995,6 +1081,7 @@
             <Chinesesimp>密封剂，用于在有毒物质泄漏时密封物体</Chinesesimp>
             <Finnish>Tiiviste, jota käytetään esineiden tiivistämiseen, kun myrkyllistä ainetta vuotaa ulos</Finnish>
             <Dutch>Afdichtmiddel dat gebruikt wordt om een object te dichten wanneer er bijvoorbeeld een giftige stof lekt</Dutch>
+            <Turkish>Örneğin toksik bir madde sızdığında nesneleri kapatmak için kullanılan sızdırmazlık maddesi</Turkish>
         </Key>
     </Package>
 </Project>

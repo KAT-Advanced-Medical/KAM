@@ -33,8 +33,8 @@ private _actions = [];
                 "",
                 {
                     params ["_target", "", "_parameter"];
-                    private _pos = getArray (configFile >> "CfgVehicles" >> typeOf (_parameter select 0) >> "kat_stretcherPos");
-                    private _vector = getArray (configFile >> "CfgVehicles" >> typeOf (_parameter select 0) >> "kat_stretcherVector");
+                    private _pos = getArray (configOf (_parameter select 0) >> "kat_stretcherPos");
+                    private _vector = getArray (configOf (_parameter select 0) >> "kat_stretcherVector");
                     _target attachTo [(_parameter select 0), _pos];
                     _target setVectorDirAndUp _vector;
                 },

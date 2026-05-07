@@ -5,23 +5,27 @@
             <English>Enables opioid effect on ketamine, fentanyl and pervitin</English>
             <Czech>Povolit opioidní efekty ketaminu, fentanylu a pervitinu</Czech>
             <French>Permet un effet opioïde sur la kétamine, le fentanyl et la pervitine</French>
+            <Spanish>Activa el efecto de los opioides sobre ketamina, fentanilo y pervitina</Spanish>
             <Italian>Abilita l'effetto degli oppioidi su ketamina, fentanil e pervitina</Italian>
             <German>Ermöglicht eine Opioidwirkung auf Ketamin, Fentanyl und Pervitin</German>
             <Japanese>ケタミン、フェンタニル、ペルビチンなどでオピオイドの効果を有効にします</Japanese>
             <Chinese>啟用 K他命(氯胺酮)、芬太尼、冰毒(甲基苯丙胺) 等 鴉片類藥物的作用</Chinese>
             <Chinesesimp>使阿片类药物对氯胺酮、芬太尼和帕维汀产生作用</Chinesesimp>
             <Dutch>Maakt het mogelijk om opioid-effecten te verkrijgen bij het gebruik van ketamine, fentanyl en pervitin</Dutch>
+            <Turkish>Ketamin, fentanil ve pervitin üzerinde opioid etkisini etkinleştirir</Turkish>
         </Key>
         <Key ID="STR_KAT_Feedback_SETTING_OpioidEffect_display">
             <English>Enable opioid effect</English>
             <Czech>Povolit opioidní efekty</Czech>
             <French>Activer l'effet opioïde</French>
+            <Spanish>Activar efecto de opioides</Spanish>
             <Italian>Abilita l'effetto degli oppioidi</Italian>
             <German>Opioidwirkung aktivieren</German>
             <Japanese>オピオイド効果を有効化</Japanese>
             <Chinese>啟用鴉片類藥物效果</Chinese>
             <Chinesesimp>启用阿片类药物作用</Chinesesimp>
             <Dutch>Zet opioid-effecten aan</Dutch>
+            <Turkish>Opioid etkisini etkinleştir</Turkish>
         </Key>
         <Key ID="STR_KAT_Feedback_SETTING_lowSpO2_DESC">
             <English>Lets you change the SpO2 Value at which you get the Flashing warning indicator and stamina loss effect</English>
@@ -39,6 +43,7 @@
             <Chinesesimp>允许您更改SpO2警告值，在该值下，您将获得闪烁警告指示器和耐力损失效果</Chinesesimp>
             <Finnish>Voit muuttaa SpO2-arvoa, jolla saat vilkkuvan varoituksen ja kestävyyden heikkenemisen</Finnish>
             <Dutch>Defineert de SpO2 waarde waarbij uithoudingsproblemen ontstaan en er een visueel pulseren effect getoond wordt</Dutch>
+            <Turkish>Yanıp sönen uyarı göstergesi ve dayanıklılık kaybı etkisinin başlayacağı SpO₂ değerini değiştirmenizi sağlar</Turkish>
         </Key>
         <Key ID="STR_KAT_Feedback_SETTING_lowSpO2_display">
             <English>Low SpO2 warning level</English>
@@ -56,14 +61,17 @@
             <Chinesesimp>低SpO2警告级别</Chinesesimp>
             <Finnish>Matala SpO2-varoitustaso</Finnish>
             <Dutch>Waarschuwingswaarde voor SpO2</Dutch>
+            <Turkish>Düşük SpO2 uyarı seviyesi</Turkish>
         </Key>
         <Key ID="STR_KAT_Feedback_cba_name">
             <English>KAT - ADV Medical: Feedback</English>
             <French>KAT - ADV Medical : Retour d'expérience</French>
+            <Spanish>KAT - ADV Medical: Feedback</Spanish>
             <Italian>KAT - ADV Medica: Riscontro</Italian>
             <German>KAT - ADV Medical: Feedback</German>
             <Japanese>KAM - フィードバック</Japanese>
             <Dutch>KAT - ADV Medical: Feedback</Dutch>
+            <Turkish>KAT – Gelişmiş Tıp: Geri Bildirim</Turkish>
         </Key>
     </Package>
 </Project>

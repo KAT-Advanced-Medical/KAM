@@ -48,6 +48,86 @@ missionNamespace setVariable [QGVAR(availGasmaskList), _array, true];
     true
 }, { false }, [24, [false, false, false]], false] call CBA_fnc_addKeybind;
 
+// Client-side particle tracking (all machines)
+GVAR(clientParticles) = createHashMap;
+
+[QGVAR(createZoneParticles), {
+    params ["_gasLogic", "_radius"];
+    if (isNull _gasLogic) exitWith {};  // zone removed before JIP fired
+    private _netId = netId _gasLogic;
+    if (_netId in GVAR(clientParticles)) exitWith {};  // idempotency guard
+
+    private _sourcePos = getPosATL _gasLogic;
+    private _particleObjects = [];
+
+    // Layer 1: Ground carpet — bulk mass, area-fill via setParticleRandom
+    private _carpet = "#particlesource" createVehicleLocal _sourcePos;
+    _carpet setParticleClass QGVAR(Toxic_Gas_Particles);
+    _carpet setParticleCircle [0, [0, 0, 0]];
+    _carpet setParticleRandom [
+        2,
+        [_radius, _radius, 0.3],
+        [0.3, 0.3, 0.05],
+        1, 0.3, [0.03, 0.03, 0.03, 0.1], 0, 0, 360
+    ];
+    _carpet setDropInterval 0.0035;
+    _carpet attachTo [_gasLogic, [0, 0, 0]];
+    _particleObjects pushBack _carpet;
+
+    // Layer 2: Drifting wisps — volumetric body with vertical lift
+    private _wisps = "#particlesource" createVehicleLocal _sourcePos;
+    _wisps setParticleClass QGVAR(Toxic_Gas_Wisps);
+    _wisps setParticleCircle [0, [0, 0, 0]];
+    _wisps setParticleRandom [
+        1,
+        [_radius * 0.7, _radius * 0.7, 0.5],
+        [0.2, 0.2, 0.3],
+        1, 0.3, [0, 0, 0, 0.05], 0, 0, 360
+    ];
+    _wisps setDropInterval 0.02;
+    _wisps attachTo [_gasLogic, [0, 0, 0]];
+    _particleObjects pushBack _wisps;
+
+    // Layer 3: Perimeter creep — circle emission with slight inward velocity
+    private _creep = "#particlesource" createVehicleLocal _sourcePos;
+    _creep setParticleClass QGVAR(Toxic_Gas_Particles);
+    _creep setParticleCircle [_radius * 0.95, [-0.4, -0.4, 0]];
+    _creep setParticleRandom [
+        2,
+        [1, 1, 0.2],
+        [0.2, 0.2, 0.05],
+        1, 0.2, [0, 0, 0, 0.1], 0, 0, 360
+    ];
+    _creep setDropInterval 0.025;
+    _creep attachTo [_gasLogic, [0, 0, 0]];
+    _particleObjects pushBack _creep;
+
+    GVAR(clientParticles) set [_netId, _particleObjects];
+}] call CBA_fnc_addEventHandler;
+
+[QGVAR(removeZoneParticles), {
+    params ["_gasLogicNetId"];
+    if !(_gasLogicNetId in GVAR(clientParticles)) exitWith {};
+    private _particleObjects = GVAR(clientParticles) deleteAt _gasLogicNetId;
+    { detach _x; deleteVehicle _x; } forEach _particleObjects;
+}] call CBA_fnc_addEventHandler;
+
+[QGVAR(csGrenadeEffect), {
+    params ["_projectile", "_timeToLive"];
+    if (isNull _projectile) exitWith {};
+    private _position = position _projectile;
+    private _particleSource = "#particlesource" createVehicleLocal _position;
+    _particleSource setParticleParams [
+        ["\A3\data_f\cl_basic",1,0,1], "", "Billboard",
+        1, 5, [0,0,0], [0,0,1], 5 + random 10, 0.05, 0.04, 0.05,
+        [1.5, 15.9], [[0.9294,0.9843,1,0.001], [0.9294,0.9843,1,0.1], [1,1,1,0]],
+        [0,0], 0.1, 0.08, "", "", _projectile
+    ];
+    _particleSource setParticleRandom [2.5, [0.5,0.5,0.2], [0.3,0.3,0.5], 1, 0, [0,0,0,0.06], 0, 0];
+    _particleSource setDropInterval (1 / 5);
+    [{deleteVehicle _this}, _particleSource, _timeToLive] call CBA_fnc_waitAndExecute;
+}] call CBA_fnc_addEventHandler;
+
 if (!isServer) exitWith {};
 
 GVAR(gasSources) = createHashMap;
@@ -104,6 +184,13 @@ GVAR(gasSources) = createHashMap;
         _source setVariable [QGVAR(sealable), true, true];
     };
 
+    // Gas particles are only created for toxic zones right now
+    if (_gasLevel != 0) then {
+        // Broadcast particle creation to all machines (JIP-safe)
+        private _effectsJipID = [QGVAR(createZoneParticles), [_gasLogic, _radius]] call CBA_fnc_globalEventJIP;
+        _gasLogic setVariable [QGVAR(effectsJipID), _effectsJipID];
+    };
+
     GVAR(gasSources) set [_hashedKey, [_gasLogic, _radius, _gasLevel, _condition, _conditionArgs]];
 }] call CBA_fnc_addEventHandler;
 
@@ -116,6 +203,15 @@ GVAR(gasSources) = createHashMap;
     };
 
     (GVAR(gasSources) deleteAt _hashedKey) params [["_gasLogic", objNull]];
+
+    // Cancel JIP so future joiners don't get particles for a removed zone
+    private _effectsJipID = _gasLogic getVariable [QGVAR(effectsJipID), ""];
+    if (_effectsJipID != "") then {
+        [_effectsJipID] call CBA_fnc_removeGlobalEventJIP;
+    };
+    // Tell all current machines to delete their local particles
+    // Must fire BEFORE deleteVehicle so netId is still valid on clients
+    [QGVAR(removeZoneParticles), [netId _gasLogic]] call CBA_fnc_globalEvent;
 
     detach _gasLogic;
     deleteVehicle _gasLogic;

@@ -43,7 +43,7 @@ playSound3D [QPATHTOF_SOUND(sounds\charging.wav), _soundSource, false, getPosASL
                 playSound3D [QPATHTOF_SOUND(sounds\bump.wav), _patient, false, getPosASL _patient, 6, 1, 15];
 
                 [{ // Prompt to analyze again
-                    params ["_soundSource"];
+                    params ["_patient", "_soundSource"];
 
                     if (_patient getVariable [QGVAR(DefibrillatorInUse), false] || _patient getVariable [QGVAR(AED_X_VitalsMonitor_Connected), false]) exitWith {};
                     playSound3D [QPATHTOF_SOUND(sounds\pushanalyze.wav), _soundSource, false, getPosASL _soundSource, 6, 1, 15];

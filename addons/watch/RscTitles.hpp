@@ -27,8 +27,6 @@
 
 class RscText;
 class RscPicture;
-class RscButton;
-class RscPictureKeepAspect;
 class RscTitles
 {
     class KAT_Katmin

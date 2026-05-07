@@ -17,6 +17,7 @@
             <Chinesesimp>高级气胸几率</Chinesesimp>
             <Finnish>Mahdollisuus pitkälle edenneelle ilmarintalle</Finnish>
             <Dutch>Kans op een geadvanceerde pneumothorax</Dutch>
+            <Turkish>Gelişmiş Pnömotoraks Olasılığı</Turkish>
         </Key>
         <Key ID="STR_KAT_Breathing_ADVANCED_PTX_OPTION">
             <English>Enable Advanced Pneumothoraxes</English>
@@ -34,6 +35,7 @@
             <Chinesesimp>启用高级气胸</Chinesesimp>
             <Finnish>Ota käyttöön edistyneet ilmarintakehät</Finnish>
             <Dutch>Sta geadvanceerde pneumothoraxen toe</Dutch>
+            <Turkish>Gelişmiş Pnömotoraksları Etkinleştir</Turkish>
         </Key>
         <Key ID="STR_KAT_Breathing_ALLOW_CHESTSEAL">
             <English>Allow Chest Seal</English>
@@ -49,7 +51,7 @@
             <Japanese>チェストシールの許可</Japanese>
             <Chinese>允許使用 胸腔密封貼</Chinese>
             <Chinesesimp>允许使用 胸腔密封贴</Chinesesimp>
-            <Turkish>Chest Seal'a izin ver</Turkish>
+            <Turkish>Chest Seal kullanımına izin ver</Turkish>
             <Finnish>Salli rintatiiviste</Finnish>
             <Dutch>Sta chest seal toe</Dutch>
         </Key>
@@ -86,6 +88,7 @@
             <Chinesesimp>%1已使用%2（x%3）</Chinesesimp>
             <Finnish>%1 käytetty %2 (x%3)</Finnish>
             <Dutch>%1 gebruikte %2 (x%3)</Dutch>
+            <Turkish>%1, %2 kullandı (x%3)</Turkish>
         </Key>
         <Key ID="STR_KAT_Breathing_Activity_BVM_Oxygenated">
             <English>%1 (Oxygenated)</English>
@@ -102,28 +105,33 @@
             <Chinesesimp>%1（含氧）</Chinesesimp>
             <Finnish>%1 (Kyllästetty hapella)</Finnish>
             <Dutch>%1 (zuurstofrijk)</Dutch>
+            <Turkish>%1 (Oksijenlenmiş)</Turkish>
         </Key>
         <Key ID="STR_KAT_Breathing_AttachOxygenVehicle">
             <English>Connect to Aircraft Oxygen</English>
             <Czech>Připojit ke Kyslíku Letounu</Czech>
             <French>Connexion à l'oxygène de l'aéronef</French>
+            <Spanish>Conectar al oxígeno de la aeronave</Spanish>
             <Italian>Connetti alla riserva di Ossigeno del Velivolo</Italian>
             <German>Mit Luftfahrzeug-Sauerstofftank verbinden</German>
             <Japanese>航空機酸素供給機に接続</Japanese>
             <Chinese>連接到飛機氧氣</Chinese>
             <Chinesesimp>连接到飞机氧气</Chinesesimp>
             <Dutch>Met het zuurstofsysteem van het vliegtuig verbinden</Dutch>
+            <Turkish>Uçak oksijenine bağlan</Turkish>
         </Key>
         <Key ID="STR_KAT_Breathing_AttachPersonalOxygenTank">
             <English>Connect Personal Oxygen</English>
             <Czech>Připojit Osobní Kyslíkovou Lahev</Czech>
             <French>Connecter de l'oxygène personnel</French>
+            <Spanish>Conectar oxígeno personal</Spanish>
             <Italian>Connetti alla riserva di Ossigeno Personale</Italian>
             <German>Mit persönlichem Sauerstofftank verbinden</German>
             <Japanese>個人用酸素供給機に接続</Japanese>
             <Chinese>連接個人氧氣</Chinese>
             <Chinesesimp>连接个人氧气</Chinesesimp>
             <Dutch>Met persoonlijke zuurstoftank verbinden</Dutch>
+            <Turkish>Kişisel oksijeni bağla</Turkish>
         </Key>
         <Key ID="STR_KAT_Breathing_BVM_Desc_Short">
             <English>Bag-Valve-Mask, used to assist with breathing of unconscious patients</English>
@@ -141,6 +149,7 @@
             <Chinesesimp>袋阀面罩，用于帮助昏迷患者呼吸</Chinesesimp>
             <Finnish>Pussi-venttiili-naamari, käytetään auttamaan tajuttomien potilaiden hengittämisessä</Finnish>
             <Dutch>Bag-Valve-Mask of een zakventielmasker wordt gebruikt voor het ondersteunen van de ademhaling van bewusteloze personen</Dutch>
+            <Turkish>Bag-Valve-Mask, bilinçsiz hastalarda solunuma yardımcı olmak için kullanılır</Turkish>
         </Key>
         <Key ID="STR_KAT_Breathing_BVM_Display">
             <English>BVM</English>
@@ -158,6 +167,7 @@
             <Chinesesimp>BVM</Chinesesimp>
             <Finnish>BVM</Finnish>
             <Dutch>BVM</Dutch>
+            <Turkish>BVM</Turkish>
         </Key>
         <Key ID="STR_KAT_Breathing_Cancel_NasalCannula">
             <English>Remove Nasal Cannula</English>
@@ -172,6 +182,7 @@
             <Chinese>移除鼻導管</Chinese>
             <Chinesesimp>移除鼻导管</Chinesesimp>
             <Dutch>Verwijder nasale canule</Dutch>
+            <Turkish>Nasal Cannula’yı çıkar</Turkish>
         </Key>
         <Key ID="STR_KAT_Breathing_CheckBreathing_Log">
             <English>%1 checked breathing: %2</English>
@@ -188,17 +199,20 @@
             <Chinesesimp>%1检查呼吸：%2</Chinesesimp>
             <Finnish>%1 tarkistettu hengitys: %2</Finnish>
             <Dutch>%1 controleerde ademhaling: %2</Dutch>
+            <Turkish>%1 solunumu kontrol etti: %2</Turkish>
         </Key>
         <Key ID="STR_KAT_Breathing_CheckPersonalOxygenTank">
             <English>Check Personal Oxygen Status</English>
             <Czech>Zkontrolovat stav Osobní Kyslikové Lahve</Czech>
             <French>Vérifier l'état de l'oxygène personnel</French>
+            <Spanish>Verificar estado del oxígeno personal</Spanish>
             <Italian>Controlla lo Stato della riserva personale di Ossigen</Italian>
             <German>Sauerstofftankstatus prüfen</German>
             <Japanese>個人用酸素供給機の状態を確認</Japanese>
             <Chinese>檢查個人氧氣狀況</Chinese>
             <Chinesesimp>检查个人氧气状况</Chinesesimp>
             <Dutch>Persoonlijke zuurstoftank controleren</Dutch>
+            <Turkish>Kişisel oksijen durumunu kontrol et</Turkish>
         </Key>
         <Key ID="STR_KAT_Breathing_Check_Breathing">
             <English>Check Breathing</English>
@@ -215,6 +229,7 @@
             <Chinesesimp>检查呼吸</Chinesesimp>
             <Finnish>Tarkista potilaan hengitys</Finnish>
             <Dutch>Check ademhaling</Dutch>
+            <Turkish>Solunumu kontrol et</Turkish>
         </Key>
         <Key ID="STR_KAT_Breathing_Check_Breathing_Progress">
             <English>Checking Breathing</English>
@@ -231,6 +246,7 @@
             <Chinesesimp>检查呼吸中</Chinesesimp>
             <Finnish>Potilaan hengityksen tarkistaminen</Finnish>
             <Dutch>Ademhaling controleren</Dutch>
+            <Turkish>Solunum kontrol ediliyor</Turkish>
         </Key>
         <Key ID="STR_KAT_Breathing_ChestSealApplied">
             <English>Chest Seal Applied</English>
@@ -247,6 +263,7 @@
             <Chinesesimp>胸部密封已应用</Chinesesimp>
             <Finnish>Rintatiiviste on kiinnitetty</Finnish>
             <Dutch>Chest seal aangebracht</Dutch>
+            <Turkish>Chest Seal uygulandı</Turkish>
         </Key>
         <Key ID="STR_KAT_Breathing_CyanosisStatus_Mild">
             <English>Mild Cyanosis</English>
@@ -316,6 +333,7 @@
             <Chinesesimp>决定完全恶化的气胸是否恶化为晚期（高级）气胸的概率。这是按照气胸恶化的间隔设定的每个时机持续计算的。</Chinesesimp>
             <Finnish>Prosenttiosuus mahdollisuus, joka määrittää, kehittyykö täysin heikentynyt ilmarinta pitkälle edenneeksi ilmarintaksi. Tämä lasketaan jatkuvasti pneumotoraksin etenemisajan mukaan.</Finnish>
             <Dutch>De kans in procenten, dat bepaalt of een pneumothorax zich doorontwikkeld naar een geadvanceerde pneumothorax. Dit wordt doorlopend gerold op basis van de pneumothorax verslechterings interval</Dutch>
+            <Turkish>Tamamen kötüleşmiş bir pnömotoraksın gelişmiş pnömotoraksa dönüşüp dönüşmeyeceğini belirleyen yüzde olasılık; bu değer pnömotoraks kötüleşme aralığına göre sürekli olarak hesaplanır.</Turkish>
         </Key>
         <Key ID="STR_KAT_Breathing_DESCRIPTION_ADVANCED_PTX_OPTION">
             <English>Enables advanced pneumothoraxes - hemopneumothorax and tensionpneumothorax</English>
@@ -333,6 +351,7 @@
             <Chinesesimp>启用高级气胸 - 血气胸和张力性气胸</Chinesesimp>
             <Finnish>Mahdollistaa pitkälle edenneen pneumotoraksin - hemopneumotoraksin ja jännitysilmarinta</Finnish>
             <Dutch>Staat geadvanceerde pneumothoraxen - hemopneumothorax en spanningspneumothorax - toe</Dutch>
+            <Turkish>Gelişmiş pnömotoraksları etkinleştirir – Hemopnömotoraks ve Gergin pnömotoraks</Turkish>
         </Key>
         <Key ID="STR_KAT_Breathing_DESCRIPTION_HEMOPNEUMOTHORAX_CHANCE_OPTION">
             <English>Sets the chance for hemopneumothorax. Also sets the chance for tenstion pneumothorax (60% Hemo = 40% Tension)</English>
@@ -350,6 +369,7 @@
             <Chinesesimp>设定血气胸的几率。同时设定张力性气胸的几率（60％血气胸= 40％张力性气胸）。</Chinesesimp>
             <Finnish>Asettaa hemopneumotoraksin mahdollisuuden. Asettaa myös jännittyneen pneumotoraksin mahdollisuuden. (60% hemo = 40% jännitystä)</Finnish>
             <Dutch>Legt de kans op een hemopneumothorax vast. Legt ook de kans voor spanningspneumothorax vast. (60% Hemo = 40% spanning)</Dutch>
+            <Turkish>Hemopnömotoraks olasılığını ayarlar. Aynı zamanda Gergin pnömotoraks olasılığını da belirler (%60 Hemo = %40 Tension)</Turkish>
         </Key>
         <Key ID="STR_KAT_Breathing_DESCRIPTION_STABLE_SPO2">
             <English>After reaching more than selected value (default 85), only then patient can get conscious</English>
@@ -365,7 +385,7 @@
             <Japanese>設定した値(デフォルトは85)を超えた後、患者は意識を取り戻すことができます</Japanese>
             <Chinese>達到選定值以上（默認值85）後，患者才能恢復意識</Chinese>
             <Chinesesimp>达到设定值以上(默认85)之后,患者才能恢复意识</Chinesesimp>
-            <Turkish>Seçilen değerden (varsayılan 85) daha fazlasına ulaştıktan sonra, ancak o zaman hasta bilincini geri kazanabilir</Turkish>
+            <Turkish>Seçilen değerin (varsayılan 85) üzerine çıkıldığında hasta ancak o zaman bilincini kazanabilir</Turkish>
             <Finnish>Vasta sitten, kun valittu arvo (oletusarvo 85) on saavutettu, potilas voi herätä</Finnish>
             <Dutch>Alleen na het bereiken van meer dan deze waarde (standaard 85) kan een patiënt zijn bewustzijn terug krijgen</Dutch>
         </Key>
@@ -384,6 +404,7 @@
             <Chinesesimp>深穿透伤</Chinesesimp>
             <Finnish>Syvä tunkeutuva vamma</Finnish>
             <Dutch>Diep penetrerende wond</Dutch>
+            <Turkish>Derin Delici Yaralanma</Turkish>
         </Key>
         <Key ID="STR_KAT_Breathing_HEMOPNEUMOTHORAX_CHANCE_OPTION">
             <English>Hemopneumothorax Chance</English>
@@ -401,6 +422,7 @@
             <Chinesesimp>血气胸几率</Chinesesimp>
             <Finnish>Hemopneumotoraksin mahdollisuus</Finnish>
             <Dutch>Hemopneumothorax kans</Dutch>
+            <Turkish>Hemopnömotoraks Olasılığı</Turkish>
         </Key>
         <Key ID="STR_KAT_Breathing_HEMOPNEUMOTHORAX_TREATMENT_LEVEL">
             <English>Hemothorax / Tension Pnuemothorax Treament Minimum Level</English>
@@ -416,7 +438,7 @@
             <Japanese>血胸/緊張性気胸治療の許可</Japanese>
             <Chinese>血氣胸／張力性氣胸治療最低等級</Chinese>
             <Chinesesimp>血气胸/张力性气胸治疗最低等级</Chinesesimp>
-            <Turkish>Hemotoraks / Gerilim Pnömotoraks Tedavisi Minimum Seviye</Turkish>
+            <Turkish>Hemotoraks / Gergin Pnömotoraks Tedavisi Minimum Seviye</Turkish>
             <Finnish>Hemopneumotoraksi / jännitysilmarinta hoidon vähimmäistaso</Finnish>
             <Dutch>Hemopneumothorax / spanningspneumothorax minimum behandelingsniveau</Dutch>
         </Key>
@@ -434,7 +456,7 @@
             <Japanese>胸腔穿刺減圧および胸腔ドレナージの実施に必要な医療スキルのレベルを設定します。これらは血胸と緊張性気胸の治療に使われます。</Japanese>
             <Chinese>某人能夠執行針減壓和引流體液治療措施所需的最低醫療水平，用於治療血氣胸或張力性氣胸。</Chinese>
             <Chinesesimp>使用胸腔穿刺减压和引流体液治疗所需的最低医疗水平，用于治疗血气胸或张力性气胸。</Chinesesimp>
-            <Turkish>Hemotoraks veya Tansiyon Pnömotoraksı tedavi etmek için kullanılan İğne Dekompresyonu ve Boşaltma Sıvıları tedavi eylemlerini gerçekleştirebilmek için gerekli minimum tıbbi seviye.</Turkish>
+            <Turkish>Hemotoraks veya Gerin Pnömotoraksı tedavi etmek için kullanılan İğne Dekompresyonu ve Boşaltma Sıvıları tedavi eylemlerini gerçekleştirebilmek için gerekli minimum tıbbi seviye.</Turkish>
             <Finnish>Vähimmäiskoulutustaso, joka vaaditaan, jotta joku pystyy suorittamaan neulan dekompression ja nesteenpoiston, jota käytetään hemothoraksin tai jännitysilmarintain hoitoon</Finnish>
             <Dutch>Het minimaal benodigde trainingsniveau voor het uitvoeren van de naalddecompressie- en vloeistof afvoerende handelingen, benodigd om een hemo- en spanningspneumothorax te behandelen</Dutch>
         </Key>
@@ -453,6 +475,7 @@
             <Chinesesimp>血气胸</Chinesesimp>
             <Finnish>hemopneumotoraksi</Finnish>
             <Dutch>Hemopneumothorax</Dutch>
+            <Turkish>Hemopnömotoraks</Turkish>
         </Key>
         <Key ID="STR_KAT_Breathing_Hemopneumothorax_short">
             <English>HPTX</English>
@@ -469,6 +492,7 @@
             <Chinesesimp>HPTX</Chinesesimp>
             <Finnish>HPT</Finnish>
             <Dutch>HPTX</Dutch>
+            <Turkish>HPTX</Turkish>
         </Key>
         <Key ID="STR_KAT_Breathing_NasalCannula_Desc_Short">
             <English>The Nasal Cannula can be inserted into a patient's nostrils and connected to a vitals monitor to record a patient's ETCo2 level and respiratory rate.</English>
@@ -483,6 +507,7 @@
             <Chinese>鼻導管可插入病人鼻孔，並連接到生命體徵監測器，以記錄病人的呼氣末期二氧化碳 (ETCo2) 水平和呼吸率。</Chinese>
             <Chinesesimp>鼻导管可以插入患者的鼻孔并连接到生命体征监测仪，以记录患者的ETCo2水平和呼吸频率。</Chinesesimp>
             <Dutch>De nasale canule kan in de neusgaten van de patiënt aangebracht worden en verbonden aan een vitale waarden monitor om de ETCo2 waarden en het ademhalingstempo van de patiënt te monitoren</Dutch>
+            <Turkish>Nasal Cannula hastanın burun deliklerine yerleştirilebilir ve ETCO₂ seviyesi ile solunum sayısını kaydetmek için bir vital monitöre bağlanabilir.</Turkish>
         </Key>
         <Key ID="STR_KAT_Breathing_NasalCannula_Display">
             <English>Nasal Cannula</English>
@@ -497,6 +522,7 @@
             <Chinese>鼻導管</Chinese>
             <Chinesesimp>鼻插管</Chinesesimp>
             <Dutch>Nasale canule</Dutch>
+            <Turkish>Nasal Cannula</Turkish>
         </Key>
         <Key ID="STR_KAT_Breathing_PNEUMOTHORAX_DAMAGE_THRESHOLD">
             <English>Pneumothorax Damage Threshold</English>
@@ -512,7 +538,7 @@
             <Japanese>負傷による気胸発生のしきい値</Japanese>
             <Chinese>導致氣胸的損傷臨界值</Chinese>
             <Chinesesimp>导致气胸的损伤临界值</Chinesesimp>
-            <Turkish>Pnömotoraks Hasar Eşiği</Turkish>
+            <Turkish>Pnömotoraks hasar eşiği</Turkish>
             <Finnish>Vaurioiden taso, joka vaaditaan ilmarintakehän kehittymiseen</Finnish>
             <Dutch>Pneumothorax schade drempelwaarde</Dutch>
         </Key>
@@ -530,7 +556,7 @@
             <Japanese>一度の負傷で発生する気胸へのダメージ。値が低いほど気胸が発生する可能性が高くなります。\n値を非常に低く設定するか0に設定すると、予期しない動作や予期しない負傷による気胸を引き起こす可能性があります。</Japanese>
             <Chinese>單次撞擊的損傷程度（範圍為 0 到 1）需要達到多少，才會觸發氣胸的機率。數值越低，代表越容易發生氣胸。將數值設定過低或設為零，可能會導致無法預期的行為，或因意外傷害引發氣胸。</Chinese>
             <Chinesesimp>单次撞击的损伤程度（范围为 0 到 1）需要达到多少，才会触发气胸的几率。数值越低，代表越容易发生气胸。将数值设定过低或设为零，可能会导致无法预期的行为，或因意外伤害引发气胸。</Chinesesimp>
-            <Turkish>Pnömotoraks olasılığı olmadan önce meydana gelmesi gereken, 0 ila 1 ölçeğinde tek bir darbede hasar miktarı. Daha düşük değerler, pnömotoraksın oluşma olasılığının daha yüksek olduğu anlamına gelir. Değerin çok düşük veya sıfır olarak ayarlanması, beklenmedik yaralanmalardan kaynaklanan beklenmedik davranışlara veya pnömotoraksa neden olabilir.</Turkish>
+            <Turkish>0 ile 1 arasında bir ölçekte, tek bir darbe sırasında oluşması gereken hasar miktarını ifade eder; bu eşik aşıldığında pnömotoraks oluşma ihtimali ortaya çıkar. Daha düşük değerler, pnömotoraksın oluşma olasılığının daha yüksek olduğu anlamına gelir. Değerin çok düşük veya 0 olarak ayarlanması, beklenmeyen davranışlara ya da beklenmedik yaralanmalar sonucunda pnömotoraks gelişmesine neden olabilir.</Turkish>
             <Finnish>Yhden osuman vaurion määrä asteikolla 0-1, jonka täytyy tapahtua ennen kuin ilmarinta on mahdollista. Pienemmät arvot tarkoittavat, että ilmarinta on todennäköisempää. Arvon asettaminen erittäin alhaiseksi tai arvoon 0 voi aiheuttaa odottamatonta käyttäytymistä tai ilmarintaa epätavallisten vammojen vuoksi.</Finnish>
             <Dutch>De hoeveelheid schade van een enkele impact, op een schaal van 0 tot 1, dat benodigd is voordat een pneumothorax gerold wordt. Lagere waarden kan leiden tot meer pneumothoraxen. Als deze instelling laag of zelfs op 0 staat, kan dit leiden tot raar gedrag of pneumothoraxen van onverwachte wonden</Dutch>
         </Key>
@@ -538,67 +564,79 @@
             <English>Oxygen already connected</English>
             <Czech>Kyslík je již připojen</Czech>
             <French>Oxygène déjà connecté</French>
+            <Spanish>Oxígeno ya conectado</Spanish>
             <Italian>Ossigeno già connesso</Italian>
             <German>Sauerstoff ist bereits verbunden</German>
             <Japanese>既に酸素供給機に接続済です</Japanese>
             <Chinese>氧氣已連接</Chinese>
             <Chinesesimp>氧气已连接</Chinesesimp>
             <Dutch>Zuurstof is al verbonden</Dutch>
+            <Turkish>Oksijen zaten bağlı</Turkish>
         </Key>
         <Key ID="STR_KAT_Breathing_PersonalOxygen_Desc_Short">
             <English>Personal oxygen tank for high altitude operations</English>
             <Czech>Osobní Kyslíková Lahev pro operace ve vysokých nadmořských výškách</Czech>
             <French>Réservoir d'oxygène personnel pour les opérations en haute altitude</French>
+            <Spanish>Tanque de oxígeno personal para operaciones en gran altitud</Spanish>
             <Italian>Serbatoio di Ossigeno personale per operazioni ad alta quota</Italian>
             <German>Persönlicher Sauerstofftank für Operationen in großer Höhe</German>
             <Japanese>高高度作戦に用いる個人用酸素ボンベ</Japanese>
             <Chinese>用於高空作業的個人氧氣罐</Chinese>
             <Chinesesimp>高空作业用便携式氧气罐</Chinesesimp>
             <Dutch>Persoonlijke zuurstoftank voor operaties op grote hoogten</Dutch>
+            <Turkish>Yüksek irtifa operasyonları için kişisel oksijen tüpü</Turkish>
         </Key>
         <Key ID="STR_KAT_Breathing_PersonalOxygen_Disconnect">
             <English>Oxygen tank disconnected</English>
             <Czech>Kyslíková Lahev odpojena</Czech>
             <French>Réservoir d'oxygène déconnecté</French>
+            <Spanish>Tanque de oxígeno desconectado</Spanish>
             <Italian>Serbatoio di Ossigeno disconnesso</Italian>
             <German>Sauerstofftank wurde abgeklemmt</German>
             <Japanese>酸素供給機から切断しました</Japanese>
             <Chinese>氧氣罐斷開</Chinese>
             <Chinesesimp>氧气罐断开</Chinesesimp>
             <Dutch>Zuurstoftank is afgesloten</Dutch>
+            <Turkish>Oksijen tüpü bağlantısı kesildi</Turkish>
         </Key>
         <Key ID="STR_KAT_Breathing_PersonalOxygen_Display">
             <English>Personal Oxygen Tank</English>
             <Czech>Osobní Kyslíková Lahev</Czech>
             <French>Réservoir d'oxygène personnel</French>
+            <Spanish>Tanque de oxígeno personal</Spanish>
             <Italian>Serbatoio di Ossigeno personale</Italian>
             <German>Persönlicher Sauerstofftank</German>
             <Japanese>個人用酸素ボンベ</Japanese>
             <Chinese>個人氧氣罐</Chinese>
             <Chinesesimp>便携式氧气罐</Chinesesimp>
             <Dutch>Persoonlijke zuurstoftank</Dutch>
+            <Turkish>Kişisel Oksijen Tüpü</Turkish>
         </Key>
         <Key ID="STR_KAT_Breathing_PersonalOxygen_Empty">
             <English>Oxygen Tank Empty</English>
             <Czech>Kyslíková Lahev je prázdná</Czech>
             <French>Réservoir d'oxygène vide</French>
+            <Spanish>Tanque de oxígeno vacío</Spanish>
             <Italian>Serbatoio di Ossigeno vuoto</Italian>
             <German>Sauerstofftank leer</German>
             <Japanese>酸素ボンベは空です</Japanese>
             <Chinese>氧氣罐空</Chinese>
             <Chinesesimp>氧气罐空</Chinesesimp>
             <Dutch>Zuurstoftank is leeg</Dutch>
+            <Turkish>Oksijen tüpü boş</Turkish>
         </Key>
         <Key ID="STR_KAT_Breathing_PersonalOxygen_Remaining">
             <English>Minutes Remaining</English>
             <Czech>Zbývající minuty</Czech>
             <French>Minutes restantes</French>
+            <Spanish>Minutos restantes</Spanish>
             <Italian>Minuti rimasti</Italian>
             <German>Minuten übrig</German>
             <Japanese>分残っています</Japanese>
             <Chinese>剩餘分鐘數</Chinese>
             <Chinesesimp>剩余分钟数</Chinesesimp>
             <Dutch>Overgebleven minuten</Dutch>
+            <Turkish>Kalan dakika</Turkish>
         </Key>
         <Key ID="STR_KAT_Breathing_Pneumothorax">
             <English>Pneumothorax</English>
@@ -613,6 +651,7 @@
             <Japanese>気胸(PTX)</Japanese>
             <Finnish>Pneumotoraksi</Finnish>
             <Dutch>Pneumothorax</Dutch>
+            <Turkish>Pnömotoraks</Turkish>
         </Key>
         <Key ID="STR_KAT_Breathing_Pneumothorax_short">
             <English>PTX</English>
@@ -629,6 +668,7 @@
             <Chinesesimp>PTX</Chinesesimp>
             <Finnish>PTK</Finnish>
             <Dutch>PTX</Dutch>
+            <Turkish>PTX</Turkish>
         </Key>
         <Key ID="STR_KAT_Breathing_PocketBVM_Desc_Short">
             <English>Compact version of the Bag-Valve-Mask</English>
@@ -646,6 +686,7 @@
             <Chinesesimp>紧凑型袋式阀面罩</Chinesesimp>
             <Finnish>Pussi-venttiili-naamari kompakti versio</Finnish>
             <Dutch>Compacte versie van de BVM</Dutch>
+            <Turkish>Bag-Valve-Mask’in kompakt versiyonu</Turkish>
         </Key>
         <Key ID="STR_KAT_Breathing_PocketBVM_Display">
             <English>Pocket BVM</English>
@@ -663,6 +704,7 @@
             <Chinesesimp>便携式BVM</Chinesesimp>
             <Finnish>Kannettava BVM</Finnish>
             <Dutch>Zak BVM</Dutch>
+            <Turkish>Pocket BVM</Turkish>
         </Key>
         <Key ID="STR_KAT_Breathing_PortableOxygenTankDisconnected_Empty">
             <English>Oxygen tank disconnected (empty)</English>
@@ -680,6 +722,7 @@
             <Chinesesimp>氧气罐断开（空）</Chinesesimp>
             <Finnish>Happisäiliö irrotettu (se on tyhjä)</Finnish>
             <Dutch>Zuurstoftank losgekoppeld (leeg)</Dutch>
+            <Turkish>Pocket BVM</Turkish>
         </Key>
         <Key ID="STR_KAT_Breathing_PortableOxygenTank_150_Desc_Short">
             <English>Portable Oxygen Tank, containing 150L of oxygen. Connect to BVM to further assist with breathing of critical patients.</English>
@@ -697,6 +740,7 @@
             <Chinesesimp>便携式氧气罐，含150L氧气。连接BVM以进一步协助危重患者的呼吸。</Chinesesimp>
             <Finnish>Kannettava happisäiliö, joka sisältää 150 litraa happea. Yhdistä BVM:ään auttaaksesi kriittisten potilaiden hengittämisessä.</Finnish>
             <Dutch>Draagbare zuurstoftank, bevat 150L van zuurstof. Helpt met het beademen van kritieke patiënten wanneer verbonden aan een BVM</Dutch>
+            <Turkish>150 L oksijen içeren taşınabilir oksijen tüpü. Kritik hastaların solunumuna ek destek sağlamak için BVM’ye bağlanır.</Turkish>
         </Key>
         <Key ID="STR_KAT_Breathing_PortableOxygenTank_150_Display">
             <English>Portable Oxygen Tank (150L)</English>
@@ -714,6 +758,7 @@
             <Chinesesimp>便携式氧气罐（150L）</Chinesesimp>
             <Finnish>Kannettava happisäiliö (150L)</Finnish>
             <Dutch>Draagbare zuurstoftank (150L)</Dutch>
+            <Turkish>Taşınabilir Oksijen Tüpü (150L)</Turkish>
         </Key>
         <Key ID="STR_KAT_Breathing_PortableOxygenTank_150_Empty_Display">
             <English>Empty Portable Oxygen Tank (150L)</English>
@@ -731,6 +776,7 @@
             <Chinesesimp>空便携式氧气罐（150L）</Chinesesimp>
             <Finnish>Tyhjä kannettava happisäiliö (150L)</Finnish>
             <Dutch>Lege draagbare zuurstoftank (150L)</Dutch>
+            <Turkish>Boş Taşınabilir Oksijen Tüpü (150L)</Turkish>
         </Key>
         <Key ID="STR_KAT_Breathing_PortableOxygenTank_300_Desc_Short">
             <English>Portable Oxygen Tank, containing 300L of oxygen. Connect to BVM to further assist with breathing of critical patients.</English>
@@ -748,6 +794,7 @@
             <Chinesesimp>便携式氧气罐，含300L氧气。连接BVM以进一步协助危重患者的呼吸。</Chinesesimp>
             <Finnish>Kannettava happisäiliö, joka sisältää 300 litraa happea. Yhdistä BVM:ään auttaaksesi kriittisten potilaiden hengittämisessä.</Finnish>
             <Dutch>Draagbare zuurstoftank, bevat 300L van zuurstof. Helpt met het beademen van kritieke patiënten wanneer verbonden aan een BVM</Dutch>
+            <Turkish>300 L oksijen içeren taşınabilir oksijen tüpü. Kritik hastaların solunumuna ek destek sağlamak için BVM’ye bağlanır.</Turkish>
         </Key>
         <Key ID="STR_KAT_Breathing_PortableOxygenTank_300_Display">
             <English>Portable Oxygen Tank (300L)</English>
@@ -765,6 +812,7 @@
             <Chinesesimp>便携式氧气罐（300L）</Chinesesimp>
             <Finnish>Kannettava happisäiliö (300L)</Finnish>
             <Dutch>Draagbare zuurstoftank (300L)</Dutch>
+            <Turkish>Taşınabilir Oksijen Tüpü (300 L)</Turkish>
         </Key>
         <Key ID="STR_KAT_Breathing_PortableOxygenTank_300_Empty_Display">
             <English>Empty Portable Oxygen Tank (300L)</English>
@@ -782,6 +830,7 @@
             <Chinesesimp>空便携式氧气罐（300L）</Chinesesimp>
             <Finnish>Tyhjä kannettava happisäiliö (300L)</Finnish>
             <Dutch>Lege draagbare zuurstoftank (300L)</Dutch>
+            <Turkish>Boş Taşınabilir Oksijen Tüpü (300L)</Turkish>
         </Key>
         <Key ID="STR_KAT_Breathing_PortableOxygenTank_Empty_Desc_Short">
             <English>Empty Portable Oxygen Tank, refill at a medical vehicle or facility</English>
@@ -799,6 +848,7 @@
             <Chinesesimp>清空便携式氧气罐，在医疗车辆或设施处重新充装</Chinesesimp>
             <Finnish>Tyhjennä kannettava happisäiliö, täytä lääketieteellisessä ajoneuvossa tai laitoksessa.</Finnish>
             <Dutch>Lege draagbare zuurstoftank, hervul bij een medisch voertuig of -gebouw</Dutch>
+            <Turkish>300 L oksijen içeren taşınabilir oksijen tüpü. Kritik hastaların solunumuna ek destek sağlamak için BVM’ye bağlanır.</Turkish>
         </Key>
         <Key ID="STR_KAT_Breathing_PulseOximeter_Action_addSound">
             <English>Enable Pulse Oximeter Alarm</English>
@@ -816,6 +866,7 @@
             <Chinesesimp>启用脉搏血氧仪报警</Chinesesimp>
             <Finnish>Ota pulssioksimetrin hälytys käyttöön</Finnish>
             <Dutch>Zet pulsoximeter alarm aan</Dutch>
+            <Turkish>Nabız Oksimetresi Alarmını Etkinleştir</Turkish>
         </Key>
         <Key ID="STR_KAT_Breathing_PulseOximeter_Action_removeSound">
             <English>Disable Pulse Oximeter Alarm</English>
@@ -833,6 +884,7 @@
             <Chinesesimp>关闭脉搏血氧仪报警</Chinesesimp>
             <Finnish>Poista pulssioksimetrin hälytys käytöstä</Finnish>
             <Dutch>Zet pulsoximeter alarm uit</Dutch>
+            <Turkish>Nabız Oksimetresi Alarmını Kapat</Turkish>
         </Key>
         <Key ID="STR_KAT_Breathing_Pulseoximeter">
             <English>Pulse Oximeter</English>
@@ -863,6 +915,7 @@
             <Chinese>用於讀取脈搏率和SpO2</Chinese>
             <Chinesesimp>用于读取脉搏率和SpO2</Chinesesimp>
             <Dutch>Wordt gebruikt om polsslag en SpO2 te meten</Dutch>
+            <Turkish>Nabız Oksimetresi Alarmını Etkinleştir</Turkish>
         </Key>
         <Key ID="STR_KAT_Breathing_Pulseoximeter_Display">
             <English>Attach Pulse Oximeter</English>
@@ -878,7 +931,7 @@
             <Japanese>パルスオキシメーターを取り付ける</Japanese>
             <Chinese>連接脈搏血氧儀</Chinese>
             <Chinesesimp>连接脉搏血氧仪</Chinesesimp>
-            <Turkish>Nabız Oksimetresini Takın&gt;</Turkish>
+            <Turkish>Nabız Oksimetresi Takın</Turkish>
             <Finnish>Kiinnitä pulssioksimetri</Finnish>
             <Dutch>Plaats pulsoximeter</Dutch>
         </Key>
@@ -896,7 +949,7 @@
             <Japanese>パルスオキシメーターを取り外します</Japanese>
             <Chinese>移除 脈搏血氧儀</Chinese>
             <Chinesesimp>移除 脉搏血氧仪</Chinesesimp>
-            <Turkish>Nabız Oksimetresini Çıkarın</Turkish>
+            <Turkish>Nabız Oksimetresi Çıkarın</Turkish>
             <Finnish>Irrota pulssioksimetri</Finnish>
             <Dutch>Verwijder pulsoximeter</Dutch>
         </Key>
@@ -916,6 +969,7 @@
             <Chinesesimp>补充便携式氧气罐（150L）</Chinesesimp>
             <Finnish>Täytä kannettava happisäiliö (150L)</Finnish>
             <Dutch>Hervul draagbare zuurstoftank (150L)</Dutch>
+            <Turkish>Taşınabilir Oksijen Tüpünü Doldur (150 L)</Turkish>
         </Key>
         <Key ID="STR_KAT_Breathing_RefillPortableOxygenTank_300">
             <English>Refill Portable Oxygen Tank (300L)</English>
@@ -933,6 +987,7 @@
             <Chinesesimp>补充便携式氧气罐（300L）</Chinesesimp>
             <Finnish>Täytä kannettava happisäiliö (300L)</Finnish>
             <Dutch>Hervul draagbare zuurstoftank (300L)</Dutch>
+            <Turkish>Taşınabilir Oksijen Tüpünü Doldur (300 L)</Turkish>
         </Key>
         <Key ID="STR_KAT_Breathing_RefillPortableOxygenTank_Cancel">
             <English>Oxygen Tank Refill Cancelled</English>
@@ -950,6 +1005,7 @@
             <Chinesesimp>氧气罐加注已取消</Chinesesimp>
             <Finnish>Happisäiliön täyttö peruttu</Finnish>
             <Dutch>Zuurstoftank bijvulling stopgezet</Dutch>
+            <Turkish>Oksijen Tüpü Dolumu İptal Edildi</Turkish>
         </Key>
         <Key ID="STR_KAT_Breathing_RefillPortableOxygenTank_Complete">
             <English>Oxygen Tank Refill Complete</English>
@@ -967,6 +1023,7 @@
             <Chinesesimp>氧气罐加注完成</Chinesesimp>
             <Finnish>Happisäiliö on täynnä</Finnish>
             <Dutch>Zuurstoftank bijgevuld</Dutch>
+            <Turkish>Oksijen Tüpü Dolumu Tamamlandı</Turkish>
         </Key>
         <Key ID="STR_KAT_Breathing_RefillPortableOxygenTank_Progress">
             <English>Refilling Portable Oxygen Tank</English>
@@ -984,6 +1041,7 @@
             <Chinesesimp>重新填充便携式氧气罐</Chinesesimp>
             <Finnish>Kannettavan happisäiliön täyttö</Finnish>
             <Dutch>Bijvullen van draagbare zuurstoftank</Dutch>
+            <Turkish>Taşınabilir Oksijen Tüpü Dolduruluyor</Turkish>
         </Key>
         <Key ID="STR_KAT_Breathing_RefillPortableOxygenTanks">
             <English>Refill Portable Oxygen Tank</English>
@@ -1001,17 +1059,20 @@
             <Chinesesimp>重新填充便携式氧气罐</Chinesesimp>
             <Finnish>Täytä kannettava happisäiliö</Finnish>
             <Dutch>Hervul draagbare zuurstoftank</Dutch>
+            <Turkish>Taşınabilir Oksijen Tüpünü Doldur</Turkish>
         </Key>
         <Key ID="STR_KAT_Breathing_RemovePersonalOxygenTank">
             <English>Disconnect Personal Oxygen</English>
             <Czech>Odpojit Osobní Kyslíkovou Lahev</Czech>
             <French>Déconnexion de l'oxygène personnel</French>
+            <Spanish>Desconectar oxígeno personal</Spanish>
             <Italian>Disconnetti Riserva personale di Ossigeno</Italian>
             <German>Persönlichen Sauerstofftank abklemmen</German>
             <Japanese>個人用酸素供給機を切断</Japanese>
             <Chinese>斷開個人氧氣</Chinese>
             <Chinesesimp>断开个人氧气</Chinesesimp>
             <Dutch>Persoonlijke zuurstoftank afsluiten</Dutch>
+            <Turkish>Kişisel Oksijeni Ayır</Turkish>
         </Key>
         <Key ID="STR_KAT_Breathing_Remove_NasalCannula_Log">
             <English>%1 removed Nasal Cannula</English>
@@ -1026,59 +1087,70 @@
             <Chinese>%1 移除了鼻導管</Chinese>
             <Chinesesimp>%1个已移除的鼻导管</Chinesesimp>
             <Dutch>%1 verwijderde nasale canule</Dutch>
+            <Turkish>%1 Nasal Cannula’yı çıkardı</Turkish>
         </Key>
         <Key ID="STR_KAT_Breathing_Remove_OxyMask">
             <English>Remove Oxygen Mask</English>
             <Czech>Odebrat Kyslíkovou Masku</Czech>
             <French>Retirer le masque à oxygène</French>
+            <Spanish>Quitar la máscara de oxígeno</Spanish>
             <Italian>Rimuovi maschera per Ossigeno</Italian>
             <German>Sauerstoffmaske entfernen</German>
             <Japanese>酸素マスクを取り外す</Japanese>
             <Chinese>取下氧氣面罩</Chinese>
             <Chinesesimp>取下氧气面罩</Chinesesimp>
             <Dutch>Verwijder zuurstofmasker</Dutch>
+            <Turkish>Oksijen Maskesini Çıkar</Turkish>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_AVAIL_OXYHELMET">
             <English>Available Oxygen Helmets</English>
             <Czech>Dostupné Kyslíkové Helmy</Czech>
             <French>Casques d'oxygène disponibles</French>
+            <Spanish>Cascos de oxígeno disponibles</Spanish>
             <Italian>Elmetto per ossigeno disponibile</Italian>
             <German>Verfügbare Sauerstoffhelme</German>
-            <Japanese>利用可能な酸素供給ヘルメット</Japanese>
+            <Japanese>酸素供給可能なヘルメット</Japanese>
             <Chinese>可用氧氣頭盔</Chinese>
             <Dutch>Beschikbare zuurstofhelmen</Dutch>
+            <Turkish>Kullanılabilir Oksijen Kaskları</Turkish>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_AVAIL_OXYHELMET_DISC">
             <English>Sets which helmets can act as oxygen masks</English>
             <Czech>Nastavuje, které helmy mohou fungovat jako kyslíkové masky</Czech>
             <French>Spécifiez le casque que vous souhaitez utiliser comme masque à oxygène.</French>
+            <Spanish>Configura qué cascos pueden funcionar como máscaras de oxígeno</Spanish>
             <Italian>Imposta quale elmetto può funzionare come maschera per ossigeno</Italian>
             <German>Legt fest, welche Helme als Sauerstoffhelme benutzt werden können</German>
             <Japanese>酸素マスクとして動作させたいヘルメットを指定します</Japanese>
             <Chinese>設定哪些頭盔可以作為氧氣面罩</Chinese>
             <Dutch>Bepaald welke helmen als zuurstofmaskers gebruikt kunnen worden</Dutch>
+            <Turkish>Hangi kaskların oksijen maskesi olarak kullanılabileceğini belirler</Turkish>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_AVAIL_OXYMASK">
             <English>Available Oxygen Masks</English>
             <Czech>Dostupné Kyslíkové Masky</Czech>
             <French>Masques à oxygène disponibles</French>
+            <Spanish>Máscaras de oxígeno disponibles</Spanish>
             <Italian>Maschera per ossigeno disponibile</Italian>
             <German>Verfügbare Sauerstoffmasken</German>
-            <Japanese>利用可能な酸素供給マスク</Japanese>
+            <Japanese>酸素供給可能なマスク</Japanese>
             <Chinese>可用氧氣面罩</Chinese>
             <Chinesesimp>可用氧气面罩</Chinesesimp>
             <Dutch>Beschikbare zuurstofmaskers</Dutch>
+            <Turkish>Kullanılabilir Oksijen Maskeleri</Turkish>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_AVAIL_OXYMASK_DISC">
             <English>Sets which goggles can act as oxygen masks</English>
             <Czech>Nastavuje, které brýle mohou fungovat jako kyslíkové masky</Czech>
             <French>Spécifiez les masques que vous souhaitez utiliser comme masque à oxygène.</French>
+            <Spanish>Configura qué gafas pueden funcionar como máscaras de oxígeno</Spanish>
             <Italian>Imposta quali occhiali possono funzionare come maschera per ossigeno</Italian>
             <German>Legt fest, welche Brillen als Sauerstoffmaske verwendet werden können</German>
             <Japanese>酸素マスクとして動作させたいゴーグルを指定します</Japanese>
             <Chinese>設定哪些護目鏡可以作為氧氣面罩</Chinese>
             <Chinesesimp>设置哪些护目镜可以作为氧气面罩</Chinesesimp>
             <Dutch>Bepaald welke brillen als zuurstofmasker gebruikt kunnen worden</Dutch>
+            <Turkish>Hangi gözlüklerin oksijen maskesi olarak kullanılabileceğini belirler</Turkish>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_Allow_NasalCannula">
             <English>Allow Nasal Cannula</English>
@@ -1093,6 +1165,7 @@
             <Chinese>允許使用鼻導管</Chinese>
             <Chinesesimp>允许使用鼻导管</Chinesesimp>
             <Dutch>Sta nasale canule toe</Dutch>
+            <Turkish>Nasal Cannula’ya İzin Ver</Turkish>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_Allow_NasalCannula_Desc">
             <English>Training level required to insert a Nasal Cannula</English>
@@ -1107,6 +1180,7 @@
             <Chinese>插入鼻導管所需的訓練等級</Chinese>
             <Chinesesimp>插入鼻导管所需的训练等级</Chinesesimp>
             <Dutch>Trainingsniveau benodigd voor het inbrengen van een nasale canule</Dutch>
+            <Turkish>Nasal Cannula takmak için gereken eğitim seviyesi</Turkish>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_BVMOxygen_Multiplier">
             <English>BVM Oxygen Effectiveness Multiplier</English>
@@ -1123,6 +1197,15 @@
             <Chinesesimp>BVM氧气效率倍增器</Chinesesimp>
             <Finnish>BVM happitehokkuuskerroin</Finnish>
             <Dutch>BVM zuurstof effectiviteits vermenigvuldiger</Dutch>
+            <Turkish>BVM Oksijen Etkinlik Çarpanı</Turkish>
+        </Key>
+        <Key ID="STR_KAT_Breathing_SETTING_BVMOxygen_Multiplier_DESC">
+            <English>Effectiveness multiplier for BVM when used with oxygen</English>
+            <French>Multiplicateur d'efficacité pour le BVM lorsqu'il est utilisé avec de l'oxygène</French>
+            <Spanish>Multiplicador de efectividad del BVM cuando se usa con oxígeno</Spanish>
+            <German>Effektivitätsmultiplikator für BVM bei Verwendung mit Sauerstoff</German>
+            <Japanese>酸素ボンベと併用する場合のBVMの有効性の乗数</Japanese>
+            <Turkish>BVM oksijenle kullanıldığında etkinlik çarpanı</Turkish>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_BVM_MedLvl">
             <English>Allow BVM</English>
@@ -1140,6 +1223,7 @@
             <Chinesesimp>允许BVM</Chinesesimp>
             <Finnish>Salli BVM</Finnish>
             <Dutch>Sta BVM toe</Dutch>
+            <Turkish>BVM’ye İzin Ver</Turkish>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_BVM_MedLvl_DESC">
             <English>Sets required medical level to use BVM</English>
@@ -1157,6 +1241,7 @@
             <Chinesesimp>设置使用BVM所需的医疗级别</Chinesesimp>
             <Finnish>Asettaa BVM:n käyttöön vaadittavan lääketieteellisen koulutustason</Finnish>
             <Dutch>Bepaalt het medische trainingsniveau benodigd voor BVM gebruik</Dutch>
+            <Turkish>BVM kullanmak için gereken tıbbi seviye</Turkish>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_BVM_Oxygen_MedLvl">
             <English>Allow BVM with oxygen</English>
@@ -1174,6 +1259,7 @@
             <Chinesesimp>允许BVM与氧气混合</Chinesesimp>
             <Finnish>Salli BVM hapen kanssa</Finnish>
             <Dutch>Sta BVM met zuurstof toe</Dutch>
+            <Turkish>Oksijenle BVM’ye İzin Ver</Turkish>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_BVM_Oxygen_MedLvl_DESC">
             <English>Sets required medical level to use BVM with oxygen</English>
@@ -1191,6 +1277,7 @@
             <Chinesesimp>设定使用BVM和氧气所需的医疗水平</Chinesesimp>
             <Finnish>Asettaa lääketieteellisen koulutustason, joka vaaditaan BVM:n käyttöön hapen kanssa</Finnish>
             <Dutch>Bepaald het medische trainingsniveau benodigt voor het gebruik van een BVM met zuurstof</Dutch>
+            <Turkish>Oksijenle BVM kullanmak için gereken tıbbi seviye</Turkish>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_ENABLE">
             <English>Activate Breathing Module</English>
@@ -1205,6 +1292,7 @@
             <Chinese>啟動呼吸模組</Chinese>
             <Chinesesimp>启用呼吸模块</Chinesesimp>
             <Dutch>Activeer ademhalingsmodule</Dutch>
+            <Turkish>Solunum Modülünü Etkinleştir</Turkish>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_ENABLE_DESC">
             <English>Sets if SPO2 simulation and according functionality like Pneumothorax and \nAirway: occlusion &amp; obstruction (SPO2 reduction will be deactivated) should be activated</English>
@@ -1219,6 +1307,7 @@
             <Chinese>設定是否啟動SpO2模擬以及相應的功能，例如氣胸和氣道：阻塞和梗阻（SpO2降低功能將被停用）。</Chinese>
             <Chinesesimp>如果SPO2模拟和相应的功能，如气胸和\nAirway：闭塞和阻塞（SPO2减少将被停用）应被激活，则设置</Chinesesimp>
             <Dutch>Activeert SpO2 simulatie omtrend pneumothorax en luchtwegen: verstopping en obstructie (SpO2 reductie wordt gedeactiveerd)</Dutch>
+            <Turkish>SpO2 simülasyonu ve buna bağlı pnömotoraks ile hava yolu tıkanması/kapanması gibi işlevlerin etkinleştirilip etkinleştirilmeyeceğini belirler (SpO2 düşüşü devre dışı bırakılır)</Turkish>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_Enable_Etco2">
             <English>Enable ETCo2 Monitoring</English>
@@ -1233,6 +1322,7 @@
             <Chinese>啟用ETCo2監測</Chinese>
             <Chinesesimp>启用ETCo2监测</Chinesesimp>
             <Dutch>Activeer ETCo2 monitor</Dutch>
+            <Turkish>ETCO2 İzlemeyi Etkinleştir</Turkish>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_Enable_Etco2_Desc">
             <English>Sets if medics can view a patient's ETCo2 and Respiratory Rate in the Vitals Monitor when a device capable of monitoring ETCo2 is connected</English>
@@ -1247,6 +1337,15 @@
             <Chinese>設定當連接能夠監測ETCo2的裝置時，醫務人員是否可以在生命體徵監視器中查看患者的ETCo2和呼吸率</Chinese>
             <Chinesesimp>设定当连接能够监测ETCo2的装置时，医务人员是否可以在生命体征监视器中查看患者的ETCo2和呼吸率</Chinesesimp>
             <Dutch>Activeert het zien van ETCo2 en ademhalingstempo op de vitale waarden monitor wanneer een apparaat die ETCo2 kan monitoren is aangesloten</Dutch>
+            <Turkish>ETCO2 ölçebilen bir cihaz bağlıyken sağlık görevlilerinin hastanın ETCO2 ve solunum hızını Vital Monitörde görüp göremeyeceğini belirler</Turkish>
+        </Key>
+        <Key ID="STR_KAT_Breathing_SETTING_enableEverythingOxymask">
+            <English>Ignore oxygen equipment list</English>
+            <Japanese>酸素機器リストを無視</Japanese>
+        </Key>
+        <Key ID="STR_KAT_Breathing_SETTING_enableEverythingOxymask_DESC">
+            <English>Ignore the available oxygen equipment list and make all helmets and goggles can act as oxygen masks</English>
+            <Japanese>酸素供給可能な装備のリストを無視し、すべてのヘルメットとゴーグルを酸素マスクとして機能させます</Japanese>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_HPTX_BleedAmount">
             <English>Hemopneumothorax internal bleeding amount</English>
@@ -1264,6 +1363,7 @@
             <Chinesesimp>血气胸内出血量</Chinesesimp>
             <Finnish>Hemopneumotoraksista tulevan sisäisen verenvuodon määrä</Finnish>
             <Dutch>Hemopneumothorax interne bloedingshoeveelheid</Dutch>
+            <Turkish>Hemopnömotoraksta iç kanama miktarı</Turkish>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_HPTX_BleedAmount_DESC">
             <English>Sets amount of internal bleeding that is applied while suffering from hemopneumothorax</English>
@@ -1281,6 +1381,7 @@
             <Chinesesimp>设定血气胸时应用的内出血量</Chinesesimp>
             <Finnish>Määrittää hemopneumotoraksista johtuvan sisäisen verenvuodon määrän</Finnish>
             <Dutch>Defineert de hoeveelheid bloedverlies dat wordt verloren wanneer een patiënt een hemopneumothorax heeft</Dutch>
+            <Turkish>Hemopnömotoraks sırasında uygulanan iç kanama miktarını ayarlar</Turkish>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_MultiplyNegative">
             <English>SpO2 negative multiplier</English>
@@ -1293,11 +1394,20 @@
             <Russian>Отрицательный множитель SpO2</Russian>
             <German>SpO2 negativer Multiplikator</German>
             <Korean>SpO2의 감소 배율</Korean>
-            <Japanese>SpO2負の乗数</Japanese>
+            <Japanese>SpO2の負の乗数</Japanese>
             <Chinese>SpO2負向乘數</Chinese>
             <Chinesesimp>SpO2值负乘数</Chinesesimp>
             <Finnish>SpO2 negatiivinen kerroin</Finnish>
             <Dutch>SpO2 negatieve vermenigvuldiger</Dutch>
+            <Turkish>SpO2 negatif çarpanı</Turkish>
+        </Key>
+        <Key ID="STR_KAT_Breathing_SETTING_MultiplyNegative_DESC">
+            <English>Multiplier for negative SpO2 changes when not breathing properly</English>
+            <French>Multiplicateur pour les variations négatives de SpO2 en cas de respiration insuffisante</French>
+            <Spanish>Multiplicador para los descensos de SpO2 cuando la respiración es inadecuada</Spanish>
+            <German>Multiplikator für negative SpO2-Änderungen bei unzureichender Atmung</German>
+            <Japanese>呼吸が適切ではない場合に変化するSpO2のマイナス効果の乗数</Japanese>
+            <Turkish>Yetersiz solunumda SpO₂ düşüşü için çarpan</Turkish>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_MultiplyPositive">
             <English>SpO2 positive multiplier</English>
@@ -1310,33 +1420,46 @@
             <Russian>Положительный множитель SpO2</Russian>
             <German>SpO2 positiver Multiplikator</German>
             <Korean>SpO2의 회복 배율</Korean>
-            <Japanese>SpO2正の乗数</Japanese>
+            <Japanese>SpO2の正の乗数</Japanese>
             <Chinese>SpO2正向乘數</Chinese>
             <Chinesesimp>SpO2值正乘数</Chinesesimp>
             <Finnish>SpO2-positiivinen kerroin</Finnish>
             <Dutch>SpO2 positieve vermenigvuldiger</Dutch>
+            <Turkish>SpO2 pozitif çarpanı</Turkish>
+        </Key>
+        <Key ID="STR_KAT_Breathing_SETTING_MultiplyPositive_DESC">
+            <English>Multiplier for positive SpO2 changes during breathing</English>
+            <French>Multiplicateur pour les variations positives de la SpO2 pendant la respiration</French>
+            <Spanish>Multiplicador para los aumentos positivos de SpO2 durante la respiración</Spanish>
+            <German>Multiplikator für positive SpO2-Änderungen beim Atmen</German>
+            <Japanese>適切な呼吸によって変化するSpO2のプラス効果の乗数</Japanese>
+            <Turkish>Nefes alırken SpO2’nin olumlu değişimleri için çarpan</Turkish>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_PACO2_ENABLE">
             <English>Enable PaCO2</English>
             <Czech>Povolit PaCO2</Czech>
             <French>Activation de la PaCO2</French>
+            <Spanish>Habilitar PaCO2</Spanish>
             <Italian>Abilitare PaCO2</Italian>
             <German>PaCO2 aktivieren</German>
             <Japanese>PaCO2を有効化</Japanese>
             <Chinese>啟用PaCO2</Chinese>
             <Chinesesimp>启用PaCO2</Chinesesimp>
             <Dutch>PaCO2 aanzetten</Dutch>
+            <Turkish>PaCO2’yi Etkinleştir</Turkish>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_PACO2_ENABLE_DESC">
             <English>Enables PaCO2 movement and effects on ph and breathing rate</English>
             <Czech>Povoluje hodnoty PaCO2 a efekt na ph a frekvenci dechu</Czech>
             <French>Permet le déplacement de la PaCO2 et les effets sur le pH et la fréquence respiratoire</French>
+            <Spanish>Habilita el movimiento del PaCO2 y sus efectos sobre el pH y la frecuencia respiratoria</Spanish>
             <Italian>Abilita il movimento di PaCO2 e gli effetti su pH e frequenza respiratoria</Italian>
             <German>Aktiviert PaCO2-Änderungen und die Effekte auf pH und Atemfrequenz</German>
             <Japanese>phや呼吸速度へ影響を与えるPaCO2(動脈血二酸化炭素分圧)の変動を有効にします</Japanese>
             <Chinese>啟用PaCO2的變化及其對pH值和呼吸速率的影響</Chinese>
             <Chinesesimp>启用PaCO2的变化及其对pH值和呼吸速率的影响</Chinesesimp>
             <Dutch>Activeert PaCO2 veranderingen en zijn effecten op pH en ademhalingsfrequentie</Dutch>
+            <Turkish>PaCO2 değişimini ve pH ile solunum hızına etkilerini etkinleştirir</Turkish>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_PerfusionMultiplier">
             <English>Perfusion multiplier</English>
@@ -1354,6 +1477,15 @@
             <Chinesesimp>灌注乘数</Chinesesimp>
             <Finnish>Perfuusiokerroin</Finnish>
             <Dutch>Perfusie vermenigvuldiger</Dutch>
+            <Turkish>Perfüzyon çarpanı</Turkish>
+        </Key>
+        <Key ID="STR_KAT_Breathing_SETTING_PerfusionMultiplier_DESC">
+            <English>Multiplier for SpO2 changes during cardiac arrest</English>
+            <French>Multiplicateur pour les variations de SpO2 pendant un arrêt cardiaque</French>
+            <Spanish>Multiplicador para los cambios de SpO2 durante un paro cardíaco</Spanish>
+            <German>Multiplikator für SpO2-Änderungen während eines Herzstillstands</German>
+            <Japanese>心停止によって変化するSpO2の乗数</Japanese>
+            <Turkish>Kardiyak arrest sırasında SpO2 değişimleri için çarpan</Turkish>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_PneumothoraxAlwaysVisible">
             <English>Pneumothorax always visible</English>
@@ -1370,6 +1502,7 @@
             <Chinesesimp>气胸始终可见</Chinesesimp>
             <Finnish>Pneumothorax on aina näkyvissä</Finnish>
             <Dutch>Pneumothorax altijd zichtbaar</Dutch>
+            <Turkish>Pnömotoraks her zaman görünür</Turkish>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_PneumothoraxAlwaysVisible_DESCRIPTION">
             <English>Sets if pneumothorax should always be visible in the medical menu as an injury instead of requiring diagnosis (1x pneumothorax)</English>
@@ -1386,6 +1519,7 @@
             <Chinesesimp>设置气胸是否应始终作为损伤出现在医疗菜单中，而不需要诊断（1x气胸）</Chinesesimp>
             <Finnish>Määrittää, näkyykö ilmarinta aina lääkärille vammana diagnoosin vaatimisen sijaan (1x ilmarinta)</Finnish>
             <Dutch>Defineert of een pneumothorax altijd zichbaar is in het medische menu als een wond, zonder dat deze een diagnose vereist (1x pneumothorax)</Dutch>
+            <Turkish>Pnömotoraksın tanı gerektirmeden tıbbi menüde bir yaralanma olarak her zaman görünüp görünmeyeceğini belirler (1x pnömotoraks)</Turkish>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_PneumothoraxArrest">
             <English>Enable Pneumothorax Arrest</English>
@@ -1400,6 +1534,7 @@
             <Chinese>啟用氣胸心跳驟停</Chinese>
             <Chinesesimp>启用气胸抑制</Chinesesimp>
             <Dutch>Sta pneumothorax hartstilstand toe</Dutch>
+            <Turkish>Pnömotoraks Sonrası Kardiyak Arresti Etkinleştir</Turkish>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_PneumothoraxArrest_DESCRIPTION">
             <English>Enables a chance for cardiac arrest following pneumothorax</English>
@@ -1414,6 +1549,7 @@
             <Chinese>啟用氣胸後發生心跳停止的機率</Chinese>
             <Chinesesimp>气胸后有可能发生心脏骤停</Chinesesimp>
             <Dutch>Staat de kans op een hartstilstand na een pneumothorax toe</Dutch>
+            <Turkish>Pnömotoraks sonrası kardiyak arrest olasılığını etkinleştirir</Turkish>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_PneumothoraxDamageThreshold_DamageTaken">
             <English>Increase pneumothorax chance based on damage</English>
@@ -1430,6 +1566,7 @@
             <Chinesesimp>根据损伤增加气胸的概率</Chinesesimp>
             <Finnish>Lisää pneumotoraksin mahdollisuutta vaurion perusteella</Finnish>
             <Dutch>Verhoogt pneumothorax kans op basis van schade</Dutch>
+            <Turkish>Hasara bağlı pnömotoraks olasılığını artır</Turkish>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_PneumothoraxDamageThreshold_DamageTaken_DESCRIPTION">
             <English>Increase chance of a pneumothorax and advanced pneumothorax occurring based on damage taken if over the pneumothorax damage threshold</English>
@@ -1446,6 +1583,7 @@
             <Chinesesimp>如果超过气胸损伤阈值，则根据所受损伤增加气胸和晚期气胸发生的概率</Chinesesimp>
             <Finnish>Lisää ilmarintakehän ja pitkälle edenneen ilmarinnan esiintymisen todennäköisyyttä tehdyn vaurion perusteella, jos vaurio on suurempi kuin ilmarintakehän kehittymiseen vaadittava vähimmäisvaurio.</Finnish>
             <Dutch>Verhoogt de kans op een (geadvanceerde) pneumothorax wanneer de schade hoger is dan de drempelwaarde</Dutch>
+            <Turkish>Pnömotoraks hasar eşiği aşılırsa alınan hasara bağlı olarak pnömotoraks ve gelişmiş pnömotoraks oluşma olasılığını artırır</Turkish>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_PocketBVM_MedLvl">
             <English>Allow Pocket BVM</English>
@@ -1463,6 +1601,7 @@
             <Chinesesimp>允许便携式BVM</Chinesesimp>
             <Finnish>Salli kannettava BVM</Finnish>
             <Dutch>Sta zak BVM toe</Dutch>
+            <Turkish>Pocket BVM’ye İzin Ver</Turkish>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_PocketBVM_MedLvl_DESC">
             <English>Sets required medical level to use Pocket BVM</English>
@@ -1480,6 +1619,7 @@
             <Chinesesimp>设置使用Pocket BVM所需的医疗级别</Chinesesimp>
             <Finnish>Asettaa kannettavan BVM:n käyttöön vaaditun lääketieteellisen koulutustason</Finnish>
             <Dutch>Bepaalt het medische trainingsniveau benodigd voor zak BVM gebruik</Dutch>
+            <Turkish>Pocket BVM kullanmak için gereken tıbbi eğitim seviyesini belirler</Turkish>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_PortableOxygenTank_RefillTime">
             <English>Portable Oxygen Tank Base Refill Time</English>
@@ -1497,6 +1637,7 @@
             <Chinesesimp>便携式氧气罐底座加注时间</Chinesesimp>
             <Finnish>Kannettava happisäiliö vähimmäistäyttöaika</Finnish>
             <Dutch>Draagbare zuurstoftank hervullings tijd</Dutch>
+            <Turkish>Taşınabilir Oksijen Tüpü Temel Doldurma Süresi</Turkish>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_PortableOxygenTank_RefillTime_DESC">
             <English>Sets time required to refill Oxygen Tank (150L)</English>
@@ -1514,6 +1655,7 @@
             <Chinesesimp>设置重新填充氧气罐（150L）所需的时间</Chinesesimp>
             <Finnish>Asettaa happisäiliön (150L) täyttämiseen tarvittavan ajan</Finnish>
             <Dutch>Bepaalt de benodigde tijd om een zuurstoftank bij te vullen (150L)</Dutch>
+            <Turkish>Oksijen Tüpünü (150 L) doldurmak için gereken süreyi belirler</Turkish>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_SELF_CHESTSEAL">
             <English>Allow Chest Seal self treatment</English>
@@ -1531,6 +1673,15 @@
             <Chinesesimp>允许自我施用临时气胸密封贴</Chinesesimp>
             <Finnish>Salli rintatiivisteen käyttö itsellesi</Finnish>
             <Dutch>Sta chest seal zelfbehandeling toe</Dutch>
+            <Turkish>Chest Seal ile kendi kendine tedaviye izin ver</Turkish>
+        </Key>
+        <Key ID="STR_KAT_Breathing_SETTING_SELF_CHESTSEAL_DESC">
+            <English>Allows players to apply chest seals on themselves</English>
+            <French>Permet aux joueurs d'appliquer eux-mêmes des pansements occlusifs sur leur poitrine.</French>
+            <Spanish>Permite a los jugadores aplicar sellos torácicos sobre sí mismos</Spanish>
+            <German>Ermöglicht es Spielern, sich selbst Thoraxpflaster anzulegen</German>
+            <Japanese>プレイヤーが自分でチェストシールを貼ることを可能にします。</Japanese>
+            <Turkish>Oyuncuların kendilerine chest seal uygulamasına izin verir</Turkish>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_STABLE_SPO2">
             <English>Stable SpO2 value to gain consciousness</English>
@@ -1546,7 +1697,7 @@
             <Japanese>意識を取り戻すために必要なSpO2値</Japanese>
             <Chinese>穩定的SpO2值以恢復意識</Chinese>
             <Chinesesimp>允许意识清醒的最低SpO2值</Chinesesimp>
-            <Turkish>Bilinç kazanmak için gerekli SpO2 değeri</Turkish>
+            <Turkish>Bilinç kazanmak için temel SpO2 değeri</Turkish>
             <Finnish>SpO2-taso, joka vaaditaan tajunnan palauttamiseksi</Finnish>
             <Dutch>Stabiele SpO2 waarde om bewustzijn te verkrijgen</Dutch>
         </Key>
@@ -1563,6 +1714,15 @@
             <Chinese>ETCo2監測所需的單位</Chinese>
             <Chinesesimp>ETCo2监测所需的单位</Chinesesimp>
             <Dutch>Geprefereerde eenheden voor ETCo2 monitoren</Dutch>
+            <Turkish>ETCO2 İzleme için tercih edilen birimler</Turkish>
+        </Key>
+        <Key ID="STR_KAT_Breathing_SETTING_Select_Etco2_Units_DESC">
+            <English>Units for displaying EtCO2 values</English>
+            <French>Unités d'affichage des valeurs d'EtCO2</French>
+            <Spanish>Unidades para mostrar los valores de EtCO2</Spanish>
+            <German>Einheiten für die Anzeige von EtCO2-Werten</German>
+            <Japanese>EtCO2値の表示単位</Japanese>
+            <Turkish>ETCO2 değerlerinin gösterim birimleri</Turkish>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_SpO2_Perfusion">
             <English>Enable cardiac arrest SpO2 reduction</English>
@@ -1580,6 +1740,15 @@
             <Chinesesimp>心脏骤停时减少SpO2的下降</Chinesesimp>
             <Finnish>Ota käyttöön sydämenpysähdyksen SpO2-vähennys</Finnish>
             <Dutch>Activeer SpO2 verlies tijdens hartstilstand</Dutch>
+            <Turkish>Kardiyak arrest sırasında SpO2 düşüşünü etkinleştir</Turkish>
+        </Key>
+        <Key ID="STR_KAT_Breathing_SETTING_SpO2_Perfusion_DESC">
+            <English>Controls whether SpO2 falls during cardiac arrest</English>
+            <French>Contrôle si la SpO2 chute pendant un arrêt cardiaque</French>
+            <Spanish>Controla si la SpO2 disminuye durante un paro cardíaco</Spanish>
+            <German>Kontrolliert, ob SpO2 während eines Herzstillstands fällt</German>
+            <Japanese>心停止によってSpO2が低下するかどうかを制御します。</Japanese>
+            <Turkish>Kardiyak arrest sırasında SpO2’nin düşüp düşmeyeceğini kontrol eder</Turkish>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_SpO2_cardiacActive">
             <English>Activate cardiac arrest SpO2 value</English>
@@ -1594,6 +1763,15 @@
             <Chinese>激活心跳停止SpO2值</Chinese>
             <Chinesesimp>激活心脏骤停的SpO2值</Chinesesimp>
             <Dutch>Activeer hartstilstand SpO2 waarde</Dutch>
+            <Turkish>Kardiyak arrest SpO2 değerini etkinleştir</Turkish>
+        </Key>
+        <Key ID="STR_KAT_Breathing_SETTING_SpO2_cardiacActive_DESC">
+            <English>Enables cardiac arrest when SpO2 reaches the cardiac value</English>
+            <French>Active l'arrêt cardiaque lorsque la SpO2 atteint la valeur cardiaque</French>
+            <Spanish>Activa el paro cardíaco cuando la SpO2 alcanza el valor cardíaco</Spanish>
+            <German>Aktiviert Herzstillstand, wenn SpO2 den Herzwert erreicht</German>
+            <Japanese>SpO2が心停止値に達した場合に心停止に至るようにします。</Japanese>
+            <Turkish>SpO2 kardiyak değere ulaştığında kardiyak arresti etkinleştirir</Turkish>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_SpO2_cardiacValue">
             <English>Cardiac arrest SpO2 value</English>
@@ -1608,6 +1786,15 @@
             <Chinese>心跳停止SpO2值</Chinese>
             <Chinesesimp>心脏骤停SpO2值</Chinesesimp>
             <Dutch>Hartstilstand SpO2 waarde</Dutch>
+            <Turkish>Kardiyak arrest SpO2 değeri</Turkish>
+        </Key>
+        <Key ID="STR_KAT_Breathing_SETTING_SpO2_cardiacValue_DESC">
+            <English>Sets the SpO2 value that triggers cardiac arrest</English>
+            <French>Définit la valeur SpO2 qui déclenche un arrêt cardiaque.</French>
+            <Spanish>Establece el valor de SpO2 que desencadena un paro cardíaco</Spanish>
+            <German>Legt den SpO2-Wert fest, der einen Herzstillstand auslöst</German>
+            <Japanese>到達すると心停止を引き起こすSpO2値を設定します。</Japanese>
+            <Turkish>Kardiyak arresti tetikleyen SpO2 değerini belirler</Turkish>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_SpO2_dieActive">
             <English>Activate lethal SpO2 value</English>
@@ -1627,6 +1814,14 @@
             <Finnish>Aktivoi tappava SpO2-arvo</Finnish>
             <Dutch>Activeer dodelijke SpO2 waarde</Dutch>
         </Key>
+        <Key ID="STR_KAT_Breathing_SETTING_SpO2_dieActive_DESC">
+            <English>Enables death when SpO2 reaches the lethal value</English>
+            <French>Active la mort lorsque la SpO2 atteint la valeur létale</French>
+            <Spanish>Activa la muerte cuando la SpO2 alcanza el valor letal</Spanish>
+            <German>Aktiviert den Tod, wenn SpO2 den tödlichen Wert erreicht</German>
+            <Japanese>SpO2が致死値に達した場合に死に至るようにします。</Japanese>
+            <Turkish>SpO2 ölümcül değere ulaştığında ölümü etkinleştirir</Turkish>
+        </Key>
         <Key ID="STR_KAT_Breathing_SETTING_SpO2_dieValue">
             <English>Lethal SpO2 value</English>
             <Czech>Smrtelná hodnota SpO2</Czech>
@@ -1644,6 +1839,14 @@
             <Turkish>Ölümcül SpO2 değeri</Turkish>
             <Finnish>Tappava SpO2-arvo</Finnish>
             <Dutch>Dodelijke SpO2 waarde</Dutch>
+        </Key>
+        <Key ID="STR_KAT_Breathing_SETTING_SpO2_dieValue_DESC">
+            <English>Sets the SpO2 value that causes death when reached</English>
+            <French>Définit la valeur SpO2 qui entraîne la mort lorsqu'elle est atteinte.</French>
+            <Spanish>Establece el valor de SpO2 que provoca la muerte al alcanzarse</Spanish>
+            <German>Legt den SpO2-Wert fest, der bei Erreichen den Tod verursacht</German>
+            <Japanese>到達すると死に至るSpO2値を設定します。</Japanese>
+            <Turkish>Ulaşıldığında ölüme neden olan SpO2 değerini belirler</Turkish>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_SpO2_unconscious">
             <English>Unconscious SpO2 value</English>
@@ -1677,7 +1880,7 @@
             <Japanese>SpO2(血酸素飽和度)が設定した値を下回ると気絶し、無意識状態に陥ります。</Japanese>
             <Chinese>當下降到低於該值時，會引起昏迷的SpO2值</Chinese>
             <Chinesesimp>当下降到低于该值时，会令人昏迷的SpO2值</Chinesesimp>
-            <Turkish>Bu değerin altına düştüğünde bilinç kaybına neden olacak SpO2 değeri</Turkish>
+            <Turkish>Bu değerin altına düştüğünde bilinç kaybına neden olan SpO2 değeri</Turkish>
             <Finnish>SpO2-arvo, joka saavuttaessaan aiheuttaa tajuttomuuden</Finnish>
             <Dutch>De SpO2 waarde waaronder je het bewustzijn verliest</Dutch>
         </Key>
@@ -1697,6 +1900,7 @@
             <Chinesesimp>如果SpO2低于90%（默认值），会让你失去耐力</Chinesesimp>
             <Finnish>Menettää kestävyyden, jos olet alle tietyn SpO2-tason (oletusarvo on 90 %)</Finnish>
             <Dutch>Zorgt ervoor dat je stamina verliest als je onder 90% SpO2 zit (standaard waarde)</Dutch>
+            <Turkish>SpO2 %90’ın altındaysa (varsayılan değer) dayanıklılık kaybına neden olur</Turkish>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_Stamina_Loss_SPO2_display">
             <English>Enable Stamina loss on low SpO2</English>
@@ -1714,6 +1918,7 @@
             <Chinesesimp>在低SpO2时启用耐力损失</Chinesesimp>
             <Finnish>Ota kestävyyden menetys käyttöön alhaisilla SpO2-tasoilla</Finnish>
             <Dutch>Sta stamina verlies op laag SpO2 toe</Dutch>
+            <Turkish>Düşük SpO2'de dayanıklılık kaybını etkinleştir</Turkish>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_TensionHemothoraxAlwaysVisible">
             <English>Tension pneumothorax and hemothorax always visible</English>
@@ -1730,6 +1935,7 @@
             <Chinesesimp>设置张力性气胸和血气胸是否应始终作为损伤出现在医疗菜单中，而不需要诊断（1x张力性气胸/1x血气胸）</Chinesesimp>
             <Finnish>Jännitysilmarinta ja hemothorax ovat aina näkyvissä</Finnish>
             <Dutch>Spannings- en hemopneumothorax altijd zichtbaar</Dutch>
+            <Turkish>Gergin pnömotoraks ve hemotoraks her zaman görünür</Turkish>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_TensionHemothoraxAlwaysVisible_DESCRIPTION">
             <English>Sets if tension pneumothorax and hemopneumothorax should always be visible in the medical menu as an injury instead of requiring diagnosis (1x tensionpneumothorax/1x hemopneumothorax)</English>
@@ -1746,6 +1952,7 @@
             <Chinesesimp>设置张力性气胸和血气胸是否应始终作为损伤出现在医疗菜单中，而不需要诊断</Chinesesimp>
             <Finnish>Määrittää, pitäisikö jännityspneumotoraksin ja hemopneumotoraksin aina näkyä lääkärille vammana diagnoosin vaatimisen sijaan (1x jännitysilmarinta tai hemopneumotoraksi)</Finnish>
             <Dutch>Defineert of spannings- en hemopneumothoraxen altijd zichtbaar zijn in het medische menu als een wond, zonder dat deze een diagnose vereist (1x spanningspneumothorax / 1x hemopneumothorax)</Dutch>
+            <Turkish>Gergin pnömotoraks ve hemopnömotoraksın tanı gerektirmeden tıbbi menüde bir yaralanma olarak her zaman görünüp görünmeyeceğini belirler</Turkish>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_Threshold_SpO2Warning">
             <English>Pulse Oximeter Alarm SpO2 Threshold</English>
@@ -1763,6 +1970,15 @@
             <Chinesesimp>脉搏血氧仪报警SpO2阈值</Chinesesimp>
             <Finnish>SpO2-taso, joka laukaisee pulssioksimetrin hälytyksen</Finnish>
             <Dutch>Pulsoximeter alarm SpO2 drempelwaarde</Dutch>
+            <Turkish>Pulse Oximeter Alarmı SpO2 Eşiği</Turkish>
+        </Key>
+        <Key ID="STR_KAT_Breathing_SETTING_Threshold_SpO2Warning_DESC">
+            <English>SpO2 level at which the pulse oximeter starts warning</English>
+            <French>Niveau de SpO2 auquel l'oxymètre de pouls commence à émettre un avertissement</French>
+            <Spanish>Nivel de SpO2 en el que el pulsioxímetro comienza a advertir</Spanish>
+            <German>SpO2-Wert, bei dem das Pulsoximeter zu warnen beginnt</German>
+            <Japanese>パルスオキシメーターが警告を開始するSpO2の値</Japanese>
+            <Turkish>Pulse oximeter’ın uyarı vermeye başladığı SpO2 seviyesi</Turkish>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_Time_NasalCannula">
             <English>Time for Nasal Cannula</English>
@@ -1777,6 +1993,7 @@
             <Chinese>鼻導管所需時間</Chinese>
             <Chinesesimp>鼻导管所需时间</Chinesesimp>
             <Dutch>Tijd voor het inbrengen van een nasale canule</Dutch>
+            <Turkish>Nasal Cannula Süresi</Turkish>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_Time_NasalCannula_Desc">
             <English>How long it will take to insert a Nasal Cannula</English>
@@ -1791,6 +2008,7 @@
             <Chinese>插入鼻導管需要多長時間</Chinese>
             <Chinesesimp>插入鼻导管需要多长时间</Chinesesimp>
             <Dutch>Hoelang het gaat duren om een nasale canule in te brengen</Dutch>
+            <Turkish>Nasal Cannula yerleştirmenin ne kadar süreceği</Turkish>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_arrestPneumothorax_interval">
             <English>Deteriorating pneumothorax arrest interval</English>
@@ -1805,6 +2023,7 @@
             <Chinese>惡化性氣胸驟停間隔</Chinese>
             <Chinesesimp>气胸停止间隔恶化</Chinesesimp>
             <Dutch>Pneumothorax verslechterings hartstilstand interval</Dutch>
+            <Turkish>Kötüleşen pnömotoraks arrest aralığı</Turkish>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_arrestPneumothorax_interval_Desc">
             <English>After each interval a chance will be rolled whether or not a pneumothorax will result in cardiac arrest</English>
@@ -1819,6 +2038,7 @@
             <Chinese>每個間隔後，將計算氣胸是否導致心跳停止的機率</Chinese>
             <Chinesesimp>每间隔一次，就会有概率判断气胸是否会导致心脏骤停</Chinesesimp>
             <Dutch>na elke interval wordt er een kansrol uitgevoerd die bepaald of een pneumothorax leidt tot een hartstilstand</Dutch>
+            <Turkish>Her aralıktan sonra pnömotoraksın kardiyak arrestle sonuçlanıp sonuçlanmayacağı için bir olasılık hesaplanır</Turkish>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_clearChestSealAfterTreatment">
             <English>Clear Chest Seal after treatment</English>
@@ -1835,6 +2055,15 @@
             <Chinesesimp>治疗后移除胸腔密封贴</Chinesesimp>
             <Finnish>Poista rintatiiviste hoidon jälkeen</Finnish>
             <Dutch>Verwijder chest seal na behandeling</Dutch>
+            <Turkish>Tedavi sonrası Chest Seal’i temizle</Turkish>
+        </Key>
+        <Key ID="STR_KAT_Breathing_SETTING_clearChestSealAfterTreatment_DESC">
+            <English>Removes chest seal from medical menu after pneumothorax treatment</English>
+            <French>Retire le pansement occlusif thoracique du menu médical après le traitement du pneumothorax.</French>
+            <Spanish>Elimina el sello torácico del menú médico después del tratamiento de un neumotórax</Spanish>
+            <German>Entfernt Thoraxpflaster aus dem Medizinmenü nach Pneumothorax-Behandlung</German>
+            <Japanese>気胸の治療後、医療メニューからチェストシールを除去します。</Japanese>
+            <Turkish>Pnömotoraks tedavisinden sonra chest seal’i tıbbi menüden kaldırır</Turkish>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_deepPenetratingInjuryChance">
             <English>Deep Penetrating Injury Chance</English>
@@ -1851,6 +2080,7 @@
             <Chinesesimp>深度穿透伤概率</Chinesesimp>
             <Finnish>Mahdollisuus syvään tunkeutuvaan vammaan</Finnish>
             <Dutch>Kans op diep penetrerende wond.</Dutch>
+            <Turkish>Derin Delici Yaralanma Olasılığı</Turkish>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_deepPenetratingInjuryChance_DESC">
             <English>Chance for deep penetrating injury to appear when pneumothorax damage threshold is passed but no pneumothorax is inflicted</English>
@@ -1867,6 +2097,7 @@
             <Chinesesimp>当超过气胸损伤阈值但未造成气胸时，出现深穿透伤的概率</Chinesesimp>
             <Finnish>Mahdollisuus syvään tunkeutuvaan vammaan syntyy, kun ilmarintakehän vaurioituminen on minimaalista, mutta ilmarintaa ei ole kehittynyt.</Finnish>
             <Dutch>Kans voor het verschijnen van een diep penetrerende wond wanneer de drempelwaarde voor een pneumothorax overschreden wordt maar er geen pneumothorax gerold wordt.</Dutch>
+            <Turkish>Pnömotoraks hasar eşiği geçildiği hâlde pnömotoraks oluşmazsa derin penetran yaralanma ortaya çıkma olasılığı</Turkish>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_deterioratingPneumothorax_chance">
             <English>Pneumothorax deterioration chance</English>
@@ -1884,6 +2115,7 @@
             <Chinesesimp>气胸恶化概率</Chinesesimp>
             <Finnish>Pneumotoraksin huononemisen mahdollisuus</Finnish>
             <Dutch>Pneumothorax verslechteringskans</Dutch>
+            <Turkish>Pnömotoraks kötüleşme olasılığı</Turkish>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_deterioratingPneumothorax_chance_DESC">
             <English>Chance for pneumothorax to deteriorate</English>
@@ -1900,6 +2132,7 @@
             <Chinesesimp>气胸恶化的可能性</Chinesesimp>
             <Finnish>Pneumotoraksin mahdollisuus pahentua</Finnish>
             <Dutch>Kans voor een pneumothorax om te verslechteren</Dutch>
+            <Turkish>Pnömotoraksın kötüleşme ihtimali</Turkish>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_deterioratingPneumothorax_interval">
             <English>Deteriorating pneumothorax interval</English>
@@ -1916,6 +2149,7 @@
             <Chinesesimp>气胸间隔恶化</Chinesesimp>
             <Finnish>Aika pneumotoraksin pahenemismahdollisuuksien välillä</Finnish>
             <Dutch>Pneumothorax verslechteringsinterval</Dutch>
+            <Turkish>Pnömotoraks kötüleşme aralığı</Turkish>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_deterioratingPneumothorax_interval_Desc">
             <English>After each interval a chance will be rolled whether or not the pneumothorax will deteriorate</English>
@@ -1932,28 +2166,33 @@
             <Chinesesimp>每次间隔后，气胸是否会恶化的概率都会被滚动</Chinesesimp>
             <Finnish>Jokaisen ajanjakson jälkeen lasketaan mahdollisuus, paheneeko ilmarinta vai ei</Finnish>
             <Dutch>Na elke interval wordt een nieuwe kansrol uitgevoerd die bepaald of de pneumothorax verslechterd</Dutch>
+            <Turkish>Her aralıktan sonra pnömotoraksın kötüleşip kötüleşmeyeceği için bir olasılık hesaplanır</Turkish>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_enableCheckBreathing">
             <English>Enable Check Breathing</English>
             <Czech>Povolit Kontrolu Dýchání</Czech>
             <French>Activer le contrôle de la respiration</French>
+            <Spanish>Habilitar verificación de la respiración</Spanish>
             <Italian>Abilitare il controllo della respirazione</Italian>
             <German>Atmung überprüfen aktivieren</German>
             <Japanese>"呼吸を確認"を有効化</Japanese>
             <Chinese>啟用檢查呼吸</Chinese>
             <Chinesesimp>启用检查呼吸</Chinesesimp>
             <Dutch>Ademhalingscheck aanzetten</Dutch>
+            <Turkish>Solunum Kontrolünü Etkinleştir</Turkish>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_enableCheckBreathing_DESC">
             <English>Whether or not Check Breathing medical action is enabled</English>
             <Czech>Zda je či není povolena Kontrola Dýchání</Czech>
             <French>Si "Contrôle de la respiration" est activée ou non</French>
+            <Spanish>Indica si la acción médica Verificar Respiración está habilitada o no</Spanish>
             <Italian>Se l'azione medica di controllo della respirazione è abilitata o meno</Italian>
             <German>Ändert, ob die Aktion "Atmung überprüfen" verfügbar ist</German>
             <Japanese>呼吸を確認のアクションを可能にするかどうかを設定します</Japanese>
             <Chinese>檢查呼吸醫療動作是否啟用</Chinese>
             <Chinesesimp>检查呼吸医疗动作是否启用</Chinesesimp>
             <Dutch>Bepaald of de Ademhalingscheck handeling aangezet is</Dutch>
+            <Turkish>Solunum Kontrolü tıbbi eyleminin etkin olup olmadığını belirler</Turkish>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_inspectChest_enable">
             <English>Enable Inspect Chest</English>
@@ -1970,6 +2209,15 @@
             <Chinesesimp>启用胸部检查</Chinesesimp>
             <Finnish>Ota rinnan tarkastus käyttöön</Finnish>
             <Dutch>Sta Thoraxinspectie toe</Dutch>
+            <Turkish>Göğüs İncelemesini Etkinleştir</Turkish>
+        </Key>
+        <Key ID="STR_KAT_Breathing_SETTING_inspectChest_enable_DESC">
+            <English>Enables the inspect chest action for diagnosing thoracic injuries</English>
+            <French>Permet l'action d'inspection thoracique pour diagnostiquer les blessures thoraciques.</French>
+            <Spanish>Activa la acción de inspeccionar el pecho para diagnosticar lesiones torácicas</Spanish>
+            <German>Aktiviert die Brustraumuntersuchung zur Diagnose von Thoraxverletzungen</German>
+            <Japanese>胸腔損傷の診断に必要な胸部検査を有効化します</Japanese>
+            <Turkish>Göğüs yaralanmalarını teşhis etmek için göğüs inceleme eylemini etkinleştirir</Turkish>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_inspectChest_enable_simple">
             <English>Simple</English>
@@ -1986,6 +2234,7 @@
             <Chinesesimp>简单</Chinesesimp>
             <Finnish>Yksinkertainen</Finnish>
             <Dutch>Simpel</Dutch>
+            <Turkish>Basit</Turkish>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_inspectChest_medLvl">
             <English>Allow Inspecting Chest</English>
@@ -2002,6 +2251,15 @@
             <Chinesesimp>允许检查胸部</Chinesesimp>
             <Finnish>Salli rintatutkimus</Finnish>
             <Dutch>Sta thorax inspectie toe</Dutch>
+            <Turkish>Göğüs İncelemesine İzin Ver</Turkish>
+        </Key>
+        <Key ID="STR_KAT_Breathing_SETTING_inspectChest_medLvl_DESC">
+            <English>Required medical training level to perform chest inspection</English>
+            <French>Niveau de formation médicale requis pour effectuer un examen thoracique</French>
+            <Spanish>Nivel de formación médica requerido para realizar la inspección del pecho</Spanish>
+            <German>Erforderliche medizinische Ausbildungsstufe für Brustraumuntersuchung</German>
+            <Japanese>胸部検査の使用に必要な医療スキルのレベルを設定します。</Japanese>
+            <Turkish>Göğüs incelemesi yapmak için gereken tıbbi eğitim seviyesi</Turkish>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_inspectChest_time">
             <English>Inspect Chest Time</English>
@@ -2018,6 +2276,15 @@
             <Chinesesimp>检查胸部时间</Chinesesimp>
             <Finnish>Kuinka kauan rintakehän tarkastus kestää</Finnish>
             <Dutch>Thorax inspectie tijd</Dutch>
+            <Turkish>Göğüs İnceleme Süresi</Turkish>
+        </Key>
+        <Key ID="STR_KAT_Breathing_SETTING_inspectChest_time_DESC">
+            <English>Time required to complete chest inspection</English>
+            <French>Temps nécessaire pour effectuer l'inspection thoracique</French>
+            <Spanish>Tiempo necesario para completar la inspección del pecho</Spanish>
+            <German>Benötigte Zeit für die Brustraumuntersuchung</German>
+            <Japanese>胸部検査の完了にかかる時間</Japanese>
+            <Turkish>Göğüs incelemesini tamamlamak için gereken süre</Turkish>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_locationProvideOxygen">
             <English>Location Provide Oxygen</English>
@@ -2034,6 +2301,7 @@
             <Chinesesimp>位置提供氧气</Chinesesimp>
             <Finnish>Tarjoaako sijainti happea</Finnish>
             <Dutch>Locaties die zuurstof geven</Dutch>
+            <Turkish>Konum Oksijen Sağlar</Turkish>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_locationProvideOxygen_DESC">
             <English>Sets if medical vehicles/facilites can provide oxygen</English>
@@ -2050,6 +2318,7 @@
             <Chinesesimp>设置医疗车辆/设施是否可以提供氧气</Chinesesimp>
             <Finnish>Määrittää, voivatko lääketieteelliset ajoneuvot tai tilat tarjota happea</Finnish>
             <Dutch>Bepaalt of voertuigen/gebouwen zuurstof kunnen geven</Dutch>
+            <Turkish>Sağlık araçları/tesislerinin oksijen sağlayıp sağlayamayacağını belirler</Turkish>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_mildValue">
             <English>Mild cyanosis SpO2 value</English>
@@ -2105,6 +2374,14 @@
             <Finnish>Hemopneumotoraksin mahdollisuus</Finnish>
             <Dutch>Kans op een pneumothorax</Dutch>
         </Key>
+        <Key ID="STR_KAT_Breathing_SETTING_pneumothorax_DESC">
+            <English>Probability for pneumothorax to occur from thoracic injuries</English>
+            <French>Probabilité d'apparition d'un pneumothorax à la suite d'une blessure thoracique</French>
+            <Spanish>Probabilidad de que ocurra un neumotórax a partir de lesiones torácicas</Spanish>
+            <German>Wahrscheinlichkeit für Pneumothorax bei Thoraxverletzungen</German>
+            <Japanese>胸部の負傷による気胸の発生確率</Japanese>
+            <Turkish>Toraks yaralanmalarından pnömotoraks oluşma olasılığı</Turkish>
+        </Key>
         <Key ID="STR_KAT_Breathing_SETTING_severeValue">
             <English>Severe cyanosis SpO2 value</English>
             <Czech>SpO2 hodnota těžké cyanózy</Czech>
@@ -2156,6 +2433,7 @@
             <Chinesesimp>显示发绀</Chinesesimp>
             <Finnish>Näytä syanoosi</Finnish>
             <Dutch>Toon cyanose</Dutch>
+            <Turkish>Siyanozu Göster</Turkish>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_showCyanosis_DESC">
             <English>Shows cyanosis of patient in overview tab</English>
@@ -2172,6 +2450,7 @@
             <Chinesesimp>在概览选项卡中显示患者的紫绀</Chinesesimp>
             <Finnish>Näyttää potilaan syanoosin lääketieteellisen yleiskuvan näytössä</Finnish>
             <Dutch>Toont de cyanose van de patiënt op de overzichtspagina</Dutch>
+            <Turkish>Genel bakış sekmesinde hastanın siyanozunu gösterir</Turkish>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_slightValue">
             <English>Slight cyanosis SpO2 value</English>
@@ -2225,6 +2504,7 @@
             <Chinesesimp>听诊器所需时间</Chinesesimp>
             <Finnish>Stetoskoopin kuunteluaika</Finnish>
             <Dutch>Stethoscoop luister tijd</Dutch>
+            <Turkish>Stetoskop Dinleme Süresi</Turkish>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_stethoscopeListeningTime_DESC">
             <English>Sets how long the stethoscope listening period is</English>
@@ -2242,6 +2522,7 @@
             <Chinesesimp>使用听诊器听诊所需时间</Chinesesimp>
             <Finnish>Asettaa kuinka pitkä stetoskoopin kuuntelujakso on</Finnish>
             <Dutch>Bepaald hoelang de stethoscoop luister periode is</Dutch>
+            <Turkish>Stetoskopla dinleme süresinin ne kadar olacağını belirler</Turkish>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_stethoscopeSoundVolume">
             <English>Stethoscope Sound Volume</English>
@@ -2274,7 +2555,7 @@
             <Japanese>聴診器を使用した際の呼吸音の音の大きさを定義します</Japanese>
             <Chinese>確定使用聽診器時胸部聲音的響度</Chinese>
             <Chinesesimp>确定使用听诊器时胸部声音的响度</Chinesesimp>
-            <Turkish>Stetoskop kullanırken toraks seslerinin ne kadar yüksek olduğunu belirler</Turkish>
+            <Turkish>Stetoskop kullanıldığında solunum seslerinin ne kadar yüksek olacağını belirler</Turkish>
             <Finnish>Stetoskoopin äänenvoimakkuus</Finnish>
             <Dutch>Bepaald hoe luid de longgeluiden zijn tijdens het luisteren met een stethoscoop</Dutch>
         </Key>
@@ -2294,6 +2575,7 @@
             <Chinesesimp>首选便携式氧气罐（150L）</Chinesesimp>
             <Finnish>Aseta kannettava happisäiliö (150L) ensisijaiseksi happisäiliöksi</Finnish>
             <Dutch>Defineert de 150L draagbare zuurstoftank als voorkeurstank</Dutch>
+            <Turkish>Taşınabilir Oksijen Tüpünü (150 L) tercih edilen olarak ayarla</Turkish>
         </Key>
         <Key ID="STR_KAT_Breathing_SetPreferredOxygenTank_300">
             <English>Set Portable Oxygen Tank (300L) as preferred</English>
@@ -2311,6 +2593,7 @@
             <Chinesesimp>首选便携式氧气罐（300L）</Chinesesimp>
             <Finnish>Aseta kannettava happisäiliö (300L) ensisijaiseksi happisäiliöksi</Finnish>
             <Dutch>Defineert de 300L draagbare zuurstoftank als voorkeurstank</Dutch>
+            <Turkish>Taşınabilir Oksijen Tüpünü (300 L) tercih edilen olarak ayarla</Turkish>
         </Key>
         <Key ID="STR_KAT_Breathing_Stethoscope_desc">
             <English>Allows you to auscultate lung sounds</English>
@@ -2364,6 +2647,7 @@
             <Chinesesimp>紫绀设置</Chinesesimp>
             <Finnish>Syanoosin asetukset</Finnish>
             <Dutch>Cyanose instellingen</Dutch>
+            <Turkish>Siyanoz Ayarları</Turkish>
         </Key>
         <Key ID="STR_KAT_Breathing_SubCategory_Items">
             <English>Breathing items Settings</English>
@@ -2381,6 +2665,7 @@
             <Chinesesimp>呼吸项目设置</Chinesesimp>
             <Finnish>Hengityselinten hoitolaitteiden asetukset</Finnish>
             <Dutch>Ademhalingsitem instellingen</Dutch>
+            <Turkish>Solunum Eşyaları Ayarları</Turkish>
         </Key>
         <Key ID="STR_KAT_Breathing_SubCategory_ThoraxInjuries">
             <English>Thorax injuries Settings</English>
@@ -2393,11 +2678,12 @@
             <Russian>Параметры травм грудной клетки</Russian>
             <German>Thoraxverletzungs-Einstellungen</German>
             <Korean>흉부 부상 설정</Korean>
-            <Japanese>胸腔負傷の設定</Japanese>
+            <Japanese>胸腔損傷の設定</Japanese>
             <Chinese>胸部損傷設定</Chinese>
             <Chinesesimp>胸部损伤设置</Chinesesimp>
             <Finnish>Asetukset rintakehän vammoihin</Finnish>
             <Dutch>Thoraxverwonding instellingen</Dutch>
+            <Turkish>Toraks Yaralanmaları Ayarları</Turkish>
         </Key>
         <Key ID="STR_KAT_Breathing_TRAININGLEVEL_CHESTSEAL">
             <English>Training level required to use a Chest Seal</English>
@@ -2451,6 +2737,7 @@
             <Chinesesimp>使用BVM</Chinesesimp>
             <Finnish>Käytä BVM:ää</Finnish>
             <Dutch>Gebruik BVM</Dutch>
+            <Turkish>BVM Kullan</Turkish>
         </Key>
         <Key ID="STR_KAT_Breathing_UseBVM_Cancelled">
             <English>Rescue Breaths Cancelled</English>
@@ -2467,6 +2754,7 @@
             <Chinesesimp>救援呼吸被取消</Chinesesimp>
             <Finnish>Pelastushengitykset peruttu</Finnish>
             <Dutch>Beademing is gestopt</Dutch>
+            <Turkish>Kurtarıcı Soluklar İptal Edildi</Turkish>
         </Key>
         <Key ID="STR_KAT_Breathing_UseBVM_Oxygen">
             <English>Use BVM with Oxygen</English>
@@ -2483,6 +2771,7 @@
             <Chinesesimp>使用含氧气的BVM</Chinesesimp>
             <Finnish>Käytä BVM:ää hapen kanssa</Finnish>
             <Dutch>Gebruik BVM met zuurstof</Dutch>
+            <Turkish>Oksijenle BVM Kullan</Turkish>
         </Key>
         <Key ID="STR_KAT_Breathing_UseBVM_PortableOxygen">
             <English>Use BVM with Oxygen Tank</English>
@@ -2500,6 +2789,7 @@
             <Chinesesimp>使用带氧气罐的BVM</Chinesesimp>
             <Finnish>Käytä BVM:ää happisäiliön kanssa</Finnish>
             <Dutch>Gebruik BVM met zuurstoftank</Dutch>
+            <Turkish>Oksijen Tüpü ile BVM Kullan</Turkish>
         </Key>
         <Key ID="STR_KAT_Breathing_UseBVM_PortableOxygen_Vehicle">
             <English>Use BVM with Oxygen Tank (Vehicle)</English>
@@ -2516,6 +2806,7 @@
             <Chinesesimp>使用带氧气罐的BVM（车辆）</Chinesesimp>
             <Finnish>Käytä BVM:ää ajoneuvon happisäiliön kanssa</Finnish>
             <Dutch>Gebruik BVM met zuurstoftank (voertuig)</Dutch>
+            <Turkish>Araçtaki Oksijen Tüpü ile BVM Kullan</Turkish>
         </Key>
         <Key ID="STR_KAT_Breathing_UseBVM_PutAway">
             <English>Put away BVM</English>
@@ -2532,6 +2823,7 @@
             <Chinesesimp>收起BVM</Chinesesimp>
             <Finnish>Varastoi BVM</Finnish>
             <Dutch>BVM wegleggen</Dutch>
+            <Turkish>BVM’yi Kaldır</Turkish>
         </Key>
         <Key ID="STR_KAT_Breathing_UseBVM_Start">
             <English>Rescue Breaths Started</English>
@@ -2547,6 +2839,7 @@
             <Chinesesimp>救援呼吸开始</Chinesesimp>
             <Finnish>Pelastushengitykset alkavat</Finnish>
             <Dutch>Beademing gestart</Dutch>
+            <Turkish>Kurtarıcı Soluklar Başladı</Turkish>
         </Key>
         <Key ID="STR_KAT_Breathing_UsePocketBVM">
             <English>Use Pocket BVM</English>
@@ -2564,17 +2857,20 @@
             <Chinesesimp>使用便携式BVM</Chinesesimp>
             <Finnish>Käytä kannettavaa BVM:ää</Finnish>
             <Dutch>Gebruik zak BVM</Dutch>
+            <Turkish>Pocket BVM Kullan</Turkish>
         </Key>
         <Key ID="STR_KAT_Breathing_VehicleOxygen_Affirm">
             <English>Attached to Aircraft Oxygen</English>
             <Czech>Připojeno ke Kyslíku Letounu</Czech>
             <French>Attaché à l'oxygène de l'aéronef</French>
+            <Spanish>Conectado al oxígeno de la aeronave</Spanish>
             <Italian>Collegato alla riserva d'Ossigeno del velivolo</Italian>
             <German>Mit Luftfahrzeug-Sauerstoff verbunden</German>
             <Japanese>航空機酸素供給機に接続済</Japanese>
             <Chinese>附在飛機氧氣上</Chinese>
             <Chinesesimp>附在飞机氧气上</Chinesesimp>
             <Dutch>Met vliegtuig zuurstofsyteem verbonden</Dutch>
+            <Turkish>Uçak Oksijenine Bağlandı</Turkish>
         </Key>
         <Key ID="STR_KAT_Breathing_aatKit_desc">
             <English>The Advanced Airway Treatment Kit is a single use kit designed to treat advanced airway conditions, like hemopneumothorax</English>
@@ -2590,7 +2886,7 @@
             <Japanese>AAT キット (Advanced Airway Treatment, 高度気道治療)は、血気胸などの重度な呼吸器症状を治療するために設計された使い捨てキットです。</Japanese>
             <Chinese>進階氣道治療套件是一次性使用的套件，用於治療氣道血氣胸等進階氣道疾病</Chinese>
             <Chinesesimp>高级气道治疗套件(AAT Kit),用于处理与气胸相关问题</Chinesesimp>
-            <Turkish>Gelişmiş Hava Yolu Tedavi Kiti, hemopnömotoraks gibi gelişmiş hava yolu koşullarını tedavi etmek için tasarlanmış tek kullanımlık bir kittir.</Turkish>
+            <Turkish>Advanced Airway Treatment Kit, hemopnömotoraks gibi ileri hava yolu durumlarını tedavi etmek için tasarlanmış tek kullanımlık bir kittir</Turkish>
             <Finnish>AAT-laite on kertakäyttöinen työkalu, joka on suunniteltu tappavien hengitystiesairauksien, kuten hemopneumotoraksin, hoitoon</Finnish>
             <Dutch>de AAT kit is een eenmalig gebruik kit ontwikkeld voor het behandelen van geadvanceerde luchtwegcondities</Dutch>
         </Key>
@@ -2626,7 +2922,7 @@
             <Japanese>肺音を聴診</Japanese>
             <Chinese>聽診肺音</Chinese>
             <Chinesesimp>听诊肺音</Chinesesimp>
-            <Turkish>Akciğer Seslerini Dinleyin</Turkish>
+            <Turkish>Akciğer Seslerini Dinle</Turkish>
             <Finnish>Kuuntele keuhkojen ääniä</Finnish>
             <Dutch>Beluister de longen</Dutch>
         </Key>
@@ -2645,6 +2941,7 @@
             <Chinesesimp>，略带果香</Chinesesimp>
             <Finnish>, hieman hedelmäinen</Finnish>
             <Dutch>, lichtelijk fruitig</Dutch>
+            <Turkish>, hafif meyvemsi</Turkish>
         </Key>
         <Key ID="STR_KAT_Breathing_breath_stink">
             <English>, harsh and metallic</English>
@@ -2661,16 +2958,19 @@
             <Chinesesimp>，粗糙的金属质感</Chinesesimp>
             <Finnish>, kova ja metallinen</Finnish>
             <Dutch>, hard en metaalachtig</Dutch>
+            <Turkish>, sert ve metalik</Turkish>
         </Key>
         <Key ID="STR_KAT_Breathing_breathing_Veryshallow">
             <English>Very Shallow</English>
             <Czech>Velmi mělký</Czech>
             <French>Très superficielle</French>
+            <Spanish>Muy superficial</Spanish>
             <Italian>Molto Debole</Italian>
             <German>Sehr flach</German>
             <Japanese>とても浅い</Japanese>
             <Chinese>非常淺</Chinese>
             <Dutch>Erg oppervlakkig</Dutch>
+            <Turkish>Çok Yüzeysel</Turkish>
         </Key>
         <Key ID="STR_KAT_Breathing_breathing_isNormal">
             <English>Patient is breathing normally</English>
@@ -2687,6 +2987,7 @@
             <Chinesesimp>患者呼吸正常</Chinesesimp>
             <Finnish>Potilas hengittää normaalisti</Finnish>
             <Dutch>Patiënt ademt normaal</Dutch>
+            <Turkish>Hasta normal şekilde nefes alıyor</Turkish>
         </Key>
         <Key ID="STR_KAT_Breathing_breathing_isShallow">
             <English>Patient's breathing is shallow</English>
@@ -2703,16 +3004,19 @@
             <Chinesesimp>患者呼吸微弱</Chinesesimp>
             <Finnish>Potilaan hengitys on pinnallista</Finnish>
             <Dutch>Patiënts ademhaling is oppervlakkig</Dutch>
+            <Turkish>Hastanın solunumu yüzeysel</Turkish>
         </Key>
         <Key ID="STR_KAT_Breathing_breathing_isVeryShallow">
             <English>Patient's breathing is very shallow</English>
             <Czech>Pacientův dech je velmi mělký</Czech>
             <French>La respiration du patient est très superficielle</French>
+            <Spanish>La respiración del paciente es muy superficial</Spanish>
             <Italian>La respirazione del paziente è molto debole</Italian>
             <German>Die Atmung des Patienten ist sehr flach</German>
             <Japanese>患者の呼吸はとても浅い</Japanese>
             <Chinese>病人呼吸非常淺</Chinese>
             <Dutch>Patients ademhaling is zeer oppervlakkig</Dutch>
+            <Turkish>Hastanın solunumu çok yüzeysel</Turkish>
         </Key>
         <Key ID="STR_KAT_Breathing_breathing_none">
             <English>Patient is not breathing</English>
@@ -2730,35 +3034,42 @@
             <Chinesesimp>患者没有呼吸</Chinesesimp>
             <Finnish>Potilas ei hengitä</Finnish>
             <Dutch>Patiënt ademt niet</Dutch>
+            <Turkish>Hasta nefes almıyor</Turkish>
         </Key>
         <Key ID="STR_KAT_Breathing_breathing_rrNormal">
             <English>RR: Normal</English>
             <French>RR : Normal</French>
+            <Spanish>RR: Normal</Spanish>
             <Italian>RR: Normale</Italian>
             <German>AF: Normal</German>
             <Japanese>呼吸速度: 正常</Japanese>
             <Chinese>呼吸頻率：正常</Chinese>
             <Dutch>AF: Normaal</Dutch>
+            <Turkish>RR: Normal</Turkish>
         </Key>
         <Key ID="STR_KAT_Breathing_breathing_rrRapid">
             <English>RR: Rapid</English>
             <Czech>DF: Rychlá</Czech>
             <French>RR : Rapide</French>
+            <Spanish>RR: Rápido</Spanish>
             <Italian>RR: Rapido</Italian>
             <German>AF: Beschleunigt</German>
             <Japanese>呼吸速度: 速い</Japanese>
             <Chinese>呼吸頻率：快</Chinese>
             <Dutch>AF: Versnelt</Dutch>
+            <Turkish>RR: Hızlı</Turkish>
         </Key>
         <Key ID="STR_KAT_Breathing_breathing_rrSlow">
             <English>RR: Slow</English>
             <Czech>DF: Pomalá</Czech>
             <French>RR : Lent</French>
+            <Spanish>RR: Lento</Spanish>
             <Italian>RR: Lento</Italian>
             <German>AF: Langsam</German>
             <Japanese>呼吸速度: 遅い</Japanese>
             <Chinese>呼吸頻率：慢</Chinese>
             <Dutch>AF: Langzaam</Dutch>
+            <Turkish>RR: Yavaş</Turkish>
         </Key>
         <Key ID="STR_KAT_Breathing_breathing_shallow">
             <English>Shallow</English>
@@ -2775,14 +3086,17 @@
             <Chinesesimp>浅</Chinesesimp>
             <Finnish>Matala</Finnish>
             <Dutch>Oppervlakkig</Dutch>
+            <Turkish>Yüzeysel</Turkish>
         </Key>
         <Key ID="STR_KAT_Breathing_cba_name">
             <English>KAT - ADV Medical: Breathing</English>
             <French>KAT - ADV Medical : Respiration</French>
+            <Spanish>KAT - ADV Medical: Respiración</Spanish>
             <Italian>KAT- ADV Medica: Respirazione</Italian>
             <German>KAT - ADV Medical: Atmung</German>
             <Japanese>KAM - 呼吸器系 (Breathing)</Japanese>
             <Dutch>KAT - ADV Medical: Ademhaling</Dutch>
+            <Turkish>KAT – Gelişmiş Tıp: Solunum</Turkish>
         </Key>
         <Key ID="STR_KAT_Breathing_chestseal_desc">
             <English>Chest Seal is engineered to treat, seal, and reseal open chest wounds under most circumstances.</English>
@@ -2798,7 +3112,7 @@
             <Japanese>チェストシールはほとんどの状況下で、胸部への穿通創の閉塞と開放による治療ができるように設計されています。</Japanese>
             <Chinese>胸腔密封貼 設計用於在大多數情況下治療、密封和重新密封開放性胸部傷口。</Chinese>
             <Chinesesimp>胸腔密封贴 设计用于在大多数情况下治疗、密封和重新密封开放性胸部伤口。</Chinesesimp>
-            <Turkish>Chest Seal, çoğu durumda açık göğüs yaralarını tedavi etmek, kapatmak ve yeniden kapatmak için tasarlanmıştır.</Turkish>
+            <Turkish>Chest Seal, çoğu durumda açık göğüs yaralarını tedavi etmek, kapatmak ve yeniden mühürlemek için tasarlanmıştır.</Turkish>
             <Finnish>Rintatiiviste on suunniteltu käsittelemään, tiivistämään ja uudelleensulkemaan avoimia rintahaavoja useimmissa olosuhteissa</Finnish>
             <Dutch>De chest seal is ontwikkeld om open borstwonden te dichten onder de meeste omstandigheden</Dutch>
         </Key>
@@ -2852,7 +3166,7 @@
             <Japanese>1x 血気胸</Japanese>
             <Chinese>1x 血氣胸</Chinese>
             <Chinesesimp>1x 血气胸</Chinesesimp>
-            <Turkish>1x hemopnömotoraks</Turkish>
+            <Turkish>1x Hemopnömotoraks</Turkish>
             <Finnish>1x hemopneumotoraksi</Finnish>
             <Dutch>1x Hemopneumothorax</Dutch>
         </Key>
@@ -2871,6 +3185,7 @@
             <Chinesesimp>检查胸部</Chinesesimp>
             <Finnish>Tutki rintakehä</Finnish>
             <Dutch>Thoraxinspectie</Dutch>
+            <Turkish>Göğsü İncele</Turkish>
         </Key>
         <Key ID="STR_KAT_Breathing_inspectChest_internalBleeding">
             <English>Skin is rigid, looks bruised</English>
@@ -2887,6 +3202,7 @@
             <Chinesesimp>皮肤僵硬，看起来有瘀伤</Chinesesimp>
             <Finnish>Iho on jäykkä ja näyttää mustelmalta</Finnish>
             <Dutch>Huid is stijf, ziet er gekneusd uit</Dutch>
+            <Turkish>Cilt sert, morarmış görünüyor</Turkish>
         </Key>
         <Key ID="STR_KAT_Breathing_inspectChest_log">
             <English>%1 inspected chest: %2</English>
@@ -2903,6 +3219,7 @@
             <Chinesesimp>%1个检查胸部：%2</Chinesesimp>
             <Finnish>%1 tarkastettu rintakehä: %2</Finnish>
             <Dutch>%1 inspecteerde thorax:%2</Dutch>
+            <Turkish>%1 göğsü inceledi: %2</Turkish>
         </Key>
         <Key ID="STR_KAT_Breathing_inspectChest_none">
             <English>No chest movement observed</English>
@@ -2919,6 +3236,7 @@
             <Chinesesimp>未观察到胸部运动</Chinesesimp>
             <Finnish>Rintakehän liikettä ei havaittu</Finnish>
             <Dutch>Geen thorax beweging wordt geobserveerd</Dutch>
+            <Turkish>Göğüs hareketi gözlemlenmedi</Turkish>
         </Key>
         <Key ID="STR_KAT_Breathing_inspectChest_none_log">
             <English>No chest movement</English>
@@ -2935,6 +3253,7 @@
             <Chinesesimp>胸部无动作</Chinesesimp>
             <Finnish>Ei liikettä rinnassa</Finnish>
             <Dutch>Geen thorax beweging</Dutch>
+            <Turkish>Göğüs hareketi yok</Turkish>
         </Key>
         <Key ID="STR_KAT_Breathing_inspectChest_normal">
             <English>Chest rise and fall observed</English>
@@ -2951,6 +3270,7 @@
             <Chinesesimp>观察胸部起伏</Chinesesimp>
             <Finnish>Rintakehän nousu ja lasku havaittu</Finnish>
             <Dutch>Stijging en daling van thorax worden geobserveerd</Dutch>
+            <Turkish>Göğüs yükselip alçalması gözlemlendi</Turkish>
         </Key>
         <Key ID="STR_KAT_Breathing_inspectChest_progress">
             <English>Inspecting Chest</English>
@@ -2967,6 +3287,7 @@
             <Chinesesimp>检查胸部</Chinesesimp>
             <Finnish>Rintakehän tutkiminen</Finnish>
             <Dutch>Thoraxinspectie</Dutch>
+            <Turkish>Göğüs İnceleniyor</Turkish>
         </Key>
         <Key ID="STR_KAT_Breathing_inspectChest_simple">
             <English>Symptoms indicate %1</English>
@@ -2983,6 +3304,7 @@
             <Chinesesimp>症状表明%1</Chinesesimp>
             <Finnish>Oireet osoittavat %1</Finnish>
             <Dutch>Symptomen indiceren %1</Dutch>
+            <Turkish>Belirtiler %1’i işaret ediyor</Turkish>
         </Key>
         <Key ID="STR_KAT_Breathing_inspectChest_uneven">
             <English>Chest sides are uneven</English>
@@ -2999,6 +3321,7 @@
             <Chinesesimp>胸部两侧不平</Chinesesimp>
             <Finnish>Rintakehän sivut ovat epätasaiset</Finnish>
             <Dutch>Thoraxzijden zijn oneven</Dutch>
+            <Turkish>Göğüs tarafları asimetrik</Turkish>
         </Key>
         <Key ID="STR_KAT_Breathing_inspectChest_unevenMovement">
             <English>Uneven chest rise and fall</English>
@@ -3015,6 +3338,7 @@
             <Chinesesimp>胸部起伏不均</Chinesesimp>
             <Finnish>Epätasainen rintakehän nousu ja lasku</Finnish>
             <Dutch>Ongelijkmatige stijging en daling van thorax</Dutch>
+            <Turkish>Asimetrik göğüs yükselip alçalması</Turkish>
         </Key>
         <Key ID="STR_KAT_Breathing_inspectChest_uneven_log">
             <English>, chest sides uneven</English>
@@ -3031,6 +3355,7 @@
             <Chinesesimp>胸部两侧不平</Chinesesimp>
             <Finnish>, rintakehän sivut epätasaiset</Finnish>
             <Dutch>, thoraxzijden oneven</Dutch>
+            <Turkish>, göğüs tarafları asimetrik</Turkish>
         </Key>
         <Key ID="STR_KAT_Breathing_listening_progress">
             <English>Listening</English>
@@ -3046,7 +3371,7 @@
             <Japanese>聴診中</Japanese>
             <Chinese>聽診中</Chinese>
             <Chinesesimp>听诊中</Chinesesimp>
-            <Turkish>Dinleme</Turkish>
+            <Turkish>Dinleniyor</Turkish>
             <Finnish>Kuunteleminen</Finnish>
             <Dutch>Luisteren</Dutch>
         </Key>
@@ -3066,6 +3391,7 @@
             <Chinesesimp>针刺胸腔减压套件是一次性使用的套件，设计用于治疗张力性气胸。</Chinesesimp>
             <Finnish>Neulan rintakehän dekompressiotyökalu on kertakäyttöinen työkalu, joka on suunniteltu hemopneumotoraksin hoitoon</Finnish>
             <Dutch>De naalddecompressie kit is een eenmaligsgebruik kit voor de behandeling van een spanningspneumothorax</Dutch>
+            <Turkish>Needle Chest Decompression Kit, gergin pnömotoraksı tedavi etmek için tasarlanmış tek kullanımlık bir kittir.</Turkish>
         </Key>
         <Key ID="STR_KAT_Breathing_ncdKit_display">
             <English>NCD Kit</English>
@@ -3083,6 +3409,7 @@
             <Chinesesimp>NCD套件</Chinesesimp>
             <Finnish>NCD-laite</Finnish>
             <Dutch>ND kit</Dutch>
+            <Turkish>NCD Kit</Turkish>
         </Key>
         <Key ID="STR_KAT_Breathing_placing">
             <English>Placing</English>
@@ -3134,7 +3461,7 @@
             <Japanese>パルスオキシメーター: 脈拍: %1 SpO2: %2</Japanese>
             <Chinese>脈搏血氧儀：脈搏：%1 SpO2：%2</Chinese>
             <Chinesesimp>脉搏血氧仪：脉搏：%1 SpO2：%2</Chinesesimp>
-            <Turkish>Nabız Oksimetresi: PR: %1 SpO2: %2</Turkish>
+            <Turkish>Nabız Oximetresi: PR: %1 SpO₂: %2</Turkish>
             <Finnish>Pulssioksimetri PR:%1 SpO2: %2</Finnish>
             <Dutch>Pulsoximeter: PR: %1 SpO2:%2</Dutch>
         </Key>
@@ -3206,7 +3533,7 @@
             <Japanese>デフォルトは無効です。有効にすると、緊張性気胸または血気胸のあるユニットでも、医療メニューに発生した他の気胸が表示されます。</Japanese>
             <Chinese>默認值處於禁用狀態。如果啟用，張力性氣胸或血氣胸的單位也會在醫療選單中顯示氣胸損傷</Chinese>
             <Chinesesimp>默认值处于禁用状态。如果启用，张力性气胸或血气胸的单位也会在医疗菜单中显示气胸损伤</Chinesesimp>
-            <Turkish>Varsayılan devre dışıdır. Etkinleştirilirse, tansiyon pnömotorakslı veya hemopnömotorakslı ünitelerde medikal menüde pnömotoraks yaralanması da görüntülenir.</Turkish>
+            <Turkish>Varsayılan olarak devre dışıdır. Etkinleştirilirse, gergin pnömotoraks veya hemopnömotoraksı olan birimlerde tıbbi menüde pnömotoraks yaralanması da gösterilir.</Turkish>
             <Finnish>Oletuksena poissa käytöstä. Jos tämä on käytössä, potilaiden, joilla on jännittynyt pneumotoraksi tai hemopneumotoraksi, myös ilmarintavammat näkyvät lääkärinnäytössä.</Finnish>
             <Dutch>Standaard staat deze optie uit. Wanneer dit aanstaat zal een spanningspneumothorax of een hemopneumothorax ook een pneumothorax tonen in het medische menu.</Dutch>
         </Key>
@@ -3226,6 +3553,7 @@
             <Chinesesimp>胸腔穿刺减压（NCD套件）</Chinesesimp>
             <Finnish>Neulan dekompressio (NCD Kit)</Finnish>
             <Dutch>Naalddecompressie kit (ND kit)</Dutch>
+            <Turkish>İğne Dekompresyonu (NCD Kit)</Turkish>
         </Key>
         <Key ID="STR_KAT_Breathing_tensionpneumothorax_display">
             <English>Needle Decompression</English>
@@ -3259,7 +3587,7 @@
             <Japanese>1x 緊張性気胸</Japanese>
             <Chinese>1x 張力性氣胸</Chinese>
             <Chinesesimp>1x 张力性气胸</Chinesesimp>
-            <Turkish>1x Gerilim Pnömotoraks'ı</Turkish>
+            <Turkish>1x Gergin Pnömotoraks</Turkish>
             <Finnish>1x jännitysilmarinta</Finnish>
             <Dutch>1x Spanningspneumothorax</Dutch>
         </Key>
@@ -3280,74 +3608,6 @@
             <Turkish>Tedavi Ediliyor</Turkish>
             <Finnish>Hoito</Finnish>
             <Dutch>Behandelen</Dutch>
-        </Key>
-        <Key ID="STR_KAT_Breathing_SETTING_SpO2_dieValue_DESC">
-            <English>Sets the SpO2 value that causes death when reached</English>
-            <German>Legt den SpO2-Wert fest, der bei Erreichen den Tod verursacht</German>
-        </Key>
-        <Key ID="STR_KAT_Breathing_SETTING_SpO2_dieActive_DESC">
-            <English>Enables death when SpO2 reaches the lethal value</English>
-            <German>Aktiviert den Tod, wenn SpO2 den tödlichen Wert erreicht</German>
-        </Key>
-        <Key ID="STR_KAT_Breathing_SETTING_SpO2_cardiacValue_DESC">
-            <English>Sets the SpO2 value that triggers cardiac arrest</English>
-            <German>Legt den SpO2-Wert fest, der einen Herzstillstand auslöst</German>
-        </Key>
-        <Key ID="STR_KAT_Breathing_SETTING_SpO2_cardiacActive_DESC">
-            <English>Enables cardiac arrest when SpO2 reaches the cardiac value</English>
-            <German>Aktiviert Herzstillstand, wenn SpO2 den Herzwert erreicht</German>
-        </Key>
-        <Key ID="STR_KAT_Breathing_SETTING_MultiplyPositive_DESC">
-            <English>Multiplier for positive SpO2 changes during breathing</English>
-            <German>Multiplikator für positive SpO2-Änderungen beim Atmen</German>
-        </Key>
-        <Key ID="STR_KAT_Breathing_SETTING_MultiplyNegative_DESC">
-            <English>Multiplier for negative SpO2 changes when not breathing properly</English>
-            <German>Multiplikator für negative SpO2-Änderungen bei unzureichender Atmung</German>
-        </Key>
-        <Key ID="STR_KAT_Breathing_SETTING_SpO2_Perfusion_DESC">
-            <English>Controls whether SpO2 falls during cardiac arrest</English>
-            <German>Kontrolliert, ob SpO2 während eines Herzstillstands fällt</German>
-        </Key>
-        <Key ID="STR_KAT_Breathing_SETTING_PerfusionMultiplier_DESC">
-            <English>Multiplier for SpO2 changes during cardiac arrest</English>
-            <German>Multiplikator für SpO2-Änderungen während eines Herzstillstands</German>
-        </Key>
-        <Key ID="STR_KAT_Breathing_SETTING_SELF_CHESTSEAL_DESC">
-            <English>Allows players to apply chest seals on themselves</English>
-            <German>Ermöglicht es Spielern, sich selbst Thoraxpflaster anzulegen</German>
-        </Key>
-        <Key ID="STR_KAT_Breathing_SETTING_clearChestSealAfterTreatment_DESC">
-            <English>Removes chest seal from medical menu after pneumothorax treatment</English>
-            <German>Entfernt Thoraxpflaster aus dem Medizinmenü nach Pneumothorax-Behandlung</German>
-        </Key>
-        <Key ID="STR_KAT_Breathing_SETTING_Threshold_SpO2Warning_DESC">
-            <English>SpO2 level at which the pulse oximeter starts warning</English>
-            <German>SpO2-Wert, bei dem das Pulsoximeter zu warnen beginnt</German>
-        </Key>
-        <Key ID="STR_KAT_Breathing_SETTING_pneumothorax_DESC">
-            <English>Probability for pneumothorax to occur from thoracic injuries</English>
-            <German>Wahrscheinlichkeit für Pneumothorax bei Thoraxverletzungen</German>
-        </Key>
-        <Key ID="STR_KAT_Breathing_SETTING_inspectChest_enable_DESC">
-            <English>Enables the inspect chest action for diagnosing thoracic injuries</English>
-            <German>Aktiviert die Brustraumuntersuchung zur Diagnose von Thoraxverletzungen</German>
-        </Key>
-        <Key ID="STR_KAT_Breathing_SETTING_inspectChest_medLvl_DESC">
-            <English>Required medical training level to perform chest inspection</English>
-            <German>Erforderliche medizinische Ausbildungsstufe für Brustraumuntersuchung</German>
-        </Key>
-        <Key ID="STR_KAT_Breathing_SETTING_inspectChest_time_DESC">
-            <English>Time required to complete chest inspection</English>
-            <German>Benötigte Zeit für die Brustraumuntersuchung</German>
-        </Key>
-        <Key ID="STR_KAT_Breathing_SETTING_Select_Etco2_Units_DESC">
-            <English>Units for displaying EtCO2 values</English>
-            <German>Einheiten für die Anzeige von EtCO2-Werten</German>
-        </Key>
-        <Key ID="STR_KAT_Breathing_SETTING_BVMOxygen_Multiplier_DESC">
-            <English>Effectiveness multiplier for BVM when used with oxygen</English>
-            <German>Effektivitätsmultiplikator für BVM bei Verwendung mit Sauerstoff</German>
         </Key>
     </Package>
 </Project>

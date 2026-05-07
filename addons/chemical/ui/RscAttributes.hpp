@@ -1,24 +1,16 @@
 class RscControlsGroup;
 class RscControlsGroupNoScrollbars;
 class RscText;
-class RscListbox;
 class RscCombo;
 class RscEdit;
-class RscXSliderH;
 class RscCheckBox;
-class RscActivePicture;
-class RscMapControl;
 class RscPicture;
-class ctrlToolbox;
-class RscButton;
 
 class RscDisplayAttributes {
     class Controls {
         class Background;
         class Title;
-        class Content: RscControlsGroup {
-            class controls;
-        };
+        class Content: RscControlsGroup {};
         class ButtonOK;
         class ButtonCancel;
     };
@@ -78,10 +70,10 @@ class GVAR(kat_RscAtributeRadius): RscControlsGroupNoScrollbars {
             class Items {
                 class type0 {
                     text = CSTRING(Lvl0_Gas);
+                    default = 1;
                 };
                 class type1 {
                     text = CSTRING(Lvl1_Gas);
-                    default = 1;
                 };
             };
         };

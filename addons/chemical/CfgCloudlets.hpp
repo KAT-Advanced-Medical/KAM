@@ -63,6 +63,77 @@ class CfgCloudlets {
         position[] = {0,0,0};
     };
 
+    class GVAR(Toxic_Gas_Particles): Default {
+        interval = 0.05;
+        circleRadius = 0;
+        circleVelocity[] = {0,0,0};
+        particleFSNtieth = 16;
+        particleFSIndex = 7;
+        particleFSFrameCount = 16;
+        particleFSLoop = 1;
+        angleVar = 1;
+        particleShape = "\A3\data_f\ParticleEffects\Universal\Universal.p3d";
+        particleType = "Billboard";
+        timerPeriod = 1;
+        lifeTime = 10;
+        moveVelocity[] = {0,0,0};
+        rotationVelocity = 1;
+        weight = 100;
+        volume = 1;
+        rubbing = 0.01;
+        size[] = {0.3,4,0};
+        color[] =
+        {
+            {0.3, 0.3, 0.3, 0},
+            {0.4, 0.45, 0.1, 0.25},
+            {0.45, 0.55, 0.1, 0.4},
+            {0.5, 0.6, 0.12, 0.35},
+            {0.55, 0.65, 0.15, 0.2},
+            {0.6, 0.7, 0.17, 0}
+        };
+        animationSpeed[] = {0.5,0.3};
+        randomDirectionPeriod = 1;
+        randomDirectionIntensity = 0.04;
+        onTimerScript = "";
+        beforeDestroyScript = "";
+        lifeTimeVar = 5;
+        positionVar[] = {0,0,0};
+        moveVelocityVar[] = {0.5,0,0.5};
+        rotationVelocityVar = 10;
+        sizeVar = 0;
+        colorVar[] = {0,0,0,0.35};
+        randomDirectionPeriodVar = 0;
+        randomDirectionIntensityVar = 0;
+        coreIntensity = 0;
+        coreDistance = 0;
+        damageTime = 0;
+        damageType = "";
+        angle = 0;
+        position[] = {0,0,0};
+        onSurface = 1;
+        surfaceOffset = 0;
+        bounceOnSurface = 0;
+        ignoreWind = 1;
+    };
+
+    class GVAR(Toxic_Gas_Wisps): GVAR(Toxic_Gas_Particles) {
+        interval = 0.1;
+        lifeTime = 6;
+        lifeTimeVar = 3;
+        size[] = {0.1, 1.5, 0};
+        moveVelocity[] = {0, 0, 0.3};
+        moveVelocityVar[] = {0.3, 0.3, 0.2};
+        onSurface = 0;
+        rubbing = 0.05;
+        color[] =
+        {
+            {0.4, 0.5, 0.1, 0},
+            {0.45, 0.55, 0.12, 0.15},
+            {0.5, 0.6, 0.15, 0.1},
+            {0.5, 0.6, 0.15, 0}
+        };
+    };
+
     class KAT_CAS_GAS_FX: Default {
         interval = 0.03;
         circleRadius = 0;

@@ -5,45 +5,53 @@
             <English>Enable Basic Vitals Kit</English>
             <Czech>Povolit Základní Vitální Sadu</Czech>
             <French>Activer le kit de diagnostic vital de base.</French>
+            <Spanish>Habilitar Kit Básico de Constantes Vitales</Spanish>
             <Italian>Abilita il Kit diagnostico per la misurazione di parametri vitali</Italian>
             <German>Aktiviere Einfaches Vitalwerte-Kit</German>
             <Japanese>基本型バイタル診断キットを有効化</Japanese>
             <Chinese>啟用基本生命體徵套件</Chinese>
             <Chinesesimp>启用基本生命体征套件</Chinesesimp>
             <Dutch>Sta eenvoudige vitalen waarden kits toe</Dutch>
+            <Turkish>Temel Vital Setini etkinleştir</Turkish>
         </Key>
         <Key ID="STR_KAT_Vitals_BASIC_DIAGNOSTIC_TIME">
             <English>Basic Vitals Kit Time</English>
             <Czech>Čas Základní Vitální Sady</Czech>
             <French>Temps pour le kit de diagnostic vital de base</French>
+            <Spanish>Tiempo de Kit Básico de Constantes Vitales</Spanish>
             <Italian>Tempo di utilizzo del Kit parametri vitali di base</Italian>
             <German>Nutzungszeit für Vitalwerte-Kit</German>
             <Japanese>基本型バイタル診断キットの所要時間</Japanese>
             <Chinese>基本生命體徵套件時間</Chinese>
             <Chinesesimp>基本生命体征套件时间</Chinesesimp>
             <Dutch>Behandelingstijd voor het gebruik van eenvoudige vitale waarden kits</Dutch>
+            <Turkish>Temel Vital Seti süresi</Turkish>
         </Key>
         <Key ID="STR_KAT_Vitals_BasicDiagnostic_Output">
             <English>HR: %1, BP: %2/%3, RR: %4</English>
             <Czech>SF: %1, TK: %2/%3, DF: %4</Czech>
             <French>FC : %1, PA : %2/%3, FR : %4</French>
+            <Spanish>HR: %1, BP: %2/%3, RR: %4</Spanish>
             <Italian>FC: %1, PS: %2/%3, FR:%4</Italian>
             <German>HF: %1, BD: %2/%3, AF: %4</German>
             <Japanese>心拍: %1, 血圧: %2/%3, 呼吸回数: %4</Japanese>
             <Chinese>心率：％1，血壓：％2／％3，呼吸頻率：％4</Chinese>
             <Chinesesimp>心率：％1，血压：％2／％3，呼吸频率：％4</Chinesesimp>
             <Dutch>HF: %1, BD: %2/%3, AF: %4</Dutch>
+            <Turkish>Nabız: %1, Tansiyon: %2/%3, Solunum: %4</Turkish>
         </Key>
         <Key ID="STR_KAT_Vitals_FLUID_SHIFT">
             <English>Enable Patient Fluid Shift</English>
             <Czech>Povolit Posun Tekutin Pacienta</Czech>
             <French>Permettre le transfert de fluide du patient</French>
+            <Spanish>Habilitar cambio de fluidos del paciente</Spanish>
             <Italian>Abilita lo spostamento del fluido del paziente</Italian>
             <German>Aktiviert Flüssigkeitsverschiebung im Patienten</German>
             <Japanese>患者の体液移動を有効化</Japanese>
             <Chinese>啟用患者體液轉移</Chinese>
             <Chinesesimp>启用患者体液转移</Chinesesimp>
             <Dutch>Sta vloeistoffenverschuivingen in patiënten toe</Dutch>
+            <Turkish>Hasta sıvı kaymasını etkinleştir</Turkish>
         </Key>
         <Key ID="STR_KAT_Vitals_SIMPLEMED_ENABLE">
             <English>Activate AI Simple Medical</English>
@@ -56,17 +64,20 @@
             <Chinese>啟用AI簡易醫療</Chinese>
             <Chinesesimp>启用AI简易医疗</Chinesesimp>
             <Dutch>Activeer AI/KI versimpeld medisch</Dutch>
+            <Turkish>Yapay zekâ basit medikal sistemini etkinleştir</Turkish>
         </Key>
         <Key ID="STR_KAT_Vitals_SIMPLEMED_ENABLE_DESC">
             <English>Apply simplified vital calculations to the AI unit. Which can be useful for saving FPS.</English>
             <Czech>Aplikujte zjednodušené životně důležité výpočty na AI jednotky. Může být užitečné pro úsporu FPS.</Czech>
             <French>Appliquer des calculs vitaux simplifiés à l'unité AI. Ce qui peut être utile pour économiser des FPS.</French>
+            <Spanish>Aplicar cálculos simplificados de signos vitales a la unidad de IA, lo cual puede ser útil para ahorrar FPS.</Spanish>
             <Italian>Applica calcoli vitali semplificati all'unità AI. Che può essere utile per salvare FPS.</Italian>
             <German>Vereinfachte Vital-Simulation bei KI-Einheiten. Reduziert Leistungsaufwand.</German>
             <Japanese>単純化されたバイタル計算をAIユニットに適用します。 これは負荷の軽減に役立つ可能性があります。</Japanese>
             <Chinese>將簡化的生命體徵計算應用於AI單位，這可以幫助節省FPS。</Chinese>
             <Chinesesimp>将简化的生命体征计算应用于AI单位，这可以帮助节省FPS。</Chinesesimp>
             <Dutch>Versimpelt de vitale-waardensimulatie voor KI-eenheden. Dit kan helpen bij het besparen op FPS</Dutch>
+            <Turkish>FPS tasarrufu sağlamak için yapay zekâ birimlerine basitleştirilmiş vital hesaplamaları uygular.</Turkish>
         </Key>
         <Key ID="STR_KAT_Vitals_PRESSURE_ENABLE">
             <English>Enable barometric pressure change</English>
@@ -88,62 +99,74 @@
             <English>%1 - %2</English>
             <Czech>%1 - %2</Czech>
             <French>%1 - %2</French>
+            <Spanish>%1 - %2</Spanish>
             <Italian>%1 - %2</Italian>
             <German>%1 - %2</German>
             <Japanese>%1 - %2</Japanese>
             <Dutch>%1 - %2</Dutch>
+            <Turkish>%1 – %2</Turkish>
         </Key>
         <Key ID="STR_KAT_Vitals_basicDiagnostic_description">
             <English>Vitals Kit which returns HR, BP, and RR</English>
             <Czech>Vitální Sada, která zobrazí SF, TK a DF (Srdeční Frekvence, Tlak Krve, Dechová Frekvence)</Czech>
             <French>Kits de diagnostic permettant de mesurer les paramètres vitaux tels que la fréquence cardiaque (FC), la pression artérielle (PA) et la fréquence respiratoire (FR).</French>
+            <Spanish>Kit de Constantes Vitales que devuelve HR. BP y RR</Spanish>
             <Italian>Kit diagnostico per la misurazione di parametri vitali come la Frequenza Cardiaca(FC), la Pressione Sanguinea(PS) e Frequenza Respiratoria(FR)</Italian>
             <German>Vitalwerte-Kit zur Messung von Blutdruck, Puls und Atemfrequenz</German>
             <Japanese>心拍(HR)、血圧(BP)、呼吸回数(RR)などのバイタルを計測可能な診断キット</Japanese>
             <Chinese>可測量心率（HR）、血壓（BP）和呼吸頻率（RR）等生命體徵的診斷套件</Chinese>
             <Chinesesimp>可测量心率（HR）、血压（BP）和呼吸频率（RR）等生命体征的诊断套件</Chinesesimp>
             <Dutch>Vitale waarden kit dat bloeddruk en hart- en ademfrequentie meet</Dutch>
+            <Turkish>Nabız, tansiyon ve solunum değerlerini veren vital seti</Turkish>
         </Key>
         <Key ID="STR_KAT_Vitals_basicDiagnostic_display">
             <English>Basic Vitals Kit</English>
             <Czech>Základní Vitální Sada</Czech>
             <French>Kit de diagnostic vital de base</French>
+            <Spanish>Kit Básico de Constantes Vitales</Spanish>
             <Italian>Kit diagnostico per la misurazione di parametri vitali</Italian>
             <German>Einfaches Vitalwerte-Kit</German>
             <Japanese>基本型バイタル診断キット</Japanese>
             <Chinese>基本生命體徵套件</Chinese>
             <Chinesesimp>基本生命体征套件</Chinesesimp>
             <Dutch>Eenvoudige vitalen waarden kit</Dutch>
+            <Turkish>Temel Vital Seti</Turkish>
         </Key>
         <Key ID="STR_KAT_Vitals_basicDiagnostic_progress">
             <English>Assessing Patient...</English>
             <Czech>Vyhodnocování pacienta...</Czech>
             <French>Évaluation du patient...</French>
+            <Spanish>Evaluando al paciente…</Spanish>
             <Italian>Valutazione del paziente...</Italian>
             <German>Untersuche den Patienten</German>
             <Japanese>患者を診断中・・・</Japanese>
             <Chinese>正在評估患者...</Chinese>
             <Chinesesimp>正在评估患者...</Chinesesimp>
             <Dutch>Patiënt wordt onderzocht...</Dutch>
+            <Turkish>Hasta değerlendiriliyor...</Turkish>
         </Key>
         <Key ID="STR_KAT_Vitals_basicDiagnostic_use">
             <English>Use Basic Vitals Kit</English>
             <Czech>Použít Základní Vitální Sadu</Czech>
             <French>Utiliser un kit de diagnostic vital de base</French>
+            <Spanish>Usar Kit Básico de Constantes Vitales</Spanish>
             <Italian>Usa il Kit diagnostico per la misurazione di parametri vitali</Italian>
             <German>Vitalwerte-Kit verwenden</German>
             <Japanese>基本型バイタル診断キットを使用</Japanese>
             <Chinese>使用基本生命體徵套件</Chinese>
             <Chinesesimp>使用基本生命体征套件</Chinesesimp>
             <Dutch>Vitale waarden kit gebruiken</Dutch>
+            <Turkish>Temel Vital Setini kullan</Turkish>
         </Key>
         <Key ID="STR_KAT_Vitals_cba_name">
             <English>KAT - ADV Medical: Vitals</English>
             <French>KAT - ADV Medical : Données vitales</French>
+            <Spanish>KAT - ADV Medical: Constantes Vitales</Spanish>
             <Italian>KAT - ADV Medica: Parametri vitali</Italian>
             <German>KAT - ADV Medical: Vitalwerte</German>
             <Japanese>KAM - バイタル</Japanese>
             <Dutch>KAT - ADV Medical: Vitals</Dutch>
+            <Turkish>KAT – Gelişmiş Tıp: Hayati Bulgular</Turkish>
         </Key>
     </Package>
 </Project>

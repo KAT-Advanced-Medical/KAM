@@ -17,6 +17,9 @@
  *
  *
 */
+// Guard: beforeDestroyScript fires on all machines; only server should create the smoke
+if (!isServer) exitWith {};
+
 params ["_posX","_posY","_posZ"];
 
 private _smoke = "KAT_GASTrip_SmokeEffect" createVehicle [_posX,_posY,_posZ];

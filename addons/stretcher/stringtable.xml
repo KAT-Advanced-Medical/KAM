@@ -15,7 +15,7 @@
             <Japanese>担架を取り付ける</Japanese>
             <Chinese>附著擔架</Chinese>
             <Chinesesimp>附着担架</Chinesesimp>
-            <Turkish>Sedyeyi Takın</Turkish>
+            <Turkish>Sedyeyi Tak</Turkish>
             <Finnish>Kiinnitä paarit</Finnish>
             <Dutch>Brancard bevestigen</Dutch>
         </Key>
@@ -31,6 +31,7 @@
             <Chinese>展開擔架</Chinese>
             <Chinesesimp>展开担架</Chinesesimp>
             <Dutch>Ontplooi brancard</Dutch>
+            <Turkish>Sedyeyi Aç</Turkish>
         </Key>
         <Key ID="STR_KAT_Stretcher_DetachHeliStretcher">
             <English>Detach Stretcher</English>
@@ -44,6 +45,7 @@
             <Chinese>釋放擔架</Chinese>
             <Chinesesimp>分离担架</Chinesesimp>
             <Dutch>Maak brancard los</Dutch>
+            <Turkish>Sedyeyi Sök</Turkish>
         </Key>
         <Key ID="STR_KAT_Stretcher_Helistretcher_Desc">
             <English>Allows you to attach a Stretcher to a helicopter (Double click)</English>
@@ -59,7 +61,7 @@
             <Japanese>ヘリコプターに担架を取り付けることができます (ダブルクリック)</Japanese>
             <Chinese>允許您雙擊將擔架連接到直升機上</Chinese>
             <Chinesesimp>允许您双击将担架连接到直升机上</Chinesesimp>
-            <Turkish>Helikoptere sedye takmanızı sağlar(Çift tıklama)</Turkish>
+            <Turkish>Bir sedyeyi helikoptere takmanıza olanak tanır (Çift tıklama)</Turkish>
             <Finnish>Mahdollistaa paareiden kiinnittämisen helikopteriin (klikkaa kahdesti)</Finnish>
             <Dutch>Staat je toe om een brancard aan een heli te bevestigen (dubbel klik)</Dutch>
         </Key>
@@ -77,7 +79,7 @@
             <Japanese>ヘリコプター用担架</Japanese>
             <Chinese>可連接直升機擔架</Chinese>
             <Chinesesimp>可连接直升机担架</Chinesesimp>
-            <Turkish>Helitakılabilir sedye</Turkish>
+            <Turkish>Takılabilir Helistretcher</Turkish>
             <Finnish>Kiinnitettävä paarit helikoptereille</Finnish>
             <Dutch>Bevestigbare helibrancard</Dutch>
         </Key>
@@ -92,6 +94,7 @@
             <Chinese>KAT 直升機擔架</Chinese>
             <Chinesesimp>KAT Helistretcher</Chinesesimp>
             <Dutch>KAT helibrancard</Dutch>
+            <Turkish>KAT Helistretcher</Turkish>
         </Key>
         <Key ID="STR_KAT_Stretcher_LowerHeliStretcher">
             <English>Lower Stretcher</English>
@@ -107,7 +110,7 @@
             <Japanese>担架を下げる</Japanese>
             <Chinese>放下擔架</Chinese>
             <Chinesesimp>放下担架</Chinesesimp>
-            <Turkish>Alt Sedye</Turkish>
+            <Turkish>Sedyeyi İndir</Turkish>
             <Finnish>Laske paarit</Finnish>
             <Dutch>Laat de brancard zakken</Dutch>
         </Key>
@@ -123,6 +126,7 @@
             <Chinese>裝進背包</Chinese>
             <Chinesesimp>装进背包</Chinesesimp>
             <Dutch>Verpak naar een rugzak</Dutch>
+            <Turkish>Sırt çantasına yerleştir</Turkish>
         </Key>
         <Key ID="STR_KAT_Stretcher_PackIntoBag">
             <English>Pack into bag</English>
@@ -136,6 +140,7 @@
             <Chinese>打包到包裡</Chinese>
             <Chinesesimp>装进袋子里</Chinesesimp>
             <Dutch>Verpak naar een tas</Dutch>
+            <Turkish>Çantaya yerleştir</Turkish>
         </Key>
         <Key ID="STR_KAT_Stretcher_PickupStretcher_progressBar">
             <English>Packing Stretcher...</English>
@@ -149,6 +154,7 @@
             <Chinese>正在打包擔架...</Chinese>
             <Chinesesimp>正在打包担架...</Chinesesimp>
             <Dutch>Brancard wordt verpakt</Dutch>
+            <Turkish>Sedye paketleniyor...</Turkish>
         </Key>
         <Key ID="STR_KAT_Stretcher_PlaceStretcher_progressBar">
             <English>Placing Stretcher...</English>
@@ -162,6 +168,7 @@
             <Chinese>正在放置擔架...</Chinese>
             <Chinesesimp>正在放置担架...</Chinesesimp>
             <Dutch>Brancard wordt geplaatst</Dutch>
+            <Turkish>Sedye paketleniyor...</Turkish>
         </Key>
         <Key ID="STR_KAT_Stretcher_RaiseHeliStretcher">
             <English>Raise Stretcher</English>
@@ -177,7 +184,7 @@
             <Japanese>担架を上げる</Japanese>
             <Chinese>抬起擔架</Chinese>
             <Chinesesimp>抬起担架</Chinesesimp>
-            <Turkish>Kaldırma Sedyesi</Turkish>
+            <Turkish>Sedyeyi Kaldır</Turkish>
             <Finnish>Nosta paarit</Finnish>
             <Dutch>Til de brancard op</Dutch>
         </Key>
@@ -193,6 +200,7 @@
             <Chinese>收回擔架</Chinese>
             <Chinesesimp>缩回担架</Chinesesimp>
             <Dutch>Trek brancard terug</Dutch>
+            <Turkish>Sedyeyi Topla</Turkish>
         </Key>
         <Key ID="STR_KAT_Stretcher_StretcherPacked_Display">
             <English>Stretcher (Packed)</English>
@@ -242,6 +250,7 @@
             <Chinese>部屬擔架</Chinese>
             <Chinesesimp>展开担架</Chinesesimp>
             <Dutch>Ontplooi brancard</Dutch>
+            <Turkish>Sedyeyi Aç</Turkish>
         </Key>
     </Package>
 </Project>

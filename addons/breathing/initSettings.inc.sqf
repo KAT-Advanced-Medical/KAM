@@ -30,12 +30,22 @@
     "EDITBOX",
     [LLSTRING(SETTING_AVAIL_OXYHELMET), LLSTRING(SETTING_AVAIL_OXYHELMET_DISC)],
     [CBA_SETTINGS_CAT, ELSTRING(GUI,SubCategory_Basic)],
-    "'H_PilotHelmetFighter_B', 'H_PilotHelmetFighter_O', 'H_PilotHelmetFighter_I', 'H_PilotHelmetFighter_I_E'",
+    "'H_PilotHelmetFighter_B', 'H_PilotHelmetFighter_O', 'H_PilotHelmetFighter_I', 'H_PilotHelmetFighter_I_E', 'FIR_JHMCS', 'FIR_JHMCS_II', 'FIR_JHMCS_Type2', 'FIR_ScorpionHMCS', 'FIR_hgu26p', 'FIR_hgu26p_camo', 'FIR_HGU33P', 'FIR_HGU33P_VF1', 'FIR_HGU33P_VF111', 'FIR_HGU33P_VF84', 'FIR_USHelmetType2', 'FIR_USHelmetType2_USMC', 'FIR_USHelmetType2_Navy', 'FIR_USHelmetType2_USAF_80s', 'FIR_USHelmetType2_VF103', 'FIR_USHelmetType2_VF154', 'FIR_USHelmetType1', 'FIR_USHelmetType1_Navy', 'FIR_USHelmetType1_USMC', 'FIR_USHelmetType1_VF31', 'FIR_USHelmetType1_Agg', 'FIR_HGU55PJ', 'RHS_jetpilot_usaf', 'rhs_zsh7a', 'rhs_zsh7a_alt', 'UK3CB_ARD_B_H_zsh7a', 'UK3CB_ARD_B_H_zsh7a_alt', 'UK3CB_TKA_O_H_zsh7a_Des', 'UK3CB_TKA_O_H_zsh7a_Des_alt'",
     1,
     {
         private _array = [_this, "CfgWeapons"] call EFUNC(chemical,getList);
         missionNamespace setVariable [QGVAR(availOxyHelmetList), _array, true];
     },
+    true
+] call CBA_fnc_addSetting;
+
+//Ignore oxygen equipment list
+[
+    QGVAR(enableEverythingOxymask),
+    "CHECKBOX",
+    [LLSTRING(SETTING_enableEverythingOxymask),LLSTRING(SETTING_enableEverythingOxymask_DESC)],
+    [CBA_SETTINGS_CAT, ELSTRING(GUI,SubCategory_Basic)],
+    [false],
     true
 ] call CBA_fnc_addSetting;
 
