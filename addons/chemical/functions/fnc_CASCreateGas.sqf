@@ -16,6 +16,9 @@
 * Gets position of droped bombs and creates a Gas zone there
 */
 
+// Guard: explosionEffects fires on all machines; only server should create the zone
+if (!isServer) exitWith {};
+
 params ["_posX", "_posY", "_posZ"];
 
 private _projectile = QGVAR(logic) createVehicle [_posX,_posY,_posZ];

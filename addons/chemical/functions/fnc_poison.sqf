@@ -61,7 +61,7 @@ _unit setVariable [QGVAR(infectionArray), _currentInfectionArray, true];
 private _infectionTime = missionNamespace getVariable [QGVAR(infectionTime), 60];
 
 //Get current time left for player
-private _currentInfection = _unit getVariable [QGVAR(infectionTime), 60];
+private _currentInfection = _unit getVariable [QGVAR(infectionTime), _infectionTime];
 
 private _timeLeft = _currentInfection - 1;
 _timeLeft = _timeLeft max 0;
