@@ -736,6 +736,7 @@
             <German>IV-Tropfzeitensimulation aktivieren</German>
             <Japanese>IVが自然に脱落するようになる機能を有効化します</Japanese>
             <Turkish>IV düşme süresi simülasyonunu etkinleştir</Turkish>
+            <French>Activer la simulation de la durée de perfusion</French>
         </Key>
         <Key ID="STR_KAT_Pharma_IV_DROP_TIME_DESC">
             <English>Changes the time at which IVs/IOs fall out of a patient</English>
@@ -796,6 +797,7 @@
             <German>Wiederverwendung von IV Ausrüstung erlauben</German>
             <Japanese>IV装備品の再使用を許可します</Japanese>
             <Turkish>IV ekipmanının tekrar kullanımına izin ver</Turkish>
+            <French>Autoriser la réutilisation du matériel de perfusion</French>
         </Key>
         <Key ID="STR_KAT_Pharma_IVblock_clear">
             <English>Patient's IV is clear</English>
@@ -1644,6 +1646,7 @@
             <German>Orte, an denen die Gerinnung überprüft werden kann</German>
             <Japanese>凝固の検査が可能になる場所を設定します</Japanese>
             <Turkish>Koagülasyonun kontrol edilebileceği konumlar</Turkish>
+            <French>Lieux où l'on peut vérifier la coagulation</French>
         </Key>
         <Key ID="STR_KAT_Pharma_SETTING_CheckCoag_MedLevel">
             <English>Medical level required for Coag-Sense</English>
@@ -1664,6 +1667,7 @@
             <German>Erforderlicher medizinischer Level für Gerinnungsprüfung</German>
             <Japanese>凝固の検査が可能になる場所を設定します</Japanese>
             <Turkish>Koagülasyon kontrolü için gerekli tıbbi seviye</Turkish>
+            <French>Compétences médicales requises pour contrôler la coagulation</French>
         </Key>
         <Key ID="STR_KAT_Pharma_SETTING_CheckCoag_treatmentTime">
             <English>Treatment time for measuring PT/INR</English>
@@ -1684,6 +1688,7 @@
             <German>Zeit für die Gerinnungsprüfung</German>
             <Japanese>凝固の検査に掛かる時間</Japanese>
             <Turkish>Koagülasyon kontrolü için gereken süre</Turkish>
+            <French>Durée nécessaire pour le contrôle de la coagulation</French>
         </Key>
         <Key ID="STR_KAT_Pharma_SETTING_Coagulation">
             <English>Enable Coagulation</English>
@@ -2639,6 +2644,7 @@
             <German>Chance für erfolgreiche Carbonat-Behandlung</German>
             <Japanese>炭酸アンモニウムでの治療の成功確率</Japanese>
             <Turkish>Başarılı karbonat tedavisi şansı</Turkish>
+            <French>Chances de réussite du traitement au bicarbonate</French>
         </Key>
         <Key ID="STR_KAT_Pharma_SETTING_coagulation_Factor_Limit">
             <English>Coagulation Factor Limit</English>
@@ -2796,6 +2802,7 @@
             <German>Chance für erfolgreiche Neuorientierung</German>
             <Japanese>患者を刺激した際の成功確率</Japanese>
             <Turkish>Başarılı reoryantasyon şansı</Turkish>
+            <French>Chances de réussite de la réorientation</French>
         </Key>
         <Key ID="STR_KAT_Pharma_SETTING_staminaMedication">
             <English>Medication Modifies Stamina</English>
@@ -4775,12 +4782,14 @@
             <German>Benötigte Zeit um einen IO-Zugang zu legen.</German>
             <Japanese>IOの刺入に掛かる時間</Japanese>
             <Turkish>Bir IO yerleştirmek için gereken süre.</Turkish>
+            <French>Temps nécessaire pour placer un IO.</French>
         </Key>
         <Key ID="STR_KAT_Pharma_treatmenttime_applyiv_desc">
             <English>Time required to establish an IV.</English>
             <German>Benötigte Zeit um einen IV-Zugang zu legen.</German>
             <Japanese>IVの刺入に掛かる時間</Japanese>
             <Turkish>Bir IV yerleştirmek için gereken süre.</Turkish>
+            <French>Temps nécessaire pour placer un IV.</French>
         </Key>
         <Key ID="STR_KAT_Pharma_use_log">
             <English>%1 used %2</English>
