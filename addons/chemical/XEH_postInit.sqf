@@ -58,20 +58,49 @@ GVAR(clientParticles) = createHashMap;
     if (_netId in GVAR(clientParticles)) exitWith {};  // idempotency guard
 
     private _sourcePos = getPosATL _gasLogic;
-    private _particleObjectAmount = (_radius / 10) max 1;
     private _particleObjects = [];
 
-    for "_i" from 0 to _particleObjectAmount do {
-        private _particleSource = "#particlesource" createVehicleLocal _sourcePos;
-        _particleSource setParticleClass QGVAR(Toxic_Gas_Particles);
-        if (_i == 0) then {
-            _particleSource setParticleCircle [1, [0,0,0]];
-        } else {
-            _particleSource setParticleCircle [_i * 10, [0,0,0]];
-        };
-        _particleSource attachTo [_gasLogic, [0,0,0]];
-        _particleObjects pushBack _particleSource;
-    };
+    // Layer 1: Ground carpet — bulk mass, area-fill via setParticleRandom
+    private _carpet = "#particlesource" createVehicleLocal _sourcePos;
+    _carpet setParticleClass QGVAR(Toxic_Gas_Particles);
+    _carpet setParticleCircle [0, [0, 0, 0]];
+    _carpet setParticleRandom [
+        2,
+        [_radius, _radius, 0.3],
+        [0.3, 0.3, 0.05],
+        1, 0.3, [0.03, 0.03, 0.03, 0.1], 0, 0, 360
+    ];
+    _carpet setDropInterval 0.0035;
+    _carpet attachTo [_gasLogic, [0, 0, 0]];
+    _particleObjects pushBack _carpet;
+
+    // Layer 2: Drifting wisps — volumetric body with vertical lift
+    private _wisps = "#particlesource" createVehicleLocal _sourcePos;
+    _wisps setParticleClass QGVAR(Toxic_Gas_Wisps);
+    _wisps setParticleCircle [0, [0, 0, 0]];
+    _wisps setParticleRandom [
+        1,
+        [_radius * 0.7, _radius * 0.7, 0.5],
+        [0.2, 0.2, 0.3],
+        1, 0.3, [0, 0, 0, 0.05], 0, 0, 360
+    ];
+    _wisps setDropInterval 0.02;
+    _wisps attachTo [_gasLogic, [0, 0, 0]];
+    _particleObjects pushBack _wisps;
+
+    // Layer 3: Perimeter creep — circle emission with slight inward velocity
+    private _creep = "#particlesource" createVehicleLocal _sourcePos;
+    _creep setParticleClass QGVAR(Toxic_Gas_Particles);
+    _creep setParticleCircle [_radius * 0.95, [-0.4, -0.4, 0]];
+    _creep setParticleRandom [
+        2,
+        [1, 1, 0.2],
+        [0.2, 0.2, 0.05],
+        1, 0.2, [0, 0, 0, 0.1], 0, 0, 360
+    ];
+    _creep setDropInterval 0.025;
+    _creep attachTo [_gasLogic, [0, 0, 0]];
+    _particleObjects pushBack _creep;
 
     GVAR(clientParticles) set [_netId, _particleObjects];
 }] call CBA_fnc_addEventHandler;
