@@ -23,6 +23,54 @@ class CfgMagazines {
         count = 3;
     };
 
+    class KAT_1Rnd_82mm_Mo_Type2: ACE_1Rnd_82mm_Mo_HE {
+        author="DiGii";
+        ammo="Sh_82mm_AMOS_Type2";
+        displayNameMFDFormat= CSTRING(Phosgene_MFDNAME);
+        displayNameShort= CSTRING(Phosgene_MFDNAME);
+        displayName= CSTRING(Phosgene_DisplayName);
+    };
+    class KAT_5Rnd_82mm_Mo_Type2_AI: KAT_1Rnd_82mm_Mo_Type2 {
+        scope = 1;
+        count = 5;
+    };
+
+    class KAT_1Rnd_82mm_Mo_Type3: ACE_1Rnd_82mm_Mo_HE {
+        author="DiGii";
+        ammo="Sh_82mm_AMOS_Type3";
+        displayNameMFDFormat= CSTRING(Mustard_MFDNAME);
+        displayNameShort= CSTRING(Mustard_MFDNAME);
+        displayName= CSTRING(Mustard_DisplayName);
+    };
+    class KAT_5Rnd_82mm_Mo_Type3_AI: KAT_1Rnd_82mm_Mo_Type3 {
+        scope = 1;
+        count = 5;
+    };
+
+    class KAT_1Rnd_82mm_Mo_Type4: ACE_1Rnd_82mm_Mo_HE {
+        author="DiGii";
+        ammo="Sh_82mm_AMOS_Type4";
+        displayNameMFDFormat= CSTRING(Sarin_MFDNAME);
+        displayNameShort= CSTRING(Sarin_MFDNAME);
+        displayName= CSTRING(Sarin_DisplayName);
+    };
+    class KAT_5Rnd_82mm_Mo_Type4_AI: KAT_1Rnd_82mm_Mo_Type4 {
+        scope = 1;
+        count = 5;
+    };
+
+    class KAT_1Rnd_82mm_Mo_Type5: ACE_1Rnd_82mm_Mo_HE {
+        author="DiGii";
+        ammo="Sh_82mm_AMOS_Type5";
+        displayNameMFDFormat= CSTRING(VX_MFDNAME);
+        displayNameShort= CSTRING(VX_MFDNAME);
+        displayName= CSTRING(VX_DisplayName);
+    };
+    class KAT_5Rnd_82mm_Mo_Type5_AI: KAT_1Rnd_82mm_Mo_Type5 {
+        scope = 1;
+        count = 5;
+    };
+
     class HandGrenade;
     class KAT_M7A3: HandGrenade {
         author = "DiGi";

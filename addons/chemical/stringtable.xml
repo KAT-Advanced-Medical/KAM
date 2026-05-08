@@ -428,22 +428,8 @@
             <Turkish>Göz yaşartıcı gaz (Seviye 0)</Turkish>
         </Key>
         <Key ID="STR_KAT_Chemical_Lvl1_Gas">
-            <English>Toxic gas (Level 1)</English>
-            <Czech>Toxický plyn (Úroveň 1)</Czech>
-            <French>Gaz toxique (Niveau 1)</French>
-            <Spanish>Gas toxico (Nivel 1)</Spanish>
-            <Italian>Gas Lacrimogeno (Livello 1)</Italian>
-            <Polish>Toksyczny gaz ( Poziom 1)</Polish>
-            <Portuguese>Gás tóxico (Nível 1)</Portuguese>
-            <Russian>Токсичный газ (уровень 1)</Russian>
-            <German>Senfgas (Level 1)</German>
-            <Korean>유독가스 (레벨 1)</Korean>
-            <Japanese>有毒ガス (レベル 1)</Japanese>
-            <Chinese>有毒氣體（1級）</Chinese>
-            <Chinesesimp>有毒气体（1级）</Chinesesimp>
-            <Finnish>Myrkyllinen kaasu (taso 1)</Finnish>
-            <Dutch>Gifgas (Level 1)</Dutch>
-            <Turkish>Toksik Gaz (Seviye 1)</Turkish>
+            <English>Chlorine (Level 1)</English>
+            <German>Chlor (Level 1)</German>
         </Key>
         <Key ID="STR_KAT_Chemical_M43_DisplayName_1x">
             <English>M43 BZ LGB</English>
@@ -602,6 +588,42 @@
             <Dutch>Zet gasmasker op</Dutch>
             <Turkish>Gaz maskesini tak</Turkish>
         </Key>
+        <Key ID="STR_KAT_Chemical_SubCategory_Protection">
+            <English>1. Protection &amp; Gear</English>
+            <German>1. Schutz &amp; Ausrüstung</German>
+        </Key>
+        <Key ID="STR_KAT_Chemical_SubCategory_CS">
+            <English>2. CS Gas (Level 0)</English>
+            <German>2. CS-Gas (Level 0)</German>
+        </Key>
+        <Key ID="STR_KAT_Chemical_SubCategory_Chlorine">
+            <English>3. Chlorine (Level 1)</English>
+            <German>3. Chlor (Level 1)</German>
+        </Key>
+        <Key ID="STR_KAT_Chemical_SubCategory_Phosgene">
+            <English>4. Phosgene (Level 1)</English>
+            <German>4. Phosgen (Level 1)</German>
+        </Key>
+        <Key ID="STR_KAT_Chemical_SubCategory_Mustard">
+            <English>5. Mustard Gas (Level 2)</English>
+            <German>5. Senfgas (Level 2)</German>
+        </Key>
+        <Key ID="STR_KAT_Chemical_SubCategory_Sarin">
+            <English>6. Sarin (Level 2)</English>
+            <German>6. Sarin (Level 2)</German>
+        </Key>
+        <Key ID="STR_KAT_Chemical_SubCategory_VX">
+            <English>7. VX (Level 2)</English>
+            <German>7. VX (Level 2)</German>
+        </Key>
+        <Key ID="STR_KAT_Chemical_SubCategory_Contamination">
+            <English>8. Contamination &amp; Decontamination</English>
+            <German>8. Kontamination &amp; Dekontamination</German>
+        </Key>
+        <Key ID="STR_KAT_Chemical_SubCategory_Identification">
+            <English>9. Identification (Detector &amp; M8 Paper)</English>
+            <German>9. dentifikation (Detektor &amp; M8-Papier)</German>
+        </Key>
         <Key ID="STR_KAT_Chemical_SETTING_AVAIL_GASMASK">
             <English>Accepted gas masks</English>
             <Czech>Povolené plynové masky</Czech>
@@ -746,42 +768,6 @@
             <Japanese>ガスマスクを着用するとスタミナがより早く失われます</Japanese>
             <Turkish>Gaz maskesi kullanırken dayanıklılık kaybını etkinleştir</Turkish>
         </Key>
-        <Key ID="STR_KAT_Chemical_SETTING_infectionTime">
-            <English>Time until infection</English>
-            <Czech>Čas do infekce</Czech>
-            <French>Durée avec l'infection</French>
-            <Spanish>Tiempo hasta la infeccion</Spanish>
-            <Italian>Tempo massimo prima dell'intossicazione</Italian>
-            <Polish>Czas do infekcji</Polish>
-            <Portuguese>Tempo até a infecção</Portuguese>
-            <Russian>Время до заражения</Russian>
-            <German>Zeit bis zur Infektion</German>
-            <Korean>중독까지 걸리는 시간</Korean>
-            <Japanese>感染までの時間</Japanese>
-            <Chinese>感染所需時間</Chinese>
-            <Chinesesimp>感染前的时间</Chinesesimp>
-            <Finnish>Aikaa tartunnan saamiseen</Finnish>
-            <Dutch>Tijd tot infectie</Dutch>
-            <Turkish>Enfeksiyona kadar geçen süre</Turkish>
-        </Key>
-        <Key ID="STR_KAT_Chemical_SETTING_infectionTime_DESC">
-            <English>Time you can stand in the gas before you get infected or need a gas mask.</English>
-            <Czech>Čas po který můžete stát v plynu bez infikování se či potřeby plynové masky</Czech>
-            <French>Durée où vous pouvez tenir dans un gaz avant d'être infecté ou d'avoir besoin d'un masque à gaz</French>
-            <Spanish>Tiempo que puedes resistir en el gas hasta que resultes infectado o requieras una mascara de gas</Spanish>
-            <Italian>Tempo che puoi restare nel gas prima di rimanere intossicato o aver bisogno di una maschera antigas.</Italian>
-            <Polish>Ustala jak długo możesz stać w gazie zanim zostaniesz zainfekowany lub będziesz potrzebował maski gazowej.</Polish>
-            <Portuguese>Tempo que você pode ficar no gás antes de ser infectado ou precisar de uma máscara de gás.</Portuguese>
-            <Russian>Время, когда вы сможете постоять в газе, прежде чем заразитесь или вам понадобится противогаз.</Russian>
-            <German>Die Zeit, in der man im Gas stehen kann, bevor man infiziert wird bzw. eine Gasmaske benötigt.</German>
-            <Korean>당신이 중독되거나 방독면이 필요하기 전에 가스 속에서 견딜 수 있는 시간입니다.</Korean>
-            <Japanese>ガスの中でガスマスクを装備していない時に毒状態にならないで立っていられる時間を定義します</Japanese>
-            <Chinese>您可以在毒氣中停留多長時間而不會受到感染或需要防毒面具。</Chinese>
-            <Chinesesimp>在感染或需要防毒面具之前，你可以站在毒气中。</Chinesesimp>
-            <Finnish>Aika, jonka voit seistä kaasussa, ennen kuin sinulla on vaikutusta tai tarvitset kaasunaamaria</Finnish>
-            <Dutch>Tijd dat je in gas kan staan voordat je geïnfecteerd raakt of een gasmasker nodig hebt</Dutch>
-            <Turkish>Enfekte olmadan veya gaz maskesine ihtiyaç duymadan önce gaz içinde kalabileceğiniz süre</Turkish>
-        </Key>
         <Key ID="STR_KAT_Chemical_SETTING_showPoisoning">
             <English>Show Poisoning</English>
             <Czech>Zobrazit otravu</Czech>
@@ -822,40 +808,12 @@
             <Turkish>Gaz maskesini çıkar</Turkish>
         </Key>
         <Key ID="STR_KAT_Chemical_ToxicGas_DisplayName">
-            <English>82mm Toxic Gas Round</English>
-            <Czech>82mm Granát s Toxickým Plynem</Czech>
-            <French>Cartouche de 82mm de gaz toxique</French>
-            <Spanish>Ronda de 82mm de gas toxico</Spanish>
-            <Italian>Colpo 82mm di gas tossico</Italian>
-            <Polish>Pocisk gazu toksycznego kal.82mm</Polish>
-            <Portuguese>Cartucho de gás tóxico de 82mm</Portuguese>
-            <Russian>Снаряд с токсичным газом диаметром 82 мм</Russian>
-            <German>[CSW] 82mm Senfgas Mörser Granate</German>
-            <Korean>[CSW] 82mm 유독가스탄</Korean>
-            <Japanese>[CSW] 82mm 有毒ガス弾</Japanese>
-            <Chinese>82毫米有毒氣體彈藥</Chinese>
-            <Chinesesimp>82mm圆形有毒气体</Chinesesimp>
-            <Finnish>82 mm myrkyllinen kaasulaastikuori</Finnish>
-            <Dutch>82mm Gifgasgranaat</Dutch>
-            <Turkish>82mm Toksik Gaz Mermisi</Turkish>
+            <English>82mm Chlorine Round</English>
+            <German>[CSW] 82mm Chlor Mörser Granate</German>
         </Key>
         <Key ID="STR_KAT_Chemical_ToxicGas_MFDNAME">
-            <English>Toxic gas</English>
-            <Czech>Toxický plyn</Czech>
-            <French>Gaz toxique</French>
-            <Spanish>Gas toxico</Spanish>
-            <Italian>Gas tossico</Italian>
-            <Polish>Toksyczny gaz</Polish>
-            <Portuguese>Gás tóxico</Portuguese>
-            <Russian>Токсичный газ</Russian>
-            <German>Senfgas (Giftgas)</German>
-            <Korean>유독가스</Korean>
-            <Japanese>有毒ガス</Japanese>
-            <Chinese>有毒氣體</Chinese>
-            <Chinesesimp>有毒气体</Chinesesimp>
-            <Finnish>Myrkyllinen kaasu</Finnish>
-            <Dutch>Gifgas</Dutch>
-            <Turkish>Toksik gaz</Turkish>
+            <English>Chlorine</English>
+            <German>Chlor</German>
         </Key>
         <Key ID="STR_KAT_Chemical_TriWire_Gas_Desc">
             <English>Type: Tripwire gas - Sprays a poisonous gas when triggered.&lt;br /&gt;Rounds: 1&lt;br /&gt;Used on: Ground</English>
@@ -993,6 +951,14 @@
             <Dutch>KAT - ADV Medical: Chemisch</Dutch>
             <Turkish>KAT – Gelişmiş Tıp: Kimyasal</Turkish>
         </Key>
+        <Key ID="STR_KAT_Chemical_SETTING_enableSmellHint">
+            <English>Enable Smell Hint</English>
+            <German>Geruch Hinweis anzeigen</German>
+        </Key>
+        <Key ID="STR_KAT_Chemical_SETTING_enableSmellHint_DESC">
+            <English>Determines if a small hint should appear telling the player that he smells a certain type of gas</English>
+            <German>Bestimmt, ob ein Hinweis angezeigt wird dass der Spieler ein gewisses Gas riecht</German>
+        </Key>
         <Key ID="STR_KAT_Chemical_giveGasMask_action">
             <English>Put on gas mask</English>
             <Czech>Nasadit Plynovou masku</Czech>
@@ -1082,6 +1048,314 @@
             <Finnish>Tiiviste, jota käytetään esineiden tiivistämiseen, kun myrkyllistä ainetta vuotaa ulos</Finnish>
             <Dutch>Afdichtmiddel dat gebruikt wordt om een object te dichten wanneer er bijvoorbeeld een giftige stof lekt</Dutch>
             <Turkish>Örneğin toksik bir madde sızdığında nesneleri kapatmak için kullanılan sızdırmazlık maddesi</Turkish>
+        </Key>
+        <Key ID="STR_KAT_Chemical_Phosgene_DisplayName">
+            <English>82mm Phosgene Round</English>
+            <German>[CSW] 82mm Phosgen Mörser Granate</German>
+        </Key>
+        <Key ID="STR_KAT_Chemical_Phosgene_MFDNAME">
+            <English>Phosgene</English>
+            <German>Phosgen</German>
+        </Key>
+        <Key ID="STR_KAT_Chemical_Mustard_DisplayName">
+            <English>82mm Mustard Gas Round</English>
+            <German>[CSW] 82mm Senfgas Mörser Granate</German>
+        </Key>
+        <Key ID="STR_KAT_Chemical_Mustard_MFDNAME">
+            <English>Mustard</English>
+            <German>Senfgas</German>
+        </Key>
+        <Key ID="STR_KAT_Chemical_Sarin_DisplayName">
+            <English>82mm Sarin Round</English>
+            <German>[CSW] 82mm Sarin Mörser Granate</German>
+        </Key>
+        <Key ID="STR_KAT_Chemical_Sarin_MFDNAME">
+            <English>Sarin</English>
+            <German>Sarin</German>
+        </Key>
+        <Key ID="STR_KAT_Chemical_VX_DisplayName">
+            <English>82mm VX Round</English>
+            <German>[CSW] 82mm VX Mörser Granate</German>
+        </Key>
+        <Key ID="STR_KAT_Chemical_VX_MFDNAME">
+            <English>VX</English>
+            <German>VX</German>
+        </Key>
+        <Key ID="STR_KAT_Chemical_Lvl2_Gas">
+            <English>Phosgene (Level 1)</English>
+            <German>Phosgen (Level 1)</German>
+        </Key>
+        <Key ID="STR_KAT_Chemical_Lvl3_Gas">
+            <English>Mustard gas (Level 2)</English>
+            <German>Senfgas (Level 2)</German>
+        </Key>
+        <Key ID="STR_KAT_Chemical_Lvl4_Gas">
+            <English>Sarin (Level 2)</English>
+            <German>Sarin (Level 2)</German>
+        </Key>
+        <Key ID="STR_KAT_Chemical_Lvl5_Gas">
+            <English>VX (Level 2)</English>
+            <German>VX (Level 2)</German>
+        </Key>
+        <Key ID="STR_KAT_Chemical_Smell_Chlorine">
+            <English>You smell chlorine in the air...</English>
+            <German>Du riechst Chlor in der Luft...</German>
+        </Key>
+        <Key ID="STR_KAT_Chemical_Smell_Phosgene">
+            <English>You catch a faint smell of fresh hay...</English>
+            <German>Du bemerkst einen schwachen Geruch von frischem Heu...</German>
+        </Key>
+        <Key ID="STR_KAT_Chemical_Smell_Mustard">
+            <English>You smell garlic and mustard...</English>
+            <German>Du riechst Knoblauch und Senf...</German>
+        </Key>
+        <Key ID="STR_KAT_Chemical_M8_Header">
+            <English>M8 DETECTION PAPER</English>
+            <German>M8 NACHWEISPAPIER</German>
+        </Key>
+        <Key ID="STR_KAT_Chemical_M8_Legend_G">
+            <English>G-Series Nerve</English>
+            <German>G-Serie Nervenkampfstoff</German>
+        </Key>
+        <Key ID="STR_KAT_Chemical_M8_Legend_V">
+            <English>V-Series Nerve</English>
+            <German>V-Serie Nervenkampfstoff</German>
+        </Key>
+        <Key ID="STR_KAT_Chemical_M8_Legend_H">
+            <English>Blister Agent</English>
+            <German>Hautkampfstoff</German>
+        </Key>
+        <Key ID="STR_KAT_Chemical_M8_Footer_Clean">
+            <English>No mark = Clean</English>
+            <German>Kein Fleck = Sauber</German>
+        </Key>
+        <Key ID="STR_KAT_Chemical_m8paperItem">
+            <English>M8 Detection Paper</English>
+            <German>M8 Nachweispapier</German>
+        </Key>
+        <Key ID="STR_KAT_Chemical_m8paperItem_desc">
+            <English>Single-use chemical detection paper. Wipe across a surface to detect nerve and blister agents — does not detect choking agents.</English>
+            <German>Einweg-Nachweispapier. Über eine Oberfläche wischen, um Nerven- und Hautkampfstoffe zu erkennen — keine Erkennung von Lungenkampfstoffen.</German>
+        </Key>
+        <Key ID="STR_KAT_Chemical_UseM8Paper">
+            <English>Use M8 Detection Paper</English>
+            <German>M8 Nachweispapier benutzen</German>
+        </Key>
+        <Key ID="STR_KAT_Chemical_UseM8Paper_Progress">
+            <English>Wiping M8 paper...</English>
+            <German>Wische M8 Papier...</German>
+        </Key>
+        <Key ID="STR_KAT_Chemical_deconKitItem">
+            <English>M291 Decontamination Kit</English>
+            <German>M291 Dekontaminationsset</German>
+        </Key>
+        <Key ID="STR_KAT_Chemical_deconKitItem_desc">
+            <English>Personal decontamination kit. Removes chemical contamination (mustard, VX) from skin and gear after exposure.</English>
+            <German>Persönliches Dekontaminationsset. Entfernt nach Exposition chemische Kontamination (Senfgas, VX) von Haut und Ausrüstung.</German>
+        </Key>
+        <Key ID="STR_KAT_Chemical_UseDecon">
+            <English>Decontaminate</English>
+            <German>Dekontaminieren</German>
+        </Key>
+        <Key ID="STR_KAT_Chemical_UseDecon_Progress">
+            <English>Decontaminating...</English>
+            <German>Dekontaminiere...</German>
+        </Key>
+        <Key ID="STR_KAT_Chemical_atnaaItem">
+            <English>ATNAA Auto-injector</English>
+            <German>ATNAA Auto-Injektor</German>
+        </Key>
+        <Key ID="STR_KAT_Chemical_atnaaItem_desc">
+            <English>Antidote Treatment Nerve Agent Auto-injector. Combined atropine and pralidoxime — counters nerve agent exposure (Sarin, VX).</English>
+            <German>Antidot-Auto-Injektor gegen Nervenkampfstoffe. Kombination aus Atropin und Pralidoxim — wirkt gegen Sarin und VX.</German>
+        </Key>
+        <Key ID="STR_KAT_Chemical_Take_ATNAA">
+            <English>Administer ATNAA</English>
+            <German>ATNAA verabreichen</German>
+        </Key>
+        <Key ID="STR_KAT_Chemical_NerveAgentExposure">
+            <English>Nerve Agent Exposure: %1</English>
+            <German>Nervenkampfstoff-Exposition: %1</German>
+        </Key>
+        <Key ID="STR_KAT_Chemical_ChemicalContamination">
+            <English>Skin Contamination: %1</English>
+            <German>Haut-Kontamination: %1</German>
+        </Key>
+        <Key ID="STR_KAT_Chemical_SETTING_AVAIL_CBRN">
+            <English>Available CBRN Suit Uniforms</English>
+            <German>Verfügbare CBRN-Schutzanzüge</German>
+        </Key>
+        <Key ID="STR_KAT_Chemical_SETTING_AVAIL_CBRN_DISC">
+            <English>Comma-separated CfgVehicles uniform classnames that count as full CBRN protection (required to survive Mustard / Sarin / VX). Empty by default.</English>
+            <German>Komma-getrennte CfgVehicles Uniform-Klassennamen, die als vollständiger CBRN-Schutz gelten (benötigt für Senfgas / Sarin / VX). Standard: leer.</German>
+        </Key>
+        <Key ID="STR_KAT_Chemical_SETTING_chlorine_onsetTime">
+            <English>Chlorine: Onset Time</English>
+            <German>Chlor: Eintrittszeit</German>
+        </Key>
+        <Key ID="STR_KAT_Chemical_SETTING_chlorine_onsetTime_DESC">
+            <English>Seconds in cloud before chlorine symptoms (cough, airPoisoning) begin.</English>
+            <German>Sekunden in der Wolke, bevor Chlor-Symptome beginnen.</German>
+        </Key>
+        <Key ID="STR_KAT_Chemical_SETTING_phosgene_onsetMin">
+            <English>Phosgene: Onset Min</English>
+            <German>Phosgen: Eintritt Min</German>
+        </Key>
+        <Key ID="STR_KAT_Chemical_SETTING_phosgene_onsetMin_DESC">
+            <English>Minimum delay (seconds) before phosgene pulmonary edema appears after first exposure.</English>
+            <German>Minimale Verzögerung (Sekunden), bevor das Lungenödem durch Phosgen einsetzt.</German>
+        </Key>
+        <Key ID="STR_KAT_Chemical_SETTING_phosgene_onsetMax">
+            <English>Phosgene: Onset Max</English>
+            <German>Phosgen: Eintritt Max</German>
+        </Key>
+        <Key ID="STR_KAT_Chemical_SETTING_phosgene_onsetMax_DESC">
+            <English>Maximum delay (seconds) before phosgene pulmonary edema appears.</English>
+            <German>Maximale Verzögerung (Sekunden), bevor das Lungenödem durch Phosgen einsetzt.</German>
+        </Key>
+        <Key ID="STR_KAT_Chemical_SETTING_mustard_eyeOnsetMin">
+            <English>Mustard: Eye Onset Min</English>
+            <German>Senfgas: Augensymptome Min</German>
+        </Key>
+        <Key ID="STR_KAT_Chemical_SETTING_mustard_eyeOnsetMin_DESC">
+            <English>Minimum delay (seconds) before mustard eye injuries appear.</English>
+            <German>Minimale Verzögerung (Sekunden), bevor Senfgas-Augenverletzungen auftreten.</German>
+        </Key>
+        <Key ID="STR_KAT_Chemical_SETTING_mustard_eyeOnsetMax">
+            <English>Mustard: Eye Onset Max</English>
+            <German>Senfgas: Augensymptome Max</German>
+        </Key>
+        <Key ID="STR_KAT_Chemical_SETTING_mustard_eyeOnsetMax_DESC">
+            <English>Maximum delay (seconds) before mustard eye injuries appear.</English>
+            <German>Maximale Verzögerung (Sekunden), bevor Senfgas-Augenverletzungen auftreten.</German>
+        </Key>
+        <Key ID="STR_KAT_Chemical_SETTING_mustard_burnOnsetMin">
+            <English>Mustard: Burn Onset Min</English>
+            <German>Senfgas: Brandverletzungen Min</German>
+        </Key>
+        <Key ID="STR_KAT_Chemical_SETTING_mustard_burnOnsetMin_DESC">
+            <English>Minimum delay (seconds) before mustard skin blisters/burns appear.</English>
+            <German>Minimale Verzögerung (Sekunden), bevor Senfgas-Hautblasen auftreten.</German>
+        </Key>
+        <Key ID="STR_KAT_Chemical_SETTING_mustard_burnOnsetMax">
+            <English>Mustard: Burn Onset Max</English>
+            <German>Senfgas: Brandverletzungen Max</German>
+        </Key>
+        <Key ID="STR_KAT_Chemical_SETTING_mustard_burnOnsetMax_DESC">
+            <English>Maximum delay (seconds) before mustard skin blisters/burns appear.</English>
+            <German>Maximale Verzögerung (Sekunden), bevor Senfgas-Hautblasen auftreten.</German>
+        </Key>
+        <Key ID="STR_KAT_Chemical_SETTING_sarin_vomitTime">
+            <English>Sarin: Vomit Time</English>
+            <German>Sarin: Erbrechen-Zeit</German>
+        </Key>
+        <Key ID="STR_KAT_Chemical_SETTING_sarin_vomitTime_DESC">
+            <English>Seconds after sarin exposure before vomiting begins.</English>
+            <German>Sekunden nach Sarin-Exposition bis zum Erbrechen.</German>
+        </Key>
+        <Key ID="STR_KAT_Chemical_SETTING_sarin_unconsciousTime">
+            <English>Sarin: Unconsciousness Time</English>
+            <German>Sarin: Bewusstlosigkeit-Zeit</German>
+        </Key>
+        <Key ID="STR_KAT_Chemical_SETTING_sarin_unconsciousTime_DESC">
+            <English>Seconds after sarin exposure before unconsciousness.</English>
+            <German>Sekunden nach Sarin-Exposition bis zur Bewusstlosigkeit.</German>
+        </Key>
+        <Key ID="STR_KAT_Chemical_SETTING_sarin_cardiacArrestTime">
+            <English>Sarin: Cardiac Arrest Time</English>
+            <German>Sarin: Herzstillstand-Zeit</German>
+        </Key>
+        <Key ID="STR_KAT_Chemical_SETTING_sarin_cardiacArrestTime_DESC">
+            <English>Seconds after sarin exposure before cardiac arrest (asystole).</English>
+            <German>Sekunden nach Sarin-Exposition bis zum Herzstillstand (Asystolie).</German>
+        </Key>
+        <Key ID="STR_KAT_Chemical_SETTING_vx_vomitTime">
+            <English>VX: Vomit Time</English>
+            <German>VX: Erbrechen-Zeit</German>
+        </Key>
+        <Key ID="STR_KAT_Chemical_SETTING_vx_vomitTime_DESC">
+            <English>Seconds after VX exposure before vomiting begins.</English>
+            <German>Sekunden nach VX-Exposition bis zum Erbrechen.</German>
+        </Key>
+        <Key ID="STR_KAT_Chemical_SETTING_vx_unconsciousTime">
+            <English>VX: Unconsciousness Time</English>
+            <German>VX: Bewusstlosigkeit-Zeit</German>
+        </Key>
+        <Key ID="STR_KAT_Chemical_SETTING_vx_unconsciousTime_DESC">
+            <English>Seconds after VX exposure before unconsciousness.</English>
+            <German>Sekunden nach VX-Exposition bis zur Bewusstlosigkeit.</German>
+        </Key>
+        <Key ID="STR_KAT_Chemical_SETTING_vx_cardiacArrestTime">
+            <English>VX: Cardiac Arrest Time</English>
+            <German>VX: Herzstillstand-Zeit</German>
+        </Key>
+        <Key ID="STR_KAT_Chemical_SETTING_vx_cardiacArrestTime_DESC">
+            <English>Seconds after VX exposure before cardiac arrest (asystole).</English>
+            <German>Sekunden nach VX-Exposition bis zum Herzstillstand (Asystolie).</German>
+        </Key>
+        <Key ID="STR_KAT_Chemical_SETTING_vx_cloudLifetime">
+            <English>VX: Cloud Lifetime</English>
+            <German>VX: Wolken-Lebensdauer</German>
+        </Key>
+        <Key ID="STR_KAT_Chemical_SETTING_vx_cloudLifetime_DESC">
+            <English>How long VX clouds persist in seconds (VX is persistent in real life).</English>
+            <German>Wie lange VX-Wolken in Sekunden bestehen (VX ist in der Realität persistent).</German>
+        </Key>
+        <Key ID="STR_KAT_Chemical_SETTING_contaminationTickInterval">
+            <English>Contamination Tick Interval</English>
+            <German>Kontaminations-Tick-Intervall</German>
+        </Key>
+        <Key ID="STR_KAT_Chemical_SETTING_contaminationTickInterval_DESC">
+            <English>Seconds between re-exposure ticks for skin contamination (mustard, VX) until decontaminated.</English>
+            <German>Sekunden zwischen Re-Expositions-Ticks bei Hautkontamination (Senfgas, VX), bis dekontaminiert.</German>
+        </Key>
+        <Key ID="STR_KAT_Chemical_SETTING_deconActionTime">
+            <English>Decontamination Duration</English>
+            <German>Dekontamination Dauer</German>
+        </Key>
+        <Key ID="STR_KAT_Chemical_SETTING_deconActionTime_DESC">
+            <English>Seconds the decontamination self-action takes.</English>
+            <German>Sekunden, die die Selbst-Dekontamination dauert.</German>
+        </Key>
+        <Key ID="STR_KAT_Chemical_SETTING_m8PaperActionTime">
+            <English>M8 Paper Use Duration</English>
+            <German>M8 Papier Anwendungsdauer</German>
+        </Key>
+        <Key ID="STR_KAT_Chemical_SETTING_m8PaperActionTime_DESC">
+            <English>Seconds the M8 detection paper self-action takes.</English>
+            <German>Sekunden, die die M8-Papier-Aktion dauert.</German>
+        </Key>
+        <Key ID="STR_KAT_Chemical_SETTING_cloudIdMemoryTime">
+            <English>Cloud ID Memory</English>
+            <German>Wolken-ID-Speicher</German>
+        </Key>
+        <Key ID="STR_KAT_Chemical_SETTING_cloudIdMemoryTime_DESC">
+            <English>How long (seconds) the last-cloud gas type is remembered on a unit (drives M8 paper detection window).</English>
+            <German>Wie lange (Sekunden) der letzte Wolken-Gastyp auf einer Einheit gespeichert bleibt (steuert das M8-Papier-Erkennungsfenster).</German>
+        </Key>
+        <Key ID="STR_KAT_Chemical_SETTING_m8PaperDisplayTime">
+            <English>M8 Paper Display Time</English>
+            <German>M8 Papier Anzeigedauer</German>
+        </Key>
+        <Key ID="STR_KAT_Chemical_SETTING_m8PaperDisplayTime_DESC">
+            <English>Seconds the M8 paper result UI stays on screen.</English>
+            <German>Sekunden, die das M8-Papier-Ergebnis auf dem Bildschirm bleibt.</German>
+        </Key>
+        <Key ID="STR_ACE_Medical_Damage_ChemicalBurn">
+            <English>Chemical Burn</English>
+            <German>Chemische Verätzung</German>
+        </Key>
+        <Key ID="STR_ACE_Medical_Damage_ChemicalBurn_Minor">
+            <English>Minor Chemical Burn</English>
+            <German>Leichte chemische Verätzung</German>
+        </Key>
+        <Key ID="STR_ACE_Medical_Damage_ChemicalBurn_Medium">
+            <English>Medium Chemical Burn</English>
+            <German>Mittlere chemische Verätzung</German>
+        </Key>
+        <Key ID="STR_ACE_Medical_Damage_ChemicalBurn_Large">
+            <English>Major Chemical Burn</English>
+            <German>Schwere chemische Verätzung</German>
         </Key>
     </Package>
 </Project>

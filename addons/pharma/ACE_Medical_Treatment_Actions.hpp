@@ -251,6 +251,10 @@ class ACE_Medical_Treatment_Actions {
         callbackSuccess = QFUNC(medication);
         sounds[] = {};
     };
+    class ATNAA: Atropine {
+        displayName = "$STR_KAT_Chemical_Take_ATNAA";
+        items[] = {"kat_atnaa"};
+    };
     class Ketamine: EACA {
         displayName = CSTRING(Take_Ketamine);
         allowedSelections[] = {"Body", "LeftArm", "RightArm", "LeftLeg", "RightLeg"};

@@ -35,6 +35,11 @@ private _lifetime = [_configClass, "KAT_lifetime", 60] call BIS_fnc_returnConfig
 private _radius = [_configClass, "KAT_radius", 10] call BIS_fnc_returnConfigEntry;
 private _gasLevel = [_configClass, "KAT_toxicLvL", 1] call BIS_fnc_returnConfigEntry;
 
+// VX is persistent
+if (_gasLevel == 5) then {
+    _lifetime = missionNamespace getVariable [QGVAR(vx_cloudLifetime), _lifetime];
+};
+
 [{
     params ["_args", "_handler"];
     _args params ["_projectile", "_gasInfo"];

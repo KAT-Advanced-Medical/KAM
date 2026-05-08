@@ -28,6 +28,34 @@ class CfgAmmo {
         KAT_toxicLvL = 0; //cs
     };
 
+    class Sh_82mm_AMOS_Type2: Sh_82mm_AMOS_Type0 {
+        KAT_projectile = 1;
+        KAT_lifetime = 90;
+        KAT_radius = 10;
+        KAT_toxicLvL = 2; //phosgene
+    };
+
+    class Sh_82mm_AMOS_Type3: Sh_82mm_AMOS_Type0 {
+        KAT_projectile = 1;
+        KAT_lifetime = 120;
+        KAT_radius = 10;
+        KAT_toxicLvL = 3; //mustard
+    };
+
+    class Sh_82mm_AMOS_Type4: Sh_82mm_AMOS_Type0 {
+        KAT_projectile = 1;
+        KAT_lifetime = 90;
+        KAT_radius = 10;
+        KAT_toxicLvL = 4; //sarin
+    };
+
+    class Sh_82mm_AMOS_Type5: Sh_82mm_AMOS_Type0 {
+        KAT_projectile = 1;
+        KAT_lifetime = 600;
+        KAT_radius = 10;
+        KAT_toxicLvL = 5; //vx — persistent
+    };
+
     class SmokeShell;
     class KAT_G_M7A3: SmokeShell {
         KAT_csGas = 1;

@@ -20,7 +20,11 @@
 
 // Handlers
 [QEGVAR(pharma,atropineLocal), LINKFUNC(treatmentAdvanced_AtropineLocal)] call CBA_fnc_addEventHandler;
-[QEGVAR(misc,handleRespawn), LINKFUNC(handleRespawn)] call CBA_fnc_addEventHandler;
+[QEGVAR(pharma,atnaaLocal),    LINKFUNC(treatmentAdvanced_AtnaaLocal)]    call CBA_fnc_addEventHandler;
+[QEGVAR(misc,handleRespawn),   LINKFUNC(handleRespawn)]                   call CBA_fnc_addEventHandler;
+
+// Delayed-effect dispatcher (fires on the unit's owner via target event)
+[QGVAR(applyDelayedEffect), LINKFUNC(applyDelayedEffect)] call CBA_fnc_addEventHandler;
 
 //Mortar Events
 ["Mortar_01_base_F", "fired", {call FUNC(handleFired)}] call CBA_fnc_addClassEventHandler;
@@ -51,18 +55,32 @@ missionNamespace setVariable [QGVAR(availGasmaskList), _array, true];
 // Client-side particle tracking (all machines)
 GVAR(clientParticles) = createHashMap;
 
+// Maps gas-id → [carpetClass, wispsClass]. Built lazily on first use to allow
+// missions / mods to extend the registry before the first cloud spawns.
+GVAR(particleClassByGasId) = createHashMapFromArray [
+    ["chlorine", [QGVAR(Toxic_Gas_Particles),    QGVAR(Toxic_Gas_Wisps)]],
+    ["phosgene", [QGVAR(Phosgene_Gas_Particles), QGVAR(Phosgene_Gas_Wisps)]],
+    ["mustard",  [QGVAR(Mustard_Gas_Particles),  QGVAR(Mustard_Gas_Wisps)]],
+    ["sarin",    [QGVAR(Sarin_Gas_Particles),    QGVAR(Sarin_Gas_Wisps)]],
+    ["vx",       [QGVAR(VX_Gas_Particles),       QGVAR(VX_Gas_Wisps)]]
+];
+
 [QGVAR(createZoneParticles), {
-    params ["_gasLogic", "_radius"];
+    params ["_gasLogic", "_radius", ["_gasLevel", 1]];
     if (isNull _gasLogic) exitWith {};  // zone removed before JIP fired
     private _netId = netId _gasLogic;
     if (_netId in GVAR(clientParticles)) exitWith {};  // idempotency guard
+
+    private _gasId = (GVAR(toxicLvLToId) getOrDefault [_gasLevel, "chlorine"]);
+    private _classes = (GVAR(particleClassByGasId) getOrDefault [_gasId, [QGVAR(Toxic_Gas_Particles), QGVAR(Toxic_Gas_Wisps)]]);
+    _classes params ["_carpetClass", "_wispsClass"];
 
     private _sourcePos = getPosATL _gasLogic;
     private _particleObjects = [];
 
     // Layer 1: Ground carpet — bulk mass, area-fill via setParticleRandom
     private _carpet = "#particlesource" createVehicleLocal _sourcePos;
-    _carpet setParticleClass QGVAR(Toxic_Gas_Particles);
+    _carpet setParticleClass _carpetClass;
     _carpet setParticleCircle [0, [0, 0, 0]];
     _carpet setParticleRandom [
         2,
@@ -76,7 +94,7 @@ GVAR(clientParticles) = createHashMap;
 
     // Layer 2: Drifting wisps — volumetric body with vertical lift
     private _wisps = "#particlesource" createVehicleLocal _sourcePos;
-    _wisps setParticleClass QGVAR(Toxic_Gas_Wisps);
+    _wisps setParticleClass _wispsClass;
     _wisps setParticleCircle [0, [0, 0, 0]];
     _wisps setParticleRandom [
         1,
@@ -90,7 +108,7 @@ GVAR(clientParticles) = createHashMap;
 
     // Layer 3: Perimeter creep — circle emission with slight inward velocity
     private _creep = "#particlesource" createVehicleLocal _sourcePos;
-    _creep setParticleClass QGVAR(Toxic_Gas_Particles);
+    _creep setParticleClass _carpetClass;
     _creep setParticleCircle [_radius * 0.95, [-0.4, -0.4, 0]];
     _creep setParticleRandom [
         2,
@@ -131,6 +149,24 @@ GVAR(clientParticles) = createHashMap;
 if (!isServer) exitWith {};
 
 GVAR(gasSources) = createHashMap;
+GVAR(exposureWatcherUnits) = createHashMap;
+
+// Server-side: register a unit with the exposure watcher PFH (idempotent).
+// Triggered by FUNC(addToExposureWatcher) on the unit's owner.
+[QGVAR(serverAddExposureWatcher), {
+    params ["_unit"];
+    if (isNull _unit) exitWith {};
+    private _netId = netId _unit;
+    if (_netId in GVAR(exposureWatcherUnits)) exitWith {};
+    GVAR(exposureWatcherUnits) set [_netId, _unit];
+    if !(missionNamespace getVariable [QGVAR(exposureWatcherActive), false]) then {
+        missionNamespace setVariable [QGVAR(exposureWatcherActive), true];
+        [LINKFUNC(exposureWatcherPFH), 1, []] call CBA_fnc_addPerFrameHandler;
+    };
+}] call CBA_fnc_addEventHandler;
+
+// Server-side: start the contamination tick PFH for a unit.
+[QGVAR(serverStartContaminationTick), LINKFUNC(startContaminationTick)] call CBA_fnc_addEventHandler;
 
 [QGVAR(addGasSource), {
     params [
@@ -186,8 +222,9 @@ GVAR(gasSources) = createHashMap;
 
     // Gas particles are only created for toxic zones right now
     if (_gasLevel != 0) then {
-        // Broadcast particle creation to all machines (JIP-safe)
-        private _effectsJipID = [QGVAR(createZoneParticles), [_gasLogic, _radius]] call CBA_fnc_globalEventJIP;
+        // Broadcast particle creation to all machines (JIP-safe). Gas level is
+        // forwarded so each client can pick the right per-gas particle class.
+        private _effectsJipID = [QGVAR(createZoneParticles), [_gasLogic, _radius, _gasLevel]] call CBA_fnc_globalEventJIP;
         _gasLogic setVariable [QGVAR(effectsJipID), _effectsJipID];
     };
 

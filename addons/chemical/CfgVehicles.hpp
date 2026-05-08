@@ -36,6 +36,24 @@ class CfgVehicles {
                     icon = QPATHTOF(ui\Gasmask_icon.paa);
                 };
 
+                class KAT_UseM8Paper {
+                    displayName = CSTRING(UseM8Paper);
+                    condition = QUOTE('kat_m8paper' in (items _player));
+                    exceptions[] = {"isNotSwimming", "isNotInside"};
+                    statement = QUOTE([_player] call FUNC(useM8Paper));
+                    showDisabled = 0;
+                    icon = QPATHTOF(ui\icon_m8paper.paa);
+                };
+
+                class KAT_UseDecon {
+                    displayName = CSTRING(UseDecon);
+                    condition = QUOTE('kat_decon_kit' in (items _player) && {(_player getVariable [ARR_2(QQGVAR(chemicalContamination),'')]) != ''});
+                    exceptions[] = {"isNotSwimming", "isNotInside"};
+                    statement = QUOTE([ARR_2(_player,_player)] call FUNC(decontaminate));
+                    showDisabled = 0;
+                    icon = QPATHTOF(ui\icon_deconkit.paa);
+                };
+
                 class KAT_ChemicalDetector {
                     displayName = CSTRING(ChemicalDetector_Menu);
                     icon = QPATHTOF(ui\kat_chemicalDet_icon.paa);
@@ -104,6 +122,38 @@ class CfgVehicles {
         };
     };
 
+    class kat_m8paper_Item: Item_Base_F {
+        scope = 2;
+        scopeCurator = 2;
+        displayName = CSTRING(m8paperItem);
+        author = "AtrixZockt";
+        vehicleClass = "Items";
+        editorCategory = "EdCat_Equipment";
+        editorSubcategory = "EdSubcat_InventoryItems";
+        class TransportItems {
+            class _xx_kat_m8paper {
+                name = "kat_m8paper";
+                count = 1;
+            };
+        };
+    };
+
+    class kat_decon_kit_Item: Item_Base_F {
+        scope = 2;
+        scopeCurator = 2;
+        displayName = CSTRING(deconKitItem);
+        author = "AtrixZockt";
+        vehicleClass = "Items";
+        editorCategory = "EdCat_Equipment";
+        editorSubcategory = "EdSubcat_InventoryItems";
+        class TransportItems {
+            class _xx_kat_decon_kit {
+                name = "kat_decon_kit";
+                count = 1;
+            };
+        };
+    };
+
     class Logic;
     class Module_F: Logic
     {
@@ -144,6 +194,22 @@ class CfgVehicles {
                         name = CSTRING(Lvl1_Gas);
                         value = 1;
                         default = 1;
+                    };
+                    class Phosgene {
+                        name = CSTRING(Lvl2_Gas);
+                        value = 2;
+                    };
+                    class Mustard {
+                        name = CSTRING(Lvl3_Gas);
+                        value = 3;
+                    };
+                    class Sarin {
+                        name = CSTRING(Lvl4_Gas);
+                        value = 4;
+                    };
+                    class VX {
+                        name = CSTRING(Lvl5_Gas);
+                        value = 5;
                     };
                 };
             };
@@ -221,6 +287,10 @@ class CfgVehicles {
         class TransportMagazines {
             MACRO_ADDMAGAZINE(KAT_1Rnd_82mm_Mo_Type0,8);
             MACRO_ADDMAGAZINE(KAT_1Rnd_82mm_Mo_TypeCS,8);
+            MACRO_ADDMAGAZINE(KAT_1Rnd_82mm_Mo_Type2,4);
+            MACRO_ADDMAGAZINE(KAT_1Rnd_82mm_Mo_Type3,4);
+            MACRO_ADDMAGAZINE(KAT_1Rnd_82mm_Mo_Type4,4);
+            MACRO_ADDMAGAZINE(KAT_1Rnd_82mm_Mo_Type5,4);
         };
     };
 

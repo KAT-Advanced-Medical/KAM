@@ -35,4 +35,27 @@ PREP(spawnSmoke);
 PREP(takeOffGasMask);
 PREP(throwGrenade);
 PREP(treatmentAdvanced_AtropineLocal);
+PREP(treatmentAdvanced_AtnaaLocal);
 PREP(ui_gasModule);
+
+// New chemical-warfare refactor
+PREP(initGasRegistry);
+PREP(hasCBRNProtection);
+PREP(emitSmellHint);
+PREP(scheduleAirPoisoningOnset);
+PREP(scheduleNerveSymptomChain);
+PREP(addToExposureWatcher);
+PREP(exposureWatcherPFH);
+PREP(contaminationTickPFH);
+PREP(startContaminationTick);
+PREP(applyDelayedEffect);
+PREP(effect_cs);
+PREP(effect_chlorine);
+PREP(effect_phosgene);
+PREP(effect_mustard);
+PREP(applyMustardDamage);
+PREP(effect_sarin);
+PREP(effect_vx);
+PREP(useM8Paper);
+PREP(decontaminate);
+PREP(clearContamination);
