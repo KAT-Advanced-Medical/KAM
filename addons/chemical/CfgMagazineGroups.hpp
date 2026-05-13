@@ -4,6 +4,10 @@ class ace_csw_groups {
         KAT_1Rnd_82mm_Mo_Type0 = 1;
         KAT_5Rnd_82mm_Mo_Type0_AI = 1;
     };
+    class KAT_1Rnd_82mm_Mo_Type0_Cluser {
+        KAT_1Rnd_82mm_Mo_Type0_Cluser = 1;
+        KAT_5Rnd_82mm_Mo_TypeType0_Cluser_AI = 1;
+    };
     class KAT_1Rnd_82mm_Mo_TypeCS {
         KAT_1Rnd_82mm_Mo_TypeCS = 1;
         KAT_3Rnd_82mm_Mo_TypeCS_AI = 1;

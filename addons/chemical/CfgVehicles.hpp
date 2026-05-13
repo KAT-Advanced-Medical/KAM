@@ -286,6 +286,7 @@ class CfgVehicles {
         displayName = CSTRING(GasBox_Displayname);
         class TransportMagazines {
             MACRO_ADDMAGAZINE(KAT_1Rnd_82mm_Mo_Type0,8);
+            MACRO_ADDMAGAZINE(KAT_1Rnd_82mm_Mo_Type0_Cluser,8);
             MACRO_ADDMAGAZINE(KAT_1Rnd_82mm_Mo_TypeCS,8);
             MACRO_ADDMAGAZINE(KAT_1Rnd_82mm_Mo_Type2,4);
             MACRO_ADDMAGAZINE(KAT_1Rnd_82mm_Mo_Type3,4);

@@ -815,6 +815,14 @@
             <English>Chlorine</English>
             <German>Chlor</German>
         </Key>
+        <Key ID="STR_KAT_Chemical_ToxicGas_cluster_DisplayName">
+            <English>82mm Chlorine Cluster Round</English>
+            <German>[CSW] 82mm Chlor Streu Mörser Granate</German>
+        </Key>
+        <Key ID="STR_KAT_Chemical_ToxicGas_cluster_MFDNAME">
+            <English>Chlorine cluster</English>
+            <German>Chlor Streu</German>
+        </Key>
         <Key ID="STR_KAT_Chemical_TriWire_Gas_Desc">
             <English>Type: Tripwire gas - Sprays a poisonous gas when triggered.&lt;br /&gt;Rounds: 1&lt;br /&gt;Used on: Ground</English>
             <Czech>Typ: Nástražný drát s plynovým granátem - Při aktivaci vypustí do ovzduší jedovatý plyn.&lt;br/&gt;Ran: 1&lt;br/&gt;Použití: Země</Czech>

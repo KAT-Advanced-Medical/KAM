@@ -11,6 +11,17 @@ class CfgMagazines {
         scope = 1;
         count = 5;
     };
+    class KAT_1Rnd_82mm_Mo_Type0_Cluser: ACE_1Rnd_82mm_Mo_HE {
+        author="DiGii";
+        ammo="Sh_82mm_AMOS_Type0_Cluster";
+        displayNameMFDFormat= CSTRING(ToxicGas_cluster_MFDNAME);
+        displayNameShort= CSTRING(ToxicGas_cluster_MFDNAME);
+        displayName= CSTRING(ToxicGas_cluster_DisplayName);
+    };
+    class KAT_5Rnd_82mm_Mo_TypeType0_Cluser_AI: KAT_1Rnd_82mm_Mo_Type0_Cluser {
+        scope = 1;
+        count = 5;
+    };
     class KAT_1Rnd_82mm_Mo_TypeCS: ACE_1Rnd_82mm_Mo_HE {
         author="DiGii";
         ammo="Sh_82mm_AMOS_TypeCS";

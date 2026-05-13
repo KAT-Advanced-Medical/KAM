@@ -71,12 +71,13 @@ class CfgWeapons {
         magazines[] += {
             "KAT_5Rnd_82mm_Mo_Type0_AI",
             "KAT_5Rnd_82mm_Mo_Type2_AI",
-            "KAT_3Rnd_82mm_Mo_TypeCS_AI"
+            "KAT_3Rnd_82mm_Mo_TypeCS_AI",
+            "KAT_5Rnd_82mm_Mo_TypeType0_Cluser_AI"
         };
     };
 
     class ACE_mortar_82mm: mortar_82mm {
-        magazines[] = {"ACE_1Rnd_82mm_Mo_HE","ACE_1Rnd_82mm_Mo_Smoke","ACE_1Rnd_82mm_Mo_Illum","ACE_1Rnd_82mm_Mo_HE_Guided","ACE_1Rnd_82mm_Mo_HE_LaserGuided", "KAT_1Rnd_82mm_Mo_Type0", "KAT_1Rnd_82mm_Mo_TypeCS", "KAT_1Rnd_82mm_Mo_Type2", "KAT_1Rnd_82mm_Mo_Type3", "KAT_1Rnd_82mm_Mo_Type4", "KAT_1Rnd_82mm_Mo_Type5"};
+        magazines[] = {"ACE_1Rnd_82mm_Mo_HE","ACE_1Rnd_82mm_Mo_Smoke","ACE_1Rnd_82mm_Mo_Illum","ACE_1Rnd_82mm_Mo_HE_Guided","ACE_1Rnd_82mm_Mo_HE_LaserGuided", "KAT_1Rnd_82mm_Mo_Type0", "KAT_1Rnd_82mm_Mo_Type0_Cluser", "KAT_1Rnd_82mm_Mo_TypeCS", "KAT_1Rnd_82mm_Mo_Type2", "KAT_1Rnd_82mm_Mo_Type3", "KAT_1Rnd_82mm_Mo_Type4", "KAT_1Rnd_82mm_Mo_Type5"};
     };
 
     class GrenadeLauncher;
