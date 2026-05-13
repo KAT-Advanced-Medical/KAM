@@ -24,9 +24,6 @@
 
 params ["_vehicle", "", "", "", "_ammo", "_magazine", "_projectile"];
 
-// Large enough distance to not simulate any wind deflection
-if (_vehicle distance ACE_player > 8000) exitWith {};
-
 if !(_ammo in KAT_ProjectileCache) exitWith {};
 
 private _configClass = (configFile >> "CfgAmmo" >> _ammo);

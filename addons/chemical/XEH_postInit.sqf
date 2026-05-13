@@ -207,6 +207,8 @@ GVAR(exposureWatcherUnits) = createHashMap;
     // If an object was passed, attach logic to the object
     if (_isObject) then {
         _gasLogic attachTo [_source];
+    } else {
+        _gasLogic setPosATL [_sourcePos select 0, _sourcePos select 1, 0];
     };
 
     // To avoid issues, remove existing entries first before overwriting
