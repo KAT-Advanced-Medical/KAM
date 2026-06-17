@@ -77,6 +77,15 @@
     true
 ] call CBA_fnc_addSetting;
 
+[
+    QGVAR(enableParticleEffects),
+    "CHECKBOX",
+    [LLSTRING(SETTING_enableParticleEffects), LLSTRING(SETTING_enableParticleEffects_DESC)],
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_Protection)],
+    [true],
+    true
+] call CBA_fnc_addSetting;
+
 // =============== CS Gas (Level 0) ===============
 [
     QGVAR(tearGasDropChance),

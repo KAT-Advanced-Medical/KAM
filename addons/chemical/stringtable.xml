@@ -967,6 +967,12 @@
             <English>Determines if a small hint should appear telling the player that he smells a certain type of gas</English>
             <German>Bestimmt, ob ein Hinweis angezeigt wird dass der Spieler ein gewisses Gas riecht</German>
         </Key>
+        <Key ID="STR_KAT_Chemical_SETTING_enableParticleEffects">
+            <English>Enable Gas particle effects</English>
+        </Key>
+        <Key ID="STR_KAT_Chemical_SETTING_enableParticleEffects_DESC">
+            <English>Determines if particle effects are created for gas zones.</English>
+        </Key>
         <Key ID="STR_KAT_Chemical_giveGasMask_action">
             <English>Put on gas mask</English>
             <Czech>Nasadit Plynovou masku</Czech>

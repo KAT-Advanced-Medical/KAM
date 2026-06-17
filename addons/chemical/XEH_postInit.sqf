@@ -223,7 +223,7 @@ GVAR(exposureWatcherUnits) = createHashMap;
     };
 
     // Gas particles are only created for toxic zones right now
-    if (_gasLevel != 0) then {
+    if (_gasLevel != 0 && missionNamespace getVariable [QGVAR(enableParticleEffects), true]) then {
         // Broadcast particle creation to all machines (JIP-safe). Gas level is
         // forwarded so each client can pick the right per-gas particle class.
         private _effectsJipID = [QGVAR(createZoneParticles), [_gasLogic, _radius, _gasLevel]] call CBA_fnc_globalEventJIP;
