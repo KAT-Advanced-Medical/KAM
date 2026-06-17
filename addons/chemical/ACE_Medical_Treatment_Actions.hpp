@@ -1,6 +1,6 @@
 class ACE_Medical_Treatment_Actions {
     class Diagnose;
-    class PutOnGasMask: Diagnose {
+    class KAT_PutOnGasMask: Diagnose {
         displayName = CSTRING(giveGasMask_action);
         displayNameProgress = CSTRING(giveGasMask_progress);
         allowedSelections[] = {"Head"};
@@ -9,7 +9,7 @@ class ACE_Medical_Treatment_Actions {
         condition = QUOTE([ARR_2(_player,_patient)] call FUNC(canPutGasMask));
         icon = QPATHTOF(ui\Gasmask_icon.paa);
     };
-    class Decontaminate: Diagnose {
+    class KAT_Decontaminate: Diagnose {
         displayName = CSTRING(UseDecon);
         displayNameProgress = CSTRING(UseDecon_Progress);
         allowedSelections[] = {"Body", "LeftArm", "RightArm", "LeftLeg", "RightLeg"};

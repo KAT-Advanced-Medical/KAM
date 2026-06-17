@@ -33,7 +33,7 @@ _unit setVariable [QEGVAR(breathing,activeChestSeal), false, true];
 // Start deteriorating after delay
 [_unit] call EFUNC(breathing,handlePneumothoraxDeterioration);
 
-if (GVAR(advPtxEnable)) then {
+if (EGVAR(breathing,advPtxEnable)) then {
     [_unit, 30, true] call EFUNC(breathing,inflictAdvancedPneumothorax);
 };
 
@@ -47,7 +47,7 @@ _unit setVariable [VAR_PAIN, (_currentPain + 0.3) min 1, true];
 for "_i" from 1 to 6 do {
     private _bodyPart = selectRandom ["Body", "LeftArm", "RightArm", "LeftLeg", "RightLeg", "Head"];
     private _dmg = 0.1 + random 0.8;
-    [_unit, _dmg, _bodyPart, "chemicalBurn", _unit] call ACEFUNC(medical,addDamageToUnit);
+    [_unit, _dmg, _bodyPart, "KAT_chemicalBurn", _unit] call ACEFUNC(medical,addDamageToUnit);
 
     // Cough sound (audible signal, helps medics locate)
     [QEGVAR(breathing,playCough), [_unit], _unit] call CBA_fnc_targetEvent;

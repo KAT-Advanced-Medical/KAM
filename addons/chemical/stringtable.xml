@@ -1349,19 +1349,19 @@
             <English>Seconds the M8 paper result UI stays on screen.</English>
             <German>Sekunden, die das M8-Papier-Ergebnis auf dem Bildschirm bleibt.</German>
         </Key>
-        <Key ID="STR_ACE_Medical_Damage_ChemicalBurn">
+        <Key ID="STR_ACE_Medical_Damage_KAT_ChemicalBurn">
             <English>Chemical Burn</English>
             <German>Chemische Verätzung</German>
         </Key>
-        <Key ID="STR_ACE_Medical_Damage_ChemicalBurn_Minor">
+        <Key ID="STR_ACE_Medical_Damage_KAT_ChemicalBurn_Minor">
             <English>Minor Chemical Burn</English>
             <German>Leichte chemische Verätzung</German>
         </Key>
-        <Key ID="STR_ACE_Medical_Damage_ChemicalBurn_Medium">
+        <Key ID="STR_ACE_Medical_Damage_KAT_ChemicalBurn_Medium">
             <English>Medium Chemical Burn</English>
             <German>Mittlere chemische Verätzung</German>
         </Key>
-        <Key ID="STR_ACE_Medical_Damage_ChemicalBurn_Large">
+        <Key ID="STR_ACE_Medical_Damage_KAT_ChemicalBurn_Large">
             <English>Major Chemical Burn</English>
             <German>Schwere chemische Verätzung</German>
         </Key>

@@ -47,9 +47,9 @@ switch (_effect) do {
     };
     case "vomit": {
         private _sounds = [
-            "\x\kat\addons\airway\sounds\puking1.wav",
-            "\x\kat\addons\airway\sounds\puking2.wav",
-            "\x\kat\addons\airway\sounds\puking3.wav"
+            QPATHTOEF_SOUND(airway,sounds\puking1.wav),
+            QPATHTOEF_SOUND(airway,sounds\puking2.wav),
+            QPATHTOEF_SOUND(airway,sounds\puking1.wav)
         ];
         playSound3D [selectRandom _sounds, _unit, false, getPosASL _unit, 8, 1, 15];
     };

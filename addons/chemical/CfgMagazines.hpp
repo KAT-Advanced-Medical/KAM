@@ -2,7 +2,7 @@ class CfgMagazines {
     class ACE_1Rnd_82mm_Mo_HE;
     class KAT_1Rnd_82mm_Mo_Type0: ACE_1Rnd_82mm_Mo_HE {
         author="DiGii";
-        ammo="Sh_82mm_AMOS_Type0";
+        ammo="KAT_Sh_82mm_AMOS_Type0";
         displayNameMFDFormat= CSTRING(ToxicGas_MFDNAME);
         displayNameShort= CSTRING(ToxicGas_MFDNAME);
         displayName= CSTRING(ToxicGas_DisplayName);
@@ -13,7 +13,7 @@ class CfgMagazines {
     };
     class KAT_1Rnd_82mm_Mo_Type0_Cluser: ACE_1Rnd_82mm_Mo_HE {
         author="DiGii";
-        ammo="Sh_82mm_AMOS_Type0_Cluster";
+        ammo="KAT_Sh_82mm_AMOS_Type0_Cluster";
         displayNameMFDFormat= CSTRING(ToxicGas_cluster_MFDNAME);
         displayNameShort= CSTRING(ToxicGas_cluster_MFDNAME);
         displayName= CSTRING(ToxicGas_cluster_DisplayName);
@@ -24,7 +24,7 @@ class CfgMagazines {
     };
     class KAT_1Rnd_82mm_Mo_TypeCS: ACE_1Rnd_82mm_Mo_HE {
         author="DiGii";
-        ammo="Sh_82mm_AMOS_TypeCS";
+        ammo="KAT_Sh_82mm_AMOS_TypeCS";
         displayNameMFDFormat= CSTRING(CSGas_MFDNAME);
         displayNameShort= CSTRING(CSGas_MFDNAME);
         displayName= CSTRING(CSGas_DisplayName);
@@ -36,7 +36,7 @@ class CfgMagazines {
 
     class KAT_1Rnd_82mm_Mo_Type2: ACE_1Rnd_82mm_Mo_HE {
         author="DiGii";
-        ammo="Sh_82mm_AMOS_Type2";
+        ammo="KAT_Sh_82mm_AMOS_Type2";
         displayNameMFDFormat= CSTRING(Phosgene_MFDNAME);
         displayNameShort= CSTRING(Phosgene_MFDNAME);
         displayName= CSTRING(Phosgene_DisplayName);
@@ -48,7 +48,7 @@ class CfgMagazines {
 
     class KAT_1Rnd_82mm_Mo_Type3: ACE_1Rnd_82mm_Mo_HE {
         author="DiGii";
-        ammo="Sh_82mm_AMOS_Type3";
+        ammo="KAT_Sh_82mm_AMOS_Type3";
         displayNameMFDFormat= CSTRING(Mustard_MFDNAME);
         displayNameShort= CSTRING(Mustard_MFDNAME);
         displayName= CSTRING(Mustard_DisplayName);
@@ -60,7 +60,7 @@ class CfgMagazines {
 
     class KAT_1Rnd_82mm_Mo_Type4: ACE_1Rnd_82mm_Mo_HE {
         author="DiGii";
-        ammo="Sh_82mm_AMOS_Type4";
+        ammo="KAT_Sh_82mm_AMOS_Type4";
         displayNameMFDFormat= CSTRING(Sarin_MFDNAME);
         displayNameShort= CSTRING(Sarin_MFDNAME);
         displayName= CSTRING(Sarin_DisplayName);
@@ -72,7 +72,7 @@ class CfgMagazines {
 
     class KAT_1Rnd_82mm_Mo_Type5: ACE_1Rnd_82mm_Mo_HE {
         author="DiGii";
-        ammo="Sh_82mm_AMOS_Type5";
+        ammo="KAT_Sh_82mm_AMOS_Type5";
         displayNameMFDFormat= CSTRING(VX_MFDNAME);
         displayNameShort= CSTRING(VX_MFDNAME);
         displayName= CSTRING(VX_DisplayName);

@@ -7,7 +7,7 @@
 
 class ACE_Medical_Injuries {
     class wounds {
-        class ChemicalBurn {
+        class KAT_ChemicalBurn {
             bleeding = 0.005;  // mustard blisters weep — slow but persistent
             pain = 0.6;
             minDamage = 0;
@@ -15,10 +15,10 @@ class ACE_Medical_Injuries {
     };
 
     class damageTypes {
-        class chemicalBurn {
+        class KAT_chemicalBurn {
             thresholds[] = {{0, 1}};
             selectionSpecific = 0;
-            class ChemicalBurn {
+            class KAT_ChemicalBurn {
                 weighting[] = {{0, 1}};
             };
         };

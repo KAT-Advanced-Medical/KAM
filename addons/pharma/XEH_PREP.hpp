@@ -20,7 +20,6 @@ PREP(salineCheck);
 PREP(tourniquetRemove);
 PREP(treatmentAdvanced_AmiodaroneLocal);
 PREP(treatmentAdvanced_AtropineLocal);
-PREP(treatmentAdvanced_AtnaaLocal);
 PREP(treatmentAdvanced_Caffeine);
 PREP(treatmentAdvanced_CaffeineLocal);
 PREP(treatmentAdvanced_Carbonate);

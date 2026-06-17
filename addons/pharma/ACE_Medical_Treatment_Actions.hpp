@@ -252,7 +252,7 @@ class ACE_Medical_Treatment_Actions {
         sounds[] = {};
     };
     class ATNAA: Atropine {
-        displayName = "$STR_KAT_Chemical_Take_ATNAA";
+        displayName = ECSTRING(chemical,Take_ATNAA);
         items[] = {"kat_atnaa"};
     };
     class Ketamine: EACA {
