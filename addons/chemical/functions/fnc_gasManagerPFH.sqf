@@ -31,7 +31,7 @@
         if (_effectsJipID != "") then {
             [_effectsJipID] call CBA_fnc_removeGlobalEventJIP;
         };
-        if (missionNamespace getVariable [QGVAR(enableParticleEffects), true]) then {
+        if (GVAR(enableParticleEffects)) then {
             [QGVAR(removeZoneParticles), [netId _gasLogic]] call CBA_fnc_globalEvent;
         };
 

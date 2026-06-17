@@ -19,7 +19,7 @@
 
 params ["_unit", "_gasData"];
 
-if (_unit != ACE_player || !(missionNamespace getVariable [QGVAR(enableSmellHint), true])) exitWith {};
+if (_unit != ACE_player || !(GVAR(enableSmellHint))) exitWith {};
 
 private _smellKey = _gasData get "smellHintKey";
 if (_smellKey isEqualTo "") exitWith {};
