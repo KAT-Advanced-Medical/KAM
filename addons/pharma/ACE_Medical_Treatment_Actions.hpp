@@ -43,6 +43,7 @@ class ACE_Medical_Treatment_Actions {
         allowedSelections[] = {"Head"};
         medicRequired = QGVAR(medLvl_CWMP);
         treatmentTime = QGVAR(treatmentTime_CWMP);
+        treatmentTimeTrained = QGVAR(treatmentTime_CWMP);
         items[] = {"kat_Painkiller"};
         condition = QUOTE(!(_patient getVariable [ARR_2(QQEGVAR(airway,recovery),false)]));
         callbackSuccess = QFUNC(treatmentAdvanced_CWMP);
@@ -62,6 +63,7 @@ class ACE_Medical_Treatment_Actions {
         allowSelfTreatment = 1;
         medicRequired = QGVAR(medLvl_Carbonate);
         treatmentTime = QGVAR(treatmentTime_Carbonate);
+        treatmentTimeTrained = QGVAR(treatmentTime_Carbonate);
         items[] = {"kat_Carbonate"};
         callbackSuccess = QFUNC(treatmentAdvanced_Carbonate);
         animationPatient = "";
@@ -77,6 +79,7 @@ class ACE_Medical_Treatment_Actions {
         allowSelfTreatment = 1;
         medicRequired = QGVAR(medLvl_Pervitin);
         treatmentTime = QGVAR(treatmentTime_Pervitin);
+        treatmentTimeTrained = QGVAR(treatmentTime_Pervitin);
         items[] = {"kat_Pervitin"};
         condition = QUOTE(!(_patient getVariable [ARR_2(QQEGVAR(airway,recovery),false)]));
         callbackSuccess = QFUNC(treatmentAdvanced_Pervitin);
@@ -93,6 +96,7 @@ class ACE_Medical_Treatment_Actions {
         allowSelfTreatment = 1;
         medicRequired = QGVAR(medLvl_Caffeine);
         treatmentTime = QGVAR(treatmentTime_Caffeine);
+        treatmentTimeTrained = QGVAR(treatmentTime_Caffeine);
         items[] = {"kat_Caffeine"};
         condition = QUOTE(!(_patient getVariable [ARR_2(QQEGVAR(airway,recovery),false)]));
         callbackSuccess = QFUNC(treatmentAdvanced_Caffeine);
@@ -109,6 +113,7 @@ class ACE_Medical_Treatment_Actions {
         allowSelfTreatment = 1;
         medicRequired = QGVAR(medLvl_Penthrox);
         treatmentTime = QGVAR(treatmentTime_Penthrox);
+        treatmentTimeTrained = QGVAR(treatmentTime_Penthrox);
         items[] = {"kat_Penthrox"};
         callbackSuccess = QFUNC(treatmentAdvanced_Penthrox);
         condition = QUOTE([_patient] call ACEFUNC(common,isAwake));
@@ -127,6 +132,7 @@ class ACE_Medical_Treatment_Actions {
         allowSelfTreatment = 1;
         medicRequired = QGVAR(medLvl_Naloxone);
         treatmentTime = QGVAR(treatmentTime_Naloxone);
+        treatmentTimeTrained = QGVAR(treatmentTime_Naloxone);
         items[] = {"kat_naloxone"};
         callbackSuccess = QFUNC(treatmentAdvanced_Naloxone);
         sounds[] = {};
@@ -137,6 +143,7 @@ class ACE_Medical_Treatment_Actions {
         allowSelfTreatment = 1;
         medicRequired = QGVAR(medLvl_EACA);
         treatmentTime = QGVAR(treatmentTime_EACA);
+        treatmentTimeTrained = QGVAR(treatmentTime_EACA);
         items[] = {"kat_EACA"};
         condition = QUOTE(!(GVAR(MedicationsRequireInsIV)) || FUNC(removeIV));
         callbackSuccess = QFUNC(medication);
@@ -148,6 +155,7 @@ class ACE_Medical_Treatment_Actions {
         allowSelfTreatment = 1;
         medicRequired = QGVAR(medLvl_TXA);
         treatmentTime = QGVAR(treatmentTime_TXA);
+        treatmentTimeTrained = QGVAR(treatmentTime_TXA);
         items[] = {"kat_TXA"};
         callbackSuccess = QFUNC(medication);
         sounds[] = {};
@@ -183,6 +191,7 @@ class ACE_Medical_Treatment_Actions {
         allowSelfTreatment = 1;
         medicRequired = QGVAR(medLvl_Norepinephrine);
         treatmentTime = QGVAR(treatmentTime_Norepinephrine);
+        treatmentTimeTrained = QGVAR(treatmentTime_Norepinephrine);
         items[] = {"kat_norepinephrine"};
         callbackSuccess = QFUNC(medication);
         sounds[] = {};
@@ -194,6 +203,7 @@ class ACE_Medical_Treatment_Actions {
         allowSelfTreatment = 1;
         medicRequired = QGVAR(medLvl_Phenylephrine);
         treatmentTime = QGVAR(treatmentTime_Phenylephrine);
+        treatmentTimeTrained = QGVAR(treatmentTime_Phenylephrine);
         items[] = {"kat_phenylephrine"};
         callbackSuccess = QFUNC(medication);
         sounds[] = {};
@@ -215,6 +225,7 @@ class ACE_Medical_Treatment_Actions {
         allowSelfTreatment = 1;
         medicRequired = QGVAR(medLvl_Nitroglicerin);
         treatmentTime = QGVAR(treatmentTime_Nitroglycerin);
+        treatmentTimeTrained = QGVAR(treatmentTime_Nitroglycerin);
         items[] = {"kat_nitroglycerin"};
         callbackSuccess = QFUNC(medication);
         sounds[] = {};
@@ -225,6 +236,7 @@ class ACE_Medical_Treatment_Actions {
         allowSelfTreatment = 1;
         medicRequired = QGVAR(medLvl_Amiodarone);
         treatmentTime = QGVAR(treatmentTime_Amiodarone);
+        treatmentTimeTrained = QGVAR(treatmentTime_Amiodarone);
         items[] = {"kat_amiodarone"};
         callbackSuccess = QFUNC(medication);
         sounds[] = {};
@@ -235,6 +247,7 @@ class ACE_Medical_Treatment_Actions {
         allowSelfTreatment = 1;
         medicRequired = QGVAR(medLvl_Lidocain);
         treatmentTime = QGVAR(treatmentTime_Lidocaine);
+        treatmentTimeTrained = QGVAR(treatmentTime_Lidocaine);
         items[] = {"kat_lidocaine"};
         callbackSuccess = QFUNC(medication);
         sounds[] = {};
@@ -246,6 +259,7 @@ class ACE_Medical_Treatment_Actions {
         allowSelfTreatment = 1;
         medicRequired = QGVAR(medLvl_Atropine);
         treatmentTime = QGVAR(treatmentTime_Atropine);
+        treatmentTimeTrained = QGVAR(treatmentTime_Atropine);
         condition = "";
         items[] = {"kat_atropine"};
         callbackSuccess = QFUNC(medication);
@@ -261,6 +275,7 @@ class ACE_Medical_Treatment_Actions {
         allowSelfTreatment = 1;
         medicRequired = QGVAR(medLvl_Ketamine);
         treatmentTime = QGVAR(treatmentTime_Ketamine);
+        treatmentTimeTrained = QGVAR(treatmentTime_Ketamine);
         items[] = {"kat_ketamine"};
         callbackSuccess = QFUNC(medication);
         sounds[] = {};
@@ -271,6 +286,7 @@ class ACE_Medical_Treatment_Actions {
         allowSelfTreatment = 1;
         medicRequired = QGVAR(medLvl_Fentanyl);
         treatmentTime = QGVAR(treatmentTime_Fentanyl);
+        treatmentTimeTrained = QGVAR(treatmentTime_Fentanyl);
         items[] = {"kat_fentanyl"};
         callbackSuccess = QFUNC(medication);
         sounds[] = {};
@@ -281,6 +297,7 @@ class ACE_Medical_Treatment_Actions {
         allowSelfTreatment = 1;
         medicRequired = QGVAR(medLvl_Nalbuphine);
         treatmentTime = QGVAR(treatmentTime_Nalbuphine);
+        treatmentTimeTrained = QGVAR(treatmentTime_Nalbuphine);
         items[] = {"kat_nalbuphine"};
         callbackSuccess = QFUNC(medication);
         sounds[] = {};
@@ -292,6 +309,7 @@ class ACE_Medical_Treatment_Actions {
         allowSelfTreatment = 0;
         medicRequired = QGVAR(medLvl_Reorientation);
         treatmentTime = QGVAR(treatmentTime_Reorientation);
+        treatmentTimeTrained = QGVAR(treatmentTime_Reorientation);
         items[] = {};
         condition = QUOTE(!([_patient] call ace_common_fnc_isAwake) && GVAR(Reorientation_Enable));
         litter[] = {};
@@ -309,6 +327,7 @@ class ACE_Medical_Treatment_Actions {
         items[] = {"kat_IV_16"};
         condition = QUOTE(!([ARR_3(_player,_patient,_bodyPart)] call FUNC(removeIV)));
         treatmentTime = QGVAR(treatmentTime_ApplyIV);
+        treatmentTimeTrained = QGVAR(treatmentTime_ApplyIV);
         callbackSuccess = QUOTE([ARR_4(_player,_patient,_bodyPart,'kat_IV_16')] call FUNC(applyIV));
         litter[] = {};
         sounds[] = {};
@@ -322,6 +341,7 @@ class ACE_Medical_Treatment_Actions {
         items[] = {"kat_IO_FAST"};
         condition = QUOTE(!([ARR_3(_player,_patient,_bodyPart)] call FUNC(removeIV)));
         treatmentTime = QGVAR(treatmentTime_ApplyIO);
+        treatmentTimeTrained = QGVAR(treatmentTime_ApplyIO);
         callbackSuccess = QUOTE([ARR_2(_medic,_patient)] call EFUNC(airway,handleRecoveryPosition); [ARR_4(_player,_patient,_bodyPart,'kat_IO_FAST')] call FUNC(applyIV););
         litter[] = {};
         sounds[] = {};
@@ -345,6 +365,7 @@ class ACE_Medical_Treatment_Actions {
         allowSelfTreatment = 0;
         medicRequired = QGVAR(medLvl_Etomidate);
         treatmentTime = QGVAR(treatmentTime_Etomidate);
+        treatmentTimeTrained = QGVAR(treatmentTime_Etomidate);
         items[] = {"kat_etomidate"};
         callbackSuccess = QFUNC(medication);
         sounds[] = {};
@@ -357,6 +378,7 @@ class ACE_Medical_Treatment_Actions {
         allowSelfTreatment = 0;
         medicRequired = QGVAR(medLvl_Lorazepam);
         treatmentTime = QGVAR(treatmentTime_Lorazepam);
+        treatmentTimeTrained = QGVAR(treatmentTime_Lorazepam);
         items[] = {"kat_lorazepam"};
         callbackSuccess = QFUNC(medication);
         sounds[] = {};
@@ -369,6 +391,7 @@ class ACE_Medical_Treatment_Actions {
         allowSelfTreatment = 0;
         medicRequired = QGVAR(medLvl_Flumezenil);
         treatmentTime = QGVAR(treatmentTime_Flumazenil);
+        treatmentTimeTrained = QGVAR(treatmentTime_Flumazenil);
         items[] = {"kat_flumazenil"};
         callbackSuccess = QFUNC(medication);
         sounds[] = {};
@@ -380,6 +403,7 @@ class ACE_Medical_Treatment_Actions {
         allowSelfTreatment = 1;
         medicRequired = QGVAR(medLvl_EpinephrineIV);
         treatmentTime = QGVAR(treatmentTime_EpinephrineIV);
+        treatmentTimeTrained = QGVAR(treatmentTime_EpinephrineIV);
         items[] = {"kat_epinephrineIV"};
         callbackSuccess = QFUNC(medication);
         sounds[] = {};
@@ -407,6 +431,7 @@ class ACE_Medical_Treatment_Actions {
         treatmentLocations = QGVAR(CheckCoag_Location);
         medicRequired = QGVAR(CheckCoag_MedLevel);
         treatmentTime = QGVAR(CheckCoag_TreatmentTime);
+        treatmentTimeTrained = QGVAR(CheckCoag_TreatmentTime);
         category = "examine";
         consumeItem = 0;
         items[] = {"kat_coag_sense"};
