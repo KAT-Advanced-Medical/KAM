@@ -13,7 +13,7 @@ Certain conditions will place the patient into a PEA rhythm, causing cardiac arr
 * Tamponade: The patient has a cardiac tamponade  
   Tamponade is caused when an injury that passes the pneumothorax damage threshold but a pneumothorax is not inflicted,. and a DPI is inflicted instead
 
-# **Cardiac Arrest Treatment**
+## **Cardiac Arrest Treatment**
 
 This part of the guide has been created using data provided by **Blue** in [his Github PR](https://github.com/KAT-Advanced-Medical/KAM/pull/373) and in his personal instructions.  
 4 different heart rhythms can be present while unconscious. They are listed in the order at which they occur:
