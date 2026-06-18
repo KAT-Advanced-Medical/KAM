@@ -270,6 +270,7 @@
 
 #define QPATHTOF_SOUND(var1) QUOTE(PATHTOF2_SYS(PREFIX,COMPONENT,var1))
 #define QQPATHTOF_SOUND(var1) QUOTE(QPATHTOF_SOUND(var1))
+#define QPATHTOEF_SOUND(var1,var2) QUOTE(PATHTOF2_SYS(PREFIX,var1,var2)) 
 
 #include "script_debug.hpp"
 

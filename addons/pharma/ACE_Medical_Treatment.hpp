@@ -229,6 +229,12 @@ class ACE_ADDON(Medical_Treatment) {
             viscosityChange = 0;
             onOverDose = "";
         };
+        class ATNAA: Atropine {
+            // Combined atropine + pralidoxime auto-injector. Same cardiovascular
+            // profile as atropine; the chemical-side handler clears nerve-agent
+            // exposure so the symptom chain is aborted.
+            maxDose = 3;
+        };
         class Amiodarone {
             painReduce = 0;
             hrIncreaseLow[] = {0, 0, 0};

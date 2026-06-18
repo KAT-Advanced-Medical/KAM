@@ -53,8 +53,20 @@ private _exposure = _display displayCtrl 18805;
 
         private _hour = floor dayTime;
         private _minute = floor ((dayTime - _hour) * 60);
-    
-        _time ctrlSetText (format ["%1:%2", [_hour, 2] call CBA_fnc_formatNumber, [_minute, 2] call CBA_fnc_formatNumber]);
+
+        // The "time" control is repurposed for the detected agent name when a
+        // gas-id is currently registered on the unit, otherwise it falls back
+        // to the in-game clock (preserves the original look when in clean air).
+        private _gasId = _unit getVariable [QGVAR(currentCloudGasId), ""];
+        private _last  = _unit getVariable [QGVAR(lastCloudExposure), -1e9];
+        private _memWindow = missionNamespace getVariable [QGVAR(cloudIdMemoryTime), 30];
+
+        if (_gasId != "" && {CBA_missionTime - _last <= _memWindow}) then {
+            private _gasData = GVAR(gasRegistry) getOrDefault [_gasId, createHashMap];
+            _time ctrlSetText (toUpper (_gasData getOrDefault ["displayName", _gasId]));
+        } else {
+            _time ctrlSetText (format ["%1:%2", [_hour, 2] call CBA_fnc_formatNumber, [_minute, 2] call CBA_fnc_formatNumber]);
+        };
 
         _exposure ctrlSetText (_intensity toFixed 2);
 

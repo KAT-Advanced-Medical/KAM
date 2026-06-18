@@ -27,6 +27,164 @@
 
 class RscTitles
 {
+    class KAT_M8Paper
+    {
+        idd = 18840;
+        enableSimulation = 1;
+        movingEnable = 0;
+        fadeIn = 0.3;
+        fadeOut = 1;
+        duration = 10e10;
+        onLoad = "uiNamespace setVariable ['KAT_M8Paper', _this select 0];";
+
+        // Bottom-center anchor. Card is FRAME_W(54) wide × FRAME_H(19) tall.
+        // CARD_X = horizontal center minus half width.
+        // CARD_Y = bottom edge minus card height minus small margin.
+        #define KAT_M8_CARD_X (safeZoneX + safeZoneW * 0.5 - FRAME_W(27))
+        #define KAT_M8_CARD_Y (SAFEZONE_Y_LOWEDGE - FRAME_H(23))
+
+        class controls
+        {
+            // Paper background — cream texture fills the card.
+            class KatM8PaperBg: RscPicture
+            {
+                idc = 18841;
+                shadow = 0;
+                text = "\x\kat\addons\chemical\ui\m8paper_blank.paa";
+                x = QUOTE(KAT_M8_CARD_X);
+                y = QUOTE(KAT_M8_CARD_Y);
+                w = QUOTE(FRAME_W(54));
+                h = QUOTE(FRAME_H(19));
+                colorText[] = {1, 1, 1, 1};
+            };
+            // "M8 DETECTION PAPER" header (top of card).
+            class KatM8PaperHeader: RscText
+            {
+                idc = 18842;
+                style = ST_CENTER;
+                shadow = 0;
+                font = "PuristaBold";
+                text = "$STR_KAT_Chemical_M8_Header";
+                x = QUOTE(KAT_M8_CARD_X);
+                y = QUOTE(KAT_M8_CARD_Y + FRAME_H(0.7));
+                w = QUOTE(FRAME_W(54));
+                h = QUOTE(FRAME_H(2.3));
+                colorBackground[] = {0, 0, 0, 0};
+                colorText[] = {0.20, 0.15, 0.08, 1};
+                sizeEx = QUOTE(FRAME_H(1.5));
+            };
+            // Stain — left side of card, color tint set at runtime.
+            class KatM8PaperStain: RscPicture
+            {
+                idc = 18843;
+                shadow = 0;
+                text = "\x\kat\addons\chemical\ui\m8paper_stain.paa";
+                x = QUOTE(KAT_M8_CARD_X + FRAME_W(3.3));
+                y = QUOTE(KAT_M8_CARD_Y + FRAME_H(4));
+                w = QUOTE(FRAME_W(17));
+                h = QUOTE(FRAME_H(13));
+                colorText[] = {1, 1, 1, 0}; // alpha 0 by default = invisible (negative)
+            };
+            // Legend swatches + labels — right side of card.
+            // Yellow (G-series nerve)
+            class KatM8PaperLegendYellow: RscText
+            {
+                idc = 18850;
+                shadow = 0;
+                text = "";
+                x = QUOTE(KAT_M8_CARD_X + FRAME_W(25));
+                y = QUOTE(KAT_M8_CARD_Y + FRAME_H(4.7));
+                w = QUOTE(FRAME_W(2.7));
+                h = QUOTE(FRAME_H(2));
+                colorBackground[] = {0.95, 0.85, 0.15, 1};
+            };
+            class KatM8PaperLegendYellowText: RscText
+            {
+                idc = 18851;
+                style = ST_LEFT;
+                shadow = 0;
+                font = "PuristaBold";
+                text = "$STR_KAT_Chemical_M8_Legend_G";
+                x = QUOTE(KAT_M8_CARD_X + FRAME_W(29));
+                y = QUOTE(KAT_M8_CARD_Y + FRAME_H(4.7));
+                w = QUOTE(FRAME_W(23));
+                h = QUOTE(FRAME_H(2));
+                colorBackground[] = {0, 0, 0, 0};
+                colorText[] = {0.20, 0.15, 0.08, 1};
+                sizeEx = QUOTE(FRAME_H(1.2));
+            };
+            // Green (V-series nerve)
+            class KatM8PaperLegendGreen: RscText
+            {
+                idc = 18852;
+                shadow = 0;
+                text = "";
+                x = QUOTE(KAT_M8_CARD_X + FRAME_W(25));
+                y = QUOTE(KAT_M8_CARD_Y + FRAME_H(7.7));
+                w = QUOTE(FRAME_W(2.7));
+                h = QUOTE(FRAME_H(2));
+                colorBackground[] = {0.20, 0.40, 0.15, 1};
+            };
+            class KatM8PaperLegendGreenText: RscText
+            {
+                idc = 18853;
+                style = ST_LEFT;
+                shadow = 0;
+                font = "PuristaBold";
+                text = "$STR_KAT_Chemical_M8_Legend_V";
+                x = QUOTE(KAT_M8_CARD_X + FRAME_W(29));
+                y = QUOTE(KAT_M8_CARD_Y + FRAME_H(7.7));
+                w = QUOTE(FRAME_W(23));
+                h = QUOTE(FRAME_H(2));
+                colorBackground[] = {0, 0, 0, 0};
+                colorText[] = {0.20, 0.15, 0.08, 1};
+                sizeEx = QUOTE(FRAME_H(1.2));
+            };
+            // Red (Blister / mustard)
+            class KatM8PaperLegendRed: RscText
+            {
+                idc = 18854;
+                shadow = 0;
+                text = "";
+                x = QUOTE(KAT_M8_CARD_X + FRAME_W(25));
+                y = QUOTE(KAT_M8_CARD_Y + FRAME_H(10.7));
+                w = QUOTE(FRAME_W(2.7));
+                h = QUOTE(FRAME_H(2));
+                colorBackground[] = {0.70, 0.10, 0.10, 1};
+            };
+            class KatM8PaperLegendRedText: RscText
+            {
+                idc = 18855;
+                style = ST_LEFT;
+                shadow = 0;
+                font = "PuristaBold";
+                text = "$STR_KAT_Chemical_M8_Legend_H";
+                x = QUOTE(KAT_M8_CARD_X + FRAME_W(29));
+                y = QUOTE(KAT_M8_CARD_Y + FRAME_H(10.7));
+                w = QUOTE(FRAME_W(23));
+                h = QUOTE(FRAME_H(2));
+                colorBackground[] = {0, 0, 0, 0};
+                colorText[] = {0.20, 0.15, 0.08, 1};
+                sizeEx = QUOTE(FRAME_H(1.2));
+            };
+            // Footer — "no mark = clean" hint.
+            class KatM8PaperFooter: RscText
+            {
+                idc = 18856;
+                style = ST_CENTER;
+                shadow = 0;
+                text = "$STR_KAT_Chemical_M8_Footer_Clean";
+                x = QUOTE(KAT_M8_CARD_X + FRAME_W(25));
+                y = QUOTE(KAT_M8_CARD_Y + FRAME_H(14.7));
+                w = QUOTE(FRAME_W(27));
+                h = QUOTE(FRAME_H(2));
+                colorBackground[] = {0, 0, 0, 0};
+                colorText[] = {0.35, 0.30, 0.20, 1};
+                sizeEx = QUOTE(FRAME_H(1.1));
+            };
+        };
+    };
+
     class KAT_ChemicalDetector
     {
         idd = 18835;

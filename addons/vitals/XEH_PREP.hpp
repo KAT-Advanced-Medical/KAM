@@ -4,7 +4,6 @@ PREP(basicDiagnosticLocal);
 PREP(fullHealLocal);
 PREP(handleCardiacFunction);
 PREP(handleOxygenFunction);
-PREP(handlePoisoning);
 PREP(handleRespawn);
 PREP(handleSimpleVitals);
 PREP(handleTemperatureFunction);

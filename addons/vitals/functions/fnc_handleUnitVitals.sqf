@@ -122,7 +122,6 @@ if (_adjustments isNotEqualTo []) then {
 [_unit, _peripheralResistanceAdjustment, _deltaT, _syncValues] call ACEFUNC(medical_vitals,updatePeripheralResistance);
 [_unit, _opioidAdjustment, _deltaT, _syncValues] call FUNC(updateOpioidRelief);
 [_unit, _opioidEffectAdjustment, _deltaT, _syncValues] call FUNC(updateOpioidEffect);
-[_unit, POISON_DECREASE, _deltaT, _syncValues] call FUNC(handlePoisoning);
 
 private _aceAnFatigue = 0;
 if (_unit getVariable [QGVAR(fatigueEnabled), false]) then {

@@ -9,14 +9,18 @@ class CfgPatches {
             "kat_module_gas",
             "kat_module_zeus_gas",
             "KAT_Gas_TripWireMine",
-            "kat_gasmaskFilter_Item"
+            "kat_gasmaskFilter_Item",
+            "kat_m8paper_Item",
+            "kat_decon_kit_Item"
         };
         weapons[] = {
             "kat_sealant",
             "kat_gasmaskFilter",
             "KAT_CAS_M43_Bomb",
             "KAT_CAS_R_80mm_GAS_POD",
-            "KAT_ChemicalDetector"
+            "KAT_ChemicalDetector",
+            "kat_m8paper",
+            "kat_decon_kit"
         };
         ammo[] = {
             "KAT_Gas_TripWireMine_Ammo",
@@ -63,4 +67,5 @@ class CfgPatches {
 #include "ui\RscAttributes.hpp"
 #include "RscTitles.hpp"
 #include "ACE_Medical_Treatment_Actions.hpp"
+#include "ACE_Medical_Injuries.hpp"
 #include "CfgGlasses.hpp"

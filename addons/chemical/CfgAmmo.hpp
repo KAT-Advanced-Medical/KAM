@@ -6,10 +6,10 @@ class CfgAmmo {
     };
 
     class Smoke_82mm_AMOS_White;
-    class Sh_82mm_AMOS_Type0: Smoke_82mm_AMOS_White {
+    class KAT_Sh_82mm_AMOS_Type0: Smoke_82mm_AMOS_White {
         KAT_projectile = 1;
-        KAT_lifetime = 90;
-        KAT_radius = 10;
+        KAT_lifetime = 200;
+        KAT_radius = 15;
         KAT_toxicLvL = 1;
         soundFakeFall[] = {"soundFakeFall0",0.25,"soundFakeFall1",0.25,"soundFakeFall2",0.25,"soundFakeFall3",0.25};
         soundFakeFall0[] = {"a3\Sounds_F\weapons\falling_bomb\fall_01.wss",3.16228,1,1000};
@@ -21,11 +21,53 @@ class CfgAmmo {
         submunitionAmmo = "KAT_SmokeShellArty";
     };
 
-    class Sh_82mm_AMOS_TypeCS: Sh_82mm_AMOS_Type0 {
+    class KAT_Sh_82mm_AMOS_Type0_Cluster: Smoke_82mm_AMOS_White {
+        soundFakeFall[] = {"soundFakeFall0",0.25,"soundFakeFall1",0.25,"soundFakeFall2",0.25,"soundFakeFall3",0.25};
+        soundFakeFall0[] = {"a3\Sounds_F\weapons\falling_bomb\fall_01.wss",3.16228,1,1000};
+        soundFakeFall1[] = {"a3\Sounds_F\weapons\falling_bomb\fall_02.wss",3.16228,1,1000};
+        soundFakeFall2[] = {"a3\Sounds_F\weapons\falling_bomb\fall_03.wss",3.16228,1,1000};
+        soundFakeFall3[] = {"a3\Sounds_F\weapons\falling_bomb\fall_04.wss",3.16228,1,1000};
+        whistleDist = 20;
+        whistleOnFire = 2;
+        triggerDistance = 100;
+        triggerSpeedCoef[] = {0.8,1};
+        submunitionConeType[] = { "randomcenter", 30 };
+        submunitionAmmo="KAT_CAS_M43_Ammo_sub";
+    };
+
+    class KAT_Sh_82mm_AMOS_TypeCS: KAT_Sh_82mm_AMOS_Type0 {
         KAT_projectile = 1;
         KAT_lifetime = 60;
         KAT_radius = 10;
         KAT_toxicLvL = 0; //cs
+    };
+
+    class KAT_Sh_82mm_AMOS_Type2: KAT_Sh_82mm_AMOS_Type0 {
+        KAT_projectile = 1;
+        KAT_lifetime = 90;
+        KAT_radius = 10;
+        KAT_toxicLvL = 2; //phosgene
+    };
+
+    class KAT_Sh_82mm_AMOS_Type3: KAT_Sh_82mm_AMOS_Type0 {
+        KAT_projectile = 1;
+        KAT_lifetime = 120;
+        KAT_radius = 10;
+        KAT_toxicLvL = 3; //mustard
+    };
+
+    class KAT_Sh_82mm_AMOS_Type4: KAT_Sh_82mm_AMOS_Type0 {
+        KAT_projectile = 1;
+        KAT_lifetime = 90;
+        KAT_radius = 10;
+        KAT_toxicLvL = 4; //sarin
+    };
+
+    class KAT_Sh_82mm_AMOS_Type5: KAT_Sh_82mm_AMOS_Type0 {
+        KAT_projectile = 1;
+        KAT_lifetime = 600;
+        KAT_radius = 10;
+        KAT_toxicLvL = 5; //vx — persistent
     };
 
     class SmokeShell;

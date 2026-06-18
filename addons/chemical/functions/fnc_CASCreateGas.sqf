@@ -25,7 +25,7 @@ private _projectile = QGVAR(logic) createVehicle [_posX,_posY,_posZ];
 
 if (isServer) then {
     private _radius = 15;
-    private _timeToLive = 240;
+    private _timeToLive = 480;
     private _gasLevel = 1;
 
     [QGVAR(addGasSource), [_projectile, _radius, _gasLevel, _projectile, {
