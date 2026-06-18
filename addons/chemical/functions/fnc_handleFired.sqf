@@ -24,9 +24,6 @@
 
 params ["_vehicle", "", "", "", "_ammo", "_magazine", "_projectile"];
 
-// Large enough distance to not simulate any wind deflection
-if (_vehicle distance ACE_player > 8000) exitWith {};
-
 if !(_ammo in KAT_ProjectileCache) exitWith {};
 
 private _configClass = (configFile >> "CfgAmmo" >> _ammo);
@@ -34,6 +31,11 @@ private _configClass = (configFile >> "CfgAmmo" >> _ammo);
 private _lifetime = [_configClass, "KAT_lifetime", 60] call BIS_fnc_returnConfigEntry;
 private _radius = [_configClass, "KAT_radius", 10] call BIS_fnc_returnConfigEntry;
 private _gasLevel = [_configClass, "KAT_toxicLvL", 1] call BIS_fnc_returnConfigEntry;
+
+// VX is persistent
+if (_gasLevel == 5) then {
+    _lifetime = missionNamespace getVariable [QGVAR(vx_cloudLifetime), _lifetime];
+};
 
 [{
     params ["_args", "_handler"];

@@ -9,4 +9,6 @@ PREP_RECOMPILE_END;
 #define CBA_SETTINGS_CAT LSTRING(cba_name)
 #include "initSettings.inc.sqf"
 
+call FUNC(initGasRegistry);
+
 ADDON = true;

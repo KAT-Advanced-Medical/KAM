@@ -113,7 +113,7 @@ TRACE_3("adjustments",_heartRateChange,_painReduce,_viscosityChange);
 // Check for medication compatiblity
 [_patient, _className, _incompatibleMedication] call ACEFUNC(medical_treatment,onMedicationUsage);
 
-if (_className in ["Lorazepam","EACA","TXA","Atropine","Amiodarone","Flumazenil"]) then {
+if (_className in ["Lorazepam","EACA","TXA","Atropine","Amiodarone","Flumazenil","ATNAA"]) then {
     [format ["kat_pharma_%1Local", toLower _className], [_patient, _bodyPart], _patient] call CBA_fnc_targetEvent;
 };
 

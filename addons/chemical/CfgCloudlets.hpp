@@ -134,6 +134,86 @@ class CfgCloudlets {
         };
     };
 
+    // Phosgene — pale grey-white, faint
+    class GVAR(Phosgene_Gas_Particles): GVAR(Toxic_Gas_Particles) {
+        color[] = {
+            {0.7, 0.7, 0.7, 0},
+            {0.78, 0.78, 0.76, 0.20},
+            {0.82, 0.82, 0.80, 0.30},
+            {0.85, 0.85, 0.82, 0.25},
+            {0.85, 0.85, 0.82, 0.15},
+            {0.85, 0.85, 0.82, 0}
+        };
+    };
+    class GVAR(Phosgene_Gas_Wisps): GVAR(Toxic_Gas_Wisps) {
+        color[] = {
+            {0.78, 0.78, 0.76, 0},
+            {0.85, 0.85, 0.82, 0.10},
+            {0.88, 0.88, 0.85, 0.08},
+            {0.88, 0.88, 0.85, 0}
+        };
+    };
+
+    // Mustard — yellowish-brown, garlic-thick
+    class GVAR(Mustard_Gas_Particles): GVAR(Toxic_Gas_Particles) {
+        color[] = {
+            {0.45, 0.35, 0.10, 0},
+            {0.55, 0.42, 0.12, 0.30},
+            {0.62, 0.48, 0.15, 0.45},
+            {0.65, 0.50, 0.16, 0.40},
+            {0.65, 0.50, 0.16, 0.20},
+            {0.65, 0.50, 0.16, 0}
+        };
+    };
+    class GVAR(Mustard_Gas_Wisps): GVAR(Toxic_Gas_Wisps) {
+        color[] = {
+            {0.55, 0.42, 0.12, 0},
+            {0.62, 0.48, 0.15, 0.18},
+            {0.65, 0.50, 0.16, 0.13},
+            {0.65, 0.50, 0.16, 0}
+        };
+    };
+
+    // Sarin — almost invisible, very faint warm tint
+    class GVAR(Sarin_Gas_Particles): GVAR(Toxic_Gas_Particles) {
+        color[] = {
+            {0.75, 0.72, 0.65, 0},
+            {0.80, 0.77, 0.70, 0.06},
+            {0.82, 0.79, 0.72, 0.10},
+            {0.82, 0.79, 0.72, 0.08},
+            {0.82, 0.79, 0.72, 0.04},
+            {0.82, 0.79, 0.72, 0}
+        };
+    };
+    class GVAR(Sarin_Gas_Wisps): GVAR(Toxic_Gas_Wisps) {
+        color[] = {
+            {0.80, 0.77, 0.70, 0},
+            {0.82, 0.79, 0.72, 0.04},
+            {0.82, 0.79, 0.72, 0.03},
+            {0.82, 0.79, 0.72, 0}
+        };
+    };
+
+    // VX — oily amber, persistent and visible
+    class GVAR(VX_Gas_Particles): GVAR(Toxic_Gas_Particles) {
+        color[] = {
+            {0.50, 0.38, 0.05, 0},
+            {0.60, 0.45, 0.08, 0.25},
+            {0.70, 0.52, 0.10, 0.40},
+            {0.72, 0.55, 0.12, 0.35},
+            {0.72, 0.55, 0.12, 0.18},
+            {0.72, 0.55, 0.12, 0}
+        };
+    };
+    class GVAR(VX_Gas_Wisps): GVAR(Toxic_Gas_Wisps) {
+        color[] = {
+            {0.60, 0.45, 0.08, 0},
+            {0.70, 0.52, 0.10, 0.18},
+            {0.72, 0.55, 0.12, 0.13},
+            {0.72, 0.55, 0.12, 0}
+        };
+    };
+
     class KAT_CAS_GAS_FX: Default {
         interval = 0.03;
         circleRadius = 0;

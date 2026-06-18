@@ -19,12 +19,38 @@ class CfgWeapons {
         scope = 2;
         author = "DiGii";
         displayName = CSTRING(sealantItem);
-        model = "\A3\Weapons_F\DummyItem.p3d";
+        model = "\A3\weapons_F\ammo\mag_univ.p3d";
         picture = QPATHTOF(ui\Sealant.paa);
         descriptionShort = CSTRING(sealantItem_desc);
         descriptionUse = CSTRING(sealantItem_desc);
         class ItemInfo: CBA_MiscItem_ItemInfo {
             mass = 3;
+        };
+    };
+
+    class kat_m8paper : ACE_ItemCore {
+        scope = 2;
+        author = "DiGii";
+        displayName = CSTRING(m8paperItem);
+        model = "\A3\weapons_F\ammo\mag_univ.p3d";
+        picture = QPATHTOF(ui\icon_m8paper.paa);
+        descriptionShort = CSTRING(m8paperItem_desc);
+        descriptionUse = CSTRING(m8paperItem_desc);
+        class ItemInfo: CBA_MiscItem_ItemInfo {
+            mass = 0.1;
+        };
+    };
+
+    class kat_decon_kit : ACE_ItemCore {
+        scope = 2;
+        author = "DiGii";
+        displayName = CSTRING(deconKitItem);
+        model = "\A3\weapons_F\ammo\mag_univ.p3d";
+        picture = QPATHTOF(ui\icon_deconkit.paa);
+        descriptionShort = CSTRING(deconKitItem_desc);
+        descriptionUse = CSTRING(deconKitItem_desc);
+        class ItemInfo: CBA_MiscItem_ItemInfo {
+            mass = 4;
         };
     };
 
@@ -40,14 +66,18 @@ class CfgWeapons {
 
     class CannonCore;
     class mortar_82mm: CannonCore {
+        // AI-driven mortars get only choking agents (chlorine, phosgene, CS).
+        // Nerve / blister agents are restricted to deliberate placement.
         magazines[] += {
             "KAT_5Rnd_82mm_Mo_Type0_AI",
-            "KAT_3Rnd_82mm_Mo_TypeCS_AI"
+            "KAT_5Rnd_82mm_Mo_Type2_AI",
+            "KAT_3Rnd_82mm_Mo_TypeCS_AI",
+            "KAT_5Rnd_82mm_Mo_TypeType0_Cluser_AI"
         };
     };
 
     class ACE_mortar_82mm: mortar_82mm {
-        magazines[] = {"ACE_1Rnd_82mm_Mo_HE","ACE_1Rnd_82mm_Mo_Smoke","ACE_1Rnd_82mm_Mo_Illum","ACE_1Rnd_82mm_Mo_HE_Guided","ACE_1Rnd_82mm_Mo_HE_LaserGuided", "KAT_1Rnd_82mm_Mo_Type0", "KAT_1Rnd_82mm_Mo_TypeCS"};
+        magazines[] = {"ACE_1Rnd_82mm_Mo_HE","ACE_1Rnd_82mm_Mo_Smoke","ACE_1Rnd_82mm_Mo_Illum","ACE_1Rnd_82mm_Mo_HE_Guided","ACE_1Rnd_82mm_Mo_HE_LaserGuided", "KAT_1Rnd_82mm_Mo_Type0", "KAT_1Rnd_82mm_Mo_Type0_Cluser", "KAT_1Rnd_82mm_Mo_TypeCS", "KAT_1Rnd_82mm_Mo_Type2", "KAT_1Rnd_82mm_Mo_Type3", "KAT_1Rnd_82mm_Mo_Type4", "KAT_1Rnd_82mm_Mo_Type5"};
     };
 
     class GrenadeLauncher;

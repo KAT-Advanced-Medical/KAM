@@ -20,6 +20,7 @@ class CfgPatches {
             "kat_amiodarone",
             "kat_lidocaine",
             "kat_atropine",
+            "kat_atnaa",
             "kat_ketamine",
             "kat_fentanyl",
             "kat_nalbuphine",

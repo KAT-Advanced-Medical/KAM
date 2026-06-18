@@ -31,7 +31,9 @@
         if (_effectsJipID != "") then {
             [_effectsJipID] call CBA_fnc_removeGlobalEventJIP;
         };
-        [QGVAR(removeZoneParticles), [netId _gasLogic]] call CBA_fnc_globalEvent;
+        if (GVAR(enableParticleEffects)) then {
+            [QGVAR(removeZoneParticles), [netId _gasLogic]] call CBA_fnc_globalEvent;
+        };
 
         detach _gasLogic;
         deleteVehicle _gasLogic;
