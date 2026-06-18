@@ -26,7 +26,7 @@ This part of the guide has been created using data provided by **Blue** in [his 
 | 3 | **PEA** - Pulseless Electrical Activity | Epinephrine\* \+ **CPR** | ![][image42] |
 | 4 | Asystole | Epinephrine\* \+ **CPR** | ![][image45] |
 
-	\*Note that medications mentioned are not required for a successful treatment, they will boost the effectiveness of the treatment. In addition, take note of **Essential Values** as blood loss will affect the success of these treatments.
+\*Note that medications mentioned are not required for a successful treatment, they will boost the effectiveness of the treatment. In addition, take note of **Essential Values** as blood loss will affect the success of these treatments.
 
 Exact EKG readings for sinus rhythm (Normal and PEA):
 
@@ -37,7 +37,7 @@ Exact EKG readings for sinus rhythm (Normal and PEA):
 | **70 - 89** | ![][image42] |
 | **90 - 109** | ![][image48] |
 | **110 - 129** | ![][image49] |
-| ** > 130** | ![][image50] |
+| **\> 130** | ![][image50] |
 
 The EKG reading during the CPR:
 
