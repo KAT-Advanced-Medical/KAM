@@ -19,4 +19,3 @@ Check the *Show Poisoning* setting is enabled. If it's off, poisoning and intoxi
 Correct — AI mortars are restricted to choking agents by design. Use the gas module, Zeus, or a player-crewed mortar to deploy the Level 2 agents.
 
 ---
-Last editet: 18.06.2026

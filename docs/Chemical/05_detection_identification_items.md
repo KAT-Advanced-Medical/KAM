@@ -1,4 +1,4 @@
-## Detection/Identification & Equipment/Items
+# Detection/Identification & Equipment/Items
 
 ## Detection & Identification
 
