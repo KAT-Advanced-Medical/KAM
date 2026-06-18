@@ -16,11 +16,12 @@ Please consider that:
 E.g. threshold \= 0.6, damage \= 0.7 (threshold crossed) → 50% chance of thorax injury (value depends on settings)  
 * Oxygenation Period length is defined in settings. It is a period of time that starts after 30 compressions (c.a. 18 seconds of CPR) during which BVM is more effective \- it leads to SpO2 increase even though cardiac arrest is still present.
 
-| Lungs Sounds | Thorax Injury Type | Treatment |
-| :---: | :---: | ----- |
-| Tension Pneumothorax sound (short breath) Tension Pneumothorax Action | [Pneumothorax](https://drive.google.com/file/d/1YLl3TsBtLt608Pdnk_dLyDsJuWnN4sjF/view?usp=sharing)\* | * Chest Seal * Auscultate The same sound is still heard \- perform Needle Decompression [Clear Lungs](https://drive.google.com/file/d/1NrkGL4a6Kt_fRG8yw_c2v3APmx4ohpzH/view?usp=sharing) \- no action * Auscultate |
-|  | [Tension Pneumothorax](https://drive.google.com/file/d/1YLl3TsBtLt608Pdnk_dLyDsJuWnN4sjF/view?usp=sharing)\*  |  |
-| Hemothorax sound (cracking) Hemothorax Action | [Hemothorax](https://drive.google.com/file/d/1MCcHyCwUmwRhryI3KEWrSS4vOoFk2bjI/view?usp=sharing)\*  | Chest Seal Fluid Draining Auscultate |
+| Injury Type | Lung Audio Profile | Required Surgical / Field Equipment | Field Treatment Flow |
+| :--- | :--- | :--- | :--- |
+| **Pneumothorax (PTX)** | <p>Short Breath</p><audio controls><source src="https://docs.google.com/uc?export=download&id=1YLl3TsBtLt608Pdnk_dLyDsJuWnN4sjF" type="audio/mpeg"></audio> | Chest Seal, NCD Kit, or AAT Kit | Apply Chest Seal → Auscultate. If sound persists, execute Needle Decompression. |
+| **Tension Pneumothorax (TPTX)** | <p>Short Breath (Advanced)</p><audio controls><source src="https://docs.google.com/uc?export=download&id=1YLl3TsBtLt608Pdnk_dLyDsJuWnN4sjF" type="audio/mpeg"></audio> | Chest Seal, NCD Kit, or AAT Kit | Immediate Needle Decompression or AAT Kit decompression. |
+| **Hemothorax (HPTX)** | <p>Cracking Sound</p><audio controls><source src="https://docs.google.com/uc?export=download&id=1MCcHyCwUmwRhryI3KEWrSS4vOoFk2bjI" type="audio/mpeg"></audio> | Chest Seal, AAT Kit | Apply Chest Seal → Perform Fluid Draining utilizing AAT Kit → Re-auscultate. |
+
 
 \*Please consider that these files resemble full soundtracks for each injury. You may hear only part of the recording in the process of auscultating\! Auscultating twice increases the chances of determining the injury type correctly.
 
