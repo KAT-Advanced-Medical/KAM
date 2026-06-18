@@ -13,12 +13,12 @@ Please consider that:
 * Sp02 gain can be increased (loss decreased) by the use of BVM.  
 * Faster breathing rate indicates higher HR.  
 * “Deep penetrating wound” notification may be present in the medical overview. It means that a certain damage threshold has been crossed resulting in a thorax injury with given probability. Both the threshold and the thorax injury probability depend on settings.  
-  E.g. threshold \= 0.6, damage \= 0.7 (threshold crossed) → 50% chance of thorax injury (value depends on settings)  
+E.g. threshold \= 0.6, damage \= 0.7 (threshold crossed) → 50% chance of thorax injury (value depends on settings)  
 * Oxygenation Period length is defined in settings. It is a period of time that starts after 30 compressions (c.a. 18 seconds of CPR) during which BVM is more effective \- it leads to SpO2 increase even though cardiac arrest is still present.
 
 | Lungs Sounds | Thorax Injury Type | Treatment |
 | :---: | :---: | ----- |
-| Tension Pneumothorax sound (short breath) Tension Pneumothorax Action | [Pneumothorax](https://drive.google.com/file/d/1YLl3TsBtLt608Pdnk_dLyDsJuWnN4sjF/view?usp=sharing)\* | Chest Seal Auscultate The same sound is still heard \- perform Needle Decompression [Clear Lungs](https://drive.google.com/file/d/1NrkGL4a6Kt_fRG8yw_c2v3APmx4ohpzH/view?usp=sharing) \- no action Auscultate |
+| Tension Pneumothorax sound (short breath) Tension Pneumothorax Action | [Pneumothorax](https://drive.google.com/file/d/1YLl3TsBtLt608Pdnk_dLyDsJuWnN4sjF/view?usp=sharing)\* | * Chest Seal * Auscultate The same sound is still heard \- perform Needle Decompression [Clear Lungs](https://drive.google.com/file/d/1NrkGL4a6Kt_fRG8yw_c2v3APmx4ohpzH/view?usp=sharing) \- no action * Auscultate |
 |  | [Tension Pneumothorax](https://drive.google.com/file/d/1YLl3TsBtLt608Pdnk_dLyDsJuWnN4sjF/view?usp=sharing)\*  |  |
 | Hemothorax sound (cracking) Hemothorax Action | [Hemothorax](https://drive.google.com/file/d/1MCcHyCwUmwRhryI3KEWrSS4vOoFk2bjI/view?usp=sharing)\*  | Chest Seal Fluid Draining Auscultate |
 
@@ -28,9 +28,9 @@ Please consider that:
 
 | Status | Treatment | Sidenotes |
 | :---: | ----- | ----- |
-| Occluded | Accuvac Head Turning Recovery Position | Perform till successful. |
-| Obstructed | Head Hyperextending Recovery Position | Stay close to the patient while performing head hyperextending. |
-| Clear | Guedel Tube King LT Recovery Position | Airway Protection from best to worst Use one of the ways mentioned to maximize the chance of airways remaining clear. |
+| Occluded | * Accuvac * Head Turning * Recovery Position | Perform till successful. |
+| Obstructed | * Head Hyperextending * Recovery Position | Stay close to the patient while performing head hyperextending. |
+| Clear | * Guedel Tube * King LT * Recovery Position | Use one of the ways mentioned to maximize the chance of airways remaining clear. |
 
 ## **Recovery Position**
 
