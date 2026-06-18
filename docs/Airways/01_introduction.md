@@ -18,9 +18,9 @@ E.g. threshold \= 0.6, damage \= 0.7 (threshold crossed) → 50% chance of thora
 
 | Injury Type | Lung Audio Profile | Required Surgical / Field Equipment | Field Treatment Flow |
 | :--- | :--- | :--- | :--- |
-| **Pneumothorax (PTX)** | <p>Short Breath</p><audio controls><source src="https://docs.google.com/uc?export=download&id=1YLl3TsBtLt608Pdnk_dLyDsJuWnN4sjF" type="audio/mpeg"></audio> | Chest Seal, NCD Kit, or AAT Kit | Apply Chest Seal → Auscultate. If sound persists, execute Needle Decompression. |
-| **Tension Pneumothorax (TPTX)** | <p>Short Breath (Advanced)</p><audio controls><source src="https://docs.google.com/uc?export=download&id=1YLl3TsBtLt608Pdnk_dLyDsJuWnN4sjF" type="audio/mpeg"></audio> | Chest Seal, NCD Kit, or AAT Kit | Immediate Needle Decompression or AAT Kit decompression. |
-| **Hemothorax (HPTX)** | <p>Cracking Sound</p><audio controls><source src="https://docs.google.com/uc?export=download&id=1MCcHyCwUmwRhryI3KEWrSS4vOoFk2bjI" type="audio/mpeg"></audio> | Chest Seal, AAT Kit | Apply Chest Seal → Perform Fluid Draining utilizing AAT Kit → Re-auscultate. |
+| **Pneumothorax (PTX)** | Short Breath | Chest Seal, NCD Kit, or AAT Kit | Apply Chest Seal → Auscultate. If sound persists, execute Needle Decompression. |
+| **Tension Pneumothorax (TPTX)** | Short Breath | Chest Seal, NCD Kit, or AAT Kit | Immediate Needle Decompression or AAT Kit decompression. |
+| **Hemothorax (HPTX)** | Cracking Sound | Chest Seal, AAT Kit | Apply Chest Seal → Perform Fluid Draining utilizing AAT Kit → Re-auscultate. |
 
 
 \*Please consider that these files resemble full soundtracks for each injury. You may hear only part of the recording in the process of auscultating\! Auscultating twice increases the chances of determining the injury type correctly.
@@ -29,24 +29,24 @@ E.g. threshold \= 0.6, damage \= 0.7 (threshold crossed) → 50% chance of thora
 
 | Status | Treatment | Sidenotes |
 | :---: | ----- | ----- |
-| Occluded | * Accuvac * Head Turning * Recovery Position | Perform till successful. |
-| Obstructed | * Head Hyperextending * Recovery Position | Stay close to the patient while performing head hyperextending. |
-| Clear | * Guedel Tube * King LT * Recovery Position | Use one of the ways mentioned to maximize the chance of airways remaining clear. |
+| Occluded | <ul><li>Accuvac</li><li>Head Turning</li><li>Recovery Position</li></ul> | Perform till successful. |
+| Obstructed | <ul><li>Head Hyperextending</li><li>Recovery Position</li></ul> | Stay close to the patient while performing head hyperextending. |
+| Clear | <ul><li>Guedel Tube</li><li>King LT</li><li>Recovery Position</li></ul> | Use one of the ways mentioned to maximize the chance of airways remaining clear. |
 
 ## **Recovery Position**
 
 The recovery position prevents occlusions and obstructions from happening, clears the airway but makes certain actions unavailable until the recovery position is canceled.
 
-| Conditions for the action to appear |  |  |
+|  | Conditions for the action to appear |  |
 | :---: | :---: | :---: |
 | Unconscious | Not in recovery position | No Guedel Tube |
 | No King LT | Not in a vehicle | Not in a stretcher |
 
-| Canceling the action |  |  |
+|  | Canceling the action |  |
 | :---: | :---: | :---: |
 | Carrying | Dragging | Putting into a vehicle |
 
-| Action prevents you from using following items/ actions on the patient |  |  |  |  |
+|  |  | Action prevents you from using following items/ actions on the patient |  |  |
 | :---: | :---: | :---: | :---: | :---: |
 | Guedel Tube | King LT | Accuvac | Chest Seal | AAT Kit |
 | Overstretch | Turn Around | AED | CPR | FAST IO |
