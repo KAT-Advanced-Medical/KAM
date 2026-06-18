@@ -8,9 +8,9 @@ This protocol maps out the operational timeline required to bring a critically w
 
 ### 2. Airway Management Pipeline
 * Check physical airway presentation via the interaction panel:
-  * *Occluded state identified:* Clear via **Recovery Position** $\rightarrow$ **Accuvac** usage $\rightarrow$ **Head Turning**.
-  * *Obstructed state identified:* Clear via **Recovery Position** $\rightarrow$ **Head Hyperextending** (Maintain proximity).
-  * *Clear status achieved:* Secure using **Recovery Position** $\rightarrow$ **King LT** or **Guedel Tube** insertion.
+  * *Occluded state identified:* Clear via **Recovery Position** → **Accuvac** usage → **Head Turning**.
+  * *Obstructed state identified:* Clear via **Recovery Position** → **Head Hyperextending** (Maintain proximity).
+  * *Clear status achieved:* Secure using **Recovery Position** → **King LT** or **Guedel Tube** insertion.
 
 ### 3. Circulatory Volume Restoration
 * If blood volume evaluations indicate a critical fatal volume loss status (< 3.6L), immediately infuse 1 to 2 Liters of whole blood or plasma matching recipient blood groups before continuing tracking.
