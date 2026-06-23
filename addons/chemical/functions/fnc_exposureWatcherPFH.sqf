@@ -105,6 +105,29 @@ private _toRemove = [];
         };
     };
 
+    private _radTier = _unit getVariable [QGVAR(radSicknessTier), 0];
+
+    {
+        _x params ["_var", "_effect", "_minTier"];
+        private _deadline = _unit getVariable [_var, 0];
+        if (_deadline > 0) then {
+            if (_now >= _deadline) then {
+                if (_radTier >= _minTier) then {
+                    [QGVAR(applyDelayedEffect), [_unit, _effect], _unit] call CBA_fnc_targetEvent;
+                };
+                _unit setVariable [_var, -1, true];
+            } else {
+                _hasPending = true;
+            };
+        };
+    } forEach [
+        [QGVAR(radDeadline_prodromal), "radProdromal", 1],
+        [QGVAR(radDeadline_hema),      "radHema",      2],
+        [QGVAR(radDeadline_gi),        "radGI",        3],
+        [QGVAR(radDeadline_cns),       "radCNS",       4],
+        [QGVAR(radDeadline_cardiac),   "radCardiac",   4]
+    ];
+
     if (!_hasPending) then {
         _toRemove pushBack _netId;
     };

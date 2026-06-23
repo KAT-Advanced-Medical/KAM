@@ -23,3 +23,6 @@ _patient setVariable [QGVAR(chemicalContamination), "", true];
 _patient setVariable [QGVAR(mustardDeadline_eye), 0, true];
 _patient setVariable [QGVAR(mustardDeadline_burn), 0, true];
 _patient setVariable [QGVAR(mustardBurnActive), false, true];
+
+_patient setVariable [QGVAR(radExternalContam), 0, true];
+[QGVAR(serverRemoveContamSource), [_patient]] call CBA_fnc_serverEvent;

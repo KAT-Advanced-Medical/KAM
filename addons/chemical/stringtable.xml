@@ -624,6 +624,398 @@
             <English>9. Identification (Detector &amp; M8 Paper)</English>
             <German>9. dentifikation (Detektor &amp; M8-Papier)</German>
         </Key>
+        <Key ID="STR_KAT_Chemical_SubCategory_Radiation">
+            <English>10. Radiation</English>
+            <German>10. Strahlung</German>
+        </Key>
+        <Key ID="STR_KAT_Chemical_SETTING_rad_enable">
+            <English>Enable radiation</English>
+            <German>Strahlung aktivieren</German>
+        </Key>
+        <Key ID="STR_KAT_Chemical_SETTING_rad_enable_DESC">
+            <English>Master switch for the radiation system (sources, dose, sickness).</English>
+            <German>Hauptschalter für das Strahlungssystem (Quellen, Dosis, Krankheit).</German>
+        </Key>
+        <Key ID="STR_KAT_Chemical_SETTING_rad_showSickness">
+            <English>Show radiation sickness hints</English>
+            <German>Hinweise zur Strahlenkrankheit anzeigen</German>
+        </Key>
+        <Key ID="STR_KAT_Chemical_SETTING_rad_showSickness_DESC">
+            <English>Show on-screen hints (nausea, weakness, etc.) to the affected player.</English>
+            <German>Bildschirmhinweise (Übelkeit, Schwäche usw.) für den betroffenen Spieler anzeigen.</German>
+        </Key>
+        <Key ID="STR_KAT_Chemical_SETTING_rad_doseThreshold_mild">
+            <English>Dose threshold: mild (Gy)</English>
+            <German>Dosisschwelle: leicht (Gy)</German>
+        </Key>
+        <Key ID="STR_KAT_Chemical_SETTING_rad_doseThreshold_mild_DESC">
+            <English>Accumulated whole-body dose (Gray) at which mild radiation sickness begins.</English>
+            <German>Akkumulierte Ganzkörperdosis (Gray), ab der eine leichte Strahlenkrankheit beginnt.</German>
+        </Key>
+        <Key ID="STR_KAT_Chemical_SETTING_rad_doseThreshold_moderate">
+            <English>Dose threshold: moderate (Gy)</English>
+            <German>Dosisschwelle: mäßig (Gy)</German>
+        </Key>
+        <Key ID="STR_KAT_Chemical_SETTING_rad_doseThreshold_moderate_DESC">
+            <English>Dose at which the hematopoietic (bone-marrow) syndrome sets in.</English>
+            <German>Dosis, ab der das hämatopoetische (Knochenmark-) Syndrom einsetzt.</German>
+        </Key>
+        <Key ID="STR_KAT_Chemical_SETTING_rad_doseThreshold_severe">
+            <English>Dose threshold: severe (Gy)</English>
+            <German>Dosisschwelle: schwer (Gy)</German>
+        </Key>
+        <Key ID="STR_KAT_Chemical_SETTING_rad_doseThreshold_severe_DESC">
+            <English>Dose at which the gastrointestinal syndrome sets in.</English>
+            <German>Dosis, ab der das gastrointestinale Syndrom einsetzt.</German>
+        </Key>
+        <Key ID="STR_KAT_Chemical_SETTING_rad_doseThreshold_lethal">
+            <English>Dose threshold: lethal (Gy)</English>
+            <German>Dosisschwelle: tödlich (Gy)</German>
+        </Key>
+        <Key ID="STR_KAT_Chemical_SETTING_rad_doseThreshold_lethal_DESC">
+            <English>Dose at which the neurovascular/CNS syndrome and cardiac arrest occur.</English>
+            <German>Dosis, ab der das neurovaskuläre/ZNS-Syndrom und Herzstillstand auftreten.</German>
+        </Key>
+        <Key ID="STR_KAT_Chemical_SETTING_rad_prodromalDelay">
+            <English>Prodromal onset (s)</English>
+            <German>Prodromalbeginn (s)</German>
+        </Key>
+        <Key ID="STR_KAT_Chemical_SETTING_rad_prodromalDelay_DESC">
+            <English>Base delay before the prodromal phase (nausea/vomiting). Shorter at higher doses.</English>
+            <German>Basisverzögerung bis zur Prodromalphase (Übelkeit/Erbrechen). Kürzer bei höheren Dosen.</German>
+        </Key>
+        <Key ID="STR_KAT_Chemical_SETTING_rad_hemaDelay">
+            <English>Hematopoietic onset (s)</English>
+            <German>Hämatopoetischer Beginn (s)</German>
+        </Key>
+        <Key ID="STR_KAT_Chemical_SETTING_rad_hemaDelay_DESC">
+            <English>Base delay before hematopoietic syndrome onset (marrow suppression).</English>
+            <German>Basisverzögerung bis zum Beginn des hämatopoetischen Syndroms (Knochenmarksuppression).</German>
+        </Key>
+        <Key ID="STR_KAT_Chemical_SETTING_rad_giDelay">
+            <English>Gastrointestinal onset (s)</English>
+            <German>Gastrointestinaler Beginn (s)</German>
+        </Key>
+        <Key ID="STR_KAT_Chemical_SETTING_rad_giDelay_DESC">
+            <English>Base delay before gastrointestinal syndrome onset.</English>
+            <German>Basisverzögerung bis zum Beginn des gastrointestinalen Syndroms.</German>
+        </Key>
+        <Key ID="STR_KAT_Chemical_SETTING_rad_cnsDelay">
+            <English>CNS collapse onset (s)</English>
+            <German>ZNS-Kollaps-Beginn (s)</German>
+        </Key>
+        <Key ID="STR_KAT_Chemical_SETTING_rad_cnsDelay_DESC">
+            <English>Base delay before neurovascular/CNS collapse at lethal doses.</English>
+            <German>Basisverzögerung bis zum neurovaskulären/ZNS-Kollaps bei tödlichen Dosen.</German>
+        </Key>
+        <Key ID="STR_KAT_Chemical_SETTING_rad_cardiacDelay">
+            <English>Cardiac arrest onset (s)</English>
+            <German>Herzstillstand-Beginn (s)</German>
+        </Key>
+        <Key ID="STR_KAT_Chemical_SETTING_rad_cardiacDelay_DESC">
+            <English>Base delay before cardiac arrest at lethal doses.</English>
+            <German>Basisverzögerung bis zum Herzstillstand bei tödlichen Dosen.</German>
+        </Key>
+        <Key ID="STR_KAT_Chemical_SETTING_rad_protectionFactorMask">
+            <English>Shielding: gas mask</English>
+            <German>Abschirmung: Gasmaske</German>
+        </Key>
+        <Key ID="STR_KAT_Chemical_SETTING_rad_protectionFactorMask_DESC">
+            <English>Gas-mask shielding effectiveness (0 = no protection, 1 = full per-type protection).</English>
+            <German>Wirksamkeit der Gasmasken-Abschirmung (0 = kein Schutz, 1 = voller typabhängiger Schutz).</German>
+        </Key>
+        <Key ID="STR_KAT_Chemical_SETTING_rad_protectionFactorCBRN">
+            <English>Shielding: CBRN suit</English>
+            <German>Abschirmung: CBRN-Anzug</German>
+        </Key>
+        <Key ID="STR_KAT_Chemical_SETTING_rad_protectionFactorCBRN_DESC">
+            <English>CBRN-suit shielding effectiveness (0 = no protection, 1 = full per-type protection).</English>
+            <German>Wirksamkeit der CBRN-Anzug-Abschirmung (0 = kein Schutz, 1 = voller typabhängiger Schutz).</German>
+        </Key>
+        <Key ID="STR_KAT_Chemical_SETTING_rad_protectionFactorRadGear">
+            <English>Shielding: radiation gear</English>
+            <German>Abschirmung: Strahlenschutzausrüstung</German>
+        </Key>
+        <Key ID="STR_KAT_Chemical_SETTING_rad_protectionFactorRadGear_DESC">
+            <English>Radiation-gear shielding effectiveness (0 = no protection, 1 = full per-type protection).</English>
+            <German>Wirksamkeit der Strahlenschutzausrüstung (0 = kein Schutz, 1 = voller typabhängiger Schutz).</German>
+        </Key>
+        <Key ID="STR_KAT_Chemical_SETTING_rad_protectionFactorVehicle">
+            <English>Shielding: vehicle</English>
+            <German>Abschirmung: Fahrzeug</German>
+        </Key>
+        <Key ID="STR_KAT_Chemical_SETTING_rad_protectionFactorVehicle_DESC">
+            <English>Vehicle shielding effectiveness (0 = no protection, 1 = full per-type protection).</English>
+            <German>Wirksamkeit der Fahrzeug-Abschirmung (0 = kein Schutz, 1 = voller typabhängiger Schutz).</German>
+        </Key>
+        <Key ID="STR_KAT_Chemical_SETTING_availRadProtection">
+            <English>Radiation-protective uniforms</English>
+            <German>Strahlenschutz-Uniformen</German>
+        </Key>
+        <Key ID="STR_KAT_Chemical_SETTING_availRadProtection_DISC">
+            <English>Comma-separated uniform classnames that count as dedicated radiation protection.</English>
+            <German>Kommagetrennte Uniform-Klassennamen, die als spezieller Strahlenschutz gelten.</German>
+        </Key>
+        <Key ID="STR_KAT_Chemical_SETTING_rad_kiFactor">
+            <English>Potassium iodide protection factor</English>
+            <German>Kaliumiodid-Schutzfaktor</German>
+        </Key>
+        <Key ID="STR_KAT_Chemical_SETTING_rad_kiFactor_DESC">
+            <English>Absorbed-dose multiplier during the potassium-iodide protective window.</English>
+            <German>Dosismultiplikator während des Kaliumiodid-Schutzfensters.</German>
+        </Key>
+        <Key ID="STR_KAT_Chemical_DosimeterDisplayName">
+            <English>Dosimeter</English>
+            <German>Dosimeter</German>
+        </Key>
+        <Key ID="STR_KAT_Chemical_DosimeterDescription">
+            <English>Personal radiation dosimeter. Worn in the watch slot; shows dose-rate and accumulated dose.</English>
+            <German>Persönliches Strahlungsdosimeter. Im Uhrenslot getragen; zeigt Dosisleistung und akkumulierte Dosis.</German>
+        </Key>
+        <Key ID="STR_KAT_Chemical_Dosimeter_Header">
+            <English>DOSIMETER</English>
+            <German>DOSIMETER</German>
+        </Key>
+        <Key ID="STR_KAT_Chemical_Dosimeter_Menu">
+            <English>Dosimeter</English>
+            <German>Dosimeter</German>
+        </Key>
+        <Key ID="STR_KAT_Chemical_ShowDosimeter">
+            <English>Show Dosimeter</English>
+            <German>Dosimeter anzeigen</German>
+        </Key>
+        <Key ID="STR_KAT_Chemical_EnableDosimeter">
+            <English>Enable Dosimeter</English>
+            <German>Dosimeter aktivieren</German>
+        </Key>
+        <Key ID="STR_KAT_Chemical_DisableDosimeter">
+            <English>Disable Dosimeter</English>
+            <German>Dosimeter deaktivieren</German>
+        </Key>
+        <Key ID="STR_KAT_Chemical_EnableDosimeterSound">
+            <English>Enable dosimeter sound</English>
+            <German>Dosimeter-Ton aktivieren</German>
+        </Key>
+        <Key ID="STR_KAT_Chemical_DisableDosimeterSound">
+            <English>Disable dosimeter sound</English>
+            <German>Dosimeter-Ton deaktivieren</German>
+        </Key>
+        <Key ID="STR_KAT_Chemical_RadModule_Displayname">
+            <English>Radiation Source</English>
+            <German>Strahlungsquelle</German>
+        </Key>
+        <Key ID="STR_KAT_Chemical_RadModule_max_radius_dcs">
+            <English>Radius of the radiation field in meters.</English>
+            <German>Radius des Strahlungsfeldes in Metern.</German>
+        </Key>
+        <Key ID="STR_KAT_Chemical_RadModule_strength_dcs">
+            <English>Dose-rate in Gray per hour at the reference point (centre for zones, 1 m for point sources).</English>
+            <German>Dosisleistung in Gray pro Stunde am Referenzpunkt (Zentrum bei Zonen, 1 m bei Punktquellen).</German>
+        </Key>
+        <Key ID="STR_KAT_Chemical_RadModule_pointSource">
+            <English>Point source</English>
+            <German>Punktquelle</German>
+        </Key>
+        <Key ID="STR_KAT_Chemical_RadModule_pointSource_dcs">
+            <English>If enabled, dose falls off with the inverse-square law (a hot point) instead of linearly (an area).</English>
+            <German>Wenn aktiviert, fällt die Dosis nach dem Abstandsquadratgesetz ab (heißer Punkt) statt linear (Fläche).</German>
+        </Key>
+        <Key ID="STR_KAT_Chemical_RadModule_description">
+            <English>Creates a radiation source. Sync a LocationArea for a zone, or enable Point source for a hot spot.</English>
+            <German>Erzeugt eine Strahlungsquelle. Synchronisiere ein LocationArea für eine Zone oder aktiviere Punktquelle für einen Hotspot.</German>
+        </Key>
+        <Key ID="STR_KAT_Chemical_radHint_nausea">
+            <English>You feel nauseous and start to vomit.</English>
+            <German>Dir ist übel und du beginnst zu erbrechen.</German>
+        </Key>
+        <Key ID="STR_KAT_Chemical_radHint_weak">
+            <English>You feel weak and feverish.</English>
+            <German>Du fühlst dich schwach und fiebrig.</German>
+        </Key>
+        <Key ID="STR_KAT_Chemical_radHint_gi">
+            <English>Severe cramps and vomiting wrack your body.</English>
+            <German>Schwere Krämpfe und Erbrechen schütteln deinen Körper.</German>
+        </Key>
+        <Key ID="STR_KAT_Chemical_potassiumIodideItem">
+            <English>Potassium Iodide (KI)</English>
+            <German>Kaliumiodid (KI)</German>
+        </Key>
+        <Key ID="STR_KAT_Chemical_potassiumIodideItem_desc">
+            <English>Prophylactic anti-radiation tablets. Taken before/early exposure to reduce radionuclide uptake.</English>
+            <German>Prophylaktische Anti-Strahlungs-Tabletten. Vor/früh bei Exposition eingenommen, um die Aufnahme von Radionukliden zu verringern.</German>
+        </Key>
+        <Key ID="STR_KAT_Chemical_prussianBlueItem">
+            <English>Prussian Blue</English>
+            <German>Berliner Blau</German>
+        </Key>
+        <Key ID="STR_KAT_Chemical_prussianBlueItem_desc">
+            <English>Chelation agent. Speeds elimination of internalised radionuclides (internal burden).</English>
+            <German>Chelatbildner. Beschleunigt die Ausscheidung internalisierter Radionuklide (innere Belastung).</German>
+        </Key>
+        <Key ID="STR_KAT_Chemical_radSourceObject">
+            <English>Radioactive Source</English>
+            <German>Radioaktive Quelle</German>
+        </Key>
+        <Key ID="STR_KAT_Chemical_PickupRadSource">
+            <English>Pick up radioactive source</English>
+            <German>Radioaktive Quelle aufnehmen</German>
+        </Key>
+        <Key ID="STR_KAT_Chemical_DropRadSource">
+            <English>Drop radioactive source</English>
+            <German>Radioaktive Quelle ablegen</German>
+        </Key>
+        <Key ID="STR_KAT_Chemical_TakeKI">
+            <English>Take Potassium Iodide</English>
+            <German>Kaliumiodid einnehmen</German>
+        </Key>
+        <Key ID="STR_KAT_Chemical_TakeKI_Progress">
+            <English>Taking Potassium Iodide...</English>
+            <German>Nehme Kaliumiodid ein...</German>
+        </Key>
+        <Key ID="STR_KAT_Chemical_TakePrussianBlue">
+            <English>Administer Prussian Blue</English>
+            <German>Berliner Blau verabreichen</German>
+        </Key>
+        <Key ID="STR_KAT_Chemical_TakePrussianBlue_Progress">
+            <English>Administering Prussian Blue...</English>
+            <German>Verabreiche Berliner Blau...</German>
+        </Key>
+        <Key ID="STR_KAT_Chemical_RadModule_preset">
+            <English>Preset</English>
+            <German>Vorlage</German>
+        </Key>
+        <Key ID="STR_KAT_Chemical_RadModule_preset_dcs">
+            <English>Source profile. Non-Custom presets fill the per-type strengths; Custom uses the four fields below.</English>
+            <German>Quellenprofil. Nicht-benutzerdefinierte Vorlagen füllen die typabhängigen Stärken; Benutzerdefiniert nutzt die vier Felder unten.</German>
+        </Key>
+        <Key ID="STR_KAT_Chemical_RadModule_alpha">
+            <English>Alpha (Gy/h)</English>
+            <German>Alpha (Gy/h)</German>
+        </Key>
+        <Key ID="STR_KAT_Chemical_RadModule_beta">
+            <English>Beta (Gy/h)</English>
+            <German>Beta (Gy/h)</German>
+        </Key>
+        <Key ID="STR_KAT_Chemical_RadModule_gamma">
+            <English>Gamma (Gy/h)</English>
+            <German>Gamma (Gy/h)</German>
+        </Key>
+        <Key ID="STR_KAT_Chemical_RadModule_neutron">
+            <English>Neutron (Gy/h)</English>
+            <German>Neutron (Gy/h)</German>
+        </Key>
+        <Key ID="STR_KAT_Chemical_RadPreset_custom">
+            <English>Custom</English>
+            <German>Benutzerdefiniert</German>
+        </Key>
+        <Key ID="STR_KAT_Chemical_RadPreset_Cobalt60">
+            <English>Cobalt-60 (gamma)</English>
+            <German>Cobalt-60 (Gamma)</German>
+        </Key>
+        <Key ID="STR_KAT_Chemical_RadPreset_Reactor">
+            <English>Reactor (gamma + neutron)</English>
+            <German>Reaktor (Gamma + Neutron)</German>
+        </Key>
+        <Key ID="STR_KAT_Chemical_RadPreset_Fallout">
+            <English>Fallout (beta + gamma)</English>
+            <German>Fallout (Beta + Gamma)</German>
+        </Key>
+        <Key ID="STR_KAT_Chemical_RadPreset_AlphaEmitter">
+            <English>Alpha emitter</English>
+            <German>Alpha-Strahler</German>
+        </Key>
+        <Key ID="STR_KAT_Chemical_RadPreset_DirtyBomb">
+            <English>Dirty bomb (alpha + beta + gamma)</English>
+            <German>Schmutzige Bombe (Alpha + Beta + Gamma)</German>
+        </Key>
+        <Key ID="STR_KAT_Chemical_SETTING_rad_kiDuration">
+            <English>Potassium iodide duration (s)</English>
+            <German>Kaliumiodid-Dauer (s)</German>
+        </Key>
+        <Key ID="STR_KAT_Chemical_SETTING_rad_kiDuration_DESC">
+            <English>How long the potassium-iodide uptake-reduction window lasts.</English>
+            <German>Wie lange das Kaliumiodid-Aufnahmereduktionsfenster anhält.</German>
+        </Key>
+        <Key ID="STR_KAT_Chemical_SETTING_rad_inhalationFactor">
+            <English>Inhalation factor</English>
+            <German>Inhalationsfaktor</German>
+        </Key>
+        <Key ID="STR_KAT_Chemical_SETTING_rad_inhalationFactor_DESC">
+            <English>Scales how much airborne radioactivity becomes internal burden when no gas mask is worn.</English>
+            <German>Skaliert, wie viel luftgetragene Radioaktivität ohne Gasmaske zur inneren Belastung wird.</German>
+        </Key>
+        <Key ID="STR_KAT_Chemical_SETTING_rad_internalConversionRate">
+            <English>Internal dose conversion rate</English>
+            <German>Interne Dosis-Umwandlungsrate</German>
+        </Key>
+        <Key ID="STR_KAT_Chemical_SETTING_rad_internalConversionRate_DESC">
+            <English>Fraction of internal burden delivered as committed whole-body dose each second.</English>
+            <German>Anteil der inneren Belastung, der pro Sekunde als festgelegte Ganzkörperdosis abgegeben wird.</German>
+        </Key>
+        <Key ID="STR_KAT_Chemical_SETTING_rad_internalDecayRate">
+            <English>Internal burden elimination rate</English>
+            <German>Ausscheidungsrate der inneren Belastung</German>
+        </Key>
+        <Key ID="STR_KAT_Chemical_SETTING_rad_internalDecayRate_DESC">
+            <English>Biological elimination of internal burden per second (chelation multiplies this).</English>
+            <German>Biologische Ausscheidung der inneren Belastung pro Sekunde (Chelattherapie vervielfacht dies).</German>
+        </Key>
+        <Key ID="STR_KAT_Chemical_SETTING_rad_chelationDuration">
+            <English>Chelation duration (s)</English>
+            <German>Chelat-Dauer (s)</German>
+        </Key>
+        <Key ID="STR_KAT_Chemical_SETTING_rad_chelationDuration_DESC">
+            <English>How long a Prussian blue chelation window accelerates internal-burden elimination.</English>
+            <German>Wie lange ein Berliner-Blau-Chelatfenster die Ausscheidung der inneren Belastung beschleunigt.</German>
+        </Key>
+        <Key ID="STR_KAT_Chemical_SETTING_rad_chelationFactor">
+            <English>Chelation speed multiplier</English>
+            <German>Chelat-Geschwindigkeitsmultiplikator</German>
+        </Key>
+        <Key ID="STR_KAT_Chemical_SETTING_rad_chelationFactor_DESC">
+            <English>How much faster internal burden is eliminated while a chelation window is active.</English>
+            <German>Wie viel schneller die innere Belastung während eines Chelatfensters ausgeschieden wird.</German>
+        </Key>
+        <Key ID="STR_KAT_Chemical_SETTING_rad_contaminationDeposition">
+            <English>Contamination deposition rate</English>
+            <German>Kontaminations-Ablagerungsrate</German>
+        </Key>
+        <Key ID="STR_KAT_Chemical_SETTING_rad_contaminationDeposition_DESC">
+            <English>How quickly surface contamination builds up while exposed to particulate radiation.</English>
+            <German>Wie schnell sich Oberflächenkontamination bei Exposition gegenüber Partikelstrahlung aufbaut.</German>
+        </Key>
+        <Key ID="STR_KAT_Chemical_SETTING_rad_contaminationDecay">
+            <English>Contamination weathering rate</English>
+            <German>Kontaminations-Verwitterungsrate</German>
+        </Key>
+        <Key ID="STR_KAT_Chemical_SETTING_rad_contaminationDecay_DESC">
+            <English>How quickly surface contamination weathers away on its own per second.</English>
+            <German>Wie schnell Oberflächenkontamination pro Sekunde von selbst verwittert.</German>
+        </Key>
+        <Key ID="STR_KAT_Chemical_SETTING_rad_crossContamStrength">
+            <English>Cross-contamination strength (Gy/h)</English>
+            <German>Kreuzkontaminations-Stärke (Gy/h)</German>
+        </Key>
+        <Key ID="STR_KAT_Chemical_SETTING_rad_crossContamStrength_DESC">
+            <English>Dose-rate emitted by a fully contaminated person (doses themselves and nearby people).</English>
+            <German>Dosisleistung einer vollständig kontaminierten Person (bestrahlt sich selbst und Personen in der Nähe).</German>
+        </Key>
+        <Key ID="STR_KAT_Chemical_SETTING_rad_localProximity">
+            <English>Local exposure distance (m)</English>
+            <German>Lokale Expositionsdistanz (m)</German>
+        </Key>
+        <Key ID="STR_KAT_Chemical_SETTING_rad_localProximity_DESC">
+            <English>Within this distance of a point source, skin dose concentrates on the arms/hands (handling burns).</English>
+            <German>Innerhalb dieser Distanz zu einer Punktquelle konzentriert sich die Hautdosis auf Arme/Hände (Handhabungsverbrennungen).</German>
+        </Key>
+        <Key ID="STR_KAT_Chemical_SETTING_rad_skinBurnThreshold">
+            <English>Skin burn threshold (Gy)</English>
+            <German>Hautverbrennungsschwelle (Gy)</German>
+        </Key>
+        <Key ID="STR_KAT_Chemical_SETTING_rad_skinBurnThreshold_DESC">
+            <English>Local skin dose per radiation burn wound applied to a body part.</English>
+            <German>Lokale Hautdosis pro Strahlenverbrennungswunde, die auf ein Körperteil angewendet wird.</German>
+        </Key>
         <Key ID="STR_KAT_Chemical_SETTING_AVAIL_GASMASK">
             <English>Accepted gas masks</English>
             <Czech>Povolené plynové masky</Czech>
