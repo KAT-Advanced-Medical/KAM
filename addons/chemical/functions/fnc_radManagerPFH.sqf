@@ -24,8 +24,7 @@
  */
 
 private _exposedNow = [];
-private _rateByUnit = createHashMap;
-private _domByUnit = createHashMap;
+private _accum = createHashMap;
 private _types = RAD_TYPES;
 
 {
@@ -66,22 +65,28 @@ private _types = RAD_TYPES;
         if (_total <= 0) then { continue };
 
         _exposedNow pushBackUnique _unit;
-        _rateByUnit set [_unit, (_rateByUnit getOrDefault [_unit, 0]) + _total];
+
+        private _nid = netId _unit;
+        private _entry = _accum getOrDefault [_nid, [_unit, 0, "", -1]];
+        _entry set [1, (_entry select 1) + _total];
 
         private _maxRate = selectMax _ratesByType;
-        if (_maxRate > ((_domByUnit getOrDefault [_unit, ["", -1]]) select 1)) then {
-            _domByUnit set [_unit, [_types select (_ratesByType find _maxRate), _maxRate]];
+        if (_maxRate > (_entry select 3)) then {
+            _entry set [2, _types select (_ratesByType find _maxRate)];
+            _entry set [3, _maxRate];
         };
+        _accum set [_nid, _entry];
 
         [QGVAR(irradiate), [_unit, _ratesByType, _radLogic], _unit] call CBA_fnc_targetEvent;
     } forEach nearestObjects [_radLogic, ["CAManBase"], _radius];
 } forEach GVAR(radSources);
 
 {
-    if (isNull _x) then { continue };
-    _x setVariable [QGVAR(radDoseRate), _y, true];
-    _x setVariable [QGVAR(radDominantType), (_domByUnit getOrDefault [_x, [""]]) select 0, true];
-} forEach _rateByUnit;
+    _y params ["_unit", "_rate", "_domType"];
+    if (isNull _unit) then { continue };
+    _unit setVariable [QGVAR(radDoseRate), _rate, true];
+    _unit setVariable [QGVAR(radDominantType), _domType, true];
+} forEach _accum;
 
 {
     if (!isNull _x && {!(_x in _exposedNow)}) then {

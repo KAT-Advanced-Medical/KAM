@@ -531,3 +531,66 @@
     [1, 50, 5, 1],
     true
 ] call CBA_fnc_addSetting;
+
+[
+    QGVAR(rad_marrowAnemiaRate),
+    "SLIDER",
+    [LLSTRING(SETTING_rad_marrowAnemiaRate), LLSTRING(SETTING_rad_marrowAnemiaRate_DESC)],
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_Radiation)],
+    [0, 20, 2, 1],
+    true
+] call CBA_fnc_addSetting;
+
+[
+    QGVAR(rad_giFluidLossRate),
+    "SLIDER",
+    [LLSTRING(SETTING_rad_giFluidLossRate), LLSTRING(SETTING_rad_giFluidLossRate_DESC)],
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_Radiation)],
+    [0, 30, 3, 1],
+    true
+] call CBA_fnc_addSetting;
+
+[
+    QGVAR(rad_giAcidosisRate),
+    "SLIDER",
+    [LLSTRING(SETTING_rad_giAcidosisRate), LLSTRING(SETTING_rad_giAcidosisRate_DESC)],
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_Radiation)],
+    [0, 1, 0.05, 3],
+    true
+] call CBA_fnc_addSetting;
+
+[
+    QGVAR(rad_cnsHypotension),
+    "SLIDER",
+    [LLSTRING(SETTING_rad_cnsHypotension), LLSTRING(SETTING_rad_cnsHypotension_DESC)],
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_Radiation)],
+    [0, 100, 40, 0],
+    true
+] call CBA_fnc_addSetting;
+
+[
+    QGVAR(rad_feverMax),
+    "SLIDER",
+    [LLSTRING(SETTING_rad_feverMax), LLSTRING(SETTING_rad_feverMax_DESC)],
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_Radiation)],
+    [0, 5, 2, 1],
+    true
+] call CBA_fnc_addSetting;
+
+[
+    QGVAR(rad_recoveryRate),
+    "SLIDER",
+    [LLSTRING(SETTING_rad_recoveryRate), LLSTRING(SETTING_rad_recoveryRate_DESC)],
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_Radiation)],
+    [0, 0.5, 0.01, 3],
+    true
+] call CBA_fnc_addSetting;
+
+[
+    QGVAR(rad_visualEffect),
+    "CHECKBOX",
+    [LLSTRING(SETTING_rad_visualEffect), LLSTRING(SETTING_rad_visualEffect_DESC)],
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_Radiation)],
+    [true],
+    true
+] call CBA_fnc_addSetting;

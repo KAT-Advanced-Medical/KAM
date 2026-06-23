@@ -589,40 +589,40 @@
             <Turkish>Gaz maskesini tak</Turkish>
         </Key>
         <Key ID="STR_KAT_Chemical_SubCategory_Protection">
-            <English>1. Protection &amp; Gear</English>
-            <German>1. Schutz &amp; Ausrüstung</German>
+            <English>01. Protection &amp; Gear</English>
+            <German>01. Schutz &amp; Ausrüstung</German>
         </Key>
         <Key ID="STR_KAT_Chemical_SubCategory_CS">
-            <English>2. CS Gas (Level 0)</English>
-            <German>2. CS-Gas (Level 0)</German>
+            <English>02. CS Gas (Level 0)</English>
+            <German>02. CS-Gas (Level 0)</German>
         </Key>
         <Key ID="STR_KAT_Chemical_SubCategory_Chlorine">
-            <English>3. Chlorine (Level 1)</English>
-            <German>3. Chlor (Level 1)</German>
+            <English>03. Chlorine (Level 1)</English>
+            <German>03. Chlor (Level 1)</German>
         </Key>
         <Key ID="STR_KAT_Chemical_SubCategory_Phosgene">
-            <English>4. Phosgene (Level 1)</English>
-            <German>4. Phosgen (Level 1)</German>
+            <English>04. Phosgene (Level 1)</English>
+            <German>04. Phosgen (Level 1)</German>
         </Key>
         <Key ID="STR_KAT_Chemical_SubCategory_Mustard">
-            <English>5. Mustard Gas (Level 2)</English>
-            <German>5. Senfgas (Level 2)</German>
+            <English>05. Mustard Gas (Level 2)</English>
+            <German>05. Senfgas (Level 2)</German>
         </Key>
         <Key ID="STR_KAT_Chemical_SubCategory_Sarin">
-            <English>6. Sarin (Level 2)</English>
-            <German>6. Sarin (Level 2)</German>
+            <English>06. Sarin (Level 2)</English>
+            <German>06. Sarin (Level 2)</German>
         </Key>
         <Key ID="STR_KAT_Chemical_SubCategory_VX">
-            <English>7. VX (Level 2)</English>
-            <German>7. VX (Level 2)</German>
+            <English>07. VX (Level 2)</English>
+            <German>07. VX (Level 2)</German>
         </Key>
         <Key ID="STR_KAT_Chemical_SubCategory_Contamination">
-            <English>8. Contamination &amp; Decontamination</English>
-            <German>8. Kontamination &amp; Dekontamination</German>
+            <English>08. Contamination &amp; Decontamination</English>
+            <German>08. Kontamination &amp; Dekontamination</German>
         </Key>
         <Key ID="STR_KAT_Chemical_SubCategory_Identification">
-            <English>9. Identification (Detector &amp; M8 Paper)</English>
-            <German>9. dentifikation (Detektor &amp; M8-Papier)</German>
+            <English>09. Identification (Detector &amp; M8 Paper)</English>
+            <German>09. dentifikation (Detektor &amp; M8-Papier)</German>
         </Key>
         <Key ID="STR_KAT_Chemical_SubCategory_Radiation">
             <English>10. Radiation</English>
@@ -1015,6 +1015,62 @@
         <Key ID="STR_KAT_Chemical_SETTING_rad_skinBurnThreshold_DESC">
             <English>Local skin dose per radiation burn wound applied to a body part.</English>
             <German>Lokale Hautdosis pro Strahlenverbrennungswunde, die auf ein Körperteil angewendet wird.</German>
+        </Key>
+        <Key ID="STR_KAT_Chemical_SETTING_rad_marrowAnemiaRate">
+            <English>Anemia rate (ml/s)</English>
+            <German>Anämie-Rate (ml/s)</German>
+        </Key>
+        <Key ID="STR_KAT_Chemical_SETTING_rad_marrowAnemiaRate_DESC">
+            <English>Blood-volume loss per second from marrow suppression, scaled by sickness severity. Models progressive anemia at moderate+ tiers.</English>
+            <German>Blutvolumenverlust pro Sekunde durch Knochenmarkssuppression, skaliert mit der Schwere der Krankheit. Modelliert fortschreitende Anämie ab mittlerer Stufe.</German>
+        </Key>
+        <Key ID="STR_KAT_Chemical_SETTING_rad_giFluidLossRate">
+            <English>GI fluid loss (ml/s)</English>
+            <German>GI-Flüssigkeitsverlust (ml/s)</German>
+        </Key>
+        <Key ID="STR_KAT_Chemical_SETTING_rad_giFluidLossRate_DESC">
+            <English>Blood-volume loss per second from gastrointestinal syndrome (dehydration) at severe+ tiers.</English>
+            <German>Blutvolumenverlust pro Sekunde durch das gastrointestinale Syndrom (Dehydrierung) ab schwerer Stufe.</German>
+        </Key>
+        <Key ID="STR_KAT_Chemical_SETTING_rad_giAcidosisRate">
+            <English>GI acidosis rate</English>
+            <German>GI-Azidose-Rate</German>
+        </Key>
+        <Key ID="STR_KAT_Chemical_SETTING_rad_giAcidosisRate_DESC">
+            <English>Per-second drop in blood-gas bicarbonate/pH (metabolic acidosis) at severe+ tiers. Requires the Breathing system enabled.</English>
+            <German>Sekündlicher Abfall von Bikarbonat/pH im Blutgas (metabolische Azidose) ab schwerer Stufe. Erfordert aktiviertes Atmungssystem.</German>
+        </Key>
+        <Key ID="STR_KAT_Chemical_SETTING_rad_cnsHypotension">
+            <English>CNS hypotension (mmHg)</English>
+            <German>ZNS-Hypotonie (mmHg)</German>
+        </Key>
+        <Key ID="STR_KAT_Chemical_SETTING_rad_cnsHypotension_DESC">
+            <English>Maximum blood-pressure drop at the lethal/neurovascular tier. Requires the Circulation system enabled.</English>
+            <German>Maximaler Blutdruckabfall in der tödlichen/neurovaskulären Stufe. Erfordert aktiviertes Kreislaufsystem.</German>
+        </Key>
+        <Key ID="STR_KAT_Chemical_SETTING_rad_feverMax">
+            <English>Maximum fever (°C)</English>
+            <German>Maximales Fieber (°C)</German>
+        </Key>
+        <Key ID="STR_KAT_Chemical_SETTING_rad_feverMax_DESC">
+            <English>Maximum body-temperature rise from radiation sickness. Requires the Hypothermia system enabled.</English>
+            <German>Maximaler Anstieg der Körpertemperatur durch Strahlenkrankheit. Erfordert aktiviertes Hypothermie-System.</German>
+        </Key>
+        <Key ID="STR_KAT_Chemical_SETTING_rad_recoveryRate">
+            <English>Recovery rate (Gy/s)</English>
+            <German>Erholungsrate (Gy/s)</German>
+        </Key>
+        <Key ID="STR_KAT_Chemical_SETTING_rad_recoveryRate_DESC">
+            <English>How fast sickness severity heals per second once out of radiation (below the lethal tier). The lethal tier does not self-recover.</English>
+            <German>Wie schnell die Krankheitsschwere pro Sekunde abheilt, sobald keine Strahlung mehr wirkt (unterhalb der tödlichen Stufe). Die tödliche Stufe erholt sich nicht von selbst.</German>
+        </Key>
+        <Key ID="STR_KAT_Chemical_SETTING_rad_visualEffect">
+            <English>Radiation visual effect</English>
+            <German>Strahlungs-Bildschirmeffekt</German>
+        </Key>
+        <Key ID="STR_KAT_Chemical_SETTING_rad_visualEffect_DESC">
+            <English>Show a desaturated screen effect while irradiated/sick (client-side).</English>
+            <German>Zeigt einen entsättigten Bildschirmeffekt während Bestrahlung/Krankheit (clientseitig).</German>
         </Key>
         <Key ID="STR_KAT_Chemical_SETTING_AVAIL_GASMASK">
             <English>Accepted gas masks</English>
@@ -1762,6 +1818,22 @@
         <Key ID="STR_ACE_Medical_Damage_KAT_ChemicalBurn_Large">
             <English>Major Chemical Burn</English>
             <German>Schwere chemische Verätzung</German>
+        </Key>
+        <Key ID="STR_ACE_Medical_Damage_KAT_RadiationBurn">
+            <English>Radiation Burn</English>
+            <German>Strahlenverbrennung</German>
+        </Key>
+        <Key ID="STR_ACE_Medical_Damage_KAT_RadiationBurn_Minor">
+            <English>Minor Radiation Burn</English>
+            <German>Leichte Strahlenverbrennung</German>
+        </Key>
+        <Key ID="STR_ACE_Medical_Damage_KAT_RadiationBurn_Medium">
+            <English>Medium Radiation Burn</English>
+            <German>Mittlere Strahlenverbrennung</German>
+        </Key>
+        <Key ID="STR_ACE_Medical_Damage_KAT_RadiationBurn_Large">
+            <English>Major Radiation Burn</English>
+            <German>Schwere Strahlenverbrennung</German>
         </Key>
     </Package>
 </Project>

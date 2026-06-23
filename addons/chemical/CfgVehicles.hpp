@@ -234,8 +234,8 @@ class CfgVehicles {
         };
     };
 
-    class Land_Canister_Oil_F;
-    class kat_radSource: Land_Canister_Oil_F {
+    class Land_CanisterFuel_F;
+    class kat_radSource: Land_CanisterFuel_F {
         scope = 2;
         scopeCurator = 2;
         displayName = CSTRING(radSourceObject);

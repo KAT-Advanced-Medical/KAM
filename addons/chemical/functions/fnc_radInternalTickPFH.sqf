@@ -34,7 +34,9 @@ if (_burden < 0.001) exitWith {
 
 private _interval = 5;
 
-_unit setVariable [QGVAR(radDoseWB), (_unit getVariable [QGVAR(radDoseWB), 0]) + (_burden * GVAR(rad_internalConversionRate) * _interval), true];
+private _add = _burden * GVAR(rad_internalConversionRate) * _interval;
+_unit setVariable [QGVAR(radDoseWB), (_unit getVariable [QGVAR(radDoseWB), 0]) + _add, true];
+_unit setVariable [QGVAR(radSeverity), (_unit getVariable [QGVAR(radSeverity), 0]) + _add, true];
 
 private _decay = GVAR(rad_internalDecayRate);
 if (CBA_missionTime < (_unit getVariable [QGVAR(radChelationWindow), 0])) then {

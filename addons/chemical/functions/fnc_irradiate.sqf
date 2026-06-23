@@ -36,7 +36,7 @@ if !(isDamageAllowed _unit && {_unit getVariable [QACEGVAR(medical,allowDamage),
     TRACE_1("rad unit is invulnerable",_unit);
 };
 
-private _dt = RAD_MANAGER_PFH_DELAY;
+private _hours = RAD_MANAGER_PFH_DELAY / 3600;
 private _hasMask = [_unit] call FUNC(hasGasMaskON);
 private _kiActive = CBA_missionTime < (_unit getVariable [QGVAR(radProtectiveWindow), 0]);
 private _veryClose = (_radLogic distance _unit) < GVAR(rad_localProximity);
@@ -68,7 +68,7 @@ private _skinByPart = [0, 0, 0, 0, 0, 0];
     };
 
     if (!_hasMask && {_inhaleW > 0}) then {
-        private _inhale = _rate * _inhaleW;
+        private _inhale = _rate * _inhaleW * GVAR(rad_inhalationFactor);
         if (_kiActive) then { _inhale = _inhale * GVAR(rad_kiFactor); };
         _internalAdd = _internalAdd + _inhale;
     };
@@ -79,14 +79,16 @@ private _skinByPart = [0, 0, 0, 0, 0, 0];
 } forEach RAD_TYPES;
 
 if (_wbAdd > 0) then {
-    _unit setVariable [QGVAR(radDoseWB), (_unit getVariable [QGVAR(radDoseWB), 0]) + (_wbAdd * _dt), true];
+    private _add = _wbAdd * _hours;
+    _unit setVariable [QGVAR(radDoseWB), (_unit getVariable [QGVAR(radDoseWB), 0]) + _add, true];
+    _unit setVariable [QGVAR(radSeverity), (_unit getVariable [QGVAR(radSeverity), 0]) + _add, true];
 };
 
 private _limb = _unit getVariable [QGVAR(radDoseLimb), [0, 0, 0, 0, 0, 0]];
 private _thr = GVAR(rad_skinBurnThreshold);
 private _parts = RAD_BODY_PARTS;
 {
-    private _new = (_limb select _forEachIndex) + ((_skinByPart select _forEachIndex) * _dt);
+    private _new = (_limb select _forEachIndex) + ((_skinByPart select _forEachIndex) * _hours);
     if (_new >= _thr) then {
         [_unit, 0.1 + random 0.3, _parts select _forEachIndex, "KAT_radiationBurn", _unit] call ACEFUNC(medical,addDamageToUnit);
         _new = _new - _thr;
@@ -96,12 +98,12 @@ private _parts = RAD_BODY_PARTS;
 _unit setVariable [QGVAR(radDoseLimb), _limb, true];
 
 if (_internalAdd > 0) then {
-    _unit setVariable [QGVAR(radInternalBurden), (_unit getVariable [QGVAR(radInternalBurden), 0]) + (_internalAdd * _dt), true];
+    _unit setVariable [QGVAR(radInternalBurden), (_unit getVariable [QGVAR(radInternalBurden), 0]) + (_internalAdd * _hours), true];
     [_unit] call FUNC(startRadInternalTick);
 };
 
 if (_contamAdd > 0) then {
-    private _contam = ((_unit getVariable [QGVAR(radExternalContam), 0]) + (_contamAdd * GVAR(rad_contaminationDeposition) * _dt)) min 1;
+    private _contam = ((_unit getVariable [QGVAR(radExternalContam), 0]) + (_contamAdd * GVAR(rad_contaminationDeposition) * _hours)) min 1;
     _unit setVariable [QGVAR(radExternalContam), _contam, true];
     [_unit] call FUNC(startRadContaminationTick);
 };

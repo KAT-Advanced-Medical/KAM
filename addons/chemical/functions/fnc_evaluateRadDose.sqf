@@ -22,27 +22,29 @@
 
 params ["_unit"];
 
-private _dose = (_unit getVariable [QGVAR(radDoseWB), 0]) + (_unit getVariable [QGVAR(radInternalBurden), 0]);
+private _severity = _unit getVariable [QGVAR(radSeverity), 0];
 
 private _tier = switch (true) do {
-    case (_dose >= GVAR(rad_doseThreshold_lethal)):   {4};
-    case (_dose >= GVAR(rad_doseThreshold_severe)):   {3};
-    case (_dose >= GVAR(rad_doseThreshold_moderate)): {2};
-    case (_dose >= GVAR(rad_doseThreshold_mild)):     {1};
+    case (_severity >= GVAR(rad_doseThreshold_lethal)):   {4};
+    case (_severity >= GVAR(rad_doseThreshold_severe)):   {3};
+    case (_severity >= GVAR(rad_doseThreshold_moderate)): {2};
+    case (_severity >= GVAR(rad_doseThreshold_mild)):     {1};
     default {0};
 };
 
 private _currentTier = _unit getVariable [QGVAR(radSicknessTier), 0];
 
 private _suppression = [1, 0.85, 0.6, 0.35, 0.1] select _tier;
-if (_tier > _currentTier) then {
-    _unit setVariable [QGVAR(radMarrowFactor), _suppression, true];
-    _unit setVariable [QGVAR(radImmuneFactor), _suppression, true];
+_unit setVariable [QGVAR(radMarrowFactor), _suppression, true];
+_unit setVariable [QGVAR(radImmuneFactor), _suppression, true];
+
+_unit setVariable [QGVAR(radSicknessTier), _tier, true];
+
+if (_tier >= 1) then {
+    [_unit] call FUNC(startRadPhysiologyTick);
 };
 
 if (_tier <= _currentTier) exitWith {};
-
-_unit setVariable [QGVAR(radSicknessTier), _tier, true];
 
 private _scale = [1, 1, 0.7, 0.45, 0.2] select _tier;
 

@@ -41,6 +41,7 @@ _patient setVariable [QGVAR(nerveDeadline_unconscious), 0, true];
 _patient setVariable [QGVAR(nerveDeadline_cardiac), 0, true];
 
 _patient setVariable [QGVAR(radDoseWB), 0, true];
+_patient setVariable [QGVAR(radSeverity), 0, true];
 _patient setVariable [QGVAR(radDoseLimb), [0, 0, 0, 0, 0, 0], true];
 _patient setVariable [QGVAR(radInternalBurden), 0, true];
 _patient setVariable [QGVAR(radExternalContam), 0, true];
@@ -54,7 +55,14 @@ _patient setVariable [QGVAR(radChelationWindow), 0, true];
 _patient setVariable [QGVAR(radDominantType), "", true];
 _patient setVariable [QGVAR(radInternalPFHActive), false, true];
 _patient setVariable [QGVAR(radContamPFHActive), false, true];
+_patient setVariable [QGVAR(radPhysiologyPFHActive), false, true];
+_patient setVariable [QGVAR(radFever), 0, true];
+_patient setVariable [QGVAR(radBPDrop), 0, true];
 _patient setVariable [QGVAR(radTimeToVomit), -1, true];
+
+if (_patient == ACE_player) then {
+    [false, 0] call EFUNC(feedback,effectRadiation);
+};
 _patient setVariable [QGVAR(radDeadline_prodromal), 0, true];
 _patient setVariable [QGVAR(radDeadline_hema), 0, true];
 _patient setVariable [QGVAR(radDeadline_gi), 0, true];

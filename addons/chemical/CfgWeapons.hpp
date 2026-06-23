@@ -59,7 +59,7 @@ class CfgWeapons {
         author = "DiGii";
         displayName = CSTRING(potassiumIodideItem);
         model = "\A3\weapons_F\ammo\mag_univ.p3d";
-        picture = QPATHTOF(ui\icon_deconkit.paa);
+        picture = QPATHTOF(ui\kat_potassiumIodide.paa);
         descriptionShort = CSTRING(potassiumIodideItem_desc);
         descriptionUse = CSTRING(potassiumIodideItem_desc);
         class ItemInfo: CBA_MiscItem_ItemInfo {
@@ -72,7 +72,7 @@ class CfgWeapons {
         author = "DiGii";
         displayName = CSTRING(prussianBlueItem);
         model = "\A3\weapons_F\ammo\mag_univ.p3d";
-        picture = QPATHTOF(ui\icon_deconkit.paa);
+        picture = QPATHTOF(ui\kat_prussianBlue.paa);
         descriptionShort = CSTRING(prussianBlueItem_desc);
         descriptionUse = CSTRING(prussianBlueItem_desc);
         class ItemInfo: CBA_MiscItem_ItemInfo {
