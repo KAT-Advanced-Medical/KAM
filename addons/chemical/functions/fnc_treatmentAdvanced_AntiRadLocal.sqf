@@ -12,6 +12,13 @@
  * 0: Patient <OBJECT>
  * 1: Mode <STRING>
  *
+ * Modes:
+ *   "ki"         - potassium iodide: prophylactic uptake-reduction window.
+ *   "prussian"   - Prussian blue: chelation window (faster internal clearance).
+ *   "antibiotics"- opens an infection-suppression window and cuts current infection.
+ *   "filgrastim" - opens a window that accelerates marrow/sickness recovery.
+ *   "antiemetic" - opens a window that suppresses radiation vomiting.
+ *
  * Return Value:
  * None
  *
@@ -26,5 +33,15 @@ switch (_mode) do {
     };
     case "prussian": {
         _patient setVariable [QGVAR(radChelationWindow), CBA_missionTime + GVAR(rad_chelationDuration), true];
+    };
+    case "antibiotics": {
+        _patient setVariable [QGVAR(radAntibioticWindow), CBA_missionTime + GVAR(rad_antibioticDuration), true];
+        _patient setVariable [QGVAR(radInfectionLevel), (_patient getVariable [QGVAR(radInfectionLevel), 0]) * 0.5, true];
+    };
+    case "filgrastim": {
+        _patient setVariable [QGVAR(radFilgrastimWindow), CBA_missionTime + GVAR(rad_filgrastimDuration), true];
+    };
+    case "antiemetic": {
+        _patient setVariable [QGVAR(radAntiemeticWindow), CBA_missionTime + GVAR(rad_antiemeticDuration), true];
     };
 };

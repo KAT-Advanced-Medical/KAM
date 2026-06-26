@@ -594,3 +594,75 @@
     [true],
     true
 ] call CBA_fnc_addSetting;
+
+[
+    QGVAR(rad_infectionEnable),
+    "CHECKBOX",
+    [LLSTRING(SETTING_rad_infectionEnable), LLSTRING(SETTING_rad_infectionEnable_DESC)],
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_Radiation)],
+    [true],
+    true
+] call CBA_fnc_addSetting;
+
+[
+    QGVAR(rad_infectionChance),
+    "SLIDER",
+    [LLSTRING(SETTING_rad_infectionChance), LLSTRING(SETTING_rad_infectionChance_DESC)],
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_Radiation)],
+    [0, 1, 0.05, 3],
+    true
+] call CBA_fnc_addSetting;
+
+[
+    QGVAR(rad_infectionSeverityRate),
+    "SLIDER",
+    [LLSTRING(SETTING_rad_infectionSeverityRate), LLSTRING(SETTING_rad_infectionSeverityRate_DESC)],
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_Radiation)],
+    [0, 0.5, 0.02, 3],
+    true
+] call CBA_fnc_addSetting;
+
+[
+    QGVAR(rad_infectionDamageRate),
+    "SLIDER",
+    [LLSTRING(SETTING_rad_infectionDamageRate), LLSTRING(SETTING_rad_infectionDamageRate_DESC)],
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_Radiation)],
+    [0, 50, 15, 0],
+    true
+] call CBA_fnc_addSetting;
+
+[
+    QGVAR(rad_antibioticDuration),
+    "TIME",
+    [LLSTRING(SETTING_rad_antibioticDuration), LLSTRING(SETTING_rad_antibioticDuration_DESC)],
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_Radiation)],
+    [0, 14400, 600],
+    true
+] call CBA_fnc_addSetting;
+
+[
+    QGVAR(rad_antiemeticDuration),
+    "TIME",
+    [LLSTRING(SETTING_rad_antiemeticDuration), LLSTRING(SETTING_rad_antiemeticDuration_DESC)],
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_Radiation)],
+    [0, 14400, 900],
+    true
+] call CBA_fnc_addSetting;
+
+[
+    QGVAR(rad_filgrastimDuration),
+    "TIME",
+    [LLSTRING(SETTING_rad_filgrastimDuration), LLSTRING(SETTING_rad_filgrastimDuration_DESC)],
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_Radiation)],
+    [0, 14400, 1800],
+    true
+] call CBA_fnc_addSetting;
+
+[
+    QGVAR(rad_filgrastimFactor),
+    "SLIDER",
+    [LLSTRING(SETTING_rad_filgrastimFactor), LLSTRING(SETTING_rad_filgrastimFactor_DESC)],
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_Radiation)],
+    [1, 10, 3, 1],
+    true
+] call CBA_fnc_addSetting;

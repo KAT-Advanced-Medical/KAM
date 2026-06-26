@@ -234,6 +234,54 @@ class CfgVehicles {
         };
     };
 
+    class kat_antibiotics_Item: Item_Base_F {
+        scope = 2;
+        scopeCurator = 2;
+        displayName = CSTRING(antibioticsItem);
+        author = "DiGii";
+        vehicleClass = "Items";
+        editorCategory = "EdCat_Equipment";
+        editorSubcategory = "EdSubcat_InventoryItems";
+        class TransportItems {
+            class _xx_kat_antibiotics {
+                name = "kat_antibiotics";
+                count = 1;
+            };
+        };
+    };
+
+    class kat_filgrastim_Item: Item_Base_F {
+        scope = 2;
+        scopeCurator = 2;
+        displayName = CSTRING(filgrastimItem);
+        author = "DiGii";
+        vehicleClass = "Items";
+        editorCategory = "EdCat_Equipment";
+        editorSubcategory = "EdSubcat_InventoryItems";
+        class TransportItems {
+            class _xx_kat_filgrastim {
+                name = "kat_filgrastim";
+                count = 1;
+            };
+        };
+    };
+
+    class kat_antiemetic_Item: Item_Base_F {
+        scope = 2;
+        scopeCurator = 2;
+        displayName = CSTRING(antiemeticItem);
+        author = "DiGii";
+        vehicleClass = "Items";
+        editorCategory = "EdCat_Equipment";
+        editorSubcategory = "EdSubcat_InventoryItems";
+        class TransportItems {
+            class _xx_kat_antiemetic {
+                name = "kat_antiemetic";
+                count = 1;
+            };
+        };
+    };
+
     class Land_CanisterFuel_F;
     class kat_radSource: Land_CanisterFuel_F {
         scope = 2;

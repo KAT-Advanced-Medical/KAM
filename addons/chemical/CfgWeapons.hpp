@@ -80,6 +80,45 @@ class CfgWeapons {
         };
     };
 
+    class kat_antibiotics : ACE_ItemCore {
+        scope = 2;
+        author = "DiGii";
+        displayName = CSTRING(antibioticsItem);
+        model = "\A3\weapons_F\ammo\mag_univ.p3d";
+        picture = QPATHTOF(ui\icon_deconkit.paa);
+        descriptionShort = CSTRING(antibioticsItem_desc);
+        descriptionUse = CSTRING(antibioticsItem_desc);
+        class ItemInfo: CBA_MiscItem_ItemInfo {
+            mass = 1;
+        };
+    };
+
+    class kat_filgrastim : ACE_ItemCore {
+        scope = 2;
+        author = "DiGii";
+        displayName = CSTRING(filgrastimItem);
+        model = "\A3\weapons_F\ammo\mag_univ.p3d";
+        picture = QPATHTOF(ui\icon_deconkit.paa);
+        descriptionShort = CSTRING(filgrastimItem_desc);
+        descriptionUse = CSTRING(filgrastimItem_desc);
+        class ItemInfo: CBA_MiscItem_ItemInfo {
+            mass = 1;
+        };
+    };
+
+    class kat_antiemetic : ACE_ItemCore {
+        scope = 2;
+        author = "DiGii";
+        displayName = CSTRING(antiemeticItem);
+        model = "\A3\weapons_F\ammo\mag_univ.p3d";
+        picture = QPATHTOF(ui\icon_deconkit.paa);
+        descriptionShort = CSTRING(antiemeticItem_desc);
+        descriptionUse = CSTRING(antiemeticItem_desc);
+        class ItemInfo: CBA_MiscItem_ItemInfo {
+            mass = 1;
+        };
+    };
+
     class ItemWatch;
     class KAT_ChemicalDetector: ItemWatch {
         ACE_hideItemType = "Watch";

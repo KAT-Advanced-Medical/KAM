@@ -70,7 +70,9 @@ switch (_effect) do {
             QPATHTOEF_SOUND(airway,sounds\puking2.wav),
             QPATHTOEF_SOUND(airway,sounds\puking1.wav)
         ];
-        playSound3D [selectRandom _sounds, _unit, false, getPosASL _unit, 8, 1, 15];
+        if (CBA_missionTime >= (_unit getVariable [QGVAR(radAntiemeticWindow), 0])) then {
+            playSound3D [selectRandom _sounds, _unit, false, getPosASL _unit, 8, 1, 15];
+        };
 
         private _pain = _unit getVariable [VAR_PAIN, 0];
         _unit setVariable [VAR_PAIN, (_pain + 0.1) min 1, true];
@@ -92,7 +94,9 @@ switch (_effect) do {
             QPATHTOEF_SOUND(airway,sounds\puking1.wav),
             QPATHTOEF_SOUND(airway,sounds\puking2.wav)
         ];
-        playSound3D [selectRandom _sounds, _unit, false, getPosASL _unit, 8, 1, 15];
+        if (CBA_missionTime >= (_unit getVariable [QGVAR(radAntiemeticWindow), 0])) then {
+            playSound3D [selectRandom _sounds, _unit, false, getPosASL _unit, 8, 1, 15];
+        };
 
         private _pain = _unit getVariable [VAR_PAIN, 0];
         _unit setVariable [VAR_PAIN, (_pain + 0.25) min 1, true];

@@ -880,6 +880,118 @@
             <English>Administering Prussian Blue...</English>
             <German>Verabreiche Berliner Blau...</German>
         </Key>
+        <Key ID="STR_KAT_Chemical_antibioticsItem">
+            <English>Antibiotics</English>
+            <German>Antibiotika</German>
+        </Key>
+        <Key ID="STR_KAT_Chemical_antibioticsItem_desc">
+            <English>Broad-spectrum antibiotics. Fights radiation-induced wound infection while the immune system is suppressed.</English>
+            <German>Breitbandantibiotika. Bekämpfen strahlenbedingte Wundinfektionen, solange das Immunsystem unterdrückt ist.</German>
+        </Key>
+        <Key ID="STR_KAT_Chemical_filgrastimItem">
+            <English>Filgrastim (G-CSF)</English>
+            <German>Filgrastim (G-CSF)</German>
+        </Key>
+        <Key ID="STR_KAT_Chemical_filgrastimItem_desc">
+            <English>Granulocyte colony-stimulating factor. Speeds bone-marrow recovery after radiation exposure.</English>
+            <German>Granulozyten-Kolonie-stimulierender Faktor. Beschleunigt die Knochenmarkserholung nach Strahlenexposition.</German>
+        </Key>
+        <Key ID="STR_KAT_Chemical_antiemeticItem">
+            <English>Antiemetic</English>
+            <German>Antiemetikum</German>
+        </Key>
+        <Key ID="STR_KAT_Chemical_antiemeticItem_desc">
+            <English>Anti-nausea medication. Suppresses radiation-sickness vomiting for a time.</English>
+            <German>Mittel gegen Übelkeit. Unterdrückt das Erbrechen bei Strahlenkrankheit für eine Weile.</German>
+        </Key>
+        <Key ID="STR_KAT_Chemical_GiveAntibiotics">
+            <English>Administer Antibiotics</English>
+            <German>Antibiotika verabreichen</German>
+        </Key>
+        <Key ID="STR_KAT_Chemical_GiveAntibiotics_Progress">
+            <English>Administering Antibiotics...</English>
+            <German>Verabreiche Antibiotika...</German>
+        </Key>
+        <Key ID="STR_KAT_Chemical_GiveFilgrastim">
+            <English>Administer Filgrastim</English>
+            <German>Filgrastim verabreichen</German>
+        </Key>
+        <Key ID="STR_KAT_Chemical_GiveFilgrastim_Progress">
+            <English>Administering Filgrastim...</English>
+            <German>Verabreiche Filgrastim...</German>
+        </Key>
+        <Key ID="STR_KAT_Chemical_TakeAntiemetic">
+            <English>Administer Antiemetic</English>
+            <German>Antiemetikum verabreichen</German>
+        </Key>
+        <Key ID="STR_KAT_Chemical_TakeAntiemetic_Progress">
+            <English>Administering Antiemetic...</English>
+            <German>Verabreiche Antiemetikum...</German>
+        </Key>
+        <Key ID="STR_KAT_Chemical_EstimateDose">
+            <English>Estimate Radiation Dose</English>
+            <German>Strahlendosis abschätzen</German>
+        </Key>
+        <Key ID="STR_KAT_Chemical_EstimateDose_Progress">
+            <English>Assessing radiation exposure...</English>
+            <German>Beurteile Strahlenexposition...</German>
+        </Key>
+        <Key ID="STR_KAT_Chemical_RadSurvey">
+            <English>Radiation Survey</English>
+            <German>Strahlungsmessung</German>
+        </Key>
+        <Key ID="STR_KAT_Chemical_RadSurvey_Progress">
+            <English>Surveying for radiation...</English>
+            <German>Messe Strahlung...</German>
+        </Key>
+        <Key ID="STR_KAT_Chemical_radEstimate_dose">
+            <English>Estimated absorbed dose: %1 Gy</English>
+            <German>Geschätzte absorbierte Dosis: %1 Gy</German>
+        </Key>
+        <Key ID="STR_KAT_Chemical_radPrognosis_none">
+            <English>Prognosis: no acute radiation syndrome expected.</English>
+            <German>Prognose: keine akute Strahlenkrankheit zu erwarten.</German>
+        </Key>
+        <Key ID="STR_KAT_Chemical_radPrognosis_mild">
+            <English>Prognosis: mild ARS - good with supportive care.</English>
+            <German>Prognose: leichte Strahlenkrankheit - gut mit unterstützender Behandlung.</German>
+        </Key>
+        <Key ID="STR_KAT_Chemical_radPrognosis_moderate">
+            <English>Prognosis: moderate ARS (hematopoietic) - survivable with care.</English>
+            <German>Prognose: mittelschwere Strahlenkrankheit (hämatopoetisch) - mit Behandlung überlebbar.</German>
+        </Key>
+        <Key ID="STR_KAT_Chemical_radPrognosis_severe">
+            <English>Prognosis: severe ARS - guarded; intensive care required.</English>
+            <German>Prognose: schwere Strahlenkrankheit - ernst; Intensivbehandlung erforderlich.</German>
+        </Key>
+        <Key ID="STR_KAT_Chemical_radPrognosis_lethal">
+            <English>Prognosis: likely lethal without intensive treatment.</English>
+            <German>Prognose: ohne Intensivbehandlung wahrscheinlich tödlich.</German>
+        </Key>
+        <Key ID="STR_KAT_Chemical_radEmesis_none">
+            <English>No emesis recorded.</English>
+            <German>Kein Erbrechen verzeichnet.</German>
+        </Key>
+        <Key ID="STR_KAT_Chemical_radEmesis_since">
+            <English>Emesis recorded ~%1 min ago.</English>
+            <German>Erbrechen vor ~%1 Min. verzeichnet.</German>
+        </Key>
+        <Key ID="STR_KAT_Chemical_radSurvey_contam">
+            <English>Surface contamination: %1%</English>
+            <German>Oberflächenkontamination: %1%</German>
+        </Key>
+        <Key ID="STR_KAT_Chemical_radSurvey_rate">
+            <English>Ambient dose rate: %1 Gy/h</English>
+            <German>Umgebungsdosisleistung: %1 Gy/h</German>
+        </Key>
+        <Key ID="STR_KAT_Chemical_radSurvey_type">
+            <English>Dominant type: %1</English>
+            <German>Dominanter Typ: %1</German>
+        </Key>
+        <Key ID="STR_KAT_Chemical_radSurvey_none">
+            <English>none</English>
+            <German>keiner</German>
+        </Key>
         <Key ID="STR_KAT_Chemical_RadModule_preset">
             <English>Preset</English>
             <German>Vorlage</German>
@@ -1071,6 +1183,70 @@
         <Key ID="STR_KAT_Chemical_SETTING_rad_visualEffect_DESC">
             <English>Show a desaturated screen effect while irradiated/sick (client-side).</English>
             <German>Zeigt einen entsättigten Bildschirmeffekt während Bestrahlung/Krankheit (clientseitig).</German>
+        </Key>
+        <Key ID="STR_KAT_Chemical_SETTING_rad_infectionEnable">
+            <English>Enable wound infection</English>
+            <German>Wundinfektion aktivieren</German>
+        </Key>
+        <Key ID="STR_KAT_Chemical_SETTING_rad_infectionEnable_DESC">
+            <English>Immunosuppressed casualties with open/bandaged wounds can develop infection that can progress to lethal sepsis. Treated with antibiotics.</English>
+            <German>Immungeschwächte Verwundete mit offenen/verbundenen Wunden können eine Infektion entwickeln, die zur tödlichen Sepsis fortschreiten kann. Behandlung mit Antibiotika.</German>
+        </Key>
+        <Key ID="STR_KAT_Chemical_SETTING_rad_infectionChance">
+            <English>Infection chance</English>
+            <German>Infektionswahrscheinlichkeit</German>
+        </Key>
+        <Key ID="STR_KAT_Chemical_SETTING_rad_infectionChance_DESC">
+            <English>Per-second base chance of a wound becoming infected, scaled by how suppressed the immune system is.</English>
+            <German>Sekündliche Grundwahrscheinlichkeit, dass sich eine Wunde infiziert, skaliert mit dem Grad der Immunsuppression.</German>
+        </Key>
+        <Key ID="STR_KAT_Chemical_SETTING_rad_infectionSeverityRate">
+            <English>Infection progression rate</English>
+            <German>Infektions-Fortschrittsrate</German>
+        </Key>
+        <Key ID="STR_KAT_Chemical_SETTING_rad_infectionSeverityRate_DESC">
+            <English>How fast an untreated infection worsens per second while the immune system is suppressed.</English>
+            <German>Wie schnell sich eine unbehandelte Infektion pro Sekunde verschlimmert, solange das Immunsystem unterdrückt ist.</German>
+        </Key>
+        <Key ID="STR_KAT_Chemical_SETTING_rad_infectionDamageRate">
+            <English>Sepsis blood loss (ml/s)</English>
+            <German>Sepsis-Blutverlust (ml/s)</German>
+        </Key>
+        <Key ID="STR_KAT_Chemical_SETTING_rad_infectionDamageRate_DESC">
+            <English>Blood-volume loss per second at full infection (scales with infection severity squared). Drives lethal septic shock if untreated.</English>
+            <German>Blutvolumenverlust pro Sekunde bei voller Infektion (skaliert quadratisch mit der Infektionsschwere). Führt unbehandelt zum tödlichen septischen Schock.</German>
+        </Key>
+        <Key ID="STR_KAT_Chemical_SETTING_rad_antibioticDuration">
+            <English>Antibiotic duration</English>
+            <German>Antibiotika-Wirkdauer</German>
+        </Key>
+        <Key ID="STR_KAT_Chemical_SETTING_rad_antibioticDuration_DESC">
+            <English>How long a dose of antibiotics suppresses infection.</English>
+            <German>Wie lange eine Dosis Antibiotika eine Infektion unterdrückt.</German>
+        </Key>
+        <Key ID="STR_KAT_Chemical_SETTING_rad_antiemeticDuration">
+            <English>Antiemetic duration</English>
+            <German>Antiemetikum-Wirkdauer</German>
+        </Key>
+        <Key ID="STR_KAT_Chemical_SETTING_rad_antiemeticDuration_DESC">
+            <English>How long an antiemetic dose suppresses radiation-sickness vomiting.</English>
+            <German>Wie lange eine Antiemetikum-Dosis das Erbrechen bei Strahlenkrankheit unterdrückt.</German>
+        </Key>
+        <Key ID="STR_KAT_Chemical_SETTING_rad_filgrastimDuration">
+            <English>Filgrastim duration</English>
+            <German>Filgrastim-Wirkdauer</German>
+        </Key>
+        <Key ID="STR_KAT_Chemical_SETTING_rad_filgrastimDuration_DESC">
+            <English>How long filgrastim accelerates sickness recovery.</English>
+            <German>Wie lange Filgrastim die Genesung von der Krankheit beschleunigt.</German>
+        </Key>
+        <Key ID="STR_KAT_Chemical_SETTING_rad_filgrastimFactor">
+            <English>Filgrastim recovery multiplier</English>
+            <German>Filgrastim-Genesungsmultiplikator</German>
+        </Key>
+        <Key ID="STR_KAT_Chemical_SETTING_rad_filgrastimFactor_DESC">
+            <English>How much faster sickness severity recovers while filgrastim is active.</English>
+            <German>Wie viel schneller sich die Krankheitsschwere erholt, solange Filgrastim wirkt.</German>
         </Key>
         <Key ID="STR_KAT_Chemical_SETTING_AVAIL_GASMASK">
             <English>Accepted gas masks</English>

@@ -4,7 +4,8 @@
  * Owner-local per-unit radiation-physiology tick. Drives the dose-dependent
  * sub-syndromes by current sickness tier (hematopoietic anemia, GI dehydration
  * and acidosis, neurovascular hypotension and seizures, systemic fever and the
- * visual feedback) and handles slow spontaneous recovery below the lethal tier.
+ * visual feedback), runs the immune/infection model (sepsis-capable), and
+ * handles slow spontaneous recovery below the lethal tier.
  *
  * Each layer is gated on its host KAT subsystem's enable setting so radiation
  * never depends on a disabled system; the cross-addon read hooks default to a
@@ -53,7 +54,7 @@ if (_tier >= 3) then {
         _unit setVariable [VAR_BLOOD_GAS, _bloodGas, true];
     };
 
-    if (random 1 < 0.4) then {
+    if (random 1 < 0.4 && {CBA_missionTime >= (_unit getVariable [QGVAR(radAntiemeticWindow), 0])}) then {
         playSound3D [QPATHTOEF_SOUND(airway,sounds\puking1.wav), _unit, false, getPosASL _unit, 5, 1, 15];
         _unit setVariable [VAR_PAIN, ((_unit getVariable [VAR_PAIN, 0]) + 0.05) min 1, true];
     };
@@ -69,9 +70,38 @@ if (_tier >= 4) then {
     if (_unit == ACE_player && {random 1 < 0.3}) then { addCamShake [6, 2, 15]; };
 };
 
-if (_tier >= 1 && {missionNamespace getVariable [QEGVAR(hypothermia,hypothermiaActive), false]}) then {
-    private _fever = ([0, 0.5, 1, 1.5, 2] select _tier) min GVAR(rad_feverMax);
-    _unit setVariable [QGVAR(radFever), _fever, true];
+private _infLevel = _unit getVariable [QGVAR(radInfectionLevel), 0];
+if (GVAR(rad_infectionEnable)) then {
+    private _immune = _unit getVariable [QGVAR(radImmuneFactor), 1];
+    private _antibiotic = CBA_missionTime < (_unit getVariable [QGVAR(radAntibioticWindow), 0]);
+
+    if (_infLevel <= 0) then {
+        private _hasWounds = ((count (_unit getVariable [VAR_OPEN_WOUNDS, []])) + (count (_unit getVariable [VAR_BANDAGED_WOUNDS, []]))) > 0;
+        if (_immune < 0.9 && {_hasWounds} && {!_antibiotic} && {random 1 < ((1 - _immune) * GVAR(rad_infectionChance) * _interval)}) then {
+            _infLevel = 0.05;
+            _unit setVariable [QGVAR(radInfection), true, true];
+        };
+    } else {
+        if (_antibiotic || {_immune > 0.95}) then {
+            _infLevel = (_infLevel - (0.05 * _interval)) max 0;
+        } else {
+            _infLevel = (_infLevel + ((1 - _immune) * GVAR(rad_infectionSeverityRate) * _interval)) min 1;
+        };
+
+        _unit setVariable [VAR_PAIN, ((_unit getVariable [VAR_PAIN, 0]) + (0.05 * _infLevel)) min 1, true];
+        REDUCE_TOTAL_BLOOD_VOLUME(_unit,(_infLevel * _infLevel) * GVAR(rad_infectionDamageRate) * _interval);
+
+        if (_infLevel <= 0) then { _unit setVariable [QGVAR(radInfection), false, true]; };
+    };
+
+    _unit setVariable [QGVAR(radInfectionLevel), _infLevel, true];
+};
+
+if (missionNamespace getVariable [QEGVAR(hypothermia,hypothermiaActive), false]) then {
+    private _tierFever = ([0, 0.5, 1, 1.5, 2] select _tier) min GVAR(rad_feverMax);
+    private _targetFever = _tierFever max (_infLevel * GVAR(rad_feverMax));
+    private _cur = _unit getVariable [QGVAR(radFever), 0];
+    _unit setVariable [QGVAR(radFever), (_cur + ((_targetFever - _cur) * 0.4)), true];
 };
 
 if (_unit == ACE_player) then {
@@ -87,16 +117,20 @@ if (_unit == ACE_player) then {
 private _doseRate = _unit getVariable [QGVAR(radDoseRate), 0];
 private _burden = _unit getVariable [QGVAR(radInternalBurden), 0];
 if (_tier < 4 && {_doseRate < 0.01} && {_burden < 0.001}) then {
-    private _severity = (_unit getVariable [QGVAR(radSeverity), 0]) - (GVAR(rad_recoveryRate) * _interval);
+    private _recovery = GVAR(rad_recoveryRate);
+    if (CBA_missionTime < (_unit getVariable [QGVAR(radFilgrastimWindow), 0])) then {
+        _recovery = _recovery * GVAR(rad_filgrastimFactor);
+    };
+    private _severity = (_unit getVariable [QGVAR(radSeverity), 0]) - (_recovery * _interval);
     _unit setVariable [QGVAR(radSeverity), _severity max 0, true];
-    _unit setVariable [QGVAR(radFever), ((_unit getVariable [QGVAR(radFever), 0]) - (0.1 * _interval)) max 0, true];
     _unit setVariable [QGVAR(radBPDrop), ((_unit getVariable [QGVAR(radBPDrop), 0]) - (2 * _interval)) max 0, true];
 };
 
 [_unit] call FUNC(evaluateRadDose);
 
 _tier = _unit getVariable [QGVAR(radSicknessTier), 0];
-if (_tier == 0 && {(_unit getVariable [QGVAR(radFever), 0]) <= 0} && {(_unit getVariable [QGVAR(radBPDrop), 0]) <= 0}) exitWith {
+if (_tier == 0 && {(_unit getVariable [QGVAR(radFever), 0]) <= 0.05} && {(_unit getVariable [QGVAR(radBPDrop), 0]) <= 0} && {!(_unit getVariable [QGVAR(radInfection), false])}) exitWith {
+    _unit setVariable [QGVAR(radFever), 0, true];
     _unit setVariable [QGVAR(radPhysiologyPFHActive), false, true];
     if (_unit == ACE_player) then { [false, 0] call EFUNC(feedback,effectRadiation); };
     _pfhHandle call CBA_fnc_removePerFrameHandler;

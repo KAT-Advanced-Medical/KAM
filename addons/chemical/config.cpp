@@ -16,6 +16,9 @@ class CfgPatches {
             "kat_decon_kit_Item",
             "kat_potassiumIodide_Item",
             "kat_prussianBlue_Item",
+            "kat_antibiotics_Item",
+            "kat_filgrastim_Item",
+            "kat_antiemetic_Item",
             "kat_radSource"
         };
         weapons[] = {
@@ -28,7 +31,10 @@ class CfgPatches {
             "kat_m8paper",
             "kat_decon_kit",
             "kat_potassiumIodide",
-            "kat_prussianBlue"
+            "kat_prussianBlue",
+            "kat_antibiotics",
+            "kat_filgrastim",
+            "kat_antiemetic"
         };
         ammo[] = {
             "KAT_Gas_TripWireMine_Ammo",

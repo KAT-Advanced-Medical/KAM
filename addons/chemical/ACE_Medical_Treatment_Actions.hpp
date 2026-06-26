@@ -42,4 +42,58 @@ class ACE_Medical_Treatment_Actions {
         condition = "true";
         icon = QPATHTOF(ui\icon_deconkit.paa);
     };
+    class KAT_GiveAntibiotics: Diagnose {
+        displayName = CSTRING(GiveAntibiotics);
+        displayNameProgress = CSTRING(GiveAntibiotics_Progress);
+        allowedSelections[] = {"LeftArm", "RightArm"};
+        allowSelfTreatment = 1;
+        items[] = {"kat_antibiotics"};
+        treatmentTime = 5;
+        callbackSuccess = QUOTE([ARR_2(_patient,'antibiotics')] call FUNC(treatmentAdvanced_AntiRadLocal));
+        condition = "true";
+        icon = QPATHTOF(ui\icon_deconkit.paa);
+    };
+    class KAT_GiveFilgrastim: Diagnose {
+        displayName = CSTRING(GiveFilgrastim);
+        displayNameProgress = CSTRING(GiveFilgrastim_Progress);
+        allowedSelections[] = {"LeftArm", "RightArm"};
+        allowSelfTreatment = 1;
+        items[] = {"kat_filgrastim"};
+        treatmentTime = 5;
+        callbackSuccess = QUOTE([ARR_2(_patient,'filgrastim')] call FUNC(treatmentAdvanced_AntiRadLocal));
+        condition = "true";
+        icon = QPATHTOF(ui\icon_deconkit.paa);
+    };
+    class KAT_TakeAntiemetic: Diagnose {
+        displayName = CSTRING(TakeAntiemetic);
+        displayNameProgress = CSTRING(TakeAntiemetic_Progress);
+        allowedSelections[] = {"Head"};
+        allowSelfTreatment = 1;
+        items[] = {"kat_antiemetic"};
+        treatmentTime = 4;
+        callbackSuccess = QUOTE([ARR_2(_patient,'antiemetic')] call FUNC(treatmentAdvanced_AntiRadLocal));
+        condition = "true";
+        icon = QPATHTOF(ui\icon_deconkit.paa);
+    };
+    class KAT_EstimateDose: Diagnose {
+        displayName = CSTRING(EstimateDose);
+        displayNameProgress = CSTRING(EstimateDose_Progress);
+        allowedSelections[] = {"Head"};
+        allowSelfTreatment = 1;
+        treatmentTime = 5;
+        callbackSuccess = QUOTE([ARR_2(_medic,_patient)] call FUNC(estimateRadDose));
+        condition = "true";
+        icon = QPATHTOF(ui\icon_deconkit.paa);
+    };
+    class KAT_RadSurvey: Diagnose {
+        displayName = CSTRING(RadSurvey);
+        displayNameProgress = CSTRING(RadSurvey_Progress);
+        allowedSelections[] = {"Body"};
+        allowSelfTreatment = 1;
+        items[] = {"KAT_Dosimeter"};
+        treatmentTime = 3;
+        callbackSuccess = QUOTE([ARR_2(_medic,_patient)] call FUNC(radSurvey));
+        condition = "true";
+        icon = QPATHTOF(UI\kat_chemicalDet_icon.paa);
+    };
 };
