@@ -28,7 +28,7 @@ Intended. Below the lethal tier, sickness heals slowly once the casualty is out 
 That's cross-contamination, and it's intended. A surface-contaminated casualty emits a weak field of their own. **Decon them** to shut it off — until you do, anyone working on them is standing next to a small source. Survey first, decon, then treat.
 
 ### **The dosimeter clicks won't stop even in clean air.**
-You're contaminated — *you* are the source the geiger is reading. Survey yourself and use the decon kit. (If you've turned the dosimeter sound off and it still seems to click, that's the placeholder chime samples; real click audio is on the polish list in `OPTIONAL_TODO.md`.)
+You're contaminated — *you* are the source the geiger is reading. Survey yourself and use the decon kit. (If you've turned the dosimeter sound off and it still seems to click, that's the placeholder chime samples — dedicated click audio is planned.)
 
 ### **Is radiation a separate addon I need to enable?**
 No. Radiation is part of the **Chemical** addon — same PBO, same CBA settings category (under the "10. Radiation" subcategory). If you have KAT's chemical addon, you have radiation.

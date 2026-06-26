@@ -29,10 +29,10 @@ GVAR(radProfiles) = createHashMapFromArray [
 ];
 
 GVAR(radPresets) = createHashMapFromArray [
-    ["custom",       [0,  0,  0,  0 ]],
-    ["Cobalt60",     [0,  0,  50, 0 ]],
-    ["Reactor",      [0,  0,  40, 20]],
-    ["Fallout",      [0,  30, 20, 0 ]],
-    ["AlphaEmitter", [50, 5,  0,  0 ]],
-    ["DirtyBomb",    [20, 30, 25, 0 ]]
+    ["custom",       [0,   0,   0,   0 ]],
+    ["Cobalt60",     [0,   0,   100, 0 ]],
+    ["Reactor",      [0,   0,   50,  25]],
+    ["Fallout",      [0,   400, 20,  0 ]],
+    ["AlphaEmitter", [150, 10,  0,   0 ]],
+    ["DirtyBomb",    [40,  250, 50,  0 ]]
 ];

@@ -22,19 +22,21 @@ Sync the module to a `LocationArea` trigger for a zone, or enable **Point source
 | Preset | Alpha | Beta | Gamma | Neutron | Reads like |
 |--------|-------|------|-------|---------|-----------|
 | **Custom** | — | — | — | — | Use the four fields |
-| **Cobalt-60** | 0 | 0 | 50 | 0 | A strong sealed gamma source |
-| **Reactor** | 0 | 0 | 40 | 20 | Reactor core / criticality |
-| **Fallout** | 0 | 30 | 20 | 0 | Settled fallout dust |
-| **Alpha Emitter** | 50 | 5 | 0 | 0 | Plutonium-style inhalation hazard |
-| **Dirty Bomb** | 20 | 30 | 25 | 0 | A bit of everything |
+| **Cobalt-60** | 0 | 0 | 100 | 0 | Strong sealed gamma source — whole-body dose, no burns |
+| **Reactor** | 0 | 0 | 50 | 25 | Reactor core / criticality — deadliest, neutron-heavy |
+| **Fallout** | 0 | 400 | 20 | 0 | Lingering area — beta skin burns + slow sickness |
+| **Alpha Emitter** | 150 | 10 | 0 | 0 | Inhalation hazard — near-harmless unless breathed in |
+| **Dirty Bomb** | 40 | 250 | 50 | 0 | A messy mix — burns, gamma, and inhalation |
 
-> Strengths are **Gy/h** — the dose rate at the reference point (the centre for zones, ~1 m for point sources). With the defaults, a casualty in a ~500 Gy/h gamma field reaches the lethal tier in roughly 40 seconds; a 50 Gy/h source like Cobalt-60 is a "minutes" hazard. Scale to the pace you want.
+> Strengths are **Gy/h** — the dose rate at the reference point (the centre for zones, ~1 m for point sources). With the defaults, a casualty in a ~500 Gy/h gamma field reaches the lethal tier in roughly 40 seconds; the 100 Gy/h Cobalt-60 preset is a few-minutes hazard; Fallout's heavy beta is what produces skin burns over a few minutes. Scale to the pace you want.
+>
+> **Note on neutron:** the neutron field is weighted far heavier than the others for whole-body dose (high biological effect), so a small neutron number bites hard — that's why Reactor is the deadliest preset despite modest-looking figures.
 
 ### Carryable radioactive source (`kat_radSource`)
 
-A placeable object (editor and Zeus) that acts as a point source you can pick up. ACE-interact to **Pick up radioactive source** — held point-blank it pours whole-body dose into you and concentrates skin dose on your hands and arms (handling burns). **Drop** it to set it back down. Great for "carry the canister to the disposal site" objectives.
+A placeable object (editor and Zeus) that acts as a **hot beta+gamma point source** you can pick up — think a lost industrial-radiography source. ACE-interact to **Pick up radioactive source**, and held point-blank it concentrates skin dose on your hands and arms (a burn in about a minute) while pouring whole-body dose into you — rapidly lethal unshielded, though a CBRN suit buys you a few minutes to make the carry. **Drop** it to set it back down. Great for "carry the source to the disposal site" objectives.
 
-> **Asset note:** `kat_radSource` uses a placeholder jerry-can model for now (see `OPTIONAL_TODO.md`).
+> **Asset note:** `kat_radSource` uses a placeholder jerry-can model for now; dedicated art is planned.
 
 ### Quick console source (testing)
 

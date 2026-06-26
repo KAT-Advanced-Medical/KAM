@@ -21,7 +21,7 @@ There are matching **Disable** / **Sound off** self-actions to turn each back of
 
 > The geiger reads the environment, so it'll keep clicking if **you** are contaminated even in clean air — that's the surface contamination making you a source. If the clicks won't stop after you've left a zone, survey/decon yourself.
 
-> **Asset note:** the dosimeter currently borrows the chemical detector's model and the geiger sounds reuse the detector's chime samples as placeholders — see `OPTIONAL_TODO.md`. The numbers and behaviour are real; the art is temporary.
+> **Asset note:** the dosimeter currently borrows the chemical detector's model and the geiger sounds reuse the detector's chime samples as placeholders. The numbers and behaviour are real; dedicated art and click audio are planned.
 
 ## Rad Survey (diagnostic)
 
