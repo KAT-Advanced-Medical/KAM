@@ -43,7 +43,9 @@ if (_tier >= 3) then {
 };
 if (_tier >= 4) then {
     [QGVAR(radDeadline_cns), GVAR(rad_cnsDelay)] call _fnc_sched;
-    [QGVAR(radDeadline_cardiac), GVAR(rad_cardiacDelay)] call _fnc_sched;
+    if (!GVAR(rad_lethalCurable)) then {
+        [QGVAR(radDeadline_cardiac), GVAR(rad_cardiacDelay)] call _fnc_sched;
+    };
 };
 
 [_unit] call FUNC(addToExposureWatcher);

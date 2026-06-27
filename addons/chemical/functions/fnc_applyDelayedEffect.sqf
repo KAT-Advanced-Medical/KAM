@@ -109,6 +109,8 @@ switch (_effect) do {
         [_unit, true] call ACEFUNC(medical,setUnconscious);
     };
     case "radCardiac": {
-        [QACEGVAR(medical,FatalVitals), _unit] call CBA_fnc_localEvent;
+        if (!GVAR(rad_lethalCurable)) then {
+            [QACEGVAR(medical,FatalVitals), _unit] call CBA_fnc_localEvent;
+        };
     };
 };

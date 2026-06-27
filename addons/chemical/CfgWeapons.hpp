@@ -119,6 +119,19 @@ class CfgWeapons {
         };
     };
 
+    class kat_stemCells : ACE_ItemCore {
+        scope = 2;
+        author = "DiGii";
+        displayName = CSTRING(stemCellsItem);
+        model = "\A3\weapons_F\ammo\mag_univ.p3d";
+        picture = QPATHTOF(ui\icon_deconkit.paa);
+        descriptionShort = CSTRING(stemCellsItem_desc);
+        descriptionUse = CSTRING(stemCellsItem_desc);
+        class ItemInfo: CBA_MiscItem_ItemInfo {
+            mass = 2;
+        };
+    };
+
     class ItemWatch;
     class KAT_ChemicalDetector: ItemWatch {
         ACE_hideItemType = "Watch";

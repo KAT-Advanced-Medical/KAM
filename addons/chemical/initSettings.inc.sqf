@@ -666,3 +666,75 @@
     [1, 10, 3, 1],
     true
 ] call CBA_fnc_addSetting;
+
+[
+    QGVAR(rad_lethalCurable),
+    "CHECKBOX",
+    [LLSTRING(SETTING_rad_lethalCurable), LLSTRING(SETTING_rad_lethalCurable_DESC)],
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_Radiation)],
+    [true],
+    true
+] call CBA_fnc_addSetting;
+
+[
+    QGVAR(rad_lethalCollapseTime),
+    "TIME",
+    [LLSTRING(SETTING_rad_lethalCollapseTime), LLSTRING(SETTING_rad_lethalCollapseTime_DESC)],
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_Radiation)],
+    [0, 600, 150],
+    true
+] call CBA_fnc_addSetting;
+
+[
+    QGVAR(rad_criticalRecoveryRate),
+    "SLIDER",
+    [LLSTRING(SETTING_rad_criticalRecoveryRate), LLSTRING(SETTING_rad_criticalRecoveryRate_DESC)],
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_Radiation)],
+    [0, 0.1, 0.006, 4],
+    true
+] call CBA_fnc_addSetting;
+
+[
+    QGVAR(rad_marrowRescueDuration),
+    "TIME",
+    [LLSTRING(SETTING_rad_marrowRescueDuration), LLSTRING(SETTING_rad_marrowRescueDuration_DESC)],
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_Radiation)],
+    [0, 3600, 300],
+    true
+] call CBA_fnc_addSetting;
+
+[
+    QGVAR(rad_recrashChance),
+    "SLIDER",
+    [LLSTRING(SETTING_rad_recrashChance), LLSTRING(SETTING_rad_recrashChance_DESC)],
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_Radiation)],
+    [0, 1, 0.05, 3],
+    true
+] call CBA_fnc_addSetting;
+
+[
+    QGVAR(rad_shockableChance),
+    "SLIDER",
+    [LLSTRING(SETTING_rad_shockableChance), LLSTRING(SETTING_rad_shockableChance_DESC)],
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_Radiation)],
+    [0, 1, 0.7, 2],
+    true
+] call CBA_fnc_addSetting;
+
+[
+    QGVAR(rad_stemCellsMedLvl),
+    "LIST",
+    [LLSTRING(SETTING_rad_stemCellsMedLvl)],
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_Radiation)],
+    [[0, 1, 2], [ACELSTRING(medical_treatment,Anyone), ACELSTRING(medical_treatment,Medics), ACELSTRING(medical_treatment,Doctors)], 1],
+    true
+] call CBA_fnc_addSetting;
+
+[
+    QGVAR(rad_icReadout),
+    "CHECKBOX",
+    [LLSTRING(SETTING_rad_icReadout), LLSTRING(SETTING_rad_icReadout_DESC)],
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_Radiation)],
+    [false],
+    true
+] call CBA_fnc_addSetting;

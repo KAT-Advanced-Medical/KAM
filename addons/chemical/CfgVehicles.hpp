@@ -282,6 +282,22 @@ class CfgVehicles {
         };
     };
 
+    class kat_stemCells_Item: Item_Base_F {
+        scope = 2;
+        scopeCurator = 2;
+        displayName = CSTRING(stemCellsItem);
+        author = "DiGii";
+        vehicleClass = "Items";
+        editorCategory = "EdCat_Equipment";
+        editorSubcategory = "EdSubcat_InventoryItems";
+        class TransportItems {
+            class _xx_kat_stemCells {
+                name = "kat_stemCells";
+                count = 1;
+            };
+        };
+    };
+
     class Land_CanisterFuel_F;
     class kat_radSource: Land_CanisterFuel_F {
         scope = 2;

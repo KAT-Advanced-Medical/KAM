@@ -992,6 +992,22 @@
             <English>none</English>
             <German>keiner</German>
         </Key>
+        <Key ID="STR_KAT_Chemical_stemCellsItem">
+            <English>Stem-Cell / Marrow Rescue</English>
+            <German>Stammzellen / Knochenmark-Rettung</German>
+        </Key>
+        <Key ID="STR_KAT_Chemical_stemCellsItem_desc">
+            <English>Haematopoietic stem-cell transplant. The pivotal treatment that lets a lethally-irradiated casualty's marrow recover during sustained intensive care.</English>
+            <German>Hämatopoetische Stammzelltransplantation. Die entscheidende Behandlung, die das Knochenmark eines tödlich bestrahlten Patienten unter anhaltender Intensivpflege erholen lässt.</German>
+        </Key>
+        <Key ID="STR_KAT_Chemical_GiveStemCells">
+            <English>Administer Stem-Cell Rescue</English>
+            <German>Stammzell-Rettung verabreichen</German>
+        </Key>
+        <Key ID="STR_KAT_Chemical_GiveStemCells_Progress">
+            <English>Administering stem-cell transplant...</English>
+            <German>Verabreiche Stammzelltransplantation...</German>
+        </Key>
         <Key ID="STR_KAT_Chemical_RadModule_preset">
             <English>Preset</English>
             <German>Vorlage</German>
@@ -1247,6 +1263,98 @@
         <Key ID="STR_KAT_Chemical_SETTING_rad_filgrastimFactor_DESC">
             <English>How much faster sickness severity recovers while filgrastim is active.</English>
             <German>Wie viel schneller sich die Krankheitsschwere erholt, solange Filgrastim wirkt.</German>
+        </Key>
+        <Key ID="STR_KAT_Chemical_SETTING_rad_lethalCurable">
+            <English>Lethal dose curable</English>
+            <German>Tödliche Dosis heilbar</German>
+        </Key>
+        <Key ID="STR_KAT_Chemical_SETTING_rad_lethalCurable_DESC">
+            <English>If enabled, a lethal-tier casualty can be saved through sustained intensive care (life support + stem-cell rescue + the full drug stack over ~15 min). If disabled, the lethal tier is terminal.</English>
+            <German>Wenn aktiviert, kann ein Patient der tödlichen Stufe durch anhaltende Intensivpflege gerettet werden (Lebenserhaltung + Stammzell-Rettung + voller Medikamenten-Stack über ~15 Min). Wenn deaktiviert, ist die tödliche Stufe terminal.</German>
+        </Key>
+        <Key ID="STR_KAT_Chemical_SETTING_rad_lethalCollapseTime">
+            <English>Collapse time (unsupported)</English>
+            <German>Kollapszeit (ohne Unterstützung)</German>
+        </Key>
+        <Key ID="STR_KAT_Chemical_SETTING_rad_lethalCollapseTime_DESC">
+            <English>How long a critical casualty survives without circulatory support (IV or vasopressor) before dropping into cardiac arrest.</English>
+            <German>Wie lange ein kritischer Patient ohne Kreislaufunterstützung (IV oder Vasopressor) überlebt, bevor er in den Herzstillstand fällt.</German>
+        </Key>
+        <Key ID="STR_KAT_Chemical_SETTING_rad_criticalRecoveryRate">
+            <English>Intensive-care recovery rate (Gy/s)</English>
+            <German>Intensivpflege-Erholungsrate (Gy/s)</German>
+        </Key>
+        <Key ID="STR_KAT_Chemical_SETTING_rad_criticalRecoveryRate_DESC">
+            <English>How fast a lethal casualty's sickness clears while the full intensive-care stack is sustained. Lower = longer, harder recovery.</English>
+            <German>Wie schnell die Krankheit eines tödlich Verletzten abklingt, solange der volle Intensivpflege-Stack aufrechterhalten wird. Niedriger = längere, schwerere Genesung.</German>
+        </Key>
+        <Key ID="STR_KAT_Chemical_SETTING_rad_marrowRescueDuration">
+            <English>Stem-cell rescue duration</English>
+            <German>Stammzell-Rettung Wirkdauer</German>
+        </Key>
+        <Key ID="STR_KAT_Chemical_SETTING_rad_marrowRescueDuration_DESC">
+            <English>How long one stem-cell dose enables intensive-care recovery before it must be re-administered.</English>
+            <German>Wie lange eine Stammzelldosis die Intensivpflege-Genesung ermöglicht, bevor sie erneut verabreicht werden muss.</German>
+        </Key>
+        <Key ID="STR_KAT_Chemical_SETTING_rad_recrashChance">
+            <English>Re-crash chance</English>
+            <German>Rückfall-Wahrscheinlichkeit</German>
+        </Key>
+        <Key ID="STR_KAT_Chemical_SETTING_rad_recrashChance_DESC">
+            <English>Per-tick chance (at full severity) that an undertreated critical casualty spontaneously crashes back into cardiac arrest. Tapers as the cure progresses; halved while on life support.</English>
+            <German>Wahrscheinlichkeit pro Tick (bei voller Schwere), dass ein unterversorgter kritischer Patient spontan in den Herzstillstand zurückfällt. Nimmt mit dem Behandlungsfortschritt ab; halbiert unter Lebenserhaltung.</German>
+        </Key>
+        <Key ID="STR_KAT_Chemical_SETTING_rad_shockableChance">
+            <English>Shockable rhythm bias</English>
+            <German>Schockbare-Rhythmus-Neigung</German>
+        </Key>
+        <Key ID="STR_KAT_Chemical_SETTING_rad_shockableChance_DESC">
+            <English>Chance (at full severity, with Advanced Rhythm on) that a radiation-driven cardiac arrest is VF/VT rather than asystole/PEA. Tapers as the casualty recovers.</English>
+            <German>Wahrscheinlichkeit (bei voller Schwere, mit aktiviertem erweitertem Rhythmus), dass ein strahlenbedingter Herzstillstand Kammerflimmern/-tachykardie statt Asystolie/PEA ist. Nimmt mit der Genesung ab.</German>
+        </Key>
+        <Key ID="STR_KAT_Chemical_SETTING_rad_stemCellsMedLvl">
+            <English>Stem-cell rescue required trait</English>
+            <German>Stammzell-Rettung benötigte Qualifikation</German>
+        </Key>
+        <Key ID="STR_KAT_Chemical_SETTING_rad_icReadout">
+            <English>Intensive-care readout</English>
+            <German>Intensivpflege-Anzeige</German>
+        </Key>
+        <Key ID="STR_KAT_Chemical_SETTING_rad_icReadout_DESC">
+            <English>Show a radiation intensive-care status line in the medical menu for a critical casualty (cure progress + which supports are missing). Does not show the time-to-arrest.</English>
+            <German>Zeigt im Sanitätsmenü eine Statuszeile zur Strahlungs-Intensivpflege für einen kritischen Patienten (Behandlungsfortschritt + fehlende Unterstützung). Zeigt nicht die Zeit bis zum Herzstillstand.</German>
+        </Key>
+        <Key ID="STR_KAT_Chemical_radCriticalStatus">
+            <English>Acute radiation - CRITICAL</English>
+            <German>Akute Strahlung - KRITISCH</German>
+        </Key>
+        <Key ID="STR_KAT_Chemical_radICProgress">
+            <English>Intensive care: %1%</English>
+            <German>Intensivpflege: %1%</German>
+        </Key>
+        <Key ID="STR_KAT_Chemical_radICMissing">
+            <English>Needs: %1</English>
+            <German>Benötigt: %1</German>
+        </Key>
+        <Key ID="STR_KAT_Chemical_radIC_support">
+            <English>circulatory support</English>
+            <German>Kreislaufunterstützung</German>
+        </Key>
+        <Key ID="STR_KAT_Chemical_radIC_filgrastim">
+            <English>filgrastim</English>
+            <German>Filgrastim</German>
+        </Key>
+        <Key ID="STR_KAT_Chemical_radIC_antibiotics">
+            <English>antibiotics</English>
+            <German>Antibiotika</German>
+        </Key>
+        <Key ID="STR_KAT_Chemical_radIC_stemcells">
+            <English>stem-cell rescue</English>
+            <German>Stammzell-Rettung</German>
+        </Key>
+        <Key ID="STR_KAT_Chemical_radIC_source">
+            <English>decontamination</English>
+            <German>Dekontamination</German>
         </Key>
         <Key ID="STR_KAT_Chemical_SETTING_AVAIL_GASMASK">
             <English>Accepted gas masks</English>

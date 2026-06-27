@@ -19,6 +19,7 @@ class CfgPatches {
             "kat_antibiotics_Item",
             "kat_filgrastim_Item",
             "kat_antiemetic_Item",
+            "kat_stemCells_Item",
             "kat_radSource"
         };
         weapons[] = {
@@ -34,7 +35,8 @@ class CfgPatches {
             "kat_prussianBlue",
             "kat_antibiotics",
             "kat_filgrastim",
-            "kat_antiemetic"
+            "kat_antiemetic",
+            "kat_stemCells"
         };
         ammo[] = {
             "KAT_Gas_TripWireMine_Ammo",

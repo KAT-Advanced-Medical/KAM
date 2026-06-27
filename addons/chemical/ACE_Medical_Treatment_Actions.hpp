@@ -96,4 +96,16 @@ class ACE_Medical_Treatment_Actions {
         condition = "true";
         icon = QPATHTOF(UI\kat_chemicalDet_icon.paa);
     };
+    class KAT_GiveStemCells: Diagnose {
+        displayName = CSTRING(GiveStemCells);
+        displayNameProgress = CSTRING(GiveStemCells_Progress);
+        allowedSelections[] = {"LeftArm", "RightArm"};
+        allowSelfTreatment = 1;
+        medicRequired = QGVAR(rad_stemCellsMedLvl);
+        items[] = {"kat_stemCells"};
+        treatmentTime = 20;
+        callbackSuccess = QUOTE([ARR_2(_patient,'stemcells')] call FUNC(treatmentAdvanced_AntiRadLocal));
+        condition = QUOTE(_patient getVariable [ARR_2(QQGVAR(radCritical),false)]);
+        icon = QPATHTOF(ui\icon_deconkit.paa);
+    };
 };

@@ -57,6 +57,7 @@ Everything radiation-related, plus the shared decon kit. All available through A
 | Antibiotics | `kat_antibiotics` | Fights radiation wound infection / sepsis | *Administer Antibiotics* (self + medic) |
 | Filgrastim (G-CSF) | `kat_filgrastim` | Speeds marrow / sickness recovery | *Administer Filgrastim* (self + medic) |
 | Antiemetic | `kat_antiemetic` | Suppresses radiation-sickness vomiting | *Administer Antiemetic* (self + medic) |
+| Stem-Cell / Marrow Rescue | `kat_stemCells` | The pivotal cure for a **lethal** dose — enables intensive-care recovery | *Administer Stem-Cell Rescue* (**medic only**, lethal casualty) |
 | Decontamination Kit | `kat_decon_kit` | Removes **surface** contamination (shared with Chemical) | *Decontaminate* (shown when contaminated) |
 | Radioactive Source | `kat_radSource` | A carryable/placeable point source | Editor/Zeus object; ACE *Pick up* / *Drop* |
 

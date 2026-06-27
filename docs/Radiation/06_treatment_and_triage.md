@@ -35,6 +35,8 @@ Match what you've found to what you reach for.
 
 > **Timing is everything with the two anti-rad drugs.** KI only helps **before** uptake — it's a pre-exposure tablet, not a treatment. Prussian Blue is the opposite — it's for **after**, to speed clearing what's already inside. Carry KI for planned entries into hot zones; carry Prussian Blue for after the fact.
 
+> **Tracking what you've given:** every radiation drug logs to the patient's **triage card** in the medical menu when administered (with a tally on repeat doses), so you can see at a glance what's already on board.
+
 ---
 
 ## Triage flow
@@ -64,6 +66,36 @@ Match what you've found to what you reach for.
 ```
 
 The short version of supportive care for a survivable casualty: **stop the contamination (decon/chelate), replace the blood they're losing (IV), keep infection out (antibiotics), make them comfortable (antiemetic), and speed the marrow back (filgrastim).** Then time does the rest.
+
+---
+
+## Intensive care for lethal doses
+
+A lethal dose (the top tier, ≥ 6 Gy by default) **will not recover on its own** — but it's survivable if a medic commits to a hard, ~15-minute intensive-care fight. There are two layers: keep them alive, then actually cure them. (Mission makers can switch this off with *Lethal dose curable*, making the top tier terminal again.)
+
+### Layer 1 — keep them alive
+A lethal casualty collapses unconscious and starts a hidden "time to arrest" clock. **Circulatory support holds that clock off:**
+
+- an **active IV line** (blood or saline), **or**
+- a **vasopressor** in their system (epinephrine / norepinephrine).
+
+Let support lapse and the clock runs out → **cardiac arrest**, at which point it's a full CPR / defibrillator / rhythm-management emergency (the normal cardiac-arrest system, advanced rhythm and all). Support is the bare minimum just to stop them dying — it does **not** cure anything.
+
+### Layer 2 — actually cure them
+Their radiation sickness only winds down while the **entire intensive-care stack is sustained at once**:
+
+1. **Source removed** — fully deconned *and* chelated (Prussian blue), out of any field. While any dose is still coming in, nothing improves.
+2. **Circulatory support** — the IV or vasopressor from Layer 1.
+3. **Filgrastim** — kept topped up.
+4. **Antibiotics** — kept topped up (and the only thing stopping sepsis finishing them off in parallel).
+5. **Stem-Cell / Marrow Rescue** (`kat_stemCells`) — the pivot. Medic-only, slow to administer, and re-dosed as it wears off. **Without it, full support only *holds* them — alive but never improving.** With it, the sickness finally starts to clear.
+
+Sustain all five and severity grinds down over roughly **12–16 minutes**, after which they drop out of the danger zone and finish recovering normally. Drop any one and the cure **stalls**.
+
+### They stay unstable until it's done
+Bringing someone back from arrest doesn't make them safe. While they're still heavily irradiated their system keeps **crashing back into arrest** — even on an IV — and (with advanced rhythm on) throws **VF/VT far more often**. Both taper off as the cure progresses, so the way to *stop* the re-crashes is to push the cure down, not just park them on a pressor. Expect to resuscitate the same patient more than once before they're out of the woods.
+
+> This is deliberately brutal: one medic with a couple of items can't do it. It takes the full kit, constant re-dosing, and someone watching the monitor for the next arrest — a genuine team effort to save one person.
 
 ---
 

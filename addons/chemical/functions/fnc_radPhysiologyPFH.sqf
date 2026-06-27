@@ -60,14 +60,94 @@ if (_tier >= 3) then {
     };
 };
 
-if (_tier >= 4) then {
+private _curable = GVAR(rad_lethalCurable);
+private _severity = _unit getVariable [QGVAR(radSeverity), 0];
+private _critical = _unit getVariable [QGVAR(radCritical), false];
+
+if (_curable) then {
+    if (_tier >= 4 && {!_critical}) then {
+        _critical = true;
+        _unit setVariable [QGVAR(radCritical), true, true];
+        _unit setVariable [QGVAR(radCollapseTimer), GVAR(rad_lethalCollapseTime), true];
+    };
+    if (_critical && {_severity < GVAR(rad_doseThreshold_moderate)}) then {
+        _critical = false;
+        _unit setVariable [QGVAR(radCritical), false, true];
+        _unit setVariable [QGVAR(radCollapseTimer), -1, true];
+    };
+};
+
+if (!_curable && {_tier >= 4}) then {
     if (missionNamespace getVariable [QEGVAR(circulation,enable), false]) then {
-        private _bpMax = GVAR(rad_cnsHypotension);
-        private _bp = (_unit getVariable [QGVAR(radBPDrop), 0]) + (_bpMax * 0.1 * _interval);
-        _unit setVariable [QGVAR(radBPDrop), _bp min _bpMax, true];
+        private _bp = (_unit getVariable [QGVAR(radBPDrop), 0]) + (GVAR(rad_cnsHypotension) * 0.1 * _interval);
+        _unit setVariable [QGVAR(radBPDrop), _bp min GVAR(rad_cnsHypotension), true];
     };
     _unit setVariable [VAR_PAIN, ((_unit getVariable [VAR_PAIN, 0]) + 0.1) min 1, true];
     if (_unit == ACE_player && {random 1 < 0.3}) then { addCamShake [6, 2, 15]; };
+};
+
+if (_critical) then {
+    private _inArrest = _unit getVariable [QACEGVAR(medical,inCardiacArrest), false];
+    private _fragility = (((_severity - GVAR(rad_doseThreshold_moderate)) / ((GVAR(rad_doseThreshold_lethal) - GVAR(rad_doseThreshold_moderate)) max 0.1)) max 0) min 1;
+    private _support = (count (_unit getVariable [QACEGVAR(medical,ivBags), []]) > 0)
+        || {(([_unit, "Epinephrine", false] call ACEFUNC(medical_status,getMedicationCount)) select 1) > 0}
+        || {(([_unit, "Norepinephrine", false] call ACEFUNC(medical_status,getMedicationCount)) select 1) > 0};
+
+    if (_inArrest) then {
+        _unit setVariable [QGVAR(radCollapseTimer), GVAR(rad_lethalCollapseTime), true];
+    } else {
+        if (missionNamespace getVariable [QEGVAR(circulation,enable), false]) then {
+            private _bp = _unit getVariable [QGVAR(radBPDrop), 0];
+            if (_support) then {
+                _bp = (_bp - (GVAR(rad_cnsHypotension) * 0.15 * _interval)) max 0;
+            } else {
+                _bp = (_bp + (GVAR(rad_cnsHypotension) * 0.1 * _interval)) min GVAR(rad_cnsHypotension);
+            };
+            _unit setVariable [QGVAR(radBPDrop), _bp, true];
+        };
+
+        if (_tier >= 4) then {
+            _unit setVariable [VAR_PAIN, ((_unit getVariable [VAR_PAIN, 0]) + 0.1) min 1, true];
+            if (_unit == ACE_player && {random 1 < 0.3}) then { addCamShake [6, 2, 15]; };
+        };
+
+        private _timer = _unit getVariable [QGVAR(radCollapseTimer), GVAR(rad_lethalCollapseTime)];
+        if (_support) then {
+            _timer = (_timer + _interval) min GVAR(rad_lethalCollapseTime);
+        } else {
+            _timer = _timer - _interval;
+        };
+        _unit setVariable [QGVAR(radCollapseTimer), _timer, true];
+
+        private _triggerArrest = (_timer <= 0);
+        if (!_triggerArrest) then {
+            private _chance = GVAR(rad_recrashChance) * _fragility;
+            if (_support) then { _chance = _chance * 0.5; };
+            if (random 1 < _chance) then { _triggerArrest = true; };
+        };
+
+        if (_triggerArrest) then {
+            _unit setVariable [QGVAR(radCollapseTimer), GVAR(rad_lethalCollapseTime), true];
+            [QACEGVAR(medical,FatalVitals), _unit] call CBA_fnc_localEvent;
+            if ((missionNamespace getVariable [QEGVAR(circulation,AdvRhythm), false]) && {random 1 < (GVAR(rad_shockableChance) * _fragility)}) then {
+                [{
+                    params ["_unit"];
+                    if (_unit getVariable [QACEGVAR(medical,inCardiacArrest), false]) then {
+                        _unit setVariable [QEGVAR(circulation,cardiacArrestType), selectRandom [3, 4], true];
+                    };
+                }, [_unit], 0.5] call CBA_fnc_waitAndExecute;
+            };
+        } else {
+            private _stem = CBA_missionTime < (_unit getVariable [QGVAR(radMarrowRescueWindow), 0]);
+            private _filg = CBA_missionTime < (_unit getVariable [QGVAR(radFilgrastimWindow), 0]);
+            private _abx = CBA_missionTime < (_unit getVariable [QGVAR(radAntibioticWindow), 0]);
+            private _sourceGone = ((_unit getVariable [QGVAR(radDoseRate), 0]) < 0.01) && {(_unit getVariable [QGVAR(radInternalBurden), 0]) < 0.001};
+            if (_support && _stem && _filg && _abx && _sourceGone) then {
+                private _newSev = ((_unit getVariable [QGVAR(radSeverity), 0]) - (GVAR(rad_criticalRecoveryRate) * _interval)) max 0;
+                _unit setVariable [QGVAR(radSeverity), _newSev, true];
+            };
+        };
+    };
 };
 
 private _infLevel = _unit getVariable [QGVAR(radInfectionLevel), 0];
@@ -116,7 +196,7 @@ if (_unit == ACE_player) then {
 
 private _doseRate = _unit getVariable [QGVAR(radDoseRate), 0];
 private _burden = _unit getVariable [QGVAR(radInternalBurden), 0];
-if (_tier < 4 && {_doseRate < 0.01} && {_burden < 0.001}) then {
+if (!_critical && {_tier < 4} && {_doseRate < 0.01} && {_burden < 0.001}) then {
     private _recovery = GVAR(rad_recoveryRate);
     if (CBA_missionTime < (_unit getVariable [QGVAR(radFilgrastimWindow), 0])) then {
         _recovery = _recovery * GVAR(rad_filgrastimFactor);
@@ -129,7 +209,7 @@ if (_tier < 4 && {_doseRate < 0.01} && {_burden < 0.001}) then {
 [_unit] call FUNC(evaluateRadDose);
 
 _tier = _unit getVariable [QGVAR(radSicknessTier), 0];
-if (_tier == 0 && {(_unit getVariable [QGVAR(radFever), 0]) <= 0.05} && {(_unit getVariable [QGVAR(radBPDrop), 0]) <= 0} && {!(_unit getVariable [QGVAR(radInfection), false])}) exitWith {
+if (_tier == 0 && {!(_unit getVariable [QGVAR(radCritical), false])} && {(_unit getVariable [QGVAR(radFever), 0]) <= 0.05} && {(_unit getVariable [QGVAR(radBPDrop), 0]) <= 0} && {!(_unit getVariable [QGVAR(radInfection), false])}) exitWith {
     _unit setVariable [QGVAR(radFever), 0, true];
     _unit setVariable [QGVAR(radPhysiologyPFHActive), false, true];
     if (_unit == ACE_player) then { [false, 0] call EFUNC(feedback,effectRadiation); };

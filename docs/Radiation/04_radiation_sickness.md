@@ -52,8 +52,8 @@ The classic radiation kill mechanism, just slower than the dramatic stuff. Your 
 ### Gastrointestinal — the gut (tier 3+)
 Now it's serious. Fluid pours out of the body (dehydration → falling blood volume), the blood chemistry tips into **acidosis**, and the vomiting becomes relentless. This is the tier where casualties start sliding toward hypovolemic shock.
 
-### Neurovascular / CNS — the end (tier 4)
-The lethal tier. Blood pressure craters (**hypotension**), brief **seizures** hit, and the casualty collapses into unconsciousness and then cardiac arrest. **This tier does not recover on its own.** If someone reaches it, the only thing that would have helped was not being there.
+### Neurovascular / CNS — the lethal tier (tier 4)
+Blood pressure craters (**hypotension**), brief **seizures** hit, and the casualty collapses into unconsciousness and then cardiac arrest. **This tier will not recover on its own** — but it is *not* an automatic death sentence: with a hard, sustained intensive-care effort a lethal casualty can be pulled back. See [Treatment & triage → Intensive care for lethal doses](06_treatment_and_triage.md#intensive-care-for-lethal-doses). Left alone, though, they die.
 
 ### Systemic — fever & the screen
 Running underneath all of it: a **fever** that climbs with severity, and a **visual effect** — the world desaturates into a sickly grade as you get worse (toggleable, on by default). The visual is your gut-feel warning when you're not staring at the dosimeter.
@@ -66,7 +66,7 @@ Here's the merciful part: **below the lethal tier, radiation sickness heals on i
 
 - The **accumulated dose** on your dosimeter stays where it is — that's your permanent exposure record — but the *sickness* it caused fades.
 - **Filgrastim** speeds this up considerably (see [Treatment](06_treatment_and_triage.md)).
-- The **lethal tier is the exception** — it will not spontaneously recover. Everything below it will, given time and support.
+- The **lethal tier does not spontaneously recover** — it only comes back with the active [intensive-care protocol](06_treatment_and_triage.md#intensive-care-for-lethal-doses). Everything below it heals on its own, given time and support.
 
 ---
 

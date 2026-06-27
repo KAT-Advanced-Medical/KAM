@@ -145,6 +145,21 @@ Everything below lives under **CBA Settings → KAT - ADV Medical: Chemical**, i
 | Infection progression rate | 0.02 | How fast an untreated infection worsens |
 | Sepsis blood loss (ml/s) | 15 | Blood loss at full infection — drives lethal septic shock |
 
+### Lethal-tier intensive care
+
+| Setting | Default | What it does |
+|---------|---------|--------------|
+| Lethal dose curable | on | If on, a lethal casualty can be saved with sustained intensive care; if off, the lethal tier is terminal |
+| Collapse time (unsupported) | 150 | Seconds a critical casualty lasts without IV/vasopressor before cardiac arrest |
+| Intensive-care recovery rate (Gy/s) | 0.006 | How fast a lethal casualty's sickness clears under the full stack (lower = harder) |
+| Stem-cell rescue duration | 300 | How long one stem-cell dose enables recovery before re-dosing |
+| Re-crash chance | 0.05 | Per-tick chance (at full severity) of crashing back into arrest; tapers with the cure, halved on life support |
+| Shockable rhythm bias | 0.7 | Chance (at full severity, Advanced Rhythm on) a radiation arrest is VF/VT vs asystole/PEA |
+| Stem-cell rescue required trait | Medics | Who can administer the stem-cell rescue (Anyone / Medics / Doctors) |
+| Intensive-care readout | off | Show a status line in the medical menu for a critical casualty (cure progress + missing supports; never the arrest timer) |
+
+> The lethal-tier cure also leans on the **Circulation** cardiac-arrest system and, when enabled, **Advanced Rhythm** (`kat_circulation_AdvRhythm`) for the VF/VT behaviour — it cooperates with them rather than running its own death timer.
+
 ---
 
 ## Subsystem dependencies (important)
