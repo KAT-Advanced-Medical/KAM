@@ -22,7 +22,7 @@ That effect's host subsystem is probably disabled. The physiology layers ride on
 Turn **Simple Medical OFF** in KAT Vitals. Simple medical bypasses the detailed vitals loop that the radiation effects hook into. Players always get the full sim; AI only do when simple medical is off.
 
 ### **The casualty recovered from severe radiation sickness on their own. Bug?**
-Intended. Below the lethal tier, sickness heals slowly once the casualty is out of radiation (and clear of internal contamination). **Filgrastim** speeds it up. Only the **lethal tier** never self-recovers. Note the *accumulated dose* on the dosimeter stays put — that's the exposure record; it's the sickness that fades, not the history.
+Intended. Below the lethal tier, sickness heals slowly once the casualty is out of radiation (and clear of internal contamination). **Filgrastim** speeds it up. The **lethal tier** never self-recovers — it's survivable only with the sustained [intensive-care protocol](06_treatment_and_triage.md#intensive-care-for-lethal-doses), not by waiting. Note the *accumulated dose* on the dosimeter stays put — that's the exposure record; it's the sickness that fades, not the history.
 
 ### **A medic treating a contaminated casualty started getting dosed.**
 That's cross-contamination, and it's intended. A surface-contaminated casualty emits a weak field of their own. **Decon them** to shut it off — until you do, anyone working on them is standing next to a small source. Survey first, decon, then treat.

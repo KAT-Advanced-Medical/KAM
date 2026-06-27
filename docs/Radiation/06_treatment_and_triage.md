@@ -39,33 +39,41 @@ Match what you've found to what you reach for.
 
 ---
 
-## Triage flow
+## Treating a casualty — quick flow
 
 ```
-   Radiation casualty
-          |
-   Is it safe for YOU? (survey them; decon if they're hot, or you'll get dosed too)
-          |
-   Estimate the dose (Estimate Radiation Dose action)
-          |
-     +----+-------------------------+--------------------------+
-     |                              |                          |
-  survivable tier            lethal tier                 contaminated
-  (mild-severe)              (>6 Gy default)             (surface / internal)
-     |                              |                          |
-  support & speed            comfort / triage            DECON (surface)
-  recovery:                  out — will not              PRUSSIAN BLUE (internal)
-   - IV fluids/blood         self-recover                     |
-   - antibiotics if                                     stops further dosing
-     infected
-   - antiemetic
-   - filgrastim
-   - time
-     |
-  recovers over minutes; accumulated dose stays on record
+   Radiation casualty (down or sick)
+            |
+   1. MAKE IT SAFE FOR YOU
+      Survey them. If they read hot, DECON first — a contaminated
+      casualty doses you the whole time you're working on them.
+            |
+   2. STOP THE DOSING
+      - DECON KIT      -> clears surface contamination
+      - PRUSSIAN BLUE  -> clears internal (inhaled) contamination
+      - move them clear of any radiation field
+      (until dosing stops, nothing you do below will hold)
+            |
+   3. ESTIMATE THE DOSE   (Estimate Radiation Dose action)
+            |
+      +-----+----------------------------------------+
+      |                                              |
+  SURVIVABLE (mild–severe)                   LETHAL (top tier, >6 Gy)
+      |                                              |
+  supportive care:                          INTENSIVE CARE (hard, ~15 min):
+   - IV blood/saline  (anemia, fluids)        keep alive: IV or vasopressor
+   - antibiotics      (if infected)           cure (all at once, sustained):
+   - antiemetic       (vomiting)                filgrastim + antibiotics
+   - filgrastim       (speeds recovery)         + STEM-CELL RESCUE
+      |                                          (source already removed)
+  recovers over minutes;                      -> see "Intensive care for
+  accumulated dose stays on record               lethal doses" below
+            |
+   4. MOP UP
+      Treat radiation burns and open wounds as normal ACE/KAT injuries.
 ```
 
-The short version of supportive care for a survivable casualty: **stop the contamination (decon/chelate), replace the blood they're losing (IV), keep infection out (antibiotics), make them comfortable (antiemetic), and speed the marrow back (filgrastim).** Then time does the rest.
+The short version of supportive care for a survivable casualty: **stop the contamination (decon/chelate), replace the blood they're losing (IV), keep infection out (antibiotics), make them comfortable (antiemetic), and speed the marrow back (filgrastim).** Then time does the rest. A **lethal** casualty needs all of that *plus* the sustained intensive-care protocol below — they will not recover on supportive care alone.
 
 ---
 
