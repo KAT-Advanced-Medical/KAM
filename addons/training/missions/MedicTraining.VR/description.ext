@@ -1,0 +1,7 @@
+briefing = 0;
+author = "kolmipilot";
+onLoadName = "KAM medical training";
+onLoadMission = "KAT - advanced medical training mission by kolmipilot";
+debriefing = 0;
+
+overviewText = "KAT - advanced medical training mission by kolmipilot";

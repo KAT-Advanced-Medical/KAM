@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project name="KAT">
+    <Package name="Training">
+        <Key ID="STR_KAT_Training_Mission">
+            <English>KAM medical training</English>
+        </Key>
+        <Key ID="STR_KAT_Training_Mission_tooltip">
+            <English>KAM medical training</English>
+        </Key>
+    </Package>
+</Project>
