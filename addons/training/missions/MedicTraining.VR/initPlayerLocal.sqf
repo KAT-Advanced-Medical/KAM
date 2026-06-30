@@ -1,14 +1,15 @@
-waitUntil { !isNull (missionNamespace getVariable ["laptop", objNull]) };
+#include "script_component.hpp"
 
+[{!isNull (missionNamespace getVariable ["laptop", objNull])}, {
     laptop addAction ["<t color='#00FF00'>[Patient] Spawn: Healthy</t>", {
         params ["_target", "_caller"];
-        [0] remoteExecCall ["kat_training_fnc_createPatient", 2];
+        [0] call FUNC(createPatient);
         [format ["%1 spawned healthy patient.", name _caller]] remoteExecCall ["systemChat", 0];
     }, nil, 1.5, true, true, "", "!spawned", 5];
 
     laptop addAction ["<t color='#FFCC00'>[Patient] Spawn: Random Injuries</t>", {
         params ["_target", "_caller"];
-        [1] remoteExecCall ["kat_training_fnc_createPatient", 2];
+        [1] call FUNC(createPatient);
         [format ["%1 spawned an injured patient.", name _caller]] remoteExecCall ["systemChat", 0];
     }, nil, 1.5, true, true, "", "!spawned", 5];
 
@@ -41,14 +42,14 @@ waitUntil { !isNull (missionNamespace getVariable ["laptop", objNull]) };
         } else {
             [_patient, true] call ace_medical_fnc_setUnconscious;
         };
-        [format ["%1 - PEA applied.", name _caller]] remoteExec ["systemChat", 0];
+        [format ["%1 - PEA applied.", name _caller]] remoteExecCall ["systemChat", 0];
     }, nil, 1.5, true, true, "", "spawned", 5];
 
     laptop addAction ["<t color='#FFAA00'>[Cardiac] V-Fib (Fast Pulse, Shockable)</t>", {
         params ["_target", "_caller"];
         private _patient = missionNamespace getVariable ["kat_training_lastPatient", objNull];
         if (!alive _patient) exitWith {
-            [format ["%1 - No living patient!", name _caller]] remoteExec ["systemChat", _caller];
+            [format ["%1 - No living patient!", name _caller]] remoteExecCall ["systemChat", _caller];
         };
         
         if (isClass (configFile >> "CfgPatches" >> "kat_main")) then {
@@ -155,3 +156,4 @@ waitUntil { !isNull (missionNamespace getVariable ["laptop", objNull]) };
         publicVariable "spawned";
         [format ["%1 deleted the patient.", name _caller]] remoteExecCall ["systemChat", 0];
     }, nil, 1.5, true, true, "", "spawned", 5];
+}] call CBA_fnc_waitUntilAndExecute;
