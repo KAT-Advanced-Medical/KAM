@@ -20,9 +20,9 @@ This procedure is an example of the steps required to bring an unconscious patie
 {% step %}
 ### Manage Airways
 Check the patient's airway status and treat accordingly:
-*   **Occluded** $\rightarrow$ Recovery Position $\rightarrow$ Accuvac $\rightarrow$ Head Turning
-*   **Obstructed** $\rightarrow$ Recovery Position $\rightarrow$ Head Hyperextending *(Stay close to the patient)*
-*   **Clear** $\rightarrow$ Recovery Position $\rightarrow$ King LT $\rightarrow$ Guedel Tube
+*   **Occluded** → Recovery Position → Accuvac → Head Turning
+*   **Obstructed** → Recovery Position → Head Hyperextending *(Stay close to the patient)*
+*   **Clear** → Recovery Position → King LT → Guedel Tube
 {% endstep %}
 
 {% step %}
@@ -38,17 +38,17 @@ Check the patient's airway status and treat accordingly:
 {% step %}
 ### Diagnose & Treat Lung Damage
 Inspect the chest for lung injuries and follow respiratory treatment guidelines:
-*   **Pneumothorax (PTX)** $\rightarrow$ Apply Chest Seal $\rightarrow$ Auscultate. If the sound persists, perform needle decompression.
-*   **Tension Pneumothorax (TPTX)** $\rightarrow$ Execute immediate needle decompression (NCD/AAT Kit).
-*   **Hemothorax (HPTX)** $\rightarrow$ Apply Chest Seal $\rightarrow$ Perform fluid draining (AAT Kit) $\rightarrow$ Re-auscultate.
+*   **Pneumothorax (PTX)** → Apply Chest Seal → Auscultate. If the sound persists, perform needle decompression.
+*   **Tension Pneumothorax (TPTX)** → Execute immediate needle decompression (NCD/AAT Kit).
+*   **Hemothorax (HPTX)** → Apply Chest Seal → Perform fluid draining (AAT Kit) → Re-auscultate.
 {% endstep %}
 
 {% step %}
 ### Evaluate Kidney Function
 Use the **Check Breathing** action on the patient's head to check kidney status:
 *   **Good (OK breath)**: No action needed.
-*   **Pressure (Slightly Fruity breath)**: Administer Blood $\rightarrow$ Plasma $\rightarrow$ Dialysis.
-*   **Fail (Harsh & Metallic breath)**: Dialysis $\rightarrow$ Blood $\rightarrow$ Plasma *(Warning: Cardiac arrest is likely to occur if untreated).*
+*   **Pressure (Slightly Fruity breath)**: Administer Blood → Plasma → Dialysis.
+*   **Fail (Harsh & Metallic breath)**: Dialysis → Blood → Plasma *(Warning: Cardiac arrest is likely to occur if untreated).*
 {% endstep %}
 
 {% step %}
