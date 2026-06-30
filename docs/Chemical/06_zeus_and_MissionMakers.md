@@ -40,7 +40,9 @@ Load these single-round magazines into a player-crewed 82 mm mortar (`ACE_mortar
 
 Hand them out via the **`ACE_Box_82mm_Mo_Gas`** ammo box, which contains 8× chlorine, 8× chlorine cluster, 8× CS, and 4× each of phosgene, mustard, sarin, and VX.
 
-> **AI mortar restriction:** AI-crewed mortars are deliberately limited to **choking agents only** (CS, chlorine, and chlorine cluster). Nerve and blister agents are restricted to deliberate, player-driven placement so the AI can't casually drop a sarin barrage.
+{% hint style="info" %}
+**AI mortar restriction:** AI-crewed mortars are deliberately limited to **choking agents only** (CS, chlorine, and chlorine cluster). Nerve and blister agents are restricted to deliberate, player-driven placement so the AI can't casually drop a sarin barrage.
+{% endhint %}
 
 ### Other delivery
 
@@ -67,7 +69,9 @@ All of the below live under **CBA Settings → KAT - ADV Medical: Chemical**. De
 | Enable Smell Hint | on | on/off | Whether unmasked units get the one-shot smell hint |
 | Enable Gas particle effects | on | on/off | Whether visible gas-cloud particles are spawned (turn off for performance, or to hide clouds) |
 
-> **The one setting you'll most often change** is *Available CBRN Suit Uniforms*. It's an editbox of **quoted, comma-separated classnames**, e.g. `'U_C_CBRN_Suit_01_Blue_F','U_B_CBRN_Suit'`. Add the suits your loadout mods provide, or Level 2 agents will affect everyone wearing anything else.
+{% hint style="info" %}
+**The one setting you'll most often change** is *Available CBRN Suit Uniforms*. It's an editbox of **quoted, comma-separated classnames**, e.g. `'U_C_CBRN_Suit_01_Blue_F','U_B_CBRN_Suit'`. Add the suits your loadout mods provide, or Level 2 agents will affect everyone wearing anything else.
+{% endhint %}
 
 ### CS Gas (Level 0)
 
