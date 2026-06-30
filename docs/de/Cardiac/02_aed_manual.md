@@ -80,14 +80,14 @@ AED-X has all the options of regular AED and can be used accordingly. It is a mo
 * Manual charging and disarming (Advanced Treatment section)  
 * Vitals Monitor (accessed through Examine Patient section or attached separately through ACE interaction) which combines all options necessary for the AED usage and heart’s electrical activity view.
 
-[image42]: ../assets/image42.png
-[image43]: ../assets/image43.png
-[image44]: ../assets/image44.png
-[image45]: ../assets/image45.png
-[image46]: ../assets/image46.png
-[image47]: ../assets/image47.png
-[image48]: ../assets/image48.png
-[image49]: ../assets/image49.png
-[image50]: ../assets/image50.png
-[image51]: ../assets/image51.png
-[image52]: ../assets/image52.png
+[image42]: ../../assets/image42.png
+[image43]: ../../assets/image43.png
+[image44]: ../../assets/image44.png
+[image45]: ../../assets/image45.png
+[image46]: ../../assets/image46.png
+[image47]: ../../assets/image47.png
+[image48]: ../../assets/image48.png
+[image49]: ../../assets/image49.png
+[image50]: ../../assets/image50.png
+[image51]: ../../assets/image51.png
+[image52]: ../../assets/image52.png
