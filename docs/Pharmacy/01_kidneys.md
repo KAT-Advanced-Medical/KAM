@@ -46,6 +46,6 @@ The **Check Breathing** action checks the patient's actual blood pH (which start
 
 | Check Breath Result | Blood pH Value | Clinical State |
 | :---: | :---: | :---: |
-| **Good (ok)** | $\ge 7.2$ | Normal |
-| **Mild (slightly fruity)** | $6.9 \le \text{pH} < 7.2$ | Acidosis / Kidney Pressure |
-| **Stink (harsh and metallic)** | $< 6.9$ | Severe Acidosis / Kidney Failure |
+| **Good (ok)** | >= 7.2 | Normal |
+| **Mild (slightly fruity)** | 6.9 <= pH < 7.2 | Acidosis / Kidney Pressure |
+| **Stink (harsh and metallic)** | < 6.9 | Severe Acidosis / Kidney Failure |
