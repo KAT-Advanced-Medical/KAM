@@ -30,4 +30,5 @@ class CfgPatches {
     };
 };
 
+#include "CfgEventHandlers.hpp"
 #include "RscDisplayMain.hpp"

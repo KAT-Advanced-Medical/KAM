@@ -1,7 +1,7 @@
 briefing = 0;
 author = "kolmipilot";
 onLoadName = "KAM medical training";
-onLoadMission = "KAT - advanced medical training mission by kolmipilot";
+onLoadMission = "KAT - Advanced Medical Training Mission the KAM Team";
 debriefing = 0;
-
-overviewText = "KAT - advanced medical training mission by kolmipilot";
+loadScreen = "KAMLogoHighRes.paa";
+overviewText = "KAT - Advanced Medical Training Mission by kolmipilot";
