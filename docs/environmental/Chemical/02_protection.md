@@ -14,6 +14,8 @@ Every agent is assigned a **protection tier** that tells you what gear you need 
 - **Filter life** — masks last **15 minutes** of active protection by default. When the filter is spent, the mask stops protecting you. Carry a **gas mask filter** (`kat_gasmaskFilter`) and use the *Replace gas mask filter* self-action to reset it.
 - **CBRN suit** — for Level 2 agents the mask alone is not enough. You also need a uniform that the mission has whitelisted. The default whitelist contains the vanilla CBRN suit (`U_C_CBRN_Suit_01_Blue_F`); mission makers add their own (see [CBA settings](#mission-configuration-cba-settings)).
 
-> **Common mistake:** wearing a mask into a mustard or sarin cloud and assuming you're safe. You're not. Level 2 agents go through the skin — only the full suit stops them.
+{% hint style="danger" %}
+**Common mistake:** Wearing a mask into a mustard or sarin cloud and assuming you're safe. You're not. Level 2 agents go through the skin — only the full suit stops them.
+{% endhint %}
 
 ---

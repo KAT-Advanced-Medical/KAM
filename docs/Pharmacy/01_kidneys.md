@@ -36,7 +36,7 @@ To lower the acidosis index and restore kidney function:
 *   **Transfusions:** Administering **Blood** or **Plasma** reduces the acidosis index (adds negative values).
 *   **Avoid Saline Excess:** Administering **Saline** *increases* the acidosis index. Excessive saline use is the primary cause of kidney pressure and failure.
 
-For specific volume adjustments, see the [Fluids](file:///c:/Users/bartl/Documents/GitHub/KAM/docs/Pharmacy/03_fluids.md) documentation.
+For specific volume adjustments, see the [Fluids](03_fluids.md) documentation.
 
 ---
 

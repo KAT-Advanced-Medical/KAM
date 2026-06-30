@@ -117,6 +117,8 @@ Match the symptom you see in the medical menu to the right item.
    Then treat residual wounds, burns, eye injuries as normal.
 ```
 
-> ATNAA mirrors atropine's profile (a heart-rate boost, up to 3 doses, applied to arms or legs) but is specifically the nerve-agent antidote. Keep both in a medic's kit — atropine for the chokers, ATNAA for the nerves.
+{% hint style="info" %}
+ATNAA mirrors atropine's profile (a heart-rate boost, up to 3 doses, applied to arms or legs) but is specifically the nerve-agent antidote. Keep both in a medic's kit — atropine for the chokers, ATNAA for the nerves.
+{% endhint %}
 
 ---

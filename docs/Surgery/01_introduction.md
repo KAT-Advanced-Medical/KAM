@@ -35,39 +35,85 @@ Determine the fracture type by selecting a limb and choosing â€œCheck Fractureâ€
 
 ### Simple Fracture
 
-1. Administer painkiller (Morphine/Penthrox/Lidocaine)  
-2. Perform **Closed Reduction**
+{% stepper %}
+{% step %}
+### Pain Management
+Administer a painkiller (Morphine/Penthrox/Lidocaine).
+{% endstep %}
+
+{% step %}
+### Reduction
+Perform a **Closed Reduction** on the fractured limb.
+{% endstep %}
+{% endstepper %}
 
 ### Complex Fracture
 
-Depending on the **Surgery Consciousness Controls** settings the surgical procedure may be different:
+Depending on the **Surgery Consciousness Controls** settings, the surgical procedure may be different:
 
-* Surgery causes unconsciousness  
-  * Requires sedation/unconsciousness  
-  * Requires anesthesia  
-* Unconsciousness required for surgery  
-  * Requires sedation/unconsciousness  
-  * Requires anesthesia  
-  * Surgical actions fail entirely if patient is conscious  
-* No unconsciousness required for surgery   
-  * Patient may be awake  
-  * Anesthesia not required  
-  * Causes pain  
-* Surgery anesthesia  
-  * Patient may be awake  
-  * Requires anesthesia
+*   Surgery causes unconsciousness  
+    *   Requires sedation/unconsciousness  
+    *   Requires anesthesia  
+*   Unconsciousness required for surgery  
+    *   Requires sedation/unconsciousness  
+    *   Requires anesthesia  
+    *   Surgical actions fail entirely if the patient is conscious  
+*   No unconsciousness required for surgery   
+    *   Patient may be awake  
+    *   Anesthesia not required  
+    *   Causes pain  
+*   Surgery anesthesia  
+    *   Patient may be awake  
+    *   Requires anesthesia
 
-The patient is sedated with **Lorazepam**, sedation is removed with **Flumazenil**.  
+The patient is sedated with **Lorazepam** (sedation is removed with **Flumazenil**).  
 The patient is given anesthesia with **Etomidate**, and may require multiple doses if the procedure is lengthy.
 
-1. **(SEDATION)** \- Push **Lorazepam** to sedate the patient (if conscious)  
-2. **(ANESTHESIA)** \- Push **Etomidate** for general anesthesia and reapply it **every 35 seconds**  
-3. Perform an **Incision** with a scalpel  
-4. **Expose the fracture** with a retractor  
-5. Prepare for Open Reduction  
-   * **\[COMPOUND\]** \- **Irrigate the wound** with 250 ml of saline  
-   * **\[COMMINUTED\]** \- **Clamp the wound** with a clamp  
-6. Perform an **Open Reduction** with a bone plate  
-7. **(ANESTHESIA)** \- Stop administering **Etomidate**  
-8. **(SEDATION)** \- Push **Flumazenil** to remove sedation  
-9. Patient is ready to be woken up, reorient patient or use ammonium carbonate
+{% stepper %}
+{% step %}
+### Sedate the Patient (Optional)
+**(SEDATION)** - Push **Lorazepam** to sedate the patient (if conscious).
+{% endstep %}
+
+{% step %}
+### Induce Anesthesia
+**(ANESTHESIA)** - Push **Etomidate** for general anesthesia and reapply it **every 35 seconds** to maintain the anesthetic state.
+{% endstep %}
+
+{% step %}
+### Incise
+Perform an **Incision** with a scalpel on the fractured limb.
+{% endstep %}
+
+{% step %}
+### Expose Fracture
+**Expose the fracture** with a retractor.
+{% endstep %}
+
+{% step %}
+### Prepare for Open Reduction
+Depending on the complex fracture subtype:
+*   **[COMPOUND]**: **Irrigate the wound** with 250 ml of saline.
+*   **[COMMINUTED]**: **Clamp the wound** with a clamp.
+{% endstep %}
+
+{% step %}
+### Open Reduction
+Perform an **Open Reduction** using a bone plate.
+{% endstep %}
+
+{% step %}
+### Discontinue Anesthesia
+**(ANESTHESIA)** - Stop administering **Etomidate**.
+{% endstep %}
+
+{% step %}
+### Reverse Sedation
+**(SEDATION)** - Push **Flumazenil** to remove the sedation.
+{% endstep %}
+
+{% step %}
+### Wake Patient
+The patient is now ready to be woken up. Reorient the patient or use Ammonium Carbonate to assist revival.
+{% endstep %}
+{% endstepper %}

@@ -10,7 +10,9 @@
 | 3 | **PEA** - Pulseless Electrical Activity | Epinephrine\* \+ **CPR** | ![][image42] |
 | 4 | Asystole | Epinephrine\* \+ **CPR** | ![][image45] |
 
-\*Note that medications mentioned are not required for a successful treatment, they will boost the effectiveness of the treatment. In addition, take note of **Essential Values** as blood loss will affect the success of these treatments.
+{% hint style="info" %}
+**Note:** Medications mentioned are not required for successful treatment, but they will boost the effectiveness of the treatment. In addition, take note of **Essential Values** (such as blood volume) as blood loss will affect the success rate of these treatments.
+{% endhint %}
 
 Exact EKG readings for sinus rhythm (Normal and PEA):
 
@@ -45,13 +47,29 @@ If no AED is present, treat all cardiac arrest cases as asystole and treat them 
 
 ## 🩺 AED Manual
 
-* Ensure nobody touches the patient (no CPR/ BVM is performed)  
-* Click on chest  
-* Attach AED pads in the Advanced Treatment section  
-* Analyze rhythm in the Examine Patient section:  
-  * **“Shock Advised”**: The AED will charge automatically and give a sound notification when ready. It is then possible to perform a shock (Using Epinephrine/Amiodarone/Lidocaine beforehand is advised. One medication per shock). The AED will disarm itself after some time automatically if no shock is administered.  
-  * **“No Shock Advised”**: Perform CPR, administer epinephrine (not essential) and check pulse every 2 minutes  
-* Analyze rhythm after the shock/ 2 minutes of CPR
+{% stepper %}
+{% step %}
+### Preparation
+Ensure nobody touches the patient (no CPR or BVM should be performed during analysis).
+{% endstep %}
+
+{% step %}
+### Apply Pads
+Click on the patient's chest and select **Attach AED pads** in the *Advanced Treatment* section.
+{% endstep %}
+
+{% step %}
+### Analyze Rhythm
+Select **Analyze Rhythm** in the *Examine Patient* section.
+*   **“Shock Advised”**: The AED will charge automatically and give a sound notification when ready. It is then possible to perform a shock. *(Tip: Using Epinephrine/Amiodarone/Lidocaine beforehand is advised. Apply only one medication per shock).* The AED will disarm itself automatically if no shock is administered within a certain timeframe.
+*   **“No Shock Advised”**: Perform CPR, administer Epinephrine (optional/not essential), and check the pulse every 2 minutes.
+{% endstep %}
+
+{% step %}
+### Re-evaluate
+Analyze the heart rhythm again after administering the shock or after 2 minutes of CPR.
+{% endstep %}
+{% endstepper %}
 
 ---
 

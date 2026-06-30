@@ -23,7 +23,7 @@ When a fluid bag is successfully administered, it updates the patient's acidosis
 | | 500ml | $-400$ (improves acidosis) | $+8$ |
 | | 250ml | $-200$ (improves acidosis) | $+4$ |
 
-*Note: For more information about the acidosis index, see [Kidney Function](file:///c:/Users/bartl/Documents/GitHub/KAM/docs/Pharmacy/01_kidneys.md).*
+*Note: For more information about the acidosis index, see [Kidney Function](01_kidneys.md).*
 
 ---
 

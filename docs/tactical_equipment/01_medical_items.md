@@ -2,10 +2,12 @@
 
 A feature introduced by this mod enables you to find all the medical-related items under a dedicated **“Medical”** category in the arsenal. 
 
-> ⚠️ **Important Notes:**
-> * Not all items are required for a successful treatment — some are auxiliary and can help you improve your performance.
-> * Using some items or performing self-treatment may require medical/doctor permissions — check your or the host's in-game addon settings.
-> * Most medicines do not work instantly — you need to wait for the full effect.
+{% hint style="warning" %}
+**Important Notes:**
+*   Not all items are required for a successful treatment — some are auxiliary and can help you improve your performance.
+*   Using some items or performing self-treatment may require medical/doctor permissions — check your or the host's in-game addon settings.
+*   Most medicines do not work instantly — you need to wait for the full effect.
+{% endhint %}
 
 ---
 
@@ -32,16 +34,22 @@ A feature introduced by this mod enables you to find all the medical-related ite
 
 ## 🏷️ Table Legend & Action Scopes
 
+{% columns %}
+{% column %}
 ### Use Classification (Row Tags)
 * **[C]**: Shockable Cardiac Arrest treatment medicines (One-time use only / Red colour equivalent).
 * **[S]**: Surgery items (Depends on settings / Orange colour equivalent).
 * **No Tag / Yellow**: No limit.
 * **Blue Text**: Pain Suppressor.
+{% endcolumn %}
 
+{% column %}
 ### Treatment Zones (Action Column)
 * **H**: Head 
 * **T**: Torso 
 * **L**: Limbs
+{% endcolumn %}
+{% endcolumns %}
 
 ---
 

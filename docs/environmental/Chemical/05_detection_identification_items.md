@@ -15,7 +15,9 @@ Single-use paper that reacts to nerve and blister agents on contact. Use the **U
 | Mustard | **Blister Agent** | Red |
 | CS, Chlorine, Phosgene, clean air | **No mark = Clean** | — |
 
-> M8 paper genuinely cannot detect choking agents — a NEGATIVE result does **not** mean the air is safe, only that there's no nerve or blister agent present. For chlorine and phosgene, trust your nose and the JCAD detector instead.
+{% hint style="warning" %}
+M8 paper genuinely cannot detect choking agents — a NEGATIVE result does **not** mean the air is safe, only that there's no nerve or blister agent present. For chlorine and phosgene, trust your nose and the JCAD detector instead.
+{% endhint %}
 
 The paper reads your most recent cloud exposure, remembered for **30 seconds** after you leave. Test promptly.
 
@@ -47,7 +49,9 @@ Wearing a gas mask suppresses the hint, and each unit only gets each smell once 
 | Almost invisible, faint warm shimmer | Sarin |
 | Oily amber, slow to disperse | VX |
 
-> If a mission has turned off the *Enable Gas particle effects* setting, clouds are invisible regardless of agent — fall back on M8 paper, the JCAD detector, and smell to know what you're in.
+{% hint style="info" %}
+If a mission has turned off the *Enable Gas particle effects* setting, clouds are invisible regardless of agent — fall back on M8 paper, the JCAD detector, and smell to know what you're in.
+{% endhint %}
 
 ---
 
@@ -62,6 +66,8 @@ Wearing a gas mask suppresses the hint, and each unit only gets each smell once 
 | Gas Mask Filter | `kat_gasmaskFilter` | 1 kg | Resets spent mask filter life | *Replace gas mask filter* self-action |
 | Sealant Tube | `kat_sealant` | 3 kg | Seals leaking contaminated objects | Seal action on a sealable source |
 
-> `kat_atnaa` lives in the **pharma** addon; everything else is in **chemical**. All items are available through ACE Arsenal.
+{% hint style="info" %}
+`kat_atnaa` lives in the **pharma** addon; everything else is in **chemical**. All items are available through ACE Arsenal.
+{% endhint %}
 
 ---
