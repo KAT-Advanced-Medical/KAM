@@ -1,67 +1,60 @@
-# **Preface** {#preface}
+# **KAT Advanced Medical — Documentation Index** {#preface}
 
 ---
 
-KAT mod users are encouraged to delve into **add-on settings** that can be found in the game after the mod is installed. It applies both to new users and all users after every new update of the mod is released. Adjust all the settings according to your needs or learn about the settings that the host is using. The mod is not meant to be used alongside ACE Pharmacy. **Before posting any bug reports**:
+Welcome to the documentation index for the KAT Advanced Medical (KAM) mod for Arma 3. 
 
-* Read the hereby document  
-* Check your/ host’s settings  
-* Use mod repair feature in the game launcher to ensure the mod is updated  
-* Try running the mod without other mods excluding [ACE](https://steamcommunity.com/sharedfiles/filedetails/?id=463939057) and [CBA\_A3](https://steamcommunity.com/sharedfiles/filedetails/?id=450814997) (required mods)
+KAT mod users are encouraged to delve into **add-on settings** that can be found in-game after the mod is installed. This applies to both new and returning players after every mod update. Adjust all settings according to your needs or learn about the settings that the host server is using. The mod is not meant to be used alongside ACE Pharmacy.
 
-In order to access the **medical menu**, press H while looking at a player/ AI. While in a vehicle, you can access the passenger's medical menu via ACE, passengers category. Navigating in the menu is done by pressing body parts and tabs related to different medical actions on the upper left part of the menu screen. Remember to verify if you do not access your own medical menu by checking the nickname in the center of the menu screen.
+### **Before posting any bug reports:**
+* Read this documentation.
+* Check your client and server settings.
+* Use the mod repair feature in the Arma 3 launcher to ensure the mod is updated.
+* Try running the mod with only [CBA_A3](https://steamcommunity.com/sharedfiles/filedetails/?id=450814997) and [ACE3](https://steamcommunity.com/sharedfiles/filedetails/?id=463939057) enabled (required dependency mods) to isolate issues.
 
-Medical actions can also be undertaken through the ACE menu (press windows while looking at object/ player/ AI) but it is considered inefficient with current complexity of the mod.
+---
 
-**Wound types** mechanics derive from ACE and no details are presented in this guide. In general, Avulsions and Velocity Wounds are the most severe wounds, Cut Wounds and Lacerations are less dangerous and all the remaining wounds cause little bleeding with Contusion being an exception - it causes no bleeding at all. Carrying a bleeding patient doesn’t speed up the bleeding process.
+## 🩺 Accessing the Medical Menu
+* Press **H** while looking at a player/AI to open the medical menu.
+* While in a vehicle, access the passenger's medical menu via the ACE interaction menu under the *Passengers* category.
+* Navigate the menu by selecting specific body parts and tabs on the upper-left of the screen.
+* Verify you are treating the correct patient by checking the nickname in the center of the menu.
+* *Note: Medical actions can also be undertaken via the ACE self/interaction menu (default: Windows Key), but the dedicated medical menu is recommended due to the complexity of the mod.*
 
-**Bandage** mechanics derive from ACE and no details are presented in this guide. Authors suggest using elastic bandage when speed is prioritized over durability, using quikclot bandage provides the best endurance and packing bandage provides the most balanced solution for speed, wound coverage and endurance.
+---
+
+## 🩹 ACE Core Medical Mechanics
+* **Wound Types:** Derived from ACE. Avulsions and Velocity wounds are the most severe; Cut and Laceration wounds are less dangerous. Contusions cause no bleeding. Carrying a bleeding patient does not speed up bleeding.
+* **Bandages:** Derived from ACE. Elastic bandages provide fast application speed but low durability; QuikClot provides the best endurance; Packing bandages offer a balanced solution for speed, wound coverage, and endurance.
+
+---
 
 # **Contents** {#contents}
 
----
+Below is the directory of the local documentation guides for each module of the KAT Advanced Medical system:
 
-**[Preface](#preface)**
+### 🎒 Equipment & Items
+*   [**Items Featured in the Mod**](tactical_equipment/01_medical_items.md) — Reference list of all tools, autoinjectors, diagnostics, and surgical equipment added by the mod.
 
-[**Contents**](#contents)
+### 💨 Airways & Respiratory System
+*   [**Airways Management & Lungs**](respiratory/01_airways_and_lungs.md) — Airways status (Clear, Occluded, Obstructed), recovery position, and visual cyanosis estimation.
+*   [**Breathing & Thorax Injuries**](respiratory/02_breathing_injuries.md) — Pneumothorax, Tension Pneumothorax (TPTX), Hemothorax (HPTX), auscultation using the stethoscope, BVM usage, and chest inspection diagnostics.
 
-[**Items Featured in the Mod**](#items-featured-in-the-mod)
+### ❤️ Cardiovascular System & Cardiac Arrest
+*   [**Cardiac Arrest & H&T Conditions**](cardiovascular/01_cardiac_arrest.md) — Reversible arrest causes (Hypovolemia, Hypoxia, Acidosis, Tension Pneumothorax, Tamponade).
+*   [**Cardiac Arrest Treatment & AED Manual**](cardiovascular/02_aed_manual.md) — Rhythms (VT, VF, PEA, Asystole), EKG monitor readings, CPR, and step-by-step AED/AED-X manual.
 
-[**Chemical Warfare**](#chemical-warfare)
+### 🧪 Pharmacy & Renal System
+*   [**Fluids & Blood Compatibility**](Pharmacy/03_fluids.md) — Detailed properties of Saline, Plasma, and Blood (volume, pH adjustments, clotting factors), blood group compatibility matrices, and blood poisoning/CWMP mechanics.
+*   [**Kidney Function & Acidosis**](Pharmacy/01_kidneys.md) — Acidosis scale, Kidney states (Normal, Pressure, Fail), dialysis, and diagnostic breath profiles.
+*   [**Coagulation & Clotting**](Pharmacy/02_coagulation.md) — Natural clotting factors regeneration, TXA and EACA clotting mechanisms, and the CoagSense diagnostic device.
 
-[**Fluids**](#fluids)
+### 🏥 Surgery & Trauma
+*   [**Surgery & Fracture Care**](Surgery/01_introduction.md) — Handheld Ultrasound diagnostics, Pericardial Tap, REBOA catheter placement, Closed/Open reductions, and surgical anesthesia/sedation protocols (Lorazepam, Etomidate, Flumazenil).
 
-[**Essential Values**](#essential-values)  
-**Vitals**
+### ☣️ Environmental Warfare
+*   [**Chemical Warfare Guide**](environmental/Chemical/01_Info_and_QuickStart.md) — Guide to chemical agents, protection, symptoms, treatments, detection (M8, JCAD), and decontamination.
 
-[**Airways and Lungs**](#airways-and-lungs)
-
-[Airways Management](https://docs.google.com/document/d/1pkWi9Gt5ulBBzrn7WpqcN2EDuSTeAjH0GI8V9OeeO4Y/edit#heading=h.tgchx2c5ns8n)
-
-[Recovery Position](https://docs.google.com/document/d/1pkWi9Gt5ulBBzrn7WpqcN2EDuSTeAjH0GI8V9OeeO4Y/edit#heading=h.ch6nvx96t0nv)
-
-[Check Breathing](https://docs.google.com/document/d/1pkWi9Gt5ulBBzrn7WpqcN2EDuSTeAjH0GI8V9OeeO4Y/edit#heading=h.zbzt7luer7f2)
-
-[Inspect Chest](https://docs.google.com/document/d/1pkWi9Gt5ulBBzrn7WpqcN2EDuSTeAjH0GI8V9OeeO4Y/edit#heading=h.7m5vodpblqq9)
-
-[Cyanosis](https://docs.google.com/document/d/1pkWi9Gt5ulBBzrn7WpqcN2EDuSTeAjH0GI8V9OeeO4Y/edit#heading=h.4dds7dnk3hef)
-
-[**Cardiac Arrest Treatment**](#cardiac-arrest)
-
-[AED manual](#aed-manual)
-
-[AED-X manual](#aed-x-manual)
-
-[**Surgery**](#surgery)  
-      Ultrasound/REBOA/Pericardial Tap
-
-Fracture Care
-
-[**Kidney Function**](#kidney-function)
-
-[**Coagulation**](https://docs.google.com/document/d/1pkWi9Gt5ulBBzrn7WpqcN2EDuSTeAjH0GI8V9OeeO4Y/edit#heading=h.kftfvmvzcnlk)
-
-[TXA](https://docs.google.com/document/d/1pkWi9Gt5ulBBzrn7WpqcN2EDuSTeAjH0GI8V9OeeO4Y/edit#heading=h.goey8tlw2td)  
-EACA
-
-[**Appendix: Complete Aid Procedure**](#appendix:-complete-aid-procedure)
+### 📊 Reference Appendices
+*   [**Essential Values Reference**](core/01_essential_values.md) — Standard, stable, and lethal vital ranges (HR, BP, SpO2), reorientation and arousal rates.
+*   [**Appendix: Complete Aid Procedure**](core/02_appendix_aid_procedure.md) — Example walkthrough of a complete patient resuscitation flow from triage to wake-up.
