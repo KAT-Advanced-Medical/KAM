@@ -33,7 +33,7 @@
         params ["_target", "_caller"];
         private _patient = missionNamespace getVariable ["kat_training_lastPatient", objNull];
         if (!alive _patient) exitWith {
-            [format ["%1 - No living patient!", name _caller]] remoteExec ["systemChat", _caller];
+            [format ["%1 - No living patient!", name _caller]] remoteExecCall ["systemChat", _caller];
         };
         
         if (isClass (configFile >> "CfgPatches" >> "kat_main")) then {
