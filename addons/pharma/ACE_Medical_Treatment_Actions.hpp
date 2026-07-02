@@ -217,7 +217,6 @@ class ACE_Medical_Treatment_Actions {
         condition = "";
         treatmentTime = 5;
         callbackSuccess = QFUNC(medication);
-        sounds[] = {};
     };
     class Nitroglycerin: EACA {
         displayName = CSTRING(Take_Nitro);
@@ -263,7 +262,6 @@ class ACE_Medical_Treatment_Actions {
         condition = "";
         items[] = {"kat_atropine"};
         callbackSuccess = QFUNC(medication);
-        sounds[] = {};
     };
     class ATNAA: Atropine {
         displayName = ECSTRING(chemical,Take_ATNAA);
