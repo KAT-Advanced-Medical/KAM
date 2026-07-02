@@ -262,6 +262,7 @@ class ACE_Medical_Treatment_Actions {
         condition = "";
         items[] = {"kat_atropine"};
         callbackSuccess = QFUNC(medication);
+        litter[] = {{"ACE_MedicalLitter_atropine"}};
     };
     class ATNAA: Atropine {
         displayName = ECSTRING(chemical,Take_ATNAA);
