@@ -1938,23 +1938,6 @@
             <Japanese>患者から止血帯を外すのにかかる時間</Japanese>
             <Turkish>Turnikenin hastadan çıkarılması için gereken süre</Turkish>
         </Key>
-        <Key ID="STR_KAT_Misc_StoppedCarrying%1">
-            <English>Stopped carrying %1</English>
-            <Czech>Přestal nést %1</Czech>
-            <French>Arrêt du transport de %1</French>
-            <Spanish>Solto al paciente %1</Spanish>
-            <Italian>Trasporto interrotto di %1</Italian>
-            <Portuguese>Parou de carregar %1</Portuguese>
-            <Russian>Прекратил нести %1</Russian>
-            <German>Das Tragen von %1 wurde gestoppt</German>
-            <Korean>%1의 운반 취소함</Korean>
-            <Japanese>%1 を担ぐのを止めました</Japanese>
-            <Chinese>停止搬運 %1</Chinese>
-            <Chinesesimp>已停止携带 %1</Chinesesimp>
-            <Finnish>Lakkasi kantamisen %1</Finnish>
-            <Dutch>Gestopt met het dragen van %1</Dutch>
-            <Turkish>%1 taşımayı bıraktı</Turkish>
-        </Key>
         <Key ID="STR_KAT_Misc_SubCategory_AFAK">
             <English>(AFAK) Advanced First Aid Kit</English>
             <Czech>(AFAK) Pokročilá Lékárnička</Czech>
