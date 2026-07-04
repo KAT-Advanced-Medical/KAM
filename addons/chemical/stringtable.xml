@@ -1179,7 +1179,7 @@
         <Key ID="STR_KAT_Chemical_M8_Footer_Clean">
             <English>No mark = Clean</English>
             <German>Kein Fleck = Sauber</German>
-            <Japanese>印無し = 検知無し</Japanese>
+            <Japanese>変化無し = 検知無し</Japanese>
         </Key>
         <Key ID="STR_KAT_Chemical_m8paperItem">
             <English>M8 Detection Paper</English>
