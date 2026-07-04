@@ -1204,7 +1204,7 @@
         <Key ID="STR_KAT_Chemical_deconKitItem">
             <English>M291 Decontamination Kit</English>
             <German>M291 Dekontaminationsset</German>
-            <Japanese>M291個人用除染具</Japanese>
+            <Japanese>M291 個人用除染具</Japanese>
         </Key>
         <Key ID="STR_KAT_Chemical_deconKitItem_desc">
             <English>Personal decontamination kit. Removes chemical contamination (mustard, VX) from skin and gear after exposure.</English>
