@@ -11,6 +11,11 @@ class Extended_Init_EventHandlers {
             init = QUOTE([ARR_2((_this select 0),false)] call FUNC(init));
         };
     };
+    class kat_radSource {
+        class ADDON {
+            init = QUOTE([_this select 0] call FUNC(initRadSourceObject));
+        };
+    };
 };
 
 class Extended_PostInit_EventHandlers {

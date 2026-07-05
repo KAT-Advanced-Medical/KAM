@@ -273,3 +273,468 @@
     [1, 600, 8],
     true
 ] call CBA_fnc_addSetting;
+
+// =============== Radiation ===============
+[
+    QGVAR(rad_enable),
+    "CHECKBOX",
+    [LLSTRING(SETTING_rad_enable), LLSTRING(SETTING_rad_enable_DESC)],
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_Radiation)],
+    [true],
+    true
+] call CBA_fnc_addSetting;
+
+[
+    QGVAR(rad_showSickness),
+    "CHECKBOX",
+    [LLSTRING(SETTING_rad_showSickness), LLSTRING(SETTING_rad_showSickness_DESC)],
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_Radiation)],
+    [true],
+    true
+] call CBA_fnc_addSetting;
+
+[
+    QGVAR(rad_doseThreshold_mild),
+    "SLIDER",
+    [LLSTRING(SETTING_rad_doseThreshold_mild), LLSTRING(SETTING_rad_doseThreshold_mild_DESC)],
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_Radiation)],
+    [0, 30, 1, 2],
+    true
+] call CBA_fnc_addSetting;
+
+[
+    QGVAR(rad_doseThreshold_moderate),
+    "SLIDER",
+    [LLSTRING(SETTING_rad_doseThreshold_moderate), LLSTRING(SETTING_rad_doseThreshold_moderate_DESC)],
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_Radiation)],
+    [0, 30, 2, 2],
+    true
+] call CBA_fnc_addSetting;
+
+[
+    QGVAR(rad_doseThreshold_severe),
+    "SLIDER",
+    [LLSTRING(SETTING_rad_doseThreshold_severe), LLSTRING(SETTING_rad_doseThreshold_severe_DESC)],
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_Radiation)],
+    [0, 30, 4, 2],
+    true
+] call CBA_fnc_addSetting;
+
+[
+    QGVAR(rad_doseThreshold_lethal),
+    "SLIDER",
+    [LLSTRING(SETTING_rad_doseThreshold_lethal), LLSTRING(SETTING_rad_doseThreshold_lethal_DESC)],
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_Radiation)],
+    [0, 30, 6, 2],
+    true
+] call CBA_fnc_addSetting;
+
+[
+    QGVAR(rad_prodromalDelay),
+    "TIME",
+    [LLSTRING(SETTING_rad_prodromalDelay), LLSTRING(SETTING_rad_prodromalDelay_DESC)],
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_Radiation)],
+    [0, 3600, 120],
+    true
+] call CBA_fnc_addSetting;
+
+[
+    QGVAR(rad_hemaDelay),
+    "TIME",
+    [LLSTRING(SETTING_rad_hemaDelay), LLSTRING(SETTING_rad_hemaDelay_DESC)],
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_Radiation)],
+    [0, 7200, 600],
+    true
+] call CBA_fnc_addSetting;
+
+[
+    QGVAR(rad_giDelay),
+    "TIME",
+    [LLSTRING(SETTING_rad_giDelay), LLSTRING(SETTING_rad_giDelay_DESC)],
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_Radiation)],
+    [0, 7200, 480],
+    true
+] call CBA_fnc_addSetting;
+
+[
+    QGVAR(rad_cnsDelay),
+    "TIME",
+    [LLSTRING(SETTING_rad_cnsDelay), LLSTRING(SETTING_rad_cnsDelay_DESC)],
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_Radiation)],
+    [0, 3600, 180],
+    true
+] call CBA_fnc_addSetting;
+
+[
+    QGVAR(rad_cardiacDelay),
+    "TIME",
+    [LLSTRING(SETTING_rad_cardiacDelay), LLSTRING(SETTING_rad_cardiacDelay_DESC)],
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_Radiation)],
+    [0, 3600, 300],
+    true
+] call CBA_fnc_addSetting;
+
+[
+    QGVAR(rad_protectionFactorMask),
+    "SLIDER",
+    [LLSTRING(SETTING_rad_protectionFactorMask), LLSTRING(SETTING_rad_protectionFactorMask_DESC)],
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_Radiation)],
+    [0, 1, 1, 2],
+    true
+] call CBA_fnc_addSetting;
+
+[
+    QGVAR(rad_protectionFactorCBRN),
+    "SLIDER",
+    [LLSTRING(SETTING_rad_protectionFactorCBRN), LLSTRING(SETTING_rad_protectionFactorCBRN_DESC)],
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_Radiation)],
+    [0, 1, 1, 2],
+    true
+] call CBA_fnc_addSetting;
+
+[
+    QGVAR(rad_protectionFactorRadGear),
+    "SLIDER",
+    [LLSTRING(SETTING_rad_protectionFactorRadGear), LLSTRING(SETTING_rad_protectionFactorRadGear_DESC)],
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_Radiation)],
+    [0, 1, 1, 2],
+    true
+] call CBA_fnc_addSetting;
+
+[
+    QGVAR(rad_protectionFactorVehicle),
+    "SLIDER",
+    [LLSTRING(SETTING_rad_protectionFactorVehicle), LLSTRING(SETTING_rad_protectionFactorVehicle_DESC)],
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_Radiation)],
+    [0, 1, 1, 2],
+    true
+] call CBA_fnc_addSetting;
+
+[
+    QGVAR(availRadProtection),
+    "EDITBOX",
+    [LLSTRING(SETTING_availRadProtection), LLSTRING(SETTING_availRadProtection_DISC)],
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_Radiation)],
+    "",
+    1,
+    {
+        private _array = [_this, "CfgWeapons"] call FUNC(getList);
+        missionNamespace setVariable [QGVAR(availRadProtectionList), _array, true];
+    },
+    true
+] call CBA_fnc_addSetting;
+
+[
+    QGVAR(rad_kiFactor),
+    "SLIDER",
+    [LLSTRING(SETTING_rad_kiFactor), LLSTRING(SETTING_rad_kiFactor_DESC)],
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_Radiation)],
+    [0, 1, 0.5, 2],
+    true
+] call CBA_fnc_addSetting;
+
+[
+    QGVAR(rad_kiDuration),
+    "TIME",
+    [LLSTRING(SETTING_rad_kiDuration), LLSTRING(SETTING_rad_kiDuration_DESC)],
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_Radiation)],
+    [0, 14400, 3600],
+    true
+] call CBA_fnc_addSetting;
+
+[
+    QGVAR(rad_inhalationFactor),
+    "SLIDER",
+    [LLSTRING(SETTING_rad_inhalationFactor), LLSTRING(SETTING_rad_inhalationFactor_DESC)],
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_Radiation)],
+    [0, 2, 0.1, 2],
+    true
+] call CBA_fnc_addSetting;
+
+[
+    QGVAR(rad_internalConversionRate),
+    "SLIDER",
+    [LLSTRING(SETTING_rad_internalConversionRate), LLSTRING(SETTING_rad_internalConversionRate_DESC)],
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_Radiation)],
+    [0, 1, 0.001, 4],
+    true
+] call CBA_fnc_addSetting;
+
+[
+    QGVAR(rad_internalDecayRate),
+    "SLIDER",
+    [LLSTRING(SETTING_rad_internalDecayRate), LLSTRING(SETTING_rad_internalDecayRate_DESC)],
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_Radiation)],
+    [0, 1, 0.0005, 4],
+    true
+] call CBA_fnc_addSetting;
+
+[
+    QGVAR(rad_chelationDuration),
+    "TIME",
+    [LLSTRING(SETTING_rad_chelationDuration), LLSTRING(SETTING_rad_chelationDuration_DESC)],
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_Radiation)],
+    [0, 14400, 600],
+    true
+] call CBA_fnc_addSetting;
+
+[
+    QGVAR(rad_chelationFactor),
+    "SLIDER",
+    [LLSTRING(SETTING_rad_chelationFactor), LLSTRING(SETTING_rad_chelationFactor_DESC)],
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_Radiation)],
+    [1, 50, 5, 1],
+    true
+] call CBA_fnc_addSetting;
+
+[
+    QGVAR(rad_contaminationDeposition),
+    "SLIDER",
+    [LLSTRING(SETTING_rad_contaminationDeposition), LLSTRING(SETTING_rad_contaminationDeposition_DESC)],
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_Radiation)],
+    [0, 1, 0.02, 3],
+    true
+] call CBA_fnc_addSetting;
+
+[
+    QGVAR(rad_contaminationDecay),
+    "SLIDER",
+    [LLSTRING(SETTING_rad_contaminationDecay), LLSTRING(SETTING_rad_contaminationDecay_DESC)],
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_Radiation)],
+    [0, 1, 0.002, 4],
+    true
+] call CBA_fnc_addSetting;
+
+[
+    QGVAR(rad_crossContamStrength),
+    "SLIDER",
+    [LLSTRING(SETTING_rad_crossContamStrength), LLSTRING(SETTING_rad_crossContamStrength_DESC)],
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_Radiation)],
+    [0, 50, 5, 1],
+    true
+] call CBA_fnc_addSetting;
+
+[
+    QGVAR(rad_localProximity),
+    "SLIDER",
+    [LLSTRING(SETTING_rad_localProximity), LLSTRING(SETTING_rad_localProximity_DESC)],
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_Radiation)],
+    [0, 5, 1.5, 1],
+    true
+] call CBA_fnc_addSetting;
+
+[
+    QGVAR(rad_skinBurnThreshold),
+    "SLIDER",
+    [LLSTRING(SETTING_rad_skinBurnThreshold), LLSTRING(SETTING_rad_skinBurnThreshold_DESC)],
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_Radiation)],
+    [1, 50, 5, 1],
+    true
+] call CBA_fnc_addSetting;
+
+[
+    QGVAR(rad_marrowAnemiaRate),
+    "SLIDER",
+    [LLSTRING(SETTING_rad_marrowAnemiaRate), LLSTRING(SETTING_rad_marrowAnemiaRate_DESC)],
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_Radiation)],
+    [0, 20, 2, 1],
+    true
+] call CBA_fnc_addSetting;
+
+[
+    QGVAR(rad_giFluidLossRate),
+    "SLIDER",
+    [LLSTRING(SETTING_rad_giFluidLossRate), LLSTRING(SETTING_rad_giFluidLossRate_DESC)],
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_Radiation)],
+    [0, 30, 3, 1],
+    true
+] call CBA_fnc_addSetting;
+
+[
+    QGVAR(rad_giAcidosisRate),
+    "SLIDER",
+    [LLSTRING(SETTING_rad_giAcidosisRate), LLSTRING(SETTING_rad_giAcidosisRate_DESC)],
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_Radiation)],
+    [0, 1, 0.05, 3],
+    true
+] call CBA_fnc_addSetting;
+
+[
+    QGVAR(rad_cnsHypotension),
+    "SLIDER",
+    [LLSTRING(SETTING_rad_cnsHypotension), LLSTRING(SETTING_rad_cnsHypotension_DESC)],
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_Radiation)],
+    [0, 100, 40, 0],
+    true
+] call CBA_fnc_addSetting;
+
+[
+    QGVAR(rad_feverMax),
+    "SLIDER",
+    [LLSTRING(SETTING_rad_feverMax), LLSTRING(SETTING_rad_feverMax_DESC)],
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_Radiation)],
+    [0, 5, 2, 1],
+    true
+] call CBA_fnc_addSetting;
+
+[
+    QGVAR(rad_recoveryRate),
+    "SLIDER",
+    [LLSTRING(SETTING_rad_recoveryRate), LLSTRING(SETTING_rad_recoveryRate_DESC)],
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_Radiation)],
+    [0, 0.5, 0.01, 3],
+    true
+] call CBA_fnc_addSetting;
+
+[
+    QGVAR(rad_visualEffect),
+    "CHECKBOX",
+    [LLSTRING(SETTING_rad_visualEffect), LLSTRING(SETTING_rad_visualEffect_DESC)],
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_Radiation)],
+    [true],
+    true
+] call CBA_fnc_addSetting;
+
+[
+    QGVAR(rad_infectionEnable),
+    "CHECKBOX",
+    [LLSTRING(SETTING_rad_infectionEnable), LLSTRING(SETTING_rad_infectionEnable_DESC)],
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_Radiation)],
+    [true],
+    true
+] call CBA_fnc_addSetting;
+
+[
+    QGVAR(rad_infectionChance),
+    "SLIDER",
+    [LLSTRING(SETTING_rad_infectionChance), LLSTRING(SETTING_rad_infectionChance_DESC)],
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_Radiation)],
+    [0, 1, 0.05, 3],
+    true
+] call CBA_fnc_addSetting;
+
+[
+    QGVAR(rad_infectionSeverityRate),
+    "SLIDER",
+    [LLSTRING(SETTING_rad_infectionSeverityRate), LLSTRING(SETTING_rad_infectionSeverityRate_DESC)],
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_Radiation)],
+    [0, 0.5, 0.02, 3],
+    true
+] call CBA_fnc_addSetting;
+
+[
+    QGVAR(rad_infectionDamageRate),
+    "SLIDER",
+    [LLSTRING(SETTING_rad_infectionDamageRate), LLSTRING(SETTING_rad_infectionDamageRate_DESC)],
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_Radiation)],
+    [0, 50, 15, 0],
+    true
+] call CBA_fnc_addSetting;
+
+[
+    QGVAR(rad_antibioticDuration),
+    "TIME",
+    [LLSTRING(SETTING_rad_antibioticDuration), LLSTRING(SETTING_rad_antibioticDuration_DESC)],
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_Radiation)],
+    [0, 14400, 600],
+    true
+] call CBA_fnc_addSetting;
+
+[
+    QGVAR(rad_antiemeticDuration),
+    "TIME",
+    [LLSTRING(SETTING_rad_antiemeticDuration), LLSTRING(SETTING_rad_antiemeticDuration_DESC)],
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_Radiation)],
+    [0, 14400, 900],
+    true
+] call CBA_fnc_addSetting;
+
+[
+    QGVAR(rad_filgrastimDuration),
+    "TIME",
+    [LLSTRING(SETTING_rad_filgrastimDuration), LLSTRING(SETTING_rad_filgrastimDuration_DESC)],
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_Radiation)],
+    [0, 14400, 1800],
+    true
+] call CBA_fnc_addSetting;
+
+[
+    QGVAR(rad_filgrastimFactor),
+    "SLIDER",
+    [LLSTRING(SETTING_rad_filgrastimFactor), LLSTRING(SETTING_rad_filgrastimFactor_DESC)],
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_Radiation)],
+    [1, 10, 3, 1],
+    true
+] call CBA_fnc_addSetting;
+
+[
+    QGVAR(rad_lethalCurable),
+    "CHECKBOX",
+    [LLSTRING(SETTING_rad_lethalCurable), LLSTRING(SETTING_rad_lethalCurable_DESC)],
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_Radiation)],
+    [true],
+    true
+] call CBA_fnc_addSetting;
+
+[
+    QGVAR(rad_lethalCollapseTime),
+    "TIME",
+    [LLSTRING(SETTING_rad_lethalCollapseTime), LLSTRING(SETTING_rad_lethalCollapseTime_DESC)],
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_Radiation)],
+    [0, 600, 150],
+    true
+] call CBA_fnc_addSetting;
+
+[
+    QGVAR(rad_criticalRecoveryRate),
+    "SLIDER",
+    [LLSTRING(SETTING_rad_criticalRecoveryRate), LLSTRING(SETTING_rad_criticalRecoveryRate_DESC)],
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_Radiation)],
+    [0, 0.1, 0.006, 4],
+    true
+] call CBA_fnc_addSetting;
+
+[
+    QGVAR(rad_marrowRescueDuration),
+    "TIME",
+    [LLSTRING(SETTING_rad_marrowRescueDuration), LLSTRING(SETTING_rad_marrowRescueDuration_DESC)],
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_Radiation)],
+    [0, 3600, 300],
+    true
+] call CBA_fnc_addSetting;
+
+[
+    QGVAR(rad_recrashChance),
+    "SLIDER",
+    [LLSTRING(SETTING_rad_recrashChance), LLSTRING(SETTING_rad_recrashChance_DESC)],
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_Radiation)],
+    [0, 1, 0.05, 3],
+    true
+] call CBA_fnc_addSetting;
+
+[
+    QGVAR(rad_shockableChance),
+    "SLIDER",
+    [LLSTRING(SETTING_rad_shockableChance), LLSTRING(SETTING_rad_shockableChance_DESC)],
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_Radiation)],
+    [0, 1, 0.7, 2],
+    true
+] call CBA_fnc_addSetting;
+
+[
+    QGVAR(rad_stemCellsMedLvl),
+    "LIST",
+    [LLSTRING(SETTING_rad_stemCellsMedLvl)],
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_Radiation)],
+    [[0, 1, 2], [ACELSTRING(medical_treatment,Anyone), ACELSTRING(medical_treatment,Medics), ACELSTRING(medical_treatment,Doctors)], 1],
+    true
+] call CBA_fnc_addSetting;
+
+[
+    QGVAR(rad_icReadout),
+    "CHECKBOX",
+    [LLSTRING(SETTING_rad_icReadout), LLSTRING(SETTING_rad_icReadout_DESC)],
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_Radiation)],
+    [false],
+    true
+] call CBA_fnc_addSetting;

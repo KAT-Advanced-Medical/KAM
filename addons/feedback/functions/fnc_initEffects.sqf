@@ -68,3 +68,10 @@ GVAR(ppBlurBlink) = [
     213706,
     [1]
 ] call _fnc_createEffect;
+
+// - Radiation sickness ---------------------------------------------------
+GVAR(radiationEffect) = [
+    "ColorCorrections",
+    213707,
+    [1, 1, 1, [0, 0, 0, 0], [1, 1, 1, 1], [0.3, 0.45, 0.2, 0], [0, 0, 0, 0, 0, 0, 0]]
+] call _fnc_createEffect;

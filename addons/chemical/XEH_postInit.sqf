@@ -5,6 +5,23 @@
 //Events
 ["ace_glassesChanged", LINKFUNC(breathing)] call CBA_fnc_addEventHandler;
 [QGVAR(poison), LINKFUNC(poison)] call CBA_fnc_addEventHandler;
+[QGVAR(irradiate), LINKFUNC(irradiate)] call CBA_fnc_addEventHandler;
+
+[QGVAR(attachRadSource), {
+    params ["_source", "_player"];
+    if (isNull _source || {isNull _player}) exitWith {};
+    detach _source;
+    _source attachTo [_player, [0, 0.1, 0.1]];
+}] call CBA_fnc_addEventHandler;
+
+[QGVAR(detachRadSource), {
+    params ["_source", "_player"];
+    if (isNull _source) exitWith {};
+    detach _source;
+    if (isServer && {!isNull _player}) then {
+        _source setPosATL (_player modelToWorld [0, 1, 0]);
+    };
+}] call CBA_fnc_addEventHandler;
 [QGVAR(handleGasMaskDur), LINKFUNC(handleGasMaskDur)] call CBA_fnc_addEventHandler;
 [QGVAR(addSealAction), LINKFUNC(createSealAction)] call CBA_fnc_addEventHandler;
 
@@ -51,6 +68,18 @@ missionNamespace setVariable [QGVAR(availGasmaskList), _array, true];
 
     true
 }, { false }, [24, [false, false, false]], false] call CBA_fnc_addKeybind;
+
+[CBA_SETTINGS_CAT, QGVAR(showDosimeter), LLSTRING(ShowDosimeter), {
+    if (!([ACE_player, objNull, ["isNotEscorting", "isNotInside"]] call ACEFUNC(common,canInteractWith)) || {!('KAT_Dosimeter' in assignedItems ACE_player)}) exitWith { false };
+
+    if !(GETMVAR(GVAR(DosimeterActive),false)) then {
+        [ACE_player] call FUNC(showDosimeter);
+    } else {
+        call FUNC(hideDosimeter);
+    };
+
+    true
+}, { false }, [25, [false, false, false]], false] call CBA_fnc_addKeybind;
 
 // Client-side particle tracking (all machines)
 GVAR(clientParticles) = createHashMap;
@@ -150,6 +179,75 @@ if (!isServer) exitWith {};
 
 GVAR(gasSources) = createHashMap;
 GVAR(exposureWatcherUnits) = createHashMap;
+GVAR(radSources) = createHashMap;
+GVAR(radExposedUnits) = [];
+
+[QGVAR(addRadSource), {
+    params [
+        ["_source", objNull, [objNull, []]],
+        ["_radius", 0, [0]],
+        ["_strengths", [], [[]]],
+        ["_falloff", "linear", [""]],
+        ["_key", ""],
+        ["_condition", {true}, [{}]],
+        ["_conditionArgs", []]
+    ];
+
+    private _isObject = _source isEqualType objNull;
+
+    if !(_isObject || {_source isEqualTypeParams [0, 0, 0]}) exitWith {};
+    if (_isObject && {isNull _source}) exitWith {};
+    if (_radius == 0) exitWith {};
+    if (count _strengths != 4) exitWith {};
+    if ((_strengths findIf {_x > 0}) == -1) exitWith {};
+    if (_key isEqualTo "") exitWith {};
+
+    private _hashedKey = hashValue _key;
+    if (isNil "_hashedKey") exitWith {
+        ERROR_2("Unsupported key type used: %1 - %2",_key,typeName _key);
+    };
+
+    private _sourcePos = if (_isObject) then {
+        getPosATL _source
+    } else {
+        ASLToATL _source
+    };
+
+    private _radLogic = createVehicle [QGVAR(logic), _sourcePos, [], 0, "CAN_COLLIDE"];
+
+    if (_isObject) then {
+        _radLogic attachTo [_source];
+    } else {
+        _radLogic setPosATL [_sourcePos select 0, _sourcePos select 1, 0];
+    };
+
+    if (_hashedKey in GVAR(radSources)) then {
+        [QGVAR(removeRadSource), _key] call CBA_fnc_localEvent;
+    };
+
+    GVAR(radSources) set [_hashedKey, [_radLogic, _radius, _strengths, _falloff, _condition, _conditionArgs]];
+}] call CBA_fnc_addEventHandler;
+
+[QGVAR(removeRadSource), {
+    params ["_key"];
+    private _hashedKey = hashValue _key;
+
+    if (isNil "_hashedKey") exitWith {
+        ERROR_2("Unsupported key type used: %1 - %2",_key,typeName _key);
+    };
+
+    (GVAR(radSources) deleteAt _hashedKey) params [["_radLogic", objNull]];
+
+    detach _radLogic;
+    deleteVehicle _radLogic;
+}] call CBA_fnc_addEventHandler;
+
+[QGVAR(serverRegisterContamSource), LINKFUNC(registerContaminatedSource)] call CBA_fnc_addEventHandler;
+
+[QGVAR(serverRemoveContamSource), {
+    params ["_unit"];
+    [QGVAR(removeRadSource), _unit] call CBA_fnc_localEvent;
+}] call CBA_fnc_addEventHandler;
 
 // Server-side: register a unit with the exposure watcher PFH (idempotent).
 // Triggered by FUNC(addToExposureWatcher) on the unit's owner.
@@ -257,4 +355,5 @@ GVAR(exposureWatcherUnits) = createHashMap;
 }] call CBA_fnc_addEventHandler;
 
 [LINKFUNC(gasManagerPFH), GAS_MANAGER_PFH_DELAY, []] call CBA_fnc_addPerFrameHandler;
+[LINKFUNC(radManagerPFH), RAD_MANAGER_PFH_DELAY, []] call CBA_fnc_addPerFrameHandler;
 

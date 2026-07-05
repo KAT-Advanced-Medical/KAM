@@ -238,4 +238,66 @@ class RscTitles
             };
         };
     };
+
+    class KAT_Dosimeter
+    {
+        idd = 18836;
+        enableSimulation = 1;
+        movingEnable = 0;
+        fadeIn = 0;
+        fadeOut = 1;
+        duration = 10e10;
+        onLoad = "uiNamespace setVariable ['KAT_Dosimeter', _this select 0];";
+        class controls
+        {
+            // "DOSIMETER" header, bottom-right corner stack.
+            class KatDosiHeader: RscText
+            {
+                idc = 18813;
+                style = ST_RIGHT;
+                shadow = 1;
+                font = "PuristaBold";
+                text = "$STR_KAT_Chemical_Dosimeter_Header";
+                x = QUOTE(SAFEZONE_X_RIGHTEDGE - FRAME_W(22));
+                y = QUOTE(SAFEZONE_Y_LOWEDGE - FRAME_H(11));
+                w = QUOTE(FRAME_W(20));
+                h = QUOTE(FRAME_H(3));
+                colorBackground[] = {0,0,0,0};
+                colorText[] = {0.55,0.85,0.35,0.9};
+                sizeEx = QUOTE(FRAME_H(2));
+            };
+            // Current dose-rate (Gy/h).
+            class KatDosiRate: RscText
+            {
+                idc = 18814;
+                style = ST_RIGHT;
+                shadow = 1;
+                font = "PuristaMedium";
+                text = "0.000 Gy/h";
+                x = QUOTE(SAFEZONE_X_RIGHTEDGE - FRAME_W(22));
+                y = QUOTE(SAFEZONE_Y_LOWEDGE - FRAME_H(8));
+                w = QUOTE(FRAME_W(20));
+                h = QUOTE(FRAME_H(3));
+                colorBackground[] = {0,0,0,0};
+                colorText[] = {0.3,0.3,0.3,0.9};
+                sizeEx = QUOTE(FRAME_H(2.2));
+            };
+            // Accumulated whole-body dose (Gy).
+            class KatDosiDose: RscText
+            {
+                idc = 18815;
+                style = ST_RIGHT;
+                shadow = 1;
+                font = "PuristaMedium";
+                text = "0.000 Gy";
+                x = QUOTE(SAFEZONE_X_RIGHTEDGE - FRAME_W(22));
+                y = QUOTE(SAFEZONE_Y_LOWEDGE - FRAME_H(5));
+                w = QUOTE(FRAME_W(20));
+                h = QUOTE(FRAME_H(3));
+                colorBackground[] = {0,0,0,0};
+                colorText[] = {0.3,0.3,0.3,0.9};
+                sizeEx = QUOTE(FRAME_H(2.2));
+            };
+        };
+    };
 };

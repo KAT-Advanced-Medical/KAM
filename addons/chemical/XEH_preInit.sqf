@@ -10,5 +10,6 @@ PREP_RECOMPILE_END;
 #include "initSettings.inc.sqf"
 
 call FUNC(initGasRegistry);
+call FUNC(initRadProfiles);
 
 ADDON = true;

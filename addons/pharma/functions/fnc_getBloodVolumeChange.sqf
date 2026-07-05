@@ -142,7 +142,7 @@ if (_enableFluidShift) then {
 
     if (_defaultShift) then {
         _ISP = _ISP + ((((DEFAULT_ISP - _ISP) max -2) min 2) *_deltaT);
-        _SRBC = _SRBC + ((((DEFAULT_SRBC - _SRBC) max -1) min 1) * _deltaT);
+        _SRBC = _SRBC + ((((DEFAULT_SRBC - _SRBC) max -1) min 1) * _deltaT * (_unit getVariable [QEGVAR(chemical,radMarrowFactor), 1]));
     };
 };
 
