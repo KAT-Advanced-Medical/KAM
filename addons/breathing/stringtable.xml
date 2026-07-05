@@ -1750,6 +1750,18 @@
             <Japanese>心停止によってSpO2が低下するかどうかを制御します。</Japanese>
             <Turkish>Kardiyak arrest sırasında SpO2’nin düşüp düşmeyeceğini kontrol eder</Turkish>
         </Key>
+        <Key ID="STR_KAT_Breathing_SETTING_SpO2_CPR_Rise">
+            <English>SpO2 rises during CPR</English>
+        </Key>
+        <Key ID="STR_KAT_Breathing_SETTING_SpO2_CPR_Rise_DESC">
+            <English>When enabled, CPR alone allows SpO2 to rise without a BVM in the advanced vitals system</English>
+        </Key>
+        <Key ID="STR_KAT_Breathing_SETTING_SpO2_CPR_RiseMultiplier">
+            <English>SpO2 rise during CPR multiplier</English>
+        </Key>
+        <Key ID="STR_KAT_Breathing_SETTING_SpO2_CPR_RiseMultiplier_DESC">
+            <English>Scales how far actual ventilation is pushed above demand during CPR without a BVM. Higher values raise SpO2 faster; 0 leaves ventilation balanced for the slowest recovery. Requires SpO2 rises during CPR to be enabled</English>
+        </Key>
         <Key ID="STR_KAT_Breathing_SETTING_SpO2_cardiacActive">
             <English>Activate cardiac arrest SpO2 value</English>
             <Czech>Aktivace hodnoty SpO2 pro srdeční zástavu</Czech>
