@@ -33,6 +33,7 @@ params ["_unit", "_actualHeartRate", "_anerobicPressure", "_bloodGas", "_tempera
 #define PAO2_MAX_CHANGE 0.1
 #define DEFAULT_FIO2 0.21
 #define MINIMUM_DEPTH 0.2
+#define CPR_VENTILATION_BOOST 200
 
 private _respiratoryRate = 0;
 private _respiratoryDepression = 0;
@@ -48,13 +49,14 @@ private _cprAssistSpO2 = _cprActive && {EGVAR(breathing,SpO2_CPR_Rise)} && {!(_u
 switch (true) do {
     case ((IN_CRDC_ARRST(_unit)) && _cprAssistSpO2): {
         // Dedicated CPR controller: rate and depth are held at zero so chest compressions do not produce
-        // a respiratory rate, which would falsely read as return of spontaneous breathing (ROSC). Demand and
-        // actual ventilation are balanced so oxygenation recovers without RR swinging on PaCO2.
+        // a respiratory rate, which would falsely read as return of spontaneous breathing (ROSC). Actual
+        // ventilation is pushed above demand so oxygenation recovers without RR swinging on PaCO2. The boost
+        // is scaled by a setting so the recovery speed can be tuned.
         _demandVentilation = MINIMUM_VENTILATION;
         _respiratoryDepression = 1;
         _respiratoryRate = 0;
         _respiratoryDepth = 0;
-        _actualVentilation = MINIMUM_VENTILATION;
+        _actualVentilation = MINIMUM_VENTILATION + (CPR_VENTILATION_BOOST * EGVAR(breathing,SpO2_CPR_RiseMultiplier));
     };
     case (IN_CRDC_ARRST(_unit)): {
         // When in arrest, there should be no effecive breaths but still a minimum O2 demand. Zero O2 demand would mean a dead patient. Actual ventilation is 1 to prevent issues in the gas tension functions
