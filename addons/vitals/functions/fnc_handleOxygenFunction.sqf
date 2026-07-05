@@ -41,8 +41,9 @@ private _demandVentilation = 0;
 private _actualVentilation = 0;
 private _previousCyclePaco2 = (_bloodGas select 0);
 private _previousCyclePao2 = (_bloodGas select 1);
+private _cprActive = alive (_unit getVariable [QACEGVAR(medical,CPR_provider), objNull]);
 
-if (IN_CRDC_ARRST(_unit)) then { 
+if ((IN_CRDC_ARRST(_unit)) && {!(_cprActive && EGVAR(breathing,SpO2_CPR_Rise))}) then {
     // When in arrest, there should be no effecive breaths but still a minimum O2 demand. Zero O2 demand would mean a dead patient. Actual ventilation is 1 to prevent issues in the gas tension functions
     _demandVentilation = MINIMUM_VENTILATION;
     _respiratoryDepression = 1;
