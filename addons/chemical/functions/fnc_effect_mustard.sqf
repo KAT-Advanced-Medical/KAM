@@ -36,7 +36,7 @@ private _eyeMax = missionNamespace getVariable [QGVAR(mustard_eyeOnsetMax), 600]
 private _burnMin = missionNamespace getVariable [QGVAR(mustard_burnOnsetMin), 600];
 private _burnMax = missionNamespace getVariable [QGVAR(mustard_burnOnsetMax), 1200];
 
-if (missionNamespace getVariable [QEGVAR(ophthalmology,enable), false]) then {
+if (EGVAR(ophthalmology,enable)) then {
     _unit setVariable [QGVAR(mustardDeadline_eye),  CBA_missionTime + _eyeMin  + random (_eyeMax  - _eyeMin),  true];
 };
 _unit setVariable [QGVAR(mustardDeadline_burn), CBA_missionTime + _burnMin + random (_burnMax - _burnMin), true];
