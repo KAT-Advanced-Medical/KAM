@@ -36,14 +36,13 @@ A feature introduced by this mod enables you to find all the medical-related ite
 
 ---
 
-## 🏷️ Table Legend & Action Scopes
+## 🏷️ Legend
 
-### Use Classnameification (Row Tags)
+### Usage
 
-* **[C]**: Shockable Cardiac Arrest treatment medicines (One-time use only / Red colour equivalent).
-* **[S]**: Surgery items (Depends on settings / Orange colour equivalent).
-* **No Tag / Yellow**: No limit.
-* **Blue Text**: Pain Suppressor*
+* **[C]**: Shockable Cardiac Arrest treatment medicines (One-time use only).
+* **[S]**: Surgery items (Depends on settings).
+* **Blue Text**: Pain Suppressor
 
 ---
 
