@@ -209,7 +209,7 @@ A feature introduced by this mod enables you to find all the medical-related ite
   * *Condition:* Airways are clear, unconscious | *Action:* Head
   * *Class:* `kat_pocketBVM`
 * **Portable Oxygen Tank:** Comes in two volumes (150L or 300L). Used to provide oxygen for BVM. Oxygen can be refilled at medical facilities/vehicles (ACE interaction). Medical facilities/vehicles act as infinite oxygen sources for BVM actions, if performed by them.  
-  * *Condition:* - | *Action:* **-**
+  * *Condition:* -
   * *Class:* `kat_oxygenTank_150` / `kat_oxygenTank_300`
 
 ### Trauma & Circulation Diagnostics
@@ -251,10 +251,10 @@ A feature introduced by this mod enables you to find all the medical-related ite
   * *Condition:* Unconscious, not undergoing CPR | *Action:* Torso
   * *Class:* `kat_AED` / `kat_X_AED`
 * **Surgical Kit:** Used for wounds stitching.  
-  * *Condition:* - | *Action:* **L, T, H**
+  * *Condition:* - | *Action:* Limb, Torso, Head
   * *Class:* `ACE_surgicalKit`
 * **Personal Aid Kit:** Removes all injuries.  
-  * *Condition:* Patient is stable | *Action:* **-**
+  * *Condition:* Patient is stable
   * *Class:* `ACE_personalAidKit`
 * **IV Stand:** Allows administering saline from a stand.
   * *Class:* `Land_IntravenStand_01_empty_F`
