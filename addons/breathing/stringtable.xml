@@ -1756,7 +1756,7 @@
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_SpO2_CPR_Rise_DESC">
             <English>When enabled, CPR alone allows SpO2 to rise without a BVM in the advanced vitals system</English>
-            <Japanese>有効化すると、高度なバイタルの有効時のCPR中にBVMを使用せずともSpO2値が上昇します。</Japanese>
+            <Japanese>有効化すると、高度なバイタルの有効時にBVMを使用せずともCPR中のSpO2値が上昇します。</Japanese>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_SpO2_CPR_RiseMultiplier">
             <English>SpO2 rise during CPR multiplier</English>
