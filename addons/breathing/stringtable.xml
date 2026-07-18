@@ -1764,7 +1764,7 @@
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_SpO2_CPR_RiseMultiplier_DESC">
             <English>Scales how far actual ventilation is pushed above demand during CPR without a BVM. Higher values raise SpO2 faster; 0 leaves ventilation balanced for the slowest recovery. Requires SpO2 rises during CPR to be enabled</English>
-            <Japanese>CPR中の換気量が需要をどれだけ上回るかを調整します。 値が大きいほどSpO2の上昇も速くなります。 値を0に設定すると換気量のバランスを保ち、回復は最も遅くなります。 「CPR中のSpO2値上昇」の有効化が必要です。</Japanese>
+            <Japanese>CPR中の換気量が需要をどれだけ上回るかを調整します。 値が大きいほどSpO2の上昇も速くなります。 値を0に設定すると換気量のバランスを保ち、回復は最も遅くなります。 "CPR中のSpO2値上昇"の有効化が必要です。</Japanese>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_SpO2_cardiacActive">
             <English>Activate cardiac arrest SpO2 value</English>
