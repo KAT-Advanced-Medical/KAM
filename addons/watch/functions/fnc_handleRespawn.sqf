@@ -20,6 +20,8 @@
 params ["_unit","_dead"];
 TRACE_2("handleRespawn",_unit,_dead);
 
+if (!local _unit) exitWith {};
+
 _unit setVariable [QGVAR(rangerStart), false, true];
 _unit setVariable [QGVAR(rangerTimer), 0, true];
 _unit setVariable [QGVAR(rangerHands), true, true];
