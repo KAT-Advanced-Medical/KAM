@@ -25,7 +25,7 @@ class CfgMagazines {
 
         displayName = CSTRING(Carbonate_Box_Display);
         descriptionShort = CSTRING(Carbonate_DescShort);
-        model = "\A3\Structures_F_EPA\Items\Medical\Painkillers_F.p3d";
+        model = QPATHTOF(models\carbonate\carbonate.p3d);
         picture = QPATHTOF(ui\icon_Carbonate.paa);
 
         ammo = "";
