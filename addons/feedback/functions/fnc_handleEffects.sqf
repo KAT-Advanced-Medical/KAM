@@ -46,7 +46,7 @@ private _eyeInjuries        = GET_EYE_INJURIES(ACE_player);
 
 [!_unconscious, _poisoned, ACE_player] call FUNC(effectCoughing);
 [!_unconscious, _tear] call FUNC(effectTearHaze);
-[!_unconscious, _wheeze, ACE_player] call (effectBreathingWheeze);
+[!_unconscious, _wheeze, ACE_player] call FUNC(effectBreathingWheeze);
 [!_unconscious, _eyeInjurySeverity] call FUNC(effectEyeInjury);
 [!_unconscious, _eyeInjuries, _manualUpdate] call FUNC(effectHurtEye);
 

@@ -17,7 +17,7 @@ The non-lethal one. CS is a riot-control irritant — it won't injure anyone med
 
 - **Cloud:** white / pale, lasts about 60 seconds.
 - **Effect:** there's a configurable chance of dropping your weapon while inside the cloud (off by default — set *Drop Weapon Chance* above 0 to enable it).
-- **Treatment:** none needed. Step out and it passes.
+- **Treatment:** none needed. Step out and it passes after about 30 seconds (*CS Gas Duration*).
 - **Delivery of note:** the `KAT_M7A3` hand grenade is a dedicated CS gas grenade.
 
 ### Chlorine (Level 1)

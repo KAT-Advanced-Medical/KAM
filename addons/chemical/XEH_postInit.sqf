@@ -151,6 +151,10 @@ if (!isServer) exitWith {};
 GVAR(gasSources) = createHashMap;
 GVAR(exposureWatcherUnits) = createHashMap;
 
+// Units the gas manager touched on its previous tick, so it can clear areaIntensity
+// on the ones that have since left every cloud
+GVAR(exposedUnits) = [];
+
 // Server-side: register a unit with the exposure watcher PFH (idempotent).
 // Triggered by FUNC(addToExposureWatcher) on the unit's owner.
 [QGVAR(serverAddExposureWatcher), {
@@ -230,7 +234,7 @@ GVAR(exposureWatcherUnits) = createHashMap;
         _gasLogic setVariable [QGVAR(effectsJipID), _effectsJipID];
     };
 
-    GVAR(gasSources) set [_hashedKey, [_gasLogic, _radius, _gasLevel, _condition, _conditionArgs]];
+    GVAR(gasSources) set [_hashedKey, [_gasLogic, _radius, _gasLevel, _condition, _conditionArgs, _isSealable]];
 }] call CBA_fnc_addEventHandler;
 
 [QGVAR(removeGasSource), {

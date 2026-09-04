@@ -18,7 +18,7 @@
 
 params ["_medic", "_patient"];
 
-private _checkArray = _patient nearEntities 10;
+private _checkArray = _patient nearEntities ["AllVehicles", 10];
 private _return = false;
 
 {
