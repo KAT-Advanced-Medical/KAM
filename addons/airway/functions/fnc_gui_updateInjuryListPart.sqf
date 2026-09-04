@@ -20,7 +20,7 @@
 
 params ["_ctrl", "_target", "_selectionN", "_entries"];
 
-if (_target getVariable [QGVAR(overstretch), false] && _selectionN isEqualTo 0) then {
+if (_target getVariable [QGVAR(headTilt), false] && _selectionN isEqualTo 0) then {
     _entries pushBack [LLSTRING(Hyperextended), [0.1, 1, 1, 1]];
 };
 
