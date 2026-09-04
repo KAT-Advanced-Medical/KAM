@@ -230,7 +230,7 @@ GVAR(exposureWatcherUnits) = createHashMap;
         _gasLogic setVariable [QGVAR(effectsJipID), _effectsJipID];
     };
 
-    GVAR(gasSources) set [_hashedKey, [_gasLogic, _radius, _gasLevel, _condition, _conditionArgs]];
+    GVAR(gasSources) set [_hashedKey, [_gasLogic, _radius, _gasLevel, _condition, _conditionArgs, _isSealable]];
 }] call CBA_fnc_addEventHandler;
 
 [QGVAR(removeGasSource), {
