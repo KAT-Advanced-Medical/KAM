@@ -151,6 +151,10 @@ if (!isServer) exitWith {};
 GVAR(gasSources) = createHashMap;
 GVAR(exposureWatcherUnits) = createHashMap;
 
+// Units the gas manager touched on its previous tick, so it can clear areaIntensity
+// on the ones that have since left every cloud
+GVAR(exposedUnits) = [];
+
 // Server-side: register a unit with the exposure watcher PFH (idempotent).
 // Triggered by FUNC(addToExposureWatcher) on the unit's owner.
 [QGVAR(serverAddExposureWatcher), {

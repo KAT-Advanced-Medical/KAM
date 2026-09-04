@@ -706,6 +706,14 @@
             <Dutch>Bepaald hoelang je in gas kan staan zonder dat je geïnfecteerd raakt.</Dutch>
             <Turkish>Gaz maskesi takılıyken enfekte olmadan gaz içinde ne kadar süre dayanabileceğinizi belirler.</Turkish>
         </Key>
+        <Key ID="STR_KAT_Chemical_SETTING_csDuration">
+            <English>CS Gas Duration</English>
+            <German>CS-Gas Dauer</German>
+        </Key>
+        <Key ID="STR_KAT_Chemical_SETTING_csDuration_DESC">
+            <English>How long the tear gas irritation lasts after leaving the cloud</English>
+            <German>Wie lange die Reizung durch Tränengas nach dem Verlassen der Wolke anhält</German>
+        </Key>
         <Key ID="STR_KAT_Chemical_SETTING_dropWeaponChance">
             <English>Drop Weapon Chance</English>
             <Czech>Šance na upuštění zbraně</Czech>
