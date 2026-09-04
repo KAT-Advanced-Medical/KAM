@@ -33,6 +33,15 @@ _unit setVariable [QGVAR(infectionArray), _currentInfectionArray, true];
 private _maxOnset = missionNamespace getVariable [QGVAR(chlorine_onsetTime), 30];
 private _currentInfection = _unit getVariable [QGVAR(infectionTime), _maxOnset];
 
+private _now = CBA_missionTime;
+private _timeOutOfCloud = (_now - (_unit getVariable [QGVAR(chlorineLastTick), -1e9])) - GAS_MANAGER_PFH_DELAY;
+
+if (_timeOutOfCloud > 0) then {
+    _currentInfection = (_currentInfection + _timeOutOfCloud) min _maxOnset;
+};
+
+_unit setVariable [QGVAR(chlorineLastTick), _now, true];
+
 private _timeLeft = (_currentInfection - 1) max 0;
 
 if (_currentInfection != _timeLeft) then {
