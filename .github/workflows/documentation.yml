@@ -6,7 +6,9 @@ on:
     - dev-Tomcat
 
 permissions:
-    contents: read
+    contents: write
+    issues: write
+    pull-requests: read
 
 jobs:
   update:
