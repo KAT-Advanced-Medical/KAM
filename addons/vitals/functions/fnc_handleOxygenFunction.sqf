@@ -1,7 +1,7 @@
 #include "..\script_component.hpp"
 /*
  * Author: Mazinski
- * Updates the respiratory variables 
+ * Updates the respiratory variables
  *
  * Arguments:
  * 0: The Unit <OBJECT>
@@ -13,7 +13,7 @@
  * 6: Opioid Depression <NUMBER>
  * 7: ACE Fatigue <NUMBER>
  * 8: Time since last update <NUMBER>
- * 9: Sync value? <BOOL> 
+ * 9: Sync value? <BOOL>
  *
  * ReturnValue:
  * Current O2 Saturation <NUMBER>
@@ -33,6 +33,7 @@ params ["_unit", "_actualHeartRate", "_anerobicPressure", "_bloodGas", "_tempera
 #define PAO2_MAX_CHANGE 0.1
 #define DEFAULT_FIO2 0.21
 #define MINIMUM_DEPTH 0.2
+#define CPR_VENTILATION_BOOST 200
 
 private _respiratoryRate = 0;
 private _respiratoryDepression = 0;
@@ -41,36 +42,53 @@ private _demandVentilation = 0;
 private _actualVentilation = 0;
 private _previousCyclePaco2 = (_bloodGas select 0);
 private _previousCyclePao2 = (_bloodGas select 1);
+private _cprActive = alive (_unit getVariable [QACEGVAR(medical,CPR_provider), objNull]);
+// When the setting is enabled, CPR without a BVM lets SpO2 recover through chest compressions alone
+private _cprAssistSpO2 = _cprActive && {EGVAR(breathing,SpO2_CPR_Rise)} && {!(_unit getVariable [QEGVAR(breathing,BVMInUse), false])};
 
-if (IN_CRDC_ARRST(_unit)) then { 
-    // When in arrest, there should be no effecive breaths but still a minimum O2 demand. Zero O2 demand would mean a dead patient. Actual ventilation is 1 to prevent issues in the gas tension functions
-    _demandVentilation = MINIMUM_VENTILATION;
-    _respiratoryDepression = 1;
-    _respiratoryRate = [0, 20] select (_unit getVariable [QEGVAR(breathing,BVMInUse), false]);
-    _respiratoryDepth = [0, 10] select (_unit getVariable [QEGVAR(breathing,BVMInUse), false]);
-    _actualVentilation = 1;
-} else {
-    // Ventilatory Demand comes from Heart Rate with increase demand from PaCO2 levels 
-    _demandVentilation = ((((_actualHeartRate * HEART_RATE_CO2_MULTIPLIER) / _anerobicPressure) + ((_previousCyclePaco2 - DEFAULT_PACO2) * 200)) max MINIMUM_VENTILATION);
+switch (true) do {
+    case ((IN_CRDC_ARRST(_unit)) && _cprAssistSpO2): {
+        // Dedicated CPR controller: rate and depth are held at zero so chest compressions do not produce
+        // a respiratory rate, which would falsely read as return of spontaneous breathing (ROSC). Actual
+        // ventilation is pushed above demand so oxygenation recovers without RR swinging on PaCO2. The boost
+        // is scaled by a setting so the recovery speed can be tuned.
+        _demandVentilation = MINIMUM_VENTILATION;
+        _respiratoryDepression = 1;
+        _respiratoryRate = 0;
+        _respiratoryDepth = 0;
+        _actualVentilation = MINIMUM_VENTILATION + (CPR_VENTILATION_BOOST * EGVAR(breathing,SpO2_CPR_RiseMultiplier));
+    };
+    case (IN_CRDC_ARRST(_unit)): {
+        // When in arrest, there should be no effecive breaths but still a minimum O2 demand. Zero O2 demand would mean a dead patient. Actual ventilation is 1 to prevent issues in the gas tension functions
+        _demandVentilation = MINIMUM_VENTILATION;
+        _respiratoryDepression = 1;
+        _respiratoryRate = [0, 20] select (_unit getVariable [QEGVAR(breathing,BVMInUse), false]);
+        _respiratoryDepth = [0, 10] select (_unit getVariable [QEGVAR(breathing,BVMInUse), false]);
+        _actualVentilation = 1;
+    };
+    default {
+        // Ventilatory Demand comes from Heart Rate with increase demand from PaCO2 levels
+        _demandVentilation = ((((_actualHeartRate * HEART_RATE_CO2_MULTIPLIER) / _anerobicPressure) + ((_previousCyclePaco2 - DEFAULT_PACO2) * 200)) max MINIMUM_VENTILATION);
 
-    // Tidal Volume is modified by respiratory depth which can be supressed by opioids and pneumothroax
-    _respiratoryDepth = [((DEFAULT_RESPIRATORY_DEPTH) - (_opioidDepression / 1.5)), 10] select (_unit getVariable [QEGVAR(breathing,BVMInUse), false]);
-    private _tidalVolume = GET_KAT_SURFACE_AREA(_unit) * (_respiratoryDepth / 10);
-    
-    // Respiratory Rate Calculation
-    _respiratoryRate = [((_demandVentilation / _tidalVolume)) min MAXIMUM_RR, 20] select (_unit getVariable [QEGVAR(breathing,BVMInUse), false]);
+        // Tidal Volume is modified by respiratory depth which can be supressed by opioids and pneumothroax
+        _respiratoryDepth = [((DEFAULT_RESPIRATORY_DEPTH) - (_opioidDepression / 1.5)), 10] select (_unit getVariable [QEGVAR(breathing,BVMInUse), false]);
+        private _tidalVolume = GET_KAT_SURFACE_AREA(_unit) * (_respiratoryDepth / 10);
 
-    // If respiratory rate is low due to PaCO2, it starts increasing faster to compensate
-    if (_previousCyclePaco2 > 50) then { _respiratoryRate = (_respiratoryRate + ((_previousCyclePaco2 - 50) * 0.2)) min MAXIMUM_RR};
+        // Respiratory Rate Calculation
+        _respiratoryRate = [((_demandVentilation / _tidalVolume)) min MAXIMUM_RR, 20] select (_unit getVariable [QEGVAR(breathing,BVMInUse), false]);
 
-    _actualVentilation = _tidalVolume * _respiratoryRate;
+        // If respiratory rate is low due to PaCO2, it starts increasing faster to compensate
+        if (_previousCyclePaco2 > 50) then { _respiratoryRate = (_respiratoryRate + ((_previousCyclePaco2 - 50) * 0.2)) min MAXIMUM_RR};
+
+        _actualVentilation = _tidalVolume * _respiratoryRate;
+    };
 };
 
 private _paco2 = 40;
 
 if (EGVAR(breathing,paco2Active)) then {
     // The greater the imbalance between CO2 explusion and O2 intake, the higher PaCO2 gets
-    _paco2 = if ((_demandVentilation / _actualVentilation) == 1) then { _previousCyclePaco2 + (PACO2_MAX_CHANGE min (-PACO2_MAX_CHANGE max ((DEFAULT_PACO2 + ((_anerobicPressure max 1) - 1) * 150) - _previousCyclePaco2))) } else { [ _previousCyclePaco2 - (PACO2_MAX_CHANGE * _deltaT), _previousCyclePaco2 + (PACO2_MAX_CHANGE * _deltaT)] select ((_demandVentilation / _actualVentilation) > 1) };                                    
+    _paco2 = if ((_demandVentilation / _actualVentilation) == 1) then { _previousCyclePaco2 + (PACO2_MAX_CHANGE min (-PACO2_MAX_CHANGE max ((DEFAULT_PACO2 + ((_anerobicPressure max 1) - 1) * 150) - _previousCyclePaco2))) } else { [ _previousCyclePaco2 - (PACO2_MAX_CHANGE * _deltaT), _previousCyclePaco2 + (PACO2_MAX_CHANGE * _deltaT)] select ((_demandVentilation / _actualVentilation) > 1) };
 };
 
 private _etco2 = 37;
@@ -84,7 +102,7 @@ if (IN_CRDC_ARRST(_unit)) then {
         _etco2 = 0;
     };
 } else {
-    // Generated ETCO2 quadratic. Ensures ETCO2 moves with Respiratory Rate and is constantly below PaCO2 
+    // Generated ETCO2 quadratic. Ensures ETCO2 moves with Respiratory Rate and is constantly below PaCO2
     _etco2 = (((-0.0416667 * (_respiratoryRate^2)) + (3.09167 * (_respiratoryRate))) * (_respiratoryDepth / 10 )) max 5;
 };
 
@@ -95,7 +113,7 @@ if (EGVAR(pharma,kidneyAction)) then {
     // Extenal pH impacts from saline is included
     _externalPh = _unit getVariable [QEGVAR(pharma,externalPh), 0];
 
-    // Adjust dissociation constant based on temperature 
+    // Adjust dissociation constant based on temperature
     private _phConstant = ((-0.00006653 * (_temperature ^ 2)) - (0.03268 * _temperature) + 7.4);
 
     // pH is from the Henderson-Hasselbalch equation
@@ -104,10 +122,10 @@ if (EGVAR(pharma,kidneyAction)) then {
 
 // Fractional Oxygen when breathing normal air is 0.21, 1 when breathing 100% Oxygen, and 0 when no air is being brought into the lungs
 private _fio2 = switch (true) do {
-    case ((_unit getVariable [QEGVAR(airway,occluded), false]) || (_unit getVariable [QEGVAR(airway,obstruction), false])): { 
-        [0, DEFAULT_FIO2] select ((_unit getVariable [QEGVAR(airway,recovery), false]) || (_unit getVariable [QEGVAR(airway,overstretch), false])) 
+    case ((_unit getVariable [QEGVAR(airway,occluded), false]) || (_unit getVariable [QEGVAR(airway,obstruction), false])): {
+        [0, DEFAULT_FIO2] select ((_unit getVariable [QEGVAR(airway,recovery), false]) || (_unit getVariable [QEGVAR(airway,overstretch), false]))
     };
-    case ((_respiratoryRate == 0) && (EGVAR(breathing,SpO2_perfusion))): { 0 };
+    case ((_respiratoryRate == 0) && (EGVAR(breathing,SpO2_perfusion)) && !_cprAssistSpO2): { 0 };
     case ((_unit getVariable [QEGVAR(chemical,airPoisoning), false]) || (_unit getVariable [QEGVAR(breathing,tensionpneumothorax), false]) || (_unit getVariable [QEGVAR(breathing,hemopneumothorax), false])): { 0 };
     case (_unit getVariable [QEGVAR(breathing,oxygenMaskActive), false]): { 0.95 };
     case (_unit getVariable [QEGVAR(breathing,oxygenTankConnected), false]): { 1 };
@@ -124,8 +142,10 @@ private _pao2 = (DEFAULT_PAO2 - ((DEFAULT_ECB / ((GET_BODY_FLUID(_unit) select 0
 _pao2 = (((linearConversion[-50, 50, (_pALVo2 - _pao2), -20, 20, false]) + _pao2) min _pALVo2) max 0;
 
 private _arrestPerfusion = [1, (1 * EGVAR(breathing,SpO2_PerfusionMultiplier))] select ((IN_CRDC_ARRST(_unit)) && (EGVAR(breathing,SpO2_perfusion)));
+// Scale positive PaO2 shift rate when BVM with supplemental O2 is in use
+private _bvmPositiveMultiplier = [1, EGVAR(breathing,BVMOxygen_Multiplier)] select ((_unit getVariable [QEGVAR(breathing,BVMInUse), false]) && {_unit getVariable [QEGVAR(breathing,oxygenTankConnected), false]});
 // PaO2 moves in controlled steps to prevent hard movements when Ventilation Demand spikes
-_pao2 = if (_previousCyclePao2 != _pao2) then { ([ (_previousCyclePao2 - ((PAO2_MAX_CHANGE * EGVAR(breathing,SpO2_MultiplyNegative) * _arrestPerfusion) * _deltaT)) , (_previousCyclePao2 + ((PAO2_MAX_CHANGE * EGVAR(breathing,SpO2_MultiplyPositive)) * _deltaT))] select ((_previousCyclePao2 - _pao2) < 0)) } else { _pao2 };
+_pao2 = if (_previousCyclePao2 != _pao2) then { ([ (_previousCyclePao2 - ((PAO2_MAX_CHANGE * EGVAR(breathing,SpO2_MultiplyNegative) * _arrestPerfusion) * _deltaT)) , (_previousCyclePao2 + ((PAO2_MAX_CHANGE * EGVAR(breathing,SpO2_MultiplyPositive) * _bvmPositiveMultiplier) * _deltaT))] select ((_previousCyclePao2 - _pao2) < 0)) } else { _pao2 };
 
 // Oxy-Hemo Dissociation Curve, driven by PaO2 with shaping done by pH.
 private _o2Sat = (((_pao2 max 1)^2.7 / ((25 - (((_pH / DEFAULT_PH) - 1) * 150))^2.7 + _pao2^2.7))) min 0.999;
