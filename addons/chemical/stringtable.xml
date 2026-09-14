@@ -590,7 +590,6 @@
             <Turkish>Gaz maskesini tak</Turkish>
         </Key>
         <Key ID="STR_KAT_Chemical_SubCategory_Protection">
-        <Key ID="STR_KAT_Chemical_SubCategory_Protection">
             <English>01. Protection &amp; Gear</English>
             <German>01. Schutz &amp; Ausrüstung</German>
             <Japanese>01. 防護装具</Japanese>
@@ -634,7 +633,6 @@
             <English>09. Identification (Detector &amp; M8 Paper)</English>
             <German>09. dentifikation (Detektor &amp; M8-Papier)</German>
             <Japanese>09. 識別 (検知器とM8試験紙)</Japanese>
-        </Key>
         </Key>
         <Key ID="STR_KAT_Chemical_SETTING_AVAIL_GASMASK">
             <English>Accepted gas masks</English>
