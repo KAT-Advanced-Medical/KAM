@@ -2,7 +2,7 @@ class CfgAmmo {
 
     class SmokeShellArty;
     class KAT_SmokeShellArty: SmokeShellArty {
-        smokeColor[] = {0,0,0,0};
+        smokeColor[] = {0,0,0,0}; 
     };
 
     class Smoke_82mm_AMOS_White;
