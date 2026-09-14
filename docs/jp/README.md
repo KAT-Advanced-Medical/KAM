@@ -34,15 +34,15 @@ KAT mod users are encouraged to delve into **add-on settings** that can be found
 Below is the directory of the local documentation guides for each module of the KAT Advanced Medical system:
 
 ### 🎒 Equipment & Items
-*   [**Items Featured in the Mod**](tactical_equipment/01_medical_items.md) — Reference list of all tools, autoinjectors, diagnostics, and surgical equipment added by the mod.
+*   [**Items Featured in the Mod**](Equipment/01_medical_items.md) — Reference list of all tools, autoinjectors, diagnostics, and surgical equipment added by the mod.
 
 ### 💨 Airways & Respiratory System
-*   [**Airways Management & Lungs**](respiratory/01_airways_and_lungs.md) — Airways status (Clear, Occluded, Obstructed), recovery position, and visual cyanosis estimation.
-*   [**Breathing & Thorax Injuries**](respiratory/02_breathing_injuries.md) — Pneumothorax, Tension Pneumothorax (TPTX), Hemothorax (HPTX), auscultation using the stethoscope, BVM usage, and chest inspection diagnostics.
+*   [**Airways Management & Lungs**](Respiratory/01_airways_and_lungs.md) — Airways status (Clear, Occluded, Obstructed), recovery position, and visual cyanosis estimation.
+*   [**Breathing & Thorax Injuries**](Respiratory/02_breathing_injuries.md) — Pneumothorax, Tension Pneumothorax (TPTX), Hemothorax (HPTX), auscultation using the stethoscope, BVM usage, and chest inspection diagnostics.
 
 ### ❤️ Cardiovascular System & Cardiac Arrest
-*   [**Cardiac Arrest & H&T Conditions**](cardiovascular/01_cardiac_arrest.md) — Reversible arrest causes (Hypovolemia, Hypoxia, Acidosis, Tension Pneumothorax, Tamponade).
-*   [**Cardiac Arrest Treatment & AED Manual**](cardiovascular/02_aed_manual.md) — Rhythms (VT, VF, PEA, Asystole), EKG monitor readings, CPR, and step-by-step AED/AED-X manual.
+*   [**Cardiac Arrest & H&T Conditions**](Cardiac/01_cardiac_arrest.md) — Reversible arrest causes (Hypovolemia, Hypoxia, Acidosis, Tension Pneumothorax, Tamponade).
+*   [**Cardiac Arrest Treatment & AED Manual**](Cardiac/02_aed_manual.md) — Rhythms (VT, VF, PEA, Asystole), EKG monitor readings, CPR, and step-by-step AED/AED-X manual.
 
 ### 🧪 Pharmacy & Renal System
 *   [**Fluids & Blood Compatibility**](Pharmacy/03_fluids.md) — Detailed properties of Saline, Plasma, and Blood (volume, pH adjustments, clotting factors), blood group compatibility matrices, and blood poisoning/CWMP mechanics.
@@ -53,8 +53,8 @@ Below is the directory of the local documentation guides for each module of the 
 *   [**Surgery & Fracture Care**](Surgery/01_introduction.md) — Handheld Ultrasound diagnostics, Pericardial Tap, REBOA catheter placement, Closed/Open reductions, and surgical anesthesia/sedation protocols (Lorazepam, Etomidate, Flumazenil).
 
 ### ☣️ Environmental Warfare
-*   [**Chemical Warfare Guide**](environmental/Chemical/01_Info_and_QuickStart.md) — Guide to chemical agents, protection, symptoms, treatments, detection (M8, JCAD), and decontamination.
+*   [**Chemical Warfare Guide**](Chemical/01_Info_and_QuickStart.md) — Guide to chemical agents, protection, symptoms, treatments, detection (M8, JCAD), and decontamination.
 
 ### 📊 Reference Appendices
-*   [**Essential Values Reference**](core/01_essential_values.md) — Standard, stable, and lethal vital ranges (HR, BP, SpO2), reorientation and arousal rates.
-*   [**Appendix: Complete Aid Procedure**](core/02_appendix_aid_procedure.md) — Example walkthrough of a complete patient resuscitation flow from triage to wake-up.
+*   [**Essential Values Reference**](Core/01_essential_values.md) — Standard, stable, and lethal vital ranges (HR, BP, SpO2), reorientation and arousal rates.
+*   [**Appendix: Complete Aid Procedure**](Core/02_appendix_aid_procedure.md) — Example walkthrough of a complete patient resuscitation flow from triage to wake-up.

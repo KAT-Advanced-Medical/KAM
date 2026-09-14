@@ -24,8 +24,8 @@
 params ["_unit"];
 if (!alive _unit) exitWith {};
 
-// Lung damage: chemical pneumonitis from inhaled mustard. High chance value
-// pushes toward tension hemopneumothorax (the lethal variant).
+// Lung damage: chemical pneumonitis from inhaled mustard. Forces a
+// hemopneumothorax (bleeding variant)
 _unit setVariable [QEGVAR(breathing,pneumothorax), 1, true];
 _unit setVariable [QEGVAR(breathing,deepPenetratingInjury), true, true];
 _unit setVariable [QEGVAR(breathing,activeChestSeal), false, true];
@@ -34,7 +34,10 @@ _unit setVariable [QEGVAR(breathing,activeChestSeal), false, true];
 [_unit] call EFUNC(breathing,handlePneumothoraxDeterioration);
 
 if (EGVAR(breathing,advPtxEnable)) then {
-    [_unit, 30, true] call EFUNC(breathing,inflictAdvancedPneumothorax);
+    [_unit, 0.7] call ACEFUNC(medical_status,adjustPainLevel);
+    _unit setVariable [QEGVAR(breathing,hemopneumothorax), true, true];
+    _unit setVariable [QEGVAR(breathing,pneumothorax), 4, true];
+    [_unit] call EFUNC(circulation,updateInternalBleeding);
 };
 
 // Pain spike — pushes past unconscious threshold quickly.

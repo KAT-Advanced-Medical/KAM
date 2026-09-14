@@ -149,6 +149,26 @@
     true
 ] call CBA_fnc_addSetting;
 
+// Allow SpO2 to rise during CPR without BVM
+[
+    QGVAR(SpO2_CPR_Rise),
+    "CHECKBOX",
+    [LLSTRING(SETTING_SpO2_CPR_Rise), LLSTRING(SETTING_SpO2_CPR_Rise_DESC)],
+    [CBA_SETTINGS_CAT, ELSTRING(GUI,SubCategory_Basic)],
+    [false],
+    true
+] call CBA_fnc_addSetting;
+
+// Multiplier for how fast SpO2 rises during CPR without BVM
+[
+    QGVAR(SpO2_CPR_RiseMultiplier),
+    "SLIDER",
+    [LLSTRING(SETTING_SpO2_CPR_RiseMultiplier), LLSTRING(SETTING_SpO2_CPR_RiseMultiplier_DESC)],
+    [CBA_SETTINGS_CAT, ELSTRING(GUI,SubCategory_Basic)],
+    [0, 10, 1, 1],
+    true
+] call CBA_fnc_addSetting;
+
 // breathing SpO2 perfusion multiplier
 [
     QGVAR(SpO2_PerfusionMultiplier),

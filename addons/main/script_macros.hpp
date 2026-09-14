@@ -350,7 +350,7 @@
 #define GET_PP(unit) (unit getVariable [VAR_PP, 0])
 
 #define IS_AIRPOISONED(unit) (unit getVariable [QEGVAR(chemical,airPoisoning), false])
-#define IN_TEARGAS(unit) (unit getVariable [QEGVAR(chemical,CSGas), 0])
+#define IN_TEARGAS(unit) (((unit getVariable [QEGVAR(chemical,CSGas), 0]) - CBA_missionTime) max 0)
 
 //Ophthalmology
 #define GET_DUST_INJURY(unit) ((unit getVariable [QEGVAR(ophthalmology,dustInjuryLight), 0]) + (unit getVariable [QEGVAR(ophthalmology,dustInjuryHeavy), 0]))

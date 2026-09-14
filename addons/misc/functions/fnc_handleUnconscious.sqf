@@ -42,7 +42,7 @@ if (_player getVariable [QACEGVAR(dragging,isCarrying), false]) then {
         [_unit, _carriedObject] call ACEFUNC(dragging,dropObject_carry);
     };
 
-    // Handle waking up dragged unit
+    // Handle waking up carried unit
     if (_unit == _carriedObject) then {
         [QACEGVAR(common,switchMove), [_unit, "AinjPfalMstpSnonWnonDf_carried_dead"]] call CBA_fnc_globalEvent; // Force carried animation to avoid sliding
         [QGVAR(stopCarryingPrompt), [_carriedObject, _player], _carriedObject] call CBA_fnc_targetEvent;

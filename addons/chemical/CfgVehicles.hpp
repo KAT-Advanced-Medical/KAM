@@ -337,7 +337,7 @@ class CfgVehicles {
         displayName = CSTRING(GasModule_Displayname);
         category = QEGVAR(zeus,KAM);
         function = QFUNC(gasmodule);
-        isTriggerActivated = 0;
+        isTriggerActivated = 1;
         functionPriority = 1;
         isGlobal = 0;
 

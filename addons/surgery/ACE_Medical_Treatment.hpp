@@ -111,6 +111,11 @@ class ACE_Medical_Treatment {
             };
             class PunctureWoundMedium: PunctureWound {};
             class PunctureWoundLarge: PunctureWound {};
+
+            class KAT_ChemicalBurn: Abrasion {};
+            class KAT_ChemicalBurnMinor: AbrasionMinor {};
+            class KAT_ChemicalBurnMedium: Abrasion {};
+            class KAT_ChemicalBurnLarge: Abrasion {};
         };
 
         class BloodClotMedium: FieldDressing {
@@ -174,6 +179,11 @@ class ACE_Medical_Treatment {
                 effectiveness = 1;
             };
             class PunctureWoundLarge: PunctureWound {};
+
+            class KAT_ChemicalBurn: Abrasion {};
+            class KAT_ChemicalBurnMinor: Abrasion {};
+            class KAT_ChemicalBurnMedium: AbrasionMedium {};
+            class KAT_ChemicalBurnLarge: Abrasion {};
         };
 
         class BloodClotLarge: FieldDressing {
@@ -237,6 +247,11 @@ class ACE_Medical_Treatment {
             class PunctureWoundLarge: AbrasionLarge {
                 effectiveness = 1;
             };
+
+            class KAT_ChemicalBurn: Abrasion {};
+            class KAT_ChemicalBurnMinor: Abrasion {};
+            class KAT_ChemicalBurnMedium: Abrasion {};
+            class KAT_ChemicalBurnLarge: AbrasionLarge {};
         };
 
         class BloodClotMinorTXA: BloodClotMinor {

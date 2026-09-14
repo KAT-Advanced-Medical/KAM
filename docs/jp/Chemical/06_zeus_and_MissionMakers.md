@@ -77,6 +77,7 @@ All of the below live under **CBA Settings → KAT - ADV Medical: Chemical**. De
 
 | Setting | Default | Range | What it does |
 |---------|---------|-------|--------------|
+| CS Gas Duration | 30 s | 0–3600 s | How long the irritation lasts after leaving the cloud |
 | Drop Weapon Chance | 0 | 0–1 | Chance per check to drop your weapon while in tear gas |
 
 ### Chlorine (Level 1)
