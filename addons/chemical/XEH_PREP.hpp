@@ -54,6 +54,7 @@ PREP(initModule);
 PREP(initRadProfiles);
 PREP(initRadSourceObject);
 PREP(irradiate);
+PREP(isRadSheltered);
 PREP(pickupRadSource);
 PREP(poison);
 PREP(putOnGasMask);

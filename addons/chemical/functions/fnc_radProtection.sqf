@@ -44,7 +44,7 @@ if ((_radList isNotEqualTo []) && {uniform _unit != ""} && {(uniform _unit) in _
     [_radF, GVAR(rad_protectionFactorRadGear)] call _fnc_apply;
 };
 
-if (!isNull objectParent _unit) then {
+if ([_unit] call FUNC(isRadSheltered)) then {
     [_vehF, GVAR(rad_protectionFactorVehicle)] call _fnc_apply;
 };
 

@@ -4,7 +4,8 @@
  * Per-unit radiation exposure handler. Routes each radiation type's incident
  * dose-rate (after type-specific shielding) into whole-body absorbed dose,
  * local skin/limb dose (beta burns), inhaled internal burden, and surface
- * contamination, then re-evaluates radiation sickness.
+ * contamination, then re-evaluates radiation sickness. A unit sheltered in a
+ * closed vehicle (FUNC(isRadSheltered)) neither inhales nor gets contaminated.
  *
  * Runs local to the unit's owner (fired via QGVAR(irradiate) target event).
  * The geiger reading (radDoseRate) is owned by fnc_radManagerPFH, not here.
@@ -38,6 +39,7 @@ if !(isDamageAllowed _unit && {_unit getVariable [QACEGVAR(medical,allowDamage),
 
 private _hours = RAD_MANAGER_PFH_DELAY / 3600;
 private _hasMask = [_unit] call FUNC(hasGasMaskON);
+private _sheltered = [_unit] call FUNC(isRadSheltered);
 private _kiActive = CBA_missionTime < (_unit getVariable [QGVAR(radProtectiveWindow), 0]);
 private _veryClose = (_radLogic distance _unit) < GVAR(rad_localProximity);
 private _selfContamSource = (_radLogic getVariable [QGVAR(contamSourceOwner), objNull]) isEqualTo _unit;
@@ -67,13 +69,13 @@ private _skinByPart = [0, 0, 0, 0, 0, 0];
         };
     };
 
-    if (!_hasMask && {_inhaleW > 0}) then {
+    if (!_hasMask && {!_sheltered} && {_inhaleW > 0}) then {
         private _inhale = _rate * _inhaleW * GVAR(rad_inhalationFactor);
         if (_kiActive) then { _inhale = _inhale * GVAR(rad_kiFactor); };
         _internalAdd = _internalAdd + _inhale;
     };
 
-    if (_type != "neutron" && {!_selfContamSource}) then {
+    if (_type != "neutron" && {!_sheltered} && {!_selfContamSource}) then {
         _contamAdd = _contamAdd + _rate;
     };
 } forEach RAD_TYPES;

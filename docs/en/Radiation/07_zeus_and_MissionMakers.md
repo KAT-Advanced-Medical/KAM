@@ -94,10 +94,21 @@ Everything below lives under **CBA Settings → KAT - ADV Medical: Chemical**, i
 | Mask protection factor | 1.0 | Global effectiveness multiplier for gas-mask shielding |
 | CBRN suit protection factor | 1.0 | Global multiplier for CBRN-suit shielding |
 | Rad-gear protection factor | 1.0 | Global multiplier for rad-gear-uniform shielding |
-| Vehicle protection factor | 1.0 | Global multiplier for vehicle shielding |
+| Vehicle protection factor | 1.0 | Global multiplier for closed-vehicle shielding |
 | Radiation-protective uniforms | *(empty)* | **Whitelist of uniform classnames that count as rad-gear** |
 
 > *Radiation-protective uniforms* is the radiation equivalent of the CBRN-suit whitelist — a quoted, comma-separated list of classnames. Populate it with whatever anti-rad suits your loadout mods provide.
+
+> **Closed vs open vehicles:** only closed vehicles shelter their crew (see [Which vehicles count](03_protection_and_shielding.md#which-vehicles-count)). Whether a vehicle is closed is read from its config — static weapons and vehicles whose sound attenuation is empty or an "Open"/"SemiOpen" type count as open. If a mod vehicle is classified wrong, override it in config:
+>
+> ```cpp
+> class CfgVehicles {
+>     class SomeModVehicle_base;
+>     class SomeModVehicle: SomeModVehicle_base {
+>         kat_chemical_radSealed = 1; // 1 = closed, 0 = open
+>     };
+> };
+> ```
 
 ### Contamination
 

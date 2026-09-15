@@ -67,6 +67,7 @@ Here's the merciful part: **below the lethal tier, radiation sickness heals on i
 - The **accumulated dose** on your dosimeter stays where it is — that's your permanent exposure record — but the *sickness* it caused fades.
 - **Filgrastim** speeds this up considerably (see [Treatment](06_treatment_and_triage.md)).
 - The **lethal tier does not spontaneously recover** — it only comes back with the active [intensive-care protocol](06_treatment_and_triage.md#intensive-care-for-lethal-doses). Everything below it heals on its own, given time and support.
+- **Recovering doesn't make you immune.** Once your sickness has dropped below a stage, getting irradiated back up past it sets that stage off again — nausea, marrow failure, the GI syndrome and the collapse all come back on their normal clocks.
 
 ---
 

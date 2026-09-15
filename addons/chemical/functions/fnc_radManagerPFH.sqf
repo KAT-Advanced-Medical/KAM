@@ -3,8 +3,9 @@
  * Author: DiGii
  * Radiation analogue of fnc_gasManagerPFH. Walks the registered radiation
  * sources, removes any whose anchor or condition is gone, and for every unit
- * in range computes the per-type incident dose-rate (by geometry) and fires
- * the QGVAR(irradiate) target event on the unit's owner.
+ * in range (on foot, or crew of a vehicle in range) computes the per-type
+ * incident dose-rate (by geometry) and fires the QGVAR(irradiate) target event
+ * on the unit's owner.
  *
  * Owns the geiger reading: radDoseRate (total incident, summed across sources)
  * and radDominantType, reset to 0/"" for units no longer in any field.
@@ -43,6 +44,19 @@ private _types = RAD_TYPES;
         continue;
     };
 
+    // nearestObjects does not return units inside vehicles, so collect crew separately
+    private _units = [];
+    {
+        if (_x isKindOf "CAManBase") then {
+            _units pushBackUnique _x;
+        } else {
+            if (unitIsUAV _x) then { continue };
+            {
+                if (_x isKindOf "CAManBase") then { _units pushBackUnique _x; };
+            } forEach crew _x;
+        };
+    } forEach nearestObjects [_radLogic, ["CAManBase", "AllVehicles"], _radius];
+
     {
         private _unit = _x;
         private _distance = (_unit distance _radLogic) min _radius;
@@ -78,7 +92,7 @@ private _types = RAD_TYPES;
         _accum set [_nid, _entry];
 
         [QGVAR(irradiate), [_unit, _ratesByType, _radLogic], _unit] call CBA_fnc_targetEvent;
-    } forEach nearestObjects [_radLogic, ["CAManBase"], _radius];
+    } forEach _units;
 } forEach GVAR(radSources);
 
 {

@@ -48,4 +48,4 @@ if (_tier <= _currentTier) exitWith {};
 
 private _scale = [1, 1, 0.7, 0.45, 0.2] select _tier;
 
-[_unit, _tier, _scale] call FUNC(scheduleRadSicknessChain);
+[_unit, _tier, _scale, _currentTier] call FUNC(scheduleRadSicknessChain);

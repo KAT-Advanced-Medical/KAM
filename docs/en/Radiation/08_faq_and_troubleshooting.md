@@ -3,6 +3,9 @@
 ### **My geiger is screaming but I'm not taking any damage. Is it broken?**
 No — that's working as intended, and it might be your gear doing its job. The geiger reads the **dose rate** (the field around you), which your shielding does *not* change. What your shielding reduces is the **accumulated dose** — the Gy total you actually soak up. Watch that number: if it's barely climbing while the rate is high, your suit/vehicle is protecting you. (And if you're in a pure-gamma field with only a mask on, the rate being scary while the dose climbs fast is *also* correct — a mask doesn't stop gamma.)
 
+### **I'm in a vehicle but I'm still breathing it in / getting contaminated.**
+Then the game doesn't count your seat as sheltered. Only a **closed** vehicle protects its crew. Open vehicles (quad bikes, open-top cars, open-door helicopters), static weapons, FFV seats, open gunner positions and anyone **turned out** of a hatch are treated as standing in the field. Button up, or move to an enclosed seat. Mission makers: if a mod vehicle is classified wrong, see the `kat_chemical_radSealed` override in [Zeus & mission makers](07_zeus_and_MissionMakers.md).
+
 ### **I left the radiation hours ago but my dose is still going up.**
 You breathed it in. That's **internal contamination** — radioactive material inside you that keeps converting to dose long after you've left. A geiger and a decon kit can't help with it because it isn't on your surface. Use **Prussian Blue** to chelate it out, or wait for your body to slowly clear it.
 

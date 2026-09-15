@@ -21,6 +21,19 @@ A few things to read out of that table:
 
 > **The key nuance, one more time:** your gear reduces the **accumulated dose**, not the geiger **rate**. Standing in a gamma field in a vehicle, the dosimeter rate looks the same — but the dose you're banking is lower. Judge protection by the dose total, not the rate.
 
+### Which vehicles count
+
+Only a **closed** vehicle shelters you. Inside one, you get the vehicle column of the table above, and you also **can't breathe in** radioactive dust or **pick up surface contamination** — the hull keeps it out, mask or no mask.
+
+These count as **being on foot** — no vehicle shielding, and you breathe and get contaminated as normal:
+
+- open vehicles — quad bikes, open-top cars and trucks, helicopters flown with open doors
+- static weapons
+- FFV seats (firing from the vehicle)
+- open gunner positions, and any crew member who is **turned out** of a hatch
+
+Buttoning up matters: a tank commander with their head out of the hatch is standing in the field.
+
 ### What counts as "rad-gear"
 
 Rad-gear is a mission-defined whitelist of uniforms that count as radiation-protective, separate from the CBRN suit list. Out of the box it's empty — mission makers populate it via the *Radiation-protective uniforms* CBA setting (see [Zeus & mission makers](07_zeus_and_MissionMakers.md)). It's the lever for adding whatever anti-rad suits your loadout mods provide.

@@ -755,8 +755,8 @@
             <German>Abschirmung: Fahrzeug</German>
         </Key>
         <Key ID="STR_KAT_Chemical_SETTING_rad_protectionFactorVehicle_DESC">
-            <English>Vehicle shielding effectiveness (0 = no protection, 1 = full per-type protection).</English>
-            <German>Wirksamkeit der Fahrzeug-Abschirmung (0 = kein Schutz, 1 = voller typabhängiger Schutz).</German>
+            <English>Closed-vehicle shielding effectiveness (0 = no protection, 1 = full per-type protection). Open vehicles, static weapons, FFV seats and turned-out crew get none.</English>
+            <German>Wirksamkeit der Abschirmung durch geschlossene Fahrzeuge (0 = kein Schutz, 1 = voller typabhängiger Schutz). Offene Fahrzeuge, statische Waffen, FFV-Sitze und herausgelehnte Besatzung erhalten keinen.</German>
         </Key>
         <Key ID="STR_KAT_Chemical_SETTING_availRadProtection">
             <English>Radiation-protective uniforms</English>
