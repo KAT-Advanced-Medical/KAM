@@ -33,7 +33,15 @@ switch (_defibProvider select 1) do {
         _condition = !(isNull objectParent _patient) && (objectParent _patient isEqualTo objectParent _medic) && ((itemCargo objectParent _patient) findIf {_x isEqualTo (_defibProvider select 2)} isNotEqualTo -1);
     };
     default {
-        _condition = [_medic, _medic, [(_defibProvider select 2)]] call ACEFUNC(medical_treatment,hasItem);
+        private _provider = _defibProvider select 0;
+        private _defibClass = _defibProvider select 2;
+        _condition = !(isNull _provider)
+            && {(_patient distance _provider) <= GVAR(Defibrillator_DistanceLimit)}
+            && {
+                _defibClass in ([_provider, 1] call ACEFUNC(common,uniqueItems))
+                || {_defibClass in ([_patient, 1] call ACEFUNC(common,uniqueItems))}
+                || {_defibClass in ([_medic, 1] call ACEFUNC(common,uniqueItems))}
+            };
     };
 };
 
