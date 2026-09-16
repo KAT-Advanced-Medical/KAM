@@ -27,7 +27,7 @@ _usedItem = "kat_" + _className;
 
 [_medic, _patient, _bodyPart, _className, objNull, _usedItem] call ACEFUNC(medical_treatment,ivBag);
 
-if ([_patient, _className] call FUNC(compatible)) exitWith {};
+if ([_patient, _className] call FUNC(compatible)) exitWith { true };
 
 [_className, _patient] call FUNC(treatmentAdvanced_IV);
 

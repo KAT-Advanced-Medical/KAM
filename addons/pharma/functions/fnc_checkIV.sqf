@@ -1,7 +1,7 @@
 #include "..\script_component.hpp"
 /*
  * Author: Mazinski.H
- * Checks Limb Damage before and IV can be used.
+ * Checks Limb Damage before an IV can be used.
  *
  * Arguments:
  * 0: Medic (not used) <OBJECT>
