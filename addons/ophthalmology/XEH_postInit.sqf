@@ -13,6 +13,9 @@ if (!hasInterface) exitWith {};
 
 }] call CBA_fnc_addEventHandler;
 
+[QGVAR(eyeShield), LINKFUNC(treatmentAdvanced_eyeShieldLocal)] call CBA_fnc_addEventHandler;
+[QGVAR(eyeShieldRemove), LINKFUNC(treatmentAdvanced_eyeShieldRemoveLocal)] call CBA_fnc_addEventHandler;
+
 [QACEGVAR(medical_treatment,fullHealLocalMod), LINKFUNC(fullHealLocal)] call CBA_fnc_addEventHandler;
 [QACEGVAR(medical_gui,updateInjuryListPart), LINKFUNC(gui_updateInjuryListPart)] call CBA_fnc_addEventHandler;
 [QEGVAR(misc,handleRespawn), LINKFUNC(handleRespawn)] call CBA_fnc_addEventHandler;
