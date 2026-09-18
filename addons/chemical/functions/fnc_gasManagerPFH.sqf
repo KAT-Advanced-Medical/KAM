@@ -28,19 +28,7 @@ private _exposedNow = [];
     if !(_conditionArgs call _condition) then {
         TRACE_2("condition no longer valid, deleting",_x,_y);
 
-        // Cancel JIP event and tell all machines to remove local particles
-        private _effectsJipID = _gasLogic getVariable [QGVAR(effectsJipID), ""];
-        if (_effectsJipID != "") then {
-            [_effectsJipID] call CBA_fnc_removeGlobalEventJIP;
-        };
-        if (GVAR(enableParticleEffects)) then {
-            [QGVAR(removeZoneParticles), [netId _gasLogic]] call CBA_fnc_globalEvent;
-        };
-
-        detach _gasLogic;
-        deleteVehicle _gasLogic;
-
-        GVAR(gasSources) deleteAt _x;
+        [_x] call FUNC(deleteGasSource);
 
         continue;
     };
