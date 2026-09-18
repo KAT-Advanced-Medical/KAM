@@ -47,9 +47,18 @@ class CfgVehicles {
 
                 class KAT_UseDecon {
                     displayName = CSTRING(UseDecon);
-                    condition = QUOTE('kat_decon_kit' in (items _player) && {(_player getVariable [ARR_2(QQGVAR(chemicalContamination),'')]) != ''});
+                    condition = QUOTE('kat_decon_kit' in (items _player) && {((_player getVariable [ARR_2(QQGVAR(chemicalContamination),'')]) != '') || {(_player getVariable [ARR_2(QQGVAR(radExternalContam),0)]) > 0}});
                     exceptions[] = {"isNotSwimming", "isNotInside"};
                     statement = QUOTE([ARR_2(_player,_player)] call FUNC(decontaminate));
+                    showDisabled = 0;
+                    icon = QPATHTOF(ui\icon_deconkit.paa);
+                };
+
+                class KAT_DropRadSource {
+                    displayName = CSTRING(DropRadSource);
+                    condition = QUOTE(!isNull (_player getVariable [ARR_2(QQGVAR(carriedRadSource),objNull)]));
+                    exceptions[] = {"isNotSwimming"};
+                    statement = QUOTE([_player] call FUNC(dropRadSource));
                     showDisabled = 0;
                     icon = QPATHTOF(ui\icon_deconkit.paa);
                 };
@@ -80,6 +89,45 @@ class CfgVehicles {
                         condition = QUOTE((_player getVariable [ARR_2(QQGVAR(detectorSound),false)]) && ([_player] call FUNC(hasDetector)));
                         exceptions[] = {"isNotSwimming"};
                         statement = QUOTE(_player setVariable [ARR_3(QQGVAR(detectorSound),false,true)]);
+                        showDisabled = 0;
+                        icon = QPATHTOF(ui\kat_chemicalDet_icon.paa);
+                    };
+                };
+
+                class KAT_Dosimeter {
+                    displayName = CSTRING(Dosimeter_Menu);
+                    icon = QPATHTOF(ui\kat_chemicalDet_icon.paa);
+                    exceptions[] = {"isNotSwimming"};
+
+                    class KAT_Dosimeter_Enable {
+                        displayName = CSTRING(EnableDosimeter);
+                        condition = QUOTE(([_player] call FUNC(hasDosimeter)) && !(_player getVariable [ARR_2(QQGVAR(dosimeterEnabled),false)]));
+                        exceptions[] = {"isNotSwimming"};
+                        statement = QUOTE([_player] call FUNC(enableDosimeter));
+                        showDisabled = 0;
+                        icon = QPATHTOF(ui\kat_chemicalDet_icon.paa);
+                    };
+                    class KAT_Dosimeter_Disable {
+                        displayName = CSTRING(DisableDosimeter);
+                        condition = QUOTE(([_player] call FUNC(hasDosimeter)) && (_player getVariable [ARR_2(QQGVAR(dosimeterEnabled),false)]));
+                        exceptions[] = {"isNotSwimming"};
+                        statement = QUOTE(_player setVariable [ARR_3(QQGVAR(dosimeterEnabled),false,true)]);
+                        showDisabled = 0;
+                        icon = QPATHTOF(ui\kat_chemicalDet_icon.paa);
+                    };
+                    class KAT_Dosimeter_SoundOn {
+                        displayName = CSTRING(EnableDosimeterSound);
+                        condition = QUOTE(!(_player getVariable [ARR_2(QQGVAR(dosimeterSound),false)]) && ([_player] call FUNC(hasDosimeter)));
+                        exceptions[] = {"isNotSwimming"};
+                        statement = QUOTE(_player setVariable [ARR_3(QQGVAR(dosimeterSound),true,true)]);
+                        showDisabled = 0;
+                        icon = QPATHTOF(ui\kat_chemicalDet_icon.paa);
+                    };
+                    class KAT_Dosimeter_SoundOff {
+                        displayName = CSTRING(DisableDosimeterSound);
+                        condition = QUOTE((_player getVariable [ARR_2(QQGVAR(dosimeterSound),false)]) && ([_player] call FUNC(hasDosimeter)));
+                        exceptions[] = {"isNotSwimming"};
+                        statement = QUOTE(_player setVariable [ARR_3(QQGVAR(dosimeterSound),false,true)]);
                         showDisabled = 0;
                         icon = QPATHTOF(ui\kat_chemicalDet_icon.paa);
                     };
@@ -150,6 +198,127 @@ class CfgVehicles {
             class _xx_kat_decon_kit {
                 name = "kat_decon_kit";
                 count = 1;
+            };
+        };
+    };
+
+    class kat_potassiumIodide_Item: Item_Base_F {
+        scope = 2;
+        scopeCurator = 2;
+        displayName = CSTRING(potassiumIodideItem);
+        author = "DiGii";
+        vehicleClass = "Items";
+        editorCategory = "EdCat_Equipment";
+        editorSubcategory = "EdSubcat_InventoryItems";
+        class TransportItems {
+            class _xx_kat_potassiumIodide {
+                name = "kat_potassiumIodide";
+                count = 1;
+            };
+        };
+    };
+
+    class kat_prussianBlue_Item: Item_Base_F {
+        scope = 2;
+        scopeCurator = 2;
+        displayName = CSTRING(prussianBlueItem);
+        author = "DiGii";
+        vehicleClass = "Items";
+        editorCategory = "EdCat_Equipment";
+        editorSubcategory = "EdSubcat_InventoryItems";
+        class TransportItems {
+            class _xx_kat_prussianBlue {
+                name = "kat_prussianBlue";
+                count = 1;
+            };
+        };
+    };
+
+    class kat_antibiotics_Item: Item_Base_F {
+        scope = 2;
+        scopeCurator = 2;
+        displayName = CSTRING(antibioticsItem);
+        author = "DiGii";
+        vehicleClass = "Items";
+        editorCategory = "EdCat_Equipment";
+        editorSubcategory = "EdSubcat_InventoryItems";
+        class TransportItems {
+            class _xx_kat_antibiotics {
+                name = "kat_antibiotics";
+                count = 1;
+            };
+        };
+    };
+
+    class kat_filgrastim_Item: Item_Base_F {
+        scope = 2;
+        scopeCurator = 2;
+        displayName = CSTRING(filgrastimItem);
+        author = "DiGii";
+        vehicleClass = "Items";
+        editorCategory = "EdCat_Equipment";
+        editorSubcategory = "EdSubcat_InventoryItems";
+        class TransportItems {
+            class _xx_kat_filgrastim {
+                name = "kat_filgrastim";
+                count = 1;
+            };
+        };
+    };
+
+    class kat_antiemetic_Item: Item_Base_F {
+        scope = 2;
+        scopeCurator = 2;
+        displayName = CSTRING(antiemeticItem);
+        author = "DiGii";
+        vehicleClass = "Items";
+        editorCategory = "EdCat_Equipment";
+        editorSubcategory = "EdSubcat_InventoryItems";
+        class TransportItems {
+            class _xx_kat_antiemetic {
+                name = "kat_antiemetic";
+                count = 1;
+            };
+        };
+    };
+
+    class kat_stemCells_Item: Item_Base_F {
+        scope = 2;
+        scopeCurator = 2;
+        displayName = CSTRING(stemCellsItem);
+        author = "DiGii";
+        vehicleClass = "Items";
+        editorCategory = "EdCat_Equipment";
+        editorSubcategory = "EdSubcat_InventoryItems";
+        class TransportItems {
+            class _xx_kat_stemCells {
+                name = "kat_stemCells";
+                count = 1;
+            };
+        };
+    };
+
+    class Land_CanisterFuel_F;
+    class kat_radSource: Land_CanisterFuel_F {
+        scope = 2;
+        scopeCurator = 2;
+        displayName = CSTRING(radSourceObject);
+        author = "DiGii";
+        editorCategory = "EdCat_Equipment";
+        editorSubcategory = "EdSubcat_InventoryItems";
+        class ACE_Actions {
+            class ACE_MainActions {
+                displayName = CSTRING(radSourceObject);
+                selection = "";
+                distance = 4;
+                condition = "true";
+                class KAT_PickupRadSource {
+                    displayName = CSTRING(PickupRadSource);
+                    distance = 4;
+                    condition = QUOTE(isNull (_player getVariable [ARR_2(QQGVAR(carriedRadSource),objNull)]));
+                    statement = QUOTE([ARR_2(_player,_target)] call FUNC(pickupRadSource));
+                    icon = QPATHTOF(ui\icon_deconkit.paa);
+                };
             };
         };
     };
@@ -245,6 +414,106 @@ class CfgVehicles {
         category = QEGVAR(zeus,KAM);
         function = QACEFUNC(common,dummy);
         curatorInfoType = QGVAR(kat_RscGasModul);
+        isTriggerActivated = 0;
+        functionPriority = 1;
+        isGlobal = 0;
+    };
+
+    class kat_module_radiation: Module_F
+    {
+        scope = 2;
+        side = 7;
+        displayName = CSTRING(RadModule_Displayname);
+        category = QEGVAR(zeus,KAM);
+        function = QFUNC(radmodule);
+        isTriggerActivated = 0;
+        functionPriority = 1;
+        isGlobal = 0;
+
+        class Arguments: AttributesBase
+        {
+            class Radius
+            {
+                displayName = CSTRING(UI_max_range);
+                tooltip = CSTRING(RadModule_max_radius_dcs);
+                typeName = "NUMBER";
+                defaultValue = 20;
+            };
+            class Preset
+            {
+                displayName = CSTRING(RadModule_preset);
+                tooltip = CSTRING(RadModule_preset_dcs);
+                typeName = "NUMBER";
+                class values
+                {
+                    class custom { name = CSTRING(RadPreset_custom); value = 0; default = 1; };
+                    class cobalt { name = CSTRING(RadPreset_Cobalt60); value = 1; };
+                    class reactor { name = CSTRING(RadPreset_Reactor); value = 2; };
+                    class fallout { name = CSTRING(RadPreset_Fallout); value = 3; };
+                    class alpha { name = CSTRING(RadPreset_AlphaEmitter); value = 4; };
+                    class dirty { name = CSTRING(RadPreset_DirtyBomb); value = 5; };
+                };
+            };
+            class Alpha
+            {
+                displayName = CSTRING(RadModule_alpha);
+                tooltip = CSTRING(RadModule_strength_dcs);
+                typeName = "NUMBER";
+                defaultValue = 0;
+            };
+            class Beta
+            {
+                displayName = CSTRING(RadModule_beta);
+                tooltip = CSTRING(RadModule_strength_dcs);
+                typeName = "NUMBER";
+                defaultValue = 0;
+            };
+            class Gamma
+            {
+                displayName = CSTRING(RadModule_gamma);
+                tooltip = CSTRING(RadModule_strength_dcs);
+                typeName = "NUMBER";
+                defaultValue = 50;
+            };
+            class Neutron
+            {
+                displayName = CSTRING(RadModule_neutron);
+                tooltip = CSTRING(RadModule_strength_dcs);
+                typeName = "NUMBER";
+                defaultValue = 0;
+            };
+            class PointSource
+            {
+                displayName = CSTRING(RadModule_pointSource);
+                tooltip = CSTRING(RadModule_pointSource_dcs);
+                typeName = "BOOL";
+                defaultValue = 0;
+            };
+        };
+
+        class ModuleDescription: ModuleDescription {
+            description = CSTRING(RadModule_description);
+            sync[] = {"LocationArea_F"};
+
+            class LocationArea_F {
+                position = 0;
+                optional = 1;
+                duplicate = 1;
+                synced[] = {"Anything"};
+            };
+        };
+    };
+
+    class kat_module_zeus_radiation: Module_F
+    {
+        scope = 1;
+        scopeCurator = 2;
+        side = 7;
+        curatorCanAttach = 1;
+        displayName = CSTRING(RadModule_Displayname);
+        category = QEGVAR(zeus,KAM);
+        function = QACEFUNC(common,dummy);
+        curatorInfoType = QGVAR(kat_RscRadModul);
         isTriggerActivated = 0;
         functionPriority = 1;
         isGlobal = 0;
