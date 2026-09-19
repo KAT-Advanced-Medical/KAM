@@ -18,6 +18,7 @@
 
 params ["_medic", "_patient"];
 
+if !(isNull (_medic getVariable [QGVAR(hyperextendPatient), objNull])) exitWith {};
 if (_patient getVariable [QGVAR(overstretch), false]) exitWith {
     [LLSTRING(Hyperextend_already), 1.5, _medic] call ACEFUNC(common,displayTextStructured);
 };
@@ -26,21 +27,24 @@ if !(_patient getVariable [QGVAR(obstruction), false]) exitWith {
 };
 
 _patient setVariable [QGVAR(overstretch), true, true];
+_medic setVariable [QGVAR(hyperextendPatient), _patient, true];
 
 [LLSTRING(Hyperextend_Ready), 1.5, _medic, 11] call ACEFUNC(common,displayTextStructured);
 [_patient, "activity", LSTRING(Hyperextend_Log), [[_medic] call ACEFUNC(common,getName), [_patient] call ACEFUNC(common,getName)]] call ACEFUNC(medical_treatment,addToLog);
 
+private _finish = {
+    params ["_medic", "_patient"];
+
+    if ((_medic getVariable [QGVAR(hyperextendPatient), objNull]) isEqualTo _patient) then {
+        _medic setVariable [QGVAR(hyperextendPatient), objNull, true];
+    };
+    if (_patient getVariable [QGVAR(recovery), false] || {!(_patient getVariable [QGVAR(overstretch), false])}) exitWith {};
+
+    _patient setVariable [QGVAR(overstretch), false, true];
+    [LLSTRING(Hyperextend_Cancel), 1.5, _medic] call ACEFUNC(common,displayTextStructured);
+};
+
 [{
     params ["_medic", "_patient"];
-    (_patient distance2D _medic) > 5;
-}, {
-    params ["_medic", "_patient"];
-    if (_patient getVariable [QGVAR(recovery), false]) exitWith {};
-    _patient setVariable [QGVAR(overstretch), false, true];
-    [LLSTRING(Hyperextend_Cancel), 1.5, _medic] call ACEFUNC(common,displayTextStructured);
-}, [_medic, _patient], 3600, {
-    params ["_medic", "_patient"];
-    if (_patient getVariable [QGVAR(recovery), false]) exitWith {};
-    _patient setVariable [QGVAR(overstretch), false, true];
-    [LLSTRING(Hyperextend_Cancel), 1.5, _medic] call ACEFUNC(common,displayTextStructured);
-}] call CBA_fnc_waitUntilAndExecute;
+    isNull _medic || {isNull _patient} || {!alive _medic} || {(_patient distance2D _medic) > 5} || {_patient getVariable [QGVAR(recovery), false]} || {!(_patient getVariable [QGVAR(overstretch), false])};
+}, _finish, [_medic, _patient], 3600, _finish] call CBA_fnc_waitUntilAndExecute;
