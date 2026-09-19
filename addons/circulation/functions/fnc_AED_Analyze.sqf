@@ -19,13 +19,12 @@
 
 params ["_medic", "_patient", ["_defibrillatorType", "AED"]];
 
-private _soundSource = _medic;
+private _soundSource = _patient;
 
 private _defibProvider = _patient getVariable QGVAR(Defibrillator_Provider);
 
 switch (_defibProvider select 1) do {
     case 1: {_soundSource = _defibProvider select 0;};
-    case 2: {_soundSource = _patient;};
     default {};
 };
 
