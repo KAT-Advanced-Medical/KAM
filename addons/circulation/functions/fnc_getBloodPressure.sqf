@@ -44,4 +44,6 @@ if (count _BPChange > 0) then {
 private _systolic = _bloodPressure * MODIFIER_BP_LOW;
 private _diastolic = _bloodPressure * MODIFIER_BP_HIGH;
 
-[(round(_systolic + _changeSystolic * (_systolic / 80)) max 0), (round(_diastolic + _changeDiastolic * (_diastolic / 120)) max 0)]
+private _radBPDrop = _unit getVariable [QEGVAR(chemical,radBPDrop), 0];
+
+[((round(_systolic + _changeSystolic * (_systolic / 80)) - _radBPDrop) max 0), ((round(_diastolic + _changeDiastolic * (_diastolic / 120)) - _radBPDrop) max 0)]

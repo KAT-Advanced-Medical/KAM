@@ -20,6 +20,29 @@
 
 params ["_ctrl", "_target", "_selectionN", "_entries"];
 
+if (GVAR(rad_icReadout) && {_target getVariable [QGVAR(radCritical), false]}) then {
+    private _severity = _target getVariable [QGVAR(radSeverity), 0];
+    private _fragility = (((_severity - GVAR(rad_doseThreshold_moderate)) / ((GVAR(rad_doseThreshold_lethal) - GVAR(rad_doseThreshold_moderate)) max 0.1)) max 0) min 1;
+    private _progress = round ((1 - _fragility) * 100);
+
+    _entries pushBack [LLSTRING(radCriticalStatus), [0.85, 0.20, 0.20, 1]];
+    _entries pushBack [format [LLSTRING(radICProgress), _progress], [0.90, 0.55, 0.10, 1]];
+
+    private _missing = [];
+    private _support = (count (_target getVariable [QACEGVAR(medical,ivBags), []]) > 0)
+        || {(([_target, "Epinephrine", false] call ACEFUNC(medical_status,getMedicationCount)) select 1) > 0}
+        || {(([_target, "Norepinephrine", false] call ACEFUNC(medical_status,getMedicationCount)) select 1) > 0};
+    if (!_support) then { _missing pushBack LLSTRING(radIC_support); };
+    if (CBA_missionTime >= (_target getVariable [QGVAR(radFilgrastimWindow), 0])) then { _missing pushBack LLSTRING(radIC_filgrastim); };
+    if (CBA_missionTime >= (_target getVariable [QGVAR(radAntibioticWindow), 0])) then { _missing pushBack LLSTRING(radIC_antibiotics); };
+    if (CBA_missionTime >= (_target getVariable [QGVAR(radMarrowRescueWindow), 0])) then { _missing pushBack LLSTRING(radIC_stemcells); };
+    if (((_target getVariable [QGVAR(radDoseRate), 0]) >= 0.01) || {(_target getVariable [QGVAR(radInternalBurden), 0]) >= 0.001}) then { _missing pushBack LLSTRING(radIC_source); };
+
+    if (_missing isNotEqualTo []) then {
+        _entries pushBack [format [LLSTRING(radICMissing), _missing joinString ", "], [0.90, 0.70, 0.20, 1]];
+    };
+};
+
 if !(missionNamespace getVariable [QGVAR(showPoisoning), true]) exitWith {};
 
 private _poisontype = _target getVariable [QGVAR(poisonType),""];

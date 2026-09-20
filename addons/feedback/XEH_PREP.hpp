@@ -5,6 +5,7 @@ PREP(effectEyeInjury);
 PREP(effectHurtEye);
 PREP(effectLowSpO2);
 PREP(effectOpioid);
+PREP(effectRadiation);
 PREP(effectTearHaze);
 PREP(handleEffects);
 PREP(initEffects);

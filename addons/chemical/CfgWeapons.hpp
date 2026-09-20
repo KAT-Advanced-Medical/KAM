@@ -54,12 +54,99 @@ class CfgWeapons {
         };
     };
 
+    class kat_potassiumIodide : ACE_ItemCore {
+        scope = 2;
+        author = "DiGii";
+        displayName = CSTRING(potassiumIodideItem);
+        model = "\A3\weapons_F\ammo\mag_univ.p3d";
+        picture = QPATHTOF(ui\kat_potassiumIodide.paa);
+        descriptionShort = CSTRING(potassiumIodideItem_desc);
+        descriptionUse = CSTRING(potassiumIodideItem_desc);
+        class ItemInfo: CBA_MiscItem_ItemInfo {
+            mass = 1;
+        };
+    };
+
+    class kat_prussianBlue : ACE_ItemCore {
+        scope = 2;
+        author = "DiGii";
+        displayName = CSTRING(prussianBlueItem);
+        model = "\A3\weapons_F\ammo\mag_univ.p3d";
+        picture = QPATHTOF(ui\kat_prussianBlue.paa);
+        descriptionShort = CSTRING(prussianBlueItem_desc);
+        descriptionUse = CSTRING(prussianBlueItem_desc);
+        class ItemInfo: CBA_MiscItem_ItemInfo {
+            mass = 1;
+        };
+    };
+
+    class kat_antibiotics : ACE_ItemCore {
+        scope = 2;
+        author = "DiGii";
+        displayName = CSTRING(antibioticsItem);
+        model = "\A3\weapons_F\ammo\mag_univ.p3d";
+        picture = QPATHTOF(ui\icon_deconkit.paa);
+        descriptionShort = CSTRING(antibioticsItem_desc);
+        descriptionUse = CSTRING(antibioticsItem_desc);
+        class ItemInfo: CBA_MiscItem_ItemInfo {
+            mass = 1;
+        };
+    };
+
+    class kat_filgrastim : ACE_ItemCore {
+        scope = 2;
+        author = "DiGii";
+        displayName = CSTRING(filgrastimItem);
+        model = "\A3\weapons_F\ammo\mag_univ.p3d";
+        picture = QPATHTOF(ui\icon_deconkit.paa);
+        descriptionShort = CSTRING(filgrastimItem_desc);
+        descriptionUse = CSTRING(filgrastimItem_desc);
+        class ItemInfo: CBA_MiscItem_ItemInfo {
+            mass = 1;
+        };
+    };
+
+    class kat_antiemetic : ACE_ItemCore {
+        scope = 2;
+        author = "DiGii";
+        displayName = CSTRING(antiemeticItem);
+        model = "\A3\weapons_F\ammo\mag_univ.p3d";
+        picture = QPATHTOF(ui\icon_deconkit.paa);
+        descriptionShort = CSTRING(antiemeticItem_desc);
+        descriptionUse = CSTRING(antiemeticItem_desc);
+        class ItemInfo: CBA_MiscItem_ItemInfo {
+            mass = 1;
+        };
+    };
+
+    class kat_stemCells : ACE_ItemCore {
+        scope = 2;
+        author = "DiGii";
+        displayName = CSTRING(stemCellsItem);
+        model = "\A3\weapons_F\ammo\mag_univ.p3d";
+        picture = QPATHTOF(ui\icon_deconkit.paa);
+        descriptionShort = CSTRING(stemCellsItem_desc);
+        descriptionUse = CSTRING(stemCellsItem_desc);
+        class ItemInfo: CBA_MiscItem_ItemInfo {
+            mass = 2;
+        };
+    };
+
     class ItemWatch;
     class KAT_ChemicalDetector: ItemWatch {
         ACE_hideItemType = "Watch";
-        author = "Mazinski";        
+        author = "Mazinski";
         descriptionShort = CSTRING(ChemicalDetectorDescription);
         displayName = CSTRING(ChemicalDetectorDisplayName);
+        picture = QPATHTOF(UI\kat_chemicalDet_icon.paa);
+        model = "\a3\Weapons_F_Enoch\Items\ChemicalDetector_01_F.p3d";
+    };
+
+    class KAT_Dosimeter: ItemWatch {
+        ACE_hideItemType = "Watch";
+        author = "DiGii";
+        descriptionShort = CSTRING(DosimeterDescription);
+        displayName = CSTRING(DosimeterDisplayName);
         picture = QPATHTOF(UI\kat_chemicalDet_icon.paa);
         model = "\a3\Weapons_F_Enoch\Items\ChemicalDetector_01_F.p3d";
     };

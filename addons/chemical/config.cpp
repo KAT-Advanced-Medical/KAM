@@ -8,10 +8,19 @@ class CfgPatches {
             "kat_sealant_Item",
             "kat_module_gas",
             "kat_module_zeus_gas",
+            "kat_module_radiation",
+            "kat_module_zeus_radiation",
             "KAT_Gas_TripWireMine",
             "kat_gasmaskFilter_Item",
             "kat_m8paper_Item",
-            "kat_decon_kit_Item"
+            "kat_decon_kit_Item",
+            "kat_potassiumIodide_Item",
+            "kat_prussianBlue_Item",
+            "kat_antibiotics_Item",
+            "kat_filgrastim_Item",
+            "kat_antiemetic_Item",
+            "kat_stemCells_Item",
+            "kat_radSource"
         };
         weapons[] = {
             "kat_sealant",
@@ -19,8 +28,15 @@ class CfgPatches {
             "KAT_CAS_M43_Bomb",
             "KAT_CAS_R_80mm_GAS_POD",
             "KAT_ChemicalDetector",
+            "KAT_Dosimeter",
             "kat_m8paper",
-            "kat_decon_kit"
+            "kat_decon_kit",
+            "kat_potassiumIodide",
+            "kat_prussianBlue",
+            "kat_antibiotics",
+            "kat_filgrastim",
+            "kat_antiemetic",
+            "kat_stemCells"
         };
         ammo[] = {
             "KAT_Gas_TripWireMine_Ammo",

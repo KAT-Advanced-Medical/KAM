@@ -47,7 +47,7 @@ private _duration = missionNamespace getVariable [QGVAR(deconActionTime), 8];
         params ["_args"];
         _args params ["_player", "_target"];
         ([_player, _player, ["kat_decon_kit"]] call ACEFUNC(medical_treatment,hasItem)) &&
-        {(_target getVariable [QGVAR(chemicalContamination), ""]) != ""}
+        {((_target getVariable [QGVAR(chemicalContamination), ""]) != "") || {(_target getVariable [QGVAR(radExternalContam), 0]) > 0}}
     },
     ["isNotInside"]
 ] call ACEFUNC(common,progressBar);
