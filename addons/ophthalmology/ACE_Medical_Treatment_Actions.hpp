@@ -54,4 +54,13 @@ class ACE_Medical_Treatment_Actions {
         condition = QFUNC(eyeShieldCondition);
         callbackSuccess = QFUNC(treatmentAdvanced_eyeShield);
     };
+    class RemoveEyeShield: EyeWash {
+        displayName = CSTRING(eyeshieldRemove_display);
+        displayNameProgress = CSTRING(eyeshieldRemove_action);
+        medicRequired = 0;
+        treatmentTime = QGVAR(eyeshield_treatment_time);
+        items[] = {};
+        condition = QFUNC(eyeShieldRemoveCondition);
+        callbackSuccess = QFUNC(treatmentAdvanced_eyeShieldRemove);
+    };
 };
