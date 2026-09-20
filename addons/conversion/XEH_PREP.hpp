@@ -1,0 +1,16 @@
+PREP(conversionCheck);
+PREP(conversionCondition);
+PREP(fullHealLocal);
+PREP(gui_updateInjuryListPart);
+PREP(handleRespawn);
+PREP(init);
+PREP(KATConditionExecutionDeath);
+PREP(KATConditionSecondChance);
+PREP(libConversion);
+PREP(libConversionCondition);
+PREP(libConversionDistance);
+PREP(manualConversion);
+PREP(manualConversionCondition);
+PREP(setDead);
+PREP(ticketConversion);
+PREP(ticketConversionCondition);
