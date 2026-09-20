@@ -79,6 +79,22 @@
             <Dutch>Versimpelt de vitale-waardensimulatie voor KI-eenheden. Dit kan helpen bij het besparen op FPS</Dutch>
             <Turkish>FPS tasarrufu sağlamak için yapay zekâ birimlerine basitleştirilmiş vital hesaplamaları uygular.</Turkish>
         </Key>
+        <Key ID="STR_KAT_Vitals_PRESSURE_ENABLE">
+            <English>Enable barometric pressure change</English>
+            <Japanese>気圧の変化を有効化</Japanese>
+        </Key>
+        <Key ID="STR_KAT_Vitals_PRESSURE_ENABLE_DESC">
+            <English>Enables barometric pressure changes with altitude that affect vitals such as oxygen calculations.\nDisabling this will prevent oxygen deprivation symptoms at high altitudes.</English>
+            <Japanese>酸素の計算などバイタルに影響を与える高度による気圧の変化を有効化します。\n無効化すると、高高度での酸欠症状が発生しなくなります。</Japanese>
+        </Key>
+        <Key ID="STR_KAT_Vitals_PRESSURE_ACE">
+            <English>Use ACE barometric pressure</English>
+            <Japanese>ACEの大気圧を使用</Japanese>
+        </Key>
+        <Key ID="STR_KAT_Vitals_PRESSURE_ACE_DESC">
+            <English>Use ACE calculation instead of KAM simplified calculation for barometric pressure value. (Require ACE Weather)</English>
+            <Japanese>気圧の値にKAMによる簡易化された計算ではなく、ACEによる計算を使用します。 (ACE Weather 天候システム が必要です)</Japanese>
+        </Key>
         <Key ID="STR_KAT_Vitals_basicDiagnostic_Log">
             <English>%1 - %2</English>
             <Czech>%1 - %2</Czech>
