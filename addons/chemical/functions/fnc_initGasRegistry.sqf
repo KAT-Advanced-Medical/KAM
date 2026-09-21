@@ -34,6 +34,11 @@ private _add = {
     ["decontaminable", false],
     ["persistent",     false],
     ["m8Color",        ""],
+    ["lungPotency",    0],
+    ["lungInjuryCap",  0],
+    ["lungLCt",        45],
+    ["lungProgression",        0],
+    ["lungProgressiveMin",  0.35],
     ["effectFunc",     LINKFUNC(effect_cs)]
 ]] call _add;
 
@@ -45,6 +50,11 @@ private _add = {
     ["decontaminable", false],
     ["persistent",     false],
     ["m8Color",        ""],
+    ["lungPotency",    1],
+    ["lungInjuryCap",  0.7],
+    ["lungLCt",        45],
+    ["lungProgression",  0.00025],
+    ["lungProgressiveMin",  0.35],
     ["effectFunc",     LINKFUNC(effect_chlorine)]
 ]] call _add;
 
@@ -56,6 +66,11 @@ private _add = {
     ["decontaminable", false],
     ["persistent",     false],
     ["m8Color",        ""],
+    ["lungPotency",    1.6],
+    ["lungInjuryCap",  0.9],
+    ["lungLCt",        45],
+    ["lungProgression",   0.0007],
+    ["lungProgressiveMin",  0.15],
     ["effectFunc",     LINKFUNC(effect_phosgene)]
 ]] call _add;
 
@@ -67,6 +82,11 @@ private _add = {
     ["decontaminable", true],
     ["persistent",     false],
     ["m8Color",        "red"],
+    ["lungPotency",    0.6],
+    ["lungInjuryCap",  0.6],
+    ["lungLCt",        45],
+    ["lungProgression",  0.00033],
+    ["lungProgressiveMin",  0.35],
     ["effectFunc",     LINKFUNC(effect_mustard)]
 ]] call _add;
 
@@ -78,6 +98,11 @@ private _add = {
     ["decontaminable", false],
     ["persistent",     false],
     ["m8Color",        "yellow"],
+    ["lungPotency",    0.8],
+    ["lungInjuryCap",  0.2],
+    ["lungLCt",        45],
+    ["lungProgression",        0],
+    ["lungProgressiveMin",  0.35],
     ["effectFunc",     LINKFUNC(effect_sarin)]
 ]] call _add;
 
@@ -89,5 +114,10 @@ private _add = {
     ["decontaminable", true],
     ["persistent",     true],
     ["m8Color",        "green"],
+    ["lungPotency",    0.8],
+    ["lungInjuryCap",  0.2],
+    ["lungLCt",        45],
+    ["lungProgression",        0],
+    ["lungProgressiveMin",  0.35],
     ["effectFunc",     LINKFUNC(effect_vx)]
 ]] call _add;

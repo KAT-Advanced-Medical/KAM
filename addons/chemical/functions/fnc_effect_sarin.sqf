@@ -18,7 +18,10 @@
  * Public: No
  */
 
-params ["_unit", "_infectedObject", "_gasData"];
+params ["_unit", "_infectedObject", "_gasData", ["_intensity", 1]];
+
+// Inhaled dose accumulates towards a lung injury severity capped per agent.
+[_unit, _gasData, _intensity] call FUNC(accumulateLungDose);
 
 if ((_unit getVariable [QGVAR(nerveAgentExposure), ""]) isEqualTo "sarin") exitWith {};
 _unit setVariable [QGVAR(nerveAgentExposure), "sarin", true];

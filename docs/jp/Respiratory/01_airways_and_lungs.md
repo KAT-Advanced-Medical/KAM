@@ -4,6 +4,10 @@
 
 Airway management is a critical first step in casualty care. An occluded or obstructed airway will lead to rapid oxygen desaturation (SpO2 drop) and eventual cardiac arrest.
 
+{% hint style="info" %}
+For damage to the lungs themselves rather than the airway, see [Inhalation & Chemical Lung Injury](03_inhalation_injury.md) and [Breathing & Thorax Injuries](02_breathing_injuries.md).
+{% endhint %}
+
 ## 🩺 Airways Management
 
 | Status | Treatment | Sidenotes |

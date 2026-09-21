@@ -282,3 +282,13 @@
     [1, 600, 8],
     true
 ] call CBA_fnc_addSetting;
+
+// =============== Lung Injury ===============
+[
+    QGVAR(lungInjuryMultiplier),
+    "SLIDER",
+    [LLSTRING(SETTING_lungInjuryMultiplier), LLSTRING(SETTING_lungInjuryMultiplier_DESC)],
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_Contamination)],
+    [0.1, 5, 1, 1],
+    true
+] call CBA_fnc_addSetting;

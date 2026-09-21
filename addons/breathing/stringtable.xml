@@ -3625,5 +3625,121 @@
             <Finnish>Hoito</Finnish>
             <Dutch>Behandelen</Dutch>
         </Key>
+        <Key ID="STR_KAT_Breathing_SubCategory_LungInjury">
+            <English>Lung Injury Settings</English>
+            <German>Lungenschaden-Einstellungen</German>
+        </Key>
+        <Key ID="STR_KAT_Breathing_SETTING_LungInjuryAlwaysVisible">
+            <English>Show lung injury in medical menu</English>
+            <German>Lungenschaden im Sanitätsmenü anzeigen</German>
+        </Key>
+        <Key ID="STR_KAT_Breathing_SETTING_LungInjuryAlwaysVisible_DESCRIPTION">
+            <English>If enabled, chemical and inhalation lung injury is listed in the medical menu. Disabled by default, so medics must examine the casualty to find it.</English>
+            <German>Wenn aktiviert, wird chemischer und inhalativer Lungenschaden im Sanitätsmenü aufgeführt. Standardmäßig deaktiviert, sodass Sanitäter den Verwundeten untersuchen müssen.</German>
+        </Key>
+        <Key ID="STR_KAT_Breathing_SETTING_lungInjury_enable">
+            <English>Enable lung injury</English>
+            <German>Lungenschaden aktivieren</German>
+        </Key>
+        <Key ID="STR_KAT_Breathing_SETTING_lungInjury_enable_DESC">
+            <English>Enables graded, non-penetrating lung injury from chemical agents, smoke and blast. Disabled reverts to the legacy all-or-nothing air poisoning behaviour.</English>
+            <German>Aktiviert abgestuften, nicht penetrierenden Lungenschaden durch chemische Kampfstoffe, Rauch und Druckwellen. Deaktiviert kehrt zum alten Alles-oder-Nichts-Verhalten zurück.</German>
+        </Key>
+        <Key ID="STR_KAT_Breathing_SETTING_lungInjury_maxSurfaceLoss">
+            <English>Alveolar surface loss</English>
+            <German>Verlust der Alveolaroberfläche</German>
+        </Key>
+        <Key ID="STR_KAT_Breathing_SETTING_lungInjury_maxSurfaceLoss_DESC">
+            <English>Fraction of usable lung surface lost at maximum severity. Drives respiratory rate rather than oxygen saturation.</English>
+            <German>Anteil der nutzbaren Lungenoberfläche, der bei maximalem Schweregrad verloren geht. Beeinflusst die Atemfrequenz, nicht die Sauerstoffsättigung.</German>
+        </Key>
+        <Key ID="STR_KAT_Breathing_SETTING_lungInjury_maxShunt">
+            <English>Shunt fraction</English>
+            <German>Shunt-Anteil</German>
+        </Key>
+        <Key ID="STR_KAT_Breathing_SETTING_lungInjury_maxShunt_DESC">
+            <English>Proportion of oxygen transfer lost at maximum severity. Supplemental oxygen overcomes this part proportionally.</English>
+            <German>Anteil des Sauerstofftransfers, der bei maximalem Schweregrad verloren geht. Sauerstoffgabe gleicht diesen Anteil proportional aus.</German>
+        </Key>
+        <Key ID="STR_KAT_Breathing_SETTING_lungInjury_maxDiffusion">
+            <English>Diffusion barrier (mmHg)</English>
+            <German>Diffusionsbarriere (mmHg)</German>
+        </Key>
+        <Key ID="STR_KAT_Breathing_SETTING_lungInjury_maxDiffusion_DESC">
+            <English>Fixed alveolar-arterial gradient at maximum severity, in mmHg. Oxygen therapy cannot overcome this, so higher values make severe injury unsurvivable without evacuation.</English>
+            <German>Fester alveolo-arterieller Gradient bei maximalem Schweregrad in mmHg. Sauerstofftherapie kann diesen nicht ausgleichen, höhere Werte machen schwere Verletzungen ohne Evakuierung tödlich.</German>
+        </Key>
+        <Key ID="STR_KAT_Breathing_SETTING_lungInjury_rampTime">
+            <English>Onset duration</English>
+            <German>Anstiegsdauer</German>
+        </Key>
+        <Key ID="STR_KAT_Breathing_SETTING_lungInjury_rampTime_DESC">
+            <English>Seconds for lung injury to climb from none to maximum once exposure has occurred.</English>
+            <German>Sekunden, die der Lungenschaden benötigt, um nach einer Exposition von null auf das Maximum anzusteigen.</German>
+        </Key>
+        <Key ID="STR_KAT_Breathing_SETTING_lungInjury_recoveryTime">
+            <English>Recovery duration (treated)</English>
+            <German>Genesungsdauer (behandelt)</German>
+        </Key>
+        <Key ID="STR_KAT_Breathing_SETTING_lungInjury_recoveryTime_DESC">
+            <English>Seconds for maximum lung injury to resolve once Dexamethasone has been given. Lung injury does not heal on its own.</English>
+            <German>Sekunden, die ein maximaler Lungenschaden nach Gabe von Dexamethason zum Abklingen benötigt. Lungenschaden heilt nicht von selbst.</German>
+        </Key>
+        <Key ID="STR_KAT_Breathing_SETTING_lungInjury_dexStepDown">
+            <English>Dexamethasone immediate effect</English>
+            <German>Dexamethason-Sofortwirkung</German>
+        </Key>
+        <Key ID="STR_KAT_Breathing_SETTING_lungInjury_dexStepDown_DESC">
+            <English>How much lung injury severity one dose of dexamethasone removes immediately.</English>
+            <German>Wie viel Lungenschaden eine Dosis Dexamethason sofort beseitigt.</German>
+        </Key>
+        <Key ID="STR_KAT_Breathing_SETTING_lungInjury_dexRecoveryMult">
+            <English>Dexamethasone recovery multiplier</English>
+            <German>Dexamethason-Genesungsmultiplikator</German>
+        </Key>
+        <Key ID="STR_KAT_Breathing_SETTING_lungInjury_dexRecoveryMult_DESC">
+            <English>How much faster lung injury resolves while dexamethasone is active.</English>
+            <German>Wie viel schneller der Lungenschaden abklingt, solange Dexamethason wirkt.</German>
+        </Key>
+        <Key ID="STR_KAT_Breathing_SETTING_lungInjury_dexDuration">
+            <English>Dexamethasone duration</English>
+            <German>Dexamethason-Wirkdauer</German>
+        </Key>
+        <Key ID="STR_KAT_Breathing_SETTING_lungInjury_dexDuration_DESC">
+            <English>How long one dose of dexamethasone keeps accelerating recovery.</English>
+            <German>Wie lange eine Dosis Dexamethason die Genesung beschleunigt.</German>
+        </Key>
+        <Key ID="STR_KAT_Breathing_lungInjury_mild">
+            <English>Mild pulmonary irritation</English>
+            <German>Leichte Lungenreizung</German>
+        </Key>
+        <Key ID="STR_KAT_Breathing_lungInjury_moderate">
+            <English>Chemical pneumonitis</English>
+            <German>Chemische Pneumonitis</German>
+        </Key>
+        <Key ID="STR_KAT_Breathing_lungInjury_severe">
+            <English>Severe pulmonary oedema</English>
+            <German>Schweres Lungenödem</German>
+        </Key>
+        <Key ID="STR_KAT_Breathing_inspectChest_noAsymmetry">
+            <English>Chest rises evenly, no penetrating wound. Breathing is rapid and laboured.</English>
+            <German>Brustkorb hebt sich gleichmäßig, keine penetrierende Wunde. Atmung ist schnell und angestrengt.</German>
+        </Key>
+        <Key ID="STR_KAT_Breathing_SETTING_lungInjury_desatRate">
+            <English>Desaturation speed</English>
+            <German>Entsättigungsgeschwindigkeit</German>
+        </Key>
+        <Key ID="STR_KAT_Breathing_SETTING_lungInjury_desatRate_DESC">
+            <English>How much faster oxygen saturation falls at maximum lung injury. Higher values make severe inhalation injury dangerous within minutes; 0 uses the normal rate.</English>
+            <German>Wie viel schneller die Sauerstoffsättigung bei maximalem Lungenschaden fällt. Höhere Werte machen schwere Inhalationsverletzungen innerhalb von Minuten gefährlich; 0 nutzt die normale Rate.</German>
+        </Key>
+        <Key ID="STR_KAT_Breathing_SETTING_lungInjury_progressionMultiplier">
+            <English>Chemical progression speed</English>
+            <German>Verschlechterungsgeschwindigkeit (chemisch)</German>
+        </Key>
+        <Key ID="STR_KAT_Breathing_SETTING_lungInjury_progressionMultiplier_DESC">
+            <English>How fast untreated chemical lung injury worsens toward death. Set to 0 and injuries simply hold until treated instead of deteriorating. Does not affect blast or smoke injury, which never progresses.</English>
+            <German>Wie schnell sich unbehandelter chemischer Lungenschaden bis zum Tod verschlimmert. Bei 0 bleibt der Schaden bestehen, statt sich zu verschlechtern. Betrifft keine Druckwellen- oder Rauchverletzungen, die nie fortschreiten.</German>
+        </Key>
     </Package>
 </Project>

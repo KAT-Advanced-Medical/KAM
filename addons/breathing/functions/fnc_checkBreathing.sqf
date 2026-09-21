@@ -32,12 +32,15 @@ private _breath = "";
 private _breathRate = "RR: ";
 
 private _respiratoryDepth = _patient getVariable [QEGVAR(vitals,respiratoryDepth), 10];
-if ((_respiratoryDepth < 8.5) || (_patient getVariable [QEGVAR(chemical,airPoisoning), false])) then {
+private _lungInjury = _patient getVariable [QGVAR(lungInjury), 0];
+private _lungInjuryBand = GET_LUNG_INJURY_BAND(_lungInjury);
+
+if ((_respiratoryDepth < 8.5) || (_lungInjuryBand > 0) || (_patient getVariable [QEGVAR(chemical,airPoisoning), false])) then {
     _breathing = LLSTRING(breathing_isShallow);
     _breathing_log = LLSTRING(breathing_shallow);
 };
 
-if (_respiratoryDepth < 7)  then {
+if ((_respiratoryDepth < 7) || (_lungInjuryBand >= 2))  then {
     _breathing = LLSTRING(breathing_isVeryShallow);
     _breathing_log = LLSTRING(breathing_Veryshallow);
 };

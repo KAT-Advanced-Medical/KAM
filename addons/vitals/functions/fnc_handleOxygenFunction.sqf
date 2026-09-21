@@ -35,6 +35,10 @@ params ["_unit", "_actualHeartRate", "_anerobicPressure", "_bloodGas", "_tempera
 #define MINIMUM_DEPTH 0.2
 #define CPR_VENTILATION_BOOST 200
 
+// Diffuse non-penetrating alveolar damage (chemical pneumonitis, smoke inhalation, blast
+// lung). 0 on any unit nothing has injured, which makes every term using it inert.
+private _lungInjury = GET_LUNG_INJURY(_unit);
+
 private _respiratoryRate = 0;
 private _respiratoryDepression = 0;
 private _respiratoryDepth = 0;
@@ -103,7 +107,10 @@ if (IN_CRDC_ARRST(_unit)) then {
     };
 } else {
     // Generated ETCO2 quadratic. Ensures ETCO2 moves with Respiratory Rate and is constantly below PaCO2
-    _etco2 = (((-0.0416667 * (_respiratoryRate^2)) + (3.09167 * (_respiratoryRate))) * (_respiratoryDepth / 10 )) max 5;
+    // The quadratic peaks at RR ~37, so it rises with respiratory rate. Lung injury subtracts a
+    // dead-space term that cancels that rise, holding EtCO2 flat while RR climbs and SpO2 falls -
+    // the alveolar dead space of a shunt. Inert at zero injury.
+    _etco2 = ((((-0.0416667 * (_respiratoryRate^2)) + (3.09167 * (_respiratoryRate))) * (_respiratoryDepth / 10 )) - ((LUNG_ETCO2_DEADSPACE_MAX) * _lungInjury)) max 5;
 };
 
 private _externalPh = 0;
@@ -126,7 +133,11 @@ private _fio2 = switch (true) do {
         [0, DEFAULT_FIO2] select ((_unit getVariable [QEGVAR(airway,recovery), false]) || (_unit getVariable [QEGVAR(airway,overstretch), false]))
     };
     case ((_respiratoryRate == 0) && (EGVAR(breathing,SpO2_perfusion)) && !_cprAssistSpO2): { 0 };
-    case ((_unit getVariable [QEGVAR(chemical,airPoisoning), false]) || (_unit getVariable [QEGVAR(breathing,tensionpneumothorax), false]) || (_unit getVariable [QEGVAR(breathing,hemopneumothorax), false])): { 0 };
+    // Genuine total ventilation failure - air cannot reach the alveoli at all. Unchanged.
+    case ((_unit getVariable [QEGVAR(breathing,tensionpneumothorax), false]) || (_unit getVariable [QEGVAR(breathing,hemopneumothorax), false])): { 0 };
+    // Legacy binary airPoisoning kill, kept for missions and mods that set the flag directly.
+    // Suppressed once the graded lung-injury model is driving, otherwise it would override it.
+    case ((_lungInjury <= 0) && {_unit getVariable [QEGVAR(chemical,airPoisoning), false]}): { 0 };
     case (_unit getVariable [QEGVAR(breathing,oxygenMaskActive), false]): { 0.95 };
     case (_unit getVariable [QEGVAR(breathing,oxygenTankConnected), false]): { 1 };
     default { DEFAULT_FIO2 };
@@ -134,6 +145,16 @@ private _fio2 = switch (true) do {
 
 // Alveolar Gas equation. PALVO2 is largely impacted by Barometric Pressure and FiO2
 private _pALVo2 = ((_fio2 * (_baroPressure - 47)) - (_paco2 / _anerobicPressure)) max 1;
+
+// Lung injury degrades alveolar-to-arterial oxygen transfer through two mechanisms that
+// respond to supplemental oxygen differently:
+//   shunt     - multiplicative, so raising FiO2 overcomes it proportionally (V/Q mismatch,
+//               recruitable alveoli)
+//   diffusion - a fixed mmHg penalty that high FiO2 cannot overcome (alveolar oedema)
+// Together they give a smooth SpO2 decline that oxygen therapy can bridge but not cure.
+if (_lungInjury > 0) then {
+    _pALVo2 = ((_pALVo2 * (1 - ((LUNG_SHUNT_MAX) * _lungInjury))) - ((LUNG_DIFFUSION_MAX) * _lungInjury)) max 1;
+};
 
 // PaO2 comes from ventilation shortage multipled by RBC volume
 private _pao2 = (DEFAULT_PAO2 - ((DEFAULT_ECB / ((GET_BODY_FLUID(_unit) select 0) max 500)) * ((_demandVentilation - _actualVentilation) / 120)));
@@ -145,7 +166,12 @@ private _arrestPerfusion = [1, (1 * EGVAR(breathing,SpO2_PerfusionMultiplier))] 
 // Scale positive PaO2 shift rate when BVM with supplemental O2 is in use
 private _bvmPositiveMultiplier = [1, EGVAR(breathing,BVMOxygen_Multiplier)] select ((_unit getVariable [QEGVAR(breathing,BVMInUse), false]) && {_unit getVariable [QEGVAR(breathing,oxygenTankConnected), false]});
 // PaO2 moves in controlled steps to prevent hard movements when Ventilation Demand spikes
-_pao2 = if (_previousCyclePao2 != _pao2) then { ([ (_previousCyclePao2 - ((PAO2_MAX_CHANGE * EGVAR(breathing,SpO2_MultiplyNegative) * _arrestPerfusion) * _deltaT)) , (_previousCyclePao2 + ((PAO2_MAX_CHANGE * EGVAR(breathing,SpO2_MultiplyPositive) * _bvmPositiveMultiplier) * _deltaT))] select ((_previousCyclePao2 - _pao2) < 0)) } else { _pao2 };
+// Flooded alveoli desaturate faster than the model's baseline slew allows. Without this, severe
+// lung injury resolves before PaO2 can travel far enough to express it. Evaluates to exactly 1
+// at zero injury, so no other cause of hypoxia is affected.
+private _lungDesatMultiplier = 1 + (_lungInjury * EGVAR(breathing,lungInjury_desatRate));
+
+_pao2 = if (_previousCyclePao2 != _pao2) then { ([ (_previousCyclePao2 - ((PAO2_MAX_CHANGE * EGVAR(breathing,SpO2_MultiplyNegative) * _arrestPerfusion * _lungDesatMultiplier) * _deltaT)) , (_previousCyclePao2 + ((PAO2_MAX_CHANGE * EGVAR(breathing,SpO2_MultiplyPositive) * _bvmPositiveMultiplier) * _deltaT))] select ((_previousCyclePao2 - _pao2) < 0)) } else { _pao2 };
 
 // Oxy-Hemo Dissociation Curve, driven by PaO2 with shaping done by pH.
 private _o2Sat = (((_pao2 max 1)^2.7 / ((25 - (((_pH / DEFAULT_PH) - 1) * 150))^2.7 + _pao2^2.7))) min 0.999;
