@@ -49,7 +49,7 @@ switch (_effect) do {
         private _sounds = [
             QPATHTOEF_SOUND(airway,sounds\puking1.wav),
             QPATHTOEF_SOUND(airway,sounds\puking2.wav),
-            QPATHTOEF_SOUND(airway,sounds\puking1.wav)
+            QPATHTOEF_SOUND(airway,sounds\puking3.wav)
         ];
         playSound3D [selectRandom _sounds, _unit, false, getPosASL _unit, 8, 1, 15];
     };
