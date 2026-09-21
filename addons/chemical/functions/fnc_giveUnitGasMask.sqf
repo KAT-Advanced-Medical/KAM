@@ -34,11 +34,16 @@ private _fnc_replaceItem = {
     };
 };
 
-if (_playerHasGasmask) then {
-    [_medic,_playerGasMask] call ACEFUNC(common,useItem);
-    [_medic,_patient,_playerGasMask] call _fnc_replaceItem;
+// Take the mask out of the inventory it came from, so it isn't duplicated when linked to the patient
+private _maskRemoved = if (_playerHasGasmask) then {
+    [_medic,_playerGasMask] call ACEFUNC(common,useItem)
 } else {
     _itemArr = _patient call ACEFUNC(common,uniqueItems);
     { if (_x in (missionNamespace getVariable [QGVAR(availGasmaskList), []])) then {_playerGasMask = _x} } forEach _itemArr;
-    [_medic,_patient,_playerGasMask] call _fnc_replaceItem;
+    [_patient,_playerGasMask] call ACEFUNC(common,useItem)
 };
+
+// Mask is gone (e.g. moved during the treatment), don't create one from nothing
+if !(_maskRemoved) exitWith {};
+
+[_medic,_patient,_playerGasMask] call _fnc_replaceItem;

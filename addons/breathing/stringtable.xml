@@ -1089,8 +1089,11 @@
             <Dutch>%1 verwijderde nasale canule</Dutch>
             <Turkish>%1 Nasal Cannula’yı çıkardı</Turkish>
         </Key>
+        <Key ID="STR_KAT_Breathing_TakeOffOxyMask_progress">
+            <English>Take off oxygen mask...</English>
+        </Key>
         <Key ID="STR_KAT_Breathing_Remove_OxyMask">
-            <English>Remove Oxygen Mask</English>
+            <English>Take off oxygen mask</English>
             <Czech>Odebrat Kyslíkovou Masku</Czech>
             <French>Retirer le masque à oxygène</French>
             <Spanish>Quitar la máscara de oxígeno</Spanish>
