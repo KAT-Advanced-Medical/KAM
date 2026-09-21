@@ -94,11 +94,16 @@ if (GVAR(showPatientSideLabels)) then {
     (_display displayCtrl IDC_SIDE_LABEL_RIGHT) ctrlShow true;
 };
 
-if (EGVAR(pharma,RequireInsIV) && EGVAR(pharma,IVflowControl)) then {
+private _showIVFlowControl = EGVAR(pharma,RequireInsIV) && EGVAR(pharma,IVflowControl);
+private _showABGResults = EGVAR(circulation,abgEnable);
+
+(_display displayCtrl IDC_ADD_MENUS) ctrlShow (_showIVFlowControl || _showABGResults);
+
+if (_showIVFlowControl) then {
     (_display displayCtrl IDC_IV_FLOW_SHOWBUTTON) ctrlShow true;
 };
 
-if (EGVAR(circulation,abgEnable)) then {
+if (_showABGResults) then {
     (_display displayCtrl IDC_TEST_SHOWBUTTON) ctrlShow true;
 };
 

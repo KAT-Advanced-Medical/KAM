@@ -158,7 +158,7 @@ class ACE_Medical_Menu {
                 w = QUOTE(POS_W(5.5));
                 h = QUOTE(POS_H(1));
                 colorBackground[] = GUI_BCG_COLOR; // LOOK HERE
-                show = 1;
+                show = 0;
                 class Attributes {
                     color = "#E5E5E5";
                     font = "RobotoCondensed";

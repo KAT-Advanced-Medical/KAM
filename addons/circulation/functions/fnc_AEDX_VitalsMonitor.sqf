@@ -135,7 +135,8 @@ if (_patient getVariable [QGVAR(DefibrillatorPads_Connected), false] && {((_pati
             params ["_args", "_idPFH"];
             _args params ["_patient"];
 
-            private _soundSource = (_patient getVariable [QGVAR(Defibrillator_Provider), [objNull, -1, -1]]) select 0;
+            private _provider = _patient getVariable [QGVAR(Defibrillator_Provider), [objNull, -1, -1]];
+            private _soundSource = [_patient, _provider select 0] select ((_provider select 1) isEqualTo 1);
 
             if (!(_patient getVariable [QGVAR(DefibrillatorPads_Connected), false])) exitWith {
                 _patient setVariable ["kat_AEDXPatient_HR_PFH", nil, true];
@@ -177,7 +178,8 @@ if (_patient getVariable [QGVAR(DefibrillatorPads_Connected), false] && {((_pati
             params ["_args", "_idPFH"];
             _args params ["_patient"];
 
-            private _soundSource = (_patient getVariable [QGVAR(Defibrillator_Provider), [objNull, -1, -1]]) select 0;
+            private _provider = _patient getVariable [QGVAR(Defibrillator_Provider), [objNull, -1, -1]];
+            private _soundSource = [_patient, _provider select 0] select ((_provider select 1) isEqualTo 1);
 
             if (!(_patient getVariable [QGVAR(DefibrillatorPads_Connected), false])) exitWith {
                 _patient setVariable ["kat_AEDXPatient_HR_PFH", nil, true];
@@ -278,7 +280,12 @@ if (_patient getVariable [QGVAR(AED_X_VitalsMonitor_Connected), false] && {(_pat
         params ["_args", "_idPFH"];
         _args params ["_patient"];
 
-        private _soundSource = (_patient getVariable [QGVAR(Defibrillator_Provider), [objNull, -1, -1]]) select 0;
+        private _provider = if (_patient getVariable [QGVAR(DefibrillatorPads_Connected), false]) then {
+            _patient getVariable [QGVAR(Defibrillator_Provider), [objNull, -1, -1]]
+        } else {
+            _patient getVariable [QGVAR(AED_X_VitalsMonitor_Provider), [objNull, -1, -1]]
+        };
+        private _soundSource = [_patient, _provider select 0] select ((_provider select 1) isEqualTo 1);
 
         if !(_patient getVariable [QGVAR(AED_X_VitalsMonitor_Connected), false]) exitWith {
             _patient setVariable ["kat_AEDXPatient_PulseOx_PFH", nil, true];
