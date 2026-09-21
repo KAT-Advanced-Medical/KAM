@@ -28,6 +28,15 @@ if ((_maskStatus select 0) > 0) then {
     _patient addMagazine ["kat_personal_oxygen", (_maskStatus select 0)];
 };
 
-_patient unassignItem (goggles _patient);
+private _mask = goggles _patient;
+
+if (_mask in (missionNamespace getVariable [QEGVAR(chemical,availGasmaskList), []])) then {
+    // Gas masks go to the medic instead of the patient's inventory
+    _patient unlinkItem _mask;
+    [_medic, _mask] call ACEFUNC(common,addToInventory);
+} else {
+    _patient unassignItem _mask;
+};
+
 _patient setVariable [QGVAR(oxygenMaskActive), false, true];
 _patient setVariable [QGVAR(oxygenMaskStatus), [0,0], true];
