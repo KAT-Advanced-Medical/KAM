@@ -1,7 +1,7 @@
 #include "..\script_component.hpp"
 /*
  * Author: mharis001
- * Updates the category buttons based currently avaiable treatments.
+ * Updates the category buttons based currently available treatments.
  *
  * Arguments:
  * 0: Medical Menu display <DISPLAY>
@@ -27,6 +27,19 @@ params ["_display"];
     };
     _ctrl ctrlEnable _enable;
 
+    if (!_enable
+    && {isNull findDisplay 312}
+    && {!(
+        ACEGVAR(medical_treatment,holsterRequired) == 0
+        || {!isNull objectParent ACE_player} // medic is in a vehicle, so weapon is considered holstered
+        || {!isNull objectParent ACEGVAR(medical_gui,target)} // patient is in a vehicle, ^
+        || {(ACEGVAR(medical_treatment,holsterRequired) in [2,4]) && {_category == "examine"}} // if examine bypass is on
+        || {currentWeapon ACE_player isEqualTo ""} // weapon is holstered
+        || {(ACEGVAR(medical_treatment,holsterRequired) <= 2) && {weaponLowered ACE_player}} // if just lowered is allowed
+    )}) then {
+        _ctrl ctrlSetTooltip ACELLSTRING(medical_gui,needToHolster);
+    };
+
     private _selectedColor = [
         profileNamespace getVariable ["GUI_BCG_RGB_R", 0.13],
         profileNamespace getVariable ["GUI_BCG_RGB_G", 0.54],
@@ -37,8 +50,8 @@ params ["_display"];
     private _color = [[0.4, 0.4, 0.4, 1], [1, 1, 1, 1]] select _enable;
     _color = [_color, _selectedColor] select (ACEGVAR(medical_gui,selectedCategory) isEqualTo _category);
     _ctrl ctrlSetTextColor _color;
-    _color set [-1, 0.8];
-    _ctrl ctrlSetBackgroundColor _color;
+    _color set [-1, 0.8]; // Mouseover change
+    _ctrl ctrlSetActiveColor _color;
 } forEach [
     [IDC_TRIAGE, "triage"],
     [IDC_EXAMINE, "examine"],
