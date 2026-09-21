@@ -9,8 +9,13 @@ if (!hasInterface) exitWith {};
     private _random = floor(random 100);
 
     if (_random <= GVAR(probability_treatment_dust)) then {
-        private _dustInjurySeverity = ACE_player getVariable [QGVAR(dustInjurySeverity), 0];
-        ACE_player setVariable [QGVAR(dustInjurySeverity), ((_dustInjurySeverity - 0.5) max 0), true];
+        // Blinking removes 0.5 of dust, light dust first
+        private _dustInjuryLight = ACE_player getVariable [QGVAR(dustInjuryLight), 0];
+        private _dustInjuryHeavy = ACE_player getVariable [QGVAR(dustInjuryHeavy), 0];
+        private _removedLight = _dustInjuryLight min 0.5;
+
+        ACE_player setVariable [QGVAR(dustInjuryLight), _dustInjuryLight - _removedLight, true];
+        ACE_player setVariable [QGVAR(dustInjuryHeavy), (_dustInjuryHeavy - (0.5 - _removedLight)) max 0, true];
     };
 }, "",
 [DIK_F, [true, true, false]], false] call CBA_fnc_addKeybind;

@@ -57,7 +57,7 @@ if (ACEGVAR(medical_treatment,clearTrauma) == 1) then {
     TRACE_2("clearTrauma - clearing trauma after stitching",_bodyPart,_treatedWound);
     private _bodyPartDamage = _patient getVariable [QACEGVAR(medical,bodyPartDamage), []];
     _bodyPartDamage set [_partIndex, (_bodyPartDamage select _partIndex) - (_treatedDamageOf * _treatedAmountOf)];
-    _patient setVariable [QEGVAR(medical,bodyPartDamage), _bodyPartDamage, true];
+    _patient setVariable [QACEGVAR(medical,bodyPartDamage), _bodyPartDamage, true];
     TRACE_2("clearTrauma - healed damage",_bodyPart,_treatedDamageOf);
 
     switch (_bodyPart) do {
