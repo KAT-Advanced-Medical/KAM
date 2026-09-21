@@ -47,7 +47,6 @@ PREP(initGasRegistry);
 PREP(initModule);
 PREP(poison);
 PREP(putOnGasMask);
-PREP(removeGasMask);
 PREP(scheduleAirPoisoningOnset);
 PREP(scheduleNerveSymptomChain);
 PREP(showChemDetector);

@@ -14,7 +14,7 @@ class ACE_Medical_Treatment_Actions {
         displayNameProgress = CSTRING(takeOffGasMask_progress);
         allowedSelections[] = {"Head"};
         allowSelfTreatment = 0;
-        callbackSuccess = QFUNC(removeGasMask);
+        callbackSuccess = QFUNC(takeOffGasMask);
         condition = QUOTE([_patient] call FUNC(hasGasMaskON));
         icon = QPATHTOF(ui\Gasmask_icon.paa);
     };
