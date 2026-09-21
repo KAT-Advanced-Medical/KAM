@@ -45,7 +45,7 @@ if (_patient getVariable [QGVAR(occluded), false]) then {
         _patient setVariable [QACEGVAR(medical,triageLevel), 3, true];
     };
 };
-if (!(_patient getVariable [QGVAR(occluded), false] && _patient getVariable [QGVAR(obstruction), false]) && GVAR(autoTriage)) then {_patient setVariable [QACEGVAR(medical,triageLevel), 0, true]};
+if (!(_patient getVariable [QGVAR(occluded), false] || _patient getVariable [QGVAR(obstruction), false]) && GVAR(autoTriage)) then {_patient setVariable [QACEGVAR(medical,triageLevel), 0, true]};
 
 private _message = format ["%1<br />%2", _hintAirwayObstruction, _hintAirwayOcclusion];
 
