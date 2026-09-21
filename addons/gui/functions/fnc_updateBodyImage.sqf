@@ -83,7 +83,7 @@ private _surgicalBlock = GET_SURGICAL_TOURNIQUETS(_target);
         switch (true) do { // torso damage threshold doesn't need scaling
             case (_forEachIndex > 3): { // legs: index 4 & 5
                 if (ACEGVAR(medical,limbDamageThreshold) != 0 && {[false, !isPlayer _target, true] select ACEGVAR(medical,useLimbDamage)}) then { // Just indicate how close to the limping threshold we are
-                    _damageThreshold = _damageThreshold * EGVAR(medical,limbDamageThreshold);
+                    _damageThreshold = _damageThreshold * ACEGVAR(medical,limbDamageThreshold);
                 } else {
                     _damageThreshold = LIMPING_DAMAGE_THRESHOLD * 4;
                 };
