@@ -307,11 +307,11 @@ class ACE_Medical_Treatment_Actions {
     };
     class RemoveOxyMask : NasalCannula {
         displayName = CSTRING(Remove_OxyMask);
-        displayNameProgress = ECSTRING(airway,action_removing);
+        displayNameProgress = CSTRING(TakeOffOxyMask_progress);
         medicRequired = 0;
         treatmentTime = 5;
         items[] = {};
-        condition = QUOTE(_patient call EFUNC(airway,checkMask));
+        condition = QUOTE(_patient call FUNC(hasOxygenMaskON));
         callbackSuccess = QFUNC(removeOxygenMask);
     };
 };

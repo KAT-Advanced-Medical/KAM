@@ -17,6 +17,7 @@ PREP(handleBreathingConditions);
 PREP(handlePneumothoraxDeterioration);
 PREP(handleRespawn);
 PREP(hasBVM);
+PREP(hasOxygenMaskON);
 PREP(hasOxygenTank);
 PREP(inflictAdvancedPneumothorax);
 PREP(init);
