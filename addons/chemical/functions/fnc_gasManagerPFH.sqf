@@ -47,7 +47,9 @@ private _exposedNow = [];
         _x setVariable [QGVAR(areaIntensity), _intensity, true];
         _exposedNow pushBackUnique _x;
 
-        [QGVAR(poison), [_x, _gasLevel, _infectedObject], _x] call CBA_fnc_targetEvent;
+        // Intensity travels in the payload rather than being read back off the public variable:
+        // the setVariable broadcast above and this target event have no guaranteed ordering.
+        [QGVAR(poison), [_x, _gasLevel, _infectedObject, _intensity], _x] call CBA_fnc_targetEvent;
 
     } forEach nearestObjects [_gasLogic, ["CAManBase"], _radius];
 } forEach GVAR(gasSources);

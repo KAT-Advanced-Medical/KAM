@@ -20,9 +20,25 @@ if (!alive _unit) exitWith {};
 
 switch (_effect) do {
     case "phosgenePulmonary": {
-        _unit setVariable [QGVAR(airPoisoning), true, true];
-        _unit setVariable [QEGVAR(breathing,respiratoryDepth), 0.4, true];
-        [QEGVAR(breathing,playCough), [_unit], _unit] call CBA_fnc_targetEvent;
+        if (LUNG_MODEL_ACTIVE) then {
+            // Latency is over. Release the dose accumulated in the cloud as real lung injury,
+            // which then ramps in over the next minute or so rather than landing all at once.
+            private _gasData = GVAR(gasRegistry) getOrDefault ["phosgene", createHashMap];
+            private _lct = (_gasData getOrDefault ["lungLCt", 60]) max 1;
+            private _cap = _gasData getOrDefault ["lungInjuryCap", 0.9];
+            private _severity = (((_unit getVariable [QGVAR(lungDose), 0]) / _lct) min 1) * _cap;
+
+            _unit setVariable [QGVAR(lungOnsetFired), true, true];
+            [QEGVAR(breathing,setLungInjury), [_unit, _severity, "phosgene", _gasData getOrDefault ["lungProgression", 0], _gasData getOrDefault ["lungProgressiveMin", LUNG_INJURY_PROGRESSIVE_MIN]]] call CBA_fnc_localEvent;
+        } else {
+            _unit setVariable [QGVAR(airPoisoning), true, true];
+        };
+
+        private _soundTargets = allPlayers inAreaArray [ASLToAGL getPosASL _unit, 15, 15, 0, false, 15];
+        
+        if (_soundTargets isNotEqualTo []) then {
+            [QEGVAR(breathing,playCough), [_unit], _soundTargets] call CBA_fnc_targetEvent;
+        };
     };
     case "mustardEye": {
         _unit setVariable [QEGVAR(ophthalmology,dustInjuryHeavy), 4, true];

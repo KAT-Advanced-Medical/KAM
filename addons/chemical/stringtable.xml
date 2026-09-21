@@ -1476,5 +1476,13 @@
             <German>Schwere chemische Verätzung</German>
             <Japanese>重度の化学熱傷</Japanese>
         </Key>
+        <Key ID="STR_KAT_Chemical_SETTING_lungInjuryMultiplier">
+            <English>Lung Injury Rate Multiplier</English>
+            <German>Multiplikator für Lungenschaden</German>
+        </Key>
+        <Key ID="STR_KAT_Chemical_SETTING_lungInjuryMultiplier_DESC">
+            <English>Scales how quickly inhaled gas accumulates into lung injury. Raise for shorter training scenarios.</English>
+            <German>Skaliert, wie schnell eingeatmetes Gas zu Lungenschaden führt. Für kürzere Ausbildungsszenarien erhöhen.</German>
+        </Key>
     </Package>
 </Project>

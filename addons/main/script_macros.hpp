@@ -304,7 +304,47 @@
 
 // Breathing
 #define VAR_SURFACE_AREA                400
-#define GET_KAT_SURFACE_AREA(unit)      (VAR_SURFACE_AREA - (((unit getVariable [QEGVAR(breathing,pneumothorax), 0]) * 75)))
+
+// Lung injury: diffuse, non-penetrating alveolar damage (chemical pneumonitis, smoke
+// inhalation, blast lung). 0 = healthy, 1 = maximal. Written through
+// kat_breathing_fnc_setLungInjury; defaults to 0 so every term below is inert on
+// units nothing has touched.
+#define VAR_LUNG_INJURY                 QEGVAR(breathing,lungInjury)
+#define GET_LUNG_INJURY(unit)           (unit getVariable [VAR_LUNG_INJURY, 0])
+
+// Fraction of alveolar surface lost at maximal injury
+#define LUNG_SA_LOSS_MAX                (missionNamespace getVariable [QEGVAR(breathing,lungInjury_maxSurfaceLoss), 0.6])
+// Fraction of alveolar oxygen tension lost to shunt at maximal injury (oxygen-responsive)
+#define LUNG_SHUNT_MAX                  (missionNamespace getVariable [QEGVAR(breathing,lungInjury_maxShunt), 0.6])
+// Fixed alveolar-arterial gradient in mmHg at maximal injury (oxygen-refractory)
+#define LUNG_DIFFUSION_MAX              (missionNamespace getVariable [QEGVAR(breathing,lungInjury_maxDiffusion), 25])
+// EtCO2 dead-space penalty at maximal injury, cancelling the RR-driven rise
+#define LUNG_ETCO2_DEADSPACE_MAX        22
+// Below this severity the injury is not symptomatic and resolves on its own; at or above it,
+// the injury is held until treated with dexamethasone.
+#define LUNG_INJURY_SYMPTOMATIC_MIN     0.15
+// Severity band: 0 none, 1 mild, 2 moderate, 3 severe. Drives medic-facing text and decides
+// when a network sync is forced regardless of the vitals throttle.
+// Pass a plain variable, never an expression containing a comma - the preprocessor would split
+// it into two macro arguments.
+// At or above this, an untreated chemical injury progresses toward ARDS rather than holding.
+// Shared with the band macro below so the gate and the displayed band cannot drift apart.
+#define LUNG_INJURY_PROGRESSIVE_MIN     0.35
+#define LUNG_INJURY_SEVERE_MIN          0.7
+// Seconds between audible coughs while symptomatic, matching the pneumothorax cough cadence
+#define LUNG_INJURY_COUGH_INTERVAL      30
+
+#define GET_LUNG_INJURY_BAND(n)         ({_x} count [((n) >= LUNG_INJURY_SYMPTOMATIC_MIN), ((n) >= LUNG_INJURY_PROGRESSIVE_MIN), ((n) >= LUNG_INJURY_SEVERE_MIN)])
+
+// True when the graded lung injury model is actually running. Anything that would otherwise
+// fall back to legacy all-or-nothing behaviour branches on this. Read defensively so it is
+// safe before settings init and when kat_breathing is absent.
+#define LUNG_MODEL_ACTIVE               ((missionNamespace getVariable [QEGVAR(breathing,enable), true]) && {missionNamespace getVariable [QEGVAR(breathing,lungInjury_enable), true]})
+// Lower bound on effective alveolar surface. MANDATORY: this value is a divisor in
+// kat_vitals_fnc_handleOxygenFunction, and pneumothorax stacking can drive it negative.
+#define LUNG_SA_FLOOR                   60
+
+#define GET_KAT_SURFACE_AREA(unit)      ((((VAR_SURFACE_AREA) - (((unit getVariable [QEGVAR(breathing,pneumothorax), 0]) * 75))) * (1 - ((LUNG_SA_LOSS_MAX) * (GET_LUNG_INJURY(unit))))) max (LUNG_SA_FLOOR))
 
 #define VAR_RESPIRATORY_DEPTH           QEGVAR(vitals,respiratoryDepth)
 #define GET_KAT_RESPIRATORY_DEPTH(unit)      (unit getVariable [QEGVAR(vitals,respiratoryDepth), 10])

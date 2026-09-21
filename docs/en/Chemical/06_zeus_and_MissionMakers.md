@@ -56,6 +56,10 @@ Hand them out via the **`ACE_Box_82mm_Mo_Gas`** ammo box, which contains 8× chl
 
 All of the below live under **CBA Settings → KAT - ADV Medical: Chemical**. Defaults are realistic; tune them to fit your mission's pace and lethality. Times are in seconds.
 
+{% hint style="info" %}
+The lung injury caused by chlorine, phosgene and mustard is tuned separately, under **KAT - ADV Medical: Breathing → Lung Injury Settings** — see [Inhalation & Chemical Lung Injury](../Respiratory/03_inhalation_injury.md).
+{% endhint %}
+
 ### Protection & Gear
 
 | Setting | Default | Range | What it does |
@@ -84,7 +88,7 @@ All of the below live under **CBA Settings → KAT - ADV Medical: Chemical**. De
 
 | Setting | Default | Range | What it does |
 |---------|---------|-------|--------------|
-| Chlorine: Onset Time | 30 | 0–3600 | Seconds in the cloud before chlorine symptoms begin |
+| Chlorine: Onset Time | 30 | 0–3600 | Legacy fallback, only used when the lung injury model is disabled |
 
 ### Phosgene (Level 1)
 
@@ -123,6 +127,7 @@ All of the below live under **CBA Settings → KAT - ADV Medical: Chemical**. De
 
 | Setting | Default | Range | What it does |
 |---------|---------|-------|--------------|
+| Lung Injury Rate Multiplier | 1 | 0.1–5 | Scales how quickly inhaled gas accumulates into lung injury. Raise for shorter training scenarios |
 | Contamination Tick Interval | 40 | 1–3600 | Seconds between re-poison ticks for mustard/VX until deconned |
 | Decontamination Duration | 8 | 1–600 | How long the decon self-action takes |
 
