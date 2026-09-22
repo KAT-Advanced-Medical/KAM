@@ -2,11 +2,14 @@
 /*
  * Author: SzwedzikPL, mharis001
  * Modified: Mazinski
+ * Reworked by Claude to read the server-synced sample map directly instead of
+ * a shared cachedCall (it collided with fnc_addArterialApplyActions.sqf) and to
+ * drop the fetch (the map is small and local, no longer worth caching)
  * Add arterial blood gas test action to vehicle.
  *
  * Arguments:
  * 0: Vehicle <OBJECT>
- * 1: Medic <OBJECT> 
+ * 1: Medic <OBJECT>
  *
  * Return Value:
  * Ace actions <ARRAY>
@@ -19,26 +22,26 @@
 
 params ["_vehicle", "_player"];
 
-private _fnc_getActions = {
-    private _actions = [];
-    private _cfgWeapons = configFile >> "CfgWeapons";
-    private _idNumber = 0;
+private _actions = [];
+private _cfgWeapons = configFile >> "CfgWeapons";
+private _bloodSampleMap = missionNamespace getVariable [QGVAR(bloodSampleMap), createHashMap];
 
-    {
-        private _config = _cfgWeapons >> _x;
-        _idNumber = getNumber (_config >> "nameID");
+{
+    private _idNumber = getNumber (_cfgWeapons >> _x >> "nameID");
 
-        if (_idNumber > 0) then {   
-            private _bloodSampleArray = missionNamespace getVariable [QEGVAR(circulation,bloodSampleMap), []];
-            _bloodSampleArray = _bloodSampleArray get _idNumber;
-            private _patient = _bloodSampleArray select 0;
+    if (_idNumber > 0) then {
+        private _entry = _bloodSampleMap get _idNumber;
+
+        // Stale item classname with no matching entry (already tested/expired) - skip it
+        if !(isNil "_entry") then {
+            private _patient = _entry select 0;
 
             _actions pushBack [
                 [
                     _x,
                     format [LLSTRING(Blood_Sample_String), _patient],
                     "",
-                    {call FUNC(showBloodGas)},
+                    {call FUNC(requestTestSample)},
                     {true},
                     {},
                     [],
@@ -47,13 +50,10 @@ private _fnc_getActions = {
                     [false,false,false,false,false]
                 ] call ACEFUNC(interact_menu,createAction),
                 [],
-                [_bloodSampleArray, _player, _idNumber, _vehicle]
+                [_player, _idNumber, _vehicle]
             ];
         };
-    } forEach ([_vehicle, 0] call ACEFUNC(common,uniqueItems));
+    };
+} forEach ([_vehicle, 0] call ACEFUNC(common,uniqueItems));
 
-    _actions
-};
-
-
-[[], _fnc_getActions, _player, QGVAR(actionsCache), 9999, "cba_events_loadoutEvent"] call ACEFUNC(common,cachedCall);
+_actions
