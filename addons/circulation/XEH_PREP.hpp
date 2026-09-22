@@ -60,6 +60,7 @@ PREP(sampleDrawnLocal);
 PREP(sampleTestedLocal);
 PREP(serverApplyResult);
 PREP(serverDrawSample);
+PREP(serverSweepExpiredSamples);
 PREP(serverTestSample);
 PREP(treatmentAdvanced_IV);
 PREP(updateBloodPressureChange);

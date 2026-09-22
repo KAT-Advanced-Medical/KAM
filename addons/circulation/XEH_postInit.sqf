@@ -51,3 +51,9 @@ GVAR(AEDX_MonitorTarget) = objNull;
 [QGVAR(sampleDrawnLocal), LINKFUNC(sampleDrawnLocal)] call CBA_fnc_addEventHandler;
 [QGVAR(sampleTestedLocal), LINKFUNC(sampleTestedLocal)] call CBA_fnc_addEventHandler;
 [QGVAR(resultAppliedLocal), LINKFUNC(resultAppliedLocal)] call CBA_fnc_addEventHandler;
+
+// Frees any sample/result slot abandoned without being tested/applied (item lost,
+// medic disconnected, vehicle destroyed) so the fixed 20-slot pool can't be exhausted
+if (isServer) then {
+    [FUNC(serverSweepExpiredSamples), 60] call CBA_fnc_addPerFrameHandler;
+};
