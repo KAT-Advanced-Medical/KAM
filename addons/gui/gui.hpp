@@ -133,7 +133,7 @@ class ACE_Medical_Menu {
                 x = QUOTE(POS_X(39.6));
                 y = QUOTE(POS_Y(1.1));
                 w = QUOTE(POS_W(9));
-                h = QUOTE(POS_H(3.3));
+                h = QUOTE(POS_H(3.9));
                 show = 0;
             };
             class ABGTitle: IVFlowTitle {
@@ -551,7 +551,7 @@ class ACE_Medical_Menu {
                 x = QUOTE(POS_X(40));
                 y = QUOTE(POS_Y(1.5));
                 w = QUOTE(POS_W(2.2));
-                h = QUOTE(POS_H(0.3));
+                h = QUOTE(POS_H(0.5));
                 colorBackground[] = {0, 0, 0, 0};
                 show = 0;
                 class Attributes {
@@ -576,9 +576,9 @@ class ACE_Medical_Menu {
                 idc = IDC_TEST_HCO3_LABEL; // LOOK HERE
                 text = "HCO3";
                 x = QUOTE(POS_X(40));
-                y = QUOTE(POS_Y(3));
+                y = QUOTE(POS_Y(3.3));
                 w = QUOTE(POS_W(2.2));
-                h = QUOTE(POS_H(0.3));
+                h = QUOTE(POS_H(0.5));
                 colorBackground[] = {0, 0, 0, 0};
                 show = 0;
                 class Attributes {
@@ -598,9 +598,9 @@ class ACE_Medical_Menu {
                 idc = IDC_TEST_PACO2; // LOOK HERE
                 text = CSTRING(BGBlank);
                 x = QUOTE(POS_X(40));
-                y = QUOTE(POS_Y(1.8));
+                y = QUOTE(POS_Y(2));
                 w = QUOTE(POS_W(2.2));
-                h = QUOTE(POS_H(0.7));
+                h = QUOTE(POS_H(1));
                 colorBackground[] = {0, 0, 0, 0.5};
                 show = 0;
                 class Attributes {
@@ -623,9 +623,9 @@ class ACE_Medical_Menu {
                 idc = IDC_TEST_HCO3; // LOOK HERE
                 text = CSTRING(BGBlank);
                 x = QUOTE(POS_X(40));
-                y = QUOTE(POS_Y(3.3));
+                y = QUOTE(POS_Y(3.8));
                 w = QUOTE(POS_W(2.2));
-                h = QUOTE(POS_H(0.7));
+                h = QUOTE(POS_H(1));
                 colorBackground[] = {0, 0, 0, 0.5};
                 show = 0;
                 class Attributes {
@@ -645,7 +645,7 @@ class ACE_Medical_Menu {
                 onButtonClick = QUOTE([ACEGVAR(medical_gui,target)] call FUNC(dumpBloodGas));
                 text = CSTRING(TestReset);
                 x = QUOTE(POS_X(46));
-                y = QUOTE(POS_Y(3));
+                y = QUOTE(POS_Y(3.8));
                 w = QUOTE(POS_W(2.1));
                 h = QUOTE(POS_H(1));
                 colorText[] = {1, 1, 1, 0.9};
