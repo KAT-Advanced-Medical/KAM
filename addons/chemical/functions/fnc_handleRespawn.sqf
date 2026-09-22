@@ -21,8 +21,6 @@ TRACE_2("handleRespawn",_unit,_dead);
 
 if (!local _unit) exitWith {};
 
-params ["_unit"];
-
 [_unit] call FUNC(fullHealLocal);
 
 _unit setVariable [QGVAR(detectorSound), false, true];
