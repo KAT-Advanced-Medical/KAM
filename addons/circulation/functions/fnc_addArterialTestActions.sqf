@@ -42,16 +42,16 @@ if (isNil "_bloodSampleMap") exitWith {_actions};
                 _x,
                 format [LLSTRING(Blood_Sample_String), _patient],
                 "",
-                {call FUNC(requestTestSample)},
+                {(_this select 2) call FUNC(requestTestSample)},
                 {true},
                 {},
-                [],
+                [_player, _idNumber, _vehicle],
                 {[0, 0, 0]},
                 2,
                 [false,false,false,false,false]
             ] call ACEFUNC(interact_menu,createAction),
             [],
-            [_player, _idNumber, _vehicle]
+            []
         ];
     };
 } forEach ([_vehicle, 0] call ACEFUNC(common,uniqueItems));

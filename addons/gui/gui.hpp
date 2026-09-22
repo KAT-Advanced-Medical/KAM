@@ -545,13 +545,62 @@ class ACE_Medical_Menu {
                     shadow = "true";
                 };
             };
+            class PaCO2_Label: RscStructuredText {
+                idc = IDC_TEST_PACO2_LABEL; // LOOK HERE
+                text = "PaCO2";
+                x = QUOTE(POS_X(40));
+                y = QUOTE(POS_Y(1.5));
+                w = QUOTE(POS_W(2.2));
+                h = QUOTE(POS_H(0.3));
+                colorBackground[] = {0, 0, 0, 0};
+                show = 0;
+                class Attributes {
+                    align = "center";
+                    color = "#B5B5B5";
+                    font = "RobotoCondensed";
+                    shadow = "false";
+                    size = 0.5;
+                };
+            };
+            class PaO2_Label: PaCO2_Label {
+                idc = IDC_TEST_PAO2_LABEL; // LOOK HERE
+                text = "PaO2";
+                x = QUOTE(POS_X(43));
+            };
+            class SpO2_Label: PaCO2_Label {
+                idc = IDC_TEST_SPO2_LABEL; // LOOK HERE
+                text = "SpO2";
+                x = QUOTE(POS_X(46));
+            };
+            class HCO3_Label: RscStructuredText {
+                idc = IDC_TEST_HCO3_LABEL; // LOOK HERE
+                text = "HCO3";
+                x = QUOTE(POS_X(40));
+                y = QUOTE(POS_Y(3));
+                w = QUOTE(POS_W(2.2));
+                h = QUOTE(POS_H(0.3));
+                colorBackground[] = {0, 0, 0, 0};
+                show = 0;
+                class Attributes {
+                    align = "center";
+                    color = "#B5B5B5";
+                    font = "RobotoCondensed";
+                    shadow = "false";
+                    size = 0.5;
+                };
+            };
+            class PH_Label: HCO3_Label {
+                idc = IDC_TEST_PH_LABEL; // LOOK HERE
+                text = "pH";
+                x = QUOTE(POS_X(43));
+            };
             class PaCO2_Output: RscStructuredText {
                 idc = IDC_TEST_PACO2; // LOOK HERE
                 text = CSTRING(BGBlank);
                 x = QUOTE(POS_X(40));
-                y = QUOTE(POS_Y(1.5));
+                y = QUOTE(POS_Y(1.8));
                 w = QUOTE(POS_W(2.2));
-                h = QUOTE(POS_H(1));
+                h = QUOTE(POS_H(0.7));
                 colorBackground[] = {0, 0, 0, 0.5};
                 show = 0;
                 class Attributes {
@@ -574,9 +623,9 @@ class ACE_Medical_Menu {
                 idc = IDC_TEST_HCO3; // LOOK HERE
                 text = CSTRING(BGBlank);
                 x = QUOTE(POS_X(40));
-                y = QUOTE(POS_Y(3));
+                y = QUOTE(POS_Y(3.3));
                 w = QUOTE(POS_W(2.2));
-                h = QUOTE(POS_H(1));
+                h = QUOTE(POS_H(0.7));
                 colorBackground[] = {0, 0, 0, 0.5};
                 show = 0;
                 class Attributes {

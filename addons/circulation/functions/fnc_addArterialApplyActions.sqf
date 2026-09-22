@@ -32,9 +32,10 @@ if (isNil "_resultSampleMap") exitWith {_actions};
     private _idNumber = getNumber (_cfgWeapons >> _x >> "testID");
     private _entry = _resultSampleMap get _idNumber;
 
-    // idNumber unset (0), or a stale item classname with no matching entry
-    // (already applied/expired) - skip it
-    if (_idNumber > 0 && {!isNil "_entry"}) then {
+    // idNumber unset (0), a stale item classname with no matching entry
+    // (already applied/expired), or a result drawn from a different patient
+    // than the one being interacted with - skip it
+    if (_idNumber > 0 && {!isNil "_entry"} && {(_entry get "patient") isEqualTo (name _target)}) then {
         private _patient = _entry get "patient";
 
         _actions pushBack [
@@ -42,13 +43,13 @@ if (isNil "_resultSampleMap") exitWith {_actions};
                 _x,
                 format [LLSTRING(Apply_Arterial_Test), _patient],
                 "",
-                {call FUNC(requestApplyResult)},
+                {(_this select 2) call FUNC(requestApplyResult)},
                 {true},
                 {},
-                []
+                [_target, _idNumber, _player]
             ] call ACEFUNC(interact_menu,createAction),
             [],
-            [_target, _idNumber, _player]
+            []
         ];
     };
 } forEach ([_player, 0] call ACEFUNC(common,uniqueItems));
