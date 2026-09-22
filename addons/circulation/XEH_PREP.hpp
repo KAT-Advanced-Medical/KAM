@@ -47,6 +47,7 @@ PREP(handleCardiacArrest);
 PREP(handleRespawn);
 PREP(handleTreatment);
 PREP(init);
+PREP(itemExpiredLocal);
 PREP(measureBloodPressure);
 PREP(onCloseDialog);
 PREP(placeAED);

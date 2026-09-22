@@ -1427,6 +1427,19 @@
             <Dutch>Dit monster is niet meer beschikbaar.</Dutch>
             <Turkish>Bu örnek artık kullanılamıyor.</Turkish>
         </Key>
+        <Key ID="STR_KAT_Circulation_ArterialTest_Expired">
+            <English>Your blood sample/result expired and was discarded.</English>
+            <Czech>Váš vzorek krve/výsledek vypršel a byl vyřazen.</Czech>
+            <French>Votre échantillon/résultat sanguin a expiré et a été jeté.</French>
+            <Spanish>Su muestra/resultado de sangre ha caducado y fue descartado.</Spanish>
+            <Italian>Il tuo campione/risultato di sangue è scaduto ed è stato scartato.</Italian>
+            <German>Ihre Blutprobe/Ihr Ergebnis ist abgelaufen und wurde entsorgt.</German>
+            <Japanese>血液サンプル/結果の有効期限が切れ、破棄されました。</Japanese>
+            <Chinese>您的血液樣本/結果已過期並被丟棄。</Chinese>
+            <Chinesesimp>您的血液样本/结果已过期并被丢弃。</Chinesesimp>
+            <Dutch>Uw bloedmonster/resultaat is verlopen en weggegooid.</Dutch>
+            <Turkish>Kan örneğinizin/sonucunuzun süresi doldu ve atıldı.</Turkish>
+        </Key>
         <Key ID="STR_KAT_Circulation_Arterial_Test">
             <English>ABG Test</English>
             <Czech>ABG Test</Czech>

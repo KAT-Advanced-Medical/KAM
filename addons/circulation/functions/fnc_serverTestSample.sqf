@@ -40,6 +40,7 @@ GVAR(bloodSampleMap) deleteAt _sampleId;
 missionNamespace setVariable [QGVAR(bloodSampleMap), GVAR(bloodSampleMap), true];
 
 _entry set [2, CBA_missionTime];
+_entry set [3, _medic]; // result item goes to the tester, not the original drawer
 GVAR(resultSampleMap) set [_resultId, _entry];
 missionNamespace setVariable [QGVAR(resultSampleMap), GVAR(resultSampleMap), true];
 
