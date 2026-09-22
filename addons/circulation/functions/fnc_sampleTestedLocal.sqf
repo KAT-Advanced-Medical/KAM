@@ -12,28 +12,25 @@
  * 2: Result slot id, -1 on failure <NUMBER>
  * 3: Sample slot id that was tested <NUMBER>
  * 4: Vehicle the sample was tested at <OBJECT>
- * 5: Sample entry [patientName, bloodGasArray, timestamp], [] on failure <ARRAY>
+ * 5: Sample entry (HashMap with "patient"/"bloodGas"/"time"/"holder" keys), [] on failure <HASHMAP>
  *
  * Return Value:
  * None
  *
  * Example:
- * [player, "ok", 5, 3, vehicle, ["Alice", [40,90,0.96,24,7.4,37], 120]] call kat_circulation_fnc_sampleTestedLocal;
+ * [player, "ok", 5, 3, vehicle, createHashMapFromArray [["patient", "Alice"], ["bloodGas", [40,90,0.96,24,7.4,37]]]] call kat_circulation_fnc_sampleTestedLocal;
  *
  * Public: No
  */
 
 params ["_medic", "_result", "_resultId", "_sampleId", "_vehicle", "_entry"];
 
-if (_result == "invalid") exitWith {
-    [LLSTRING(ArterialTest_Invalid), 1.5, _medic] call ACEFUNC(common,displayTextStructured);
+if (_result != "ok") exitWith {
+    [[LLSTRING(ArterialTest_Invalid), LLSTRING(ArterialTest_NoSlots)] select (_result == "full"), 1.5, _medic] call ACEFUNC(common,displayTextStructured);
 };
 
-if (_result == "full") exitWith {
-    [LLSTRING(ArterialTest_NoSlots), 1.5, _medic] call ACEFUNC(common,displayTextStructured);
-};
-
-_entry params ["_patientName", "_bloodGasArray"];
+private _patientName = _entry get "patient";
+private _bloodGasArray = _entry get "bloodGas";
 _bloodGasArray params ["_paCO2", "_paO2", "_spO2", "_hCO3", "_pH", "_etCO2"];
 
 private _output = format ["Patient: %1, PaCO2: %2, PaO2: %3, SpO2: %4, HCO3: %5, pH: %6", _patientName, _paCO2 toFixed 2, _paO2 toFixed 2, _spO2 toFixed 2, _hCO3 toFixed 2, _pH toFixed 2];

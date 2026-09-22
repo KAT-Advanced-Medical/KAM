@@ -20,8 +20,6 @@
 
 params ["_medic", "_patient"];
 
-if !(isServer) exitWith {};
-
 if (isNull _patient) exitWith {
     [QGVAR(sampleDrawnLocal), [_medic, "invalid", -1], _medic] call CBA_fnc_targetEvent;
 };
@@ -34,10 +32,15 @@ if (_id == -1) exitWith {
 
 private _bloodGas = GET_BLOOD_GAS(_patient);
 
-// 4th element is the current holder of the physical item this slot represents,
-// kept up to date on every hand-off so fnc_serverSweepExpiredSamples can strip a
-// stale item instead of leaving it to collide with a future slot reuse
-GVAR(bloodSampleMap) set [_id, [name _patient, _bloodGas, CBA_missionTime, _medic]];
+// "holder" is the current holder of the physical item this slot represents, kept up
+// to date on every hand-off so fnc_serverSweepExpiredSamples can strip a stale item
+// instead of leaving it to collide with a future slot reuse
+GVAR(bloodSampleMap) set [_id, createHashMapFromArray [
+    ["patient", name _patient],
+    ["bloodGas", _bloodGas],
+    ["time", CBA_missionTime],
+    ["holder", _medic]
+]];
 missionNamespace setVariable [QGVAR(bloodSampleMap), GVAR(bloodSampleMap), true];
 
 [QGVAR(sampleDrawnLocal), [_medic, "ok", _id], _medic] call CBA_fnc_targetEvent;

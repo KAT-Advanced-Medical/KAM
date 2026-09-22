@@ -21,12 +21,8 @@
 
 params ["_medic", "_result", "_id"];
 
-if (_result == "invalid") exitWith {
-    [LLSTRING(ArterialTest_Invalid), 1.5, _medic] call ACEFUNC(common,displayTextStructured);
-};
-
-if (_result == "full") exitWith {
-    [LLSTRING(ArterialTest_NoSlots), 1.5, _medic] call ACEFUNC(common,displayTextStructured);
+if (_result != "ok") exitWith {
+    [[LLSTRING(ArterialTest_Invalid), LLSTRING(ArterialTest_NoSlots)] select (_result == "full"), 1.5, _medic] call ACEFUNC(common,displayTextStructured);
 };
 
 [_medic, (format ["KAT_bloodSample_%1", _id]), true] call CBA_fnc_addItem;

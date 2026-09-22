@@ -24,32 +24,32 @@ params ["_target", "_player"];
 
 private _actions = [];
 private _cfgWeapons = configFile >> "CfgWeapons";
-private _resultSampleMap = missionNamespace getVariable [QGVAR(resultSampleMap), createHashMap];
+private _resultSampleMap = missionNamespace getVariable QGVAR(resultSampleMap);
+
+if (isNil "_resultSampleMap") exitWith {_actions};
 
 {
     private _idNumber = getNumber (_cfgWeapons >> _x >> "testID");
+    private _entry = _resultSampleMap get _idNumber;
 
-    if (_idNumber > 0) then {
-        private _entry = _resultSampleMap get _idNumber;
+    // idNumber unset (0), or a stale item classname with no matching entry
+    // (already applied/expired) - skip it
+    if (_idNumber > 0 && {!isNil "_entry"}) then {
+        private _patient = _entry get "patient";
 
-        // Stale item classname with no matching entry (already applied/expired) - skip it
-        if !(isNil "_entry") then {
-            private _patient = _entry select 0;
-
-            _actions pushBack [
-                [
-                    _x,
-                    format [LLSTRING(Apply_Arterial_Test), _patient],
-                    "",
-                    {call FUNC(requestApplyResult)},
-                    {true},
-                    {},
-                    []
-                ] call ACEFUNC(interact_menu,createAction),
-                [],
-                [_target, _idNumber, _player]
-            ];
-        };
+        _actions pushBack [
+            [
+                _x,
+                format [LLSTRING(Apply_Arterial_Test), _patient],
+                "",
+                {call FUNC(requestApplyResult)},
+                {true},
+                {},
+                []
+            ] call ACEFUNC(interact_menu,createAction),
+            [],
+            [_target, _idNumber, _player]
+        ];
     };
 } forEach ([_player, 0] call ACEFUNC(common,uniqueItems));
 

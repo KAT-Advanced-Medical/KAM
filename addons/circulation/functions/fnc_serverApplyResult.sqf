@@ -20,8 +20,6 @@
 
 params ["_medic", "_patient", "_resultId"];
 
-if !(isServer) exitWith {};
-
 private _entry = GVAR(resultSampleMap) get _resultId;
 
 if (isNil "_entry") exitWith {
@@ -31,7 +29,6 @@ if (isNil "_entry") exitWith {
 GVAR(resultSampleMap) deleteAt _resultId;
 missionNamespace setVariable [QGVAR(resultSampleMap), GVAR(resultSampleMap), true];
 
-_entry params ["", "_bloodGasArray"];
-_patient setVariable [QGVAR(testedBloodGas), _bloodGasArray, true];
+_patient setVariable [QGVAR(testedBloodGas), (_entry get "bloodGas"), true];
 
 [QGVAR(resultAppliedLocal), [_medic, "ok", _resultId], _medic] call CBA_fnc_targetEvent;

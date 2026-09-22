@@ -20,8 +20,6 @@
  * Public: No
  */
 
-if !(isServer) exitWith {};
-
 private _expiry = SAMPLE_EXPIRY_TIME * 60;
 private _now = CBA_missionTime;
 
@@ -30,7 +28,7 @@ private _fnc_sweep = {
 
     // Collect first, delete after: mutating a HashMap while a forEach is iterating it is unverified
     private _expired = [];
-    { if ((_now - (_y select 2)) > _expiry) then { _expired pushBack [_x, _y select 3]; }; } forEach _map;
+    { if ((_now - (_y get "time")) > _expiry) then { _expired pushBack [_x, _y get "holder"]; }; } forEach _map;
 
     {
         _x params ["_id", "_holder"];

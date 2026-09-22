@@ -24,35 +24,35 @@ params ["_vehicle", "_player"];
 
 private _actions = [];
 private _cfgWeapons = configFile >> "CfgWeapons";
-private _bloodSampleMap = missionNamespace getVariable [QGVAR(bloodSampleMap), createHashMap];
+private _bloodSampleMap = missionNamespace getVariable QGVAR(bloodSampleMap);
+
+if (isNil "_bloodSampleMap") exitWith {_actions};
 
 {
     private _idNumber = getNumber (_cfgWeapons >> _x >> "nameID");
+    private _entry = _bloodSampleMap get _idNumber;
 
-    if (_idNumber > 0) then {
-        private _entry = _bloodSampleMap get _idNumber;
+    // idNumber unset (0), or a stale item classname with no matching entry
+    // (already tested/expired) - skip it
+    if (_idNumber > 0 && {!isNil "_entry"}) then {
+        private _patient = _entry get "patient";
 
-        // Stale item classname with no matching entry (already tested/expired) - skip it
-        if !(isNil "_entry") then {
-            private _patient = _entry select 0;
-
-            _actions pushBack [
-                [
-                    _x,
-                    format [LLSTRING(Blood_Sample_String), _patient],
-                    "",
-                    {call FUNC(requestTestSample)},
-                    {true},
-                    {},
-                    [],
-                    {[0, 0, 0]},
-                    2,
-                    [false,false,false,false,false]
-                ] call ACEFUNC(interact_menu,createAction),
+        _actions pushBack [
+            [
+                _x,
+                format [LLSTRING(Blood_Sample_String), _patient],
+                "",
+                {call FUNC(requestTestSample)},
+                {true},
+                {},
                 [],
-                [_player, _idNumber, _vehicle]
-            ];
-        };
+                {[0, 0, 0]},
+                2,
+                [false,false,false,false,false]
+            ] call ACEFUNC(interact_menu,createAction),
+            [],
+            [_player, _idNumber, _vehicle]
+        ];
     };
 } forEach ([_vehicle, 0] call ACEFUNC(common,uniqueItems));
 

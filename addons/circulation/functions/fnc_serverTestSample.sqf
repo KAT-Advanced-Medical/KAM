@@ -22,8 +22,6 @@
 
 params ["_medic", "_vehicle", "_sampleId"];
 
-if !(isServer) exitWith {};
-
 private _entry = GVAR(bloodSampleMap) get _sampleId;
 
 if (isNil "_entry") exitWith {
@@ -39,8 +37,8 @@ if (_resultId == -1) exitWith {
 GVAR(bloodSampleMap) deleteAt _sampleId;
 missionNamespace setVariable [QGVAR(bloodSampleMap), GVAR(bloodSampleMap), true];
 
-_entry set [2, CBA_missionTime];
-_entry set [3, _medic]; // result item goes to the tester, not the original drawer
+_entry set ["time", CBA_missionTime];
+_entry set ["holder", _medic]; // result item goes to the tester, not the original drawer
 GVAR(resultSampleMap) set [_resultId, _entry];
 missionNamespace setVariable [QGVAR(resultSampleMap), GVAR(resultSampleMap), true];
 
