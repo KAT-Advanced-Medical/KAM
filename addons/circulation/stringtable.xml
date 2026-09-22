@@ -3187,22 +3187,22 @@
             <Turkish>Çalışma için defibrilatör ile hasta arasındaki maksimum mesafe</Turkish>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_ENABLE">
-            <English>ACE-Circulation activated?</English>
-            <Czech>ACE-Circulation aktivováno?</Czech>
-            <French>Ace-Circulation activé?</French>
-            <Spanish>¿Activar ACE-Circulación?</Spanish>
-            <Italian>Attivare ACE-Circolazione?</Italian>
-            <Polish>ACE-Czy zaawansowane krążenie ma być włączone?</Polish>
+            <English>Circulation activated?</English>
+            <Czech>Circulation aktivováno?</Czech>
+            <French>Circulation activé?</French>
+            <Spanish>¿Activar Circulación?</Spanish>
+            <Italian>Attivare Circolazione?</Italian>
+            <Polish>Czy zaawansowane krążenie ma być włączone?</Polish>
             <Portuguese>ACE - Circulação ativada?</Portuguese>
-            <Russian>ACE-циркуляция активирована?</Russian>
-            <German>ACE-Kreislauf aktivieren?</German>
+            <Russian>циркуляция активирована?</Russian>
+            <German>Kreislauf aktivieren?</German>
             <Korean>순환계통 시스템 활성화</Korean>
             <Japanese>循環器系モジュールを有効化</Japanese>
             <Chinese>啟用ACE-血型循環系統？</Chinese>
-            <Chinesesimp>ACE-血型循环系统启用?</Chinesesimp>
-            <Turkish>ACE-Sirkülasyon etkinleştirildi mi?</Turkish>
-            <Finnish>ACE-Kierto aktivoitu?</Finnish>
-            <Dutch>ACE-Circulatie actief?</Dutch>
+            <Chinesesimp>血型循环系统启用?</Chinesesimp>
+            <Turkish>Sirkülasyon etkinleştirildi mi?</Turkish>
+            <Finnish>Kierto aktivoitu?</Finnish>
+            <Dutch>Circulatie actief?</Dutch>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_ENABLE_DESC">
             <English>Enables the KAT Circulation medical system</English>

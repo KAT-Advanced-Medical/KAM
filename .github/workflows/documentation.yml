@@ -6,14 +6,16 @@ on:
     - dev-Tomcat
 
 permissions:
-    contents: read
+    contents: write
+    issues: write
+    pull-requests: read
 
 jobs:
   update:
     runs-on: ubuntu-latest
     steps:
     - name: Checkout the source code
-      uses: actions/checkout@v3
+      uses: actions/checkout@v6
     - name: Install Python packages
       run: |
         pip3 install wheel

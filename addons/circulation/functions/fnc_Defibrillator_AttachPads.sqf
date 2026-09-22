@@ -27,7 +27,7 @@ _extraArgs params [["_placedAED",objNull]];
 if (_patient getVariable [QGVAR(DefibrillatorPads_Connected), false]) exitWith {};
 
 private _provider = objNull;
-private _soundSource = _medic;
+private _soundSource = _patient;
 
 private _exit = false;
 

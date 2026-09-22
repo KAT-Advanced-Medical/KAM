@@ -15,6 +15,7 @@ PREP(contaminationTickPFH);
 PREP(createSealAction);
 PREP(csGrenade);
 PREP(decontaminate);
+PREP(deleteGasSource);
 PREP(displayGasMaskDur);
 PREP(effect_chlorine);
 PREP(effect_cs);

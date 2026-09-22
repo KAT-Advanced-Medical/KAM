@@ -83,7 +83,7 @@ class ACE_Medical_Treatment_Actions {
         medicRequired = 0;
         items[] = {};
         icon = "";
-        condition = QUOTE(!([_patient] call ACEFUNC(common,isAwake)) && !(_patient getVariable [ARR_2(QQGVAR(overstretch),false)]) && !(_patient getVariable [ARR_2(QQGVAR(recovery),false)]) && (missionNamespace getVariable [ARR_2(QQGVAR(enable),true)]) && !(_patient getVariable [ARR_2(QQGVAR(airway_item),'')] == 'Guedeltubus') && !(_patient getVariable [ARR_2(QQGVAR(airway_item),'')] == 'Larynxtubus'));
+        condition = QUOTE(!([_patient] call ACEFUNC(common,isAwake)) && isNull (_medic getVariable [ARR_2(QQGVAR(hyperextendPatient),objNull)]) && !(_patient getVariable [ARR_2(QQGVAR(overstretch),false)]) && !(_patient getVariable [ARR_2(QQGVAR(recovery),false)]) && (missionNamespace getVariable [ARR_2(QQGVAR(enable),true)]) && !(_patient getVariable [ARR_2(QQGVAR(airway_item),'')] == 'Guedeltubus') && !(_patient getVariable [ARR_2(QQGVAR(airway_item),'')] == 'Larynxtubus'));
         callbackSuccess = QFUNC(treatmentAdvanced_hyperextendHead);
         callbackProgress = "";
         callbackCondition = "useCondition";

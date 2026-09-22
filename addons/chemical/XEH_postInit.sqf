@@ -66,10 +66,9 @@ GVAR(particleClassByGasId) = createHashMapFromArray [
 ];
 
 [QGVAR(createZoneParticles), {
-    params ["_gasLogic", "_radius", ["_gasLevel", 1]];
+    params ["_gasLogic", "_radius", ["_gasLevel", 1], "_zoneId"];
     if (isNull _gasLogic) exitWith {};  // zone removed before JIP fired
-    private _netId = netId _gasLogic;
-    if (_netId in GVAR(clientParticles)) exitWith {};  // idempotency guard
+    if (_zoneId in GVAR(clientParticles)) exitWith {};  // idempotency guard
 
     private _gasId = (GVAR(toxicLvLToId) getOrDefault [_gasLevel, "chlorine"]);
     private _classes = (GVAR(particleClassByGasId) getOrDefault [_gasId, [QGVAR(Toxic_Gas_Particles), QGVAR(Toxic_Gas_Wisps)]]);
@@ -120,13 +119,13 @@ GVAR(particleClassByGasId) = createHashMapFromArray [
     _creep attachTo [_gasLogic, [0, 0, 0]];
     _particleObjects pushBack _creep;
 
-    GVAR(clientParticles) set [_netId, _particleObjects];
+    GVAR(clientParticles) set [_zoneId, _particleObjects];
 }] call CBA_fnc_addEventHandler;
 
 [QGVAR(removeZoneParticles), {
-    params ["_gasLogicNetId"];
-    if !(_gasLogicNetId in GVAR(clientParticles)) exitWith {};
-    private _particleObjects = GVAR(clientParticles) deleteAt _gasLogicNetId;
+    params ["_zoneId"];
+    if !(_zoneId in GVAR(clientParticles)) exitWith {};
+    private _particleObjects = GVAR(clientParticles) deleteAt _zoneId;
     { detach _x; deleteVehicle _x; } forEach _particleObjects;
 }] call CBA_fnc_addEventHandler;
 
@@ -149,7 +148,12 @@ GVAR(particleClassByGasId) = createHashMapFromArray [
 if (!isServer) exitWith {};
 
 GVAR(gasSources) = createHashMap;
+GVAR(gasZoneCount) = 0;
 GVAR(exposureWatcherUnits) = createHashMap;
+
+// Units the gas manager touched on its previous tick, so it can clear areaIntensity
+// on the ones that have since left every cloud
+GVAR(exposedUnits) = [];
 
 // Server-side: register a unit with the exposure watcher PFH (idempotent).
 // Triggered by FUNC(addToExposureWatcher) on the unit's owner.
@@ -212,9 +216,7 @@ GVAR(exposureWatcherUnits) = createHashMap;
     };
 
     // To avoid issues, remove existing entries first before overwriting
-    if (_hashedKey in GVAR(gasSources)) then {
-        [QGVAR(removeGasSource), _key] call CBA_fnc_localEvent;
-    };
+    [_hashedKey] call FUNC(deleteGasSource);
 
     if (_isSealable) then {
         private _jipID = [QGVAR(addSealAction), [_source, _gasLogic, _key]] call CBA_fnc_globalEventJIP;
@@ -222,15 +224,20 @@ GVAR(exposureWatcherUnits) = createHashMap;
         _source setVariable [QGVAR(sealable), true, true];
     };
 
+    // Particle bookkeeping ID.
+    GVAR(gasZoneCount) = GVAR(gasZoneCount) + 1;
+    private _zoneId = GVAR(gasZoneCount) toFixed 0;
+    private _effectsJipID = "";
+
     // Gas particles are only created for toxic zones right now
     if (_gasLevel != 0 && GVAR(enableParticleEffects)) then {
         // Broadcast particle creation to all machines (JIP-safe). Gas level is
         // forwarded so each client can pick the right per-gas particle class.
-        private _effectsJipID = [QGVAR(createZoneParticles), [_gasLogic, _radius, _gasLevel]] call CBA_fnc_globalEventJIP;
-        _gasLogic setVariable [QGVAR(effectsJipID), _effectsJipID];
+        _effectsJipID = [QGVAR(createZoneParticles), [_gasLogic, _radius, _gasLevel, _zoneId]] call CBA_fnc_globalEventJIP;
     };
 
-    GVAR(gasSources) set [_hashedKey, [_gasLogic, _radius, _gasLevel, _condition, _conditionArgs, _isSealable]];
+    // The zone ID and JIP ID live in the entry, not on the gas logic, so the zone can still be torn down if the logic has already been deleted along with its parent
+    GVAR(gasSources) set [_hashedKey, [_gasLogic, _radius, _gasLevel, _condition, _conditionArgs, _isSealable, _zoneId, _effectsJipID]];
 }] call CBA_fnc_addEventHandler;
 
 [QGVAR(removeGasSource), {
@@ -241,19 +248,7 @@ GVAR(exposureWatcherUnits) = createHashMap;
         ERROR_2("Unsupported key type used: %1 - %2",_key,typeName _key);
     };
 
-    (GVAR(gasSources) deleteAt _hashedKey) params [["_gasLogic", objNull]];
-
-    // Cancel JIP so future joiners don't get particles for a removed zone
-    private _effectsJipID = _gasLogic getVariable [QGVAR(effectsJipID), ""];
-    if (_effectsJipID != "") then {
-        [_effectsJipID] call CBA_fnc_removeGlobalEventJIP;
-    };
-    // Tell all current machines to delete their local particles
-    // Must fire BEFORE deleteVehicle so netId is still valid on clients
-    [QGVAR(removeZoneParticles), [netId _gasLogic]] call CBA_fnc_globalEvent;
-
-    detach _gasLogic;
-    deleteVehicle _gasLogic;
+    [_hashedKey] call FUNC(deleteGasSource);
 }] call CBA_fnc_addEventHandler;
 
 [LINKFUNC(gasManagerPFH), GAS_MANAGER_PFH_DELAY, []] call CBA_fnc_addPerFrameHandler;

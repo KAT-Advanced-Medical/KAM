@@ -88,6 +88,15 @@
 
 // =============== CS Gas (Level 0) ===============
 [
+    QGVAR(csDuration),
+    "TIME",
+    [LLSTRING(SETTING_csDuration), LLSTRING(SETTING_csDuration_DESC)],
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_CS)],
+    [0, 3600, 30],
+    true
+] call CBA_fnc_addSetting;
+
+[
     QGVAR(tearGasDropChance),
     "SLIDER",
     [LLSTRING(SETTING_dropWeaponChance), LLSTRING(SETTING_dropWeaponChance_DESC)],

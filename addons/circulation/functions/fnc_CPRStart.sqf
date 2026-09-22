@@ -192,14 +192,11 @@ if (_patient getVariable [QGVAR(RhythmAnalyzed), false]) then {
 
         if(((_patient getVariable [QACEGVAR(medical,CPR_provider), objNull]) isNotEqualTo objNull) && _patient getVariable [QGVAR(DefibrillatorPads_Connected), false] && !(_patient getVariable [QGVAR(DefibrillatorInUse), false])) then {
             private _provider = _patient getVariable QGVAR(Defibrillator_Provider);
-            private _source = _medic;
+            private _source = _patient;
 
             switch (_provider select 1) do {
                 case 1: {
                     _source = _provider select 0;
-                };
-                case 2: {
-                    _source = _patient;
                 };
                 default {};
             };
