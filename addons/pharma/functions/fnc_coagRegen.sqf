@@ -29,9 +29,9 @@ if !(GVAR(coagulation)) exitWith {};
         [_idPFH] call CBA_fnc_removePerFrameHandler;
     };
 
-    if (!GVAR(coagulation_allowOnAI) && ACE_Player != _unit) exitWith { // Check allowOnAI setting to save performance
-        [_idPFH] call CBA_fnc_removePerFrameHandler;
-    };
+    // Skip (don't remove) while not the controlled unit - e.g. Zeus Remote Control -
+    // so regen resumes on its own once this unit is controlled again
+    if (!GVAR(coagulation_allowOnAI) && ACE_Player != _unit) exitWith {};
 
     if (GET_BLOOD_VOLUME_LITERS(_unit) < GVAR(coagulation_requireBV)) exitWith {}; // Blood volume check
     if ((GET_HEART_RATE(_unit) < 20) && GVAR(coagulation_requireHR)) exitWith {}; // Has pulse & require setting

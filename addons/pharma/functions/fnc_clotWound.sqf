@@ -106,9 +106,9 @@ private _fnc_clotWound = {
         [_idPFH] call CBA_fnc_removePerFrameHandler;
     };
 
-    if (!(GVAR(coagulation_allowOnAI)) && ACE_Player != _unit) exitWith { // Check allowOnAI setting to save performance
-        [_idPFH] call CBA_fnc_removePerFrameHandler;
-    };
+    // Skip (don't remove) while not the controlled unit - e.g. Zeus Remote Control -
+    // so wound clotting resumes on its own once this unit is controlled again
+    if (!(GVAR(coagulation_allowOnAI)) && ACE_Player != _unit) exitWith {};
 
     private _openWounds = _unit getVariable [VAR_OPEN_WOUNDS, createHashMap];
     private _pulse = _unit getVariable [VAR_HEART_RATE, 80];
