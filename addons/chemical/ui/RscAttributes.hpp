@@ -41,16 +41,30 @@ class GVAR(kat_RscAtributeRadius): RscControlsGroupNoScrollbars {
             w = QUOTE(W_PART(15.9));
             h = QUOTE(H_PART(1));
         };
+        class Title7: Title1 {
+            idc = -1;
+            text = CSTRING(UI_particles);
+            toolTip = CSTRING(UI_particles_tooltip);
+            y = QUOTE(H_PART(2.2));
+        };
+        class enableParticles: RscCheckBox {
+            idc = 1617;
+            toolTip = CSTRING(UI_particles_tooltip);
+            x = QUOTE(W_PART(10.1));
+            y = QUOTE(H_PART(2.2));
+            w = QUOTE(W_PART(1));
+            h = QUOTE(H_PART(1));
+        };
         class Title3: Title1 {
             idc = 1614;
             text = CSTRING(UI_sealable);
             toolTip = "";
-            y = QUOTE(H_PART(2.2));
+            y = QUOTE(H_PART(3.3));
         };
         class canSealed: RscCheckBox {
             idc = 1613;
             x = QUOTE(W_PART(10.1));
-            y = QUOTE(H_PART(2.2));
+            y = QUOTE(H_PART(3.3));
             w = QUOTE(W_PART(1));
             h = QUOTE(H_PART(1));
         };
@@ -58,12 +72,12 @@ class GVAR(kat_RscAtributeRadius): RscControlsGroupNoScrollbars {
             idc = -1;
             text = CSTRING(UI_selectGas);
             toolTip = "";
-            y = QUOTE(H_PART(3.3));
+            y = QUOTE(H_PART(1.1));
         };
         class gasType: RscCombo {
             idc = 1615;
             x = QUOTE(W_PART(10.1));
-            y = QUOTE(H_PART(3.3));
+            y = QUOTE(H_PART(1.1));
             w = QUOTE(W_PART(10));
             h = QUOTE(H_PART(1));
             colorBackground[] = {0, 0, 0, 0.7};
