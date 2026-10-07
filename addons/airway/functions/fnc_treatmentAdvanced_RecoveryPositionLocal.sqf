@@ -41,7 +41,7 @@ if (GVAR(RecoveryPosition_TimeToDrain) > 0 && _patient getVariable [QGVAR(wasOcc
 [{
     params ["_medic", "_patient"];
 
-    _patient call ACEFUNC(medical_status,isBeingDragged) || _patient call ACEFUNC(medical_status,isBeingCarried) || !(_patient getVariable [QGVAR(recovery), false]) || !(isNull objectParent _patient);
+    _patient call ACEFUNC(common,isBeingDragged) || _patient call ACEFUNC(common,isBeingCarried) || !(_patient getVariable [QGVAR(recovery), false]) || !(isNull objectParent _patient);
 }, {
     params ["_medic", "_patient"];
 

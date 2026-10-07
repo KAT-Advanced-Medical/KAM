@@ -21,6 +21,10 @@ if !(GVAR(enable)) exitWith {};
 [QACEGVAR(medical_treatment,fullHealLocalMod), LINKFUNC(fullHealLocal)] call CBA_fnc_addEventHandler;
 ["ace_unconscious", {
     params ["_unit", "_state"];
+
+    // ace_unconscious is a global event, only the machine that owns the unit may roll obstruction/occlusion
+    if (!local _unit) exitWith {};
+
     if !(_state) exitWith {
         [_unit] call FUNC(init);
     };
