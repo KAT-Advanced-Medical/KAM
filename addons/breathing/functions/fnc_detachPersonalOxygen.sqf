@@ -26,7 +26,7 @@ if ((_maskStatus select 0) > 0) then {
 
 [LSTRING(PersonalOxygen_Disconnect), 1.5, _patient] call ACEFUNC(common,displayTextStructured);
 
-if ((_maskStatus select 1) != 1) then {
+if ((_maskStatus select 1) > 1) then {
     (_maskStatus select 1) call CBA_fnc_removePerFrameHandler;
 };
 

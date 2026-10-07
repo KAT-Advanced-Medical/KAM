@@ -1001,24 +1001,6 @@
             <English>Determines if particle effects are created for gas zones.</English>
             <Japanese>ガス発生エリアで粒子エフェクトを生成するかどうかを定義します</Japanese>
         </Key>
-        <Key ID="STR_KAT_Chemical_giveGasMask_action">
-            <English>Put on gas mask</English>
-            <Czech>Nasadit Plynovou masku</Czech>
-            <French>Mettre le masque à gaz</French>
-            <Spanish>Poner mascara de gas</Spanish>
-            <Italian>Indossa la maschera antigas</Italian>
-            <Polish>Załóż maskę gazową</Polish>
-            <Portuguese>Colocar máscara de gás</Portuguese>
-            <Russian>Надеть противогаз</Russian>
-            <German>Gasmaske aufsetzen</German>
-            <Korean>방독면 착용시키기</Korean>
-            <Japanese>ガスマスクを装備させる</Japanese>
-            <Chinese>戴上防毒面具</Chinese>
-            <Chinesesimp>戴上防毒面具</Chinesesimp>
-            <Finnish>Laita kaasunaamari päälle</Finnish>
-            <Dutch>Doe gasmasker op</Dutch>
-            <Turkish>Gaz maskesini tak</Turkish>
-        </Key>
         <Key ID="STR_KAT_Chemical_giveGasMask_progress">
             <English>Put on gas mask...</English>
             <Czech>Nasazování Plynové masky</Czech>
@@ -1036,6 +1018,9 @@
             <Finnish>Kaasunaamari on laitettu päähän</Finnish>
             <Dutch>Gasmasker wordt opgezet...</Dutch>
             <Turkish>Gaz maskesi takılıyor...</Turkish>
+        </Key>
+        <Key ID="STR_KAT_Chemical_takeOffGasMask_progress">
+            <English>Take off gas mask...</English>
         </Key>
         <Key ID="STR_KAT_Chemical_sealLeak">
             <English>Seal leak</English>
