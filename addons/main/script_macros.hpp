@@ -134,6 +134,10 @@
 #undef FRACTURE_DAMAGE_THRESHOLD
 #define FRACTURE_DAMAGE_THRESHOLD ACEGVAR(medical,const_fractureDamageThreshold)
 
+// Time between spontaneous wake up checks
+#undef SPONTANEOUS_WAKE_UP_INTERVAL
+#define SPONTANEOUS_WAKE_UP_INTERVAL ACEGVAR(medical,const_wakeUpCheckInterval)
+
 // Minimum cardiac output
 #undef CARDIAC_OUTPUT_MIN
 #define CARDIAC_OUTPUT_MIN ACEGVAR(medical,const_minCardiacOutput)

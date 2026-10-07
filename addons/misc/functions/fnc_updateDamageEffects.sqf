@@ -69,7 +69,7 @@ if (!_isLimping && {ACEGVAR(medical,limping) > 0}) then {
         _x params ["_xClassID", "_xAmountOf", "", "_xDamage"];
         if (
             (_xAmountOf > 0)
-            && {_xDamage > LIMPING_DAMAGE_THRESHOLD_DEFAULT}
+            && {_xDamage > LIMPING_DAMAGE_THRESHOLD}
             // select _causeLimping from woundDetails
             && {(ACEGVAR(medical_damage,woundDetails) get (floor (_xClassID / 10))) select 3}
         ) exitWith {

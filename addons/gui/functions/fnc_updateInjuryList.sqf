@@ -6,7 +6,7 @@
  * Arguments:
  * 0: Injury list <CONTROL>
  * 1: Target <OBJECT>
- * 2: Body part <NUMBER>
+ * 2: Body part, -1 to only show overall health info <NUMBER>
  *
  * Return Value:
  * None
@@ -59,7 +59,7 @@ if (ACEGVAR(medical_gui,showBloodlossEntry)) then {
     // Give a qualitative description of the blood volume lost
     switch (GET_HEMORRHAGE(_target)) do {
         case 0: {
-            if (ACEGVAR(medical_gui,showInactiveStatuses)) then {_entries pushBack [localize ACELSTRING(medical_gui,Lost_Blood0), _nonissueColor];};
+            _entries pushBack [localize ACELSTRING(medical_gui,Lost_Blood0), _nonissueColor];
         };
         case 1: {
             _entries pushBack [localize ACELSTRING(medical_gui,Lost_Blood1), [1, 1, 0, 1]];
@@ -77,36 +77,20 @@ if (ACEGVAR(medical_gui,showBloodlossEntry)) then {
 };
 
 // Show receiving IV volume remaining
-private _totalIvVolume = 0;
-private _saline = 0;
-private _blood = 0;
-private _plasma = 0;
+private _fluidVolumes = createHashMap;
+private _ivCfg = configFile >> "ace_medical_treatment" >> "IV";
 {
     _x params ["_volumeRemaining", "_type"];
-    switch (_type) do {
-        case "Saline": {
-            _saline = _saline + _volumeRemaining;
-        };
-        case "Blood": {
-            _blood = _blood + _volumeRemaining;
-        };
-        case "Plasma": {
-            _plasma = _plasma + _volumeRemaining;
-        };
-    };
-    _totalIvVolume = _totalIvVolume + _volumeRemaining;
+    private _guiMessageCfg = _ivCfg >> (_type + "IV") >> "gui_message";
+    private _guiMessage = if (isText _guiMessageCfg) then {getText _guiMessageCfg} else {getText (_ivCfg >> "gui_message")};
+    private _currentVolume = _fluidVolumes getOrDefault [_guiMessage, 0];
+    _fluidVolumes set [_guiMessage, _currentVolume + _volumeRemaining];
 } forEach (_target getVariable [QACEGVAR(medical,ivBags), []]);
 
-if (_totalIvVolume > 0) then {
-    if (_saline > 0) then {
-        _entries pushBack [format [localize ACELSTRING(medical_treatment,receivingSalineIvVolume), floor _saline], [1, 1, 1, 1]];
-    };
-    if (_blood > 0) then {
-        _entries pushBack [format [localize ACELSTRING(medical_treatment,receivingBloodIvVolume), floor _blood], [1, 1, 1, 1]];
-    };
-    if (_plasma > 0) then {
-        _entries pushBack [format [localize ACELSTRING(medical_treatment,receivingPlasmaIvVolume), floor _plasma], [1, 1, 1, 1]];
-    };
+if (_fluidVolumes isNotEqualTo createHashMap) then {
+    {
+        _entries pushBack [format [_x, floor _y], [1, 1, 1, 1]];
+    } forEach _fluidVolumes;
 } else {
     _entries pushBack [localize ACELSTRING(medical_treatment,Status_NoIv), _nonissueColor];
 };
@@ -128,7 +112,7 @@ if (_target call ACEFUNC(common,isAwake)) then {
         };
         _entries pushBack [localize _painText, [1, 1, 1, 1]];
     } else {
-        if (ACEGVAR(medical_gui,showInactiveStatuses)) then {_entries pushBack [localize ACELSTRING(medical_treatment,Status_NoPain), _nonissueColor];};
+        _entries pushBack [localize ACELSTRING(medical_treatment,Status_NoPain), _nonissueColor];
     };
 };
 
@@ -147,6 +131,8 @@ if (_selectionN == -1) exitWith {
 };
 
 [QACEGVAR(medical_gui,updateInjuryListGeneral), [_ctrl, _target, _selectionN, _entries]] call CBA_fnc_localEvent;
+
+_entries pushBack ["", [1, 1, 1, 1]];
 
 // Add selected body part name
 private _bodyPartName = [
@@ -187,7 +173,8 @@ if (ACEGVAR(medical_gui,showDamageEntry)) then {
                 _damageThreshold = _damageThreshold * 1.5;
             };
         };
-        _bodyPartDamage = (_bodyPartDamage / _damageThreshold) min 1;
+        // _bodyPartDamage here should indicate how close unit is to guaranteed death via sum of trauma, so use the same multipliers used in medical_damage/functions/fnc_determineIfFatal.sqf
+        _bodyPartDamage = (_bodyPartDamage / (_damageThreshold max 0.01)) min 1;
         switch (true) do {
             case (_bodyPartDamage isEqualTo 1): {
                 _entries pushBack [localize ACELSTRING(medical_gui,traumaSustained4), [_bodyPartDamage] call ACEFUNC(medical_gui,damageToRGBA)];

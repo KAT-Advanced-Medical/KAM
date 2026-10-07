@@ -5,12 +5,12 @@
  *
  * Arguments:
  * 0: The unit that will be put in an unconscious state <OBJECT>
- * 1: Set unconsciouns <BOOL> (default: true)
- * 2: Minimum unconscious time (set to 0 to ignore) <NUMBER><OPTIONAL> (default: 0)
- * 3: Force wakeup at given time if vitals are stable <BOOL><OPTIONAL> (default: false)
+ * 1: Set unconscious <BOOL> (default: true)
+ * 2: Minimum unconscious time (set to 0 to ignore) <NUMBER> (default: 0)
+ * 3: Force wakeup at given time if vitals are stable <BOOL> (default: false)
  *
  * Return Value:
- * Success? <BOOLEAN>
+ * Success? <BOOL> or <NIL> if called before settings are initialized
  *
  * Example:
  * [bob, true] call ace_medical_fnc_setUnconscious;
@@ -22,11 +22,14 @@
 // only run this after the settings are initialized
 if !(ACEGVAR(common,settingsInitFinished)) exitWith {
     ACEGVAR(common,runAtSettingsInitialized) pushBack [ACEFUNC(medical,setUnconscious), _this];
+    nil
 };
 
 params [["_unit", objNull, [objNull]], ["_knockOut", true, [false]], ["_minWaitingTime", 0, [0]], ["_forcedWakup", false, [false]]];
+TRACE_4("setUnconscious",_unit,_knockOut,_minWaitingTime,_forcedWakup);
 
 if ((isNull _unit) || {!alive _unit} || {!(_unit isKindOf "CAManBase")}) exitWith {
+    ERROR_3("Bad Unit %1 [Type: %2] [Alive: %3]",_unit,typeOf _unit,alive _unit);
     false
 };
 
@@ -35,8 +38,14 @@ if (!local _unit) exitWith {
     true
 };
 
-if (_knockOut isEqualTo (_unit getVariable ["ACE_isUnconscious", false])) exitWith {
+if (_knockOut isEqualTo IS_UNCONSCIOUS(_unit)) exitWith {
+    WARNING_2("setUnconscious called with no change [Unit %1] [State [%2]",_unit,_knockOut);
     false
+};
+
+// Units without medical activity are not simulated by ACE's medical state machine until activated (newer ACE versions only)
+if (!isNil QACEGVAR(medical,const_medicalActivity) && {!(_unit getVariable [QACEGVAR(medical,medicalActivity), ACEGVAR(medical,const_medicalActivity)])}) then {
+    [QACEGVAR(medical,activateMedical), _unit] call CBA_fnc_localEvent;
 };
 
 if (currentWeapon _unit != primaryWeapon _unit) then {
@@ -51,15 +60,18 @@ if (_knockOut) then {
             [{
                 params [["_unit", objNull]];
                 if ((alive _unit) && {_unit call EFUNC(vitals,hasStableVitals)}) then {
+                    TRACE_1("Doing delay wakeup",_unit);
                     [QACEGVAR(medical,WakeUp), _unit] call CBA_fnc_localEvent;
                     KAT_forceWakeup = false;
                 } else {
+                    TRACE_1("Skipping delay wakeup",_unit);
                     KAT_forceWakeup = false;
                 };
             }, [_unit], _minWaitingTime] call CBA_fnc_waitAndExecute;
         };
         if (ACEGVAR(medical,spontaneousWakeUpChance) > 0) then {
-            _unit setVariable [QACEGVAR(medical,lastWakeUpCheck), CBA_missionTime + _minWaitingTime - 15];
+            TRACE_1("setting lastWakeUpCheck",_minWaitingTime);
+            _unit setVariable [QACEGVAR(medical,lastWakeUpCheck), CBA_missionTime + _minWaitingTime - SPONTANEOUS_WAKE_UP_INTERVAL];
         };
     };
 
