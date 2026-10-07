@@ -43,6 +43,12 @@ _unit setVariable [QGVAR(lastCloudExposure), CBA_missionTime, true];
 
 // Protection check
 private _hasMask = [_unit] call FUNC(hasGasMaskON);
+
+// AI with unlimited filters are fully protected by the mask alone, the filter does not wear
+if (_hasMask && {GVAR(aiUnlimitedGasMask)} && {!(_unit call ACEFUNC(common,isPlayer))}) exitWith {
+    TRACE_1("AI has unlimited gas mask",_unit);
+};
+
 private _maskOk  = _hasMask && {_unit getVariable [QGVAR(gasmask_durability), 10] > 0};
 
 if (_gasData get "requiresCBRN" && _maskOk && {[_unit] call FUNC(hasCBRNProtection)}) exitWith {

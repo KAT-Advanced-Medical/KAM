@@ -86,6 +86,24 @@
     true
 ] call CBA_fnc_addSetting;
 
+[
+    QGVAR(aiAffectedByGas),
+    "CHECKBOX",
+    [LLSTRING(SETTING_aiAffectedByGas), LLSTRING(SETTING_aiAffectedByGas_DESC)],
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_Protection)],
+    [true],
+    true
+] call CBA_fnc_addSetting;
+
+[
+    QGVAR(aiUnlimitedGasMask),
+    "CHECKBOX",
+    [LLSTRING(SETTING_aiUnlimitedGasMask), LLSTRING(SETTING_aiUnlimitedGasMask_DESC)],
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_Protection)],
+    [false],
+    true
+] call CBA_fnc_addSetting;
+
 // =============== CS Gas (Level 0) ===============
 [
     QGVAR(csDuration),

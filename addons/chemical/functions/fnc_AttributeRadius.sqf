@@ -34,6 +34,14 @@ if !(isNull attachedTo _logic) then {
     _placetext ctrlSetText LLSTRING(GasModule_createContaminatedZone);
 };
 
+// Particles default to the addon setting, which always wins over the per zone choice
+private _particleCheckBox = _display displayCtrl 1617;
+_particleCheckBox cbSetChecked GVAR(enableParticleEffects);
+if !(GVAR(enableParticleEffects)) then {
+    _particleCheckBox ctrlEnable false;
+    _particleCheckBox ctrlSetTooltip LLSTRING(UI_particles_disabledBySetting);
+};
+
 private _gasTypeCombo = _display displayCtrl 1615;
 private _maxEdit = _control controlsGroupCtrl 1611;
 
@@ -63,6 +71,12 @@ private _fnc_onCheckChange = {
     _display setVariable [QGVAR(ui_sealable),_canBeSealed];
 };
 
+private _fnc_onParticleChange = {
+    params ["_particleCheckBox"];
+    _display = ctrlParent _particleCheckBox;
+    _display setVariable [QGVAR(ui_particles), cbChecked _particleCheckBox];
+};
+
 private _fnc_onLBSelChange = {
     params ["_gasTypeCombo"];
     _display = ctrlParent _gasTypeCombo;
@@ -73,6 +87,8 @@ private _fnc_onLBSelChange = {
 [_display] call _fnc_onKeyUp;
 [_sealCheckBox] call _fnc_onCheckChange;
 [_gasTypeCombo] call _fnc_onCheckChange;
+[_particleCheckBox] call _fnc_onParticleChange;
 _display displayAddEventHandler ["KeyUp", _fnc_onKeyUp];
 _sealCheckBox ctrlAddEventHandler ["CheckedChanged", _fnc_onCheckChange];
+_particleCheckBox ctrlAddEventHandler ["CheckedChanged", _fnc_onParticleChange];
 _gasTypeCombo ctrlAddEventHandler ["LBSelChanged", _fnc_onLBSelChange];

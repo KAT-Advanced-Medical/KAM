@@ -220,6 +220,13 @@ class CfgVehicles {
                 typeName = "BOOL";
                 defaultValue = 0;
             };
+            class EnableParticles
+            {
+                displayName = CSTRING(UI_particles);
+                tooltip = CSTRING(UI_particles_tooltip);
+                typeName = "BOOL";
+                defaultValue = 1;
+            };
         };
 
         class ModuleDescription: ModuleDescription {

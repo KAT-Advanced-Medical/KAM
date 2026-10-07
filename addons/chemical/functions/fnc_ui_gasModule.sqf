@@ -76,6 +76,7 @@ private _fnc_onConfirm = {
     private _gasLevel = _display getVariable [QGVAR(ui_gastype), 0];
     private _radius = _display getVariable [QGVAR(ui_radius), 20];
     private _isSealable = _display getVariable [QGVAR(ui_sealable), false];
+    private _enableParticles = _display getVariable [QGVAR(ui_particles), true];
     private _center = objNull;
 
     if (isNull attachedTo _logic) then {
@@ -93,7 +94,7 @@ private _fnc_onConfirm = {
         };
 
         CBA_missionTime < _endTime // return
-    }, [CBA_missionTime + 1e10, _logic], _isSealable]] call CBA_fnc_serverEvent;
+    }, [CBA_missionTime + 1e10, _logic], _isSealable, _enableParticles]] call CBA_fnc_serverEvent;
 
     _display setVariable [QGVAR(Confirmed), true];
 
