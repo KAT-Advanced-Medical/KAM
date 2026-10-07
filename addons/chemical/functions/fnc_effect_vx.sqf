@@ -18,7 +18,10 @@
  * Public: No
  */
 
-params ["_unit", "_infectedObject", "_gasData"];
+params ["_unit", "_infectedObject", "_gasData", ["_intensity", 1]];
+
+// Inhaled dose accumulates towards a lung injury severity capped per agent.
+[_unit, _gasData, _intensity] call FUNC(accumulateLungDose);
 
 _unit setVariable [QGVAR(chemicalContamination), "vx", true];
 [QGVAR(serverStartContaminationTick), [_unit]] call CBA_fnc_serverEvent;

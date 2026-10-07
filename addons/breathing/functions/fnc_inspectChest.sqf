@@ -86,6 +86,17 @@ if (GET_HEART_RATE(_patient) isEqualTo 0) then {
     };
 };
 
+if (
+    !_hasPneumothorax
+    && {GET_HEART_RATE(_patient) isNotEqualTo 0}
+    && {alive _patient}
+    && {_airwayClear}
+    && {(_patient getVariable [QGVAR(lungInjury), 0]) >= LUNG_INJURY_SYMPTOMATIC_MIN}
+) then {
+    _message = LLSTRING(inspectChest_noAsymmetry);
+    _messageLog = LLSTRING(inspectChest_noAsymmetry);
+};
+
 [_patient, "quick_view", LSTRING(inspectChest_log)] call EFUNC(circulation,removeLog);
 [_patient, "quick_view", LSTRING(inspectChest_log), [[_medic] call ACEFUNC(common,getName), _messageLog]] call ACEFUNC(medical_treatment,addToLog);
 

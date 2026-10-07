@@ -26,3 +26,9 @@
 #define Y_PART(num) (H_PART(num) + (safeZoneY + (safeZoneH - SIZEY) / 2))
 
 #define GAS_MANAGER_PFH_DELAY 1
+
+// How sharply inhaled dose falls off toward the edge of a cloud. The gas manager's intensity is
+// linear in distance, so this shapes it. Squared made most of a cloud's visible volume nearly
+// harmless - only ~9% of its area delivered half the centre's dose - which read as gas being
+// far safer than it looked.
+#define LUNG_DOSE_INTENSITY_EXP 1.5

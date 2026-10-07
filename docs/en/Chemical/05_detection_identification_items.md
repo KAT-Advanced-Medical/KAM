@@ -2,7 +2,7 @@
 
 ## Detection & Identification
 
-Knowing *what* you walked into decides whether you reach for atropine, an ATNAA, or a decon kit. You have three tools.
+Knowing *what* you walked into decides whether you reach for oxygen and Dexamethasone, an ATNAA, or a decon kit. You have three tools.
 
 ### M8 / M9 Detection Paper
 
@@ -62,12 +62,13 @@ If a mission has turned off the *Enable Gas particle effects* setting, clouds ar
 | M8 Detection Paper | `kat_m8paper` | 0.1 kg | Identifies nerve/blister agents | *Use M8 Detection Paper* self-action |
 | M291 Decontamination Kit | `kat_decon_kit` | 4 kg | Removes mustard/VX skin contamination | *Decontaminate* self-action (only shown when contaminated) |
 | ATNAA Auto-injector | `kat_atnaa` | 0.5 kg | Nerve-agent antidote (sarin, VX) | *Administer ATNAA* in the medical menu |
+| Dexamethasone | `kat_dexamethasone` | 0.5 kg | Cures inhalation lung injury (chlorine, phosgene, mustard) | *Give Dexamethasone* in the medical menu |
 | JCAD Chemical Detector | `KAT_ChemicalDetector` | — | Live agent identification & intensity | *JCAD* self-action menu (turn on / warning tone) |
 | Gas Mask Filter | `kat_gasmaskFilter` | 1 kg | Resets spent mask filter life | *Replace gas mask filter* self-action |
 | Sealant Tube | `kat_sealant` | 3 kg | Seals leaking contaminated objects | Seal action on a sealable source |
 
 {% hint style="info" %}
-`kat_atnaa` lives in the **pharma** addon; everything else is in **chemical**. All items are available through ACE Arsenal.
+`kat_atnaa` and `kat_dexamethasone` live in the **pharma** addon; everything else is in **chemical**. All items are available through ACE Arsenal.
 {% endhint %}
 
 ---

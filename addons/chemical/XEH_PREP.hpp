@@ -1,3 +1,4 @@
+PREP(accumulateLungDose);
 PREP(addToExposureWatcher);
 PREP(applyDelayedEffect);
 PREP(applyMustardDamage);

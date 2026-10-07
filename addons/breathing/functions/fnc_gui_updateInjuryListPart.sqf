@@ -87,6 +87,21 @@ if (_selectionN isEqualTo 1) then {
             _ptxEntry pushBack [LLSTRING(tensionpneumothorax_mm), [1,1,1,1]];
         };
     };
+
+    if (GVAR(LungInjuryAlwaysVisible)) then {
+        private _lungInjury = _target getVariable [QGVAR(lungInjury), 0];
+        private _lungBand = GET_LUNG_INJURY_BAND(_lungInjury);
+
+        if (_lungBand > 0) then {
+            private _text = switch (_lungBand) do {
+                case 1: { LLSTRING(lungInjury_mild) };
+                case 2: { LLSTRING(lungInjury_moderate) };
+                default { LLSTRING(lungInjury_severe) };
+            };
+
+            _ptxEntry pushBack [_text, [0.4, 0.65, 1, 1]];
+        };
+    };
 };
 
 _target setVariable [QGVAR(gui_updateInjuryList_ptxEntries), _ptxEntry];

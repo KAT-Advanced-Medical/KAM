@@ -27,6 +27,13 @@ _patient setVariable [QGVAR(deepPenetratingInjury), false, true];
 _patient setVariable [QGVAR(etco2Monitor), [], true];
 _patient setVariable [QGVAR(breathRate), 15, true];
 _patient setVariable [QGVAR(nasalCannula), false, true];
+_patient setVariable [QGVAR(lungInjury), 0, true];
+_patient setVariable [QGVAR(lungInjuryTarget), 0, true];
+_patient setVariable [QGVAR(lungInjuryCause), "", true];
+_patient setVariable [QGVAR(lungInjuryDexUntil), 0, true];
+_patient setVariable [QGVAR(lungInjuryProgression), 0, true];
+_patient setVariable [QGVAR(lungInjuryProgressiveMin), LUNG_INJURY_PROGRESSIVE_MIN, true];
+_patient setVariable [QGVAR(lungInjuryNextCough), 0, true];
 
 if (ACEGVAR(advanced_fatigue,enabled)) then {
     ["kat_LSDF"] call ACEFUNC(advanced_fatigue,removeDutyFactor);

@@ -41,6 +41,7 @@ Inspect the chest for lung injuries and follow respiratory treatment guidelines:
 *   **Pneumothorax (PTX)** → Apply Chest Seal → Auscultate. If the sound persists, perform needle decompression.
 *   **Tension Pneumothorax (TPTX)** → Execute immediate needle decompression (NCD/AAT Kit).
 *   **Hemothorax (HPTX)** → Apply Chest Seal → Perform fluid draining (AAT Kit) → Re-auscultate.
+*   **Inhalation injury** (crackles, even chest rise, no wound) → Oxygen → **Dexamethasone**. Do *not* apply a chest seal or needle decompress.
 {% endstep %}
 
 {% step %}

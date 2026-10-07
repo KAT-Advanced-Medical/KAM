@@ -116,9 +116,13 @@ A feature introduced by this mod enables you to find all the medical-related ite
   * *Duration:* 2 min | *Max Dose:* 2 | *Max Deviation:* 4 | *Conditions:* IV/IO inserted | *Action:* Limbs, Torso
   * *Classname:* `kat_lidocaine`
 
-* **[C] Atropine:** Increases HR, treats bradycardia, cures chemical intoxication
+* **[C] Atropine:** Increases HR, treats bradycardia, halts progression of chemical lung injury
   * *Duration:* 2 min | *Max Dose:* 4 | *Max Deviation:* 2 | *Conditions:* IV/IO inserted | *Action:* Limbs, Torso
   * *Classname:* `kat_atropine`
+
+* **[C] Dexamethasone:** Corticosteroid. Cures inhalation and chemical lung injury — removes part of the damage immediately and speeds the remaining recovery
+  * *Duration:* 10 min | *Max Dose:* 3 | *Max Deviation:* 2 | *Conditions:* IV/IO inserted | *Action:* Limbs
+  * *Classname:* `kat_dexamethasone`
 
 * <span style="color:blue">**Pervitin**</span>: Multistage stamina drug, increases HR, increases BP, **suppresses pain** (0.5). After stamina boost is over, stamina drain will become greater than regular. Side effects: chromatic aberration and weapon sway. 8 uses per item.
   * *Duration:* 10 min | *Max Dose:* 2 | *Max Deviation:* 1 | *Action:* Head
