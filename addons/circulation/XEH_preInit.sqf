@@ -6,14 +6,13 @@ PREP_RECOMPILE_START;
 #include "XEH_PREP.hpp"
 PREP_RECOMPILE_END;
 
+// Blood sample / result slots are server-authoritative (see fnc_serverDrawSample,
+// fnc_serverTestSample, fnc_serverApplyResult); every machine still needs a local,
+// always-HashMap-typed copy to build the vehicle/patient interact menus without a
+// network round trip, so both maps are kept public from the moment they're created.
 if (isServer) then {
-    private _sampleMap = createHashMap;
-    missionNamespace setVariable [QGVAR(bloodSampleMap), _sampleMap];
-    missionNamespace setVariable [QGVAR(sampleCounter), 0];
-    
-    private _resultSampleMap = createHashMap;
-    missionNamespace setVariable [QGVAR(resultSampleMap), _resultSampleMap];
-    missionNamespace setVariable [QGVAR(resultCounter), 0];
+    missionNamespace setVariable [QGVAR(bloodSampleMap), createHashMap, true];
+    missionNamespace setVariable [QGVAR(resultSampleMap), createHashMap, true];
 };
 
 #define CBA_SETTINGS_CAT LSTRING(cba_name)

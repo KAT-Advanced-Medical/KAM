@@ -40,3 +40,21 @@ GVAR(AEDX_MonitorTarget) = objNull;
 
 [QGVAR(placeAED_initAction), LINKFUNC(placeAED_PickUpAction)] call CBA_fnc_addEventHandler;
 [QEGVAR(misc,handleRespawn), LINKFUNC(handleRespawn)] call CBA_fnc_addEventHandler;
+
+// Blood sample / result registries are server-authoritative; these run on the
+// server only, the rest of the mod only ever raises them via CBA_fnc_serverEvent
+[QGVAR(drawSample), LINKFUNC(serverDrawSample)] call CBA_fnc_addEventHandler;
+[QGVAR(testSample), LINKFUNC(serverTestSample)] call CBA_fnc_addEventHandler;
+[QGVAR(applyResult), LINKFUNC(serverApplyResult)] call CBA_fnc_addEventHandler;
+
+// ...and these reply on the requesting medic's own machine
+[QGVAR(sampleDrawnLocal), LINKFUNC(sampleDrawnLocal)] call CBA_fnc_addEventHandler;
+[QGVAR(sampleTestedLocal), LINKFUNC(sampleTestedLocal)] call CBA_fnc_addEventHandler;
+[QGVAR(resultAppliedLocal), LINKFUNC(resultAppliedLocal)] call CBA_fnc_addEventHandler;
+[QGVAR(itemExpired), LINKFUNC(itemExpiredLocal)] call CBA_fnc_addEventHandler;
+
+// Frees any sample/result slot abandoned without being tested/applied (item lost,
+// medic disconnected, vehicle destroyed) so the fixed 20-slot pool can't be exhausted
+if (isServer) then {
+    [FUNC(serverSweepExpiredSamples), 60] call CBA_fnc_addPerFrameHandler;
+};

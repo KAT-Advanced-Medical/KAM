@@ -2,6 +2,9 @@
 /*
  * Author: SzwedzikPL, mharis001
  * Modified: Mazinski
+ * Reworked by Claude to read the server-synced result map directly instead of
+ * a shared cachedCall (it collided with fnc_addArterialTestActions.sqf) and to
+ * drop the fetch (the map is small and local, no longer worth caching)
  * Apply arterial blood gas test to patient.
  *
  * Arguments:
@@ -19,39 +22,36 @@
 
 params ["_target", "_player"];
 
-private _fnc_getActions = {
-    private _actions = [];
-    private _cfgWeapons = configFile >> "CfgWeapons";
-    private _idNumber = 0;
+private _actions = [];
+private _cfgWeapons = configFile >> "CfgWeapons";
+private _resultSampleMap = missionNamespace getVariable QGVAR(resultSampleMap);
 
-    {
-        private _config = _cfgWeapons >> _x;
-        _idNumber = getNumber (_config >> "testID");
+if (isNil "_resultSampleMap") exitWith {_actions};
 
-        if (_idNumber > 0) then {   
-            private _resultSampleMap = missionNamespace getVariable [QEGVAR(circulation,resultSampleMap), []];
-            _resultSampleArray = _resultSampleMap get _idNumber;
-            _resultSampleActual = _resultSampleArray select 1;
-            private _patient = _resultSampleArray select 0;
+{
+    private _idNumber = getNumber (_cfgWeapons >> _x >> "testID");
+    private _entry = _resultSampleMap get _idNumber;
 
-            _actions pushBack [
-                [
-                    _x,
-                    format [LLSTRING(Apply_Arterial_Test), _patient],
-                    "",
-                    {call FUNC(attachBloodGas)},
-                    {true},
-                    {},
-                    []
-                ] call ACEFUNC(interact_menu,createAction),
-                [],
-                [_resultSampleActual, _target, _idNumber, _player]
-            ];
-        };
-    } forEach ([_player, 0] call ACEFUNC(common,uniqueItems));
+    // idNumber unset (0), a stale item classname with no matching entry
+    // (already applied/expired), or a result drawn from a different patient
+    // than the one being interacted with - skip it
+    if (_idNumber > 0 && {!isNil "_entry"} && {(_entry get "patient") isEqualTo (name _target)}) then {
+        private _patient = _entry get "patient";
 
-    _actions
-};
+        _actions pushBack [
+            [
+                _x,
+                format [LLSTRING(Apply_Arterial_Test), _patient],
+                "",
+                {(_this select 2) call FUNC(requestApplyResult)},
+                {true},
+                {},
+                [_target, _idNumber, _player]
+            ] call ACEFUNC(interact_menu,createAction),
+            [],
+            []
+        ];
+    };
+} forEach ([_player, 0] call ACEFUNC(common,uniqueItems));
 
-
-[[], _fnc_getActions, _player, QGVAR(actionsCache), 9999, "cba_events_loadoutEvent"] call ACEFUNC(common,cachedCall);
+_actions

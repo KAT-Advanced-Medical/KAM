@@ -48,6 +48,7 @@ Below is the directory of the local documentation guides for each module of the 
 *   [**Fluids & Blood Compatibility**](Pharmacy/03_fluids.md) — Detailed properties of Saline, Plasma, and Blood (volume, pH adjustments, clotting factors), blood group compatibility matrices, and blood poisoning/CWMP mechanics.
 *   [**Kidney Function & Acidosis**](Pharmacy/01_kidneys.md) — Acidosis scale, Kidney states (Normal, Pressure, Fail), dialysis, and diagnostic breath profiles.
 *   [**Coagulation & Clotting**](Pharmacy/02_coagulation.md) — Natural clotting factors regeneration, TXA and EACA clotting mechanisms, and the CoagSense diagnostic device.
+*   [**Arterial Blood Gas (ABG) Testing**](Pharmacy/04_arterial_blood_gas.md) — Purpose of ABG testing, and the draw/test/apply procedure for reading a patient's PaCO2, PaO2, SpO2, HCO3, and pH.
 
 ### 🏥 Surgery & Trauma
 *   [**Surgery & Fracture Care**](Surgery/01_introduction.md) — Handheld Ultrasound diagnostics, Pericardial Tap, REBOA catheter placement, Closed/Open reductions, and surgical anesthesia/sedation protocols (Lorazepam, Etomidate, Flumazenil).
