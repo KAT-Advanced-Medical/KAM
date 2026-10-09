@@ -21,7 +21,7 @@ if (!alive _unit) exitWith {};
 switch (_effect) do {
     case "phosgenePulmonary": {
         _unit setVariable [QGVAR(airPoisoning), true, true];
-        _unit setVariable [QEGVAR(breathing,respiratoryDepth), 0.4, true];
+        _unit setVariable [QEGVAR(vitals,respiratoryDepth), 0.4, true];
         [QEGVAR(breathing,playCough), [_unit], _unit] call CBA_fnc_targetEvent;
     };
     case "mustardEye": {
@@ -49,7 +49,7 @@ switch (_effect) do {
         private _sounds = [
             QPATHTOEF_SOUND(airway,sounds\puking1.wav),
             QPATHTOEF_SOUND(airway,sounds\puking2.wav),
-            QPATHTOEF_SOUND(airway,sounds\puking1.wav)
+            QPATHTOEF_SOUND(airway,sounds\puking3.wav)
         ];
         playSound3D [selectRandom _sounds, _unit, false, getPosASL _unit, 8, 1, 15];
     };

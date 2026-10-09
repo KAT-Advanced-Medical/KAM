@@ -32,7 +32,7 @@ private _bloodLossColors = [
 /*
 * Default damage colouring follows a "white, cyan, blue" colour scale with 10 steps, Bezier interpolation and Correct lightness gradient.
 * See: https://gka.github.io/palettes
-* // KAM // "white, cyan, blue" - 12 steps
+* // KAM // "white, cyan, blue" - 10 steps
 */
 private _damageColors = [
     [1.00, 1.00, 1.00, 1],
