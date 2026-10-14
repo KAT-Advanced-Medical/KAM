@@ -46,7 +46,7 @@ private _hasMask = [_unit] call FUNC(hasGasMaskON);
 
 // AI with unlimited filters are fully protected by the mask alone, the filter does not wear
 if (_hasMask && {GVAR(aiUnlimitedGasMask)} && {!(_unit call ACEFUNC(common,isPlayer))}) exitWith {
-    TRACE_1("AI has unlimited gas mask",_unit);
+    TRACE_1("AI %1 has unlimited gas mask", _unit);
 };
 
 private _maskOk  = _hasMask && {_unit getVariable [QGVAR(gasmask_durability), 10] > 0};
