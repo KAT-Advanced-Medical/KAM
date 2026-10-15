@@ -24,3 +24,5 @@ if (!local _unit) exitWith {};
 [_unit] call FUNC(fullHealLocal);
 
 _unit setVariable [QGVAR(detectorSound), false, true];
+_unit setVariable [QGVAR(dosimeterEnabled), false, true];
+_unit setVariable [QGVAR(dosimeterSound), false, true];

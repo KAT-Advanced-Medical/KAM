@@ -125,3 +125,129 @@ class GVAR(kat_RscGasModul): RscDisplayAttributes {
         class ButtonCancel: ButtonCancel {};
     };
 };
+
+class GVAR(kat_RscAttributeRadModule): RscControlsGroupNoScrollbars {
+    onSetFocus = QUOTE(_this call FUNC(AttributeRadModule));
+    idc = 26423;
+    x = 0;
+    y = 0;
+    w = QUOTE(W_PART(26));
+    h = QUOTE(H_PART(8));
+    class controls {
+        class Title1: RscText {
+            idc = 16110;
+            text = CSTRING(UI_max_range);
+            toolTip = CSTRING(RadModule_max_radius_dcs);
+            x = 0;
+            y = 0;
+            w = QUOTE(W_PART(10));
+            h = QUOTE(H_PART(1));
+            colorBackground[] = {0,0,0,0.5};
+        };
+        class radius_max: RscEdit {
+            idc = 1621;
+            x = QUOTE(W_PART(10.1));
+            y = 0;
+            w = QUOTE(W_PART(15.9));
+            h = QUOTE(H_PART(1));
+        };
+        class Title2: Title1 {
+            idc = -1;
+            text = CSTRING(RadModule_preset);
+            toolTip = CSTRING(RadModule_preset_dcs);
+            y = QUOTE(H_PART(1.1));
+        };
+        class preset_combo: RscCombo {
+            idc = 1624;
+            x = QUOTE(W_PART(10.1));
+            y = QUOTE(H_PART(1.1));
+            w = QUOTE(W_PART(15.9));
+            h = QUOTE(H_PART(1));
+            colorBackground[] = {0, 0, 0, 0.7};
+        };
+        class Title3: Title1 {
+            idc = -1;
+            text = CSTRING(RadModule_alpha);
+            toolTip = CSTRING(RadModule_strength_dcs);
+            y = QUOTE(H_PART(2.2));
+        };
+        class alpha_edit: RscEdit {
+            idc = 1625;
+            x = QUOTE(W_PART(10.1));
+            y = QUOTE(H_PART(2.2));
+            w = QUOTE(W_PART(15.9));
+            h = QUOTE(H_PART(1));
+        };
+        class Title4: Title1 {
+            idc = -1;
+            text = CSTRING(RadModule_beta);
+            toolTip = CSTRING(RadModule_strength_dcs);
+            y = QUOTE(H_PART(3.3));
+        };
+        class beta_edit: RscEdit {
+            idc = 1626;
+            x = QUOTE(W_PART(10.1));
+            y = QUOTE(H_PART(3.3));
+            w = QUOTE(W_PART(15.9));
+            h = QUOTE(H_PART(1));
+        };
+        class Title5: Title1 {
+            idc = -1;
+            text = CSTRING(RadModule_gamma);
+            toolTip = CSTRING(RadModule_strength_dcs);
+            y = QUOTE(H_PART(4.4));
+        };
+        class gamma_edit: RscEdit {
+            idc = 1627;
+            x = QUOTE(W_PART(10.1));
+            y = QUOTE(H_PART(4.4));
+            w = QUOTE(W_PART(15.9));
+            h = QUOTE(H_PART(1));
+        };
+        class Title6: Title1 {
+            idc = -1;
+            text = CSTRING(RadModule_neutron);
+            toolTip = CSTRING(RadModule_strength_dcs);
+            y = QUOTE(H_PART(5.5));
+        };
+        class neutron_edit: RscEdit {
+            idc = 1628;
+            x = QUOTE(W_PART(10.1));
+            y = QUOTE(H_PART(5.5));
+            w = QUOTE(W_PART(15.9));
+            h = QUOTE(H_PART(1));
+        };
+        class Title7: Title1 {
+            idc = -1;
+            text = CSTRING(RadModule_pointSource);
+            toolTip = CSTRING(RadModule_pointSource_dcs);
+            y = QUOTE(H_PART(6.6));
+        };
+        class pointSource_check: RscCheckBox {
+            idc = 1623;
+            x = QUOTE(W_PART(10.1));
+            y = QUOTE(H_PART(6.6));
+            w = QUOTE(W_PART(1));
+            h = QUOTE(H_PART(1));
+        };
+    };
+};
+
+class GVAR(kat_RscRadModul): RscDisplayAttributes {
+    onLoad = QUOTE([ARR_3('onLoad',_this,QQGVAR(kat_RscRadModul))] call EFUNC(zeus,zeusAttributes));
+    onUnload = QUOTE([ARR_3('onUnload',_this,QQGVAR(kat_RscRadModul))] call EFUNC(zeus,zeusAttributes));
+
+    class Controls: Controls {
+        class Background: Background {};
+        class Title: Title {};
+        class Content: Content {
+            class Controls {
+                class radius: GVAR(kat_RscAttributeRadModule) {};
+            };
+        };
+        class ButtonOK: ButtonOK {
+            onSetFocus = QUOTE(_this call FUNC(ui_radModule));
+        };
+        class ButtonCancel: ButtonCancel {};
+    };
+};

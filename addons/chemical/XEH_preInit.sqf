@@ -10,5 +10,9 @@ PREP_RECOMPILE_END;
 #include "initSettings.inc.sqf"
 
 call FUNC(initGasRegistry);
+call FUNC(initRadProfiles);
+
+// Vehicle class / turret -> closed, filled lazily by FUNC(isRadSheltered)
+GVAR(radSealedCache) = createHashMap;
 
 ADDON = true;

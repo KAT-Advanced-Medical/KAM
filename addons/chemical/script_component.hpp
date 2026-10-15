@@ -26,3 +26,10 @@
 #define Y_PART(num) (H_PART(num) + (safeZoneY + (safeZoneH - SIZEY) / 2))
 
 #define GAS_MANAGER_PFH_DELAY 1
+#define RAD_MANAGER_PFH_DELAY 1
+
+// Radiation body parts (matches ALL_BODY_PARTS index order used for per-limb dose)
+#define RAD_BODY_PARTS ["Head", "Body", "LeftArm", "RightArm", "LeftLeg", "RightLeg"]
+
+// Radiation types (canonical index order for per-type strength/rate arrays)
+#define RAD_TYPES ["alpha", "beta", "gamma", "neutron"]

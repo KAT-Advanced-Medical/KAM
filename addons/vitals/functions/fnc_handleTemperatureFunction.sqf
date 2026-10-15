@@ -31,7 +31,7 @@ private _warmingImpact = (_unit getVariable [QEGVAR(hypothermia,warmingImpact), 
 private _pointTemperature = linearConversion [0, 40, (-3.5 * (0.95 ^ _mapTemperature + _altitudeAdjustment)), 12, -9, true];
 private _initialBodyTemperature = DEFAULT_TEMPERATURE min (((-0.3392 * (_bloodVolume^2)) + (6.00357 * _bloodVolume) + 13.3));
 
-private _currentTemperature = _initialBodyTemperature + _warmingImpact - (_pointTemperature / _bloodVolume);
+private _currentTemperature = _initialBodyTemperature + _warmingImpact - (_pointTemperature / _bloodVolume) + (_unit getVariable [QEGVAR(chemical,radFever), 0]);
 
 _unit setVariable [QEGVAR(hypothermia,unitTemperature), _currentTemperature, _syncValue];
 

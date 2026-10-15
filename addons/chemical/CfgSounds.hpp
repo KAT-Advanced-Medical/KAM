@@ -157,4 +157,30 @@ class CfgSounds {
         };
         titles[] = {};
     };
+
+    class GVAR(geiger_base) {
+        name = QGVAR(geiger_base);
+        sound[] = {QPATHTOF(audio\baseChime.ogg), 1.5, 1.0, 8};
+        titles[] = {};
+    };
+    class GVAR(geiger_slow) {
+        name = QGVAR(geiger_slow);
+        sound[] = {QPATHTOF(audio\slowChime.ogg), 1.5, 1.0, 8};
+        titles[] = {};
+    };
+    class GVAR(geiger_normal) {
+        name = QGVAR(geiger_normal);
+        sound[] = {QPATHTOF(audio\normalChime.ogg), 1.5, 1.0, 8};
+        titles[] = {};
+    };
+    class GVAR(geiger_fast) {
+        name = QGVAR(geiger_fast);
+        sound[] = {QPATHTOF(audio\fastChime.ogg), 1.5, 1.0, 8};
+        titles[] = {};
+    };
+    class GVAR(geiger_rapid) {
+        name = QGVAR(geiger_rapid);
+        sound[] = {QPATHTOF(audio\rapidChime.ogg), 1.5, 1.0, 8};
+        titles[] = {};
+    };
 };

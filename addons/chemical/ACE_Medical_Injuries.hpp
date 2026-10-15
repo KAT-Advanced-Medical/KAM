@@ -12,6 +12,13 @@ class ACE_Medical_Injuries {
             pain = 0.6;
             minDamage = 0;
         };
+        // Beta / local high-dose radiation burn. Like a chemical burn but
+        // weeps less and hurts more (deep tissue damage, slow to heal).
+        class KAT_RadiationBurn {
+            bleeding = 0.003;
+            pain = 0.7;
+            minDamage = 0;
+        };
     };
 
     class damageTypes {
@@ -19,6 +26,13 @@ class ACE_Medical_Injuries {
             thresholds[] = {{0, 1}};
             selectionSpecific = 0;
             class KAT_ChemicalBurn {
+                weighting[] = {{0, 1}};
+            };
+        };
+        class KAT_radiationBurn {
+            thresholds[] = {{0, 1}};
+            selectionSpecific = 0;
+            class KAT_RadiationBurn {
                 weighting[] = {{0, 1}};
             };
         };
