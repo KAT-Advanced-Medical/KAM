@@ -1401,6 +1401,45 @@
             <Dutch>Voer %1 test uit</Dutch>
             <Turkish>%1 Testini Uygula</Turkish>
         </Key>
+        <Key ID="STR_KAT_Circulation_ArterialTest_NoSlots">
+            <English>No free slots available. Test or apply an existing sample first.</English>
+            <Czech>Nejsou volné sloty. Nejprve otestujte nebo použijte existující vzorek.</Czech>
+            <French>Aucun emplacement disponible. Testez ou appliquez d'abord un échantillon existant.</French>
+            <Spanish>No hay espacios disponibles. Analice o aplique primero una muestra existente.</Spanish>
+            <Italian>Nessuno slot disponibile. Analizza o applica prima un campione esistente.</Italian>
+            <German>Keine freien Plätze verfügbar. Zuerst eine vorhandene Probe testen oder anwenden.</German>
+            <Japanese>空きスロットがありません。既存のサンプルを検査するか適用してください。</Japanese>
+            <Chinese>沒有可用的欄位。請先檢驗或使用現有的樣本。</Chinese>
+            <Chinesesimp>没有可用的位置。请先检验或使用现有的样本。</Chinesesimp>
+            <Dutch>Geen vrije plekken beschikbaar. Test of gebruik eerst een bestaand monster.</Dutch>
+            <Turkish>Boş yuva yok. Önce mevcut bir örneği test edin veya uygulayın.</Turkish>
+        </Key>
+        <Key ID="STR_KAT_Circulation_ArterialTest_Invalid">
+            <English>This sample is no longer available.</English>
+            <Czech>Tento vzorek již není dostupný.</Czech>
+            <French>Cet échantillon n'est plus disponible.</French>
+            <Spanish>Esta muestra ya no está disponible.</Spanish>
+            <Italian>Questo campione non è più disponibile.</Italian>
+            <German>Diese Probe ist nicht mehr verfügbar.</German>
+            <Japanese>このサンプルはもう使用できません。</Japanese>
+            <Chinese>此樣本已無法使用。</Chinese>
+            <Chinesesimp>此样本已无法使用。</Chinesesimp>
+            <Dutch>Dit monster is niet meer beschikbaar.</Dutch>
+            <Turkish>Bu örnek artık kullanılamıyor.</Turkish>
+        </Key>
+        <Key ID="STR_KAT_Circulation_ArterialTest_Expired">
+            <English>Your blood sample/result expired and was discarded.</English>
+            <Czech>Váš vzorek krve/výsledek vypršel a byl vyřazen.</Czech>
+            <French>Votre échantillon/résultat sanguin a expiré et a été jeté.</French>
+            <Spanish>Su muestra/resultado de sangre ha caducado y fue descartado.</Spanish>
+            <Italian>Il tuo campione/risultato di sangue è scaduto ed è stato scartato.</Italian>
+            <German>Ihre Blutprobe/Ihr Ergebnis ist abgelaufen und wurde entsorgt.</German>
+            <Japanese>血液サンプル/結果の有効期限が切れ、破棄されました。</Japanese>
+            <Chinese>您的血液樣本/結果已過期並被丟棄。</Chinese>
+            <Chinesesimp>您的血液样本/结果已过期并被丢弃。</Chinesesimp>
+            <Dutch>Uw bloedmonster/resultaat is verlopen en weggegooid.</Dutch>
+            <Turkish>Kan örneğinizin/sonucunuzun süresi doldu ve atıldı.</Turkish>
+        </Key>
         <Key ID="STR_KAT_Circulation_Arterial_Test">
             <English>ABG Test</English>
             <Czech>ABG Test</Czech>
