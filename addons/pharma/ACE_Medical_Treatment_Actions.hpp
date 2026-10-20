@@ -426,7 +426,7 @@ class ACE_Medical_Treatment_Actions {
     class CheckCoag: CheckPulse {
         displayName = CSTRING(CheckCoag_DisplayName);
         displayNameProgress = CSTRING(CheckCoag_DisplayNameProgress);
-        allowedSelections[] = {"LeftArm", "RightArm"};
+        allowedSelections[] = {"LeftArm", "RightArm", "LeftLeg", "RightLeg"};
         treatmentLocations = QGVAR(CheckCoag_Location);
         medicRequired = QGVAR(CheckCoag_MedLevel);
         treatmentTime = QGVAR(CheckCoag_TreatmentTime);

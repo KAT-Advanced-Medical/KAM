@@ -38,9 +38,7 @@ class CfgPatches {
             "KAT_Empty_bloodIV_500",
             "KAT_Empty_bloodIV_250",
             "kat_AED",
-            "kat_BPCuff",
-            "KAT_bloodSample",
-            "KAT_bloodResult"
+            "kat_BPCuff"
         };
         magazines[] = { };
         requiredAddons[] = {
