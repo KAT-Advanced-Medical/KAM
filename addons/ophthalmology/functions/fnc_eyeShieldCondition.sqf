@@ -22,7 +22,7 @@ if ((hmd _patient) in ["kat_eyecovers_left", "kat_eyecovers_right"]) exitWith {
     false
 };
 
-if (_eyeInjurySevere && (({_x == 0} count _eyeInjuries) == 1)) exitWith {
+if (_eyeInjurySevere && (({_x != 1} count _eyeInjuries) == 1)) exitWith {
     true
 };
 
