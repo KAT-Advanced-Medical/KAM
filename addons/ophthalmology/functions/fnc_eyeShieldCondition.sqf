@@ -17,6 +17,11 @@ params ["_medic", "_patient"];
 private _eyeInjuries = _patient getVariable [QGVAR(eyeInjuries), [1, 1]];
 private _eyeInjurySevere = _patient getVariable [QGVAR(eyeInjurySevere), false];
 
+// Already wearing a shield
+if ((hmd _patient) in ["kat_eyecovers_left", "kat_eyecovers_right"]) exitWith {
+    false
+};
+
 if (_eyeInjurySevere && (({_x == 0} count _eyeInjuries) == 1)) exitWith {
     true
 };
