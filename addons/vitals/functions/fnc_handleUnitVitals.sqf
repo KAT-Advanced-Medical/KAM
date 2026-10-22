@@ -135,7 +135,7 @@ if (EGVAR(breathing,enable)) then {
     // Additional variables for Respiration functions
     private _bloodGas = GET_BLOOD_GAS(_unit);
     private _opioidDepression = GET_OPIOID_FACTOR(_unit);
-    private _anerobicPressure = (DEFAULT_ANEROBIC_EXCHANGE * (6 / (_bloodVolume max 6))) min 1.2;
+    private _anerobicPressure = (DEFAULT_ANEROBIC_EXCHANGE * (6 / (_bloodVolume min 6))) min 1.2;
 
     _spo2 = [_unit, _heartRate, _anerobicPressure, _bloodGas, _temperature, _baroPressure, _opioidDepression, _aceAnFatigue, _deltaT, _syncValues] call FUNC(handleOxygenFunction);
 };
