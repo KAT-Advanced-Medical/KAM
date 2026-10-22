@@ -814,6 +814,22 @@
             <Dutch>Bepaald of intoxicaties zichtbaar zijn in het medische menu</Dutch>
             <Turkish>Zehirlenme durumunun medikal menüde gösterilip gösterilmeyeceğini belirler</Turkish>
         </Key>
+        <Key ID="STR_KAT_Chemical_SETTING_aiAffectedByGas">
+            <English>AI: Affected by gas</English>
+            <German>KI: Von Gas betroffen</German>
+        </Key>
+        <Key ID="STR_KAT_Chemical_SETTING_aiAffectedByGas_DESC">
+            <English>When disabled, AI units are excluded from the gas checks and can not be harmed by gas. AI that were already exposed before disabling still suffer the pending effects.</English>
+            <German>Wenn deaktiviert, werden KI-Einheiten von den Gasprüfungen ausgeschlossen und können durch Gas keinen Schaden nehmen. KI, die vor dem Deaktivieren bereits Gas ausgesetzt war, erleidet weiterhin die ausstehenden Effekte.</German>
+        </Key>
+        <Key ID="STR_KAT_Chemical_SETTING_aiUnlimitedGasMask">
+            <English>AI: Unlimited gas mask durability</English>
+            <German>KI: Unbegrenzte Haltbarkeit der Gasmaske</German>
+        </Key>
+        <Key ID="STR_KAT_Chemical_SETTING_aiUnlimitedGasMask_DESC">
+            <English>When enabled, the gas mask filter of AI units never wears out. As long as an AI unit wears a gas mask it is protected from all gases, even without a CBRN uniform.</English>
+            <German>Wenn aktiviert, nutzt sich der Gasmaskenfilter von KI-Einheiten nicht ab. Solange eine KI-Einheit eine Gasmaske trägt, ist sie vor allen Gasen geschützt, auch ohne CBRN-Uniform.</German>
+        </Key>
         <Key ID="STR_KAT_Chemical_TakeOffGasMask">
             <English>Take off gas mask</English>
             <Czech>Sundat Plynovou Masku</Czech>
@@ -954,6 +970,18 @@
             <Finnish>TOIMII VAIN JOS LOGIIKKA SYNKRONOIDAAN OBJEKTIN KANSSA!</Finnish>
             <Dutch>WERKT ALLEEN ALS LOGICA GESYNCHRONISEERD IS MET EEN OBJECT!</Dutch>
             <Turkish>Sızdırmaz mı?</Turkish>
+        </Key>
+        <Key ID="STR_KAT_Chemical_UI_particles">
+            <English>Gas particles</English>
+            <German>Gaspartikel</German>
+        </Key>
+        <Key ID="STR_KAT_Chemical_UI_particles_tooltip">
+            <English>Creates a visible gas cloud for this zone. Only applies if gas particle effects are enabled in the addon settings. Tear gas zones have no particles.</English>
+            <German>Erzeugt eine sichtbare Gaswolke für diese Zone. Wirkt nur, wenn Gaspartikeleffekte in den Addon-Einstellungen aktiviert sind. Tränengaszonen haben keine Partikel.</German>
+        </Key>
+        <Key ID="STR_KAT_Chemical_UI_particles_disabledBySetting">
+            <English>Gas particle effects are disabled in the addon settings.</English>
+            <German>Gaspartikeleffekte sind in den Addon-Einstellungen deaktiviert.</German>
         </Key>
         <Key ID="STR_KAT_Chemical_UI_selectGas">
             <English>Select Gas:</English>
