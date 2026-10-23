@@ -24,23 +24,32 @@
 params ["_unit"];
 if (!alive _unit) exitWith {};
 
-// Lung damage: chemical pneumonitis from inhaled mustard. Forces a
-// hemopneumothorax (bleeding variant)
-_unit setVariable [QEGVAR(breathing,pneumothorax), 1, true];
-_unit setVariable [QEGVAR(breathing,deepPenetratingInjury), true, true];
-_unit setVariable [QEGVAR(breathing,activeChestSeal), false, true];
+if (LUNG_MODEL_ACTIVE) then {
+    private _gasData = GVAR(gasRegistry) getOrDefault ["mustard", createHashMap];
+    private _cap = _gasData getOrDefault ["lungInjuryCap", 0.6];
+    [QEGVAR(breathing,setLungInjury), [_unit, _cap, "mustard", _gasData getOrDefault ["lungProgression", 0], _gasData getOrDefault ["lungProgressiveMin", LUNG_INJURY_PROGRESSIVE_MIN]]] call CBA_fnc_localEvent;
+} else {
+    // Legacy behaviour, retained so turning the lung model off restores the old presentation.
+    _unit setVariable [QEGVAR(breathing,pneumothorax), 1, true];
+    _unit setVariable [QEGVAR(breathing,deepPenetratingInjury), true, true];
+    _unit setVariable [QEGVAR(breathing,activeChestSeal), false, true];
 
-// Start deteriorating after delay
-[_unit] call EFUNC(breathing,handlePneumothoraxDeterioration);
+    [_unit, 0] call EFUNC(breathing,handlePneumothoraxDeterioration);
 
-if (EGVAR(breathing,advPtxEnable)) then {
-    [_unit, 0.7] call ACEFUNC(medical_status,adjustPainLevel);
-    _unit setVariable [QEGVAR(breathing,hemopneumothorax), true, true];
-    _unit setVariable [QEGVAR(breathing,pneumothorax), 4, true];
-    [_unit] call EFUNC(circulation,updateInternalBleeding);
+    if (EGVAR(breathing,advPtxEnable)) then {
+        _unit setVariable [QEGVAR(breathing,hemopneumothorax), true, true];
+        _unit setVariable [QEGVAR(breathing,pneumothorax), 4, true];
+
+        if (EGVAR(circulation,enable)) then {
+            [_unit] call EFUNC(circulation,updateInternalBleeding);
+        };
+    };
 };
 
-// Pain spike — pushes past unconscious threshold quickly.
+// Pain spike — pushes past unconscious threshold quickly. Blistering hurts regardless of how
+// the lung injury is modelled, so this is not conditional on the pneumothorax settings.
+[_unit, 0.7] call ACEFUNC(medical_status,adjustPainLevel);
+
 private _currentPain = _unit getVariable [VAR_PAIN, 0];
 _unit setVariable [VAR_PAIN, (_currentPain + 0.3) min 1, true];
 
@@ -51,7 +60,10 @@ for "_i" from 1 to 6 do {
     private _bodyPart = selectRandom ["Body", "LeftArm", "RightArm", "LeftLeg", "RightLeg", "Head"];
     private _dmg = 0.1 + random 0.8;
     [_unit, _dmg, _bodyPart, "KAT_chemicalBurn", _unit] call ACEFUNC(medical,addDamageToUnit);
+};
 
-    // Cough sound (audible signal, helps medics locate)
-    [QEGVAR(breathing,playCough), [_unit], _unit] call CBA_fnc_targetEvent;
+private _soundTargets = allPlayers inAreaArray [ASLToAGL getPosASL _unit, 15, 15, 0, false, 15];
+
+if (_soundTargets isNotEqualTo []) then {
+    [QEGVAR(breathing,playCough), [_unit], _soundTargets] call CBA_fnc_targetEvent;
 };

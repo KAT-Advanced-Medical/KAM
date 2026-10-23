@@ -4809,5 +4809,21 @@
             <Finnish>%1 käytetty %2</Finnish>
             <Dutch>%1 gebruikte %2</Dutch>
         </Key>
+        <Key ID="STR_KAT_Pharma_Dexamethasone_Box_Display">
+            <English>Dexamethasone</English>
+            <German>Dexamethason</German>
+        </Key>
+        <Key ID="STR_KAT_Pharma_Dexamethasone_DescShort">
+            <English>Corticosteroid. Treats chemical and inhalation lung injury.</English>
+            <German>Kortikosteroid. Behandelt chemische und inhalative Lungenschäden.</German>
+        </Key>
+        <Key ID="STR_KAT_Pharma_Take_Dexamethasone">
+            <English>Give Dexamethasone</English>
+            <German>Dexamethason verabreichen</German>
+        </Key>
+        <Key ID="STR_KAT_Pharma_medLvl_Dexamethasone">
+            <English>Dexamethasone - Medical Training Level</English>
+            <German>Dexamethason - Medizinisches Ausbildungsniveau</German>
+        </Key>
     </Package>
 </Project>

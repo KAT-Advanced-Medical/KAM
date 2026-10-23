@@ -17,7 +17,7 @@
  * Public: No
  */
 
-params ["_unit", "_infectedObject", "_gasData"];
+params ["_unit", "_infectedObject", "_gasData", ["_intensity", 1]];
 
 _unit setVariable [QGVAR(CSGas), CBA_missionTime + GVAR(csDuration), true];
 

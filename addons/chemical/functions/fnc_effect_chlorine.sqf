@@ -18,6 +18,12 @@
  * Public: No
  */
 
-params ["_unit", "_infectedObject", "_gasData"];
+params ["_unit", "_infectedObject", "_gasData", ["_intensity", 1]];
+
+if (LUNG_MODEL_ACTIVE) exitWith {
+    // Inhaled dose accumulates towards a lung injury severity capped per agent. This replaces
+    // the flat countdown below, which could never accumulate across repeated cloud entries.
+    [_unit, _gasData, _intensity] call FUNC(accumulateLungDose);
+};
 
 [_unit, _infectedObject] call FUNC(scheduleAirPoisoningOnset);

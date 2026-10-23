@@ -39,6 +39,7 @@ Below is the directory of the local documentation guides for each module of the 
 ### 💨 Airways & Respiratory System
 *   [**Airways Management & Lungs**](Respiratory/01_airways_and_lungs.md) — Airways status (Clear, Occluded, Obstructed), recovery position, and visual cyanosis estimation.
 *   [**Breathing & Thorax Injuries**](Respiratory/02_breathing_injuries.md) — Pneumothorax, Tension Pneumothorax (TPTX), Hemothorax (HPTX), auscultation using the stethoscope, BVM usage, and chest inspection diagnostics.
+*   [**Inhalation & Chemical Lung Injury**](Respiratory/03_inhalation_injury.md) — Non-penetrating lung damage from chemical agents and smoke: severity bands, the EtCO2/SpO2 signature that distinguishes it from chest trauma, oxygen as a bridge, and Dexamethasone treatment.
 
 ### ❤️ Cardiovascular System & Cardiac Arrest
 *   [**Cardiac Arrest & H&T Conditions**](Cardiac/01_cardiac_arrest.md) — Reversible arrest causes (Hypovolemia, Hypoxia, Acidosis, Tension Pneumothorax, Tamponade).
