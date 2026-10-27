@@ -38,7 +38,7 @@ playSound3D [QPATHTOF_SOUND(sounds\analyzingnow.wav), _soundSource, false, getPo
 [{ // Don't touch patient while analyzing
     params ["_medic", "_patient"];
 
-    !(isNull (_patient getVariable [QACEGVAR(medical,CPR_provider), objNull])) || _patient getVariable [QGVAR(BVMInUse), false] || _patient call ACEFUNC(common,isAwake);
+    !(isNull (_patient getVariable [QACEGVAR(medical,CPR_provider), objNull])) || _patient getVariable [QEGVAR(breathing,BVMInUse), false] || _patient call ACEFUNC(common,isAwake);
 },
 { // Motion detected
     params ["_medic", "_patient", "_defibrillatorType", "_soundSource"];
@@ -46,7 +46,7 @@ playSound3D [QPATHTOF_SOUND(sounds\analyzingnow.wav), _soundSource, false, getPo
     playSound3D [QPATHTOF_SOUND(sounds\stopmotion.wav), _soundSource, false, getPosASL _soundSource, 6, 1, 15];
     [{
         params ["_medic", "_patient", "_defibrillatorType", "_soundSource"];
-        if (!(isNull (_patient getVariable [QACEGVAR(medical,CPR_provider), objNull])) || _patient getVariable [QGVAR(BVMInUse), false] || _patient call ACEFUNC(common,isAwake)) exitWith { // Motion persists, analyzing cancelled
+        if (!(isNull (_patient getVariable [QACEGVAR(medical,CPR_provider), objNull])) || _patient getVariable [QEGVAR(breathing,BVMInUse), false] || _patient call ACEFUNC(common,isAwake)) exitWith { // Motion persists, analyzing cancelled
             playSound3D [QPATHTOF_SOUND(sounds\3beep.wav), _soundSource, false, getPosASL _soundSource, 6, 1, 15];
             _patient setVariable [QGVAR(DefibrillatorInUse), false, true];
         };
