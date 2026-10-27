@@ -814,6 +814,22 @@
             <Dutch>Bepaald of intoxicaties zichtbaar zijn in het medische menu</Dutch>
             <Turkish>Zehirlenme durumunun medikal menüde gösterilip gösterilmeyeceğini belirler</Turkish>
         </Key>
+        <Key ID="STR_KAT_Chemical_SETTING_aiAffectedByGas">
+            <English>AI: Affected by gas</English>
+            <German>KI: Von Gas betroffen</German>
+        </Key>
+        <Key ID="STR_KAT_Chemical_SETTING_aiAffectedByGas_DESC">
+            <English>When disabled, AI units are excluded from the gas checks and can not be harmed by gas. AI that were already exposed before disabling still suffer the pending effects.</English>
+            <German>Wenn deaktiviert, werden KI-Einheiten von den Gasprüfungen ausgeschlossen und können durch Gas keinen Schaden nehmen. KI, die vor dem Deaktivieren bereits Gas ausgesetzt war, erleidet weiterhin die ausstehenden Effekte.</German>
+        </Key>
+        <Key ID="STR_KAT_Chemical_SETTING_aiUnlimitedGasMask">
+            <English>AI: Unlimited gas mask durability</English>
+            <German>KI: Unbegrenzte Haltbarkeit der Gasmaske</German>
+        </Key>
+        <Key ID="STR_KAT_Chemical_SETTING_aiUnlimitedGasMask_DESC">
+            <English>When enabled, the gas mask filter of AI units never wears out. As long as an AI unit wears a gas mask it is protected from all gases, even without a CBRN uniform.</English>
+            <German>Wenn aktiviert, nutzt sich der Gasmaskenfilter von KI-Einheiten nicht ab. Solange eine KI-Einheit eine Gasmaske trägt, ist sie vor allen Gasen geschützt, auch ohne CBRN-Uniform.</German>
+        </Key>
         <Key ID="STR_KAT_Chemical_TakeOffGasMask">
             <English>Take off gas mask</English>
             <Czech>Sundat Plynovou Masku</Czech>
@@ -955,6 +971,18 @@
             <Dutch>WERKT ALLEEN ALS LOGICA GESYNCHRONISEERD IS MET EEN OBJECT!</Dutch>
             <Turkish>Sızdırmaz mı?</Turkish>
         </Key>
+        <Key ID="STR_KAT_Chemical_UI_particles">
+            <English>Gas particles</English>
+            <German>Gaspartikel</German>
+        </Key>
+        <Key ID="STR_KAT_Chemical_UI_particles_tooltip">
+            <English>Creates a visible gas cloud for this zone. Only applies if gas particle effects are enabled in the addon settings. Tear gas zones have no particles.</English>
+            <German>Erzeugt eine sichtbare Gaswolke für diese Zone. Wirkt nur, wenn Gaspartikeleffekte in den Addon-Einstellungen aktiviert sind. Tränengaszonen haben keine Partikel.</German>
+        </Key>
+        <Key ID="STR_KAT_Chemical_UI_particles_disabledBySetting">
+            <English>Gas particle effects are disabled in the addon settings.</English>
+            <German>Gaspartikeleffekte sind in den Addon-Einstellungen deaktiviert.</German>
+        </Key>
         <Key ID="STR_KAT_Chemical_UI_selectGas">
             <English>Select Gas:</English>
             <Czech>Vybrat plyn:</Czech>
@@ -1001,24 +1029,6 @@
             <English>Determines if particle effects are created for gas zones.</English>
             <Japanese>ガス発生エリアで粒子エフェクトを生成するかどうかを定義します</Japanese>
         </Key>
-        <Key ID="STR_KAT_Chemical_giveGasMask_action">
-            <English>Put on gas mask</English>
-            <Czech>Nasadit Plynovou masku</Czech>
-            <French>Mettre le masque à gaz</French>
-            <Spanish>Poner mascara de gas</Spanish>
-            <Italian>Indossa la maschera antigas</Italian>
-            <Polish>Załóż maskę gazową</Polish>
-            <Portuguese>Colocar máscara de gás</Portuguese>
-            <Russian>Надеть противогаз</Russian>
-            <German>Gasmaske aufsetzen</German>
-            <Korean>방독면 착용시키기</Korean>
-            <Japanese>ガスマスクを装備させる</Japanese>
-            <Chinese>戴上防毒面具</Chinese>
-            <Chinesesimp>戴上防毒面具</Chinesesimp>
-            <Finnish>Laita kaasunaamari päälle</Finnish>
-            <Dutch>Doe gasmasker op</Dutch>
-            <Turkish>Gaz maskesini tak</Turkish>
-        </Key>
         <Key ID="STR_KAT_Chemical_giveGasMask_progress">
             <English>Put on gas mask...</English>
             <Czech>Nasazování Plynové masky</Czech>
@@ -1036,6 +1046,9 @@
             <Finnish>Kaasunaamari on laitettu päähän</Finnish>
             <Dutch>Gasmasker wordt opgezet...</Dutch>
             <Turkish>Gaz maskesi takılıyor...</Turkish>
+        </Key>
+        <Key ID="STR_KAT_Chemical_takeOffGasMask_progress">
+            <English>Take off gas mask...</English>
         </Key>
         <Key ID="STR_KAT_Chemical_sealLeak">
             <English>Seal leak</English>
@@ -1475,6 +1488,14 @@
             <English>Major Chemical Burn</English>
             <German>Schwere chemische Verätzung</German>
             <Japanese>重度の化学熱傷</Japanese>
+        </Key>
+        <Key ID="STR_KAT_Chemical_SETTING_lungInjuryMultiplier">
+            <English>Lung Injury Rate Multiplier</English>
+            <German>Multiplikator für Lungenschaden</German>
+        </Key>
+        <Key ID="STR_KAT_Chemical_SETTING_lungInjuryMultiplier_DESC">
+            <English>Scales how quickly inhaled gas accumulates into lung injury. Raise for shorter training scenarios.</English>
+            <German>Skaliert, wie schnell eingeatmetes Gas zu Lungenschaden führt. Für kürzere Ausbildungsszenarien erhöhen.</German>
         </Key>
     </Package>
 </Project>

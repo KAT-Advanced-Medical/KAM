@@ -86,6 +86,24 @@
     true
 ] call CBA_fnc_addSetting;
 
+[
+    QGVAR(aiAffectedByGas),
+    "CHECKBOX",
+    [LLSTRING(SETTING_aiAffectedByGas), LLSTRING(SETTING_aiAffectedByGas_DESC)],
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_Protection)],
+    [true],
+    true
+] call CBA_fnc_addSetting;
+
+[
+    QGVAR(aiUnlimitedGasMask),
+    "CHECKBOX",
+    [LLSTRING(SETTING_aiUnlimitedGasMask), LLSTRING(SETTING_aiUnlimitedGasMask_DESC)],
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_Protection)],
+    [false],
+    true
+] call CBA_fnc_addSetting;
+
 // =============== CS Gas (Level 0) ===============
 [
     QGVAR(csDuration),
@@ -280,5 +298,15 @@
     [LLSTRING(SETTING_m8PaperDisplayTime), LLSTRING(SETTING_m8PaperDisplayTime_DESC)],
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_Identification)],
     [1, 600, 8],
+    true
+] call CBA_fnc_addSetting;
+
+// =============== Lung Injury ===============
+[
+    QGVAR(lungInjuryMultiplier),
+    "SLIDER",
+    [LLSTRING(SETTING_lungInjuryMultiplier), LLSTRING(SETTING_lungInjuryMultiplier_DESC)],
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_Contamination)],
+    [0.1, 5, 1, 1],
     true
 ] call CBA_fnc_addSetting;

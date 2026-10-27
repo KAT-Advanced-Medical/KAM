@@ -1,17 +1,17 @@
 #include "..\script_component.hpp"
 /*
  * Author: MiszczuZPolski & Digii
- * Triggers the coughing effect.
+ * Enables or disables the wet distortion haze that blurs the vision while in tear gas.
  *
  * Arguments:
  * 0: Enable <BOOL>
- * 1: Intensity <NUMBER>
+ * 1: Tear gas exposure, 0 disables the effect <NUMBER>
  *
  * Return Value:
  * None
  *
  * Example:
- * [true, 0.5] call kat_feedback_fnc_effectCoughing;
+ * [true, 1] call kat_feedback_fnc_effectTearHaze;
  *
  * Public: No
  */

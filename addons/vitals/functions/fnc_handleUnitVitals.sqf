@@ -33,23 +33,34 @@ if (_syncValues) then {
     _unit setVariable [QACEGVAR(medical_vitals,lastMomentValuesSynced), CBA_missionTime];
 };
 
+// Lung injury progression and recovery. Deliberately outside the breathing gate below so an
+// existing injury still resolves if the breathing simulation is switched off mid-mission.
+[_unit, _deltaT, _syncValues] call EFUNC(breathing,updateLungInjury);
+
 //Get Blood Volume from previous cycle
 private _bloodVolume = ([_unit, _deltaT, _syncValues] call EFUNC(pharma,getBloodVolumeChange));
 _unit setVariable [VAR_BLOOD_VOL, _bloodVolume, _syncValues];
 
-private _temperature = 37;
+// Enviromental Impact (Altitude, Temperature, Pressure)
 private _baroPressure = 760;
+private _temperature = DEFAULT_TEMPERATURE;
+private _altitude = (getPosASL _unit) select 2;
+
+if (GVAR(baroPressureEnable)) then {
+    if (GVAR(useACEpressure)) then {
+        private _hPa = _altitude call ACEFUNC(weather,calculateBarometricPressure);
+        _baroPressure = _hPa * 0.750062;
+    } else {
+        _baroPressure = 760 * exp((-(_altitude)) / 8400);
+    };
+};
 
 if (EGVAR(hypothermia,hypothermiaActive)) then {
-    // Enviromental Impact (Altitude, Temperature, Pressure)
-    private _altitude = (getPosASL _unit) select 2;
     private _altitudeTempImpact = switch (true) do {
         case (_altitude >= 10): { abs(_altitude/153) * -1 }; //For every 1000 meters of elevation gain, temperature decreases by ~6.5 degrees celsius
         case (_altitude <= -1): { -35 max((abs(_altitude/50) * -1) - 17) }; //Average water temperature is 20 degrees celsius. Decreases to 2 degrees celsius at 1000 meters
         default { 0 };
     };
-
-    _baroPressure = 760 * exp((-(_altitude)) / 8400);
     _temperature = [_unit, _altitudeTempImpact, _bloodVolume, _deltaT, _syncValues] call FUNC(handleTemperatureFunction);
 };
 
@@ -135,7 +146,7 @@ if (EGVAR(breathing,enable)) then {
     // Additional variables for Respiration functions
     private _bloodGas = GET_BLOOD_GAS(_unit);
     private _opioidDepression = GET_OPIOID_FACTOR(_unit);
-    private _anerobicPressure = (DEFAULT_ANEROBIC_EXCHANGE * (6 / (_bloodVolume max 6))) min 1.2;
+    private _anerobicPressure = (DEFAULT_ANEROBIC_EXCHANGE * (6 / (_bloodVolume min 6))) min 1.2;
 
     _spo2 = [_unit, _heartRate, _anerobicPressure, _bloodGas, _temperature, _baroPressure, _opioidDepression, _aceAnFatigue, _deltaT, _syncValues] call FUNC(handleOxygenFunction);
 };

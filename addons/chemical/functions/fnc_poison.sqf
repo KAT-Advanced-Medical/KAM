@@ -10,6 +10,7 @@
  * 0: Unit <OBJECT>
  * 1: Gas level (legacy KAT_toxicLvL int) <NUMBER>
  * 2: Infected source object <OBJECT>
+ * 3: Cloud intensity, 1 at the centre falling to 0 at the edge (optional, default 1) <NUMBER>
  *
  * Return Value:
  * None
@@ -17,7 +18,9 @@
  * Public: No
  */
 
-params ["_unit", "_gasLevel", "_infectedObject"];
+// _intensity is optional so existing callers - the contamination tick, and any mission or mod
+// raising kat_chemical_poison - keep working. Direct contact is full strength.
+params ["_unit", "_gasLevel", "_infectedObject", ["_intensity", 1]];
 
 if (!local _unit) exitWith {
     TRACE_1("unit is null or not local",_unit);
@@ -43,6 +46,12 @@ _unit setVariable [QGVAR(lastCloudExposure), CBA_missionTime, true];
 
 // Protection check
 private _hasMask = [_unit] call FUNC(hasGasMaskON);
+
+// AI with unlimited filters are fully protected by the mask alone, the filter does not wear
+if (_hasMask && {GVAR(aiUnlimitedGasMask)} && {!(_unit call ACEFUNC(common,isPlayer))}) exitWith {
+    TRACE_1("AI %1 has unlimited gas mask", _unit);
+};
+
 private _maskOk  = _hasMask && {_unit getVariable [QGVAR(gasmask_durability), 10] > 0};
 
 if (_gasData get "requiresCBRN" && _maskOk && {[_unit] call FUNC(hasCBRNProtection)}) exitWith {
@@ -63,4 +72,4 @@ if (!(_gasData get "requiresCBRN") && _gasId != "cs" && {_unit getVariable [QEGV
 [_unit, _gasData] call FUNC(emitSmellHint);
 
 // Dispatch
-[_unit, _infectedObject, _gasData] call (_gasData get "effectFunc");
+[_unit, _infectedObject, _gasData, _intensity] call (_gasData get "effectFunc");
