@@ -35,6 +35,9 @@ private _exposedNow = [];
 
     // Poison units (alive or dead) close to the gas source
     {
+        // AI can be excluded from gas entirely
+        if (!GVAR(aiAffectedByGas) && {!(_x call ACEFUNC(common,isPlayer))}) then { continue };
+
         // Get the distance of the unit from the center of the sphere (_gasLogic)
         private _distance = _x distance _gasLogic;
 

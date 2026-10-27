@@ -180,7 +180,8 @@ GVAR(exposedUnits) = [];
         ["_key", ""],
         ["_condition", {true}, [{}]],
         ["_conditionArgs", []],
-        ["_isSealable", false]
+        ["_isSealable", false],
+        ["_enableParticles", true, [true]]
     ];
 
     private _isObject = _source isEqualType objNull;
@@ -229,8 +230,8 @@ GVAR(exposedUnits) = [];
     private _zoneId = GVAR(gasZoneCount) toFixed 0;
     private _effectsJipID = "";
 
-    // Gas particles are only created for toxic zones right now
-    if (_gasLevel != 0 && GVAR(enableParticleEffects)) then {
+    // Gas particles are only created for toxic zones right now. A zone can opt out, but the setting always wins
+    if (_gasLevel != 0 && _enableParticles && GVAR(enableParticleEffects)) then {
         // Broadcast particle creation to all machines (JIP-safe). Gas level is
         // forwarded so each client can pick the right per-gas particle class.
         _effectsJipID = [QGVAR(createZoneParticles), [_gasLogic, _radius, _gasLevel, _zoneId]] call CBA_fnc_globalEventJIP;
