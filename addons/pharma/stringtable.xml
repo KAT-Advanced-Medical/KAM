@@ -214,18 +214,7 @@
             <Dutch>Wordt gebruikt om bewustzijn te herstellen</Dutch>
         </Key>
         <Key ID="STR_KAT_Pharma_CheckCoag_DisplayName">
-            <English>Measure PT/INR</English>
-            <Czech>Změřit PT/INR</Czech>
-            <French>Mesurer le PT/INR</French>
-            <Spanish>Medir PT/INR</Spanish>
-            <Italian>Misura PT/INR</Italian>
-            <Portuguese>Medir PT/INR</Portuguese>
-            <German>PT/INR Messen</German>
-            <Japanese>PT/INRを測定する</Japanese>
-            <Chinese>測量 PT/INR</Chinese>
-            <Chinesesimp>测量PT/INR</Chinesesimp>
-            <Dutch>Meet PT-INR</Dutch>
-            <Turkish>PT/INR Ölç</Turkish>
+            <English>Take Blood Sample</English>
         </Key>
         <Key ID="STR_KAT_Pharma_CheckCoag_DisplayNameProgress">
             <English>Taking Blood Sample,</English>
@@ -312,46 +301,13 @@
             <Turkish>Normalin biraz altında INR</Turkish>
         </Key>
         <Key ID="STR_KAT_Pharma_Coag_Sense_Display">
-            <English>Coag-Sense</English>
-            <Czech>Coag-Sense</Czech>
-            <French>Coag-Sense</French>
-            <Spanish>Coag-Sense</Spanish>
-            <Italian>Coag-Sense</Italian>
-            <Portuguese>Medidor de Coagulação</Portuguese>
-            <German>Coag-Sense</German>
-            <Japanese>Coag-Sense</Japanese>
-            <Chinese>凝血酶原監測系統(Coag-Sense)</Chinese>
-            <Chinesesimp>凝血酶原监测系统(Coag-Sense)</Chinesesimp>
-            <Dutch>Coag-Sense</Dutch>
-            <Turkish>Coag-Sense</Turkish>
+            <English>Portable Blood Tester</English>
         </Key>
         <Key ID="STR_KAT_Pharma_Coag_Sense_Display_DESC">
-            <English>The Coag-Sense is a PT/INR monitoring system that can measure the efficiency of your blood clotting</English>
-            <Czech>Coag-Sense je monitorovací systém PT/INR, který dokáže sám měřit účinnost srážení krve</Czech>
-            <French>Le Coag-Sense est un système de surveillance PT/INR qui permet de mesurer l'efficacité de la coagulation sanguine</French>
-            <Spanish>El Coag-Sense es un sistema de monitorización PT/INR que puede medir la eficiencia de su coagulación sanguínea</Spanish>
-            <Italian>Il Coag-Sense è un sistema di monitoraggio PT/INR che può misurare l'efficienza della coagulazione del sangue.</Italian>
-            <Portuguese>O Medidor de Coagulação é um sistema de monitoramento PT/INR que pode mensurar a eficiência da sua coagulação sanguínea</Portuguese>
-            <German>Coag-Sense ist ein PT/INR-Überwachungssystem, das die Effizienz Ihrer Blutgerinnung messen kann</German>
-            <Japanese>Coag-Senseは血液凝固の効率を測定できる PT/INR モニタリングシステムです。</Japanese>
-            <Chinese>Coag-Sense 是一種 PT/INR 監測系統，可以測量您的凝血效率</Chinese>
-            <Chinesesimp>Coag-Sense是一种PT/INR监测系统，可以测量您的凝血效率</Chinesesimp>
-            <Dutch>De Coag-Sense is een PT-INR monitoringssysteem dat de effectiviteit van jouw wondstolling kan bepalen</Dutch>
-            <Turkish>Coag-Sense, kan pıhtılaşmasının etkinliğini ölçebilen bir PT/INR izleme sistemidir</Turkish>
+            <English>The Portable Blood Tester is a device that can measure both the PT/INR and the Blood Gases of a patient</English>
         </Key>
         <Key ID="STR_KAT_Pharma_Coag_Sense_Log">
-            <English>Coag-Sense concludes: %1</English>
-            <Czech>Ciag-Sense naměřil%1</Czech>
-            <French>Le Coag-Sense a conclu : %1</French>
-            <Spanish>Coag-Sense concluye: %1</Spanish>
-            <Italian>Coag-Sense conclude: %1</Italian>
-            <Portuguese>Medidor de Coagulação conlui: %1</Portuguese>
-            <German>Coag-Sense kommt zu dem Ergebnis: %1</German>
-            <Japanese>Coag-Senseの結果: %1</Japanese>
-            <Chinese>Coag-Sense 得出結論：%1</Chinese>
-            <Chinesesimp>Coag-Sense得出结论：%1</Chinesesimp>
-            <Dutch>Coag-Sense concludeerd: %1</Dutch>
-            <Turkish>Coag-Sense sonucu: %1</Turkish>
+            <English>Blood Tester concludes: %1</English>
         </Key>
         <Key ID="STR_KAT_Pharma_Dialysis_DisplayName">
             <English>Perform Dialysis</English>
