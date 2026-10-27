@@ -8,6 +8,8 @@
 [QGVAR(nasalCannulaLocal), LINKFUNC(treatmentAdvanced_nasalCannulaLocal)] call CBA_fnc_addEventHandler;
 [QGVAR(removeNasalCannulaLocal), LINKFUNC(treatmentAdvanced_removeNasalCannulaLocal)] call CBA_fnc_addEventHandler;
 
+[QGVAR(setLungInjury), LINKFUNC(setLungInjury)] call CBA_fnc_addEventHandler;
+
 [QGVAR(playCough), {
     params ["_unit"];
     _unit say3D [QGVAR(pneumothoraxcough), 15];
@@ -20,6 +22,8 @@
 
 
 [QEGVAR(misc,handleRespawn), LINKFUNC(handleRespawn)] call CBA_fnc_addEventHandler;
+
+[QEGVAR(pharma,dexamethasoneLocal), LINKFUNC(treatmentAdvanced_DexamethasoneLocal)] call CBA_fnc_addEventHandler;
 
 [QACEGVAR(medical_status,initialized), LINKFUNC(handleBreathingConditions)] call CBA_fnc_addEventHandler;
 

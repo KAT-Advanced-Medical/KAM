@@ -268,6 +268,11 @@ class ACE_Medical_Treatment_Actions {
         displayName = ECSTRING(chemical,Take_ATNAA);
         items[] = {"kat_atnaa"};
     };
+    class Dexamethasone: Atropine {
+        displayName = CSTRING(Take_Dexamethasone);
+        medicRequired = QGVAR(medLvl_Dexamethasone);
+        items[] = {"kat_dexamethasone"};
+    };
     class Ketamine: EACA {
         displayName = CSTRING(Take_Ketamine);
         allowedSelections[] = {"Body", "LeftArm", "RightArm", "LeftLeg", "RightLeg"};

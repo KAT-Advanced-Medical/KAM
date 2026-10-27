@@ -36,6 +36,7 @@ variantDelay = 0;
 
     private _tension = (_patient getVariable [QGVAR(tensionpneumothorax), false] || (_patient getVariable [QGVAR(pneumothorax), 0] > 0));
     private _hemo = _patient getVariable [QGVAR(hemopneumothorax), false];
+    private _crackles = (_patient getVariable [QGVAR(lungInjury), 0]) >= LUNG_INJURY_SYMPTOMATIC_MIN;
 
     _breathDelay = 20/_HR;
 
@@ -43,6 +44,9 @@ variantDelay = 0;
 
     private _type = 3;
 
+    // Checked first so chest trauma overrides it below - a pneumothorax is the more immediately
+    // lethal finding, and a casualty can plausibly have both.
+    if(_crackles && _random >= 0.5) then {_type = 4};
     if(_hemo && _random >= 0.5) then {_type = 1};
     if(_tension && _random >= 0.5) then {_type = 2};
 
@@ -86,6 +90,34 @@ variantDelay = 0;
                     if (_medic getVariable [QGVAR(usingStethoscope), false] && (alive _patient)) then {
                         playSoundUI [QPATHTOF(audio\tension_exhale1.ogg), _volume, 1];
                         variantDelay = 0.3;
+                        [{
+                            soundPlaying = false;
+                        }, [], variantDelay + _breathDelay] call CBA_fnc_waitAndExecute;
+                    } else {
+                        soundPlaying = false;
+                    };
+                }, [_medic,_patient,_volume,_breathDelay], variantDelay + _breathDelay] call CBA_fnc_waitAndExecute;
+            };
+            case 4: { // inhalation / chemical lung injury - fine late-inspiratory crackles
+                if (round random 1 >= 0.5) then {
+                    playSoundUI [QPATHTOF(audio\crackles_inhale1.ogg), _volume, 1];
+                    variantDelay = 1.46;
+                } else {
+                    playSoundUI [QPATHTOF(audio\crackles_inhale2.ogg), _volume, 1];
+                    variantDelay = 1;
+                };
+                soundPlaying = true;
+                [{
+                    params ["_medic","_patient","_volume","_breathDelay"];
+
+                    if (_medic getVariable [QGVAR(usingStethoscope), false] && (alive _patient)) then {
+                        if (round random 1 >= 0.5) then {
+                            playSoundUI [QPATHTOF(audio\crackles_exhale1.ogg), _volume, 1];
+                            variantDelay = 1.25;
+                        } else {
+                            playSoundUI [QPATHTOF(audio\crackles_exhale2.ogg), _volume, 1];
+                            variantDelay = 1.26;
+                        };
                         [{
                             soundPlaying = false;
                         }, [], variantDelay + _breathDelay] call CBA_fnc_waitAndExecute;

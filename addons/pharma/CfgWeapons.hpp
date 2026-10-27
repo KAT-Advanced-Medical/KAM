@@ -135,6 +135,17 @@ class CfgWeapons {
             mass = 0.5;
         };
     };
+    class kat_dexamethasone: ACE_ItemCore {
+        scope = 2;
+        displayName = CSTRING(Dexamethasone_Box_Display);
+        picture = QPATHTOF(ui\icon_Atropine.paa);
+        model = QACEPATHTOF(medical_treatment,data\atropine.p3d);
+        descriptionShort = CSTRING(Dexamethasone_DescShort);
+        ACE_isMedicalItem = 1;
+        class ItemInfo: CBA_MiscItem_ItemInfo {
+            mass = 0.5;
+        };
+    };
     class kat_atnaa: ACE_ItemCore {
         scope = 2;
         displayName = "$STR_KAT_Chemical_atnaaItem";

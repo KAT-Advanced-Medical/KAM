@@ -409,6 +409,17 @@
     true
 ] call CBA_fnc_addSetting;
 
+// Set if chemical/inhalation lung injury should be visible in medical menu. Disabled by default
+// so medics have to examine the casualty rather than reading the severity off a list.
+[
+    QGVAR(LungInjuryAlwaysVisible),
+    "CHECKBOX",
+    [LLSTRING(SETTING_LungInjuryAlwaysVisible), LLSTRING(SETTING_LungInjuryAlwaysVisible_DESCRIPTION)],
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_ThoraxInjuries)],
+    [false],
+    true
+] call CBA_fnc_addSetting;
+
 // Default is disabled. If enabled, units with tension pneumothorax or hemopneumothorax will also have pneumothorax injury displayed in medical menu.
 [
     QGVAR(showPneumothorax_dupe),
@@ -600,5 +611,120 @@
     [LLSTRING(SETTING_locationProvideOxygen), LLSTRING(SETTING_locationProvideOxygen_DESC)],
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_Items)],
     [[0, 1, 2, 3], ["STR_ACE_Common_None", "STR_ACE_Common_Vehicle", "STR_ACE_Medical_Treatment_MedicalFacilities", "STR_ACE_Medical_Treatment_VehiclesAndFacilities"], 3],
+    true
+] call CBA_fnc_addSetting;
+
+// Master toggle for the graded lung injury model. Disabled reverts to the legacy binary
+// airPoisoning behaviour.
+[
+    QGVAR(lungInjury_enable),
+    "CHECKBOX",
+    [LLSTRING(SETTING_lungInjury_enable), LLSTRING(SETTING_lungInjury_enable_DESC)],
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_LungInjury)],
+    [true],
+    true
+] call CBA_fnc_addSetting;
+
+// Fraction of alveolar surface lost at maximum severity. Drives respiratory rate, not SpO2.
+[
+    QGVAR(lungInjury_maxSurfaceLoss),
+    "SLIDER",
+    [LLSTRING(SETTING_lungInjury_maxSurfaceLoss), LLSTRING(SETTING_lungInjury_maxSurfaceLoss_DESC)],
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_LungInjury)],
+    [0, 0.9, 0.6, 2],
+    true
+] call CBA_fnc_addSetting;
+
+// Shunt fraction at maximum severity. Scales with alveolar pressure, so supplemental oxygen
+// overcomes it proportionally.
+[
+    QGVAR(lungInjury_maxShunt),
+    "SLIDER",
+    [LLSTRING(SETTING_lungInjury_maxShunt), LLSTRING(SETTING_lungInjury_maxShunt_DESC)],
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_LungInjury)],
+    [0, 0.9, 0.6, 2],
+    true
+] call CBA_fnc_addSetting;
+
+// Fixed alveolar-arterial gradient in mmHg at maximum severity. Oxygen cannot overcome this,
+// so raising it produces refractory hypoxaemia where oxygen therapy is not enough.
+[
+    QGVAR(lungInjury_maxDiffusion),
+    "SLIDER",
+    [LLSTRING(SETTING_lungInjury_maxDiffusion), LLSTRING(SETTING_lungInjury_maxDiffusion_DESC)],
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_LungInjury)],
+    [0, 200, 25, 0],
+    true
+] call CBA_fnc_addSetting;
+
+// Seconds for severity to climb from none to maximum once exposure has set a target
+[
+    QGVAR(lungInjury_rampTime),
+    "TIME",
+    [LLSTRING(SETTING_lungInjury_rampTime), LLSTRING(SETTING_lungInjury_rampTime_DESC)],
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_LungInjury)],
+    [1, 3600, 100],
+    true
+] call CBA_fnc_addSetting;
+
+// Seconds for maximum severity to resolve untreated
+[
+    QGVAR(lungInjury_recoveryTime),
+    "TIME",
+    [LLSTRING(SETTING_lungInjury_recoveryTime), LLSTRING(SETTING_lungInjury_recoveryTime_DESC)],
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_LungInjury)],
+    [1, 7200, 900],
+    true
+] call CBA_fnc_addSetting;
+
+// Severity removed immediately by one dose of dexamethasone
+[
+    QGVAR(lungInjury_dexStepDown),
+    "SLIDER",
+    [LLSTRING(SETTING_lungInjury_dexStepDown), LLSTRING(SETTING_lungInjury_dexStepDown_DESC)],
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_LungInjury)],
+    [0, 1, 0.35, 2],
+    true
+] call CBA_fnc_addSetting;
+
+// Recovery speed multiplier while dexamethasone is active
+[
+    QGVAR(lungInjury_dexRecoveryMult),
+    "SLIDER",
+    [LLSTRING(SETTING_lungInjury_dexRecoveryMult), LLSTRING(SETTING_lungInjury_dexRecoveryMult_DESC)],
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_LungInjury)],
+    [1, 10, 4, 1],
+    true
+] call CBA_fnc_addSetting;
+
+// How long one dose of dexamethasone keeps accelerating recovery
+[
+    QGVAR(lungInjury_dexDuration),
+    "TIME",
+    [LLSTRING(SETTING_lungInjury_dexDuration), LLSTRING(SETTING_lungInjury_dexDuration_DESC)],
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_LungInjury)],
+    [1, 3600, 600],
+    true
+] call CBA_fnc_addSetting;
+
+// How much faster PaO2 falls at maximum lung injury. 1.5 means 2.5x baseline, so severe injury
+// becomes dangerous in minutes rather than a quarter of an hour. 0 restores baseline pacing.
+[
+    QGVAR(lungInjury_desatRate),
+    "SLIDER",
+    [LLSTRING(SETTING_lungInjury_desatRate), LLSTRING(SETTING_lungInjury_desatRate_DESC)],
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_LungInjury)],
+    [0, 5, 1.5, 1],
+    true
+] call CBA_fnc_addSetting;
+
+// Scales how fast untreated chemical lung injury worsens. 0 disables progression entirely, so
+// every injury simply holds until treated. Trauma sources set no progression and are unaffected.
+[
+    QGVAR(lungInjury_progressionMultiplier),
+    "SLIDER",
+    [LLSTRING(SETTING_lungInjury_progressionMultiplier), LLSTRING(SETTING_lungInjury_progressionMultiplier_DESC)],
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_LungInjury)],
+    [0, 5, 1, 1],
     true
 ] call CBA_fnc_addSetting;

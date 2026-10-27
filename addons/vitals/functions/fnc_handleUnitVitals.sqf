@@ -33,6 +33,10 @@ if (_syncValues) then {
     _unit setVariable [QACEGVAR(medical_vitals,lastMomentValuesSynced), CBA_missionTime];
 };
 
+// Lung injury progression and recovery. Deliberately outside the breathing gate below so an
+// existing injury still resolves if the breathing simulation is switched off mid-mission.
+[_unit, _deltaT, _syncValues] call EFUNC(breathing,updateLungInjury);
+
 //Get Blood Volume from previous cycle
 private _bloodVolume = ([_unit, _deltaT, _syncValues] call EFUNC(pharma,getBloodVolumeChange));
 _unit setVariable [VAR_BLOOD_VOL, _bloodVolume, _syncValues];

@@ -229,6 +229,17 @@ class ACE_ADDON(Medical_Treatment) {
             viscosityChange = 0;
             onOverDose = "";
         };
+        class Dexamethasone: Atropine {
+            // Corticosteroid. Damps the inflammatory response driving alveolar oedema, so the
+            // breathing-side handler takes a bite out of lung injury and speeds its resolution.
+            // Deliberately no cardiovascular profile of its own.
+            hrIncreaseLow[] = {0, 0};
+            hrIncreaseNormal[] = {0, 0};
+            hrIncreaseHigh[] = {0, 0};
+            timeInSystem = 600;
+            timeTillMaxEffect = 30;
+            maxDose = 3;
+        };
         class ATNAA: Atropine {
             // Combined atropine + pralidoxime auto-injector. Same cardiovascular
             // profile as atropine; the chemical-side handler clears nerve-agent

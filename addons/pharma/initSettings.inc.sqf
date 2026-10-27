@@ -879,3 +879,13 @@
     [0.1, 10, 7, 1],
     true
 ] call CBA_fnc_addSetting;
+
+// Dexamethasone Settings Category
+[
+    QGVAR(medLvl_Dexamethasone),
+    "LIST",
+    [LLSTRING(medLvl_Dexamethasone)],
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_Atropine)],
+    [[0, 1, 2], [ACELSTRING(medical_treatment,Anyone), ACELSTRING(medical_treatment,Medics), ACELSTRING(medical_treatment,Doctors)], 1],
+    true
+] call CBA_fnc_addSetting;
