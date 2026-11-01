@@ -33,12 +33,14 @@ if (_ABGmenuShow) then {
 };
 
 {
-    _x params ["_watchIDC"];
+    _x params ["_watchIDC", "_labelIDC"];
 
     if !(_ABGmenuShow) then {
-        ctrlShow [_x, false];
+        ctrlShow [_watchIDC, false];
+        ctrlShow [_labelIDC, false];
     } else {
-        ctrlShow [_x, true];
+        ctrlShow [_watchIDC, true];
+        ctrlShow [_labelIDC, true];
         _activeBlood = _bloodGasTest select _forEachIndex;
 
         if (_activeBlood != 0) then {
@@ -48,4 +50,10 @@ if (_ABGmenuShow) then {
         };
     };
 
-} forEach [IDC_TEST_PACO2, IDC_TEST_PAO2, IDC_TEST_SPO2, IDC_TEST_HCO3, IDC_TEST_PH];
+} forEach [
+    [IDC_TEST_PACO2, IDC_TEST_PACO2_LABEL],
+    [IDC_TEST_PAO2, IDC_TEST_PAO2_LABEL],
+    [IDC_TEST_SPO2, IDC_TEST_SPO2_LABEL],
+    [IDC_TEST_HCO3, IDC_TEST_HCO3_LABEL],
+    [IDC_TEST_PH, IDC_TEST_PH_LABEL]
+];

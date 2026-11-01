@@ -66,9 +66,9 @@ class ACE_Medical_Treatment_Actions {
         allowSelfTreatment = QGVAR(enable_selfBloodDraw);
         category = "advanced";
         medicRequired = 1;
-        consumeItem = 1;
+        consumeItem = 0;
         callbackSuccess = QUOTE([ARR_3(_medic,_patient,500)] call FUNC(drawBlood));
-        condition = QUOTE([ARR_3(_medic,_patient,500)] call FUNC(canDraw) && (!(EGVAR(pharma,RequireInsIVBloodDraw)) || EFUNC(pharma,removeIV)));
+        condition = QUOTE([ARR_3(_medic,_patient,500)] call FUNC(canDraw) && (!(EGVAR(pharma,RequireInsIVBloodDraw)) || ([ARR_3(_medic,_patient,_bodyPart)] call EFUNC(pharma,removeIV))));
         items[] = {"KAT_Empty_bloodIV_500"};
         animationPatient = "";
         animationPatientUnconscious = "AinjPpneMstpSnonWrflDnon_rolltoback";
@@ -82,9 +82,9 @@ class ACE_Medical_Treatment_Actions {
         allowSelfTreatment = QGVAR(enable_selfBloodDraw);
         category = "advanced";
         medicRequired = 1;
-        consumeItem = 1;
+        consumeItem = 0;
         callbackSuccess = QUOTE([ARR_3(_medic,_patient,250)] call FUNC(drawBlood));
-        condition = QUOTE([ARR_3(_medic,_patient,250)] call FUNC(canDraw) && (!(EGVAR(pharma,RequireInsIVBloodDraw)) || EFUNC(pharma,removeIV)));
+        condition = QUOTE([ARR_3(_medic,_patient,250)] call FUNC(canDraw) && (!(EGVAR(pharma,RequireInsIVBloodDraw)) || ([ARR_3(_medic,_patient,_bodyPart)] call EFUNC(pharma,removeIV))));
         items[] = {"KAT_Empty_bloodIV_250"};
         animationPatient = "";
         animationPatientUnconscious = "AinjPpneMstpSnonWrflDnon_rolltoback";
@@ -94,9 +94,10 @@ class ACE_Medical_Treatment_Actions {
         displayName = CSTRING(DrawArterial_Action_Use);
         displayNameProgress = CSTRING(DrawBlood_Action_Progress);
         treatmentTime = 10;
-        condition = QUOTE(GVAR(abgEnable));
+        consumeItem = 0;
+        condition = QUOTE(GVAR(abgEnable) && (!(EGVAR(pharma,RequireInsIVBloodDraw)) || ([ARR_3(_medic,_patient,_bodyPart)] call EFUNC(pharma,removeIV))));
         callbackSuccess = QFUNC(drawArterial);
-        items[] = {"kat_IV_16"};
+        items[] = {};
     };
 
     #include "Blood_Medical.hpp"
