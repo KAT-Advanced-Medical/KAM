@@ -817,18 +817,22 @@
         <Key ID="STR_KAT_Chemical_SETTING_aiAffectedByGas">
             <English>AI: Affected by gas</English>
             <German>KI: Von Gas betroffen</German>
+            <Japanese>AI: ガスの影響</Japanese>
         </Key>
         <Key ID="STR_KAT_Chemical_SETTING_aiAffectedByGas_DESC">
             <English>When disabled, AI units are excluded from the gas checks and can not be harmed by gas. AI that were already exposed before disabling still suffer the pending effects.</English>
             <German>Wenn deaktiviert, werden KI-Einheiten von den Gasprüfungen ausgeschlossen und können durch Gas keinen Schaden nehmen. KI, die vor dem Deaktivieren bereits Gas ausgesetzt war, erleidet weiterhin die ausstehenden Effekte.</German>
+            <Japanese>無効化すると、AIユニットはガスチェックの対象外となり、ガスによるダメージを受けなくなります。 無効化前に既にガスに曝露されていたAIは、その影響を引き続き受けます。</Japanese>
         </Key>
         <Key ID="STR_KAT_Chemical_SETTING_aiUnlimitedGasMask">
             <English>AI: Unlimited gas mask durability</English>
             <German>KI: Unbegrenzte Haltbarkeit der Gasmaske</German>
+            <Japanese>AI: ガスマスクの耐久度無制限化</Japanese>
         </Key>
         <Key ID="STR_KAT_Chemical_SETTING_aiUnlimitedGasMask_DESC">
             <English>When enabled, the gas mask filter of AI units never wears out. As long as an AI unit wears a gas mask it is protected from all gases, even without a CBRN uniform.</English>
             <German>Wenn aktiviert, nutzt sich der Gasmaskenfilter von KI-Einheiten nicht ab. Solange eine KI-Einheit eine Gasmaske trägt, ist sie vor allen Gasen geschützt, auch ohne CBRN-Uniform.</German>
+            <Japanese>有効化すると、AIユニットのガスマスクのフィルターは摩耗しません。 ガスマスクを装着している限り、CBRN防護服を着用していなくても、あらゆるガスから保護されます。</Japanese>
         </Key>
         <Key ID="STR_KAT_Chemical_TakeOffGasMask">
             <English>Take off gas mask</English>
@@ -974,14 +978,17 @@
         <Key ID="STR_KAT_Chemical_UI_particles">
             <English>Gas particles</English>
             <German>Gaspartikel</German>
+            <Japanese>ガス粒子</Japanese>
         </Key>
         <Key ID="STR_KAT_Chemical_UI_particles_tooltip">
             <English>Creates a visible gas cloud for this zone. Only applies if gas particle effects are enabled in the addon settings. Tear gas zones have no particles.</English>
             <German>Erzeugt eine sichtbare Gaswolke für diese Zone. Wirkt nur, wenn Gaspartikeleffekte in den Addon-Einstellungen aktiviert sind. Tränengaszonen haben keine Partikel.</German>
+            <Japanese>このゾーンに目に見えるガス雲を生成します。 アドオン設定でガス粒子エフェクトが有効になっている場合にのみ適用されます。 催涙ガスゾーンには粒子は表示されません。</Japanese>
         </Key>
         <Key ID="STR_KAT_Chemical_UI_particles_disabledBySetting">
             <English>Gas particle effects are disabled in the addon settings.</English>
             <German>Gaspartikeleffekte sind in den Addon-Einstellungen deaktiviert.</German>
+            <Japanese>ガス粒子エフェクトはアドオン設定で無効になっています。</Japanese>
         </Key>
         <Key ID="STR_KAT_Chemical_UI_selectGas">
             <English>Select Gas:</English>
@@ -1040,7 +1047,7 @@
             <Russian>Надевается противогаз...</Russian>
             <German>Gasmaske wird aufgesetzt...</German>
             <Korean>방독면 착용시키는 중...</Korean>
-            <Japanese>ガスマスクを装備させています…</Japanese>
+            <Japanese>ガスマスクを装備させています...</Japanese>
             <Chinese>正在戴上防毒面具...</Chinese>
             <Chinesesimp>戴上防毒面具…</Chinesesimp>
             <Finnish>Kaasunaamari on laitettu päähän</Finnish>
@@ -1049,6 +1056,7 @@
         </Key>
         <Key ID="STR_KAT_Chemical_takeOffGasMask_progress">
             <English>Take off gas mask...</English>
+            <Japanese>ガスマスクを取り外しています...</Japanese>
         </Key>
         <Key ID="STR_KAT_Chemical_sealLeak">
             <English>Seal leak</English>
@@ -1167,17 +1175,17 @@
         <Key ID="STR_KAT_Chemical_Smell_Chlorine">
             <English>You smell chlorine in the air...</English>
             <German>Du riechst Chlor in der Luft...</German>
-            <Japanese>空気に塩素の臭いがする…</Japanese>
+            <Japanese>空気に塩素の臭いがする...</Japanese>
         </Key>
         <Key ID="STR_KAT_Chemical_Smell_Phosgene">
             <English>You catch a faint smell of fresh hay...</English>
             <German>Du bemerkst einen schwachen Geruch von frischem Heu...</German>
-            <Japanese>かすかに新鮮な干し草のような臭いがする…</Japanese>
+            <Japanese>かすかに新鮮な干し草のような臭いがする...</Japanese>
         </Key>
         <Key ID="STR_KAT_Chemical_Smell_Mustard">
             <English>You smell garlic and mustard...</English>
             <German>Du riechst Knoblauch und Senf...</German>
-            <Japanese>ニンニクとマスタードのような臭いがする…</Japanese>
+            <Japanese>ニンニクとマスタードのような臭いがする...</Japanese>
         </Key>
         <Key ID="STR_KAT_Chemical_M8_Header">
             <English>M8 DETECTION PAPER</English>
@@ -1492,10 +1500,12 @@
         <Key ID="STR_KAT_Chemical_SETTING_lungInjuryMultiplier">
             <English>Lung Injury Rate Multiplier</English>
             <German>Multiplikator für Lungenschaden</German>
+            <Japanese>肺損傷率の乗数</Japanese>
         </Key>
         <Key ID="STR_KAT_Chemical_SETTING_lungInjuryMultiplier_DESC">
             <English>Scales how quickly inhaled gas accumulates into lung injury. Raise for shorter training scenarios.</English>
             <German>Skaliert, wie schnell eingeatmetes Gas zu Lungenschaden führt. Für kürzere Ausbildungsszenarien erhöhen.</German>
+            <Japanese>吸入したガスが肺損傷を引き起こすまでの速度を調整します。 訓練時など短い時間で発症させたい場合は、この値を上げてください。</Japanese>
         </Key>
     </Package>
 </Project>

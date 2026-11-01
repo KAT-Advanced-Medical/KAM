@@ -328,7 +328,7 @@
             <Portuguese>A porcentagem de chance que determina se um pneumotórax completamente deteriorado irá se deteriorar em um pneumotórax avançado, isso é calculado continuamente conforme o intervalo de deterioração de pneumotórax</Portuguese>
             <Russian>Процентная вероятность, определяющая, перерастет ли пневмоторакс с полным ухудшением в запущенный пневмоторакс, непрерывно увеличивается в соответствии с заданным интервалом ухудшения состояния при пневмотораксе.</Russian>
             <German>Die Wahrscheinlichkeit in Prozent, welche bestimmt, ob sich ein vollständig verschlechterter Pneumothorax in einen fortgeschrittenen Pneumothorax entwickelt.\nDies wird fortlaufend, auf Basis des Pneumothorax Verschlechterungs Intervals, ermittelt.</German>
-            <Japanese>完全に悪化した気胸が高度な気胸に悪化するかどうかを決定する確率。これは、気胸が悪化する間隔で設定されたタイミング毎に継続的に計算されます。</Japanese>
+            <Japanese>完全に悪化した気胸が高度な気胸に悪化するかどうかを決定する確率。 これは、気胸が悪化する間隔で設定されたタイミング毎に継続的に計算されます。</Japanese>
             <Chinese>百分比機率決定完全惡化的氣胸是否會惡化為 進階氣胸，這是根據氣胸惡化間隔的設定持續計算的。</Chinese>
             <Chinesesimp>决定完全恶化的气胸是否恶化为晚期（高级）气胸的概率。这是按照气胸恶化的间隔设定的每个时机持续计算的。</Chinesesimp>
             <Finnish>Prosenttiosuus mahdollisuus, joka määrittää, kehittyykö täysin heikentynyt ilmarinta pitkälle edenneeksi ilmarintaksi. Tämä lasketaan jatkuvasti pneumotoraksin etenemisajan mukaan.</Finnish>
@@ -453,7 +453,7 @@
             <Russian>Минимальный медицинский уровень, необходимый для того, чтобы кто-то мог выполнять лечебные действия «Декомпрессия иглой» и «Дренаж жидкости», используемые для лечения гемоторакса или напряженного пневмоторакса.</Russian>
             <German>Benötigter medizinischer Grad, um das AAT Kit nutzen zu können. Dieses wird zur Behandlung eines Hämatopneumothorax oder Spannungspneumothorax verwendet.</German>
             <Korean>혈기흉 치료에 사용되는 바늘 감압 치료 조치를 수행할 수 있는 사람에게 필요한 최소 의료레벨 수준입니다.</Korean>
-            <Japanese>胸腔穿刺減圧および胸腔ドレナージの実施に必要な医療スキルのレベルを設定します。これらは血胸と緊張性気胸の治療に使われます。</Japanese>
+            <Japanese>胸腔穿刺減圧および胸腔ドレナージの実施に必要な医療スキルのレベルを設定します。 これらは血胸と緊張性気胸の治療に使われます。</Japanese>
             <Chinese>某人能夠執行針減壓和引流體液治療措施所需的最低醫療水平，用於治療血氣胸或張力性氣胸。</Chinese>
             <Chinesesimp>使用胸腔穿刺减压和引流体液治疗所需的最低医疗水平，用于治疗血气胸或张力性气胸。</Chinesesimp>
             <Turkish>Hemotoraks veya Gerin Pnömotoraksı tedavi etmek için kullanılan İğne Dekompresyonu ve Boşaltma Sıvıları tedavi eylemlerini gerçekleştirebilmek için gerekli minimum tıbbi seviye.</Turkish>
@@ -503,7 +503,7 @@
             <Portuguese>A Cânula Nasal pode ser inserida nas narinas de um paciente e conectada ao monitor de sinais vitais para mensurar o nível de ETCo2 e a frequência respiratória.</Portuguese>
             <Russian>Назальная канюля может быть вставлена в ноздри пациента и подключена к монитору жизненно важных функций для регистрации уровня ETCo2 у пациента и частоты дыхания.</Russian>
             <German>Die Nasenkanüle kann in die Nase des Patienten eingeführt werden und mit einem Vitalmonitor verbunden werden, um die Atemfrequenz und ETCo2 zu messen.</German>
-            <Japanese>鼻カニューレを患者の鼻孔に挿入し、バイタルモニターに接続することで、患者の呼気終末二酸化炭素(ETCo2)レベルと呼吸数を記録することができます。</Japanese>
+            <Japanese>鼻カニューレを患者の鼻孔に挿入してバイタルモニターに接続することで、 患者の呼気終末二酸化炭素(ETCo2)レベルと呼吸数を記録することができます。</Japanese>
             <Chinese>鼻導管可插入病人鼻孔，並連接到生命體徵監測器，以記錄病人的呼氣末期二氧化碳 (ETCo2) 水平和呼吸率。</Chinese>
             <Chinesesimp>鼻导管可以插入患者的鼻孔并连接到生命体征监测仪，以记录患者的ETCo2水平和呼吸频率。</Chinesesimp>
             <Dutch>De nasale canule kan in de neusgaten van de patiënt aangebracht worden en verbonden aan een vitale waarden monitor om de ETCo2 waarden en het ademhalingstempo van de patiënt te monitoren</Dutch>
@@ -1091,6 +1091,7 @@
         </Key>
         <Key ID="STR_KAT_Breathing_TakeOffOxyMask_progress">
             <English>Take off oxygen mask...</English>
+            <Japanese>酸素マスクを取り外しています...</Japanese>
         </Key>
         <Key ID="STR_KAT_Breathing_Remove_OxyMask">
             <English>Take off oxygen mask</English>
@@ -3631,118 +3632,147 @@
         <Key ID="STR_KAT_Breathing_SubCategory_LungInjury">
             <English>Lung Injury Settings</English>
             <German>Lungenschaden-Einstellungen</German>
+            <Japanese>肺損傷の設定</Japanese>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_LungInjuryAlwaysVisible">
             <English>Show lung injury in medical menu</English>
             <German>Lungenschaden im Sanitätsmenü anzeigen</German>
+            <Japanese>医療メニューに肺損傷を表示</Japanese>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_LungInjuryAlwaysVisible_DESCRIPTION">
             <English>If enabled, chemical and inhalation lung injury is listed in the medical menu. Disabled by default, so medics must examine the casualty to find it.</English>
             <German>Wenn aktiviert, wird chemischer und inhalativer Lungenschaden im Sanitätsmenü aufgeführt. Standardmäßig deaktiviert, sodass Sanitäter den Verwundeten untersuchen müssen.</German>
+            <Japanese>有効化すると、化学物質および吸入による肺損傷が医療メニューに表示されます。 デフォルトでは無効化されており、衛生兵は負傷者を診断する必要があります。</Japanese>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_lungInjury_enable">
             <English>Enable lung injury</English>
             <German>Lungenschaden aktivieren</German>
+            <Japanese>肺損傷を有効化</Japanese>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_lungInjury_enable_DESC">
             <English>Enables graded, non-penetrating lung injury from chemical agents, smoke and blast. Disabled reverts to the legacy all-or-nothing air poisoning behaviour.</English>
             <German>Aktiviert abgestuften, nicht penetrierenden Lungenschaden durch chemische Kampfstoffe, Rauch und Druckwellen. Deaktiviert kehrt zum alten Alles-oder-Nichts-Verhalten zurück.</German>
+            <Japanese>化学物質、煙、爆風による非貫通性肺損傷の段階的評価を有効化します。 無効化で従来通り1か0かの空気中毒の挙動に戻ります。</Japanese>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_lungInjury_maxSurfaceLoss">
             <English>Alveolar surface loss</English>
             <German>Verlust der Alveolaroberfläche</German>
+            <Japanese>肺胞表面積の損失</Japanese>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_lungInjury_maxSurfaceLoss_DESC">
             <English>Fraction of usable lung surface lost at maximum severity. Drives respiratory rate rather than oxygen saturation.</English>
             <German>Anteil der nutzbaren Lungenoberfläche, der bei maximalem Schweregrad verloren geht. Beeinflusst die Atemfrequenz, nicht die Sauerstoffsättigung.</German>
+            <Japanese>肺損傷が最大レベルに達したときに失われる使用可能な肺表面積の割合。 酸素飽和度ではなく呼吸数に影響します。</Japanese>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_lungInjury_maxShunt">
             <English>Shunt fraction</English>
             <German>Shunt-Anteil</German>
+            <Japanese>シャント率</Japanese>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_lungInjury_maxShunt_DESC">
             <English>Proportion of oxygen transfer lost at maximum severity. Supplemental oxygen overcomes this part proportionally.</English>
             <German>Anteil des Sauerstofftransfers, der bei maximalem Schweregrad verloren geht. Sauerstoffgabe gleicht diesen Anteil proportional aus.</German>
+            <Japanese>肺損傷が最大レベルに達したときに失われる酸素輸送の割合。 酸素補給により、この損失分は比例的に補われます。</Japanese>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_lungInjury_maxDiffusion">
             <English>Diffusion barrier (mmHg)</English>
             <German>Diffusionsbarriere (mmHg)</German>
+            <Japanese>拡散障壁 (mmHg)</Japanese>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_lungInjury_maxDiffusion_DESC">
             <English>Fixed alveolar-arterial gradient at maximum severity, in mmHg. Oxygen therapy cannot overcome this, so higher values make severe injury unsurvivable without evacuation.</English>
             <German>Fester alveolo-arterieller Gradient bei maximalem Schweregrad in mmHg. Sauerstofftherapie kann diesen nicht ausgleichen, höhere Werte machen schwere Verletzungen ohne Evakuierung tödlich.</German>
+            <Japanese>重肺損傷が最大レベルに達したときの固定された肺胞気動脈血酸素分圧較差(mmHg)。 酸素療法ではこれを克服できないため、この値が高い重症患者は搬送なしでは生存不可能です。</Japanese>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_lungInjury_rampTime">
             <English>Onset duration</English>
             <German>Anstiegsdauer</German>
+            <Japanese>発症時間</Japanese>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_lungInjury_rampTime_DESC">
             <English>Seconds for lung injury to climb from none to maximum once exposure has occurred.</English>
             <German>Sekunden, die der Lungenschaden benötigt, um nach einer Exposition von null auf das Maximum anzusteigen.</German>
+            <Japanese>曝露後、肺損傷が無傷から最大まで進行するまでの秒数。</Japanese>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_lungInjury_recoveryTime">
             <English>Recovery duration (treated)</English>
             <German>Genesungsdauer (behandelt)</German>
+            <Japanese>回復期間 (治療後)</Japanese>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_lungInjury_recoveryTime_DESC">
             <English>Seconds for maximum lung injury to resolve once Dexamethasone has been given. Lung injury does not heal on its own.</English>
             <German>Sekunden, die ein maximaler Lungenschaden nach Gabe von Dexamethason zum Abklingen benötigt. Lungenschaden heilt nicht von selbst.</German>
+            <Japanese>デキサメタゾン投与後、肺損傷が最大レベルまで回復するまでの秒数。 肺損傷は自然治癒しません。</Japanese>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_lungInjury_dexStepDown">
             <English>Dexamethasone immediate effect</English>
             <German>Dexamethason-Sofortwirkung</German>
+            <Japanese>デキサメタゾンの即効性</Japanese>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_lungInjury_dexStepDown_DESC">
             <English>How much lung injury severity one dose of dexamethasone removes immediately.</English>
             <German>Wie viel Lungenschaden eine Dosis Dexamethason sofort beseitigt.</German>
+            <Japanese>一回のデキサメタゾンの投与で肺損傷の重症度がどれだけ即座に軽減されるか。</Japanese>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_lungInjury_dexRecoveryMult">
             <English>Dexamethasone recovery multiplier</English>
             <German>Dexamethason-Genesungsmultiplikator</German>
+            <Japanese>デキサメタゾンの回復促進係数</Japanese>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_lungInjury_dexRecoveryMult_DESC">
             <English>How much faster lung injury resolves while dexamethasone is active.</English>
             <German>Wie viel schneller der Lungenschaden abklingt, solange Dexamethason wirkt.</German>
+            <Japanese>デキサメタゾンが作用している間、肺損傷の回復がどれだけ速くなるか。</Japanese>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_lungInjury_dexDuration">
             <English>Dexamethasone duration</English>
             <German>Dexamethason-Wirkdauer</German>
+            <Japanese>デキサメタゾンの持続時間</Japanese>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_lungInjury_dexDuration_DESC">
             <English>How long one dose of dexamethasone keeps accelerating recovery.</English>
             <German>Wie lange eine Dosis Dexamethason die Genesung beschleunigt.</German>
+            <Japanese>デキサメタゾン1回投与で回復促進効果が持続する時間。</Japanese>
         </Key>
         <Key ID="STR_KAT_Breathing_lungInjury_mild">
             <English>Mild pulmonary irritation</English>
             <German>Leichte Lungenreizung</German>
+            <Japanese>低度の肺刺激</Japanese>
         </Key>
         <Key ID="STR_KAT_Breathing_lungInjury_moderate">
             <English>Chemical pneumonitis</English>
             <German>Chemische Pneumonitis</German>
+            <Japanese>化学性肺炎</Japanese>
         </Key>
         <Key ID="STR_KAT_Breathing_lungInjury_severe">
             <English>Severe pulmonary oedema</English>
             <German>Schweres Lungenödem</German>
+            <Japanese>重度の肺水腫</Japanese>
         </Key>
         <Key ID="STR_KAT_Breathing_inspectChest_noAsymmetry">
             <English>Chest rises evenly, no penetrating wound. Breathing is rapid and laboured.</English>
             <German>Brustkorb hebt sich gleichmäßig, keine penetrierende Wunde. Atmung ist schnell und angestrengt.</German>
+            <Japanese>胸部は均等に膨らみ、貫通創はない。 呼吸は速く、重苦しい。</Japanese>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_lungInjury_desatRate">
             <English>Desaturation speed</English>
             <German>Entsättigungsgeschwindigkeit</German>
+            <Japanese>不飽和化速度</Japanese>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_lungInjury_desatRate_DESC">
             <English>How much faster oxygen saturation falls at maximum lung injury. Higher values make severe inhalation injury dangerous within minutes; 0 uses the normal rate.</English>
             <German>Wie viel schneller die Sauerstoffsättigung bei maximalem Lungenschaden fällt. Höhere Werte machen schwere Inhalationsverletzungen innerhalb von Minuten gefährlich; 0 nutzt die normale Rate.</German>
+            <Japanese>肺損傷が最大レベルに達したときに酸素飽和度がどれだけ速く低下するか。 値が高いほど、重度の吸入性肺損傷は数分以内に危険な状態になります。 0は正常時の速度を示します。</Japanese>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_lungInjury_progressionMultiplier">
             <English>Chemical progression speed</English>
             <German>Verschlechterungsgeschwindigkeit (chemisch)</German>
+            <Japanese>化学性肺損傷の進行速度</Japanese>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_lungInjury_progressionMultiplier_DESC">
             <English>How fast untreated chemical lung injury worsens toward death. Set to 0 and injuries simply hold until treated instead of deteriorating. Does not affect blast or smoke injury, which never progresses.</English>
             <German>Wie schnell sich unbehandelter chemischer Lungenschaden bis zum Tod verschlimmert. Bei 0 bleibt der Schaden bestehen, statt sich zu verschlechtern. Betrifft keine Druckwellen- oder Rauchverletzungen, die nie fortschreiten.</German>
+            <Japanese>未治療の化学性肺損傷が死に至るまでどれだけの速さで悪化するか。 値を0に設定すると、負傷は悪化することなく、治療を受けるまでそのままの状態が続きます。 爆発や煙による負傷には影響せず、状態が進行することはありません。</Japanese>
         </Key>
     </Package>
 </Project>
