@@ -4812,18 +4812,22 @@
         <Key ID="STR_KAT_Pharma_Dexamethasone_Box_Display">
             <English>Dexamethasone</English>
             <German>Dexamethason</German>
+            <Japanese>デキサメタゾン</Japanese>
         </Key>
         <Key ID="STR_KAT_Pharma_Dexamethasone_DescShort">
             <English>Corticosteroid. Treats chemical and inhalation lung injury.</English>
             <German>Kortikosteroid. Behandelt chemische und inhalative Lungenschäden.</German>
+            <Japanese>副腎皮質ステロイド。化学物質や吸入による肺損傷の治療に用いられます。</Japanese>
         </Key>
         <Key ID="STR_KAT_Pharma_Take_Dexamethasone">
             <English>Give Dexamethasone</English>
             <German>Dexamethason verabreichen</German>
+            <Japanese>デキサメタゾンを投与</Japanese>
         </Key>
         <Key ID="STR_KAT_Pharma_medLvl_Dexamethasone">
             <English>Dexamethasone - Medical Training Level</English>
             <German>Dexamethason - Medizinisches Ausbildungsniveau</German>
+            <Japanese>デキサメタゾンの許可</Japanese>
         </Key>
     </Package>
 </Project>
