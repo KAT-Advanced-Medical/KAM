@@ -26,6 +26,7 @@
  */
 params ["_unit", "_medication", "_timeToMaxEffect", "_maxTimeInSystem", "_hrAdjust", "_painAdjust", "_flowAdjust", ["_dose", 1], ["_alphaFactor", 0], ["_opioidRelief", 0], ["_opioidEffect", 0]];
 TRACE_7("addMedicationAdjustment",_unit,_medication,_timeToMaxEffect,_maxTimeInSystem,_hrAdjust,_painAdjust,_flowAdjust);
+TRACE_4("addMedicationAdjustment extra",_dose,_alphaFactor,_opioidRelief,_opioidEffect);
 
 if (_maxTimeInSystem <= 0) exitWith { WARNING_1("bad value for _maxTimeInSystem - %1",_this); };
 _timeToMaxEffect = _timeToMaxEffect max 1;
