@@ -32,22 +32,32 @@ if (GVAR(hypothermiaActive)) then {
         };
 
         private _handWarmers = _patient getVariable [QGVAR(handWarmers), [0,0,0,0,0,0]];
+        private _activeWarmers = 0;
 
         {
-            _x params ["_timeRemaining"];
-
             if (_x > 0) then {
-                _handWarmers set [_forEachIndex, _timeRemaining - 1];
+                _handWarmers set [_forEachIndex, _x - 1];
+                _activeWarmers = _activeWarmers + 1;
+            } else {
+                _handWarmers set [_forEachIndex, 0];
             };
-        } forEach (_handWarmers);
+        } forEach _handWarmers;
 
         _patient setVariable [QGVAR(handWarmers), _handWarmers, true];
 
+        private _impact = _patient getVariable [QGVAR(warmingImpact), 0];
+
         if (GET_BLOOD_VOLUME_LITERS(_patient) > 4) then {
-            private _impact = (_patient getVariable [QGVAR(warmingImpact), 0]);
-            [(_impact - 100) max 0, (_impact + 200) min 0] select (_impact < 0);
-            _patient setVariable [QGVAR(warmingImpact), _impact, true];
+            _impact = [(_impact - 100) max 0, (_impact + 200) min 0] select (_impact < 0);
         };
+
+        // Active hand warmers raise body temperature, but not above normal
+        if (_activeWarmers > 0) then {
+            private _deficit = ((DEFAULT_TEMPERATURE - (_patient getVariable [QGVAR(unitTemperature), DEFAULT_TEMPERATURE])) * ML_TO_LITERS) max 0;
+            _impact = _impact + ((_activeWarmers * HAND_WARMER_HEAT) min _deficit);
+        };
+
+        _patient setVariable [QGVAR(warmingImpact), _impact, true];
 
     }, 60, [_patient]] call CBA_fnc_addPerFrameHandler;
 };

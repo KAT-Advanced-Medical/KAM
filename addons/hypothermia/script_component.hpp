@@ -15,3 +15,6 @@
 #endif
 
 #include "\x\kat\addons\main\script_macros.hpp"
+
+// Warming impact added per active hand warmer per minute (1000 = +1 degree C)
+#define HAND_WARMER_HEAT 150
