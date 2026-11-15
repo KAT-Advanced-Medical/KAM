@@ -222,7 +222,7 @@ class ACE_Medical_Treatment_Actions {
         displayName = CSTRING(Take_Nitro);
         allowedSelections[] = {"Body", "LeftArm", "RightArm", "LeftLeg", "RightLeg"};
         allowSelfTreatment = 1;
-        medicRequired = QGVAR(medLvl_Nitroglicerin);
+        medicRequired = QGVAR(medLvl_Nitroglycerin);
         treatmentTime = QGVAR(treatmentTime_Nitroglycerin);
         treatmentTimeTrained = QGVAR(treatmentTime_Nitroglycerin);
         items[] = {"kat_nitroglycerin"};
@@ -244,7 +244,7 @@ class ACE_Medical_Treatment_Actions {
         displayName = CSTRING(Take_Lidocaine);
         allowedSelections[] = {"Body", "LeftArm", "RightArm", "LeftLeg", "RightLeg"};
         allowSelfTreatment = 1;
-        medicRequired = QGVAR(medLvl_Lidocain);
+        medicRequired = QGVAR(medLvl_Lidocaine);
         treatmentTime = QGVAR(treatmentTime_Lidocaine);
         treatmentTimeTrained = QGVAR(treatmentTime_Lidocaine);
         items[] = {"kat_lidocaine"};
