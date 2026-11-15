@@ -124,7 +124,7 @@ class ACE_Medical_Treatment_Actions {
         allowSelfTreatment = 0;
         treatmentLocations = QGVAR(npwtLocation);
         treatmentTime = QFUNC(getNPWTTime);
-        medicRequired = QGVAR(npwtMedLevel);
+        medicRequired = QGVAR(npwt_MedLevel);
         items[] = {"kat_vacuum"};
         sounds[] = {{QPATHTO_R(sounds\vacuum.ogg),8,1,15}};
         consumeItem = 0;
@@ -138,7 +138,7 @@ class ACE_Medical_Treatment_Actions {
         treatmentLocations = QGVAR(ultrasoundLocation);
         allowedSelections[] = {"Body"};
         allowSelfTreatment = 0;
-        medicRequired = QGVAR(ultrasoundAction_MedLevel);
+        medicRequired = QGVAR(ultrasound_MedLevel);
         treatmentTime = QGVAR(ultrasoundTime);
         items[] = {"kat_ultrasound"};
         condition = "";
@@ -194,7 +194,7 @@ class ACE_Medical_Treatment_Actions {
         treatmentLocations = QGVAR(pericardialtapLocation);
         allowedSelections[] = {"Body"};
         allowSelfTreatment = 0;
-        medicRequired = QGVAR(pericardialtapAction_MedLevel);
+        medicRequired = QGVAR(pericardialtap_MedLevel);
         treatmentTime = QGVAR(pericardialtapTime);
         items[] = {"kat_ultrasound"};
         condition = QUOTE(_patient getVariable [ARR_2(QQGVAR(imaging),false)]);
