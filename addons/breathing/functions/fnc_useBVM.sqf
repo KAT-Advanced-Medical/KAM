@@ -128,7 +128,7 @@ GVAR(BVM_timeOut) = true;
 [{
     params ["_medic", "_patient", "_pocket", "_useOxygen", "_oxygenOrigin", "_notInVehicle"];
 
-    [LLSTRING(UseBVM_PutAway), ELSTRING(circulation,ChangeCPRDevice), ""] call ACEFUNC(interaction,showMouseHint);
+    [LLSTRING(UseBVM_PutAway), LELSTRING(circulation,ChangeCPRDevice), ""] call ACEFUNC(interaction,showMouseHint);
     [LLSTRING(UseBVM_Start), 1.5, _medic] call ACEFUNC(common,displayTextStructured);
 
     [{
