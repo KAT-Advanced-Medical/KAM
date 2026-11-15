@@ -11,6 +11,10 @@
  * 4: Heart Rate Adjust <NUMBER>
  * 5: Pain Suppress Adjust <NUMBER>
  * 6: Flow Adjust <NUMBER>
+ * 7: Dose <NUMBER> (default: 1)
+ * 8: Alpha Factor <NUMBER> (default: 0)
+ * 9: Opioid Relief <NUMBER> (default: 0)
+ * 10: Opioid Effect <NUMBER> (default: 0)
  *
  * Return Value:
  * None
@@ -20,7 +24,7 @@
  *
  * Public: No
  */
-params ["_unit", "_medication", "_timeToMaxEffect", "_maxTimeInSystem", "_hrAdjust", "_painAdjust", "_flowAdjust", "_dose", "_alphaFactor", "_opioidRelief", "_opioidEffect"];
+params ["_unit", "_medication", "_timeToMaxEffect", "_maxTimeInSystem", "_hrAdjust", "_painAdjust", "_flowAdjust", ["_dose", 1], ["_alphaFactor", 0], ["_opioidRelief", 0], ["_opioidEffect", 0]];
 TRACE_7("addMedicationAdjustment",_unit,_medication,_timeToMaxEffect,_maxTimeInSystem,_hrAdjust,_painAdjust,_flowAdjust);
 
 if (_maxTimeInSystem <= 0) exitWith { WARNING_1("bad value for _maxTimeInSystem - %1",_this); };
