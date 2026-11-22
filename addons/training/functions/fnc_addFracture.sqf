@@ -1,6 +1,6 @@
 #include "..\script_component.hpp"
 /*
- * Author: kolmipilot
+ * Author: MiszczuZPolski
  * Fractures a limb of a patient and sets the fracture grade used by KAM surgery.
  * Has to run where the patient is local.
  *

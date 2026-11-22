@@ -1,6 +1,6 @@
 #include "..\script_component.hpp"
 /*
- * Author: kolmipilot
+ * Author: MiszczuZPolski
  * Deletes the selected patient of a training computer, or all of its patients.
  * After deleting the selected patient, the next living one becomes selected.
  *

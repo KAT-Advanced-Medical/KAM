@@ -1,6 +1,6 @@
 #include "..\script_component.hpp"
 /*
- * Author: kolmipilot
+ * Author: MiszczuZPolski
  * Returns the ACE actions for spawning several patients at once, one for every amount from 1
  * up to the number of free patient spots around the training computer.
  *

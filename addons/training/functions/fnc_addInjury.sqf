@@ -1,6 +1,6 @@
 #include "..\script_component.hpp"
 /*
- * Author: kolmipilot
+ * Author: MiszczuZPolski
  * Applies an injury to a patient. Has to run where the patient is local.
  *
  * Injury types and their arguments:
@@ -10,7 +10,7 @@
  * - "chest": 0: "pneumothorax", "tension", "hemo" or "tamponade" <STRING>
  * - "cardiacArrest": 0: Rhythm, 1 asystole, 2 PEA, 3 VF, 4 VT <NUMBER>
  * - "airway": 0: "obstruction" or "occlusion" <STRING>
- * - "unconscious": none
+ * - "unconscious": 0: Never wake up on their own <BOOL> (default: false)
  *
  * Arguments:
  * 0: Patient <OBJECT>
@@ -27,6 +27,7 @@
  */
 
 #define DEFAULT_WOUND_DAMAGE 0.5
+#define NO_WAKE_UP_TIME 1e9
 
 params [["_patient", objNull, [objNull]], ["_type", "", [""]], ["_args", [], [[]]]];
 
@@ -78,6 +79,13 @@ switch (_type) do {
         };
     };
     case "unconscious": {
+        _args params [["_stayUnconscious", false, [false]]];
+
+        // ACE only rolls a spontaneous wake up once this time has passed
+        if (_stayUnconscious) then {
+            _patient setVariable [QACEGVAR(medical,lastWakeUpCheck), NO_WAKE_UP_TIME];
+        };
+
         if !(IS_UNCONSCIOUS(_patient)) then {
             [_patient, true] call ACEFUNC(medical,setUnconscious);
         };

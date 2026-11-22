@@ -1,6 +1,6 @@
 #include "..\script_component.hpp"
 /*
- * Author: kolmipilot
+ * Author: MiszczuZPolski
  * Wounds a patient randomly according to a severity level. Has to run where the patient is local.
  *
  * 1 (light): a few minor limb wounds

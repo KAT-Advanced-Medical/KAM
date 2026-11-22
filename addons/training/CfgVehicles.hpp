@@ -66,7 +66,7 @@ class CfgVehicles {
         scope = 2;
         scopeCurator = 2;
         displayName = CSTRING(PatientSpot_DisplayName);
-        author = "kolmipilot";
+        author = "MiszczuZPolski";
 
         ACEGVAR(dragging,canDrag) = 1;
         ACEGVAR(dragging,dragPosition)[] = {0,1.2,0};
@@ -79,7 +79,7 @@ class CfgVehicles {
         scope = 2;
         scopeCurator = 2;
         displayName = CSTRING(Computer_DisplayName);
-        author = "kolmipilot";
+        author = "MiszczuZPolski";
 
         class ACE_Actions {
             class ACE_MainActions {
@@ -97,6 +97,21 @@ class CfgVehicles {
                     SPAWN_ACTION(Severity_Moderate,2);
                     SPAWN_ACTION(Severity_Severe,3);
                     SPAWN_ACTION(Severity_Critical,4);
+                };
+
+                class GVAR(tutorial) {
+                    displayName = CSTRING(Tutorial);
+
+                    class Start {
+                        displayName = CSTRING(Tutorial_Start);
+                        condition = QUOTE(GVAR(tutorialHandle) == -1);
+                        statement = QUOTE([ARR_2(_target,_player)] call FUNC(startTutorial));
+                    };
+                    class Stop {
+                        displayName = CSTRING(Tutorial_Stop);
+                        condition = QUOTE(GVAR(tutorialHandle) != -1);
+                        statement = QUOTE([] call FUNC(stopTutorial));
+                    };
                 };
 
                 class GVAR(randomWounds) {

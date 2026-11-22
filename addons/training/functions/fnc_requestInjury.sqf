@@ -1,6 +1,6 @@
 #include "..\script_component.hpp"
 /*
- * Author: kolmipilot
+ * Author: MiszczuZPolski
  * Sends an injury to the selected patient of a training computer. The injury itself is applied where the patient is local.
  *
  * Arguments:

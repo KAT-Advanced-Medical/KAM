@@ -1,6 +1,6 @@
 #include "..\script_component.hpp"
 /*
- * Author: kolmipilot
+ * Author: MiszczuZPolski
  * Returns the patient spots around a training computer, nearest first.
  * A spot is free when the patient spawned on it is dead, deleted or was moved away.
  *

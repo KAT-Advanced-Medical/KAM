@@ -1,6 +1,6 @@
 #include "..\script_component.hpp"
 /*
- * Author: kolmipilot
+ * Author: MiszczuZPolski
  * Returns one ACE action per patient of a training computer, used to choose the patient injuries are applied to.
  *
  * Arguments:

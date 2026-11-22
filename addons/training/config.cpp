@@ -34,7 +34,7 @@ class CfgPatches {
             "cba_settings"
         };
         author = "kolmipilot";
-        authors[] = {"kolmipilot"};
+        authors[] = {"kolmipilot", "MiszczuZPolski"};
         url = ECSTRING(main,URL);
         VERSION_CONFIG;
     };
@@ -43,3 +43,4 @@ class CfgPatches {
 #include "CfgEventHandlers.hpp"
 #include "CfgVehicles.hpp"
 #include "RscDisplayMain.hpp"
+#include "RscTitles.hpp"

@@ -1,6 +1,6 @@
 #include "..\script_component.hpp"
 /*
- * Author: kolmipilot
+ * Author: MiszczuZPolski
  * Spawns training patients for a training computer and wounds them according to the chosen severity.
  * Each patient is spawned on a free patient spot (kat_training_patientSpot) near the computer, nearest first,
  * so the amount of free spots limits how many can be spawned. The last one spawned becomes the selected patient.
@@ -28,6 +28,7 @@
 #define PATIENT_SPAWN_DISTANCE 2
 // Lets the unit finish its medical initialisation before it is wounded
 #define INJURY_DELAY 1
+#define NO_SELF_TREATMENT_TIME 1e9
 
 params [["_computer", objNull, [objNull]], ["_player", objNull, [objNull]], ["_severity", 0, [0]], ["_amount", 1, [0]]];
 
@@ -65,6 +66,11 @@ private _spawned = [];
     _patient setDir _direction;
     _patient disableAI "MOVE";
     _patient disableAI "FSM";
+    _patient disableAI "TARGET";
+    _patient disableAI "AUTOTARGET";
+
+    // ACE medical AI only treats itself and others once it has not fired for a while, which never comes
+    _patient setVariable [QACEGVAR(medical_ai,lastFired), NO_SELF_TREATMENT_TIME, true];
 
     if (!isNull _spot) then {
         _spot setVariable [QGVAR(patient), _patient, true];

@@ -1,6 +1,6 @@
 #include "..\script_component.hpp"
 /*
- * Author: kolmipilot
+ * Author: MiszczuZPolski
  * Gives a patient a chest injury the same way KAM breathing does after a torso hit.
  * Has to run where the patient is local.
  *

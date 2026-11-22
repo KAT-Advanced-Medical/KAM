@@ -1,6 +1,6 @@
 #include "..\script_component.hpp"
 /*
- * Author: kolmipilot
+ * Author: MiszczuZPolski
  * Returns the patients of a training computer that still exist, dead ones included.
  *
  * Arguments:
