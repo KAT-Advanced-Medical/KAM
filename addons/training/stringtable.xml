@@ -1,0 +1,385 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project name="KAT">
+    <Package name="Training">
+        <Key ID="STR_KAT_Training_Mission">
+            <English>KAM Medical Training</English>
+            <Polish>KAM Trening Medyczny</Polish>
+        </Key>
+        <Key ID="STR_KAT_Training_Mission_tooltip">
+            <English>KAM Medical Training</English>
+            <Polish>KAM Trening Medyczny</Polish>
+        </Key>
+        <Key ID="STR_KAT_Training_Computer_DisplayName">
+            <English>KAM Training Computer</English>
+            <Polish>Komputer treningowy KAM</Polish>
+        </Key>
+        <Key ID="STR_KAT_Training_SpawnPatient">
+            <English>Spawn patient</English>
+            <Polish>Stwórz pacjenta</Polish>
+        </Key>
+        <Key ID="STR_KAT_Training_RandomWounds">
+            <English>Add random wounds</English>
+            <Polish>Dodaj losowe rany</Polish>
+        </Key>
+        <Key ID="STR_KAT_Training_AddWound">
+            <English>Add wound</English>
+            <Polish>Dodaj ranę</Polish>
+        </Key>
+        <Key ID="STR_KAT_Training_AddFracture">
+            <English>Add fracture</English>
+            <Polish>Dodaj złamanie</Polish>
+        </Key>
+        <Key ID="STR_KAT_Training_ChestInjury">
+            <English>Chest injury</English>
+            <Polish>Uraz klatki piersiowej</Polish>
+        </Key>
+        <Key ID="STR_KAT_Training_CardiacArrest">
+            <English>Cardiac arrest</English>
+            <Polish>Zatrzymanie krążenia</Polish>
+        </Key>
+        <Key ID="STR_KAT_Training_Airway">
+            <English>Airway</English>
+            <Polish>Drogi oddechowe</Polish>
+        </Key>
+        <Key ID="STR_KAT_Training_ManagePatient">
+            <English>Patient</English>
+            <Polish>Pacjent</Polish>
+        </Key>
+        <Key ID="STR_KAT_Training_KnockOut">
+            <English>Knock unconscious</English>
+            <Polish>Pozbaw przytomności</Polish>
+        </Key>
+        <Key ID="STR_KAT_Training_FullHeal">
+            <English>Full heal</English>
+            <Polish>Pełne uleczenie</Polish>
+        </Key>
+        <Key ID="STR_KAT_Training_DeletePatient">
+            <English>Delete selected patient</English>
+            <Polish>Usuń wybranego pacjenta</Polish>
+        </Key>
+        <Key ID="STR_KAT_Training_Severity_Healthy">
+            <English>Healthy</English>
+            <Polish>Zdrowy</Polish>
+        </Key>
+        <Key ID="STR_KAT_Training_Severity_Light">
+            <English>Lightly wounded</English>
+            <Polish>Lekko ranny</Polish>
+        </Key>
+        <Key ID="STR_KAT_Training_Severity_Moderate">
+            <English>Moderately wounded</English>
+            <Polish>Średnio ranny</Polish>
+        </Key>
+        <Key ID="STR_KAT_Training_Severity_Severe">
+            <English>Severely wounded</English>
+            <Polish>Ciężko ranny</Polish>
+        </Key>
+        <Key ID="STR_KAT_Training_Severity_Critical">
+            <English>Critically wounded</English>
+            <Polish>Krytycznie ranny</Polish>
+        </Key>
+        <Key ID="STR_KAT_Training_BodyPart_Head">
+            <English>Head</English>
+            <Polish>Głowa</Polish>
+        </Key>
+        <Key ID="STR_KAT_Training_BodyPart_Torso">
+            <English>Torso</English>
+            <Polish>Tułów</Polish>
+        </Key>
+        <Key ID="STR_KAT_Training_BodyPart_LeftArm">
+            <English>Left arm</English>
+            <Polish>Lewa ręka</Polish>
+        </Key>
+        <Key ID="STR_KAT_Training_BodyPart_RightArm">
+            <English>Right arm</English>
+            <Polish>Prawa ręka</Polish>
+        </Key>
+        <Key ID="STR_KAT_Training_BodyPart_LeftLeg">
+            <English>Left leg</English>
+            <Polish>Lewa noga</Polish>
+        </Key>
+        <Key ID="STR_KAT_Training_BodyPart_RightLeg">
+            <English>Right leg</English>
+            <Polish>Prawa noga</Polish>
+        </Key>
+        <Key ID="STR_KAT_Training_DamageType_Bullet">
+            <English>Gunshot</English>
+            <Polish>Postrzał</Polish>
+        </Key>
+        <Key ID="STR_KAT_Training_DamageType_Shrapnel">
+            <English>Shrapnel</English>
+            <Polish>Odłamki</Polish>
+        </Key>
+        <Key ID="STR_KAT_Training_DamageType_Explosion">
+            <English>Explosion</English>
+            <Polish>Eksplozja</Polish>
+        </Key>
+        <Key ID="STR_KAT_Training_DamageType_Stab">
+            <English>Stab</English>
+            <Polish>Rana kłuta</Polish>
+        </Key>
+        <Key ID="STR_KAT_Training_DamageType_Blunt">
+            <English>Blunt trauma</English>
+            <Polish>Uraz tępy</Polish>
+        </Key>
+        <Key ID="STR_KAT_Training_DamageType_Burn">
+            <English>Burn</English>
+            <Polish>Oparzenie</Polish>
+        </Key>
+        <Key ID="STR_KAT_Training_Strength_Light">
+            <English>Light</English>
+            <Polish>Lekka</Polish>
+        </Key>
+        <Key ID="STR_KAT_Training_Strength_Medium">
+            <English>Medium</English>
+            <Polish>Średnia</Polish>
+        </Key>
+        <Key ID="STR_KAT_Training_Strength_Heavy">
+            <English>Heavy</English>
+            <Polish>Ciężka</Polish>
+        </Key>
+        <Key ID="STR_KAT_Training_Fracture_Simple">
+            <English>Simple fracture</English>
+            <Polish>Złamanie proste</Polish>
+        </Key>
+        <Key ID="STR_KAT_Training_Fracture_Compound">
+            <English>Compound fracture</English>
+            <Polish>Złamanie otwarte</Polish>
+        </Key>
+        <Key ID="STR_KAT_Training_Fracture_Comminuted">
+            <English>Comminuted fracture</English>
+            <Polish>Złamanie wieloodłamowe</Polish>
+        </Key>
+        <Key ID="STR_KAT_Training_Pneumothorax">
+            <English>Pneumothorax</English>
+            <Polish>Odma opłucnowa</Polish>
+        </Key>
+        <Key ID="STR_KAT_Training_TensionPneumothorax">
+            <English>Tension pneumothorax</English>
+            <Polish>Odma prężna</Polish>
+        </Key>
+        <Key ID="STR_KAT_Training_Hemopneumothorax">
+            <English>Hemopneumothorax</English>
+            <Polish>Krwiak opłucnej z odmą</Polish>
+        </Key>
+        <Key ID="STR_KAT_Training_Tamponade">
+            <English>Cardiac tamponade (developing)</English>
+            <Polish>Tamponada serca (narastająca)</Polish>
+        </Key>
+        <Key ID="STR_KAT_Training_Asystole">
+            <English>Asystole</English>
+            <Polish>Asystolia</Polish>
+        </Key>
+        <Key ID="STR_KAT_Training_PEA">
+            <English>Pulseless electrical activity</English>
+            <Polish>Aktywność elektryczna bez tętna</Polish>
+        </Key>
+        <Key ID="STR_KAT_Training_VFib">
+            <English>Ventricular fibrillation</English>
+            <Polish>Migotanie komór</Polish>
+        </Key>
+        <Key ID="STR_KAT_Training_VTach">
+            <English>Ventricular tachycardia</English>
+            <Polish>Częstoskurcz komorowy</Polish>
+        </Key>
+        <Key ID="STR_KAT_Training_Obstruction">
+            <English>Airway obstruction</English>
+            <Polish>Niedrożność dróg oddechowych</Polish>
+        </Key>
+        <Key ID="STR_KAT_Training_Occlusion">
+            <English>Airway occlusion</English>
+            <Polish>Zatkanie dróg oddechowych</Polish>
+        </Key>
+        <Key ID="STR_KAT_Training_PatientSpawned">
+            <English>Patients spawned</English>
+            <Polish>Pacjenci stworzeni</Polish>
+        </Key>
+        <Key ID="STR_KAT_Training_PatientDeleted">
+            <English>Patients deleted</English>
+            <Polish>Pacjenci usunięci</Polish>
+        </Key>
+        <Key ID="STR_KAT_Training_NoPatient">
+            <English>No living patient selected</English>
+            <Polish>Nie wybrano żywego pacjenta</Polish>
+        </Key>
+        <Key ID="STR_KAT_Training_InjuryApplied">
+            <English>Injury applied to %1</English>
+            <Polish>Dodano uraz: %1</Polish>
+        </Key>
+        <Key ID="STR_KAT_Training_SelectPatient">
+            <English>Select patient</English>
+            <Polish>Wybierz pacjenta</Polish>
+        </Key>
+        <Key ID="STR_KAT_Training_SelectedPatient">
+            <English>%1 (selected)</English>
+            <Polish>%1 (wybrany)</Polish>
+        </Key>
+        <Key ID="STR_KAT_Training_PatientSelected">
+            <English>Selected patient: %1</English>
+            <Polish>Wybrany pacjent: %1</Polish>
+        </Key>
+        <Key ID="STR_KAT_Training_DeleteAllPatients">
+            <English>Delete all patients</English>
+            <Polish>Usuń wszystkich pacjentów</Polish>
+        </Key>
+        <Key ID="STR_KAT_Training_PatientSpot_DisplayName">
+            <English>KAM Training Patient Spot</English>
+            <Polish>Miejsce pacjenta treningowego KAM</Polish>
+        </Key>
+        <Key ID="STR_KAT_Training_Amount">
+            <English>Patients: %1</English>
+            <Polish>Pacjenci: %1</Polish>
+        </Key>
+        <Key ID="STR_KAT_Training_NoFreeSpot">
+            <English>No free patient spot</English>
+            <Polish>Brak wolnego miejsca dla pacjenta</Polish>
+        </Key>
+        <Key ID="STR_KAT_Training_Tutorial">
+            <English>Guided training</English>
+            <Polish>Szkolenie z przewodnikiem</Polish>
+        </Key>
+        <Key ID="STR_KAT_Training_Tutorial_Start">
+            <English>Start guided training</English>
+            <Polish>Rozpocznij szkolenie</Polish>
+        </Key>
+        <Key ID="STR_KAT_Training_Tutorial_Stop">
+            <English>Stop guided training</English>
+            <Polish>Zakończ szkolenie</Polish>
+        </Key>
+        <Key ID="STR_KAT_Training_Tutorial_Progress">
+            <English>Step %1 of %2</English>
+            <Polish>Krok %1 z %2</Polish>
+        </Key>
+        <Key ID="STR_KAT_Training_Tutorial_Welcome_Title">
+            <English>KAM Medical Training</English>
+            <Polish>Trening medyczny KAM</Polish>
+        </Key>
+        <Key ID="STR_KAT_Training_Tutorial_Welcome_Text">
+            <English>Walk up to the training computer and open the interaction menu on it. Choose Guided training to be led through treating a casualty step by step, or spawn and wound patients yourself to practise freely.</English>
+            <Polish>Podejdź do komputera treningowego i otwórz na nim menu interakcji. Wybierz Szkolenie z przewodnikiem, aby krok po kroku przejść przez leczenie rannego, albo samodzielnie twórz i rań pacjentów, aby ćwiczyć swobodnie.</Polish>
+        </Key>
+        <Key ID="STR_KAT_Training_Tutorial_Bleeding_Title">
+            <English>M - Massive bleeding</English>
+            <Polish>M - Masywny krwotok</Polish>
+        </Key>
+        <Key ID="STR_KAT_Training_Tutorial_Bleeding_Text">
+            <English>The patient was shot in the left leg and stabbed in the right arm. Stop the bleeding first, nothing else matters if they bleed out. Apply a tourniquet to each wounded limb; it stops the bleeding of that limb at once. Bandaging the wounds comes later.</English>
+            <Polish>Pacjent został postrzelony w lewą nogę i dźgnięty w prawą rękę. Najpierw zatrzymaj krwawienie, bo nic innego nie ma znaczenia, jeśli pacjent się wykrwawi. Załóż stazę na każdą ranną kończynę; natychmiast zatrzymuje ona krwawienie z tej kończyny. Bandażowanie ran będzie później.</Polish>
+        </Key>
+        <Key ID="STR_KAT_Training_Tutorial_Failed_Title">
+            <English>Training ended</English>
+            <Polish>Szkolenie przerwane</Polish>
+        </Key>
+        <Key ID="STR_KAT_Training_Tutorial_Failed_Text">
+            <English>The patient died or was removed. Start the guided training again from the training computer.</English>
+            <Polish>Pacjent zmarł lub został usunięty. Rozpocznij szkolenie ponownie z komputera treningowego.</Polish>
+        </Key>
+        <Key ID="STR_KAT_Training_Tutorial_Approach_Title">
+            <English>Reach the casualty</English>
+            <Polish>Dotrzyj do rannego</Polish>
+        </Key>
+        <Key ID="STR_KAT_Training_Tutorial_Approach_Text">
+            <English>A patient has been spawned. They stay unconscious for the whole training and will not treat themselves. Walk up to them and open the medical menu on them. You will work through the MARCH order: Massive bleeding, Airway, Respiration, Circulation. Take a tourniquet, bandages, a suction device, a King LT, a stethoscope, chest seals, NCD and AAT kits, an AED or AED-X, an IV or IO kit and medication from the crates first.</English>
+            <Polish>Pacjent został stworzony. Przez cały trening pozostaje nieprzytomny i nie będzie sam się opatrywał. Podejdź do niego i otwórz na nim menu medyczne. Będziesz działać w kolejności MARCH: masywne krwotoki, drogi oddechowe, oddychanie, krążenie. Najpierw weź ze skrzyń stazę, bandaże, ssak, King LT, stetoskop, opatrunki wentylowe, zestawy NCD i AAT, AED lub AED-X, zestaw IV lub IO oraz leki.</Polish>
+        </Key>
+        <Key ID="STR_KAT_Training_Tutorial_AirwayClear_Title">
+            <English>A - Airway: clear it</English>
+            <Polish>A - Drogi oddechowe: oczyść</Polish>
+        </Key>
+        <Key ID="STR_KAT_Training_Tutorial_AirwayClear_Text">
+            <English>The patient is unconscious. Select the head and check the airway: it is obstructed by the tongue and occluded by vomit and blood. Remove the occlusion first, with the Accuvac or the manual suction pump, because an airway tube keeps the airway open but does not remove what is already blocking it. Hyperextending the head only helps with the obstruction, and only while you hold it.</English>
+            <Polish>Pacjent jest nieprzytomny. Wybierz głowę i sprawdź drogi oddechowe: są niedrożne przez zapadnięty język i zatkane wymiocinami oraz krwią. Najpierw usuń zalegającą treść za pomocą ssaka Accuvac lub ssaka ręcznego, ponieważ rurka utrzymuje drożność dróg oddechowych, ale nie usuwa tego, co już je blokuje. Odchylenie głowy pomaga tylko na niedrożność i tylko dopóki ją trzymasz.</Polish>
+        </Key>
+        <Key ID="STR_KAT_Training_Tutorial_AirwaySecure_Title">
+            <English>A - Airway: secure it</English>
+            <Polish>A - Drogi oddechowe: zabezpiecz</Polish>
+        </Key>
+        <Key ID="STR_KAT_Training_Tutorial_AirwaySecure_Text">
+            <English>The airway is clear but not secure: the tongue still blocks it and the patient may vomit again. Insert a King LT. It keeps the airway open on its own and fully secures it, while a Guedel tube only holds the tongue back. Check the airway again afterwards.</English>
+            <Polish>Drogi oddechowe są oczyszczone, ale niezabezpieczone: język nadal je blokuje, a pacjent może ponownie zwymiotować. Załóż rurkę King LT. Sama utrzymuje drożność i w pełni zabezpiecza drogi oddechowe, podczas gdy rurka Guedela jedynie odsuwa język. Następnie ponownie sprawdź drogi oddechowe.</Polish>
+        </Key>
+        <Key ID="STR_KAT_Training_Tutorial_BreathingListen_Title">
+            <English>R - Respiration: examine</English>
+            <Polish>R - Oddychanie: zbadaj</Polish>
+        </Key>
+        <Key ID="STR_KAT_Training_Tutorial_BreathingListen_Text">
+            <English>Something is wrong with the breathing. Before treating anything, examine: select the torso and listen to the lungs with a stethoscope. Remember the sound you hear, because you will compare it later. Inspecting the chest and a pulse oximeter give you more clues.</English>
+            <Polish>Coś jest nie tak z oddychaniem. Zanim zaczniesz leczyć, zbadaj pacjenta: wybierz tułów i osłuchaj płuca stetoskopem. Zapamiętaj dźwięk, który słyszysz, ponieważ później go porównasz. Obejrzenie klatki piersiowej i pulsoksymetr dadzą ci dodatkowe wskazówki.</Polish>
+        </Key>
+        <Key ID="STR_KAT_Training_Tutorial_BreathingSeal_Title">
+            <English>R - Respiration: chest seal</English>
+            <Polish>R - Oddychanie: opatrunek wentylowy</Polish>
+        </Key>
+        <Key ID="STR_KAT_Training_Tutorial_BreathingSeal_Text">
+            <English>The abnormal sound means a pneumothorax. A chest seal always comes first: it closes the hole in the chest wall, and neither a needle decompression nor a chest drain works without it. Apply a chest seal to the torso.</English>
+            <Polish>Nieprawidłowy dźwięk oznacza odmę. Opatrunek wentylowy jest zawsze pierwszy: zamyka otwór w ścianie klatki piersiowej, a bez niego nie zadziała ani odbarczenie igłą, ani drenaż. Załóż opatrunek wentylowy na tułów.</Polish>
+        </Key>
+        <Key ID="STR_KAT_Training_Tutorial_BreathingTreat_Title">
+            <English>R - Respiration: decide</English>
+            <Polish>R - Oddychanie: zdecyduj</Polish>
+        </Key>
+        <Key ID="STR_KAT_Training_Tutorial_BreathingTreat_Text">
+            <English>Listen to the lungs again and compare. If you hear the same sound as before, it is a tension pneumothorax: release the trapped air with a needle decompression (NCD kit). If the sound is now different, wet and gurgling, it is a hemopneumothorax: blood is collecting in the chest and has to be drained with an AAT kit.</English>
+            <Polish>Osłuchaj płuca ponownie i porównaj. Jeśli słyszysz ten sam dźwięk co wcześniej, to odma prężna: uwolnij uwięzione powietrze przez odbarczenie igłą (zestaw NCD). Jeśli dźwięk jest teraz inny, wilgotny i bulgoczący, to krwiak opłucnej z odmą: w klatce piersiowej zbiera się krew, którą trzeba odprowadzić zestawem AAT.</Polish>
+        </Key>
+        <Key ID="STR_KAT_Training_Tutorial_Circulation_Title">
+            <English>C - Circulation: wounds</English>
+            <Polish>C - Krążenie: rany</Polish>
+        </Key>
+        <Key ID="STR_KAT_Training_Tutorial_Circulation_Text">
+            <English>The immediate threats are dealt with. Now bandage every wound until none is bleeding, then remove the tourniquets, as they must not stay on. Place an IV or IO line; you will need it for fluids and medication. Tranexamic acid (TXA) slows the bleeding, and saline, plasma or blood replace what was lost.</English>
+            <Polish>Bezpośrednie zagrożenia zostały opanowane. Teraz zabandażuj wszystkie rany, aż żadna nie będzie krwawić, a następnie zdejmij stazy, ponieważ nie mogą pozostać założone. Załóż wkłucie IV lub IO; będzie potrzebne do płynów i leków. Kwas traneksamowy (TXA) spowalnia krwawienie, a sól fizjologiczna, osocze lub krew uzupełniają utraconą objętość.</Polish>
+        </Key>
+        <Key ID="STR_KAT_Training_Tutorial_CardiacAssess_Title">
+            <English>C - Circulation: cardiac arrest</English>
+            <Polish>C - Krążenie: zatrzymanie krążenia</Polish>
+        </Key>
+        <Key ID="STR_KAT_Training_Tutorial_CardiacAssess_Text">
+            <English>The patient has gone into cardiac arrest. Check the pulse with your fingers: there is none. Start CPR, then attach the pads of an AED or AED-X to see what the heart is doing. A monitor shows electrical activity, not blood flow, so a trace on the screen does not prove there is a pulse. Always confirm with a manual pulse check. The chart on the left of the screen shows the four rhythms and what to do with each.</English>
+            <Polish>U pacjenta doszło do zatrzymania krążenia. Sprawdź tętno palcami: nie ma go. Rozpocznij RKO, a następnie podłącz elektrody AED lub AED-X, aby zobaczyć, co robi serce. Monitor pokazuje aktywność elektryczną, a nie przepływ krwi, więc zapis na ekranie nie dowodzi, że jest tętno. Zawsze potwierdzaj ręcznym badaniem tętna. Tabela po lewej stronie ekranu pokazuje cztery rytmy i co robić przy każdym z nich.</Polish>
+        </Key>
+        <Key ID="STR_KAT_Training_Tutorial_RhythmChart_Title">
+            <English>Heart rhythms</English>
+            <Polish>Rytmy serca</Polish>
+        </Key>
+        <Key ID="STR_KAT_Training_Tutorial_Rhythm_Sinus">
+            <English>Organised rhythm. With a pulse: a working heart. Without a pulse: PEA, do NOT shock.</English>
+            <Polish>Rytm uporządkowany. Z tętnem: pracujące serce. Bez tętna: PEA, NIE defibryluj.</Polish>
+        </Key>
+        <Key ID="STR_KAT_Training_Tutorial_Rhythm_VF">
+            <English>Ventricular fibrillation (VF): chaotic. Shock it.</English>
+            <Polish>Migotanie komór (VF): chaotyczne. Defibryluj.</Polish>
+        </Key>
+        <Key ID="STR_KAT_Training_Tutorial_Rhythm_VT">
+            <English>Pulseless ventricular tachycardia (VT): fast and wide. Shock it.</English>
+            <Polish>Częstoskurcz komorowy bez tętna (VT): szybki i szeroki. Defibryluj.</Polish>
+        </Key>
+        <Key ID="STR_KAT_Training_Tutorial_Rhythm_Asystole">
+            <English>Asystole: flat line. Do NOT shock.</English>
+            <Polish>Asystolia: płaska linia. NIE defibryluj.</Polish>
+        </Key>
+        <Key ID="STR_KAT_Training_Tutorial_CardiacShock_Title">
+            <English>C - Circulation: shockable rhythm</English>
+            <Polish>C - Krążenie: rytm do defibrylacji</Polish>
+        </Key>
+        <Key ID="STR_KAT_Training_Tutorial_CardiacShock_Text">
+            <English>This is ventricular fibrillation, a shockable rhythm. With an AED: choose Analyze rhythm, keep everyone off the patient (no CPR or ventilation while it analyzes), let it charge and press Shock. With an AED-X: read the rhythm on the monitor, charge manually and shock. Do CPR between shocks. Medication through the IV or IO line helps: epinephrine improves CPR, amiodarone and lidocaine make a shock more likely to work. Do not give nitroglycerin, it lowers the chance. A failed shock on VF can still turn it into VT, which the next shock ends.</English>
+            <Polish>To migotanie komór, rytm do defibrylacji. Z AED: wybierz analizę rytmu, niech nikt nie dotyka pacjenta (bez RKO i wentylacji podczas analizy), poczekaj na naładowanie i naciśnij przycisk wyładowania. Z AED-X: odczytaj rytm na monitorze, naładuj ręcznie i wykonaj wyładowanie. Między wyładowaniami prowadź RKO. Pomagają leki podane przez wkłucie IV lub IO: epinefryna poprawia skuteczność RKO, a amiodaron i lidokaina zwiększają szansę skutecznej defibrylacji. Nie podawaj nitrogliceryny, bo zmniejsza szansę. Nieudane wyładowanie przy VF może zmienić je w VT, które zakończy kolejne wyładowanie.</Polish>
+        </Key>
+        <Key ID="STR_KAT_Training_Tutorial_CardiacCPR_Title">
+            <English>C - Circulation: non-shockable rhythm</English>
+            <Polish>C - Krążenie: rytm nie do defibrylacji</Polish>
+        </Key>
+        <Key ID="STR_KAT_Training_Tutorial_CardiacCPR_Text">
+            <English>The heart has stopped again, this time in asystole. Analyze it: the AED answers no shock advised, and shocking asystole or PEA does nothing useful. The treatment is CPR and epinephrine, which works better with every CPR cycle. This is also how you treat any rhythm without an AED: each successful round of CPR either restores a pulse or moves the heart one step along, from asystole or PEA to VF, then VT, then a pulse. Keep doing CPR and recheck the pulse by hand after every cycle.</English>
+            <Polish>Serce ponownie się zatrzymało, tym razem w asystolii. Przeanalizuj rytm: AED odpowiada, że wyładowanie nie jest zalecane, a defibrylacja asystolii lub PEA nic nie daje. Leczeniem jest RKO i epinefryna, która działa lepiej z każdym cyklem RKO. W ten sam sposób leczy się każdy rytm bez AED: każda skuteczna seria RKO albo przywraca tętno, albo przesuwa serce o krok dalej, z asystolii lub PEA do VF, potem VT, a potem do tętna. Kontynuuj RKO i po każdym cyklu ręcznie sprawdzaj tętno.</Polish>
+        </Key>
+        <Key ID="STR_KAT_Training_Tutorial_Complete_Title">
+            <English>Training complete</English>
+            <Polish>Szkolenie ukończone</Polish>
+        </Key>
+        <Key ID="STR_KAT_Training_Tutorial_Complete_Text">
+            <English>The pulse is back and the patient is stable: bleeding controlled, airway secured, breathing restored, heart restarted. Now keep them that way: recheck pulse and blood pressure, replace lost blood with fluids, treat the pain, and watch the monitor, because a heart that stopped once can stop again. Use the training computer to add other injuries and practise on your own.</English>
+            <Polish>Tętno wróciło, a pacjent jest stabilny: krwawienie opanowane, drogi oddechowe zabezpieczone, oddychanie przywrócone, akcja serca wznowiona. Teraz utrzymaj ten stan: ponownie sprawdzaj tętno i ciśnienie krwi, uzupełnij utraconą krew płynami, lecz ból i obserwuj monitor, ponieważ serce, które raz się zatrzymało, może zatrzymać się ponownie. Użyj komputera treningowego, aby dodawać inne urazy i ćwiczyć samodzielnie.</Polish>
+        </Key>
+    </Package>
+</Project>

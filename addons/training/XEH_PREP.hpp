@@ -1,0 +1,16 @@
+PREP(addChestInjury);
+PREP(addFracture);
+PREP(addInjury);
+PREP(applySeverity);
+PREP(deletePatient);
+PREP(enterTutorialStep);
+PREP(getAmountActions);
+PREP(getPatientActions);
+PREP(getPatients);
+PREP(getSpots);
+PREP(getTutorialSteps);
+PREP(requestInjury);
+PREP(showTutorialHint);
+PREP(spawnPatient);
+PREP(startTutorial);
+PREP(stopTutorial);

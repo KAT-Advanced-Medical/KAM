@@ -1,0 +1,13 @@
+#include "script_component.hpp"
+
+briefing = 0;
+dev = "kolmipilot";
+author = "KAM Team";
+onLoadName = "KAM medical training";
+onLoadMission = "KAT - Advanced Medical Training Mission the KAM Team";
+debriefing = 0;
+loadScreen = "KAMLogoHighRes.paa";
+overviewText = "KAT - Advanced Medical Training Mission by kolmipilot";
+enableDebugConsoleSP = 1;
+
+#include "CfgEventHandlers.hpp"
