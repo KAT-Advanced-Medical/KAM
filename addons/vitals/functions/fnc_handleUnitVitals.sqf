@@ -49,7 +49,10 @@ private _altitude = (getPosASL _unit) select 2;
 if (GVAR(baroPressureEnable)) then {
     if (GVAR(useACEpressure)) then {
         private _hPa = _altitude call ACEFUNC(weather,calculateBarometricPressure);
-        _baroPressure = _hPa * 0.750062;
+        // ACE weather data may not be available yet on a client's first tick, keep the default then
+        if (!isNil "_hPa" && {finite _hPa}) then {
+            _baroPressure = _hPa * 0.750062;
+        };
     } else {
         _baroPressure = 760 * exp((-(_altitude)) / 8400);
     };
