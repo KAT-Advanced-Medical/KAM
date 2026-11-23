@@ -45,7 +45,9 @@ private _respiratoryDepth = 0;
 private _demandVentilation = 0;
 private _actualVentilation = 0;
 private _previousCyclePaco2 = (_bloodGas select 0);
-private _previousCyclePao2 = (_bloodGas select 1);
+// PaO2 is calculated from its previous value, so a nil or NaN would otherwise persist forever
+private _previousCyclePao2 = _bloodGas param [1, DEFAULT_PAO2, [0]];
+if (!finite _previousCyclePao2) then { _previousCyclePao2 = DEFAULT_PAO2; };
 private _cprActive = alive (_unit getVariable [QACEGVAR(medical,CPR_provider), objNull]);
 // When the setting is enabled, CPR without a BVM lets SpO2 recover through chest compressions alone
 private _cprAssistSpO2 = _cprActive && {EGVAR(breathing,SpO2_CPR_Rise)} && {!(_unit getVariable [QEGVAR(breathing,BVMInUse), false])};
