@@ -9,6 +9,8 @@ PREP_RECOMPILE_END;
 #define CBA_SETTINGS_CAT LSTRING(cba_name)
 #include "initSettings.inc.sqf"
 
+KAT_forceWakeup = false;
+
 /*
 When a patient enters the unconscious state, there are two things that can happen.
 First of all the airway can collapse. In medical sense this mean, the airway can be blocked from your tongue muscle, 'cause of the missing muscle tone.
